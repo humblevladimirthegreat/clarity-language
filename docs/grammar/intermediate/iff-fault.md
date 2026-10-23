@@ -36,7 +36,7 @@ Several conditions can sit inside `/b/` as a [join](/joins) (`thohem blugalal bl
 
 Beginner's *if* and *only if* do not claim the condition is true. The table completes the set. Pick the pole by **which way the link runs** (the condition is enough, the outcome needs it, or both) and by whether you **claim** the condition is a fact. Poles take **-m**, on `/th/` after a verb and on `/ɡ/` after a noun. As plain words the roots take ordinary endings (`zahul` *a wall*; `zehom` *reciprocity*).
 
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thohem` / `gohem`** | enough; condition not asserted | *if* | `ohel` *door* | 🚪: walk through only if it opens |
 | **`thahum` / `gahum`** | enough; condition asserted as the reason | *because* | `ahul` *wall* | 🧱: the cause is what the result sits on |
@@ -88,7 +88,7 @@ For *even if*, put the *although* pole **`hezem`** right before **`thohem`**. Yo
 >
 > "Azozon walks even if Alazun is asleep."
 
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | **`thohem blurl`** | *unless* |
 | **`hezem thohem blarl`** | *even if* |
@@ -146,7 +146,7 @@ When a pole follows **`thewom`**, the `/b/` belongs to the pole, as above (`thew
 
 **Compare with:** *Get someone to* (ask, persuade) is tell + a *to* [stand-in](sentence-linkers.md#stand-in).
 
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | **`thewom`** + `/b/` | *make* (causer in `/b/`) |
 
@@ -158,7 +158,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *pressure* | `ayewam` | 🗜️ from *clamp* |
 | *CAUSE* | `thewom` | ⚙️ from *machine*: how the result comes about |
@@ -166,7 +166,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -185,7 +185,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vayebel` |
 | *scream* | `veyamul` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Azozon runs if Alazun speaks.*
 
@@ -227,7 +227,7 @@ z-Azozon | v-pour | [th-if | bl-lest-clause] | z-Alazun | v-sit
 z-Ahelan | v-tell | [th-CAUSE | bl-Azozon]
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zazozon vehohel thehom blarl zalazun vowuvul.`
 

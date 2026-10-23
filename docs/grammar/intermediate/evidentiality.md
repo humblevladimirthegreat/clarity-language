@@ -19,7 +19,7 @@ The other channels do not place the event in time. When a reasoned or reported e
 
 **For *could be* with nothing behind it, use:** [MAY](/knowing#may). When English *I think* means you have reasons (you worked it out, you heard it, you sense it), pick the channel for those reasons instead.
 
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thugem`** | LIVE: firsthand, sensed now | *live* / *from the scene* | `ugel` *attest* | 👁️‍🗨️: sensing-and-saying while it is in view, in earshot, or on your skin |
 | **`thevum`** | MEMORY: firsthand, remembered | *from memory* | `evul` *fishing* | 🎣: you pull something back |
@@ -128,7 +128,7 @@ What you put in that `/b/` decides what it does. A person or other noun is the s
 
 When you don't name the source, `blumen` (*someone*) leaves it open. Whether you are holding back who said it or have lost track changes how far to trust the report, and the channel alone does not say it. Say which in a sentence of its own:
 
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | `zalazun thebam blumen vudurul.` | *Alazun left, according to someone.* (says neither) |
 | `zalazun thebam blumen vudurul. zuwen vanam derl zar.` | *Alazun left, according to someone. I know who.* |
@@ -142,7 +142,7 @@ When you don't name the source, `blumen` (*someone*) leaves it open. Whether you
 
 ### Forecasts (`blral`) {#forecast}
 
-English *will* can make a forecast: a claim that something will happen. Agebon has no *will* word for this. Use a channel and put **`blral`** right after it in `/b/`: a number with a plus sign and no digits, meaning *some time after now*. Because a forecast needs a channel, it always says what it rests on; for a hunch, that channel is INTUITION. The mirror, **`blrul`**, is *some time before now*, for a past claim with no measured amount.
+English *will* can make a forecast: a claim that something will happen. Ageben has no *will* word for this. Use a channel and put **`blral`** right after it in `/b/`: a number with a plus sign and no digits, meaning *some time after now*. Because a forecast needs a channel, it always says what it rests on; for a hunch, that channel is INTUITION. The mirror, **`blrul`**, is *some time before now*, for a past claim with no measured amount.
 
 > `thubom blral verulal.`
 >
@@ -224,7 +224,7 @@ You assert the grounds, the way you assert a cause. If you are not sure of them,
 ### Carrying a channel forward {#carry-forward}
 <a id="channel-frame-carry"></a>
 
-English tells a story with one *they say* or *I remember* at the start, and every sentence after it rests on the same ground. Agebon does the same. Once you put a channel on a claim, your later claims with no channel keep it: the channel is your **frame**. You name the channel once, then keep talking.
+English tells a story with one *they say* or *I remember* at the start, and every sentence after it rests on the same ground. Ageben does the same. Once you put a channel on a claim, your later claims with no channel keep it: the channel is your **frame**. You name the channel once, then keep talking.
 
 > `zalazun thebam vudurul. zalazun veruvol. zalazun vozuyel.`
 >
@@ -320,7 +320,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *cloud* | `ugalal` | ☁️ |
 | *gray* | `agulel` | 🩶 |
@@ -331,7 +331,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -345,7 +345,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *punch* | `vabuvul` |
 | *sleep* | `vezuvel` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *I heard third-hand that Alazun screams.*
 
@@ -371,7 +371,7 @@ z-Azozon | [th-PATTERN.strong | bl-later] | v-tell | b-Ahelan
 z-Azozon | th-MEMORY | v-see | d-rain
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zalazun thevum vayebel darowel. yal zalazun vezuvel.`
 

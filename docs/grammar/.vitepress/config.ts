@@ -21,9 +21,9 @@ mkdirSync(dirname(cmuPublic), { recursive: true })
 copyFileSync(cmuDict, cmuPublic)
 
 export default defineConfig({
-  title: 'Agebon Grammar',
+  title: 'Ageben Grammar',
   description:
-    'Learner grammar for Agebon — compassion, rationality, and empowerment encoded in vocabulary and grammar.',
+    'Learner grammar for Ageben — compassion, rationality, and empowerment encoded in vocabulary and grammar.',
   base: '/grammar/',
   rewrites: {
     'beginner/:page': ':page',
@@ -76,12 +76,12 @@ export default defineConfig({
       { text: 'Claritish', link: '/claritish/' },
     ],
     socialLinks: [
-      { icon: 'reddit', link: 'https://www.reddit.com/r/ClarityLanguage', ariaLabel: 'Agebon on Reddit' },
-      { icon: 'discord', link: 'https://discord.gg/CAMGw2Akhc', ariaLabel: 'Agebon on Discord' },
+      { icon: 'reddit', link: 'https://www.reddit.com/r/ClarityLanguage', ariaLabel: 'Ageben on Reddit' },
+      { icon: 'discord', link: 'https://discord.gg/CAMGw2Akhc', ariaLabel: 'Ageben on Discord' },
     ],
     sidebar: [
       {
-        text: 'Claritish: Agebon in English',
+        text: 'Claritish: Ageben in English',
         collapsed: true,
         items: [
           { text: 'Claritish Introduction', link: '/claritish/' },
@@ -104,7 +104,7 @@ export default defineConfig({
       ...orientation,
       ...sidebarGroups,
       {
-        text: 'Saying it in Agebon',
+        text: 'Saying it in Ageben',
         collapsed: true,
         items: [
           { text: 'Overview', link: '/english' },

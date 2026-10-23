@@ -8,7 +8,7 @@ describe("practiceRanges", () => {
     const lines = [
       "## Beginner",
       "### Translation practice {#beginner-translation-practice}",
-      "#### English → Agebon",
+      "#### English → Ageben",
       "## Intermediate",
       "### Practice {#intermediate-practice}",
       "#### Pick one {#intermediate-pick-one}",

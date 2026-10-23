@@ -1,4 +1,4 @@
-# Saying it in Agebon
+# Saying it in Ageben
 
 These pages are recipes, not lessons. Each one shows how forms you already learned answer an English question, and links the grammar it needs. Read them in any order once the linked sections are familiar.
 
@@ -12,11 +12,11 @@ These pages are recipes, not lessons. Each one shows how forms you already learn
 
 ## One English word, many jobs {#many-jobs}
 
-English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover several jobs. Pick the Agebon job, then open the section that teaches it.
+English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover several jobs. Pick the Ageben job, then open the section that teaches it.
 
 ### *by*
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | who does the action (*seen by Azozon*) | subject `/z/` | [Who acts](/clause#who-acts-and-the-action) |
 | tool (*writes by / with a hammer*) | hook **`aol`** (*using*) + `/b/` | [Hooks](/hooks#extra-noun) |
@@ -28,7 +28,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 ### *for*
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | recipient / addressee (*tells Alazun*) | plain `/b/` | [Extra nouns](/clause#extra-nouns) |
 | swap (*a book for a hammer*) | **`heham`** + `/b/` | [Exchange](/relations#exchange) |
@@ -43,7 +43,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 ### *to*
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | recipient / addressee (*gives a book to Alazun*) | plain `/b/` | [Extra nouns](/clause#extra-nouns) |
 | goal reached (*walks to the station*, *from a house to a station*) | hook **`el`** (*at*) + `/b/`; for *from … to*, **`ul`** + the source first | [Locative relations](/of-relations#locative-relations) |
@@ -55,7 +55,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 ### *'s* / *of* {#of}
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | in B's use (*Azozon's dog*, *my house*, *my seat*), B's turn or occasion (*Azozon's birthday*) | hook **`om`** + `/b/` | [Whose](/extra-noun-hooks#genitive) |
 | care of a person (*Azozon's patient*) | **`gabolem`** + `/b/` | [Social relations](/social-ties#social-relations) |
@@ -70,7 +70,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 ### *about*
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | regarding / as for (*about Azozon*) | **`hehugom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 | now, about (*now, about Azozon*; *speaking of Azozon*) | `/x/` + the noun: **`xazozon`** | [Topic](/topic#topic) |
@@ -82,7 +82,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 ### *as*
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | kind / role (*Azozon as a dog*) | classification `/ɡ/` | [Kind / role](/predication#classification) |
 | same one (*Alazun as Azozon*) | **`SAME`** + `/b/` | [Identity](/predication#identity) |
@@ -103,7 +103,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 ### *since*
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | from a time on (*has sat since the storm*) | hook **`ul`** (*from*) + the time in `/b/` | [Since](/hooks#since) |
 | from an event on (*since Alazun fell asleep*) | **`ul barl`** + the sentence | [Since](/hooks#since) |
@@ -112,7 +112,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 ### *against*
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | opponent (*fights against a guard*, *Azozon versus Alazun*) | hook **`uol`** + `/b/` | [Hooks](/extra-noun-hooks#extra-noun-intermediate) |
 | who is against (*everyone against me*, *someone against the policy*) | hooked join **`…uex…`**: `zuoxual bluwen`, `zuoxar blonam` | [Hooked joins](/hooked-joins#hooked-joins-hooks) |
@@ -128,7 +128,7 @@ One English word, one row: the form that says it and the section that teaches it
 
 ### Place and path {#place-path}
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *in* / *into* / *inside* / *within* / *aboard* (*runs into a train*, *sits inside the house*) | hook **`al`** + `/b/`; the verb says whether anything moves; leave out the `/b/` when the place is clear (*went aboard*) | [Locative relations](/of-relations#locative-relations) |
 | *on* / *onto* / *upon* (*sits on a chair*, *climbs onto the table*) | hook **`ael`** + `/b/`; the verb says whether anything moves | [Hooks](/hooks#extra-noun) |
@@ -163,7 +163,7 @@ One English word, one row: the form that says it and the section that teaches it
 
 These hooks sit between two phrases in the **same role**, so the second phrase keeps the first one's role letter: *the family, except Azozon* is `zuvayal ul zazozon`, not `bazozon`.
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *including* (*the family, including Azozon*) | hook **`al`** (**`am`**: and maybe more) between the two | [Including](/hooks#including) |
 | *even* (*Alazun walks, and even Azozon does*) | surprise **`wemem`** before **`al`**: `zalazun wemem al zazozon vowurol` | [Detail on the hook](/ending-grids#hook-w) |
@@ -173,7 +173,7 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 
 ### Coming, going and following {#motion}
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *come* (*is coming to you*) | motion verb `vavobol` + hook **`oel`** + `/b/` for the person it heads to | [Here and there](/here-there#deixis) |
 | *bring* / *take* (*brings me the package*) | `velobal` (*carry*) + object + **`oel`** (toward) or **`ul`** (away from) | [Here and there](/here-there#deixis) |
@@ -183,7 +183,7 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 
 ### Matched lists and last resorts {#matched-lists}
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *X and Y are A and B, respectively* | the subject list, the adjective list, then **`wubam`** before the second join: `zazozon zalazun zal gelazem gamezem wubam gal` | [Respectively](/rank-joins#respectively) |
 | *X and Y walk and run, respectively* | the same shape on verbs: `zazozon zalazun zal vowurol veruvol wubam val` | [Respectively](/rank-joins#respectively) |
@@ -191,7 +191,7 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 
 ### *some-* and *any-* words {#some-any}
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *something* / *someone* / *thing* / *stuff* (unnamed) | **`zar`**; with a kind, `zeyel zar` | [Unspecified member](/joins#unspecified-member-r-phrase) |
 | *anything* / *anyone* / *anybody* | **`zer`**; with a kind, `zeyel zer` | [Unspecified member](/joins#unspecified-member-r-phrase) |
@@ -215,9 +215,9 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 
 ### Adjectives made from a noun (*golden*, *royal*, *solar*) {#noun-adjectives}
 
-English often makes an adjective from a noun by adding an ending (*gold* → *golden*, *sun* → *solar*). Agebon needs no ending for that. Put the noun's root on `/ɡ/` ([adjectives](/clause#adjectives-ɡ)): the adjective means *of that kind*. A root whose sense is an event reads as an act [in progress](#participles) instead. The ending picks the sense: **-l** is the everyday thing, **-m** is the abstract quality. Use **-l** for stuff you can touch (*gold*, *sun*) and **-m** for a quality or field (*royalty*, *life*, *institution*). For *made of*, the [of-relation](/of-relations#of-relations) with the stuff in `/b/` says it outright.
+English often makes an adjective from a noun by adding an ending (*gold* → *golden*, *sun* → *solar*). Ageben needs no ending for that. Put the noun's root on `/ɡ/` ([adjectives](/clause#adjectives-ɡ)): the adjective means *of that kind*. A root whose sense is an event reads as an act [in progress](#participles) instead. The ending picks the sense: **-l** is the everyday thing, **-m** is the abstract quality. Use **-l** for stuff you can touch (*gold*, *sun*) and **-m** for a quality or field (*royalty*, *life*, *institution*). For *made of*, the [of-relation](/of-relations#of-relations) with the stuff in `/b/` says it outright.
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *golden* | `gugulol` (made of gold: `gulom blugulol`) | [Adjectives](/clause#adjectives-ɡ), [of relations](/of-relations#of-relations) |
 | *wooden* | `gulol` (made of wood: `gulom blulol`) | [Of relations](/of-relations#of-relations) |
@@ -245,9 +245,9 @@ English often makes an adjective from a noun by adding an ending (*gold* → *go
 
 ### *anti-*, *pro-*, *trans-*, *-ward* words {#relation-prefixes}
 
-English builds many words from a relation and a noun: *anti-war*, *indoor*, *transoceanic*, *homeward*, *water-powered*. Agebon builds them the same way, from an extra-noun hook's vowels, **`x`** (or **`mx`** for the hook's frame), and the noun's root: a [hook prefix](/hook-compounds#hook-prefixes). On `/ɡ/` it is the adjective, on `/z/` `/d/` `/b/` someone or something with that stance, and on `/h/` it says how the clause stands to the noun.
+English builds many words from a relation and a noun: *anti-war*, *indoor*, *transoceanic*, *homeward*, *water-powered*. Ageben builds them the same way, from an extra-noun hook's vowels, **`x`** (or **`mx`** for the hook's frame), and the noun's root: a [hook prefix](/hook-compounds#hook-prefixes). On `/ɡ/` it is the adjective, on `/z/` `/d/` `/b/` someone or something with that stance, and on `/h/` it says how the clause stands to the noun.
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *anti-* / *against* in one word (*anti-war*, *anti-policy*) | hook prefix **`…uex…`**: `guoxuvuvul`, `guoxonam` | [Hook prefixes](/hook-compounds#hook-prefixes) |
 | *an opponent of* / *a supporter of* (*an anti-war person*) | the hook prefix on `/z/`: `zuoxuvuvul`; *pro-* is **`…ex…`** | [Hook prefixes](/hook-compounds#hook-prefixes) |
@@ -264,9 +264,9 @@ English builds many words from a relation and a noun: *anti-war*, *indoor*, *tra
 
 ### *quasi-*, *proto-*, *multi-*, *tri-* words {#number-prefixes}
 
-English names many kinds with a number idea in front: *quasi-friend*, *proto-love*, *multi-faith*, *a three-part dialogue*, *a first draft*. Agebon builds them the same way, from a number body, **`x`** (or **`mx`** for *roughly* that number), and the noun's root: a [numeric prefix](/numeric-derivation#numeric-derivation). The word is a kind of the noun, never a count of things in the sentence.
+English names many kinds with a number idea in front: *quasi-friend*, *proto-love*, *multi-faith*, *a three-part dialogue*, *a first draft*. Ageben builds them the same way, from a number body, **`x`** (or **`mx`** for *roughly* that number), and the noun's root: a [numeric prefix](/numeric-derivation#numeric-derivation). The word is a kind of the noun, never a count of things in the sentence.
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *quasi-* / *as-if* (*quasi-friend*, *quasi-official*) | numeric prefix **`ruwux…`**: `zruwuxahuyayel`, `gruwuxezazem` | [Quasi](/numeric-derivation#quasi) |
 | *the essence of* / *pure* (*essence of love*) | numeric prefix **`rawax…`**: `zrawaxolamal` | [Limit / polarity / stage](/numeric-derivation#limit-polarity-stage) |
@@ -284,9 +284,9 @@ English names many kinds with a number idea in front: *quasi-friend*, *proto-lov
 
 ### *-ing*, *-er*, and *-ed* words (*walking*, *teacher*, *seen*) {#participles}
 
-English builds several words from one verb: *walking*, *walker*, *walked*. Agebon picks the job instead: a person or thing in the middle of the act, someone who does it, someone it is their role, or someone it happens to.
+English builds several words from one verb: *walking*, *walker*, *walked*. Ageben picks the job instead: a person or thing in the middle of the act, someone who does it, someone it is their role, or someone it happens to.
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *walking* (*a walking dog*, *Azozon is walking*) | the event root on `/ɡ/`: `dodozel gowurol` | [In progress](/predication#in-progress) |
 | *walking* after a thing root (*a sitting guard*) | a role compound with scope **`u`**: `dagayul gwuzehohel` (*a guard who sits*) | [Role compounds](/roles#role-compounds) |
@@ -317,7 +317,7 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 
 ### Topic and talk {#topic-talk}
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *now, about Azozon*, *speaking of Azozon* | `/x/` + the noun: **`xazozon`** | [Topic](/topic#topic) |
 | *now, about Sam* (a foreign name) | <code>x@&lt;Sam&gt;</code> | [Topic](/topic#topic), [spans](/span-mention#topic-quotes) |
@@ -332,11 +332,11 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 
 ### Greetings {#greetings}
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *hi* / *hello* / *goodbye* | your own name said with a period: `SELFn.` | [Greeting](/word-endings#greeting) |
 | *Japan* (the country) | `azabanan` | [Countries](/proper-names#countries-traditions) |
 | *Sam* (keep the English spelling) | <code>@&lt;Sam&gt;</code> | [Opaque](/spans#loans) |
-| *Sam* (Agebon spelling of the sound) | type the English name in the lexicon | [Respell an English name](lexicon.md#respell) |
+| *Sam* (Ageben spelling of the sound) | type the English name in the lexicon | [Respell an English name](lexicon.md#respell) |
 | full name (*Alon Olowon*), family-first name, *Mary-Kate* | given name, then the family name on `/ɡ/` + **-n** (`zalon golowon`); a hyphenated name is one **`x`** word | [Multipart names](/proper-names#multipart-names) |
 | business or product name (*Ford Mustang*, *Coffee-Tea*, *Coffee-Instead-of-Tea*) | maker on `/ɡ/` + **-n**, a compact **`x`** word, or a titled phrase / span when the name has grammar inside | [Multipart names](/proper-names#multipart-names) |

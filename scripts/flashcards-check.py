@@ -63,9 +63,9 @@ def main() -> None:
         missing = decks - {d.name for d in col.decks.all_names_and_ids()}
         if missing:
             problems.append(f"decks not created: {', '.join(sorted(missing))}")
-        cards = col.find_cards('"note:Agebon lexicon"')
+        cards = col.find_cards('"note:Ageben lexicon"')
         if len(cards) != 2 * len(guids):
-            problems.append(f"{len(cards)} Agebon lexicon cards found to render; want {2 * len(guids)}")
+            problems.append(f"{len(cards)} Ageben lexicon cards found to render; want {2 * len(guids)}")
         for cid in cards:
             card = col.get_card(cid)
             q, a = visible(card.question()), visible(card.answer())

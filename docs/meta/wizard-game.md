@@ -15,7 +15,7 @@ Built in Node by [`src/game/build.ts`](../../src/game/build.ts), for the page's 
 ## Writing game content
 
 - **Name a row by its concrete sense** (`door`, `magnify`), never by its spelling. Code never spells a root ([closed roots](../../src/closed-roots.ts)).
-- **Write Agebon as morph gloss.** Gloss-inverse spells it, so a respelling reaches the game with no retie pass. A name is a `{concrete}` slot: `y-{guard}` calls the guard by title, `b-{hibiscus}` is the teacher by name.
+- **Write Ageben as morph gloss.** Gloss-inverse spells it, so a respelling reaches the game with no retie pass. A name is a `{concrete}` slot: `y-{guard}` calls the guard by title, `b-{hibiscus}` is the teacher by name.
 - **A verb handler belongs to a root.** Add it to `HANDLERS` ([`verbs.ts`](../../src/game/verbs.ts)) under the root's concrete sense. A verb with no handler gets the *beyond your power yet* message.
 - **A tail default that is odd in play** gets a row in `OVERRIDES` ([`objects.ts`](../../src/game/objects.ts)). The lexicon is never edited for the game.
 - **A quest** ([`quests.ts`](../../src/game/quests.ts)) names the constructions it is about in `needs`, and its area is the furthest one's section. It also needs a goal over world state, an abstract model for the reachability check, and at least one walkthrough. A thing the quest cannot lose gets the quest's id in `critical` ([`scene.ts`](../../src/game/scene.ts)).

@@ -12,7 +12,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -36,7 +36,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *sleep* | `vezuvel` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#advanced-english-to-agebon}
+#### English → Ageben {#advanced-english-to-ageben}
 
 **1.** *It was Alazun, not someone else, who cooked a tomato.*
 
@@ -68,7 +68,7 @@ z-Ahelan | [d-station | [w-MEMORY | g-quiet]] | v-see
 **Rule:** [Mood on one adjective](universality.md#mood-on-adjective)
 :::
 
-#### Agebon → English {#advanced-agebon-to-english}
+#### Ageben → English {#advanced-ageben-to-english}
 
 **1.** `zexual blawahol vehohel.`
 

@@ -33,7 +33,7 @@ for (let i = 0; i < args.length; i++) {
   else if (arg.startsWith("--")) usage(`unknown flag ${arg}`);
   else inputs.push(arg);
 }
-if (!check && inputs.length === 0) usage("give a digit string or Agebon words");
+if (!check && inputs.length === 0) usage("give a digit string or Ageben words");
 
 const bank = pegBank(parsePublishedCsv(readFileSync(dataPath("lexicon-published.csv"), "utf8")));
 

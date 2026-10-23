@@ -46,7 +46,7 @@ export const PRACTICE = `### Practice {#beginner-practice}
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *Azozon* | \`azozon\` | 🦢 |
 | *Alazun* | \`alazun\` | 🦁 |
@@ -55,7 +55,7 @@ export const PRACTICE = `### Practice {#beginner-practice}
 | *sit* | \`vehohel\` | 🪑 from *chair* |
 | *walk* | \`vowurol\` | 🦶 from *foot* |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Ahelan sees Azozon.*
 
@@ -83,7 +83,7 @@ z-Azozon | v-sit
 z-Alazun | v-walk
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** \`zalazun dahelan vayebel.\`
 

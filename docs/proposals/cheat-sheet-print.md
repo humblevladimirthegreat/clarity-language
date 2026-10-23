@@ -15,13 +15,13 @@ Cheat sheets are lookup pages meant to print ([grammar-docs](../meta/grammar-doc
 
 The content lint (`lint-cheat-sheets.ts`) checks rows against owning pages. It does not measure layout.
 
-grammar-docs still says **one printable page per subsystem**. Several sheets already run longer than that on screen (Agebon → English especially). This proposal does not restore a one-page rule, and it does not cap page count. First question: can every table sit on one sheet if we are willing to insert breaks and move blocks?
+grammar-docs still says **one printable page per subsystem**. Several sheets already run longer than that on screen (Ageben → English especially). This proposal does not restore a one-page rule, and it does not cap page count. First question: can every table sit on one sheet if we are willing to insert breaks and move blocks?
 
 ## Goals
 
 1. **Pin the page box** in CSS so print size and margins are the same for learners and for the lint.
 2. **Make page starts visible in the source** with an explicit marker, not a CSS exception and not a form-feed character (HTML treats `\f` as whitespace; it will not start a sheet).
-3. **Fail the build when a table would split** across two sheets under that page box.
+3. **Fail a dedicated print lint** when a table would split across two sheets under that page box. Not `npm run build`, not `npm test`.
 4. **Fix by rearranging**, not by shrinking type further: insert a marker before the table, swap a short block onto the leftover space, or split a table that is taller than one full sheet into two tables with a marker between.
 5. **Report page counts** per sheet (and leftover space) so a later cap, if any, is chosen from data.
 
@@ -30,8 +30,9 @@ grammar-docs still says **one printable page per subsystem**. Several sheets alr
 - A page-count cap (four or otherwise). Do not fail a sheet for being long.
 - Requiring every *prose* wrap to be an explicit marker in this phase. Implicit page wraps through headings and paragraphs are allowed until the table-split lint is clean and we have counts.
 - Matching every print-dialog override (headers and footers, “fit to printable area”). `@page` is the contract the lint uses.
-- Paged.js, on-screen letter-sized cards, or a visual print-preview route as the source of truth. A dashed rule on the marker is enough for screenshots.
+- Paged.js, on-screen letter-sized cards, or a visual print-preview route as the source of truth. A dashed rule on the marker is enough for a screen screenshot of the intended start.
 - Changing what a sheet teaches, or splitting a sheet into several sidebar entries, unless rearrangement cannot save a table.
+- Adding Playwright, Chromium, or this check to `npm run build` or Amplify. Publish stays free of a browser download.
 
 ## What exists
 

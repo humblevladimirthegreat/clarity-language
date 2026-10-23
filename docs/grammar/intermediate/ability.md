@@ -32,7 +32,7 @@ Unlike PLAN, DECISION carries **no time**. It says what you chose, not that the 
 
 The endings on DECISION run on the same settled-to-passing scale as [changeability](/sakes#sake-changeability) on an unmet sake: **-l** irreversible, **-m** modifiable, **-r** temporary. With **-n**, the word is an ordinary [name](proper-names.md#proper-name--n). If you do not know how settled the decision is, use **-m**. How firm a choice will turn out is hard to know even for yourself, so **-m** claims nothing either way.
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thogel`** | **irreversible** | *have decided for good to …* | **-l** ≈ lasting (for good) |
 | **`thogem`** | **modifiable** (soft default if unknown) | *have decided to …, and can still change that* | **-m** ≈ open to change |
@@ -86,7 +86,7 @@ As a plain noun, the root keeps its own meaning (`zowal` *a test tube*).
 
 On **`owa`**, **-l / -m / -r** say how far the attempt will go. **-n** is ordinary [proper](proper-names.md#proper-name--n). If you do not know, use **-m**.
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`howal`** | **committed** | *commits to trying …* / *keeps trying to …* until it works or is ruled out | **-l** the full run |
 | **`howam`** | **unstated** (soft default) | *tries to …* | **-m** middle |
@@ -162,7 +162,7 @@ To want a person or thing (*want Azozon*), name the act that would get it (*see*
 
 On **`alo`**, **-l / -m / -r** say how long the wanting lasts. **-n** is ordinary [proper](proper-names.md#proper-name--n). If you do not know, use **-m**.
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thalol`** | a want that keeps coming back | *really want …* / *have long wanted …* | **-l** ≈ lasting (a steady star) |
 | **`thalom`** | duration unstated (soft default) | *want …* | **-m** ≈ open |
@@ -251,7 +251,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *pen* | `ebewol` | 🖊️ |
 | *DECISION* | `thogem` | ✅ from *check*: the box is ticked |
@@ -260,7 +260,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -274,7 +274,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sing* | `vozuyel` |
 | *find* | `vumewel` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *I've decided to sit down, and can still change that.*
 
@@ -308,7 +308,7 @@ z-Azozon | th-WANT-passing | v-sing
 z-speaker | th-DECISION-temporary | v-tell | b-Alazun
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zahelan thagom thogel dobonol varuyol.`
 

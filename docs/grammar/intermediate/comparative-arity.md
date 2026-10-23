@@ -10,7 +10,7 @@ band: intermediate
 Beginner already used two names plus **`zol`** (*more … than*) and one name (*the …-est*). The same shared-scale pattern also uses reverse rank **`uo`** (*less … than* / *the least*) and **zero** names.
 
 <!-- cheat-sheet: roles-comparing -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |---------|-----|---------|-----|
 | **Multi (2+)** + shared scale under **`o` / `uo`** | comparative ladder | earlier above later (`o`); later above earlier under **`uo`** | **`o`** ≈ order; **`u`** ≈ undo |
 | **Single-item (1)** + shared scale under **`o` / `uo`** | superlative | *the …-est* / *the least …* under **`uo`** | one name is the extreme |
@@ -102,7 +102,7 @@ When English would say *more cats than dogs*, you rank **how many**, not a quali
 >
 > "There are as many cats as dogs."
 
-The noun decides whether English says *many* or *much*: cats are counted, tea is measured. Agebon uses the same **`gral`** for both.
+The noun decides whether English says *many* or *much*: cats are counted, tea is measured. Ageben uses the same **`gral`** for both.
 
 Open **`gram`** ranks by a **rough impression** instead of a count: *it looks like more cats than dogs*. Use **`gral`** when you counted or measured, and **`gram`** when you are going by how it seems.
 
@@ -229,7 +229,7 @@ A [hook](/hooks) and its `/b/` on the ranked item go right before the bar, the w
 > "This book is heavier than planned."
 
 <!-- cheat-sheet: roles-comparing -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | name + bar + **`zol`** | above the bar | *more than planned* / *later than planned* |
 | name + bar + **`zuol`** | below the bar | *less than planned* / *earlier than planned* |
@@ -246,7 +246,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *pie* | `abodal` | 🥧 |
 | *lift* | `velunel` | 🏋️: its abstract is *exertion* |
@@ -254,7 +254,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -266,7 +266,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *doughnut* | `udodel` |
 | *sleep* | `vezuvel` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Azozon is less heavy than Alazun.*
 
@@ -316,7 +316,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-Ahelan | th-plan-itinerary | z-rank/more | g-heavy]
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zalazun zol wrodol garolem.`
 

@@ -1,7 +1,7 @@
 /** Orientation rows sit above the three lesson groups and are not sittings. */
 export const orientation = [
-  { text: 'Why Agebon', link: '/' },
-  { text: 'Agebon Introduction', link: '/introduction' },
+  { text: 'Why Ageben', link: '/' },
+  { text: 'Ageben Introduction', link: '/introduction' },
 ]
 
 /** Beginner sittings; the group’s Review is appended in `withReview`. */
@@ -143,7 +143,7 @@ export const cheatSheetSidebar: LessonLink[] = [
   { text: 'Linking clauses', link: '/cheat-sheets/linking-clauses' },
   { text: 'Roles and comparing', link: '/cheat-sheets/roles-comparing' },
   { text: 'Numbers', link: '/cheat-sheets/numbers' },
-  { text: 'Agebon → English', link: '/cheat-sheets/to-english' },
+  { text: 'Ageben → English', link: '/cheat-sheets/to-english' },
   { text: 'Exceptions', link: '/cheat-sheets/exceptions' },
 ]
 

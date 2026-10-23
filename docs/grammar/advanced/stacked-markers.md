@@ -81,14 +81,14 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *car* | `ugaval` | 🚗 |
 | *parking* | `ebahal` | 🅿️ |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -97,7 +97,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *sit* | `vehohel` |
 | *stand* | `vuzuvel` |
 
-#### English → Agebon {#advanced-english-to-agebon}
+#### English → Ageben {#advanced-english-to-ageben}
 
 **1.** *A second-to-last car stands.*
 
@@ -123,7 +123,7 @@ z-Ahelan | [d-parking | g-negative-label-2] | v-see
 z-Alazun | [d-car-x | g-three | g-plus-minus-1] | v-see
 :::
 
-#### Agebon → English {#advanced-agebon-to-english}
+#### Ageben → English {#advanced-ageben-to-english}
 
 **1.** `zebahal gruodol.`
 

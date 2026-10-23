@@ -41,7 +41,7 @@ A noun after a because pole names an act or a thing, never a person. For *becaus
 The ending on the because pole says whether anyone did wrong.
 
 <!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English | Stage |
+| Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`thahul`](/fault#fault) | the reason broke a norm | *it's their fault* / *to blame* | I |
 | [`thahum`](/fault#fault) | the reason made it happen; no fault claimed | *because* | I |
@@ -85,7 +85,7 @@ A sake is a kind of payoff. A sake word is a sake root, mid-word `th`, a stance 
 ### Which stance vowel {#stance-vowels}
 
 <!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English | Ending says | Stage |
+| Ageben | Use | English | Ending says | Stage |
 |--------|-----|---------|-------------|-------|
 | [**`tha`**](/sakes#met) | the belonging or event pays off this sake | *serves* / *met* | [time horizon](/sakes#time-horizon-endings-on-met) | B |
 | [**`thu`**](/sakes#word-shape) | it subtracts from this sake | *detracts from* / *unmet* | [changeability](/sakes#sake-changeability) | B |
@@ -119,7 +119,7 @@ The scale runs **-l** most settled, **-m** the default, **-r** most passing. Whe
 A lone met word is a whole sentence about you: *my sake is met*. Sorry is about their sake, so name them in `/b/`.
 
 <!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English | Stage |
+| Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`…thal`](/thanks-and-sorry#thanks-sorry) | the help lasts | *that will stay with me* | I |
 | [`…tham`](/thanks-and-sorry#thanks-sorry) | horizon unstated | *thank you* | I |
@@ -140,7 +140,7 @@ A lone met word is a whole sentence about you: *my sake is met*. Sorry is about 
 Your feeling about the whole claim, on `/th/` with **-m**. It is never the subject's.
 
 <!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English | Stage |
+| Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`thuwuyom`](/feelings-permission#speaker-attitude) | you want it, and it is still open | *hopefully* | I |
 | [`tholezem`](/feelings-permission#speaker-attitude) | it went well by chance | *luckily* | I |
@@ -176,7 +176,7 @@ An [emotion](/feelings-permission#emotion-compose) is built on one word: the sak
 Motion is how the feeling moves, not how strong it is. For strength, put a [degree word](/left-bound#degree-w) on `/w/` before it. A direction `/b/` names the landmark, so it cannot also name whose stake.
 
 <!-- cheat-sheet: why-allowed -->
-| Agebon | English | Stage |
+| Ageben | English | Stage |
 |--------|---------|-------|
 | [`zezuyol wuwathuraer goyom`](/feelings-permission#emotion-compose) | *anxious about the dialogue* | I |
 | [`zozowum wawethumual goyom`](/feelings-permission#emotion-compose) | *given up over the division* | I |

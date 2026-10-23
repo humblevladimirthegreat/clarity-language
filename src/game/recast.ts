@@ -22,7 +22,7 @@ export type RecastRule = {
 };
 
 /** `tier` 0: the whole input read another way (a typed gloss, the orthography fix); 1: a row for this error kind; 2: any other single edit. */
-export type NearMiss = { agebon: string; rule: string; tier: number; why?: string; source?: string };
+export type NearMiss = { ageben: string; rule: string; tier: number; why?: string; source?: string };
 
 /** Seed rows from the orthography and the word shape: swapped endings, `/b/` for `/d/`. */
 export const SEED_RULES: RecastRule[] = [
@@ -114,16 +114,16 @@ export type RecastOptions = {
 export function nearMisses(input: string, errorKind: string, options: RecastOptions): NearMiss[] {
   const out = new Map<string, NearMiss>();
   const limit = options.limit ?? 200;
-  const add = (agebon: string, rule: string, tier: number, extra: Partial<NearMiss> = {}) => {
-    if (agebon !== input && !out.has(agebon) && out.size < limit) out.set(agebon, { agebon, rule, tier, ...extra });
+  const add = (ageben: string, rule: string, tier: number, extra: Partial<NearMiss> = {}) => {
+    if (ageben !== input && !out.has(ageben) && out.size < limit) out.set(ageben, { ageben, rule, tier, ...extra });
   };
 
   const gloss = typedGloss(input);
   const spelled = gloss ? options.spellGloss?.(gloss) : undefined;
-  if (spelled) add(spelled, "typed gloss", 0, { why: "That is a morph gloss; here it is in Agebon.", source: "inspect.md" });
+  if (spelled) add(spelled, "typed gloss", 0, { why: "That is a morph gloss; here it is in Ageben.", source: "inspect.md" });
 
   const base = orthographyFix(input);
-  if (base !== input) add(base, "orthography", 0, { why: "Agebon is written in lowercase, with `th` for one letter and no hyphen after the role letter.", source: "phonology.md#vowels" });
+  if (base !== input) add(base, "orthography", 0, { why: "Ageben is written in lowercase, with `th` for one letter and no hyphen after the role letter.", source: "phonology.md#vowels" });
 
   const toks = tokens(base);
   const rules = [...options.rules].sort((a, b) => Number(b.errorKind === errorKind) - Number(a.errorKind === errorKind));

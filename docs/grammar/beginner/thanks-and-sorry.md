@@ -6,7 +6,7 @@ band: beginner
 
 ### Thanks and sorry {#thanks-sorry}
 
-Agebon has no set phrase for *thank you*. Say that your sake **is met**: a lone `/th/` met word is a whole sentence about you, and saying it to the one who acted is the thanks. Pick the sake that was actually served; the ending says how long the payoff lasts ([endings on met](sakes.md#time-horizon-endings-on-met)). (cue: thanks = *my sake is met*)
+Ageben has no set phrase for *thank you*. Say that your sake **is met**: a lone `/th/` met word is a whole sentence about you, and saying it to the one who acted is the thanks. Pick the sake that was actually served; the ending says how long the payoff lasts ([endings on met](sakes.md#time-horizon-endings-on-met)). (cue: thanks = *my sake is met*)
 
 > `thawetham.`
 >
@@ -21,7 +21,7 @@ Agebon has no set phrase for *thank you*. Say that your sake **is met**: a lone 
 > "Thanks, that sets me up for the long run."
 
 <!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `…thal` | the help lasts | *that will stay with me* |
 | `…tham` | the help, horizon unstated (default) | *thank you* |
@@ -36,7 +36,7 @@ Agebon has no set phrase for *thank you*. Say that your sake **is met**: a lone 
 > "I'm sorry; that hurt your sense of connection."
 
 <!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `…thul blawan` | the harm is irreversible | *I'm deeply sorry* |
 | `…thum blawan` | the harm can be softened (default) | *I'm sorry* |
@@ -54,7 +54,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *listener* | `awan` |
 | *relatedness* | `awel` |
@@ -63,7 +63,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *police* | `ebayol` |
 | *basket* | `abowal` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Guard, thank you, that meant a lot to me.*
 
@@ -89,7 +89,7 @@ y-guard | th-relatedness-met-any-term
 th-competence-met-lasting
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `thawethum blebayol.`
 

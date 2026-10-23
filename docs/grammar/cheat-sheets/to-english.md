@@ -5,7 +5,7 @@ outline: false
 
 <PrintButton />
 
-# Agebon → English cheat sheet {#to-english-cheat-sheet}
+# Ageben → English cheat sheet {#to-english-cheat-sheet}
 
 Met a short word you can't place? Find its family by shape, then look it up in the tables below, sorted by spelling. Every table except the first is built from the dictionary, so it always matches the grammar, and each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
@@ -30,7 +30,7 @@ Every join and hook, with its English: [Joins and hooks cheat sheet](joins-hooks
 The pronouns are shown without a role letter: add the one for their slot (`zuwen` *I* as subject). The sentence linkers are shown whole.
 
 <!-- generated: closed-words -->
-| Agebon | English | Taught in | Stage |
+| Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `alen` | *the topic* | [The topic pronoun](/topic#topic-pronoun) | I |
 | `awan` | *you* (the listener) | [Special pronouns](/pronouns#special-pronouns) | B |
@@ -52,7 +52,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 ## `/ɡ/` words {#g-words}
 
 <!-- generated: overlays pos=g -->
-| Agebon | English | Taught in | Stage |
+| Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `gabam` | BEFORE clause pole (ahead-of) | [Time poles on a noun](/sentence-linkers#time-pole-on-noun) | I |
 | `gadam` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
@@ -99,7 +99,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 ## `/h/` words {#h-words}
 
 <!-- generated: overlays pos=h -->
-| Agebon | English | Taught in | Stage |
+| Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `habam` | BEFORE clause pole (ahead-of) | [Because, if, although (poles)](/dependents#poles) | B |
 | `hadam` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
@@ -157,7 +157,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 ## `/th/` words {#th-words}
 
 <!-- generated: overlays pos=th -->
-| Agebon | English | Taught in | Stage |
+| Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `thabel` | intuition evidential with strong evidence (strong gut sense) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thabem` | intuition evidential (gut sense you cannot fully spell out) | [Evidentiality](/evidentiality#evidentiality) | I |
@@ -214,7 +214,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 ## `/v/` words {#v-words}
 
 <!-- generated: overlays pos=v -->
-| Agebon | English | Taught in | Stage |
+| Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `vaen` | join-act picks with more picks open | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
 | `van` | join-act includes or adds object | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
@@ -231,7 +231,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 ## `/w/` words {#w-words}
 
 <!-- generated: overlays pos=w -->
-| Agebon | English | Taught in | Stage |
+| Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `wabel` | intuition evidential with strong evidence (strong gut sense) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `wabem` | intuition evidential (gut sense you cannot fully spell out) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
@@ -306,7 +306,7 @@ A [sake word](/sakes#word-shape) is a sake root, mid-word `th`, **a** (*serves*)
 [Words you look up, not build](/compounds#lexical-compounds): two roots fused with a join letter, plus [hook compounds](/hook-compounds#hook-compounds) (a citation fused with a hook). Shown as citations.
 
 <!-- generated: compounds -->
-| Agebon | English | Abstract (**-m**) |
+| Ageben | English | Abstract (**-m**) |
 |--------|---------|-------------------|
 | `ababahal` | *bathroom* |  |
 | `ababalegulal` | *towel* |  |

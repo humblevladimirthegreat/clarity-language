@@ -4,7 +4,7 @@ band: beginner
 
 # Joins
 
-When English would pack several things that play the same role into one slot (*a dog and a cat*, *walks and runs*), Agebon writes those items in a row and then one join word after them. That last word is how you know the list has ended. This pattern of items, then the join, is called a **right-close fence**. The join starts with the same role letter as the items (`z` for subjects, `v` for verbs, `x` for whole clauses).
+When English would pack several things that play the same role into one slot (*a dog and a cat*, *walks and runs*), Ageben writes those items in a row and then one join word after them. That last word is how you know the list has ended. This pattern of items, then the join, is called a **right-close fence**. The join starts with the same role letter as the items (`z` for subjects, `v` for verbs, `x` for whole clauses).
 
 Sometimes you only care that the items belong together, with no ranking among them (*and*, *or*, *not*): that is a **set**. Sometimes you care which item comes first (*X first*, *A before B*): that is a **rank**.
 
@@ -96,7 +96,7 @@ When English would offer a menu and ask to *pick one*, or leave the pick *(optio
 
 The join still comes last when there is only one item, or none. How many items sit before it is the **arity**:
 
-| Arity | Agebon | Use | English |
+| Arity | Ageben | Use | English |
 |-------|--------|-----|---------|
 | **List** (2+) | `A B zam` | close a multi-item set | ordinary *and* / *or* |
 | **Single-item** (1) | `A zal` | that one item is the whole story | *just X* |
@@ -187,7 +187,7 @@ Write the items in that order, then a join with vowel **o**. The earlier item ou
 
 When English says *something* or *someone*, or *one of these* without saying which, put ending **-r** on the join. The join then stands for one member of its list that you are not naming. **-r** goes only on a join with one vowel (**a** / **o** / **e** / **u**), not on a two-vowel join such as **ua**.
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `zar` / `var` / `xar` | unspecified member of an add-set | *something* / *do something* / *something happened* | **a** ≈ add |
 | `zer` / `ver` / `xer` | unspecified member of a menu | *anything* / *do anything* | **e** ≈ either |
@@ -235,7 +235,7 @@ When English says *some of them* or *some people*, more than one, add [**-x**](p
 ### Vowels and endings {#join-type-vowel-series}
 
 <!-- cheat-sheet: vowels -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** | add the items | *and* | **a** ≈ add |
 | **o** | rank among items | *A before B*; one item *only X matters* | **o** ≈ order |
@@ -243,7 +243,7 @@ When English says *some of them* or *some people*, more than one, add [**-x**](p
 | **ua** | universal; one listed item is the leftover | standalone *everything*; one item *everything but* | **u** ≈ undo, then **a** ≈ add |
 | **e** | exclusive choice | exclusive *or* | **e** ≈ either |
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **-l** | the listed items are the only ones in play | (no extra words) | **l** ≈ locked list |
 | **-m** | other items may exist | *(and possibly more)*; empty: *as far as I know* | **m** ≈ maybe more |
@@ -255,7 +255,7 @@ The same vowels and endings work under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`
 With two or more items, each join reads as taught above. This table collects the readings for a join with only one item before it, or none.
 
 <!-- cheat-sheet: joins-hooks -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `zal` / `zam` | standalone | *nothing* / *nobody* · *nothing, as far as I know* |
 | `zel` / `zem` | standalone | *no options* · *no pick, as far as I know* |
@@ -304,7 +304,7 @@ A clause join never sits on one clause alone. To deny or single out one clause, 
 
 A join word with no clause before it stands for a clause of its own: `xal.` *nothing happened*, `xar` *something happened*, `xur` *something else happened*, `xual` *everything happened*. That join word can also be one item of a clause list:
 
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | `zazozon vowurol xam xar.` | *Azozon walks, for one* (and something else happened too) |
 | `zazozon vowurol xel xal.` | *Azozon may walk* (Azozon walks, or nothing happens) |
@@ -320,7 +320,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *bread* | `obodel` | 🍞 |
 | *tomato* | `odedel` | 🍅 |
@@ -330,7 +330,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -341,7 +341,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *scream* | `veyamul` |
 | *big* | `gelazem` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Azozon sees a mango and a watermelon.*
 
@@ -403,7 +403,7 @@ z-Ahelan | v-pay | b-none
 [g-big | g-not]
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zogowal zam.`
 

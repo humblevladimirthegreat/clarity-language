@@ -1,5 +1,5 @@
 /**
- * English → Agebon prompt: the analyzer's skeleton for each input, short writing rules, the gloss core of the Agebon → English prompt (so the
+ * English → Ageben prompt: the analyzer's skeleton for each input, short writing rules, the gloss core of the Ageben → English prompt (so the
  * model can read the examples), reader notes for the sections the analyzer points at, and doc
  * examples picked by the roots, forms, constructions and English words they share with the
  * input. Pure: the analyzer data and the example index come in from the caller, so the CLI and
@@ -88,7 +88,7 @@ type Indexed = { pair: ExamplePair; words: Set<string>; english: string[]; const
 function indexed(pair: ExamplePair): Indexed {
   return {
     pair,
-    words: new Set(pair.agebon.toLowerCase().split(/[^a-z]+/).filter(Boolean)),
+    words: new Set(pair.ageben.toLowerCase().split(/[^a-z]+/).filter(Boolean)),
     english: pair.sentence.toLowerCase().split(/[^a-z']+/).filter(Boolean),
     constructions: new Set(pair.constructions),
   };
@@ -115,7 +115,7 @@ function has(example: Indexed, feature: string): boolean {
 
 /** A table cell that is a phrase, not a sentence (`homam blarl` *until*): no closing punctuation. */
 function fragment(pair: ExamplePair): boolean {
-  return !/[.?!]$/.test(pair.agebon.trim());
+  return !/[.?!]$/.test(pair.ageben.trim());
 }
 
 /**
@@ -156,7 +156,7 @@ export function selectHelperExamples(
       const g = gain(example);
       if (picked.length >= MIN_EXAMPLES && g <= 0) continue;
       // Past the new features, what the example repeats breaks ties; near-ties go to the shorter sentence.
-      const score = g + 0.1 * total(example) - 0.002 * example.pair.agebon.length;
+      const score = g + 0.1 * total(example) - 0.002 * example.pair.ageben.length;
       if (score > topScore) {
         top = example;
         topScore = score;
@@ -182,11 +182,11 @@ function illustration(inputs: readonly HelperInput[]): string | undefined {
   return undefined;
 }
 
-/** How to write a word and a clause (clause.md#who-acts-and-the-action, word-endings.md#concrete-l). Plain English, no fixed Agebon. */
+/** How to write a word and a clause (clause.md#who-acts-and-the-action, word-endings.md#concrete-l). Plain English, no fixed Ageben. */
 function writingRules(inputs: readonly HelperInput[]): string[] {
   const example = illustration(inputs);
   return [
-    "## How to write Agebon",
+    "## How to write Ageben",
     "",
     `- Each word of a sentence is one lowercase word: role letter + root + ending, with no hyphen or space${example ? ` (${example})` : ""}. The role letter is the word's job, and it is the same as the gloss prefix described below: \`z\` subject, \`d\` direct object, \`b\` extra noun that receives, \`bl\` extra noun that completes the word before it, \`v\` verb, \`g\` adjective, \`gl\` adjective before its noun, \`w\` degree, \`h\` adverb, \`th\` stance, \`y\` turn word, \`x\` link. \`th\` is one letter.`,
     "- The ending: `-l` for a first mention in the root's everyday, concrete sense; `-m` for the root's abstract sense; `-n` for a name.",
@@ -237,7 +237,7 @@ function inlineExamples(inputs: readonly HelperInput[], index: readonly ExampleP
       }
     }
   }
-  return [...forms].flatMap((form) => index.find((pair) => pair.agebon === form) ?? []);
+  return [...forms].flatMap((form) => index.find((pair) => pair.ageben === form) ?? []);
 }
 
 /** The whole prompt for `inputs` (one numbered English line each when there are several). */
@@ -258,12 +258,12 @@ export function buildHelperPrompt(
   const out: string[] = [];
   out.push(
     several
-      ? "Translate the numbered English lines below into Agebon, a constructed language you have not seen. An analyzer has looked up each English word in the Agebon lexicon and grammar; its suggestions follow. Take the words from them."
-      : "Translate the English below into Agebon, a constructed language you have not seen. An analyzer has looked up each English word in the Agebon lexicon and grammar; its suggestions follow. Take the words from them.",
+      ? "Translate the numbered English lines below into Ageben, a constructed language you have not seen. An analyzer has looked up each English word in the Ageben lexicon and grammar; its suggestions follow. Take the words from them."
+      : "Translate the English below into Ageben, a constructed language you have not seen. An analyzer has looked up each English word in the Ageben lexicon and grammar; its suggestions follow. Take the words from them.",
   );
   out.push("", ...writingRules(inputs));
   out.push("", renderCore());
-  out.push("", "In the examples, each gloss word is one Agebon word, in the same order, and its prefix is that word's role letter.");
+  out.push("", "In the examples, each gloss word is one Ageben word, in the same order, and its prefix is that word's role letter.");
 
   const tags = [...legend(examples, context), ...readerNotes(examples, context).map((reader) => `- ${reader}`)];
   if (tags.length > 0) out.push("", "## Tags and constructions used here", "", ...tags);
@@ -281,7 +281,7 @@ export function buildHelperPrompt(
   if (examples.length > 0) {
     out.push("", "## Examples", "");
     for (const pair of examples) {
-      out.push(`AGEBON: ${pair.agebon}`, `Gloss: ${pair.gloss}`, `English: "${pair.sentence}"${pair.note ? ` (${pair.note})` : ""}`, "");
+      out.push(`AGEBEN: ${pair.ageben}`, `Gloss: ${pair.gloss}`, `English: "${pair.sentence}"${pair.note ? ` (${pair.note})` : ""}`, "");
     }
     out.pop();
   }
@@ -292,9 +292,9 @@ export function buildHelperPrompt(
     "- The analyzer matches words, not meanings. Choosing between suggestions, and rephrasing by meaning, is your job: for a gap, say the same thing with suggested roots if you can (*a room for sleeping* for a word with no root), or leave it out and name it in the note.",
     "- Leads are guesses: use one only when its sense fits the sentence.",
     "- Keep who does what to whom, negation, and the speaker's stance. Do not add what the English does not say.",
-    "- If you can run commands in the Agebon repository, check each draft before you reply: `node scripts/english-helper.mjs '<english>' --verify '<draft>'` shows the parse error, or the word-by-word gloss, any word the lexicon does not know, and under `senses:` the sense each word's ending picks beside the English word it came from. Fix every error, and every sense line marked to check. Then run `node scripts/parse.mjs --llm-prompt '<draft>'`, answer that prompt, and compare its English with the input. Revise when the meaning differs.",
+    "- If you can run commands in the Ageben repository, check each draft before you reply: `node scripts/english-helper.mjs '<english>' --verify '<draft>'` shows the parse error, or the word-by-word gloss, any word the lexicon does not know, and under `senses:` the sense each word's ending picks beside the English word it came from. Fix every error, and every sense line marked to check. Then run `node scripts/parse.mjs --llm-prompt '<draft>'`, answer that prompt, and compare its English with the input. Revise when the meaning differs.",
   );
-  const shape = "AGEBON: <sentence> (<note>)";
+  const shape = "AGEBEN: <sentence> (<note>)";
   out.push(
     "",
     several

@@ -10,7 +10,7 @@ band: beginner
 When English tells events in time order (*and then*), put ending **-n** on a clause join (`/x/`). Narrative *and then* is **`xan`**. Like every clause join, it goes [between](joins.md#clause-joins) the clauses: `A xan B xan C` reads one step at a time. The clauses keep one speech act; this **-n** orders them rather than naming a person.
 
 <!-- cheat-sheet: joins-hooks -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `xan` | sequence add | *and then…* | **a** ≈ add |
 | `xen` | sequence menu | *or maybe…*; *failing that…* | **o** ≈ one |
@@ -32,7 +32,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -42,7 +42,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *punch* | `vabuvul` |
 | *scream* | `veyamul` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Azozon runs, then Alazun sits.*
 
@@ -68,7 +68,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 [z-Azozon | v-punch | x-and-then | z-Alazun | v-scream]
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zahelan veyamul xan zalazun vabuvul.`
 

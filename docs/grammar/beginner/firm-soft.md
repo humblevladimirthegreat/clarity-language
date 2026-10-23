@@ -6,7 +6,7 @@ band: beginner
 
 ### Speech act: firm and soft {#speech-act}
 
-You already mark whether a turn is a statement, question, command, or prohibition. The ending of the act word adds **how firmly** you mean it. English softens with extra words (*please*, *perhaps*, *for what it's worth*); Agebon changes only the ending.
+You already mark whether a turn is a statement, question, command, or prohibition. The ending of the act word adds **how firmly** you mean it. English softens with extra words (*please*, *perhaps*, *for what it's worth*); Ageben changes only the ending.
 
 The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a** statement, **o** command, **e** question, **u** prohibition). With **-l** you stand behind the act. With **-m** you offer it softly and leave the other person free to take it up or not. **-r** marks an act you hold only for now. Write the act word whenever the turn is not a plain statement; a period still lets you omit **`yal`**.
 
@@ -19,7 +19,7 @@ The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a
 **Compare with:** [MAY](knowing.md#may) (`thomam`) marks the scene as *could be*. **`yam`** is still a statement; you put it forward without insisting the other person take it up.
 
 <!-- cheat-sheet: talking -->
-| Agebon | Use | Cue |
+| Ageben | Use | Cue |
 |--------|-----|-----|
 | **`yal`** | **statement**: claim or description | **a** add + **-l**: stand behind |
 | **`yam`** | **soft statement**: offered, not insisted (*for what it's worth*) | **a** add + **-m**: hold, but leave it open |
@@ -51,7 +51,7 @@ A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` w
 **-r** marks an act you hold only **for now**: provisional, and you expect to revisit it.
 
 <!-- cheat-sheet: talking -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`yar`** | **provisional statement**: held until something better comes | *as things stand* / *for now, I take it that…* | **a** add + **-r**: a claim held for now |
 | **`yer`** | **working question**: asked to proceed, expect to re-ask | *just checking, …?* / *for now, is it…?* | **e** choice + **-r**: an ask for now |
@@ -78,7 +78,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -88,7 +88,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *stop* | `vezohul` |
 | *quiet* | `ugowul` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *For what it's worth, Ahelan sings.*
 
@@ -114,7 +114,7 @@ y-request | v-sing | z-interlocutors
 y-provisional-statement | z-Ahelan | h-quiet | v-sing
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `yor vozuyel zazozon.`
 

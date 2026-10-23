@@ -8,7 +8,7 @@ band: beginner
 
 For English *somewhere*, *nowhere*, and *everywhere*, put a [standalone join](joins.md#standalone-phrase) in the `/b/` slot after a place hook. Outside a question, **`bar`** is an unspecified member (*somewhere*), the same way **`zar`** is *someone*. Under **`yel`**, it is the *where?* blank.
 
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | **`el bar`** | *somewhere* (under **`yel`**: *where?*) |
 | **`el bur`** | *somewhere else* |
@@ -29,12 +29,12 @@ For English *somewhere*, *nowhere*, and *everywhere*, put a [standalone join](jo
 
 ### Here and there, this and that {#deixis}
 
-English *here*, *there*, *this*, and *that* point at things by their distance from the speaker. Agebon points from a **person in the conversation** instead: put a place hook before the [speaker, listener, or interlocutors](pronouns.md#special-pronouns) in `/b/`.
+English *here*, *there*, *this*, and *that* point at things by their distance from the speaker. Ageben points from a **person in the conversation** instead: put a place hook before the [speaker, listener, or interlocutors](pronouns.md#special-pronouns) in `/b/`.
 
 Names come first. When you know who is talking or listening, use their name as the landmark (`em bazozon` *near Azozon*). Use speaker and listener when the conversation role itself matters, or when you have no name to use.
 
 <!-- cheat-sheet: joins-hooks -->
-| Agebon | Landmark | English |
+| Ageben | Landmark | English |
 |--------|----------|---------|
 | `em buwen` | near the speaker | *here* / *this* |
 | `em bawan` | near the listener | *there* / *that* (by you) |
@@ -61,7 +61,7 @@ Use `el` in place of `em` for the exact spot (`el buwen` *right where I am*).
 >
 > "Alazun sleeps over there." (away from both you and me)
 
-English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agebon names the landmark with the plain motion verb **`vavobol`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vavobol` says nothing about how someone travels; use `vowurol` (*walk*) or `veruvol` (*run*) only when the manner matters.
+English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Ageben names the landmark with the plain motion verb **`vavobol`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vavobol` says nothing about how someone travels; use `vowurol` (*walk*) or `veruvol` (*run*) only when the manner matters.
 
 > `zazozon vavobol oel buwen.`
 >
@@ -107,14 +107,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *luggage* | `elobal` | 🧳 |
 | *dog* | `odozel` | 🐕 |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -128,7 +128,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vayebel` |
 | *sleep* | `vezuvel` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *The luggage is here.* (near me)
 
@@ -154,7 +154,7 @@ z-Alazun | v-sleep | [away-from | b-interlocutors]
 z-Azozon | v-sit | [near | b-interlocutors]
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zalazun degewol vumewel el bal.`
 

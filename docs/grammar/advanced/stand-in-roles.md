@@ -11,7 +11,7 @@ A stand-in's vowel says what kind of content follows, and its first letter says 
 Each content type has one lexicalized form; there is no closed / open pair here.
 
 <!-- cheat-sheet: linking-clauses -->
-| Agebon | Dependent content | English |
+| Ageben | Dependent content | English |
 |--------|-------------------|---------|
 | **`varn`** | statement-like (`a`) | *state…* |
 | **`vern`** | question-like (`e`) | *question…* |
@@ -65,7 +65,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *command* | `vorn` | **o** ≈ rank: the next sentence is an instruction |
 | *state* | `varn` | **a** ≈ add: the next sentence is a claim |
@@ -74,7 +74,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -86,7 +86,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *sit* | `vehohel` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#advanced-english-to-agebon}
+#### English → Ageben {#advanced-english-to-ageben}
 
 **1.** *Azozon commands that Alazun sit.*
 
@@ -112,7 +112,7 @@ z-Azozon | v-command | z-Alazun | v-sit
 z-Azozon | v-see | d-statement | z-Ahelan | v-sit
 :::
 
-#### Agebon → English {#advanced-agebon-to-english}
+#### Ageben → English {#advanced-ageben-to-english}
 
 **1.** `zazozon varn zalazun vehohel.`
 

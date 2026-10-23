@@ -1,7 +1,7 @@
 /**
  * Vocabulary flashcard decks for Anki (`vocab-flashcards.md`).
  *
- * Run: npm run flashcards                         every v1 pack: tmp/flashcards/agebon-<pack>.apkg and .tsv
+ * Run: npm run flashcards                         every v1 pack: tmp/flashcards/ageben-<pack>.apkg and .tsv
  *      npm run flashcards -- --pack core,sakes    only these packs (core, sakes, everything)
  *      npm run flashcards -- --out <dir>          another output directory
  *      npm run flashcards -- --tsv-only           skip the genanki step and the Anki check (no .venv needed)
@@ -48,7 +48,7 @@ function main(): void {
   const packed: string[] = [];
   for (const id of options.packs) {
     const pack = buildPack(id, notes, inputs);
-    const base = join(options.out, `agebon-${id}`);
+    const base = join(options.out, `ageben-${id}`);
     writeFileSync(`${base}.tsv`, packTsv(pack));
     const count = pack.decks.reduce((n, d) => n + d.notes.length, 0);
     if (!options.tsvOnly) {

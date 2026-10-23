@@ -9,7 +9,7 @@ band: intermediate
 Beginner already used two roots glued with **`x`** and dictionary words with no **`x`**. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family. A [role compound](/roles#role-compounds) or [role pointer](/pronouns#role-pointers) is not one of these families: it opens with **`w`**, a scope vowel, and a part consonant (`zwuzeduyol`, `zwuzer`), and only a noun inside its stem takes **`x`**.
 
 <!-- cheat-sheet: roles-comparing -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | conversation length | *Azozon, I have time* | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | ability | *can’t sing right now* | extra vowel after the root |
@@ -53,7 +53,7 @@ Use the table above. If the word has a mid-word **`th`**, it is a [sake](/sakes)
 
 ### Conversation length (name **`x`** vowel) {#conversation-length}
 
-English *I can stay a while* or *I only have a minute* tells the other person how long you can talk. In Agebon, add **`x`** and one vowel before **-n** on a [greeting](/word-endings#greeting) (your own name with a period, `SELFn.`) or a [call](/speech-moves#vocative) (their name under **`/y/`**, `yalazun.`). At arrival, the vowel sets how long you expect the conversation to last. At departure, the same form says how soon you are leaving. The vowel is about the conversation, not a grade of the person.
+English *I can stay a while* or *I only have a minute* tells the other person how long you can talk. In Ageben, add **`x`** and one vowel before **-n** on a [greeting](/word-endings#greeting) (your own name with a period, `SELFn.`) or a [call](/speech-moves#vocative) (their name under **`/y/`**, `yalazun.`). At arrival, the vowel sets how long you expect the conversation to last. At departure, the same form says how soon you are leaving. The vowel is about the conversation, not a grade of the person.
 
 The vowel says how much talk is left. Join vowels pick list type. That job stays on join words.
 
@@ -125,14 +125,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *salad* | `azudal` | 🥗 |
 | *plate* | `uyodal` | 🍽️ |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *your name* | `SELFn` |
 | *Azozon* | `azozon` |
@@ -144,7 +144,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vayebel` |
 | *scream* | `veyamul` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *I have time; we can stay.* (hello, with your own name)
 
@@ -194,7 +194,7 @@ z-salad-x-plate
 z-Evela-x-Azuda-x-Ageden
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `SELFxen.`
 

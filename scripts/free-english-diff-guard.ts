@@ -2,7 +2,7 @@
 /**
  * Diff guard for the free English page review ([llm-gloss-prompt.md § diff guard](../docs/proposals/llm-gloss-prompt.md#diff-guard)).
  * Compares top-level grammar pages against a base revision (default `HEAD`) and fails when a
- * changed line is out of scope: a heading, a table row other than a word bank row, or an Agebon
+ * changed line is out of scope: a heading, a table row other than a word bank row, or an Ageben
  * code span whose rewrite changes the construction IDs (roots may differ). Free English lines
  * and new prose lines directly under an example block pass. Any other changed prose line is
  * listed for review against the subagent's strange-example report.
@@ -50,20 +50,20 @@ const files = (pages.length ? pages : changed).filter((file) => isGrammarPage(fi
 
 const tables = loadDefaultTables();
 const constructionCache = new Map<string, string[] | null>();
-function constructions(agebon: string): string[] | null {
-  if (!constructionCache.has(agebon)) {
+function constructions(ageben: string): string[] | null {
+  if (!constructionCache.has(ageben)) {
     let ids: string[] | null = null;
     try {
-      ids = parseWithTables(fillSelf(agebon), tables, { constructions: true }).constructions ?? [];
+      ids = parseWithTables(fillSelf(ageben), tables, { constructions: true }).constructions ?? [];
     } catch {
       ids = null;
     }
-    constructionCache.set(agebon, ids);
+    constructionCache.set(ageben, ids);
   }
-  return constructionCache.get(agebon)!;
+  return constructionCache.get(ageben)!;
 }
 
-/** Construction IDs of the Agebon spans (spans that do not parse are skipped). */
+/** Construction IDs of the Ageben spans (spans that do not parse are skipped). */
 function spanConstructions(spans: string[]): Set<string> {
   const out = new Set<string>();
   for (const span of spans) for (const id of constructions(span) ?? []) out.add(id);
@@ -72,8 +72,8 @@ function spanConstructions(spans: string[]): Set<string> {
 
 const codeSpans = (line: string) => [...line.matchAll(/`([^`]+)`/g)].map((m) => m[1]!);
 
-/** An example's Agebon row: a block row, checkpoint prompt, or spoiler line that starts with a code span. */
-const isAgebonRow = (line: string) => /^\s*(?:>\s*)?(?:\*\*\d+\.\*\*\s*)?`/.test(line);
+/** An example's Ageben row: a block row, checkpoint prompt, or spoiler line that starts with a code span. */
+const isAgebenRow = (line: string) => /^\s*(?:>\s*)?(?:\*\*\d+\.\*\*\s*)?`/.test(line);
 
 type Hunk = { oldStart: number; oldLines: string[]; newStart: number; newLines: string[] };
 function hunks(file: string): Hunk[] {
@@ -93,11 +93,11 @@ function hunks(file: string): Hunk[] {
 const isQuote = (line: string) => /^\s*>/.test(line);
 const isTable = (line: string) => /^\s*\|/.test(line);
 
-/** True when the table holding line `at` (0-based) is a word bank: its header starts `| English | Agebon`. */
+/** True when the table holding line `at` (0-based) is a word bank: its header starts `| English | Ageben`. */
 function inWordBank(lines: string[], at: number): boolean {
   let i = at;
   while (i > 0 && isTable(lines[i - 1]!)) i -= 1;
-  return /^\s*\|\s*English\s*\|\s*Agebon\s*\|/.test(lines[i]!);
+  return /^\s*\|\s*English\s*\|\s*Ageben\s*\|/.test(lines[i]!);
 }
 
 /** True when line `at` is prose directly under an example block (blank or other new prose lines between). */
@@ -116,8 +116,8 @@ for (const file of files) {
   const report: string[] = [];
   for (const hunk of hunks(file)) {
     const added = new Set(hunk.newLines.map((_, k) => hunk.newStart - 1 + k));
-    const oldCode = hunk.oldLines.filter(isAgebonRow).flatMap(codeSpans);
-    const newCode = hunk.newLines.filter(isAgebonRow).flatMap(codeSpans);
+    const oldCode = hunk.oldLines.filter(isAgebenRow).flatMap(codeSpans);
+    const newCode = hunk.newLines.filter(isAgebenRow).flatMap(codeSpans);
     if (oldCode.join("\u0000") !== newCode.join("\u0000")) {
       const before = spanConstructions(oldCode);
       const after = spanConstructions(newCode);
@@ -126,11 +126,11 @@ for (const file of files) {
       const rewrite = `${oldCode.join(" · ") || "(none)"} → ${newCode.join(" · ") || "(none)"}`;
       if (lost.length) {
         errors += 1;
-        report.push(`  ERROR ${hunk.newStart}: Agebon rewrite drops constructions (-${lost.join(" -")}${gained.length ? ` +${gained.join(" +")}` : ""}): ${rewrite}`);
+        report.push(`  ERROR ${hunk.newStart}: Ageben rewrite drops constructions (-${lost.join(" -")}${gained.length ? ` +${gained.join(" +")}` : ""}): ${rewrite}`);
       } else if (gained.length) {
         review += 1;
-        report.push(`  review ${hunk.newStart}: Agebon rewrite adds constructions (+${gained.join(" +")}): ${rewrite}`);
-      } else report.push(`  agebon ${hunk.newStart}: ${rewrite}`);
+        report.push(`  review ${hunk.newStart}: Ageben rewrite adds constructions (+${gained.join(" +")}): ${rewrite}`);
+      } else report.push(`  ageben ${hunk.newStart}: ${rewrite}`);
     }
     for (const at of added) {
       const line = lines[at]!;
@@ -146,12 +146,12 @@ for (const file of files) {
           report.push(`  ERROR ${n}: table row changed: ${line.trim()}`);
         }
       } else if (isQuote(line)) {
-        // Agebon and morph rows inside a block: covered by the construction check above.
-        if (!isAgebonRow(line) && !looksLikeMorphLine(line.replace(/^\s*>\s*/, ""))) {
+        // Ageben and morph rows inside a block: covered by the construction check above.
+        if (!isAgebenRow(line) && !looksLikeMorphLine(line.replace(/^\s*>\s*/, ""))) {
           review += 1;
           report.push(`  review ${n}: block line: ${line.trim()}`);
         }
-      } else if (isAgebonRow(line) || looksLikeMorphLine(line.trim())) continue;
+      } else if (isAgebenRow(line) || looksLikeMorphLine(line.trim())) continue;
       else if (underBlock(lines, at, added)) report.push(`  prose ${n}: ${line.trim()}`);
       else {
         review += 1;

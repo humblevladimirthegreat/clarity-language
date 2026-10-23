@@ -1,5 +1,5 @@
 /**
- * Morph gloss → Agebon ([glosses.md § Round trip](../../docs/meta/glosses.md#round-trip)).
+ * Morph gloss → Ageben ([glosses.md § Round trip](../../docs/meta/glosses.md#round-trip)).
  *
  * Leaves resolve through an index of glossed word forms (every published root
  * and compound under each role letter and ending, the closed join / hook
@@ -153,7 +153,7 @@ export function indexRootForms(index: GlossIndex, root: string, tables: Classify
   }
 }
 
-/** Open-ended forms (numbers, mid-word `x`) as whole Agebon lines use them. */
+/** Open-ended forms (numbers, mid-word `x`) as whole Ageben lines use them. */
 export function indexLineForms(index: GlossIndex, lines: readonly string[], tables: ClassifyTables): void {
   for (const line of lines) {
     try {
@@ -366,7 +366,7 @@ function assemble(nodes: Node[], index: GlossIndex, tables: ClassifyTables, name
     if (node.t === "leaf") {
       const quoted = unquote(node.text);
       const alts = quoted !== undefined ? [quoted] : leafCandidates(node.text, index, named);
-      if (alts.length === 0) throw new Error(`no Agebon form glosses as ${node.text}`);
+      if (alts.length === 0) throw new Error(`no Ageben form glosses as ${node.text}`);
       out.push({ alts });
       continue;
     }
@@ -449,10 +449,10 @@ function resolve(pieces: Piece[], tables: ClassifyTables, finish: (words: string
 }
 
 /**
- * Rebuild Agebon from a morph gloss line. Throws when no form sequence
+ * Rebuild Ageben from a morph gloss line. Throws when no form sequence
  * re-glosses to exactly this line (a non-invertible gloss).
  */
-export function glossToAgebon(gloss: string, tables: ClassifyTables, index: GlossIndex): string {
+export function glossToAgeben(gloss: string, tables: ClassifyTables, index: GlossIndex): string {
   const target = normalizeMorphLine(gloss);
   const pieces = assemble(new GlossReader(target).seq(false), index, tables);
   return resolve(pieces, tables, (w) => w, target)[0]!;

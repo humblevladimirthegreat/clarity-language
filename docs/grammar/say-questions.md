@@ -175,7 +175,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 #### Rank: single-item (under question)
 
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | **…em** | *Is X the top priority?* / *Prefer X?* (offer) |
 | **…el** | *Is X the only priority?* |
@@ -188,7 +188,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 #### Rank: standalone (under question)
 
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | **…el** | *No favorite?* |
 | **…em** | *Easy-going?* / *Whichever?* |
@@ -204,7 +204,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 #### Set: single-item (under question)
 
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | **…al** | *Just X?* / *Only X?* |
 | **…am** | *How about X?* / *Want X?* (offer) |
@@ -225,7 +225,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 #### Set: standalone (under question)
 
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | **…al** | *Nothing?* / *Nobody?* |
 | **…am** | *Got nothing?* |
@@ -251,9 +251,9 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 **Needs:** [Ask](/questions#question) · [Reported questions](#reported-questions) · [Stand-in vowels](/sentence-linkers#stand-in) · [Firm and soft](/firm-soft#speech-act) · [Stacking two act words](/speech-acts#stacked-acts) · [Quiz](/polar-inventory#quiz) · [Conversation length](/compound-families#conversation-length) · [Call someone](/speech-moves#vocative)
 
-English *ask* is four jobs. You can put a question to someone, ask them for something, ask them to do something, or report that a question was asked. A question is the act word **`yel`**. A request is **`yom`**. A reported question hangs on the telling ([reported questions](#reported-questions)). *Ask* or *tell someone to do* something is a telling with the to-clause stand-in **`dorl`**, and the person told is plain `/b/`; *not to* is **`durl`**. English picks *ask* or *tell* for politeness, which Agebon carries on the act word, not the verb. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
+English *ask* is four jobs. You can put a question to someone, ask them for something, ask them to do something, or report that a question was asked. A question is the act word **`yel`**. A request is **`yom`**. A reported question hangs on the telling ([reported questions](#reported-questions)). *Ask* or *tell someone to do* something is a telling with the to-clause stand-in **`dorl`**, and the person told is plain `/b/`; *not to* is **`durl`**. English picks *ask* or *tell* for politeness, which Ageben carries on the act word, not the verb. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
 
-| English | Agebon | Reading |
+| English | Ageben | Reading |
 |---------|--------|---------|
 | *ask* (a question) | `yel zazozon vowurol.` | question |
 | *ask* (for something, *could you*) | `yom vowurol zawan.` | request |
@@ -278,9 +278,9 @@ English *ask* is four jobs. You can put a question to someone, ask them for some
 
 **Needs:** [Firm and soft](/firm-soft#speech-act) · [Tags](/polar-inventory#tags) · [Prescription](/ought-for-a-sake#sake-force) · [Permission](/feelings-permission#permission) · [Which noun](/dependents#which-noun)
 
-English *offer*, *suggest*, *propose*, *recommend* and *advise* all put something forward that the other person may take or leave. Agebon picks how firmly. A soft act word (**-m**) leaves the choice open. A soft request with *we* proposes a joint act, and a tag after it asks whether they take it up. A prescription **`the`** on a sake says the act ought to serve it, and its ending says whether the person invited it (**-l**) or you are offering it unasked (**-m**).
+English *offer*, *suggest*, *propose*, *recommend* and *advise* all put something forward that the other person may take or leave. Ageben picks how firmly. A soft act word (**-m**) leaves the choice open. A soft request with *we* proposes a joint act, and a tag after it asks whether they take it up. A prescription **`the`** on a sake says the act ought to serve it, and its ending says whether the person invited it (**-l**) or you are offering it unasked (**-m**).
 
-| English | Agebon | Reading |
+| English | Ageben | Reading |
 |---------|--------|---------|
 | *offer* (a thing) | `yem` + a giving | soft question: *would you like…?* |
 | *suggest* / *propose* (a joint act) | `yom vowurol zayan.` | soft request with *we* |
@@ -315,7 +315,7 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 
 **Needs:** [Greeting](/word-endings#greeting) · [Polar stance](/questions#polar-stance) · [Cite](/spans#writing) · [Mention](/span-mention#mention) · [Asides](/spans#asides)
 
-| English | Agebon | Reading |
+| English | Ageben | Reading |
 |---------|--------|---------|
 | *hello* / *hi* | `SELFn.` | your own name, said with a period |
 | *sir* / *madam* | `yalazun.` | call them by name |
@@ -344,7 +344,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -352,7 +352,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *trophy* | `odoral` |
 | *bell* | `eboral` |
 
-#### English → Agebon {#questions-joins-english-to-agebon}
+#### English → Ageben {#questions-joins-english-to-ageben}
 
 **1.** *Is Azozon the only priority?*
 
@@ -394,7 +394,7 @@ y-question | z-equal-rank
 y-question | [z-trophy | z-and/or]
 :::
 
-#### Agebon → English {#questions-joins-agebon-to-english}
+#### Ageben → English {#questions-joins-ageben-to-english}
 
 **1.** `yaol.` vs `yael.`
 

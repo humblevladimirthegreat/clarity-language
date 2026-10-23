@@ -126,7 +126,7 @@ onUnmounted(() => {
           <tr>
             <th scope="col">Emoji</th>
             <th scope="col">Concrete</th>
-            <th scope="col">Agebon</th>
+            <th scope="col">Ageben</th>
             <th scope="col">Abstract</th>
             <th scope="col">Role English</th>
             <th scope="col">Overlays</th>

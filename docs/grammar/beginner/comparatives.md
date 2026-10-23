@@ -4,7 +4,7 @@ band: beginner
 
 # Comparatives {#comparatives-page}
 
-English splits three nearby jobs on a quality like *challenging*. *More … than* and *the most* put people in **order** on that quality. *As … as* says they sit at the **same height**. *Both are challenging* only says **each has** the quality; it does not say who ranks higher or whether they match. Agebon writes the first two with a rank join from joins followed by the shared adjective, and the third with an ordinary *and*-list.
+English splits three nearby jobs on a quality like *challenging*. *More … than* and *the most* put people in **order** on that quality. *As … as* says they sit at the **same height**. *Both are challenging* only says **each has** the quality; it does not say who ranks higher or whether they match. Ageben writes the first two with a rank join from joins followed by the shared adjective, and the third with an ordinary *and*-list.
 
 <a id="overview"></a>
 
@@ -83,7 +83,7 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 **Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zazozon zalazun zal gamahum`): each has the quality. It does not rank them or say they match. Use **`oe`** only for *as … as*.
 
 <!-- cheat-sheet: roles-comparing -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | Rank **`o`** (`zol`) | rank on a shared quality | *more … than* / *the …-est* | **`o`** ≈ order |
 | Equality **`oe`** (`zoel` / `zoem`) | same height on the quality | *as … as* / *about as … as* | **`oe`** ≈ either + order (one shared rank) |
@@ -96,7 +96,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *slow* | `uzezam` | 🐌 from *snail* |
 | *agility* | `evunom` | 🏑 from *field hockey* |
@@ -105,7 +105,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -115,7 +115,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *angry* | `onumul` |
 | *sleepy* | `uzemel` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Azozon is more agile than Alazun.*
 
@@ -165,7 +165,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 [z-Azozon | z-rank/more | g-angry]
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zahelan zol gevunom.`
 

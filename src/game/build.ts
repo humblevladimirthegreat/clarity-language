@@ -15,7 +15,7 @@ import { practiceItems } from "../lint/practice-items.js";
 import type { ClassifyTables } from "../parse/classify.js";
 import { constructionRegistry } from "../parse/constructions.js";
 import { ConstructionError } from "../parse/enforce.js";
-import { buildGlossIndex, glossToAgebon, type GlossIndex } from "../parse/gloss-inverse.js";
+import { buildGlossIndex, glossToAgeben, type GlossIndex } from "../parse/gloss-inverse.js";
 import { loadDefaultTables } from "../parse/index.js";
 import { looksLikeMorphLine } from "../parse/morph-gloss.js";
 import { unknownWords } from "../parse/lexicon-check.js";
@@ -139,7 +139,7 @@ export function fixItRules(tables: ClassifyTables): RecastRule[] {
     for (const item of practiceItems(markdown, { review: isLevelReview(page) }).items) {
       if (item.type !== "fix") continue;
       const wrong = item.promptSpans.find((span) => span.marker?.includes("lint: error"))?.text;
-      const right = item.spoiler.find((line) => line.kind === "agebon")?.text.replace(/^`|`$/g, "");
+      const right = item.spoiler.find((line) => line.kind === "ageben")?.text.replace(/^`|`$/g, "");
       if (!wrong || !right) continue;
       const why = item.spoiler
         .filter((line) => line.kind === "text" && !looksLikeMorphLine(line.text))
@@ -153,12 +153,12 @@ export function fixItRules(tables: ClassifyTables): RecastRule[] {
   return rules;
 }
 
-/** Agebon lines of every doc example: the forms a gloss index cannot list on its own (mid-word `x`, numbers). */
+/** Ageben lines of every doc example: the forms a gloss index cannot list on its own (mid-word `x`, numbers). */
 export function docLines(): string[] {
   const lines = new Set<string>();
   for (const file of listMarkdown(GRAMMAR_DIR)) {
     if (file.includes(".vitepress")) continue;
-    for (const pair of extractMorphPairs(readFileSync(file, "utf8"))) lines.add(pair.agebon);
+    for (const pair of extractMorphPairs(readFileSync(file, "utf8"))) lines.add(pair.ageben);
   }
   return [...lines];
 }
@@ -174,7 +174,7 @@ export function fullGlossIndex(tables: ClassifyTables): GlossIndex {
 /** The fixed lines, spelled. Throws on one that does not spell: the content lint reports it. */
 export function spellFixed(tables: ClassifyTables): Record<string, string> {
   const index = fullGlossIndex(tables);
-  return Object.fromEntries(Object.values(FIXED).map(({ gloss }) => [gloss, glossToAgebon(gloss, tables, index)]));
+  return Object.fromEntries(Object.values(FIXED).map(({ gloss }) => [gloss, glossToAgeben(gloss, tables, index)]));
 }
 
 let built: EngineData | undefined;

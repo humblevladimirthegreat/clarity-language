@@ -123,7 +123,7 @@ A [hook](/left-bound#complex-chaining) followed by `/b/` means *in* / *at* / *fo
 
 ## Predication {#predication}
 
-Agebon has no word for *is*. The kind of claim comes from the pattern.
+Ageben has no word for *is*. The kind of claim comes from the pattern.
 
 ### Saying what someone is {#is}
 

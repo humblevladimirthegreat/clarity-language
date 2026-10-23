@@ -30,7 +30,7 @@ A **period** closes the sentence body in writing, whatever the speech act. Speec
 Beginner already used *therefore*. It is one of six **sentence linkers**: `/x/` words that connect a finished sentence to the one after it. Each one uses its root's **abstract** sense, so it ends in **-m**.
 
 <!-- cheat-sheet: linking-clauses -->
-| English | Agebon | Abstract of | Cue | Example |
+| English | Ageben | Abstract of | Cue | Example |
 |---------|--------|-------------|-----|---------|
 | *therefore* | **`xahom`** | `ahom` *progress* | ➡️: the sun’s path, so the talk moves on | `xahom` |
 | *however* | **`xezem`** | `ezem` *contrast* | 🦓: two stripes, still one animal | `xezem` |
@@ -46,7 +46,7 @@ A linker reaches back to **one** sentence: the one that ends at the period befor
 Three linkers also take **-l** for a **firm** link: the link holds with no room for doubt, on the same settled-to-passing scale as [time horizon](/sakes#settled-to-passing). (cue: **-l** ≈ lasting: the link holds)
 
 <!-- cheat-sheet: linking-clauses -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **`xahol`** | the next claim must hold if the last sentence does: a deduction | *it follows that* / *necessarily, then* |
 | **`xezel`** | the contrast stands whatever the last claim said | *nevertheless* / *even so* |
@@ -239,7 +239,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *sneak* | `vozuyul` | 🥷 |
 | *however* | `xezem` | 🦓 from *zebra*: two stripes, still one animal |
@@ -253,7 +253,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -273,7 +273,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *tell* | `vezuyol` |
 | *scream* | `veyamul` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Azozon sees the train. However, Alazun runs.*
 
@@ -323,7 +323,7 @@ z-Alazun | [d-luggage | [g-before | bl-departure]] | v-see
 z-Ahelan | v-sit | [th-if | bl-lest-clause] | z-train | v-departure
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zalazun vezuyol. xugorom zahelan dogobal vumewel.`
 

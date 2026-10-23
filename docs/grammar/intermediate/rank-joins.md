@@ -77,7 +77,7 @@ When English would say two people are *as ADJ as* each other, use a tie: a rank 
 
 Beginner already used *everything but* (**`ua`**). A leading **u** inverts **o** and **e** the same way: **uo** reverses a ranking, and **ue** offers everything outside the list.
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **ua** | invert add | *everything but* the listed | **u** ≈ undo + **a** ≈ add |
 | **uo** | invert rank | *A after B after C* (last first) | **u** ≈ undo + **o** ≈ order |
@@ -174,7 +174,7 @@ Beginner already used single-item *just X* and standalone *nothing* / *everythin
 
 **Rank: single-item**
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **…el** (`zol` / …) | closed rank of one | *only X matters* / *X, period*; + SHARED scale → superlative ([comparatives](/comparatives)) |
 | **…em** (`zom` / …) | open rank of one | *X first* / *mainly X*; + SHARED scale → open superlative |
@@ -192,7 +192,7 @@ Beginner already used single-item *just X* and standalone *nothing* / *everythin
 
 Standalone **o** says nothing is on top (no favorite; with a SHARED scale, *there is no biggest*). Standalone **uo** says nothing is at the bottom (no least, no veto). Neither says the items are tied (that is **`oe`**), and neither picks out *whichever is on top* (that is **`zor`**). Closed **-l** states it as a fact about the set; open **-m** says only that you know of none.
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **…el** (`zol` / …) | closed empty rank | *no favorite* / *nobody's first*; + SHARED scale → *there is no biggest* |
 | **…em** (`zom` / …) | open empty rank | *no favorite, as far as I know*; + SHARED scale → *no biggest comes to mind* |
@@ -208,7 +208,7 @@ Standalone **o** says nothing is on top (no favorite; with a SHARED scale, *ther
 
 **Set: single-item**
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **…al** (`zal` / …) | closed add of one | *just X* / *only X* |
 | **…am** (`zam` / …) | open add of one | *X, for one* / *X (and possibly more)* |
@@ -231,7 +231,7 @@ Standalone **o** says nothing is on top (no favorite; with a SHARED scale, *ther
 
 **Set: standalone**
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **…al** (`zal` / …) | closed empty add | *nothing* / *nobody* |
 | **…am** (`zam` / …) | open empty add | *nothing, as far as I know* |
@@ -270,7 +270,7 @@ When English would deny a list as a whole (*not both*), close the list with its 
 >
 > "not exactly one of walk and run." (both, or neither)
 
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | `vowurol veruvol vul` | *neither walk nor run* |
 | `vowurol veruvol val vul` | *not both walk and run* |
@@ -280,7 +280,7 @@ When English would deny a list as a whole (*not both*), close the list with its 
 
 When one list sits inside another (*(tea or coffee) and water*), write the inner items, then their join, then the outer item, then the outer join. Each join sits after only the stretch it closes. You nest by stacking right-close joins; a flat list still uses a single join after all its members. Clause joins group by position instead ([clause joins](/joins#clause-joins)).
 
-| Pattern | Agebon | English |
+| Pattern | Ageben | English |
 |---------|--------|---------|
 | flat | `zedudal zogudal zowulal zel` | *tea or coffee or water* |
 | nested | `zedudal zogudal zel zowulal zal` | *either tea or coffee, and water* |
@@ -294,7 +294,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *ring* | `orebel` | 💍 |
 | *veil* | `ovobul` | 👰 |
@@ -304,7 +304,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -315,7 +315,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *punch* | `vabuvul` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Azozon and Alazun, both in a dress*
 
@@ -349,7 +349,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [[v-kiss | v-walk | v-and] | v-not]
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zovobul zuel.`
 

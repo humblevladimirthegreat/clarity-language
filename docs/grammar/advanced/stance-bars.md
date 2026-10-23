@@ -162,7 +162,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *artistry* | `ubewom` | 🖌️ from *paintbrush* |
 | *showmanship* | `ohedam` | 🌭 from *hotdog* |
@@ -171,7 +171,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -184,7 +184,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *sing* | `vozuyel` |
 | *trumpet* | `adorol` |
 
-#### English → Agebon {#advanced-english-to-agebon}
+#### English → Ageben {#advanced-english-to-ageben}
 
 **1.** *Azozon sings better than usual.*
 
@@ -218,7 +218,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 [z-trumpet-x | th-REPORTED | z-rank/more | g-amount]
 :::
 
-#### Agebon → English {#advanced-agebon-to-english}
+#### Ageben → English {#advanced-ageben-to-english}
 
 **1.** `zalazun thabem zol gozuyel.`
 

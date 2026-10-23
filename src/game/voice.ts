@@ -1,11 +1,11 @@
 /**
- * The game's voice: every Agebon line it shows starts as a morph gloss, is spelled by gloss-inverse,
+ * The game's voice: every Ageben line it shows starts as a morph gloss, is spelled by gloss-inverse,
  * and is parsed (one tree, lexicon roots) before it is shown, as doc examples are at build time.
  * Fixed lines arrive spelled from the build ([build.ts](./build.ts)); generated lines are spelled here,
  * with the index grown one root at a time.
  */
 import { classify, type ClassifyTables } from "../parse/classify.js";
-import { glossToAgebon, indexRootForms, seriesGlossIndex, type GlossIndex } from "../parse/gloss-inverse.js";
+import { glossToAgeben, indexRootForms, seriesGlossIndex, type GlossIndex } from "../parse/gloss-inverse.js";
 import { morphGlossFor } from "../parse/morph-gloss.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import type { LexWord, ParseResult } from "../parse/types.js";
@@ -57,11 +57,11 @@ export function unknownWordsIn(result: ParseResult): string[] {
 }
 
 /** Parse a line the game is about to show; undefined unless it reads one way. */
-export function checkLine(agebon: string, gloss: string, english: string, tables: ClassifyTables): Spoken | undefined {
+export function checkLine(ageben: string, gloss: string, english: string, tables: ClassifyTables): Spoken | undefined {
   try {
-    const result = parseWithTables(agebon, tables, { constructions: true, checkAmbiguity: true });
+    const result = parseWithTables(ageben, tables, { constructions: true, checkAmbiguity: true });
     if (result.ambiguity?.length) return undefined;
-    return { agebon, gloss, english, constructions: result.constructions ?? [], roots: lineRoots(result) };
+    return { ageben, gloss, english, constructions: result.constructions ?? [], roots: lineRoots(result) };
   } catch {
     return undefined;
   }
@@ -86,15 +86,15 @@ export function createVoice(tables: ClassifyTables, spelled: Record<string, stri
       return morphGlossFor(classify(words[0]!, tables), tables, {});
     },
     say(gloss, english) {
-      let agebon = spelled[gloss];
-      if (agebon === undefined) {
+      let ageben = spelled[gloss];
+      if (ageben === undefined) {
         try {
-          agebon = glossToAgebon(gloss, tables, index);
+          ageben = glossToAgeben(gloss, tables, index);
         } catch {
           return undefined;
         }
       }
-      return checkLine(/[.?!]$/.test(agebon) ? agebon : `${agebon}.`, gloss, english, tables);
+      return checkLine(/[.?!]$/.test(ageben) ? ageben : `${ageben}.`, gloss, english, tables);
     },
   };
 }

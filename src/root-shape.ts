@@ -1,14 +1,14 @@
 /**
- * Agebon root letter inventory and root shape, with no Node dependencies so the browser parser can use it.
+ * Ageben root letter inventory and root shape, with no Node dependencies so the browser parser can use it.
  */
 
-/** Agebon root vowels (phonology inventory). */
-export const AGEBON_VOWELS = ["a", "e", "o", "u"] as const;
+/** Ageben root vowels (phonology inventory). */
+export const AGEBEN_VOWELS = ["a", "e", "o", "u"] as const;
 
 /**
- * Agebon root consonants. The glide is `y`. Mid-word `x` is never a root letter.
+ * Ageben root consonants. The glide is `y`. Mid-word `x` is never a root letter.
  */
-export const AGEBON_CONSONANTS = [
+export const AGEBEN_CONSONANTS = [
   "b",
   "d",
   "g",
@@ -35,23 +35,23 @@ export function isPlaceRootShape(root: string): boolean {
 
 /** A published root of either shape: ordinary V(CV)+ or a place-name root. */
 export function isAnyRootShape(root: string): boolean {
-  return isAgebonRootShape(root) || isPlaceRootShape(root);
+  return isAgebenRootShape(root) || isPlaceRootShape(root);
 }
 
 /**
  * Whether `root` is a legal ordinary content root: V(CV)+ using the phonology letter inventory.
  */
-export function isAgebonRootShape(root: string): boolean {
+export function isAgebenRootShape(root: string): boolean {
   if (root.length === 0 || root.length % 2 === 0) {
     return false;
   }
   for (let i = 0; i < root.length; i++) {
     const ch = root[i]!;
     if (i % 2 === 0) {
-      if (!(AGEBON_VOWELS as readonly string[]).includes(ch)) {
+      if (!(AGEBEN_VOWELS as readonly string[]).includes(ch)) {
         return false;
       }
-    } else if (!(AGEBON_CONSONANTS as readonly string[]).includes(ch)) {
+    } else if (!(AGEBEN_CONSONANTS as readonly string[]).includes(ch)) {
       return false;
     }
   }

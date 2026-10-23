@@ -1,6 +1,6 @@
 /**
  * What one turn works with: the world, the generator, the gate, and the lines it writes. Speech always
- * shows in Agebon (with its gate result for testers); narration shows in Agebon only when the gate passes.
+ * shows in Ageben (with its gate result for testers); narration shows in Ageben only when the gate passes.
  */
 import type { Draft, Generator, View } from "./generate.js";
 import { gate, type GateData, type Progress } from "./gating.js";
@@ -47,7 +47,7 @@ export function speakFixed(ctx: Ctx, who: EntityId, line: Parameters<Generator["
   return true;
 }
 
-/** Narration: Agebon when every construction and root in it is unlocked, else English. */
+/** Narration: Ageben when every construction and root in it is unlocked, else English. */
 export function narrate(ctx: Ctx, english: string, drafts: Draft[] = []): void {
   const spoken = drafts.length ? ctx.gen.say(drafts) : undefined;
   if (!spoken) {

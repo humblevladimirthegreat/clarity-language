@@ -15,7 +15,7 @@ import type { ClassifyTables } from "./parse/classify.js";
 import { parseCompoundCsv } from "./lexicon-compounds.js";
 import { parsePublishedCsv } from "./lexicon-search.js";
 import { readData } from "./repo-paths.js";
-import { AGEBON_VOWELS } from "./root-shape.js";
+import { AGEBEN_VOWELS } from "./root-shape.js";
 
 /** Most new core roots one checkpoint may introduce. */
 export const CORE_CAP = 5;
@@ -49,7 +49,7 @@ export const NOT_CORE_ROOTS: ReadonlySet<string> = new Set([
 /** Which bank lists the root: legacy **Roots used here**, or converted **New words** / **Review**. */
 export type BankGroup = "roots" | "new" | "review";
 
-export type BankEntry = { root: string; english: string; agebon: string; group: BankGroup; /** 1-based. */ line: number };
+export type BankEntry = { root: string; english: string; ageben: string; group: BankGroup; /** 1-based. */ line: number };
 
 export type Checkpoint = {
   /** `page.md#id` of the checkpoint heading (`### Practice`, or legacy `### Translation practice`). */
@@ -112,12 +112,12 @@ export function stageCheckpoints(
         const cast: BankEntry[] = [];
         const seen = new Set<string>();
         for (const { row, group } of rows) {
-          if (!row.agebon) continue;
-          for (const { root, overlay } of bankUses(row.agebon, tables)) {
+          if (!row.ageben) continue;
+          for (const { root, overlay } of bankUses(row.ageben, tables)) {
             // A closed overlay word is grammar, taught by its owning section.
             if (overlay || seen.has(root)) continue;
             seen.add(root);
-            const entry = { root, english: row.english ?? "", agebon: row.agebon, group, line: row.lineIndex + 1 };
+            const entry = { root, english: row.english ?? "", ageben: row.ageben, group, line: row.lineIndex + 1 };
             (NOT_CORE_ROOTS.has(root) ? cast : entries).push(entry);
           }
         }
@@ -166,7 +166,7 @@ export type SpacingWord = {
   root: string;
   english: string;
   /** Bank form from the nearest checkpoint that lists the root; the bare root when none does. */
-  agebon: string;
+  ageben: string;
   /** The root's `core` cell. */
   core: string;
 };
@@ -211,7 +211,7 @@ export function spacingPlan(
     // Prefer the latest use at or before `near`, else the first use after it.
     const pick = [...at].reverse().find((i) => i <= near) ?? at[0];
     const e = pick === undefined ? undefined : checkpoints[pick]!.entries.find((x) => x.root === root);
-    return { root, english: e?.english ?? gloss(root) ?? root, agebon: e?.agebon ?? root, core: core.get(root)! };
+    return { root, english: e?.english ?? gloss(root) ?? root, ageben: e?.ageben ?? root, core: core.get(root)! };
   };
 
   const introduce: SpacingWord[] = [];
@@ -271,7 +271,7 @@ export function lintCoreCounts(checkpoints: readonly Checkpoint[], core: Readonl
   checkpoints.forEach((c, i) => {
     if (!c.converted) return;
     const push = (line: number, detail: string) => findings.push({ page: c.page, line, detail });
-    const word = (e: BankEntry) => `*${e.english}* \`${e.agebon}\``;
+    const word = (e: BankEntry) => `*${e.english}* \`${e.ageben}\``;
     const fresh = c.entries.filter((e) => e.group === "new");
     const review = c.entries.filter((e) => e.group === "review");
 
@@ -317,7 +317,7 @@ export function lintCoreCounts(checkpoints: readonly Checkpoint[], core: Readonl
 /** Fewest checkpoints of one band between the introductions of two look-alike roots (docs/meta/translation-exercises.md#look-alikes). */
 export const LOOK_ALIKE_GAP = 3;
 
-const VOWELS: ReadonlySet<string> = new Set(AGEBON_VOWELS);
+const VOWELS: ReadonlySet<string> = new Set(AGEBEN_VOWELS);
 
 /**
  * Whether two roots differ only in their middle vowel: same odd length, and only the center

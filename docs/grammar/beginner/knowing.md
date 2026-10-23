@@ -4,7 +4,7 @@ band: beginner
 
 # Knowing {#knowing}
 
-English *I think* can be a guess, a memory, or a conclusion from clues, and the listener has to work out which. Agebon keeps the ordinary verb and adds a `/th/` stance word that says which: **MAY** for what could be so, or a word for how you know it. So a guess never passes for a report, and a report says what it rests on.
+English *I think* can be a guess, a memory, or a conclusion from clues, and the listener has to work out which. Ageben keeps the ordinary verb and adds a `/th/` stance word that says which: **MAY** for what could be so, or a word for how you know it. So a guess never passes for a report, and a report says what it rests on.
 
 
 ### MAY {#may}
@@ -26,7 +26,7 @@ Without the `/th/` word, you are reporting that it happens. As a plain noun the 
 
 The ending on MAY says whether you mean to follow up on the *could be*: with **-l** you will find out, with **-m** you leave that unsaid (the default), and with **-r** it is a passing thought you are not pursuing. The three run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). No ending is better than the others: finding out, leaving it at *may*, and letting it go are all fine choices. With **-n**, the word is an ordinary name.
 
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thomal`** | could be, and you are **committed to settling it** | *may, I'll find out* / *let's find out* | `omal` *thought* | 💭: balloon plus a magnifying glass (**-l** the full run) |
 | **`thomam`** | could be (default; follow-up unstated) | *may* / *could be* | `omal` *thought* | 💭: balloon (**-m** middle) |
@@ -62,7 +62,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *departure* | `vudurul` | 🛫 |
 | *cry* | `vagamul` | 😭 |
@@ -72,7 +72,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -86,7 +86,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sandwich* | `edal` |
 | *punch* | `vabuvul` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Ahelan may be leaving Azozon.*
 
@@ -136,7 +136,7 @@ y-question | z-Ahelan | v-pay | th-MAY
 z-Alazun | th-MAY | v-tell | b-Azozon
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zazozon thomam dowudal vowuvul.`
 

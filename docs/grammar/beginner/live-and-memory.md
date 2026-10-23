@@ -11,7 +11,7 @@ band: beginner
 <a id="live"></a>
 <a id="reconstructive-catch"></a>
 
-English often says how you know a claim: *I see it*, *I saw it*. Agebon keeps the ordinary verb and adds a `/th/` stance word for that, called an **evidential**. It names the **channel** the claim reached you through. Two channels are enough for ordinary talk about a scene in your senses: sensing it now, or remembering that you sensed it.
+English often says how you know a claim: *I see it*, *I saw it*. Ageben keeps the ordinary verb and adds a `/th/` stance word for that, called an **evidential**. It names the **channel** the claim reached you through. Two channels are enough for ordinary talk about a scene in your senses: sensing it now, or remembering that you sensed it.
 
 Verbs have **no past or future form**. These two channels place the event in time because of how you know it: **LIVE** means the scene is in your senses as you speak, and **MEMORY** means you remember sensing it (so it is past).
 
@@ -29,7 +29,7 @@ Verbs have **no past or future form**. These two channels place the event in tim
 
 **For *could be* with nothing behind it, use:** [MAY](knowing.md#may).
 
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thugem`** | LIVE: firsthand, sensed now | *live* / *from the scene* | `ugel` *attest* | 👁️‍🗨️: sensing-and-saying while it is in view, in earshot, or on your skin |
 | **`thevum`** | MEMORY: firsthand, remembered | *from memory* | `evul` *fishing* | 🎣: you pull something back |
@@ -54,7 +54,7 @@ Footage works the same way. While you watch, it is LIVE with the device as the s
 >
 > "Azozon walked, as I remember from the camera."
 
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thugem`** | concurrent observation, by any sense | *live* / *from the scene* | `ugel` *attest* | 👁️‍🗨️: sensing-and-saying while it is in view |
 | **`thevum`** | reconstructive / recalled observation | *I remember* / *from memory* | `evul` *fishing* | 🎣: retrieval from the water |
@@ -67,14 +67,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *LIVE* | `thugem` | 👁️‍🗨️ from *attest*: seen at the scene |
 | *MEMORY* | `thevum` | 🎣 from *fishing*: pulled up from memory |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -84,7 +84,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vayebel` |
 | *sing* | `vozuyel` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *I can see that Alazun is leaving.*
 
@@ -110,7 +110,7 @@ z-Alazun | th-MEMORY | v-sing
 z-Azozon | th-LIVE | v-departure
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zalazun thevum blugewel vozuyel.`
 

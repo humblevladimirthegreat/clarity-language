@@ -1,6 +1,6 @@
 import { escapeCsvField, parseCsv } from "./csv.js";
 import { isExtraNounHook } from "./parse/hook-compounds.js";
-import { isAgebonRootShape } from "./root-shape.js";
+import { isAgebenRootShape } from "./root-shape.js";
 import { SHAPE_VOWELS, type Shape } from "./root-tails.js";
 
 export const COMPOUND_HEADERS = [
@@ -128,7 +128,7 @@ function isShortPair(left: string, right: string): boolean {
 
 /** Content roots are `V(CV)+` and not a bare single vowel (join / reviser shape). */
 export function isCompoundMemberRoot(root: string): boolean {
-  return isAgebonRootShape(root) && root.length >= 3;
+  return isAgebenRootShape(root) && root.length >= 3;
 }
 
 export type CompoundSplit = { left: string; join: CompoundJoin; right: string };

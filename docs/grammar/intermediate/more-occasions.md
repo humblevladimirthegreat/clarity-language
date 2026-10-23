@@ -38,7 +38,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 #### Set / invert / inclusive
 
 <!-- cheat-sheet: restrictors-spans -->
-| Agebon | Use | English (with occasions) | English (bare) | Cue |
+| Ageben | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
 | **`hal` / `ham`** | listed times; empty list is *never* | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never, as far as I know* | **a** ≈ add |
 | **`hel` / `hem`** | one exclusive time menu | *either when A or when B (not both)*; **`hem`** also allows *or never* | | **e** ≈ either |
@@ -54,7 +54,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 Closed **`hol`** ranks the listed occasions: the first one listed is the preferred time. Plain **`hal`** means *only when* these times, with no ranking among them.
 
 <!-- cheat-sheet: restrictors-spans -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`hol` / `hom`** | priority among occasions | *preferably when A ≻ when B…* (closed / open) | **o** ≈ order |
 | **`haol` / `haom`** | occasions in order | *first when A, then when B* (closed / open) | **a** ≈ add + **o** ≈ order |
@@ -80,7 +80,7 @@ One occasion before **`huol`** is the last resort: the claim counts there, but o
 Statement readings below. Asking *when*: [When?](/fill-ask-jobs#when).
 
 <!-- cheat-sheet: restrictors-spans -->
-| Agebon | Use | English (with occasions) | English (bare) | Cue |
+| Ageben | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
 | **`har`** | unspecified member of the listed times | *sometimes among these* | *sometimes* | **-r** some member |
 | **`her`** | unspecified member of a one-choice time menu | *anytime among these* | *anytime* | **e** ≈ either + **-r** |
@@ -109,7 +109,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *climb* | `voguvol` | 🧗 |
 | *snow* | `ozulal` | 🌨️ |
@@ -119,7 +119,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -133,7 +133,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *run* | `veruvol` |
 | *sleep* | `vezuvel` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Azozon climbs either when it snows or at night.* (not both)
 
@@ -184,7 +184,7 @@ z-Alazun | v-fall | [th-if | bl-that-clause] | z-Azozon | v-run
 :::
 
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zahelan vowurol hovulul huel.`
 

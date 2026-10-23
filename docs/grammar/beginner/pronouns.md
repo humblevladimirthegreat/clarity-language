@@ -4,7 +4,7 @@ band: beginner
 
 # Pronouns
 
-English *he*, *she*, *it*, and *they* point back to someone or something already named. You already write the endings **-l** / **-m** / **-n** on a [citation](word-endings.md) and on content words. Agebon points back with the fourth ending, **-r**: write the role letter for the slot the word fills in this sentence (subject, object, and so on), then the earlier word’s whole stem, then **-r**. For someone in a recent sentence, a shorter **role pointer** names them by the part they played instead.
+English *he*, *she*, *it*, and *they* point back to someone or something already named. You already write the endings **-l** / **-m** / **-n** on a [citation](word-endings.md) and on content words. Ageben points back with the fourth ending, **-r**: write the role letter for the slot the word fills in this sentence (subject, object, and so on), then the earlier word’s whole stem, then **-r**. For someone in a recent sentence, a shorter **role pointer** names them by the part they played instead.
 
 
 ### Resume with **-r** {#resume-r}
@@ -18,7 +18,7 @@ After you have already named a person or thing, the next sentence can point back
 >
 > "Azozon walks. Azozon sits."
 
-**Compare with:** English often uses *the* for a kind already in the conversation (*A dog walks. **The** dog sits.*). Agebon uses **-r** for that job, not a separate article.
+**Compare with:** English often uses *the* for a kind already in the conversation (*A dog walks. **The** dog sits.*). Ageben uses **-r** for that job, not a separate article.
 
 > `zodozel vowurol. zodozer vehohel.`
 >
@@ -223,7 +223,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 > "Someone sleeps."
 
 <!-- cheat-sheet: people-pointing -->
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`uwen`** | speaker in this conversation (`zuwen` in subject slot) | *I*, *me* | `uwel` *microphone* | 🎤: the live voice of the person talking |
 | **`awan`** | listener in this conversation (`zawan` / `dawan` in clause) | *you* | `awal` *headphones* | 🎧: the one receiving the sound |
@@ -235,7 +235,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 
 ### Generic pronoun {#generic-pronoun}
 
-English *one* and generic *you* (*one never knows*, *you feel awful when that happens*) say something about people in general, not about the person listening. Agebon gives that its own pronoun: **`eye`** *person* with **-n**, in `/z/`, `/d/`, or `/b/`. It means any person, as a rule, with exceptions allowed. It claims nothing about a particular individual (that is **`ume`**) and nothing about the listener (that is **`awa`**), so a speaker has to choose between reporting their own experience and making a general claim. (cue: 🧑 is the emoji for a person in general)
+English *one* and generic *you* (*one never knows*, *you feel awful when that happens*) say something about people in general, not about the person listening. Ageben gives that its own pronoun: **`eye`** *person* with **-n**, in `/z/`, `/d/`, or `/b/`. It means any person, as a rule, with exceptions allowed. It claims nothing about a particular individual (that is **`ume`**) and nothing about the listener (that is **`awa`**), so a speaker has to choose between reporting their own experience and making a general claim. (cue: 🧑 is the emoji for a person in general)
 
 > `zeyen vezuvel.`
 >
@@ -253,7 +253,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *cook* | `vuguyol` | 🧑‍🍳 from *cook*, the person at the stove |
 | *drink* | `vuwudal` | 🥤 |
@@ -267,7 +267,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -278,7 +278,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *scream* | `veyamul` |
 | *tell* | `vezuyol` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Azozon drinks. They cook.*
 
@@ -334,7 +334,7 @@ z-Azozon | d-cookie | v-see . z-Alazun | d-←episode-patient.same.new | v-find
 z-interlocutors | v-cook
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zahelan vuguyol. zalazun vuwudal. zwuzar veyamul.`
 

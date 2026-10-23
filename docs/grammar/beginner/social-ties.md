@@ -31,7 +31,7 @@ With no `bl-` word after a joined subject, the tie points at the other members, 
 Any root whose abstract sense is a tie works this way (`gohuyam` *partner of*, `gawem` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with **`o`**: after `zalazun gamayam blazozon`, `zwubamayar` is *the other party of that friendship* (Azozon).
 
 <!-- cheat-sheet: linking-clauses -->
-| Agebon | Use | English | Same root as |
+| Ageben | Use | English | Same root as |
 |--------|-----|---------|--------------|
 | **`gamayam`** + `/b/` | companion of `/b/` | *friend of* | `amayal` *Mrs Claus* |
 | **`gegobom`** + `/b/` | the one `/b/` answers to | *boss of* | `egobol` *crown* |
@@ -56,7 +56,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *companionship* | `gamayam` | 🤶 from *Mrs Claus*: a companion at your side |
 | *leadership* | `gegobom` | 👑 from *crown*: the one others answer to |
@@ -64,7 +64,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -73,7 +73,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sit* | `vehohel` |
 | *run* | `veruvol` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Ahelan is Alazun's friend.*
 
@@ -99,7 +99,7 @@ z-Azozon | [d-Alazun | [g-leadership | bl-Azozon]] | v-see
 z-Alazun | [g-tending | bl-Azozon]
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zazozon zahelan zal gamayam.`
 

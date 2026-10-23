@@ -6,7 +6,7 @@ import type { ErrorCard, GateCheck, Line, Outcome, TurnResult } from "./types.js
 
 export type LogLine = {
   kind: Line["kind"];
-  agebon?: string;
+  ageben?: string;
   gloss?: string;
   english?: string;
   /** Who spoke, for speech, recasts and refusals in character. */
@@ -23,7 +23,7 @@ export type LogEntry = {
   input: string;
   outcome: Outcome;
   gloss?: string;
-  /** The Agebon that ran, when a recast replaced the input. */
+  /** The Ageben that ran, when a recast replaced the input. */
   ran?: string;
   constructions?: string[];
   lines: LogLine[];
@@ -32,22 +32,22 @@ export type LogEntry = {
 function logLine(line: Line): LogLine {
   switch (line.kind) {
     case "player":
-      return { kind: line.kind, agebon: line.agebon, ...(line.gloss ? { gloss: line.gloss } : {}) };
+      return { kind: line.kind, ageben: line.ageben, ...(line.gloss ? { gloss: line.gloss } : {}) };
     case "speech":
-      return { kind: line.kind, speaker: line.speaker, agebon: line.spoken.agebon, gloss: line.spoken.gloss, english: line.spoken.english, gate: line.gate };
+      return { kind: line.kind, speaker: line.speaker, ageben: line.spoken.ageben, gloss: line.spoken.gloss, english: line.spoken.english, gate: line.gate };
     case "narration":
     case "refusal":
       return {
         kind: line.kind,
         english: line.english,
         ...("speaker" in line && line.speaker ? { speaker: line.speaker } : {}),
-        ...(line.spoken ? { agebon: line.spoken.agebon, gloss: line.spoken.gloss } : {}),
+        ...(line.spoken ? { ageben: line.spoken.ageben, gloss: line.spoken.gloss } : {}),
         ...(line.gate ? { gate: line.gate } : {}),
       };
     case "recast":
-      return { kind: line.kind, agebon: line.spoken.agebon, gloss: line.spoken.gloss, ...(line.speaker ? { speaker: line.speaker } : {}), ...(line.why ? { english: line.why } : {}) };
+      return { kind: line.kind, ageben: line.spoken.ageben, gloss: line.spoken.gloss, ...(line.speaker ? { speaker: line.speaker } : {}), ...(line.why ? { english: line.why } : {}) };
     case "choice":
-      return { kind: line.kind, options: line.options.map((o) => o.agebon) };
+      return { kind: line.kind, options: line.options.map((o) => o.ageben) };
     case "beyond":
       return { kind: line.kind, english: line.english, parts: line.parts };
     case "confused":
@@ -73,5 +73,5 @@ export function logEntry(result: TurnResult, turn: number, at: Date = new Date()
 
 /** The log as a JSON file, with what the session was run with. */
 export function exportTurnLog(entries: readonly LogEntry[], meta: { position: number | "everything"; build?: string }): string {
-  return `${JSON.stringify({ kind: "agebon-sandbox-turn-log", version: 1, ...meta, turns: entries }, null, 2)}\n`;
+  return `${JSON.stringify({ kind: "ageben-sandbox-turn-log", version: 1, ...meta, turns: entries }, null, 2)}\n`;
 }

@@ -4,7 +4,7 @@ import { describe, it } from "node:test";
 import { parseCliArgs } from "./cli-args.js";
 
 describe("parseCliArgs", () => {
-  it("keeps Agebon inputs and known flags", () => {
+  it("keeps Ageben inputs and known flags", () => {
     const parsed = parseCliArgs(["--check-lexicon", "zazozon vowurol.", "zalazun veruvol."]);
     assert.equal(parsed.checkLexicon, true);
     assert.deepEqual(parsed.args, ["zazozon vowurol.", "zalazun veruvol."]);

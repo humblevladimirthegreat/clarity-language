@@ -4,7 +4,7 @@ band: beginner
 
 # Intention {#intention}
 
-English *will* and *going to* can state either an **intention** (what someone means to do) or a **forecast** (what someone expects to happen later). Agebon marks intention with a `/th/` stance word before an ordinary verb, and gives a forecast a different shape that always says what it rests on. So the listener can tell a chosen course from a claim about a future event.
+English *will* and *going to* can state either an **intention** (what someone means to do) or a **forecast** (what someone expects to happen later). Ageben marks intention with a `/th/` stance word before an ordinary verb, and gives a forecast a different shape that always says what it rests on. So the listener can tell a chosen course from a claim about a future event.
 
 
 ### Plan
@@ -28,7 +28,7 @@ As a plain noun or verb, the root keeps its own meaning (`zagol` *a map*; `vagol
 
 The ending on PLAN says how much of the plan is worked out: **-l** for a plan with backups ready, **-m** for the steps, **-r** for just the direction. The three run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). With **-n**, the word is an ordinary name. **`thagom`** is the soft default: it claims a plan without saying how much is worked out.
 
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thagol`** | **atlas** | *am fully prepared to …*: hurdles are anticipated and prepared for | `agol` *plan-atlas* | **-l** ≈ lasting (detours already drawn, so it holds up) |
 | **`thagom`** | **itinerary** (soft default) | *plan to …*: steps laid out, or detail unstated | `agom` *plan-itinerary* | **-m** ≈ middle (the route, no backups) |
@@ -58,14 +58,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *pawn* | `abevol` | ♟️ |
 | *PLAN* | `thagom` | 🗺️ from *map*: a course you mean to take |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *I* | `uwen` |
 | *Azozon* | `azozon` |
@@ -83,7 +83,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *scream* | `veyamul` |
 | *walk* | `vowurol` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *I intend to sit down.* (just the direction)
 
@@ -133,7 +133,7 @@ z-Azozon | th-plan-itinerary | v-write
 z-speaker | th-plan-atlas | d-Alazun | v-fight
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zuwen thagor danal vayebel.`
 

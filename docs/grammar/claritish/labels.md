@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-*He's a liar* turns one act into someone's nature. English needs a whole extra clause to take that back (*well, he lied this one time*). Agebon says how far a label reaches inside the word itself.
+*He's a liar* turns one act into someone's nature. English needs a whole extra clause to take that back (*well, he lied this one time*). Ageben says how far a label reaches inside the word itself.
 
 ## The forms {#forms}
 
@@ -15,7 +15,7 @@ Add a hyphen to the English word, then `th` and a vowel for the reach:
 | `-the` | this pair: true in one relationship |
 | `-tha` | a type across scenes |
 
-The hyphen only shows that the word in front is English. The letters after it are spelled exactly as in Agebon. The vowel carries the meaning, so the endings from the other lessons do not come back.
+The hyphen only shows that the word in front is English. The letters after it are spelled exactly as in Ageben. The vowel carries the meaning, so the endings from the other lessons do not come back.
 
 Leave the suffix off when the reach doesn't matter. Add it when you'd otherwise say *this time* or *as a type*.
 

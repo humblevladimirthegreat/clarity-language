@@ -12,7 +12,7 @@ The psychological job was context-cued automaticity, not a vice and not a kind o
 
 ## Why CAUSE already does the job
 
-| English job | Agebon |
+| English job | Ageben |
 |-------------|---------|
 | Cue as how the act is produced | **`thewem`** + **`thahum`** / **`thohom`** + cue in the pole's `/b/` |
 | How often, no cue | **`hual` / `huam`** |

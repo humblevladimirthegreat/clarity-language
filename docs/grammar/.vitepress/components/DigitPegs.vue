@@ -59,7 +59,7 @@ function onInput(event: Event): void {
 <template>
   <div class="digit-pegs">
     <label class="label" for="digit-pegs-input">
-      Digits or Agebon
+      Digits or Ageben
       <input
         id="digit-pegs-input"
         type="search"
@@ -100,7 +100,7 @@ function onInput(event: Event): void {
       </template>
       <p v-else class="warn">{{ result.message }}</p>
     </div>
-    <p v-else class="note">Type a number to see pegs for each chunk, or Agebon words to read their digits.</p>
+    <p v-else class="note">Type a number to see pegs for each chunk, or Ageben words to read their digits.</p>
   </div>
 </template>
 

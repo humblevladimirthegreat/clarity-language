@@ -4,13 +4,13 @@ prev: false
 
 # Claritish Introduction {#claritish}
 
-**Claritish** is English with a few Agebon words dropped in. Each drop-in says something English has no word for: how sure you are, how you know, what a thank-you was for. You keep speaking English and add the word where an English adverb or tag would go.
+**Claritish** is English with a few Ageben words dropped in. Each drop-in says something English has no word for: how sure you are, how you know, what a thank-you was for. You keep speaking English and add the word where an English adverb or tag would go.
 
 > The package arrives Friday `thomam`.
 
 *`thomam`* means *could be*. It covers the clause it sits in, so the sentence says the package might arrive Friday, and nothing more.
 
-Every drop-in is a real Agebon word, spelled exactly as Agebon spells it, so each one you learn is already part of the full language. You can stop after any lesson and keep what you have.
+Every drop-in is a real Ageben word, spelled exactly as Ageben spells it, so each one you learn is already part of the full language. You can stop after any lesson and keep what you have.
 
 In your own writing, drop-ins need no marking: no italics, no quotes. These pages set them in `code font` only so you can spot them.
 

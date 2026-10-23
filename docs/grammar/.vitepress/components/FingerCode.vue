@@ -563,7 +563,7 @@ const silentHand = computed(() => (channel.value === 'signed' ? 'fist' : '—'))
     </div>
 
     <div class="fc-input">
-      <input v-model="text" type="text" spellcheck="false" autocomplete="off" aria-label="Agebon to sign or play" @keydown.enter="play" />
+      <input v-model="text" type="text" spellcheck="false" autocomplete="off" aria-label="Ageben to sign or play" @keydown.enter="play" />
       <button type="button" class="fc-play" @click="toggle">{{ playing ? 'Stop' : 'Play' }}</button>
     </div>
     <div ref="samples" class="fc-samples" @click="onSample">
@@ -645,7 +645,7 @@ const silentHand = computed(() => (channel.value === 'signed' ? 'fist' : '—'))
         <span v-if="w.period" class="fc-rest">rest</span>
       </template>
     </div>
-    <p v-if="score.skipped.length" class="fc-warn">Skipped (not plain Agebon letters): {{ score.skipped.join(' ') }}</p>
+    <p v-if="score.skipped.length" class="fc-warn">Skipped (not plain Ageben letters): {{ score.skipped.join(' ') }}</p>
     <p class="fc-legend">
       <span><span class="tag u">zu</span> stressed first beat</span>
       <span><span class="tag dash">-n</span> coda: consonant hand alone, the last one held</span>

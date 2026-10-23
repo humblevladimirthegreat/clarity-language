@@ -98,9 +98,9 @@ Put **every retired public path** in `pageMoves`, not only the latest rename. To
 | `/grammar/cheat-sheets/egabon-english.html` | `/grammar/cheat-sheets/to-english.html` |
 | `/grammar/claritish/learn-egabon.html` | `/grammar/claritish/learn.html` |
 | `/grammar/why-egabon.html` | `/grammar/purpose.html` |
-| `/grammar/why-agebon.html` | `/grammar/purpose.html` |
-| `/grammar/claritish/learn-agebon.html` | `/grammar/claritish/learn.html` |
-| `/grammar/cheat-sheets/agebon-english.html` | `/grammar/cheat-sheets/to-english.html` |
+| `/grammar/why-ageben.html` | `/grammar/purpose.html` |
+| `/grammar/claritish/learn-ageben.html` | `/grammar/claritish/learn.html` |
+| `/grammar/cheat-sheets/ageben-english.html` | `/grammar/cheat-sheets/to-english.html` |
 
 When you find another circulating URL (Cool Features, Reddit, Discord), add a row in the same commit as the rename when you can; otherwise add the row as soon as you notice the miss.
 

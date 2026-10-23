@@ -1,21 +1,21 @@
-# Proposal: learner STT (phoneme ASR, no Agebon speech corpus)
+# Proposal: learner STT (phoneme ASR, no Ageben speech corpus)
 
 **Status:** PROPOSED  
 **Related:** reverse of `diphone-tts.md`; long-term TODO *speech to text*; parser assumed shipped ([parser-pipeline.md](../meta/parser-pipeline.md))  
-**Design authority:** spoken forms stay in the grammar docs ([phonology.md](/phonology), [spans.md](/spans#writing-vs-speech), [numbers.md](/number-markers#writing-preferred-shorthand), [clause.md](/clause#role-letters)). This proposal covers **tooling only**: microphone audio → Agebon letters → optional preferred writing. It does **not** train an Agebon acoustic model.
+**Design authority:** spoken forms stay in the grammar docs ([phonology.md](/phonology), [spans.md](/spans#writing-vs-speech), [numbers.md](/number-markers#writing-preferred-shorthand), [clause.md](/clause#role-letters)). This proposal covers **tooling only**: microphone audio → Ageben letters → optional preferred writing. It does **not** train an Ageben acoustic model.
 
 ## Motivation
 
 Learners will want to **check pronunciation** (did this utterance match the example?) and later **dictate** drills. English-centric STT (unconstrained Whisper, Web Speech API) will invent English spelling and wrong phones (`x` as *ks*, stacked vowels as diphthongs).
 
-Agebon is a small, regular sound system with spelling that shows the sound. The expensive part of ASR is **acoustics**; the Agebon-specific part is **mapping phones to letters and legal words**. Existing open-source **universal / multilingual phoneme recognizers** already do the first job. This proposal reuses those models unchanged and puts Agebon knowledge in a thin inverse of the TTS stack (`toPhonemes` run backwards, then `toSpeech` run backwards).
+Ageben is a small, regular sound system with spelling that shows the sound. The expensive part of ASR is **acoustics**; the Ageben-specific part is **mapping phones to letters and legal words**. Existing open-source **universal / multilingual phoneme recognizers** already do the first job. This proposal reuses those models unchanged and puts Ageben knowledge in a thin inverse of the TTS stack (`toPhonemes` run backwards, then `toSpeech` run backwards).
 
-**“Usable” here means:** careful, native-phonology speech from a learner mic becomes a speech-surface string (and, where documented, preferred writing). It does **not** mean English-Whisper quality, singing ASR, or a custom neural Agebon voice/listener.
+**“Usable” here means:** careful, native-phonology speech from a learner mic becomes a speech-surface string (and, where documented, preferred writing). It does **not** mean English-Whisper quality, singing ASR, or a custom neural Ageben voice/listener.
 
 ## Goals
 
-1. Transcribe **native Agebon speech** to the **spoken channel** (CV number words, spoken span opens/closes, ordinary `PoS+root+ending`).
-2. Reuse a **pretrained phoneme ASR** (no Agebon recordings, no fine-tune on eSpeak).
+1. Transcribe **native Ageben speech** to the **spoken channel** (CV number words, spoken span opens/closes, ordinary `PoS+root+ending`).
+2. Reuse a **pretrained phoneme ASR** (no Ageben recordings, no fine-tune on eSpeak).
 3. Map phones → letters with the **same table** as [phonology.md](/phonology) / [`src/tts/phonemes.ts`](../../src/tts/phonemes.ts), including collapse of unvoiced **style** allophones.
 4. Segment words using **phonotactics** (coda only at the word edge: **-l / -m / -n / -r**, optional **-x**).
 5. Optionally **snap** tokens to published roots and closed lists; optionally **compress** spoken numbers/spans to preferred writing (inverse of TTS `toSpeech`).
@@ -23,10 +23,10 @@ Agebon is a small, regular sound system with spelling that shows the sound. The 
 
 ## Non-goals
 
-- Collecting or training on an Agebon speech corpus (including TTS-synthetic fine-tunes).
+- Collecting or training on an Ageben speech corpus (including TTS-synthetic fine-tunes).
 - Unconstrained Whisper / cloud dictation as the default engine.
 - Singing mode.
-- Guessing **opaque / foreign** interiors as Agebon (`d<sushi>`, `z<Sam>n`) — same policy as TTS: skip or mark, do not run native G2P.
+- Guessing **opaque / foreign** interiors as Ageben (`d<sushi>`, `z<Sam>n`) — same policy as TTS: skip or mark, do not run native G2P.
 - Inventing spoken or written forms not in the grammar docs.
 - Replacing the parser as design authority.
 
@@ -67,13 +67,13 @@ Microphone audio
 | Stage | Input | Output | Owns |
 |-------|--------|--------|------|
 | **Phoneme ASR** | Wav / mic | Phone sequence | Third-party model; thin adapter |
-| **`collapseAllophones`** | IPA | Agebon-target IPA | [phonology.md](/phonology) (no voice contrast) |
+| **`collapseAllophones`** | IPA | Ageben-target IPA | [phonology.md](/phonology) (no voice contrast) |
 | **`phonesToLetters`** | Target IPA | Letter stream (`u a o e` … `x`) | Inverse of [`phonemes.ts`](../../src/tts/phonemes.ts) |
 | **`segmentWords`** | Letter stream | Speech-surface tokens | [phonotactics](/phonotactics#phonotactics) |
 | **`snapLexicon`** | Tokens | Tokens (nearest legal word) | Lexicon CSV + closed lists |
 | **`toWriting`** | Speech tokens | Preferred writing | Inverse of TTS expansions |
 
-No lexicon lookup is required for **pronunciation** of native Agebon. Lexicon snap is a **recognizer language model**, not a new sound system.
+No lexicon lookup is required for **pronunciation** of native Ageben. Lexicon snap is a **recognizer language model**, not a new sound system.
 
 ## Phoneme engine (frozen)
 
@@ -87,7 +87,7 @@ Pick one default; keep the adapter swappable.
 
 **Default for v1 tooling: A or a small XLS-R phoneme CTC**, whichever is easier to run **offline from Node** (`npm` script) first. Browser WASM is a later phase (same split as eSpeak lazy-load). Do not default to full Whisper.
 
-The acoustic model’s phone set will not match Agebon IPA 1:1. The adapter owns a **model-phone → Agebon-target IPA** table (documented per engine). Fixtures test **requested** Agebon phones after collapse, not the vendor’s raw labels.
+The acoustic model’s phone set will not match Ageben IPA 1:1. The adapter owns a **model-phone → Ageben-target IPA** table (documented per engine). Fixtures test **requested** Ageben phones after collapse, not the vendor’s raw labels.
 
 ## Collapse and letter map
 
@@ -156,7 +156,7 @@ type ListenOptions = {
 };
 
 type ListenResult = {
-  phones: string;           // collapsed Agebon-target IPA
+  phones: string;           // collapsed Ageben-target IPA
   spoken: string[];         // speech-surface words
   writing?: string;         // optional preferred writing
   skipped: string[];        // unmapped / foreign / failed spans
@@ -166,13 +166,13 @@ function listenWav(path: string, opts?: ListenOptions): Promise<ListenResult>;
 function previewPhonesToLetters(ipa: string): string;
 ```
 
-CLI: `npm run listen -- clip.wav` prints phones, spoken tokens, and optional writing. Browser mic is a later phase (lazy model load, same pattern as Speak Agebon).
+CLI: `npm run listen -- clip.wav` prints phones, spoken tokens, and optional writing. Browser mic is a later phase (lazy model load, same pattern as Speak Ageben).
 
 ## UI integration (later)
 
 | Surface | Behavior |
 |---------|----------|
-| Gloss overlay | Optional **Listen** next to **Speak Agebon** — compare spoken preview to mic |
+| Gloss overlay | Optional **Listen** next to **Speak Ageben** — compare spoken preview to mic |
 | Drills | Accept spoken answer; score against expected speech surface |
 | Errors | Failed phones stay visible; do not silently drop |
 
@@ -183,10 +183,10 @@ Do not auto-start the mic on page load.
 1. **Inverse G2P fixtures** — IPA (after collapse) → letters (phonology table + compounds / plurals / hiatus).  
 2. **Round-trip with TTS** — `toPhonemes(word)` → `phonesToLetters` → same word for native speech-shaped tokens (no audio).  
 3. **Segmentation fixtures** — letter streams from grammar examples → word lists.  
-4. **Optional audio smoke** — if a phoneme engine is in CI, a handful of **English or multilingual** clips that happen to contain Agebon-like phone sequences; **not** a requirement to record Agebon.  
+4. **Optional audio smoke** — if a phoneme engine is in CI, a handful of **English or multilingual** clips that happen to contain Ageben-like phone sequences; **not** a requirement to record Ageben.  
 5. **Doc sync** — phonology or writing↔speech changes fail fixtures until STT maps update.
 
-Do **not** gate merge on WER against an Agebon speech set that does not exist.
+Do **not** gate merge on WER against an Ageben speech set that does not exist.
 
 ## Browser / bundle
 
@@ -203,7 +203,7 @@ Expect the phoneme model to dwarf the TS glue. Keep it off the critical docs ren
 
 | Risk | Mitigation |
 |------|------------|
-| Model phones ≠ Agebon IPA | Per-engine mapping table; fixtures on collapsed Agebon phones |
+| Model phones ≠ Ageben IPA | Per-engine mapping table; fixtures on collapsed Ageben phones |
 | Four vowels confused (`e`/`u`/`o`/`a`) | Lexicon snap; learner-facing “show phones” so the miss is visible |
 | **l** vs **r** | Same; do not add a new phoneme to “help ASR” |
 | Diphthong merge on hiatus | Adapter splits glides; syllabify matches TTS |
@@ -216,8 +216,8 @@ Expect the phoneme model to dwarf the TS glue. Keep it off the critical docs ren
 
 | Alternative | Why not default |
 |-------------|-----------------|
-| Fine-tune Whisper on eSpeak Agebon | Still training; learns TTS artifacts, not mouths |
-| Unconstrained Whisper + prompt “transcribe Agebon” | Invents English; no letter table |
+| Fine-tune Whisper on eSpeak Ageben | Still training; learns TTS artifacts, not mouths |
+| Unconstrained Whisper + prompt “transcribe Ageben” | Invents English; no letter table |
 | whisper.cpp + GBNF letter grammar | Cheap experiment later; acoustics still English-biased |
 | Vosk/Kaldi custom dict, English acoustics | Valid (option 2); more English-phone assumption; keep as fallback if phoneme engines fail in-browser |
 | PocketSphinx command grammar | Fine for a handful of drill phrases; not general dictation |
@@ -229,9 +229,9 @@ Expect the phoneme model to dwarf the TS glue. Keep it off the critical docs ren
 - [ ] Unvoiced style phones collapse to voiced letters per the table above.  
 - [ ] Native speech-shaped words round-trip `toPhonemes` → `phonesToLetters` without audio.  
 - [ ] `segmentWords` splits on legal endings (including **-x** and citation forms).  
-- [ ] A frozen phoneme ASR can be invoked from a Node CLI; Agebon weights are not trained in this repo.  
+- [ ] A frozen phoneme ASR can be invoked from a Node CLI; Ageben weights are not trained in this repo.  
 - [ ] Opaque/foreign policy matches TTS (skip / mark).  
-- [ ] No Agebon speech corpus and no TTS-synthetic fine-tune required for the default path.
+- [ ] No Ageben speech corpus and no TTS-synthetic fine-tune required for the default path.
 
 ## Phased delivery
 

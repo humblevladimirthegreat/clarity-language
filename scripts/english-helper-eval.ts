@@ -1,10 +1,10 @@
 #!/usr/bin/env tsx
 /**
  * Phase 5 of the English helper's quality loop ([english-helper-quality.md](../docs/proposals/english-helper-quality.md)):
- * the model eval. For each sampled English → Agebon checkpoint item, build the helper's
+ * the model eval. For each sampled English → Ageben checkpoint item, build the helper's
  * `--llm-prompt` with the item's own answers held out of the examples, have a small model write
- * the Agebon, check the draft for free (exact match with an accepted answer, parse, unknown
- * words, `--verify` checks), back-translate it with the Agebon → English prompt, and have a
+ * the Ageben, check the draft for free (exact match with an accepted answer, parse, unknown
+ * words, `--verify` checks), back-translate it with the Ageben → English prompt, and have a
  * stronger model judge the draft against the item's English. Each miss is read against the free
  * metrics: was the sentence self-contained, and was each reference word the draft did not use
  * in the prompt (word), shown as a pattern, or missing (coverage.ts)?
@@ -78,7 +78,7 @@ const data = loadHelperData();
 const context = loadPromptContext(tables);
 const backWeights = featureWeights(context.index);
 
-/** Every English → Agebon checkpoint item with its accepted answers and its level. */
+/** Every English → Ageben checkpoint item with its accepted answers and its level. */
 function checkpointItems(): Item[] {
   const out: Item[] = [];
   for (const file of listMarkdown(GRAMMAR_DIR)) {
@@ -87,7 +87,7 @@ function checkpointItems(): Item[] {
     const sections = pageSections(page, markdown).sections;
     for (const item of practiceItems(markdown, { review: page === "review.md" }).items) {
       if (item.type !== "en-ag" || !item.promptEnglish) continue;
-      const main = item.spoiler.find((line) => line.kind === "agebon");
+      const main = item.spoiler.find((line) => line.kind === "ageben");
       if (!main) continue;
       const line = markdown.slice(0, item.index).split("\n").length;
       const band = sections.filter((s) => s.offset <= item.index && item.index < s.end).at(-1)?.band ?? "none";
@@ -118,20 +118,20 @@ function sampleItems(): Item[] {
 // Prompts
 
 /** Lowercase, one space between words, no final period: what two spellings of one answer share. */
-const normalize = (agebon: string) => agebon.toLowerCase().replace(/\s+/g, " ").trim().replace(/\s*\.$/, "");
-const wordsOf = (agebon: string) => normalize(agebon).split(/[\s.,;:!?]+/).filter(Boolean);
+const normalize = (ageben: string) => ageben.toLowerCase().replace(/\s+/g, " ").trim().replace(/\s*\.$/, "");
+const wordsOf = (ageben: string) => normalize(ageben).split(/[\s.,;:!?]+/).filter(Boolean);
 
 /** The example pool without any pair that shows this item's English or one of its answers. */
 function heldOut(item: Item): PromptContext {
   const answers = new Set(item.answers.map(normalize));
   const english = item.english.trim().toLowerCase();
-  const index = context.index.filter((pair) => !answers.has(normalize(pair.agebon)) && pair.sentence.trim().toLowerCase() !== english);
+  const index = context.index.filter((pair) => !answers.has(normalize(pair.ageben)) && pair.sentence.trim().toLowerCase() !== english);
   return { ...context, index };
 }
 
-function glossOf(agebon: string): string | null {
+function glossOf(ageben: string): string | null {
   try {
-    return morphGlossLine(/[.]$/.test(agebon) ? agebon : `${agebon}.`, tables, { strict: true });
+    return morphGlossLine(/[.]$/.test(ageben) ? ageben : `${ageben}.`, tables, { strict: true });
   } catch {
     return null;
   }
@@ -163,16 +163,16 @@ const BACK_SYSTEM = "You translate glossed sentences into English. Follow the in
 const JUDGE_SYSTEM = "You are a careful, strict judge of translations. Answer only with the requested structured verdict.";
 
 /**
- * `AGEBON: <sentence> (<note>)`, lenient about backticks; the last such line wins. Agebon writes
+ * `AGEBEN: <sentence> (<note>)`, lenient about backticks; the last such line wins. Ageben writes
  * parentheses itself (`th(…)`), so the note starts at the first parenthesis after a sentence's
  * final period, and may hold parentheses of its own.
  */
-function parseDraft(text: string): { agebon: string; note: string | null } | null {
-  const line = text.split("\n").filter((l) => /^\s*`?AGEBON:/.test(l)).at(-1)?.replace(/`/g, "").trim();
+function parseDraft(text: string): { ageben: string; note: string | null } | null {
+  const line = text.split("\n").filter((l) => /^\s*`?AGEBEN:/.test(l)).at(-1)?.replace(/`/g, "").trim();
   if (!line) return null;
-  const m = /^AGEBON:\s*(.*?[.?!])\s+\((.*)\)\s*$/.exec(line) ?? /^AGEBON:\s*(.*?)\s*(?:\(([^()]*)\))?\s*$/.exec(line);
+  const m = /^AGEBEN:\s*(.*?[.?!])\s+\((.*)\)\s*$/.exec(line) ?? /^AGEBEN:\s*(.*?)\s*(?:\(([^()]*)\))?\s*$/.exec(line);
   if (!m || !m[1]) return null;
-  return { agebon: m[1], note: m[2]?.trim() || null };
+  return { ageben: m[1], note: m[2]?.trim() || null };
 }
 
 /** `ENGLISH: "…"`, lenient about curly quotes; the last such line wins. */
@@ -196,7 +196,7 @@ const VERDICT_SCHEMA = {
 };
 
 function judgePrompt(item: Item, draft: string, back: string | null): string {
-  const glossed = (agebon: string) => `${agebon}\n  Gloss: ${glossOf(agebon) ?? "(does not parse)"}`;
+  const glossed = (ageben: string) => `${ageben}\n  Gloss: ${glossOf(ageben) ?? "(does not parse)"}`;
   return [
     "A model that has never seen this constructed language translated an English sentence into it, from an analyzer's suggestions. Judge whether its draft says what the English says.",
     "",
@@ -302,21 +302,21 @@ async function evaluate(item: Item, job: ReturnType<typeof promptFor>, cached?: 
       row.outcome = "unreadable";
       return { row, spent };
     }
-    row.draft = reply.agebon;
+    row.draft = reply.ageben;
     row.note = reply.note;
 
     // Free checks.
-    const verified = verifyDraft(item.english, reply.agebon, tables, data, analysis);
+    const verified = verifyDraft(item.english, reply.ageben, tables, data, analysis);
     row.parses = !verified.error;
     row.unknown = verified.unknown.map((u) => u.raw);
     row.checks = (verified.words ?? []).filter((w) => w.check).map((w) => `${w.raw} (${w.check})`);
-    const drafted = new Set(wordsOf(reply.agebon));
+    const drafted = new Set(wordsOf(reply.ageben));
     const overlap = (answer: string) => wordsOf(answer).filter((w) => drafted.has(w)).length;
     row.closest = [...coverage.keys()].sort((a, b) => overlap(b) - overlap(a))[0] ?? null;
     if (row.closest) {
       row.diverged = [...coverage.get(row.closest)!].filter(([word]) => !drafted.has(word)).map(([word, c]) => ({ word, coverage: c }));
     }
-    if (item.answers.some((a) => normalize(a) === normalize(reply.agebon))) {
+    if (item.answers.some((a) => normalize(a) === normalize(reply.ageben))) {
       row.outcome = "exact";
       return { row, spent };
     }
@@ -325,19 +325,19 @@ async function evaluate(item: Item, job: ReturnType<typeof promptFor>, cached?: 
       return { row, spent };
     }
 
-    if (cached?.verdict && cached.draft === reply.agebon) {
+    if (cached?.verdict && cached.draft === reply.ageben) {
       for (const step of ["back", "judge"] as const) [row.cost[step], row.tokens[step]] = [cached.cost[step], cached.tokens[step]];
       row.back = cached.back;
       row.verdict = cached.verdict;
       row.outcome = cached.verdict.sentence;
       return { row, spent };
     }
-    const backPrompt = promptForPassage([reply.agebon], tables, { ...ctx, weights: backWeights }, { loose: true });
+    const backPrompt = promptForPassage([reply.ageben], tables, { ...ctx, weights: backWeights }, { loose: true });
     const backed = await withRetry(() => claude(EMPTY, BACK, BACK_SYSTEM, backPrompt));
     spend("back", backed);
     row.back = parseEnglish(backed.text);
 
-    const judged = await withRetry(() => claude(EMPTY, JUDGE, JUDGE_SYSTEM, judgePrompt(item, reply.agebon, row.back), VERDICT_SCHEMA));
+    const judged = await withRetry(() => claude(EMPTY, JUDGE, JUDGE_SYSTEM, judgePrompt(item, reply.ageben, row.back), VERDICT_SCHEMA));
     spend("judge", judged);
     const verdict = judged.structured as Verdict | undefined;
     if (!verdict || !SENTENCE.includes(verdict.sentence)) throw new Error(`bad verdict: ${judged.text.slice(0, 300)}`);

@@ -18,7 +18,7 @@ Verbs have no tense. A `/th/` word says how you know, how you hold the claim, or
 Pick one channel for how you know. LIVE and MEMORY place the event in time; the others do not.
 
 <!-- cheat-sheet: knowing-intending -->
-| Channel | Kind | Agebon | English | Stage |
+| Channel | Kind | Ageben | English | Stage |
 |---------|------|--------|---------|-------|
 | LIVE | direct | [`thugem`](/live-and-memory#live-vs-memory) | *live* / *from the scene* | B |
 | MEMORY | direct | [`thevum`](/live-and-memory#live-vs-memory) | *from memory* | B |
@@ -114,7 +114,7 @@ A question, command, request, or prohibition does not take the frame, and does n
 MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words that cover the whole clause. MAY is *could be* with nothing behind it; NOTIONAL is an imagined scene; MIRATIVE says the news ran against what you expected; RESIDUE says an outcome still counts; FORMER says a usual pattern is not claimed for now.
 
 <!-- generated: overlays pos=th|h kind=may|notional|mirative|residue|former_climate -->
-| Agebon | English | Taught in | Stage |
+| Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](/notional-standing#residue-and-former-climate) | I |
 | `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](/notional-standing#residue-and-former-climate) | I |
@@ -159,7 +159,7 @@ For *has ever*, use `havem` with `har`; *has never* is `hal` ([ever / never](/al
 A want, a plan, and a decision are three steps, and they stack in that order. A plan and a decision are `/h/` words, a want is a `/th/` word (yours unless a holder names someone else), and none says the act happens.
 
 <!-- generated: overlays pos=th|h kind=want|plan|decision|attempt -->
-| Agebon | English | Taught in | Stage |
+| Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](/ability#try) | I |
 | `howam` | attempt mood (commitment unstated) | [Try](/ability#try) | I |
@@ -203,7 +203,7 @@ The `bl-` word right after PLAN is only ever a time. WANT, PLAN, and DECISION ta
 After the root, write `x`, a vowel, and the ending the word would have anyway. Only a verb or adjective takes it; with no single verb, use `oda`.
 
 <!-- cheat-sheet: knowing-intending -->
-| Agebon | Use | English | Stage |
+| Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`xa`](/can-and-cant#can) | they can | *can* | B |
 | [`xo`](/can-and-cant#ability-stance) | can't, just for now | *can't right now* | B |

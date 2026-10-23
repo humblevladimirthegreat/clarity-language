@@ -45,7 +45,7 @@ English *as a teacher, I …* names the role the act is done in, not a person st
 
 The scope vowel does its usual work. Pair scope **`e`** takes its `bl-` party, as on `/ɡ/`.
 
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | `hwuzeduyol` | *as the one teaching this time* |
 | `hwozeduyol` | *as a teacher* |
@@ -62,7 +62,7 @@ The scope vowel does its usual work. Pair scope **`e`** takes its `bl-` party, a
 
 A role compound names a participant: the doer, what the event acts on or makes, or the extra `/b/` party. A place, tool, or time is a landmark, brought in with an [extra-noun hook](/hooks#extra-noun) (`al bohehal` *in a house*, `aol banewul` *using a knife*), and it has no role compound. Name it with words you already have:
 
-| Job | Agebon | English |
+| Job | Ageben | English |
 |-----|--------|---------|
 | a kind of tool, place, or time | an ordinary [compound](/compounds#two-roots-one-word) with a head root: `daruyoxuwal` (write + tool), `dezuvexodurol` (sleep + time) | *a writing tool*, *bedtime* |
 | the landmark a clause named | resume its noun: after `aol banewul`, `danewur` | *that knife* |
@@ -172,7 +172,7 @@ For *their left*, [resume](/pronouns#resume-r) the person on **-r** after **`th`
 >
 > "Azozon walks. Alazun sits on their left." (Azozon's left)
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | PoS | slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region) | same slots as other content |
 | DIR | an arrow-rose root | *north* / *ahead*, … |
@@ -187,7 +187,7 @@ For *their left*, [resume](/pronouns#resume-r) the person on **-r** after **`th`
 The examples above used *west* / *left*. The other seven arrow roots work the same way: alone, each is a compass heading; with **`th`** and a facing person, it is that direction from the person’s body.
 
 <!-- cheat-sheet: roles-comparing -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`onuhol`** | compass heading, or ahead on a face | *north* / *ahead* | ⬆️ *up-arrow*: map north, or ahead if facing is north |
 | **`azuhol`** | compass heading, or back on a face | *south* / *back* | ⬇️ *down-arrow*: map south, or back if facing is north |
@@ -217,7 +217,7 @@ English *up* / *down* usually follows the pull of gravity, not anyone’s facing
 > "Up!"
 
 <!-- cheat-sheet: roles-comparing -->
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`abuhol`** | skyward, shared gravity frame | *up* | | ⏫: away from the pull |
 | **`oduhol`** | toward the pull, shared gravity frame | *down* | | ⏬: toward the pull |
@@ -252,7 +252,7 @@ Gravity works the same way: bare **`oduho`** + `/b/` is *under* the landmark, an
 **Compare with:** locative *at* / *on* / *inside* name how the figure sits relative to the landmark ([locative relations](of-relations.md#locative-relations)), not a compass heading.
 
 <!-- cheat-sheet: roles-comparing -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | Bare DIR | compass / gravity | `gewuhol` *west*; `gabuhol` *up* |
 | **`DIR th ANCHOR`** | that point on **ANCHOR’s** facing rose | `gewuhothawan` *listener-left* |
@@ -280,7 +280,7 @@ This is [label scope](/label-seams#label-scope) **`the`** on a direction: the di
 The landmark's front is where its design or current use faces (a house's front door, a car's windshield). A DIR + **`th`** + **`e`** word always takes a `/b/` landmark.
 
 <!-- cheat-sheet: roles-comparing -->
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | `gazuhothel blohehal` | *behind the house* (its own back) |
 | `gonuhothel blohehal` | *in front of the house* |
@@ -292,7 +292,7 @@ The landmark's front is where its design or current use faces (a house's front d
 
 Write the ordinary [word ending](/word-endings) at the end of the whole compound. In a viewpoint lateral, the ending applies to the **viewpoint anchor**, not to DIR: **-l** / **-m** describe the anchor’s reference, **-n** names the anchor, and **-r** resumes it. A bare direction word still takes its ending on the direction itself.
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **-l** | indefinite / kind viewpoint anchor or unmarked path | left of a viewpoint |
 | **-m** | soft / hedged viewpoint anchor | left of a hedged viewpoint |
@@ -300,7 +300,7 @@ Write the ordinary [word ending](/word-endings) at the end of the whole compound
 | **-r** | resume the most recent matching viewpoint anchor in a **`DIR th ANCHOR`** compound, or the anchor alone when it is the latest match: ordinary [pronoun](/pronouns) rules | that viewpoint’s left |
 
 <!-- cheat-sheet: roles-comparing -->
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | `gewuhol` | *west* (shared map) |
 | `gewuhothazozon` | *Azozon’s left* |
@@ -317,7 +317,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *boat* | `onaval` | 🚤 |
 | *island* | `alahel` | 🏝️ |
@@ -327,7 +327,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -340,7 +340,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sit* | `vehohel` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Alazun is a thief.* (stealing is what Alazun regularly does)
 
@@ -390,7 +390,7 @@ y-command | v-walk | z-Ahelan | h-west-th-Azozon
 z-Azozon | v-go | h-role-agent-theft
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `yol vavobol zalazun hewuhol.`
 

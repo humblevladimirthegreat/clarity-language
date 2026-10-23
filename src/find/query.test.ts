@@ -96,18 +96,18 @@ describe("example words", () => {
 });
 
 describe("collectExamples", () => {
-  it("reads a teaching stub with an ellipsis as the Agebon word", () => {
+  it("reads a teaching stub with an ellipsis as the Ageben word", () => {
     assert.deepEqual(
       collectExamples("`el …`", tables).map((e) => e.words.map((w) => w.word.raw)),
       [["el"]],
     );
   });
 
-  it("reads inline, <code>, and agebon fence spans, and skips fragments", () => {
+  it("reads inline, <code>, and ageben fence spans, and skips fragments", () => {
     const md = [
       "Say `zazozon vowurol.` or <code>zalazun vowurol.</code>.",
       "",
-      "```agebon",
+      "```ageben",
       "zazozon vezuvel.",
       "```",
       "",

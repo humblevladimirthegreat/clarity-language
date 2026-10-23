@@ -15,7 +15,7 @@ English *doing this for …* and *for the sake of …* name a **motive**: why th
 >
 > "I talk to feel connected."
 
-The reason is yours. On someone else's act, a motive word still names what the act serves **for you**: `zazozon vezuyol thawethom` is *Azozon talks, and to me it is about feeling connected*. It does not say why Azozon talks; their reasons are in their mind, and Agebon has no way to say a reason belongs to whoever is acting.
+The reason is yours. On someone else's act, a motive word still names what the act serves **for you**: `zazozon vezuyol thawethom` is *Azozon talks, and to me it is about feeling connected*. It does not say why Azozon talks; their reasons are in their mind, and Ageben has no way to say a reason belongs to whoever is acting.
 
 **Not the same job as:** prescription **`the`**, which says the act *ought* to serve this sake. **`tho`** describes why the act is happening: *doing it for this sake*.
 
@@ -30,7 +30,7 @@ On `/ɡ/`, the same stance gives **your** noun’s purpose (*my gift for related
 A reason held **to keep a cost off** is a *so that … not* dependent ([so that](/dependents#so-that), **`hovam blurl`**), as with prescription.
 
 <!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…thol` | does this for the sake over time | *lasting* | **-l** ≈ lasting |
 | `…thom` | does this for the sake; time horizon unstated (soft default if unknown) | *for* | **-m** ≈ open |
@@ -43,7 +43,7 @@ Neither end is better; a good day needs both, and doing something for a payoff r
 Beginner already used *serves* and *detracts from*. Intermediate adds *ought this act for* and *doing for*. Pick the ending table that matches the stance vowel.
 
 <!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`tha`** | [time horizon](/sakes#time-horizon-endings-on-met) endings | *serves* / *met* | **a** ≈ add |
 | **`the`** | [invited / offered / trial](/ought-for-a-sake#sake-force) endings | *ought this act for this sake* | **e** ≈ order (instruct / ought) |
@@ -54,7 +54,7 @@ Beginner already used *serves* and *detracts from*. Intermediate adds *ought thi
 
 Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met and unmet. The rest of the map:
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `g…tha…` after a noun | praise: **your** noun serves the sake | *my gift (serves relatedness)* (`gawetha…`) |
 | `g…thu…` after a noun | criticism: **your** noun detracts from the sake | *my book (detracts from competence)* (`guwathu…`) |
@@ -195,7 +195,7 @@ On the [time scale](comparative-arity.md#time-scale), a sake bar is *too late* a
 >
 > "Azozon arrives too early."
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | met sake bar + **`zoel`** | reaches what the sake needs | *enough* / *ADJ enough* |
 | met sake bar + **`zol`** | past what the sake needs | *too much* / *too ADJ* / *too late* |
@@ -213,7 +213,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *pray* | `vabuyal` | 🙏 |
 | *kneel* | `vanuvel` | 🧎 |
@@ -222,7 +222,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -235,7 +235,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sleep* | `vezuvel` |
 | *PLAN* | `thagom` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *I kneel for a quick sense of purpose.*
 
@@ -269,7 +269,7 @@ z-speaker | v-sit | th-purpose-motive-lasting
 [z-candle | th-physical-met-any-term | z-rank/more | g-heavy]
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zazozon vabuyal thawethom.`
 

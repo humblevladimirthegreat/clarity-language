@@ -23,11 +23,11 @@ import { useClassifyTables } from '../composables/useClassifyTables'
 import { useLearnerName } from '../composables/useLearnerName'
 import { data as gameData } from '../lib/wizard.data'
 
-const LOG_KEY = 'agebon.wizardSandbox.log'
-const SETTINGS_KEY = 'agebon.wizardSandbox.settings'
+const LOG_KEY = 'ageben.wizardSandbox.log'
+const SETTINGS_KEY = 'ageben.wizardSandbox.settings'
 
 type Turn = { id: number; lines: Line[]; outcome?: string }
-type Narration = 'auto' | 'agebon' | 'english'
+type Narration = 'auto' | 'ageben' | 'english'
 type Settings = { position: number | 'everything'; narration: Narration }
 
 const { tables, status, errorMessage } = useClassifyTables()
@@ -39,7 +39,7 @@ const log = ref<LogEntry[]>([])
 const input = ref('')
 const loading = ref(true)
 const settings = ref<Settings>({ position: 'everything', narration: 'auto' })
-/** Lines whose other version (English or Agebon, or the parser card) is showing. */
+/** Lines whose other version (English or Ageben, or the parser card) is showing. */
 const flipped = ref(new Set<string>())
 /** The tapped word: line key and word index. */
 const picked = ref<{ key: string; index: number } | null>(null)
@@ -148,7 +148,7 @@ function exportLog(): void {
   const url = URL.createObjectURL(new Blob([body], { type: 'application/json' }))
   const a = document.createElement('a')
   a.href = url
-  a.download = `agebon-sandbox-${new Date().toISOString().slice(0, 19).replace(/[:T]/g, '-')}.json`
+  a.download = `ageben-sandbox-${new Date().toISOString().slice(0, 19).replace(/[:T]/g, '-')}.json`
   a.click()
   URL.revokeObjectURL(url)
 }
@@ -189,24 +189,24 @@ function toggle(key: string): void {
   flipped.value = next
 }
 
-/** Narration shows Agebon when its grammar is reached (or the setting says so); a tap flips it. */
-function narrationInAgebon(line: Extract<Line, { kind: 'narration' }>, key: string): boolean {
+/** Narration shows Ageben when its grammar is reached (or the setting says so); a tap flips it. */
+function narrationInAgeben(line: Extract<Line, { kind: 'narration' }>, key: string): boolean {
   if (!line.spoken) return false
-  const base = settings.value.narration === 'auto' ? !!line.gate?.ok : settings.value.narration === 'agebon'
+  const base = settings.value.narration === 'auto' ? !!line.gate?.ok : settings.value.narration === 'ageben'
   return flipped.value.has(key) ? !base : base
 }
 
 type WordInfo = { raw: string; gloss: string; emoji: string; concrete: string; abstract: string }
 const wordCache = new Map<string, WordInfo[]>()
 
-function words(agebon: string): WordInfo[] {
-  const cached = wordCache.get(agebon)
+function words(ageben: string): WordInfo[] {
+  const cached = wordCache.get(ageben)
   if (cached) return cached
   const t = tables.value
-  let out: WordInfo[] = agebon.split(/\s+/).map((raw) => ({ raw, gloss: '', emoji: '', concrete: '', abstract: '' }))
+  let out: WordInfo[] = ageben.split(/\s+/).map((raw) => ({ raw, gloss: '', emoji: '', concrete: '', abstract: '' }))
   if (t) {
     try {
-      out = morphGlossWords(agebon, t).map(({ raw, gloss }) => {
+      out = morphGlossWords(ageben, t).map(({ raw, gloss }) => {
         let row
         try {
           const word = parseWords(raw)[0]
@@ -221,13 +221,13 @@ function words(agebon: string): WordInfo[] {
       // Words with no gloss still show; the line itself was parsed before it was shown.
     }
   }
-  wordCache.set(agebon, out)
+  wordCache.set(ageben, out)
   return out
 }
 
 /** The sentence mark after the last word (the tappable words leave it off). */
-function endMark(agebon: string): string {
-  return agebon.match(/[.?!]$/)?.[0] ?? ''
+function endMark(ageben: string): string {
+  return ageben.match(/[.?!]$/)?.[0] ?? ''
 }
 
 function pick(key: string, index: number): void {
@@ -235,7 +235,7 @@ function pick(key: string, index: number): void {
 }
 
 function pickedWord(key: string, spoken: Spoken): WordInfo | undefined {
-  return picked.value?.key === key ? words(spoken.agebon)[picked.value.index] : undefined
+  return picked.value?.key === key ? words(spoken.ageben)[picked.value.index] : undefined
 }
 
 function grammarLink(anchor: string): string {
@@ -269,8 +269,8 @@ function onKeydown(event: KeyboardEvent): void {
       <label class="control" for="sandbox-narration">
         <span>Narration</span>
         <select id="sandbox-narration" v-model="settings.narration">
-          <option value="auto">Agebon once its grammar is reached</option>
-          <option value="agebon">All Agebon</option>
+          <option value="auto">Ageben once its grammar is reached</option>
+          <option value="ageben">All Ageben</option>
           <option value="english">All English</option>
         </select>
       </label>
@@ -311,16 +311,16 @@ function onKeydown(event: KeyboardEvent): void {
         <template v-for="(line, i) in turn.lines" :key="i">
           <div v-if="line.kind === 'player'" class="line player">
             <span class="prompt" aria-hidden="true">›</span>
-            <span class="agebon">{{ line.agebon }}</span>
+            <span class="ageben">{{ line.ageben }}</span>
             <span v-if="line.gloss" class="gloss">{{ line.gloss }}</span>
           </div>
 
           <div v-else-if="line.kind === 'speech'" class="line speech">
             <span class="who">{{ name(line.speaker) }}:</span>
-            <span class="agebon">
-              <template v-for="(word, w) in words(line.spoken.agebon)" :key="w">
-                <button type="button" class="word" @click="pick(keyOf(turn, i), w)">{{ word.raw }}</button>{{ w < words(line.spoken.agebon).length - 1 ? ' ' : '' }}
-              </template>{{ endMark(line.spoken.agebon) }}
+            <span class="ageben">
+              <template v-for="(word, w) in words(line.spoken.ageben)" :key="w">
+                <button type="button" class="word" @click="pick(keyOf(turn, i), w)">{{ word.raw }}</button>{{ w < words(line.spoken.ageben).length - 1 ? ' ' : '' }}
+              </template>{{ endMark(line.spoken.ageben) }}
             </span>
             <button type="button" class="flip" @click="toggle(keyOf(turn, i))">English</button>
             <span v-if="!line.gate.ok" class="above" title="Uses grammar or words past the level you picked">above your level</span>
@@ -335,11 +335,11 @@ function onKeydown(event: KeyboardEvent): void {
           </div>
 
           <div v-else-if="line.kind === 'narration'" class="line narration">
-            <template v-if="line.spoken && narrationInAgebon(line, keyOf(turn, i))">
-              <span class="agebon">
-                <template v-for="(word, w) in words(line.spoken.agebon)" :key="w">
-                  <button type="button" class="word" @click="pick(keyOf(turn, i), w)">{{ word.raw }}</button>{{ w < words(line.spoken.agebon).length - 1 ? ' ' : '' }}
-                </template>{{ endMark(line.spoken.agebon) }}
+            <template v-if="line.spoken && narrationInAgeben(line, keyOf(turn, i))">
+              <span class="ageben">
+                <template v-for="(word, w) in words(line.spoken.ageben)" :key="w">
+                  <button type="button" class="word" @click="pick(keyOf(turn, i), w)">{{ word.raw }}</button>{{ w < words(line.spoken.ageben).length - 1 ? ' ' : '' }}
+                </template>{{ endMark(line.spoken.ageben) }}
               </span>
               <span v-if="pickedWord(keyOf(turn, i), line.spoken)" class="card">
                 {{ pickedWord(keyOf(turn, i), line.spoken)!.emoji }} <code>{{ pickedWord(keyOf(turn, i), line.spoken)!.raw }}</code>
@@ -348,14 +348,14 @@ function onKeydown(event: KeyboardEvent): void {
             </template>
             <span v-else class="english">{{ line.english }}</span>
             <button v-if="line.spoken" type="button" class="flip" @click="toggle(keyOf(turn, i))">
-              {{ narrationInAgebon(line, keyOf(turn, i)) ? 'English' : 'Agebon' }}
+              {{ narrationInAgeben(line, keyOf(turn, i)) ? 'English' : 'Ageben' }}
             </button>
           </div>
 
           <div v-else-if="line.kind === 'recast'" class="line recast">
             <span class="who">{{ name(line.speaker) }}:</span>
             <span class="lead">Ah, you mean</span>
-            <span class="agebon">{{ line.spoken.agebon }}</span>
+            <span class="ageben">{{ line.spoken.ageben }}</span>
             <span class="gloss">{{ line.spoken.gloss }}</span>
             <span v-if="line.why" class="why">
               {{ line.why }}
@@ -367,8 +367,8 @@ function onKeydown(event: KeyboardEvent): void {
             <span class="who">{{ name(line.speaker) }}:</span>
             <span class="lead">Which did you mean?</span>
             <span class="options">
-              <button v-for="option in line.options" :key="option.agebon" type="button" @click="send(option.agebon)">
-                {{ option.agebon }}
+              <button v-for="option in line.options" :key="option.ageben" type="button" @click="send(option.ageben)">
+                {{ option.ageben }}
               </button>
             </span>
           </div>
@@ -380,13 +380,13 @@ function onKeydown(event: KeyboardEvent): void {
 
           <div v-else-if="line.kind === 'refusal'" class="line refusal">
             <span v-if="line.speaker" class="who">{{ name(line.speaker) }}:</span>
-            <span v-if="line.spoken" class="agebon">{{ line.spoken.agebon }}</span>
+            <span v-if="line.spoken" class="ageben">{{ line.spoken.ageben }}</span>
             <span class="english">{{ line.english }}</span>
           </div>
 
           <div v-else-if="line.kind === 'confused'" class="line confused">
             <span v-if="line.speaker" class="who">{{ name(line.speaker) }}:</span>
-            <span v-if="line.spoken" class="agebon">{{ line.spoken.agebon }}</span>
+            <span v-if="line.spoken" class="ageben">{{ line.spoken.ageben }}</span>
             <span class="english">{{ line.speaker ? 'They did not understand.' : 'Your words fizzle: that is not a sentence yet.' }}</span>
             <button type="button" class="flip" @click="toggle(keyOf(turn, i))">Parser error</button>
             <span v-if="flipped.has(keyOf(turn, i))" class="card error-card">
@@ -405,7 +405,7 @@ function onKeydown(event: KeyboardEvent): void {
 
     <form class="entry" @submit.prevent="send()">
       <label for="sandbox-input" class="input-label">
-        <span class="sr-only">Your sentence in Agebon</span>
+        <span class="sr-only">Your sentence in Ageben</span>
         <input
           id="sandbox-input"
           v-model="input"
@@ -413,7 +413,7 @@ function onKeydown(event: KeyboardEvent): void {
           autocomplete="off"
           autocapitalize="off"
           spellcheck="false"
-          placeholder="Type Agebon and press Enter"
+          placeholder="Type Ageben and press Enter"
           :disabled="!engine"
           @keydown="onKeydown"
         >
@@ -565,7 +565,7 @@ button:disabled {
   line-height: 1.5;
 }
 
-.agebon {
+.ageben {
   font-family: var(--vp-font-family-mono);
   font-size: 0.95rem;
 }
@@ -622,7 +622,7 @@ button:disabled {
   font-weight: 700;
 }
 
-.narration .agebon,
+.narration .ageben,
 .narration > .english {
   font-style: italic;
 }

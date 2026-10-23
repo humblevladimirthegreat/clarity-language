@@ -2,9 +2,9 @@ import { lookupPronunciation } from "./cmu-dict.ts";
 import { echo } from "./echo-metric.ts";
 import { ENGLISH_IN_CODE } from "./english-in-code.ts";
 import { PHONEME_MAP } from "./pronunciation-map.ts";
-import { AGEBON_CONSONANTS, AGEBON_VOWELS, isAgebonRootShape } from "./root-shape.ts";
+import { AGEBEN_CONSONANTS, AGEBEN_VOWELS, isAgebenRootShape } from "./root-shape.ts";
 
-export { AGEBON_CONSONANTS, AGEBON_VOWELS, isAgebonRootShape };
+export { AGEBEN_CONSONANTS, AGEBEN_VOWELS, isAgebenRootShape };
 export { mappedSourceLetters } from "./letter-map.ts";
 
 /** Consonants the pronunciation generator may write. */
@@ -41,8 +41,8 @@ function rankRoots(roots: string[], cmu: string): string[] {
 export function shortRootCandidates(cmu: string): string[] {
   const roots: string[] = [];
   for (const consonant of GENERATED_CONSONANTS) {
-    for (const a of AGEBON_VOWELS) {
-      for (const b of AGEBON_VOWELS) {
+    for (const a of AGEBEN_VOWELS) {
+      for (const b of AGEBEN_VOWELS) {
         if (!ENGLISH_IN_CODE.has(a + consonant + b)) roots.push(a + consonant + b);
       }
     }
@@ -53,7 +53,7 @@ export function shortRootCandidates(cmu: string): string[] {
 /**
  * Enumerate every legal ordinary root with the given syllable count (VCV, VCVCV, …).
  */
-export function allAgebonRoots(syllables: number): string[] {
+export function allAgebenRoots(syllables: number): string[] {
   if (!Number.isInteger(syllables) || syllables < 1) {
     throw new Error("Syllable count must be a positive integer");
   }
@@ -66,13 +66,13 @@ export function allAgebonRoots(syllables: number): string[] {
       return;
     }
     if (prefix.length === 0) {
-      for (const v of AGEBON_VOWELS) {
+      for (const v of AGEBEN_VOWELS) {
         walk(v, syllablesLeft - 1);
       }
       return;
     }
-    for (const c of AGEBON_CONSONANTS) {
-      for (const v of AGEBON_VOWELS) {
+    for (const c of AGEBEN_CONSONANTS) {
+      for (const v of AGEBEN_VOWELS) {
         walk(prefix + c + v, syllablesLeft - 1);
       }
     }
@@ -83,8 +83,8 @@ export function allAgebonRoots(syllables: number): string[] {
 }
 
 export type LetterDistribution = {
-  vowels: Record<(typeof AGEBON_VOWELS)[number], number>;
-  consonants: Record<(typeof AGEBON_CONSONANTS)[number], number>;
+  vowels: Record<(typeof AGEBEN_VOWELS)[number], number>;
+  consonants: Record<(typeof AGEBEN_CONSONANTS)[number], number>;
   vowelTokens: number;
   consonantTokens: number;
   letters: number;
@@ -93,27 +93,27 @@ export type LetterDistribution = {
 
 /** Count inventory letters in V(CV)+ roots (every occurrence; skip malformed). */
 export function letterDistribution(roots: string[]): LetterDistribution {
-  const vowels = Object.fromEntries(AGEBON_VOWELS.map((v) => [v, 0])) as LetterDistribution["vowels"];
-  const consonants = Object.fromEntries(AGEBON_CONSONANTS.map((c) => [c, 0])) as LetterDistribution["consonants"];
+  const vowels = Object.fromEntries(AGEBEN_VOWELS.map((v) => [v, 0])) as LetterDistribution["vowels"];
+  const consonants = Object.fromEntries(AGEBEN_CONSONANTS.map((c) => [c, 0])) as LetterDistribution["consonants"];
   let skipped = 0;
 
   for (const root of roots) {
-    if (!isAgebonRootShape(root)) {
+    if (!isAgebenRootShape(root)) {
       skipped += 1;
       continue;
     }
     for (let i = 0; i < root.length; i++) {
       const ch = root[i]!;
       if (i % 2 === 0) {
-        vowels[ch as (typeof AGEBON_VOWELS)[number]] += 1;
+        vowels[ch as (typeof AGEBEN_VOWELS)[number]] += 1;
       } else {
-        consonants[ch as (typeof AGEBON_CONSONANTS)[number]] += 1;
+        consonants[ch as (typeof AGEBEN_CONSONANTS)[number]] += 1;
       }
     }
   }
 
-  const vowelTokens = AGEBON_VOWELS.reduce((n, v) => n + vowels[v], 0);
-  const consonantTokens = AGEBON_CONSONANTS.reduce((n, c) => n + consonants[c], 0);
+  const vowelTokens = AGEBEN_VOWELS.reduce((n, v) => n + vowels[v], 0);
+  const consonantTokens = AGEBEN_CONSONANTS.reduce((n, c) => n + consonants[c], 0);
   return {
     vowels,
     consonants,
@@ -125,13 +125,13 @@ export function letterDistribution(roots: string[]): LetterDistribution {
 }
 
 /**
- * Best three-letter Agebon root for an English word, from its CMU pronunciation. A five-letter root
+ * Best three-letter Ageben root for an English word, from its CMU pronunciation. A five-letter root
  * takes its tail from a kind and shape (`convert-word -- <english> --kind …`, src/root-tails-place.ts).
  */
-export function toAgebonWord(input: string): string {
+export function toAgebenWord(input: string): string {
   const best = shortRootCandidates(lookupPronunciation(input))[0];
   if (!best) {
-    throw new Error(`Could not build an Agebon root for "${input}"`);
+    throw new Error(`Could not build an Ageben root for "${input}"`);
   }
   return best;
 }

@@ -4,7 +4,7 @@ band: beginner
 
 # Relations
 
-Some English prepositions need a content root of their own (*like*, *for* in a swap, *on behalf of*, *between*, *part of*, *as of*). Agebon writes each one as a **relation** word on `/h/` (or `/ɡ/` on a noun), followed by an extra noun in `/b/` that completes it. Everyday *in* / *at* / *from* / *for* (a get) / *using* are [hooks](hooks.md#extra-noun) instead.
+Some English prepositions need a content root of their own (*like*, *for* in a swap, *on behalf of*, *between*, *part of*, *as of*). Ageben writes each one as a **relation** word on `/h/` (or `/ɡ/` on a noun), followed by an extra noun in `/b/` that completes it. Everyday *in* / *at* / *from* / *for* (a get) / *using* are [hooks](hooks.md#extra-noun) instead.
 
 
 You already write *like Azozon* as a hosted pair (`hewem blazozon`): a relation word, then the extra noun as a `bl-` word right after it. The same shape covers the other prepositions on this page: pick the relation root, then put a `bl-` word after it. A `/w/` word that grades the relation sits immediately before the `/h/` or `/ɡ/` word.
@@ -62,7 +62,7 @@ With no `bl-` word after a joined subject, the model is the other members: each 
 **Compare with:** a `/b/` word with no relation word before it is the recipient. *In a house* is a [hook](hooks.md#extra-noun) (`al bohehal`). *Using* a tool is also a [hook](hooks.md#extra-noun). Giving **one** person two labels is not resemblance, so it does not use this pair. *As sleepy as* compares how far two things have a quality, not whether one resembles the other. *As if they walk* says the walk may not be real; with *like*, the walk is real.
 
 <!-- cheat-sheet: linking-clauses -->
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hewem` / `gewem`** | resemblance to a model | *like* | `ewel` *mirror* | 🪞: the image is of the model |
 
@@ -82,7 +82,7 @@ On a noun, the same root is **`geham`** (`danal geham blohowel` *a book for a ha
 **Compare with:** a `/b/` word with no relation word before it is the recipient (*a book for Alazun* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun). *Like a duck* is [simile](#similative). *In a house* is a hook (`al`).
 
 <!-- cheat-sheet: linking-clauses -->
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`heham` / `geham`** | consideration / countervalue | *in exchange for* | `ehal` *currency-exchange* | 💱: the arrows swap one side for the other |
 
@@ -102,7 +102,7 @@ A recipient `/b/` can follow once the pair is complete: `zazozon hanem blalazun 
 **Compare with:** a `/b/` word with no relation word before it is who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`).
 
 <!-- cheat-sheet: linking-clauses -->
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hanem` / `ganem`** | authorized agency | *on behalf of* | `anel` *id* | 🪪: the card stands as their face |
 
@@ -114,7 +114,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *hammer* | `ohowel` | 🔨 |
 | *duck* | `adozal` | 🦆 |
@@ -125,7 +125,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -141,7 +141,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *run* | `veruvol` |
 | *tell* | `vezuyol` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Alazun walks like a guard.*
 
@@ -193,7 +193,7 @@ z-Alazun | [[w-very | h-like] | bl-duck] | v-run
 [z-Azozon | z-Ahelan | z-and] | h-like | v-walk
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zalazun hanem blahelan varal.`
 

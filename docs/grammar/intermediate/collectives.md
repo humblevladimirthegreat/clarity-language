@@ -7,7 +7,7 @@ band: intermediate
 ### Associate-set resolution
 <a id="associate-resolution"></a>
 
-English *Azozon and them* does not say who belongs. Agebon **-x** is the same: who counts is **open** unless you say. When the list matters, name the members with a [join](/joins). When it does not, the listener guesses in this order: a group already named in the conversation, then the obvious group in the scene (this meeting, this household).
+English *Azozon and them* does not say who belongs. Ageben **-x** is the same: who counts is **open** unless you say. When the list matters, name the members with a [join](/joins). When it does not, the listener guesses in this order: a group already named in the conversation, then the obvious group in the scene (this meeting, this household).
 
 > `zazozonx vowurol.`
 >
@@ -46,7 +46,7 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 >
 > "They sing as one performance." (Azozon and associates)
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | subject set + singular `/v/` | how they act is left open | *they walk* (together, separately, or don’t care) |
 | subject set + `/v/`…**-x** | collective: one shared act | *they walk as one outing* |
@@ -54,7 +54,7 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 | group-kind singular (*the family*) + `/v/`…**-x** | the group acts as one unit | *the family walks as one unit* |
 
 <!-- cheat-sheet: people-pointing -->
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | `zazozonx vozuyel` | *Azozon and associates sing* (together or each, or don’t care) |
 | `zazozonx vozuyelx` | *they sing as one performance* |
@@ -92,7 +92,7 @@ English *the boxes are heavy* can mean each box or the pile. Put **-x** on the *
 >
 > "The file-boxes are heavy as a pile." (but not individually)
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | plural noun or list + singular `/ɡ/` | each member, or don’t care | *the boxes are heavy* |
 | plural noun or list + `/ɡ/`…**-x** | collective: the set as one pile | *heavy as a pile* |
@@ -100,7 +100,7 @@ English *the boxes are heavy* can mean each box or the pile. Put **-x** on the *
 After nouns joined into a list with **`a`** ([joins](/joins)), one plain `/ɡ/` word applies to **each member**. With **-x**, it applies to the list **as one unit**.
 
 <!-- cheat-sheet: people-pointing -->
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | `zavonal zuwal zal garolem` | *the file-box and the tool are each heavy* |
 | `zavonal zuwal zal garolemx` | *the file-box and the tool are heavy together* (collective) |
@@ -126,7 +126,7 @@ To call a group at the start of a turn, put **-x** on the call word (the vocativ
 >
 > "Hey, cats!"
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **-nx** | a kind or a title as the group | *hey, kids*; *Team Alpha* |
 | **-rx** | prior addressee and associates | *hey, you (that one) and associates* |
@@ -156,14 +156,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *sheet-music* | `ehorol` | 🎼 |
 | *heavy* | `arolem` | 🪨 from *rock* |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -176,7 +176,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sing* | `vozuyel` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *They sing as one performance.* (Azozon and associates)
 
@@ -226,7 +226,7 @@ y-listener-x
 z-Ahelan-x | except | z-listener | v-sing
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zuvayal vozuyelx.`
 

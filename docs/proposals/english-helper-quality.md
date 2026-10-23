@@ -1,12 +1,12 @@
 # Proposal: Checking and improving the English helper
 
 **Status:** PARTIALLY IMPLEMENTED. Phase 1 is built: the **checkpoint** set, *word in prompt*, *pattern in prompt*, *self-contained*, and the worklist ([`src/english-helper/coverage.ts`](../../src/english-helper/coverage.ts)). Phase 2 is built: [`cases.tsv`](../../src/english-helper/cases.tsv) and the baseline (`--check`, `--write-baseline`). Phase 3 is built: the **wild** set ([`wild.tsv`](../../src/english-helper/wild.tsv)) and gap rate, noise and prompt size on every set. Phase 4 is built: *verify precision* and *verify recall* on the checkpoint set ([`plant.ts`](../../src/english-helper/plant.ts)). Phase 5 is built ([`english-helper-eval.ts`](../../scripts/english-helper-eval.ts)), with one 10-item batch run.  
-**Related:** [`src/english-helper/`](../../src/english-helper/) (analyzer, prompt, `--verify`), [`scripts/english-helper-recall.ts`](../../scripts/english-helper-recall.ts), [`scripts/frequency-coverage.ts`](../../scripts/frequency-coverage.ts), [`scripts/llm-eval.ts`](../../scripts/llm-eval.ts) (the Agebon → English counterpart), [translation checkpoints](../meta/translation-exercises.md), [recipe track](../meta/grammar-docs.md#recipe-track).  
+**Related:** [`src/english-helper/`](../../src/english-helper/) (analyzer, prompt, `--verify`), [`scripts/english-helper-recall.ts`](../../scripts/english-helper-recall.ts), [`scripts/frequency-coverage.ts`](../../scripts/frequency-coverage.ts), [`scripts/llm-eval.ts`](../../scripts/llm-eval.ts) (the Ageben → English counterpart), [translation checkpoints](../meta/translation-exercises.md), [recipe track](../meta/grammar-docs.md#recipe-track).  
 **Design authority:** none. This is a process for the tool. Every fix it produces is either tool code or a doc row that teaches a form a grammar page already owns. A missing form is logged as a grammar gap, never invented here.
 
 ## Problem
 
-`node scripts/english-helper.mjs --llm-prompt` is meant to give a translator everything needed to write Agebon from English without opening the grammar. A hand test on five new sentences found that the prompt fell short in several ways:
+`node scripts/english-helper.mjs --llm-prompt` is meant to give a translator everything needed to write Ageben from English without opening the grammar. A hand test on five new sentences found that the prompt fell short in several ways:
 
 - It linked a section without showing the form (*my*, *three*).
 - It had no suggestion at all for common words (*me*, *last night*, *not sure*).
@@ -31,8 +31,8 @@ We need a repeatable loop: a held-out test set, free metrics that answer "could 
 
 ## Non-goals
 
-- New grammar. When the reference needs a form no page teaches, or the English has no Agebon way to say it yet, that's a grammar gap: log it with the `find-english.mjs` phrases tried, and leave the decision to the editor.
-- Writing Agebon sentences inside the analyzer. The helper stays suggestion-only.
+- New grammar. When the reference needs a form no page teaches, or the English has no Ageben way to say it yet, that's a grammar gap: log it with the `find-english.mjs` phrases tried, and leave the decision to the editor.
+- Writing Ageben sentences inside the analyzer. The helper stays suggestion-only.
 - Tuning to the test set. Held-out sentences are never copied into cue rows or examples. A fix has to work for the class of word, not for the one sentence.
 
 ## What exists
@@ -42,8 +42,8 @@ We need a repeatable loop: a held-out test set, free metrics that answer "could 
 | `npm run english-helper-recall` (`--set doc\|checkpoint\|wild\|all`) | per set: root recall (top-1, top-3, anywhere), construction recall (home anchor, home page), *word in prompt*, *pattern in prompt*, *self-contained* (reference sets); gap rate by word class, noise, prompt size (every set); gap rate by phenomenon and stage (wild); most-missed roots, constructions and words; writes `tmp/english-helper-report.md` and `tmp/english-helper-worklist.csv` | the worklist sorts only four classes (*missing cue*, *link without form*, *tagger*, *ranking*) |
 | `npx tsx scripts/frequency-coverage.ts` | which of NGSL's 2,809 frequent lemmas the lexicon or a grammar row knows | word by word, no context, no prompt |
 | `english-helper.mjs --verify` | parse, unknown words, and each content word's sense next to the English that suggested its root | checks one draft; aggregated by `english-helper-recall` on the checkpoint set |
-| `npm run llm-eval` | Agebon → English prompt quality, with a judge model | other direction; costs money |
-| `npm run english-helper-eval` | English → Agebon: a model writes from the helper prompt, a second reads the draft back, a third judges it; miss rate by level, against *self-contained* | costs money; checkpoint set only |
+| `npm run llm-eval` | Ageben → English prompt quality, with a judge model | other direction; costs money |
+| `npm run english-helper-eval` | English → Ageben: a model writes from the helper prompt, a second reads the draft back, a third judges it; miss rate by level, against *self-contained* | costs money; checkpoint set only |
 | tests in `src/english-helper/*.test.ts` | pinned behavior per feature | written ad hoc, one feature at a time |
 | `src/english-helper/cases.tsv` | one pinned behavior per line (`link:`, `not:`, `first:`, `has:`, `sense:`, `form:`, `no-gap`), run by `analyze.test.ts` | slot-level only; no stage column |
 | `english-helper-recall --check` / `--write-baseline` | headline metrics per set against `src/generated/english-helper-baseline.json` | not in `npm test` |
@@ -57,10 +57,10 @@ Three sets, each scored separately:
 | Set | Source | Role |
 |-----|--------|------|
 | **doc** | doc example pairs (what `english-helper-recall` reads today) | in-sample: catches breakage, overstates quality |
-| **checkpoint** | English → Agebon practice items, with their **Also correct** answers ([`src/lint/practice-items.ts`](../../src/lint/practice-items.ts)); 68 sections today | held out from the example pool, with several right answers each |
-| **wild** | a committed list of plain English sentences grouped by phenomenon (pronouns, possessives, numbers, time words, feelings, stance, clauses, questions, comparatives, kin, places) at each stage | no reference Agebon; scored on gaps, noise and size, and is the input for the model eval |
+| **checkpoint** | English → Ageben practice items, with their **Also correct** answers ([`src/lint/practice-items.ts`](../../src/lint/practice-items.ts)); 68 sections today | held out from the example pool, with several right answers each |
+| **wild** | a committed list of plain English sentences grouped by phenomenon (pronouns, possessives, numbers, time words, feelings, stance, clauses, questions, comparatives, kin, places) at each stage | no reference Ageben; scored on gaps, noise and size, and is the input for the model eval |
 
-The wild set is written once (around 20 sentences per phenomenon), checked in as a TSV, and grown only through the triage loop below. It stores no Agebon, so root respelling never touches it.
+The wild set is written once (around 20 sentences per phenomenon), checked in as a TSV, and grown only through the triage loop below. It stores no Ageben, so root respelling never touches it.
 
 ### 2. Free metrics
 
@@ -103,7 +103,7 @@ Rows are sorted by frequency, then by how many sentences share the miss.
 | **pattern read as spelling** | a row's form is notation (`th+e`, `/ɡ/ / -r`) with no spelled word or example | the doc cell spells the word; the analyzer shows an example for any form that is only a pattern | *sure* → `thrawal` |
 | **joined prose cell** | a recipe cell's prose (`X and Y`) becomes ` / ` alternatives | the doc cell becomes one code span | *last night* |
 | **wrong side** | an alias or lead on the sense the English doesn't mean | the analyzer spells both sides; `--verify` flags it | *grateful* → *pray* |
-| **feature not reached** | the English has a dedicated Agebon feature (sakes, evidentials, clusivity), but the helper offers only a root | a recipe row that names the feature for that English word | *grateful* → met sake word |
+| **feature not reached** | the English has a dedicated Ageben feature (sakes, evidentials, clusivity), but the helper offers only a root | a recipe row that names the feature for that English word | *grateful* → met sake word |
 | **ranking** | the right suggestion is there but below a worse one | cue rank, tier order or slot order in the analyzer | listener *you* above generic *you* |
 | **tagger** | wrong word class or lemma from compromise | `tag.ts` overrides, or a context rule in the analyzer | *that* tagged as a preposition |
 | **opener / structure** | a clause-level English structure with no detector | `detectors.ts` (pointers only), with its links in `detectorLinks` | *that* + clause → `darl` |
@@ -137,7 +137,7 @@ Add `npm run english-helper-eval`, built on `llm-eval`'s runner. For each sample
 1. Build the helper prompt, with the item's own doc pair held out.
 2. Translate with a small model. Give it tool access to `--verify` only if the run is testing that loop.
 3. Parse the reply. Record parse failure, unknown words, and *check* flags from `--verify`.
-4. Back-translate with the Agebon → English prompt and have a stronger model judge it against the item's English, keeping who did what, negation and stance.
+4. Back-translate with the Ageben → English prompt and have a stronger model judge it against the item's English, keeping who did what, negation and stance.
 5. Report miss rate by failure class (from which slot's word went wrong), by construction, and by stage.
 
 Results are cached by prompt hash, like `llm-eval`. Run it only when asked, and sample (default `--n 100`).
@@ -193,7 +193,7 @@ Every few rounds, or after a big grammar change, run the model eval on a sample 
    | side / alias-side / row-ending | 99.4% of 347 / 100% of 28 / 100% of 8 |
 
    Recall is near the ceiling because these plants are the errors `--verify` was built to catch. The false alarms are the more useful list: *alias* is mostly a few words reached only through an alias (*hastily*, *speak*, *say*), and *unmatched* is a root the English never suggested, which is also a root recall miss.
-5. **Model eval.** Only after phases 1–4 settle, so its misses can be read against the free metrics. **Built.** `npm run english-helper-eval` samples checkpoint items evenly across the three levels, builds the helper prompt with the item's own answers and English held out of the examples, and has Haiku write the Agebon. Two shortcuts save the paid steps: a draft equal to an accepted answer is right, and a draft that does not parse is wrong. Every other draft is read back by Haiku with the Agebon → English prompt, and Opus judges it against the English, with the glosses of the accepted answers and the draft. For each item the report lists the words of the closest accepted answer that the draft did not use, with their coverage label (*word*, *pattern*, *missing*), and compares the miss rate of self-contained and not self-contained sentences. A rerun reuses a stored draft when its prompt is unchanged, and its verdict when the draft reads the same, so a scoring fix costs nothing; `--dry` lists the sample with no calls. The share of shortcut items sets the cost: about $0.07 for an item that stops after translating, and $0.14–0.16 for one that goes through all three steps. Translating is most of it, since Haiku writes about 1,000 output tokens for a one-line reply. First batch (2026-10-20, `--n 10 --seed 1`, $0.92):
+5. **Model eval.** Only after phases 1–4 settle, so its misses can be read against the free metrics. **Built.** `npm run english-helper-eval` samples checkpoint items evenly across the three levels, builds the helper prompt with the item's own answers and English held out of the examples, and has Haiku write the Ageben. Two shortcuts save the paid steps: a draft equal to an accepted answer is right, and a draft that does not parse is wrong. Every other draft is read back by Haiku with the Ageben → English prompt, and Opus judges it against the English, with the glosses of the accepted answers and the draft. For each item the report lists the words of the closest accepted answer that the draft did not use, with their coverage label (*word*, *pattern*, *missing*), and compares the miss rate of self-contained and not self-contained sentences. A rerun reuses a stored draft when its prompt is unchanged, and its verdict when the draft reads the same, so a scoring fix costs nothing; `--dry` lists the sample with no calls. The share of shortcut items sets the cost: about $0.07 for an item that stops after translating, and $0.14–0.16 for one that goes through all three steps. Translating is most of it, since Haiku writes about 1,000 output tokens for a one-line reply. First batch (2026-10-20, `--n 10 --seed 1`, $0.92):
 
    | | items | miss |
    |---|---|---|

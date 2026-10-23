@@ -389,7 +389,7 @@ export type FileRewrite = {
 
 /**
  * Patch spans (from the end of the file), reparse, then regenerate morph lines
- * whose Agebon is one of the new span texts. A span that does not reparse is
+ * whose Ageben is one of the new span texts. A span that does not reparse is
  * left as written; other spans in the file still apply.
  */
 export function rewriteMarkdownSpans(
@@ -416,7 +416,7 @@ export function rewriteMarkdownSpans(
     applied.map((p) => ({ index: p.example.index, length: p.example.source.length, next: p.nextSource })),
   );
   const regloss = applied.length
-    ? reglossMarkdown(text, tables, (pair) => nextTexts.has(pair.agebon.trim()))
+    ? reglossMarkdown(text, tables, (pair) => nextTexts.has(pair.ageben.trim()))
     : { text, edits: [], unplaced: [] };
   return {
     text: regloss.text,

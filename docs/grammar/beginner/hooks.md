@@ -5,7 +5,7 @@ band: beginner
 # Hooks {#hooks}
 
 
-English uses small words such as *including*, *instead*, *in*, and *for* to attach one piece to another. Agebon does this with **hooks**: short words with **no role letter** (no `z` / `v` / `g` / …), just a vowel (or two vowels) plus an ending. A hook attaches the piece on its right to something already in play: a phrase in the same role, the sentence before, or the clause itself as an extra noun.
+English uses small words such as *including*, *instead*, *in*, and *for* to attach one piece to another. Ageben does this with **hooks**: short words with **no role letter** (no `z` / `v` / `g` / …), just a vowel (or two vowels) plus an ending. A hook attaches the piece on its right to something already in play: a phrase in the same role, the sentence before, or the clause itself as an extra noun.
 
 How much of **A is still in the slot** after B arrives: added, still A, replaced, or none of B. That leftover is the same scale as [joins](joins.md#join-type-vowel-series), not size: you are changing membership of the slot, not measuring A.
 
@@ -82,7 +82,7 @@ The left side can be the clause standalone **`xual`** *everything* ([clause join
 > "Everything happened except that Azozon walked."
 
 <!-- cheat-sheet: vowels -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** | add a member in the same slot | *including*: A, including B | bigger: B is added |
 | **o** | offer a better wording | *rather*: A, or rather B | same: still A |
@@ -94,7 +94,7 @@ The left side can be the clause standalone **`xual`** *everything* ([clause join
 The ending on an `A HOOK B` hook says whether B is complete. **-l** says B is the whole of it, like plain English *including B* or *except B*. **-m** says there may be more than B, like adding *and maybe more*. When you are unsure, prefer **-m**.
 
 <!-- cheat-sheet: joins-hooks -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **-l** (`al` / `ol` / `el` / `ul`) | B is the whole story you stand behind | unmarked (*including B*, *except B*, …) | **l** ≈ locked |
 | **-m** (`am` / `om` / `em` / `um`) | B is not the only one | *and maybe more* | **m** ≈ maybe more |
@@ -115,7 +115,7 @@ The ending on an `A HOOK B` hook says whether B is complete. **-l** says B is th
 
 English can open a sentence with *Additionally*, *In other words*, *Instead*, or *Except* to say how it connects to what was said before (this sentence-to-sentence connective is the *glue*). Put the same hook at the **front** of the sentence. What was already said plays A's role, and the whole new sentence is B. The vowels keep their meanings: add, say another way, replace, take out. (cue: same **a** / **o** / **e** / **u** map as in-clause.)
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `al …` | add another point you stand behind | *Additionally, …* | **a** ≈ add |
 | `ol …` | say the last point another way | *In other words, …* | **e** ≈ order |
@@ -148,14 +148,14 @@ The hook is glue only when the next word is not a `/b/` word. With a `/b/` word 
 
 ### Extra noun (`/b/` after the hook) {#extra-noun}
 
-English prepositions such as *in*, *at*, *from*, and *for* add a place, a source, or someone who benefits. In Agebon, put a hook right before a `/b/` [extra noun](clause.md#extra-nouns). Extra-noun **is the hook word** with `/b/` after it: recast the landmark as the hook job (*in* = including a place; *for* = rather this aim; *at* = instead a point; *from* = except that landmark). Size pictures (volume / hand / point / none) help the cells; they must not choose the parent. This is not the recipient, which takes no hook (`zazozon vezuyol balazun` *tells Alazun*).
+English prepositions such as *in*, *at*, *from*, and *for* add a place, a source, or someone who benefits. In Ageben, put a hook right before a `/b/` [extra noun](clause.md#extra-nouns). Extra-noun **is the hook word** with `/b/` after it: recast the landmark as the hook job (*in* = including a place; *for* = rather this aim; *at* = instead a point; *from* = except that landmark). Size pictures (volume / hand / point / none) help the cells; they must not choose the parent. This is not the recipient, which takes no hook (`zazozon vezuyol balazun` *tells Alazun*).
 
 So the test is: `/b/` right after the hook, and no recipient `/b/` right before it. Right after a recipient, the hook is same-role *including* (`bazozon al balazun`). The hook already marks its landmark, so the landmark is a plain `/b/` word, never a [`bl-` word](clause.md#extra-nouns).
 
 The four one-vowel hooks name the everyday extras:
 
 <!-- cheat-sheet: joins-hooks -->
-| Agebon | English | Use | Cue |
+| Ageben | English | Use | Cue |
 |--------|---------|-----|-----|
 | **`al`** | *in* | containment | including a place (a volume) |
 | **`el`** | *at* | coincidence with a point | instead a point |
@@ -226,7 +226,7 @@ For *since* before a sentence, put **`barl`** after **`ul`** and the starting ev
 >
 > "Azozon has been walking since Alazun fell asleep."
 
-English often puts *since* first (*Since Alazun fell asleep, Azozon has been walking*). Agebon keeps **`ul barl`** after the main clause, because the sentence after **`barl`** runs to the period. As a short answer, the pair and the starting event can stand alone:
+English often puts *since* first (*Since Alazun fell asleep, Azozon has been walking*). Ageben keeps **`ul barl`** after the main clause, because the sentence after **`barl`** runs to the period. As a short answer, the pair and the starting event can stand alone:
 
 > `ul barl zalazun vezuvel.`
 >
@@ -236,7 +236,7 @@ English often puts *since* first (*Since Alazun fell asleep, Azozon has been wal
 
 **`ul`** is the only hook that takes **`barl`**. Every other hook needs a real noun in `/b/`.
 
-**Compare with:** *since* meaning *because* is **`thahum blarl`**. Agebon keeps the time reading and the cause reading apart.
+**Compare with:** *since* meaning *because* is **`thahum blarl`**. Ageben keeps the time reading and the cause reading apart.
 
 ### Practice {#beginner-practice}
 
@@ -246,7 +246,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *pour* | `vowuvul` | 🫗 |
 | *table* | `edohel` | 𓊲 |
@@ -256,7 +256,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -267,7 +267,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sandwich* | `edal` |
 | *sit* | `vehohel` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *The family, including Azozon, cooks.*
 
@@ -319,7 +319,7 @@ z-family | [at | b-table]
 z-family | except | z-Alazun | v-sit
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zazozon dugedel vuguyol ol buvayal.`
 

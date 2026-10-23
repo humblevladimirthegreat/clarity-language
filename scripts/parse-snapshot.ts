@@ -1,5 +1,5 @@
 /**
- * Compare this checkout's parser with the parser at a git ref, over every Agebon sentence and
+ * Compare this checkout's parser with the parser at a git ref, over every Ageben sentence and
  * phrase span in this checkout's docs/grammar/. Both parsers read the same spans, so a difference
  * is a parser change, never a doc change. Exits 1 when any span parses differently.
  *

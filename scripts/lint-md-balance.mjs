@@ -119,7 +119,7 @@ const ALLOWED_HTML_TAGS = new Set([
   "track",
   "ul",
   "video",
-  "AgebonInspect",
+  "AgebenInspect",
   "ClaritishEditor",
   "DigitPegs",
   "FingerCode",

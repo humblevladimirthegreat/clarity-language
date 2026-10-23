@@ -2,7 +2,7 @@
 /**
  * Review lists for the free English pass ([llm-gloss-prompt.md](../docs/proposals/llm-gloss-prompt.md),
  * phase 1 step 3): one JSON per top-level grammar page listing every free English line with its
- * section, Agebon, parser morph, and lint findings, so a page review cannot skip an example.
+ * section, Ageben, parser morph, and lint findings, so a page review cannot skip an example.
  * Output goes to `tmp/free-english-review/` (gitignored), plus an `index.json` of counts per page.
  *
  * Run: npm run free-english-review
@@ -58,12 +58,12 @@ for (const file of files) {
   const items = raw.map((free, i) => {
     const line = lineNumberAt(source, free.index);
     const section = sectionAt(sections, free.index);
-    const agebon = parsed[i]!.agebon;
+    const ageben = parsed[i]!.ageben;
     let parserMorph: string | null = null;
     let parseError: string | undefined;
-    if (agebon != null) {
+    if (ageben != null) {
       try {
-        parserMorph = morphGlossLine(agebon, tables, { strict: true });
+        parserMorph = morphGlossLine(ageben, tables, { strict: true });
       } catch (err) {
         parseError = err instanceof Error ? err.message : String(err);
         count.parseErrors += 1;
@@ -77,7 +77,7 @@ for (const file of files) {
       line,
       kind: free.kind,
       section: { title: section.title, slug: section.slug, band: section.band ?? null },
-      agebon: free.agebon,
+      ageben: free.ageben,
       docMorph: free.morph,
       parserMorph,
       ...(parseError ? { parseError } : {}),

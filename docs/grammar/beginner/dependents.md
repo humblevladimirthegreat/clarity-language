@@ -12,7 +12,7 @@ You already write one clause with [role letters](clause.md#role-letters) and sta
 ### Which person or thing (*who / that / which*)
 <a id="which-noun"></a>
 
-English can describe a noun with a whole clause that starts with *who*, *that*, or *which* (*the guard who sits*). Agebon has no such word. Write **two sentences** instead: first say the inner clause as an ordinary sentence, then use the same person or thing in the next sentence.
+English can describe a noun with a whole clause that starts with *who*, *that*, or *which* (*the guard who sits*). Ageben has no such word. Write **two sentences** instead: first say the inner clause as an ordinary sentence, then use the same person or thing in the next sentence.
 
 > `zagayul vehohel. zazozon vezuyol bagayul.`
 >
@@ -54,7 +54,7 @@ For English *whether*, change the vowel to **`e`**: **`derl`**. The inner senten
 
 ### Because, if, although (poles) {#poles}
 
-Words like *because*, *if*, and *although* attach a dependent clause as a reason, a condition, a contrast, or a time. Agebon uses a pair for this: a **pole** word that names the link, then the stand-in **`blarl`** right after it. The pole is a relation word, so **`blarl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`blarl`** at the very end.
+Words like *because*, *if*, and *although* attach a dependent clause as a reason, a condition, a contrast, or a time. Ageben uses a pair for this: a **pole** word that names the link, then the stand-in **`blarl`** right after it. The pole is a relation word, so **`blarl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`blarl`** at the very end.
 
 The pole's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, so they take `/th/`. *Although*, *while*, *until*, *before*, *after*, and *so that* describe the event itself, so they are adverbs on `/h/`.
 
@@ -69,7 +69,7 @@ A pole uses the abstract sense of its root, not the everyday object, so it ends 
 You can also say:
 
 <!-- cheat-sheet: linking-clauses -->
-| Agebon | English | Same root as | Cue |
+| Ageben | English | Same root as | Cue |
 |--------|---------|--------------|-----|
 | **`thahum blarl`** | *because* | `ahul` *wall* | 🧱: the cause is what the result sits on |
 | **`thohem blarl`** | *if* | `ohel` *door* | 🚪: walk through only if it opens |
@@ -83,7 +83,7 @@ You can also say:
 | **`halam blarl`** | *after* | `alal` *sand* | ⌛: the sand has already run through |
 | **`hovam blarl`** | *so that* / *in order to* | `oval` *goal* | 🥅: you act so the shot counts |
 
-A command or request makes no claim, so an *if* pole on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Agebon keeps the usual order, with **`blarl`** last.
+A command or request makes no claim, so an *if* pole on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Ageben keeps the usual order, with **`blarl`** last.
 
 > `yol vowurol thohem blarl zalazun vehohel.`
 >
@@ -143,7 +143,7 @@ For *as soon as* / *once*, keep **`halam`** *after* and put the haste word **`wa
 
 *Since* meaning *because* is **`thahum blarl`**.
 
-Agebon verbs have no past or future form. *Before*, *after*, *while*, and *until* place this event in time relative to the next sentence.
+Ageben verbs have no past or future form. *Before*, *after*, *while*, and *until* place this event in time relative to the next sentence.
 
 ### So that (*in order to*) {#so-that}
 
@@ -157,7 +157,7 @@ English *so that* names the outcome an event aims at (*walks so that Alazun sits
 >
 > "Azozon walks so that Alazun sits."
 
-English *in order to* drops the person who sits. Agebon still names them in the inner `/z/`:
+English *in order to* drops the person who sits. Ageben still names them in the inner `/z/`:
 
 > `zazozon vowurol hovam blarl zazozon vehohel.`
 >
@@ -191,7 +191,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *guard* | `agayul` | 💂 |
 | *see* | `vayebel` | 👁️ from *eye* |
@@ -207,7 +207,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -218,7 +218,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *haste* | `hadurom` |
 | *angry* | `onumul` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Azozon tells Alazun that Ahelan peeks.*
 
@@ -272,7 +272,7 @@ z-guard | v-scream . z-Azozon | v-tell | b-guard
 z-Alazun | v-scream | [h-so-that | bl-that-clause] | z-guard | v-run
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zahelan veyamul. xahom zagayul veruvol.`
 

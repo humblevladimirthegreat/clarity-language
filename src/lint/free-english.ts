@@ -1,11 +1,11 @@
 /**
  * Free English lines on grammar pages ([glosses.md § sentence and note](../../docs/meta/glosses.md#free-english-sentence-and-note)):
  * a loose sentence in `"…"` (italics `*…*` in a checkpoint), then at most one plain-English note
- * in parentheses after it. The extractor returns every free English line with the Agebon it
+ * in parentheses after it. The extractor returns every free English line with the Ageben it
  * translates; the lint checks the shape, parentheses inside the sentence, and what a note may hold.
  */
 import type { ClassifyTables } from "../parse/classify.js";
-import { classifyAgebonSpan } from "./agebon-docs.js";
+import { classifyAgebenSpan } from "./ageben-docs.js";
 import { looksLikeMorphLine, morphGlossLine } from "../parse/morph-gloss.js";
 import { practiceItems, type PracticeItem } from "./practice-items.js";
 import { glossLabels } from "./terminology-docs.js";
@@ -18,8 +18,8 @@ export type FreeEnglishKind = "example" | "en-ag" | "ag-en" | "pick" | "fix" | "
 
 export type FreeEnglishLine = {
   kind: FreeEnglishKind;
-  /** The Agebon it translates (a dialogue block's lines joined), or null when the item has none. */
-  agebon: string | null;
+  /** The Ageben it translates (a dialogue block's lines joined), or null when the item has none. */
+  ageben: string | null;
   morph: string | null;
   /** The line as written: the quote or italics and anything after them. */
   text: string;
@@ -43,11 +43,11 @@ export type FreeEnglishSplit = {
   join: "one" | "alternatives" | "turns";
 };
 
-/** One blockquote whose first non-empty row is Agebon, with its free English rows. */
+/** One blockquote whose first non-empty row is Ageben, with its free English rows. */
 export type ExampleBlock = {
-  agebon: string;
+  ageben: string;
   morph: string | null;
-  /** Line index of the first Agebon row. */
+  /** Line index of the first Ageben row. */
   line: number;
   free: { text: string; index: number }[];
 };
@@ -131,7 +131,7 @@ export function extraParens(sentence: string, gloss: string): number {
   return Math.max(0, parenGroups(sentence) - letters - spans);
 }
 
-/** Agebon in a backtick span (optionally followed by `.`), or in `<code>` with entities. */
+/** Ageben in a backtick span (optionally followed by `.`), or in `<code>` with entities. */
 function unwrapCode(text: string): string | null {
   const m = text.match(/^`([^`]+)`\.?$/);
   if (m) return m[1]!;
@@ -140,7 +140,7 @@ function unwrapCode(text: string): string | null {
 }
 
 /**
- * Example blockquotes: one or more Agebon rows first (a dialogue block has several), then any
+ * Example blockquotes: one or more Ageben rows first (a dialogue block has several), then any
  * morph line and quoted free English rows. Spoken (🔊) rows are skipped.
  */
 export function exampleBlocks(markdown: string): ExampleBlock[] {
@@ -165,16 +165,16 @@ export function exampleBlocks(markdown: string): ExampleBlock[] {
       if (text && !text.startsWith("🔊")) rows.push({ text, index: starts[i]! + raw.indexOf(text), line: i });
       i += 1;
     }
-    const agebon: string[] = [];
+    const ageben: string[] = [];
     for (const row of rows) {
       const code = unwrapCode(row.text);
       if (code == null) break;
-      agebon.push(code);
+      ageben.push(code);
     }
-    if (agebon.length === 0) continue;
-    const morphRow = rows.slice(agebon.length).find((row) => looksLikeMorphLine(row.text));
+    if (ageben.length === 0) continue;
+    const morphRow = rows.slice(ageben.length).find((row) => looksLikeMorphLine(row.text));
     out.push({
-      agebon: agebon.join(" "),
+      ageben: ageben.join(" "),
       morph: morphRow?.text ?? null,
       line: rows[0]!.line,
       free: rows.filter((row) => row.text.startsWith('"')).map(({ text, index }) => ({ text, index })),
@@ -195,15 +195,15 @@ function promptEnglish(item: PracticeItem, markdown: string): { text: string; in
   return text ? { text, index: item.prompt.start + m[0].length } : null;
 }
 
-function spoilerAnswer(item: PracticeItem): { agebon: string | null; morph: string | null } {
-  const at = item.spoiler.findIndex((line) => line.kind === "agebon");
-  if (at < 0) return { agebon: null, morph: null };
+function spoilerAnswer(item: PracticeItem): { ageben: string | null; morph: string | null } {
+  const at = item.spoiler.findIndex((line) => line.kind === "ageben");
+  if (at < 0) return { ageben: null, morph: null };
   const next = item.spoiler.slice(at + 1).find((line) => line.kind !== "speech");
   const morph = next?.kind === "text" && looksLikeMorphLine(next.text) ? next.text : null;
-  return { agebon: item.spoiler[at]!.text, morph };
+  return { ageben: item.spoiler[at]!.text, morph };
 }
 
-/** Checkpoint English: prompts of English → Agebon, Pick one, and Fix it; answers of Agebon → English. */
+/** Checkpoint English: prompts of English → Ageben, Pick one, and Fix it; answers of Ageben → English. */
 function checkpointLines(markdown: string): FreeEnglishLine[] {
   const out: FreeEnglishLine[] = [];
   for (const item of practiceItems(markdown).items) {
@@ -217,21 +217,21 @@ function checkpointLines(markdown: string): FreeEnglishLine[] {
     }
     const english = promptEnglish(item, markdown);
     if (!english) continue;
-    const { agebon, morph } = spoilerAnswer(item);
-    out.push(line(item.type, agebon, morph, english.text, english.index, "*"));
+    const { ageben, morph } = spoilerAnswer(item);
+    out.push(line(item.type, ageben, morph, english.text, english.index, "*"));
   }
   return out;
 }
 
 function line(
   kind: FreeEnglishKind,
-  agebon: string | null,
+  ageben: string | null,
   morph: string | null,
   text: string,
   index: number,
   delimiter: '"' | "*",
 ): FreeEnglishLine {
-  return { kind, agebon, morph, text, index, delimiter, split: splitFreeEnglish(text, delimiter) };
+  return { kind, ageben, morph, text, index, delimiter, split: splitFreeEnglish(text, delimiter) };
 }
 
 /** Cells of a pipe-table row, split on `|` outside backticks and not escaped. */
@@ -275,23 +275,23 @@ function cellPieces(cell: string): { text: string; offset: number }[] {
   return out.filter((piece) => piece.text);
 }
 
-/** The Agebon in each piece of a cell, or null unless every span is a phrase or sentence. */
-function translatedAgebon(cell: string): string[] | null {
+/** The Ageben in each piece of a cell, or null unless every span is a phrase or sentence. */
+function translatedAgeben(cell: string): string[] | null {
   const pieces = cellPieces(cell).map((piece) => [...piece.text.matchAll(/`([^`]+)`/g)].map((m) => m[1]!));
   if (pieces.length === 0 || pieces.some((spans) => spans.length === 0)) return null;
-  if (!pieces.flat().every((span) => ["phrase", "sentence"].includes(classifyAgebonSpan(span)))) return null;
+  if (!pieces.flat().every((span) => ["phrase", "sentence"].includes(classifyAgebenSpan(span)))) return null;
   return pieces.map((spans) => spans.join(" "));
 }
 
 /**
- * Table cells that translate an Agebon phrase or sentence
+ * Table cells that translate an Ageben phrase or sentence
  * ([glosses.md § grammar-table gloss](../../docs/meta/glosses.md#grammar-table-gloss-free-english-only)):
  * an italic **English…**, **Gloss**, or **Free English** cell in a row whose **Example**,
- * **Examples**, **Agebon**, or **Form** cell holds only phrases and sentences, outside
+ * **Examples**, **Ageben**, or **Form** cell holds only phrases and sentences, outside
  * `<!-- generated -->` blocks. A single word's senses (`*here*, *this*`), templates, and cells not
  * in italics are glosses or descriptions, not free English, and are skipped; so is an English
- * column left of the Agebon, which keys a lookup by English job. A cell holding several
- * examples (` · ` or `; `) gives one line per piece, paired with the matching Agebon piece when
+ * column left of the Ageben, which keys a lookup by English job. A cell holding several
+ * examples (` · ` or `; `) gives one line per piece, paired with the matching Ageben piece when
  * the counts agree.
  */
 export function tableEnglish(markdown: string): FreeEnglishLine[] {
@@ -313,17 +313,17 @@ export function tableEnglish(markdown: string): FreeEnglishLine[] {
       continue;
     }
     if (/^\|[\s|:-]+\|?\s*$/.test(row)) continue;
-    const source = header.findIndex((name) => /^(Example|Examples|Agebon|Form)$/.test(name));
+    const source = header.findIndex((name) => /^(Example|Examples|Ageben|Form)$/.test(name));
     if (source < 0) continue;
     const cells = tableCells(row);
-    const agebon = translatedAgebon(cells[source]?.text ?? "");
-    if (!agebon) continue;
+    const ageben = translatedAgeben(cells[source]?.text ?? "");
+    if (!ageben) continue;
     header.forEach((name, column) => {
       const cell = cells[column];
       if (column < source || !/^(English|Gloss|Free English)/.test(name) || !cell?.text.startsWith("*")) return;
       const pieces = cellPieces(cell.text);
       pieces.forEach((piece, n) => {
-        const text = pieces.length === agebon.length ? agebon[n]! : agebon.join(" ");
+        const text = pieces.length === ageben.length ? ageben[n]! : ageben.join(" ");
         out.push(line("table", text, null, piece.text, at + cell.offset + piece.offset, "*"));
       });
     });
@@ -335,7 +335,7 @@ export function tableEnglish(markdown: string): FreeEnglishLine[] {
 export function extractFreeEnglish(markdown: string): FreeEnglishLine[] {
   const out: FreeEnglishLine[] = [];
   for (const block of exampleBlocks(markdown)) {
-    for (const free of block.free) out.push(line("example", block.agebon, block.morph, free.text, free.index, '"'));
+    for (const free of block.free) out.push(line("example", block.ageben, block.morph, free.text, free.index, '"'));
   }
   out.push(...checkpointLines(markdown));
   return out.sort((a, b) => a.index - b.index);
@@ -383,7 +383,7 @@ export type FreeEnglishFinding = {
 /** Labels and grammar terms in a note, as findings without an index. */
 export function noteFindings(note: string, labels: ReadonlySet<string>): Omit<FreeEnglishFinding, "index">[] {
   const out: Omit<FreeEnglishFinding, "index">[] = [];
-  if (/`|<code>/.test(note)) out.push({ kind: "note-form", detail: "the note quotes an Agebon form; say what it means in plain English" });
+  if (/`|<code>/.test(note)) out.push({ kind: "note-form", detail: "the note quotes an Ageben form; say what it means in plain English" });
   if (/(?<!\S)\/[a-zɡθ]{1,3}\/(?!\w)/.test(note)) out.push({ kind: "note-form", detail: "the note names a sound class (`/…/`)" });
   for (const m of note.matchAll(/(?<![A-Za-z])[A-Z][A-Z-]*[A-Z](?![A-Za-z])/g)) {
     if (labels.has(m[0])) out.push({ kind: "note-label", detail: `the note uses the gloss label ${m[0]}` });
@@ -399,18 +399,18 @@ export function noteFindings(note: string, labels: ReadonlySet<string>): Omit<Fr
   return out;
 }
 
-/** The Agebon's morph line, or null when it does not parse. */
-function glossOf(agebon: string, tables: ClassifyTables, cache: Map<string, string | null>): string | null {
-  if (!cache.has(agebon)) {
+/** The Ageben's morph line, or null when it does not parse. */
+function glossOf(ageben: string, tables: ClassifyTables, cache: Map<string, string | null>): string | null {
+  if (!cache.has(ageben)) {
     let gloss: string | null;
     try {
-      gloss = morphGlossLine(agebon, tables, { strict: true });
+      gloss = morphGlossLine(ageben, tables, { strict: true });
     } catch {
       gloss = null;
     }
-    cache.set(agebon, gloss);
+    cache.set(ageben, gloss);
   }
-  return cache.get(agebon)!;
+  return cache.get(ageben)!;
 }
 
 type Checks = { labels: ReadonlySet<string>; tables: ClassifyTables; cache: Map<string, string | null> };
@@ -429,8 +429,8 @@ function lineFindings(free: FreeEnglishLine, checks: Checks, notes: boolean): Fr
     ];
   }
   const out: FreeEnglishFinding[] = [];
-  if (free.agebon != null && split.parts.some((part) => part.includes("("))) {
-    const gloss = glossOf(free.agebon, checks.tables, checks.cache);
+  if (free.ageben != null && split.parts.some((part) => part.includes("("))) {
+    const gloss = glossOf(free.ageben, checks.tables, checks.cache);
     const extra = gloss == null ? 0 : extraParens(split.parts.join(" "), gloss);
     if (extra > 0) {
       out.push({

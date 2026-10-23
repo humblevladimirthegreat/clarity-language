@@ -12,7 +12,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -55,7 +55,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *relatedness* | `awel` |
 | *PATTERN* | `thubom` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Ahelan climbs. It follows that Ahelan doesn't swim.*
 
@@ -159,7 +159,7 @@ x-Alazun | z-TOPIC | v-sit
 **Rule:** [The topic pronoun](topic.md#topic-pronoun)
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zahelan dudehal vayebel. zahelan vayeber dobowal.`
 

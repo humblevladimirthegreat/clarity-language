@@ -24,7 +24,7 @@ function plantKind(w: WordSense): PlantKind | undefined {
 }
 
 /** One draft per word of the answer that can carry a planted error. */
-export function plantErrors(agebon: string, words: readonly WordSense[]): Plant[] {
+export function plantErrors(ageben: string, words: readonly WordSense[]): Plant[] {
   const out: Plant[] = [];
   const seen = new Set<string>();
   for (const w of words) {
@@ -33,8 +33,8 @@ export function plantErrors(agebon: string, words: readonly WordSense[]): Plant[
     seen.add(w.raw);
     const to = `${w.raw.slice(0, -1)}${w.side === "concrete" ? ENDING.abstract : ENDING.concrete}`;
     const at = new RegExp(`(?<![a-z])${w.raw}(?![a-z])`);
-    if (!at.test(agebon)) continue;
-    out.push({ kind, draft: agebon.replace(at, to), from: w.raw, to, side: w.side, ...(w.english ? { english: w.english } : {}) });
+    if (!at.test(ageben)) continue;
+    out.push({ kind, draft: ageben.replace(at, to), from: w.raw, to, side: w.side, ...(w.english ? { english: w.english } : {}) });
   }
   return out;
 }

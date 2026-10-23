@@ -95,7 +95,7 @@ describe("translation prompt core", () => {
 });
 
 describe("doc examples", () => {
-  it("joins a dialogue block's Agebon lines and skips spoken lines", () => {
+  it("joins a dialogue block's Ageben lines and skips spoken lines", () => {
     const md = [
       "> `zazozon veduyol.`",
       "> `zwuzeduyor vezuvel.`",
@@ -110,25 +110,25 @@ describe("doc examples", () => {
       '> "Dogs walk."',
     ].join("\n");
     assert.deepEqual(docExamples(md), [
-      { agebon: "zazozon veduyol. zwuzeduyor vezuvel.", free: '"Azozon teaches. The one teaching sleeps."', line: 1 },
+      { ageben: "zazozon veduyol. zwuzeduyor vezuvel.", free: '"Azozon teaches. The one teaching sleeps."', line: 1 },
     ]);
   });
 
   it("keeps parentheses inside the quotes only for an aside span", () => {
-    const plain = examplePair({ agebon: "zazozon vowurol.", free: '"Azozon walks (quietly)."', line: 1 }, "x.md:1", tables);
+    const plain = examplePair({ ageben: "zazozon vowurol.", free: '"Azozon walks (quietly)."', line: 1 }, "x.md:1", tables);
     assert.equal(plain, null);
-    const aside = examplePair({ agebon: "zazozon vowurol th(hugowul).", free: '"Azozon walks (quietly)."', line: 1 }, "x.md:1", tables);
+    const aside = examplePair({ ageben: "zazozon vowurol th(hugowul).", free: '"Azozon walks (quietly)."', line: 1 }, "x.md:1", tables);
     assert.ok(aside?.gloss.includes("ASIDE["));
   });
 
   it("reads table rows with italic English", () => {
     const md = ["| Job | Example | English |", "|------|---------|---------|", "| x | `zazozon vowurol.` | *Azozon walks.* (alone) |"].join("\n");
-    assert.deepEqual(tableExamples(md), [{ agebon: "zazozon vowurol.", free: "*Azozon walks.* (alone)", line: 3, delimiter: "*" }]);
+    assert.deepEqual(tableExamples(md), [{ ageben: "zazozon vowurol.", free: "*Azozon walks.* (alone)", line: 3, delimiter: "*" }]);
     const row = examplePair(tableExamples(md)[0]!, "x.md:3", tables);
     assert.deepEqual([row?.sentence, row?.note], ["Azozon walks.", "alone"]);
   });
 
-  it("reads Agebon → English checkpoint answers as the test set", () => {
+  it("reads Ageben → English checkpoint answers as the test set", () => {
     const answers = checkpointAnswers(PRACTICE);
     assert.equal(answers.length, 3);
     assert.ok(answers.every((answer) => answer.delimiter === "*" && answer.free.startsWith("*")));
@@ -137,7 +137,7 @@ describe("doc examples", () => {
   });
 
   it("fills a SELF slot with the speaker", () => {
-    const self = examplePair({ agebon: "SELFxan.", free: '"I have time; we can stay."', line: 1 }, "x.md:1", tables);
+    const self = examplePair({ ageben: "SELFxan.", free: '"I have time; we can stay."', line: 1 }, "x.md:1", tables);
     assert.match(self?.gloss ?? "", /^speaker/);
   });
 
@@ -150,7 +150,7 @@ describe("doc examples", () => {
 });
 
 function pair(gloss: string, constructions: string[], note: string | null = null): ExamplePair {
-  return { agebon: "", gloss, sentence: gloss, note, constructions, labels: glossLabels(gloss), source: "x.md:1" };
+  return { ageben: "", gloss, sentence: gloss, note, constructions, labels: glossLabels(gloss), source: "x.md:1" };
 }
 
 describe("selectExamples", () => {

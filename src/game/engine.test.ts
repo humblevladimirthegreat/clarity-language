@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
 import { loadDefaultTables } from "../parse/index.js";
-import { glossToAgebon } from "../parse/gloss-inverse.js";
+import { glossToAgeben } from "../parse/gloss-inverse.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { buildGameData, fullGlossIndex } from "./build.js";
 import { createEngine, type Engine } from "./engine.js";
@@ -27,16 +27,16 @@ const tables = loadDefaultTables();
 const data = buildGameData(tables);
 const index = fullGlossIndex(tables);
 const lex = gameLexicon(tables);
-const spell = (gloss: string) => glossToAgebon(expandGloss(gloss, lex), tables, index);
+const spell = (gloss: string) => glossToAgeben(expandGloss(gloss, lex), tables, index);
 const fresh = () => createEngine(tables, data);
 const play = (engine: Engine, ...glosses: string[]) => glosses.map((gloss) => engine.turn(spell(gloss)));
 const kinds = (result: TurnResult) => result.lines.map((line) => line.kind);
 
-/** Every Agebon line the game wrote this turn. */
+/** Every Ageben line the game wrote this turn. */
 function written(lines: Line[]): string[] {
   return lines.flatMap((line) => {
-    if (line.kind === "speech" || line.kind === "recast") return [line.spoken.agebon];
-    if ((line.kind === "narration" || line.kind === "refusal") && line.spoken) return [line.spoken.agebon];
+    if (line.kind === "speech" || line.kind === "recast") return [line.spoken.ageben];
+    if ((line.kind === "narration" || line.kind === "refusal") && line.spoken) return [line.spoken.ageben];
     return [];
   });
 }
@@ -53,13 +53,13 @@ describe("walkthroughs", () => {
     });
   }
 
-  it("writes only Agebon that parses one way", () => {
+  it("writes only Ageben that parses one way", () => {
     for (const quest of QUESTS) {
       const engine = fresh();
       const lines = [...engine.opening(), ...quest.walkthroughs[0]!.flatMap((gloss) => engine.turn(spell(gloss)).lines)];
-      for (const agebon of written(lines)) {
-        const result = parseWithTables(agebon, tables, { checkAmbiguity: true });
-        assert.deepEqual(result.ambiguity, [], agebon);
+      for (const ageben of written(lines)) {
+        const result = parseWithTables(ageben, tables, { checkAmbiguity: true });
+        assert.deepEqual(result.ambiguity, [], ageben);
       }
     }
   });
@@ -103,7 +103,7 @@ describe("recasts", () => {
     assert.ok(entity(engine.world, "door").state.includes("open"));
   });
 
-  it("reads a typed gloss as the Agebon it glosses", () => {
+  it("reads a typed gloss as the Ageben it glosses", () => {
     const result = fresh().turn("z-speaker d-door v-see");
     assert.equal(result.outcome, "ok");
     assert.equal(result.ran?.replace(/\.$/, ""), spell("z-speaker | d-door | v-see"));

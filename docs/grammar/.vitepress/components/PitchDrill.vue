@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { PITCH_BASE } from '@vowel-pitch'
 
-const STORAGE_KEY = 'agebon.pitchBase'
+const STORAGE_KEY = 'ageben.pitchBase'
 /** The home note (the note `a` is said on), shared by every drill on the page and kept in the browser. */
 const sharedBase = ref(PITCH_BASE)
 </script>

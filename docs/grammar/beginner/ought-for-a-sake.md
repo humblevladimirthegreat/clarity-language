@@ -14,7 +14,7 @@ The ending says why you think the move is welcome. Use **-l** when the person in
 **Compare with:** a [command](speech-moves.md#speech-act-beginner) **`yol`** tells someone to act outright, without naming the sake or why the move is wanted. **`the`** is an *ought* tied to a sake (*ought to, to advance this sake*), with the reason on the ending.
 
 <!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…thel` | the person invited this kind of move | *invited* | **-l** ≈ lasting: their invitation stands |
 | `…them` | an unsolicited offer meant to serve the sake | *offered* | **-m** ≈ open offer |
@@ -48,13 +48,13 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *relatedness* | `awel` | 🪢 from *knot* |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -65,7 +65,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *tell* | `vezuyol` |
 | *cook* | `vuguyol` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Ahelan ought to sit; it would help their health.* (unasked advice)
 
@@ -91,7 +91,7 @@ z-Ahelan | v-sing | [th-physical-ought-invited | bl-←episode-agent.self]
 z-Alazun | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zazozon vezuyol thawethem blwuzor.`
 

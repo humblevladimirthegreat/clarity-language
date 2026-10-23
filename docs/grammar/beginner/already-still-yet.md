@@ -6,9 +6,9 @@ band: beginner
 
 ### Already, still, not yet, no longer {#phasal}
 
-English *already*, *still*, *not yet*, and *no longer* do not place an event in time. Each compares what is true **now** with a change: has it come, or not? That is about how things stand now, not when something happened, so Agebon uses four `/h/` words, not a tense. (cue: each root pictures the stage the change is at)
+English *already*, *still*, *not yet*, and *no longer* do not place an event in time. Each compares what is true **now** with a change: has it come, or not? That is about how things stand now, not when something happened, so Ageben uses four `/h/` words, not a tense. (cue: each root pictures the stage the change is at)
 
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`havem`** | the change has happened | *already* | `avel` *hatch* | 🐣: the chick is already out |
 | **`hawum`** | the state goes on | *still* | `awul` *anchor* | ⚓: the ship is held where it was |
@@ -36,7 +36,7 @@ English *already*, *still*, *not yet*, and *no longer* do not place an event in 
 The ending says how settled the current stage is, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). Use **-m** when it could change back, or when you do not know. Use **-l** when it is not expected to. Use **-r** when it holds only for now: it is likely to change back soon, or, on *not yet*, the change may never come.
 
 <!-- cheat-sheet: knowing-intending -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `havel` | done, and it will stay done | *already, for good* |
 | `hawul` | goes on, with no end in sight | *still, and it will keep on* |
@@ -91,7 +91,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *already* | `havem` | 🐣 from *hatch* |
 | *still* | `hawum` | ⚓ from *anchor* |
@@ -99,7 +99,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -112,7 +112,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *not yet* | `helom` |
 | *sleepy* | `uzemel` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Azozon is still walking.*
 
@@ -138,7 +138,7 @@ z-Azozon | h-already | v-sing | h-sometimes
 z-Azozon | h-no-longer | v-walk | [at | b-school]
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zalazun helol vudurul.`
 

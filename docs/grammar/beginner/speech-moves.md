@@ -81,7 +81,7 @@ When the turn is not a statement, put its act word immediately before the body:
 The vowel picks the act. Its cues hang on the join leftover-list: **a** add a claim, **o** rank an instruction, **e** collapse to an answer, **u** take the act away.
 
 <!-- cheat-sheet: talking -->
-| Agebon | Use | Cue |
+| Ageben | Use | Cue |
 |--------|-----|-----|
 | **`yal`** | statement (often omitted) | **a** ≈ add (hold the claim) |
 | **`yel`** | question: yes/no and fill-in ask | **e** ≈ choice (collapse to an answer) |
@@ -136,7 +136,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *surprise* | `emel` | 😮 |
 | *sit* | `vehohel` | 🪑 from *chair* |
@@ -145,7 +145,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -155,7 +155,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *very* | `welazem` |
 | *angry* | `onumul` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Ahelan!* (calling Ahelan)
 
@@ -213,7 +213,7 @@ A prohibition keeps its verb late, as in a statement; only a command starts with
 **Also correct:** `yul varal hadurom.`
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `yazozon.`
 

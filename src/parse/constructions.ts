@@ -19,7 +19,7 @@ import type { ExtraNounHook } from "./hook-compounds.js";
 import type { AnaphorKind, Ending, LexReading, MorphWordFamily, PointerVowel, Pos, RolePart, ScopeVowel, XFamily } from "./types.js";
 
 /**
- * `summary` is for maintainers (Agebon terms allowed). `reader`, when set, explains the
+ * `summary` is for maintainers (Ageben terms allowed). `reader`, when set, explains the
  * construction in gloss notation to someone who knows only the translation prompt's fixed
  * core ([llm-prompt.ts](./llm-prompt.ts)); only constructions a careful reader still misreads get one.
  */
@@ -424,7 +424,7 @@ export const NUMBER_FEATURE_CONSTRUCTIONS = {
     anchor: "numbers-applied.md#letter-codes",
     summary: "code with letters",
     reader:
-      "A `_` code may hold letters as well as digits, read as the letters themselves: `_b12` = B12, `_4b` = 4B, `_v16` = F-16 (Agebon `v`, `b`, `d`, `g`, `z` stand for English f, p, t, k, s). With `@` (`.named`) and only letters it is usually a title's initials (`@_nl` = the NL, short for a long two-root title).",
+      "A `_` code may hold letters as well as digits, read as the letters themselves: `_b12` = B12, `_4b` = 4B, `_v16` = F-16 (Ageben `v`, `b`, `d`, `g`, `z` stand for English f, p, t, k, s). With `@` (`.named`) and only letters it is usually a title's initials (`@_nl` = the NL, short for a long two-root title).",
   },
   calendar: {
     anchor: "digit-strings.md#time",

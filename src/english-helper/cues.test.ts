@@ -12,7 +12,7 @@ const page = `# Saying it
 
 ### *by*
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | tool (*writes by a hammer*) | hook **\`ael\`** + \`/b/\` | [Hooks](hooks.md#extra-noun) |
 | place (*by the station*) | hook **\`om\`** + \`/b/\` | [Hooks](hooks.md#extra-noun) |
@@ -21,14 +21,14 @@ const page = `# Saying it
 
 ### Place {#place}
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *next to* / *beside* (*sits beside me*) | hook **\`om\`** + \`/b/\` | [Here](hooks.md#deixis) |
 | *X and Y, respectively* | **\`wubam\`** | [Respectively](rank-joins.md#respectively) |
 
 ### Practice {#practice}
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *dog* | \`odozel\` | 🐕 |
 `;
@@ -64,7 +64,7 @@ describe("buildCueIndex with section titles", () => {
 ### Except (\`ul\`)
 <a id="except"></a>
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** | add a member | *including*: A, including B | **a** ≈ add |
 | **u** | subtract | *except*: A except B | **u** ≈ undo |

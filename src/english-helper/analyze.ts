@@ -1,7 +1,7 @@
 /**
- * English → Agebon helper analyzer: English text → per-clause slots of root and grammar
- * suggestions. Suggestion-only: it never assembles an Agebon sentence. A word with several
- * Agebon jobs lists all of them, in table order, with their teaching links.
+ * English → Ageben helper analyzer: English text → per-clause slots of root and grammar
+ * suggestions. Suggestion-only: it never assembles an Ageben sentence. A word with several
+ * Ageben jobs lists all of them, in table order, with their teaching links.
  *
  * Data comes in as a `HelperData` (load.ts builds it from the docs and the lexicon CSVs), so
  * the analyzer itself reads no files.

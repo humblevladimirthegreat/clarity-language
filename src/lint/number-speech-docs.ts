@@ -6,7 +6,7 @@ import { toSpeechText } from "../tts/plan.js";
  * Pronunciation rows on the number pages (numbers.md, digitless-exponents.md,
  * numbers-applied.md, initials.md, numeric-derivation.md — numeric prefixes are spelled out, so it rarely needs rows).
  *
- * Every Agebon example line whose speech differs from its writing (shorthand
+ * Every Ageben example line whose speech differs from its writing (shorthand
  * number words) carries a `🔊 \`spoken\`` row directly underneath. Spoken →
  * written drills put the 🔊 row on the prompt instead. Tables with a written
  * column and a **Spoken** column start each spoken cell with `\`spoken\``.
@@ -25,14 +25,14 @@ export const NUMBER_SPEECH_FILES = [
 
 export type NumberSpeechFinding = {
   line: number;
-  agebon: string;
+  ageben: string;
   expected: string;
   documented: string | null;
 };
 
 const ITEM_START_RE = /^\*\*\d+\.\*\*\s*/;
 const SPEECH_ROW_RE = new RegExp(`^${SPEECH_MARK}\\s+\`([^\`]+)\``);
-const WRITTEN_COL_RE = /^(?:written|writing|preferred writing|agebon)$/i;
+const WRITTEN_COL_RE = /^(?:written|writing|preferred writing|ageben)$/i;
 const SPOKEN_COL_RE = /^(?:spoken|speech|pronunciation)$/i;
 
 function isNumberWord(word: MorphWord): boolean {
@@ -47,10 +47,10 @@ const BOUNDARY_TEXT: Record<string, string> = {
   bang: "!",
 };
 
-/** Spoken sentence for written Agebon: number shorthand spelled out, other words as written. */
-export function spokenForm(agebon: string): string {
+/** Spoken sentence for written Ageben: number shorthand spelled out, other words as written. */
+export function spokenForm(ageben: string): string {
   let out = "";
-  for (const token of toSpeechText(agebon)) {
+  for (const token of toSpeechText(ageben)) {
     if (token.kind === "boundary") {
       out += BOUNDARY_TEXT[token.tag] ?? "";
       continue;
@@ -61,8 +61,8 @@ export function spokenForm(agebon: string): string {
 }
 
 /** True when the line contains a number word whose speech differs from its writing. */
-export function needsSpeechRow(agebon: string): boolean {
-  return normalize(spokenForm(agebon)) !== normalize(agebon);
+export function needsSpeechRow(ageben: string): boolean {
+  return normalize(spokenForm(ageben)) !== normalize(ageben);
 }
 
 function normalize(text: string): string {
@@ -73,8 +73,8 @@ function stripQuote(line: string): string {
   return line.replace(/^[ \t]*>[ \t]?/, "").trim();
 }
 
-/** Backticked line that is a whole Agebon example (optionally an **N.** prompt). */
-function agebonOnLine(text: string): string | null {
+/** Backticked line that is a whole Ageben example (optionally an **N.** prompt). */
+function agebenOnLine(text: string): string | null {
   const body = text.replace(ITEM_START_RE, "");
   const m = body.match(/^`([^`]+)`\.?$/);
   if (!m) return null;
@@ -104,11 +104,11 @@ export function lintNumberSpeechMarkdown(markdown: string): NumberSpeechFinding[
   /** Answer lines already paired with a 🔊 prompt above them. */
   const paired = new Set<number>();
 
-  const check = (lineIndex: number, agebon: string, documented: string | null): void => {
-    const expected = spokenForm(agebon);
+  const check = (lineIndex: number, ageben: string, documented: string | null): void => {
+    const expected = spokenForm(ageben);
     if (documented != null && normalize(documented) === normalize(expected)) return;
-    if (documented == null && !needsSpeechRow(agebon)) return;
-    findings.push({ line: lineIndex + 1, agebon, expected, documented });
+    if (documented == null && !needsSpeechRow(ageben)) return;
+    findings.push({ line: lineIndex + 1, ageben, expected, documented });
   };
 
   for (let i = 0; i < lines.length; i++) {
@@ -120,15 +120,15 @@ export function lintNumberSpeechMarkdown(markdown: string): NumberSpeechFinding[
     if (inFence) continue;
     const text = stripQuote(raw);
 
-    // Spoken → written prompt: the 🔊 row comes first, the answer's Agebon follows.
+    // Spoken → written prompt: the 🔊 row comes first, the answer's Ageben follows.
     if (ITEM_START_RE.test(text) && speechOnLine(text) != null) {
       const documented = speechOnLine(text)!;
       for (let j = i + 1; j < lines.length; j++) {
         const next = stripQuote(lines[j]!);
         if (isBoundary(next)) break;
-        const agebon = agebonOnLine(next);
-        if (agebon != null) {
-          check(j, agebon, documented);
+        const ageben = agebenOnLine(next);
+        if (ageben != null) {
+          check(j, ageben, documented);
           paired.add(j);
           break;
         }
@@ -136,8 +136,8 @@ export function lintNumberSpeechMarkdown(markdown: string): NumberSpeechFinding[
       continue;
     }
 
-    const agebon = agebonOnLine(text);
-    if (agebon == null || paired.has(i)) continue;
+    const ageben = agebenOnLine(text);
+    if (ageben == null || paired.has(i)) continue;
 
     // The 🔊 row is the next non-blank line in the item (a details opener may sit between).
     let documented: string | null = null;
@@ -147,7 +147,7 @@ export function lintNumberSpeechMarkdown(markdown: string): NumberSpeechFinding[
       documented = speechOnLine(next);
       break;
     }
-    check(i, agebon, documented);
+    check(i, ageben, documented);
   }
 
   findings.push(...lintSpeechTables(lines));
@@ -193,13 +193,13 @@ function lintSpeechTables(lines: string[]): NumberSpeechFinding[] {
     while (i < lines.length && isTableRow(lines[i]!) && !isDividerRow(lines[i]!)) {
       if (writtenCol >= 0 && spokenCol >= 0) {
         const cells = splitRow(lines[i]!);
-        const agebon = singleNumberWord(cells[writtenCol] ?? "");
-        if (agebon != null) {
+        const ageben = singleNumberWord(cells[writtenCol] ?? "");
+        if (ageben != null) {
           const m = (cells[spokenCol] ?? "").match(/^`([^`]+)`/);
           const documented = m ? m[1]!.trim() : null;
-          const expected = spokenForm(agebon);
+          const expected = spokenForm(ageben);
           if (documented !== expected) {
-            findings.push({ line: i + 1, agebon, expected, documented });
+            findings.push({ line: i + 1, ageben, expected, documented });
           }
         }
       }
@@ -212,7 +212,7 @@ function lintSpeechTables(lines: string[]): NumberSpeechFinding[] {
 export function formatNumberSpeechFinding(relpath: string, finding: NumberSpeechFinding): string {
   const loc = `${relpath}:${finding.line}`;
   if (finding.documented == null) {
-    return `${loc}  missing pronunciation row  \`${finding.agebon}\`  (expected ${SPEECH_MARK} \`${finding.expected}\`)`;
+    return `${loc}  missing pronunciation row  \`${finding.ageben}\`  (expected ${SPEECH_MARK} \`${finding.expected}\`)`;
   }
-  return `${loc}  pronunciation mismatch  \`${finding.agebon}\`  documented \`${finding.documented}\`, expected \`${finding.expected}\``;
+  return `${loc}  pronunciation mismatch  \`${finding.ageben}\`  documented \`${finding.documented}\`, expected \`${finding.expected}\``;
 }

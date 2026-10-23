@@ -9,7 +9,7 @@ band: beginner
 *Because* names what made the outcome happen. It does not say anyone did wrong. When you mean *it was their fault*, change the ending on the because pole. **-m** is the plain cause. **-l** says the reason broke a rule: someone did wrong. **-r** says it was one cause among others.
 
 <!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thahul`** | the reason broke a norm | *it's their fault* / *to blame* | **-l** ≈ locked on a broken rule |
 | **`thahum`** | the reason made it happen; no fault claimed | *because* | **-m** ≈ the ordinary case |
@@ -45,7 +45,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -57,7 +57,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *tell* | `vezuyol` |
 | *run* | `veruvol` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Alazun ran because Azozon poured, and Azozon was wrong to.*
 
@@ -83,7 +83,7 @@ z-Azozon | v-departure | [th-because | bl-that-clause] | z-Alazun | v-tell
 z-Azozon | v-departure | [th-because.share | bl-rain]
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zazozon vudurul thahul blarl zalazun vezuyol.`
 

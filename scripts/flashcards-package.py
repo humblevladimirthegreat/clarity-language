@@ -49,7 +49,7 @@ CSS = """
 
 MODEL = genanki.Model(
     MODEL_ID,
-    "Agebon lexicon",
+    "Ageben lexicon",
     fields=[{"name": f} for f in FIELDS],
     templates=[
         {

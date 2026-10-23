@@ -538,7 +538,7 @@ export function senseFormEnding(senseForm: string): string | null {
 }
 
 /**
- * If the query looks like a spelled Agebon word (PoS + vowel-initial sense-form
+ * If the query looks like a spelled Ageben word (PoS + vowel-initial sense-form
  * ending in a reference letter), return that PoS and the sense-form stem.
  * Otherwise pos is null and stem is the whole query.
  */

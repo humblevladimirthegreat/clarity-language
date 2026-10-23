@@ -6,12 +6,12 @@ band: beginner
 <a id="x-compounds"></a>
 <a id="compound-parser"></a>
 
-Sometimes one Agebon word is two smaller meanings with **`x`** in the middle. The last letter (**-l** / **-m** / **-n** / **-r**) is still the ending of the **whole** word. What sits left and right of that **`x`** tells you which kind of word it is.
+Sometimes one Ageben word is two smaller meanings with **`x`** in the middle. The last letter (**-l** / **-m** / **-n** / **-r**) is still the ending of the **whole** word. What sits left and right of that **`x`** tells you which kind of word it is.
 
 
 ### Two roots, one word
 
-English often treats two words as one idea (*peanut butter*), or joins two names with a hyphen. In Agebon you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md) (subject, verb, and so on). The [ending](word-endings.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
+English often treats two words as one idea (*peanut butter*), or joins two names with a hyphen. In Ageben you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md) (subject, verb, and so on). The [ending](word-endings.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
 
 > `zuwedaxubudal.`
 >
@@ -27,7 +27,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 >
 > "in love" (the crush kind)
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | full root **`x`** full root | two roots, one word | `zuwedaxubudal` *peanut butter* | **x** ≈ plus |
 
@@ -40,7 +40,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 ### Words you look up, not build
 <a id="lexical-compounds"></a>
 
-English *bedroom*, *doorbell*, and *textbook* feel like one word. Agebon lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *door* and *bell*.
+English *bedroom*, *doorbell*, and *textbook* feel like one word. Ageben lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *door* and *bell*.
 
 Inside the dictionary spelling you can still see the two old roots, with a join letter instead of **`x`**. That letter is the [word ending](word-endings.md) of the **left** root: **-l** when that piece is the everyday kind, **-m** when it is the abstract sense (named **-n** or resume **-r** if that left piece is a name or a resume). The last letter of the word is still the ending of the **whole** entry. In a sentence you add a role letter and that whole-word ending, the same way you do for *dog* or *hammer*.
 
@@ -51,7 +51,7 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 > "a doorbell"
 
 <!-- cheat-sheet: roles-comparing -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `zoheleboral` | door **-l** bell | doorbell | left piece everyday |
 | `zuzahalanal` | school **-l** book | textbook | left piece everyday |
@@ -63,10 +63,10 @@ If the pairing is not in the dictionary, either glue with **`x`** (`zuwedaxubuda
 ### One thing or two?
 <a id="compound-vs-separate"></a>
 
-Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agebon words (and a [join](joins.md) if you need *and*). *Peanut butter* is one food, so one word. *Bedroom* is also one thing, but that spelling is already in the dictionary, so there is no **`x`**.
+Ask how many things you mean. *A hammer and a wrench* is two tools, so two Ageben words (and a [join](joins.md) if you need *and*). *Peanut butter* is one food, so one word. *Bedroom* is also one thing, but that spelling is already in the dictionary, so there is no **`x`**.
 
 <!-- cheat-sheet: roles-comparing -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | two words | two things, or a property already marked another way | `zohowel zurewel zam` *a hammer and a wrench*; `zodozel gobulol` *a blue dog* (`/ɡ/`) | |
 | **`x`** in the middle | one thing; you can still hear both roots | `gagamaxolamal` *in love* (the crush kind); `zuwedaxubudal` *peanut butter*; `zazozoxalazun` (one person) | **x** ≈ plus |
@@ -84,7 +84,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *doorbell* | `oheleboral` | 🚪🔔 door **-l** bell |
 | *raincoat* | `erulalogobal` | 🌧️🧥 rain **-l** coat |
@@ -94,7 +94,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -104,7 +104,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *find* | `vumewel` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *a bell and a doorbell*
 
@@ -154,7 +154,7 @@ z-Azozon-x-Alazun
 z-Alazun | d-wood | v-see
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zalazun doheleboral vumewel.`
 

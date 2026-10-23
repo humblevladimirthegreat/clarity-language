@@ -8,7 +8,7 @@ aside: false
 The finger code is new. Its shapes and instrument layouts have not yet been tried by signers, receivers, or players, so they may change.
 :::
 
-The finger code is a way to produce Agebon with your fingers instead of your voice. Each letter is a shape: a set of raised fingers. One hand shows vowels and the other shows consonants, so a whole syllable takes one beat, with both hands at once. The same shapes can be signed in the air, pressed into another person's hands, or played on a piano or a guitar, so one chart serves all of them. The code adds no words and no grammar: anything you can say, you can sign or play.
+The finger code is a way to produce Ageben with your fingers instead of your voice. Each letter is a shape: a set of raised fingers. One hand shows vowels and the other shows consonants, so a whole syllable takes one beat, with both hands at once. The same shapes can be signed in the air, pressed into another person's hands, or played on a piano or a guitar, so one chart serves all of them. The code adds no words and no grammar: anything you can say, you can sign or play.
 
 ## Counting on your fingers {#counting}
 
@@ -63,7 +63,7 @@ The consonant hand counts from the index and the vowel hand from the pinky, so i
 
 ## One beat per syllable {#beats}
 
-Agebon syllables have a fixed shape, so the code times them the same way every time. Each syllable takes one beat, and every beat is the same length, as in [speech](/singability#rhythm-and-stress):
+Ageben syllables have a fixed shape, so the code times them the same way every time. Each syllable takes one beat, and every beat is the same length, as in [speech](/singability#rhythm-and-stress):
 
 | In speech | In the finger code |
 |-----------|--------------------|
@@ -189,7 +189,7 @@ Pick **Guitar** in [Try it](#try-it) to hear a sentence and print its tab.
 
 ## Try it {#try-it}
 
-Type Agebon, or click a sentence below, and press **Play**. Pick a channel to see or hear the same beats in that system. Click a beat to hold it and see each hand's shape. The chart below the beats lists the shapes for the channel you picked. Numerals and text in spans are skipped.
+Type Ageben, or click a sentence below, and press **Play**. Pick a channel to see or hear the same beats in that system. Click a beat to hold it and see each hand's shape. The chart below the beats lists the shapes for the channel you picked. Numerals and text in spans are skipped.
 
 <FingerCode>
 

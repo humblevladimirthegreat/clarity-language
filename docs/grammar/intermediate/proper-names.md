@@ -22,7 +22,7 @@ A brand, a product line, a work, or a yearly event counts as one named thing, ev
 
 The rest of the role map (same **-n**):
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` + **-n** | this named entity | person, place, titled work, brand or product line (*Azozon*, *Paris*, *the Odyssey*; *book by* **[Rowling]**) |
 | `/v/` + **-n** | this named event, rite, or titled action | *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]** |
@@ -51,7 +51,7 @@ What counts as one depends on what the name names:
 | a person | someone with that name (*another Azozon*) |
 
 <!-- cheat-sheet: word-shape-clause -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `dazozon` | the named thing itself | *Azozon* (the brand) |
 | `dazozoln` | one thing the name applies to | *an Azozon* |
@@ -82,7 +82,7 @@ A country root and a tradition root use all four endings, with one job each:
 > "Azozon is Japanese."
 
 <!-- cheat-sheet: word-shape-clause -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `azabanan` | the named country | *Japan* |
 | `dazabanal` | its flag | *a Japanese flag* |
@@ -111,7 +111,7 @@ A one-word name, a hyphenated name with mid-word **`x`**, and each part of a ful
 
 ### Multipart names {#multipart-names}
 
-English writes a given name and a family name as two words (*Alon Olowon*). Agebon does too. The given name fills the slot with **-n**, and the family name follows it as a `/ɡ/` word with **-n**: like a brand, a family is a named group the person falls under. Given name first is the usual order.
+English writes a given name and a family name as two words (*Alon Olowon*). Ageben does too. The given name fills the slot with **-n**, and the family name follows it as a `/ɡ/` word with **-n**: like a brand, a family is a named group the person falls under. Given name first is the usual order.
 
 > `zalon golowon vowurol.`
 >
@@ -122,7 +122,7 @@ English writes a given name and a family name as two words (*Alon Olowon*). Ageb
 The family name describes the given name, so the person is still one noun in one slot. A resume repeats the given name’s stem, so `zalor` points back to Alon Olowon, and you can drop the family name once the person is known.
 
 <!-- cheat-sheet: word-shape-clause -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `alon golowon` | citation of a full name | *Alon Olowon* |
 | `zalon golowon` | full name in a noun slot | *Alon Olowon* |
@@ -143,7 +143,7 @@ A **hyphenated name** (*Mary-Kate*, *Coffee-Tea*) is one word: roots join left t
 >
 > "Aloxolowon walks."
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `zaloxolowon` | hyphenated given name | *Aloxolowon* |
 | `zaloxolowon golowon` | hyphenated given name and a family name | *Aloxolowon Olowon* |
@@ -151,7 +151,7 @@ A **hyphenated name** (*Mary-Kate*, *Coffee-Tea*) is one word: roots join left t
 
 A business or product name uses the same pieces. A compact label is one **`x`** word. A product under a maker’s name takes the maker as its `/ɡ/` name, as a person takes a family name (*a Mustang by Ford*). A name with grammar inside it, such as a verb or *instead of*, is a [titled phrase](#titled-phrases) or a [span](/spans#when-required), where any role letter can appear.
 
-A nativized loan (a foreign word adapted into an Agebon root, plus an ordinary ending) takes the same four endings as any content word. A **lexical compound** also fills one slot: it is one stem, written without mid-word **`x`** (`zoyahehal` *bedroom*).
+A nativized loan (a foreign word adapted into an Ageben root, plus an ordinary ending) takes the same four endings as any content word. A **lexical compound** also fills one slot: it is one stem, written without mid-word **`x`** (`zoyahehal` *bedroom*).
 
 **Compare with:** `zalon golowon.` alone is a sentence: *Alon is an Olowon* ([classification](/predication#classification)). The citation `alon golowon` has no role letter, so it only names. Two people in one role take a [join](/joins#right-close) after them (`zalon zolowon zal`).
 
@@ -160,7 +160,7 @@ A nativized loan (a foreign word adapted into an Agebon root, plus an ordinary e
 
 Beginner used the ending to say how to take a content word’s meaning. On an `/x/` continue word, the ending instead picks what the word does:
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | one of six linkers + **-m** (firm **-l** on three) | glue one finished sentence to the next | *but*, *therefore*, … |
 | other `/x/` root + **-l** / **-m** / **-n** | introduce a topic | *now, about X*; *let’s now talk about X* |
@@ -181,7 +181,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *hospital-bed* (ward name) | `uhahaxoyahen` | 🏥 *hospital* **x** 🛏️ *bed*: one ward's name |
 | *Temperature* (named standard) | `hoveron` | 🌡️ from *thermometer* |
@@ -190,7 +190,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -203,7 +203,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *big* | `gelazem` |
 | *Japanese* | `azabanam` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Azozon sits according to Hospital.* (the named frame)
 
@@ -255,7 +255,7 @@ z-Ahelan.instance | g-big
 z-Alazun | d-japan-flag | v-see
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zalazun varuyol hoveron.`
 

@@ -8,7 +8,7 @@ To name a kind of thing by a number idea, put a [number](/numbers) body in front
 
 ### Numeric prefixes (number + `x` + `ROOT`) {#numeric-derivation}
 
-English often names a *kind of thing* with a number idea baked in (*essence of love*, *a three-part dialogue*, *a quasi-friend*, *specimen #1*). In Agebon you write the role letter, a number body, **`x`**, then the content root and its ending. The number body has no role letter and no ending of its own; the role letter and one [word ending](/word-endings) belong to the **whole word**. You can then use that word in any role: the number describes the kind, not how many there are. (cue: the hyphen in *tri-dialogue*)
+English often names a *kind of thing* with a number idea baked in (*essence of love*, *a three-part dialogue*, *a quasi-friend*, *specimen #1*). In Ageben you write the role letter, a number body, **`x`**, then the content root and its ending. The number body has no role letter and no ending of its own; the role letter and one [word ending](/word-endings) belong to the **whole word**. You can then use that word in any role: the number describes the kind, not how many there are. (cue: the hyphen in *tri-dialogue*)
 
 > `zrawaxolamal.`
 >
@@ -28,7 +28,7 @@ PoS + NUM + {x|mx} + ROOT + {-l|-m|-n|-r}
 | **ROOT** | Any content root (`V(CV)+`), or an ordinary [**`x`** compound](/compound-families#ordinary-compound-order), whose last root is the kind | |
 | **Ending** | The root's sense, as on any **`x`** compound: **-l** its everyday sense, **-m** its abstract sense; or **-n** a name, **-r** a resume | `zrawaxolamam` is the essence of love in its abstract sense, *cherished* |
 
-The **Agebon** columns below write the shape in shorthand (`+exROOT`), but a real word is always spelled out (`zrawaxolamal`): shorthand is for free numbers only.
+The **Ageben** columns below write the shape in shorthand (`+exROOT`), but a real word is always spelled out (`zrawaxolamal`): shorthand is for free numbers only.
 
 An **`m`** before the **`x`** makes the number approximate:
 
@@ -46,7 +46,7 @@ A body with digits has one digit only: **`+N` / `-N`** (how many parts) or **`#N
 
 The digitless number words (plus or minus infinity, first or last place, *more than one*) also work as prefixes. Before a root, they say **what the kind is** at a limit: its essence, its smallest grain, its absence, its first or final form, many of it, or its undoing.
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`+exROOT`** | essence / absolute / pure type of ROOT | `zrawaxolamal`: *essence of love* | **+e** = plus with no cap: nothing left to add |
 | **`+e-xROOT`** | grain / seed / infinitesimal of ROOT | `zrawuxolamal`: *grain of love* | **+e-** = that same plus, at the tiny end: a speck |
@@ -87,12 +87,12 @@ For *quasi-* with a **number of parts** (*as if one*, *as if a pair*), write **`
 
 **Compare with:** with no root, **`gruwubal`** / **`gruwudol`** are real negative amounts in the order-of-magnitude bands −1 / −2.
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`-e-1xROOT`** | quasi-unit / as-if singleton: unit-shaped without being a real one (twin **`+1xROOT`**) | `zruwubaxadowem`: *a quasi-single voice* / as-if primary voice | **-e-** outline + **1** = as-if one |
 | **`-e-2xROOT`** | quasi-dual / imaginary duality: pair/mutual *as if*, not real reciprocity (twin **`+2xROOT`**) | `gruwudoxebewom`: *quasi-mutual commitment*; `zruwudoxehom`: *quasi-pair / as-if partnership* | **-e-** outline + **2** = as-if a pair |
 
-| Agebon | Use |
+| Ageben | Use |
 |--------|-----|
 | **`+2xROOT`** | real dual / mutual structure |
 | **`-2xROOT`** | privative: non-reciprocal / one-sided |
@@ -113,7 +113,7 @@ English *a pair of…*, *three-part…*, *primary…* can say **how many parts t
 >
 > "Azozon sees mutual commitment."
 
-| Agebon | Use | English | `-N` | Privative English | Cue |
+| Ageben | Use | English | `-N` | Privative English | Cue |
 |--------|-----|---------|------|-------------------|-----|
 | **`+1xROOT`** | unit / primary / singleton | `zrabaxadowem`: *a single / primary voice*; SI measure nouns use published unit metaphors instead ([measure phrases](/numbers-applied#measure-phrases)) | `zrubaxadowem` | *an indistinct / non-singular voice* | **1** = one piece |
 | **`+2xROOT`** | dual / mutual / reciprocal / pair | `gradoxebewom`: *mutual commitment* | `grudoxebewom` | *one-sided commitment* | **2** = two sides |
@@ -159,7 +159,7 @@ With a final **-m**, the wipe is only approximate: nearly emptied.
 
 The [zero × exponent](special-values.md#zero-exponent) bodies from free numbers also work before a root. There they say the kind is **wiped out, or leaves a residue**, instead of naming an amount. Free **`vramowal`** is *annihilate* with no kind attached; **`vramowaxodoram`** is *annihilate the score*.
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`+0exROOT`** | total null / absolute wipe of the kind | `vramowaxodoram`: *annihilate the score* (kind); `zramowaxaram`: *a totally wiped debt-kind* | **0** empty × **e** unbounded = wipe with no leftover scale |
 | **`+0e-xROOT`** | sterile / null grain of ROOT | `zramowuxuwuyom`: *sterile hope*; `zramowuxarunul`: *registration with no seed* | **0e-** = empty at the tiny end: no seed |
@@ -190,7 +190,7 @@ On a free number, **`±0e-1`** is an amount. Before a root, the same bodies wipe
 #### Rank-annihilated morph (`#0e`)
 <a id="rank-annihilated-morph"></a>
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`#0exROOT`** | rank-annihilated / disqualified form of ROOT: place wiped as a kind property | `zromowaxamahum`: *a disqualified challenge (as type)*; `vromowaxamahum`: *to disqualify that challenge-kind*. Free **`g#0e`** is *disqualified place in this series*. | **#** is place; **0e** wipes that place |
 
@@ -209,7 +209,7 @@ English *first draft*, *secondary adventure*, *third-order problem* can name **w
 >
 > "Alazun writes a first draft."
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`#1xROOT`** | first-class / premiere / first-order | `drobaxobewom`: *a first-draft* (kind); `dobewom g#1` *the first draft (in this stack)* | **#1** = first place, not “ono piece” |
 | **`#2xROOT`** | secondary / second-order / backup | `grodoxumunom`: *a secondary adventure* | **#2** = the next slot after first |
@@ -242,7 +242,7 @@ When English makes a code part of what a thing is (*specimen #1*, *room 12* as a
 >
 > "Azozon sees specimen #1."
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`_xROOT`** | ROOT as something that **bears a code** (taggable unit; code unnamed) | `zrexudewal`: *a coded specimen* / *a specimen-as-ID* | **`_`** = catalog stamp, digits not yet filled |
 | **`_NxROOT`** | **specimen / item #N**: the code is part of the kind | `zrebaxudewal`: *specimen #1*; `zrebadoxohehal`: *room-12* as a coded kind; `brebadoxohehal`: *room-12* as `/b/` | the digits **are** the name, not a count |
@@ -255,7 +255,7 @@ Digitless **`+`/`-`/`#`** on ROOT = *what the kind is*; digitless **`_`** = *how
 
 To exaggerate a kind for comic effect (*a gazillion-mess*, *an umpteenth attempt*), put a mantissa before a digitless exponent, as in free [hyperbole](special-values.md#hyperbole). Use **`1`** as the mantissa unless the joke needs another digit.
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`+1exROOT`** | *gazillion-ROOT* (comic huge) | `zrabawaxazulam`: *a gazillion-mess* | **1e** = one × unbounded: comic huge |
 | **`+1e-xROOT`** | *gazillionth-ROOT* (comic tiny) | `zrabawuxadevem`: *a gazillionth-of-a-chance* | **1e-** = one × unbounded tiny |
@@ -271,7 +271,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *gold* | `ugulol` | 🥇 |
 | *fire* | `avulul` | 🔥 |
@@ -279,7 +279,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -288,7 +288,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *pour* | `vowuvul` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#advanced-english-to-agebon}
+#### English → Ageben {#advanced-english-to-ageben}
 
 **1.** *Azozon hammers a grain of gold.*
 
@@ -322,7 +322,7 @@ z-Azozon | d-quasi-x-gold | v-pour
 z-Alazun | v-+-0e-x-gold
 :::
 
-#### Agebon → English {#advanced-agebon-to-english}
+#### Ageben → English {#advanced-ageben-to-english}
 
 **1.** `zahelan drawaxugulol vayebel.`
 

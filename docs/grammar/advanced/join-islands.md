@@ -8,7 +8,7 @@ band: advanced
 
 A join takes every same-role item before it. When English groups a small list inside a bigger one of the same role (*Azozon and (just water)*), wrap the small list and its join in **`{ … }`**, called a scope island. The join inside the island takes members only from between those marks. One island per clause; material outside needs its own outer join. An island holds at most one phrase and may close partway through it ([scope islands](/span-mention#scope-islands)).
 
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | `zazozon { zowulal zal } zam` | *Azozon and (just water)* |
 | `zazozon { zal } zam` | *Azozon and nothing* |
@@ -82,14 +82,14 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *dove* | `udozel` | 🕊️ |
 | *imprimatur* | `ezazem` | 🦭 from *seal*: the stamp of approval |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -98,7 +98,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *pen* | `ebewol` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#advanced-english-to-agebon}
+#### English → Ageben {#advanced-english-to-ageben}
 
 **1.** *a page or a pen* (the familiar set phrase)
 
@@ -132,7 +132,7 @@ NAME[z-and]
 z-Alazun | [d-dove | d-something-else] | v-see
 :::
 
-#### Agebon → English {#advanced-agebon-to-english}
+#### Ageben → English {#advanced-ageben-to-english}
 
 **1.** `zoen.`
 
@@ -196,7 +196,7 @@ Lookup grids that restate forms taught above; nothing here is new.
 
 Most other phrase joins need two or more items. These edge readings keep a defined sense at every arity, or mix two joins by nesting.
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **…ul** / **…um** / **…un** | deny at every arity | standalone *no*; one item *not X*; multi *none of* |
 | **…ar** / **…or** / **…er** / **…ur** | unspecified member at every arity | [unspecified **-r**](/joins#unspecified-member-r-phrase) |

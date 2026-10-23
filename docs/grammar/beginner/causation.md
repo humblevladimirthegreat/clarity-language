@@ -4,7 +4,7 @@ band: beginner
 
 # Causation {#causation}
 
-English *if*, *only if*, and *because* each tie a condition to an outcome. Agebon uses a pole word for each, and the poles keep three questions apart: whether the condition is **enough** for the outcome, whether the outcome **needs** it, and whether you claim the condition is a **fact**.
+English *if*, *only if*, and *because* each tie a condition to an outcome. Ageben uses a pole word for each, and the poles keep three questions apart: whether the condition is **enough** for the outcome, whether the outcome **needs** it, and whether you claim the condition is a **fact**.
 
 
 ### If {#if}
@@ -49,7 +49,7 @@ As a plain noun, the same root is `zebel` *a paper-roll*.
 
 **Compare with:** *if* (`thohem` / `gohem`) leaves other routes possible. *Only if* says the outcome needs this.
 
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thohem` / `gohem`** | enough for the outcome; condition not asserted | *if* | `ohel` *door* | 🚪: walk through only if it opens |
 | **`thebem` / `gebem`** | the outcome needs this; condition not asserted | *only if* / *needs* | `ebel` *paper-roll* | 🧻: without it the situation does not run |
@@ -64,7 +64,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *sing* | `vozuyel` | 🧑‍🎤 |
 | *seedling* | `elol` | 🌱 |
@@ -75,7 +75,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -87,7 +87,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *find* | `vumewel` |
 | *sit* | `vehohel` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Azozon sings if there is sun.*
 
@@ -129,7 +129,7 @@ z-seedling-x | [g-if | bl-rain]
 z-Alazun | d-bucket | v-find | [th-if | bl-that-clause] | z-Azozon | v-sing
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zevelalx gohem blezalol.`
 

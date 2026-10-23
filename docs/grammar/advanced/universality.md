@@ -33,7 +33,7 @@ Only words about **how you know** or **how things stand** move to `/w/` this way
 <a id="ago"></a>
 <a id="time-offset"></a>
 
-English *three hours ago* and *in three hours* count from now. Agebon counts from the channel instead: put a [measure phrase](/numbers-applied#measure-phrases) in `/b/` immediately after the evidential. Any other noun there is the [source](/evidentiality#source); a time measure is the offset. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
+English *three hours ago* and *in three hours* count from now. Ageben counts from the channel instead: put a [measure phrase](/numbers-applied#measure-phrases) in `/b/` immediately after the evidential. Any other noun there is the [source](/evidentiality#source); a time measure is the offset. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
 
 > `zazozon thevum blagorum grugel vowurol.`
 >
@@ -125,7 +125,7 @@ With an [as-of](as-of.md#as-of) pair, the offset counts from the as-of moment in
 
 #### Now and today {#now}
 
-Agebon has no short *now* word. Say *now* with an offset of **zero**: the event sits no time away from the moment you speak. The channel stays, so *now* still says how you know it.
+Ageben has no short *now* word. Say *now* with an offset of **zero**: the event sits no time away from the moment you speak. The channel stays, so *now* still says how you know it.
 
 > `zalazun theyom blagorum gramol vezuvel.`
 >
@@ -214,13 +214,13 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *cat* | `ogozel` | 🐈 |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -240,7 +240,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *see* | `vayebel` |
 | *dress* | `edobal` |
 
-#### English → Agebon {#advanced-english-to-agebon}
+#### English → Ageben {#advanced-english-to-ageben}
 
 **1.** *Alazun sees a dress that I can see is red.*
 
@@ -266,7 +266,7 @@ z-Azozon | [th-MEMORY | [bl-hour | g-minus-three]] | v-write
 [z-everything.open | g-cat] | v-sleep | th-PATTERN
 :::
 
-#### Agebon → English {#advanced-agebon-to-english}
+#### Ageben → English {#advanced-ageben-to-english}
 
 **1.** `zazozon hual vehohel thubor.`
 

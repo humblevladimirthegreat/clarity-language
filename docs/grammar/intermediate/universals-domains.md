@@ -15,7 +15,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 When English would say *every cat* rather than *everything but the cat*, write **`ua`** and put the kind as a shared adjective after the join (`zual gogozel`). Any nouns listed before that join are leftovers excluded from that kind. The same **`ua`** join covers both *every K* and *everything but X*.
 
 <!-- cheat-sheet: joins-hooks -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-------|---------|
 | standalone `zual` | empty invert-add | *everything* / *everyone* |
 | `zual` + SHARED `/ɡ/` | closed every-kind | *every K* (`zual gogozel` = *every cat*) |
@@ -69,7 +69,7 @@ To deny *every cat* as a whole (*not every cat*, *not all cats*), close the **`z
 
 Where the denial goes changes the claim:
 
-| Agebon | What it says | English |
+| Ageben | What it says | English |
 |--------|--------------|---------|
 | `zul gogozel vezuvel.` | none of the cats sleeps | *No cat sleeps.* |
 | `zual gogozel vezuvel vul.` | each cat, one by one, does not sleep | *Every cat stays awake* (= no cat sleeps) |
@@ -153,7 +153,7 @@ To choose, ask whether one member could have the property. If none could, the cl
 > "The wolf is rare."
 
 <!-- cheat-sheet: joins-hooks -->
-| Agebon | Covers | English |
+| Ageben | Covers | English |
 |--------|--------|---------|
 | `zual gogozel` | each cat in this situation, no exceptions | *every cat* |
 | `zuam gogozel` | the members, as a rule | *cats in general* |
@@ -165,7 +165,7 @@ A [cause or condition](/causation) on a `zuan` clause is about the kind, not eac
 
 #### People in general (`eyen`) {#generic-neighbors}
 
-English *one*, generic *you*, and *people* make a claim about people as a rule. Agebon has a pronoun for this as well as the every-kind joins. The [generic pronoun](/pronouns#generic-pronoun) `eyen` works like a one-word version of the open every-kind `zuam geyel`: a default that allows exceptions, not a claim about everyone.
+English *one*, generic *you*, and *people* make a claim about people as a rule. Ageben has a pronoun for this as well as the every-kind joins. The [generic pronoun](/pronouns#generic-pronoun) `eyen` works like a one-word version of the open every-kind `zuam geyel`: a default that allows exceptions, not a claim about everyone.
 
 | Form | Picks | English |
 |------|-------|---------|
@@ -190,7 +190,7 @@ For *everyone, no exceptions*, use `zual geyel`. As a topic, `xeyen` (*now, abou
 
 The join does the rest, as on any SHARED word:
 
-| Agebon | Covers | English |
+| Ageben | Covers | English |
 |--------|--------|---------|
 | `zual geyel` | the people in this situation | *everyone* (here) |
 | `zual gwedanam blayan` | the people we both know | *everyone we know* |
@@ -210,13 +210,13 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *small* | `amezem` | 🐁 from *mouse* |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *veil* | `ovobul` |
@@ -226,7 +226,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *beer* | `urudal` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *everything but wine and beer*
 
@@ -252,7 +252,7 @@ z-Azozon | v-see | [d-everything | g-dress]
 [z-the-kind | g-veil]
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zuam gorebel gamezem.`
 

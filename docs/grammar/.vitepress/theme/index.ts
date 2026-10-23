@@ -9,7 +9,7 @@ import DigitPegs from '../components/DigitPegs.vue'
 import FingerCode from '../components/FingerCode.vue'
 import GlossViewer from '../components/GlossViewer.vue'
 import EnglishHelper from '../components/EnglishHelper.vue'
-import AgebonInspect from '../components/AgebonInspect.vue'
+import AgebenInspect from '../components/AgebenInspect.vue'
 import ClaritishEditor from '../components/ClaritishEditor.vue'
 import IpaPlay from '../components/IpaPlay.vue'
 import NameHelper from '../components/NameHelper.vue'
@@ -28,7 +28,7 @@ export default {
     app.component('FingerCode', FingerCode)
     app.component('GlossViewer', GlossViewer)
     app.component('EnglishHelper', EnglishHelper)
-    app.component('AgebonInspect', AgebonInspect)
+    app.component('AgebenInspect', AgebenInspect)
     app.component('ClaritishEditor', ClaritishEditor)
     app.component('IpaPlay', IpaPlay)
     app.component('NameHelper', NameHelper)

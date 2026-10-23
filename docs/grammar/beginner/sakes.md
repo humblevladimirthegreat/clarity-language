@@ -5,7 +5,7 @@ band: beginner
 # Sakes {#sakes}
 <a id="sake-ascription"></a>
 
-English *good for me* and *costs me* say what something does for a person. Agebon names that payoff as a **sake**: something good for a person, a psychological payoff you can name (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or an unspecified sake). It means *for your sake* (what is good for you), not *for argument's sake*. A sake word also carries your **stance**, how the thing stands toward that sake: it **serves** the sake or **detracts from** it. An unmet sake is a cost to name, not a lack in you.
+English *good for me* and *costs me* say what something does for a person. Ageben names that payoff as a **sake**: something good for a person, a psychological payoff you can name (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or an unspecified sake). It means *for your sake* (what is good for you), not *for argument's sake*. A sake word also carries your **stance**, how the thing stands toward that sake: it **serves** the sake or **detracts from** it. An unmet sake is a cost to name, not a lack in you.
 
 
 Put the sake word on `/ɡ/` after a **noun you keep**, to say how that belonging stands toward the sake. Put it on `/th/` to say how the whole **event** stands toward it. When the noun is not yours, personal possession shows how to point at it instead.
@@ -14,7 +14,7 @@ Put the sake word on `/ɡ/` after a **noun you keep**, to say how that belonging
 
 Nine published roots are the sakes you can name, and no other root takes the sake form. Pick one row. With mid-word **`th`** and a stance vowel after it, that root means the sake in the English column, not the everyday object in **Same root as**.
 
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`una`** | autonomy sake | *autonomy* (choice, agency, self-direction) | `unal` *ballot* | 🗳️: voting is choosing for yourself |
 | **`uwa`** | competence sake | *competence* (efficacy, skill, getting things to work) | `uwal` *tool* | 🧰: the kit that gets things working |
@@ -74,7 +74,7 @@ To say that a belonging of yours **serves** a sake (pays it off), write that thi
 On a *serves* word, the ending says **when the payoff lands**: **-l** lasting, **-m** unstated, **-r** immediate. That order, from **-l** (most settled) through **-m** (the default) to **-r** (most passing), is the **settled-to-passing scale**, and other sake endings reuse it. Neither end is better; a good day needs both. If you do not know, use **-m**.
 
 <!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…thal` | serves the sake over time | *lasting* | **-l** ≈ lasting |
 | `…tham` | serves the sake; time horizon unstated (soft default if unknown) | *serves* | **-m** ≈ open |
@@ -107,7 +107,7 @@ To say that a belonging of yours **detracts from** a sake, write that thing as a
 
 That ending is **changeability**: how lasting the harm to the sake is, on the same settled-to-passing scale as met. If you do not know, use **-m**.
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…thul` | the detriment is fixed as far as you can tell | *irreversible* | **-l** ≈ lasting |
 | `…thum` | effort or circumstance may soften the detriment (soft default if unknown) | *modifiable* | **-m** ≈ open to change |
@@ -141,7 +141,7 @@ A sake word is a sake root with mid-word **`th`**, a stance vowel, and an ending
 A sake word ends in **-l**, **-m**, or **-r**, from that stance’s table. It never takes **-n**. The stance itself is one vowel after **`th`**.
 
 <!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`tha`** | the belonging or event pays off this sake | *serves* / *met* | **a** ≈ add (the payoff is in) |
 | **`thu`** | the belonging or event subtracts from this sake | *detracts from* / *unmet* | **u** ≈ undo (the sake is taken down) |
@@ -179,7 +179,7 @@ The same `/w/` sake word can sit before any adjective. Then it is about **that p
 
 As a plain noun, `zoyol` is *emphasis*. **`goyom`** with no `/w/` sake word before it names no sake. An event (*this raining*, *this telling*) takes its sake word on `/th/` on the clause, whether or not it is yours.
 
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`goyom`** | unowned noun as sake-target | *as stimulus* | `oyol` *emphasis* | ☝️: you point at it rather than keep it |
 
@@ -191,7 +191,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *tent* | `udehal` | ⛺ |
 | *wind* | `awulol` | 🌬️ |
@@ -207,7 +207,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Ahelan* | `ahelan` |
@@ -220,7 +220,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *cook* | `vuguyol` |
 | *sing* | `vozuyel` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *My tent serves the physical sake in the long term.*
 
@@ -270,7 +270,7 @@ z-Azozon | v-cook | th-pleasure-met-immediate
 z-calendar | g-autonomy-unmet-modifiable
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zobowal gewathal.`
 

@@ -1,6 +1,6 @@
 # Grammar doc content and teaching (for learners)
 
-What belongs in Agebon **grammar docs** under **`docs/grammar/`**, and how to organize it for learners. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). For wording, voice, and sentence-level style, see [doc-style.md](doc-style.md). Design authority for morphology stays in those pages (one-clause grammar: [clause.md](/clause); hosted relations: [relations.md](/relations); dependents / continue: [dependents.md](/dependents)); this page standardizes **pedagogy and content** only.
+What belongs in Ageben **grammar docs** under **`docs/grammar/`**, and how to organize it for learners. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). For wording, voice, and sentence-level style, see [doc-style.md](doc-style.md). Design authority for morphology stays in those pages (one-clause grammar: [clause.md](/clause); hosted relations: [relations.md](/relations); dependents / continue: [dependents.md](/dependents)); this page standardizes **pedagogy and content** only.
 
 Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page, [doc-style.md](doc-style.md), [learning-levels.md](learning-levels.md), and [translation-exercises.md](translation-exercises.md) privately.
 
@@ -11,9 +11,9 @@ Related meta:
 | [doc-style.md](doc-style.md) | Wording, voice, and sentence-level style for learner-facing grammar prose |
 | [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** [gates](learning-levels.md#gates) and [cross-doc path](learning-levels.md#cross-doc-path) (for `docs/grammar/` only) |
 | [glosses.md](glosses.md) | Morph glosses and free English ([example blocks](glosses.md#example-block); [house-name glosses](glosses.md#house-cast)) |
-| [translation-exercises.md](translation-exercises.md) | Eng ↔ Agebon checkpoints (placement, principles including house-cast people, spoiler shape; vocab **Agebon** = citation or the inflected form the row teaches) |
+| [translation-exercises.md](translation-exercises.md) | Eng ↔ Ageben checkpoints (placement, principles including house-cast people, spoiler shape; vocab **Ageben** = citation or the inflected form the row teaches) |
 | [drill-generation.md](drill-generation.md) | Path allowlist, [settings](drill-generation.md#settings) inventory, and execute procedure (one file per agent) |
-| [language-name.md](language-name.md) | English name **Agebon** = glasses root **`agebe`** + **-n** (editors only — not linked from grammar) |
+| [language-name.md](language-name.md) | English name **Ageben** = glasses root **`agebe`** + **-n** (editors only — not linked from grammar) |
 | [unassigned-reserved.md](unassigned-reserved.md) | Unused-slot / unassigned-form inventory (editors only — not linked from grammar) |
 | [grammar-gaps.md](grammar-gaps.md) | Missing English-helper jobs (thin lexicon vs large clause types — editors only; not linked from grammar) |
 | [proposals.md](proposals.md) | `docs/proposals/` layout; **do not link to** proposal pages (editors only — not linked from grammar) |
@@ -41,7 +41,7 @@ On this page:
 ## Present the current language only
 <a id="present-the-current-language-only"></a>
 
-Write as if this is the only version of Agebon the reader will ever see. There is **no** backwards-compatibility duty in learner-facing prose: not for English labels, not for Agebon spellings.
+Write as if this is the only version of Ageben the reader will ever see. There is **no** backwards-compatibility duty in learner-facing prose: not for English labels, not for Ageben spellings.
 
 | Do | Don’t |
 |----|--------|
@@ -68,7 +68,7 @@ When you rename a section, **change the heading and the id to the current name**
 
 ### Unique ids on a page {#unique-ids}
 
-Every heading id and `<a id>` on a grammar page is unique. `lint:agebon` fails on a repeat. Never rely on VitePress's `-1` / `-2` suffixes, and never link to one. When heading text must repeat (`### Practice` on each stage), pin a distinct id on each with `{#id}`. To give a heading a stable short id, pin it on the heading (`### Right-close fence {#right-close}`); do not add an `<a id>` that repeats the heading's own id.
+Every heading id and `<a id>` on a grammar page is unique. `lint:ageben` fails on a repeat. Never rely on VitePress's `-1` / `-2` suffixes, and never link to one. When heading text must repeat (`### Practice` on each stage), pin a distinct id on each with `{#id}`. To give a heading a stable short id, pin it on the heading (`### Right-close fence {#right-close}`); do not add an `<a id>` that repeats the heading's own id.
 
 A construction's registry anchor in [constructions.ts](../../src/parse/constructions.ts) is always a **heading** id, never an `<a id>` inside a section: the anchor names the home section that the learning-order check (`learning-order-check.md`) measures against.
 
@@ -116,7 +116,7 @@ State the **positive** rule: which form to use for which English job. A “not Y
 
 Do not say a reading **stays on** another section, page, or subsystem — that is fencing for writers (“don’t reassign this”), not a cue for readers. Same family as ownership fences (“this page owns / does not own X”) — [teach now; don’t preview later](#teach-now-dont-preview-later). This meta page may still use *stay* in editor English (*inventory stays in unassigned-reserved.md*). Grammar-page prose should not.
 
-**A contrast earns a place only when all three hold:** the learner would use the wrong form for **this** English *now* (English false friend, or an Agebon sibling they already met — `-x` vs **`aya`**, classification vs **`SAME`**, free `g+e` vs `+exROOT`, join **-r** vs content **-r**); both forms appear with a real example; and the beat fits in one or two labeled sentences after this form’s example. Search, the sidebar, and **See also** already list related pages. Do **not** catalog siblings “in case they look them up,” expand a mix-up into a related-forms table, or restate the other doc.
+**A contrast earns a place only when all three hold:** the learner would use the wrong form for **this** English *now* (English false friend, or an Ageben sibling they already met — `-x` vs **`aya`**, classification vs **`SAME`**, free `g+e` vs `+exROOT`, join **-r** vs content **-r**); both forms appear with a real example; and the beat fits in one or two labeled sentences after this form’s example. Search, the sidebar, and **See also** already list related pages. Do **not** catalog siblings “in case they look them up,” expand a mix-up into a related-forms table, or restate the other doc.
 
 **Skip the negative when:** they would not invent the wrong form (editor-hygiene pairs like hyphenated PoS, ~~`z-ugobo`~~); it only restates the positive (“write ono token” already implies no hyphen); or a section would get a ritual **Not this** column with nothing decisive to say. A strong positive example is enough when there is no sibling to compare.
 
@@ -143,13 +143,13 @@ Mark the one mix-up so it is easy to scan. Use **one** of these four starters (b
 
 Place the labeled beat **after** the worked example for this form, not in the page lead. The lead says what **this** form does. **At most two** labeled beats per teach block. A third sibling is not a table — omit it; the learner can open that page.
 
-Do **not** add an **Agebon · Use** (or English-bundle) table whose rows are other subsystems. An **Agebon · Use** table is only for **this** form’s own cells (this mood’s endings, this join series, this page’s vowel map). Add a **Not this** column only when several rows of *this* table share real confusables — never by default, never as a peer catalog.
+Do **not** add an **Ageben · Use** (or English-bundle) table whose rows are other subsystems. An **Ageben · Use** table is only for **this** form’s own cells (this mood’s endings, this join series, this page’s vowel map). Add a **Not this** column only when several rows of *this* table share real confusables — never by default, never as a peer catalog.
 
 | Smell | Verdict |
 |-------|---------|
 | Boilerplate disclaimers: “X is a **root choice**, not `xa`/`xu` polarity”, “plural **-x** stays unused on `/h/` `/w/`”, “there is no dedicated root”, “not a fourth vowel/role/join”, “**Not won’t:** …” | Delete. State what the form does instead |
 | Denials of a retired pairing or order: “not a matching word on the left”, “not a mid-chain extender”, “not a sixth marker identity” | Delete. The learner never saw that version — [omit denials of former constructions](#omit-former-construction-denials) |
-| **Trap tables** (“Not this (real traps)”, “Traps worth ono look”, “Keep these for other jobs”) and **related-form Agebon · Use** catalogs | Delete from body. One starter plus an example of each form they would mix up *now* |
+| **Trap tables** (“Not this (real traps)”, “Traps worth ono look”, “Keep these for other jobs”) and **related-form Ageben · Use** catalogs | Delete from body. One starter plus an example of each form they would mix up *now* |
 | Inline **`Trap:`** / **“Trap:”** / *Near miss:* / “Do not confuse…” / “Not to be confused with…” | Punitive or quiz warning. Use one of the four starters |
 
 ## Cues live in tables
@@ -175,7 +175,7 @@ Do **not** keep a heading whose only job is to say there is nothing here. Learne
 1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only when the learner will reach for that form *now* — [Compare with](#compare-with), not “this page owns / does not own” fencing.
 2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → extra nouns + **`darl`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; word-endings Beginner” on every page.
 3. **One sitting, one band** — front matter `band: beginner | intermediate | advanced` on the file; no `## Beginner` (etc.) H2 on a sitting. Sittings live under `docs/grammar/{beginner,intermediate,advanced}/`; public URLs stay `/grammar/<page>.html`. Assign the band with the [gates](learning-levels.md#gates). Include an Advanced sitting only when the Advanced gate applies ([empty or pointless stages](#empty-stages)). Later sittings of the same topic use a **job title** (the slice’s first real H3), not the topic name again.
-4. Inside each stage: **concept → English job → Agebon shape → one consequence → 1–3 examples → (optional contrast) → full table if needed**. Cue in the same block or in the **Cue** column, not as the lead. Inside **Beginner**, H3 order is **dependency order for this page’s job** ([Beginner stage shape](#beginner-stage-shape)), not inventory order. On clause pages that is building a clause; citation notes are last (or already taught on [word-endings.md](/word-endings)). Later stages: [Intermediate and Advanced stage shape](#later-stage-shape). [Explain before you slogan](doc-style.md#explain-before-you-slogan).
+4. Inside each stage: **concept → English job → Ageben shape → one consequence → 1–3 examples → (optional contrast) → full table if needed**. Cue in the same block or in the **Cue** column, not as the lead. Inside **Beginner**, H3 order is **dependency order for this page’s job** ([Beginner stage shape](#beginner-stage-shape)), not inventory order. On clause pages that is building a clause; citation notes are last (or already taught on [word-endings.md](/word-endings)). Later stages: [Intermediate and Advanced stage shape](#later-stage-shape). [Explain before you slogan](doc-style.md#explain-before-you-slogan).
 5. Optional **See also** at the end — a few precise related forms only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
 
 Front matter that orients (psychological purpose / limits / benefit tour — [purpose.md](../grammar/purpose.md); grammar design / how to learn — [introduction.md](../grammar/introduction.md)) is not a learning stage. Reading order lives in the path / sidebar — not repeated as Prerequisites.
@@ -186,7 +186,7 @@ Front matter that orients (psychological purpose / limits / benefit tour — [pu
 | Order | Content |
 |-------|---------|
 | 1 | What you can *do* (English job) |
-| 2 | The Agebon shape (minimal pattern) |
+| 2 | The Ageben shape (minimal pattern) |
 | 3 | A **cue** so the form sticks (Beginner; [cues](#cues-columns)) |
 | 4 | Worked example(s) |
 | 5 | [Compare with](#compare-with) — **only the form they would use for this English** |
@@ -214,7 +214,7 @@ Do **not** open Beginner with:
 
 **Do not preview this page’s later H3s.** A section must not name *turn* / *continue* / omit-`yal` (or any later job on the same page) before that section exists. Either teach the opener first, or state the current pattern as a **bare statement body** (a period already marks a statement) until Turn is taught.
 
-**Same example, two English jobs:** if one Agebon string is both a full sentence and a noun phrase (or two readings), say that in the same block. Do not silently reuse the string under a new gloss.
+**Same example, two English jobs:** if one Ageben string is both a full sentence and a noun phrase (or two readings), say that in the same block. Do not silently reuse the string under a new gloss.
 
 **Inventory tables after one worked row.** A closed-form table with more than a few rows (subordinators, speech-act family, full PoS) follows **one** English job + example. Extra rows are “you can also say,” not equal first teaching.
 
@@ -233,7 +233,7 @@ Do **not** rerun [Beginner stage shape](#beginner-stage-shape) on later stages. 
 
 | Kind | When | Shape |
 |------|------|--------|
-| **New English job** | A construction they could not say after Beginner (soft speech acts, adjective before the noun, nested **`blarl`**) | Same lead order as Beginner: English job → Agebon shape → consequence, then **one** worked example, then the table or [Compare with](#compare-with). Cue last, not as the definition. Per-cell cues are optional. |
+| **New English job** | A construction they could not say after Beginner (soft speech acts, adjective before the noun, nested **`blarl`**) | Same lead order as Beginner: English job → Ageben shape → consequence, then **one** worked example, then the table or [Compare with](#compare-with). Cue last, not as the definition. Per-cell cues are optional. |
 | **Finish the series** | The rest of a map they already use (full join single-item/standalone, remaining linkers, period/speech rhythm) | One short pointer (“Beginner already used *therefore*”) plus the inventory table. Do not unpack every row as its own H3. |
 | **Rare / stylistic Advanced** | Edge, meter, singing, uncommon variants | Inventory plus one example or one preference sentence. Skip per-cell cues. |
 
@@ -259,10 +259,10 @@ Learner tables use these headers (omit a column when every cell would be empty o
 
 | Column | Binding? | Content |
 |--------|----------|---------|
-| **Agebon** | yes | The spelling (word, letter, or pattern). A **content word** is a [citation](#citation-in-tables) whenever **Same root as** is empty — not a role-marked copy of that citation, and not a bare stem. Inflected **Agebon** (role letter already on) only when **Same root as** is filled and the English needs that letter (`vayebel` *see*). |
+| **Ageben** | yes | The spelling (word, letter, or pattern). A **content word** is a [citation](#citation-in-tables) whenever **Same root as** is empty — not a role-marked copy of that citation, and not a bare stem. Inflected **Ageben** (role letter already on) only when **Same root as** is filled and the English needs that letter (`vayebel` *see*). |
 | **Use** | yes | What the form **does** in the clause (subject, command, continue). Not a pun. |
 | **English** | yes | English the learner may **say or produce** (sense or free English). Not a pun, and not an ending tag (`(**-m**)`). |
-| **Same root as** | no | The everyday kind of that root as a [citation](/word-endings) (**-l**): `` `ahul` *wall* ``. Fill it only when this row’s **English** is not that citation’s lemma: a published abstract, a closed overlay, or packed role English that **differs** from the citation (`` `ayebel` *eye* `` beside `vayebel` *see*). If English already is the citation lemma (*climb*), leave **Same root as** empty and put the citation in **Agebon** (`oguvol`, not `voguvol`). That licenses the picture in **Cue**. Omit the column when every row is a letter, vowel-series, punctuation, or other non-lexicon cue. Empty cells are fine in a mixed drill bank. |
+| **Same root as** | no | The everyday kind of that root as a [citation](/word-endings) (**-l**): `` `ahul` *wall* ``. Fill it only when this row’s **English** is not that citation’s lemma: a published abstract, a closed overlay, or packed role English that **differs** from the citation (`` `ayebel` *eye* `` beside `vayebel` *see*). If English already is the citation lemma (*climb*), leave **Same root as** empty and put the citation in **Ageben** (`oguvol`, not `voguvol`). That licenses the picture in **Cue**. Omit the column when every row is a letter, vowel-series, punctuation, or other non-lexicon cue. Empty cells are fine in a mixed drill bank. |
 | **Cue** | no | Recall only: **why** the token maps. Cover this column: the rest must still be the language. ([rubric](#cue-rubric)) |
 
 **Use** and **Cue** must not be the same string. If they would be (`add` / *add*), unpack **Use** (*hold / inventory*) and keep the slogan in **Cue**.
@@ -276,9 +276,9 @@ A cue is a **bridge**: one reason the visible token (letter, vowel, emoji) maps 
 
 | Test | Pass | Fail |
 |------|------|------|
-| **Cover** | Hide **Cue**. **Agebon** + **Use** / **English** (and **Same root as**, when present) still teach the language. | The pun is the only definition |
+| **Cover** | Hide **Cue**. **Ageben** + **Use** / **English** (and **Same root as**, when present) still teach the language. | The pun is the only definition |
 | **Bridge** | Hide the emoji, the *literal*, and the letter being punned. What remains still says *why* the token maps to this row. | 🧱 *wall* — leftover is the picture’s name |
-| **Not a caption** | Cue ≠ Unicode/CLDR name, ≠ **Agebon** spelled in English, ≠ `from *quiet*` with no why | *doorway*, *zebra*, *timer* alone |
+| **Not a caption** | Cue ≠ Unicode/CLDR name, ≠ **Ageben** spelled in English, ≠ `from *quiet*` with no why | *doorway*, *zebra*, *timer* alone |
 | **Not the answer** | Cue is not a synonym of **English** / **Use** | *because* restated as *cause* / *foundation* as a second gloss cell |
 | **One hop** | Token → **one** reason → the row | `wall → foundation → because` as three English labels |
 | **Short** | One clause after the token | A second slogan system |
@@ -298,7 +298,7 @@ Letter / series: `{letter} ≈ {sound or series slogan} ({why that maps})`. `**d
 
 A lexicon path is a real **-l** / **-m** choice; the *concrete* English is still not what drills ask for. Write `*volume*` in **English** (no `(**-m**)` tag — the citation ending already marks abstract), `` `ugowul` *quiet* `` in **Same root as**, and `🔈: volume is sound turned up or down` (or `from *quiet*: volume is sound turned up or down` when the table has no **Same root as** column) in **Cue** — never `quiet → *volume*` as the only English. The same **Same root as** / **Cue** split applies when **English** is a role-marked use of the concrete (`*see*` / `vayebel` / `` `ayebel` *eye* `` / `👁️: seeing is what an eye does`).
 
-Inline after the rule sentence: `(cue: …)`. Worked examples stay Agebon / morph / quoted free English ([example block](glosses.md#example-block)) — no cue line. Translation-practice spoilers add a visible morph line under the same rules ([translation-exercises.md](translation-exercises.md#principles)). The root bank may add **Same root as** and **Cue** beside **English · Agebon**.
+Inline after the rule sentence: `(cue: …)`. Worked examples stay Ageben / morph / quoted free English ([example block](glosses.md#example-block)) — no cue line. Translation-practice spoilers add a visible morph line under the same rules ([translation-exercises.md](translation-exercises.md#principles)). The root bank may add **Same root as** and **Cue** beside **English · Ageben**.
 
 ### When to state a scene cue
 <a id="when-to-state-a-scene-cue"></a>
@@ -317,7 +317,7 @@ A **scene** cue (`emoji *literal*: why`) is for remembering a published picture.
 
 Letter / series / ending cues (`**a** ≈ add`, **m** ≈ abstract) are the other kind; they follow [two kinds of cue](#cue-rubric) and are not this overlay-vs-lexicon split.
 
-Do not invent a second cue system beside metaphor, vowels, and endings when those already explain the form. **Do not use the cue as the definition:** teach **Use** and the Agebon shape first ([explain before you slogan](doc-style.md#explain-before-you-slogan)).
+Do not invent a second cue system beside metaphor, vowels, and endings when those already explain the form. **Do not use the cue as the definition:** teach **Use** and the Ageben shape first ([explain before you slogan](doc-style.md#explain-before-you-slogan)).
 
 Do **not** paste a legend (“**Use** is the rule…”) on every grammar page. [How to learn](../grammar/introduction.md#how-to-learn) owns that explanation once.
 
@@ -339,7 +339,7 @@ Usual sources (prefer one; reuse the language’s own systems):
 | Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zuwen` / `zawan`) as dummy subjects |
 | Omit default **`yal`** when the page is not teaching the speech act | Leading every example with **`yal`** by habit |
 | Morph gloss + free English as a loose sentence with an optional note ([glosses.md](glosses.md#free-english-sentence-and-note)); packed role English when the lexicon lists it (`v-see` for `vayebel`) | Merging free English into the morph gloss, or inventing a `/v/` lemma that is not in `english_by_pos` |
-| A note after the closing quote when the example teaches a marking the sentence drops ([when required](glosses.md#note-required)) | Notes inside the quotes, a second free English line, or notes that use Agebon forms or grammar terms |
+| A note after the closing quote when the example teaches a marking the sentence drops ([when required](glosses.md#note-required)) | Notes inside the quotes, a second free English line, or notes that use Ageben forms or grammar terms |
 | A negative only when the mix-up is expected ([Compare with](#compare-with)) | Listing “no X” or a **Not this** column by habit |
 
 ### House people
@@ -347,7 +347,7 @@ Usual sources (prefer one; reuse the language’s own systems):
 
 When an example needs a **person**, use these nativized names (published root + **-n**). Free English keeps *Azozon*, not *Grace* / *I* / *you*. Checkpoint **English** cells match that name (`*Azozon*`), not `*grace* (name **Azozon**)`. Sense-led *grace* (as a name) is only for [word-endings.md](/word-endings) Beginner citation drills. Do not cast abstract roots as participants (`yal zazozon godozel`, not “grace is more challenging than courage”). Keep abstract roots for the form being taught.
 
-| Agebon | English | Root |
+| Ageben | English | Root |
 |--------|---------|------|
 | `zazozon` | *Azozon* | `azozo` *grace* |
 | `zalazun` | *Alazun* | `alazu` *courage* |
@@ -367,9 +367,9 @@ Default example block ([layout](glosses.md#example-block)):
 > "Azozon is a dog."
 ```
 
-Omit the morph line when `lint:agebon` treats parser output as redundant with the in-block quoted loose English (`azozol` / `"swan"`). Keep it when it shows structure the quote does not (role letters, several words, an `x`-compound citation, …).
+Omit the morph line when `lint:ageben` treats parser output as redundant with the in-block quoted loose English (`azozol` / `"swan"`). Keep it when it shows structure the quote does not (role letters, several words, an `x`-compound citation, …).
 
-Short Eng ↔ Agebon checkpoints: end of a page stage only — [translation-exercises.md](translation-exercises.md). Multi-turn practice belongs under [examples/](../examples/), not inside every grammar section.
+Short Eng ↔ Ageben checkpoints: end of a page stage only — [translation-exercises.md](translation-exercises.md). Multi-turn practice belongs under [examples/](../examples/), not inside every grammar section.
 
 ## Tables
 <a id="tables"></a>
@@ -377,14 +377,14 @@ Short Eng ↔ Agebon checkpoints: end of a page stage only — [translation-exer
 - Contrast and decision tables beat encyclopedia dumps in Beginner. A decision table is **this** form’s own readings (endings, vowel series), not a list of other pages.
 - Beginner may show a **partial** table (only letters / jobs taught so far). Completing the table is Intermediate, or a recap at the **end** of Beginner after those jobs have examples — not a dump at the top.
 - Full inventories belong in Intermediate / Advanced, or after the teach block.
-- Prefer columns **Agebon · Use · English · Same root as · Cue** for **this** form ([cues](#cues-columns)). Drop **Same root as** when no row needs an everyday citation (no metaphor, overlay, or role-marked use). Add **Example** or a Morph column when endings are the point. **Not this** / related-subsystem **Agebon · Use**: [Compare with](#compare-with).
+- Prefer columns **Ageben · Use · English · Same root as · Cue** for **this** form ([cues](#cues-columns)). Drop **Same root as** when no row needs an everyday citation (no metaphor, overlay, or role-marked use). Add **Example** or a Morph column when endings are the point. **Not this** / related-subsystem **Ageben · Use**: [Compare with](#compare-with).
 - A grammar-table **Gloss** column is short free English unless the row teaches morphology ([glosses.md](glosses.md)).
 - Content-word cells: [citation (ending already on)](#citation-in-tables).
 
 ### Citation in tables
 <a id="citation-in-tables"></a>
 
-Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odoze`, `ugowu`, `azozo`, `oma`). A content-word **Agebon** cell is a spelling the learner could write **as a word**. If **Same root as** is empty, that spelling is always the [citation](/word-endings#citation-forms) (prefix-less root + ending): `oguvol` *climb*, not `voguvol`. The **inflected** form (role letter already on) is only for rows that also fill **Same root as**, when the English needs that letter (`vayebel` *see*). **English** is the lexicon lemma for that spelling (published literal / metaphor / packed role English) — do not tag `(**-m**)` or `(**-l**)` there; the Agebon ending already carries that. **Same root as** stays the everyday **-l** citation of the picture (`ahul` *wall*; `ayebel` *eye* when **Agebon** is `vayebel`), not a stem, and that picture English is also the published lemma (`*correct*`, not a retired gloss). Checkpoint banks apply the same rule ([translation-exercises.md](translation-exercises.md#template)); `build` checks them.
+Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odoze`, `ugowu`, `azozo`, `oma`). A content-word **Ageben** cell is a spelling the learner could write **as a word**. If **Same root as** is empty, that spelling is always the [citation](/word-endings#citation-forms) (prefix-less root + ending): `oguvol` *climb*, not `voguvol`. The **inflected** form (role letter already on) is only for rows that also fill **Same root as**, when the English needs that letter (`vayebel` *see*). **English** is the lexicon lemma for that spelling (published literal / metaphor / packed role English) — do not tag `(**-m**)` or `(**-l**)` there; the Ageben ending already carries that. **Same root as** stays the everyday **-l** citation of the picture (`ahul` *wall*; `ayebel` *eye* when **Ageben** is `vayebel`), not a stem, and that picture English is also the published lemma (`*correct*`, not a retired gloss). Checkpoint banks apply the same rule ([translation-exercises.md](translation-exercises.md#template)); `build` checks them.
 
 | Publish | Example |
 |---------|---------|
@@ -394,7 +394,7 @@ Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odoz
 
 Do **not** call `odoze` a citation. Overlay / need / linker / mood inventories use the citation or the floating `/th/` (or `/x/`) word, not the stem (`unal` or `thunam`, not `una`; `omal` or `thomam`, not `oma`). Combinability (`tha` / `the`, hold endings) belongs in a **pattern** column (`…thal`) or in extra inflected rows, not by stripping the ending.
 
-**Exceptions** (a stem or non-word is the right **Agebon** cell):
+**Exceptions** (a stem or non-word is the right **Ageben** cell):
 
 | Exception | Why | Example |
 |-----------|-----|---------|
@@ -404,9 +404,9 @@ Do **not** call `odoze` a citation. Overlay / need / linker / mood inventories u
 | Editor matching keys | Lexicon CSVs, this page’s house-cast **Root** column, [example root bank](drill-generation.md#root-bank) token lists — not learner grammar tables | `data/lexicon-published.csv` stems |
 | Language-name composition | Showing **`agebe`** + proper **-n** once, not as a vocab row | [introduction.md](../grammar/introduction.md) name gloss |
 
-Resume teaching may talk about a “whole stem” in running prose; the Agebon column is still `zazozor` / `zodozer`, not `azozo` / `odoze`.
+Resume teaching may talk about a “whole stem” in running prose; the Ageben column is still `zazozor` / `zodozer`, not `azozo` / `odoze`.
 
-**Test:** hide **Use** / **English**. Is the leftover a legal standalone Agebon word (or a letter / pattern / inner-`x` piece on the exception list)? If it is a published content sense with no ending, add the ending.
+**Test:** hide **Use** / **English**. Is the leftover a legal standalone Ageben word (or a letter / pattern / inner-`x` piece on the exception list)? If it is a published content sense with no ending, add the ending.
 
 ## Cross-links and scope
 <a id="cross-links-and-scope"></a>
@@ -415,7 +415,7 @@ Resume teaching may talk about a “whole stem” in running prose; the Agebon c
 - Never link to or mention `meta/`, `examples/`, `proposals/`, `data/`, or repo-root files from a grammar page.
 - One canonical anchor per concept (`<a id="…">`), matching the current heading. When a heading changes, retarget links; do not keep the old id — [one current heading, one current id](#one-current-heading).
 - Do not dump the whole related-inventory into the lead paragraph.
-- **IPA and pronunciation** belong in [phonology.md](/phonology) (letter table, teaching cues) and on the [Inspect](../grammar/inspect.md) tool (**IPA:** beside **Speak Agebon** transcribes the same spoken forms). Other grammar pages use orthographic letters (`y`, `x`, `/y/`, `/x/`) — never IPA transcriptions or sound cues in running examples (the one exception is the opening sentence in [purpose.md](../grammar/purpose.md#at-a-glance), which shows its IPA). If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
+- **IPA and pronunciation** belong in [phonology.md](/phonology) (letter table, teaching cues) and on the [Inspect](../grammar/inspect.md) tool (**IPA:** beside **Speak Ageben** transcribes the same spoken forms). Other grammar pages use orthographic letters (`y`, `x`, `/y/`, `/x/`) — never IPA transcriptions or sound cues in running examples (the one exception is the opening sentence in [purpose.md](../grammar/purpose.md#at-a-glance), which shows its IPA). If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
 
 ### Teach now; don’t preview later
 <a id="teach-now-dont-preview-later"></a>
@@ -434,7 +434,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 
 ## Recipe track {#recipe-track}
 
-**Saying it in Agebon** ([english.md](../grammar/english.md) plus `say-people-places.md`, `say-amounts.md`, `say-reasons.md`, `say-questions.md`, `say-tense.md`) holds **applications**: sections that teach no new form but show how taught forms answer an English job. The track is outside the stage order.
+**Saying it in Ageben** ([english.md](../grammar/english.md) plus `say-people-places.md`, `say-amounts.md`, `say-reasons.md`, `say-questions.md`, `say-tense.md`) holds **applications**: sections that teach no new form but show how taught forms answer an English job. The track is outside the stage order.
 
 **Test before adding a section to a stage page** (especially when closing a [grammar gap](grammar-gaps.md)):
 
@@ -453,20 +453,20 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 
 Wording and voice for the track: [claritish-style.md](claritish-style.md).
 
-**Claritish** (`docs/grammar/claritish/`) is an on-ramp for English speakers: an intro page, ten lessons, a bonus tone-marks lesson, a closing page, a cheat sheet, and a journal editor that teach closed Agebon words to drop into ordinary English, so the psychological payoff starts on day one and every word learned is already Agebon. It adds no forms and is not design authority. Each lesson's owning grammar section is named in an editor-only `<!-- Source … -->` comment at the foot of the page; when that section changes a form or meaning, update the lesson.
+**Claritish** (`docs/grammar/claritish/`) is an on-ramp for English speakers: an intro page, ten lessons, a bonus tone-marks lesson, a closing page, a cheat sheet, and a journal editor that teach closed Ageben words to drop into ordinary English, so the psychological payoff starts on day one and every word learned is already Ageben. It adds no forms and is not design authority. Each lesson's owning grammar section is named in an editor-only `<!-- Source … -->` comment at the foot of the page; when that section changes a form or meaning, update the lesson.
 
-**What a drop-in is:** a closed Agebon word spelled exactly as the owning page spells it: a tone mark, a stance word, a sake word (thanks, sorry, feelings), or the set phrase `blawan`. No Agebon syntax around it (role letters, hosted `/b/`, joins, spans, hooks, role compounds, numeric derivation), no numerals or stance numbers, no respelling for English readers.
+**What a drop-in is:** a closed Ageben word spelled exactly as the owning page spells it: a tone mark, a stance word, a sake word (thanks, sorry, feelings), or the set phrase `blawan`. No Ageben syntax around it (role letters, hosted `/b/`, joins, spans, hooks, role compounds, numeric derivation), no numerals or stance numbers, no respelling for English readers.
 
 - **Placement** follows English: where an adverb or tag would sit (after the clause, before it, or beside the word it colors). A stance drop-in covers the English clause it sits in. A lone feeling word with no clause is how the speaker feels right now.
 - **Suffixes on English words** are [label scope](/label-seams#label-scope) and [ability](/can-and-cant#ability-changeability) (`-xa` / `-xe` / `-xo` / `-xu`), written with a hyphen on an English host. The rule and its marking live in [Claritish wording and voice](claritish-style.md#hyphenated-host).
-- **Tone marks** go before what they color, as in Agebon. English punctuation stays English (a sentence-final `!` is English; sentences need no Agebon period).
+- **Tone marks** go before what they color, as in Ageben. English punctuation stays English (a sentence-final `!` is English; sentences need no Ageben period).
 - **Endings:** on stance drop-ins, **-l / -m / -r** are taught as the settled-to-passing scale (*-l ≈ lasting, -r ≈ right now*), and each lesson points out when the scale comes back. Allowed and required (permission, requirement, consent) grades the source instead (*l ≈ law, m ≈ mouth, r ≈ read the room*), and the prescription endings in Oughts and motives grade why the move is welcome (**invited / offered / trial**); its motive endings are the usual scale. Never teach the concrete vs abstract citation split.
 
 **Marking:** in real use drop-ins are written plainly (no italics, quotes, or brackets), and the intro page says so. On the site every drop-in is still a backtick span, so `build` checks it and `retie-docs` keeps it current.
 
-**Lesson shape:** H1 is the topic title, with no lesson number (the tone-marks bonus is *Bonus: …*); `## The gap`; the forms (a small table); about five English example sentences with drop-ins, never full Agebon; `## Practice` (English items, answers in `::: details Show answer`). Lessons carry no full Agebon sentences; the closing page shows the words in one. Order runs by difficulty and prerequisite: the sidebar and the intro list are the only place sequence is written, and the order must keep any lesson after the ones it reuses (Thanks and sorry before Oughts and motives and Feelings; How sure are you? before How do you know?). Simple hyphen lessons come early, and the emotion compose is last. Tone marks are an unnumbered bonus after the lessons: they color delivery and are not one of the thinking traps, so they do not open the track.
+**Lesson shape:** H1 is the topic title, with no lesson number (the tone-marks bonus is *Bonus: …*); `## The gap`; the forms (a small table); about five English example sentences with drop-ins, never full Ageben; `## Practice` (English items, answers in `::: details Show answer`). Lessons carry no full Ageben sentences; the closing page shows the words in one. Order runs by difficulty and prerequisite: the sidebar and the intro list are the only place sequence is written, and the order must keep any lesson after the ones it reuses (Thanks and sorry before Oughts and motives and Feelings; How sure are you? before How do you know?). Simple hyphen lessons come early, and the emotion compose is last. Tone marks are an unnumbered bonus after the lessons: they color delivery and are not one of the thinking traps, so they do not open the track.
 
-**Links:** lesson pages never link into the grammar: the grammar is learned in order. The closing page (`learn.md`) is the only exit, a single *Start learning Agebon* call to action to [how to learn](../grammar/introduction.md#how-to-learn). The way in is the intro page, from [Why Agebon](../grammar/purpose.md#try-it-in-english) and the [introduction](../grammar/introduction.md#purpose); no other stage page links to Claritish. The intro page (`index.md`) is the entry point, owns the track-wide rules (plain writing, placement) and the lesson list (keep it in step with the sidebar), and teaches no drop-in beyond one example. It sets `prev: false` and the journal editor `next: false` so the sidebar's prev / next links stay inside the track.
+**Links:** lesson pages never link into the grammar: the grammar is learned in order. The closing page (`learn.md`) is the only exit, a single *Start learning Ageben* call to action to [how to learn](../grammar/introduction.md#how-to-learn). The way in is the intro page, from [Why Ageben](../grammar/purpose.md#try-it-in-english) and the [introduction](../grammar/introduction.md#purpose); no other stage page links to Claritish. The intro page (`index.md`) is the entry point, owns the track-wide rules (plain writing, placement) and the lesson list (keep it in step with the sidebar), and teaches no drop-in beyond one example. It sets `prev: false` and the journal editor `next: false` so the sidebar's prev / next links stay inside the track.
 
 **Cheat sheet:** `cheat-sheet.md` comes after the closing page: every drop-in from the lessons, condensed into tables, for keeping open while writing or printing (it is the track's review tool; Claritish has no flashcard deck). It adds no forms, links only to lessons, and is not a lesson (no gap or practice). `scripts/lint-cheat-sheets.ts` runs in the build: every drop-in in a lesson table must be on the sheet, and every drop-in on the sheet must come from a lesson, verbatim or with its **-l / -m / -r** ending swapped. When a lesson adds, drops, or rewords a form, update the sheet in the same change.
 
@@ -477,15 +477,15 @@ Wording and voice for the track: [claritish-style.md](claritish-style.md).
 Grammar cheat sheets live in `docs/grammar/cheat-sheets/`, one printable page per learner-facing subsystem, grouped the way a learner looks forms up, not one per stage page. They add no forms, restate no rule the owning page does not teach, and are never the source for a form. A sheet that needs a sentence the owning page lacks means the owning page needs it first.
 
 - **Shape:** front matter `pageClass: cheat-sheet` and `outline: false`, then `<PrintButton />`, then the H1 *… cheat sheet*. Rows are a word or two of English per form: no practice, gap stories, or worked examples.
-- **Sidebar:** the **Cheat Sheets** group, in reading order (sounds first, then letter meanings; Agebon → English and Exceptions last).
+- **Sidebar:** the **Cheat Sheets** group, in reading order (sounds first, then letter meanings; Ageben → English and Exceptions last).
 - **Links:** every row links to the section that teaches it. Stage pages never link to a sheet (as with the [recipe track](#recipe-track)); [how to learn](../grammar/introduction.md#how-to-learn) may name the group once.
 - **Stage tags:** **B** / **I** / **A** per row, or per section when the whole section is one stage: the stage of the section the row links to.
-- **Wording:** usual [doc style](doc-style.md); learner names, no [terminology](../grammar/terminology.md) links; English cues in italics; forms in backticks. An italic **English** cell beside an Agebon phrase or sentence is its free English, as on grammar pages ([grammar-table gloss](glosses.md#grammar-table-gloss-free-english-only)).
+- **Wording:** usual [doc style](doc-style.md); learner names, no [terminology](../grammar/terminology.md) links; English cues in italics; forms in backticks. An italic **English** cell beside an Ageben phrase or sentence is its free English, as on grammar pages ([grammar-table gloss](glosses.md#grammar-table-gloss-free-english-only)).
 
 **Keeping sheets in step.** `npm run build` runs two checks:
 
 1. **Generated blocks.** A table between `<!-- generated: SOURCE key=value -->` and `<!-- /generated -->` is rebuilt from the lexicon CSVs and `src/closed-roots.ts` by `scripts/cheat-sheet-blocks.ts` (sources and filters are listed at its top). The build fails when a block is stale; `npm run cheat-sheet-blocks -- --write` refreshes it. Never edit inside the markers. Prefer a generated block wherever the data owns the forms (overlays by `kind=`).
-2. **Hand-written rows** (`scripts/lint-cheat-sheets.ts`). Every row links to an owning section (in the row, the table header, or the prose between the nearest heading and the table; a row with an empty first cell shares the row above's links), and every Agebon form in it appears in one of those sections, verbatim or, for one word, with **-l** / **-m** / **-r** swapped.
+2. **Hand-written rows** (`scripts/lint-cheat-sheets.ts`). Every row links to an owning section (in the row, the table header, or the prose between the nearest heading and the table; a row with an empty first cell shares the row above's links), and every Ageben form in it appears in one of those sections, verbatim or, for one word, with **-l** / **-m** / **-r** swapped.
 
 **Opting an owning table in.** Put `<!-- cheat-sheet: ID -->` on the line right before a table on a grammar page, where ID is the sheet's key in the lint's `SHEETS` map. Every form in that table must then be on the sheet. Mark tables that list a subsystem's forms in backticks; leave example-only tables unmarked. A change to a marked table updates its sheet in the same change.
 
@@ -498,7 +498,7 @@ Grammar cheat sheets live in `docs/grammar/cheat-sheets/`, one printable page pe
 |----------|--------|
 | How to use the form | Grammar doc body under **`docs/grammar/`** (tagged **Beginner** / **Intermediate** / **Advanced**) |
 | How taught forms answer a less common English job | [Recipe track](#recipe-track) (`say-*.md`) |
-| Agebon words to drop into English, for learners not yet in the grammar | [Claritish track](#claritish-track) (`claritish/`) |
+| Ageben words to drop into English, for learners not yet in the grammar | [Claritish track](#claritish-track) (`claritish/`) |
 | Gloss format | [glosses.md](glosses.md) |
 | Band gates / reading order | [learning-levels.md](learning-levels.md) ([gates](learning-levels.md#gates), [cross-doc path](learning-levels.md#cross-doc-path)) |
 | Doc content / teaching order | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns), [Compare with](#compare-with)); wording and voice: [doc-style.md](doc-style.md), [claritish-style.md](claritish-style.md) |
@@ -511,7 +511,7 @@ Grammar cheat sheets live in `docs/grammar/cheat-sheets/`, one printable page pe
 | Parser / CLI / site implementation notes | Code and `docs/meta/` — not titles, leads, or “house rules” on grammar pages |
 | Why a form or reading is deliberately absent | [design-decisions.md](design-decisions.md) |
 | Speculative features | [TODO.md](../../TODO.md) |
-| Short Eng ↔ Agebon checkpoint | End of a page stage — [translation-exercises.md](translation-exercises.md); generate via [drill-generation.md](drill-generation.md) |
+| Short Eng ↔ Ageben checkpoint | End of a page stage — [translation-exercises.md](translation-exercises.md); generate via [drill-generation.md](drill-generation.md) |
 | Multi-turn practice | [examples/](../examples/) (not linked from grammar pages) |
 | Editor pedagogy / migration notes | `docs/meta/` only — never from grammar pages |
 | Why this file breaks a house style rule | [HTML comment](#html-comments) beside that spot (VitePress does not show it) |
@@ -528,23 +528,23 @@ Before shipping **Intermediate** or **Advanced**, check [later-stage shape](#lat
 ## Markdown hygiene
 <a id="markdown-hygiene"></a>
 
-After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run build`**. Skip it when the only changed files are under `docs/meta/` or `docs/proposals/`. It checks emphasis balance, slash-joined emphasis, Vue-illegal `<tag>` on grammar pages (write loan fences as `<code>d&lt;kimchi&gt;</code>` — inline backticks and `<code v-pre>` with a real `<` still fail Vue’s HTML parse), that Agebon words in `docs/grammar/` parse and use lexicon roots, that every example sentence and phrase parses as a whole ([marking Agebon](#marking-agebon)), Vue a11y on site components, and published VitePress URLs. Prefer spaces in slash-joined emphasis (`*a* / *b*`) eyur `*a*/*b*`. In bold headings or bullets, put forms in backticks only (`**Ranked (`e` / `ae`)**`), not nested bold inside bold.
+After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run build`**. Skip it when the only changed files are under `docs/meta/` or `docs/proposals/`. It checks emphasis balance, slash-joined emphasis, Vue-illegal `<tag>` on grammar pages (write loan fences as `<code>d&lt;kimchi&gt;</code>` — inline backticks and `<code v-pre>` with a real `<` still fail Vue’s HTML parse), that Ageben words in `docs/grammar/` parse and use lexicon roots, that every example sentence and phrase parses as a whole ([marking Ageben](#marking-ageben)), Vue a11y on site components, and published VitePress URLs. Prefer spaces in slash-joined emphasis (`*a* / *b*`) eyur `*a*/*b*`. In bold headings or bullets, put forms in backticks only (`**Ranked (`e` / `ae`)**`), not nested bold inside bold.
 
-### Marking Agebon
-<a id="marking-agebon"></a>
+### Marking Ageben
+<a id="marking-ageben"></a>
 
 `npm run build` puts every code span on a grammar page (inline backticks, fenced blocks, `<code>`) into exactly one class, and checks each one. Nothing is skipped silently.
 
 | Span | Class | Check |
 |------|-------|-------|
-| Ends in `.` / `?` / `!` and starts with an Agebon word | sentence | full sentence parse (word order, fences, joins) |
-| Two or more Agebon words, no final mark | phrase | full parse |
+| Ends in `.` / `?` / `!` and starts with an Ageben word | sentence | full sentence parse (word order, fences, joins) |
+| Two or more Ageben words, no final mark | phrase | full parse |
 | One word | word | word parse + lexicon roots |
 | Contains `…` / `...` or an all-caps placeholder (`A am B`, `DIR th ANCHOR`) | template | slots filled with sample words; must parse, and is traced (placeholders alone, like `ROOT`, count as English) |
-| No Agebon-shaped word | English | not parsed |
-| Agebon mixed with other words, no final mark | unclassified | **fails** |
+| No Ageben-shaped word | English | not parsed |
+| Ageben mixed with other words, no final mark | unclassified | **fails** |
 
-End a full example sentence with a period, so it gets the sentence check. When a phrase is a deliberate fragment that doesn't parse on its own (a list of close words, a pronunciation), mark it with a comment right before the span: `<!-- lint: fragment -->`. A fragment is parsed with sample context supplied before and after it, and must parse that way. The wrong form in a checkpoint's **Fix it** prompt takes `<!-- lint: error -->` ([decision items](translation-exercises.md#item-types)): it need not parse, and it does not count as a use of any construction. The marker fails anywhere else. There is no skip marker: `<!-- lint: skip -->` fails, as does any other `<!-- lint: … -->` value. Fenced blocks need an info string: ` ```agebon ` to check each line like a span, or ` ```text ` for notation and diagrams (a `text` line that reads as an Agebon phrase or sentence fails).
+End a full example sentence with a period, so it gets the sentence check. When a phrase is a deliberate fragment that doesn't parse on its own (a list of close words, a pronunciation), mark it with a comment right before the span: `<!-- lint: fragment -->`. A fragment is parsed with sample context supplied before and after it, and must parse that way. The wrong form in a checkpoint's **Fix it** prompt takes `<!-- lint: error -->` ([decision items](translation-exercises.md#item-types)): it need not parse, and it does not count as a use of any construction. The marker fails anywhere else. There is no skip marker: `<!-- lint: skip -->` fails, as does any other `<!-- lint: … -->` value. Fenced blocks need an info string: ` ```ageben ` to check each line like a span, or ` ```text ` for notation and diagrams (a `text` line that reads as an Ageben phrase or sentence fails).
 
 A morph line is compared only after the whole example parses. If it doesn't parse, that is a finding, never a skipped comparison.
 
@@ -553,7 +553,7 @@ An example that parses also fails when a plain `/b/` join with no items sits rig
 ### HTML comments
 <a id="html-comments"></a>
 
-VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`yal`, Compare-with quota, and so on). The learner never sees them; `build` markdown checks skip comment bodies, except the retie markers in [retie-safe writing](#retie-safe-writing). `retie-docs` skips comment bodies too, except `<!-- gloss: … -->` morph lines, which follow their Agebon.
+VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`yal`, Compare-with quota, and so on). The learner never sees them; `build` markdown checks skip comment bodies, except the retie markers in [retie-safe writing](#retie-safe-writing). `retie-docs` skips comment bodies too, except `<!-- gloss: … -->` morph lines, which follow their Ageben.
 
 ```markdown
 <!-- Exception to house-cast: this block teaches speaker/listener specials, so `zugobon` is the point. -->
@@ -564,11 +564,11 @@ Do **not** use `<!--@include: …-->` for notes — that is a VitePress include.
 ### Retie-safe writing
 <a id="retie-safe-writing"></a>
 
-A lexicon retie rewrites Agebon it can see as a word. Write so each spelling has one place to move.
+A lexicon retie rewrites Ageben it can see as a word. Write so each spelling has one place to move.
 
-- Agebon in prose is one backtick span: a whole word, or a whole sentence or phrase. Italics are English (*sleep*, *one*, *Azozon*), even when the letters happen to spell an Agebon word. A retie never rewrites italics, so Agebon in italics goes stale. A cite interior that is Agebon is that span. When prose names the two parts of a compound, each part is its own span; the whole stem stays one span when that word is what the example parses.
+- Ageben in prose is one backtick span: a whole word, or a whole sentence or phrase. Italics are English (*sleep*, *one*, *Azozon*), even when the letters happen to spell an Ageben word. A retie never rewrites italics, so Ageben in italics goes stale. A cite interior that is Ageben is that span. When prose names the two parts of a compound, each part is its own span; the whole stem stays one span when that word is what the example parses.
 - A heading whose backtick form is a published root, a compound stem, or an overlay sense form gets an explicit English `{#id}` that does not contain that spelling (`` ### Gravity (`abuho` / `oduho`) {#gravity} ``). Closed letters and hooks (`a`, `hal`, `am`) may stay in the auto slug. Recipe headings follow the same rule.
-- `<!-- retie: skip -->` is only for a page that records past spellings, or an editor note whose Agebon only illustrates tooling (a CLI call, a parser stage), never a page under `docs/grammar/`. A skipped page's examples go stale on purpose; do not copy one into a grammar page.
+- `<!-- retie: skip -->` is only for a page that records past spellings, or an editor note whose Ageben only illustrates tooling (a CLI call, a parser stage), never a page under `docs/grammar/`. A skipped page's examples go stale on purpose; do not copy one into a grammar page.
 - Code names a closed root by emoji in [`src/closed-roots.ts`](../../src/closed-roots.ts), not by a string spelling.
 
 The house-cast English name (*Azozon*) stays. It is the capitalised root, and the retie rewrites that copy from the named word.

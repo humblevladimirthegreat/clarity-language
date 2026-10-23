@@ -140,14 +140,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *camera* | `ugewel` | 📷 |
 | *pencil* | `obewol` | ✏️ |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -158,7 +158,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *run* | `veruvol` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Azozon writes on the page.*
 
@@ -184,7 +184,7 @@ z-Alazun | d-page | [using | b-pencil] | v-write
 [z-camera | [used-by | b-Azozon]]
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zahelan dugewel om balazun vayebel.`
 

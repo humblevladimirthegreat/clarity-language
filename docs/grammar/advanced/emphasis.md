@@ -6,7 +6,7 @@ band: advanced
 
 ### English emphasis and clefts {#english-emphasis}
 
-English often moves or stresses a word to single it out: *It's a cat that Azozon sees*, *It was Azozon who saw the cat*, or a stressed *Azozon saw the cat*. Agebon word order carries no emphasis. A sentence's usual order is set by its [speech act](/speech-moves#act-word-order), and any other order means exactly the same (with joined verbs, a word's place says which verb it goes with, [verb-phrase forms](/vp-clause-forms#vp-clause-forms)). When you translate, ask what the English emphasis is doing.
+English often moves or stresses a word to single it out: *It's a cat that Azozon sees*, *It was Azozon who saw the cat*, or a stressed *Azozon saw the cat*. Ageben word order carries no emphasis. A sentence's usual order is set by its [speech act](/speech-moves#act-word-order), and any other order means exactly the same (with joined verbs, a word's place says which verb it goes with, [verb-phrase forms](/vp-clause-forms#vp-clause-forms)). When you translate, ask what the English emphasis is doing.
 
 If the English sets one person or thing against others (*Azozon, not someone else*), put the [contrastive focus](/tone-marks#tone-marks) mark **`&`** on that word.
 
@@ -24,10 +24,10 @@ If the English only puts the new part first, with no others to set it against (a
 >
 > "Azozon sees a cat."
 
-Translating the other way, an Agebon sentence in an unusual order (a line fitted to a tune, say) becomes a plain English sentence.
+Translating the other way, an Ageben sentence in an unusual order (a line fitted to a tune, say) becomes a plain English sentence.
 
 <!-- cheat-sheet: word-shape-clause -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `zazozon dogozel vayebel.` | plain | *Azozon sees a cat.* / *It's a cat that Azozon sees.* (answering *what?*) |
 | `&zazozon dogozel vayebel.` | subject contrasted | *It was Azozon who saw the cat.* |
@@ -48,7 +48,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *balloon* | `eboval` | 🎈 |
 | *drum* | `adoral` | 🥁 |
@@ -57,7 +57,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -68,7 +68,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *punch* | `vabuvul` |
 | *sneak* | `vozuyul` |
 
-#### English → Agebon {#advanced-english-to-agebon}
+#### English → Ageben {#advanced-english-to-ageben}
 
 **1.** *Hastily, Azozon punches a balloon.*
 
@@ -104,7 +104,7 @@ z-Alazun | &d-drum | v-punch
 &z-Ahelan | d-mask | v-see
 :::
 
-#### Agebon → English {#advanced-agebon-to-english}
+#### Ageben → English {#advanced-ageben-to-english}
 
 **1.** `dadorol zahelan vayebel.`
 

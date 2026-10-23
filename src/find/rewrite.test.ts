@@ -172,7 +172,7 @@ describe("rewrite spans", () => {
 
     const bad = rewriteMarkdownSpans(
       page,
-      patches.map((p) => ({ ...p, nextSource: "not-agebon %%%" })),
+      patches.map((p) => ({ ...p, nextSource: "not-ageben %%%" })),
       tables,
     );
     assert.ok(bad.parseErrors.length > 0);
@@ -182,7 +182,7 @@ describe("rewrite spans", () => {
       page,
       [
         patches[0]!,
-        { example: patches[0]!.example, nextSource: "not-agebon %%%" },
+        { example: patches[0]!.example, nextSource: "not-ageben %%%" },
       ],
       tables,
     );

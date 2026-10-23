@@ -21,7 +21,7 @@ With nothing listed, **-r** in the asked-about slot is an open *who* / *what*. B
 
 ### A blank inside a dependent {#blank-in-dependent}
 
-English puts *who* in different places in *Do you know who walks?* and *Who do you think walks?*. In the first, the inner clause asks; in the second, the main question asks. In Agebon the blank stays in the inner clause both times (it never moves to the front of the outer sentence), and the stand-in's vowel says which question it belongs to. **`derl`** (*whether*) is itself question-like, so its blank belongs to it, and the outer **`yel`** is yes/no. **`darl`** (*that*) is statement-like and cannot ask, so its blank belongs to the outer **`yel`**.
+English puts *who* in different places in *Do you know who walks?* and *Who do you think walks?*. In the first, the inner clause asks; in the second, the main question asks. In Ageben the blank stays in the inner clause both times (it never moves to the front of the outer sentence), and the stand-in's vowel says which question it belongs to. **`derl`** (*whether*) is itself question-like, so its blank belongs to it, and the outer **`yel`** is yes/no. **`darl`** (*that*) is statement-like and cannot ask, so its blank belongs to the outer **`yel`**.
 
 > `yel zawan vanam derl zar vowurol.`
 >
@@ -45,7 +45,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *listener* | `awan` |
 | *map* | `agol` |
@@ -55,7 +55,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *knowledge* | `vanam` |
 | *ticket* | `odenol` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Who do you think walks?*
 
@@ -81,7 +81,7 @@ y-question | [d-map | d-wh]
 y-question | [d-map | d-ticket | d-wh]
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `yel dagol dodenol der.`
 

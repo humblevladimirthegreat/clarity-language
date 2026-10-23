@@ -1,5 +1,5 @@
 phenomenon	stage	english
-# Wild set for scripts/english-helper-recall.ts: plain English with no reference Agebon, drafted from the
+# Wild set for scripts/english-helper-recall.ts: plain English with no reference Ageben, drafted from the
 # phenomenon list alone, never from cue rows. Never copy these into cue rows or examples; grow it only
 # through the triage loop (docs/proposals/english-helper-quality.md).
 pronouns	beginner	I am tired.

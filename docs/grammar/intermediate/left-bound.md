@@ -48,7 +48,7 @@ A verb can take several `/h/` or `/th/` units. Each plain word counts as one uni
 Beginner used **`welazem`** *very* before an adjective. The same `/w/` slot takes a few stock degree words, and each one works before an adverb as well as an adjective.
 
 <!-- cheat-sheet: word-shape-clause -->
-| Agebon | English | Cue |
+| Ageben | English | Cue |
 |--------|---------|-----|
 | `welazem` | *very* | 🐘: big, as a degree |
 | `wohalal` | *extremely* / *overwhelmingly* | 🌊: an ocean of it |
@@ -83,7 +83,7 @@ Beginner used **`welazem`** *very* before an adjective. The same `/w/` slot take
 Two stock words go in `/h/` and describe the verb itself. Use **`hayurom`** *kind of* / *sort of* to hedge the action, and **`herugom`** for *again*.
 
 <!-- cheat-sheet: word-shape-clause -->
-| Agebon | English | Cue |
+| Ageben | English | Cue |
 |--------|---------|-----|
 | `hayurom` | *kind of* / *sort of* | 📈: some degree, not a full one |
 | `herugom` | *again* | 🔁: the same thing once more |
@@ -102,7 +102,7 @@ Two stock words go in `/h/` and describe the verb itself. Use **`hayurom`** *kin
 
 ### Leaving out who acts {#no-subject}
 
-English uses the passive (*The cat was seen*, *Mistakes were made*) to avoid naming who acted. Agebon simply leaves out the `/z/` word. The verb and its object stay the same, and the sentence says nothing about who did it.
+English uses the passive (*The cat was seen*, *Mistakes were made*) to avoid naming who acted. Ageben simply leaves out the `/z/` word. The verb and its object stay the same, and the sentence says nothing about who did it.
 
 > `dazozon vayebel.`
 >
@@ -120,14 +120,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *ticket* | `odenol` | 🎫 |
 | *again* | `herugom` | 🔁 from *repeat*: the same thing once more |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -146,7 +146,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vayebel` |
 | *find* | `vumewel` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *The police officer, who is the same person as sleepy Azozon, stands up.*
 
@@ -190,7 +190,7 @@ z-Alazun | [w-ocean | h-haste] | v-stand
 z-Alazun | [d-train | [w-very | g-blue]] | v-see
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `glorel blazozon zebayol gorel blagayul.`
 

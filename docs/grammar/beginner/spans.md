@@ -4,7 +4,7 @@ band: beginner
 
 # Spans
 
-Some parts of a sentence are not ordinary Agebon words: a quote of what someone said, a word from another language, a comment in parentheses. Agebon sets such a part apart as a **span**: a role letter, then a pair of brackets around the words. The role letter says what the whole bracketed chunk does in the sentence (subject, object, verb, adverb, and so on), so the rest of the sentence reads as usual. A span is written only: speech has no word for its open or close.
+Some parts of a sentence are not ordinary Ageben words: a quote of what someone said, a word from another language, a comment in parentheses. Ageben sets such a part apart as a **span**: a role letter, then a pair of brackets around the words. The role letter says what the whole bracketed chunk does in the sentence (subject, object, verb, adverb, and so on), so the rest of the sentence reads as usual. A span is written only: speech has no word for its open or close.
 
 
 Start with a quote of what someone said.
@@ -22,7 +22,7 @@ Start with a one-word quote as the object of *said*. A [greeting](word-endings.m
 >
 > "Azozon said “Azozon.”" (hello)
 
-The whole `d[azozon]` is the direct object (who or what is acted on). When the quote is a whole Agebon sentence, each word inside starts with its own role letter, as in any sentence.
+The whole `d[azozon]` is the direct object (who or what is acted on). When the quote is a whole Ageben sentence, each word inside starts with its own role letter, as in any sentence.
 
 ### Exact, paraphrase, proper
 <a id="when-required"></a>
@@ -34,7 +34,7 @@ A span with no mark is **exact**: the words as they were said (`d[azozon]`). Wri
 A work or person with a one-word name is an ordinary **-n** word (`donuren`), not `d@[onuren]`, unless a role letter or an ending is part of the title itself. The mark belongs to the brackets; the words inside keep their usual endings.
 
 <!-- cheat-sheet: restrictors-spans -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | *(none)* | exact | verbatim wording | bare brackets already quote; extra ink would hedge |
 | **`~`** | paraphrase | the gist, not the exact words | **~** looks like “about / approximately” |
@@ -62,7 +62,7 @@ A work or person with a one-word name is an ordinary **-n** word (`donuren`), no
 
 ### Opaque and loan words {#loans}
 
-To use a word from another language, a bit of code, or any spelling that is not Agebon, write the role letter, then angle brackets around it. That span is **opaque**: the inside is taken exactly as spelled and is not read as Agebon words. Write no letter after the closing `>`. The faithfulness marks are the same as on a cite: none, **`~`**, or **`@`**.
+To use a word from another language, a bit of code, or any spelling that is not Ageben, write the role letter, then angle brackets around it. That span is **opaque**: the inside is taken exactly as spelled and is not read as Ageben words. Write no letter after the closing `>`. The faithfulness marks are the same as on a cite: none, **`~`**, or **`@`**.
 
 > <code>zazozon d&lt;kimchi&gt; vayebel.</code>
 >
@@ -70,11 +70,11 @@ To use a word from another language, a bit of code, or any spelling that is not 
 >
 > "Azozon saw kimchi." (a foreign word)
 
-Inside <code>&lt;&gt;</code>, keep the source’s capital letters when its writing system has them (<code>d&lt;NaCl&gt;</code>, <code>d@&lt;iPhone&gt;</code>). Agebon letters outside the brackets are always [lowercase](phonology.md). Use **`@`** when the bracketed word is a name or title.
+Inside <code>&lt;&gt;</code>, keep the source’s capital letters when its writing system has them (<code>d&lt;NaCl&gt;</code>, <code>d@&lt;iPhone&gt;</code>). Ageben letters outside the brackets are always [lowercase](phonology.md). Use **`@`** when the bracketed word is a name or title.
 
 When the lexicon already has a matching root, write the ordinary word (`dogozel`), not a span.
 
-On its own, outside a sentence, a foreign name or word is written with no role letter: just the marks and the brackets (<code>@&lt;Sam&gt;</code>), like other [citation forms](word-endings.md#citation-forms). In a sentence the span fills a role, so it takes a role letter (<code>z@&lt;Sam&gt;</code>). A person’s or place’s name can also take an Agebon spelling that follows the English sound; type it in the [lexicon](lexicon.md#respell). Keep the span when the original spelling is the point.
+On its own, outside a sentence, a foreign name or word is written with no role letter: just the marks and the brackets (<code>@&lt;Sam&gt;</code>), like other [citation forms](word-endings.md#citation-forms). In a sentence the span fills a role, so it takes a role letter (<code>z@&lt;Sam&gt;</code>). A person’s or place’s name can also take an Ageben spelling that follows the English sound; type it in the [lexicon](lexicon.md#respell). Keep the span when the original spelling is the point.
 
 ### Calls and reactions (`/y/`) {#y-spans}
 
@@ -87,14 +87,14 @@ The **`@`** mark decides which, as **-n** does on a native word. With **`@`**, t
 
 To add a side comment in parentheses, write a role letter, then **`(`** … **`)`**. That span is an **aside**. The role letter says what the comment is about, and the aside sits where a word with that letter sits. (cue: round parentheses, as in English)
 
-| Agebon | Comments on | Sits |
+| Ageben | Comments on | Sits |
 |--------|-------------|------|
 | `th(…)` | the whole sentence | anywhere a [stance](clause.md#stance-th) word may sit |
 | `g(…)` | the noun before it | right after that noun, like an [adjective](clause.md#adjectives-ɡ) |
 | `w(…)` | the next `/ɡ/`, `/h/`, or `/th/` word | right before that word, like [*very*](clause.md#adjective-detail-w) |
 | `h(…)` | the action | anywhere an [adverb](clause.md#adverbs-h) may sit |
 
-The inside is ordinary Agebon: a fragment, or a clause with the **same speech act** as the outer sentence (both statements, both questions, or both commands). An aside comments; it does not call anyone or react, so it never goes under `/y/`. It fills no slot of the verb either, so it never goes under `/z/`, `/d/`, `/b/`, or `/v/`.
+The inside is ordinary Ageben: a fragment, or a clause with the **same speech act** as the outer sentence (both statements, both questions, or both commands). An aside comments; it does not call anyone or react, so it never goes under `/y/`. It fills no slot of the verb either, so it never goes under `/z/`, `/d/`, `/b/`, or `/v/`.
 
 > `zazozon vowurol th(hugowul).`
 >
@@ -155,7 +155,7 @@ A span can fill any role a word can, not only the object. The letter before the 
 > "Don’t say “stop,” Alazun."
 
 <!-- cheat-sheet: restrictors-spans -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `/d/` | object | *said / wrote / saw “…”* (`d[azozon]`, <code>d&lt;kimchi&gt;</code>) | **d** ≈ done to |
 | `/z/` | subject | a foreign name as the subject (<code>z@&lt;Sam&gt;</code>) | **z** ≈ star (who it is about) |
@@ -188,7 +188,7 @@ To use a foreign verb, adjective, adverb, or degree word (*googled*, *rouge*, *m
 >
 > "Azozon talks to Sam." (a foreign name)
 
-The letter before the bracket belongs to the whole span. Agebon words inside a cite start with **their own** role letters.
+The letter before the bracket belongs to the whole span. Ageben words inside a cite start with **their own** role letters.
 
 ### Practice {#beginner-practice}
 
@@ -198,7 +198,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *dance* | `vunurol` | 🕺 |
 | *stop* | `vezohul` | 🛑 |
@@ -210,7 +210,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -220,7 +220,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *walk* | `vowurol` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Azozon said “Azozon.”* (hello)
 
@@ -270,7 +270,7 @@ y-NAME.OPAQUE["Sam"] | y-question | z-Azozon | v-dance
 z-Alazun | v-walk | th-ASIDE[h-quiet]
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zalazun d@[egoren alazun] vayebel.`
 

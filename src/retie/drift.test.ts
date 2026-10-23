@@ -26,7 +26,7 @@ describe("rootsInUse", () => {
 });
 
 describe("lintPage", () => {
-  it("passes a page whose Agebon parses against the lexicon", () => {
+  it("passes a page whose Ageben parses against the lexicon", () => {
     assert.deepEqual(lintPage("p.md", CLEAN, tables), []);
   });
 

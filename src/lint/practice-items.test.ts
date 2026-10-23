@@ -16,7 +16,7 @@ describe("practiceItems", () => {
     );
     const [first] = items;
     assert.equal(first!.promptEnglish, "Ahelan sees Azozon.");
-    assert.deepEqual(first!.spoiler.map((line) => line.kind), ["agebon", "text", "also"]);
+    assert.deepEqual(first!.spoiler.map((line) => line.kind), ["ageben", "text", "also"]);
     assert.deepEqual(first!.alsoCorrect.map((span) => span.text), ["dazozon zahelan vayebel.", "yal zahelan dazozon vayebel."]);
     const pick = items.find((item) => item.type === "pick")!;
     assert.equal(pick.promptSpans.length, 2);
@@ -34,10 +34,10 @@ describe("practiceItems", () => {
 
 **1.** *stray*
 
-#### Agebon → English
+#### Ageben → English
 
 ${details(3)}
-#### English → Agebon
+#### English → Ageben
 
 ${details(2)}
 #### Compare
@@ -48,11 +48,11 @@ ${details(2)}
 `;
     const details_ = practiceItems(md).findings.map((f) => f.detail);
     assert.ok(details_.some((d) => d === "checkpoint item outside a known H4"));
-    assert.ok(details_.some((d) => d.startsWith('"English → Agebon" is out of template order')));
+    assert.ok(details_.some((d) => d.startsWith('"English → Ageben" is out of template order')));
     assert.ok(details_.some((d) => d.startsWith('unknown checkpoint H4 "Compare"')));
     assert.ok(details_.some((d) => d.startsWith("item **2.** should be **1.**")));
     assert.ok(details_.some((d) => d === "checkpoint item has no ::: details spoiler"));
-    assert.ok(details_.some((d) => d.startsWith("2 English → Agebon item(s)")));
+    assert.ok(details_.some((d) => d.startsWith("2 English → Ageben item(s)")));
     assert.ok(details_.some((d) => d.startsWith("1 decision item(s)")));
   });
 });
@@ -64,7 +64,7 @@ describe("practiceItems, level review", () => {
       "**Also correct:** \`dazozon zahelan vayebel.\`\n\n**Rule:** [Role letters](clause.md#role-letters)",
     ).replace(/#### Pick one[\s\S]*$/, "");
     const { items, findings } = practiceItems(md, { review: true });
-    assert.deepEqual(items[0]!.spoiler.map((line) => line.kind), ["agebon", "text", "also", "rule"]);
+    assert.deepEqual(items[0]!.spoiler.map((line) => line.kind), ["ageben", "text", "also", "rule"]);
     assert.deepEqual(findings, []);
     assert.ok(practiceItems(md).findings.some((f) => f.detail.startsWith("0 decision item(s)")));
   });
@@ -146,10 +146,10 @@ describe("practiceItems, scaled counts", () => {
 ${taught}
 ### Practice
 
-#### English → Agebon
+#### English → Ageben
 
 ${details(7)}
-#### Agebon → English
+#### Ageben → English
 
 ${details(7)}
 #### Pick one
@@ -159,7 +159,7 @@ ${details(2)}
     const details_ = practiceItems(md).findings.map((f) => f.detail);
     assert.deepEqual(details_, []);
     const over = practiceItems(md.replace(details(7), details(11))).findings.map((f) => f.detail);
-    assert.ok(over.some((d) => d === "11 English → Agebon item(s); this band teaches 10 sections, use 3–7"));
+    assert.ok(over.some((d) => d === "11 English → Ageben item(s); this band teaches 10 sections, use 3–7"));
   });
 
   it("fails when S is past 10, naming the page, the band, and S", () => {
@@ -170,10 +170,10 @@ ${details(2)}
 ${taught}
 ### Practice
 
-#### English → Agebon
+#### English → Ageben
 
 ${details(6)}
-#### Agebon → English
+#### Ageben → English
 
 ${details(6)}
 #### Pick one

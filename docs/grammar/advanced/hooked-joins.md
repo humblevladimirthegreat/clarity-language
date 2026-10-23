@@ -65,7 +65,7 @@ An [abstract landmark](/ending-grids#abstract-landmarks) reads the same way: `za
 
 The join part keeps its readings, so every [join ending](/joins#standalone-phrase) works, under any hook ending. The hook's ending sits before the seam and the join's at the end of the word, so the two never meet.
 
-| Join ending | Agebon | English | Under `yel` |
+| Join ending | Ageben | English | Under `yel` |
 |-------------|--------|---------|-------------|
 | **-r** | `zexar blohehal` | *someone at the house* | *who at the house?* |
 | **-r**, other series | `zexer blohehal` / `zexur blohehal` / `zexor blohehal` | *anyone at the house* / *someone else at the house* / *whoever ranks highest at the house* | *any? / who else? / which one most?* |
@@ -131,7 +131,7 @@ English *never since …* and *always, until …* bound how often something happ
 > "You haven't listened since the thunderstorm, as far as I know."
 
 <!-- cheat-sheet: joins-hooks -->
-| Hook | Times it bounds | Agebon | English |
+| Hook | Times it bounds | Ageben | English |
 |------|-----------------|--------|---------|
 | `a` | within the landmark's span | `haxual blanulul` | *always, during the thunderstorm* |
 | `o` | at that moment | `hexar blanulul` | *at some point at the thunderstorm* |
@@ -183,7 +183,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *walk* | `vowurol` |
 | *ship* | `ahaval` |
@@ -191,7 +191,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *guard* | `agayul` |
 | *anchor* | `awul` |
 
-#### English → Agebon {#advanced-english-to-agebon}
+#### English → Ageben {#advanced-english-to-ageben}
 
 **1.** *Everyone on the ship walks.*
 
@@ -217,7 +217,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 [z-on-x-everything | bl-boat] | v-walk
 :::
 
-#### Agebon → English {#advanced-agebon-to-english}
+#### Ageben → English {#advanced-ageben-to-english}
 
 **1.** `zuoxual blawul vowurol.`
 

@@ -13,16 +13,16 @@ The ending is the ordinary name ending: `azabanan` is *Japan*, `azabanam` belong
 A person or place that is not in the lexicon can take the same spelling. The [lexicon](lexicon.md#respell) writes it for a name you type. To keep the original letters, use a [span](/spans#loans).
 
 <!-- cheat-sheet: sounds-spelling -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `azabanan` | place-name root with no cluster (seven letters, ends `n` + vowel) | *Japan* |
 | `avranzan` | place-name root that keeps a cluster | *France* |
 
 ### Singability constraints {#singability-constraints}
 
-These choices about word shape make Agebon easier to sing:
+These choices about word shape make Ageben easier to sing:
 
-| Constraint | Why it helps | How Agebon keeps it |
+| Constraint | Why it helps | How Ageben keeps it |
 |------------|--------------|---------------------|
 | One vowel per letter | Sliding from one vowel to another mid-note forces the mouth to change | Stacked vowels = separate syllables |
 | Few consonant clusters (consonants with no vowel between) | Clusters are harder to say quickly | Ordinary shape is consonant-then-vowel at the start of a syllable; the few clusters are listed below |
@@ -33,21 +33,21 @@ These choices about word shape make Agebon easier to sing:
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-ln` / `-r` / `-rl` / `-rm` (optional `-x`); stand-ins end in `-rl` / `-rm` / `-rth` |
 
-The clusters Agebon allows: left-hanging `gl-`; hosted `bl-`, with a [syllabic `l`](/phonotactics#syllabic-l) before `r` / `w`; number-word role letter + `r`; role letter + `w` on a [tag pronoun](/tag-pronouns#tag-pronouns), a [role compound](/roles#role-compounds), a [role pointer](/pronouns#role-pointers), or a say word (`zw`, `dw`, `bw`, `gw`, `hw`, `yw`, and `blw` on a hosted role word); mid-word `mx` after the hook vowels of a hook prefix's **-m** frame, or after the number body of an approximate numeric prefix; mid-word `mx` or `rx` after the hook vowels of a hooked join (its hook's frame or point-back); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`; consonant runs inside a [place-name root](#place-name-roots). The `m` or `r` before `x` is the only syllable-final consonant inside an ordinary word.
+The clusters Ageben allows: left-hanging `gl-`; hosted `bl-`, with a [syllabic `l`](/phonotactics#syllabic-l) before `r` / `w`; number-word role letter + `r`; role letter + `w` on a [tag pronoun](/tag-pronouns#tag-pronouns), a [role compound](/roles#role-compounds), a [role pointer](/pronouns#role-pointers), or a say word (`zw`, `dw`, `bw`, `gw`, `hw`, `yw`, and `blw` on a hosted role word); mid-word `mx` after the hook vowels of a hook prefix's **-m** frame, or after the number body of an approximate numeric prefix; mid-word `mx` or `rx` after the hook vowels of a hooked join (its hook's frame or point-back); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`; consonant runs inside a [place-name root](#place-name-roots). The `m` or `r` before `x` is the only syllable-final consonant inside an ordinary word.
 
-Try singing a short Agebon line quickly at a high but comfortable pitch:
+Try singing a short Ageben line quickly at a high but comfortable pitch:
 
 `zazozon gamahum.`
 
 / zä.zo̞.zo̞n ɡä.mä.ɦʉm /
 
-Compare a line, not Agebon, that piles up vowels side by side, clusters, and consonants that stop the sound mid-word. It is only a little harder to speak, but much harder to hold on a note:
+Compare a line, not Ageben, that piles up vowels side by side, clusters, and consonants that stop the sound mid-word. It is only a little harder to speak, but much harder to hold on a note:
 
 / seiɹ ˈʈʂuɹt tis ˈheb.ɡiɹn fuofts /
 
 ### Rhythm and stress {#rhythm-and-stress}
 
-Give every syllable about the same length, and keep its vowel full however fast you talk. English weakens unstressed vowels to *uh* (the second *a* in *banana*). Agebon never does, because many words differ by one vowel (`val`, `vel`, `vul`), and weak vowels would make them sound alike.
+Give every syllable about the same length, and keep its vowel full however fast you talk. English weakens unstressed vowels to *uh* (the second *a* in *banana*). Ageben never does, because many words differ by one vowel (`val`, `vel`, `vul`), and weak vowels would make them sound alike.
 
 Each word takes a light stress on its **first syllable**. Since the rule never changes, spelling does not mark it. The ending consonant already tells a listener where a word stops; the stressed first beat tells them where the next one starts, so fast speech still splits into words. A [number word](/numbers) stresses the last digit of each group instead.
 
@@ -78,7 +78,7 @@ Pitch is heard against your own range, so it helps most inside a sentence, and i
 
 ### Words never said quietly {#never-quiet}
 
-English swallows small words that change the meaning: *can* and *can't* often differ by one weak sound, and *I think* is usually mumbled. In Agebon, give these words their full stress and a clear [pitch on each vowel](#vowel-pitch-values) even when the words around them are light:
+English swallows small words that change the meaning: *can* and *can't* often differ by one weak sound, and *I think* is usually mumbled. In Ageben, give these words their full stress and a clear [pitch on each vowel](#vowel-pitch-values) even when the words around them are light:
 
 | Words | Why |
 |-------|-----|
@@ -120,7 +120,7 @@ In song, a period takes a rest or a held note, and an island is phrased as its o
 
 ### Singing on one note {#one-note}
 
-Every distinction Agebon makes is spelled in its letters, so a line sung on a single pitch still says everything it says in speech. A melody owns the pitch, so song drops [vowel pitch](#vowel-pitch-values): sing each vowel on the melody's note. A songwriter may let a melody follow the vowel pitches, but no song has to. When a melody takes over your pitch, voice each [tone mark](/tone-marks#tone-marks) with how you shape the note:
+Every distinction Ageben makes is spelled in its letters, so a line sung on a single pitch still says everything it says in speech. A melody owns the pitch, so song drops [vowel pitch](#vowel-pitch-values): sing each vowel on the melody's note. A songwriter may let a melody follow the vowel pitches, but no song has to. When a melody takes over your pitch, voice each [tone mark](/tone-marks#tone-marks) with how you shape the note:
 
 | Mark | In speech | In song |
 |------|-----------|---------|
@@ -132,7 +132,7 @@ Every distinction Agebon makes is spelled in its letters, so a line sung on a si
 
 ### Thinking sounds {#thinking-sounds}
 
-When you need a moment in the middle of speaking, English fills the gap with *um* or *uh*. Agebon has two sounds for that gap, and each tells the listener what would help. Neither is a word, and neither is written.
+When you need a moment in the middle of speaking, English fills the gap with *um* or *uh*. Ageben has two sounds for that gap, and each tells the listener what would help. Neither is a word, and neither is written.
 
 | Sound | Means | The listener | Cue |
 |-------|-------|--------------|-----|

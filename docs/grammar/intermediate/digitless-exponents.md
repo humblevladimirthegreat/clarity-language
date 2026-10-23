@@ -14,7 +14,7 @@ English *how many*, *thousands*, *27 million*, and *infinitely many* name an amo
 Beginner already used **`gral`** for *more than one*. Any marker may drop every digit group: **role letter + marker + ending** only. The marker still says what kind of number this is. With **-l** / **-m** / **-n**, the amount, rank, or label is **unspecified**. With **-r**, the word is a blank, like a standalone join **-r**: *some number* in a statement, *which number?* in a [fill-ask](/questions#fill-ask-r).
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|---------|---------|-----|
 | **`ra`** (`…+`) | unspecified **positive scalar**, specialized to **plural count / amount `>1`** | complements `…+0` (zero), `…+1` (one), `…+N` (exact N≥2) | **`a`** ≈ add |
 | **`ru`** (`…-`) | unspecified **negative scalar** | *some negative amount*; exact negatives keep digits (`…-N`) | **`u`** ≈ undo |
@@ -71,7 +71,7 @@ To ask for a **number**, write a [number word](/numbers) with no digits and the 
 > "How many cats does Azozon see?"
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `g=+` (`grar`) | fill a count or amount | *How many?* / *How much?* | **a** ≈ add |
 | `g=#` (`gror`) | fill a place in order | *Which place?* (*which floor, which chapter*) | **e** ≈ order |
@@ -172,7 +172,7 @@ When a number has more than one digit group, you say each comma. The spoken comm
 Syllable by syllable: `g` + `ra` + wa ge ya za + **the** + lu vo mo + `l`.
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `g+5e3,860` | count | *5860* |
 | `g-1e9,265e3,4` | negative count | *−1,000,265,004* |
@@ -201,13 +201,13 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Use
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *truck* | `udaval` | 🚚 |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -218,7 +218,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Use
 | *sit* | `vehohel` |
 | *slow* | `uzezam` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *A few grains sit.*
 
@@ -254,7 +254,7 @@ z-grain-x | g-+-e3
 z-cart-x | g-5e3,860
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `yel wrar huzezam zudaval.`
 

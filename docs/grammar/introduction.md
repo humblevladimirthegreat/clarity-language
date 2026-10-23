@@ -1,14 +1,14 @@
-# Agebon Introduction
+# Ageben Introduction
 
-**Agebon** (`agebe` + the name ending **-n**) translates to English *clarity*.
+**Ageben** (`agebe` + the name ending **-n**) translates to English *clarity*.
 
-Agebon has two kinds of goals: psychological goals, which say what the language is for, and structural goals, which shape how it is built. This page covers the structural goals and how to work through these docs.
+Ageben has two kinds of goals: psychological goals, which say what the language is for, and structural goals, which shape how it is built. This page covers the structural goals and how to work through these docs.
 
 ## Purpose {#purpose}
 
-Agebon's psychological goals are **compassion**, **rationality**, and **empowerment**: it builds psychological distinctions into its vocabulary and grammar, so that ordinary speech nudges you toward them. [Why Agebon](purpose.md) explains those goals, tours the features that serve them, and says what the language does not claim.
+Ageben's psychological goals are **compassion**, **rationality**, and **empowerment**: it builds psychological distinctions into its vocabulary and grammar, so that ordinary speech nudges you toward them. [Why Ageben](purpose.md) explains those goals, tours the features that serve them, and says what the language does not claim.
 
-If you want an easy start before the grammar, [Claritish](claritish/index.md) teaches a few Agebon words you can drop into English today.
+If you want an easy start before the grammar, [Claritish](claritish/index.md) teaches a few Ageben words you can drop into English today.
 
 ## Structural goals {#structural-goals}
 
@@ -22,11 +22,11 @@ The first goal shows up as three kinds of clarity: in how a sentence is built, i
 
 ### Syntactic {#syntactic}
 
-In a clause, every content word (a word built on a root, such as a noun, verb, or adjective) begins with a **role letter**: a letter that names the word's role in the clause (subject, object, verb, …). English often makes you work out a word's role from its position; in Agebon you read it off the first letter. The default order is subject, object, verb, but you may put the words in any order, because each word still carries its role.
+In a clause, every content word (a word built on a root, such as a noun, verb, or adjective) begins with a **role letter**: a letter that names the word's role in the clause (subject, object, verb, …). English often makes you work out a word's role from its position; in Ageben you read it off the first letter. The default order is subject, object, verb, but you may put the words in any order, because each word still carries its role.
 
 ### Referential {#referential}
 
-English *it* and *they* can point to almost anything mentioned earlier. In Agebon, a pronoun copies the whole stem of an earlier word (the word without its role letter and ending) and points to the **most recently mentioned** word with that stem, so a fixed rule picks the one thing it means. A shorter **role pointer** names someone by the part they played in a recent event (*the latest doer*, *the other one*). A few special pronouns cover the speaker, the listener, and similar roles. When you need to keep several referents apart, you can give each a **tag** (A, E, O, U), and when the talk is about one thing, a **topic** is set overtly and one pronoun always means it.
+English *it* and *they* can point to almost anything mentioned earlier. In Ageben, a pronoun copies the whole stem of an earlier word (the word without its role letter and ending) and points to the **most recently mentioned** word with that stem, so a fixed rule picks the one thing it means. A shorter **role pointer** names someone by the part they played in a recent event (*the latest doer*, *the other one*). A few special pronouns cover the speaker, the listener, and similar roles. When you need to keep several referents apart, you can give each a **tag** (A, E, O, U), and when the talk is about one thing, a **topic** is set overtly and one pronoun always means it.
 
 ### Semantic {#semantic}
 
@@ -62,7 +62,7 @@ Inventory tables on grammar pages use these columns:
 
 | Column | What it is |
 |--------|------------|
-| **Agebon** | The word or letter you write. If **Same root as** is blank, this is the citation form (how the word is written on its own, outside a sentence). The in-clause spelling, with its role letter, appears only when **Same root as** names the everyday kind. |
+| **Ageben** | The word or letter you write. If **Same root as** is blank, this is the citation form (how the word is written on its own, outside a sentence). The in-clause spelling, with its role letter, appears only when **Same root as** names the everyday kind. |
 | **Use** | What the form **does**: its job in the sentence (subject, question, *because* joining two sentences). This is the rule. |
 | **English** | What you would **say**: the sense to produce or understand. In translation practice, a person's English is their name (*Azozon*), not the virtue word the name is built from. |
 | **Same root as** | The everyday kind of the same root, written as a citation (**-l**), shown when the row's English is a different word from that citation's English: the *wall* root for a row whose English is *because*, or the *eye* root for *see*. Blank when the English already is the citation (a row whose English is *climb* for the *climb* root). Not every table has this column. |
@@ -70,17 +70,17 @@ Inventory tables on grammar pages use these columns:
 
 **Cue** is optional. In a cue, `≈` means "sounds like." When **Same root as** is filled in, **Cue** does not repeat the everyday English; it only says why that picture fits.
 
-Above each **Practice** checkpoint is a word bank with two tables. **New words** (English, Agebon, Cue) lists the words that checkpoint introduces; when **Agebon** is not the citation of the English, the cue names the citation's sense (👁️ from *eye*). **Review** (English, Agebon) lists words from earlier checkpoints.
+Above each **Practice** checkpoint is a word bank with two tables. **New words** (English, Ageben, Cue) lists the words that checkpoint introduces; when **Ageben** is not the citation of the English, the cue names the citation's sense (👁️ from *eye*). **Review** (English, Ageben) lists words from earlier checkpoints.
 
 ## License {#license}
 
 These grammar pages, the lexicon, and the language materials are by **humblevladimirthegreat** and are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Software and tooling that accompany them are under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
-Reuse of particular grammatical ideas, lexicon entries, or a derived language is allowed. If you publish a derived language, a fork of the grammar, or a substantial adaptation, mention **Agebon** in the introduction (or equivalent front matter) as the source or inspiration.
+Reuse of particular grammatical ideas, lexicon entries, or a derived language is allowed. If you publish a derived language, a fork of the grammar, or a substantial adaptation, mention **Ageben** in the introduction (or equivalent front matter) as the source or inspiration.
 
-Do not present a fork, variant, or other project as the official Agebon project or as a drop-in substitute for these docs. Calling an unchanged copy of this language Agebon is fine. Calling a substantially different language Agebon as if it were this project is not. The licenses do not grant trademark rights and do not allow implying endorsement by the licensor.
+Do not present a fork, variant, or other project as the official Ageben project or as a drop-in substitute for these docs. Calling an unchanged copy of this language Ageben is fine. Calling a substantially different language Ageben as if it were this project is not. The licenses do not grant trademark rights and do not allow implying endorsement by the licensor.
 
-Suggested attribution: *Agebon by humblevladimirthegreat, licensed under CC BY 4.0.*
+Suggested attribution: *Ageben by humblevladimirthegreat, licensed under CC BY 4.0.*
 
 ## Acknowledgments {#acknowledgments}
 

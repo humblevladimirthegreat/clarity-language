@@ -14,7 +14,7 @@ import { isPracticeBoundary, practiceRanges } from "./practice-sections.js";
 import { practiceItems, RULE_RE } from "./practice-items.js";
 
 export type MorphPair = {
-  agebon: string;
+  ageben: string;
   morph: string;
   index: number;
   source: "blockquote" | "table" | "exercise";
@@ -23,7 +23,7 @@ export type MorphPair = {
 export type MorphMismatch = {
   kind: "mismatch";
   line: number;
-  agebon: string;
+  ageben: string;
   documented: string;
   parser: string;
 };
@@ -31,14 +31,14 @@ export type MorphMismatch = {
 export type MorphAmbiguity = {
   kind: "ambiguity";
   line: number;
-  agebon: string;
+  ageben: string;
   conflict: AmbiguityConflict;
 };
 
 export type MorphMissingGloss = {
   kind: "missing-gloss";
   line: number;
-  agebon: string;
+  ageben: string;
   scope: "teach" | "exercise";
 };
 
@@ -51,7 +51,7 @@ export type MorphCoverageGap = {
 export type MorphParseError = {
   kind: "parse-error";
   line: number;
-  agebon: string;
+  ageben: string;
   message: string;
 };
 
@@ -70,9 +70,9 @@ export function extractMorphPairs(markdown: string): MorphPair[] {
   const pairs: MorphPair[] = [];
   for (const block of extractExampleBlocks(markdown)) {
     pairs.push({
-      agebon: block.agebon,
+      ageben: block.ageben,
       morph: block.morph,
-      index: lineIndexToCharIndex(markdown, block.agebonIndex),
+      index: lineIndexToCharIndex(markdown, block.agebenIndex),
       source: "blockquote",
     });
   }
@@ -80,7 +80,7 @@ export function extractMorphPairs(markdown: string): MorphPair[] {
   for (const item of extractTranslationExercises(markdown)) {
     if (item.morph != null) {
       pairs.push({
-        agebon: item.agebon,
+        ageben: item.ageben,
         morph: item.morph,
         index: item.index,
         source: "exercise",
@@ -103,14 +103,14 @@ export type MorphGlossLintResult = {
 };
 
 function requireMorphForLoose(
-  agebon: string,
+  ageben: string,
   morph: string | null,
   loose: string | null,
   tables: ClassifyTables,
 ): boolean {
   if (loose == null) return false;
   if (morph != null) return false;
-  return !morphRedundantWithLoose(agebon, loose, tables);
+  return !morphRedundantWithLoose(ageben, loose, tables);
 }
 
 export function lintMorphGlossMarkdown(
@@ -127,16 +127,16 @@ export function lintMorphGlossMarkdown(
   for (const block of extractTeachBlocks(text)) {
     if (block.loose == null) continue;
     withLooseEnglish += 1;
-    const line = lineNumberAt(text, lineIndexToCharIndex(text, block.agebonIndex));
+    const line = lineNumberAt(text, lineIndexToCharIndex(text, block.agebenIndex));
     if (block.morph != null) {
       comparedWithLoose += 1;
-    } else if (morphRedundantWithLoose(block.agebon, block.loose, tables)) {
+    } else if (morphRedundantWithLoose(block.ageben, block.loose, tables)) {
       redundantOmitted += 1;
-    } else if (requireMorphForLoose(block.agebon, block.morph, block.loose, tables)) {
+    } else if (requireMorphForLoose(block.ageben, block.morph, block.loose, tables)) {
       findings.push({
         kind: "missing-gloss",
         line,
-        agebon: block.agebon,
+        ageben: block.ageben,
         scope: "teach",
       });
     }
@@ -148,13 +148,13 @@ export function lintMorphGlossMarkdown(
     const line = lineNumberAt(text, item.index);
     if (item.morph != null) {
       comparedWithLoose += 1;
-    } else if (morphRedundantWithLoose(item.agebon, item.loose, tables)) {
+    } else if (morphRedundantWithLoose(item.ageben, item.loose, tables)) {
       redundantOmitted += 1;
-    } else if (requireMorphForLoose(item.agebon, item.morph, item.loose, tables)) {
+    } else if (requireMorphForLoose(item.ageben, item.morph, item.loose, tables)) {
       findings.push({
         kind: "missing-gloss",
         line,
-        agebon: item.agebon,
+        ageben: item.ageben,
         scope: "exercise",
       });
     }
@@ -170,23 +170,23 @@ export function lintMorphGlossMarkdown(
 
   for (const pair of pairs) {
     const line = lineNumberAt(text, pair.index);
-    const compare = compareMorphGloss(pair.agebon, pair.morph, tables);
+    const compare = compareMorphGloss(pair.ageben, pair.morph, tables);
     if (compare.parseError) {
-      findings.push({ kind: "parse-error", line, agebon: pair.agebon, message: compare.parseError });
+      findings.push({ kind: "parse-error", line, ageben: pair.ageben, message: compare.parseError });
     } else if (!compare.ok) {
       findings.push({
         kind: "mismatch",
         line,
-        agebon: pair.agebon,
+        ageben: pair.ageben,
         documented: compare.expected,
         parser: compare.actual,
       });
     }
-    for (const conflict of collectAmbiguity(pair.agebon, tables)) {
+    for (const conflict of collectAmbiguity(pair.ageben, tables)) {
       findings.push({
         kind: "ambiguity",
         line,
-        agebon: pair.agebon,
+        ageben: pair.ageben,
         conflict,
       });
     }
@@ -201,7 +201,7 @@ export function lintMorphGlossMarkdown(
 }
 
 export type TranslationExercise = {
-  agebon: string;
+  ageben: string;
   morph: string | null;
   loose: string | null;
   index: number;
@@ -229,10 +229,10 @@ export function extractTranslationExercises(markdown: string): TranslationExerci
       const parsed = parseExerciseItem(itemLines);
       if (!parsed) continue;
       items.push({
-        agebon: parsed.agebon,
+        ageben: parsed.ageben,
         morph: parsed.morph,
         loose: parsed.loose,
-        index: lineIndexToCharIndex(markdown, itemStart + parsed.agebonLineOffset),
+        index: lineIndexToCharIndex(markdown, itemStart + parsed.agebenLineOffset),
       });
     }
   }
@@ -257,30 +257,30 @@ function convertedExercises(markdown: string): TranslationExercise[] {
     }
     if (item.type === "en-ag" || item.type === "ag-en") {
       const parsed = parseExerciseItem(itemLines);
-      if (parsed) out.push({ ...parsed, index: lineIndexToCharIndex(markdown, firstLine + parsed.agebonLineOffset) });
+      if (parsed) out.push({ ...parsed, index: lineIndexToCharIndex(markdown, firstLine + parsed.agebenLineOffset) });
       continue;
     }
     const texts = item.spoiler.filter((line) => line.kind === "text");
     if (item.type === "changes") {
       item.promptSpans.forEach((span, n) => {
         const morph = texts[n] ? normalizeExerciseMorph(texts[n]!.text) : null;
-        out.push({ agebon: span.text, morph, loose: null, index: span.index });
+        out.push({ ageben: span.text, morph, loose: null, index: span.index });
       });
       continue;
     }
-    const at = item.spoiler.findIndex((line) => line.kind === "agebon");
+    const at = item.spoiler.findIndex((line) => line.kind === "ageben");
     if (at < 0) continue;
     const answer = item.spoiler[at]!;
     const next = item.spoiler.slice(at + 1).find((line) => line.kind !== "speech");
     const morph = next?.kind === "text" ? normalizeExerciseMorph(next.text) : null;
-    out.push({ agebon: answer.text, morph, loose: item.promptEnglish, index: answer.index });
+    out.push({ ageben: answer.text, morph, loose: item.promptEnglish, index: answer.index });
   }
   return out;
 }
 
 function parseExerciseItem(
   itemLines: string[],
-): { agebon: string; morph: string | null; loose: string | null; agebonLineOffset: number } | null {
+): { ageben: string; morph: string | null; loose: string | null; agebenLineOffset: number } | null {
   const prompt = ITEM_START_RE.exec(itemLines[0] ?? "");
   const promptRest = prompt?.[2] ?? "";
   // A spoken → written prompt (🔊 row) is not the example; its answer in the details is.
@@ -290,20 +290,20 @@ function parseExerciseItem(
 
   if (promptCodes.length > 0) {
     return {
-      agebon: promptCodes.join(" "),
+      ageben: promptCodes.join(" "),
       morph,
       loose,
-      agebonLineOffset: 0,
+      agebenLineOffset: 0,
     };
   }
 
-  const fromDetails = detailsAgebon(itemLines);
+  const fromDetails = detailsAgeben(itemLines);
   if (!fromDetails) return null;
   return {
-    agebon: fromDetails.agebon,
+    ageben: fromDetails.ageben,
     morph,
     loose,
-    agebonLineOffset: fromDetails.lineOffset,
+    agebenLineOffset: fromDetails.lineOffset,
   };
 }
 
@@ -328,7 +328,7 @@ function extractExerciseLooseInDetails(itemLines: string[]): string | null {
   return null;
 }
 
-function extractExerciseMorph(itemLines: string[], agebonOnPrompt: boolean): string | null {
+function extractExerciseMorph(itemLines: string[], agebenOnPrompt: boolean): string | null {
   const body = itemLines.join("\n");
   const glossMatch = GLOSS_COMMENT_RE.exec(body);
   if (glossMatch) {
@@ -336,7 +336,7 @@ function extractExerciseMorph(itemLines: string[], agebonOnPrompt: boolean): str
   }
 
   let inDetails = false;
-  let agebonLineInDetails = -1;
+  let agebenLineInDetails = -1;
   for (let i = 0; i < itemLines.length; i++) {
     const trimmed = itemLines[i]!.trim();
     if (!inDetails) {
@@ -344,11 +344,11 @@ function extractExerciseMorph(itemLines: string[], agebonOnPrompt: boolean): str
       continue;
     }
     if (/^:::$/.test(trimmed)) break;
-    if (unwrapCode(trimmed) && agebonLineInDetails < 0) agebonLineInDetails = i;
+    if (unwrapCode(trimmed) && agebenLineInDetails < 0) agebenLineInDetails = i;
     const visibleMorph = visibleExerciseMorphLine(trimmed);
     if (!visibleMorph) continue;
-    if (agebonOnPrompt) return visibleMorph;
-    if (agebonLineInDetails >= 0 && i > agebonLineInDetails) {
+    if (agebenOnPrompt) return visibleMorph;
+    if (agebenLineInDetails >= 0 && i > agebenLineInDetails) {
       return visibleMorph;
     }
   }
@@ -365,7 +365,7 @@ function visibleExerciseMorphLine(trimmed: string): string | null {
   return null;
 }
 
-function detailsAgebon(itemLines: string[]): { agebon: string; lineOffset: number } | null {
+function detailsAgeben(itemLines: string[]): { ageben: string; lineOffset: number } | null {
   let inDetails = false;
   for (let i = 0; i < itemLines.length; i++) {
     const trimmed = itemLines[i]!.trim();
@@ -375,7 +375,7 @@ function detailsAgebon(itemLines: string[]): { agebon: string; lineOffset: numbe
     }
     if (/^:::/.test(trimmed)) break;
     const unwrapped = unwrapCode(trimmed);
-    if (unwrapped) return { agebon: unwrapped, lineOffset: i };
+    if (unwrapped) return { ageben: unwrapped, lineOffset: i };
   }
   return null;
 }
@@ -420,20 +420,20 @@ function extractMorphTables(markdown: string): MorphPair[] {
     if (i < lines.length && isDividerRow(lines[i]!)) i += 1;
 
     const morphCol = header.findIndex((h) => /^(morph(?:\s+gloss)?)$/i.test(h));
-    const agebonCol = header.findIndex((h) => /^(agebon|example)$/i.test(h));
-    const usable = morphCol >= 0 && agebonCol >= 0 && morphCol !== agebonCol;
+    const agebenCol = header.findIndex((h) => /^(ageben|example)$/i.test(h));
+    const usable = morphCol >= 0 && agebenCol >= 0 && morphCol !== agebenCol;
 
     while (i < lines.length && isTableRow(lines[i]!) && !isDividerRow(lines[i]!)) {
       if (usable) {
         const cells = splitRow(lines[i]!);
-        const agebonCell = cells[agebonCol] ?? "";
+        const agebenCell = cells[agebenCol] ?? "";
         const morphCell = cells[morphCol] ?? "";
-        if (!SKIP_CELL.test(agebonCell)) {
-          const agebon = unwrapCellAgebon(agebonCell);
+        if (!SKIP_CELL.test(agebenCell)) {
+          const ageben = unwrapCellAgeben(agebenCell);
           const morph = unwrapCellMorph(morphCell);
-          if (agebon && morph && looksLikeMorphLine(morph)) {
+          if (ageben && morph && looksLikeMorphLine(morph)) {
             pairs.push({
-              agebon,
+              ageben,
               morph,
               index: lineIndexToCharIndex(markdown, i),
               source: "table",
@@ -461,7 +461,7 @@ function splitRow(line: string): string[] {
   return t.split(/(?<!\\)\|/).map((cell) => cell.trim());
 }
 
-function unwrapCellAgebon(cell: string): string | null {
+function unwrapCellAgeben(cell: string): string | null {
   const codes = [...cell.matchAll(/`([^`]+)`/g)].map((m) => m[1]!);
   if (codes.length === 1) return codes[0]!;
   if (codes.length > 1) return codes.join(" ");
@@ -485,17 +485,17 @@ export function formatMorphGlossFinding(
   }
   if (finding.kind === "missing-gloss") {
     const label = finding.scope === "teach" ? "missing teach morph gloss" : "missing exercise morph gloss";
-    return `${loc}  ${label}  \`${finding.agebon}\``;
+    return `${loc}  ${label}  \`${finding.ageben}\``;
   }
   if (finding.kind === "coverage-gap") {
     return `${loc}  ${finding.message}`;
   }
   if (finding.kind === "parse-error") {
-    return `${loc}  sentence does not parse  \`${finding.agebon}\`  (${finding.message.split("\n")[0]})`;
+    return `${loc}  sentence does not parse  \`${finding.ageben}\`  (${finding.message.split("\n")[0]})`;
   }
   return [
     `${loc}  morph gloss mismatch`,
-    `  agebon: \`${finding.agebon}\``,
+    `  ageben: \`${finding.ageben}\``,
     `  documented: ${finding.documented}`,
     `  parser:     ${finding.parser}`,
   ].join("\n");

@@ -62,7 +62,7 @@ To say *sometimes*, *anytime*, or *some other time* without naming the occasion 
 *Sometimes* is the usual English for `har`, alongside *never* and *always*. It says only that there is **some** such occasion, as *something* does on a [join](joins.md). It does not mean *often*.
 
 <!-- cheat-sheet: restrictors-spans -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`har`** | unspecified member of the time inventory | *sometimes* / *at some time* | **-r** names a member |
 | **`her`** | unspecified member of a one-choice time menu | *anytime* (any one particular time, whichever you pick) | **e** ≈ either |
@@ -134,7 +134,7 @@ To say *never sleepy* or *sometimes sleepy*, limit only the adjective, not the w
 >
 > "Ahelan is sleepy at some other time."
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `/h/` | limits the clause | *when the verb claim counts* | **h** starts *how* / *when* / *where* |
 | `/w/` | same map on the next adjective | *never sleepy* | **w** ≈ with (stuck to that host) |
@@ -146,7 +146,7 @@ To say *never sleepy* or *sometimes sleepy*, limit only the adjective, not the w
 To say *when it rains, among other times*, end the list with open **`ham`** instead of closed **`hal`**. Open **-m** leaves room for occasions you did not list, so the claim no longer means *only when*. Each listed occasion is one simple content word, and every occasion takes the same role letter as the restrictor (`/h/`, or `/w/` before an adjective). Bare **`ham`** is *never, as far as I know*. (cue: **a** ≈ add; **ua** ≈ undo then add.)
 
 <!-- cheat-sheet: restrictors-spans -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`hal` / `ham`** | listed times; empty list is *never* | *only when…* / *when…, among other occasions* · bare *never* / *never, as far as I know* | **a** ≈ add |
 | **`hual` / `huam`** | every time minus listed exceptions | *always except when…* · bare *always* / *usually* (*always, as far as I know*) | **u** ≈ undo then **a** ≈ add |
@@ -165,7 +165,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *swim* | `vazuvol` | 🏊 |
 | *sleepy* | `uzemel` | 😪 |
@@ -175,7 +175,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -185,7 +185,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *run* | `veruvol` |
 | *angry* | `onumul` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Azozon swims only when it rains.*
 
@@ -235,7 +235,7 @@ z-Ahelan | [w-never | g-sleepy]
 z-Azozon | v-swim | h-night | h-when.open
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zahelan vehohel huam.`
 

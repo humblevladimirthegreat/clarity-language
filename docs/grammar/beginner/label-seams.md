@@ -17,7 +17,7 @@ English *Alazun is angry* can mean one outburst or the kind of person Alazun is.
 A label with no scope vowel says nothing about how far it reaches. Use one when that reach matters, the way you would add *this time* or *a teacher* in English.
 
 <!-- cheat-sheet: word-shape-clause -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`tha`** | a type across scenes: the quality follows them | *an anxious type*, *a teacher type* | **a** ≈ biggest (the claim covers scenes) |
 | **`tho`** | a practiced role: the office they inhabit | *a teacher*, *lying as their craft* | **o** ≈ medium (a life they inhabit) |
@@ -105,7 +105,7 @@ A role word takes no **`th`** seam after its stem: its scope is written once, at
 The four scope vowels also combine in pairs, the same pairs that [joins](joins.md) and [hooks](hooks.md#extra-noun) use. A pair that starts with **`u`** reads like a join's *everything but*: **`u`** is every scene, and the second vowel is the one set aside (*every time but this one*, *with everyone but Alazun*, *as themselves, not in the role*). The other pairs read like the extra-noun hooks: **`ae`** *over*, **`ao`** *using*, **`oe`** *toward*. Do not read them as the first vowel's meaning followed by the second's. Do not read a stack as the new simplex letters glued together.
 
 <!-- cheat-sheet: word-shape-clause -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thae`** | the **situation**, not the person | *angry, but it's the situation*; *a teacher by circumstance* | **ae** ≈ over: the label hangs over the scene |
 | **`thao`** | **using** the role for a purpose | *playing the teacher* | **ao** ≈ using |
@@ -202,7 +202,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *frame* | `evogal` | 🖼️ |
 | *anxious* | `anomul` | 😰 |
@@ -211,7 +211,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -220,7 +220,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *lie* | `vulamul` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Ahelan is angry this time.*
 
@@ -246,7 +246,7 @@ z-Azozon | [g-pair-agent-teach | bl-Alazun]
 z-Ahelan | v-lie-th-situation
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zazozon ganomuthal.`
 

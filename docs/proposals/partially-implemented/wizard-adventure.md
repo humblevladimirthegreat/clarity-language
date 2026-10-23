@@ -1,25 +1,25 @@
 # Wizard text adventure
 
-Status: milestone 1 (the sandbox) implemented; milestones 2–4 proposed. Not design authority; fold into grammar / meta docs, then drop. A solo browser game for learning Agebon vocabulary and grammar. No LLM: the parser, a hand-written rule engine, and authored dialogue do all the work.
+Status: milestone 1 (the sandbox) implemented; milestones 2–4 proposed. Not design authority; fold into grammar / meta docs, then drop. A solo browser game for learning Ageben vocabulary and grammar. No LLM: the parser, a hand-written rule engine, and authored dialogue do all the work.
 
 ## Problem
 
-Learners read the grammar pages and practice in checkpoints, but nothing makes them *use* Agebon for a reason of their own. A game where Agebon is the only way to act, ask and answer gives that reason. Each correct sentence changes something in the world, and each wrong one gets an immediate, specific answer.
+Learners read the grammar pages and practice in checkpoints, but nothing makes them *use* Ageben for a reason of their own. A game where Ageben is the only way to act, ask and answer gives that reason. Each correct sentence changes something in the world, and each wrong one gets an immediate, specific answer.
 
 ## Proposal
 
-The player is a wizard, but most of play is mundane: picking things up, asking a guard where a book is, telling a dog to sit, answering a teacher's question. Every action is one Agebon sentence typed at a prompt, using the same clause grammar the grammar pages teach. **Spells are a thin layer on top**: the same grammar with a small set of extra verbs (make, unmake, grow, …) for what hands cannot do. There is no separate magic register to learn; magic is a reward for speaking well, not a second language.
+The player is a wizard, but most of play is mundane: picking things up, asking a guard where a book is, telling a dog to sit, answering a teacher's question. Every action is one Ageben sentence typed at a prompt, using the same clause grammar the grammar pages teach. **Spells are a thin layer on top**: the same grammar with a small set of extra verbs (make, unmake, grow, …) for what hands cannot do. There is no separate magic register to learn; magic is a reward for speaking well, not a second language.
 
-**Agebon in, Agebon out where the player can read it.** The player types only Agebon, and characters speak only Agebon. Narration shifts from English to Agebon one line at a time as the player's grammar grows ([narration](#narration)). The engine never parses English or mixed English–Agebon text, which keeps it to one input language; English is only ever output, and no sentence mixes the two.
+**Ageben in, Ageben out where the player can read it.** The player types only Ageben, and characters speak only Ageben. Narration shifts from English to Ageben one line at a time as the player's grammar grows ([narration](#narration)). The engine never parses English or mixed English–Ageben text, which keeps it to one input language; English is only ever output, and no sentence mixes the two.
 
-The engine both **reads and writes Agebon**. It parses what the player types, and characters speak back in Agebon built from world state. Every Agebon line the game writes is parser-checked before it is shown, as doc examples are at build time.
+The engine both **reads and writes Ageben**. It parses what the player types, and characters speak back in Ageben built from world state. Every Ageben line the game writes is parser-checked before it is shown, as doc examples are at build time.
 
 ### Learning principles
 
 **Input before output.**
 
 - Characters speak constantly, pitched just above the player's level: unlocked roots and grammar, plus at most one new root per scene, always tappable.
-- Any Agebon word in the game can be tapped for its gloss, and any line for its free English, at no cost. Lookups are tracked as a not-yet-known signal for repetition (below).
+- Any Ageben word in the game can be tapped for its gloss, and any line for its free English, at no cost. Lookups are tracked as a not-yet-known signal for repetition (below).
 
 **Make the language necessary.**
 
@@ -122,7 +122,7 @@ Two layers pick the likely meaning of a near-miss:
    |--------|-------|
    | The docs' own *`X`, not `Y`* contrasts and **Compare with** notes, extracted by script | e.g. `/b/` vs `/d/` after a *for* hook |
    | [Orthography](/phonology) | `t` for `th`, capitals, a hyphen after the PoS letter |
-   | Typed morph gloss (`z-dog v-chase`) | Run through gloss-inverse and recast as Agebon; players will type glosses because the game shows one every turn |
+   | Typed morph gloss (`z-dog v-chase`) | Run through gloss-inverse and recast as Ageben; players will type glosses because the game shows one every turn |
    | Endings | `-l` / `-m` / `-n` swapped |
    | Role letters | Missing, or `/b/` vs `/d/` confused |
 2. **Token edit distance**, limited to the player's unlocked roots and constructions. A candidate counts only if it parses to one tree and its nouns resolve to something in the scene.
@@ -131,16 +131,16 @@ One surviving candidate: the character recasts it. Two or more: the character as
 
 ### Narration {#narration}
 
-Narration comes from the same structured world events the systemic world and characters' reports already need, so it goes through the same generator and gating as character speech. Each narration line has an English version and an Agebon gloss, and the game shows the Agebon **whenever every construction and root in it is unlocked**, otherwise the English, with the other version one tap away. Narration drifts into Agebon line by line, with no switch point to choose, and re-gates with the docs like everything else.
+Narration comes from the same structured world events the systemic world and characters' reports already need, so it goes through the same generator and gating as character speech. Each narration line has an English version and an Ageben gloss, and the game shows the Ageben **whenever every construction and root in it is unlocked**, otherwise the English, with the other version one tap away. Narration drifts into Ageben line by line, with no switch point to choose, and re-gates with the docs like everything else.
 
-| When | Agebon narration |
+| When | Ageben narration |
 |------|------------------|
 | From [clause Beginner](/clause) | Events (*the guard sits*, *the bell rings*, *the dog sees the cat*) and descriptions (*the book is red*) |
 | Before location can be said | Scene contents as an emoji-and-citation-noun list, not sentences; *on the table* waits for [hooks](/hooks) |
 | As grammar arrives | Location, groups, *because* and *then* chaining, what characters believe |
 | Last | Authored story beats, which need an author-written gloss and stay English until then |
 
-By the end of the Beginner band nearly every generated line passes the gate, so the switch completes on its own. A setting, unlocked at the end of Beginner, forces all-Agebon (or all-English) narration for players who want it. Agebon and English lines are styled distinctly so the mix reads clearly. Early Agebon narration is plain and repetitive (*the X does Y*); for a beginner that is comprehensible input, not a flaw.
+By the end of the Beginner band nearly every generated line passes the gate, so the switch completes on its own. A setting, unlocked at the end of Beginner, forces all-Ageben (or all-English) narration for players who want it. Ageben and English lines are styled distinctly so the mix reads clearly. Early Ageben narration is plain and repetitive (*the X does Y*); for a beginner that is comprehensible input, not a flaw.
 
 ### Objects from root tails {#objects-from-root-tails}
 
@@ -200,14 +200,14 @@ A long construction the player has used correctly once (a trap, a lasting enchan
 
 Abstract senses live mostly in conversation, used as naturally as in the grammar's examples. To give them weight, characters carry a little inner state (trust, mood): abstract words in the player's speech move it, and characters answer differently because of it. Only a handful become spells (*loyalty* makes a creature follow you).
 
-Some puzzles should be solved through the psychological distinctions the language encodes, not by force: calming a hostile creature with gratitude rather than fire, or freeing a character by showing them that a belief has no evidence. This makes it an Agebon game, not just a wizard game written in Agebon.
+Some puzzles should be solved through the psychological distinctions the language encodes, not by force: calming a hostile creature with gratitude rather than fire, or freeing a character by showing them that a belief has no evidence. This makes it an Ageben game, not just a wizard game written in Ageben.
 
 ### No impossible quests {#no-impossible-quests}
 
 Impossible quests come from **dead ends**: the player burns the only key or drives off the only character who knows the password. A systemic world allows that whatever engine runs it, so three defenses reinforce each other:
 
 1. **No dead ends, enforced by the engine.** Quest-critical objects and characters are tagged and cannot be lost for good: a burned key turns up in the ashes, a scared character comes back. Experiment must never be punished in a language game.
-2. **Walkthrough tests in `npm test`.** Every quest has a script of Agebon sentences that must reach its goal. These double as the sandbox's finish line ([sandbox](#sandbox)).
+2. **Walkthrough tests in `npm test`.** Every quest has a script of Ageben sentences that must reach its goal. These double as the sandbox's finish line ([sandbox](#sandbox)).
 3. **Reachability check.** Each quest's preconditions and effects are data, and a search confirms the goal is reachable from the start and from every reachable state. It searches the quest's abstract state, not the whole world, so it needs no planner library.
 
 The first and third do most of the work; the walkthroughs catch drift between the engine's real behavior and the quest data.
@@ -223,13 +223,13 @@ The grammar docs and lexicon stay the only source for what the game teaches. Whe
 | When each root is introduced | The `core` column ([core vocabulary](../../meta/lexicon.md#core-vocabulary-column), [`core-vocabulary.ts`](../../../src/core-vocabulary.ts)) |
 | Object defaults | The `kind` / `shape` / `size` tail columns |
 | Sentences with English | The doc example index ([`llm-examples.ts`](../../../src/parse/llm-examples.ts)) |
-| Spelling from meaning | Gloss → Agebon round trip ([`gloss-inverse.ts`](../../../src/parse/gloss-inverse.ts), [glosses](../../meta/glosses.md#round-trip)) |
+| Spelling from meaning | Gloss → Ageben round trip ([`gloss-inverse.ts`](../../../src/parse/gloss-inverse.ts), [glosses](../../meta/glosses.md#round-trip)) |
 | Glosses and word pages | [`morph-gloss.ts`](../../../src/parse/morph-gloss.ts) and the lexicon CSVs |
 
 How the game uses them:
 
-1. **Gating from the docs.** The player's progress is a position on the cross-doc path plus the core roots reached. Every Agebon line shown (authored, generated, or an inscription) is parsed first; each construction's anchor must be at or before the player's position, and each root unlocked (bar the scene's one new root). When a section moves stage, dialogue and errands re-gate with it.
-2. **Authored content in morph gloss.** Characters' Ink lines are written as glosses (`z-dog v-chase b-cat`), never spelled Agebon, and gloss-inverse spells them at build time. A root respelling reaches the game with no retie pass.
+1. **Gating from the docs.** The player's progress is a position on the cross-doc path plus the core roots reached. Every Ageben line shown (authored, generated, or an inscription) is parsed first; each construction's anchor must be at or before the player's position, and each root unlocked (bar the scene's one new root). When a section moves stage, dialogue and errands re-gate with it.
+2. **Authored content in morph gloss.** Characters' Ink lines are written as glosses (`z-dog v-chase b-cat`), never spelled Ageben, and gloss-inverse spells them at build time. A root respelling reaches the game with no retie pass.
 3. **Quests name grammar by construction id.** A quest declares the sections it needs (for example a fill question), and its area is computed from them. If the docs restage a section, the quest moves with it, or the build fails when that breaks the quest order.
 4. **Doc examples as a sentence pool.** Inscriptions, overheard speech and errand requests come from doc examples with one root swapped, then re-parsed and re-glossed to confirm. New doc examples become new game lines. Some `kind` values are mixed (`counting` holds dash, walk, coin, bell and guitar), so a swap must pass four rules:
    - both roots are in a physical `kind` (creature, food, tool, nature, place, body), the same one, with the same `size`; `mind`, `doing`, `counting`, `title` and `sign` roots are never swapped;
@@ -238,7 +238,7 @@ How the game uses them:
    - the sentence has no house cast or `named` roots.
 
    A deny list starts empty and takes only the pairs the sandbox turn log surfaces.
-5. **A content lint**, reusing the existing checks: taught-before-used from [`construction-order.ts`](../../../src/lint/construction-order.ts) with the area's position as the cutoff, the parse and lexicon-root checks of `lint-agebon-docs`, the gloss round trip, and the one-tree rule ([`ambiguity.ts`](../../../src/parse/ambiguity.ts)). It runs in **`npm run build`**, since the game ships with the site and a doc edit that breaks the game should fail the same build. Walkthroughs and the reachability search run in **`npm test`**.
+5. **A content lint**, reusing the existing checks: taught-before-used from [`construction-order.ts`](../../../src/lint/construction-order.ts) with the area's position as the cutoff, the parse and lexicon-root checks of `lint-ageben-docs`, the gloss round trip, and the one-tree rule ([`ambiguity.ts`](../../../src/parse/ambiguity.ts)). It runs in **`npm run build`**, since the game ships with the site and a doc edit that breaks the game should fail the same build. Walkthroughs and the reachability search run in **`npm test`**.
 
 What stays hand-made:
 
@@ -264,7 +264,7 @@ One open scene with one or two characters to talk to and a few seeded objects. E
 
 - **Tail defaults.** Do the `kind` / `shape` / `size` defaults give sensible behavior, and which rows need an override?
 - **Verb handlers.** Which verbs do players reach for first, and which handlers interact badly?
-- **Generation.** Do characters' answers and Agebon narration read as correct, natural Agebon?
+- **Generation.** Do characters' answers and Ageben narration read as correct, natural Ageben?
 - **Recasts.** Does the near-miss guess match what the player meant?
 - **Reference.** How often is a noun ambiguous in a crowded scene, and does *the only visible one, or else ask* hold up?
 - **Failures.** Are the three failure kinds ever confused, and does the printed gloss help?
@@ -308,14 +308,14 @@ The engine is in [`src/game/`](../../../src/game/), the page is [`wizard.md`](..
 
 A TypeScript web app, deployed with the site and importing the parser directly. Lexicon CSVs are read at build time. Text plus emoji is enough; a tile view can come later. Unity or Godot would mean porting the parser or embedding a JS runtime, which costs effort and gives a text game nothing.
 
-**No full interactive-fiction engine.** Inform 7, TADS 3 and Dialog are battle-tested, but their most tested part is the English command parser, which this game replaces. Their games compile to virtual machines (Glulx, T3) run by a browser interpreter, so passing parse trees in and world state out for Agebon generation crosses a fragile boundary; their objects are fixed at compile time, which fights conjuring any root; their text output assumes English; and repetition tracking, recasts and the turn log would be bolted on from outside. Their **world models** (containment, scope, light, doors, carrying) are still the reference design: read Inform's Standard Rules for edge cases, do not run them.
+**No full interactive-fiction engine.** Inform 7, TADS 3 and Dialog are battle-tested, but their most tested part is the English command parser, which this game replaces. Their games compile to virtual machines (Glulx, T3) run by a browser interpreter, so passing parse trees in and world state out for Ageben generation crosses a fragile boundary; their objects are fixed at compile time, which fights conjuring any root; their text output assumes English; and repetition tracking, recasts and the turn log would be bolted on from outside. Their **world models** (containment, scope, light, doors, carrying) are still the reference design: read Inform's Standard Rules for edge cases, do not run them.
 
 **[Ink](https://github.com/inkle/ink) for the authored layer.** Ink (inkle; used in *80 Days*, *Heaven's Vault*, *Sable*) handles dialogue, quest flow and narration. `inkjs` runs it in the browser, and scripts compile to JSON driven from TypeScript through variables and external functions. The split:
 
 | Part | Owner |
 |------|-------|
-| Parser, world model, tail defaults, verb handlers, reference, recasts, Agebon generation, repetition tracking, gating | Custom TypeScript |
-| Authored scenes, characters, main quests, story beats | Ink, with all Agebon (speech and narration glosses) written as morph gloss |
+| Parser, world model, tail defaults, verb handlers, reference, recasts, Ageben generation, repetition tracking, gating | Custom TypeScript |
+| Authored scenes, characters, main quests, story beats | Ink, with all Ageben (speech and narration glosses) written as morph gloss |
 | Spelling, stage checks, walkthroughs | Build step and lint ([derived from the docs](#derived-from-the-docs)) |
 
 New dependencies: Ink and `ts-fsrs`. Both are mature and narrow in scope.
@@ -325,6 +325,6 @@ New dependencies: Ink and `ts-fsrs`. Both are mature and narrow in scope.
 | Milestone | Contents |
 |-----------|----------|
 | 1. Sandbox | One open scene with one or two characters; the first 20 handlers; objects from tails plus the override table; simple reference; generator with its first shapes, for speech and narration; recasts with the seeded error table; the three distinct failures; morph gloss on every turn; exportable turn log; no-dead-ends tagging and the reachability check; gating from the construction registry and `core` column; content lint. Done when the school's walkthrough scripts play well |
-| 2. School of wizardry | Two wings with a main quest each; authored characters in Ink; per-line Agebon narration; fading scaffolds; spellbook and journal; Tools sidebar entry; grammar through the pronouns and plurality Beginner checkpoints |
+| 2. School of wizardry | Two wings with a main quest each; authored characters in Ink; per-line Ageben narration; fading scaffolds; spellbook and journal; Tools sidebar entry; grammar through the pronouns and plurality Beginner checkpoints |
 | 3. Village hub, errands and repetition | Hub with recurring characters; generated errands and encounters driven by FSRS; optional quests |
 | 4. Later areas | One per grammar stage along the cross-doc path: groups, comparatives, conditions, habitual, knowing; mastered spells |

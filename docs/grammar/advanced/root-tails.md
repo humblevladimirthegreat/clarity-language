@@ -64,7 +64,7 @@ A few dictionary words end in a bare tail instead of a second root. *Friend* is 
 >
 > "a friend"
 
-| Agebon | Pieces | English |
+| Ageben | Pieces | English |
 |--------|--------|---------|
 | `zahuyayel` | *hug* + `yo` | friend |
 | `zoyahehal` | *bed* + `ha` | bedroom |

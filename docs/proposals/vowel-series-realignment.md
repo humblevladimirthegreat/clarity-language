@@ -71,7 +71,7 @@ A **phase** is one session. Several commits inside a phase are expected. Do not 
 
 Bigger remaps go first, so a stop still leaves the amount scale in place. Grammar-letter swaps already parse; only which cell they name moves. Root-job last vowels (Phase 6) are a real respell.
 
-Example Agebon is a `find.mjs --map` pass, not a hand edit and not `retie-docs`. `retie-docs` still only follows lexicon roots (Phase 6). Cue English, owning-page maps, hang cues, and D-40 / D-44 / D-49 prose stay hand work.
+Example Ageben is a `find.mjs --map` pass, not a hand edit and not `retie-docs`. `retie-docs` still only follows lexicon roots (Phase 6). Cue English, owning-page maps, hang cues, and D-40 / D-44 / D-49 prose stay hand work.
 
 If tokens run low inside a phase: land **owning pages + parser**, then the `--write` (it is mechanical). Read the dry-run **skip** and **review** lines before writing (unparsed spans that still look like a hit, and matched words that could not splice). After a pairwise **o**/**e** swap, a missed example is the opposite English.
 
@@ -104,7 +104,7 @@ Do not split Phase 1 into join vs number markers: `#` **is** rank. Do not split 
 - **Sweep:** pin `--count` on the source letter (**without** `--map`). Dry-run `node scripts/find.mjs --word … --map …` (default `docs/grammar` `docs/examples`, then the same flags with `src` `scripts` `docs/meta`; the walk skips `src/retie`). Then `--write`. `--write` skips `*.test.ts` unless `--tests` (assertions next to a literal do not move; retarget those tests by hand). Then `--count` the destination letter; it should match the pinned source (except number-marker twins, above). Maps run on the original parse, so `e:o,o:e` is a swap in one pass. `--write` leaves a span whose dest does not reparse and still writes the rest of the file (nonzero exit). If membership would reject the dest letter (`TIME_HOOKS`, `POINT_BACK_HOOKS`, `feelingLandmark`, …), widen that set to the union around the write, then shrink. Teaching stubs (`el …`, `A ol B`) rewrite; cue English still does not.
 - **Find/replace bugs:** if a dry-run **review** line, a dest that does not reparse, a skip that looks like a hit, a `--count` that does not move with the map, or a slot the map cannot see, **fix `src/find/` and/or classify in that same phase** before hand-editing examples. Do not work around a mapper bug with a bulk hand edit. Then re-run the dry-run. Marker-stub, `SELF`, and landmark-facing slots already splice; do not re-open those as expected leftovers.
 - **`OE`** below means write `e:o,o:e,ae:ao,ao:ae,ue:uo,uo:ue` on the field that phase names (`series`, `form`, `scope`, `locus`). **oe** and **ua** stay.
-- Update the cheat-sheet **rows this series owns** in the same phase (row English by hand; Agebon in examples via `--map`). Hang cues and the [vowels.md](/cheat-sheets/vowels) tree wait for Phase 7.
+- Update the cheat-sheet **rows this series owns** in the same phase (row English by hand; Ageben in examples via `--map`). Hang cues and the [vowels.md](/cheat-sheets/vowels) tree wait for Phase 7.
 - Do not retarget stacked scope or stacked extra-noun English to the new simplex letters. Letters follow **OE**; English stays.
 - Each spec section below is what that phase implements. Later series still teach the old cells until their phase; that is expected.
 
@@ -161,7 +161,7 @@ node scripts/find.mjs --word family=say --map answer=e:o,o:e
 
 Say **scope** is not in the third map (`hwavem` → `hwavom`; `hwa…` waits for Phase 4).
 
-**Commits:** (1) `stackKind` + tests; (2) owning pages + D-44; (3) `--write` act/polar; (4) `--write` stand-in + say answers + talking cheat-sheet Agebon; (5) verify.
+**Commits:** (1) `stackKind` + tests; (2) owning pages + D-44; (3) `--write` act/polar; (4) `--write` stand-in + say answers + talking cheat-sheet Ageben; (5) verify.
 
 **Done when:** `yol` commands, `yaol` is *yes*, and `--word family=joinMarker,role=y,series=o --count` is the old question count.
 

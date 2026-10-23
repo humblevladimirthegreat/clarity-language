@@ -47,7 +47,7 @@ Change only the first letter. The marker and digits stay the same, and on these 
 Beginner already used **`ra`** (*how many*) and **`ro`** (*which place from the start*). The marker vowel **V** completes that set: it says whether the word is a count, a rank, or a string of digits, and on a count it also gives the sign of the whole number. The table shows each marker's shorthand symbol in parentheses. Forward ordinal **`o`** matches [rank join **o**](rank-joins.md#rank-joins).
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |---|---------|---------|-----|
 | **a** (`+`) | positive **scalar** (count or measure amount) | `g+3` *three cats*; `g+` *plural / more than one*; `z+3` *three* (subj); `b+12` *of size 12* | **`a`** ≈ add |
 | **u** (`-`) | negative **scalar** | `d-3` *−3* (obj); `z-` *some negative amount*; `g-2` signed measure on a noun | **`u`** ≈ undo |
@@ -276,13 +276,13 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Use
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *seat* | `uzohel` | 💺 |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -293,7 +293,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Use
 | *run* | `veruvol` |
 | *punch* | `vabuvul` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *There are about three seats.*
 
@@ -345,7 +345,7 @@ z-Azozon | v-punch | th-70-percent-likely
 [z-Alazun | [d-seat-x | g-three] | v-see | x-and | z-Azozon | d-←three | v-see]
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zrodol dodoral vayebel.`
 

@@ -58,7 +58,7 @@ describe("retieCore — English substrings stay", () => {
   });
 });
 
-describe("retieCore — Agebon tokens", () => {
+describe("retieCore — Ageben tokens", () => {
   it("rewrites overlay thuhunum and citation thodom from root fields", () => {
     const map = mapOf(["uhunu", "uvuvu"], ["odo", "adoro"]);
     assert.equal(retieCore("thuhunum", map), "thuvuvum");
@@ -284,12 +284,12 @@ describe("classification-gated retie", () => {
     assert.equal(text, input);
   });
 
-  it("reties a text-fence line that reads as Agebon", () => {
+  it("reties a text-fence line that reads as Ageben", () => {
     const { text } = rewriteMarkdown("```text\nzazawan vawalal.\n```\n", map);
     assert.equal(text, "```text\nzululon vawalal.\n```\n");
   });
 
-  it("reties the Agebon words of an unclassified span and reports it", () => {
+  it("reties the Ageben words of an unclassified span and reports it", () => {
     const { text, reviews } = rewriteMarkdown("`zazawan means swan`", map);
     assert.equal(text, "`zululon means swan`");
     assert.match(reviews[0]!.reason, /mixes/);
@@ -325,7 +325,7 @@ describe("classification-gated retie", () => {
     assert.equal(text, "```markdown\n> `zululon vawalal.`\n```\n");
   });
 
-  it("reties an emphasised Agebon sentence in prose", () => {
+  it("reties an emphasised Ageben sentence in prose", () => {
     const { text } = rewriteMarkdown("> 🔊 *zazawan vawalal.*", map);
     assert.equal(text, "> 🔊 *zululon vawalal.*");
   });
@@ -398,7 +398,7 @@ describe("lineNumberAt", () => {
   });
 });
 
-describe("English copies follow their Agebon", () => {
+describe("English copies follow their Ageben", () => {
   const map = mapOf(["ululo", "alahe"], ["odoga", "uzugo"]);
 
   it("renames a named word in morph lines, free English and word banks", () => {
@@ -424,7 +424,7 @@ describe("English copies follow their Agebon", () => {
     assert.match(text, /z-OPAQUE\["odoga"\]/);
   });
 
-  it("reties a mention's cite and its quoted copies: a cite is Agebon", () => {
+  it("reties a mention's cite and its quoted copies: a cite is Ageben", () => {
     const input = "> `glelel z[odoga] gamazam.`\n>\n> [gl-MENTION | z-CITE[\"odoga\"]] | g-small\n>\n> \"The word “odoga” is small.\"\n";
     const { text } = rewriteMarkdown(input, map);
     assert.match(text, /`glelel z\[uzugo\] g\w+m\.`/);
@@ -452,7 +452,7 @@ describe("editorial span close and template stems", () => {
 });
 
 describe("heading anchors", () => {
-  it("renames a heading id spelled from Agebon and relinks it", () => {
+  it("renames a heading id spelled from Ageben and relinks it", () => {
     const before = "### Ability (`egera`)\n";
     const after = "### Ability (`aze`)\n";
     const renames = headingIdRenames(before, after);
@@ -570,7 +570,7 @@ describe("source literals (2026-09-28 fixes)", () => {
     currentRoots: new Set(["ululo", "ibibi"]),
   };
 
-  it("reads a lone role letter and a hook as Agebon, not English", () => {
+  it("reads a lone role letter and a hook as Ageben, not English", () => {
     const source = 'parse("zazawan vowogal ol b_#22,7.");\n';
     const { text } = rewriteSourceLiterals(source, "x.test.ts", ctx);
     assert.equal(text, 'parse("zululon vowogal ol b_#22,7.");\n');
@@ -594,7 +594,7 @@ describe("source literals (2026-09-28 fixes)", () => {
 describe("retie — inline code that holds a fence marker", () => {
   it("does not open a fence mid-line, so later italics stay English", () => {
     const page =
-      "Fenced blocks need an info string: ` ```agebon ` to check each line, or ` ```text ` for notation.\n\n" +
+      "Fenced blocks need an info string: ` ```ageben ` to check each line, or ` ```text ` for notation.\n\n" +
       "Italics are English, even a word whose letters spell a root (*eye*).\n";
     const { text, changes } = rewriteMarkdown(page, mapOf(["eye", "uye"]));
     assert.deepEqual(changes, []);
@@ -602,9 +602,9 @@ describe("retie — inline code that holds a fence marker", () => {
   });
 
   it("still reties a real fence and a double-backtick span", () => {
-    const page = "```agebon\nzazawan vowogal.\n```\n\nSay ``zazawan`` here.\n";
+    const page = "```ageben\nzazawan vowogal.\n```\n\nSay ``zazawan`` here.\n";
     const { text } = rewriteMarkdown(page, mapOf(["azawa", "ezewe"]));
-    assert.equal(text, "```agebon\nzezewen vowogal.\n```\n\nSay ``zezewen`` here.\n");
+    assert.equal(text, "```ageben\nzezewen vowogal.\n```\n\nSay ``zezewen`` here.\n");
   });
 
   it("walks a double-backtick span that quotes Markdown as Markdown", () => {
@@ -712,7 +712,7 @@ describe("source literals — fixtures, patterns and names", () => {
     assert.equal(rewriteSourceLiterals(source, "x.test.ts", ctx).text, source);
   });
 
-  it("reties Agebon quoted in a regex literal", () => {
+  it("reties Ageben quoted in a regex literal", () => {
     const source = 'lint("`zagadal` is here");\nassert.match(out, /`zagadal` does not appear/);\n';
     assert.equal(
       rewriteSourceLiterals(source, "x.test.ts", ctx).text,
@@ -743,8 +743,8 @@ describe("retie fixes (2026-10-19 root-tails dry run)", () => {
 
   it("never respells a kept word: the language name is renamed by hand", () => {
     const map = mapOf(["agaza", "emabo"]);
-    const input = "| Surface | `` `agebon.` `` |\n\nFences take ` ```agebon `.\n";
-    assert.equal(rewriteMarkdown(input, map, undefined, { keep: new Set(["agebon", "Agebon"]) }).text, input);
+    const input = "| Surface | `` `ageben.` `` |\n\nFences take ` ```ageben `.\n";
+    assert.equal(rewriteMarkdown(input, map, undefined, { keep: new Set(["ageben", "Ageben"]) }).text, input);
   });
 
   it("follows names in a regex literal with escapes, and writes the escapes back", () => {

@@ -5,7 +5,7 @@
  * that each item has its parts, that its forms parse, and how its forms relate.
  */
 import type { ClassifyTables } from "../parse/classify.js";
-import { normalizeAgebon } from "../parse/morph-gloss.js";
+import { normalizeAgeben } from "../parse/morph-gloss.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import type { LexWord } from "../parse/types.js";
 import { compareReadings } from "./reading-equivalence.js";
@@ -22,7 +22,7 @@ export function lintPracticeItems(
   const out: PracticeItemFinding[] = [...findings];
   for (const item of items) {
     const push = (detail: string, index = item.index) => out.push({ index, detail: `${LABEL[item.type]} ${item.number}: ${detail}` });
-    if (item.alsoCorrect.length > 0 && item.type !== "en-ag") push("**Also correct:** belongs only in English → Agebon answers");
+    if (item.alsoCorrect.length > 0 && item.type !== "en-ag") push("**Also correct:** belongs only in English → Ageben answers");
     switch (item.type) {
       case "en-ag":
         lintAlsoCorrect(item, tables, push);
@@ -42,8 +42,8 @@ export function lintPracticeItems(
 }
 
 const LABEL: Record<PracticeItem["type"], string> = {
-  "en-ag": "English → Agebon",
-  "ag-en": "Agebon → English",
+  "en-ag": "English → Ageben",
+  "ag-en": "Ageben → English",
   pick: "Pick one",
   fix: "Fix it",
   changes: "What changes",
@@ -53,8 +53,8 @@ type Push = (detail: string, index?: number) => void;
 
 function lintAlsoCorrect(item: PracticeItem, tables: ClassifyTables, push: Push): void {
   if (item.alsoCorrect.length === 0) return;
-  const answer = item.spoiler.find((line) => line.kind === "agebon");
-  if (!answer) return push("**Also correct:** with no Agebon answer line");
+  const answer = item.spoiler.find((line) => line.kind === "ageben");
+  if (!answer) return push("**Also correct:** with no Ageben answer line");
   // A level review answer ends with its **Rule:** link, after **Also correct:**.
   const last = item.spoiler.filter((line) => line.kind !== "rule").at(-1);
   if (last?.kind !== "also") push("**Also correct:** must be the last line of the answer (before **Rule:** in a level review)");
@@ -72,7 +72,7 @@ function lintAlsoCorrect(item: PracticeItem, tables: ClassifyTables, push: Push)
 /** English, two forms that differ only in the decision; answer: the right form, its morph, one line on why. */
 function lintPickOne(item: PracticeItem, tables: ClassifyTables, push: Push): void {
   if (!item.promptEnglish) push("prompt needs the English sentence");
-  if (item.promptSpans.length !== 2) return push(`prompt needs two Agebon forms, found ${item.promptSpans.length}`);
+  if (item.promptSpans.length !== 2) return push(`prompt needs two Ageben forms, found ${item.promptSpans.length}`);
   const [a, b] = item.promptSpans as [PracticeItem["promptSpans"][0], PracticeItem["promptSpans"][0]];
   const compare = compareReadings(a.text, b.text, tables);
   if (compare.error) push(`both forms must parse (${compare.error})`);
@@ -81,7 +81,7 @@ function lintPickOne(item: PracticeItem, tables: ClassifyTables, push: Push): vo
     push("the two forms use different content roots; they should differ only in this stage's decision");
   }
   const { answer, morphs, prose } = answerParts(item.spoiler);
-  if (!answer) push("answer needs the right form as an Agebon line");
+  if (!answer) push("answer needs the right form as an Ageben line");
   else if (!same(answer.text, a.text) && !same(answer.text, b.text)) push(`answer \`${answer.text}\` is neither prompt form`, answer.index);
   if (morphs.length === 0) push("answer needs a morph line after the right form");
   if (prose.length === 0) push("answer needs one line on why");
@@ -90,11 +90,11 @@ function lintPickOne(item: PracticeItem, tables: ClassifyTables, push: Push): vo
 /** English meaning and the wrong form; answer: the corrected form, its morph, one line naming the error. */
 function lintFixIt(item: PracticeItem, tables: ClassifyTables, push: Push): void {
   if (!item.promptEnglish) push("prompt needs the English meaning");
-  if (item.promptSpans.length !== 1) return push(`prompt needs one Agebon sentence, found ${item.promptSpans.length}`);
+  if (item.promptSpans.length !== 1) return push(`prompt needs one Ageben sentence, found ${item.promptSpans.length}`);
   const wrong = item.promptSpans[0]!;
   if (wrong.marker !== ERROR_MARKER) push(`mark the wrong form <!-- ${ERROR_MARKER} -->`, wrong.index);
   const { answer, morphs, prose } = answerParts(item.spoiler);
-  if (!answer) push("answer needs the corrected sentence as an Agebon line");
+  if (!answer) push("answer needs the corrected sentence as an Ageben line");
   if (morphs.length === 0) push("answer needs a morph line after the corrected sentence");
   if (prose.length === 0) push("answer needs one line naming the error");
   if (!answer) return;
@@ -109,7 +109,7 @@ function lintFixIt(item: PracticeItem, tables: ClassifyTables, push: Push): void
 
 /** Two forms that differ in one morph; answer: a morph line for each, then the difference in plain English. */
 function lintWhatChanges(item: PracticeItem, tables: ClassifyTables, push: Push): void {
-  if (item.promptSpans.length !== 2) return push(`prompt needs two Agebon sentences, found ${item.promptSpans.length}`);
+  if (item.promptSpans.length !== 2) return push(`prompt needs two Ageben sentences, found ${item.promptSpans.length}`);
   const [a, b] = item.promptSpans.map((s) => s.text) as [string, string];
   for (const text of [a, b]) {
     const error = parseError(text, tables);
@@ -120,13 +120,13 @@ function lintWhatChanges(item: PracticeItem, tables: ClassifyTables, push: Push)
   const differ = wa.length === wb.length ? wa.filter((w, i) => w !== wb[i]).length : -1;
   if (differ !== 1) push("the two sentences must differ in exactly one word, in the same order");
   const lines = item.spoiler.filter((line) => line.kind === "text" || line.kind === "english");
-  if (item.spoiler.some((line) => line.kind === "agebon")) push("answer gives morph lines and English, not Agebon lines");
+  if (item.spoiler.some((line) => line.kind === "ageben")) push("answer gives morph lines and English, not Ageben lines");
   if (lines.length < 3 || lines[0]!.kind !== "text" || lines[1]!.kind !== "text") push("answer needs a morph line for each sentence, then the difference in plain English");
 }
 
-/** The first Agebon line, the morph line right after it, and the prose lines after that. */
+/** The first Ageben line, the morph line right after it, and the prose lines after that. */
 function answerParts(spoiler: readonly SpoilerLine[]): { answer?: SpoilerLine; morphs: SpoilerLine[]; prose: SpoilerLine[] } {
-  const at = spoiler.findIndex((line) => line.kind === "agebon");
+  const at = spoiler.findIndex((line) => line.kind === "ageben");
   if (at < 0) return { morphs: [], prose: [] };
   const rest = spoiler.slice(at + 1).filter((line) => line.kind === "text" || line.kind === "english");
   const morphs = rest[0]?.kind === "text" ? rest.slice(0, 1) : [];
@@ -134,11 +134,11 @@ function answerParts(spoiler: readonly SpoilerLine[]): { answer?: SpoilerLine; m
 }
 
 function same(a: string, b: string): boolean {
-  return normalizeAgebon(a) === normalizeAgebon(b);
+  return normalizeAgeben(a) === normalizeAgeben(b);
 }
 
 function words(text: string): string[] {
-  return normalizeAgebon(text).split(/\s+/);
+  return normalizeAgeben(text).split(/\s+/);
 }
 
 function parseError(text: string, tables: ClassifyTables): string | undefined {

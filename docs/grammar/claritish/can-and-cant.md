@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-*I can't* hides three different things: *not right now*, *not yet*, and *never*. Heard back, *I can't sing* can mean a sore throat or a lifelong fact. Agebon says which one you mean.
+*I can't* hides three different things: *not right now*, *not yet*, and *never*. Heard back, *I can't sing* can mean a sore throat or a lifelong fact. Ageben says which one you mean.
 
 ## The forms {#forms}
 
@@ -15,7 +15,7 @@ Add a hyphen to the English verb, then `x` and a vowel:
 | `-xe` | can't yet (the default when you are not sure) |
 | `-xu` | can never: impossible |
 
-Reminder: `x` sounds like the *s* in *vision*. The hyphen only shows that the word in front is English. The letters after it are spelled exactly as in Agebon. Here the vowel carries the meaning, so the endings from the other lessons do not come back.
+Reminder: `x` sounds like the *s* in *vision*. The hyphen only shows that the word in front is English. The letters after it are spelled exactly as in Ageben. Here the vowel carries the meaning, so the endings from the other lessons do not come back.
 
 Cue for the vowels: **a ≈ full**, **o ≈ a dip**, **e ≈ not yet**, **u ≈ never**.
 

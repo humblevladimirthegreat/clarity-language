@@ -87,7 +87,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *baguette* | `ebodol` | 🥖 |
 | *croissant* | `agedel` | 🥐 |
@@ -97,7 +97,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -109,7 +109,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vayebel` |
 | *find* | `vumewel` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *There are three croissants.*
 
@@ -159,7 +159,7 @@ z-ant-x | g-twelve.spelled
 z-Azozon | [d-cake | g-10th.spelled] | v-cook
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zebodolx grahul.`
 

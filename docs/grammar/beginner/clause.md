@@ -4,7 +4,7 @@ band: beginner
 
 # The clause
 
-How to read and write one Agebon **clause** (roughly, one simple sentence): who does what, how each word is shaped, and the default order.
+How to read and write one Ageben **clause** (roughly, one simple sentence): who does what, how each word is shaped, and the default order.
 
 
 You already write a [citation](word-endings.md): root + ending (`odozel`, `owurol`, `azozon`). In a **sentence**, put a **role letter** in front. That first letter says what the word is doing (who acts, the action, and so on). The root and ending stay the ones you already chose; only the first letter changes.
@@ -144,7 +144,7 @@ A `bl-` word needs its host right before it. Anywhere else it is not a sentence.
 The role letters you have used so far:
 
 <!-- cheat-sheet: consonants -->
-| Agebon | Use | Cue |
+| Ageben | Use | Cue |
 |--------|-----|-----|
 | `/z/` | subject (who acts) | **z** ≈ star (who the sentence is about) |
 | `/d/` | direct object (who is acted on) | **d** ≈ done to (sound of *acted on*) |
@@ -161,11 +161,11 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a bank
 
-The word bank has two tables. **New words** are introduced here: **English** is what you produce, and **Agebon** is its citation, or the word with its role letter when that letter is part of the English (*pay* is `varal`, the money root as a verb). Then the **Cue** names the citation's sense (💰 from *money*). **Review** lists words from earlier checkpoints.
+The word bank has two tables. **New words** are introduced here: **English** is what you produce, and **Ageben** is its citation, or the word with its role letter when that letter is part of the English (*pay* is `varal`, the money root as a verb). Then the **Cue** names the citation's sense (💰 from *money*). **Review** lists words from earlier checkpoints.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *pay* | `varal` | 💰 from *money* |
 | *angry* | `onumul` | 😠 |
@@ -176,7 +176,7 @@ The word bank has two tables. **New words** are introduced here: **English** is 
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -186,7 +186,7 @@ The word bank has two tables. **New words** are introduced here: **English** is 
 | *book* | `anal` |
 | *bell* | `eboral` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Azozon pays Alazun.*
 
@@ -238,7 +238,7 @@ z-Ahelan | d-Azozon | v-find
 **Also correct:** `zahelan vumewel dazozon.`
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `dalazun zahelan vumewel.`
 

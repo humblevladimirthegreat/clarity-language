@@ -1,11 +1,11 @@
 /**
- * Search the docs by English phrase and print the taught Agebon form.
+ * Search the docs by English phrase and print the taught Ageben form.
  *
  *   node scripts/find-english.mjs 'anyway'
  *   node scripts/find-english.mjs 'last time' 'late' --stage intermediate
  *   node scripts/find-english.mjs 'should have' --json
  *
- * Indexes example English, per-word glosses, table rows with an Agebon and an
+ * Indexes example English, per-word glosses, table rows with an Ageben and an
  * English column, and translation practice (src/find/english.ts), plus the
  * English cues of published roots (senses and `english_aliases` synonyms;
  * `--kind root`). Hits are grouped by section, best first. Paths default to docs/grammar;

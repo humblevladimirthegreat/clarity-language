@@ -9,7 +9,7 @@ const MARKER_RE = /<!--\s*retie:\s*letter-names\s*-->\s*\n(```|~~~)[^\n]*\n([\s\
 const LINE_RE = /^`([a-z]+)` → ((?:`[a-z]+` ?)+)$/;
 const ROW_RE = /^\| `([a-z]+)` \| `([a-z]+)` \|/gm;
 
-/** Letter → name, from the `| Agebon | Name |` rows on the page (empty when it has none). */
+/** Letter → name, from the `| Ageben | Name |` rows on the page (empty when it has none). */
 export function letterNameTable(markdown: string): Map<string, string> {
   return new Map([...markdown.matchAll(ROW_RE)].map((row) => [row[1]!, row[2]!]));
 }

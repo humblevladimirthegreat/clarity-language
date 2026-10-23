@@ -6,7 +6,7 @@ band: beginner
 
 ### Adjectives before the noun (`gl-`) {#left-bound-adjectives}
 
-English puts the adjective before the noun (*an angry dog*). Agebon can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending), and that adjective describes the **next** noun instead of the one before it. This lets you choose the order for meter or emphasis, and it frees the spot after the noun for another adjective. (cue: **l** ≈ lean: the word leans toward the noun ahead.)
+English puts the adjective before the noun (*an angry dog*). Ageben can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending), and that adjective describes the **next** noun instead of the one before it. This lets you choose the order for meter or emphasis, and it frees the spot after the noun for another adjective. (cue: **l** ≈ lean: the word leans toward the noun ahead.)
 
 > `glonumul zodozel.`
 >
@@ -30,7 +30,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *train* | `edavol` | 🚆 |
 | *blue* | `obulol` | 🔵 |
@@ -38,7 +38,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -49,7 +49,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sit* | `vehohel` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *A sleepy Alazun stands.* (*sleepy* first)
 
@@ -75,7 +75,7 @@ z-Ahelan | [gl-blue | d-train] | v-see
 [gl-sleepy | z-police] | v-sit
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `welazem gluzemel zebayol vehohel.`
 

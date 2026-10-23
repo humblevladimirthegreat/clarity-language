@@ -12,10 +12,10 @@
  * Sets, scored apart:
  *   doc         doc example pairs the translation prompt can show (llm-examples.ts); in-sample,
  *               since the cue rows were written against them (the prompt never shows the pair itself)
- *   checkpoint  English → Agebon practice items, with their **Also correct** answers; held out
+ *   checkpoint  English → Ageben practice items, with their **Also correct** answers; held out
  *               of the example pool
  *   wild        plain English grouped by phenomenon and stage (src/english-helper/wild.tsv), with
- *               no reference Agebon: scored on gaps, noise and prompt size only
+ *               no reference Ageben: scored on gaps, noise and prompt size only
  *
  * Every set: gap rate (slots with no suggestion, of the slots not skipped, by word class),
  * noise (suggestions and grammar jobs per slot, and how often a guess, an alias, WordNet lead or
@@ -73,7 +73,7 @@ const NGSL_STATS = join(TMP, "NGSL_12_stats.csv");
 const BASELINE = join(REPO_ROOT, "src", "generated", "english-helper-baseline.json");
 const SETS = ["doc", "checkpoint", "wild"] as const;
 type SetName = (typeof SETS)[number];
-/** Sets with reference Agebon, scored on roots, constructions and the prompt's words. */
+/** Sets with reference Ageben, scored on roots, constructions and the prompt's words. */
 const REFERENCE_SETS: readonly SetName[] = ["doc", "checkpoint"];
 const WILD_TSV = join(REPO_ROOT, "src", "english-helper", "wild.tsv");
 
@@ -155,7 +155,7 @@ function rootResult(analysis: Analysis, root: string, sentenceWords: Set<string>
   return { result: "missed" };
 }
 
-/** One English sentence with its accepted Agebon answers (the first is the main one; none for the wild set). */
+/** One English sentence with its accepted Ageben answers (the first is the main one; none for the wild set). */
 type Sentence = { set: SetName; source: string; english: string; answers: string[]; phenomenon?: string; stage?: string };
 
 function docSentences(): Sentence[] {
@@ -167,7 +167,7 @@ function docSentences(): Sentence[] {
       const pair = examplePair(example, `${page}:${example.line}`, tables);
       if (!pair || seen.has(pair.gloss)) continue;
       seen.add(pair.gloss);
-      out.push({ set: "doc", source: pair.source, english: pair.sentence, answers: [pair.agebon] });
+      out.push({ set: "doc", source: pair.source, english: pair.sentence, answers: [pair.ageben] });
     }
   }
   return out;
@@ -179,7 +179,7 @@ function checkpointSentences(): Sentence[] {
     const markdown = markdownOf.get(page)!;
     for (const item of practiceItems(markdown, { review: page === "review.md" }).items) {
       if (item.type !== "en-ag" || !item.promptEnglish) continue;
-      const main = item.spoiler.find((line) => line.kind === "agebon");
+      const main = item.spoiler.find((line) => line.kind === "ageben");
       if (!main) continue;
       const line = markdown.slice(0, item.index).split("\n").length;
       out.push({ set: "checkpoint", source: `${page}:${line}`, english: item.promptEnglish, answers: [main.text, ...item.alsoCorrect.map((span) => span.text)].map((a) => fillSelf(a)) });
@@ -236,7 +236,7 @@ type Row = {
   source: string;
   group: string;
   english: string;
-  agebon: string;
+  ageben: string;
   roots: number;
   found: number;
   missed: string;
@@ -343,7 +343,7 @@ function scoreVerify(sentence: Sentence, analysis: Analysis, t: VerifyTally): vo
     }
   }
   if (!main) return;
-  for (const plant of plantErrors(main.agebon, main.words ?? [])) {
+  for (const plant of plantErrors(main.ageben, main.words ?? [])) {
     const flagged = plantFlagged(verifyDraft(sentence.english, plant.draft, tables, data, analysis), plant);
     if (flagged === undefined) continue;
     const p = t.plants.get(plant.kind) ?? { planted: 0, flagged: 0 };
@@ -422,7 +422,7 @@ for (const set of sets) {
     }
     const base = { set, source: sentence.source, group: [sentence.phenomenon, sentence.stage].filter(Boolean).join(" "), english: sentence.english, slots: slots.length, gaps: [...gapSlots].join(" "), prompt_chars: prompt.length };
     if (!best) {
-      rows.push({ ...base, agebon: "", roots: 0, found: 0, missed: "", constructions: 0, anchor_hits: 0, page_hits: 0, missed_constructions: "", words: 0, in_prompt: 0, pattern: 0, missing_words: "" });
+      rows.push({ ...base, ageben: "", roots: 0, found: 0, missed: "", constructions: 0, anchor_hits: 0, page_hits: 0, missed_constructions: "", words: 0, in_prompt: 0, pattern: 0, missing_words: "" });
       continue;
     }
     const { tree } = best;
@@ -477,7 +477,7 @@ for (const set of sets) {
 
     rows.push({
       ...base,
-      agebon: best.answer,
+      ageben: best.answer,
       roots: roots.length,
       found: results.filter((r) => r.result !== "missed" && r.result !== "tagging").length,
       missed: results.filter((r) => r.result === "missed" || r.result === "tagging").map((r) => `${r.root}${r.result === "tagging" ? "*" : ""}`).join(" "),
@@ -691,7 +691,7 @@ const report: string[] = ["# English helper report", "", "Free metrics from `npm
 report.push("| Metric | " + sets.join(" | ") + " |", "|---|" + sets.map(() => "---").join("|") + "|");
 type Summary = ReturnType<typeof summarize>;
 const metric = (name: string, f: (s: Summary) => string | number) => report.push(`| ${name} | ${sets.map((set) => f(summary[set]!)).join(" | ")} |`);
-/** A metric that needs reference Agebon: blank for the wild set. */
+/** A metric that needs reference Ageben: blank for the wild set. */
 const refMetric = (name: string, f: (s: Summary) => string | number) => metric(name, (s) => (s.reference ? f(s) : "-"));
 metric("sentences", (s) => s.sentences);
 refMetric("**self-contained**", (s) => `**${s.prompt.selfContained}**`);

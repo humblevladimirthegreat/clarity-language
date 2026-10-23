@@ -6,7 +6,7 @@
  */
 export { isPlaceRootShape } from "./root-shape.ts";
 
-/** CMU phoneme → Agebon letters. Seam letters (`x`, `th`) never occur, and diphthongs keep their glide. */
+/** CMU phoneme → Ageben letters. Seam letters (`x`, `th`) never occur, and diphthongs keep their glide. */
 const PLACE_MAP: Record<string, string> = {
   P: "b", B: "b", T: "d", D: "d", K: "g", G: "g", F: "v", V: "v",
   S: "z", Z: "z", SH: "z", ZH: "z", CH: "z", JH: "z", TH: "d", DH: "d",
@@ -24,7 +24,7 @@ function lastVowel(s: string): string {
 }
 
 /**
- * Shape a string of Agebon letters into a place-name root: start and end on a vowel,
+ * Shape a string of Ageben letters into a place-name root: start and end on a vowel,
  * glide a vowel run, split **-l** / **-m** + `r`, and pad a clusterless name.
  */
 export function finishPlaceLetters(s: string): string {

@@ -1,5 +1,5 @@
 /**
- * Finger code: Agebon produced with the fingers instead of the voice (docs/grammar/finger-code.md).
+ * Finger code: Ageben produced with the fingers instead of the voice (docs/grammar/finger-code.md).
  * Every letter is a shape on one of two hands: vowels on the non-dominant hand, consonants on the
  * dominant hand. A shape counts on the fingers, so the digit letters are their own counts, and the
  * vowels count up their pitches from the pinky (phonology.md#vowels). The piano
@@ -193,7 +193,7 @@ export const PERIOD_REST = 2;
 const LEAD_IN = 0.5;
 
 /**
- * Splits plain native Agebon into beats: one per syllable (both hands together, or the vowel hand alone
+ * Splits plain native Ageben into beats: one per syllable (both hands together, or the vowel hand alone
  * with no onset), then one per coda letter (consonant hand alone). Words that are not plain native
  * letters (numerals, spans, foreign text) are skipped.
  */

@@ -23,7 +23,7 @@ const names = (text: string) => lintStaleNames(text, tables).map((issue) => issu
 
 describe("lintStaleNames", () => {
   it("passes names of current roots, the language's name, English words and foreign names", () => {
-    assert.deepEqual(names('"Uzozen walks." Amen. Agebon. Even so. Hamlet, Sam, UZOZEN, *some Uzozens*'), []);
+    assert.deepEqual(names('"Uzozen walks." Amen. Ageben. Even so. Hamlet, Sam, UZOZEN, *some Uzozens*'), []);
   });
 
   it("flags a name whose root is not in the lexicon, in prose, morph lines and code", () => {

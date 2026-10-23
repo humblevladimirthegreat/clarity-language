@@ -42,19 +42,19 @@ export function familyRoots(family: MorphWordFamily): string[] {
 
 const TRIM = /^[^a-z0-9θɡ+#_~@=^-]+|[^a-z0-9θɡ+#_~@=^-]+$/g;
 
-/** What a prompt shows: the Agebon words it spells, and the roots those words and its root lines carry. */
+/** What a prompt shows: the Ageben words it spells, and the roots those words and its root lines carry. */
 export type PromptShows = { words: Set<string>; roots: Set<string>; families: Map<string, Set<string>>; xFamilies: Set<string> };
 
 const familyKey = (family: MorphWordFamily) => JSON.stringify(family);
 
 /**
- * Agebon words in a prompt: every backtick span and every `AGEBON:` line, split on spaces.
+ * Ageben words in a prompt: every backtick span and every `AGEBEN:` line, split on spaces.
  * Roots also come from the analysis's own suggestions, since a root line names its root bare.
  */
 export function promptShows(prompt: string, analyses: readonly Analysis[]): PromptShows {
   const words = new Set<string>();
   for (const m of prompt.matchAll(/`([^`\n]+)`/g)) for (const w of m[1]!.split(/\s+/)) words.add(w.replace(TRIM, ""));
-  for (const m of prompt.matchAll(/^AGEBON: (.+)$/gm)) for (const w of m[1]!.split(/\s+/)) words.add(w.replace(TRIM, ""));
+  for (const m of prompt.matchAll(/^AGEBEN: (.+)$/gm)) for (const w of m[1]!.split(/\s+/)) words.add(w.replace(TRIM, ""));
   words.delete("");
   const roots = new Set<string>();
   const families = new Map<string, Set<string>>();

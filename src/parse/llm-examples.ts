@@ -18,24 +18,24 @@ import { listMarkdown } from "../markdown-files.js";
 import { REPO_ROOT } from "../repo-paths.js";
 
 /**
- * One example: an example block's Agebon lines joined and its one free English line, or a table
- * row's Agebon and its italic English cell (`delimiter` `*`).
+ * One example: an example block's Ageben lines joined and its one free English line, or a table
+ * row's Ageben and its italic English cell (`delimiter` `*`).
  */
-export type DocExample = { agebon: string; free: string; line: number; delimiter?: "*" };
+export type DocExample = { ageben: string; free: string; line: number; delimiter?: "*" };
 
 /** Example blocks with exactly one free English line ([free-english.ts](../lint/free-english.ts) reads the blocks). */
 export function docExamples(markdown: string): DocExample[] {
   return exampleBlocks(markdown)
     .filter((block) => block.free.length === 1)
-    .map((block) => ({ agebon: block.agebon, free: block.free[0]!.text, line: block.line + 1 }));
+    .map((block) => ({ ageben: block.ageben, free: block.free[0]!.text, line: block.line + 1 }));
 }
 
-/** Table rows that translate an Agebon phrase or sentence, one per English piece. */
+/** Table rows that translate an Ageben phrase or sentence, one per English piece. */
 export function tableExamples(markdown: string): DocExample[] {
   return tableEnglish(markdown).flatMap((cell) =>
-    cell.agebon == null
+    cell.ageben == null
       ? []
-      : [{ agebon: cell.agebon, free: cell.text, line: markdown.slice(0, cell.index).split("\n").length, delimiter: "*" as const }],
+      : [{ ageben: cell.ageben, free: cell.text, line: markdown.slice(0, cell.index).split("\n").length, delimiter: "*" as const }],
   );
 }
 
@@ -44,14 +44,14 @@ export { splitFreeEnglish };
 const stripEmphasis = (text: string) => text.replace(/\*+([^*]+)\*+/g, "$1");
 
 /**
- * Agebon → English checkpoint answers (italic). Never in the example pool, so they are the
+ * Ageben → English checkpoint answers (italic). Never in the example pool, so they are the
  * evaluation's test set: no example has to be held out to score one.
  */
 export function checkpointAnswers(markdown: string): DocExample[] {
   return extractFreeEnglish(markdown).flatMap((line) =>
-    line.kind !== "ag-en" || line.agebon == null
+    line.kind !== "ag-en" || line.ageben == null
       ? []
-      : [{ agebon: line.agebon, free: line.text, line: markdown.slice(0, line.index).split("\n").length, delimiter: "*" as const }],
+      : [{ ageben: line.ageben, free: line.text, line: markdown.slice(0, line.index).split("\n").length, delimiter: "*" as const }],
   );
 }
 
@@ -65,19 +65,19 @@ export function examplePair(example: DocExample, source: string, tables: Classif
   if (!split) return null;
   const { sentence, note } = split;
   if (/`|\]\(/.test(sentence + (note ?? ""))) return null;
-  const agebon = fillSelf(example.agebon);
+  const ageben = fillSelf(example.ageben);
   let gloss: string;
   let constructions: string[];
   try {
-    gloss = morphGlossLine(agebon, tables, { strict: true });
-    constructions = parseWithTables(agebon, tables, { constructions: true }).constructions ?? [];
+    gloss = morphGlossLine(ageben, tables, { strict: true });
+    constructions = parseWithTables(ageben, tables, { constructions: true }).constructions ?? [];
   } catch {
     return null;
   }
   if (gloss.includes('←"')) return null;
   if (extraParens(split.parts.join(" "), gloss) > 0) return null;
   return {
-    agebon,
+    ageben,
     gloss,
     sentence: stripEmphasis(sentence),
     note: note == null ? null : stripEmphasis(note),

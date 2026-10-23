@@ -11,7 +11,7 @@ You can ask for *yes* or *no*, or you can leave a blank for *who* / *what* (a **
 
 ### Ask (`yel` / `yem`) {#question}
 
-A **question** asks for a reply instead of stating a fact. English marks it by moving words around (*Azozon walks* → *Does Azozon walk?*). Agebon marks it with the act word **`yel`** at the start of the turn, followed by the body (subject, verb, and so on). Every word keeps the form it would have in a statement. Only the usual order changes: the verb comes [second](speech-moves.md#act-word-order), right after the subject.
+A **question** asks for a reply instead of stating a fact. English marks it by moving words around (*Azozon walks* → *Does Azozon walk?*). Ageben marks it with the act word **`yel`** at the start of the turn, followed by the body (subject, verb, and so on). Every word keeps the form it would have in a statement. Only the usual order changes: the verb comes [second](speech-moves.md#act-word-order), right after the subject.
 
 Soft **`yem`** asks the same question more gently (wondering rather than pressing). End a written question with a period, like any sentence.
 
@@ -82,7 +82,7 @@ If the reply is just the fill, not a full sentence, write it as a [citation](wor
 >
 > "Azozon."
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** (`zar` · `var` · `xar`) | ask for who or what | *Who/what?* / *What happened?* | **a** ≈ add |
 | **u** (`zur` · `vur` · `xur`) | ask for who or what else | *Who else?* / *What else?* | **u** ≈ undo |
@@ -181,7 +181,7 @@ When a sentence body follows *yes*, write **`yaol`** then the body. You do not a
 
 A turn holds one polar word. Do not stack two, and do not put one before an act word: an answer followed by a question is two turns.
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 <!-- cheat-sheet: talking -->
 |--------|-----|---------|-----|
 | **`yaol`** / soft **`yaom`** | the claim matches, or *got it* | *yes* / *true* · *I think so* | **a** ≈ add + **o** ≈ command (the claim lines up) |
@@ -258,7 +258,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *umbrella* | `omobul` | ☂️ |
 | *coat* | `ogobal` | 🧥 |
@@ -268,7 +268,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -278,7 +278,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *eraser* | `erewul` |
 | *book* | `anal` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Does Azozon find the key?* (with the raised voice)
 
@@ -334,7 +334,7 @@ z-Ahelan | v-write . y-question | y-yes
 y-no
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `yem zahelan vayebel dogobal.`
 

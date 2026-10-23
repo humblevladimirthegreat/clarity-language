@@ -8,7 +8,7 @@ band: intermediate
 
 Beginner already used *yes* / *true* (**`yaol`**), *no* / *false* (**`yuol`**), and *sure* (**`yael`**). The rest of the map is *reject this option*, *reject the question itself*, and *decline to answer*. The first vowel names the family: **`u`** not, **`a`** add, **`o`** pass. The second vowel says what you are answering: **`o`** the claim or the order, **`e`** this option, **`a`** the question's own premise. You can also hear the family: the three undo answers [fall](phonotactics.md#phonotactics) and the other three rise.
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ao`** (`yaol`) | the claim matches, or *got it*; comply with an order | *true* · *will do* | **a** ≈ add + **o** ≈ command (judged in line) |
 | **`uo`** (`yuol`) | flip / mismatch; refuse an order | *false* · *I won't* | **u** ≈ not + **o** ≈ command (judged out of line) |
@@ -142,7 +142,7 @@ After a request or a suggestion, **`yel yael.`** asks *okay?*: will they take it
 >
 > "Azozon walked, or am I wrong?"
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 <!-- cheat-sheet: talking -->
 |--------|-----|---------|
 | `yel yaol.` | ask them to confirm a claim | *…, right?* |
@@ -227,7 +227,7 @@ Soft **`yam yel`** muses rather than insists: you lean toward an answer but put 
 > "Who really cares, though?"
 
 <!-- cheat-sheet: talking -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **`yal yel`** | rhetorical question | *Who cares?* (nobody) |
 | **`yam yel`** | musing | *Who really cares, though?* |
@@ -258,7 +258,7 @@ The answer is the one the asker already holds. Soft **`yem yal`** is a gentle qu
 A question can also sound like a command or a prohibition. It still asks, and the first word says so. Whenever either of two stacked act words is a question word, the [question tone](/questions#question-tone) `?` goes right after both of them.
 
 <!-- cheat-sheet: talking -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **`yel yal`** | quiz: you know the answer | *Seven times eight is…?* |
 | **`yel yol`** | question demanded as an order: an answer is required | *Tell me where you were.* |
@@ -282,14 +282,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *phone* | `ovewel` | 📱 |
 | *attest* | `vugel` | 👁️‍🗨️ |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *listener* | `awan` |
@@ -297,7 +297,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *lie* | `vulamul` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Didn’t Azozon tell?* *True, Azozon didn’t.* (confirm the negative)
 
@@ -347,7 +347,7 @@ y-decline-soft
 y-question | y-prohibition | ? | z-listener | v-lie
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `yel dovewel der.`
 

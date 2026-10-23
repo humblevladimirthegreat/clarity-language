@@ -11,7 +11,7 @@ const props = withDefaults(
   { placement: 'bar' },
 )
 
-/** Nav-bar chip: the learner's Agebon name (or a prompt), opening the name helper. */
+/** Nav-bar chip: the learner's Ageben name (or a prompt), opening the name helper. */
 const { chosen } = useLearnerName()
 const open = ref(false)
 const root = ref<HTMLElement | null>(null)
@@ -54,10 +54,10 @@ onBeforeUnmount(() => {
       class="chip"
       :aria-expanded="open"
       :aria-controls="panelId"
-      :title="chosen ? 'Your Agebon name' : 'Choose your Agebon name'"
+      :title="chosen ? 'Your Ageben name' : 'Choose your Ageben name'"
       @click="open = !open"
     >
-      <span v-if="chosen" class="agebon">{{ label }}</span>
+      <span v-if="chosen" class="ageben">{{ label }}</span>
       <span v-else>{{ label }}</span>
     </button>
     <div
@@ -65,7 +65,7 @@ onBeforeUnmount(() => {
       :id="panelId"
       class="panel"
       role="dialog"
-      aria-label="Your Agebon name"
+      aria-label="Your Ageben name"
     >
       <NameHelper />
     </div>
@@ -104,7 +104,7 @@ onBeforeUnmount(() => {
   width: 100%;
 }
 
-.agebon {
+.ageben {
   font-family: var(--vp-font-family-mono);
 }
 

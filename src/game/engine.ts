@@ -6,7 +6,7 @@
 import { CLOSED } from "../closed-roots.js";
 import type { ClassifyTables } from "../parse/classify.js";
 import { ConstructionError } from "../parse/enforce.js";
-import { glossToAgebon } from "../parse/gloss-inverse.js";
+import { glossToAgeben } from "../parse/gloss-inverse.js";
 import { inspectErrorFrom } from "../parse/inspect.js";
 import { morphGlossLine } from "../parse/morph-gloss.js";
 import { parseWithTables } from "../parse/parse-core.js";
@@ -131,17 +131,17 @@ export function createEngine(tables: ClassifyTables, data: EngineData, options: 
       for (const root of lex.rootsLabelled(label)) voice.learn(root);
     }
     try {
-      return glossToAgebon(gloss, tables, voice.index);
+      return glossToAgeben(gloss, tables, voice.index);
     } catch {
       return undefined;
     }
   }
 
   /** A near miss counts only if it parses one way, every noun resolves in the scene, and its grammar is unlocked. */
-  function viable(ctx: Ctx, agebon: string): { spoken: Spoken; result: ParseResult } | undefined {
+  function viable(ctx: Ctx, ageben: string): { spoken: Spoken; result: ParseResult } | undefined {
     let result: ParseResult;
     try {
-      result = parseWithTables(agebon, tables, { constructions: true, checkAmbiguity: true });
+      result = parseWithTables(ageben, tables, { constructions: true, checkAmbiguity: true });
     } catch {
       return undefined;
     }
@@ -162,11 +162,11 @@ export function createEngine(tables: ClassifyTables, data: EngineData, options: 
     if (!gate(data.gate, engine.progress, result.constructions ?? [], roots).ok) return undefined;
     let gloss = "";
     try {
-      gloss = morphGlossLine(agebon, tables);
+      gloss = morphGlossLine(ageben, tables);
     } catch {
       // A gloss is shown when it can be made; the candidate still runs.
     }
-    return { spoken: { agebon, gloss, english: "", constructions: result.constructions ?? [], roots }, result };
+    return { spoken: { ageben, gloss, english: "", constructions: result.constructions ?? [], roots }, result };
   }
 
   function runTurn(input: string): TurnResult {
@@ -180,7 +180,7 @@ export function createEngine(tables: ClassifyTables, data: EngineData, options: 
     } catch {
       gloss = undefined;
     }
-    lines.push({ kind: "player", agebon: text, ...(gloss ? { gloss } : {}) });
+    lines.push({ kind: "player", ageben: text, ...(gloss ? { gloss } : {}) });
     const tried = attempt(text, tables);
     let outcome: Outcome;
     let ran: string | undefined;
@@ -201,7 +201,7 @@ export function createEngine(tables: ClassifyTables, data: EngineData, options: 
       });
       let fits: { miss: (typeof misses)[number]; spoken: Spoken; result: ParseResult; doable: boolean }[] = [];
       for (const miss of misses) {
-        const fit = viable(ctx, miss.agebon);
+        const fit = viable(ctx, miss.ageben);
         if (fit) fits.push({ miss, ...fit, doable: readActs(fit.result).every((act) => !act.verb || "gap" in act.verb || !!handlerFor(ctx, act.verb.root)) });
       }
       // The likely meaning is the fewest edits away, and one the game can act on: a verb with no handler loses to one with a handler.
@@ -219,7 +219,7 @@ export function createEngine(tables: ClassifyTables, data: EngineData, options: 
           ...(fit.miss.why ? { why: fit.miss.why } : {}),
           ...(fit.miss.source ? { source: fit.miss.source } : {}),
         });
-        ran = fit.spoken.agebon;
+        ran = fit.spoken.ageben;
         constructions = fit.result.constructions;
         outcome = perform(ctx, fit.result);
       } else if (fits.length > 1) {

@@ -18,7 +18,7 @@ You already put a kind on `/ɡ/` after the name (*Azozon is a dog*). The extra c
 > "Azozon is not a dog."
 
 <!-- cheat-sheet: word-shape-clause -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `/w/` hedge before the classifying `/ɡ/` | soft / hedged class | *Azozon is something of a dog* / *a dog, sort of* |
 | `zazozon godozel hual` | characterizing / habitual | *Azozon is always a dog* |
@@ -50,13 +50,13 @@ The `/ɡ/` word takes the verb's place in the [usual order](/speech-moves#act-wo
 
 Beginner already used **`gorel`** (*is the same as*). Its other ending finishes the map.
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **-l** | stand behind the match (closed) | *is* (the same as) |
 | **-m** | leave the match open | *same for our purposes* / *basically* |
 
 <!-- cheat-sheet: word-shape-clause -->
-| Agebon | English |
+| Ageben | English |
 |---------|---------|
 | `zalazun gorel blazozon` | *Alazun is Azozon* (the same person) |
 | `zalazun gorem blazozon` | *Alazun is basically Azozon* |
@@ -73,7 +73,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -83,7 +83,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *quiet* | `ugowul` |
 | *angry* | `onumul` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Azozon is not a guard.*
 
@@ -109,7 +109,7 @@ y-command | g-quiet
 z-Alazun | [g-same | bl-Azozon]
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zalazun gagayul hual.`
 

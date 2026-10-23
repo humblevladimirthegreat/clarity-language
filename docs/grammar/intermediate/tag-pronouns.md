@@ -8,7 +8,7 @@ band: intermediate
 
 Beginner used whole-stem **-r** in the same slot as the earlier word (*he sits*). The resume keeps the earlier word’s role letter, and the English for it depends on that slot:
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `/z/` … `-r` after `/z/` | same subject again | *he / she / it / they*; *that one* |
 | `/d/` … `-r` after `/d/` | same object again | *him / her / it / them*; *that one* |
@@ -70,7 +70,7 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 >
 > "Azozon sits. Alazun does the same with Azozon."
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | noun antecedent, `/v/` … `-r` | the same action again, now involving that entity | *do the same to / with it* |
 | noun antecedent, `/ɡ/` … `-r` | recast as kind | *of that kind* (not possession) |
@@ -102,7 +102,7 @@ With **-l**, **`hehol`** is strictly pairwise: every one of them does it to ever
 
 ### Addressing several people
 
-English *you* does not say whether you are talking to one person or several. Agebon does: one addressee is **`awa`**, and the listener root plus associative **-x** (**`awanx`**) names everyone this turn addresses. That is everyone the turn’s calls named, plus anyone you were already addressing. Inclusive *shall we* is still **`aya`**, and soft **`zayam`** hedges whether you really share the act.
+English *you* does not say whether you are talking to one person or several. Ageben does: one addressee is **`awa`**, and the listener root plus associative **-x** (**`awanx`**) names everyone this turn addresses. That is everyone the turn’s calls named, plus anyone you were already addressing. Inclusive *shall we* is still **`aya`**, and soft **`zayam`** hedges whether you really share the act.
 
 > `zawanx vehohel.`
 >
@@ -117,7 +117,7 @@ English *you* does not say whether you are talking to one person or several. Age
 English sometimes labels people to keep them apart: *call the first one A*, *suppose A tells E*. A **tag** is that label. You choose it, and it stays on the same referent however many others come and go. Write the role letter, **`w`**, a tag vowel, and an ending. The four vowels are four tags, named by the vowel's [letter name](phonotactics.md#letter-names): A, E, O, U. Roots start with a vowel, so a consonant right after the role letter, or after the `l` of a [hosted](/clause#extra-nouns) `bl-` word, is always a marker: `r` starts a [number word](/numbers), and `w` followed by vowels and an ending is a tag (`blwar` completes the word before it, with a [syllabic `l`](phonotactics.md#syllabic-l)). (cue: **w** ≈ *we call it*: the label you and the listener agree on)
 
 <!-- cheat-sheet: people-pointing -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `zodozel zwal` | a phrase, then tag + **-l** in the same role: assign | *a dog, call it A* |
 | `zwal` | tag + **-l** with no phrase before it | *someone A*: a new referent with no name |
@@ -169,7 +169,7 @@ A tag lasts until it is assigned again or the conversation ends with a [goodbye]
 A stacked vowel names two tags together. There are six stacks, one for each pair of tags: `zwaer` is *A and E*, `zwaor` *A and O*, `zwoer` *O and E*, `zwuar` *U and A*, `zwuor` *U and O*, and `zwuer` *U and E*. Each pair has this one spelling, whichever tag you name first.
 
 <!-- cheat-sheet: people-pointing -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `zwaer` | pair + **-r**: both, together | *A and E* |
 | `zwaem` | pair + **-m**: their parts in the latest earlier event both took part in | *what A and E did* |
@@ -195,7 +195,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *harvest* | `vogelam` | 🌾 from *grain*: bringing the crop in |
 | *red* | `erulol` | 🔴 |
@@ -203,7 +203,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -216,7 +216,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vayebel` |
 | *scream* | `veyamul` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Alazun pours. Azozon does too.*
 
@@ -258,7 +258,7 @@ z-tomato | g-red . z-watermelon | g-←red
 [[z-Azozon | z-tag.A] | [z-Alazun | z-tag.E] | z-and.open] | v-harvest . z-←tag.A+E | v-scream
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zalazun hewem blazozon vowuvul. zahelan hewer vogelam.`
 

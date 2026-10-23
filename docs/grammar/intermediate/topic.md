@@ -4,14 +4,14 @@ band: intermediate
 
 # Topic {#discourse-topic}
 
-English *now, about Azozon…*, *speaking of dogs…*, and *so, back to Azozon…* say what the talk is about from here on, and every later *he* or *it* follows. Agebon makes that overt as a **topic**. Pointing back at someone already named, without setting what the talk is about, is in [pronouns](/pronouns).
+English *now, about Azozon…*, *speaking of dogs…*, and *so, back to Azozon…* say what the talk is about from here on, and every later *he* or *it* follows. Ageben makes that overt as a **topic**. Pointing back at someone already named, without setting what the talk is about, is in [pronouns](/pronouns).
 
 ### Topic {#topic}
 
 A topic is set only by an `/x/` word at the start of a sentence: `/x/`, then the thing the talk is about, then its ending. Nothing else sets one. Being named first, being the subject, and [*as for*](/clause#adverbs-h) do not, so a listener or a tool can tell at every point what the topic is.
 
 <!-- cheat-sheet: people-pointing -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `xazozon` | introduce a person | *now, about Azozon* |
 | `xodozel` | introduce a kind | *now, about a dog* |
@@ -100,7 +100,7 @@ Introduce, return, and clear each start a new **topic stretch**.
 Both set the topic. The difference is the ordinary difference between **-r** and a first mention:
 
 <!-- cheat-sheet: people-pointing -->
-| Agebon | Topic | English |
+| Ageben | Topic | English |
 |--------|-------|---------|
 | `xazozon` | Azozon | *now, about Azozon* (a name picks out the same person either way) |
 | `xazozor` | Azozon, the one mentioned before | *back to Azozon* |
@@ -151,7 +151,7 @@ To ask what the talk is about, ask *which topic?*: the fill-ask blank `zar`, the
 >
 > "Which topic?" / "What are we talking about?"
 
-**Compare with:** English *topic* covers several jobs, and Agebon keeps them apart. The discourse topic is `/x/`. A sentence frame is `hehugom` *as for*. `&` contrasts one phrase ([tone marks](tone-marks.md#tone-marks)). `zal` / `zom` / `zol` rank among others. Only `/x/` sets the topic.
+**Compare with:** English *topic* covers several jobs, and Ageben keeps them apart. The discourse topic is `/x/`. A sentence frame is `hehugom` *as for*. `&` contrasts one phrase ([tone marks](tone-marks.md#tone-marks)). `zal` / `zom` / `zol` rank among others. Only `/x/` sets the topic.
 
 ### Practice {#intermediate-practice}
 
@@ -161,7 +161,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *as for* | `hehugom` | #️⃣ from *hash*: a heading mark |
 | *by the way* | `xavedam` | 🍟 from *fries*: a side dish, not the main course |
@@ -169,7 +169,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -180,7 +180,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *tell* | `vezuyol` |
 | *book* | `anal` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Now, about Azozon: Azozon writes. Alazun sees Azozon.*
 
@@ -230,7 +230,7 @@ x-Alazun | z-Azozon | v-tell | d-that-clause | z-TOPIC | v-write
 z-Azozon | v-write . z-Alazun | v-tell . x-←Azozon | z-TOPIC | v-write
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `xalazun zalen varuyol. xavedam zazozon danal vayebel. xalazur zalen vezuyol.`
 

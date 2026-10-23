@@ -21,7 +21,7 @@ import { matchesTerm, type Term } from "./query.js";
 import { spliceWord, type FieldMaps } from "./rewrite.js";
 
 const SOURCE_FILE = /\.(?:ts|mts|mjs|vue)$/;
-/** `--write` skips these unless `--tests`: assertions next to Agebon literals do not move. */
+/** `--write` skips these unless `--tests`: assertions next to Ageben literals do not move. */
 const TEST_FILE = /\.(?:test|spec)\.[cm]?[jt]sx?$/;
 const SKIP_DIR_NAMES = new Set(["node_modules", "cache", "dist"]);
 /** Path prefixes under the repo that a directory walk never enters. */
@@ -100,7 +100,7 @@ function collectTsvSpans(text: string, tables: ClassifyTables): PageSpans {
   return { examples, unparsed };
 }
 
-/** Parsed Agebon bodies in a Markdown page, a source file, or a TSV. */
+/** Parsed Ageben bodies in a Markdown page, a source file, or a TSV. */
 export function collectFileSpans(file: string, text: string, tables: ClassifyTables): PageSpans {
   if (file.endsWith(".md")) return collectPageSpans(text, tables);
   if (file.endsWith(".tsv")) return collectTsvSpans(text, tables);

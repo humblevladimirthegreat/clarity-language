@@ -48,7 +48,7 @@ To make a whole `A HOOK B` phrase into a name (a store, a title, a handle), give
 
 ### Abstract landmarks (*in a crisis*, *out of debt*) {#abstract-landmarks}
 
-English uses the same prepositions for states, plans, and conditions as for places: *in a crisis*, *on a policy*, *out of debt*. Agebon does the same. Put a noun in its abstract **-m** sense right after an extra-noun hook, and the hook keeps the picture it has with a place: a state is something you are **in**, a plan is a surface you stand **on**, a tendency is somewhere you head **toward**, a condition is something you get **out of**. So a new pairing needs no new word: read the hook's picture in an abstract space.
+English uses the same prepositions for states, plans, and conditions as for places: *in a crisis*, *on a policy*, *out of debt*. Ageben does the same. Put a noun in its abstract **-m** sense right after an extra-noun hook, and the hook keeps the picture it has with a place: a state is something you are **in**, a plan is a surface you stand **on**, a tendency is somewhere you head **toward**, a condition is something you get **out of**. So a new pairing needs no new word: read the hook's picture in an abstract space.
 
 > `zalazun vavobol ual baram.`
 >
@@ -127,7 +127,7 @@ When the items sit on a line with an order (people in a queue, days, chapters, n
 > "Everyone from Azozon through Ahelan walks."
 
 <!-- cheat-sheet: joins-hooks -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`oel`** | A, B, and everything between | *A through B* | **o** ≈ at + **e** ≈ for: start at A, head for B |
 | **`ual`** | only what lies between | *strictly between A and B* | **ua** ≈ take away both ends |
@@ -169,7 +169,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *newspaper* | `unonal` | 📰 |
 | *radio* | `arowel` | 📻 |
@@ -177,7 +177,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -188,7 +188,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *run* | `veruvol` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *The family, even Azozon, writes.*
 
@@ -214,7 +214,7 @@ z-Alazun | d-newspaper | v-write | [against | b-policy]
 z-Azozon | through | z-Ahelan | v-write
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zazozon uor zahelan veruvol.`
 

@@ -1,4 +1,4 @@
-import { isAgebonRootShape } from "../root-shape.js";
+import { isAgebenRootShape } from "../root-shape.js";
 
 import type { MorphWord } from "./types.js";
 
@@ -85,7 +85,7 @@ export function parseHookCompoundCite(cite: string): HookCompoundParts | null {
     const leftEnding = leftCite.at(-1);
     if (leftEnding !== "l" && leftEnding !== "m") continue;
     const leftRoot = leftCite.slice(0, -1);
-    if (!isAgebonRootShape(leftRoot) || leftRoot.length !== 5) continue;
+    if (!isAgebenRootShape(leftRoot) || leftRoot.length !== 5) continue;
     return { leftRoot, leftEnding, hook, stem: `${leftRoot}${leftEnding}${hook}` };
   }
   return null;

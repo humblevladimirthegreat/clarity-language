@@ -291,13 +291,13 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *telescope* | `udowol` | 🔭 |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -307,7 +307,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *sun* | `ezalol` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#advanced-english-to-agebon}
+#### English → Ageben {#advanced-english-to-ageben}
 
 **1.** *There are infinitely many stars.*
 
@@ -341,7 +341,7 @@ x-finally | z-Azozon | d-cloud-x | v-see
 z-Alazun | h---e- | d-sun | v-see
 :::
 
-#### Agebon → English {#advanced-agebon-to-english}
+#### Ageben → English {#advanced-ageben-to-english}
 
 **1.** `zalelx grawam.`
 

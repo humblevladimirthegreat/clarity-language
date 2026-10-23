@@ -18,7 +18,7 @@ To ask what something is **like** (*What color is it?*, *What kind of dog?*), pu
 >
 > "Big."
 
-| Agebon | English |
+| Ageben | English |
 <!-- cheat-sheet: talking -->
 |--------|---------|
 | **`gar`** | *What is it like?* / *What kind?* |
@@ -37,7 +37,7 @@ To ask *when?* / *in what case?*, put the blank **`har`** in the `/h/` slot (or 
 >
 > "When does Ahelan walk?"
 
-| Agebon | English (statement, bare) | English (under question, bare) |
+| Ageben | English (statement, bare) | English (under question, bare) |
 |--------|---------------------------|--------------------------------|
 | **`har`** / **`war`** | *sometimes* | *When?* / *In what case?* |
 
@@ -57,7 +57,7 @@ To ask *where?*, write an [extra-noun hook](hooks.md#extra-noun) (a short word l
 >
 > "What does the dog sleep in?"
 
-| Agebon | English |
+| Ageben | English |
 <!-- cheat-sheet: talking -->
 |--------|---------|
 | **`el bar`** | *Where (at)?* |
@@ -111,7 +111,7 @@ To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in
 >
 > "What does Azozon walk for?"
 
-| Agebon | English |
+| Ageben | English |
 <!-- cheat-sheet: talking -->
 |--------|---------|
 | **`thahum blar`** | *Why?* (*because of what?*) |
@@ -126,13 +126,13 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *map* | `agol` | 🗺️ |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -143,7 +143,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sleep* | `vezuvel` |
 | *tell* | `vezuyol` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *What is the map like?*
 
@@ -177,7 +177,7 @@ y-question | [d-map | [used-by | b-wh]] | z-Alazun | v-find
 y-question | [at | b-wh] | z-Ahelan | v-walk
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `yel thahum blar zazozon vowurol.`
 

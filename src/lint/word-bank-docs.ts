@@ -1,7 +1,7 @@
 /**
  * Checkpoint word banks: legacy **Roots used here** tables, and the **New words** / **Review**
  * bank of a converted `### Practice` checkpoint (docs/meta/translation-exercises.md#vocab-table).
- * English must be a lexicon / overlay / morph sense for that Agebon spelling, and a bank lists
+ * English must be a lexicon / overlay / morph sense for that Ageben spelling, and a bank lists
  * exactly the content roots its drills use.
  */
 import { CLOSED, closedDerived } from "../closed-roots.js";
@@ -18,9 +18,9 @@ import { practiceRanges, type PracticeRange } from "./practice-sections.js";
 
 export type WordBankFinding = {
   line: number;
-  agebon: string;
+  ageben: string;
   english: string;
-  column: "Agebon" | "Same root as";
+  column: "Ageben" | "Same root as";
   expected: string[];
   detail: string;
 };
@@ -41,12 +41,12 @@ export function lintWordBankMarkdown(
       : (findRootsTable(lines, range.start, range.end)?.rows ?? []);
     for (const row of rows) {
       const line = lineNumberAt(text, lineIndexToCharIndex(text, row.lineIndex));
-      if (row.agebon && row.english) {
-        const hit = checkPair(row.agebon, row.english, tables, "Agebon");
+      if (row.ageben && row.english) {
+        const hit = checkPair(row.ageben, row.english, tables, "Ageben");
         if (hit) findings.push({ ...hit, line });
       }
-      if (row.sameAgebon && row.sameEnglish) {
-        const hit = checkPair(row.sameAgebon, row.sameEnglish, tables, "Same root as");
+      if (row.sameAgeben && row.sameEnglish) {
+        const hit = checkPair(row.sameAgeben, row.sameEnglish, tables, "Same root as");
         if (hit) findings.push({ ...hit, line });
       }
     }
@@ -55,19 +55,19 @@ export function lintWordBankMarkdown(
 }
 
 function checkPair(
-  agebon: string,
+  ageben: string,
   english: string,
   tables: ClassifyTables,
-  column: "Agebon" | "Same root as",
+  column: "Ageben" | "Same root as",
 ): Omit<WordBankFinding, "line"> | null {
-  const surface = decodeEntities(agebon).replace(/[.,!?]+$/, "");
+  const surface = decodeEntities(ageben).replace(/[.,!?]+$/, "");
   const got = normalizeEnglish(english);
   if (!got) return null;
 
   // The learner's own name (`SELFn`) is not a lexicon word; its English is *your name*.
   if (hasSelfSlot(surface)) {
     if (got === normalizeEnglish("your name")) return null;
-    return { agebon: surface, english, column, expected: ["your name"], detail: "SELF row English must be *your name*" };
+    return { ageben: surface, english, column, expected: ["your name"], detail: "SELF row English must be *your name*" };
   }
 
   let morph;
@@ -76,7 +76,7 @@ function checkPair(
   } catch (error) {
     if (error instanceof WordParseError) {
       return {
-        agebon: surface,
+        ageben: surface,
         english,
         column,
         expected: [],
@@ -90,7 +90,7 @@ function checkPair(
     const payload = foreignPayload(morph.family);
     if (payload && normalizeEnglish(payload) === got) return null;
     return {
-      agebon: surface,
+      ageben: surface,
       english,
       column,
       expected: payload ? [payload] : [],
@@ -102,7 +102,7 @@ function checkPair(
   if (allowed.all.has(got) || allowed.hostLemmas.has(got)) return null;
   if (specialPronounEnglish(morph) === got) return null;
   return {
-    agebon: surface,
+    ageben: surface,
     english,
     column,
     expected: [...allowed.all].sort(),
@@ -238,9 +238,9 @@ function foreignPayload(family: ReturnType<typeof parseWord>["family"]): string 
 export type BankRow = {
   lineIndex: number;
   english: string | null;
-  agebon: string | null;
+  ageben: string | null;
   sameEnglish: string | null;
-  sameAgebon: string | null;
+  sameAgeben: string | null;
   /** The Cue cell as written; null when the table has no Cue column. */
   cue: string | null;
 };
@@ -254,7 +254,7 @@ export function findRootsTable(lines: string[], start: number, end: number): Ban
 
 /**
  * The first table under a caption matching `captionRe` in `[start, end)`. Rows are read only
- * when the header has English and Agebon columns; `header` is always returned.
+ * when the header has English and Ageben columns; `header` is always returned.
  */
 export function findBankTable(lines: readonly string[], start: number, end: number, captionRe: RegExp): BankTable | null {
   let caption = -1;
@@ -277,7 +277,7 @@ export function findBankTable(lines: readonly string[], start: number, end: numb
 
   const header = splitRow(lines[headerIndex]!);
   const englishCol = header.findIndex((h) => /^english$/i.test(h));
-  const agebonCol = header.findIndex((h) => /^agebon$/i.test(h));
+  const agebenCol = header.findIndex((h) => /^ageben$/i.test(h));
   const sameCol = header.findIndex((h) => /^same root as$/i.test(h));
   const cueCol = header.findIndex((h) => /^cue$/i.test(h));
 
@@ -285,15 +285,15 @@ export function findBankTable(lines: readonly string[], start: number, end: numb
   if (i < end && isDividerRow(lines[i]!)) i += 1;
   const rows: BankRow[] = [];
   while (i < end && isTableRow(lines[i]!) && !isDividerRow(lines[i]!)) {
-    if (englishCol >= 0 && agebonCol >= 0) {
+    if (englishCol >= 0 && agebenCol >= 0) {
       const cells = splitRow(lines[i]!);
-      const same = sameCol >= 0 ? parseSameRoot(cells[sameCol] ?? "") : { agebon: null, english: null };
+      const same = sameCol >= 0 ? parseSameRoot(cells[sameCol] ?? "") : { ageben: null, english: null };
       rows.push({
         lineIndex: i,
         english: firstItalic(cells[englishCol] ?? ""),
-        agebon: firstAgebon(cells[agebonCol] ?? ""),
+        ageben: firstAgeben(cells[agebenCol] ?? ""),
         sameEnglish: same.english,
-        sameAgebon: same.agebon,
+        sameAgeben: same.ageben,
         cue: cueCol >= 0 ? (cells[cueCol] ?? "").trim() : null,
       });
     }
@@ -303,7 +303,7 @@ export function findBankTable(lines: readonly string[], start: number, end: numb
 }
 
 function hasColumns(header: readonly string[]): boolean {
-  return header.some((h) => /^english$/i.test(h)) && header.some((h) => /^agebon$/i.test(h));
+  return header.some((h) => /^english$/i.test(h)) && header.some((h) => /^ageben$/i.test(h));
 }
 
 /** The bank of a converted checkpoint: **New words** and **Review**, above the first `####`. */
@@ -339,8 +339,8 @@ function drillStartOf(lines: readonly string[], range: PracticeRange): number {
   return range.end;
 }
 
-function parseSameRoot(cell: string): { agebon: string | null; english: string | null } {
-  return { agebon: firstAgebon(cell), english: firstItalic(cell) };
+function parseSameRoot(cell: string): { ageben: string | null; english: string | null } {
+  return { ageben: firstAgeben(cell), english: firstItalic(cell) };
 }
 
 function firstItalic(cell: string): string | null {
@@ -348,7 +348,7 @@ function firstItalic(cell: string): string | null {
   return m ? m[1]!.trim() : null;
 }
 
-function firstAgebon(cell: string): string | null {
+function firstAgeben(cell: string): string | null {
   const code = cell.match(/`([^`]+)`/);
   if (code) return decodeEntities(code[1]!.trim());
   const html = cell.match(/<code>([^<]+)<\/code>/i);
@@ -396,7 +396,7 @@ export type WordBankUsageFinding = {
 
 /**
  * Word banks against their drills: every lexicon content root the drills use
- * (answer spoilers and Agebon prompts, under the `####` headings) has a bank row
+ * (answer spoilers and Ageben prompts, under the `####` headings) has a bank row
  * (**Roots used here**, or **New words** / **Review** on a converted checkpoint),
  * and every row is used. Roots match, not spellings (`veyel` in the bank covers
  * `zeyel`, a full-root resume, a role compound's inner root). Overlay words need
@@ -443,11 +443,11 @@ export function lintWordBankUsage(text: string, tables: ClassifyTables): WordBan
 
     const banked = new Set<string>();
     for (const row of rows) {
-      if (!row.agebon) continue;
-      const roots = bankRoots(row.agebon, tables);
+      if (!row.ageben) continue;
+      const roots = bankRoots(row.ageben, tables);
       for (const root of roots) banked.add(root);
       if (roots.length > 0 && !roots.some((root) => used.has(root))) {
-        findings.push({ line: row.lineIndex + 1, kind: "unused", roots, surface: row.agebon });
+        findings.push({ line: row.lineIndex + 1, kind: "unused", roots, surface: row.ageben });
       }
     }
     for (const [root, use] of required) {
@@ -459,12 +459,12 @@ export function lintWordBankUsage(text: string, tables: ClassifyTables): WordBan
 
 export type PracticeBankFinding = { line: number; detail: string };
 
-const NEW_WORDS_COLUMNS = ["English", "Agebon", "Cue"];
-const REVIEW_COLUMNS = ["English", "Agebon"];
+const NEW_WORDS_COLUMNS = ["English", "Ageben", "Cue"];
+const REVIEW_COLUMNS = ["English", "Ageben"];
 
 /**
  * Shape of a converted checkpoint's bank (docs/meta/translation-exercises.md#vocab-table):
- * **New words** is English · Agebon · Cue with a cue on every row, **Review** is English · Agebon,
+ * **New words** is English · Ageben · Cue with a cue on every row, **Review** is English · Ageben,
  * no root is listed twice, and there is no legacy **Roots used here** table.
  */
 export function lintPracticeBank(text: string, tables: ClassifyTables): PracticeBankFinding[] {
@@ -494,14 +494,14 @@ export function lintPracticeBank(text: string, tables: ClassifyTables): Practice
       }
       for (const row of table.rows) {
         if (name === "New words" && row.cue !== null && !row.cue) {
-          findings.push({ line: row.lineIndex + 1, detail: `**New words** row \`${row.agebon ?? ""}\` has no Cue` });
+          findings.push({ line: row.lineIndex + 1, detail: `**New words** row \`${row.ageben ?? ""}\` has no Cue` });
         }
-        if (!row.agebon) continue;
-        for (const root of bankRoots(row.agebon, tables)) {
+        if (!row.ageben) continue;
+        for (const root of bankRoots(row.ageben, tables)) {
           const first = seen.get(root);
           if (first) {
-            findings.push({ line: row.lineIndex + 1, detail: `root ${root} (\`${row.agebon}\`) is already listed (\`${first}\`); one row per root across **New words** and **Review**` });
-          } else seen.set(root, row.agebon);
+            findings.push({ line: row.lineIndex + 1, detail: `root ${root} (\`${row.ageben}\`) is already listed (\`${first}\`); one row per root across **New words** and **Review**` });
+          } else seen.set(root, row.ageben);
         }
       }
     }
@@ -558,13 +558,13 @@ function vocabUses(word: LexWord, tables: ClassifyTables): { root: string; overl
     .map((root) => ({ root, overlay }));
 }
 
-export function bankRoots(agebon: string, tables: ClassifyTables): string[] {
-  return bankUses(agebon, tables).map((use) => use.root);
+export function bankRoots(ageben: string, tables: ClassifyTables): string[] {
+  return bankUses(ageben, tables).map((use) => use.root);
 }
 
 /** Lexicon roots a bank cell spells, with `overlay` set where the cell is a closed overlay word on that root. */
-export function bankUses(agebon: string, tables: ClassifyTables): { root: string; overlay: boolean }[] {
-  const surface = agebon.replace(/[.,!?]+$/, "");
+export function bankUses(ageben: string, tables: ClassifyTables): { root: string; overlay: boolean }[] {
+  const surface = ageben.replace(/[.,!?]+$/, "");
   try {
     const morph = parseWord(surface);
     if (isForeignPayload(morph.family)) return [];
@@ -598,7 +598,7 @@ export function formatWordBankFinding(relpath: string, finding: WordBankFinding)
     finding.expected.length > 0 ? finding.expected.map((s) => `*${s}*`).join(" / ") : "(none)";
   return [
     `${relpath}:${finding.line}  word-bank English mismatch (${finding.column})`,
-    `  agebon: \`${finding.agebon}\``,
+    `  ageben: \`${finding.ageben}\``,
     `  documented: *${finding.english}*`,
     `  lexicon:     ${expect}`,
     `  ${finding.detail}`,

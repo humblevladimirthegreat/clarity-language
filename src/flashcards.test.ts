@@ -31,8 +31,8 @@ describe("buildNotes", () => {
     const rows = inputs.overlays.filter((r) => r.kind === "sake" && r.senseForm === inputs.overlays[0]!.senseForm);
     assert.ok(rows.length >= 2);
     const note = notes.overlays.find((n) => n.key === rows[0]!.senseForm)!;
-    for (const { pos } of rows) assert.ok(note.tags.includes(`agebon::pos::${pos}`), pos);
-    assert.ok(note.tags.includes("agebon::stage::beginner"));
+    for (const { pos } of rows) assert.ok(note.tags.includes(`ageben::pos::${pos}`), pos);
+    assert.ok(note.tags.includes("ageben::stage::beginner"));
     assert.equal(note.fields.concrete, rows[0]!.gloss);
     assert.equal(note.fields.abstract, rows[0]!.definition);
   });
@@ -72,7 +72,7 @@ describe("packs", () => {
     const at = core.decks.map((d) => order.get(d.notes[0]!.core)!);
     assert.deepEqual(at, [...at].sort((a, b) => a - b));
     core.decks.forEach((d, i) => {
-      assert.match(d.name, new RegExp(`^Agebon::Core::${String(i + 1).padStart(2, "0")} `));
+      assert.match(d.name, new RegExp(`^Ageben::Core::${String(i + 1).padStart(2, "0")} `));
       assert.equal(new Set(d.notes.map((n) => n.core)).size, 1, d.name);
     });
     const packed = core.decks.flatMap((d) => d.notes.map((n) => n.key));
@@ -96,8 +96,8 @@ describe("packs", () => {
   it("Everything: all roots and compounds, one deck per source", () => {
     const decks = buildPack("everything", notes, inputs).decks;
     assert.deepEqual(decks.map((d) => [d.name, d.notes.length]), [
-      ["Agebon::Everything::Roots", inputs.published.length],
-      ["Agebon::Everything::Compounds", inputs.compounds.length],
+      ["Ageben::Everything::Roots", inputs.published.length],
+      ["Ageben::Everything::Compounds", inputs.compounds.length],
     ]);
   });
 
@@ -111,7 +111,7 @@ describe("packs", () => {
 
 describe("sakeInventoryRoots", () => {
   it("reads the first column of the inventory table", () => {
-    const md = "### Sake inventory {#sake-inventory}\n\n| Agebon | Use |\n|---|---|\n| **`ahu`** | autonomy |\n| **`ulo`** | competence |\n\nAfter.\n";
+    const md = "### Sake inventory {#sake-inventory}\n\n| Ageben | Use |\n|---|---|\n| **`ahu`** | autonomy |\n| **`ulo`** | competence |\n\nAfter.\n";
     assert.deepEqual(sakeInventoryRoots(md), ["ahu", "ulo"]);
   });
 });

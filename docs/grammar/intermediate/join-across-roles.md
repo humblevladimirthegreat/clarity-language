@@ -127,7 +127,7 @@ These are ordinary content verbs. To refer back to a join-act you already named,
 
 Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 
-| Agebon | Use | English | Cue | Example |
+| Ageben | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
 | **`van`** | hold the object in the set | *includes / adds* | **a** ≈ add (hold / inventory) | `zazozon daledel van` |
 | **`ven`** | lock the object as the sole pick | *chooses (as the one choice)* | **e** ≈ either (single pick) | `zazozon dedudal ven` |
@@ -162,7 +162,7 @@ When English ties one extra thing to a noun or an action by a list move (*a cupc
 
 For several members, put a [phrase join](/joins) **inside** the `/b/` phrase (`gan bluwedal blugedam bal`; `zazozon han blalazun blahelan bal vowurol`). For an unnamed member or none at all, use a [standalone](/joins#standalone-phrase) `/b/` join as the only `/b/` word (`gan blar` = *including something*; `guan blal` = *excluding nothing`).
 
-| Agebon | Use | English | Cue | Example |
+| Ageben | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
 | **`gan` / `han`** | `/ɡ/` noun or `/h/` event toward `/b/` | *including / with* | **a** ≈ add (hold the extra member) | `zugedal gan bluwedal`; `zazozon han blalazun vowurol` |
 | **`gen` / `hen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | **e** ≈ either (lock that pick) | `zuhunam gen blazozon`; `… hen blazozon vowurol` |
@@ -187,7 +187,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *finish-line* | `uvahul` | 🏁 |
 | *teamwork* | `uhunam` | 🤾 from *handball* |
@@ -196,7 +196,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -206,7 +206,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *punch* | `vabuvul` |
 | *scream* | `veyamul` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Azozon adds the trophy.*
 
@@ -240,7 +240,7 @@ z-Alazun | v-run | th-because | th-not | bl-that-clause | z-Azozon | v-punch
 z-Azozon | v-scream | th-because | th-not | bl-that-clause | z-Ahelan | v-punch
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zalazun dodoral ven.`
 

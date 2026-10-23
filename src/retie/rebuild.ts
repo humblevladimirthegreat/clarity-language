@@ -3,7 +3,7 @@ import { peelWordChunk } from "../parse/peel.js";
 import { parseWord } from "../parse/word.js";
 import { writingSpanEnd } from "../parse/span-scan.js";
 import type { MorphWord, MorphWordFamily, WritingBracket } from "../parse/types.js";
-import { isAgebonRootShape } from "../root-shape.js";
+import { isAgebenRootShape } from "../root-shape.js";
 import type { ResumeScope } from "./resume.js";
 
 export type { ResumeScope } from "./resume.js";
@@ -26,14 +26,14 @@ export function retieCore(
     return null;
   }
   const bare = map.get(core);
-  if (bare && isAgebonRootShape(core)) {
+  if (bare && isAgebenRootShape(core)) {
     return bare === core ? null : bare;
   }
   const posLen = core.startsWith("th") ? 2 : POS_LETTERS.includes(core[0]!) ? 1 : 0;
   if (core.length >= 3 + posLen && posLen > 0) {
     const rest = core.slice(posLen);
     const mappedRest = map.get(rest);
-    if (mappedRest && isAgebonRootShape(rest) && rest.length >= 3) {
+    if (mappedRest && isAgebenRootShape(rest) && rest.length >= 3) {
       const next = `${core.slice(0, posLen)}${mappedRest}`;
       return next === core ? null : next;
     }
@@ -142,7 +142,7 @@ function rewriteWritingSpan(
   map: ReadonlyMap<string, string>,
   scope?: ResumeScope,
 ): string | null {
-  // An opaque `<…>` payload is foreign text, never Agebon (spans.md#loans).
+  // An opaque `<…>` payload is foreign text, never Ageben (spans.md#loans).
   if (family.bracket === "<") {
     return null;
   }

@@ -1,15 +1,15 @@
 /**
- * Retie Agebon held in source code: string literals in `src/` (tests included), `scripts/`
- * and the grammar site. Literals that read as Agebon are rewritten like a doc span; English
+ * Retie Ageben held in source code: string literals in `src/` (tests included), `scripts/`
+ * and the grammar site. Literals that read as Ageben are rewritten like a doc span; English
  * names that copy a named word follow it. Anything else that still spells an old root is
  * reported, so root tables (house cast, special pronouns, sample fillers) are not left stale.
  */
 import ts from "typescript";
 
-import { ENGLISH_IN_CODE, classifyAgebonSpan } from "../lint/agebon-docs.js";
+import { ENGLISH_IN_CODE, classifyAgebenSpan } from "../lint/ageben-docs.js";
 import { fillSelf } from "../learner-name.js";
 import { namedEnglish } from "../closed-roots.js";
-import { isAgebonRootShape } from "../root-shape.js";
+import { isAgebenRootShape } from "../root-shape.js";
 import type { ClassifyTables } from "../parse/classify.js";
 import { parseWord } from "../parse/word.js";
 
@@ -49,7 +49,7 @@ export function sourceLiterals(source: string, fileName = "source.ts"): SourceLi
       const body = source.slice(start, node.getEnd() - (ts.isTemplateTail(node) ? 1 : 2));
       if (body) out.push(body.includes("\\") ? { index: start, body, escaped: true } : { index: start, body });
     } else if (ts.isRegularExpressionLiteral(node)) {
-      // A pattern that quotes Agebon (`/`wonathumer` does not appear/`); flags after the last slash.
+      // A pattern that quotes Ageben (`/`wonathumer` does not appear/`); flags after the last slash.
       const start = node.getStart(file) + 1;
       const text = source.slice(start - 1, node.getEnd());
       const body = text.slice(1, text.lastIndexOf("/"));
@@ -94,10 +94,10 @@ export type SourceRetieContext = {
 };
 
 /**
- * Identifiers that spell like an Agebon word but name tooling: the `agebon` fence info string,
- * `lint:agebon`, file names, storage keys. They follow the language's English name, not a root.
+ * Identifiers that spell like an Ageben word but name tooling: the `ageben` fence info string,
+ * `lint:ageben`, file names, storage keys. They follow the language's English name, not a root.
  */
-const SOURCE_IDENTIFIERS = new Set(["agebon"]);
+const SOURCE_IDENTIFIERS = new Set(["ageben"]);
 
 function isKept(word: string, ctx: SourceRetieContext): boolean {
   return SOURCE_IDENTIFIERS.has(word) || (ctx.keep?.has(word) ?? false);
@@ -249,7 +249,7 @@ type LiteralResult = {
   /** The rewritten value. */
   value: string;
   changes: RetieChange[];
-  /** Read as a whole Agebon sentence or phrase: its words give the file its context. */
+  /** Read as a whole Ageben sentence or phrase: its words give the file its context. */
   sentence: boolean;
   /** A one-word literal, rewritten with no sentence around it. */
   lone: boolean;
@@ -314,7 +314,7 @@ function retieStaleTokens(value: string, ctx: SourceRetieContext, local: RetieCh
   // Read with the old lexicon's shapes, so a lateral or a holder seam (`hewezathaxar`, `theyemazawan`) moves too.
   const rewrite = resumeRewrite(ctx.map, ctx.tables);
   return value.replace(/(?<![A-Za-z])[a-z]{3,}(?![A-Za-z])/g, (word, offset: number) => {
-    // A query term's value (`root=abode`, `raw!=…`) is Agebon even when it spells an English word.
+    // A query term's value (`root=abode`, `raw!=…`) is Ageben even when it spells an English word.
     const termValue = value[offset - 1] === "=";
     if (written.has(word) || (!termValue && isEnglish(word, ctx)) || isKept(word, ctx)) return word;
     const next = ctx.map.get(word) ?? rewrite(word);
@@ -446,13 +446,13 @@ function isEnglish(word: string, ctx: SourceRetieContext): boolean {
 /**
  * Which literals are rewritten, by lint class: a sentence, phrase or template with no common
  * English word, or (in a test) one word with a role letter (`zazawan`). Any other one-word
- * literal may be a key or an English label (`"agebon"`, `"one"`), so it is only reported.
+ * literal may be a key or an English label (`"ageben"`, `"one"`), so it is only reported.
  */
 function rewritableClass(body: string, isTest: boolean, ctx: SourceRetieContext): string | undefined {
-  const cls = classifyAgebonSpan(fillSelf(body));
+  const cls = classifyAgebenSpan(fillSelf(body));
   if (!REWRITE_CLASSES.has(cls)) return undefined;
   // A lone letter is a role letter (`b_#22,7`, `g+3`), not the English word list's `b`.
-  // Hooks (`ol`, `al`) are closed Agebon forms even where the English list has them.
+  // Hooks (`ol`, `al`) are closed Ageben forms even where the English list has them.
   const words = (body.match(/(?<![A-Za-z])[a-z]+(?![A-Za-z])/g) ?? []).filter((word) => word.length > 1 && !isHook(word));
   if (words.some((word) => isEnglish(word, ctx))) return undefined;
   if (cls !== "word") return cls;
@@ -509,7 +509,7 @@ function staleRoot(word: string, ctx: SourceRetieContext): string | undefined {
 
 /** The one content root a word is built on (`zegevan` → `egeva`), or the word itself when it is a bare root. */
 function nameRoot(word: string): string | undefined {
-  if (isAgebonRootShape(word)) return word;
+  if (isAgebenRootShape(word)) return word;
   try {
     const roots = contentStemRoots(parseWord(word));
     return roots.length === 1 ? roots[0] : undefined;

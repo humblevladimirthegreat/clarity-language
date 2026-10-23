@@ -136,14 +136,14 @@ describe("extractFreeEnglish", () => {
     assert.equal(lines.length, 2);
     assert.deepEqual(lines[0], {
       kind: "example",
-      agebon: "zazozon vowurol.",
+      ageben: "zazozon vowurol.",
       morph: null,
       text: '"Azozon walks." (alone)',
       index: md.indexOf('"Azozon walks."'),
       delimiter: '"',
       split: { sentence: "Azozon walks.", note: "alone", parts: ["Azozon walks."], join: "one" },
     });
-    assert.equal(lines[1]!.agebon, "zazozon veduyol. zwuzeduyor vezuvel.");
+    assert.equal(lines[1]!.ageben, "zazozon veduyol. zwuzeduyor vezuvel.");
     assert.equal(lines[1]!.morph, "z-Azozon | v-teach . z-←episode-agent-teach | v-sleep");
   });
 
@@ -151,7 +151,7 @@ describe("extractFreeEnglish", () => {
     const md = [
       "### Practice {#beginner-practice}",
       "",
-      "#### English → Agebon {#beginner-english-to-agebon}",
+      "#### English → Ageben {#beginner-english-to-ageben}",
       "",
       "**1.** *Azozon walks.* (alone)",
       "",
@@ -161,7 +161,7 @@ describe("extractFreeEnglish", () => {
       "z-Azozon | v-walk",
       ":::",
       "",
-      "#### Agebon → English {#beginner-agebon-to-english}",
+      "#### Ageben → English {#beginner-ageben-to-english}",
       "",
       "**1.** `zazozon vowurol.`",
       "",
@@ -179,11 +179,11 @@ describe("extractFreeEnglish", () => {
       "`zazozon vowurol.`",
       ":::",
     ].join("\n");
-    const lines = extractFreeEnglish(md).map(({ kind, agebon, morph, text }) => ({ kind, agebon, morph, text }));
+    const lines = extractFreeEnglish(md).map(({ kind, ageben, morph, text }) => ({ kind, ageben, morph, text }));
     assert.deepEqual(lines, [
-      { kind: "en-ag", agebon: "zazozon vowurol.", morph: "z-Azozon | v-walk", text: "*Azozon walks.* (alone)" },
-      { kind: "ag-en", agebon: "zazozon vowurol.", morph: "z-Azozon | v-walk", text: "*Azozon walks.* (alone)" },
-      { kind: "fix", agebon: "zazozon vowurol.", morph: null, text: "*Azozon walks.*" },
+      { kind: "en-ag", ageben: "zazozon vowurol.", morph: "z-Azozon | v-walk", text: "*Azozon walks.* (alone)" },
+      { kind: "ag-en", ageben: "zazozon vowurol.", morph: "z-Azozon | v-walk", text: "*Azozon walks.* (alone)" },
+      { kind: "fix", ageben: "zazozon vowurol.", morph: null, text: "*Azozon walks.*" },
     ]);
   });
 });
@@ -208,24 +208,24 @@ describe("tableEnglish", () => {
   const sheet = (rows: string[], header = "| Job | Example | English | Stage |") =>
     [header, "|-----|---------|---------|-------|", ...rows].join("\n");
 
-  it("reads italic English cells beside an Agebon phrase or sentence", () => {
+  it("reads italic English cells beside an Ageben phrase or sentence", () => {
     const md = sheet(["| Walk | `zazozon vowurol.` | *Azozon walks.* (alone) | B |", "| Kin | `growubal` | the layer above the focus | A |"]);
     assert.deepEqual(
-      tableEnglish(md).map(({ agebon, text }) => ({ agebon, text })),
-      [{ agebon: "zazozon vowurol.", text: "*Azozon walks.* (alone)" }],
+      tableEnglish(md).map(({ ageben, text }) => ({ ageben, text })),
+      [{ ageben: "zazozon vowurol.", text: "*Azozon walks.* (alone)" }],
     );
-    assert.deepEqual(tableEnglish(sheet(["| `hanem` | here | *here*, *this* | B |"], "| Agebon | Use | English | Stage |")), []);
+    assert.deepEqual(tableEnglish(sheet(["| `hanem` | here | *here*, *this* | B |"], "| Ageben | Use | English | Stage |")), []);
     assert.deepEqual(tableEnglish(sheet(["| Join | `A xol B` | *(A or B)* | B |"])), []);
-    assert.deepEqual(tableEnglish("| English | Agebon |\n|---|---|\n| *walks, strolls* | `zazozon vowurol.` |"), []);
+    assert.deepEqual(tableEnglish("| English | Ageben |\n|---|---|\n| *walks, strolls* | `zazozon vowurol.` |"), []);
   });
 
   it("splits pieces and pairs them with the Example pieces", () => {
     const md = sheet(["| Acts | `yol vowurol.` · `yul vowurol.` | *Walk!* · *Don't walk.* (a ban) | B |"]);
     assert.deepEqual(
-      tableEnglish(md).map(({ agebon, text }) => ({ agebon, text })),
+      tableEnglish(md).map(({ ageben, text }) => ({ ageben, text })),
       [
-        { agebon: "yol vowurol.", text: "*Walk!*" },
-        { agebon: "yul vowurol.", text: "*Don't walk.* (a ban)" },
+        { ageben: "yol vowurol.", text: "*Walk!*" },
+        { ageben: "yul vowurol.", text: "*Don't walk.* (a ban)" },
       ],
     );
   });

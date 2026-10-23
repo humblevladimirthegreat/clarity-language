@@ -8,20 +8,20 @@ band: intermediate
 
 A span has **no spoken form**: there is no word for its open or close, and no spoken resume for it. When you read a span aloud, you say the words inside it, and say its marks as words.
 
-Apart from what is inside, `[…]` and <code>&lt;…&gt;</code> work the same way: the same role letters, the same slots, the same **`~`** / **`@`** marks, the same topic and `/y/` rules. The one difference is whether the inside is read as Agebon. Use `[…]` when the inside is Agebon, and <code>&lt;…&gt;</code> when it is foreign, code, or a name you do not want read as Agebon.
+Apart from what is inside, `[…]` and <code>&lt;…&gt;</code> work the same way: the same role letters, the same slots, the same **`~`** / **`@`** marks, the same topic and `/y/` rules. The one difference is whether the inside is read as Ageben. Use `[…]` when the inside is Ageben, and <code>&lt;…&gt;</code> when it is foreign, code, or a name you do not want read as Ageben.
 
 ### Mention {#mention}
 
-To talk about a word or phrase itself, as a spelling (*the word “odoze” is small*), put the **mention marker** before a span. That is a **mention**: it is about the letters, not what they mean, and not a quote of what someone said (for that, use a [cite](/spans#writing)). The marker is a [left-bound adjective](/left-bound-adjectives#left-bound-adjectives), so a listener hears *this is a word as spelling* before the span arrives. In English, write *the word …* or *the phrase …* and keep the Agebon spelling (`odoze`, not *dog*).
+To talk about a word or phrase itself, as a spelling (*the word “odoze” is small*), put the **mention marker** before a span. That is a **mention**: it is about the letters, not what they mean, and not a quote of what someone said (for that, use a [cite](/spans#writing)). The marker is a [left-bound adjective](/left-bound-adjectives#left-bound-adjectives), so a listener hears *this is a word as spelling* before the span arrives. In English, write *the word …* or *the phrase …* and keep the Ageben spelling (`odoze`, not *dog*).
 
 The marker is the *letters* root `ego` as a `gl-` adjective, on **-l** (`glegol`) or **-n** (`glegon`). (cue: 🔤 a word is its letters)
 
-| Agebon | Reading |
+| Ageben | Reading |
 |--------|---------|
 | **`glegol`** | the word or phrase as spelling |
 | **`glegon`** | the name-string: a name as spelling |
 
-The span is a [cite](/spans#writing) `[…]` when the spelling is Agebon, and an [opaque](/spans#loans) <code>&lt;…&gt;</code> when it is not. Either way, the marker plus the span fills a slot like any noun:
+The span is a [cite](/spans#writing) `[…]` when the spelling is Ageben, and an [opaque](/spans#loans) <code>&lt;…&gt;</code> when it is not. Either way, the marker plus the span fills a slot like any noun:
 
 > `glegol z[odoze] gamezem.`
 >
@@ -113,7 +113,7 @@ A span with **`@`** names the work or product itself: <code>d@&lt;iPhone&gt;</co
 >
 > "Alazun sees an iPhone."
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | <code>d@&lt;iPhone&gt;</code> | the named product | *the iPhone* |
 | <code>d^@&lt;iPhone&gt;</code> | one unit of it | *an iPhone* |
@@ -227,7 +227,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *Onuren* | `onuren` | 🎵 from *note*: a song's name |
 | *rejection* | `vuyugum` | ❌ from *cross* |
@@ -236,7 +236,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -251,7 +251,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *punch* | `vabuvul` |
 | *walk* | `vowurol` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Alazun said “Azozon attests.”*
 
@@ -301,7 +301,7 @@ z-Ahelan | d-NAME.CITE.instance[Onuren | Alazun] | v-see
 z-Alazun | SCOPE[b-Ahelan | h-possibility] | v-tell
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zazozon glegon d[onuren] vuyugum.`
 

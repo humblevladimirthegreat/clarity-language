@@ -109,7 +109,7 @@ A dependent runs to the end of the written sentence, so `dorl P xol Q` is *wheth
 ### General claims
 
 - **No universality moods** (COMMON, UNCOUNTERED, FORMAL, NATURAL, RULE: `ogulu` / `ebebu` / `ale` / `alede` / `ewedu` on `/th/`). Each mixed two jobs the language keeps apart: how far a claim reaches is the fence or restrictor, and what it rests on is a channel.
-- **Open -m never asserts an amount.** Rejected: *just about everything* / *hardly anything* for the empty forms (`zam`, `zuam`, `ham`, …). Those readings assert an amount -m never states, and they made the counting forms read unlike deny, menu, and rank. Agebon does not split *I have not checked* from *I know of exceptions but am not listing them*.
+- **Open -m never asserts an amount.** Rejected: *just about everything* / *hardly anything* for the empty forms (`zam`, `zuam`, `ham`, …). Those readings assert an amount -m never states, and they made the counting forms read unlike deny, menu, and rank. Ageben does not split *I have not checked* from *I know of exceptions but am not listing them*.
 - **The kind itself is `zuan` + SHARED kind.** Rejected:
   - `zalenem` + kind: it names the label or category, not the lineage (*the cat category was domesticated* is wrong).
   - **-n** on the kind root: `zogozen` is a creature named Cat.
@@ -312,7 +312,7 @@ The pitch gap is lower because a scale puts neighbouring digits on neighbouring 
 | Place walk on `w` / `y` (`mu ba vo re lu za do ne gu ha`) | Puts `m`, the thinnest first consonant, on 1, the most frequent leading digit. Back to front puts `h` there. |
 | Marker harmony (each digit copies the marker vowel) | Leaves no vowel redundancy to catch a misheard consonant. |
 
-**Accepted costs.** `r` still sounds like a marker (7 is `re`, so *the 7th* is `grorel`); the marker always comes straight after the role letter, and taking `r` off the digits would make it the exponent. Neighbouring digits sit on neighbouring pitches, so the pitch backup between them is small. `wa` / `wu` is a weaker sign than a stop, and `wu` does not exist in Japanese. The weights come from published phonetics, not from tests with Agebon listeners.
+**Accepted costs.** `r` still sounds like a marker (7 is `re`, so *the 7th* is `grorel`); the marker always comes straight after the role letter, and taking `r` off the digits would make it the exponent. Neighbouring digits sit on neighbouring pitches, so the pitch backup between them is small. `wa` / `wu` is a weaker sign than a stop, and `wu` does not exist in Japanese. The weights come from published phonetics, not from tests with Ageben listeners.
 
 ### Letter names
 

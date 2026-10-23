@@ -26,7 +26,7 @@ Say each character as one syllable, after the marker **`re`**:
 - A vowel is its own sound after a short break, the catch in English *uh-oh*. The spelled form writes the break as `'`. Without it, `bu` + `u` would run into one long vowel, and `re` + `o` would sound like another marker.
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `z_b12` (🔊 `zrebubadol`) | letter, then digits | *B12* |
 | `z_4b` (🔊 `zrehubul`) | digit, then letter | *4B* |
@@ -43,7 +43,7 @@ Rules for letters in a code:
 - In a code, `e` is always the vowel letter, never an exponent.
 - A letter at the end of a code is a character, not the ending. A code with a letter always shows its ending by a mark: `z_nl` is **-l**, `z@_nl` is **-n**, `z=_nl` is **-r**.
 
-**A foreign code** keeps its letters when each one has an Agebon letter. English *p*, *t*, *k*, *s*, and *f* are the voiceless sounds of `b`, `d`, `g`, `z`, and `v`, so they take those letters: *F-16* is `z_v16`, and *P2* is `z_b2`. A code with a letter that has no Agebon sound (*c*, *i*, *j*, *q*, *x*) stays a [span](/spans#loans): *FBI* is <code>z@&lt;FBI&gt;</code>.
+**A foreign code** keeps its letters when each one has an Ageben letter. English *p*, *t*, *k*, *s*, and *f* are the voiceless sounds of `b`, `d`, `g`, `z`, and `v`, so they take those letters: *F-16* is `z_v16`, and *P2* is `z_b2`. A code with a letter that has no Ageben sound (*c*, *i*, *j*, *q*, *x*) stays a [span](/spans#loans): *FBI* is <code>z@&lt;FBI&gt;</code>.
 ### Measure phrases {#measure-phrases}
 <a id="units"></a>
 <a id="unit-amount"></a>
@@ -62,7 +62,7 @@ For a price (*for five grams*), put the same measure phrase in a `bl-` word afte
 The amount hosts nothing, so no `bl-` word comes after it. A plain `/b/` there is the recipient.
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `bezerom g+2` | extra noun (`/b/`) | *two meters* |
 | `zazerom g+3`; `duberem g+5` | subject / object / … | *three seconds*; *five grams* |
@@ -135,7 +135,7 @@ A word after **B** describes **B** alone, and a word on the counted noun describ
 **Exclude an end with `ul`.** *3, except 5* reads as the band that stops short of 5: the hook excludes the endpoint **after** it. The ends are read in the order you say them, so to exclude the low end, say it second.
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `zragel al zrazal` | both ends in | *3 to 5* (`[3, 5]`) |
 | `zragel ul zrazal` | 5 left out | *3 up to but not including 5* (`[3, 5)`) |
@@ -162,7 +162,7 @@ To give a percent of a whole (*25% of the cats*), end a **count** number (`ra` /
 > "25% of the cats."
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **`yo`** | percent (portion of a whole) | everyday percent figure (`25` in `25%`); those digits ÷ 100 |
 | **`yu`** | percentage points (point-scale amount or delta) | point figure (`2` in `+2%*`); those digits ÷ 100 |
@@ -215,7 +215,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *bottle* | `awodal` | 🍼 |
 | *meter* | `ezerom` | 📐 from *set square* |
@@ -223,14 +223,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *pill* | `ebebul` |
 | *walk* | `vowurol` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *25% of the pills.*
 
@@ -277,7 +277,7 @@ z-Azozon | [d-pill | g-_b12] | v-see
 :::
 
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zawodalx g+50%.`
 

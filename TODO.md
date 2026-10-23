@@ -1,7 +1,7 @@
 
 redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds94zsgwptg/redirects
 
-my name: obuyen (innovation) gagebon (clarity)
+my name: obuyen (innovation) gageben (clarity)
 
 discord invite:
 https://discord.gg/CAMGw2Akhc

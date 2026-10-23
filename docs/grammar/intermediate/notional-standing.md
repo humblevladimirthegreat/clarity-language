@@ -4,7 +4,7 @@ band: intermediate
 
 # Notional and standing {#notional-standing}
 
-English *as if*, *it turns out*, *has left*, and *still* mix imagining a scene, news against expectation, and how a claim stands now. Agebon keeps those apart: **NOTIONAL** for an imagined scene, **MIRATIVE** for news that ran against what you expected, **RESIDUE** and **FORMER** for how an outcome or a usual pattern stands, and *already* / *still* / *not yet* / *no longer* for a change compared with now. How you know a world-claim is in [knowing](/knowing).
+English *as if*, *it turns out*, *has left*, and *still* mix imagining a scene, news against expectation, and how a claim stands now. Ageben keeps those apart: **NOTIONAL** for an imagined scene, **MIRATIVE** for news that ran against what you expected, **RESIDUE** and **FORMER** for how an outcome or a usual pattern stands, and *already* / *still* / *not yet* / *no longer* for a change compared with now. How you know a world-claim is in [knowing](/knowing).
 
 ### Mirative (`themem`) {#mirative}
 
@@ -18,7 +18,7 @@ English *it turns out*, *to my surprise*, and *so … after all* say the news ra
 
 The ending says how firm the expectation was that the news overturned. If you do not know, use **-m**.
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `themel` | it overturns a firm expectation | *astonishingly*, *I never expected that* | **-l** ≈ the expectation was locked in |
 | `themem` | it runs against what you expected (default) | *it turns out*, *surprisingly* | **-m** ≈ the ordinary case |
@@ -61,7 +61,7 @@ With a [holder](holder.md#holder), the surprise is the holder's:
 <a id="former-climate"></a>
 <a id="episode-standing"></a>
 
-English *has left* and *used to tell* mix two things: when the event happened, and how it stands now. Agebon places events in time with other tools: [*before* / *after* / *while*](/dependents#time-poles), a clock or date, [LIVE](/live-and-memory#live-vs-memory) / [MEMORY](/live-and-memory#live-vs-memory), or a [forecast](evidentiality.md#forecast). Two `/h/` words keep the books on how it stands. **RESIDUE** says the outcome of an event is still in effect now. **FORMER** says a usual pattern is not one you are claiming for now. Neither says when anything happened, so use them alongside a channel or a when-frame, never as a past or present tense.
+English *has left* and *used to tell* mix two things: when the event happened, and how it stands now. Ageben places events in time with other tools: [*before* / *after* / *while*](/dependents#time-poles), a clock or date, [LIVE](/live-and-memory#live-vs-memory) / [MEMORY](/live-and-memory#live-vs-memory), or a [forecast](evidentiality.md#forecast). Two `/h/` words keep the books on how it stands. **RESIDUE** says the outcome of an event is still in effect now. **FORMER** says a usual pattern is not one you are claiming for now. Neither says when anything happened, so use them alongside a channel or a when-frame, never as a past or present tense.
 
 **RESIDUE** (`ara`) says the result still counts: an unpaid tab, a door that is still shut. Without it, you make no claim that anything is left over (the event is over and done, or nothing remains from it). As a plain noun, `zaram` is *debt*. (cue: 💰 a debt still on the books)
 
@@ -109,7 +109,7 @@ English *has left* and *used to tell* mix two things: when the event happened, a
 
 Do not write **`helam`** right before **`hual`**: that spot holds the restrictor's list of occasions (*always except when …*). Put **`hual`** first (bare *always*) and FORMER after the verb, where a channel goes on a general claim.
 
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`haram`** | outcome still in effect | *still counts* / residue | `aram` *debt* | 💰: unpaid balance still on the books |
 | **`helam`** | usual pattern not claimed for now | *former climate* | `elam` *emptiness* | 🪹: the nesting season is over |
@@ -155,7 +155,7 @@ NOTIONAL takes a [holder](holder.md#holder) the same way a channel does: `theyum
 
 The ending on NOTIONAL says what the imagining is for: with **-l** you rehearse a scene to prepare for doing it, with **-m** you picture it with no further purpose (the default), and with **-r** you toy with a *what if* for the moment. The three run on the same settled-to-passing scale as [time horizon](/sakes#settled-to-passing), like the endings on [PLAN](/intention#plan-predict). With **-n**, the word is an ordinary [name](proper-names.md#proper-name--n).
 
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`theyul`** | rehearse a possible scene to prepare for action | *let’s practice…* / *try acting as if…* | `eyul` *theater* | 🎭: practice a scene |
 | **`theyum`** | imagine a scene without a further purpose (default) | *imagine…* / *as if…* | `eyul` *theater* | 🎭: picture a scene |
@@ -265,7 +265,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *rabbit* | `arozel` | 🐇 |
 | *NOTIONAL* | `theyum` | 🎭 from *theater*: an imagined scene |
@@ -275,7 +275,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -288,7 +288,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sleepy* | `uzemel` |
 | *CLUES* | `theyom` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *I can see that the rabbit has left and is still gone.*
 
@@ -330,7 +330,7 @@ z-rabbit | th-NOTIONAL | v-walk
 z-Ahelan | v-sing | [contrary-to | th-REPORTED]
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zalazun helam zol gagulel.`
 

@@ -13,7 +13,7 @@ describe("lintPracticeItems", () => {
   });
 
   it("flags an Also correct variant with another reading, or one that repeats the answer", () => {
-    assert.match(lint(PRACTICE.replace("`dazozon zahelan vayebel.`, ", "`zazozon dahelan vayebel.`, ")).join("\n"), /English → Agebon 1: variant `zazozon dahelan vayebel\.` has a different morph reading/);
+    assert.match(lint(PRACTICE.replace("`dazozon zahelan vayebel.`, ", "`zazozon dahelan vayebel.`, ")).join("\n"), /English → Ageben 1: variant `zazozon dahelan vayebel\.` has a different morph reading/);
     assert.match(lint(PRACTICE.replace("`dazozon zahelan vayebel.`, ", "`zahelan dazozon vayebel.`, ")).join("\n"), /repeats the main answer/);
   });
 
@@ -25,9 +25,9 @@ describe("lintPracticeItems", () => {
     assert.match(lint(md.replace("The one who sees takes **z-**.\n\n", "")).join("\n"), /Pick one 1: answer needs one line on why/);
   });
 
-  it("flags Also correct outside English → Agebon", () => {
+  it("flags Also correct outside English → Ageben", () => {
     const md = PRACTICE.replace("*Alazun sees Ahelan.*\n", "*Alazun sees Ahelan.*\n\n**Also correct:** `dahelan zalazun vayebel.`\n");
-    assert.match(lint(md).join("\n"), /Agebon → English 1: \*\*Also correct:\*\* belongs only/);
+    assert.match(lint(md).join("\n"), /Ageben → English 1: \*\*Also correct:\*\* belongs only/);
   });
 
   it("flags a Pick one pair with one reading, or with other roots", () => {

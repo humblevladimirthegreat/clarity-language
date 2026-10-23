@@ -4,7 +4,7 @@ aside: false
 
 # Number Pegs
 
-A long number, such as a PIN or a phone number, is easier to remember as a few pictures than as a row of digits. In Agebon, each digit is spoken with its own consonant ([counts](/numbers#counts)), and ordinary roots are built from the same consonants. So every root's consonants spell a number. To remember a number, cut it into one- or two-digit pieces and, for each piece, pick a root whose consonants spell those digits. A root used this way is a **peg**: you picture the thing it names, and later read the digits back off its spelling.
+A long number, such as a PIN or a phone number, is easier to remember as a few pictures than as a row of digits. In Ageben, each digit is spoken with its own consonant ([counts](/numbers#counts)), and ordinary roots are built from the same consonants. So every root's consonants spell a number. To remember a number, cut it into one- or two-digit pieces and, for each piece, pick a root whose consonants spell those digits. A root used this way is a **peg**: you picture the thing it names, and later read the digits back off its spelling.
 
 ## Reading a word as digits {#reading}
 
@@ -69,6 +69,6 @@ This scene holds 25 12 96. Pick a verb with two digit consonants; a verb spelled
 
 ## Find pegs {#find-pegs}
 
-Type a number to see the roots for each piece, or type Agebon words to read their digits.
+Type a number to see the roots for each piece, or type Ageben words to read their digits.
 
 <DigitPegs />

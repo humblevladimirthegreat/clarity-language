@@ -23,7 +23,7 @@ describe("tokens", () => {
 
 describe("collectEnglishEntries", () => {
   it("indexes Use and English columns but not Cue", () => {
-    const entries = entriesOf(`| Agebon | Use | English | Cue |
+    const entries = entriesOf(`| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | \`er …\` | back to the main line | *Anyway, …* | **e** ≈ order |
 `);
@@ -56,7 +56,7 @@ describe("collectEnglishEntries", () => {
     assert.equal(entries[0]!.english, "*in* (**-m** `am`: *amid*)");
   });
 
-  it("skips a table with no Agebon column", () => {
+  it("skips a table with no Ageben column", () => {
     assert.deepEqual(entriesOf("| English | Notes |\n|---|---|\n| walk | slow |\n"), []);
   });
 
@@ -152,13 +152,13 @@ describe("recipe table harvest", () => {
 
 ### *'s* / *of* {#of}
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | in B's use (*Azozon's dog*) | hook **\`om\`** + \`/b/\` | [Whose](extra-noun-hooks.md#genitive) |
 
 ## Everyday words {#everyday-words}
 
-| English itch | Agebon job | Teach |
+| English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *on* / *onto* (*sits on a chair*) | hook **\`ael\`** + \`/b/\` | [Hooks](hooks.md#extra-noun) |
 `;
@@ -174,7 +174,7 @@ describe("recipe table harvest", () => {
 
 ### By
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | tool | \`ael\` |
 `;

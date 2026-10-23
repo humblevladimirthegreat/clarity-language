@@ -4,11 +4,11 @@ band: intermediate
 
 # Feelings and permission {#feelings-permission}
 
-English *anxious*, *thank you*, *hopefully*, and *may* / *must* / *they agreed* mix a feeling, a thanks, a hope, and who has a say over an act. Agebon keeps those apart: a **feeling** names the sake at stake, where it sits or points, and how it moves; **thanks** and **sorry** are a met or unmet sake said as a whole sentence; a **speaker attitude** such as *hopefully* is how you feel about the claim; a **say word** names who allows, forbids, requires, or agrees. The sake lattice (which payoff, whether it is met, and whose) is in [sakes](/sakes).
+English *anxious*, *thank you*, *hopefully*, and *may* / *must* / *they agreed* mix a feeling, a thanks, a hope, and who has a say over an act. Ageben keeps those apart: a **feeling** names the sake at stake, where it sits or points, and how it moves; **thanks** and **sorry** are a met or unmet sake said as a whole sentence; a **speaker attitude** such as *hopefully* is how you feel about the claim; a **say word** names who allows, forbids, requires, or agrees. The sake lattice (which payoff, whether it is met, and whose) is in [sakes](/sakes).
 
 ### Emotion compose {#emotion-compose}
 
-English emotion words (*anxious*, *resentful*, *proud*) often do **judgment or explanation** work: one label packs in what is at stake and why it feels that way. In Agebon you name the pieces instead, on **one word**: the [sake stance](/sakes#sakes) on the situation, a **locus** (where the feeling sits or what it points at), and a **motion ending** (how the feeling moves). The sake word keeps its stance vowel and its ending letter, then adds the locus (the vowels of a [hook](/hooks#extra-noun)) and the motion ending. You can then say what you make of a situation without leaning on a single emotion word.
+English emotion words (*anxious*, *resentful*, *proud*) often do **judgment or explanation** work: one label packs in what is at stake and why it feels that way. In Ageben you name the pieces instead, on **one word**: the [sake stance](/sakes#sakes) on the situation, a **locus** (where the feeling sits or what it points at), and a **motion ending** (how the feeling moves). The sake word keeps its stance vowel and its ending letter, then adds the locus (the vowels of a [hook](/hooks#extra-noun)) and the motion ending. You can then say what you make of a situation without leaning on a single emotion word.
 
 Put that word where any sake word goes: on `/ɡ/` after a belonging, on `/w/` immediately before [stimulus](/sakes#stimulus) **`goyom`** when the noun is not yours, or on `/th/` by itself when the feeling has no object. For the bare noun *emotion*, with no judgment to explain, use the compound `zabelohalal` (the water of the heart).
 
@@ -79,7 +79,7 @@ Say how **strong** the feeling is with a [degree word](left-bound.md#degree-w) o
 The locus plus the motion ending is the **emotion tail**. It goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Prescription **`the`** is advice, not a feeling, so it takes no tail. A word with no tail (`wuwathur`) is an ordinary sake word.
 
 <!-- cheat-sheet: why-allowed -->
-| Agebon | English |
+| Ageben | English |
 |---------|---------|
 | `zezuyol wuwathuraer goyom` | *anxious about the dialogue* (competence at stake, temporary; hangs over the room; surging) |
 | `zozowum wawethumual goyom` | *given up over the division* (unmet relatedness; out of fight; still) |
@@ -128,9 +128,9 @@ A lone feeling can still name what caused it. The cause is not the object: the f
 
 ### Hopefully and other attitudes {#speaker-attitude}
 
-English *hopefully*, *luckily*, and *worryingly* say how **you**, the speaker, feel about the whole claim. In Agebon, put the content root for that feeling on `/th/` with **-m**. It is always the speaker's attitude, never the subject's. For the subject's manner (*Azozon walks hopefully*), use `/h/` (`huwuyom`).
+English *hopefully*, *luckily*, and *worryingly* say how **you**, the speaker, feel about the whole claim. In Ageben, put the content root for that feeling on `/th/` with **-m**. It is always the speaker's attitude, never the subject's. For the subject's manner (*Azozon walks hopefully*), use `/h/` (`huwuyom`).
 
-| Agebon | Use | English | Same root as |
+| Ageben | Use | English | Same root as |
 |--------|-----|---------|--------------|
 | **`thuwuyom`** | you want it, and it is still open | *hopefully* | `uwuyol` *crossed-fingers* |
 | **`tholezem`** | it went well by chance | *luckily* | `olezel` *ladybug* |
@@ -146,7 +146,7 @@ Hope is not a way of **knowing**, so it cannot hold up a forecast by itself. To 
 
 ### Say words: permission, requirement, consent {#say-words}
 
-English *may*, *must*, *may not*, and *they agreed* each say that someone has a say over an act. Agebon puts that in one **say word** on `/h/`. A grant, a ban, a demand, or a yes is said openly, so a say word needs no channel; like an [intention adverb](/clause#intention-adverbs), it covers the whole clause. Write **`h`**, **`w`**, a scope vowel, whose say it is, the answer, and an ending.
+English *may*, *must*, *may not*, and *they agreed* each say that someone has a say over an act. Ageben puts that in one **say word** on `/h/`. A grant, a ban, a demand, or a yes is said openly, so a say word needs no channel; like an [intention adverb](/clause#intention-adverbs), it covers the whole clause. Write **`h`**, **`w`**, a scope vowel, whose say it is, the answer, and an ending.
 
 > `zazozon vowurol hwuvam.`
 >
@@ -302,13 +302,13 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *hug* | `vahuyal` | 🫂 from *hug* |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -321,7 +321,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sleep* | `vezuvel` |
 | *tell* | `vezuyol` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Ahelan lets Azozon hug.*
 
@@ -355,7 +355,7 @@ z-hug | [w-relatedness-unmet-modifiable-AIMED-SURGING | g-stimulus]
 z-Azozon | v-hug | h-episode-event-ALLOW-tacit
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `thuwathuruer.`
 

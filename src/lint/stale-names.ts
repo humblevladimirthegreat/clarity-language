@@ -4,7 +4,7 @@ import type { ClassifyTables } from "../parse/classify.js";
  * Capitalised words shaped like a named root (root + **-n**) that are not names: the language's own
  * English name (renamed by hand, docs/meta/language-name.md) and English words.
  */
-const NOT_NAMES = new Set(["Agebon", "Even"]);
+const NOT_NAMES = new Set(["Ageben", "Even"]);
 
 /** A native root (vowel first, consonant + vowel pairs) + **-n**. */
 const NAMED_RE = /^[aeou](?:(?:th|[bdghylmnrvwz])[aeou])+n$/;

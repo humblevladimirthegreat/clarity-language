@@ -104,7 +104,7 @@ Drop every digit and the word says what kind of number, not its value. With **-r
 | [**`re`**](/digitless-exponents#digitless) | `…_` | a digit-string or label | I |
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English | Stage |
+| Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`g=+` (`grar`)](/digitless-exponents#how-many) | fill a count or amount | *How many?* / *How much?* | I |
 | [`g=#` (`gror`)](/digitless-exponents#how-many) | fill a place in order | *Which place?* | I |
@@ -204,7 +204,7 @@ The digit-string marker `_` holds a phone, room, channel, or serial number, with
 Say a code one character per syllable: a digit by its digit syllable, a consonant by its letter name, and a vowel after a break `'`.
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English | Stage |
+| Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`z_b12` (🔊 `zrebubadol`)](/numbers-applied#letter-codes) | letter, then digits | *B12* | I |
 | [`z_4b` (🔊 `zrehubul`)](/numbers-applied#letter-codes) | digit, then letter | *4B* | I |
@@ -262,7 +262,7 @@ Put the amount on the unit's noun as `/ɡ/`. Each unit is the abstract **-m** of
 | [heat grade (not kelvin)](/numbers-applied#stock-units) | `overo` | `boverom g+37` | `overol` *thermometer* | I |
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English | Stage |
+| Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`bezerom g+2`](/numbers-applied#measure-phrases) | extra noun (`/b/`) | *two meters* | I |
 | [`zazerom g+3`; `duberem g+5`](/numbers-applied#measure-phrases) | subject / object / … | *three seconds*; *five grams* | I |
@@ -280,7 +280,7 @@ Quantities themselves (*heavy*, *duration*) are ordinary roots, not units.
 Write both ends with the hook `al`: `A al B`. It reads as *through* when both ends are the same kind of number with digits. `ul` excludes the end after it.
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English | Stage |
+| Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`zragel al zrazal`](/numbers-applied#ranges) | both ends in | *3 to 5* | I |
 | [`zragel ul zrazal`](/numbers-applied#ranges) | 5 left out | *3 up to but not including 5* | I |
@@ -299,7 +299,7 @@ Write both ends with the hook `al`: `A al B`. It reads as *through* when both en
 To limit to one end, make the other end infinity:
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English | Stage |
+| Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`zrazal al zrawal`](/initials#rays) | 5 up to +∞ | *5 or more* | A |
 | [`zrawal ul zrazal`](/initials#rays) | 5 left out | *more than 5* | A |
@@ -310,7 +310,7 @@ To limit to one end, make the other end infinity:
 Ranks take `growal` (last) and `growul` (first) as ends: `zrodol al zrowal` is *2nd through last*. A named band uses **-n**, and **-r** stands for a value in it.
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English | Stage |
+| Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`z+13 an z+19`](/initials#named-ranges) | a named band | *the teens* | A |
 | [`zragel ar zrazal`](/initials#named-ranges) | some value in the band | *some value from 3 to 5* | A |
@@ -321,7 +321,7 @@ Ranks take `growal` (last) and `growul` (first) as ends: `zrodol al zrowal` is *
 End a count with **`yo`** for a percent, **`yu`** for percentage points. A minus number right after a plain noun is a fraction.
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English | Stage |
+| Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
 | [**`yo`**](/numbers-applied#percent-and-percentage-points) | percent of a whole | `25` in `25%`; those digits ÷ 100 | I |
 | [**`yu`**](/numbers-applied#percent-and-percentage-points) | percentage points | `2` in `+2%*`; those digits ÷ 100 | I |

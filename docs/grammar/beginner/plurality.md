@@ -4,7 +4,7 @@ band: beginner
 
 # Plurality
 
-English *they* and *the Smiths* often mean a named person plus people around them, not a counted list. Agebon marks that **associative group** with optional **-x** after the [word ending](word-endings.md).
+English *they* and *the Smiths* often mean a named person plus people around them, not a counted list. Ageben marks that **associative group** with optional **-x** after the [word ending](word-endings.md).
 
 
 ### Associative group (`-x`) {#associative}
@@ -59,7 +59,7 @@ An extra noun takes **-x** the same way. Here the recipient is Alazun and associ
 
 **Compare with:** English *cats* can mean the kind in general. **-lx** means only a set in this situation.
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **-lx** | indefinite group (a set in this situation), concrete | *some cats* (a set in this situation) |
 | **-mx** | indefinite group (a set in this situation), abstract | same grouping on a **-m** root |
@@ -70,7 +70,7 @@ An extra noun takes **-x** the same way. Here the recipient is Alazun and associ
 ### Person-role **-x** {#person-role-x}
 <a id="clusivity"></a>
 
-English *we* and *you* do not say whether the listener is in the group (the split between *we including you* and *we without you* is called **clusivity**). Agebon puts **-x** on the speaker and listener roots. It still adds associates, but who is in the group follows each root's place in the conversation. Speaker **-x** is the speaker plus that person’s people, without the listener. Listener **-x** is the **address set**: everyone you are talking to right now, and not the speaker.
+English *we* and *you* do not say whether the listener is in the group (the split between *we including you* and *we without you* is called **clusivity**). Ageben puts **-x** on the speaker and listener roots. It still adds associates, but who is in the group follows each root's place in the conversation. Speaker **-x** is the speaker plus that person’s people, without the listener. Listener **-x** is the **address set**: everyone you are talking to right now, and not the speaker.
 
 Inclusive *you and I* is **`aya`** ([special pronouns](pronouns.md#special-pronouns)). With **-x** it adds the speaker’s and listener’s shared people.
 
@@ -119,7 +119,7 @@ The same roots take the role letter of the slot they fill. As a direct object th
 > "Azozon sees us." (you and I)
 
 <!-- cheat-sheet: people-pointing -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **`uwenx`** | speaker plus that person’s people (listener not assumed); `zuwenx` as subject, `duwenx` as object | *I and my people* (not you) |
 | **`awanx`** | all current addressees; `zawanx` as subject, `dawanx` as object | *you all* |
@@ -145,7 +145,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *ant* | `enezal` | 🐜 |
 | *basket* | `abowal` | 🧺 |
@@ -154,7 +154,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -170,7 +170,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *drink* | `vuwudal` |
 | *knife* | `anewul` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Azozon and associates sit.*
 
@@ -224,7 +224,7 @@ z-Azozon | d-wine | v-drink . z-←episode-agent.same-x | v-sit
 z-listener-x | v-sit
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zahelanx dedal vayebel.`
 

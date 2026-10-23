@@ -18,7 +18,7 @@ Say an act word twice among the opening `/y/` words to make the act more insiste
 > "Don't sneak. I mean it."
 
 <!-- cheat-sheet: talking -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **`yal yal`** | insisted statement | *I'm telling you, …* |
 | **`yel yel`** | pressing question | *I really need to know: …?* |
@@ -56,7 +56,7 @@ The body takes the **first** word's [usual order](/speech-moves#act-word-order).
 > "We don't punch the box." (a house rule)
 
 <!-- cheat-sheet: talking -->
-| Agebon | Really does → sounds like | English |
+| Ageben | Really does → sounds like | English |
 |--------|---------------------------|---------|
 | **`yol yel`** | command → question | *Could you pass the salt?* |
 | **`yol yal`** | command → statement | *You'll be home by ten.* / *Passengers remain seated.* |
@@ -70,7 +70,7 @@ The body takes the **first** word's [usual order](/speech-moves#act-word-order).
 Each word's ending describes its own act. The first ending says how firmly you really mean the act; the second says how it sounds. So a stack can show a soft sound over a firm act, which is the pressure that is hardest to name in English:
 
 <!-- cheat-sheet: talking -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **`yom yel`** | soft request that sounds like a question: they may say no | *Would you mind…?* |
 | **`yol yem`** | firm command that sounds like a gentle ask: they may not say no | a boss's *Would you maybe…?* |
@@ -121,7 +121,7 @@ To say who or what you react to (*hooray for Azozon*), add a [hook](/hooks#extra
 English *frankly* and *to be clear* say in words how you are speaking. A tone mark cannot do that, because it changes only your voice. Instead, use a stance word (`/th/`, [clause](/clause#stance-th)) built on an ordinary root. Like any stance word, it may sit anywhere in the sentence; the start is usual.
 
 <!-- cheat-sheet: talking -->
-| Agebon | English | Root |
+| Ageben | English | Root |
 |--------|---------|------|
 | **`thagebem`** | *to be clear* / *to put it plainly* | clarity |
 | **`thavewom`** | *frankly* / *honestly* / *to tell the truth* | revelation |
@@ -152,7 +152,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *trumpet* | `adorol` | 🎺 |
 | *clarity* | `thagebem` | 👓 from *glasses*: seeing it plainly |
@@ -160,7 +160,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -172,7 +172,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *very* | `welazem` |
 | *surprise* | `emel` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Don't run. I mean it.*
 
@@ -198,7 +198,7 @@ th-clarity | z-Azozon | d-page | v-write
 y-request | y-request | v-stop
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `yem thavewom zalazun vayebel dadorol.`
 

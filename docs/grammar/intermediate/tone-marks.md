@@ -132,7 +132,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -140,7 +140,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vayebel` |
 | *find* | `vumewel` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Azozon sees a trumpet!* (strong feeling about the whole sentence)
 
@@ -166,7 +166,7 @@ z-Alazun | v-see | &d-trumpet
 z-Alazun | v-find | ?d-trumpet
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `! zalazun dadorol vumewel.`
 

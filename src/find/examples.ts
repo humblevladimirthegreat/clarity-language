@@ -1,4 +1,4 @@
-/** The parsed Agebon examples on a docs page, as the docs lint reads them. */
+/** The parsed Ageben examples on a docs page, as the docs lint reads them. */
 import { classify, type ClassifyTables } from "../parse/classify.js";
 import { collectAmbiguity } from "../parse/ambiguity.js";
 import type { LexWord } from "../parse/types.js";
@@ -6,7 +6,7 @@ import { wordConstructions } from "../parse/construction-trace.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { parseWord } from "../parse/word.js";
 import { fillSelf, hasSelfSlot } from "../learner-name.js";
-import { classifyAgebonSpan, isAgebonLintCandidate, peelLintChunk, walkAgebonSpans } from "../lint/agebon-docs.js";
+import { classifyAgebenSpan, isAgebenLintCandidate, peelLintChunk, walkAgebenSpans } from "../lint/ageben-docs.js";
 import { flattenWords, type FoundWord } from "./query.js";
 
 export type Example = {
@@ -60,7 +60,7 @@ export function parseExample(text: string, cls: Example["cls"], tables: Classify
   try {
     if (cls === "word") {
       const { core } = peelLintChunk(text.trim());
-      if (!isAgebonLintCandidate(core)) return null;
+      if (!isAgebenLintCandidate(core)) return null;
       const word = classify(parseWord(core), tables);
       return { words: [{ word, unit: "", position: 0 }], constructions: wordConstructions(word), boundResumes: new Set() };
     }
@@ -81,7 +81,7 @@ export type PageSpans = { examples: Example[]; unparsed: UnparsedSpan[] };
 
 const FIND_PLACEHOLDER = /\b(?!SELF\b)[A-Z][A-Z0-9₀-₉]*\b/g;
 
-/** Teaching stubs (`el …`, `A xol B`) keep the Agebon; drop slots the lint calls a template. */
+/** Teaching stubs (`el …`, `A xol B`) keep the Ageben; drop slots the lint calls a template. */
 export function findParseText(source: string): string {
   return source
     .replace(/(^|\s)(?:…|\.\.\.)(?=\s|$)/g, " ")
@@ -92,13 +92,13 @@ export function findParseText(source: string): string {
 
 function parseSpanBody(source: string, tables: ClassifyTables): Omit<Example, "index" | "source"> | null {
   const filled = fillSelf(source);
-  const direct = classifyAgebonSpan(filled);
+  const direct = classifyAgebenSpan(filled);
   const candidates: { text: string; cls: Example["cls"] }[] = [];
   if (direct === "sentence" || direct === "phrase" || direct === "word") {
     candidates.push({ text: filled.trim(), cls: direct });
   } else {
     const stripped = findParseText(filled);
-    const cls = stripped ? classifyAgebonSpan(stripped) : "unclassified";
+    const cls = stripped ? classifyAgebenSpan(stripped) : "unclassified";
     if (cls === "sentence" || cls === "phrase" || cls === "word") {
       candidates.push({ text: stripped, cls });
     }
@@ -110,7 +110,7 @@ function parseSpanBody(source: string, tables: ClassifyTables): Omit<Example, "i
   return null;
 }
 
-/** Parse one stored Agebon body (a Markdown span, a string literal, or a TSV cell). */
+/** Parse one stored Ageben body (a Markdown span, a string literal, or a TSV cell). */
 export function collectBodySpan(source: string, index: number, tables: ClassifyTables): Example | UnparsedSpan {
   const parsed = parseSpanBody(source, tables);
   if (parsed) {
@@ -119,7 +119,7 @@ export function collectBodySpan(source: string, index: number, tables: ClassifyT
     return { ...parsed, words, source, index };
   }
   const filled = fillSelf(source);
-  const cls = classifyAgebonSpan(filled);
+  const cls = classifyAgebenSpan(filled);
   return {
     text: source.trim(),
     index,
@@ -138,7 +138,7 @@ function isExample(span: Example | UnparsedSpan): span is Example {
 export function collectPageSpans(markdown: string, tables: ClassifyTables): PageSpans {
   const examples: Example[] = [];
   const unparsed: UnparsedSpan[] = [];
-  walkAgebonSpans(markdown, {
+  walkAgebenSpans(markdown, {
     text: (source, index) => {
       const span = collectBodySpan(source, index, tables);
       if (isExample(span)) examples.push(span);

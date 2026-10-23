@@ -7,7 +7,7 @@ band: beginner
 ### Ability and incapability {#ability}
 <a id="incapability"></a>
 
-English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Agebon you fold that meaning into the verb or adjective itself. After the root, write **`x`**, then a vowel for *can* or for which kind of *can't*, then the same [ending](word-endings.md) the word would have without it.
+English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Ageben you fold that meaning into the verb or adjective itself. After the root, write **`x`**, then a vowel for *can* or for which kind of *can't*, then the same [ending](word-endings.md) the word would have without it.
 
 The ability vowel says how much can-do is in. Join vowels pick list type. That job stays on join words.
 
@@ -72,7 +72,7 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 > "Alazun can't sing right now."
 
 <!-- cheat-sheet: knowing-intending -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`xa`** | they can (this verb or quality) | *can* | **a** ≈ full |
 | **`xo`** | they can't, just for now (they usually can) | *can't right now* | **o** ≈ a dip |
@@ -111,14 +111,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *clipboard* | `egowal` | 📋 |
 | *capacity* | `odam` | 🥣 from *bowl*; as **`hodaxol`**, a bare *can't* |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -127,7 +127,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sit* | `vehohel` |
 | *run* | `veruvol` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Azozon can write on the clipboard.*
 
@@ -153,7 +153,7 @@ z-Alazun | v-write-unable-modifiable
 z-Ahelan | v-sit-unable-temporary
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zalazun gwuzaruyoxam.`
 

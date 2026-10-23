@@ -15,7 +15,7 @@ A summary in `AGENTS.md` is a second copy of what the grammar docs say, and noth
 
 ## Exclude
 
-- **Agebon forms paired with meanings**: no form-to-gloss pairs, ending tables, or vowel-series meanings. An agent that needs them opens the owning doc.
+- **Ageben forms paired with meanings**: no form-to-gloss pairs, ending tables, or vowel-series meanings. An agent that needs them opens the owning doc.
 - **Anything a design change would force you to edit.** Test: would any of the last five grammar commits have required editing this line? If so, it belongs in the grammar doc.
 - **Anything already stated in `docs/meta/`.** Link to it instead.
 - **Duplicate indexes** of the routing table.

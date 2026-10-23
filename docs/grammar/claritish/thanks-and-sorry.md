@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-*Thanks* and *sorry* don't say what the act did for the person. Agebon names the **sake**: the need that was met or harmed. Saying which one shows that you noticed.
+*Thanks* and *sorry* don't say what the act did for the person. Ageben names the **sake**: the need that was met or harmed. Saying which one shows that you noticed.
 
 ## The sakes {#sakes}
 

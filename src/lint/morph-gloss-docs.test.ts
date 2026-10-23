@@ -23,7 +23,7 @@ function tablesOf(): ClassifyTables {
 
 const PRACTICE = `### Translation practice
 
-#### English → Agebon
+#### English → Ageben
 
 **1.** *Azozon sits.*
 
@@ -34,7 +34,7 @@ z-Azozon | v-sit
 
 :::
 
-#### Agebon → English
+#### Ageben → English
 
 **1.** \`zazozon vayul.\`
 
@@ -46,12 +46,12 @@ z-Azozon | v-sit
 `;
 
 describe("extractTranslationExercises", () => {
-  it("pairs spoiler and prompt Agebon with visible morph glosses", () => {
+  it("pairs spoiler and prompt Ageben with visible morph glosses", () => {
     const items = extractTranslationExercises(PRACTICE);
     assert.equal(items.length, 2);
-    assert.equal(items[0]!.agebon, "zazozon vayul.");
+    assert.equal(items[0]!.ageben, "zazozon vayul.");
     assert.equal(items[0]!.morph, "z-Azozon | v-sit");
-    assert.equal(items[1]!.agebon, "zazozon vayul.");
+    assert.equal(items[1]!.ageben, "zazozon vayul.");
     assert.equal(items[0]!.loose, "Azozon sits.");
     assert.equal(items[1]!.loose, "Azozon sits.");
   });
@@ -65,7 +65,7 @@ describe("extractTranslationExercises", () => {
   it("pairs decision items by type in a converted checkpoint", async () => {
     const { PRACTICE: CONVERTED } = await import("./practice-fixtures.js");
     const items = extractTranslationExercises(CONVERTED);
-    const pairs = items.map((item) => [item.agebon, item.morph]);
+    const pairs = items.map((item) => [item.ageben, item.morph]);
     // Pick one and Fix it: the answer form and its morph, never the prompt forms.
     assert.deepEqual(pairs[6], ["zazozon dalazun vayebel.", "z-Azozon | d-Alazun | v-see"]);
     assert.deepEqual(pairs[7], ["zalazun dazozon vayebel.", "z-Alazun | d-Azozon | v-see"]);
@@ -110,7 +110,7 @@ g-20
 :::
 `;
     const items = extractTranslationExercises(md);
-    assert.equal(items[0]!.agebon, "g+20");
+    assert.equal(items[0]!.ageben, "g+20");
     assert.equal(items[0]!.morph, "g-20");
   });
 
@@ -132,7 +132,7 @@ Twenty is two tens.
 :::
 `;
     const items = extractTranslationExercises(md);
-    assert.equal(items[0]!.agebon, "g+20");
+    assert.equal(items[0]!.ageben, "g+20");
     assert.equal(items[0]!.morph, "g-20");
   });
 });
@@ -226,7 +226,7 @@ z-Azozon | v-sit
     const text = formatMorphGlossFinding("docs/grammar/clause.md", {
       kind: "mismatch",
       line: 10,
-      agebon: "zazozon vayul.",
+      ageben: "zazozon vayul.",
       documented: "z-Azozon | v-walk",
       parser: "z-Azozon | v-sit",
     });

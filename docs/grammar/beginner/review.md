@@ -16,7 +16,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -59,7 +59,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *walk* | `vowurol` |
 | *departure* | `vudurul` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *An angry Alazun sees an umbrella.*
 
@@ -145,7 +145,7 @@ z-Ahelan | [g-companionship | bl-Alazun]
 **Rule:** [Sequence](clause-sequence.md#sequence)
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zahelan vayebel darl zalazun vebemol.`
 

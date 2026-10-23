@@ -1,4 +1,4 @@
-/** Flags `parse.mjs` accepts. Unknown `--…` flags are rejected so they are not parsed as Agebon. */
+/** Flags `parse.mjs` accepts. Unknown `--…` flags are rejected so they are not parsed as Ageben. */
 
 export const PARSE_FLAGS = [
   "--check-ambiguity",

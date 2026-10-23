@@ -21,8 +21,8 @@ const tables = createClassifyTables(
   readFileSync(join(rootDir, "data", "lexicon-compounds.csv"), "utf8"),
 );
 
-function expectLine(agebon: string, morph: string): void {
-  assert.equal(morphGlossLine(agebon, tables), normalizeMorphLine(morph), agebon);
+function expectLine(ageben: string, morph: string): void {
+  assert.equal(morphGlossLine(ageben, tables), normalizeMorphLine(morph), ageben);
 }
 
 describe("morphGlossLine — join blanks", () => {
@@ -374,7 +374,7 @@ describe("compareMorphGloss", () => {
     assert.equal(result.parseError, undefined);
   });
 
-  it("fails unparseable Agebon as parse, not gloss mismatch", () => {
+  it("fails unparseable Ageben as parse, not gloss mismatch", () => {
     const result = compareMorphGloss("z!!!", "z-nope", tables);
     assert.equal(result.ok, false);
     assert.ok(result.parseError);
@@ -425,7 +425,7 @@ describe("compareMorphGloss", () => {
 `;
     const [block] = extractTeachBlocks(md);
     assert.ok(block);
-    assert.equal(block!.agebon, "azozon.");
+    assert.equal(block!.ageben, "azozon.");
     assert.equal(block!.morph, "Azozon");
     assert.equal(block!.loose, "Azozon.");
   });
@@ -456,7 +456,7 @@ describe("compareMorphGloss", () => {
 `;
     const blocks = extractTeachBlocks(md);
     assert.equal(blocks.length, 2);
-    assert.equal(blocks[1]!.agebon, "! zazozon vowurol.");
+    assert.equal(blocks[1]!.ageben, "! zazozon vowurol.");
     assert.equal(blocks[1]!.morph, "! | z-Azozon | v-walk");
     assert.equal(blocks[1]!.loose, "Azozon walks!");
   });
@@ -470,7 +470,7 @@ describe("compareMorphGloss", () => {
 `;
     const [pair] = extractExampleBlocks(md);
     assert.ok(pair);
-    const result = compareMorphGloss(pair!.agebon, pair!.morph, tables);
+    const result = compareMorphGloss(pair!.ageben, pair!.morph, tables);
     assert.equal(result.ok, true, `${result.expected} vs ${result.actual}`);
   });
 
@@ -578,11 +578,11 @@ describe("morphGlossLine — extra fixtures", () => {
     assert.ok(pairs.length >= 6);
     for (const pair of pairs) {
       if (pair.morph.includes("←")) continue;
-      const result = compareMorphGloss(pair.agebon, pair.morph, tables);
+      const result = compareMorphGloss(pair.ageben, pair.morph, tables);
       assert.equal(
         result.ok,
         true,
-        `${pair.agebon} → documented ${pair.morph} vs parser ${result.actual}${result.parseError ? ` (${result.parseError})` : ""}`,
+        `${pair.ageben} → documented ${pair.morph} vs parser ${result.actual}${result.parseError ? ` (${result.parseError})` : ""}`,
       );
     }
   });

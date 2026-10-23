@@ -63,7 +63,7 @@ The greeting names **you**, not the person you greet, so it works the same for a
 The last letters you just used, on the same root `azozo`:
 
 <!-- cheat-sheet: word-shape-clause -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `azozol` | first mention, everyday kind | *swan* | **l** ≈ concrete |
 | `azozom` | first mention, published abstract | *grace* | **m** ≈ abstract |
@@ -80,11 +80,11 @@ Short drills for Beginner. Try each item before opening **Show answer**. Choose 
 
 **Setting:** a classroom
 
-The word bank lists the roots this checkpoint introduces. **English** is what you produce; **Agebon** is its citation; **Cue** is a memory aid, and names the root's other sense when it has one. Later checkpoints add a **Review** table of words met earlier.
+The word bank lists the roots this checkpoint introduces. **English** is what you produce; **Ageben** is its citation; **Cue** is a memory aid, and names the root's other sense when it has one. Later checkpoints add a **Review** table of words met earlier.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *school* | `uzahal` | 🏫: a school teaches, so its abstract is *education* |
 | *book* | `anal` | 📖: a book holds *knowledge* |
@@ -96,7 +96,7 @@ The word bank lists the roots this checkpoint introduces. **English** is what yo
 | *Ahelan* | `ahelan` | 🌺 *hibiscus*, abstract *beauty* |
 | *your name* | `SELFn` | from the name helper above |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *school*
 
@@ -146,7 +146,7 @@ Azozon
 SELF
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `uzaham`
 

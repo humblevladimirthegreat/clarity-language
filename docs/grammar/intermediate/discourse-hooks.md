@@ -4,7 +4,7 @@ band: intermediate
 
 # Discourse hooks {#discourse-hooks}
 
-English *In fact*, *for example*, *here*, *somewhere*, and *anyway* attach this sentence to prior talk, or point at a place already in play. Agebon reuses the same hook spellings, stacked or with **-r**. Everyday *including*, *in*, and *Additionally* are in [hooks](/hooks).
+English *In fact*, *for example*, *here*, *somewhere*, and *anyway* attach this sentence to prior talk, or point at a place already in play. Ageben reuses the same hook spellings, stacked or with **-r**. Everyday *including*, *in*, and *Additionally* are in [hooks](/hooks).
 
 ### Opening a sentence with stacked hooks {#stacked-discourse}
 
@@ -28,10 +28,10 @@ Opening with **`ael …`** gives English *For example, …*: this sentence is on
 
 ### Point back (`er` / `ar` / `ur` / `or`) {#hook-resume}
 
-English *there*, *from there*, and *for it* point back to a place or thing already named. In Agebon, give the extra-noun hook **-r** and leave out the `/b/` word: after the verb, the hook points back to the landmark already in play, the way [resume **-r**](/pronouns#resume-r) does on a noun. A hook with **-r** has no noun on its right, and no phrase on its left to pair with (it is not a same-role hook).
+English *there*, *from there*, and *for it* point back to a place or thing already named. In Ageben, give the extra-noun hook **-r** and leave out the `/b/` word: after the verb, the hook points back to the landmark already in play, the way [resume **-r**](/pronouns#resume-r) does on a noun. A hook with **-r** has no noun on its right, and no phrase on its left to pair with (it is not a same-role hook).
 
 <!-- cheat-sheet: joins-hooks -->
-| Agebon | Points back to | English |
+| Ageben | Points back to | English |
 |--------|----------------|---------|
 | `ar` | inside the place already named | *in there* / *in it* |
 | `er` | the place already named | *there* |
@@ -53,7 +53,7 @@ English *there*, *from there*, and *for it* point back to a place or thing alrea
 Stacked extra-noun vowels point back the same way: the vowels keep the extra they named (`ael` *on*, `aol` *using*, `uel` *through*), and **-r** drops the landmark.
 
 <!-- cheat-sheet: joins-hooks -->
-| Agebon | Points back to | English |
+| Ageben | Points back to | English |
 |--------|----------------|---------|
 | `aor` | the face already named | *on it* |
 | `aer` | the means already named | *with it* |
@@ -79,7 +79,7 @@ Stacked extra-noun vowels point back the same way: the vowels keep the extra the
 
 At the front of a sentence, a resume hook points back to an earlier stretch of talk, not just the last sentence.
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `er …` | back to the main line after a side topic | *Anyway, …* | **o** ≈ one (the one main thread) |
 | `or …` | say an earlier point again | *As I said, …* | **e** ≈ order (the wording again) |
@@ -123,7 +123,7 @@ To say more than one thing about the **same** A (*including B but except C*, or 
 
 Beginner put a discourse hook at the front of a plain statement. It can sit in three more places, with the same spellings and vowel meanings:
 
-| Placement | Agebon | Use |
+| Placement | Ageben | Use |
 |-----------|--------|-----|
 | Before a written turn marker | `HOOK yal BODY` | The written **`yal`** / **`yel`** / …, after any vocatives and interjections |
 | Before a default-statement body | `HOOK BODY` | Implied **`yal`** ([speech moves](/firm-soft#speech-act)) |
@@ -152,13 +152,13 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *elevator* | `ulahol` | 🛗 |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -168,7 +168,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *find* | `vumewel` |
 | *family* | `uvayal` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Azozon sits at the elevator. Alazun sits there too.*
 
@@ -194,7 +194,7 @@ in.fact | z-Alazun | d-key | v-find
 z-family | including.open | z-Azozon | except | z-Alazun | v-sit
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `yazozon al zalazun vehohel.`
 

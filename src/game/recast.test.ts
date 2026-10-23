@@ -42,12 +42,12 @@ describe("editDistance", () => {
 describe("nearMisses", () => {
   it("puts the whole-input readings in tier 0", () => {
     const misses = nearMisses("Zudozol vowurol.", "word", options());
-    assert.equal(misses[0]?.agebon, "zudozol vowurol.");
+    assert.equal(misses[0]?.ageben, "zudozol vowurol.");
     assert.equal(misses[0]?.tier, 0);
   });
 
   it("swaps an ending, a role letter, or a root one edit away", () => {
-    const misses = nearMisses("zudozal dagozol bohol vayebel.", "unknown-root", options()).map((m) => m.agebon);
+    const misses = nearMisses("zudozal dagozol bohol vayebel.", "unknown-root", options()).map((m) => m.ageben);
     assert.ok(misses.includes("zudozol dagozol bohol vayebel."));
     assert.ok(misses.includes("zudozal dagozol dohol vayebel."));
   });
@@ -55,11 +55,11 @@ describe("nearMisses", () => {
   it("ranks this error kind's rows above the rest", () => {
     const rule: RecastRule = { kind: "word", from: "yel", to: "yol", errorKind: "special", source: "x.md#y" };
     const misses = nearMisses("yel vowurol.", "special", options({ rules: [...SEED_RULES, rule] }));
-    assert.equal(misses.find((m) => m.agebon === "yol vowurol.")?.tier, 1);
+    assert.equal(misses.find((m) => m.ageben === "yol vowurol.")?.tier, 1);
   });
 
   it("moves a turn word to the front", () => {
-    const misses = nearMisses("zazozon varal yel.", "turnMidSentence", options()).map((m) => m.agebon);
+    const misses = nearMisses("zazozon varal yel.", "turnMidSentence", options()).map((m) => m.ageben);
     assert.ok(misses.includes("yel zazozon varal."));
   });
 });

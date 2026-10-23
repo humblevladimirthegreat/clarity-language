@@ -1,5 +1,5 @@
 /**
- * Translation prompt for an LLM that has never seen Agebon (docs/proposals/llm-gloss-prompt.md):
+ * Translation prompt for an LLM that has never seen Ageben (docs/proposals/llm-gloss-prompt.md):
  * a fixed core that teaches the morph-gloss notation, a legend trimmed to what the input uses,
  * doc examples picked by shared constructions, and the task. Pure: the example index and the
  * label glosses come in from llm-examples.ts.
@@ -8,8 +8,8 @@ import { MORPH_FORM_SUFFIXES, ROLE_PART } from "./morph-gloss.js";
 
 /** One doc example: its gloss, its free English split into sentence and note, and its features. */
 export type ExamplePair = {
-  /** The Agebon as written, with the learner name filled in (the English helper prompt shows it). */
-  agebon: string;
+  /** The Ageben as written, with the learner name filled in (the English helper prompt shows it). */
+  ageben: string;
   gloss: string;
   sentence: string;
   note: string | null;
@@ -17,12 +17,12 @@ export type ExamplePair = {
   constructions: string[];
   /** SMALLCAPS labels in the gloss. */
   labels: string[];
-  /** `page.md:line` of the Agebon line. */
+  /** `page.md:line` of the Ageben line. */
   source: string;
 };
 
 /**
- * The fixed core: what every gloss uses. Plain English, gloss notation only, no Agebon.
+ * The fixed core: what every gloss uses. Plain English, gloss notation only, no Ageben.
  * The unit test fails when the morph line can print a prefix, role, or form suffix with no line here.
  */
 export const GLOSS_READER = {

@@ -5,7 +5,7 @@ import { hasSelfSlot } from '../../../../src/learner-name.ts'
 /**
  * `SELF` slots (the learner's own name) in grammar Markdown:
  * - an inline code span with a slot (`zSELFn vowogal.`) → `<SelfCode>`;
- * - an `agebon` fence → each line with a slot becomes `<SelfCode bare>`;
+ * - an `ageben` fence → each line with a slot becomes `<SelfCode bare>`;
  * - a free-standing `SELF` in plain text (a morph-gloss line: `z-SELF`) → `<SelfGloss>`.
  * Static HTML shows the default (`eman` / `speaker`); the components swap in the chosen name.
  */
@@ -20,14 +20,14 @@ export function learnerNameSlots(md: MarkdownIt): void {
   const fence = md.renderer.rules.fence
   md.renderer.rules.fence = (tokens, idx, options, env, self) => {
     const token = tokens[idx]!
-    if (token.info.trim() !== 'agebon' || !hasSelfSlot(token.content)) {
+    if (token.info.trim() !== 'ageben' || !hasSelfSlot(token.content)) {
       return fence!(tokens, idx, options, env, self)
     }
     const lines = token.content.replace(/\n$/, '').split('\n')
     const body = lines
       .map((line) => (hasSelfSlot(line) ? `<SelfCode bare text="${escapeAttr(line)}" />` : escapeText(line)))
       .join('\n')
-    return `<div class="language-agebon"><span class="lang">agebon</span><pre><code>${body}</code></pre></div>\n`
+    return `<div class="language-ageben"><span class="lang">ageben</span><pre><code>${body}</code></pre></div>\n`
   }
 
   md.core.ruler.push('learner_name_gloss', (state: StateCore) => {

@@ -4,7 +4,7 @@
  * reachable state; and every row the game names exists. `scripts/lint-game.ts` runs it in the build.
  */
 import type { ClassifyTables } from "../parse/classify.js";
-import { glossToAgebon } from "../parse/gloss-inverse.js";
+import { glossToAgeben } from "../parse/gloss-inverse.js";
 import { unknownWords } from "../parse/lexicon-check.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { fullGlossIndex, spellFixed } from "./build.js";
@@ -20,26 +20,26 @@ import { HANDLERS } from "./verbs.js";
 export type GameFinding = { where: string; detail: string };
 
 /** Lines a quest's walkthrough spells to, with their constructions (for reports). */
-export type SpelledLine = { gloss: string; agebon: string; constructions: string[] };
+export type SpelledLine = { gloss: string; ageben: string; constructions: string[] };
 
 function checkLine(where: string, authored: string, tables: ClassifyTables, findings: GameFinding[]): SpelledLine | undefined {
-  let agebon: string;
+  let ageben: string;
   let gloss = authored;
   try {
     gloss = expandGloss(authored, gameLexicon(tables));
-    agebon = glossToAgebon(gloss, tables, fullGlossIndex(tables));
+    ageben = glossToAgeben(gloss, tables, fullGlossIndex(tables));
   } catch (error) {
     findings.push({ where, detail: `${gloss}: does not spell (${(error as Error).message})` });
     return undefined;
   }
   try {
-    const result = parseWithTables(agebon, tables, { constructions: true, checkAmbiguity: true });
-    if (result.ambiguity?.length) findings.push({ where, detail: `${agebon}: reads more than one way` });
+    const result = parseWithTables(ageben, tables, { constructions: true, checkAmbiguity: true });
+    if (result.ambiguity?.length) findings.push({ where, detail: `${ageben}: reads more than one way` });
     const unknown = unknownWords(result).map((w) => w.raw);
-    if (unknown.length) findings.push({ where, detail: `${agebon}: not lexicon words: ${unknown.join(", ")}` });
-    return { gloss, agebon, constructions: result.constructions ?? [] };
+    if (unknown.length) findings.push({ where, detail: `${ageben}: not lexicon words: ${unknown.join(", ")}` });
+    return { gloss, ageben, constructions: result.constructions ?? [] };
   } catch (error) {
-    findings.push({ where, detail: `${agebon}: does not parse (${(error as Error).message.split("\n")[0]})` });
+    findings.push({ where, detail: `${ageben}: does not parse (${(error as Error).message.split("\n")[0]})` });
     return undefined;
   }
 }
@@ -83,7 +83,7 @@ export function lintGame(tables: ClassifyTables, gate: GateData): GameFinding[] 
         const late = line.constructions.filter((id) => (gate.homes[id] ?? Number.POSITIVE_INFINITY) > area);
         if (late.length) {
           const homes = late.map((id) => `${id} (${gate.sections[gate.homes[id]!]?.anchor ?? "no home"})`);
-          findings.push({ where, detail: `${line.agebon}: uses grammar past the quest's area (${gate.sections[area]?.anchor ?? "none"}): ${homes.join(", ")}` });
+          findings.push({ where, detail: `${line.ageben}: uses grammar past the quest's area (${gate.sections[area]?.anchor ?? "none"}): ${homes.join(", ")}` });
         }
       }
     }

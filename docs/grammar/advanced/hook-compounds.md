@@ -6,7 +6,7 @@ band: advanced
 
 ### Hook compounds (cite + extra-noun hook) {#hook-compounds}
 
-English has single verbs for moving in relation to a place: *enter*, *leave*, *oppose*. Agebon makes them by **fusing** an extra-noun hook onto the end of a citation: *walk* + *from* (`vowurol ul bawahol` *walks from a station*) becomes one word, *leave*. Every hook in the extra-noun grid can fuse this way.
+English has single verbs for moving in relation to a place: *enter*, *leave*, *oppose*. Ageben makes them by **fusing** an extra-noun hook onto the end of a citation: *walk* + *from* (`vowurol ul bawahol` *walks from a station*) becomes one word, *leave*. Every hook in the extra-noun grid can fuse this way.
 
 Keep the left word’s own **-l** or **-m**, then write the hook, with no mid-word **`x`**. The dictionary form is the **citation** (no role letter), because the same stem can sit under `/z/` or `/ɡ/` as well as `/v/`.
 
@@ -66,7 +66,7 @@ Other roots fuse the same way: `vezuyoluel` *contradict* is *tell* fused with *a
 
 ### Hook prefixes (hook + `x` + stem) {#hook-prefixes}
 
-English builds describing words from a relation and a thing: *anti-war*, *indoor*, *transoceanic*, *water-powered*. In Agebon, write the role letter, then the vowels of an extra-noun hook, then **`x`**, then a stem, then the ending. The stem is the hook's landmark, and the word names something that stands in that relation to it: `guoxuvuvul` is *against fighting* as one word. Where the free hook needs its own `/b/` word after the noun, the prefix packs the relation into a single word, so it can describe a noun, fill any noun slot, and become a dictionary word. (cue: **x** ≈ plus, the hyphen in *anti-war*)
+English builds describing words from a relation and a thing: *anti-war*, *indoor*, *transoceanic*, *water-powered*. In Ageben, write the role letter, then the vowels of an extra-noun hook, then **`x`**, then a stem, then the ending. The stem is the hook's landmark, and the word names something that stands in that relation to it: `guoxuvuvul` is *against fighting* as one word. Where the free hook needs its own `/b/` word after the noun, the prefix packs the relation into a single word, so it can describe a noun, fill any noun slot, and become a dictionary word. (cue: **x** ≈ plus, the hyphen in *anti-war*)
 
 > `zazozon guoxuvuvul.`
 >
@@ -170,14 +170,14 @@ Short drills for Advanced. Try each item before opening **Show answer**. Each fu
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *ship* | `ahaval` | 🚢 |
 | *anchor* | `awul` | ⚓ |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -188,7 +188,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Each fu
 | *fog* | `ovulul` |
 | *ocean* | `ohalal` |
 
-#### English → Agebon {#advanced-english-to-agebon}
+#### English → Ageben {#advanced-english-to-ageben}
 
 **1.** *Azozon leaves a boat.*
 
@@ -214,7 +214,7 @@ z-Alazun | d-anchor | v-head-for
 z-ship | g-through-x-ocean
 :::
 
-#### Agebon → English {#advanced-agebon-to-english}
+#### Ageben → English {#advanced-ageben-to-english}
 
 **1.** `dovulul zalazun vowurolul.`
 

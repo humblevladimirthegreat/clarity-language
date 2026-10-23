@@ -11,7 +11,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 ### Whose view (holder) {#holder}
 <a id="holder-seam"></a>
 
-English *Azozon thinks…*, *she's upset*, and *he doubts it* report what is in someone else's mind as if you could see it. In Agebon, you name whose view a sentence gives (the **holder**) by joining their name onto a channel or [MAY](/knowing#may). Keep that word's own last letter (**-l**, **-m**, or **-r**) and write the name straight after it: `theyom` plus `azozon` is `theyomazozon`. The joining letter is the **seam**. This is the only way to name a holder, so you can never report someone's view without saying how you know it. (cue: the name hangs off the way you know it)
+English *Azozon thinks…*, *she's upset*, and *he doubts it* report what is in someone else's mind as if you could see it. In Ageben, you name whose view a sentence gives (the **holder**) by joining their name onto a channel or [MAY](/knowing#may). Keep that word's own last letter (**-l**, **-m**, or **-r**) and write the name straight after it: `theyom` plus `azozon` is `theyomazozon`. The joining letter is the **seam**. This is the only way to name a holder, so you can never report someone's view without saying how you know it. (cue: the name hangs off the way you know it)
 
 > `zalazun theyomazozon vudurul.`
 >
@@ -189,7 +189,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -202,7 +202,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sleep* | `vezuvel` |
 | *tell* | `vezuyol` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *I gather Azozon thinks Alazun has left.*
 
@@ -228,7 +228,7 @@ z-Alazun | th-REPORTED-Ahelan | v-scream
 z-Alazun | th-MAY-Azozon | v-sleep
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zahelan thebamazozon vezuyol.`
 

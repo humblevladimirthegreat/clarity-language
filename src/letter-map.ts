@@ -1,5 +1,5 @@
 /**
- * Map English letters onto the Agebon inventory. No file access: the name widget
+ * Map English letters onto the Ageben inventory. No file access: the name widget
  * uses this when CMU has no pronunciation.
  */
 
@@ -77,7 +77,7 @@ function remapConsonant(letter: string): string {
   return mapped;
 }
 
-/** Map English letters left to right; collapse runs of the same Agebon letter. */
+/** Map English letters left to right; collapse runs of the same Ageben letter. */
 export function mappedSourceLetters(input: string): string[] {
   const letters = normalizeInput(input);
   const out: string[] = [];

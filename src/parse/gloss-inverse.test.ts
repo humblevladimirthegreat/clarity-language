@@ -4,7 +4,7 @@ import { join } from "node:path";
 import { describe, it } from "node:test";
 
 import { extractMorphPairs } from "../lint/morph-gloss-docs.js";
-import { buildGlossIndex, glossToAgebon } from "./gloss-inverse.js";
+import { buildGlossIndex, glossToAgeben } from "./gloss-inverse.js";
 import { loadDefaultTables } from "./index.js";
 import { morphGlossLine } from "./morph-gloss.js";
 
@@ -16,15 +16,15 @@ function docLines(dir: string, into: string[] = []): string[] {
     const path = join(dir, name);
     if (statSync(path).isDirectory()) docLines(path, into);
     else if (path.endsWith(".md")) {
-      for (const pair of extractMorphPairs(readFileSync(path, "utf8"))) into.push(pair.agebon);
+      for (const pair of extractMorphPairs(readFileSync(path, "utf8"))) into.push(pair.ageben);
     }
   }
   return into;
 }
 
 /** Whitespace-only differences (incl. padding inside written brackets) and a final period are not distinct forms. */
-function canonical(agebon: string): string {
-  return agebon
+function canonical(ageben: string): string {
+  return ageben
     .normalize("NFC")
     .trim()
     .replace(/\s+/g, " ")
@@ -36,13 +36,13 @@ function canonical(agebon: string): string {
 const lines = [...new Set(docLines("docs/grammar"))];
 const index = buildGlossIndex(tables, lines);
 
-function roundTrip(agebon: string): string {
-  return glossToAgebon(morphGlossLine(agebon, tables), tables, index);
+function roundTrip(ageben: string): string {
+  return glossToAgeben(morphGlossLine(ageben, tables), tables, index);
 }
 
-describe("glossToAgebon", () => {
+describe("glossToAgeben", () => {
   it("rebuilds each spec example exactly", () => {
-    for (const agebon of [
+    for (const ageben of [
       "dedudal en dogudal.",
       "zodozel gorel blazozon gobulol.",
       "glorel blazozon zodozel gorel blalazun.",
@@ -66,24 +66,24 @@ describe("glossToAgebon", () => {
       "zuwenx vowurol.",
       "zazozon vuhuyol d[zazozor vowurol]. dedudal en dogudal.",
     ]) {
-      assert.equal(canonical(roundTrip(agebon)), canonical(agebon), agebon);
+      assert.equal(canonical(roundTrip(ageben)), canonical(ageben), ageben);
     }
   });
 
   it("round-trips every morph-glossed example in docs/grammar", () => {
     const failures: string[] = [];
-    for (const agebon of lines) {
+    for (const ageben of lines) {
       let gloss: string;
       try {
-        gloss = morphGlossLine(agebon, tables);
+        gloss = morphGlossLine(ageben, tables);
       } catch {
-        continue; // Unknown words are reported by lint:agebon, not here.
+        continue; // Unknown words are reported by lint:ageben, not here.
       }
       try {
-        const back = glossToAgebon(gloss, tables, index);
-        if (canonical(back) !== canonical(agebon)) failures.push(`${agebon} → ${gloss} → ${back}`);
+        const back = glossToAgeben(gloss, tables, index);
+        if (canonical(back) !== canonical(ageben)) failures.push(`${ageben} → ${gloss} → ${back}`);
       } catch (error) {
-        failures.push(`${agebon} → ${gloss} → ${(error as Error).message}`);
+        failures.push(`${ageben} → ${gloss} → ${(error as Error).message}`);
       }
     }
     assert.deepEqual(failures, []);
@@ -91,7 +91,7 @@ describe("glossToAgebon", () => {
 
   it("spells a hosted bl- word with no doc line to copy it from", () => {
     const bare = buildGlossIndex(tables);
-    for (const agebon of [
+    for (const ageben of [
       "zexual blahaval vezuvel.",
       "zazozon vowurol halam blahaval.",
       "zodozel gaham blahaval vezuvel.",
@@ -99,11 +99,11 @@ describe("glossToAgebon", () => {
       "yel hewem blar zazozon vowurol.",
       "zazozon vehohel el bohehal. zexual blohehar vezuvel.",
     ]) {
-      assert.equal(canonical(glossToAgebon(morphGlossLine(agebon, tables), tables, bare)), canonical(agebon), agebon);
+      assert.equal(canonical(glossToAgeben(morphGlossLine(ageben, tables), tables, bare)), canonical(ageben), ageben);
     }
   });
 
-  it("rejects a gloss no Agebon line produces", () => {
-    assert.throws(() => glossToAgebon("z-dog | v-not-a-real-sense", tables, index));
+  it("rejects a gloss no Ageben line produces", () => {
+    assert.throws(() => glossToAgeben("z-dog | v-not-a-real-sense", tables, index));
   });
 });

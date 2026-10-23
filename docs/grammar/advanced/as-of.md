@@ -10,7 +10,7 @@ band: advanced
 
 English *as of Friday*, *would*, *was going to*, and *if he had* mix two times: **when the event happens**, and **which “now”** the rest of the sentence is measured from (what is still left over, what used to be the pattern, what is planned, what is forecast). Call that second one *whose-now*.
 
-Agebon keeps the two apart. With no extra marking, whose-now is **speech-now**, the moment you are speaking. To move it, write a hosted pair: **`henam`** when you claim that moment as real (a dated entry in the record), **`hunom`** when it is only a placeholder you are not claiming. Put the moment (the snapshot) in `/b/` immediately after. (cue: 📒 *ledger* stamps a dated line in the books; 🔖 *bookmark* holds the place without stamping)
+Ageben keeps the two apart. With no extra marking, whose-now is **speech-now**, the moment you are speaking. To move it, write a hosted pair: **`henam`** when you claim that moment as real (a dated entry in the record), **`hunom`** when it is only a placeholder you are not claiming. Put the moment (the snapshot) in `/b/` immediately after. (cue: 📒 *ledger* stamps a dated line in the books; 🔖 *bookmark* holds the place without stamping)
 
 > `zalazun haram henam bl_#22,7 vudurul.`
 >
@@ -105,7 +105,7 @@ An *as-of* pair inside a finished inner clause cannot be resumed later in the ma
 **Compare with:** [*after*](/dependents#time-poles) **`halam`** and extra-noun **`el`** *at* place the event in time or next to a landmark; they do not set whose-now. [Causal *if*](/causation#if) **`thohem`** is a condition judged at speech-now, not English *if he had* (`hunom`). [NOTIONAL](/notional-standing#notional) is pretend, not a placeholder now. [Scope islands](join-islands.md#scope-islands-join) limit how far a join reaches; they do not carry an *as-of* forward. On the next clause, repeat the evidential, resume the *as-of*, or both.
 
 <!-- cheat-sheet: linking-clauses -->
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`henam` / `genam` / `wenam`** | asserted whose-now | *as of* (dated ledger) | `enal` *ledger* | 📒: a dated line in the books |
 | **`hunom` / `gunom` / `wunom`** | unasserted whose-now | *as of* (placeholder now) | `unol` *bookmark* | 🔖: hold the place without stamping |
@@ -158,7 +158,7 @@ Changing your mind is then a change of now, not a contradiction: *I was fairly s
 **Compare with:** an evidential is how you know **at speech-now**, even under `/th/` *as-of*. Someone else's stance takes a [holder](/holder#holder); with one, `thenam` dates **their** stance. *I remember feeling it* is a remembering channel (`thevum`) plus `thenam`.
 
 <!-- cheat-sheet: linking-clauses -->
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thenam`** | stances as of a real now | *I thought / I felt (then)* | 📒: a dated line |
 | **`thunom`** | stances as of a now you are not claiming | *I would think / I'd feel* | 🔖: a held place |
@@ -172,14 +172,14 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *as-of.ledger* | `henam` | 📒 from *ledger*: a dated line in the books |
 | *as-of.bookmark* | `hunom` | 🔖 from *bookmark*: hold the place without stamping |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -194,7 +194,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *sit* | `vehohel` |
 | *tell* | `vezuyol` |
 
-#### English → Agebon {#advanced-english-to-agebon}
+#### English → Ageben {#advanced-english-to-ageben}
 
 **1.** *As of 22 July, Alazun had left and was still gone.*
 
@@ -228,7 +228,7 @@ z-book | [g-as-of.ledger | bl-_22,7]
 [th-as-of.ledger | bl-_22,7] | th-MAY | v-rain
 :::
 
-#### Agebon → English {#advanced-agebon-to-english}
+#### Ageben → English {#advanced-ageben-to-english}
 
 **1.** `zahelan haram henam bl_#23,7 vudurul. xazozon haram henar vehohel.`
 

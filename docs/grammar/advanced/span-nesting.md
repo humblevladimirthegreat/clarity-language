@@ -43,13 +43,13 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *flaw* | `abezum` | 🐛 from *bug* |
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -59,7 +59,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *write* | `varuyol` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#advanced-english-to-agebon}
+#### English → Ageben {#advanced-english-to-ageben}
 
 **1.** *Alazun said “flaw…”* (the quote trails off)
 
@@ -93,7 +93,7 @@ z-Ahelan | d-CITE[flaw]#| | v-tell
 z-Azozon | d-CITE[flaw]# | v-see | [on | b-page]
 :::
 
-#### Agebon → English {#advanced-agebon-to-english}
+#### Ageben → English {#advanced-ageben-to-english}
 
 **1.** `zahelan d[abezum] varuyol.`
 

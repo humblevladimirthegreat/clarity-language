@@ -98,6 +98,6 @@ Read **`docs/grammar/`** only, in the three sidebar groups: every Beginner sitti
 
 ### Recipe track (outside the stages) {#recipe-track}
 
-[english.md](../grammar/english.md) and the `say-*.md` pages (**Saying it in Agebon**) sit outside the stage order and off the three lesson groups. Each recipe answers an English job with forms taught elsewhere and lists them on a **Needs:** line. Stage pages never link to the track ([recipe track](grammar-docs.md#recipe-track)).
+[english.md](../grammar/english.md) and the `say-*.md` pages (**Saying it in Ageben**) sit outside the stage order and off the three lesson groups. Each recipe answers an English job with forms taught elsewhere and lists them on a **Needs:** line. Stage pages never link to the track ([recipe track](grammar-docs.md#recipe-track)).
 
 Learner-facing reading order: site sidebar (the three groups); stage notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).

@@ -4,7 +4,7 @@ band: beginner
 
 # Role compounds {#roles}
 
-When English would name a person or thing from an event (*a teacher* from *teach*, *the one told*, *a building*), Agebon builds that name from the event’s stem. Write a person or thing letter, then **`w`**, then a scope vowel, then a part consonant, then the stem, then an ordinary [word ending](word-endings.md). The part consonant is the role letter the participant had in the event's clause: **`z`** the doer, **`d`** what the event acts on or brings into being, and **`b`** the extra `/b/` party (who is told, or the other party of a relation).
+When English would name a person or thing from an event (*a teacher* from *teach*, *the one told*, *a building*), Ageben builds that name from the event’s stem. Write a person or thing letter, then **`w`**, then a scope vowel, then a part consonant, then the stem, then an ordinary [word ending](word-endings.md). The part consonant is the role letter the participant had in the event's clause: **`z`** the doer, **`d`** what the event acts on or brings into being, and **`b`** the extra `/b/` party (who is told, or the other party of a relation).
 
 The scope vowel says how far the label reaches. **`u`** is this episode: one act is enough (*someone who teaches*). **`o`** is a practiced role, the kind English names as a job (*a teacher*). Every role word picks one, so calling someone *a fighter* after a single fight takes a separate, visible choice. The ending decides whether you mean anyone in that part or the one from a particular event: with **-r**, it is the participant of the latest matching event (*the one teaching*).
 
@@ -47,7 +47,7 @@ English *a teacher* says more than *someone who teaches*: teaching is that perso
 
 `zwozuvuvul` is *a fighter*, and `zwozodozexowurol` is *a dog walker*. With **`u`**, a role compound never makes that claim, so one fight gives `zwuzuvuvul` (*someone who fought*), not a fighter.
 
-| Agebon | Scope | English | Cue |
+| Ageben | Scope | English | Cue |
 |--------|-------|---------|-----|
 | `zwuzeduyol` | **`u`** this episode | *someone who teaches* | **u** ≈ none (a speck of time) |
 | `zwozeduyol` | **`o`** practiced role | *a teacher* | **o** ≈ medium (a life they inhabit) |
@@ -122,7 +122,7 @@ Some stems name a **relation** (who is bound to whom), not an action. The other 
 
 **Compare with:** *for someone* (who the act is meant to benefit) is the extra-noun hook **`ol`** plus `/b/`, not the recipient.
 
-| Agebon | Use | English | Cue |
+| Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…wuzROOT…` | names the doer of an event | *someone who teaches* / *the one teaching* | **z**: the doer sat in `/z/` |
 | `…wudROOT…` | names what the event acts on or makes | *someone seen* / *the one seen* (this seeing); *something built* | **d**: it sat in `/d/` |
@@ -195,7 +195,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *construct* | `voguyol` | 👷 from *construct* |
 | *construction* | `ugohul` | 🚧 |
@@ -204,7 +204,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -217,7 +217,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vayebel` |
 | *run* | `veruvol` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Someone who constructs runs.*
 
@@ -267,7 +267,7 @@ z-Azozon | g-role-agent-construct
 z-Alazun | d-fight | v-see
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zagayul dwudoguyol vayebel.`
 

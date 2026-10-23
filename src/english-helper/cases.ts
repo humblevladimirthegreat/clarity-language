@@ -53,7 +53,7 @@ function sensesOf(s: Suggestion): string[] {
   return cells.flatMap((c) => (c ? splitSenses(c) : []));
 }
 
-/** Every Agebon word a suggestion spells. */
+/** Every Ageben word a suggestion spells. */
 function wordsOf(s: Suggestion): string[] {
   const texts =
     s.kind === "lexicon"

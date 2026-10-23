@@ -24,7 +24,7 @@ function readResumeSense(word: MorphWord): MorphWord {
   return { ...word, ending: "r", resumeSense: word.ending === "rl" ? "l" : "m" };
 }
 
-/** Parse one Agebon word from surface text (Stage 1 Peggy grammar). */
+/** Parse one Ageben word from surface text (Stage 1 Peggy grammar). */
 export function parseWord(input: string): MorphWord {
   try {
     return readResumeSense(peggyParse(lowerNative(input.trim())) as MorphWord);

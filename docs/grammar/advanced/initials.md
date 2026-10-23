@@ -6,7 +6,7 @@ band: advanced
 
 ### Initials {#initials}
 
-English shortens a long title to its initials (*FBI*). Agebon does too: take each root of a long [hyphenated name](/proper-names#multipart-names), in order, and write its **first consonant** as a [letter code](/numbers-applied#letter-codes) with **`@`** (**-n**, an official designation). A root always starts with a vowel, so its first letter would leave only four choices; its first consonant is the letter you hear.
+English shortens a long title to its initials (*FBI*). Ageben does too: take each root of a long [hyphenated name](/proper-names#multipart-names), in order, and write its **first consonant** as a [letter code](/numbers-applied#letter-codes) with **`@`** (**-n**, an official designation). A root always starts with a vowel, so its first letter would leave only four choices; its first consonant is the letter you hear.
 
 > `z@_nl vezuyol.`
 >
@@ -16,7 +16,7 @@ English shortens a long title to its initials (*FBI*). Agebon does too: take eac
 >
 > "The NL announces." (the office whose full title is *Book-Courage*)
 
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `zanaxalazun` | long title (`ana` × `alazu`) | *Book-Courage* |
 | `z@_nl` (🔊 `zrenulan`) | initials: `n` from `ana`, `l` from `alazu` | *the NL*, the same office |
@@ -45,7 +45,7 @@ English *5 or more* / *less than 5* is a **ray**: a band with only one end. Writ
 > "Less than 5."
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | **`zrazal al zrawal`** | 5 up to +∞ | *5 or more* (`≥ 5`) |
 | **`zrawal ul zrazal`** | +∞ down to 5, 5 left out | *more than 5* (`> 5`) |
@@ -65,7 +65,7 @@ Ranks take the first and last place as ends. **`growal`** is the last place and 
 The range hook takes the other hook endings too.
 
 <!-- cheat-sheet: numbers -->
-| Agebon | Use | English |
+| Ageben | Use | English |
 |--------|-----|---------|
 | `z+13 an z+19` | **-n**: a named band | *the teens* |
 | `zragel ar zrazal` | **-r**: some value in the band | *some value from 3 to 5* |

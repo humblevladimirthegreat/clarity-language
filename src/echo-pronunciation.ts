@@ -2,8 +2,8 @@
  * Echo metric, Step 2 (docs/proposals/echo-metric.md): pronunciation data.
  *
  * Looks up each published `concrete` label in the CMU Pronouncing Dictionary (first variant),
- * maps the phonemes to Agebon letters, and writes:
- *  - tmp/echo-pron/pron.csv: emoji, concrete, lookup word(s), CMU phonemes, Agebon sound string
+ * maps the phonemes to Ageben letters, and writes:
+ *  - tmp/echo-pron/pron.csv: emoji, concrete, lookup word(s), CMU phonemes, Ageben sound string
  *  - tmp/echo-pron/report.md: coverage, labels missing from CMU, hyphen-only mismatches
  * Downloads cmudict into tmp/ on first run. With `write`, respells `concrete` labels whose only
  * difference from a CMU entry is a hyphen (hot-dog ↔ hotdog) in data/lexicon-published.csv.
@@ -14,7 +14,7 @@ import { dirname, join } from "node:path";
 import { CMU_PATH, loadCmu } from "./cmu-dict.ts";
 import { parseCsvLine, serializeCsv } from "./csv.ts";
 import { stripFlagSuffix } from "./flag-label.ts";
-import { toAgebon } from "./pronunciation-map.ts";
+import { toAgeben } from "./pronunciation-map.ts";
 import { REPO_ROOT, dataPath } from "./repo-paths.ts";
 
 /** Pinned cmudict commit, so reruns give the same pronunciations. */
@@ -62,7 +62,7 @@ export async function buildPronunciationCache(options: { write?: boolean } = {})
   const iEmoji = header.indexOf("emoji");
   const iConcrete = header.indexOf("concrete");
 
-  type Row = { emoji: string; label: string; lookup: string; phones: string; agebon: string; status: string };
+  type Row = { emoji: string; label: string; lookup: string; phones: string; ageben: string; status: string };
   const rows: Row[] = [];
   const hyphenFixes: { line: number; from: string; to: string }[] = [];
 
@@ -112,10 +112,10 @@ export async function buildPronunciationCache(options: { write?: boolean } = {})
       }
     }
     if (!phones) {
-      rows.push({ emoji, label: fullLabel, lookup: "", phones: "", agebon: "", status: "missing" });
+      rows.push({ emoji, label: fullLabel, lookup: "", phones: "", ageben: "", status: "missing" });
       continue;
     }
-    rows.push({ emoji, label: fullLabel, lookup, phones: phones.join(" "), agebon: toAgebon(phones), status });
+    rows.push({ emoji, label: fullLabel, lookup, phones: phones.join(" "), ageben: toAgeben(phones), status });
   }
 
   if (write && hyphenFixes.length) {
@@ -131,7 +131,7 @@ export async function buildPronunciationCache(options: { write?: boolean } = {})
   writeFileSync(
     join(OUT, "pron.csv"),
     serializeCsv(
-      ["emoji", "concrete", "lookup", "cmu", "agebon", "status"],
+      ["emoji", "concrete", "lookup", "cmu", "ageben", "status"],
       rows.map((r) => ({ ...r, concrete: r.label, cmu: r.phones })),
     ),
   );
@@ -151,7 +151,7 @@ export async function buildPronunciationCache(options: { write?: boolean } = {})
       `- hyphenated, looked up by parts: ${count("parts")}`,
       `- missing: ${missing.length}`,
       "",
-      "Agebon string: capital = primary-stress vowel, `·` = unstressed AH0.",
+      "Ageben string: capital = primary-stress vowel, `·` = unstressed AH0.",
       "",
       "## Hyphen-only fixes",
       "",

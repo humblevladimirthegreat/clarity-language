@@ -112,7 +112,7 @@ The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, 
 
 [Stance joins](/join-across-roles#stance-joins) (`/th/`) work on the stance words before them, not the claim: `thahum blerulal thul` *not because of the rain*. With clause grounds, the join goes [before `blarl`](/join-across-roles#stance-join-before-barl): `thahum thul blarl` *not because …*. [Alone](/join-across-roles#standalone-stance-joins), they say how to take the claim:
 
-| Agebon | English | Agebon | English |
+| Ageben | English | Ageben | English |
 |--------|---------|--------|---------|
 | `thal` | *at face value* | `thul` | *no judgment* |
 | `thual` | *all things considered* | `thol` | *impartially* |
@@ -175,7 +175,7 @@ Stage: one-vowel extra-noun **-l** (`al` `el` `ul` `ol`) Beginner on [hooks](/ho
 
 Role letter, the hook's vowels (**`m`** for its frame, **`r`** to point back), **`x`**, then a join; the landmark follows as a `bl-` word and bounds who counts. On `/h/` the join is a bare restrictor and the landmark a time. All Advanced.
 
-| Agebon | English |
+| Ageben | English |
 |--------|---------|
 | `zexual blohehal` | [*everyone at the house*](/hooked-joins#hooked-joins) |
 | `zemxual bluwen` / `zumxual blayan` | [*everyone here*](/hooked-joins#hooked-joins-hooks) / *everyone over there* |
@@ -193,7 +193,7 @@ Role letter, the hook's vowels (**`m`** for its frame, **`r`** to point back), *
 
 ### Handy phrases {#handy-phrases}
 
-| Agebon | English | Stage |
+| Ageben | English | Stage |
 |--------|---------|-------|
 | `ul barl` + clause | [*since*](/hooks#since) (that happened) | B |
 | `el bar` | [*somewhere*](/here-there#place-indefinites); in a question, *where?* | B |

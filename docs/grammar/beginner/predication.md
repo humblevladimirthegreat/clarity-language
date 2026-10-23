@@ -4,7 +4,7 @@ band: beginner
 
 # Predication {#predication}
 
-English *is* does two jobs that look alike. You can say someone **is a kind or role** (*Azozon is a dog*): they belong in that category. You can also say two names pick out **the same one** (*Alazun is Azozon*): one person under two labels, not a category. Agebon uses a different word pattern for each.
+English *is* does two jobs that look alike. You can say someone **is a kind or role** (*Azozon is a dog*): they belong in that category. You can also say two names pick out **the same one** (*Alazun is Azozon*): one person under two labels, not a category. Ageben uses a different word pattern for each.
 
 
 ### Property (*is ADJ*)
@@ -142,7 +142,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *police* | `ebayol` | 👮 |
 | *page* | `obonol` | 📄 |
@@ -152,7 +152,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -165,7 +165,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *run* | `veruvol` |
 | *see* | `vayebel` |
 
-#### English → Agebon {#beginner-english-to-agebon}
+#### English → Ageben {#beginner-english-to-ageben}
 
 **1.** *Azozon is a guard.*
 
@@ -215,7 +215,7 @@ z-page
 z-Alazun | g-peek
 :::
 
-#### Agebon → English {#beginner-agebon-to-english}
+#### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zazozon gebayol.`
 

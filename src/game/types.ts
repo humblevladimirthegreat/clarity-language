@@ -109,9 +109,9 @@ export type Act = {
 /** How a turn ended. `parse`: did not parse; `beyond`: parsed, but the game cannot do it yet; `refused`: someone could not or would not. */
 export type Outcome = "ok" | "parse" | "beyond" | "refused";
 
-/** A line the game writes in Agebon, with its morph gloss, free English, and what reading it needs. */
+/** A line the game writes in Ageben, with its morph gloss, free English, and what reading it needs. */
 export type Spoken = {
-  agebon: string;
+  ageben: string;
   gloss: string;
   english: string;
   constructions: string[];
@@ -121,12 +121,12 @@ export type Spoken = {
 export type GateCheck = { ok: boolean; constructions: string[]; roots: string[] };
 
 export type Line =
-  | { kind: "player"; agebon: string; gloss?: string }
-  /** A character speaks; `gate` says whether the line is within the player's level (speech shows in Agebon either way). */
+  | { kind: "player"; ageben: string; gloss?: string }
+  /** A character speaks; `gate` says whether the line is within the player's level (speech shows in Ageben either way). */
   | { kind: "speech"; speaker: EntityId; spoken: Spoken; gate: GateCheck }
-  /** Narration in Agebon when `gate.ok`, else in English, the other one tap away. */
+  /** Narration in Ageben when `gate.ok`, else in English, the other one tap away. */
   | { kind: "narration"; english: string; spoken?: Spoken; gate?: GateCheck }
-  /** A near miss: the likely meaning, modelled in Agebon, said by `speaker` (or the narrator). */
+  /** A near miss: the likely meaning, modelled in Ageben, said by `speaker` (or the narrator). */
   | { kind: "recast"; speaker?: EntityId; spoken: Spoken; why?: string; source?: string }
   /** Several near misses: the player picks one. */
   | { kind: "choice"; speaker?: EntityId; options: Spoken[] }
@@ -147,6 +147,6 @@ export type TurnResult = {
   /** Morph gloss of what the player said (or of the recast that ran). */
   gloss?: string;
   constructions?: string[];
-  /** The Agebon that actually ran, when a recast replaced the input. */
+  /** The Ageben that actually ran, when a recast replaced the input. */
   ran?: string;
 };

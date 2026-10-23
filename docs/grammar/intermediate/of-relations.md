@@ -95,7 +95,7 @@ On a noun it is **`gohom`**: *Azozon, across the station, sits.* As a plain noun
 As a plain noun, `zeval` is *a carousel*. **`em`** *near* says only that the person or thing is close, not that it surrounds the landmark.
 
 <!-- cheat-sheet: linking-clauses -->
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hedam` / `gedam`** | position between two landmarks | *between* | `edal` *sandwich* | 🥪: the filling sits between two sides |
 | **`hohom` / `gohom`** | path from one edge of the landmark to the far edge | *across* | `ohol` *bridge* | 🌉: a bridge spans the gap |
@@ -155,7 +155,7 @@ After a join, `gobom` and `gaham` bound the set the join covers, as SHARED words
 `zual gaham bluhuham` is *everyone from the town*. A hook after the join would be a clause extra and place the act instead.
 
 <!-- cheat-sheet: linking-clauses -->
-| Agebon | Use | English | Same root as | Cue |
+| Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hobom` / `gobom`** | constitutive piece | *part of* | `obol` *bone* | 🦴: the piece that holds the body’s shape |
 | **`hadam` / `gadam`** | filling of a vessel | *contents of* | `adal` *jar* | 🫙: the vessel named by what it stores |
@@ -178,7 +178,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agebon | Cue |
+| English | Ageben | Cue |
 |---------|--------|-----|
 | *station* | `awahol` | 🚉 |
 | *house* | `ohehal` | 🏠 |
@@ -191,7 +191,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agebon |
+| English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
@@ -212,7 +212,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vayebel` |
 | *find* | `vumewel` |
 
-#### English → Agebon {#intermediate-english-to-agebon}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Alazun runs exactly like a duck.*
 
@@ -254,7 +254,7 @@ z-Ahelan | [d-teapot | [g-contents | bl-wine]] | v-see
 z-Alazun | v-run | [h-across | bl-station]
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zahelan ual bedavol vowurol el bawahol.`
 
