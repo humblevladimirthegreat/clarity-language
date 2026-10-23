@@ -17,15 +17,15 @@ Intermediate sections assume you have read the beginner sections of every page.
 | | **-l** | **-m** | **-r** |
 |---|--------|--------|--------|
 | **a** | `val` / `xal` / `thal` | `vam` / `xam` / `tham` | `var` / `xar` / `thar` |
-| **o** | `vol` / `xol` / `thol` | `vom` / `xom` / `thom` | `vor` / `xor` / `thor` |
+| **o** | `vel` / `xel` / `thel` | `vem` / `xem` / `them` | `ver` / `xer` / `ther` |
 | **u** | `vul` / `xul` / `thul` | `vum` / `xum` / `thum` | `vur` / `xur` / `thur` |
-| **ao** | `vaol` / `xaol` / `thaol` | `vaom` / `xaom` / `thaom` | none |
+| **ao** | `vael` / `xael` / `thael` | `vaem` / `xaem` / `thaem` | none |
 | **ua** | `vual` / `xual` / `thual` | `vuam` / `xuam` / `thuam` | none |
-| **uo** | `vuol` / `xuol` / `thuol` | `vuom` / `xuom` / `thuom` | none |
-| **e** | `vel` / `xel` / `thel` | `vem` / `xem` / `them` | `ver` / `xer` / `ther` |
-| **ae** | `vael` / `xael` / `thael` | `vaem` / `xaem` / `thaem` | none |
+| **uo** | `vuel` / `xuel` / `thuel` | `vuem` / `xuem` / `thuem` | none |
+| **e** | `vol` / `xol` / `thol` | `vom` / `xom` / `thom` | `vor` / `xor` / `thor` |
+| **ae** | `vaol` / `xaol` / `thaol` | `vaom` / `xaom` / `thaom` | none |
 | **oe** | `voel` / `xoel` / `thoel` | `voem` / `xoem` / `thoem` | none |
-| **ue** | `vuel` / `xuel` / `thuel` | `vuem` / `xuem` / `thuem` | none |
+| **ue** | `vuol` / `xuol` / `thuol` | `vuom` / `xuom` / `thuom` | none |
 
 Stacked vowels take no **-r** under `/v/` or `/x/` (the *none* cells); only a stance join has stacked **-r**, as a fill-ask.
 
@@ -109,7 +109,7 @@ With no subject, a statement with a shared object starts with its verbs (`vugude
 
 A rank join on verb phrases puts the acts in order of priority, so the earlier act is the one preferred: *would rather walk than run*.
 
-> `zuzozen vowurel varuvel vel.`
+> `zuzozen vowurel varuvel vol.`
 >
 > z-Uzozen | [v-walk | v-run | v-rank/more]
 >
@@ -117,15 +117,15 @@ A rank join on verb phrases puts the acts in order of priority, so the earlier a
 
 Nothing is SHARED after a clause (`/x/`) join; each clause carries its own words.
 
-Sequence **`ae`** keeps its [phrase meaning](rank-joins.md#sequence-ae) in both roles: the first item is where you start. Under `/v/` it is one subject doing steps in order; under `/x/` it fences a list of steps whose order is part of the message (a recipe, directions). Standalone **`xael`** says the steps can go in any order.
+Sequence **`ao`** keeps its [phrase meaning](rank-joins.md#sequence-ao) in both roles: the first item is where you start. Under `/v/` it is one subject doing steps in order; under `/x/` it fences a list of steps whose order is part of the message (a recipe, directions). Standalone **`xaol`** says the steps can go in any order.
 
-> `zuzozen vowurel varuvel vael.`
+> `zuzozen vowurel varuvel vaol.`
 >
 > z-Uzozen | [v-walk | v-run | v-in-order]
 >
 > "Uzozen walks, then runs."
 
-**Compare with:** clause **`xan`** ([sequence](/clause-sequence#sequence)) tells what happened next, one step at a time. **`xael`** makes the order part of the claim (a recipe, directions): `A xael B xael C` says these steps go in this order. With rank **ue**, **`xuen`** steps backward: `A xuen B` says B happened before A.
+**Compare with:** clause **`xan`** ([sequence](/clause-sequence#sequence)) tells what happened next, one step at a time. **`xaol`** makes the order part of the claim (a recipe, directions): `A xaol B xaol C` says these steps go in this order. With rank **uo**, **`xuon`** steps backward: `A xuon B` says B happened before A.
 
 A clause join with no clause before it is standalone, like `zal` *nothing*: `xal` means *nothing happened*, and open `xam` adds *as far as I know*.
 
@@ -143,7 +143,7 @@ All the clauses in an `/x/` join share one speech act. Any `/y/` word goes befor
 >
 > "Uzozen walks, and then Olazun runs."
 
-> `zuzozen vowurel xol zolazun varuvel xal zahelan vezuvol.`
+> `zuzozen vowurel xel zolazun varuvel xal zahelan vezuvol.`
 >
 > [[z-Uzozen | v-walk | x-or-exactly-one | z-Olazun | v-run] | x-and | z-Ahelan | v-sleep]
 >
@@ -196,7 +196,7 @@ z-Olazun | [v-run | [d-Ahelan | v-punch] | v-and]
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zolazun varuvel dahelan vanuvul vol.`
+**1.** `zolazun varuvel dahelan vanuvul vel.`
 
 ::: details Show answer
 z-Olazun | [v-run | [d-Ahelan | v-punch] | v-or-exactly-one]

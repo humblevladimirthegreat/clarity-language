@@ -16,9 +16,9 @@ describe("numberStemToSpeech", () => {
   it("maps markers per numbers.md", () => {
     assert.equal(markerToSpeech("+"), "ra");
     assert.equal(markerToSpeech("-"), "ru");
-    assert.equal(markerToSpeech("#"), "re");
-    assert.equal(markerToSpeech("#-"), "rue");
-    assert.equal(markerToSpeech("_"), "ro");
+    assert.equal(markerToSpeech("#"), "ro");
+    assert.equal(markerToSpeech("#-"), "ruo");
+    assert.equal(markerToSpeech("_"), "re");
   });
 
   it("maps digits per numbers.md digit table", () => {
@@ -34,8 +34,8 @@ describe("numberStemToSpeech", () => {
     assert.equal(numberWordToSpeech(parseWord("g+")), "gral");
   });
 
-  it("expands g#-2 to gruedol", () => {
-    assert.equal(numberWordToSpeech(parseWord("g#-2")), "gruedol");
+  it("expands g#-2 to gruodol", () => {
+    assert.equal(numberWordToSpeech(parseWord("g#-2")), "gruodol");
   });
 
   it("expands approximate g~+3 to gragem", () => {
@@ -69,12 +69,12 @@ describe("numberStemToSpeech", () => {
   it("expands digit-string d_555,123,4567", () => {
     assert.equal(
       numberWordToSpeech(parseWord("d_555,123,4567")),
-      "drozazazathebadogethehuzavorel",
+      "drezazazathebadogethehuzavorel",
     );
   });
 
   it("expands h_15,30 to hrobazathegemol", () => {
-    assert.equal(numberWordToSpeech(parseWord("h_15,30")), "hrobazathegemol");
+    assert.equal(numberWordToSpeech(parseWord("h_15,30")), "hrebazathegemol");
   });
 
   it("uses the between groups of a negative scalar", () => {
@@ -100,12 +100,12 @@ describe("numberStemToSpeech", () => {
   });
 
   it("spells letter codes by letter name, with a break before a vowel", () => {
-    assert.equal(numberWordToSpeech(parseWord("z_b12")), "zrobubadol");
-    assert.equal(numberWordToSpeech(parseWord("z@_nl")), "zronulan");
-    assert.equal(numberWordToSpeech(parseWord("z_vba")), "zrovebu'al");
-    assert.equal(numberWordToSpeech(parseWord("z_thw")), "zrothowal");
-    assert.equal(numberWordToSpeech(parseWord("z_e1")), "zro'ebal");
-    assert.equal(numberWordToSpeech(parseWord("z_2,1")), "zrodothebal");
+    assert.equal(numberWordToSpeech(parseWord("z_b12")), "zrebubadol");
+    assert.equal(numberWordToSpeech(parseWord("z@_nl")), "zrenulan");
+    assert.equal(numberWordToSpeech(parseWord("z_vba")), "zrevebu'al");
+    assert.equal(numberWordToSpeech(parseWord("z_thw")), "zrethowal");
+    assert.equal(numberWordToSpeech(parseWord("z_e1")), "zre'ebal");
+    assert.equal(numberWordToSpeech(parseWord("z_2,1")), "zredothebal");
   });
 
   it("round-trips speech-shaped gragel", () => {
@@ -173,7 +173,7 @@ describe("digitless exponent with power digits", () => {
   it("speaks bare OoM bands per numbers.md", () => {
     assert.equal(numberWordToSpeech(parseWord("g+e0")), "grawamol");
     assert.equal(numberWordToSpeech(parseWord("g+e3")), "grawagel");
-    assert.equal(numberWordToSpeech(parseWord("g#e-2")), "grewudol");
+    assert.equal(numberWordToSpeech(parseWord("g#e-2")), "growudol");
   });
 });
 

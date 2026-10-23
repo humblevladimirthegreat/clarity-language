@@ -124,9 +124,9 @@ describe("classify", () => {
   });
 
   it("restrictor on last-first rank huel, hem, and /w/ wuel", () => {
-    expectReading("huel", "restrictor");
-    expectReading("huem", "restrictor");
-    expectReading("wuel", "restrictor");
+    expectReading("huol", "restrictor");
+    expectReading("huom", "restrictor");
+    expectReading("wuol", "restrictor");
   });
 
   it("join-relation overlay beats restrictor shape for han", () => {

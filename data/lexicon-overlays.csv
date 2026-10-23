@@ -133,33 +133,33 @@ ewem,w,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),a machine runs on mecha
 an,v,,join_act,includes,join-act includes or adds object,set join a+n as verb; includes adds this object to the set,join-across-roles.md#join-act-verbs
 an,g,,join_relation,including,join-relation including (adjective + argument),set join a+n on /g/; including frames host with argument,join-across-roles.md#join-relations
 an,h,,join_relation,including,join-relation with or including (adverb + argument),set join a+n on /h/; with frames event alongside argument,join-across-roles.md#join-relations
-on,v,,join_act,choose,join-act chooses sole object,set join o+n as verb; chooses this as the one pick,join-across-roles.md#join-act-verbs
-on,g,,join_relation,exclusive-for,join-relation exclusive for (sole pick adjective),set join o+n on /g/; exclusive for names the only pick,join-across-roles.md#join-relations
-on,h,,join_relation,exclusive-for,join-relation exclusively for (adverb),set join o+n on /h/; exclusively for as the one choice,join-across-roles.md#join-relations
-aon,v,,join_act,picks,join-act picks with more picks open,set join ao+n as verb; picks one while more may follow,join-across-roles.md#join-act-verbs
-aon,g,,join_relation,open-to,join-relation open to (adjective),set join ao+n on /g/; open to admits among options,join-across-roles.md#join-relations
-aon,h,,join_relation,open-to,join-relation among options (adverb),set join ao+n on /h/; among options keeps picks open,join-across-roles.md#join-relations
+on,v,,join_act,prioritizes,join-act prioritizes object,rank join o+n as verb; prioritizes puts this first,join-across-roles.md#join-act-verbs
+on,g,,join_relation,prioritizing,join-relation prioritizing (adjective),rank join o+n on /g/; prioritizing heads by argument,join-across-roles.md#join-relations
+on,h,,join_relation,prioritizing,join-relation prioritizing (adverb),rank join o+n on /h/; prioritizing puts argument first,join-across-roles.md#join-relations
+aon,v,,join_act,starts-with,join-act starts with object,sequence ao+n as verb; starts with puts the object first in order,join-across-roles.md#join-act-verbs
+aon,g,,join_relation,starting-with,join-relation starting with (adjective),sequence ao+n on /g/; starting with puts argument first in order,join-across-roles.md#join-relations
+aon,h,,join_relation,starting-with,join-relation starting with (adverb),sequence ao+n on /h/; starting with puts argument first in order,join-across-roles.md#join-relations
 un,v,,join_act,denies,join-act denies or refuses object,negation u+n as verb; denies refuses the object,join-across-roles.md#join-act-verbs
 un,g,,join_relation,against,join-relation against or anti- (adjective),negation u+n on /g/; against refuses the argument,join-across-roles.md#join-relations
 un,h,,join_relation,against,join-relation refusing (adverb),negation u+n on /h/; refusing blocks the argument,join-across-roles.md#join-relations
 uan,v,,join_act,excludes,join-act excludes object,counteradditive ua+n as verb; excludes bars from the set,join-across-roles.md#join-act-verbs
 uan,g,,join_relation,without,join-relation without or excluding (adjective),counteradditive ua+n on /g/; without excludes argument,join-across-roles.md#join-relations
 uan,h,,join_relation,without,join-relation excluding (adverb),counteradditive ua+n on /h/; excluding leaves argument out,join-across-roles.md#join-relations
-uon,v,,join_act,bars,join-act bars anything but object,counterchoice uo+n as verb; anything but leaves the rest open,join-across-roles.md#join-act-verbs
-uon,g,,join_relation,anything-but,join-relation open to anything but (adjective),counterchoice uo+n on /g/; anything but bars only this,join-across-roles.md#join-relations
-uon,h,,join_relation,anything-but,join-relation barring anything but (adverb),counterchoice uo+n on /h/; barring leaves rest free,join-across-roles.md#join-relations
-en,v,,join_act,prioritizes,join-act prioritizes object,rank join e+n as verb; prioritizes puts this first,join-across-roles.md#join-act-verbs
-en,g,,join_relation,prioritizing,join-relation prioritizing (adjective),rank join e+n on /g/; prioritizing heads by argument,join-across-roles.md#join-relations
-en,h,,join_relation,prioritizing,join-relation prioritizing (adverb),rank join e+n on /h/; prioritizing puts argument first,join-across-roles.md#join-relations
-aen,v,,join_act,starts-with,join-act starts with object,sequence ae+n as verb; starts with puts the object first in order,join-across-roles.md#join-act-verbs
-aen,g,,join_relation,starting-with,join-relation starting with (adjective),sequence ae+n on /g/; starting with puts argument first in order,join-across-roles.md#join-relations
-aen,h,,join_relation,starting-with,join-relation starting with (adverb),sequence ae+n on /h/; starting with puts argument first in order,join-across-roles.md#join-relations
+uon,v,,join_act,deprioritizes,join-act deprioritizes object,counterrank uo+n as verb; deprioritizes puts this last,join-across-roles.md#join-act-verbs
+uon,g,,join_relation,deprioritizing,join-relation deprioritizing (adjective),counterrank uo+n on /g/; deprioritizing trails argument,join-across-roles.md#join-relations
+uon,h,,join_relation,deprioritizing,join-relation deprioritizing (adverb),counterrank uo+n on /h/; deprioritizing puts argument last,join-across-roles.md#join-relations
+en,v,,join_act,choose,join-act chooses sole object,choice join e+n as verb; chooses this as the one pick,join-across-roles.md#join-act-verbs
+en,g,,join_relation,exclusive-for,join-relation exclusive for (sole pick adjective),choice join e+n on /g/; exclusive for names the only pick,join-across-roles.md#join-relations
+en,h,,join_relation,exclusive-for,join-relation exclusively for (adverb),choice join e+n on /h/; exclusively for as the one choice,join-across-roles.md#join-relations
+aen,v,,join_act,picks,join-act picks with more picks open,set join ae+n as verb; picks one while more may follow,join-across-roles.md#join-act-verbs
+aen,g,,join_relation,open-to,join-relation open to (adjective),set join ae+n on /g/; open to admits among options,join-across-roles.md#join-relations
+aen,h,,join_relation,open-to,join-relation among options (adverb),set join ae+n on /h/; among options keeps picks open,join-across-roles.md#join-relations
 oen,v,,join_act,equates,join-act equates or ties objects,equative oe+n as verb; equates ties candidates together,join-across-roles.md#join-act-verbs
 oen,g,,join_relation,on-a-par,join-relation on a par with (adjective),equative oe+n on /g/; on a par equates with argument,join-across-roles.md#join-relations
 oen,h,,join_relation,on-a-par,join-relation equating or tying (adverb),equative oe+n on /h/; equating ties to argument,join-across-roles.md#join-relations
-uen,v,,join_act,deprioritizes,join-act deprioritizes object,counterrank ue+n as verb; deprioritizes puts this last,join-across-roles.md#join-act-verbs
-uen,g,,join_relation,deprioritizing,join-relation deprioritizing (adjective),counterrank ue+n on /g/; deprioritizing trails argument,join-across-roles.md#join-relations
-uen,h,,join_relation,deprioritizing,join-relation deprioritizing (adverb),counterrank ue+n on /h/; deprioritizing puts argument last,join-across-roles.md#join-relations
+uen,v,,join_act,bars,join-act bars anything but object,counterchoice ue+n as verb; anything but leaves the rest open,join-across-roles.md#join-act-verbs
+uen,g,,join_relation,anything-but,join-relation open to anything but (adjective),counterchoice ue+n on /g/; anything but bars only this,join-across-roles.md#join-relations
+uen,h,,join_relation,anything-but,join-relation barring anything but (adverb),counterchoice ue+n on /h/; barring leaves rest free,join-across-roles.md#join-relations
 edam,h,🥪,locative,between,locative between (two landmarks),sandwich sits in the layer between sides; between takes a join of two landmarks,of-relations.md#locative-relations
 edam,g,🥪,locative,between,locative between (two landmarks),sandwich sits in the layer between sides; between takes a join of two landmarks,of-relations.md#locative-relations
 ohem,h,🌉,locative,across,locative across (edge to far edge of one landmark),bridge spans the gap; across is reaching from one side to the other,of-relations.md#locative-relations

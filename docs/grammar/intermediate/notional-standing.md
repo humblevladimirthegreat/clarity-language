@@ -185,15 +185,15 @@ To reason from a premise you do not grant, suppose it with **`theyur`**. The fra
 
 ### Channels as comparison bars {#channel-bars}
 
-English *sleepier than usual* and *bigger than it looks* compare against an expectation. Put the channel right before the rank word (**`zel`** / **`zuel`** / **`zoel`**) as the comparison's [bar](comparative-arity.md#bars). The bar is then **what that channel led you to expect**, not how you know the claim. After the comparison, the same word is the claim's channel again.
+English *sleepier than usual* and *bigger than it looks* compare against an expectation. Put the channel right before the rank word (**`zol`** / **`zuol`** / **`zoel`**) as the comparison's [bar](comparative-arity.md#bars). The bar is then **what that channel led you to expect**, not how you know the claim. After the comparison, the same word is the claim's channel again.
 
-> `zuzozen thubem zel guzemol.`
+> `zuzozen thubem zol guzemol.`
 >
 > [z-Uzozen | th-PATTERN | z-rank/more | g-sleepy]
 >
 > "Uzozen is sleepier than usual."
 
-> `zuzozen zel guzemol thubem.`
+> `zuzozen zol guzemol thubem.`
 >
 > [z-Uzozen | z-rank/more | g-sleepy] | th-PATTERN
 >
@@ -214,7 +214,7 @@ MAY and MIRATIVE give no expected value to compare against, so neither can be a 
 
 A [holder](holder.md#holder) on a comparison bar names **whose expectation** you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
 
-> `zuzozen thabomolazun zel guzemol.`
+> `zuzozen thabomolazun zol guzemol.`
 >
 > [z-Uzozen | th-INTUITION-Olazun | z-rank/more | g-sleepy]
 >
@@ -317,7 +317,7 @@ z-rabbit | th-NOTIONAL | v-walk
 **4.** *The rabbit is sleepier than usual.*
 
 ::: details Show answer
-`zerozol thubem zel guzemol.`
+`zerozol thubem zol guzemol.`
 
 [z-rabbit | th-PATTERN | z-rank/more | g-sleepy]
 :::
@@ -332,7 +332,7 @@ z-Ahelan | v-sing | [contrary-to | th-REPORTED]
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zolazun helam zel gegulol.`
+**1.** `zolazun helam zol gegulol.`
 
 ::: details Show answer
 [z-Olazun | h-FORMER | z-rank/more | g-gray]

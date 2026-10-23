@@ -293,7 +293,7 @@ describe("unhostedJoins", () => {
     assert.deepEqual(found("yol hewom blar zuzozen vowurel."), []);
     assert.deepEqual(found("yol ol bar zuzozen vowurel."), []);
     assert.deepEqual(found("zuzozen hedurem bolazun varal."), []);
-    assert.deepEqual(found("zuzozen vezuyel bolazun thagem bel hral."), []);
+    assert.deepEqual(found("zuzozen vezuyel bolazun thagem bol hral."), []);
     assert.deepEqual(found("yol bar zuzozen hedurem varal."), []);
   });
 });

@@ -31,27 +31,27 @@ describe("source and TSV spans", () => {
   it("rewrites a parse-test literal the same way as a docs span", () => {
     const source = readFileSync(fixtureTs, "utf8");
     const { examples } = collectFileSpans(fixtureTs, source, tables);
-    const sentence = examples.find((e) => e.text.includes("zel"));
+    const sentence = examples.find((e) => e.text.includes("zol"));
     assert.ok(sentence);
-    const hits = sentence.words.flatMap((w, i) => (w.word.raw === "zel" ? [i] : []));
+    const hits = sentence.words.flatMap((w, i) => (w.word.raw === "zol" ? [i] : []));
     assert.ok(hits.length);
     const rewritten = rewriteExample(sentence, hits, parseMap("series=e:o,o:e"));
     assert.deepEqual(
       rewritten.replacements.map((r) => [r.from, r.to]),
-      [["zel", "zol"]],
+      [["zol", "zel"]],
     );
     const out = rewritePlainSpans(source, [{ example: sentence, nextSource: rewritten.nextSource }], tables);
     assert.equal(out.parseErrors.length, 0);
-    assert.match(out.text, /zuzozen zol vowurel\./);
+    assert.match(out.text, /zuzozen zel vowurel\./);
     assert.equal(out.text.includes(sentence.source), false);
   });
 
   it("rewrites a TSV cell", () => {
     const text = readFileSync(fixtureTsv, "utf8");
     const { examples } = collectFileSpans(fixtureTsv, text, tables);
-    const cell = examples.find((e) => e.text.includes("zel"));
+    const cell = examples.find((e) => e.text.includes("zol"));
     assert.ok(cell);
-    const hits = cell.words.flatMap((w, i) => (w.word.raw === "zel" ? [i] : []));
+    const hits = cell.words.flatMap((w, i) => (w.word.raw === "zol" ? [i] : []));
     const rewritten = rewriteExample(cell, hits, parseMap("series=e:o"));
     const out = rewritePlainSpans(text, [{ example: cell, nextSource: rewritten.nextSource }], tables);
     assert.match(out.text, /zuzozen zol vowurel\./);

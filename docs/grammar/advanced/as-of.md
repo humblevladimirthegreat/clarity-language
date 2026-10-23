@@ -56,7 +56,7 @@ Once whose-now is set, these count from it:
 
 [MAY](/knowing#may), [CAUSE](/iff-fault#cause), and every other stance still count from speech-now. Evidentials, apart from LIVE at the snapshot, still say how *you* know at speech-now.
 
-> `zuzozen zolazun zel wenam b_#22,7 gamahum.`
+> `zuzozen zolazun zol wenam b_#22,7 gamahum.`
 >
 > [z-Uzozen | z-Olazun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 >
@@ -215,7 +215,7 @@ z-book | [g-as-of.ledger | bl-_22,7]
 **3.** *As of 22 July, Uzozen is more challenging than Olazun.*
 
 ::: details Show answer
-`zuzozen zolazun zel wenam b_#22,7 gamahum.`
+`zuzozen zolazun zol wenam b_#22,7 gamahum.`
 
 [z-Uzozen | z-Olazun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 :::

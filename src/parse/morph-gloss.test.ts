@@ -50,29 +50,29 @@ describe("morphGlossLine — hooked joins (hooked-joins.md#hooked-joins)", () =>
 describe("morphGlossLine — clause joins go between clauses", () => {
   it("groups a switched join over the list before it", () => {
     expectLine(
-      "zuzozen vowurel xol zolazun varuvel xal zahelan vezuvol.",
+      "zuzozen vowurel xel zolazun varuvel xal zahelan vezuvol.",
       "[[z-Uzozen | v-walk | x-or-exactly-one | z-Olazun | v-run] | x-and | z-Ahelan | v-sleep]",
     );
   });
   it("reads a sentence-initial join as linking the whole next sentence", () => {
     expectLine(
-      "zuzozen vowurel. xan zolazun varuvel xol zahelan vezuvol.",
+      "zuzozen vowurel. xan zolazun varuvel xel zahelan vezuvol.",
       "z-Uzozen | v-walk . x-and-then | [z-Olazun | v-run | x-or-exactly-one | z-Ahelan | v-sleep]",
     );
   });
   it("takes a standalone join as a stand-in clause item", () => {
-    expectLine("zuzozen vowurel xol xal.", "[z-Uzozen | v-walk | x-or-exactly-one | x-none]");
+    expectLine("zuzozen vowurel xel xal.", "[z-Uzozen | v-walk | x-or-exactly-one | x-none]");
     expectLine("xual ul zuzozen vowurel.", "x-everything | except | z-Uzozen | v-walk");
   });
   it("glosses a resume of a resume as the original referent", () => {
     expectLine(
-      "zuzozen thagel vowurel xon zuzozer vezuyol xon zuzozer vezuvol.",
+      "zuzozen thagel vowurel xen zuzozer vezuyol xen zuzozer vezuvol.",
       "[z-Uzozen | th-plan-atlas | v-walk | x-or-else | z-←Uzozen | v-sing | x-or-else | z-←Uzozen | v-sleep]",
     );
   });
   it("glosses the sequence fallback after an attempt", () => {
     expectLine(
-      "zuzozen howar vowurel xon zuzozer vezuyol.",
+      "zuzozen howar vowurel xen zuzozer vezuyol.",
       "[z-Uzozen | h-ATTEMPT-trial | v-walk | x-or-else | z-←Uzozen | v-sing]",
     );
   });
@@ -83,7 +83,7 @@ describe("morphGlossLine — SHARED only where it can describe the join", () => 
     expectLine("zuzozen zolazun zal huhunem vowurel.", "[z-Uzozen | z-Olazun | z-and] | h-intensity | v-walk");
   });
   it("keeps an /h/ after a rank noun join as the scale", () => {
-    expectLine("zuzozen zolazun zel huhunem vowurel.", "[z-Uzozen | z-Olazun | z-rank/more | h-intensity] | v-walk");
+    expectLine("zuzozen zolazun zol huhunem vowurel.", "[z-Uzozen | z-Olazun | z-rank/more | h-intensity] | v-walk");
   });
   it("reads a /ɡ/ after a /ɡ/ join as the next item, so adjective lists nest", () => {
     expectLine(
@@ -101,7 +101,7 @@ describe("morphGlossLine — SHARED only where it can describe the join", () => 
   });
   it("keeps al literal when an endpoint has no digits or the kinds differ", () => {
     expectLine("zral al zrazal.", "z-more-than-one | including | z-five");
-    expectLine("zragel al zredol.", "z-three | including | z-2nd");
+    expectLine("zragel al zrodol.", "z-three | including | z-2nd");
   });
   it("reads stacked in-clause hooks as spans on any line", () => {
     expectLine("zaduhel oel zaduhel.", "z-down | through | z-down");
@@ -142,16 +142,16 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zwazavuvul", "z-episode-agent-fight");
     expectLine("zwazavuvum", "z-episode-agent-struggle");
     expectLine("zwabezuyel", "z-episode-recipient-speech");
-    expectLine("xrewul", "x-starting-with");
+    expectLine("xrowul", "x-starting-with");
   });
 
   it("joins, revisers, numbers", () => {
     expectLine("zam", "z-and.open");
     expectLine("zal", "z-and");
     expectLine("vam", "v-and.open");
-    expectLine("dol", "d-or-exactly-one");
-    expectLine("zol", "z-or-exactly-one");
-    expectLine("zel", "z-rank/more");
+    expectLine("del", "d-or-exactly-one");
+    expectLine("zel", "z-or-exactly-one");
+    expectLine("zol", "z-rank/more");
     expectLine("zoel", "z-equal-rank");
     expectLine("zagozolx g=+ vuhohol.", "[z-cat-x | g-some-amount] | v-sit");
     expectLine("yol zagozolx g=+ vuhohol.", "y-question | [z-cat-x | g-how-many] | v-sit");
@@ -179,7 +179,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("yol zahelan vowurel har.", "y-question | z-Ahelan | v-walk | h-when");
     expectLine("zuzozen vowurel herulal hal", "z-Uzozen | v-walk | h-rain | h-only-when");
     expectLine("hual", "h-always");
-    expectLine("von", "v-choose");
+    expectLine("ven", "v-choose");
     expectLine("gragel", "g-three");
     expectLine("g+3", "g-three.short");
     expectLine("g+12", "g-twelve");
@@ -187,7 +187,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("g+3 g+12", "g-three | g-twelve");
     expectLine("gral", "g-more-than-one");
     expectLine("g+", "g-more-than-one.short");
-    expectLine("gredol", "g-2nd");
+    expectLine("grodol", "g-2nd");
   });
 
   it("glosses a tag pronoun by its letter name, never the referent (glosses.md § Anaphors)", () => {
@@ -277,7 +277,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("numbered alternative + unmet pleasure", () => {
     expectLine(
-      "xrewul zabevam grebal. zuwonx thodothur.",
+      "xrowul zabevam grobal. zuwonx thodothur.",
       "x-starting-with | [z-problem | g-1st] . z-speaker-x | th-pleasure-unmet-passing",
     );
   });
@@ -325,10 +325,10 @@ describe("morphGlossLine — restrictor -r vs -l", () => {
     expectLine("zolazun varuvel har.", "z-Olazun | v-run | h-sometimes");
     expectLine("yol zahelan vowurel har.", "y-question | z-Ahelan | v-walk | h-when");
   });
-  it("her is the first-ranked occasion; under a question it asks when is best (restrictors.md)", () => {
-    expectLine("zuzozen vowurel her.", "z-Uzozen | v-walk | h-preferred-time");
-    expectLine("yol zayan vowurel her.", "y-question | z-interlocutors | v-walk | h-when-best");
-    expectLine("yol zayan vowurel herulal hanurul her.", "y-question | z-interlocutors | v-walk | h-rain | h-night | h-when-best");
+  it("hor is the first-ranked occasion; under a question it asks when is best (restrictors.md)", () => {
+    expectLine("zuzozen vowurel hor.", "z-Uzozen | v-walk | h-preferred-time");
+    expectLine("yol zayan vowurel hor.", "y-question | z-interlocutors | v-walk | h-when-best");
+    expectLine("yol zayan vowurel herulal hanurul hor.", "y-question | z-interlocutors | v-walk | h-rain | h-night | h-when-best");
   });
 });
 
@@ -347,7 +347,7 @@ describe("morphGlossLine — tags, xuen, hewol, pointer anchors", () => {
     expectLine("zuzozen vowurel. yol yuel.", "z-Uzozen | v-walk . y-question | y-no");
   });
   it("xuen tells a sequence last first (clause-sequence.md#sequence)", () => {
-    expectLine("zuzozen vuhohol xuen zuzozer vowurel.", "[z-Uzozen | v-sit | x-and-before-that | z-←Uzozen | v-walk]");
+    expectLine("zuzozen vuhohol xuon zuzozer vowurel.", "[z-Uzozen | v-sit | x-and-before-that | z-←Uzozen | v-walk]");
   });
   it("hewol / gewol are exactly like (of-relations.md#exactly-like)", () => {
     expectLine("zuzozen hewol bludozal vowurel.", "z-Uzozen | [h-exactly-like | bl-duck] | v-walk");

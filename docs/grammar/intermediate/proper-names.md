@@ -104,7 +104,7 @@ A store, title, or handle can be several words. Put **-n** on the **hook**, **jo
 | Package | Where **-n** sits | Inner words |
 |---------|-------------------|-------------|
 | hook | the hook (`on`, extra-noun **-n**, …) | sides keep **-l** / **-m** / **-r**, or **-n** if that side is a name |
-| join | the join (`zon`, …) | members keep their usual endings |
+| join | the join (`zen`, …) | members keep their usual endings |
 | [span](/spans#when-required) | the fence (`@` / spoken **-n**) | interior tokens keep their usual endings |
 
 A one-word name, a hyphenated name with mid-word **`x`**, and each part of a full name still end the **content word** in **-n**.

@@ -145,7 +145,7 @@ Sake words cannot follow **`uem`**: to say an act goes against someone's interes
 
 ### Enough and too (sake bars) {#sake-bars}
 
-English *enough* and *too much* compare an amount with **what a need requires**. Write a met sake word on `/th/` as the [bar](comparative-arity.md#bars) right before a rank join: it stands for what that sake needs, and the rank join compares the amount with it. The equal-rank join **`zoel`** is *enough*. Rank **`zel`** is *too much*, and **`zuel`** is *not enough*. Use the unspecified sake **`uda`** when you do not name which sake.
+English *enough* and *too much* compare an amount with **what a need requires**. Write a met sake word on `/th/` as the [bar](comparative-arity.md#bars) right before a rank join: it stands for what that sake needs, and the rank join compares the amount with it. The equal-rank join **`zoel`** is *enough*. Rank **`zol`** is *too much*, and **`zuol`** is *not enough*. Use the unspecified sake **`uda`** when you do not name which sake.
 
 > `zududal thudatham zoel gral.`
 >
@@ -153,13 +153,13 @@ English *enough* and *too much* compare an amount with **what a need requires**.
 >
 > "There is enough tea."
 
-> `zududal thudatham zel gral.`
+> `zududal thudatham zol gral.`
 >
 > [z-tea | th-sake-met-any-term | z-rank/more | g-amount]
 >
 > "There is too much tea."
 
-> `zududal thudatham zuel gral.`
+> `zududal thudatham zuol gral.`
 >
 > [z-tea | th-sake-met-any-term | z-rank/less | g-amount]
 >
@@ -175,13 +175,13 @@ The bar keeps its [time-horizon ending](/sakes#time-horizon-endings-on-met), whi
 
 Name a sake to say which need sets the limit. With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. To say **whose** stake it is, put that person in a `bl-` word right after the bar.
 
-> `zududal thobatham zel gohamul.`
+> `zududal thobatham zol gohamul.`
 >
 > [z-tea | th-physical-met-any-term | z-rank/more | g-hot]
 >
 > "The tea is too hot to be safe."
 
-> `zududal thobatham blolazun zel gohamul.`
+> `zududal thobatham blolazun zol gohamul.`
 >
 > [z-tea | [th-physical-met-any-term | bl-Olazun] | z-rank/more | g-hot]
 >
@@ -189,7 +189,7 @@ Name a sake to say which need sets the limit. With a quality as the scale, the s
 
 On the [time scale](comparative-arity.md#time-scale), a sake bar is *too late* and *too early*:
 
-> `zuzozen thudatham zuel bral vovurel.`
+> `zuzozen thudatham zuol bral vovurel.`
 >
 > [z-Uzozen | th-sake-met-any-term | z-rank/less | b-later] | v-arrival
 >
@@ -198,12 +198,12 @@ On the [time scale](comparative-arity.md#time-scale), a sake bar is *too late* a
 | Agebon | Use | English |
 |--------|-----|---------|
 | met sake bar + **`zoel`** | reaches what the sake needs | *enough* / *ADJ enough* |
-| met sake bar + **`zel`** | past what the sake needs | *too much* / *too ADJ* / *too late* |
-| met sake bar + **`zuel`** | short of what the sake needs | *not enough* / *too early* |
+| met sake bar + **`zol`** | past what the sake needs | *too much* / *too ADJ* / *too late* |
+| met sake bar + **`zuol`** | short of what the sake needs | *not enough* / *too early* |
 | bar ending **-l** / **-m** / **-r** | how long the payoff has to last | *enough to last* / *enough* / *enough for now* |
 | `bl-` word right after the bar | whose stake | *too hot for Olazun* |
 
-**Compare with:** the same met word after the fence is about the whole claim: `zududal zel gohamul thobatham` is *the tea is the hottest, and that serves my health*.
+**Compare with:** the same met word after the fence is about the whole claim: `zududal zol gohamul thobatham` is *the tea is the hottest, and that serves my health*.
 
 ### Practice {#intermediate-practice}
 
@@ -264,7 +264,7 @@ z-speaker | v-sit | th-purpose-motive-lasting
 **4.** *The candle is too heavy to be safe.*
 
 ::: details Show answer
-`zuwewel thobatham zel garolom.`
+`zuwewel thobatham zol garolom.`
 
 [z-candle | th-physical-met-any-term | z-rank/more | g-heavy]
 :::

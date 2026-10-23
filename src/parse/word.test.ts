@@ -232,21 +232,21 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
   });
 
   it("requires the separator the between spoken number groups (numbers.md § Group separator)", () => {
-    const word = parseOk("hrobazathegemol");
+    const word = parseOk("hrebazathegemol");
     assert.equal(word.family.kind === "number" && word.family.stem.groups.length, 2);
     assert.throws(() => parseWord("hrovothamol"));
     assert.throws(() => parseWord("grabathugel"));
-    const merged = parseOk("hrobazagemol");
+    const merged = parseOk("hrebazagemol");
     assert.equal(merged.family.kind === "number" && merged.family.stem.groups.length, 1);
   });
 
   it("parses letter codes on _ in writing and speech (numbers-applied.md § Letter codes)", () => {
     for (const [writing, speech, fields] of [
-      ["z_b12", "zrobubadol", [{ code: "b12" }]],
-      ["z_4b", "zrohubul", [{ code: "4b" }]],
-      ["z_thw", "zrothowal", [{ code: "thw" }]],
-      ["z_e1", "zro'ebal", [{ code: "e1" }]],
-      ["z_2,1", "zrodothebal", [{ mantissa: "2" }, { mantissa: "1" }]],
+      ["z_b12", "zrebubadol", [{ code: "b12" }]],
+      ["z_4b", "zrehubul", [{ code: "4b" }]],
+      ["z_thw", "zrethowal", [{ code: "thw" }]],
+      ["z_e1", "zre'ebal", [{ code: "e1" }]],
+      ["z_2,1", "zredothebal", [{ mantissa: "2" }, { mantissa: "1" }]],
     ] as const) {
       for (const raw of [writing, speech]) {
         const word = parseOk(raw);
@@ -256,18 +256,18 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     }
     const handle = parseOk("z@_nl");
     assert.equal(handle.ending, "n");
-    assert.equal(parseOk("zronulan").ending, "n");
+    assert.equal(parseOk("zrenulan").ending, "n");
   });
 
   it("keeps the date stack roe apart from a code that starts with a vowel", () => {
     const date = parseOk("zroebal");
     assert.equal(date.family.kind === "number" && date.family.stem.calendarOrdinal, true);
-    const code = parseOk("zro'ebal");
+    const code = parseOk("zre'ebal");
     assert.equal(code.family.kind === "number" && !!code.family.stem.calendarOrdinal, false);
   });
 
   it("rejects exponents, percent, and x in a code", () => {
-    for (const raw of ["z_5%", "zrozayol", "zrowugel", "z_1xb"]) assert.throws(() => parseWord(raw), raw);
+    for (const raw of ["z_5%", "zrezayol", "zrewugel", "z_1xb"]) assert.throws(() => parseWord(raw), raw);
   });
 
   it("parses stance numbers under th (thrabamol = th+10)", () => {

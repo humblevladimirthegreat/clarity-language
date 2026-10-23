@@ -18,7 +18,7 @@
  * | `ham` listed | `h-when.open` | open listed; not exclusive |
  * | `an` in-clause | `including.named` | proper-name phrase |
  * | `har` statement / fill-ask | `h-sometimes` / `h-when` | `-r` is unspecified occasion, not `hal` |
- * | `her` statement / fill-ask | `h-preferred-time` / `h-when-best` | `-r` on rank **e**: the first-ranked occasion |
+ * | `hor` statement / fill-ask | `h-preferred-time` / `h-when-best` | `-r` on rank **o**: the first-ranked occasion |
  * | `hual` bare | `h-always` | |
  * | `themabam` | `th-plan-itinerary` | overlay grain `-m` |
  * | mid-word `x` | always `-x-` segments | never a fused English name |
@@ -107,35 +107,35 @@ const markedPronoun = closedDerived(
 /** Standalone readings ([joins.md § Vowels and endings](../../docs/grammar/joins.md#join-type-vowel-series)). */
 const JOIN_JOB_STANDALONE: Record<string, string> = {
   a: "none",
-  o: "no-options",
+  e: "no-options",
   u: "no",
   ua: "everything",
 };
 
 const JOIN_ACT: Record<string, string> = {
   a: "includes",
-  o: "choose",
-  ao: "picks",
+  e: "choose",
+  ae: "picks",
   u: "denies",
   ua: "excludes",
-  uo: "bars",
-  e: "prioritizes",
-  ae: "starts-with",
+  ue: "bars",
+  o: "prioritizes",
+  ao: "starts-with",
   oe: "equates",
-  ue: "deprioritizes",
+  uo: "deprioritizes",
 };
 
 const JOIN_RELATION: Record<string, string> = {
   a: "including",
-  o: "exclusive-for",
-  ao: "open-to",
+  e: "exclusive-for",
+  ae: "open-to",
   u: "against",
   ua: "without",
-  uo: "anything-but",
-  e: "prioritizing",
-  ae: "starting-with",
+  ue: "anything-but",
+  o: "prioritizing",
+  ao: "starting-with",
   oe: "on-a-par",
-  ue: "deprioritizing",
+  uo: "deprioritizing",
 };
 
 const HOOK_JOB: Record<string, string> = {
@@ -1214,24 +1214,24 @@ function fenceJoinLabel(
       if (pos === "th" && series === "a") return "why";
       if (pos === "th" && series === "u") return "why-else";
       if (series === "u") return "wh-else";
-      if (series === "o") return "any";
-      if (series === "e") return "which-rank";
+      if (series === "e") return "any";
+      if (series === "o") return "which-rank";
       return "wh";
     }
     if (series === "u") return "something-else";
-    if (series === "o") return "anything";
-    if (series === "e") return "whatever-ranks";
+    if (series === "e") return "anything";
+    if (series === "o") return "whatever-ranks";
     return "something";
   }
 
   if (ending === "n" && pos === "x") {
-    const sequence: Record<string, string> = { a: "and-then", o: "or-else", u: "and-then-not", ao: "and-or-else", ue: "and-before-that" };
+    const sequence: Record<string, string> = { a: "and-then", e: "or-else", u: "and-then-not", ae: "and-or-else", uo: "and-before-that" };
     if (sequence[series]) return sequence[series];
   }
 
   if (ctx.kindReference && series === "ua" && ending === "n") return "the-kind";
-  // Open **o** leaves the pick optional, so it is no longer *exactly one*.
-  if (series === "o" && ending === "m") return "or.open";
+  // Open **e** leaves the pick optional, so it is no longer *exactly one*.
+  if (series === "e" && ending === "m") return "or.open";
   const job = (ctx.standaloneJoin ? JOIN_JOB_STANDALONE[series] : undefined) ?? JOIN_SERIES[series]?.job ?? series;
   if (ending === "m") return `${job}.open`;
   if (ending === "n") return `${job}.named`;
@@ -1246,9 +1246,9 @@ function restrictorLabel(
 ): string {
   if (ending === "r") {
     if (series === "a") return fillAsk ? "when" : "sometimes";
-    if (series === "o") return "anytime";
+    if (series === "e") return "anytime";
     if (series === "u") return "some-other-time";
-    if (series === "e") return fillAsk ? "when-best" : "preferred-time";
+    if (series === "o") return fillAsk ? "when-best" : "preferred-time";
     if (series === "oe") return "equally-often";
     return `${series}-r`;
   }
@@ -1260,13 +1260,13 @@ function restrictorLabel(
   }
   if (series === "ua") return `${listed ? "always-except" : "always"}${open}`;
   if (series === "u") return `not-when${open}`;
-  if (series === "o") return `when-one${open}`;
-  if (series === "e") return `when-ranked${open}`;
+  if (series === "e") return `when-one${open}`;
+  if (series === "o") return `when-ranked${open}`;
   if (series === "oe") return `equally-when${open}`;
-  if (series === "ao") return `when-any-of${open}`;
-  if (series === "uo") return `anytime-except${open}`;
-  if (series === "ae") return `when-in-order${open}`;
-  if (series === "ue") return `when-last${open}`;
+  if (series === "ae") return `when-any-of${open}`;
+  if (series === "ue") return `anytime-except${open}`;
+  if (series === "ao") return `when-in-order${open}`;
+  if (series === "uo") return `when-last${open}`;
   return `${series}${open}`;
 }
 
@@ -1367,13 +1367,13 @@ function numberLabel(stem: NumberStem, pos: Pos | undefined): string {
   }
 
   const body = stem.groups.map(formatNumberGroup).filter(Boolean).join(",");
-  if (stem.marker === "#_" || stem.marker === "ruo") {
+  if (stem.marker === "#_" || stem.marker === "rue") {
     return body ? `negative-label-${body}` : "negative-label";
   }
   if (stem.marker === "+-" || stem.marker === "rua") {
     return body ? `plus-minus-${body}` : "plus-minus-bound";
   }
-  if (stem.marker === "_" || stem.marker === "ro") {
+  if (stem.marker === "_" || stem.marker === "re") {
     return body ? `_${body}` : "_";
   }
   if ((stem.marker === "+" || stem.marker === "ra") && !exp) return body;

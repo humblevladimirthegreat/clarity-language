@@ -8,13 +8,13 @@ band: intermediate
 
 English *many*, *few*, *often*, and *late* rank against an unstated baseline, and *too much* and *too late* against an unstated need or limit. Agebon always names the bar: put it in the fence and rank on [amount](comparative-arity.md#amount-scale), the [frequency scale](comparative-arity.md#frequency-scale), or the [time scale](comparative-arity.md#time-scale).
 
-> `zagozolx thubem zel gral.`
+> `zagozolx thubem zol gral.`
 >
 > [z-cat-x | th-PATTERN | z-rank/more | g-amount]
 >
 > "There are many cats." (more than usual)
 
-> `zuzozen thubem zel hral vowurel.`
+> `zuzozen thubem zol hral vowurel.`
 >
 > [z-Uzozen | th-PATTERN | z-rank/more | h-how-often] | v-walk
 >
@@ -23,14 +23,14 @@ English *many*, *few*, *often*, and *late* rank against an unstated baseline, an
 <!-- cheat-sheet: roles-comparing -->
 | English | Bar and rank |
 |---------|--------------|
-| *many* / *few* | PATTERN **`thubem`**, `zel` / `zuel` with `gral` |
-| *often* / *rarely* | PATTERN **`thubem`**, `zel` / `zuel` with `hral` |
-| *late* / *early* | PATTERN **`thubem`**, `zel` / `zuel` with `bral` |
+| *many* / *few* | PATTERN **`thubem`**, `zol` / `zuol` with `gral` |
+| *often* / *rarely* | PATTERN **`thubem`**, `zol` / `zuol` with `hral` |
+| *late* / *early* | PATTERN **`thubem`**, `zol` / `zuol` with `bral` |
 | *than usual* (the same person or thing) | PATTERN **`thubem`** with no `/b/` |
-| *too much* / *enough* / *not enough* | a met sake bar (`thudatham`), `zel` / `zoel` / `zuel` |
-| *too late* / *too soon* | a met sake bar (`thudatham`), `zel` / `zuel` with `bral` |
+| *too much* / *enough* / *not enough* | a met sake bar (`thudatham`), `zol` / `zoel` / `zuol` |
+| *too late* / *too soon* | a met sake bar (`thudatham`), `zol` / `zuol` with `bral` |
 
-The bar is never dropped. A single-item `zagozolx zel gral` already means *the most cats* (a [superlative](/comparatives#superlatives)).
+The bar is never dropped. A single-item `zagozolx zol gral` already means *the most cats* (a [superlative](/comparatives#superlatives)).
 
 ### Practice {#intermediate-practice}
 
@@ -55,7 +55,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *There are many trumpets.* (more than usual)
 
 ::: details Show answer
-`zeyorelx thubem zel gral.`
+`zeyorelx thubem zol gral.`
 
 [z-trumpet-x | th-PATTERN | z-rank/more | g-amount]
 :::
@@ -63,7 +63,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **2.** *Olazun often sings.* (more often than usual)
 
 ::: details Show answer
-`zolazun thubem zel hral vezuyol.`
+`zolazun thubem zol hral vezuyol.`
 
 [z-Olazun | th-PATTERN | z-rank/more | h-how-often] | v-sing
 :::
@@ -71,14 +71,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **3.** *Uzozen sings better than usual.*
 
 ::: details Show answer
-`zuzozen thubem zel gezuyol.`
+`zuzozen thubem zol gezuyol.`
 
 [z-Uzozen | th-PATTERN | z-rank/more | g-sing]
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zahelan thubem zuel hral vezuyol.`
+**1.** `zahelan thubem zuol hral vezuyol.`
 
 ::: details Show answer
 [z-Ahelan | th-PATTERN | z-rank/less | h-how-often] | v-sing
@@ -86,7 +86,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Ahelan rarely sings.* (less often than usual)
 :::
 
-**2.** `zeyorelx thubem zuel gral.`
+**2.** `zeyorelx thubem zuol gral.`
 
 ::: details Show answer
 [z-trumpet-x | th-PATTERN | z-rank/less | g-amount]
@@ -94,7 +94,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *There are few trumpets.* (fewer than usual)
 :::
 
-**3.** `zuzozen thubem zuel gezuyol.`
+**3.** `zuzozen thubem zuol gezuyol.`
 
 ::: details Show answer
 [z-Uzozen | th-PATTERN | z-rank/less | g-sing]
@@ -104,10 +104,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzozen walks the most often, going by the pattern.* `zuzozen zel hral vowurel thubem.` or `zuzozen thubem zel hral vowurel.`
+**1.** *Uzozen walks the most often, going by the pattern.* `zuzozen zol hral vowurel thubem.` or `zuzozen thubem zol hral vowurel.`
 
 ::: details Show answer
-`zuzozen zel hral vowurel thubem.`
+`zuzozen zol hral vowurel thubem.`
 
 [z-Uzozen | z-rank/more | h-how-often] | v-walk | th-PATTERN
 
@@ -116,10 +116,10 @@ After the fence, PATTERN is a stance on the whole superlative; before the rank j
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Olazun often walks.* <!-- lint: error -->`zolazun zel hral vowurel.`
+**1.** *Olazun often walks.* <!-- lint: error -->`zolazun zol hral vowurel.`
 
 ::: details Show answer
-`zolazun thubem zel hral vowurel.`
+`zolazun thubem zol hral vowurel.`
 
 [z-Olazun | th-PATTERN | z-rank/more | h-how-often] | v-walk
 

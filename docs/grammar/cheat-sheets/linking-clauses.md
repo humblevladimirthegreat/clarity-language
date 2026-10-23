@@ -32,7 +32,7 @@ The vowel is the kind of content, the same four vowels as the act words. **-rl**
 | [Told to](/sentence-linkers#stand-in) | `zuzozen vezuyel bolazun derl vuhohol.` | *Uzozen tells Olazun to sit.* | I |
 | [Told not to](/sentence-linkers#stand-in) | `zuzozen vezuyel bolazun durl vuhohol.` | *Uzozen tells Olazun not to sit.* | I |
 | [Own subject, no one told](/sentence-linkers#stand-in) | `zuzozen valem derl zuzozen vuhohol.` | *Uzozen wishes to sit.* | I |
-| [Join inside the clause](/sentence-linkers#stand-in): `xol` | `zuzozen vawebol dorl zolazun vowurel xol zahelan varuvel.` | *Uzozen sees whether Olazun walks or Ahelan runs.* | I |
+| [Join inside the clause](/sentence-linkers#stand-in): `xel` | `zuzozen vawebol dorl zolazun vowurel xel zahelan varuvel.` | *Uzozen sees whether Olazun walks or Ahelan runs.* | I |
 
 The vowels match the act words: `yal` statement, `yol` question, `yul` avoid.
 

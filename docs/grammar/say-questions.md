@@ -163,7 +163,7 @@ English *by the way* adds a side remark, then goes back to the main point. Put a
 
 Under question, the rest of the single-item and standalone join map is confirm / offer (and fill-ask **-r**). On a list of two or more (no **-r**): **-l** picks from that closed menu; **-m** allows another name (and for **o**, *or none*); **u** is *none of* the listed; **ua** / **uo** is the complement of the listed; **ue** reverse-ranks among the listed. Join **-n** here is stock/usual.
 
-> `yol zuzozen zel.`
+> `yol zuzozen zol.`
 >
 > y-question | [z-Uzozen | z-rank/more]
 >
@@ -357,7 +357,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 **1.** *Is Uzozen the only priority?*
 
 ::: details Show answer
-`yol zuzozen zel.`
+`yol zuzozen zol.`
 
 y-question | [z-Uzozen | z-rank/more]
 :::
@@ -365,7 +365,7 @@ y-question | [z-Uzozen | z-rank/more]
 **2.** *Prefer Olazun?* / *Olazun first?* (as an offer)
 
 ::: details Show answer
-`yol zolazun zem.`
+`yol zolazun zom.`
 
 y-question | [z-Olazun | z-rank/more.open]
 :::
@@ -373,7 +373,7 @@ y-question | [z-Olazun | z-rank/more.open]
 **3.** *Has to be Ahelan?*
 
 ::: details Show answer
-`yol zahelan zol.`
+`yol zahelan zel.`
 
 y-question | [z-Ahelan | z-or-exactly-one]
 :::
@@ -389,7 +389,7 @@ y-question | z-equal-rank
 **5.** *Is the trophy enough?*
 
 ::: details Show answer
-`yol zodoral zaol.`
+`yol zodoral zael.`
 
 y-question | [z-trophy | z-and/or]
 :::
@@ -427,7 +427,7 @@ y-question | [z-bell | z-everything-but]
 *Everything but the bell?*
 :::
 
-**4.** `yol zael.`
+**4.** `yol zaol.`
 
 ::: details Show answer
 
@@ -436,7 +436,7 @@ y-question | z-in-order
 *Any order?* / *In no particular order?*
 :::
 
-**5.** `yol zolazun zahelan zel.`
+**5.** `yol zolazun zahelan zol.`
 
 ::: details Show answer
 

@@ -16,11 +16,11 @@ export const NUMBER_SYLLABLES: NumberSyllables = {
 export function markerToSpeech(marker: NumberMarker): string {
   if (marker === "+" || marker === "ra") return "ra";
   if (marker === "-" || marker === "ru") return "ru";
-  if (marker === "#" || marker === "re") return "re";
-  if (marker === "#-" || marker === "rue") return "rue";
-  if (marker === "#_" || marker === "ruo") return "ruo";
+  if (marker === "#" || marker === "ro") return "ro";
+  if (marker === "#-" || marker === "ruo") return "ruo";
+  if (marker === "#_" || marker === "rue") return "rue";
   if (marker === "+-" || marker === "rua") return "rua";
-  return "ro";
+  return "re";
 }
 
 /** Letter names for code characters ([phonology § Letter names](../../docs/grammar/phonotactics.md#letter-names)). */
@@ -161,7 +161,7 @@ export function numberStemToSpeechStressed(stem: NumberStem, table = NUMBER_SYLL
     return { text, stress };
   }
 
-  if (stem.marker === "_" || stem.marker === "ro") {
+  if (stem.marker === "_" || stem.marker === "re") {
     // Code: last character of each field.
     for (const [i, group] of stem.groups.entries()) {
       if (i > 0) text += separator;

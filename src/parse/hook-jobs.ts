@@ -25,13 +25,13 @@ const SPAN_ENDPOINT_KIND: Record<string, string> = {
   ru: "scalar",
   "#": "rank",
   "#-": "rank",
-  re: "rank",
-  rue: "rank",
+  ro: "rank",
+  ruo: "rank",
   _: "label",
-  ro: "label",
+  re: "label",
   roe: "label",
   "#_": "label",
-  ruo: "label",
+  rue: "label",
 };
 
 /** Span endpoint kind: a number with digits, ±∞, or a first / last place (numbers-applied.md § Ranges). */

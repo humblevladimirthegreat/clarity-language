@@ -59,6 +59,6 @@ describe("digit pegs", () => {
   });
 
   it("refuses number words, grammar words and digitless roots", () => {
-    for (const word of ["gragel", "zem", "zoyayul"]) assert.ok("notPeg" in digitsOf(word)[0]!, word);
+    for (const word of ["gragel", "zom", "zoyayul"]) assert.ok("notPeg" in digitsOf(word)[0]!, word);
   });
 });

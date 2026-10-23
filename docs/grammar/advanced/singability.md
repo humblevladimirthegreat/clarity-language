@@ -47,7 +47,7 @@ Compare a line, not Agebon, that piles up vowels side by side, clusters, and con
 
 ### Rhythm and stress {#rhythm-and-stress}
 
-Give every syllable about the same length, and keep its vowel full however fast you talk. English weakens unstressed vowels to *uh* (the second *a* in *banana*). Agebon never does, because many words differ by one vowel (`val`, `vol`, `vul`), and weak vowels would make them sound alike.
+Give every syllable about the same length, and keep its vowel full however fast you talk. English weakens unstressed vowels to *uh* (the second *a* in *banana*). Agebon never does, because many words differ by one vowel (`val`, `vel`, `vul`), and weak vowels would make them sound alike.
 
 Each word takes a light stress on its **first syllable**. Since the rule never changes, spelling does not mark it. The ending consonant already tells a listener where a word stops; the stressed first beat tells them where the next one starts, so fast speech still splits into words. A [number word](/numbers) stresses the last digit of each group instead.
 

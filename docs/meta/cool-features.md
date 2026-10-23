@@ -248,7 +248,7 @@ Essentially, zal means nothing plus the items in the list.
 
 *   `coffee zol` — *has to be* coffee / *the only choice* is coffee
 
-*   `zol` — *no options* / we’re stuck
+*   `zel` — *no options* / we’re stuck
 
 Zol basically means your options are restricted to the list.
 
@@ -276,7 +276,7 @@ You can combine the u with the others to invert the set:
 
 *   `coffee zuol` — anything but coffee
 
-*   `zuol` — *anything*
+*   `zuel` — *anything*
 
 Full Docs and real examples: [https://main.d2xds94zsgwptg.amplifyapp.com/grammar/joins.html\#single-item-phrase](https://main.d2xds94zsgwptg.amplifyapp.com/grammar/joins.html#single-item-phrase)
 

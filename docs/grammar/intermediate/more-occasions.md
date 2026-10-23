@@ -21,15 +21,15 @@ A listed restrictor occasion can also be a longer unit: an `/h/` word with its `
 ### More occasions {#more-occasions}
 <a id="defined-core-full"></a>
 
-Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometimes* / *anytime* / *some other time* (`har` / `hor` / `hur`). The rest of the same vowel map names exclusive, inclusive, *not when*, ranked, and leftover readings. `/w/` uses that **same** map on the next adjective or prefix-less hook (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below). The occasion words and their restrictor count as one `/h/` unit (or, on `/w/`, one run of words immediately before the adjective or hook they limit).
+Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometimes* / *anytime* / *some other time* (`har` / `her` / `hur`). The rest of the same vowel map names exclusive, inclusive, *not when*, ranked, and leftover readings. `/w/` uses that **same** map on the next adjective or prefix-less hook (`wal` / `wam` / `wual` / `wuam` / `war` / `wer` / `wur`, and the rows below). The occasion words and their restrictor count as one `/h/` unit (or, on `/w/`, one run of words immediately before the adjective or hook they limit).
 
-> `zuzozen vowurel herulal hanurul hol.`
+> `zuzozen vowurel herulal hanurul hel.`
 >
 > z-Uzozen | v-walk | h-rain | h-night | h-when-one
 >
 > "Uzozen walks either when it rains or at night." (not both)
 
-> `zolazun vezuvol herulal hozulal haol.`
+> `zolazun vezuvol herulal hozulal hael.`
 >
 > z-Olazun | v-sleep | h-rain | h-snow | h-when-any-of
 >
@@ -41,35 +41,35 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 | Agebon | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
 | **`hal` / `ham`** | listed times; empty list is *never* | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never, as far as I know* | **a** ≈ add |
-| **`hol` / `hom`** | one exclusive time menu | *either when A or when B (not both)*; **`hom`** also allows *or never* | | **o** ≈ one |
-| **`haol` / `haom`** | any of the listed times suffices | *when A and/or when B* | | **a** ≈ add the others + **o** ≈ one time suffices |
+| **`hel` / `hem`** | one exclusive time menu | *either when A or when B (not both)*; **`hem`** also allows *or never* | | **e** ≈ either |
+| **`hael` / `haem`** | any of the listed times suffices | *when A and/or when B* | | **a** ≈ add the others + **e** ≈ either time suffices |
 | **`hul` / `hum`** | invert the listed times | *not when…* / *not when…, for one* | | **u** ≈ undo |
 | **`hual` / `huam`** | every time minus listed exceptions | *always except when…* | ***always*** / *usually* (*always, as far as I know*) | **u** ≈ undo then **a** ≈ add |
-| **`huol` / `huom`** | any leftover time minus listed exceptions | *anytime except when…* | | **u** ≈ undo + **o** ≈ one |
+| **`huel` / `huem`** | any leftover time minus listed exceptions | *anytime except when…* | | **u** ≈ undo + **e** ≈ either |
 
-**Compare with:** **`hur`** is some leftover occasion (*some other time*). **`huol`** is leftover times in general (*anytime except when…*).
+**Compare with:** **`hur`** is some leftover occasion (*some other time*). **`huel`** is leftover times in general (*anytime except when…*).
 
 #### Ranked (with listed occasions)
 
-Closed **`hel`** ranks the listed occasions: the first one listed is the preferred time. Plain **`hal`** means *only when* these times, with no ranking among them.
+Closed **`hol`** ranks the listed occasions: the first one listed is the preferred time. Plain **`hal`** means *only when* these times, with no ranking among them.
 
 <!-- cheat-sheet: restrictors-spans -->
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`hel` / `hem`** | priority among occasions | *preferably when A ≻ when B…* (closed / open) | **e** ≈ order |
-| **`hael` / `haem`** | occasions in order | *first when A, then when B* (closed / open) | **a** ≈ add + **e** ≈ order |
-| **`hoel` / `hoem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **o** ≈ one + **e** ≈ order |
-| **`huel` / `huem`** | occasions last-first | *as a last resort when A* (one occasion); several run last-listed first (closed / open) | **u** ≈ undo + **e** ≈ order |
+| **`hol` / `hom`** | priority among occasions | *preferably when A ≻ when B…* (closed / open) | **o** ≈ order |
+| **`haol` / `haom`** | occasions in order | *first when A, then when B* (closed / open) | **a** ≈ add + **o** ≈ order |
+| **`hoel` / `hoem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **o** ≈ order + **e** ≈ either |
+| **`huol` / `huom`** | occasions last-first | *as a last resort when A* (one occasion); several run last-listed first (closed / open) | **u** ≈ undo + **o** ≈ order |
 
-> `zuzozen vowurel hubeham hanurul hel.`
+> `zuzozen vowurel hubeham hanurul hol.`
 >
 > z-Uzozen | v-walk | h-weekend | h-night | h-when-ranked
 >
 > "Uzozen walks preferably on weekends, or else at night."
 
-One occasion before **`huel`** is the last resort: the claim counts there, but only when nothing better applies. With several, the order reverses, as with [`zuel`](rank-joins.md#invert-u-stacks): the last one listed is the most preferred, so `herulal hanurul huel` makes night the first choice and rain the last. On `/w/` the same words limit the next adjective (`wuel` / `wuem`).
+One occasion before **`huol`** is the last resort: the claim counts there, but only when nothing better applies. With several, the order reverses, as with [`zuol`](rank-joins.md#invert-u-stacks): the last one listed is the most preferred, so `herulal hanurul huol` makes night the first choice and rain the last. On `/w/` the same words limit the next adjective (`wuol` / `wuom`).
 
-> `zuzozen vowurel herulal huel.`
+> `zuzozen vowurel herulal huol.`
 >
 > z-Uzozen | v-walk | h-rain | h-when-last
 >
@@ -83,19 +83,19 @@ Statement readings below. Asking *when*: [When?](/fill-ask-jobs#when).
 | Agebon | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
 | **`har`** | unspecified member of the listed times | *sometimes among these* | *sometimes* | **-r** some member |
-| **`hor`** | unspecified member of a one-choice time menu | *anytime among these* | *anytime* | **o** ≈ one + **-r** |
+| **`her`** | unspecified member of a one-choice time menu | *anytime among these* | *anytime* | **e** ≈ either + **-r** |
 | **`hur`** | unspecified leftover occasion | *some time other than these* | *some other time* | **u** ≈ undo + **-r** |
-| **`her`** | unspecified first-ranked occasion | *at whichever of these ranks first* | *at the preferred time* | **e** ≈ order + **-r** |
+| **`hor`** | unspecified first-ranked occasion | *at whichever of these ranks first* | *at the preferred time* | **o** ≈ order + **-r** |
 
-Under a question, **`her`** asks which time ranks first: *When's best?* With occasions before it, the listener picks the one they prefer.
+Under a question, **`hor`** asks which time ranks first: *When's best?* With occasions before it, the listener picks the one they prefer.
 
-> `yol her zayan vowurel.`
+> `yol hor zayan vowurel.`
 >
 > y-question | h-when-best | z-interlocutors | v-walk
 >
 > "When's best for us to walk?"
 
-> `zuzozen werulal wanurul wol guzemol.`
+> `zuzozen werulal wanurul wel guzemol.`
 >
 > z-Uzozen | [w-rain | w-night | w-when-one | g-sleepy]
 >
@@ -138,7 +138,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Uzozen climbs either when it snows or at night.* (not both)
 
 ::: details Show answer
-`zuzozen vuguvel hozulal hanurul hol.`
+`zuzozen vuguvel hozulal hanurul hel.`
 
 z-Uzozen | v-climb | h-snow | h-night | h-when-one
 :::
@@ -146,7 +146,7 @@ z-Uzozen | v-climb | h-snow | h-night | h-when-one
 **2.** *Olazun climbs when it rains and/or when it's foggy.*
 
 ::: details Show answer
-`zolazun vuguvel herulal hovulul haol.`
+`zolazun vuguvel herulal hovulul hael.`
 
 z-Olazun | v-climb | h-rain | h-fog | h-when-any-of
 :::
@@ -162,7 +162,7 @@ z-Ahelan | v-walk | h-ice | h-not-when
 **4.** *Uzozen climbs preferably when it snows, or else when it rains.*
 
 ::: details Show answer
-`zuzozen vuguvel hozulal herulal hel.`
+`zuzozen vuguvel hozulal herulal hol.`
 
 z-Uzozen | v-climb | h-snow | h-rain | h-when-ranked
 :::
@@ -170,7 +170,7 @@ z-Uzozen | v-climb | h-snow | h-rain | h-when-ranked
 **5.** *When's best for us to climb?*
 
 ::: details Show answer
-`yol her zayan vuguvel.`
+`yol hor zayan vuguvel.`
 
 y-question | h-when-best | z-interlocutors | v-climb
 :::
@@ -186,7 +186,7 @@ z-Olazun | v-fall | [th-if | bl-that-clause] | z-Uzozen | v-run
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zahelan vowurel hovulul huol.`
+**1.** `zahelan vowurel hovulul huel.`
 
 ::: details Show answer
 z-Ahelan | v-walk | h-fog | h-anytime-except
@@ -194,7 +194,7 @@ z-Ahelan | v-walk | h-fog | h-anytime-except
 *Ahelan walks anytime except in fog.*
 :::
 
-**2.** `zuzozen vuguvel hozulal hanurul hael.`
+**2.** `zuzozen vuguvel hozulal hanurul haol.`
 
 ::: details Show answer
 z-Uzozen | v-climb | h-snow | h-night | h-when-in-order
@@ -202,7 +202,7 @@ z-Uzozen | v-climb | h-snow | h-night | h-when-in-order
 *Uzozen climbs first when it snows, then at night.*
 :::
 
-**3.** `zolazun vowurel hezulol huel.`
+**3.** `zolazun vowurel hezulol huol.`
 
 ::: details Show answer
 z-Olazun | v-walk | h-ice | h-when-last
@@ -210,7 +210,7 @@ z-Olazun | v-walk | h-ice | h-when-last
 *When it's icy, Olazun walks only as a last resort.*
 :::
 
-**4.** `zuzozen wozulal wanurul wol guzemol.`
+**4.** `zuzozen wozulal wanurul wel guzemol.`
 
 ::: details Show answer
 z-Uzozen | [w-snow | w-night | w-when-one | g-sleepy]
@@ -226,7 +226,7 @@ z-Ahelan | v-climb | h-rain | h-fog | h-equally-when
 *Ahelan climbs as often in rain as in fog.*
 :::
 
-**6.** `zolazun vuguvel henulul hom.`
+**6.** `zolazun vuguvel henulul hem.`
 
 ::: details Show answer
 z-Olazun | v-climb | h-thunderstorm | h-when-one.open
@@ -236,24 +236,24 @@ z-Olazun | v-climb | h-thunderstorm | h-when-one.open
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzozen sleeps when it rains and/or when it snows.* `zuzozen vezuvol herulal hozulal haol.` or `zuzozen vezuvol herulal hozulal hol.`
+**1.** *Uzozen sleeps when it rains and/or when it snows.* `zuzozen vezuvol herulal hozulal hael.` or `zuzozen vezuvol herulal hozulal hel.`
 
 ::: details Show answer
-`zuzozen vezuvol herulal hozulal haol.`
+`zuzozen vezuvol herulal hozulal hael.`
 
 z-Uzozen | v-sleep | h-rain | h-snow | h-when-any-of
 
-**`haol`** lets both count; **`hol`** says one or the other, not both.
+**`hael`** lets both count; **`hel`** says one or the other, not both.
 :::
 
-**2.** *Ahelan climbs preferably when it's foggy.* `zahelan vuguvel hovulul hel.` or `zahelan vuguvel hovulul hal.`
+**2.** *Ahelan climbs preferably when it's foggy.* `zahelan vuguvel hovulul hol.` or `zahelan vuguvel hovulul hal.`
 
 ::: details Show answer
-`zahelan vuguvel hovulul hel.`
+`zahelan vuguvel hovulul hol.`
 
 z-Ahelan | v-climb | h-fog | h-when-ranked
 
-Rank **`hel`** names the preferred time; **`hal`** would say *only* when foggy.
+Rank **`hol`** names the preferred time; **`hal`** would say *only* when foggy.
 :::
 
 #### Fix it {#intermediate-fix-it}

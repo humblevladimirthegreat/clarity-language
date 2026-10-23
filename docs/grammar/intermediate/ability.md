@@ -106,12 +106,12 @@ On **`owa`**, **-l / -m / -r** say how far the attempt will go. **-n** is ordina
 
 A trial run (**-r**) plans for failure: if it fails, that is what the probe was for. Use it when you want to lower the stakes, for yourself or for someone else.
 
-#### Fallback (`xon`) {#fallback}
+#### Fallback (`xen`) {#fallback}
 <a id="or-else"></a>
 
-For *try A; failing that, B*, put the clause join **`xon`** between the attempt and the backup. The backup comes into play only if the attempt before it fails, so exactly one of them ends up holding.
+For *try A; failing that, B*, put the clause join **`xen`** between the attempt and the backup. The backup comes into play only if the attempt before it fails, so exactly one of them ends up holding.
 
-> `zuzozen howar vowurel xon zuzozer vezuyol.`
+> `zuzozen howar vowurel xen zuzozer vezuyol.`
 >
 > [z-Uzozen | h-ATTEMPT-trial | v-walk | x-or-else | z-←Uzozen | v-sing]
 >
@@ -119,15 +119,15 @@ For *try A; failing that, B*, put the clause join **`xon`** between the attempt 
 
 An intention adverb covers only its own clause, so the backup above is a plain *Uzozen sings*. Each clause takes its own, so you can probe the first option and commit to the backup:
 
-> `zuzozen howar vowurel xon zuzozer howal vezuyol.`
+> `zuzozen howar vowurel xen zuzozer howal vezuyol.`
 >
 > [z-Uzozen | h-ATTEMPT-trial | v-walk | x-or-else | z-←Uzozen | h-ATTEMPT-committed | v-sing]
 >
 > "Uzozen gives walking a try; failing that, Uzozen keeps trying to sing."
 
-A fully prepared [PLAN](/intention#plan-predict) (**`thagel`**) already has backups. To name them, chain the clauses with **`xon`**, first choice first, and put PLAN on each one:
+A fully prepared [PLAN](/intention#plan-predict) (**`thagel`**) already has backups. To name them, chain the clauses with **`xen`**, first choice first, and put PLAN on each one:
 
-> `zuwon thagel vowurel xon zuwon thagel vezuyol xon zuwon thagel vezuvol.`
+> `zuwon thagel vowurel xen zuwon thagel vezuyol xen zuwon thagel vezuvol.`
 >
 > [z-speaker | th-plan-atlas | v-walk | x-or-else | z-speaker | th-plan-atlas | v-sing | x-or-else | z-speaker | th-plan-atlas | v-sleep]
 >
@@ -135,7 +135,7 @@ A fully prepared [PLAN](/intention#plan-predict) (**`thagel`**) already has back
 
 **Compare with:** [ability](/can-and-cant#ability) says whether someone **can** do something; an attempt makes no claim either way. [PLAN](/intention#plan-predict) is intention before acting; an attempt is acting with the outcome open.
 
-**Not the same job as:** plain *or*, **`xol`** ([clause joins](/joins#clause-joins)), which has no first choice and no backup.
+**Not the same job as:** plain *or*, **`xel`** ([clause joins](/joins#clause-joins)), which has no first choice and no backup.
 
 ### Want {#want}
 <a id="desire"></a>
@@ -326,7 +326,7 @@ z-Uzozen | v-tell | [contrary-to | th-DECISION-modifiable]
 *Uzozen speaks, against my decision.*
 :::
 
-**3.** `zolazun howar vezuyol xon zolazur varayel.`
+**3.** `zolazun howar vezuyol xen zolazur varayel.`
 
 ::: details Show answer
 [z-Olazun | h-ATTEMPT-trial | v-sing | x-or-else | z-←Olazun | v-write]

@@ -56,13 +56,13 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 |--------|---------|-----------|-------|
 | `gabam` | BEFORE clause pole (ahead-of) | [Time poles on a noun](/sentence-linkers#time-pole-on-noun) | I |
 | `gadam` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
-| `gaen` | join-relation starting with (adjective) | [Join-relations](/join-across-roles#join-relations) | I |
+| `gaen` | join-relation open to (adjective) | [Join-relations](/join-across-roles#join-relations) | I |
 | `gaham` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `gahum` | BECAUSE clause pole (explanatory reason) | [Because, iff, and only because](/iff-fault#only-because) | I |
 | `galam` | AFTER clause pole (just-after) | [Time poles on a noun](/sentence-linkers#time-pole-on-noun) | I |
 | `gan` | join-relation including (adjective + argument) | [Join-relations](/join-across-roles#join-relations) | I |
 | `ganom` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](/relations#proxy) | B |
-| `gaon` | join-relation open to (adjective) | [Join-relations](/join-across-roles#join-relations) | I |
+| `gaon` | join-relation starting with (adjective) | [Join-relations](/join-across-roles#join-relations) | I |
 | `garum` | UNTIL clause pole (endpoint bound) | [Time poles on a noun](/sentence-linkers#time-pole-on-noun) | I |
 | `gebom` | ONLY-IF clause pole (necessary condition) | [Only if](/causation#only-if) | B |
 | `gedam` | locative between (two landmarks) | [Locative relations](/of-relations#locative-relations) | I |
@@ -70,7 +70,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `gegen` | name-string mention marker (the span is a name as spelling) | [Mention](/span-mention#mention) | I |
 | `geham` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](/relations#exchange) | B |
 | `gehem` | IFF clause pole (biconditional) | [Because, iff, and only because](/iff-fault#only-because) | I |
-| `gen` | join-relation prioritizing (adjective) | [Join-relations](/join-across-roles#join-relations) | I |
+| `gen` | join-relation exclusive for (sole pick adjective) | [Join-relations](/join-across-roles#join-relations) | I |
 | `genam` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](/as-of#as-of) | A |
 | `genar` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](/as-of#as-of) | A |
 | `gerem` | WHILE clause pole (concurrent) | [Time poles on a noun](/sentence-linkers#time-pole-on-noun) | I |
@@ -83,17 +83,17 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `goen` | join-relation on a par with (adjective) | [Join-relations](/join-across-roles#join-relations) | I |
 | `gohem` | locative across (edge to far edge of one landmark) | [Locative relations](/of-relations#locative-relations) | I |
 | `gohom` | IF clause pole (one-way conditional) | [If](/causation#if) | B |
-| `gon` | join-relation exclusive for (sole pick adjective) | [Join-relations](/join-across-roles#join-relations) | I |
+| `gon` | join-relation prioritizing (adjective) | [Join-relations](/join-across-roles#join-relations) | I |
 | `gorol` | SAME identity (identical-to / same-as) | [Identity (SAME)](/predication#identity-same) | B |
 | `govam` | SO-THAT clause pole (intended outcome; NP for-goal) | [Because, if, although (poles)](/dependents#poles) | B |
 | `goyem` | stimulus (sake about a noun you do not possess) | [Personal possession](/sakes#personal-possession) | B |
 | `guan` | join-relation without or excluding (adjective) | [Join-relations](/join-across-roles#join-relations) | I |
-| `guen` | join-relation deprioritizing (adjective) | [Join-relations](/join-across-roles#join-relations) | I |
+| `guen` | join-relation open to anything but (adjective) | [Join-relations](/join-across-roles#join-relations) | I |
 | `gulem` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `gun` | join-relation against or anti- (adjective) | [Join-relations](/join-across-roles#join-relations) | I |
 | `gunem` | AS-OF clause pole (unasserted whose-now / placeholder now) | [As-of (whose now)](/as-of#as-of) | A |
 | `guner` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](/as-of#as-of) | A |
-| `guon` | join-relation open to anything but (adjective) | [Join-relations](/join-across-roles#join-relations) | I |
+| `guon` | join-relation deprioritizing (adjective) | [Join-relations](/join-across-roles#join-relations) | I |
 <!-- /generated -->
 
 ## `/h/` words {#h-words}
@@ -103,13 +103,13 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 |--------|---------|-----------|-------|
 | `habam` | BEFORE clause pole (ahead-of) | [Because, if, although (poles)](/dependents#poles) | B |
 | `hadam` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
-| `haen` | join-relation starting with (adverb) | [Join-relations](/join-across-roles#join-relations) | I |
+| `haen` | join-relation among options (adverb) | [Join-relations](/join-across-roles#join-relations) | I |
 | `haham` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `hahem` | SO-THAT-RESULT clause pole (outcome that follows from the host) | [Result (so … that)](/sentence-linkers#result-pole) | I |
 | `halam` | AFTER clause pole (just-after) | [Because, if, although (poles)](/dependents#poles) | B |
 | `han` | join-relation with or including (adverb + argument) | [Join-relations](/join-across-roles#join-relations) | I |
 | `hanom` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](/relations#proxy) | B |
-| `haon` | join-relation among options (adverb) | [Join-relations](/join-across-roles#join-relations) | I |
+| `haon` | join-relation starting with (adverb) | [Join-relations](/join-across-roles#join-relations) | I |
 | `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](/notional-standing#residue-and-former-climate) | I |
 | `harum` | UNTIL clause pole (endpoint bound) | [Because, if, although (poles)](/dependents#poles) | B |
 | `havol` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
@@ -124,7 +124,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `helel` | NOT-YET phasal (the change is expected but has not happened); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `helem` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `heler` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `hen` | join-relation prioritizing (adverb) | [Join-relations](/join-across-roles#join-relations) | I |
+| `hen` | join-relation exclusively for (adverb) | [Join-relations](/join-across-roles#join-relations) | I |
 | `henam` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](/as-of#as-of) | A |
 | `henar` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](/as-of#as-of) | A |
 | `herem` | WHILE clause pole (concurrent) | [Because, if, although (poles)](/dependents#poles) | B |
@@ -137,18 +137,18 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `hodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](/can-and-cant#ability-fallback) | B |
 | `hoen` | join-relation equating or tying (adverb) | [Join-relations](/join-across-roles#join-relations) | I |
 | `hohem` | locative across (edge to far edge of one landmark) | [Locative relations](/of-relations#locative-relations) | I |
-| `hon` | join-relation exclusively for (adverb) | [Join-relations](/join-across-roles#join-relations) | I |
+| `hon` | join-relation prioritizing (adverb) | [Join-relations](/join-across-roles#join-relations) | I |
 | `hovam` | SO-THAT clause pole (intended outcome; NP for-goal) | [Because, if, although (poles)](/dependents#poles) | B |
 | `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](/ability#try) | I |
 | `howam` | attempt mood (commitment unstated) | [Try](/ability#try) | I |
 | `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](/ability#try) | I |
 | `huan` | join-relation excluding (adverb) | [Join-relations](/join-across-roles#join-relations) | I |
-| `huen` | join-relation deprioritizing (adverb) | [Join-relations](/join-across-roles#join-relations) | I |
+| `huen` | join-relation barring anything but (adverb) | [Join-relations](/join-across-roles#join-relations) | I |
 | `hulem` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `hun` | join-relation refusing (adverb) | [Join-relations](/join-across-roles#join-relations) | I |
 | `hunem` | AS-OF clause pole (unasserted whose-now / placeholder now) | [As-of (whose now)](/as-of#as-of) | A |
 | `huner` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](/as-of#as-of) | A |
-| `huon` | join-relation barring anything but (adverb) | [Join-relations](/join-across-roles#join-relations) | I |
+| `huon` | join-relation deprioritizing (adverb) | [Join-relations](/join-across-roles#join-relations) | I |
 | `huvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `huvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `huvur` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
@@ -216,16 +216,16 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 <!-- generated: overlays pos=v -->
 | Agebon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `vaen` | join-act starts with object | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
+| `vaen` | join-act picks with more picks open | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
 | `van` | join-act includes or adds object | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
-| `vaon` | join-act picks with more picks open | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
-| `ven` | join-act prioritizes object | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
+| `vaon` | join-act starts with object | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
+| `ven` | join-act chooses sole object | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
 | `voen` | join-act equates or ties objects | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
-| `von` | join-act chooses sole object | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
+| `von` | join-act prioritizes object | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
 | `vuan` | join-act excludes object | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
-| `vuen` | join-act deprioritizes object | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
+| `vuen` | join-act bars anything but object | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
 | `vun` | join-act denies or refuses object | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
-| `vuon` | join-act bars anything but object | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
+| `vuon` | join-act deprioritizes object | [Join-act verbs](/join-across-roles#join-act-verbs) | I |
 <!-- /generated -->
 
 ## `/w/` words {#w-words}

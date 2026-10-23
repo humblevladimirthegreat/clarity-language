@@ -1,9 +1,9 @@
 A join pair, a hook that a series map must not touch, and number twins.
 
-`zuzozen zel vowurel ol buwon zol.`
+`zuzozen zol vowurel ol buwon zel.`
 
-> `zuzozen zel vowurel.`
+> `zuzozen zol vowurel.`
 >
 > z-Uzozen | rank/more | v-walk
 
-Speech `gredol` and writing `g#2`.
+Speech `grodol` and writing `g#2`.

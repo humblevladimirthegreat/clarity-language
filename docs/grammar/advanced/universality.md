@@ -113,7 +113,7 @@ The mirror, **`blruwum`**, is *a short while before now*: *recently*.
 
 A channel used as a comparison [bar](/comparative-arity#bars) takes the same offset, which dates the bar: MEMORY with a day before is *than yesterday*.
 
-> `zuzozen thevum bluzurem grubal zel guzemol.`
+> `zuzozen thevum bluzurem grubal zol guzemol.`
 >
 > [z-Uzozen | [th-MEMORY | [bl-day | g-minus-one]] | z-rank/more | g-sleepy]
 >

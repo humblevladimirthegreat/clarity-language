@@ -192,21 +192,21 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 | *last night* / *tomorrow night* | a channel with one day back or ahead, plus *at night*: `thevum bluzurem grubal herem blanurul` |
 | *recently* / *recent* | a channel + **`blruwum`** (*a short while before now*; **`blruwul`** is *just now*) |
 | *forever* / *permanent* | a measure phrase with an unbounded amount: `bavuvam grawal` (for `permanent`, add **`hawum`**) |
-| *eventually* / *ultimately* | **`xrewal`** opens the last point (*Finally, …*) |
+| *eventually* / *ultimately* | **`xrowal`** opens the last point (*Finally, …*) |
 | *whenever* | **`herem blual`** + the occasion as a quality: `herem blual gerulal` |
 | *currently* / *nowadays* / *at present* / *modern* / *contemporary* | LIVE **`thugom`** when it is in view; otherwise the bare verb, which reports this stretch |
 | *previously* / *formerly* / *originally* / *once* (*once walked*) | FORMER **`helam`** |
 | *past* / *in the past* | FORMER **`helam`**, or a channel with a `-` offset |
 | *future* / *in the future* | a channel + **`blral`** |
 | *once* (*one time*) | `h+1` before the verb |
-| ever (*Have you walked at all?*) | **`havom`** + **`hor`** (*anytime*) under **`yol`**: `yol hor zawan havom vowurel` |
+| ever (*Have you walked at all?*) | **`havom`** + **`her`** (*anytime*) under **`yol`**: `yol her zawan havom vowurel` |
 | *during* (*during the storm*) | **`herem`** + `/b/`: `herem blenulul` |
 | *immediately* / *immediate* / *right away* / *at once* (*about to*) | a channel + **`blrawul`** (*a hair after now*) |
 | *initially* / *at first* / *firstly* | **`hugulem`** (*first*, as a manner adverb) |
 | *continue* / *keep doing* | **`hawum`** (*still*) |
 | *subsequently* / *after* | **`halam`** + `/b/`: `halam blolazun` |
 | *prior to* | **`habam`** + `/b/`: `habam blolazun` |
-| *in March* / *in 1962* / *on the 12th* | **`herem`** + a month or year in `/b/` (`herem blumalem gregel`, `herem blavuvam g_1962`); a day alone is `h_#12` ([time](/digit-strings#time)) |
+| *in March* / *in 1962* / *on the 12th* | **`herem`** + a month or year in `/b/` (`herem blumalem grogel`, `herem blavuvam g_1962`); a day alone is `h_#12` ([time](/digit-strings#time)) |
 
 > `zuzozen theyem bluzurem gramol vowurel.`
 >
@@ -214,7 +214,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 >
 > "It looks like Uzozen is walking today."
 
-> `yol hor zawan havom vowurel.`
+> `yol her zawan havom vowurel.`
 >
 > y-question | h-anytime | z-listener | h-already | v-walk
 >

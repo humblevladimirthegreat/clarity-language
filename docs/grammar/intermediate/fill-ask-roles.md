@@ -83,7 +83,7 @@ y-question | [d-map | d-ticket | d-wh]
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `yol dagel dudenel dor.`
+**1.** `yol dagel dudenel der.`
 
 ::: details Show answer
 y-question | [d-map | d-ticket | d-any]
@@ -109,14 +109,14 @@ y-question | [d-map | d-wh-else]
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Any map?* `yol dagel dor.` or `yol dagel dar.`
+**1.** *Any map?* `yol dagel der.` or `yol dagel dar.`
 
 ::: details Show answer
-`yol dagel dor.`
+`yol dagel der.`
 
 y-question | [d-map | d-any]
 
-**`dor`** asks *any map?*; **`dar`** asks *which map?*
+**`der`** asks *any map?*; **`dar`** asks *which map?*
 :::
 
 #### Fix it {#intermediate-fix-it}

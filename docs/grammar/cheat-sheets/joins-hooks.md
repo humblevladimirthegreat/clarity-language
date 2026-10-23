@@ -16,15 +16,15 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | Vowel | [Join](/joins#join-type-vowel-series) after a list | Hook between two same-role words | Hook before `/b/` (**-l** / **-m**) |
 |-------|------------------------------------------------------|----------------------------------|--------------------------------------|
 | **a** ≈ add | *and* | [*including*](/hooks#including) | [*in* / *amid*](/hooks#extra-noun) |
-| **o** ≈ one | *pick one* | [*instead*](/hooks#instead) | *at* / *near* |
-| **e** ≈ order | rank: first matters most | [*or rather*](/hooks#rather) | *for* / *used by* |
+| **o** ≈ order | rank: first matters most | [*instead*](/hooks#instead) | *at* / *near* |
+| **e** ≈ either | *pick one* | [*or rather*](/hooks#rather) | *for* / *used by* |
 | **u** ≈ undo | *not* / *neither* / *none of* | [*except*](/hooks#except) | *from* / *away from* |
-| **ao** | [*and/or*](/rank-joins#exclusivity-and-denying-a-whole-list) (at least one) | | [*on* / *over*](/extra-noun-hooks#extra-noun-intermediate) |
+| **ao** | [in order](/rank-joins#sequence-ao): *A, then B* | | [*on* / *over*](/extra-noun-hooks#extra-noun-intermediate) |
 | **ua** | [*everything but*](/joins#everything-ua); alone *everything* | [range](/ending-grids#ranges): strictly between | *out of* / *out from among* |
-| **uo** | [*anything but*](/rank-joins#invert-u-stacks) | | *through* / *by way of* |
-| **ae** | [in order](/rank-joins#sequence-ae): *A, then B* | | *using* / *by* |
+| **uo** | [rank reversed](/rank-joins#invert-u-stacks): last first | | *through* / *by way of* |
+| **ae** | [*and/or*](/rank-joins#exclusivity-and-denying-a-whole-list) (at least one) | | *using* / *by* |
 | **oe** | [tie](/rank-joins#rank-joins): equal rank | [range](/ending-grids#ranges): *A through B* | *toward* / *in the direction of* |
-| **ue** | [rank reversed](/rank-joins#invert-u-stacks): last first | [range](/ending-grids#ranges): outside *A–B* | *against* / *contrary to* |
+| **ue** | [*anything but*](/rank-joins#invert-u-stacks) | [range](/ending-grids#ranges): outside *A–B* | *against* / *contrary to* |
 
 ## Joins {#joins}
 
@@ -35,8 +35,8 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | [Items first, then the join](/joins#and-lists-a); its first letter matches the items | `zudozol zagozol zal` | *a dog and a cat* | B |
 | | `vowurel varuvel vam` | *walks and runs* (and possibly more) | B |
 | [Clause joins](/joins#clause-joins) (`/x/`) go **between** clauses | `zuzozen vowurel xam zolazun varuvel` | *Uzozen walks and Olazun runs* | B |
-| A [different clause join](/joins#clause-joins) closes everything before it | `A xol B xal C` | *(A or B) and C* | B |
-| [Nest](/rank-joins#fence-nesting) by stacking joins | `zududal zugudal zol zowulal zal` | *either tea or coffee, and water* | I |
+| A [different clause join](/joins#clause-joins) closes everything before it | `A xel B xal C` | *(A or B) and C* | B |
+| [Nest](/rank-joins#fence-nesting) by stacking joins | `zududal zugudal zel zowulal zal` | *either tea or coffee, and water* | I |
 | [Scope island](/join-islands#scope-islands-join) keeps a small list inside a bigger one of the same role | `zuzozen { zowulal zal } zam` | *Uzozen and (just water)* | A |
 
 ### Endings {#join-endings}
@@ -57,23 +57,23 @@ The same join reads differently with two or more items, [one item](/joins#standa
 |------|----------|------------|----------|-------|
 | `zal` | *A and B* | *just X* | *nothing* / *nobody* | B |
 | `zam` | *A and B (and possibly more)* | *X, for one* | *nothing, as far as I know* | B |
-| `zol` | *A or B* (pick one) | *the only option is X* | *no options* | B |
-| `zom` | *A or B* (optional) | *X (optional)* | *no pick, as far as I know* | B |
+| `zel` | *A or B* (pick one) | *the only option is X* | *no options* | B |
+| `zem` | *A or B* (optional) | *X (optional)* | *no pick, as far as I know* | B |
 | `zul` | *neither A nor B* | *not X* | *no* | B |
 | `zum` | *neither A nor B (and possibly more)* | *not X (and possibly more)* | *no, as far as I know* | B |
 | `zual` | *everything but A and B* | *everything but X* | *everything* / *everyone* | B |
-| `zel` | *A matters more than B* | *only X matters* | *no favorite* | B |
-| `zem` | | *X first* / *mainly X* | *no favorite, as far as I know* | B |
+| `zol` | *A matters more than B* | *only X matters* | *no favorite* | B |
+| `zom` | | *X first* / *mainly X* | *no favorite, as far as I know* | B |
 | `zar` | *some one of A and B* | *some (unknown) X* | *something* / *someone* | B |
-| `zor` | *any of A and B is fine* | *any X* | *anything* / *anyone* | B |
+| `zer` | *any of A and B is fine* | *any X* | *anything* / *anyone* | B |
 | `zur` | *some one other than A and B* | *something other than X* | *something else* | B |
-| `zer` | pick by ranking | *preferably some X* | *whatever's most important* | B |
-| `zaol` | *A and/or B* | *X is enough* | *all set* | I |
-| `zuol` | *anything but A and B* | *anything but X* | *anything (goes)* | I |
-| `zael` | *A, then B* | *start with X* | *in no particular order* | I |
-| `zaem` | *roughly A, then B* | *maybe start with X* | *not sure where to start* | I |
+| `zor` | pick by ranking | *preferably some X* | *whatever's most important* | B |
+| `zael` | *A and/or B* | *X is enough* | *all set* | I |
+| `zuel` | *anything but A and B* | *anything but X* | *anything (goes)* | I |
+| `zaol` | *A, then B* | *start with X* | *in no particular order* | I |
+| `zaom` | *roughly A, then B* | *maybe start with X* | *not sure where to start* | I |
 | `zoel` | *A and B tied* | *X tied for* | *it's a draw* | I |
-| `zuel` | *A, B, from last to first* | *X last* | *no least-favorite* | I |
+| `zuol` | *A, B, from last to first* | *X last* | *no least-favorite* | I |
 
 A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `xal` *nothing happened*, `xar` *something happened*.
 
@@ -100,22 +100,22 @@ The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, 
 | Vowel | Verb (`/v/` + object) | Relation (`/ɡ/` / `/h/` + `/b/`) | Between clauses (`/x/`) |
 |-------|------------------------|----------------------------------|--------------------------|
 | **a** | `van` *includes* | `gan` / `han` *including*, *with* | `xan` *and then* |
-| **o** | `von` *chooses* | `gon` / `hon` *exclusive for* | `xon` *or maybe*, *failing that* |
-| **ao** | `vaon` *picks* (more may follow) | `gaon` / `haon` *open to*, *among options* | `xaon` *and/or maybe* |
+| **o** | `von` *prioritizes* | `gon` / `hon` *prioritizing* | |
+| **ao** | `vaon` *starts with* | `gaon` / `haon` *starting with* | |
 | **u** | `vun` *refuses* | `gun` / `hun` *against*, *refusing* | `xun` *and then not* |
 | **ua** | `vuan` *excludes* | `guan` / `huan` *without* | |
-| **uo** | `vuon` *bars* | `guon` / `huon` *anything but* | |
-| **e** | `ven` *prioritizes* | `gen` / `hen` *prioritizing* | |
-| **ae** | `vaen` *starts with* | `gaen` / `haen` *starting with* | |
+| **uo** | `vuon` *deprioritizes* | `guon` / `huon` *deprioritizing* | `xuon` *and before that* |
+| **e** | `ven` *chooses* | `gen` / `hen` *exclusive for* | `xen` *or maybe*, *failing that* |
+| **ae** | `vaen` *picks* (more may follow) | `gaen` / `haen` *open to*, *among options* | `xaen` *and/or maybe* |
 | **oe** | `voen` *equates* | `goen` / `hoen` *on a par with* | |
-| **ue** | `vuen` *deprioritizes* | `guen` / `huen` *deprioritizing* | `xuen` *and before that* |
+| **ue** | `vuen` *bars* | `guen` / `huen` *anything but* | |
 
 [Stance joins](/join-across-roles#stance-joins) (`/th/`) work on the stance words before them, not the claim: `thahum blerulal thul` *not because of the rain*. With clause grounds, the join goes [before `blarl`](/join-across-roles#stance-join-before-barl): `thahum thul blarl` *not because …*. [Alone](/join-across-roles#standalone-stance-joins), they say how to take the claim:
 
 | Agebon | English | Agebon | English |
 |--------|---------|--------|---------|
 | `thal` | *at face value* | `thul` | *no judgment* |
-| `thual` | *all things considered* | `thel` | *impartially* |
+| `thual` | *all things considered* | `thol` | *impartially* |
 | `thoel` | *equally balanced* | `thar` (in a question) | *why do you say so?* |
 
 ## Hooks {#hooks}
@@ -212,8 +212,8 @@ Role letter, the hook's vowels (**`m`** for its frame, **`r`** to point back), *
 | `zudozol zul` *no dog* ([join denies](/universals-domains#universals-domains-generics)) | | `zavayal ul zuzozen` *the family except Uzozen* ([hook takes B out of A](/hooks#except)) |
 | `zoxual blahehal vezuvol` *everyone at the house sleeps* ([who counts](/hooked-joins#hooked-joins)) | | `zual vezuvol ol bahehal` *everyone sleeps at the house* (where it happens) |
 | `zahunam gan bluzozen` *a team including Uzozen* ([join-relation](/join-across-roles#join-relations)) | | `zahunam al zuzozen` *the team, including Uzozen* (afterthought) |
-| `zuzozen zahelan zal` *the two of them* ([vs a range](/ending-grids#ranges)) | | `zuzozen oel zahelan` *Uzozen through Ahelan*; `zuzozen zahelan zael` *Uzozen, then Ahelan* |
-| hook `oel` *toward X* ([where a path ends](/extra-noun-hooks#extra-noun-intermediate)) | | `zael` + X *start with X* ([where it starts](/rank-joins#sequence-ae)) |
-| `xan` *and then* ([what happened next](/clause-sequence#clause-sequence)) | | `xael` ([the order is part of the claim](/vp-clause-forms#vp-clause-forms): a recipe) |
+| `zuzozen zahelan zal` *the two of them* ([vs a range](/ending-grids#ranges)) | | `zuzozen oel zahelan` *Uzozen through Ahelan*; `zuzozen zahelan zaol` *Uzozen, then Ahelan* |
+| hook `oel` *toward X* ([where a path ends](/extra-noun-hooks#extra-noun-intermediate)) | | `zaol` + X *start with X* ([where it starts](/rank-joins#sequence-ao)) |
+| `xan` *and then* ([what happened next](/clause-sequence#clause-sequence)) | | `xaol` ([the order is part of the claim](/vp-clause-forms#vp-clause-forms): a recipe) |
 | `vun` [*refuses*](/join-across-roles#join-act-verbs) | | `vuan` *excludes* |
 | `ol …` *Instead, …* ([replaces the last claim](/hooks#discourse-hooks)) | | `or …` *Anyway, …* ([back to the main line](/discourse-hooks#hook-resume)) |

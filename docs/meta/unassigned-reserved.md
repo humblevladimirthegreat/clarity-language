@@ -68,10 +68,10 @@ Source: [numbers.md](/numbers), [numeric-derivation.md](/numeric-derivation)
 ### Number markers on `/w/`, `/th/`, and stacks
 
 - **open:** **`w+N`**, **`w-N`**, **`w_N`** (a count or fraction on `/w/`). Not guessable: before an adjective a count could be a ratio (*twice as big*) or a difference (*bigger by two*). A factor is `hradol` / `hrudol` on `/h/` ([factor](/comparative-arity#factor)).
-- **open:** **`w#-N`**, **`w#1`**, and `w#N` outside a single-name `zel` / `zuel` frame. No learner reaches for them: English never says *the first biggest* (first place is the plain superlative) or counts a scale *from the end* (*second smallest* is `zuel` + `w#2`), and `w#N` needs one name before the fence to rank within.
+- **open:** **`w#-N`**, **`w#1`**, and `w#N` outside a single-name `zol` / `zuol` frame. No learner reaches for them: English never says *the first biggest* (first place is the plain superlative) or counts a scale *from the end* (*second smallest* is `zuol` + `w#2`), and `w#N` needs one name before the fence to rank within.
 - **closed (D-38):** **`th#1`** as *first-hand*.
-- **closed (D-41):** **`th#N`** in a clause with LIVE or MEMORY (`thugom thredol`).
-- **open:** **`th#N`** after INTUITION (`thabom thredol`). A gut sense is your own, and no learner has a *second-hand gut feeling* to say.
+- **closed (D-41):** **`th#N`** in a clause with LIVE or MEMORY (`thugom throdol`).
+- **open:** **`th#N`** after INTUITION (`thabom throdol`). A gut sense is your own, and no learner has a *second-hand gut feeling* to say.
 - **open:** **`th-N`**, **`th#-N`**, and digitless non-blank **`th#`**. A minus on a likelihood (`th-30`: *30% unlikely*, or *30 points less likely*?) and an end-relative count of tellers have no guessable reading; digitless **`th#`** would say only *passed on to me*, with no depth, and no job has asked for that.
 - **open:** marker stacks **`rao`** (`+_`) and **`rae`** (`+#`). No reading composes: labels carry no sign, and a count and a rank are separate markers on separate words.
 
@@ -101,19 +101,19 @@ The cells below are all **open**.
 
 Source: [restrictors.md](/restrictors)
 
-- **open:** bare restrictors beyond `hal` / `hual` / `har` / `hor` / `hur` / `her`: **`hol` / `hom`**, **`haol` / `haom`**, **`hul` / `hum`**, **`huol` / `huom`**, **`hel` / `hem`**, **`hael` / `haem`**. With no occasions two readings compete: the restrictor's empty list (*never* / *always*) and the matching standalone join (`zol` *no options*, `zaol` *nothing more needed*, `zuol` *anything goes*, `zel` *no favorite*, `zael` *in no particular order*), so none is guessable.
-- **open:** further `/w/` bare forms beyond **`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur` / `wer`** and the non-bare Intermediate core: the same competing readings.
+- **open:** bare restrictors beyond `hal` / `hual` / `har` / `her` / `hur` / `hor`: **`hel` / `hem`**, **`hael` / `haem`**, **`hul` / `hum`**, **`huel` / `huem`**, **`hol` / `hom`**, **`haol` / `haom`**. With no occasions two readings compete: the restrictor's empty list (*never* / *always*) and the matching standalone join (`zel` *no options*, `zael` *nothing more needed*, `zuel` *anything goes*, `zol` *no favorite*, `zaol` *in no particular order*), so none is guessable.
+- **open:** further `/w/` bare forms beyond **`wal` / `wam` / `wual` / `wuam` / `war` / `wer` / `wur` / `wor`** and the non-bare Intermediate core: the same competing readings.
 - **open:** **-n** on `/w/` (`wan`, …). `/w/` is never a phrase-list item, so there is no package to name. (`/h/`…**-n** is [join-relations](/join-across-roles#join-relations).)
 - **open:** **`wubam`** before **-r** / **-n**. *Respectively something* has no reading.
-- **open:** other join spellings under `/h/` / `/w/` beyond the [defined restrictor core](/more-occasions#defined-core-full) and the join-relations, such as stacked **-r** (`haor`): a stacked blank has no statement job. See also [phrase join inventory](/join-islands#phrase-reserved-forms).
+- **open:** other join spellings under `/h/` / `/w/` beyond the [defined restrictor core](/more-occasions#defined-core-full) and the join-relations, such as stacked **-r** (`haer`): a stacked blank has no statement job. See also [phrase join inventory](/join-islands#phrase-reserved-forms).
 
 ## Joins
 
 Source: [joins.md](/joins), [join-across-roles.md](/join-across-roles#stance-joins)
 
 - **open:** **`/th/`…-n**. Join-relations frame a noun or an event, and a stance is neither, so no reading composes.
-- **open:** stacked **-r** outside a question on `/th/` (`thaor` … `thuer` are fill-asks only), and on `/z/` `/d/` `/b/` `/v/` `/x/` `/ɡ/` joins (`zuar`, `vaor`, `xuar`, `gaor`). No statement wants a stacked blank, and no question has asked for one on these joins. Parser: `stackedJoinResume`.
-- **open:** clause sequence **-n** beyond `xan` `xon` `xun` `xaon` `xuen` (`xuan`, `xuon`, `xen`, `xaen`, `xoen`). No reading is guessable: `xen` and `xaen` put rank or order into a sequence that is already ordered, `xoen` could be *at the same time* or *in either order*, and `xuan` / `xuon` (*everything but* / *anything but*) have no clause job. `xen` is also a departure mark after a name.
+- **open:** stacked **-r** outside a question on `/th/` (`thaer` … `thuor` are fill-asks only), and on `/z/` `/d/` `/b/` `/v/` `/x/` `/ɡ/` joins (`zuar`, `vaer`, `xuar`, `gaer`). No statement wants a stacked blank, and no question has asked for one on these joins. Parser: `stackedJoinResume`.
+- **open:** clause sequence **-n** beyond `xan` `xen` `xun` `xaen` `xuon` (`xuan`, `xuen`, `xon`, `xaon`, `xoen`). No reading is guessable: `xon` and `xaon` put rank or order into a sequence that is already ordered, `xoen` could be *at the same time* or *in either order*, and `xuan` / `xuen` (*everything but* / *anything but*) have no clause job. `xon` is also a departure mark after a name.
 - **closed (D-47):** a shared `/d/` or recipient `/b/` (before the subject or after the join) on a joined verb that has its own (`duredal vugudel vagedal val doledol`).
 - **closed (D-39):** a single-item clause join (`A xul` *not the case that A*, `A xal` *only A happened*).
 - **open:** **-x** on a join **-l** / **-m** / **-n** off `/v/` (`zalx`, `zanx`). On an empty set it contradicts the **-l** (*several nobodies*), and on a universal it repeats it; a named package with associates has no job yet. Parser: `joinPlural`.
@@ -171,7 +171,7 @@ Source: [hooks.md](/hooked-joins#hooked-joins)
 - **open:** `r` before the seam on a hook whose free **-r** does not point back (`oe`, `ua`, `ue`: `zoerxual`). Those hooks' **-r** is a range. Parser: `hookedJoinPointBack`.
 - **open:** `blarl` after a `/z/` `/d/` `/b/` hooked join (`zoxual blarl`). No reading for a set bounded by a clause yet. Parser: `hookedJoinClause`.
 - **open:** on `/h/`, a hook with no time reading (`ua`, `uo`, `ao`, `e`, `ae`, `ue`: `hexal`), or hook **-m** other than `om` (`hamxual`, `humxal`, `hoemxual`). `uo` (*throughout*) and `am` (*in the thick of*) read close to `a`, and `oem` (*in the run-up to*) close to `habam`; no reading is settled. Parser: `hookedJoinTime`.
-- **open:** on `/h/`, a join other than a bare restrictor (`huxoel`, `huxol`). Parser: `hookedJoinRestrictor`.
+- **open:** on `/h/`, a join other than a bare restrictor (`huxoel`, `huxel`). Parser: `hookedJoinRestrictor`.
 - **closed ([hooked joins](design-decisions.md#hooked-joins)):** a number body or a role-compound stem before **`x`** + a join (`zragexual`, `zwazuduyexual`). Parser: no word.
 
 ## Role compounds

@@ -6,11 +6,11 @@ band: beginner
 
 ### Digit-strings {#digit-strings}
 
-When English uses a number as a **code** (a phone, room, channel, or serial number) rather than an amount, write it with the digit-string marker **`ro`** (written **`_`**). A code has no exponent and no percent. The code can then fill whatever role the clause needs (`/d/`, `/b/`, `/ɡ/`).
+When English uses a number as a **code** (a phone, room, channel, or serial number) rather than an amount, write it with the digit-string marker **`re`** (written **`_`**). A code has no exponent and no percent. The code can then fill whatever role the clause needs (`/d/`, `/b/`, `/ɡ/`).
 
 > `zuzozen d_555,123,4567 vawebol.`
 >
-> 🔊 `zuzozen drozazazathebadogethehuzavorel vawebol.`
+> 🔊 `zuzozen drezazazathebadogethehuzavorel vawebol.`
 >
 > z-Uzozen | d-_555,123,4567 | v-see
 >
@@ -38,7 +38,7 @@ English makes a label plural to name the whole run of labels that start with it:
 
 > `zuzozen vowurel herem bl_90x.`
 >
-> 🔊 `zuzozen vowurel herem blronamolx.`
+> 🔊 `zuzozen vowurel herem blrenamolx.`
 >
 > z-Uzozen | v-walk | [h-while | bl-_90-x]
 >
@@ -46,11 +46,11 @@ English makes a label plural to name the whole run of labels that start with it:
 
 ### Time {#time}
 
-To say when something happens by the clock or the calendar (*at 15:30*, *on 22 July*), write a digit string under `/h/` with no relation word before it. Clock takes marker **`ro`** (spoken **`hro`**, written `h_…`). Date takes calendar-ordinal **`oe`** (spoken **`hroe`**, written `h_#…`). Fields are read by position, so the word already says which number is the hour or the month.
+To say when something happens by the clock or the calendar (*at 15:30*, *on 22 July*), write a digit string under `/h/` with no relation word before it. Clock takes marker **`re`** (spoken **`hre`**, written `h_…`). Date takes calendar-ordinal **`oe`** (spoken **`hroe`**, written `h_#…`). Fields are read by position, so the word already says which number is the hour or the month.
 
 > `h_15,30 zuzozen vowurel.`
 >
-> 🔊 `hrobazathegemol zuzozen vowurel.`
+> 🔊 `hrebazathegemol zuzozen vowurel.`
 >
 > h-_15,30 | z-Uzozen | v-walk
 >
@@ -62,8 +62,8 @@ Clock and date together:
 |-----|-----|
 | **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left to right; commas are writing only: hour, minute, optional seconds (`h_15,30`, `h_15,30,00`). |
 | **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). A date may stop after the day (`h_#12`, *on the 12th*); context gives the month. You may also name the relation with a *date* word plus `/b/`, but you do not need to. |
-| **Day of the week** | Ordinal on **`olere`** *weekday*, counting from Monday: `zolerem grebal` is *Monday*, `zolerem grerel` is *Sunday* (the seventh). |
-| **Month or year alone** | A month is an ordinal on **`umale`** *month*, counting from January, the same way as weekdays: *March* is the third month (`zumalem gregel`). A year is a label on **`avuva`** *year* (`zavuvam g_1962`). To place an event in one, put that noun in `/b/` after **`herem`** *during*. |
+| **Day of the week** | Ordinal on **`olere`** *weekday*, counting from Monday: `zolerem grobal` is *Monday*, `zolerem grorel` is *Sunday* (the seventh). |
+| **Month or year alone** | A month is an ordinal on **`umale`** *month*, counting from January, the same way as weekdays: *March* is the third month (`zumalem grogel`). A year is a label on **`avuva`** *year* (`zavuvam g_1962`). To place an event in one, put that noun in `/b/` after **`herem`** *during*. |
 | **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, or a signed offset (*three hours ago* / *in three hours*). There is no past or future ending. An amount of time (*for 3 days*) is a relation word plus a measure phrase. |
 
 Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** with digits repeats a clock time or date already mentioned. Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
@@ -72,7 +72,7 @@ For *from … to* with clock times, put each time in `/b/` after the hooks **`ul
 
 > `zuzozen ul b_9 oel b_17 vowurel.`
 >
-> 🔊 `zuzozen ul bronal oel brobarel vowurel.`
+> 🔊 `zuzozen ul brenal oel brebarel vowurel.`
 >
 > z-Uzozen | [from | b-_9 | toward | b-_17] | v-walk
 >
@@ -82,7 +82,7 @@ With one verb, the two halves may also sit on either side of it, as two extra no
 
 > `zuzozen ul b_9 vowurel oel b_17.`
 >
-> 🔊 `zuzozen ul bronal vowurel oel brobarel.`
+> 🔊 `zuzozen ul brenal vowurel oel brebarel.`
 >
 > z-Uzozen | [from | b-_9] | v-walk | [toward | b-_17]
 >
@@ -92,7 +92,7 @@ For a decade (*the ’90s*), use a [plural label](#plural-labels).
 
 **Compare with:** a phone or room **code** uses the same `_` marker under `/d/` `/b/` `/ɡ/`, not bare `/h/`. Restrictor **`har`** is *sometimes*.
 
-**Not the same job as:** `hragel` (*three times*) and `hregel` (*for the third time*). Clock time `h_15,30` is still a digit-string.
+**Not the same job as:** `hragel` (*three times*) and `hrogel` (*for the third time*). Clock time `h_15,30` is still a digit-string.
 
 ### Practice {#beginner-practice}
 
@@ -124,7 +124,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 ::: details Show answer
 `zuzozen dobebul g_12 vawebol.`
 
-🔊 `zuzozen dobebul grobadol vawebol.`
+🔊 `zuzozen dobebul grebadol vawebol.`
 
 z-Uzozen | [d-pill | g-_12] | v-see
 :::
@@ -134,7 +134,7 @@ z-Uzozen | [d-pill | g-_12] | v-see
 ::: details Show answer
 `zuzozen ul b_9 oel b_17 dahelan vawebol.`
 
-🔊 `zuzozen ul bronal oel brobarel dahelan vawebol.`
+🔊 `zuzozen ul brenal oel brebarel dahelan vawebol.`
 
 z-Uzozen | [from | b-_9 | toward | b-_17] | d-Ahelan | v-see
 :::
@@ -144,7 +144,7 @@ z-Uzozen | [from | b-_9 | toward | b-_17] | d-Ahelan | v-see
 ::: details Show answer
 `h_15,30 zuzozen vowurel.`
 
-🔊 `hrobazathegemol zuzozen vowurel.`
+🔊 `hrebazathegemol zuzozen vowurel.`
 
 h-_15,30 | z-Uzozen | v-walk
 :::
@@ -155,7 +155,7 @@ h-_15,30 | z-Uzozen | v-walk
 
 ::: details Show answer
 
-🔊 `hronal zuzozen varemul.`
+🔊 `hrenal zuzozen varemul.`
 
 h-_9 | z-Uzozen | v-scream
 
@@ -177,7 +177,7 @@ h-_1,4 | z-Olazun | v-walk
 
 ::: details Show answer
 
-🔊 `zuzozen ul bronal vowurel oel brobarel.`
+🔊 `zuzozen ul brenal vowurel oel brebarel.`
 
 z-Uzozen | [from | b-_9] | v-walk | [toward | b-_17]
 
@@ -186,14 +186,14 @@ z-Uzozen | [from | b-_9] | v-walk | [toward | b-_17]
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Olazun sees pill 3.* `zolazun dobebul grogel vawebol.` or `zolazun dobebul gragel vawebol.`
+**1.** *Olazun sees pill 3.* `zolazun dobebul gregel vawebol.` or `zolazun dobebul gragel vawebol.`
 
 ::: details Show answer
-`zolazun dobebul grogel vawebol.`
+`zolazun dobebul gregel vawebol.`
 
 z-Olazun | [d-pill | g-_3.spelled] | v-see
 
-A label is a digit string, marker **`ro`**; **`ra`** counts three pills.
+A label is a digit string, marker **`re`**; **`ra`** counts three pills.
 :::
 
 #### Fix it {#beginner-fix-it}
@@ -203,7 +203,7 @@ A label is a digit string, marker **`ro`**; **`ra`** counts three pills.
 ::: details Show answer
 `h_15,30 zolazun vowurel.`
 
-🔊 `hrobazathegemol zolazun vowurel.`
+🔊 `hrebazathegemol zolazun vowurel.`
 
 h-_15,30 | z-Olazun | v-walk
 

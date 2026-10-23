@@ -43,7 +43,7 @@ The marker still says amount or rank. A code has no magnitude, so it takes no ex
 | **`g-e-`** | **`ru`** + **`wu`∅** + **-l** | **just short:** arbitrarily small but finite shortfall (*a hair under*); against a target, *almost* |
 | **`g~-e-`** | **`ru`** + **`wu`∅** + **-m** | **nearly**: a small shortfall, not claimed to be tiny |
 
-Same under `/z/` `/d/` `/b/` (`zrawal` = +∞ as subject; `drewul` = start-place as object; `brawul` = *of an arbitrarily small but finite amount*; `zruwul` = a hair-short amount as subject). Contrast **`grebal`** = numbered *first* / *1st*; **`grewal`** = last-place landmark; **`grewul`** = beginning/onset landmark.
+Same under `/z/` `/d/` `/b/` (`zrawal` = +∞ as subject; `drowul` = start-place as object; `brawul` = *of an arbitrarily small but finite amount*; `zruwul` = a hair-short amount as subject). Contrast **`grobal`** = numbered *first* / *1st*; **`growal`** = last-place landmark; **`growul`** = beginning/onset landmark.
 
 <a id="just-short"></a>
 
@@ -126,11 +126,11 @@ On `/y/`, the special values are cheers:
 
 #### Number as discourse {#special-number-as-discourse}
 
-**Last point / *Finally*:** **`xrewal`** = *Finally:* / *last point:* (committed coda item). Soft **`xrewam`** = near-final; named **`xrewan`** = ritual / titled *Finally*; **`xrewar`** resumes that last-point marker. Extra items use discourse hook **`al`** (*additionally*: [hooks.md](/hooks#discourse-hooks)).
+**Last point / *Finally*:** **`xrowal`** = *Finally:* / *last point:* (committed coda item). Soft **`xrowam`** = near-final; named **`xrowan`** = ritual / titled *Finally*; **`xrowar`** resumes that last-point marker. Extra items use discourse hook **`al`** (*additionally*: [hooks.md](/hooks#discourse-hooks)).
 
-**Starting point / *Starting with*:** **`xrewul`** = *Starting with:* / *to begin:* (committed opening item). Soft **`xrewum`** = near-start; named **`xrewun`** = ritual / titled *Starting with*; **`xrewur`** resumes that start-point marker. Numbered *firstly* is **`xrebal`**.
+**Starting point / *Starting with*:** **`xrowul`** = *Starting with:* / *to begin:* (committed opening item). Soft **`xrowum`** = near-start; named **`xrowun`** = ritual / titled *Starting with*; **`xrowur`** resumes that start-point marker. Numbered *firstly* is **`xrobal`**.
 
-Under `/x/`, a digitful exponent on **`#`** is **outline depth** relative to the focused agenda item: **`x#3e2`** = *3rd sub-sub-point under the focus*; **`xrewubal`** = *parent-layer item(s)*; **`xrewamol`** = *current-layer item(s)*. A flat list uses **`x#N`** (and *Finally* / *Starting with* as above).
+Under `/x/`, a digitful exponent on **`#`** is **outline depth** relative to the focused agenda item: **`x#3e2`** = *3rd sub-sub-point under the focus*; **`xrowubal`** = *parent-layer item(s)*; **`xrowamol`** = *current-layer item(s)*. A flat list uses **`x#N`** (and *Finally* / *Starting with* as above).
 
 These sit beside the numbered points of [Number as discourse marker](/number-markers#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`** ([from the end](stacked-markers.md#from-the-end)). **Just-before discourse:** **`xruwul`** = *just before that:* (step back a moment in the telling). Soft **`xruwum`**; named **`xruwun`**; resume **`xruwur`**. Corroborating is **`xral`**; independent is **`xrul`**.
 
@@ -229,7 +229,7 @@ Amounts work the same way on `/z/`, `/d/`, and `/b/`.
 
 #### Ordinal umpteenth / umpteenth-first (`re` + **`wa`∅** / **`wu`∅**)
 
-The mantissa counts how many joke-units **late** (**`wa`**) or **early** (**`wu`**) the place is. The place is still **finite**; this is only exaggeration. Landmarks are **`grewal`** / **`grewul`**.
+The mantissa counts how many joke-units **late** (**`wa`**) or **early** (**`wu`**) the place is. The place is still **finite**; this is only exaggeration. Landmarks are **`growal`** / **`growul`**.
 
 | Form | Reading |
 |------|---------|
@@ -240,7 +240,7 @@ The mantissa counts how many joke-units **late** (**`wa`**) or **early** (**`wu`
 | **`g#3e-`** | *the three-gazillionth-first* |
 | **`g~#1e-`** | *about the gazillionth-first* |
 
-`grewal` is last place; `grewul` is the start landmark; `grebal` is numbered *1st*.
+`growal` is last place; `growul` is the start landmark; `grobal` is numbered *1st*.
 
 **Endings** on hyperbolic forms:
 
@@ -328,7 +328,7 @@ z-telescope-x | g-+-1e
 **3.** *Finally: Uzozen sees the clouds.*
 
 ::: details Show answer
-`xrewal zuzozen dugalalx vawebol.`
+`xrowal zuzozen dugalalx vawebol.`
 
 x-finally | z-Uzozen | d-cloud-x | v-see
 :::
@@ -359,7 +359,7 @@ z-cloud-x | g-+-0e
 *There are absolutely no clouds.*
 :::
 
-**3.** `xrewul zahelan dalol vawebol.`
+**3.** `xrowul zahelan dalol vawebol.`
 
 ::: details Show answer
 x-starting-with | z-Ahelan | d-star | v-see

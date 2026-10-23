@@ -47,14 +47,14 @@ A number with more digits is still **one word**: one syllable per digit, left to
 
 ### Ordinals {#ordinals}
 
-To say **which place** a thing has in a series (*the first*, *the second*, …), swap the count marker **`ra`** for the rank marker **`re`**. **`gredol`** is *the second*.
+To say **which place** a thing has in a series (*the first*, *the second*, …), swap the count marker **`ra`** for the rank marker **`ro`**. **`grodol`** is *the second*.
 
-> `zanal gredol.`
+> `zanal grodol.`
 > z-book | g-2nd
 >
 > "There is a second book."
 
-> `zolazun danal gregel varayel.`
+> `zolazun danal grogel varayel.`
 > z-Olazun | [d-book | g-3rd] | v-write
 >
 > "Olazun writes the third book."
@@ -62,7 +62,7 @@ To say **which place** a thing has in a series (*the first*, *the second*, …),
 | Marker | Use | English | Cue |
 |--------|--------|---------|-----|
 | **`ra`** | count | *how many* | **`a`** ≈ add |
-| **`re`** | rank | *which place* | **`e`** ≈ order |
+| **`ro`** | rank | *which place* | **`o`** ≈ order |
 
 The **`r`** right after the role letter tells you the word is a number: no other word puts a consonant there.
 
@@ -130,7 +130,7 @@ z-Uzozen | [d-cake-x | g-two] | v-see
 **3.** *Olazun finds the second doughnut.*
 
 ::: details Show answer
-`zolazun dodedol gredol vumewol.`
+`zolazun dodedol grodol vumewol.`
 
 z-Olazun | [d-doughnut | g-2nd] | v-find
 :::
@@ -154,7 +154,7 @@ z-ant-x | g-twelve.spelled
 **6.** *Uzozen cooks the tenth cake.*
 
 ::: details Show answer
-`zuzozen degodol grebamol vuguyel.`
+`zuzozen degodol grobamol vuguyel.`
 
 z-Uzozen | [d-cake | g-10th.spelled] | v-cook
 :::
@@ -169,7 +169,7 @@ z-baguette-x | g-four
 *There are four baguettes.*
 :::
 
-**2.** `zolazun debodol gregel vonebol.`
+**2.** `zolazun debodol grogel vonebol.`
 
 ::: details Show answer
 z-Olazun | [d-bread | g-3rd] | v-smell
@@ -193,7 +193,7 @@ z-Ahelan | [d-croissant-x | g-20.spelled] | v-find
 *Ahelan finds twenty croissants.*
 :::
 
-**5.** `zegodol grebal.`
+**5.** `zegodol grobal.`
 
 ::: details Show answer
 z-cake | g-1st
@@ -203,14 +203,14 @@ z-cake | g-1st
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Uzozen sees the second baguette.* `zuzozen debodel gredol vawebol.` or `zuzozen debodel gradol vawebol.`
+**1.** *Uzozen sees the second baguette.* `zuzozen debodel grodol vawebol.` or `zuzozen debodel gradol vawebol.`
 
 ::: details Show answer
-`zuzozen debodel gredol vawebol.`
+`zuzozen debodel grodol vawebol.`
 
 z-Uzozen | [d-baguette | g-2nd] | v-see
 
-Rank marker **`re`** gives the place in a series; **`ra`** would count two.
+Rank marker **`ro`** gives the place in a series; **`ra`** would count two.
 :::
 
 **2.** *There are three doughnuts.* `zodedolx gragel.` or `zodedolx gral.`

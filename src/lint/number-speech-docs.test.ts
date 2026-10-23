@@ -6,7 +6,7 @@ import { lintNumberSpeechMarkdown, spokenForm } from "./number-speech-docs.js";
 describe("spokenForm", () => {
   it("spells out number shorthand and keeps other words", () => {
     assert.equal(spokenForm("zagozolx g+3."), "zagozolx gragel.");
-    assert.equal(spokenForm("h_15,30"), "hrobazathegemol");
+    assert.equal(spokenForm("h_15,30"), "hrebazathegemol");
   });
 });
 

@@ -122,7 +122,7 @@ z-Olazun | v-sit | h-west-th-Ahelan
 **7.** *Uzozen would rather cook than fight.*
 
 ::: details Show answer
-`zuzozen vuguyel vavuvul vel.`
+`zuzozen vuguyel vavuvul vol.`
 
 z-Uzozen | [v-cook | v-fight | v-rank/more]
 
@@ -345,14 +345,14 @@ anyway | z-Ahelan | v-walk
 **Rule:** [Point back](discourse-hooks.md#hook-resume)
 :::
 
-**11.** *How many cookies does Uzozen see?* `yol dugedolx grar zuzozen vawebol.` or `yol dugedolx grer zuzozen vawebol.`
+**11.** *How many cookies does Uzozen see?* `yol dugedolx grar zuzozen vawebol.` or `yol dugedolx gror zuzozen vawebol.`
 
 ::: details Show answer
 `yol dugedolx grar zuzozen vawebol.`
 
 y-question | [d-cookie-x | g-how-many] | z-Uzozen | v-see
 
-**-r** on the count marker asks *how many?*; **`re`** would ask *which place?*
+**-r** on the count marker asks *how many?*; **`ro`** would ask *which place?*
 
 **Rule:** [How many?](digitless-exponents.md#how-many)
 :::
@@ -369,10 +369,10 @@ z-Olazun | v-sit | h-episode-event-ALLOW-rule
 **Rule:** [Someone over the act](feelings-permission.md#permission)
 :::
 
-**13.** *Uzozen walks the most often, going by the pattern.* `zuzozen zel hral vowurel thubem.` or `zuzozen thubem zel hral vowurel.`
+**13.** *Uzozen walks the most often, going by the pattern.* `zuzozen zol hral vowurel thubem.` or `zuzozen thubem zol hral vowurel.`
 
 ::: details Show answer
-`zuzozen zel hral vowurel thubem.`
+`zuzozen zol hral vowurel thubem.`
 
 [z-Uzozen | z-rank/more | h-how-often] | v-walk | th-PATTERN
 

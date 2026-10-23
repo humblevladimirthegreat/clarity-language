@@ -46,13 +46,13 @@ A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaini
 | **a** | distributive property (*both ADJ*) or bundle description |
 | **a** + `/ɡ/`…**-x** | [collective](collectives.md#adjectives-g) (*ADJ together*) |
 | **oe** + SHARED scale | [equative](/comparatives#equatives) (`/ɡ/` or `/h/`) |
-| **e** / **ue** on NP | [comparison scale](/comparatives) (`/ɡ/` or `/h/`) |
-| **ae** on NP | sorted low to high (`/ɡ/` or `/h/`) |
-| **ua** / **uo** | kind / domain for universals |
+| **o** / **uo** on NP | [comparison scale](/comparatives) (`/ɡ/` or `/h/`) |
+| **ao** on NP | sorted low to high (`/ɡ/` or `/h/`) |
+| **ua** / **ue** | kind / domain for universals |
 
 More items of the same role go *before* the join, not after it.
 
-SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a scale after rank **`e`** / **`ue`**, equative **`oe`**, or sequence **`ae`**. After a verb join, a `/d/` object, a recipient `/b/`, or an `/h/` adverb is SHARED: every verb takes it. Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item. Any other `/h/` after a join is an ordinary adverb on the verb:
+SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a scale after rank **`o`** / **`uo`**, equative **`oe`**, or sequence **`ao`**. After a verb join, a `/d/` object, a recipient `/b/`, or an `/h/` adverb is SHARED: every verb takes it. Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item. Any other `/h/` after a join is an ordinary adverb on the verb:
 
 > `zuzozen zolazun zal huhunem vowurel.`
 >
@@ -71,20 +71,19 @@ When English would say two people are *as ADJ as* each other, use a tie: a rank 
 >
 > "Uzozen is as challenging as Olazun."
 
-**Compare with:** *more / most* and *least* use **`e`** / **`ue`** plus the same shared adjective ([comparatives](/comparatives)).
+**Compare with:** *more / most* and *least* use **`o`** / **`uo`** plus the same shared adjective ([comparatives](/comparatives)).
 
-### Invert (**`ua`** / **`uo`** / **`ue`**)
-<a id="invert-u-stacks"></a>
+### Invert (**`ua`** / **`uo`** / **`ue`**) {#invert-u-stacks}
 
-Beginner already used *everything but* (**`ua`**). A leading **u** inverts **o** and **e** the same way: **uo** offers everything outside the list, and **ue** reverses a ranking.
+Beginner already used *everything but* (**`ua`**). A leading **u** inverts **o** and **e** the same way: **uo** reverses a ranking, and **ue** offers everything outside the list.
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **ua** | invert add | *everything but* the listed | **u** ≈ undo + **a** ≈ add |
-| **uo** | invert menu | *anything but* the listed (free choice outside) | **u** ≈ undo + **o** ≈ one |
-| **ue** | invert rank | *A after B after C* (last first) | **u** ≈ undo + **e** ≈ order |
+| **uo** | invert rank | *A after B after C* (last first) | **u** ≈ undo + **o** ≈ order |
+| **ue** | invert menu | *anything but* the listed (free choice outside) | **u** ≈ undo + **e** ≈ either |
 
-What *everything* or *anything* ranges over comes from context, or from a [SHARED](#shared-after-the-join) `/ɡ/` that names the kind. Only plain **`…om`** means *optional*; on **uo**, **-m** leaves the list open as usual. **-r** still attaches only to one-vowel **a** / **o** / **e** / **u**.
+What *everything* or *anything* ranges over comes from context, or from a [SHARED](#shared-after-the-join) `/ɡ/` that names the kind. Only plain **`…om`** means *optional*; on **ue**, **-m** leaves the list open as usual. **-r** still attaches only to one-vowel **a** / **o** / **e** / **u**.
 
 > `zududal zugudal zual.`
 >
@@ -92,7 +91,7 @@ What *everything* or *anything* ranges over comes from context, or from a [SHARE
 >
 > "everything but tea and coffee."
 
-> `zuzozen zolazun zahelan zuel.`
+> `zuzozen zolazun zahelan zuol.`
 >
 > [z-Uzozen | z-Olazun | z-Ahelan | z-rank/less]
 >
@@ -100,11 +99,11 @@ What *everything* or *anything* ranges over comes from context, or from a [SHARE
 
 **Compare with:** plain **`u`** is *not* / *none of* the listed, not an invert stack. *Every cat* uses SHARED kind after **`zual`**: `zual gagozol`.
 
-### Sequence (**`ae`**) {#sequence-ae}
+### Sequence (**`ao`**) {#sequence-ao}
 
-Rank **`e`** puts the first item at the **top** (*A matters more than B*). When English would instead say *A, then B* (an itinerary, a turn order, *from 3 to 5*), the first item is the **start**, not the winner. Write the items in that order and close with **`ae`**.
+Rank **`o`** puts the first item at the **top** (*A matters more than B*). When English would instead say *A, then B* (an itinerary, a turn order, *from 3 to 5*), the first item is the **start**, not the winner. Write the items in that order and close with **`ao`**.
 
-> `zuzozen zolazun zahelan zael.`
+> `zuzozen zolazun zahelan zaol.`
 >
 > [z-Uzozen | z-Olazun | z-Ahelan | z-in-order]
 >
@@ -113,11 +112,11 @@ Rank **`e`** puts the first item at the **top** (*A matters more than B*). When 
 <!-- cheat-sheet: joins-hooks -->
 | Arity | Closed **-l** | Open **-m** |
 |-------|---------------|-------------|
-| Multi (2+) | `A B zael` *A, then B* | `A B zaem` *roughly A, then B* |
-| Single-item | `X zael` *start with X* / *from X on* | `X zaem` *maybe start with X* |
-| Standalone | `zael` *in no particular order* / *any order* | `zaem` *not sure where to start* |
+| Multi (2+) | `A B zaol` *A, then B* | `A B zaom` *roughly A, then B* |
+| Single-item | `X zaol` *start with X* / *from X on* | `X zaom` *maybe start with X* |
+| Standalone | `zaol` *in no particular order* / *any order* | `zaom` *not sure where to start* |
 
-A sequence does not say which item is better. With a SHARED quality it sorts the list from low to high. Two numbers in a sequence are two values in order (`zragel zrazal zael` = *3, then 5*). (cue: **a** ≈ add + **e** ≈ order: *and then*)
+A sequence does not say which item is better. With a SHARED quality it sorts the list from low to high. Two numbers in a sequence are two values in order (`zragel zrazal zaol` = *3, then 5*). (cue: **a** ≈ add + **o** ≈ order: *and then*)
 
 ### Respectively (`wubam`) {#respectively}
 
@@ -177,35 +176,35 @@ Beginner already used single-item *just X* and standalone *nothing* / *everythin
 
 | Agebon | Use | English |
 |--------|-----|---------|
-| **…el** (`zel` / …) | closed rank of one | *only X matters* / *X, period*; + SHARED scale → superlative ([comparatives](/comparatives)) |
-| **…em** (`zem` / …) | open rank of one | *X first* / *mainly X*; + SHARED scale → open superlative |
+| **…el** (`zol` / …) | closed rank of one | *only X matters* / *X, period*; + SHARED scale → superlative ([comparatives](/comparatives)) |
+| **…em** (`zom` / …) | open rank of one | *X first* / *mainly X*; + SHARED scale → open superlative |
 | **…oel** (`zoel` / …) | closed tie of one | *X tied for* / equal priority to X |
 | **…oem** (`zoem` / …) | open tie of one | *X about tied for* / soft equal priority |
 | **…oen** (`zoen` / …) | stock tie of one | *X tied for* (stock / conventional draw label) |
-| **…aem** (`zaem` / …) | open sequence start | *maybe start with X* |
-| **…ael** (`zael` / …) | closed sequence start | *start with X* / *from X on* |
-| **…uel** (`zuel` / …) | closed last place | *X last*; + SHARED scale → least |
-| **…uem** (`zuem` / …) | open last place | *mainly leave X for last* |
-| **…en** (`zen` / …) | stock first | *X first* (stock) / *X, as usual* |
-| **…er** (`zer` / …) | unspecified ranked member | *preferably some X* / *X as a priority* |
+| **…aem** (`zaom` / …) | open sequence start | *maybe start with X* |
+| **…ael** (`zaol` / …) | closed sequence start | *start with X* / *from X on* |
+| **…uel** (`zuol` / …) | closed last place | *X last*; + SHARED scale → least |
+| **…uem** (`zuom` / …) | open last place | *mainly leave X for last* |
+| **…en** (`zon` / …) | stock first | *X first* (stock) / *X, as usual* |
+| **…er** (`zor` / …) | unspecified ranked member | *preferably some X* / *X as a priority* |
 
 **Rank: standalone**
 
-Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *there is no biggest*). Standalone **ue** says nothing is at the bottom (no least, no veto). Neither says the items are tied (that is **`oe`**), and neither picks out *whichever is on top* (that is **`zer`**). Closed **-l** states it as a fact about the set; open **-m** says only that you know of none.
+Standalone **o** says nothing is on top (no favorite; with a SHARED scale, *there is no biggest*). Standalone **uo** says nothing is at the bottom (no least, no veto). Neither says the items are tied (that is **`oe`**), and neither picks out *whichever is on top* (that is **`zor`**). Closed **-l** states it as a fact about the set; open **-m** says only that you know of none.
 
 | Agebon | Use | English |
 |--------|-----|---------|
-| **…el** (`zel` / …) | closed empty rank | *no favorite* / *nobody's first*; + SHARED scale → *there is no biggest* |
-| **…em** (`zem` / …) | open empty rank | *no favorite, as far as I know*; + SHARED scale → *no biggest comes to mind* |
+| **…el** (`zol` / …) | closed empty rank | *no favorite* / *nobody's first*; + SHARED scale → *there is no biggest* |
+| **…em** (`zom` / …) | open empty rank | *no favorite, as far as I know*; + SHARED scale → *no biggest comes to mind* |
 | **…oel** (`zoel` / …) | closed empty tie | *it's a draw* / *tie* |
 | **…oem** (`zoem` / …) | open empty tie | *probably a tie* / *looks even* |
 | **…oen** (`zoen` / …) | stock empty tie | *it's a draw* (stock) |
-| **…aem** (`zaem` / …) | open empty sequence | *not sure where to start* |
-| **…ael** (`zael` / …) | closed empty sequence | *in no particular order* / *any order* |
-| **…uel** (`zuel` / …) | closed empty last | *no least-favorite* / *nobody's last*; + SHARED scale → *there is no smallest* |
-| **…uem** (`zuem` / …) | open empty last | *no objection* (not naming a veto) |
-| **…en** (`zen` / …) | stock empty rank | *no favorite* (stock) |
-| **…er** (`zer` / …) | unspecified empty rank | *whatever's most important* |
+| **…aem** (`zaom` / …) | open empty sequence | *not sure where to start* |
+| **…ael** (`zaol` / …) | closed empty sequence | *in no particular order* / *any order* |
+| **…uel** (`zuol` / …) | closed empty last | *no least-favorite* / *nobody's last*; + SHARED scale → *there is no smallest* |
+| **…uem** (`zuom` / …) | open empty last | *no objection* (not naming a veto) |
+| **…en** (`zon` / …) | stock empty rank | *no favorite* (stock) |
+| **…er** (`zor` / …) | unspecified empty rank | *whatever's most important* |
 
 **Set: single-item**
 
@@ -213,16 +212,16 @@ Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *ther
 |--------|-----|---------|
 | **…al** (`zal` / …) | closed add of one | *just X* / *only X* |
 | **…am** (`zam` / …) | open add of one | *X, for one* / *X (and possibly more)* |
-| **…ol** (`zol` / …) | closed menu of one | *the only option is X* |
-| **…om** (`zom` / …) | open menu of one | *X (optional)* |
+| **…ol** (`zel` / …) | closed menu of one | *the only option is X* |
+| **…om** (`zem` / …) | open menu of one | *X (optional)* |
 | **…ual** (`zual` / …) | closed invert-add of one | *everything but X* |
 | **…uam** (`zuam` / …) | open invert-add of one | *everything but X (and possibly more)* |
-| **…uol** (`zuol` / …) | closed invert-menu of one | *anything but X* |
-| **…uom** (`zuom` / …) | open invert-menu of one | *anything but X (and possibly more)* |
-| **…aol** (`zaol` / …) | closed inclusive of one | *X is enough* / *X'll do* |
-| **…aom** (`zaom` / …) | open inclusive of one | *at least X* / *X would work* |
+| **…uol** (`zuel` / …) | closed invert-menu of one | *anything but X* |
+| **…uom** (`zuem` / …) | open invert-menu of one | *anything but X (and possibly more)* |
+| **…aol** (`zael` / …) | closed inclusive of one | *X is enough* / *X'll do* |
+| **…aom** (`zaem` / …) | open inclusive of one | *at least X* / *X would work* |
 | **…ar** (`zar` / …) | unspecified add | *some (unknown) X* |
-| **…or** (`zor` / …) | unspecified menu | *any X* |
+| **…or** (`zer` / …) | unspecified menu | *any X* |
 | **…ul** (`zul` / …) | closed deny of one | *not X* |
 | **…um** (`zum` / …) | open deny of one | *not X (and possibly more)* |
 | **…un** (`zun` / …) | stock denial of one | *not X* (stock / conventional) |
@@ -237,25 +236,25 @@ Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *ther
 | **…al** (`zal` / …) | closed empty add | *nothing* / *nobody* |
 | **…am** (`zam` / …) | open empty add | *nothing, as far as I know* |
 | **…an** (`zan` / …) | named empty add | *null* / *void* (with items, **-n** instead names the bundle) |
-| **…ol** (`zol` / …) | closed empty menu | *no options* / *we're stuck* |
-| **…om** (`zom` / …) | open empty menu | *no pick, as far as I know* |
+| **…ol** (`zel` / …) | closed empty menu | *no options* / *we're stuck* |
+| **…om** (`zem` / …) | open empty menu | *no pick, as far as I know* |
 | **…ual** (`zual` / …) | closed empty invert-add | *everything* / *everyone* |
 | **…uam** (`zuam` / …) | open empty invert-add | *everything, as far as I know* |
 | **…uan** (`zuan` / …) | stock empty invert-add | *everyone* / *everything* (stock); + SHARED kind → the kind itself |
-| **…uol** (`zuol` / …) | closed empty invert-menu | *anything (goes)* |
-| **…uom** (`zuom` / …) | open empty invert-menu | *anything offered* |
-| **…aol** (`zaol` / …) | closed empty inclusive | *all set* / *nothing more needed* |
-| **…aom** (`zaom` / …) | open empty inclusive | *nothing needed, as far as I know* |
+| **…uol** (`zuel` / …) | closed empty invert-menu | *anything (goes)* |
+| **…uom** (`zuem` / …) | open empty invert-menu | *anything offered* |
+| **…aol** (`zael` / …) | closed empty inclusive | *all set* / *nothing more needed* |
+| **…aom** (`zaem` / …) | open empty inclusive | *nothing needed, as far as I know* |
 | **…ul** (`zul` / …) | closed empty deny | *no* |
 | **…um** (`zum` / …) | open empty deny | *no, as far as I know* |
 | **…un** (`zun` / …) | stock empty deny | *No* (stock) |
 | **…ar** (`zar` / …) | unspecified empty add | *something* / *someone* |
-| **…or** (`zor` / …) | unspecified empty menu | *anything* / *anyone* |
+| **…or** (`zer` / …) | unspecified empty menu | *anything* / *anyone* |
 | **…ur** (`zur` / …) | unspecified empty leftover | *something else* / *someone else* |
 
 ### Exclusivity and denying a whole list
 
-When English would allow several listed items at once (*and/or*), stack **a** then **o** (**`ao`**). **`o`** alone is still at most one: closed **-l** is pick one; open **-m** is *(optional)*. On **`ao`**, even **-m** still needs at least one of the listed items.
+When English would allow several listed items at once (*and/or*), stack **a** then **e** (**`ae`**). **`e`** alone is still at most one: closed **-l** is pick one; open **-m** is *(optional)*. On **`ae`**, even **-m** still needs at least one of the listed items.
 
 When English would deny a list as a whole (*not both*), close the list with its own join, then add a **u** join after it. The inner list is the one item before the **u** join, so this is single-item *not X* with the whole list as X. To deny each item instead (*neither A nor B*), put the items straight before the **u** join, as in Beginner [negation](/joins#negation-u).
 
@@ -265,7 +264,7 @@ When English would deny a list as a whole (*not both*), close the list with its 
 >
 > "not both walk and run."
 
-> `vowurel varuvel vol vul.`
+> `vowurel varuvel vel vul.`
 >
 > [[v-walk | v-run | v-or-exactly-one] | v-not]
 >
@@ -275,7 +274,7 @@ When English would deny a list as a whole (*not both*), close the list with its 
 |--------|---------|
 | `vowurel varuvel vul` | *neither walk nor run* |
 | `vowurel varuvel val vul` | *not both walk and run* |
-| `vowurel varuvel vol vul` | *not exactly one of walk and run* |
+| `vowurel varuvel vel vul` | *not exactly one of walk and run* |
 
 ### Fence nesting {#fence-nesting}
 
@@ -283,8 +282,8 @@ When one list sits inside another (*(tea or coffee) and water*), write the inner
 
 | Pattern | Agebon | English |
 |---------|--------|---------|
-| flat | `zududal zugudal zowulal zol` | *tea or coffee or water* |
-| nested | `zududal zugudal zol zowulal zal` | *either tea or coffee, and water* |
+| flat | `zududal zugudal zowulal zel` | *tea or coffee or water* |
+| nested | `zududal zugudal zel zowulal zal` | *either tea or coffee, and water* |
 | nested adjectives | `gerulel gamezom gul gelazom gal` | *big, and neither red nor small* |
 
 ### Practice {#intermediate-practice}
@@ -329,7 +328,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **2.** *either wine or beer, and a ring*
 
 ::: details Show answer
-`zawudal zobudal zol zorebol zal.`
+`zawudal zobudal zel zorebol zal.`
 
 [[z-wine | z-beer | z-or-exactly-one] | z-ring | z-and]
 :::
@@ -337,7 +336,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **3.** *Uzozen kisses first, then Olazun.*
 
 ::: details Show answer
-`zuzozen zolazun zael veyuyal.`
+`zuzozen zolazun zaol veyuyal.`
 
 [z-Uzozen | z-Olazun | z-in-order] | v-kiss
 :::
@@ -352,7 +351,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zevobul zuol.`
+**1.** `zevobul zuel.`
 
 ::: details Show answer
 [z-veil | z-anything-but]
@@ -360,7 +359,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *anything but the veil*
 :::
 
-**2.** `zahelan zaom.`
+**2.** `zahelan zaem.`
 
 ::: details Show answer
 [z-Ahelan | z-and/or.open]
@@ -376,7 +375,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Uzozen and Olazun see the ring and the veil, respectively.*
 :::
 
-**4.** `zahelan zuel.`
+**4.** `zahelan zuol.`
 
 ::: details Show answer
 [z-Ahelan | z-rank/less]
@@ -386,10 +385,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Ahelan, then Olazun, then Uzozen.* (a turn order) `zahelan zolazun zuzozen zael.` or `zahelan zolazun zuzozen zel.`
+**1.** *Ahelan, then Olazun, then Uzozen.* (a turn order) `zahelan zolazun zuzozen zaol.` or `zahelan zolazun zuzozen zol.`
 
 ::: details Show answer
-`zahelan zolazun zuzozen zael.`
+`zahelan zolazun zuzozen zaol.`
 
 [z-Ahelan | z-Olazun | z-Uzozen | z-in-order]
 

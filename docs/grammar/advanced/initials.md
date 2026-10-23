@@ -10,7 +10,7 @@ English shortens a long title to its initials (*FBI*). Agebon does too: take eac
 
 > `z@_nl vezuyel.`
 >
-> 🔊 `zronulan vezuyel.`
+> 🔊 `zrenulan vezuyel.`
 >
 > z-_nl.named | v-tell
 >
@@ -19,10 +19,10 @@ English shortens a long title to its initials (*FBI*). Agebon does too: take eac
 | Agebon | Use | English |
 |--------|-----|---------|
 | `zanaxolazun` | long title (`ana` × `olazu`) | *Book-Courage* |
-| `z@_nl` (🔊 `zronulan`) | initials: `n` from `ana`, `l` from `olazu` | *the NL*, the same office |
-| `z=_nl` (🔊 `zronular`) | resume | *that office again* |
+| `z@_nl` (🔊 `zrenulan`) | initials: `n` from `ana`, `l` from `olazu` | *the NL*, the same office |
+| `z=_nl` (🔊 `zrenular`) | resume | *that office again* |
 
-- **Any title works.** Each initial is its own syllable, so two roots with the same first consonant give a doubled letter (`zanaxanumun` → `z@_nn`, 🔊 `zronunun`), and a title of any length gives one letter per root.
+- **Any title works.** Each initial is its own syllable, so two roots with the same first consonant give a doubled letter (`zanaxanumun` → `z@_nn`, 🔊 `zrenunun`), and a title of any length gives one letter per root.
 - **Initials can be shared,** as in English. Context sorts out which office is meant. When you need a name nobody else has, give the office a [proper name](/proper-names#proper-name--n) of its own instead: one published root + **-n**.
 - **Say it mid-sentence.** The whole rule is *say each root's first consonant by its letter name*, so you can make the initials while you talk.
 
@@ -55,9 +55,9 @@ English *5 or more* / *less than 5* is a **ray**: a band with only one end. Writ
 
 For counts, −∞ reads as *no lower limit*: `zagozolx gruwal al grazal` is *up to five cats*.
 
-Ranks take the first and last place as ends. **`grewal`** is the last place and **`grewul`** the first, so `zredol al zrewal` is *2nd through last*.
+Ranks take the first and last place as ends. **`growal`** is the last place and **`growul`** the first, so `zrodol al zrowal` is *2nd through last*.
 
-**Compare with:** a rank join on one number is not a ray: `zrazal zel` is *only 5 matters*, and `zrazal zael` is *start with 5*.
+**Compare with:** a rank join on one number is not a ray: `zrazal zol` is *only 5 matters*, and `zrazal zaol` is *start with 5*.
 
 ### Named and unknown ranges {#named-ranges}
 <a id="half-open-exclude-the-high-end-only"></a>
@@ -95,7 +95,7 @@ The [range hooks](/ending-grids#ranges) take **-r** the same way: `zragel uar zr
 
 On a rank number (forward **`#`** / **`re`** or end-relative **`#-`** / **`rue`**), an exponent with digits is not a power of ten. It says **how many generations away** from the person, version, or outline point in focus. Use it when English would say *the third grandchild* or *the 3rd sub-point*.
 
-The marker still counts **from the start** or **from the end**, but only among the members of that generation (its cohort). The exponent **`eK`** names the generation K steps deeper (descendants), and **`e-K`** the generation K steps up (ancestors). The mantissa picks which member; leave it off to name the whole cohort. Leave the exponent off for the focus's **own** generation (`gregel` = 3rd peer). Writing **`e0`** says *current generation* outright, which is usually redundant.
+The marker still counts **from the start** or **from the end**, but only among the members of that generation (its cohort). The exponent **`eK`** names the generation K steps deeper (descendants), and **`e-K`** the generation K steps up (ancestors). The mantissa picks which member; leave it off to name the whole cohort. Leave the exponent off for the focus's **own** generation (`grogel` = 3rd peer). Writing **`e0`** says *current generation* outright, which is usually redundant.
 
 | Piece | Job |
 |-------|-----|
@@ -119,19 +119,19 @@ The marker still counts **from the start** or **from the end**, but only among t
 | **`g#e-1`** | generation −1 / parent layer (member unspecified) |
 | **`g#1e-1`** | 1st of generation −1 (often *the parent* when the cohort is singleton-framed) |
 
-On `/x/`, generations are levels of an outline: `x#3e2` is the *3rd sub-sub-point under the current point*, and **`xrewamol`** is *the point or points on the current level*. `/h/`, `/v/`, and `/y/` read generations the same way when the series comes in levels (*for the 3rd time at level +2*, *place 3rd at level +2*, …). For a plain count of occasions, use **`h#N`**.
+On `/x/`, generations are levels of an outline: `x#3e2` is the *3rd sub-sub-point under the current point*, and **`xrowamol`** is *the point or points on the current level*. `/h/`, `/v/`, and `/y/` read generations the same way when the series comes in levels (*for the 3rd time at level +2*, *place 3rd at level +2*, …). For a plain count of occasions, use **`h#N`**.
 
 #### Kin {#kin-generations}
 
 Generations form a **tree**, like an outline. A cohort is only the members **under the same node**, so the plain forms name close family and never side branches:
 
-- **`grewubal`** is the layer directly above the focus: the **parents**, not aunts or uncles.
-- **`grewamol`** is the others under the same parent: the **siblings**, not cousins. It never includes the focus.
-- **`grewabal`** / **`grewadol`** are the focus's own **children** / **grandchildren**, not nieces or nephews.
+- **`growubal`** is the layer directly above the focus: the **parents**, not aunts or uncles.
+- **`growamol`** is the others under the same parent: the **siblings**, not cousins. It never includes the focus.
+- **`growabal`** / **`growadol`** are the focus's own **children** / **grandchildren**, not nieces or nephews.
 
 The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest sibling, **`g#-1e0`** the youngest. To say whose family it is, put the anchor person in a `bl-` word right after the number. (cue: the number says how far up or down the tree; `/b/` says from whom)
 
-> `zolazun grewamol bluzozen vowurel.`
+> `zolazun growamol bluzozen vowurel.`
 >
 > [z-Olazun | [g-#-e0 | bl-Uzozen]] | v-walk
 >
@@ -139,7 +139,7 @@ The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest si
 
 With no `bl-` word after a joined subject, each member is a sibling of the others.
 
-> `zuzozen zolazun zal grewamol.`
+> `zuzozen zolazun zal growamol.`
 >
 > [z-Uzozen | z-Olazun | z-and | g-#-e0]
 >
@@ -147,7 +147,7 @@ With no `bl-` word after a joined subject, each member is a sibling of the other
 
 > `zolazun g#1e0 bluzozen vowurel.`
 >
-> 🔊 `zolazun grewamoyabal bluzozen vowurel.`
+> 🔊 `zolazun growamoyabal bluzozen vowurel.`
 >
 > [z-Olazun | [g-#-1e0 | bl-Uzozen]] | v-walk
 >
@@ -155,7 +155,7 @@ With no `bl-` word after a joined subject, each member is a sibling of the other
 
 > `zahoyel g#2e1 bluzozen vowurel.`
 >
-> 🔊 `zahoyel grewabayadol bluzozen vowurel.`
+> 🔊 `zahoyel growabayadol bluzozen vowurel.`
 >
 > [z-child | [g-#-2e1 | bl-Uzozen]] | v-walk
 >
@@ -163,9 +163,9 @@ With no `bl-` word after a joined subject, each member is a sibling of the other
 
 For a side branch, nest a second anchor: first step to the relative, then from there. *Aunt or uncle* is a sibling of a parent.
 
-> `zolazun grewamol bleyol g#1e-1 bluzozen vowurel.`
+> `zolazun growamol bleyol g#1e-1 bluzozen vowurel.`
 >
-> 🔊 `zolazun grewamol bleyol grewubayabal bluzozen vowurel.`
+> 🔊 `zolazun growamol bleyol growubayabal bluzozen vowurel.`
 >
 > [z-Olazun | [g-#-e0 | [bl-person | [g-#-1e-1 | bl-Uzozen]]]] | v-walk
 >

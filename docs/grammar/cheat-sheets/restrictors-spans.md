@@ -23,7 +23,7 @@ List the **occasions** (times or cases) in the adverb slot `/h/`, then end with 
 | [Usually](/restrictors#always-hual): open | `zahelan vezuyol huam.` | *Ahelan usually sings.* | B |
 | [Always except](/restrictors#always-hual) | `zuzozen vowurel herulal hual.` | *Uzozen always walks except when it rains.* | B |
 | [Sometimes](/restrictors#sometimes-anytime-some-other-time) | `zolazun varuvel har.` | *Olazun runs sometimes.* | B |
-| [Anytime](/restrictors#sometimes-anytime-some-other-time) | `zahelan vowurel hor.` | *Ahelan walks anytime.* (whichever time you pick) | B |
+| [Anytime](/restrictors#sometimes-anytime-some-other-time) | `zahelan vowurel her.` | *Ahelan walks anytime.* (whichever time you pick) | B |
 | [Some other time](/restrictors#sometimes-anytime-some-other-time) | `zahelan vowurel hur.` | *Ahelan walks at some other time.* | B |
 | [When and at other times too](/restrictors#listed-occasions-open): open | `zuzozen vezuvol herulal hanurul ham.` | *Uzozen sleeps when it rains and at night, among other times.* | B |
 | [Only the adjective](/restrictors#on-the-following-adjective-w) | `zuzozen wal guzemol.` | *Uzozen is never sleepy.* | B |
@@ -40,23 +40,23 @@ The vowel picks the reading and the ending says how open the list is: **-l** clo
 | Agebon | Use | English (with occasions) | English (bare) | Stage |
 |--------|-----|--------------------------|----------------|-------|
 | [**`hal` / `ham`**](/more-occasions#more-occasions) | listed times | *only when…* / *when…, among others* | *never* / *never, as far as I know* | B |
-| [**`hol` / `hom`**](/more-occasions#more-occasions) | one exclusive menu | *either when A or when B (not both)* | | I |
-| [**`haol` / `haom`**](/more-occasions#more-occasions) | any of the listed times | *when A and/or when B* | | I |
+| [**`hel` / `hem`**](/more-occasions#more-occasions) | one exclusive menu | *either when A or when B (not both)* | | I |
+| [**`hael` / `haem`**](/more-occasions#more-occasions) | any of the listed times | *when A and/or when B* | | I |
 | [**`hul` / `hum`**](/more-occasions#more-occasions) | invert the list | *not when…* | | I |
 | [**`hual` / `huam`**](/more-occasions#more-occasions) | every time minus the list | *always except when…* | *always* / *usually* | B |
-| [**`huol` / `huom`**](/more-occasions#more-occasions) | any leftover time minus the list | *anytime except when…* | | I |
+| [**`huel` / `huem`**](/more-occasions#more-occasions) | any leftover time minus the list | *anytime except when…* | | I |
 
 ### Ranked {#ranked}
 
 <!-- cheat-sheet: restrictors-spans -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`hel` / `hem`**](/more-occasions#more-occasions) | priority | *preferably when A ≻ when B* | I |
-| [**`hael` / `haem`**](/more-occasions#more-occasions) | in order | *first when A, then when B* | I |
+| [**`hol` / `hom`**](/more-occasions#more-occasions) | priority | *preferably when A ≻ when B* | I |
+| [**`haol` / `haom`**](/more-occasions#more-occasions) | in order | *first when A, then when B* | I |
 | [**`hoel` / `hoem`**](/more-occasions#more-occasions) | equal frequency | *equally when A and when B* | I |
-| [**`huel` / `huem`**](/more-occasions#more-occasions) | last-first | *as a last resort when A* | I |
+| [**`huol` / `huom`**](/more-occasions#more-occasions) | last-first | *as a last resort when A* | I |
 
-With several occasions before `huel`, the last listed is the first choice.
+With several occasions before `huol`, the last listed is the first choice.
 
 ### Some member, unlisted {#unspecified}
 
@@ -66,18 +66,18 @@ With several occasions before `huel`, the last listed is the first choice.
 | Agebon | Use | English (with occasions) | English (bare) | Stage |
 |--------|-----|--------------------------|----------------|-------|
 | [**`har`**](/more-occasions#more-occasions) | some member of the listed times | *sometimes among these* | *sometimes* | B |
-| [**`hor`**](/more-occasions#more-occasions) | some member of a one-choice menu | *anytime among these* | *anytime* | B |
+| [**`her`**](/more-occasions#more-occasions) | some member of a one-choice menu | *anytime among these* | *anytime* | B |
 | [**`hur`**](/more-occasions#more-occasions) | a leftover occasion | *some time other than these* | *some other time* | B |
-| [**`her`**](/more-occasions#more-occasions) | the first-ranked occasion | *at whichever ranks first* | *at the preferred time* | I |
+| [**`hor`**](/more-occasions#more-occasions) | the first-ranked occasion | *at whichever ranks first* | *at the preferred time* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Either, not both](/more-occasions#more-occasions) | `zuzozen vowurel herulal hanurul hol.` | *Uzozen walks either when it rains or at night.* (not both) | I |
-| [And/or](/more-occasions#more-occasions) | `zolazun vezuvol herulal hozulal haol.` | *Olazun sleeps when it rains and/or when it snows.* | I |
-| [Preferably](/more-occasions#more-occasions) | `zuzozen vowurel hubeham hanurul hel.` | *preferably on weekends, or else at night* | I |
-| [Last resort](/more-occasions#more-occasions) | `zuzozen vowurel herulal huel.` | *When it rains, Uzozen walks only as a last resort.* | I |
-| [When's best?](/more-occasions#more-occasions) | `yol her zayan vowurel.` | *When's best for us to walk?* | I |
-| [On an adjective, one of two](/more-occasions#more-occasions) | `zuzozen werulal wanurul wol guzemol.` | *sleepy either when it rains or at night* (not both) | I |
+| [Either, not both](/more-occasions#more-occasions) | `zuzozen vowurel herulal hanurul hel.` | *Uzozen walks either when it rains or at night.* (not both) | I |
+| [And/or](/more-occasions#more-occasions) | `zolazun vezuvol herulal hozulal hael.` | *Olazun sleeps when it rains and/or when it snows.* | I |
+| [Preferably](/more-occasions#more-occasions) | `zuzozen vowurel hubeham hanurul hol.` | *preferably on weekends, or else at night* | I |
+| [Last resort](/more-occasions#more-occasions) | `zuzozen vowurel herulal huol.` | *When it rains, Uzozen walks only as a last resort.* | I |
+| [When's best?](/more-occasions#more-occasions) | `yol hor zayan vowurel.` | *When's best for us to walk?* | I |
+| [On an adjective, one of two](/more-occasions#more-occasions) | `zuzozen werulal wanurul wel guzemol.` | *sleepy either when it rains or at night* (not both) | I |
 | [A whole clause as the occasion](/more-occasions#occasions-vs-a-dependent-when): `blarl` | `zahelan vezuyol thohom blarl zuzozen vowurel.` | *Ahelan sings if Uzozen walks.* | I |
 
 Use a restrictor when each occasion is a word; use `blarl` when the occasion is a full clause. To ask *when?*, see [When?](/fill-ask-jobs#when).
@@ -193,8 +193,8 @@ Braces `{ … }` group one chunk so a binder inside reaches only it. The edges a
 |------|----|------|
 | `hal` *only when* ([a closed list](/restrictors#only-when-never-hal)) | | `ham` *among other times* ([an open list](/restrictors#listed-occasions-open)) |
 | `hual` *always* ([every time](/restrictors#always-hual)) | | `har` *sometimes* ([some time](/restrictors#sometimes-anytime-some-other-time)) |
-| `hor` *anytime* ([any one will do](/restrictors#sometimes-anytime-some-other-time)) | | `hual` *always* ([at all times](/restrictors#always-hual)) |
-| `hur` *some other time* ([a leftover occasion](/more-occasions#more-occasions)) | | `huol` *anytime except when…* ([leftover times in general](/more-occasions#more-occasions)) |
+| `her` *anytime* ([any one will do](/restrictors#sometimes-anytime-some-other-time)) | | `hual` *always* ([at all times](/restrictors#always-hual)) |
+| `hur` *some other time* ([a leftover occasion](/more-occasions#more-occasions)) | | `huel` *anytime except when…* ([leftover times in general](/more-occasions#more-occasions)) |
 | `herulal hal` *only when it rains* ([a restrictor list](/more-occasions#occasions-vs-a-dependent-when)) | | `thohom blarl` *if a whole sentence* ([a dependent](/more-occasions#occasions-vs-a-dependent-when)) |
 | `d[uzozen]` *what was said* ([a cite](/spans#writing)) | | `denuron` *the one-word name* ([an ordinary -n word](/spans#exact-paraphrase-proper)) |
 | `d@[enuron olazun]` *the work* ([a proper span](/spans#exact-paraphrase-proper)) | | `glegen` *the name as spelling* ([a mention](/span-mention#mention)) |

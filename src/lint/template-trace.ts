@@ -28,8 +28,8 @@ const fillers = closedDerived(() => {
     named: {
       HOOK: ["al", "am", "ul", "ol", "el", "aol"],
       BODY: [`z${swan}n v${walk}l`, `v${walk}l`],
-      LINKER: ["xal", "xol"],
-      JOIN: ["zal", "zol", "zel"],
+      LINKER: ["xal", "xel"],
+      JOIN: ["zal", "zel", "zol"],
     } as Record<string, string[]>,
     leading: [
       "z", "d", "v", "g", "b", "h", "w", "x", "y", "th",

@@ -151,7 +151,7 @@ To ask what the talk is about, ask *which topic?*: the fill-ask blank `zar`, the
 >
 > "Which topic?" / "What are we talking about?"
 
-**Compare with:** English *topic* covers several jobs, and Agebon keeps them apart. The discourse topic is `/x/`. A sentence frame is `hahugem` *as for*. `&` contrasts one phrase ([tone marks](tone-marks.md#tone-marks)). `zal` / `zem` / `zel` rank among others. Only `/x/` sets the topic.
+**Compare with:** English *topic* covers several jobs, and Agebon keeps them apart. The discourse topic is `/x/`. A sentence frame is `hahugem` *as for*. `&` contrasts one phrase ([tone marks](tone-marks.md#tone-marks)). `zal` / `zom` / `zol` rank among others. Only `/x/` sets the topic.
 
 ### Practice {#intermediate-practice}
 

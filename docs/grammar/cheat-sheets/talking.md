@@ -132,9 +132,9 @@ The reply to a fill-ask is the fill as a [citation](/word-endings#citation-forms
 <!-- cheat-sheet: talking -->
 | Blank | Means | Stage |
 |-------|-------|-------|
-| [`gar`](/fill-ask-jobs#what-kind) / `gor` / `gur` | *what is it like?* / *like anything?* / *what else is it like?* | B |
+| [`gar`](/fill-ask-jobs#what-kind) / `ger` / `gur` | *what is it like?* / *like anything?* / *what else is it like?* | B |
 | [`ol bar`](/fill-ask-jobs#where) / `al bar` / `ul bar` / `el bar` | *where (at)?* / *in what?* / *where from?* / *for what?* | B |
-| [`ol bor`](/fill-ask-jobs#where) / `ol bur` | *anywhere?* / *where else?* | B |
+| [`ol ber`](/fill-ask-jobs#where) / `ol bur` | *anywhere?* / *where else?* | B |
 | [`thahum blar`](/fill-ask-jobs#why) | *why?* | B |
 | [`hovam blar`](/fill-ask-jobs#why) | *what for?* | B |
 | [`thohom blar`](/fill-ask-jobs#why) | *under what condition?* | B |

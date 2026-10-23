@@ -130,9 +130,9 @@ describe("parse field keys", () => {
       .words.filter((w) => matchesTerm(w, parseTerm(term)))
       .map((w) => w.word.raw);
 
-  it("matches join series e, not a hook or polar yes", () => {
-    const text = "zuzozen zel vowurel al buwon. yael.";
-    assert.deepEqual(raws(text, "family=joinMarker,series=e"), ["zel"]);
+  it("matches join series o, not a hook or polar yes", () => {
+    const text = "zuzozen zol vowurel al buwon. yael.";
+    assert.deepEqual(raws(text, "family=joinMarker,series=o"), ["zol"]);
     assert.deepEqual(raws(text, "family=hook,form=al|om"), ["al"]);
     assert.deepEqual(raws(text, "family=joinMarker,role=y,series=ae"), ["yael"]);
   });
@@ -142,9 +142,9 @@ describe("parse field keys", () => {
   });
 
   it("treats writing and speech number markers as twins, not a digit re", () => {
-    const text = "zanal gredol. zanal g#2. zanal grarel.";
-    assert.deepEqual(raws(text, "marker=re").sort(), ["g#2", "gredol"]);
-    assert.deepEqual(raws(text, "marker=#").sort(), ["g#2", "gredol"]);
+    const text = "zanal grodol. zanal g#2. zanal grarel.";
+    assert.deepEqual(raws(text, "marker=ro").sort(), ["g#2", "grodol"]);
+    assert.deepEqual(raws(text, "marker=#").sort(), ["g#2", "grodol"]);
     assert.deepEqual(raws(text, "marker=ra"), ["grarel"]);
   });
 
@@ -180,15 +180,15 @@ describe("parse field keys", () => {
   });
 
   it("matches restrictor reading, not a join", () => {
-    const text = "zahelan vezuyol hel. zuzozen zel vowurel.";
-    assert.deepEqual(raws(text, "reading=restrictor"), ["hel"]);
-    assert.deepEqual(raws(text, "reading=join,series=e"), ["zel"]);
+    const text = "zahelan vezuyol hol. zuzozen zol vowurel.";
+    assert.deepEqual(raws(text, "reading=restrictor"), ["hol"]);
+    assert.deepEqual(raws(text, "reading=join,series=o"), ["zol"]);
   });
 
   it("projects hitWord fields including stored marker", () => {
-    const [ordinal] = sentence("gredol").words;
+    const [ordinal] = sentence("grodol").words;
     assert.deepEqual(hitWord(ordinal!), {
-      raw: "gredol",
+      raw: "grodol",
       role: "g",
       family: "number",
       series: null,

@@ -58,7 +58,7 @@ When English says *how many* or *which place*, Agebon uses a [number word](/numb
 
 `gragel` is `g` + `ra` + digit `ge` + `-l`.
 
-A code (marker `ro`) may hold letters as well as digits, and is spelled aloud one letter name at a time (letter names come below). Its body may break the ordinary word shape in two ways: a vowel letter comes after a short break, written **`'`** (`zro'ebal`), and two vowels may then sit side by side, even the same vowel twice (`zrobu'ul`). The role letter plus `r` already tells you a number is coming, so a code never sounds like a root. The `'` appears only inside a code.
+A code (marker `re`) may hold letters as well as digits, and is spelled aloud one letter name at a time (letter names come below). Its body may break the ordinary word shape in two ways: a vowel letter comes after a short break, written **`'`** (`zre'ebal`), and two vowels may then sit side by side, even the same vowel twice (`zrebu'ul`). The role letter plus `r` already tells you a number is coming, so a code never sounds like a root. The `'` appears only inside a code.
 
 ### Syllabic `l` {#syllabic-l}
 

@@ -243,13 +243,13 @@ describe("parse — joins.md", () => {
   });
 
   it("parses nested left-associative VP joins", () => {
-    const result = parseText("vowurel vezuvol vol varuvel val.");
+    const result = parseText("vowurel vezuvol vel varuvel val.");
     const unit = result.utterances[0]!.bodies[0]!.clause.units[0]!;
     assert.equal(unit.kind, "vp");
     if (unit.kind !== "vp") return;
     assert.equal(unit.coord.parts.length, 2);
     assert.equal(unit.coord.parts[0]!.items.length, 2);
-    assert.equal(unit.coord.parts[0]!.join?.raw, "vol");
+    assert.equal(unit.coord.parts[0]!.join?.raw, "vel");
     assert.equal(unit.coord.parts[1]!.items.length, 1);
     assert.equal(unit.coord.parts[1]!.join?.raw, "val");
   });
@@ -290,14 +290,14 @@ describe("parse — stand-in dependents", () => {
   });
 
   it("keeps clause joins after a stand-in inside its dependent", () => {
-    const clause = parseText("zuzozen vanam dorl zolazun vowurel xol zahelan varuvel.").utterances[0]!.bodies[0]!.clause;
+    const clause = parseText("zuzozen vanam dorl zolazun vowurel xel zahelan varuvel.").utterances[0]!.bodies[0]!.clause;
     assert.equal(clause.units.some((unit) => unit.kind === "clauseCoord"), false);
     const dep = clause.dependent;
     assert.equal(dep?.orodo.raw, "dorl");
     const coord = dep?.clause.units[0];
     assert.ok(coord && coord.kind === "clauseCoord");
     assert.equal(coord.coord.links.length, 1);
-    assert.equal(coord.coord.links[0]!.join.raw, "xol");
+    assert.equal(coord.coord.links[0]!.join.raw, "xel");
     const nested = parseText("zuzozen vezuyol thahum blarl zolazun vowurel thahum blarl zahelan vezuvol xal zuzozen varuvel.").utterances[0]!.bodies[0]!.clause;
     const inner = nested.dependent?.clause.units[0];
     assert.ok(inner && inner.kind === "clauseCoord");
@@ -338,15 +338,15 @@ describe("parse — stand-in dependents", () => {
 });
 
 describe("parse — comparatives manner scale", () => {
-  it("attaches /h/ immediately after zel as SHARED, then the verb", () => {
-    const result = parseText("zolazun zuzozen zel huhunem vowurel.");
+  it("attaches /h/ immediately after zol as SHARED, then the verb", () => {
+    const result = parseText("zolazun zuzozen zol huhunem vowurel.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units.length, 2);
     assert.equal(units[0]!.kind, "np");
     assert.equal(units[1]!.kind, "vp");
     if (units[0]!.kind !== "np") return;
     const part = units[0]!.coord.parts[0]!;
-    assert.equal(part.join?.raw, "zel");
+    assert.equal(part.join?.raw, "zol");
     assert.equal(part.shared.length, 1);
     const shared = part.shared[0]!;
     assert.ok("word" in shared);
@@ -548,7 +548,7 @@ describe("parse — as-of poles", () => {
   });
 
   it("parses /w/ as-of before a shared adjective", () => {
-    const result = parseText("zuzozen zolazun zel wenam b_#22,7 gamahum.");
+    const result = parseText("zuzozen zolazun zol wenam b_#22,7 gamahum.");
     const np = result.utterances[0]!.bodies[0]!.clause.units[0];
     assert.ok(np && np.kind === "np");
     const shared = np.coord.parts[0]!.shared[0];
@@ -595,7 +595,7 @@ describe("parse — as-of poles", () => {
   });
 
   it("parses /w/ as-of resume immediately before the adjective", () => {
-    const result = parseText("zuzozen zolazun zel wenar gamahum.");
+    const result = parseText("zuzozen zolazun zol wenar gamahum.");
     const np = result.utterances[0]!.bodies[0]!.clause.units[0];
     assert.ok(np && np.kind === "np");
     const shared = np.coord.parts[0]!.shared[0];
@@ -663,32 +663,32 @@ describe("parse — comparatives.md bars", () => {
 
   it("takes one /th/ stance word before a rank join as the fence's bar", () => {
     for (const [text, raw] of [
-      ["zuzozen thubem zel guzemol.", "thubem"],
-      ["zuzozen thagem zel bral vovurel.", "thagem"],
-      ["zanal thalem zuel garolom.", "thalem"],
+      ["zuzozen thubem zol guzemol.", "thubem"],
+      ["zuzozen thagem zol bral vovurel.", "thagem"],
+      ["zanal thalem zuol garolom.", "thalem"],
       ["zududal thudatham zoel gral.", "thudatham"],
-      ["zanal thugom zuem garolom.", "thugom"],
+      ["zanal thugom zuom garolom.", "thugom"],
       ["zolazun hodaxal zoel hedurem vowurel.", "hodaxal"],
       ["zahehal hwavel zoel gobobom.", "hwavel"],
-      ["zanal thoguyem zel gagebom.", "thoguyem"],
-      ["zuzozen thabomolazun zel guzemol.", "thabomolazun"],
+      ["zanal thoguyem zol gagebom.", "thoguyem"],
+      ["zuzozen thabomolazun zol guzemol.", "thabomolazun"],
     ] as const) {
       assert.equal(barOf(text)?.word.raw, raw, text);
     }
-    const units = parseText("zuzozen dodolx thagem del gral vagedal.").utterances[0]!.bodies[0]!.clause.units;
+    const units = parseText("zuzozen dodolx thagem dol gral vagedal.").utterances[0]!.bodies[0]!.clause.units;
     const object = units.find((u) => u.kind === "np" && u.coord.level === "d");
     assert.ok(object?.kind === "np" && object.coord.parts[0]!.items.some((i) => i.kind === "bar" && i.bar.word.raw === "thagem"));
   });
 
   it("keeps a bar's hosted /b/ and dated offset inside the fence", () => {
-    assert.equal(barOf("zanal thebam blolazun zuel gagebom.")?.hosted?.bound.raw, "blolazun");
-    const dated = barOf("zuzozen thevum bluzurem grubal zel guzemol.");
+    assert.equal(barOf("zanal thebam blolazun zuol gagebom.")?.hosted?.bound.raw, "blolazun");
+    const dated = barOf("zuzozen thevum bluzurem grubal zol guzemol.");
     assert.equal(dated?.hosted?.bound.raw, "bluzurem");
     assert.equal(dated?.hosted?.amount?.raw, "grubal");
   });
 
   it("ranks a closed universal fence against the bar after it", () => {
-    for (const text of ["zuam gwazodamul thubem zel hral vabezum.", "zuan gwazodamul thubem zel hral vabezum.", "zual gagozol thubem zel guzemol."]) {
+    for (const text of ["zuam gwazodamul thubem zol hral vabezum.", "zuan gwazodamul thubem zol hral vabezum.", "zual gagozol thubem zol guzemol."]) {
       const units = parseText(text).utterances[0]!.bodies[0]!.clause.units;
       const np = units[0]!;
       assert.ok(np.kind === "np", text);
@@ -698,12 +698,12 @@ describe("parse — comparatives.md bars", () => {
       assert.ok(!units.some((u) => u.kind === "h"), text);
     }
     // Only the `ua` fences rank as one item; `zul` + kind keeps the bar out.
-    const units = parseText("zul gagozol thubem zel guzemol.").utterances[0]!.bodies[0]!.clause.units;
+    const units = parseText("zul gagozol thubem zol guzemol.").utterances[0]!.bodies[0]!.clause.units;
     assert.ok(units.some((u) => u.kind === "h" && u.unit.word.raw === "thubem"));
   });
 
   it("reads an adjective after a bar's hosted /b/ as describing that noun, inside the fence", () => {
-    const bar = barOf("zuzozen thubem blwezeluyelx guzemol zel gezuyol.");
+    const bar = barOf("zuzozen thubem blwezeluyelx guzemol zol gezuyol.");
     assert.equal(bar?.hosted?.bound.raw, "blwezeluyelx");
     assert.deepEqual(bar?.hosted?.adjs?.map((a) => a.word.raw), ["guzemol"]);
     // On the clause too, an adjective after a `/th/` host's `/b/` describes that noun (left-bound.md#complex-chaining).
@@ -712,19 +712,19 @@ describe("parse — comparatives.md bars", () => {
   });
 
   it("keeps the ranked item's hook + /b/ before its bar inside the fence", () => {
-    const part = fence("zanal om buwon thagem zel garolom.")!;
+    const part = fence("zanal om buwon thagem zol garolom.")!;
     assert.deepEqual(part.items.map((i) => i.kind), ["package", "bar"]);
     assert.equal(part.items[0]!.kind === "package" && part.items[0]!.package.adjs[0]?.hosted?.bound.raw, "buwon");
   });
 
   it("reads a stance word outside the fence on the claim", () => {
-    const units = parseText("zuzozen zel guzemol thubem.").utterances[0]!.bodies[0]!.clause.units;
+    const units = parseText("zuzozen zol guzemol thubem.").utterances[0]!.bodies[0]!.clause.units;
     assert.deepEqual(units.map((u) => u.kind), ["np", "h"]);
     assert.ok(units[0]!.kind === "np" && units[0]!.coord.parts[0]!.items.every((i) => i.kind === "package"));
   });
 
   it("ends the sentence at a bar's barl: the next words are the grounds", () => {
-    const clause = parseText("zuzozen theyem blarl zel guzemol zolazun varemul.").utterances[0]!.bodies[0]!.clause;
+    const clause = parseText("zuzozen theyem blarl zol guzemol zolazun varemul.").utterances[0]!.bodies[0]!.clause;
     assert.equal(clause.units.length, 1);
     assert.deepEqual(clause.dependent?.clause.units.map((u) => u.kind), ["np", "vp"]);
   });
@@ -955,12 +955,12 @@ describe("parse — one tree per sentence (syntactic-unambiguity batch 5a)", () 
   });
 
   it("ranks a closed ua fence as one item only right after its join", () => {
-    const [z] = units("zanal om buwon thagem zel garolom.");
+    const [z] = units("zanal om buwon thagem zol garolom.");
     assert.ok(z?.kind === "np");
     assert.equal(z.coord.parts.length, 1);
     assert.equal(z.coord.parts[0]!.items.length, 2);
     // Right after a closed `ua` fence, the bar starts a part of its own that ranks the whole fence.
-    const [fence] = units("zuam gwazodamul thubem zel hral vabezum.");
+    const [fence] = units("zuam gwazodamul thubem zol hral vabezum.");
     assert.ok(fence?.kind === "np");
     assert.deepEqual(fence.coord.parts.map((p) => p.items.map((i) => i.kind)), [[], ["bar"]]);
   });

@@ -36,18 +36,18 @@ Polar answers stack two of these vowels. Beginner *yes* / *no* / *sure*: [polar 
 
 ## Joins {#series}
 
-[Joins](/joins#join-type-vowel-series), [same-role hooks](/hooks#including), and [discourse glue](/hooks#discourse-hooks) share **a** add, **o** one, **e** order, **u** undo.
+[Joins](/joins#join-type-vowel-series) use leftover-list: **a** grows, **o** ranks, **e** chooses one, **u** takes away. [Same-role hooks](/hooks#including) and [discourse glue](/hooks#discourse-hooks) still use **a** add, **o** one, **e** order, **u** undo.
 
 | Job | **a** | **o** | **e** | **u** | Stage |
 |-----|-------|-------|-------|-------|-------|
-| [Join](/joins#join-type-vowel-series) | *and* | pick one | rank: first matters most | *not* / *none of* | B |
+| [Join](/joins#join-type-vowel-series) | *and* | rank: first matters most | pick one | *not* / *none of* | B |
 | [Same-role hook](/hooks#including) | [*including*](/hooks#including) | [*instead*](/hooks#instead) | [*or rather*](/hooks#rather) | [*except*](/hooks#except) | B |
 | [Discourse glue](/hooks#discourse-hooks) | `al` *Additionally* | `ol` *Instead* | `el` *In other words* | `ul` *Except* | B |
 | [Hook resume, front](/discourse-hooks#hook-resume) | `ar` *Going back to that* | `or` *Anyway* | `er` *As I said* | `ur` *Never mind that* | I |
-| [Number marker](/number-markers#marker-vowel-referential-identity) | `+` count | `_` digit string | `#` ordinal | `-` negative | I |
-| [Restrictor](/restrictors) | `hal` *only when* / *never* | `hor` *anytime* | | `hur` *some other time*; `hual` *always* | B |
+| [Number marker](/number-markers#marker-vowel-referential-identity) | `+` count | `#` ordinal | `_` digit string | `-` negative | I |
+| [Restrictor](/restrictors) | `hal` *only when* / *never* | `her` *anytime* | | `hur` *some other time*; `hual` *always* | B |
 | [Conversation length](/compound-families#conversation-length) | `SELFxan` open-ended | `SELFxon` one slot | `SELFxen` a few minutes | `SELFxun` passing | I |
-| [Comparative](/comparatives#comparatives) / [equative](/comparatives#equatives) | | `zoel` *as … as* | `zel` *more … than* | | B |
+| [Comparative](/comparatives#comparatives) / [equative](/comparatives#equatives) | | `zoel` *as … as* | `zol` *more … than* | | B |
 | [Sake stance](/sakes#word-shape) | `tha` met / serves | | | `thu` unmet / detracts | B |
 | [Root job](/root-tails#root-tails) | holds or gathers | one whole thing | order, path, sequence | takes away | A |
 
@@ -57,12 +57,12 @@ Two vowels keep the same pieces: **u** first inverts, the rest combine. Join sta
 
 | Vowels | [Join](/joins#join-type-vowel-series) | Stage |
 |--------|----------------------------------------|-------|
-| **ao** | [*and/or*](/rank-joins#exclusivity-and-denying-a-whole-list) | I |
+| **ao** | [*A, then B*](/rank-joins#sequence-ao) | I |
 | **ua** | [*everything but*](/joins#everything-ua) | B |
-| **uo** | [*anything but*](/rank-joins#invert-u-stacks) | I |
-| **ae** | [*A, then B*](/rank-joins#sequence-ae) | I |
+| **uo** | [rank reversed](/rank-joins#invert-u-stacks) | I |
+| **ae** | [*and/or*](/rank-joins#exclusivity-and-denying-a-whole-list) | I |
 | **oe** | [tie](/rank-joins#rank-joins) | I |
-| **ue** | [rank reversed](/rank-joins#invert-u-stacks) | I |
+| **ue** | [*anything but*](/rank-joins#invert-u-stacks) | I |
 
 ## Extra nouns {#place}
 

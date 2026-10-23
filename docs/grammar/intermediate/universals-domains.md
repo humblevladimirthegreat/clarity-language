@@ -120,7 +120,7 @@ For English *whoever* / *whatever*, use a bare [role compound](/roles#role-compo
 >
 > "Whoever walks sings."
 
-Use closed `zual` plus kind when the claim allows no exceptions, and open `zuam` plus kind when you leave the exceptions open. Free-choice *any cat will do* uses `zor`.
+Use closed `zual` plus kind when the claim allows no exceptions, and open `zuam` plus kind when you leave the exceptions open. Free-choice *any cat will do* uses `zer`.
 
 **For *always*, use:** bare habitual **`hual`** ([restrictors](/restrictors)).
 

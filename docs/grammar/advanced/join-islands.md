@@ -103,7 +103,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **1.** *a page or a pen* (the familiar set phrase)
 
 ::: details Show answer
-`zebonel zabewel zon.`
+`zebonel zabewel zen.`
 
 NAME[z-page | z-pen | z-or-exactly-one]
 :::
@@ -203,14 +203,14 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 | **…oen** / **…en** / **…an** standalone | stock empty rank / named empty | *it's a draw*; *no favorite* (stock); *null* / *void* |
 | **…ual** / **…uol** standalone | empty invert | *everything*; *anything (goes)* |
 | `zeyol` vs `zeyol zar` | content **-l** vs join **-r** | *a person* vs *some person, unknown who* |
-| `A B C zor` vs `… zer` | menu vs rank unspecified | any of them is fine vs pick by ranking |
+| `A B C zer` vs `… zor` | menu vs rank unspecified | any of them is fine vs pick by ranking |
 | `A B zar` / `zur` / `zual` | among / leftover / invert | some one among; some one other than; *everything but* |
-| `A B zel` vs `A B zael` | rank vs [sequence](/rank-joins#sequence-ae) | A matters more than B vs A, then B |
+| `A B zol` vs `A B zaol` | rank vs [sequence](/rank-joins#sequence-ao) | A matters more than B vs A, then B |
 
-> `zududal zugudal zowulal zor.`
+> `zududal zugudal zowulal zer.`
 >
 > [z-tea | z-coffee | z-water | z-anything]
 >
 > "any of tea, coffee, or water is fine."
 
-**For *except*, use:** hook **`ul`** / **`um`** ([hooks](/hooks)). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (pick one of a closed list, but the pick is optional: `zududal zugudal zol zom`).
+**For *except*, use:** hook **`ul`** / **`um`** ([hooks](/hooks)). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (pick one of a closed list, but the pick is optional: `zududal zugudal zel zem`).

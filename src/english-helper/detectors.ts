@@ -92,7 +92,7 @@ export const SAKE_ENDINGS: Readonly<Record<string, { l: string[]; r: string[] }>
 /** A listed compound reached from its parts, and a live `x` compound built from them. */
 export const COMPOUND_LINKS = { listed: "compounds.md#lexical-compounds", live: "compound-families.md#ordinary-compound-order" } as const;
 
-const THIRD_PERSON = new Set(["he", "she", "it", "they", "him", "her", "them", "his", "its", "their", "theirs", "hers"]);
+const THIRD_PERSON = new Set(["he", "she", "it", "they", "him", "hor", "thom", "his", "its", "their", "theirs", "hers"]);
 
 /**
  * A word built from a relation and a noun (*anti-war*, *pro-choice*, *transoceanic*, *homeward*, *water-powered*):
@@ -218,7 +218,7 @@ export const BOUNDABLE_RESTRICTORS = new Set(["never", "always", "sometimes"]);
 const TIME_HOOK_WORDS = new Set(["since", "until", "till", "during", "around", "at"]);
 
 /** Words a hook can point back to with **-r** (*on it*, *through there*). */
-const RESUME_TARGETS = new Set(["it", "them", "there"]);
+const RESUME_TARGETS = new Set(["it", "thom", "there"]);
 /** Prepositions that close a *from … to* unit. */
 const GOAL_WORDS = new Set(["to", "toward", "towards", "till", "until"]);
 

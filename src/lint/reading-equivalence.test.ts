@@ -43,7 +43,7 @@ describe("sameReading", () => {
   });
 
   it("does not match reordered /h/ words", () => {
-    assert.equal(sameReading("zuzozen huhohol hawebol huel vowurel.", "zuzozen hawebol huhohol huel vowurel.", tables), false);
+    assert.equal(sameReading("zuzozen huhohol hawebol huol vowurel.", "zuzozen hawebol huhohol huol vowurel.", tables), false);
   });
 
   it("does not match swapped role letters", () => {

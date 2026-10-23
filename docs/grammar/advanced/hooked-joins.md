@@ -68,7 +68,7 @@ The join part keeps its readings, so every [join ending](/joins#standalone-phras
 | Join ending | Agebon | English | Under `yol` |
 |-------------|--------|---------|-------------|
 | **-r** | `zoxar blahehal` | *someone at the house* | *who at the house?* |
-| **-r**, other series | `zoxor blahehal` / `zoxur blahehal` / `zoxer blahehal` | *anyone at the house* / *someone else at the house* / *whoever ranks highest at the house* | *any? / who else? / which one most?* |
+| **-r**, other series | `zoxer blahehal` / `zoxur blahehal` / `zoxor blahehal` | *anyone at the house* / *someone else at the house* / *whoever ranks highest at the house* | *any? / who else? / which one most?* |
 | **-r** + **-x** | `zoxarx blahehal` | *some people at the house* | *who all at the house?* |
 | **-l** | `zoxal blahehal` | *nobody at the house* | |
 | **-m** | `zoxam blahehal` | *nobody at the house, as far as I know* | |
@@ -121,7 +121,7 @@ The landmark may be a free hook's `/b/`, any hosted `bl-` word, or an earlier ho
 
 #### Bounding a time (`/h/`) {#hooked-joins-time}
 
-English *never since …* and *always, until …* bound how often something happens by a stretch of time. On `/h/`, a hooked join's join is a bare [restrictor](/restrictors), spelled as after the `h` of `hal` *never*, `ham`, `hual` *always*, `huam`, `har` *sometimes*, `hor`, `hur`, or `her`, and a time landmark bounds which times it covers. The restrictor still says how often; the hook says over which stretch.
+English *never since …* and *always, until …* bound how often something happens by a stretch of time. On `/h/`, a hooked join's join is a bare [restrictor](/restrictors), spelled as after the `h` of `hal` *never*, `ham`, `hual` *always*, `huam`, `har` *sometimes*, `her`, `hur`, or `hor`, and a time landmark bounds which times it covers. The restrictor still says how often; the hook says over which stretch.
 
 <!-- Exception to house-cast: *you never listen* is the complaint these forms answer, so the listener is the point. -->
 > `zawan vebal huxam blenulul.`

@@ -7,24 +7,24 @@ import type { LexWord, NumberStem } from "./types.js";
 /** Join series: `english` names the job in word cards, `job` in morph glosses ([joins.md](../../docs/grammar/joins.md)). */
 export const JOIN_SERIES: Record<string, { english: string; job: string }> = {
   a: { english: "and", job: "and" },
-  o: { english: "exclusive or", job: "or-exactly-one" },
-  ao: { english: "and/or", job: "and/or" },
+  o: { english: "rank", job: "rank/more" },
+  ao: { english: "sequence", job: "in-order" },
   u: { english: "not / none of", job: "not" },
   ua: { english: "everything but", job: "everything-but" },
-  uo: { english: "anything but", job: "anything-but" },
-  e: { english: "rank", job: "rank/more" },
-  ae: { english: "sequence", job: "in-order" },
+  uo: { english: "rank reversal", job: "rank/less" },
+  e: { english: "choice", job: "or-exactly-one" },
+  ae: { english: "and/or", job: "and/or" },
   oe: { english: "equal rank", job: "equal-rank" },
-  ue: { english: "rank reversal", job: "rank/less" },
+  ue: { english: "anything but", job: "anything-but" },
 };
 
-/** Series whose shared item ranks (`e` / `ue` / `ae`) or equates (`oe`). */
-export const RANK_SERIES = new Set(["e", "ae", "ue", "oe"]);
-/** Rank fences whose comparee may be a `/th/` stance bar: `e` more, `ue` less, `oe` equal (comparatives.md § bars). */
-export const BAR_SERIES = new Set(["e", "ue", "oe"]);
+/** Series whose shared item ranks (`o` / `uo` / `ao`) or equates (`oe`). */
+export const RANK_SERIES = new Set(["o", "ao", "uo", "oe"]);
+/** Rank fences whose comparee may be a `/th/` stance bar: `o` more, `uo` less, `oe` equal (comparatives.md § bars). */
+export const BAR_SERIES = new Set(["o", "uo", "oe"]);
 /** The rank series that order rather than equate (`oe` is the equative). */
-export const SCALE_SERIES = new Set(["e", "ae", "ue"]);
-export const KIND_SERIES = new Set(["ua", "uo"]);
+export const SCALE_SERIES = new Set(["o", "ao", "uo"]);
+export const KIND_SERIES = new Set(["ua", "ue"]);
 
 /** A hooked join's hook, as its free form (`ol`, `om`, `or`; hooked-joins.md#hooked-joins); undefined on any other word. */
 export function joinHook(word: LexWord | undefined): string | undefined {

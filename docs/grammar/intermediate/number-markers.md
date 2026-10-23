@@ -14,7 +14,7 @@ group = [exponent?] [mantissa digits?]
 ```
 
 1. **PoS:** the role letter (part of speech), as on any other word.
-2. **Number marker:** consonant **r** plus a vowel **V**. **V** is a single vowel at this stage. The cluster of role letter plus `r` is a [number-only letter-cluster exception](phonotactics.md#phonotactics). A marker can sound like a digit (rank **`re`**, digit 7 **`re`**), but the marker always comes straight after the role letter, so `grerel` is *the seventh*.
+2. **Number marker:** consonant **r** plus a vowel **V**. **V** is a single vowel at this stage. The cluster of role letter plus `r` is a [number-only letter-cluster exception](phonotactics.md#phonotactics). The marker always comes straight after the role letter, so `grorel` is *the seventh* (rank **`ro`**, then digit 7 **`re`**).
 3. **Zero or more digit groups:** each group is an optional exponent (the *order of magnitude* piece) and optional mantissa digits (the ordinary digits). A group always has at least one of those two pieces. Digits sit next to each other with no **x** between them. A sign, when there is one, applies once to the whole word. With **no groups**, the word is digitless: it says what kind of number it is, but not its value.
 4. **Group separator:** each group after the first opens with **`the`** (the spoken comma).
 5. **Ending:** `-l` / `-m` / `-n` / `-r`.
@@ -44,15 +44,15 @@ Change only the first letter. The marker and digits stay the same, and on these 
 
 ### Marker vowel (referential identity) {#marker-vowel-referential-identity}
 
-Beginner already used **`ra`** (*how many*) and **`re`** (*which place from the start*). The marker vowel **V** completes that set: it says whether the word is a count, a rank, or a string of digits, and on a count it also gives the sign of the whole number. The table shows each marker's shorthand symbol in parentheses. Forward ordinal **`e`** matches [rank join **e**](rank-joins.md#rank-joins).
+Beginner already used **`ra`** (*how many*) and **`ro`** (*which place from the start*). The marker vowel **V** completes that set: it says whether the word is a count, a rank, or a string of digits, and on a count it also gives the sign of the whole number. The table shows each marker's shorthand symbol in parentheses. Forward ordinal **`o`** matches [rank join **o**](rank-joins.md#rank-joins).
 
 <!-- cheat-sheet: numbers -->
 | Agebon | Use | English | Cue |
 |---|---------|---------|-----|
 | **a** (`+`) | positive **scalar** (count or measure amount) | `g+3` *three cats*; `g+` *plural / more than one*; `z+3` *three* (subj); `b+12` *of size 12* | **`a`** ≈ add |
 | **u** (`-`) | negative **scalar** | `d-3` *−3* (obj); `z-` *some negative amount*; `g-2` signed measure on a noun | **`u`** ≈ undo |
-| **e** (`#`) | **ordinal** / rank **from the start** | `g#2` *the second page*; `g#` *some rank*; `z#2` *second* (rank as subject) | **`e`** ≈ order |
-| **o** (`_`) | **digit-string** / label (phones, IDs, “read the digits”) | `d_5551234`; `d_` *some code*; `g_12` *room 12*-style; `b_…` under a host relation | **`o`** ≈ one (one string) |
+| **o** (`#`) | **ordinal** / rank **from the start** | `g#2` *the second page*; `g#` *some rank*; `z#2` *second* (rank as subject) | **`o`** ≈ order |
+| **e** (`_`) | **digit-string** / label (phones, IDs, “read the digits”) | `d_5551234`; `d_` *some code*; `g_12` *room 12*-style; `b_…` under a host relation | **`e`** ≈ either (one string) |
 
 Each number word is one kind of number, set by its marker. In preferred writing, the marker is **`+`** / **`-`** / **`#`** / **`_`**.
 
@@ -61,8 +61,8 @@ Each number word is one kind of number, set by its marker. In preferred writing,
 | Identity | How sign works |
 |----------|----------------|
 | **Scalar** (`a` / `u`, written `+` / `-`) | Sign **is** **V**. Multi-group scalars share one sign for the whole word (e.g. −1 000 265 004 is one **`ru`** word). |
-| **Forward ordinal** (`e`, written `#`) | Direction *from the start* |
-| **Digit-string** (`o`, written `_`) | Labels are unsigned. |
+| **Forward ordinal** (`o`, written `#`) | Direction *from the start* |
+| **Digit-string** (`e`, written `_`) | Labels are unsigned. |
 
 ### Number endings {#number-endings}
 
@@ -76,7 +76,7 @@ Beginner already used exact **-l**. The other endings mark *about*, a convention
 | **`@`** after PoS: `g@#2` | **-n** | conventional designation (titles, official labels, *the Second…*) | **-n** names the number |
 | **`=`** after PoS: `g=+3`, `g=#2`, `d=_12` | **-r** | resume of a previously stated number, code, or rank (at least one digit) | **-r** points back |
 
-A resume needs **at least one digit**: `grager` = *that three again*; `gredor` = *that second one again*. Use the same marker as the number you repeat. Digitless **-r** (`grar`) is not a resume: like a standalone join **-r**, it is *some number* in a statement and *which number?* in a question. **`=`** is never combined with **`~`** or **`@`**.
+A resume needs **at least one digit**: `grager` = *that three again*; `grodor` = *that second one again*. Use the same marker as the number you repeat. Digitless **-r** (`grar`) is not a resume: like a standalone join **-r**, it is *some number* in a statement and *which number?* in a question. **`=`** is never combined with **`~`** or **`@`**.
 
 > `zolazun dragel vawebol. zuzozen drager vawebol.`
 > z-Olazun | d-three | v-see . z-Uzozen | d-←three | v-see
@@ -111,8 +111,8 @@ A hedged conventional number (both **`@`** and **`~`**) is written with **`@`** 
 |--------|--------|---------|
 | **`+`** | `ra` | Positive scalar |
 | **`-`** | `ru` | Negative scalar |
-| **`#`** | `re` | Ordinal (from the start) |
-| **`_`** | `ro` | Digit-string |
+| **`#`** | `ro` | Ordinal (from the start) |
+| **`_`** | `re` | Digit-string |
 
 Put the marker symbol **right after** the ending mark (or right after the role letter when there is no mark), **before the digits** (or last, when there are no digits): `g+3`, `g~+3`, `g=+`, `d_12`, `d=_`, `g@#2`. A **`_`** label never takes a sign ([Sign](#sign)).
 
@@ -150,7 +150,7 @@ Both writings name the **same word**. Choose the surface by one test: **how many
 | Word | Prefer | Why |
 |------|--------|-----|
 | Free number with **two or more digits** | **shorthand** | `g+12`, `g#12`: a value to scan and compare |
-| Free number with **one digit or none** | **spelled** | `gragel` *three*, `gredol` *second*, `gramol` *zero*, `gral` *more than one*, `drar` *how many*; reads as a word, as English writes *three* |
+| Free number with **one digit or none** | **spelled** | `gragel` *three*, `grodol` *second*, `gramol` *zero*, `gral` *more than one*, `drar` *how many*; reads as a word, as English writes *three* |
 | Digit-string label or code (`_`) | **shorthand** | `d_5`, `d_12`: a code, not an amount (English *Room 5*) |
 | Numeric prefix | **spelled** (required) | shorthand before **`x`** and a root does not form a word |
 | Inventory tables | **shorthand** | patterns are easy to scan |
@@ -176,12 +176,12 @@ On `/v/`, the marker decides which action the number names.
 |--------|------------|
 | **`ra`** | **Add N / increase by N**: transitive *add N of (object)* / *increase (object) by N*; intransitive *grow by N* when the patient is clear from context. |
 | **`ru`** | **Remove N / decrease by N**: transitive *remove N of (object)* / *decrease (object) by N*; intransitive *shrink by N*. |
-| **`re`** | **Take / assign rank N (from the start)**: intransitive *place Nth* / *come in Nth*; transitive *put (object) in Nth place* / *rank as Nth*. |
-| **`ro`** | **Enter / dial / input that digit-string**: type the code, dial the phone number, key the ID. Object (if any) is the channel or device; the digits are in the verb. |
+| **`ro`** | **Take / assign rank N (from the start)**: intransitive *place Nth* / *come in Nth*; transitive *put (object) in Nth place* / *rank as Nth*. |
+| **`re`** | **Enter / dial / input that digit-string**: type the code, dial the phone number, key the ID. Object (if any) is the channel or device; the digits are in the verb. |
 
 To set a quantity to a value, use an ordinary verb with the number as its object or as an adverb. For *multiply* and *divide*, use an ordinary verb plus **`h+N`** / **`h-N`**.
 
-Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume with a digit; digitless `vrar` / `vror` is a blank).
+Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume with a digit; digitless `vrar` / `vrer` is a blank).
 
 #### Number as adverb (by marker) {#number-as-adverb-by-marker}
 
@@ -191,17 +191,17 @@ On `/h/`, the marker decides what kind of adverb the number is.
 |--------|---------|--------------|
 | **`ra`** | `h+N` | **Multiplicative / factor**: *N times*; *×N*; *by a factor of N* (alone, or with ordinary *multiply*). |
 | **`ru`** | `h-N` | **Inverse / partition**: *÷N*; *into N parts*; *1/N as often*; *every Nth* (alone, or with ordinary *divide*). |
-| **`re`** | `h#N` | **Nth occurrence of the event (from the start)**: *for the Nth time*; *on the Nth try* (clause-event ordinal, not discourse list independence). |
-| **`ro`** | `h_…` | **Clock** and **date** (a calendar ordinal). Channel, frequency, and other codes use a host relation + `/b/` (or `/ɡ/` on a noun). |
+| **`ro`** | `h#N` | **Nth occurrence of the event (from the start)**: *for the Nth time*; *on the Nth try* (clause-event ordinal, not discourse list independence). |
+| **`re`** | `h_…` | **Clock** and **date** (a calendar ordinal). Channel, frequency, and other codes use a host relation + `/b/` (or `/ɡ/` on a noun). |
 
 > `zolazun vowurel hragel.`
 > z-Olazun | v-walk | h-three
 >
 > "Olazun walks three times."
 
-Worked examples: `hragel` *three times*; `hrugel` *÷3 / into 3*; `hregel` *for the third time*. A frequency code goes after a relation word: *on* (on `/h/`) + `b_101`.
+Worked examples: `hragel` *three times*; `hrugel` *÷3 / into 3*; `hrogel` *for the third time*. A frequency code goes after a relation word: *on* (on `/h/`) + `b_101`.
 
-Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume with a digit; digitless `hrar` *how many times?* / `hror` *when?* is a blank). Relative %-change factors use **`h+…`** (e.g. ×1.5).
+Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume with a digit; digitless `hrar` *how many times?* / `hrer` *when?* is a blank). Relative %-change factors use **`h+…`** (e.g. ×1.5).
 
 #### Number as interjection (by marker) {#number-as-interjection-by-marker}
 
@@ -211,12 +211,12 @@ On `/y/`, a number is a **shout** (*Three more!*, a score). Number cheers sit wi
 |--------|---------|-------------------|
 | **`ra`** | `y+N` | **Quantity addition**: *Three more!*; *Ten more!* (add N to the relevant count / tally / order). |
 | **`ru`** | `y-N` | **Deficit / shortfall call**: *Three short!*; *Three fewer!*; *Down by 2!*; *−3!* (mirror of `y+`). |
-| **`re`** | `y#N` | **Place / rank cheer (from the start)**: *First!*; *Second!* (podium / place shout). |
-| **`ro`** | `y_…` | **Digit-label / magnitude call-out**: *Three!*; *B-12!*; *five-five-five!*; score, bingo, code, or ID as a bare reading of the digits (not “N more”). |
+| **`ro`** | `y#N` | **Place / rank cheer (from the start)**: *First!*; *Second!* (podium / place shout). |
+| **`re`** | `y_…` | **Digit-label / magnitude call-out**: *Three!*; *B-12!*; *five-five-five!*; score, bingo, code, or ID as a bare reading of the digits (not “N more”). |
 
-English *Three!* naming a score or count is **`yrol`**. *Three more!* (increment the tally) is **`yral`**.
+English *Three!* naming a score or count is **`yrel`**. *Three more!* (increment the tally) is **`yral`**.
 
-Worked examples: `y_3` *Three!*; `yragel` *Three more!*; `yrugel` *Three short!*; `yrebal` *First!*.
+Worked examples: `y_3` *Three!*; `yragel` *Three more!*; `yrugel` *Three short!*; `yrobal` *First!*.
 
 Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call name, **-r** resume a prior shout’s value, with a digit).
 
@@ -228,21 +228,21 @@ To number the points of a list (*point 2:*, *firstly*) or to cite a label (*item
 
 | Marker | Writing | Discourse sense |
 |--------|---------|-----------------|
-| **`re`** | `x#N` | **Neutral point N**: numbered item from the start, no independence framing (*point N:*, *note N:*, bare *(N)*). |
+| **`ro`** | `x#N` | **Neutral point N**: numbered item from the start, no independence framing (*point N:*, *note N:*, bare *(N)*). |
 | **`ra`** | `x+N` | **Corroborating item N**: backs, restates, or same-directions an earlier item (*corroborating N:*, *echoing N:*). Legitimate for emphasis, clarity, teaching, or a related source, not a new line of support. |
 | **`ru`** | `x-N` | **Independent item N**: a new line of support or consideration (*independent N:*, *distinct N:*). Would still matter if other listed items were gone. |
-| **`ro`** | `x_…` | **Cite a discourse label**: agenda item, section code, slide, ticket id (digits as label, not independence framing) (*regarding item 12; under 3.2*). |
+| **`re`** | `x_…` | **Cite a discourse label**: agenda item, section code, slide, ticket id (digits as label, not independence framing) (*regarding item 12; under 3.2*). |
 
 Ordinary *firstly* / *secondly* is **`x#N`**. The marker does not say whether a point argues for or against; say that in ordinary words (or with evidentiality on the claim).
 
-Worked examples: `xredol` *point 2:*; `xradol` *corroborating 2:*; `xrudol` *independent 2:*.
+Worked examples: `xrodol` *point 2:*; `xradol` *corroborating 2:*; `xrudol` *independent 2:*.
 
-Endings still apply (**-l** newly stated item, **-r** *as in (N) above* (with a digit; digitless `xrer` is a blank), **-n** titled item name, **-m** fuzzy *around item N*).
+Endings still apply (**-l** newly stated item, **-r** *as in (N) above* (with a digit; digitless `xror` is a blank), **-n** titled item name, **-m** fuzzy *around item N*).
 
 #### Number as degree (by marker) {#number-as-degree}
 <a id="place-on-a-scale"></a>
 
-On `/w/`, a number sits in the degree slot right before an adjective or adverb ([clause](/clause#adjective-detail-w)). Only the ordinal marker gives a new reading: **`w#N`** (N from 2) is the **place on that scale**, in a superlative frame (`zuzozen zel wredol gelazom` *Uzozen is the second biggest*). A count or a fraction on `/w/` (`w+3`) is not used: a factor goes on `/h/` (`hradol` *twice*, factor).
+On `/w/`, a number sits in the degree slot right before an adjective or adverb ([clause](/clause#adjective-detail-w)). Only the ordinal marker gives a new reading: **`w#N`** (N from 2) is the **place on that scale**, in a superlative frame (`zuzozen zol wrodol gelazom` *Uzozen is the second biggest*). A count or a fraction on `/w/` (`w+3`) is not used: a factor goes on `/h/` (`hradol` *twice*, factor).
 
 #### Number as stance (by marker) {#number-as-stance-by-marker}
 <a id="likelihood"></a>
@@ -261,16 +261,16 @@ On `/w/`, a number sits in the degree slot right before an adjective or adverb (
 |--------|---------|--------------|
 | **`ra`** | `th+N` | **Likelihood N percent**: `th+70` *70% likely*; `th+99` *99% likely*. The digits are already a percent, 0–100; do not add `%`. |
 | **`ra`** / **`ru`** | `th+` / `th-` | **likely** / **unlikely**, with no figure |
-| **`ro`** | `th_N` | **According to source N**: a footnote, reference, or exhibit label (`th_3` *per [3]*). Digitless `th_` = *per a source* you do not name. |
-| **`re`** | `th#N` | **N-th hand** (N from 2): how many hands stand between the event and you, on any channel that is not first-hand (`th#3` *third-hand*, a tertiary source). |
+| **`re`** | `th_N` | **According to source N**: a footnote, reference, or exhibit label (`th_3` *per [3]*). Digitless `th_` = *per a source* you do not name. |
+| **`ro`** | `th#N` | **N-th hand** (N from 2): how many hands stand between the event and you, on any channel that is not first-hand (`th#3` *third-hand*, a tertiary source). |
 
 For *30% unlikely*, give the likelihood of the claim itself (`th+70`). A minus with digits (`th-N`) and an end-relative rank (`th#-N`) are not used, and neither is `th#1`: first-hand is a channel word.
 
-Endings still apply: **-m** *about* that likelihood (`th~+70` *roughly 70%*), **-n** a conventional level (`th@+95` *at the 95% confidence level*), **-r** *the same likelihood as before* (`th=+70`); digitless `thrar` asks *how likely?* under question, and `threr` asks *how many hands?*
+Endings still apply: **-m** *about* that likelihood (`th~+70` *roughly 70%*), **-n** a conventional level (`th@+95` *at the 95% confidence level*), **-r** *the same likelihood as before* (`th=+70`); digitless `thrar` asks *how likely?* under question, and `thror` asks *how many hands?*
 
 ### Practice {#intermediate-practice}
 
-Short drills for Intermediate. Try each item before opening **Show answer**. Use shorthand for two or more digits (`g+12`, `g#12`); spell zero, one digit, or none (`gragem`, `gredol`, `gral`).
+Short drills for Intermediate. Try each item before opening **Show answer**. Use shorthand for two or more digits (`g+12`, `g#12`); spell zero, one digit, or none (`gragem`, `grodol`, `gral`).
 
 **Setting:** a sports stadium
 
@@ -314,7 +314,7 @@ z-Olazun | v-run | h-three
 **3.** *Point 2: Uzozen sits.*
 
 ::: details Show answer
-`xredol zuzozen vuhohol.`
+`xrodol zuzozen vuhohol.`
 
 x-2nd | z-Uzozen | v-sit
 :::
@@ -347,7 +347,7 @@ z-Uzozen | v-punch | th-70-percent-likely
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zredol dodoral vawebol.`
+**1.** `zrodol dodoral vawebol.`
 
 ::: details Show answer
 z-2nd | d-trophy | v-see
@@ -358,14 +358,14 @@ z-2nd | d-trophy | v-see
 **2.** `y_3.`
 
 ::: details Show answer
-🔊 `yrogel.`
+🔊 `yregel.`
 
 y-_3
 
 *Three!* (a score or label)
 :::
 
-**3.** `zahelan vuhohol hregel.`
+**3.** `zahelan vuhohol hrogel.`
 
 ::: details Show answer
 z-Ahelan | v-sit | h-3rd
@@ -395,14 +395,14 @@ z-Olazun | [d-seat-x | g-four.about] | v-see
 **-m** makes the number approximate; **-l** is exact.
 :::
 
-**2.** *Ahelan sees seat 5.* (its label) `zahelan dozohol grozal vawebol.` or `zahelan dozohol grazal vawebol.`
+**2.** *Ahelan sees seat 5.* (its label) `zahelan dozohol grezal vawebol.` or `zahelan dozohol grazal vawebol.`
 
 ::: details Show answer
-`zahelan dozohol grozal vawebol.`
+`zahelan dozohol grezal vawebol.`
 
 z-Ahelan | [d-seat | g-_5.spelled] | v-see
 
-A label is a digit string, marker **`ro`**; **`ra`** would count five.
+A label is a digit string, marker **`re`**; **`ra`** would count five.
 :::
 
 #### Fix it {#intermediate-fix-it}
@@ -410,9 +410,9 @@ A label is a digit string, marker **`ro`**; **`ra`** would count five.
 **1.** *There is a fifth seat.* <!-- lint: error -->`zozohol grazal.`
 
 ::: details Show answer
-`zozohol grezal.`
+`zozohol grozal.`
 
 z-seat | g-5th
 
-A place in a series is a rank, marker **`re`**; **`ra`** counts.
+A place in a series is a rank, marker **`ro`**; **`ra`** counts.
 :::

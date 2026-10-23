@@ -50,7 +50,7 @@ The ending grades your evidence: **-l** you could show it, **-m** you could desc
 | [Name the source](/evidentiality#source): a noun in a `bl-` word right after | `zolazun thebam bluzozen velurul.` | *Olazun left, according to Uzozen.* | I |
 | [A device as the source](/evidentiality#source) | `zolazun thugom blogewol vezuvol.` | *Olazun is asleep, going by the camera.* | I |
 | [A source you don't name](/evidentiality#source): `blumon`, then say whether you know who | `zolazun thebam blumon velurul. zuwon vanam dorl zar.` | *Olazun left, according to someone. I know who.* | I |
-| [How many hands](/evidentiality#hand-depth): `th#N` after a channel | `zolazun thebam thregel velurul.` | *Olazun left, so they say, third-hand.* | I |
+| [How many hands](/evidentiality#hand-depth): `th#N` after a channel | `zolazun thebam throgel velurul.` | *Olazun left, so they say, third-hand.* | I |
 | [A forecast](/evidentiality#forecast): channel + `blral` | `thubem blral verulal.` | *It will rain, going by the pattern.* | I |
 | [A hunch about later](/evidentiality#forecast) | `zolazun thabor blral velurul.` | *Olazun will leave, a faint hunch.* | I |
 | [A dated claim](/universality#dated-channel): signed time measure | `zuzozen thevum blagorum grugel vowurel.` | *I saw Uzozen walk three hours ago.* | A |
@@ -136,7 +136,7 @@ MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words
 | [RESIDUE](/notional-standing#residue-and-former-climate) | `zolazun haram velurul.` | *Olazun has left and is still gone.* | I |
 | [RESIDUE with a channel](/notional-standing#residue-and-former-climate) | `zolazun thevum haram velurul.` | *I remember Olazun leaving, and Olazun is still gone.* | I |
 | [FORMER after the verb](/notional-standing#residue-and-former-climate) | `zuzozen hual vezuyol helam.` | *Uzozen always used to sing.* | I |
-| [A channel as the bar](/notional-standing#channel-bars) | `thugom` before `zel` | *than it looks* | I |
+| [A channel as the bar](/notional-standing#channel-bars) | `thugom` before `zol` | *than it looks* | I |
 
 Neither MAY nor MIRATIVE can be a [comparison bar](/notional-standing#channel-bars).
 
@@ -193,8 +193,8 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 | [Someone else's plan](/holder#holder): a holder | `zuzozen thebamuzozen thagem vowurel.` | *I hear Uzozen plans to walk.* | I |
 | [Someone else's decision](/ability#whose-intention): a holder | `zuzozen theyemuzozen thogom vowurel.` | *I gather Uzozen has decided to walk, and can still change that.* | I |
 | [Plan, and when](/ability#predict-evidentiality) | `zuwon thagem blral vuhohol.` | *I plan to sit down later.* | I |
-| [Try, failing that](/ability#fallback): `xon` | `zuzozen howar vowurel xon zuzozer vezuyol.` | *Uzozen gives walking a try; failing that, Uzozen sings.* | I |
-| [A plan with backups](/ability#fallback) | `zuwon thagel vowurel xon zuwon thagel vezuyol xon zuwon thagel vezuvol.` | *walk; failing that, sing; failing that, sleep* | I |
+| [Try, failing that](/ability#fallback): `xen` | `zuzozen howar vowurel xen zuzozer vezuyol.` | *Uzozen gives walking a try; failing that, Uzozen sings.* | I |
+| [A plan with backups](/ability#fallback) | `zuwon thagel vowurel xen zuwon thagel vezuyol xen zuwon thagel vezuvol.` | *walk; failing that, sing; failing that, sleep* | I |
 
 The `bl-` word right after PLAN is only ever a time. WANT, PLAN, and DECISION take no `bl-` word for whose they are.
 
@@ -225,7 +225,7 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 |------|----|------|
 | `thomam` *could be* ([a guess, no reasons](/knowing#may)) | | `theyem` *from the clues* ([reasons you worked out](/evidentiality#evidentiality)) |
 | `thebam` *so they say* ([someone said it](/evidentiality#evidentiality)) | | `theyum` *imagine* ([a scene you make up](/notional-standing#notional-as-if-framing)) |
-| `theyel` *strong clues* ([how good your evidence is](/evidentiality#evidence-strength)) | | `thregel` *third-hand* ([how many hands](/evidentiality#hand-depth)) |
+| `theyel` *strong clues* ([how good your evidence is](/evidentiality#evidence-strength)) | | `throgel` *third-hand* ([how many hands](/evidentiality#hand-depth)) |
 | `thubem blral` *will, by the pattern* ([a forecast](/evidentiality#forecast)) | | `thagem` *I plan to* ([an intention](/intention#plan-predict)) |
 | `haram` *still in effect* ([the outcome stays](/notional-standing#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](/already-still-yet#phasal)) |
 | `thogom` *I've decided* ([how open the choice is, no time](/ability#decision)) | | `thagem` *I plan* ([how worked out, still ahead](/intention#plan-predict)) |

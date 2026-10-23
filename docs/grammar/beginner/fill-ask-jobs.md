@@ -22,7 +22,7 @@ To ask what something is **like** (*What color is it?*, *What kind of dog?*), pu
 <!-- cheat-sheet: talking -->
 |--------|---------|
 | **`gar`** | *What is it like?* / *What kind?* |
-| **`gor`** | *Like anything in particular?* |
+| **`ger`** | *Like anything in particular?* |
 | **`gur`** | *What else is it like?* |
 
 **Compare with:** *like what?* is the similative blank, **`hewom blar`**: it asks for a model to resemble, not a property.
@@ -64,7 +64,7 @@ To ask *where?*, write an [extra-noun hook](hooks.md#extra-noun) (a short word l
 | **`al bar`** | *In what?* |
 | **`ul bar`** | *Where from?* |
 | **`el bar`** | *For what?* |
-| **`ol bor`** | *Anywhere?* |
+| **`ol ber`** | *Anywhere?* |
 | **`ol bur`** | *Where else?* |
 
 Answer with the hook and the landmark, as a [citation](word-endings.md#citation-forms): `ol bahehal.` ("At the house.").

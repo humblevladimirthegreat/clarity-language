@@ -76,13 +76,13 @@
 
   function writingMarkerFromSpeechV(v) {
     if (v === "oe") return "_";
-    if (v === "ue") return "#-";
-    if (v === "uo") return "#_";
+    if (v === "uo") return "#-";
+    if (v === "ue") return "#_";
     if (v === "ua") return "+-";
     if (v === "a") return "+";
     if (v === "u") return "-";
-    if (v === "e") return "#";
-    if (v === "o") return "_";
+    if (v === "o") return "#";
+    if (v === "e") return "_";
     return "#-";
   }
 
@@ -453,7 +453,7 @@ Digit = [0-9]
 
 // Speech-style: PoS + r + V + groups + ending. Marker normalizes to writing glyphs.
 SpeechNumberStem
-  = "ro" !"e" body:SpeechCodeBody {
+  = "re" !"o" body:SpeechCodeBody {
       return { marker: "_", groups: body };
     }
   / "r" v:SpeechMarkerV body:SpeechDigitGroups
@@ -547,7 +547,7 @@ SpeechDigitlessTail
 // PoS-less number stem (numeric prefix left half). Spelled CV only:
 // shorthand (`+3`, `#e`) is for free numbers, never inside a numeric prefix.
 PoslessNumberStem
-  = "ro" !"e" body:SpeechCodeBody {
+  = "re" !"o" body:SpeechCodeBody {
       return { marker: "_", groups: body };
     }
   / "r" v:SpeechMarkerV body:SpeechDigitGroups

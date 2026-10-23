@@ -159,7 +159,7 @@ A word right after B describes B alone, not the range. To describe the range its
 >
 > "Everyone from Uzozen all the way through Ahelan walks." (a surprisingly wide range)
 
-**Compare with:** `zuzozen zahelan zal` is *Uzozen and Ahelan*, the two ends only. `zuzozen zahelan zael` is *Uzozen, then Ahelan*, an order with nothing between.
+**Compare with:** `zuzozen zahelan zal` is *Uzozen and Ahelan*, the two ends only. `zuzozen zahelan zaol` is *Uzozen, then Ahelan*, an order with nothing between.
 
 ### Practice {#intermediate-practice}
 

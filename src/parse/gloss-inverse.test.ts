@@ -46,7 +46,7 @@ describe("glossToAgebon", () => {
       "dududal on dugudal.",
       "zudozol gorol bluzozen gubulel.",
       "glorol bluzozen zudozol gorol blolazun.",
-      "zududal zugudal zol zerulal zal vowurel.",
+      "zududal zugudal zel zerulal zal vowurel.",
       "zuzozen vuhuyel d[zuzozen vowurel].",
       "zuzozen vuhuyel d@[enuron olazun].",
       "zolazun duzozeln vawebol. zuzozer gelazom.",

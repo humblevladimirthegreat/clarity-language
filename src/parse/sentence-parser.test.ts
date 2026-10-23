@@ -86,7 +86,7 @@ describe("sentence-parser synthetic", () => {
       return unit.kind === "np" ? unit.coord.parts.find((p) => p.join)?.factor?.raw : undefined;
     };
     assert.equal(factorOf("zuzozen zolazun zoel gelazom hradol."), "hradol");
-    assert.equal(factorOf("zuzozen zolazun zel gelazom hradol."), undefined);
+    assert.equal(factorOf("zuzozen zolazun zol gelazom hradol."), undefined);
     assert.equal(factorOf("zuzozen zolazun zoel gelazom hral."), undefined);
   });
 
@@ -96,7 +96,7 @@ describe("sentence-parser synthetic", () => {
       const part = unit.kind === "np" ? unit.coord.parts.find((p) => p.join) : undefined;
       return part?.shared.map((item) => item.word.raw);
     };
-    assert.deepEqual(sharedOf("zuzozen zolazun zel bral vovurel."), ["bral"]);
+    assert.deepEqual(sharedOf("zuzozen zolazun zol bral vovurel."), ["bral"]);
     assert.deepEqual(sharedOf("zuzozen zolazun zal bral vovurel."), []);
   });
 
@@ -118,7 +118,7 @@ describe("sentence-parser synthetic", () => {
 
   it("lets a kin number on an /h/ host's landmark host its own /b/, but keeps a count as the amount", () => {
     const last = (text: string) => parseSentenceTokens(tokens(text)).utterances[0]!.bodies[0]!.clause.units.at(-1)!;
-    const kin = last("zuzozen vowurel han bleyol grewubal blawan.");
+    const kin = last("zuzozen vowurel han bleyol growubal blawan.");
     assert.equal(kin.kind === "h" ? kin.unit.hosted?.amount : "not h", undefined);
     assert.equal(kin.kind === "h" ? kin.unit.hosted?.adjs?.[0]?.hosted?.bound.raw : undefined, "blawan");
     const offset = last("zuzozen vowurel halam bluzurem grabal.");

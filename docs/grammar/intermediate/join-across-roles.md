@@ -18,7 +18,7 @@ When English would deny or weigh **how you stand** toward a claim (*not because�
 
 The other join vowels work on stance words the same way they work on a phrase list ([recap](/joins#join-type-vowel-series)). A rank join says which ground matters most: the first stance word is the main one.
 
-> `zuzozen vowurel thahum blerulal thohom blolazun thel.`
+> `zuzozen vowurel thahum blerulal thohom blolazun thol.`
 >
 > z-Uzozen | v-walk | [th-because | bl-rain] | [th-if | bl-Olazun] | th-rank/more
 >
@@ -26,13 +26,13 @@ The other join vowels work on stance words the same way they work on a phrase li
 
 | Vowel | After stance words | Example reading |
 |---|---|---|
-| **ao** | `thaol` open list of grounds | *because of the rain, if Olazun, and maybe more* |
+| **ao** | `thael` open list of grounds | *because of the rain, if Olazun, and maybe more* |
 | **ua** | `thual` every ground but these | *on every ground but these two* |
-| **uo** | `thuol` any ground but these | *any ground but these two will do* |
-| **e** | `thel` ranked, first is the main ground | *mainly because of the rain, also if Olazun* |
-| **ae** | `thael` in the order the grounds arose | *first because of the rain, then if Olazun* |
+| **uo** | `thuel` any ground but these | *any ground but these two will do* |
+| **e** | `thol` ranked, first is the main ground | *mainly because of the rain, also if Olazun* |
+| **ae** | `thaol` in the order the grounds arose | *first because of the rain, then if Olazun* |
 | **oe** | `thoel` equal weight | *the rain and the if-clause count the same* |
-| **ue** | `thuel` ranked, first is the weakest | *chiefly if Olazun, a little because of the rain* |
+| **ue** | `thuol` ranked, first is the weakest | *chiefly if Olazun, a little because of the rain* |
 
 Nothing is SHARED after an `/h/` or `/th/` join. To add a detail that covers the whole list, put a `/w/` word right before the join word.
 
@@ -65,15 +65,15 @@ In the table, *reason* means any grounds a stance word can give: a cause, a sour
 | Vowel | **-l** | **-m** | **-r** |
 |---|---|---|---|
 | **a** | `thal` *at face value* | `tham` *I don't think there's more to it* | `thar` *for reasons I'm not stating* |
-| **o** | `thol` *no single reason to pick* | `thom` *I'm not sure which reason it is* | `thor` *for some reason or other* |
+| **o** | `thel` *no single reason to pick* | `them` *I'm not sure which reason it is* | `ther` *for some reason or other* |
 | **u** | `thul` *no judgment* | `thum` *not weighing in* | `thur` *not for the reason you'd think* |
-| **ao** | `thaol` *take it however you like* | `thaom` *any framing is fine, I think* | question only |
+| **ao** | `thael` *take it however you like* | `thaem` *any framing is fine, I think* | question only |
 | **ua** | `thual` *all things considered* | `thuam` *all known things considered* | question only |
-| **uo** | `thuol` *anything goes* | `thuom` *anything goes, I think* | question only |
-| **e** | `thel` *impartially* / *no decisive grounds* | `them` *I don't lean either way* | `ther` *for one main reason, not named* |
-| **ae** | `thael` *in no particular order* | `thaem` *not sure where to start* | question only |
+| **uo** | `thuel` *anything goes* | `thuem` *anything goes, I think* | question only |
+| **e** | `thol` *impartially* / *no decisive grounds* | `thom` *I don't lean either way* | `thor` *for one main reason, not named* |
+| **ae** | `thaol` *in no particular order* | `thaom` *not sure where to start* | question only |
 | **oe** | `thoel` *equally balanced* | `thoem` *equally balanced, I think* | question only |
-| **ue** | `thuel` *no reason to object* | `thuem` *no objection that I know of* | question only |
+| **ue** | `thuol` *no reason to object* | `thuom` *no objection that I know of* | question only |
 
 Outside a question, only the single-vowel **-r** cells are words. Under a question, a standalone **-r** stance join is a [fill-ask](/questions#fill-ask-r) for the grounds. Every vowel takes **-r** there.
 
@@ -86,21 +86,21 @@ Outside a question, only the single-vowel **-r** cells are words. Under a questi
 | Word | Question |
 |---|---|
 | `thar` | *Why do you say so?* / *On what grounds?* |
-| `thor` | *For any reason?* |
+| `ther` | *For any reason?* |
 | `thur` | *On what other grounds?* |
-| `thaor` | *How do you want me to take this?* |
+| `thaer` | *How do you want me to take this?* |
 | `thuar` | *What's your overall take?* |
-| `thuor` | *What reasons would you rule out?* |
-| `ther` | *What's the main reason?* |
-| `thaer` | *What would settle it?* |
+| `thuer` | *What reasons would you rule out?* |
+| `thor` | *What's the main reason?* |
+| `thaor` | *What would settle it?* |
 | `thoer` | *What are you torn between?* |
-| `thuer` | *What's your objection?* |
+| `thuor` | *What's your objection?* |
 
 **Compare with:** `thul` *no judgment* withholds any stance; a *no chance* stance number is a stance that the claim is false. `thar` asks for the speaker's grounds, not what caused the event; for *Why does it happen?* use [`thahum blar`](/fill-ask-jobs#why).
 
 ### Join-act verbs {#join-act-verbs}
 
-When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the join vowel for that move, and ending **-n** (`van`, `von`, …). The object is one `/d/` phrase: one thing, or a group joined with a [phrase join](/joins). You can now name the act itself instead of only joining a list. On these verbs, **-n** does not mark a [name](proper-names.md#proper-name--n).
+When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the join vowel for that move, and ending **-n** (`van`, `ven`, …). The object is one `/d/` phrase: one thing, or a group joined with a [phrase join](/joins). You can now name the act itself instead of only joining a list. On these verbs, **-n** does not mark a [name](proper-names.md#proper-name--n).
 
 > `zuzozen doledol van.`
 >
@@ -118,10 +118,10 @@ For an associative group (*Olazun and company*), put noun **-x** on the object a
 | Clause sequence | Join-act verb | Shared vowel move |
 |-------------|---------------|-------------------|
 | `xan` | `van` | add / include |
-| `xon` | `von` | one / choose |
+| `xen` | `ven` | one / choose |
 | `xun` | `vun` | undo / refuse |
 
-The `/x/` forms connect clauses and keep one speech act. Their `/v/` counterparts take an object and name an act on it. Prioritizing (`ven`) has no clause sequence, and of the stacked vowels only `xaon` and `xuen` have one; the `/v/` forms follow the same series in the inventory below.
+The `/x/` forms connect clauses and keep one speech act. Their `/v/` counterparts take an object and name an act on it. Prioritizing (`von`) has no clause sequence, and of the stacked vowels only `xaen` and `xuon` have one; the `/v/` forms follow the same series in the inventory below.
 
 These are ordinary content verbs. To refer back to a join-act you already named, use a whole-stem **-r** resume or say it again in full.
 
@@ -130,17 +130,17 @@ Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 | Agebon | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
 | **`van`** | hold the object in the set | *includes / adds* | **a** ≈ add (hold / inventory) | `zuzozen doledol van` |
-| **`von`** | lock the object as the sole pick | *chooses (as the one choice)* | **o** ≈ one (single pick) | `zuzozen dududal von` |
-| **`vaon`** | admit the object; more may follow | *picks (more picks may follow)* | **ao** ≈ add one, more may follow (open pick) | `zuzozen dugedam vaon` |
+| **`ven`** | lock the object as the sole pick | *chooses (as the one choice)* | **e** ≈ either (single pick) | `zuzozen dududal ven` |
+| **`vaen`** | admit the object; more may follow | *picks (more picks may follow)* | **ae** ≈ add one, more may follow (open pick) | `zuzozen dugedam vaen` |
 | **`vun`** | reject the object | *denies / refuses* | **u** ≈ undo (take that member back) | `zuzozen dalamul vun` |
 | **`vuan`** | leave the object out of the set | *excludes* | **ua** ≈ undo + add (cut that member) | `zuzozen dubedal vuan` |
-| **`vuon`** | bar that one; the rest stay free | *bars (anything but)* | **uo** ≈ undo + one (forbid that pick) | `zuzozen dugudal vuon` |
-| **`ven`** | rank the object first | *prioritizes* | **e** ≈ order (put this first) | `zuzozen dabezul ven` |
-| **`vaen`** | put the object first in order | *starts with* | **ae** ≈ add + order (begin here) | `zuzozen derewom vaen` |
+| **`vuen`** | bar that one; the rest stay free | *bars (anything but)* | **ue** ≈ undo + either (forbid that pick) | `zuzozen dugudal vuen` |
+| **`von`** | rank the object first | *prioritizes* | **o** ≈ order (put this first) | `zuzozen dabezul von` |
+| **`vaon`** | put the object first in order | *starts with* | **ao** ≈ add + order (begin here) | `zuzozen derewom vaon` |
 | **`voen`** | put the objects at the same rank | *equates / ties* | **oe** ≈ one + order (same height) | `zuzozen dolazun dahelan dal voen` |
-| **`vuen`** | rank the object lower | *deprioritizes* | **ue** ≈ undo + order (drop this rank) | `zuzozen dugedam vuen` |
+| **`vuon`** | rank the object lower | *deprioritizes* | **uo** ≈ undo + order (drop this rank) | `zuzozen dugedam vuon` |
 
-English *refuse* vs *leave out*: `zuzozen domudol vun` (*Uzozen refuses meat*) vs `zuzozen domudol vuan` (*Uzozen excludes meat*). One locked choice vs an open pick: `zuzozen dubedal von` vs `zuzozen dubedal vaon`. Rank vs sequence: `zuzozen derewom ven` (*prioritizes the workaround*: first by importance) vs `zuzozen derewom vaen` (*starts with the workaround*: first in order).
+English *refuse* vs *leave out*: `zuzozen domudol vun` (*Uzozen refuses meat*) vs `zuzozen domudol vuan` (*Uzozen excludes meat*). One locked choice vs an open pick: `zuzozen dubedal ven` vs `zuzozen dubedal vaen`. Rank vs sequence: `zuzozen derewom von` (*prioritizes the workaround*: first by importance) vs `zuzozen derewom vaon` (*starts with the workaround*: first in order).
 
 ### Join-relations {#join-relations}
 
@@ -154,7 +154,7 @@ When English ties one extra thing to a noun or an action by a list move (*a cupc
 
 **`gan`** always needs its `/b/` word (`gan b…`).
 
-**Compare with:** *writes with a hammer* is an extra-noun [hook](/hooks#extra-noun) (`ael` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Olazun* is [proxy](/relations#proxy) (`hanom`), not **`hon`** *exclusively for*. **`uel`** is *against* that party, not **`hun`** *refusing*.
+**Compare with:** *writes with a hammer* is an extra-noun [hook](/hooks#extra-noun) (`ael` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Olazun* is [proxy](/relations#proxy) (`hanom`), not **`hen`** *exclusively for*. **`uel`** is *against* that party, not **`hun`** *refusing*.
 
 **Not the same job as:** adjective [joins](/joins) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
 
@@ -165,17 +165,17 @@ For several members, put a [phrase join](/joins) **inside** the `/b/` phrase (`g
 | Agebon | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
 | **`gan` / `han`** | `/ɡ/` noun or `/h/` event toward `/b/` | *including / with* | **a** ≈ add (hold the extra member) | `zugedal gan blubedal`; `zuzozen han blolazun vowurel` |
-| **`gon` / `hon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | **o** ≈ one (lock that pick) | `zahunam gon bluzozen`; `… hon bluzozen vowurel` |
-| **`gaon` / `haon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to* (more may follow); `/h/` *among options* | **ao** ≈ add one, and more may follow | `zugedal gaon blubedal`; `… haon blubedal vowurel` |
+| **`gen` / `hen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | **e** ≈ either (lock that pick) | `zahunam gen bluzozen`; `… hen bluzozen vowurel` |
+| **`gaen` / `haen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to* (more may follow); `/h/` *among options* | **ae** ≈ add either, and more may follow | `zugedal gaen blubedal`; `… haen blubedal vowurel` |
 | **`gun` / `hun`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *against / anti-*; `/h/` *refusing* | **u** ≈ undo (reject that member) | `zugedal gun blubedal`; `… hun blomudol vowurel` |
 | **`guan` / `huan`** | `/ɡ/` or `/h/` toward `/b/` | *without / excluding* | **ua** ≈ undo + add (leave that member out) | `zugedal guan blubedal`; `… huan blubedal vowurel` |
-| **`guon` / `huon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to anything but*; `/h/` *barring / anything but* | **uo** ≈ undo + one (bar that one; rest free) | `zowulal guon blubedal`; `… huon blubedal vowurel` |
-| **`gen` / `hen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *prioritizing / headed by*; `/h/` *prioritizing* | **e** ≈ order (put this first) | `zabeval gen blabezul`; `… hen blabezul verewom` |
-| **`gaen` / `haen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *starting with*; `/h/` *starting with* | **ae** ≈ add + order (begin here) | `zabeval gaen blerewom`; `… haen blerewom vowurel` |
-| **`goen` / `hoen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *on a par with*; `/h/` *equating / tying* | **oe** ≈ one + order (same height) | `zududal goen blugudal`; `… hoen blolazun vowurel` |
-| **`guen` / `huen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *deprioritizing / trailing*; `/h/` *deprioritizing* | **ue** ≈ undo + order (drop this rank) | `zugedal guen blugedam`; `… huen blugedam vowurel` |
+| **`guen` / `huen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to anything but*; `/h/` *barring / anything but* | **ue** ≈ undo + either (bar that one; rest free) | `zowulal guen blubedal`; `… huen blubedal vowurel` |
+| **`gon` / `hon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *prioritizing / headed by*; `/h/` *prioritizing* | **o** ≈ order (put this first) | `zabeval gon blabezul`; `… hon blabezul verewom` |
+| **`gaon` / `haon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *starting with*; `/h/` *starting with* | **ao** ≈ add + order (begin here) | `zabeval gaon blerewom`; `… haon blerewom vowurel` |
+| **`goen` / `hoen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *on a par with*; `/h/` *equating / tying* | **oe** ≈ either + order (same height) | `zududal goen blugudal`; `… hoen blolazun vowurel` |
+| **`guon` / `huon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *deprioritizing / trailing*; `/h/` *deprioritizing* | **uo** ≈ undo + order (drop this rank) | `zugedal guon blugedam`; `… huon blugedam vowurel` |
 
-*Anti-* vs *without*: `gun blomudol` vs `guan blomudol`. *Without X* vs *anything but X*: `guan blubedal` vs `guon blubedal`. Sole pick vs among options: `gon bluzozen` vs `gaon bluzozen`. Workaround as top priority vs workaround as first step: `gen blerewom` vs `gaen blerewom`.
+*Anti-* vs *without*: `gun blomudol` vs `guan blomudol`. *Without X* vs *anything but X*: `guan blubedal` vs `guen blubedal`. Sole pick vs among options: `gen bluzozen` vs `gaen bluzozen`. Workaround as top priority vs workaround as first step: `gon blerewom` vs `gaon blerewom`.
 
 **Compare with:** *a house like Uzozen’s* / *walks like a duck* is resemblance ([like](/relations#like-resembles) `gewom` / `hewom`), not **`goen` / `hoen`** *on a par with* / *equating*.
 
@@ -242,7 +242,7 @@ z-Uzozen | v-scream | th-because | th-not | bl-that-clause | z-Ahelan | v-punch
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zolazun dodoral von.`
+**1.** `zolazun dodoral ven.`
 
 ::: details Show answer
 z-Olazun | d-trophy | v-choose
@@ -258,7 +258,7 @@ z-finish-line | [g-without | bl-trophy]
 *The finish line without the trophy.*
 :::
 
-**3.** `zahunam gaon bluzozen.`
+**3.** `zahunam gaen bluzozen.`
 
 ::: details Show answer
 z-teamwork | [g-open-to | bl-Uzozen]

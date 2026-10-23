@@ -114,10 +114,10 @@ z-Olazun | NAME[d-tomato | d-watermelon | d-and] | v-cook
 **Rule:** [Named phrase](join-islands.md#named-list)
 :::
 
-**2.** *Olazun is sleepier than Ahelan said.* `zolazun thebam blahelan zel guzemol.` or `zolazun zel guzemol thebam blahelan.`
+**2.** *Olazun is sleepier than Ahelan said.* `zolazun thebam blahelan zol guzemol.` or `zolazun zol guzemol thebam blahelan.`
 
 ::: details Show answer
-`zolazun thebam blahelan zel guzemol.`
+`zolazun thebam blahelan zol guzemol.`
 
 [z-Olazun | [th-REPORTED | bl-Ahelan] | z-rank/more | g-sleepy]
 
@@ -162,10 +162,10 @@ z-Uzozen | v-command | z-Olazun | v-cook
 **Rule:** [Lexicalized stand-ins in other roles](stand-in-roles.md#stand-in-roles)
 :::
 
-**6.** *There is a second-to-last baguette.* `zebodel gruedol.` or `zebodel gredol.`
+**6.** *There is a second-to-last baguette.* `zebodel gruodol.` or `zebodel grodol.`
 
 ::: details Show answer
-`zebodel gruedol.`
+`zebodel gruodol.`
 
 z-baguette | g-2nd-from-end
 

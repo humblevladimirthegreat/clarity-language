@@ -177,9 +177,9 @@ English *unless* is *if … not*: keep the *if* pole **`thohom`** and type `/b/`
 >
 > "Uzozen walks unless Olazun sleeps."
 
-The sentence after a stand-in runs to the end of the written sentence, so a [clause join](/joins#clause-joins) inside it stays in the dependent. *Whether Olazun walks or Ahelan runs* is **`dorl`**, then both clauses with **`xol`** between them.
+The sentence after a stand-in runs to the end of the written sentence, so a [clause join](/joins#clause-joins) inside it stays in the dependent. *Whether Olazun walks or Ahelan runs* is **`dorl`**, then both clauses with **`xel`** between them.
 
-> `zuzozen vawebol dorl zolazun vowurel xol zahelan varuvel.`
+> `zuzozen vawebol dorl zolazun vowurel xel zahelan varuvel.`
 >
 > z-Uzozen | v-see | d-whether-clause | [z-Olazun | v-walk | x-or-exactly-one | z-Ahelan | v-run]
 >
@@ -357,7 +357,7 @@ z-Uzozen | d-luggage | v-see . x-next | z-Olazun | v-run
 *Uzozen sees the luggage. Next, Olazun runs.*
 :::
 
-**5.** `zolazun vawebol dorl zedavel velurul xol zahelan varuvel.`
+**5.** `zolazun vawebol dorl zedavel velurul xel zahelan varuvel.`
 
 ::: details Show answer
 z-Olazun | v-see | d-whether-clause | [z-train | v-departure | x-or-exactly-one | z-Ahelan | v-run]

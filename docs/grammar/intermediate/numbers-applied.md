@@ -13,27 +13,27 @@ English names many things with letters as well as digits: a vitamin (*B12*), a f
 
 > `zuzozen dobebul g_b12 vagedal.`
 >
-> 🔊 `zuzozen dobebul grobubadol vagedal.`
+> 🔊 `zuzozen dobebul grebubadol vagedal.`
 >
 > z-Uzozen | [d-pill | g-_b12] | v-eat
 >
 > "Uzozen takes a B12 pill."
 
-Say each character as one syllable, after the marker **`ro`**:
+Say each character as one syllable, after the marker **`re`**:
 
 - A digit is its digit syllable (`ba` … `mo`).
 - A consonant is its [letter name](phonotactics.md#letter-names) (`bu` … `me`, `tho`, `wa`, `yu`). A letter name never sounds like a digit, because it takes the [opposite vowel](/phonology#opposite-vowels): `bu` is *b*, `ba` is *1*.
-- A vowel is its own sound after a short break, the catch in English *uh-oh*. The spelled form writes the break as `'`. Without it, `bu` + `u` would run into one long vowel, and `ro` + `e` would sound like another marker.
+- A vowel is its own sound after a short break, the catch in English *uh-oh*. The spelled form writes the break as `'`. Without it, `bu` + `u` would run into one long vowel, and `re` + `o` would sound like another marker.
 
 <!-- cheat-sheet: numbers -->
 | Agebon | Use | English |
 |--------|-----|---------|
-| `z_b12` (🔊 `zrobubadol`) | letter, then digits | *B12* |
-| `z_4b` (🔊 `zrohubul`) | digit, then letter | *4B* |
-| `z_vba` (🔊 `zrovebu'al`) | vowel after a break | *VBA* |
-| `z_e1` (🔊 `zro'ebal`) | code that starts with a vowel | *E1* |
-| `z_thw` (🔊 `zrothowal`) | `th` is one letter | *THW* |
-| `z_2,1` (🔊 `zrodothebal`) | two fields | *version 2.1* |
+| `z_b12` (🔊 `zrebubadol`) | letter, then digits | *B12* |
+| `z_4b` (🔊 `zrehubul`) | digit, then letter | *4B* |
+| `z_vba` (🔊 `zrevebu'al`) | vowel after a break | *VBA* |
+| `z_e1` (🔊 `zre'ebal`) | code that starts with a vowel | *E1* |
+| `z_thw` (🔊 `zrethowal`) | `th` is one letter | *THW* |
+| `z_2,1` (🔊 `zredothebal`) | two fields | *version 2.1* |
 
 Rules for letters in a code:
 
@@ -147,7 +147,7 @@ A word after **B** describes **B** alone, and a word on the counted noun describ
 
 **`ual`** and **`uel`** are the [range hooks](ending-grids.md#ranges), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zragel al zrazam` = *3 to about 5*).
 
-**Compare with:** `zragel zrazal zael` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zuzozen zolazun zel gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](of-relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
+**Compare with:** `zragel zrazal zaol` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zuzozen zolazun zol gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](of-relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
 
 ### Percent and percentage points {#percent-and-percentage-points}
 
@@ -271,7 +271,7 @@ z-Uzozen | [b-meter | g-two] | v-walk
 ::: details Show answer
 `zuzozen dobebul g_b12 vawebol.`
 
-🔊 `zuzozen dobebul grobubadol vawebol.`
+🔊 `zuzozen dobebul grebubadol vawebol.`
 
 z-Uzozen | [d-pill | g-_b12] | v-see
 :::

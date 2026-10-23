@@ -472,7 +472,7 @@ A claim that something **will** happen: an evidential channel plus the later off
 
 ### Greeting / conversation length
 
-A named citation is a hello (`uzozen.`). Add mid-word **`x`** plus **`a`** / **`e`** / **`o`** / **`u`** to say how long the conversation is expected to last: open-ended, a few minutes, one slot, or passing. At departure, **`xen`** means leaving soon, **`xon`** about to leave, and **`xun`** leaving now. When people set different lengths at arrival, the lesser bid holds.
+A named citation is a hello (`uzozen.`). Add mid-word **`x`** plus **`a`** / **`e`** / **`o`** / **`u`** to say how long the conversation is expected to last: open-ended, a few minutes, one slot, or passing. At departure, **`xon`** means leaving soon, **`xen`** about to leave, and **`xun`** leaving now. When people set different lengths at arrival, the lesser bid holds.
 
 [Word endings](/word-endings#greeting) · [Compound families](/compound-families#conversation-length)
 
@@ -793,7 +793,7 @@ Clause-pole **`hovam`**: intended outcome of the host (*so that Olazun sits*; NP
 
 ### Sequence
 
-Clause join **-n** (`xan` *and then*; `xon` *or maybe*; `xun` *and then not*).
+Clause join **-n** (`xan` *and then*; `xen` *or maybe*; `xun` *and then not*).
 
 [Clause sequence](/clause-sequence#sequence)
 

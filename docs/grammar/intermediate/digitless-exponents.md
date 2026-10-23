@@ -18,8 +18,8 @@ Beginner already used **`gral`** for *more than one*. Any marker may drop every 
 |--------|---------|---------|-----|
 | **`ra`** (`…+`) | unspecified **positive scalar**, specialized to **plural count / amount `>1`** | complements `…+0` (zero), `…+1` (one), `…+N` (exact N≥2) | **`a`** ≈ add |
 | **`ru`** (`…-`) | unspecified **negative scalar** | *some negative amount*; exact negatives keep digits (`…-N`) | **`u`** ≈ undo |
-| **`re`** (`…#`) | unspecified **rank from the start** | *some nth* / *some place*; exact ranks keep digits (`…#N`) | **`e`** ≈ order |
-| **`ro`** (`…_`) | unspecified **digit-string / label** | *some code*; *a label*; exact labels keep digits (`…_…`) | **`o`** ≈ one |
+| **`ro`** (`…#`) | unspecified **rank from the start** | *some nth* / *some place*; exact ranks keep digits (`…#N`) | **`o`** ≈ order |
+| **`re`** (`…_`) | unspecified **digit-string / label** | *some code*; *a label*; exact labels keep digits (`…_…`) | **`e`** ≈ either (one string) |
 
 **Compare with:** noun [**-x**](/plurality) names a **group of things**. Digitless **`ra`** names a **count or amount above one** without saying how many. Both may sit on the same noun (`zagozolx gral`).
 
@@ -45,7 +45,7 @@ A mass noun such as *tea* is not counted, so *more than one* makes no sense for 
 
 *Many*, *few*, *enough*, and *too much* compare the amount against a baseline, so they are comparatives, not number words.
 
-Words such as **`zar`** / **`zor`** stand for an unnamed **member of a set**. Digitless number **-r** stands for an unnamed **value** the same way: *some amount*, with no claim that it is more than one. Digitless number **-l** (and **-m** / **-n**) brings in an unnamed amount of that kind, and **`gral`** still says *more than one*.
+Words such as **`zar`** / **`zer`** stand for an unnamed **member of a set**. Digitless number **-r** stands for an unnamed **value** the same way: *some amount*, with no claim that it is more than one. Digitless number **-l** (and **-m** / **-n**) brings in an unnamed amount of that kind, and **`gral`** still says *more than one*.
 
 > `zuzozen drar vawebol.`
 > z-Uzozen | d-some-amount | v-see
@@ -74,10 +74,10 @@ To ask for a **number**, write a [number word](/numbers) with no digits and the 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | `g=+` (`grar`) | fill a count or amount | *How many?* / *How much?* | **a** ≈ add |
-| `g=#` (`grer`) | fill a place in order | *Which place?* (*which floor, which chapter*) | **e** ≈ order |
-| `g=_` (`gror`) | fill a code or label | *What number?* (*phone, room*) | **o** ≈ one |
+| `g=#` (`gror`) | fill a place in order | *Which place?* (*which floor, which chapter*) | **e** ≈ order |
+| `g=_` (`grer`) | fill a code or label | *What number?* (*phone, room*) | **o** ≈ one |
 
-> `yol ol brer zolazun vuhohol.`
+> `yol ol bror zolazun vuhohol.`
 > y-question | [at | b-which-place] | z-Olazun | v-sit
 >
 > "Which place does Olazun sit in?" (first, second, and so on)
@@ -187,7 +187,7 @@ The **e** of **`the`** is the vowel of order: the next group comes in order. Say
 
 > `zozohol g#2,3.`
 >
-> 🔊 `zozohol gredothegel.`
+> 🔊 `zozohol grodothegel.`
 >
 > z-seat | g-#-2,3
 >
@@ -195,7 +195,7 @@ The **e** of **`the`** is the vowel of order: the next group comes in order. Say
 
 ### Practice {#intermediate-practice}
 
-Short drills for Intermediate. Try each item before opening **Show answer**. Use shorthand for two or more digits (`g+12`, `g#12`); spell zero, one digit, or none (`gragem`, `gredol`, `gral`).
+Short drills for Intermediate. Try each item before opening **Show answer**. Use shorthand for two or more digits (`g+12`, `g#12`); spell zero, one digit, or none (`gragem`, `grodol`, `gral`).
 
 **Setting:** a grain elevator
 
@@ -284,14 +284,14 @@ z-Ahelan | [d-grain-x | g-some-amount] | v-see
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *How many trucks does Olazun see?* `yol dudavalx grar zolazun vawebol.` or `yol dudavalx grer zolazun vawebol.`
+**1.** *How many trucks does Olazun see?* `yol dudavalx grar zolazun vawebol.` or `yol dudavalx gror zolazun vawebol.`
 
 ::: details Show answer
 `yol dudavalx grar zolazun vawebol.`
 
 y-question | [d-truck-x | g-how-many] | z-Olazun | v-see
 
-**-r** on the count marker asks *how many?*; **`re`** would ask *which place?*
+**-r** on the count marker asks *how many?*; **`ro`** would ask *which place?*
 :::
 
 #### Fix it {#intermediate-fix-it}

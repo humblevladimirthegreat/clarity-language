@@ -406,7 +406,7 @@ export const NUMBER_FEATURE_CONSTRUCTIONS = {
   "marker.scalarPos": { anchor: "numbers.md#counts", summary: "+ count" },
   "marker.scalarNeg": { anchor: "number-markers.md#marker-vowel-referential-identity", summary: "- negative" },
   "marker.ordinalFwd": { anchor: "numbers.md#ordinals", summary: "# ordinal" },
-  "marker.ordinalEnd": { anchor: "stacked-markers.md#from-the-end-end-relative-ordinal-marker-ue", summary: "#- ordinal from the end" },
+  "marker.ordinalEnd": { anchor: "stacked-markers.md#from-the-end-end-relative-ordinal-marker-uo", summary: "#- ordinal from the end" },
   "marker.label": { anchor: "digit-strings.md#digit-strings", summary: "_ label / digit string" },
   "marker.negativeLabel": { anchor: "stacked-markers.md#stacked-markers", summary: "#_ negative label" },
   "marker.errorBound": { anchor: "stacked-markers.md#stacked-markers", summary: "+- error bound" },
@@ -483,20 +483,20 @@ export type JoinSeries = "a" | "o" | "ao" | "u" | "ua" | "uo" | "e" | "ae" | "oe
 
 export const JOIN_SERIES_CONSTRUCTIONS: Record<JoinSeries, ConstructionEntry> = {
   a: { anchor: "joins.md#and-lists-a", summary: "and" },
-  o: { anchor: "joins.md#choice-o", summary: "exclusive or" },
-  ao: { anchor: "rank-joins.md#full-single-item-and-standalone-inventories", summary: "and/or" },
-  u: { anchor: "joins.md#negation-u", summary: "none of" },
-  ua: { anchor: "joins.md#everything-ua", summary: "everything but" },
-  uo: { anchor: "rank-joins.md#full-single-item-and-standalone-inventories", summary: "anything but" },
-  e: {
-    anchor: "joins.md#rank-e",
+  o: {
+    anchor: "joins.md#rank-o",
     summary: "rank",
     reader:
       "`rank/more` closes a bracket that ranks its items on the word after it, earlier above later: `[z-X | z-Y | z-rank/more | g-tall]` = X is taller than Y. With one item, it is the top of all (the biggest).",
   },
-  ae: { anchor: "rank-joins.md#sequence-ae", summary: "sequence (first = start)" },
+  ao: { anchor: "rank-joins.md#sequence-ao", summary: "sequence (first = start)" },
+  u: { anchor: "joins.md#negation-u", summary: "none of" },
+  ua: { anchor: "joins.md#everything-ua", summary: "everything but" },
+  uo: { anchor: "rank-joins.md#invert-u-stacks", summary: "rank reversal" },
+  e: { anchor: "joins.md#choice-e", summary: "choice" },
+  ae: { anchor: "rank-joins.md#full-single-item-and-standalone-inventories", summary: "and/or" },
   oe: { anchor: "comparatives.md#equatives-oe-shared-scale", summary: "equal rank" },
-  ue: { anchor: "rank-joins.md#invert-ua-uo-ue", summary: "rank reversal" },
+  ue: { anchor: "rank-joins.md#full-single-item-and-standalone-inventories", summary: "anything but" },
 };
 
 /** **-x** on a join **-r**: an unspecified group (`zarx`, joins.md#unspecified-member-r-phrase). */
@@ -543,13 +543,13 @@ export const RESTRICTOR_GROUP: Record<JoinSeries, keyof typeof RESTRICTOR_CONSTR
   a: "onlyWhen",
   ua: "always",
   u: "sometimes",
-  o: "set",
-  ao: "set",
-  uo: "set",
-  e: "ranked",
-  ae: "ranked",
+  e: "set",
+  ae: "set",
+  ue: "set",
+  o: "ranked",
+  ao: "ranked",
   oe: "ranked",
-  ue: "ranked",
+  uo: "ranked",
 };
 
 /** Stand-in vowels (dependents.md). */
@@ -785,8 +785,8 @@ export const REJECTIONS = {
   stanceNumber: { anchor: "number-markers.md#number-as-stance-by-marker", summary: "a stance number takes + (likelihood), _ (source) or # (Nth-hand); th- with digits and th#- are not used" },
   handDepth: { anchor: "evidentiality.md#hand-depth", summary: "th#N counts the hands between the event and you, from 2 (th#2 second-hand, a secondary source); first-hand is a channel word" },
   handDepthChannel: { anchor: "evidentiality.md#hand-depth", summary: "th#N counts hands between the event and you, so LIVE and MEMORY (first-hand channels) cannot take it" },
-  degreeNumber: { anchor: "number-markers.md#number-as-degree", summary: "a number on /w/ is the how-much blank, barely / almost, or an ordinal place on a scale (wredol); a factor goes on /h/" },
-  degreePlaceFrame: { anchor: "comparative-arity.md#place-on-a-scale", summary: "a place on a scale (w#N) needs one name before zel or zuel, then the shared adjective" },
+  degreeNumber: { anchor: "number-markers.md#number-as-degree", summary: "a number on /w/ is the how-much blank, barely / almost, or an ordinal place on a scale (wrodol); a factor goes on /h/" },
+  degreePlaceFrame: { anchor: "comparative-arity.md#place-on-a-scale", summary: "a place on a scale (w#N) needs one name before zol or zuol, then the shared adjective" },
   numberResumeUnbound: { anchor: "number-markers.md#number-endings", summary: "a number -r needs an earlier number to match" },
   tagUnbound: { anchor: "tag-pronouns.md#tag-pronouns", summary: "a tag -r or -m needs that tag assigned earlier in the conversation (`zudozol zwal`, or `zwal` alone); -m also needs an earlier event it took part in (for a pair, one event both took part in)" },
   tagNameUnbound: { anchor: "tag-pronouns.md#tag-pronouns", summary: "a tag -n recalls a tag that was assigned to a name (`zuzozen zwal`, then `zwan`); for any other referent use -r" },

@@ -85,7 +85,7 @@ const NEGATIVES = new Set(["not", "never", "no", "nobody", "nothing", "nowhere",
 const MODALS = new Set(["can", "could", "may", "might", "must", "shall", "should", "will", "would", "ought"]);
 /** Prepositions the library tags as adjectives (*aboard the train*, *underneath the table*). */
 const PREPOSITIONS = new Set(["aboard", "underneath", "beneath"]);
-const POSSESSIVE_PRONOUNS = new Set(["my", "your", "his", "her", "its", "our", "their", "mine", "yours", "hers", "ours", "theirs"]);
+const POSSESSIVE_PRONOUNS = new Set(["my", "your", "his", "hor", "its", "our", "their", "mine", "yours", "hers", "ours", "theirs"]);
 
 const model = (nlp.world() as { model: unknown }).model as { one: { lexicon: Record<string, string> }; two: { switches: Record<string, string> } };
 

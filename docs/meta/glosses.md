@@ -165,7 +165,7 @@ The sentence drops these. A [note](#note-required) carries one only when it is r
 |---------------------|-----------------|
 | Cast resumes and role pointers (`zuzozer`, `zwazar` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
-| Join packaging (open `zam` vs closed `zal`, exclusive `dol`, fence shape) | Plain *and / or*; no “exactly one”, no open-list footnotes |
+| Join packaging (open `zam` vs closed `zal`, exclusive `del`, fence shape) | Plain *and / or*; no “exactly one”, no open-list footnotes |
 | Sense-picking **-l / -m / -n** | Never (already omitted from morph when they only pick sense) |
 | Values **time horizon / standing / invitation / changeability** | Keep only what changes English (*can't* vs unmet sake as content); drop “(motive, soft standing)”, … Prescription **`the`**: loose free keeps the warrant when it is the point (*invited* / *offered* / *worth a try*) — not *must* / *should* / *could* as a force grade |
 | Emotion compose (locus / motion tail) | Ordinary emotion English (*we're glad*), not “pleasure met · internal” |
@@ -187,7 +187,7 @@ The sentence drops these. A [note](#note-required) carries one only when it is r
 
 ### Example (same Agebon, sentence and note)
 
-> `yol zawan dududal dugudal dol von.`
+> `yol zawan dududal dugudal del ven.`
 >
 > y-question | z-listener | [d-tea | d-coffee | d-or-exactly-one] | v-choose
 >
@@ -195,7 +195,7 @@ The sentence drops these. A [note](#note-required) carries one only when it is r
 
 On a page teaching exclusive *or*, the note is required. Elsewhere it is optional, or the sentence can carry it (*"Tea or coffee, which one?"*). In a grammar table the same row reads:
 
-| `von` | `v-choose` | *choose* (exactly one) |
+| `ven` | `v-choose` | *choose* (exactly one) |
 
 ## Senses are separate roots
 
@@ -313,11 +313,11 @@ A morph line corresponds **one-to-one** with its Agebon. From the gloss alone yo
 - **Sentence marks.** When one line holds several sentences, the mark between them stands alone with spaces: `z-Uzozen | v-walk . z-←Uzozen | v-judge`. A line-final period is implicit. A [tone mark](/tone-marks#tone-marks) is copied as written: attached to the glossed word or span it colors (`!z-Uzozen`), or standing alone with spaces for sentence scope (`! z-Uzozen | v-walk`).
 - **One label per form.** Each (PoS, root, ending) maps to one English label. Two roots never share an English sense: when they would, reword one row in the lexicon. `npm run lint:lexicon` checks this, and `npm test` round-trips every glossed example in `docs/grammar/`.
 - **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and a surface mark when a number word is not in its [preferred writing](/number-markers#writing-style-numeric-vs-spelled): `.spelled` on a spelled-out word that prefers shorthand (`grabadol` → `g-twelve.spelled`; `g+12` → `g-twelve`), `.short` on shorthand that prefers spelling — no digit or one digit (`g+3` → `g-three.short`; `gragel` → `g-three`; `g+` → `g-more-than-one.short`).
-- **Ordinals use digits** (`gredol` → `g-2nd`, `gruedol` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
+- **Ordinals use digits** (`grodol` → `g-2nd`, `gruodol` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
 - **Role words** gloss the scope after **`w`**, then the part, then the stem, joined with `-`: `zwazuduyel` → `z-episode-agent-teach`, `gwezuduyel` → `g-role-agent-teach`, `hwezuduyel` → `h-role-agent-teach` (*as a teacher*), `dwabezuyel` → `d-episode-recipient-speech`, `dwahowurel` → `d-episode-manner-walk`. Scope takes the label-scope labels (`episode`, `role`, `pair`, `type`, and the stacked labels); the part is `agent` (**`z`**), `patient` (**`d`**), `recipient` (**`b`**), or a quality of the event: `manner` (**`h`**), `state` (**`g`**), `stance` (**`th`**), `extent` (**`w`**), `move` (**`y`**), `outcome` (**`x`**), `event` (**`v`**, pointers only). A stem compound keeps its `-x-` (`zwazudozoxowurel` → `z-episode-agent-dog-x-walk`), and ability follows the stem (`gwezuduyexal` → `g-role-agent-teach-able`).
 - **Hook prefixes** gloss the hook as its extra-noun label, then `-x-`, then the stem: `guexavuvul` → `g-against-x-fight`, `guemxewulel` → `g-contrary-to-x-wind` (the **`mx`** frame is the hook's **-m** label), `guexahehaxowurel` → `g-against-x-house-x-walk`. A hook-compound stem glosses as the fused verb (`guexowurelul` → `g-against-x-leave`), and label scope keeps its `-th-` hinge (`zuexavuvuthel` → `z-against-x-fight-th-role`).
 - **Hooked joins** gloss the hook's label from the [extra-noun grid](/extra-noun-hooks#extra-noun-intermediate) (the frame label on hook **-m**, the point-back label on hook **-r**), then `-x-`, then the join's label, with `.open` for join **-m**; the landmark rides in the bracket: `zoxual blahehal` → `[z-at-x-everything | bl-house]`, `zomxuam bluwon` → `[z-near-x-everything.open | bl-speaker]`, `dexar` under a question → `d-for-x-wh`, `zorxual` → `z-there-x-everything`, `daorxar` → `d-on.it-x-something`. On `/h/`, a point-back names a time: `hurxal` → `h-since.then-x-never` (`ar` `within.then`, `or` `at.then`).
-- **Numeric prefixes** gloss the number body's kind label, then `-x-`, then the stem in the sense its ending picks: `zrawaxolamal` → `z-infinity-x-love`, `zruwuxahuyayol` → `z-quasi-x-friend`, `zragexezuyel` → `z-three-x-speech`, `drebaxebewem` → `d-1st-x-draft`. The **`mx`** seam adds `.about` to the number (`dragemxezuyel` → `d-three.about-x-speech`).
+- **Numeric prefixes** gloss the number body's kind label, then `-x-`, then the stem in the sense its ending picks: `zrawaxolamal` → `z-infinity-x-love`, `zruwuxahuyayol` → `z-quasi-x-friend`, `zragexezuyel` → `z-three-x-speech`, `drobaxebewem` → `d-1st-x-draft`. The **`mx`** seam adds `.about` to the number (`dragemxezuyel` → `d-three.about-x-speech`).
 - **Role-compound resumes** keep their scope and part: `dwazarayer` → `d-←episode-agent-write`, `dwadarayer` → `d-←episode-patient-write`. A bare `d-←write` would merge the doer, undergoer, and extra party of one event.
 - **Role pointers** gloss their scope, part, and pointer vowel, never the referent: `zwazar` → `z-←episode-agent.same`, `dwador` → `d-←episode-patient.other`, `dwazer` → `d-←episode-agent.self`, `zwazur` → `z-←episode-agent.unsaid`, `zwezar` → `z-←role-agent.same`, `dwahar` → `d-←episode-manner.same`, `dwavar` → `d-←episode-event.same`. **-l** adds `.new` and **-m** adds `.part` (`dwadal` → `d-←episode-patient.same.new`, `zwazam` → `z-←episode-agent.same.part`, `zwabom` → `z-←episode-recipient.other.part`, `zwazum` → `z-←episode-agent.unsaid.part`).
 - **Say words** gloss scope, whose say, the answer, and the ending, joined with `-`: `hwavam` → `h-episode-event-ALLOW-said`, `hwadum` → `h-episode-patient-FORBID-said`, `hwozal` → `h-pair-agent-ALLOW-rule`. Scope takes the label-scope labels; whose say is `agent` / `patient` / `recipient` / `event`; the answer is `ALLOW` / `FORBID` / `REQUIRE` / `CHOICE`; the ending is `rule` (**-l**), `said` (**-m**), or `tacit` (**-r**).
@@ -412,7 +412,7 @@ Gloss each piece by **family** ([compounds.md](/compounds)) — English only. Dr
 | Hooked join | `zoxual blahehal` / `hurxal` | `[z-at-x-everything \| bl-house]` / `h-since.then-x-never` ([hooked joins](#round-trip)) |
 | Numeric prefix | `zrawaxolamal` / `dragemxezuyel` | `z-infinity-x-love` / `d-three.about-x-speech` ([numeric prefixes](#round-trip)) |
 | Span | `th(hogowul)` | `th-ASIDE[h-quiet]` ([labeled bracket](#phrase-brackets)) |
-| Number / enumeration | `xrewul` | `x-starting-with` |
+| Number / enumeration | `xrowul` | `x-starting-with` |
 
 For **hyphenated names**, gloss each piece (`y-Unodu-x-Ozalan`, `z-Uguda-x-Ududa-x-Owulan`). Mid-word **`x`** stays visible as `-x-`. Do not put Agebon letters in the english slot, except [opaque interiors](#span-interiors).
 
@@ -450,9 +450,9 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `zam` | `z-and.open` |
 | `zal` | `z-and` |
 | `vam` | `v-and.open` |
-| `dol` | `d-or-exactly-one` |
-| `zol` | `z-or-exactly-one` |
-| `zel` | `z-rank/more` |
+| `del` | `d-or-exactly-one` |
+| `zel` | `z-or-exactly-one` |
+| `zol` | `z-rank/more` |
 | `zoel` | `z-equal-rank` |
 | `zoem` | `z-equal-rank.open` |
 | `zar` | `z-wh` / `z-something` |
@@ -461,7 +461,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `zul` / `gul` | `z-not` / `g-not` |
 | `zual` | `z-everything-but` |
 | `xan` | `x-and-then` |
-| `xuen` | `x-and-before-that` |
+| `xuon` | `x-and-before-that` |
 | `ol` | `instead` |
 | `am` | `including.open` |
 | `al` | `additionally` (discourse) / `including` (in-clause closed) |
@@ -470,10 +470,10 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `hal` (listed) | `h-only-when` |
 | `hal` (bare) | `h-never` |
 | `hual` (bare) | `h-always` |
-| `her` (statement / fill-ask) | `h-preferred-time` / `h-when-best` |
-| `von` | `v-choose` |
+| `hor` (statement / fill-ask) | `h-preferred-time` |
+| `ven` | `v-choose` |
 | `gragel` | `g-three` |
-| `gredol` | `g-2nd` |
+| `grodol` | `g-2nd` |
 | `g+3` (shorthand) | `g-three.short` |
 | `g+12` | `g-twelve` |
 | `g+e` | `g-plus-infinity` |
@@ -501,7 +501,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `thugom` | `th-LIVE` | *from the scene* |
 | `thager` | `th-plan-sketch` | *as a sketch plan* |
 | `gorol` | `g-SAME` | *identical to* (identity host) |
-| `von` | `v-choose` | *chooses (exactly one)* |
+| `ven` | `v-choose` | *chooses (exactly one)* |
 
 ### Dialogue turn (morph + loose free)
 
@@ -533,7 +533,7 @@ No note: *as I remember* already says whose memory it is. Do not render the over
 
 ### Numbered alternative + unmet pleasure
 
-> `xrewul zabevam grebal. zuwonx thodothur.`
+> `xrowul zabevam grobal. zuwonx thodothur.`
 >
 > x-starting-with | [z-problem | g-1st] . z-speaker-x | th-pleasure-unmet-passing
 >
@@ -555,13 +555,13 @@ An italic English cell beside an Agebon phrase or sentence (an **Agebon**, **Exa
 
 | Example | Gloss |
 |---------|-------|
-| `z<Sam>n z<Lea>n zel g<big>l` | *Sam is bigger than Lea* (closed; Sam ≻ Lea on *big*) |
+| `z<Sam>n z<Lea>n zol g<big>l` | *Sam is bigger than Lea* (closed; Sam ≻ Lea on *big*) |
 
 When teaching the join morphology in the same table, add morph:
 
 | Example | Morph | Gloss |
 |---------|-------|-------|
-| `… zel g<big>l` | `[… \| z-rank/more \| g-big]` | *… is bigger …* |
+| `… zol g<big>l` | `[… \| z-rank/more \| g-big]` | *… is bigger …* |
 
 Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 

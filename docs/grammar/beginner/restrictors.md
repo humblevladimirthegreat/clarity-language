@@ -57,7 +57,7 @@ To say the verb's claim holds at every time, use **`hual`**. Bare **`hual`** is 
 
 ### Sometimes / anytime / some other time
 
-To say *sometimes*, *anytime*, or *some other time* without naming the occasion (no *rain*, no *night*), put ending **-r** on the restrictor: `har`, `hor`, `hur`. **-r** points at some time without saying which, so nothing needs to come before it. *Anytime* (`hor`) means any one particular time will do, not *at all times* (that is *always*, `hual`).
+To say *sometimes*, *anytime*, or *some other time* without naming the occasion (no *rain*, no *night*), put ending **-r** on the restrictor: `har`, `her`, `hur`. **-r** points at some time without saying which, so nothing needs to come before it. *Anytime* (`her`) means any one particular time will do, not *at all times* (that is *always*, `hual`).
 
 *Sometimes* is the usual English for `har`, alongside *never* and *always*. It says only that there is **some** such occasion, as *something* does on a [join](joins.md). It does not mean *often*.
 
@@ -65,7 +65,7 @@ To say *sometimes*, *anytime*, or *some other time* without naming the occasion 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`har`** | unspecified member of the time inventory | *sometimes* / *at some time* | **-r** names a member |
-| **`hor`** | unspecified member of a one-choice time menu | *anytime* (any one particular time, whichever you pick) | **o** ≈ one |
+| **`her`** | unspecified member of a one-choice time menu | *anytime* (any one particular time, whichever you pick) | **e** ≈ either |
 | **`hur`** | unspecified leftover occasion | *some other time* | **u** ≈ undo |
 
 > `zolazun varuvel har.`
@@ -74,7 +74,7 @@ To say *sometimes*, *anytime*, or *some other time* without naming the occasion 
 >
 > "Olazun runs sometimes."
 
-> `zahelan vowurel hor.`
+> `zahelan vowurel her.`
 >
 > z-Ahelan | v-walk | h-anytime
 >
@@ -122,7 +122,7 @@ To say *never sleepy* or *sometimes sleepy*, limit only the adjective, not the w
 >
 > "Uzozen is sleepy only when it rains."
 
-> `zolazun wor guzemol.`
+> `zolazun wer guzemol.`
 >
 > z-Olazun | [w-anytime | g-sleepy]
 >
@@ -253,7 +253,7 @@ z-Olazun | [w-always | g-angry]
 *Olazun is always angry.*
 :::
 
-**3.** `zuzozen vazuvel hor.`
+**3.** `zuzozen vazuvel her.`
 
 ::: details Show answer
 z-Uzozen | v-swim | h-anytime

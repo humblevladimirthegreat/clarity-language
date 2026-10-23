@@ -249,7 +249,7 @@ In English: [Claritish: Decisions and tries](claritish/decisions-and-tries.md).
 
 A plan made in English often names only the first choice, and it either stays vague or feels like it has to be complete before you act.
 
-A [fallback](/ability#fallback) joins an attempt to its backup with `xon`: *try A; failing that, B*. The backup counts only if the attempt before it fails. The [PLAN](/intention#plan-predict) ending says how much of the plan is drawn: backups included, steps filled in, or only a direction. No level is better, and a sketch is often all a small or early plan needs; for a plan that matters, the backups-included ending is a prompt to ask what could go wrong.
+A [fallback](/ability#fallback) joins an attempt to its backup with `xen`: *try A; failing that, B*. The backup counts only if the attempt before it fails. The [PLAN](/intention#plan-predict) ending says how much of the plan is drawn: backups included, steps filled in, or only a direction. No level is better, and a sketch is often all a small or early plan needs; for a plan that matters, the backups-included ending is a prompt to ask what could go wrong.
 
 Naming the backup before you start helps a setback turn into the next step instead of a dead end, and matching plan detail to the task keeps planning from becoming a reason not to start.
 

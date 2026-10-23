@@ -108,9 +108,9 @@ type Ctx = {
 export function numberMarkerIdentity(marker: NumberMarker): string {
   if (marker === "+" || marker === "ra") return "scalarPos";
   if (marker === "-" || marker === "ru") return "scalarNeg";
-  if (marker === "#" || marker === "re") return "ordinalFwd";
-  if (marker === "#-" || marker === "rue") return "ordinalEnd";
-  if (marker === "#_" || marker === "ruo") return "negativeLabel";
+  if (marker === "#" || marker === "ro") return "ordinalFwd";
+  if (marker === "#-" || marker === "ruo") return "ordinalEnd";
+  if (marker === "#_" || marker === "rue") return "negativeLabel";
   if (marker === "+-" || marker === "rua") return "errorBound";
   return "label";
 }

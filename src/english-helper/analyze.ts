@@ -452,7 +452,7 @@ function addExamples(data: HelperData, suggestions: Suggestion[], words: readonl
   }
 }
 
-/** A lone count or rank word spelled as a `/ɡ/` number word ([counts](numbers.md#counts)): *three* → `gragel`, *third* → `gregel`. */
+/** A lone count or rank word spelled as a `/ɡ/` number word ([counts](numbers.md#counts)): *three* → `gragel`, *third* → `grogel`. */
 function numberWord(data: HelperData, t: TaggedTerm): string | undefined {
   if (t.value === undefined || !Number.isInteger(t.value) || t.value < 0) return undefined;
   const word = `g${markerToSpeech(t.ordinal ? "#" : "+")}${digitsToSyllables(String(t.value))}l`;

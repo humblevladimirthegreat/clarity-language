@@ -25,7 +25,7 @@ main sentence …  thohom / thebom / …  barl   [dependent sentence]
 >
 > "Uzozen walks only if Olazun is asleep."
 
-Several conditions can sit inside `/b/` as a [join](/joins) (`thohom blugalal blozulal baom` *if clouds and/or snow*).
+Several conditions can sit inside `/b/` as a [join](/joins) (`thohom blugalal blozulal baem` *if clouds and/or snow*).
 
 **Related form:** to join two full sentences with *and also*, use a clause [join](/joins) (`xam`), not a pole.
 

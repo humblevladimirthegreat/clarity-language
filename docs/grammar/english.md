@@ -154,10 +154,10 @@ One English word, one row: the form that says it and the section that teaches it
 | *parallel* (*parallel to Olazun*) | the direction, then *like*: `gurem gewom blolazun` | [Simile](/relations#similative) |
 | *lean* / *tilt* | `vaduhel hruwul` (*almost falls*) | [Already, still, not yet](/already-still-yet#phasal) |
 | *corner* / *around the corner* | `zadugul` (the corner); `ol badugul` *at the corner*; `hevam bladugul` *around the corner* | [Locative relations](/of-relations#locative-relations) |
-| *beyond* / *farther than* | rank on distance: `zahehal zel gazavem` (farther than the house) | [Bar words](say-amounts.md#bar-words) |
+| *beyond* / *farther than* | rank on distance: `zahehal zol gazavem` (farther than the house) | [Bar words](say-amounts.md#bar-words) |
 | *versus* / *against* (*Uzozen versus Olazun*) | hook **`uel`** + `/b/` | [Hooks](/hooks#extra-noun) |
 | *somewhere* / *nowhere* / *everywhere* / *elsewhere* | **`ol bar`** / **`ol bal`** / **`ol bual`** / **`ol bur`** | [Somewhere, nowhere, everywhere](/here-there#place-indefinites) |
-| *anywhere* (any place will do) / *not … anywhere* | **`ol bor`** (*at any one*); with a denial, **`ol bal`** (*nowhere*) | [Somewhere, nowhere, everywhere](/here-there#place-indefinites), [unspecified member](/joins#unspecified-member-r-phrase) |
+| *anywhere* (any place will do) / *not … anywhere* | **`ol ber`** (*at any one*); with a denial, **`ol bal`** (*nowhere*) | [Somewhere, nowhere, everywhere](/here-there#place-indefinites), [unspecified member](/joins#unspecified-member-r-phrase) |
 
 ### Including, except, instead {#same-slot}
 
@@ -187,15 +187,15 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 |--------------|------------|-------|
 | *X and Y are A and B, respectively* | the subject list, the adjective list, then **`wubam`** before the second join: `zuzozen zolazun zal gelazom gamezom wubam gal` | [Respectively](/rank-joins#respectively) |
 | *X and Y walk and run, respectively* | the same shape on verbs: `zuzozen zolazun zal vowurel varuvel wubam val` | [Respectively](/rank-joins#respectively) |
-| *as a last resort* / *only if nothing else works* | the occasion + **`huel`** (`herulal huel`) | [Ranked occasions](/more-occasions#more-occasions) |
+| *as a last resort* / *only if nothing else works* | the occasion + **`huol`** (`herulal huol`) | [Ranked occasions](/more-occasions#more-occasions) |
 
 ### *some-* and *any-* words {#some-any}
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
 | *something* / *someone* / *thing* / *stuff* (unnamed) | **`zar`**; with a kind, `zeyol zar` | [Unspecified member](/joins#unspecified-member-r-phrase) |
-| *anything* / *anyone* / *anybody* | **`zor`**; with a kind, `zeyol zor` | [Unspecified member](/joins#unspecified-member-r-phrase) |
-| *somehow* / *in some way* | **`hewom blor`** (*like* some unspecified one) | [Simile](/relations#similative), [unspecified member](/joins#unspecified-member-r-phrase) |
+| *anything* / *anyone* / *anybody* | **`zer`**; with a kind, `zeyol zer` | [Unspecified member](/joins#unspecified-member-r-phrase) |
+| *somehow* / *in some way* | **`hewom bler`** (*like* some unspecified one) | [Simile](/relations#similative), [unspecified member](/joins#unspecified-member-r-phrase) |
 | *some of them* / *some people* (more than one, unnamed) | **`zarx`**; with a kind, `zeyol zarx` | [Unspecified member](/joins#unspecified-member-r-phrase) |
 | *a certain someone* / *someone I won't name* | **`zar`**, then *I know who*: `zuwon vanam dorl zar.` | [Unspecified member](/joins#unspecified-member-r-phrase), [dependent clauses](/dependents#dependent-clauses) |
 | *someone, I don't know who* | **`zar`**, then `zuwon vanam vul dorl zar.` | [Unspecified member](/joins#unspecified-member-r-phrase), [dependent clauses](/dependents#dependent-clauses) |
@@ -271,14 +271,14 @@ English names many kinds with a number idea in front: *quasi-friend*, *proto-lov
 | *quasi-* / *as-if* (*quasi-friend*, *quasi-official*) | numeric prefix **`ruwux…`**: `zruwuxahuyayol`, `gruwuxezazom` | [Quasi](/numeric-derivation#quasi) |
 | *the essence of* / *pure* (*essence of love*) | numeric prefix **`rawax…`**: `zrawaxolamal` | [Limit / polarity / stage](/numeric-derivation#limit-polarity-stage) |
 | *a grain of* / *a seed of* (*a grain of love*) | numeric prefix **`rawux…`**: `zrawuxolamal` | [Limit / polarity / stage](/numeric-derivation#limit-polarity-stage) |
-| *proto-* / *in its beginning form* | numeric prefix **`rewux…`**: `zrewuxolamal` | [Limit / polarity / stage](/numeric-derivation#limit-polarity-stage) |
+| *proto-* / *in its beginning form* | numeric prefix **`rowux…`**: `zrowuxolamal` | [Limit / polarity / stage](/numeric-derivation#limit-polarity-stage) |
 | *multi-* / *poly-* (*multi-faith*) | numeric prefix **`rax…`**: `zraxehoham` | [Limit / polarity / stage](/numeric-derivation#limit-polarity-stage) |
 | *de-* / *un-* on a kind (*to de-tale*) | numeric prefix **`rux…`**: `vruxonem` | [Limit / polarity / stage](/numeric-derivation#limit-polarity-stage) |
 | *uni-* / *bi-* / *tri-* / *three-part* / *mutual* | numeric prefix **`rabax…`** / **`radox…`** / **`ragex…`**: `zrabaxadowom`, `gradoxabewem`, `zragexezuyel` | [Scalar digit morphs](/numeric-derivation#scalar-digit-morphs) |
 | *one-sided* / *non-mutual* | numeric prefix **`rudox…`**: `grudoxabewem` | [Scalar digit morphs](/numeric-derivation#scalar-digit-morphs) |
-| *first-class* / *secondary* / *third-order* | numeric prefix **`rebax…`** / **`redox…`** / **`regex…`**: `drebaxebewem`, `gredoxamunem`, `zregexabevam` | [Ordinal digit morphs](/numeric-derivation#ordinal-digit-morphs) |
+| *first-class* / *secondary* / *third-order* | numeric prefix **`robax…`** / **`rodox…`** / **`rogex…`**: `drobaxebewem`, `grodoxamunem`, `zrogexabevam` | [Ordinal digit morphs](/numeric-derivation#ordinal-digit-morphs) |
 | *null* / *to zero out* a kind (*null the score*) | numeric prefix **`ramox…`**: `vramoxodoram` | [Null / anti-null](/numeric-derivation#null-anti-null) |
-| *specimen #1*, *room-12* as a kind | numeric prefix **`robax…`** / **`robadox…`**: `zrobaxudewal`, `zrobadoxahehal` | [Label / code sense](/numeric-derivation#label-code-sense) |
+| *specimen #1*, *room-12* as a kind | numeric prefix **`rebax…`** / **`rebadox…`**: `zrebaxudewal`, `zrebadoxahehal` | [Label / code sense](/numeric-derivation#label-code-sense) |
 | *mega-* / *a gazillion-* (*a gazillion-mess*) | numeric prefix **`rabawax…`**: `zrabawaxezulam` | [Hyperbole](/numeric-derivation#hyperbole-sense) |
 | *roughly three-part* | **`mx`** for the seam: `dragemxezuyel` | [Numeric prefixes](/numeric-derivation#numeric-derivation) |
 

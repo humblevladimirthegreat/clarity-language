@@ -135,7 +135,7 @@ describe("resolve — role pointers (pronouns.md#role-pointers)", () => {
 
   it("a joined slot is one group", () => {
     assert.deepEqual(pointers("zuzozen zolazun zal vowurel. zwazarx vuhohol."), ["zwazarx→zal"]);
-    assert.deepEqual(pointers("zuzozen zolazun zel gamahum. zwazarx varuvel."), ["zwazarx→zel"]);
+    assert.deepEqual(pointers("zuzozen zolazun zol gamahum. zwazarx varuvel."), ["zwazarx→zol"]);
   });
 
   it("span interiors add no anchors", () => {
@@ -473,18 +473,18 @@ describe("resolve — yes/no vs fill-ask (questions.md)", () => {
 
 describe("resolve — SHARED (comparatives.md / numbers.md)", () => {
   it("reads rank + SHARED scale as scale", () => {
-    const { shared } = resolveOf("zuzozen zululon zel gomoldam.");
+    const { shared } = resolveOf("zuzozen zululon zol gomoldam.");
     assert.equal(shared.length, 1);
     assert.equal(shared[0]!.role, "scale");
-    assert.equal(shared[0]!.join.raw, "zel");
+    assert.equal(shared[0]!.join.raw, "zol");
     assert.equal(shared[0]!.shared.word.raw, "gomoldam");
   });
 
   it("reads rank + SHARED manner /h/ as scale", () => {
-    const { shared } = resolveOf("zululon zuzozen zel huhevom vawalal.");
+    const { shared } = resolveOf("zululon zuzozen zol huhevom vawalal.");
     assert.equal(shared.length, 1);
     assert.equal(shared[0]!.role, "scale");
-    assert.equal(shared[0]!.join.raw, "zel");
+    assert.equal(shared[0]!.join.raw, "zol");
     assert.equal(shared[0]!.shared.word.raw, "huhevom");
   });
 
@@ -505,18 +505,18 @@ describe("resolve — SHARED (comparatives.md / numbers.md)", () => {
   });
 
   it("reads sequence oe with two numbers + SHARED as a scale, not a range", () => {
-    const { shared } = resolveOf("z+3 z+5 zael gumedul.");
+    const { shared } = resolveOf("z+3 z+5 zaol gumedul.");
     assert.equal(shared[0]!.role, "scale");
     assert.equal(shared[0]!.shared.word.raw, "gumedul");
   });
 
   it("reads rank e with two numbers + SHARED as a scale, not a range", () => {
-    const { shared } = resolveOf("z+3 z+5 zel gumedul.");
+    const { shared } = resolveOf("z+3 z+5 zol gumedul.");
     assert.equal(shared[0]!.role, "scale");
   });
 
   it("leaves bare z+3 z+5 zel without SHARED", () => {
-    const { shared } = resolveOf("z+3 z+5 zel.");
+    const { shared } = resolveOf("z+3 z+5 zol.");
     assert.equal(shared.length, 0);
   });
 });

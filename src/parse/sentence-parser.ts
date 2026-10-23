@@ -246,7 +246,7 @@ function isFrameHook(token: IToken): boolean {
 
 
 /**
- * A `/th/` stance word right before a closed or open rank join of a noun list (`zel` / `zuel` / `zoel`, -l or -m) is that
+ * A `/th/` stance word right before a closed or open rank join of a noun list (`zol` / `zuol` / `zoel`, -l or -m) is that
  * fence's bar (comparatives.md § bars), after the list's items. Its hosted tail (`/b/`, a `/b/` join, an offset amount,
  * `barl`) may sit between; so may a second stance word, which enforce rejects.
  */
@@ -1717,7 +1717,7 @@ function splitAtStandIn(units: Unit[], index: number, orodo: LexWord): Clause {
   return { units: units.slice(0, index + 1), dependent: rest.length > 0 ? { orodo, clause: { units: rest } } : undefined };
 }
 
-const IMPLIED_SUBJECT_SERIES = new Set(["e", "u", "ao", "uo", "ua"]);
+const IMPLIED_SUBJECT_SERIES = new Set(["o", "u", "ae", "ue", "ua"]);
 
 function verbalDependentIn(unit: Unit): { word: LexWord; coord: VpCoord; stacked: boolean } | undefined {
   if (unit.kind !== "vp" || unit.coord.parts.length === 0) return undefined;
@@ -1887,11 +1887,11 @@ function factorAhead(tok: IToken): boolean {
 
 /** A place in a series (`#` from the start, `#-` from the end), including kin generations. */
 function isOrdinalMarker(marker: NumberMarker): boolean {
-  return marker === "#" || marker === "re" || marker === "#-" || marker === "rue";
+  return marker === "#" || marker === "ro" || marker === "#-" || marker === "ruo";
 }
 
 function isLabelMarker(marker: NumberMarker): boolean {
-  return marker === "_" || marker === "ro" || marker === "#_" || marker === "roe";
+  return marker === "_" || marker === "re" || marker === "#_" || marker === "roe";
 }
 
 /**

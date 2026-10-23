@@ -201,6 +201,6 @@ z-key | [at | b-speaker]
 
 z-Uzozen | v-sit | [at | b-everything]
 
-**`bual`** is *everywhere*; **`bor`** asks *anywhere?* under a question, or means *any place will do*.
+**`bual`** is *everywhere*; **`ber`** asks *anywhere?* under a question, or means *any place will do*.
 :::
 

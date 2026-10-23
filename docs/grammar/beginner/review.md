@@ -241,16 +241,16 @@ education
 **Rule:** [First mention, abstract](word-endings.md#abstract-m)
 :::
 
-**2.** *Uzozen sees a mango or a watermelon: exactly one of the two.* `zuzozen demedol dowodol dol vawebol.` or `zuzozen demedol dowodol dal vawebol.`
+**2.** *Uzozen sees a mango or a watermelon: exactly one of the two.* `zuzozen demedol dowodol del vawebol.` or `zuzozen demedol dowodol dal vawebol.`
 
 ::: details Show answer
-`zuzozen demedol dowodol dol vawebol.`
+`zuzozen demedol dowodol del vawebol.`
 
 z-Uzozen | [d-mango | d-watermelon | d-or-exactly-one] | v-see
 
-**`dol`** picks one of the items; **`dal`** would be *a mango and a watermelon*.
+**`del`** picks one of the items; **`dal`** would be *a mango and a watermelon*.
 
-**Rule:** [Choice (o)](joins.md#choice-o)
+**Rule:** [Choice (e)](joins.md#choice-e)
 :::
 
 **3.** *What does Olazun write?* `yol ?dar zolazun varayel.` or `yol ?dur zolazun varayel.`
@@ -277,16 +277,16 @@ Closed **`hal`** says night is the only time; open **`ham`** leaves room for oth
 **Rule:** [Only when / never](restrictors.md#only-when-never-hal)
 :::
 
-**5.** *Uzozen is more intense than Olazun.* `zuzozen zolazun zel guhunem.` or `zolazun zuzozen zel guhunem.`
+**5.** *Uzozen is more intense than Olazun.* `zuzozen zolazun zol guhunem.` or `zolazun zuzozen zol guhunem.`
 
 ::: details Show answer
-`zuzozen zolazun zel guhunem.`
+`zuzozen zolazun zol guhunem.`
 
 [z-Uzozen | z-Olazun | z-rank/more | g-intensity]
 
-The first name before **`zel`** ranks higher.
+The first name before **`zol`** ranks higher.
 
-**Rule:** [Comparatives](comparatives.md#comparatives-e)
+**Rule:** [Comparatives](comparatives.md#comparatives)
 :::
 
 **6.** *My helmet serves the physical sake in the long term.* `zehobul gobathal.` or `zehobul gobathul.`
@@ -440,7 +440,7 @@ z-Olazun | g-police
 ::: details Show answer
 `h_15,30 zolazun varuvel.`
 
-🔊 `hrobazathegemol zolazun varuvel.`
+🔊 `hrebazathegemol zolazun varuvel.`
 
 h-_15,30 | z-Olazun | v-run
 

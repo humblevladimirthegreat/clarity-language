@@ -67,11 +67,11 @@ English uses the same *who* clause for two jobs. When it picks out **which** one
 
 ### Stacked owners (*Uzozen's dog's bone*) {#stacked-owners}
 
-**Needs:** [Whose (`em`)](/extra-noun-hooks#genitive) · [Sequence `ae`](/rank-joins#sequence-ae)
+**Needs:** [Whose (`em`)](/extra-noun-hooks#genitive) · [Sequence `ao`](/rank-joins#sequence-ao)
 
-When English stacks possessives, keep one **`em`** and list every owner in its `/b/`, closed by the sequence join **`bael`**. Put the **nearest** owner first: the first `/b/` uses the host, and each later `/b/` keeps the one before it.
+When English stacks possessives, keep one **`em`** and list every owner in its `/b/`, closed by the sequence join **`baol`**. Put the **nearest** owner first: the first `/b/` uses the host, and each later `/b/` keeps the one before it.
 
-> `zobel em budozol buzozen bael.`
+> `zobel em budozol buzozen baol.`
 >
 > [z-bone | [used-by | [b-dog | b-Uzozen | b-in-order]]]
 >
@@ -284,7 +284,7 @@ English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwezud
 
 English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family tree and a sex. Agebon says the layer with the kin number and the sex with **`gemugol`** *male* or **`gevugol`** *female*, after `zeyol` *person*. Put the person the tie is from in a `bl-` word right after the number.
 
-> `zeyol gevugol grewamol bluzozen.`
+> `zeyol gevugol growamol bluzozen.`
 >
 > [z-person | g-female | [g-#-e0 | bl-Uzozen]]
 >
@@ -292,13 +292,13 @@ English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family 
 
 | English | Agebon |
 |---------|--------|
-| *mother* / *mom* | `zeyol gevugol grewubal bluzozen` |
-| *father* / *dad* | `zeyol gemugol grewubal bluzozen` |
-| *brother* | `zeyol gemugol grewamol bluzozen` |
-| *sister* | `zeyol gevugol grewamol bluzozen` |
-| *aunt* (a sister of a parent) | `zeyol gevugol grewamol bleyol grewubal bluzozen` |
-| *grandmother* (a parent of a parent) | `zeyol gevugol grewubal bleyol grewubal bluzozen` |
-| *generation* | the kin number itself: `grewubal` parents, `grewamol` siblings, `grewabal` children |
+| *mother* / *mom* | `zeyol gevugol growubal bluzozen` |
+| *father* / *dad* | `zeyol gemugol growubal bluzozen` |
+| *brother* | `zeyol gemugol growamol bluzozen` |
+| *sister* | `zeyol gevugol growamol bluzozen` |
+| *aunt* (a sister of a parent) | `zeyol gevugol growamol bleyol growubal bluzozen` |
+| *grandmother* (a parent of a parent) | `zeyol gevugol growubal bleyol growubal bluzozen` |
+| *generation* | the kin number itself: `growubal` parents, `growamol` siblings, `growabal` children |
 
 For *uncle* and *grandfather*, use `gemugol` for `gevugol`.
 
@@ -414,15 +414,15 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 | English | Agebon | Reading |
 |---------|--------|---------|
 | *join* / *associate with* (come along) | `zuzozen vowurel han blolazun.` | walks in company with Olazun |
-| *join* / *admit* (take into a set) | `zuzozen dugedam vaon.` | admits the object; more may follow |
+| *join* / *admit* (take into a set) | `zuzozen dugedam vaen.` | admits the object; more may follow |
 | *belong to* | `zanal em bolazun.` | in Olazun's use |
 | *consist of* / *made of* | `zahehal gulem blulel.` | material |
 | *comprise* / *constitute* / *is part of* | `zehowol gobem blahehal.` | a piece of the whole |
 | *match* / *correspond to* / *fit* (alike) | `zahehal hewom bludozol.` | like, as a simile |
 | *replace* / *substitute* | `zuzozen danal heham blehowol veham.` | swaps one for the other |
 | *represent* (act for) | `zuzozen hanom blolazun vezuyel.` | tells on behalf of Olazun |
-| *prefer* | `zuzozen danal ven.` | ranks the object first |
-| *would rather X than Y* / *prefer doing X to Y* | `zuzozen vowurel varuvel vel.` | walking outranks running |
+| *prefer* | `zuzozen danal von.` | ranks the object first |
+| *would rather X than Y* / *prefer doing X to Y* | `zuzozen vowurel varuvel vol.` | walking outranks running |
 | *lack* / *miss* (a need) | `zuzozen vebom.` | needs |
 | *fill* / *complete* | `zuzozen danal vuhuram.` | makes complete |
 | *recognize* / *acknowledge* | `zuzozen dolazun vewuyam.` | acknowledges Olazun |
@@ -443,13 +443,13 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 >
 > "Uzozen walks with Olazun."
 
-> `zuzozen danal ven.`
+> `zuzozen danal von.`
 >
 > z-Uzozen | d-book | v-prioritizes
 >
 > "Uzozen prefers the book."
 
-> `zuzozen vowurel varuvel vel.`
+> `zuzozen vowurel varuvel vol.`
 >
 > z-Uzozen | [v-walk | v-run | v-rank/more]
 >
@@ -510,7 +510,7 @@ An English noun like *case* or *board* covers several jobs, and Agebon has a dif
 | *case* (lawsuit) | `zuhuyelabeval` | a problem put before a judge |
 | *case* (container) | `zobogal` | a package |
 | *deal* / *bargain* (a swap) | `zuzozen danal heham blaral veham.` | trades a book for money |
-| *deal* (*a great deal*) | `thubem zel gral` | more than the usual amount |
+| *deal* (*a great deal*) | `thubem zol gral` | more than the usual amount |
 | *bid* / *offer* (a price) | `zuzozen daral vewal heham blanal.` | offers money in exchange for the book |
 | *contract* (agreement) | `hwadal` on the clause | they signed on: a binding yes |
 | *figure out* / *find out* | `zuzozen danal vumewol.` | finds the object |
@@ -673,7 +673,7 @@ Some English words have a second or third sense that a published root already ca
 | *experience* (skill) | `zuwam` | readiness |
 | *side* (position, location) | `zuhohom` | a position |
 | *address* (a location) | `zuhohom` | where it is |
-| *public* (open to everyone) | `zahehal gaon blual.` | a house open to all |
+| *public* (open to everyone) | `zahehal gaen blual.` | a house open to all |
 | *character* (a trait) | `zevebom` | trace |
 | *special* (dear to one person) | `zuzozen golamam.` | cherished |
 | *fit* (healthy) | `zuzozen geredom.` | in health |

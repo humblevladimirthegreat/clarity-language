@@ -29,7 +29,7 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 | *however* / *meanwhile* (discourse) | **`xezom`** / **`xegorem`** |
 | *regardless of* (NP) | same **`hezom`** + `/b/` **noun** as *despite* |
 | *anyway* / *anyhow* (back to the main line) | the resume hook **`or …`** ([point back](/discourse-hooks#hook-resume)) |
-| *otherwise* / *or else* (failing that) | **`xon`** between the clauses ([clause sequence](/clause-sequence#clause-sequence)) |
+| *otherwise* / *or else* (failing that) | **`xen`** between the clauses ([clause sequence](/clause-sequence#clause-sequence)) |
 | *nevertheless* / *nonetheless* (discourse) | **`xezom`** after the finished claim; inside one sentence, **`hezom blarl`** |
 | *whereas* (two claims set against each other) | **`xezom`** before the second claim, or **`hezom blarl`** inside one sentence |
 | *moreover* / *furthermore* (discourse) | **`ael …`** opens the sentence that goes further; **`al …`** adds a separate point ([stacked discourse hooks](/discourse-hooks#stacked-discourse)) |
@@ -60,7 +60,7 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 | *basically* / *fundamentally* | `hadelom` | manner adverb on *fundamental* |
 | *overall* / *on the whole* | `hahugem blual` | as for everything |
 | *automatically* / *by itself* | `zanal vowurel thewem blanar.` | CAUSE, with the doer resumed as its own cause |
-| *increasingly* / *more and more* | `helam zel` + the quality | more than it used to be |
+| *increasingly* / *more and more* | `helam zol` + the quality | more than it used to be |
 | *unfortunately* | `thudathum` | unspecified sake, unmet, can be softened |
 | *unfortunately* (and it is final) | `thudathul` | unspecified sake, unmet, irreversible |
 
@@ -201,7 +201,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 
 ### Know, mean, explain, realize, forget, become {#mind-verbs}
 
-**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Embedded whether](/questions#embedded-whether) · [Because](/iff-fault#only-because) · [Already, still, not yet](/already-still-yet#phasal) · [Can](/can-and-cant#can) · [Existence](/predication#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](/comparatives#comparatives-e)
+**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Embedded whether](/questions#embedded-whether) · [Because](/iff-fault#only-because) · [Already, still, not yet](/already-still-yet#phasal) · [Can](/can-and-cant#can) · [Existence](/predication#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](/comparatives#comparatives)
 
 English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mostly sit on a few plain moves: tell, know, remember, and whether the change has come. Agebon keeps those roots and adds the phasal word for the change, so *realize* is *already know* and *forget* is *no longer remember*. *Mean* in the sense of *signify* is the compound `ezuyeloma` (*meaning*, speech that carries a thought).
 
@@ -213,7 +213,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | *explain* | `zuzozen vezuyel bolazun darl zolazun vowurel thahum blarl zudozol varuvel.` | tells Olazun that the walk has the run as its reason |
 | *describe* | `zuzozen hahugem bludozol vezuyel bolazun.` | tells Olazun about the dog |
 | *know* (that) | `zuzozen vanam darl zudozol varuvel.` | knows that the dog runs; to say how *you* know it, use a [channel](/evidentiality#evidentiality) |
-| *know whether* / *know which* | `zuzozen vanam dorl zudozol varuvel.` | knows whether the dog runs; a blank inside asks *which* (`dor`) |
+| *know whether* / *know which* | `zuzozen vanam dorl zudozol varuvel.` | knows whether the dog runs; a blank inside asks *which* (`der`) |
 | *find out* | `zuzozen vumewol dorl zudozol varuvel.` | finds whether the dog runs |
 | *know someone* | `zuzozen havom dolazun vawebol har.` | has met Olazun at some point ([ever](/already-still-yet#ever-never)) |
 | *know how to* | `zuzozen vezuyoxal.` | can sing ([can](/can-and-cant#can)) |
@@ -224,7 +224,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | *happen* / *occur* | the event's own verb: `verulal.` | no helper word |
 | *depend on* | `zuzozen vowurel thebom thahum blerulal.` | only because of rain |
 | *allege* / *claim* | `thebam` on the clause | REPORTED: so they say |
-| *compare* / *exceed* | `zuzozen zolazun zel gelazom.` | rank on a shared scale ([comparatives](/comparatives#comparatives-e)) |
+| *compare* / *exceed* | `zuzozen zolazun zol gelazom.` | rank on a shared scale ([comparatives](/comparatives#comparatives)) |
 
 > `zuzozen havom vanam darl zudozol varuvel.`
 >
@@ -252,7 +252,7 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 | *factor* (one cause among several) | `thahur blarl` | a share of the fault or cause |
 | *circumstance* / *context* | a dependent after `blarl` (`herem blarl`, `thahum blarl`) | the situation as a clause |
 | *requirement* / *demand* | `hwavel` / `hwavem` / `hwaver` | rule, person, or expectation |
-| *necessary* / *unnecessary* | `hwavel` on the act; *more than needed* is the sake bar `thudatham zel` | required by a rule; past what the need asks |
+| *necessary* / *unnecessary* | `hwavel` on the act; *more than needed* is the sake bar `thudatham zol` | required by a rule; past what the need asks |
 | *motivation* / *motive* | `zuwon vowurel thawothom.` | my reason; someone else's motive takes a [holder](/holder#holder) |
 | *satisfaction* / *pleasure* | `thodotham.` | pleasure, met |
 | *desire* / *wish* | `zuzozen thalem vowurel.` | I want Uzozen to walk; someone else's wish takes a [holder](/holder#holder) |
@@ -289,8 +289,8 @@ English *biased* says a view may be bent by what the holder wants from it. Agebo
 | *biased* (someone else) | `zuzozen vevemol thudathom blwazer.` | as you see it, Uzozen's view serves a stake of their own |
 | *bias* (the noun, *Uzozen's bias*) | `zuzozen vevemol thudathom blwazer.` | the view held for a stake; [point back](/dependents#which-noun) to it to name it |
 | *I'd like to believe* / *wishful thinking* | `zuwon thalem vevemol darl zolazun vowurel.` | I want to think that Olazun walks |
-| *overconfident* | `zuwon theyem zel gugowem.` | surer than the clues warrant |
-| *underconfident* | `zuzozen theyem zuel gugowem.` | less sure than the clues warrant |
+| *overconfident* | `zuwon theyem zol gugowem.` | surer than the clues warrant |
+| *underconfident* | `zuzozen theyem zuol gugowem.` | less sure than the clues warrant |
 | *to be honest*, before owning a bias | `thavewem` | [speech manner](/speech-acts#speech-manner) |
 
 > `thavewem zuwon thomam vevemol thudathom.`
@@ -299,7 +299,7 @@ English *biased* says a view may be bent by what the holder wants from it. Agebo
 >
 > "To be honest, I may be biased."
 
-> `zuwon theyem zel gugowem.`
+> `zuwon theyem zol gugowem.`
 >
 > [z-speaker | th-CLUES | z-rank/more | g-trust]
 >
@@ -508,11 +508,11 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 | *glad to help* / *rewarding to give* | `thewatham.` | the act met your beneficence |
 | *grateful* / *thankful* / *appreciate* (your own thanks) | `thawotham.`, or the met word for the sake that was served | your sake, met: the thanks ([thanks and sorry](/thanks-and-sorry#thanks-sorry)) |
 | *benefit* / *benefits Olazun* | `thawotham blolazun` | the act met Olazun's sake |
-| *advantage* (a lead over someone) | `zel` with the scale | rank against the other |
+| *advantage* (a lead over someone) | `zol` with the scale | rank against the other |
 | *satisfy* (you) | `thawotham blawan` | the act met your sake |
 | *satisfy* (a requirement) | `hwavel zoel` + scale | tie against the rule: it meets the requirement |
 | *suitable* / *appropriate* (for a need) | `guwatham` or `thudatham zoel` | met, or enough for the need |
-| *more important than* | `zel` between the nouns, then `gurethal` | rank on the lasting met sake |
+| *more important than* | `zol` between the nouns, then `gurethal` | rank on the lasting met sake |
 | *upset* | `wawothumar goyem` | relatedness, unmet, held inside, surging |
 | *upset for someone* | `wawothumem goyem` + `/b/` | unmet relatedness on their behalf |
 
@@ -534,13 +534,13 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 >
 > "Uzozen's walking benefits Olazun."
 
-> `zonal zezuyel zel gurethal.`
+> `zonal zezuyel zol gurethal.`
 >
 > [z-memo | z-speech | z-rank/more | g-purpose-met-lasting]
 >
 > "The memo is more important than the talk." (it matters more for the long run)
 
-> `zuzozen zolazun zel gezuyol.`
+> `zuzozen zolazun zol gezuyol.`
 >
 > [z-Uzozen | z-Olazun | z-rank/more | g-sing]
 >
@@ -565,9 +565,9 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrec
 | *wrong* (incorrect) | `gogugol gul` | not correct, closed with **`gul`** |
 | *wrong* (morally) | `thahul blarl` + the act | fault on the act ([fault](/fault#fault)) |
 | *wrong* (bad for someone) | `thawothum blolazun` | the act detracted from Olazun's sake |
-| *badly* (manner) | the doer, then `thubem zuel hogugol` | less correctly than usual ([manner words](say-amounts.md#manner-words)) |
+| *badly* (manner) | the doer, then `thubem zuol hogugol` | less correctly than usual ([manner words](say-amounts.md#manner-words)) |
 | *ugly* (not beautiful) | `gahelal gul` | not beautiful |
-| *ugly* (below a bar) | `thoguyem zuel gahelal` | less beautiful than I hoped |
+| *ugly* (below a bar) | `thoguyem zuol gahelal` | less beautiful than I hoped |
 | *ugly* (unpleasant to me) | `godothum` | my noun detracts from pleasure |
 
 > `zezuyel gogugol gul.`
@@ -576,7 +576,7 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrec
 >
 > "What was said is wrong." (it isn't correct)
 
-> `zahelan thoguyem zuel gahelal.`
+> `zahelan thoguyem zuol gahelal.`
 >
 > [z-Ahelan | th-hope | z-rank/less | g-hibiscus]
 >

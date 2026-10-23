@@ -78,7 +78,7 @@ describe("translation prompt core", () => {
 
   it("writes reader notes in gloss notation, not maintainer slash notation", () => {
     const readers = constructionReaders(tables);
-    for (const id of ["word.xFamily.holder", "number.calendar", "join.e", "sentence.zCoordPart.bar"]) {
+    for (const id of ["word.xFamily.holder", "number.calendar", "join.o", "sentence.zCoordPart.bar"]) {
       assert.ok(readers.has(id), `${id} has a reader note`);
     }
     for (const [id, text] of readers) assert.doesNotMatch(text, /\/[a-zɡ]{1,2}\//, id);
@@ -159,12 +159,12 @@ describe("selectExamples", () => {
     pair("z-dog | v-walk", common),
     pair("z-cat | v-walk", common),
     pair("z-Uzozen | th-CLUES-Olazun | v-walk", [...common, "word.xFamily.holder"], "the clue is Olazun's"),
-    pair("[z-A | z-B | z-rank/more | g-big]", ["join.e", "sentence.unit.zCoord"]),
+    pair("[z-A | z-B | z-rank/more | g-big]", ["join.o", "sentence.unit.zCoord"]),
     pair("z-A | th-PATTERN | v-walk", [...common, "overlay.ubem.th"]),
   ];
 
   it("prefers rare shared features and covers new ones first", () => {
-    const picked = selectExamples({ constructions: [...common, "word.xFamily.holder", "join.e"], labels: ["CLUES"] }, pool, { count: 2 });
+    const picked = selectExamples({ constructions: [...common, "word.xFamily.holder", "join.o"], labels: ["CLUES"] }, pool, { count: 2 });
     assert.deepEqual(picked.map((p) => p.gloss).sort(), ["[z-A | z-B | z-rank/more | g-big]", "z-Uzozen | th-CLUES-Olazun | v-walk"]);
   });
 
@@ -185,7 +185,7 @@ describe("selectExamples", () => {
   });
 
   it("stops at the minimum when nothing else shares a rare feature", () => {
-    const picked = selectExamples({ constructions: [...common, "join.e"], labels: [] }, pool, { count: 4 });
+    const picked = selectExamples({ constructions: [...common, "join.o"], labels: [] }, pool, { count: 4 });
     assert.equal(picked.length, 2);
     assert.equal(picked[0]!.gloss, "[z-A | z-B | z-rank/more | g-big]");
   });

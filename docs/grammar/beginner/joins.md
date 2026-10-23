@@ -8,7 +8,7 @@ When English would pack several things that play the same role into one slot (*a
 
 Sometimes you only care that the items belong together, with no ranking among them (*and*, *or*, *not*): that is a **set**. Sometimes you care which item comes first (*X first*, *A before B*): that is a **rank**.
 
-The join’s vowel says how the items combine. It uses the same vowel cues as the [speech-act words](speech-moves.md): **a** adds, **o** picks one, **e** orders, **u** undoes.
+The join’s vowel says how much list you are left with. **a** grows it (*and*). **o** keeps the same members and only ranks them. **e** collapses the list to one choice. **u** takes the listed items away (*not*). Rank is leftover membership, not first-to-fourth in a count.
 
 
 ### And-lists (`a`)
@@ -74,18 +74,18 @@ Objects and extra nouns list the same way. Two `/d/` objects close with `dal`; t
 >
 > "Uzozen tells Olazun and Ahelan."
 
-### Choice (`o`)
+### Choice (`e`) {#choice-e}
 <a id="empty-allowed-om"></a>
 
-When English would offer a menu and ask to *pick one*, or leave the pick *(optional)*, use vowel **o**. Closed **-l** (`zol`) means pick one of the listed items. Open **-m** (`zom`) means the pick is optional. (cue: **o** ≈ one.)
+When English would offer a menu and ask to *pick one*, or leave the pick *(optional)*, use vowel **e**. Closed **-l** (`zel`) means pick one of the listed items. Open **-m** (`zem`) means the pick is optional. (cue: **e** ≈ either.)
 
-> `zududal zugudal zol.`
+> `zududal zugudal zel.`
 >
 > [z-tea | z-coffee | z-or-exactly-one]
 >
 > "tea or coffee." (pick one)
 
-> `zugudal zom.`
+> `zugudal zem.`
 >
 > [z-coffee | z-or.open]
 >
@@ -170,14 +170,14 @@ When English would say *everything* / *everyone*, write a standalone join with t
 >
 > "everything" / "everyone."
 
-### Rank (`e`)
+### Rank (`o`) {#rank-o}
 <a id="set-joins-and-rank-joins"></a>
 
 The *and* / *or* / *not* joins above are **set** joins: the items share a slot as a group, and writing one before the other does not rank them. A **rank** join is the other English job: you care which item comes first (priority, favorite, *A before B*).
 
-Write the items in that order, then a join with vowel **e**. The earlier item outranks the later. One item before `zel` means *only X matters*; before `zem`, *X first* / *mainly X*. (cue: **e** ≈ order.)
+Write the items in that order, then a join with vowel **o**. The earlier item outranks the later. One item before `zol` means *only X matters*; before `zom`, *X first* / *mainly X*. (cue: **o** ≈ order.)
 
-> `zuzozen zel.`
+> `zuzozen zol.`
 >
 > [z-Uzozen | z-rank/more]
 >
@@ -190,8 +190,8 @@ When English says *something* or *someone*, or *one of these* without saying whi
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | `zar` / `var` / `xar` | unspecified member of an add-set | *something* / *do something* / *something happened* | **a** ≈ add |
-| `zor` / `vor` / `xor` | unspecified member of a menu | *anything* / *do anything* | **o** ≈ one |
-| `zer` / `ver` / `xer` | unspecified member of a ranking | *whatever ranks highest* | **e** ≈ order |
+| `zer` / `ver` / `xer` | unspecified member of a menu | *anything* / *do anything* | **e** ≈ either |
+| `zor` / `vor` / `xor` | unspecified member of a ranking | *whatever ranks highest* | **o** ≈ order |
 | `zur` / `vur` / `xur` | unspecified leftover | *something else* / *someone else* | **u** ≈ undo |
 
 > `zar.`
@@ -238,10 +238,10 @@ When English says *some of them* or *some people*, more than one, add [**-x**](p
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** | add the items | *and* | **a** ≈ add |
-| **o** | exclusive choice | exclusive *or* | **o** ≈ one |
+| **o** | rank among items | *A before B*; one item *only X matters* | **o** ≈ order |
 | **u** | deny the listed | *not* / *neither* / *none of* / standalone *no* | **u** ≈ undo |
 | **ua** | universal; one listed item is the leftover | standalone *everything*; one item *everything but* | **u** ≈ undo, then **a** ≈ add |
-| **e** | rank among items | *A before B*; one item *only X matters* | **e** ≈ order |
+| **e** | exclusive choice | exclusive *or* | **e** ≈ either |
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -258,18 +258,18 @@ With two or more items, each join reads as taught above. This table collects the
 | Agebon | Use | English |
 |--------|-----|---------|
 | `zal` / `zam` | standalone | *nothing* / *nobody* · *nothing, as far as I know* |
-| `zol` / `zom` | standalone | *no options* · *no pick, as far as I know* |
+| `zel` / `zem` | standalone | *no options* · *no pick, as far as I know* |
 | `zul` / `zum` | standalone | *no* · *no, as far as I know* |
 | `zual` / `zuam` | standalone | *everything* / *everyone* · *everything, as far as I know* |
 | `zal` + NP | single-item | *just X* / *only X* |
 | `zam` + NP | single-item | *X, for one* / *X (and possibly more)* |
-| `zol` + NP | single-item | *the only option is X* |
-| `zom` + NP | single-item | *X (optional)* |
+| `zel` + NP | single-item | *the only option is X* |
+| `zem` + NP | single-item | *X (optional)* |
 | `zul` / `zum` + NP | single-item | *not X* · *not X (and possibly more)* |
 | `zual` + NP | single-item | *everything but X* |
-| `zel` / `zem` | standalone | *no favorite* · *no favorite, as far as I know* |
-| `zel` + NP | single-item | *only X matters* |
-| `zem` + NP | single-item | *X first* / *mainly X* |
+| `zol` / `zom` | standalone | *no favorite* · *no favorite, as far as I know* |
+| `zol` + NP | single-item | *only X matters* |
+| `zom` + NP | single-item | *X first* / *mainly X* |
 
 ### Clause joins (`/x/`) {#clause-joins}
 <a id="clause-join-position"></a>
@@ -282,19 +282,19 @@ A clause is long, so a join that waits until the end would leave you holding two
 >
 > "Uzozen walks and Olazun runs." (and possibly more)
 
-> `zuzozen vowurel xol zolazun varuvel xol zahelan vezuvol.`
+> `zuzozen vowurel xel zolazun varuvel xel zahelan vezuvol.`
 >
 > [z-Uzozen | v-walk | x-or-exactly-one | z-Olazun | v-run | x-or-exactly-one | z-Ahelan | v-sleep]
 >
 > "Uzozen walks, or Olazun runs, or Ahelan sleeps: exactly one of the three."
 
-Repeating the same join word keeps the list flat. Switching to a **different** join word closes everything before it as one group: `A xol B xal C` is *(A or B) and C*.
+Repeating the same join word keeps the list flat. Switching to a **different** join word closes everything before it as one group: `A xel B xal C` is *(A or B) and C*.
 
-So a group always sits on the left. The set joins **a** / **o** / **u** ignore order, so you can usually move the group to the front. When the group has to come last, end the sentence and start the next one with the join: the join then takes the **whole** next sentence.
+So a group always sits on the left. The set joins **a** / **e** / **u** ignore order, so you can usually move the group to the front. When the group has to come last, end the sentence and start the next one with the join: the join then takes the **whole** next sentence.
 
 After a stand-in such as **`dorl`** or **`blarl`**, every clause joined in the same sentence belongs to the dependent clause. A clause meant for the main sentence also starts a new sentence.
 
-> `zuzozen vowurel. xan zolazun varuvel xol zahelan vezuvol.`
+> `zuzozen vowurel. xan zolazun varuvel xel zahelan vezuvol.`
 >
 > z-Uzozen | v-walk . x-and-then | [z-Olazun | v-run | x-or-exactly-one | z-Ahelan | v-sleep]
 >
@@ -307,8 +307,8 @@ A join word with no clause before it stands for a clause of its own: `xal.` *not
 | Agebon | English |
 |--------|---------|
 | `zuzozen vowurel xam xar.` | *Uzozen walks, for one* (and something else happened too) |
-| `zuzozen vowurel xol xal.` | *Uzozen may walk* (Uzozen walks, or nothing happens) |
-| `zuzozen vowurel xel xur.` | *mainly, Uzozen walks* (that outranks anything else) |
+| `zuzozen vowurel xel xal.` | *Uzozen may walk* (Uzozen walks, or nothing happens) |
+| `zuzozen vowurel xol xur.` | *mainly, Uzozen walks* (that outranks anything else) |
 
 **Compare with:** a sentence linker (*therefore*, *however*) also starts the next sentence, but it is a content word with its own meaning ([continue](dependents.md#continue-x)).
 
@@ -382,7 +382,7 @@ z-Ahelan | v-pay | b-none
 **5.** *only Uzozen matters*
 
 ::: details Show answer
-`zuzozen zel.`
+`zuzozen zol.`
 
 [z-Uzozen | z-rank/more]
 :::
@@ -445,7 +445,7 @@ z-Uzozen | d-none | v-see
 *Uzozen sees nothing.*
 :::
 
-**6.** `zolazun varemul xol zahelan varal.`
+**6.** `zolazun varemul xel zahelan varal.`
 
 ::: details Show answer
 [z-Olazun | v-scream | x-or-exactly-one | z-Ahelan | v-pay]
@@ -455,10 +455,10 @@ z-Uzozen | d-none | v-see
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *a watermelon or a tomato* (pick one) `zowodol zudedol zol.` or `zowodol zudedol zom.`
+**1.** *a watermelon or a tomato* (pick one) `zowodol zudedol zel.` or `zowodol zudedol zem.`
 
 ::: details Show answer
-`zowodol zudedol zol.`
+`zowodol zudedol zel.`
 
 [z-watermelon | z-tomato | z-or-exactly-one]
 

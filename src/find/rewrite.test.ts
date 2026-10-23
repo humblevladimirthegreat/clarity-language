@@ -60,8 +60,8 @@ describe("parseMap", () => {
 describe("spliceWord", () => {
   it("swaps join series e and o on the original word", () => {
     const swap = maps("series=e:o,o:e");
-    assert.deepEqual(splice("zel", swap), { kind: "changed", raw: "zol" });
     assert.deepEqual(splice("zol", swap), { kind: "changed", raw: "zel" });
+    assert.deepEqual(splice("zel", swap), { kind: "changed", raw: "zol" });
   });
   it("splices stacked join series and a speech-act join", () => {
     assert.deepEqual(splice("yael", "series=ae:ao"), { kind: "changed", raw: "yaol" });
@@ -70,7 +70,7 @@ describe("spliceWord", () => {
   it("splices a free hook form, not a join series", () => {
     assert.deepEqual(splice("al", "form=al:ol"), { kind: "changed", raw: "ol" });
     assert.deepEqual(splice("al", "series=a:o"), { kind: "same", raw: "al" });
-    assert.deepEqual(splice("zel", "form=el:ol"), { kind: "same", raw: "zel" });
+    assert.deepEqual(splice("zol", "form=el:ol"), { kind: "same", raw: "zol" });
   });
   it("splices say scope and answer as two slots", () => {
     assert.deepEqual(splice("hwavem", "answer=e:o"), { kind: "changed", raw: "hwavom" });
@@ -88,7 +88,7 @@ describe("spliceWord", () => {
   });
   it("splices speech number markers and leaves writing shorthand", () => {
     const swap = maps("marker=re:ro,ro:re");
-    assert.deepEqual(splice("gredol", swap), { kind: "changed", raw: "grodol" });
+    assert.deepEqual(splice("grodol", swap), { kind: "changed", raw: "gredol" });
     assert.deepEqual(splice("g#2", swap), { kind: "same", raw: "g#2" });
   });
   it("splices a numeric-prefix marker and not the host root", () => {
@@ -122,19 +122,19 @@ describe("rewrite spans", () => {
   it("swaps join series in the fixture and does not rewrite a hook", () => {
     const page = readFileSync(fixturePath, "utf8");
     const { examples } = collectPageSpans(page, tables);
-    const mixed = examples.find((e) => e.text.includes("ol") && e.text.includes("zel"));
+    const mixed = examples.find((e) => e.text.includes("ol") && e.text.includes("zol"));
     assert.ok(mixed);
     const hits = mixed.words.flatMap((w, i) => (matchesTerm(w, joinTerm) ? [i] : []));
     const rewritten = rewriteExample(mixed, hits, joinMap);
     assert.deepEqual(
       rewritten.replacements.map((r) => [r.from, r.to]),
       [
-        ["zel", "zol"],
         ["zol", "zel"],
+        ["zel", "zol"],
       ],
     );
     assert.equal(rewritten.nextSource.includes(" ol "), true);
-    assert.match(rewritten.nextSource, /zuzozen zol vowurel ol buwon zel\./);
+    assert.match(rewritten.nextSource, /zuzozen zel vowurel ol buwon zol\./);
   });
 
   it("lists speech ordinals and not writing shorthand", () => {
@@ -148,7 +148,7 @@ describe("rewrite spans", () => {
       if (!hits.length) continue;
       listed.push(...rewriteExample(example, hits, markerMap).replacements.map((r) => [r.from, r.to]));
     }
-    assert.deepEqual(listed, [["gredol", "grodol"]]);
+    assert.deepEqual(listed, [["grodol", "gredol"]]);
   });
 
   it("writes the fixture, updates the morph line, and refuses an unparsable span", () => {
@@ -163,10 +163,10 @@ describe("rewrite spans", () => {
     });
     const out = rewriteMarkdownSpans(page, patches, tables);
     assert.equal(out.parseErrors.length, 0);
-    assert.match(out.text, /zuzozen zol vowurel ol buwon zel\./);
-    assert.match(out.text, /zuzozen zol vowurel\./);
+    assert.match(out.text, /zuzozen zel vowurel ol buwon zol\./);
+    assert.match(out.text, /zuzozen zel vowurel\./);
     assert.equal(
-      out.text.includes(morphGlossLine("zuzozen zol vowurel.", tables)),
+      out.text.includes(morphGlossLine("zuzozen zel vowurel.", tables)),
       true,
     );
 

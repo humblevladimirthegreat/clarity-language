@@ -491,12 +491,12 @@ function plainDigits(stem: NumberStem): number | undefined {
 }
 
 const isMinus = (m: NumberMarker) => m === "-" || m === "ru";
-const isRankMarker = (m: NumberMarker) => m === "#" || m === "re";
+const isRankMarker = (m: NumberMarker) => m === "#" || m === "ro";
 
 /** `/th/` + number (numbers.md § Number as stance): `+` likelihood, `_` source, `#N` Nth-hand from 2. */
 function enforceStanceNumber(word: LexWord, stem: NumberStem): void {
   const { marker, groups } = stem;
-  if (marker === "#-" || marker === "rue" || (isMinus(marker) && groups.length > 0)) {
+  if (marker === "#-" || marker === "ruo" || (isMinus(marker) && groups.length > 0)) {
     throw new ConstructionError("stanceNumber", word.raw);
   }
   if (!isRankMarker(marker)) return;
@@ -515,7 +515,7 @@ function enforceDegreeNumber(word: LexWord, stem: NumberStem): void {
   if (place === undefined || place < 2) throw new ConstructionError("degreeNumber", word.raw);
 }
 
-/** A `/w/` ordinal (`wredol`) is a place on a scale: it needs a single-name `zel` / `zuel` frame (comparatives.md § superlatives). */
+/** A `/w/` ordinal (`wrodol`) is a place on a scale: it needs a single-name `zol` / `zuol` frame (comparatives.md § superlatives). */
 function isRankPlace(word: LexWord): boolean {
   return word.pos === "w" && word.family.kind === "number" && isRankMarker(word.family.stem.marker);
 }
@@ -832,7 +832,7 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
       if (site.kind === "vp") enforceShared(join, site.coord.parts[site.index]!.shared);
       if (site.kind === "np") {
         const part = site.coord.parts[site.index]!;
-        const lone = part.items.length === 1 && (series(join) === "e" || series(join) === "ue");
+        const lone = part.items.length === 1 && (series(join) === "o" || series(join) === "uo");
         for (const item of part.shared) {
           if (isScaleShared(item)) continue;
           if (lone) for (const mod of item.modifiers) places.framed.add(mod);

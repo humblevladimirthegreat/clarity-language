@@ -88,21 +88,21 @@ DEDUCED grades how far you checked the steps, not the premises. A step can be ai
 
 ### Second-hand and further (`th#N`) {#hand-depth}
 
-English *second-hand*, *third-hand*, *a secondary source* and *a tertiary source* count the hands between the person who was there and you. A channel does not say that. Add a [stance number](number-markers.md#number-as-stance-by-marker) with the rank marker after the channel: **`th#N`** (from 2) is *N-th hand*. The channel says what form the claim reached you in, and the number says how far that is from the event. So `thredol` (`th#2`) is one step removed: told by someone who was there, or written by someone who asked them. `thregel` (`th#3`) is two steps removed: told by someone who was told, or compiled from reports. (cue: **`e`** ≈ order, the place in the chain)
+English *second-hand*, *third-hand*, *a secondary source* and *a tertiary source* count the hands between the person who was there and you. A channel does not say that. Add a [stance number](number-markers.md#number-as-stance-by-marker) with the rank marker after the channel: **`th#N`** (from 2) is *N-th hand*. The channel says what form the claim reached you in, and the number says how far that is from the event. So `throdol` (`th#2`) is one step removed: told by someone who was there, or written by someone who asked them. `throgel` (`th#3`) is two steps removed: told by someone who was told, or compiled from reports. (cue: **`o`** ≈ order, the place in the chain)
 
-> `zolazun thebam thregel velurul.`
+> `zolazun thebam throgel velurul.`
 >
 > z-Olazun | th-REPORTED | th-3rd-hand | v-departure
 >
 > "I heard third-hand that Olazun left."
 
-> `zolazun thebal blunonal thredol velurul.`
+> `zolazun thebal blunonal throdol velurul.`
 >
 > z-Olazun | [th-REPORTED.strong | bl-newspaper] | th-2nd-hand | v-departure
 >
 > "Olazun left, according to a newspaper article by someone who interviewed people who were there."
 
-Alone, `th#N` says the claim was passed on to you, without saying in what form. After a channel it adds the form: REPORTED (a retelling, a secondary source, or lore passed down), PATTERN (cases you know only from reports), or CLUES (clues you know only from reports). The number counts the hands on the evidence, never the reasoning steps: a conclusion drawn from your own clues is plain CLUES. First-hand has no number, because that is a channel: `th#N` with LIVE or MEMORY (`thugom`, `thevum`) is not used. The usual number endings apply: **-m** *about N-th hand* (`thregem`), **-r** with a digit *the same depth as before* (`threger`). Digitless `threr` under a question asks *how many hands?*
+Alone, `th#N` says the claim was passed on to you, without saying in what form. After a channel it adds the form: REPORTED (a retelling, a secondary source, or lore passed down), PATTERN (cases you know only from reports), or CLUES (clues you know only from reports). The number counts the hands on the evidence, never the reasoning steps: a conclusion drawn from your own clues is plain CLUES. First-hand has no number, because that is a channel: `th#N` with LIVE or MEMORY (`thugom`, `thevum`) is not used. The usual number endings apply: **-m** *about N-th hand* (`throgem`), **-r** with a digit *the same depth as before* (`throger`). Digitless `thror` under a question asks *how many hands?*
 
 **Compare with:** `th_N` names *which* numbered source the claim rests on; `th#N` counts *how many hands* it passed through. Reliability of the one source you heard from is the ending on the channel (`thebal` / `thebar`).
 
@@ -350,7 +350,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *I heard third-hand that Olazun screams.*
 
 ::: details Show answer
-`zolazun thebam thregel varemul.`
+`zolazun thebam throgel varemul.`
 
 z-Olazun | th-REPORTED | th-3rd-hand | v-scream
 :::

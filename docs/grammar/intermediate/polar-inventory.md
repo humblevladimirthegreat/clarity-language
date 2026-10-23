@@ -237,7 +237,7 @@ Soft **`yam yol`** muses rather than insists: you lean toward an answer but put 
 
 The listener may still reply, but no reply is owed.
 
-**Compare with:** a [tag](#tags) after the sentence (`…. yol yael.`) asks the listener to confirm. A rhetorical question asks for nothing.
+**Compare with:** a [tag](#tags) after the sentence (`yol yael.` after a claim) asks the listener to confirm. A rhetorical question asks for nothing.
 
 ### Quiz {#quiz}
 
@@ -349,7 +349,7 @@ y-question | y-prohibition | ? | z-listener | v-lie
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `yol dovewol dor.`
+**1.** `yol dovewol der.`
 
 ::: details Show answer
 y-question | [d-phone | d-any]

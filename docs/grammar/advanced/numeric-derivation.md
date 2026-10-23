@@ -52,8 +52,8 @@ The digitless number words (plus or minus infinity, first or last place, *more t
 | **`+e-xROOT`** | grain / seed / infinitesimal of ROOT | `zrawuxolamal`: *grain of love* | **+e-** = that same plus, at the tiny end: a speck |
 | **`-exROOT`** | void of / absolute anti-ROOT | `zruwaxevemul`: *void of fear* | **-e** = minus with no floor: none of the kind |
 | **`-e-xROOT`** | **quasi-ROOT**: the shape of ROOT without treating it as fully real (English **`quasi-`**); **`-e-1xROOT`** / **`-e-2xROOT`** = quasi-N | `zruwuxahuyayol`: *quasi-friend*; `zruwudoxehem`: *quasi-pair* | **-e-** = imaginary amount: the outline, not the ledger |
-| **`#e-xROOT`** | origin / prototype / onset-form of ROOT | `zrewuxolamal`: *love in its beginning form* | **#e-** = start-place: the first rung |
-| **`#exROOT`** | telos / culmination / final form of ROOT | `zrewaxonem`: *story’s final form* | **#e** = last place: where the kind finishes |
+| **`#e-xROOT`** | origin / prototype / onset-form of ROOT | `zrowuxolamal`: *love in its beginning form* | **#e-** = start-place: the first rung |
+| **`#exROOT`** | telos / culmination / final form of ROOT | `zrowaxonem`: *story’s final form* | **#e** = last place: where the kind finishes |
 | **`+xROOT`** | poly- / multi-ROOT (unspecified >1) | `zraxehoham`: *multi-faith* | **+** = more than one, how many unnamed |
 | **`-xROOT`** | de- / un- / deficit-ROOT | `vruxonem`: *to de-tale* | **-** = take that structure away |
 
@@ -105,7 +105,7 @@ For a zero-shaped quasi, use **`-0xROOT`** (anti-null) or **`-0e-xROOT`** (micro
 ### Scalar digit morphs (`+N` / `-N`)
 <a id="scalar-digit-morphs"></a>
 
-English *a pair of…*, *three-part…*, *primary…* can say **how many parts the kind has**, not how many things the sentence is about. Write a one-digit plus body before the **`x`**: spoken, the marker then the digit (`ra`+`ba` for `+1`, spelled `zrabax…`). A minus body **`-N`** (including **`-0`**, spoken `ru`+digit) is the **privative**: the kind lacks or undoes the `+N` structure (*one-sided* instead of *mutual*). The tables write the bodies in shorthand (**`+N`** / **`-N`**).
+English *a pair of…*, *three-part…*, *primary…* can say **how many parts the kind has**, not how many things the sentence is about. Write a one-digit plus body before the **`x`**: spoken, the marker then the digit (`ra`+`ba` for `+1`, spelled as in `zrabaxadowom`). A minus body **`-N`** (including **`-0`**, spoken `ru`+digit) is the **privative**: the kind lacks or undoes the `+N` structure (*one-sided* instead of *mutual*). The tables write the bodies in shorthand (**`+N`** / **`-N`**).
 
 > `zuzozen dradoxabewem vawebol.`
 >
@@ -192,18 +192,18 @@ On a free number, **`±0e-1`** is an amount. Before a root, the same bodies wipe
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`#0exROOT`** | rank-annihilated / disqualified form of ROOT: place wiped as a kind property | `zremowaxamahum`: *a disqualified challenge (as type)*; `vremowaxamahum`: *to disqualify that challenge-kind*. Free **`g#0e`** is *disqualified place in this series*. | **#** is place; **0e** wipes that place |
+| **`#0exROOT`** | rank-annihilated / disqualified form of ROOT: place wiped as a kind property | `zromowaxamahum`: *a disqualified challenge (as type)*; `vromowaxamahum`: *to disqualify that challenge-kind*. Free **`g#0e`** is *disqualified place in this series*. | **#** is place; **0e** wipes that place |
 
 **`#0e`** vs **`#0`:** annihilated place vs zeroth-order rung. **`#0e`** vs **`+0e`:** rank wipe vs kind total-null. Free **`#e0`** is [current generation](initials.md#ordinal-generation). Same role-letter framing as other ordinal morphs (`/z/` disqualified kind, `/v/` disqualify-as-kind, `/y/` *Disqualified!*, …).
 
 ### Ordinal digit morphs (`#N`)
 <a id="ordinal-digit-morphs"></a>
 
-English *first draft*, *secondary adventure*, *third-order problem* can name **which rank the kind holds**, not which item is Nth in a list. Write a one-digit rank body before the **`x`**: shorthand **`#NxROOT`**, spoken **`re`** + digit, spelled `drebax…`. A free **`g#N`** after a noun picks the Nth item in a series instead.
+English *first draft*, *secondary adventure*, *third-order problem* can name **which rank the kind holds**, not which item is Nth in a list. Write a one-digit rank body before the **`x`**: shorthand **`#NxROOT`**, spoken **`ro`** + digit, spelled as in `drobaxebewem`. A free **`g#N`** after a noun picks the Nth item in a series instead.
 
 **`#N`** names a stage between the digitless ends **`#e-`** (first form) and **`#e`** (final form); **`#0e`** is [rank annihilated](#rank-annihilated-morph). For *lacks N parts*, use the scalar minus body **`-N`**. For a code with several digits, use free `g#12` or the label marker **`_`**.
 
-> `zolazun drebaxebewem varayel.`
+> `zolazun drobaxebewem varayel.`
 >
 > z-Olazun | d-1st-x-draft | v-write
 >
@@ -211,11 +211,11 @@ English *first draft*, *secondary adventure*, *third-order problem* can name **w
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`#1xROOT`** | first-class / premiere / first-order | `drebaxebewem`: *a first-draft* (kind); `debewem g#1` *the first draft (in this stack)* | **#1** = first place, not “one piece” |
-| **`#2xROOT`** | secondary / second-order / backup | `gredoxamunem`: *a secondary adventure* | **#2** = the next slot after first |
-| **`#3xROOT`** | tertiary / third-order | `zregexabevam`: *a third-order problem* | **#3** = third rung |
-| **`#4xROOT`** … **`#9`** | Nth-order / Nth-place form | `zrezaxaharom`: *fifth-order harmony* (as a kind) | **#N** = Nth place on the kind |
-| **`#0xROOT`** | zeroth-order / pre-rank / unranked form | `zremoxuborem`: *a zeroth-order calculation* | **#0** = the rung before ranking starts |
+| **`#1xROOT`** | first-class / premiere / first-order | `drobaxebewem`: *a first-draft* (kind); `debewem g#1` *the first draft (in this stack)* | **#1** = first place, not “one piece” |
+| **`#2xROOT`** | secondary / second-order / backup | `grodoxamunem`: *a secondary adventure* | **#2** = the next slot after first |
+| **`#3xROOT`** | tertiary / third-order | `zrogexabevam`: *a third-order problem* | **#3** = third rung |
+| **`#4xROOT`** … **`#9`** | Nth-order / Nth-place form | `zrozaxaharom`: *fifth-order harmony* (as a kind) | **#N** = Nth place on the kind |
+| **`#0xROOT`** | zeroth-order / pre-rank / unranked form | `zromoxuborem`: *a zeroth-order calculation* | **#0** = the rung before ranking starts |
 
 **Not the same job as:** **`+1`** / **`+2`** (singleton / dual). **`#1`** is premiere-place; **`#2`** is secondary. **`#0`** is a zeroth rung; **`#0e`** is rank annihilated / disqualified.
 
@@ -223,12 +223,12 @@ English *first draft*, *secondary adventure*, *third-order problem* can name **w
 
 | PoS | `#Nx…` | Examples |
 |-----|--------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | a rank-N kind | `zredoxebewem`: *a second-draft (as type)*; `drebaxebewem`: *a first-draft* |
-| **`/v/`** (verb) | treat as / assign that order (kind-act) | `vrebaxamahum`: *to first-class / premiere a challenge* (free `v#1` *take 1st place*) |
-| **`/ɡ/`** (adjective) | *Nth-order* (ascribed) | `gredoxamunem`: *secondary* |
-| **`/h/`** (adverb) | *at Nth-order framing* | `hremoxuborem`: *zeroth-order* |
-| **`/w/`** (extra detail) | host `/ɡ/` graded as Nth-order | `wregexezuyel gezuyel`: *third-order (dialogue)* |
-| **`/y/`** (interjection) | discourse call of that order-kind | `yrebaxebewem`: *First-draft!* (kind cheer; free `y#1` *First!* place cheer) |
+| **`/z/` `/d/` `/b/`** (noun) | a rank-N kind | `zrodoxebewem`: *a second-draft (as type)*; `drobaxebewem`: *a first-draft* |
+| **`/v/`** (verb) | treat as / assign that order (kind-act) | `vrobaxamahum`: *to first-class / premiere a challenge* (free `v#1` *take 1st place*) |
+| **`/ɡ/`** (adjective) | *Nth-order* (ascribed) | `grodoxamunem`: *secondary* |
+| **`/h/`** (adverb) | *at Nth-order framing* | `hromoxuborem`: *zeroth-order* |
+| **`/w/`** (extra detail) | host `/ɡ/` graded as Nth-order | `wrogexezuyel gezuyel`: *third-order (dialogue)* |
+| **`/y/`** (interjection) | discourse call of that order-kind | `yrobaxebewem`: *First-draft!* (kind cheer; free `y#1` *First!* place cheer) |
 
 **Related form:** **`_N`** is *which code*; free `g#N` is *which item in the current series*.
 
@@ -236,7 +236,7 @@ English *first draft*, *secondary adventure*, *third-order problem* can name **w
 
 When English makes a code part of what a thing is (*specimen #1*, *room 12* as a kind of room), the digits are a **catalog ID**, not a count or a rank. Put the digit-string marker **`_`** before the **`x`**; its digits are the code.
 
-> `zuzozen drobaxudewal vawebol.`
+> `zuzozen drebaxudewal vawebol.`
 >
 > z-Uzozen | d-_1-x-petri-dish | v-see
 >
@@ -244,8 +244,8 @@ When English makes a code part of what a thing is (*specimen #1*, *room 12* as a
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`_xROOT`** | ROOT as something that **bears a code** (taggable unit; code unnamed) | `zroxudewal`: *a coded specimen* / *a specimen-as-ID* | **`_`** = catalog stamp, digits not yet filled |
-| **`_NxROOT`** | **specimen / item #N**: the code is part of the kind | `zrobaxudewal`: *specimen #1*; `zrobadoxahehal`: *room-12* as a coded kind; `brobadoxahehal`: *room-12* as `/b/` | the digits **are** the name, not a count |
+| **`_xROOT`** | ROOT as something that **bears a code** (taggable unit; code unnamed) | `zrexudewal`: *a coded specimen* / *a specimen-as-ID* | **`_`** = catalog stamp, digits not yet filled |
+| **`_NxROOT`** | **specimen / item #N**: the code is part of the kind | `zrebaxudewal`: *specimen #1*; `zrebadoxahehal`: *room-12* as a coded kind; `brebadoxahehal`: *room-12* as `/b/` | the digits **are** the name, not a count |
 
 When the number is only an argument of an ordinary noun, prefer ordinary syntax: `zahehal g_12` = *the room numbered 12*. Use **`_NxROOT`** when the code is part of the **concept** (specimen ID, SKU, protocol code). To cite a numbered point in the conversation, use free **`x_…`**; to dial or enter a code, use free **`v_…`**.
 
@@ -259,9 +259,9 @@ To exaggerate a kind for comic effect (*a gazillion-mess*, *an umpteenth attempt
 |--------|-----|---------|-----|
 | **`+1exROOT`** | *gazillion-ROOT* (comic huge) | `zrabawaxezulam`: *a gazillion-mess* | **1e** = one × unbounded: comic huge |
 | **`+1e-xROOT`** | *gazillionth-ROOT* (comic tiny) | `zrabawuxodevom`: *a gazillionth-of-a-chance* | **1e-** = one × unbounded tiny |
-| **`#1exROOT`** | *umpteenth-ROOT* (comic late rank) | `zrebawaxuguvel`: *an umpteenth attempt* (as a kind) | **#1e** = unbounded place: “umpteenth” |
+| **`#1exROOT`** | *umpteenth-ROOT* (comic late rank) | `zrobawaxuguvel`: *an umpteenth attempt* (as a kind) | **#1e** = unbounded place: “umpteenth” |
 
-Free **`hrebawal`** = *for the gazillionth time* (clause adverb). The prefix **`zrebawaxayam`** = *an umpteenth co-participation* (noun kind).
+Free **`hrobawal`** = *for the gazillionth time* (clause adverb). The prefix **`zrobawaxayam`** = *an umpteenth co-participation* (noun kind).
 
 ### Practice {#advanced-practice}
 
@@ -332,7 +332,7 @@ z-Ahelan | d-infinity-x-gold | v-see
 *Ahelan sees the essence of gold.*
 :::
 
-**2.** `zuzozen drewuxavulul vawebol.`
+**2.** `zuzozen drowuxavulul vawebol.`
 
 ::: details Show answer
 z-Uzozen | d-origin-x-fire | v-see
@@ -358,19 +358,19 @@ z-Olazun | v-minus-zero-x-fire
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Olazun pours a first-class gold.* `zolazun drebaxugulel vobuvul.` or `zolazun drabaxugulel vobuvul.`
+**1.** *Olazun pours a first-class gold.* `zolazun drobaxugulel vobuvul.` or `zolazun drabaxugulel vobuvul.`
 
 ::: details Show answer
-`zolazun drebaxugulel vobuvul.`
+`zolazun drobaxugulel vobuvul.`
 
 z-Olazun | d-1st-x-gold | v-pour
 
-First-class is a rank, marker **`re`**; **`ra`** with one is the primary kind.
+First-class is a rank, marker **`ro`**; **`ra`** with one is the primary kind.
 :::
 
 #### What changes {#advanced-what-changes}
 
-**1.** `zahelan drewuxavulul vawebol.` / `zahelan drewaxavulul vawebol.`
+**1.** `zahelan drowuxavulul vawebol.` / `zahelan drowaxavulul vawebol.`
 
 ::: details Show answer
 z-Ahelan | d-origin-x-fire | v-see
