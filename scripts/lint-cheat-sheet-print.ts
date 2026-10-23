@@ -3,7 +3,6 @@
  * ask for, or splits a table. Not part of `npm test` or `npm run build`.
  *
  *   npm run lint:cheat-sheet-print
- *   npm run lint:cheat-sheet-print -- --all
  *   npm run lint:cheat-sheet-print -- --only consonants --calibrate
  *   npm run lint:cheat-sheet-print -- --url http://127.0.0.1:5173/grammar
  *
@@ -25,7 +24,6 @@ import {
 } from "../src/lint/cheat-sheet-print.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 
-const PILOT = "consonants";
 const OUT_DIR = join(REPO_ROOT, "tmp", "cheat-sheet-print");
 const LETTER = { format: "Letter" as const, margin: { top: "0.4in", right: "0.4in", bottom: "0.4in", left: "0.4in" } };
 
@@ -77,9 +75,9 @@ function parseArgs(argv: string[]): Options {
 function printUsage(): void {
   console.log(`Usage: npm run lint:cheat-sheet-print -- [options]
 
-  (no args)     check the consonants pilot
+  (no args)     every grammar sheet plus Claritish
   --only ID     one sheet (repeatable); IDs are sidebar slugs or claritish
-  --all         every grammar sheet plus Claritish
+  --all         same as no args (kept for older commands)
   --calibrate   write each sheet's PDF under tmp/cheat-sheet-print/
   --report      print the report even when clean; do not fail
   --json        machine-readable report
@@ -98,11 +96,10 @@ function allSheets(): Sheet[] {
 
 function selectedSheets(options: Options): Sheet[] {
   const sheets = allSheets();
-  if (options.all) return sheets;
-  const want = options.only.length > 0 ? options.only : [PILOT];
-  return want.map((id) => {
+  if (options.all || options.only.length === 0) return sheets;
+  return options.only.map((id) => {
     const sheet = sheets.find((s) => s.id === id);
-    if (!sheet) throw new Error(`unknown sheet id ${id} (try --all)`);
+    if (!sheet) throw new Error(`unknown sheet id ${id}`);
     return sheet;
   });
 }

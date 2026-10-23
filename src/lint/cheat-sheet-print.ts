@@ -1,6 +1,6 @@
 /**
  * Compare intended cheat-sheet pages (`<PageBreak />` slices) to Chromium's PDF.
- * Docs: docs/proposals/cheat-sheet-print.md (pilot: consonants).
+ * Docs: docs/meta/grammar-docs.md#cheat-sheets.
  */
 
 export type Slice = {

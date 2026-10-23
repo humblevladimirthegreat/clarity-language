@@ -53,7 +53,7 @@ When you finish a group, take its **Review** at the end of that group ([Beginner
 
 The sidebar **Tools** list has [Terminology](terminology.md), which gives the English names these pages use for grammar, each with a short gloss and a link to the section that teaches it. It also has [Lexicon](lexicon.md), for looking up roots and dictionary compounds and respelling an English name, and [Inspect](inspect.md), for word-by-word breakdowns.
 
-The sidebar **Cheat Sheets** group has one printable page per part of the grammar, for looking up a form you have already met. Two of them line up what each letter means across those parts. **Ageben → English** is the spelling index for short closed words. Each row is tagged **B**, **I**, or **A** for its level and links to the section that teaches it.
+The sidebar **Cheat Sheets** group has a printable lookup page for each part of the grammar, for looking up a form you have already met. Two of them line up what each letter means across those parts. **Ageben → English** is the spelling index for short closed words. Each row is tagged **B**, **I**, or **A** for its level and links to the section that teaches it.
 
 The sidebar **[Saying it in Ageben](english.md)** group answers English jobs (*because*, *by Friday*, *walked*) with forms taught on the stage pages. Use it after those pages, in any order.
 
