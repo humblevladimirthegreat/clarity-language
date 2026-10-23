@@ -1,6 +1,7 @@
 import { escapeCsvField, parseCsv } from "./csv.js";
 import { isExtraNounHook } from "./parse/hook-compounds.js";
 import { isAgebonRootShape } from "./root-shape.js";
+import { SHAPE_VOWELS, type Shape } from "./root-tails.js";
 
 export const COMPOUND_HEADERS = [
   "stem",
@@ -68,6 +69,31 @@ export function retieCompoundRows(
       return row;
     }
     return { ...row, left, right, stem };
+  });
+  return { rows: next, changes };
+}
+
+/**
+ * Rewrite listed tail-suffix last vowels from a vowel→shape map (CSV-learned old
+ * letters) onto {@link SHAPE_VOWELS}. Recomputes `stem` and `+ suffix` in the mnemonic.
+ */
+export function remapTailSuffixVowels(
+  rows: CompoundRow[],
+  vowelToShape: ReadonlyMap<string, Shape>,
+): { rows: CompoundRow[]; changes: CompoundRetieChange[] } {
+  const changes: CompoundRetieChange[] = [];
+  const next = rows.map((row, index) => {
+    if (row.join !== "" || !isTailSuffix(row.right)) return row;
+    const shape = vowelToShape.get(row.right[1]!);
+    if (!shape) return row;
+    const newRight = row.right[0] + SHAPE_VOWELS[shape];
+    if (newRight === row.right) return row;
+    const stem = `${row.left}${row.join}${newRight}`;
+    const rowNum = index + 2;
+    changes.push({ row: rowNum, field: "right", from: row.right, to: newRight });
+    if (stem !== row.stem) changes.push({ row: rowNum, field: "stem", from: row.stem, to: stem });
+    const mnemonic = row.mnemonic.replaceAll(`+ ${row.right}`, `+ ${newRight}`);
+    return { ...row, right: newRight, stem, mnemonic };
   });
   return { rows: next, changes };
 }

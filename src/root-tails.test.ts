@@ -4,7 +4,19 @@ import { describe, it } from "node:test";
 import { emptyPosEnglish, parseOverlayCsv, parsePublishedCsv, type PublishedRow } from "./lexicon-search.ts";
 import { readData } from "./repo-paths.ts";
 import { decode, encode, firstConsonant, placeTailRoots } from "./root-tails-place.ts";
-import { evenSpreadPairs, holderClash, holderHostForms, tailMetrics, tailOf, validateRootTails } from "./root-tails.ts";
+import {
+  evenSpreadPairs,
+  holderClash,
+  holderHostForms,
+  invertShapeLastVowels,
+  planShortLastVowels,
+  shapeLastVowelsFromRoots,
+  shortRootWithTail,
+  tailMetrics,
+  tailOf,
+  validateRootTails,
+  type Kind,
+} from "./root-tails.ts";
 
 const published = (emoji: string, concrete: string, root: string, kind = "", shape = "", size = ""): PublishedRow =>
   ({ emoji, concrete, root, kind, shape, size, abstract: "", mnemonic: "", englishByPos: "", posEnglish: emptyPosEnglish() });
@@ -24,6 +36,40 @@ describe("tails", () => {
     assert.equal(tailOf("creature", "order"), "ze");
     assert.equal(tailOf("tool", "takes-away"), "wu");
     assert.equal(tailOf("title", "holds"), "na");
+  });
+
+  it("rewrites a three-letter last vowel from shape and keeps the first", () => {
+    assert.equal(shortRootWithTail("azo", "creature", "one"), "azo");
+    assert.equal(shortRootWithTail("azo", "creature", "order"), "aze");
+  });
+
+  it("leaves published three-letter one and order roots put when tails already match SHAPE_VOWELS", () => {
+    const rows = parsePublishedCsv(readData("lexicon-published.csv"));
+    const { pairs } = planShortLastVowels(rows);
+    assert.deepEqual(pairs, []);
+    for (const row of rows) {
+      if (row.root.length !== 3 || (row.shape !== "one" && row.shape !== "order")) continue;
+      assert.equal(shortRootWithTail(row.root, row.kind as Kind, row.shape), row.root, row.concrete);
+    }
+  });
+
+  it("plans a simultaneous one/order last-vowel swap", () => {
+    const { pairs, destByOld } = planShortLastVowels([
+      { root: "eye", kind: "person", shape: "one", emoji: "🧑", concrete: "person" },
+      { root: "eyo", kind: "person", shape: "order", emoji: "🕵️", concrete: "investigate" },
+    ]);
+    assert.equal(destByOld.get("eye"), "eyo");
+    assert.equal(destByOld.get("eyo"), "eye");
+    assert.equal(pairs.length, 2);
+  });
+
+  it("learns each shape's last vowel from the lexicon", () => {
+    const found = shapeLastVowelsFromRoots(parsePublishedCsv(readData("lexicon-published.csv")));
+    assert.equal(found.get("holds"), "a");
+    assert.equal(found.get("one"), "o");
+    assert.equal(found.get("order"), "e");
+    assert.equal(found.get("takes-away"), "u");
+    assert.equal(invertShapeLastVowels(found).get("o"), "one");
   });
 
   it("flags a root that starts with a /th/ holder host form", () => {

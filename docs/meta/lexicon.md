@@ -12,12 +12,12 @@ npm run convert-word -- --lexicon --only LITERAL
 
 `--only` takes a concrete literal, emoji, or root (repeatable or comma-separated) and limits the run to those published rows; every other row keeps its root. `--lexicon` alone is refused; `--lexicon --all` re-places the whole lexicon.
 
-`--all` re-places every five-letter row and keeps the three-letter roots.
+`--all` re-places every five-letter and place-name row, and rewrites three-letter last vowels and tail-suffix vowels from `kind` and `shape`, keeping the first vowel. Overlay uniqueness is the first two letters, so a last-vowel swap does not re-anneal short roots.
 
 A hand-picked spelling bypasses the checks that placement runs. Placement:
 
 - keeps a row's root length, and gives a new row three letters only when it is overlay-backed ([root length](#root-length))
-- builds a root's last two letters from the row's `kind` and `shape` ([root tails](#root-tails)); a five-letter root's first three letters keep same-kind roots apart ([onset](#onset)), and a three-letter root's first vowel is chosen so overlay-group members never share their first two letters ([root length](#root-length))
+- builds a root's last two letters from the row's `kind` and `shape` ([root tails](#root-tails)); a five-letter root's first three letters keep same-kind roots apart ([onset](#onset)), and a three-letter root's first vowel is chosen so overlay-group members never share their first two letters ([root length](#root-length)). `--all` keeps that first vowel and only rewrites the last.
 - skips roots already held by other rows and stems used in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv), and any root that would give a listed or hook compound a second split ([seams](#seams)). A new three-letter root also clears the holder check against the five-letter roots that stay put; five-letter rows placed in the same run are checked against the new three-letter spellings.
 - never spells a root with an English word the doc lint reads as English in code (*are*), since the retie refuses one
 - rewrites the overlay and compound rows that spell the old root, and writes `tmp/lexicon-retie-map.json` for `retie-docs`

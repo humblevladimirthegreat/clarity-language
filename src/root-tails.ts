@@ -6,6 +6,7 @@
  * {@link validateRootTails} runs; the placer is src/root-tails-place.ts. A `named` row (a country or
  * territory) takes a place-name root instead (src/place-root.ts), with no tail.
  */
+import { ENGLISH_IN_CODE } from "./english-in-code.ts";
 import { isFlagLabel } from "./flag-label.ts";
 import { isPlaceRootShape } from "./root-shape.ts";
 import type { OverlayRow, PublishedRow } from "./lexicon-search.ts";
@@ -68,6 +69,105 @@ export function isSize(value: string): value is Size {
 /** Tail letters for a row: consonant + vowel. */
 export function tailOf(kind: Kind, shape: Shape): string {
   return KIND_LETTERS[kind] + SHAPE_VOWELS[shape];
+}
+
+/** Keep a three-letter root's first vowel; rewrite the tail from kind and shape. */
+export function shortRootWithTail(root: string, kind: Kind, shape: Shape): string {
+  if (root.length !== 3) throw new Error(`shortRootWithTail needs a three-letter root (got ${root})`);
+  return root[0] + tailOf(kind, shape);
+}
+
+/** Last vowel each shape currently uses on published three- and five-letter roots. */
+export function shapeLastVowelsFromRoots(rows: readonly { root: string; shape: string }[]): Map<Shape, string> {
+  const found = new Map<Shape, string>();
+  for (const row of rows) {
+    if (!isShape(row.shape)) continue;
+    const root = row.root.trim();
+    if (root.length !== 3 && root.length !== 5) continue;
+    const vowel = root.at(-1)!;
+    const prev = found.get(row.shape);
+    if (prev && prev !== vowel) {
+      throw new Error(`shape ${row.shape} has mixed last vowels ${prev} and ${vowel}`);
+    }
+    found.set(row.shape, vowel);
+  }
+  return found;
+}
+
+/** Invert {@link shapeLastVowelsFromRoots}: last vowel → shape. */
+export function invertShapeLastVowels(shapeToVowel: ReadonlyMap<Shape, string>): Map<string, Shape> {
+  const out = new Map<string, Shape>();
+  for (const [shape, vowel] of shapeToVowel) {
+    const prev = out.get(vowel);
+    if (prev && prev !== shape) {
+      throw new Error(`last vowel ${vowel} maps to both ${prev} and ${shape}`);
+    }
+    out.set(vowel, shape);
+  }
+  return out;
+}
+
+export type ShortLastVowelPair = {
+  emoji: string;
+  literal: string;
+  oldRoot: string;
+  newRoot: string;
+};
+
+type ShortLastVowelRow = {
+  root: string;
+  kind: string;
+  shape: string;
+  emoji?: string;
+  concrete?: string;
+};
+
+/**
+ * Plan a simultaneous last-vowel rewrite for three-letter tails. First vowel stays.
+ * `blocked` is overlay sense forms and other spellings no dest may take unless its
+ * occupant is itself leaving. English-in-code dests fail unless they already hold that root.
+ */
+export function planShortLastVowels(
+  rows: readonly ShortLastVowelRow[],
+  blocked: ReadonlySet<string> = new Set(),
+): { pairs: ShortLastVowelPair[]; destByOld: Map<string, string> } {
+  const items: ShortLastVowelPair[] = [];
+  for (const row of rows) {
+    const oldRoot = row.root.trim();
+    if (oldRoot.length !== 3) continue;
+    if (tailFieldsError(row.kind, row.shape)) continue;
+    const newRoot = shortRootWithTail(oldRoot, row.kind as Kind, row.shape as Shape);
+    items.push({
+      emoji: (row.emoji ?? "").trim(),
+      literal: (row.concrete ?? "").trim(),
+      oldRoot,
+      newRoot,
+    });
+  }
+  const leaving = new Set(items.filter((item) => item.oldRoot !== item.newRoot).map((item) => item.oldRoot));
+  const byDest = new Map<string, ShortLastVowelPair[]>();
+  for (const item of items) {
+    const group = byDest.get(item.newRoot) ?? [];
+    group.push(item);
+    byDest.set(item.newRoot, group);
+  }
+  const errors: string[] = [];
+  for (const [dest, group] of byDest) {
+    const olds = [...new Set(group.map((item) => item.oldRoot))];
+    if (olds.length > 1) errors.push(`short last-vowel dest ${dest} claimed by ${olds.join(", ")}`);
+    const incoming = group.some((item) => item.oldRoot !== dest);
+    if (incoming && ENGLISH_IN_CODE.has(dest)) {
+      errors.push(`short last-vowel dest ${dest} is English in code`);
+    }
+    if (incoming && blocked.has(dest) && !leaving.has(dest)) {
+      errors.push(`short last-vowel dest ${dest} is blocked`);
+    }
+  }
+  if (errors.length > 0) throw new Error(errors.join("\n"));
+  return {
+    pairs: items.filter((item) => item.oldRoot !== item.newRoot),
+    destByOld: new Map(items.map((item) => [item.oldRoot, item.newRoot])),
+  };
 }
 
 /** Why a kind / shape pair can't spell a tail, or null when it can. */

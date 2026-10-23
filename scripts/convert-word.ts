@@ -17,6 +17,7 @@ import { join } from "node:path";
 import { parseCsv, serializeCsv } from "../src/csv.js";
 import {
   parseCompoundCsv,
+  remapTailSuffixVowels,
   retieCompoundRows,
   serializeCompoundCsv,
   validateCompoundRows,
@@ -27,7 +28,19 @@ import { loadPron } from "../src/echo-metric.js";
 import { placePublishedRoots } from "../src/lexicon-place.js";
 import { isJoinOverlayKind, parseOverlayCsv, parsePublishedCsv } from "../src/lexicon-search.js";
 import { placeRoot } from "../src/place-root.js";
-import { holderHostForms, PLACE_KIND, sizeFieldError, tailFieldsError, validateRootTails, type Kind, type Shape, type Size } from "../src/root-tails.js";
+import {
+  holderHostForms,
+  invertShapeLastVowels,
+  PLACE_KIND,
+  planShortLastVowels,
+  shapeLastVowelsFromRoots,
+  sizeFieldError,
+  tailFieldsError,
+  validateRootTails,
+  type Kind,
+  type Shape,
+  type Size,
+} from "../src/root-tails.js";
 import { placeTailRoots } from "../src/root-tails-place.js";
 import { RETIE_MAP_RELATIVE_PATH, serializeRetieMap, type RetiePair } from "../src/retie/map.js";
 import {
@@ -170,7 +183,8 @@ five-letter root from its kind and shape otherwise, its middle vowel steered by 
 three-letter row also takes its tail from kind and shape (the first vowel is free).
 --only limits --lexicon to matching published rows (repeatable or comma-separated); every other
 root stays put.
---all re-places every five-letter and place-name row and keeps the three-letter roots; --lexicon needs one of
+--all re-places every five-letter and place-name row, and rewrites three-letter last vowels and
+tail-suffix vowels from kind and shape while keeping the first vowel; --lexicon needs one of
 --only or --all. --steps sets the five-letter annealing steps.
 --report prints the root-tails report for the published lexicon.
 
@@ -201,19 +215,19 @@ async function convertLexicon(only: string[], steps?: number): Promise<void> {
   if (only.length > 0 && selected.length === 0) {
     throw new Error(`--only matched no published rows: ${only.join(", ")}`);
   }
-  // --all keeps the three-letter roots; --only places just the rows it names.
+  // --all rewrites three-letter last vowels in place (first vowel stays); --only places the rows it names.
+  const allMode = only.length === 0;
   const isTarget = (row: Record<string, string>) =>
     only.length > 0 ? rowMatchesOnly(row, only) : (row.root ?? "").trim().length !== 3;
 
-  for (const row of rows) {
-    const root = (row.root ?? "").trim();
-    if (!root) {
-      continue;
-    }
-    if (!isTarget(row)) {
-      used.add(root);
-    }
-  }
+  const shapeLastVowels = allMode ? shapeLastVowelsFromRoots(rows.map((row) => ({
+    root: (row.root ?? "").trim(),
+    shape: (row.shape ?? "").trim(),
+  }))) : new Map();
+  const vowelToShape = allMode ? invertShapeLastVowels(shapeLastVowels) : new Map();
+  const overlayBlocked = new Set(
+    overlays.filter((overlay) => isJoinOverlayKind(overlay.kind) && overlay.senseForm).map((overlay) => overlay.senseForm),
+  );
 
   // Old root → emoji, taken before any row is respelled, to check compound parts afterwards.
   const emojiByOldRoot = new Map(
@@ -226,6 +240,61 @@ async function convertLexicon(only: string[], steps?: number): Promise<void> {
   let failed = 0;
   let changed = 0;
   let kept = 0;
+
+  if (allMode) {
+    const planned = planShortLastVowels(
+      rows.map((row) => ({
+        root: (row.root ?? "").trim(),
+        kind: (row.kind ?? "").trim(),
+        shape: (row.shape ?? "").trim(),
+        emoji: (row.emoji ?? "").trim(),
+        concrete: (row.concrete ?? "").trim(),
+      })),
+      overlayBlocked,
+    );
+    const byOld = new Map(planned.pairs.map((pair) => [pair.oldRoot, pair]));
+    for (const row of rows) {
+      const previous = (row.root ?? "").trim();
+      const pair = byOld.get(previous);
+      if (!pair) continue;
+      row.root = pair.newRoot;
+    }
+    for (const pair of planned.pairs) {
+      retiePairs.push(pair);
+      if (pair.emoji) oldToNewByEmoji.set(pair.emoji, { oldRoot: pair.oldRoot, newRoot: pair.newRoot });
+      changed += 1;
+      console.log(`CHG  ${pair.literal} ${pair.oldRoot} -> ${pair.newRoot}`);
+    }
+  }
+
+  const overlaySenseBefore = overlays.map((overlay) => overlay.senseForm);
+  const overlayErrors: string[] = [];
+  const retieOverlaysFor = (emojis: ReadonlySet<string> | null) => {
+    for (const overlay of overlays) {
+      if (isJoinOverlayKind(overlay.kind) || !overlay.emoji) continue;
+      if (emojis && !emojis.has(overlay.emoji)) continue;
+      const mapped = oldToNewByEmoji.get(overlay.emoji);
+      if (!mapped || mapped.oldRoot === mapped.newRoot) continue;
+      if (overlay.senseForm.startsWith(mapped.newRoot)) continue;
+      const next = retieSenseForm(overlay.senseForm, overlay.pos, mapped.oldRoot, mapped.newRoot);
+      if (next == null) {
+        overlayErrors.push(`${overlay.senseForm} (${overlay.pos}): does not spell ${mapped.oldRoot}; respell it to ${mapped.newRoot} by hand`);
+        continue;
+      }
+      overlay.senseForm = next;
+    }
+  };
+  retieOverlaysFor(new Set([...oldToNewByEmoji.keys()]));
+
+  for (const row of rows) {
+    const root = (row.root ?? "").trim();
+    if (!root) {
+      continue;
+    }
+    if (!isTarget(row)) {
+      used.add(root);
+    }
+  }
 
   const targets = rows.filter(isTarget);
   for (const row of targets) {
@@ -252,7 +321,7 @@ async function convertLexicon(only: string[], steps?: number): Promise<void> {
       kept: rows
         .filter((row) => !isTarget(row) && (row.root ?? "").trim())
         .map((row) => ({ emoji: (row.emoji ?? "").trim(), root: (row.root ?? "").trim() })),
-      compounds: compoundRows,
+      compounds: allMode ? retieCompoundRows(compoundRows, new Map(retiePairs.map((pair) => [pair.oldRoot, pair.newRoot]))).rows : compoundRows,
       tailSteps: steps,
     },
   );
@@ -286,33 +355,21 @@ async function convertLexicon(only: string[], steps?: number): Promise<void> {
     }
   }
 
-  const overlaySenseBefore = overlays.map((overlay) => overlay.senseForm);
-  const overlayErrors: string[] = [];
-  for (const overlay of overlays) {
-    if (isJoinOverlayKind(overlay.kind)) {
-      continue;
-    }
-    if (!overlay.emoji) {
-      continue;
-    }
-    const mapped = oldToNewByEmoji.get(overlay.emoji);
-    if (!mapped) {
-      continue;
-    }
-    const next = retieSenseForm(overlay.senseForm, overlay.pos, mapped.oldRoot, mapped.newRoot);
-    if (next == null) {
-      overlayErrors.push(`${overlay.senseForm} (${overlay.pos}): does not spell ${mapped.oldRoot}; respell it to ${mapped.newRoot} by hand`);
-      continue;
-    }
-    overlay.senseForm = next;
-  }
+  retieOverlaysFor(null);
   if (overlayErrors.length > 0) {
     throw new Error(`Overlay sense forms the retie could not respell:\n${overlayErrors.join("\n")}`);
   }
   const overlaysChanged = overlays.some((overlay, index) => overlay.senseForm !== overlaySenseBefore[index]);
 
   const rootMap = new Map(retiePairs.map((pair) => [pair.oldRoot, pair.newRoot]));
-  const retiedCompounds = retieCompoundRows(compoundRows, rootMap);
+  let retiedCompounds = retieCompoundRows(compoundRows, rootMap);
+  if (allMode) {
+    const suffixed = remapTailSuffixVowels(retiedCompounds.rows, vowelToShape);
+    retiedCompounds = {
+      rows: suffixed.rows,
+      changes: [...retiedCompounds.changes, ...suffixed.changes],
+    };
+  }
   const publishedRoots = new Set(
     rows.map((row) => (row.root ?? "").trim()).filter(Boolean),
   );

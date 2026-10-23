@@ -8,6 +8,7 @@ import { CLOSED } from "./closed-roots.js";
 import {
   factorizationsForStem,
   parseCompoundCsv,
+  remapTailSuffixVowels,
   retieCompoundRows,
   validateCompoundRows,
 } from "./lexicon-compounds.js";
@@ -113,6 +114,46 @@ describe("lexicon-compounds", () => {
       publishedRoots,
     );
     assert.equal(errors.length, 0, errors.map((e) => e.reason).join("; "));
+  });
+
+  it("leaves a tail suffix put when the vowel already matches SHAPE_VOWELS", () => {
+    const { rows, changes } = remapTailSuffixVowels(
+      [
+        {
+          stem: "ahuyayo",
+          left: "ahuya",
+          join: "",
+          right: "yo",
+          concrete: "friend",
+          abstract: "",
+          mnemonic: "hug + yo (a person characterized by it) is a friend",
+        },
+      ],
+      new Map([["o", "one"], ["e", "order"], ["a", "holds"], ["u", "takes-away"]]),
+    );
+    assert.equal(rows[0]?.right, "yo");
+    assert.equal(changes.length, 0);
+  });
+
+  it("remaps a tail suffix last vowel from a learned shape map", () => {
+    const { rows, changes } = remapTailSuffixVowels(
+      [
+        {
+          stem: "ahuyayo",
+          left: "ahuya",
+          join: "",
+          right: "yo",
+          concrete: "friend",
+          abstract: "",
+          mnemonic: "hug + yo (a person characterized by it) is a friend",
+        },
+      ],
+      new Map([["o", "order"], ["e", "one"]]),
+    );
+    assert.equal(rows[0]?.right, "ye");
+    assert.equal(rows[0]?.stem, "ahuyaye");
+    assert.match(rows[0]?.mnemonic ?? "", /\+ ye /);
+    assert.equal(changes.some((c) => c.field === "right" && c.to === "ye"), true);
   });
 
   it("does not retie a hook right member", () => {
