@@ -57,6 +57,8 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 | `-tho` | this pair: one relationship | `-xe` | can't yet (the default) |
 | `-thu` | a type across scenes | `-xu` | can never |
 
+<PageBreak />
+
 ## [Sakes](thanks-and-sorry.md) {#sakes}
 
 | Sake, need | Sake, need | Sake, need |

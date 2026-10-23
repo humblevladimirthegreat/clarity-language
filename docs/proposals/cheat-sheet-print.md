@@ -1,6 +1,6 @@
 # Cheat sheet print pagination
 
-**Status:** PROPOSED  
+**Status:** PARTIALLY IMPLEMENTED. `@page`, `<PageBreak />`, Claritish Sakes marker, and `npm run lint:cheat-sheet-print` exist. The consonants sheet is the first one held to the lint. Other sheets are `--all` only until they get markers.  
 **Related:** print CSS in [`custom.css`](../grammar/.vitepress/theme/custom.css); [`PrintButton.vue`](../grammar/.vitepress/components/PrintButton.vue); cheat sheet shape in [grammar-docs.md](../meta/grammar-docs.md#cheat-sheets); content lint in [`scripts/lint-cheat-sheets.ts`](../../scripts/lint-cheat-sheets.ts)  
 **Design authority:** none for grammar. This is print layout and editor tooling for existing sheets. Forms and row wording stay on the owning pages and the sheets.
 
@@ -109,9 +109,9 @@ The real compositor is the PDF Playwright already made. The lint should read **t
 
 **Production (default):** parse the PDF with pdf.js (or equivalent): text items plus their positions, per page. Compare each slice’s first and last text to those items. A table splits when its first-row text and last-row text land on different pages. Disambiguate repeated headers (“Job / a / o / e / u / Stage”) by the heading text above them in the PDF stream. No screenshots, no vision model, no committed goldens.
 
-**Calibration only (`--calibrate`):** also write each PDF page to a PNG under `tmp/` next to the report. A person (or an agent looking at those files) checks that the report’s “unexpected break at …” / “page 2 starts at Extra nouns” matches the pictures. Tune extraction until it does (heading detection, which strings bound a table or a slice, margin vs `@page`). Then drop `--calibrate` from ordinary runs.
+**Calibration only (`--calibrate`):** write the Chromium PDF under `tmp/cheat-sheet-print/`. Open it next to the report and check that “unexpected break at …” / “page 2 starts at …” matches the sheets. Tune extraction until it does (heading detection, which strings bound a table or a slice, margin vs `@page`). Then drop `--calibrate` from ordinary runs. Do not commit the PDFs.
 
-Do not keep screenshots in the default script once that match is good. Do not commit the PNGs.
+(Rendering each PDF page to a PNG in Node via pdf.js hits a worker `structuredClone` error in this environment. The PDF is the same compositor output; use it until a PNG path is worth it.)
 
 **Why not golden screenshots as the lint.** Pixelmatch against committed page images is the usual non-AI use of screenshots: a human approved the pixels, a later run diffs them. That is a poor oracle here. “Did Chromium insert a page the file did not ask for?” is a fact about which page two strings landed on, not about antialiasing. Goldens break across OS, font raster, and Playwright versions, and they bloat the repo. Use them only if PDF text extraction cannot be made to agree with the pictures; that would be a calibration failure to fix, not a reason to lint pixels.
 
@@ -134,7 +134,7 @@ After this ships, “where does the next sheet start?” has two answers that th
 - In the file: every `<PageBreak />`.
 - In the PDF: page count is `1 + PageBreaks`, and page *i* + 1 starts with the first text after the *i*-th marker.
 
-`--calibrate` PNGs are for bringing those two into line with Chromium, then they go away. Ordinary runs do not write images.
+`--calibrate` PDFs are for bringing those two into line with Chromium, then they go away. Ordinary runs do not write files.
 
 ## Open questions
 
@@ -144,9 +144,9 @@ After this ships, “where does the next sheet start?” has two answers that th
 
 ## Plan
 
-1. Add `@page` and light print colors; add `<PageBreak />`; move the Claritish Sakes break into the markdown; drop other cheat-sheet `break-before: page` rules.
-2. Add `npm run lint:cheat-sheet-print` with a report-only mode and `--calibrate` PNGs. Do not hook it to `build` or `test`.
-3. Calibrate: compare PNGs to the PDF-text report until unexpected breaks, table splits, and page-start headings match. Remove the need to look at pictures.
-4. Place markers and rearrange sheets until the default run is clean (every PDF page is a slice, no split table), then fail on unexpected breaks and table-too-tall.
-5. Fold the policy (separate script, every sheet start is a marker, fix by rearranging, no page cap) into [grammar-docs.md](../meta/grammar-docs.md#cheat-sheets). Drop or shorten this proposal.
+1. ~~Add `@page` and light print colors; add `<PageBreak />`; move the Claritish Sakes break into the markdown; drop other cheat-sheet `break-before: page` rules.~~
+2. ~~Add `npm run lint:cheat-sheet-print` with a report-only mode and `--calibrate` PDFs. Do not hook it to `build` or `test`.~~ Default is the consonants pilot.
+3. Calibrate remaining sheets with `--calibrate` / `--all` until PDF-text and pictures agree, then mark each sheet.
+4. Place markers on the rest of the sheets until `--all` is clean.
+5. Fold the policy (separate script, every sheet start is a marker, fix by rearranging, no page cap) into [grammar-docs.md](../meta/grammar-docs.md#cheat-sheets) fully and drop or shorten this proposal. A first pass is already on that page.
 6. Out of scope until we have counts: fail on page count (a cap), not on unmarked breaks.

@@ -176,10 +176,52 @@
   border-color: var(--vp-c-brand-1);
 }
 
+/* Screen: a dashed rule so the intended sheet start is visible. Print: a real page. */
+.cheat-sheet-page-break {
+  position: relative;
+  height: 0;
+  margin: 1.4em 0;
+  border: 0;
+  border-top: 1px dashed var(--vp-c-divider);
+}
+
+.cheat-sheet-page-break-label {
+  position: absolute;
+  top: -0.7em;
+  left: 0;
+  padding-right: 8px;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-2);
+  font-size: 11px;
+  line-height: 1;
+}
+
+@page {
+  size: letter;
+  margin: 0.4in;
+}
+
 /* Cheat sheets: print on as few pages as possible, without site chrome. */
 @media print {
   .print-button {
     display: none !important;
+  }
+
+  :is(.claritish-cheat-sheet, .cheat-sheet) {
+    background: #fff !important;
+    color: #111 !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .cheat-sheet-page-break {
+    break-before: page;
+    margin: 0;
+    border: 0;
+  }
+
+  .cheat-sheet-page-break-label {
+    display: none;
   }
 
   :is(.claritish-cheat-sheet, .cheat-sheet) .VPNav,
@@ -218,10 +260,6 @@
     margin: 8pt 0 2pt;
     padding-top: 0;
     border-top: 0;
-  }
-
-  .claritish-cheat-sheet .vp-doc h2#sakes {
-    break-before: page;
   }
 
   :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc p {

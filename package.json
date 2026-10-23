@@ -42,7 +42,8 @@
     "flashcards": "tsx scripts/flashcards.ts",
     "peel-band": "tsx scripts/peel-band.ts",
     "peel-headings": "tsx scripts/peel-headings.ts",
-    "page-lines": "tsx scripts/page-lines.ts"
+    "page-lines": "tsx scripts/page-lines.ts",
+    "lint:cheat-sheet-print": "tsx scripts/lint-cheat-sheet-print.ts"
   },
   "engines": {
     "node": ">=24"
@@ -72,7 +73,9 @@
     "eslint-plugin-vuejs-accessibility": "^2.6.0",
     "globals": "^17.12.0",
     "happy-dom": "^20.11.1",
+    "pdfjs-dist": "^6.4.299",
     "peggy": "^5.1.0",
+    "playwright": "^1.64.1",
     "tsx": "^4.23.1",
     "typescript": "^5.9.3",
     "vitepress": "^1.6.4",

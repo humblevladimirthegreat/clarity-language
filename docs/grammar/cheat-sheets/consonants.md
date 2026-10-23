@@ -42,6 +42,8 @@ Shown on one root, `azozo`. From [word endings](/word-endings#concrete-l) and [r
 | **-r** | [the same one again](/pronouns#resume-r) | `zazozor` | *Azozon* (again) | B |
 | **-x** after any of these | [associates, or a group](/plurality#associative) | `zazozonx` | *Azozon and associates* | B |
 
+<PageBreak />
+
 ### Ending scales {#ending-scales}
 
 From [word endings](/word-endings), [number endings](/number-markers#number-endings), [spans](/spans#when-required), [joins](/joins#join-type-vowel-series), [hooks](/hooks), [role pointers](/pronouns#role-pointers), [tags](/tag-pronouns#tag-pronouns), and [settled-to-passing](/sakes#settled-to-passing).
@@ -55,6 +57,8 @@ From [word endings](/word-endings), [number endings](/number-markers#number-endi
 | [Settled-to-passing](/sakes#settled-to-passing) | how lasting the hold is | lasting | default | passing | — |
 
 Reference **-l** and **-m** are only on [role pointers](/pronouns#a-new-one) and [tags](/tag-pronouns#tag-pronouns). Tag [**-n**](/tag-pronouns#tag-pronouns) is reference **-r** plus a claim that the referent is a name.
+
+<PageBreak />
 
 ### How the scales hang {#ending-tree}
 
@@ -87,6 +91,12 @@ l m r n
 │     ├── say-word (a rule / a person said so / nobody said)
 │     ├── clause-join -n (sequence)
 │     └── join-act / join-relation -n (the list-move as a verb or relation)
+```
+
+<PageBreak />
+
+```text
+l m r n
 ├── reference — which referent relative to what is already in play
 │     ├── role pointer          -l a new person · -m the part · -r the same person
 │     ├── tag                   -l assign / someone A · -m what A did · -r recall · -n recall of a name
@@ -121,6 +131,8 @@ l m r n
 | **same spelling, not the same scale** | extra-noun [**-m**](/extra-noun-hooks#extra-noun-intermediate) (*amid*) is exactness; same-role [**-m**](/hooks) (*and maybe more*) is completeness | B |
 | **same spelling, not the same scale** | stand-in [**`-rm`**](/sentence-linkers#stand-in) is exactness (gist); resume-sense [**`-rm`**](/tag-pronouns#resume-sense) is content (the abstract) | I |
 
+<PageBreak />
+
 ## Root-tail kinds {#root-kinds}
 
 A root's last consonant hints at the kind of thing. From [root tails](/root-tails#root-tails). Memory aid only: grammar does not read it.
@@ -139,6 +151,8 @@ A root's last consonant hints at the kind of thing. From [root tails](/root-tail
 | `g` | signs and marks | `ewugu` *warning* | [`/ɡ/`](/clause#role-letters) a mark on something | A |
 | `r` | counting, time, money | `ugoro` *clock* | `r` after a role letter starts a [number](/numbers#counts) | A |
 | `n` | titles, paper, named sports | `unona` *newspaper*, `ezuna` *soccer* | [**-n**](/proper-names#proper-name--n) the name ending | A |
+
+<PageBreak />
 
 ## Other jobs {#other-jobs}
 
