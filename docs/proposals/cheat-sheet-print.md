@@ -1,6 +1,6 @@
 # Cheat sheet print pagination
 
-**Status:** PARTIALLY IMPLEMENTED. `@page`, `<PageBreak />`, Claritish Sakes marker, and `npm run lint:cheat-sheet-print` exist. The consonants sheet is the first one held to the lint. Other sheets are `--all` only until they get markers.  
+**Status:** PARTIALLY IMPLEMENTED. `@page`, light print colors, `<PageBreak />`, and `npm run lint:cheat-sheet-print` exist. Packed vs remaining sheets are in [Sheet status](#sheet-status). The lint default is still consonants only.  
 **Related:** print CSS in [`custom.css`](../grammar/.vitepress/theme/custom.css); [`PrintButton.vue`](../grammar/.vitepress/components/PrintButton.vue); cheat sheet shape in [grammar-docs.md](../meta/grammar-docs.md#cheat-sheets); content lint in [`scripts/lint-cheat-sheets.ts`](../../scripts/lint-cheat-sheets.ts)  
 **Design authority:** none for grammar. This is print layout and editor tooling for existing sheets. Forms and row wording stay on the owning pages and the sheets.
 
@@ -136,6 +136,31 @@ After this ships, “where does the next sheet start?” has two answers that th
 
 `--calibrate` PDFs are for bringing those two into line with Chromium, then they go away. Ordinary runs do not write files.
 
+## Sheet status
+
+**Packed** means markers (or a single Letter page) match the PDF, leftover space was filled when a later block fit, and `npm run lint:cheat-sheet-print -- --only <id>` is clean. **Open** means Chromium still inserts pages the file did not ask for. Counts are from `--all --report` (Letter, 0.4in). Update the row when a sheet is packed.
+
+| Sheet | Status | Chromium pages | What's left |
+|-------|--------|----------------|-------------|
+| [Sounds and spelling](../grammar/cheat-sheets/sounds-spelling.md) | Open | 3 | Markers; pack leftover |
+| [Vowels](../grammar/cheat-sheets/vowels.md) | Open | 5 | Markers; tables `acts` and `order` taller than a page |
+| [Consonants](../grammar/cheat-sheets/consonants.md) | Packed | 4 | Lint default. Leftover 196 / 81 / 330 / 288 px |
+| [Word shape and clause](../grammar/cheat-sheets/word-shape-clause.md) | Open | 5 | Markers; split `packaging` |
+| [People and pointing](../grammar/cheat-sheets/people-pointing.md) | Open | 4 | Markers; table `collective` taller than a page |
+| [Talking](../grammar/cheat-sheets/talking.md) | Open | 5 | Markers; split `stacked`, `ask`, `several`, `answering` |
+| [Knowing and intending](../grammar/cheat-sheets/knowing-intending.md) | Open | 7 | Markers; several tables taller than a page (`holder`, `stance`, `intending`, `ability`) |
+| [Why and allowed](../grammar/cheat-sheets/why-allowed.md) | Open | 6 | Markers; split `fault`, `stance-vowels`, `thanks-sorry`, `motion`, `deontic` |
+| [Joins and hooks](../grammar/cheat-sheets/joins-hooks.md) | Open | 6 | Markers; one split table |
+| [Restrictors and spans](../grammar/cheat-sheets/restrictors-spans.md) | Open | 5 | Markers; four split tables |
+| [Linking clauses](../grammar/cheat-sheets/linking-clauses.md) | Open | 7 | Markers; eight split tables |
+| [Roles and comparing](../grammar/cheat-sheets/roles-comparing.md) | Open | 9 | Markers; ten split tables |
+| [Numbers](../grammar/cheat-sheets/numbers.md) | Open | 10 | Markers; many split tables; `end-stacked` taller than a page |
+| [Ageben → English](../grammar/cheat-sheets/to-english.md) | Open | 35 | Markers (generator must emit them for `compounds`); four split tables; `compounds` taller than a page |
+| [Exceptions](../grammar/cheat-sheets/exceptions.md) | Fits 1 | 1 | No marker needed. Leftover 412 px |
+| [Claritish](../grammar/claritish/cheat-sheet.md) | Marked | 2 | Sakes marker matches the PDF. Not packed as a leftover pass. Leftover 30 / 196 px |
+
+`--all` stays report-only until every Open row is Packed (or Fits 1 / Marked and then packed). Do not make `--all` the lint default while Open rows remain.
+
 ## Open questions
 
 - **Letter vs A4 as the learner default.** Lint to Letter either way. If most printers are A4, `@page { size: A4 }` still leaves the lint on Letter so a table cannot grow into the extra height.
@@ -146,7 +171,7 @@ After this ships, “where does the next sheet start?” has two answers that th
 
 1. ~~Add `@page` and light print colors; add `<PageBreak />`; move the Claritish Sakes break into the markdown; drop other cheat-sheet `break-before: page` rules.~~
 2. ~~Add `npm run lint:cheat-sheet-print` with a report-only mode and `--calibrate` PDFs. Do not hook it to `build` or `test`.~~ Default is the consonants pilot.
-3. Calibrate remaining sheets with `--calibrate` / `--all` until PDF-text and pictures agree, then mark each sheet.
-4. Place markers on the rest of the sheets until `--all` is clean.
-5. Fold the policy (separate script, every sheet start is a marker, fix by rearranging, no page cap) into [grammar-docs.md](../meta/grammar-docs.md#cheat-sheets) fully and drop or shorten this proposal. A first pass is already on that page.
+3. Pack each Open row in [Sheet status](#sheet-status): `--calibrate` / `--only <id>`, place `<PageBreak />`, move a shorter block into leftover space, split a too-tall table. Mark the row Packed when that id is lint-clean.
+4. When no Open rows remain, switch the lint default to `--all`.
+5. Fold the policy (separate script, every sheet start is a marker, fix by rearranging, pack leftover, no page cap) into [grammar-docs.md](../meta/grammar-docs.md#cheat-sheets) fully and drop or shorten this proposal. A first pass is already on that page.
 6. Out of scope until we have counts: fail on page count (a cap), not on unmarked breaks.

@@ -58,8 +58,6 @@ From [word endings](/word-endings), [number endings](/number-markers#number-endi
 
 Reference **-l** and **-m** are only on [role pointers](/pronouns#a-new-one) and [tags](/tag-pronouns#tag-pronouns). Tag [**-n**](/tag-pronouns#tag-pronouns) is reference **-r** plus a claim that the referent is a name.
 
-<PageBreak />
-
 ### How the scales hang {#ending-tree}
 
 ```text
@@ -151,8 +149,6 @@ A root's last consonant hints at the kind of thing. From [root tails](/root-tail
 | `g` | signs and marks | `ewugu` *warning* | [`/ɡ/`](/clause#role-letters) a mark on something | A |
 | `r` | counting, time, money | `ugoro` *clock* | `r` after a role letter starts a [number](/numbers#counts) | A |
 | `n` | titles, paper, named sports | `unona` *newspaper*, `ezuna` *soccer* | [**-n**](/proper-names#proper-name--n) the name ending | A |
-
-<PageBreak />
 
 ## Other jobs {#other-jobs}
 

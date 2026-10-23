@@ -203,13 +203,56 @@
 
 /* Cheat sheets: print on as few pages as possible, without site chrome. */
 @media print {
+  /* Dark theme variables would print light text on unprinted (white) cells. */
+  html:has(:is(.claritish-cheat-sheet, .cheat-sheet)),
+  html:has(:is(.claritish-cheat-sheet, .cheat-sheet)) body {
+    color-scheme: light !important;
+    background: #fff !important;
+    color: #111 !important;
+    --vp-c-bg: #fff;
+    --vp-c-bg-alt: #fff;
+    --vp-c-bg-elv: #fff;
+    --vp-c-bg-soft: #fff;
+    --vp-c-bg-mute: #f4f4f4;
+    --vp-c-text-1: #111;
+    --vp-c-text-2: #222;
+    --vp-c-text-3: #333;
+    --vp-c-divider: #bbb;
+    --vp-c-gutter: #fff;
+    --vp-c-brand-1: #111;
+    --vp-c-brand-2: #111;
+    --vp-c-default-soft: #f4f4f4;
+    --vp-code-bg: #fff;
+    --vp-code-color: #111;
+    --vp-code-link-color: #111;
+    --vp-code-link-hover-color: #111;
+  }
+
   .print-button {
     display: none !important;
   }
 
   :is(.claritish-cheat-sheet, .cheat-sheet) {
+    --vp-c-bg: #fff;
+    --vp-c-bg-alt: #fff;
+    --vp-c-bg-elv: #fff;
+    --vp-c-bg-soft: #fff;
+    --vp-c-bg-mute: #f4f4f4;
+    --vp-c-text-1: #111;
+    --vp-c-text-2: #222;
+    --vp-c-text-3: #333;
+    --vp-c-divider: #bbb;
+    --vp-c-gutter: #fff;
+    --vp-c-brand-1: #111;
+    --vp-c-brand-2: #111;
+    --vp-c-default-soft: #f4f4f4;
+    --vp-code-bg: #fff;
+    --vp-code-color: #111;
+    --vp-code-link-color: #111;
+    --vp-code-link-hover-color: #111;
     background: #fff !important;
     color: #111 !important;
+    color-scheme: light !important;
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
   }
@@ -262,22 +305,56 @@
     border-top: 0;
   }
 
+  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc h3 {
+    font-size: 10pt;
+    margin: 6pt 0 2pt;
+  }
+
   :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc p {
     margin: 2pt 0;
+  }
+
+  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc pre {
+    margin: 2pt 0;
+    padding: 4pt 6pt;
   }
 
   :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc table {
     margin: 2pt 0;
     break-inside: avoid;
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc tr,
+  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc tr:nth-child(2n) {
+    background: #fff !important;
   }
 
   :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc th,
   :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc td {
     padding: 1pt 5pt;
+    background: #fff !important;
+    color: #111 !important;
+    border-color: #999 !important;
+  }
+
+  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc :is(h1, h2, h3, p, li, em, strong, a, code, pre, span) {
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+  }
+
+  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc :is(code, pre),
+  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc a > code {
+    background: #fff !important;
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+    border-color: #ccc;
   }
 
   :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc a {
-    color: inherit;
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
     text-decoration: none;
   }
 }
