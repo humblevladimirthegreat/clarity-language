@@ -7,7 +7,7 @@ outline: false
 
 # Word shape and clause cheat sheet {#word-shape-clause-cheat-sheet}
 
-A quick look at [word endings](/word-endings), [the clause](/clause), and [predication](/predication) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [word endings](/word-endings), [the clause](/clause), and [predication](/predication). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## Word shape {#word-shape}
 
@@ -42,6 +42,8 @@ The role letter says the job ([role map](/proper-names#proper-name--n)); **-n** 
 | `/h/` | a named standard or frame | I |
 | `/y/` | [call this named person](/proper-names#proper-name--n) | I |
 
+<PageBreak />
+
 ### Names of more than one word {#long-names}
 
 | Shape | Example | English | Stage |
@@ -71,6 +73,8 @@ From the [role letters](/clause#role-letters) table.
 | `/th/` | stance: how sure, how known, why, as if | B |
 
 Calls and sentence glue use [`/y/`](/speech-moves) and [`/x/`](/dependents).
+
+<PageBreak />
 
 ### Default order and moving words {#order}
 
@@ -107,6 +111,8 @@ Calls and sentence glue use [`/y/`](/speech-moves) and [`/x/`](/dependents).
 | [`/h/`](/left-bound#degree-w), on the verb | `hayurom` | *kind of* | I |
 | | `herugom` | *again* | I |
 
+<PageBreak />
+
 ### The extra noun `/b/` {#extra-noun}
 
 Tell the two jobs apart by the word right before the `/b/` word.
@@ -142,6 +148,8 @@ Ageben has no word for *is*. The kind of claim comes from the pattern.
 | [The one who is Azozon](/label-scope#same-endings) | inside a noun phrase | `zeyel gorel blazozon` | *the person who is Azozon* | I |
 
 With a name or a resumed noun, the pair is a [property](/predication#existence), not a new thing: `zodozer gelazem.` is *The dog is big.*
+
+<PageBreak />
 
 ### Hedging, denying, commanding {#packaging}
 

@@ -7,7 +7,7 @@ outline: false
 
 # Joins and hooks cheat sheet {#joins-hooks-cheat-sheet}
 
-A quick look at [joins](/joins), [joins across roles](/join-across-roles), [hooks](/hooks), and [discourse hooks](/discourse-hooks) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [joins](/joins), [joins across roles](/join-across-roles), [hooks](/hooks), and [discourse hooks](/discourse-hooks). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## One vowel map {#vowel-map}
 
@@ -28,6 +28,18 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 
 ## Joins {#joins}
 
+### Endings {#join-endings}
+
+| Ending | On a join | Stage |
+|--------|-----------|-------|
+| **-l** | [closed](/joins#join-type-vowel-series): the listed items are the only ones | B |
+| **-m** | [open](/joins#and-lists-a): *(and possibly more)*; [alone](/joins#standalone-phrase), *as far as I know* | B |
+| **-r** | [one unnamed member](/joins#unspecified-member-r-phrase) (*something*, *someone*); one vowel only | B |
+| **-rx** | [an unnamed group](/joins#unspecified-member-r-phrase) (`zarx` *some ones*); `/z/` `/d/` `/b/` only | B |
+| **-n** | `/z/` `/d/` `/b/`: [a named list](/join-islands#named-list); `/x/`: [sequence](/clause-sequence#clause-sequence); `/v/`: [join-act verb](/join-across-roles#join-act-verbs); `/ɡ/` `/h/`: [join-relation](/join-across-roles#join-relations) | I–A |
+
+<PageBreak />
+
 ### Shape {#join-shape}
 
 | Rule | Example | English | Stage |
@@ -38,16 +50,6 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | A [different clause join](/joins#clause-joins) closes everything before it | `A xel B xal C` | *(A or B) and C* | B |
 | [Nest](/rank-joins#fence-nesting) by stacking joins | `zedudal zogudal zel zowulal zal` | *either tea or coffee, and water* | I |
 | [Scope island](/join-islands#scope-islands-join) keeps a small list inside a bigger one of the same role | `zazozon { zowulal zal } zam` | *Azozon and (just water)* | A |
-
-### Endings {#join-endings}
-
-| Ending | On a join | Stage |
-|--------|-----------|-------|
-| **-l** | [closed](/joins#join-type-vowel-series): the listed items are the only ones | B |
-| **-m** | [open](/joins#and-lists-a): *(and possibly more)*; [alone](/joins#standalone-phrase), *as far as I know* | B |
-| **-r** | [one unnamed member](/joins#unspecified-member-r-phrase) (*something*, *someone*); one vowel only | B |
-| **-rx** | [an unnamed group](/joins#unspecified-member-r-phrase) (`zarx` *some ones*); `/z/` `/d/` `/b/` only | B |
-| **-n** | `/z/` `/d/` `/b/`: [a named list](/join-islands#named-list); `/x/`: [sequence](/clause-sequence#clause-sequence); `/v/`: [join-act verb](/join-across-roles#join-act-verbs); `/ɡ/` `/h/`: [join-relation](/join-across-roles#join-relations) | I–A |
 
 ### How many items {#arity}
 
@@ -76,6 +78,8 @@ The same join reads differently with two or more items, [one item](/joins#standa
 | `zuol` | *A, B, from last to first* | *X last* | *no least-favorite* | I |
 
 A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `xal` *nothing happened*, `xar` *something happened*.
+
+<PageBreak />
 
 ### Around a join {#around-a-join}
 
@@ -118,6 +122,8 @@ The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, 
 | `thual` | *all things considered* | `thol` | *impartially* |
 | `thoel` | *equally balanced* | `thar` (in a question) | *why do you say so?* |
 
+<PageBreak />
+
 ## Hooks {#hooks}
 
 A hook has no role letter: just a vowel (or two) and an ending. Tell the kinds apart by what sits around it.
@@ -152,6 +158,8 @@ A hook has no role letter: just a vowel (or two) and an ending. Tell the kinds a
 
 More: [parallel chains](/discourse-hooks#parallel-chains) `zuvayal am zazozon ul zalazun` (each hook applies to A); [detail on the hook](/ending-grids#hook-w) `wemem al` *even*; ranges `ual` *strictly between*, `uol` *outside*, `uar` *someone between*. All Intermediate.
 
+<PageBreak />
+
 ### Extra nouns {#extra-nouns}
 
 Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting. **-r** drops the landmark and [points back](/discourse-hooks#hook-resume). Fused onto a citation, the hook makes a [verb](/hook-compounds#hook-compounds) (shown from *walk*). Its vowels before **`x`** (or **`mx`** for the **-m** frame) and a stem make a [hook prefix](/hook-compounds#hook-prefixes). With an [abstract landmark](/ending-grids#abstract-landmarks) the hook keeps its picture: `al babowum` *in a crisis*, `ual baram` *out of debt*.
@@ -170,6 +178,8 @@ Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting.
 | `uol` *against* | `uom` *contrary to* | | `owuroluel` *oppose* | `guoxohalal` *sea-facing* | `guomxawulol` *headwind* |
 
 Stage: one-vowel extra-noun **-l** (`al` `el` `ul` `ol`) Beginner on [hooks](/hooks#extra-noun); two-vowel extra-noun and `om` Beginner on [extra nouns](/extra-noun-hooks#extra-noun-intermediate); abstract landmarks Intermediate; fused forms and prefixes Advanced.
+
+<PageBreak />
 
 ### Hooked joins {#hooked-joins}
 
@@ -190,6 +200,8 @@ Role letter, the hook's vowels (**`m`** for its frame, **`r`** to point back), *
 | `hemxual blanulul` | [*always, around the time of the thunderstorm*](/hooked-joins#hooked-joins-time) |
 | `hurxal` | [*never since then*](/hooked-joins#hooked-joins-time) |
 | `huxal blarl` + clause | [*never since* (that happened)](/hooked-joins#hooked-joins-clause) |
+
+<PageBreak />
 
 ### Handy phrases {#handy-phrases}
 

@@ -30,15 +30,15 @@ The locus uses the hook vowels you already know. A **placement** locus says wher
 
 A **direction** locus says what the charge points at:
 
-| Locus | Hook | Use | English |
-|-------|------|-----|---------|
-| **`e`** | *at* | AIMED | *the charge lands on a target* (*annoyed at*, *grateful to*, *pressing for*) |
-| **`oe`** | *toward* | SEEKING | *turning to someone for comfort or safety* |
-| **`uo`** | *against* | RESISTING | *pushing back* (*objecting to*, fighting) |
-| **`o`** | *for* | ON-BEHALF | *felt for someone's sake* (*upset for*) |
-| **`u`** | *from* | AWAY | *moving off* (*avoiding*, fleeing, disengaging, hiding) |
-| **`ua`** | *out of* | COLLAPSE | *out of fight: giving up* (*defeated by*) |
-| **`ao`** | *using* | FAWN | *using yourself to placate* (*appeasing*) |
+| Locus | Hook | Use | English | Example |
+|-------|------|-----|---------|---------|
+| **`e`** | *at* | AIMED | *the charge lands on a target* (*annoyed at*, *grateful to*, *pressing for*) | `wawethumel` |
+| **`oe`** | *toward* | SEEKING | *turning to someone for comfort or safety* | `wawethumoem` |
+| **`uo`** | *against* | RESISTING | *pushing back* (*objecting to*, fighting) | `wawethumuor` |
+| **`o`** | *for* | ON-BEHALF | *felt for someone's sake* (*upset for*) | `wawethumom` |
+| **`u`** | *from* | AWAY | *moving off* (*avoiding*, fleeing, disengaging, hiding) | `wawethumum` |
+| **`ua`** | *out of* | COLLAPSE | *out of fight: giving up* (*defeated by*) | `wawethumual` |
+| **`ao`** | *using* | FAWN | *using yourself to placate* (*appeasing*) | `wawethumaom` |
 
 A direction names the **dominant** pull when feelings mix; use two feeling words for two pulls. AIMED lands on a party or a goal; RESISTING opposes an outcome or a demand. ON-BEHALF is your own feeling about someone else's stake; FAWN is placating someone for your own safety.
 
@@ -85,12 +85,6 @@ The locus plus the motion ending is the **emotion tail**. It goes on met **`tha`
 | `zozowum wawethumual goyom` | *given up over the division* (unmet relatedness; out of fight; still) |
 | `zobewom guwathamar` | *proud of the draft* (met competence; held inside; surging) |
 | `zonal wawethumom goyom blazozon` | *upset for Azozon about the memo* (unmet relatedness; on Azozon's behalf; flowing) |
-| `zezuyol wawethumum goyom blalazun` | *avoiding Alazun over the dialogue* (unmet relatedness; moving off from Alazun; flowing) |
-| `zezuyol wawethumaom goyom blalazun` | *placating Alazun about the dialogue* (unmet relatedness; appeasing Alazun; flowing) |
-| `zonal wawethumoem goyom blazozon` | *upset about the memo and turning to Azozon for comfort* (unmet relatedness; seeking Azozon; flowing) |
-| `zonal wawethumuor goyom` | *objecting to the memo* (unmet relatedness; pushing against the memo; surging) |
-| `zezuyol wurothumal goyom` | *the dialogue feels pointless* (unmet purpose; held inside; still) |
-| `zobewom gewathamam` | *glad my draft helped* (met beneficence; held inside; flowing) |
 | `zezuyol wamezem wuwathuruem goyom` | *a little uneasy about the dialogue, and I can't say why* (competence at stake, temporary; slightly; unplaced; flowing) |
 | `zezuyol wuwathumuor guzezam` | *the dialogue is frustratingly slow* (unmet competence on the slowness; pushing against it; surging) |
 

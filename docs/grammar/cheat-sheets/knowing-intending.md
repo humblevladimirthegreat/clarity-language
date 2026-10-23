@@ -7,15 +7,13 @@ outline: false
 
 # Knowing and intending cheat sheet {#knowing-intending-cheat-sheet}
 
-A quick look at [knowing](/knowing), [notional and standing](/notional-standing), and [intention](/intention) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
-
-Verbs have no tense. A `/th/` word says how you know, how you hold the claim, or what someone means to do, and the ending says how firm: **-l** firm, **-m** default, **-r** for now. When unsure, use **-m**.
+[Knowing](/knowing), [notional and standing](/notional-standing), and [intention](/intention). Stage: **B** Beginner, **I** Intermediate, **A** Advanced. Ending: **-l** firm, **-m** default, **-r** for now.
 
 ## How you know {#how-you-know}
 
 ### Channels {#channels}
 
-Pick one channel for how you know. LIVE and MEMORY place the event in time; the others do not.
+Pick one channel. LIVE and MEMORY place the event in time; the others do not.
 
 <!-- cheat-sheet: knowing-intending -->
 | Channel | Kind | Ageben | English | Stage |
@@ -30,7 +28,7 @@ Pick one channel for how you know. LIVE and MEMORY place the event in time; the 
 
 ### Evidence strength {#strength}
 
-The ending grades your evidence: **-l** you could show it, **-m** you could describe it, **-r** you could only gesture at it. It is not how sure you feel or how likely the event is.
+The ending grades evidence, not how sure you feel or how likely the event is: **-l** show, **-m** describe, **-r** gesture.
 
 <!-- cheat-sheet: knowing-intending -->
 | Channel | Graded on | **-l** show | **-m** describe | **-r** gesture | Stage |
@@ -42,6 +40,8 @@ The ending grades your evidence: **-l** you could show it, **-m** you could desc
 | [DEDUCED](/evidentiality#evidence-strength) | how far you checked the steps | `thanal` every step shown | `thanam` | `thanar` seems to follow | I |
 | [REPORTED](/evidentiality#evidence-strength) | reliability of source | `thebal` a reliable source | `thebam` | `thebar` a rumor | I |
 | [INTUITION](/evidentiality#evidence-strength) | how well you can state it | `thabel` a strong sense | `thabem` | `thaber` a faint hunch | I |
+
+<PageBreak />
 
 ### Adding to a channel {#channel-add}
 
@@ -63,7 +63,7 @@ The ending grades your evidence: **-l** you could show it, **-m** you could desc
 | [`thugem` LIVE](/universality#dated-channel) | no offset | A |
 | [`thubom` PATTERN](/universality#dated-channel) | **`-`** or **`+`** | A |
 
-What a `bl-` word after a channel does: a person or thing is the [source](/evidentiality#source); a time measure is the [offset](/universality#dated-channel); `blarl` takes only CLUES, PATTERN and DEDUCED. A cause or condition word may not come before the channel.
+After a channel, a `bl-` person or thing is the [source](/evidentiality#source); a time measure is the [offset](/universality#dated-channel). `blarl` takes only CLUES, PATTERN, and DEDUCED.
 
 <!-- cheat-sheet: knowing-intending -->
 | You say | Clause after `blarl` is | Form | Stage |
@@ -72,9 +72,11 @@ What a `bl-` word after a channel does: a person or thing is the [source](/evide
 | what must hold for it | the condition | [`thohem blarl`](/evidentiality#evidence-clause) / `thebem blarl` / `thehom blarl` | I |
 | how you know it happened | your grounds | [`theyom blarl`](/evidentiality#evidence-clause) / `thubom blarl` / `thanam blarl` | I |
 
+<PageBreak />
+
 ### Deduction {#deduction}
 
-What you assert depends on what sits before `blarl`: the channel alone asserts the premises; a pole between them asserts only the link. Join several premises with `xam`.
+What sits before `blarl` is what you assert: the channel alone asserts the premises; a pole between them asserts only the link. Join premises with `xam`.
 
 <!-- cheat-sheet: knowing-intending -->
 | You claim | Form | You assert | Stage |
@@ -109,6 +111,8 @@ A channel you name is your frame, and later claims of yours keep it. See [carryi
 
 A question, command, request, or prohibition does not take the frame, and does not end it.
 
+<PageBreak />
+
 ## Could be, imagined, surprising, still in effect {#stance}
 
 MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words that cover the whole clause. MAY is *could be* with nothing behind it; NOTIONAL is an imagined scene; MIRATIVE says the news ran against what you expected; RESIDUE says an outcome still counts; FORMER says a usual pattern is not claimed for now.
@@ -139,6 +143,8 @@ MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words
 | [A channel as the bar](/notional-standing#channel-bars) | `thugem` before `zol` | *than it looks* | I |
 
 Neither MAY nor MIRATIVE can be a [comparison bar](/notional-standing#channel-bars).
+
+<PageBreak />
 
 ### Already, still, not yet, no longer {#phasal}
 
@@ -175,6 +181,8 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 | `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/ability#decision-revisability) | I |
 <!-- /generated -->
 
+<PageBreak />
+
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Plan](/intention#plan-predict): yours | `zuwen thagom vowurol.` | *I plan to walk.* | B |
@@ -197,6 +205,8 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 | [A plan with backups](/ability#fallback) | `zuwen thagol vowurol xen zuwen thagol vozuyel xen zuwen thagol vezuvel.` | *walk; failing that, sing; failing that, sleep* | I |
 
 The `bl-` word right after PLAN is only ever a time. WANT, PLAN, and DECISION take no `bl-` word for whose they are.
+
+<PageBreak />
 
 ### Ability {#ability}
 

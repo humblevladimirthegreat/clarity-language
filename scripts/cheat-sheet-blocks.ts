@@ -13,20 +13,18 @@
 // Sources:
 // - `overlays` — rows of data/lexicon-overlays.csv, filtered by `pos=` and
 //   `kind=` (`|`-separated). Sake rows are left out unless `kind=` names them;
-//   the `sakes` source shows them by root.
+//   the `sakes` source shows them by root. `skip=` / `take=` slice the sorted
+//   rows so a too-tall table can split across `<PageBreak />` (same columns).
 // - `sakes` — one row per sake root, as the `/th/` word for *serves* and *detracts from*.
 // - `closed-words` — closed-root words with a fixed reading (special pronouns,
 //   sentence linkers), spelled from src/closed-roots.ts.
-// - `compounds` — data/lexicon-compounds.csv, as citation forms.
 //
 // Every row links to the section that teaches it, with that section's stage.
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 import { CLOSED, type ClosedName } from "../src/closed-roots.js";
-import { parseCompoundCsv } from "../src/lexicon-compounds.js";
 import { parseOverlayCsv, type OverlayRow } from "../src/lexicon-search.js";
-import { isExtraNounHook } from "../src/parse/hook-compounds.js";
 import { pageSections, type Band, type PageSections } from "../src/lint/learning-order.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
 import { pageRelPath } from "../docs/grammar/.vitepress/lib/reading-order.js";
@@ -82,10 +80,16 @@ const overlays = () => parseOverlayCsv(readData("lexicon-overlays.csv"));
 function overlayRows(params: Params): string {
   const pos = params.pos;
   const kind = params.kind;
+  const skip = Number((params.skip ?? ["0"])[0]);
+  const takeRaw = params.take?.[0];
+  const take = takeRaw == null ? undefined : Number(takeRaw);
+  if (!Number.isInteger(skip) || skip < 0) throw new Error(`skip= needs a non-negative integer`);
+  if (take != null && (!Number.isInteger(take) || take < 0)) throw new Error(`take= needs a non-negative integer`);
   const rows = overlays()
     .filter((o) => (!pos || pos.includes(o.pos)) && (kind ? kind.includes(o.kind) : o.kind !== "sake"))
     .map((o) => ({ form: o.pos + o.senseForm, o }))
-    .sort((a, b) => a.form.localeCompare(b.form));
+    .sort((a, b) => a.form.localeCompare(b.form))
+    .slice(skip, take == null ? undefined : skip + take);
   return table(
     ["Ageben", "English", "Taught in", "Stage"],
     rows.map(({ form, o }) => {
@@ -142,23 +146,10 @@ function closedWordRows(): string {
   );
 }
 
-function compoundRows(): string {
-  const rows = parseCompoundCsv(readData("lexicon-compounds.csv"))
-    .map((c) => {
-      const hook = isExtraNounHook(c.right);
-      const concrete = hook ? c.stem : `${c.stem}l`;
-      const abstract = c.abstract && !hook ? `\`${c.stem}m\` *${c.abstract}*` : "";
-      return { concrete, cells: [`\`${concrete}\``, `*${c.concrete}*`, abstract] };
-    })
-    .sort((a, b) => a.concrete.localeCompare(b.concrete));
-  return table(["Ageben", "English", "Abstract (**-m**)"], rows.map((r) => r.cells));
-}
-
 const SOURCES: Record<string, (params: Params) => string> = {
   overlays: overlayRows,
   sakes: sakeRows,
   "closed-words": closedWordRows,
-  compounds: compoundRows,
 };
 
 // ---------------------------------------------------------------- main

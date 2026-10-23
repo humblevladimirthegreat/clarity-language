@@ -7,7 +7,7 @@ outline: false
 
 # People and pointing cheat sheet {#people-pointing-cheat-sheet}
 
-A quick look at [pronouns](/pronouns), [topic](/topic), and [plurality](/plurality) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [pronouns](/pronouns), [topic](/topic), and [plurality](/plurality). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## Pointing back {#pointing-back}
 
@@ -24,11 +24,9 @@ A quick look at [pronouns](/pronouns), [topic](/topic), and [plurality](/plurali
 | [A label you chose](/tag-pronouns#tag-pronouns) | role letter + `w` + tag vowel | `zwar` | *A* | I |
 | [The talk's topic](/topic#topic-pronoun) | `ale` + **-n** | `zalen` | *the topic* | I |
 
-A resume uses the **whole stem**: `doyahehar` is *the bedroom*, `doyaher` is *the bed*. It points at the **most recent** word with that stem.
-
 ### Role pointers {#role-pointers}
 
-Role letter for the slot now (see [role pointers](/pronouns#role-pointers)), **`wu`**, a **part consonant** for the part (the role letter it had then), a **pointer vowel** for which event, then the ending.
+Slot now, then **`wu`**, a **part consonant** (the old role letter), a **pointer vowel**, then the ending. A resume uses the **whole stem**. See [role pointers](/pronouns#role-pointers).
 
 | Part consonant | Part in the earlier event | Where it sat | Example | Stage |
 |----------------|---------------------------|--------------|---------|-------|
@@ -43,7 +41,9 @@ Role letter for the slot now (see [role pointers](/pronouns#role-pointers)), **`
 | **o** | [this sentence's own event](/pronouns#themself) | `dwuzor` | *themself* | B |
 | **u** | [the latest sentence that left the part unsaid](/pronouns#whoever-it-was) | `zwuzur` | *whoever did it* | B |
 
-Endings on a pointer: **-r** the same one, **-l** [a new one](/pronouns#a-new-one) (not with **u**), **-m** [their part](/pronouns#share) (not with **o**). A pointer never names its own slot. A topic change [ends its reach](/topic#topic-resets).
+Endings: **-r** the same one, **-l** [a new one](/pronouns#a-new-one) (not with **u**), **-m** [their part](/pronouns#share) (not with **o**). A pointer never names its own slot. A topic change [ends its reach](/topic#topic-resets).
+
+<PageBreak />
 
 ### Other ways to point {#other-pointing}
 
@@ -55,7 +55,7 @@ Endings on a pointer: **-r** the same one, **-l** [a new one](/pronouns#a-new-on
 
 ### Tags {#tags}
 
-A [tag](/tag-pronouns#tag-pronouns) is a label you choose: role letter, `w`, a tag vowel (assign **a** first, then **o**, then **e**, last **u**), an ending. It stays on its referent. Tags fill `/z/`, `/d/`, `/b/` only.
+A [tag](/tag-pronouns#tag-pronouns) is a label you choose (role letter, `w`, vowel **a** then **o**, **e**, last **u**, ending). It stays on its referent. Tags fill `/z/`, `/d/`, `/b/` only.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -82,20 +82,15 @@ Only an `/x/` word at the start of a sentence sets the [topic](/topic#topic). Be
 | [Clear the topic](/topic#topic) | `xevewom` / `xavedam` | *next* / *by the way* | I |
 | [The topic itself, in any slot](/topic#topic-pronoun) | `zalen` / `dalen` / `balen` | *the topic* | I |
 
-The topic pronoun is never a topic word or a resume (`xalen`, `xaler`, `zaler` are not sentences). A dropped subject is never the topic: write `zalen`.
+The topic pronoun is never a topic word or a resume. A dropped subject is never the topic: write `zalen`. A [topic change](/topic#topic-resets) resets role-pointer anchors and bare-number magnitude; whole-stem **-r** and tags stay.
 
-| [What a topic change resets](/topic#topic-resets) | Resets? | Stage |
-|----------------------------|---------|-------|
-| [Role pointer anchors](/topic#topic-resets) | yes | I |
-| Bare-number magnitude | yes | I |
-| Whole-stem **-r** | no | I |
-| Tags | no | I |
+<PageBreak />
 
 ## People in the conversation {#people}
 
 ### Special pronouns {#special-pronouns}
 
-Role letter + the root + **-n** ([special pronouns](/pronouns#special-pronouns)). Prefer a proper name when you have one.
+Role letter + the root + **-n**. Prefer a proper name when you have one. See [special pronouns](/pronouns#special-pronouns).
 
 | Word | Means | In a slot | English | Same root as | Stage |
 |------|-------|-----------|---------|--------------|-------|
@@ -105,7 +100,7 @@ Role letter + the root + **-n** ([special pronouns](/pronouns#special-pronouns))
 | `umen` | a nonspecific individual | `zumen` | *someone* | `umel` *neutral* | B |
 | [`eyen`](/pronouns#generic-pronoun) | any person, as a rule | `zeyen` | *one*, generic *you* | `eyel` *person* | B |
 
-**Notes:** As an object, *we* is `dayan`. `awan` is always the person actually listening. `eyen` takes no **-x**.
+As an object, *we* is `dayan`. `awan` is the person actually listening. `eyen` takes no **-x**.
 
 ### Groups with **-x** {#groups}
 
@@ -119,11 +114,13 @@ Role letter + the root + **-n** ([special pronouns](/pronouns#special-pronouns))
 | [listener **-x**](/plurality#person-role-x) | the address set, speaker not included | `awanx` (`zawanx`, `dawanx`) | *you all* | B |
 | [interlocutors **-x**](/plurality#person-role-x) | everyone here, and their people | `ayanx` | *we all* | B |
 
-Who counts as an associate is [open unless you say](/collectives#associate-resolution): a join or `ul` names it; otherwise a group already named, then the obvious group in the scene. Nonspecific `umen` takes no **-x**; *some people* is `zeyelx`.
+Who counts as an associate is [open unless you say](/collectives#associate-resolution). `umen` takes no **-x**; *some people* is `zeyelx`.
+
+<PageBreak />
 
 ### One act, one unit {#collective}
 
-**-x** on a verb or adjective says the group acts, or the property holds, as one.
+**-x** on a verb or adjective: the group acts, or the property holds, as one.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|

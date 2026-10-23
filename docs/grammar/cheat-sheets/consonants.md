@@ -129,6 +129,23 @@ l m r n
 | **same spelling, not the same scale** | extra-noun [**-m**](/extra-noun-hooks#extra-noun-intermediate) (*amid*) is exactness; same-role [**-m**](/hooks) (*and maybe more*) is completeness | B |
 | **same spelling, not the same scale** | stand-in [**`-rm`**](/sentence-linkers#stand-in) is exactness (gist); resume-sense [**`-rm`**](/tag-pronouns#resume-sense) is content (the abstract) | I |
 
+## Other jobs {#other-jobs}
+
+Same letter, different **letter job** by **placement**: where the letter sits picks the job.
+
+| Letter | Where | Job | Stage |
+|--------|-------|-----|-------|
+| [`l`](/left-bound-adjectives#left-bound-adjectives) after `/ɡ/` | `gl-` | adjective before the noun | B |
+| [`l`](/clause#extra-nouns) after `/b/` | `bl-` | completes the host right before it | B |
+| [`w`](/pronouns#role-pointers) | after the role letter | closed word: pointer, tag, role compound, say word | B–I |
+| [`th`](/label-seams#label-scope) mid-word | after the root | stance seam: [scope](/label-seams#label-scope), [sakes](/sakes#word-shape), [viewpoint](/viewpoint#viewpoint-laterals) | I |
+| [`x`](/compounds) mid-word | between roots | two roots, one word | B |
+| [`/x/`](/dependents#continue-x) first | | continue / sentence glue | B |
+| [**-x**](/plurality#associative) last | after the ending | associates or a group | B |
+| [`r`](/phonotactics#number-word-exception) after a role letter | `gragel` | starts a number word | I |
+
+`th` is one letter. Digit letters also start [digit syllables](/phonotactics#letter-names).
+
 <PageBreak />
 
 ## Root-tail kinds {#root-kinds}
@@ -150,19 +167,20 @@ A root's last consonant hints at the kind of thing. From [root tails](/root-tail
 | `r` | counting, time, money | `ugoro` *clock* | `r` after a role letter starts a [number](/numbers#counts) | A |
 | `n` | titles, paper, named sports | `unona` *newspaper*, `ezuna` *soccer* | [**-n**](/proper-names#proper-name--n) the name ending | A |
 
-## Other jobs {#other-jobs}
+## `-n` that is not a name {#n-not-a-name}
 
-Same letter, different **letter job** by **placement**: where the letter sits picks the job.
+On a content word, **-n** marks a name ([word endings](/proper-names#proper-name--n)). These closed families also end in **-n** without naming anything:
 
-| Letter | Where | Job | Stage |
-|--------|-------|-----|-------|
-| [`l`](/left-bound-adjectives#left-bound-adjectives) after `/ɡ/` | `gl-` | adjective before the noun | B |
-| [`l`](/clause#extra-nouns) after `/b/` | `bl-` | completes the host right before it | B |
-| [`w`](/pronouns#role-pointers) | after the role letter | closed word: pointer, tag, role compound, say word | B–I |
-| [`th`](/label-seams#label-scope) mid-word | after the root | stance seam: [scope](/label-seams#label-scope), [sakes](/sakes#word-shape), [viewpoint](/viewpoint#viewpoint-laterals) | I |
-| [`x`](/compounds) mid-word | between roots | two roots, one word | B |
-| [`/x/`](/dependents#continue-x) first | | continue / sentence glue | B |
-| [**-x**](/plurality#associative) last | after the ending | associates or a group | B |
-| [`r`](/phonotactics#number-word-exception) after a role letter | `gragel` | starts a number word | I |
+| Words | What **-n** does there | Example | Stage |
+|-------|------------------------|---------|-------|
+| [special pronouns](/pronouns#special-pronouns), the [generic pronoun](/pronouns#generic-pronoun), and the [topic pronoun](/topic#topic-pronoun) | the usual ending on these person words | `zuwen` *I*, `zeyen` *one*, `zalen` *the topic* | B |
+| [stand-ins](/stand-in-roles#stand-in-roles) | **-rn** (single vowel) or **-n** (stacked vowel) names a kind of sentence content (statement, question, command, prohibition); on `/v/`, the matching response verb | `darn` *a statement*, `varn` *state* | A |
+| [join words](/joins) with a `/v/`, `/x/`, `/ɡ/`, or `/h/` first letter | join content: a [join-act](/join-across-roles#join-act-verbs) verb, clause [sequence](/clause-sequence#clause-sequence), or a [join-relation](/join-across-roles#join-relations) | `van` *include*, `xan` *and then*, `gan` *including* | B / I |
 
-`th` is one letter. Digit letters also start [digit syllables](/phonotactics#letter-names).
+These still count as names:
+
+| Words | Why it is still a name | Stage |
+|-------|------------------------|-------|
+| a phrase join under `/z/`, `/d/`, or `/b/` | **-n** titles the bundle ([titled phrases](/proper-names#titled-phrases)) | I |
+| a hook | **-n** titles a proper-name phrase ([titled phrases](/proper-names#titled-phrases)) | I |
+| a number word | **-n** is a conventional designation, such as an official label or *the Second* ([number-word exception](/proper-names#number-word-exception)) | I |

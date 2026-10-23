@@ -10,7 +10,7 @@ Cheat sheets are lookup pages meant to print ([grammar-docs](../meta/grammar-doc
 
 - There is no `@page` rule. Paper size, margins, headers, and scale come from the print dialog, so pagination is not determined by the stylesheet.
 - `break-inside: avoid` only *tries* to keep a table on one sheet. A table taller than the space left on the current sheet is pushed (blank leftover, then an implicit extra page). A table taller than one full sheet still splits. Chrome does not always honor avoid on tables.
-- Those implicit breaks are invisible in the markdown. The one forced break that exists (Claritish `h2#sakes { break-before: page }`) lives only in CSS.
+- Those implicit breaks are invisible in the markdown. Claritish used to force a sheet at `h2#sakes` in CSS only.
 - An editor (human or agent) cannot inspect real print pages from the screen layout. Print-media emulation restyles a continuous column; it does not fragment. The in-IDE browser does not expose `Page.printToPDF`.
 
 The content lint (`lint-cheat-sheets.ts`) checks rows against owning pages. It does not measure layout.
@@ -38,7 +38,7 @@ grammar-docs still says **one printable page per subsystem**. Several sheets alr
 | Piece | Role | Limit |
 |-------|------|-------|
 | `@media print` in `custom.css` | Hide chrome, 9pt type, tight table padding, `break-inside: avoid` | No `@page`; continuous column on screen |
-| `.claritish-cheat-sheet .vp-doc h2#sakes { break-before: page }` | One hardcoded sheet start | Not in the markdown; agents cannot see it |
+| `.claritish-cheat-sheet .vp-doc h2#sakes { break-before: page }` | One hardcoded sheet start (removed) | Replaced by `<PageBreak />` in `claritish/cheat-sheet.md` |
 | `<PrintButton />` | `window.print()` | Dialog settings still apply |
 | `lint-cheat-sheets.ts` / `cheat-sheet-blocks.ts` | Rows match owning pages and data | No geometry |
 
@@ -81,7 +81,7 @@ A Vue component `<PageBreak />`, registered next to `PrintButton`. Authors put i
 | Screen | Hidden; learners see one continuous column |
 | Markdown | Grep-able; same pattern as `<PrintButton />` |
 
-Do not hang pagination on heading classes. A break often belongs *before a table* under the same `##`.
+Do not hang pagination on heading classes (`break-before: page` on an `h2`). Put `<PageBreak />` **before the heading** that introduces the next table, so the heading, its lead, and the table share a sheet. Do not put a marker between a heading and the table it names.
 
 Replace the Claritish `#sakes` CSS rule with a `<PageBreak />` in `claritish/cheat-sheet.md` in the same change as the component. After that, print CSS must not contain any other `break-before: page` (or `page-break-before`) on cheat-sheet pages: the file is the inventory.
 
@@ -89,7 +89,7 @@ Replace the Claritish `#sakes` CSS rule with a `<PageBreak />` in `claritish/che
 
 A dedicated script, `npm run lint:cheat-sheet-print`. It is **not** part of `npm run build` or `npm test`. Document it on the cheat-sheets meta section when this is absorbed. Run it when changing a sheet’s layout, the print CSS, or `<PageBreak />`.
 
-Playwright loads each cheat sheet (grammar `pageClass: cheat-sheet` and Claritish `claritish-cheat-sheet`) and prints with the pinned `@page` box (`page.pdf`, same paper and margins). `happy-dom` will not match 9pt table geometry. Markdown line counts (`page-lines.ts`) are the wrong unit.
+Playwright loads each cheat sheet (`pageClass: cheat-sheet`, including Claritish) and prints with the pinned `@page` box (`page.pdf`, same paper and margins). `happy-dom` will not match 9pt table geometry. Markdown line counts (`page-lines.ts`) are the wrong unit.
 
 Split the sheet’s `.vp-doc` on `<PageBreak />` into slices (page 1 is before the first marker). Each slice is one intended sheet.
 
@@ -143,23 +143,22 @@ After this ships, “where does the next sheet start?” has two answers that th
 | Sheet | Status | Chromium pages | What's left |
 |-------|--------|----------------|-------------|
 | [Sounds and spelling](../grammar/cheat-sheets/sounds-spelling.md) | Packed | 3 | Leftover 43 / 219 / 353 px |
-| [Vowels](../grammar/cheat-sheets/vowels.md) | Open | 5 | Markers; tables `acts` and `order` taller than a page |
-| [Consonants](../grammar/cheat-sheets/consonants.md) | Packed | 4 | Lint default. Leftover 196 / 81 / 330 / 288 px |
-| [Word shape and clause](../grammar/cheat-sheets/word-shape-clause.md) | Open | 5 | Markers; split `packaging` |
-| [People and pointing](../grammar/cheat-sheets/people-pointing.md) | Open | 4 | Markers; table `collective` taller than a page |
-| [Talking](../grammar/cheat-sheets/talking.md) | Open | 5 | Markers; split `stacked`, `ask`, `several`, `answering` |
-| [Knowing and intending](../grammar/cheat-sheets/knowing-intending.md) | Open | 7 | Markers; several tables taller than a page (`holder`, `stance`, `intending`, `ability`) |
-| [Why and allowed](../grammar/cheat-sheets/why-allowed.md) | Open | 6 | Markers; split `fault`, `stance-vowels`, `thanks-sorry`, `motion`, `deontic` |
-| [Joins and hooks](../grammar/cheat-sheets/joins-hooks.md) | Open | 6 | Markers; one split table |
-| [Restrictors and spans](../grammar/cheat-sheets/restrictors-spans.md) | Open | 5 | Markers; four split tables |
-| [Linking clauses](../grammar/cheat-sheets/linking-clauses.md) | Open | 7 | Markers; eight split tables |
-| [Roles and comparing](../grammar/cheat-sheets/roles-comparing.md) | Open | 9 | Markers; ten split tables |
-| [Numbers](../grammar/cheat-sheets/numbers.md) | Open | 10 | Markers; many split tables; `end-stacked` taller than a page |
-| [Ageben → English](../grammar/cheat-sheets/to-english.md) | Open | 35 | Markers (generator must emit them for `compounds`); four split tables; `compounds` taller than a page |
-| [Exceptions](../grammar/cheat-sheets/exceptions.md) | Fits 1 | 1 | No marker needed. Leftover 412 px |
-| [Claritish](../grammar/claritish/cheat-sheet.md) | Marked | 2 | Sakes marker matches the PDF. Not packed as a leftover pass. Leftover 30 / 196 px |
+| [Vowels](../grammar/cheat-sheets/vowels.md) | Packed | 6 | Leftover 211 / 369 / 437 / 6 / 588 / 219 px |
+| [Consonants](../grammar/cheat-sheets/consonants.md) | Packed | 4 | Lint default. Exceptions folded in. Leftover 168 / 81 / 21 / 82 px |
+| [Word shape and clause](../grammar/cheat-sheets/word-shape-clause.md) | Packed | 5 | Leftover 268 / 335 / 33 / 55 / 106 px |
+| [People and pointing](../grammar/cheat-sheets/people-pointing.md) | Packed | 4 | Leftover 160 / 93 / 317 / 365 px |
+| [Talking](../grammar/cheat-sheets/talking.md) | Packed | 6 | Leftover 184 / 361 / 409 / 195 / 307 / 112 px |
+| [Knowing and intending](../grammar/cheat-sheets/knowing-intending.md) | Packed | 7 | Leftover 207 / 234 / 181 / 199 / 254 / 306 / 258 px |
+| [Why and allowed](../grammar/cheat-sheets/why-allowed.md) | Packed | 6 | Leftover 22 / 33 / 78 / 161 / 324 / 351 px |
+| [Joins and hooks](../grammar/cheat-sheets/joins-hooks.md) | Packed | 7 | Leftover 290 / 66 / 82 / 196 / 355 / 574 / 400 px |
+| [Restrictors and spans](../grammar/cheat-sheets/restrictors-spans.md) | Packed | 6 | Leftover 275 / 457 / 477 / 153 / 54 / 180 px |
+| [Linking clauses](../grammar/cheat-sheets/linking-clauses.md) | Packed | 7 | Leftover 21 / 120 / 189 / 75 / 167 / 167 / 24 px |
+| [Roles and comparing](../grammar/cheat-sheets/roles-comparing.md) | Packed | 10 | Heading stays with its table. Leftover 163 / 93 / 188 / 187 / 109 / 576 / 337 / 233 / 67 / 501 px |
+| [Numbers](../grammar/cheat-sheets/numbers.md) | Packed | 13 | Heading stays with its table. Leftover 123 / 292 / 322 / 317 / 383 / 129 / 272 / 295 / 43 / 507 / 485 / 279 / 528 px |
+| [Ageben → English](../grammar/cheat-sheets/to-english.md) | Packed | 12 | Overlay tables split with `skip=` / `take=`. Leftover 69 / 284 / 410 / 127 / 284 / 658 / 249 / 232 / 420 / 57 / 249 / 459 px |
+| [Claritish](../grammar/claritish/cheat-sheet.md) | Packed | 2 | Same arrangement as before; `<PageBreak />` before Sakes. Leftover 30 / 196 px |
 
-`--all` stays report-only until every Open row is Packed (or Fits 1 / Marked and then packed). Do not make `--all` the lint default while Open rows remain.
+Every grammar sheet in this table is Packed. Switching the lint default to `--all` is still a separate step.
 
 ## Open questions
 

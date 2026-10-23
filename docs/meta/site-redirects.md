@@ -91,7 +91,8 @@ Put **every retired public path** in `pageMoves`, not only the latest rename. To
 | `/grammar/why-agelan.html` | `/grammar/purpose.html` |
 | `/grammar/joins-hooks-cheatsheet.html` | `/grammar/cheat-sheets/joins-hooks.html` |
 | `/grammar/agazan-english-cheatsheet.html` | `/grammar/cheat-sheets/to-english.html` |
-| `/grammar/exceptions-cheatsheet.html` | `/grammar/cheat-sheets/exceptions.html` |
+| `/grammar/exceptions-cheatsheet.html` | `/grammar/cheat-sheets/consonants.html` |
+| `/grammar/cheat-sheets/exceptions.html` | `/grammar/cheat-sheets/consonants.html` |
 | `/grammar/why-agazan.html` | `/grammar/purpose.html` |
 | `/grammar/claritish/learn-agazan.html` | `/grammar/claritish/learn.html` |
 | `/grammar/cheat-sheets/agazan-english.html` | `/grammar/cheat-sheets/to-english.html` |

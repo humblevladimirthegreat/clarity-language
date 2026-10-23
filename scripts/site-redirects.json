@@ -62,8 +62,13 @@
     },
     {
       "from": "/grammar/exceptions-cheatsheet.html",
-      "to": "/grammar/cheat-sheets/exceptions.html",
-      "note": "Public URL after moving exceptions-cheatsheet.md into cheat-sheets/."
+      "to": "/grammar/cheat-sheets/consonants.html",
+      "note": "Public URL after moving exceptions-cheatsheet.md into cheat-sheets/, then folding Exceptions into consonants.md."
+    },
+    {
+      "from": "/grammar/cheat-sheets/exceptions.html",
+      "to": "/grammar/cheat-sheets/consonants.html",
+      "note": "Public URL after folding the Exceptions cheat sheet into consonants.md."
     },
     {
       "from": "/grammar/why-agazan.html",

@@ -7,7 +7,7 @@ outline: false
 
 # Restrictors and spans cheat sheet {#restrictors-spans-cheat-sheet}
 
-A quick look at [restrictors](/restrictors) and [spans](/spans) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [restrictors](/restrictors) and [spans](/spans). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## When a claim counts {#restrictors}
 
@@ -31,6 +31,8 @@ List the **occasions** (times or cases) in the adverb slot `/h/`, then end with 
 | [A habit, on an adjective](/restrictors#on-the-following-adjective-w) | `zalazun wual guzemel.` | *Alazun is always sleepy.* | B |
 
 Two manner adverbs in a row, with no restrictor, both describe the walk: `zazozon vowurol hadurom halozum.` *quickly and quietly* ([only when / never](/restrictors#only-when-never-hal)).
+
+<PageBreak />
 
 ### Which restrictor {#which}
 
@@ -58,6 +60,8 @@ The vowel picks the reading and the ending says how open the list is: **-l** clo
 
 With several occasions before `huol`, the last listed is the first choice.
 
+<PageBreak />
+
 ### Some member, unlisted {#unspecified}
 
 **-r** points at some time without saying which, so nothing needs to come before it.
@@ -81,6 +85,8 @@ With several occasions before `huol`, the last listed is the first choice.
 | [A whole clause as the occasion](/more-occasions#occasions-vs-a-dependent-when): `blarl` | `zahelan vozuyel thohem blarl zazozon vowurol.` | *Ahelan sings if Azozon walks.* | I |
 
 Use a restrictor when each occasion is a word; use `blarl` when the occasion is a full clause. To ask *when?*, see [When?](/fill-ask-jobs#when).
+
+<PageBreak />
 
 ## Setting a chunk apart {#spans}
 
@@ -125,6 +131,8 @@ A one-word name is an ordinary **-n** word (`donuren`), not a span.
 | [`/h/`](/spans#pos) | adverb | a loan adverb; an aside on the action | B |
 | [`/th/`](/spans#pos) | stance | an aside on the sentence | B |
 
+<PageBreak />
+
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Quote a sentence](/spans#exact-paraphrase-proper) | `zalazun d~[zazozon vozuyel] varuyol.` | *Alazun wrote something like “Azozon sings.”* | B |
@@ -160,6 +168,8 @@ A one-word name is an ordinary **-n** word (`donuren`), not a span.
 | [`d[…]`](/span-nesting#close-forms-complete-editorial-close-all) | close one span, whole | the matching closer | A |
 | [`d[…#]`](/span-nesting#close-forms-complete-editorial-close-all) | editorial: cut off or faulty | *trailing off* | A |
 | [`d[…\|]`](/span-nesting#close-forms-complete-editorial-close-all) | close all open spans | sweep everything | A |
+
+<PageBreak />
 
 ## Scope islands {#islands}
 

@@ -38,6 +38,15 @@ describe("pageIndexOf", () => {
     const pages = ["consonants cheat sheet role letters", "root-tail kinds a root's last consonant"];
     assert.equal(pageIndexOf(pages, "Root-tail kinds"), 1);
   });
+
+  it("prefers the page of a unique last row when the first row repeats", () => {
+    const pages = [
+      "hooks zexual blohehal everyone at the house",
+      "handy phrases ul barl since",
+      "hooked joins zexual blohehal everyone at the house hurxal never since then",
+    ];
+    assert.equal(pageIndexOf(pages, "zexual blohehal everyone at the house", 2), 2);
+  });
 });
 
 describe("findingsFor", () => {

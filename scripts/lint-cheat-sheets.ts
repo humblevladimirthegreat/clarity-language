@@ -47,7 +47,6 @@ const SHEETS: Record<string, string> = {
   numbers: "numbers.md",
   "joins-hooks": "joins-hooks.md",
   "to-english": "to-english.md",
-  exceptions: "exceptions.md",
 };
 
 const CLARITISH_SHEET = "cheat-sheet.md";

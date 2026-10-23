@@ -52,6 +52,8 @@ A sign applies once to the whole word; a label never takes one. In other slots t
 |-----|---------|---------|-------|
 | [Number as subject](/number-markers#parts-of-speech-on-numbers) | `zragel vezuvel.` | *Three are sleeping.* | I |
 
+<PageBreak />
+
 ### The ending {#ending}
 
 <!-- cheat-sheet: numbers -->
@@ -91,6 +93,8 @@ Digitless **-r** is not a resume: `grar` is *some number* in a statement and *wh
 
 Choose by digit count: two or more digits and every label or code in shorthand (`g+12`, `d_555,123,4567`); one digit or none spelled (`gragel`, `grodol`, `gramol`, `gral`). Number words side by side share one writing. A number built onto a root is always spelled and never takes `~`, `@`, or `=`.
 
+<PageBreak />
+
 ## Blanks and bands {#blanks}
 
 Drop every digit and the word says what kind of number, not its value. With **-r** it is the blank: *some number* in a statement, *which number?* in a question.
@@ -122,6 +126,8 @@ Drop every digit and the word says what kind of number, not its value. With **-r
 | [How fast?](/digitless-exponents#how-big) | `yel wrar hadurom zodozel veruvol.` | *How fast does the dog run?* | I |
 
 *Many*, *few*, *enough*, and *too much* are [comparatives](/vague-amounts#vague-amounts), not number words. Do not confuse the blank on `/h/` with `har` *sometimes*.
+
+<PageBreak />
 
 ## Big and small {#big-small}
 
@@ -160,6 +166,8 @@ On a rank, each comma opens a place within the one before. A large ordinal is on
 
 In casual talk a stretch may set an ambient order of magnitude, so bare numbers are heard at that size until cancelled. Write `Ne0` to insist on ones ([ambient](/stacked-markers#ambient-magnitude)).
 
+<PageBreak />
+
 ## The number in another slot {#slots}
 
 The role letter picks the use; the marker still says amount, rank, or code. Only the markers and writing are listed here, because every row is the same shape: `v`, `h`, `y`, `x`, `w`, `th` + the number.
@@ -186,6 +194,8 @@ The role letter picks the use; the marker still says amount, rank, or code. Only
 | [Place on a scale](/number-markers#number-as-degree): `w#N` from 2; [see comparatives](/comparative-arity#place-on-a-scale) | `zazozon zol wrodol gelazem.` | *Azozon is the second biggest.* | I |
 
 `th+` / `th-` is *likely* / *unlikely* with no figure; `th_N` is *per source N*; `th#N` is *N-th hand* from 2. A factor goes on `/h/`, never `/w/`. Likelihood **-m** hedges (`th~+70`), **-n** names a level (`th@+95`), **-r** repeats it (`th=+70`).
+
+<PageBreak />
 
 ## Numbers in use {#applied}
 
@@ -234,6 +244,8 @@ A digit string under `/h/` with no relation word before it. Clock is `h_…`; a 
 
 Digitless `hrel` is *some clock or date*; `hrer` asks *when?* *Three times* (`hragel`) is not a clock time.
 
+<PageBreak />
+
 ### Units {#units}
 
 Put the amount on the unit's noun as `/ɡ/`. Each unit is the abstract **-m** of a published root. Say the word, never `m` or `kg`.
@@ -275,6 +287,8 @@ Put the amount on the unit's noun as `/ɡ/`. Each unit is the abstract **-m** of
 
 Quantities themselves (*heavy*, *duration*) are ordinary roots, not units.
 
+<PageBreak />
+
 ### Ranges {#ranges}
 
 Write both ends with the hook `al`: `A al B`. It reads as *through* when both ends are the same kind of number with digits. `ul` excludes the end after it.
@@ -315,6 +329,8 @@ Ranks take `growal` (last) and `growul` (first) as ends: `zrodol al zrowal` is *
 | [`z+13 an z+19`](/initials#named-ranges) | a named band | *the teens* | A |
 | [`zragel ar zrazal`](/initials#named-ranges) | some value in the band | *some value from 3 to 5* | A |
 | [`zragel ur zrazal`](/initials#named-ranges) | some value, 5 left out | *some value from 3 up to 5* | A |
+
+<PageBreak />
 
 ### Percent, parts, and kin {#parts}
 
@@ -365,6 +381,8 @@ A digitless exponent (**`e`** speech `wa`, **`e-`** speech `wu`, no digits after
 
 The same form on each slot: `gruwul` the amount, `xruwul` *just before that:*, `thruwul` *virtually*, `vruwul` *nudge down*, `hruwul` *almost*, `yruwul` *so close!* **-l** measures the margin (`hrawul` over by a hair, `hruwul` under); **-m** reports the felt effort (`hrawum` *managed it, just*; `hruwum` *tried hard and didn't quite*).
 
+<PageBreak />
+
 ### Zero and hyperbole {#zero-hyperbole}
 
 Mantissa **`0`** with a digitless exponent is a strong zero. A nonzero mantissa with a digitless exponent is a joke size.
@@ -389,6 +407,8 @@ Mantissa **`0`** with a digitless exponent is a strong zero. A nonzero mantissa 
 | [`g-1e`](/special-values#hyperbole) | *minus one gazillion* | A |
 
 Plain zero is `g+0` and the bare band at 10⁻¹ is `g+e-1`. `gramol` is plain zero, `gramowal` absolute zero, `grawamol` the ones band. A gazillionth is `g#1e` (late) and `g#1e-` (early): finite jokes. Other slots: `y+e` *To infinity!*, `y#e` *Finally!*, `y#0e` *Disqualified!*, `v+e` *increase without bound*, `v+0e` *annihilate*, `h+1e` *a gazillion times*, and on stance `th+e` *certain*, `th+0e` *no chance at all*.
+
+<PageBreak />
 
 ## From the end, stacked, and generations {#end-stacked}
 
@@ -422,6 +442,8 @@ Two marker vowels in one word: speak `u` first.
 
 Those four are the whole set.
 
+<PageBreak />
+
 ### Generations and kin {#generations}
 
 On a rank, an exponent with digits is a generation, not a power of ten: `eK` goes K deeper, `e-K` K up. The mantissa picks the member of that cohort.
@@ -454,6 +476,8 @@ On a family tree, put the anchor person in a `bl-` word right after the number.
 | [Aunt or uncle](/initials#kin-generations) | `zalazun growamol bleyel g#1e-1 blazozon vowurol.` | *Alazun, Azozon's aunt or uncle, walks.* (a sibling of the first of Azozon's parents) | A |
 
 Only kin make generations: friends and bosses are [social relations](/social-ties#social-relations).
+
+<PageBreak />
 
 ## Don't mix up {#dont-mix-up}
 

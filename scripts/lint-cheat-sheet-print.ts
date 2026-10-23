@@ -212,7 +212,7 @@ const COLLECT_DOM = `(() => {
       prev = prev.previousElementSibling;
     }
     return {
-      firstRow: textOf(rows[0] || table),
+      firstRow: textOf(rows[1] || rows[0] || table),
       lastRow: textOf(rows[rows.length - 1] || table),
       heading,
       heightPx: table.getBoundingClientRect().height,

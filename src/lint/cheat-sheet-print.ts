@@ -74,23 +74,32 @@ export function pageStartsWith(pageText: string, needle: string): boolean {
   return at <= Math.max(4, Math.floor(page.length * 0.12));
 }
 
-/** 0-based page index that contains `needle`, or null. Prefers a unique hit. */
-export function pageIndexOf(pages: readonly string[], needle: string): number | null {
+function hitsFor(pages: readonly string[], needle: string): number[] {
   const key = prefix(needle, 32);
-  if (key.length < 8) return null;
+  if (key.length < 8) return [];
   const hits: number[] = [];
   for (let i = 0; i < pages.length; i++) {
     if (fingerprint(pages[i]!).includes(key)) hits.push(i);
   }
+  if (hits.length > 0) return hits;
+  const short = prefix(needle, 16);
+  if (short.length < 8) return [];
+  const shortHits: number[] = [];
+  for (let i = 0; i < pages.length; i++) {
+    if (fingerprint(pages[i]!).includes(short)) shortHits.push(i);
+  }
+  return shortHits;
+}
+
+/** 0-based page index that contains `needle`, or null. Prefers a unique hit. */
+export function pageIndexOf(pages: readonly string[], needle: string, prefer?: number | null): number | null {
+  const hits = hitsFor(pages, needle);
+  if (hits.length === 0) return null;
   if (hits.length === 1) return hits[0]!;
-  if (hits.length === 0) {
-    const short = prefix(needle, 16);
-    if (short.length < 8) return null;
-    const shortHits: number[] = [];
-    for (let i = 0; i < pages.length; i++) {
-      if (fingerprint(pages[i]!).includes(short)) shortHits.push(i);
-    }
-    return shortHits.length === 1 ? shortHits[0]! : null;
+  if (prefer != null) {
+    if (hits.includes(prefer)) return prefer;
+    const before = hits.filter((h) => h <= prefer);
+    if (before.length > 0) return before[before.length - 1]!;
   }
   return hits[0]!;
 }
@@ -150,8 +159,8 @@ export function findingsFor(sheet: SheetLayout): Finding[] {
 
   const seenTable = new Set<string>();
   for (const table of sheet.tables) {
-    const first = pageIndexOf(pages, table.firstRow);
     const last = pageIndexOf(pages, table.lastRow);
+    const first = pageIndexOf(pages, table.firstRow, last);
     if (first != null && last != null && first !== last) {
       const key = `${first}:${last}:${table.firstRow}`;
       if (seenTable.has(key)) continue;

@@ -1,5 +1,5 @@
 ---
-pageClass: claritish-cheat-sheet
+pageClass: cheat-sheet
 outline: false
 ---
 

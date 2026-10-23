@@ -40,6 +40,8 @@ Write a thing letter (`/z/` `/d/` `/b/`), **`w`**, a scope vowel, a part consona
 
 A role compound has one part consonant, right after its scope vowel. Its stem is an event or a state (`zwuzonumul` *someone who is angry*); `zwuzuwen` is not a word.
 
+<PageBreak />
+
 ### Content of the event {#content}
 
 A part consonant can name a quality of the event, not a person in it. Pointers drop the stem.
@@ -87,6 +89,8 @@ Bare arrow words are compass headings. With mid-word **`th`** and a facing perso
 | [**`oduhol`**](/viewpoint#gravity) | toward the pull, shared frame | *down* | I |
 | [**`evuhol`**](/viewpoint#gravity) | the vertical axis | *up–down axis* | I |
 
+<PageBreak />
+
 <!-- cheat-sheet: roles-comparing -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
@@ -128,6 +132,8 @@ The anchor can be `uwe` *speaker*, `awa` *listener*, a name, or a role pointer o
 | [Left of a landmark](/viewpoint#viewpoint-vs-landmark) | `zanal gewuhothazozon bledalol.` | *The book is left of the tree, from Azozon's view.* | I |
 | [Behind](/viewpoint#landmark-facing) | `zodozel vehohel gazuhothel blohehal.` | *The dog sits behind the house.* | I |
 
+<PageBreak />
+
 ## Reading mid-word `x` {#x}
 
 After the role letter, look at both sides of the **first** **`x`**. A role word is not one of these: it opens with **`w`**, a scope vowel, and a part consonant (`zwuzeduyol`, `zwuzer`).
@@ -164,6 +170,8 @@ A dictionary compound joins its two roots with the left root's ending (**-l** ev
 | [`zoyahehal`](/root-tails#tail-suffixes) | *bedroom* (*bed* + a place tail) | A |
 
 More pieces: keep English order in one word, last root the kind (`zogudaxedudaxowulan` *Coffee-Tea-Water*, one named shop).
+
+<PageBreak />
 
 ### Conversation length {#conversation-length}
 
@@ -206,6 +214,8 @@ Write the names, then the rank join, then the shared adjective on `/ɡ/`. **`e`*
 | [No more … than](/comparative-arity#comparative-arity): deny with `zul` | `zalazun zazozon zol gamahum zul.` | *Alazun is no more challenging than Azozon.* | I |
 | [Second biggest](/comparative-arity#place-on-a-scale): ordinal in `/w/` | `zazozon zol wrodol gelazem.` | *Azozon is the second biggest.* | I |
 
+<PageBreak />
+
 ### How many names {#arity}
 
 <!-- cheat-sheet: roles-comparing -->
@@ -226,6 +236,8 @@ Write the names, then the rank join, then the shared adjective on `/ɡ/`. **`e`*
 | [`zazozon zuol gamahum`](/comparative-arity#comparative-arity) | *Azozon is the least challenging (of all)* | I |
 | [`zor gamahum`](/comparative-arity#comparative-arity) | *whatever ranks highest on challenging* | I |
 | [`zazozon zalazun zor gamahum`](/comparative-arity#comparative-arity) | *whichever of Azozon or Alazun ranks higher* | I |
+
+<PageBreak />
 
 ### Other scales {#scales}
 
@@ -248,6 +260,8 @@ Keep the rank join; change what the shared word is.
 | [Half as](/comparative-arity#factor): inverse `hrudol` | `zalazun zazozon zoel gelazem hrudol.` | *Alazun is half as big as Azozon.* | I |
 
 *Three times bigger* is `zoel` with `hragel`, not `zol`. The covarying joins state only that the two go together, not which causes the other.
+
+<PageBreak />
 
 ## Than a stance {#bars}
 
@@ -277,6 +291,8 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [More than allowed](/stance-bars#stance-bars) | `zedudal hwuval zol gral.` | *There is more tea than the rules allow.* | A |
 | [Than hoped](/stance-bars#stance-bars) | `zanal thuwuyom zol gagebem.` | *The book is clearer than I hoped.* | A |
 | [Than feared](/stance-bars#stance-bars) | `zanal thewemum zuol gagebem.` | *The book is even less clear than I feared.* | A |
+
+<PageBreak />
 
 ### Every bar {#every-bar}
 
@@ -320,6 +336,8 @@ English *many* and *often* rank against an unstated baseline. Ageben names the b
 |-----|---------|---------|-------|
 | [Many cats](/vague-amounts#vague-amounts) | `zogozelx thubom zol gral.` | *There are many cats.* | I |
 | [Often](/vague-amounts#vague-amounts) | `zazozon thubom zol hral vowurol.` | *Azozon often walks.* | I |
+
+<PageBreak />
 
 ## Don't mix up {#dont-mix-up}
 

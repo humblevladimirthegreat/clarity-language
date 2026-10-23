@@ -187,7 +187,7 @@ When a needed head is missing, add it before writing its compounds, since moving
 2. `synsets <word>` lists WordNet noun senses; `candidates <synset> [--depth N --max-rank N]` lists hyponyms by frequency and hides covered senses.
 3. `check <word>…` reports exact hits on a root, alias, compound or overlay gloss. For near matches use `find-english --kind root` and `lexicon-search`.
 4. Write a draft CSV with the header `english,left,join,head,abstract,mnemonic`. The mnemonic opens *"<left> specifying <head> is …"*. `draft <file>` prints each stem, the validator's errors and extra warnings.
-5. `draft <file> --write` appends the rows, only when no row has an error. `compound-fill` drafts two-root rows only; write a tail-suffix row by hand. Then run `npm run check-compounds`, `npm test`, and `npm run cheat-sheet-blocks -- --write`.
+5. `draft <file> --write` appends the rows, only when no row has an error. `compound-fill` drafts two-root rows only; write a tail-suffix row by hand. Then run `npm run check-compounds` and `npm test`.
 
 `check-compounds` rejects a stem that is not left + boundary + head, a bad boundary letter, a 3 + join + 3 stem (which would read as five letters + a suffix), a tail suffix that is not a legal kind + job or sits on a three-letter left, an unpublished or non-content root, a stem that is already a root or splits into published roots more than one way, the same root on both sides, a gloss that is already a published or compound sense, and a missing gloss or mnemonic. It does not catch an ending-plus-stem form that also reads as an overlay plus a root; the morph-gloss lint in `npm test` does. If a stem splits two ways, pick a different left root; never respell a root to make the split unique.
 

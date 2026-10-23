@@ -7,7 +7,7 @@ outline: false
 
 # Talking cheat sheet {#talking-cheat-sheet}
 
-A quick look at [speech moves](/speech-moves), [questions](/questions), and [fill-ask roles](/fill-ask-roles) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [speech moves](/speech-moves), [questions](/questions), and [fill-ask roles](/fill-ask-roles). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## Starting a turn {#turns}
 
@@ -44,6 +44,8 @@ The vowel picks the act: **a** statement, **o** command, **e** question, **u** p
 | [Urgent command](/speech-acts#doubled-act) | `yol yol` | *Do it. Now.* | I |
 | [Insistent plea](/speech-acts#doubled-act) | `yom yom` | *please, please…* | I |
 
+<PageBreak />
+
 ### Stacked act words {#stacked}
 
 The [first act word](/speech-acts#stacked-acts) is what you really do, the second how it sounds. The body takes the first word's order.
@@ -65,6 +67,8 @@ The [first act word](/speech-acts#stacked-acts) is what you really do, the secon
 | [Rule for now](/speech-acts#stacked-acts) | `yor yal` | *For now, everyone stays inside.* | I |
 | [Soft norm](/speech-acts#stacked-acts) | `yum yal` | *We'd rather people didn't…* | I |
 | [Firm *no* that sounds like *not yet*](/speech-acts#stacked-acts) | `yul yur` | *Let's hold off for now.* (never) | I |
+
+<PageBreak />
 
 ## Tone marks {#tone-marks}
 
@@ -97,6 +101,8 @@ A stance word says in words how you are speaking, where a tone mark only changes
 |--------|---------|-------|
 | [`thagebem`](/speech-acts#speech-manner) | *to be clear* / *to put it plainly* | I |
 | [`thavewom`](/speech-acts#speech-manner) | *frankly* / *honestly* | I |
+
+<PageBreak />
 
 ## Asking {#asking}
 
@@ -139,6 +145,8 @@ The reply to a fill-ask is the fill as a [citation](/word-endings#citation-forms
 | [`hovam blar`](/fill-ask-jobs#why) | *what for?* | B |
 | [`thohem blar`](/fill-ask-jobs#why) | *under what condition?* | B |
 
+<PageBreak />
+
 ### Fill-ask by vowel and count {#arity}
 
 The blank **-r** takes a vowel; the count is how many items you listed before it ([fill-ask arity](/fill-ask-roles#fill-ask-arity)).
@@ -171,6 +179,8 @@ The blank **-r** takes a vowel; the count is how many items you listed before it
 | [Quiz](/polar-inventory#quiz): `yel` before `yal`, you know the answer | `yel yal ? zar vabuvul dubogal.` | *So who punched the box?* | I |
 | [Question demanded as an order](/polar-inventory#stacked-questions) | `yel yol` | *Tell me where you were.* | I |
 | [Question that hopes for *no*](/polar-inventory#stacked-questions) | `yel yul ? zawan vudurul.` | *You're not leaving, are you?* | I |
+
+<PageBreak />
 
 ## Answering {#answering}
 

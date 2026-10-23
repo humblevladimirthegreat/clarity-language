@@ -189,8 +189,8 @@
 /* Cheat sheets: print on as few pages as possible, without site chrome. */
 @media print {
   /* Dark theme variables would print light text on unprinted (white) cells. */
-  html:has(:is(.claritish-cheat-sheet, .cheat-sheet)),
-  html:has(:is(.claritish-cheat-sheet, .cheat-sheet)) body {
+  html:has(.cheat-sheet),
+  html:has(.cheat-sheet) body {
     color-scheme: light !important;
     background: #fff !important;
     color: #111 !important;
@@ -217,7 +217,7 @@
     display: none !important;
   }
 
-  :is(.claritish-cheat-sheet, .cheat-sheet) {
+  .cheat-sheet {
     --vp-c-bg: #fff;
     --vp-c-bg-alt: #fff;
     --vp-c-bg-elv: #fff;
@@ -250,92 +250,92 @@
     border: 0;
   }
 
-  :is(.claritish-cheat-sheet, .cheat-sheet) .VPNav,
-  :is(.claritish-cheat-sheet, .cheat-sheet) .VPLocalNav,
-  :is(.claritish-cheat-sheet, .cheat-sheet) .VPSidebar,
-  :is(.claritish-cheat-sheet, .cheat-sheet) .VPDocAside,
-  :is(.claritish-cheat-sheet, .cheat-sheet) .aside,
-  :is(.claritish-cheat-sheet, .cheat-sheet) .VPDocFooter,
-  :is(.claritish-cheat-sheet, .cheat-sheet) .VPFooter,
-  :is(.claritish-cheat-sheet, .cheat-sheet) .header-anchor {
+  .cheat-sheet .VPNav,
+  .cheat-sheet .VPLocalNav,
+  .cheat-sheet .VPSidebar,
+  .cheat-sheet .VPDocAside,
+  .cheat-sheet .aside,
+  .cheat-sheet .VPDocFooter,
+  .cheat-sheet .VPFooter,
+  .cheat-sheet .header-anchor {
     display: none !important;
   }
 
-  :is(.claritish-cheat-sheet, .cheat-sheet) .VPContent,
-  :is(.claritish-cheat-sheet, .cheat-sheet) .VPDoc,
-  :is(.claritish-cheat-sheet, .cheat-sheet) .VPDoc .container,
-  :is(.claritish-cheat-sheet, .cheat-sheet) .VPDoc .content,
-  :is(.claritish-cheat-sheet, .cheat-sheet) .VPDoc .content-container {
+  .cheat-sheet .VPContent,
+  .cheat-sheet .VPDoc,
+  .cheat-sheet .VPDoc .container,
+  .cheat-sheet .VPDoc .content,
+  .cheat-sheet .VPDoc .content-container {
     max-width: none !important;
     margin: 0 !important;
     padding: 0 !important;
   }
 
-  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc {
+  .cheat-sheet .vp-doc {
     font-size: 9pt;
     line-height: 1.3;
   }
 
-  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc h1 {
+  .cheat-sheet .vp-doc h1 {
     font-size: 14pt;
     margin: 0 0 4pt;
   }
 
-  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc h2 {
+  .cheat-sheet .vp-doc h2 {
     font-size: 11pt;
     margin: 8pt 0 2pt;
     padding-top: 0;
     border-top: 0;
   }
 
-  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc h3 {
+  .cheat-sheet .vp-doc h3 {
     font-size: 10pt;
     margin: 6pt 0 2pt;
   }
 
-  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc p {
+  .cheat-sheet .vp-doc p {
     margin: 2pt 0;
   }
 
-  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc pre {
+  .cheat-sheet .vp-doc pre {
     margin: 2pt 0;
     padding: 4pt 6pt;
   }
 
-  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc table {
+  .cheat-sheet .vp-doc table {
     margin: 2pt 0;
     break-inside: avoid;
     background: #fff !important;
     color: #111 !important;
   }
 
-  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc tr,
-  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc tr:nth-child(2n) {
+  .cheat-sheet .vp-doc tr,
+  .cheat-sheet .vp-doc tr:nth-child(2n) {
     background: #fff !important;
   }
 
-  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc th,
-  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc td {
+  .cheat-sheet .vp-doc th,
+  .cheat-sheet .vp-doc td {
     padding: 1pt 5pt;
     background: #fff !important;
     color: #111 !important;
     border-color: #999 !important;
   }
 
-  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc :is(h1, h2, h3, p, li, em, strong, a, code, pre, span) {
+  .cheat-sheet .vp-doc :is(h1, h2, h3, p, li, em, strong, a, code, pre, span) {
     color: #111 !important;
     -webkit-text-fill-color: #111 !important;
   }
 
-  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc :is(code, pre),
-  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc a > code {
+  .cheat-sheet .vp-doc :is(code, pre),
+  .cheat-sheet .vp-doc a > code {
     background: #fff !important;
     color: #111 !important;
     -webkit-text-fill-color: #111 !important;
     border-color: #ccc;
   }
 
-  :is(.claritish-cheat-sheet, .cheat-sheet) .vp-doc a {
+  .cheat-sheet .vp-doc a {
     color: #111 !important;
     -webkit-text-fill-color: #111 !important;
     text-decoration: none;

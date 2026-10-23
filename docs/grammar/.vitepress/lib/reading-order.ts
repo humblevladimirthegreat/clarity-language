@@ -144,7 +144,6 @@ export const cheatSheetSidebar: LessonLink[] = [
   { text: 'Roles and comparing', link: '/cheat-sheets/roles-comparing' },
   { text: 'Numbers', link: '/cheat-sheets/numbers' },
   { text: 'Ageben → English', link: '/cheat-sheets/to-english' },
-  { text: 'Exceptions', link: '/cheat-sheets/exceptions' },
 ]
 
 function withReview(lessons: readonly LessonLink[], review: LessonLink): LessonLink[] {

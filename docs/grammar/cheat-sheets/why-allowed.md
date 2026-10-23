@@ -7,7 +7,7 @@ outline: false
 
 # Why and allowed cheat sheet {#why-allowed-cheat-sheet}
 
-A quick look at [causation](/causation), [sakes](/sakes), and [feelings and permission](/feelings-permission) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [causation](/causation), [sakes](/sakes), and [feelings and permission](/feelings-permission) . Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## Because, if, only if {#poles}
 
@@ -46,6 +46,8 @@ The ending on the because pole says whether anyone did wrong.
 | [`thahul`](/fault#fault) | the reason broke a norm | *it's their fault* / *to blame* | I |
 | [`thahum`](/fault#fault) | the reason made it happen; no fault claimed | *because* | I |
 | [`thahur`](/fault#fault) | one share among others | *partly because* | I |
+
+<PageBreak />
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -101,6 +103,8 @@ A sake is a kind of payoff. A sake word is a sake root, mid-word `th`, a stance 
 
 The scale runs **-l** most settled, **-m** the default, **-r** most passing. When unsure, use **-m**.
 
+<PageBreak />
+
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Serves, on a noun](/sakes#met) | `zohehal guwatham.` | *My house serves competence.* | B |
@@ -146,6 +150,8 @@ Your feeling about the whole claim, on `/th/` with **-m**. It is never the subje
 | [`tholezem`](/feelings-permission#speaker-attitude) | it went well by chance | *luckily* | I |
 | [`thewemum`](/feelings-permission#speaker-attitude) | it concerns you | *worryingly* | I |
 
+<PageBreak />
+
 ## Feelings {#feelings}
 
 An [emotion](/feelings-permission#emotion-compose) is built on one word: the sake word, a **locus**, then a **motion ending**. Example: `wuwathur` + `ao` + **-r** is `wuwathuraer`.
@@ -182,12 +188,6 @@ Motion is how the feeling moves, not how strong it is. For strength, put a [degr
 | [`zozowum wawethumual goyom`](/feelings-permission#emotion-compose) | *given up over the division* | I |
 | [`zobewom guwathamar`](/feelings-permission#emotion-compose) | *proud of the draft* | I |
 | [`zonal wawethumom goyom blazozon`](/feelings-permission#emotion-compose) | *upset for Azozon about the memo* | I |
-| [`zezuyol wawethumum goyom blalazun`](/feelings-permission#emotion-compose) | *avoiding Alazun over the dialogue* | I |
-| [`zezuyol wawethumaom goyom blalazun`](/feelings-permission#emotion-compose) | *placating Alazun about the dialogue* | I |
-| [`zonal wawethumoem goyom blazozon`](/feelings-permission#emotion-compose) | *upset, turning to Azozon for comfort* | I |
-| [`zonal wawethumuor goyom`](/feelings-permission#emotion-compose) | *objecting to the memo* | I |
-| [`zezuyol wurothumal goyom`](/feelings-permission#emotion-compose) | *the dialogue feels pointless* | I |
-| [`zobewom gewathamam`](/feelings-permission#emotion-compose) | *glad my draft helped* | I |
 | [`zezuyol wamezem wuwathuruem goyom`](/feelings-permission#emotion-compose) | *a little uneasy, and I can't say why* | I |
 | [`zezuyol wuwathumuor guzezam`](/feelings-permission#emotion-compose) | *the dialogue is frustratingly slow* | I |
 
@@ -196,7 +196,8 @@ Motion is how the feeling moves, not how strong it is. For strength, put a [degr
 | [A feeling with no object](/feelings-permission#feeling-no-object) | `thuwathuruer.` | *I'm anxious.* | I |
 | [Name its cause](/feelings-permission#feeling-no-object) | `thuwathuruer thahum blerulal.` | *I'm anxious, and the rain caused it.* | I |
 | [A feeling about an event](/feelings-permission#feeling-no-object) | `zalazun vowurol thawethamar` | *moved that Alazun walks* | I |
-| [Naming it plainly](/feelings-permission#emotion-compose) | `zuwen gonumul` | *I am angry* | I |
+
+<PageBreak />
 
 ## Allowed and required {#deontic}
 
@@ -218,6 +219,8 @@ A [say word](/feelings-permission#say-words) on `/h/`: **`h`** **`w`**, a scope 
 | [Promise to someone else](/feelings-permission#say-scope): pair scope **`o`** | `zuwen vowurol hwezal blahelan.` | *I promise Ahelan I'll walk.* | I |
 | [Check in](/feelings-permission#consent) | `yem zuwen vezuyol bawan hwubam.` | *Are you still OK with me telling you?* | I |
 | [Contrary to a stance](/feelings-permission#say-scope): `uom` first | `zazozon vowurol uom hwuvul.` | *Azozon walks anyway.* | I |
+
+<PageBreak />
 
 | Answer | [**`v`** someone over the act](/feelings-permission#permission) | [**`z`** the doer](/feelings-permission#consent) | [**`d`** the one it's done to](/feelings-permission#consent) | [**`b`** the recipient](/feelings-permission#consent) | Stage |
 |--------|-------------------|------------------|------------------------------|-----------------------|-------|

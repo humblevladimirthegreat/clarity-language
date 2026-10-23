@@ -250,7 +250,7 @@ function draft(path: string, write: boolean, lexicon: Lexicon, json: boolean): n
   writeFileSync(compoundsPath, serializeCompoundCsv(next));
   console.error(
     `\nAppended ${results.length} row(s) to data/lexicon-compounds.csv. ` +
-      "Next: npm run check-compounds, npm test, npm run cheat-sheet-blocks -- --write.",
+      "Next: npm run check-compounds, npm test.",
   );
   return 0;
 }

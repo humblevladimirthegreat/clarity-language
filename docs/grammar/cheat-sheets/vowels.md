@@ -29,6 +29,8 @@ The letter order **a o e u** has two sibling **scales**: size is amount (biggest
 | [Digit](/numbers#counts) | order | next unused vowel | `ba` `za` `na` | `do` `vo` `mo` | `ge` `re` | `hu` `lu` | B |
 | [Finger code](/finger-code#counting) (vowel hand) | order | pinky-first count | 1 (pinky) | 2 | 3 | 4 | B |
 
+<PageBreak />
+
 ### How the series hang {#vowel-tree}
 
 ```text
@@ -54,15 +56,23 @@ four vowels
 │           ├── number markers
 │           ├── join-act / join-relation
 │           ├── root job — what the root does to stuff / tail suffixes
-│           ├── hook — how much of A is still in the slot
-│           │     ├── same-role
-│           │     ├── discourse glue
-│           │     ├── hook resume
-│           │     ├── hook prefix / hooked join
-│           │     ├── ranges
-│           │     └── place hook (same spelling; landmark as hook job)
-│           │           ├── stacked place hook (writes hook, reads as join stacks)
-│           │           └── feeling loci
+│           └── hook — how much of A is still in the slot
+│                 ├── same-role
+│                 ├── discourse glue
+│                 ├── hook resume
+│                 ├── hook prefix / hooked join
+│                 ├── ranges
+│                 └── place hook (same spelling; landmark as hook job)
+│                       ├── stacked place hook (writes hook, reads as join stacks)
+│                       └── feeling loci
+```
+
+<PageBreak />
+
+```text
+four vowels
+├── size — how much stuff
+│     └── join — how much list is left
 │           └── act — what you do to the discourse list
 │                 ├── speech act
 │                 ├── stand-in
@@ -89,6 +99,8 @@ A say word is scope then act (`hwuvom`: this-act **u**, require **o**). A role p
 | `o` | between your hand and you | A |
 | `e` | no bigger than your hand | A |
 | `u` | nothing you could measure | A |
+
+<PageBreak />
 
 | Job | **a** | **o** | **e** | **u** | Stage |
 |-----|-------|-------|-------|-------|-------|
@@ -129,6 +141,8 @@ Two vowels keep the same pieces: **u** first inverts, the rest combine. Join sta
 | **oe** | [tie](/rank-joins#rank-joins) | I |
 | **ue** | [*anything but*](/rank-joins#invert-u-stacks) | I |
 
+<PageBreak />
+
 ### Act words {#acts}
 
 Stand-ins and say-word answers use the same vowels as the [act words](/speech-moves#speech-act-beginner): leftover-list work on claims.
@@ -151,6 +165,8 @@ Polar answers stack two of these vowels. Beginner *yes* / *no* / *sure*: [polar 
 | **ue** | `yuel` *not that* | I |
 | **ua** | `yual` *doesn't apply* | I |
 | **oe** | `yoel` *I won't answer* | I |
+
+<PageBreak />
 
 ## Extra nouns {#place}
 

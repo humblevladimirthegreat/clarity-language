@@ -7,7 +7,7 @@ outline: false
 
 # Linking clauses cheat sheet {#linking-clauses-cheat-sheet}
 
-A quick look at [dependents](/dependents) and [relations](/relations) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [dependents](/dependents) and [relations](/relations). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## A sentence that fills a slot {#dependents}
 
@@ -50,15 +50,17 @@ Drop the inner `/z/` only after `dorl` / `dorm` or `durl` / `durm` filling `/d/`
 | [**`dorth`**](/sentence-linkers#stand-in-back) | the last instruction | *that (instruction)* | I |
 | [**`durth`**](/sentence-linkers#stand-in-back) | the last *not* / *lest* content | *not* (*I hope not*) | I |
 
+<PageBreak />
+
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Say so](/sentence-linkers#stand-in-back) | `zalazun vehohel. zazozon vezuyol darth.` | *Alazun sits. Azozon says so.* | I |
 
-Other role letters work the same way: `blarth` after a pole (*because of that*), `zarth` as the subject. There is no stand-in on `/ɡ/`, `/h/`, `/w/`, or `/th/`.
+Other role letters work the same: `blarth` after a pole, `zarth` as the subject. No stand-in on `/ɡ/`, `/h/`, `/w/`, or `/th/`.
 
 ### Verbs and subjects that take a sentence {#stand-in-roles}
 
-**-rn** (or **-n** after two vowels) makes a fixed word for the kind of content. On `/v/` these verbs take the next sentence as their content.
+**-rn** (or **-n** after two vowels) is a fixed word for that kind of content. On `/v/` the next sentence is the content.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Takes | English | Stage |
@@ -79,6 +81,21 @@ Other role letters work the same way: `blarth` after a pole (*because of that*),
 | [Decline](/stand-in-roles#stand-in-roles) | `zazozon vuen zazozon vehohel.` | *Azozon declines to sit.* | A |
 | [It is … that](/stand-in-roles#stand-in-roles) | `gamahum zarl zazozon vowurol.` | *It is hard for Azozon to walk.* | A |
 | [Nested](/stand-in-roles#nested-dependents) | `zazozon guzemel thahum blarl zalazun vowurol thahum blarl zahelan vezuvel.` | *Azozon is sleepy because Alazun walks because Ahelan sleeps.* (Ahelan's sleep is why Alazun walks) | A |
+
+### Times with a noun {#time-nouns}
+
+Put an event or period in a `bl-` word after the time pole. *Until*: lasts up to the endpoint; *by*: done at the endpoint or sooner. On a noun, swap `/h/` for `/ɡ/`.
+
+| Job | Example | English | Stage |
+|-----|---------|---------|-------|
+| [During](/dependents#time-poles) | `zazozon vowurol herom blanulul.` | *Azozon walks during the thunderstorm.* | B |
+| [After](/dependents#time-poles) | `zazozon vehohel halam blanulul.` | *Azozon sits after the thunderstorm.* | B |
+| [By](/dependents#by-deadline) | `zazozon vowurol huvahum blanulul.` | *Azozon walks by the time of the thunderstorm.* (done no later than that) | B |
+| [A noun in time](/sentence-linkers#time-pole-on-noun) | `zalazun dowurol galam blanulul vayebel.` | *Alazun sees the walk after the thunderstorm.* (*after the thunderstorm* says which walk) | I |
+
+On a noun: `gerom` *during*, `gabam` *before*, `galam` *after*, `garum` *until*, `guvahum` *by*. *Since* is [*from* on a time](/hooks#since).
+
+<PageBreak />
 
 ## Because, if, although {#poles}
 
@@ -111,18 +128,7 @@ A **pole** names the link and takes the stand-in `blarl` as its `/b/`. Keep the 
 | [So … that](/sentence-linkers#result-pole): the result happened | `zazozon welazem gadamul hahom blarl zazozor vezuvel.` | *Azozon is so tired that they sleep.* | I |
 | [As soon as](/dependents#time-poles) | `zazozon vowurol wadurom halam blarl zalazun vehohel.` | *Azozon walks as soon as Alazun sits.* | B |
 
-### Times with a noun {#time-nouns}
-
-Put an event or period in a `bl-` word right after the time pole. *Until* says this event lasts up to the endpoint; *by* says it is done at the endpoint or sooner. On a noun, swap `/h/` for `/ɡ/`.
-
-| Job | Example | English | Stage |
-|-----|---------|---------|-------|
-| [During](/dependents#time-poles) | `zazozon vowurol herom blanulul.` | *Azozon walks during the thunderstorm.* | B |
-| [After](/dependents#time-poles) | `zazozon vehohel halam blanulul.` | *Azozon sits after the thunderstorm.* | B |
-| [By](/dependents#by-deadline) | `zazozon vowurol huvahum blanulul.` | *Azozon walks by the time of the thunderstorm.* (done no later than that) | B |
-| [A noun in time](/sentence-linkers#time-pole-on-noun) | `zalazun dowurol galam blanulul vayebel.` | *Alazun sees the walk after the thunderstorm.* (*after the thunderstorm* says which walk) | I |
-
-On a noun the poles are `gerom` *during*, `gabam` *before*, `galam` *after*, `garum` *until*, and `guvahum` *by*. *Since* is [*from* on a time](/hooks#since).
+<PageBreak />
 
 ## Keep the same speech move going {#continue}
 
@@ -170,6 +176,8 @@ The relation word takes the other noun as a `bl-` word right after it. Use `/h/`
 | [**`heham` / `geham`**](/relations#exchange) | the other side of a swap | *in exchange for* | B |
 | [**`hanem` / `ganem`**](/relations#proxy) | authorized agency | *on behalf of* | B |
 
+<PageBreak />
+
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Like, on an event](/relations#like-resembles) | `zazozon hewem bladozal vowurol.` | *Azozon walks like a duck.* | B |
@@ -211,6 +219,8 @@ English *of* names how one noun sits toward another. The `/b/` is what comes aft
 | [**`hulom` / `gulom`**](/of-relations#of-relations) | the material | *made of* | I |
 | [**`haham` / `gaham`**](/of-relations#of-relations) | origin | *from* (origin) | I |
 | [**`hozowum` / `gozowum`**](/of-relations#of-relations) | a portion cut from a whole | *a piece of* / *a slice of* | I |
+
+<PageBreak />
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -255,6 +265,8 @@ Whose-now is speech-now unless you move it. `henam` claims the moment as real; `
 | [**`thenam`**](/as-of#stance-as-of) | stances as of a real now | *I thought / I felt (then)* | A |
 | [**`thunom`**](/as-of#stance-as-of) | stances as of a now you are not claiming | *I would think / I'd feel* | A |
 | [**`thenar` / `thunor`**](/as-of#stance-as-of) | resume that stance-now | *still as I saw it then* | A |
+
+<PageBreak />
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
