@@ -32,7 +32,7 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 >
 > "Uzozen walks from a station toward a train."
 
-> `zuzozen ul bahehal vowurel ol buyahel.`
+> `zuzozen ul bahehal vowurel el buyahel.`
 >
 > z-Uzozen | [from | b-house] | v-walk | [at | b-station]
 >
@@ -74,7 +74,7 @@ As a plain noun, `zedal` is *a sandwich*.
 
 <a id="across"></a>
 
-*Across* also needs a root. The hook **`uol`** *through* passes through the inside of the landmark (a crowd, a tunnel). **`hohem`** goes from one edge to the far edge (a street, a river). Put the landmark in a `bl-` word right after it. (cue: 🌉 *bridge*: a bridge spans the gap)
+*Across* also needs a root. The hook **`uel`** *through* passes through the inside of the landmark (a crowd, a tunnel). **`hohem`** goes from one edge to the far edge (a street, a river). Put the landmark in a `bl-` word right after it. (cue: 🌉 *bridge*: a bridge spans the gap)
 
 > `zuzozen vowurel hohem bluyahel.`
 >
@@ -92,7 +92,7 @@ On a noun it is **`gohem`**: *Uzozen, across the station, sits.* As a plain noun
 >
 > "Cats sit around a train."
 
-As a plain noun, `zeval` is *a carousel*. **`om`** *near* says only that the person or thing is close, not that it surrounds the landmark.
+As a plain noun, `zeval` is *a carousel*. **`em`** *near* says only that the person or thing is close, not that it surrounds the landmark.
 
 <!-- cheat-sheet: linking-clauses -->
 | Agebon | Use | English | Same root as | Cue |
@@ -165,7 +165,7 @@ After a join, `gobem` and `gaham` bound the set the join covers, as SHARED words
 
 **Compare with:**
 
-- Plain *Uzozen's*, with no particular tie, is the hook [`em`](/extra-noun-hooks#genitive) (`zudozol em buzozen`). Ownership is `gogunum` + `/b/` ([joins](rank-joins.md#scope-fence-p-join)). A need from [sakes](/sakes) on `/ɡ/` also says the thing is the speaker's.
+- Plain *Uzozen's*, with no particular tie, is the hook [`om`](/extra-noun-hooks#genitive) (`zudozol om buzozen`). Ownership is `gogunum` + `/b/` ([joins](rank-joins.md#scope-fence-p-join)). A need from [sakes](/sakes) on `/ɡ/` also says the thing is the speaker's.
 - Place *in* is the hook `al`; path *from* is the hook `ul` ([locative relations](#locative-relations)).
 - *A house like Uzozen’s* is [simile](/relations#similative) (`gewom`), not *made of*. *A book for a hammer* as a swap is [exchange](/relations#exchange) (`geham`).
 - `gobem` is a part that belongs to the thing's structure (a bone of the body); `gozowum` is a piece taken off it (a slice of bread).
@@ -225,7 +225,7 @@ z-Olazun | [h-exactly-like | bl-duck] | v-run
 **2.** *Ahelan walks from a house to a station.*
 
 ::: details Show answer
-`zahelan ul bahehal vowurel ol buyahel.`
+`zahelan ul bahehal vowurel el buyahel.`
 
 z-Ahelan | [from | b-house] | v-walk | [at | b-station]
 :::
@@ -256,7 +256,7 @@ z-Olazun | v-run | [h-across | bl-station]
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zahelan ual bedavel vowurel ol buyahel.`
+**1.** `zahelan ual bedavel vowurel el buyahel.`
 
 ::: details Show answer
 z-Ahelan | [out-of | b-train] | v-walk | [at | b-station]

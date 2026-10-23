@@ -78,9 +78,9 @@ Thanks for a thing you own: `g` for `th`, after the noun: *my coat* `gobathal`.
 
 ## [Feelings](feelings.md) {#feelings}
 
-`thuwathuraor` *can I measure up?* hanging over everything, in waves:
+`thuwathuraer` *can I measure up?* hanging over everything, in waves:
 
-| `thuwa` | `thu` | `r` | `ao` | `r` |
+| `thuwa` | `thu` | `r` | `ae` | `r` |
 |---------|-------|-----|------|-----|
 | competence | unmet | for now | over the room (locus) | surging (motion) |
 
@@ -88,11 +88,11 @@ Motion ending: **-l** still, **-m** flowing, **-r** surging.
 
 | Locus | Meaning | Locus | Meaning |
 |-------|---------|-------|---------|
-| `a` | mine, held inside | `ue` | pushing back |
-| `ao` | the atmosphere of the situation | `e` | felt on someone's behalf |
-| `uo` | can't place where it comes from | `u` | moving off: avoiding, hiding |
-| `o` | aimed at someone | `ua` | out of fight: giving up |
-| `oe` | turning to someone for comfort | `ae` | using yourself to placate |
+| `a` | mine, held inside | `uo` | pushing back |
+| `ae` | the atmosphere of the situation | `o` | felt on someone's behalf |
+| `ue` | can't place where it comes from | `u` | moving off: avoiding, hiding |
+| `e` | aimed at someone | `ua` | out of fight: giving up |
+| `oe` | turning to someone for comfort | `ao` | using yourself to placate |
 
 ## [Tone marks](tone-marks.md) {#tone-marks}
 

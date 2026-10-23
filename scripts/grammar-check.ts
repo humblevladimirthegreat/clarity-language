@@ -59,7 +59,7 @@ const lr1 = skipLr1 ? undefined : buildLr1(eliminateEmpty(bnf));
 const groups = lr1 ? groupConflicts(lr1) : [];
 if (lr1) console.log(`LR(1): ${lr1.states} states, ${lr1.conflicts.length} conflicts in ${groups.length} decisions (${Math.round(performance.now() - t0)} ms)\n`);
 for (const g of groups) {
-  console.log(`${g.kind} on ${[...g.lookaheads].sort().join(" ")}  (${g.states} states)`);
+  console.log(`${g.kind} en ${[...g.lookaheads].sort().join(" ")}  (${g.states} states)`);
   for (const p of g.reduces) console.log(`  reduce ${showProduction(p)}`);
   if (g.shiftIn.length) console.log(`  shift in ${g.shiftIn.join(", ")}`);
   console.log(`  e.g. ${g.example.prefix.join(" ")} • ${g.example.lookahead}`);
@@ -228,5 +228,5 @@ function compactReport(message: string): string {
   const m = /<([\d, ]+)> in <(\w+)> inside <(\w+)> Rule, <([^>]*)>/.exec(flat);
   if (!m) return flat;
   const alts = [...new Set(m[1]!.split(", "))].join(" ");
-  return `${m[3]}.${m[2]}  alts ${alts}  on ${m[4]!.split(", ").join(" ")}`;
+  return `${m[3]}.${m[2]}  alts ${alts}  en ${m[4]!.split(", ").join(" ")}`;
 }

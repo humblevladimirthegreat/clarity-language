@@ -95,7 +95,7 @@ Country names are spelled from the English sound (`azabanan` from *Japan*). The 
 
 A store, title, or handle can be several words. Put **-n** on the **hook**, **join**, or **span** that packages them. That ending names the whole phrase. Each inner word keeps its own ending: a kind stays **-l**, an abstract stays **-m**, a resume stays **-r**, and a person or place that is itself a name still takes **-n**.
 
-> `dududal on dugudal.`
+> `dududal en dugudal.`
 >
 > NAME[d-tea | instead | d-coffee]
 >
@@ -103,7 +103,7 @@ A store, title, or handle can be several words. Put **-n** on the **hook**, **jo
 
 | Package | Where **-n** sits | Inner words |
 |---------|-------------------|-------------|
-| hook | the hook (`on`, extra-noun **-n**, …) | sides keep **-l** / **-m** / **-r**, or **-n** if that side is a name |
+| hook | the hook (`en`, extra-noun **-n**, …) | sides keep **-l** / **-m** / **-r**, or **-n** if that side is a name |
 | join | the join (`zen`, …) | members keep their usual endings |
 | [span](/spans#when-required) | the fence (`@` / spoken **-n**) | interior tokens keep their usual endings |
 
@@ -129,7 +129,7 @@ The family name describes the given name, so the person is still one noun in one
 | `zaleln galowen` | [one of a name](#name-instance--ln) | *someone named Alen Alowen* |
 | `zaler` | [resume](/pronouns) | *Alen* (the same person) |
 
-Put the family name first, as an adjective before the noun, only when your culture names people family first. The same family name can describe the family itself (`zavayal galowen` *the Alowen family*), and what the family uses takes the ordinary *whose* hook: `dahehal em bavayal galowen` is *the Alowen family’s house*.
+Put the family name first, as an adjective before the noun, only when your culture names people family first. The same family name can describe the family itself (`zavayal galowen` *the Alowen family*), and what the family uses takes the ordinary *whose* hook: `dahehal om bavayal galowen` is *the Alowen family’s house*.
 
 A full name works as a [greeting](/word-endings#greeting) too: `alen galowen.` is Alen Alowen saying hello. A [call](/speech-moves#vocative) takes the family name the same way (`yalen galowen.` *Alen Alowen!*).
 

@@ -196,7 +196,7 @@ export const Factor = wordToken("Factor");
  * adverb or a noun of its own there.
  */
 export const HScale = wordToken("HScale");
-/** A `/th/` stance right after *contrary to* `uem`: the hook's frame, not a stance on the claim (prescription.md#contrary-to-stance). Set by `markContext`. */
+/** A `/th/` stance right after *contrary to* `uom`: the hook's frame, not a stance on the claim (prescription.md#contrary-to-stance). Set by `markContext`. */
 export const HFrame = wordToken("HFrame");
 /** WANT, PLAN or DECISION right after a holder frame: whose wish, plan or choice the event goes against, with how you know it (ability.md#whose-intention). Set by `markContext`. */
 export const HFrameHeld = wordToken("HFrameHeld");
@@ -236,7 +236,7 @@ export const Linker = wordToken("Linker");
 export const Hook = wordToken("Hook");
 /** A hook with no `/b/` word (or frame) right after it: at the front of a sentence, glue (hooks.md#discourse-hooks). */
 export const HookPlain = wordToken("HookPlain", [Hook]);
-/** A hook with a `/b/` word right after it (an extra noun, hooks.md#extra-noun), or `uem` with its frame. Set by `markContext`. */
+/** A hook with a `/b/` word right after it (an extra noun, hooks.md#extra-noun), or `uom` with its frame. Set by `markContext`. */
 export const HookHosting = wordToken("HookHosting", [Hook]);
 /**
  * A hook and its `/b/` right before a noun list's join word (or its bar), after a noun of that list's slot: it belongs
@@ -458,7 +458,7 @@ export function classifyTokenBranch(word: LexWord): { type: AgebonTokenType; bra
   const tag = family.kind === "tag" && word.ending === "l" && !word.plural && pos ? TAG_BY_POS[pos] : undefined;
   if (tag) return { type: tag, branch: "tagAssign" };
   if (pos === "g" && word.gl) return { type: GGl, branch: "content" };
-  // An intention adverb covers the whole clause like a `/th/` word: it can be a bar or a `uem` frame (clause.md#intention-adverbs).
+  // An intention adverb covers the whole clause like a `/th/` word: it can be a bar or a `uom` frame (clause.md#intention-adverbs).
   if (isClauseAdverb(word)) return { type: HTh, branch: "clauseAdverb" };
   if (pos && pos in CONTENT_BY_POS) {
     return { type: CONTENT_BY_POS[pos as keyof typeof CONTENT_BY_POS], branch: "content" };

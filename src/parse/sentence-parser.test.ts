@@ -101,10 +101,10 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("reads a sentence-initial hook with /b/ after it as an extra-noun hook", () => {
-    const utt = parseSentenceTokens(tokens("ol bahehal zuzozen vowurel.")).utterances[0]!;
+    const utt = parseSentenceTokens(tokens("el bahehal zuzozen vowurel.")).utterances[0]!;
     assert.equal(utt.left.hook, undefined);
     assert.equal(utt.bodies[0]!.clause.units[0]!.kind, "hook");
-    const vocative = parseSentenceTokens(tokens("yuzozen ol bahehal zolazun vowurel.")).utterances[0]!;
+    const vocative = parseSentenceTokens(tokens("yuzozen el bahehal zolazun vowurel.")).utterances[0]!;
     assert.equal(vocative.left.hook, undefined);
     assert.equal(parseSentenceTokens(tokens("al zuzozen vowurel.")).utterances[0]!.left.hook?.raw, "al");
   });
@@ -135,19 +135,19 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("puts a hook + /b/ before a join word on the item before it", () => {
-    const units = parseSentenceTokens(tokens("zuzozen zudozol em buzozer zal vowurel.")).utterances[0]!.bodies[0]!.clause.units;
+    const units = parseSentenceTokens(tokens("zuzozen zudozol om buzozer zal vowurel.")).utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units.length, 2);
     const np = units[0]!;
     const items = np.kind === "np" ? np.coord.parts[0]!.items : [];
     assert.equal(items.length, 2);
     const dog = items[1]!;
     const hook = dog.kind === "package" ? dog.package.adjs[0] : undefined;
-    assert.equal(hook?.word.raw, "em");
+    assert.equal(hook?.word.raw, "om");
     assert.equal(hook?.hosted?.bound.raw, "buzozer");
   });
 
   it("keeps a hook that is not right before a join word on the clause", () => {
-    const units = parseSentenceTokens(tokens("zudozol em buzozen zagozol zal vowurel.")).utterances[0]!.bodies[0]!.clause.units;
+    const units = parseSentenceTokens(tokens("zudozol om buzozen zagozol zal vowurel.")).utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units[1]!.kind, "hook");
   });
 

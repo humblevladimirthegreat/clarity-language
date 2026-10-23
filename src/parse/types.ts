@@ -98,7 +98,7 @@ export type MorphWordFamily =
       numberStem?: NumberStem;
       /** Numeric prefix: the `mx` seam, approximately that number (`zragemxezuyel`). */
       approx?: boolean;
-      /** Hook prefix: the extra-noun hook it spells, **-l** for the `x` seam, **-m** for `mx` (`uel`, `uem`; hook-compounds.md#hook-prefixes). */
+      /** Hook prefix: the extra-noun hook it spells, **-l** for the `x` seam, **-m** for `mx` (`uol`, `uom`; hook-compounds.md#hook-prefixes). */
       hook?: string;
       /** Hook prefix on a hook-compound citation (`guexowurelul`): the stem root's own ending and its fused hook. */
       stemHook?: { leftEnding: "l" | "m"; hook: string };
@@ -114,7 +114,7 @@ export type MorphWordFamily =
     }
   /**
    * Join word. `hook`: a hooked join's extra-noun hook, as its free form (`ol`, `om`, `or`): the hook bounds the
-   * join's set, and its landmark is the `bl-` word right after (`zoxual blahehal`, hooked-joins.md#hooked-joins).
+   * join's set, and its landmark is the `bl-` word right after (`zexual blahehal`, hooked-joins.md#hooked-joins).
    */
   | { kind: "joinMarker"; series: string; hook?: string }
   | {
@@ -389,7 +389,7 @@ export type Unit =
       job?: HookJob;
       /** Its `/b/` pair describes the noun or landmark on its left, not the clause. */
       onLeft?: true;
-      /** `uem` + a `/th/` stance: the opposing frame the event goes contrary to (prescription.md#contrary-to-stance). */
+      /** `uom` + a `/th/` stance: the opposing frame the event goes contrary to (prescription.md#contrary-to-stance). */
       frame?: HUnit;
       /** WANT, PLAN or DECISION after a holder frame: the holder's wish, plan or choice the event goes against (ability.md#whose-intention). */
       heldIntention?: LexWord;

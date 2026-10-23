@@ -220,23 +220,23 @@ A [holder](holder.md#holder) on a comparison bar names **whose expectation** you
 >
 > "Uzozen is sleepier than Olazun expected."
 
-### Channels after `uem` {#channel-frame}
+### Channels after `uom` {#channel-frame}
 
-English *contrary to what I was told* and *against my gut* say the event went against what a source led you to expect. Put the channel after the hook **`uem`** (*contrary to*), the same way as a ban or a plan ([contrary to a stance](prescription.md#contrary-to-stance)). The pair names what the event goes **against**; the channel then says nothing about how you know the claim.
+English *contrary to what I was told* and *against my gut* say the event went against what a source led you to expect. Put the channel after the hook **`uom`** (*contrary to*), the same way as a ban or a plan ([contrary to a stance](prescription.md#contrary-to-stance)). The pair names what the event goes **against**; the channel then says nothing about how you know the claim.
 
-> `zuzozen vowurel uem thebam.`
+> `zuzozen vowurel uom thebam.`
 >
 > z-Uzozen | v-walk | [contrary-to | th-REPORTED]
 >
 > "Uzozen walks, contrary to what I was told."
 
-> `zuzozen vowurel uem thabom.`
+> `zuzozen vowurel uom thabom.`
 >
 > z-Uzozen | v-walk | [contrary-to | th-INTUITION]
 >
 > "Uzozen walks, against my gut."
 
-| After **`uem`** | Goes against | English |
+| After **`uom`** | Goes against | English |
 |-----------------|--------------|---------|
 | LIVE `thugom` | how it looks | *contrary to appearances* |
 | MEMORY `thevum` | how you remember it | *contrary to what I remember* |
@@ -245,17 +245,17 @@ English *contrary to what I was told* and *against my gut* say the event went ag
 | REPORTED `thebam` | what was said or written | *contrary to what I was told* / *contrary to legend* |
 | INTUITION `thabom` | your gut expectation | *against my gut* |
 
-*Off schedule* goes against a plan: **`uem thagem`** ([contrary to a stance](prescription.md#contrary-to-stance)). MIRATIVE already says the claim ran against what you expected, so it does not follow **`uem`**. MAY, NOTIONAL, RESIDUE, and FORMER do not either: none of them is something the event could go against.
+*Off schedule* goes against a plan: **`uom thagem`** ([contrary to a stance](prescription.md#contrary-to-stance)). MIRATIVE already says the claim ran against what you expected, so it does not follow **`uom`**. MAY, NOTIONAL, RESIDUE, and FORMER do not either: none of them is something the event could go against.
 
-A [holder](holder.md#holder) on a channel after **`uem`** names **whose view** the event goes against. The seam covers only that pair: the event is still your claim.
+A [holder](holder.md#holder) on a channel after **`uom`** names **whose view** the event goes against. The seam covers only that pair: the event is still your claim.
 
-> `zuzozen vowurel uem thebamolazun.`
+> `zuzozen vowurel uom thebamolazun.`
 >
 > z-Uzozen | v-walk | [contrary-to | th-REPORTED-Olazun]
 >
 > "Uzozen walks, contrary to what I hear Olazun thinks."
 
-**Compare with:** `zuzozen themom vowurel.` says the walking surprised you. `zuzozen vowurel uem thabom.` says your gut expected otherwise, whether or not the news surprised you.
+**Compare with:** `zuzozen themom vowurel.` says the walking surprised you. `zuzozen vowurel uom thabom.` says your gut expected otherwise, whether or not the news surprised you.
 
 ### Practice {#intermediate-practice}
 
@@ -325,7 +325,7 @@ z-rabbit | th-NOTIONAL | v-walk
 **5.** *Ahelan sings, contrary to what I was told.*
 
 ::: details Show answer
-`zahelan vezuyol uem thebam.`
+`zahelan vezuyol uom thebam.`
 
 z-Ahelan | v-sing | [contrary-to | th-REPORTED]
 :::
@@ -348,7 +348,7 @@ z-Olazun | th-NOTIONAL | d-rabbit | v-see
 *Imagine Olazun seeing a rabbit.*
 :::
 
-**3.** `zuzozen vowurel uem thabom.`
+**3.** `zuzozen vowurel uom thabom.`
 
 ::: details Show answer
 z-Uzozen | v-walk | [contrary-to | th-INTUITION]

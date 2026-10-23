@@ -373,7 +373,7 @@ describe("resolve — topic (topic.md#topic)", () => {
 
   it("holds through as for and a join, and a return restores it after a side topic", () => {
     assert.deepEqual(topics("xuzozen zalon vowurel. hahugem blolazun zudozol varuvel. zalon vuhohol."), ["zalon→xuzozen", "zalon→xuzozen"]);
-    assert.deepEqual(topics("xuzozen zalon vowurel. xuvedam zudozol varuvel. or xuzozer zalon vuhohol."), ["zalon→xuzozen", "zalon→xuzozer"]);
+    assert.deepEqual(topics("xuzozen zalon vowurel. xuvedam zudozol varuvel. er xuzozer zalon vuhohol."), ["zalon→xuzozen", "zalon→xuzozer"]);
   });
 
   it("is cleared by next and by the way, and by a goodbye", () => {
@@ -525,13 +525,13 @@ describe("resolve — hooked-join point-back (hooked-joins.md#hooked-joins-point
   const landmarkOf = (text: string) => resolveOf(text).anaphors.find((bind) => bind.kind === "landmark")?.antecedent?.raw;
 
   it("takes the latest landmark: a hook's /b/, a hosted bl- word, or a hooked join's", () => {
-    assert.equal(landmarkOf("zuzozen vuhohol ol bahehal. zorxual vezuvol."), "bahehal");
-    assert.equal(landmarkOf("zuzozen vuhohol ol bahehal. zoxual bluzahal vezuvol. zarxar vowurel."), "bluzahal");
-    assert.equal(landmarkOf("zuzozen vowurel halam blenulul. zorxual vezuvol."), "blenulul");
+    assert.equal(landmarkOf("zuzozen vuhohol el bahehal. zerxual vezuvol."), "bahehal");
+    assert.equal(landmarkOf("zuzozen vuhohol el bahehal. zexual bluzahal vezuvol. zarxar vowurel."), "bluzahal");
+    assert.equal(landmarkOf("zuzozen vowurel halam blenulul. zerxual vezuvol."), "blenulul");
   });
 
   it("on /h/, takes only a time landmark", () => {
-    assert.equal(landmarkOf("zuzozen vowurel halam blenulul. zolazun vuhohol ol bahehal. zawan vebal hurxal."), "blenulul");
+    assert.equal(landmarkOf("zuzozen vowurel halam blenulul. zolazun vuhohol el bahehal. zawan vebal hurxal."), "blenulul");
     assert.equal(landmarkOf("zuzozen vowurel huxal blovulul. zawan vebal hurxal."), "blovulul");
   });
 });

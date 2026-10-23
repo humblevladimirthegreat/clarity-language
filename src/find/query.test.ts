@@ -85,7 +85,7 @@ describe("example words", () => {
     );
   });
   it("includes left-edge hooks", () => {
-    const { words } = sentence("or zuzozen vowurel.");
+    const { words } = sentence("er zuzozen vowurel.");
     assert.ok(matchesTerm(words[0]!, parseTerm("family=hook,ending=r")));
   });
   it("matches adjacent sequences only", () => {
@@ -138,7 +138,7 @@ describe("parse field keys", () => {
   });
 
   it("matches hook form on a prefix", () => {
-    assert.deepEqual(raws("guexavuvul.", "form=uel"), ["guexavuvul"]);
+    assert.deepEqual(raws("guoxavuvul.", "form=uol"), ["guoxavuvul"]);
   });
 
   it("treats writing and speech number markers as twins, not a digit re", () => {
@@ -205,9 +205,9 @@ describe("parse field keys", () => {
   });
 
   it("matches hooked-join form and a feeling locus", () => {
-    assert.deepEqual(raws("zoxual blahehal.", "family=joinMarker,form=ol"), ["zoxual"]);
-    const locus = { word: classify(parseWord("wuwathuraor"), tables), unit: "", position: 0 };
-    assert.ok(matchesTerm(locus, parseTerm("xFamily=sake,locus=ao")));
+    assert.deepEqual(raws("zexual blahehal.", "family=joinMarker,form=el"), ["zexual"]);
+    const locus = { word: classify(parseWord("wuwathuraer"), tables), unit: "", position: 0 };
+    assert.ok(matchesTerm(locus, parseTerm("xFamily=sake,locus=ae")));
   });
 });
 

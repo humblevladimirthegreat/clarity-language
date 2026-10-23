@@ -330,10 +330,10 @@ function enforceStandInRole(word: LexWord): void {
   if (["g", "h", "w", "th"].includes(word.pos ?? "")) throw new ConstructionError("standInRole", word.raw);
 }
 
-/** Stacked range hook **-r** (`oer` / `uar` / `uer`) is only a range member between same-role words (hooks.md § Ranges). Extra-noun `aor` / `aer` / `uor` point back. */
+/** Stacked range hook **-r** (`oer` / `uar` / `uor`) is only a range member between same-role words (hooks.md § Ranges). Extra-noun `aor` / `aer` / `uer` point back. */
 function enforceStackedHookR(word: LexWord, tokens: IToken[], i: number): void {
   if (word.family.kind !== "hook" || word.ending !== "r" || word.family.form.length < 3) return;
-  if (["ao", "ae", "uo"].includes(word.family.form.slice(0, -1))) return;
+  if (["ao", "ae", "ue"].includes(word.family.form.slice(0, -1))) return;
   let j = i - 1;
   while (tokenWord(tokens[j])?.pos === "w") j -= 1;
   const prev = tokenWord(tokens[j]);
@@ -341,11 +341,11 @@ function enforceStackedHookR(word: LexWord, tokens: IToken[], i: number): void {
   if (!prev?.pos || prev.pos !== next?.pos) throw new ConstructionError("stackedHookResume", word.raw);
 }
 
-/** Hook vowels with no reading in a placement: same-role `ao` / `ae` / `uo`, and discourse `oe` / `ua` / `uo` / `ue` (hooks.md). */
+/** Hook vowels with no reading in a placement: same-role `ao` / `ae`, and discourse `oe` / `ua` / `uo` / `ue` (hooks.md). */
 function enforceHookSlot(word: LexWord, job: HookJob | undefined): void {
   if (word.family.kind !== "hook") return;
   const vowels = word.family.form.slice(0, -1);
-  if (job === "clause" && (vowels === "ao" || vowels === "ae" || vowels === "uo")) throw new ConstructionError("hookSameRoleStack", word.raw);
+  if (job === "clause" && (vowels === "ao" || vowels === "ae" || vowels === "ue")) throw new ConstructionError("hookSameRoleStack", word.raw);
   if (job === "discourse" && word.ending === "r" && vowels.length > 1) throw new ConstructionError("hookDiscourseStack", word.raw);
   if (job === "discourse" && ["oe", "ua", "uo", "ue"].includes(vowels)) throw new ConstructionError("hookDiscourseStack", word.raw);
 }
@@ -669,12 +669,12 @@ function enforceBars(coord: NpCoord, tables: ClassifyTables): void {
   }
 }
 
-/** A placement locus (INTERNAL `a`, UNPLACED `uo`) has no landmark, so its feeling takes no hosted `/b/` (feelings-permission.md#emotion-compose). */
+/** A placement locus (INTERNAL `a`, UNPLACED `ue`) has no landmark, so its feeling takes no hosted `/b/` (feelings-permission.md#emotion-compose). */
 function enforceFeelingLandmark(words: LexWord[], hosted: Hosted | undefined): void {
   if (!hosted) return;
   for (const word of words) {
     const family = word.family;
-    if (family.kind === "x" && family.xFamily === "sake" && (family.locus === "a" || family.locus === "uo")) {
+    if (family.kind === "x" && family.xFamily === "sake" && (family.locus === "a" || family.locus === "ue")) {
       throw new ConstructionError("feelingLandmark", `${word.raw} ${hosted.bound.raw}`);
     }
   }
@@ -733,7 +733,7 @@ function enforceIntentionHost(unit: HUnit): void {
   throw new ConstructionError("intentionHost", `${unit.word.raw} ${bound.raw}`);
 }
 
-/** `uem` + a stance: the stance must say something the event can go against, and holds no stand-in (prescription.md#contrary-to-stance). */
+/** `uom` + a stance: the stance must say something the event can go against, and holds no stand-in (prescription.md#contrary-to-stance). */
 function enforceFrame(hook: LexWord, frame: HUnit, tables: ClassifyTables): void {
   if (!isFrameStance(frame.word, tables)) throw new ConstructionError("frameKind", `${hook.raw} ${frame.word.raw}`);
   enforceChannelSign(frame.word, frame.hosted);

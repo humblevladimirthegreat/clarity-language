@@ -15,7 +15,7 @@ Words made from an ordinary root and an ending (`zudozol` *a dog*) are not here:
 
 | Shape | Family | Example | Stage |
 |-------|--------|---------|-------|
-| vowel(s) + ending, no role letter | [hook](/hooks) | `al`, `ol` | B |
+| vowel(s) + ending, no role letter | [hook](/hooks) | `al`, `el` | B |
 | role letter + vowel(s) + ending, no root | [join](/joins) | `zal`, `vul` | B |
 | `y` + vowel + ending, no root | [speech act](/firm-soft#speech-act) | `yal` | B |
 | role letter + vowel + **-rn** | [stand-in word](/stand-in-roles#stand-in-roles) | `darn` *a statement* | I |

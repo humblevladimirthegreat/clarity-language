@@ -15,9 +15,9 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 >
 > "a challenging dog and a challenging cat."
 
-A hook belongs to one item the same way. Put the hook and its `/b/` right after that item, before the join word: **`em`** plus a resume gives *Uzozen and his dog*.
+A hook belongs to one item the same way. Put the hook and its `/b/` right after that item, before the join word: **`om`** plus a resume gives *Uzozen and his dog*.
 
-> `zuzozen zudozol em buzozer zal vowurel.`
+> `zuzozen zudozol om buzozer zal vowurel.`
 >
 > [z-Uzozen | [z-dog | [used-by | b-←Uzozen]] | z-and] | v-walk
 >

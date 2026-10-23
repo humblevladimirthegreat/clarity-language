@@ -60,25 +60,25 @@ The scope vowel does its usual work. Pair scope **`o`** takes its `bl-` party, a
 
 ### Places, tools, and times {#places-tools-times}
 
-A role compound names a participant: the doer, what the event acts on or makes, or the extra `/b/` party. A place, tool, or time is a landmark, brought in with an [extra-noun hook](/hooks#extra-noun) (`al bahehal` *in a house*, `ael banewul` *using a knife*), and it has no role compound. Name it with words you already have:
+A role compound names a participant: the doer, what the event acts on or makes, or the extra `/b/` party. A place, tool, or time is a landmark, brought in with an [extra-noun hook](/hooks#extra-noun) (`al bahehal` *in a house*, `aol banewul` *using a knife*), and it has no role compound. Name it with words you already have:
 
 | Job | Agebon | English |
 |-----|--------|---------|
 | a kind of tool, place, or time | an ordinary [compound](/compounds#two-roots-one-word) with a head root: `darayexuwal` (write + tool), `dezuvoxadurel` (sleep + time) | *a writing tool*, *bedtime* |
-| the landmark a clause named | resume its noun: after `ael banewul`, `danewur` | *that knife* |
-| that landmark as a place or means | the hook's own [pointer](discourse-hooks.md#hook-resume): `ar` *in there*, `or` *there*, `ur` *from there*, `aer` *with it* | *there*, *with it* |
+| the landmark a clause named | resume its noun: after `aol banewul`, `danewur` | *that knife* |
+| that landmark as a place or means | the hook's own [pointer](discourse-hooks.md#hook-resume): `ar` *in there*, `er` *there*, `ur` *from there*, `aer` *with it* | *there*, *with it* |
 | a landmark nobody named | two sentences: a place exists, and the event happened there | *wherever it happened* |
-| who pays, who it is for | the hook in a clause (`uel` *against*, `el` *for* plus `/b/`), then a resume | *the one it was stolen from* |
+| who pays, who it is for | the hook in a clause (`uol` *against*, `ol` *for* plus `/b/`), then a resume | *the one it was stolen from* |
 
-> `zuzozen vuguyel ael banewul. zahelan danewur vawebol.`
+> `zuzozen vuguyel aol banewul. zahelan danewur vawebol.`
 >
 > z-Uzozen | v-cook | [using | b-knife] . z-Ahelan | d-←knife | v-see
 >
 > "Uzozen cooks with a knife. Ahelan sees the knife."
 
-> `zuzozen vuguyel ael banewul. zahelan vuguyel aer.`
+> `zuzozen vuguyel aol banewul. zahelan vuguyel aer.`
 >
-> z-Uzozen | v-cook | [using | b-knife] . z-Ahelan | v-cook | with.it
+> z-Uzozen | v-cook | [using | b-knife] . z-Ahelan | v-cook | on.it
 >
 > "Uzozen cooks with a knife. Ahelan cooks with it too."
 
@@ -424,7 +424,7 @@ z-Ahelan | d-episode-manner-theft | v-see
 *Ahelan sees a way of stealing.*
 :::
 
-**5.** `zuzozen vavobel oel belahol. zolazun vazuvel or.`
+**5.** `zuzozen vavobel oel belahol. zolazun vazuvel er.`
 
 ::: details Show answer
 z-Uzozen | v-go | [toward | b-island] . z-Olazun | v-swim | there

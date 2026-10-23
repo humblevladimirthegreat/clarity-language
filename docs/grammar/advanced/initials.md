@@ -87,7 +87,7 @@ With **-r**, the hook stands in for one value you are not naming. Under a [quest
 >
 > "Uzozen sees some number of cats from 3 to 5."
 
-The [range hooks](/ending-grids#ranges) take **-r** the same way: `zragel uar zrazal` is *some value strictly between 3 and 5*, and `zragel uer zrazal` *some value outside 3–5*.
+The [range hooks](/ending-grids#ranges) take **-r** the same way: `zragel uar zrazal` is *some value strictly between 3 and 5*, and `zragel uor zrazal` *some value outside 3–5*.
 
 ### Ordinal generation: digitful exponent on **`#`** / **`#-`**
 <a id="ordinal-generation"></a>

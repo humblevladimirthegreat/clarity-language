@@ -20,7 +20,7 @@ describe("sameReading", () => {
   });
 
   it("matches a hook phrase or an adverb moved as a whole", () => {
-    assert.equal(sameReading("zuzozen vowurel ol bolazun.", "ol bolazun zuzozen vowurel.", tables), true);
+    assert.equal(sameReading("zuzozen vowurel el bolazun.", "el bolazun zuzozen vowurel.", tables), true);
     assert.equal(sameReading("zuzozen huhohol hawebol vowurel.", "huhohol zuzozen hawebol vowurel.", tables), true);
   });
 
@@ -38,8 +38,8 @@ describe("sameReading", () => {
   });
 
   it("does not match swapped hook sides or swapped hooks", () => {
-    assert.equal(sameReading("zuzozen ol zolazun vawebol.", "zolazun ol zuzozen vawebol.", tables), false);
-    assert.equal(sameReading("ul bolazun zuzozen el bahelan vowurel.", "el bolazun zuzozen ul bahelan vowurel.", tables), false);
+    assert.equal(sameReading("zuzozen el zolazun vawebol.", "zolazun el zuzozen vawebol.", tables), false);
+    assert.equal(sameReading("ul bolazun zuzozen ol bahelan vowurel.", "ol bolazun zuzozen ul bahelan vowurel.", tables), false);
   });
 
   it("does not match reordered /h/ words", () => {

@@ -123,8 +123,8 @@ The reply to a fill-ask is the fill as a [citation](/word-endings#citation-forms
 |----------|-------|---------|-------|
 | [What kind?](/fill-ask-jobs#what-kind) | `yel gar zudozol.` | *What is the dog like?* | B |
 | [When?](/fill-ask-jobs#when) | `yel har zahelan vowurel.` | *When does Ahelan walk?* | B |
-| [Where?](/fill-ask-jobs#where) | `yel ol bar zahelan vowurel.` | *Where does Ahelan walk?* | B |
-| [Whose?](/fill-ask-jobs#whose) | `yel zudozol em bar vowurel.` | *Whose dog walks?* | B |
+| [Where?](/fill-ask-jobs#where) | `yel el bar zahelan vowurel.` | *Where does Ahelan walk?* | B |
+| [Whose?](/fill-ask-jobs#whose) | `yel zudozol om bar vowurel.` | *Whose dog walks?* | B |
 | [How?](/fill-ask-jobs#how) | `yel hewom blar zuzozen vowurel.` | *How does Uzozen walk?* | B |
 | [Why?](/fill-ask-jobs#why) | `yel thahum blar zuzozen vowurel.` | *Why does Uzozen walk?* | B |
 | [What for?](/fill-ask-jobs#why) | `yel hovam blar zuzozen vowurel.` | *What does Uzozen walk for?* | B |
@@ -133,8 +133,8 @@ The reply to a fill-ask is the fill as a [citation](/word-endings#citation-forms
 | Blank | Means | Stage |
 |-------|-------|-------|
 | [`gar`](/fill-ask-jobs#what-kind) / `ger` / `gur` | *what is it like?* / *like anything?* / *what else is it like?* | B |
-| [`ol bar`](/fill-ask-jobs#where) / `al bar` / `ul bar` / `el bar` | *where (at)?* / *in what?* / *where from?* / *for what?* | B |
-| [`ol ber`](/fill-ask-jobs#where) / `ol bur` | *anywhere?* / *where else?* | B |
+| [`el bar`](/fill-ask-jobs#where) / `al bar` / `ul bar` / `ol bar` | *where (at)?* / *in what?* / *where from?* / *for what?* | B |
+| [`el ber`](/fill-ask-jobs#where) / `el bur` | *anywhere?* / *where else?* | B |
 | [`thahum blar`](/fill-ask-jobs#why) | *why?* | B |
 | [`hovam blar`](/fill-ask-jobs#why) | *what for?* | B |
 | [`thohom blar`](/fill-ask-jobs#why) | *under what condition?* | B |

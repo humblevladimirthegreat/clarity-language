@@ -214,7 +214,7 @@ Published strings share one phonological root, but **concrete**, **abstract**, a
 
 Same English label for `zuwom` and `zuwon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agebon line and from [word-endings.md](/word-endings). The gloss’s job is the **sense**, not a second orthography.
 
-**Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Agebon letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
+**Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Agebon letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `en` / …).
 
 **Special pronouns** ([pronouns.md](/pronouns)): `zuwon` / `zawan` / `zayan` / `zumon` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. The topic pronoun and the generic pronoun gloss in capitals on `/z/` `/d/` `/b/` and as a holder (`zalon` → `z-TOPIC`, `zeyon` → `z-ONE`, `theyemalon` → `th-CLUES-TOPIC`); on any other slot they are ordinary names. A topic word glosses as its noun (`xuzozen` → `x-Uzozen`, `xuzozer` → `x-←Uzozen`), and `hahugem` as `h-as-for`. **Stand-ins** (`darl` / `derl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
 
@@ -315,8 +315,8 @@ A morph line corresponds **one-to-one** with its Agebon. From the gloss alone yo
 - **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and a surface mark when a number word is not in its [preferred writing](/number-markers#writing-style-numeric-vs-spelled): `.spelled` on a spelled-out word that prefers shorthand (`grabadol` → `g-twelve.spelled`; `g+12` → `g-twelve`), `.short` on shorthand that prefers spelling — no digit or one digit (`g+3` → `g-three.short`; `gragel` → `g-three`; `g+` → `g-more-than-one.short`).
 - **Ordinals use digits** (`grodol` → `g-2nd`, `gruodol` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
 - **Role words** gloss the scope after **`w`**, then the part, then the stem, joined with `-`: `zwazuduyel` → `z-episode-agent-teach`, `gwezuduyel` → `g-role-agent-teach`, `hwezuduyel` → `h-role-agent-teach` (*as a teacher*), `dwabezuyel` → `d-episode-recipient-speech`, `dwahowurel` → `d-episode-manner-walk`. Scope takes the label-scope labels (`episode`, `role`, `pair`, `type`, and the stacked labels); the part is `agent` (**`z`**), `patient` (**`d`**), `recipient` (**`b`**), or a quality of the event: `manner` (**`h`**), `state` (**`g`**), `stance` (**`th`**), `extent` (**`w`**), `move` (**`y`**), `outcome` (**`x`**), `event` (**`v`**, pointers only). A stem compound keeps its `-x-` (`zwazudozoxowurel` → `z-episode-agent-dog-x-walk`), and ability follows the stem (`gwezuduyexal` → `g-role-agent-teach-able`).
-- **Hook prefixes** gloss the hook as its extra-noun label, then `-x-`, then the stem: `guexavuvul` → `g-against-x-fight`, `guemxewulel` → `g-contrary-to-x-wind` (the **`mx`** frame is the hook's **-m** label), `guexahehaxowurel` → `g-against-x-house-x-walk`. A hook-compound stem glosses as the fused verb (`guexowurelul` → `g-against-x-leave`), and label scope keeps its `-th-` hinge (`zuexavuvuthel` → `z-against-x-fight-th-role`).
-- **Hooked joins** gloss the hook's label from the [extra-noun grid](/extra-noun-hooks#extra-noun-intermediate) (the frame label on hook **-m**, the point-back label on hook **-r**), then `-x-`, then the join's label, with `.open` for join **-m**; the landmark rides in the bracket: `zoxual blahehal` → `[z-at-x-everything | bl-house]`, `zomxuam bluwon` → `[z-near-x-everything.open | bl-speaker]`, `dexar` under a question → `d-for-x-wh`, `zorxual` → `z-there-x-everything`, `daorxar` → `d-on.it-x-something`. On `/h/`, a point-back names a time: `hurxal` → `h-since.then-x-never` (`ar` `within.then`, `or` `at.then`).
+- **Hook prefixes** gloss the hook as its extra-noun label, then `-x-`, then the stem: `guoxavuvul` → `g-against-x-fight`, `guomxewulel` → `g-contrary-to-x-wind` (the **`mx`** frame is the hook's **-m** label), `guoxahehaxowurel` → `g-against-x-house-x-walk`. A hook-compound stem glosses as the fused verb (`guoxowurelul` → `g-against-x-leave`), and label scope keeps its `-th-` hinge (`zuoxavuvuthel` → `z-against-x-fight-th-role`).
+- **Hooked joins** gloss the hook's label from the [extra-noun grid](/extra-noun-hooks#extra-noun-intermediate) (the frame label on hook **-m**, the point-back label on hook **-r**), then `-x-`, then the join's label, with `.open` for join **-m**; the landmark rides in the bracket: `zexual blahehal` → `[z-at-x-everything | bl-house]`, `zemxuam bluwon` → `[z-near-x-everything.open | bl-speaker]`, `doxar` under a question → `d-for-x-wh`, `zerxual` → `z-there-x-everything`, `daorxar` → `d-on.it-x-something`. On `/h/`, a point-back names a time: `hurxal` → `h-since.then-x-never` (`ar` `within.then`, `er` `at.then`).
 - **Numeric prefixes** gloss the number body's kind label, then `-x-`, then the stem in the sense its ending picks: `zrawaxolamal` → `z-infinity-x-love`, `zruwuxahuyayol` → `z-quasi-x-friend`, `zragexezuyel` → `z-three-x-speech`, `drobaxebewem` → `d-1st-x-draft`. The **`mx`** seam adds `.about` to the number (`dragemxezuyel` → `d-three.about-x-speech`).
 - **Role-compound resumes** keep their scope and part: `dwazarayer` → `d-←episode-agent-write`, `dwadarayer` → `d-←episode-patient-write`. A bare `d-←write` would merge the doer, undergoer, and extra party of one event.
 - **Role pointers** gloss their scope, part, and pointer vowel, never the referent: `zwazar` → `z-←episode-agent.same`, `dwador` → `d-←episode-patient.other`, `dwazer` → `d-←episode-agent.self`, `zwazur` → `z-←episode-agent.unsaid`, `zwezar` → `z-←role-agent.same`, `dwahar` → `d-←episode-manner.same`, `dwavar` → `d-←episode-event.same`. **-l** adds `.new` and **-m** adds `.part` (`dwadal` → `d-←episode-patient.same.new`, `zwazam` → `z-←episode-agent.same.part`, `zwabom` → `z-←episode-recipient.other.part`, `zwazum` → `z-←episode-agent.unsaid.part`).
@@ -408,8 +408,8 @@ Gloss each piece by **family** ([compounds.md](/compounds)) — English only. Dr
 | Values stance on need | `thuwathom` | `th-competence-motive-any-term` |
 | Role compound | `zwazavuvul` | `z-episode-agent-fight` ([role words](#round-trip)) |
 | Capacity | `hwezuduyel` | `h-role-agent-teach` ([role words](#round-trip)) |
-| Hook prefix | `guexavuvul` / `guemxewulel` | `g-against-x-fight` / `g-contrary-to-x-wind` ([hook prefixes](#round-trip)) |
-| Hooked join | `zoxual blahehal` / `hurxal` | `[z-at-x-everything \| bl-house]` / `h-since.then-x-never` ([hooked joins](#round-trip)) |
+| Hook prefix | `guoxavuvul` / `guomxewulel` | `g-against-x-fight` / `g-contrary-to-x-wind` ([hook prefixes](#round-trip)) |
+| Hooked join | `zexual blahehal` / `hurxal` | `[z-at-x-everything \| bl-house]` / `h-since.then-x-never` ([hooked joins](#round-trip)) |
 | Numeric prefix | `zrawaxolamal` / `dragemxezuyel` | `z-infinity-x-love` / `d-three.about-x-speech` ([numeric prefixes](#round-trip)) |
 | Span | `th(hogowul)` | `th-ASIDE[h-quiet]` ([labeled bracket](#phrase-brackets)) |
 | Number / enumeration | `xrowul` | `x-starting-with` |
@@ -462,10 +462,10 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `zual` | `z-everything-but` |
 | `xan` | `x-and-then` |
 | `xuon` | `x-and-before-that` |
-| `ol` | `instead` |
+| `el` | `instead` |
 | `am` | `including.open` |
 | `al` | `additionally` (discourse) / `including` (in-clause closed) |
-| `el` | `rather` |
+| `ol` | `in.other.words` |
 | `ul` | `except` |
 | `hal` (listed) | `h-only-when` |
 | `hal` (bare) | `h-never` |

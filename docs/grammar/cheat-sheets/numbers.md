@@ -117,7 +117,7 @@ Drop every digit and the word says what kind of number, not its value. With **-r
 | [Some amount](/digitless-exponents#digitless) | `zuzozen drar vawebol.` | *Uzozen sees some number of them.* | I |
 | [How many?](/digitless-exponents#digitless) | `yel drar zuzozen vawebol.` | *How many does Uzozen see?* | I |
 | [How many cats?](/digitless-exponents#how-many) | `yel dagozolx grar zuzozen vawebol.` | *How many cats does Uzozen see?* | I |
-| [Which place?](/digitless-exponents#how-many) | `yel ol bror zolazun vuhohol.` | *Which place does Olazun sit in?* (first, second, and so on) | I |
+| [Which place?](/digitless-exponents#how-many) | `yel el bror zolazun vuhohol.` | *Which place does Olazun sit in?* (first, second, and so on) | I |
 | [How big?](/digitless-exponents#how-big): blank on `/w/` | `yel wrar gelazom zudozol.` | *How big is the dog?* | I |
 | [How fast?](/digitless-exponents#how-big) | `yel wrar hedurem zudozol varuvel.` | *How fast does the dog run?* | I |
 
@@ -288,7 +288,7 @@ Write both ends with the hook `al`: `A al B`. It reads as *through* when both en
 | [`zragel am zrazal`](/numbers-applied#ranges) | soft ends | *roughly 3 to 5* | I |
 | [`zragel um zrazal`](/numbers-applied#ranges) | soft exclusion | *3 up to about 5, not quite 5* | I |
 | [`zragel ual zrazal`](/numbers-applied#ranges) | both ends out | *strictly between 3 and 5* | I |
-| [`zragel uel zrazal`](/numbers-applied#ranges) | outside the band | *below 3 or above 5* | I |
+| [`zragel uol zrazal`](/numbers-applied#ranges) | outside the band | *below 3 or above 5* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|

@@ -61,8 +61,8 @@ A role pointer drops the stem. The pointer vowel picks the event by position: **
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Whoever did the latest thing](/roles#role-pointers-family) | `zwazar` | *they* | B |
-| [The landmark a clause named](/viewpoint#places-tools-times): resume its noun | `zuzozen vuguyel ael banewul. zahelan danewur vawebol.` | *Uzozen cooks with a knife. Ahelan sees the knife.* | I |
-| [That landmark as a means](/viewpoint#places-tools-times): the hook's pointer | `zuzozen vuguyel ael banewul. zahelan vuguyel aer.` | *Uzozen cooks with a knife. Ahelan cooks with it too.* | I |
+| [The landmark a clause named](/viewpoint#places-tools-times): resume its noun | `zuzozen vuguyel aol banewul. zahelan danewur vawebol.` | *Uzozen cooks with a knife. Ahelan sees the knife.* | I |
+| [That landmark as a means](/viewpoint#places-tools-times): the hook's pointer | `zuzozen vuguyel aol banewul. zahelan vuguyel aer.` | *Uzozen cooks with a knife. Ahelan cooks with it too.* | I |
 
 ## Left, right, up, down {#directions}
 
@@ -138,8 +138,8 @@ After the role letter, look at both sides of the **first** **`x`**. A role word 
 | [full root](/compound-families#families-by-shape) | full root | one ordinary compound | `zubedaxuyudal` *peanut butter*; `zalexalowen` (a hyphenated name) | B |
 | [name](/compound-families#conversation-length) | a single vowel, then **-n** | conversation length | *Uzozen, I have time* | I |
 | [longer root](/compound-families#families-by-shape) | a single vowel | [ability](/can-and-cant#ability) | *can't sing right now* | I |
-| [hook vowels](/hook-compounds#hook-prefixes), maybe **`m`** | a stem | hook prefix | `guexavuvul` *anti-fighting*; `gamxohalal` *mid-ocean* | A |
-| [hook vowels](/hooked-joins#hooked-joins), maybe **`m`** or **`r`** | a join: vowels and an ending | hooked join, landmark after it | `zoxual blahehal` *everyone at the house* | A |
+| [hook vowels](/hook-compounds#hook-prefixes), maybe **`m`** | a stem | hook prefix | `guoxavuvul` *anti-fighting*; `gamxohalal` *mid-ocean* | A |
+| [hook vowels](/hooked-joins#hooked-joins), maybe **`m`** or **`r`** | a join: vowels and an ending | hooked join, landmark after it | `zexual blahehal` *everyone at the house* | A |
 
 Mid-word **`th`** is another family: a sake root and a vowel (`guwathal`), any other root and a vowel ([label scope](/label-seams#label-scope)), or a direction root and a facing person (`gowuhethuzozen`). After a sake root, root-shaped letters are always the emotion tail.
 
@@ -334,7 +334,7 @@ English *many* and *often* rank against an unstated baseline. Agebon names the b
 | `hwezuduyel` *as a teacher* ([the role you act in](/viewpoint#capacity)) | | `hewom blwezuduyel` *like a teacher* ([a similative](/relations#similative)) |
 | `dwahowurel` *a way of walking* ([a quality of the event](/viewpoint#content-of-the-event)) | | `dwazowurel` *someone who walks* ([a participant](/roles#role-compounds)) |
 | `zwazuduyer` *the one teaching* ([this instance](/roles#role-compounds)) | | `gwazuduyel` *is one who teaches* ([a label](/roles#saying-someone-is-a-teacher)) |
-| `darayexuwal` *a writing tool* ([a compound](/viewpoint#places-tools-times)) | | `ael` *using* ([a hook on the clause](/hooks#extra-noun)) |
+| `darayexuwal` *a writing tool* ([a compound](/viewpoint#places-tools-times)) | | `aol` *using* ([a hook on the clause](/hooks#extra-noun)) |
 | `gowuhel` *west* ([compass](/viewpoint#endings-and-resume)) | | `gowuhethuzozen` *Uzozen's left* ([a face](/viewpoint#endings-and-resume)) |
 | `gowuhethuzozen bledalel` *left of the tree, from Uzozen's view* ([a facing person](/viewpoint#viewpoint-vs-landmark)) | | `gowuhethol blahehal` *on the house's left* ([the landmark's own front](/viewpoint#landmark-facing)) |
 | `zobahohal` *bedroom* ([a dictionary word](/compounds#lexical-compounds)) | | `zubedaxuyudal` *peanut butter* ([glued with `x`](/compounds#compound-vs-separate)) |

@@ -141,4 +141,4 @@ When you need a moment in the middle of speaking, English fills the gap with *um
 
 Do not hold `u`: in grammar words `u` usually means *undo* or *not*, so a held `u` can sound like a denial. A thinking vowel is held well past one beat, so it does not sound like a [letter name](/phonotactics#letter-names), which is short and followed by a pause.
 
-**Compare with:** a thinking sound only holds the gap. To fix a word you already said, use a hook: [`el`](/hooks#rather) for a better wording of the same thing, [`ol`](/hooks#instead) for the thing you meant instead.
+**Compare with:** a thinking sound only holds the gap. To fix a word you already said, use a hook: [`ol`](/hooks#rather) for a better wording of the same thing, [`el`](/hooks#instead) for the thing you meant instead.

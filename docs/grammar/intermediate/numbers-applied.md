@@ -143,9 +143,9 @@ A word after **B** describes **B** alone, and a word on the counted noun describ
 | `zragel am zrazal` | soft ends | *roughly 3 to 5* |
 | `zragel um zrazal` | soft exclusion | *3 up to about 5, not quite 5* |
 | `zragel ual zrazal` | both ends out | *strictly between 3 and 5* (`(3, 5)`) |
-| `zragel uel zrazal` | outside the band | *below 3 or above 5* |
+| `zragel uol zrazal` | outside the band | *below 3 or above 5* |
 
-**`ual`** and **`uel`** are the [range hooks](ending-grids.md#ranges), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zragel al zrazam` = *3 to about 5*).
+**`ual`** and **`uol`** are the [range hooks](ending-grids.md#ranges), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zragel al zrazam` = *3 to about 5*).
 
 **Compare with:** `zragel zrazal zaol` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zuzozen zolazun zol gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](of-relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
 
@@ -290,11 +290,11 @@ z-bottle-x | g-50yo
 *50% of the bottles.*
 :::
 
-**2.** `z+10 uel z+20.`
+**2.** `z+10 uol z+20.`
 
 ::: details Show answer
 
-🔊 `zrabamol uel zradomol.`
+🔊 `zrabamol uol zradomol.`
 
 z-ten | outside | z-20
 

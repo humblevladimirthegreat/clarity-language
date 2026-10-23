@@ -43,7 +43,7 @@ function roundTrip(agebon: string): string {
 describe("glossToAgebon", () => {
   it("rebuilds each spec example exactly", () => {
     for (const agebon of [
-      "dududal on dugudal.",
+      "dududal en dugudal.",
       "zudozol gorol bluzozen gubulel.",
       "glorol bluzozen zudozol gorol blolazun.",
       "zududal zugudal zel zerulal zal vowurel.",
@@ -64,7 +64,7 @@ describe("glossToAgebon", () => {
       "zagozolx gragel.",
       "zagozolx gragel.",
       "zuwonx vowurel.",
-      "zuzozen vuhuyel d[zuzozer vowurel]. dududal on dugudal.",
+      "zuzozen vuhuyel d[zuzozer vowurel]. dududal en dugudal.",
     ]) {
       assert.equal(canonical(roundTrip(agebon)), canonical(agebon), agebon);
     }
@@ -92,12 +92,12 @@ describe("glossToAgebon", () => {
   it("spells a hosted bl- word with no doc line to copy it from", () => {
     const bare = buildGlossIndex(tables);
     for (const agebon of [
-      "zoxual blehaval vezuvol.",
+      "zexual blehaval vezuvol.",
       "zuzozen vowurel halam blehaval.",
       "zudozol gaham blehaval vezuvol.",
       "zuzozen vowurel halam blolazun.",
       "yel hewom blar zuzozen vowurel.",
-      "zuzozen vuhohol ol bahehal. zoxual blahehar vezuvol.",
+      "zuzozen vuhohol el bahehal. zexual blahehar vezuvol.",
     ]) {
       assert.equal(canonical(glossToAgebon(morphGlossLine(agebon, tables), tables, bare)), canonical(agebon), agebon);
     }

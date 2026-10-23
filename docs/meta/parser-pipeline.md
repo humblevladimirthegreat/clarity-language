@@ -107,7 +107,7 @@ This is where join-act vs soft clause **-n**, mood vs manner, value vs ability, 
 
 Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause poles, locatives, means, similative *like*, exchange *for*, proxy *on behalf of*, of-relations, …) are **the published root** for that host (emoji / English literal) plus the overlay ending. When you **add** a closed overlay, pick an existing published row and spell that root plus ending (`ovu` + **-m** → **`ovum`**). Do **not** freeze a private spelling, do **not** coin a new lexicon word just to host the overlay, and do **not** put a productive stem (numeric derivation, role, values) in `sense_form`. If conversion reassigns *fishing*, witnessed **`thevom`** moves with **`evo`**. If conversion reassigns *attest*, live **`thodom`** moves with **`odo`**.
 
-**Exception:** join-act / join-relation sense-forms (`an` / `on` / `aon` / …) and other **vowel-series** morphology (join fences, restrictor cores) are keyed by **`a` / `o` / `e` / `u`**, not by a lexicon row — those spellings stay. Do **not** add a hosted overlay whose `sense_form` is a join stem (`uan`, `an`, …) unless it is this vowel-series family.
+**Exception:** join-act / join-relation sense-forms (`an` / `en` / `aen` / …) and other **vowel-series** morphology (join fences, restrictor cores) are keyed by **`a` / `o` / `e` / `u`**, not by a lexicon row — those spellings stay. Do **not** add a hosted overlay whose `sense_form` is a join stem (`uan`, `an`, …) unless it is this vowel-series family.
 
 ### Overlay kinds
 <a id="overlay-kinds"></a>
@@ -118,7 +118,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause pole
 |--------|--------------------|-----------|
 | `sake` | `sake` (on `x`+vowel hosts only) | eight sakes + unspecified; bare spelling is ordinary content |
 | `ability` | `ability` | hostless **`ubo`** |
-| `join_act` | `joinAct` | vowel-series `/v/` **`an`** / **`on`** / … |
+| `join_act` | `joinAct` | vowel-series `/v/` **`an`** / **`en`** / … |
 | `join_relation` | `joinRelation` | same stems on `/g/` `/h/` |
 | `evidential` | `mood` | LIVE / MEMORY / … |
 | `residue` | `mood` | RESIDUE **`amo`** |
@@ -154,7 +154,7 @@ Owns:
 
 - Utterance framing ([speech-moves.md](/speech-moves) — `/y/` turns, including a written `/y/` span at the left edge ([spans.md](/spans#y-spans)), omissible default assertoric; [dependents.md](/dependents) — `/x/` continue)
 - Right-close joins at phrase / VP / clause level (illegal left fence); a `/th/` stance word right before a rank join (`e` / `ue` / `oe`, **-l** / **-m**) is that fence's bar, an `NpItem` of kind `bar` ([comparatives.md](/comparative-arity#bars))
-- `uem` right before a `/th/` stance word holds that stance (with its hosted `/b/`) as the hook unit's `frame`, job `frame`, at the left edge too: the stance the event goes against, not a stance on the claim ([sakes.md](/prescription#contrary-to-stance)). Enforce checks the frame kind (`frameKind`)
+- `uom` right before a `/th/` stance word holds that stance (with its hosted `/b/`) as the hook unit's `frame`, job `frame`, at the left edge too: the stance the event goes against, not a stance on the claim ([sakes.md](/prescription#contrary-to-stance)). Enforce checks the frame kind (`frameKind`)
 - Adjunct islands **`{ … }`** (`IslandOpen` / `IslandClose` tokens); a mention marker before a topic span (`topicMarker`)
 - Complex `/ɡ|h/` + `/b/`; `/w/` + `/b/` only for *as-of* overlays; floating `/h/` as adjuncts
 - Matrix-final **stand-in** (`darl` / `barl`) + contiguous dependent

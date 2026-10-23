@@ -840,7 +840,7 @@ HookCompoundCite
 // ── Join markers ────────────────────────────────────────────────────────────
 
 // Hooked join: extra-noun hook vowel(s) + the hook's ending (`m` the frame, `r` point back; **-l** unwritten) + `x` +
-// join vowel(s) + join ending (`zoxual` *everyone at …*, `zomxuam`, `zorxarx`; hooks.md#hooked-joins). After the seam a
+// join vowel(s) + join ending (`zexual` *everyone at …*, `zemxuam`, `zerxarx`; hooks.md#hooked-joins). After the seam a
 // hook prefix has a root (vowel, consonant, vowel), and this has only vowels and an ending, so the two never meet.
 // The join's **-n** and stand-in codas have no reading here, nor `l` or `n` before the seam.
 hookedJoin

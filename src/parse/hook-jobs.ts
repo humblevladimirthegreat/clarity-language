@@ -6,11 +6,11 @@
  * - `discourse`: glues the sentence to prior talk (left edge, or right after a clause join).
  * - `clause`: an in-clause hook with no `/b/` of its own to describe, or one right after a recipient `/b/` (same-role).
  * - `extraNoun`: a hook + `/b/` that adds a landmark to the clause or to a hosted landmark.
- * - `genitive`: `em` + `/b/` that belongs to the noun on its left (used-by).
- * - `stray`: `em` + `/b/` with no noun on its left; enforce rejects it.
+ * - `genitive`: `om` + `/b/` that belongs to the noun on its left (used-by).
+ * - `stray`: `om` + `/b/` with no noun on its left; enforce rejects it.
  * - `span`: a hook between two same-kind endpoints.
  * - `resume`: a resume hook (`-r`) that points back.
- * - `frame`: `uem` + a `/th/` stance it holds as the opposing frame (prescription.md#contrary-to-stance).
+ * - `frame`: `uom` + a `/th/` stance it holds as the opposing frame (prescription.md#contrary-to-stance).
  */
 import { visitResult, visitUnit, vpUnitLists } from "./ast-walk.js";
 import { topicEffect } from "./linkers.js";
@@ -48,12 +48,12 @@ export function spanEndpointKind(word: LexWord | undefined): string | undefined 
 
 /**
  * Range hook (hooks.md § Ranges): `al` / `ul` between two same-kind number endpoints,
- * or a stacked `oe` / `ua` / `ue` hook between two same-role words.
+ * or a stacked `oe` / `ua` / `uo` hook between two same-role words.
  */
 export function isSpanHook(word: LexWord, prev: LexWord | undefined, next: LexWord | undefined): boolean {
   if (word.family.kind !== "hook" || !prev || !next || prev.pos !== next.pos) return false;
   const vowels = word.family.form.slice(0, -1);
-  if (vowels === "oe" || vowels === "ua" || vowels === "ue") return true;
+  if (vowels === "oe" || vowels === "ua" || vowels === "uo") return true;
   if (vowels !== "a" && vowels !== "u") return false;
   const kind = spanEndpointKind(prev);
   return kind !== undefined && kind === spanEndpointKind(next);
@@ -137,7 +137,7 @@ function hookJob(units: Unit[], index: number, afterJoin: boolean, afterTopic: b
   const nextIsB = isBNoun(units[index + 1]);
 
   let extraNoun = nextIsB && (prevWord?.pos !== "b" || (endsInLandmark(units, index - 1) && !isSpanHook(word, prevWord, nextWord)));
-  if (nextIsB && word.family.kind === "hook" && word.family.form === "em") {
+  if (nextIsB && word.family.kind === "hook" && word.family.form === "om") {
     const host = genitiveHost(units, index, afterTopic);
     if (host === "noun") return "genitive";
     // A bare `em bamegun` with nothing else is a citation of the form (*my*), like a lone join word.

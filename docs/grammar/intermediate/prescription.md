@@ -111,37 +111,37 @@ This holds on someone else's act too. `zuzozen vezuyel thawotham` is *Uzozen tal
 
 The `/b/` names whose **stake** it is, not who **owns** the noun. On `/ɡ/` the noun is still yours: `zewal gawothal blolazun` is *my gift, good for Olazun*. Someone else's thing is `gogunum` plus `/b/`, or **`goyem`**.
 
-**Compare with:** the *for* hook (`el bolazun`) names who the act is for without naming which sake.
+**Compare with:** the *for* hook (`ol bolazun`) names who the act is for without naming which sake.
 
-### Contrary to a stance (`uem`) {#contrary-to-stance}
+### Contrary to a stance (`uom`) {#contrary-to-stance}
 
-English *contrary to the plan* says that the event happens even though a plan says otherwise. Put the hook **`uem`** *contrary to* right before a `/th/` stance word or an [intention adverb](/clause#intention-adverbs). That word then says what the event goes against, and it no longer applies to the claim. `zuzozen vowurel thagem.` says you plan for Uzozen to walk; `zuzozen vowurel uem thagem.` says Uzozen walks anyway. (cue: **ue** ≈ undo aimed at; **-m** the opposing frame, which the stance spells out)
+English *contrary to the plan* says that the event happens even though a plan says otherwise. Put the hook **`uom`** *contrary to* right before a `/th/` stance word or an [intention adverb](/clause#intention-adverbs). That word then says what the event goes against, and it no longer applies to the claim. `zuzozen vowurel thagem.` says you plan for Uzozen to walk; `zuzozen vowurel uom thagem.` says Uzozen walks anyway. (cue: **ue** ≈ undo aimed at; **-m** the opposing frame, which the stance spells out)
 
-> `zuzozen vowurel uem thagem.`
+> `zuzozen vowurel uom thagem.`
 >
 > z-Uzozen | v-walk | [contrary-to | th-plan-itinerary]
 >
 > "Uzozen walks, contrary to my plan."
 
-The stance keeps its endings. A [plan](/intention#plan) after **`uem`** is your own, like any stance.
+The stance keeps its endings. A [plan](/intention#plan) after **`uom`** is your own, like any stance.
 
-Only the stance right after **`uem`** is what the event goes against. A stance anywhere else in the clause still applies to the claim:
+Only the stance right after **`uom`** is what the event goes against. A stance anywhere else in the clause still applies to the claim:
 
-> `zuzozen vowurel uem thagem thomam.`
+> `zuzozen vowurel uom thagem thomam.`
 >
 > z-Uzozen | v-walk | [contrary-to | th-plan-itinerary] | th-MAY
 >
 > "Uzozen may be walking, contrary to my plan."
 
-The word after **`uem`** has to say something the event can go against: a plan.
+The word after **`uom`** has to say something the event can go against: a plan.
 
-| After **`uem`** | English |
+| After **`uom`** | English |
 |-----------------|---------|
 | plan **`thager`** / **`thagem`** / **`thagel`** | *contrary to my plan* |
 
-Sake words cannot follow **`uem`**: to say an act goes against someone's interest, put an [unmet](/sakes#sake-changeability) sake word on the clause (`zuzozen vowurel thudathum blolazun.` *Uzozen's walking harms Olazun's interests*).
+Sake words cannot follow **`uom`**: to say an act goes against someone's interest, put an [unmet](/sakes#sake-changeability) sake word on the clause (`zuzozen vowurel thudathum blolazun.` *Uzozen's walking harms Olazun's interests*).
 
-**Compare with:** *despite the rain* is **`uem`** or **`hezom`** with a noun in `/b/` (`zuzozen vowurel uem berulal.`). *Although Olazun said no* as a full sentence is **`hezom blarl`** plus that sentence. The sentence after **`blarl`** needs an event or a thing, so a stance word alone cannot fill it; use **`uem`** with the stance instead.
+**Compare with:** *despite the rain* is **`uom`** or **`hezom`** with a noun in `/b/` (`zuzozen vowurel uom berulal.`). *Although Olazun said no* as a full sentence is **`hezom blarl`** plus that sentence. The sentence after **`blarl`** needs an event or a thing, so a stance word alone cannot fill it; use **`uom`** with the stance instead.
 
 ### Enough and too (sake bars) {#sake-bars}
 
@@ -287,7 +287,7 @@ z-candle | g-relatedness-motive-lasting
 *My candle is for relatedness in the long term.*
 :::
 
-**3.** `zolazun vezuvol uem thagem.`
+**3.** `zolazun vezuvol uom thagem.`
 
 ::: details Show answer
 z-Olazun | v-sleep | [contrary-to | th-plan-itinerary]

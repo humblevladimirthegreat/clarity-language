@@ -42,8 +42,8 @@ Polar answers stack two of these vowels. Beginner *yes* / *no* / *sure*: [polar 
 |-----|-------|-------|-------|-------|-------|
 | [Join](/joins#join-type-vowel-series) | *and* | rank: first matters most | pick one | *not* / *none of* | B |
 | [Same-role hook](/hooks#including) | [*including*](/hooks#including) | [*instead*](/hooks#instead) | [*or rather*](/hooks#rather) | [*except*](/hooks#except) | B |
-| [Discourse glue](/hooks#discourse-hooks) | `al` *Additionally* | `ol` *Instead* | `el` *In other words* | `ul` *Except* | B |
-| [Hook resume, front](/discourse-hooks#hook-resume) | `ar` *Going back to that* | `or` *Anyway* | `er` *As I said* | `ur` *Never mind that* | I |
+| [Discourse glue](/hooks#discourse-hooks) | `al` *Additionally* | `el` *Instead* | `ol` *In other words* | `ul` *Except* | B |
+| [Hook resume, front](/discourse-hooks#hook-resume) | `ar` *Going back to that* | `er` *Anyway* | `or` *As I said* | `ur` *Never mind that* | I |
 | [Number marker](/number-markers#marker-vowel-referential-identity) | `+` count | `#` ordinal | `_` digit string | `-` negative | I |
 | [Restrictor](/restrictors) | `hal` *only when* / *never* | `her` *anytime* | | `hur` *some other time*; `hual` *always* | B |
 | [Conversation length](/compound-families#conversation-length) | `SELFxan` open-ended | `SELFxon` one slot | `SELFxen` a few minutes | `SELFxun` passing | I |

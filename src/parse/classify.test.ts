@@ -45,7 +45,7 @@ function expectOverlay(text: string, kind?: string) {
 
 describe("classify", () => {
   it("emotion tail on a sake root; same shape on another root is a viewpoint lateral", () => {
-    const fused = classifyText("guwathamol");
+    const fused = classifyText("guwathamel");
     assert.equal(fused.family.kind === "x" && fused.family.xFamily, "sake");
     const lateral = classifyText("gewezethamol");
     assert.deepEqual(lateral.family, { kind: "x", xFamily: "lateral", leftRoots: ["eweze"], rightRoots: ["amo"] });

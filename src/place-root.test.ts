@@ -14,7 +14,7 @@ describe("placeRoot", () => {
   it("gives a name with no cluster the place tail", () => {
     assert.equal(placeRoot("JH AH0 P AE1 N"), "azabana");
     assert.equal(placeRoot("K AE1 N AH0 D AH0"), "aganadana");
-    assert.equal(placeRoot("P ER0 UW1"), "eberunu");
+    assert.equal(placeRoot("P ER0 UW1"), "oborunu");
   });
 
   it("glides between vowels and splits -l / -m + r", () => {

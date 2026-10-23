@@ -137,12 +137,12 @@ Source: [relations.md](/relations)
 
 Source: [hooks.md](/ending-grids#ranges), [sakes.md](/prescription#contrary-to-stance)
 
-- **open:** in-clause **`ao`** / **`ae`** / **`uo`** (`aol` / `ael` / `uol` and **-m** / **-n**) between same-role words. `aol` has two guesses (*for example*, from discourse `aol …`, or *namely*); `ael` *A, in fact B* (it escalates and keeps A, unlike `el`) is a fair fill but rarely needed; `uol` has no guess. The parser rejects them; extra-noun and discourse uses are unaffected.
+- **open:** in-clause **`ao`** / **`ae`** / **`ue`** (`ael` / `aol` / `uol` and **-m** / **-n**) between same-role words. `ael` has two guesses (*for example*, from discourse `ael …`, or *namely*); `aol` *A, in fact B* (it escalates and keeps A, unlike `ol`) is a fair fill but rarely needed; `uol` has no guess. The parser rejects them; extra-noun and discourse uses are unaffected.
 - **open:** stacked **-r** at the front of a sentence (`aor …`, `aer …`, `uor …`). Extra-noun point-back is assigned; as sentence glue they have no guess (*For example, anyway?* *In fact, as I said?*). Parser: `hookDiscourseStack`.
-- **open:** discourse **`oel`** / **`ual`** / **`uol`** / **`uel`** (and **-m** / **-n**) at the front of a sentence. *Toward*, *out of*, *through* and *against* give no guessable sentence-to-sentence glue (guesses range from *Alternatively* to *Apart from that*). The parser rejects them.
-- **open:** a hook + `barl` other than `ul` (`hookStandIn`). Most have no guess (*in that…*, *at that…*). *Contrary to* an event is `hezom blarl`, and no job has turned up for `uem barl`.
-- **open:** `uem` before a stance with no content an event can contradict (`frameKind`): a say word's *their call* (`hwavem`; it sets nothing), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Olazun's interest* is `thudathum blolazun`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
-- **closed (D-49):** `uem` before a say word's yes (`uem hwavam`, `uem hwadam`, `uem hwazal`) (`frameKind`).
+- **open:** discourse **`oel`** / **`ual`** / **`uel`** / **`uol`** (and **-m** / **-n**) at the front of a sentence. *Toward*, *out of*, *through* and *against* give no guessable sentence-to-sentence glue (guesses range from *Alternatively* to *Apart from that*). The parser rejects them.
+- **open:** a hook + `barl` other than `ul` (`hookStandIn`). Most have no guess (*in that…*, *at that…*). *Contrary to* an event is `hezom blarl`, and no job has turned up for `uom barl`.
+- **open:** `uom` before a stance with no content an event can contradict (`frameKind`): a say word's *their call* (`hwavem`; it sets nothing), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Olazun's interest* is `thudathum blolazun`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
+- **closed (D-49):** `uom` before a say word's yes (`uom hwavam`, `uom hwadam`, `uom hwazal`) (`frameKind`).
 
 ## Hook compounds
 
@@ -158,7 +158,7 @@ Source: [hooks.md](/hook-compounds#hook-prefixes)
 - **open:** **`n`** between hook vowels and the seam (`guenxavuvul`). It would need a job of the hook's **-n** inside a word. Parser: no word.
 - **closed ([hooked joins](design-decisions.md#hooked-joins)):** **`r`** between hook vowels and the seam (`gorxahehal`). The stem is the landmark, so nothing is left unsaid to point back to. Parser: no word.
 - **closed (D-57):** `lx` after hook vowels (`guelxavuvul`). Plain **`x`** already spells the **-l** reading. Parser: no word.
-- **open:** a hook prefix on `/v/` / `/w/` / `/th/` / `/x/` / `/y/` (`vuexavuvul`). `/v/` would repeat the `/ɡ/` predicate (*is anti-fighting*); the others have no guess yet (a degree of opposition? a stance word for *as an opponent*? a topic or call by stance?). Parser: `hookPrefixSlot`.
+- **open:** a hook prefix on `/v/` / `/w/` / `/th/` / `/x/` / `/y/` (`vuoxavuvul`). `/v/` would repeat the `/ɡ/` predicate (*is anti-fighting*); the others have no guess yet (a degree of opposition? a stance word for *as an opponent*? a topic or call by stance?). Parser: `hookPrefixSlot`.
 - **open:** a hook prefix inside a larger word: as a piece of an ordinary compound (*an anti-war house*), as a role-compound stem, or with ability after its stem (`gaxahehaxal`). Not guessable which piece the hook would cover; a separate `/ɡ/` word says it. Parser: no word.
 
 ## Hooked joins {#hooked-joins}
@@ -167,10 +167,10 @@ Source: [hooks.md](/hooked-joins#hooked-joins)
 
 - **open:** join **-n** or hook **-n** on a hooked join (`zoxuan`, `zonxual`), and a stand-in coda after the join (`zoxarl`). A named bounded set, or a named hook inside a word, has no job yet. Parser: no word.
 - **closed (D-57):** `l` before the seam (`zolxual`). Plain **`x`** already spells the hook's **-l** reading. Parser: no word.
-- **open:** a join after the seam on `/ɡ/` (`goxual`), `/v/`, `/w/`, `/th/`, `/x/`, or `/y/`, or as a hosted `bl-` word (`bloxual`). An adjective, act, stance, clause, or call has no set a landmark could bound. Parser: `hookedJoinSlot`.
+- **open:** a join after the seam on `/ɡ/` (`gexual`), `/v/`, `/w/`, `/th/`, `/x/`, or `/y/`, or as a hosted `bl-` word (`blexual`). An adjective, act, stance, clause, or call has no set a landmark could bound. Parser: `hookedJoinSlot`.
 - **open:** `r` before the seam on a hook whose free **-r** does not point back (`oe`, `ua`, `ue`: `zoerxual`). Those hooks' **-r** is a range. Parser: `hookedJoinPointBack`.
 - **open:** `blarl` after a `/z/` `/d/` `/b/` hooked join (`zoxual blarl`). No reading for a set bounded by a clause yet. Parser: `hookedJoinClause`.
-- **open:** on `/h/`, a hook with no time reading (`ua`, `uo`, `ao`, `e`, `ae`, `ue`: `hexal`), or hook **-m** other than `om` (`hamxual`, `humxal`, `hoemxual`). `uo` (*throughout*) and `am` (*in the thick of*) read close to `a`, and `oem` (*in the run-up to*) close to `habam`; no reading is settled. Parser: `hookedJoinTime`.
+- **open:** on `/h/`, a hook with no time reading (`ua`, `uo`, `ao`, `e`, `ae`, `ue`: `hoxal`), or hook **-m** other than `em` (`hamxual`, `humxal`, `hoemxual`). `uo` (*throughout*) and `am` (*in the thick of*) read close to `a`, and `oem` (*in the run-up to*) close to `habam`; no reading is settled. Parser: `hookedJoinTime`.
 - **open:** on `/h/`, a join other than a bare restrictor (`huxoel`, `huxel`). Parser: `hookedJoinRestrictor`.
 - **closed ([hooked joins](design-decisions.md#hooked-joins)):** a number body or a role-compound stem before **`x`** + a join (`zragexual`, `zwazuduyexual`). Parser: no word.
 
@@ -269,7 +269,7 @@ Source: [dependents.md](/sentence-linkers#stand-in)
 - **closed (D-32):** a stand-in on `/ɡ/` (`garl`).
 - **open:** forward, back and named stand-ins (`-rl` `-rm` `-rth` `-rn`) on `/h/` `/w/` `/th/` (`harth`, `tharn`) and on `/x/` `/y/`. Not guessable: a sentence filling an adverb slot could be its manner, its time, or its condition, and `/x/` and `/y/` words already open sentences. *Such* is whole-stem **-r** and *like that* is `hewom blarth`. Parser: `standInRole`.
 - **open:** **-x** on a stand-in. A stand-in stands for what a sentence says, which is not a group.
-- **open:** a stance-only dependent (`dependentStanceOnly`): the sentence after a stand-in needs a noun or a verb, except a lone sake word. A lone stance there adds nothing: `hezom blarl hwavul` says what `uem hwavul` says.
+- **open:** a stance-only dependent (`dependentStanceOnly`): the sentence after a stand-in needs a noun or a verb, except a lone sake word. A lone stance there adds nothing: `hezom blarl hwavul` says what `uom hwavul` says.
 
 ## Sentence linkers (`/x/`)
 
@@ -329,7 +329,7 @@ Source: [clause.md](/clause)
 
 Source: [speech-moves.md](/tone-marks#tone-marks), [intention.md](/can-and-cant#ability)
 
-- **open:** stacked vowels after ability **x** (`xua`, …) and after sake **th** as a second stance (`guwathaol`). Not guessable (*can again*? *it depends*?): *it depends* is MAY or a sentence (polar `oe` is *decline to answer*), and *can again* is `xa` plus a sentence. Label scope uses those stacks ([predication](/label-seams#scope-stacks)). Sake locus stacks still come after the horizon letter (`guwathamol`). The parser rejects a stacked sake stance and stacked ability.
+- **open:** stacked vowels after ability **x** (`xua`, …) and after sake **th** as a second stance (`guwathaol`). Not guessable (*can again*? *it depends*?): *it depends* is MAY or a sentence (polar `oe` is *decline to answer*), and *can again* is `xa` plus a sentence. Label scope uses those stacks ([predication](/label-seams#scope-stacks)). Sake locus stacks still come after the horizon letter (`guwathamel`). The parser rejects a stacked sake stance and stacked ability.
 - **open:** a new tone mark (whisper, sarcasm, …). No voice job is left: `;` `%` `?` already cover quiet, sarcasm and hesitation.
 - **closed (D-23):** `~` as a tone mark, and a third copy of a mark (`!!!`).
 

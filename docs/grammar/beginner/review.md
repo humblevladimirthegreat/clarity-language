@@ -167,14 +167,14 @@ z-Uzozen | v-tell | b-Olazun-x
 **Rule:** [Associative group](plurality.md#associative)
 :::
 
-**3.** `zuzozen dedal ol dugedol vuguyel.`
+**3.** `zuzozen dedal el dugedol vuguyel.`
 
 ::: details Show answer
 z-Uzozen | d-sandwich | instead | d-cookie | v-cook
 
 *Uzozen cooks a cookie instead of a sandwich.*
 
-**Rule:** [Instead](hooks.md#instead-ol)
+**Rule:** [Instead](hooks.md#instead)
 :::
 
 **4.** `zahelan vezuyol th(zolazun varemul).`
@@ -197,7 +197,7 @@ z-Olazun | th-MAY | v-fight
 **Rule:** [MAY](knowing.md#may)
 :::
 
-**6.** `yel ol bar zahelan vuhohol.`
+**6.** `yel el bar zahelan vuhohol.`
 
 ::: details Show answer
 y-question | [at | b-wh] | z-Ahelan | v-sit
@@ -207,7 +207,7 @@ y-question | [at | b-wh] | z-Ahelan | v-sit
 **Rule:** [Where?](fill-ask-jobs.md#where)
 :::
 
-**7.** `zedal om buwon.`
+**7.** `zedal em buwon.`
 
 ::: details Show answer
 z-sandwich | [near | b-speaker]
@@ -337,14 +337,14 @@ y-Ahelan | y-soft-prohibition | v-run
 **Rule:** [Speech act: firm and soft](firm-soft.md#speech-act)
 :::
 
-**10.** *Olazun fights against a guard.* `zolazun vavuvul uel bagayul.` or `zolazun vavuvul ual bagayul.`
+**10.** *Olazun fights against a guard.* `zolazun vavuvul uol bagayul.` or `zolazun vavuvul ual bagayul.`
 
 ::: details Show answer
-`zolazun vavuvul uel bagayul.`
+`zolazun vavuvul uol bagayul.`
 
 z-Olazun | v-fight | [against | b-guard]
 
-**`uel`** is *against*; **`ual`** is *out of* the guard.
+**`uol`** is *against*; **`ual`** is *out of* the guard.
 
 **Rule:** [Extra noun: stacked vowels](extra-noun-hooks.md#extra-noun-intermediate)
 :::

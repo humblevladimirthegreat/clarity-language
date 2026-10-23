@@ -87,7 +87,7 @@ The holder may be the [topic pronoun](topic.md#topic-pronoun), whoever the conve
 >
 > "I gather one would think Olazun left."
 
-**Someone else's plan** goes the same way. [PLAN](/intention#plan-predict) alone is yours; after a holder it is theirs, and the seam word says how you know what they plan. After **`uem`** ([contrary to a stance](prescription.md#contrary-to-stance)), write the holder word, then the plan, for *against their plan*.
+**Someone else's plan** goes the same way. [PLAN](/intention#plan-predict) alone is yours; after a holder it is theirs, and the seam word says how you know what they plan. After **`uom`** ([contrary to a stance](prescription.md#contrary-to-stance)), write the holder word, then the plan, for *against their plan*.
 
 > `zuzozen thebamuzozen thagem vowurel.`
 >
@@ -109,7 +109,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 >
 > "Going by the official calendar, Uzozen plans to speak."
 
-> `zuzozen vowurel uem theyemolazun thagem.`
+> `zuzozen vowurel uom theyemolazun thagem.`
 >
 > z-Uzozen | v-walk | [contrary-to | th-CLUES-Olazun | th-plan-itinerary]
 >
@@ -135,7 +135,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 | The grounds after an inferring or pattern host's [`blarl`](evidentiality.md#evidence-clause) | grounds you assert | the holder's grounds; you do not assert them |
 | A comparison [bar](comparative-arity.md#bars) | your expectation | the holder's expectation |
 
-> `zonal wawothumol goyem blolazun theyemuzozen.`
+> `zonal wawothumel goyem blolazun theyemuzozen.`
 >
 > [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Olazun]] | th-CLUES-Uzozen
 >
@@ -149,7 +149,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 
 A [feeling with no object](feelings-permission.md#feeling-no-object) works the same way: the holder makes it someone else's feeling.
 
-> `thuwathuruor theyemolazun.`
+> `thuwathuruer theyemolazun.`
 >
 > th-competence-unmet-passing-UNPLACED-SURGING | th-CLUES-Olazun
 >

@@ -27,7 +27,7 @@ English *already*, *still*, *not yet*, and *no longer* do not place an event in 
 >
 > "Uzozen hasn't walked yet."
 
-> `zuzozen huvum vowurel ol bahehal.`
+> `zuzozen huvum vowurel el bahehal.`
 >
 > z-Uzozen | h-no-longer | v-walk | [at | b-house]
 >
@@ -133,7 +133,7 @@ z-Uzozen | h-already | v-sing | h-sometimes
 **3.** *Uzozen doesn't walk at the school anymore.*
 
 ::: details Show answer
-`zuzozen huvum vowurel ol buzahal.`
+`zuzozen huvum vowurel el buzahal.`
 
 z-Uzozen | h-no-longer | v-walk | [at | b-school]
 :::

@@ -120,7 +120,7 @@ Some stems name a **relation** (who is bound to whom), not an action. The other 
 >
 > "Uzozen is bound to Olazun. The one Uzozen is bound to runs."
 
-**Compare with:** *for someone* (who the act is meant to benefit) is the extra-noun hook **`el`** plus `/b/`, not the recipient.
+**Compare with:** *for someone* (who the act is meant to benefit) is the extra-noun hook **`ol`** plus `/b/`, not the recipient.
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|

@@ -188,8 +188,8 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 | [Someone else's want](/ability#whose-intention): a holder | `zuzozen thebamuzozen thalem vowurel.` | *I hear Uzozen wants to walk.* | I |
 | [Want, a whim](/ability#want-endings) | `zolazun thaler vezuyol.` | *Right now I feel like having Olazun sing.* | I |
 | [Stacked: want, then plan](/ability#want-endings) | `zuwon thalel thagem vowurel.` | *I have long wanted to walk, and I plan to.* | I |
-| [Against my wishes](/ability#want-endings) | `zuzozen vowurel uem thalem.` | *Uzozen walks, against my wishes.* | I |
-| [Against someone's wishes](/ability#whose-intention) | `zolazun vezuvol uem theyemuzozen thalem.` | *Olazun sleeps, against Uzozen's wishes, as far as I can tell.* | I |
+| [Against my wishes](/ability#want-endings) | `zuzozen vowurel uom thalem.` | *Uzozen walks, against my wishes.* | I |
+| [Against someone's wishes](/ability#whose-intention) | `zolazun vezuvol uom theyemuzozen thalem.` | *Olazun sleeps, against Uzozen's wishes, as far as I can tell.* | I |
 | [Someone else's plan](/holder#holder): a holder | `zuzozen thebamuzozen thagem vowurel.` | *I hear Uzozen plans to walk.* | I |
 | [Someone else's decision](/ability#whose-intention): a holder | `zuzozen theyemuzozen thogom vowurel.` | *I gather Uzozen has decided to walk, and can still change that.* | I |
 | [Plan, and when](/ability#predict-evidentiality) | `zuwon thagem blral vuhohol.` | *I plan to sit down later.* | I |

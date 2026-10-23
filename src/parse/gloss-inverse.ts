@@ -88,7 +88,7 @@ export function seriesGlossIndex(tables: ClassifyTables): GlossIndex {
 function indexSeriesForms(index: GlossIndex, tables: ClassifyTables): void {
   for (const series of SERIES) {
     for (const ending of JOIN_ENDINGS) {
-      // A hosted `bl-` join is a whole landmark (`hewom blar`, `zoxual blual`).
+      // A hosted `bl-` join is a whole landmark (`hewom blar`, `zexual blual`).
       for (const prefix of [...POS, "bl", ""]) {
         const surface = `${prefix}${series}${ending}`;
         for (const ctx of CONTEXTS) {

@@ -19,15 +19,15 @@ Pick a locus from this menu. (This is in a cheat sheet at the end)
 | Locus | Meaning |
 |-------|---------|
 | `a` | mine, held inside |
-| `ao` | the atmosphere of the situation |
-| `uo` | I can't place where it comes from |
-| `o` | aimed at someone |
+| `ae` | the atmosphere of the situation |
+| `ue` | I can't place where it comes from |
+| `e` | aimed at someone |
 | `oe` | turning to someone for comfort |
-| `ue` | pushing back |
-| `e` | felt on someone's behalf |
+| `uo` | pushing back |
+| `o` | felt on someone's behalf |
 | `u` | moving off (avoiding, hiding) |
 | `ua` | out of fight: giving up |
-| `ae` | using yourself to placate |
+| `ao` | using yourself to placate |
 
 | Motion | Meaning |
 |--------|---------|
@@ -40,18 +40,18 @@ The motion endings are the settled-to-passing scale applied to water: still wate
 ## Examples {#examples}
 
 > We shipped the draft `thuwathamar`.  
-> The review is tomorrow `thuwathuraor`.  
-> He rewrote my memo `thunathumuem`.  
-> My sister got laid off `thunathulem`.  
-> `thuwathuruol`, and I can't say why.
+> The review is tomorrow `thuwathuraer`.  
+> He rewrote my memo `thunathumuom`.  
+> My sister got laid off `thunathulom`.  
+> `thuwathuruel`, and I can't say why.
 
 | Drop-in | What it says | Instead of | The three parts |
 |---------|--------------|------------|-----------------|
 | `thuwathamar` | a rush of *I pulled it off*, kept to myself | *proud* | competence met; held inside; surging |
-| `thuwathuraor` | *can I measure up?* hanging over everything, in waves, for now | *anxious* | competence at stake for now; over the room; surging |
-| `thunathumuem` | a steady push back at losing my say, while it can still change | *objecting* | autonomy unmet; pushing back; flowing |
-| `thunathulem` | a steady ache on her behalf: her say was taken for good | *upset for her* | autonomy unmet for good; on her behalf; flowing |
-| `thuwathuruol` | a quiet *can I handle this?* from nowhere I can point to | *uneasy* | competence at stake for now; can't place it; still |
+| `thuwathuraer` | *can I measure up?* hanging over everything, in waves, for now | *anxious* | competence at stake for now; over the room; surging |
+| `thunathumuom` | a steady push back at losing my say, while it can still change | *objecting* | autonomy unmet; pushing back; flowing |
+| `thunathulom` | a steady ache on her behalf: her say was taken for good | *upset for her* | autonomy unmet for good; on her behalf; flowing |
+| `thuwathuruel` | a quiet *can I handle this?* from nowhere I can point to | *uneasy* | competence at stake for now; can't place it; still |
 
 ## Practice {#practice}
 
@@ -66,7 +66,7 @@ My friend remembered my favorite song `thawothamar`.
 **2.** *The meeting ran two hours over.* (autonomy unmet, default ending; pushing back; flowing)
 
 ::: details Show answer
-The meeting ran two hours over `thunathumuem`.
+The meeting ran two hours over `thunathumuom`.
 :::
 
 **3.** How you feel right now, with no clause. (purpose unmet, default ending; held inside; still)

@@ -167,7 +167,7 @@ export function lintTerminology(
         if (pagesLinked.some((p) => text(p).includes(`\`${trimmed}\``))) return;
         findings.push({
           index,
-          detail: `bare root \`${trimmed}\` is not cited on ${pagesLinked.join(" or ") || "a linked page"}; write the form the lesson uses`,
+          detail: `bare root \`${trimmed}\` is not cited on ${pagesLinked.join(" er ") || "a linked page"}; write the form the lesson uses`,
         });
         return;
       }
@@ -176,7 +176,7 @@ export function lintTerminology(
       if (!entry || entry.pages.size === 0) return;
       const escaped = trimmed.replace(/</g, "&lt;").replace(/>/g, "&gt;");
       if ([...entry.pages].some((p) => text(p).includes(trimmed) || text(p).includes(escaped))) return;
-      findings.push({ index, detail: `\`${trimmed}\` does not appear on ${[...entry.pages].join(" or ")}` });
+      findings.push({ index, detail: `\`${trimmed}\` does not appear on ${[...entry.pages].join(" er ")}` });
     },
   });
 

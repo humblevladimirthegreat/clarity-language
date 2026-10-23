@@ -12,7 +12,7 @@ const SAKES = [
   "",
   "### Emotion compose {#emotion-compose}",
   "",
-  "`zebewem guwathamar` and `wuwathuraor`.",
+  "`zebewem guwathamar` and `wuwathuraer`.",
 ].join("\n");
 
 function terminology(rows: string[], body = ""): string {

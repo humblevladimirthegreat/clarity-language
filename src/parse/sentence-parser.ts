@@ -238,10 +238,10 @@ function isIntentionStance(token: IToken): boolean {
   return tokenIs(token, HTh) && word?.pos === "th" && (kind === "want" || kind === "plan" || kind === "decision");
 }
 
-/** `uem` *contrary to*: a `/th/` stance right after it is its opposing frame (prescription.md#contrary-to-stance). */
+/** `uom` *contrary to*: a `/th/` stance right after it is its opposing frame (prescription.md#contrary-to-stance). */
 function isFrameHook(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;
-  return tokenIs(token, Hook) && family?.kind === "hook" && family.form === "uem";
+  return tokenIs(token, Hook) && family?.kind === "hook" && family.form === "uom";
 }
 
 
@@ -1441,7 +1441,7 @@ class AgebonSentenceParser extends CstParser {
   });
 
   /**
-   * A hook, and the stance `uem` holds as its frame (prescription.md#contrary-to-stance): one whose hosted `/b/` the adjectives
+   * A hook, and the stance `uom` holds as its frame (prescription.md#contrary-to-stance): one whose hosted `/b/` the adjectives
    * after it describe (`Open`), or any other (`Closed`). A `Plain` hook has no `/b/` or frame right after it ({@link HookPlain}).
    */
   public hookUnitPlain = this.hookUnitRule("hookUnitPlain", "plain");
@@ -1901,7 +1901,7 @@ function isLabelMarker(marker: NumberMarker): boolean {
  * {@link HostedOdo}. A plain `/b/` there stays the verb's recipient.
  * A cardinal `/ɡ/` right after a hosted `/b/` is that unit's {@link Amount}, and a signed `/h/` number after an
  * equative's shared scale its {@link Factor}. An `/h/` or digitless `/b/` number right after a rank noun join is its
- * shared scale ({@link HScale}, {@link BScale}), and a stance right after `uem` its frame ({@link HFrame}). Neither has a `/b/` slot, so a `/b/` after one fails to parse (`slotlessHost`).
+ * shared scale ({@link HScale}, {@link BScale}), and a stance right after `uom` its frame ({@link HFrame}). Neither has a `/b/` slot, so a `/b/` after one fails to parse (`slotlessHost`).
  * A stance word that is a rank fence's bar becomes {@link Bar}, or {@link FenceBar} as the first bar after a closed `ua` fence.
  */
 export function markContext(tokens: IToken[]): IToken[] {
@@ -2180,7 +2180,7 @@ function verbTypeAt(tokens: IToken[], at: number): TokenType | undefined {
   return more ? VPlainMore : VPlainEnd;
 }
 
-/** A `/b/` word right after the hook (an extra noun, hooks.md#extra-noun), or the stance `uem` holds as its frame. */
+/** A `/b/` word right after the hook (an extra noun, hooks.md#extra-noun), or the stance `uom` holds as its frame. */
 function hostsAhead(hook: IToken, after: IToken[]): boolean {
   const next = after[0];
   if (!next) return false;

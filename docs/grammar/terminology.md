@@ -15,21 +15,21 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | Label | Gloss | Example | Teach |
 |-------|-------|---------|-------|
 | **ABIL** | Hostless *can* / *can’t* (no single verb) | `hodaxel` | [Can and can't](/can-and-cant#ability-fallback) |
-| **AIMED** | Emotion locus: aimed at a target | `wawothumol` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **AIMED** | Emotion locus: aimed at a target | `wawothumel` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **ASIDE** | An aside span | `th(hogowul)` | [Spans](/spans#asides) |
 | **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwavam` | [Feelings and permission](/feelings-permission#say-words) |
 | **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Decision and try](/ability#try) |
 | **AWAY** | Emotion locus: moving off from a target | `wawothumum` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thewem` | [Iff and CAUSE](/iff-fault#cause) |
-| **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraor` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraer` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **CITE** | A cite span: quoted wording | `d[uzozen]` | [Spans](/spans#writing) |
 | **CLUES** | Evidential: reasoned from clues about this case | `theyem` | [Evidentiality](/evidentiality#evidentiality) |
 | **CHOICE** | Say word answer: their call | `hwavem` | [Feelings and permission](/feelings-permission#say-words) |
 | **COLLAPSE** | Emotion locus: out of fight, giving up | `wawothumual` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **DECISION** | Pick-firmness mood | `thogom` | [Decision and try](/ability#decision) |
 | **DEDUCED** | Evidential: must hold if the premises hold | `thanam` | [Evidentiality](/evidentiality#deduction) |
-| **FAWN** | Emotion locus: placating a target | `wawothumaem` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **FLOWING** | Emotion motion: steady, a current you can ride | `wawothumem` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **FAWN** | Emotion locus: placating a target | `wawothumaom` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **FLOWING** | Emotion motion: steady, a current you can ride | `wawothumom` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **FORBID** | Say word answer: no, forbid | `hwavul` | [Feelings and permission](/feelings-permission#say-words) |
 | **FORMER** | Episode standing: not the climate claimed now | `helam` | [Notional and standing](/notional-standing#residue) |
 | **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Feelings and permission](/feelings-permission#emotion-compose) |
@@ -41,20 +41,20 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themom` | [Notional and standing](/notional-standing#mirative) |
 | **NAME** | A package titled with **-n** | `zebodol zuyudal zan.` | [Join islands](/join-islands#named-list) |
 | **NOTIONAL** | As-if / pretense mood | `theyum` | [Notional and standing](/notional-standing#notional) |
-| **ON-BEHALF** | Emotion locus: felt for someone's sake | `wawothumem` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **ON-BEHALF** | Emotion locus: felt for someone's sake | `wawothumom` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **OPAQUE** | An opaque span: foreign or raw writing | <code>d&lt;kimchi&gt;</code> | [Spans](/spans#loans) |
 | **PATTERN** | Evidential: from regularity | `thubem` | [Evidentiality](/evidentiality#evidentiality) |
 | **PLAN** | Intention-framing mood | `thagem` | [Intention](/intention#plan-predict) |
 | **REPORTED** | Evidential: said or written by someone else | `thebam` | [Evidentiality](/evidentiality#evidentiality) |
 | **REQUIRE** | Say word answer: require, ask for (*must*) | `hwavol` | [Feelings and permission](/feelings-permission#say-words) |
 | **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Notional and standing](/notional-standing#residue) |
-| **RESISTING** | Emotion locus: pushing against a target | `wawothumuer` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **RESISTING** | Emotion locus: pushing against a target | `wawothumuor` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **SAME** | Identity copula | `gorol` | [Predication](/predication#identity) |
 | **SCOPE** | Scope island `{ … }` | `{ hegugom zudozol gerulel }` | [Mention and islands](/span-mention#scope-islands) |
 | **SEEKING** | Emotion locus: turning to someone for comfort | `wawothumoem` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **STILL** | Emotion motion: not moving (held, frozen, numb) | `wawothumol` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **SURGING** | Emotion motion: in waves or spikes | `wuwathuraor` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruom` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **STILL** | Emotion motion: not moving (held, frozen, numb) | `wawothumel` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **SURGING** | Emotion motion: in waves or spikes | `wuwathuraer` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruem` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **WANT** | Desire mood: lasting / unstated / passing | `thalem` | [Decision and try](/ability#want) |
 
 **Compare with:** [quasi](#quasi) (`-e-xROOT`) is not **NOTIONAL**.
@@ -417,7 +417,7 @@ Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; frame **-m**
 
 ### Means
 
-Extra-noun [hook](/hooks#extra-noun) **`ael`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*. To name a kind of tool as its own noun, use a compound with a head root ([places, tools, and times](/viewpoint#places-tools-times)).
+Extra-noun [hook](/hooks#extra-noun) **`aol`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*. To name a kind of tool as its own noun, use a compound with a head root ([places, tools, and times](/viewpoint#places-tools-times)).
 
 [Extra nouns and whose](/extra-noun-hooks#extra-noun-intermediate)
 
@@ -694,7 +694,7 @@ Numeric from–to with a hook between the ends (`al` / `ul`); a ray has ±∞ as
 
 ### Range hook
 
-Stacked hook between same-role words on an ordered line: `oel` *through*, `ual` *strictly between*, `uel` *outside*.
+Stacked hook between same-role words on an ordered line: `oel` *through*, `ual` *strictly between*, `uol` *outside*.
 
 [Ending grids](/ending-grids#ranges)
 
@@ -728,7 +728,7 @@ Content / number **-r** pointing back. A content resume spells the earlier word�
 
 ### Hook
 
-Prefix-less *including / rather / instead / except*, discourse glue, extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (frame **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *used by* (whose) / *by* / *contrary to*; placement decides the job; **`uem`** before a `/th/` stance is *contrary to* that stance), and fused [Hook compounds](/hook-compounds#hook-compounds) (citation plus extra-noun hook). Optional `/w/` immediately before the free hook grades that hook (including restrictors); `/b/` sits immediately after the free hook. Stacked discourse, *somewhere* / *here* / *there*, resume **-r**, parallel chains, and extra placements are [discourse hooks](/discourse-hooks).
+Prefix-less *including / rather / instead / except*, discourse glue, extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (frame **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *used by* (whose) / *by* / *contrary to*; placement decides the job; **`uom`** before a `/th/` stance is *contrary to* that stance), and fused [Hook compounds](/hook-compounds#hook-compounds) (citation plus extra-noun hook). Optional `/w/` immediately before the free hook grades that hook (including restrictors); `/b/` sits immediately after the free hook. Stacked discourse, *somewhere* / *here* / *there*, resume **-r**, parallel chains, and extra placements are [discourse hooks](/discourse-hooks).
 
 [Hooks](/hooks)
 
@@ -736,13 +736,13 @@ Prefix-less *including / rather / instead / except*, discourse glue, extra-noun 
 
 ### Hook prefix
 
-Role letter + extra-noun hook vowels + **`x`** (or **`mx`** for the hook's **-m** frame) + stem: something in that hook's relation to the stem (`guexavuvul` *anti-fighting*, `gamxohalal` *mid-ocean*). Like English *anti-*, *in-*, *trans-*, *-ward*.
+Role letter + extra-noun hook vowels + **`x`** (or **`mx`** for the hook's **-m** frame) + stem: something in that hook's relation to the stem (`guoxavuvul` *anti-fighting*, `gamxohalal` *mid-ocean*). Like English *anti-*, *in-*, *trans-*, *-ward*.
 
 [Hook compounds](/hook-compounds#hook-prefixes)
 
 ### Hooked join
 
-Role letter + extra-noun hook vowels (+ **`m`** for the frame or **`r`** to point back) + **`x`** + a join, with the hook's landmark as the `bl-` word after it: the join's set, bounded by that relation (`zoxual blahehal` *everyone at the house*, `dexar bluwon` *something for me*). On `/h/` it bounds which times a restrictor covers (`huxal blenulul` *never since the thunderstorm*).
+Role letter + extra-noun hook vowels (+ **`m`** for the frame or **`r`** to point back) + **`x`** + a join, with the hook's landmark as the `bl-` word after it: the join's set, bounded by that relation (`zexual blahehal` *everyone at the house*, `doxar bluwon` *something for me*). On `/h/` it bounds which times a restrictor covers (`huxal blenulul` *never since the thunderstorm*).
 
 [Hooked joins](/hooked-joins#hooked-joins)
 

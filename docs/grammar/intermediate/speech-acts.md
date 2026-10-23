@@ -114,7 +114,7 @@ A reaction can also take a [degree word](left-bound.md#degree-w) right before it
 
 The degree word grades the reaction itself. A tone mark is how you sound saying it, so the two can go together.
 
-To say who or what you react to (*hooray for Uzozen*), add a [hook](/hooks#extra-noun) and `/b/` after the reaction: `yohumal el buzozen.` A bare `/b/` there would start the body as the person who receives.
+To say who or what you react to (*hooray for Uzozen*), add a [hook](/hooks#extra-noun) and `/b/` after the reaction: `yohumal ol buzozen.` A bare `/b/` there would start the body as the person who receives.
 
 ### Speech manner (*frankly* / *to be clear*) {#speech-manner}
 

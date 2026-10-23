@@ -68,9 +68,9 @@ describe("spliceWord", () => {
     assert.deepEqual(splice("yel", "series=e:o"), { kind: "changed", raw: "yol" });
   });
   it("splices a free hook form, not a join series", () => {
-    assert.deepEqual(splice("al", "form=al:ol"), { kind: "changed", raw: "ol" });
+    assert.deepEqual(splice("ol", "form=ol:el"), { kind: "changed", raw: "el" });
     assert.deepEqual(splice("al", "series=a:o"), { kind: "same", raw: "al" });
-    assert.deepEqual(splice("zol", "form=el:ol"), { kind: "same", raw: "zol" });
+    assert.deepEqual(splice("zol", "form=ol:el"), { kind: "same", raw: "zol" });
   });
   it("splices say scope and answer as two slots", () => {
     assert.deepEqual(splice("hwavem", "answer=e:o"), { kind: "changed", raw: "hwavom" });
@@ -95,17 +95,17 @@ describe("spliceWord", () => {
     assert.deepEqual(splice("zragexezuyel", "marker=ra:ru"), { kind: "changed", raw: "zrugexezuyel" });
   });
   it("splices a hook-prefix form's written vowels", () => {
-    assert.deepEqual(splice("guexavuvul", "form=uel:ual"), { kind: "changed", raw: "guaxavuvul" });
+    assert.deepEqual(splice("guoxavuvul", "form=uol:ual"), { kind: "changed", raw: "guaxavuvul" });
   });
   it("splices a hooked-join hook form, not the join series", () => {
-    assert.deepEqual(splice("zoxual", "form=ol:el"), { kind: "changed", raw: "zexual" });
-    assert.deepEqual(splice("zoxual", "series=ua:ue"), { kind: "changed", raw: "zoxuel" });
-    assert.deepEqual(splice("zomxuam", "form=om:em"), { kind: "changed", raw: "zemxuam" });
-    assert.deepEqual(splice("dexar", "form=el:ol"), { kind: "changed", raw: "doxar" });
+    assert.deepEqual(splice("zexual", "form=el:ol"), { kind: "changed", raw: "zoxual" });
+    assert.deepEqual(splice("zexual", "series=ua:ue"), { kind: "changed", raw: "zexuel" });
+    assert.deepEqual(splice("zemxuam", "form=em:om"), { kind: "changed", raw: "zomxuam" });
+    assert.deepEqual(splice("doxar", "form=ol:el"), { kind: "changed", raw: "dexar" });
   });
   it("splices a feeling locus and leaves sake stance", () => {
-    assert.deepEqual(splice("wuwathuraor", "locus=ao:ae"), { kind: "changed", raw: "wuwathuraer" });
-    assert.deepEqual(splice("wuwathuraor", "stance=u:a"), { kind: "changed", raw: "wuwatharaor" });
+    assert.deepEqual(splice("wuwathuraer", "locus=ae:ao"), { kind: "changed", raw: "wuwathuraor" });
+    assert.deepEqual(splice("wuwathuraer", "stance=u:a"), { kind: "changed", raw: "wuwatharaer" });
   });
   it("leaves a sake whose stance is not in the map", () => {
     const sake = `g${CLOSED.ballot}thal`;
@@ -122,7 +122,7 @@ describe("rewrite spans", () => {
   it("swaps join series in the fixture and does not rewrite a hook", () => {
     const page = readFileSync(fixturePath, "utf8");
     const { examples } = collectPageSpans(page, tables);
-    const mixed = examples.find((e) => e.text.includes("ol") && e.text.includes("zol"));
+    const mixed = examples.find((e) => e.text.includes("el") && e.text.includes("zol"));
     assert.ok(mixed);
     const hits = mixed.words.flatMap((w, i) => (matchesTerm(w, joinTerm) ? [i] : []));
     const rewritten = rewriteExample(mixed, hits, joinMap);

@@ -317,12 +317,12 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     }
   });
 
-  it("reads ao as one stack in a feeling word (phonotactics.md#phonotactics)", () => {
-    for (const raw of ["wuwathuraor", "thuwathuraor"]) {
+  it("reads ae as one stack in a feeling word (phonotactics.md#phonotactics)", () => {
+    for (const raw of ["wuwathuraer", "thuwathuraer"]) {
       const word = parseOk(raw);
       assert.ok(word.family.kind === "x" && word.family.xFamily === "sake", raw);
       if (word.family.kind === "x") {
-        assert.equal(word.family.locus, "ao", raw);
+        assert.equal(word.family.locus, "ae", raw);
         assert.equal(word.ending, "r", raw);
       }
     }
@@ -331,13 +331,13 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
 
   it("parses hooked joins: hook, optional m / r, x, join (hooked-joins.md#hooked-joins)", () => {
     const cases: [string, string, string, string, boolean][] = [
-      ["zoxual", "ol", "ua", "l", false],
-      ["daoxar", "aol", "a", "r", false],
-      ["zomxuam", "om", "ua", "m", false],
-      ["zorxarx", "or", "a", "r", true],
-      ["zuexual", "uel", "ua", "l", false],
+      ["zexual", "el", "ua", "l", false],
+      ["daexar", "ael", "a", "r", false],
+      ["zemxuam", "em", "ua", "m", false],
+      ["zerxarx", "er", "a", "r", true],
+      ["zuoxual", "uol", "ua", "l", false],
       ["huxal", "ul", "a", "l", false],
-      ["dexar", "el", "a", "r", false],
+      ["doxar", "ol", "a", "r", false],
     ];
     for (const [raw, hook, series, ending, plural] of cases) {
       const word = parseOk(raw);
@@ -355,13 +355,13 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
 
   it("parses hook prefixes on x and mx (hook-compounds.md#hook-prefixes)", () => {
     const cases: [string, string, string[]][] = [
-      ["guexavuvul", "uel", ["avuvu"]],
-      ["daexarayel", "ael", ["araye"]],
-      ["guemxewulel", "uem", ["ewule"]],
-      ["gaomxohalal", "aom", ["ohala"]],
-      ["guexahehaxowurel", "uel", ["aheha", "owure"]],
-      ["uexavuvul", "uel", ["avuvu"]],
-      ["guexonam", "uel", ["ona"]],
+      ["guoxavuvul", "uol", ["avuvu"]],
+      ["daoxarayel", "aol", ["araye"]],
+      ["guomxewulel", "uom", ["ewule"]],
+      ["gaemxohalal", "aem", ["ohala"]],
+      ["guoxahehaxowurel", "uol", ["aheha", "owure"]],
+      ["uoxavuvul", "uol", ["avuvu"]],
+      ["guoxonam", "uol", ["ona"]],
     ];
     for (const [raw, hook, rightRoots] of cases) {
       const word = parseOk(raw);
@@ -372,9 +372,9 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
         assert.deepEqual(word.family.rightRoots, rightRoots, raw);
       }
     }
-    const scoped = parseOk("zuexavuvuthel");
+    const scoped = parseOk("zuoxavuvuthel");
     assert.equal(scoped.family.kind === "x" && scoped.family.scopeVowel, "e");
-    assert.equal(parseOk("bluexavuvul").bl, true);
+    assert.equal(parseOk("bluoxavuvul").bl, true);
   });
 
   it("reads no hook prefix on a non-hook pair, another seam consonant, or r before the seam", () => {

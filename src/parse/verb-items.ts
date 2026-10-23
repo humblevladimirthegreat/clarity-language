@@ -18,7 +18,7 @@ function isNp(unit: Unit | undefined, level: "z" | "d" | "b"): boolean {
 }
 
 function isGenitiveHook(unit: Unit | undefined): boolean {
-  return unit?.kind === "hook" && unit.word.family.kind === "hook" && unit.word.family.form === "em";
+  return unit?.kind === "hook" && unit.word.family.kind === "hook" && unit.word.family.form === "om";
 }
 
 function verbCount(coord: VpCoord): number {

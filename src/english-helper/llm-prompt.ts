@@ -75,7 +75,7 @@ function inputFeatures(inputs: readonly HelperInput[], anchors: ReadonlyMap<stri
         for (const link of suggestionLinks(s)) links.add(link);
       }
       for (const slot of clause.slots) {
-        if (!slot.skipped && CONTENT.has(slot.cls) && slot.lemma.length >= 3) want(`en:${slot.lemma.toLowerCase()}`, ENGLISH_WEIGHT);
+        if (!slot.skipped && CONTENT.has(slot.cls) && slot.lemma.length >= 3) want(`on:${slot.lemma.toLowerCase()}`, ENGLISH_WEIGHT);
       }
     }
   }

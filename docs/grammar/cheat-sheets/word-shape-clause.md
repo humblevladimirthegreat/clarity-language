@@ -50,7 +50,7 @@ The role letter says the job ([role map](/proper-names#proper-name--n)); **-n** 
 | [Full name](/proper-names#multipart-names) as a citation, and its resume | `alen galowen`; `zalen galowen`; `zaler` | *Alen Alowen*; *Alen* (the same person) | I |
 | [Hyphenated name](/proper-names#multipart-names): roots joined by mid-word `x` | `zalexalowen vowurel.` | *Alexalowen walks.* | I |
 | [One of a full name](/proper-names#name-instance--ln) | `zaleln galowen` | *someone named Alen Alowen* | I |
-| [Titled phrase](/proper-names#titled-phrases): **-n** on the hook, join, or span that packages it | `dududal on dugudal` | *Coffee-Instead-of-Tea* (a cafe) | I |
+| [Titled phrase](/proper-names#titled-phrases): **-n** on the hook, join, or span that packages it | `dududal en dugudal` | *Coffee-Instead-of-Tea* (a cafe) | I |
 | [Country and tradition](/proper-names#countries-traditions) on `azabana` | `azabanan` / `gazabanam` / `dazabanal` | *Japan* / *Japanese* / *a Japanese flag* | I |
 
 ## The clause {#clause}

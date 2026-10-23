@@ -78,7 +78,7 @@ Here the snapshot covers only *challenging*. It does not reach a verb: a verb in
 
 *Before the departure* places the sitting itself; *as of 22 July* only sets the now the clause is measured from. The two times are separate.
 
-> `zolazun vowurel ol b_#22,7. xolazun haram henam bl=_#22,7 velurul.`
+> `zolazun vowurel el b_#22,7. xolazun haram henam bl=_#22,7 velurul.`
 >
 > z-Olazun | v-walk | [at | b-_22,7] . x-Olazun | h-RESIDUE | [h-as-of.ledger | bl-←_22,7] | v-departure
 >
@@ -102,7 +102,7 @@ The second sentence's own pair replaces the 22 July now.
 
 An *as-of* pair inside a finished inner clause cannot be resumed later in the main clause. `henar` on its own parses, but write it only after a clause that set whose-now with `henam` and a `/b/`.
 
-**Compare with:** [*after*](/dependents#time-poles) **`halam`** and extra-noun **`ol`** *at* place the event in time or next to a landmark; they do not set whose-now. [Causal *if*](/causation#if) **`thohom`** is a condition judged at speech-now, not English *if he had* (`hunem`). [NOTIONAL](/notional-standing#notional) is pretend, not a placeholder now. [Scope islands](join-islands.md#scope-islands-join) limit how far a join reaches; they do not carry an *as-of* forward. On the next clause, repeat the evidential, resume the *as-of*, or both.
+**Compare with:** [*after*](/dependents#time-poles) **`halam`** and extra-noun **`el`** *at* place the event in time or next to a landmark; they do not set whose-now. [Causal *if*](/causation#if) **`thohom`** is a condition judged at speech-now, not English *if he had* (`hunem`). [NOTIONAL](/notional-standing#notional) is pretend, not a placeholder now. [Scope islands](join-islands.md#scope-islands-join) limit how far a join reaches; they do not carry an *as-of* forward. On the next clause, repeat the evidential, resume the *as-of*, or both.
 
 <!-- cheat-sheet: linking-clauses -->
 | Agebon | Use | English | Same root as | Cue |

@@ -32,13 +32,13 @@ export function joinHook(word: LexWord | undefined): string | undefined {
 }
 
 /** Hooks whose free **-r** points back (discourse-hooks.md#hook-resume), so a hooked join may take `r` before its seam. */
-export const POINT_BACK_HOOKS = new Set(["ar", "aor", "or", "ur", "uor", "er", "aer"]);
+export const POINT_BACK_HOOKS = new Set(["ar", "aor", "er", "ur", "uer", "or", "aer"]);
 
 /** The hooks an `/h/` hooked join takes: a time reading on the landmark, or a point-back to a time (hooked-joins.md#hooked-joins-time). */
-export const TIME_HOOKS = new Set(["al", "ol", "ul", "oel", "om", "ar", "or", "ur"]);
+export const TIME_HOOKS = new Set(["al", "el", "ul", "oel", "em", "ar", "er", "ur"]);
 
 /** The bare restrictors an `/h/` hooked join bounds (restrictors.md): *never*, *always*, and the **-r** occasions. */
-export const TIME_JOINS = new Set(["al", "am", "ual", "uam", "ar", "or", "ur", "er"]);
+export const TIME_JOINS = new Set(["al", "am", "ual", "uam", "ar", "er", "ur", "or"]);
 
 /** Digitless number stem: no digit groups and no exponent shorthand (digitless-exponents.md § digitless). */
 export function isDigitless(stem: NumberStem): boolean {

@@ -12,7 +12,7 @@ const PLACE_MAP: Record<string, string> = {
   S: "z", Z: "z", SH: "z", ZH: "z", CH: "z", JH: "z", TH: "d", DH: "d",
   HH: "h", W: "w", Y: "y", M: "m", N: "n", NG: "n", L: "l", R: "r",
   AA: "a", AE: "a", AH: "a", AY: "ay", AW: "aw",
-  EH: "e", EY: "ey", IH: "e", IY: "e", ER: "er",
+  EH: "e", EY: "ey", IH: "e", IY: "e", ER: "or",
   AO: "o", OW: "o", OY: "oy", UH: "u", UW: "u",
 };
 

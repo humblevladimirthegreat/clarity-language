@@ -25,7 +25,7 @@ export const NOUN_ENGLISH: Record<string, string> = {
 const MASS_NOUNS = new Set(["wood", "water", "money"]);
 
 /** Hooks the generator writes, by English (hooks.md#extra-noun). */
-export const HOOK_ENGLISH: Record<string, string> = { ol: "at", al: "in", ul: "from", el: "for" };
+export const HOOK_ENGLISH: Record<string, string> = { el: "at", al: "in", ul: "from", ol: "for" };
 
 /** Fixed lines: glosses spelled at build time, with their English. */
 export const FIXED = {

@@ -46,7 +46,7 @@ A tie of care (*Uzozen's patient*, *Uzozen's team*) is **`gobolom`**: `/b/` look
 >
 > "Olazun is in Uzozen's care."
 
-**Compare with:** plain *Uzozen's*, with the tie left unsaid, is the hook [`em`](extra-noun-hooks.md#genitive). Ownership is `gogunum`.
+**Compare with:** plain *Uzozen's*, with the tie left unsaid, is the hook [`om`](extra-noun-hooks.md#genitive). Ownership is `gogunum`.
 
 ### Practice {#beginner-practice}
 
@@ -146,6 +146,6 @@ With no `bl-` word, the tie points at the other members of the join; **`gumayam 
 
 z-Olazun | [g-companionship | bl-Uzozen]
 
-A social tie takes the tie root on `/ɡ/` with **/b/**; **`em`** is *in Uzozen's use*.
+A social tie takes the tie root on `/ɡ/` with **/b/**; **`om`** is *in Uzozen's use*.
 :::
 

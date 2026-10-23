@@ -84,7 +84,7 @@ English *well…* warns that the answer is not the plain *yes* the question hope
 
 English *it sounds like you're anxious* and *I hear that you're upset* give the speaker's feeling back to them. You cannot state someone else's feeling outright, so name the listener as the holder on CLUES (**`theyem`**): you worked it out from what they said.
 
-> `thuwathuruor theyemawan.`
+> `thuwathuruer theyemawan.`
 >
 > th-competence-unmet-passing-UNPLACED-SURGING | th-CLUES-listener
 >

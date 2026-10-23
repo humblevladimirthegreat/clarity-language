@@ -179,7 +179,7 @@ A range hook with **-r** names **one value in the band** without saying which.
 | `z+3 ar z+5` | some value in the inclusive band | *some value from 3 to 5* |
 | `z+3 ur z+5` | some value in the band, 5 left out | *some value from 3 up to 5* |
 | `zrazal ar zrawal` | some value on the ray | *some value of 5 or more* |
-| `z+3 uer z+5` | some value outside the band | *some value below 3 or above 5* |
+| `z+3 uor z+5` | some value outside the band | *some value below 3 or above 5* |
 
 Under [question](/questions#fill-ask-r) force, these are fill-asks (*which value from 3 to 5?*). The same shape works under `/d/` `/b/` `/ɡ/` as the slot needs (`d+10 ur d+20` = object *some value from 10 up to 20*).
 

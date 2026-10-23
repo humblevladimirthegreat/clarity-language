@@ -36,7 +36,7 @@ export function whereIs(world: World, id: EntityId): { hook: string; landmark: E
   const place = entity(world, id).place;
   if (place.rel === "room") return { hook: "al", landmark: place.room };
   if (place.rel === "in") return { hook: "al", landmark: place.of };
-  if (place.rel === "at") return { hook: "ol", landmark: place.of };
+  if (place.rel === "at") return { hook: "el", landmark: place.of };
   return { hook: "ol", landmark: place.by };
 }
 
@@ -135,7 +135,7 @@ export function answerFill(ctx: Ctx, act: Act, answerer: EntityId): Outcome {
   const id = subject?.ok ? subject.id : undefined;
   if (id) remember(ctx, [id]);
 
-  // Where? (`ol bar`, `al bar`; fill-ask-jobs.md#where)
+  // Where? (`el bar`, `al bar`; fill-ask-jobs.md#where)
   if (act.places.some((p) => p.landmark.kind === "gap")) {
     if (!id) return cannotSay(ctx, answerer);
     const where = whereIs(world, id);

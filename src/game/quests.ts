@@ -76,7 +76,7 @@ export const QUESTS: Quest[] = [
   {
     id: "deliver-book",
     title: "Ask where the book is, find it with the magnifier, and give it to the teacher",
-    needs: ["force.o", "resolve.content.unbound", "hook.al", "hook.ol"],
+    needs: ["force.o", "resolve.content.unbound", "hook.al", "hook.el"],
     goal: (world) => heldBy(world, "book", "teacher"),
     done: "The teacher has the book back.",
     model: {

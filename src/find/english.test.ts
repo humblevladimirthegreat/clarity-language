@@ -25,10 +25,10 @@ describe("collectEnglishEntries", () => {
   it("indexes Use and English columns but not Cue", () => {
     const entries = entriesOf(`| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| \`or …\` | back to the main line | *Anyway, …* | **o** ≈ one |
+| \`er …\` | back to the main line | *Anyway, …* | **e** ≈ order |
 `);
     assert.equal(entries.length, 1);
-    assert.equal(entries[0]!.form, "or …");
+    assert.equal(entries[0]!.form, "er …");
     assert.equal(entries[0]!.english, "back to the main line — *Anyway, …*");
     assert.equal(searchEnglish(entries, "one").length, 0);
   });
@@ -65,7 +65,7 @@ describe("collectEnglishEntries", () => {
 
 ### Point back {#hook-resume}
 
-> \`or zuzozen vowurel.\`
+> \`er zuzozen vowurel.\`
 >
 > "Anyway, Uzozen walks."
 `);
@@ -74,7 +74,7 @@ describe("collectEnglishEntries", () => {
     assert.equal(example.slug, "hook-resume");
     assert.equal(example.band, "intermediate");
     assert.equal(example.line, 5);
-    const gloss = entries.find((e) => e.kind === "gloss" && e.form === "or")!;
+    const gloss = entries.find((e) => e.kind === "gloss" && e.form === "er")!;
     assert.equal(gloss.english, "anyway");
     assert.ok(entries.some((e) => e.kind === "gloss" && e.form === "vowurel" && e.english === "walk"));
   });
@@ -107,7 +107,7 @@ describe("searchEnglish", () => {
 describe("taught cues in docs/grammar", () => {
   const all = listMarkdown("docs/grammar").flatMap((file) => collectEnglishEntries(readFileSync(file, "utf8"), file, tables));
   const cases: { phrase: string; page: string; slug?: string; forms: string[] }[] = [
-    { phrase: "anyway", page: "discourse-hooks.md", slug: "hook-resume", forms: ["or"] },
+    { phrase: "anyway", page: "discourse-hooks.md", slug: "hook-resume", forms: ["er"] },
     { phrase: "late", page: "vague-amounts.md", slug: "vague-amounts", forms: ["thubem / zol / zuol / bral"] },
     { phrase: "last time", page: "stacked-markers.md", forms: ["gruodol", "g#-2", "h#-2"] },
   ];
@@ -154,13 +154,13 @@ describe("recipe table harvest", () => {
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
-| in B's use (*Uzozen's dog*) | hook **\`em\`** + \`/b/\` | [Whose](extra-noun-hooks.md#genitive) |
+| in B's use (*Uzozen's dog*) | hook **\`om\`** + \`/b/\` | [Whose](extra-noun-hooks.md#genitive) |
 
 ## Everyday words {#everyday-words}
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
-| *on* / *onto* (*sits on a chair*) | hook **\`aol\`** + \`/b/\` | [Hooks](hooks.md#extra-noun) |
+| *on* / *onto* (*sits on a chair*) | hook **\`ael\`** + \`/b/\` | [Hooks](hooks.md#extra-noun) |
 `;
 
   it("keeps the Teach link and the cue words", () => {

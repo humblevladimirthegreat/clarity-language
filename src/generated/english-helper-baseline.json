@@ -2,30 +2,30 @@
   "sets": {
     "doc": {
       "sentences": 1263,
-      "selfContained": 58.4,
-      "wordInPrompt": 78.7,
+      "selfContained": 55.9,
+      "wordInPrompt": 76.8,
       "rootTop1": 74.9,
       "rootAnywhere": 91,
       "constructionPage": 41.7,
       "gapRate": 3.6,
-      "promptChars": 14260
+      "promptChars": 14194
     },
     "checkpoint": {
       "sentences": 377,
-      "selfContained": 64.7,
-      "wordInPrompt": 79.2,
+      "selfContained": 60.5,
+      "wordInPrompt": 76.6,
       "rootTop1": 84.9,
       "rootAnywhere": 94.4,
       "constructionPage": 47,
       "gapRate": 3.2,
-      "promptChars": 14118,
+      "promptChars": 14107,
       "verifyPrecision": 90.2,
       "verifyRecall": 98.5
     },
     "wild": {
       "sentences": 221,
       "gapRate": 5.3,
-      "promptChars": 14721
+      "promptChars": 14463
     }
   }
 }

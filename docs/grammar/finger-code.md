@@ -195,7 +195,7 @@ Type Agebon, or click a sentence below, and press **Play**. Pick a channel to se
 
 - `zuzozen vowurel thohom blerulal.` *Uzozen walks if it rains.*
 - `zerulal gohom blugalal.` *There is rain if there are clouds.*
-- `zuzozen vowurel uem berulal.` *Uzozen walks despite the rain.*
+- `zuzozen vowurel uom berulal.` *Uzozen walks despite the rain.*
 - `zudozol vowurel. xahem zagozol varuvel.` *A dog walks. Therefore a cat runs.*
 
 </FingerCode>

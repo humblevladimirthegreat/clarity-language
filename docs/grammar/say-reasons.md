@@ -15,9 +15,9 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 | *although* / *while* / *whilst* / *until* / *till* / *before* / *after* | same pole + **`blarl`** shape on adverb `/h/`, **-m** ([dependent clauses](/dependents#dependent-clauses)): **`hezom`** / **`herem`** / **`harum`** / … |
 | *so that* / *in order to* | same shape: **`hovam`** ([so that](/dependents#so-that)); NP intended get = **`hovam`** + `/b/` **noun** |
 | *despite* (NP) | same **`hezom`** (or **`gezom`**) + `/b/` **noun**, not a second pole |
-| *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uem`** + the stance it goes against: `uem hwavul` / `uem hwadum` / `uem thagem` / `uem thogol` / `uem thebam` ([contrary to a stance](/prescription#contrary-to-stance)) |
+| *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uom`** + the stance it goes against: `uom hwavul` / `uom hwadum` / `uom thagem` / `uom thogol` / `uom thebam` ([contrary to a stance](/prescription#contrary-to-stance)) |
 | *though I promised* / *breaking my promise* | **`hezom blarl`** + the promise as its own sentence: `zuwon vezuvol hezom blarl zuwon vowurel hwazal.` (*I sleep, although I promised to walk*) ([contrary to a stance](/prescription#contrary-to-stance)) |
-| *after they took back their yes* / *more than they agreed to* | a yes taken back is a no: **`uem hwadum`**; past the agreed terms is the consent bar **`hwadam`** ([every bar](/stance-bars#stance-bars)) |
+| *after they took back their yes* / *more than they agreed to* | a yes taken back is a no: **`uom hwadum`**; past the agreed terms is the consent bar **`hwadam`** ([every bar](/stance-bars#stance-bars)) |
 | *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`blarl`**: **`theyem blarl`** / **`thubem blarl`** ([evidence clause](/evidentiality#evidence-clause)) |
 | *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xahem`** ([continue](/dependents#continue-x)) |
 | *it follows that* / *necessarily, then* (a deduction from the last sentence) | **`xahel`** ([sentence linkers](/sentence-linkers#sentence-linkers)) |
@@ -28,11 +28,11 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 | *not because* (clause) | **`thahum thul blarl`** ([stance join before `blarl`](/join-across-roles#stance-join-before-barl)) |
 | *however* / *meanwhile* (discourse) | **`xezom`** / **`xegorem`** |
 | *regardless of* (NP) | same **`hezom`** + `/b/` **noun** as *despite* |
-| *anyway* / *anyhow* (back to the main line) | the resume hook **`or …`** ([point back](/discourse-hooks#hook-resume)) |
+| *anyway* / *anyhow* (back to the main line) | the resume hook **`er …`** ([point back](/discourse-hooks#hook-resume)) |
 | *otherwise* / *or else* (failing that) | **`xen`** between the clauses ([clause sequence](/clause-sequence#clause-sequence)) |
 | *nevertheless* / *nonetheless* (discourse) | **`xezom`** after the finished claim; inside one sentence, **`hezom blarl`** |
 | *whereas* (two claims set against each other) | **`xezom`** before the second claim, or **`hezom blarl`** inside one sentence |
-| *moreover* / *furthermore* (discourse) | **`ael …`** opens the sentence that goes further; **`al …`** adds a separate point ([stacked discourse hooks](/discourse-hooks#stacked-discourse)) |
+| *moreover* / *furthermore* (discourse) | **`aol …`** opens the sentence that goes further; **`al …`** adds a separate point ([stacked discourse hooks](/discourse-hooks#stacked-discourse)) |
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}
 
@@ -514,7 +514,7 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 | *suitable* / *appropriate* (for a need) | `guwatham` or `thudatham zoel` | met, or enough for the need |
 | *more important than* | `zol` between the nouns, then `gurethal` | rank on the lasting met sake |
 | *upset* | `wawothumar goyem` | relatedness, unmet, held inside, surging |
-| *upset for someone* | `wawothumem goyem` + `/b/` | unmet relatedness on their behalf |
+| *upset for someone* | `wawothumom goyem` + `/b/` | unmet relatedness on their behalf |
 
 > `zanal guwatham.`
 >
@@ -753,19 +753,19 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 A feeling word is how you feel **now**. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`goyem`**, as for any [forecast](/evidentiality#forecast) or [dated claim](/universality#dated-channel): the offset dates the stimulus, and the channel says how you know it.
 
-> `zezuyel wuwathuraor goyem thebal blral.`
+> `zezuyel wuwathuraer goyem thebal blral.`
 >
 > [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-REPORTED.strong | bl-later]
 >
 > "Anxious about the dialogue that's coming, as a reliable source says."
 
-> `zezuyel wuwathuraor goyem thabor blral.`
+> `zezuyel wuwathuraer goyem thabor blral.`
 >
 > [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-INTUITION.weak | bl-later]
 >
 > "Anxious about a dialogue I only have a hunch is coming."
 
-> `zezuyel wawothumol goyem thevum blrul.`
+> `zezuyel wawothumel goyem thevum blrul.`
 >
 > [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | [th-MEMORY | bl-earlier]
 >
@@ -783,7 +783,7 @@ Other shapes use forms you already have:
 
 A [feeling with no object](/feelings-permission#feeling-no-object) can take a channel and offset too. Then the stimulus is real but unnamed: you know when it is, not what it is.
 
-> `thuwathuruor thabor blral.`
+> `thuwathuruer thabor blral.`
 >
 > th-competence-unmet-passing-UNPLACED-SURGING | [th-INTUITION.weak | bl-later]
 >
@@ -798,13 +798,13 @@ How the stimulus is known matters. A dialogue a reliable source announced (`theb
 
 To say you **felt** it at another time, date the feeling itself with [stance as-of](/as-of#stance-as-of): **`thenam`** plus the time or event in `/b/`, after the stimulus. Add a remembering channel for *I remember feeling it*.
 
-> `zezuyel wawothumol goyem thenam blezuyel.`
+> `zezuyel wawothumel goyem thenam blezuyel.`
 >
 > [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | [th-as-of.ledger | bl-speech]
 >
 > "The dialogue stung me at the time." (nothing is said about now)
 
-> `zezuyel wawothumol goyem thevum thenam blezuyel.`
+> `zezuyel wawothumel goyem thevum thenam blezuyel.`
 >
 > [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | th-MEMORY | [th-as-of.ledger | bl-speech]
 >
@@ -819,19 +819,19 @@ With no pair, the feeling is now. Keeping *it hurt then* apart from *it hurts no
 
 A direction locus says where the charge **goes**. It does not say who **caused** it. Name the cause with the [because pole](/iff-fault#because) after the feeling, and name its [fault](/fault#fault) only when you mean it. The target and the cause may differ.
 
-> `zezuyel wawothumom goyem bluzozen thahum blerulal.`
+> `zezuyel wawothumem goyem bluzozen thahum blerulal.`
 >
 > [z-speech | [[w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | bl-Uzozen]] | [th-because | bl-rain]
 >
 > "Irritated at Uzozen about the dialogue, but the rain caused it."
 
-> `zonal wawothumol goyem blolazun thahum blarl zolazun vezuyel.`
+> `zonal wawothumel goyem blolazun thahum blarl zolazun vezuyel.`
 >
 > [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Olazun]] | [th-because | bl-that-clause] | z-Olazun | v-tell
 >
 > "Resentful at Olazun about the memo, because Olazun spoke." (a cause, and no one is blamed)
 
-> `zonal wawothumol goyem blolazun thomam thahul blarl zolazun vezuyel.`
+> `zonal wawothumel goyem blolazun thomam thahul blarl zolazun vezuyel.`
 >
 > [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Olazun]] | th-MAY | [th-because.fault | bl-that-clause] | z-Olazun | v-tell
 >
@@ -847,19 +847,19 @@ Most of these feelings are about the **understanding** sake: whether something m
 
 | English | Agebon | Reading |
 |---------|--------|---------|
-| *curious about* | `wowothomom goyem` | understanding as the motive, aimed at it, flowing |
+| *curious about* | `wowothomem goyem` | understanding as the motive, aimed at it, flowing |
 | *interested in* | `wowothamam goyem` | understanding met, held inside, flowing |
-| *fascinated by* | `wowothamor goyem` | understanding met, aimed at it, surging |
+| *fascinated by* | `wowothamer goyem` | understanding met, aimed at it, surging |
 | *it clicked* / *aha* | `thowotharar.` | understanding met right away, held inside, surging |
-| *confused by* | `wowothumaom goyem` | understanding unmet, can be softened, over the situation, flowing |
+| *confused by* | `wowothumaem goyem` | understanding unmet, can be softened, over the situation, flowing |
 | *bored by* | `wowothurul goyem` | understanding unmet for now, moving off, still |
 | *bored* (no object) | `thowothural.` | understanding unmet for now, held inside, still |
-| *in awe of* | `wowothalaol goyem` | understanding met for good, over the situation, still |
+| *in awe of* | `wowothalael goyem` | understanding met for good, over the situation, still |
 | *it turns out* / *surprisingly* | `themom` | mirative on the clause |
 | *amazed* / *astonished* | `themol` | mirative: a firm expectation overturned |
 | *pleasantly surprised by* | a met feeling + `themom` | how it lands, plus the mirative |
 
-> `zogalal wowothalaol goyem.`
+> `zogalal wowothalael goyem.`
 >
 > z-galaxy | [w-understanding-met-lasting-CIRCUM-STILL | g-stimulus]
 >
@@ -1188,7 +1188,7 @@ Short drills for these recipes. A channel and offset after **`goyem`** date the 
 **1.** *Anxious about the dialogue that's coming, as a reliable source says.* (competence at stake for now; hangs over the room; surging)
 
 ::: details Show answer
-`zezuyel wuwathuraor goyem thebal blral.`
+`zezuyel wuwathuraer goyem thebal blral.`
 
 [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-REPORTED.strong | b-later]
 :::
@@ -1196,14 +1196,14 @@ Short drills for these recipes. A channel and offset after **`goyem`** date the 
 **2.** *Irritated at Uzozen about the memo, but the rain caused it.* (unmet relatedness, modifiable; aimed; flowing)
 
 ::: details Show answer
-`zonal wawothumom goyem bluzozen thahum blerulal.`
+`zonal wawothumem goyem bluzozen thahum blerulal.`
 
 [z-memo | [[w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | b-Uzozen]] | [th-because | b-rain]
 :::
 
 #### Agebon → English {#reasons-feelings-agebon-to-english}
 
-**1.** `zonal wawothumol goyem thenam blezuyel.`
+**1.** `zonal wawothumel goyem thenam blezuyel.`
 
 ::: details Show answer
 
@@ -1212,7 +1212,7 @@ Short drills for these recipes. A channel and offset after **`goyem`** date the 
 *The memo stung me at the time of the dialogue.*
 :::
 
-**2.** `zezuyel wawothumol goyem blolazun thahul blarl zolazun vezuyel.`
+**2.** `zezuyel wawothumel goyem blolazun thahul blarl zolazun vezuyel.`
 
 ::: details Show answer
 

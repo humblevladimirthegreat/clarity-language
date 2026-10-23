@@ -54,15 +54,15 @@ PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** t
 >
 > "I intend to walk, details open, and I've decided that for now."
 
-To say an event goes against a decision (*against my decision*), put DECISION after the hook **`uem`** ([contrary to a stance](prescription.md#contrary-to-stance)).
+To say an event goes against a decision (*against my decision*), put DECISION after the hook **`uom`** ([contrary to a stance](prescription.md#contrary-to-stance)).
 
-> `zuzozen vowurel uem thogom.`
+> `zuzozen vowurel uom thogom.`
 >
 > z-Uzozen | v-walk | [contrary-to | th-DECISION-modifiable]
 >
 > "Uzozen walks, against my decision."
 
-> `zuwon vowurel uem thogol.`
+> `zuwon vowurel uom thogol.`
 >
 > z-speaker | v-walk | [contrary-to | th-DECISION-irreversible]
 >
@@ -182,9 +182,9 @@ A want, a [plan](/intention#plan-predict), and a [decision](#decision) are three
 >
 > "I have long wanted to walk, and I plan to."
 
-For *against my wishes*, put WANT after the hook **`uem`** ([contrary to a stance](prescription.md#contrary-to-stance)): the event goes against that want. For someone else's wishes, a [holder](holder.md#holder) goes between **`uem`** and WANT.
+For *against my wishes*, put WANT after the hook **`uom`** ([contrary to a stance](prescription.md#contrary-to-stance)): the event goes against that want. For someone else's wishes, a [holder](holder.md#holder) goes between **`uom`** and WANT.
 
-> `zuzozen vowurel uem thalem.`
+> `zuzozen vowurel uom thalem.`
 >
 > z-Uzozen | v-walk | [contrary-to | th-WANT-unstated]
 >
@@ -196,7 +196,7 @@ For *against my wishes*, put WANT after the hook **`uem`** ([contrary to a stanc
 
 WANT, PLAN, and DECISION are all in a mind, and with nothing else marked that mind is yours. English *Olazun plans for Uzozen to walk* and *Uzozen has decided to walk* report what is in someone else's mind as if you could see it. None of the three takes a `/b/` for whose it is. Someone else's want, plan, or decision is their view: you give it with a [holder](holder.md#holder), which says how you know it. That keeps a guess about someone's intentions from sounding like a fact.
 
-After a holder, WANT and DECISION are the holder's, just as PLAN is. After **`uem`**, write the holder word, then the stance, for *against their wishes*.
+After a holder, WANT and DECISION are the holder's, just as PLAN is. After **`uom`**, write the holder word, then the stance, for *against their wishes*.
 
 > `zuzozen thebamuzozen thalem vowurel.`
 >
@@ -210,7 +210,7 @@ After a holder, WANT and DECISION are the holder's, just as PLAN is. After **`ue
 >
 > "I gather Uzozen has decided to walk, and can still change that."
 
-> `zolazun vezuvol uem theyemuzozen thalem.`
+> `zolazun vezuvol uom theyemuzozen thalem.`
 >
 > z-Olazun | v-sleep | [contrary-to | th-CLUES-Uzozen | th-WANT-unstated]
 >
@@ -318,7 +318,7 @@ z-Ahelan | th-plan-itinerary | th-DECISION-irreversible | d-page | v-write
 *I plan for Ahelan to write the page, and that choice is final.*
 :::
 
-**2.** `zuzozen vezuyel uem thogom.`
+**2.** `zuzozen vezuyel uom thogom.`
 
 ::: details Show answer
 z-Uzozen | v-tell | [contrary-to | th-DECISION-modifiable]

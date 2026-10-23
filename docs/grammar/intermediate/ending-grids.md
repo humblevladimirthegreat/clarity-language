@@ -14,8 +14,8 @@ Beginner already used closed **-l** and open **-m** for how complete B is, or ho
 | | **-l** | **-m** |
 |--|--------|--------|
 | **a** (*including*) | `al`: including B | `am`: including B, and maybe more |
-| **e** (*rather*) | `el`: or rather B | `em`: or rather B, and maybe more |
-| **o** (*instead*) | `ol`: instead (B in place of A) | `om`: B instead of A, B being one of several possible replacements |
+| **e** (*rather*) | `ol`: or rather B | `om`: or rather B, and maybe more |
+| **o** (*instead*) | `el`: instead (B in place of A) | `em`: B instead of A, B being one of several possible replacements |
 | **u** (*except*) | `ul`: except B | `um`: except B, and maybe more |
 
 #### Discourse
@@ -26,13 +26,13 @@ At the front of a sentence, **-m** says this sentence is one of several you coul
 | | **-l** | **-m** |
 |--|--------|--------|
 | **a** (*additionally*) | `al`: *Additionally, …* | `am`: *Among other things, …* |
-| **e** (*in other words*) | `el`: *In other words, …* | `em`: *To put it one way, …* |
-| **o** (*instead*) | `ol`: *Instead, …* | `om`: *Instead, for instance, …* |
+| **e** (*in other words*) | `ol`: *In other words, …* | `om`: *To put it one way, …* |
+| **o** (*instead*) | `el`: *Instead, …* | `em`: *Instead, for instance, …* |
 | **u** (*except*) | `ul`: *Except, …* | `um`: *Except, among other exceptions, …* |
 
 To make a whole `A HOOK B` phrase into a name (a store, a title, a handle), give the hook **-n** ([titled phrases](proper-names.md#titled-phrases)). Otherwise use **-l** or **-m**. The two sides keep their usual endings (kinds **-l**, abstracts **-m**, a name **-n**).
 
-> `dududal on dugudal.`
+> `dududal en dugudal.`
 >
 > NAME[d-tea | instead | d-coffee]
 >
@@ -56,7 +56,7 @@ English uses the same prepositions for states, plans, and conditions as for plac
 >
 > "Olazun gets out of debt."
 
-> `zuzozen varayel uel bonam.`
+> `zuzozen varayel uol bonam.`
 >
 > z-Uzozen | v-write | [against | b-policy]
 >
@@ -65,19 +65,19 @@ English uses the same prepositions for states, plans, and conditions as for plac
 | Hook | Abstract landmark | Example | English |
 |------|-------------------|---------|---------|
 | **`al`** *in* | a state or condition you are inside | `al bobowum` | *in a crisis* |
-| **`aol`** *on* | a plan, rule, or footing you stand on | `aol bonam` | *on policy* |
-| **`ol`** *at* | a point of concern or a status | `ol babevam` | *at issue* |
+| **`ael`** *on* | a plan, rule, or footing you stand on | `ael bonam` | *on policy* |
+| **`el`** *at* | a point of concern or a status | `el babevam` | *at issue* |
 | **`oel`** *toward* | a tendency you head toward | `oel buzebum` | *toward a habit* |
 | **`ul`** *from* | what something comes from or owes to | `ul buzobam` | *from heritage* |
 | **`ual`** *out of* | a condition you leave | `ual baram` | *out of debt* |
-| **`uol`** *through* | something you last through | `uol bobowum` | *through the crisis* |
-| **`el`** *for* | what you favor | `el bonam` | *for the policy* |
-| **`ael`** *using* | what you go by | `ael bugarom` | *by tradition* |
-| **`uel`** *against* | what you oppose | `uel bonam` | *against the policy* |
+| **`uel`** *through* | something you last through | `uel bobowum` | *through the crisis* |
+| **`ol`** *for* | what you favor | `ol bonam` | *for the policy* |
+| **`aol`** *using* | what you go by | `aol bugarom` | *by tradition* |
+| **`uol`** *against* | what you oppose | `uol bonam` | *against the policy* |
 
-The frames read the same way, with the landmark as the general setting: `am bobowum` *amid the crisis*, `uem bonam` *contrary to the policy*. A reading that needs a different picture is not a hook reading; say it with its own word.
+The frames read the same way, with the landmark as the general setting: `am bobowum` *amid the crisis*, `uom bonam` *contrary to the policy*. A reading that needs a different picture is not a hook reading; say it with its own word.
 
-**Compare with:** the landmark's **-m** picks its abstract sense (`bobowum` *catastrophe*, where `bobowul` is *bomb*); the hook's own **-m** (`am`, `uem`) makes the landmark the setting. The two choices are separate, and a word can take both.
+**Compare with:** the landmark's **-m** picks its abstract sense (`bobowum` *catastrophe*, where `bobowul` is *bomb*); the hook's own **-m** (`am`, `uom`) makes the landmark the setting. The two choices are separate, and a word can take both.
 ### Detail on the hook (`/w/`) {#hook-w}
 
 To add detail to the hook itself (*hesitantly excepting*, *never excepting*), put a `/w/` word right before the hook. A `/w/` word always describes the word **right after** it, and a hook takes one the same way a `/ɡ/` or `/h/` word does. A [restrictor](/restrictors) works there too. The hook's right-hand piece follows as usual.
@@ -116,7 +116,7 @@ On an extra-noun hook, `/w/` goes before the hook and `/b/` still comes right af
 
 A discourse hook takes `/w/` the same way: `welazom al zuzozen vowurel` is *Additionally, very much so, Uzozen walks.* A `/b/` right after the hook still makes it an extra-noun hook, not a discourse hook.
 
-### Ranges (`oel` / `ual` / `uel`) {#ranges}
+### Ranges (`oel` / `ual` / `uol`) {#ranges}
 
 When the items sit on a line with an order (people in a queue, days, chapters, numbers), English *A through B* names a **range**: A, B, and everything between. Put a stacked hook between two words in the same role: `A HOOK B`. Between same-role words these hooks name only ranges; with `/b/` on the right and no `/b/` on the left, they are [extra-noun hooks](/hooks#extra-noun) (*toward*, *out of*, *against*).
 
@@ -131,7 +131,7 @@ When the items sit on a line with an order (people in a queue, days, chapters, n
 |--------|-----|---------|-----|
 | **`oel`** | A, B, and everything between | *A through B* | **o** ≈ at + **e** ≈ for: start at A, head for B |
 | **`ual`** | only what lies between | *strictly between A and B* | **ua** ≈ take away both ends |
-| **`uel`** | only what lies outside | *outside A–B* | **ue** ≈ undo the stretch from A to B |
+| **`uol`** | only what lies outside | *outside A–B* | **ue** ≈ undo the stretch from A to B |
 
 The range runs from A to B, in the order you say them. Endings work as on other hooks: **-m** makes the ends soft (*roughly A through B*), and **-n** names the range as a whole. **-r** stands in for one member you are not naming, and under a [question](/questions#fill-ask-r) it asks which one:
 
@@ -141,7 +141,7 @@ The range runs from A to B, in the order you say them. Endings work as on other 
 >
 > "Someone between Uzozen and Ahelan sleeps."
 
-A range **-r** always has a word on each side (`oer` / `uar` / `uer`). With nothing on the right, extra-noun **-r** is not a range.
+A range **-r** always has a word on each side (`oer` / `uar` / `uor`). With nothing on the right, extra-noun **-r** is not a range.
 
 > `zuzozen ual zahelan vezuvol.`
 >
@@ -201,7 +201,7 @@ z-family | [w-amazement | including] | z-Uzozen | v-write
 **2.** *Olazun writes a newspaper against the policy.*
 
 ::: details Show answer
-`zolazun dunonal varayel uel bonam.`
+`zolazun dunonal varayel uol bonam.`
 
 z-Olazun | d-newspaper | v-write | [against | b-policy]
 :::
@@ -216,15 +216,15 @@ z-Uzozen | through | z-Ahelan | v-write
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zuzozen oel zahelan varuvel.`
+**1.** `zuzozen uor zahelan varuvel.`
 
 ::: details Show answer
-z-Uzozen | through | z-Ahelan | v-run
+z-Uzozen | some.outside | z-Ahelan | v-run
 
-*Everyone from Uzozen through Ahelan runs.*
+*Someone outside the Uzozen–Ahelan band runs.*
 :::
 
-**2.** `zahelan dunonal om derowol vawebol.`
+**2.** `zahelan dunonal em derowol vawebol.`
 
 ::: details Show answer
 z-Ahelan | d-newspaper | instead.open | d-radio | v-see
@@ -232,7 +232,7 @@ z-Ahelan | d-newspaper | instead.open | d-radio | v-see
 *Ahelan sees the radio instead of the newspaper.* (one possible replacement)
 :::
 
-**3.** `zolazun varayel aol bonam.`
+**3.** `zolazun varayel ael bonam.`
 
 ::: details Show answer
 z-Olazun | v-write | [on | b-policy]

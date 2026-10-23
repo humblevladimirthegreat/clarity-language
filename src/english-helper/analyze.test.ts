@@ -191,12 +191,12 @@ describe("hooks", () => {
 
   it("does not spell a range or same-role row as a place phrase", () => {
     const jobs = hookSlot("Uzozen walks from the house to the station.", "to").suggestions.filter((s): s is JobSuggestion => s.kind === "job");
-    assert.ok(jobs.some((j) => j.phrase?.startsWith("ol ")));
+    assert.ok(jobs.some((j) => j.phrase?.startsWith("el ")));
     assert.ok(!jobs.some((j) => j.link.endsWith("#ranges") && j.phrase));
   });
 
   it("reads both columns of the -l / -m grid as cues", () => {
-    assert.ok(hookSlot("A cloth sits over the table.", "over").suggestions.some((s) => s.kind === "job" && s.form.startsWith("aom")));
+    assert.ok(hookSlot("A cloth sits over the table.", "over").suggestions.some((s) => s.kind === "job" && s.form.startsWith("aem")));
     assert.ok(hookSlot("Olazun sits among the guards.", "among").suggestions.some((s) => s.kind === "job" && s.form.startsWith("am")));
   });
 

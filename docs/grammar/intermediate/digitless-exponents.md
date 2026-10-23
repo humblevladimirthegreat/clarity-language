@@ -77,7 +77,7 @@ To ask for a **number**, write a [number word](/numbers) with no digits and the 
 | `g=#` (`gror`) | fill a place in order | *Which place?* (*which floor, which chapter*) | **e** ≈ order |
 | `g=_` (`grer`) | fill a code or label | *What number?* (*phone, room*) | **o** ≈ one |
 
-> `yel ol bror zolazun vuhohol.`
+> `yel el bror zolazun vuhohol.`
 > y-question | [at | b-which-place] | z-Olazun | v-sit
 >
 > "Which place does Olazun sit in?" (first, second, and so on)

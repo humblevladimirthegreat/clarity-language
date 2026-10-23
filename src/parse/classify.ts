@@ -60,28 +60,28 @@ const RESTRICTOR_CORE = new Set<string>([
   "ual",
   "uam",
   "ar",
-  "or",
+  "er",
   "ur",
   // unspecified first-ranked occasion (*at the preferred time*; under a question *when's best?*)
-  "er",
+  "or",
   // set / invert / inclusive
-  "ol",
-  "om",
-  "aol",
-  "aom",
-  "ul",
-  "um",
-  "uol",
-  "uom",
-  // ranked (with conjuncts; bare `ael` allowed; `uel` ranks the occasions last-first)
   "el",
   "em",
   "ael",
   "aem",
-  "oel",
-  "oem",
+  "ul",
+  "um",
   "uel",
   "uem",
+  // ranked (with conjuncts; bare `ael` allowed; `uel` ranks the occasions last-first)
+  "ol",
+  "om",
+  "aol",
+  "aom",
+  "oel",
+  "oem",
+  "uol",
+  "uom",
 ]);
 
 export type ClassifyTables = {
@@ -470,11 +470,11 @@ export function isBarStance(word: LexWord, tables: ClassifyTables): boolean {
   return word.reading === "ordinary" && family.kind === "content";
 }
 
-/** Closed `/th/` or clause-adverb kinds `uem` takes as its frame: each has content an event can go against (prescription.md#contrary-to-stance). */
+/** Closed `/th/` or clause-adverb kinds `uom` takes as its frame: each has content an event can go against (prescription.md#contrary-to-stance). */
 const FRAME_OVERLAY_KINDS = new Set(["evidential", "plan", "decision", "want"]);
 
 /**
- * A `/th/` word or clause adverb that can be the frame of `uem` *contrary to*: a channel (or a holder on one), PLAN,
+ * A `/th/` word or clause adverb that can be the frame of `uom` *contrary to*: a channel (or a holder on one), PLAN,
  * DECISION, WANT, a say word's no or requirement, or a speaker attitude (an ordinary content root on `/th/`). Sakes,
  * a say word's yes or *their call*, poles, MAY, NOTIONAL, MIRATIVE, RESIDUE, FORMER, CAUSE, ATTEMPT, and ability say
  * nothing an event can contradict.

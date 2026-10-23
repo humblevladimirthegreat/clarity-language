@@ -45,9 +45,9 @@ A place, tool, or *of*-relation on the noun is still an extra-noun [hook](/hooks
 >
 > "Uzozen sees a guard who sits."
 
-For English *whose*, resume the person after the [whose hook **`em`**](/extra-noun-hooks#genitive) in the second sentence. Use **`gogunum`** instead when the point is that the guard legally owns it.
+For English *whose*, resume the person after the [whose hook **`om`**](/extra-noun-hooks#genitive) in the second sentence. Use **`gogunum`** instead when the point is that the guard legally owns it.
 
-> `zagayul vuhohol. zudozol em bagayur varuvel.`
+> `zagayul vuhohol. zudozol om bagayur varuvel.`
 >
 > z-guard | v-sit . [z-dog | [used-by | b-←guard]] | v-run
 >
@@ -67,11 +67,11 @@ English uses the same *who* clause for two jobs. When it picks out **which** one
 
 ### Stacked owners (*Uzozen's dog's bone*) {#stacked-owners}
 
-**Needs:** [Whose (`em`)](/extra-noun-hooks#genitive) · [Sequence `ao`](/rank-joins#sequence-ao)
+**Needs:** [Whose (`om`)](/extra-noun-hooks#genitive) · [Sequence `ao`](/rank-joins#sequence-ao)
 
-When English stacks possessives, keep one **`em`** and list every owner in its `/b/`, closed by the sequence join **`baol`**. Put the **nearest** owner first: the first `/b/` uses the host, and each later `/b/` keeps the one before it.
+When English stacks possessives, keep one **`om`** and list every owner in its `/b/`, closed by the sequence join **`baol`**. Put the **nearest** owner first: the first `/b/` uses the host, and each later `/b/` keeps the one before it.
 
-> `zobel em budozol buzozen baol.`
+> `zobel om budozol buzozen baol.`
 >
 > [z-bone | [used-by | [b-dog | b-Uzozen | b-in-order]]]
 >
@@ -123,7 +123,7 @@ Keep the two verbs different. **-r** points at the latest matching event, so `zo
 
 **Needs:** [Which person or thing](/dependents#which-noun) · [Resume](/pronouns#resume-r) · [Of relations](/of-relations#of-relations) · [Negation](/joins#negation-u)
 
-English *'s* on an act (*Uzozen's walk*, *the monkey's tricks*) names who did it. **`em`** is for things in someone's use, and an act is not one. Say the act as its own sentence first, then resume its verb root with **-r** in the next sentence: *that walk*.
+English *'s* on an act (*Uzozen's walk*, *the monkey's tricks*) names who did it. **`om`** is for things in someone's use, and an act is not one. Say the act as its own sentence first, then resume its verb root with **-r** in the next sentence: *that walk*.
 
 > `zuzozen vowurel. zolazun dowurer vawebol.`
 >
@@ -251,7 +251,7 @@ English names a person by what they usually do (*a singer*, *a manager*). Agebon
 | `zwazebal` | *audience* (those who hear) | `ebal` *ear* |
 | `zwezoyayul` | *terrorist* | `oyayul` *ogre* |
 | `zwazehavam` | *tourist* | `ehaval` *ship* |
-| `zwezaheham` | *neighbor* (add `om buwon` for *near me*) | `ahehal` *house* |
+| `zwezaheham` | *neighbor* (add `em buwon` for *near me*) | `ahehal` *house* |
 | `zwezobayel` | *officer* (police) | `obayel` *police* |
 | `zwezagahem` | *official* / *minister* | `agahem` *institution* |
 | `zwezahalagahel` | *politician* | `ahalagahel` *government* |
@@ -360,7 +360,7 @@ English *buy* and *sell* are two views of one swap. Agebon has one trading verb,
 
 ### Give, get, lend, earn, owe {#give-get}
 
-**Needs:** [The extra `/b/` party (`o`)](/roles#role-compounds) · [Extra noun (`el`, `em`)](/hooks#extra-noun) · [Exchange](/relations#exchange) · [Coordinated lists](/rank-joins#respectively) · [Fault](/fault#fault)
+**Needs:** [The extra `/b/` party (`o`)](/roles#role-compounds) · [Extra noun (`ol`, `om`)](/hooks#extra-noun) · [Exchange](/relations#exchange) · [Coordinated lists](/rank-joins#respectively) · [Fault](/fault#fault)
 
 English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Agebon keeps the giving verb `vewal` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in plain `/b/` after the verb ([recipient](/clause#extra-nouns)). To name the parties from the verb itself, use the [role compounds](/roles#role-compounds): **`zwazewal`** is the giver (*supplier*, *provider*) and **`zwabewal`** is the recipient (*receiver*). **-r** (`zwabewar`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vegeral` (*credit*, with the *lend* sense): the borrower is the recipient.
 
@@ -375,8 +375,8 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 | *distribute* | `zuzozen danal vewal bolazun bahelan bal.` | the book goes to each of them |
 | *earn* | `zuzozen varayel heham blaral.` | write in exchange for money |
 | *owe* | `zuzozen garam blolazun.` | in debt to Olazun |
-| *get* (go after something) | `zuzozen vowurel el banal.` | walk for the book |
-| *contribute money* | `zuzozen daral vewal el bavayal.` | give money for a family's sake |
+| *get* (go after something) | `zuzozen vowurel ol banal.` | walk for the book |
+| *contribute money* | `zuzozen daral vewal ol bavayal.` | give money for a family's sake |
 | *contribute to* (be part of the cause) | `…therar barl …` | one share among several causes |
 
 > `zuzozen danal vewal bolazun.`
@@ -403,7 +403,7 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 >
 > "Uzozen gives a book to Olazun and Ahelan."
 
-**Compare with:** *buy* and *sell* are the [swap](#buy-sell). *For* as a *get meant to reach B* is the hook `el`, and `em` says it has already reached B and is in B's use.
+**Compare with:** *buy* and *sell* are the [swap](#buy-sell). *For* as a *get meant to reach B* is the hook `ol`, and `om` says it has already reached B and is in B's use.
 
 ### Join, belong, comprise, replace, represent, prefer, involve, agree {#relating-verbs}
 
@@ -415,7 +415,7 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 |---------|--------|---------|
 | *join* / *associate with* (come along) | `zuzozen vowurel han blolazun.` | walks in company with Olazun |
 | *join* / *admit* (take into a set) | `zuzozen dugedam vaen.` | admits the object; more may follow |
-| *belong to* | `zanal em bolazun.` | in Olazun's use |
+| *belong to* | `zanal om bolazun.` | in Olazun's use |
 | *consist of* / *made of* | `zahehal gulem blulel.` | material |
 | *comprise* / *constitute* / *is part of* | `zehowol gobem blahehal.` | a piece of the whole |
 | *match* / *correspond to* / *fit* (alike) | `zahehal hewom bludozol.` | like, as a simile |
@@ -433,7 +433,7 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 | *consult* | `zuzozen vezuyelalobal dolazun.` | talks with the expert |
 | *shoot* | `zuzozen vugevul.` | uses the gun root |
 | *involve* / *include* (among others) | `zuzozen vowurel am bolazun.` | walks, Olazun among those involved |
-| *apply* / *use* (a tool) | `zuzozen vowurel ael behowol.` | walks using the hammer |
+| *apply* / *use* (a tool) | `zuzozen vowurel aol behowol.` | walks using the hammer |
 | *agree with* | `zuzozen dolazun vonamel.` | nods to Olazun |
 | *disagree with* | `zuzozen dolazun vonamel vul.` | does not nod to Olazun |
 
@@ -455,7 +455,7 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 >
 > "Uzozen would rather walk than run."
 
-**Compare with:** *or rather* (correcting what you just said) is the revision hook [`el`](/hooks#rather-el), not a preference. *Belong to* as legal ownership is `gogunum` ([of relations](/of-relations#of-relations)). *Represent* as *stand for* a symbol is not proxy, and has no recipe here.
+**Compare with:** *or rather* (correcting what you just said) is the revision hook [`ol`](/hooks#rather-el), not a preference. *Belong to* as legal ownership is `gogunum` ([of relations](/of-relations#of-relations)). *Represent* as *stand for* a symbol is not proxy, and has no recipe here.
 
 ### Piece, species, gender, patient, function, size, way {#thing-nouns}
 
@@ -472,11 +472,11 @@ English makes nouns for a part, a kind, a role, and a manner. Agebon has no sepa
 | *gender* / *sex* (the category) | `zevugom zemugom zam.` | the open pair female, male |
 | *sex* (the act) | `zelemam` | sexuality |
 | *patient* (being treated) | `zwaduhemul` | the one who undergoes healing |
-| *scene* (where it happens) | `zuzozen vowurel ol bahehal. zolazun vuhohol or.` | the place already named: *there* |
+| *scene* (where it happens) | `zuzozen vowurel el bahehal. zolazun vuhohol er.` | the place already named: *there* |
 | *function* (purpose) | `zanal guwathom.` | the book's purpose is competence |
 | *size* (how big) | `zanal zehowol zoel gelazom.` | same size as the hammer |
 | *way* / *method* / *style* / *mode* | the manner adverb on `/h/` | `zuzozen vowurel hedurem.` |
-| *instance* / *for example* | `aol …` opens the sentence | one case of what you said |
+| *instance* / *for example* | `ael …` opens the sentence | one case of what you said |
 | *everybody* | `zual` | every member |
 | *absence* | `zawuvol gul` | not present |
 | *poverty* | `zuzozen gegomam gul.` | not wealthy |
@@ -526,7 +526,7 @@ An English noun like *case* or *board* covers several jobs, and Agebon has a dif
 | *do* + a noun (*do the dishes*) | `zuzozen duwodalx vayabal.` | the act itself in the verb slot: washes the plates |
 | *do something* | `zuzozen var.` | an unnamed act |
 | *What is Uzozen doing?* | `yel var zuzozen.` | a [fill-ask](/questions#fill-ask) for the act |
-| *application* (use) | hook `ael` + tool | `zuzozen vowurel ael behowol.` |
+| *application* (use) | hook `aol` + tool | `zuzozen vowurel aol behowol.` |
 | *application* (software) | `zobogal` | a package |
 | *campaign* | `zuzozen vavuvum herem blenulul.` | struggles during a period |
 | *behavior* | `zezobam` | the activity, or a manner adverb |
@@ -554,7 +554,7 @@ An English noun like *case* or *board* covers several jobs, and Agebon has a dif
 | *editor* | `zwazebeweloruyol` | doer of the editing |
 | *closely* | `zuzozen vawebol hazavem hul.` | looks, not at a distance |
 | *briefly* | `zuzozen vowurel bazerem gram.` | walks for about five seconds |
-| *wherever* | `ol bual gahehal` | everywhere houses are |
+| *wherever* | `el bual gahehal` | everywhere houses are |
 | *alone* (without company) | `zuzozen vowurel huan blur.` | walks without any other |
 | *single* (unmarried) | `zuzozen guwuram gul.` | not in union |
 | *income* / *revenue* | `zaralanonal` | money incoming |
@@ -679,7 +679,7 @@ Some English words have a second or third sense that a published root already ca
 | *fit* (healthy) | `zuzozen geredom.` | in health |
 | *fit* (suits) | `guwatham` | a met need ([sake words](say-reasons.md#sake-words)) |
 | *match* (a contest) | `zazaham` | a contest |
-| *ride* (a horse, a bike) | `zuzozen vehavam ael bohazel.` | travels using the horse |
+| *ride* (a horse, a bike) | `zuzozen vehavam aol bohazel.` | travels using the horse |
 | *admit* (acknowledge a fault) | `zuzozen damobal vewuyam.` | acknowledges the harm |
 | *directly* (without a go-between) | `gurem` | straight |
 | *set off* / *start* | `vebugem` | [starts](say-reasons.md#phase-verbs) |
@@ -691,7 +691,7 @@ Some English words have a second or third sense that a published root already ca
 >
 > "Uzozen keeps the book."
 
-> `zuzozen vehavam ael bohazel.`
+> `zuzozen vehavam aol bohazel.`
 >
 > z-Uzozen | v-voyage | [using | b-horse]
 >

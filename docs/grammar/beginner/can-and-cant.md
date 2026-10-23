@@ -130,7 +130,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Uzozen can write on the clipboard.*
 
 ::: details Show answer
-`zuzozen varayexal aol begowal.`
+`zuzozen varayexal ael begowal.`
 
 z-Uzozen | v-write-able | [on | b-clipboard]
 :::

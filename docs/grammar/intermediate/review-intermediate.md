@@ -171,7 +171,7 @@ z-Ahelan | d-tent | v-see . z-Ahelan | v-←see | d-bucket
 **Rule:** [How English approximates -r](tag-pronouns.md#how-english-approximates-r)
 :::
 
-**2.** `zolazun zudozal em bolazur zal vazuvel.`
+**2.** `zolazun zudozal om bolazur zal vazuvel.`
 
 ::: details Show answer
 [z-Olazun | [z-duck | [used-by | b-←Olazun]] | z-and] | v-swim
@@ -225,14 +225,14 @@ y-question | [d-cookie | d-wh]
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzozen sees Salad-Instead-of-Sandwich.* (a café name) `zuzozen dedal on dazadal vawebol.` or `zuzozen dedal ol dazadal vawebol.`
+**1.** *Uzozen sees Salad-Instead-of-Sandwich.* (a café name) `zuzozen dedal en dazadal vawebol.` or `zuzozen dedal el dazadal vawebol.`
 
 ::: details Show answer
-`zuzozen dedal on dazadal vawebol.`
+`zuzozen dedal en dazadal vawebol.`
 
 z-Uzozen | NAME[d-sandwich | instead | d-salad] | v-see
 
-**-n** on the hook names the whole phrase; **`ol`** would be *a salad instead of a sandwich*.
+**-n** on the hook names the whole phrase; **`el`** would be *a salad instead of a sandwich*.
 
 **Rule:** [Titled phrases](proper-names.md#titled-phrases)
 :::
@@ -333,14 +333,14 @@ z-Olazun | th-NOTIONAL | v-walk
 **Rule:** [Hold endings (NOTIONAL)](notional-standing.md#hold-endings-notional)
 :::
 
-**10.** *Anyway, Ahelan walks.* `or zahelan vowurel.` or `ol zahelan vowurel.`
+**10.** *Anyway, Ahelan walks.* `er zahelan vowurel.` or `el zahelan vowurel.`
 
 ::: details Show answer
-`or zahelan vowurel.`
+`er zahelan vowurel.`
 
 anyway | z-Ahelan | v-walk
 
-**`or`** goes back to the main line; **`ol`** would replace the last claim (*Instead*).
+**`er`** goes back to the main line; **`el`** would replace the last claim (*Instead*).
 
 **Rule:** [Point back](discourse-hooks.md#hook-resume)
 :::

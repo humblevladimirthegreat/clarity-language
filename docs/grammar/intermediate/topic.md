@@ -19,7 +19,7 @@ A topic is set only by an `/x/` word at the start of a sentence: `/x/`, then the
 | `xuvewem` / `xuvedam` | clear the topic ([linkers](sentence-linkers.md#sentence-linkers)) | *next* / *by the way* |
 
 1. **No topic at the start.** A conversation opens with none.
-2. **Introduce.** An `/x/` word on **-l**, **-m**, or **-n** that is not one of the six sentence linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xudozol` *now, about a dog*). Any [compound](/compounds) works the same way: a hyphenated name (`xuzozexolazun`), a noun pair (`xubedaxuyudal` *now, about peanut butter*), or a [role compound](/roles#role-compounds) (`xwazuduyel` *now, about people who teach*; `xwazuduyer` returns to it). It takes the same adjectives and hooks as any noun (`xudozol em buzozen` *now, about Uzozen's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it.
+2. **Introduce.** An `/x/` word on **-l**, **-m**, or **-n** that is not one of the six sentence linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xudozol` *now, about a dog*). Any [compound](/compounds) works the same way: a hyphenated name (`xuzozexolazun`), a noun pair (`xubedaxuyudal` *now, about peanut butter*), or a [role compound](/roles#role-compounds) (`xwazuduyel` *now, about people who teach*; `xwazuduyer` returns to it). It takes the same adjectives and hooks as any noun (`xudozol om buzozen` *now, about Uzozen's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it.
 3. **Return.** `/x/` + the whole stem of an earlier word + **-r** makes that thing the topic again.
 4. **Clear.** `xuvewem` and `xuvedam` each open a new frame. After either there is no topic until the next introduce or return.
 5. **Persist.** The topic holds until rule 2, 3, or 4 changes it. Clause joins, other linkers, and agenda numbering leave it alone. A goodbye ends the conversation and clears it.
@@ -55,7 +55,7 @@ A thing works as a topic the same way:
 >
 > "Now, about a dog: Uzozen sees it. It runs. Uzozen sits."
 
-With Uzozen as the topic, *Uzozen sees themself* is `xuzozen zalon vawebol dalon.` (`dwazer` still works), and *Uzozen's dog walks* is `xuzozen zudozol em balon vowurel.`: *the topic's* is the same in every role.
+With Uzozen as the topic, *Uzozen sees themself* is `xuzozen zalon vawebol dalon.` (`dwazer` still works), and *Uzozen's dog walks* is `xuzozen zudozol om balon vowurel.`: *the topic's* is the same in every role.
 
 A dropped subject is never read as the topic. `xuzozen dolazun vawebol.` leaves out who sees; it does not say Uzozen sees. Write `zalon` whenever the topic is the doer (and `dalon` or `balon` in the other roles).
 

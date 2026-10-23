@@ -154,7 +154,7 @@ When English ties one extra thing to a noun or an action by a list move (*a cupc
 
 **`gan`** always needs its `/b/` word (`gan b…`).
 
-**Compare with:** *writes with a hammer* is an extra-noun [hook](/hooks#extra-noun) (`ael` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Olazun* is [proxy](/relations#proxy) (`hanom`), not **`hen`** *exclusively for*. **`uel`** is *against* that party, not **`hun`** *refusing*.
+**Compare with:** *writes with a hammer* is an extra-noun [hook](/hooks#extra-noun) (`aol` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Olazun* is [proxy](/relations#proxy) (`hanom`), not **`hen`** *exclusively for*. **`uol`** is *against* that party, not **`hun`** *refusing*.
 
 **Not the same job as:** adjective [joins](/joins) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
 

@@ -88,7 +88,7 @@ z-Ahelan | d-CITE[flaw]#| | v-tell
 **4.** *Uzozen sees “flaw…” on the page.*
 
 ::: details Show answer
-`zuzozen d[abezum#] vawebol aol bebonel.`
+`zuzozen d[abezum#] vawebol ael bebonel.`
 
 z-Uzozen | d-CITE[flaw]# | v-see | [on | b-page]
 :::

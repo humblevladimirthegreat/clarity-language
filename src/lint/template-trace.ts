@@ -26,7 +26,7 @@ const fillers = closedDerived(() => {
     swan,
     word: [`z${swan}n`, `v${walk}l`, `g${swan}l`, `b${swan}n`, `z${swan}n v${walk}l`, `d${swan}n`, `h${swan}l`, `w${swan}l`],
     named: {
-      HOOK: ["al", "am", "ul", "ol", "el", "aol"],
+      HOOK: ["al", "am", "ul", "el", "ol", "ael"],
       BODY: [`z${swan}n v${walk}l`, `v${walk}l`],
       LINKER: ["xal", "xel"],
       JOIN: ["zal", "zel", "zol"],

@@ -126,7 +126,7 @@ export const WORD_DETECTORS: readonly WordDetector[] = [
   { id: "copula", label: (t) => `*${t.normal}* (is a / is the same as)`, links: ["predication.md#classification", "predication.md#identity"], test: (t, next) => t.tags.includes("Copula") && next?.cls !== "verb" },
   { id: "existence", label: () => "*there is* (a lone noun)", links: ["predication.md#existence"], test: (t, next) => t.normal === "there" && !!next?.tags.includes("Copula") },
   { id: "number", label: (t) => `number *${t.normal}*`, links: ["numbers.md#counts"], test: (t) => t.cls === "number" },
-  { id: "and-or", label: (t) => `*${t.normal}* (a list)`, links: ["joins.md#and-lists-a", "joins.md#join-type-vowel-series"], test: (t) => t.cls === "conjunction" && (t.normal === "and" || t.normal === "or") },
+  { id: "and-or", label: (t) => `*${t.normal}* (a list)`, links: ["joins.md#and-lists-a", "joins.md#join-type-vowel-series"], test: (t) => t.cls === "conjunction" && (t.normal === "and" || t.normal === "er") },
   { id: "negation", label: (t) => `negation *${t.normal}*`, links: ["joins.md#negation-u"], test: (t) => t.cls === "negative" },
   { id: "we", label: () => "*we* (who is in the group?)", links: ["pronouns.md#special-pronouns", "plurality.md#person-role-x"], test: (t) => t.normal === "we" || t.normal === "us" || t.normal === "our" },
   { id: "third-person", label: (t) => `*${t.normal}* (point back)`, links: ["pronouns.md#resume-r"], test: (t) => THIRD_PERSON.has(t.normal) },
@@ -136,7 +136,7 @@ export const WORD_DETECTORS: readonly WordDetector[] = [
   { id: "plural", label: () => "plural noun", links: ["plurality.md#associative"], test: (t) => t.cls === "noun" && !!t.plural && !t.proper },
   { id: "relation-prefix", label: (t) => `*${t.normal}*: a hook prefix (the hook's vowels, \`x\` or \`mx\`, then the noun's root)`, links: ["english.md#relation-prefixes", "hook-compounds.md#hook-prefixes"], test: (t) => relationWord(t.normal) },
   { id: "number-prefix", label: (t) => `*${t.normal}*: a numeric prefix (the number body, \`x\` or \`mx\`, then the noun's root)`, links: ["english.md#number-prefixes", "numeric-derivation.md#numeric-derivation"], test: (t) => numberPrefixWord(t.normal) },
-  { id: "participle", label: (t) => (t.shape === "er" ? "doer noun (*-er*, *-or*)" : `*-${t.shape}* word used as ${t.cls === "noun" ? "a noun" : "an adjective"}`), links: ["english.md#participles"], test: (t) => !!t.shape },
+  { id: "participle", label: (t) => (t.shape === "or" ? "doer noun (*-er*, *-or*)" : `*-${t.shape}* word used as ${t.cls === "noun" ? "a noun" : "an adjective"}`), links: ["english.md#participles"], test: (t) => !!t.shape },
   {
     id: "habit",
     label: (t) => `*${t.normal}* (cue then act)`,
@@ -186,27 +186,27 @@ export const BOUNDABLE_JOINS = new Set([
 const BOUNDED_JOIN: Readonly<Record<string, string>> = {
   everyone: "ual", everybody: "ual", everything: "ual", all: "ual",
   someone: "ar", somebody: "ar", something: "ar",
-  anyone: "or", anybody: "or", anything: "or",
+  anyone: "er", anybody: "er", anything: "er",
   nobody: "al", nothing: "al",
 };
 /** The extra-noun hook a preposition names, as written before the seam (`m` for a frame; extra-noun-hooks.md#extra-noun-intermediate). */
 const SEAM_HOOK: Readonly<Record<string, string>> = {
-  in: "a", inside: "a", amid: "am", among: "am", on: "ao", over: "aom", at: "o", near: "om", by: "om",
-  toward: "oe", towards: "oe", from: "u", "away from": "um", "out of": "ua", through: "uo",
-  for: "e", with: "ae", using: "ae", against: "ue",
+  in: "a", inside: "a", amid: "am", among: "am", on: "ae", over: "aem", at: "e", near: "em", by: "aom",
+  toward: "oe", towards: "oe", from: "u", "away from": "um", "out of": "ua", through: "ue",
+  for: "o", with: "ao", using: "ao", against: "uo",
 };
 
 /** The bare restrictor each English time word spells (restrictors.md). */
 const BOUNDED_RESTRICTOR: Readonly<Record<string, string>> = { never: "al", always: "ual", sometimes: "ar" };
 /** The time hook a preposition names on an `/h/` hooked join (hooked-joins.md#hooked-joins-time). */
-const TIME_SEAM_HOOK: Readonly<Record<string, string>> = { since: "u", until: "oe", till: "oe", during: "a", around: "om", at: "o" };
+const TIME_SEAM_HOOK: Readonly<Record<string, string>> = { since: "u", until: "oe", till: "oe", during: "a", around: "em", at: "e" };
 
-/** A closed join with its open twin (`zoxual` / `zoxuam`), or the one form. */
+/** A closed join with its open twin (`zexual` / `zexuam`), or the one form. */
 function withOpen(form: string): string {
   return form.endsWith("l") ? `\`${form}\` (no exceptions) or \`${form.slice(0, -1)}m\` (as far as I know)` : `\`${form}\``;
 }
 
-/** A hooked join spelled from its English: role letter, the hook before the seam, `x`, the join (`zoxual`). */
+/** A hooked join spelled from its English: role letter, the hook before the seam, `x`, the join (`zexual`). */
 export function hookedJoinSpelling(join: string, preposition: string, role: string): string | undefined {
   const hook = role === "h" ? TIME_SEAM_HOOK[preposition] : SEAM_HOOK[preposition];
   const series = role === "h" ? BOUNDED_RESTRICTOR[join] : BOUNDED_JOIN[join];
@@ -251,8 +251,8 @@ export function detectHook(c: HookContext): DetectorHit[] {
     return [{ id: "same-role-hook", label: `*${c.word}* between two phrases in one role: what follows keeps ${keeps}`, links: [same, ...HOOK_LINKS.sameRole] }];
   }
   const out: DetectorHit[] = [];
-  if (c.next?.cls === "question" || c.stranded) out.push({ id: "hook-blank", label: `*${c.word}* + a question word: the hook + blank \`bar\` (\`ol bar\` *where?*, \`ael bar\` *with what?*)`, links: [...HOOK_LINKS.blank] });
-  else if (c.next && RESUME_TARGETS.has(c.next.normal)) out.push({ id: "hook-resume", label: `*${c.word} ${c.next.normal}*: the hook points back with -r (\`aor\` *on it*)`, links: [...HOOK_LINKS.resume] });
+  if (c.next?.cls === "question" || c.stranded) out.push({ id: "hook-blank", label: `*${c.word}* + a question word: the hook + blank \`bar\` (\`el bar\` *where?*, \`aol bar\` *with what?*)`, links: [...HOOK_LINKS.blank] });
+  else if (c.next && RESUME_TARGETS.has(c.next.normal)) out.push({ id: "hook-resume", label: `*${c.word} ${c.next.normal}*: the hook points back with -r (\`aer\` *on it*)`, links: [...HOOK_LINKS.resume] });
   if (c.bounds) {
     const form = hookedJoinSpelling(c.bounds.word, c.word, c.bounds.role);
     const spelled = form ? `${withOpen(form)} + the landmark as a \`bl-\` word` : "the hook's vowels, `x`, the join, then the landmark as a `bl-` word";
@@ -262,7 +262,7 @@ export function detectHook(c: HookContext): DetectorHit[] {
     const spelled = form ? withOpen(form) : "the hook's vowels, `x`, the restrictor";
     out.push({ id: "hooked-join-time", label: `*${c.restrictor} … ${c.word} …*: an \`/h/\` hooked join bounds the times: ${spelled}, then the time as a \`bl-\` word (a sentence after \`blarl\`)`, links: [...HOOK_LINKS.hookedJoinTime] });
   }
-  if (c.afterFrom && GOAL_WORDS.has(c.word)) out.push({ id: "from-to", label: "*from … to*: one unit, `ul` + the source first, then `ol` (reached) or `oel` (toward) + the goal", links: [...HOOK_LINKS.fromTo] });
+  if (c.afterFrom && GOAL_WORDS.has(c.word)) out.push({ id: "from-to", label: "*from … to*: one unit, `ul` + the source first, then `el` (reached) or `oel` (toward) + the goal", links: [...HOOK_LINKS.fromTo] });
   else if (c.hook && c.before?.role === "b") out.push({ id: "hook-on-landmark", label: `right after the landmark *${c.before.text}*: the hook describes *${c.before.text}*, not the clause`, links: [...HOOK_LINKS.landmark] });
   else if (c.hook && c.before && (c.before.role === "z" || c.before.role === "d")) {
     out.push({ id: "hook-on-noun", label: `after *${c.before.text}*: right after that noun the hook describes it (*the guard in a bank*); elsewhere it describes the event`, links: [...HOOK_LINKS.onNoun] });

@@ -70,7 +70,7 @@ z-Ahelan | [d-station | [w-MEMORY | g-quiet]] | v-see
 
 #### Agebon → English {#advanced-agebon-to-english}
 
-**1.** `zoxual bluyahel vuhohol.`
+**1.** `zexual bluyahel vuhohol.`
 
 ::: details Show answer
 [z-at-x-everything | bl-station] | v-sit

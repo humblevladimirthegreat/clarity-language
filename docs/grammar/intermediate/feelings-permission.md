@@ -12,33 +12,33 @@ English emotion words (*anxious*, *resentful*, *proud*) often do **judgment or e
 
 Put that word where any sake word goes: on `/ɡ/` after a belonging, on `/w/` immediately before [stimulus](/sakes#stimulus) **`goyem`** when the noun is not yours, or on `/th/` by itself when the feeling has no object. For the bare noun *emotion*, with no judgment to explain, use the compound `zabolohalal` (the water of the heart).
 
-> `zezuyel wuwathuraor goyem.`
+> `zezuyel wuwathuraer goyem.`
 >
 > z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]
 >
 > "I'm anxious about the dialogue." (my competence is at stake for now, the feeling hangs over the room, and it comes in waves)
 
-Build it from the plain sake word: `wuwathur` (competence, unmet, passing) + **`ao`** (*over*: CIRCUM) + **-r** (SURGING) = `wuwathuraor`. The sake word's own ending (**-r** here) now sits mid-word and keeps its meaning.
+Build it from the plain sake word: `wuwathur` (competence, unmet, passing) + **`ae`** (*over*: CIRCUM) + **-r** (SURGING) = `wuwathuraer`. The sake word's own ending (**-r** here) now sits mid-word and keeps its meaning.
 
 The locus uses the hook vowels you already know. A **placement** locus says where the feeling sits:
 
 | Locus | Hook | Use | English |
 |-------|------|-----|---------|
 | **`a`** | *in* | INTERNAL | *mine, held inside* |
-| **`ao`** | *over* | CIRCUM | *the atmosphere of the situation* |
-| **`uo`** | *through* | UNPLACED | *I can't place where it comes from* (no single source) |
+| **`ae`** | *over* | CIRCUM | *the atmosphere of the situation* |
+| **`ue`** | *through* | UNPLACED | *I can't place where it comes from* (no single source) |
 
 A **direction** locus says what the charge points at:
 
 | Locus | Hook | Use | English |
 |-------|------|-----|---------|
-| **`o`** | *at* | AIMED | *the charge lands on a target* (*annoyed at*, *grateful to*, *pressing for*) |
+| **`e`** | *at* | AIMED | *the charge lands on a target* (*annoyed at*, *grateful to*, *pressing for*) |
 | **`oe`** | *toward* | SEEKING | *turning to someone for comfort or safety* |
-| **`ue`** | *against* | RESISTING | *pushing back* (*objecting to*, fighting) |
-| **`e`** | *for* | ON-BEHALF | *felt for someone's sake* (*upset for*) |
+| **`uo`** | *against* | RESISTING | *pushing back* (*objecting to*, fighting) |
+| **`o`** | *for* | ON-BEHALF | *felt for someone's sake* (*upset for*) |
 | **`u`** | *from* | AWAY | *moving off* (*avoiding*, fleeing, disengaging, hiding) |
 | **`ua`** | *out of* | COLLAPSE | *out of fight: giving up* (*defeated by*) |
-| **`ae`** | *using* | FAWN | *using yourself to placate* (*appeasing*) |
+| **`ao`** | *using* | FAWN | *using yourself to placate* (*appeasing*) |
 
 A direction names the **dominant** pull when feelings mix; use two feeling words for two pulls. AIMED lands on a party or a goal; RESISTING opposes an outcome or a demand. ON-BEHALF is your own feeling about someone else's stake; FAWN is placating someone for your own safety.
 
@@ -46,7 +46,7 @@ Name the landmark with a `bl-` word right after the feeling (after **`goyem`** w
 
 A feeling word with a direction tail already uses its `/b/` for the landmark, so it cannot also name [whose stake](prescription.md#whose-stake).
 
-> `zonal wawothumol goyem blolazun.`
+> `zonal wawothumel goyem blolazun.`
 >
 > z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Olazun]
 >
@@ -70,7 +70,7 @@ Say how **strong** the feeling is with a [degree word](left-bound.md#degree-w) o
 >
 > "I'm overwhelmingly proud of my draft."
 
-> `zonal wamezom wawothumom goyem blolazun.`
+> `zonal wamezom wawothumem goyem blolazun.`
 >
 > z-memo | [[w-small | w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | bl-Olazun]
 >
@@ -81,18 +81,18 @@ The locus plus the motion ending is the **emotion tail**. It goes on met **`tha`
 <!-- cheat-sheet: why-allowed -->
 | Agebon | English |
 |---------|---------|
-| `zezuyel wuwathuraor goyem` | *anxious about the dialogue* (competence at stake, temporary; hangs over the room; surging) |
+| `zezuyel wuwathuraer goyem` | *anxious about the dialogue* (competence at stake, temporary; hangs over the room; surging) |
 | `zozowum wawothumual goyem` | *given up over the division* (unmet relatedness; out of fight; still) |
 | `zebewem guwathamar` | *proud of the draft* (met competence; held inside; surging) |
-| `zonal wawothumem goyem bluzozen` | *upset for Uzozen about the memo* (unmet relatedness; on Uzozen's behalf; flowing) |
+| `zonal wawothumom goyem bluzozen` | *upset for Uzozen about the memo* (unmet relatedness; on Uzozen's behalf; flowing) |
 | `zezuyel wawothumum goyem blolazun` | *avoiding Olazun over the dialogue* (unmet relatedness; moving off from Olazun; flowing) |
-| `zezuyel wawothumaem goyem blolazun` | *placating Olazun about the dialogue* (unmet relatedness; appeasing Olazun; flowing) |
+| `zezuyel wawothumaom goyem blolazun` | *placating Olazun about the dialogue* (unmet relatedness; appeasing Olazun; flowing) |
 | `zonal wawothumoem goyem bluzozen` | *upset about the memo and turning to Uzozen for comfort* (unmet relatedness; seeking Uzozen; flowing) |
-| `zonal wawothumuer goyem` | *objecting to the memo* (unmet relatedness; pushing against the memo; surging) |
+| `zonal wawothumuor goyem` | *objecting to the memo* (unmet relatedness; pushing against the memo; surging) |
 | `zezuyel wurethumal goyem` | *the dialogue feels pointless* (unmet purpose; held inside; still) |
 | `zebewem gewathamam` | *glad my draft helped* (met beneficence; held inside; flowing) |
-| `zezuyel wamezom wuwathuruom goyem` | *a little uneasy about the dialogue, and I can't say why* (competence at stake, temporary; slightly; unplaced; flowing) |
-| `zezuyel wuwathumuer guzezam` | *the dialogue is frustratingly slow* (unmet competence on the slowness; pushing against it; surging) |
+| `zezuyel wamezom wuwathuruem goyem` | *a little uneasy about the dialogue, and I can't say why* (competence at stake, temporary; slightly; unplaced; flowing) |
+| `zezuyel wuwathumuor guzezam` | *the dialogue is frustratingly slow* (unmet competence on the slowness; pushing against it; surging) |
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. To name a feeling without explaining it, its lexicon root works as an ordinary [property](/predication) word: `zuwon gunemul` (*I am angry*). Use the full compose when an emotion word would have done judgment work.
 
@@ -110,7 +110,7 @@ On the clause, a feeling word is about the clause's event, so English *moved tha
 
 With no event at all, a feeling word on `/th/` is a whole sentence about **you**: how you feel right now, with nothing as its object.
 
-> `thuwathuruor.`
+> `thuwathuruer.`
 >
 > th-competence-unmet-passing-UNPLACED-SURGING
 >
@@ -118,13 +118,13 @@ With no event at all, a feeling word on `/th/` is a whole sentence about **you**
 
 A lone feeling can still name what caused it. The cause is not the object: the feeling is not *about* the rain.
 
-> `thuwathuruor thahum blerulal.`
+> `thuwathuruer thahum blerulal.`
 >
 > th-competence-unmet-passing-UNPLACED-SURGING | [th-because | bl-rain]
 >
 > "I'm anxious, and the rain caused it."
 
-**Compare with:** a lone noun before the feeling is an [existence](/predication#existence) clause, so the noun's being there is the stimulus: `zolazun thuwathuruor.` is *anxious that Olazun is here*, not *Olazun is anxious*.
+**Compare with:** a lone noun before the feeling is an [existence](/predication#existence) clause, so the noun's being there is the stimulus: `zolazun thuwathuruer.` is *anxious that Olazun is here*, not *Olazun is anxious*.
 
 ### Hopefully and other attitudes {#speaker-attitude}
 
@@ -278,21 +278,21 @@ The scope vowel is [label scope](/label-seams#label-scope), the same vowels as a
 
 Only **`v`** and pair scope **`o`** take a `bl-` word.
 
-English *against the rules* and *against their will* put [contrary to](prescription.md#contrary-to-stance) **`uem`** right before the say word. That word then names what the event goes against, and it no longer applies to the claim.
+English *against the rules* and *against their will* put [contrary to](prescription.md#contrary-to-stance) **`uom`** right before the say word. That word then names what the event goes against, and it no longer applies to the claim.
 
-> `zuzozen vowurel uem hwavul.`
+> `zuzozen vowurel uom hwavul.`
 >
 > z-Uzozen | v-walk | [contrary-to | h-episode-event-FORBID-rule]
 >
 > "Uzozen walks against the rules."
 
-> `zuzozen vezuyel bolazun uem hwabum.`
+> `zuzozen vezuyel bolazun uom hwabum.`
 >
 > z-Uzozen | v-tell | b-Olazun | [contrary-to | h-episode-recipient-FORBID-said]
 >
 > "Uzozen tells Olazun, against Olazun's will." (Olazun said no)
 
-A yes only lifts a restriction, so no say word with answer **`a`** follows **`uem`**: not permission (`hwavam`), and not consent (`hwadam`, `hwazal`). *Their call* (**`o`**) sets nothing to go against either. A yes that was taken back is a no, so use the refusal: `zuzozen vezuyel bahelan uem hwabum.` To say you broke a promise, give the promise its own sentence after **`hezom blarl`**: `zuwon vezuvol hezom blarl zuwon vowurel hwazal.`
+A yes only lifts a restriction, so no say word with answer **`a`** follows **`uom`**: not permission (`hwavam`), and not consent (`hwadam`, `hwazal`). *Their call* (**`o`**) sets nothing to go against either. A yes that was taken back is a no, so use the refusal: `zuzozen vezuyel bahelan uom hwabum.` To say you broke a promise, give the promise its own sentence after **`hezom blarl`**: `zuwon vezuvol hezom blarl zuwon vowurel hwazal.`
 
 ### Practice {#intermediate-practice}
 
@@ -342,7 +342,7 @@ z-Uzozen | v-tell | b-Ahelan | h-episode-recipient-ALLOW-said
 **3.** *I feel waves of resentment at the hug.*
 
 ::: details Show answer
-`zahuyal wawothumor goyem.`
+`zahuyal wawothumer goyem.`
 
 z-hug | [w-relatedness-unmet-modifiable-AIMED-SURGING | g-stimulus]
 :::
@@ -357,7 +357,7 @@ z-Uzozen | v-hug | h-episode-event-ALLOW-tacit
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `thuwathuruor.`
+**1.** `thuwathuruer.`
 
 ::: details Show answer
 th-competence-unmet-passing-UNPLACED-SURGING
@@ -381,7 +381,7 @@ z-Olazun | v-hug | h-episode-event-ALLOW-rule
 *The rules allow Olazun to hug.*
 :::
 
-**4.** `zuzozen vahuyal uem hwavul.`
+**4.** `zuzozen vahuyal uom hwavul.`
 
 ::: details Show answer
 z-Uzozen | v-hug | [contrary-to | h-episode-event-FORBID-rule]
@@ -389,7 +389,7 @@ z-Uzozen | v-hug | [contrary-to | h-episode-event-FORBID-rule]
 *Uzozen hugs against the rules.*
 :::
 
-**5.** `zahuyal wawothumol goyem blolazun.`
+**5.** `zahuyal wawothumel goyem blolazun.`
 
 ::: details Show answer
 z-hug | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Olazun]

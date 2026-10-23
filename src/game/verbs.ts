@@ -260,7 +260,7 @@ export const HANDLERS: Record<string, Handler> = {
   write: {
     english: ["write", "writes"],
     run(d) {
-      return report(d, clause(who(d), ["write", "writes"], d.patient ? `on ${the(d, d.patient)}` : "a few lines"));
+      return report(d, clause(who(d), ["write", "writes"], d.patient ? `en ${the(d, d.patient)}` : "a few lines"));
     },
   },
   peek: {
@@ -323,7 +323,7 @@ export const HANDLERS: Record<string, Handler> = {
       if (!traitsOf(ctx, patient).pours) return refuse(ctx, `${capitalize(the(d, patient))} does not pour.`);
       setState(ctx.world, patient, "gone");
       const target = d.place?.landmark ?? d.recipient;
-      const outcome = report(d, clause(who(d), ["pour out", "pours out"], `${the(d, patient)}${target ? ` on ${the(d, target)}` : ""}`));
+      const outcome = report(d, clause(who(d), ["pour out", "pours out"], `${the(d, patient)}${target ? ` en ${the(d, target)}` : ""}`));
       if (target && has(ctx.world, target, "burning")) {
         setState(ctx.world, target, "burning", false);
         setState(ctx.world, target, "wet");

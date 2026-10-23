@@ -56,7 +56,7 @@ export type TaggedTerm = {
   /** Verbs: `past`, `present` or `future` read off this word alone. */
   tense?: "past" | "present";
   /** Verbs and adjectives used as nouns: `-ing`, `-ed` participle, or `-er` doer shape. */
-  shape?: "ing" | "ed" | "er";
+  shape?: "ing" | "ed" | "or";
   /** An *-ing* noun or adjective: the verb under it (*lying* → *lie*), when that is a known verb. */
   verb?: string;
   /** Numbers: what this word alone counts (*three*, *3* → 3; *third* → 3 with `ordinal`). */
@@ -145,7 +145,7 @@ function forcedLemma(word: string, kind: keyof typeof FORCE_TAG): string {
 
 function shapeOf(term: JsonTerm, cls: WordClass): TaggedTerm["shape"] {
   const n = term.normal;
-  if (cls === "noun" && doerVerb((term.root ?? n).toLowerCase())) return "er";
+  if (cls === "noun" && doerVerb((term.root ?? n).toLowerCase())) return "or";
   if ((cls === "noun" || cls === "adjective") && n.endsWith("ing") && term.tags.includes("Gerund")) return "ing";
   if (cls === "adjective" && /ed$/.test(n) && term.root && term.root !== n) return "ed";
   return undefined;
