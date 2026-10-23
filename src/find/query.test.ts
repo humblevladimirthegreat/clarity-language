@@ -2,7 +2,8 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
 import { CLOSED } from "../closed-roots.js";
-import { loadDefaultTables } from "../parse/index.js";
+import { classify, loadDefaultTables } from "../parse/index.js";
+import { parseWord } from "../parse/word.js";
 import { collectExamples } from "./examples.js";
 import { hitWord, matchesTerm, matchSequence, parseTerm } from "./query.js";
 
@@ -95,6 +96,13 @@ describe("example words", () => {
 });
 
 describe("collectExamples", () => {
+  it("reads a teaching stub with an ellipsis as the Agebon word", () => {
+    assert.deepEqual(
+      collectExamples("`el …`", tables).map((e) => e.words.map((w) => w.word.raw)),
+      [["el"]],
+    );
+  });
+
   it("reads inline, <code>, and agebon fence spans, and skips fragments", () => {
     const md = [
       "Say `zuzozen vowurel.` or <code>zolazun vowurel.</code>.",
@@ -186,7 +194,14 @@ describe("parse field keys", () => {
       answer: null,
       stance: null,
       pointer: null,
+      locus: null,
     });
+  });
+
+  it("matches hooked-join form and a feeling locus", () => {
+    assert.deepEqual(raws("zoxual blahehal.", "family=joinMarker,form=ol"), ["zoxual"]);
+    const locus = { word: classify(parseWord("wuwathuraor"), tables), unit: "", position: 0 };
+    assert.ok(matchesTerm(locus, parseTerm("xFamily=sake,locus=ao")));
   });
 });
 

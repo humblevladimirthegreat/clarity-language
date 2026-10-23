@@ -93,6 +93,16 @@ describe("spliceWord", () => {
   it("splices a hook-prefix form's written vowels", () => {
     assert.deepEqual(splice("guexavuvul", "form=uel:ual"), { kind: "changed", raw: "guaxavuvul" });
   });
+  it("splices a hooked-join hook form, not the join series", () => {
+    assert.deepEqual(splice("zoxual", "form=ol:el"), { kind: "changed", raw: "zexual" });
+    assert.deepEqual(splice("zoxual", "series=ua:ue"), { kind: "changed", raw: "zoxuel" });
+    assert.deepEqual(splice("zomxuam", "form=om:em"), { kind: "changed", raw: "zemxuam" });
+    assert.deepEqual(splice("dexar", "form=el:ol"), { kind: "changed", raw: "doxar" });
+  });
+  it("splices a feeling locus and leaves sake stance", () => {
+    assert.deepEqual(splice("wuwathuraor", "locus=ao:ae"), { kind: "changed", raw: "wuwathuraer" });
+    assert.deepEqual(splice("wuwathuraor", "stance=u:a"), { kind: "changed", raw: "wuwatharaor" });
+  });
   it("leaves a sake whose stance is not in the map", () => {
     const sake = `g${CLOSED.ballot}thal`;
     assert.deepEqual(splice(sake, "stance=e:o"), { kind: "same", raw: sake });
@@ -163,5 +173,31 @@ describe("rewrite spans", () => {
     );
     assert.ok(bad.parseErrors.length > 0);
     assert.equal(bad.text, page);
+
+    const mixed = rewriteMarkdownSpans(
+      page,
+      [
+        patches[0]!,
+        { example: patches[0]!.example, nextSource: "not-agebon %%%" },
+      ],
+      tables,
+    );
+    assert.ok(mixed.parseErrors.length > 0);
+    assert.match(mixed.text, /zuzozen zol vowurel/);
+  });
+
+  it("rewrites a teaching-stub hook and keeps the ellipsis", () => {
+    const page = "Open with `el …` and `A ol B`.\n";
+    const { examples } = collectPageSpans(page, tables);
+    const dots = examples.find((e) => e.source.includes("…"));
+    const shape = examples.find((e) => e.source.includes("A "));
+    assert.ok(dots);
+    assert.ok(shape);
+    const formEl = parseTerm("family=hook,form=el");
+    const formOl = parseTerm("family=hook,form=ol");
+    const dotsHits = dots.words.flatMap((w, i) => (matchesTerm(w, formEl) ? [i] : []));
+    const shapeHits = shape.words.flatMap((w, i) => (matchesTerm(w, formOl) ? [i] : []));
+    assert.equal(rewriteExample(dots, dotsHits, maps("form=el:ol")).nextSource, "ol …");
+    assert.equal(rewriteExample(shape, shapeHits, maps("form=ol:el")).nextSource, "A el B");
   });
 });

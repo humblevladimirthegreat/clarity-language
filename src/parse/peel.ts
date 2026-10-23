@@ -2,7 +2,7 @@ import { toneMarkLength, writingSpanEnd } from "./span-scan.js";
 
 export type PeeledChunk = { prefix: string; core: string; suffix: string };
 
-const TRAILING = new Set([".", "?", "!", ",", ":", ";", '"', "'", "`"]);
+const TRAILING = new Set([".", "?", "!", ",", ":", ";", '"', "'", "`", "…"]);
 const LEADING_QUOTE = new Set(['"', "'", "`"]);
 
 /**

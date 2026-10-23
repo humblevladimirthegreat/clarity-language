@@ -30,6 +30,7 @@ export const TERM_KEYS = [
   "answer",
   "stance",
   "pointer",
+  "locus",
 ] as const;
 export type TermKey = (typeof TERM_KEYS)[number];
 /** One `key=regex` (or negated `key!=regex`) condition; the regex must match a whole field value. */
@@ -50,6 +51,7 @@ export type HitWord = {
   answer: string | null;
   stance: string | null;
   pointer: string | null;
+  locus: string | null;
 };
 
 /** A comma that starts the next `key=` / `key!=` condition (a regex may hold other commas, e.g. `{2,3}`). */
@@ -161,9 +163,14 @@ export function formValues(word: LexWord): string[] {
   const forms: string[] = [];
   if (family.kind === "hook") forms.push(family.form);
   if (family.kind === "hookCompound") forms.push(family.hook);
+  if (family.kind === "joinMarker" && family.hook) forms.push(family.hook);
   if (family.kind === "x" && family.hook) forms.push(family.hook);
   if (word.hookCompound) forms.push(word.hookCompound.hook);
   return forms;
+}
+
+export function locusValue(word: LexWord): string | undefined {
+  return word.family.kind === "x" ? word.family.locus : undefined;
 }
 
 export function scopeValue(word: LexWord): string | undefined {
@@ -210,6 +217,7 @@ export function hitWord(item: FoundWord): HitWord {
     answer: family.kind === "say" ? family.answer : null,
     stance: stanceValue(word) ?? null,
     pointer: pointerValue(word) ?? null,
+    locus: locusValue(word) ?? null,
   };
 }
 
@@ -253,6 +261,8 @@ function fieldValues(item: FoundWord, key: TermKey): string[] {
       return stanceValue(word) ? [stanceValue(word)!] : [];
     case "pointer":
       return pointerValue(word) ? [pointerValue(word)!] : [];
+    case "locus":
+      return locusValue(word) ? [locusValue(word)!] : [];
   }
 }
 

@@ -16,19 +16,21 @@
  *
  * Terms are `key=regex[,key=regex]` with keys role / ending / root / family /
  * overlay / unit / raw / series / form / marker / xFamily / reading / scope /
- * answer / stance / pointer. Each regex must match the whole field (`raw=em` is the
+ * answer / stance / pointer / locus. Each regex must match the whole field (`raw=em` is the
  * word `em`, `raw=.*em` any word ending in `em`); `key!=regex` negates. `--seq`
  * takes terms until the next flag and matches adjacent words. `--construction`
  * takes an exact ID, a `prefix*`, or a `/regex/`. Several flags must all match.
  * `--map field=from:to,from:to` rewrites those letters on matched words from the
- * original parse (a swap is one map). Paths default to docs/grammar and docs/examples.
+ * original parse (a swap is one map). Paths default to docs/grammar and docs/examples;
+ * pass `src`, `scripts`, or a `.tsv` to walk string literals and TSV cells. `--count`
+ * is always matching examples, with or without `--map`. `--write` leaves a span that
+ * does not reparse and still writes the rest of the file.
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { relative } from "node:path";
 
 import { loadDefaultTables } from "../parse/index.js";
-import { listMarkdown } from "../markdown-files.js";
-import { collectPageSpans, type Example } from "./examples.js";
+import { type Example } from "./examples.js";
 import {
   hitWord,
   matchesTerm,
@@ -43,13 +45,12 @@ import {
   parseMap,
   rewriteExample,
   rewriteMarkdownSpans,
+  rewritePlainSpans,
   type FieldMaps,
 } from "./rewrite.js";
+import { collectFileSpans, listFindFiles, skipWorthListing, type FindQuery } from "./walk.js";
 
-type Query =
-  | { kind: "word"; term: Term }
-  | { kind: "seq"; terms: Term[] }
-  | { kind: "construction"; test: (id: string) => boolean };
+type Query = FindQuery;
 
 /** `--construction` pattern: `/regex/` (unanchored), `prefix*`, or an exact ID. */
 function constructionTest(pattern: string): (id: string) => boolean {
@@ -157,14 +158,16 @@ const reviews: { file: string; line: number; raw: string; message: string }[] = 
 let writeFailed = false;
 
 for (const root of paths.length ? paths : ["docs/grammar", "docs/examples"].filter((dir) => existsSync(dir))) {
-  for (const file of listMarkdown(root)) {
-    const markdown = readFileSync(file, "utf8");
+  for (const file of listFindFiles(root)) {
+    const original = readFileSync(file, "utf8");
     const rel = relative(process.cwd(), file);
-    const { examples, unparsed } = collectPageSpans(markdown, tables);
-    const lineOf = (index: number) => markdown.slice(0, index).split("\n").length;
+    const { examples, unparsed } = collectFileSpans(file, original, tables);
+    const lineOf = (index: number) => original.slice(0, index).split("\n").length;
     if (maps) {
       for (const span of unparsed) {
-        skips.push({ file: rel, line: lineOf(span.index), text: span.text });
+        if (skipWorthListing(span, queries, maps, tables)) {
+          skips.push({ file: rel, line: lineOf(span.index), text: span.text });
+        }
       }
     }
     const filePatches: { example: Example; nextSource: string }[] = [];
@@ -173,17 +176,15 @@ for (const root of paths.length ? paths : ["docs/grammar", "docs/examples"].filt
       if (matches.some((m) => m === null)) continue;
       const hits = new Set(matches.flatMap((m) => m!));
       const line = lineOf(example.index);
-      if (!maps) {
-        results.push({
-          file: rel,
-          line,
-          index: example.index,
-          text: example.text,
-          shown: highlight(example, hits),
-          words: [...hits].sort((a, b) => a - b).map((i) => hitWord(example.words[i]!)),
-        });
-        continue;
-      }
+      results.push({
+        file: rel,
+        line,
+        index: example.index,
+        text: example.text,
+        shown: highlight(example, hits),
+        words: [...hits].sort((a, b) => a - b).map((i) => hitWord(example.words[i]!)),
+      });
+      if (!maps) continue;
       const rewritten = rewriteExample(example, [...hits], maps);
       for (const review of rewritten.reviews) {
         reviews.push({ file: rel, line, raw: review.raw, message: review.message });
@@ -196,18 +197,19 @@ for (const root of paths.length ? paths : ["docs/grammar", "docs/examples"].filt
       }
     }
     if (write && maps && filePatches.length) {
-      const out = rewriteMarkdownSpans(markdown, filePatches, tables, checkAmbiguity);
+      const out = file.endsWith(".md")
+        ? rewriteMarkdownSpans(original, filePatches, tables, checkAmbiguity)
+        : rewritePlainSpans(original, filePatches, tables, checkAmbiguity);
       if (out.parseErrors.length) {
         writeFailed = true;
         for (const error of out.parseErrors) {
           console.error(`${rel}:${error.line}  ${error.reason}: ${error.span}`);
         }
-        continue;
       }
       for (const gloss of out.unplacedGloss) {
         reviews.push({ file: rel, line: gloss.line, raw: gloss.from, message: `unplaced gloss → ${gloss.to}` });
       }
-      if (out.text !== markdown) writeFileSync(file, out.text);
+      if (out.text !== original) writeFileSync(file, out.text);
     }
   }
 }
@@ -219,7 +221,7 @@ if (output === "json") {
     console.log(JSON.stringify(results.map(({ shown: _, ...r }) => r), null, 2));
   }
 } else if (output === "count") {
-  console.log(maps ? replacements.length : results.length);
+  console.log(results.length);
 } else if (maps) {
   for (const r of replacements) console.log(`${r.file}:${r.line}  ${r.from} → ${r.to}`);
   for (const s of skips) console.error(`${s.file}:${s.line}  skip: ${s.text}`);

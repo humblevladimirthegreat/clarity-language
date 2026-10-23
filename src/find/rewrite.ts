@@ -1,6 +1,6 @@
 /**
  * Letter-slot maps for find `--map` / `--write`: splice series / form / marker /
- * scope / answer / stance / pointer in a parsed word's `raw`, from the original parse.
+ * scope / answer / stance / pointer / locus in a parsed word's `raw`, from the original parse.
  */
 import type { ClassifyTables } from "../parse/classify.js";
 import { peelWordChunk } from "../parse/peel.js";
@@ -9,6 +9,7 @@ import { reglossMarkdown } from "../regloss.js";
 import { reparseSpan, type Example } from "./examples.js";
 import {
   formValues,
+  locusValue,
   numberStem,
   pointerValue,
   scopeValue,
@@ -16,7 +17,7 @@ import {
   stanceValue,
 } from "./query.js";
 
-export const MAP_FIELDS = ["series", "form", "marker", "scope", "answer", "stance", "pointer"] as const;
+export const MAP_FIELDS = ["series", "form", "marker", "scope", "answer", "stance", "pointer", "locus"] as const;
 export type MapField = (typeof MAP_FIELDS)[number];
 
 export type FieldMaps = Partial<Record<MapField, Map<string, string>>>;
@@ -174,7 +175,11 @@ export function spliceWord(word: LexWord, maps: FieldMaps): SpliceOutcome {
         if (mapped(maps, "series", family.series) && mapped(maps, "series", family.series) !== family.series) {
           failed = true;
         }
+        if (mapped(maps, "form", family.hook) && mapped(maps, "form", family.hook) !== family.hook) {
+          failed = true;
+        }
       } else {
+        need("form", family.hook, at, written);
         at += written.length + 1;
       }
     }
@@ -261,6 +266,12 @@ export function spliceWord(word: LexWord, maps: FieldMaps): SpliceOutcome {
       const at = raw.lastIndexOf(`th${stance}`);
       if (at >= 0) need("stance", stance, at + 2);
       else if (mapped(maps, "stance", stance) && mapped(maps, "stance", stance) !== stance) failed = true;
+      const locus = family.locus;
+      if (locus && family.horizon) {
+        const locusAt = at >= 0 ? at + 2 + stance.length + 1 : -1;
+        if (locusAt >= 0 && raw.slice(locusAt, locusAt + locus.length) === locus) need("locus", locus, locusAt);
+        else if (mapped(maps, "locus", locus) && mapped(maps, "locus", locus) !== locus) failed = true;
+      }
     }
     if ((family.xFamily === "scope" || family.xFamily === "hookPrefix") && scope) {
       const at = raw.lastIndexOf(`th${scope}`);
@@ -373,7 +384,8 @@ export type FileRewrite = {
 
 /**
  * Patch spans (from the end of the file), reparse, then regenerate morph lines
- * whose Agebon is one of the new span texts.
+ * whose Agebon is one of the new span texts. A span that does not reparse is
+ * left as written; other spans in the file still apply.
  */
 export function rewriteMarkdownSpans(
   markdown: string,
@@ -383,17 +395,16 @@ export function rewriteMarkdownSpans(
 ): FileRewrite {
   const parseErrors: FileRewrite["parseErrors"] = [];
   const lineOf = (index: number) => markdown.slice(0, index).split("\n").length;
+  const applied: { example: Example; nextSource: string }[] = [];
   for (const patch of patches) {
     if (patch.nextSource === patch.example.source) continue;
     const reason = reparseSpan(patch.nextSource, patch.example.cls, tables, checkAmbiguity);
     if (reason) {
       parseErrors.push({ span: patch.nextSource, line: lineOf(patch.example.index), reason });
+      continue;
     }
+    applied.push(patch);
   }
-  if (parseErrors.length) {
-    return { text: markdown, replacements: [], reviews: [], parseErrors, unplacedGloss: [] };
-  }
-  const applied = patches.filter((p) => p.nextSource !== p.example.source);
   const nextTexts = new Set(applied.map((p) => p.nextSource.trim()));
   const text = applySpanPatches(
     markdown,
@@ -406,9 +417,35 @@ export function rewriteMarkdownSpans(
     text: regloss.text,
     replacements: [],
     reviews: [],
-    parseErrors: [],
+    parseErrors,
     unplacedGloss: regloss.unplaced.map((edit) => ({ from: edit.from, to: edit.to, line: edit.line })),
   };
+}
+
+/** Patch literal / TSV bodies in place. No morph follow (that is Markdown-only). */
+export function rewritePlainSpans(
+  source: string,
+  patches: { example: Example; nextSource: string }[],
+  tables: ClassifyTables,
+  checkAmbiguity = false,
+): FileRewrite {
+  const parseErrors: FileRewrite["parseErrors"] = [];
+  const lineOf = (index: number) => source.slice(0, index).split("\n").length;
+  const applied: { example: Example; nextSource: string }[] = [];
+  for (const patch of patches) {
+    if (patch.nextSource === patch.example.source) continue;
+    const reason = reparseSpan(patch.nextSource, patch.example.cls, tables, checkAmbiguity);
+    if (reason) {
+      parseErrors.push({ span: patch.nextSource, line: lineOf(patch.example.index), reason });
+      continue;
+    }
+    applied.push(patch);
+  }
+  const text = applySpanPatches(
+    source,
+    applied.map((p) => ({ index: p.example.index, length: p.example.source.length, next: p.nextSource })),
+  );
+  return { text, replacements: [], reviews: [], parseErrors, unplacedGloss: [] };
 }
 
 /** Current map-field values on a word (marker is the surface spelling). */
@@ -428,5 +465,7 @@ export function mapSlot(word: LexWord, field: MapField): string | undefined {
       return stanceValue(word);
     case "pointer":
       return pointerValue(word);
+    case "locus":
+      return locusValue(word);
   }
 }

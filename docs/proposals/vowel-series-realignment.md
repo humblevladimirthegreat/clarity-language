@@ -39,7 +39,7 @@ Bigger families go first, so a stop still leaves the amount scale in place. Gram
 
 Example Agebon is a `find.mjs --map` pass, not a hand edit and not `retie-docs`. `retie-docs` still only follows lexicon roots (Phase 5). Cue English, owning-page maps, and D-40 / D-44 / D-49 prose stay hand work (`find-replace.md`).
 
-If tokens run low inside a phase: land **owning pages + parser**, then the `--write` (it is mechanical). Read the dry-run skip list (unparsed spans) before writing. After a pairwise **o**/**e** swap, a missed example is the opposite English.
+If tokens run low inside a phase: land **owning pages + parser**, then the `--write` (it is mechanical). Read the dry-run **skip** and **review** lines before writing (unparsed spans that still look like a hit, and matched words that could not splice). After a pairwise **o**/**e** swap, a missed example is the opposite English.
 
 ### Shared rules
 
@@ -47,7 +47,7 @@ If tokens run low inside a phase: land **owning pages + parser**, then the `--wr
 - Present the current language only on grammar pages.
 - After any `sentence-parser.ts` rules or `markContext` change: `npm run grammar-check`.
 - After every phase: `npm test` and `npm run build`.
-- **Sweep:** pin `--count` on the source letter. Dry-run `node scripts/find.mjs --word … --map …` (default `docs/grammar` `docs/examples`, then the same flags with `src` `scripts` `docs/meta`; the write walk skips `src/retie`). Then `--write`. Then `--count` the destination letter; it should match the pinned source count. Unparsed spans stay on the dry-run skip list (review, then hand-fix). Maps run on the original parse, so `e:o,o:e` is a swap in one pass.
+- **Sweep:** pin `--count` on the source letter (**without** `--map`; with `--map` it is the same match count, not a replacement count). Dry-run `node scripts/find.mjs --word … --map …` (default `docs/grammar` `docs/examples`, then the same flags with `src` `scripts` `docs/meta`; the walk skips `src/retie`). Then `--write`. Then `--count` the destination letter; it should match the pinned source. Maps run on the original parse, so `e:o,o:e` is a swap in one pass. `--write` leaves a span whose dest does not reparse and still writes the rest of the file (nonzero exit). If membership would reject the dest letter (`TIME_HOOKS`, `POINT_BACK_HOOKS`, `feelingLandmark`, …), widen that set to the union around the write, then shrink. Teaching stubs (`el …`, `A ol B`) rewrite; cue English still does not.
 - **`OE`** below means write `e:o,o:e,ae:ao,ao:ae,ue:uo,uo:ue` on the field that phase names (`series`, `form`, or `scope`). **oe** and **ua** stay.
 - Update the cheat-sheet **rows this family owns** in the same phase (row English by hand; Agebon in examples via `--map`). The [vowels.md](/cheat-sheets/vowels) cue tree waits for Phase 6.
 - Do not retarget stacked scope or stacked extra-noun English to the new simplex letters. Letters follow **OE**; English stays.
@@ -121,14 +121,16 @@ One spelling, three jobs. Same **o**/**e** swap as join, on prefix-less hooks on
 
 **Pages:** `hooks.md`, `extra-noun-hooks.md`, `discourse-hooks.md`, `ending-grids.md`, `hook-compounds.md`, `hooked-joins.md`, feeling-locus rows on `feelings-permission.md`. Cheat-sheet extra-noun / glue rows on `joins-hooks.md`.
 
-**Sweep:** prefix-less hooks and hook prefixes, not join `zol`.
+**Sweep:** prefix-less hooks, hook compounds, prefixes, and hooked-join **form** (join `zol` is `series`, not `form`). Feeling loci use `locus`, not `form`.
 
 ```text
-node scripts/find.mjs --word family=hook --map form=ol:el,el:ol,om:em,em:om,or:er,er:or,aol:ael,ael:aol,uol:uel,uel:uol,uom:uem,uem:uom,uor:uer,uer:uor
-node scripts/find.mjs --word xFamily=hookPrefix --map form=ol:el,el:ol,om:em,em:om,aol:ael,ael:aol,uol:uel,uel:uol,uom:uem,uem:uom
+node scripts/find.mjs --word 'family=hook|hookCompound' --map form=ol:el,el:ol,om:em,em:om,or:er,er:or,aol:ael,ael:aol,aom:aem,aem:aom,uol:uel,uel:uol,uom:uem,uem:uom,uor:uer,uer:uor
+node scripts/find.mjs --word xFamily=hookPrefix --map form=ol:el,el:ol,om:em,em:om,aol:ael,ael:aol,aom:aem,aem:aom,uol:uel,uel:uol,uom:uem,uem:uom
+node scripts/find.mjs --word family=joinMarker --map form=ol:el,el:ol,om:em,em:om,or:er,er:or,aol:ael,ael:aol,aom:aem,aem:aom,uol:uel,uel:uol,uom:uem,uem:uom,uor:uer,uer:uor
+node scripts/find.mjs --word xFamily=sake --map locus=o:e,e:o,ao:ae,ae:ao,uo:ue,ue:uo
 ```
 
-**oe** forms (`oel`, `oem`) stay. `--seq family=hook,form=em 'role!=[zdb]' role=b` is the *whose* check after the write (`om`). english-helper `cases.tsv` is in the `src` `--write` path.
+**oe** forms (`oel`, `oem`) stay (not in the map). `--seq family=hook,form=em 'role!=[zdb]' role=b` is the *whose* check after the write (`om`). `cases.tsv` and game keys move with the `src` `--write` path.
 
 **Commits:** (1) parser hook sets + D-49; (2) owning pages; (3) `--write`; (4) verify *whose* / contrary / `ol bar`.
 

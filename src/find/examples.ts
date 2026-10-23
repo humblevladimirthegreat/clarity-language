@@ -33,6 +33,20 @@ function chunksOf(text: string): string[] {
   return text.trim().split(/\s+/).map((chunk) => peelLintChunk(chunk).core);
 }
 
+/** Map parsed words onto chunk indexes in the stored span (`A ol B` → `ol` at 1). */
+function alignWordPositions(source: string, words: FoundWord[]): FoundWord[] {
+  const chunks = source.trim().split(/\s+/).filter((chunk) => chunk.length > 0);
+  const used = new Set<number>();
+  return words.map((item) => {
+    const i = chunks.findIndex((chunk, idx) => {
+      if (used.has(idx)) return false;
+      return peelLintChunk(chunk).core === item.word.raw;
+    });
+    if (i >= 0) used.add(i);
+    return { ...item, position: i };
+  });
+}
+
 export function parseExample(text: string, cls: Example["cls"], tables: ClassifyTables): Omit<Example, "text" | "index" | "cls" | "source"> | null {
   try {
     if (cls === "word") {
@@ -56,6 +70,58 @@ export function parseExample(text: string, cls: Example["cls"], tables: Classify
 
 export type PageSpans = { examples: Example[]; unparsed: UnparsedSpan[] };
 
+const FIND_PLACEHOLDER = /\b(?!SELF\b)[A-Z][A-Z0-9₀-₉]*\b/g;
+
+/** Teaching stubs (`el …`, `A xol B`) keep the Agebon; drop slots the lint calls a template. */
+export function findParseText(source: string): string {
+  return source
+    .replace(/(^|\s)(?:…|\.\.\.)(?=\s|$)/g, " ")
+    .replace(FIND_PLACEHOLDER, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function parseSpanBody(source: string, tables: ClassifyTables): Omit<Example, "index" | "source"> | null {
+  const filled = fillSelf(source);
+  const direct = classifyAgebonSpan(filled);
+  const candidates: { text: string; cls: Example["cls"] }[] = [];
+  if (direct === "sentence" || direct === "phrase" || direct === "word") {
+    candidates.push({ text: filled.trim(), cls: direct });
+  } else {
+    const stripped = findParseText(filled);
+    const cls = stripped ? classifyAgebonSpan(stripped) : "unclassified";
+    if (cls === "sentence" || cls === "phrase" || cls === "word") {
+      candidates.push({ text: stripped, cls });
+    }
+  }
+  for (const { text, cls } of candidates) {
+    const parsed = parseExample(text, cls, tables);
+    if (parsed) return { text, cls, ...parsed };
+  }
+  return null;
+}
+
+/** Parse one stored Agebon body (a Markdown span, a string literal, or a TSV cell). */
+export function collectBodySpan(source: string, index: number, tables: ClassifyTables): Example | UnparsedSpan {
+  const parsed = parseSpanBody(source, tables);
+  if (parsed) {
+    const filled = fillSelf(source).trim();
+    const words = parsed.text === filled ? parsed.words : alignWordPositions(source, parsed.words);
+    return { ...parsed, words, source, index };
+  }
+  const filled = fillSelf(source);
+  const cls = classifyAgebonSpan(filled);
+  return {
+    text: source.trim(),
+    index,
+    cls: cls === "sentence" || cls === "phrase" || cls === "word" ? cls : "word",
+  };
+}
+
+function isExample(span: Example | UnparsedSpan): span is Example {
+  return "words" in span;
+}
+
 /**
  * Sentence, phrase, and single-word examples on a page (templates and fragments are skipped).
  * Walks the original Markdown; `SELF` is filled only when parsing a span.
@@ -65,15 +131,9 @@ export function collectPageSpans(markdown: string, tables: ClassifyTables): Page
   const unparsed: UnparsedSpan[] = [];
   walkAgebonSpans(markdown, {
     text: (source, index) => {
-      const filled = fillSelf(source);
-      const cls = classifyAgebonSpan(filled);
-      if (cls !== "sentence" && cls !== "phrase" && cls !== "word") return;
-      const parsed = parseExample(filled, cls, tables);
-      if (parsed) {
-        examples.push({ text: filled.trim(), source, index, cls, ...parsed });
-      } else {
-        unparsed.push({ text: source.trim(), index, cls });
-      }
+      const span = collectBodySpan(source, index, tables);
+      if (isExample(span)) examples.push(span);
+      else unparsed.push(span);
     },
   });
   return { examples, unparsed };
@@ -91,8 +151,12 @@ export function reparseSpan(
   tables: ClassifyTables,
   checkAmbiguity = false,
 ): string | null {
-  const filled = hasSelfSlot(text) ? fillSelf(text) : text;
-  if (!parseExample(filled, cls, tables)) return "does not parse";
-  if (checkAmbiguity && collectAmbiguity(filled, tables).length > 0) return "two trees";
+  const parsed = parseSpanBody(text, tables);
+  if (!parsed) {
+    const filled = hasSelfSlot(text) ? fillSelf(text) : text;
+    if (!parseExample(filled, cls, tables)) return "does not parse";
+  }
+  const forTrees = parsed?.text ?? (hasSelfSlot(text) ? fillSelf(text) : text);
+  if (checkAmbiguity && collectAmbiguity(forTrees, tables).length > 0) return "two trees";
   return null;
 }
