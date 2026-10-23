@@ -15,20 +15,19 @@ Cheat sheets are lookup pages meant to print ([grammar-docs](../meta/grammar-doc
 
 The content lint (`lint-cheat-sheets.ts`) checks rows against owning pages. It does not measure layout.
 
-grammar-docs still says **one printable page per subsystem**. Several sheets already run longer than that on screen (Ageben → English especially). This proposal does not restore a one-page rule, and it does not cap page count. First question: can every table sit on one sheet if we are willing to insert breaks and move blocks?
+grammar-docs still says **one printable page per subsystem**. Several sheets already run longer than that on screen (Agebon → English especially). This proposal does not restore a one-page rule, and it does not cap page count. Authors place every sheet start in the file. The lint’s job is to catch a break Chromium added that the file did not.
 
 ## Goals
 
 1. **Pin the page box** in CSS so print size and margins are the same for learners and for the lint.
-2. **Make page starts visible in the source** with an explicit marker, not a CSS exception and not a form-feed character (HTML treats `\f` as whitespace; it will not start a sheet).
-3. **Fail a dedicated print lint** when a table would split across two sheets under that page box. Not `npm run build`, not `npm test`.
-4. **Fix by rearranging**, not by shrinking type further: insert a marker before the table, swap a short block onto the leftover space, or split a table that is taller than one full sheet into two tables with a marker between.
+2. **Every page start after the first is a `<PageBreak />` in the markdown**, not a CSS exception and not a form-feed character (HTML treats `\f` as whitespace; it will not start a sheet).
+3. **Fail a dedicated print lint** when Chromium’s PDF has a page the markers do not account for, or when a table straddles two sheets. Not `npm run build`, not `npm test`.
+4. **Fix by rearranging**, not by shrinking type further: insert a marker at the overflow, swap a short block onto the leftover space, or split a table that is taller than one full sheet into two tables with a marker between.
 5. **Report page counts** per sheet (and leftover space) so a later cap, if any, is chosen from data.
 
 ## Non-goals
 
-- A page-count cap (four or otherwise). Do not fail a sheet for being long.
-- Requiring every *prose* wrap to be an explicit marker in this phase. Implicit page wraps through headings and paragraphs are allowed until the table-split lint is clean and we have counts.
+- A page-count cap (four or otherwise). Do not fail a sheet for being long. Extra blank space at the bottom of a short sheet is expected.
 - Matching every print-dialog override (headers and footers, “fit to printable area”). `@page` is the contract the lint uses.
 - Paged.js, on-screen letter-sized cards, or a visual print-preview route as the source of truth. A dashed rule on the marker is enough for a screen screenshot of the intended start.
 - Changing what a sheet teaches, or splitting a sheet into several sidebar entries, unless rearrangement cannot save a table.
@@ -58,13 +57,13 @@ In the existing print block, add:
 
 **Letter, not A4:** Letter is shorter, so a table that fits the lint fits A4 with leftover. The content width is `8.5in − 0.8in`. The content height is `11in − 0.8in`.
 
-`break-inside: avoid` stays as a browser safety net. It is not what the lint trusts.
+`break-inside: avoid` stays as a browser safety net. It is not what the lint trusts: a pushed table is still an unexpected page unless a `<PageBreak />` sits before it.
 
 Also force a light print background and dark text on cheat-sheet `pageClass`es, so a dark theme does not print as dark sheets. That is independent of pagination but belongs in the same print CSS.
 
 ### Marker
 
-A Vue component `<PageBreak />`, registered next to `PrintButton`. Authors put it on its own line between blocks:
+A Vue component `<PageBreak />`, registered next to `PrintButton`. Authors put it on its own line between blocks. That is the only way a new sheet starts after page 1.
 
 ```md
 ## Joins {#series}
@@ -84,54 +83,70 @@ A Vue component `<PageBreak />`, registered next to `PrintButton`. Authors put i
 
 Do not hang pagination on heading classes. A break often belongs *before a table* under the same `##`.
 
-Replace the Claritish `#sakes` CSS rule with a `<PageBreak />` in `claritish/cheat-sheet.md` in the same change as the component.
+Replace the Claritish `#sakes` CSS rule with a `<PageBreak />` in `claritish/cheat-sheet.md` in the same change as the component. After that, print CSS must not contain any other `break-before: page` (or `page-break-before`) on cheat-sheet pages: the file is the inventory.
 
-### Lint: no split table
+### Lint: markers are the only breaks
 
-A small script loads each cheat sheet (grammar `pageClass: cheat-sheet` and Claritish `claritish-cheat-sheet`) in Chromium with print CSS and the `@page` content width. It walks `.vp-doc` in document order, treating `<PageBreak />` as a forced new sheet, and lays other blocks into the remaining content height.
+A dedicated script, `npm run lint:cheat-sheet-print`. It is **not** part of `npm run build` or `npm test`. Document it on the cheat-sheets meta section when this is absorbed. Run it when changing a sheet’s layout, the print CSS, or `<PageBreak />`.
 
-**Fail** when any `table`:
+Playwright loads each cheat sheet (grammar `pageClass: cheat-sheet` and Claritish `claritish-cheat-sheet`) and prints with the pinned `@page` box (`page.pdf`, same paper and margins). `happy-dom` will not match 9pt table geometry. Markdown line counts (`page-lines.ts`) are the wrong unit.
 
-- is taller than one page content box (a marker cannot save it), or
-- would start on one sheet and end on the next, given the markers already in the file.
+Split the sheet’s `.vp-doc` on `<PageBreak />` into slices (page 1 is before the first marker). Each slice is one intended sheet.
 
-**Do not fail** on page count, leftover blank space, or a heading that lands near the bottom of a sheet.
+**Fail** when any of these hold:
 
-**Print a report** (stdout, and a file under `tmp/` is fine): per sheet, page count under this model, leftover height on each page, each table’s height, and each failure with the table’s caption or first-row text and the nearest heading id. That report is how we later decide whether a cap is worth it.
+- **Unexpected break.** The PDF has a page that is not slice 1 and not “first extractable text after a marker.” Counting pages is not enough: a slice that overflows can add a page *and* shift a later marker onto the next sheet, so `1 + PageBreaks` still matches. Check that slice *i*’s first text starts PDF page *i*, and that slice *i*’s last text is still on PDF page *i*.
+- **Split table.** A table’s first-row text and last-row text land on different pages (a slice taller than one sheet that Chrome cut through a table).
+- **Table taller than one page content box.** A marker cannot save it; split the table in the source.
 
-Use Playwright (or Puppeteer) against the real print layout. `happy-dom` is already in the repo and will not match 9pt table geometry closely enough. Measuring markdown line counts (`page-lines.ts`) is the wrong unit.
+**Do not fail** on leftover blank space, or on a heading that lands near the bottom of a sheet if that slice still fits.
 
-Wire it so `npm run build` runs it once Chromium is a known cost on the publish machine. Until then, a dedicated `npm run lint:cheat-sheet-print` is enough, as long as the first table-split failures are fixed in the same change that turns the check on.
+**Print a report** (stdout, and a file under `tmp/` is fine): per sheet, intended pages (`1 + PageBreaks`), PDF page count, leftover height on each page, each table’s height, and each failure (unexpected page start, with the first text on that PDF page and the nearest heading id; or a straddling table). That report is how we later decide whether a cap is worth it.
+
+### Calibration, then no pictures
+
+The real compositor is the PDF Playwright already made. The lint should read **that**, not pixels.
+
+**Production (default):** parse the PDF with pdf.js (or equivalent): text items plus their positions, per page. Compare each slice’s first and last text to those items. A table splits when its first-row text and last-row text land on different pages. Disambiguate repeated headers (“Job / a / o / e / u / Stage”) by the heading text above them in the PDF stream. No screenshots, no vision model, no committed goldens.
+
+**Calibration only (`--calibrate`):** also write each PDF page to a PNG under `tmp/` next to the report. A person (or an agent looking at those files) checks that the report’s “unexpected break at …” / “page 2 starts at Extra nouns” matches the pictures. Tune extraction until it does (heading detection, which strings bound a table or a slice, margin vs `@page`). Then drop `--calibrate` from ordinary runs.
+
+Do not keep screenshots in the default script once that match is good. Do not commit the PNGs.
+
+**Why not golden screenshots as the lint.** Pixelmatch against committed page images is the usual non-AI use of screenshots: a human approved the pixels, a later run diffs them. That is a poor oracle here. “Did Chromium insert a page the file did not ask for?” is a fact about which page two strings landed on, not about antialiasing. Goldens break across OS, font raster, and Playwright versions, and they bloat the repo. Use them only if PDF text extraction cannot be made to agree with the pictures; that would be a calibration failure to fix, not a reason to lint pixels.
+
+A DOM box-walk (print CSS, letter-wide viewport, `getBoundingClientRect`, treat `<PageBreak />` as a forced new sheet) is optional as a faster cross-check, and only after `--calibrate` shows it agrees with the PDF. The PDF stays the authority: it is what `window.print()` uses.
 
 ### When it fires
 
-The finding names the table and why (taller than a page, or straddling). The edit is one of:
+The finding names the unexpected page start or the table, and why (slice overflow, straddling, or taller than a page). The edit is one of:
 
-1. **Marker before the table**, so it starts a new sheet. Extra blank space on the previous sheet is expected.
-2. **Move a shorter block** into the leftover space so the table fits without a marker.
+1. **Marker at the overflow**, so the new sheet starts where Chromium already broke. Extra blank space on the previous sheet is expected.
+2. **Move a shorter block** into the leftover space so the slice fits without another marker.
 3. **Split a too-tall table** in the source into two tables (same columns, a marker between). Do not invent rows. A generated block (`<!-- generated: … -->`) stays generated: if it is too tall, the script that writes it must emit a marker (or two blocks) rather than a hand edit inside the markers.
 
-Do not lower font size below 9pt to squeeze a table. Do not drop `break-inside: avoid`.
+Do not lower font size below 9pt to squeeze a slice. Do not drop `break-inside: avoid`. Do not add a CSS `break-before` to hide an implicit wrap.
 
 ## Inspectability
 
-After this ships, “where does the next sheet start?” has two answers that agree:
+After this ships, “where does the next sheet start?” has two answers that the lint holds equal:
 
 - In the file: every `<PageBreak />`.
-- In the report: page count and which heading opens each page.
+- In the PDF: page count is `1 + PageBreaks`, and page *i* + 1 starts with the first text after the *i*-th marker.
 
-Agents still cannot screenshot Chromium’s print compositor from the in-IDE browser. They do not need to, for tables, if the lint is the authority. A later pass can dump each PDF page to PNG for eye checks; that is not required to turn the lint on.
+`--calibrate` PNGs are for bringing those two into line with Chromium, then they go away. Ordinary runs do not write images.
 
 ## Open questions
 
 - **Letter vs A4 as the learner default.** Lint to Letter either way. If most printers are A4, `@page { size: A4 }` still leaves the lint on Letter so a table cannot grow into the extra height.
-- **Build vs separate script.** Playwright downloads Chromium. If that is too slow or too large for `npm run build` on Amplify, keep the check as its own script and document it on the cheat-sheets meta section until publish CI can run it.
 - **Generated blocks that overflow.** Prefer the generator emitting two blocks plus a marker over making those tables an exception.
+- **Repeated table headers in the PDF.** If two tables on one sheet share a header line, heading context may not be enough. A lint-only caption or `data-` marker that prints as extractable text is allowed if calibration shows collisions.
 
 ## Plan
 
-1. Add `@page` and light print colors; add `<PageBreak />`; move the Claritish Sakes break into the markdown.
-2. Write the measurement script and a report for every current sheet, with no fail-on-split yet. Read the report: which tables already straddle or exceed one page.
-3. Rearrange those sheets (markers, block order, split tables) until the report is clean.
-4. Turn table-straddle / table-too-tall into a failing check. Fold the policy (marker in the file, fix by rearranging, no page cap yet) into [grammar-docs.md](../meta/grammar-docs.md#cheat-sheets). Drop or shorten this proposal.
-5. Out of scope until we have counts: fail on page count; fail on implicit wraps through prose; require every page start to be a marker.
+1. Add `@page` and light print colors; add `<PageBreak />`; move the Claritish Sakes break into the markdown; drop other cheat-sheet `break-before: page` rules.
+2. Add `npm run lint:cheat-sheet-print` with a report-only mode and `--calibrate` PNGs. Do not hook it to `build` or `test`.
+3. Calibrate: compare PNGs to the PDF-text report until unexpected breaks, table splits, and page-start headings match. Remove the need to look at pictures.
+4. Place markers and rearrange sheets until the default run is clean (every PDF page is a slice, no split table), then fail on unexpected breaks and table-too-tall.
+5. Fold the policy (separate script, every sheet start is a marker, fix by rearranging, no page cap) into [grammar-docs.md](../meta/grammar-docs.md#cheat-sheets). Drop or shorten this proposal.
+6. Out of scope until we have counts: fail on page count (a cap), not on unmarked breaks.
