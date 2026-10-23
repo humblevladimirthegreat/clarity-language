@@ -170,7 +170,7 @@ A bare `/z/` (or other freestanding) **`…yo`** percent with no named whole is 
 ### Unspecified value in the range (**-r**)
 <a id="unspecified-value-in-the-range--r"></a>
 
-**Needs:** [Ranges](numbers-applied.md#ranges) · [Named and unknown ranges](numbers-applied.md#named-ranges)
+**Needs:** [Ranges](numbers-applied.md#ranges) · [Named and unknown ranges](initials.md#named-ranges)
 
 A range hook with **-r** names **one value in the band** without saying which.
 
@@ -189,7 +189,7 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 ### How much: *very*, *slightly*, *barely* {#degree-words}
 
-**Needs:** [Degree](left-bound.md#degree-w) · [Number as verb and adverb](digitless-exponents.md#special-number-as-verb-and-adverb) · [Number as stance](digitless-exponents.md#special-number-as-stance)
+**Needs:** [Degree](left-bound.md#degree-w) · [Number as verb and adverb](special-values.md#special-number-as-verb-and-adverb) · [Number as stance](special-values.md#special-number-as-stance)
 
 English degree words (*really*, *quite*, *barely*) say how far a quality or an action goes. Agebon has stock degree words for the adjective or adverb that follows them, and a pair for *barely* and *almost*. A claim you are sure of takes the stance number `th+e`.
 
@@ -300,7 +300,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 ### How many and how big {#quantity-words}
 
-**Needs:** [Vague amounts](stance-bars.md#vague-amounts) · [Bars](comparative-arity.md#bars) · [Place on a scale](comparative-arity.md#place-on-a-scale) · [Measure phrases](numbers-applied.md#measure-phrases) · [Rays](numbers-applied.md#rays) · [Fractions](numbers-applied.md#fractions)
+**Needs:** [Vague amounts](stance-bars.md#vague-amounts) · [Bars](comparative-arity.md#bars) · [Place on a scale](comparative-arity.md#place-on-a-scale) · [Measure phrases](numbers-applied.md#measure-phrases) · [Rays](initials.md#rays) · [Fractions](numbers-applied.md#fractions)
 
 | English | Agebon |
 |---------|--------|

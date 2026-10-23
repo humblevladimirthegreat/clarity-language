@@ -38,7 +38,7 @@ Source: [numbers.md](../grammar/numbers.md), [numeric-derivation.md](../grammar/
 
 ### Other `±0eN` / `±0e-N` for `N≠1`
 
-- Positive **`…0eN`** and other **`±0eN`** / **`±0e-N`** bands. Only **`±0e-1`** is assigned ([zero × exponent](../grammar/digitless-exponents.md#zero-exponent)); no job has asked for a wipe or residue at another named scale.
+- Positive **`…0eN`** and other **`±0eN`** / **`±0e-N`** bands. Only **`±0e-1`** is assigned ([zero × exponent](../grammar/special-values.md#zero-exponent)); no job has asked for a wipe or residue at another named scale.
 
 ### Codes (`_`)
 
@@ -58,12 +58,12 @@ Source: [numbers.md](../grammar/numbers.md), [numeric-derivation.md](../grammar/
 
 - No-mantissa digitless-exp beyond start / last / *just before that*: **`x+e`**, **`x-e`**, … (**`x-e-`** *just before that:* is defined). No discourse job for an unbounded list item.
 - Digitless-exp on end-relative marker **`#-`** / **`rue`**. Counting from the end has no far landmark of its own: the two ends are **`#e`** and **`#e-`**.
-- Zero×exp under `/x/` (**`x+0e`**, **`x±0e-1`**, …). No discourse job; discourse nesting uses [generation](../grammar/numbers-applied.md#ordinal-generation).
+- Zero×exp under `/x/` (**`x+0e`**, **`x±0e-1`**, …). No discourse job; discourse nesting uses [generation](../grammar/initials.md#ordinal-generation).
 - Ordinal zero×digitless under `/x/` (**`x#0e`**, *struck point*; its twins on other hosts are defined). No list has needed a struck item: a dropped point is `ur …`.
 
 ### Digitless-exp / hyperbole on `#-`
 
-- Digitless-exp and hyperbole on forward/end-relative **`#-`** / **`rue`** (combine with [digitful generation](../grammar/numbers-applied.md#ordinal-generation) when needed). Counting from the end flips which landmark the joke points at, so no reading is guessable.
+- Digitless-exp and hyperbole on forward/end-relative **`#-`** / **`rue`** (combine with [digitful generation](../grammar/initials.md#ordinal-generation) when needed). Counting from the end flips which landmark the joke points at, so no reading is guessable.
 
 ### Number markers on `/w/`, `/th/`, and stacks
 
@@ -117,7 +117,7 @@ Source: [joins.md](../grammar/joins.md), [join-across-roles.md](../grammar/join-
 - **closed (D-47):** a shared `/d/` or recipient `/b/` (before the subject or after the join) on a joined verb that has its own (`duredal vugudel vagedal val doledol`).
 - **closed (D-39):** a single-item clause join (`A xul` *not the case that A*, `A xal` *only A happened*).
 - **open:** **-x** on a join **-l** / **-m** / **-n** off `/v/` (`zalx`, `zanx`). On an empty set it contradicts the **-l** (*several nobodies*), and on a universal it repeats it; a named package with associates has no job yet. Parser: `joinPlural`.
-- **open:** a rank or sequence join (`e` / `ue` / `ae`) with a number as a threshold, and a SHARED continuum word. In a rank or sequence fence a number is one of the items, so a threshold reading is not guessable. Ranges use hooks and [rays](../grammar/numbers-applied.md#rays).
+- **open:** a rank or sequence join (`e` / `ue` / `ae`) with a number as a threshold, and a SHARED continuum word. In a rank or sequence fence a number is one of the items, so a threshold reading is not guessable. Ranges use hooks and [rays](../grammar/initials.md#rays).
 
 ## Comparison bars
 

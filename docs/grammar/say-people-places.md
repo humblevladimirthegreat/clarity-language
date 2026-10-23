@@ -149,7 +149,7 @@ When the thing only comes **from** B (*the sound of the drums*), use origin **`g
 
 ### Named handles {#named-handles}
 
-**Needs:** [Proper name `-n`](proper-names.md#proper-name--n) · [Multipart names](proper-names.md#multipart-names) · [Initials](numbers-applied.md#initials)
+**Needs:** [Proper name `-n`](proper-names.md#proper-name--n) · [Multipart names](proper-names.md#multipart-names) · [Initials](initials.md#initials)
 
 A long official title (bureau, act, titled group) may have a **handle**: one published root plus **-n**, used like any proper name, including on first mention. The long form is the same office spelled as a hyphenated name (`ROOT x ROOT` … + **-n**).
 
@@ -280,7 +280,7 @@ English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwezud
 
 ### Kin words {#kin-words}
 
-**Needs:** [Kin](numbers-applied.md#kin-generations) · [Adjectives `/ɡ/`](clause.md#adjectives-ɡ)
+**Needs:** [Kin](initials.md#kin-generations) · [Adjectives `/ɡ/`](clause.md#adjectives-ɡ)
 
 English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family tree and a sex. Agebon says the layer with the kin number and the sex with **`gemugol`** *male* or **`gevugol`** *female*, after `zeyol` *person*. Put the person the tie is from in a `bl-` word right after the number.
 

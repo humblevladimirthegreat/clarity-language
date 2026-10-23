@@ -6,9 +6,9 @@ import { fileURLToPath } from "node:url";
 
 import { parseWord } from "../parse/word.js";
 
-const page = join(dirname(fileURLToPath(import.meta.url)), "../../docs/grammar/numbers-applied.md");
+const page = join(dirname(fileURLToPath(import.meta.url)), "../../docs/grammar/initials.md");
 
-/** Each title root's first consonant, `th` as one letter (numbers-applied.md#initials). */
+/** Each title root's first consonant, `th` as one letter (initials.md#initials). */
 function initials(title: string): string {
   const family = parseWord(title).family;
   assert.equal(family.kind === "x" && family.xFamily, "compound", `${title} is not a hyphenated name`);
@@ -17,7 +17,7 @@ function initials(title: string): string {
 }
 
 // Initials copy their title's root spellings, which a lexicon retie moves without touching the handle.
-describe("initials examples (numbers-applied.md#initials)", () => {
+describe("initials examples (initials.md#initials)", () => {
   it("spell each title's handle from its roots' first consonants", () => {
     const text = readFileSync(page, "utf8");
     const section = text.slice(text.indexOf("### Initials"), text.indexOf("### Rays"));

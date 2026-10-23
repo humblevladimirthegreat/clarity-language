@@ -75,7 +75,7 @@ A signed measure in the `/b/` of a [time pole](dependents.md#time-poles) (**`har
 >
 > "Keep the secret until tomorrow."
 
-For *just* and *about to*, use the [just-short](digitless-exponents.md#just-short) amount with no unit: **`blruwul`** is *a hair before now*, **`blrawul`** is *a hair after now*.
+For *just* and *about to*, use the [just-short](special-values.md#just-short) amount with no unit: **`blruwul`** is *a hair before now*, **`blrawul`** is *a hair after now*.
 
 > `zuzozen thevum blruwul vowurel.`
 >

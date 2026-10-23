@@ -387,7 +387,7 @@ The [finger code](../grammar/finger-code.md) gives each letter a shape counted o
 
 ### Letter codes
 
-Letters in a `_` code are spoken one syllable each, and initials take each title root's first consonant ([letter codes](../grammar/numbers-applied.md#letter-codes), [initials](../grammar/numbers-applied.md#initials)). Rejected:
+Letters in a `_` code are spoken one syllable each, and initials take each title root's first consonant ([letter codes](../grammar/numbers-applied.md#letter-codes), [initials](../grammar/initials.md#initials)). Rejected:
 
 - **A separator per marker** (`tha`, `thu`, `the`, `tho`). `tho` is now the letter `th`. One `the` means *next group* in every number, with no choice to make on a stacked marker. The cost is that a hearer who missed the start of a long negative number no longer hears the sign at each break; long grouped negatives are rare in speech, and the sign is still said at the start. Keeping `thu` on negatives only would cost two separator syllables.
 - **Leaving `th` out of codes and keeping `tho`.** This works, but `the` everywhere frees `th` and drops a per-marker choice.

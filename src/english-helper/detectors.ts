@@ -68,7 +68,7 @@ export const ROLE_LINKS: Readonly<Record<string, string>> = {
 
 /** Classes the lexicon leaves out on purpose (wordnet-index.ts routes) → the sections that say them. */
 export const ROUTE_LINKS: Readonly<Record<RouteClass, string[]>> = {
-  kin: ["numbers-applied.md#kin-generations", "say-people-places.md#kin-words"],
+  kin: ["initials.md#kin-generations", "say-people-places.md#kin-words"],
   young: ["say-people-places.md#young-animals", "clause.md#adjectives-ɡ"],
   female: ["say-people-places.md#young-animals", "clause.md#adjectives-ɡ"],
   male: ["say-people-places.md#young-animals", "clause.md#adjectives-ɡ"],

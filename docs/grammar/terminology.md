@@ -158,7 +158,7 @@ A parenthetical comment span (`th(…)` on the sentence; `g(…)`, `w(…)`, or 
 
 ### Bare OoM
 
-Digitless exponent naming a magnitude band (`grawamol`, `grawagel`).
+Digitless exponent naming a magnitude band (`g+e0`, `grawagel`).
 
 [Digitless and exponents](digitless-exponents.md#bare-oom-bands)
 
@@ -311,7 +311,7 @@ Number word with marker and ending but no digit groups.
 
 Advanced free-number specials (`+e`, `-e-`, `+0e`, …). **Just short** is free `-e-`.
 
-[Digitless and exponents](digitless-exponents.md#special-values), [just short](digitless-exponents.md#just-short)
+[Special values, hyperbole, number as stance](special-values.md#special-values), [just short](special-values.md#just-short)
 
 **Compare with:** [quasi](#quasi) is the numeric prefix `-e-xROOT`. **NOTIONAL** is the as-if [mood](#mood-tags), not a number.
 
@@ -672,7 +672,7 @@ Numeric prefix `-e-xROOT` (and quasi-N): the shape of a kind, not the real thing
 
 Numeric from–to with a hook between the ends (`al` / `ul`); a ray has ±∞ as one end. The same idea on any ordered line is the [range hook](#range-hook).
 
-[Numbers in use](numbers-applied.md#ranges), [rays](numbers-applied.md#rays)
+[Numbers in use](numbers-applied.md#ranges), [Initials, rays, named ranges](initials.md#rays)
 
 ### Range hook
 

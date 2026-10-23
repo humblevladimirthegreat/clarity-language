@@ -199,7 +199,7 @@ The digit-string marker `_` holds a phone, room, channel, or serial number, with
 | [Fields](../numbers-applied.md#code-fields) | `d_2,1,3` | *version 2.1.3* | I |
 | [Plural label](../numbers-applied.md#plural-labels) | `zuzozen vowurel herem bl_90x.` | *Uzozen walked in the ’90s.* | I |
 | [Letter code](../numbers-applied.md#letter-codes) | `zuzozen dobebul g_b12 vagedal.` | *Uzozen takes a B12 pill.* | I |
-| [Initials](../numbers-applied.md#initials) | `z@_nl` | *the NL* (for `zanaxolazun`) | A |
+| [Initials](../initials.md#initials) | `z@_nl` | *the NL* (for `zanaxolazun`) | A |
 
 Say a code one character per syllable: a digit by its digit syllable, a consonant by its letter name, and a vowel after a break `'`.
 
@@ -301,20 +301,20 @@ To limit to one end, make the other end infinity:
 <!-- cheat-sheet: numbers -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`zrazal al zrawal`](../numbers-applied.md#rays) | 5 up to +∞ | *5 or more* | A |
-| [`zrawal ul zrazal`](../numbers-applied.md#rays) | 5 left out | *more than 5* | A |
-| [`zruwal al zrazal`](../numbers-applied.md#rays) | −∞ up to 5 | *5 or less* | A |
-| [`zruwal ul zrazal`](../numbers-applied.md#rays) | 5 left out | *less than 5* | A |
-| [`zrazal am zrawal`](../numbers-applied.md#rays) | soft | *about 5 or more* | A |
+| [`zrazal al zrawal`](../initials.md#rays) | 5 up to +∞ | *5 or more* | A |
+| [`zrawal ul zrazal`](../initials.md#rays) | 5 left out | *more than 5* | A |
+| [`zruwal al zrazal`](../initials.md#rays) | −∞ up to 5 | *5 or less* | A |
+| [`zruwal ul zrazal`](../initials.md#rays) | 5 left out | *less than 5* | A |
+| [`zrazal am zrawal`](../initials.md#rays) | soft | *about 5 or more* | A |
 
 Ranks take `grewal` (last) and `grewul` (first) as ends: `zredol al zrewal` is *2nd through last*. A named band uses **-n**, and **-r** stands for a value in it.
 
 <!-- cheat-sheet: numbers -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`z+13 an z+19`](../numbers-applied.md#named-ranges) | a named band | *the teens* | A |
-| [`zragel ar zrazal`](../numbers-applied.md#named-ranges) | some value in the band | *some value from 3 to 5* | A |
-| [`zragel ur zrazal`](../numbers-applied.md#named-ranges) | some value, 5 left out | *some value from 3 up to 5* | A |
+| [`z+13 an z+19`](../initials.md#named-ranges) | a named band | *the teens* | A |
+| [`zragel ar zrazal`](../initials.md#named-ranges) | some value in the band | *some value from 3 to 5* | A |
+| [`zragel ur zrazal`](../initials.md#named-ranges) | some value, 5 left out | *some value from 3 up to 5* | A |
 
 ### Percent, parts, and kin {#parts}
 
@@ -343,25 +343,25 @@ A digitless exponent (**`e`** speech `wa`, **`e-`** speech `wu`, no digits after
 <!-- cheat-sheet: numbers -->
 | Form | Reading | Stage |
 |------|---------|-------|
-| [`g+e`](../digitless-exponents.md#special-referential) | +∞ | A |
-| [`g~+e`](../digitless-exponents.md#special-referential) | arbitrarily large but finite | A |
-| [`g+e-`](../digitless-exponents.md#special-referential) | arbitrarily small but finite | A |
-| [`g-e`](../digitless-exponents.md#special-referential) | −∞ | A |
-| [`g#e`](../digitless-exponents.md#special-referential) | last place | A |
-| [`g~#e`](../digitless-exponents.md#special-referential) | near last place | A |
-| [`g#e-`](../digitless-exponents.md#special-referential) | start place (the onset); numbered 1st is `g#1` | A |
-| [`g~#e-`](../digitless-exponents.md#special-referential) | near first place | A |
-| [`g-e-`](../digitless-exponents.md#special-referential) | just short: a hair under; *almost* | A |
-| [`g~-e-`](../digitless-exponents.md#special-referential) | nearly | A |
+| [`g+e`](../special-values.md#special-referential) | +∞ | A |
+| [`g~+e`](../special-values.md#special-referential) | arbitrarily large but finite | A |
+| [`g+e-`](../special-values.md#special-referential) | arbitrarily small but finite | A |
+| [`g-e`](../special-values.md#special-referential) | −∞ | A |
+| [`g#e`](../special-values.md#special-referential) | last place | A |
+| [`g~#e`](../special-values.md#special-referential) | near last place | A |
+| [`g#e-`](../special-values.md#special-referential) | start place (the onset); numbered 1st is `g#1` | A |
+| [`g~#e-`](../special-values.md#special-referential) | near first place | A |
+| [`g-e-`](../special-values.md#special-referential) | just short: a hair under; *almost* | A |
+| [`g~-e-`](../special-values.md#special-referential) | nearly | A |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Infinitely many](../digitless-exponents.md#special-values) | `zagozolx grawal.` | *There are infinitely many cats.* | A |
-| [Uzozen barely sits](../digitless-exponents.md#special-number-as-verb-and-adverb) | `zuzozen h+e- vuhohol.` | *Uzozen barely sits.* | A |
-| [Uzozen almost sits](../digitless-exponents.md#special-number-as-verb-and-adverb) | `zuzozen h-e- vuhohol.` | *Uzozen almost sits.* | A |
-| [Almost angry](../digitless-exponents.md#special-number-as-verb-and-adverb) | `zudozol wruwul gunemul vowurel.` | *An almost angry dog walks.* | A |
-| [Finally:](../digitless-exponents.md#special-number-as-discourse) | `xrewal` | *Finally:* | A |
-| [Starting with:](../digitless-exponents.md#special-number-as-discourse) | `xrewul` | *Starting with:* | A |
+| [Infinitely many](../special-values.md#special-values) | `zagozolx grawal.` | *There are infinitely many cats.* | A |
+| [Uzozen barely sits](../special-values.md#special-number-as-verb-and-adverb) | `zuzozen h+e- vuhohol.` | *Uzozen barely sits.* | A |
+| [Uzozen almost sits](../special-values.md#special-number-as-verb-and-adverb) | `zuzozen h-e- vuhohol.` | *Uzozen almost sits.* | A |
+| [Almost angry](../special-values.md#special-number-as-verb-and-adverb) | `zudozol wruwul gunemul vowurel.` | *An almost angry dog walks.* | A |
+| [Finally:](../special-values.md#special-number-as-discourse) | `xrewal` | *Finally:* | A |
+| [Starting with:](../special-values.md#special-number-as-discourse) | `xrewul` | *Starting with:* | A |
 
 The same form on each slot: `gruwul` the amount, `xruwul` *just before that:*, `thruwul` *virtually*, `vruwul` *nudge down*, `hruwul` *almost*, `yruwul` *so close!* **-l** measures the margin (`hrawul` over by a hair, `hruwul` under); **-m** reports the felt effort (`hrawum` *managed it, just*; `hruwum` *tried hard and didn't quite*).
 
@@ -372,21 +372,21 @@ Mantissa **`0`** with a digitless exponent is a strong zero. A nonzero mantissa 
 <!-- cheat-sheet: numbers -->
 | Form | Reading | Stage |
 |------|---------|-------|
-| [`g+0e`](../digitless-exponents.md#zero-exponent-referential) | absolute zero | A |
-| [`g+0e-`](../digitless-exponents.md#zero-exponent-referential) | sterile: empty at the seed | A |
-| [`g-0e`](../digitless-exponents.md#zero-exponent-referential) | absolute residue: will not wipe | A |
-| [`g-0e-`](../digitless-exponents.md#zero-exponent-referential) | micro-residue | A |
-| [`g+0e-1`](../digitless-exponents.md#zero-exponent-referential) | engineering null at 10⁻¹ | A |
-| [`g-0e-1`](../digitless-exponents.md#zero-exponent-referential) | engineering residue at 10⁻¹ | A |
-| [`g#0e`](../digitless-exponents.md#rank-annihilated) | rank annihilated: disqualified | A |
+| [`g+0e`](../special-values.md#zero-exponent-referential) | absolute zero | A |
+| [`g+0e-`](../special-values.md#zero-exponent-referential) | sterile: empty at the seed | A |
+| [`g-0e`](../special-values.md#zero-exponent-referential) | absolute residue: will not wipe | A |
+| [`g-0e-`](../special-values.md#zero-exponent-referential) | micro-residue | A |
+| [`g+0e-1`](../special-values.md#zero-exponent-referential) | engineering null at 10⁻¹ | A |
+| [`g-0e-1`](../special-values.md#zero-exponent-referential) | engineering residue at 10⁻¹ | A |
+| [`g#0e`](../special-values.md#rank-annihilated) | rank annihilated: disqualified | A |
 
 <!-- cheat-sheet: numbers -->
 | Form | Reading | Stage |
 |------|---------|-------|
-| [`g+1e`](../digitless-exponents.md#hyperbole) | *one gazillion* | A |
-| [`g+3e`](../digitless-exponents.md#hyperbole) | *three gazillion* | A |
-| [`g+1e-`](../digitless-exponents.md#hyperbole) | *one gazillionth*, vanishingly small | A |
-| [`g-1e`](../digitless-exponents.md#hyperbole) | *minus one gazillion* | A |
+| [`g+1e`](../special-values.md#hyperbole) | *one gazillion* | A |
+| [`g+3e`](../special-values.md#hyperbole) | *three gazillion* | A |
+| [`g+1e-`](../special-values.md#hyperbole) | *one gazillionth*, vanishingly small | A |
+| [`g-1e`](../special-values.md#hyperbole) | *minus one gazillion* | A |
 
 Plain zero is `g+0` and the bare band at 10⁻¹ is `g+e-1`. `gramol` is plain zero, `gramowal` absolute zero, `grawamol` the ones band. A gazillionth is `g#1e` (late) and `g#1e-` (early): finite jokes. Other slots: `y+e` *To infinity!*, `y#e` *Finally!*, `y#0e` *Disqualified!*, `v+e` *increase without bound*, `v+0e` *annihilate*, `h+1e` *a gazillion times*, and on stance `th+e` *certain*, `th+0e` *no chance at all*.
 
@@ -429,29 +429,29 @@ On a rank, an exponent with digits is a generation, not a power of ten: `eK` goe
 <!-- cheat-sheet: numbers -->
 | Form | Reading | Stage |
 |------|---------|-------|
-| [`g#3`](../numbers-applied.md#ordinal-generation) | 3rd of the focus's own generation, from the start | A |
-| [`g#-3`](../numbers-applied.md#ordinal-generation) | 3rd of the own generation, from the end | A |
-| [`g#3e0`](../numbers-applied.md#ordinal-generation) | 3rd of the current generation, asserted | A |
-| [`g#e0`](../numbers-applied.md#ordinal-generation) | the current generation as a whole | A |
-| [`g#3e2`](../numbers-applied.md#ordinal-generation) | 3rd in generation +2 | A |
-| [`g#3e-2`](../numbers-applied.md#ordinal-generation) | 3rd in generation −2 | A |
-| [`g#-1e2`](../numbers-applied.md#ordinal-generation) | last of generation +2 | A |
-| [`g#e2`](../numbers-applied.md#ordinal-generation) | generation +2 as a whole | A |
-| [`g#e-1`](../numbers-applied.md#ordinal-generation) | generation −1: the parent layer | A |
-| [`g#1e-1`](../numbers-applied.md#ordinal-generation) | 1st of generation −1 | A |
+| [`g#3`](../initials.md#ordinal-generation) | 3rd of the focus's own generation, from the start | A |
+| [`g#-3`](../initials.md#ordinal-generation) | 3rd of the own generation, from the end | A |
+| [`g#3e0`](../initials.md#ordinal-generation) | 3rd of the current generation, asserted | A |
+| [`g#e0`](../initials.md#ordinal-generation) | the current generation as a whole | A |
+| [`g#3e2`](../initials.md#ordinal-generation) | 3rd in generation +2 | A |
+| [`g#3e-2`](../initials.md#ordinal-generation) | 3rd in generation −2 | A |
+| [`g#-1e2`](../initials.md#ordinal-generation) | last of generation +2 | A |
+| [`g#e2`](../initials.md#ordinal-generation) | generation +2 as a whole | A |
+| [`g#e-1`](../initials.md#ordinal-generation) | generation −1: the parent layer | A |
+| [`g#1e-1`](../initials.md#ordinal-generation) | 1st of generation −1 | A |
 
 On a family tree, put the anchor person in a `bl-` word right after the number.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Parents](../numbers-applied.md#kin-generations) | `grewubal` | the layer above the focus | A |
-| [Siblings](../numbers-applied.md#kin-generations) | `zolazun grewamol bluzozen vowurel.` | *Olazun, Uzozen's sibling, walks.* | A |
-| [Siblings of each other](../numbers-applied.md#kin-generations) | `zuzozen zolazun zal grewamol.` | *Uzozen and Olazun are siblings.* | A |
-| [Eldest sibling](../numbers-applied.md#kin-generations) | `zolazun g#1e0 bluzozen vowurel.` | *Olazun, Uzozen's eldest sibling, walks.* | A |
-| [Second child](../numbers-applied.md#kin-generations) | `zahoyel g#2e1 bluzozen vowurel.` | *Uzozen's second child walks.* | A |
-| [Children](../numbers-applied.md#kin-generations) | `grewabal` | the focus's own children | A |
-| [Grandchildren](../numbers-applied.md#kin-generations) | `grewadol` | the focus's grandchildren | A |
-| [Aunt or uncle](../numbers-applied.md#kin-generations) | `zolazun grewamol bleyol g#1e-1 bluzozen vowurel.` | *Olazun, Uzozen's aunt or uncle, walks.* (a sibling of the first of Uzozen's parents) | A |
+| [Parents](../initials.md#kin-generations) | `grewubal` | the layer above the focus | A |
+| [Siblings](../initials.md#kin-generations) | `zolazun grewamol bluzozen vowurel.` | *Olazun, Uzozen's sibling, walks.* | A |
+| [Siblings of each other](../initials.md#kin-generations) | `zuzozen zolazun zal grewamol.` | *Uzozen and Olazun are siblings.* | A |
+| [Eldest sibling](../initials.md#kin-generations) | `zolazun g#1e0 bluzozen vowurel.` | *Olazun, Uzozen's eldest sibling, walks.* | A |
+| [Second child](../initials.md#kin-generations) | `zahoyel g#2e1 bluzozen vowurel.` | *Uzozen's second child walks.* | A |
+| [Children](../initials.md#kin-generations) | `grewabal` | the focus's own children | A |
+| [Grandchildren](../initials.md#kin-generations) | `grewadol` | the focus's grandchildren | A |
+| [Aunt or uncle](../initials.md#kin-generations) | `zolazun grewamol bleyol g#1e-1 bluzozen vowurel.` | *Olazun, Uzozen's aunt or uncle, walks.* (a sibling of the first of Uzozen's parents) | A |
 
 Only kin make generations: friends and bosses are [social relations](../of-relations.md#social-relations).
 
@@ -466,10 +466,10 @@ Only kin make generations: friends and bosses are [social relations](../of-relat
 | `hragel` *three times* ([a factor](../number-markers.md#number-as-adverb-by-marker)) | | `h_15,30` *at 15:30* ([a clock time](../numbers-applied.md#time)) |
 | `hragel` *three times* ([a count of times](../number-markers.md#number-as-adverb-by-marker)) | | `hregel` *for the third time* ([which time](../number-markers.md#number-as-adverb-by-marker)) |
 | `gredol` *the second* ([from the start](../numbers.md#ordinals)) | | `gruedol` *second from the end* ([from the end](../stacked-markers.md#from-the-end)) |
-| `grewal` *last place* ([the landmark](../digitless-exponents.md#special-referential)) | | `grebal` *1st* ([numbered first](../digitless-exponents.md#special-referential)) |
-| `grewul` *the start landmark* ([the onset](../digitless-exponents.md#special-referential)) | | `grebal` *1st* ([a counted first](../digitless-exponents.md#special-referential)) |
-| `grawamol` *the ones band* ([bare OoM](../digitless-exponents.md#bare-oom)) | | `gramowal` *absolute zero* ([a strong zero](../digitless-exponents.md#zero-exponent-referential)) |
-| `gruwul` *just short* ([a hair under](../digitless-exponents.md#special-referential)) | | `grawul` *a hair over* ([a hair above zero](../digitless-exponents.md#special-referential)) |
+| `grewal` *last place* ([the landmark](../special-values.md#special-referential)) | | `grebal` *1st* ([numbered first](../special-values.md#special-referential)) |
+| `grewul` *the start landmark* ([the onset](../special-values.md#special-referential)) | | `grebal` *1st* ([a counted first](../special-values.md#special-referential)) |
+| `grawamol` *the ones band* ([bare OoM](../digitless-exponents.md#bare-oom)) | | `gramowal` *absolute zero* ([a strong zero](../special-values.md#zero-exponent-referential)) |
+| `gruwul` *just short* ([a hair under](../special-values.md#special-referential)) | | `grawul` *a hair over* ([a hair above zero](../special-values.md#special-referential)) |
 | `x#2` *point 2:* ([a numbered step](../stacked-markers.md#examples)) | | `x#-2` *2nd from the end:* ([counting back](../stacked-markers.md#from-the-end)) |
 | `x-2` *independent item 2:* ([a new line of support](../stacked-markers.md#examples)) | | `x#-2` *2nd from the end:* ([counting back](../stacked-markers.md#from-the-end)) |
 | `th+70` *70% likely* ([a stance](../number-markers.md#number-as-stance-by-marker)) | | `thomam` *maybe* ([open, with no figure](../knowing.md#may)) |

@@ -67,6 +67,10 @@ export const hashRedirects: HashRedirect[] = [
   { page: "relations.md", hash: "intermediate", to: "of-relations.md" },
   { page: "relations.md", hash: "advanced", to: "as-of.md" },
   { page: "relations.md", hash: "beginner", to: "relations.md" },
+  { page: "digitless-exponents.md", hash: "advanced", to: "special-values.md" },
+  { page: "digitless-exponents.md", hash: "intermediate", to: "digitless-exponents.md" },
+  { page: "numbers-applied.md", hash: "advanced", to: "initials.md" },
+  { page: "numbers-applied.md", hash: "intermediate", to: "numbers-applied.md" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */

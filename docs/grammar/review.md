@@ -822,7 +822,7 @@ z-Uzozen | [d-baguette-x | g-plus-infinity.about] | v-see
 
 Open **-m** keeps the amount finite, just very large; **`grawal`** is infinitely many.
 
-**Rule:** [Special values](digitless-exponents.md#special-values)
+**Rule:** [Special values](special-values.md#special-values)
 :::
 
 **4.** *Uzozen, whom I remember as sleepy, is sleeping.* `zuzozen wevum guzemol vezuvol.` or `zuzozen guzemol vezuvol thevum.`

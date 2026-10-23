@@ -40,4 +40,6 @@ export const holdingList: HoldingSitting[] = [
   { parent: "hooks.md", page: "hook-compounds.md", band: "advanced", title: "Hook compounds" },
   { parent: "relations.md", page: "of-relations.md", band: "intermediate", title: "Of-relations and social ties" },
   { parent: "relations.md", page: "as-of.md", band: "advanced", title: "As-of" },
+  { parent: "digitless-exponents.md", page: "special-values.md", band: "advanced", title: "Special values, hyperbole, number as stance" },
+  { parent: "numbers-applied.md", page: "initials.md", band: "advanced", title: "Initials, rays, named ranges" },
 ]

@@ -165,7 +165,7 @@ describe("WordNet tiers and routes", () => {
     const cousin = slotsOf("My cousin walks.").find((s) => s.text === "cousin")!;
     const route = cousin.suggestions.find((s): s is ClassSuggestion => s.kind === "class")!;
     assert.equal(route.class, "kin");
-    assert.ok(route.links.includes("numbers-applied.md#kin-generations"));
+    assert.ok(route.links.includes("initials.md#kin-generations"));
     const sister = slotsOf("My sister walks.").find((s) => s.text === "sister")!;
     assert.ok(!sister.suggestions.some((s) => s.kind === "class"));
   });

@@ -15,8 +15,8 @@ group = [exponent?] [mantissa digits?]
 
 1. **PoS:** the role letter (part of speech), as on any other word.
 2. **Number marker:** consonant **r** plus a vowel **V**. **V** is a single vowel at this stage. The cluster of role letter plus `r` is a [number-only letter-cluster exception](phonotactics.md#phonotactics). A marker can sound like a digit (rank **`re`**, digit 7 **`re`**), but the marker always comes straight after the role letter, so `grerel` is *the seventh*.
-3. **Zero or more digit groups:** each group is an optional exponent (the *order of magnitude* piece) and optional mantissa digits (the ordinary digits). A group always has at least one of those two pieces. Digits sit next to each other with no **x** between them. A sign, when there is one, applies once to the whole word. With **no groups**, the word is digitless: it says what kind of number it is, but not its value. Unspecified amounts, *how many?*, exponents, and the spoken comma are in [digitless and exponents](digitless-exponents.md).
-4. **Group separator:** each group after the first opens with **`the`** (the spoken comma; [digitless and exponents](digitless-exponents.md)).
+3. **Zero or more digit groups:** each group is an optional exponent (the *order of magnitude* piece) and optional mantissa digits (the ordinary digits). A group always has at least one of those two pieces. Digits sit next to each other with no **x** between them. A sign, when there is one, applies once to the whole word. With **no groups**, the word is digitless: it says what kind of number it is, but not its value.
+4. **Group separator:** each group after the first opens with **`the`** (the spoken comma).
 5. **Ending:** `-l` / `-m` / `-n` / `-r`.
 
 Speech always uses the fully spelled form. Writing also has a shorthand for numbers with two or more digits (`g+12`); zero, one digit, or none stays spelled (`gragel`, `gral`).
@@ -123,7 +123,7 @@ Put the marker symbol **right after** the ending mark (or right after the role l
 | *(no digit groups)* | *(empty after marker)* `g+`, `g~-`, `g=#`, `d_` |
 | Digit syllables (`ba`…`mo`) | Arabic **`0`–`9`** |
 
-Exponent marks, the spoken comma, decimals, and percent are in [digitless and exponents](digitless-exponents.md) and [numbers in use](numbers-applied.md). For long values, break into digit groups of at most three mantissa digits; all groups still sit in **one** word after a single marker.
+For long values, break into digit groups of at most three mantissa digits; all groups still sit in **one** word after a single marker.
 
 #### Starter examples {#starter-examples}
 
@@ -192,7 +192,7 @@ On `/h/`, the marker decides what kind of adverb the number is.
 | **`ra`** | `h+N` | **Multiplicative / factor**: *N times*; *×N*; *by a factor of N* (alone, or with ordinary *multiply*). |
 | **`ru`** | `h-N` | **Inverse / partition**: *÷N*; *into N parts*; *1/N as often*; *every Nth* (alone, or with ordinary *divide*). |
 | **`re`** | `h#N` | **Nth occurrence of the event (from the start)**: *for the Nth time*; *on the Nth try* (clause-event ordinal, not discourse list independence). |
-| **`ro`** | `h_…` | **Clock** and **date** (a calendar ordinal): taught in [numbers in use](numbers-applied.md). Channel, frequency, and other codes use a host relation + `/b/` (or `/ɡ/` on a noun). |
+| **`ro`** | `h_…` | **Clock** and **date** (a calendar ordinal). Channel, frequency, and other codes use a host relation + `/b/` (or `/ɡ/` on a noun). |
 
 > `zolazun vowurel hragel.`
 > z-Olazun | v-walk | h-three
@@ -222,8 +222,6 @@ Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call 
 
 **Compare with:** statement / question / command words in the [speech-act section](speech-acts.md#speech-act).
 
-Bare OoM bands keep their band under `/v/` `/h/` `/y/` ([digitless and exponents](digitless-exponents.md)).
-
 #### Number as discourse marker (by marker) {#number-as-discourse-marker-by-marker}
 
 To number the points of a list (*point 2:*, *firstly*) or to cite a label (*item 12*), put the number on `/x/`, the linker that opens a sentence. The marker says how the point stands toward the other points: **`#`** is a plain numbered step, **`+`** backs up an earlier point, and **`-`** is a new, independent line of support. **`_`** cites a label instead. None of these is part of the sentence's own roles, unlike `/ɡ/` *the second page* or `/h/` *three times*.
@@ -244,7 +242,7 @@ Endings still apply (**-l** newly stated item, **-r** *as in (N) above* (with a 
 #### Number as degree (by marker) {#number-as-degree}
 <a id="place-on-a-scale"></a>
 
-On `/w/`, a number sits in the degree slot right before an adjective or adverb ([clause](clause.md#adjective-detail-w)). Only the ordinal marker gives a new reading: **`w#N`** (N from 2) is the **place on that scale**, in a superlative frame (`zuzozen zel wredol gelazom` *Uzozen is the second biggest*). The other number readings on `/w/` were already set: the blank **`wrar`** asks *how much?* of a quality, and Advanced just-short forms are *barely* / *almost* ([digitless and exponents](digitless-exponents.md)). A count or a fraction on `/w/` (`w+3`) is not used: a factor goes on `/h/` (`hradol` *twice*, factor).
+On `/w/`, a number sits in the degree slot right before an adjective or adverb ([clause](clause.md#adjective-detail-w)). Only the ordinal marker gives a new reading: **`w#N`** (N from 2) is the **place on that scale**, in a superlative frame (`zuzozen zel wredol gelazom` *Uzozen is the second biggest*). A count or a fraction on `/w/` (`w+3`) is not used: a factor goes on `/h/` (`hradol` *twice*, factor).
 
 #### Number as stance (by marker) {#number-as-stance-by-marker}
 <a id="likelihood"></a>

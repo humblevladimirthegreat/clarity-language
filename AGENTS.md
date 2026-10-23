@@ -44,8 +44,8 @@ Each row names what the file owns. The file is the authority; this table is only
 | `compounds.md` | Mid-word `x`, dictionary compounds; compound families, conversation length (`compound-families.md`); root tails, tail suffixes (`root-tails.md`). |
 | `spans.md` | Span fences, asides; mention, scope islands (`span-mention.md`); editorial close, nesting (`span-nesting.md`). |
 | `numbers.md` | Numerals; word shape, markers, endings, writing (`number-markers.md`); end-relative, stacked markers (`stacked-markers.md`). |
-| `digitless-exponents.md` | Digitless forms, exponents, bare OoM, group separator. |
-| `numbers-applied.md` | Digit strings, time and date, ranges, measure phrases. |
+| `digitless-exponents.md` | Digitless forms, exponents, bare OoM, group separator; special values, hyperbole, number as stance (`special-values.md`). |
+| `numbers-applied.md` | Digit strings, time and date, ranges, measure phrases; initials, rays, named ranges (`initials.md`). |
 | `numeric-derivation.md` | Numeric prefixes: number + `x` + root (advanced only). |
 | `review.md` | **Level reviews**: one `### Practice` band per level, read after every stage page; adds no forms and no words, [level reviews](docs/meta/translation-exercises.md#level-reviews). |
 | `english.md` + `say-*.md` | **Saying it in Agebon** recipe track, keyed by English job. Outside stage order; stage pages never link to it, [recipe track](docs/meta/grammar-docs.md#recipe-track). New gap resolutions that add no form go here. |

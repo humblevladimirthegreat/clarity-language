@@ -1,6 +1,6 @@
 # Proposal: One sitting per file, grouped by band in the sidebar
 
-**Status:** phase 0, 1, and 2 landed (B+I and B+I+A peels on the holding list). Not design authority; fold into grammar / meta docs, then drop.  
+**Status:** phase 0, 1, 2, and 3 landed (B+I, B+I+A, and I+A peels on the holding list). Not design authority; fold into grammar / meta docs, then drop.  
 **Related:** [learning levels](../../meta/learning-levels.md), [empty stages](../../meta/grammar-docs.md#empty-stages), [page skeleton](../../meta/grammar-docs.md#page-skeleton), [level reviews](../../meta/translation-exercises.md#level-reviews), [AGENTS.md policy](../../meta/agents-md.md), [site redirects](../../meta/site-redirects.md).  
 **Code:** [`reading-order.ts`](../../grammar/.vitepress/lib/reading-order.ts), [`holding-list.ts`](../../grammar/.vitepress/lib/holding-list.ts), [`hash-redirect.ts`](../../grammar/.vitepress/lib/hash-redirect.ts), [`learning-order.ts`](../../../src/lint/learning-order.ts), [`peel-band.ts`](../../../scripts/peel-band.ts), [`lint-forward-links.ts`](../../../scripts/lint-forward-links.ts), [`constructions.ts`](../../../src/parse/constructions.ts).
 
@@ -147,7 +147,7 @@ One session per phase unless the phase says it is several peel sessions.
 
 ### Phase 3 — Remaining I+A peels
 
-Digitless-exponents and numbers-applied. Numeric prefixes is already Advanced-only.
+**Landed.** Digitless-exponents and numbers-applied. Numeric prefixes is already Advanced-only. How to learn still describes H2s until regroup.
 
 ### Phase 4 — Reviews, regroup, How to learn, deploy
 
