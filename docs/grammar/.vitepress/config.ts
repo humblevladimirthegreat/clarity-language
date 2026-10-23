@@ -103,6 +103,7 @@ export default defineConfig({
       ...sidebarGroups,
       {
         text: 'Saying it in Agebon',
+        collapsed: true,
         items: [
           { text: 'Overview', link: '/english' },
           { text: 'People, things and places', link: '/say-people-places' },
@@ -124,6 +125,7 @@ export default defineConfig({
       },
       {
         text: 'Cheat Sheets',
+        collapsed: true,
         items: [
           { text: 'Sounds and spelling', link: '/cheat-sheets/sounds-spelling' },
           { text: 'Word shape and clause', link: '/cheat-sheets/word-shape-clause' },

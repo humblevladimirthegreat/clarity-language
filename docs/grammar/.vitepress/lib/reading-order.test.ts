@@ -32,6 +32,7 @@ describe('pathPages', () => {
     assert.equal(sidebarGroups[0]!.items.at(-1)?.link, '/review')
     assert.equal(sidebarGroups[1]!.items.at(-1)?.link, '/review-intermediate')
     assert.equal(sidebarGroups[2]!.items.at(-1)?.link, '/review-advanced')
+    assert.equal(sidebarGroups[0]!.collapsed, true)
     assert.equal(sidebarGroups[1]!.collapsed, true)
     assert.equal(sidebarGroups[2]!.collapsed, true)
   })

@@ -119,9 +119,9 @@ function withReview(lessons: readonly LessonLink[], review: LessonLink): LessonL
   return [...lessons, review]
 }
 
-/** Three sidebar groups. Intermediate and Advanced start collapsed. */
+/** Three sidebar groups. Beginner, Intermediate, and Advanced start collapsed. */
 export const sidebarGroups = [
-  { text: 'Beginner', items: withReview(beginnerLessons, levelReviews[0]) },
+  { text: 'Beginner', collapsed: true, items: withReview(beginnerLessons, levelReviews[0]) },
   { text: 'Intermediate', collapsed: true, items: withReview(intermediateLessons, levelReviews[1]) },
   { text: 'Advanced', collapsed: true, items: withReview(advancedLessons, levelReviews[2]) },
 ]
