@@ -89,7 +89,7 @@ Statement readings below. Asking *when*: [When?](/fill-ask-jobs#when).
 
 Under a question, **`hor`** asks which time ranks first: *When's best?* With occasions before it, the listener picks the one they prefer.
 
-> `yol hor zayan vowurel.`
+> `yel hor zayan vowurel.`
 >
 > y-question | h-when-best | z-interlocutors | v-walk
 >
@@ -170,7 +170,7 @@ z-Uzozen | v-climb | h-snow | h-rain | h-when-ranked
 **5.** *When's best for us to climb?*
 
 ::: details Show answer
-`yol hor zayan vuguvel.`
+`yel hor zayan vuguvel.`
 
 y-question | h-when-best | z-interlocutors | v-climb
 :::

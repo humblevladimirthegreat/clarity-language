@@ -67,8 +67,8 @@ export function stackKind(lead: LexWord | undefined, force: LexWord | undefined)
   if (lead.raw === force.raw) return "emphatic";
   const outer = actSeries(lead);
   const inner = actSeries(force);
-  if (outer === "a" && inner === "o") return "rhetorical";
-  if (outer === "o" && inner === "a") return "quiz";
+  if (outer === "a" && inner === "e") return "rhetorical";
+  if (outer === "e" && inner === "a") return "quiz";
   return "stack";
 }
 

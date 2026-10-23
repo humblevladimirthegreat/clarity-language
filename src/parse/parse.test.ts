@@ -91,15 +91,15 @@ describe("parse — clause.md beginner", () => {
   });
 
   it("parses yol question", () => {
-    const result = parseText("yol zuwon vowurel.");
+    const result = parseText("yel zuwon vowurel.");
     assert.ok(result.utterances[0]!.left.force);
-    assert.equal(result.utterances[0]!.left.force!.raw, "yol");
+    assert.equal(result.utterances[0]!.left.force!.raw, "yel");
   });
 
   it("parses confirm tag as second utterance", () => {
-    const result = parseText("zuzozen vowurel. yael.");
+    const result = parseText("zuzozen vowurel. yaol.");
     assert.equal(result.utterances.length, 2);
-    assert.equal(result.utterances[1]!.left.polars[0]?.raw, "yael");
+    assert.equal(result.utterances[1]!.left.polars[0]?.raw, "yaol");
   });
 
   it("parses yam soft statement", () => {
@@ -108,14 +108,14 @@ describe("parse — clause.md beginner", () => {
   });
 
   it("parses yel command with a period", () => {
-    const result = parseText("yel vuhahal.");
-    assert.equal(result.utterances[0]!.left.force?.raw, "yel");
+    const result = parseText("yol vuhahal.");
+    assert.equal(result.utterances[0]!.left.force?.raw, "yol");
     assert.equal(result.utterances[0]!.bodies[0]!.punct, "period");
   });
 
   it("parses polar plus body", () => {
-    const result = parseText("yael zuwon vowurel.");
-    assert.equal(result.utterances[0]!.left.polars[0]?.raw, "yael");
+    const result = parseText("yaol zuwon vowurel.");
+    assert.equal(result.utterances[0]!.left.polars[0]?.raw, "yaol");
     assert.equal(result.utterances[0]!.bodies[0]!.clause.units.length, 2);
   });
 });
@@ -195,7 +195,7 @@ describe("parse — describing a call or reaction (speech-acts.md#describe-turn-
   });
 
   it("leaves a /ɡ/ after an act word or a period in the body", () => {
-    assert.deepEqual(parseText("yolazun yel gayulem.").utterances[0]!.bodies[0]!.clause.units.map((u) => u.kind), ["predicate"]);
+    assert.deepEqual(parseText("yolazun yol gayulem.").utterances[0]!.bodies[0]!.clause.units.map((u) => u.kind), ["predicate"]);
     const [utt] = parseText("yemol. gelazom.").utterances;
     assert.equal(utt!.left.interjectionMods, undefined);
     assert.deepEqual(utt!.bodies[0]!.clause.units.map((u) => u.kind), ["predicate"]);
@@ -290,10 +290,10 @@ describe("parse — stand-in dependents", () => {
   });
 
   it("keeps clause joins after a stand-in inside its dependent", () => {
-    const clause = parseText("zuzozen vanam dorl zolazun vowurel xel zahelan varuvel.").utterances[0]!.bodies[0]!.clause;
+    const clause = parseText("zuzozen vanam derl zolazun vowurel xel zahelan varuvel.").utterances[0]!.bodies[0]!.clause;
     assert.equal(clause.units.some((unit) => unit.kind === "clauseCoord"), false);
     const dep = clause.dependent;
-    assert.equal(dep?.orodo.raw, "dorl");
+    assert.equal(dep?.orodo.raw, "derl");
     const coord = dep?.clause.units[0];
     assert.ok(coord && coord.kind === "clauseCoord");
     assert.equal(coord.coord.links.length, 1);
@@ -330,10 +330,10 @@ describe("parse — stand-in dependents", () => {
   });
 
   it("parses dorl whether without inner yol", () => {
-    const result = parseText("zuzozen vawebol dorl zolazun vowurel.");
+    const result = parseText("zuzozen vawebol derl zolazun vowurel.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
-    assert.equal(clause.dependent!.orodo.raw, "dorl");
+    assert.equal(clause.dependent!.orodo.raw, "derl");
   });
 });
 
@@ -613,17 +613,17 @@ describe("parse — stage 4 resolve", () => {
   });
 
   it("marks yol zar vowurel. as fill-ask", () => {
-    const result = parseText("yol zar vowurel.");
+    const result = parseText("yel zar vowurel.");
     assert.equal(result.resolve?.asks[0]?.kind, "fillAsk");
   });
 
   it("marks a join -r under yol as a fill-ask blank, and a join -l as no blank", () => {
-    for (const text of ["yol ol bar zayan vagedal.", "yol var zayan.", "yol har zayan vagedal.", "yol zarx vowurel."]) {
+    for (const text of ["yel ol bar zayan vagedal.", "yel var zayan.", "yel har zayan vagedal.", "yel zarx vowurel."]) {
       const ask = parseText(text).resolve?.asks[0];
       assert.equal(ask?.kind, "fillAsk", text);
       assert.equal(ask?.gaps.length, 1, text);
     }
-    assert.equal(parseText("yol zal vowurel.").resolve?.asks[0]?.kind, "yesNo");
+    assert.equal(parseText("yel zal vowurel.").resolve?.asks[0]?.kind, "yesNo");
   });
 });
 
@@ -669,7 +669,7 @@ describe("parse — comparatives.md bars", () => {
       ["zududal thudatham zoel gral.", "thudatham"],
       ["zanal thugom zuom garolom.", "thugom"],
       ["zolazun hodaxal zoel hedurem vowurel.", "hodaxal"],
-      ["zahehal hwavel zoel gobobom.", "hwavel"],
+      ["zahehal hwavol zoel gobobom.", "hwavol"],
       ["zanal thoguyem zol gagebom.", "thoguyem"],
       ["zuzozen thabomolazun zol guzemol.", "thabomolazun"],
     ] as const) {
@@ -732,7 +732,7 @@ describe("parse — comparatives.md bars", () => {
 
 describe("parse — spans.md /y/ spans", () => {
   it("reads a written /y/ span by its @ mark: named calls, unnamed reacts", () => {
-    assert.deepEqual(parseText("y@<Sam> yol zuzozen vowurel.").utterances[0]!.left.vocatives.map((w) => w.raw), ["y@<Sam>"]);
+    assert.deepEqual(parseText("y@<Sam> yel zuzozen vowurel.").utterances[0]!.left.vocatives.map((w) => w.raw), ["y@<Sam>"]);
     assert.deepEqual(parseText("y<Amen> zuzozen vowurel.").utterances[0]!.left.interjections.map((w) => w.raw), ["y<Amen>"]);
   });
 
@@ -741,7 +741,7 @@ describe("parse — spans.md /y/ spans", () => {
   });
 
   it("puts a written /y/ cite at the left edge too", () => {
-    assert.deepEqual(parseText("y[uzozen] yol zolazun vowurel.").utterances[0]!.left.interjections.map((w) => w.raw), ["y[uzozen]"]);
+    assert.deepEqual(parseText("y[uzozen] yel zolazun vowurel.").utterances[0]!.left.interjections.map((w) => w.raw), ["y[uzozen]"]);
   });
 
   it("sets the topic with an /x/ cite or opaque span", () => {
@@ -812,7 +812,7 @@ describe("parse — contrary to a stance (uem + /th/)", () => {
       assert.equal(hook.frame?.word.pos, "th", text);
       assert.ok(!units.some((unit) => unit.kind === "h"), text);
     }
-    for (const text of ["zuzozen vowurel uem hwavul.", "zuzozen vowurel uem hwavel."]) {
+    for (const text of ["zuzozen vowurel uem hwavul.", "zuzozen vowurel uem hwavol."]) {
       const { hook, units } = frameOf(text);
       assert.equal(hook.job, "frame", text);
       assert.equal(hook.frame?.word.family.kind, "say", text);
@@ -830,8 +830,8 @@ describe("parse — contrary to a stance (uem + /th/)", () => {
   });
 
   it("keeps the stance's hosted /b/ inside the frame", () => {
-    const { hook } = frameOf("zuzozen vezuyel uem hwavem blolazun.");
-    assert.equal(hook.frame?.word.raw, "hwavem");
+    const { hook } = frameOf("zuzozen vezuyel uem hwavom blolazun.");
+    assert.equal(hook.frame?.word.raw, "hwavom");
     assert.equal(hook.frame?.hosted?.bound.raw, "blolazun");
   });
 
@@ -989,8 +989,8 @@ describe("parse — one tree per sentence (syntactic-unambiguity batch 5b)", () 
   });
 
   it("takes an asking tag as a turn with no body", () => {
-    const tag = parseText("yol yael.").utterances[0]!;
-    assert.deepEqual(tag.left.polars.map((p) => p.raw), ["yael"]);
+    const tag = parseText("yel yaol.").utterances[0]!;
+    assert.deepEqual(tag.left.polars.map((p) => p.raw), ["yaol"]);
     assert.equal(tag.bodies.length, 0);
   });
 

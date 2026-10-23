@@ -290,7 +290,7 @@ const CLAUSE_START = new Set(["noun", "pronoun", "determiner", "number"]);
  */
 export function detectClauseOpener(word: string, prev?: TaggedTerm, next?: TaggedTerm): DetectorHit[] {
   if (word === "whether") {
-    return [{ id: "whether-clause", label: "*whether* + a clause: the stand-in `dorl` last in the main sentence, then the clause as the next sentence", links: [...OPENER_LINKS.content] }];
+    return [{ id: "whether-clause", label: "*whether* + a clause: the stand-in `derl` last in the main sentence, then the clause as the next sentence", links: [...OPENER_LINKS.content] }];
   }
   if (word !== "that" || !prev || !next) return [];
   if (prev.cls === "noun" && !prev.proper && (next.cls === "verb" || next.cls === "auxiliary" || next.cls === "modal")) {

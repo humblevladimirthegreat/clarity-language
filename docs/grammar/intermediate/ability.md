@@ -216,7 +216,7 @@ After a holder, WANT and DECISION are the holder's, just as PLAN is. After **`ue
 >
 > "Olazun sleeps, against Uzozen's wishes, as far as I can tell."
 
-**Compare with:** [requirement](feelings-permission.md#requirement) `zuzozen vowurel hwavem blolazun.` (*Olazun makes Uzozen walk*) puts a demand on Uzozen, who now owes the walk. **`zuzozen thogom vowurel.`** (*I've decided that Uzozen walks*) says only that you chose how things go, the way a coach decides who plays, with nothing asked of Uzozen.
+**Compare with:** [requirement](feelings-permission.md#requirement) `zuzozen vowurel hwavom blolazun.` (*Olazun makes Uzozen walk*) puts a demand on Uzozen, who now owes the walk. **`zuzozen thogom vowurel.`** (*I've decided that Uzozen walks*) says only that you chose how things go, the way a coach decides who plays, with nothing asked of Uzozen.
 
 ### Plan or forecast
 <a id="predict-evidentiality"></a>

@@ -215,31 +215,31 @@ const HOOK_EXTRA_NOUN: Record<string, string> = {
 
 const FORCE_JOB: Record<string, string> = {
   a: "statement",
-  o: "question",
-  e: "command",
+  o: "command",
+  e: "question",
   u: "prohibition",
 };
 
 const FORCE_JOB_SOFT: Record<string, string> = {
   a: "soft-statement",
-  o: "soft-question",
-  e: "request",
+  o: "request",
+  e: "soft-question",
   u: "soft-prohibition",
 };
 
 /** Act words with **-r**: an act held for now (speech-moves.md § For now). */
 const FORCE_JOB_FOR_NOW: Record<string, string> = {
   a: "provisional-statement",
-  o: "working-question",
-  e: "command-for-now",
+  o: "command-for-now",
+  e: "working-question",
   u: "hold-off",
 };
 
 const POLAR_JOB: Record<string, string> = {
-  ae: "yes",
-  ue: "no",
-  ao: "sure",
-  uo: "refuse-option",
+  ae: "sure",
+  ue: "refuse-option",
+  ao: "yes",
+  uo: "no",
   ua: "reject-frame",
   oe: "decline",
 };
@@ -267,7 +267,7 @@ export const SCOPE_VOWEL: Record<string, string> = {
 
 /** Say word parts, answers, and endings (feelings-permission.md#say-words). */
 export const SAY_PART: Record<string, string> = { z: "agent", d: "patient", b: "recipient", v: "event" };
-export const SAY_ANSWER: Record<string, string> = { a: "ALLOW", u: "FORBID", e: "REQUIRE", o: "CHOICE" };
+export const SAY_ANSWER: Record<string, string> = { a: "ALLOW", u: "FORBID", o: "REQUIRE", e: "CHOICE" };
 export const SAY_ENDING: Record<string, string> = { l: "rule", m: "said", r: "tacit" };
 
 const SAKE_STANCE: Record<string, string> = {
@@ -1129,13 +1129,13 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
   if ((word.reading === "standInNamed" || ctx.dependentVerb) && word.pos === "v") {
     const verbalDependent: Record<string, [string, string]> = {
       a: ["state", "offer-as-view"],
-      o: ["question", "invite-answer"],
-      e: ["command", "request"],
+      o: ["command", "request"],
+      e: ["question", "invite-answer"],
       u: ["prohibit", "caution-against"],
-      ae: ["confirm", "tentatively-confirm"],
-      ue: ["deny", "express-doubt"],
-      ao: ["agree", "tentatively-agree"],
-      uo: ["decline-to", "hesitate-to"],
+      ae: ["agree", "tentatively-agree"],
+      ue: ["decline-to", "hesitate-to"],
+      ao: ["confirm", "tentatively-confirm"],
+      uo: ["deny", "express-doubt"],
       ua: ["reject-premise", "question-framing"],
     };
     const action = verbalDependent[series] ?? verbalDependent.a!;
@@ -1145,13 +1145,13 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
   if (word.reading === "standInNamed") {
     const namedContent: Record<string, string> = {
       a: "statement",
-      o: "question",
-      e: "command",
+      o: "command",
+      e: "question",
       u: "prohibition",
-      ae: "confirmation",
-      ue: "denial",
-      ao: "agreement",
-      uo: "decline",
+      ae: "agreement",
+      ue: "decline",
+      ao: "confirmation",
+      uo: "denial",
       ua: "premise-rejection",
     };
     return namedContent[series] ?? "sentence-content";
@@ -1160,8 +1160,8 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
   if (word.reading === "standInBack") {
     const backContent: Record<string, string> = {
       a: "that-same-claim",
-      o: "that-same-question",
-      e: "that-same-instruction",
+      o: "that-same-instruction",
+      e: "that-same-question",
       u: "that-same-prohibition",
     };
     return backContent[series] ?? "that-same-content";
@@ -1202,8 +1202,8 @@ function fenceJoinLabel(
 ): string {
   if (ending === "rl" || ending === "rm") {
     const open = ending === "rm" ? ".open" : "";
-    if (series === "o") return `whether-clause${open}`;
-    if (series === "e") return `to-clause${open}`;
+    if (series === "e") return `whether-clause${open}`;
+    if (series === "o") return `to-clause${open}`;
     if (series === "u") return `lest-clause${open}`;
     return `that-clause${open}`;
   }

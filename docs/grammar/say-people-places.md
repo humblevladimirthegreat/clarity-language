@@ -525,7 +525,7 @@ An English noun like *case* or *board* covers several jobs, and Agebon has a dif
 | *operation* (arithmetic) | `zuborem` | calculation |
 | *do* + a noun (*do the dishes*) | `zuzozen duwodalx vayabal.` | the act itself in the verb slot: washes the plates |
 | *do something* | `zuzozen var.` | an unnamed act |
-| *What is Uzozen doing?* | `yol var zuzozen.` | a [fill-ask](/questions#fill-ask) for the act |
+| *What is Uzozen doing?* | `yel var zuzozen.` | a [fill-ask](/questions#fill-ask) for the act |
 | *application* (use) | hook `ael` + tool | `zuzozen vowurel ael behowol.` |
 | *application* (software) | `zobogal` | a package |
 | *campaign* | `zuzozen vavuvum herem blenulul.` | struggles during a period |

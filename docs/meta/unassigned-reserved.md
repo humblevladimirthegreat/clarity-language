@@ -123,7 +123,7 @@ Source: [joins.md](/joins), [join-across-roles.md](/join-across-roles#stance-joi
 
 Source: [comparatives.md](/comparative-arity#bars)
 
-- **open:** a stance that sets no value as a bar: clause poles, MAY, MIRATIVE, DECISION, ATTEMPT, RESIDUE, CAUSE, and a say word's no or *their call* (`hwavul`, `hwadum`, `hwavom`). None sets a level to rank against: a decision or an attempt commits to an act, a ban or a refusal only says no, and *their call* sets nothing. *Than decided* is PLAN. Parser: `barKind`.
+- **open:** a stance that sets no value as a bar: clause poles, MAY, MIRATIVE, DECISION, ATTEMPT, RESIDUE, CAUSE, and a say word's no or *their call* (`hwavul`, `hwadum`, `hwavem`). None sets a level to rank against: a decision or an attempt commits to an act, a ban or a refusal only says no, and *their call* sets nothing. *Than decided* is PLAN. Parser: `barKind`.
 - **open:** a second comparee next to a bar (`barCount`). A bar fence ranks one item against one bar, so a second item has nothing to rank against.
 
 ## Hosted relations
@@ -141,7 +141,7 @@ Source: [hooks.md](/ending-grids#ranges), [sakes.md](/prescription#contrary-to-s
 - **open:** stacked **-r** at the front of a sentence (`aor …`, `aer …`, `uor …`). Extra-noun point-back is assigned; as sentence glue they have no guess (*For example, anyway?* *In fact, as I said?*). Parser: `hookDiscourseStack`.
 - **open:** discourse **`oel`** / **`ual`** / **`uol`** / **`uel`** (and **-m** / **-n**) at the front of a sentence. *Toward*, *out of*, *through* and *against* give no guessable sentence-to-sentence glue (guesses range from *Alternatively* to *Apart from that*). The parser rejects them.
 - **open:** a hook + `barl` other than `ul` (`hookStandIn`). Most have no guess (*in that…*, *at that…*). *Contrary to* an event is `hezom blarl`, and no job has turned up for `uem barl`.
-- **open:** `uem` before a stance with no content an event can contradict (`frameKind`): a say word's *their call* (`hwavom`; it sets nothing), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Olazun's interest* is `thudathum blolazun`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
+- **open:** `uem` before a stance with no content an event can contradict (`frameKind`): a say word's *their call* (`hwavem`; it sets nothing), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Olazun's interest* is `thudathum blolazun`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
 - **closed (D-49):** `uem` before a say word's yes (`uem hwavam`, `uem hwadam`, `uem hwazal`) (`frameKind`).
 
 ## Hook compounds
@@ -223,7 +223,7 @@ Source: [roles.md](/viewpoint#content-of-the-event)
 Source: [feelings-permission.md](/feelings-permission#say-words)
 
 - **closed ([D-46](design-decisions.md)):** `/th/` on the green, no-entry, or memo root, any ending but **-n** (`tholem`, `thegul`, `thonam`). Parser: `retiredDeonticRoot`.
-- **closed (D-46):** a bare **`v`** say word on **-m** in a statement whose speaker is a participant (`zuwon vowurel hwavam.`). It would be the speaker's say over their own act, which is their part (`hwazem`). Parser: `saySpeaker`.
+- **closed (D-46):** a bare **`v`** say word on **-m** in a statement whose speaker is a participant (`zuwon vowurel hwavam.`). It would be the speaker's say over their own act, which is their part (`hwazom`). Parser: `saySpeaker`.
 - **open:** **-x** on a say word (`hwavamx`). A group's say comes from a group in the clause, and no other reading is guessable. Parser: `pluralOnPos`.
 - **open:** **-n** on a say word (`hwavan`), as on other closed families. Parser: no word.
 - **open:** a `bl-` word after a participant's say (`z` / `d` / `b`) without pair scope **`o`** (`hwadam blolazun`). The participant is already in the clause. Parser: `sayHost`.
@@ -283,9 +283,9 @@ Source: [dependents.md](/sentence-linkers#sentence-linkers)
 
 Source: [speech-moves.md](/firm-soft#speech-act), [stacked act words](/speech-acts#stacked-acts), [describing a call or reaction](/speech-acts#describe-turn-word), [questions.md](/polar-inventory#polar-endings)
 
-- **closed (closed-root endings):** act and polar series with **-n** (`yan` / `yon` / `yen` / `yun`, `yaen` / …). On `/y/`, **-n** calls someone. Parser: `turnSeriesCall`.
+- **closed (closed-root endings):** act and polar series with **-n** (`yan` / `yen` / `yon` / `yun`, `yaon` / …). On `/y/`, **-n** calls someone. Parser: `turnSeriesCall`.
 - **closed (D-59):** a third opening act word (`yul yul yul`), and anything between two [stacked act words](/speech-acts#stacked-acts) (`yel al yol`).
-- **closed (closed-root endings):** a fill-ask blank for the act itself (*are you asking or telling?*). `yar` / `yor` / `yer` / `yur` are the [for-now acts](/firm-soft#act-r).
+- **closed (closed-root endings):** a fill-ask blank for the act itself (*are you asking or telling?*). `yar` / `yer` / `yor` / `yur` are the [for-now acts](/firm-soft#act-r).
 - **closed (D-31):** a polar word before an act word, or two polar words in a row; a topic-only question.
 - **open:** an asking tag with a body after it (`yol yael zuzozen vowurel.`). The tag asks about the sentence before it and is a turn of its own; a body after it would be a second move in the same turn, and no question has asked for one. Parser: `tagBody`.
 - **closed (D-43):** a `/b/` hosted by a call or reaction; `yohumal buzozen` is a reaction and then a body with a recipient.

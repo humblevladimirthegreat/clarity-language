@@ -6,11 +6,11 @@ band: beginner
 
 ### Somewhere, nowhere, everywhere {#place-indefinites}
 
-For English *somewhere*, *nowhere*, and *everywhere*, put a [standalone join](joins.md#standalone-phrase) in the `/b/` slot after a place hook. Outside a question, **`bar`** is an unspecified member (*somewhere*), the same way **`zar`** is *someone*. Under **`yol`**, it is the *where?* blank.
+For English *somewhere*, *nowhere*, and *everywhere*, put a [standalone join](joins.md#standalone-phrase) in the `/b/` slot after a place hook. Outside a question, **`bar`** is an unspecified member (*somewhere*), the same way **`zar`** is *someone*. Under **`yel`**, it is the *where?* blank.
 
 | Agebon | English |
 |--------|---------|
-| **`ol bar`** | *somewhere* (under **`yol`**: *where?*) |
+| **`ol bar`** | *somewhere* (under **`yel`**: *where?*) |
 | **`ol bur`** | *somewhere else* |
 | **`ol bal`** | *nowhere* |
 | **`ol bual`** | *everywhere* |

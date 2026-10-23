@@ -10,7 +10,7 @@ English *can*, *may*, *should*, and *OK* blur who allowed something, and whether
 |---------|---------|
 | `hwaval` / `hwavam` / `hwavar` | allowed by a rule / by a person / tolerated |
 | `hwavul` / `hwavum` / `hwavur` | forbidden by a rule / by a person / frowned on |
-| `hwavel` / `hwavem` / `hwaver` | required by a rule / by a person / by custom |
+| `hwavol` / `hwavom` / `hwavor` | required by a rule / by a person / by custom |
 | `hwadal` / `hwadam` / `hwadar` | the affected person agreed in advance / said yes (and can take it back) / is assumed to be OK |
 
 The endings have a new job here: the **source**. Cue: **l ≈ law, m ≈ mouth, r ≈ read the room.** **-l** is a rule, **-m** is a person's word (the default), and **-r** is no one's word at all.
@@ -21,11 +21,11 @@ On the consent words, **-r** is allowed but visibly weaker: it puts *I assumed* 
 
 > I borrowed your car `hwadar`. I should have asked for `hwadam`.  
 > You can leave early `hwavam`.  
-> We wear ties `hwaver`, not `hwavel`.  
-> Visitors sign in at the desk `hwavel`.  
+> We wear ties `hwavor`, not `hwavol`.  
+> Visitors sign in at the desk `hwavol`.  
 > No phones at dinner `hwavum`.
 
-*We wear ties `hwaver`, not `hwavel`* says it's custom, not a rule.
+*We wear ties `hwavor`, not `hwavol`* says it's custom, not a rule.
 
 ## Practice {#practice}
 
@@ -46,7 +46,7 @@ I posted the photo of us `hwadam`.
 **3.** *People bring a dish.* (custom expects it)
 
 ::: details Show answer
-People bring a dish `hwaver`.
+People bring a dish `hwavor`.
 :::
 
 **4.** *Talking during the film.* (frowned on)

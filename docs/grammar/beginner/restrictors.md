@@ -82,13 +82,13 @@ To say *sometimes*, *anytime*, or *some other time* without naming the occasion 
 
 **`hur`** names an occasion **outside** the times already in play. With occasion words before it, that is a time other than the listed ones. With none, it is a time other than the ones the conversation is already about, as in the reply below. Bare **`hur`** only says some such other occasion exists (*at some other time*). It does not say the claim holds at other times in general.
 
-> `yol zahelan vowurel herulal.`
+> `yel zahelan vowurel herulal.`
 >
 > y-question | z-Ahelan | v-walk | h-rain
 >
 > "Does Ahelan walk when it rains?"
 
-> `yuel. zahelan vowurel hur.`
+> `yuol. zahelan vowurel hur.`
 >
 > y-no . z-Ahelan | v-walk | h-some-other-time
 >

@@ -154,7 +154,7 @@ A pointer with **-r** is the same one again. To say a **new** one of the same ki
 
 In a yes/no question, a pointer works like any other noun and keeps the same meaning:
 
-> `zuzozen dudozol gerulel vawebol. yol zolazun vawebol dwadal gubulol.`
+> `zuzozen dudozol gerulel vawebol. yel zolazun vawebol dwadal gubulol.`
 >
 > z-Uzozen | [d-dog | g-red] | v-see . y-question | z-Olazun | v-see | [d-←episode-patient.same.new | g-black]
 >

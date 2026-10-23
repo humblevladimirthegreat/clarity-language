@@ -142,7 +142,7 @@ A person’s front is the direction they face. For an object, use the front its 
 
 The [sake](/sakes#sake-inventory) roots are never a direction: after one of them, **`th`** starts a sake word, even when a root-shaped piece follows ([emotion compose](feelings-permission.md#emotion-compose)).
 
-> `yel vowurel howuhethuzozen.`
+> `yol vowurel howuhethuzozen.`
 >
 > y-command | v-walk | h-west-th-Uzozen
 >
@@ -150,7 +150,7 @@ The [sake](/sakes#sake-inventory) roots are never a direction: after one of them
 
 Bare arrow words are compass points on a north-up map:
 
-> `yel vowurel howuhel.`
+> `yol vowurel howuhel.`
 >
 > y-command | v-walk | h-west
 >
@@ -158,7 +158,7 @@ Bare arrow words are compass points on a north-up map:
 
 Speaker and listener roots are the facing person when you mean *my left* / *your left*:
 
-> `yel vowurel zawan howuhethawan.`
+> `yol vowurel zawan howuhethawan.`
 >
 > y-command | v-walk | z-listener | h-west-th-listener
 >
@@ -204,7 +204,7 @@ Indoor headings may follow a local map (building north). When you mean direction
 
 English *up* / *down* usually follows the pull of gravity, not anyone’s facing. Write **`ayuhe`** (skyward) or **`aduhe`** (toward the pull) as ordinary content words, with no **`th`** + facing person. Everyone shares that frame.
 
-> `yel vowurel hayuhel.`
+> `yol vowurel hayuhel.`
 >
 > y-command | v-walk | h-up
 >
@@ -377,7 +377,7 @@ z-Uzozen | v-go | [from | b-island] . z-Olazun | v-swim | from.there
 **5.** *Ahelan, walk left.* (Uzozen's left)
 
 ::: details Show answer
-`yel vowurel zahelan howuhethuzozen.`
+`yol vowurel zahelan howuhethuzozen.`
 
 y-command | v-walk | z-Ahelan | h-west-th-Uzozen
 :::
@@ -392,7 +392,7 @@ z-Uzozen | v-go | h-role-agent-theft
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `yel vavobel zolazun howuhel.`
+**1.** `yol vavobel zolazun howuhel.`
 
 ::: details Show answer
 y-command | v-go | z-Olazun | h-west

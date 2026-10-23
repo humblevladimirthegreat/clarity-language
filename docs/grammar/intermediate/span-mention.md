@@ -123,9 +123,9 @@ A span with **`@`** names the work or product itself: <code>d@&lt;iPhone&gt;</co
 
 ### Act words in a quote {#quote-acts}
 
-A quoted question or command keeps its own [act word](/speech-moves#speech-act-statement-question-command) inside the cite, the same way it keeps a tone mark. The outer sentence is still your claim (*said*), and `yol` or `yel` belongs to the quoted talk.
+A quoted question or command keeps its own [act word](/speech-moves#speech-act-statement-question-command) inside the cite, the same way it keeps a tone mark. The outer sentence is still your claim (*said*), and `yel` or `yol` belongs to the quoted talk.
 
-> `zuzozen d[yol zolazun vowurel] vezuyel.`
+> `zuzozen d[yel zolazun vowurel] vezuyel.`
 >
 > z-Uzozen | d-CITE[y-question | z-Olazun | v-walk] | v-tell
 >
@@ -280,7 +280,7 @@ z-Olazun | d-CITE[Uzozen] | v-tell . z-Ahelan | d-←episode-patient.same | v-wr
 **4.** *Uzozen said, “Does Olazun lie?”*
 
 ::: details Show answer
-`zuzozen d[yol zolazun valamul] vezuyel.`
+`zuzozen d[yel zolazun valamul] vezuyel.`
 
 z-Uzozen | d-CITE[y-question | z-Olazun | v-lie] | v-tell
 :::
@@ -376,12 +376,12 @@ Inside braces, **`hegugom`** reaches only that chunk; outside, it frames the who
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Uzozen said, “Does Olazun walk?”* <!-- lint: error -->`yol zuzozen d[zolazun vowurel] vezuyel.`
+**1.** *Uzozen said, “Does Olazun walk?”* <!-- lint: error -->`yel zuzozen d[zolazun vowurel] vezuyel.`
 
 ::: details Show answer
-`zuzozen d[yol zolazun vowurel] vezuyel.`
+`zuzozen d[yel zolazun vowurel] vezuyel.`
 
 z-Uzozen | d-CITE[y-question | z-Olazun | v-walk] | v-tell
 
-The quoted question keeps its act word inside the cite; **`yol`** outside asks whether Uzozen said it.
+The quoted question keeps its act word inside the cite; **`yel`** outside asks whether Uzozen said it.
 :::

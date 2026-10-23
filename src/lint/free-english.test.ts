@@ -220,11 +220,11 @@ describe("tableEnglish", () => {
   });
 
   it("splits pieces and pairs them with the Example pieces", () => {
-    const md = sheet(["| Acts | `yel vowurel.` · `yul vowurel.` | *Walk!* · *Don't walk.* (a ban) | B |"]);
+    const md = sheet(["| Acts | `yol vowurel.` · `yul vowurel.` | *Walk!* · *Don't walk.* (a ban) | B |"]);
     assert.deepEqual(
       tableEnglish(md).map(({ agebon, text }) => ({ agebon, text })),
       [
-        { agebon: "yel vowurel.", text: "*Walk!*" },
+        { agebon: "yol vowurel.", text: "*Walk!*" },
         { agebon: "yul vowurel.", text: "*Don't walk.* (a ban)" },
       ],
     );

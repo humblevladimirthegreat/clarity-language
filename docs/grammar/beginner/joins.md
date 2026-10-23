@@ -292,7 +292,7 @@ Repeating the same join word keeps the list flat. Switching to a **different** j
 
 So a group always sits on the left. The set joins **a** / **e** / **u** ignore order, so you can usually move the group to the front. When the group has to come last, end the sentence and start the next one with the join: the join then takes the **whole** next sentence.
 
-After a stand-in such as **`dorl`** or **`blarl`**, every clause joined in the same sentence belongs to the dependent clause. A clause meant for the main sentence also starts a new sentence.
+After a stand-in such as **`derl`** or **`blarl`**, every clause joined in the same sentence belongs to the dependent clause. A clause meant for the main sentence also starts a new sentence.
 
 > `zuzozen vowurel. xan zolazun varuvel xel zahelan vezuvol.`
 >

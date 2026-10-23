@@ -4,7 +4,7 @@ band: beginner
 
 # Speech moves {#speech-moves}
 
-How to start a new speech move with `/y/`: call someone, react, or say whether you are stating, asking, commanding, or forbidding.
+How to start a new speech move with `/y/`: call someone, react, or say whether you are stating, asking, commanding, or forbidding. An act word is leftover-list work on claims: add a claim, rank an instruction, collapse to an answer, or take the act away. How much talk remains is a different job.
 
 
 ### Turn (`/y/`): start a new speech move {#turn-y}
@@ -72,21 +72,21 @@ Each turn does one thing: it states, asks, commands, or forbids. That is its **s
 
 When the turn is not a statement, put its act word immediately before the body:
 
-> `yel vowurel.`
+> `yol vowurel.`
 >
 > y-command | v-walk
 >
 > "Walk!"
 
-The vowel picks the act. Its cues are **a** add / hold, **o** one / pick, **e** order / instruct, **u** undo / take back.
+The vowel picks the act. Its cues hang on the join leftover-list: **a** add a claim, **o** rank an instruction, **e** collapse to an answer, **u** take the act away.
 
 <!-- cheat-sheet: talking -->
 | Agebon | Use | Cue |
 |--------|-----|-----|
 | **`yal`** | statement (often omitted) | **a** ≈ add (hold the claim) |
-| **`yol`** | question: yes/no and fill-in ask | **o** ≈ one (pick from a menu) |
-| **`yel`** | command / instruction | **e** ≈ order (do this) |
-| **`yul`** | prohibition: *don’t…* | **u** ≈ undo (take the action back) |
+| **`yel`** | question: yes/no and fill-in ask | **e** ≈ choice (collapse to an answer) |
+| **`yol`** | command / instruction | **o** ≈ rank (this is what to do) |
+| **`yul`** | prohibition: *don’t…* | **u** ≈ not (take the act away) |
 
 ### Word order for each act {#act-word-order}
 
@@ -98,13 +98,13 @@ The first letter of each word already says its role, so any order of the body me
 >
 > "Uzozen punches the box."
 
-> `yol zuzozen vanuvul dobogal.`
+> `yel zuzozen vanuvul dobogal.`
 >
 > y-question | z-Uzozen | v-punch | d-box
 >
 > "Does Uzozen punch the box?"
 
-> `yel vanuvul dobogal.`
+> `yol vanuvul dobogal.`
 >
 > y-command | v-punch | d-box
 >
@@ -126,7 +126,7 @@ Only a command starts with its verb. A question or prohibition whose act word ge
 | command | verb first | the action comes first: do it |
 | prohibition | verb late, as in a statement | the action is held back |
 
-The person who receives (`/b/`) stays right after the verb, wherever the verb goes: `yel varal buzozen.` *Pay Uzozen!* A question with no subject puts another word before its verb, so that it still does not start with the verb.
+The person who receives (`/b/`) stays right after the verb, wherever the verb goes: `yol varal buzozen.` *Pay Uzozen!* A question with no subject puts another word before its verb, so that it still does not start with the verb.
 
 ### Practice {#beginner-practice}
 
@@ -176,17 +176,17 @@ y-amazement
 **3.** *Does Olazun pay Uzozen?*
 
 ::: details Show answer
-`yol zolazun varal buzozen.`
+`yel zolazun varal buzozen.`
 
 y-question | z-Olazun | v-pay | b-Uzozen
 
-**Also correct:** `yol zolazun buzozen varal.`
+**Also correct:** `yel zolazun buzozen varal.`
 :::
 
 **4.** *Uzozen, sit!*
 
 ::: details Show answer
-`yuzozen yel vuhohol.`
+`yuzozen yol vuhohol.`
 
 y-Uzozen | y-command | v-sit
 :::
@@ -194,11 +194,11 @@ y-Uzozen | y-command | v-sit
 **5.** *Pay hastily!*
 
 ::: details Show answer
-`yel varal hedurem.`
+`yol varal hedurem.`
 
 y-command | v-pay | h-haste
 
-**Also correct:** `yel hedurem varal.`
+**Also correct:** `yol hedurem varal.`
 :::
 
 **6.** *Don’t pay hastily.*
@@ -223,7 +223,7 @@ y-Uzozen
 *Uzozen!* (calling Uzozen)
 :::
 
-**2.** `yol zahelan vuhohol.`
+**2.** `yel zahelan vuhohol.`
 
 ::: details Show answer
 y-question | z-Ahelan | v-sit
@@ -231,7 +231,7 @@ y-question | z-Ahelan | v-sit
 *Does Ahelan sit?*
 :::
 
-**3.** `yel varuvel.`
+**3.** `yol varuvel.`
 
 ::: details Show answer
 y-command | v-run
@@ -275,14 +275,14 @@ y-Olazun
 A call ends in **-n**; `yolazul` is a reaction, *Lion!*
 :::
 
-**2.** *Don’t sit.* `yel vuhohol.` or `yul vuhohol.`
+**2.** *Don’t sit.* `yol vuhohol.` or `yul vuhohol.`
 
 ::: details Show answer
 `yul vuhohol.`
 
 y-prohibition | v-sit
 
-**`yul`** forbids the action; **`yel`** would command it: *Sit!*
+**`yul`** forbids the action; **`yol`** would command it: *Sit!*
 :::
 
 #### Fix it {#beginner-fix-it}
@@ -290,7 +290,7 @@ y-prohibition | v-sit
 **1.** *Does Uzozen pay?* <!-- lint: error -->`zuzozen varal yol.`
 
 ::: details Show answer
-`yol zuzozen varal.`
+`yel zuzozen varal.`
 
 y-question | z-Uzozen | v-pay
 

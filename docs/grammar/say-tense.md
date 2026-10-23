@@ -199,7 +199,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 | *past* / *in the past* | FORMER **`helam`**, or a channel with a `-` offset |
 | *future* / *in the future* | a channel + **`blral`** |
 | *once* (*one time*) | `h+1` before the verb |
-| ever (*Have you walked at all?*) | **`havom`** + **`her`** (*anytime*) under **`yol`**: `yol her zawan havom vowurel` |
+| ever (*Have you walked at all?*) | **`havom`** + **`her`** (*anytime*) under **`yel`**: `yel her zawan havom vowurel` |
 | *during* (*during the storm*) | **`herem`** + `/b/`: `herem blenulul` |
 | *immediately* / *immediate* / *right away* / *at once* (*about to*) | a channel + **`blrawul`** (*a hair after now*) |
 | *initially* / *at first* / *firstly* | **`hugulem`** (*first*, as a manner adverb) |
@@ -214,7 +214,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 >
 > "It looks like Uzozen is walking today."
 
-> `yol her zawan havom vowurel.`
+> `yel her zawan havom vowurel.`
 >
 > y-question | h-anytime | z-listener | h-already | v-walk
 >
@@ -252,8 +252,8 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 | *could*, *might*, *may* | it could be | MAY **`thomam`** |
 | *may*, *is allowed to* | a rule / a person / no objection | **`hwaval`** / **`hwavam`** / **`hwavar`** |
 | *may not* | forbidden | **`hwavul`** / **`hwavum`** / **`hwavur`** |
-| *Can I …?* | asking permission | `yom` + **`hwavam`** |
-| *Could you …?* (polite) | a request | **`yem`** ([speech act](/firm-soft#speech-act)) |
+| *Can I …?* | asking permission | `yem` + **`hwavam`** |
+| *Could you …?* (polite) | a request | **`yom`** ([speech act](/firm-soft#speech-act)) |
 
 > `zuzozen vezuyoxal.`
 >
@@ -273,7 +273,7 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 >
 > "Uzozen may walk; I'm allowing it."
 
-> `yem vowurel zawan.`
+> `yom vowurel zawan.`
 >
 > y-request | v-walk | z-listener
 >
@@ -295,10 +295,10 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 | *blind* | `zuzozen gaweboxul` (*can never see*) |
 | *possible* / *potentially* | MAY **`thomam`** |
 | *acceptable* / *privilege* | permission **`hwaval`** |
-| *expect* / *anticipate* | a forecast: a channel + **`blral`**; when custom expects it, **`hwaver`** |
+| *expect* / *anticipate* | a forecast: a channel + **`blral`**; when custom expects it, **`hwavor`** |
 | *shall* | PLAN **`thagem`** |
-| *have to* | **`hwavem`** |
-| *do* / *does* / *did* (helper: *Do you walk?*) | no word: the verb under **`yol`** |
+| *have to* | **`hwavom`** |
+| *do* / *does* / *did* (helper: *Do you walk?*) | no word: the verb under **`yel`** |
 
 > `zudozol gwadaweboxal.`
 >
@@ -306,7 +306,7 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 >
 > "The dog is visible."
 
-> `yol zawan vowurel.`
+> `yel zawan vowurel.`
 >
 > y-question | z-listener | v-walk
 >
@@ -320,10 +320,10 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 
 | English | You mean | Agebon |
 |---------|----------|--------|
-| *must*, *is required to* | a rule requires it | **`hwavel`** |
-| *has to*, *I need you to* | a person demands it | **`hwavem`** |
-| *is supposed to* | custom expects it | **`hwaver`** |
-| *do it!* | you tell the listener now | command **`yel`** |
+| *must*, *is required to* | a rule requires it | **`hwavol`** |
+| *has to*, *I need you to* | a person demands it | **`hwavom`** |
+| *is supposed to* | custom expects it | **`hwavor`** |
+| *do it!* | you tell the listener now | command **`yol`** |
 | *should*, *ought to* | it serves a named sake | sake + **`the`** |
 | *shouldn't*, *ought not to* | the ought, with the act denied | sake + **`the`** before the act, **`vul`** after the verb |
 | *should have*, *ought to have* | the ought held at a past moment | stance as-of **`thenam`** + sake + **`the`** |
@@ -332,7 +332,7 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 | *mustn't* | you forbid it now | prohibition **`yul`** |
 | *don't have to*, *needn't* | not doing it is allowed | permission **`hwavam`** (**`hwaval`** when a rule allows it) before the act + **`vul`** |
 
-> `zuzozen vowurel hwavel.`
+> `zuzozen vowurel hwavol.`
 >
 > z-Uzozen | v-walk | h-episode-event-REQUIRE-rule
 >
@@ -366,7 +366,7 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 >
 > "Uzozen doesn't have to walk." (not walking is allowed)
 
-**Compare with:** requirement reports a demand, which may be someone else's; **`yel`** is you telling the listener. Requirement with a denied act (`zuzozen hwavem vowurel vul`) is *Uzozen is required not to walk*, which is *mustn't*, not *doesn't have to*.
+**Compare with:** requirement reports a demand, which may be someone else's; **`yol`** is you telling the listener. Requirement with a denied act (`zuzozen hwavom vowurel vul`) is *Uzozen is required not to walk*, which is *mustn't*, not *doesn't have to*.
 
 ### Will, want, try, let's {#will-want}
 
@@ -380,7 +380,7 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 | *hopefully* | **`thoguyem`** |
 | *tries to* | **`howam`** |
 | *if only …*, *I wish …* | WANT alone, which is already your own: **`thalem`** |
-| *let's* | request **`yem`** with **`aya`** as subject |
+| *let's* | request **`yom`** with **`aya`** as subject |
 
 > `zolazun thebamolazun thalem vowurel.`
 >
@@ -486,7 +486,7 @@ z-Uzozen | v-walk | h-episode-event-ALLOW-said
 **8.** *Uzozen must walk; it's the rule.*
 
 ::: details Show answer
-`zuzozen vowurel hwavel.`
+`zuzozen vowurel hwavol.`
 
 z-Uzozen | v-walk | h-episode-event-REQUIRE-rule
 :::

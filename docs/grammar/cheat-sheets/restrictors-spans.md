@@ -76,7 +76,7 @@ With several occasions before `huol`, the last listed is the first choice.
 | [And/or](/more-occasions#more-occasions) | `zolazun vezuvol herulal hozulal hael.` | *Olazun sleeps when it rains and/or when it snows.* | I |
 | [Preferably](/more-occasions#more-occasions) | `zuzozen vowurel hubeham hanurul hol.` | *preferably on weekends, or else at night* | I |
 | [Last resort](/more-occasions#more-occasions) | `zuzozen vowurel herulal huol.` | *When it rains, Uzozen walks only as a last resort.* | I |
-| [When's best?](/more-occasions#more-occasions) | `yol hor zayan vowurel.` | *When's best for us to walk?* | I |
+| [When's best?](/more-occasions#more-occasions) | `yel hor zayan vowurel.` | *When's best for us to walk?* | I |
 | [On an adjective, one of two](/more-occasions#more-occasions) | `zuzozen werulal wanurul wel guzemol.` | *sleepy either when it rains or at night* (not both) | I |
 | [A whole clause as the occasion](/more-occasions#occasions-vs-a-dependent-when): `blarl` | `zahelan vezuyol thohom blarl zuzozen vowurel.` | *Ahelan sings if Uzozen walks.* | I |
 
@@ -132,7 +132,7 @@ A one-word name is an ordinary **-n** word (`denuron`), not a span.
 | [A cite as the verb](/spans#pos) | `yul zolazun v[vozohul].` | *Don't say “stop,” Olazun.* | B |
 | [A loan verb](/spans#pos) | <code>zolazun v&lt;google&gt; duzozen.</code> | *Olazun googled Uzozen.* | B |
 | [A loan adjective](/spans#pos) | <code>zudozol g&lt;rouge&gt; vowurel.</code> | *A rouge dog walks.* | B |
-| [A quoted question](/span-mention#quote-acts) | `zuzozen d[yol zolazun vowurel] vezuyel.` | *Uzozen said, “Does Olazun walk?”* | I |
+| [A quoted question](/span-mention#quote-acts) | `zuzozen d[yel zolazun vowurel] vezuyel.` | *Uzozen said, “Does Olazun walk?”* | I |
 | [Point back at a quote](/span-mention#span-noun) | `zolazun d[uzozen] vezuyel. zahelan dwadar varayel.` | *Olazun said “Uzozen.” Ahelan wrote that down.* | I |
 | [Topic from a title](/span-mention#topic-quotes) | `x@[enuron olazun] dalon vezuyol.` | *Now, about Enuron Olazun: it is sung.* | I |
 | [An aside as a clause](/spans#asides) | `zuzozen vowurel th(zolazun vezuvol).` | *Uzozen walks (Olazun is asleep).* | B |

@@ -57,14 +57,14 @@ describe("construction registry", () => {
       ["zudozol gelazom.", "reading.existence"],
       ["zudozol om babohal.", "reading.existence"],
       ["zuan gagozol guzemol.", "reading.kind"],
-      ["yol.", "reading.bareQuestion"],
+      ["yel.", "reading.bareQuestion"],
       ["zuzozen vowurel thomam.", "overlay.omam.th"],
       // A sake or ability word uses the sake / hostless-ability row of its host.
       ["zuzozen vowurel thawothem.", "overlay.awom.th"],
       ["zuzozen hodaxel.", "overlay.odam.h"],
       // Per-form features of families taught across sections.
       ["zuzozen zolazun zal vowurel.", "join.a"],
-      ["yol zuzozen vowurel.", "force.o"],
+      ["yel zuzozen vowurel.", "force.e"],
       ["zuzozen vowurel hual.", "restrictor.always"],
     ];
     for (const [input, expected] of cases) {

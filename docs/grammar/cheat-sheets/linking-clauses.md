@@ -21,22 +21,22 @@ The vowel is the kind of content, the same four vowels as the act words. **-rl**
 | Stand-in | Content | **-rl** locked | **-rm** open | Stage |
 |----------|---------|----------------|--------------|-------|
 | [**`a`**](/sentence-linkers#stand-in) | a statement | `darl` *that …* | `darm` *that …* (gist) | B |
-| [**`o`**](/sentence-linkers#stand-in) | a question | `dorl` *whether …* | `dorm` *whether …* (open) | B |
-| [**`e`**](/sentence-linkers#stand-in) | an instruction | `derl` *to …* | `derm` *to …* (open) | I |
+| [**`o`**](/sentence-linkers#stand-in) | an instruction | `dorl` *to …* | `dorm` *to …* (open) | I |
+| [**`e`**](/sentence-linkers#stand-in) | a question | `derl` *whether …* | `derm` *whether …* (open) | B |
 | [**`u`**](/sentence-linkers#stand-in) | something to avoid | `durl` *that not / lest …* | `durm` *lest …* (open) | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [That-clause](/dependents#dependent-clauses) | `zuzozen vezuyel bolazun darl zudozol varuvel.` | *Uzozen tells Olazun that the dog runs.* | B |
-| [Whether](/dependents#dependent-clauses) | `zuzozen vawebol dorl zolazun vowurel.` | *Uzozen sees whether Olazun walks.* | B |
-| [Told to](/sentence-linkers#stand-in) | `zuzozen vezuyel bolazun derl vuhohol.` | *Uzozen tells Olazun to sit.* | I |
+| [Whether](/dependents#dependent-clauses) | `zuzozen vawebol derl zolazun vowurel.` | *Uzozen sees whether Olazun walks.* | B |
+| [Told to](/sentence-linkers#stand-in) | `zuzozen vezuyel bolazun dorl vuhohol.` | *Uzozen tells Olazun to sit.* | I |
 | [Told not to](/sentence-linkers#stand-in) | `zuzozen vezuyel bolazun durl vuhohol.` | *Uzozen tells Olazun not to sit.* | I |
-| [Own subject, no one told](/sentence-linkers#stand-in) | `zuzozen valem derl zuzozen vuhohol.` | *Uzozen wishes to sit.* | I |
-| [Join inside the clause](/sentence-linkers#stand-in): `xel` | `zuzozen vawebol dorl zolazun vowurel xel zahelan varuvel.` | *Uzozen sees whether Olazun walks or Ahelan runs.* | I |
+| [Own subject, no one told](/sentence-linkers#stand-in) | `zuzozen valem dorl zuzozen vuhohol.` | *Uzozen wishes to sit.* | I |
+| [Join inside the clause](/sentence-linkers#stand-in): `xel` | `zuzozen vawebol derl zolazun vowurel xel zahelan varuvel.` | *Uzozen sees whether Olazun walks or Ahelan runs.* | I |
 
-The vowels match the act words: `yal` statement, `yol` question, `yul` avoid.
+The vowels match the act words: `yal` statement, `yol` command, `yel` question, `yul` avoid.
 
-Drop the inner `/z/` only after `derl` / `derm` or `durl` / `durm` filling `/d/`, when the outer sentence has one plain `/b/` (the person told). Everywhere else, write it. The clause runs to the end of the written sentence.
+Drop the inner `/z/` only after `dorl` / `dorm` or `durl` / `durm` filling `/d/`, when the outer sentence has one plain `/b/` (the person told). Everywhere else, write it. The clause runs to the end of the written sentence.
 
 ### Pointing back {#back}
 
@@ -46,8 +46,8 @@ Drop the inner `/z/` only after `derl` / `derm` or `durl` / `durm` filling `/d/`
 | Stand-in | Points back to | English | Stage |
 |----------|----------------|---------|-------|
 | [**`darth`**](/sentence-linkers#stand-in-back) | the last statement | *so* / *that* | I |
-| [**`dorth`**](/sentence-linkers#stand-in-back) | the last question | *that question* | I |
-| [**`derth`**](/sentence-linkers#stand-in-back) | the last instruction | *that (instruction)* | I |
+| [**`derth`**](/sentence-linkers#stand-in-back) | the last question | *that question* | I |
+| [**`dorth`**](/sentence-linkers#stand-in-back) | the last instruction | *that (instruction)* | I |
 | [**`durth`**](/sentence-linkers#stand-in-back) | the last *not* / *lest* content | *not* (*I hope not*) | I |
 
 | Job | Example | English | Stage |
@@ -64,19 +64,19 @@ Other role letters work the same way: `blarth` after a pole (*because of that*),
 | Agebon | Takes | English | Stage |
 |--------|-------|---------|-------|
 | [**`varn`**](/stand-in-roles#stand-in-roles) | a statement | *state…* | A |
-| [**`vorn`**](/stand-in-roles#stand-in-roles) | a question | *question…* | A |
-| [**`vern`**](/stand-in-roles#stand-in-roles) | an instruction | *command…* | A |
+| [**`vern`**](/stand-in-roles#stand-in-roles) | a question | *question…* | A |
+| [**`vorn`**](/stand-in-roles#stand-in-roles) | an instruction | *command…* | A |
 | [**`vurn`**](/stand-in-roles#stand-in-roles) | something to avoid | *prohibit…* | A |
-| [**`vaen`**](/stand-in-roles#stand-in-roles) | accepts a statement | *confirm that…* | A |
-| [**`vuen`**](/stand-in-roles#stand-in-roles) | rejects a statement | *deny that…* | A |
-| [**`vaon`**](/stand-in-roles#stand-in-roles) | accepts a proposed action | *agree to…* | A |
-| [**`vuon`**](/stand-in-roles#stand-in-roles) | rejects a proposed action | *decline to…* | A |
+| [**`vaon`**](/stand-in-roles#stand-in-roles) | accepts a statement | *confirm that…* | A |
+| [**`vuon`**](/stand-in-roles#stand-in-roles) | rejects a statement | *deny that…* | A |
+| [**`vaen`**](/stand-in-roles#stand-in-roles) | accepts a proposed action | *agree to…* | A |
+| [**`vuen`**](/stand-in-roles#stand-in-roles) | rejects a proposed action | *decline to…* | A |
 | [**`vuan`**](/stand-in-roles#stand-in-roles) | rejects the premise | *dispute the premise that…* | A |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Confirm](/stand-in-roles#stand-in-roles) | `zuzozen vaen zolazun vuhohol.` | *Uzozen confirms that Olazun sits.* | A |
-| [Decline](/stand-in-roles#stand-in-roles) | `zuzozen vuon zuzozen vuhohol.` | *Uzozen declines to sit.* | A |
+| [Confirm](/stand-in-roles#stand-in-roles) | `zuzozen vaon zolazun vuhohol.` | *Uzozen confirms that Olazun sits.* | A |
+| [Decline](/stand-in-roles#stand-in-roles) | `zuzozen vuen zuzozen vuhohol.` | *Uzozen declines to sit.* | A |
 | [It is … that](/stand-in-roles#stand-in-roles) | `gamahum zarl zuzozen vowurel.` | *It is hard for Uzozen to walk.* | A |
 | [Nested](/stand-in-roles#nested-dependents) | `zuzozen guzemol thahum blarl zolazun vowurel thahum blarl zahelan vezuvol.` | *Uzozen is sleepy because Olazun walks because Ahelan sleeps.* (Ahelan's sleep is why Olazun walks) | A |
 
@@ -102,7 +102,7 @@ A **pole** names the link and takes the stand-in `blarl` as its `/b/`. Keep the 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Because](/dependents#poles) | `zuzozen vezuyol thahum blarl zolazun vowurel.` | *Uzozen sings because Olazun walks.* | B |
-| [If, on a command](/dependents#poles) | `yel vowurel thohom blarl zolazun vuhohol.` | *If Olazun sits, walk.* | B |
+| [If, on a command](/dependents#poles) | `yol vowurel thohom blarl zolazun vuhohol.` | *If Olazun sits, walk.* | B |
 | [Despite, with a noun](/dependents#poles) | `zuzozen vowurel hezom blolazun.` | *Uzozen walks despite Olazun.* | B |
 | [So that](/dependents#so-that) | `zuzozen vowurel hovam blarl zolazun vuhohol.` | *Uzozen walks so that Olazun sits.* | B |
 | [In order to](/dependents#so-that): name the doer again | `zuzozen vowurel hovam blarl zuzozen vuhohol.` | *Uzozen walks in order to sit.* | B |
@@ -152,7 +152,7 @@ Three take **-l** for a firm link.
 | [Therefore](/dependents#continue-x) | `zudozol vowurel. xahem zagozol varuvel.` | *A dog walks. Therefore a cat runs.* | B |
 | [On the contrary](/sentence-linkers#sentence-linkers) | `zolazun vezuvol vul. xegohul zolazun varuvel.` | *Olazun isn't sleeping. On the contrary, Olazun is running.* | I |
 | [Topic, then linker](/sentence-linkers#sentence-linkers) | `xuzozen. xezom zolazun varuvel.` | *Now, about Uzozen. However, Olazun runs.* | I |
-| [Linker in a new turn](/sentence-linkers#sentence-linkers) | `yom xuvewem zawan vowurel.` | *So, do you want to walk?* | I |
+| [Linker in a new turn](/sentence-linkers#sentence-linkers) | `yem xuvewem zawan vowurel.` | *So, do you want to walk?* | I |
 
 Linkers come only at the start of a sentence. They never follow a [clause join](/joins#clause-joins) and never open the sentence after a stand-in. Writing and speech rhythm for all of these is [one table](/sentence-linkers#orthography-and-prosody-periods).
 
@@ -285,11 +285,11 @@ Each pole, linker, and relation word is the abstract sense of an ordinary root. 
 
 | This | vs | That |
 |------|----|------|
-| `darl` *that …* ([a statement as content](/dependents#dependent-clauses)) | | `dorl` *whether …* ([a question as content](/dependents#dependent-clauses)) |
-| `derl` *to …* ([an instruction](/sentence-linkers#stand-in)) | | `durl` *not to …* ([something to avoid](/sentence-linkers#stand-in)) |
+| `darl` *that …* ([a statement as content](/dependents#dependent-clauses)) | | `derl` *whether …* ([a question as content](/dependents#dependent-clauses)) |
+| `dorl` *to …* ([an instruction](/sentence-linkers#stand-in)) | | `durl` *not to …* ([something to avoid](/sentence-linkers#stand-in)) |
 | `darl` *that …* ([points forward](/dependents#dependent-clauses)) | | `darth` *so* ([points back](/sentence-linkers#stand-in-back)) |
 | `hovam blarl` *so that* ([an aim, not claimed](/dependents#so-that)) | | `hahem blarl` *so … that* ([the result happened](/sentence-linkers#result-pole)) |
-| `thohom blarl` *if* ([a condition](/dependents#poles)) | | `dorl` *whether* ([an open question](/dependents#dependent-clauses)) |
+| `thohom blarl` *if* ([a condition](/dependents#poles)) | | `derl` *whether* ([an open question](/dependents#dependent-clauses)) |
 | `xahem` *therefore* ([starts a sentence](/dependents#continue-x)) | | `hezom blarl` *although* ([attaches a clause](/dependents#poles)) |
 | `hewom` *like* ([resembles, and is real](/relations#like-resembles)) | | `hewol` *exactly like* ([a perfect match](/of-relations#exactly-like)) |
 | `gadam` *contents of* ([what a vessel holds](/of-relations#of-relations)) | | `al` *in* ([a place hook](/extra-noun-hooks#extra-noun-intermediate)) |

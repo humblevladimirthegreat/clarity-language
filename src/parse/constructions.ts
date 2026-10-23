@@ -64,12 +64,12 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   },
   "leftEdge.ForceAnswer": {
     anchor: "polar-inventory.md#rhetorical",
-    summary: "yal yol rhetorical question",
+    summary: "yal yel rhetorical question",
     reader: "`y-statement | y-question` before a body is a rhetorical question: the speaker asserts the obvious answer and asks for no reply (`y-statement | y-question | z-wh | v-care` = *Who cares?*, nobody does).",
   },
   "leftEdge.ForceQuiz": {
     anchor: "polar-inventory.md#quiz",
-    summary: "yol yal quiz",
+    summary: "yel yal quiz",
     reader: "`y-question | y-statement` is a quiz: the asker already knows the answer and wants the listener to say it (*So who punched the box? You tell me.*).",
   },
   "leftEdge.ForceStack": {
@@ -507,24 +507,24 @@ export const JOIN_PLURAL_CONSTRUCTIONS = {
 /** Speech-act words: vowel, and the soft (-m) form (speech-moves.md). */
 export const FORCE_CONSTRUCTIONS: Record<Vowel | "soft", ConstructionEntry> = {
   a: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "yal statement" },
-  o: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "yol question" },
-  e: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "jel command" },
+  o: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "yol command" },
+  e: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "yel question" },
   u: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "yul prohibition" },
   soft: { anchor: "questions.md#question", summary: "soft speech act (-m)" },
 };
 
 /** Polar stance particles, grouped by the section that teaches them (questions.md). */
 export const POLAR_CONSTRUCTIONS = {
-  starter: { anchor: "questions.md#polar-stance", summary: "yael yes / yuel no / yaol sure" },
-  fuller: { anchor: "polar-inventory.md#polar-stance-fuller-inventory", summary: "yuol / yual / yoel" },
+  starter: { anchor: "questions.md#polar-stance", summary: "yaol yes / yuol no / yael sure" },
+  fuller: { anchor: "polar-inventory.md#polar-stance-fuller-inventory", summary: "yuel / yual / yoel" },
 } satisfies Record<string, ConstructionEntry>;
 
 /** Polar series → {@link POLAR_CONSTRUCTIONS} key. */
 export const POLAR_GROUP: Record<Exclude<JoinSeries, Vowel>, keyof typeof POLAR_CONSTRUCTIONS> = {
   ae: "starter",
-  ue: "starter",
+  ue: "fuller",
   ao: "starter",
-  uo: "fuller",
+  uo: "starter",
   ua: "fuller",
   oe: "fuller",
 };
@@ -555,15 +555,15 @@ export const RESTRICTOR_GROUP: Record<JoinSeries, keyof typeof RESTRICTOR_CONSTR
 /** Stand-in vowels (dependents.md). */
 export const STAND_IN_CONSTRUCTIONS: Record<Vowel, ConstructionEntry> = {
   a: { anchor: "dependents.md#dependent-clauses", summary: "darl / barl that" },
-  o: { anchor: "dependents.md#dependent-clauses", summary: "dorl whether" },
-  e: { anchor: "sentence-linkers.md#stand-in", summary: "derl to" },
+  o: { anchor: "sentence-linkers.md#stand-in", summary: "dorl to" },
+  e: { anchor: "dependents.md#dependent-clauses", summary: "derl whether" },
   u: { anchor: "sentence-linkers.md#stand-in", summary: "durl lest" },
 };
 
 export const STAND_IN_BACK_CONSTRUCTIONS: Record<Vowel, ConstructionEntry> = {
   a: { anchor: "sentence-linkers.md#stand-in-back", summary: "darth that same claim" },
-  o: { anchor: "sentence-linkers.md#stand-in-back", summary: "dorth that same question" },
-  e: { anchor: "sentence-linkers.md#stand-in-back", summary: "derth that same instruction" },
+  o: { anchor: "sentence-linkers.md#stand-in-back", summary: "dorth that same instruction" },
+  e: { anchor: "sentence-linkers.md#stand-in-back", summary: "derth that same question" },
   u: { anchor: "sentence-linkers.md#stand-in-back", summary: "durth that same don't" },
 };
 
@@ -831,9 +831,9 @@ export const REJECTIONS = {
   retiredIntentionRoot: { anchor: "intention.md#plan", summary: "/h/ on the map or check root is not an intention: PLAN and DECISION are /th/ stances (`thagem`, `thogom`), someone else's through a holder" },
   channelOffsetSign: { anchor: "universality.md#dated-channel", summary: "MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one" },
   retiredChannelRoot: { anchor: "evidentiality.md#evidentiality", summary: "/th/ on the record or scroll root is not a channel: a record or document is REPORTED with the source in /b/, footage is LIVE or MEMORY with the device in /b/, a schedule is PLAN, and a tale is NOTIONAL" },
-  retiredDeonticRoot: { anchor: "feelings-permission.md#say-words", summary: "/th/ on the green, no-entry, or memo root is no stance: permission, a ban, and a requirement are say words on /h/ (`hwavam`, `hwavul`, `hwavem`)" },
+  retiredDeonticRoot: { anchor: "feelings-permission.md#say-words", summary: "/th/ on the green, no-entry, or memo root is no stance: permission, a ban, and a requirement are say words on /h/ (`hwavam`, `hwavul`, `hwavom`)" },
   sayHost: { anchor: "feelings-permission.md#permission", summary: "a bl- word after a say word names someone over the act (v), or the one party under pair scope o; a participant's say needs no bl- word" },
-  saySpeaker: { anchor: "feelings-permission.md#permission", summary: "a bare v say word on -m is the speaker saying so, so in a statement where the speaker is a participant name whose say it is: the rules (hwavel), a person (hwavem bl-), custom (hwaver), or the speaker's own part (hwazem)" },
+  saySpeaker: { anchor: "feelings-permission.md#permission", summary: "a bare v say word on -m is the speaker saying so, so in a statement where the speaker is a participant name whose say it is: the rules (hwavol), a person (hwavom bl-), custom (hwaver), or the speaker's own part (hwazem)" },
   poleOffsetWarrant: { anchor: "universality.md#dated-channel", summary: "a signed offset on a time pole needs a command, request, PLAN, or channel in its clause" },
   joinDetail: { anchor: "rank-joins.md#respectively", summary: "the only /w/ before a join word is respectively (`wubam`), and it goes only there, on a closed (-l) or open (-m) and-list" },
   respectivePartner: { anchor: "rank-joins.md#respectively", summary: "a respectively list pairs with another and-list of the same length in its clause" },

@@ -24,7 +24,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraor` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **CITE** | A cite span: quoted wording | `d[uzozen]` | [Spans](/spans#writing) |
 | **CLUES** | Evidential: reasoned from clues about this case | `theyem` | [Evidentiality](/evidentiality#evidentiality) |
-| **CHOICE** | Say word answer: their call | `hwavom` | [Feelings and permission](/feelings-permission#say-words) |
+| **CHOICE** | Say word answer: their call | `hwavem` | [Feelings and permission](/feelings-permission#say-words) |
 | **COLLAPSE** | Emotion locus: out of fight, giving up | `wawothumual` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **DECISION** | Pick-firmness mood | `thogom` | [Decision and try](/ability#decision) |
 | **DEDUCED** | Evidential: must hold if the premises hold | `thanam` | [Evidentiality](/evidentiality#deduction) |
@@ -46,7 +46,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **PATTERN** | Evidential: from regularity | `thubem` | [Evidentiality](/evidentiality#evidentiality) |
 | **PLAN** | Intention-framing mood | `thagem` | [Intention](/intention#plan-predict) |
 | **REPORTED** | Evidential: said or written by someone else | `thebam` | [Evidentiality](/evidentiality#evidentiality) |
-| **REQUIRE** | Say word answer: require, ask for (*must*) | `hwavel` | [Feelings and permission](/feelings-permission#say-words) |
+| **REQUIRE** | Say word answer: require, ask for (*must*) | `hwavol` | [Feelings and permission](/feelings-permission#say-words) |
 | **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Notional and standing](/notional-standing#residue) |
 | **RESISTING** | Emotion locus: pushing against a target | `wawothumuer` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **SAME** | Identity copula | `gorol` | [Predication](/predication#identity) |
@@ -90,7 +90,7 @@ Hosted *can* / *can’t* (`xa` / `xe` / `xo` / `xu`) and hostless **ABIL**.
 
 ### Act word
 
-The written `/y/` word: **`yal` / `yol` / `yel` / `yul`** and soft **-m**.
+The written `/y/` word: **`yal` / `yel` / `yol` / `yul`** and soft **-m**.
 
 [Firm and soft](/firm-soft#speech-act)
 
@@ -243,7 +243,7 @@ Who counts as *we* / *you* when names are unavailable.
 
 ### Command / request / prohibition
 
-Speech act **`yel` / `yem` / `yul` / `yum`**.
+Speech act **`yol` / `yom` / `yul` / `yum`**.
 
 [Firm and soft](/firm-soft#speech-act)
 
@@ -295,7 +295,7 @@ Resume with a different PoS letter than the antecedent.
 
 ### Dependent clause
 
-A full sentence that fills a [stand-in](#stand-in) slot (`darl` / `barl` / `dorl` …). Last in the host slot; the dependent follows immediately.
+A full sentence that fills a [stand-in](#stand-in) slot (`darl` / `barl` / `derl` …). Last in the host slot; the dependent follows immediately.
 
 [Dependents](/dependents#dependent-clauses)
 
@@ -664,7 +664,7 @@ Special reading of a published root under a PoS.
 
 ### Polar stance
 
-Closed `/y/` particles **`yael` / `yuel` / …**.
+Closed `/y/` particles **`yaol` / `yuol` / …**.
 
 [Questions](/questions#polar-stance)
 
@@ -827,7 +827,7 @@ Written cite `[…]`, aside `(…)` and opaque `<…>` fences, with a role lette
 
 ### Stand-in
 
-Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-rm`**) that stands for the **following sentence**. Same vowel series as joins; not a join (joins close a list already said).
+Short word in a role slot (`darl` / `barl` / `derl` / `dorl` / `durl`, open **`-rm`**) that stands for the **following sentence**. Same vowel series as joins; not a join (joins close a list already said).
 
 [Sentence linkers](/sentence-linkers#stand-in)
 
@@ -863,7 +863,7 @@ A dictionary word whose head is a bare root tail instead of a second root (`zahu
 
 ### Tag
 
-**`yol`** plus a [polar stance](#polar-stance) word as its own turn after a sentence: asks the listener for that answer (`yol yael.` *…, right?*, `yol yaol.` *…, okay?*, `yol yuel.` *…, or am I wrong?*).
+**`yel`** plus a [polar stance](#polar-stance) word as its own turn after a sentence: asks the listener for that answer (`yel yaol.` *…, right?*, `yel yael.` *…, okay?*, `yel yuol.` *…, or am I wrong?*).
 
 [Polar inventory](/polar-inventory#tags)
 
@@ -990,4 +990,4 @@ Question type with no join **-r**.
 
 [Questions](/questions#question)
 
-**Compare with:** [polar stance](#polar-stance) is **`yael` / `yuel` / …**, not the yes/no question type.
+**Compare with:** [polar stance](#polar-stance) is **`yaol` / `yuol` / …**, not the yes/no question type.

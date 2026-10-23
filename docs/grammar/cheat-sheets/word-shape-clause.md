@@ -81,8 +81,8 @@ Calls and sentence glue use [`/y/`](/speech-moves) and [`/x/`](/dependents).
 | [`/h/` and `/th/` go anywhere](/clause#adverbs-h) | `zudozol hedurem vowurel.` | *A dog walks hastily.* | B |
 | [Leave out the subject](/left-bound#no-subject): nobody is named as the doer | `duzozen vawebol.` | *Uzozen was seen.* | I |
 | [Moving words changes nothing](/clause#direct-object-d) | `dagozol zudozol vawebol.` | *A dog sees a cat.* | B |
-| [Usual order by speech act](/speech-moves#act-word-order): question verb second, command verb first, prohibition verb late | `yol zuzozen vanuvul dobogal.` · `yel vanuvul dobogal.` · `yul dobogal vanuvul.` | *Does Uzozen punch the box?* · *Punch the box!* · *Don't punch the box.* | B |
-| [Fill-ask: blank first](/questions#fill-ask) | `yol dar zuzozen vawebol.` | *What does Uzozen see?* | B |
+| [Usual order by speech act](/speech-moves#act-word-order): question verb second, command verb first, prohibition verb late | `yel zuzozen vanuvul dobogal.` · `yol vanuvul dobogal.` · `yul dobogal vanuvul.` | *Does Uzozen punch the box?* · *Punch the box!* · *Don't punch the box.* | B |
+| [Fill-ask: blank first](/questions#fill-ask) | `yel dar zuzozen vawebol.` | *What does Uzozen see?* | B |
 | [Contrast one word with `&`](/emphasis#english-emphasis) | `&zuzozen dagozol vawebol.` · `zuzozen &dagozol vawebol.` · `zuzozen dagozol &vawebol.` | *It was Uzozen who saw the cat.* · *It's a cat that Uzozen sees.* (not something else) · *Uzozen sees the cat.* (rather than doing something else to it) | A |
 | [Cleft with no contrast: plain sentence](/emphasis#english-emphasis) | `zuzozen dagozol vawebol.` | *It's a cat that Uzozen sees.* (answering *what?*) | A |
 
@@ -150,7 +150,7 @@ With a name or a resumed noun, the pair is a [property](/predication#existence),
 | [Not](/label-scope#classification-packaging) | `zuzozen gudozol gul.` | *Uzozen is not a dog.* | I |
 | [Always](/label-scope#classification-packaging) | `zuzozen gudozol hual` | *Uzozen is always a dog.* | I |
 | [Sort of](/label-scope#classification-packaging) | `zuzozen woyurem gudozol.` | *Uzozen is something of a dog.* | I |
-| [Be ADJ!](/label-scope#command-property) | `yel gayulem.` | *Be careful!* | I |
+| [Be ADJ!](/label-scope#command-property) | `yol gayulem.` | *Be careful!* | I |
 | [Don't be ADJ](/label-scope#command-property) | `yul` + `/ɡ/` | | I |
 
 ### How far a label reaches {#label-scope}

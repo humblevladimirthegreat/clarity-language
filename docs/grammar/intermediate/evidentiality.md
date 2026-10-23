@@ -131,10 +131,10 @@ When you don't name the source, `blumon` (*someone*) leaves it open. Whether you
 | Agebon | English |
 |--------|---------|
 | `zolazun thebam blumon velurul.` | *Olazun left, according to someone.* (says neither) |
-| `zolazun thebam blumon velurul. zuwon vanam dorl zar.` | *Olazun left, according to someone. I know who.* |
-| `zolazun thebam blumon velurul. zuwon vanam vul dorl zar.` | *Olazun left, according to someone. I don't know who.* (a rumor) |
+| `zolazun thebam blumon velurul. zuwon vanam derl zar.` | *Olazun left, according to someone. I know who.* |
+| `zolazun thebam blumon velurul. zuwon vanam vul derl zar.` | *Olazun left, according to someone. I don't know who.* (a rumor) |
 
-> `zolazun thebam blumon velurul. zuwon vanam dorl zar.`
+> `zolazun thebam blumon velurul. zuwon vanam derl zar.`
 >
 > z-Olazun | [th-REPORTED | bl-someone] | v-departure . z-speaker | v-knowledge | d-whether-clause | z-something
 >
@@ -160,7 +160,7 @@ English *will* can make a forecast: a claim that something will happen. Agebon h
 
 In a [question](/questions#question), the channel asks what the **listener's** answer rests on: *going by the pattern you see, will it rain?* The listener answers with that channel or names a different one. Pick the channel you expect them to have: CLUES (`theyem`) when they would work it out from clues, REPORTED (`thebam`) when they would go by what they heard or read.
 
-> `yol thubem blral verulal.`
+> `yel thubem blral verulal.`
 >
 > y-question | [th-PATTERN | bl-later] | v-rain
 >
@@ -234,9 +234,9 @@ English tells a story with one *they say* or *I remember* at the start, and ever
 
 The frame is **yours**. It covers only your own claims, and someone else who replies never inherits it. Their reply does not end it either: when you go on telling, your frame is still in force.
 
-**Which sentences take the frame:** your statements with no channel of their own, including a statement after a call, an interjection, or an answer word (`yael zolazun varuvel.` *yes, Olazun ran* keeps your frame). A [question](/questions#question) does not take it, because a channel in a question asks about the listener's grounds ([forecasts](#forecast-question)). A command, request, or prohibition does not take it, because it is not a claim. Neither ends the frame, so your next statement picks it up again.
+**Which sentences take the frame:** your statements with no channel of their own, including a statement after a call, an interjection, or an answer word (`yaol zolazun varuvel.` *yes, Olazun ran* keeps your frame). A [question](/questions#question) does not take it, because a channel in a question asks about the listener's grounds ([forecasts](#forecast-question)). A command, request, or prohibition does not take it, because it is not a claim. Neither ends the frame, so your next statement picks it up again.
 
-> `zolazun thebam velurul. yol zolazun varuvel. zolazun vezuyol.`
+> `zolazun thebam velurul. yel zolazun varuvel. zolazun vezuyol.`
 >
 > z-Olazun | th-REPORTED | v-departure . y-question | z-Olazun | v-run . z-Olazun | v-sing
 >
@@ -253,7 +253,7 @@ The frame is **yours**. It covers only your own claims, and someone else who rep
 **What ends it:**
 
 - **A new frame.** Any channel replaces it.
-- **The statement word, written out.** **`yal`** (or **`yam`** / **`yar`**) before a body says you are back in your own voice, with no frame. It is the one place where writing the usually silent [statement word](/firm-soft#speech-act) changes the meaning. In [two stacked act words](speech-acts.md#stacked-acts), it counts only as the first word, the act you really do: a rhetorical **`yal yol`** is your own claim and ends the frame, but a quiz **`yol yal`** does not.
+- **The statement word, written out.** **`yal`** (or **`yam`** / **`yar`**) before a body says you are back in your own voice, with no frame. It is the one place where writing the usually silent [statement word](/firm-soft#speech-act) changes the meaning. In [two stacked act words](speech-acts.md#stacked-acts), it counts only as the first word, the act you really do: a rhetorical **`yal yel`** is your own claim and ends the frame, but a quiz **`yel yal`** does not.
 - **`xuvedam`** *by the way*: a digression leaves what you were telling. To go back, name the channel again.
 - **A goodbye**, which ends the conversation.
 
@@ -263,7 +263,7 @@ The frame is **yours**. It covers only your own claims, and someone else who rep
 >
 > "Olazun left, so they say. Olazun is asleep." (the second claim no longer rests on the report)
 
-> `zolazun thebam velurul. yal yol zar vegemal.`
+> `zolazun thebam velurul. yal yel zar vegemal.`
 >
 > z-Olazun | th-REPORTED | v-departure . y-statement | y-question | z-wh | v-care
 >

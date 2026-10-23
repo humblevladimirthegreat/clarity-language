@@ -257,7 +257,7 @@ y-prohibition | z-Uzozen | v-CITE[v-stop]
 **5.** *Sam, does Uzozen dance?*
 
 ::: details Show answer
-<code>y@&lt;Sam&gt; yol zuzozen vanurel.</code>
+<code>y@&lt;Sam&gt; yel zuzozen vanurel.</code>
 
 y-NAME.OPAQUE["Sam"] | y-question | z-Uzozen | v-dance
 :::

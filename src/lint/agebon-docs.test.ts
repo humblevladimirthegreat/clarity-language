@@ -284,16 +284,16 @@ describe("unhostedJoins", () => {
   const found = (text: string) => unhostedJoins(parseWithTables(text, tables)).map(({ host, join }) => `${host.raw} ${join.raw}`);
 
   it("flags a plain /b/ join with no items right after a host word", () => {
-    assert.deepEqual(found("yol hewom bar zuzozen vowurel."), ["hewom bar"]);
+    assert.deepEqual(found("yel hewom bar zuzozen vowurel."), ["hewom bar"]);
     assert.deepEqual(found("zuzozen vowurel huan bur."), ["huan bur"]);
-    assert.deepEqual(found("yol hedurem bar zuzozen varal."), ["hedurem bar"]);
+    assert.deepEqual(found("yel hedurem bar zuzozen varal."), ["hedurem bar"]);
   });
 
   it("leaves hosted blanks, hooks, plain nouns, and joins that close items", () => {
-    assert.deepEqual(found("yol hewom blar zuzozen vowurel."), []);
-    assert.deepEqual(found("yol ol bar zuzozen vowurel."), []);
+    assert.deepEqual(found("yel hewom blar zuzozen vowurel."), []);
+    assert.deepEqual(found("yel ol bar zuzozen vowurel."), []);
     assert.deepEqual(found("zuzozen hedurem bolazun varal."), []);
     assert.deepEqual(found("zuzozen vezuyel bolazun thagem bol hral."), []);
-    assert.deepEqual(found("yol bar zuzozen hedurem varal."), []);
+    assert.deepEqual(found("yel bar zuzozen hedurem varal."), []);
   });
 });

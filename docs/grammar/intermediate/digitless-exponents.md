@@ -54,7 +54,7 @@ Words such as **`zar`** / **`zer`** stand for an unnamed **member of a set**. Di
 
 In a question, the same word is the blank: *how many?*.
 
-> `yol drar zuzozen vawebol.`
+> `yel drar zuzozen vawebol.`
 > y-question | d-how-many | z-Uzozen | v-see
 >
 > "How many does Uzozen see?"
@@ -65,7 +65,7 @@ To repeat a number already given, keep at least one digit (`drager`), as in [num
 
 To ask for a **number**, write a [number word](/numbers) with no digits and the **-r** ending (written **`=`** after the role letter). That empty number is the blank, the same way `zar` is the blank for *who?* ([fill-ask](/questions#fill-ask-r)). The marker says which kind of number you want. (cue: **-r** names this member; the marker vowel says count, place, or code)
 
-> `yol dagozolx grar zuzozen vawebol.`
+> `yel dagozolx grar zuzozen vawebol.`
 > y-question | [d-cat-x | g-how-many] | z-Uzozen | v-see
 >
 > "How many cats does Uzozen see?"
@@ -77,7 +77,7 @@ To ask for a **number**, write a [number word](/numbers) with no digits and the 
 | `g=#` (`gror`) | fill a place in order | *Which place?* (*which floor, which chapter*) | **e** ≈ order |
 | `g=_` (`grer`) | fill a code or label | *What number?* (*phone, room*) | **o** ≈ one |
 
-> `yol ol bror zolazun vuhohol.`
+> `yel ol bror zolazun vuhohol.`
 > y-question | [at | b-which-place] | z-Olazun | v-sit
 >
 > "Which place does Olazun sit in?" (first, second, and so on)
@@ -90,12 +90,12 @@ Answer with the number as a [citation](/word-endings#citation-forms) or a full s
 
 To ask **how much** of a quality, put the same blank on `/w/` immediately before the adjective or adverb: **`wrar`**.
 
-> `yol wrar gelazom zudozol.`
+> `yel wrar gelazom zudozol.`
 > y-question | [w-how-many | g-big] | z-dog
 >
 > "How big is the dog?"
 
-> `yol wrar hedurem zudozol varuvel.`
+> `yel wrar hedurem zudozol varuvel.`
 > y-question | [w-how-many | h-haste] | z-dog | v-run
 >
 > "How fast does the dog run?"
@@ -231,7 +231,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Use
 **2.** *How many trucks does Uzozen see?*
 
 ::: details Show answer
-`yol dudavalx grar zuzozen vawebol.`
+`yel dudavalx grar zuzozen vawebol.`
 
 y-question | [d-truck-x | g-how-many] | z-Uzozen | v-see
 :::
@@ -256,7 +256,7 @@ z-cart-x | g-5e3,860
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `yol wrar huzezam zudaval.`
+**1.** `yel wrar huzezam zudaval.`
 
 ::: details Show answer
 y-question | [w-how-many | h-slow] | z-truck
@@ -284,10 +284,10 @@ z-Ahelan | [d-grain-x | g-some-amount] | v-see
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *How many trucks does Olazun see?* `yol dudavalx grar zolazun vawebol.` or `yol dudavalx gror zolazun vawebol.`
+**1.** *How many trucks does Olazun see?* `yel dudavalx grar zolazun vawebol.` or `yel dudavalx gror zolazun vawebol.`
 
 ::: details Show answer
-`yol dudavalx grar zolazun vawebol.`
+`yel dudavalx grar zolazun vawebol.`
 
 y-question | [d-truck-x | g-how-many] | z-Olazun | v-see
 
@@ -299,7 +299,7 @@ y-question | [d-truck-x | g-how-many] | z-Olazun | v-see
 **1.** *How slow is the truck?* <!-- lint: error -->`yol har huzezam zudaval.`
 
 ::: details Show answer
-`yol wrar huzezam zudaval.`
+`yel wrar huzezam zudaval.`
 
 y-question | [w-how-many | h-slow] | z-truck
 

@@ -55,7 +55,7 @@ Prohibitions use the same word order as statements because that is less dangerou
 >
 > "Azawan eats the mushroom."
 
-> `yol zazawan vagadel damahul.`
+> `yel zazawan vagadel damahul.`
 >
 > /ˈjo̞l ˈzä.zä.wän ˈvä.ɡä.de̞l ˈdä.mä.ɦʉl/
 >
@@ -63,7 +63,7 @@ Prohibitions use the same word order as statements because that is less dangerou
 >
 > "Does Azawan eat the mushroom?"
 
-> `yel vagadel damahul.`
+> `yol vagadel damahul.`
 >
 > /ˈje̞l ˈvä.ɡä.de̞l ˈdä.mä.ɦʉl/
 >

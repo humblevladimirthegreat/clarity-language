@@ -8,7 +8,7 @@ band: beginner
 
 To ask what something is **like** (*What color is it?*, *What kind of dog?*), put the blank on an adjective: **`gar`**. Answer with the adjective as a [citation](word-endings.md#citation-forms).
 
-> `yol gar zudozol.`
+> `yel gar zudozol.`
 >
 > y-question | g-wh | z-dog
 >
@@ -31,7 +31,7 @@ To ask what something is **like** (*What color is it?*, *What kind of dog?*), pu
 
 To ask *when?* / *in what case?*, put the blank **`har`** in the `/h/` slot (or **`war`** on `/w/`).
 
-> `yol har zahelan vowurel.`
+> `yel har zahelan vowurel.`
 >
 > y-question | h-when | z-Ahelan | v-walk
 >
@@ -45,13 +45,13 @@ To ask *when?* / *in what case?*, put the blank **`har`** in the `/h/` slot (or 
 
 To ask *where?*, write an [extra-noun hook](hooks.md#extra-noun) (a short word like *at*, *in*, or *from* that brings in a `/b/` noun), then the blank **`bar`** in the `/b/` slot after it. The hook picks which *where* you mean.
 
-> `yol ol bar zahelan vowurel.`
+> `yel ol bar zahelan vowurel.`
 >
 > y-question | [at | b-wh] | z-Ahelan | v-walk
 >
 > "Where does Ahelan walk?"
 
-> `yol al bar zudozol vezuvol.`
+> `yel al bar zudozol vezuvol.`
 >
 > y-question | [in | b-wh] | z-dog | v-sleep
 >
@@ -75,7 +75,7 @@ Answer with the hook and the landmark, as a [citation](word-endings.md#citation-
 
 To ask *whose?*, write the hook **`em`** (*used by*) after the thing, then the blank **`bar`**: the same shape as *where?*. Because **`em`** says the `/b/` noun uses the thing, the question asks *who uses it?*
 
-> `yol zudozol em bar vowurel.`
+> `yel zudozol em bar vowurel.`
 >
 > y-question | [z-dog | [used-by | b-wh]] | v-walk
 >
@@ -87,7 +87,7 @@ Answer with the hook and the user, as a [citation](word-endings.md#citation-form
 
 To ask *how?*, use the same shape as *where?*: a word that says how the answer relates to the event, then the blank **`blar`**. For manner (*in what way?*), that word is [**`hewom`**](relations.md) *like*, so the question asks *like what?*
 
-> `yol hewom blar zuzozen vowurel.`
+> `yel hewom blar zuzozen vowurel.`
 >
 > y-question | [h-like | bl-wh] | z-Uzozen | v-walk
 >
@@ -99,13 +99,13 @@ To ask about means (*with what?*), use the *using* hook with the blank: **`ael b
 
 To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in case*), then the blank **`blar`**. Pick the word for the kind of reason you want.
 
-> `yol thahum blar zuzozen vowurel.`
+> `yel thahum blar zuzozen vowurel.`
 >
 > y-question | [th-because | bl-wh] | z-Uzozen | v-walk
 >
 > "Why does Uzozen walk?" (*because of what?*)
 
-> `yol hovam blar zuzozen vowurel.`
+> `yel hovam blar zuzozen vowurel.`
 >
 > y-question | [h-so-that | bl-wh] | z-Uzozen | v-walk
 >
@@ -148,7 +148,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *What is the map like?*
 
 ::: details Show answer
-`yol gar zagel.`
+`yel gar zagel.`
 
 y-question | g-wh | z-map
 :::
@@ -156,7 +156,7 @@ y-question | g-wh | z-map
 **2.** *When does Ahelan walk?*
 
 ::: details Show answer
-`yol har zahelan vowurel.`
+`yel har zahelan vowurel.`
 
 y-question | h-when | z-Ahelan | v-walk
 :::
@@ -164,7 +164,7 @@ y-question | h-when | z-Ahelan | v-walk
 **3.** *Whose map does Olazun find?*
 
 ::: details Show answer
-`yol dagel em bar zolazun vumewol.`
+`yel dagel em bar zolazun vumewol.`
 
 y-question | [d-map | [used-by | b-wh]] | z-Olazun | v-find
 :::
@@ -172,14 +172,14 @@ y-question | [d-map | [used-by | b-wh]] | z-Olazun | v-find
 **4.** *Where does Ahelan walk?*
 
 ::: details Show answer
-`yol ol bar zahelan vowurel.`
+`yel ol bar zahelan vowurel.`
 
 y-question | [at | b-wh] | z-Ahelan | v-walk
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `yol thahum blar zuzozen vowurel.`
+**1.** `yel thahum blar zuzozen vowurel.`
 
 ::: details Show answer
 y-question | [th-because | bl-wh] | z-Uzozen | v-walk
@@ -187,7 +187,7 @@ y-question | [th-because | bl-wh] | z-Uzozen | v-walk
 *Why does Uzozen walk?*
 :::
 
-**2.** `yol hewom blar zahelan vezuyel.`
+**2.** `yel hewom blar zahelan vezuyel.`
 
 ::: details Show answer
 y-question | [h-like | bl-wh] | z-Ahelan | v-tell
@@ -195,7 +195,7 @@ y-question | [h-like | bl-wh] | z-Ahelan | v-tell
 *How does Ahelan tell it?* (like what?)
 :::
 
-**3.** `yol ol bur zudozol vezuvol.`
+**3.** `yel ol bur zudozol vezuvol.`
 
 ::: details Show answer
 y-question | [at | b-wh-else] | z-dog | v-sleep
@@ -205,10 +205,10 @@ y-question | [at | b-wh-else] | z-dog | v-sleep
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *When does Uzozen walk?* `yol har zuzozen vowurel.` or `yol ol bar zuzozen vowurel.`
+**1.** *When does Uzozen walk?* `yel har zuzozen vowurel.` or `yel ol bar zuzozen vowurel.`
 
 ::: details Show answer
-`yol har zuzozen vowurel.`
+`yel har zuzozen vowurel.`
 
 y-question | h-when | z-Uzozen | v-walk
 
@@ -220,7 +220,7 @@ y-question | h-when | z-Uzozen | v-walk
 **1.** *Where does Olazun sleep?* <!-- lint: error -->`yol bar zolazun vezuvol.`
 
 ::: details Show answer
-`yol ol bar zolazun vezuvol.`
+`yel ol bar zolazun vezuvol.`
 
 y-question | [at | b-wh] | z-Olazun | v-sleep
 

@@ -115,11 +115,11 @@ Drop every digit and the word says what kind of number, not its value. With **-r
 | [A few](/digitless-exponents#digitless): open `gram` | `zagozolx gram vuhohol.` | *A few cats sit.* | I |
 | [Some, on a mass noun](/digitless-exponents#digitless) | `zududal gral vuhohol.` | *Some tea sits there.* | I |
 | [Some amount](/digitless-exponents#digitless) | `zuzozen drar vawebol.` | *Uzozen sees some number of them.* | I |
-| [How many?](/digitless-exponents#digitless) | `yol drar zuzozen vawebol.` | *How many does Uzozen see?* | I |
-| [How many cats?](/digitless-exponents#how-many) | `yol dagozolx grar zuzozen vawebol.` | *How many cats does Uzozen see?* | I |
-| [Which place?](/digitless-exponents#how-many) | `yol ol bror zolazun vuhohol.` | *Which place does Olazun sit in?* (first, second, and so on) | I |
-| [How big?](/digitless-exponents#how-big): blank on `/w/` | `yol wrar gelazom zudozol.` | *How big is the dog?* | I |
-| [How fast?](/digitless-exponents#how-big) | `yol wrar hedurem zudozol varuvel.` | *How fast does the dog run?* | I |
+| [How many?](/digitless-exponents#digitless) | `yel drar zuzozen vawebol.` | *How many does Uzozen see?* | I |
+| [How many cats?](/digitless-exponents#how-many) | `yel dagozolx grar zuzozen vawebol.` | *How many cats does Uzozen see?* | I |
+| [Which place?](/digitless-exponents#how-many) | `yel ol bror zolazun vuhohol.` | *Which place does Olazun sit in?* (first, second, and so on) | I |
+| [How big?](/digitless-exponents#how-big): blank on `/w/` | `yel wrar gelazom zudozol.` | *How big is the dog?* | I |
+| [How fast?](/digitless-exponents#how-big) | `yel wrar hedurem zudozol varuvel.` | *How fast does the dog run?* | I |
 
 *Many*, *few*, *enough*, and *too much* are [comparatives](/vague-amounts#vague-amounts), not number words. Do not confuse the blank on `/h/` with `har` *sometimes*.
 

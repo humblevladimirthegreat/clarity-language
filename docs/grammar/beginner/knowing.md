@@ -42,7 +42,7 @@ When you are not sure, use **`thomam`**: it says *could be* and nothing about fo
 
 In a yes/no question, **`thomal`** says you are asking in order to find out:
 
-> `yol zuzozen vanuvul thomal dolazun.`
+> `yel zuzozen vanuvul thomal dolazun.`
 >
 > y-question | z-Uzozen | v-punch | th-MAY-find-out | d-Olazun
 >
@@ -123,7 +123,7 @@ z-Uzozen | v-think
 **5.** *Could Ahelan be paying?*
 
 ::: details Show answer
-`yol zahelan varal thomam.`
+`yel zahelan varal thomam.`
 
 y-question | z-Ahelan | v-pay | th-MAY
 :::
@@ -154,7 +154,7 @@ z-Ahelan | th-MAY-find-out | v-scream
 *Ahelan may be screaming, I'll find out.*
 :::
 
-**3.** `yol zolazun vavuvul thomal duzozen.`
+**3.** `yel zolazun vavuvul thomal duzozen.`
 
 ::: details Show answer
 y-question | z-Olazun | v-fight | th-MAY-find-out | d-Uzozen

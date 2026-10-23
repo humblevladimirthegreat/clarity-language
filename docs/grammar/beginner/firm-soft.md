@@ -8,7 +8,7 @@ band: beginner
 
 You already mark whether a turn is a statement, question, command, or prohibition. The ending of the act word adds **how firmly** you mean it. English softens with extra words (*please*, *perhaps*, *for what it's worth*); Agebon changes only the ending.
 
-The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a** statement, **o** question, **e** command, **u** prohibition). With **-l** you stand behind the act. With **-m** you offer it softly and leave the other person free to take it up or not. **-r** marks an act you hold only for now. Write the act word whenever the turn is not a plain statement; a period still lets you omit **`yal`**.
+The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a** statement, **o** command, **e** question, **u** prohibition). With **-l** you stand behind the act. With **-m** you offer it softly and leave the other person free to take it up or not. **-r** marks an act you hold only for now. Write the act word whenever the turn is not a plain statement; a period still lets you omit **`yal`**.
 
 > `yam zuzozen vowurel.`
 >
@@ -23,16 +23,16 @@ The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a
 |--------|-----|-----|
 | **`yal`** | **statement**: claim or description | **a** add + **-l**: stand behind |
 | **`yam`** | **soft statement**: offered, not insisted (*for what it's worth*) | **a** add + **-m**: hold, but leave it open |
-| **`yol`** | **question**: yes/no and fill-in ask | **o** one / menu + **-l**: pick an answer |
-| **`yom`** | **soft question**: wonder, gentle ask, offer-like | **o** menu + **-m**: ask without pinning |
-| **`yel`** | **command**: instruction | **e** order + **-l**: do this |
-| **`yem`** | **request**: soft directive (*please…*) | **e** order + **-m**: ask, don’t command |
+| **`yel`** | **question**: yes/no and fill-in ask | **e** choice + **-l**: collapse to an answer |
+| **`yem`** | **soft question**: wonder, gentle ask, offer-like | **e** choice + **-m**: ask without pinning |
+| **`yol`** | **command**: instruction | **o** rank + **-l**: this is what to do |
+| **`yom`** | **request**: soft directive (*please…*) | **o** rank + **-m**: ask, don’t command |
 | **`yul`** | **prohibition**: *don’t…* (firm) | **u** undo + **-l**: take the action back |
 | **`yum`** | **soft prohibition**: *please don’t…* / *I’d rather you not…* | **u** undo + **-m**: prefer they don’t |
 
 For *let's*, make a soft request with inclusive *we*, **`aya`** ([special pronouns](pronouns.md#special-pronouns)), as the subject. *Let's not* is the soft prohibition.
 
-> `yem vowurel zayan.`
+> `yom vowurel zayan.`
 >
 > y-request | v-walk | z-interlocutors
 >
@@ -54,8 +54,8 @@ A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` w
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`yar`** | **provisional statement**: held until something better comes | *as things stand* / *for now, I take it that…* | **a** add + **-r**: a claim held for now |
-| **`yor`** | **working question**: asked to proceed, expect to re-ask | *just checking, …?* / *for now, is it…?* | **o** menu + **-r**: an ask for now |
-| **`yer`** | **command for now**: do this until told otherwise | *for now, …* / *go ahead and … for now* | **e** order + **-r**: an instruction you expect to revisit |
+| **`yer`** | **working question**: asked to proceed, expect to re-ask | *just checking, …?* / *for now, is it…?* | **e** choice + **-r**: an ask for now |
+| **`yor`** | **command for now**: do this until told otherwise | *for now, …* / *go ahead and … for now* | **o** rank + **-r**: an instruction you expect to revisit |
 | **`yur`** | **hold off**: don't, for now | *hold off on …* / *don't … yet* | **u** undo + **-r**: take the action back, for now |
 
 > `yur vowurel.`
@@ -101,7 +101,7 @@ y-soft-statement | z-Ahelan | v-sing
 **2.** *Let's sing.*
 
 ::: details Show answer
-`yem vezuyol zayan.`
+`yom vezuyol zayan.`
 
 y-request | v-sing | z-interlocutors
 :::
@@ -116,7 +116,7 @@ y-provisional-statement | z-Ahelan | h-quiet | v-sing
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `yer vezuyol zuzozen.`
+**1.** `yor vezuyol zuzozen.`
 
 ::: details Show answer
 y-command-for-now | v-sing | z-Uzozen
@@ -132,7 +132,7 @@ y-soft-prohibition | z-interlocutors | v-stop
 *Let's not stop.*
 :::
 
-**3.** `yom zolazun vezuyol.`
+**3.** `yem zolazun vezuyol.`
 
 ::: details Show answer
 y-soft-question | z-Olazun | v-sing
@@ -142,14 +142,14 @@ y-soft-question | z-Olazun | v-sing
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Please sing.* `yem vezuyol.` or `yel vezuyol.`
+**1.** *Please sing.* `yom vezuyol.` or `yol vezuyol.`
 
 ::: details Show answer
-`yem vezuyol.`
+`yom vezuyol.`
 
 y-request | v-sing
 
-Soft **-m** asks; firm **`yel`** commands.
+Soft **-m** asks; firm **`yol`** commands.
 :::
 
 **2.** *Hold off on singing for now.* `yur vezuyol.` or `yul vezuyol.`

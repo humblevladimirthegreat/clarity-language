@@ -213,7 +213,7 @@ The lesser bid sets the limit, so the talk lasts a few minutes.
 **Rule:** [Conversation length](compound-families.md#conversation-length)
 :::
 
-**6.** `yol dugedol dar.`
+**6.** `yel dugedol dar.`
 
 ::: details Show answer
 y-question | [d-cookie | d-wh]
@@ -249,14 +249,14 @@ After the `/b/` of a host, a plain adjective describes that extra noun; right af
 **Rule:** [Complex chaining](left-bound.md#complex-chaining)
 :::
 
-**3.** *Olazun sees a sandwich!* (strong feeling about the whole sentence) `! zolazun dedal vawebol.` or `yel zolazun dedal vawebol.`
+**3.** *Olazun sees a sandwich!* (strong feeling about the whole sentence) `! zolazun dedal vawebol.` or `yol zolazun dedal vawebol.`
 
 ::: details Show answer
 `! zolazun dedal vawebol.`
 
 ! | z-Olazun | d-sandwich | v-see
 
-`!` marks strong feeling about the sentence; **`yel`** would command Olazun to see it.
+`!` marks strong feeling about the sentence; **`yol`** would command Olazun to see it.
 
 **Rule:** [Tone marks](tone-marks.md#tone-marks)
 :::
@@ -273,14 +273,14 @@ With a plain verb, each of them cooks three; **`vuguyelx`** would make three in 
 **Rule:** [Verbs (/v/): collective](collectives.md#verbs-v)
 :::
 
-**5.** *Olazun cried, or am I wrong?* `zolazun vagamul. yol yuel.` or `zolazun vagamul. yol yael.`
+**5.** *Olazun cried, or am I wrong?* `zolazun vagamul. yel yuol.` or `zolazun vagamul. yel yaol.`
 
 ::: details Show answer
-`zolazun vagamul. yol yuel.`
+`zolazun vagamul. yel yuol.`
 
 z-Olazun | v-cry . y-question | y-no
 
-The tag **`yol yuel`** invites a correction; **`yol yael`** leans toward agreement (*…, right?*).
+The tag **`yel yuol`** invites a correction; **`yel yaol`** leans toward agreement (*…, right?*).
 
 **Rule:** [Tags: asking for an answer](polar-inventory.md#tags)
 :::
@@ -345,10 +345,10 @@ anyway | z-Ahelan | v-walk
 **Rule:** [Point back](discourse-hooks.md#hook-resume)
 :::
 
-**11.** *How many cookies does Uzozen see?* `yol dugedolx grar zuzozen vawebol.` or `yol dugedolx gror zuzozen vawebol.`
+**11.** *How many cookies does Uzozen see?* `yel dugedolx grar zuzozen vawebol.` or `yel dugedolx gror zuzozen vawebol.`
 
 ::: details Show answer
-`yol dugedolx grar zuzozen vawebol.`
+`yel dugedolx grar zuzozen vawebol.`
 
 y-question | [d-cookie-x | g-how-many] | z-Uzozen | v-see
 
@@ -381,14 +381,14 @@ After the fence, PATTERN is a stance on the whole superlative; before the rank j
 **Rule:** [Vague amounts (*many* / *few*)](vague-amounts.md#vague-amounts)
 :::
 
-**14.** *Don't fight. I mean it.* `yul yul vavuvul.` or `yel yel vavuvul.`
+**14.** *Don't fight. I mean it.* `yul yul vavuvul.` or `yol yol vavuvul.`
 
 ::: details Show answer
 `yul yul vavuvul.`
 
 y-prohibition | y-prohibition | v-fight
 
-Repeating the act word insists on that act; repeating **`yel`** would insist on a command.
+Repeating the act word insists on that act; repeating **`yol`** would insist on a command.
 
 **Rule:** [Doubling an act word](speech-acts.md#doubled-act)
 :::

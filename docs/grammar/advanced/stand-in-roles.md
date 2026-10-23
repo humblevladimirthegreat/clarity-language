@@ -6,7 +6,7 @@ band: advanced
 
 ### Lexicalized stand-ins in other roles {#stand-in-roles}
 
-A stand-in's vowel says what kind of content follows, and its first letter says which role that content fills. With **-rn** (or **-n** after two vowels, as in **`vaen`**), the stand-in becomes a fixed word for that kind of content: **`darn`** *a statement*, **`dorn`** *a question*, **`dern`** *a command*, **`durn`** *a prohibition*. Use the same vowels with another role letter when the following sentence fills that role. On `/v/`, the same **-rn** / **-n** endings make verbs that take the following sentence as their content.
+A stand-in's vowel says what kind of content follows, and its first letter says which role that content fills. With **-rn** (or **-n** after two vowels, as in **`vaen`**), the stand-in becomes a fixed word for that kind of content: **`darn`** *a statement*, **`dern`** *a question*, **`dorn`** *a command*, **`durn`** *a prohibition*. Use the same vowels with another role letter when the following sentence fills that role. On `/v/`, the same **-rn** / **-n** endings make verbs that take the following sentence as their content.
 
 Each content type has one lexicalized form; there is no closed / open pair here.
 
@@ -14,24 +14,24 @@ Each content type has one lexicalized form; there is no closed / open pair here.
 | Agebon | Dependent content | English |
 |--------|-------------------|---------|
 | **`varn`** | statement-like (`a`) | *state…* |
-| **`vorn`** | question-like (`o`) | *question…* |
-| **`vern`** | instruction-like (`e`) | *command…* |
+| **`vern`** | question-like (`e`) | *question…* |
+| **`vorn`** | instruction-like (`o`) | *command…* |
 | **`vurn`** | avoidance-like (`u`) | *prohibit…* |
-| **`vaen`** | accepts a statement | *confirm that…* |
-| **`vuen`** | rejects a statement | *deny that…* |
-| **`vaon`** | accepts a proposed action | *agree to…* |
-| **`vuon`** | rejects a proposed action | *decline to…* |
+| **`vaon`** | accepts a statement | *confirm that…* |
+| **`vuon`** | rejects a statement | *deny that…* |
+| **`vaen`** | accepts a proposed action | *agree to…* |
+| **`vuen`** | rejects a proposed action | *decline to…* |
 | **`vuan`** | rejects the premise behind a question or claim | *dispute the premise that…* |
 
 For example, the `/v/` word takes the following sentence as its content:
 
-> `zuzozen vaen zolazun vuhohol.`
+> `zuzozen vaon zolazun vuhohol.`
 >
 > z-Uzozen | v-confirm | z-Olazun | v-sit
 >
 > "Uzozen confirms that Olazun sits."
 
-> `zuzozen vuon zuzozen vuhohol.`
+> `zuzozen vuen zuzozen vuhohol.`
 >
 > z-Uzozen | v-decline-to | z-Uzozen | v-sit
 >
@@ -67,7 +67,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *command* | `vern` | **e** ≈ order: the next sentence is an instruction |
+| *command* | `vorn` | **o** ≈ rank: the next sentence is an instruction |
 | *state* | `varn` | **a** ≈ add: the next sentence is a claim |
 | *prohibit* | `vurn` | **u** ≈ undo: the next sentence is something to avoid |
 | *statement* | `darn` | **a** ≈ add: a statement as object |
@@ -91,7 +91,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **1.** *Uzozen commands that Olazun sit.*
 
 ::: details Show answer
-`zuzozen vern zolazun vuhohol.`
+`zuzozen vorn zolazun vuhohol.`
 
 z-Uzozen | v-command | z-Olazun | v-sit
 :::
@@ -140,14 +140,14 @@ z-Ahelan | v-tell | [th-because | bl-that-clause] | z-Olazun | v-sit | [th-becau
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Uzozen commands that Olazun sit.* `zuzozen vern zolazun vuhohol.` or `zuzozen varn zolazun vuhohol.`
+**1.** *Uzozen commands that Olazun sit.* `zuzozen vorn zolazun vuhohol.` or `zuzozen varn zolazun vuhohol.`
 
 ::: details Show answer
-`zuzozen vern zolazun vuhohol.`
+`zuzozen vorn zolazun vuhohol.`
 
 z-Uzozen | v-command | z-Olazun | v-sit
 
-**`vern`** takes the next sentence as an instruction; **`varn`** only states that Olazun sits.
+**`vorn`** takes the next sentence as an instruction; **`varn`** only states that Olazun sits.
 :::
 
 #### Fix it {#advanced-fix-it}

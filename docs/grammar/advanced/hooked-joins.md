@@ -65,7 +65,7 @@ An [abstract landmark](/ending-grids#abstract-landmarks) reads the same way: `za
 
 The join part keeps its readings, so every [join ending](/joins#standalone-phrase) works, under any hook ending. The hook's ending sits before the seam and the join's at the end of the word, so the two never meet.
 
-| Join ending | Agebon | English | Under `yol` |
+| Join ending | Agebon | English | Under `yel` |
 |-------------|--------|---------|-------------|
 | **-r** | `zoxar blahehal` | *someone at the house* | *who at the house?* |
 | **-r**, other series | `zoxer blahehal` / `zoxur blahehal` / `zoxor blahehal` | *anyone at the house* / *someone else at the house* / *whoever ranks highest at the house* | *any? / who else? / which one most?* |
@@ -77,7 +77,7 @@ The join part keeps its readings, so every [join ending](/joins#standalone-phras
 
 The two endings are separate choices: `zomxuam bluwon` is *everyone around here, as far as I know*. A standalone join as the landmark names the widest bound out loud: `zoxual blual` is *everyone, anywhere, no exceptions*, and `zoxuam blual` is *people anywhere, in general*.
 
-> `yol dexar bluwon.`
+> `yel dexar bluwon.`
 >
 > y-question | [d-for-x-wh | bl-speaker]
 >
@@ -93,7 +93,7 @@ With items before it, a closed or open join lists the whole set within the bound
 
 On **-r**, the join stands for one of the items, and the hook says which: the one in that relation.
 
-> `yol zudozol zagozol zoxar blahehal.`
+> `yel zudozol zagozol zoxar blahehal.`
 >
 > y-question | [z-dog | z-cat | z-at-x-wh | bl-house]
 >

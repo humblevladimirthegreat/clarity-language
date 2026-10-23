@@ -63,13 +63,13 @@ describe("classifyToTokenType", () => {
 
   it("maps yal to Force and yael to Polar", () => {
     assert.equal(classifyToTokenType(lex("yal")).name, Force.name);
-    assert.equal(classifyToTokenType(lex("yael")).name, Polar.name);
+    assert.equal(classifyToTokenType(lex("yaol")).name, Polar.name);
   });
 
   it("maps darl to the stand-in token of its slot", () => {
     assert.equal(classifyToTokenType(lex("darl")).name, OdoD.name);
     assert.equal(classifyToTokenType(lex("barl")).name, OdoB.name);
-    assert.equal(classifyToTokenType(lex("dorl")).name, OdoD.name);
+    assert.equal(classifyToTokenType(lex("derl")).name, OdoD.name);
   });
 });
 

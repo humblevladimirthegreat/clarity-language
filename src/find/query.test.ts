@@ -131,10 +131,10 @@ describe("parse field keys", () => {
       .map((w) => w.word.raw);
 
   it("matches join series o, not a hook or polar yes", () => {
-    const text = "zuzozen zol vowurel al buwon. yael.";
+    const text = "zuzozen zol vowurel al buwon. yaol.";
     assert.deepEqual(raws(text, "family=joinMarker,series=o"), ["zol"]);
     assert.deepEqual(raws(text, "family=hook,form=al|om"), ["al"]);
-    assert.deepEqual(raws(text, "family=joinMarker,role=y,series=ae"), ["yael"]);
+    assert.deepEqual(raws(text, "family=joinMarker,role=y,series=ao"), ["yaol"]);
   });
 
   it("matches hook form on a prefix", () => {
@@ -149,10 +149,10 @@ describe("parse field keys", () => {
   });
 
   it("matches say answer and scope", () => {
-    const text = "zuzozen vowurel hwavam. zuzozen vowurel hwavem.";
+    const text = "zuzozen vowurel hwavam. zuzozen vowurel hwavom.";
     assert.deepEqual(raws(text, "family=say,answer=a"), ["hwavam"]);
-    assert.deepEqual(raws(text, "family=say,answer=e"), ["hwavem"]);
-    assert.deepEqual(raws(text, "family=say,scope=a").sort(), ["hwavam", "hwavem"]);
+    assert.deepEqual(raws(text, "family=say,answer=o"), ["hwavom"]);
+    assert.deepEqual(raws(text, "family=say,scope=a").sort(), ["hwavam", "hwavom"]);
   });
 
   it("matches ability and sake stance, not th-scope", () => {
@@ -214,8 +214,8 @@ describe("parse field keys", () => {
 describe("learner name slot", () => {
   it("parses SELF examples with the default learner root", () => {
     assert.deepEqual(
-      collectExamples("`yom zSELFn vuhohol hwavam.`", tables).map((e) => e.text),
-      ["yom zuwon vuhohol hwavam."],
+      collectExamples("`yem zSELFn vuhohol hwavam.`", tables).map((e) => e.text),
+      ["yem zuwon vuhohol hwavam."],
     );
   });
 });

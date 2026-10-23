@@ -1,6 +1,6 @@
 # Proposal: realign amount-scale vowel series
 
-**Status:** PROPOSED. Nothing here is absorbed.  
+**Status:** Phase 1 and Phase 2 absorbed. Later phases are still proposed.  
 **Related:** [root tails](/root-tails#root-tails) (size), [joins](/joins#join-type-vowel-series), [speech acts](/speech-moves#speech-act-beginner), [polar stance](/questions#polar-stance), [hooks](/hooks), [extra nouns](/hooks#extra-noun), [sakes](/sakes#word-shape), [tag pronouns](/tag-pronouns#tag-pronouns), [vowel pitch](/phonology#vowel-pitch), [finger code](/finger-code), [digit syllables](/numbers#counts), [letter names](/phonotactics#letter-names), [conversation length](/compound-families#conversation-length), [ability](/can-and-cant#ability), [label scope](/label-seams#label-scope), [role compounds](/roles#one-time-or-a-practice), [role pointers](/pronouns#role-pointers), [say-word scope](/feelings-permission#say-scope), [landmark facing](/viewpoint#landmark-facing), [stacked scope](/label-seams#scope-stacks), [Claritish Labels](/claritish/labels) and [Can and can't](/claritish/can-and-cant), [D-40](../meta/design-decisions.md), [D-44](../meta/design-decisions.md), [D-49](../meta/design-decisions.md), [`scripts/find.mjs`](../../scripts/find.mjs) (`--map` / `--write`; `src/find/`).  
 **Design authority:** none until absorbed into those pages. Parser summaries in [`src/parse/constructions.ts`](../../src/parse/constructions.ts) follow the pages.
 
@@ -108,7 +108,7 @@ Do not split Phase 1 into join vs number markers: `#` **is** rank. Do not split 
 - Do not retarget stacked scope or stacked extra-noun English to the new simplex letters. Letters follow **OE**; English stays.
 - Each spec section below is what that phase implements. Later series still teach the old cells until their phase; that is expected.
 
-### Phase 1 — Join
+### Phase 1 — Join (absorbed)
 
 Implement the join simplex remap and every job that **is** a join. Leave act, hooks, extra-noun, scope, ability, conversation length, pointers, root job, and hang cues.
 
@@ -137,7 +137,7 @@ Includes restrictors, join-acts, join-relations, hooked-join **series** (the hoo
 
 **Done when:** *more* is `zol`, parser rank series is **o**, marker speech `#`/`re` is rank **o**, and the sweep skip/review list is empty or reviewed.
 
-### Phase 2 — Act
+### Phase 2 — Act (absorbed)
 
 Act words, polar, stand-ins, rhetorical / quiz stacks, and say-word **answers** (not scope). Hangs on the join letters from Phase 1.
 

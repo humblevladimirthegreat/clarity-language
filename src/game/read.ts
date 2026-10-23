@@ -8,8 +8,8 @@ import { actWord } from "../parse/series.js";
 import type { GPackage, LexWord, NpCoord, ParseResult, Unit, Utterance } from "../parse/types.js";
 import type { Act, Force, NounRef } from "./types.js";
 
-const FORCES: Record<string, Force> = { a: "statement", o: "question", e: "command", u: "prohibition" };
-const POLARS: Record<string, Act["polar"]> = { ae: "yes", ue: "no", ao: "sure" };
+const FORCES: Record<string, Force> = { a: "statement", o: "command", e: "question", u: "prohibition" };
+const POLARS: Record<string, Act["polar"]> = { ao: "yes", uo: "no", ae: "sure" };
 const POINTER_ROLES: Record<string, "agent" | "patient" | "recipient"> = { z: "agent", d: "patient", b: "recipient" };
 
 function contentRoot(word: LexWord): string | undefined {

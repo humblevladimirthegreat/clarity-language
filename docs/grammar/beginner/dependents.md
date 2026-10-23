@@ -42,9 +42,9 @@ Here the dependent clause is the direct object, so the stand-in is **`darl`**:
 >
 > "Uzozen tells Olazun that the dog runs."
 
-For English *whether*, change the vowel to **`o`**: **`dorl`**. The inner sentence is question-like, but the outer sentence is still a statement, so the whole stretch ends with a period.
+For English *whether*, change the vowel to **`e`**: **`derl`**. The inner sentence is question-like, but the outer sentence is still a statement, so the whole stretch ends with a period.
 
-> `zuzozen vawebol dorl zolazun vowurel.`
+> `zuzozen vawebol derl zolazun vowurel.`
 >
 > z-Uzozen | v-see | d-whether-clause | z-Olazun | v-walk
 >
@@ -85,7 +85,7 @@ You can also say:
 
 A command or request makes no claim, so an *if* pole on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Agebon keeps the usual order, with **`blarl`** last.
 
-> `yel vowurel thohom blarl zolazun vuhohol.`
+> `yol vowurel thohom blarl zolazun vuhohol.`
 >
 > y-command | v-walk | [th-if | bl-that-clause] | z-Olazun | v-sit
 >
@@ -103,7 +103,7 @@ Ordinary `zezol` is still *a zebra*.
 
 The sentence after **`blarl`** has to name an event or a thing, so it needs a noun or a verb. A stance word by itself does not fill it.
 
-**Compare with:** discourse *however* and *therefore* start a new sentence after a finished claim; they are not *although*. *Whether Olazun walks* is **`dorl`**, not **`thohom`**: *if* sets a condition, and *whether* leaves a yes-or-no question open.
+**Compare with:** discourse *however* and *therefore* start a new sentence after a finished claim; they are not *although*. *Whether Olazun walks* is **`derl`**, not **`thohom`**: *if* sets a condition, and *whether* leaves a yes-or-no question open.
 
 ### Times (*while*, *before*, *after*, *until*, *by*) {#time-poles}
 
@@ -199,7 +199,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *scream* | `varemul` | 😱 |
 | *therefore* | `xahem` | ➡️ from *east*: the sun's path, so the talk moves on |
 | *that-clause* | `darl` | **a** ≈ add: the content that follows |
-| *whether-clause* | `dorl` | **o** ≈ one: pick yes or no |
+| *whether-clause* | `derl` | **o** ≈ one: pick yes or no |
 | *because* | `thahum` | 🧱 from *wall*: the cause is what the result sits on |
 | *if* | `thohom` | 🚪 from *door*: walk through only if it opens |
 | *although* | `hezom` | 🦓 from *zebra*: two stripes, still one animal |
@@ -251,7 +251,7 @@ z-Uzozen | v-sit | [h-although | bl-guard]
 **4.** *A guard sees whether Olazun peeks.*
 
 ::: details Show answer
-`zagayul vawebol dorl zolazun vebemel.`
+`zagayul vawebol derl zolazun vebemel.`
 
 z-guard | v-see | d-whether-clause | z-Olazun | v-peek
 :::
@@ -290,7 +290,7 @@ z-Olazun | v-sit | [h-although | bl-that-clause] | z-guard | v-scream
 *Olazun sits although a guard screams.*
 :::
 
-**3.** `zahelan vawebol dorl zagayul vuhohol.`
+**3.** `zahelan vawebol derl zagayul vuhohol.`
 
 ::: details Show answer
 z-Ahelan | v-see | d-whether-clause | z-guard | v-sit
@@ -324,10 +324,10 @@ z-Ahelan | v-tell | b-guard | d-that-clause | [z-Uzozen | g-angry] | v-sit
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Olazun sees whether Uzozen runs.* `zolazun vawebol darl zuzozen varuvel.` or `zolazun vawebol dorl zuzozen varuvel.`
+**1.** *Olazun sees whether Uzozen runs.* `zolazun vawebol darl zuzozen varuvel.` or `zolazun vawebol derl zuzozen varuvel.`
 
 ::: details Show answer
-`zolazun vawebol dorl zuzozen varuvel.`
+`zolazun vawebol derl zuzozen varuvel.`
 
 z-Olazun | v-see | d-whether-clause | z-Uzozen | v-run
 

@@ -53,13 +53,13 @@ describe("nearMisses", () => {
   });
 
   it("ranks this error kind's rows above the rest", () => {
-    const rule: RecastRule = { kind: "word", from: "yol", to: "yel", errorKind: "special", source: "x.md#y" };
-    const misses = nearMisses("yol vowurel.", "special", options({ rules: [...SEED_RULES, rule] }));
-    assert.equal(misses.find((m) => m.agebon === "yel vowurel.")?.tier, 1);
+    const rule: RecastRule = { kind: "word", from: "yel", to: "yol", errorKind: "special", source: "x.md#y" };
+    const misses = nearMisses("yel vowurel.", "special", options({ rules: [...SEED_RULES, rule] }));
+    assert.equal(misses.find((m) => m.agebon === "yol vowurel.")?.tier, 1);
   });
 
   it("moves a turn word to the front", () => {
-    const misses = nearMisses("zuzozen varal yol.", "turnMidSentence", options()).map((m) => m.agebon);
-    assert.ok(misses.includes("yol zuzozen varal."));
+    const misses = nearMisses("zuzozen varal yel.", "turnMidSentence", options()).map((m) => m.agebon);
+    assert.ok(misses.includes("yel zuzozen varal."));
   });
 });

@@ -197,7 +197,7 @@ z-Olazun | th-MAY | v-fight
 **Rule:** [MAY](knowing.md#may)
 :::
 
-**6.** `yol ol bar zahelan vuhohol.`
+**6.** `yel ol bar zahelan vuhohol.`
 
 ::: details Show answer
 y-question | [at | b-wh] | z-Ahelan | v-sit
@@ -253,10 +253,10 @@ z-Uzozen | [d-mango | d-watermelon | d-or-exactly-one] | v-see
 **Rule:** [Choice (e)](joins.md#choice-e)
 :::
 
-**3.** *What does Olazun write?* `yol ?dar zolazun varayel.` or `yol ?dur zolazun varayel.`
+**3.** *What does Olazun write?* `yel ?dar zolazun varayel.` or `yel ?dur zolazun varayel.`
 
 ::: details Show answer
-`yol ?dar zolazun varayel.`
+`yel ?dar zolazun varayel.`
 
 y-question | ?d-wh | z-Olazun | v-write
 
@@ -418,7 +418,7 @@ z-Uzozen | v-departure | [th-because.fault | bl-that-clause] | z-Olazun | v-tell
 
 y-Ahelan | y-prohibition | v-run
 
-*Don’t* is **`yul`**; **`yel`** tells Ahelan to run.
+*Don’t* is **`yul`**; **`yol`** tells Ahelan to run.
 
 **Rule:** [Speech act](speech-moves.md#speech-act-statement-question-command)
 :::

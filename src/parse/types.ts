@@ -137,7 +137,7 @@ export type MorphWordFamily =
 
 /** Whose say a say word gives (feelings-permission.md#say-words). */
 export type SayPart = "z" | "d" | "b" | "v";
-/** What they said: `a` allow, `u` forbid, `e` require, `o` their call (feelings-permission.md#say-words). */
+/** What they said: `a` allow, `u` forbid, `o` require, `e` their call (feelings-permission.md#say-words). */
 export type SayAnswer = "a" | "e" | "o" | "u";
 
 /** Tag pronoun vowel, named by its letter name: A, E, O, U (tag-pronouns.md#tag-pronouns). */

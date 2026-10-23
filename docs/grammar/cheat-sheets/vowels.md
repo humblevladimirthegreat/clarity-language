@@ -13,13 +13,13 @@ The usual map is **a** add, **o** one, **e** order, **u** undo. Jobs that share 
 
 ## Act words {#acts}
 
-Stand-ins and say-word answers use the same vowels as the [act words](/speech-moves#speech-act-beginner): **a** hold, **o** pick, **e** instruct, **u** take back.
+Stand-ins and say-word answers use the same vowels as the [act words](/speech-moves#speech-act-beginner): **a** add a claim, **o** rank an instruction, **e** collapse to an answer, **u** take the act away.
 
 | Job | **a** | **o** | **e** | **u** | Stage |
 |-----|-------|-------|-------|-------|-------|
-| [Speech act](/speech-moves#speech-act-beginner) | statement (`yal`) | question (`yol`) | command (`yel`) | prohibition (`yul`) | B |
-| [Stand-in](/sentence-linkers#stand-in) | `darl` *that …* | `dorl` *whether …* | `derl` *to …* | `durl` *lest / not to …* | B–I |
-| [Say-word answer](/feelings-permission#say-words) | allow | their call | require | forbid | I |
+| [Speech act](/speech-moves#speech-act-beginner) | statement (`yal`) | command (`yol`) | question (`yel`) | prohibition (`yul`) | B |
+| [Stand-in](/sentence-linkers#stand-in) | `darl` *that …* | `dorl` *to …* | `derl` *whether …* | `durl` *lest / not to …* | B–I |
+| [Say-word answer](/feelings-permission#say-words) | allow | require | their call | forbid | I |
 
 ### Polar answers {#polar}
 
@@ -27,10 +27,10 @@ Polar answers stack two of these vowels. Beginner *yes* / *no* / *sure*: [polar 
 
 | Vowels | Polar | Stage |
 |--------|-------|-------|
-| **ae** | `yael` *yes* / *will do* | B |
-| **ue** | `yuel` *no* / *I won't* | B |
-| **ao** | `yaol` *sure* | B |
-| **uo** | `yuol` *not that* | I |
+| **ao** | `yaol` *yes* / *will do* | B |
+| **uo** | `yuol` *no* / *I won't* | B |
+| **ae** | `yael` *sure* | B |
+| **ue** | `yuel` *not that* | I |
 | **ua** | `yual` *doesn't apply* | I |
 | **oe** | `yoel` *I won't answer* | I |
 

@@ -24,13 +24,13 @@ describe("ruleFromFix", () => {
 
   it("reads one word for another", () => {
     assert.deepEqual(
-      [fix("zababal yel vowowol.", "zababal yul vowowol.")?.kind, fix("zababal yel vowowol.", "zababal yul vowowol.")?.from],
-      ["word", "yel"],
+      [fix("zababal yol vowowol.", "zababal yul vowowol.")?.kind, fix("zababal yol vowowol.", "zababal yul vowowol.")?.from],
+      ["word", "yol"],
     );
   });
 
   it("reads a turn word moved to the front", () => {
-    assert.equal(fix("zababal vowowol yol.", "yol zababal vowowol.")?.kind, "front");
+    assert.equal(fix("zababal vowowol yel.", "yel zababal vowowol.")?.kind, "front");
   });
 
   it("skips a slip that is not one edit", () => {

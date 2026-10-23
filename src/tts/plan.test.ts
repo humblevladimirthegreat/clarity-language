@@ -76,13 +76,13 @@ describe("previewSpeech", () => {
   });
 
   it("adds yTurn before polar second turn", () => {
-    const plan = previewSpeech("zuzozen vawalal. yael.");
-    assert.deepEqual(plan.spoken, ["zuzozen", "vawalal", "yael"]);
+    const plan = previewSpeech("zuzozen vawalal. yaol.");
+    assert.deepEqual(plan.spoken, ["zuzozen", "vawalal", "yaol"]);
     const tags = boundaryTags(plan);
     assert.ok(tags.includes("period"));
     assert.ok(tags.includes("yTurn"));
     const jIdx = plan.tokens.findIndex((t) => t.kind === "boundary" && t.tag === "yTurn");
-    const polarIdx = plan.tokens.findIndex((t) => t.kind === "word" && t.raw === "yael");
+    const polarIdx = plan.tokens.findIndex((t) => t.kind === "word" && t.raw === "yaol");
     assert.ok(jIdx >= 0 && polarIdx > jIdx);
   });
 
@@ -93,7 +93,7 @@ describe("previewSpeech", () => {
   });
 
   it("keeps period for firm polar turn", () => {
-    const plan = previewSpeech("yael.");
+    const plan = previewSpeech("yaol.");
     assert.ok(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "period"));
     assert.equal(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "softM"), false);
   });

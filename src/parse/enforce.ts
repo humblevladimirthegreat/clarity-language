@@ -695,7 +695,7 @@ function enforceSayHost(unit: HUnit): void {
 function enforceSaySpeaker(result: ParseResult): void {
   for (const utterance of result.utterances) {
     const force = actWord(utterance.left)?.raw;
-    if (force === "yol" || force === "yom") continue;
+    if (force === "yel" || force === "yem") continue;
     for (const { clause } of utterance.bodies) {
       if (!clause.units.some(isSpeakerParticipant)) continue;
       for (const unit of clause.units) {
@@ -958,7 +958,7 @@ function isPluralLabel(word: LexWord): boolean {
 export function enforceResult(result: ParseResult, tables: ClassifyTables): void {
   for (const { left, bodies } of result.utterances) {
     // Command / request (e) and prohibition (u) act words may name a time without a channel.
-    const directive = /^y[eu]/.test(actWord(left)?.raw ?? "");
+    const directive = /^y[ou]/.test(actWord(left)?.raw ?? "");
     for (const body of bodies) {
       // A linker joins the sentence before it to the one it starts, so a clause follows it (sentence-linkers.md#sentence-linkers).
       if (body.linker && body.clause.units.length === 0 && topicEffect(body.linker) === "none") {
@@ -1165,7 +1165,7 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
   if (at > 0 && isAny(tokens[at]!, [HostedB, HostedOdo])) {
     throw new ConstructionError("slotlessHost", `${tokens[at - 1]!.image} ${tokens[at]!.image}`);
   }
-  // An asking tag (`yol yael.`) is a turn of its own: nothing follows its polar word (polar-inventory.md#tags).
+  // An asking tag (`yel yaol.`) is a turn of its own: nothing follows its polar word (polar-inventory.md#tags).
   let polar = at - 1;
   while (polar >= 0 && tokenMatcher(tokens[polar]!, Polar)) polar -= 1;
   if (at > 0 && polar < at - 1 && polar >= 0 && tokenMatcher(tokens[polar]!, Force)) {

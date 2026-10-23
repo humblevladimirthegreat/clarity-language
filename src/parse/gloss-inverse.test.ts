@@ -96,7 +96,7 @@ describe("glossToAgebon", () => {
       "zuzozen vowurel halam blehaval.",
       "zudozol gaham blehaval vezuvol.",
       "zuzozen vowurel halam blolazun.",
-      "yol hewom blar zuzozen vowurel.",
+      "yel hewom blar zuzozen vowurel.",
       "zuzozen vuhohol ol bahehal. zoxual blahehar vezuvol.",
     ]) {
       assert.equal(canonical(glossToAgebon(morphGlossLine(agebon, tables), tables, bare)), canonical(agebon), agebon);

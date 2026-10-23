@@ -213,8 +213,8 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | *explain* | `zuzozen vezuyel bolazun darl zolazun vowurel thahum blarl zudozol varuvel.` | tells Olazun that the walk has the run as its reason |
 | *describe* | `zuzozen hahugem bludozol vezuyel bolazun.` | tells Olazun about the dog |
 | *know* (that) | `zuzozen vanam darl zudozol varuvel.` | knows that the dog runs; to say how *you* know it, use a [channel](/evidentiality#evidentiality) |
-| *know whether* / *know which* | `zuzozen vanam dorl zudozol varuvel.` | knows whether the dog runs; a blank inside asks *which* (`der`) |
-| *find out* | `zuzozen vumewol dorl zudozol varuvel.` | finds whether the dog runs |
+| *know whether* / *know which* | `zuzozen vanam derl zudozol varuvel.` | knows whether the dog runs; a blank inside asks *which* (`der`) |
+| *find out* | `zuzozen vumewol derl zudozol varuvel.` | finds whether the dog runs |
 | *know someone* | `zuzozen havom dolazun vawebol har.` | has met Olazun at some point ([ever](/already-still-yet#ever-never)) |
 | *know how to* | `zuzozen vezuyoxal.` | can sing ([can](/can-and-cant#can)) |
 | *realize* / *notice* | `zuzozen havom vanam darl zudozol varuvel.` | already knows that the dog runs |
@@ -251,8 +251,8 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 | *condition* (*on the condition that*) | `thohom blarl` / `thebom blarl` | if / only if |
 | *factor* (one cause among several) | `thahur blarl` | a share of the fault or cause |
 | *circumstance* / *context* | a dependent after `blarl` (`herem blarl`, `thahum blarl`) | the situation as a clause |
-| *requirement* / *demand* | `hwavel` / `hwavem` / `hwaver` | rule, person, or expectation |
-| *necessary* / *unnecessary* | `hwavel` on the act; *more than needed* is the sake bar `thudatham zol` | required by a rule; past what the need asks |
+| *requirement* / *demand* | `hwavol` / `hwavom` / `hwavor` | rule, person, or expectation |
+| *necessary* / *unnecessary* | `hwavol` on the act; *more than needed* is the sake bar `thudatham zol` | required by a rule; past what the need asks |
 | *motivation* / *motive* | `zuwon vowurel thawothom.` | my reason; someone else's motive takes a [holder](/holder#holder) |
 | *satisfaction* / *pleasure* | `thodotham.` | pleasure, met |
 | *desire* / *wish* | `zuzozen thalem vowurel.` | I want Uzozen to walk; someone else's wish takes a [holder](/holder#holder) |
@@ -510,7 +510,7 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 | *benefit* / *benefits Olazun* | `thawotham blolazun` | the act met Olazun's sake |
 | *advantage* (a lead over someone) | `zol` with the scale | rank against the other |
 | *satisfy* (you) | `thawotham blawan` | the act met your sake |
-| *satisfy* (a requirement) | `hwavel zoel` + scale | tie against the rule: it meets the requirement |
+| *satisfy* (a requirement) | `hwavol zoel` + scale | tie against the rule: it meets the requirement |
 | *suitable* / *appropriate* (for a need) | `guwatham` or `thudatham zoel` | met, or enough for the need |
 | *more important than* | `zol` between the nouns, then `gurethal` | rank on the lasting met sake |
 | *upset* | `wawothumar goyem` | relatedness, unmet, held inside, surging |
@@ -593,7 +593,7 @@ English *deserve* says something is owed without saying why. Name the ground. It
 | English | Agebon | Reading |
 |---------|--------|---------|
 | *deserves* (it would be fair) | `zolazun demebel vewal buzozen halurem thudathem.` | Olazun ought to give Uzozen the medal, fairly |
-| *deserves* / *is entitled to* (a thing, by right) | `zolazun demebel vewal buzozen hwavel.` | the rules require Olazun to give it |
+| *deserves* / *is entitled to* (a thing, by right) | `zolazun demebel vewal buzozen hwavol.` | the rules require Olazun to give it |
 | *is entitled to* (an act) | `zuzozen vowurel hwaval.` | the rules allow Uzozen to walk |
 | *earned* / *merited* (by effort) | `zuzozen varuvel heham blemebel.` | ran in exchange for the medal ([earn](say-people-places.md#give-get)) |
 

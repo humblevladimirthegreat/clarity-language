@@ -150,14 +150,14 @@ On `/w/` right before the adjective, MEMORY covers only *sleepy*; **`thevum`** o
 **Rule:** [Mood on one adjective](universality.md#mood-on-adjective)
 :::
 
-**5.** *Uzozen commands that Olazun cook.* `zuzozen vern zolazun vuguyel.` or `zuzozen varn zolazun vuguyel.`
+**5.** *Uzozen commands that Olazun cook.* `zuzozen vorn zolazun vuguyel.` or `zuzozen varn zolazun vuguyel.`
 
 ::: details Show answer
-`zuzozen vern zolazun vuguyel.`
+`zuzozen vorn zolazun vuguyel.`
 
 z-Uzozen | v-command | z-Olazun | v-cook
 
-**`vern`** takes the next sentence as an instruction; **`varn`** would only state that Olazun cooks.
+**`vorn`** takes the next sentence as an instruction; **`varn`** would only state that Olazun cooks.
 
 **Rule:** [Lexicalized stand-ins in other roles](stand-in-roles.md#stand-in-roles)
 :::

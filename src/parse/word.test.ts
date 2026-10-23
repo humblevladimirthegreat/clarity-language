@@ -506,9 +506,9 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.equal(locked.pos, "d");
     assert.equal(locked.ending, "rl");
     assert.deepEqual(locked.family, { kind: "joinMarker", series: "a" });
-    const open = parseOk("dorl");
+    const open = parseOk("derl");
     assert.equal(open.ending, "rl");
-    assert.deepEqual(open.family, { kind: "joinMarker", series: "o" });
+    assert.deepEqual(open.family, { kind: "joinMarker", series: "e" });
     const gist = parseOk("darm");
     assert.equal(gist.ending, "rm");
   });

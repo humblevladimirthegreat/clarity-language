@@ -49,7 +49,7 @@ The ending grades your evidence: **-l** you could show it, **-m** you could desc
 |-----|---------|---------|-------|
 | [Name the source](/evidentiality#source): a noun in a `bl-` word right after | `zolazun thebam bluzozen velurul.` | *Olazun left, according to Uzozen.* | I |
 | [A device as the source](/evidentiality#source) | `zolazun thugom blogewol vezuvol.` | *Olazun is asleep, going by the camera.* | I |
-| [A source you don't name](/evidentiality#source): `blumon`, then say whether you know who | `zolazun thebam blumon velurul. zuwon vanam dorl zar.` | *Olazun left, according to someone. I know who.* | I |
+| [A source you don't name](/evidentiality#source): `blumon`, then say whether you know who | `zolazun thebam blumon velurul. zuwon vanam derl zar.` | *Olazun left, according to someone. I know who.* | I |
 | [How many hands](/evidentiality#hand-depth): `th#N` after a channel | `zolazun thebam throgel velurul.` | *Olazun left, so they say, third-hand.* | I |
 | [A forecast](/evidentiality#forecast): channel + `blral` | `thubem blral verulal.` | *It will rain, going by the pattern.* | I |
 | [A hunch about later](/evidentiality#forecast) | `zolazun thabor blral velurul.` | *Olazun will leave, a faint hunch.* | I |
@@ -132,7 +132,7 @@ MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [MAY](/knowing#may) | `zolazun thomam velurul dahelan.` | *Olazun may be leaving Ahelan.* | B |
-| [MAY, ask to find out](/knowing#may-hold) | `yol zuzozen vanuvul thomal dolazun.` | *Might Uzozen be punching Olazun? let's find out.* | B |
+| [MAY, ask to find out](/knowing#may-hold) | `yel zuzozen vanuvul thomal dolazun.` | *Might Uzozen be punching Olazun? let's find out.* | B |
 | [RESIDUE](/notional-standing#residue-and-former-climate) | `zolazun haram velurul.` | *Olazun has left and is still gone.* | I |
 | [RESIDUE with a channel](/notional-standing#residue-and-former-climate) | `zolazun thevum haram velurul.` | *I remember Olazun leaving, and Olazun is still gone.* | I |
 | [FORMER after the verb](/notional-standing#residue-and-former-climate) | `zuzozen hual vezuyol helam.` | *Uzozen always used to sing.* | I |

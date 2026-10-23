@@ -157,7 +157,7 @@ function roleStem(word: LexWord): string | undefined {
 
 function isQuestionForce(word: LexWord | undefined): boolean {
   if (!word || word.pos !== "y" || word.family.kind !== "joinMarker") return false;
-  return word.family.series === "o";
+  return word.family.series === "e";
 }
 
 function isJoinGap(word: LexWord): boolean {
@@ -868,8 +868,8 @@ function resolveVisitor(ctx: Ctx): Visitor {
     join(join, site) {
       bindLandmark(ctx, join);
       if (!ctx.question || !isJoinGap(join)) return;
-      // In a `dorl` (question-like) dependent the blank is the dependent's own; in `darl` it is the outer ask's (questions.md#embedded-whether).
-      if (ctx.standIn?.raw[1] === "o") ctx.innerGaps.push(join);
+      // In a `derl` (question-like) dependent the blank is the dependent's own; in `darl` it is the outer ask's (questions.md#embedded-whether).
+      if (ctx.standIn?.raw[1] === "e") ctx.innerGaps.push(join);
       else ctx.gaps.push(join);
     },
     enter(node) {

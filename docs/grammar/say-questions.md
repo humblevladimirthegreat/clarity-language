@@ -8,15 +8,15 @@ Recipes for English question shapes beyond plain *yes/no* and *who / what*. Ever
 
 **Needs:** [Ask](/questions#question) · [tone marks](/tone-marks#tone-marks)
 
-An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yol`**. Put the doubting [tone mark](/tone-marks#tone-marks) **`?!`** on the blank or on the word you doubt.
+An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yel`**. Put the doubting [tone mark](/tone-marks#tone-marks) **`?!`** on the blank or on the word you doubt.
 
-> `yol ?!dar zawan vawebol.`
+> `yel ?!dar zawan vawebol.`
 >
 > y-question | ?!d-wh | z-listener | v-see
 >
 > "You saw WHAT?"
 
-> `yol ?!zuzozen vowurel.`
+> `yel ?!zuzozen vowurel.`
 >
 > y-question | ?!z-Uzozen | v-walk
 >
@@ -26,23 +26,23 @@ An echo question repeats what someone just said, because you doubt it or did not
 
 **Needs:** [Polar stance](/questions#polar-stance) · [tone marks](/tone-marks#tone-marks)
 
-English *Really?* asks the speaker to confirm what they just said. Write the confirm tag as your own turn: **`yol yael.`** (*Is that so?*). Put the doubting mark **`?!`** on it for disbelief.
+English *Really?* asks the speaker to confirm what they just said. Write the confirm tag as your own turn: **`yel yaol.`** (*Is that so?*). Put the doubting mark **`?!`** on it for disbelief.
 
-> `zuzozen vowurel. yol ?!yael.`
+> `zuzozen vowurel. yel ?!yaol.`
 >
 > z-Uzozen | v-walk . y-question | ?!y-yes
 >
 > "Uzozen walks." "Really?!"
 
-**Compare with:** **`yol.`** (*Huh?*) asks the speaker to say it again. **`yaer.`** (*I see*) takes the news in for now without asking anything.
+**Compare with:** **`yel.`** (*Huh?*) asks the speaker to say it again. **`yaor.`** (*I see*) takes the news in for now without asking anything.
 
 ### Reported questions {#reported-questions}
 
 **Needs:** [Fill-ask](/questions#fill-ask-r) · [whether](/questions#embedded-whether)
 
-To report a *who* / *what* question inside a claim (*Uzozen asks who walks*), put the same blank you would use in a direct question inside [**`dorl`**](/questions#embedded-whether). To quote the question as wording, keep `yol` inside a [cite](/span-mention#quote-acts). To ask someone else whether they know such an answer (*Do you know who walks?*), see [a blank inside a dependent](/fill-ask-roles#blank-in-dependent).
+To report a *who* / *what* question inside a claim (*Uzozen asks who walks*), put the same blank you would use in a direct question inside [**`derl`**](/questions#embedded-whether). To quote the question as wording, keep `yel` inside a [cite](/span-mention#quote-acts). To ask someone else whether they know such an answer (*Do you know who walks?*), see [a blank inside a dependent](/fill-ask-roles#blank-in-dependent).
 
-> `zuzozen vezuyel dorl zar vowurel.`
+> `zuzozen vezuyel derl zar vowurel.`
 >
 > z-Uzozen | v-tell | d-whether-clause | z-something | v-walk
 >
@@ -54,15 +54,15 @@ To report a *who* / *what* question inside a claim (*Uzozen asks who walks*), pu
 
 **Needs:** [Three endings](/polar-inventory#polar-endings)
 
-While someone tells you something, English keeps them going with *mm-hm* or *I see*, without agreeing or disagreeing. Reply **`yaer.`** after each point: it takes the point on board for now, without committing to it.
+While someone tells you something, English keeps them going with *mm-hm* or *I see*, without agreeing or disagreeing. Reply **`yaor.`** after each point: it takes the point on board for now, without committing to it.
 
-> `zuzozen vowurel. yaer.`
+> `zuzozen vowurel. yaor.`
 >
 > z-Uzozen | v-walk . y-yes-for-now
 >
 > "Uzozen walked." "Mm-hm."
 
-**Compare with:** **`yom.`** (*Hm?*) asks about what was just said, so the speaker stops to explain. **`yaem.`** (*yeah*) agrees with the claim.
+**Compare with:** **`yem.`** (*Hm?*) asks about what was just said, so the speaker stops to explain. **`yaom.`** (*yeah*) agrees with the claim.
 
 ### *Well…* before an unwelcome answer {#well}
 
@@ -70,13 +70,13 @@ While someone tells you something, English keeps them going with *mm-hm* or *I s
 
 English *well…* warns that the answer is not the plain *yes* the question hoped for. Start the reply with **`yuam`** (*it's more complicated than that*), then give the answer.
 
-> `yol zuzozen vowurel. yuam zuzozen vuhohol.`
+> `yel zuzozen vowurel. yuam zuzozen vuhohol.`
 >
 > y-question | z-Uzozen | v-walk . y-reject-frame-soft | z-Uzozen | v-sit
 >
 > "Did Uzozen walk?" "Well… Uzozen sat."
 
-**Compare with:** **`yuel`** says the claim is false. **`yuam`** says the question does not quite fit, and the body says what happened instead.
+**Compare with:** **`yuol`** says the claim is false. **`yuam`** says the question does not quite fit, and the body says what happened instead.
 
 ### *It sounds like…*, *I hear that you…* {#reflecting}
 
@@ -104,21 +104,21 @@ To say the feeling **makes sense**, put your own stance in the main sentence and
 
 **Needs:** [Polar stance](/questions#polar-stance) · [Sentence linkers](/sentence-linkers#sentence-linkers)
 
-English *admittedly*, *granted* and *that's true, but* concede a point before pushing back. Open with **`yael`** (*true*): before a body it concedes that body, and alone it concedes what was just said. Then push back with **`xegohum`** (*but*).
+English *admittedly*, *granted* and *that's true, but* concede a point before pushing back. Open with **`yaol`** (*true*): before a body it concedes that body, and alone it concedes what was just said. Then push back with **`xegohum`** (*but*).
 
-> `yael zuzozen vowurel. xegohum zolazun vuhohol.`
+> `yaol zuzozen vowurel. xegohum zolazun vuhohol.`
 >
 > y-yes | z-Uzozen | v-walk . x-but | z-Olazun | v-sit
 >
 > "Admittedly, Uzozen walks. But Olazun sits."
 
-> `zuzozen vowurel. yael. xegohum zolazun vuhohol.`
+> `zuzozen vowurel. yaol. xegohum zolazun vuhohol.`
 >
 > z-Uzozen | v-walk . y-yes . x-but | z-Olazun | v-sit
 >
 > "Uzozen walks." "That's true, but Olazun sits."
 
-**Compare with:** *even so* after the concession is *despite that*, **`hezom blarth`** ([pointing back](/sentence-linkers#stand-in-back)). **`yaem`** (*I think so*) agrees only softly.
+**Compare with:** *even so* after the concession is *despite that*, **`hezom blarth`** ([pointing back](/sentence-linkers#stand-in-back)). **`yaom`** (*I think so*) agrees only softly.
 
 ## Exclamations and side remarks {#reactions}
 
@@ -163,7 +163,7 @@ English *by the way* adds a side remark, then goes back to the main point. Put a
 
 Under question, the rest of the single-item and standalone join map is confirm / offer (and fill-ask **-r**). On a list of two or more (no **-r**): **-l** picks from that closed menu; **-m** allows another name (and for **o**, *or none*); **u** is *none of* the listed; **ua** / **uo** is the complement of the listed; **ue** reverse-ranks among the listed. Join **-n** here is stock/usual.
 
-> `yol zuzozen zol.`
+> `yel zuzozen zol.`
 >
 > y-question | [z-Uzozen | z-rank/more]
 >
@@ -251,24 +251,24 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 **Needs:** [Ask](/questions#question) · [Reported questions](#reported-questions) · [Stand-in vowels](/sentence-linkers#stand-in) · [Firm and soft](/firm-soft#speech-act) · [Stacking two act words](/speech-acts#stacked-acts) · [Quiz](/polar-inventory#quiz) · [Conversation length](/compound-families#conversation-length) · [Call someone](/speech-moves#vocative)
 
-English *ask* is four jobs. You can put a question to someone, ask them for something, ask them to do something, or report that a question was asked. A question is the act word **`yol`**. A request is **`yem`**. A reported question hangs on the telling ([reported questions](#reported-questions)). *Ask* or *tell someone to do* something is a telling with the to-clause stand-in **`derl`**, and the person told is plain `/b/`; *not to* is **`durl`**. English picks *ask* or *tell* for politeness, which Agebon carries on the act word, not the verb. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
+English *ask* is four jobs. You can put a question to someone, ask them for something, ask them to do something, or report that a question was asked. A question is the act word **`yel`**. A request is **`yom`**. A reported question hangs on the telling ([reported questions](#reported-questions)). *Ask* or *tell someone to do* something is a telling with the to-clause stand-in **`dorl`**, and the person told is plain `/b/`; *not to* is **`durl`**. English picks *ask* or *tell* for politeness, which Agebon carries on the act word, not the verb. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
 
 | English | Agebon | Reading |
 |---------|--------|---------|
-| *ask* (a question) | `yol zuzozen vowurel.` | question |
-| *ask* (for something, *could you*) | `yem vowurel zawan.` | request |
-| *could you…?* (a request phrased as a question) | `yem yol vowurel zawan.` | soft request that sounds like a question |
-| *would you maybe…?* (not really optional) | `yel yom vowurel zawan.` | command that sounds like a gentle ask |
-| *ask* (a question you know the answer to, as a test) | `yol yal zar vowurel.` | quiz |
-| *ask* (report) | `zuzozen vezuyel dorl zar vowurel.` | telling + whether-clause |
-| *ask* / *tell someone to* | `zuzozen vezuyel bolazun derl vuhohol.` | telling + to-clause |
+| *ask* (a question) | `yel zuzozen vowurel.` | question |
+| *ask* (for something, *could you*) | `yom vowurel zawan.` | request |
+| *could you…?* (a request phrased as a question) | `yom yel vowurel zawan.` | soft request that sounds like a question |
+| *would you maybe…?* (not really optional) | `yol yem vowurel zawan.` | command that sounds like a gentle ask |
+| *ask* (a question you know the answer to, as a test) | `yel yal zar vowurel.` | quiz |
+| *ask* (report) | `zuzozen vezuyel derl zar vowurel.` | telling + whether-clause |
+| *ask* / *tell someone to* | `zuzozen vezuyel bolazun dorl vuhohol.` | telling + to-clause |
 | *ask* / *tell someone not to* | `zuzozen vezuyel bolazun durl varuvel.` | telling + lest-clause |
-| *please ask her to* | `yem vezuyel bolazun zawan derl vuhohol.` | request: tell Olazun to sit |
+| *please ask her to* | `yom vezuyel bolazun zawan dorl vuhohol.` | request: tell Olazun to sit |
 | *ask* (one question, as a bid for time) | `olazuxon.` | one slot |
-| *interview* | `yolazun.` then a run of `yol` questions | call, then ask |
+| *interview* | `yolazun.` then a run of `yel` questions | call, then ask |
 | *conversation* / *chat* / *dialog* | `zezuyem` | *discourse* |
 
-> `yem vezuyel bolazun zawan derl vuhohol.`
+> `yom vezuyel bolazun zawan dorl vuhohol.`
 >
 > y-request | v-tell | b-Olazun | z-listener | d-to-clause | v-sit
 >
@@ -282,10 +282,10 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 
 | English | Agebon | Reading |
 |---------|--------|---------|
-| *offer* (a thing) | `yom` + a giving | soft question: *would you like…?* |
-| *suggest* / *propose* (a joint act) | `yem vowurel zayan.` | soft request with *we* |
-| *…, okay?* / *…, deal?* (after a suggestion) | `yol yaol.` | tag: asks them to take it up |
-| *…, or would you rather not?* | `yol yuol.` | tag: offers them the refusal |
+| *offer* (a thing) | `yem` + a giving | soft question: *would you like…?* |
+| *suggest* / *propose* (a joint act) | `yom vowurel zayan.` | soft request with *we* |
+| *…, okay?* / *…, deal?* (after a suggestion) | `yel yael.` | tag: asks them to take it up |
+| *…, or would you rather not?* | `yel yuel.` | tag: offers them the refusal |
 | *suggest* (a view) | `yam` | soft statement: *for what it's worth* |
 | *recommend* / *advise* (unasked) | `thawothem` | prescription, offered |
 | *recommend* (you asked for it) | `thawothel` | prescription, invited |
@@ -293,7 +293,7 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 | *invite* / *welcome* (someone) | `vunodum` | *hospitality* |
 | *welcome* (you may) | `hwavam` | permission granted |
 
-> `yem vowurel zayan.`
+> `yom vowurel zayan.`
 >
 > y-request | v-walk | z-interlocutors
 >
@@ -319,9 +319,9 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 |---------|--------|---------|
 | *hello* / *hi* | `SELFn.` | your own name, said with a period |
 | *sir* / *madam* | `yolazun.` | call them by name |
-| *yeah* / *yep* | `yaem.` / `yael.` | yes, soft / firm |
-| *nope* / *nah* | `yuel.` / `yuem.` | no, firm / soft |
-| *yeah, sure* | `yaol.` | take up the offer |
+| *yeah* / *yep* | `yaom.` / `yaol.` | yes, soft / firm |
+| *nope* / *nah* | `yuol.` / `yuom.` | no, firm / soft |
+| *yeah, sure* | `yael.` | take up the offer |
 | *quote* (the exact words) | `d[zolazun vezuyel]` | cite |
 | *quote* (the gist) | `d~[zolazun vezuyel]` | paraphrase cite |
 | *mention* (a word) | `glegel z[udozo]` | mention |
@@ -357,7 +357,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 **1.** *Is Uzozen the only priority?*
 
 ::: details Show answer
-`yol zuzozen zol.`
+`yel zuzozen zol.`
 
 y-question | [z-Uzozen | z-rank/more]
 :::
@@ -365,7 +365,7 @@ y-question | [z-Uzozen | z-rank/more]
 **2.** *Prefer Olazun?* / *Olazun first?* (as an offer)
 
 ::: details Show answer
-`yol zolazun zom.`
+`yel zolazun zom.`
 
 y-question | [z-Olazun | z-rank/more.open]
 :::
@@ -373,7 +373,7 @@ y-question | [z-Olazun | z-rank/more.open]
 **3.** *Has to be Ahelan?*
 
 ::: details Show answer
-`yol zahelan zel.`
+`yel zahelan zel.`
 
 y-question | [z-Ahelan | z-or-exactly-one]
 :::
@@ -381,7 +381,7 @@ y-question | [z-Ahelan | z-or-exactly-one]
 **4.** *Tie?* (no names given)
 
 ::: details Show answer
-`yol zoel.`
+`yel zoel.`
 
 y-question | z-equal-rank
 :::
@@ -389,14 +389,14 @@ y-question | z-equal-rank
 **5.** *Is the trophy enough?*
 
 ::: details Show answer
-`yol zodoral zael.`
+`yel zodoral zael.`
 
 y-question | [z-trophy | z-and/or]
 :::
 
 #### Agebon → English {#questions-joins-agebon-to-english}
 
-**1.** `yael.` vs `yaol.`
+**1.** `yaol.` vs `yael.`
 
 ::: details Show answer
 
@@ -407,7 +407,7 @@ y-yes . y-sure
 *Sure.* / *I’ll take that.* (taking up the offer)
 :::
 
-**2.** `yuel.` vs `yuol.`
+**2.** `yuol.` vs `yuel.`
 
 ::: details Show answer
 
@@ -418,7 +418,7 @@ y-no . y-refuse-option
 *Not that.* (turning down this option)
 :::
 
-**3.** `yol zeboral zual.`
+**3.** `yel zeboral zual.`
 
 ::: details Show answer
 
@@ -427,7 +427,7 @@ y-question | [z-bell | z-everything-but]
 *Everything but the bell?*
 :::
 
-**4.** `yol zaol.`
+**4.** `yel zaol.`
 
 ::: details Show answer
 
@@ -436,7 +436,7 @@ y-question | z-in-order
 *Any order?* / *In no particular order?*
 :::
 
-**5.** `yol zolazun zahelan zol.`
+**5.** `yel zolazun zahelan zol.`
 
 ::: details Show answer
 

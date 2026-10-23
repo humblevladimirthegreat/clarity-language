@@ -30,8 +30,8 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("parses polar-only turn yael.", () => {
-    const result = parseSentenceTokens(tokens("yael."));
-    assert.equal(result.utterances[0]!.left.polars[0]?.raw, "yael");
+    const result = parseSentenceTokens(tokens("yaol."));
+    assert.equal(result.utterances[0]!.left.polars[0]?.raw, "yaol");
     assert.equal(result.utterances[0]!.bodies.length, 0);
   });
 
@@ -44,16 +44,16 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("starts a new turn after a period, not a stack", () => {
-    const result = parseSentenceTokens(tokens("yol. yol vazawdzorzal."));
+    const result = parseSentenceTokens(tokens("yel. yel vazawdzorzal."));
     assert.equal(result.utterances.length, 2);
     assert.equal(result.utterances[0]!.left.leadForce, undefined);
   });
 
   it("continues a turn with a plain sentence, and gives each body the period after its own sentence", () => {
-    const result = parseSentenceTokens(tokens("yol. zuzozen vowurel"));
+    const result = parseSentenceTokens(tokens("yel. zuzozen vowurel"));
     assert.equal(result.utterances.length, 1);
     assert.equal(result.utterances[0]!.bodies[0]!.punct, undefined);
-    assert.equal(parseSentenceTokens(tokens("yol. zuzozen vowurel.")).utterances[0]!.bodies[0]!.punct, "period");
+    assert.equal(parseSentenceTokens(tokens("yel. zuzozen vowurel.")).utterances[0]!.bodies[0]!.punct, "period");
   });
 
   it("reads a /w/ + hook after a period as discourse glue, as at the start (ending-grids.md#hook-w)", () => {
@@ -64,14 +64,14 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("parses two stacked act words, outer first (speech-acts.md#stacked-acts)", () => {
-    const left = parseSentenceTokens(tokens("yal yol zar vegemal.")).utterances[0]!.left;
+    const left = parseSentenceTokens(tokens("yal yel zar vegemal.")).utterances[0]!.left;
     assert.equal(left.leadForce?.raw, "yal");
-    assert.equal(left.force?.raw, "yol");
+    assert.equal(left.force?.raw, "yel");
     for (const [text, outer, inner] of [
-      ["yam yom zuzozen vowurel.", "yam", "yom"],
-      ["yel yol vanuvul dobogal zawan.", "yel", "yol"],
-      ["yol yal zar vanuvul dobogal.", "yol", "yal"],
-      ["yel yem vowurel.", "yel", "yem"],
+      ["yam yem zuzozen vowurel.", "yam", "yem"],
+      ["yol yel vanuvul dobogal zawan.", "yol", "yel"],
+      ["yel yal zar vanuvul dobogal.", "yel", "yal"],
+      ["yol yom vowurel.", "yol", "yom"],
       ["yal yal zuzozen vowurel.", "yal", "yal"],
     ] as const) {
       const stacked = parseSentenceTokens(tokens(text)).utterances[0]!.left;
@@ -152,14 +152,14 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("reads a signed measure on a time pole with no channel", () => {
-    const units = parseSentenceTokens(tokens("yel zawan vuhamum harum bluzurem grabal.")).utterances[0]!.bodies[0]!.clause.units;
+    const units = parseSentenceTokens(tokens("yol zawan vuhamum harum bluzurem grabal.")).utterances[0]!.bodies[0]!.clause.units;
     const pole = units.at(-1)!;
     assert.equal(pole.kind === "h" ? pole.unit.word.raw : undefined, "harum");
     assert.equal(pole.kind === "h" ? pole.unit.hosted?.amount?.raw : undefined, "grabal");
   });
 
   it("reads a command with only a /ɡ/ body", () => {
-    const units = parseSentenceTokens(tokens("yel gayulem.")).utterances[0]!.bodies[0]!.clause.units;
+    const units = parseSentenceTokens(tokens("yol gayulem.")).utterances[0]!.bodies[0]!.clause.units;
     assert.deepEqual(units.map((u) => u.kind), ["predicate"]);
   });
 
@@ -170,7 +170,7 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("parses a standalone stance join with no /th/ words before it", () => {
-    const units = parseSentenceTokens(tokens("yol zuzozen vawalal thar.")).utterances[0]!.bodies[0]!.clause.units;
+    const units = parseSentenceTokens(tokens("yel zuzozen vawalal thar.")).utterances[0]!.bodies[0]!.clause.units;
     const raws = units.flatMap((u) => (u.kind === "h" ? [u.unit.word.raw] : []));
     assert.deepEqual(raws, ["thar"]);
   });

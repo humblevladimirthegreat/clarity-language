@@ -77,7 +77,7 @@ In the table, *reason* means any grounds a stance word can give: a cause, a sour
 
 Outside a question, only the single-vowel **-r** cells are words. Under a question, a standalone **-r** stance join is a [fill-ask](/questions#fill-ask-r) for the grounds. Every vowel takes **-r** there.
 
-> `yol thar zuzozen vowurel.`
+> `yel thar zuzozen vowurel.`
 >
 > y-question | th-why | z-Uzozen | v-walk
 >
@@ -274,7 +274,7 @@ z-Ahelan | v-run | th-because | th-not | bl-that-clause | z-Olazun | v-punch
 *Ahelan runs, but not because Olazun punches.*
 :::
 
-**5.** `yol thar zuzozen varuvel.`
+**5.** `yel thar zuzozen varuvel.`
 
 ::: details Show answer
 y-question | th-why | z-Uzozen | v-run

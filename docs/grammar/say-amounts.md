@@ -229,7 +229,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 | *carefully* | `hayulem` |
 | *gently* | `hegemam` |
 | *properly* / *correctly* | `hogugol` |
-| *properly* (*up to standard*) | the doer, then `hwavel zoel hogugol` (as correctly as the rules require) |
+| *properly* (*up to standard*) | the doer, then `hwavol zoel hogugol` (as correctly as the rules require) |
 | *precisely* / *accurately* | `hubugom` |
 | *neatly* / *in an orderly way* | `henodam` |
 | *seriously* | `hozedom` |
@@ -263,9 +263,9 @@ The easy / hard pair on a quality ranks effort against a bar ([vague amounts](/v
 >
 > "The book is hard for Uzozen to write."
 
-*Properly* in the sense of *up to standard* names the standard as a bar ([every bar](/stance-bars#stance-bars)): REQUIRE **`hwavel`** is the rule, and a tie meets it. Use **`hwaver`** for what is customary.
+*Properly* in the sense of *up to standard* names the standard as a bar ([every bar](/stance-bars#stance-bars)): REQUIRE **`hwavol`** is the rule, and a tie meets it. Use **`hwavor`** for what is customary.
 
-> `zuzozen hwavel zoel hogugol varayel.`
+> `zuzozen hwavol zoel hogugol varayel.`
 >
 > [z-Uzozen | h-episode-event-REQUIRE-rule | z-equal-rank | h-correct] | v-write
 >
@@ -490,7 +490,7 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bezerem g
 
 English *until tomorrow* (also *till tomorrow*), *by tomorrow*, and *before next week* count from today. A command or a plan has no channel to count from, so the time pole takes the count itself: a signed measure in its `/b/` runs from now.
 
-> `yel vuhamum zawan harum bluzurem grabal.`
+> `yol vuhamum zawan harum bluzurem grabal.`
 >
 > y-command | v-confidentiality | z-listener | [h-until | [bl-day | g-one]]
 >

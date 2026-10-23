@@ -74,7 +74,7 @@ A vowel's pitch is an interval above your [home note](/phonology#vowel-pitch), n
 
 The piano keys are the [finger code](finger-code.md#piano)'s vowel keys, with D♯3 as the home note. Match the intervals, not the notes. The four pitches belong to one pentatonic scale, so any two sound well together, and a line said on its vowel pitches sounds like music. The opposite pair `a` and `u` is a fifth apart. `u` and `o`, the two rounded vowels and the closest pair by ear, are four semitones apart. The two-semitone steps (`o` to `e`, `e` to `u`) sit between vowels that already differ in lip or tongue position.
 
-Pitch is heard against your own range, so it helps most inside a sentence, and inside a word with two vowels, which carries its own rise or fall: `yael` rises and `yuel` falls. A voice may drift lower over a long sentence; that carries nothing, as long as neighboring vowels keep their order. A whisper has no pitch, so the vowel's sound alone carries it. The [syllabic `l`](/phonotactics#syllabic-l) has a fixed pitch of +4 semitones, between `o` and `e`, and never copies a neighbor.
+Pitch is heard against your own range, so it helps most inside a sentence, and inside a word with two vowels, which carries its own rise or fall: `yaol` rises and `yuol` falls. A voice may drift lower over a long sentence; that carries nothing, as long as neighboring vowels keep their order. A whisper has no pitch, so the vowel's sound alone carries it. The [syllabic `l`](/phonotactics#syllabic-l) has a fixed pitch of +4 semitones, between `o` and `e`, and never copies a neighbor.
 
 ### Words never said quietly {#never-quiet}
 

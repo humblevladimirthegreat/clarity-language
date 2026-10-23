@@ -115,7 +115,7 @@ A mark on a span colors all of it:
 >
 > "Uzozen said “Uzozen,” I think." (unsure about just the quoted word)
 
-**Compare with:** **`yol`** asks a question; `?` only sounds unsure. A tone mark shows the feeling.
+**Compare with:** **`yel`** asks a question; `?` only sounds unsure. A tone mark shows the feeling.
 
 - A mark may go on any word, including act words.
 - A mark is a stack of `!`, `?`, `%`, `&`, `;`, each at most twice, in any order. A third copy (`!!!`) is not a mark, and neither are marks in a row with a space between (`! !`).
@@ -194,14 +194,14 @@ z-Uzozen | v-see | ;d-trumpet
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzozen sees the trumpet, I think.* (unsure about the trumpet) `zuzozen vawebol ?deyorel.` or `yom zuzozen deyorel vawebol.`
+**1.** *Uzozen sees the trumpet, I think.* (unsure about the trumpet) `zuzozen vawebol ?deyorel.` or `yem zuzozen deyorel vawebol.`
 
 ::: details Show answer
 `zuzozen vawebol ?deyorel.`
 
 z-Uzozen | v-see | ?d-trumpet
 
-`?` only sounds unsure; **`yom`** makes the whole turn a soft question.
+`?` only sounds unsure; **`yem`** makes the whole turn a soft question.
 :::
 
 #### Fix it {#intermediate-fix-it}

@@ -118,11 +118,11 @@ The anchor can be `uwo` *speaker*, `awa` *listener*, a name, or a role pointer o
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Compass](/viewpoint#viewpoint-laterals) | `yel vowurel howuhel.` | *Walk west.* | I |
-| [Uzozen's left](/viewpoint#viewpoint-laterals) | `yel vowurel howuhethuzozen.` | *Walk left.* (Uzozen's left) | I |
-| [Your left](/viewpoint#viewpoint-laterals) | `yel vowurel zawan howuhethawan.` | *You, walk left.* (your left) | I |
+| [Compass](/viewpoint#viewpoint-laterals) | `yol vowurel howuhel.` | *Walk west.* | I |
+| [Uzozen's left](/viewpoint#viewpoint-laterals) | `yol vowurel howuhethuzozen.` | *Walk left.* (Uzozen's left) | I |
+| [Your left](/viewpoint#viewpoint-laterals) | `yol vowurel zawan howuhethawan.` | *You, walk left.* (your left) | I |
 | [Their left](/viewpoint#viewpoint-laterals) | `zuzozen vowurel. zolazun vuhohol howuhethuzozer.` | *Uzozen walks. Olazun sits on their left.* | I |
-| [Up](/viewpoint#gravity) | `yel vowurel hayuhel.` | *Walk up.* | I |
+| [Up](/viewpoint#gravity) | `yol vowurel hayuhel.` | *Walk up.* | I |
 | [Under](/viewpoint#viewpoint-vs-landmark) | `zudozol vezuvol haduhel bledalel.` | *The dog sleeps under the tree.* | I |
 | [Above](/viewpoint#viewpoint-vs-landmark) | `zubezol vuhohol gayuhel bludozol.` | *A bird sits above the dog.* | I |
 | [Left of a landmark](/viewpoint#viewpoint-vs-landmark) | `zanal gowuhethuzozen bledalel.` | *The book is left of the tree, from Uzozen's view.* | I |
@@ -273,7 +273,7 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [Than I expected](/stance-bars#stance-bars) | `zuzozen thabom zol guzemol.` | *Uzozen is sleepier than I expected.* | A |
 | [Than they used to be](/stance-bars#stance-bars) | `zuzozen helam zol guzemol.` | *Uzozen is sleepier than they used to be.* | A |
 | [As … as possible](/stance-bars#stance-bars) | `zolazun hodaxal zoel hedurem vowurel.` | *Olazun walks as hastily as possible.* | A |
-| [Up to code](/stance-bars#stance-bars) | `zahehal hwavel zoel gobobom.` | *The house is as strong as the rules require.* | A |
+| [Up to code](/stance-bars#stance-bars) | `zahehal hwavol zoel gobobom.` | *The house is as strong as the rules require.* | A |
 | [More than allowed](/stance-bars#stance-bars) | `zududal hwaval zol gral.` | *There is more tea than the rules allow.* | A |
 | [Than hoped](/stance-bars#stance-bars) | `zanal thoguyem zol gagebom.` | *The book is clearer than I hoped.* | A |
 | [Than feared](/stance-bars#stance-bars) | `zanal thewemum zuol gagebom.` | *The book is even less clear than I feared.* | A |
@@ -295,7 +295,7 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [PLAN `thagem`](/stance-bars#stance-bars) | the plan or the schedule | *than planned* / *than scheduled* | A |
 | [WANT `thalel` / `thalem` / `thaler`](/stance-bars#stance-bars) | the level wanted | *than wanted* / *than I wanted* | A |
 | [ABIL `hodaxal`](/stance-bars#stance-bars) | what can be done | *as … as possible* | A |
-| [a requirement `hwavel` / `hwavem` / `hwaver`](/stance-bars#stance-bars) | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* | A |
+| [a requirement `hwavol` / `hwavom` / `hwavor`](/stance-bars#stance-bars) | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* | A |
 | [a permission `hwaval` / `hwavam` / `hwavar`](/stance-bars#stance-bars) | the rule, the grant, or what is tolerated | *over the limit* / *than they allow* | A |
 | [consent `hwadam`](/stance-bars#stance-bars) | the agreed terms | *more than agreed* | A |
 | [speaker attitude `thoguyem`, `thewemum`](/stance-bars#stance-bars) | the case you hoped for or feared | *than hoped* / *than feared* | A |

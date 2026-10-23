@@ -294,7 +294,7 @@ function isExistence(clause: Clause): boolean {
 export function addReadingConstructions(result: ParseResult, out: Set<string>): void {
   for (const utterance of result.utterances) {
     const force = actWord(utterance.left)?.raw;
-    if (utterance.bodies.length === 0 && (force === "yol" || force === "yom")) out.add("reading.bareQuestion");
+    if (utterance.bodies.length === 0 && (force === "yel" || force === "yem")) out.add("reading.bareQuestion");
     for (const body of utterance.bodies) {
       if (isGreeting(body.clause)) out.add("reading.greeting");
       else if (isExistence(body.clause)) out.add("reading.existence");

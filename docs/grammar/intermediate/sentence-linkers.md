@@ -82,13 +82,13 @@ A linker and a topic word do not share a sentence. To change the topic and also 
 
 In a new turn with its own act word, the act word comes first and the linker starts the body:
 
-> `yom xuvewem zawan vowurel.`
+> `yem xuvewem zawan vowurel.`
 >
 > y-soft-question | x-next | z-listener | v-walk
 >
 > "So, do you want to walk?"
 
-> `yol xuvedam zawan vebal.`
+> `yel xuvedam zawan vebal.`
 >
 > y-question | x-by-the-way | z-listener | v-hear
 >
@@ -115,37 +115,37 @@ English *so … that* ties a result to how much of something there is (*so tired
 ### Stand-in vowels (`-rl` / `-rm`) {#stand-in}
 <a id="clause-member"></a>
 
-Beginner used **`darl`** / **`barl`** for *that …* and **`dorl`** for *whether …*. A stand-in's vowel says what kind of content the next sentence is, with the same four vowels as the [act words](/speech-moves#speech-act-beginner): **`a`** a statement, **`o`** a question, **`e`** an instruction, **`u`** something to avoid. So a dependent clause can carry an instruction (*tells Olazun **to sit***) or a warning (*tells Olazun **not to sit***).
+Beginner used **`darl`** / **`barl`** for *that …* and **`derl`** for *whether …*. A stand-in's vowel says what kind of content the next sentence is, with the same four vowels as the [act words](/speech-moves#speech-act-beginner): **`a`** a statement, **`o`** an instruction, **`e`** a question, **`u`** something to avoid. So a dependent clause can carry an instruction (*tells Olazun **to sit***) or a warning (*tells Olazun **not to sit***).
 
 Unlike a `/y/` act word, a stand-in does not itself state, ask, or command: it only lets that kind of content fill a role in the outer sentence. Stand-ins are not joins. The ending says how much the next sentence covers: **`-rl`** means it is the whole content (locked); **`-rm`** leaves it open (the gist, or not the only thing).
 
 <!-- cheat-sheet: linking-clauses -->
 | Stand-in | Content type | **`-rl`** locked | **`-rm`** open |
 |----------|--------------|------------------|----------------|
-| **`a`** hold | statement-like (compare **`yal`**) | `darl` *that …* | `darm` *that …* (gist) |
-| **`o`** pick | question-like (compare **`yol`**) | `dorl` *whether …* | `dorm` *whether …* (open) |
-| **`e`** order | instruction-like (compare **`yel`**) | `derl` *to …* | `derm` *to …* (open) |
-| **`u`** undo | avoidance-like (compare **`yul`**) | `durl` *that not / lest …* | `durm` *lest …* (open) |
+| **`a`** add | statement-like (compare **`yal`**) | `darl` *that …* | `darm` *that …* (gist) |
+| **`o`** rank | instruction-like (compare **`yol`**) | `dorl` *to …* | `dorm` *to …* (open) |
+| **`e`** choice | question-like (compare **`yel`**) | `derl` *whether …* | `derm` *whether …* (open) |
+| **`u`** not | avoidance-like (compare **`yul`**) | `durl` *that not / lest …* | `durm` *lest …* (open) |
 
 You may leave out the dependent clause's `/z/` only when all of these hold:
 
-1. The stand-in is **`derl`** / **`derm`**, or **`durl`** / **`durm`** telling someone *not to*.
+1. The stand-in is **`dorl`** / **`dorm`**, or **`durl`** / **`durm`** telling someone *not to*.
 2. It fills the outer sentence's `/d/` slot.
 3. The outer sentence has one plain `/b/` (the person told).
 
-The missing subject is then that `/b/`. It is never the listener and never the outer `/z/`. In every other case, write the inner `/z/`: after **`darl`** / **`dorl`**, after any pole (**`blarl`** / **`blurl`**), and when the outer sentence has no plain `/b/` (*wants to sit*, *tries to sit*). When the doer is someone other than that `/b/`, write them too, using resume **-r** if the name would repeat.
+The missing subject is then that `/b/`. It is never the listener and never the outer `/z/`. In every other case, write the inner `/z/`: after **`darl`** / **`derl`**, after any pole (**`blarl`** / **`blurl`**), and when the outer sentence has no plain `/b/` (*wants to sit*, *tries to sit*). When the doer is someone other than that `/b/`, write them too, using resume **-r** if the name would repeat.
 
 After a pole, the dependent is **`blarl`** (or **`blarm`** for gist): *because* / *if* / *although* / *so that* all use it. There are two exceptions, both with **`blurl`**: purpose-not **`hovam blurl`** (*so that … not*) and **`thohom blurl`** (*unless*). Stand-ins never take `/x/`; clause *and* is `xal` / `xan`.
 
-> `zuzozen vezuyel bolazun derl vuhohol.`
+> `zuzozen vezuyel bolazun dorl vuhohol.`
 >
 > z-Uzozen | v-tell | b-Olazun | d-to-clause | v-sit
 >
 > "Uzozen tells Olazun to sit."
 
-The person told is plain `/b/`, so **`derl vuhohol`** can leave out its subject: the sitter is Olazun. The outer sentence stays a statement. With no plain `/b/`, write the sitter:
+The person told is plain `/b/`, so **`dorl vuhohol`** can leave out its subject: the sitter is Olazun. The outer sentence stays a statement. With no plain `/b/`, write the sitter:
 
-> `zuzozen valem derl zuzozen vuhohol.`
+> `zuzozen valem dorl zuzozen vuhohol.`
 >
 > z-Uzozen | v-wish | d-to-clause | z-Uzozen | v-sit
 >
@@ -153,7 +153,7 @@ The person told is plain `/b/`, so **`derl vuhohol`** can leave out its subject:
 
 To quote someone's exact words instead, use a [span](/spans).
 
-English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl`**. When it tells someone not to act, the person told (`/b/`) can be the missing subject, as with **`derl`**. When it only keeps an outcome off, with no one told, write the inner `/z/`. The outer sentence stays a statement. *Don't sit!* as the whole move is still a [prohibition](/speech-moves#speech-act-beginner) (**`yul`**), not this stand-in.
+English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl`**. When it tells someone not to act, the person told (`/b/`) can be the missing subject, as with **`dorl`**. When it only keeps an outcome off, with no one told, write the inner `/z/`. The outer sentence stays a statement. *Don't sit!* as the whole move is still a [prohibition](/speech-moves#speech-act-beginner) (**`yul`**), not this stand-in.
 
 > `zuzozen vezuyel bolazun durl vuhohol.`
 >
@@ -177,9 +177,9 @@ English *unless* is *if … not*: keep the *if* pole **`thohom`** and type `/b/`
 >
 > "Uzozen walks unless Olazun sleeps."
 
-The sentence after a stand-in runs to the end of the written sentence, so a [clause join](/joins#clause-joins) inside it stays in the dependent. *Whether Olazun walks or Ahelan runs* is **`dorl`**, then both clauses with **`xel`** between them.
+The sentence after a stand-in runs to the end of the written sentence, so a [clause join](/joins#clause-joins) inside it stays in the dependent. *Whether Olazun walks or Ahelan runs* is **`derl`**, then both clauses with **`xel`** between them.
 
-> `zuzozen vawebol dorl zolazun vowurel xel zahelan varuvel.`
+> `zuzozen vawebol derl zolazun vowurel xel zahelan varuvel.`
 >
 > z-Uzozen | v-see | d-whether-clause | [z-Olazun | v-walk | x-or-exactly-one | z-Ahelan | v-run]
 >
@@ -187,7 +187,7 @@ The sentence after a stand-in runs to the end of the written sentence, so a [cla
 
 To join another clause to the main sentence instead, end the sentence and start the next one with the join.
 
-**Compare with:** *tells that Olazun sits* is **`darl`**. *Tells Olazun to sit* is **`derl`**. *Walks so that Uzozen sits* is **`hovam blarl`**.
+**Compare with:** *tells that Olazun sits* is **`darl`**. *Tells Olazun to sit* is **`dorl`**. *Walks so that Uzozen sits* is **`hovam blarl`**.
 
 ### Pointing back (`-rth`) {#stand-in-back}
 
@@ -199,8 +199,8 @@ The vowel still says what kind of content it is, and the word stands for the mos
 | Stand-in | Points back to | English |
 |----------|----------------|---------|
 | **`darth`** | the last statement | *so* / *that* |
-| **`dorth`** | the last question | *that question* |
-| **`derth`** | the last instruction | *that (instruction)* |
+| **`derth`** | the last question | *that question* |
+| **`dorth`** | the last instruction | *that (instruction)* |
 | **`durth`** | the last *not* / *lest* content | *not* (*I hope not*) |
 
 > `zolazun vuhohol. zuzozen vezuyel darth.`
@@ -245,8 +245,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *however* | `xezom` | 🦓 from *zebra*: two stripes, still one animal |
 | *meanwhile* | `xegorem` | 🕰️ from *clock*: time passing beside the last claim |
 | *next* | `xuvewem` | 🎞️ from *film*: the following frame |
-| *to-clause* | `derl` | **e** ≈ order: an instruction |
-| *to-clause.open* | `derm` | **e** ≈ order: an instruction, and maybe more |
+| *to-clause* | `dorl` | **o** ≈ rank: an instruction |
+| *to-clause.open* | `dorm` | **o** ≈ rank: an instruction, and maybe more |
 | *lest-clause* | `durl` | **u** ≈ undo: something to avoid |
 | *that-same-claim* | `darth` | **-rth** points back at what was said |
 | *before* | `gabam` | 🎒 from *backpack*: packed first |
@@ -286,7 +286,7 @@ z-Uzozen | d-train | v-see . x-however | z-Olazun | v-run
 **2.** *Ahelan tells Olazun to sit, and maybe more.*
 
 ::: details Show answer
-`zahelan vezuyel bolazun derm vuhohol.`
+`zahelan vezuyel bolazun dorm vuhohol.`
 
 z-Ahelan | v-tell | b-Olazun | d-to-clause.open | v-sit
 :::
@@ -357,7 +357,7 @@ z-Uzozen | d-luggage | v-see . x-next | z-Olazun | v-run
 *Uzozen sees the luggage. Next, Olazun runs.*
 :::
 
-**5.** `zolazun vawebol dorl zedavel velurul xel zahelan varuvel.`
+**5.** `zolazun vawebol derl zedavel velurul xel zahelan varuvel.`
 
 ::: details Show answer
 z-Olazun | v-see | d-whether-clause | [z-train | v-departure | x-or-exactly-one | z-Ahelan | v-run]
@@ -375,14 +375,14 @@ z-Uzozen | v-sit | [h-so-that | bl-lest-clause] | z-Olazun | d-luggage | v-see
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzozen tells Olazun not to run.* `zuzozen vezuyel bolazun durl varuvel.` or `zuzozen vezuyel bolazun derl varuvel.`
+**1.** *Uzozen tells Olazun not to run.* `zuzozen vezuyel bolazun durl varuvel.` or `zuzozen vezuyel bolazun dorl varuvel.`
 
 ::: details Show answer
 `zuzozen vezuyel bolazun durl varuvel.`
 
 z-Uzozen | v-tell | b-Olazun | d-lest-clause | v-run
 
-*Not to* is avoidance, vowel **`u`**; **`derl`** tells Olazun *to* run.
+*Not to* is avoidance, vowel **`u`**; **`dorl`** tells Olazun *to* run.
 :::
 
 **2.** *Ahelan runs. Even so, Olazun sits.* (the contrast holds no matter what) `zahelan varuvel. xezol zolazun vuhohol.` or `zahelan varuvel. xezom zolazun vuhohol.`

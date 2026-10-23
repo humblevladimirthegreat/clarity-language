@@ -36,15 +36,15 @@ You already put a kind on `/ɡ/` after the name (*Uzozen is a dog*). The extra c
 
 ### Commands to be ADJ {#command-property}
 
-A command can ask for a state as well as an act. Put the [command word](/speech-moves#speech-act-beginner) **`yel`** before a `/ɡ/` word with no verb: the listener is the unstated subject, and the pair reads *be ADJ!*, as a [verbless statement](/predication#classification-property) does.
+A command can ask for a state as well as an act. Put the [command word](/speech-moves#speech-act-beginner) **`yol`** before a `/ɡ/` word with no verb: the listener is the unstated subject, and the pair reads *be ADJ!*, as a [verbless statement](/predication#classification-property) does.
 
-> `yel gayulem.`
+> `yol gayulem.`
 >
 > y-command | g-caution
 >
 > "Be careful!"
 
-The `/ɡ/` word takes the verb's place in the [usual order](/speech-moves#act-word-order), so it comes first. Name the listener after it to address one person (`yel gayulem zawan`), or use the verb root for the doing (`yel vayulem`, *take care*). **`yul`** turns the same pair into *don’t be ADJ*.
+The `/ɡ/` word takes the verb's place in the [usual order](/speech-moves#act-word-order), so it comes first. Name the listener after it to address one person (`yol gayulem zawan`), or use the verb root for the doing (`yol vayulem`, *take care*). **`yul`** turns the same pair into *don’t be ADJ*.
 
 ### **SAME** endings
 
@@ -96,7 +96,7 @@ z-Uzozen | [g-guard | g-not]
 **2.** *Be quiet!*
 
 ::: details Show answer
-`yel gogowul.`
+`yol gogowul.`
 
 y-command | g-quiet
 :::

@@ -457,7 +457,7 @@ export function isBarStance(word: LexWord, tables: ClassifyTables): boolean {
   if (word.pos !== "th" && !isClauseAdverb(word)) return false;
   const family = word.family;
   // A say word sets a value when it allows or requires (feelings-permission.md#say-words); a no or *their call* sets none.
-  if (family.kind === "say") return family.answer === "a" || family.answer === "e";
+  if (family.kind === "say") return family.answer === "a" || family.answer === "o";
   if (word.reading === "sake") return family.kind === "x" && family.stanceVowel === "a" && !family.horizon;
   if (word.reading === "ability") return true;
   const row =
@@ -483,7 +483,7 @@ export function isFrameStance(word: LexWord, tables: ClassifyTables): boolean {
   if (word.pos !== "th" && !isClauseAdverb(word)) return false;
   const family = word.family;
   // A ban or a requirement can be gone against; a yes lifts a restriction, and *their call* sets none (D-49).
-  if (family.kind === "say") return family.answer === "u" || family.answer === "e";
+  if (family.kind === "say") return family.answer === "u" || family.answer === "o";
   const row =
     family.kind === "x" && family.xFamily === "holder"
       ? tables.overlays.get(overlayKey("th", `${family.leftRoots[0]}${family.grade}`))

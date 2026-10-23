@@ -187,7 +187,7 @@ The sentence drops these. A [note](#note-required) carries one only when it is r
 
 ### Example (same Agebon, sentence and note)
 
-> `yol zawan dududal dugudal del ven.`
+> `yel zawan dududal dugudal del ven.`
 >
 > y-question | z-listener | [d-tea | d-coffee | d-or-exactly-one] | v-choose
 >
@@ -216,7 +216,7 @@ Same English label for `zuwom` and `zuwon` is fine: both are the *speaker* sense
 
 **Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Agebon letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
 
-**Special pronouns** ([pronouns.md](/pronouns)): `zuwon` / `zawan` / `zayan` / `zumon` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. The topic pronoun and the generic pronoun gloss in capitals on `/z/` `/d/` `/b/` and as a holder (`zalon` → `z-TOPIC`, `zeyon` → `z-ONE`, `theyemalon` → `th-CLUES-TOPIC`); on any other slot they are ordinary names. A topic word glosses as its noun (`xuzozen` → `x-Uzozen`, `xuzozer` → `x-←Uzozen`), and `hahugem` as `h-as-for`. **Stand-ins** (`darl` / `dorl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
+**Special pronouns** ([pronouns.md](/pronouns)): `zuwon` / `zawan` / `zayan` / `zumon` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. The topic pronoun and the generic pronoun gloss in capitals on `/z/` `/d/` `/b/` and as a holder (`zalon` → `z-TOPIC`, `zeyon` → `z-ONE`, `theyemalon` → `th-CLUES-TOPIC`); on any other slot they are ordinary names. A topic word glosses as its noun (`xuzozen` → `x-Uzozen`, `xuzozer` → `x-←Uzozen`), and `hahugem` as `h-as-for`. **Stand-ins** (`darl` / `derl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
 
 ### Ordinary lexicon plus packed role English
 <a id="no-lexicon-pos-specials"></a>
@@ -487,8 +487,8 @@ Bake join / hook **job** into the English label (including open vs closed when i
 |---------|-------------|-------------------------|
 | `uzozen.` | `Uzozen` | *Uzozen.* (hello) |
 | `yolazuxen` | `y-Olazun-minutes` | *Olazun — a few minutes.* |
-| `yael` | `y-yes` | *Yes.* |
-| `yol` | `y-question` | *(yes/no or fill-ask)* |
+| `yaol` | `y-yes` | *Yes.* |
+| `yel` | `y-question` | *(yes/no or fill-ask)* |
 | `zuwol` | `z-microphone` | *a microphone* |
 | `zuwon` | `z-speaker` | *I* / *the speaker* |
 | `zawan` | `z-listener` | *you* / *the listener* |
@@ -505,7 +505,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Dialogue turn (morph + loose free)
 
-> `yael zuwon zam zawan zal guzemol.`
+> `yaol zuwon zam zawan zal guzemol.`
 >
 > y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-sleepy]
 >
@@ -525,7 +525,7 @@ No note: *as I remember* already says whose memory it is. Do not render the over
 
 ### Ability + value motive
 
-> `yuel zuwon vowurexel thuwathom.`
+> `yuol zuwon vowurexel thuwathom.`
 >
 > y-no | z-speaker | v-walk-unable-temporary | th-competence-motive-any-term
 >
@@ -541,7 +541,7 @@ No note: *as I remember* already says whose memory it is. Do not render the over
 
 ### Inclusive *we* (interlocutors)
 
-> `yael xahem zayan thager vowurel vul.`
+> `yaol xahem zayan thager vowurel vul.`
 >
 > y-yes | x-therefore | z-interlocutors | th-plan-sketch | [v-walk | v-not]
 >

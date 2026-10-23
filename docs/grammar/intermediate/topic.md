@@ -129,7 +129,7 @@ A return makes no claim by itself, but it does set the topic, so leaving it out 
 
 ### Topic words and dependents {#topic-dependents}
 
-A [dependent](/dependents#dependent-clauses) is the sentence after a stand-in (`darl`, `dorl`, `derl`, `durl`, `barl`), and it belongs to the outer sentence. A topic word cannot sit inside one: a topic change is something you yourself do to the conversation, but the content of a dependent is not something you assert yourself. Change the topic before the outer sentence, or frame one clause with *as for*:
+A [dependent](/dependents#dependent-clauses) is the sentence after a stand-in (`darl`, `derl`, `dorl`, `durl`, `barl`), and it belongs to the outer sentence. A topic word cannot sit inside one: a topic change is something you yourself do to the conversation, but the content of a dependent is not something you assert yourself. Change the topic before the outer sentence, or frame one clause with *as for*:
 
 | Want | Use |
 |------|-----|
@@ -145,7 +145,7 @@ Reading the topic from inside a dependent is fine: `zalon`, tags, and role point
 
 To ask what the talk is about, ask *which topic?*: the fill-ask blank `zar`, then `gahugem` *topic*. The natural answer is a lone `/x/` introduce or return, which sets the topic for both speakers.
 
-> `yol zar gahugem.`
+> `yel zar gahugem.`
 >
 > y-question | [z-wh | g-topic]
 >
@@ -240,7 +240,7 @@ x-Olazun | z-TOPIC | v-write . x-by-the-way | z-Uzozen | d-book | v-see . x-←O
 *Now, about Olazun: Olazun writes. By the way, Uzozen sees a book. Back to Olazun: Olazun tells.*
 :::
 
-**2.** `yol zar gahugem.`
+**2.** `yel zar gahugem.`
 
 ::: details Show answer
 y-question | [z-wh | g-topic]

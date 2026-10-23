@@ -45,7 +45,7 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 |-|------------------|--------------------|----------------------|
 | allowed | `hwaval` | `hwavam` | `hwavar` tolerated |
 | forbidden | `hwavul` | `hwavum` | `hwavur` frowned on |
-| required | `hwavel` | `hwavem` | `hwaver` by custom |
+| required | `hwavol` | `hwavom` | `hwavor` by custom |
 | agreed (the affected person) | `hwadal` in advance | `hwadam` said yes, can take it back | `hwadar` assumed OK |
 
 ## Suffixes on English words {#suffixes}

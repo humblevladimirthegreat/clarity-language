@@ -21,11 +21,11 @@ Say an act word twice among the opening `/y/` words to make the act more insiste
 | Agebon | Use | English |
 |--------|-----|---------|
 | **`yal yal`** | insisted statement | *I'm telling you, …* |
-| **`yol yol`** | pressing question | *I really need to know: …?* |
-| **`yel yel`** | urgent command | *Do it. Now.* |
+| **`yel yel`** | pressing question | *I really need to know: …?* |
+| **`yol yol`** | urgent command | *Do it. Now.* |
 | **`yul yul`** | emphatic prohibition | *Don't. I mean it.* |
 
-Both words take the same ending: **`yem yem`** is an insistent plea (*please, please…*), and **`yur yur`** is *really, hold off for now*. **`yal`** is usually left out, but **`yal yal`** is always written, because the repeat carries the emphasis.
+Both words take the same ending: **`yom yom`** is an insistent plea (*please, please…*), and **`yur yur`** is *really, hold off for now*. **`yal`** is usually left out, but **`yal yal`** is always written, because the repeat carries the emphasis.
 
 Repeat only the opening act word: an act word after the body starts a new turn instead of adding emphasis.
 
@@ -35,7 +35,7 @@ Repeat only the opening act word: an act word after the body starts a new turn i
 
 People often do one act while sounding like another. *Could you pass the salt?* is a request that sounds like a question. *We don't hit in this house* is a prohibition that sounds like a statement. Two different act words say both: the **first** is what you really do, and the **second** is how it sounds. The listener always knows the real act from the first word, and answers that act.
 
-> `yel yol vanuvul dobogal zawan.`
+> `yol yel vanuvul dobogal zawan.`
 >
 > y-command | y-question | v-punch | d-box | z-listener
 >
@@ -43,7 +43,7 @@ People often do one act while sounding like another. *Could you pass the salt?* 
 
 The body takes the **first** word's [usual order](/speech-moves#act-word-order). The second word only says how the turn sounds and never moves the verb. So a prohibition that sounds like a command still keeps its verb late, and a missed **`yul`** never leaves an order to act.
 
-> `yul yel dobogal vanuvul.`
+> `yul yol dobogal vanuvul.`
 >
 > y-prohibition | y-command | d-box | v-punch
 >
@@ -58,13 +58,13 @@ The body takes the **first** word's [usual order](/speech-moves#act-word-order).
 <!-- cheat-sheet: talking -->
 | Agebon | Really does → sounds like | English |
 |--------|---------------------------|---------|
-| **`yel yol`** | command → question | *Could you pass the salt?* |
-| **`yel yal`** | command → statement | *You'll be home by ten.* / *Passengers remain seated.* |
-| **`yel yul`** | command → prohibition | *Don't you dare finish those cookies* (teasing: do) |
+| **`yol yel`** | command → question | *Could you pass the salt?* |
+| **`yol yal`** | command → statement | *You'll be home by ten.* / *Passengers remain seated.* |
+| **`yol yul`** | command → prohibition | *Don't you dare finish those cookies* (teasing: do) |
 | **`yul yal`** | prohibition → statement | *We don't hit in this house.* |
-| **`yul yol`** | prohibition → question | *Must you?* / *Do you really have to shout?* |
-| **`yul yel`** | prohibition → command | *Go ahead, try it.* (sarcastic: don't) |
-| **`yal yel`** | statement → command | *Note that…* / *Mark my words.* |
+| **`yul yel`** | prohibition → question | *Must you?* / *Do you really have to shout?* |
+| **`yul yol`** | prohibition → command | *Go ahead, try it.* (sarcastic: don't) |
+| **`yal yol`** | statement → command | *Note that…* / *Mark my words.* |
 | **`yal yul`** | statement → prohibition | *I won't even mention that he lied.* (said anyway) |
 
 Each word's ending describes its own act. The first ending says how firmly you really mean the act; the second says how it sounds. So a stack can show a soft sound over a firm act, which is the pressure that is hardest to name in English:
@@ -72,15 +72,15 @@ Each word's ending describes its own act. The first ending says how firmly you r
 <!-- cheat-sheet: talking -->
 | Agebon | Use | English |
 |--------|-----|---------|
-| **`yem yol`** | soft request that sounds like a question: they may say no | *Would you mind…?* |
-| **`yel yom`** | firm command that sounds like a gentle ask: they may not say no | a boss's *Would you maybe…?* |
-| **`yel yem`** | command with a *please* that is not optional | *Please do it.* (not a choice) |
-| **`yem yel`** | soft offer that sounds like a command | *Have a seat. Go on, take another.* |
-| **`yer yal`** | rule for now that sounds like a description | *For now, everyone stays inside.* |
+| **`yom yel`** | soft request that sounds like a question: they may say no | *Would you mind…?* |
+| **`yol yem`** | firm command that sounds like a gentle ask: they may not say no | a boss's *Would you maybe…?* |
+| **`yol yom`** | command with a *please* that is not optional | *Please do it.* (not a choice) |
+| **`yom yol`** | soft offer that sounds like a command | *Have a seat. Go on, take another.* |
+| **`yor yal`** | rule for now that sounds like a description | *For now, everyone stays inside.* |
 | **`yum yal`** | soft norm | *We'd rather people didn't…* |
 | **`yul yur`** | firm *no* that sounds like *not yet* | *Let's hold off for now.* (meaning never) |
 
-> `yem yel vuhohol.`
+> `yom yol vuhohol.`
 >
 > y-request | y-command | v-sit
 >
@@ -193,14 +193,14 @@ th-clarity | z-Uzozen | d-page | v-write
 **3.** *Please, please stop.*
 
 ::: details Show answer
-`yem yem vozohul.`
+`yom yom vozohul.`
 
 y-request | y-request | v-stop
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `yom thavewem zolazun vawebol deyorel.`
+**1.** `yem thavewem zolazun vawebol deyorel.`
 
 ::: details Show answer
 y-soft-question | th-revelation | z-Olazun | v-see | d-trumpet
@@ -216,7 +216,7 @@ y-soft-question | th-revelation | z-Olazun | v-see | d-trumpet
 *Truly amazing!*
 :::
 
-**3.** `yul yel vozohul.`
+**3.** `yul yol vozohul.`
 
 ::: details Show answer
 y-prohibition | y-command | v-stop
@@ -226,14 +226,14 @@ y-prohibition | y-command | v-stop
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Go ahead, stop.* (sarcastic) `yul yel vozohul.` or `yel yel vozohul.`
+**1.** *Go ahead, stop.* (sarcastic) `yul yol vozohul.` or `yol yol vozohul.`
 
 ::: details Show answer
-`yul yel vozohul.`
+`yul yol vozohul.`
 
 y-prohibition | y-command | v-stop
 
-Two different act words stack as one sarcastic turn; repeating **`yel`** only insists on the command.
+Two different act words stack as one sarcastic turn; repeating **`yol`** only insists on the command.
 :::
 
 #### Fix it {#intermediate-fix-it}

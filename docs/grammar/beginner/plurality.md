@@ -258,7 +258,7 @@ z-Uzozen | d-knife-x | v-see
 *Uzozen sees some knives.*
 :::
 
-**5.** `yol zawanx vuhohol.`
+**5.** `yel zawanx vuhohol.`
 
 ::: details Show answer
 y-question | z-listener-x | v-sit

@@ -95,7 +95,7 @@ describe("recasts", () => {
     const engine = fresh();
     play(engine, "y-{guard}");
     const door = spell("y-command | v-open | d-door");
-    const slip = door.replace(/^yel v(\w)/, (_, vowel: string) => `yel v${vowel === "e" ? "o" : "e"}`);
+    const slip = door.replace(/^yol v(\w)/, (_, vowel: string) => `yol v${vowel === "e" ? "o" : "e"}`);
     const result = engine.turn(slip);
     const recast = result.lines.find((line) => line.kind === "recast");
     assert.ok(recast, JSON.stringify(result.lines));

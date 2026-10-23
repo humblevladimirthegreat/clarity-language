@@ -257,7 +257,7 @@ z-Ahelan | [d-page | g-SAME] | v-see
 *Ahelan sees the same page.* (the page already mentioned)
 :::
 
-**6.** `yol zolazun gorol blawan.`
+**6.** `yel zolazun gorol blawan.`
 
 ::: details Show answer
 y-question | z-Olazun | [g-SAME | bl-listener]
