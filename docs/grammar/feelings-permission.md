@@ -198,7 +198,7 @@ When the speaker is in the clause, the speaker's own say is their part, not **`v
 
 To **ask** for permission, put the clause under [ask](questions.md#question): `yom zuwon vuhohol hwavam.` (*May I sit?*). The question asks the listener, so the speaker may be in it. Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
 
-**Compare with:** [prescription](prescription.md#sake-force) **`the`** says the act *ought* to serve a named sake, a reason you can check; a say word says only who allows or demands it. A [command](speech-moves.md#speech-act-beginner) **`yel`** is the speaker telling the listener now; **`hwavem`** reports a demand, which may be someone else's.
+**Compare with:** [prescription](ought-for-a-sake.md#sake-force) **`the`** says the act *ought* to serve a named sake, a reason you can check; a say word says only who allows or demands it. A [command](speech-moves.md#speech-act-beginner) **`yel`** is the speaker telling the listener now; **`hwavem`** reports a demand, which may be someone else's.
 
 ### Someone in the act: consent (`z` / `d` / `b`) {#consent}
 

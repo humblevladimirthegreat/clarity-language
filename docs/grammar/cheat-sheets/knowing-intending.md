@@ -148,12 +148,12 @@ Each compares what is true now with a change. Not a tense. **-l** is settled, **
 <!-- cheat-sheet: knowing-intending -->
 | Meaning | **-l** | **-m** | **-r** | Stage |
 |---------|--------|--------|--------|-------|
-| *already* | [`havol`](../notional-standing.md#phasal) *for good* | `havom` | `havor` *for now* | I |
-| *still* | [`hawul`](../notional-standing.md#phasal) *and will keep on* | `hawum` | `hawur` *about to end* | I |
-| *not yet* | [`helel`](../notional-standing.md#phasal) *but it will* | `helem` | `heler` *maybe never* | I |
-| *no longer* | [`huvul`](../notional-standing.md#phasal) *never again* | `huvum` | `huvur` *paused* | I |
+| *already* | [`havol`](../already-still-yet.md#phasal) *for good* | `havom` | `havor` *for now* | I |
+| *still* | [`hawul`](../already-still-yet.md#phasal) *and will keep on* | `hawum` | `hawur` *about to end* | I |
+| *not yet* | [`helel`](../already-still-yet.md#phasal) *but it will* | `helem` | `heler` *maybe never* | I |
+| *no longer* | [`huvul`](../already-still-yet.md#phasal) *never again* | `huvum` | `huvur` *paused* | I |
 
-For *has ever*, use `havom` with `har`; *has never* is `hal` ([ever / never](../notional-standing.md#ever-never)).
+For *has ever*, use `havom` with `har`; *has never* is `hal` ([ever / never](../already-still-yet.md#ever-never)).
 
 ## Intending {#intending}
 
@@ -228,7 +228,7 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | `thebam` *so they say* ([someone said it](../evidentiality.md#evidentiality)) | | `theyum` *imagine* ([a scene you make up](../notional-standing.md#notional-as-if-framing)) |
 | `theyel` *strong clues* ([how good your evidence is](../evidentiality.md#evidence-strength)) | | `thregel` *third-hand* ([how many hands](../evidentiality.md#hand-depth)) |
 | `thubem blral` *will, by the pattern* ([a forecast](../evidentiality.md#forecast)) | | `thagem` *I plan to* ([an intention](../intention.md#plan-predict)) |
-| `haram` *still in effect* ([the outcome stays](../notional-standing.md#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](../notional-standing.md#phasal)) |
+| `haram` *still in effect* ([the outcome stays](../notional-standing.md#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](../already-still-yet.md#phasal)) |
 | `thogom` *I've decided* ([how open the choice is, no time](../ability.md#decision)) | | `thagem` *I plan* ([how worked out, still ahead](../intention.md#plan-predict)) |
 | `howam` *tries* ([acts, outcome open](../ability.md#try)) | | `vezuyoxal` *can sing* ([a claim about ability](../can-and-cant.md#can)) |
 | `thalem` *I want* ([your own wanting](../ability.md#want)) | | `thebamuzozen thagem` *I hear Uzozen plans* ([someone else's plan](../evidentiality.md#holder)) |

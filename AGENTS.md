@@ -35,11 +35,11 @@ Each row names what the file owns. The file is the authority; this table is only
 | `comparatives.md` | Comparatives, superlatives, equatives; manner scale (`comparative-arity.md`); stance bars (`stance-bars.md`). |
 | `predication.md` | Classification, identity; how far a label reaches (`label-seams.md`); packaging (`label-scope.md`). |
 | `causation.md` | Causation / condition poles; iff, fault, CAUSE (`iff-fault.md`). |
-| `sakes.md` | Sakes, met / unmet; prescription, motive, attachment, whose stake, contrary, sake bars (`prescription.md`). |
+| `sakes.md` | Sakes, met / unmet; ought for a sake, motive, attachment, whose stake, contrary, sake bars (`prescription.md`). |
 | `feelings-permission.md` | Feelings, thanks and sorry, speaker attitude, permission, consent. |
 | `intention.md` | Plan; decision, try / fallback (`ability.md`); ability / incapability (`can-and-cant.md`). |
 | `knowing.md` | MAY; live / memory (`live-and-memory.md`); evidentiality, holder (`evidentiality.md`); universality, dated channel (`universality.md`). |
-| `notional-standing.md` | Notional and standing: mirative, residue / former, phasal, notional, channel bars. |
+| `notional-standing.md` | Notional and standing: mirative, residue / former, already / still / not yet / no longer, notional, channel bars. |
 | `roles.md` | Role compounds; viewpoint laterals, landmark facing, gravity (`viewpoint.md`). |
 | `compounds.md` | Mid-word `x`, dictionary compounds; compound families, conversation length (`compound-families.md`); root tails, tail suffixes (`root-tails.md`). |
 | `spans.md` | Span fences, asides; mention, scope islands (`span-mention.md`); editorial close, nesting (`span-nesting.md`). |

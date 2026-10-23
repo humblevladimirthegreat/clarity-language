@@ -9,7 +9,7 @@ band: advanced
 
 The `/th/` words MAY and the channels, [NOTIONAL](notional-standing.md#notional), and the `/h/` words [RESIDUE and FORMER](notional-standing.md#residue) cover the whole sentence. When one applies only to a single `/ɡ/` adjective, put the same word on `/w/` right before that adjective instead.
 
-Only words about **how you know** or **how things stand** move to `/w/` this way: the ones above, [CAUSE](iff-fault.md#cause), the [*already* / *still* words](notional-standing.md#phasal), and [*can* with `oda`](can-and-cant.md#ability-fallback). A plan, decision, try, or want stays on its own letter (`/th/`, or `/h/` for a try): on `/w/` the same spelling is the ordinary word of its root (`wagem` *as planned*, `wogom` *decidedly*, `wowam` *tentatively*, `walem` *wishfully*).
+Only words about **how you know** or **how things stand** move to `/w/` this way: the ones above, [CAUSE](iff-fault.md#cause), the [*already* / *still* words](already-still-yet.md#phasal), and [*can* with `oda`](can-and-cant.md#ability-fallback). A plan, decision, try, or want stays on its own letter (`/th/`, or `/h/` for a try): on `/w/` the same spelling is the ordinary word of its root (`wagem` *as planned*, `wogom` *decidedly*, `wowam` *tentatively*, `walem` *wishfully*).
 
 > `zuzozen danobal wevum gerulel vawebol.`
 >

@@ -56,6 +56,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *companionship* | `gumayam` |
 | *relatedness* | `awol` |
 | *listener* | `awan` |
+| *walk* | `vowurel` |
+| *departure* | `velurul` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
@@ -369,6 +371,42 @@ z-Olazun | g-angry-th-episode
 **`tha`** is this episode; **`thu`** would make Olazun an angry type.
 
 **Rule:** [How far a label reaches](label-seams.md#label-scope)
+:::
+
+**13.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyel thobather blwazer.` or `zahelan vuguyel thobathem blwazer.`
+
+::: details Show answer
+`zahelan vuguyel thobather blwazer.`
+
+z-Ahelan | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
+
+**-r** is a trial; **`thobathem`** would be unasked advice, not a try.
+
+**Rule:** [Ought for a sake](ought-for-a-sake.md#sake-force)
+:::
+
+**14.** *Uzozen is still walking.* `zuzozen hawum vowurel.` or `zuzozen hawur vowurel.`
+
+::: details Show answer
+`zuzozen hawum vowurel.`
+
+z-Uzozen | h-still | v-walk
+
+**-m** says it goes on and could change; **`hawur`** would say it is about to end.
+
+**Rule:** [Already, still, not yet, no longer](already-still-yet.md#phasal)
+:::
+
+**15.** *Uzozen left because Olazun spoke, and Olazun was wrong to.* `zuzozen velurul thahul blarl zolazun vezuyel.` or `zuzozen velurul thahum blarl zolazun vezuyel.`
+
+::: details Show answer
+`zuzozen velurul thahul blarl zolazun vezuyel.`
+
+z-Uzozen | v-departure | [th-because.fault | bl-that-clause] | z-Olazun | v-tell
+
+**-l** says the speaking broke a rule; **-m** is a plain cause, with no fault claimed.
+
+**Rule:** [Fault](fault.md#fault)
 :::
 
 #### Fix it {#beginner-fix-it}

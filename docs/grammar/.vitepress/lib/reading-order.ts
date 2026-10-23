@@ -40,6 +40,9 @@ export const beginnerLessons = [
   { text: "Live and memory", link: "/live-and-memory" },
   { text: "How far a label reaches", link: "/label-seams" },
   { text: "Thanks and sorry", link: "/thanks-and-sorry" },
+  { text: "Ought for a sake", link: "/ought-for-a-sake" },
+  { text: "Already, still, not yet, no longer", link: "/already-still-yet" },
+  { text: "Fault", link: "/fault" },
 ]
 
 /** Intermediate sittings, in the same topic order as the Beginner group. */

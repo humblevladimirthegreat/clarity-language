@@ -42,7 +42,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *knife* | `anewul` |
 | *slow* | `uzezam` |
 | *wind* | `ewulel` |
-| *physical* | `obal` |
 | *sit* | `vuhohol` |
 | *west* | `owuhel` |
 | *pay* | `varal` |
@@ -52,6 +51,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sing* | `vezuyol` |
 | *NOTIONAL* | `theyum` |
 | *topic* | `alon` |
+| *kneel* | `vonuvol` |
+| *relatedness* | `awol` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
@@ -295,16 +296,16 @@ z-Uzozen | through | z-Ahelan | v-sit
 **Rule:** [Ranges](ending-grids.md#ranges)
 :::
 
-**7.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyel thobather blwazer.` or `zahelan vuguyel thobathor blwazer.`
+**7.** *Ahelan kneels, and to me it is about feeling connected.* `zahelan vonuvol thawothom.` or `zahelan vonuvol thawothem.`
 
 ::: details Show answer
-`zahelan vuguyel thobather blwazer.`
+`zahelan vonuvol thawothom.`
 
-z-Ahelan | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
+z-Ahelan | v-kneel | th-relatedness-motive-any-term
 
-**`the`** is the *ought*, and **-r** makes it a move worth trying; `thobathor` would be a motive, not advice: Ahelan cooks, serving their health right away.
+**`tho`** gives your reason; **`the`** would say Ahelan *ought* to kneel.
 
-**Rule:** [Prescription](prescription.md#sake-force)
+**Rule:** [Motive](prescription.md#sake-preference)
 :::
 
 **8.** *It looks like Olazun fought.* (strong clues) `zolazun theyel vavuvul.` or `zolazun theyem vavuvul.`

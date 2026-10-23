@@ -229,9 +229,11 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `comparatives.md` | Advanced | a talent contest |
 | `causation.md` | Beginner | a greenhouse |
 | `iff-fault.md` | Intermediate | a dam control room |
+| `fault.md` | Beginner | a bike rack |
 | `say-reasons.md` | Reasons and conditions | a chemistry lab |
 | `sakes.md` | Beginner | a shelter tent |
 | `prescription.md` | Intermediate | a monastery |
+| `ought-for-a-sake.md` | Beginner | a yoga studio |
 | `sakes.md` | Advanced | — |
 | `feelings-permission.md` | Intermediate | a support group |
 | `thanks-and-sorry.md` | Beginner | a gift table |
@@ -240,6 +242,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `knowing.md` | Advanced | a film archive |
 | `live-and-memory.md` | Beginner | a lookout |
 | `notional-standing.md` | Intermediate | a magic show |
+| `already-still-yet.md` | Beginner | a train platform |
 | `roles.md` | Beginner | a construction site |
 | `viewpoint.md` | Intermediate | a harbor |
 | `compounds.md` | Beginner | a hardware store |
@@ -337,6 +340,9 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 16 | `live-and-memory.md` | **exists** | LIVE **`thugom`** / MEMORY **`thevum`** channel pick | Recycle = all earlier Beginner. Not strength, source, forecast, holder, or the other channels |
 | 16 | `label-seams.md` | **exists** | Label scope seams (`tha` / `the` / `tho` / `thu` and stacks) | Recycle = all earlier Beginner. Not packaging, commands to be ADJ, or SAME endings |
 | 16 | `thanks-and-sorry.md` | **exists** | Thanks (lone `/th/` met) and sorry (`thu` + `bl-` whose) | Recycle = all earlier Beginner. Not emotion compose, speaker attitude, or say words |
+| 16 | `ought-for-a-sake.md` | **exists** | Prescription **`the`** + invited / offered / trial endings; `/b/` whose stake on advice | Recycle = all earlier Beginner. Not motive **`tho`**, attachment sites, contrary, or sake bars |
+| 16 | `already-still-yet.md` | **exists** | already / still / not yet / no longer (`havom` / `hawum` / `helem` / `huvum`); ever / never with **`har`** / **`hal`** | Recycle = all earlier Beginner. Not MIRATIVE / RESIDUE / FORMER / NOTIONAL |
+| 16 | `fault.md` | **exists** | Fault endings on *because* (`thahul` / `thahum` / `thahur`); act in `bl-`, not the person | Recycle = all earlier Beginner. Not iff, only-because, following-sentence **`blarl`** inventory, or CAUSE |
 
 ### Intermediate then Advanced
 <a id="allowlist-later"></a>
@@ -383,9 +389,9 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `digitless-exponents.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp / special stance **as used in the stage’s teach examples** — not unassigned cells | Recycle sibling Intermediate |
 | 15 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; manner `/h/` immediately after the join; PLAN bar right before the join | |
 | 15 | `comparatives.md` | Advanced | **exists** | Stance bars (channels, FORMER, ABIL, REQUIRE, attitudes); bar inside vs stance after the fence | |
-| 15 | `iff-fault.md` | Intermediate | **exists** | Following-sentence **`blarl`**; **`ahu`** *because* / **`ehe`** *iff*; asserted necessary **`thebom thahum`**; **CAUSE** **`ewe`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
+| 15 | `iff-fault.md` | Intermediate | **exists** | Following-sentence **`blarl`**; **`ahu`** *because* / **`ehe`** *iff*; asserted necessary **`thebom thahum`**; **CAUSE** **`ewe`** **-m** | Fault endings are Beginner on `fault.md`. Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
 | 15 | `causation.md` | Advanced | — | no Advanced stage | |
-| 16 | `prescription.md` | Intermediate | **exists** | Prescription **`the`** + force; motive **`tho`** + time horizon; which ending table; attachment sites; whose stake; contrary **`uem`**; sake bars (*enough* / *too*) | |
+| 16 | `prescription.md` | Intermediate | **exists** | Motive **`tho`** + time horizon; which ending table; attachment sites; whose stake; contrary **`uem`**; sake bars (*enough* / *too*) | Prescription **`the`** is Beginner on `ought-for-a-sake.md` |
 | 16 | `feelings-permission.md` | Intermediate | **exists** | Emotion compose; feeling with no object; speaker attitude; say words (permission, consent, scope) | Thanks and sorry are Beginner on `thanks-and-sorry.md`. Recycle = all Beginner + `prescription.md` (whose stake, contrary **`uem`**, prescription contrast) |
 | 16 | `feelings-permission.md` | Advanced | — | no Advanced stage | |
 | 16 | `sakes.md` | Advanced | — | no Advanced stage | |
@@ -396,7 +402,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 16 | `compounds.md` | Advanced | skip | — | Root tails are a memory aid and tail-suffix words are dictionary entries: nothing to build or choose |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
 | 17 | `join-across-roles.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`); join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | Sequence `xan` is Beginner on `clause-sequence.md`. Recycle = all Beginner + earlier Intermediate (path before 17) |
-| 17 | `notional-standing.md` | Intermediate | **exists** | **MIRATIVE**; **RESIDUE** / **FORMER**; already / still / not yet / no longer; **NOTIONAL** **`eyu`** + play holds; channels as bars; channels after `uem` | No Beginner slot. Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
+| 17 | `notional-standing.md` | Intermediate | **exists** | **MIRATIVE**; **RESIDUE** / **FORMER**; **NOTIONAL** **`eyu`** + play holds; channels as bars; channels after `uem` | already / still / not yet / no longer are Beginner on `already-still-yet.md`. Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
 | 17 | `ability.md` | Intermediate | **exists** | **DECISION** **`ogo`** changeability; forecast = evidential + `blral` vs PLAN; PLAN + DECISION stack | Ability **`xa`/`xe`/`xo`/`xu`** is Beginner on `can-and-cant.md`. Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
 | 17 | `intention.md` | Advanced | — | no Advanced stage | |
 | 18 | `numeric-derivation.md` | Advanced | **exists** | `NUM x ROOT` as the stage teaches (essence / `+N` / `#N` / quasi / …; `mx` approximate) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) |
@@ -443,16 +449,19 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | From the end (`#-`); stacked markers | `numbers.md` Advanced |
 | SHARED scale comparatives | `comparatives.md` Beginner |
 | Causal poles *if* / *only if* (`thohom` / `thebom`) | `causation.md` Beginner |
+| Fault endings on *because* (`thahul` / `thahur`) | `fault.md` Beginner |
 | **CAUSE** **`ewe`** / **`thewem`** | `iff-fault.md` Intermediate |
 | Value **`tha`/`thu`** on **sake** roots | `sakes.md` Beginner |
 | Ability **`xa`/`xe`/`xo`/`xu`** on **non-need** hosts | `can-and-cant.md` Beginner |
 | **MAY** **`thomam`** | `knowing.md` Beginner |
 | Role **`waz`/`wad`/`wab` ROOT** | `roles.md` Beginner |
-| Prescription **`the`** / motive **`tho`** (values) | `prescription.md` Intermediate |
+| Prescription **`the`** (values) | `ought-for-a-sake.md` Beginner |
+| Motive **`tho`** (values) | `prescription.md` Intermediate |
 | LIVE / MEMORY | `live-and-memory.md` Beginner |
 | Label scope seams | `label-seams.md` Beginner |
 | Evidentiality / holder | `knowing.md` Intermediate |
-| NOTIONAL / RESIDUE / FORMER / MIRATIVE / phasal | `notional-standing.md` Intermediate |
+| already / still / not yet / no longer | `already-still-yet.md` Beginner |
+| NOTIONAL / RESIDUE / FORMER / MIRATIVE | `notional-standing.md` Intermediate |
 | Viewpoint laterals | `viewpoint.md` Intermediate |
 | Capacity on `/h/` | `viewpoint.md` Intermediate |
 | Digit-string labels / clock / calendar time | `digit-strings.md` Beginner |

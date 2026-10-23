@@ -32,7 +32,6 @@ save for near end of limit resets:
 -review published-lexicon for psychology - are there any abstract roots that are prone to cognitive biases that would benefit from special attention such as carefully choosing the concrete or promoting to grammar?
 
 Dictionary entries (open lexicon / concepts, not the closed list above):
--habits: triggered
 -unconditional self acceptance
 -apology
 -Inner why?

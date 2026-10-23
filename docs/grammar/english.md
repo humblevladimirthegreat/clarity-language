@@ -152,7 +152,7 @@ One English word, one row: the form that says it and the section that teaches it
 | *overseas* (*across the water*) | **`ohem`** *across* + the water: `hohem blohalal` | [Locative relations](of-relations.md#locative-relations) |
 | *bottom* (the low part of a thing) | `zaduhel gobem blahehal` (a down part of the house) | [Of relations](of-relations.md#of-relations) |
 | *parallel* (*parallel to Olazun*) | the direction, then *like*: `gurem gewom blolazun` | [Simile](relations.md#similative) |
-| *lean* / *tilt* | `vaduhel hruwul` (*almost falls*) | [Already, still, not yet](notional-standing.md#phasal) |
+| *lean* / *tilt* | `vaduhel hruwul` (*almost falls*) | [Already, still, not yet](already-still-yet.md#phasal) |
 | *corner* / *around the corner* | `zadugul` (the corner); `ol badugul` *at the corner*; `hevam bladugul` *around the corner* | [Locative relations](of-relations.md#locative-relations) |
 | *beyond* / *farther than* | rank on distance: `zahehal zel gazavem` (farther than the house) | [Bar words](say-amounts.md#bar-words) |
 | *versus* / *against* (*Uzozen versus Olazun*) | hook **`uel`** + `/b/` | [Hooks](hooks.md#extra-noun) |
@@ -177,7 +177,7 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 |--------------|------------|-------|
 | *come* (*is coming to you*) | motion verb `vavobel` + hook **`oel`** + `/b/` for the person it heads to | [Here and there](here-there.md#deixis) |
 | *bring* / *take* (*brings me the package*) | `velobal` (*carry*) + object + **`oel`** (toward) or **`ul`** (away from) | [Here and there](here-there.md#deixis) |
-| *arrive* / *reach* (*has arrived at the house*) | **`havom`** (*already*) + `vavobel` + **`oel`** + `/b/` | [Already, still, not yet](notional-standing.md#phasal) |
+| *arrive* / *reach* (*has arrived at the house*) | **`havom`** (*already*) + `vavobel` + **`oel`** + `/b/` | [Already, still, not yet](already-still-yet.md#phasal) |
 | *approach* / *head for* | `vavobel` + **`oel`** + `/b/` (no **`havom`**: still on the way) | [Locative relations](of-relations.md#locative-relations) |
 | *follow* (*walks behind Olazun*) | manner direction **`hazuhethol`** + `/b/` for whoever leads | [Landmark's own front](viewpoint.md#landmark-facing) |
 

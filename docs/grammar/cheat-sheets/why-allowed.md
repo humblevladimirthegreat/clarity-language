@@ -43,14 +43,14 @@ The ending on the because pole says whether anyone did wrong.
 <!-- cheat-sheet: why-allowed -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`thahul`](../iff-fault.md#fault) | the reason broke a norm | *it's their fault* / *to blame* | I |
-| [`thahum`](../iff-fault.md#fault) | the reason made it happen; no fault claimed | *because* | I |
-| [`thahur`](../iff-fault.md#fault) | one share among others | *partly because* | I |
+| [`thahul`](../fault.md#fault) | the reason broke a norm | *it's their fault* / *to blame* | I |
+| [`thahum`](../fault.md#fault) | the reason made it happen; no fault claimed | *because* | I |
+| [`thahur`](../fault.md#fault) | one share among others | *partly because* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Fault, on an act](../iff-fault.md#fault) | `zuzozen velurul thahul blarl zolazun vezuyel.` | *Uzozen left because Olazun spoke, and Olazun was wrong to.* | I |
-| [A share](../iff-fault.md#fault) | `zuzozen velurul thahur blerulal.` | *The rain is part of why Uzozen left.* | I |
+| [Fault, on an act](../fault.md#fault) | `zuzozen velurul thahul blarl zolazun vezuyel.` | *Uzozen left because Olazun spoke, and Olazun was wrong to.* | I |
+| [A share](../fault.md#fault) | `zuzozen velurul thahur blerulal.` | *The rain is part of why Uzozen left.* | I |
 
 ### CAUSE: the mechanism {#cause}
 
@@ -89,15 +89,15 @@ A sake is a kind of payoff. A sake word is a sake root, mid-word `th`, a stance 
 |--------|-----|---------|-------------|-------|
 | [**`tha`**](../sakes.md#met) | the belonging or event pays off this sake | *serves* / *met* | [time horizon](../sakes.md#time-horizon-endings-on-met) | B |
 | [**`thu`**](../sakes.md#word-shape) | it subtracts from this sake | *detracts from* / *unmet* | [changeability](../sakes.md#sake-changeability) | B |
-| [**`the`**](../prescription.md#sake-force) | the act ought to serve this sake | *ought this act for* | [why it is offered](../prescription.md#sake-force) | I |
+| [**`the`**](../ought-for-a-sake.md#sake-force) | the act ought to serve this sake | *ought this act for* | [why it is offered](../ought-for-a-sake.md#sake-force) | I |
 | [**`tho`**](../prescription.md#sake-preference) | the act is done for this sake | *doing for this sake* | [time horizon](../prescription.md#sake-preference) | I |
 
 <!-- cheat-sheet: why-allowed -->
 | Ending | Met **`tha`** | Unmet **`thu`** | Ought **`the`** | Motive **`tho`** | Stage |
 |--------|---------------|-----------------|-----------------|------------------|-------|
-| **-l** | [`…thal`](../sakes.md#time-horizon-endings-on-met) *lasting* | [`…thul`](../sakes.md#sake-changeability) *irreversible* | [`…thel`](../prescription.md#sake-force) *invited* | [`…thol`](../prescription.md#sake-preference) *lasting* | B / I |
-| **-m** | [`…tham`](../sakes.md#time-horizon-endings-on-met) *unstated* | [`…thum`](../sakes.md#sake-changeability) *modifiable* | [`…them`](../prescription.md#sake-force) *offered* | [`…thom`](../prescription.md#sake-preference) *unstated* | B / I |
-| **-r** | [`…thar`](../sakes.md#time-horizon-endings-on-met) *immediate* | [`…thur`](../sakes.md#sake-changeability) *passing* | [`…ther`](../prescription.md#sake-force) *worth a try* | [`…thor`](../prescription.md#sake-preference) *immediate* | B / I |
+| **-l** | [`…thal`](../sakes.md#time-horizon-endings-on-met) *lasting* | [`…thul`](../sakes.md#sake-changeability) *irreversible* | [`…thel`](../ought-for-a-sake.md#sake-force) *invited* | [`…thol`](../prescription.md#sake-preference) *lasting* | B / I |
+| **-m** | [`…tham`](../sakes.md#time-horizon-endings-on-met) *unstated* | [`…thum`](../sakes.md#sake-changeability) *modifiable* | [`…them`](../ought-for-a-sake.md#sake-force) *offered* | [`…thom`](../prescription.md#sake-preference) *unstated* | B / I |
+| **-r** | [`…thar`](../sakes.md#time-horizon-endings-on-met) *immediate* | [`…thur`](../sakes.md#sake-changeability) *passing* | [`…ther`](../ought-for-a-sake.md#sake-force) *worth a try* | [`…thor`](../prescription.md#sake-preference) *immediate* | B / I |
 
 The scale runs **-l** most settled, **-m** the default, **-r** most passing. When unsure, use **-m**.
 
@@ -109,7 +109,7 @@ The scale runs **-l** most settled, **-m** the default, **-r** most passing. Whe
 | [Costly now, good later](../sakes.md#sake-changeability) | `zanal godothur guwathal.` | *My book is a slog for now, but builds lasting competence.* | B |
 | [On the event](../sakes.md#word-shape) | `zuzozen vezuyel thuwatham.` | *Uzozen talks, and that boosts my confidence.* | B |
 | [Not your noun](../sakes.md#personal-possession): `goyem` | `zabowam wunathur goyem.` | *the gathering, passing harm to autonomy* | B |
-| [Ought](../prescription.md#sake-force) | `zuzozen vezuyel thawothem blwazer.` | *Uzozen ought to talk; it would help them feel connected.* (unasked advice) | I |
+| [Ought](../ought-for-a-sake.md#sake-force) | `zuzozen vezuyel thawothem blwazer.` | *Uzozen ought to talk; it would help them feel connected.* (unasked advice) | I |
 | [Motive](../prescription.md#sake-preference) | `zuwon vezuyel thawothom.` | *I talk to feel connected.* | I |
 | [Whose stake](../prescription.md#whose-stake): the person in `/b/` | `zuzozen vezuyel thawothom blolazun.` | *Uzozen talks for Olazun's sake.* | I |
 | [Not your noun, their stake](../prescription.md#whose-stake) | `zewal gawothal blolazun.` | *My gift serves Olazun's relatedness.* | I |
@@ -239,10 +239,10 @@ A [say word](../feelings-permission.md#say-words) on `/h/`: **`h`** **`w`**, a s
 |------|----|------|
 | `thohom` *if* ([enough, not claimed](../causation.md#if)) | | `thahum` *because* ([enough, and a fact](../iff-fault.md#only-because)) |
 | `thohom` *if* ([other routes remain](../causation.md#only-if)) | | `thebom` *only if* ([the outcome needs it](../causation.md#only-if)) |
-| `thahum` *because* ([a cause, no blame](../iff-fault.md#fault)) | | `thahul` *fault* ([someone did wrong](../iff-fault.md#fault)) |
+| `thahum` *because* ([a cause, no blame](../fault.md#fault)) | | `thahul` *fault* ([someone did wrong](../fault.md#fault)) |
 | `thahum` *because* ([the condition](../iff-fault.md#cause)) | | `thewem` *mechanism* ([how it is produced](../iff-fault.md#cause)) |
 | `hwavam` *may* ([someone over the act allows it](../feelings-permission.md#permission)) | | `hwadam` *they agreed* ([the yes of the one it's done to](../feelings-permission.md#consent)) |
 | `hwavam` *may* ([the act is allowed](../feelings-permission.md#permission)) | | `hwavem` *has to* ([the act is demanded](../feelings-permission.md#permission)) |
 | `hwavel` *the rules require it* ([an outside demand](../feelings-permission.md#permission)) | | `hwazer` *I feel I have to* ([an unspoken should](../feelings-permission.md#consent)) |
-| `thawothem` *ought to, for relatedness* ([advice for a sake](../prescription.md#sake-force)) | | `thawothom` *for relatedness* ([why it is done](../prescription.md#sake-preference)) |
+| `thawothem` *ought to, for relatedness* ([advice for a sake](../ought-for-a-sake.md#sake-force)) | | `thawothom` *for relatedness* ([why it is done](../prescription.md#sake-preference)) |
 | `thawotham` *thank you* ([my sake is met](../thanks-and-sorry.md#thanks-sorry)) | | `thawothum blawan` *I'm sorry* ([your sake is hurt](../thanks-and-sorry.md#thanks-sorry)) |

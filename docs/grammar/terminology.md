@@ -201,7 +201,7 @@ A slot-part role compound on `/h/` (`hwezuduyel`): the role the act is done in (
 
 Prescription endings on sake **`the`**: why a move is welcome. **-l** invited, **-m** offered to serve the sake, **-r** a trial, worth trying to see whether it serves the sake.
 
-[Prescription and motive](prescription.md#sake-force)
+[Ought for a sake](ought-for-a-sake.md#sake-force)
 
 ### Changeability
 
@@ -377,11 +377,23 @@ A channel, NOTIONAL, or holder that keeps covering your later claims with no cha
 
 [Evidentiality](evidentiality.md#carry-forward)
 
+### Already / still / not yet / no longer
+
+Four `/h/` words for how a change stands now, not when it happened.
+
+[Already, still, not yet, no longer](already-still-yet.md#phasal)
+
 ### Residue / former climate
 
 Closed `/th/` episode standing: leftover on the tally, or usual weather you are not claiming now. Not past tense.
 
 [Notional and standing](notional-standing.md#residue)
+
+### Fault
+
+Endings on *because*: **-l** the reason broke a rule, **-m** plain cause, **-r** one share among others. The act sits in `/b/`, not the person.
+
+[Fault](fault.md#fault)
 
 ### Extra noun (`/b/`)
 
@@ -556,7 +568,7 @@ Amount + lexicon unit noun (published abstract = unit name).
 
 ### Met / unmet / motive / prescription (sakes)
 
-Sake stances **`tha` / `thu`** (Beginner); **`the`** / **`tho`** (Intermediate prescription / motive). Prescription **`the`** on the clause is deontic on the host act (*ought to … for this sake*), not a performance report with a separate norm tag. The ending marks whether the move is [invited, offered, or protective](#asked-typical-history), not how firmly you address them.
+Sake stances **`tha` / `thu`** (Beginner); **`the`** (Beginner ought); **`tho`** (Intermediate motive). Prescription **`the`** on the clause is deontic on the host act (*ought to … for this sake*), not a performance report with a separate norm tag. The ending marks whether the move is [invited, offered, or protective](#asked-typical-history), not how firmly you address them.
 
 [Sakes](sakes.md)
 

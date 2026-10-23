@@ -116,87 +116,6 @@ Do not write **`helam`** right before **`hual`**: that spot holds the restrictor
 
 Put RESIDUE and FORMER on `/h/`, anywhere in the sentence: like an [intention adverb](clause.md#intention-adverbs), each covers the whole clause. Use `/w/` only when the word applies to the one `/ɡ/` adjective right after it. Both always end in **-m**.
 
-### Already, still, not yet, no longer {#phasal}
-
-English *already*, *still*, *not yet*, and *no longer* do not place an event in time. Each compares what is true **now** with a change: has it come, or not? Like RESIDUE, that is about how things stand now, not when something happened, so Agebon uses four `/h/` words, not a tense. (cue: each root pictures the stage the change is at)
-
-| Agebon | Use | English | Same root as | Cue |
-|--------|-----|---------|--------------|-----|
-| **`havom`** | the change has happened | *already* | `avol` *hatch* | 🐣: the chick is already out |
-| **`hawum`** | the state goes on | *still* | `awul` *anchor* | ⚓: the ship is held where it was |
-| **`helem`** | the change is expected but has not come | *not yet* | `elel` *seedling* | 🌱: not grown yet |
-| **`huvum`** | the state has stopped | *no longer* / *not anymore* | `uvul` *wilt* | 🥀: no longer fresh |
-
-> `zuzozen hawum vowurel.`
->
-> z-Uzozen | h-still | v-walk
->
-> "Uzozen is still walking."
-
-> `zuzozen helem vowurel.`
->
-> z-Uzozen | h-not-yet | v-walk
->
-> "Uzozen hasn't walked yet."
-
-> `zuzozen huvum vowurel ol bahehal.`
->
-> z-Uzozen | h-no-longer | v-walk | [at | b-house]
->
-> "Uzozen doesn't walk at the house anymore."
-
-The ending says how settled the current stage is, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). Use **-m** when it could change back, or when you do not know. Use **-l** when it is not expected to. Use **-r** when it holds only for now: it is likely to change back soon, or, on *not yet*, the change may never come.
-
-<!-- cheat-sheet: knowing-intending -->
-| Agebon | Use | English |
-|--------|-----|---------|
-| `havol` | done, and it will stay done | *already, for good* |
-| `hawul` | goes on, with no end in sight | *still, and it will keep on* |
-| `helel` | not yet, but it is sure to come | *not yet, but it will* |
-| `huvul` | stopped, and it will not come back | *never again* |
-| `havor` | done, but likely to come undone | *already, for now* |
-| `hawur` | goes on, but about to end | *still, for now* |
-| `heler` | not yet, and it may never come | *not yet, maybe never* |
-| `huvur` | stopped for now; expected to resume | *paused* / *not for now* |
-
-> `zolazun havol velurul.`
->
-> z-Olazun | h-already.lasting | v-departure
->
-> "Olazun has already left, for good."
-
-> `zuzozen huvur vowurel.`
->
-> z-Uzozen | h-no-longer.for-now | v-walk
->
-> "Uzozen has stopped walking for now." (expected to start again)
-
-When only one `/ɡ/` adjective is still or no longer so, write the same word under `/w/` immediately before that adjective.
-
-> `zuzozen dagozol wawum guzemol vawebol.`
->
-> z-Uzozen | [d-cat | [w-still | g-sleepy]] | v-see
->
-> "Uzozen sees a cat that is still sleepy."
-
-**Compare with:** RESIDUE **`haram`** says the outcome of a finished event is **still in effect**, not that the act goes on. FORMER **`helam`** retires a usual **pattern**; **`huvum`** says any state or act has stopped.
-
-#### Ever / never {#ever-never}
-
-English *has ever* / *has never* asks whether something happened at least once, at no particular time. Use *already* **`havom`** with *sometimes* **`har`** ([restrictors](restrictors.md)): the change has come, on some unnamed occasion. For *has never*, use bare **`hal`** (*never*).
-
-> `zuzozen havom vazuvel har.`
->
-> z-Uzozen | h-already | v-swim | h-sometimes
->
-> "Uzozen has swum at some point."
-
-> `zuzozen vazuvel hal.`
->
-> z-Uzozen | v-swim | h-never
->
-> "Uzozen has never swum."
-
 ### Notional (as-if framing) {#notional-as-if-framing}
 <a id="notional"></a>
 <a id="notional-mood"></a>
@@ -353,7 +272,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *RESIDUE* | `haram` | 💰 from *money*: a debt left standing |
 | *FORMER* | `helam` | 🪹 from *empty nest*: what used to be |
 | *MIRATIVE* | `themom` | 😮 from *surprise*: it turns out |
-| *still* | `hawum` | ⚓ from *anchor*: the ship is held where it was |
 
 **Review:**
 
@@ -380,15 +298,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-rabbit | th-LIVE | h-RESIDUE | v-departure
 :::
 
-**2.** *Uzozen has sung at some point.*
-
-::: details Show answer
-`zuzozen havom vezuyol har.`
-
-z-Uzozen | h-already | v-sing | h-sometimes
-:::
-
-**3.** *I gather Olazun's singing surprised Uzozen.* (the surprise is Uzozen's)
+**2.** *I gather Olazun's singing surprised Uzozen.* (the surprise is Uzozen's)
 
 ::: details Show answer
 `zolazun themom theyemuzozen vezuyol.`
@@ -396,7 +306,7 @@ z-Uzozen | h-already | v-sing | h-sometimes
 z-Olazun | th-MIRATIVE | th-CLUES-Uzozen | v-sing
 :::
 
-**4.** *Imagine the rabbit walking.*
+**3.** *Imagine the rabbit walking.*
 
 ::: details Show answer
 `zerozol theyum vowurel.`
@@ -404,7 +314,7 @@ z-Olazun | th-MIRATIVE | th-CLUES-Uzozen | v-sing
 z-rabbit | th-NOTIONAL | v-walk
 :::
 
-**5.** *The rabbit is sleepier than usual.*
+**4.** *The rabbit is sleepier than usual.*
 
 ::: details Show answer
 `zerozol thubem zel guzemol.`
@@ -412,7 +322,7 @@ z-rabbit | th-NOTIONAL | v-walk
 [z-rabbit | th-PATTERN | z-rank/more | g-sleepy]
 :::
 
-**6.** *Ahelan sings, contrary to what I was told.*
+**5.** *Ahelan sings, contrary to what I was told.*
 
 ::: details Show answer
 `zahelan vezuyol uem thebam.`
@@ -422,15 +332,7 @@ z-Ahelan | v-sing | [contrary-to | th-REPORTED]
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zolazun helel velurul.`
-
-::: details Show answer
-z-Olazun | h-not-yet.lasting | v-departure
-
-*Olazun hasn't left yet, but will.*
-:::
-
-**2.** `zolazun helam zel gegulol.`
+**1.** `zolazun helam zel gegulol.`
 
 ::: details Show answer
 [z-Olazun | h-FORMER | z-rank/more | g-gray]
@@ -438,7 +340,7 @@ z-Olazun | h-not-yet.lasting | v-departure
 *Olazun is grayer than Olazun used to be.*
 :::
 
-**3.** `zolazun theyum derozol vawebol.`
+**2.** `zolazun theyum derozol vawebol.`
 
 ::: details Show answer
 z-Olazun | th-NOTIONAL | d-rabbit | v-see
@@ -446,23 +348,7 @@ z-Olazun | th-NOTIONAL | d-rabbit | v-see
 *Imagine Olazun seeing a rabbit.*
 :::
 
-**4.** `zerozol havol velurul.`
-
-::: details Show answer
-z-rabbit | h-already.lasting | v-departure
-
-*The rabbit has already left, for good.*
-:::
-
-**5.** `zuzozen derozol wawum guzemol vawebol.`
-
-::: details Show answer
-z-Uzozen | [d-rabbit | [w-still | g-sleepy]] | v-see
-
-*Uzozen sees a rabbit that is still sleepy.*
-:::
-
-**6.** `zuzozen vowurel uem thabom.`
+**3.** `zuzozen vowurel uem thabom.`
 
 ::: details Show answer
 z-Uzozen | v-walk | [contrary-to | th-INTUITION]
@@ -480,16 +366,6 @@ z-Uzozen | v-walk | [contrary-to | th-INTUITION]
 z-Ahelan | th-NOTIONAL-rehearse | v-sing
 
 NOTIONAL with **-l** is a rehearsal; **-m** only imagines the singing.
-:::
-
-**2.** *Uzozen is still singing.* `zuzozen hawum vezuyol.` or `zuzozen hawur vezuyol.`
-
-::: details Show answer
-`zuzozen hawum vezuyol.`
-
-z-Uzozen | h-still | v-sing
-
-**-m** says the singing goes on and could change; **`hawur`** would say it is about to end.
 :::
 
 #### Fix it {#intermediate-fix-it}

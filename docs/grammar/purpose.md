@@ -127,7 +127,7 @@ An explanation of what made something happen slides into blame, and one cause am
 
 English *because of you* can mean you made it happen, you did something wrong, or you were one part of it.
 
-The ending on a [because](iff-fault.md#fault) word says which claim you make: plain cause with no fault (`thahum`), a reason that broke a norm (`thahul`, *it's their fault*), or one share among other causes (`thahur`, *partly because*). Plain cause is the default.
+The ending on a [because](fault.md#fault) word says which claim you make: plain cause with no fault (`thahum`), a reason that broke a norm (`thahul`, *it's their fault*), or one share among other causes (`thahur`, *partly because*). Plain cause is the default.
 
 Keeping cause apart from fault helps you explain what happened without blaming, and saying *partly* keeps one person, including you, from carrying a whole outcome.
 
@@ -173,7 +173,7 @@ A link between events, a habit, or an ought gets treated as a law the world must
 
 Everyday English *because*, *leads to*, and *have to* blur three distinctions: a condition that is enough vs one that is required, a reason in the world vs your grounds for saying something, and a wish vs a law of nature.
 
-[Causation](causation.md) gives each link its own word: *if*, *only if*, *because*, and *if and only if*. An intended result (*so that*) uses a separate word, `hovam` ([so that](dependents.md#so-that)): the action is aimed at that outcome without claiming it happens, and it is not the same as acting for a sake ([motive](prescription.md#sake-preference), `tho`). When the “rule” is really an ought (*hard work should earn promotion*), say it with a sakes [prescription](prescription.md#sake-force) (`the`) on the act, not with a causation word.
+[Causation](causation.md) gives each link its own word: *if*, *only if*, *because*, and *if and only if*. An intended result (*so that*) uses a separate word, `hovam` ([so that](dependents.md#so-that)): the action is aimed at that outcome without claiming it happens, and it is not the same as acting for a sake ([motive](prescription.md#sake-preference), `tho`). When the “rule” is really an ought (*hard work should earn promotion*), say it with a sakes [prescription](ought-for-a-sake.md#sake-force) (`the`) on the act, not with a causation word.
 
 Keeping these apart helps you stop treating wishes and habits as laws the world must obey.
 

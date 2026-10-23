@@ -78,4 +78,4 @@ Move the one-on-one to the morning `thuwather`.
 I'm learning the filing system `thowothol`.
 :::
 
-<!-- Source (editors): prescription.md#sake-force, prescription.md#sake-preference, sakes.md#sake-inventory. -->
+<!-- Source (editors): ought-for-a-sake.md#sake-force, prescription.md#sake-preference, sakes.md#sake-inventory. -->

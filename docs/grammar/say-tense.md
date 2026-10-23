@@ -6,7 +6,7 @@ Recipes for English *walked* / *has walked* / *will walk* / *used to walk*, and 
 
 ### One English tense, several jobs {#tense-jobs}
 
-**Needs:** [Evidentiality](evidentiality.md#evidentiality) · [Forecasts](evidentiality.md#forecast) · [Dated channel](universality.md#dated-channel) · [RESIDUE and FORMER](notional-standing.md#residue) · [Already, still, not yet](notional-standing.md#phasal) · [*as-of*](as-of.md#as-of)
+**Needs:** [Evidentiality](evidentiality.md#evidentiality) · [Forecasts](evidentiality.md#forecast) · [Dated channel](universality.md#dated-channel) · [RESIDUE and FORMER](notional-standing.md#residue) · [Already, still, not yet](already-still-yet.md#phasal) · [*as-of*](as-of.md#as-of)
 
 An English tense bundles up to three questions: **when** the event sits, **how you know** it, and whether it **still counts** now. Agebon asks them separately. Pick the row for the English form, then the job you mean.
 
@@ -22,7 +22,7 @@ An English tense bundles up to three questions: **when** the event sits, **how y
 | *walked yesterday* / *three hours ago* | a measured time back | channel + signed amount ([dated channel](universality.md#dated-channel)) |
 | *has walked* | the outcome still counts | RESIDUE **`haram`** |
 | *has already walked* | the change has come | **`havom`** |
-| *has walked before* / *has never walked* | at least once / not once | **`havom`** + **`har`** / **`hal`** ([ever / never](notional-standing.md#ever-never)) |
+| *has walked before* / *has never walked* | at least once / not once | **`havom`** + **`har`** / **`hal`** ([ever / never](already-still-yet.md#ever-never)) |
 | *had walked* | as of a past moment | [*as-of*](as-of.md#as-of) plus the same stance |
 | *is walking* | it is in view | LIVE **`thugom`** |
 | *is walking* | they are in the middle of it | the event root on `/ɡ/`: `zuzozen gowurel` ([in progress](predication.md#in-progress)) |
@@ -70,7 +70,7 @@ Reports and reasoning need their own `-` amount, because those channels do not f
 
 ### Present perfect: leftover, done, or ever {#present-perfect}
 
-**Needs:** [RESIDUE](notional-standing.md#residue) · [Already, still, not yet](notional-standing.md#phasal)
+**Needs:** [RESIDUE](notional-standing.md#residue) · [Already, still, not yet](already-still-yet.md#phasal)
 
 English *has left* mixes three ideas. Choose the one you mean.
 
@@ -116,7 +116,7 @@ English *had left* means the leaving counted **as of** an earlier moment. Write 
 
 ### Progressive: mid-way, in view, or still {#progressive}
 
-**Needs:** [In progress](predication.md#in-progress) · [Live vs memory](live-and-memory.md#live-vs-memory) · [Already, still, not yet](notional-standing.md#phasal)
+**Needs:** [In progress](predication.md#in-progress) · [Live vs memory](live-and-memory.md#live-vs-memory) · [Already, still, not yet](already-still-yet.md#phasal)
 
 English *is walking* usually means one of three things. Put the event root on `/ɡ/` when you say they are in the middle of it. Say **`thugom`** when the walking is in view now. Say **`hawum`** when you stress that it goes on.
 
@@ -180,7 +180,7 @@ English *will* is three different claims.
 
 ### Everyday time words {#time-words}
 
-**Needs:** [Dated channel](universality.md#dated-channel) · [Now and today](universality.md#now) · [RESIDUE and FORMER](notional-standing.md#residue) · [Already, still, not yet](notional-standing.md#phasal) · [Forecasts](evidentiality.md#forecast) · [Dependent clauses](dependents.md#dependent-clauses)
+**Needs:** [Dated channel](universality.md#dated-channel) · [Now and today](universality.md#now) · [RESIDUE and FORMER](notional-standing.md#residue) · [Already, still, not yet](already-still-yet.md#phasal) · [Forecasts](evidentiality.md#forecast) · [Dependent clauses](dependents.md#dependent-clauses)
 
 English time words (*today*, *previously*, *continue*) mostly ride on the same channels and offsets as tense. Each row says which one.
 
@@ -314,7 +314,7 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 
 ### Must, have to, should {#must-should}
 
-**Needs:** [Requirement](feelings-permission.md#requirement) · [Prescription](prescription.md#sake-force) · [Motive](prescription.md#sake-preference) · [Permission](feelings-permission.md#permission) · [Speech act](firm-soft.md#speech-act) · [Stance as-of](as-of.md#stance-as-of)
+**Needs:** [Requirement](feelings-permission.md#requirement) · [Prescription](ought-for-a-sake.md#sake-force) · [Motive](prescription.md#sake-preference) · [Permission](feelings-permission.md#permission) · [Speech act](firm-soft.md#speech-act) · [Stance as-of](as-of.md#stance-as-of)
 
 English *must* and *should* differ in what stands behind the demand. Choose the source.
 

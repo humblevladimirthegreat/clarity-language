@@ -1,6 +1,6 @@
 # Proposal: Band gates, then reassign and reorder sittings
 
-**Status:** Phases 1–2 done. Gates are in [learning levels](../meta/learning-levels.md). Phases 3–5 apply the inventory; then absorb. Not design authority; fold leftover notes into learning levels and [grammar-docs](../meta/grammar-docs.md), then drop.  
+**Status:** Phases 1–3 done. Gates are in [learning levels](../meta/learning-levels.md). Phases 4–5 apply the inventory; then absorb. Not design authority; fold leftover notes into learning levels and [grammar-docs](../meta/grammar-docs.md), then drop.  
 **Related:** [learning levels](../meta/learning-levels.md) ([gates](../meta/learning-levels.md#gates), [order inside a band](../meta/learning-levels.md#order-inside-a-band)), [empty stages](../meta/grammar-docs.md#empty-stages), [page skeleton](../meta/grammar-docs.md#page-skeleton), [later-stage shape](../meta/grammar-docs.md#later-stage-shape), [stage checklist](../meta/grammar-docs.md#stage-checklist), [feature criteria](../meta/feature-criteria.md#easy-to-use), [level reviews](../meta/translation-exercises.md#level-reviews), [recipe track](../meta/grammar-docs.md#recipe-track).  
 **Code:** [`reading-order.ts`](../grammar/.vitepress/lib/reading-order.ts), [`learning-order.ts`](../../src/lint/learning-order.ts), [`lint-forward-links.ts`](../../scripts/lint-forward-links.ts), [`constructions.ts`](../../src/parse/constructions.ts).
 
@@ -74,7 +74,7 @@ Each phase below is a cluster. Open this file, take the first undone row in the 
 
 ### Phase 3 — Purpose slices
 
-High-frequency purpose moves. Late Beginner, after sakes / knowing / predication.
+**Done.** High-frequency purpose moves. New Beginner files sit at the end of the Beginner sidebar until Phase 5 clusters them.
 
 - **ability.md** — split: ability / incapability → new B file; parent keeps decision / try / want. Thin FORMER examples.
 - **evidentiality.md** — split: channel pick (LIVE / MEMORY as the usable slice; other channels may stay on the I parent) → new B file; parent keeps strength, source, forecast, holder.
@@ -135,7 +135,7 @@ One row per sitting (reviews and orientation omitted). Corpus / usable are for t
 | tag-pronouns.md | n | y | pronouns | I | I | ok | several referents |
 | topic.md | n | y | pronouns | I | I | ok | discourse machinery |
 | collectives.md | n | y | plurality, joins | I | I | ok | finish plurality |
-| label-scope.md | y | n | predication | I | B label-scope; I packaging | promoted-by-stack | *angry this time*; packaging / SAME endings finish predication |
+| label-scope.md | y | n | predication | I | B label-scope; I packaging | promoted-by-stack | **done** · *angry this time*; packaging / SAME endings finish predication |
 | rank-joins.md | n | y | joins, comparatives | I | I | ok | finish rank; superlative already B |
 | polar-inventory.md | n | y | questions | I | I | ok | finish polar |
 | fill-ask-roles.md | y | n | questions, hooks, causation | I | B kind/when/where/whose/how/why; I arity + blank-in-dependent | promoted-by-stack | Beginner milestone wants place, time, reason |
@@ -147,14 +147,14 @@ One row per sitting (reviews and orientation omitted). Corpus / usable are for t
 | number-markers.md | n | y | numbers | I | I | ok | finish number word-shape |
 | digitless-exponents.md | n | y | numbers | I | I | ok | approx / OoM |
 | comparative-arity.md | n | y | comparatives | I | I | ok | finish scales |
-| iff-fault.md | y | n | causation, sakes | I | B fault; I iff/CAUSE | promoted-by-stack | blame is purpose; iff is not first-corpus |
-| prescription.md | y | n | sakes | I | B ought `the`; I motive/bars | promoted-by-stack | *should* for a named sake |
-| feelings-permission.md | y | n | sakes, hooks | I | B thanks/sorry; I compose + permission | purpose-with-no-slice | thanks is usable; emotion compose is not (Claritish keeps the early hit) |
-| evidentiality.md | y | n | knowing | I | B LIVE/MEMORY; I strength/source/holder | promoted-by-stack | how-you-know in the first stretch |
-| notional-standing.md | y | n | clause | I | B phasal; I mirative/residue/notional | promoted-by-stack | *already/still/not yet*; residue stays I |
+| iff-fault.md | y | n | causation, sakes | I | B fault; I iff/CAUSE | promoted-by-stack | **done** · blame is purpose; iff is not first-corpus |
+| prescription.md | y | n | sakes | I | B ought `the`; I motive/bars | promoted-by-stack | **done** · *should* for a named sake |
+| feelings-permission.md | y | n | sakes, hooks | I | B thanks/sorry; I compose + permission | purpose-with-no-slice | **done** · thanks is usable; emotion compose is not (Claritish keeps the early hit) |
+| evidentiality.md | y | n | knowing | I | B LIVE/MEMORY; I strength/source/holder | promoted-by-stack | **done** · how-you-know in the first stretch |
+| notional-standing.md | y | n | clause | I | B phasal; I mirative/residue/notional | promoted-by-stack | **done** · *already/still/not yet*; residue stays I |
 | viewpoint.md | n | y | roles, hooks | I | I | ok | spatial grammar, not first stretch |
 | compound-families.md | n | y | compounds, roles | I | I | ok | finish `x` families |
-| ability.md | y | n | word-endings, compounds | I | B can/can't; I decision/try/want | promoted-by-stack | thin FORMER examples if promoting |
+| ability.md | y | n | word-endings, compounds | I | B can/can't; I decision/try/want | promoted-by-stack | **done** · thin FORMER examples if promoting |
 | join-across-roles.md | y | n | joins | I | B sequence `xan`; I VP/stance/join-act | promoted-by-stack | *and then* |
 | numbers-applied.md | y | n | numbers | I | B digit-strings + time; I codes/measures/ranges | promoted-by-stack | clock/calendar is “enough time” |
 | singability.md | n | y | phonology | A | A | ok | singing / speech edges |
@@ -185,6 +185,7 @@ One row per sitting (reviews and orientation omitted). Corpus / usable are for t
 
 - [x] [learning-levels.md](../meta/learning-levels.md) states the gates and within-band order; the three questions are gone.
 - [x] Phase 2 first-corpus talk splits (eight new Beginner sittings).
+- [x] Phase 3 purpose slices (seven new Beginner sittings).
 - Every sitting has an Inventory row, and the published sidebar matches **Proposed** (or an explicit note why a row stayed).
 - Beginner parent slugs still teach their Beginner sitting.
 - Reviews, cheat-sheet Stage, construction homes, and lexicon `core` cells resolve.

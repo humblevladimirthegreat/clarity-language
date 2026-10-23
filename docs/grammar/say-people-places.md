@@ -360,7 +360,7 @@ English *buy* and *sell* are two views of one swap. Agebon has one trading verb,
 
 ### Give, get, lend, earn, owe {#give-get}
 
-**Needs:** [The extra `/b/` party (`o`)](roles.md#role-compounds) · [Extra noun (`el`, `em`)](hooks.md#extra-noun) · [Exchange](relations.md#exchange) · [Coordinated lists](rank-joins.md#respectively) · [Fault](iff-fault.md#fault)
+**Needs:** [The extra `/b/` party (`o`)](roles.md#role-compounds) · [Extra noun (`el`, `em`)](hooks.md#extra-noun) · [Exchange](relations.md#exchange) · [Coordinated lists](rank-joins.md#respectively) · [Fault](fault.md#fault)
 
 English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Agebon keeps the giving verb `vewal` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in plain `/b/` after the verb ([recipient](clause.md#extra-nouns)). To name the parties from the verb itself, use the [role compounds](roles.md#role-compounds): **`zwazewal`** is the giver (*supplier*, *provider*) and **`zwabewal`** is the recipient (*receiver*). **-r** (`zwabewar`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vegeral` (*credit*, with the *lend* sense): the borrower is the recipient.
 
@@ -607,7 +607,7 @@ An English noun like *case* or *board* covers several jobs, and Agebon has a dif
 
 ### Contribution, acquisition, murder, comparison and other act nouns {#act-nouns}
 
-**Needs:** [The event itself](roles.md#the-event-itself) · [Role compounds](roles.md#role-compounds) · [Someone's act](#someones-act) · [Fault](iff-fault.md#fault) · [Label scope](label-seams.md#label-scope) · [Proxy](relations.md#proxy) · [Exchange](relations.md#exchange)
+**Needs:** [The event itself](roles.md#the-event-itself) · [Role compounds](roles.md#role-compounds) · [Someone's act](#someones-act) · [Fault](fault.md#fault) · [Label scope](label-seams.md#label-scope) · [Proxy](relations.md#proxy) · [Exchange](relations.md#exchange)
 
 English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *comparison*). Agebon has no separate noun for them. Put the verb stem on a thing letter with no **`w`** and part to name the act itself, write **`d`** as the part to name the thing the act happens to, or say the act as a sentence and resume it with **-r**. A wrongness or a pattern is the pole or label on the act, not a different noun.
 

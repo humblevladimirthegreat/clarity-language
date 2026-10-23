@@ -80,7 +80,7 @@ export const ROUTE_QUALIFIERS: Readonly<Record<Exclude<RouteClass, "kin">, strin
 /**
  * English that picks a sake word's **-l** or **-r** ending, by stance vowel; none is **-m**
  * ([met](sakes.md#time-horizon-endings-on-met), [unmet](sakes.md#sake-changeability),
- * [ought](prescription.md#sake-force), [motive](prescription.md#sake-preference)).
+ * [ought](ought-for-a-sake.md#sake-force), [motive](prescription.md#sake-preference)).
  */
 export const SAKE_ENDINGS: Readonly<Record<string, { l: string[]; r: string[] }>> = {
   a: { l: ["lasting", "in the long run", "in the long term", "over time"], r: ["immediate", "immediately", "right now", "right away", "quick"] },
@@ -137,6 +137,12 @@ export const WORD_DETECTORS: readonly WordDetector[] = [
   { id: "relation-prefix", label: (t) => `*${t.normal}*: a hook prefix (the hook's vowels, \`x\` or \`mx\`, then the noun's root)`, links: ["english.md#relation-prefixes", "hook-compounds.md#hook-prefixes"], test: (t) => relationWord(t.normal) },
   { id: "number-prefix", label: (t) => `*${t.normal}*: a numeric prefix (the number body, \`x\` or \`mx\`, then the noun's root)`, links: ["english.md#number-prefixes", "numeric-derivation.md#numeric-derivation"], test: (t) => numberPrefixWord(t.normal) },
   { id: "participle", label: (t) => (t.shape === "er" ? "doer noun (*-er*, *-or*)" : `*-${t.shape}* word used as ${t.cls === "noun" ? "a noun" : "an adjective"}`), links: ["english.md#participles"], test: (t) => !!t.shape },
+  {
+    id: "habit",
+    label: (t) => `*${t.normal}* (cue then act)`,
+    links: ["say-reasons.md#habit", "iff-fault.md#cause"],
+    test: (t) => t.normal === "habit" || t.normal === "habits" || t.normal === "trigger" || t.normal === "triggers" || t.normal === "triggered",
+  },
 ];
 
 /**

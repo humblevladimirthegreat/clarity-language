@@ -92,8 +92,8 @@ ohom,g,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one w
 ehem,th,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,dependents.md#poles
 ehem,g,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,iff-fault.md#only-because
 ahum,th,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,dependents.md#poles
-ahul,th,🧱,clause_pole,because.fault,BECAUSE clause pole with fault (the reason broke a norm),a wall stands on its foundation; -l locks the blame on a broken norm,iff-fault.md#fault
-ahur,th,🧱,clause_pole,because.share,BECAUSE clause pole with a share (the reason contributed among others),a wall stands on its foundation; -r is one wall among several holding it up,iff-fault.md#fault
+ahul,th,🧱,clause_pole,because.fault,BECAUSE clause pole with fault (the reason broke a norm),a wall stands on its foundation; -l locks the blame on a broken norm,fault.md#fault
+ahur,th,🧱,clause_pole,because.share,BECAUSE clause pole with a share (the reason contributed among others),a wall stands on its foundation; -r is one wall among several holding it up,fault.md#fault
 ahum,g,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,iff-fault.md#only-because
 ebom,th,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,dependents.md#poles
 ebom,g,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
@@ -183,30 +183,30 @@ ulem,h,🪵,of_relation,material,of-relation material (constitution),wood is the
 ulem,g,🪵,of_relation,material,of-relation material (constitution),wood is the stuff something is made of; material is the stuff in /b/,of-relations.md#of-relations
 aham,h,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,of-relations.md#of-relations
 aham,g,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,of-relations.md#of-relations
-avol,h,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,notional-standing.md#phasal
-avol,w,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,notional-standing.md#phasal
-avom,h,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,notional-standing.md#phasal
-avom,w,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,notional-standing.md#phasal
-avor,h,🐣,phasal,already.for-now,ALREADY phasal (the change has happened); -r for now: likely to change back,hatched chick is already out of the shell,notional-standing.md#phasal
-avor,w,🐣,phasal,already.for-now,ALREADY phasal (the change has happened); -r for now: likely to change back,hatched chick is already out of the shell,notional-standing.md#phasal
-awul,h,⚓,phasal,still.lasting,STILL phasal (the state continues); -l not expected to change back,anchor holds the ship where it was,notional-standing.md#phasal
-awul,w,⚓,phasal,still.lasting,STILL phasal (the state continues); -l not expected to change back,anchor holds the ship where it was,notional-standing.md#phasal
-awum,h,⚓,phasal,still,STILL phasal (the state continues); -m could change,anchor holds the ship where it was,notional-standing.md#phasal
-awum,w,⚓,phasal,still,STILL phasal (the state continues); -m could change,anchor holds the ship where it was,notional-standing.md#phasal
-awur,h,⚓,phasal,still.for-now,STILL phasal (the state continues); -r for now: about to end,anchor holds the ship where it was,notional-standing.md#phasal
-awur,w,⚓,phasal,still.for-now,STILL phasal (the state continues); -r for now: about to end,anchor holds the ship where it was,notional-standing.md#phasal
-elel,h,🌱,phasal,not-yet.lasting,NOT-YET phasal (the change is expected but has not happened); -l not expected to change back,seedling has not grown up yet,notional-standing.md#phasal
-elel,w,🌱,phasal,not-yet.lasting,NOT-YET phasal (the change is expected but has not happened); -l not expected to change back,seedling has not grown up yet,notional-standing.md#phasal
-elem,h,🌱,phasal,not-yet,NOT-YET phasal (the change is expected but has not happened); -m could change,seedling has not grown up yet,notional-standing.md#phasal
-elem,w,🌱,phasal,not-yet,NOT-YET phasal (the change is expected but has not happened); -m could change,seedling has not grown up yet,notional-standing.md#phasal
-eler,h,🌱,phasal,not-yet.maybe-never,NOT-YET phasal (the change has not happened); -r the change may never come,seedling has not grown up yet,notional-standing.md#phasal
-eler,w,🌱,phasal,not-yet.maybe-never,NOT-YET phasal (the change has not happened); -r the change may never come,seedling has not grown up yet,notional-standing.md#phasal
-uvul,h,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,notional-standing.md#phasal
-uvul,w,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,notional-standing.md#phasal
-uvum,h,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,notional-standing.md#phasal
-uvum,w,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,notional-standing.md#phasal
-uvur,h,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,notional-standing.md#phasal
-uvur,w,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,notional-standing.md#phasal
+avol,h,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,already-still-yet.md#phasal
+avol,w,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,already-still-yet.md#phasal
+avom,h,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,already-still-yet.md#phasal
+avom,w,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,already-still-yet.md#phasal
+avor,h,🐣,phasal,already.for-now,ALREADY phasal (the change has happened); -r for now: likely to change back,hatched chick is already out of the shell,already-still-yet.md#phasal
+avor,w,🐣,phasal,already.for-now,ALREADY phasal (the change has happened); -r for now: likely to change back,hatched chick is already out of the shell,already-still-yet.md#phasal
+awul,h,⚓,phasal,still.lasting,STILL phasal (the state continues); -l not expected to change back,anchor holds the ship where it was,already-still-yet.md#phasal
+awul,w,⚓,phasal,still.lasting,STILL phasal (the state continues); -l not expected to change back,anchor holds the ship where it was,already-still-yet.md#phasal
+awum,h,⚓,phasal,still,STILL phasal (the state continues); -m could change,anchor holds the ship where it was,already-still-yet.md#phasal
+awum,w,⚓,phasal,still,STILL phasal (the state continues); -m could change,anchor holds the ship where it was,already-still-yet.md#phasal
+awur,h,⚓,phasal,still.for-now,STILL phasal (the state continues); -r for now: about to end,anchor holds the ship where it was,already-still-yet.md#phasal
+awur,w,⚓,phasal,still.for-now,STILL phasal (the state continues); -r for now: about to end,anchor holds the ship where it was,already-still-yet.md#phasal
+elel,h,🌱,phasal,not-yet.lasting,NOT-YET phasal (the change is expected but has not happened); -l not expected to change back,seedling has not grown up yet,already-still-yet.md#phasal
+elel,w,🌱,phasal,not-yet.lasting,NOT-YET phasal (the change is expected but has not happened); -l not expected to change back,seedling has not grown up yet,already-still-yet.md#phasal
+elem,h,🌱,phasal,not-yet,NOT-YET phasal (the change is expected but has not happened); -m could change,seedling has not grown up yet,already-still-yet.md#phasal
+elem,w,🌱,phasal,not-yet,NOT-YET phasal (the change is expected but has not happened); -m could change,seedling has not grown up yet,already-still-yet.md#phasal
+eler,h,🌱,phasal,not-yet.maybe-never,NOT-YET phasal (the change has not happened); -r the change may never come,seedling has not grown up yet,already-still-yet.md#phasal
+eler,w,🌱,phasal,not-yet.maybe-never,NOT-YET phasal (the change has not happened); -r the change may never come,seedling has not grown up yet,already-still-yet.md#phasal
+uvul,h,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,already-still-yet.md#phasal
+uvul,w,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,already-still-yet.md#phasal
+uvum,h,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,already-still-yet.md#phasal
+uvum,w,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,already-still-yet.md#phasal
+uvur,h,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,already-still-yet.md#phasal
+uvur,w,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,already-still-yet.md#phasal
 owal,h,🧪,attempt,ATTEMPT-committed,attempt mood committed (keep going until it works or is ruled out),test tube runs the experiment; a committed attempt keeps testing until it settles,ability.md#try
 owam,h,🧪,attempt,ATTEMPT-unstated,attempt mood (commitment unstated),test tube tries a sample; an attempt is testing whether it works,ability.md#try
 owar,h,🧪,attempt,ATTEMPT-trial,attempt mood trial run (low-stakes probe; failing is useful data),test tube tries a small sample; a trial run is a probe whose failure still teaches,ability.md#try

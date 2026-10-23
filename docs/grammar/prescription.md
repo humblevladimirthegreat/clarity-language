@@ -4,52 +4,6 @@ band: intermediate
 
 # Prescription and motive {#prescription-and-motive}
 
-### Prescription (`the`): ought this act for this sake
-<a id="sake-force"></a>
-
-When English puts *should* / *ought to* on **doing** something for a named sake (*Ahelan ought to sing; it's good for their health*), put a `/th/` word on the clause: sake root, mid-word **`th`**, **`e`**, then an ending. The clause's verb names the act that ought to count toward the sake. The sentence then says the act *ought* to happen; it does not report that the act is already happening.
-
-The ending says why you think the move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the sake. Use **-r** for a trial: the move is worth trying to see whether it serves the sake, not a settled recommendation. These endings describe why the move is offered and what it aims at, not whether it succeeds. How firmly you put the act on the listener is a separate choice, made by the speech-act word on `/y/` (**`yel`** / **`yem`**, **`yal`** / **`yam`**). If none of the three reasons applies, drop **`the`**.
-
-**Compare with:** a [command](speech-moves.md#speech-act-beginner) **`yel`** tells someone to act outright, without naming the sake or why the move is wanted. **`the`** is an *ought* tied to a sake (*ought to, to advance this sake*), with the reason on the ending.
-
-**Compare with:** to ask someone to act for **your** sake, make it a [request](firm-soft.md#speech-act) (**`yem`**) with motive **`tho`**. **`the`** is advice.
-
-<!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English | Cue |
-|--------|-----|---------|-----|
-| `…thel` | the person invited this kind of move | *invited* | **-l** ≈ lasting: their invitation stands |
-| `…them` | an unsolicited offer meant to serve the sake | *offered* | **-m** ≈ open offer |
-| `…ther` | a move worth trying, to see whether it serves the sake | *worth a try* | **-r** ≈ right now (a trial run) |
-
-A sake word with no `/b/` is about **your** sake, so advice for the other person's own good names them in a `bl-` word right after the sake word. In the same sentence, that is the [themself](pronouns.md#themself) pointer **`bwazer`**. The `/b/` says whose stake the act serves, not why they would do it.
-
-> `zuzozen vezuyel thawothem blwazer.`
->
-> z-Uzozen | v-tell | [th-relatedness-ought-offered | bl-←episode-agent.self]
->
-> "Uzozen ought to talk; it would help them feel connected." (unasked advice)
-
-> `zahelan vezuyol thobathel blwazer.`
->
-> z-Ahelan | v-sing | [th-physical-ought-invited | bl-←episode-agent.self]
->
-> "Ahelan ought to sing; it's good for their health." (Ahelan asked for advice)
-
-> `zolazun vabuyel thawother blwazer.`
->
-> z-Olazun | v-bow | [th-relatedness-ought-trial | bl-←episode-agent.self]
->
-> "Olazun could try bowing, to see whether it helps them feel connected."
-
-A move meant to **prevent** harm to the sake is a *so that … not* dependent ([so that](dependents.md#so-that)): **`hovam`** + **`blurl`**, then the outcome to keep off.
-
-> `zolazun vabuyel thawothem blwazer hovam blurl zuzozen velurul.`
->
-> z-Olazun | v-bow | [th-relatedness-ought-offered | bl-←episode-agent.self] | [h-so-that | bl-lest-clause] | z-Uzozen | v-departure
->
-> "Olazun ought to bow to stay connected, so that Uzozen does not leave."
-
 ### Motive (`tho`): time horizon
 <a id="sake-preference"></a>
 
@@ -84,7 +38,6 @@ A reason held **to keep a cost off** is a *so that … not* dependent ([so that]
 
 Neither end is better; a good day needs both, and doing something for a payoff right now is often exactly what is needed. When the **situation** is what pulls the reason, say so with the [because pole](causation.md) and the situation as `/b/`.
 
-
 ### Which ending table?
 
 Beginner already used *serves* and *detracts from*. Intermediate adds *ought this act for* and *doing for*. Pick the ending table that matches the stance vowel.
@@ -93,7 +46,7 @@ Beginner already used *serves* and *detracts from*. Intermediate adds *ought thi
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`tha`** | [time horizon](sakes.md#time-horizon-endings-on-met) endings | *serves* / *met* | **a** ≈ add |
-| **`the`** | [invited / offered / trial](#sake-force) endings | *ought this act for this sake* | **e** ≈ order (instruct / ought) |
+| **`the`** | [invited / offered / trial](ought-for-a-sake.md#sake-force) endings | *ought this act for this sake* | **e** ≈ order (instruct / ought) |
 | **`tho`** | [time horizon](#sake-preference) endings | *doing for this sake* | **o** ≈ one (one sake as the reason) |
 | **`thu`** | [changeability](sakes.md#sake-changeability) endings | *detracts from* / *unmet* | **u** ≈ undo |
 
@@ -110,7 +63,7 @@ Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met a
 | `/w/` sake + another adjective | the stance on that one property | *pleasantly hot* (`wodotham gohamul`) |
 | `gl-` + sake word | the same adjective before the **belonging** | `glawothal zewal` |
 | `th…tha…` on the clause | the event serves the sake | *tells: competence is met* (`thuwatha…`) |
-| `th…the…` on the clause | prescription: the act ought to serve the sake | *ought … for this sake* (`thawothe…`); ending = [invited / offered / trial](#sake-force) |
+| `th…the…` on the clause | prescription: the act ought to serve the sake | *ought … for this sake* (`thawothe…`); ending = [invited / offered / trial](ought-for-a-sake.md#sake-force) |
 | `th…tho…` on the clause | motive | *I talk (to feel connected)* (`thawotho…`) |
 | `/w/` before a sake `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
 
@@ -284,15 +237,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
-**1.** *Uzozen ought to pray; it would help them feel connected.* (unasked advice)
-
-::: details Show answer
-`zuzozen vobuyal thawothem blwazer.`
-
-z-Uzozen | v-pray | [th-relatedness-ought-offered | bl-←episode-agent.self]
-:::
-
-**2.** *I kneel for a quick sense of purpose.*
+**1.** *I kneel for a quick sense of purpose.*
 
 ::: details Show answer
 `zuwon vonuvol thurethor.`
@@ -300,12 +245,20 @@ z-Uzozen | v-pray | [th-relatedness-ought-offered | bl-←episode-agent.self]
 z-speaker | v-kneel | th-purpose-motive-immediate
 :::
 
-**3.** *Ahelan prays for Olazun's relatedness in the long term.*
+**2.** *Ahelan prays for Olazun's relatedness in the long term.*
 
 ::: details Show answer
 `zahelan vobuyal thawothol blolazun.`
 
 z-Ahelan | v-pray | [th-relatedness-motive-lasting | bl-Olazun]
+:::
+
+**3.** *I sit for a lasting sense of purpose.*
+
+::: details Show answer
+`zuwon vuhohol thurethol.`
+
+z-speaker | v-sit | th-purpose-motive-lasting
 :::
 
 **4.** *The candle is too heavy to be safe.*
@@ -318,12 +271,12 @@ z-Ahelan | v-pray | [th-relatedness-motive-lasting | bl-Olazun]
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zahelan vuhohol thobathem blwazer.`
+**1.** `zuzozen vobuyal thawothom.`
 
 ::: details Show answer
-z-Ahelan | v-sit | [th-physical-ought-offered | bl-←episode-agent.self]
+z-Uzozen | v-pray | th-relatedness-motive-any-term
 
-*Ahelan ought to sit; it would help their health.* (unasked advice)
+*Uzozen prays, and to me it is about feeling connected.*
 :::
 
 **2.** `zuwewel gawothol.`
