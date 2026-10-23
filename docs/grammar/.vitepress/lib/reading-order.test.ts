@@ -1,54 +1,61 @@
 import assert from 'node:assert/strict'
 import { describe, it } from 'node:test'
 
-import { lessonPages, pathPages, readingOrder } from './reading-order.js'
-import { holdingList, type HoldingSitting } from './holding-list.js'
-
-const lessons = [
-  { text: 'Why Agebon', link: '/' },
-  { text: 'Word endings', link: '/word-endings' },
-  { text: 'Clause', link: '/clause' },
-] as const
+import {
+  advancedLessons,
+  beginnerLessons,
+  intermediateLessons,
+  lessonPages,
+  levelReviewPages,
+  orientation,
+  pathPages,
+  readingOrder,
+  sidebarGroups,
+} from './reading-order.js'
 
 describe('pathPages', () => {
-  it('matches sidebar order plus the review page when the holding list is empty', () => {
-    const pages = pathPages(readingOrder, [], 'review.md')
+  it('is orientation, then each group with its review last', () => {
+    const pages = pathPages()
     assert.equal(pages[0], 'index.md')
     assert.equal(pages[1], 'introduction.md')
-    assert.equal(pages.at(-1), 'review.md')
-    assert.equal(pages.length, readingOrder.length + 1)
+    assert.equal(pages[2], 'phonology.md')
+    assert.equal(pages.at(-1), 'review-advanced.md')
+    assert.equal(pages.length, readingOrder.length)
     assert.ok(!pages.includes(''))
-  })
-
-  it('splices the live holding list after each parent', () => {
-    const pages = pathPages()
-    assert.equal(pages.length, readingOrder.length + holdingList.length + 1)
-    for (const sitting of holdingList) {
-      const parent = pages.indexOf(sitting.parent)
-      const child = pages.indexOf(sitting.page)
-      assert.ok(parent >= 0, sitting.parent)
-      assert.ok(child > parent, `${sitting.page} after ${sitting.parent}`)
-    }
-  })
-
-  it('splices peeled sittings after their parent, Intermediate before Advanced', () => {
-    const holding: HoldingSitting[] = [
-      { parent: 'word-endings.md', page: 'proper-names.md', band: 'intermediate', title: 'Proper names' },
-      { parent: 'clause.md', page: 'left-bound.md', band: 'intermediate', title: 'Left-bound adjectives' },
-      { parent: 'clause.md', page: 'emphasis.md', band: 'advanced', title: 'Emphasis' },
-    ]
-    assert.deepEqual(pathPages(lessons, holding, 'review.md'), [
-      'index.md',
-      'word-endings.md',
-      'proper-names.md',
-      'clause.md',
-      'left-bound.md',
-      'emphasis.md',
-      'review.md',
-    ])
     assert.deepEqual(
-      lessonPages(lessons, holding).map((item) => item.title),
-      ['Why Agebon', 'Word endings', 'Proper names', 'Clause', 'Left-bound adjectives', 'Emphasis'],
+      pages.filter((page) => levelReviewPages.includes(page as (typeof levelReviewPages)[number])),
+      [...levelReviewPages],
     )
+  })
+
+  it('keeps each review last in its sidebar group', () => {
+    assert.equal(sidebarGroups[0]!.items.at(-1)?.link, '/review')
+    assert.equal(sidebarGroups[1]!.items.at(-1)?.link, '/review-intermediate')
+    assert.equal(sidebarGroups[2]!.items.at(-1)?.link, '/review-advanced')
+    assert.equal(sidebarGroups[1]!.collapsed, true)
+    assert.equal(sidebarGroups[2]!.collapsed, true)
+  })
+
+  it('walks Beginner sittings, then Intermediate, then Advanced', () => {
+    const pages = pathPages()
+    const beginnerEnd = pages.indexOf('review.md')
+    const intermediateEnd = pages.indexOf('review-intermediate.md')
+    const advancedEnd = pages.indexOf('review-advanced.md')
+    assert.equal(pages[orientation.length], 'phonology.md')
+    assert.equal(pages[beginnerEnd - 1], 'intention.md')
+    assert.equal(pages.slice(orientation.length, beginnerEnd).length, beginnerLessons.length)
+    assert.equal(pages.slice(beginnerEnd + 1, intermediateEnd).length, intermediateLessons.length)
+    assert.equal(pages.slice(intermediateEnd + 1, advancedEnd).length, advancedLessons.length)
+    assert.ok(intermediateEnd > beginnerEnd)
+    assert.ok(advancedEnd > intermediateEnd)
+  })
+})
+
+describe('lessonPages', () => {
+  it('uses job titles for later sittings', () => {
+    const titles = lessonPages().map((item) => item.title)
+    assert.ok(titles.includes('Rank joins'))
+    assert.ok(titles.includes('Proper names and titled phrases'))
+    assert.equal(titles.filter((title) => title === 'Review').length, 3)
   })
 })

@@ -1,8 +1,10 @@
+---
+band: intermediate
+---
+
 # Topic {#discourse-topic}
 
 English *now, about Uzozen…*, *speaking of dogs…*, and *so, back to Uzozen…* say what the talk is about from here on, and every later *he* or *it* follows. Agebon makes that overt as a **topic**. Pointing back at someone already named, without setting what the talk is about, is in [pronouns](pronouns.md).
-
-## Intermediate {#intermediate}
 
 ### Topic {#topic}
 

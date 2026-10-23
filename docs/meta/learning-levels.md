@@ -1,6 +1,6 @@
 # Learning levels (beginner / intermediate / advanced)
 
-Applies **only** to learner grammar pages under **`docs/grammar/`** (not to `meta/`, `examples/`, or `proposals/`). Those pages are organized so a learner can finish **all beginner** sections across the folder before **intermediate**, then **advanced**. Levels are assigned with a **small fixed rubric**, applied **loosely** — enough consistency for a cross-doc path, not a score for every morph.
+Applies **only** to learner grammar pages under **`docs/grammar/`** (not to `meta/`, `examples/`, or `proposals/`). Those pages are organized so a learner can finish the **Beginner** sidebar group before **Intermediate**, then **Advanced**. Levels are assigned with a **small fixed rubric**, applied **loosely** — enough consistency for a cross-doc path, not a score for every morph.
 
 This page is pedagogy, not language design. Design authority stays in the `docs/grammar/` pages. Prose and example style for those pages: [grammar-docs.md](grammar-docs.md). Translation checkpoints at stage ends: [translation-exercises.md](translation-exercises.md). Generating missing checkpoints: [drill-generation.md](drill-generation.md).
 
@@ -24,9 +24,9 @@ Ask in order. Prefer the **earlier** stage when a concept sits on a boundary and
 
 ## How to apply
 
-- One sitting per file, marked with front matter `band: beginner | intermediate | advanced`. The sidebar will group sittings by band (regroup is a later step). Peel a later band off a parent with `npm run peel-band` rather than tagging several bands with H2s on a new page. Unsplit pages still use `## Beginner` / `## Intermediate` / `## Advanced` until peeled. Omit a later sitting when it would only recap or list unused slots ([empty or pointless stages](grammar-docs.md#empty-stages)).
+- One sitting per file, marked with front matter `band: beginner | intermediate | advanced`. The sidebar groups sittings by band. Peel a later band off a parent with `npm run peel-band` rather than tagging several bands with H2s on a new page. Omit a later sitting when it would only recap or list unused slots ([empty or pointless stages](grammar-docs.md#empty-stages)).
 - Sibling splits by **job** when *S* > 10 still apply ([drill-generation](drill-generation.md)); this split is by **sitting**. Later sittings of the same topic use a job title, not the topic name again.
-- Do **not** score every morph. For each sitting (or each H2/H3 on an unsplit page), run the three questions, pick a stage, move on.
+- Do **not** score every morph. For each sitting, run the three questions, pick a stage, move on.
 - When stages conflict, **dependency wins** over subjective difficulty.
 - Boundary cases needed early for reading examples → prefer the **earlier** stage.
 - Grammar prose: [teach now; don’t preview later](grammar-docs.md#teach-now-dont-preview-later) — no teaser links to peers the path has not reached yet. Later-stage H3s: [Intermediate and Advanced stage shape](grammar-docs.md#later-stage-shape).
@@ -35,42 +35,12 @@ Ask in order. Prefer the **earlier** stage when a concept sits on a boundary and
 ## Cross-doc path
 <a id="cross-doc-path"></a>
 
-Read **`docs/grammar/`** only, in stage order: every Beginner sitting, then Intermediate, then Advanced. Until the sidebar regroups, that order still walks the current Agebon Lessons list (H2s on unsplit pages, `band:` on peeled ones, holding-list sittings after their parent). [purpose.md](../grammar/purpose.md) and [introduction.md](../grammar/introduction.md) are orientation (not stages). Learner-facing [How to learn](../grammar/introduction.md#how-to-learn) still describes H2s until regroup.
+Read **`docs/grammar/`** only, in the three sidebar groups: every Beginner sitting, then Intermediate, then Advanced. Each group ends with its review. [purpose.md](../grammar/purpose.md) and [introduction.md](../grammar/introduction.md) are orientation (not sittings); they sit above the Beginner group. Learner-facing [How to learn](../grammar/introduction.md#how-to-learn) matches this.
 
-### Beginner
-
-1. [purpose.md](../grammar/purpose.md) — psychological purpose, limits, benefit tour (not a learning stage)
-2. [introduction.md](../grammar/introduction.md) — name, grammar design, how to learn
-3. [phonology.md Beginner](../grammar/phonology.md) (letters / word edges)
-4. [word-endings.md Beginner](../grammar/word-endings.md) (citation **-l** / **-m** / **-n**)
-5. [clause.md Beginner](../grammar/clause.md)
-6. [speech-moves.md Beginner](../grammar/speech-moves.md)
-7. [dependents.md Beginner](../grammar/dependents.md)
-8. [pronouns.md](../grammar/pronouns.md) · [plurality.md](../grammar/plurality.md)
-9. [predication.md](../grammar/predication.md)
-10. [joins.md](../grammar/joins.md)
-11. [questions.md](../grammar/questions.md)
-12. [hooks.md](../grammar/hooks.md) · [restrictors.md](../grammar/restrictors.md)
-13. [relations.md Beginner](../grammar/relations.md)
-14. [spans.md](../grammar/spans.md)
-15. [numbers.md](../grammar/numbers.md) · [comparatives.md](../grammar/comparatives.md) · [causation.md](../grammar/causation.md)
-16. [sakes.md](../grammar/sakes.md) · [intention.md](../grammar/intention.md) · [knowing.md](../grammar/knowing.md) · [roles.md](../grammar/roles.md) · [compounds.md](../grammar/compounds.md) · [intention.md](../grammar/intention.md)
-
-Then the [Beginner level review](../grammar/review.md#beginner) ([level reviews](translation-exercises.md#level-reviews)).
-
-[join-across-roles.md](../grammar/join-across-roles.md) starts at Intermediate (no Beginner slot). [notional-standing.md](../grammar/notional-standing.md) starts at Intermediate (no Beginner slot). [topic.md](../grammar/topic.md) starts at Intermediate (no Beginner slot). [fill-ask-roles.md](../grammar/fill-ask-roles.md) starts at Intermediate (no Beginner slot). [discourse-hooks.md](../grammar/discourse-hooks.md) starts at Intermediate (no Beginner slot). [digitless-exponents.md](../grammar/digitless-exponents.md) starts at Intermediate (no Beginner slot). [feelings-permission.md](../grammar/feelings-permission.md) starts at Intermediate (no Beginner slot). Emotion compose is an Intermediate section in [feelings-permission.md](../grammar/feelings-permission.md#emotion-compose); the holder (whose view) is Intermediate and channels on a generalization are Advanced in [knowing.md](../grammar/universality.md#universality). [ability.md](../grammar/ability.md) **DECISION** is Intermediate; plan / predict is Beginner on [intention.md](../grammar/intention.md). [numbers-applied.md](../grammar/numbers-applied.md) starts at Intermediate (depends on numbers). [numeric-derivation.md](../grammar/numeric-derivation.md) is Advanced-only.
-
-[causation.md](../grammar/causation.md), [intention.md](../grammar/intention.md), [pronouns.md](../grammar/pronouns.md), [questions.md](../grammar/questions.md) and [roles.md](../grammar/roles.md) have no Advanced stage: their former Advanced sections were applications and live on the recipe track.
+[causation.md](../grammar/causation.md), [intention.md](../grammar/intention.md), [pronouns.md](../grammar/pronouns.md), [questions.md](../grammar/questions.md) and [roles.md](../grammar/roles.md) have no Advanced sitting: their former Advanced sections were applications and live on the recipe track.
 
 ### Recipe track (outside the stages) {#recipe-track}
 
-[english.md](../grammar/english.md) and the `say-*.md` pages (**Saying it in Agebon**) sit outside the stage order and off the reading-order sidebar group. Each recipe answers an English job with forms taught elsewhere and lists them on a **Needs:** line. Stage pages never link to the track ([recipe track](grammar-docs.md#recipe-track)).
+[english.md](../grammar/english.md) and the `say-*.md` pages (**Saying it in Agebon**) sit outside the stage order and off the three lesson groups. Each recipe answers an English job with forms taught elsewhere and lists them on a **Needs:** line. Stage pages never link to the track ([recipe track](grammar-docs.md#recipe-track)).
 
-### Intermediate then Advanced
-
-17. Every peer’s **[Intermediate](../grammar/left-bound.md)** section (same dependency order as above is fine). Include numbers Intermediate, [digitless-exponents.md](../grammar/digitless-exponents.md), [numbers-applied.md](../grammar/numbers-applied.md), join-across-roles, [topic.md](../grammar/topic.md#intermediate), [fill-ask-roles.md](../grammar/fill-ask-roles.md#intermediate), [discourse-hooks.md](../grammar/discourse-hooks.md#intermediate), [feelings-permission.md](../grammar/feelings-permission.md#intermediate), [notional-standing.md](../grammar/notional-standing.md#intermediate), overlay material, and [ability.md](../grammar/ability.md) **DECISION** / forecast source.
-18. Every peer’s **Advanced** section, including numbers Advanced, [relations.md](../grammar/as-of.md#as-of) *as-of*, and [numeric-derivation.md](../grammar/numeric-derivation.md). Skip pages with no Advanced.
-
-Each level closes with its band of [review.md](../grammar/review.md): Intermediate after step 17, Advanced after step 18.
-
-Learner-facing reading order: site sidebar (**Agebon Lessons**); stage notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).
+Learner-facing reading order: site sidebar (the three groups); stage notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).

@@ -12,8 +12,8 @@
  * **Also correct:** variants pass the item rules (src/lint/practice-item-rules.ts). Their
  * **New words** / **Review** bank has the template columns and a cue on every new row, and
  * its roots match the `core` column in path order (src/core-vocabulary.ts).
- * The level review page comes after every stage page: it introduces no roots, and each band's
- * items link back to every stage checkpoint of that level (src/lint/level-review.ts).
+ * Each level review sits last in its sidebar group: it introduces no roots, and its items
+ * link back to every stage checkpoint of that level (src/lint/level-review.ts).
  * Free English lines on top-level grammar pages are checked for the sentence-and-note shape
  * (src/lint/free-english.ts); so are table English cells that translate an Agebon phrase or
  * sentence, there and on cheat sheets, for shape and parentheses inside the sentence.
@@ -75,8 +75,8 @@ import {
   type ConstructionUse,
 } from "../src/lint/drill-coverage.js";
 import { CONSTRUCTIONS as STATIC_CONSTRUCTIONS, constructionRegistry } from "../src/parse/constructions.js";
-import { holdingList } from "../docs/grammar/.vitepress/lib/holding-list.js";
-import { lessonPages, levelReviewPage, pathPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { hashRedirects } from "../docs/grammar/.vitepress/lib/hash-redirect.js";
+import { isLevelReview, lessonPages, levelReviewPages, pathPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { lintLevelReview } from "../src/lint/level-review.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
@@ -151,14 +151,19 @@ function lintOverlayHosts(): number {
 }
 
 /** Prints construction-coverage gaps; returns their number. */
-function checkConstructionCoverage(uses: readonly ConstructionUse[]): number {
+function extraPagesFromPeels(): Map<string, string[]> {
   const extraPages = new Map<string, string[]>();
-  for (const sitting of holdingList) {
-    const list = extraPages.get(sitting.parent) ?? [];
-    list.push(sitting.page);
-    extraPages.set(sitting.parent, list);
+  for (const row of hashRedirects) {
+    if (row.to === row.page) continue;
+    const list = extraPages.get(row.page) ?? [];
+    if (!list.includes(row.to)) list.push(row.to);
+    extraPages.set(row.page, list);
   }
-  const gaps = constructionCoverageGaps(STATIC_CONSTRUCTIONS, uses, extraPages);
+  return extraPages;
+}
+
+function checkConstructionCoverage(uses: readonly ConstructionUse[]): number {
+  const gaps = constructionCoverageGaps(STATIC_CONSTRUCTIONS, uses, extraPagesFromPeels());
   if (gaps.length === 0) return 0;
   console.error(
     `\n${gaps.length} construction(s) not exercised by their anchor page. ` +
@@ -357,7 +362,7 @@ function main(): void {
       console.log(formatMorphGlossFinding(rel, finding));
     }
 
-    const review = dirname(file) === grammarDir && basename(file) === levelReviewPage;
+    const review = dirname(file) === grammarDir && isLevelReview(basename(file));
     for (const finding of lintPracticeItems(original, tables, { review, page: basename(file) })) {
       practiceCount += 1;
       console.error(`${rel}:${lineNumberAt(original, finding.index)}  practice-item  (${finding.detail})`);
@@ -414,13 +419,13 @@ function main(): void {
   let lookAlikeCount = 0;
   let reviewCount = 0;
   if (paths.length === 0) {
-    // The level review page comes last, so each of its bands closes that level.
+    // Each level review is last in its group, so it closes that level.
     const orderPages = pathPages();
     const order = learningOrder(orderPages, pages);
     coverageCount = checkConstructionCoverage(uses);
     orderCount = reportLearningOrder(order, uses, orderReport);
     drillCount = reportDrillCoverage(order, uses);
-    const checkpoints = stageCheckpoints(orderPages, (page) => pageMarkdown.get(page), tables, levelReviewPage);
+    const checkpoints = stageCheckpoints(orderPages, (page) => pageMarkdown.get(page), tables, levelReviewPages);
     const core = storedCore();
     for (const finding of lintCoreCounts(checkpoints, core)) {
       coreCount += 1;
@@ -430,11 +435,12 @@ function main(): void {
       lookAlikeCount += 1;
       console.error(`docs/grammar/${finding.page}:${finding.line}  look-alike  (${finding.detail})`);
     }
-    const reviewMarkdown = pageMarkdown.get(levelReviewPage);
-    if (reviewMarkdown !== undefined) {
-      for (const finding of lintLevelReview(order, levelReviewPage, reviewMarkdown)) {
+    for (const reviewPage of levelReviewPages) {
+      const reviewMarkdown = pageMarkdown.get(reviewPage);
+      if (reviewMarkdown === undefined) continue;
+      for (const finding of lintLevelReview(order, reviewPage, reviewMarkdown, levelReviewPages)) {
         reviewCount += 1;
-        console.error(`docs/grammar/${levelReviewPage}:${lineNumberAt(reviewMarkdown, finding.index)}  level-review  (${finding.detail})`);
+        console.error(`docs/grammar/${reviewPage}:${lineNumberAt(reviewMarkdown, finding.index)}  level-review  (${finding.detail})`);
       }
     }
   }

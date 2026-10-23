@@ -3,11 +3,9 @@
  *
  * Global order: every Beginner sitting in sidebar order, then Intermediate,
  * then Advanced; within a sitting, heading order. A page with front matter
- * `band:` is that sitting (still honor `## See also`). Unsplit pages still
- * open a band at `## Beginner` / `## Intermediate` / `## Advanced`, so
- * `### Beginner forms` stays inside its `## Beginner`. Doc order comes from
- * the sidebar's `readingOrder` (plus peeled sittings on the holding list),
- * passed in by the caller at run time. Pages off that list are not checked.
+ * `band:` is that sitting (still honor `## See also`). Doc order comes from
+ * the three sidebar groups, flattened, passed in by the caller at run time.
+ * Pages off that list are not checked.
  */
 import { anchorTags, grammarHeadings } from "./grammar-anchors.js";
 
@@ -116,7 +114,7 @@ export type LearningOrder = {
 
 /**
  * Number every banded section. `readingOrder` is the list of pages (`clause.md`,
- * …) in sidebar order, with peeled sittings already spliced after their parent;
+ * …) in sidebar order (orientation, then each group with its review last);
  * sections of pages off that list get no position.
  */
 export function learningOrder(readingOrder: readonly string[], pages: Map<string, PageSections>): LearningOrder {

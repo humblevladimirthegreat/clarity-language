@@ -1,8 +1,10 @@
+---
+band: advanced
+---
+
 # Numeric prefixes {#numeric-derivation-page}
 
 To name a kind of thing by a number idea, put a [number](numbers.md) body in front of a content root, joined by **`x`**, the way English puts *quasi-*, *proto-*, *multi-*, or *tri-* in front of a noun. The number then describes the kind itself (its essence, its parts, its rank, its catalog code) instead of counting anything in the sentence. The root comes last, as in every **`x`** compound, so the word is a kind of the root. (cue: number, then **`x`**, then the root)
-
-## Advanced {#advanced}
 
 ### Numeric prefixes (number + `x` + `ROOT`) {#numeric-derivation}
 

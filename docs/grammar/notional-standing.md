@@ -1,8 +1,10 @@
+---
+band: intermediate
+---
+
 # Notional and standing {#notional-standing}
 
 English *as if*, *it turns out*, *has left*, and *still* mix imagining a scene, news against expectation, and how a claim stands now. Agebon keeps those apart: **NOTIONAL** for an imagined scene, **MIRATIVE** for news that ran against what you expected, **RESIDUE** and **FORMER** for how an outcome or a usual pattern stands, and *already* / *still* / *not yet* / *no longer* for a change compared with now. How you know a world-claim is in [knowing](knowing.md).
-
-## Intermediate {#intermediate}
 
 ### Mirative (`themom`) {#mirative}
 

@@ -4,7 +4,7 @@
  * Run: npm run peel-band -- --parent word-endings.md --band intermediate --to proper-names.md --title "Proper names and titled phrases"
  *      npm run peel-band -- --parent word-endings.md --band intermediate --to proper-names.md --title "Proper names and titled phrases" --write
  *
- * Dry run prints the new sitting, parent, hash-map rows, holding-list row, and
+ * Dry run prints the new sitting, parent, hash-map rows, sidebar row, and
  * construction homes on retired band fragments. `--write` applies them, then
  * run `npm run cheat-sheet-blocks -- --write` and `npm run build`.
  */
@@ -21,8 +21,14 @@ import {
 } from "./lib/peel-band.ts";
 
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
-const holdingPath = join(grammarDir, ".vitepress", "lib", "holding-list.ts");
+const readingOrderPath = join(grammarDir, ".vitepress", "lib", "reading-order.ts");
 const hashPath = join(grammarDir, ".vitepress", "lib", "hash-redirect.ts");
+
+const LESSON_EXPORT: Record<Band, string> = {
+  beginner: "beginnerLessons",
+  intermediate: "intermediateLessons",
+  advanced: "advancedLessons",
+};
 
 const SCAN_DIRS = [
   join(REPO_ROOT, "docs"),
@@ -140,7 +146,9 @@ function main(): void {
     const dest = row.to === row.page ? `${row.page} (top)` : row.to;
     console.log(`  ${row.page}#${row.hash} → ${dest}`);
   }
-  console.log(`Holding list: after ${result.holding.parent} → ${result.holding.page} (${result.holding.title})`);
+  console.log(
+    `Sidebar: append ${result.holding.page} to ${options.band} (${result.holding.title})`,
+  );
   console.log("Construction homes on retired band fragments:");
   for (const [from, to] of result.homeMap) console.log(`  ${from} → ${to}`);
   console.log("Update the AGENTS.md Owns line if a job left the parent.");
@@ -154,8 +162,11 @@ function main(): void {
   writeFileSync(sittingPath, result.sitting);
   writeFileSync(parentPath, result.parent);
   writeFileSync(
-    holdingPath,
-    appendObjectToExportedArray(readFileSync(holdingPath, "utf8"), "holdingList", result.holding),
+    readingOrderPath,
+    appendObjectToExportedArray(readFileSync(readingOrderPath, "utf8"), LESSON_EXPORT[options.band], {
+      text: options.title,
+      link: `/${options.to.replace(/\.md$/, "")}`,
+    }),
   );
   let hashSource = readFileSync(hashPath, "utf8");
   for (const row of result.hashRedirects) {
@@ -163,7 +174,7 @@ function main(): void {
   }
   writeFileSync(hashPath, hashSource);
 
-  const skip = new Set([parentPath, sittingPath, holdingPath, hashPath]);
+  const skip = new Set([parentPath, sittingPath, readingOrderPath, hashPath]);
   for (const file of rewriteTargets()) {
     if (skip.has(file)) continue;
     const original = readFileSync(file, "utf8");

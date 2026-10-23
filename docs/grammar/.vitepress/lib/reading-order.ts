@@ -1,53 +1,124 @@
-import { holdingList, type HoldingSitting } from './holding-list.js'
-
-/** Grammar reading order: the sidebar, and the learning order the docs lint checks against. */
-export const readingOrder = [
+/** Orientation rows sit above the three lesson groups and are not sittings. */
+export const orientation = [
   { text: 'Why Agebon', link: '/' },
   { text: 'Agebon Introduction', link: '/introduction' },
+]
+
+/** Beginner sittings; the group’s Review is appended in `withReview`. */
+export const beginnerLessons = [
   { text: 'Phonology', link: '/phonology' },
   { text: 'Word endings', link: '/word-endings' },
   { text: 'Clause', link: '/clause' },
   { text: 'Speech moves', link: '/speech-moves' },
   { text: 'Dependents', link: '/dependents' },
   { text: 'Pronouns', link: '/pronouns' },
-  { text: 'Topic', link: '/topic' },
   { text: 'Plurality', link: '/plurality' },
   { text: 'Predication', link: '/predication' },
   { text: 'Joins', link: '/joins' },
   { text: 'Questions', link: '/questions' },
-  { text: 'Fill-ask roles', link: '/fill-ask-roles' },
   { text: 'Hooks', link: '/hooks' },
-  { text: 'Discourse hooks', link: '/discourse-hooks' },
   { text: 'Restrictors', link: '/restrictors' },
   { text: 'Relations', link: '/relations' },
   { text: 'Spans', link: '/spans' },
   { text: 'Numbers', link: '/numbers' },
-  { text: 'Digitless and exponents', link: '/digitless-exponents' },
   { text: 'Comparatives', link: '/comparatives' },
   { text: 'Causation', link: '/causation' },
   { text: 'Sakes', link: '/sakes' },
-  { text: 'Feelings and permission', link: '/feelings-permission' },
   { text: 'Knowing', link: '/knowing' },
-  { text: 'Notional and standing', link: '/notional-standing' },
   { text: 'Role compounds', link: '/roles' },
   { text: 'Compounds', link: '/compounds' },
   { text: 'Intention', link: '/intention' },
+]
+
+/** Intermediate sittings, in the same topic order as the Beginner group. */
+export const intermediateLessons = [
+  { text: 'Phonotactics and letter names', link: '/phonotactics' },
+  { text: 'Proper names and titled phrases', link: '/proper-names' },
+  { text: 'Left-bound adjectives and chaining', link: '/left-bound' },
+  { text: 'Speech acts and tone marks', link: '/speech-acts' },
+  { text: 'Sentence linkers and stand-ins', link: '/sentence-linkers' },
+  { text: 'Tag pronouns and resume sense', link: '/tag-pronouns' },
+  { text: 'Topic', link: '/topic' },
+  { text: 'Collectives', link: '/collectives' },
+  { text: 'Label scope', link: '/label-scope' },
+  { text: 'Rank joins', link: '/rank-joins' },
+  { text: 'Polar inventory and rhetorical', link: '/polar-inventory' },
+  { text: 'Fill-ask roles', link: '/fill-ask-roles' },
+  { text: 'Ending grids', link: '/ending-grids' },
+  { text: 'Discourse hooks', link: '/discourse-hooks' },
+  { text: 'More occasions', link: '/more-occasions' },
+  { text: 'Of-relations and social ties', link: '/of-relations' },
+  { text: 'Mention and scope islands', link: '/span-mention' },
+  { text: 'Word shape, markers, and endings', link: '/number-markers' },
+  { text: 'Digitless and exponents', link: '/digitless-exponents' },
+  { text: 'Comparative arity and scales', link: '/comparative-arity' },
+  { text: 'Iff, fault, and CAUSE', link: '/iff-fault' },
+  { text: 'Prescription and motive', link: '/prescription' },
+  { text: 'Feelings and permission', link: '/feelings-permission' },
+  { text: 'Evidentiality', link: '/evidentiality' },
+  { text: 'Notional and standing', link: '/notional-standing' },
+  { text: 'Viewpoint and landmark', link: '/viewpoint' },
+  { text: 'Compound families', link: '/compound-families' },
+  { text: 'Ability, decision, and try', link: '/ability' },
   { text: 'Join across roles', link: '/join-across-roles' },
   { text: 'Numbers in use', link: '/numbers-applied' },
+]
+
+/** Advanced sittings, in the same topic order as the earlier groups. */
+export const advancedLessons = [
+  { text: 'Singability and speech edges', link: '/singability' },
+  { text: 'Emphasis and audible start', link: '/emphasis' },
+  { text: 'Lexicalized stand-ins', link: '/stand-in-roles' },
+  { text: 'Join islands and role grid', link: '/join-islands' },
+  { text: 'Hook compounds', link: '/hook-compounds' },
+  { text: 'As-of', link: '/as-of' },
+  { text: 'Editorial close and nesting', link: '/span-nesting' },
+  { text: 'End-relative and stacked markers', link: '/stacked-markers' },
+  { text: 'Special values, hyperbole, number as stance', link: '/special-values' },
+  { text: 'Stance bars', link: '/stance-bars' },
+  { text: 'Universality and dated channel', link: '/universality' },
+  { text: 'Root tails', link: '/root-tails' },
+  { text: 'Initials, rays, named ranges', link: '/initials' },
   { text: 'Numeric prefixes', link: '/numeric-derivation' },
 ]
 
-/**
- * Level reviews: one page with a band per level. The docs lint reads it after every stage page,
- * so each band's review comes after every stage band of that level.
- */
+export const levelReviews = [
+  { text: 'Review', link: '/review' },
+  { text: 'Review', link: '/review-intermediate' },
+  { text: 'Review', link: '/review-advanced' },
+] as const
+
+/** Beginner review slug; keep the public URL. */
 export const levelReviewPage = 'review.md'
 
-/** Sidebar links to each level's review band. */
-export const levelReviews = [
-  { text: 'Beginner review', link: '/review#beginner' },
-  { text: 'Intermediate review', link: '/review#intermediate' },
-  { text: 'Advanced review', link: '/review#advanced' },
+export const levelReviewPages = ['review.md', 'review-intermediate.md', 'review-advanced.md'] as const
+
+export function isLevelReview(page: string): boolean {
+  return (levelReviewPages as readonly string[]).includes(page)
+}
+
+export type LessonLink = { text: string; link: string }
+
+function withReview(lessons: readonly LessonLink[], review: LessonLink): LessonLink[] {
+  return [...lessons, review]
+}
+
+/** Three sidebar groups. Intermediate and Advanced start collapsed. */
+export const sidebarGroups = [
+  { text: 'Beginner', items: withReview(beginnerLessons, levelReviews[0]) },
+  { text: 'Intermediate', collapsed: true, items: withReview(intermediateLessons, levelReviews[1]) },
+  { text: 'Advanced', collapsed: true, items: withReview(advancedLessons, levelReviews[2]) },
+]
+
+/**
+ * Flattened curriculum: orientation, then Beginner (review last), Intermediate,
+ * Advanced. Prev/next and the docs lint walk this list.
+ */
+export const readingOrder: LessonLink[] = [
+  ...orientation,
+  ...sidebarGroups[0]!.items,
+  ...sidebarGroups[1]!.items,
+  ...sidebarGroups[2]!.items,
 ]
 
 function pageFile(link: string): string {
@@ -55,30 +126,14 @@ function pageFile(link: string): string {
   return `${path || 'index'}.md`
 }
 
-/** Sidebar lessons plus holding-list sittings after their parent. */
+/** Sidebar curriculum pages (orientation, sittings, and each group’s review). */
 export function lessonPages(
-  lessons: readonly { text: string; link: string }[] = readingOrder,
-  holding: readonly HoldingSitting[] = holdingList,
+  lessons: readonly LessonLink[] = readingOrder,
 ): { page: string; title: string }[] {
-  const out: { page: string; title: string }[] = []
-  for (const item of lessons) {
-    const page = pageFile(item.link)
-    out.push({ page, title: item.text })
-    for (const sitting of holding) {
-      if (sitting.parent === page) out.push({ page: sitting.page, title: sitting.title })
-    }
-  }
-  return out
+  return lessons.map((item) => ({ page: pageFile(item.link), title: item.text }))
 }
 
-/**
- * Stage pages in path order, level review last. Holding-list sittings sit after
- * their parent so Intermediate/Advanced peels stay in the right band walk.
- */
-export function pathPages(
-  lessons: readonly { text: string; link: string }[] = readingOrder,
-  holding: readonly HoldingSitting[] = holdingList,
-  review = levelReviewPage,
-): string[] {
-  return [...lessonPages(lessons, holding).map((item) => item.page), review]
+/** Stage pages in path order, reviews last in each band group. */
+export function pathPages(lessons: readonly LessonLink[] = readingOrder): string[] {
+  return lessonPages(lessons).map((item) => item.page)
 }

@@ -187,8 +187,11 @@ export function sakeInventoryRoots(sakesMarkdown: string): string[] {
   return roots;
 }
 
-/** Inputs from data/ and docs/grammar/: `pages` is the reading order with titles, level review last. */
-export function loadFlashcardInputs(pages: readonly { page: string; title: string }[], reviewPage: string): FlashcardInputs {
+/** Inputs from data/ and docs/grammar/: `pages` is the reading order with titles, reviews last in each group. */
+export function loadFlashcardInputs(
+  pages: readonly { page: string; title: string }[],
+  reviewPages: string | readonly string[],
+): FlashcardInputs {
   const grammarDir = join(REPO_ROOT, "docs", "grammar");
   const markdown = new Map<string, string>();
   for (const { page } of pages) {
@@ -211,7 +214,7 @@ export function loadFlashcardInputs(pages: readonly { page: string; title: strin
     published: parsePublishedCsv(readData("lexicon-published.csv")),
     compounds: parseCompoundCsv(readData("lexicon-compounds.csv")),
     overlays: parseOverlayCsv(readData("lexicon-overlays.csv")),
-    checkpoints: stageCheckpoints(pages.map((p) => p.page), (page) => markdown.get(page), loadDefaultTables(), reviewPage),
+    checkpoints: stageCheckpoints(pages.map((p) => p.page), (page) => markdown.get(page), loadDefaultTables(), reviewPages),
     anchorBand: (anchor) => {
       const [page, id] = anchor.split("#") as [string, string | undefined];
       return sectionsOf(page).anchors.get(id ?? "")?.band;

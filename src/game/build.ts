@@ -6,7 +6,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { levelReviewPage, pathPages } from "../../docs/grammar/.vitepress/lib/reading-order.js";
+import { isLevelReview, pathPages } from "../../docs/grammar/.vitepress/lib/reading-order.js";
 import { NOT_CORE_ROOTS } from "../core-vocabulary.js";
 import { listMarkdown } from "../markdown-files.js";
 import { extractMorphPairs } from "../lint/morph-gloss-docs.js";
@@ -136,7 +136,7 @@ export function fixItRules(tables: ClassifyTables): RecastRule[] {
     const markdown = readPage(page);
     if (markdown === undefined) continue;
     const { sections } = pageSections(page, markdown);
-    for (const item of practiceItems(markdown, { review: page === levelReviewPage }).items) {
+    for (const item of practiceItems(markdown, { review: isLevelReview(page) }).items) {
       if (item.type !== "fix") continue;
       const wrong = item.promptSpans.find((span) => span.marker?.includes("lint: error"))?.text;
       const right = item.spoiler.find((line) => line.kind === "agebon")?.text.replace(/^`|`$/g, "");

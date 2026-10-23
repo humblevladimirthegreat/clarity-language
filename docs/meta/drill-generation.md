@@ -49,7 +49,7 @@ Find the row(s) in the [allowlist](#allowlist).
 - [translation-exercises.md](translation-exercises.md) (principles, [checkpoint setting](translation-exercises.md#checkpoint-setting), template)
 - [grammar-docs.md](grammar-docs.md#house-cast) (house people)
 - [glosses.md](glosses.md#house-cast) (name glosses — not needed inside spoilers)
-- **This sitting only** of the target file (`band:` on the file, or `## Beginner` *or* `## Intermediate` *or* `## Advanced` on an unsplit page) plus the page title / **Needs:** line
+- **This sitting only** of the target file (`band:` on the file) plus the page title / **Needs:** line
 - Worked examples **inside that stage** (gold corpus for **morph** packaging, not for checkpoint verbs)
 - `data/lexicon-published.csv` (and overlays / compounds CSVs) to certify a setting English gloss has a published stem
 - `npm run core-vocabulary -- --for <page>.md:<band>`, to pick **New words** and **Review**. It lists the core roots this checkpoint may introduce, the next later core roots a setting could pull forward, and the earlier core roots ranked by how many checkpoints have passed since a bank last used them. Take review roots from the top of that list unless the setting needs others
@@ -84,7 +84,7 @@ If you cannot certify a token, drop the item. Do not guess from English. Do not 
 
 ### 5. Write the checkpoint
 
-Place **`### Practice {#<band>-practice}`** at the **end of the sitting**, immediately before `## See also` / end of file, or on an unsplit page immediately before the next `## Intermediate` / `## Advanced`. Do not insert after every H3. Do not add a second checkpoint in the same sitting unless the allowlist row says **split**.
+Place **`### Practice {#<band>-practice}`** at the **end of the sitting**, immediately before `## See also` / end of file. Do not insert after every H3. Do not add a second checkpoint in the same sitting unless the allowlist row says **split**.
 
 Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Then the **New words** and **Review** tables ([vocab table](translation-exercises.md#vocab-table)): house names and `SELF` sit in New words on their first checkpoint and in Review after. House-person **English** is *Uzozen* / *Olazun* / *Ahelan*, not `*grace* (name **Uzozen**)`. Pick a setting **not already named** in [settings](#settings) ([unique globally](translation-exercises.md#checkpoint-setting)); write the same phrase into this file’s cell when you replace. At least half the items in each translation direction use a root or situation of the setting. Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill.
 
@@ -114,9 +114,9 @@ Reply with: which checkpoints you added, replaced, or skipped, the new and revie
 
 One level per agent, once every stage checkpoint of that level is a `### Practice`. Shape and rules: [level reviews](translation-exercises.md#level-reviews).
 
-1. **Target.** The level's band on [review.md](../grammar/review.md): `## <Band>` then `### Practice {#<band>-practice}`, after the earlier bands. Add the band's link to `levelReviews` in `docs/grammar/.vitepress/lib/reading-order.ts`, and to the review sentence in [introduction.md How to learn](../grammar/introduction.md#how-to-learn).
+1. **Target.** The level's review file ([review.md](../grammar/review.md), `review-intermediate.md`, `review-advanced.md`): `### Practice {#<band>-practice}`, last in that sidebar group. Add the file to that group in `docs/grammar/.vitepress/lib/reading-order.ts`, and to the review sentence in [introduction.md How to learn](../grammar/introduction.md#how-to-learn).
 2. **Read.** Each stage checkpoint of the level in path order (`npm run core-vocabulary` lists them), its allowlist **Introduces** cell, and the teaching section that owns its main decision. Do not open later levels.
-3. **Vocabulary.** `npm run core-vocabulary -- --for review.md:<band>`; prefer the roots unused longest. Every root goes under **Review**.
+3. **Vocabulary.** `npm run core-vocabulary -- --for review.md:beginner` (or `review-intermediate.md:intermediate` / `review-advanced.md:advanced`); prefer the roots unused longest. Every root goes under **Review**.
 4. **Write.** One item per checkpoint, in path order within each H4, aimed at the page's main decision with words and packaging its checkpoint did not use. Choose the item type per page to meet the mix; end every answer with its **Rule:** link.
 5. **Check.** Parse every form as in [step 6](#6-self-check-then-lint), then `npm test` and `npm run build`. The build fails on a missing or wrong **Rule:** link, an uncovered page, the counts, a **New words** row, and any form taught after the level.
 
@@ -159,7 +159,7 @@ When you **replace** a checkpoint, pick a phrase unused in the **Setting** colum
 
 Rows for `say-*.md` pages are recipe-track practice blocks, not stage checkpoints; their Band cell names the practice heading. A block that holds items moved out of a stage checkpoint keeps that checkpoint's setting, so the setting may appear on both rows. New track practice follows the same drill principles; its allowlist is the recipe's **Needs:** sections.
 
-[Level reviews](translation-exercises.md#level-reviews) on `review.md` have no setting and no row here.
+[Level reviews](translation-exercises.md#level-reviews) have no setting and no row here.
 
 Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / **exists** / **generate**), not this table. Thin **Advanced** that is only Design notes / Constraints / Out of scope / Boundaries stays **skip** on the allowlist.
 

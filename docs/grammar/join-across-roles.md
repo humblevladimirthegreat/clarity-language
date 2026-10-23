@@ -1,8 +1,10 @@
+---
+band: intermediate
+---
+
 # Join across roles {#join-across-roles}
 
 The join vowels you use on noun lists also join other things: verb phrases under `/v/` (*walks and runs*), whole clauses under `/x/` (*Uzozen walks, then Olazun runs*), and stance words under `/th/` (*not because of the rain*). With ending **-n** under `/v/`, `/ɡ/`, or `/h/`, a join word becomes a verb, adjective, or adverb that names a list move (*includes*, *without*). Phrase fences and their set, rank, arity, and scope patterns are in [joins](joins.md).
-
-## Intermediate {#intermediate}
 
 ### Sequence (`-n`, clause only) {#clause-sequence}
 <a id="sequence"></a>

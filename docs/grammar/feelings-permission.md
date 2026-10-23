@@ -1,8 +1,10 @@
+---
+band: intermediate
+---
+
 # Feelings and permission {#feelings-permission}
 
 English *anxious*, *thank you*, *hopefully*, and *may* / *must* / *they agreed* mix a feeling, a thanks, a hope, and who has a say over an act. Agebon keeps those apart: a **feeling** names the sake at stake, where it sits or points, and how it moves; **thanks** and **sorry** are a met or unmet sake said as a whole sentence; a **speaker attitude** such as *hopefully* is how you feel about the claim; a **say word** names who allows, forbids, requires, or agrees. The sake lattice (which payoff, whether it is met, and whose) is in [sakes](sakes.md).
-
-## Intermediate {#intermediate}
 
 ### Emotion compose {#emotion-compose}
 

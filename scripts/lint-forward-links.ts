@@ -1,12 +1,10 @@
 // Fails on any link in a stage page that points at material the learner meets later on the
-// reading path: all Beginner bands in sidebar order, then Intermediate, then Advanced, and
-// earlier lines first within a page ("Teach now; don't preview later" in grammar-docs.md).
-// Until regroup, that order comes from H2s on unsplit pages plus front matter `band:` on
-// peeled sittings, walking the current sidebar with the holding list spliced after each parent.
+// reading path: the Beginner sidebar group, then Intermediate, then Advanced, and earlier
+// lines first within a page ("Teach now; don't preview later" in grammar-docs.md).
 import { readFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { lessonPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { isLevelReview, lessonPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { pageSections, sectionAt, type Band, type PageSections } from "../src/lint/learning-order.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
 
@@ -14,7 +12,7 @@ const grammarDir = resolve(dirname(fileURLToPath(import.meta.url)), "../docs/gra
 const orientation = new Set(["index.md", "introduction.md"]);
 const stages = lessonPages()
   .map((item) => item.page)
-  .filter((page) => !orientation.has(page));
+  .filter((page) => !orientation.has(page) && !isLevelReview(page));
 
 const levelRank: Record<Band, number> = { beginner: 0, intermediate: 1, advanced: 2 };
 

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { lessonPages, levelReviewPage } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { isLevelReview, lessonPages, levelReviewPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { CLOSED } from "./closed-roots.js";
 import { NOT_CORE_ROOTS } from "./core-vocabulary.js";
 import {
@@ -14,8 +14,8 @@ import {
   sakeInventoryRoots,
 } from "./flashcards.js";
 
-const pages = [...lessonPages(), { page: levelReviewPage, title: "Review" }];
-const inputs = loadFlashcardInputs(pages, levelReviewPage);
+const pages = lessonPages();
+const inputs = loadFlashcardInputs(pages, levelReviewPages);
 const notes = buildNotes(inputs);
 const SAKES = [CLOSED.ballot, CLOSED.tool, CLOSED.lightbulb, CLOSED.compass, CLOSED.knot, CLOSED.present, CLOSED.strawberry, CLOSED.lungs, CLOSED.egg];
 
@@ -79,7 +79,7 @@ describe("packs", () => {
     const coreKeys = [...notes.roots, ...notes.compounds].filter((n) => n.core).map((n) => n.key);
     assert.deepEqual([...packed].sort(), [...coreKeys].sort());
     assert.ok(!packed.some((k) => NOT_CORE_ROOTS.has(k)));
-    assert.ok(!core.decks.some((d) => d.notes[0]!.core.startsWith(`${levelReviewPage}#`)));
+    assert.ok(!core.decks.some((d) => isLevelReview(d.notes[0]!.core.split("#")[0]!)));
   });
 
   it("Sakes: nine roots, each followed by its sake overlay, in inventory order", () => {

@@ -1,8 +1,8 @@
 /**
- * Level reviews (docs/meta/translation-exercises.md#level-reviews): the review page holds one
- * `### Practice` per level band, read after every stage band of that level. Each item's answer
- * ends with a **Rule:** link to the stage section it tests, every stage checkpoint of the band
- * has at least one item pointing at its page, and the item counts follow the review mix.
+ * Level reviews (docs/meta/translation-exercises.md#level-reviews): each review file holds one
+ * `### Practice` for its band, last in that sidebar group. Each item's answer ends with a
+ * **Rule:** link to the stage section it tests, every stage checkpoint of the band has at least
+ * one item pointing at its page, and the item counts follow the review mix.
  */
 import { drillSections } from "./drill-coverage.js";
 import { BANDS, resolveAnchor, withinSection, type LearningOrder, type Section } from "./learning-order.js";
@@ -21,13 +21,18 @@ export type LevelReviewFinding = { index: number; detail: string };
 const RULE_LINK_RE = /^\*\*Rule:\*\*\s*\[[^\]]+\]\(([^)#\s]*)#([^)\s]+)\)\s*$/;
 
 /**
- * Findings for `reviewPage` (its markdown as given to `pageSections`). `order` must list the
- * review page after the stage pages, so stage pages are every other page of its reading order.
+ * Findings for `reviewPage` (its markdown as given to `pageSections`). `order` must list each
+ * review last in its band group. Pass every review slug so other reviews are not stage pages.
  */
-export function lintLevelReview(order: LearningOrder, reviewPage: string, markdown: string): LevelReviewFinding[] {
+export function lintLevelReview(
+  order: LearningOrder,
+  reviewPage: string,
+  markdown: string,
+  reviewPages: readonly string[] = [reviewPage],
+): LevelReviewFinding[] {
   const page = order.pages.get(reviewPage);
   if (!page) return [];
-  const stagePages = order.readingOrder.filter((p) => p !== reviewPage);
+  const stagePages = order.readingOrder.filter((p) => !reviewPages.includes(p));
   const { items } = practiceItems(markdown, { review: true });
   const findings: LevelReviewFinding[] = [];
 

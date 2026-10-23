@@ -12,7 +12,7 @@ import { spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 
-import { lessonPages, levelReviewPage } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { lessonPages, levelReviewPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { buildNotes, buildPack, loadFlashcardInputs, NOTE_FIELDS, PACK_IDS, packTsv, type PackId } from "../src/flashcards.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 
@@ -36,8 +36,8 @@ function parseArgs(argv: string[]): Options {
 
 function main(): void {
   const options = parseArgs(process.argv.slice(2));
-  const pages = [...lessonPages(), { page: levelReviewPage, title: "Review" }];
-  const inputs = loadFlashcardInputs(pages, levelReviewPage);
+  const pages = lessonPages();
+  const inputs = loadFlashcardInputs(pages, levelReviewPages);
   const notes = buildNotes(inputs);
   const python = join(REPO_ROOT, ".venv", "bin", "python");
   if (!options.tsvOnly && !existsSync(python)) {

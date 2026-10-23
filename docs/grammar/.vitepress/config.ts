@@ -6,7 +6,7 @@ import { ensureCmuDict } from '../../../src/echo-pronunciation.ts'
 import { buildStampIso, formatBuildStampEt } from './lib/build-stamp.ts'
 import { injectInArticleToc } from './lib/inject-in-article-toc.ts'
 import { learnerNameSlots } from './lib/learner-name-md.ts'
-import { levelReviews, readingOrder } from './lib/reading-order.ts'
+import { orientation, sidebarGroups } from './lib/reading-order.ts'
 
 const buildAt = new Date()
 
@@ -94,14 +94,8 @@ export default defineConfig({
           { text: 'Journal editor', link: '/claritish/editor' },
         ],
       },
-      {
-        text: 'Agebon Lessons',
-        items: readingOrder,
-      },
-      {
-        text: 'Level reviews',
-        items: levelReviews,
-      },
+      ...orientation,
+      ...sidebarGroups,
       {
         text: 'Saying it in Agebon',
         items: [

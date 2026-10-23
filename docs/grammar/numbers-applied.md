@@ -81,7 +81,7 @@ Say each character as one syllable, after the marker **`ro`**:
 Rules for letters in a code:
 
 - No comma between letters and digits: the switch is audible (`z_b12`, not `z_b,12`).
-- **`x`** is never a character, so a code before **`x`** is always a [numeric prefix](numeric-derivation.md) or plural **-x** (`z_b0x` covers B0 to B9, as in [plural labels](#plural-labels)).
+- **`x`** is never a character, so a code before **`x`** is always a numeric prefix or plural **-x** (`z_b0x` covers B0 to B9, as in [plural labels](#plural-labels)).
 - Only the **`_`** marker takes letters: a count, a rank, a sign, or a date has none.
 - In a code, `e` is always the vowel letter, never an exponent.
 - A letter at the end of a code is a character, not the ending. A code with a letter always shows its ending by a mark: `z_nl` is **-l**, `z@_nl` is **-n**, `z=_nl` is **-r**.

@@ -14,7 +14,7 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { levelReviewPage, pathPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { levelReviewPages, pathPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import {
   CORE_CAP,
   CORE_REVIEW_MIN,
@@ -147,7 +147,7 @@ function main(): void {
       return existsSync(path) ? readFileSync(path, "utf8") : undefined;
     },
     tables,
-    levelReviewPage,
+    levelReviewPages,
   );
   const seed = firstAppearance(checkpoints);
 

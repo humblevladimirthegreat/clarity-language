@@ -1,8 +1,10 @@
+---
+band: intermediate
+---
+
 # Discourse hooks {#discourse-hooks}
 
 English *In fact*, *for example*, *here*, *somewhere*, and *anyway* attach this sentence to prior talk, or point at a place already in play. Agebon reuses the same hook spellings, stacked or with **-r**. Everyday *including*, *in*, and *Additionally* are in [hooks](hooks.md).
-
-## Intermediate {#intermediate}
 
 ### Opening a sentence with stacked hooks {#stacked-discourse}
 

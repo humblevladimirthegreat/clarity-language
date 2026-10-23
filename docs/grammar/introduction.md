@@ -43,13 +43,13 @@ Because of role letters, a small fixed set of endings, and spelling that matches
 ## How to learn from these docs
 <a id="how-to-learn"></a>
 
-Grammar pages split their material into **Beginner**, **Intermediate**, and **Advanced** sections. **Finish the Beginner material on every page before any Intermediate, then do the same before Advanced.** Not every page has all three levels; skip a page with no section at your current level.
+Grammar pages are grouped in the sidebar as **Beginner**, **Intermediate**, and **Advanced**. **Finish every page in the Beginner group, take its review, then do the same for Intermediate, then Advanced.**
 
-Follow the **Agebon Lessons** in the site sidebar. Read each page's Beginner section in that order, then start again from the top for Intermediate, and once more for Advanced.
+Follow those three groups in the site sidebar. Intermediate and Advanced start collapsed; the group that contains the page you are on opens.
 
 Start with [phonology.md](phonology.md) for letters and word edges, then [word-endings.md](word-endings.md) for citation endings (by then you can already say your name as a [greeting](word-endings.md#greeting)), then [clause.md](clause.md) for clause shape, [speech-moves.md](speech-moves.md) for turns, and [dependents.md](dependents.md).
 
-When you finish a level, take its review under **Level reviews** in the sidebar ([Beginner](review.md#beginner), [Intermediate](review.md#intermediate), [Advanced](review.md#advanced)). Each review has one item per page at that level, and each answer links back to the section it tests.
+When you finish a group, take its **Review** at the end of that group ([Beginner](review.md), [Intermediate](review-intermediate.md), [Advanced](review-advanced.md)). Each review has one item per page at that level, and each answer links back to the section it tests.
 
 The sidebar **Tools** list has [Terminology](terminology.md), which gives the English names these pages use for grammar, each with a short gloss and a link to the section that teaches it. It also has [Lexicon](lexicon.md), for looking up roots and respelling an English name, and [Inspect](inspect.md), for word-by-word breakdowns.
 

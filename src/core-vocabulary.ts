@@ -59,7 +59,7 @@ export type Checkpoint = {
   /** 1-based line of the checkpoint heading. */
   line: number;
   converted: boolean;
-  /** On the level review page: review roots only (docs/meta/translation-exercises.md#level-reviews). */
+  /** On a level review page: review roots only (docs/meta/translation-exercises.md#level-reviews). */
   review: boolean;
   /** Counted bank roots, in table order, each once (no overlay words, no {@link NOT_CORE_ROOTS}). */
   entries: BankEntry[];
@@ -69,14 +69,15 @@ export type Checkpoint = {
 
 /**
  * Stage checkpoints in path order: every Beginner checkpoint in reading order, then Intermediate,
- * then Advanced. Put the level review page last in `readingOrder` so each review closes its level.
+ * then Advanced. Put each level review last in its band group so the review closes that level.
  */
 export function stageCheckpoints(
   readingOrder: readonly string[],
   readPage: (page: string) => string | undefined,
   tables: ClassifyTables,
-  reviewPage?: string,
+  reviewPages: string | readonly string[] = [],
 ): Checkpoint[] {
+  const reviews = new Set(typeof reviewPages === "string" ? [reviewPages] : reviewPages);
   const pages = new Map<string, { raw: string[]; lines: string[]; sections: ReturnType<typeof pageSections>["sections"] }>();
   for (const page of readingOrder) {
     const markdown = readPage(page);
@@ -120,7 +121,7 @@ export function stageCheckpoints(
             (NOT_CORE_ROOTS.has(root) ? cast : entries).push(entry);
           }
         }
-        out.push({ anchor: `${page}#${section.slug}`, page, band, line: line + 1, converted, review: page === reviewPage, entries, cast });
+        out.push({ anchor: `${page}#${section.slug}`, page, band, line: line + 1, converted, review: reviews.has(page), entries, cast });
       }
     }
   }

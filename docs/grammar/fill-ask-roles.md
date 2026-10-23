@@ -1,8 +1,10 @@
+---
+band: intermediate
+---
+
 # Fill-ask roles {#fill-ask-roles}
 
 English *what kind*, *when*, *where*, *whose*, *how*, and *why* each name a different blank: a property, a time, a place, a user, a manner, or a reason. Agebon keeps the same fill-ask shape you already use for *who* / *what*, and puts the blank in that slot. How to ask for *yes* or *no*, and how to answer, is in [questions](questions.md).
-
-## Intermediate {#intermediate}
 
 ### Fill-ask arity {#fill-ask-arity}
 

@@ -17,14 +17,14 @@ Per-feature teaching already has its practice: rule → cue → 1–3 worked exa
 |-------|-----|
 | **Inside each feature** | Worked examples only (house style) |
 | **End of a page stage** (e.g. [clause.md Beginner](../grammar/clause.md) → [practice](../grammar/clause.md#beginner-practice)) | Short checkpoint for *that page’s* stack |
-| **End of whole Beginner / Intermediate / Advanced** (cross-doc) | Required [level review](#level-reviews) on [review.md](../grammar/review.md), one band per level; do **not** duplicate a review on every grammar file |
+| **End of whole Beginner / Intermediate / Advanced** (cross-doc) | Required [level review](#level-reviews) last in each sidebar group; do **not** duplicate a review on every grammar file |
 | **After a real trap** | At most 1–2 items *if* English pulls the wrong Agebon shape (e.g. *because* as a verb, a general *to be*, opaque `<>` when the page is not teaching loans) |
 
 **When to add a stage checkpoint:** if the learner can misuse the form in the *next* section’s examples, put drills at the **end of this stage**. If the form is mostly recognition (a small closed table), the worked example is enough.
 
 **Coverage:** every **productive** page stage gets a checkpoint. Orientation, phonology charts, and parser maps do not — [allowlist](drill-generation.md#allowlist) **skip**. Every construction family taught in that band, parser-built or data, needs at least one practice item in the same-band checkpoint (either direction). Do **not** add a spoiler block after every H3. Named settings in use: [settings](drill-generation.md#settings).
 
-**Status:** all **generate** checkpoints **exist** (see [allowlist](drill-generation.md#allowlist)). All are converted to this page's standard; none is [legacy](#legacy-checkpoints). Invoke [drill-generation.md](drill-generation.md#execute) **one grammar file per agent** only to **replace** a checkpoint, which converts it to this page's standard. All three [level reviews](#level-reviews) exist ([Beginner](../grammar/review.md#beginner), [Intermediate](../grammar/review.md#intermediate), [Advanced](../grammar/review.md#advanced)); procedure in [drill-generation.md](drill-generation.md#level-review).
+**Status:** all **generate** checkpoints **exist** (see [allowlist](drill-generation.md#allowlist)). All are converted to this page's standard; none is [legacy](#legacy-checkpoints). Invoke [drill-generation.md](drill-generation.md#execute) **one grammar file per agent** only to **replace** a checkpoint, which converts it to this page's standard. All three [level reviews](#level-reviews) exist ([Beginner](../grammar/review.md), [Intermediate](../grammar/review-intermediate.md), [Advanced](../grammar/review-advanced.md)); procedure in [drill-generation.md](drill-generation.md#level-review).
 
 ## What belongs where
 <a id="what-belongs-where"></a>
@@ -136,7 +136,7 @@ When a drill needs only one person, prefer a beat that still fits the setting an
 ## Shape (template)
 <a id="template"></a>
 
-Use a stable heading and anchor at the **end** of the sitting (before `## See also` / end of file, or on an unsplit page before the next `## Intermediate` / `## Advanced`). The heading text repeats on every sitting, so pin a stage-prefixed id on each heading (`{#beginner-…}`, `{#intermediate-…}`, `{#advanced-…}`); ids must be unique on a page ([one id per heading](grammar-docs.md#unique-ids)). Each sitting has **one** checkpoint: when a sitting teaches several topics, fold their items into that one section (the lint fails on a second checkpoint heading in a sitting).
+Use a stable heading and anchor at the **end** of the sitting (before `## See also` / end of file). The heading text repeats on every sitting, so pin a stage-prefixed id on each heading (`{#beginner-…}`, `{#intermediate-…}`, `{#advanced-…}`); ids must be unique on a page ([one id per heading](grammar-docs.md#unique-ids)). Each sitting has **one** checkpoint: when a sitting teaches several topics, fold their items into that one section (the lint fails on a second checkpoint heading in a sitting).
 
 ````md
 ### Practice {#beginner-practice}
@@ -239,14 +239,14 @@ Omit recoverable **`yal`** unless the drill is teaching speech act. Match role l
 ## Level reviews
 <a id="level-reviews"></a>
 
-Each level ends with a review: the matching band of [review.md](../grammar/review.md) (`## Beginner` → `### Practice {#beginner-practice}`, and so on), outside the stage pages. The docs lint reads review.md after every stage page, so each band sits after every stage band of its level: the learning-order check and the [core vocabulary](#core-vocabulary) rules see it at the end of its level. The sidebar lists each band under **Level reviews**; stage pages do not link to it. A review follows the [template](#template) and every drill principle except where this table differs.
+Each level ends with a review: [review.md](../grammar/review.md) for Beginner, [review-intermediate.md](../grammar/review-intermediate.md), [review-advanced.md](../grammar/review-advanced.md), last in that sidebar group, outside the stage pages. The docs lint reads each review after every sitting of its band: the learning-order check and the [core vocabulary](#core-vocabulary) rules see it at the end of its level. Stage pages do not link to it. A review follows the [template](#template) and every drill principle except where this table differs.
 
 | Rule | Detail |
 |------|--------|
 | **Coverage** | One item per stage checkpoint of the level, aimed at that page's main decision (its allowlist **Introduces** cell). Up to 3 extra items may revisit a page |
 | **Mix** | Mostly **Pick one** and short translation: **Pick one** at least a third of the items, at least 3 items per translation direction, **Fix it** + **What changes** at most a quarter |
 | **Rule link** | Every answer ends with `**Rule:** [Section title](page.md#id)` after **Also correct:**, linking the stage section that teaches the decision (not its checkpoint), in the same level |
-| **Vocabulary** | **Review** only (English · Agebon): no **New words**, house names and `SELF` included. Prefer roots unused longest (`npm run core-vocabulary -- --for review.md:<band>`) |
+| **Vocabulary** | **Review** only (English · Agebon): no **New words**, house names and `SELF` included. Prefer roots unused longest (`npm run core-vocabulary -- --for review.md:beginner`) |
 | **Setting** | None: the items range over every page, so there is no **Setting:** line. House cast, plausible scenes, and *I* as `uwon` (or `SELF` in a greeting or bid) still apply |
 | **No copies** | No item repeats a stage checkpoint item's proposition. A review revisits the same decision with other words or another packaging |
 
