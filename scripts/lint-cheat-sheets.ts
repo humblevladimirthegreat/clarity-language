@@ -33,6 +33,8 @@ const claritishDir = join(grammarDir, "claritish");
 /** Grammar sheets in docs/grammar/cheat-sheets/, by the ID owning pages use in `<!-- cheat-sheet: ID -->`. */
 const SHEETS: Record<string, string> = {
   "sounds-spelling": "sounds-spelling.md",
+  vowels: "vowels.md",
+  consonants: "consonants.md",
   "word-shape-clause": "word-shape-clause.md",
   "people-pointing": "people-pointing.md",
   talking: "talking.md",

@@ -143,6 +143,7 @@ A `bl-` word needs its host right before it. Anywhere else it is not a sentence.
 
 The role letters you have used so far:
 
+<!-- cheat-sheet: consonants -->
 | Agebon | Use | Cue |
 |--------|-----|-----|
 | `/z/` | subject (who acts) | **z** ≈ star (who the sentence is about) |

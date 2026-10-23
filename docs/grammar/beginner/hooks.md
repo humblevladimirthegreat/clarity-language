@@ -80,6 +80,7 @@ The left side can be the clause standalone **`xual`** *everything* ([clause join
 >
 > "Everything happened except that Uzozen walked."
 
+<!-- cheat-sheet: vowels -->
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** | add a member in the same slot | *including*: A, including B | **a** ≈ add |

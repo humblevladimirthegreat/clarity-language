@@ -477,7 +477,7 @@ Wording and voice for the track: [claritish-style.md](claritish-style.md).
 Grammar cheat sheets live in `docs/grammar/cheat-sheets/`, one printable page per learner-facing subsystem, grouped the way a learner looks forms up, not one per stage page. They add no forms, restate no rule the owning page does not teach, and are never the source for a form. A sheet that needs a sentence the owning page lacks means the owning page needs it first.
 
 - **Shape:** front matter `pageClass: cheat-sheet` and `outline: false`, then `<PrintButton />`, then the H1 *… cheat sheet*. Rows are a word or two of English per form: no practice, gap stories, or worked examples.
-- **Sidebar:** the **Cheat Sheets** group, in reading order (sounds first; Agebon → English and Exceptions last).
+- **Sidebar:** the **Cheat Sheets** group, in reading order (sounds first, then letter meanings; Agebon → English and Exceptions last).
 - **Links:** every row links to the section that teaches it. Stage pages never link to a sheet (as with the [recipe track](#recipe-track)); [how to learn](../grammar/introduction.md#how-to-learn) may name the group once.
 - **Stage tags:** **B** / **I** / **A** per row, or per section when the whole section is one stage: the stage of the section the row links to.
 - **Wording:** usual [doc style](doc-style.md); learner names, no [terminology](../grammar/terminology.md) links; English cues in italics; forms in backticks. An italic **English** cell beside an Agebon phrase or sentence is its free English, as on grammar pages ([grammar-table gloss](glosses.md#grammar-table-gloss-free-english-only)).

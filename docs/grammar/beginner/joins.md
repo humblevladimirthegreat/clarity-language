@@ -234,6 +234,7 @@ When English says *some of them* or *some people*, more than one, add [**-x**](p
 
 ### Vowels and endings {#join-type-vowel-series}
 
+<!-- cheat-sheet: vowels -->
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** | add the items | *and* | **a** ≈ add |

@@ -130,6 +130,8 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Sounds and spelling', link: '/cheat-sheets/sounds-spelling' },
+          { text: 'Vowels', link: '/cheat-sheets/vowels' },
+          { text: 'Consonants', link: '/cheat-sheets/consonants' },
           { text: 'Word shape and clause', link: '/cheat-sheets/word-shape-clause' },
           { text: 'People and pointing', link: '/cheat-sheets/people-pointing' },
           { text: 'Talking', link: '/cheat-sheets/talking' },

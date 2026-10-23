@@ -12,6 +12,7 @@ The tail is a memory aid. No grammar reads it, and you never build a root from t
 
 Each letter reuses a job it already has somewhere in the grammar:
 
+<!-- cheat-sheet: consonants -->
 | Second consonant | Kind | Example | Why this letter |
 |------------------|------|---------|-----------------|
 | `z` | creatures: animals, microbes | `agozo` *cat* | [`/z/`](/clause#role-letters) is the one who acts |
@@ -29,6 +30,7 @@ Each letter reuses a job it already has somewhere in the grammar:
 
 The last vowel is the job, with the same vowel series as [joins](/joins): **a** add, **o** one, **e** order, **u** undo.
 
+<!-- cheat-sheet: vowels -->
 | Last vowel | Job | Examples |
 |------------|-----|----------|
 | `a` | holds or gathers: containers, groups, masses, what you go inside; or hollow, like a bowl | `abowa` *basket*, `oruda` *rice*, `uneza` *ant* (it lives in a colony) |
@@ -40,6 +42,7 @@ When more than one job fits, try **u** first, then **a**, then **e**. A knife is
 
 In every kind but feelings, the **middle vowel** usually says how big the thing is:
 
+<!-- cheat-sheet: vowels -->
 | Middle vowel | Size | Examples |
 |--------------|------|----------|
 | `a` | about your size or bigger | whale, ship, bed, bicycle |
