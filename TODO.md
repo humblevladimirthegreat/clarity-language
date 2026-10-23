@@ -13,7 +13,6 @@ use [skip-cd] for amplify to not deploy.
 -contact form / about me
 -proposals
 -cheat sheet for reading a word?
--search bar should extend as far as it can
 
 Finger code (experimental, docs/grammar/finger-code.md; remove the warning once tested):
 -piano on a real instrument, with a player controlling the timing: do the held coda and the one-beat word rest read at speed, is the hook mark easy to hear, do `n` (a sixth) and `e` + hook (a seventh) sound smooth

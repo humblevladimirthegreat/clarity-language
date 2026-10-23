@@ -2,6 +2,21 @@
   max-width: 36rem;
 }
 
+/* VPNavBarSearch gets flex-grow; the DocSearch button is width 100% only if
+   #local-search / #docsearch fill that slot (default is shrink-wrapped). */
+@media (min-width: 768px) {
+  .VPNavBarSearch {
+    min-width: 0;
+  }
+
+  .VPNavBarSearch > #local-search,
+  .VPNavBarSearch > #docsearch {
+    flex: 1 1 auto;
+    min-width: 0;
+    width: 100%;
+  }
+}
+
 /* Phone: the hamburger sheet already lists every nav link. From 768px the
    bar shows Lexicon and Inspect; Claritish waits until the sidebar layout
    (960px) so the title, search, extra flyout, and name chip still fit. */
