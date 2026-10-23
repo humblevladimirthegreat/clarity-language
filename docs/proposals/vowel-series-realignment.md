@@ -6,16 +6,16 @@
 
 ## Idea
 
-**a o e u** has three sibling readings: size is amount (biggest to smallest), pitch is sound (low to high), order is sequence (first to fourth). This proposal puts every *amount* series on size, and retargets the join table so **how much list you are left with** is the same scale. Conversation length and the [middle vowel](/root-tails#root-tails) follow size. Root-job last vowels follow join (the page already uses the join series). Act words, polar answers, and hooks follow join (speech, then join, then size). Extra-noun derives from hook: it is the `/b/`-after job of the same spelling. Tags and the [finger code](/finger-code) follow pitch: assign **a** first, **u** last; more fingers, higher vowel. Digit vowels follow order. Letter names and sake follow reverse order: unmet first at **u**, met last at **a**.
+**a o e u** has two sibling readings: size is amount (biggest to smallest), order is sequence (first to fourth). This proposal puts every *amount* series on size, and retargets the join table so **how much list you are left with** is the same scale. Conversation length, the [middle vowel](/root-tails#root-tails), and sake follow size. Root-job last vowels follow join (the page already uses the join series). Act words, polar answers, and hooks follow join (speech, then join, then size). Extra-noun derives from hook: it is the `/b/`-after job of the same spelling. Digit vowels and tags follow order: assign **a** first, **u** last. Letter names sit under digits as the [opposite vowel](/phonology#opposite-vowels). [Vowel pitch](/phonology#vowel-pitch) follows order (first is low, fourth is high). The [finger code](/finger-code) vowel hand follows order: pinky first.
 
 | | **a** | **o** | **e** | **u** |
 |--|-------|-------|-------|-------|
 | Size (keep) | about your size or bigger | between your hand and you | no bigger than your hand | nothing you could measure |
-| Pitch (keep) | low | mid-low | mid-high | high |
-| Finger code (keep) | 1 (pinky) | 2 | 3 | 4 |
+| Pitch (keep, follows order) | low | mid-low | mid-high | high |
+| Finger code vowel hand (keep, follows order) | 1 (pinky) | 2 | 3 | 4 |
 | Order (keep) | first | second | third | fourth |
 | Digit vowel (keep) | `ba` `za` `na` | `do` `vo` `mo` | `ge` `re` | `hu` `lu` |
-| Letter name (keep) | `u` (`bu`) | `e` (`de`) | `o` (`go`) | `a` (`ha`) |
+| Letter name (keep, opposite of digit) | `u` (`bu`) | `e` (`de`) | `o` (`go`) | `a` (`ha`) |
 | Join (do) | *and* (the list grows) | rank (membership stays) | choice (collapses to one) | *not* (the list disappears) |
 | Act (do) | statement | command | question | prohibition |
 | Hook (do) | *including* | *rather* | *instead* | *except* |
@@ -25,9 +25,9 @@
 | Pointer (do) | the other one (furthest) | this sentence | latest (closest) | unsaid |
 | Tag (do) | first (A) | second (O) | third (E) | last (U) |
 
-Read **a > o > e > u** as biggest to smallest, lowest to highest, or first to fourth. Teach amount series in size order.
+Read **a > o > e > u** as biggest to smallest, or as first to fourth (also low to high). Teach amount series in size order.
 
-Which series sits in which family: [Families](#families). Size, pitch, and order are siblings. Tags and the finger code follow pitch. Digit vowels follow order. Letter names and sake follow reverse order.
+Which series sits in which family: [Families](#families). Size and order are siblings. Sake follows size. Tags, vowel pitch, and the finger-code vowel hand follow order. Letter names are the opposite of the digit.
 
 ## Joins, acts, polar (do)
 
@@ -234,16 +234,16 @@ The costly two:
 
 ## Sake stance (do)
 
-Follows **reverse order**, not size and not pitch. Letters stay. The path walks fourth to first (**u e o a**), the same direction as letter names: you start off not having it, then you receive advice, then you motivate to get it, then you get it.
+Follows size: **how much of the sake is in**. Letters stay.
 
-|           | Now                    | Proposed               | Reverse order                            |
-| --------- | ---------------------- | ---------------------- | ---------------------------------------- |
-| `**thu**` | unmet / detracts       | unmet / detracts       | first: you do not have it                |
-| `**the**` | prescription (*ought*) | prescription (*ought*) | then: you receive advice on how to do it |
-| `**tho**` | motive                 | motive                 | then: you motivate to get it             |
-| `**tha**` | met / serves           | met / serves           | last: you get it                         |
+|           | Now                    | Proposed               | Size                                   |
+| --------- | ---------------------- | ---------------------- | -------------------------------------- |
+| `**tha**` | met / serves           | met / serves           | biggest: the payoff is in              |
+| `**tho**` | motive                 | motive                 | medium: you are doing it for this sake |
+| `**the**` | prescription (*ought*) | prescription (*ought*) | small: you only have the advice        |
+| `**thu**` | unmet / detracts       | unmet / detracts       | none: you do not have it               |
 
-Beginner still only needs the ends: `**thu**` unmet, `**tha**` met. The path is the cue for why those ends sit where they do, and for the two middle cells.
+Beginner still only needs the ends: `**tha**` met, `**thu**` unmet. Motive is more “have” than prescription: the act is happening for the sake, versus only being told it ought to.
 
 `**the**` is *ought this act for this sake*: advice, not yet yours. `**tho*`* is *doing for this sake*: a description, not a *should*. A command still tells someone to act without naming a sake; prescription names the sake. Ending tables and feeling tails stay on these letters.
 
@@ -270,25 +270,31 @@ About 250 `one` tails and 280 `order` tails move, including ~20 + ~18 three-lett
 
 ## Tags (do)
 
-Tags are still letter names (`zwar` is tag A). They do not measure. Assign them in [pitch](/phonology#vowel-pitch) order, lowest first: the first unused tag is **a**, then **o**, then **e**, last **u**. Pitch already climbs **a > o > e > u**, so the next tag is the next higher pitch. Digit vowels follow order (`ba` `do` `ge` `hu`), the same letters as this climb but a different parent. Letter names follow reverse order and are not the assignment order.
+Tags are still letter names (`zwar` is tag A). They do not measure. Assign them in [order](#order-keep): the first unused tag is **a**, then **o**, then **e**, last **u**. Digit vowels follow the same order (`ba` `do` `ge` `hu`). Letter names are the opposite of the digit, not the assignment order. The finger-code vowel hand counts the same way: pinky first is **a**, four fingers is **u**.
 
-This is a teaching default, not a parse ban: a skipped tag still names that letter. Beginner and Intermediate examples that now tag A then E (`zwal` … `zwel`, pair `zwaer`) become A then O (`zwal` … `zwol`, pair `zwaor`). The six pair stacks stay; the everyday pair is the first two pitches. The other tags follow the same pattern: third is E (`zwel`), fourth is U (`zwul`). The finger-code count (one finger for A, four for U) is the same climb.
+This is a teaching default, not a parse ban: a skipped tag still names that letter. Beginner and Intermediate examples that now tag A then E (`zwal` … `zwel`, pair `zwaer`) become A then O (`zwal` … `zwol`, pair `zwaor`). The six pair stacks stay; the everyday pair is the first two. The other tags follow the same pattern: third is E (`zwel`), fourth is U (`zwul`).
 
 ## Finger code (keep)
 
-The [finger code](/finger-code#counting) adds no grammar. Its vowel hand already follows pitch: a run of 1 to 4 fingers from the pinky, from the lowest vowel to the highest. More fingers means a higher vowel. Opposite vowels are one finger against four, as far apart as they are in pitch. Piano keys and guitar bass climb the same order. This proposal does not retarget it. If amount series had stayed on join, the vowel hand would still count pitch: a piano that fell as the count rose, or shapes in alphabet order (`u a o e`), is already rejected.
+The [finger code](/finger-code#counting) adds no grammar. Only the **vowel hand** follows order: a run of 1 to 4 fingers from the pinky, first vowel to fourth. Pinky is **a**, four fingers is **u**. Opposite vowels are one finger against four. The consonant hand does not: it counts digit letters from the index.
 
-Hang it on the tree under pitch with tags. Signing, touch, piano, and guitar share one rule: *more fingers, higher vowel*.
+Piano keys and guitar bass still climb with the count, because [vowel pitch](/phonology#vowel-pitch) also follows order (first is low, fourth is high). This proposal does not retarget the shapes. A piano that fell as the count rose, or shapes in alphabet order (`u a o e`), is already rejected.
+
+Hang the vowel hand on the tree under order. The rest of the code (consonant hand, hooked runs, piano left-thumb hook) is not an order series.
 
 ## Order (keep)
 
-[Digit vowels](/numbers#counts) follow order, not pitch. The cycle **a o e u** is first, second, third, fourth: `ba` `do` `ge` `hu`, then the climb starts again (`za` `vo` `re` `lu` `na` `mo`). Today’s cue (they climb the vowel pitches) becomes: they follow order. Letters stay.
+[Digit vowels](/numbers#counts) follow order. The cycle **a o e u** is first, second, third, fourth: `ba` `do` `ge` `hu`, then the climb starts again (`za` `vo` `re` `lu` `na` `mo`). Today’s cue (they climb the vowel pitches) becomes: they follow order. Letters stay. Tags use this same assignment.
 
-[Letter names](/phonotactics#letter-names) follow reverse order. Each digit letter’s name keeps the consonant and takes the [opposite vowel](/phonology#opposite-vowels), so naming a letter never sounds like counting, and reciting the alphabet walks **u e o a** (`bu` `de` `go` `ha` …). Sake walks that same reverse.
+[Vowel pitch](/phonology#vowel-pitch) follows order: first is low, fourth is high. It adds no meaning of its own. Pitch is Beginner; size is Advanced.
+
+The finger-code **vowel hand** follows order: pinky first ([Finger code](#finger-code-keep)).
+
+[Letter names](/phonotactics#letter-names) sit under digits as the [opposite vowel](/phonology#opposite-vowels). Each digit letter’s name keeps the consonant and takes the opposite (`a`↔`u`, `o`↔`e`), so naming a letter never sounds like counting. Reciting those ten names walks **u e o a** (`bu` `de` `go` `ha` …) as a consequence, not as a family. The rest of the alphabet continues that walk.
 
 ## Families
 
-The letter order **a o e u** has three sibling readings. A **family** is a set of series that share one reading of those letters. Stacks compose inside their family. Amount series follow size. Tags and the finger code follow pitch. Digit vowels follow order. Letter names and sake follow reverse order.
+The letter order **a o e u** has two sibling readings. A **family** is a set of series that share one reading of those letters. Stacks compose inside their family. Amount series follow size. Digit vowels, tags, vowel pitch, and the finger-code vowel hand follow order. Letter names are the opposite of the digit.
 
 | Family | **a** | **o** | **e** | **u** |
 |--------|-------|-------|-------|-------|
@@ -302,7 +308,7 @@ The letter order **a o e u** has three sibling readings. A **family** is a set o
 | **Pointer** | the other one | this sentence | latest | unsaid |
 | **Sake** | met | motive | prescription | unmet |
 | **Tag** | first (A) | second (O) | third (E) | last (U) |
-| **Finger code** | 1 (pinky) | 2 | 3 | 4 |
+| **Finger code** (vowel hand) | 1 (pinky) | 2 | 3 | 4 |
 | **Order** | first | second | third | fourth |
 
 Which cue each series follows:
@@ -313,6 +319,7 @@ Which cue each series follows:
 - [Ability](/can-and-cant#ability)
 - [Pointer vowel](/pronouns#role-pointers)
 - [Conversation length](/compound-families#conversation-length)
+- [Sake stance](/sakes#word-shape)
 
 **Join** (*and* / rank / choice / *not*)
 
@@ -354,36 +361,29 @@ Which cue each series follows:
 - [Landmark facing](/viewpoint#landmark-facing)
 - Pointer *scope* slot
 
-**Pitch** (low / mid-low / mid-high / high)
-
-- [Vowel pitch](/phonology#vowel-pitch)
-- [Tag](/tag-pronouns#tag-pronouns) (assign **a** first, **u** last)
-- [Finger code](/finger-code#counting) (1 to 4 fingers from the pinky)
-
 **Order** (first / second / third / fourth)
 
 - [Digit vowels](/numbers#counts)
-
-**Reverse order** (**u e o a**)
-
-- [Letter names](/phonotactics#letter-names)
-- [Sake stance](/sakes#word-shape) (unmet / prescription / motive / met)
+- [Tag](/tag-pronouns#tag-pronouns) (assign **a** first, **u** last)
+- [Letter names](/phonotactics#letter-names) (opposite of the digit)
+- [Vowel pitch](/phonology#vowel-pitch) (first is low, fourth is high)
+- [Finger code](/finger-code#counting) vowel hand (pinky first)
 
 [Stacked scope](/label-seams#scope-stacks) writes Scope letters but reads as Join invert and Hook. Stacked extra-noun writes Hook letters and reads as Join stacks. A say word is Scope then Speech (`hwuvom`: this-act **u**, require **o**). A role pointer is Scope then Pointer (`zwuzer`: episode **u**, latest **e**).
 
 ## Remaining series
 
-### Pitch and order — siblings of size
+### Order — sibling of size
 
-Pitch already climbs **a > o > e > u**. It adds no meaning of its own. Size, pitch, and order are sibling readings of that letter order: size is amount, pitch is sound, order is sequence. Tag assignment and the finger-code vowel hand use pitch. Digit vowels use order. Letter names and sake walk order backwards. Pitch is Beginner; size is Advanced. None hangs on the others.
+Size and order are sibling readings of **a o e u**: size is amount, order is sequence. Pitch adds no meaning of its own; it follows order (first is low, fourth is high). Digit vowels, tags, and the finger-code vowel hand use order. Letter names are the opposite of the digit. Pitch is Beginner; size is Advanced. Neither hangs on the other.
 
 ## What a learner then holds
 
-Three sibling maps on **a o e u**: size biggest to smallest, pitch low to high, order first to fourth, read per family in the table above. Tags are letter names assigned lowest pitch first. The finger code counts that climb. Digit vowels follow order. Letter names and sake walk it backwards: unmet, advice, motive, met.
+Two sibling maps on **a o e u**: size biggest to smallest, order first to fourth, read per family in the table above. Tags are letter names assigned first to last. Digit vowels follow that same order. Letter names take the opposite vowel of the digit. Vowel pitch climbs with the count. The finger-code vowel hand counts from the pinky, first to fourth. Sake is how much of the sake is in: met, motive, prescription, unmet.
 
 Opposite vowels still line up: **a** ↔ **u** is most ↔ none, and **o** ↔ **e** is the middle pair.
 
-On the [vowels cheat sheet](/cheat-sheets/vowels), group by family: Size (including middle vowel), Pitch, and Order as siblings, then Join (including last-vowel job), Speech, Hook (including extra-noun), Scope, Ability, Pointer.
+On the [vowels cheat sheet](/cheat-sheets/vowels), group by family: Size (including middle vowel and sake) and Order (digits, tags, letter names as opposite, pitch, vowel hand) as siblings, then Join (including last-vowel job), Speech, Hook (including extra-noun), Scope, Ability, Pointer.
 
 ### Last phase: write the cue tree on `vowels.md`
 
@@ -396,6 +396,7 @@ a o e u
 │     ├── ability
 │     ├── pointer vowel
 │     ├── conversation length
+│     ├── sake (met → motive → prescription → unmet)
 │     ├── scope
 │     │     ├── label scope
 │     │     ├── role compound
@@ -426,24 +427,21 @@ a o e u
 │                 ├── say-word answer
 │                 ├── polar / polar inventory
 │                 └── rhetorical / quiz stacks
-├── pitch (low → high)
-│     ├── vowel pitch
-│     ├── tags (assign A first, U last)
-│     └── finger code (1–4 fingers, pinky first)
 └── order (first → fourth)
       ├── digit names (ba do ge hu za …)
-      └── reverse (u e o a)
-            ├── letter names (bu de go ha zu …)
-            └── sake (unmet → prescription → motive → met)
+      │     └── letter names (opposite: bu de go ha zu …)
+      ├── tags (assign A first, U last)
+      └── vowel pitch (low → high)
+            └── finger-code vowel hand (pinky first)
 ```
 
-Every series in [Families](#families) is a leaf. Size, pitch, and order are siblings. A say word is scope then speech (`hwuvom`). A role pointer is scope then pointer (`zwuzer`).
+Every series in [Families](#families) is a leaf. Size and order are siblings. A say word is scope then speech (`hwuvom`). A role pointer is scope then pointer (`zwuzer`).
 
 ## Absorb
 
 Owning pages first. Parser construction *reader* strings, series sets, and summaries follow the pages. Grammar-letter swaps parse already; only which cell they name moves. Root-job last vowels are a real respell. Last phase: the cue tree on `vowels.md` (above).
 
-Joins, acts, polar, hooks, ability, and label-scope **o**/**e** are pairwise swaps, plus polar **ae**↔**ao** and **ue**↔**uo**. A missed example is the opposite English. Pointers are a three-cycle on **a** / **o** / **e**. Label-scope **a**/**u** also swap. Sake letters stay; only the reverse-order cue is new. Digit vowels and letter names stay; their cues move from pitch to order / reverse order. Root tails need `convert-word` and `retie-docs`.
+Joins, acts, polar, hooks, ability, and label-scope **o**/**e** are pairwise swaps, plus polar **ae**↔**ao** and **ue**↔**uo**. A missed example is the opposite English. Pointers are a three-cycle on **a** / **o** / **e**. Label-scope **a**/**u** also swap. Sake letters stay; the cue becomes size. Digit vowels stay; their cue moves from pitch to order. Letter names stay; they are the opposite of the digit. Tag assignment, vowel pitch, and the finger-code vowel hand sit under order. Root tails need `convert-word` and `retie-docs`.
 
 Touch list when absorbed:
 
@@ -452,6 +450,6 @@ Touch list when absorbed:
 - Claritish: `labels.md`, `can-and-cant.md`, cheat sheet, editor flows if a cell name is a suffix.
 - Editor notes: D-40, D-44, D-49 example spellings; [`src/parse/series.ts`](../../src/parse/series.ts); construction readers; english-helper cases (`at` / `for` / `using` / `whose`); [lexicon.md](../meta/lexicon.md) shape-letter map.
 - Cheat sheets: vowels, joins-hooks, talking, word-shape, roles-comparing, knowing-intending, numbers, why-allowed, people-pointing (tag examples A then O).
-- Finger code: [`finger-code.md`](/finger-code) letters stay; it appears on the `vowels.md` cue tree under pitch.
+- Finger code: [`finger-code.md`](/finger-code) letters stay; the vowel hand (pinky first) appears on the `vowels.md` cue tree under order. The consonant hand does not.
 
 Series-letter examples are a hand edit: `retie-docs` will not catch them. Root respellings it will.
