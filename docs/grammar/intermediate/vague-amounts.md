@@ -20,7 +20,7 @@ English *many*, *few*, *often*, and *late* rank against an unstated baseline, an
 >
 > "Azozon often walks." (more often than usual)
 
-<!-- cheat-sheet: roles-comparing -->
+<!-- cheat-sheet: comparing -->
 | English | Bar and rank |
 |---------|--------------|
 | *many* / *few* | PATTERN **`thubom`**, `zol` / `zuol` with `gral` |

@@ -50,7 +50,7 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 >
 > "a doorbell"
 
-<!-- cheat-sheet: roles-comparing -->
+<!-- cheat-sheet: word-shape-clause -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `zoheleboral` | door **-l** bell | doorbell | left piece everyday |
@@ -65,7 +65,7 @@ If the pairing is not in the dictionary, either glue with **`x`** (`zuwedaxubuda
 
 Ask how many things you mean. *A hammer and a wrench* is two tools, so two Ageben words (and a [join](joins.md) if you need *and*). *Peanut butter* is one food, so one word. *Bedroom* is also one thing, but that spelling is already in the dictionary, so there is no **`x`**.
 
-<!-- cheat-sheet: roles-comparing -->
+<!-- cheat-sheet: word-shape-clause -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | two words | two things, or a property already marked another way | `zohowel zurewel zam` *a hammer and a wrench*; `zodozel gobulol` *a blue dog* (`/ɡ/`) | |

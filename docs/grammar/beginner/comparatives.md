@@ -82,7 +82,7 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 
 **Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zazozon zalazun zal gamahum`): each has the quality. It does not rank them or say they match. Use **`oe`** only for *as … as*.
 
-<!-- cheat-sheet: roles-comparing -->
+<!-- cheat-sheet: comparing -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | Rank **`o`** (`zol`) | rank on a shared quality | *more … than* / *the …-est* | **`o`** ≈ rank |

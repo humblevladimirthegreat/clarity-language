@@ -186,7 +186,7 @@ For *their left*, [resume](/pronouns#resume-r) the person on **-r** after **`th`
 
 The examples above used *west* / *left*. The other seven arrow roots work the same way: alone, each is a compass heading; with **`th`** and a facing person, it is that direction from the person’s body.
 
-<!-- cheat-sheet: roles-comparing -->
+<!-- cheat-sheet: roles -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`onuhol`** | compass heading, or ahead on a face | *north* / *ahead* | ⬆️ *up-arrow*: map north, or ahead if facing is north |
@@ -216,7 +216,7 @@ English *up* / *down* usually follows the pull of gravity, not anyone’s facing
 >
 > "Up!"
 
-<!-- cheat-sheet: roles-comparing -->
+<!-- cheat-sheet: roles -->
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`abuhol`** | skyward, shared gravity frame | *up* | | ⏫: away from the pull |
@@ -251,7 +251,7 @@ Gravity works the same way: bare **`oduho`** + `/b/` is *under* the landmark, an
 
 **Compare with:** locative *at* / *on* / *inside* name how the figure sits relative to the landmark ([locative relations](of-relations.md#locative-relations)), not a compass heading.
 
-<!-- cheat-sheet: roles-comparing -->
+<!-- cheat-sheet: roles -->
 | Ageben | Use | English |
 |--------|-----|---------|
 | Bare DIR | compass / gravity | `gewuhol` *west*; `gabuhol` *up* |
@@ -279,7 +279,7 @@ This is [label scope](/label-seams#label-scope) **`the`** on a direction: the di
 
 The landmark's front is where its design or current use faces (a house's front door, a car's windshield). A DIR + **`th`** + **`e`** word always takes a `/b/` landmark.
 
-<!-- cheat-sheet: roles-comparing -->
+<!-- cheat-sheet: roles -->
 | Ageben | English |
 |--------|---------|
 | `gazuhothel blohehal` | *behind the house* (its own back) |
@@ -299,7 +299,7 @@ Write the ordinary [word ending](/word-endings) at the end of the whole compound
 | **-n** | named viewpoint anchor | that named viewpoint’s left |
 | **-r** | resume the most recent matching viewpoint anchor in a **`DIR th ANCHOR`** compound, or the anchor alone when it is the latest match: ordinary [pronoun](/pronouns) rules | that viewpoint’s left |
 
-<!-- cheat-sheet: roles-comparing -->
+<!-- cheat-sheet: roles -->
 | Ageben | English |
 |--------|---------|
 | `gewuhol` | *west* (shared map) |

@@ -119,6 +119,11 @@
       "from": "/grammar/cheat-sheets/agebon-english.html",
       "to": "/grammar/cheat-sheets/to-english.html",
       "note": "Public URL after renaming agebon-english.md to to-english.md so the slug does not track the language name."
+    },
+    {
+      "from": "/grammar/cheat-sheets/roles-comparing.html",
+      "to": "/grammar/cheat-sheets/roles.html",
+      "note": "Public URL after splitting Roles and comparing into Roles and Comparing."
     }
   ]
 }

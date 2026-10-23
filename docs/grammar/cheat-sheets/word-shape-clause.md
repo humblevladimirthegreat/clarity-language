@@ -7,15 +7,13 @@ outline: false
 
 # Word shape and clause cheat sheet {#word-shape-clause-cheat-sheet}
 
-A quick look at [word endings](/word-endings), [the clause](/clause), and [predication](/predication). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [word endings](/word-endings), [the clause](/clause), [predication](/predication), and [mid-word `x`](/compounds). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## Word shape {#word-shape}
 
-A word in a sentence is **role letter + root + ending**. Outside a sentence (a list, a heading) you write a [citation](/word-endings#citation-forms): root + ending, no role letter.
+In a sentence: **role letter + root + ending**. As a [citation](/word-endings#citation-forms): root + ending. A [greeting](/word-endings#greeting) is `SELFn.`
 
 ### Endings {#endings}
-
-Shown on one root, `azozo`.
 
 | Ending | Means | Example | English | Stage |
 |--------|-------|---------|---------|-------|
@@ -27,11 +25,9 @@ Shown on one root, `azozo`.
 | **-lnx** | [some of a name](/proper-names#name-instance--ln) | `dazozolnx` | *some Azozons* | I |
 | **-x** after any of these | [associates, or a group](/plurality#associative) | `zazozonx` | *Azozon and associates* | B |
 
-A greeting is [your own name and a period](/word-endings#greeting): `SELFn.`
-
 ### What **-n** names, by role {#n-by-role}
 
-The role letter says the job ([role map](/proper-names#proper-name--n)); **-n** says the thing bears that name, not the kind the root describes.
+**-n** says the thing bears the name; the [role](/proper-names#proper-name--n) says the job.
 
 | Role | **-n** there | Stage |
 |------|--------------|-------|
@@ -41,8 +37,6 @@ The role letter says the job ([role map](/proper-names#proper-name--n)); **-n** 
 | `/w/` | a named scale or grade | I |
 | `/h/` | a named standard or frame | I |
 | `/y/` | [call this named person](/proper-names#proper-name--n) | I |
-
-<PageBreak />
 
 ### Names of more than one word {#long-names}
 
@@ -54,6 +48,66 @@ The role letter says the job ([role map](/proper-names#proper-name--n)); **-n** 
 | [One of a full name](/proper-names#name-instance--ln) | `zaloln golowon` | *someone named Alon Olowon* | I |
 | [Titled phrase](/proper-names#titled-phrases): **-n** on the hook, join, or span that packages it | `dedudal en dogudal` | *Coffee-Instead-of-Tea* (a cafe) | I |
 | [Country and tradition](/proper-names#countries-traditions) on `azabana` | `azabanan` / `gazabanam` / `dazabanal` | *Japan* / *Japanese* / *a Japanese flag* | I |
+
+<PageBreak />
+
+## Reading mid-word `x` {#x}
+
+After the role letter, look at both sides of the **first** **`x`**. A role word is not one of these: it opens with **`w`**, a scope vowel, and a part consonant (`zwuzeduyol`, `zwuzer`).
+
+<!-- cheat-sheet: word-shape-clause -->
+| Left of **`x`** | Right of **`x`** | Reading | Example | Stage |
+|-----------------|------------------|---------|---------|-------|
+| [full root](/compound-families#families-by-shape) | full root | one ordinary compound | `zuwedaxubudal` *peanut butter*; `zaloxolowon` (a hyphenated name) | B |
+| [name](/compound-families#conversation-length) | **`a`** / **`o`** / **`e`** / **`u`**, then **-n** | conversation length | *Azozon, I have time* | I |
+| [longer root](/compound-families#families-by-shape) | **`a`** / **`e`** / **`o`** / **`u`** | [ability](/can-and-cant#ability) | *can't sing right now* | I |
+| [hook vowels](/hook-compounds#hook-prefixes), maybe **`m`** | a stem | hook prefix | `guoxuvuvul` *anti-fighting*; `gamxohalal` *mid-ocean* | A |
+| [hook vowels](/hooked-joins#hooked-joins), maybe **`m`** or **`r`** | a join: vowels and an ending | hooked join, landmark after it | `zexual blohehal` *everyone at the house* | A |
+
+Mid-word **`th`** is another family: a sake root and a vowel (`guwathal`), any other root and a vowel ([label scope](/label-seams#label-scope)), or a direction root and a facing person (`gewuhothazozon`). After a sake root, root-shaped letters are always the emotion tail.
+
+### One thing or two {#one-or-two}
+
+<!-- cheat-sheet: word-shape-clause -->
+| Ageben | Use | English | Stage |
+|--------|-----|---------|-------|
+| [two words](/compounds#compound-vs-separate) | two things, or a property marked another way | `zohowel zurewel zam` *a hammer and a wrench*; `zodozel gobulol` *a blue dog* | B |
+| [**`x`** in the middle](/compounds#compound-vs-separate) | one thing; both roots audible | `gagamaxolamal` *in love* (the crush kind); `zuwedaxubudal` *peanut butter*; `zazozoxalazun` (one person) | B |
+| [dictionary word](/compounds#compound-vs-separate) | one familiar kind, one entry | `zoyahehal` *bedroom*; `zezalal` *sunflower* | B |
+
+A dictionary compound joins its two roots with the left root's ending (**-l** everyday, **-m** abstract), never **`x`**. If the pairing is not listed, glue with **`x`** or use two words.
+
+<!-- cheat-sheet: word-shape-clause -->
+| Ageben | English | Stage |
+|--------|---------|-------|
+| [`zoheleboral`](/compounds#lexical-compounds) | *doorbell* | B |
+| [`zuzahalanal`](/compounds#lexical-compounds) | *textbook* | B |
+| [`zerulalogobal`](/compounds#lexical-compounds) | *raincoat* | B |
+| [`zahuyayel`](/root-tails#tail-suffixes) | *friend* (*hug* + a person tail, no second root) | A |
+| [`zoyahehal`](/root-tails#tail-suffixes) | *bedroom* (*bed* + a place tail) | A |
+
+More pieces: keep English order in one word, last root the kind (`zogudaxedudaxowulan` *Coffee-Tea-Water*, one named shop).
+
+<PageBreak />
+
+### Conversation length {#conversation-length}
+
+Name + **`x`** + one vowel + **-n**, on a greeting or a call. At arrival it says how long you expect to talk; at departure, how soon you leave. The lesser bid sets the shared limit.
+
+<!-- cheat-sheet: word-shape-clause -->
+| Form | At arrival | At departure | Stage |
+|------|------------|--------------|-------|
+| [`SELFxan`](/compound-families#conversation-length) | open-ended: *we can stay* | none | I |
+| [`SELFxon`](/compound-families#conversation-length) | a few minutes | leaving soon | I |
+| [`SELFxen`](/compound-families#conversation-length) | one slot: *one ask or comment* | about to leave | I |
+| [`SELFxun`](/compound-families#conversation-length) | passing | leaving right now | I |
+
+| Job | Example | English | Stage |
+|-----|---------|---------|-------|
+| [Arriving](/compound-families#conversation-length) | `SELFxan.` | *I have time; we can stay.* | I |
+| [Calling with a bid](/compound-families#conversation-length) | `yalazuxon.` | *Alazun, I have a few minutes.* | I |
+| [The other bid](/compound-families#conversation-length) | `alazuxen.` | *Alazun here. I only have time for one thing.* | I |
+| [Leaving soon](/compound-families#conversation-length) | `SELFxon.` | *I'm leaving soon.* | I |
 
 ## The clause {#clause}
 
@@ -193,3 +247,4 @@ Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 | `zazozon vowurol.` *Azozon walks* ([the verb](/clause#who-acts-and-the-action)) | | `zazozon gowurol.` *Azozon is walking* ([under way](/predication#in-progress)) |
 | `dazozon vayebel.` *Azozon was seen* ([no subject named](/left-bound#no-subject)) | | `zumen` *someone did it* ([an unnamed someone](/pronouns#special-pronouns)) |
 | `dazozol` *a swan* ([-l](/proper-names#proper-name--n)) | | `dazozoln` *an Azozon* ([-ln: one of the name](/proper-names#name-instance--ln)) |
+| `zoyahehal` *bedroom* ([a dictionary word](/compounds#lexical-compounds)) | | `zuwedaxubudal` *peanut butter* ([glued with `x`](/compounds#compound-vs-separate)) |

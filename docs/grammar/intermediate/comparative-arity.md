@@ -9,7 +9,7 @@ band: intermediate
 
 Beginner already used two names plus **`zol`** (*more … than*) and one name (*the …-est*). The same shared-scale pattern also uses reverse rank **`uo`** (*less … than* / *the least*) and **zero** names.
 
-<!-- cheat-sheet: roles-comparing -->
+<!-- cheat-sheet: comparing -->
 | Ageben | Use | English | Cue |
 |---------|-----|---------|-----|
 | **Multi (2+)** + shared scale under **`o` / `uo`** | comparative ladder | earlier above later (`o`); later above earlier under **`uo`** | **`o`** ≈ rank; **`u`** ≈ undo |
@@ -18,7 +18,7 @@ Beginner already used two names plus **`zol`** (*more … than*) and one name (*
 
 A standalone ladder says only that nothing is on top. It does not say why (a tie, no end to the scale, or items that do not compare). To assert a tie, use [equative](/comparatives#equatives) **`zoel`**. To say someone is on top without naming them, use **`zor`**.
 
-<!-- cheat-sheet: roles-comparing -->
+<!-- cheat-sheet: comparing -->
 | Example | Reading |
 |---------|---------|
 | `zazozon zalazun zahelan zom gamahum` | *Azozon is more challenging than Alazun, who is more challenging than Ahelan* (open: others may fit in the ranking too) |
@@ -228,7 +228,7 @@ A [hook](/hooks) and its `/b/` on the ranked item go right before the bar, the w
 >
 > "This book is heavier than planned."
 
-<!-- cheat-sheet: roles-comparing -->
+<!-- cheat-sheet: comparing -->
 | Ageben | Use | English |
 |--------|-----|---------|
 | name + bar + **`zol`** | above the bar | *more than planned* / *later than planned* |

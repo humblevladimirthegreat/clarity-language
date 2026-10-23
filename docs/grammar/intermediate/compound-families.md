@@ -8,7 +8,7 @@ band: intermediate
 
 Beginner already used two roots glued with **`x`** and dictionary words with no **`x`**. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family. A [role compound](/roles#role-compounds) or [role pointer](/pronouns#role-pointers) is not one of these families: it opens with **`w`**, a scope vowel, and a part consonant (`zwuzeduyol`, `zwuzer`), and only a noun inside its stem takes **`x`**.
 
-<!-- cheat-sheet: roles-comparing -->
+<!-- cheat-sheet: word-shape-clause -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | conversation length | *Azozon, I have time* | vowel on the name |
@@ -69,7 +69,7 @@ The vowel says how much talk is left (open, a stretch, one ask, none). That is r
 >
 > "Alazun, I have a few minutes."
 
-<!-- cheat-sheet: roles-comparing -->
+<!-- cheat-sheet: word-shape-clause -->
 | Form | At arrival | At departure | Cue |
 |------|------------|--------------|-----|
 | `SELFxan` | open-ended: *we can stay* | none | **a** ≈ open-ended |

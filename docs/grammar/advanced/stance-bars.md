@@ -22,7 +22,7 @@ Intermediate ranked against a plan, and [sake bars](/prescription#sake-bars) ran
 >
 > "Azozon is the sleepiest, going by the pattern."
 
-<!-- cheat-sheet: roles-comparing -->
+<!-- cheat-sheet: comparing -->
 | Bar | Ranks against | English |
 |-----|---------------|---------|
 | met sake `thudatham`, `thobatham`, … ([sake bars](/prescription#sake-bars)) | what that sake needs | *enough* / *too much* / *not enough* |

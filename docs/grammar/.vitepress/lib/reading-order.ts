@@ -141,7 +141,8 @@ export const cheatSheetSidebar: LessonLink[] = [
   { text: 'Joins and hooks', link: '/cheat-sheets/joins-hooks' },
   { text: 'Restrictors and spans', link: '/cheat-sheets/restrictors-spans' },
   { text: 'Linking clauses', link: '/cheat-sheets/linking-clauses' },
-  { text: 'Roles and comparing', link: '/cheat-sheets/roles-comparing' },
+  { text: 'Roles', link: '/cheat-sheets/roles' },
+  { text: 'Comparing', link: '/cheat-sheets/comparing' },
   { text: 'Numbers', link: '/cheat-sheets/numbers' },
   { text: 'Ageben → English', link: '/cheat-sheets/to-english' },
 ]
