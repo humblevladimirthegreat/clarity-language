@@ -509,12 +509,22 @@ export const arrowRoots = closedDerived(
     ]),
 );
 
-/** `DIR th o` parses as a sake shape; on an arrow root it is the landmark's own facing. */
+/** `DIR th o` parses as a sake shape; on an arrow root it is the landmark's own facing (pair scope). */
 function landmarkLateral(word: MorphWord): MorphWord | undefined {
   const family = word.family;
   if (family.kind !== "x" || family.xFamily !== "sake" || family.stanceVowel !== "o" || family.horizon) return undefined;
   if (family.leftRoots.length !== 1 || !arrowRoots().has(family.leftRoots[0]!)) return undefined;
-  return { ...word, family: { kind: "x", xFamily: "lateral", leftRoots: family.leftRoots, rightRoots: [], landmark: true } };
+  return {
+    ...word,
+    family: {
+      kind: "x",
+      xFamily: "lateral",
+      leftRoots: family.leftRoots,
+      rightRoots: [],
+      landmark: true,
+      scopeVowel: family.stanceVowel,
+    },
+  };
 }
 
 /** `ROOT th V` on any root outside the eight sake roots is label scope (label-seams.md#label-scope). */

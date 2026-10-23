@@ -82,6 +82,10 @@ describe("spliceWord", () => {
     assert.deepEqual(splice("dwahar", pointer), { kind: "changed", raw: "dwuhor" });
     assert.deepEqual(splice("vuzunexel", "stance=e:o"), { kind: "changed", raw: "vuzunexol" });
   });
+  it("splices landmark facing pair scope", () => {
+    assert.deepEqual(splice("gazuhethol", "scope=o:e"), { kind: "changed", raw: "gazuhethel" });
+    assert.deepEqual(splice("gazuhethol", "stance=o:e"), { kind: "same", raw: "gazuhethol" });
+  });
   it("splices speech number markers and leaves writing shorthand", () => {
     const swap = maps("marker=re:ro,ro:re");
     assert.deepEqual(splice("gredol", swap), { kind: "changed", raw: "grodol" });
@@ -199,5 +203,32 @@ describe("rewrite spans", () => {
     const shapeHits = shape.words.flatMap((w, i) => (matchesTerm(w, formOl) ? [i] : []));
     assert.equal(rewriteExample(dots, dotsHits, maps("form=el:ol")).nextSource, "ol …");
     assert.equal(rewriteExample(shape, shapeHits, maps("form=ol:el")).nextSource, "A el B");
+  });
+
+  it("does not review a writing-marker stub when the map is speech-only", () => {
+    const page = "`th#N` after a channel.\n";
+    const { examples } = collectPageSpans(page, tables);
+    const stub = examples.find((e) => e.source === "th#N");
+    assert.ok(stub);
+    const hits = stub.words.flatMap((w, i) => (matchesTerm(w, parseTerm("marker=re|ro")) ? [i] : []));
+    const rewritten = rewriteExample(stub, hits, maps("marker=re:ro,ro:re"));
+    assert.equal(rewritten.reviews.length, 0);
+    assert.equal(rewritten.replacements.length, 0);
+    assert.equal(rewritten.nextSource, "th#N");
+  });
+
+  it("rewrites a SELF conversation-length bid in the stored slot", () => {
+    const page = "`SELFxen` a few minutes.\n";
+    const { examples } = collectPageSpans(page, tables);
+    const bid = examples.find((e) => e.source === "SELFxen");
+    assert.ok(bid);
+    const hits = bid.words.flatMap((w, i) => (matchesTerm(w, parseTerm("xFamily=ability")) ? [i] : []));
+    const rewritten = rewriteExample(bid, hits, maps("stance=e:o"));
+    assert.equal(rewritten.reviews.length, 0);
+    assert.equal(rewritten.nextSource, "SELFxon");
+    assert.deepEqual(
+      rewritten.replacements.map((r) => [r.from, r.to]),
+      [[`${CLOSED.microphone}xen`, `${CLOSED.microphone}xon`]],
+    );
   });
 });

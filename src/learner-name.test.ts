@@ -13,6 +13,7 @@ import {
   fillSelf,
   hasSelfSlot,
   selfGlossEnglish,
+  unfillSelfChange,
 } from "./learner-name.js";
 import { CLOSED } from "./closed-roots.js";
 import { parseOverlayCsv, parsePublishedCsv } from "./lexicon-search.js";
@@ -76,5 +77,13 @@ describe("fillSelf", () => {
     assert.equal(fillSelf("SELFISH"), "SELFISH");
     assert.equal(hasSelfSlot("SELFISH"), false);
     assert.equal(hasSelfSlot("`zSELFn`"), true);
+  });
+
+  it("writes a filled splice back through the SELF slot", () => {
+    const root = DEFAULT_SELF_ROOT;
+    assert.equal(unfillSelfChange("SELFxen", `${root}xen`, `${root}xon`), "SELFxon");
+    assert.equal(unfillSelfChange(`zSELFn`, `z${root}n`, `z${root}n`), "zSELFn");
+    assert.equal(unfillSelfChange("SELFxen", `${root}xen`, "vuzunexol"), null);
+    assert.equal(unfillSelfChange("uwoxen", `${root}xen`, `${root}xon`), null);
   });
 });

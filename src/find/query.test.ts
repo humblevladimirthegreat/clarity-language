@@ -166,6 +166,12 @@ describe("parse field keys", () => {
     assert.ok(!matchesTerm(scope, parseTerm("stance=a")));
   });
 
+  it("matches landmark facing as pair scope, not sake stance", () => {
+    const facing = { word: classify(parseWord("gazuhethol"), tables), unit: "", position: 0 };
+    assert.ok(matchesTerm(facing, parseTerm("xFamily=lateral,scope=o")));
+    assert.ok(!matchesTerm(facing, parseTerm("stance=o")));
+  });
+
   it("matches pointer vowel and role scope", () => {
     const [pointer] = sentence("dwahar").words;
     assert.ok(pointer);

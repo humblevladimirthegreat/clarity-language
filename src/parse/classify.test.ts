@@ -51,6 +51,18 @@ describe("classify", () => {
     assert.deepEqual(lateral.family, { kind: "x", xFamily: "lateral", leftRoots: ["eweze"], rightRoots: ["amo"] });
   });
 
+  it("reads DIR th o on an arrow root as landmark facing with pair scope", () => {
+    const word = classifyText("gazuhethol");
+    assert.deepEqual(word.family, {
+      kind: "x",
+      xFamily: "lateral",
+      leftRoots: ["azuhe"],
+      rightRoots: [],
+      landmark: true,
+      scopeVowel: "o",
+    });
+  });
+
   it("overlay mood on published-shaped live evidential", () => {
     const sense = [...tables.overlays.values()].find(
       (o) => o.pos === "th" && /live evidential/i.test(o.definition),

@@ -127,3 +127,22 @@ export function hasSelfSlot(text: string): boolean {
 export function fillSelf(text: string, root: string = DEFAULT_SELF_ROOT): string {
   return text.replace(GLOSS_SLOT_RE, selfGlossEnglish(root)).replace(WORD_SLOT_RE, root);
 }
+
+/**
+ * Inverse of {@link fillSelf} on one Agebon word whose filled form moved from `from` to `to`.
+ * `SELFxen` filled as `uwoxen` and spliced to `uwoxon` writes back `SELFxon`.
+ */
+export function unfillSelfChange(
+  sourceCore: string,
+  from: string,
+  to: string,
+  root: string = DEFAULT_SELF_ROOT,
+): string | null {
+  if (!hasSelfSlot(sourceCore) || fillSelf(sourceCore, root) !== from) return null;
+  const slot = /SELF(?=[a-z])/.exec(sourceCore);
+  if (!slot || slot.index === undefined) return null;
+  const idx = slot.index;
+  if (from.slice(idx, idx + root.length) !== root) return null;
+  if (to.slice(idx, idx + root.length) !== root) return null;
+  return `${sourceCore.slice(0, idx)}SELF${to.slice(idx + root.length)}`;
+}

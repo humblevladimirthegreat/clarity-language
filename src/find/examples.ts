@@ -33,6 +33,15 @@ function chunksOf(text: string): string[] {
   return text.trim().split(/\s+/).map((chunk) => peelLintChunk(chunk).core);
 }
 
+/** True when a stored chunk is the parsed word, a `SELF` slot, or a placeholder stub (`th#N` → `th#`). */
+function chunkMatchesRaw(chunk: string, raw: string): boolean {
+  const core = peelLintChunk(chunk).core;
+  if (core === raw) return true;
+  if (fillSelf(core) === raw) return true;
+  const stripped = findParseText(core);
+  return stripped === raw || fillSelf(stripped) === raw;
+}
+
 /** Map parsed words onto chunk indexes in the stored span (`A ol B` → `ol` at 1). */
 function alignWordPositions(source: string, words: FoundWord[]): FoundWord[] {
   const chunks = source.trim().split(/\s+/).filter((chunk) => chunk.length > 0);
@@ -40,7 +49,7 @@ function alignWordPositions(source: string, words: FoundWord[]): FoundWord[] {
   return words.map((item) => {
     const i = chunks.findIndex((chunk, idx) => {
       if (used.has(idx)) return false;
-      return peelLintChunk(chunk).core === item.word.raw;
+      return chunkMatchesRaw(chunk, item.word.raw);
     });
     if (i >= 0) used.add(i);
     return { ...item, position: i };

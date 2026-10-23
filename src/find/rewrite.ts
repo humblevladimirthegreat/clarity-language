@@ -3,6 +3,7 @@
  * scope / answer / stance / pointer / locus in a parsed word's `raw`, from the original parse.
  */
 import type { ClassifyTables } from "../parse/classify.js";
+import { unfillSelfChange } from "../learner-name.js";
 import { peelWordChunk } from "../parse/peel.js";
 import type { LexWord, MorphWord } from "../parse/types.js";
 import { reglossMarkdown } from "../regloss.js";
@@ -273,7 +274,10 @@ export function spliceWord(word: LexWord, maps: FieldMaps): SpliceOutcome {
         else if (mapped(maps, "locus", locus) && mapped(maps, "locus", locus) !== locus) failed = true;
       }
     }
-    if ((family.xFamily === "scope" || family.xFamily === "hookPrefix") && scope) {
+    if (
+      (family.xFamily === "scope" || family.xFamily === "hookPrefix" || (family.xFamily === "lateral" && family.landmark)) &&
+      scope
+    ) {
       const at = raw.lastIndexOf(`th${scope}`);
       if (at >= 0) need("scope", scope, at + 2);
       else if (mapped(maps, "scope", scope) && mapped(maps, "scope", scope) !== scope) failed = true;
@@ -311,8 +315,9 @@ export function replacePositionCore(text: string, position: number, from: string
     if (part.length === 0 || /^\s+$/.test(part)) continue;
     if (wordI === position) {
       const peeled = peelWordChunk(part);
-      if (peeled.core !== from) return null;
-      parts[i] = `${peeled.prefix}${to}${peeled.suffix}`;
+      const dest = peeled.core === from ? to : unfillSelfChange(peeled.core, from, to);
+      if (dest === null) return null;
+      parts[i] = `${peeled.prefix}${dest}${peeled.suffix}`;
       return parts.join("");
     }
     wordI += 1;
@@ -348,11 +353,11 @@ export function rewriteExample(example: Example, hitIndexes: number[], maps: Fie
     const item = example.words[i];
     if (!item) continue;
     const raw = item.word.raw;
+    const outcome = spliceWord(item.word, maps);
     if (item.position < 0) {
-      reviews.push({ raw, message: "word not placed in the span" });
+      if (outcome.kind !== "same") reviews.push({ raw, message: "word not placed in the span" });
       continue;
     }
-    const outcome = spliceWord(item.word, maps);
     if (outcome.kind === "fail") {
       reviews.push({ raw, message: "could not splice" });
       continue;
