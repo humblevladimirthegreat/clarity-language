@@ -266,6 +266,6 @@ A checkpoint headed `### Translation practice {#<band>-translation-practice}` pr
 | Page | Owns |
 |------|------|
 | [grammar-docs.md](grammar-docs.md) | Learner prose, teach order, worked examples, [house cast](grammar-docs.md#house-cast) |
-| [learning-levels.md](learning-levels.md) | Beginner / Intermediate / Advanced stages and cross-doc path |
+| [learning-levels.md](learning-levels.md) | Band gates and cross-doc path |
 | [glosses.md](glosses.md) | Morph gloss and free English (for teaching lines and checkpoint spoilers); [house-name glosses](glosses.md#house-cast) |
 | [drill-generation.md](drill-generation.md) | Path allowlist, [settings](drill-generation.md#settings) inventory, [example root bank](drill-generation.md#root-bank), and **execute** procedure (one file per agent) — follow [principles](#principles), [checkpoint setting](#checkpoint-setting), and [house scene](#house-scene) when replacing a checkpoint |

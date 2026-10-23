@@ -14,7 +14,7 @@ use [skip-cd] for amplify to not deploy.
 -proposals
 -cheat sheet for vowels?
 -cheat sheet for reading a word?
--after grouped-sittings Done when: `band-criteria.md` (gates, reassign, reorder; not a scored lesson list)
+-`band-criteria.md` phases 2–5 (first-corpus talk, purpose slices, leftovers, reorder; not a scored lesson list)
 -use git mv to move all grammar pages into their respective band folders
 
 Finger code (experimental, docs/grammar/finger-code.md; remove the warning once tested):
@@ -31,7 +31,7 @@ Finger code (experimental, docs/grammar/finger-code.md; remove the warning once 
 
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
--review published-lexicon for psychology - are there any abstract roots that are prone to cognitive biases that would benefit from special attention such as carefully choosing the concrete
+-review published-lexicon for psychology - are there any abstract roots that are prone to cognitive biases that would benefit from special attention such as carefully choosing the concrete or promoting to grammar?
 
 Dictionary entries (open lexicon / concepts, not the closed list above):
 -habits: triggered

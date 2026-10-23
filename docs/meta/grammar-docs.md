@@ -9,7 +9,7 @@ Related meta:
 | Page | Owns |
 |------|------|
 | [doc-style.md](doc-style.md) | Wording, voice, and sentence-level style for learner-facing grammar prose |
-| [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** stage rubric and [cross-doc path](learning-levels.md#cross-doc-path) (for `docs/grammar/` only) |
+| [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** [gates](learning-levels.md#gates) and [cross-doc path](learning-levels.md#cross-doc-path) (for `docs/grammar/` only) |
 | [glosses.md](glosses.md) | Morph glosses and free English ([example blocks](glosses.md#example-block); [house-name glosses](glosses.md#house-cast)) |
 | [translation-exercises.md](translation-exercises.md) | Eng ↔ Agebon checkpoints (placement, principles including house-cast people, spoiler shape; vocab **Agebon** = citation or the inflected form the row teaches) |
 | [drill-generation.md](drill-generation.md) | Path allowlist, [settings](drill-generation.md#settings) inventory, and execute procedure (one file per agent) |
@@ -163,7 +163,7 @@ If a page has several such tables, give each its own **Cue** column; never summa
 <a id="empty-stages"></a>
 <a id="empty-bands"></a>
 
-**Omit** a later sitting (no file) when the rubric’s third question is no: there is no new edge-case, stylistic, or rare inventory. Recap tables, unused-slot lists, “reminder” restatements of earlier stages, and Design-notes dumps do **not** earn a later sitting. Fold anything still needed into the last sitting that actually teaches, or drop it.
+**Omit** a later sitting (no file) when it would only recap, list unused slots, bounce, or remind. Recap tables, unused-slot lists, “reminder” restatements of earlier stages, and Design-notes dumps do **not** earn a sitting. Fold anything still needed into the last sitting that actually teaches, or drop it. Rare, stylistic, singing, speech-edge, overlay sense-form, hyperbole, and stacked-number inventory still belong in Advanced ([gates](learning-levels.md#gates)); do not invent an Advanced sitting when that gate is not met.
 
 Do **not** keep a heading whose only job is to say there is nothing here. Learners skip missing sittings on the [cross-doc path](learning-levels.md#cross-doc-path). Material that did not make a sitting belongs in [unassigned-reserved.md](unassigned-reserved.md) or [TODO.md](../../TODO.md), not in a stub appendix on the page.
 
@@ -174,7 +174,7 @@ Do **not** keep a heading whose only job is to say there is nothing here. Learne
 
 1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only when the learner will reach for that form *now* — [Compare with](#compare-with), not “this page owns / does not own” fencing.
 2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → extra nouns + **`darl`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; word-endings Beginner” on every page.
-3. **One sitting, one band** — front matter `band: beginner | intermediate | advanced` on the file; no `## Beginner` (etc.) H2 on a sitting. Include an Advanced sitting only when that topic has rare inventory to teach ([empty or pointless stages](#empty-stages)). Later sittings of the same topic use a **job title** (the slice’s first real H3), not the topic name again.
+3. **One sitting, one band** — front matter `band: beginner | intermediate | advanced` on the file; no `## Beginner` (etc.) H2 on a sitting. Assign the band with the [gates](learning-levels.md#gates). Include an Advanced sitting only when the Advanced gate applies ([empty or pointless stages](#empty-stages)). Later sittings of the same topic use a **job title** (the slice’s first real H3), not the topic name again.
 4. Inside each stage: **concept → English job → Agebon shape → one consequence → 1–3 examples → (optional contrast) → full table if needed**. Cue in the same block or in the **Cue** column, not as the lead. Inside **Beginner**, H3 order is **dependency order for this page’s job** ([Beginner stage shape](#beginner-stage-shape)), not inventory order. On clause pages that is building a clause; citation notes are last (or already taught on [word-endings.md](../grammar/word-endings.md)). Later stages: [Intermediate and Advanced stage shape](#later-stage-shape). [Explain before you slogan](doc-style.md#explain-before-you-slogan).
 5. Optional **See also** at the end — a few precise related forms only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
 
@@ -197,6 +197,8 @@ Do not open a **Beginner** section, or a later-stage H3 that teaches a **new Eng
 ## Beginner stage shape
 <a id="beginner-stage-shape"></a>
 <a id="beginner-band-shape"></a>
+
+This is how you write a sitting already tagged Beginner, not how you pick the band ([gates](learning-levels.md#gates)).
 
 **Grow one job at a time.** A Beginner stage opens with the **smallest form that does this page’s English job**. For clause pages that is a working sentence. For [phonology.md](../grammar/phonology.md) that is letters and cited word edges. For [word-endings.md](../grammar/word-endings.md) Beginner that is prefix-less **citation** (root + ending), not a sentence.
 
@@ -223,7 +225,7 @@ Do **not** open Beginner with:
 <a id="intermediate-stage-shape"></a>
 <a id="advanced-stage-shape"></a>
 
-Folder-wide hygiene still applies: [present the current language only](#present-the-current-language-only), [no process leftover](#no-process-or-corrective-leftover), [which tool, not which owner](#which-tool-not-which-owner), house cast, omit default **`yal`**, [empty stages](#empty-stages). A learner who opens Intermediate without rereading Beginner must not meet editor history, “stays on,” or denials of withdrawn constructions.
+Assign the sitting with the [gates](learning-levels.md#gates); this section is how you write it. Folder-wide hygiene still applies: [present the current language only](#present-the-current-language-only), [no process leftover](#no-process-or-corrective-leftover), [which tool, not which owner](#which-tool-not-which-owner), house cast, omit default **`yal`**, [empty stages](#empty-stages). A learner who opens Intermediate without rereading Beginner must not meet editor history, “stays on,” or denials of withdrawn constructions.
 
 Do **not** rerun [Beginner stage shape](#beginner-stage-shape) on later stages. Completing a paradigm as a table is the job of Intermediate; rare or stylistic inventory is the job of Advanced. Forcing “grow one cell at a time” there fights the dual role.
 
@@ -498,7 +500,7 @@ Grammar cheat sheets live in `docs/grammar/cheat-sheets/`, one printable page pe
 | How taught forms answer a less common English job | [Recipe track](#recipe-track) (`say-*.md`) |
 | Agebon words to drop into English, for learners not yet in the grammar | [Claritish track](#claritish-track) (`claritish/`) |
 | Gloss format | [glosses.md](glosses.md) |
-| Level rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
+| Band gates / reading order | [learning-levels.md](learning-levels.md) ([gates](learning-levels.md#gates), [cross-doc path](learning-levels.md#cross-doc-path)) |
 | Doc content / teaching order | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns), [Compare with](#compare-with)); wording and voice: [doc-style.md](doc-style.md), [claritish-style.md](claritish-style.md) |
 | Goals / feature criteria | [purpose.md](../grammar/purpose.md) (psych aims); [feature-criteria.md](feature-criteria.md) (test for a new psych feature); [introduction.md](../grammar/introduction.md) (grammar design, [cue tables](../grammar/introduction.md#cues)) |
 | Clause grammar (one clause) | [clause.md](../grammar/clause.md) |
@@ -517,7 +519,7 @@ Grammar cheat sheets live in `docs/grammar/cheat-sheets/`, one printable page pe
 ## Stage checklist
 <a id="stage-checklist"></a>
 
-Before tagging a sitting **Beginner**, ask the [three questions](learning-levels.md#rubric-three-questions). Prefer the earlier stage when learners need the form to read ordinary examples. Dependency on another subsystem beats “feels hard.” Do not add an Advanced sitting for recap, unused-slot lists, bounce notes, or reminders — [empty or pointless stages](#empty-stages).
+Before tagging a sitting, run the [gates](learning-levels.md#gates). Prefer the earlier band only when a later gate would leave Beginner examples unwritable. Dependency places the sitting on the path; it does not promote. Do not add an Advanced sitting for recap, unused-slot lists, bounce notes, or reminders — [empty or pointless stages](#empty-stages).
 
 Before shipping a **Beginner** stage, also check [Beginner stage shape](#beginner-stage-shape), [plain language](doc-style.md#plain-language-no-assumed-linguistics), [cues](#cues-columns) ([rubric](#cue-rubric)), and [explain before you slogan](doc-style.md#explain-before-you-slogan): invented terms and house shorthand defined on first use; lead unpacks job, shape, and consequence (slogan test); [English pictures](doc-style.md#unpack-english-pictures) after the split, never as the split; cue last, never as the definition, and never a caption of the emoji; first H3 is a usable form for that page (a clause on clause pages; letters or a citation on phonology / word-endings Beginner), not a leftover inventory table; no Intermediate teasers; drills cover the H3s (or the H3 is one-sentence setup for a drill).
 

@@ -72,7 +72,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `doc-style.md` | Wording and voice. |
 | `claritish-style.md` | Wording and voice for the Claritish track, and the hyphenated English host. |
 | `glosses.md` | Morph and free gloss rules. |
-| `learning-levels.md` | Beginner / intermediate / advanced rubric and the cross-doc path. |
+| `learning-levels.md` | Beginner / intermediate / advanced gates and the cross-doc path. |
 | `translation-exercises.md` | Translation checkpoint policy. |
 | `drill-generation.md` | Procedure for adding checkpoints. |
 | `lexicon.md` | Root spellings, root length, respelling, moving an overlay to another row. |
