@@ -36,6 +36,10 @@ export const beginnerLessons = [
   { text: "Social relations", link: "/social-ties" },
   { text: "Clause sequence", link: "/clause-sequence" },
   { text: "Digit-strings and time", link: "/digit-strings" },
+  { text: "Can and can't", link: "/can-and-cant" },
+  { text: "Live and memory", link: "/live-and-memory" },
+  { text: "How far a label reaches", link: "/label-seams" },
+  { text: "Thanks and sorry", link: "/thanks-and-sorry" },
 ]
 
 /** Intermediate sittings, in the same topic order as the Beginner group. */

@@ -607,7 +607,7 @@ An English noun like *case* or *board* covers several jobs, and Agebon has a dif
 
 ### Contribution, acquisition, murder, comparison and other act nouns {#act-nouns}
 
-**Needs:** [The event itself](roles.md#the-event-itself) · [Role compounds](roles.md#role-compounds) · [Someone's act](#someones-act) · [Fault](iff-fault.md#fault) · [Label scope](label-scope.md#label-scope) · [Proxy](relations.md#proxy) · [Exchange](relations.md#exchange)
+**Needs:** [The event itself](roles.md#the-event-itself) · [Role compounds](roles.md#role-compounds) · [Someone's act](#someones-act) · [Fault](iff-fault.md#fault) · [Label scope](label-seams.md#label-scope) · [Proxy](relations.md#proxy) · [Exchange](relations.md#exchange)
 
 English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *comparison*). Agebon has no separate noun for them. Put the verb stem on a thing letter with no **`w`** and part to name the act itself, write **`d`** as the part to name the thing the act happens to, or say the act as a sentence and resume it with **-r**. A wrongness or a pattern is the pole or label on the act, not a different noun.
 
@@ -656,7 +656,7 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 >
 > "Uzozen compares Olazun with Ahelan."
 
-**Compare with:** a ranking (*Uzozen is more challenging than Olazun*) is the [rank join](comparatives.md#comparatives), not **`vezom`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](prescription.md#sake-preference); **`zolamalugulel`** names the one chosen. *Often* / *usually* is a [restrictor](restrictors.md) (`huam`, `war`). A type across scenes is [label scope](label-scope.md#scope-type) **`thu`**.
+**Compare with:** a ranking (*Uzozen is more challenging than Olazun*) is the [rank join](comparatives.md#comparatives), not **`vezom`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](prescription.md#sake-preference); **`zolamalugulel`** names the one chosen. *Often* / *usually* is a [restrictor](restrictors.md) (`huam`, `war`). A type across scenes is [label scope](label-seams.md#scope-type) **`thu`**.
 
 ### Fair, keep, public, ride, admit and other leftover senses {#leftover-senses}
 

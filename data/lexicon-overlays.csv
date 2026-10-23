@@ -17,13 +17,13 @@ owom,th,💡,sake,understanding,understanding sake (sense-making / learning),a l
 owom,w,💡,sake,understanding,understanding sake (sense-making / learning),a lightbulb switches on; understanding is the moment it makes sense,sakes.md#personal-possession
 udam,th,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#word-shape
 udam,w,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#personal-possession
-evum,th,🎣,evidential,MEMORY,memory evidential (remembered firsthand / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),evidentiality.md#evidentiality
+evum,th,🎣,evidential,MEMORY,memory evidential (remembered firsthand / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),live-and-memory.md#live-vs-memory
 evul,th,🎣,evidential,MEMORY.strong,memory evidential with strong evidence (vivid memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),evidentiality.md#evidence-strength
 evur,th,🎣,evidential,MEMORY.weak,memory evidential with weak evidence (hazy memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),evidentiality.md#evidence-strength
 evum,w,🎣,evidential,MEMORY,memory evidential (remembered firsthand / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),universality.md#mood-on-one-adjective
 evul,w,🎣,evidential,MEMORY.strong,memory evidential with strong evidence (vivid memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),universality.md#mood-on-one-adjective
 evur,w,🎣,evidential,MEMORY.weak,memory evidential with weak evidence (hazy memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),universality.md#mood-on-one-adjective
-ugom,th,👁️‍🗨️,evidential,LIVE,live evidential (sensed now: in view / in earshot / on the skin),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),evidentiality.md#evidentiality
+ugom,th,👁️‍🗨️,evidential,LIVE,live evidential (sensed now: in view / in earshot / on the skin),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),live-and-memory.md#live-vs-memory
 ugol,th,👁️‍🗨️,evidential,LIVE.strong,live evidential with strong evidence (clear full view),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),evidentiality.md#evidence-strength
 ugor,th,👁️‍🗨️,evidential,LIVE.weak,live evidential with weak evidence (a glimpse),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),evidentiality.md#evidence-strength
 ugom,w,👁️‍🗨️,evidential,LIVE,live evidential (sensed now: in view / in earshot / on the skin),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),universality.md#mood-on-one-adjective
@@ -84,8 +84,8 @@ eyur,th,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a
 eyur,w,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a possibility or assumption for now),theater mask tried on for a moment to toy with what might follow,universality.md#mood-on-one-adjective
 eyul,th,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,notional-standing.md#hold-endings-notional
 eyul,w,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,universality.md#mood-on-one-adjective
-odam,h,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,ability.md#ability-fallback
-odam,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,ability.md#ability-fallback
+odam,h,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,can-and-cant.md#ability-fallback
+odam,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,can-and-cant.md#ability-fallback
 orol,g,🪙,identity,SAME,SAME identity (identical-to / same-as),coin has two faces one substance; same is one referent two labels,predication.md#identity-same
 ohom,th,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,dependents.md#poles
 ohom,g,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if

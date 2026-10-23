@@ -4,27 +4,18 @@ band: intermediate
 
 # Evidentiality {#evidentiality-sitting}
 
+::: tip Reminder:
+Intermediate sections assume you have read the beginner sections of every page.
+:::
 ### Evidentiality {#evidentiality}
 <a id="evidential"></a>
 <a id="content-readings"></a>
 
-English often says how you know a claim: *I saw it*, *I heard*, *I figured*. Agebon keeps the ordinary verb and adds a `/th/` stance word for that, called an **evidential**. It names the **channel** the claim reached you through: sensing it now, memory, a pattern of cases, clues, a proof from premises, a report, or a gut sense. So the same walk can be reported seven ways, and the listener always knows what your claim rests on. Under other role letters the channel roots are ordinary words (`vugol` *to attest*, `debal` *an ear*).
+You already pick [LIVE or MEMORY](live-and-memory.md#live-vs-memory) when the claim is in your senses now, or you remember sensing it. Five more channels finish the map: similar cases, clues about this case, a proof from premises, a report, or a gut sense. The same walk can then be reported seven ways, and the listener always knows what your claim rests on. Under other role letters the channel roots are ordinary words (`vugol` *to attest*, `debal` *an ear`).
 
-The seven channels come in four kinds. Two are **direct**: you sensed it yourself, now (LIVE) or earlier (MEMORY). Three are **reasoned**: you worked it out from similar cases (PATTERN), from clues about this case (CLUES), or from premises it must follow from (DEDUCED). One is **received**: someone else said or wrote it (REPORTED). One is **internal**: a sense you cannot fully spell out (INTUITION).
+The seven channels come in four kinds. Two are **direct** (already taught): you sensed it yourself, now (LIVE) or earlier (MEMORY). Three are **reasoned**: you worked it out from similar cases (PATTERN), from clues about this case (CLUES), or from premises it must follow from (DEDUCED). One is **received**: someone else said or wrote it (REPORTED). One is **internal**: a sense you cannot fully spell out (INTUITION).
 
-Verbs have **no past or future form**. Two channels place the event in time because of how you know it: **LIVE** means the scene is in your senses as you speak, and **MEMORY** means you remember sensing it (so it is past). The other channels do not place the event. When a reasoned or reported event happened at another time, add a when-frame: [*before* / *after* / *while*](dependents.md#time-poles), a clock or date, or a signed offset on the channel. A claim that something **will** happen is a forecast: a channel plus a later offset, so a forecast always says how you know.
-
-> `zuzozen thugom vowurel.`
->
-> z-Uzozen | th-LIVE | v-walk
->
-> "Uzozen is walking, I can see it."
-
-> `zuzozen thevum vowurel.`
->
-> z-Uzozen | th-MEMORY | v-walk
->
-> "Uzozen walked, I remember it."
+The other channels do not place the event in time. When a reasoned or reported event happened at another time, add a when-frame: [*before* / *after* / *while*](dependents.md#time-poles), a clock or date, or a signed offset on the channel. A claim that something **will** happen is a forecast: a channel plus a later offset, so a forecast always says how you know.
 
 **For *could be* with nothing behind it, use:** [MAY](knowing.md#may). When English *I think* means you have reasons (you worked it out, you heard it, you sense it), pick the channel for those reasons instead.
 
@@ -52,9 +43,9 @@ Pick one channel for how you know.
 >
 > "Olazun is asleep, my gut says."
 
-LIVE covers every sense, not only sight: a sound in earshot, cold on your skin, an ache in your knee. MEMORY is the same senses, remembered. A screen or a recording extends your senses, so footage is LIVE while you watch it and MEMORY once you have watched it, with the device as the source. A document is REPORTED: someone wrote it, so it reached you from someone else.
+A document is REPORTED: someone wrote it, so it reached you from someone else.
 
-**Compare with:** the act of seeing is the ordinary verb **`vawebol`**; LIVE only says how you know the claim. In the same way, hearing a door is an ordinary `/v/` verb, not REPORTED. A feeling such as fear or hope is an [emotion compose](feelings-permission.md#emotion-compose); INTUITION is a way of knowing, not a feeling about the event. Something a schedule says will happen is someone's [PLAN](intention.md#plan-predict). A tale you tell for its own sake is an imagined scene, not a report of fact.
+**Compare with:** hearing a door is an ordinary `/v/` verb, not REPORTED. A feeling such as fear or hope is an [emotion compose](feelings-permission.md#emotion-compose); INTUITION is a way of knowing, not a feeling about the event. Something a schedule says will happen is someone's [PLAN](intention.md#plan-predict). A tale you tell for its own sake is an imagined scene, not a report of fact.
 
 ### Evidence strength {#evidence-strength}
 
@@ -229,34 +220,6 @@ You assert the grounds, the way you assert a cause. If you are not sure of them,
 > "Olazun punched, judging by the fact that Uzozen is screaming, which I can hear."
 
 **Compare with:** a `bl-` noun after any channel is its [source](#source) (`thebam bluzozen` *according to Uzozen*), and no other channel takes `blarl`. A cause or condition word may not come before the channel. Put the channel first (`theyem thahum blarl`) to say both that you inferred it and that it was caused. *Could be* with no grounds is [MAY](knowing.md#may).
-
-### Live vs memory {#live-vs-memory}
-<a id="memory-record"></a>
-<a id="memory"></a>
-<a id="record-past"></a>
-<a id="live"></a>
-<a id="reconstructive-catch"></a>
-
-English *I see it* and *I saw it* both report watching; they differ in when you watched. LIVE **`thugom`** is for a scene still in your senses as you speak. MEMORY **`thevum`** is for a scene you remember sensing, so the event is past. Do not put both on one claim. English *I witnessed it* is MEMORY, not LIVE. (cue: memory is fishing: you pull the episode back, and it may not be what you hoped, the way a line can come up with a boot)
-
-> `zuzozen thevum vawebol dunobal.`
->
-> z-Uzozen | th-MEMORY | v-see | d-boot
->
-> "Uzozen saw a boot, as I remember it."
-
-Footage works the same way. While you watch, it is LIVE with the device as the source; once you have watched it, it is MEMORY, because your memory of the footage can slip just as a memory of the scene can.
-
-> `zuzozen thevum blogewol vowurel.`
->
-> z-Uzozen | [th-MEMORY | bl-camera] | v-walk
->
-> "Uzozen walked, as I remember from the camera."
-
-| Agebon | Use | English | Same root as | Cue |
-|--------|-----|---------|--------------|-----|
-| **`thugom`** | concurrent observation, by any sense | *live* / *from the scene* | `ugol` *attest* | 👁️‍🗨️: sensing-and-saying while it is in view |
-| **`thevum`** | reconstructive / recalled observation | *I remember* / *from memory* | `evul` *fishing* | 🎣: retrieval from the water |
 
 ### Carrying a channel forward {#carry-forward}
 <a id="channel-frame-carry"></a>
@@ -534,8 +497,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *cloud* | `ugalal` | ☁️ |
 | *gray* | `egulol` | 🩶 |
-| *LIVE* | `thugom` | 👁️‍🗨️ from *attest*: seen at the scene |
-| *MEMORY* | `thevum` | 🎣 from *fishing*: pulled up from memory |
 | *PATTERN* | `thubem` | 🐾 from *paw-prints*: a trail of cases |
 | *CLUES* | `theyem` | 🕵️ from *investigate*: worked out from clues |
 | *DEDUCED* | `thanam` | 📖 from *book*: read out of the premises |
@@ -548,28 +509,19 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
 | *Ahelan* | `ahelan` |
-| *camera* | `ogewol` |
+| *MEMORY* | `thevum` |
 | *radio* | `erowol` |
 | *rain* | `erulal` |
 | *departure* | `velurul` |
 | *tell* | `vezuyel` |
 | *see* | `vawebol` |
-| *sing* | `vezuyol` |
 | *scream* | `varemul` |
 | *punch* | `vanuvul` |
 | *sleep* | `vezuvol` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
-**1.** *I can see that Olazun is leaving.*
-
-::: details Show answer
-`zolazun thugom velurul.`
-
-z-Olazun | th-LIVE | v-departure
-:::
-
-**2.** *I heard third-hand that Olazun screams.*
+**1.** *I heard third-hand that Olazun screams.*
 
 ::: details Show answer
 `zolazun thebam thregel varemul.`
@@ -577,7 +529,7 @@ z-Olazun | th-LIVE | v-departure
 z-Olazun | th-REPORTED | th-3rd-hand | v-scream
 :::
 
-**3.** *Going by a well-established pattern, Uzozen will tell Ahelan.*
+**2.** *Going by a well-established pattern, Uzozen will tell Ahelan.*
 
 ::: details Show answer
 `zuzozen thubel blral vezuyel bahelan.`
@@ -585,7 +537,7 @@ z-Olazun | th-REPORTED | th-3rd-hand | v-scream
 z-Uzozen | [th-PATTERN.strong | bl-later] | v-tell | b-Ahelan
 :::
 
-**4.** *I gather Uzozen thinks Olazun has left.*
+**3.** *I gather Uzozen thinks Olazun has left.*
 
 ::: details Show answer
 `zolazun theyemuzozen velurul.`
@@ -595,15 +547,7 @@ z-Olazun | th-CLUES-Uzozen | v-departure
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zolazun thevum blogewol vezuyol.`
-
-::: details Show answer
-z-Olazun | [th-MEMORY | bl-camera] | v-sing
-
-*Olazun sang, as I remember from the camera.*
-:::
-
-**2.** `zolazun thevum vawebol derowol. yal zolazun vezuvol.`
+**1.** `zolazun thevum vawebol derowol. yal zolazun vezuvol.`
 
 ::: details Show answer
 z-Olazun | th-MEMORY | v-see | d-radio . y-statement | z-Olazun | v-sleep
@@ -611,12 +555,20 @@ z-Olazun | th-MEMORY | v-see | d-radio . y-statement | z-Olazun | v-sleep
 *Olazun saw a radio, as I remember. Olazun is asleep.* (the second claim does not rest on memory)
 :::
 
-**3.** `verulal thubel blral blarl zugalal gegulol.`
+**2.** `verulal thubel blral blarl zugalal gegulol.`
 
 ::: details Show answer
 v-rain | [th-PATTERN.strong | [bl-later | bl-that-clause]] | [z-cloud | g-gray]
 
 *It will rain, going by the well-established pattern, given the gray clouds.*
+:::
+
+**3.** `zahelan thebam vezuvol.`
+
+::: details Show answer
+z-Ahelan | th-REPORTED | v-sleep
+
+*Ahelan is asleep, so they say.*
 :::
 
 #### Pick one {#intermediate-pick-one}

@@ -14,7 +14,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 
 | Label | Gloss | Example | Teach |
 |-------|-------|---------|-------|
-| **ABIL** | Hostless *can* / *can’t* (no single verb) | `hodaxel` | [Ability, decision, and try](ability.md#ability-fallback) |
+| **ABIL** | Hostless *can* / *can’t* (no single verb) | `hodaxel` | [Can and can't](can-and-cant.md#ability-fallback) |
 | **AIMED** | Emotion locus: aimed at a target | `wawothumol` | [Feelings and permission](feelings-permission.md#emotion-compose) |
 | **ASIDE** | An aside span | `th(hogowul)` | [Spans](spans.md#asides) |
 | **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwavam` | [Feelings and permission](feelings-permission.md#say-words) |
@@ -34,9 +34,9 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **FORMER** | Episode standing: not the climate claimed now | `helam` | [Notional and standing](notional-standing.md#residue) |
 | **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Feelings and permission](feelings-permission.md#emotion-compose) |
 | **INTUITION** | Evidential: gut sense you cannot fully spell out | `thabom` | [Evidentiality](evidentiality.md#evidentiality) |
-| **LIVE** | Evidential: sensed now, by any sense | `thugom` | [Evidentiality](evidentiality.md#evidentiality) |
+| **LIVE** | Evidential: sensed now, by any sense | `thugom` | [Live and memory](live-and-memory.md#live-vs-memory) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thomam` | [Knowing](knowing.md#may) |
-| **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevum` | [Evidentiality](evidentiality.md#evidentiality) |
+| **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevum` | [Live and memory](live-and-memory.md#live-vs-memory) |
 | **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegel z[udozo] gamezom.` | [Mention and scope islands](span-mention.md#mention) |
 | **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themom` | [Notional and standing](notional-standing.md#mirative) |
 | **NAME** | A package titled with **-n** | `zebodol zuyudal zan.` | [Join islands and role grid](join-islands.md#named-list) |
@@ -86,7 +86,7 @@ From [Word shape, markers, and endings](number-markers.md#marker-vowel-referenti
 
 Hosted *can* / *can’t* (`xa` / `xe` / `xo` / `xu`) and hostless **ABIL**.
 
-[Ability, decision, and try](ability.md#ability)
+[Can and can't](can-and-cant.md#ability)
 
 ### Act word
 
@@ -393,7 +393,7 @@ Hosted: noun bolted onto a complex `/ɡ/`, `/h/`, or `/th/`. Unhosted: recipient
 
 Mid-word **`th`** plus a vowel on a content root, or the vowel right after **`w`** on a role word: this episode (**`tha`**), practiced role (**`the`**), this pair (**`tho`**), type across scenes (**`thu`**), or a stacked vowel.
 
-[Label scope](label-scope.md#label-scope)
+[How far a label reaches](label-seams.md#label-scope)
 
 **Compare with:** [restrictor](#restrictor) names the occasions, not the kind of claim. [Usual role](#usual-role) is practiced-role **`e`** on a role compound.
 
@@ -482,7 +482,7 @@ Whose view a clause reports. The name is fused onto an evidential, **MAY**, or *
 
 Content root a sake `th`-stance or an ability `x`-stance attaches to.
 
-[Ability, decision, and try](ability.md#ability), [sakes](sakes.md)
+[Can and can't](can-and-cant.md#ability), [sakes](sakes.md)
 
 **Compare with:** a measure [unit](#measure-phrase-unit) is not a host. Classification names the classified noun, not a host.
 
@@ -561,6 +561,12 @@ Sake stances **`tha` / `thu`** (Beginner); **`the`** / **`tho`** (Intermediate p
 [Sakes](sakes.md)
 
 **Compare with:** [as-for](#as-for) is **`hahugem`**, not a sake stance.
+
+### Thanks and sorry
+
+A lone `/th/` met word is thanks (*my sake is met*). *Sorry* is unmet plus a `bl-` word for whose sake was hurt.
+
+[Thanks and sorry](thanks-and-sorry.md#thanks-sorry)
 
 ### Named handle
 

@@ -54,6 +54,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *basket* | `abowal` |
 | *sit* | `vuhohol` |
 | *companionship* | `gumayam` |
+| *relatedness* | `awol` |
+| *listener* | `awan` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
@@ -213,6 +215,16 @@ z-sandwich | [near | b-speaker]
 **Rule:** [Here and there](here-there.md#deixis)
 :::
 
+**8.** `thawothum blawan.`
+
+::: details Show answer
+[th-relatedness-unmet-modifiable | bl-listener]
+
+*I'm sorry; that hurt your sense of connection.*
+
+**Rule:** [Thanks and sorry](thanks-and-sorry.md#thanks-sorry)
+:::
+
 #### Pick one {#beginner-pick-one}
 
 **1.** *education* `uzahal` or `uzaham`
@@ -335,6 +347,30 @@ z-Olazun | v-fight | [against | b-guard]
 **Rule:** [Extra noun: stacked vowels](extra-noun-hooks.md#extra-noun-intermediate)
 :::
 
+**11.** *Olazun can't sing yet.* `zolazun vezuyoxol.` or `zolazun vezuyoxel.`
+
+::: details Show answer
+`zolazun vezuyoxol.`
+
+z-Olazun | v-sing-unable-modifiable
+
+**`xo`** is *can't yet*; **`xe`** is *can't right now* when they usually can.
+
+**Rule:** [Ability and incapability](can-and-cant.md#ability)
+:::
+
+**12.** *Olazun is angry this time.* `zolazun gunemuthal.` or `zolazun gunemuthul.`
+
+::: details Show answer
+`zolazun gunemuthal.`
+
+z-Olazun | g-angry-th-episode
+
+**`tha`** is this episode; **`thu`** would make Olazun an angry type.
+
+**Rule:** [How far a label reaches](label-seams.md#label-scope)
+:::
+
 #### Fix it {#beginner-fix-it}
 
 **1.** *Ahelan, don’t run!* <!-- lint: error -->`yahelan yel varuvel.`
@@ -387,4 +423,16 @@ z-speaker | th-plan-atlas | v-swim
 With **`thager`**, I only intend to swim: the direction, details open. With **`thagel`**, I am fully prepared, with hurdles planned for.
 
 **Rule:** [Plan](intention.md#plan)
+:::
+
+**2.** `zolazun thugom vavuvul.` / `zolazun thevum vavuvul.`
+
+::: details Show answer
+z-Olazun | th-LIVE | v-fight
+
+z-Olazun | th-MEMORY | v-fight
+
+**LIVE** is now; **MEMORY** is a scene you remember sensing.
+
+**Rule:** [Live vs memory](live-and-memory.md#live-vs-memory)
 :::

@@ -67,7 +67,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🥺,plead,obeme,mind,order,,appeal,pleading eyes appeal,,charm; request,
 🥹,touched,adama,mind,holds,,,,,,
 😨,fear,evemu,mind,takes-away,,threat-appraisal,fear means dread; threat-appraisal is the unobservable reading of danger,,afraid; scare; frighten,
-😰,anxious,anumu,mind,takes-away,,apprehension,anxious means anxiety; apprehension is the unobservable expected harm,,nervous; anxiety,label-scope.md#intermediate-practice
+😰,anxious,anumu,mind,takes-away,,apprehension,anxious means anxiety; apprehension is the unobservable expected harm,,nervous; anxiety,label-seams.md#beginner-practice
 😢,teardrop,edebo,body,one,small,sadness,a teardrop shows sadness,,sorrow; sad; tear,
 😭,cry,agamu,mind,takes-away,,anguish,sob shows anguish,,,knowing.md#beginner-practice
 😱,scream,aremu,mind,takes-away,,horror,scream shows horror,,,dependents.md#beginner-practice
@@ -89,7 +89,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 👹,ogre,oyayu,person,takes-away,big,menace,ogre shows menace,,threat; threaten,
 👺,goblin,ugoyu,person,takes-away,medium,,,,,
 👻,ghost,egayu,person,takes-away,big,spookiness,a haunting ghost makes a place feel eerie,,,
-👽,alien,olayo,person,one,big,strangeness,an alien comes from somewhere unknown,,foreign; unusual,label-scope.md#intermediate-practice
+👽,alien,olayo,person,one,big,strangeness,an alien comes from somewhere unknown,,foreign; unusual,label-seams.md#beginner-practice
 🤖,robot,orowo,tool,one,medium,automation,a robot does the work by itself,,,
 🙈,blindfold,ubebu,body,takes-away,small,denial,a blindfold keeps you from seeing; denial refuses to see,,,
 🙉,earplugs,arebu,body,takes-away,small,avoidance,earplugs shut out sound; avoidance shuts out the truth,,avoid,
@@ -182,7 +182,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🤷,shrug,ahamo,mind,one,,uncertainty,a shrug says who knows; uncertainty is not knowing,,,
 🧑‍⚕️,heal,ehuyu,person,takes-away,none,recovery,the healer restores health; recovery is getting well again,,recover; therapy,
 🧑‍🎓,learn,eluye,person,order,none,scholarship,learning is study; scholarship is the unobservable knowledge-practice,,academic; scholar; study,
-🧑‍🏫,teach,uduye,person,order,none,instruction,a teacher explains so others learn,,educate; lesson,label-scope.md#intermediate-practice
+🧑‍🏫,teach,uduye,person,order,none,instruction,a teacher explains so others learn,,educate; lesson,label-seams.md#beginner-practice
 🧑‍⚖️,judge,uhuye,person,order,none,judgment,a judge weighs the case and rules,,assessment; assess; criticism; evaluation; evaluate; critical,
 🧑‍🌾,farm,avuya,person,holds,none,cultivation,a farm grows crops from tended soil,,farmer; breed,
 🧑‍🍳,cook,uguye,person,order,none,nourishment,cooking provides nourishment,,,pronouns.md#beginner-practice
@@ -475,7 +475,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🥘,pan,oboda,food,holds,medium,medley,many components cook in one pan,,,
 🍲,soup,uzuda,food,holds,none,simmer,soup simmers over low heat for a long time,,stew,
 🫕,sauce,ozoda,food,holds,none,sharing,everyone dips into one shared pot of sauce,,,
-🥣,bowl,oda,food,holds,,capacity,a bowl holds what it can; capacity is how much fits,,,ability.md#intermediate-practice
+🥣,bowl,oda,food,holds,,capacity,a bowl holds what it can; capacity is how much fits,,,can-and-cant.md#beginner-practice
 🥗,salad,azada,food,holds,none,,,,,compound-families.md#intermediate-practice
 🍿,popcorn,ureda,food,holds,small,entertainment,popcorn at the show is entertainment,,entertain,
 🧈,butter,uyuda,food,holds,none,flattery,butter someone up with flattery,,,
@@ -749,7 +749,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🀄,mahjong,ameva,doing,holds,small,,,,,
 🎴,card,agevo,doing,one,small,,,,,
 🎭,theater,eyu,person,takes-away,,pretense,theater masks hide the actor; pretense is playing a role / as-if framing,,dramatic; drama; stage,
-🖼️,frame,uvoga,sign,holds,medium,ostentation,a frame puts a picture on show; ostentation is showing-off as stance,,shape; form,label-scope.md#intermediate-practice
+🖼️,frame,uvoga,sign,holds,medium,ostentation,a frame puts a picture on show; ostentation is showing-off as stance,,shape; form,label-seams.md#beginner-practice
 🎨,palette,ubowa,tool,holds,medium,,,,color,
 🧵,thread,ovula,nature,holds,none,continuity,a thread runs unbroken; continuity is going on without a break,,constant; consistent; continuous,
 🪡,needle,enewu,tool,takes-away,small,,,,,
@@ -900,7 +900,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 📈,uptrend,oyure,counting,order,none,degree,an uptrend marks more on the scale; degree is vague how-much,m.h:kind-of,level; step,
 📉,downtrend,uduru,counting,takes-away,none,loss,the chart falls; loss is having less than before,,deficit,
 📊,bar-chart,ahure,counting,order,none,analysis,bar chart compares quantities; analysis is examining data,,analyze; chart; statistic,
-📋,clipboard,egowa,tool,holds,medium,accountability,clipboard tracks tasks to do; accountability is answerable tracking,,account,ability.md#intermediate-practice
+📋,clipboard,egowa,tool,holds,medium,accountability,clipboard tracks tasks to do; accountability is answerable tracking,,account,can-and-cant.md#beginner-practice
 📌,pin,abewu,tool,takes-away,small,highlight,pin marks an important spot; highlight is marking as important,,,
 📎,paper-clip,ebewa,tool,holds,small,attachment,paperclip holds sheets together; attachment is joined addition,,attach,
 📏,ruler,arore,counting,order,medium,measurement,ruler measures exact length; measurement is precise tracking,,measure; criteria; dimension,

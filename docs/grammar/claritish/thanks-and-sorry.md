@@ -67,4 +67,4 @@ I forgot your birthday. `thawothum blawan`.
 You explained the bill to me. `thowothal`.
 :::
 
-<!-- Source (editors): feelings-permission.md#thanks-sorry, sakes.md#sake-inventory, sakes.md#which-sake, sakes.md#personal-possession. -->
+<!-- Source (editors): thanks-and-sorry.md#thanks-sorry, sakes.md#sake-inventory, sakes.md#which-sake, sakes.md#personal-possession. -->

@@ -104,7 +104,7 @@ export class ConstructionError extends SentenceParseError {
 
 const NO_PLURAL_POS = new Set(["w", "h", "th", "x"]);
 const SAKE_POS = new Set(["g", "th", "w"]);
-/** Label scope goes on content slots (label-scope.md#label-scope). */
+/** Label scope goes on content slots (label-seams.md#label-scope). */
 const SCOPE_POS = new Set(["g", "z", "d", "b", "v", "h"]);
 /** Slot-rule parts: the participant that sat in that slot (roles.md#role-compounds). */
 const SLOT_PARTS = new Set(["z", "d", "b"]);
@@ -112,7 +112,7 @@ const SLOT_PARTS = new Set(["z", "d", "b"]);
 const ROLE_COMPOUND_POS = new Set(["z", "d", "b", "g", "h", "x", "y"]);
 /** A hook prefix names a property, a participant, or how the clause stands to the stem (hook-compounds.md#hook-prefixes). */
 const HOOK_PREFIX_POS = new Set(["z", "d", "b", "g", "h"]);
-/** Ability goes on a verb or a property (ability.md#ability). */
+/** Ability goes on a verb or a property (can-and-cant.md#ability). */
 const ABILITY_POS = new Set(["g", "v"]);
 /** A hooked join bounds a set of participants, or the times a restrictor covers (hook-compounds.md#hooked-joins). */
 const HOOKED_JOIN_POS = new Set(["z", "d", "b", "h"]);

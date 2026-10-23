@@ -155,16 +155,16 @@ With a name or a resumed noun, the pair is a [property](../predication.md#existe
 
 ### How far a label reaches {#label-scope}
 
-Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`. A [role word](../label-scope.md#scope-role) writes the same vowels right after its **`w`**.
+Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`. A [role word](../label-seams.md#scope-role) writes the same vowels right after its **`w`**.
 
 | Vowel | Reach | Example | English | Stage |
 |-------|-------|---------|---------|-------|
-| [`tha`](../label-scope.md#scope-occasion) | this episode | `zuzozen valamuthal.` | *Uzozen lied this once.* | I |
-| [`the`](../label-scope.md#scope-occupation) | a practiced role | `zuzozen valamuthel.` | *Uzozen lies as their craft.* | I |
-| [`tho`](../label-scope.md#scope-relative) | this pair (`/b/` follows) | `zuzozen golayothom blolazun.` | *Uzozen is a stranger to Olazun.* | I |
-| [`thu`](../label-scope.md#scope-type) | a type across scenes | `zolazun ganumuthul.` | *Olazun is an anxious type.* | I |
+| [`tha`](../label-seams.md#scope-occasion) | this episode | `zuzozen valamuthal.` | *Uzozen lied this once.* | I |
+| [`the`](../label-seams.md#scope-occupation) | a practiced role | `zuzozen valamuthel.` | *Uzozen lies as their craft.* | I |
+| [`tho`](../label-seams.md#scope-relative) | this pair (`/b/` follows) | `zuzozen golayothom blolazun.` | *Uzozen is a stranger to Olazun.* | I |
+| [`thu`](../label-seams.md#scope-type) | a type across scenes | `zolazun ganumuthul.` | *Olazun is an anxious type.* | I |
 
-[Stacked scope](../label-scope.md#scope-stacks): pairs that start with **u** read like *everything but* (every scene, the second vowel set aside); the others read like hooks (*over*, *using*, *toward*).
+[Stacked scope](../label-seams.md#scope-stacks): pairs that start with **u** read like *everything but* (every scene, the second vowel set aside); the others read like hooks (*over*, *using*, *toward*).
 
 | Vowel | Reach | English | Stage |
 |-------|-------|---------|-------|

@@ -42,7 +42,7 @@ Every offset counts from now, or from the *as-of* now when one is set. No row ne
 
 ### Simple past: pick how you know {#simple-past}
 
-**Needs:** [Live vs memory](evidentiality.md#live-vs-memory) · [Dated channel](universality.md#dated-channel)
+**Needs:** [Live vs memory](live-and-memory.md#live-vs-memory) · [Dated channel](universality.md#dated-channel)
 
 English *Uzozen walked* hides whether you saw it, read it, or were told. Choose the channel. A remembered sighting is MEMORY. Add a `-` amount to say how long ago.
 
@@ -116,7 +116,7 @@ English *had left* means the leaving counted **as of** an earlier moment. Write 
 
 ### Progressive: mid-way, in view, or still {#progressive}
 
-**Needs:** [In progress](predication.md#in-progress) · [Live vs memory](evidentiality.md#live-vs-memory) · [Already, still, not yet](notional-standing.md#phasal)
+**Needs:** [In progress](predication.md#in-progress) · [Live vs memory](live-and-memory.md#live-vs-memory) · [Already, still, not yet](notional-standing.md#phasal)
 
 English *is walking* usually means one of three things. Put the event root on `/ɡ/` when you say they are in the middle of it. Say **`thugom`** when the walking is in view now. Say **`hawum`** when you stress that it goes on.
 
@@ -238,13 +238,13 @@ For *would* in a condition (*if Olazun swam, Uzozen would walk*), see [remote an
 
 ### Can, could, may, might {#can-may}
 
-**Needs:** [Ability](ability.md#ability) · [MAY](knowing.md#may) · [Permission](feelings-permission.md#permission) · [FORMER](notional-standing.md#former-climate)
+**Needs:** [Ability](can-and-cant.md#ability) · [MAY](knowing.md#may) · [Permission](feelings-permission.md#permission) · [FORMER](notional-standing.md#former-climate)
 
 English *can* and *may* each carry several meanings. Pick the meaning.
 
 | English | You mean | Agebon |
 |---------|----------|--------|
-| *can* | able | verb + **`xa`** ([can](ability.md#can)) |
+| *can* | able | verb + **`xa`** ([can](can-and-cant.md#can)) |
 | *can't* | not now / not yet / never | **`xe`** / **`xo`** / **`xu`** |
 | *could* | used to be able | **`xa`** + FORMER **`helam`** |
 | *couldn't* | couldn't back then | **`xe`** / **`xo`** / **`xu`** + FORMER **`helam`** |
@@ -283,7 +283,7 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 
 ### Ability, possibility and permission words {#ability-words}
 
-**Needs:** [Ability](ability.md#ability) · [Can be](ability.md#role-ability) · [MAY](knowing.md#may) · [Permission](feelings-permission.md#permission) · [Forecasts](evidentiality.md#forecast) · [Requirement](feelings-permission.md#requirement)
+**Needs:** [Ability](can-and-cant.md#ability) · [Can be](can-and-cant.md#role-ability) · [MAY](knowing.md#may) · [Permission](feelings-permission.md#permission) · [Forecasts](evidentiality.md#forecast) · [Requirement](feelings-permission.md#requirement)
 
 English adjectives and verbs built on *can* and *may* take the same forms as the modals.
 

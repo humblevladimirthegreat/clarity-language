@@ -536,9 +536,9 @@ function spellHookPhrases(slots: readonly Slot[]): void {
   });
 }
 
-/** A label-scope seam as a row's form names it (`tha`, `thao`; label-scope.md#label-scope). */
+/** A label-scope seam as a row's form names it (`tha`, `thao`; label-seams.md#label-scope). */
 const SCOPE_SEAM = /^th(ao|ae|oe|ua|uo|ue|a|e|o|u)$/;
-const SCOPE_SECTION = /^(?:predication|label-scope)\.md#scope-/;
+const SCOPE_SECTION = /^(?:predication|label-scope|label-seams)\.md#scope-/;
 
 /** The seam a label-scope job or entry names, if it is one. */
 export function scopeSeam(s: Suggestion): string | undefined {
@@ -571,7 +571,7 @@ function scopedWord(data: HelperData, slot: Slot, seam: string): string | undefi
   return undefined;
 }
 
-/** Seams whose party follows in a `bl-` word (label-scope.md#scope-relative): **`tho`**, **`thuo`**. */
+/** Seams whose party follows in a `bl-` word (label-seams.md#scope-relative): **`tho`**, **`thuo`**. */
 const PAIR_SEAMS = new Set(["tho", "thuo"]);
 
 /** The first noun after slot `n`, as a `bl-` word (`zolazun` → `blolazun`): a pair scope's party. */

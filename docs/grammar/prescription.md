@@ -265,7 +265,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *pray* | `vobuyal` | 🙏 |
 | *kneel* | `vonuvol` | 🧎 |
 | *candle* | `uwewel` | 🕯️ |
-| *relatedness* | `awol` | 🪢 from *knot*: ties people together |
 | *purpose* | `urel` | 🧭 from *compass*: a heading worth following |
 
 **Review:**
@@ -275,6 +274,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
 | *Ahelan* | `ahelan` |
+| *relatedness* | `awol` |
 | *speaker* | `uwon` |
 | *physical* | `obal` |
 | *heavy* | `arolom` |

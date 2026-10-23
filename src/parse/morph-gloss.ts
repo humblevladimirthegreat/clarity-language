@@ -251,7 +251,7 @@ const ABILITY_STANCE: Record<string, string> = {
   u: "unable-irreversible",
 };
 
-/** Label scope seam vowels (label-scope.md#label-scope). */
+/** Label scope seam vowels (label-seams.md#label-scope). */
 export const SCOPE_VOWEL: Record<string, string> = {
   a: "episode",
   e: "role",
@@ -1471,7 +1471,7 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
       return grain ? [`${host}-${stance}-${grain}`] : [host, stance];
     }
     const stance = ABILITY_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "ability";
-    // Ability resume (`vowoxar`): the resumed host keeps the ability (ability.md#ability).
+    // Ability resume (`vowoxar`): the resumed host keeps the ability (can-and-cant.md#ability).
     if (word.ending === "r" && antecedent) {
       const antecedentFamily = antecedent.family;
       const resumed =

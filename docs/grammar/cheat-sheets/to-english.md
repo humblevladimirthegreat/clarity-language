@@ -134,7 +134,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `hewom` | similative like (manner resemblance) | [Extra nouns (/b/)](../clause.md#extra-nouns) | B |
 | `hezom` | ALTHOUGH clause pole (concession; NP despite) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `hobem` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](../of-relations.md#of-relations) | I |
-| `hodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](../ability.md#ability-fallback) | I |
+| `hodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](../can-and-cant.md#ability-fallback) | B |
 | `hoen` | join-relation equating or tying (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `hohem` | locative across (edge to far edge of one landmark) | [Locative relations](../of-relations.md#locative-relations) | I |
 | `hon` | join-relation exclusively for (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
@@ -185,7 +185,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `thenam` | AS-OF stance pole (asserted whose-now / dated ledger) | [Stance as-of](../as-of.md#stance-as-of) | A |
 | `thenar` | AS-OF stance pole (asserted whose-now / dated ledger) resume | [Stance as-of](../as-of.md#stance-as-of) | A |
 | `thevul` | memory evidential with strong evidence (vivid memory) | [Evidence strength](../evidentiality.md#evidence-strength) | I |
-| `thevum` | memory evidential (remembered firsthand / reconstructive) | [Evidentiality](../evidentiality.md#evidentiality) | I |
+| `thevum` | memory evidential (remembered firsthand / reconstructive) | [Live vs memory](../live-and-memory.md#live-vs-memory) | B |
 | `thevur` | memory evidential with weak evidence (hazy memory) | [Evidence strength](../evidentiality.md#evidence-strength) | I |
 | `thewem` | CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make) | [CAUSE](../iff-fault.md#cause) | I |
 | `theyel` | clues evidential with strong evidence (strong clues) | [Evidence strength](../evidentiality.md#evidence-strength) | I |
@@ -205,7 +205,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `thubem` | pattern evidential (from trail of cases) | [Evidentiality](../evidentiality.md#evidentiality) | I |
 | `thuber` | pattern evidential with weak evidence (a few cases) | [Evidence strength](../evidentiality.md#evidence-strength) | I |
 | `thugol` | live evidential with strong evidence (clear full view) | [Evidence strength](../evidentiality.md#evidence-strength) | I |
-| `thugom` | live evidential (sensed now: in view / in earshot / on the skin) | [Evidentiality](../evidentiality.md#evidentiality) | I |
+| `thugom` | live evidential (sensed now: in view / in earshot / on the skin) | [Live vs memory](../live-and-memory.md#live-vs-memory) | B |
 | `thugor` | live evidential with weak evidence (a glimpse) | [Evidence strength](../evidentiality.md#evidence-strength) | I |
 | `thunem` | AS-OF stance pole (unasserted whose-now / placeholder now) | [Stance as-of](../as-of.md#stance-as-of) | A |
 | `thuner` | AS-OF stance pole (unasserted whose-now / placeholder now) resume | [Stance as-of](../as-of.md#stance-as-of) | A |
@@ -265,7 +265,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `weyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Mood on one adjective](../universality.md#mood-on-one-adjective) | A |
 | `weyum` | notional mood default hold (imagining a scene without a further purpose) | [Mood on one adjective](../universality.md#mood-on-one-adjective) | A |
 | `weyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Mood on one adjective](../universality.md#mood-on-one-adjective) | A |
-| `wodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](../ability.md#ability-fallback) | I |
+| `wodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](../can-and-cant.md#ability-fallback) | B |
 | `womal` | may mood find-out hold (I'll / let's find out) | [Mood on one adjective](../universality.md#mood-on-one-adjective) | A |
 | `womam` | may mood (could be; default) | [Mood on one adjective](../universality.md#mood-on-one-adjective) | A |
 | `womar` | may mood who-knows hold (leave unsettled; may never know) | [Mood on one adjective](../universality.md#mood-on-one-adjective) | A |

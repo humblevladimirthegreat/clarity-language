@@ -7,7 +7,7 @@ band: intermediate
 ### Scope across scenes (`o`, `u`, pairs) {#scope}
 <a id="scope-across-scenes"></a>
 
-The scope slot after **`w`** takes every [label scope](label-scope.md#label-scope) vowel, not just **`a`** and **`e`**. They are the same vowels other labels write after mid-word **`th`**; on a role word they come first, and nowhere else. A **`th`** scope after a role word's stem (`zwazuduyethel`) is not a word.
+The scope slot after **`w`** takes every [label scope](label-seams.md#label-scope) vowel, not just **`a`** and **`e`**. They are the same vowels other labels write after mid-word **`th`**; on a role word they come first, and nowhere else. A **`th`** scope after a role word's stem (`zwazuduyethel`) is not a word.
 
 | V1 | Reach | Example | English |
 |----|-------|---------|---------|
@@ -23,7 +23,7 @@ The scope slot after **`w`** takes every [label scope](label-scope.md#label-scop
 >
 > "Uzozen is Olazun's teacher."
 
-On `/z/`, `/d/`, and `/b/`, pair scope **`o`** stands alone: the party is the one the clause already relates the person to. On `/ɡ/` it takes its `bl-` party, as on any [pair-scope label](label-scope.md#scope-relative).
+On `/z/`, `/d/`, and `/b/`, pair scope **`o`** stands alone: the party is the one the clause already relates the person to. On `/ɡ/` it takes its `bl-` party, as on any [pair-scope label](label-seams.md#scope-relative).
 
 > `zuzozen gwuezuduyel.`
 >
@@ -275,7 +275,7 @@ English *behind the house* means the house's own back, not a compass heading and
 >
 > "Uzozen walks in front of the door."
 
-This is [label scope](label-scope.md#label-scope) **`tho`** on a direction: the direction relative to that landmark. Arrow roots take no other scope vowel.
+This is [label scope](label-seams.md#label-scope) **`tho`** on a direction: the direction relative to that landmark. Arrow roots take no other scope vowel.
 
 The landmark's front is where its design or current use faces (a house's front door, a car's windshield). A DIR + **`th`** + **`o`** word always takes a `/b/` landmark.
 

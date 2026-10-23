@@ -80,7 +80,7 @@ describe("resolve — content anaphors (pronouns.md#resume-r)", () => {
     assert.equal(anaphors[0]!.antecedent, undefined);
   });
 
-  it("binds an ability resume on its whole stem and keeps the ability (ability.md#ability)", () => {
+  it("binds an ability resume on its whole stem and keeps the ability (can-and-cant.md#ability)", () => {
     const { anaphors } = resolveOf("zuzozen vowurexal. zugobon vowurexar.");
     assert.equal(anaphors[0]!.pronoun.raw, "vowurexar");
     assert.equal(anaphors[0]!.antecedent?.raw, "vowurexal");

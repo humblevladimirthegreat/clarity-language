@@ -121,20 +121,19 @@ A lone met word is a whole sentence about you: *my sake is met*. Sorry is about 
 <!-- cheat-sheet: why-allowed -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`…thal`](../feelings-permission.md#thanks-sorry) | the help lasts | *that will stay with me* | I |
-| [`…tham`](../feelings-permission.md#thanks-sorry) | horizon unstated | *thank you* | I |
-| [`…thar`](../feelings-permission.md#thanks-sorry) | landed right when needed | *thanks, that got me through* | I |
-| [`…thul blawan`](../feelings-permission.md#thanks-sorry) | the harm is lasting | *I'm deeply sorry* | I |
-| [`…thum blawan`](../feelings-permission.md#thanks-sorry) | the harm can be softened | *I'm sorry* | I |
-| [`…thur blawan`](../feelings-permission.md#thanks-sorry) | the harm is passing | *my bad* | I |
+| [`…thal`](../thanks-and-sorry.md#thanks-sorry) | the help lasts | *that will stay with me* | I |
+| [`…tham`](../thanks-and-sorry.md#thanks-sorry) | horizon unstated | *thank you* | I |
+| [`…thar`](../thanks-and-sorry.md#thanks-sorry) | landed right when needed | *thanks, that got me through* | I |
+| [`…thul blawan`](../thanks-and-sorry.md#thanks-sorry) | the harm is lasting | *I'm deeply sorry* | I |
+| [`…thum blawan`](../thanks-and-sorry.md#thanks-sorry) | the harm can be softened | *I'm sorry* | I |
+| [`…thur blawan`](../thanks-and-sorry.md#thanks-sorry) | the harm is passing | *my bad* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Thanks](../feelings-permission.md#thanks-sorry) | `thawotham.` | *That meant a lot to me.* | I |
-| [Moved](../feelings-permission.md#thanks-sorry) | `thawothamar.` | *I'm so moved.* | I |
-| [Sorry](../feelings-permission.md#thanks-sorry) | `thawothum blawan.` | *That hurt your sense of connection.* | I |
-| [Sorry, to another's sake](../feelings-permission.md#thanks-sorry) | `thawothum blolazun.` | *owns up to a harm to Olazun* | I |
-| [Appreciated by another](../feelings-permission.md#thanks-sorry) | `thawotham blolazun.` | *Olazun appreciated it* | I |
+| [Thanks](../thanks-and-sorry.md#thanks-sorry) | `thawotham.` | *That meant a lot to me.* | I |
+| [Sorry](../thanks-and-sorry.md#thanks-sorry) | `thawothum blawan.` | *That hurt your sense of connection.* | I |
+| [Sorry, to another's sake](../thanks-and-sorry.md#thanks-sorry) | `thawothum blolazun.` | *owns up to a harm to Olazun* | I |
+| [Appreciated by another](../thanks-and-sorry.md#thanks-sorry) | `thawotham blolazun.` | *Olazun appreciated it* | I |
 
 ### Speaker attitude {#attitude}
 
@@ -246,4 +245,4 @@ A [say word](../feelings-permission.md#say-words) on `/h/`: **`h`** **`w`**, a s
 | `hwavam` *may* ([the act is allowed](../feelings-permission.md#permission)) | | `hwavem` *has to* ([the act is demanded](../feelings-permission.md#permission)) |
 | `hwavel` *the rules require it* ([an outside demand](../feelings-permission.md#permission)) | | `hwazer` *I feel I have to* ([an unspoken should](../feelings-permission.md#consent)) |
 | `thawothem` *ought to, for relatedness* ([advice for a sake](../prescription.md#sake-force)) | | `thawothom` *for relatedness* ([why it is done](../prescription.md#sake-preference)) |
-| `thawotham` *thank you* ([my sake is met](../feelings-permission.md#thanks-sorry)) | | `thawothum blawan` *I'm sorry* ([your sake is hurt](../feelings-permission.md#thanks-sorry)) |
+| `thawotham` *thank you* ([my sake is met](../thanks-and-sorry.md#thanks-sorry)) | | `thawothum blawan` *I'm sorry* ([your sake is hurt](../thanks-and-sorry.md#thanks-sorry)) |

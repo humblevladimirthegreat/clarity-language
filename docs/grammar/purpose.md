@@ -26,7 +26,7 @@ That is five words, and three of them make you choose something English lets you
 
 - `thabor` says how you know: a gut sense, and only a faint one. Other words say you saw it, remember it, worked it out from clues, or were told, and other endings say the hunch is strong. Said once, it covers the next sentence too ([evidentiality](evidentiality.md#evidentiality)).
 - `guwathum` names what the failure costs: competence, one of the [sakes](sakes.md) (things that are good for a person). Its ending says the cost can change with effort or circumstance; other endings say it is lasting, or only for now. Other sakes, such as relatedness or purpose, name a different cost, and swapping the *unmet* vowel for the *met* one names a gain instead. The sake word also makes the failure yours, with no separate word for *my*.
-- `veverexom` is *can't succeed*, but only *yet*: it may still change. Other vowels say *right now* (you usually can) or *never* ([ability](ability.md#ability)).
+- `veverexom` is *can't succeed*, but only *yet*: it may still change. Other vowels say *right now* (you usually can) or *never* ([ability](can-and-cant.md#ability)).
 
 Agebon does not force the gentler answer. You can still say *I can never succeed* (`zuwon veverexum.`), call the hunch strong, or call the cost lasting, and sometimes that is true. But English *I'll never be good at this* does not ask how you know or how lasting it is, so the harsh version slips by unchecked. In Agebon you cannot say *can't* without choosing among *right now*, *yet*, and *never*, and that one moment of choosing is often enough to notice that *yet* is the honest answer.
 
@@ -56,7 +56,7 @@ A hard moment, a label, or a past pattern hardens into a fixed fact about a pers
 
 English *Olazun is angry* can mean one outburst or the kind of person Olazun is. One act slides into a verdict on someone's nature, and a name for a problem (*lazy*, *anxious*) starts to sound like its cause.
 
-[Label scope](label-scope.md#label-scope) lets any label say what kind of claim it makes: about this stretch of doing, about a practiced role, about one relationship (*a stranger to Uzozen*), or about a type that follows the person across scenes.
+[Label scope](label-seams.md#label-scope) lets any label say what kind of claim it makes: about this stretch of doing, about a practiced role, about one relationship (*a stranger to Uzozen*), or about a type that follows the person across scenes.
 
 Marking a label's reach helps you describe what happened without turning it into a verdict on who someone is, yourself included.
 
@@ -66,7 +66,7 @@ In English: [Claritish: Labels](claritish/labels.md).
 
 English *I can’t* can mean a temporary block, a lasting inability, or a choice not to.
 
-[Ability](ability.md#ability) says whether someone can do an activity or have a property, and for *can’t*, which kind: not right now, not now but it may change, or not ever. Choosing not to is an ordinary *won’t*, not a kind of *can’t*.
+[Ability](can-and-cant.md#ability) says whether someone can do an activity or have a property, and for *can’t*, which kind: not right now, not now but it may change, or not ever. Choosing not to is an ordinary *won’t*, not a kind of *can’t*.
 
 Saying *can’t right now* or *may yet change* instead of *impossible* helps you stop treating a temporary block as a fixed incapability.
 
@@ -113,7 +113,7 @@ In English: [Claritish: Feelings in three parts](claritish/feelings.md).
 
 English *thank you* says you are grateful, but not for what.
 
-Agebon has no set phrase for [thanks](feelings-permission.md#thanks-sorry). Instead, you say which of your sakes was met; saying that to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](prescription.md#whose-stake)). Put the sake word right after a thing you own and it appreciates that thing, with no separate word for *my*, so appreciating what you already have takes one word ([personal possession](sakes.md#personal-possession)).
+Agebon has no set phrase for [thanks](thanks-and-sorry.md#thanks-sorry). Instead, you say which of your sakes was met; saying that to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](prescription.md#whose-stake)). Put the sake word right after a thing you own and it appreciates that thing, with no separate word for *my*, so appreciating what you already have takes one word ([personal possession](sakes.md#personal-possession)).
 
 Naming the need that was met makes thanks specific, which helps both of you notice what actually helped.
 
@@ -288,7 +288,7 @@ Abstract ideas are hard to hold onto; without a concrete picture, the psychologi
 Many roots have an **abstract** sense beside a **concrete** one, so an idea you cannot see is tied to a familiar scene that already carries the caution. For example:
 
 - [Memory as fishing](evidentiality.md#evidentiality) ([a guess as fact](#trap-certainty)): cast into opaque water; you may pull up a fish or a **boot** (the memory can be wrong).
-- [Live look as attesting](evidentiality.md#live-vs-memory) ([a guess as fact](#trap-certainty)): you report what you see while the scene is still in view.
+- [Live look as attesting](live-and-memory.md#live-vs-memory) ([a guess as fact](#trap-certainty)): you report what you see while the scene is still in view.
 - [Residue as unpaid debt](notional-standing.md#residue) ([a moment as identity](#trap-identity)): the result still counts, like a balance still owed; not a past tense.
 - [Former climate as an empty nest](notional-standing.md#former-climate) ([a moment as identity](#trap-identity)): the nesting season is over; a pattern that has ended, not a past tense.
 - [A pattern as paw-prints](universality.md#universality) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.

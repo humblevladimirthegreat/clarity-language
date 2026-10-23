@@ -42,7 +42,7 @@ describe('pathPages', () => {
     const intermediateEnd = pages.indexOf('review-intermediate.md')
     const advancedEnd = pages.indexOf('review-advanced.md')
     assert.equal(pages[orientation.length], 'phonology.md')
-    assert.equal(pages[beginnerEnd - 1], 'digit-strings.md')
+    assert.equal(pages[beginnerEnd - 1], `${beginnerLessons.at(-1)!.link.replace(/^\//, "")}.md`)
     assert.equal(pages.slice(orientation.length, beginnerEnd).length, beginnerLessons.length)
     assert.equal(pages.slice(beginnerEnd + 1, intermediateEnd).length, intermediateLessons.length)
     assert.equal(pages.slice(intermediateEnd + 1, advancedEnd).length, advancedLessons.length)

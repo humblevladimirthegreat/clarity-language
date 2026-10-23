@@ -4,111 +4,9 @@ band: intermediate
 
 # Ability, decision, and try {#ability-decision-and-try}
 
-### Ability and incapability {#ability}
-<a id="incapability"></a>
-
-English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Agebon you fold that meaning into the verb or adjective itself. After the root, write **`x`**, then a vowel for *can* or for which kind of *can't*, then the same [ending](word-endings.md) the word would have without it.
-
-#### Can (`xa`)
-<a id="can"></a>
-
-To say someone **can** do something (*can sing*) or can have a quality, keep the verb or adjective and add **`x`** and **`a`** after the root, before the usual ending. The first letter stays `/v/` for an action or `/ɡ/` for a quality, and no separate word for *can* is needed. Only a verb or an adjective takes the ability vowel; a noun, a name, or an `/h/` word does not, apart from the special word in when there is no single verb. (Cue: **a** ≈ add, so capability is in)
-
-> `zuzozen vezuyoxal.`
->
-> z-Uzozen | v-sing-able
->
-> "Uzozen can sing."
-
-For English *could* about a skill someone used to have, add [FORMER](notional-standing.md#former-climate) **`helam`**: the ability held before, and you are not claiming it now.
-
-> `zuzozen vezuyoxal helam.`
->
-> z-Uzozen | v-sing-able | h-FORMER
->
-> "Uzozen used to be able to sing."
-
-As a quality, the same word goes on `/ɡ/`: `zuzozen gezuyoxal` (*Uzozen is able to sing*). Without the ability vowel, `zuzozen vezuyol` is just *Uzozen sings*.
-
-The ending is the one the verb or adjective would have anyway (**-l** concrete, **-m** abstract, **-n** name, **-r** resume). It does not change what kind of *can* you mean:
-
-> `zolazun vezuyoxam.`
->
-> z-Olazun | v-expression-able
->
-> "Olazun can express themself."
-
-For English *so can I* / *can too*, [resume](pronouns.md#resume-r) the verb and keep the **`x`** and vowel: the whole stem, then **`x`**, the vowel, and **-r**. A plain resume would drop the *can*.
-
-> `zuzozen vowurexal. zolazun vowurexar.`
->
-> z-Uzozen | v-walk-able . z-Olazun | v-←walk-able
->
-> "Uzozen can walk, and so can Olazun."
-
-#### Can be (role + ability)
-<a id="role-ability"></a>
-
-To say someone **can be** something (*can be the author*, *can be a teacher*) rather than that they can do the act, put the ability vowel on a [role compound](roles.md#role-compounds) on `/ɡ/`. Write the role compound, then **`x`** and the ability vowel, then the ending. This works only on `/ɡ/`, the same slot that says *is a teacher* ([classification](predication.md#classification)). The role compound keeps its [scope](roles.md#one-time-or-a-practice) at the front, so scope and ability combine: **`a`** is the role this once (*can be the author* of this), **`e`** the role as a practice (*can be a teacher*).
-
-> `zolazun gwazarayexam.`
->
-> z-Olazun | g-episode-agent-authorship-able
->
-> "Olazun can be the author."
-
-> `zuzozen gwezuduyexul.`
->
-> z-Uzozen | g-role-agent-teach-unable-irreversible
->
-> "Uzozen can never be a teacher."
-
-**Compare with:** `vuduyexal` is *can teach* (the act). `gwezuduyexal` is *can be a teacher, as a practice* (fit for the role).
-
-#### Can't (`xe` / `xo` / `xu`)
-<a id="ability-changeability"></a>
-<a id="ability-stance"></a>
-
-English *can't* does not say whether this is just for now, not yet, or never. After **`x`**, pick **`e`**, **`o`**, or **`u`** for that difference.
-
-> `zolazun vezuyoxel.`
->
-> z-Olazun | v-sing-unable-temporary
->
-> "Olazun can't sing right now."
-
-<!-- cheat-sheet: knowing-intending -->
-| Agebon | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`xa`** | they can (this verb or quality) | *can* | **a** ≈ add (capability is in) |
-| **`xe`** | they can't, just for now (they usually can) | *can't right now* | **e** ≈ order (this moment's ranking) |
-| **`xo`** | they can't yet (use this if you are not sure how lasting it is) | *can't yet* | **o** ≈ one (one open *can't*) |
-| **`xu`** | they can never / it is impossible | *can never* / *impossible* | **u** ≈ undo (capability taken off) |
-
-> `zahelan vezuyoxol.`
->
-> z-Ahelan | v-sing-unable-modifiable
->
-> "Ahelan can't sing yet."
-
-> `zuzozen varuvexul.`
->
-> z-Uzozen | v-run-unable-irreversible
->
-> "Uzozen can never run."
-
-**Compare with:** a [sake](sakes.md) word puts **`th`** and a vowel after a sake root: **`tha` / `thu`** is met / unmet (`thuwathum` *competence unmet*). **`x`** and a vowel after a verb or adjective root is *can* / *can't*.
-
-### When there is no single verb (`oda`) {#ability-fallback}
-
-Sometimes English *can* / *can't* is not about one named verb or quality: the activity takes more than one root, you just want a bare *can't*, or the *can* covers the whole sentence. Then there is no single root to put **`x`** into. Use the special word **`oda`**: after **`oda`**, write the same **`x`**, vowel, and ending as on a verb. Put it on `/h/` when it is about the whole clause, or on `/w/` immediately before the adjective it grades. That lets you say *can* / *can't* without naming the activity in that word. Prefer the verb itself whenever one root is enough. (Cue: 🥣 *bowl*: it holds what you can do)
-
-> `zuzozen hodaxel.`
->
-> z-Uzozen | h-ABIL-unable-temporary
->
-> "Uzozen can't right now."
-
+::: tip Reminder:
+Intermediate sections assume you have read the beginner sections of every page.
+:::
 ### Decision (revisability)
 <a id="decision"></a>
 <a id="decision-mood"></a>
@@ -235,7 +133,7 @@ A fully prepared [PLAN](intention.md#plan-predict) (**`thagel`**) already has ba
 >
 > "My plan is to walk; failing that, to sing; failing that, to sleep."
 
-**Compare with:** [ability](#ability) says whether someone **can** do something; an attempt makes no claim either way. [PLAN](intention.md#plan-predict) is intention before acting; an attempt is acting with the outcome open.
+**Compare with:** [ability](can-and-cant.md#ability) says whether someone **can** do something; an attempt makes no claim either way. [PLAN](intention.md#plan-predict) is intention before acting; an attempt is acting with the outcome open.
 
 **Not the same job as:** plain *or*, **`xol`** ([clause joins](joins.md#clause-joins)), which has no first choice and no backup.
 
@@ -355,9 +253,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *clipboard* | `egowal` | 📋 |
 | *pen* | `abewel` | 🖊️ |
-| *capacity* | `odam` | 🥣 from *bowl*; as **`hodaxel`**, a bare *can't* |
 | *DECISION* | `thogom` | ✅ from *check*: the box is ticked |
 | *attempt-unstated* | `howam` | 🧪 from *test tube*: try a sample |
 | *want-unstated* | `thalem` | 🌠 from *shooting star*: a wish |
@@ -380,23 +276,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
-**1.** *Uzozen can write on the clipboard.*
-
-::: details Show answer
-`zuzozen varayexal aol begowal.`
-
-z-Uzozen | v-write-able | [on | b-clipboard]
-:::
-
-**2.** *Olazun can't write yet.*
-
-::: details Show answer
-`zolazun varayexol.`
-
-z-Olazun | v-write-unable-modifiable
-:::
-
-**3.** *I've decided to sit down, and can still change that.*
+**1.** *I've decided to sit down, and can still change that.*
 
 ::: details Show answer
 `zuwon thogom vuhohol.`
@@ -404,7 +284,7 @@ z-Olazun | v-write-unable-modifiable
 z-speaker | th-DECISION-modifiable | v-sit
 :::
 
-**4.** *Ahelan gives speaking a try.*
+**2.** *Ahelan gives speaking a try.*
 
 ::: details Show answer
 `zahelan howar vezuyel.`
@@ -412,7 +292,7 @@ z-speaker | th-DECISION-modifiable | v-sit
 z-Ahelan | h-ATTEMPT-trial | v-tell
 :::
 
-**5.** *Right now I feel like having Uzozen sing.*
+**3.** *Right now I feel like having Uzozen sing.*
 
 ::: details Show answer
 `zuzozen thaler vezuyol.`
@@ -420,7 +300,7 @@ z-Ahelan | h-ATTEMPT-trial | v-tell
 z-Uzozen | th-WANT-passing | v-sing
 :::
 
-**6.** *I've decided for now to talk to Olazun.*
+**4.** *I've decided for now to talk to Olazun.*
 
 ::: details Show answer
 `zuwon thogor vezuyel bolazun.`
@@ -430,23 +310,7 @@ z-speaker | th-DECISION-temporary | v-tell | b-Olazun
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zolazun gwazarayexam.`
-
-::: details Show answer
-z-Olazun | g-episode-agent-authorship-able
-
-*Olazun can be the author.*
-:::
-
-**2.** `zuzozen hodaxel.`
-
-::: details Show answer
-z-Uzozen | h-ABIL-unable-temporary
-
-*Uzozen can't right now.*
-:::
-
-**3.** `zahelan thagem thogol debonel varayel.`
+**1.** `zahelan thagem thogol debonel varayel.`
 
 ::: details Show answer
 z-Ahelan | th-plan-itinerary | th-DECISION-irreversible | d-page | v-write
@@ -454,7 +318,7 @@ z-Ahelan | th-plan-itinerary | th-DECISION-irreversible | d-page | v-write
 *I plan for Ahelan to write the page, and that choice is final.*
 :::
 
-**4.** `zuzozen vezuyel uem thogom.`
+**2.** `zuzozen vezuyel uem thogom.`
 
 ::: details Show answer
 z-Uzozen | v-tell | [contrary-to | th-DECISION-modifiable]
@@ -462,7 +326,7 @@ z-Uzozen | v-tell | [contrary-to | th-DECISION-modifiable]
 *Uzozen speaks, against my decision.*
 :::
 
-**5.** `zolazun howar vezuyol xon zolazur varayel.`
+**3.** `zolazun howar vezuyol xon zolazur varayel.`
 
 ::: details Show answer
 [z-Olazun | h-ATTEMPT-trial | v-sing | x-or-else | z-←Olazun | v-write]
@@ -470,7 +334,7 @@ z-Uzozen | v-tell | [contrary-to | th-DECISION-modifiable]
 *Olazun gives singing a try; failing that, Olazun writes.*
 :::
 
-**6.** `zahelan thalel thagem dabewel vumewol.`
+**4.** `zahelan thalel thagem dabewel vumewol.`
 
 ::: details Show answer
 z-Ahelan | th-WANT-lasting | th-plan-itinerary | d-pen | v-find
@@ -480,17 +344,7 @@ z-Ahelan | th-WANT-lasting | th-plan-itinerary | d-pen | v-find
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzozen can't sit right now.* (Uzozen usually can) `zuzozen vuhohoxel.` or `zuzozen vuhohoxul.`
-
-::: details Show answer
-`zuzozen vuhohoxel.`
-
-z-Uzozen | v-sit-unable-temporary
-
-**`xe`** is *can't, just for now*; **`xu`** is *can never*.
-:::
-
-**2.** *Olazun keeps trying to write.* `zolazun howal varayel.` or `zolazun howar varayel.`
+**1.** *Olazun keeps trying to write.* `zolazun howal varayel.` or `zolazun howar varayel.`
 
 ::: details Show answer
 `zolazun howal varayel.`
@@ -500,14 +354,14 @@ z-Olazun | h-ATTEMPT-committed | v-write
 **-l** commits to the attempt; **-r** is only a trial run.
 :::
 
-#### Fix it {#intermediate-fix-it}
+#### What changes {#intermediate-what-changes}
 
-**1.** *Ahelan can sing.* <!-- lint: error -->`zahelan hodaxal vezuyol.`
+**1.** `zuwon thogom vuhohol.` / `zuwon thogol vuhohol.`
 
 ::: details Show answer
-`zahelan vezuyoxal.`
+z-speaker | th-DECISION-modifiable | v-sit
 
-z-Ahelan | v-sing-able
+z-speaker | th-DECISION-irreversible | v-sit
 
-With one named verb, fold *can* into it with **`x`** and **`a`**; **`hodaxal`** is for a *can* with no single verb.
+With **`thogom`**, the choice can still change. With **`thogol`**, it is final.
 :::

@@ -29,7 +29,7 @@ export type ConstructionEntry = { anchor: string; summary: string; reader?: stri
 const BAR_READER =
   "A `th-` word (or an intention `h-` word) inside a ranking bracket, right before the rank word, is what the item is ranked against: `[z-X | th-plan-itinerary | z-rank/more | b-later] | v-departure` = X leaves later than planned; a pattern there = than usual (`rank/less | g-strength` = less strong than usual); a permission there = than allowed. The same word outside the bracket covers the whole sentence.";
 
-/** Shared by every label-scope seam vowel (label-scope.md#label-scope). */
+/** Shared by every label-scope seam vowel (label-seams.md#label-scope). */
 const SCOPE_WORDS =
   "`episode` this time only, `role` as their practiced role, `pair` true in one relationship (with the `b-` party), `type` the kind of person they are, `situation` the label belongs to the circumstances, not the person (a `b-` word after it is that situation; no cause is claimed), `using` playing the role for a purpose, `toward-role` becoming one (not wanting to be), `except-episode` / `except-pair` that type except this time / with that party, `outside-role` as themselves, not in that role (never a refusal of the role)";
 
@@ -141,7 +141,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
 
   "vpCoord.vpCoordPart": { anchor: "joins.md#and-lists-a", summary: "/v/ phrase parts" },
   "vpCoordPart.V": { anchor: "clause.md#who-acts-and-the-action", summary: "verb" },
-  "vpCoordPart.B": { anchor: "label-scope.md#scope-relative", summary: "hosted /b/ after a pair-scope verb" },
+  "vpCoordPart.B": { anchor: "label-seams.md#scope-relative", summary: "hosted /b/ after a pair-scope verb" },
   "vpCoordPart.vJoinClose": { anchor: "joins.md#and-lists-a", summary: "/v/ join after its verbs" },
   "vpCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /v/ join" },
   "vpCoordPart.vpItemUnit": { anchor: "join-across-roles.md#vp-clause-forms", summary: "words before a later verb of a /v/ list" },
@@ -226,7 +226,7 @@ export const TOKEN_CONSTRUCTIONS: Record<TokenBranch, ConstructionEntry> = {
   yVocative: { anchor: "speech-moves.md#vocative", summary: "/y/ name (-n), named span, or resume (-r): a vocative" },
   yInterjection: { anchor: "speech-moves.md#interjections-reactions", summary: "/y/ word in -l / -m, or an unnamed span: an interjection" },
   linker: { anchor: "dependents.md#continue-x", summary: "/x/ content word: a sentence linker, or a topic word" },
-  clauseAdverb: { anchor: "feelings-permission.md#say-words", summary: "intention adverb on /h/ (try, ability, a say word, RESIDUE, FORMER): covers the whole clause like a /th/ word" },
+  clauseAdverb: { anchor: "can-and-cant.md#ability-fallback", summary: "intention adverb on /h/ (hostless ability, try, a say word, RESIDUE, FORMER): covers the whole clause like a /th/ word" },
   tagAssign: { anchor: "tag-pronouns.md#tag-pronouns", summary: "bare tag -l: names the phrase before it, or a new referent" },
   content: { anchor: "phonology.md#word-edges", summary: "content word in its role slot" },
   citationFallback: { anchor: "phonology.md#word-edges", summary: "word with no role letter: names, filling no slot" },
@@ -261,7 +261,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
     reader:
       "A sake word `SAKE-STANCE-ending` (competence, relatedness, pleasure, purpose, …) says how something stands toward that payoff, for the speaker unless a `b-` right after it or a holder says whose. `met` = it serves it, `unmet` = it costs it, `motive` = done for that payoff, `ought` = advice that the act would serve it (`-offered` unasked, `-invited` asked for, `-trial` worth a try); with `ought` the verb is what ought to happen, not what happens. On `g-` after a noun it is about that thing of mine; on `th-` it is about the whole event: `z-X | v-sing | th-pleasure-met-any-term` = X sings, and I enjoy it. With a capital tail (`-INTERNAL-SURGING`, `-AIMED-FLOWING`) it is one feeling: say it with the plain English emotion word (unmet competence = anxious or frustrated, unmet relatedness aimed at a `b-` person = irritated with them, met competence = proud or confident), not piece by piece. `[w-FEELING | g-stimulus]` after a noun = that feeling about the noun.",
   },
-  scope: { anchor: "label-scope.md#label-scope", summary: "label scope" },
+  scope: { anchor: "label-seams.md#label-scope", summary: "label scope" },
   hookPrefix: {
     anchor: "hook-compounds.md#hook-prefixes",
     summary: "hook prefix",
@@ -280,7 +280,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
     reader:
       "`th-TAG-X` (a stance tag joined to a person X, or `←X`, one already named): the sentence gives that person's view, and the tag says how the speaker knows it. `th-CLUES-X` = I gather X thinks …; `th-MAY-X` = maybe X thinks …. Every other `th-` word in that sentence (a want, plan, decision, or feeling) is then X's, not the speaker's: `th-WANT-unstated | th-CLUES-X` = I gather X wants …; a feeling word with `th-CLUES-listener` = it sounds like you feel that.",
   },
-  ability: { anchor: "compound-families.md#conversation-length", summary: "ability compound" },
+  ability: { anchor: "can-and-cant.md#ability", summary: "ability (x + vowel); conversation-length bids reuse the same shape on a citation" },
   numeric: {
     anchor: "numeric-derivation.md#numeric-derivation",
     summary: "numeric prefix",
@@ -301,7 +301,7 @@ type OverlayOnlyReading =
 export const WORD_READING_CONSTRUCTIONS: Record<Exclude<LexReading, OverlayOnlyReading>, ConstructionEntry> = {
   ordinary: { anchor: "phonology.md#word-edges", summary: "ordinary content reading" },
   sake: { anchor: "sakes.md#met", summary: "sake reading" },
-  ability: { anchor: "ability.md#ability", summary: "ability reading" },
+  ability: { anchor: "can-and-cant.md#ability", summary: "ability reading" },
   greeting: {
     anchor: "compound-families.md#conversation-length",
     summary: "conversation-length bid",
@@ -443,18 +443,18 @@ export const NUMBER_FEATURE_CONSTRUCTIONS = {
 
 type Vowel = "a" | "e" | "o" | "u";
 
-/** Label scope: each seam vowel (label-scope.md#label-scope). */
+/** Label scope: each seam vowel (label-seams.md#label-scope). */
 const SCOPE_FEATURE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
-  "vowel.a": { anchor: "label-scope.md#label-scope", summary: "this episode tha", reader: SCOPE_READER },
-  "vowel.e": { anchor: "label-scope.md#label-scope", summary: "practiced role the", reader: SCOPE_READER },
-  "vowel.o": { anchor: "label-scope.md#label-scope", summary: "this pair tho", reader: SCOPE_READER },
-  "vowel.u": { anchor: "label-scope.md#label-scope", summary: "type across scenes thu", reader: SCOPE_READER },
-  "vowel.ao": { anchor: "label-scope.md#scope-stacks", summary: "episode on this pair thao", reader: SCOPE_READER },
-  "vowel.ae": { anchor: "label-scope.md#scope-stacks", summary: "using the role thae", reader: SCOPE_READER },
-  "vowel.oe": { anchor: "label-scope.md#scope-stacks", summary: "toward the role thoe", reader: SCOPE_READER },
-  "vowel.ua": { anchor: "label-scope.md#scope-stacks", summary: "type except this episode thua", reader: SCOPE_READER },
-  "vowel.uo": { anchor: "label-scope.md#scope-stacks", summary: "type except this pair thuo", reader: SCOPE_READER },
-  "vowel.ue": { anchor: "label-scope.md#scope-stacks", summary: "not in that capacity thue", reader: SCOPE_READER },
+  "vowel.a": { anchor: "label-seams.md#label-scope", summary: "this episode tha", reader: SCOPE_READER },
+  "vowel.e": { anchor: "label-seams.md#label-scope", summary: "practiced role the", reader: SCOPE_READER },
+  "vowel.o": { anchor: "label-seams.md#label-scope", summary: "this pair tho", reader: SCOPE_READER },
+  "vowel.u": { anchor: "label-seams.md#label-scope", summary: "type across scenes thu", reader: SCOPE_READER },
+  "vowel.ao": { anchor: "label-seams.md#scope-stacks", summary: "episode on this pair thao", reader: SCOPE_READER },
+  "vowel.ae": { anchor: "label-seams.md#scope-stacks", summary: "using the role thae", reader: SCOPE_READER },
+  "vowel.oe": { anchor: "label-seams.md#scope-stacks", summary: "toward the role thoe", reader: SCOPE_READER },
+  "vowel.ua": { anchor: "label-seams.md#scope-stacks", summary: "type except this episode thua", reader: SCOPE_READER },
+  "vowel.uo": { anchor: "label-seams.md#scope-stacks", summary: "type except this pair thuo", reader: SCOPE_READER },
+  "vowel.ue": { anchor: "label-seams.md#scope-stacks", summary: "not in that capacity thue", reader: SCOPE_READER },
 };
 
 /** Sakes: each stance vowel, and the endings on it (sakes.md). */
@@ -630,15 +630,15 @@ export const ROLE_FEATURE_CONSTRUCTIONS: Record<
   "part.x": { anchor: "viewpoint.md#content-of-the-event", summary: "outcome x" },
   "scope.a": { anchor: "pronouns.md#role-pointers", summary: "this episode a" },
   "scope.e": { anchor: "roles.md#one-time-or-a-practice", summary: "practiced role e" },
-  "scope.o": { anchor: "label-scope.md#scope-relative", summary: "this pair o" },
-  "scope.u": { anchor: "label-scope.md#scope-type", summary: "type across scenes u" },
-  "scope.ao": { anchor: "label-scope.md#scope-stacks", summary: "episode on this pair ao" },
-  "scope.ae": { anchor: "label-scope.md#scope-stacks", summary: "using the role ae" },
-  "scope.oe": { anchor: "label-scope.md#scope-stacks", summary: "toward the role oe" },
-  "scope.ua": { anchor: "label-scope.md#scope-stacks", summary: "type except this episode ua" },
-  "scope.uo": { anchor: "label-scope.md#scope-stacks", summary: "type except this pair uo" },
-  "scope.ue": { anchor: "label-scope.md#scope-stacks", summary: "not in that capacity ue" },
-  ability: { anchor: "ability.md#can-be-role-ability", summary: "role + ability: can be that role" },
+  "scope.o": { anchor: "label-seams.md#scope-relative", summary: "this pair o" },
+  "scope.u": { anchor: "label-seams.md#scope-type", summary: "type across scenes u" },
+  "scope.ao": { anchor: "label-seams.md#scope-stacks", summary: "episode on this pair ao" },
+  "scope.ae": { anchor: "label-seams.md#scope-stacks", summary: "using the role ae" },
+  "scope.oe": { anchor: "label-seams.md#scope-stacks", summary: "toward the role oe" },
+  "scope.ua": { anchor: "label-seams.md#scope-stacks", summary: "type except this episode ua" },
+  "scope.uo": { anchor: "label-seams.md#scope-stacks", summary: "type except this pair uo" },
+  "scope.ue": { anchor: "label-seams.md#scope-stacks", summary: "not in that capacity ue" },
+  ability: { anchor: "can-and-cant.md#can-be-role-ability", summary: "role + ability: can be that role" },
   instance: { anchor: "roles.md#this-instance-r", summary: "-r this instance" },
   capacity: { anchor: "viewpoint.md#capacity", summary: "slot-part role compound on /h/: the role the act is done in" },
 };
@@ -730,8 +730,8 @@ export const REJECTIONS = {
   sakeStackedVowel: { anchor: "sakes.md#word-shape", summary: "a sake stance is one vowel; stacked vowels after th are the emotion locus after the horizon letter" },
   prescriptionSlot: { anchor: "prescription.md#prescription-the-ought-this-act-for-this-sake", summary: "prescription (the) goes on /th/ only: it is about an act, not a noun" },
   feelingLandmark: { anchor: "feelings-permission.md#emotion-compose", summary: "an INTERNAL (a) or UNPLACED (uo) feeling takes no /b/; a landmark goes with a direction or CIRCUM locus" },
-  labelScopeSlot: { anchor: "label-scope.md#label-scope", summary: "label scope goes on /ɡ/, /z/, /d/, /b/, /v/, or /h/ only" },
-  labelScopeStem: { anchor: "label-scope.md#label-scope", summary: "a scope seam labels a content root, not a special pronoun" },
+  labelScopeSlot: { anchor: "label-seams.md#label-scope", summary: "label scope goes on /ɡ/, /z/, /d/, /b/, /v/, or /h/ only" },
+  labelScopeStem: { anchor: "label-seams.md#label-scope", summary: "a scope seam labels a content root, not a special pronoun" },
   roleCompoundSlot: { anchor: "roles.md#role-compounds", summary: "a role compound goes on /z/, /d/, /b/, /ɡ/, as a topic under /x/, as a call under /y/ (-n / -r), or as capacity under /h/ with a slot part; not on /v/, /w/, or /th/, and not a content part on /h/" },
   hookPrefixSlot: { anchor: "hook-compounds.md#hook-prefixes", summary: "a hook prefix goes on /ɡ/, /z/, /d/, /b/, or /h/; not on /v/, /w/, /th/, /x/, or /y/" },
   hookedJoinSlot: { anchor: "hook-compounds.md#hooked-joins", summary: "a hooked join goes on /z/, /d/, /b/, or /h/; not on /ɡ/, /v/, /w/, /th/, /x/, or /y/, and never as a hosted bl- word" },
@@ -743,7 +743,7 @@ export const REJECTIONS = {
   hookedJoinRestrictor: { anchor: "hook-compounds.md#hooked-joins-time", summary: "an /h/ hooked join's join is a bare restrictor (`al` `am` `ual` `uam` `ar` `or` `ur` `er`)" },
   hookedJoinTime: { anchor: "hook-compounds.md#hooked-joins-time", summary: "an /h/ hooked join takes a hook with a time reading: `a` `o` `u` `oe`, the frame `om`, or point-back `ar` `or` `ur`" },
   roleCompoundStem: { anchor: "roles.md#role-compounds", summary: "a role compound names a role of an event; a special pronoun is not an event" },
-  abilitySlot: { anchor: "ability.md#ability", summary: "ability (x + vowel) goes on /v/ or /ɡ/ only; name + x + vowel + -n is a conversation-length bid only as a citation or a /y/ call" },
+  abilitySlot: { anchor: "can-and-cant.md#ability", summary: "ability (x + vowel) goes on /v/ or /ɡ/ only; name + x + vowel + -n is a conversation-length bid only as a citation or a /y/ call" },
   labelScopeArrow: { anchor: "viewpoint.md#landmark-facing", summary: "on a direction root the th seam takes only o (the landmark's own facing)" },
   pluralKindAfterUniversal: { anchor: "rank-joins.md#universals-domains-generics", summary: "the kind word after ua / uo takes no -x" },
   stackedHookResume: { anchor: "ending-grids.md#ranges", summary: "stacked range hook -r (oer / uar / uer) needs same-role words on both sides" },

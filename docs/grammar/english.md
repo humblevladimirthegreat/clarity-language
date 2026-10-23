@@ -210,7 +210,7 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 | *according to someone* (a source you won't name / don't know) | **`thebam blumon`**, then `zuwon vanam dorl zar.` / `zuwon vanam vul dorl zar.` | [Source](evidentiality.md#source) |
 | *never* / *always*, in the times we both know | **`hal thevumayan`** / **`hual thevumayan`** | [Holder](evidentiality.md#holder) |
 | *never since …* / *always, until …* / *always around …* (a stretch you name) | **`huxal`** / **`hoexual`** / **`homxual`** + the time: `hoexual blenulul` | [Bounding a time](hook-compounds.md#hooked-joins-time) |
-| *where was it again?* (remind me) | MEMORY on the question: `yol ol bar zayan thevum vagedal.` | [Live vs memory](evidentiality.md#live-vs-memory) |
+| *where was it again?* (remind me) | MEMORY on the question: `yol ol bar zayan thevum vagedal.` | [Live vs memory](live-and-memory.md#live-vs-memory) |
 | *where shall we …?* / *what shall we do?* (a choice) | PLAN on the question: `yol ol bar zayan thagem vagedal.`, `yol var zayan thagem.` | [Plan](intention.md#plan) |
 
 ### Adjectives made from a noun (*golden*, *royal*, *solar*) {#noun-adjectives}
@@ -294,24 +294,24 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 | *a teacher*, *a fighter*, *a dog walker* (a usual role or job) | the role compound with scope **`e`**: `zwezuduyel` | [One time or a practice](roles.md#one-time-or-a-practice) |
 | *the one teaching* (this event) | the role compound on **-r**: `zwazuduyer` | [This instance](roles.md#this-instance-r) |
 | *often lies*, *usually walks* | a [restrictor](restrictors.md): `huam`, `war` | [Always](restrictors.md#always-hual) |
-| *this time*, *this once* (angry this time, lied this once) | **`tha`** on the root: `gunemuthal`, `valamuthal` | [This episode](label-scope.md#scope-occasion) |
-| *as their craft*, *as a practice* | **`the`** on the root: `valamuthel` | [Practiced role](label-scope.md#scope-occupation) |
-| *in dealings with*, *a stranger to Olazun* | **`tho`** plus `/b/`: `golayothom blolazun` | [This pair](label-scope.md#scope-relative) |
-| *type*, *kind of person* (a lying type, an anxious type) | **`thu`** on the root: `zuzozen valamuthul` | [Type across scenes](label-scope.md#scope-type) |
-| *lied to Olazun, this once* | **`tha`** on the verb, recipient as usual: `valamuthal bolazun` | [This episode](label-scope.md#scope-occasion) |
-| *it's the situation*, *it was the situation*, *by circumstance* | **`thao`**: `gunemuthaol`, `gwaozuduyel` | [Stacked scope](label-scope.md#scope-stacks) |
+| *this time*, *this once* (angry this time, lied this once) | **`tha`** on the root: `gunemuthal`, `valamuthal` | [This episode](label-seams.md#scope-occasion) |
+| *as their craft*, *as a practice* | **`the`** on the root: `valamuthel` | [Practiced role](label-seams.md#scope-occupation) |
+| *in dealings with*, *a stranger to Olazun* | **`tho`** plus `/b/`: `golayothom blolazun` | [This pair](label-seams.md#scope-relative) |
+| *type*, *kind of person* (a lying type, an anxious type) | **`thu`** on the root: `zuzozen valamuthul` | [Type across scenes](label-seams.md#scope-type) |
+| *lied to Olazun, this once* | **`tha`** on the verb, recipient as usual: `valamuthal bolazun` | [This episode](label-seams.md#scope-occasion) |
+| *it's the situation*, *it was the situation*, *by circumstance* | **`thao`**: `gunemuthaol`, `gwaozuduyel` | [Stacked scope](label-seams.md#scope-stacks) |
 | *becoming a teacher* | scope **`oe`**: `gwoezuduyel` | [Scope across scenes](viewpoint.md#scope) |
-| *becoming* (becoming a liar) | **`thoe`** on the root: `valamuthoel` | [Stacked scope](label-scope.md#scope-stacks) |
+| *becoming* (becoming a liar) | **`thoe`** on the root: `valamuthoel` | [Stacked scope](label-seams.md#scope-stacks) |
 | *as a teacher, I …* | role compound on `/h/`: `hwezuduyel` | [The role you act in](viewpoint.md#capacity) |
 | *not as a teacher* (off duty) | scope **`ue`** on `/h/`: `hwuezuduyel` | [The role you act in](viewpoint.md#capacity) |
 | *not as a teacher* (the label) | scope **`ue`**: `gwuezuduyel` | [Scope across scenes](viewpoint.md#scope) |
 | *playing the teacher* (for a purpose) | scope **`ae`**: `gwaezuduyel` | [Scope across scenes](viewpoint.md#scope) |
-| *as a tool*, *for a purpose* (using lying as a tool) | **`thae`** on the root: `valamuthael` | [Stacked scope](label-scope.md#scope-stacks) |
-| *as myself*, *not in my role*, *off duty* | **`thue`** on the verb: `vezuyethuel` | [Stacked scope](label-scope.md#scope-stacks) |
-| *except this time*, *except this once* | **`thua`**: `valamuthual` | [Stacked scope](label-scope.md#scope-stacks) |
-| *except with* (angry as a type, except with Olazun) | **`thuo`** plus `/b/`: `gunemuthuol blolazun` | [Stacked scope](label-scope.md#scope-stacks) |
+| *as a tool*, *for a purpose* (using lying as a tool) | **`thae`** on the root: `valamuthael` | [Stacked scope](label-seams.md#scope-stacks) |
+| *as myself*, *not in my role*, *off duty* | **`thue`** on the verb: `vezuyethuel` | [Stacked scope](label-seams.md#scope-stacks) |
+| *except this time*, *except this once* | **`thua`**: `valamuthual` | [Stacked scope](label-seams.md#scope-stacks) |
+| *except with* (angry as a type, except with Olazun) | **`thuo`** plus `/b/`: `gunemuthuol blolazun` | [Stacked scope](label-seams.md#scope-stacks) |
 | *seen*, *the one seen* | the undergoer **`d`**: `zwadawebol`, `zwadawebor` | [The undergoer](roles.md#the-undergoer-d) |
-| *visible* / *invisible* (*can be seen*) | the undergoer with ability: `zudozol gwadaweboxal` | [Can be](ability.md#role-ability) |
+| *visible* / *invisible* (*can be seen*) | the undergoer with ability: `zudozol gwadaweboxal` | [Can be](can-and-cant.md#role-ability) |
 | *walked* (past) | no participle: pick how you know | [Tense](say-tense.md#tense-jobs) |
 | *the guard who fought (that time)* | two sentences | [Which noun](dependents.md#which-noun) |
 

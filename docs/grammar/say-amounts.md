@@ -219,7 +219,7 @@ English degree words (*really*, *quite*, *barely*) say how far a quality or an a
 
 ### How: *carefully*, *properly*, *gently*, *hard to* {#manner-words}
 
-**Needs:** [Adverbs `/h/`](clause.md#adverbs-h) · [Manner scale](comparative-arity.md#manner-scale) · [Every bar](stance-bars.md#stance-bars) · [Can](ability.md#can)
+**Needs:** [Adverbs `/h/`](clause.md#adverbs-h) · [Manner scale](comparative-arity.md#manner-scale) · [Every bar](stance-bars.md#stance-bars) · [Can](can-and-cant.md#can)
 
 English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the abstract ending **-m**, as in `hedurem` *hastily*. When the quality is the root's everyday sense and the abstract sense is something else, use **-l**: `ogugo` is *correct* and its abstract sense is *inclusion*, so *properly* is `hogugol`.
 
@@ -255,7 +255,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 
 The easy / hard pair on a quality ranks effort against a bar ([vague amounts](stance-bars.md#vague-amounts)): `zanal thubem zuel guzubam` is *the book is easy* (less effort than usual), and `zel` in place of `zuel` is *hard*.
 
-*Hard to* + a verb puts the same effort scale on whoever would do it: they can, but only with more effort than usual. Write the doer as the ranked item, the bar, the rank word and **`huzubam`**, then the verb with [*can*](ability.md#can) **`xa`**.
+*Hard to* + a verb puts the same effort scale on whoever would do it: they can, but only with more effort than usual. Write the doer as the ranked item, the bar, the rank word and **`huzubam`**, then the verb with [*can*](can-and-cant.md#can) **`xa`**.
 
 > `zuzozen thubem zel huzubam danal varayexal.`
 >

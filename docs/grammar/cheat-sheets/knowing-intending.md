@@ -20,8 +20,8 @@ Pick one channel for how you know. LIVE and MEMORY place the event in time; the 
 <!-- cheat-sheet: knowing-intending -->
 | Channel | Kind | Agebon | English | Stage |
 |---------|------|--------|---------|-------|
-| LIVE | direct | [`thugom`](../evidentiality.md#evidentiality) | *live* / *from the scene* | I |
-| MEMORY | direct | [`thevum`](../evidentiality.md#evidentiality) | *from memory* | I |
+| LIVE | direct | [`thugom`](../live-and-memory.md#live-vs-memory) | *live* / *from the scene* | B |
+| MEMORY | direct | [`thevum`](../live-and-memory.md#live-vs-memory) | *from memory* | B |
 | PATTERN | reasoned | [`thubem`](../evidentiality.md#evidentiality) | *from the pattern* | I |
 | CLUES | reasoned | [`theyem`](../evidentiality.md#evidentiality) | *from the clues* / *apparently* | I |
 | DEDUCED | reasoned | [`thanam`](../evidentiality.md#evidentiality) | *it follows* / *by deduction* | I |
@@ -206,20 +206,19 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 <!-- cheat-sheet: knowing-intending -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`xa`](../ability.md#can) | they can | *can* | I |
-| [`xe`](../ability.md#ability-stance) | can't, just for now | *can't right now* | I |
-| [`xo`](../ability.md#ability-stance) | can't yet | *can't yet* | I |
-| [`xu`](../ability.md#ability-stance) | can never | *can never* | I |
+| [`xa`](../can-and-cant.md#can) | they can | *can* | B |
+| [`xe`](../can-and-cant.md#ability-stance) | can't, just for now | *can't right now* | B |
+| [`xo`](../can-and-cant.md#ability-stance) | can't yet | *can't yet* | B |
+| [`xu`](../can-and-cant.md#ability-stance) | can never | *can never* | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Can](../ability.md#can) | `zuzozen vezuyoxal.` | *Uzozen can sing.* | I |
-| [Could, a past skill](../ability.md#can) | `zuzozen vezuyoxal helam.` | *Uzozen could sing.* | I |
-| [So can I](../ability.md#can) | `zuzozen vowurexal. zolazun vowurexar.` | *Uzozen can walk, and so can Olazun.* | I |
-| [Can't right now](../ability.md#ability-stance) | `zolazun vezuyoxel.` | *Olazun can't sing right now.* | I |
-| [Can't yet](../ability.md#ability-stance) | `zahelan vezuyoxol.` | *Ahelan can't sing yet.* | I |
-| [Can never](../ability.md#ability-stance) | `zuzozen varuvexul.` | *Uzozen can never run.* | I |
-| [No single verb](../ability.md#ability-fallback) | `zuzozen hodaxel.` | *Uzozen can't right now.* | I |
+| [Can](../can-and-cant.md#can) | `zuzozen vezuyoxal.` | *Uzozen can sing.* | B |
+| [So can I](../can-and-cant.md#can) | `zuzozen vowurexal. zolazun vowurexar.` | *Uzozen can walk, and so can Olazun.* | B |
+| [Can't right now](../can-and-cant.md#ability-stance) | `zolazun vezuyoxel.` | *Olazun can't sing right now.* | B |
+| [Can't yet](../can-and-cant.md#ability-stance) | `zahelan vezuyoxol.` | *Ahelan can't sing yet.* | B |
+| [Can never](../can-and-cant.md#ability-stance) | `zuzozen varuvexul.` | *Uzozen can never run.* | B |
+| [No single verb](../can-and-cant.md#ability-fallback) | `zuzozen hodaxel.` | *Uzozen can't right now.* | B |
 
 ## Don't mix up {#dont-mix-up}
 
@@ -231,5 +230,5 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | `thubem blral` *will, by the pattern* ([a forecast](../evidentiality.md#forecast)) | | `thagem` *I plan to* ([an intention](../intention.md#plan-predict)) |
 | `haram` *still in effect* ([the outcome stays](../notional-standing.md#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](../notional-standing.md#phasal)) |
 | `thogom` *I've decided* ([how open the choice is, no time](../ability.md#decision)) | | `thagem` *I plan* ([how worked out, still ahead](../intention.md#plan-predict)) |
-| `howam` *tries* ([acts, outcome open](../ability.md#try)) | | `vezuyoxal` *can sing* ([a claim about ability](../ability.md#can)) |
+| `howam` *tries* ([acts, outcome open](../ability.md#try)) | | `vezuyoxal` *can sing* ([a claim about ability](../can-and-cant.md#can)) |
 | `thalem` *I want* ([your own wanting](../ability.md#want)) | | `thebamuzozen thagem` *I hear Uzozen plans* ([someone else's plan](../evidentiality.md#holder)) |

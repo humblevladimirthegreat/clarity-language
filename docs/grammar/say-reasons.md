@@ -150,7 +150,7 @@ What makes the feeling guilt is the fault pole on **your own** act. The feeling 
 
 Put the **act** in a `bl-` word after a fault pole, not the person ([fault](iff-fault.md#fault)). *Guilty* is then *the wrong rests on that act*, and it leaves room for *Olazun did a wrong thing* without *Olazun is bad*.
 
-**Compare with:** owning a harm to someone else (*I'm sorry*) is [thanks and sorry](feelings-permission.md#thanks-sorry), not a guilt feeling.
+**Compare with:** owning a harm to someone else (*I'm sorry*) is [thanks and sorry](thanks-and-sorry.md#thanks-sorry), not a guilt feeling.
 
 ### Kill, feed, remove, prevent, persuade, introduce, show, create, excite {#cause-verbs}
 
@@ -201,7 +201,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 
 ### Know, mean, explain, realize, forget, become {#mind-verbs}
 
-**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Embedded whether](questions.md#embedded-whether) · [Because](iff-fault.md#only-because) · [Already, still, not yet](notional-standing.md#phasal) · [Can](ability.md#can) · [Existence](predication.md#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](comparatives.md#comparatives-e)
+**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Embedded whether](questions.md#embedded-whether) · [Because](iff-fault.md#only-because) · [Already, still, not yet](notional-standing.md#phasal) · [Can](can-and-cant.md#can) · [Existence](predication.md#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](comparatives.md#comparatives-e)
 
 English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mostly sit on a few plain moves: tell, know, remember, and whether the change has come. Agebon keeps those roots and adds the phasal word for the change, so *realize* is *already know* and *forget* is *no longer remember*. *Mean* in the sense of *signify* is the compound `ezuyeloma` (*meaning*, speech that carries a thought).
 
@@ -216,7 +216,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | *know whether* / *know which* | `zuzozen vanam dorl zudozol varuvel.` | knows whether the dog runs; a blank inside asks *which* (`dor`) |
 | *find out* | `zuzozen vumewol dorl zudozol varuvel.` | finds whether the dog runs |
 | *know someone* | `zuzozen havom dolazun vawebol har.` | has met Olazun at some point ([ever](notional-standing.md#ever-never)) |
-| *know how to* | `zuzozen vezuyoxal.` | can sing ([can](ability.md#can)) |
+| *know how to* | `zuzozen vezuyoxal.` | can sing ([can](can-and-cant.md#can)) |
 | *realize* / *notice* | `zuzozen havom vanam darl zudozol varuvel.` | already knows that the dog runs |
 | *forget* | `zuzozen dolazun vevum huvum.` | no longer remembers Olazun |
 | *become* | `zuzozen vebugem duzemol.` | starts being sleepy |
@@ -242,7 +242,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 
 ### Condition, factor, requirement, motivation, satisfaction, truth {#reason-nouns}
 
-**Needs:** [If](causation.md#if) · [Only because](iff-fault.md#only-because) · [Fault](iff-fault.md#fault) · [Requirement](feelings-permission.md#requirement) · [Motive](prescription.md#sake-preference) · [Met](sakes.md#time-horizon-endings-on-met) · [Thanks and sorry](feelings-permission.md#thanks-sorry) · [Intention](intention.md#plan-predict) · [Speech manner](speech-acts.md#speech-manner) · [Evidentiality](evidentiality.md#evidentiality) · [Enough and too](prescription.md#sake-bars)
+**Needs:** [If](causation.md#if) · [Only because](iff-fault.md#only-because) · [Fault](iff-fault.md#fault) · [Requirement](feelings-permission.md#requirement) · [Motive](prescription.md#sake-preference) · [Met](sakes.md#time-horizon-endings-on-met) · [Thanks and sorry](thanks-and-sorry.md#thanks-sorry) · [Intention](intention.md#plan-predict) · [Speech manner](speech-acts.md#speech-manner) · [Evidentiality](evidentiality.md#evidentiality) · [Enough and too](prescription.md#sake-bars)
 
 English turns reasons and feelings into nouns (*condition*, *motivation*, *satisfaction*, *truth*). Agebon has no noun for most of them. It keeps the stance word on the clause, so the noun becomes a short claim about how you stand: a condition is the pole word, a motive is a sake, a requirement is a demand, a truth is how you vouch for it.
 
@@ -462,7 +462,7 @@ English *I hope X will happen* is two claims: you want it, and you expect it. **
 
 ### Important, useful, helpful, benefit, satisfy, upset {#sake-words}
 
-**Needs:** [Sake inventory](sakes.md#sake-inventory) · [Met](sakes.md#time-horizon-endings-on-met) · [Emotion compose](feelings-permission.md#emotion-compose) · [Thanks and sorry](feelings-permission.md#thanks-sorry) · [Bars](comparative-arity.md#bars)
+**Needs:** [Sake inventory](sakes.md#sake-inventory) · [Met](sakes.md#time-horizon-endings-on-met) · [Emotion compose](feelings-permission.md#emotion-compose) · [Thanks and sorry](thanks-and-sorry.md#thanks-sorry) · [Bars](comparative-arity.md#bars)
 
 English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Agebon names the someone's **sake** (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical). A met word says the thing serves that sake, and its ending says how long the payoff lasts. On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it on `/w/` before **`goyem`**. Put a person in `/b/` for whose sake it is.
 
@@ -473,7 +473,7 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 | *meaningful* / *worthwhile* | `wuretham goyem` | purpose, met |
 | *pointless* / *futile* | `wurethum goyem` | purpose, unmet |
 | *glad to help* / *rewarding to give* | `thewatham.` | the act met your beneficence |
-| *grateful* / *thankful* / *appreciate* (your own thanks) | `thawotham.`, or the met word for the sake that was served | your sake, met: the thanks ([thanks and sorry](feelings-permission.md#thanks-sorry)) |
+| *grateful* / *thankful* / *appreciate* (your own thanks) | `thawotham.`, or the met word for the sake that was served | your sake, met: the thanks ([thanks and sorry](thanks-and-sorry.md#thanks-sorry)) |
 | *benefit* / *benefits Olazun* | `thawotham blolazun` | the act met Olazun's sake |
 | *advantage* (a lead over someone) | `zel` with the scale | rank against the other |
 | *satisfy* (you) | `thawotham blawan` | the act met your sake |

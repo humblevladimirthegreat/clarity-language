@@ -126,56 +126,6 @@ A lone feeling can still name what caused it. The cause is not the object: the f
 
 **Compare with:** a lone noun before the feeling is an [existence](predication.md#existence) clause, so the noun's being there is the stimulus: `zolazun thuwathuruor.` is *anxious that Olazun is here*, not *Olazun is anxious*.
 
-### Thanks and sorry {#thanks-sorry}
-
-Agebon has no set phrase for *thank you*. Say that your sake **is met**: a lone `/th/` met word is a whole sentence about you, the same shape as a [feeling with no object](#feeling-no-object), and saying it to the one who acted is the thanks. Pick the sake that was actually served; the ending says how long the payoff lasts ([endings on met](sakes.md#time-horizon-endings-on-met)). (cue: thanks = *my sake is met*)
-
-> `thawotham.`
->
-> th-relatedness-met-any-term
->
-> "Thank you, that meant a lot to me."
-
-> `thuwathal.`
->
-> th-competence-met-lasting
->
-> "Thanks, that sets me up for the long run."
-
-Add an emotion tail to say how the thanks moves you:
-
-> `thawothamar.`
->
-> th-relatedness-met-any-term-INTERNAL-SURGING
->
-> "Thank you, I'm so moved."
-
-<!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English |
-|--------|-----|---------|
-| `…thal` | the help lasts | *that will stay with me* |
-| `…tham` | the help, horizon unstated (default) | *thank you* |
-| `…thar` | the help landed right when needed | *thanks, that got me through* |
-
-*Sorry* is about **their** sake, not yours. A lone unmet word would say *my* sake went unmet, so name whose sake in a `bl-` word right after it. The ending is the same [changeability](sakes.md#sake-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your sake*)
-
-> `thawothum blawan.`
->
-> [th-relatedness-unmet-modifiable | bl-listener]
->
-> "I'm sorry; that hurt your sense of connection."
-
-<!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English |
-|--------|-----|---------|
-| `…thul blawan` | the harm is lasting | *I'm deeply sorry* |
-| `…thum blawan` | the harm can be softened (default) | *I'm sorry* |
-| `…thur blawan` | the harm is passing | *my bad* |
-
-The `/b/` can name anyone: `thawothum blolazun.` owns up to a harm to Olazun, even when you are telling someone else.
-
-**Compare with:** a met word with a `/b/` person (`thawotham blolazun.`) says the act met **Olazun's** sake: *Olazun appreciated it*, not your thanks.
-
 ### Hopefully and other attitudes {#speaker-attitude}
 
 English *hopefully*, *luckily*, and *worryingly* say how **you**, the speaker, feel about the whole claim. In Agebon, put the content root for that feeling on `/th/` with **-m**. It is always the speaker's attitude, never the subject's. For the subject's manner (*Uzozen walks hopefully*), use `/h/` (`hoguyem`).
@@ -312,7 +262,7 @@ A say word takes no **-x**: a group's say comes from a group in the clause.
 
 ### How far the say reaches (scope) {#say-scope}
 
-The scope vowel is [label scope](label-scope.md#label-scope), the same vowels as after **`th`** on a label:
+The scope vowel is [label scope](label-seams.md#label-scope), the same vowels as after **`th`** on a label:
 
 - **`a`:** this act. `hwadam` is a yes to this act, which is why consent is asked for each time.
 - **`e`:** standing. `hwedam` is standing consent (*they're generally fine with this*), `hwevam` standing permission (*you may, any time*), `hwevem` a standing duty, and `hwezem` a discipline. Standing is not binding: `hwedam` can still be taken back, and only **-l** binds.
@@ -344,7 +294,6 @@ English *against the rules* and *against their will* put [contrary to](prescript
 
 A yes only lifts a restriction, so no say word with answer **`a`** follows **`uem`**: not permission (`hwavam`), and not consent (`hwadam`, `hwazal`). *Their call* (**`o`**) sets nothing to go against either. A yes that was taken back is a no, so use the refusal: `zuzozen vezuyel bahelan uem hwabum.` To say you broke a promise, give the promise its own sentence after **`hezom blarl`**: `zuwon vezuvol hezom blarl zuwon vowurel hwazal.`
 
-
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -365,7 +314,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Olazun* | `olazun` |
 | *Ahelan* | `ahelan` |
 | *speaker* | `uwon` |
-| *listener* | `awan` |
 | *competence* | `uwal` |
 | *relatedness* | `awol` |
 | *stimulus* | `goyem` |
@@ -375,15 +323,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
-**1.** *Thank you, that meant a lot to me.*
-
-::: details Show answer
-`thawotham.`
-
-th-relatedness-met-any-term
-:::
-
-**2.** *Ahelan lets Uzozen hug.*
+**1.** *Ahelan lets Uzozen hug.*
 
 ::: details Show answer
 `zuzozen vahuyal hwavam blahelan.`
@@ -391,7 +331,7 @@ th-relatedness-met-any-term
 z-Uzozen | v-hug | [h-episode-event-ALLOW-said | bl-Ahelan]
 :::
 
-**3.** *Uzozen tells Ahelan, and Ahelan agreed.*
+**2.** *Uzozen tells Ahelan, and Ahelan agreed.*
 
 ::: details Show answer
 `zuzozen vezuyel bahelan hwabam.`
@@ -399,7 +339,7 @@ z-Uzozen | v-hug | [h-episode-event-ALLOW-said | bl-Ahelan]
 z-Uzozen | v-tell | b-Ahelan | h-episode-recipient-ALLOW-said
 :::
 
-**4.** *I feel waves of resentment at the hug.*
+**3.** *I feel waves of resentment at the hug.*
 
 ::: details Show answer
 `zahuyal wawothumor goyem.`
@@ -407,15 +347,7 @@ z-Uzozen | v-tell | b-Ahelan | h-episode-recipient-ALLOW-said
 z-hug | [w-relatedness-unmet-modifiable-AIMED-SURGING | g-stimulus]
 :::
 
-**5.** *I'm sorry; that hurt your sense of connection.*
-
-::: details Show answer
-`thawothum blawan.`
-
-[th-relatedness-unmet-modifiable | bl-listener]
-:::
-
-**6.** *Uzozen hugs, and no one's stopping it.*
+**4.** *Uzozen hugs, and no one's stopping it.*
 
 ::: details Show answer
 `zuzozen vahuyal hwavar.`
@@ -433,15 +365,7 @@ th-competence-unmet-passing-UNPLACED-SURGING
 *I'm anxious.*
 :::
 
-**2.** `thuwathal.`
-
-::: details Show answer
-th-competence-met-lasting
-
-*Thanks, that sets me up for the long run.*
-:::
-
-**3.** `zahelan vezuvol hwaver.`
+**2.** `zahelan vezuvol hwaver.`
 
 ::: details Show answer
 z-Ahelan | v-sleep | h-episode-event-REQUIRE-tacit
@@ -449,7 +373,7 @@ z-Ahelan | v-sleep | h-episode-event-REQUIRE-tacit
 *Ahelan is supposed to sleep.*
 :::
 
-**4.** `zolazun vahuyal hwaval.`
+**3.** `zolazun vahuyal hwaval.`
 
 ::: details Show answer
 z-Olazun | v-hug | h-episode-event-ALLOW-rule
@@ -457,7 +381,7 @@ z-Olazun | v-hug | h-episode-event-ALLOW-rule
 *The rules allow Olazun to hug.*
 :::
 
-**5.** `zuzozen vahuyal uem hwavul.`
+**4.** `zuzozen vahuyal uem hwavul.`
 
 ::: details Show answer
 z-Uzozen | v-hug | [contrary-to | h-episode-event-FORBID-rule]
@@ -465,7 +389,7 @@ z-Uzozen | v-hug | [contrary-to | h-episode-event-FORBID-rule]
 *Uzozen hugs against the rules.*
 :::
 
-**6.** `zahuyal wawothumol goyem blolazun.`
+**5.** `zahuyal wawothumol goyem blolazun.`
 
 ::: details Show answer
 z-hug | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Olazun]

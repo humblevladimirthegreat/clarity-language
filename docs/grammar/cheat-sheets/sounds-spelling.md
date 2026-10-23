@@ -68,7 +68,7 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 | Optional `l` after `/ɡ/` | [adjective before the noun](../left-bound-adjectives.md#left-bound-adjectives) | B |
 | Optional `l` after `/b/` | [`bl-`](../clause.md#extra-nouns): completes the word right before it | B |
 | Root(s) | vowel-first; a [dictionary compound](../phonotactics.md#phonotactics) is one long root (`obahoha` *bedroom*); a root after a root is joined by mid-word `x` ([compounds](../compounds.md)) | I |
-| Mid-word `th` | the stance seam: [scope](../label-scope.md#label-scope), [sakes](../sakes.md), [viewpoint](../viewpoint.md#viewpoint-laterals) | I |
+| Mid-word `th` | the stance seam: [scope](../label-seams.md#label-scope), [sakes](../sakes.md), [viewpoint](../viewpoint.md#viewpoint-laterals) | I |
 | **-l** / **-m** / **-n** / **-r** | the [word ending](../word-endings.md) | B |
 | **-ln** | [one of a name](../proper-names.md#name-instance--ln) | I |
 | **-x** | [plural / associates](../plurality.md), after the ending | B |

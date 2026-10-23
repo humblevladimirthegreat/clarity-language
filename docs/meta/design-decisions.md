@@ -142,7 +142,7 @@ A role word writes its label scope right after **`w`** (`zwazuduyel`, `zwezuduye
 
 ### Stacked scope readings {#stacked-scope-readings}
 
-A **`u`** scope pair reads like a join's *everything but* (**`u`** every scene, the second vowel set aside), and the other pairs read like extra-noun hooks, so **`ao`** is *over*: the label belongs to the situation, not the person ([predication](../grammar/label-scope.md#scope-stacks)).
+A **`u`** scope pair reads like a join's *everything but* (**`u`** every scene, the second vowel set aside), and the other pairs read like extra-noun hooks, so **`ao`** is *over*: the label belongs to the situation, not the person ([predication](../grammar/label-seams.md#scope-stacks)).
 
 - **`ao` is not *this time, toward this one*.** That reading was plain **`a`** + **`o`**, the only non-**`u`** pair that ignored its hook. The situation reading targets the commonest labeling bias (character blamed for what the circumstances did), which **`tha`** only limits in time. Loss: *this once, to Olazun* takes **`tha`** with a plain recipient, or two words.
 - **`ue` is off duty, not refusal.** Setting the role aside presumes it; refusing it denies it, and one spelling cannot do both. Denying a label is **`gul`** after it.

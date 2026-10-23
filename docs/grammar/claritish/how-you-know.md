@@ -74,4 +74,4 @@ Something's wrong `thabom`.
 The package was delivered to the old address `thanal`.
 :::
 
-<!-- Source (editors): evidentiality.md#evidentiality, evidentiality.md#evidence-strength, evidentiality.md#carry-forward, evidentiality.md#deduction. -->
+<!-- Source (editors): live-and-memory.md#live-vs-memory, evidentiality.md#evidentiality, evidentiality.md#evidence-strength, evidentiality.md#carry-forward, evidentiality.md#deduction. -->
