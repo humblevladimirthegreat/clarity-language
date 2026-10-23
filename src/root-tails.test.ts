@@ -33,14 +33,14 @@ describe("lexicon-published.csv tails", () => {
 
 describe("tails", () => {
   it("spells a tail from kind and shape", () => {
-    assert.equal(tailOf("creature", "order"), "ze");
+    assert.equal(tailOf("creature", "order"), "zo");
     assert.equal(tailOf("tool", "takes-away"), "wu");
     assert.equal(tailOf("title", "holds"), "na");
   });
 
   it("rewrites a three-letter last vowel from shape and keeps the first", () => {
-    assert.equal(shortRootWithTail("azo", "creature", "one"), "azo");
-    assert.equal(shortRootWithTail("azo", "creature", "order"), "aze");
+    assert.equal(shortRootWithTail("azo", "creature", "one"), "aze");
+    assert.equal(shortRootWithTail("azo", "creature", "order"), "azo");
   });
 
   it("leaves published three-letter one and order roots put when tails already match SHAPE_VOWELS", () => {
@@ -55,21 +55,21 @@ describe("tails", () => {
 
   it("plans a simultaneous one/order last-vowel swap", () => {
     const { pairs, destByOld } = planShortLastVowels([
-      { root: "eye", kind: "person", shape: "one", emoji: "🧑", concrete: "person" },
-      { root: "eyo", kind: "person", shape: "order", emoji: "🕵️", concrete: "investigate" },
+      { root: "eyo", kind: "person", shape: "one", emoji: "🧑", concrete: "person" },
+      { root: "eye", kind: "person", shape: "order", emoji: "🕵️", concrete: "investigate" },
     ]);
-    assert.equal(destByOld.get("eye"), "eyo");
     assert.equal(destByOld.get("eyo"), "eye");
+    assert.equal(destByOld.get("eye"), "eyo");
     assert.equal(pairs.length, 2);
   });
 
   it("learns each shape's last vowel from the lexicon", () => {
     const found = shapeLastVowelsFromRoots(parsePublishedCsv(readData("lexicon-published.csv")));
     assert.equal(found.get("holds"), "a");
-    assert.equal(found.get("one"), "o");
-    assert.equal(found.get("order"), "e");
+    assert.equal(found.get("one"), "e");
+    assert.equal(found.get("order"), "o");
     assert.equal(found.get("takes-away"), "u");
-    assert.equal(invertShapeLastVowels(found).get("o"), "one");
+    assert.equal(invertShapeLastVowels(found).get("e"), "one");
   });
 
   it("flags a root that starts with a /th/ holder host form", () => {
@@ -94,11 +94,11 @@ describe("tails", () => {
 
 describe("validateRootTails", () => {
   const good = [
-    published("🐈", "cat", "ubezo", "creature", "one", "medium"),
+    published("🐈", "cat", "ubeze", "creature", "one", "medium"),
     published("🗡️", "knife", "uhowu", "tool", "takes-away", "medium"),
     published("🤬", "rage", "agamu", "mind", "takes-away"),
     published("🇫🇷", "france-flag", "avranza", "named"),
-    published("⭐", "star", "alo", "nature", "one"),
+    published("⭐", "star", "ale", "nature", "one"),
   ];
   const [cat, , rage, france, star] = good;
   const reasons = (rows: PublishedRow[]) => validateRootTails(rows).map((e) => e.reason);
@@ -112,7 +112,7 @@ describe("validateRootTails", () => {
     assert.ok(reasons([{ ...cat!, shape: "" }]).some((r) => r.startsWith("shape must be")));
     assert.ok(reasons([{ ...france!, shape: "one" }]).some((r) => r.startsWith("a named row has no shape")));
     assert.ok(reasons([{ ...star!, kind: "" }]).some((r) => r.startsWith("kind must be")));
-    assert.ok(reasons([{ ...star!, root: "aba" }]).some((r) => r.includes("does not end in its tail lo")));
+    assert.ok(reasons([{ ...star!, root: "aba" }]).some((r) => r.includes("does not end in its tail le")));
   });
 
   it("needs a size on every kind but mind, and rejects one on a mind row", () => {
@@ -121,8 +121,8 @@ describe("validateRootTails", () => {
     assert.ok(reasons([{ ...rage!, size: "small" }]).some((r) => r.startsWith("a mind row has no size")));
     assert.ok(reasons([{ ...france!, size: "big" }]).some((r) => r.startsWith("a named row has no size")));
     assert.ok(reasons([{ ...star!, size: "small" }]).some((r) => r === "a three-letter row has no size (got small)"));
-    assert.ok(reasons([published("🏃", "run", "aruve", "doing", "order")]).some((r) => r === "a doing row needs a size"));
-    assert.deepEqual(reasons([published("🚲", "bicycle", "obave", "doing", "order", "big"), published("🏃", "run", "aruve", "doing", "order", "none")]), []);
+    assert.ok(reasons([published("🏃", "run", "aruvo", "doing", "order")]).some((r) => r === "a doing row needs a size"));
+    assert.deepEqual(reasons([published("🚲", "bicycle", "obavo", "doing", "order", "big"), published("🏃", "run", "aruvo", "doing", "order", "none")]), []);
   });
 
   it("rejects a named row without a place-name root, and two places on one root", () => {
@@ -131,9 +131,9 @@ describe("validateRootTails", () => {
   });
 
   it("rejects a root outside its tail, but not a three-letter onset", () => {
-    assert.ok(reasons([{ ...cat!, root: "ubeza" }]).some((r) => r.includes("does not end in its tail zo")));
-    // Only a five-letter root fuses with a hook, so `abale` + -l never reads as `aba` + l + hook `el`.
-    assert.deepEqual(reasons([published("🌳", "tree", "abale", "nature", "order", "big"), star!]), []);
+    assert.ok(reasons([{ ...cat!, root: "ubeza" }]).some((r) => r.includes("does not end in its tail ze")));
+    // Only a five-letter root fuses with a hook, so `abalo` + -l never reads as `aba` + l + hook `el`.
+    assert.deepEqual(reasons([published("🌳", "tree", "abalo", "nature", "order", "big"), star!]), []);
   });
 });
 
@@ -192,8 +192,8 @@ describe("placeTailRoots", () => {
     const { roots, unmet } = placeTailRoots({ rows, shortRoots, compounds: [], steps: 20_000 });
     assert.deepEqual(unmet, []);
     assert.equal(new Set(roots).size, roots.length);
-    roots.slice(0, 30).forEach((root) => assert.match(root, /^[aeou][bdghylmnrvwz][aeou]lo$/));
-    roots.slice(30).forEach((root) => assert.match(root, /^[aeou][bdghylmnrvwz][aeou]ge$/));
+    roots.slice(0, 30).forEach((root) => assert.match(root, /^[aeou][bdghylmnrvwz][aeou]le$/));
+    roots.slice(30).forEach((root) => assert.match(root, /^[aeou][bdghylmnrvwz][aeou]go$/));
     // 30 rows of one kind fit in its 48 first-two-letter prefixes, so none share them.
     assert.equal(new Set(roots.slice(0, 30).map((root) => root.slice(0, 2))).size, 30);
   });

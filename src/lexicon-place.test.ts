@@ -87,7 +87,7 @@ describe("placement", () => {
       { kept: [{ emoji: "😀", root: "egema" }], tailSteps: 100 },
     );
     assert.equal(placed[0]!.length, 5);
-    assert.match(placed[0]!.root, /^[aeou][bdghylmnrvwz][aeou]mo$/);
+    assert.match(placed[0]!.root, /^[aeou][bdghylmnrvwz][aeou]me$/);
     assert.notEqual(placed[0]!.root.slice(0, 2), "eg");
   });
 
@@ -107,13 +107,13 @@ describe("placement", () => {
     );
     const root = placed[0]!.root;
     assert.notEqual(root.slice(0, 2), "ab", root);
-    assert.match(root, /^[aeou]bo$/);
+    assert.match(root, /^[aeou]be$/);
   });
 
   it("never spells a root with an English word the doc lint reads as English", async () => {
     await assert.rejects(
       placePublishedRoots(
-        [{ emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "", kind: "counting", shape: "order" }],
+        [{ emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "", kind: "counting", shape: "one" }],
         [overlay],
         {
           blocked: shortBut("are"),
@@ -149,32 +149,32 @@ describe("placement", () => {
         { emoji: "🎻", concrete: "violin", abstract: "harmony", englishByPos: "", kind: "counting", shape: "order", size: "none" },
       ],
       [fishing],
-      { blocked: [...shortBut("uvu"), ...tailBut("re", "uvure", "ezore")], annealRestarts: 1, annealSteps: 20, tailSteps: 100 },
+      { blocked: [...shortBut("uvu"), ...tailBut("ro", "uvuro", "ezoro")], annealRestarts: 1, annealSteps: 20, tailSteps: 100 },
     );
     assert.equal(placed.find((row) => row.emoji === "🎣")!.root, "uvu");
-    // `uvure` starts with the new host `uvur`.
-    assert.equal(placed.find((row) => row.emoji === "🎻")!.root, "ezore");
+    // `uvuro` starts with the new host `uvur`.
+    assert.equal(placed.find((row) => row.emoji === "🎻")!.root, "ezoro");
   });
 
   it("checks listed compounds through a moved short member's new spelling", async () => {
     const placed = await placePublishedRoots(
       [
         { emoji: "🎣", concrete: "fishing", abstract: "memory", englishByPos: "", root: "evo", kind: "doing", shape: "takes-away" },
-        { emoji: "🔢", concrete: "number", abstract: "count", englishByPos: "", root: "anore", kind: "counting", shape: "order", size: "medium" },
+        { emoji: "🔢", concrete: "number", abstract: "count", englishByPos: "", root: "anoro", kind: "counting", shape: "order", size: "medium" },
       ],
       [],
       {
-        blocked: [...shortBut("uvu"), ...tailBut("re", "anore", "ezore")],
-        kept: [{ emoji: "🛶", root: "uvura" }, { emoji: "⛏️", root: "ore" }],
-        compounds: [compound("evo", "r", "anore")],
+        blocked: [...shortBut("uvu"), ...tailBut("ro", "anoro", "ezoro")],
+        kept: [{ emoji: "🛶", root: "uvura" }, { emoji: "⛏️", root: "oro" }],
+        compounds: [compound("evo", "r", "anoro")],
         annealRestarts: 1,
         annealSteps: 20,
         tailSteps: 100,
       },
     );
     assert.equal(placed.find((row) => row.emoji === "🎣")!.root, "uvu");
-    // `uvuranore` would also read `uvura` + n + `ore`.
-    assert.equal(placed.find((row) => row.emoji === "🔢")!.root, "ezore");
+    // `uvuranoro` would also read `uvura` + n + `oro`.
+    assert.equal(placed.find((row) => row.emoji === "🔢")!.root, "ezoro");
   });
 
   it("keeps two short rows from giving a listed compound a second split", () => {

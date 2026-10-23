@@ -31,8 +31,8 @@ export const KIND_LETTERS = {
 /** Job → final vowel. */
 export const SHAPE_VOWELS = {
   holds: "a",
-  one: "o",
-  order: "e",
+  one: "e",
+  order: "o",
   "takes-away": "u",
 } as const;
 

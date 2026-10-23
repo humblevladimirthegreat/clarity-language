@@ -129,7 +129,7 @@ describe("lexicon-compounds", () => {
           mnemonic: "hug + yo (a person characterized by it) is a friend",
         },
       ],
-      new Map([["o", "one"], ["e", "order"], ["a", "holds"], ["u", "takes-away"]]),
+      new Map([["e", "one"], ["o", "order"], ["a", "holds"], ["u", "takes-away"]]),
     );
     assert.equal(rows[0]?.right, "yo");
     assert.equal(changes.length, 0);
@@ -148,7 +148,7 @@ describe("lexicon-compounds", () => {
           mnemonic: "hug + yo (a person characterized by it) is a friend",
         },
       ],
-      new Map([["o", "order"], ["e", "one"]]),
+      new Map([["o", "one"], ["e", "order"]]),
     );
     assert.equal(rows[0]?.right, "ye");
     assert.equal(rows[0]?.stem, "ahuyaye");
