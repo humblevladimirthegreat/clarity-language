@@ -7,37 +7,37 @@ band: intermediate
 ### SHARED after the join
 <a id="scope-fence-p-join"></a>
 
-When an adjective or extra noun is meant for the **whole list** (*both challenging*, *Uzozen's dog and cat*), write it **immediately after** the join. Material in that spot is called SHARED: it describes each member of the list. A modifier that belongs to one item only stays on that item (after its head, or `gl-` before it).
+When an adjective or extra noun is meant for the **whole list** (*both challenging*, *Azozon's dog and cat*), write it **immediately after** the join. Material in that spot is called SHARED: it describes each member of the list. A modifier that belongs to one item only stays on that item (after its head, or `gl-` before it).
 
-> `zudozol zagozol zal gamahum.`
+> `zodozel zogozel zal gamahum.`
 >
 > [z-dog | z-cat | z-and | g-challenge]
 >
 > "a challenging dog and a challenging cat."
 
-A hook belongs to one item the same way. Put the hook and its `/b/` right after that item, before the join word: **`om`** plus a resume gives *Uzozen and his dog*.
+A hook belongs to one item the same way. Put the hook and its `/b/` right after that item, before the join word: **`om`** plus a resume gives *Azozon and his dog*.
 
-> `zuzozen zudozol om buzozer zal vowurel.`
+> `zazozon zodozel om bazozor zal vowurol.`
 >
-> [z-Uzozen | [z-dog | [used-by | b-←Uzozen]] | z-and] | v-walk
+> [z-Azozon | [z-dog | [used-by | b-←Azozon]] | z-and] | v-walk
 >
-> "Uzozen and his dog walk."
+> "Azozon and his dog walk."
 
 Only the item just before the join word takes a hook this way. A hook anywhere else in the clause is an extra noun of the clause.
 
-> `zudozol zagozol zam gogunum bluzozen.`
+> `zodozel zogozel zam gegunum blazozon.`
 >
-> [z-dog | z-cat | z-and.open | [g-ownership | bl-Uzozen]]
+> [z-dog | z-cat | z-and.open | [g-ownership | bl-Azozon]]
 >
-> "Uzozen's dog and cat." (and possibly more)
+> "Azozon's dog and cat." (and possibly more)
 
 A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaining](left-bound.md#complex-chaining).
 
-> `zudozol zagozol zam gogunum bluzozen guzemol.`
+> `zodozel zogozel zam gegunum blazozon guzemel.`
 >
-> [z-dog | z-cat | z-and.open | [g-ownership | [bl-Uzozen | g-sleepy]]]
+> [z-dog | z-cat | z-and.open | [g-ownership | [bl-Azozon | g-sleepy]]]
 >
-> "Sleepy Uzozen's dog and cat." (and possibly more)
+> "Sleepy Azozon's dog and cat." (and possibly more)
 
 **Compare with:** a [sakes](/sakes) need on `/ɡ/` already means the speaker’s belonging (`guwathal` *my … serves competence*).
 
@@ -54,22 +54,22 @@ More items of the same role go *before* the join, not after it.
 
 SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a scale after rank **`o`** / **`uo`**, equative **`oe`**, or sequence **`ao`**. After a verb join, a `/d/` object, a recipient `/b/`, or an `/h/` adverb is SHARED: every verb takes it. Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item. Any other `/h/` after a join is an ordinary adverb on the verb:
 
-> `zuzozen zolazun zal huhunem vowurel.`
+> `zazozon zalazun zal hahunom vowurol.`
 >
-> [z-Uzozen | z-Olazun | z-and] | h-intensity | v-walk
+> [z-Azozon | z-Alazun | z-and] | h-intensity | v-walk
 >
-> "Uzozen and Olazun walk intensely."
+> "Azozon and Alazun walk intensely."
 
 ### Rank joins {#rank-joins}
 <a id="priority-ranking-e"></a>
 
 When English would say two people are *as ADJ as* each other, use a tie: a rank join with two vowels, **o** then **e** (**`zoel`**, or open **`zoem`**). Write the names, then the tie, then the adjective right after it, so the adjective grades the whole list. In a tie, the order of the names does not matter.
 
-> `zuzozen zolazun zoel gamahum.`
+> `zazozon zalazun zoel gamahum.`
 >
-> [z-Uzozen | z-Olazun | z-equal-rank | g-challenge]
+> [z-Azozon | z-Alazun | z-equal-rank | g-challenge]
 >
-> "Uzozen is as challenging as Olazun."
+> "Azozon is as challenging as Alazun."
 
 **Compare with:** *more / most* and *least* use **`o`** / **`uo`** plus the same shared adjective ([comparatives](/comparatives)).
 
@@ -85,29 +85,29 @@ Beginner already used *everything but* (**`ua`**). A leading **u** inverts **o**
 
 What *everything* or *anything* ranges over comes from context, or from a [SHARED](#shared-after-the-join) `/ɡ/` that names the kind. Only plain **`…om`** means *optional*; on **ue**, **-m** leaves the list open as usual. **-r** still attaches only to one-vowel **a** / **o** / **e** / **u**.
 
-> `zududal zugudal zual.`
+> `zedudal zogudal zual.`
 >
 > [z-tea | z-coffee | z-everything-but]
 >
 > "everything but tea and coffee."
 
-> `zuzozen zolazun zahelan zuol.`
+> `zazozon zalazun zahelan zuol.`
 >
-> [z-Uzozen | z-Olazun | z-Ahelan | z-rank/less]
+> [z-Azozon | z-Alazun | z-Ahelan | z-rank/less]
 >
-> "Uzozen, Olazun, Ahelan, from last to first."
+> "Azozon, Alazun, Ahelan, from last to first."
 
-**Compare with:** plain **`u`** is *not* / *none of* the listed, not an invert stack. *Every cat* uses SHARED kind after **`zual`**: `zual gagozol`.
+**Compare with:** plain **`u`** is *not* / *none of* the listed, not an invert stack. *Every cat* uses SHARED kind after **`zual`**: `zual gogozel`.
 
 ### Sequence (**`ao`**) {#sequence-ao}
 
 Rank **`o`** puts the first item at the **top** (*A matters more than B*). When English would instead say *A, then B* (an itinerary, a turn order, *from 3 to 5*), the first item is the **start**, not the winner. Write the items in that order and close with **`ao`**.
 
-> `zuzozen zolazun zahelan zaol.`
+> `zazozon zalazun zahelan zaol.`
 >
-> [z-Uzozen | z-Olazun | z-Ahelan | z-in-order]
+> [z-Azozon | z-Alazun | z-Ahelan | z-in-order]
 >
-> "Uzozen, then Olazun, then Ahelan."
+> "Azozon, then Alazun, then Ahelan."
 
 <!-- cheat-sheet: joins-hooks -->
 | Arity | Closed **-l** | Open **-m** |
@@ -120,21 +120,21 @@ A sequence does not say which item is better. With a SHARED quality it sorts the
 
 ### Respectively (`wubam`) {#respectively}
 
-Two *and*-lists in one clause do not say who goes with what. `zuzozen zolazun zal vawebol dagozol dudozol dal.` could mean each of them saw both animals. When English says *respectively* (the first item goes with the first, the second with the second), put **`wubam`** right before the join word of the second list.
+Two *and*-lists in one clause do not say who goes with what. `zazozon zalazun zal vayebel dogozel dodozel dal.` could mean each of them saw both animals. When English says *respectively* (the first item goes with the first, the second with the second), put **`wubam`** right before the join word of the second list.
 
-> `zuzozen zolazun zal vawebol dagozol dudozol wubam dal.`
+> `zazozon zalazun zal vayebel dogozel dodozel wubam dal.`
 >
-> [z-Uzozen | z-Olazun | z-and] | v-see | [d-cat | d-dog | w-respectively | d-and]
+> [z-Azozon | z-Alazun | z-and] | v-see | [d-cat | d-dog | w-respectively | d-and]
 >
-> "Uzozen and Olazun saw a cat and a dog, respectively."
+> "Azozon and Alazun saw a cat and a dog, respectively."
 
-Uzozen saw the cat, and Olazun saw the dog. The lists pair up by position, so they must have the same number of items:
+Azozon saw the cat, and Alazun saw the dog. The lists pair up by position, so they must have the same number of items:
 
-> `zuzozen zolazun zahelan zal vawebol dagozol dudozol dubezol wubam dal.`
+> `zazozon zalazun zahelan zal vayebel dogozel dodozel debezel wubam dal.`
 >
-> [z-Uzozen | z-Olazun | z-Ahelan | z-and] | v-see | [d-cat | d-dog | d-bird | w-respectively | d-and]
+> [z-Azozon | z-Alazun | z-Ahelan | z-and] | v-see | [d-cat | d-dog | d-bird | w-respectively | d-and]
 >
-> "Uzozen, Olazun, and Ahelan saw a cat, a dog, and a bird, respectively."
+> "Azozon, Alazun, and Ahelan saw a cat, a dog, and a bird, respectively."
 
 | Rule | Pattern |
 |------|---------|
@@ -144,29 +144,29 @@ Uzozen saw the cat, and Olazun saw the dog. The lists pair up by position, so th
 
 The lists can be of different roles. A list of adjectives or verbs pairs with the subject list the same way: put **`wubam`** before the join word that closes it.
 
-> `zuzozen zolazun zal gelazom gamezom wubam gal.`
+> `zazozon zalazun zal gelazem gamezem wubam gal.`
 >
-> [z-Uzozen | z-Olazun | z-and] | [g-big | g-small | w-respectively | g-and]
+> [z-Azozon | z-Alazun | z-and] | [g-big | g-small | w-respectively | g-and]
 >
-> "Uzozen and Olazun are big and small, respectively."
+> "Azozon and Alazun are big and small, respectively."
 
-> `zuzozen zolazun zal vowurel varuvel wubam val.`
+> `zazozon zalazun zal vowurol veruvol wubam val.`
 >
-> [z-Uzozen | z-Olazun | z-and] | [v-walk | v-run | w-respectively | v-and]
+> [z-Azozon | z-Alazun | z-and] | [v-walk | v-run | w-respectively | v-and]
 >
-> "Uzozen and Olazun walk and run, respectively."
+> "Azozon and Alazun walk and run, respectively."
 
-Uzozen is big and Olazun is small; Uzozen walks and Olazun runs. Without **`wubam`**, an adjective right after a noun join is [SHARED](#shared-after-the-join): it describes every noun. When **`wubam`** and `gal` close the adjectives, they are a list of their own, so the first one is not shared.
+Azozon is big and Alazun is small; Azozon walks and Alazun runs. Without **`wubam`**, an adjective right after a noun join is [SHARED](#shared-after-the-join): it describes every noun. When **`wubam`** and `gal` close the adjectives, they are a list of their own, so the first one is not shared.
 
 Inside such a list, a plain `/ɡ/` after an item's hosted `/b/` is the next item, not a description of that `/b/`. The closing join decides it: with `gal` ending the row, every `/ɡ/` in it belongs to the list and so to the subjects.
 
-> `zuzozen zolazun zal gewom blagayul guzemol wubam gal.`
+> `zazozon zalazun zal gewem blagayul guzemel wubam gal.`
 >
-> [z-Uzozen | z-Olazun | z-and] | [[g-like | bl-guard] | g-sleepy | w-respectively | g-and]
+> [z-Azozon | z-Alazun | z-and] | [[g-like | bl-guard] | g-sleepy | w-respectively | g-and]
 >
-> "Uzozen is like the guard, and Olazun is sleepy." (respectively)
+> "Azozon is like the guard, and Alazun is sleepy." (respectively)
 
-With no closing `gal`, the row is not a list. The `/ɡ/` after a noun join is SHARED, and the plain `/ɡ/` after its `/b/` describes that `/b/` ([complex chaining](left-bound.md#complex-chaining)): `zuzozen zolazun zal gewom blagayul guzemol.` is *both are like the sleepy guard*.
+With no closing `gal`, the row is not a list. The `/ɡ/` after a noun join is SHARED, and the plain `/ɡ/` after its `/b/` describes that `/b/` ([complex chaining](left-bound.md#complex-chaining)): `zazozon zalazun zal gewem blagayul guzemel.` is *both are like the sleepy guard*.
 
 ### Full single-item and standalone inventories
 
@@ -258,13 +258,13 @@ When English would allow several listed items at once (*and/or*), stack **a** th
 
 When English would deny a list as a whole (*not both*), close the list with its own join, then add a **u** join after it. The inner list is the one item before the **u** join, so this is single-item *not X* with the whole list as X. To deny each item instead (*neither A nor B*), put the items straight before the **u** join, as in Beginner [negation](/joins#negation-u).
 
-> `vowurel varuvel val vul.`
+> `vowurol veruvol val vul.`
 >
 > [[v-walk | v-run | v-and] | v-not]
 >
 > "not both walk and run."
 
-> `vowurel varuvel vel vul.`
+> `vowurol veruvol vel vul.`
 >
 > [[v-walk | v-run | v-or-exactly-one] | v-not]
 >
@@ -272,9 +272,9 @@ When English would deny a list as a whole (*not both*), close the list with its 
 
 | Agebon | English |
 |--------|---------|
-| `vowurel varuvel vul` | *neither walk nor run* |
-| `vowurel varuvel val vul` | *not both walk and run* |
-| `vowurel varuvel vel vul` | *not exactly one of walk and run* |
+| `vowurol veruvol vul` | *neither walk nor run* |
+| `vowurol veruvol val vul` | *not both walk and run* |
+| `vowurol veruvol vel vul` | *not exactly one of walk and run* |
 
 ### Fence nesting {#fence-nesting}
 
@@ -282,9 +282,9 @@ When one list sits inside another (*(tea or coffee) and water*), write the inner
 
 | Pattern | Agebon | English |
 |---------|--------|---------|
-| flat | `zududal zugudal zowulal zel` | *tea or coffee or water* |
-| nested | `zududal zugudal zel zowulal zal` | *either tea or coffee, and water* |
-| nested adjectives | `gerulel gamezom gul gelazom gal` | *big, and neither red nor small* |
+| flat | `zedudal zogudal zowulal zel` | *tea or coffee or water* |
+| nested | `zedudal zogudal zel zowulal zal` | *either tea or coffee, and water* |
+| nested adjectives | `gerulol gamezem gul gelazem gal` | *big, and neither red nor small* |
 
 ### Practice {#intermediate-practice}
 
@@ -296,62 +296,62 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *ring* | `orebol` | 💍 |
-| *veil* | `evobul` | 👰 |
-| *dress* | `udobal` | 👗 |
-| *kiss* | `veyuyal` | 💏 |
+| *ring* | `orebel` | 💍 |
+| *veil* | `ovobul` | 👰 |
+| *dress* | `edobal` | 👗 |
+| *kiss* | `veguyal` | 💏 |
 | *respectively* | `wubam` | 🧦 from *socks*: sort them into matched pairs |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *wine* | `awudal` |
-| *beer* | `obudal` |
-| *walk* | `vowurel` |
-| *punch* | `vanuvul` |
-| *see* | `vawebol` |
+| *wine* | `owudal` |
+| *beer* | `urudal` |
+| *walk* | `vowurol` |
+| *punch* | `vabuvul` |
+| *see* | `vayebel` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
-**1.** *Uzozen and Olazun, both in a dress*
+**1.** *Azozon and Alazun, both in a dress*
 
 ::: details Show answer
-`zuzozen zolazun zal gudobal.`
+`zazozon zalazun zal gedobal.`
 
-[z-Uzozen | z-Olazun | z-and | g-dress]
+[z-Azozon | z-Alazun | z-and | g-dress]
 :::
 
 **2.** *either wine or beer, and a ring*
 
 ::: details Show answer
-`zawudal zobudal zel zorebol zal.`
+`zowudal zurudal zel zorebel zal.`
 
 [[z-wine | z-beer | z-or-exactly-one] | z-ring | z-and]
 :::
 
-**3.** *Uzozen kisses first, then Olazun.*
+**3.** *Azozon kisses first, then Alazun.*
 
 ::: details Show answer
-`zuzozen zolazun zaol veyuyal.`
+`zazozon zalazun zaol veguyal.`
 
-[z-Uzozen | z-Olazun | z-in-order] | v-kiss
+[z-Azozon | z-Alazun | z-in-order] | v-kiss
 :::
 
 **4.** *not both kiss and walk*
 
 ::: details Show answer
-`veyuyal vowurel val vul.`
+`veguyal vowurol val vul.`
 
 [[v-kiss | v-walk | v-and] | v-not]
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zevobul zuel.`
+**1.** `zovobul zuel.`
 
 ::: details Show answer
 [z-veil | z-anything-but]
@@ -367,12 +367,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *at least Ahelan*
 :::
 
-**3.** `zuzozen zolazun zal vawebol dorebol devobul wubam dal.`
+**3.** `zazozon zalazun zal vayebel dorebel dovobul wubam dal.`
 
 ::: details Show answer
-[z-Uzozen | z-Olazun | z-and] | v-see | [d-ring | d-veil | w-respectively | d-and]
+[z-Azozon | z-Alazun | z-and] | v-see | [d-ring | d-veil | w-respectively | d-and]
 
-*Uzozen and Olazun see the ring and the veil, respectively.*
+*Azozon and Alazun see the ring and the veil, respectively.*
 :::
 
 **4.** `zahelan zuol.`
@@ -385,34 +385,34 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Ahelan, then Olazun, then Uzozen.* (a turn order) `zahelan zolazun zuzozen zaol.` or `zahelan zolazun zuzozen zol.`
+**1.** *Ahelan, then Alazun, then Azozon.* (a turn order) `zahelan zalazun zazozon zaol.` or `zahelan zalazun zazozon zol.`
 
 ::: details Show answer
-`zahelan zolazun zuzozen zaol.`
+`zahelan zalazun zazozon zaol.`
 
-[z-Ahelan | z-Olazun | z-Uzozen | z-in-order]
+[z-Ahelan | z-Alazun | z-Azozon | z-in-order]
 
 Sequence **`ae`** makes the first item the start; rank **`e`** would make it the most important.
 :::
 
-**2.** *neither kiss nor punch* `veyuyal vanuvul vul.` or `veyuyal vanuvul val vul.`
+**2.** *neither kiss nor punch* `veguyal vabuvul vul.` or `veguyal vabuvul val vul.`
 
 ::: details Show answer
-`veyuyal vanuvul vul.`
+`veguyal vabuvul vul.`
 
 [v-kiss | v-punch | v-not]
 
-Items straight before **`vul`** are each denied; `veyuyal vanuvul val vul` only denies doing both.
+Items straight before **`vul`** are each denied; `veguyal vabuvul val vul` only denies doing both.
 :::
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Uzozen and Olazun see the ring and the veil, respectively* <!-- lint: error -->`zuzozen zolazun zal wubam vawebol dorebol devobul dal.`
+**1.** *Azozon and Alazun see the ring and the veil, respectively* <!-- lint: error -->`zazozon zalazun zal wubam vayebel dorebel dovobul dal.`
 
 ::: details Show answer
-`zuzozen zolazun zal vawebol dorebol devobul wubam dal.`
+`zazozon zalazun zal vayebel dorebel dovobul wubam dal.`
 
-[z-Uzozen | z-Olazun | z-and] | v-see | [d-ring | d-veil | w-respectively | d-and]
+[z-Azozon | z-Alazun | z-and] | v-see | [d-ring | d-veil | w-respectively | d-and]
 
 **`wubam`** sits immediately before the join word it pairs, not before the verb.
 :::

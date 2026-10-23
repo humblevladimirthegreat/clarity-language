@@ -14,19 +14,19 @@ You already write one clause with [role letters](clause.md#role-letters) and sta
 
 English can describe a noun with a whole clause that starts with *who*, *that*, or *which* (*the guard who sits*). Agebon has no such word. Write **two sentences** instead: first say the inner clause as an ordinary sentence, then use the same person or thing in the next sentence.
 
-> `zagayul vuhohol. zuzozen vezuyel bagayul.`
+> `zagayul vehohel. zazozon vezuyol bagayul.`
 >
-> z-guard | v-sit . z-Uzozen | v-tell | b-guard
+> z-guard | v-sit . z-Azozon | v-tell | b-guard
 >
-> "A guard sits. Uzozen talks to the guard."
+> "A guard sits. Azozon talks to the guard."
 
-That pair is English *Uzozen talks to the guard who sits.* Repeat the full word when you need the same person again in the next sentence.
+That pair is English *Azozon talks to the guard who sits.* Repeat the full word when you need the same person again in the next sentence.
 
-**Compare with:** *a blue dog* is still one [adjective](clause.md#adjectives-ɡ) (`gubulel`). *Uzozen tells Olazun **that** a dog runs* is a dependent clause: *that* packages the next sentence as content, not as a tag on *dog*.
+**Compare with:** *a blue dog* is still one [adjective](clause.md#adjectives-ɡ) (`gobulol`). *Azozon tells Alazun **that** a dog runs* is a dependent clause: *that* packages the next sentence as content, not as a tag on *dog*.
 
 ### Dependent clauses {#dependent-clauses}
 
-Sometimes a whole sentence fills one role in another sentence. In *Uzozen tells Olazun **that the dog runs***, the part after *that* is what Uzozen tells: the direct object. (Olazun, the person told, is plain `/b/`.) That inner sentence is a **dependent clause**.
+Sometimes a whole sentence fills one role in another sentence. In *Azozon tells Alazun **that the dog runs***, the part after *that* is what Azozon tells: the direct object. (Alazun, the person told, is plain `/b/`.) That inner sentence is a **dependent clause**.
 
 In the main sentence, a **stand-in** holds the dependent clause's place: **`darl`**, which is the role letter + **`a`** + **-rl**. It stands for the sentence that comes right after it, so the main sentence never has to wrap around the inner one.
 
@@ -36,21 +36,21 @@ The main sentence stops after **`darl`**, and the next full sentence is the cont
 
 Here the dependent clause is the direct object, so the stand-in is **`darl`**:
 
-> `zuzozen vezuyel bolazun darl zudozol varuvel.`
+> `zazozon vezuyol balazun darl zodozel veruvol.`
 >
-> z-Uzozen | v-tell | b-Olazun | d-that-clause | z-dog | v-run
+> z-Azozon | v-tell | b-Alazun | d-that-clause | z-dog | v-run
 >
-> "Uzozen tells Olazun that the dog runs."
+> "Azozon tells Alazun that the dog runs."
 
 For English *whether*, change the vowel to **`e`**: **`derl`**. The inner sentence is question-like, but the outer sentence is still a statement, so the whole stretch ends with a period.
 
-> `zuzozen vawebol derl zolazun vowurel.`
+> `zazozon vayebel derl zalazun vowurol.`
 >
-> z-Uzozen | v-see | d-whether-clause | z-Olazun | v-walk
+> z-Azozon | v-see | d-whether-clause | z-Alazun | v-walk
 >
-> "Uzozen sees whether Olazun walks."
+> "Azozon sees whether Alazun walks."
 
-**Compare with:** *the dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. *If Olazun walks* sets a condition rather than filling a role, so it takes a pole word instead of a stand-in on its own (next section).
+**Compare with:** *the dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. *If Alazun walks* sets a condition rather than filling a role, so it takes a pole word instead of a stand-in on its own (next section).
 
 ### Because, if, although (poles) {#poles}
 
@@ -58,11 +58,11 @@ Words like *because*, *if*, and *although* attach a dependent clause as a reason
 
 The pole's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, so they take `/th/`. *Although*, *while*, *until*, *before*, *after*, and *so that* describe the event itself, so they are adverbs on `/h/`.
 
-> `zuzozen vezuyol thahum blarl zolazun vowurel.`
+> `zazozon vozuyel thahum blarl zalazun vowurol.`
 >
-> z-Uzozen | v-sing | [th-because | bl-that-clause] | z-Olazun | v-walk
+> z-Azozon | v-sing | [th-because | bl-that-clause] | z-Alazun | v-walk
 >
-> "Uzozen sings because Olazun walks."
+> "Azozon sings because Alazun walks."
 
 A pole uses the abstract sense of its root, not the everyday object, so it ends in **-m**.
 
@@ -72,74 +72,74 @@ You can also say:
 | Agebon | English | Same root as | Cue |
 |--------|---------|--------------|-----|
 | **`thahum blarl`** | *because* | `ahul` *wall* | 🧱: the cause is what the result sits on |
-| **`thohom blarl`** | *if* | `ohol` *door* | 🚪: walk through only if it opens |
-| **`thebom blarl`** | *only if* | `ebol` *paper-roll* | 🧻: without it the situation does not run |
-| **`thehem blarl`** | *if and only if* | `ehel` *east-west* | ↔️: each side only with the other |
-| **`hezom blarl`** | *although* / *even though* | `ezol` *zebra* | 🦓: two stripes, still one animal |
-| **`herem blarl`** | *while* (at the same time) | `erel` *gemini* | ♊: two things at once |
+| **`thohem blarl`** | *if* | `ohel` *door* | 🚪: walk through only if it opens |
+| **`thebem blarl`** | *only if* | `ebel` *paper-roll* | 🧻: without it the situation does not run |
+| **`thehom blarl`** | *if and only if* | `ehol` *east-west* | ↔️: each side only with the other |
+| **`hezem blarl`** | *although* / *even though* | `ezel` *zebra* | 🦓: two stripes, still one animal |
+| **`herom blarl`** | *while* (at the same time) | `erol` *gemini* | ♊: two things at once |
 | **`harum blarl`** | *until* | `arul` *timer* | ⏲️: stop when it rings |
-| **`hevahum blarl`** | *by the time* | `evahul` *finish-line* | 🏁: done by the time you reach the flag |
+| **`huvahum blarl`** | *by the time* | `uvahul` *finish-line* | 🏁: done by the time you reach the flag |
 | **`habam blarl`** | *before* | `abal` *backpack* | 🎒: packed first |
 | **`halam blarl`** | *after* | `alal` *sand* | ⌛: the sand has already run through |
 | **`hovam blarl`** | *so that* / *in order to* | `oval` *goal* | 🥅: you act so the shot counts |
 
 A command or request makes no claim, so an *if* pole on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Agebon keeps the usual order, with **`blarl`** last.
 
-> `yol vowurel thohom blarl zolazun vuhohol.`
+> `yol vowurol thohem blarl zalazun vehohel.`
 >
-> y-command | v-walk | [th-if | bl-that-clause] | z-Olazun | v-sit
+> y-command | v-walk | [th-if | bl-that-clause] | z-Alazun | v-sit
 >
-> "If Olazun sits, walk."
+> "If Alazun sits, walk."
 
-English *despite* takes a noun instead of a clause (*despite Olazun*). Use the same **`hezom`** pole and put that noun in a `bl-` word where **`blarl`** would go. As with *although*, the obstacle is taken as fact, and you add no second word for it. The pole is on `/h/` because it describes the event, never on `/th/`. To attach it to a noun instead, use `/ɡ/`: **`gezom`**. (cue: 🦓 *zebra*: two stripes, still one animal)
+English *despite* takes a noun instead of a clause (*despite Alazun*). Use the same **`hezem`** pole and put that noun in a `bl-` word where **`blarl`** would go. As with *although*, the obstacle is taken as fact, and you add no second word for it. The pole is on `/h/` because it describes the event, never on `/th/`. To attach it to a noun instead, use `/ɡ/`: **`gezem`**. (cue: 🦓 *zebra*: two stripes, still one animal)
 
-> `zuzozen vowurel hezom blolazun.`
+> `zazozon vowurol hezem blalazun.`
 >
-> z-Uzozen | v-walk | [h-although | bl-Olazun]
+> z-Azozon | v-walk | [h-although | bl-Alazun]
 >
-> "Uzozen walks despite Olazun."
+> "Azozon walks despite Alazun."
 
-Ordinary `zezol` is still *a zebra*.
+Ordinary `zezel` is still *a zebra*.
 
 The sentence after **`blarl`** has to name an event or a thing, so it needs a noun or a verb. A stance word by itself does not fill it.
 
-**Compare with:** discourse *however* and *therefore* start a new sentence after a finished claim; they are not *although*. *Whether Olazun walks* is **`derl`**, not **`thohom`**: *if* sets a condition, and *whether* leaves a yes-or-no question open.
+**Compare with:** discourse *however* and *therefore* start a new sentence after a finished claim; they are not *although*. *Whether Alazun walks* is **`derl`**, not **`thohem`**: *if* sets a condition, and *whether* leaves a yes-or-no question open.
 
 ### Times (*while*, *before*, *after*, *until*, *by*) {#time-poles}
 
-The time poles take a noun the same way. Put the event or period in a `bl-` word right after **`herem`** *during*, **`habam`** *before*, **`halam`** *after*, or **`harum`** *until*.
+The time poles take a noun the same way. Put the event or period in a `bl-` word right after **`herom`** *during*, **`habam`** *before*, **`halam`** *after*, or **`harum`** *until*.
 
-> `zuzozen vowurel herem blenulul.`
+> `zazozon vowurol herom blanulul.`
 >
-> z-Uzozen | v-walk | [h-while | bl-thunderstorm]
+> z-Azozon | v-walk | [h-while | bl-thunderstorm]
 >
-> "Uzozen walks during the thunderstorm."
+> "Azozon walks during the thunderstorm."
 
-> `zuzozen vuhohol halam blenulul.`
+> `zazozon vehohel halam blanulul.`
 >
-> z-Uzozen | v-sit | [h-after | bl-thunderstorm]
+> z-Azozon | v-sit | [h-after | bl-thunderstorm]
 >
-> "Uzozen sits after the thunderstorm."
+> "Azozon sits after the thunderstorm."
 
 <a id="by-deadline"></a>
 
-*Until* and *by* both name an endpoint. **`harum`** *until* says this event lasts up to the endpoint. **`hevahum`** *by* says this event is done at the endpoint or sooner. (cue: 🏁 *finish line*: done by the time you reach the flag)
+*Until* and *by* both name an endpoint. **`harum`** *until* says this event lasts up to the endpoint. **`huvahum`** *by* says this event is done at the endpoint or sooner. (cue: 🏁 *finish line*: done by the time you reach the flag)
 
-> `zuzozen vowurel hevahum blenulul.`
+> `zazozon vowurol huvahum blanulul.`
 >
-> z-Uzozen | v-walk | [h-by | bl-thunderstorm]
+> z-Azozon | v-walk | [h-by | bl-thunderstorm]
 >
-> "Uzozen walks by the time of the thunderstorm." (done no later than that)
+> "Azozon walks by the time of the thunderstorm." (done no later than that)
 
 <a id="as-soon-as"></a>
 
-For *as soon as* / *once*, keep **`halam`** *after* and put the haste word **`wedurem`** in front of it. The gap between the two events is as short as it can be.
+For *as soon as* / *once*, keep **`halam`** *after* and put the haste word **`wadurom`** in front of it. The gap between the two events is as short as it can be.
 
-> `zuzozen vowurel wedurem halam blarl zolazun vuhohol.`
+> `zazozon vowurol wadurom halam blarl zalazun vehohel.`
 >
-> z-Uzozen | v-walk | [[w-haste | h-after] | bl-that-clause] | z-Olazun | v-sit
+> z-Azozon | v-walk | [[w-haste | h-after] | bl-that-clause] | z-Alazun | v-sit
 >
-> "Uzozen walks as soon as Olazun sits."
+> "Azozon walks as soon as Alazun sits."
 
 *Since* meaning *because* is **`thahum blarl`**.
 
@@ -149,21 +149,21 @@ Agebon verbs have no past or future form. *Before*, *after*, *while*, and *until
 
 <a id="event-purpose"></a>
 
-English *so that* names the outcome an event aims at (*walks so that Olazun sits*). Use the pole **`hovam`** with **`blarl`**, the same pair shape as *because*, and put the outcome in the sentence after **`blarl`**. Unlike *because*, this does **not** claim the outcome happened. To attach the pole to a noun, use **`govam`**. (cue: 🥅 *goal*: you act so the shot counts)
+English *so that* names the outcome an event aims at (*walks so that Alazun sits*). Use the pole **`hovam`** with **`blarl`**, the same pair shape as *because*, and put the outcome in the sentence after **`blarl`**. Unlike *because*, this does **not** claim the outcome happened. To attach the pole to a noun, use **`govam`**. (cue: 🥅 *goal*: you act so the shot counts)
 
-> `zuzozen vowurel hovam blarl zolazun vuhohol.`
+> `zazozon vowurol hovam blarl zalazun vehohel.`
 >
-> z-Uzozen | v-walk | [h-so-that | bl-that-clause] | z-Olazun | v-sit
+> z-Azozon | v-walk | [h-so-that | bl-that-clause] | z-Alazun | v-sit
 >
-> "Uzozen walks so that Olazun sits."
+> "Azozon walks so that Alazun sits."
 
 English *in order to* drops the person who sits. Agebon still names them in the inner `/z/`:
 
-> `zuzozen vowurel hovam blarl zuzozen vuhohol.`
+> `zazozon vowurol hovam blarl zazozon vehohel.`
 >
-> z-Uzozen | v-walk | [h-so-that | bl-that-clause] | z-Uzozen | v-sit
+> z-Azozon | v-walk | [h-so-that | bl-that-clause] | z-Azozon | v-sit
 >
-> "Uzozen walks in order to sit."
+> "Azozon walks in order to sit."
 
 Ordinary `zoval` is still *a goal* (the net).
 
@@ -175,7 +175,7 @@ Only the first turn (or a default statement body) chooses the speech act. So the
 
 A **linker** is an `/x/` word that connects one sentence to the next, like English *therefore* or *however*. The first sentence may end with a period; the linker then **starts the next written sentence**, still under the same speech act:
 
-> `zudozol vowurel. xahem zagozol varuvel.`
+> `zodozel vowurol. xahom zogozel veruvol.`
 >
 > z-dog | v-walk . x-therefore | z-cat | v-run
 >
@@ -194,87 +194,87 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agebon | Cue |
 |---------|--------|-----|
 | *guard* | `agayul` | 💂 |
-| *see* | `vawebol` | 👁️ from *eye* |
-| *tell* | `vezuyel` | 💬 from *speech* |
-| *scream* | `varemul` | 😱 |
-| *therefore* | `xahem` | ➡️ from *east*: the sun's path, so the talk moves on |
+| *see* | `vayebel` | 👁️ from *eye* |
+| *tell* | `vezuyol` | 💬 from *speech* |
+| *scream* | `veyamul` | 😱 |
+| *therefore* | `xahom` | ➡️ from *east*: the sun's path, so the talk moves on |
 | *that-clause* | `darl` | **a** ≈ add: the content that follows |
 | *whether-clause* | `derl` | **o** ≈ one: pick yes or no |
 | *because* | `thahum` | 🧱 from *wall*: the cause is what the result sits on |
-| *if* | `thohom` | 🚪 from *door*: walk through only if it opens |
-| *although* | `hezom` | 🦓 from *zebra*: two stripes, still one animal |
+| *if* | `thohem` | 🚪 from *door*: walk through only if it opens |
+| *although* | `hezem` | 🦓 from *zebra*: two stripes, still one animal |
 | *so-that* | `hovam` | 🥅 from *goal*: you act so the shot counts |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *sit* | `vuhohol` |
-| *peek* | `vebemel` |
-| *run* | `varuvel` |
-| *haste* | `hedurem` |
-| *angry* | `unemul` |
+| *sit* | `vehohel` |
+| *peek* | `vebemol` |
+| *run* | `veruvol` |
+| *haste* | `hadurom` |
+| *angry* | `onumul` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *Uzozen tells Olazun that Ahelan peeks.*
+**1.** *Azozon tells Alazun that Ahelan peeks.*
 
 ::: details Show answer
-`zuzozen vezuyel bolazun darl zahelan vebemel.`
+`zazozon vezuyol balazun darl zahelan vebemol.`
 
-z-Uzozen | v-tell | b-Olazun | d-that-clause | z-Ahelan | v-peek
+z-Azozon | v-tell | b-Alazun | d-that-clause | z-Ahelan | v-peek
 
-**Also correct:** `zuzozen bolazun vezuyel darl zahelan vebemel.`
+**Also correct:** `zazozon balazun vezuyol darl zahelan vebemol.`
 :::
 
-**2.** *Olazun runs because a guard sees Ahelan.*
+**2.** *Alazun runs because a guard sees Ahelan.*
 
 ::: details Show answer
-`zolazun varuvel thahum blarl zagayul dahelan vawebol.`
+`zalazun veruvol thahum blarl zagayul dahelan vayebel.`
 
-z-Olazun | v-run | [th-because | bl-that-clause] | z-guard | d-Ahelan | v-see
+z-Alazun | v-run | [th-because | bl-that-clause] | z-guard | d-Ahelan | v-see
 
-**Also correct:** `zolazun varuvel thahum blarl dahelan zagayul vawebol.`
+**Also correct:** `zalazun veruvol thahum blarl dahelan zagayul vayebel.`
 :::
 
-**3.** *Uzozen sits despite a guard.*
+**3.** *Azozon sits despite a guard.*
 
 ::: details Show answer
-`zuzozen vuhohol hezom blagayul.`
+`zazozon vehohel hezem blagayul.`
 
-z-Uzozen | v-sit | [h-although | bl-guard]
+z-Azozon | v-sit | [h-although | bl-guard]
 :::
 
-**4.** *A guard sees whether Olazun peeks.*
+**4.** *A guard sees whether Alazun peeks.*
 
 ::: details Show answer
-`zagayul vawebol derl zolazun vebemel.`
+`zagayul vayebel derl zalazun vebemol.`
 
-z-guard | v-see | d-whether-clause | z-Olazun | v-peek
+z-guard | v-see | d-whether-clause | z-Alazun | v-peek
 :::
 
-**5.** *Uzozen talks to the guard who screams.*
+**5.** *Azozon talks to the guard who screams.*
 
 ::: details Show answer
-`zagayul varemul. zuzozen vezuyel bagayul.`
+`zagayul veyamul. zazozon vezuyol bagayul.`
 
-z-guard | v-scream . z-Uzozen | v-tell | b-guard
+z-guard | v-scream . z-Azozon | v-tell | b-guard
 :::
 
-**6.** *Olazun screams so that a guard runs.*
+**6.** *Alazun screams so that a guard runs.*
 
 ::: details Show answer
-`zolazun varemul hovam blarl zagayul varuvel.`
+`zalazun veyamul hovam blarl zagayul veruvol.`
 
-z-Olazun | v-scream | [h-so-that | bl-that-clause] | z-guard | v-run
+z-Alazun | v-scream | [h-so-that | bl-that-clause] | z-guard | v-run
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zahelan varemul. xahem zagayul varuvel.`
+**1.** `zahelan veyamul. xahom zagayul veruvol.`
 
 ::: details Show answer
 z-Ahelan | v-scream . x-therefore | z-guard | v-run
@@ -282,15 +282,15 @@ z-Ahelan | v-scream . x-therefore | z-guard | v-run
 *Ahelan screams. Therefore a guard runs.*
 :::
 
-**2.** `zolazun vuhohol hezom blarl zagayul varemul.`
+**2.** `zalazun vehohel hezem blarl zagayul veyamul.`
 
 ::: details Show answer
-z-Olazun | v-sit | [h-although | bl-that-clause] | z-guard | v-scream
+z-Alazun | v-sit | [h-although | bl-that-clause] | z-guard | v-scream
 
-*Olazun sits although a guard screams.*
+*Alazun sits although a guard screams.*
 :::
 
-**3.** `zahelan vawebol derl zagayul vuhohol.`
+**3.** `zahelan vayebel derl zagayul vehohel.`
 
 ::: details Show answer
 z-Ahelan | v-see | d-whether-clause | z-guard | v-sit
@@ -298,60 +298,60 @@ z-Ahelan | v-see | d-whether-clause | z-guard | v-sit
 *Ahelan sees whether the guard sits.*
 :::
 
-**4.** `zagayul hedurem varuvel thohom blarl zolazun varemul.`
+**4.** `zagayul hadurom veruvol thohem blarl zalazun veyamul.`
 
 ::: details Show answer
-z-guard | h-haste | v-run | [th-if | bl-that-clause] | z-Olazun | v-scream
+z-guard | h-haste | v-run | [th-if | bl-that-clause] | z-Alazun | v-scream
 
-*A guard runs hastily if Olazun screams.*
+*A guard runs hastily if Alazun screams.*
 :::
 
-**5.** `zolazun vebemel. zagayul dolazun vawebol.`
+**5.** `zalazun vebemol. zagayul dalazun vayebel.`
 
 ::: details Show answer
-z-Olazun | v-peek . z-guard | d-Olazun | v-see
+z-Alazun | v-peek . z-guard | d-Alazun | v-see
 
-*The guard sees Olazun, who peeks.*
+*The guard sees Alazun, who peeks.*
 :::
 
-**6.** `zahelan vezuyel bagayul darl zuzozen gunemul vuhohol.`
+**6.** `zahelan vezuyol bagayul darl zazozon gonumul vehohel.`
 
 ::: details Show answer
-z-Ahelan | v-tell | b-guard | d-that-clause | [z-Uzozen | g-angry] | v-sit
+z-Ahelan | v-tell | b-guard | d-that-clause | [z-Azozon | g-angry] | v-sit
 
-*Ahelan tells the guard that an angry Uzozen sits.*
+*Ahelan tells the guard that an angry Azozon sits.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Olazun sees whether Uzozen runs.* `zolazun vawebol darl zuzozen varuvel.` or `zolazun vawebol derl zuzozen varuvel.`
+**1.** *Alazun sees whether Azozon runs.* `zalazun vayebel darl zazozon veruvol.` or `zalazun vayebel derl zazozon veruvol.`
 
 ::: details Show answer
-`zolazun vawebol derl zuzozen varuvel.`
+`zalazun vayebel derl zazozon veruvol.`
 
-z-Olazun | v-see | d-whether-clause | z-Uzozen | v-run
+z-Alazun | v-see | d-whether-clause | z-Azozon | v-run
 
-*Whether* leaves a yes-or-no open, so the stand-in takes **`o`**; `darl` would be *sees that Uzozen runs*.
+*Whether* leaves a yes-or-no open, so the stand-in takes **`o`**; `darl` would be *sees that Azozon runs*.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Olazun peeks despite a guard.* <!-- lint: error -->`zolazun vebemel hezom barl zagayul.`
+**1.** *Alazun peeks despite a guard.* <!-- lint: error -->`zalazun vebemol hezem barl zagayul.`
 
 ::: details Show answer
-`zolazun vebemel hezom blagayul.`
+`zalazun vebemol hezem blagayul.`
 
-z-Olazun | v-peek | [h-although | bl-guard]
+z-Alazun | v-peek | [h-although | bl-guard]
 
-*Despite* takes a noun: put the guard in a `bl-` word right after **`hezom`**. With **`blarl`**, `zagayul` becomes a whole sentence of its own.
+*Despite* takes a noun: put the guard in a `bl-` word right after **`hezem`**. With **`blarl`**, `zagayul` becomes a whole sentence of its own.
 :::
 
-**2.** *Uzozen tells Olazun that a guard runs.* <!-- lint: error -->`zuzozen bolazun darl vezuyel zagayul varuvel.`
+**2.** *Azozon tells Alazun that a guard runs.* <!-- lint: error -->`zazozon balazun darl vezuyol zagayul veruvol.`
 
 ::: details Show answer
-`zuzozen vezuyel bolazun darl zagayul varuvel.`
+`zazozon vezuyol balazun darl zagayul veruvol.`
 
-z-Uzozen | v-tell | b-Olazun | d-that-clause | z-guard | v-run
+z-Azozon | v-tell | b-Alazun | d-that-clause | z-guard | v-run
 
 **`darl`** goes last in the main sentence, after the verb, so the sentence it stands for starts right after it.
 :::

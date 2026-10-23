@@ -4,19 +4,19 @@ Recipes for English *as for*, *whose*, *different from*, official titles, and po
 
 ## Talking about someone {#someone}
 
-### As for (`hahugem`) {#as-for}
+### As for (`hehugom`) {#as-for}
 
 **Needs:** [Adverbs](/clause#adverbs-h) · [Extra nouns](/clause#extra-nouns)
 
-English *as for X* or *regarding X* names who or what the sentence is about, even when X is not the subject or object. In Agebon, put **`hahugem`** *as for* in `/h/` and X in a `bl-` word right after it: `hahugem bluzozen` is *as for Uzozen*. The rest of the sentence keeps its free order. (cue: #️⃣ *hash*: a hashtag marks what the post is about.)
+English *as for X* or *regarding X* names who or what the sentence is about, even when X is not the subject or object. In Agebon, put **`hehugom`** *as for* in `/h/` and X in a `bl-` word right after it: `hehugom blazozon` is *as for Azozon*. The rest of the sentence keeps its free order. (cue: #️⃣ *hash*: a hashtag marks what the post is about.)
 
-> `hahugem bluzozen zolazun dagozol vawebol.`
+> `hehugom blazozon zalazun dogozel vayebel.`
 >
-> [h-as-for | bl-Uzozen] | z-Olazun | d-cat | v-see
+> [h-as-for | bl-Azozon] | z-Alazun | d-cat | v-see
 >
-> "As for Uzozen, Olazun sees a cat."
+> "As for Azozon, Alazun sees a cat."
 
-**Compare with:** *as for* frames this one sentence and leaves the talk's topic alone. English *now, about Uzozen* sets the [topic](/topic#topic) from here on (`xuzozen`).
+**Compare with:** *as for* frames this one sentence and leaves the talk's topic alone. English *now, about Azozon* sets the [topic](/topic#topic) from here on (`xazozon`).
 
 ### Which noun, with resume and kinds
 <a id="which-noun-intermediate"></a>
@@ -25,29 +25,29 @@ English *as for X* or *regarding X* names who or what the sentence is about, eve
 
 Beginner already used two sentences for English *who / that / which*. Prefer [resume **-r**](/pronouns#resume-r) in the second sentence.
 
-> `zagayul vuhohol. zuzozen vezuyel bagayur.`
+> `zagayul vehohel. zazozon vezuyol bagayur.`
 >
-> z-guard | v-sit . z-Uzozen | v-tell | b-←guard
+> z-guard | v-sit . z-Azozon | v-tell | b-←guard
 >
-> "A guard sits. Uzozen talks to that guard."
+> "A guard sits. Azozon talks to that guard."
 
-> `zuzozen dudozol vawebol al babohal. zudozor varuvel.`
+> `zazozon dodozel vayebel al babahal. zodozer veruvol.`
 >
-> z-Uzozen | d-dog | v-see | [in | b-bank] . z-←dog | v-run
+> z-Azozon | d-dog | v-see | [in | b-bank] . z-←dog | v-run
 >
-> "Uzozen sees a dog in a bank. The dog runs."
+> "Azozon sees a dog in a bank. The dog runs."
 
 A place, tool, or *of*-relation on the noun is still an extra-noun [hook](/hooks#extra-noun) or hosted `/ɡ/` + `/b/` (*the guard [in](/hooks#extra-noun) a bank*, *a book written [with a hammer](/hooks#extra-noun)*). A one-place role (*a guard who sits*, *a place where someone sleeps*) is a [role compound](/roles#role-compounds) on `/ɡ/` with a non-resume ending; add **`the`** for a usual role (*a teacher*), the same pattern as *is a teacher*. Resume **-r** on that compound is **this instance** (*the one teaching*), not the occupation. A noun in the middle of an act (*a fighting guard*) is the plain event root on `/ɡ/` ([in progress](/predication#in-progress)).
 
-> `zuzozen dagayul gwuzuhohol vawebol.`
+> `zazozon dagayul gwuzehohel vayebel.`
 >
-> z-Uzozen | [d-guard | g-episode-agent-chair] | v-see
+> z-Azozon | [d-guard | g-episode-agent-chair] | v-see
 >
-> "Uzozen sees a guard who sits."
+> "Azozon sees a guard who sits."
 
-For English *whose*, resume the person after the [whose hook **`om`**](/extra-noun-hooks#genitive) in the second sentence. Use **`gogunum`** instead when the point is that the guard legally owns it.
+For English *whose*, resume the person after the [whose hook **`om`**](/extra-noun-hooks#genitive) in the second sentence. Use **`gegunum`** instead when the point is that the guard legally owns it.
 
-> `zagayul vuhohol. zudozol om bagayur varuvel.`
+> `zagayul vehohel. zodozel om bagayur veruvol.`
 >
 > z-guard | v-sit . [z-dog | [used-by | b-←guard]] | v-run
 >
@@ -55,29 +55,29 @@ For English *whose*, resume the person after the [whose hook **`om`**](/extra-no
 
 English can pack this into one sentence: *The guard whose dog runs sits.*
 
-English uses the same *who* clause for two jobs. When it picks out **which** one (*the guard who sits*, not the other guard), use the two-sentence pattern or a role compound, as above. When it only adds extra information about someone already known (*Uzozen, who walks, sings*), put that information in a noun [aside](/spans#asides-th) **`g(…)`** right after the noun.
+English uses the same *who* clause for two jobs. When it picks out **which** one (*the guard who sits*, not the other guard), use the two-sentence pattern or a role compound, as above. When it only adds extra information about someone already known (*Azozon, who walks, sings*), put that information in a noun [aside](/spans#asides-th) **`g(…)`** right after the noun.
 
-> `zuzozen g(zuzozer vowurel) vezuyol.`
+> `zazozon g(zazozor vowurol) vozuyel.`
 >
-> [z-Uzozen | g-ASIDE[z-←Uzozen | v-walk]] | v-sing
+> [z-Azozon | g-ASIDE[z-←Azozon | v-walk]] | v-sing
 >
-> "Uzozen, who walks, sings."
+> "Azozon, who walks, sings."
 
-**Compare with:** ordinary `guhohol` is *chair* / *position* as a property, not *sitting*: the root's everyday sense is a chair, not an event, so it has no [in-progress](/predication#in-progress) reading. For *sitting*, use the role word `gwuzuhohol`. [Restrictors](/restrictors) say when a **claim** counts (*never*, *only when it rains*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](/left-bound#complex-chaining)).
+**Compare with:** ordinary `gehohel` is *chair* / *position* as a property, not *sitting*: the root's everyday sense is a chair, not an event, so it has no [in-progress](/predication#in-progress) reading. For *sitting*, use the role word `gwuzehohel`. [Restrictors](/restrictors) say when a **claim** counts (*never*, *only when it rains*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](/left-bound#complex-chaining)).
 
-### Stacked owners (*Uzozen's dog's bone*) {#stacked-owners}
+### Stacked owners (*Azozon's dog's bone*) {#stacked-owners}
 
 **Needs:** [Whose (`om`)](/extra-noun-hooks#genitive) · [Sequence `ao`](/rank-joins#sequence-ao)
 
 When English stacks possessives, keep one **`om`** and list every owner in its `/b/`, closed by the sequence join **`baol`**. Put the **nearest** owner first: the first `/b/` uses the host, and each later `/b/` keeps the one before it.
 
-> `zobel om budozol buzozen baol.`
+> `zobol om bodozel bazozon baol.`
 >
-> [z-bone | [used-by | [b-dog | b-Uzozen | b-in-order]]]
+> [z-bone | [used-by | [b-dog | b-Azozon | b-in-order]]]
 >
-> "Uzozen's dog's bone."
+> "Azozon's dog's bone."
 
-**Compare with:** a set join in the same slot (`budozol buzozen bal`) says both use the bone directly. Only the sequence says *the dog's bone, and Uzozen's dog*.
+**Compare with:** a set join in the same slot (`bodozel bazozon bal`) says both use the bone directly. Only the sequence says *the dog's bone, and Azozon's dog*.
 
 ### *The day when …* {#day-when}
 
@@ -85,67 +85,67 @@ When English stacks possessives, keep one **`om`** and list every owner in its `
 
 English *the day when* / *the place where* is two sentences. Name the time or place first, then resume it with **-r** in `/h/` in the next sentence: *on that day*.
 
-> `zolazun vawebol duzurem. zuzozen vowurel huzurer.`
+> `zalazun vayebel dazurom. zazozon vowurol hazuror.`
 >
-> z-Olazun | v-see | d-day . z-Uzozen | v-walk | h-←day
+> z-Alazun | v-see | d-day . z-Azozon | v-walk | h-←day
 >
-> "Olazun sees the day when Uzozen walks."
+> "Alazun sees the day when Azozon walks."
 
 ### Different from {#different}
 
 **Needs:** [Similative](/relations#similative) · [Negation `u`](/joins#negation-u)
 
-For *unlike* / *different from*, use the [similative](/relations#similative) **`gewom`** with the model in `/b/`, then close it with a negating join **`gul`**. The match to the model is denied.
+For *unlike* / *different from*, use the [similative](/relations#similative) **`gewem`** with the model in `/b/`, then close it with a negating join **`gul`**. The match to the model is denied.
 
-> `zuzozen gewom blolazun gul.`
+> `zazozon gewem blalazun gul.`
 >
-> z-Uzozen | [[g-like | bl-Olazun] | g-not]
+> z-Azozon | [[g-like | bl-Alazun] | g-not]
 >
-> "Uzozen is different from Olazun."
+> "Azozon is different from Alazun."
 
 ### *What someone did* {#free-relative-what}
 
 **Needs:** [The undergoer (`d`)](/roles#the-undergoer-d) · [This instance (`-r`)](/roles#this-instance-r)
 
-English *what* in *Olazun sees what Uzozen writes* names the thing an event happened to, with no noun for it. State that event first, then point back at its undergoer with the **`u`** role compound in **-r**: *the thing written*.
+English *what* in *Alazun sees what Azozon writes* names the thing an event happened to, with no noun for it. State that event first, then point back at its undergoer with the **`u`** role compound in **-r**: *the thing written*.
 
-> `zuzozen varayel. zolazun vawebol dwudarayer.`
+> `zazozon varuyol. zalazun vayebel dwudaruyor.`
 >
-> z-Uzozen | v-write . z-Olazun | v-see | d-←episode-patient-write
+> z-Azozon | v-write . z-Alazun | v-see | d-←episode-patient-write
 >
-> "Olazun sees what Uzozen writes."
+> "Alazun sees what Azozon writes."
 
-Keep the two verbs different. **-r** points at the latest matching event, so `zolazun vawebol dwudawebor` would point at Olazun's own seeing.
+Keep the two verbs different. **-r** points at the latest matching event, so `zalazun vayebel dwudayeber` would point at Alazun's own seeing.
 
 **Compare with:** `dar` is *something* (a new, unnamed thing), not the thing from an event already said.
 
-### *Someone's act* (*Uzozen's walk*) {#someones-act}
+### *Someone's act* (*Azozon's walk*) {#someones-act}
 
 **Needs:** [Which person or thing](/dependents#which-noun) · [Resume](/pronouns#resume-r) · [Of relations](/of-relations#of-relations) · [Negation](/joins#negation-u)
 
-English *'s* on an act (*Uzozen's walk*, *the monkey's tricks*) names who did it. **`om`** is for things in someone's use, and an act is not one. Say the act as its own sentence first, then resume its verb root with **-r** in the next sentence: *that walk*.
+English *'s* on an act (*Azozon's walk*, *the monkey's tricks*) names who did it. **`om`** is for things in someone's use, and an act is not one. Say the act as its own sentence first, then resume its verb root with **-r** in the next sentence: *that walk*.
 
-> `zuzozen vowurel. zolazun dowurer vawebol.`
+> `zazozon vowurol. zalazun dowuror vayebel.`
 >
-> z-Uzozen | v-walk . z-Olazun | d-←walk | v-see
+> z-Azozon | v-walk . z-Alazun | d-←walk | v-see
 >
-> "Olazun sees Uzozen's walk."
+> "Alazun sees Azozon's walk."
 
 When the act was denied (`vul`), the resume points at the act **as denied**: the not-doing. That is how English *the forgetting* or *the failure to call* comes back after *did not remember* or *did not call*.
 
-> `zuzozen dolazun vevum vul. zevur gabedom.`
+> `zazozon dalazun vevum vul. zevur gubedem.`
 >
-> z-Uzozen | d-Olazun | [v-memory | v-not] . z-←memory | g-mishap
+> z-Azozon | d-Alazun | [v-memory | v-not] . z-←memory | g-mishap
 >
-> "Uzozen didn't remember Olazun. The forgetting was a mishap."
+> "Azozon didn't remember Alazun. The forgetting was a mishap."
 
 When the thing only comes **from** B (*the sound of the drums*), use origin **`gaham`** + `/b/` instead.
 
-> `zolazun dadowol gaham bludoralx vebal.`
+> `zalazun dadowel gaham bladoralx vebal.`
 >
-> z-Olazun | [d-audio | [g-origin | bl-drum-x]] | v-hear
+> z-Alazun | [d-audio | [g-origin | bl-drum-x]] | v-hear
 >
-> "Olazun hears the sound of the drums."
+> "Alazun hears the sound of the drums."
 
 ### Named handles {#named-handles}
 
@@ -153,7 +153,7 @@ When the thing only comes **from** B (*the sound of the drums*), use origin **`g
 
 A long official title (bureau, act, titled group) may have a **handle**: one published root plus **-n**, used like any proper name, including on first mention. The long form is the same office spelled as a hyphenated name (`ROOT x ROOT` … + **-n**).
 
-> `zanan vezuyel.`
+> `zanan vezuyol.`
 >
 > z-Anan | v-tell
 >
@@ -162,18 +162,18 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 | Agebon | Use | English |
 |--------|-----|---------|
 | `zanan` | handle: one root + **-n** | default talk, including first mention |
-| `zanaxolazun` | long title: hyphenated name (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
+| `zanaxalazun` | long title: hyphenated name (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
 | `z@_nl` | initials: each title root's first consonant, as a letter code | short name of the same office, like *FBI* |
 
-> `zanaxolazun.`
+> `zanaxalazun.`
 >
-> z-Ana-x-Olazun
+> z-Ana-x-Alazun
 >
 > "Book-Courage" (the office's full title)
 
 Resume the handle like any name: its whole stem + **-r** (`zanar`).
 
-**Compare with:** a [mention](/span-mention#mention) is the **word** (`glegel z[ana]` = *the word “ana”*). A foreign code whose letters all have Agebon letters is a native [letter code](/numbers-applied#letter-codes) (`z_v16` *F-16*); one with a letter Agebon lacks stays an opaque span (<code>z@&lt;FBI&gt;</code>).
+**Compare with:** a [mention](/span-mention#mention) is the **word** (`glegol z[ana]` = *the word “ana”*). A foreign code whose letters all have Agebon letters is a native [letter code](/numbers-applied#letter-codes) (`z_v16` *F-16*); one with a letter Agebon lacks stays an opaque span (<code>z@&lt;FBI&gt;</code>).
 
 ### An English name as Agebon {#english-name}
 
@@ -181,15 +181,15 @@ Resume the handle like any name: its whole stem + **-r** (`zanar`).
 
 English *Japan* as a place already has a published root: write `azabanan`. English *Sam* as a person is either a published root you pick as a name, a respelling that follows the English sound, or a span that keeps the original letters.
 
-> `zolazun dazabanan vawebol.`
+> `zalazun dazabanan vayebel.`
 >
-> z-Olazun | d-Azabanan | v-see
+> z-Alazun | d-Azabanan | v-see
 >
-> "Olazun sees Japan."
+> "Alazun sees Japan."
 
 To keep *Sam* as English spelling, write the span. To see the Agebon sound-spelling, type the name in the [lexicon](lexicon.md#respell).
 
-> <code>z@&lt;Sam&gt; vowurel.</code>
+> <code>z@&lt;Sam&gt; vowurol.</code>
 >
 > z-NAME.OPAQUE["Sam"] | v-walk
 >
@@ -201,9 +201,9 @@ To keep *Sam* as English spelling, write the span. To see the Agebon sound-spell
 
 **Needs:** [Role compounds (the doer)](/roles#role-compounds) · [One time or a practice](/roles#one-time-or-a-practice) · [Saying someone is a teacher](/roles#saying-someone-is-a-teacher) · [The role you act in](/viewpoint#capacity)
 
-English names a person by what they usually do (*a singer*, *a manager*). Agebon builds that noun from the event root: person letter, **`w`**, the practiced-role scope **`e`**, the doer **`z`**, the root, then the ending ([one time or a practice](/roles#one-time-or-a-practice)). `zwozezuyol` is *a singer* from `ezuyol` *sing*, and on `/ɡ/` (`gwozezuyol`) it says someone is one. With scope **`a`**, `zwuzezuyol` is only *someone who sings*. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
+English names a person by what they usually do (*a singer*, *a manager*). Agebon builds that noun from the event root: person letter, **`w`**, the practiced-role scope **`e`**, the doer **`z`**, the root, then the ending ([one time or a practice](/roles#one-time-or-a-practice)). `zwozozuyel` is *a singer* from `ozuyel` *sing*, and on `/ɡ/` (`gwozozuyel`) it says someone is one. With scope **`a`**, `zwuzozuyel` is only *someone who sings*. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
 
-> `zwozeluyel varayel.`
+> `zwozeluyol varuyol.`
 >
 > z-role-agent-learn | v-write
 >
@@ -211,104 +211,104 @@ English names a person by what they usually do (*a singer*, *a manager*). Agebon
 
 | Agebon | English | Same root as |
 |--------|---------|--------------|
-| `zwozeluyel` | *student* / *pupil* | `eluyel` *learn* |
-| `zwozuduyel` | *teacher* / *professor* / *coach* | `uduyel` *teach* |
-| `zwozaruyel` | *researcher* | `aruyel` *research* |
-| `zwozanalawebol` | *reader* | `analawebol` *read* |
-| `zwozegavalunewol` | *driver* | `egavalunewol` *drive* |
-| `zwozehorelezuyel` | *poet* | `ehorelezuyel` *poetry* |
-| `zwozaralobolol` | *investor* | `aralobolol` *investment* |
-| `zwozaralamuyal` | *employee* | `aralamuyal` *employment* |
-| `zwobaralamuyal` | *employer* (the one the work is done for) | `aralamuyal` *employment* |
+| `zwozeluyol` | *student* / *pupil* | `eluyol` *learn* |
+| `zwozeduyol` | *teacher* / *professor* / *coach* | `eduyol` *teach* |
+| `zwozuruyol` | *researcher* | `uruyol` *research* |
+| `zwozanalayebel` | *reader* | `analayebel` *read* |
+| `zwozugavalanewel` | *driver* | `ugavalanewel` *drive* |
+| `zwozehorolezuyol` | *poet* | `ehorolezuyol` *poetry* |
+| `zwozaralabolel` | *investor* | `aralabolel` *investment* |
+| `zwozaralomuyal` | *employee* | `aralomuyal` *employment* |
+| `zwobaralomuyal` | *employer* (the one the work is done for) | `aralomuyal` *employment* |
 | `zwuzayal` | *participant* | `ayal` *handshake* |
-| `zwozugobel` | *leader* / *chairman* / *president* | `ugobel` *crown* |
-| `zwozurel` | *director* | `urel` *compass* |
-| `zwozaduyel` | *manager* / *executive* / *operator* | `aduyel` *administrate* |
-| `zwozalowel` | *adviser* / *consultant* | `alowel` *lantern* |
+| `zwozegobol` | *leader* / *chairman* / *president* | `egobol` *crown* |
+| `zwozurol` | *director* | `urol` *compass* |
+| `zwozuduyol` | *manager* / *executive* / *operator* | `uduyol` *administrate* |
+| `zwozolowol` | *adviser* / *consultant* | `olowol` *lantern* |
 | `zwuzunal` | *voter* | `unal` *ballot* |
-| `zwozuhuyel` | *critic* | `uhuyel` *judge* |
-| `zwozamuyal` | *maker* / *producer* / *manufacturer* | `amuyal` *manufacture* |
+| `zwozuhuyol` | *critic* | `uhuyol` *judge* |
+| `zwozomuyal` | *maker* / *producer* / *manufacturer* | `omuyal` *manufacture* |
 | `zwozunonal` | *reporter* / *journalist* | `unonal` *newspaper* |
-| `zwuzugol` | *witness* / *reference* (one who vouches) | `ugol` *attest* |
-| `zwozarayel` | *writer* | `arayel` *write* |
-| `zwozahurel` | *analyst* | `ahurel` *bar-chart* |
-| `zwozuguyol` | *designer* | `uguyol` *craft* |
-| `zwozeguyel` | *engineer* | `eguyel` *construct* |
-| `zwozobebul` | *doctor* | `obebul` *pill* |
-| `zwozezuyol` | *singer* | `ezuyol` *sing* |
-| `zwozehorel` | *musician* | `ehorel` *sheet-music* |
+| `zwuzugel` | *witness* / *reference* (one who vouches) | `ugel` *attest* |
+| `zwozaruyol` | *writer* | `aruyol` *write* |
+| `zwozahurol` | *analyst* | `ahurol` *bar-chart* |
+| `zwozeyuyel` | *designer* | `eyuyel` *craft* |
+| `zwozoguyol` | *engineer* | `oguyol` *construct* |
+| `zwozebebul` | *doctor* | `ebebul` *pill* |
+| `zwozozuyel` | *singer* | `ozuyel` *sing* |
+| `zwozehorol` | *musician* | `ehorol` *sheet-music* |
 | `zwozeyul` | *actor* | `eyul` *theater* |
-| `zwuzeyahal` | *player* | `eyahal` *playground* |
-| `zwozuzuval` | *athlete* | `uzuval` *sport* |
+| `zwuzebohal` | *player* | `ebohal` *playground* |
+| `zwozozuval` | *athlete* | `ozuval` *sport* |
 | `zwuzowunal` | *competitor* | `owunal` *water-polo* |
-| `zwuzeverel` | *winner* | `everel` *victory* |
-| `zwozegobel` | *supporter* / *sponsor* | `egobel` *crutch* |
+| `zwuzeverol` | *winner* | `everol` *victory* |
+| `zwozagobol` | *supporter* / *sponsor* | `agobol` *crutch* |
 | `zwozolamal` | *lover* | `olamal` *love* |
-| `zwozuwodal` | *servant* / *server* / *assistant* | `uwodal` *plate* |
+| `zwozuyodal` | *servant* / *server* / *assistant* | `uyodal` *plate* |
 | `zwozuzubal` | *worker* | `uzubal` *sweat* |
 | `zwozehal` | *dealer* | `ehal` *currency-exchange* |
-| `zwuzemahel` | *immigrant* | `emahel` *immigration* |
+| `zwuzemahol` | *immigrant* | `emahol` *immigration* |
 | `zwuzebal` | *audience* (those who hear) | `ebal` *ear* |
-| `zwozoyayul` | *terrorist* | `oyayul` *ogre* |
-| `zwuzehavam` | *tourist* | `ehaval` *ship* |
-| `zwozaheham` | *neighbor* (add `em buwon` for *near me*) | `ahehal` *house* |
-| `zwozobayel` | *officer* (police) | `obayel` *police* |
-| `zwozagahem` | *official* / *minister* | `agahem` *institution* |
-| `zwozahalagahel` | *politician* | `ahalagahel` *government* |
+| `zwozogayul` | *terrorist* | `ogayul` *ogre* |
+| `zwuzahavam` | *tourist* | `ahaval` *ship* |
+| `zwozoheham` | *neighbor* (add `em buwen` for *near me*) | `ohehal` *house* |
+| `zwozebayol` | *officer* (police) | `ebayol` *police* |
+| `zwozogahom` | *official* / *minister* | `ogahom` *institution* |
+| `zwozahalogahol` | *politician* | `ahalogahol` *government* |
 | `zwozenal` | *secretary* (keeps the ledger) | `enal` *ledger* |
-| `zwozobewem` | *artist* | `obewem` *artistry* |
-| `zwuzogunum` | *owner* | `ogunum` *ownership* |
-| `zwozonel` | *historian* | `onel` *scroll* |
+| `zwozubewom` | *artist* | `ubewom` *artistry* |
+| `zwuzegunum` | *owner* | `egunum` *ownership* |
+| `zwozonol` | *historian* | `onol` *scroll* |
 | `zwozogowam` | *consumer* | `ogowam` *consumption* |
-| `zwuzubaval` | *passenger* / *rider* (of a bus) | `ubaval` *bus* |
+| `zwuzebaval` | *passenger* / *rider* (of a bus) | `ebaval` *bus* |
 | `zwozuzubalx` | *staff* / *personnel* (workers as a set) | `uzubal` *sweat* |
 | `zwudunal` | *candidate* (the one voted for) | `unal` *ballot* |
 | `zwubehal` | *customer* / *purchaser* (the other party of a trade) | `ehal` *currency-exchange* |
-| `zwubobulem` | *host* (the other party of a hospitality tie) | `obulem` *hospitality* |
+| `zwubabulom` | *host* (the other party of a hospitality tie) | `abulom` *hospitality* |
 
-Rows with scope **`a`** name a part in one event (*winner*, *witness*, *passenger*), so that vowel is enough. The one acted on uses part **`d`**: `zwudenamul` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zwuzebalx`).
+Rows with scope **`a`** name a part in one event (*winner*, *witness*, *passenger*), so that vowel is enough. The one acted on uses part **`d`**: `zwudenemul` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zwuzebalx`).
 
-A noun that specifies the job goes in the stem: `zwozudozoxowurel` is *a dog walker*. The noun's part in the job is as open as in English.
+A noun that specifies the job goes in the stem: `zwozodozexowurol` is *a dog walker*. The noun's part in the job is as open as in English.
 
-English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwozuduyel` is *as a teacher* ([the role you act in](/viewpoint#capacity)). `hwuozuduyel` is *not as a teacher*, speaking off duty.
+English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwozeduyol` is *as a teacher* ([the role you act in](/viewpoint#capacity)). `hwuozeduyol` is *not as a teacher*, speaking off duty.
 
-**Compare with:** *like a teacher* is the [similative](/relations#similative) (`hewom blwozuduyel`).
+**Compare with:** *like a teacher* is the [similative](/relations#similative) (`hewem blwozeduyol`).
 
-*Shareholder* is *owner* of a part: `zwuzogunum gobem blahehal` (owner of a part of the house). *Colleague* is a worker tied to you: `zwozuzubal gohuyam bluwon`. *Relative* is a person who is part of the family: `zeyol gobem blavayal`.
+*Shareholder* is *owner* of a part: `zwuzegunum gobom blohehal` (owner of a part of the house). *Colleague* is a worker tied to you: `zwozuzubal gohuyam bluwen`. *Relative* is a person who is part of the family: `zeyel gobom bluvayal`.
 
-**Compare with:** for *boss* or *chief*, the tie form names whom they lead: `zolazun gugobem bluzozen` is *Olazun is Uzozen's boss* ([social relations](/social-ties#social-relations)).
+**Compare with:** for *boss* or *chief*, the tie form names whom they lead: `zalazun gegobom blazozon` is *Alazun is Azozon's boss* ([social relations](/social-ties#social-relations)).
 
 ### Kin words {#kin-words}
 
 **Needs:** [Kin](/initials#kin-generations) · [Adjectives `/ɡ/`](/clause#adjectives-ɡ)
 
-English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family tree and a sex. Agebon says the layer with the kin number and the sex with **`gemugol`** *male* or **`gevugol`** *female*, after `zeyol` *person*. Put the person the tie is from in a `bl-` word right after the number.
+English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family tree and a sex. Agebon says the layer with the kin number and the sex with **`gemugel`** *male* or **`guvugel`** *female*, after `zeyel` *person*. Put the person the tie is from in a `bl-` word right after the number.
 
-> `zeyol gevugol growamol bluzozen.`
+> `zeyel guvugel growamol blazozon.`
 >
-> [z-person | g-female | [g-#-e0 | bl-Uzozen]]
+> [z-person | g-female | [g-#-e0 | bl-Azozon]]
 >
-> "Uzozen's sister."
+> "Azozon's sister."
 
 | English | Agebon |
 |---------|--------|
-| *mother* / *mom* | `zeyol gevugol growubal bluzozen` |
-| *father* / *dad* | `zeyol gemugol growubal bluzozen` |
-| *brother* | `zeyol gemugol growamol bluzozen` |
-| *sister* | `zeyol gevugol growamol bluzozen` |
-| *aunt* (a sister of a parent) | `zeyol gevugol growamol bleyol growubal bluzozen` |
-| *grandmother* (a parent of a parent) | `zeyol gevugol growubal bleyol growubal bluzozen` |
+| *mother* / *mom* | `zeyel guvugel growubal blazozon` |
+| *father* / *dad* | `zeyel gemugel growubal blazozon` |
+| *brother* | `zeyel gemugel growamol blazozon` |
+| *sister* | `zeyel guvugel growamol blazozon` |
+| *aunt* (a sister of a parent) | `zeyel guvugel growamol bleyel growubal blazozon` |
+| *grandmother* (a parent of a parent) | `zeyel guvugel growubal bleyel growubal blazozon` |
 | *generation* | the kin number itself: `growubal` parents, `growamol` siblings, `growabal` children |
 
-For *uncle* and *grandfather*, use `gemugol` for `gevugol`.
+For *uncle* and *grandfather*, use `gemugel` for `guvugel`.
 
 ### Young, male and female animals {#young-animals}
 
 **Needs:** [Adjectives `/ɡ/`](/clause#adjectives-ɡ)
 
-English *puppy*, *kitten*, *mare* and *ewe* each pack an animal together with its age or sex. Agebon says the animal's root, then an adjective: **`gahoyel`** *young* (the child root), **`geboyel`** *newborn* (the baby root), **`gevugol`** *female*, **`gemugol`** *male*. These are the same adjectives the [kin words](#kin-words) use for *sister* and *brother*.
+English *puppy*, *kitten*, *mare* and *ewe* each pack an animal together with its age or sex. Agebon says the animal's root, then an adjective: **`gohoyol`** *young* (the child root), **`geboyol`** *newborn* (the baby root), **`guvugel`** *female*, **`gemugel`** *male*. These are the same adjectives the [kin words](#kin-words) use for *sister* and *brother*.
 
-> `zudozol gahoyel vowurel.`
+> `zodozel gohoyol vowurol.`
 >
 > [z-dog | g-child] | v-walk
 >
@@ -316,27 +316,27 @@ English *puppy*, *kitten*, *mare* and *ewe* each pack an animal together with it
 
 Adjectives stack, so a female lamb is sheep, young, female.
 
-> `zuzozen dehozal gahoyel gevugol vawebol.`
+> `zazozon duhozal gohoyol guvugel vayebel.`
 >
-> z-Uzozen | [d-sheep | g-child | g-female] | v-see
+> z-Azozon | [d-sheep | g-child | g-female] | v-see
 >
-> "Uzozen sees a female lamb."
+> "Azozon sees a female lamb."
 
 | English | Agebon |
 |---------|--------|
-| *puppy* | `zudozol gahoyel` |
-| *kitten* | `zagozol gahoyel` |
-| *lamb* | `zehozal gahoyel` |
-| *foal* | `zohazel gahoyel` |
-| *duckling* | `zudozal gahoyel` |
-| *newborn calf* | `zagazal geboyel` |
-| *mare* | `zohazel gevugol` |
-| *stallion* | `zohazel gemugol` |
-| *ewe* | `zehozal gevugol` |
-| *lioness* | `zolazul gevugol` |
-| *hen* | `zuhozal gevugol` |
+| *puppy* | `zodozel gohoyol` |
+| *kitten* | `zogozel gohoyol` |
+| *lamb* | `zuhozal gohoyol` |
+| *foal* | `zohazol gohoyol` |
+| *duckling* | `zadozal gohoyol` |
+| *newborn calf* | `zagazal geboyol` |
+| *mare* | `zohazol guvugel` |
+| *stallion* | `zohazol gemugel` |
+| *ewe* | `zuhozal guvugel` |
+| *lioness* | `zalazul guvugel` |
+| *hen* | `zahozal guvugel` |
 
-Some young and some males already have a root of their own. Use it: `zuhezel` *chick* and `zarozel` *rooster*. A young animal that looks like a different creature has its own dictionary word too, such as `zubezelabezul` *caterpillar*.
+Some young and some males already have a root of their own. Use it: `zehezol` *chick* and `zurozol` *rooster*. A young animal that looks like a different creature has its own dictionary word too, such as `zavezolabezul` *caterpillar*.
 
 ### Buying and selling {#buy-sell}
 
@@ -344,17 +344,17 @@ Some young and some males already have a root of their own. Use it: `zuhezel` *c
 
 English *buy* and *sell* are two views of one swap. Agebon has one trading verb, `veham`, and **`heham`** names what is given in return. Put what changes hands in `/d/` and what it is swapped for in `/b/`. Money in `/d/` and the goods in `/b/` is *buy*; the goods in `/d/` and money in `/b/` is *sell*.
 
-> `zuzozen daral heham blanal veham.`
+> `zazozon daral heham blanal veham.`
 >
-> z-Uzozen | d-money | [h-in-exchange-for | bl-book] | v-convertibility
+> z-Azozon | d-money | [h-in-exchange-for | bl-book] | v-convertibility
 >
-> "Uzozen buys a book."
+> "Azozon buys a book."
 
-> `zuzozen danal heham blaral veham.`
+> `zazozon danal heham blaral veham.`
 >
-> z-Uzozen | d-book | [h-in-exchange-for | bl-money] | v-convertibility
+> z-Azozon | d-book | [h-in-exchange-for | bl-money] | v-convertibility
 >
-> "Uzozen sells a book."
+> "Azozon sells a book."
 
 *Sale*, *purchase* and *trade* name the same swap as a noun; say it as the sentence, then [point back](/dependents#which-noun) to it.
 
@@ -362,46 +362,46 @@ English *buy* and *sell* are two views of one swap. Agebon has one trading verb,
 
 **Needs:** [The extra `/b/` party (`o`)](/roles#role-compounds) · [Extra noun (`ol`, `om`)](/hooks#extra-noun) · [Exchange](/relations#exchange) · [Coordinated lists](/rank-joins#respectively) · [Fault](/fault#fault)
 
-English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Agebon keeps the giving verb `vewal` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in plain `/b/` after the verb ([recipient](/clause#extra-nouns)). To name the parties from the verb itself, use the [role compounds](/roles#role-compounds): **`zwuzewal`** is the giver (*supplier*, *provider*) and **`zwubewal`** is the recipient (*receiver*). **-r** (`zwubewar`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vegeral` (*credit*, with the *lend* sense): the borrower is the recipient.
+English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Agebon keeps the giving verb `vewal` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in plain `/b/` after the verb ([recipient](/clause#extra-nouns)). To name the parties from the verb itself, use the [role compounds](/roles#role-compounds): **`zwuzewal`** is the giver (*supplier*, *provider*) and **`zwubewal`** is the recipient (*receiver*). **-r** (`zwubewar`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vogeral` (*credit*, with the *lend* sense): the borrower is the recipient.
 
 | English | Agebon | Reading |
 |---------|--------|---------|
-| *give* / *provide* / *contribute* / *submit* / *hand in* | `zuzozen danal vewal bolazun.` | the book goes to Olazun |
+| *give* / *provide* / *contribute* / *submit* / *hand in* | `zazozon danal vewal balazun.` | the book goes to Alazun |
 | *get* / *receive* / *acquire* (a thing handed over) | the same sentence | the receiver is the `/b/` |
 | *giver* / *supplier* / *provider* | `zwuzewal` | doer of the giving |
 | *receiver* | `zwubewal` | the one given to |
-| *lend* / *borrow* | `zuzozen danal vegeral bolazun.` | the book is lent to Olazun |
-| *borrower* | `zwubegeral` | the one lent to |
-| *distribute* | `zuzozen danal vewal bolazun bahelan bal.` | the book goes to each of them |
-| *earn* | `zuzozen varayel heham blaral.` | write in exchange for money |
-| *owe* | `zuzozen garam blolazun.` | in debt to Olazun |
-| *get* (go after something) | `zuzozen vowurel ol banal.` | walk for the book |
-| *contribute money* | `zuzozen daral vewal ol bavayal.` | give money for a family's sake |
+| *lend* / *borrow* | `zazozon danal vogeral balazun.` | the book is lent to Alazun |
+| *borrower* | `zwubogeral` | the one lent to |
+| *distribute* | `zazozon danal vewal balazun bahelan bal.` | the book goes to each of them |
+| *earn* | `zazozon varuyol heham blaral.` | write in exchange for money |
+| *owe* | `zazozon garam blalazun.` | in debt to Alazun |
+| *get* (go after something) | `zazozon vowurol ol banal.` | walk for the book |
+| *contribute money* | `zazozon daral vewal ol buvayal.` | give money for a family's sake |
 | *contribute to* (be part of the cause) | `…therar barl …` | one share among several causes |
 
-> `zuzozen danal vewal bolazun.`
+> `zazozon danal vewal balazun.`
 >
-> z-Uzozen | d-book | v-present | b-Olazun
+> z-Azozon | d-book | v-present | b-Alazun
 >
-> "Uzozen gives Olazun a book." / "Olazun gets a book from Uzozen."
+> "Azozon gives Alazun a book." / "Alazun gets a book from Azozon."
 
-> `zuzozen varayel heham blaral.`
+> `zazozon varuyol heham blaral.`
 >
-> z-Uzozen | v-write | [h-in-exchange-for | bl-money]
+> z-Azozon | v-write | [h-in-exchange-for | bl-money]
 >
-> "Uzozen earns money by writing."
+> "Azozon earns money by writing."
 
-> `zuzozen garam blolazun.`
+> `zazozon garam blalazun.`
 >
-> z-Uzozen | [g-debt | bl-Olazun]
+> z-Azozon | [g-debt | bl-Alazun]
 >
-> "Uzozen owes Olazun."
+> "Azozon owes Alazun."
 
-> `zuzozen danal vewal bolazun bahelan bal.`
+> `zazozon danal vewal balazun bahelan bal.`
 >
-> z-Uzozen | d-book | v-present | [b-Olazun | b-Ahelan | b-and]
+> z-Azozon | d-book | v-present | [b-Alazun | b-Ahelan | b-and]
 >
-> "Uzozen gives a book to Olazun and Ahelan."
+> "Azozon gives a book to Alazun and Ahelan."
 
 **Compare with:** *buy* and *sell* are the [swap](#buy-sell). *For* as a *get meant to reach B* is the hook `ol`, and `om` says it has already reached B and is in B's use.
 
@@ -413,49 +413,49 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 
 | English | Agebon | Reading |
 |---------|--------|---------|
-| *join* / *associate with* (come along) | `zuzozen vowurel han blolazun.` | walks in company with Olazun |
-| *join* / *admit* (take into a set) | `zuzozen dugedam vaen.` | admits the object; more may follow |
-| *belong to* | `zanal om bolazun.` | in Olazun's use |
-| *consist of* / *made of* | `zahehal gulem blulel.` | material |
-| *comprise* / *constitute* / *is part of* | `zehowol gobem blahehal.` | a piece of the whole |
-| *match* / *correspond to* / *fit* (alike) | `zahehal hewom bludozol.` | like, as a simile |
-| *replace* / *substitute* | `zuzozen danal heham blehowol veham.` | swaps one for the other |
-| *represent* (act for) | `zuzozen hanom blolazun vezuyel.` | tells on behalf of Olazun |
-| *prefer* | `zuzozen danal von.` | ranks the object first |
-| *would rather X than Y* / *prefer doing X to Y* | `zuzozen vowurel varuvel vol.` | walking outranks running |
-| *lack* / *miss* (a need) | `zuzozen vebom.` | needs |
-| *fill* / *complete* | `zuzozen danal vuhuram.` | makes complete |
-| *recognize* / *acknowledge* | `zuzozen dolazun vewuyam.` | acknowledges Olazun |
-| *distinguish* / *classify* | `zuzozen dolazun vulenom.` | sorts Olazun by kind |
-| *cope* / *survive* | `zuzozen vagezum.` | is resilient |
-| *enable* | `zolazun vowurexal thewem bluzozen.` | Olazun can walk, Uzozen makes that happen |
-| *assist* / *help* (as a servant) | `zuzozen vuwodal dolazun.` | serves Olazun |
-| *consult* | `zuzozen vezuyelalobal dolazun.` | talks with the expert |
-| *shoot* | `zuzozen vugevul.` | uses the gun root |
-| *involve* / *include* (among others) | `zuzozen vowurel am bolazun.` | walks, Olazun among those involved |
-| *apply* / *use* (a tool) | `zuzozen vowurel aol behowol.` | walks using the hammer |
-| *agree with* | `zuzozen dolazun vonamel.` | nods to Olazun |
-| *disagree with* | `zuzozen dolazun vonamel vul.` | does not nod to Olazun |
+| *join* / *associate with* (come along) | `zazozon vowurol han blalazun.` | walks in company with Alazun |
+| *join* / *admit* (take into a set) | `zazozon dugedam vaen.` | admits the object; more may follow |
+| *belong to* | `zanal om balazun.` | in Alazun's use |
+| *consist of* / *made of* | `zohehal gulom blulol.` | material |
+| *comprise* / *constitute* / *is part of* | `zohowel gobom blohehal.` | a piece of the whole |
+| *match* / *correspond to* / *fit* (alike) | `zohehal hewem blodozel.` | like, as a simile |
+| *replace* / *substitute* | `zazozon danal heham blohowel veham.` | swaps one for the other |
+| *represent* (act for) | `zazozon hanem blalazun vezuyol.` | tells on behalf of Alazun |
+| *prefer* | `zazozon danal von.` | ranks the object first |
+| *would rather X than Y* / *prefer doing X to Y* | `zazozon vowurol veruvol vol.` | walking outranks running |
+| *lack* / *miss* (a need) | `zazozon vebem.` | needs |
+| *fill* / *complete* | `zazozon danal vahuram.` | makes complete |
+| *recognize* / *acknowledge* | `zazozon dalazun vowuyam.` | acknowledges Alazun |
+| *distinguish* / *classify* | `zazozon dalazun valenem.` | sorts Alazun by kind |
+| *cope* / *survive* | `zazozon vagezum.` | is resilient |
+| *enable* | `zalazun vowuroxal thewom blazozon.` | Alazun can walk, Azozon makes that happen |
+| *assist* / *help* (as a servant) | `zazozon vuyodal dalazun.` | serves Alazun |
+| *consult* | `zazozon vezuyolalobal dalazun.` | talks with the expert |
+| *shoot* | `zazozon vagevul.` | uses the gun root |
+| *involve* / *include* (among others) | `zazozon vowurol am balazun.` | walks, Alazun among those involved |
+| *apply* / *use* (a tool) | `zazozon vowurol aol bohowel.` | walks using the hammer |
+| *agree with* | `zazozon dalazun venamol.` | nods to Alazun |
+| *disagree with* | `zazozon dalazun venamol vul.` | does not nod to Alazun |
 
-> `zuzozen vowurel han blolazun.`
+> `zazozon vowurol han blalazun.`
 >
-> z-Uzozen | v-walk | [h-including | bl-Olazun]
+> z-Azozon | v-walk | [h-including | bl-Alazun]
 >
-> "Uzozen walks with Olazun."
+> "Azozon walks with Alazun."
 
-> `zuzozen danal von.`
+> `zazozon danal von.`
 >
-> z-Uzozen | d-book | v-prioritizes
+> z-Azozon | d-book | v-prioritizes
 >
-> "Uzozen prefers the book."
+> "Azozon prefers the book."
 
-> `zuzozen vowurel varuvel vol.`
+> `zazozon vowurol veruvol vol.`
 >
-> z-Uzozen | [v-walk | v-run | v-rank/more]
+> z-Azozon | [v-walk | v-run | v-rank/more]
 >
-> "Uzozen would rather walk than run."
+> "Azozon would rather walk than run."
 
-**Compare with:** *or rather* (correcting what you just said) is the revision hook [`ol`](/hooks#rather-el), not a preference. *Belong to* as legal ownership is `gogunum` ([of relations](/of-relations#of-relations)). *Represent* as *stand for* a symbol is not proxy, and has no recipe here.
+**Compare with:** *or rather* (correcting what you just said) is the revision hook [`ol`](/hooks#rather-el), not a preference. *Belong to* as legal ownership is `gegunum` ([of relations](/of-relations#of-relations)). *Represent* as *stand for* a symbol is not proxy, and has no recipe here.
 
 ### Piece, species, gender, patient, function, size, way {#thing-nouns}
 
@@ -465,38 +465,38 @@ English makes nouns for a part, a kind, a role, and a manner. Agebon has no sepa
 
 | English | Agebon | Reading |
 |---------|--------|---------|
-| *piece* / *fragment* / *feature* | `zehowol gobem blahehal.` | a part of the whole |
-| *cluster* / *bunch* | the kind with **-x**: `zudozolx` | a set here ([group words](say-amounts.md#group-words)) |
-| *species* / *kind* (the category) | `zulenom` | classification |
-| *the dodo* / *the wolf* (the species itself) | `zuan gedozol` | [the kind itself](/universals-domains#kind-reference) |
-| *gender* / *sex* (the category) | `zevugom zemugom zam.` | the open pair female, male |
+| *piece* / *fragment* / *feature* | `zohowel gobom blohehal.` | a part of the whole |
+| *cluster* / *bunch* | the kind with **-x**: `zodozelx` | a set here ([group words](say-amounts.md#group-words)) |
+| *species* / *kind* (the category) | `zalenem` | classification |
+| *the dodo* / *the wolf* (the species itself) | `zuan gedozel` | [the kind itself](/universals-domains#kind-reference) |
+| *gender* / *sex* (the category) | `zuvugem zemugem zam.` | the open pair female, male |
 | *sex* (the act) | `zelemam` | sexuality |
-| *patient* (being treated) | `zwuduhemul` | the one who undergoes healing |
-| *scene* (where it happens) | `zuzozen vowurel el bahehal. zolazun vuhohol er.` | the place already named: *there* |
+| *patient* (being treated) | `zwudohemul` | the one who undergoes healing |
+| *scene* (where it happens) | `zazozon vowurol el bohehal. zalazun vehohel er.` | the place already named: *there* |
 | *function* (purpose) | `zanal guwathom.` | the book's purpose is competence |
-| *size* (how big) | `zanal zehowol zoel gelazom.` | same size as the hammer |
-| *way* / *method* / *style* / *mode* | the manner adverb on `/h/` | `zuzozen vowurel hedurem.` |
+| *size* (how big) | `zanal zohowel zoel gelazem.` | same size as the hammer |
+| *way* / *method* / *style* / *mode* | the manner adverb on `/h/` | `zazozon vowurol hadurom.` |
 | *instance* / *for example* | `ael …` opens the sentence | one case of what you said |
 | *everybody* | `zual` | every member |
-| *absence* | `zawuvol gul` | not present |
-| *poverty* | `zuzozen gegomam gul.` | not wealthy |
-| *weakness* | `zuzozen gobobom gul.` | not strong |
-| *friendship* | `zumayam` | companionship |
+| *absence* | `zuzuvel gul` | not present |
+| *poverty* | `zazozon gegumam gul.` | not wealthy |
+| *weakness* | `zazozon gabobem gul.` | not strong |
+| *friendship* | `zamayam` | companionship |
 | *event* / *incident* / *phenomenon* | "what happened", a [free relative](#free-relative-what) | the event as a clause |
 
-> `zevugom zemugom zam.`
+> `zuvugem zemugem zam.`
 >
 > [z-feminine | z-masculine | z-and.open]
 >
 > "Gender." (the feminine, the masculine, and any others)
 
-> `zuzozen vowurel hedurem.`
+> `zazozon vowurol hadurom.`
 >
-> z-Uzozen | v-walk | h-haste
+> z-Azozon | v-walk | h-haste
 >
-> "Uzozen walks in a hasty way."
+> "Azozon walks in a hasty way."
 
-**Compare with:** *piece of* as a fragment of a text is the same part relation with the text in `/b/`. A story character is an ordinary person noun (`zeyol`), not this.
+**Compare with:** *piece of* as a fragment of a text is the same part relation with the text in `/b/`. A story character is an ordinary person noun (`zeyel`), not this.
 
 ### Case, deal, figure, board and other several-sense nouns {#sense-nouns}
 
@@ -506,104 +506,104 @@ An English noun like *case* or *board* covers several jobs, and Agebon has a dif
 
 | English | Agebon | Reading |
 |---------|--------|---------|
-| *case* (*in that case*) | `thohom blarl` | if |
-| *case* (lawsuit) | `zuhuyelabeval` | a problem put before a judge |
-| *case* (container) | `zobogal` | a package |
-| *deal* / *bargain* (a swap) | `zuzozen danal heham blaral veham.` | trades a book for money |
-| *deal* (*a great deal*) | `thubem zol gral` | more than the usual amount |
-| *bid* / *offer* (a price) | `zuzozen daral vewal heham blanal.` | offers money in exchange for the book |
+| *case* (*in that case*) | `thohem blarl` | if |
+| *case* (lawsuit) | `zuhuyolobeval` | a problem put before a judge |
+| *case* (container) | `zubogal` | a package |
+| *deal* / *bargain* (a swap) | `zazozon danal heham blaral veham.` | trades a book for money |
+| *deal* (*a great deal*) | `thubom zol gral` | more than the usual amount |
+| *bid* / *offer* (a price) | `zazozon daral vewal heham blanal.` | offers money in exchange for the book |
 | *contract* (agreement) | `hwudal` on the clause | they signed on: a binding yes |
-| *figure out* / *find out* | `zuzozen danal vumewol.` | finds the object |
-| *figure* (shape) | `zuvogal` | a frame |
+| *figure out* / *find out* | `zazozon danal vumewel.` | finds the object |
+| *figure* (shape) | `zevogal` | a frame |
 | *object* (a thing) | `zar` | an unnamed thing |
 | *object* (a goal) | `zoval` | a goal |
 | *object* (grammatical) | `/d/` | done to ([role letters](/clause#role-letters)) |
-| *board* (committee) | `zahunal` | a team |
-| *board* (plank) | `zulel` | wood |
-| *series* / *round* (a cycle) | `zarugem` | cycle |
+| *board* (committee) | `zuhunal` | a team |
+| *board* (plank) | `zulol` | wood |
+| *series* / *round* (a cycle) | `zoregom` | cycle |
 | *operation* (an activity) | `zezobam` | activity |
-| *operation* (arithmetic) | `zuborem` | calculation |
-| *do* + a noun (*do the dishes*) | `zuzozen duwodalx vayabal.` | the act itself in the verb slot: washes the plates |
-| *do something* | `zuzozen var.` | an unnamed act |
-| *What is Uzozen doing?* | `yel var zuzozen.` | a [fill-ask](/questions#fill-ask) for the act |
-| *application* (use) | hook `aol` + tool | `zuzozen vowurel aol behowol.` |
-| *application* (software) | `zobogal` | a package |
-| *campaign* | `zuzozen vavuvum herem blenulul.` | struggles during a period |
+| *operation* (arithmetic) | `zaborom` | calculation |
+| *do* + a noun (*do the dishes*) | `zazozon duyodalx vababal.` | the act itself in the verb slot: washes the plates |
+| *do something* | `zazozon var.` | an unnamed act |
+| *What is Azozon doing?* | `yel var zazozon.` | a [fill-ask](/questions#fill-ask) for the act |
+| *application* (use) | hook `aol` + tool | `zazozon vowurol aol bohowel.` |
+| *application* (software) | `zubogal` | a package |
+| *campaign* | `zazozon vuvuvum herom blanulul.` | struggles during a period |
 | *behavior* | `zezobam` | the activity, or a manner adverb |
-| *population* | `zeyolx gaham blahal` | people of the country |
+| *population* | `zeyelx gaham blahal` | people of the country |
 | *reference* (point back) | `dwuder` | a role pointer to the last thing done to |
 | *principle* | `zonam` | a policy |
-| *furniture* | `zuhohol zobahol zam` | chair, bed, and maybe more |
-| *emotion* / *feeling* (in general) | `zabolohalal` | the water of the heart |
-| *emotional* | `gabolohalal` | of the heart's water |
-| *verb* | `zezuyelezobal` | the word for an action |
-| *noun* | `zezuyelanenol` | the word that names a thing |
-| *density* | `zehazologoral` | bulk packed into an extent |
-| *afternoon* | `zuzureladurul` | the late part of the day |
-| *popular* | `golamalehazol` | loved by the many |
+| *furniture* | `zehohel zoyahel zam` | chair, bed, and maybe more |
+| *emotion* / *feeling* (in general) | `zabelohalal` | the water of the heart |
+| *emotional* | `gabelohalal` | of the heart's water |
+| *verb* | `zezuyolezobal` | the word for an action |
+| *noun* | `zezuyolanenel` | the word that names a thing |
+| *density* | `zuhazelagoral` | bulk packed into an extent |
+| *afternoon* | `zazuroladurul` | the late part of the day |
+| *popular* | `golamaluhazel` | loved by the many |
 | *user* | `zwuzahebal` | doer with the hand |
-| *sentence* (a punishment) / *punishment* / *penalty* | `zobayemenamul` | harm from authority |
-| *punish* | `zuzozen dobayemenamul vewal bolazun.` | gives Olazun a penalty ([give](#give-get)) |
+| *sentence* (a punishment) / *punishment* / *penalty* | `zebayomenemul` | harm from authority |
+| *punish* | `zazozon debayomenemul vewal balazun.` | gives Alazun a penalty ([give](#give-get)) |
 | *set* (a group of things) | `zanalx` | books as a group ([group words](say-amounts.md#group-words)) |
-| *abortion* | `zawayalogahal` | a pregnancy ended |
+| *abortion* | `zonayalegohal` | a pregnancy ended |
 | *available* | `gwubewaxal` | can be the recipient of a gift |
-| *independent* | `gebom gahum blolazun gul` | does not depend on Olazun |
-| *independent* (of everyone) | `zuzozen gebom gahum blur gul.` | depends on no other |
-| *straight* (direct) | `gurem` | direction |
-| *hang* | `zuzozen dolazun vawuladuhel.` | holds Olazun from above |
-| *editor* | `zwuzebeweloruyol` | doer of the editing |
-| *closely* | `zuzozen vawebol hazavem hul.` | looks, not at a distance |
-| *briefly* | `zuzozen vowurel bazerem gram.` | walks for about five seconds |
-| *wherever* | `el bual gahehal` | everywhere houses are |
-| *alone* (without company) | `zuzozen vowurel huan blur.` | walks without any other |
-| *single* (unmarried) | `zuzozen guwuram gul.` | not in union |
+| *independent* | `gebem gahum blalazun gul` | does not depend on Alazun |
+| *independent* (of everyone) | `zazozon gebem gahum blur gul.` | depends on no other |
+| *straight* (direct) | `gurom` | direction |
+| *hang* | `zazozon dalazun vawuloduhol.` | holds Alazun from above |
+| *editor* | `zwuzobewoluruyel` | doer of the editing |
+| *closely* | `zazozon vayebel huzavom hul.` | looks, not at a distance |
+| *briefly* | `zazozon vowurol bazerom gram.` | walks for about five seconds |
+| *wherever* | `el bual gohehal` | everywhere houses are |
+| *alone* (without company) | `zazozon vowurol huan blur.` | walks without any other |
+| *single* (unmarried) | `zazozon guwuram gul.` | not in union |
 | *income* / *revenue* | `zaralanonal` | money incoming |
-| *definition* / *meaning* | `zezuyelomal` | the meaning |
-| *mood* | `zabolohalal` | the heart's water |
-| *apply* (put on, as lotion) | `zuzozen duzozen volubal.` | tends to self |
-| *attribute* / *characterize* | `zuzozen dolazun vulenom.` | sorts Olazun by kind |
-| *various* / *diverse* | `gurulem` | diversity |
-| *regular* | `gurugem` | repeating |
-| *suffer* | `zuzozen vagamum.` | feels anguish |
-| *undergo* (treatment, a change) | `duzozen vuhemul.` | Uzozen is the one healed; the doer stays unnamed |
-| *reality* / *fact* | `zumugom` | the fact |
-| *real* / *actual* | `gumugom` | factual |
+| *definition* / *meaning* | `zezuyolomal` | the meaning |
+| *mood* | `zabelohalal` | the heart's water |
+| *apply* (put on, as lotion) | `zazozon dazozon volubal.` | tends to self |
+| *attribute* / *characterize* | `zazozon dalazun valenem.` | sorts Alazun by kind |
+| *various* / *diverse* | `gurulom` | diversity |
+| *regular* | `gerugom` | repeating |
+| *suffer* | `zazozon vagamum.` | feels anguish |
+| *undergo* (treatment, a change) | `dazozon vohemul.` | Azozon is the one healed; the doer stays unnamed |
+| *reality* / *fact* | `zunugem` | the fact |
+| *real* / *actual* | `gunugem` | factual |
 | *variation* / *distinction* | the [different-from](#different) sentence | says how they differ |
-| *distinct* / *separate* / *apart* | `gezewum` | separated |
-| *distinguish* / *tell apart* | `zuzozen dolazun vezewum.` | separates Olazun out |
+| *distinct* / *separate* / *apart* | `gozewum` | separated |
+| *distinguish* / *tell apart* | `zazozon dalazun vozewum.` | separates Alazun out |
 | *tendency* | `huam` on the verb | usually, as a rule |
-| *cent* | `zoderol g-100` | a hundredth of a dollar |
-| *middle* / *central* | `zabol gobem blorahel` | the heart of the road |
-| *international* | `zahehal gedam blahal blahal bal` | between two countries |
-| *dependent on* | `zuzozen gebom gahum blolazun.` | depends on Olazun |
-| *favorite* | `zolamalugulel` | the one loved first |
-| *count* / *total up* | `zuzozen vuborem.` | calculates |
-| *total* / *sum* (the amount) | `zoburam` | the addition |
-| *qualify* | `zuzozen valobam.` | is expert enough |
-| *criticize* | `zuzozen dolazun vuhuyem.` | judges Olazun |
-| *critical* (fault-finding) | `guhuyem` | judging |
-| *ride* (a bus) | `zuzozen vubaval.` | rides the bus |
-| *environment* / *surroundings* | `zahehamogugal` | the world seen as the home around you |
+| *cent* | `zuderel g-100` | a hundredth of a dollar |
+| *middle* / *central* | `zabel gobom blorahol` | the heart of the road |
+| *international* | `zohehal gedam blahal blahal bal` | between two countries |
+| *dependent on* | `zazozon gebem gahum blalazun.` | depends on Alazun |
+| *favorite* | `zolamalugulol` | the one loved first |
+| *count* / *total up* | `zazozon vaborom.` | calculates |
+| *total* / *sum* (the amount) | `zeburam` | the addition |
+| *qualify* | `zazozon valobam.` | is expert enough |
+| *criticize* | `zazozon dalazun vuhuyom.` | judges Alazun |
+| *critical* (fault-finding) | `guhuyom` | judging |
+| *ride* (a bus) | `zazozon vebaval.` | rides the bus |
+| *environment* / *surroundings* | `zohehamogugal` | the world seen as the home around you |
 | *efficiency* | `zuvahamuzubal` | output for the effort |
-| *holder* (a thing that holds) | `zahebalamobal` | what holds in the hand |
-| *holder* (a person who bears) | `zwuzamobal` | doer of the bearing |
-| *intervention* | `zuzozen vavobel hedam blolazun blahelan bal.` | comes between the two |
-| *reduce* | `zuzozen danal v-3.` | decreases the object by three |
-| *reduce* (cut down) | `zuzozen danal vagowul.` | cuts it |
+| *holder* (a thing that holds) | `zahebalayobal` | what holds in the hand |
+| *holder* (a person who bears) | `zwuzayobal` | doer of the bearing |
+| *intervention* | `zazozon vavobol hedam blalazun blahelan bal.` | comes between the two |
+| *reduce* | `zazozon danal v-3.` | decreases the object by three |
+| *reduce* (cut down) | `zazozon danal vagowul.` | cuts it |
 | *rough* (approximate) | `gram` | about five |
-| *rough* (texture) | `gunedol gul` | not smooth |
+| *rough* (texture) | `gabedel gul` | not smooth |
 
-> `zuzozen daral vewal heham blanal.`
+> `zazozon daral vewal heham blanal.`
 >
-> z-Uzozen | d-money | v-present | [h-in-exchange-for | bl-book]
+> z-Azozon | d-money | v-present | [h-in-exchange-for | bl-book]
 >
-> "Uzozen offers money for the book."
+> "Azozon offers money for the book."
 
-> `zuzozen danal vagowul.`
+> `zazozon danal vagowul.`
 >
-> z-Uzozen | d-book | v-axe
+> z-Azozon | d-book | v-axe
 >
-> "Uzozen cuts the book down."
+> "Azozon cuts the book down."
 
 ### Contribution, acquisition, murder, comparison and other act nouns {#act-nouns}
 
@@ -617,46 +617,46 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 | *contribution* (what is given) / *acquisition* (what is got) | `zwudewal` | the thing the giving happens to |
 | *that contribution* / *that acquisition* | `dewar` / `dwudewar` | the latest giving, or what it passed on |
 | *contribution* (a share in a cause) | `thahur blarl` | one share among several causes |
-| *representation* (acting for someone) | `zuzozen ganom blolazun` | Uzozen, on behalf of Olazun |
-| *reaction* / *response* | `zogewem` | the answer to what unlocked it |
-| *react to* | `zuzozen derulal vogewem.` | answers the rain |
-| *murder* (a wrongful killing) | `zolazun vezobul thahul blarl zuzozen vugevul.` | a death, and the fault is Uzozen's shooting |
-| *comparison* / *contrast* (setting two against each other) | `zezom` | contrast |
-| *compare A with B* | `zuzozen dolazun vezom bahelan.` | sets Olazun against Ahelan |
-| *preference* (the one preferred) | `zolamalugulel` | the one loved first |
-| *tendency* (a type across scenes) | `zalamuthal` | lying as a type: a tendency to lie |
-| *a liar type* (the person) | `zwazalamul` | someone who lies, as a type |
-| *tends to* / *often lies* | `zuzozen valamul huam.` | usually lies |
-| *a lying type* | `zuzozen valamuthal.` | the type-claim |
-| *introduction* (the act) | `zolazun veluyel duzozen thewem blahelan.` | Olazun learns Uzozen, Ahelan makes it happen |
-| *introduction* (opening of a text) | `zugulel gobem blanal` | the first part of a book |
-| *unemployment* | `zuzozen garalamuyal gul.` | not in paid production |
+| *representation* (acting for someone) | `zazozon ganem blalazun` | Azozon, on behalf of Alazun |
+| *reaction* / *response* | `zegewom` | the answer to what unlocked it |
+| *react to* | `zazozon derulal vegewom.` | answers the rain |
+| *murder* (a wrongful killing) | `zalazun vuzobul thahul blarl zazozon vagevul.` | a death, and the fault is Azozon's shooting |
+| *comparison* / *contrast* (setting two against each other) | `zezem` | contrast |
+| *compare A with B* | `zazozon dalazun vezem bahelan.` | sets Alazun against Ahelan |
+| *preference* (the one preferred) | `zolamalugulol` | the one loved first |
+| *tendency* (a type across scenes) | `zulamuthal` | lying as a type: a tendency to lie |
+| *a liar type* (the person) | `zwazulamul` | someone who lies, as a type |
+| *tends to* / *often lies* | `zazozon vulamul huam.` | usually lies |
+| *a lying type* | `zazozon vulamuthal.` | the type-claim |
+| *introduction* (the act) | `zalazun veluyol dazozon thewom blahelan.` | Alazun learns Azozon, Ahelan makes it happen |
+| *introduction* (opening of a text) | `zugulol gobom blanal` | the first part of a book |
+| *unemployment* | `zazozon garalomuyal gul.` | not in paid production |
 
-> `zolazun danal vewal buzozen. zuzozen dewar vawebol.`
+> `zalazun danal vewal bazozon. zazozon dewar vayebel.`
 >
-> z-Olazun | d-book | v-present | b-Uzozen . z-Uzozen | d-←present | v-see
+> z-Alazun | d-book | v-present | b-Azozon . z-Azozon | d-←present | v-see
 >
-> "Olazun gave Uzozen a book. Uzozen sees that gift." (the giving, not the book)
+> "Alazun gave Azozon a book. Azozon sees that gift." (the giving, not the book)
 
-> `zuzozen derulal vogewem.`
+> `zazozon derulal vegewom.`
 >
-> z-Uzozen | d-rain | v-solution
+> z-Azozon | d-rain | v-solution
 >
-> "Uzozen reacts to the rain."
+> "Azozon reacts to the rain."
 
-> `zolazun vezobul thahul blarl zuzozen vugevul.`
+> `zalazun vuzobul thahul blarl zazozon vagevul.`
 >
-> z-Olazun | v-die | [th-because.fault | bl-that-clause] | z-Uzozen | v-gun
+> z-Alazun | v-die | [th-because.fault | bl-that-clause] | z-Azozon | v-gun
 >
-> "Uzozen murdered Olazun." (shot dead; the death is Uzozen's fault)
+> "Azozon murdered Alazun." (shot dead; the death is Azozon's fault)
 
-> `zuzozen dolazun vezom bahelan.`
+> `zazozon dalazun vezem bahelan.`
 >
-> z-Uzozen | d-Olazun | v-contrast | b-Ahelan
+> z-Azozon | d-Alazun | v-contrast | b-Ahelan
 >
-> "Uzozen compares Olazun with Ahelan."
+> "Azozon compares Alazun with Ahelan."
 
-**Compare with:** a ranking (*Uzozen is more challenging than Olazun*) is the [rank join](/comparatives#comparatives), not **`vezom`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](/prescription#sake-preference); **`zolamalugulel`** names the one chosen. *Often* / *usually* is a [restrictor](/restrictors) (`huam`, `war`). A type across scenes is [label scope](/label-seams#scope-type) **`thu`**.
+**Compare with:** a ranking (*Azozon is more challenging than Alazun*) is the [rank join](/comparatives#comparatives), not **`vezem`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](/prescription#sake-preference); **`zolamalugulol`** names the one chosen. *Often* / *usually* is a [restrictor](/restrictors) (`huam`, `war`). A type across scenes is [label scope](/label-seams#scope-type) **`thu`**.
 
 ### Fair, keep, public, ride, admit and other leftover senses {#leftover-senses}
 
@@ -666,58 +666,58 @@ Some English words have a second or third sense that a published root already ca
 
 | English | Agebon | Reading |
 |---------|--------|---------|
-| *just* / *fair* (even-handed) | `zuzozen galurem.` | fair |
-| *last* (final) | `zuzozen gogaham.` | final |
-| *apply* / *application* (a request) | `zuzozen danal vobemem.` | pleads for the object |
-| *keep* / *retain* (an object) | `zuzozen danal vegom.` | preserves the book |
+| *just* / *fair* (even-handed) | `zazozon gulurom.` | fair |
+| *last* (final) | `zazozon gegoham.` | final |
+| *apply* / *application* (a request) | `zazozon danal vobemom.` | pleads for the object |
+| *keep* / *retain* (an object) | `zazozon danal vegem.` | preserves the book |
 | *experience* (skill) | `zuwam` | readiness |
-| *side* (position, location) | `zuhohom` | a position |
-| *address* (a location) | `zuhohom` | where it is |
-| *public* (open to everyone) | `zahehal gaen blual.` | a house open to all |
-| *character* (a trait) | `zevebom` | trace |
-| *special* (dear to one person) | `zuzozen golamam.` | cherished |
-| *fit* (healthy) | `zuzozen geredom.` | in health |
+| *side* (position, location) | `zehohem` | a position |
+| *address* (a location) | `zehohem` | where it is |
+| *public* (open to everyone) | `zohehal gaen blual.` | a house open to all |
+| *character* (a trait) | `zevebem` | trace |
+| *special* (dear to one person) | `zazozon golamam.` | cherished |
+| *fit* (healthy) | `zazozon goredem.` | in health |
 | *fit* (suits) | `guwatham` | a met need ([sake words](say-reasons.md#sake-words)) |
-| *match* (a contest) | `zazaham` | a contest |
-| *ride* (a horse, a bike) | `zuzozen vehavam aol bohazel.` | travels using the horse |
-| *admit* (acknowledge a fault) | `zuzozen damobal vewuyam.` | acknowledges the harm |
-| *directly* (without a go-between) | `gurem` | straight |
-| *set off* / *start* | `vebugem` | [starts](say-reasons.md#phase-verbs) |
-| *turn off* / *stop* | `vozohul` | [stops](say-reasons.md#phase-verbs) |
+| *match* (a contest) | `zuzeham` | a contest |
+| *ride* (a horse, a bike) | `zazozon vahavam aol bohazol.` | travels using the horse |
+| *admit* (acknowledge a fault) | `zazozon dayobal vowuyam.` | acknowledges the harm |
+| *directly* (without a go-between) | `gurom` | straight |
+| *set off* / *start* | `vebegom` | [starts](say-reasons.md#phase-verbs) |
+| *turn off* / *stop* | `vezohul` | [stops](say-reasons.md#phase-verbs) |
 
-> `zuzozen danal vegom.`
+> `zazozon danal vegem.`
 >
-> z-Uzozen | d-book | v-preservation
+> z-Azozon | d-book | v-preservation
 >
-> "Uzozen keeps the book."
+> "Azozon keeps the book."
 
-> `zuzozen vehavam aol bohazel.`
+> `zazozon vahavam aol bohazol.`
 >
-> z-Uzozen | v-voyage | [using | b-horse]
+> z-Azozon | v-voyage | [using | b-horse]
 >
-> "Uzozen rides the horse."
+> "Azozon rides the horse."
 
-**Compare with:** *ride* as a bus trip is `vubaval` ([sense nouns](#sense-nouns)). *Special* as *unusual* is a rank above the bar ([bar words](say-amounts.md#bar-words)). *Fair* in *a fair price* is `galurem`, and *fairly* as *quite* is `wadowom`.
+**Compare with:** *ride* as a bus trip is `vebaval` ([sense nouns](#sense-nouns)). *Special* as *unusual* is a rank above the bar ([bar words](say-amounts.md#bar-words)). *Fair* in *a fair price* is `gulurom`, and *fairly* as *quite* is `wadowem`.
 
 ### Other, another, different {#other-different}
 
 **Needs:** [Unspecified member](/joins#unspecified-member-r-phrase) · [Similative](/relations#similative) · [Different from](#different)
 
-English *another dog* and *the other one* name something outside the ones already in play. Put **`zur`** (*something else*) after the kind: `zudozol zur` is *another dog*. Resemblance is the similative: `gewom` + `/b/` is *similar to*, and `hewom` is *similarly*. Denying it with **`gul`** (or **`hul`** on an adverb) gives *different* and *differently*.
+English *another dog* and *the other one* name something outside the ones already in play. Put **`zur`** (*something else*) after the kind: `zodozel zur` is *another dog*. Resemblance is the similative: `gewem` + `/b/` is *similar to*, and `hewem` is *similarly*. Denying it with **`gul`** (or **`hul`** on an adverb) gives *different* and *differently*.
 
-> `zuzozen vawebol dudozol dur.`
+> `zazozon vayebel dodozel dur.`
 >
-> z-Uzozen | v-see | [d-dog | d-something-else]
+> z-Azozon | v-see | [d-dog | d-something-else]
 >
-> "Uzozen sees another dog."
+> "Azozon sees another dog."
 
 | English | Agebon |
 |---------|--------|
-| *similar* (*similar to Olazun*) | `gewom blolazun` |
-| *similarly* (*walks like Olazun*) | `hewom blolazun` |
-| *different* (*different from Olazun*) | `gewom blolazun gul` |
-| *differently* | `hewom blolazun hul` |
-| *differ* (*Uzozen and Olazun differ*) | `zuzozen zolazun zal gewom gul` |
+| *similar* (*similar to Alazun*) | `gewem blalazun` |
+| *similarly* (*walks like Alazun*) | `hewem blalazun` |
+| *different* (*different from Alazun*) | `gewem blalazun gul` |
+| *differently* | `hewem blalazun hul` |
+| *differ* (*Azozon and Alazun differ*) | `zazozon zalazun zal gewem gul` |
 
 For *how much* they differ, use a [measured differential](say-amounts.md#measured-differentials).
 
@@ -729,13 +729,13 @@ For *how much* they differ, use a [measured differential](say-amounts.md#measure
 
 English *himself*, *herself*, *itself* and *themself* say the object is the same one as the subject. Put the subject's resume (**-r**) in `/d/`. Agebon does not mark sex or number in the resume, so one form covers all of them. With plural **-x** on the subject and the resume it is *themselves*, and with the inclusive *we* (`zayan`) it is *ourselves*.
 
-> `zuzozen vawebol duzozer.`
+> `zazozon vayebel dazozor.`
 >
-> z-Uzozen | v-see | d-←Uzozen
+> z-Azozon | v-see | d-←Azozon
 >
-> "Uzozen sees themself."
+> "Azozon sees themself."
 
-> `zudozolx vawebol dudozorx.`
+> `zodozelx vayebel dodozerx.`
 >
 > z-dog-x | v-see | d-←dog-x-x
 >
@@ -747,7 +747,7 @@ English *himself*, *herself*, *itself* and *themself* say the object is the same
 >
 > "We hear ourselves." (you and I)
 
-**Compare with:** for *each other*, join the people and put `hehem` after the verb ([pronouns](/pronouns#resume-r)).
+**Compare with:** for *each other*, join the people and put `hehom` after the verb ([pronouns](/pronouns#resume-r)).
 
 ### Cross-role inventory {#cross-role-inventory}
 
@@ -755,7 +755,7 @@ English *himself*, *herself*, *itself* and *themself* say the object is the same
 
 Intermediate already recast one referent into a new slot. Each table is an **antecedent** role; rows are the **pronoun** role. The mechanism is still one **-r**.
 
-> `zudozol vowurel. zowurer gelazom.`
+> `zodozel vowurol. zowuror gelazem.`
 >
 > z-dog | v-walk . z-←walk | g-big
 >
@@ -775,47 +775,47 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 
 Examples:
 
-> `zuzozen vemowul. zolazun duzozer vawebol.`
+> `zazozon vemowul. zalazun dazozor vayebel.`
 >
-> z-Uzozen | v-mute . z-Olazun | d-←Uzozen | v-see
+> z-Azozon | v-mute . z-Alazun | d-←Azozon | v-see
 >
-> "Uzozen hits mute. Olazun sees Uzozen."
+> "Azozon hits mute. Alazun sees Azozon."
 
-> `zuzozen duzewol vemowul. zolazun vuzewor.`
+> `zazozon duzewel vemowul. zalazun vuzewer.`
 >
-> z-Uzozen | d-studio-mic | v-mute . z-Olazun | v-←studio-mic
+> z-Azozon | d-studio-mic | v-mute . z-Alazun | v-←studio-mic
 >
-> "Uzozen mutes a studio mic. Olazun does the same to it."
+> "Azozon mutes a studio mic. Alazun does the same to it."
 
-> `zerowol gelazom. zuzewol gerowor.`
+> `zarowel gelazem. zuzewel garower.`
 >
 > z-radio | g-big . z-studio-mic | g-←radio
 >
 > "A radio is big. A studio mic is of that kind." (the radio's kind)
 
-> `zerowol welazom gelazom. zuzewol werowor gelazom.`
+> `zarowel welazem gelazem. zuzewel warower gelazem.`
 >
 > z-radio | [w-very | g-big] . z-studio-mic | [w-←radio | g-big]
 >
 > "A radio is very big. A studio mic is that big too."
 
-> `zuzozen verowom. zolazun huzozer vemowul.`
+> `zazozon varowem. zalazun hazozor vemowul.`
 >
-> z-Uzozen | v-broadcast . z-Olazun | h-←Uzozen | v-mute
+> z-Azozon | v-broadcast . z-Alazun | h-←Azozon | v-mute
 >
-> "Uzozen broadcasts. Olazun hits mute on Uzozen's account."
+> "Azozon broadcasts. Alazun hits mute on Azozon's account."
 
-> `zuzozen vemowul. yuzozer.`
+> `zazozon vemowul. yazozor.`
 >
-> z-Uzozen | v-mute . y-←Uzozen
+> z-Azozon | v-mute . y-←Azozon
 >
-> "Uzozen hits mute. Hey, Uzozen!"
+> "Azozon hits mute. Hey, Azozon!"
 
-> `zuzozen vemowul. zolazun vanuvul. xuzozer varemul.`
+> `zazozon vemowul. zalazun vabuvul. xazozor veyamul.`
 >
-> z-Uzozen | v-mute . z-Olazun | v-punch . x-←Uzozen | v-scream
+> z-Azozon | v-mute . z-Alazun | v-punch . x-←Azozon | v-scream
 >
-> "Uzozen hits mute. Olazun throws a punch. Going back to Uzozen, Uzozen screams."
+> "Azozon hits mute. Alazun throws a punch. Going back to Azozon, Azozon screams."
 
 #### Antecedent was a verb (`/v/`)
 
@@ -831,47 +831,47 @@ Examples:
 
 Examples:
 
-> `zuzozen vemowul. zemowur gelazom.`
+> `zazozon vemowul. zemowur gelazem.`
 >
-> z-Uzozen | v-mute . z-←mute | g-big
+> z-Azozon | v-mute . z-←mute | g-big
 >
-> "Uzozen hits mute. That muting is big."
+> "Azozon hits mute. That muting is big."
 
-> `zuzozen vemowul. zolazun vemowur.`
+> `zazozon vemowul. zalazun vemowur.`
 >
-> z-Uzozen | v-mute . z-Olazun | v-←mute
+> z-Azozon | v-mute . z-Alazun | v-←mute
 >
-> "Uzozen hits mute. Olazun does so too."
+> "Azozon hits mute. Alazun does so too."
 
-> `zuzozen duzewol vemowul. zerowol gemowur.`
+> `zazozon duzewel vemowul. zarowel gemowur.`
 >
-> z-Uzozen | d-studio-mic | v-mute . z-radio | g-←mute
+> z-Azozon | d-studio-mic | v-mute . z-radio | g-←mute
 >
-> "Uzozen mutes a studio mic. A radio is muted too."
+> "Azozon mutes a studio mic. A radio is muted too."
 
-> `zuzozen vemowul. zerowol wemowur gelazom.`
+> `zazozon vemowul. zarowel wemowur gelazem.`
 >
-> z-Uzozen | v-mute . z-radio | [w-←mute | g-big]
+> z-Azozon | v-mute . z-radio | [w-←mute | g-big]
 >
-> "Uzozen hits mute. A radio is big as far as muting goes."
+> "Azozon hits mute. A radio is big as far as muting goes."
 
-> `zuzozen verowom. zolazun herowor vemowul.`
+> `zazozon varowem. zalazun harower vemowul.`
 >
-> z-Uzozen | v-broadcast . z-Olazun | h-←broadcast | v-mute
+> z-Azozon | v-broadcast . z-Alazun | h-←broadcast | v-mute
 >
-> "Uzozen broadcasts. By doing so, Olazun hits mute."
+> "Azozon broadcasts. By doing so, Alazun hits mute."
 
-> `zuzozen vemowul. yemowur.`
+> `zazozon vemowul. yemowur.`
 >
-> z-Uzozen | v-mute . y-←mute
+> z-Azozon | v-mute . y-←mute
 >
-> "Uzozen hits mute. Uzozen did that?!"
+> "Azozon hits mute. Azozon did that?!"
 
-> `zuzozen vemowul. zolazun vanuvul. xemowur zahelan varemul.`
+> `zazozon vemowul. zalazun vabuvul. xemowur zahelan veyamul.`
 >
-> z-Uzozen | v-mute . z-Olazun | v-punch . x-←mute | z-Ahelan | v-scream
+> z-Azozon | v-mute . z-Alazun | v-punch . x-←mute | z-Ahelan | v-scream
 >
-> "Uzozen hits mute. Olazun throws a punch. Going back to the muting, Ahelan screams."
+> "Azozon hits mute. Alazun throws a punch. Going back to the muting, Ahelan screams."
 
 #### Antecedent was an adjective (`/ɡ/`)
 
@@ -887,47 +887,47 @@ Examples:
 
 Examples:
 
-> `zerowol gerulel. zeruler varemul.`
+> `zarowel gerulol. zerulor veyamul.`
 >
 > z-radio | g-red . z-←red | v-scream
 >
 > "A radio is red. The red one screams."
 
-> `zahelan gerulel. zuzozen veruler.`
+> `zahelan gerulol. zazozon verulor.`
 >
-> z-Ahelan | g-red . z-Uzozen | v-←red
+> z-Ahelan | g-red . z-Azozon | v-←red
 >
-> "Ahelan is red. Uzozen goes red too."
+> "Ahelan is red. Azozon goes red too."
 
-> `zerowol gerulel. zuzewol geruler.`
+> `zarowel gerulol. zuzewel gerulor.`
 >
 > z-radio | g-red . z-studio-mic | g-←red
 >
 > "A radio is red. A studio mic is red too."
 
-> `zerowol welazom gerulel. zuzewol weruler gerulel.`
+> `zarowel welazem gerulol. zuzewel werulor gerulol.`
 >
 > z-radio | [w-very | g-red] . z-studio-mic | [w-←red | g-red]
 >
 > "A radio is very red. A studio mic is just as red."
 
-> `zerowol gerulel. zuzozen heruler verowom.`
+> `zarowel gerulol. zazozon herulor varowem.`
 >
-> z-radio | g-red . z-Uzozen | h-←red | v-broadcast
+> z-radio | g-red . z-Azozon | h-←red | v-broadcast
 >
-> "A radio is red. Uzozen broadcasts that way."
+> "A radio is red. Azozon broadcasts that way."
 
-> `zerowol gerulel. yeruler.`
+> `zarowel gerulol. yerulor.`
 >
 > z-radio | g-red . y-←red
 >
 > "A radio is red. Red?!"
 
-> `zerowol gerulel. zolazun vanuvul. xeruler zuzozen varemul.`
+> `zarowel gerulol. zalazun vabuvul. xerulor zazozon veyamul.`
 >
-> z-radio | g-red . z-Olazun | v-punch . x-←red | z-Uzozen | v-scream
+> z-radio | g-red . z-Alazun | v-punch . x-←red | z-Azozon | v-scream
 >
-> "A radio is red. Olazun throws a punch. Going back to the redness, Uzozen screams."
+> "A radio is red. Alazun throws a punch. Going back to the redness, Azozon screams."
 
 #### Antecedent was an adjective extra (`/w/`)
 
@@ -942,41 +942,41 @@ Examples:
 
 Examples:
 
-> `zerowol welazom gerulel. zolazun delazor vawebol.`
+> `zarowel welazem gerulol. zalazun delazer vayebel.`
 >
-> z-radio | [w-very | g-red] . z-Olazun | d-←very | v-see
+> z-radio | [w-very | g-red] . z-Alazun | d-←very | v-see
 >
-> "A radio is very red. Olazun sees that degree."
+> "A radio is very red. Alazun sees that degree."
 
-> `zerowol welazom gerulel. zuzewol gelazor.`
+> `zarowel welazem gerulol. zuzewel gelazer.`
 >
 > z-radio | [w-very | g-red] . z-studio-mic | g-←very
 >
 > "A radio is very red. A studio mic is very red too."
 
-> `zerowol welazom gerulel. zuzewol welazor gelazom.`
+> `zarowel welazem gerulol. zuzewel welazer gelazem.`
 >
 > z-radio | [w-very | g-red] . z-studio-mic | [w-←very | g-big]
 >
 > "A radio is very red. A studio mic is very big too."
 
-> `zerowol welazom gerulel. zuzozen helazor verowom.`
+> `zarowel welazem gerulol. zazozon helazer varowem.`
 >
-> z-radio | [w-very | g-red] . z-Uzozen | h-←very | v-broadcast
+> z-radio | [w-very | g-red] . z-Azozon | h-←very | v-broadcast
 >
-> "A radio is very red. Uzozen broadcasts to that degree."
+> "A radio is very red. Azozon broadcasts to that degree."
 
-> `zerowol welazom gerulel. yelazor.`
+> `zarowel welazem gerulol. yelazer.`
 >
 > z-radio | [w-very | g-red] . y-←very
 >
 > "A radio is very red. That much?!"
 
-> `zerowol welazom gerulel. zolazun vanuvul. xelazor zuzozen varemul.`
+> `zarowel welazem gerulol. zalazun vabuvul. xelazer zazozon veyamul.`
 >
-> z-radio | [w-very | g-red] . z-Olazun | v-punch . x-←very | z-Uzozen | v-scream
+> z-radio | [w-very | g-red] . z-Alazun | v-punch . x-←very | z-Azozon | v-scream
 >
-> "A radio is very red. Olazun punches. Going back to that degree, Uzozen screams."
+> "A radio is very red. Alazun punches. Going back to that degree, Azozon screams."
 
 #### Antecedent was an adverb (`/h/`)
 
@@ -992,47 +992,47 @@ Examples:
 
 Examples:
 
-> `zolazun hewom bluzozen vemowul. zahelan dewor vawebol.`
+> `zalazun hewem blazozon vemowul. zahelan dewer vayebel.`
 >
-> z-Olazun | [h-like | bl-Uzozen] | v-mute . z-Ahelan | d-←like | v-see
+> z-Alazun | [h-like | bl-Azozon] | v-mute . z-Ahelan | d-←like | v-see
 >
-> "Olazun hits mute like Uzozen. Ahelan sees that way of doing it."
+> "Alazun hits mute like Azozon. Ahelan sees that way of doing it."
 
-> `zolazun hewom bluzozen vemowul. zahelan vewor.`
+> `zalazun hewem blazozon vemowul. zahelan vewer.`
 >
-> z-Olazun | [h-like | bl-Uzozen] | v-mute . z-Ahelan | v-←like
+> z-Alazun | [h-like | bl-Azozon] | v-mute . z-Ahelan | v-←like
 >
-> "Olazun hits mute like Uzozen. Ahelan does it that way."
+> "Alazun hits mute like Azozon. Ahelan does it that way."
 
-> `zolazun hewom bluzozen vemowul. zuzewol gewor.`
+> `zalazun hewem blazozon vemowul. zuzewel gewer.`
 >
-> z-Olazun | [h-like | bl-Uzozen] | v-mute . z-studio-mic | g-←like
+> z-Alazun | [h-like | bl-Azozon] | v-mute . z-studio-mic | g-←like
 >
-> "Olazun hits mute like Uzozen. A studio mic is that way."
+> "Alazun hits mute like Azozon. A studio mic is that way."
 
-> `zolazun hewom bluzozen vemowul. zerowol wewor gelazom.`
+> `zalazun hewem blazozon vemowul. zarowel wewer gelazem.`
 >
-> z-Olazun | [h-like | bl-Uzozen] | v-mute . z-radio | [w-←like | g-big]
+> z-Alazun | [h-like | bl-Azozon] | v-mute . z-radio | [w-←like | g-big]
 >
-> "Olazun hits mute like Uzozen. A radio is big in that way."
+> "Alazun hits mute like Azozon. A radio is big in that way."
 
-> `zolazun hewom bluzozen vemowul. zahelan hewor verowom.`
+> `zalazun hewem blazozon vemowul. zahelan hewer varowem.`
 >
-> z-Olazun | [h-like | bl-Uzozen] | v-mute . z-Ahelan | h-←like | v-broadcast
+> z-Alazun | [h-like | bl-Azozon] | v-mute . z-Ahelan | h-←like | v-broadcast
 >
-> "Olazun hits mute like Uzozen. Ahelan broadcasts that way."
+> "Alazun hits mute like Azozon. Ahelan broadcasts that way."
 
-> `zolazun hewom bluzozen vemowul. yewor.`
+> `zalazun hewem blazozon vemowul. yewer.`
 >
-> z-Olazun | [h-like | bl-Uzozen] | v-mute . y-←like
+> z-Alazun | [h-like | bl-Azozon] | v-mute . y-←like
 >
-> "Olazun hits mute like Uzozen. Like that?!"
+> "Alazun hits mute like Azozon. Like that?!"
 
-> `zolazun hewom bluzozen vemowul. zuzozen vanuvul. xewor zahelan varemul.`
+> `zalazun hewem blazozon vemowul. zazozon vabuvul. xewer zahelan veyamul.`
 >
-> z-Olazun | [h-like | bl-Uzozen] | v-mute . z-Uzozen | v-punch . x-←like | z-Ahelan | v-scream
+> z-Alazun | [h-like | bl-Azozon] | v-mute . z-Azozon | v-punch . x-←like | z-Ahelan | v-scream
 >
-> "Olazun hits mute like Uzozen. Uzozen throws a punch. Going back to that manner, Ahelan screams."
+> "Alazun hits mute like Azozon. Azozon throws a punch. Going back to that manner, Ahelan screams."
 
 #### Antecedent was `/y/` or `/x/`
 
@@ -1044,23 +1044,23 @@ Examples:
 
 Examples:
 
-> `yuzozen. yuzozer.`
+> `yazozon. yazozor.`
 >
-> y-Uzozen . y-←Uzozen
+> y-Azozon . y-←Azozon
 >
-> "Uzozen! Uzozen!"
+> "Azozon! Azozon!"
 
-> `zuzozen vemowul. zolazun vanuvul. xuzozer varemul.`
+> `zazozon vemowul. zalazun vabuvul. xazozor veyamul.`
 >
-> z-Uzozen | v-mute . z-Olazun | v-punch . x-←Uzozen | v-scream
+> z-Azozon | v-mute . z-Alazun | v-punch . x-←Azozon | v-scream
 >
-> "Uzozen hits mute. Olazun throws a punch. Going back to Uzozen, Uzozen screams."
+> "Azozon hits mute. Alazun throws a punch. Going back to Azozon, Azozon screams."
 
-> `yolazun. zolazur varemul.`
+> `yalazun. zalazur veyamul.`
 >
-> y-Olazun . z-←Olazun | v-scream
+> y-Alazun . z-←Alazun | v-scream
 >
-> "Olazun! Olazun screams."
+> "Alazun! Alazun screams."
 
 ## Talk moves and quoting {#talk-quoting}
 
@@ -1068,22 +1068,22 @@ Examples:
 
 **Needs:** [Arrow rose](/roles#arrow-rose) · [Sentence linkers](/sentence-linkers#sentence-linkers)
 
-When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`th`** + facing person). Generic heading is **`ure`** (*direction*). Facing-relative ahead / back still uses **`DIR th ANCHOR`**.
+When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`th`** + facing person). Generic heading is **`uro`** (*direction*). Facing-relative ahead / back still uses **`DIR th ANCHOR`**.
 
-> `zuzozen vowurel. xahem zolazun varuvel.`
+> `zazozon vowurol. xahom zalazun veruvol.`
 >
-> z-Uzozen | v-walk . x-therefore | z-Olazun | v-run
+> z-Azozon | v-walk . x-therefore | z-Alazun | v-run
 >
-> "Uzozen walks. Therefore Olazun runs."
+> "Azozon walks. Therefore Alazun runs."
 
 | Agebon | Use | English |
 |--------|-----|---------|
-| **`ahem`** (bare) | talk moves on | *progress*; discourse **`xahem`** *therefore* |
-| **`owuhem`** (bare) | talk comes back | *return* |
-| **`uzuhem`** (bare) | talk pulls back | *retreat* |
-| **`urel`** | heading in general | *compass* / *direction* |
+| **`ahom`** (bare) | talk moves on | *progress*; discourse **`xahom`** *therefore* |
+| **`ewuhom`** (bare) | talk comes back | *return* |
+| **`azohom`** (bare) | talk pulls back | *retreat* |
+| **`urol`** | heading in general | *compass* / *direction* |
 
-**For *therefore*, use:** the [linker](/sentence-linkers#sentence-linkers) **`xahem`**. Body *left* / *right* still needs **`DIR th ANCHOR`**.
+**For *therefore*, use:** the [linker](/sentence-linkers#sentence-linkers) **`xahom`**. Body *left* / *right* still needs **`DIR th ANCHOR`**.
 
 ### Literal content (fence words / fence marks)
 <a id="literal-content"></a>
@@ -1094,12 +1094,12 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 When a fence glyph (`[` / `]` / `(` / `)` / `<` / `>` / `{` / `}` / `=` / `|` / `#`) or a [tone mark](/tone-marks#tone-marks) (`!` / `?`) must appear **as content**, wrap that token in an **opaque** `<…>` span. The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
 
 ```agebon
-d[ varayel d<]> ]
+d[ varuyol d<]> ]
 d[ d<|> ]
-d[ vezuyel d<#> ]
+d[ vezuyol d<#> ]
 ```
 
-`d[ vezuyel d<#> ]` is a whole cite whose last content character is `#` (a bare `#]` would be editorial close). A hyphen before a closer is ordinary content.
+`d[ vezuyol d<#> ]` is a whole cite whose last content character is `#` (a bare `#]` would be editorial close). A hyphen before a closer is ordinary content.
 
 Opaque `d<…>` closes on the first `>`. If the blob **contains** `>`, write it as a cite instead, which closes on the first `]`:
 
@@ -1117,18 +1117,18 @@ These three English nouns each hide two jobs. *Role* is the function someone pla
 
 | English | Agebon | Reading |
 |---------|--------|---------|
-| *role* (the function someone plays) | `zolazun gwozuduyel.` | the usual role: role compound with **`the`** on `/ɡ/` |
-| *title* (the name of a work) | `d@[enuron olazun]` | cite with **`@`** |
-| *title* (a claim to own) | `zogunum` | *ownership*, the abstract sense of `ogunu` |
-| *address* (speak to someone) | `yolazun.` | call them with `/y/` + their name |
-| *address* (speak to a group) | `yeyonx.` | `/y/` + the kind as a title, **-nx** |
-| *address* (a speech) | `vezuyel` | the telling itself |
+| *role* (the function someone plays) | `zalazun gwozeduyol.` | the usual role: role compound with **`the`** on `/ɡ/` |
+| *title* (the name of a work) | `d@[onuren alazun]` | cite with **`@`** |
+| *title* (a claim to own) | `zegunum` | *ownership*, the abstract sense of `egunu` |
+| *address* (speak to someone) | `yalazun.` | call them with `/y/` + their name |
+| *address* (speak to a group) | `yeyenx.` | `/y/` + the kind as a title, **-nx** |
+| *address* (a speech) | `vezuyol` | the telling itself |
 
-> `zolazun gwozuduyel.`
+> `zalazun gwozeduyol.`
 >
-> z-Olazun | g-role-agent-teach
+> z-Alazun | g-role-agent-teach
 >
-> "Olazun is a teacher." / "Olazun's role is teacher."
+> "Alazun is a teacher." / "Alazun's role is teacher."
 
 **Compare with:** a street address is an ordinary named place (**-n**), with no separate form.
 
@@ -1136,19 +1136,19 @@ These three English nouns each hide two jobs. *Role* is the function someone pla
 
 **Needs:** [Mention](/span-mention#mention)
 
-To talk about a word, a phrase or a whole sentence as a thing in itself, use a mention: the marker **`glegel`**, then the span. English *the word …*, *the phrase …* and *the sentence …* all use the same frame. The span is a cite of the Agebon, and its role letter still says what the mention does in the clause.
+To talk about a word, a phrase or a whole sentence as a thing in itself, use a mention: the marker **`glegol`**, then the span. English *the word …*, *the phrase …* and *the sentence …* all use the same frame. The span is a cite of the Agebon, and its role letter still says what the mention does in the clause.
 
-> `glegel z[udozo] gamezom.`
+> `glegol z[odoze] gamezem.`
 >
-> [gl-MENTION | z-CITE["udozo"]] | g-small
+> [gl-MENTION | z-CITE["odoze"]] | g-small
 >
-> "The word “udozo” is small."
+> "The word “odoze” is small."
 
-> `glegel z[zolazun vezuyel] gamezom.`
+> `glegol z[zalazun vezuyol] gamezem.`
 >
-> [gl-MENTION | z-CITE[z-Olazun | v-tell]] | g-small
+> [gl-MENTION | z-CITE[z-Alazun | v-tell]] | g-small
 >
-> "The sentence “zolazun vezuyel” is small."
+> "The sentence “zalazun vezuyol” is small."
 
 ## Practice {#practice}
 
@@ -1162,63 +1162,63 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 | English | Agebon | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *Uzozen* | `uzozen` | | |
-| *Olazun* | `olazun` | | |
+| *Azozon* | `azozon` | | |
+| *Alazun* | `alazun` | | |
 | *Ahelan* | `ahelan` | | |
 | *mute* | `vemowul` | `emowul` *mute* | 🔇: cutting the live sound |
-| *broadcast* | `verowom` | `erowol` *radio* | 📻: sending the show out |
-| *radio* | `erowol` | | |
-| *studio mic* | `uzewol` | | |
-| *red* | `erulel` | | |
-| *big* | `elazom` | `elazol` *elephant* | 🐘: the huge animal |
-| *punch* | `vanuvul` | | |
-| *scream* | `varemul` | | |
+| *broadcast* | `varowem` | `arowel` *radio* | 📻: sending the show out |
+| *radio* | `arowel` | | |
+| *studio mic* | `uzewel` | | |
+| *red* | `erulol` | | |
+| *big* | `elazem` | `elazel` *elephant* | 🐘: the huge animal |
+| *punch* | `vabuvul` | | |
+| *scream* | `veyamul` | | |
 
 #### English → Agebon {#people-pointing-back-english-to-agebon}
 
-**1.** *Uzozen hits mute. Olazun does the same with them.*
+**1.** *Azozon hits mute. Alazun does the same with them.*
 
 ::: details Show answer
-`zuzozen vemowul. zolazun vuzozer.`
+`zazozon vemowul. zalazun vazozor.`
 
-z-Uzozen | v-mute . z-Olazun | v-←Uzozen
+z-Azozon | v-mute . z-Alazun | v-←Azozon
 :::
 
-**2.** *Olazun broadcasts. That broadcast is big.*
+**2.** *Alazun broadcasts. That broadcast is big.*
 
 ::: details Show answer
-`zolazun verowom. zerowor gelazom.`
+`zalazun varowem. zarower gelazem.`
 
-z-Olazun | v-broadcast . z-←broadcast | g-big
+z-Alazun | v-broadcast . z-←broadcast | g-big
 :::
 
-**3.** *Uzozen broadcasts. By doing so, Olazun hits mute.*
+**3.** *Azozon broadcasts. By doing so, Alazun hits mute.*
 
 ::: details Show answer
-`zuzozen verowom. zolazun herowor vemowul.`
+`zazozon varowem. zalazun harower vemowul.`
 
-z-Uzozen | v-broadcast . z-Olazun | h-←broadcast | v-mute
+z-Azozon | v-broadcast . z-Alazun | h-←broadcast | v-mute
 :::
 
 **4.** *A radio is red. The red one screams.*
 
 ::: details Show answer
-`zerowol gerulel. zeruler varemul.`
+`zarowel gerulol. zerulor veyamul.`
 
 z-radio | g-red . z-←red | v-scream
 :::
 
-**5.** *Olazun throws a punch. That punch is big.*
+**5.** *Alazun throws a punch. That punch is big.*
 
 ::: details Show answer
-`zolazun vanuvul. zanuvur gelazom.`
+`zalazun vabuvul. zabuvur gelazem.`
 
-z-Olazun | v-punch . z-←punch | g-big
+z-Alazun | v-punch . z-←punch | g-big
 :::
 
 #### Agebon → English {#people-pointing-back-agebon-to-english}
 
-**1.** `zerowol gelazom. zuzewol gerowor.`
+**1.** `zarowel gelazem. zuzewel garower.`
 
 ::: details Show answer
 
@@ -1227,25 +1227,25 @@ z-radio | g-big . z-studio-mic | g-←radio
 *A radio is big. A studio mic is of that kind.*
 :::
 
-**2.** `zolazun vanuvul. zuzozen hanuvur vemowul.`
+**2.** `zalazun vabuvul. zazozon habuvur vemowul.`
 
 ::: details Show answer
 
-z-Olazun | v-punch . z-Uzozen | h-←punch | v-mute
+z-Alazun | v-punch . z-Azozon | h-←punch | v-mute
 
-*Olazun throws a punch. By doing so, Uzozen hits mute.*
+*Alazun throws a punch. By doing so, Azozon hits mute.*
 :::
 
-**3.** `zuzozen duzewol vemowul. zolazun vuzewor.`
+**3.** `zazozon duzewel vemowul. zalazun vuzewer.`
 
 ::: details Show answer
 
-z-Uzozen | d-studio-mic | v-mute . z-Olazun | v-←studio-mic
+z-Azozon | d-studio-mic | v-mute . z-Alazun | v-←studio-mic
 
-*Uzozen mutes a studio mic. Olazun does the same to it.*
+*Azozon mutes a studio mic. Alazun does the same to it.*
 :::
 
-**4.** `zerowol gelazom. zelazor varemul.`
+**4.** `zarowel gelazem. zelazer veyamul.`
 
 ::: details Show answer
 
@@ -1254,13 +1254,13 @@ z-radio | g-big . z-←big | v-scream
 *A radio is big. The big one screams.*
 :::
 
-**5.** `zahelan gerulel. zuzozen veruler.`
+**5.** `zahelan gerulol. zazozon verulor.`
 
 ::: details Show answer
 
-z-Ahelan | g-red . z-Uzozen | v-←red
+z-Ahelan | g-red . z-Azozon | v-←red
 
-*Ahelan is red. Uzozen goes red too.*
+*Ahelan is red. Azozon goes red too.*
 :::
 
 ### As for {#people-as-for-practice}
@@ -1273,33 +1273,33 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *ticket* | `udenel` |
-| *see* | `vawebol` |
-| *tell* | `vezuyel` |
-| *as for* | `hahugem` |
+| *ticket* | `odenol` |
+| *see* | `vayebel` |
+| *tell* | `vezuyol` |
+| *as for* | `hehugom` |
 
 #### English → Agebon {#people-as-for-english-to-agebon}
 
-**1.** *As for Uzozen, Olazun sees a ticket.*
+**1.** *As for Azozon, Alazun sees a ticket.*
 
 ::: details Show answer
-`hahugem bluzozen zolazun dudenel vawebol.`
+`hehugom blazozon zalazun dodenol vayebel.`
 
-[h-topic | b-Uzozen] | z-Olazun | d-ticket | v-see
+[h-topic | b-Azozon] | z-Alazun | d-ticket | v-see
 :::
 
 #### Agebon → English {#people-as-for-agebon-to-english}
 
-**1.** `hahugem blahelan zuzozen vezuyel bolazun.`
+**1.** `hehugom blahelan zazozon vezuyol balazun.`
 
 ::: details Show answer
 
-[h-topic | b-Ahelan] | z-Uzozen | b-Olazun | v-tell
+[h-topic | b-Ahelan] | z-Azozon | b-Alazun | v-tell
 
-*As for Ahelan, Uzozen tells Olazun.*
+*As for Ahelan, Azozon tells Alazun.*
 :::
 
 ### Office handles {#people-handles-practice}
@@ -1312,30 +1312,30 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 | English | Agebon | Same root as |
 |---------|--------|--------------|
-| *Uzozen* | `uzozen` | |
+| *Azozon* | `azozon` | |
 | *Ahelan* | `ahelan` | |
-| *Ezoben* (office handle) | `ezoben` | |
-| *diagnosis-hospital* (office full title) | `ezobexewahan` | |
-| *see* | `vawebol` | `awebol` *eye* |
+| *Emobon* (office handle) | `emobon` | |
+| *diagnosis-hospital* (office full title) | `emoboxuhahan` | |
+| *see* | `vayebel` | `ayebel` *eye* |
 
 #### English → Agebon {#people-handles-english-to-agebon}
 
-**1.** *Ezoben sees Ahelan.* (Ezoben is an office, named here for the first time)
+**1.** *Emobon sees Ahelan.* (Emobon is an office, named here for the first time)
 
 ::: details Show answer
-`zezoben vawebol dahelan.`
+`zemobon vayebel dahelan.`
 
-z-Ezoben | v-see | d-Ahelan
+z-Emobon | v-see | d-Ahelan
 :::
 
 #### Agebon → English {#people-handles-agebon-to-english}
 
-**1.** `zezobexewahan vawebol duzozen.`
+**1.** `zemoboxuhahan vayebel dazozon.`
 
 ::: details Show answer
 
-z-Ezobe-x-Ewahan | v-see | d-Uzozen
-*Diagnosis-Hospital sees Uzozen.* (that office’s full title)
+z-Emobo-x-Uhahan | v-see | d-Azozon
+*Diagnosis-Hospital sees Azozon.* (that office’s full title)
 :::
 
 ### Quoting literal marks {#people-literal-practice}
@@ -1348,26 +1348,26 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *tell* | `vezuyel` |
-| *write* | `varayel` |
+| *tell* | `vezuyol` |
+| *write* | `varuyol` |
 
 #### English → Agebon {#people-literal-english-to-agebon}
 
-**1.** *Uzozen said “write ]”.*
+**1.** *Azozon said “write ]”.*
 
 ::: details Show answer
-<code>zuzozen d[ varayel d&lt;]&gt; ] vezuyel.</code>
+<code>zazozon d[ varuyol d&lt;]&gt; ] vezuyol.</code>
 
-z-Uzozen | d-CITE[v-write | d-OPAQUE["]"]] | v-tell
+z-Azozon | d-CITE[v-write | d-OPAQUE["]"]] | v-tell
 :::
 
 **2.** *Ahelan said “code > 1.”* (the quote holds a greater-than sign)
 
 ::: details Show answer
-`zahelan d[code > 1] vezuyel.`
+`zahelan d[code > 1] vezuyol.`
 
 z-Ahelan | d-CITE["code > 1"] | v-tell
 
@@ -1376,17 +1376,17 @@ A cite, because an angle-bracket fence would close on the first `>`.
 
 #### Agebon → English {#people-literal-agebon-to-english}
 
-**1.** <code>zuzozen d[ d&lt;ciao&gt; ] vezuyel.</code>
+**1.** <code>zazozon d[ d&lt;ciao&gt; ] vezuyol.</code>
 
 ::: details Show answer
 
-z-Uzozen | d-CITE[d-OPAQUE["ciao"]] | v-tell
+z-Azozon | d-CITE[d-OPAQUE["ciao"]] | v-tell
 
-*Uzozen said “ciao.”*
+*Azozon said “ciao.”*
 :::
 
-**2.** <code>zolazun d[ varayel d&lt;#&gt; ] vezuyel.</code>
+**2.** <code>zalazun d[ varuyol d&lt;#&gt; ] vezuyol.</code>
 
 ::: details Show answer
-*Olazun said “write #.”*
+*Alazun said “write #.”*
 :::

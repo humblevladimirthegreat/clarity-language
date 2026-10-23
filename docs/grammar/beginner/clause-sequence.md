@@ -16,11 +16,11 @@ When English tells events in time order (*and then*), put ending **-n** on a cla
 | `xen` | sequence menu | *or maybe…*; *failing that…* | **o** ≈ one |
 | `xun` | sequence deny | *and then not…* | **u** ≈ undo |
 
-> `zuzozen vuhohol xan zuzozer vowurel.`
+> `zazozon vehohel xan zazozor vowurol.`
 >
-> [z-Uzozen | v-sit | x-and-then | z-←Uzozen | v-walk]
+> [z-Azozon | v-sit | x-and-then | z-←Azozon | v-walk]
 >
-> "Uzozen sat, and then they walked."
+> "Azozon sat, and then they walked."
 
 Under `/v/`, `/ɡ/`, and `/h/`, a join word with **-n** names a list move instead.
 
@@ -34,86 +34,86 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *run* | `varuvel` |
-| *sit* | `vuhohol` |
-| *punch* | `vanuvul` |
-| *scream* | `varemul` |
+| *run* | `veruvol` |
+| *sit* | `vehohel` |
+| *punch* | `vabuvul` |
+| *scream* | `veyamul` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *Uzozen runs, then Olazun sits.*
+**1.** *Azozon runs, then Alazun sits.*
 
 ::: details Show answer
-`zuzozen varuvel xan zolazun vuhohol.`
+`zazozon veruvol xan zalazun vehohel.`
 
-[z-Uzozen | v-run | x-and-then | z-Olazun | v-sit]
+[z-Azozon | v-run | x-and-then | z-Alazun | v-sit]
 :::
 
-**2.** *Ahelan sits, then Uzozen runs.*
+**2.** *Ahelan sits, then Azozon runs.*
 
 ::: details Show answer
-`zahelan vuhohol xan zuzozen varuvel.`
+`zahelan vehohel xan zazozon veruvol.`
 
-[z-Ahelan | v-sit | x-and-then | z-Uzozen | v-run]
+[z-Ahelan | v-sit | x-and-then | z-Azozon | v-run]
 :::
 
-**3.** *Uzozen punches, then Olazun screams.*
+**3.** *Azozon punches, then Alazun screams.*
 
 ::: details Show answer
-`zuzozen vanuvul xan zolazun varemul.`
+`zazozon vabuvul xan zalazun veyamul.`
 
-[z-Uzozen | v-punch | x-and-then | z-Olazun | v-scream]
+[z-Azozon | v-punch | x-and-then | z-Alazun | v-scream]
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zahelan varemul xan zolazun vanuvul.`
+**1.** `zahelan veyamul xan zalazun vabuvul.`
 
 ::: details Show answer
-[z-Ahelan | v-scream | x-and-then | z-Olazun | v-punch]
+[z-Ahelan | v-scream | x-and-then | z-Alazun | v-punch]
 
-*Ahelan screams, then Olazun punches.*
+*Ahelan screams, then Alazun punches.*
 :::
 
-**2.** `zuzozen varuvel xan zolazun varuvel.`
+**2.** `zazozon veruvol xan zalazun veruvol.`
 
 ::: details Show answer
-[z-Uzozen | v-run | x-and-then | z-Olazun | v-run]
+[z-Azozon | v-run | x-and-then | z-Alazun | v-run]
 
-*Uzozen runs, then Olazun runs.*
+*Azozon runs, then Alazun runs.*
 :::
 
-**3.** `zolazun vuhohol xan zahelan varuvel.`
+**3.** `zalazun vehohel xan zahelan veruvol.`
 
 ::: details Show answer
-[z-Olazun | v-sit | x-and-then | z-Ahelan | v-run]
+[z-Alazun | v-sit | x-and-then | z-Ahelan | v-run]
 
-*Olazun sits, then Ahelan runs.*
+*Alazun sits, then Ahelan runs.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Uzozen sits, then Ahelan punches.* `zuzozen vuhohol xan zahelan vanuvul.` or `zuzozen vuhohol xam zahelan vanuvul.`
+**1.** *Azozon sits, then Ahelan punches.* `zazozon vehohel xan zahelan vabuvul.` or `zazozon vehohel xam zahelan vabuvul.`
 
 ::: details Show answer
-`zuzozen vuhohol xan zahelan vanuvul.`
+`zazozon vehohel xan zahelan vabuvul.`
 
-[z-Uzozen | v-sit | x-and-then | z-Ahelan | v-punch]
+[z-Azozon | v-sit | x-and-then | z-Ahelan | v-punch]
 
 **-n** orders the steps; **`xam`** adds a clause without saying which came first.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Ahelan runs, then Olazun sits.* <!-- lint: error -->`zahelan varuvel xam zolazun vuhohol.`
+**1.** *Ahelan runs, then Alazun sits.* <!-- lint: error -->`zahelan veruvol xam zalazun vehohel.`
 
 ::: details Show answer
-`zahelan varuvel xan zolazun vuhohol.`
+`zahelan veruvol xan zalazun vehohel.`
 
-[z-Ahelan | v-run | x-and-then | z-Olazun | v-sit]
+[z-Ahelan | v-run | x-and-then | z-Alazun | v-sit]
 
 Narrative *and then* is **-n** on the clause join; **`xam`** adds a clause without ordering the steps.
 :::

@@ -30,7 +30,7 @@ const page = `# Saying it
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *dog* | \`udozol\` | 🐕 |
+| *dog* | \`odozel\` | 🐕 |
 `;
 
 const entries = collectEnglishEntries(page, "docs/grammar/english.md", loadDefaultTables());

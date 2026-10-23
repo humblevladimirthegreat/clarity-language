@@ -15,17 +15,17 @@ A word in a sentence is **role letter + root + ending**. Outside a sentence (a l
 
 ### Endings {#endings}
 
-Shown on one root, `uzoze`.
+Shown on one root, `azozo`.
 
 | Ending | Means | Example | English | Stage |
 |--------|-------|---------|---------|-------|
-| **-l** | [first mention, everyday kind](/word-endings#concrete-l) | `uzozel` | *swan* | B |
-| **-m** | [first mention, published abstract](/word-endings#abstract-m) | `uzozem` | *grace* | B |
-| **-n** | [a name](/word-endings#named-n-beginner) | `uzozen` | *Uzozen* | B |
-| **-r** | [the same one again](/pronouns#resume-r) | `zuzozer` | *Uzozen* (again) | B |
-| **-ln** | [one of a name](/proper-names#name-instance--ln) | `duzozeln` | *an Uzozen* | I |
-| **-lnx** | [some of a name](/proper-names#name-instance--ln) | `duzozelnx` | *some Uzozens* | I |
-| **-x** after any of these | [associates, or a group](/plurality#associative) | `zuzozenx` | *Uzozen and associates* | B |
+| **-l** | [first mention, everyday kind](/word-endings#concrete-l) | `azozol` | *swan* | B |
+| **-m** | [first mention, published abstract](/word-endings#abstract-m) | `azozom` | *grace* | B |
+| **-n** | [a name](/word-endings#named-n-beginner) | `azozon` | *Azozon* | B |
+| **-r** | [the same one again](/pronouns#resume-r) | `zazozor` | *Azozon* (again) | B |
+| **-ln** | [one of a name](/proper-names#name-instance--ln) | `dazozoln` | *an Azozon* | I |
+| **-lnx** | [some of a name](/proper-names#name-instance--ln) | `dazozolnx` | *some Azozons* | I |
+| **-x** after any of these | [associates, or a group](/plurality#associative) | `zazozonx` | *Azozon and associates* | B |
 
 A greeting is [your own name and a period](/word-endings#greeting): `SELFn.`
 
@@ -46,11 +46,11 @@ The role letter says the job ([role map](/proper-names#proper-name--n)); **-n** 
 
 | Shape | Example | English | Stage |
 |-------|---------|---------|-------|
-| [Full name](/proper-names#multipart-names): given name, then family name on `/ɡ/` + **-n** | `zalen galowen vowurel.` | *Alen Alowen walks.* | I |
-| [Full name](/proper-names#multipart-names) as a citation, and its resume | `alen galowen`; `zalen galowen`; `zaler` | *Alen Alowen*; *Alen* (the same person) | I |
-| [Hyphenated name](/proper-names#multipart-names): roots joined by mid-word `x` | `zalexalowen vowurel.` | *Alexalowen walks.* | I |
-| [One of a full name](/proper-names#name-instance--ln) | `zaleln galowen` | *someone named Alen Alowen* | I |
-| [Titled phrase](/proper-names#titled-phrases): **-n** on the hook, join, or span that packages it | `dududal en dugudal` | *Coffee-Instead-of-Tea* (a cafe) | I |
+| [Full name](/proper-names#multipart-names): given name, then family name on `/ɡ/` + **-n** | `zalon golowon vowurol.` | *Alon Olowon walks.* | I |
+| [Full name](/proper-names#multipart-names) as a citation, and its resume | `alon golowon`; `zalon golowon`; `zalor` | *Alon Olowon*; *Alon* (the same person) | I |
+| [Hyphenated name](/proper-names#multipart-names): roots joined by mid-word `x` | `zaloxolowon vowurol.` | *Aloxolowon walks.* | I |
+| [One of a full name](/proper-names#name-instance--ln) | `zaloln golowon` | *someone named Alon Olowon* | I |
+| [Titled phrase](/proper-names#titled-phrases): **-n** on the hook, join, or span that packages it | `dedudal en dogudal` | *Coffee-Instead-of-Tea* (a cafe) | I |
 | [Country and tradition](/proper-names#countries-traditions) on `azabana` | `azabanan` / `gazabanam` / `dazabanal` | *Japan* / *Japanese* / *a Japanese flag* | I |
 
 ## The clause {#clause}
@@ -76,36 +76,36 @@ Calls and sentence glue use [`/y/`](/speech-moves) and [`/x/`](/dependents).
 
 | Rule | Example | English | Stage |
 |------|---------|---------|-------|
-| [Subject, verb](/clause#who-acts-and-the-action) | `zudozol vowurel.` | *A dog walks.* | B |
-| [Subject, object, verb](/clause#direct-object-d) | `zudozol dagozol vawebol.` | *A dog sees a cat.* | B |
-| [`/h/` and `/th/` go anywhere](/clause#adverbs-h) | `zudozol hedurem vowurel.` | *A dog walks hastily.* | B |
-| [Leave out the subject](/left-bound#no-subject): nobody is named as the doer | `duzozen vawebol.` | *Uzozen was seen.* | I |
-| [Moving words changes nothing](/clause#direct-object-d) | `dagozol zudozol vawebol.` | *A dog sees a cat.* | B |
-| [Usual order by speech act](/speech-moves#act-word-order): question verb second, command verb first, prohibition verb late | `yel zuzozen vanuvul dobogal.` · `yol vanuvul dobogal.` · `yul dobogal vanuvul.` | *Does Uzozen punch the box?* · *Punch the box!* · *Don't punch the box.* | B |
-| [Fill-ask: blank first](/questions#fill-ask) | `yel dar zuzozen vawebol.` | *What does Uzozen see?* | B |
-| [Contrast one word with `&`](/emphasis#english-emphasis) | `&zuzozen dagozol vawebol.` · `zuzozen &dagozol vawebol.` · `zuzozen dagozol &vawebol.` | *It was Uzozen who saw the cat.* · *It's a cat that Uzozen sees.* (not something else) · *Uzozen sees the cat.* (rather than doing something else to it) | A |
-| [Cleft with no contrast: plain sentence](/emphasis#english-emphasis) | `zuzozen dagozol vawebol.` | *It's a cat that Uzozen sees.* (answering *what?*) | A |
+| [Subject, verb](/clause#who-acts-and-the-action) | `zodozel vowurol.` | *A dog walks.* | B |
+| [Subject, object, verb](/clause#direct-object-d) | `zodozel dogozel vayebel.` | *A dog sees a cat.* | B |
+| [`/h/` and `/th/` go anywhere](/clause#adverbs-h) | `zodozel hadurom vowurol.` | *A dog walks hastily.* | B |
+| [Leave out the subject](/left-bound#no-subject): nobody is named as the doer | `dazozon vayebel.` | *Azozon was seen.* | I |
+| [Moving words changes nothing](/clause#direct-object-d) | `dogozel zodozel vayebel.` | *A dog sees a cat.* | B |
+| [Usual order by speech act](/speech-moves#act-word-order): question verb second, command verb first, prohibition verb late | `yel zazozon vabuvul dubogal.` · `yol vabuvul dubogal.` · `yul dubogal vabuvul.` | *Does Azozon punch the box?* · *Punch the box!* · *Don't punch the box.* | B |
+| [Fill-ask: blank first](/questions#fill-ask) | `yel dar zazozon vayebel.` | *What does Azozon see?* | B |
+| [Contrast one word with `&`](/emphasis#english-emphasis) | `&zazozon dogozel vayebel.` · `zazozon &dogozel vayebel.` · `zazozon dogozel &vayebel.` | *It was Azozon who saw the cat.* · *It's a cat that Azozon sees.* (not something else) · *Azozon sees the cat.* (rather than doing something else to it) | A |
+| [Cleft with no contrast: plain sentence](/emphasis#english-emphasis) | `zazozon dogozel vayebel.` | *It's a cat that Azozon sees.* (answering *what?*) | A |
 
 ### Describing words {#describing}
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Adjective after the noun](/clause#adjectives-ɡ) | `zudozol gunemul vowurel.` | *An angry dog walks.* | B |
-| [Adjective before the noun](/left-bound-adjectives#left-bound-adjectives): `l` after `/ɡ/` | `glunemul zudozol` | *an angry dog* | B |
-| [Detail on an adjective](/clause#adjective-detail-w) | `zudozol welazom gunemul vowurel.` | *A very angry dog walks.* | B |
-| [Stance on the whole claim](/clause#stance-th) | `zudozol thevemom vowurel.` | *I doubt a dog is walking.* | B |
+| [Adjective after the noun](/clause#adjectives-ɡ) | `zodozel gonumul vowurol.` | *An angry dog walks.* | B |
+| [Adjective before the noun](/left-bound-adjectives#left-bound-adjectives): `l` after `/ɡ/` | `glonumul zodozel` | *an angry dog* | B |
+| [Detail on an adjective](/clause#adjective-detail-w) | `zodozel welazem gonumul vowurol.` | *A very angry dog walks.* | B |
+| [Stance on the whole claim](/clause#stance-th) | `zodozel thevemem vowurol.` | *I doubt a dog is walking.* | B |
 
 ### Degree words {#degree}
 
 | Slot | Words | English | Stage |
 |------|-------|---------|-------|
-| [`/w/`](/left-bound#degree-w), before an adjective or adverb | `welazom` | *very* | B |
+| [`/w/`](/left-bound#degree-w), before an adjective or adverb | `welazem` | *very* | B |
 | | `wohalal` | *extremely* | I |
-| | `wamezom` | *slightly* | I |
-| | `wadowom` | *quite* | I |
-| | `wuhuram` | *completely* | I |
-| [`/h/`](/left-bound#degree-w), on the verb | `hoyurem` | *kind of* | I |
-| | `hurugem` | *again* | I |
+| | `wamezem` | *slightly* | I |
+| | `wadowem` | *quite* | I |
+| | `wahuram` | *completely* | I |
+| [`/h/`](/left-bound#degree-w), on the verb | `hayurom` | *kind of* | I |
+| | `herugom` | *again* | I |
 
 ### The extra noun `/b/` {#extra-noun}
 
@@ -113,11 +113,11 @@ Tell the two jobs apart by the word right before the `/b/` word.
 
 | Right before `/b/` | Job | Example | English | Stage |
 |--------------------|-----|---------|---------|-------|
-| a `/ɡ/`, `/h/`, or `/th/` word | [completes that word](/clause#extra-nouns) (the host) | `hewom bluzozen` | *like Uzozen* | B |
-| anything else | [who receives](/clause#extra-nouns) (at most one) | `zuzozen vezuyel bolazun.` | *Uzozen tells Olazun.* | B |
-| a host, with `/w/` first | [`/w/` stays before the host](/clause#extra-nouns) | `welazom hewom bluzozen` | *very like Uzozen* | B |
-| a host's `/b/`, then `/ɡ/` | [describes the extra noun](/left-bound#complex-chaining) | `zagayul gorol bluzozen guzemol` | *a guard who is the same person as sleepy Uzozen* | I |
-| two relations on one noun | [put one before with `gl-`](/left-bound#complex-chaining) | `glorol bluzozen zagayul gorol blobayel` | *a guard who is both Uzozen and the police officer* | I |
+| a `/ɡ/`, `/h/`, or `/th/` word | [completes that word](/clause#extra-nouns) (the host) | `hewem blazozon` | *like Azozon* | B |
+| anything else | [who receives](/clause#extra-nouns) (at most one) | `zazozon vezuyol balazun.` | *Azozon tells Alazun.* | B |
+| a host, with `/w/` first | [`/w/` stays before the host](/clause#extra-nouns) | `welazem hewem blazozon` | *very like Azozon* | B |
+| a host's `/b/`, then `/ɡ/` | [describes the extra noun](/left-bound#complex-chaining) | `zagayul gorel blazozon guzemel` | *a guard who is the same person as sleepy Azozon* | I |
+| two relations on one noun | [put one before with `gl-`](/left-bound#complex-chaining) | `glorel blazozon zagayul gorel blebayol` | *a guard who is both Azozon and the police officer* | I |
 
 A [hook](/left-bound#complex-chaining) followed by `/b/` means *in* / *at* / *for*, not the person who receives.
 
@@ -129,28 +129,28 @@ Agebon has no word for *is*. The kind of claim comes from the pattern.
 
 | Job | Pattern | Example | English | Stage |
 |-----|---------|---------|---------|-------|
-| [Quality](/predication#classification-property) | noun + `/ɡ/` | `zuzozen gamahum.` | *Uzozen is challenging.* | B |
-| [Belonging](/predication#classification-property) | noun + `/ɡ/` on **-m** | `zuzozen gazabanam.` | *Uzozen is Japanese.* | B |
-| [Kind or role](/predication#classification) | noun + kind on `/ɡ/` | `zuzozen gudozol.` | *Uzozen is a dog.* | B |
-| [In the middle of an event](/predication#in-progress) | noun + event root on `/ɡ/` | `zuzozen gowurel.` | *Uzozen is walking.* | B |
-| [Something exists](/predication#existence) | a lone new noun | `zudozol.` | *There is a dog.* | B |
-| | a new noun + `/ɡ/` | `zudozol gelazom.` | *There is a big dog.* | B |
-| [Same person](/predication#identity) | `gorol` + `/b/`, side by side | `zolazun gorol bluzozen.` | *Olazun is Uzozen.* (one person, two names) | B |
-| [Same one again](/predication#identity) | `gorol`, no `/b/` | `zolazun danal gorol varayel.` | *Olazun is writing the same book.* (the book already mentioned) | B |
-| [Basically the same](/label-scope#same-endings) | **-m** | `zolazun gorom bluzozen` | *Olazun is basically Uzozen.* | I |
-| [Not the same](/label-scope#same-endings) | `gul` after the pair | `zolazun gorol bluzozen gul` | *Olazun is not Uzozen.* | I |
-| [The one who is Uzozen](/label-scope#same-endings) | inside a noun phrase | `zeyol gorol bluzozen` | *the person who is Uzozen* | I |
+| [Quality](/predication#classification-property) | noun + `/ɡ/` | `zazozon gamahum.` | *Azozon is challenging.* | B |
+| [Belonging](/predication#classification-property) | noun + `/ɡ/` on **-m** | `zazozon gazabanam.` | *Azozon is Japanese.* | B |
+| [Kind or role](/predication#classification) | noun + kind on `/ɡ/` | `zazozon godozel.` | *Azozon is a dog.* | B |
+| [In the middle of an event](/predication#in-progress) | noun + event root on `/ɡ/` | `zazozon gowurol.` | *Azozon is walking.* | B |
+| [Something exists](/predication#existence) | a lone new noun | `zodozel.` | *There is a dog.* | B |
+| | a new noun + `/ɡ/` | `zodozel gelazem.` | *There is a big dog.* | B |
+| [Same person](/predication#identity) | `gorel` + `/b/`, side by side | `zalazun gorel blazozon.` | *Alazun is Azozon.* (one person, two names) | B |
+| [Same one again](/predication#identity) | `gorel`, no `/b/` | `zalazun danal gorel varuyol.` | *Alazun is writing the same book.* (the book already mentioned) | B |
+| [Basically the same](/label-scope#same-endings) | **-m** | `zalazun gorem blazozon` | *Alazun is basically Azozon.* | I |
+| [Not the same](/label-scope#same-endings) | `gul` after the pair | `zalazun gorel blazozon gul` | *Alazun is not Azozon.* | I |
+| [The one who is Azozon](/label-scope#same-endings) | inside a noun phrase | `zeyel gorel blazozon` | *the person who is Azozon* | I |
 
-With a name or a resumed noun, the pair is a [property](/predication#existence), not a new thing: `zudozor gelazom.` is *The dog is big.*
+With a name or a resumed noun, the pair is a [property](/predication#existence), not a new thing: `zodozer gelazem.` is *The dog is big.*
 
 ### Hedging, denying, commanding {#packaging}
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Not](/label-scope#classification-packaging) | `zuzozen gudozol gul.` | *Uzozen is not a dog.* | I |
-| [Always](/label-scope#classification-packaging) | `zuzozen gudozol hual` | *Uzozen is always a dog.* | I |
-| [Sort of](/label-scope#classification-packaging) | `zuzozen woyurem gudozol.` | *Uzozen is something of a dog.* | I |
-| [Be ADJ!](/label-scope#command-property) | `yol gayulem.` | *Be careful!* | I |
+| [Not](/label-scope#classification-packaging) | `zazozon godozel gul.` | *Azozon is not a dog.* | I |
+| [Always](/label-scope#classification-packaging) | `zazozon godozel hual` | *Azozon is always a dog.* | I |
+| [Sort of](/label-scope#classification-packaging) | `zazozon wayurom godozel.` | *Azozon is something of a dog.* | I |
+| [Be ADJ!](/label-scope#command-property) | `yol guyulom.` | *Be careful!* | I |
 | [Don't be ADJ](/label-scope#command-property) | `yul` + `/ɡ/` | | I |
 
 ### How far a label reaches {#label-scope}
@@ -159,10 +159,10 @@ Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 
 | Vowel | Reach | Example | English | Stage |
 |-------|-------|---------|---------|-------|
-| [`thu`](/label-seams#scope-occasion) | this episode | `zuzozen valamuthul.` | *Uzozen lied this once.* | I |
-| [`tho`](/label-seams#scope-occupation) | a practiced role | `zuzozen valamuthol.` | *Uzozen lies as their craft.* | I |
-| [`the`](/label-seams#scope-relative) | this pair (`/b/` follows) | `zuzozen golayothem blolazun.` | *Uzozen is a stranger to Olazun.* | I |
-| [`tha`](/label-seams#scope-type) | a type across scenes | `zolazun ganumuthal.` | *Olazun is an anxious type.* | I |
+| [`thu`](/label-seams#scope-occasion) | this episode | `zazozon vulamuthul.` | *Azozon lied this once.* | I |
+| [`tho`](/label-seams#scope-occupation) | a practiced role | `zazozon vulamuthol.` | *Azozon lies as their craft.* | I |
+| [`the`](/label-seams#scope-relative) | this pair (`/b/` follows) | `zazozon gulayethem blalazun.` | *Azozon is a stranger to Alazun.* | I |
+| [`tha`](/label-seams#scope-type) | a type across scenes | `zalazun ganomuthal.` | *Alazun is an anxious type.* | I |
 
 [Stacked scope](/label-seams#scope-stacks): pairs that start with **u** read like *everything but* (every scene, the second vowel set aside); the others read like hooks (*over*, *using*, *toward*).
 
@@ -172,16 +172,16 @@ Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 | `thao` | using the role for a purpose | *playing the teacher* | I |
 | `thoe` | toward the role | *becoming a teacher* | I |
 | `thua` | type, except this episode | *a teacher type, except this time* | I |
-| `thue` | type, except this pair | *a teacher type, except with Olazun* | I |
+| `thue` | type, except this pair | *a teacher type, except with Alazun* | I |
 | `thuo` | as themselves, not in that role | *not as a teacher* (off duty) | I |
 
 ## Don't mix up {#dont-mix-up}
 
 | This | vs | That |
 |------|----|------|
-| `zuzozen gudozol.` *Uzozen is a dog* ([kind](/predication#classification)) | | `zolazun gorol bluzozen.` *Olazun is Uzozen* ([one person, two labels](/predication#identity)) |
-| `hewom bluzozen` *like Uzozen* ([`/b/` completes a host](/clause#extra-nouns)) | | `zuzozen vezuyel bolazun.` *Uzozen tells Olazun* ([`/b/` receives](/clause#extra-nouns)) |
-| `zudozol gelazom.` *There is a big dog* ([new noun](/predication#existence)) | | `zudozor gelazom.` *The dog is big* ([resumed noun](/predication#existence)) |
-| `zuzozen vowurel.` *Uzozen walks* ([the verb](/clause#who-acts-and-the-action)) | | `zuzozen gowurel.` *Uzozen is walking* ([under way](/predication#in-progress)) |
-| `duzozen vawebol.` *Uzozen was seen* ([no subject named](/left-bound#no-subject)) | | `zumon` *someone did it* ([an unnamed someone](/pronouns#special-pronouns)) |
-| `duzozel` *a swan* ([-l](/proper-names#proper-name--n)) | | `duzozeln` *an Uzozen* ([-ln: one of the name](/proper-names#name-instance--ln)) |
+| `zazozon godozel.` *Azozon is a dog* ([kind](/predication#classification)) | | `zalazun gorel blazozon.` *Alazun is Azozon* ([one person, two labels](/predication#identity)) |
+| `hewem blazozon` *like Azozon* ([`/b/` completes a host](/clause#extra-nouns)) | | `zazozon vezuyol balazun.` *Azozon tells Alazun* ([`/b/` receives](/clause#extra-nouns)) |
+| `zodozel gelazem.` *There is a big dog* ([new noun](/predication#existence)) | | `zodozer gelazem.` *The dog is big* ([resumed noun](/predication#existence)) |
+| `zazozon vowurol.` *Azozon walks* ([the verb](/clause#who-acts-and-the-action)) | | `zazozon gowurol.` *Azozon is walking* ([under way](/predication#in-progress)) |
+| `dazozon vayebel.` *Azozon was seen* ([no subject named](/left-bound#no-subject)) | | `zumen` *someone did it* ([an unnamed someone](/pronouns#special-pronouns)) |
+| `dazozol` *a swan* ([-l](/proper-names#proper-name--n)) | | `dazozoln` *an Azozon* ([-ln: one of the name](/proper-names#name-instance--ln)) |

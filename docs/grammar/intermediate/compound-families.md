@@ -6,17 +6,17 @@ band: intermediate
 
 ### Left and right of `x` {#families-by-shape}
 
-Beginner already used two roots glued with **`x`** and dictionary words with no **`x`**. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family. A [role compound](/roles#role-compounds) or [role pointer](/pronouns#role-pointers) is not one of these families: it opens with **`w`**, a scope vowel, and a part consonant (`zwuzuduyel`, `zwuzer`), and only a noun inside its stem takes **`x`**.
+Beginner already used two roots glued with **`x`** and dictionary words with no **`x`**. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family. A [role compound](/roles#role-compounds) or [role pointer](/pronouns#role-pointers) is not one of these families: it opens with **`w`**, a scope vowel, and a part consonant (`zwuzeduyol`, `zwuzer`), and only a noun inside its stem takes **`x`**.
 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | conversation length | *Uzozen, I have time* | vowel on the name |
+| name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | conversation length | *Azozon, I have time* | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | ability | *can’t sing right now* | extra vowel after the root |
-| full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zubedaxuyudal`; `zalexalowen` ([hyphenated names](proper-names.md#multipart-names)) | **x** ≈ plus |
+| full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zuwedaxubudal`; `zaloxolowon` ([hyphenated names](proper-names.md#multipart-names)) | **x** ≈ plus |
 | sake root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [sakes](/sakes) | `guwathal` | **th** ≈ *think* (your view of the sake) |
 | other root **`th`** **`a`** / **`e`** / **`o`** / **`u`** (or a stack) | [label scope](/label-seams#label-scope) | *angry this time*; *a teacher* | **th** ≈ *think* (what kind of claim the label is) |
-| direction root **`th`** facing person | [viewpoint lateral](viewpoint.md#viewpoint-laterals) | `gowuhethuzozen` *Uzozen’s left* | **th** ≈ *think* (whose point of view) |
+| direction root **`th`** facing person | [viewpoint lateral](viewpoint.md#viewpoint-laterals) | `gewuhothazozon` *Azozon’s left* | **th** ≈ *think* (whose point of view) |
 
 A root is at least three letters, so one or two vowels left of **`x`** are never a root.
 
@@ -30,15 +30,15 @@ To narrow a compound further, or to build a hyphenated name from several labels,
 >
 > "in love" (the crush kind)
 
-> `zugudaxududaxowulan.`
+> `zogudaxedudaxowulan.`
 >
-> z-Uguda-x-Ududa-x-Owulan
+> z-Oguda-x-Eduda-x-Owulan
 >
 > "Coffee-Tea-Water" (one named shop)
 
-[Hyphenated names](proper-names.md#multipart-names) use the same order (*Mary-Kate*: first piece first). A family name is not part of this stack; it is a separate `/ɡ/` word after the given name. [Body left / right](viewpoint.md#viewpoint-laterals) is not this stack: it joins the direction and whose facing counts with **`th`** (`gowuhethuzozen`), because the second root is a point of view, not a kind.
+[Hyphenated names](proper-names.md#multipart-names) use the same order (*Mary-Kate*: first piece first). A family name is not part of this stack; it is a separate `/ɡ/` word after the given name. [Body left / right](viewpoint.md#viewpoint-laterals) is not this stack: it joins the direction and whose facing counts with **`th`** (`gewuhothazozon`), because the second root is a point of view, not a kind.
 
-A [role compound](/roles#role-compounds) can take such a stack as its stem (`zwuzudozoxowurel` *someone who walks dogs*), but is never one piece of a stack.
+A [role compound](/roles#role-compounds) can take such a stack as its stem (`zwuzodozexowurol` *someone who walks dogs*), but is never one piece of a stack.
 
 **Compare with:** a short office **handle** is one root plus [**-n**](proper-names.md#proper-name--n), not this stack. A dictionary compound is one listed word, not a live list you extend.
 
@@ -53,7 +53,7 @@ Use the table above. If the word has a mid-word **`th`**, it is a [sake](/sakes)
 
 ### Conversation length (name **`x`** vowel) {#conversation-length}
 
-English *I can stay a while* or *I only have a minute* tells the other person how long you can talk. In Agebon, add **`x`** and one vowel before **-n** on a [greeting](/word-endings#greeting) (your own name with a period, `SELFn.`) or a [call](/speech-moves#vocative) (their name under **`/y/`**, `yolazun.`). At arrival, the vowel sets how long you expect the conversation to last. At departure, the same form says how soon you are leaving. The vowel is about the conversation, not a grade of the person.
+English *I can stay a while* or *I only have a minute* tells the other person how long you can talk. In Agebon, add **`x`** and one vowel before **-n** on a [greeting](/word-endings#greeting) (your own name with a period, `SELFn.`) or a [call](/speech-moves#vocative) (their name under **`/y/`**, `yalazun.`). At arrival, the vowel sets how long you expect the conversation to last. At departure, the same form says how soon you are leaving. The vowel is about the conversation, not a grade of the person.
 
 The vowel says how much talk is left. Join vowels pick list type. That job stays on join words.
 
@@ -63,11 +63,11 @@ The vowel says how much talk is left. Join vowels pick list type. That job stays
 >
 > "I have time; we can stay."
 
-> `yolazuxon.`
+> `yalazuxon.`
 >
-> y-Olazun-minutes
+> y-Alazun-minutes
 >
-> "Olazun, I have a few minutes."
+> "Alazun, I have a few minutes."
 
 <!-- cheat-sheet: roles-comparing -->
 | Form | At arrival | At departure | Cue |
@@ -77,9 +77,9 @@ The vowel says how much talk is left. Join vowels pick list type. That job stays
 | `SELFxen` | one slot: *one ask or comment* | about to leave | **e** ≈ one slot |
 | `SELFxun` | passing: *just acknowledging; not opening a talk* | leaving right now | **u** ≈ passing |
 
-On a [full name](proper-names.md#multipart-names), the vowel goes on the given name (`alexon galowen.`); a family name takes no bid, since **`x`** + vowel on a `/ɡ/` word is ability. Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](/word-endings#named-n-beginner) ending.
+On a [full name](proper-names.md#multipart-names), the vowel goes on the given name (`aloxon golowon.`); a family name takes no bid, since **`x`** + vowel on a `/ɡ/` word is ability. Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](/word-endings#named-n-beginner) ending.
 
-At arrival, the other person can answer with their own bid. The **lesser** bid sets the shared limit: **a** (open-ended) is more than **o** (a few minutes), **o** is more than **e** (one slot), and **e** is more than **u** (passing). If you offer open-ended time and Olazun offers one slot, you have one slot.
+At arrival, the other person can answer with their own bid. The **lesser** bid sets the shared limit: **a** (open-ended) is more than **o** (a few minutes), **o** is more than **e** (one slot), and **e** is more than **u** (passing). If you offer open-ended time and Alazun offers one slot, you have one slot.
 
 > `SELFxan.`
 >
@@ -87,11 +87,11 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 >
 > "I have time; we can stay."
 
-> `olazuxen.`
+> `alazuxen.`
 >
-> Olazun-ask
+> Alazun-ask
 >
-> "Olazun here. I only have time for one thing."
+> "Alazun here. I only have time for one thing."
 
 **Compare with:** the same **`x`** + vowel on a verb or adjective is ability (*can’t sing right now*). A [sake](/sakes) word takes **`th`** + vowel instead (`guwathal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**. In a clause body, a name with **`x`**, a vowel, and **-n** is not a word.
 
@@ -127,22 +127,22 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *salad* | `azadal` | 🥗 |
-| *plate* | `uwodal` | 🍽️ |
+| *salad* | `azudal` | 🥗 |
+| *plate* | `uyodal` | 🍽️ |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
 | *your name* | `SELFn` |
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *doorbell* | `oholeboral` |
-| *flower* | `uvelal` |
-| *croissant* | `agedol` |
-| *see* | `vawebol` |
-| *scream* | `varemul` |
+| *doorbell* | `oheleboral` |
+| *flower* | `evelal` |
+| *croissant* | `agedel` |
+| *see* | `vayebel` |
+| *scream* | `veyamul` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
@@ -154,12 +154,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 SELF-presence
 :::
 
-**2.** *Olazun, I have a few minutes.* (calling)
+**2.** *Alazun, I have a few minutes.* (calling)
 
 ::: details Show answer
-`yolazuxon.`
+`yalazuxon.`
 
-y-Olazun-minutes
+y-Alazun-minutes
 :::
 
 **3.** *Ahelan, I'm just passing by.* (calling)
@@ -170,18 +170,18 @@ y-Olazun-minutes
 y-Ahelan-passing
 :::
 
-**4.** *Uzozen, I have a few minutes. Olazun sees the doorbell.*
+**4.** *Azozon, I have a few minutes. Alazun sees the doorbell.*
 
 ::: details Show answer
-`yuzozexon zolazun doholeboral vawebol.`
+`yazozoxon zalazun doheleboral vayebel.`
 
-y-Uzozen-minutes | z-Olazun | d-doorbell | v-see
+y-Azozon-minutes | z-Alazun | d-doorbell | v-see
 :::
 
 **5.** *a salad plate* (one plate)
 
 ::: details Show answer
-`zazadaxuwodal.`
+`zazudaxuyodal.`
 
 z-salad-x-plate
 :::
@@ -189,9 +189,9 @@ z-salad-x-plate
 **6.** *Flower-Salad-Croissant* (one café's name)
 
 ::: details Show answer
-`zuvelaxazadaxagedon.`
+`zevelaxazudaxageden.`
 
-z-Uvela-x-Azada-x-Agedon
+z-Evela-x-Azuda-x-Ageden
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
@@ -204,15 +204,15 @@ SELF-ask
 *I only have time for one thing.* / *I'm about to leave.* (arriving / leaving)
 :::
 
-**2.** `yuzozexun zolazun varemul.`
+**2.** `yazozoxun zalazun veyamul.`
 
 ::: details Show answer
-y-Uzozen-passing | z-Olazun | v-scream
+y-Azozon-passing | z-Alazun | v-scream
 
-*Uzozen, I'm just passing by. Olazun screams.*
+*Azozon, I'm just passing by. Alazun screams.*
 :::
 
-**3.** `zuvelaxuwodal.`
+**3.** `zevelaxuyodal.`
 
 ::: details Show answer
 z-flower-x-plate
@@ -220,12 +220,12 @@ z-flower-x-plate
 *a flower plate*
 :::
 
-**4.** `yahelaxon zuzozen duvelal vawebol.`
+**4.** `yahelaxon zazozon develal vayebel.`
 
 ::: details Show answer
-y-Ahelan-minutes | z-Uzozen | d-flower | v-see
+y-Ahelan-minutes | z-Azozon | d-flower | v-see
 
-*Ahelan, I have a few minutes. Uzozen sees a flower.*
+*Ahelan, I have a few minutes. Azozon sees a flower.*
 :::
 
 **5.** `SELFxon.` (said when leaving)
@@ -236,20 +236,20 @@ SELF-minutes
 *I'm leaving soon.*
 :::
 
-**6.** `yolazuxan.`
+**6.** `yalazuxan.`
 
 ::: details Show answer
-y-Olazun-presence
+y-Alazun-presence
 
-*Olazun, I have time.*
+*Alazun, I have time.*
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *a croissant plate* `zagedoxuwodal.` or `zuwodaxagedol.`
+**1.** *a croissant plate* `zagedexuyodal.` or `zuyodaxagedel.`
 
 ::: details Show answer
-`zagedoxuwodal.`
+`zagedexuyodal.`
 
 z-croissant-x-plate
 
@@ -268,10 +268,10 @@ y-Ahelan-ask
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Ahelan sees a salad plate.* (one plate) <!-- lint: error -->`zahelan dazadal duwodal vawebol.`
+**1.** *Ahelan sees a salad plate.* (one plate) <!-- lint: error -->`zahelan dazudal duyodal vayebel.`
 
 ::: details Show answer
-`zahelan dazadaxuwodal vawebol.`
+`zahelan dazudaxuyodal vayebel.`
 
 z-Ahelan | d-salad-x-plate | v-see
 

@@ -7,15 +7,15 @@ band: beginner
 ### Extra noun: stacked vowels and loose **-m**
 <a id="extra-noun-intermediate"></a>
 
-Beginner already used the one-vowel extra-noun hooks (*in* / *for* / *at* / *from*). Extra-noun **is the hook word** with `/b/` right after it: recast the landmark as the hook job. Size pictures help the cells; they are not the parent. Hooks with two vowels name the rest of the everyday extras. The test is the same: `/b/` comes right after the hook, and the word right before the hook (skipping any `/w/`) is **not** a recipient `/b/` (so `buzozen al bolazun` is *including*).
+Beginner already used the one-vowel extra-noun hooks (*in* / *for* / *at* / *from*). Extra-noun **is the hook word** with `/b/` right after it: recast the landmark as the hook job. Size pictures help the cells; they are not the parent. Hooks with two vowels name the rest of the everyday extras. The test is the same: `/b/` comes right after the hook, and the word right before the hook (skipping any `/w/`) is **not** a recipient `/b/` (so `bazozon al balazun` is *including*).
 
 A hook + `/b/` right after a landmark (the `/b/` of another extra, or of a word such as a locative relation) describes that landmark, not the clause: *the house near me*.
 
-> `zuzozen vowurel al bahehal em buwon.`
+> `zazozon vowurol al bohehal em buwen.`
 >
-> z-Uzozen | v-walk | [in | [b-house | [near | b-speaker]]]
+> z-Azozon | v-walk | [in | [b-house | [near | b-speaker]]]
 >
-> "Uzozen walks in the house near me."
+> "Azozon walks in the house near me."
 
 Several extra-noun hooks on one clause are several extras. To keep the second one on the clause, put a non-`/b/` word between the first landmark and the next hook. Extra-noun **-n** makes the hook and its landmark a name, as on same-role hooks; the landmark keeps its own ending.
 
@@ -35,59 +35,59 @@ With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the gen
 | **`aol`** | *using* | **`aom`** | *by* | rather the means; **-m** the channel |
 | **`uol`** | *against* | **`uom`** | *contrary to* | instead none of the landmark as opponent; **-m** the opposing frame |
 
-> `zuzozen vuhohol ael buhohol.`
+> `zazozon vehohel ael behohel.`
 >
-> z-Uzozen | v-sit | [on | b-chair]
+> z-Azozon | v-sit | [on | b-chair]
 >
-> "Uzozen sits on a chair."
+> "Azozon sits on a chair."
 
-> `zuzozen danal aol babewel varayel.`
+> `zazozon danal aol bebewol varuyol.`
 >
-> z-Uzozen | d-book | [using | b-pen] | v-write
+> z-Azozon | d-book | [using | b-pen] | v-write
 >
-> "Uzozen writes a book with a pen."
+> "Azozon writes a book with a pen."
 
 **Compare with:** hook **`oel`** names where a path **ends** (*toward X*).
 
-> `zuzozen uol bagayul vavuvul.`
+> `zazozon uol bagayul vuvuvul.`
 >
-> z-Uzozen | [against | b-guard] | v-fight
+> z-Azozon | [against | b-guard] | v-fight
 >
-> "Uzozen fights against a guard."
+> "Azozon fights against a guard."
 
-> `zuzozen vavobel aom bedavel.`
+> `zazozon vavobol aom bedavol.`
 >
-> z-Uzozen | v-go | [by | b-train]
+> z-Azozon | v-go | [by | b-train]
 >
-> "Uzozen goes by train."
+> "Azozon goes by train."
 
-> `zuzozen vowurel uom berulal.`
+> `zazozon vowurol uom berulal.`
 >
-> z-Uzozen | v-walk | [contrary-to | b-rain]
+> z-Azozon | v-walk | [contrary-to | b-rain]
 >
-> "Uzozen walks despite the rain."
+> "Azozon walks despite the rain."
 
-**Compare with:** some English prepositions use other forms. *So that Olazun sits* is **`hovam blarl`**.
+**Compare with:** some English prepositions use other forms. *So that Alazun sits* is **`hovam blarl`**.
 
 ### Whose (`om`) {#genitive}
 
-English *Uzozen's dog* often means the dog is in Uzozen's **use**: Uzozen keeps it, walks it, feeds it. Put **`om`** right after the noun, then the user in `/b/`. `om` says B uses the thing or has access to it. It does not say who owns it. (cue: **`ol`** is *for B*, a get meant to reach B; **`om`** says it already reached B and is in B's use)
+English *Azozon's dog* often means the dog is in Azozon's **use**: Azozon keeps it, walks it, feeds it. Put **`om`** right after the noun, then the user in `/b/`. `om` says B uses the thing or has access to it. It does not say who owns it. (cue: **`ol`** is *for B*, a get meant to reach B; **`om`** says it already reached B and is in B's use)
 
-> `zudozol om buzozen varuvel.`
+> `zodozel om bazozon veruvol.`
 >
-> [z-dog | [used-by | b-Uzozen]] | v-run
+> [z-dog | [used-by | b-Azozon]] | v-run
 >
-> "Uzozen's dog runs." (the dog Uzozen keeps)
+> "Azozon's dog runs." (the dog Azozon keeps)
 
-> `zuzozen dahehal om bolazun vawebol.`
+> `zazozon dohehal om balazun vayebel.`
 >
-> z-Uzozen | [d-house | [used-by | b-Olazun]] | v-see
+> z-Azozon | [d-house | [used-by | b-Alazun]] | v-see
 >
-> "Uzozen sees Olazun's house." (the house Olazun lives in)
+> "Azozon sees Alazun's house." (the house Alazun lives in)
 
-For *my* and *your*, put the [speaker or listener](pronouns.md#special-pronouns) in `/b/`: `om buwon` is *my*, `om bawan` is *your*.
+For *my* and *your*, put the [speaker or listener](pronouns.md#special-pronouns) in `/b/`: `om buwen` is *my*, `om bawan` is *your*.
 
-> `zudozol om buwon vezuvol.`
+> `zodozel om buwen vezuvel.`
 >
 > [z-dog | [used-by | b-speaker]] | v-sleep
 >
@@ -95,7 +95,7 @@ For *my* and *your*, put the [speaker or listener](pronouns.md#special-pronouns)
 
 To describe the thing, put its `/ɡ/` word **between** the noun and **`om`**. The adjective stays on the noun, and `om` still attaches to the noun. A `/ɡ/` word **after** the `/b/` describes B instead.
 
-> `zudozol gelazom om buwon vezuvol.`
+> `zodozel gelazem om buwen vezuvel.`
 >
 > [z-dog | g-big | [used-by | b-speaker]] | v-sleep
 >
@@ -103,34 +103,34 @@ To describe the thing, put its `/ɡ/` word **between** the noun and **`om`**. Th
 
 With no verb, the same order is a sentence. A noun marked with `om` is one the listener can pick out, so the `/ɡ/` word is a [property](predication.md#classification-property), not *there is …*.
 
-> `zudozol gelazom om buwon.`
+> `zodozel gelazem om buwen.`
 >
 > [z-dog | g-big | [used-by | b-speaker]]
 >
 > "My dog is big."
 
-**Compare with:** `zudozol gelazom.` is *There is a big dog* ([existence](predication.md#existence)): a new noun with no `om` introduces the thing. `zudozol om buwon gelazom` puts *big* on the speaker, not the dog. `zudozol om buwon.` alone says your dog is here (*there's my dog*).
+**Compare with:** `zodozel gelazem.` is *There is a big dog* ([existence](predication.md#existence)): a new noun with no `om` introduces the thing. `zodozel om buwen gelazem` puts *big* on the speaker, not the dog. `zodozel om buwen.` alone says your dog is here (*there's my dog*).
 
-Things B uses include places B lives or sits, tools and rides B uses, ideas B works with, and B's turn, time, or occasion: *Uzozen's birthday* is the day that is Uzozen's to have.
+Things B uses include places B lives or sits, tools and rides B uses, ideas B works with, and B's turn, time, or occasion: *Azozon's birthday* is the day that is Azozon's to have.
 
-> `zuburel om buzozen.`
+> `zuburol om bazozon.`
 >
-> [z-birthday | [used-by | b-Uzozen]]
+> [z-birthday | [used-by | b-Azozon]]
 >
-> "It's Uzozen's birthday."
+> "It's Azozon's birthday."
 
 Other kinds of *'s* each have their own word:
 
 | English *'s* | Use |
 |--------------|-----|
-| legal ownership (*the dog Uzozen owns*) | `gogunum` + `/b/` |
-| something B made (*the book Uzozen wrote*) | a [role compound](roles.md#role-compounds) |
+| legal ownership (*the dog Azozon owns*) | `gegunum` + `/b/` |
+| something B made (*the book Azozon wrote*) | a [role compound](roles.md#role-compounds) |
 
-**`om`** always needs a noun on its left: it belongs to the nearest noun before it (after that noun's `/ɡ/` words). After a verb or at the start of a sentence there is no thing for B to use, so `om` + `/b/` is not a sentence there. For someone's act (*Uzozen's walk*), say the act as its own sentence, then [point back to it](dependents.md#which-noun).
+**`om`** always needs a noun on its left: it belongs to the nearest noun before it (after that noun's `/ɡ/` words). After a verb or at the start of a sentence there is no thing for B to use, so `om` + `/b/` is not a sentence there. For someone's act (*Azozon's walk*), say the act as its own sentence, then [point back to it](dependents.md#which-noun).
 
-**`om`** never takes a person on the left: a person is not something someone uses. **`gogunum`** never does either, because no one owns a person. **`om`** never names a feeling or trait either: a feeling or trait stays something B has, not something B uses. A trait is a `/ɡ/` word on B.
+**`om`** never takes a person on the left: a person is not something someone uses. **`gegunum`** never does either, because no one owns a person. **`om`** never names a feeling or trait either: a feeling or trait stays something B has, not something B uses. A trait is a `/ɡ/` word on B.
 
-**Compare with:** *for Uzozen* is `ol`. A [sake](sakes.md) on `/ɡ/` also marks the noun as yours, together with how it serves you.
+**Compare with:** *for Azozon* is `ol`. A [sake](sakes.md) on `/ɡ/` also marks the noun as yours, together with how it serves you.
 
 ### Practice {#beginner-practice}
 
@@ -142,67 +142,67 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *camera* | `ogewol` | 📷 |
-| *pencil* | `ebewel` | ✏️ |
+| *camera* | `ugewel` | 📷 |
+| *pencil* | `obewol` | ✏️ |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *page* | `ebonel` |
-| *big* | `gelazom` |
-| *write* | `varayel` |
-| *run* | `varuvel` |
-| *see* | `vawebol` |
+| *page* | `obonol` |
+| *big* | `gelazem` |
+| *write* | `varuyol` |
+| *run* | `veruvol` |
+| *see* | `vayebel` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *Uzozen writes on the page.*
+**1.** *Azozon writes on the page.*
 
 ::: details Show answer
-`zuzozen varayel ael bebonel.`
+`zazozon varuyol ael bobonol.`
 
-z-Uzozen | v-write | [on | b-page]
+z-Azozon | v-write | [on | b-page]
 :::
 
-**2.** *Olazun writes a page using a pencil.*
+**2.** *Alazun writes a page using a pencil.*
 
 ::: details Show answer
-`zolazun debonel aol bebewel varayel.`
+`zalazun dobonol aol bobewol varuyol.`
 
-z-Olazun | d-page | [using | b-pencil] | v-write
+z-Alazun | d-page | [using | b-pencil] | v-write
 :::
 
-**3.** *There's Uzozen's camera.*
+**3.** *There's Azozon's camera.*
 
 ::: details Show answer
-`zogewol om buzozen.`
+`zugewel om bazozon.`
 
-[z-camera | [used-by | b-Uzozen]]
+[z-camera | [used-by | b-Azozon]]
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zahelan dogewol om bolazun vawebol.`
+**1.** `zahelan dugewel om balazun vayebel.`
 
 ::: details Show answer
-z-Ahelan | [d-camera | [used-by | b-Olazun]] | v-see
+z-Ahelan | [d-camera | [used-by | b-Alazun]] | v-see
 
-*Ahelan sees Olazun's camera.*
+*Ahelan sees Alazun's camera.*
 :::
 
-**2.** `zuzozen varayel aol bebewel.`
+**2.** `zazozon varuyol aol bobewol.`
 
 ::: details Show answer
-z-Uzozen | v-write | [using | b-pencil]
+z-Azozon | v-write | [using | b-pencil]
 
-*Uzozen writes using a pencil.*
+*Azozon writes using a pencil.*
 :::
 
-**3.** `zahelan varuvel oel bogewol.`
+**3.** `zahelan veruvol oel bugewel.`
 
 ::: details Show answer
 z-Ahelan | v-run | [toward | b-camera]
@@ -212,25 +212,25 @@ z-Ahelan | v-run | [toward | b-camera]
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Olazun runs toward the pencil.* `zolazun varuvel oel bebewel.` or `zolazun varuvel ul bebewel.`
+**1.** *Alazun runs toward the pencil.* `zalazun veruvol oel bobewol.` or `zalazun veruvol ul bobewol.`
 
 ::: details Show answer
-`zolazun varuvel oel bebewel.`
+`zalazun veruvol oel bobewol.`
 
-z-Olazun | v-run | [toward | b-pencil]
+z-Alazun | v-run | [toward | b-pencil]
 
 **`oel`** names where the path ends; **`ul`** is *from* the pencil.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Uzozen's camera is big.* <!-- lint: error -->`zogewol em buzozen gelazom.`
+**1.** *Azozon's camera is big.* <!-- lint: error -->`zugewel em bazozon gelazem.`
 
 ::: details Show answer
-`zogewol gelazom om buzozen.`
+`zugewel gelazem om bazozon.`
 
-[z-camera | g-big | [used-by | b-Uzozen]]
+[z-camera | g-big | [used-by | b-Azozon]]
 
-Put the camera's `/ɡ/` word before **`om`**; after the `/b/` it describes Uzozen.
+Put the camera's `/ɡ/` word before **`om`**; after the `/b/` it describes Azozon.
 :::
 

@@ -6,19 +6,19 @@ band: advanced
 
 ### Scope islands {#scope-islands-join}
 
-A join takes every same-role item before it. When English groups a small list inside a bigger one of the same role (*Uzozen and (just water)*), wrap the small list and its join in **`{ … }`**, called a scope island. The join inside the island takes members only from between those marks. One island per clause; material outside needs its own outer join. An island holds at most one phrase and may close partway through it ([scope islands](/span-mention#scope-islands)).
+A join takes every same-role item before it. When English groups a small list inside a bigger one of the same role (*Azozon and (just water)*), wrap the small list and its join in **`{ … }`**, called a scope island. The join inside the island takes members only from between those marks. One island per clause; material outside needs its own outer join. An island holds at most one phrase and may close partway through it ([scope islands](/span-mention#scope-islands)).
 
 | Agebon | English |
 |--------|---------|
-| `zuzozen { zowulal zal } zam` | *Uzozen and (just water)* |
-| `zuzozen { zal } zam` | *Uzozen and nothing* |
+| `zazozon { zowulal zal } zam` | *Azozon and (just water)* |
+| `zazozon { zal } zam` | *Azozon and nothing* |
 | `{ zowulal zal }` | *just water* (alone in the slot) |
 
-> `zuzozen { zowulal zal } zam.`
+> `zazozon { zowulal zal } zam.`
 >
-> [z-Uzozen | SCOPE[z-water | z-and] | z-and.open]
+> [z-Azozon | SCOPE[z-water | z-and] | z-and.open]
 >
-> "Uzozen and (just water)."
+> "Azozon and (just water)."
 
 **Compare with:** an island limits only what a join or an `/h/` word covers.
 
@@ -28,7 +28,7 @@ A join takes every same-role item before it. When English groups a small list in
 
 When a list is a familiar set phrase (*Stop–Drop–Roll*), end its join with **-n** (under `/z/`, `/d/`, or `/b/`). The **-n** names the whole list as one title, the way it names a person ([titled phrases](/proper-names#titled-phrases)). Members keep their usual endings unless a member is itself a name.
 
-> `zebodol zuyudal zan.`
+> `zobodel zubudal zan.`
 >
 > NAME[z-bread | z-butter | z-and]
 >
@@ -68,7 +68,7 @@ These limits apply to every join.
 | Join **-x** | after **-r** on `/z/` `/d/` `/b/` (a group); after any ending on `/v/` (one shared act) |
 | Verb+object packages | verb-phrase `/v/`; full sentences use `/x/` ([forms](/join-across-roles)) |
 | Revising one item | in-clause *including* / *rather* / *instead* / *except* are [hooks](/hooks) |
-| Several manners on `/h/` `/w/` | juxtaposition (`hedurel halozul`) |
+| Several manners on `/h/` `/w/` | juxtaposition (`hadurol halozul`) |
 
 **Compare with:** prefix-less **`al`** / **`am`** / … are [hooks](/hooks). Under `/h/` `/w/`, the unit is a [restrictor](/restrictors), not sibling *and*.
 
@@ -84,36 +84,36 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *dove* | `adozol` | 🕊️ |
-| *imprimatur* | `ezazom` | 🦭 from *seal*: the stamp of approval |
+| *dove* | `udozel` | 🕊️ |
+| *imprimatur* | `ezazem` | 🦭 from *seal*: the stamp of approval |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *page* | `ebonel` |
-| *pen* | `abewel` |
-| *see* | `vawebol` |
+| *page* | `obonol` |
+| *pen* | `ebewol` |
+| *see* | `vayebel` |
 
 #### English → Agebon {#advanced-english-to-agebon}
 
 **1.** *a page or a pen* (the familiar set phrase)
 
 ::: details Show answer
-`zebonel zabewel zen.`
+`zobonol zebewol zen.`
 
 NAME[z-page | z-pen | z-or-exactly-one]
 :::
 
-**2.** *Uzozen and (just Ahelan)*
+**2.** *Azozon and (just Ahelan)*
 
 ::: details Show answer
-`zuzozen { zahelan zal } zam.`
+`zazozon { zahelan zal } zam.`
 
-[z-Uzozen | SCOPE[z-Ahelan | z-and] | z-and.open]
+[z-Azozon | SCOPE[z-Ahelan | z-and] | z-and.open]
 :::
 
 **3.** *null* / *void*
@@ -124,12 +124,12 @@ NAME[z-page | z-pen | z-or-exactly-one]
 NAME[z-and]
 :::
 
-**4.** *Olazun sees something other than the dove.*
+**4.** *Alazun sees something other than the dove.*
 
 ::: details Show answer
-`zolazun dadozol dur vawebol.`
+`zalazun dudozel dur vayebel.`
 
-z-Olazun | [d-dove | d-something-else] | v-see
+z-Alazun | [d-dove | d-something-else] | v-see
 :::
 
 #### Agebon → English {#advanced-agebon-to-english}
@@ -142,15 +142,15 @@ NAME[z-equal-rank]
 *It's a draw.* (the stock phrase)
 :::
 
-**2.** `zuzozen { zal } zam.`
+**2.** `zazozon { zal } zam.`
 
 ::: details Show answer
-[z-Uzozen | SCOPE[z-none] | z-and.open]
+[z-Azozon | SCOPE[z-none] | z-and.open]
 
-*Uzozen and nothing*
+*Azozon and nothing*
 :::
 
-**3.** `zezazom zebonel zur.`
+**3.** `zezazem zobonol zur.`
 
 ::: details Show answer
 [z-imprimatur | z-page | z-something-else]
@@ -158,30 +158,30 @@ NAME[z-equal-rank]
 *something other than the seal and the page*
 :::
 
-**4.** `zolazun debonel dabewel dan vawebol.`
+**4.** `zalazun dobonol debewol dan vayebel.`
 
 ::: details Show answer
-z-Olazun | NAME[d-page | d-pen | d-and] | v-see
+z-Alazun | NAME[d-page | d-pen | d-and] | v-see
 
-*Olazun sees “Page-and-Pen”.* (the familiar pair)
+*Alazun sees “Page-and-Pen”.* (the familiar pair)
 :::
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Uzozen and (just the dove)* `zuzozen { zadozol zal } zam.` or `zuzozen zadozol zal zam.`
+**1.** *Azozon and (just the dove)* `zazozon { zudozel zal } zam.` or `zazozon zudozel zal zam.`
 
 ::: details Show answer
-`zuzozen { zadozol zal } zam.`
+`zazozon { zudozel zal } zam.`
 
-[z-Uzozen | SCOPE[z-dove | z-and] | z-and.open]
+[z-Azozon | SCOPE[z-dove | z-and] | z-and.open]
 
-The island keeps **`zal`** on the dove alone; without braces it closes Uzozen and the dove together.
+The island keeps **`zal`** on the dove alone; without braces it closes Azozon and the dove together.
 :::
 
-**2.** *“Page and Pen”* (the familiar set phrase) `zebonel zabewel zan.` or `zebonel zabewel zal.`
+**2.** *“Page and Pen”* (the familiar set phrase) `zobonol zebewol zan.` or `zobonol zebewol zal.`
 
 ::: details Show answer
-`zebonel zabewel zan.`
+`zobonol zebewol zan.`
 
 NAME[z-page | z-pen | z-and]
 
@@ -202,15 +202,15 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 | **…ar** / **…or** / **…er** / **…ur** | unspecified member at every arity | [unspecified **-r**](/joins#unspecified-member-r-phrase) |
 | **…oen** / **…en** / **…an** standalone | stock empty rank / named empty | *it's a draw*; *no favorite* (stock); *null* / *void* |
 | **…ual** / **…uol** standalone | empty invert | *everything*; *anything (goes)* |
-| `zeyol` vs `zeyol zar` | content **-l** vs join **-r** | *a person* vs *some person, unknown who* |
+| `zeyel` vs `zeyel zar` | content **-l** vs join **-r** | *a person* vs *some person, unknown who* |
 | `A B C zer` vs `… zor` | menu vs rank unspecified | any of them is fine vs pick by ranking |
 | `A B zar` / `zur` / `zual` | among / leftover / invert | some one among; some one other than; *everything but* |
 | `A B zol` vs `A B zaol` | rank vs [sequence](/rank-joins#sequence-ao) | A matters more than B vs A, then B |
 
-> `zududal zugudal zowulal zer.`
+> `zedudal zogudal zowulal zer.`
 >
 > [z-tea | z-coffee | z-water | z-anything]
 >
 > "any of tea, coffee, or water is fine."
 
-**For *except*, use:** hook **`ul`** / **`um`** ([hooks](/hooks)). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (pick one of a closed list, but the pick is optional: `zududal zugudal zel zem`).
+**For *except*, use:** hook **`ul`** / **`um`** ([hooks](/hooks)). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (pick one of a closed list, but the pick is optional: `zedudal zogudal zel zem`).

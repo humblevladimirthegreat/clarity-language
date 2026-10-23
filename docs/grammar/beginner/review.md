@@ -18,57 +18,57 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *I* | `uwon` |
+| *I* | `uwen` |
 | *school* | `uzahal` |
 | *guard* | `agayul` |
-| *angry* | `unemul` |
+| *angry* | `onumul` |
 | *umbrella* | `omobul` |
-| *police* | `obayel` |
-| *see* | `vawebol` |
-| *run* | `varuvel` |
-| *duck* | `udozal` |
-| *sing* | `vezuyol` |
-| *tomato* | `udedol` |
-| *smell* | `vonebol` |
-| *wind* | `ewulel` |
-| *peek* | `vebemel` |
-| *tell* | `vezuyel` |
+| *police* | `ebayol` |
+| *see* | `vayebel` |
+| *run* | `veruvol` |
+| *duck* | `adozal` |
+| *sing* | `vozuyel` |
+| *tomato* | `odedel` |
+| *smell* | `vonebel` |
+| *wind* | `awulol` |
+| *peek* | `vebemol` |
+| *tell* | `vezuyol` |
 | *sandwich* | `edal` |
-| *cookie* | `ugedol` |
-| *cook* | `vuguyel` |
-| *scream* | `varemul` |
-| *fight* | `vavuvul` |
-| *mango* | `emedol` |
-| *watermelon* | `owodol` |
-| *write* | `varayel` |
-| *swim* | `vazuvel` |
+| *cookie* | `ugedel` |
+| *cook* | `vuguyol` |
+| *scream* | `veyamul` |
+| *fight* | `vuvuvul` |
+| *mango* | `amedel` |
+| *watermelon* | `owodel` |
+| *write* | `varuyol` |
+| *swim* | `vazuvol` |
 | *night* | `anurul` |
-| *intensity* | `uhunem` |
-| *helmet* | `ehobul` |
+| *intensity* | `ahunom` |
+| *helmet* | `umobul` |
 | *physical* | `obal` |
-| *punch* | `vanuvul` |
-| *wood* | `ulel` |
+| *punch* | `vabuvul` |
+| *wood* | `ulol` |
 | *basket* | `abowal` |
-| *sit* | `vuhohol` |
-| *companionship* | `gumayam` |
-| *relatedness* | `awol` |
+| *sit* | `vehohel` |
+| *companionship* | `gamayam` |
+| *relatedness* | `awel` |
 | *listener* | `awan` |
-| *walk* | `vowurel` |
-| *departure* | `velurul` |
+| *walk* | `vowurol` |
+| *departure* | `vudurul` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *An angry Olazun sees an umbrella.*
+**1.** *An angry Alazun sees an umbrella.*
 
 ::: details Show answer
-`zolazun gunemul domobul vawebol.`
+`zalazun gonumul domobul vayebel.`
 
-[z-Olazun | g-angry] | d-umbrella | v-see
+[z-Alazun | g-angry] | d-umbrella | v-see
 
-**Also correct:** `domobul zolazun gunemul vawebol.`
+**Also correct:** `domobul zalazun gonumul vayebel.`
 
 **Rule:** [Adjectives](clause.md#adjectives-ɡ)
 :::
@@ -76,21 +76,21 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **2.** *Ahelan sees a guard. The guard runs.*
 
 ::: details Show answer
-`zahelan dagayul vawebol. zagayur varuvel.`
+`zahelan dagayul vayebel. zagayur veruvol.`
 
 z-Ahelan | d-guard | v-see . z-←guard | v-run
 
-**Also correct:** `zahelan dagayul vawebol. zwuder varuvel.`
+**Also correct:** `zahelan dagayul vayebel. zwuder veruvol.`
 
 **Rule:** [Resume with -r](pronouns.md#resume-r)
 :::
 
-**3.** *Uzozen sings like a duck.*
+**3.** *Azozon sings like a duck.*
 
 ::: details Show answer
-`zuzozen hewom bludozal vezuyol.`
+`zazozon hewem bladozal vozuyel.`
 
-z-Uzozen | [h-like | bl-duck] | v-sing
+z-Azozon | [h-like | bl-duck] | v-sing
 
 **Rule:** [Like (resembles)](relations.md#like-resembles)
 :::
@@ -98,7 +98,7 @@ z-Uzozen | [h-like | bl-duck] | v-sing
 **4.** *Ahelan smells three tomatoes.*
 
 ::: details Show answer
-`zahelan dudedolx gragel vonebol.`
+`zahelan dodedelx gragel vonebel.`
 
 z-Ahelan | [d-tomato-x | g-three] | v-smell
 
@@ -108,96 +108,96 @@ z-Ahelan | [d-tomato-x | g-three] | v-smell
 **5.** *Ahelan sings if there is wind.*
 
 ::: details Show answer
-`zahelan vezuyol thohom blewulel.`
+`zahelan vozuyel thohem blawulol.`
 
 z-Ahelan | v-sing | [th-if | bl-wind]
 
 **Rule:** [If](causation.md#if)
 :::
 
-**6.** *An angry Olazun runs.* (*angry* first)
+**6.** *An angry Alazun runs.* (*angry* first)
 
 ::: details Show answer
-`glunemul zolazun varuvel.`
+`glonumul zalazun veruvol.`
 
-[gl-angry | z-Olazun] | v-run
+[gl-angry | z-Alazun] | v-run
 
 **Rule:** [Adjectives before the noun](left-bound-adjectives.md#left-bound-adjectives)
 :::
 
-**7.** *Ahelan is Olazun's friend.*
+**7.** *Ahelan is Alazun's friend.*
 
 ::: details Show answer
-`zahelan gumayam blolazun.`
+`zahelan gamayam blalazun.`
 
-z-Ahelan | [g-companionship | bl-Olazun]
+z-Ahelan | [g-companionship | bl-Alazun]
 
 **Rule:** [Social relations](social-ties.md#social-relations)
 :::
 
-**8.** *Uzozen punches, then Olazun screams.*
+**8.** *Azozon punches, then Alazun screams.*
 
 ::: details Show answer
-`zuzozen vanuvul xan zolazun varemul.`
+`zazozon vabuvul xan zalazun veyamul.`
 
-[z-Uzozen | v-punch | x-and-then | z-Olazun | v-scream]
+[z-Azozon | v-punch | x-and-then | z-Alazun | v-scream]
 
 **Rule:** [Sequence](clause-sequence.md#sequence)
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zahelan vawebol darl zolazun vebemel.`
+**1.** `zahelan vayebel darl zalazun vebemol.`
 
 ::: details Show answer
-z-Ahelan | v-see | d-that-clause | z-Olazun | v-peek
+z-Ahelan | v-see | d-that-clause | z-Alazun | v-peek
 
-*Ahelan sees that Olazun peeks.*
+*Ahelan sees that Alazun peeks.*
 
 **Rule:** [Dependent clauses](dependents.md#dependent-clauses)
 :::
 
-**2.** `zuzozen vezuyel bolazunx.`
+**2.** `zazozon vezuyol balazunx.`
 
 ::: details Show answer
-z-Uzozen | v-tell | b-Olazun-x
+z-Azozon | v-tell | b-Alazun-x
 
-*Uzozen talks to Olazun and associates.*
+*Azozon talks to Alazun and associates.*
 
 **Rule:** [Associative group](plurality.md#associative)
 :::
 
-**3.** `zuzozen dedal el dugedol vuguyel.`
+**3.** `zazozon dedal el dugedel vuguyol.`
 
 ::: details Show answer
-z-Uzozen | d-sandwich | instead | d-cookie | v-cook
+z-Azozon | d-sandwich | instead | d-cookie | v-cook
 
-*Uzozen cooks a cookie instead of a sandwich.*
+*Azozon cooks a cookie instead of a sandwich.*
 
 **Rule:** [Instead](hooks.md#instead)
 :::
 
-**4.** `zahelan vezuyol th(zolazun varemul).`
+**4.** `zahelan vozuyel th(zalazun veyamul).`
 
 ::: details Show answer
-z-Ahelan | v-sing | th-ASIDE[z-Olazun | v-scream]
+z-Ahelan | v-sing | th-ASIDE[z-Alazun | v-scream]
 
-*Ahelan sings (Olazun is screaming).*
+*Ahelan sings (Alazun is screaming).*
 
 **Rule:** [Asides](spans.md#asides-th)
 :::
 
-**5.** `zolazun thomam vavuvul.`
+**5.** `zalazun thomam vuvuvul.`
 
 ::: details Show answer
-z-Olazun | th-MAY | v-fight
+z-Alazun | th-MAY | v-fight
 
-*Olazun may be fighting.*
+*Alazun may be fighting.*
 
 **Rule:** [MAY](knowing.md#may)
 :::
 
-**6.** `yel el bar zahelan vuhohol.`
+**6.** `yel el bar zahelan vehohel.`
 
 ::: details Show answer
 y-question | [at | b-wh] | z-Ahelan | v-sit
@@ -207,7 +207,7 @@ y-question | [at | b-wh] | z-Ahelan | v-sit
 **Rule:** [Where?](fill-ask-jobs.md#where)
 :::
 
-**7.** `zedal em buwon.`
+**7.** `zedal em buwen.`
 
 ::: details Show answer
 z-sandwich | [near | b-speaker]
@@ -217,7 +217,7 @@ z-sandwich | [near | b-speaker]
 **Rule:** [Here and there](here-there.md#deixis)
 :::
 
-**8.** `thawothum blawan.`
+**8.** `thawethum blawan.`
 
 ::: details Show answer
 [th-relatedness-unmet-modifiable | bl-listener]
@@ -241,34 +241,34 @@ education
 **Rule:** [First mention, abstract](word-endings.md#abstract-m)
 :::
 
-**2.** *Uzozen sees a mango or a watermelon: exactly one of the two.* `zuzozen demedol dowodol del vawebol.` or `zuzozen demedol dowodol dal vawebol.`
+**2.** *Azozon sees a mango or a watermelon: exactly one of the two.* `zazozon damedel dowodel del vayebel.` or `zazozon damedel dowodel dal vayebel.`
 
 ::: details Show answer
-`zuzozen demedol dowodol del vawebol.`
+`zazozon damedel dowodel del vayebel.`
 
-z-Uzozen | [d-mango | d-watermelon | d-or-exactly-one] | v-see
+z-Azozon | [d-mango | d-watermelon | d-or-exactly-one] | v-see
 
 **`del`** picks one of the items; **`dal`** would be *a mango and a watermelon*.
 
 **Rule:** [Choice (e)](joins.md#choice-e)
 :::
 
-**3.** *What does Olazun write?* `yel ?dar zolazun varayel.` or `yel ?dur zolazun varayel.`
+**3.** *What does Alazun write?* `yel ?dar zalazun varuyol.` or `yel ?dur zalazun varuyol.`
 
 ::: details Show answer
-`yel ?dar zolazun varayel.`
+`yel ?dar zalazun varuyol.`
 
-y-question | ?d-wh | z-Olazun | v-write
+y-question | ?d-wh | z-Alazun | v-write
 
 **`dar`** asks *what*; **`dur`** asks *what else*.
 
 **Rule:** [Fill-ask](questions.md#fill-ask)
 :::
 
-**4.** *Ahelan swims only at night.* `zahelan vazuvel hanurul hal.` or `zahelan vazuvel hanurul ham.`
+**4.** *Ahelan swims only at night.* `zahelan vazuvol hanurul hal.` or `zahelan vazuvol hanurul ham.`
 
 ::: details Show answer
-`zahelan vazuvel hanurul hal.`
+`zahelan vazuvol hanurul hal.`
 
 z-Ahelan | v-swim | h-night | h-only-when
 
@@ -277,22 +277,22 @@ Closed **`hal`** says night is the only time; open **`ham`** leaves room for oth
 **Rule:** [Only when / never](restrictors.md#only-when-never-hal)
 :::
 
-**5.** *Uzozen is more intense than Olazun.* `zuzozen zolazun zol guhunem.` or `zolazun zuzozen zol guhunem.`
+**5.** *Azozon is more intense than Alazun.* `zazozon zalazun zol gahunom.` or `zalazun zazozon zol gahunom.`
 
 ::: details Show answer
-`zuzozen zolazun zol guhunem.`
+`zazozon zalazun zol gahunom.`
 
-[z-Uzozen | z-Olazun | z-rank/more | g-intensity]
+[z-Azozon | z-Alazun | z-rank/more | g-intensity]
 
 The first name before **`zol`** ranks higher.
 
 **Rule:** [Comparatives](comparatives.md#comparatives)
 :::
 
-**6.** *My helmet serves the physical sake in the long term.* `zehobul gobathal.` or `zehobul gobathul.`
+**6.** *My helmet serves the physical sake in the long term.* `zumobul gobathal.` or `zumobul gobathul.`
 
 ::: details Show answer
-`zehobul gobathal.`
+`zumobul gobathal.`
 
 z-helmet | g-physical-met-lasting
 
@@ -301,34 +301,34 @@ z-helmet | g-physical-met-lasting
 **Rule:** [Met](sakes.md#met)
 :::
 
-**7.** *Uzozen sees someone who was punched.* `zuzozen dwudanuvul vawebol.` or `zuzozen dwuzanuvul vawebol.`
+**7.** *Azozon sees someone who was punched.* `zazozon dwudabuvul vayebel.` or `zazozon dwuzabuvul vayebel.`
 
 ::: details Show answer
-`zuzozen dwudanuvul vawebol.`
+`zazozon dwudabuvul vayebel.`
 
-z-Uzozen | d-episode-patient-punch | v-see
+z-Azozon | d-episode-patient-punch | v-see
 
 Part **`d`** names who the punch happens to; **`z`** is who punches.
 
 **Rule:** [The undergoer](roles.md#the-undergoer-d)
 :::
 
-**8.** *a wood basket* `zulexabowal.` or `zabowaxulel.`
+**8.** *a wood basket* `zuloxabowal.` or `zabowaxulol.`
 
 ::: details Show answer
-`zulexabowal.`
+`zuloxabowal.`
 
 z-wood-x-basket
 
-A wood basket is a kind of basket, so *basket* comes last; `zabowaxulel` would be a kind of wood.
+A wood basket is a kind of basket, so *basket* comes last; `zabowaxulol` would be a kind of wood.
 
 **Rule:** [Two roots, one word](compounds.md#two-roots-one-word)
 :::
 
-**9.** *Ahelan, please don't run.* `yahelan yum varuvel.` or `yahelan yul varuvel.`
+**9.** *Ahelan, please don't run.* `yahelan yum veruvol.` or `yahelan yul veruvol.`
 
 ::: details Show answer
-`yahelan yum varuvel.`
+`yahelan yum veruvol.`
 
 y-Ahelan | y-soft-prohibition | v-run
 
@@ -337,46 +337,46 @@ y-Ahelan | y-soft-prohibition | v-run
 **Rule:** [Speech act: firm and soft](firm-soft.md#speech-act)
 :::
 
-**10.** *Olazun fights against a guard.* `zolazun vavuvul uol bagayul.` or `zolazun vavuvul ual bagayul.`
+**10.** *Alazun fights against a guard.* `zalazun vuvuvul uol bagayul.` or `zalazun vuvuvul ual bagayul.`
 
 ::: details Show answer
-`zolazun vavuvul uol bagayul.`
+`zalazun vuvuvul uol bagayul.`
 
-z-Olazun | v-fight | [against | b-guard]
+z-Alazun | v-fight | [against | b-guard]
 
 **`uol`** is *against*; **`ual`** is *out of* the guard.
 
 **Rule:** [Extra noun: stacked vowels](extra-noun-hooks.md#extra-noun-intermediate)
 :::
 
-**11.** *Olazun can't sing yet.* `zolazun vezuyoxel.` or `zolazun vezuyoxol.`
+**11.** *Alazun can't sing yet.* `zalazun vozuyexel.` or `zalazun vozuyexol.`
 
 ::: details Show answer
-`zolazun vezuyoxel.`
+`zalazun vozuyexel.`
 
-z-Olazun | v-sing-unable-modifiable
+z-Alazun | v-sing-unable-modifiable
 
 **`xe`** is *can't yet*; **`xo`** is *can't right now* when they usually can.
 
 **Rule:** [Ability and incapability](can-and-cant.md#ability)
 :::
 
-**12.** *Olazun is angry this time.* `zolazun gunemuthul.` or `zolazun gunemuthal.`
+**12.** *Alazun is angry this time.* `zalazun gonumuthul.` or `zalazun gonumuthal.`
 
 ::: details Show answer
-`zolazun gunemuthul.`
+`zalazun gonumuthul.`
 
-z-Olazun | g-angry-th-episode
+z-Alazun | g-angry-th-episode
 
-**`tha`** is this episode; **`thu`** would make Olazun an angry type.
+**`tha`** is this episode; **`thu`** would make Alazun an angry type.
 
 **Rule:** [Label scope](label-seams.md#label-scope)
 :::
 
-**13.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyel thobather blwuzor.` or `zahelan vuguyel thobathem blwuzor.`
+**13.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyol thobather blwuzor.` or `zahelan vuguyol thobathem blwuzor.`
 
 ::: details Show answer
-`zahelan vuguyel thobather blwuzor.`
+`zahelan vuguyol thobather blwuzor.`
 
 z-Ahelan | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
 
@@ -385,24 +385,24 @@ z-Ahelan | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
 **Rule:** [Ought for a sake](ought-for-a-sake.md#sake-force)
 :::
 
-**14.** *Uzozen is still walking.* `zuzozen hawum vowurel.` or `zuzozen hawur vowurel.`
+**14.** *Azozon is still walking.* `zazozon hawum vowurol.` or `zazozon hawur vowurol.`
 
 ::: details Show answer
-`zuzozen hawum vowurel.`
+`zazozon hawum vowurol.`
 
-z-Uzozen | h-still | v-walk
+z-Azozon | h-still | v-walk
 
 **-m** says it goes on and could change; **`hawur`** would say it is about to end.
 
 **Rule:** [Already, still, not yet, no longer](already-still-yet.md#phasal)
 :::
 
-**15.** *Uzozen left because Olazun spoke, and Olazun was wrong to.* `zuzozen velurul thahul blarl zolazun vezuyel.` or `zuzozen velurul thahum blarl zolazun vezuyel.`
+**15.** *Azozon left because Alazun spoke, and Alazun was wrong to.* `zazozon vudurul thahul blarl zalazun vezuyol.` or `zazozon vudurul thahum blarl zalazun vezuyol.`
 
 ::: details Show answer
-`zuzozen velurul thahul blarl zolazun vezuyel.`
+`zazozon vudurul thahul blarl zalazun vezuyol.`
 
-z-Uzozen | v-departure | [th-because.fault | bl-that-clause] | z-Olazun | v-tell
+z-Azozon | v-departure | [th-because.fault | bl-that-clause] | z-Alazun | v-tell
 
 **-l** says the speaking broke a rule; **-m** is a plain cause, with no fault claimed.
 
@@ -411,10 +411,10 @@ z-Uzozen | v-departure | [th-because.fault | bl-that-clause] | z-Olazun | v-tell
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Ahelan, don’t run!* <!-- lint: error -->`yahelan yel varuvel.`
+**1.** *Ahelan, don’t run!* <!-- lint: error -->`yahelan yel veruvol.`
 
 ::: details Show answer
-`yahelan yul varuvel.`
+`yahelan yul veruvol.`
 
 y-Ahelan | y-prohibition | v-run
 
@@ -423,26 +423,26 @@ y-Ahelan | y-prohibition | v-run
 **Rule:** [Speech act](speech-moves.md#speech-act-statement-question-command)
 :::
 
-**2.** *Olazun is a police officer.* <!-- lint: error -->`zolazun gorol bobayel.`
+**2.** *Alazun is a police officer.* <!-- lint: error -->`zalazun gorel bebayol.`
 
 ::: details Show answer
-`zolazun gobayel.`
+`zalazun gebayol.`
 
-z-Olazun | g-police
+z-Alazun | g-police
 
-**`gorol`** says Olazun and the police are one and the same; to put Olazun in a kind, the kind word goes on `/ɡ/`.
+**`gorel`** says Alazun and the police are one and the same; to put Alazun in a kind, the kind word goes on `/ɡ/`.
 
 **Rule:** [Kind / role](predication.md#classification)
 :::
 
-**3.** *At 15:30 Olazun runs.* <!-- lint: error -->`hragel zolazun varuvel.`
+**3.** *At 15:30 Alazun runs.* <!-- lint: error -->`hragel zalazun veruvol.`
 
 ::: details Show answer
-`h_15,30 zolazun varuvel.`
+`h_15,30 zalazun veruvol.`
 
-🔊 `hrebazathegemol zolazun varuvel.`
+🔊 `hrebazathegemol zalazun veruvol.`
 
-h-_15,30 | z-Olazun | v-run
+h-_15,30 | z-Alazun | v-run
 
 A clock time is a digit string under `/h/`; **`hragel`** is *three times*.
 
@@ -451,24 +451,24 @@ A clock time is a digit string under `/h/`; **`hragel`** is *three times*.
 
 #### What changes {#beginner-what-changes}
 
-**1.** `zuwon thager vazuvel.` / `zuwon thagel vazuvel.`
+**1.** `zuwen thagor vazuvol.` / `zuwen thagol vazuvol.`
 
 ::: details Show answer
 z-speaker | th-plan-sketch | v-swim
 
 z-speaker | th-plan-atlas | v-swim
 
-With **`thager`**, I only intend to swim: the direction, details open. With **`thagel`**, I am fully prepared, with hurdles planned for.
+With **`thagor`**, I only intend to swim: the direction, details open. With **`thagol`**, I am fully prepared, with hurdles planned for.
 
 **Rule:** [Plan](intention.md#plan)
 :::
 
-**2.** `zolazun thugom vavuvul.` / `zolazun thevum vavuvul.`
+**2.** `zalazun thugem vuvuvul.` / `zalazun thevum vuvuvul.`
 
 ::: details Show answer
-z-Olazun | th-LIVE | v-fight
+z-Alazun | th-LIVE | v-fight
 
-z-Olazun | th-MEMORY | v-fight
+z-Alazun | th-MEMORY | v-fight
 
 **LIVE** is now; **MEMORY** is a scene you remember sensing.
 

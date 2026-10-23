@@ -33,8 +33,8 @@ function lex(text: string) {
 
 describe("segmentUtterance", () => {
   it("peels trailing period from a word", () => {
-    assert.deepEqual(segmentUtterance("gelulul."), [
-      { kind: "word", text: "gelulul" },
+    assert.deepEqual(segmentUtterance("gululul."), [
+      { kind: "word", text: "gululul" },
       { kind: "punct", punct: "period" },
     ]);
   });
@@ -74,8 +74,8 @@ describe("classifyToTokenType", () => {
 });
 
 describe("tokenizeUtterance", () => {
-  it("tokenizes gelulul. with period", () => {
-    const tokens = tokenizeUtterance("gelulul.", tables);
+  it("tokenizes gululul. with period", () => {
+    const tokens = tokenizeUtterance("gululul.", tables);
     assert.equal(tokens.length, 2);
     assert.equal(tokens[1]!.image, ".");
   });
@@ -83,11 +83,11 @@ describe("tokenizeUtterance", () => {
 
 describe("tone marks", () => {
   it("emits attached and free-standing marks as tone segments", () => {
-    assert.deepEqual(segmentUtterance("?! zuzozen !!veyel ?{ hal }."), [
+    assert.deepEqual(segmentUtterance("?! zazozon !!veyol ?{ hal }."), [
       { kind: "tone", mark: "?!", attached: false },
-      { kind: "word", text: "zuzozen" },
+      { kind: "word", text: "zazozon" },
       { kind: "tone", mark: "!!", attached: true },
-      { kind: "word", text: "veyel" },
+      { kind: "word", text: "veyol" },
       { kind: "tone", mark: "?", attached: true },
       { kind: "islandEdge", open: true },
       { kind: "word", text: "hal" },
@@ -97,9 +97,9 @@ describe("tone marks", () => {
   });
 
   it("reads a whole stack as one run", () => {
-    assert.deepEqual(segmentUtterance("%!zuzozen."), [
+    assert.deepEqual(segmentUtterance("%!zazozon."), [
       { kind: "tone", mark: "%!", attached: true },
-      { kind: "word", text: "zuzozen" },
+      { kind: "word", text: "zazozon" },
       { kind: "punct", punct: "period" },
     ]);
   });
@@ -108,15 +108,15 @@ describe("tone marks", () => {
 describe("scanChunks", () => {
   it("keeps a written span whole, with its tone mark and sentence mark", () => {
     assert.deepEqual(
-      scanChunks("zuzozen !d[zuzozer vowurel]. dududal").map((chunk) => chunk.text),
-      ["zuzozen", "!d[zuzozer vowurel].", "dududal"],
+      scanChunks("zazozon !d[zazozor vowurol]. dedudal").map((chunk) => chunk.text),
+      ["zazozon", "!d[zazozor vowurol].", "dedudal"],
     );
   });
 
   it("splits island braces as their own chunks", () => {
     assert.deepEqual(
-      scanChunks("zuzozen { hegugom zudozol } vawebol").map((chunk) => chunk.text),
-      ["zuzozen", "{", "hegugom", "zudozol", "}", "vawebol"],
+      scanChunks("zazozon { hogugem zodozel } vayebel").map((chunk) => chunk.text),
+      ["zazozon", "{", "hogugem", "zodozel", "}", "vayebel"],
     );
   });
 });

@@ -27,12 +27,12 @@ The vowel is the kind of content, the same four vowels as the act words. **-rl**
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [That-clause](/dependents#dependent-clauses) | `zuzozen vezuyel bolazun darl zudozol varuvel.` | *Uzozen tells Olazun that the dog runs.* | B |
-| [Whether](/dependents#dependent-clauses) | `zuzozen vawebol derl zolazun vowurel.` | *Uzozen sees whether Olazun walks.* | B |
-| [Told to](/sentence-linkers#stand-in) | `zuzozen vezuyel bolazun dorl vuhohol.` | *Uzozen tells Olazun to sit.* | I |
-| [Told not to](/sentence-linkers#stand-in) | `zuzozen vezuyel bolazun durl vuhohol.` | *Uzozen tells Olazun not to sit.* | I |
-| [Own subject, no one told](/sentence-linkers#stand-in) | `zuzozen valem dorl zuzozen vuhohol.` | *Uzozen wishes to sit.* | I |
-| [Join inside the clause](/sentence-linkers#stand-in): `xel` | `zuzozen vawebol derl zolazun vowurel xel zahelan varuvel.` | *Uzozen sees whether Olazun walks or Ahelan runs.* | I |
+| [That-clause](/dependents#dependent-clauses) | `zazozon vezuyol balazun darl zodozel veruvol.` | *Azozon tells Alazun that the dog runs.* | B |
+| [Whether](/dependents#dependent-clauses) | `zazozon vayebel derl zalazun vowurol.` | *Azozon sees whether Alazun walks.* | B |
+| [Told to](/sentence-linkers#stand-in) | `zazozon vezuyol balazun dorl vehohel.` | *Azozon tells Alazun to sit.* | I |
+| [Told not to](/sentence-linkers#stand-in) | `zazozon vezuyol balazun durl vehohel.` | *Azozon tells Alazun not to sit.* | I |
+| [Own subject, no one told](/sentence-linkers#stand-in) | `zazozon valom dorl zazozon vehohel.` | *Azozon wishes to sit.* | I |
+| [Join inside the clause](/sentence-linkers#stand-in): `xel` | `zazozon vayebel derl zalazun vowurol xel zahelan veruvol.` | *Azozon sees whether Alazun walks or Ahelan runs.* | I |
 
 The vowels match the act words: `yal` statement, `yol` command, `yel` question, `yul` avoid.
 
@@ -52,7 +52,7 @@ Drop the inner `/z/` only after `dorl` / `dorm` or `durl` / `durm` filling `/d/`
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Say so](/sentence-linkers#stand-in-back) | `zolazun vuhohol. zuzozen vezuyel darth.` | *Olazun sits. Uzozen says so.* | I |
+| [Say so](/sentence-linkers#stand-in-back) | `zalazun vehohel. zazozon vezuyol darth.` | *Alazun sits. Azozon says so.* | I |
 
 Other role letters work the same way: `blarth` after a pole (*because of that*), `zarth` as the subject. There is no stand-in on `/ɡ/`, `/h/`, `/w/`, or `/th/`.
 
@@ -75,41 +75,41 @@ Other role letters work the same way: `blarth` after a pole (*because of that*),
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Confirm](/stand-in-roles#stand-in-roles) | `zuzozen vaon zolazun vuhohol.` | *Uzozen confirms that Olazun sits.* | A |
-| [Decline](/stand-in-roles#stand-in-roles) | `zuzozen vuen zuzozen vuhohol.` | *Uzozen declines to sit.* | A |
-| [It is … that](/stand-in-roles#stand-in-roles) | `gamahum zarl zuzozen vowurel.` | *It is hard for Uzozen to walk.* | A |
-| [Nested](/stand-in-roles#nested-dependents) | `zuzozen guzemol thahum blarl zolazun vowurel thahum blarl zahelan vezuvol.` | *Uzozen is sleepy because Olazun walks because Ahelan sleeps.* (Ahelan's sleep is why Olazun walks) | A |
+| [Confirm](/stand-in-roles#stand-in-roles) | `zazozon vaon zalazun vehohel.` | *Azozon confirms that Alazun sits.* | A |
+| [Decline](/stand-in-roles#stand-in-roles) | `zazozon vuen zazozon vehohel.` | *Azozon declines to sit.* | A |
+| [It is … that](/stand-in-roles#stand-in-roles) | `gamahum zarl zazozon vowurol.` | *It is hard for Azozon to walk.* | A |
+| [Nested](/stand-in-roles#nested-dependents) | `zazozon guzemel thahum blarl zalazun vowurol thahum blarl zahelan vezuvel.` | *Azozon is sleepy because Alazun walks because Ahelan sleeps.* (Ahelan's sleep is why Alazun walks) | A |
 
 ## Because, if, although {#poles}
 
-A **pole** names the link and takes the stand-in `blarl` as its `/b/`. Keep the pair last, then the dependent sentence. Poles use the abstract **-m**. *Because* and *if* are stance, so `/th/`; the rest describe the event, so `/h/`. A noun in `/b/` in place of `blarl` works too (*despite Olazun*); on a noun, swap the letter to `/ɡ/`.
+A **pole** names the link and takes the stand-in `blarl` as its `/b/`. Keep the pair last, then the dependent sentence. Poles use the abstract **-m**. *Because* and *if* are stance, so `/th/`; the rest describe the event, so `/h/`. A noun in `/b/` in place of `blarl` works too (*despite Alazun*); on a noun, swap the letter to `/ɡ/`.
 
 <!-- cheat-sheet: linking-clauses -->
 | Agebon | English | Stage |
 |--------|---------|-------|
 | [**`thahum blarl`**](/dependents#poles) | *because* | B |
-| [**`thohom blarl`**](/dependents#poles) | *if* | B |
-| [**`thebom blarl`**](/dependents#poles) | *only if* | B |
-| [**`thehem blarl`**](/dependents#poles) | *if and only if* | B |
-| [**`hezom blarl`**](/dependents#poles) | *although* / *even though* | B |
-| [**`herem blarl`**](/dependents#poles) | *while* | B |
+| [**`thohem blarl`**](/dependents#poles) | *if* | B |
+| [**`thebem blarl`**](/dependents#poles) | *only if* | B |
+| [**`thehom blarl`**](/dependents#poles) | *if and only if* | B |
+| [**`hezem blarl`**](/dependents#poles) | *although* / *even though* | B |
+| [**`herom blarl`**](/dependents#poles) | *while* | B |
 | [**`harum blarl`**](/dependents#poles) | *until* | B |
-| [**`hevahum blarl`**](/dependents#poles) | *by the time* | B |
+| [**`huvahum blarl`**](/dependents#poles) | *by the time* | B |
 | [**`habam blarl`**](/dependents#poles) | *before* | B |
 | [**`halam blarl`**](/dependents#poles) | *after* | B |
 | [**`hovam blarl`**](/dependents#poles) | *so that* / *in order to* | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Because](/dependents#poles) | `zuzozen vezuyol thahum blarl zolazun vowurel.` | *Uzozen sings because Olazun walks.* | B |
-| [If, on a command](/dependents#poles) | `yol vowurel thohom blarl zolazun vuhohol.` | *If Olazun sits, walk.* | B |
-| [Despite, with a noun](/dependents#poles) | `zuzozen vowurel hezom blolazun.` | *Uzozen walks despite Olazun.* | B |
-| [So that](/dependents#so-that) | `zuzozen vowurel hovam blarl zolazun vuhohol.` | *Uzozen walks so that Olazun sits.* | B |
-| [In order to](/dependents#so-that): name the doer again | `zuzozen vowurel hovam blarl zuzozen vuhohol.` | *Uzozen walks in order to sit.* | B |
-| [So as not to](/sentence-linkers#stand-in): `blurl` for `blarl` | `zuzozen vowurel hovam blurl zuzozen vuhohol.` | *Uzozen walks so as not to sit.* | I |
-| [Unless](/sentence-linkers#stand-in): `blurl` for `blarl` | `zuzozen vowurel thohom blurl zolazun vezuvol.` | *Uzozen walks unless Olazun sleeps.* | I |
-| [So … that](/sentence-linkers#result-pole): the result happened | `zuzozen welazom godamul hahem blarl zuzozer vezuvol.` | *Uzozen is so tired that they sleep.* | I |
-| [As soon as](/dependents#time-poles) | `zuzozen vowurel wedurem halam blarl zolazun vuhohol.` | *Uzozen walks as soon as Olazun sits.* | B |
+| [Because](/dependents#poles) | `zazozon vozuyel thahum blarl zalazun vowurol.` | *Azozon sings because Alazun walks.* | B |
+| [If, on a command](/dependents#poles) | `yol vowurol thohem blarl zalazun vehohel.` | *If Alazun sits, walk.* | B |
+| [Despite, with a noun](/dependents#poles) | `zazozon vowurol hezem blalazun.` | *Azozon walks despite Alazun.* | B |
+| [So that](/dependents#so-that) | `zazozon vowurol hovam blarl zalazun vehohel.` | *Azozon walks so that Alazun sits.* | B |
+| [In order to](/dependents#so-that): name the doer again | `zazozon vowurol hovam blarl zazozon vehohel.` | *Azozon walks in order to sit.* | B |
+| [So as not to](/sentence-linkers#stand-in): `blurl` for `blarl` | `zazozon vowurol hovam blurl zazozon vehohel.` | *Azozon walks so as not to sit.* | I |
+| [Unless](/sentence-linkers#stand-in): `blurl` for `blarl` | `zazozon vowurol thohem blurl zalazun vezuvel.` | *Azozon walks unless Alazun sleeps.* | I |
+| [So … that](/sentence-linkers#result-pole): the result happened | `zazozon welazem gadamul hahom blarl zazozor vezuvel.` | *Azozon is so tired that they sleep.* | I |
+| [As soon as](/dependents#time-poles) | `zazozon vowurol wadurom halam blarl zalazun vehohel.` | *Azozon walks as soon as Alazun sits.* | B |
 
 ### Times with a noun {#time-nouns}
 
@@ -117,12 +117,12 @@ Put an event or period in a `bl-` word right after the time pole. *Until* says t
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [During](/dependents#time-poles) | `zuzozen vowurel herem blenulul.` | *Uzozen walks during the thunderstorm.* | B |
-| [After](/dependents#time-poles) | `zuzozen vuhohol halam blenulul.` | *Uzozen sits after the thunderstorm.* | B |
-| [By](/dependents#by-deadline) | `zuzozen vowurel hevahum blenulul.` | *Uzozen walks by the time of the thunderstorm.* (done no later than that) | B |
-| [A noun in time](/sentence-linkers#time-pole-on-noun) | `zolazun dowurel galam blenulul vawebol.` | *Olazun sees the walk after the thunderstorm.* (*after the thunderstorm* says which walk) | I |
+| [During](/dependents#time-poles) | `zazozon vowurol herom blanulul.` | *Azozon walks during the thunderstorm.* | B |
+| [After](/dependents#time-poles) | `zazozon vehohel halam blanulul.` | *Azozon sits after the thunderstorm.* | B |
+| [By](/dependents#by-deadline) | `zazozon vowurol huvahum blanulul.` | *Azozon walks by the time of the thunderstorm.* (done no later than that) | B |
+| [A noun in time](/sentence-linkers#time-pole-on-noun) | `zalazun dowurol galam blanulul vayebel.` | *Alazun sees the walk after the thunderstorm.* (*after the thunderstorm* says which walk) | I |
 
-On a noun the poles are `gerem` *during*, `gabam` *before*, `galam` *after*, `garum` *until*, and `gevahum` *by*. *Since* is [*from* on a time](/hooks#since).
+On a noun the poles are `gerom` *during*, `gabam` *before*, `galam` *after*, `garum` *until*, and `guvahum` *by*. *Since* is [*from* on a time](/hooks#since).
 
 ## Keep the same speech move going {#continue}
 
@@ -131,28 +131,28 @@ A **linker** is an `/x/` word that opens the next sentence under the same speech
 <!-- cheat-sheet: linking-clauses -->
 | English | Agebon | Stage |
 |---------|--------|-------|
-| [*therefore*](/dependents#continue-x) | **`xahem`** | B |
-| [*however*](/sentence-linkers#sentence-linkers) | **`xezom`** | I |
-| [*meanwhile*](/sentence-linkers#sentence-linkers) | **`xegorem`** | I |
-| [*next*](/sentence-linkers#sentence-linkers): clears the topic | **`xuvewem`** | I |
-| [*but*](/sentence-linkers#sentence-linkers): a harder push-back than *however* | **`xegohum`** | I |
-| [*by the way*](/sentence-linkers#sentence-linkers): clears the topic | **`xuvedam`** | I |
+| [*therefore*](/dependents#continue-x) | **`xahom`** | B |
+| [*however*](/sentence-linkers#sentence-linkers) | **`xezem`** | I |
+| [*meanwhile*](/sentence-linkers#sentence-linkers) | **`xugorom`** | I |
+| [*next*](/sentence-linkers#sentence-linkers): clears the topic | **`xevewom`** | I |
+| [*but*](/sentence-linkers#sentence-linkers): a harder push-back than *however* | **`xugohum`** | I |
+| [*by the way*](/sentence-linkers#sentence-linkers): clears the topic | **`xavedam`** | I |
 
 Three take **-l** for a firm link.
 
 <!-- cheat-sheet: linking-clauses -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`xahel`**](/sentence-linkers#sentence-linkers) | the next claim follows necessarily | *it follows that* | I |
-| [**`xezol`**](/sentence-linkers#sentence-linkers) | the contrast stands | *nevertheless* / *even so* | I |
-| [**`xegohul`**](/sentence-linkers#sentence-linkers) | the last claim is blocked and replaced | *on the contrary* | I |
+| [**`xahol`**](/sentence-linkers#sentence-linkers) | the next claim follows necessarily | *it follows that* | I |
+| [**`xezel`**](/sentence-linkers#sentence-linkers) | the contrast stands | *nevertheless* / *even so* | I |
+| [**`xugohul`**](/sentence-linkers#sentence-linkers) | the last claim is blocked and replaced | *on the contrary* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Therefore](/dependents#continue-x) | `zudozol vowurel. xahem zagozol varuvel.` | *A dog walks. Therefore a cat runs.* | B |
-| [On the contrary](/sentence-linkers#sentence-linkers) | `zolazun vezuvol vul. xegohul zolazun varuvel.` | *Olazun isn't sleeping. On the contrary, Olazun is running.* | I |
-| [Topic, then linker](/sentence-linkers#sentence-linkers) | `xuzozen. xezom zolazun varuvel.` | *Now, about Uzozen. However, Olazun runs.* | I |
-| [Linker in a new turn](/sentence-linkers#sentence-linkers) | `yem xuvewem zawan vowurel.` | *So, do you want to walk?* | I |
+| [Therefore](/dependents#continue-x) | `zodozel vowurol. xahom zogozel veruvol.` | *A dog walks. Therefore a cat runs.* | B |
+| [On the contrary](/sentence-linkers#sentence-linkers) | `zalazun vezuvel vul. xugohul zalazun veruvol.` | *Alazun isn't sleeping. On the contrary, Alazun is running.* | I |
+| [Topic, then linker](/sentence-linkers#sentence-linkers) | `xazozon. xezem zalazun veruvol.` | *Now, about Azozon. However, Alazun runs.* | I |
+| [Linker in a new turn](/sentence-linkers#sentence-linkers) | `yem xevewom zawan vowurol.` | *So, do you want to walk?* | I |
 
 Linkers come only at the start of a sentence. They never follow a [clause join](/joins#clause-joins) and never open the sentence after a stand-in. Writing and speech rhythm for all of these is [one table](/sentence-linkers#orthography-and-prosody-periods).
 
@@ -165,20 +165,20 @@ The relation word takes the other noun as a `bl-` word right after it. Use `/h/`
 <!-- cheat-sheet: linking-clauses -->
 | Event / noun | Use | English | Stage |
 |--------------|-----|---------|-------|
-| [**`hewom` / `gewom`**](/relations#like-resembles) | resemblance to a model | *like* | B |
-| [**`hewol` / `gewol`**](/of-relations#exactly-like) | an exact match | *exactly like* | I |
+| [**`hewem` / `gewem`**](/relations#like-resembles) | resemblance to a model | *like* | B |
+| [**`hewel` / `gewel`**](/of-relations#exactly-like) | an exact match | *exactly like* | I |
 | [**`heham` / `geham`**](/relations#exchange) | the other side of a swap | *in exchange for* | B |
-| [**`hanom` / `ganom`**](/relations#proxy) | authorized agency | *on behalf of* | B |
+| [**`hanem` / `ganem`**](/relations#proxy) | authorized agency | *on behalf of* | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Like, on an event](/relations#like-resembles) | `zuzozen hewom bludozal vowurel.` | *Uzozen walks like a duck.* | B |
-| [Like, on a noun](/relations#like-resembles) | `zahehal gewom bluzozen.` | *A house like Uzozen's.* | B |
-| [Like an event](/relations#like-resembles): `blarl` | `zuzozen vowurel hewom blarl zudozal vazuvel.` | *Uzozen walks the way a duck swims.* | B |
-| [Alike](/relations#like-resembles) | `zuzozen zolazun zal gewom.` | *Uzozen and Olazun are alike.* | B |
-| [Exactly like](/of-relations#exactly-like) | `zuzozen hewol bludozal vowurel.` | *Uzozen walks exactly like a duck.* | I |
-| [In exchange](/relations#exchange) | `zuzozen danal heham blehowol veham.` | *Uzozen trades a book for a hammer.* | B |
-| [On behalf of](/relations#proxy) | `zuzozen hanom blolazun vezuyel.` | *Uzozen speaks on behalf of Olazun.* | B |
+| [Like, on an event](/relations#like-resembles) | `zazozon hewem bladozal vowurol.` | *Azozon walks like a duck.* | B |
+| [Like, on a noun](/relations#like-resembles) | `zohehal gewem blazozon.` | *A house like Azozon's.* | B |
+| [Like an event](/relations#like-resembles): `blarl` | `zazozon vowurol hewem blarl zadozal vazuvol.` | *Azozon walks the way a duck swims.* | B |
+| [Alike](/relations#like-resembles) | `zazozon zalazun zal gewem.` | *Azozon and Alazun are alike.* | B |
+| [Exactly like](/of-relations#exactly-like) | `zazozon hewel bladozal vowurol.` | *Azozon walks exactly like a duck.* | I |
+| [In exchange](/relations#exchange) | `zazozon danal heham blohowel veham.` | *Azozon trades a book for a hammer.* | B |
+| [On behalf of](/relations#proxy) | `zazozon hanem blalazun vezuyol.` | *Azozon speaks on behalf of Alazun.* | B |
 
 ### Where, around, between {#locative}
 
@@ -188,16 +188,16 @@ Plain *in*, *on*, *at*, *from*, *toward* are [hooks](/extra-noun-hooks#extra-nou
 | Event / noun | Use | English | Stage |
 |--------------|-----|---------|-------|
 | [**`hedam` / `gedam`**](/of-relations#locative-relations) | between two landmarks (one joined `/b/`) | *between* | I |
-| [**`hohem` / `gohem`**](/of-relations#locative-relations) | from one edge to the far edge | *across* | I |
+| [**`hohom` / `gohom`**](/of-relations#locative-relations) | from one edge to the far edge | *across* | I |
 | [**`hevam` / `gevam`**](/of-relations#locative-relations) | on all sides of one landmark | *around* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Between](/of-relations#locative-relations) | `zolazun vuhohol hedam bledavel bluyahel bal.` | *Olazun sits between a train and a station.* | I |
-| [Across](/of-relations#locative-relations) | `zuzozen vowurel hohem bluyahel.` | *Uzozen walks across the station.* | I |
-| [Around](/of-relations#locative-relations) | `zagozolx vuhohol hevam bledavel.` | *Cats sit around a train.* | I |
-| [From, toward](/of-relations#locative-relations) | `zuzozen ul buyahel vowurel oel bedavel.` | *Uzozen walks from a station toward a train.* | I |
-| [Out of, in](/of-relations#locative-relations) | `zolazun ual bahehal varuvel al bedavel.` | *Olazun runs out of a house into a train.* | I |
+| [Between](/of-relations#locative-relations) | `zalazun vehohel hedam bledavol blawahol bal.` | *Alazun sits between a train and a station.* | I |
+| [Across](/of-relations#locative-relations) | `zazozon vowurol hohom blawahol.` | *Azozon walks across the station.* | I |
+| [Around](/of-relations#locative-relations) | `zogozelx vehohel hevam bledavol.` | *Cats sit around a train.* | I |
+| [From, toward](/of-relations#locative-relations) | `zazozon ul bawahol vowurol oel bedavol.` | *Azozon walks from a station toward a train.* | I |
+| [Out of, in](/of-relations#locative-relations) | `zalazun ual bohehal veruvol al bedavol.` | *Alazun runs out of a house into a train.* | I |
 
 ### Of {#of}
 
@@ -206,19 +206,19 @@ English *of* names how one noun sits toward another. The `/b/` is what comes aft
 <!-- cheat-sheet: linking-clauses -->
 | Event / noun | Use | English | Stage |
 |--------------|-----|---------|-------|
-| [**`hobem` / `gobem`**](/of-relations#of-relations) | a constitutive piece | *part of* | I |
+| [**`hobom` / `gobom`**](/of-relations#of-relations) | a constitutive piece | *part of* | I |
 | [**`hadam` / `gadam`**](/of-relations#of-relations) | filling of a vessel | *contents of* | I |
-| [**`hulem` / `gulem`**](/of-relations#of-relations) | the material | *made of* | I |
+| [**`hulom` / `gulom`**](/of-relations#of-relations) | the material | *made of* | I |
 | [**`haham` / `gaham`**](/of-relations#of-relations) | origin | *from* (origin) | I |
 | [**`hozowum` / `gozowum`**](/of-relations#of-relations) | a portion cut from a whole | *a piece of* / *a slice of* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Part of](/of-relations#of-relations) | `zuzozen dahebal gobem blolazun vawebol.` | *Uzozen sees one of Olazun's hands.* | I |
-| [Contents of](/of-relations#of-relations) | `zuzozen dedodal gadam blududal vawebol.` | *Uzozen sees a teapot full of tea.* | I |
-| [Made of](/of-relations#of-relations) | `zuzozen dahehal gulem blulel vawebol.` | *Uzozen sees a house made of wood.* | I |
-| [From](/of-relations#of-relations) | `zolazun gaham blezahel vowurel.` | *Olazun, who is from the city, walks.* | I |
-| [A piece of](/of-relations#of-relations): substance first | `zuzozen debodol gozowum vawebol.` | *Uzozen sees a piece of bread.* | I |
+| [Part of](/of-relations#of-relations) | `zazozon dahebal gobom blalazun vayebel.` | *Azozon sees one of Alazun's hands.* | I |
+| [Contents of](/of-relations#of-relations) | `zazozon dedodal gadam bledudal vayebel.` | *Azozon sees a teapot full of tea.* | I |
+| [Made of](/of-relations#of-relations) | `zazozon dohehal gulom blulol vayebel.` | *Azozon sees a house made of wood.* | I |
+| [From](/of-relations#of-relations) | `zalazun gaham blazahol vowurol.` | *Alazun, who is from the city, walks.* | I |
+| [A piece of](/of-relations#of-relations): substance first | `zazozon dobodel gozowum vayebel.` | *Azozon sees a piece of bread.* | I |
 
 ### Social ties {#social}
 
@@ -227,41 +227,41 @@ Put the tie root on `/ɡ/` with **-m**, then the other person in `/b/`.
 <!-- cheat-sheet: linking-clauses -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`gumayam`** + `/b/`](/social-ties#social-relations) | companion of `/b/` | *friend of* | B |
-| [**`gugobem`** + `/b/`](/social-ties#social-relations) | the one `/b/` answers to | *boss of* | B |
+| [**`gamayam`** + `/b/`](/social-ties#social-relations) | companion of `/b/` | *friend of* | B |
+| [**`gegobom`** + `/b/`](/social-ties#social-relations) | the one `/b/` answers to | *boss of* | B |
 | [**`gohuyam`** + `/b/`](/social-ties#social-relations) | partner of `/b/` | *partner of* | B |
-| [**`gobolom`** + `/b/`](/social-ties#social-relations) | the one `/b/` looks after | *in the care of* | B |
+| [**`gabolem`** + `/b/`](/social-ties#social-relations) | the one `/b/` looks after | *in the care of* | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Friend of](/social-ties#social-relations) | `zolazun gumayam bluzozen.` | *Olazun is Uzozen's friend.* | B |
-| [Friends](/social-ties#social-relations) | `zuzozen zolazun zal gumayam.` | *Uzozen and Olazun are friends.* | B |
-| [In the care of](/social-ties#social-relations) | `zolazun gobolom bluzozen.` | *Olazun is in Uzozen's care.* | B |
+| [Friend of](/social-ties#social-relations) | `zalazun gamayam blazozon.` | *Alazun is Azozon's friend.* | B |
+| [Friends](/social-ties#social-relations) | `zazozon zalazun zal gamayam.` | *Azozon and Alazun are friends.* | B |
+| [In the care of](/social-ties#social-relations) | `zalazun gabolem blazozon.` | *Alazun is in Azozon's care.* | B |
 
 ### As of {#as-of}
 
-Whose-now is speech-now unless you move it. `henam` claims the moment as real; `hunem` only holds a place. `/h/` covers the clause, `/ɡ/` one noun, `/w/` the adjective right after, `/th/` the stances. A clause takes one pair; to keep the same whose-now, repeat the word with **-r** and no `/b/`.
+Whose-now is speech-now unless you move it. `henam` claims the moment as real; `hunom` only holds a place. `/h/` covers the clause, `/ɡ/` one noun, `/w/` the adjective right after, `/th/` the stances. A clause takes one pair; to keep the same whose-now, repeat the word with **-r** and no `/b/`.
 
 <!-- cheat-sheet: linking-clauses -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [**`henam` / `genam` / `wenam`**](/as-of#as-of) | a real now | *as of* (dated ledger) | A |
-| [**`hunem` / `gunem` / `wunem`**](/as-of#as-of) | a placeholder now | *as of* (placeholder now) | A |
-| [**`henar` / `huner`**](/as-of#as-of) | resume that whose-now | *same books* | A |
+| [**`hunom` / `gunom` / `wunom`**](/as-of#as-of) | a placeholder now | *as of* (placeholder now) | A |
+| [**`henar` / `hunor`**](/as-of#as-of) | resume that whose-now | *same books* | A |
 
 <!-- cheat-sheet: linking-clauses -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [**`thenam`**](/as-of#stance-as-of) | stances as of a real now | *I thought / I felt (then)* | A |
-| [**`thunem`**](/as-of#stance-as-of) | stances as of a now you are not claiming | *I would think / I'd feel* | A |
-| [**`thenar` / `thuner`**](/as-of#stance-as-of) | resume that stance-now | *still as I saw it then* | A |
+| [**`thunom`**](/as-of#stance-as-of) | stances as of a now you are not claiming | *I would think / I'd feel* | A |
+| [**`thenar` / `thunor`**](/as-of#stance-as-of) | resume that stance-now | *still as I saw it then* | A |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [As of a date](/as-of#as-of) | `zolazun haram henam bl_#22,7 velurul.` | *As of 22 July, Olazun had left and was still gone.* | A |
-| [Resume the same now](/as-of#as-of) | `zolazun haram henam bl_#22,7 velurul. xuzozen haram henar vowurel.` | *…As of that same day, Uzozen's walk still counted too.* | A |
-| [Stance then](/as-of#stance-as-of) | `zolazun thenam bl_#22,7 thomam velurul.` | *On 22 July, I thought Olazun might leave.* | A |
-| [Back then](/as-of#stance-as-of) | `zolazun thenam blrul thomam velurul.` | *Back then, I thought Olazun might leave.* | A |
+| [As of a date](/as-of#as-of) | `zalazun haram henam bl_#22,7 vudurul.` | *As of 22 July, Alazun had left and was still gone.* | A |
+| [Resume the same now](/as-of#as-of) | `zalazun haram henam bl_#22,7 vudurul. xazozon haram henar vowurol.` | *…As of that same day, Azozon's walk still counted too.* | A |
+| [Stance then](/as-of#stance-as-of) | `zalazun thenam bl_#22,7 thomam vudurul.` | *On 22 July, I thought Alazun might leave.* | A |
+| [Back then](/as-of#stance-as-of) | `zalazun thenam blrul thomam vudurul.` | *Back then, I thought Alazun might leave.* | A |
 
 ## Same root as {#roots}
 
@@ -269,17 +269,17 @@ Each pole, linker, and relation word is the abstract sense of an ordinary root. 
 
 | Forms | Same root as | Stage |
 |-------|--------------|-------|
-| [`thahum`](/dependents#poles) *because*, [`thohom`](/dependents#poles) *if*, [`thebom`](/dependents#poles) *only if*, [`thehem`](/dependents#poles) *if and only if* | `ahul` 🧱, `ohol` 🚪, `ebol` 🧻, `ehel` ↔️ | B |
-| [`hezom`](/dependents#poles) *although*, [`herem`](/dependents#poles) *while*, [`harum`](/dependents#poles) *until*, [`hevahum`](/dependents#poles) *by the time* | `ezol` 🦓, `erel` ♊, `arul` ⏲️, `evahul` 🏁 | B |
+| [`thahum`](/dependents#poles) *because*, [`thohem`](/dependents#poles) *if*, [`thebem`](/dependents#poles) *only if*, [`thehom`](/dependents#poles) *if and only if* | `ahul` 🧱, `ohel` 🚪, `ebel` 🧻, `ehol` ↔️ | B |
+| [`hezem`](/dependents#poles) *although*, [`herom`](/dependents#poles) *while*, [`harum`](/dependents#poles) *until*, [`huvahum`](/dependents#poles) *by the time* | `ezel` 🦓, `erol` ♊, `arul` ⏲️, `uvahul` 🏁 | B |
 | [`habam`](/dependents#poles) *before*, [`halam`](/dependents#poles) *after*, [`hovam`](/dependents#poles) *so that* | `abal` 🎒, `alal` ⌛, `oval` 🥅 | B |
-| [`xahem`](/sentence-linkers#sentence-linkers), [`xezom`](/sentence-linkers#sentence-linkers), [`xegorem`](/sentence-linkers#sentence-linkers) | `ahem` ➡️, `ezom` 🦓, `egorem` 🕰️ | I |
-| [`xuvewem`](/sentence-linkers#sentence-linkers), [`xegohum`](/sentence-linkers#sentence-linkers), [`xuvedam`](/sentence-linkers#sentence-linkers) | `uvewem` 🎞️, `egohum` 🚧, `uvedam` 🍟 | I |
-| [`hewom`](/relations#like-resembles) *like*, [`heham`](/relations#exchange) *in exchange for*, [`hanom`](/relations#proxy) *on behalf of* | `ewol` 🪞, `ehal` 💱, `anol` 🪪 | B |
-| [`hedam`](/of-relations#locative-relations) *between*, [`hohem`](/of-relations#locative-relations) *across*, [`hevam`](/of-relations#locative-relations) *around* | `edal` 🥪, `ohel` 🌉, `eval` 🎠 | I |
-| [`hobem`](/of-relations#of-relations) *part of*, [`hadam`](/of-relations#of-relations) *contents of*, [`hulem`](/of-relations#of-relations) *made of* | `obel` 🦴, `adal` 🫙, `ulel` 🪵 | I |
+| [`xahom`](/sentence-linkers#sentence-linkers), [`xezem`](/sentence-linkers#sentence-linkers), [`xugorom`](/sentence-linkers#sentence-linkers) | `ahom` ➡️, `ezem` 🦓, `ugorom` 🕰️ | I |
+| [`xevewom`](/sentence-linkers#sentence-linkers), [`xugohum`](/sentence-linkers#sentence-linkers), [`xavedam`](/sentence-linkers#sentence-linkers) | `evewom` 🎞️, `ugohum` 🚧, `avedam` 🍟 | I |
+| [`hewem`](/relations#like-resembles) *like*, [`heham`](/relations#exchange) *in exchange for*, [`hanem`](/relations#proxy) *on behalf of* | `ewel` 🪞, `ehal` 💱, `anel` 🪪 | B |
+| [`hedam`](/of-relations#locative-relations) *between*, [`hohom`](/of-relations#locative-relations) *across*, [`hevam`](/of-relations#locative-relations) *around* | `edal` 🥪, `ohol` 🌉, `eval` 🎠 | I |
+| [`hobom`](/of-relations#of-relations) *part of*, [`hadam`](/of-relations#of-relations) *contents of*, [`hulom`](/of-relations#of-relations) *made of* | `obol` 🦴, `adal` 🫙, `ulol` 🪵 | I |
 | [`haham`](/of-relations#of-relations) *from*, [`hozowum`](/of-relations#of-relations) *a piece of* | `ahal` 🗾, `ozowul` 🪚 | I |
-| [`gumayam`](/social-ties#social-relations) *friend*, [`gugobem`](/social-ties#social-relations) *boss*, [`gohuyam`](/social-ties#social-relations) *partner*, [`gobolom`](/social-ties#social-relations) *care* | `umayal` *Mrs Claus*, `ugobel` *crown*, `ohuyal` *holding hands*, `obolol` *house plant* | B |
-| [`henam`](/as-of#as-of) *as of* (ledger), [`hunem`](/as-of#as-of) *as of* (placeholder) | `enal` 📒, `unel` 🔖 | A |
+| [`gamayam`](/social-ties#social-relations) *friend*, [`gegobom`](/social-ties#social-relations) *boss*, [`gohuyam`](/social-ties#social-relations) *partner*, [`gabolem`](/social-ties#social-relations) *care* | `amayal` *Mrs Claus*, `egobol` *crown*, `ohuyal` *holding hands*, `abolel` *house plant* | B |
+| [`henam`](/as-of#as-of) *as of* (ledger), [`hunom`](/as-of#as-of) *as of* (placeholder) | `enal` 📒, `unol` 🔖 | A |
 
 ## Don't mix up {#dont-mix-up}
 
@@ -288,10 +288,10 @@ Each pole, linker, and relation word is the abstract sense of an ordinary root. 
 | `darl` *that …* ([a statement as content](/dependents#dependent-clauses)) | | `derl` *whether …* ([a question as content](/dependents#dependent-clauses)) |
 | `dorl` *to …* ([an instruction](/sentence-linkers#stand-in)) | | `durl` *not to …* ([something to avoid](/sentence-linkers#stand-in)) |
 | `darl` *that …* ([points forward](/dependents#dependent-clauses)) | | `darth` *so* ([points back](/sentence-linkers#stand-in-back)) |
-| `hovam blarl` *so that* ([an aim, not claimed](/dependents#so-that)) | | `hahem blarl` *so … that* ([the result happened](/sentence-linkers#result-pole)) |
-| `thohom blarl` *if* ([a condition](/dependents#poles)) | | `derl` *whether* ([an open question](/dependents#dependent-clauses)) |
-| `xahem` *therefore* ([starts a sentence](/dependents#continue-x)) | | `hezom blarl` *although* ([attaches a clause](/dependents#poles)) |
-| `hewom` *like* ([resembles, and is real](/relations#like-resembles)) | | `hewol` *exactly like* ([a perfect match](/of-relations#exactly-like)) |
+| `hovam blarl` *so that* ([an aim, not claimed](/dependents#so-that)) | | `hahom blarl` *so … that* ([the result happened](/sentence-linkers#result-pole)) |
+| `thohem blarl` *if* ([a condition](/dependents#poles)) | | `derl` *whether* ([an open question](/dependents#dependent-clauses)) |
+| `xahom` *therefore* ([starts a sentence](/dependents#continue-x)) | | `hezem blarl` *although* ([attaches a clause](/dependents#poles)) |
+| `hewem` *like* ([resembles, and is real](/relations#like-resembles)) | | `hewel` *exactly like* ([a perfect match](/of-relations#exactly-like)) |
 | `gadam` *contents of* ([what a vessel holds](/of-relations#of-relations)) | | `al` *in* ([a place hook](/extra-noun-hooks#extra-noun-intermediate)) |
-| `hanom` *on behalf of* ([an agent](/relations#proxy)) | | `heham` *in exchange for* ([the other half of a swap](/relations#exchange)) |
+| `hanem` *on behalf of* ([an agent](/relations#proxy)) | | `heham` *in exchange for* ([the other half of a swap](/relations#exchange)) |
 | `henam` *as of* ([a dated now](/as-of#as-of)) | | `halam` *after* ([a time for the event](/dependents#time-poles)) |

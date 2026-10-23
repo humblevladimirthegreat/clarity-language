@@ -15,7 +15,7 @@ On a content word, the ending **-n** marks a name: this person, place, work, or 
 
 | Words | What **-n** does there | Example |
 |-------|------------------------|---------|
-| [special pronouns](/pronouns#special-pronouns), the [generic pronoun](/pronouns#generic-pronoun), and the [topic pronoun](/topic#topic-pronoun) | the usual ending on these person words | `zuwon` *I*, `zeyon` *one*, `zalon` *the topic* |
+| [special pronouns](/pronouns#special-pronouns), the [generic pronoun](/pronouns#generic-pronoun), and the [topic pronoun](/topic#topic-pronoun) | the usual ending on these person words | `zuwen` *I*, `zeyen` *one*, `zalen` *the topic* |
 | [stand-ins](/stand-in-roles#stand-in-roles) | **-rn** (single vowel) or **-n** (stacked vowel) names a kind of sentence content (statement, question, command, prohibition); on `/v/`, the matching response verb | `darn` *a statement*, `varn` *state* |
 | [join words](/joins) with a `/v/`, `/x/`, `/ɡ/`, or `/h/` first letter | join content: a [join-act](/join-across-roles#join-act-verbs) verb, clause [sequence](/clause-sequence#clause-sequence), or a [join-relation](/join-across-roles#join-relations) | `van` *include*, `xan` *and then*, `gan` *including* |
 

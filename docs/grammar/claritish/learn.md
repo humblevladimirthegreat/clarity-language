@@ -17,11 +17,11 @@ With a handful of drop-ins, your English now says:
 
 Every drop-in you learned is a real Agebon word, spelled the same way. In the full language they sit inside sentences built for them, and they stack: one sentence can carry a tone, a channel, a try, and a sake at once.
 
-> `;zolazun thugom howar vezuyol thodothar.`
+> `;zalazun thugem howar vozuyel thodethar.`
 >
-> ;z-Olazun | th-LIVE | h-ATTEMPT-trial | v-sing | th-pleasure-met-immediate
+> ;z-Alazun | th-LIVE | h-ATTEMPT-trial | v-sing | th-pleasure-met-immediate
 >
-> "I'm watching dear Olazun give singing a try, and it's a joy right now."
+> "I'm watching dear Alazun give singing a try, and it's a joy right now."
 
 ## What Claritish can't do {#limits}
 

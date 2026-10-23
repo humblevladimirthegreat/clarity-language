@@ -9,50 +9,50 @@ English *if*, *only if*, and *because* each tie a condition to an outcome. Agebo
 
 ### If {#if}
 
-English *if* says a condition is enough for an outcome: whenever the condition holds, the outcome holds too (*Uzozen walks if it rains*). Write the **outcome** first, then the *if* pole (root **`oho`**), then the condition as its `bl-` word. Saying *if* does not claim the condition is true, and other routes to the outcome may still work. It does not say how the condition leads there either: only that the link holds. (cue: 🚪 *door*: walk through only if it opens)
+English *if* says a condition is enough for an outcome: whenever the condition holds, the outcome holds too (*Azozon walks if it rains*). Write the **outcome** first, then the *if* pole (root **`ohe`**), then the condition as its `bl-` word. Saying *if* does not claim the condition is true, and other routes to the outcome may still work. It does not say how the condition leads there either: only that the link holds. (cue: 🚪 *door*: walk through only if it opens)
 
-The pole's role letter follows the outcome. Use `/th/` (**`thohom`**) when the outcome is an **event** (the verb). Use `/ɡ/` (**`gohom`**) when the outcome is a **noun**. A common noun with a `/ɡ/` word after it says the thing exists ([*there is …*](predication.md#existence)), so a noun outcome says *there is X if there is Y*. Keep the pole and its `/b/` together.
+The pole's role letter follows the outcome. Use `/th/` (**`thohem`**) when the outcome is an **event** (the verb). Use `/ɡ/` (**`gohem`**) when the outcome is a **noun**. A common noun with a `/ɡ/` word after it says the thing exists ([*there is …*](predication.md#existence)), so a noun outcome says *there is X if there is Y*. Keep the pole and its `/b/` together.
 
-> `zuzozen vowurel thohom blerulal.`
+> `zazozon vowurol thohem blerulal.`
 >
-> z-Uzozen | v-walk | [th-if | bl-rain]
+> z-Azozon | v-walk | [th-if | bl-rain]
 >
-> "Uzozen walks if it rains."
+> "Azozon walks if it rains."
 
-> `zerulal gohom blugalal.`
+> `zerulal gohem blugalal.`
 >
 > z-rain | [g-if | bl-cloud]
 >
 > "There is rain if there are clouds."
 
-As a plain noun, the same root is `zohol` *a door*.
+As a plain noun, the same root is `zohel` *a door*.
 
 **Compare with:** for *X is enough* about one item from a list of options (*a book will do*), use an inclusive [join](joins.md#single-item-phrase), not a pole.
 
 ### Only if {#only-if}
 
-English *only if* (or *needs*) says the outcome cannot hold without the condition. Use the same shape with the *only if* pole (root **`ebo`**): **`thebom`** after a verb, **`gebom`** after a noun. Other things may also be required, and again you do not claim the condition is true. (cue: 🧻 *paper-roll*: without it the situation does not run)
+English *only if* (or *needs*) says the outcome cannot hold without the condition. Use the same shape with the *only if* pole (root **`ebe`**): **`thebem`** after a verb, **`gebem`** after a noun. Other things may also be required, and again you do not claim the condition is true. (cue: 🧻 *paper-roll*: without it the situation does not run)
 
-> `zuzozen vowurel thebom blerulal.`
+> `zazozon vowurol thebem blerulal.`
 >
-> z-Uzozen | v-walk | [th-only-if | bl-rain]
+> z-Azozon | v-walk | [th-only-if | bl-rain]
 >
-> "Uzozen walks only if it rains."
+> "Azozon walks only if it rains."
 
-> `zerulal gebom blugalal.`
+> `zerulal gebem blugalal.`
 >
 > z-rain | [g-only-if | bl-cloud]
 >
 > "There is rain only if there are clouds."
 
-As a plain noun, the same root is `zebol` *a paper-roll*.
+As a plain noun, the same root is `zebel` *a paper-roll*.
 
-**Compare with:** *if* (`thohom` / `gohom`) leaves other routes possible. *Only if* says the outcome needs this.
+**Compare with:** *if* (`thohem` / `gohem`) leaves other routes possible. *Only if* says the outcome needs this.
 
 | Agebon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thohom` / `gohom`** | enough for the outcome; condition not asserted | *if* | `ohol` *door* | 🚪: walk through only if it opens |
-| **`thebom` / `gebom`** | the outcome needs this; condition not asserted | *only if* / *needs* | `ebol` *paper-roll* | 🧻: without it the situation does not run |
+| **`thohem` / `gohem`** | enough for the outcome; condition not asserted | *if* | `ohel` *door* | 🚪: walk through only if it opens |
+| **`thebem` / `gebem`** | the outcome needs this; condition not asserted | *only if* / *needs* | `ebel` *paper-roll* | 🧻: without it the situation does not run |
 
 `/th/` attaches to the event. `/ɡ/` attaches to the noun.
 
@@ -66,41 +66,41 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *sing* | `vezuyol` | 🧑‍🎤 |
-| *seedling* | `elel` | 🌱 |
-| *flower* | `uvelal` | 💮 |
-| *sun* | `uzalel` | ☀️ |
+| *sing* | `vozuyel` | 🧑‍🎤 |
+| *seedling* | `elol` | 🌱 |
+| *flower* | `evelal` | 💮 |
+| *sun* | `ezalol` | ☀️ |
 | *bucket* | `obowal` | 🪣 |
-| *only if* | `thebom` | 🧻 from *paper-roll*: without it the situation does not run |
+| *only if* | `thebem` | 🧻 from *paper-roll*: without it the situation does not run |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *if* | `thohom` |
+| *if* | `thohem` |
 | *rain* | `erulal` |
 | *night* | `anurul` |
-| *see* | `vawebol` |
-| *find* | `vumewol` |
-| *sit* | `vuhohol` |
+| *see* | `vayebel` |
+| *find* | `vumewel` |
+| *sit* | `vehohel` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *Uzozen sings if there is sun.*
+**1.** *Azozon sings if there is sun.*
 
 ::: details Show answer
-`zuzozen vezuyol thohom bluzalel.`
+`zazozon vozuyel thohem blezalol.`
 
-z-Uzozen | v-sing | [th-if | bl-sun]
+z-Azozon | v-sing | [th-if | bl-sun]
 :::
 
 **2.** *There is a flower only if there is a seedling.*
 
 ::: details Show answer
-`zuvelal gebom blelel.`
+`zevelal gebem blelol.`
 
 z-flower | [g-only-if | bl-seedling]
 :::
@@ -108,7 +108,7 @@ z-flower | [g-only-if | bl-seedling]
 **3.** *Ahelan sees a flower only if there is sun.*
 
 ::: details Show answer
-`zahelan duvelal vawebol thebom bluzalel.`
+`zahelan develal vayebel thebem blezalol.`
 
 z-Ahelan | d-flower | v-see | [th-only-if | bl-sun]
 :::
@@ -116,22 +116,22 @@ z-Ahelan | d-flower | v-see | [th-only-if | bl-sun]
 **4.** *There are seedlings if there is rain.*
 
 ::: details Show answer
-`zelelx gohom blerulal.`
+`zelolx gohem blerulal.`
 
 z-seedling-x | [g-if | bl-rain]
 :::
 
-**5.** *Olazun finds a bucket if Uzozen sings.*
+**5.** *Alazun finds a bucket if Azozon sings.*
 
 ::: details Show answer
-`zolazun dobowal vumewol thohom blarl zuzozen vezuyol.`
+`zalazun dobowal vumewel thohem blarl zazozon vozuyel.`
 
-z-Olazun | d-bucket | v-find | [th-if | bl-that-clause] | z-Uzozen | v-sing
+z-Alazun | d-bucket | v-find | [th-if | bl-that-clause] | z-Azozon | v-sing
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zuvelalx gohom bluzalel.`
+**1.** `zevelalx gohem blezalol.`
 
 ::: details Show answer
 z-flower-x | [g-if | bl-sun]
@@ -139,7 +139,7 @@ z-flower-x | [g-if | bl-sun]
 *There are flowers if there is sun.*
 :::
 
-**2.** `zahelan dobowal vumewol thebom blerulal.`
+**2.** `zahelan dobowal vumewel thebem blerulal.`
 
 ::: details Show answer
 z-Ahelan | d-bucket | v-find | [th-only-if | bl-rain]
@@ -147,7 +147,7 @@ z-Ahelan | d-bucket | v-find | [th-only-if | bl-rain]
 *Ahelan finds a bucket only if it rains.*
 :::
 
-**3.** `zelel gebom blobowal.`
+**3.** `zelol gebem blobowal.`
 
 ::: details Show answer
 z-seedling | [g-only-if | bl-bucket]
@@ -155,54 +155,54 @@ z-seedling | [g-only-if | bl-bucket]
 *There is a seedling only if there is a bucket.*
 :::
 
-**4.** `zolazun vezuyol thebom blarl zahelan duvelal vawebol.`
+**4.** `zalazun vozuyel thebem blarl zahelan develal vayebel.`
 
 ::: details Show answer
-z-Olazun | v-sing | [th-only-if | bl-that-clause] | z-Ahelan | d-flower | v-see
+z-Alazun | v-sing | [th-only-if | bl-that-clause] | z-Ahelan | d-flower | v-see
 
-*Olazun sings only if Ahelan sees a flower.*
+*Alazun sings only if Ahelan sees a flower.*
 :::
 
-**5.** `zuzozen duvelalx vawebol thohom blanurul.`
+**5.** `zazozon develalx vayebel thohem blanurul.`
 
 ::: details Show answer
-z-Uzozen | d-flower-x | v-see | [th-if | bl-night]
+z-Azozon | d-flower-x | v-see | [th-if | bl-night]
 
-*Uzozen sees some flowers if it is night.*
+*Azozon sees some flowers if it is night.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *There is a flower if there is rain.* `zuvelal gohom blerulal.` or `zuvelal thohom blerulal.`
+**1.** *There is a flower if there is rain.* `zevelal gohem blerulal.` or `zevelal thohem blerulal.`
 
 ::: details Show answer
-`zuvelal gohom blerulal.`
+`zevelal gohem blerulal.`
 
 z-flower | [g-if | bl-rain]
 
 The outcome is a noun (there is a flower), so the pole takes `/ɡ/`; `/th/` attaches it to an event.
 :::
 
-**2.** *Olazun sits if it is night.* `zolazun vuhohol thohom blanurul.` or `zolazun vuhohol thohom danurul.`
+**2.** *Alazun sits if it is night.* `zalazun vehohel thohem blanurul.` or `zalazun vehohel thohem danurul.`
 
 ::: details Show answer
-`zolazun vuhohol thohom blanurul.`
+`zalazun vehohel thohem blanurul.`
 
-z-Olazun | v-sit | [th-if | bl-night]
+z-Alazun | v-sit | [th-if | bl-night]
 
-The condition is the pole's extra noun, so it takes a `bl-` word right after **`thohom`**.
+The condition is the pole's extra noun, so it takes a `bl-` word right after **`thohem`**.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Ahelan sings only if there is sun.* <!-- lint: error -->`zahelan vezuyol gebom buzalel.`
+**1.** *Ahelan sings only if there is sun.* <!-- lint: error -->`zahelan vozuyel gebem bezalol.`
 
 ::: details Show answer
-`zahelan vezuyol thebom bluzalel.`
+`zahelan vozuyel thebem blezalol.`
 
 z-Ahelan | v-sing | [th-only-if | bl-sun]
 
-The outcome is the singing, an event, so the pole is **`thebom`**; **`gebom`** would hang it on a noun.
+The outcome is the singing, an event, so the pole is **`thebem`**; **`gebem`** would hang it on a noun.
 :::
 ## See also
 

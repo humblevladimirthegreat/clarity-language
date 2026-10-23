@@ -77,14 +77,14 @@ describe("spliceWord", () => {
     assert.deepEqual(splice("hwuvam", maps("scope=u:a", "answer=a:e")), { kind: "changed", raw: "hwavem" });
   });
   it("splices role scope, pointer vowels, and ability stance", () => {
-    assert.deepEqual(splice("zwozuduyel", "scope=o:e"), { kind: "changed", raw: "zwezuduyel" });
+    assert.deepEqual(splice("zwozeduyol", "scope=o:e"), { kind: "changed", raw: "zwezeduyol" });
     const pointer = maps("scope=a:u", "pointer=a:e,e:o,o:a");
     assert.deepEqual(splice("dwahar", pointer), { kind: "changed", raw: "dwuher" });
-    assert.deepEqual(splice("vuzunexel", "stance=e:o"), { kind: "changed", raw: "vuzunexol" });
+    assert.deepEqual(splice("vuzunoxel", "stance=e:o"), { kind: "changed", raw: "vuzunoxol" });
   });
   it("splices landmark facing pair scope", () => {
-    assert.deepEqual(splice("gazuhethel", "scope=e:o"), { kind: "changed", raw: "gazuhethol" });
-    assert.deepEqual(splice("gazuhethel", "stance=e:o"), { kind: "same", raw: "gazuhethel" });
+    assert.deepEqual(splice("gazuhothel", "scope=e:o"), { kind: "changed", raw: "gazuhothol" });
+    assert.deepEqual(splice("gazuhothel", "stance=e:o"), { kind: "same", raw: "gazuhothel" });
   });
   it("splices speech number markers and leaves writing shorthand", () => {
     const swap = maps("marker=re:ro,ro:re");
@@ -92,10 +92,10 @@ describe("spliceWord", () => {
     assert.deepEqual(splice("g#2", swap), { kind: "same", raw: "g#2" });
   });
   it("splices a numeric-prefix marker and not the host root", () => {
-    assert.deepEqual(splice("zragexezuyel", "marker=ra:ru"), { kind: "changed", raw: "zrugexezuyel" });
+    assert.deepEqual(splice("zragexezuyol", "marker=ra:ru"), { kind: "changed", raw: "zrugexezuyol" });
   });
   it("splices a hook-prefix form's written vowels", () => {
-    assert.deepEqual(splice("guoxavuvul", "form=uol:ual"), { kind: "changed", raw: "guaxavuvul" });
+    assert.deepEqual(splice("guoxuvuvul", "form=uol:ual"), { kind: "changed", raw: "guaxuvuvul" });
   });
   it("splices a hooked-join hook form, not the join series", () => {
     assert.deepEqual(splice("zexual", "form=el:ol"), { kind: "changed", raw: "zoxual" });
@@ -134,7 +134,7 @@ describe("rewrite spans", () => {
       ],
     );
     assert.equal(rewritten.nextSource.includes(" ol "), true);
-    assert.match(rewritten.nextSource, /zuzozen zel vowurel ol buwon zol\./);
+    assert.match(rewritten.nextSource, /zazozon zel vowurol ol buwen zol\./);
   });
 
   it("lists speech ordinals and not writing shorthand", () => {
@@ -163,10 +163,10 @@ describe("rewrite spans", () => {
     });
     const out = rewriteMarkdownSpans(page, patches, tables);
     assert.equal(out.parseErrors.length, 0);
-    assert.match(out.text, /zuzozen zel vowurel ol buwon zol\./);
-    assert.match(out.text, /zuzozen zel vowurel\./);
+    assert.match(out.text, /zazozon zel vowurol ol buwen zol\./);
+    assert.match(out.text, /zazozon zel vowurol\./);
     assert.equal(
-      out.text.includes(morphGlossLine("zuzozen zel vowurel.", tables)),
+      out.text.includes(morphGlossLine("zazozon zel vowurol.", tables)),
       true,
     );
 
@@ -187,7 +187,7 @@ describe("rewrite spans", () => {
       tables,
     );
     assert.ok(mixed.parseErrors.length > 0);
-    assert.match(mixed.text, /zuzozen zol vowurel/);
+    assert.match(mixed.text, /zazozon zol vowurol/);
   });
 
   it("rewrites a teaching-stub hook and keeps the ellipsis", () => {

@@ -21,7 +21,7 @@ Beginner already used **`gral`** for *more than one*. Any marker may drop every 
 | **`ro`** (`…#`) | unspecified **rank from the start** | *some nth* / *some place*; exact ranks keep digits (`…#N`) | **`o`** ≈ order |
 | **`re`** (`…_`) | unspecified **digit-string / label** | *some code*; *a label*; exact labels keep digits (`…_…`) | **`e`** ≈ either (one string) |
 
-**Compare with:** noun [**-x**](/plurality) names a **group of things**. Digitless **`ra`** names a **count or amount above one** without saying how many. Both may sit on the same noun (`zagozolx gral`).
+**Compare with:** noun [**-x**](/plurality) names a **group of things**. Digitless **`ra`** names a **count or amount above one** without saying how many. Both may sit on the same noun (`zogozelx gral`).
 
 On a [hosted](/clause#extra-nouns) offset right after a channel, digitless **`blral`** is *later* and **`blrul`** is *earlier*, with no amount claimed. A hosted number keeps its `bl` in writing too (`bl+` for `blral`), and its `l` is a [beat of its own](phonotactics.md#syllabic-l).
 
@@ -29,7 +29,7 @@ On a [hosted](/clause#extra-nouns) offset right after a channel, digitless **`bl
 
 Open **`gram`** is a soft count: *a few* / *some*. It says there is more than one without claiming a number. Closed **`gral`** still means *more than one*.
 
-> `zagozolx gram vuhohol.`
+> `zogozelx gram vehohel.`
 > [z-cat-x | g-more-than-one.about] | v-sit
 >
 > "A few cats sit."
@@ -38,7 +38,7 @@ Open **`gram`** is a soft count: *a few* / *some*. It says there is more than on
 
 A mass noun such as *tea* is not counted, so *more than one* makes no sense for it. On a mass noun, **`gral`** is *some*: an amount that is not zero.
 
-> `zududal gral vuhohol.`
+> `zedudal gral vehohel.`
 > [z-tea | g-more-than-one] | v-sit
 >
 > "Some tea sits there."
@@ -47,17 +47,17 @@ A mass noun such as *tea* is not counted, so *more than one* makes no sense for 
 
 Words such as **`zar`** / **`zer`** stand for an unnamed **member of a set**. Digitless number **-r** stands for an unnamed **value** the same way: *some amount*, with no claim that it is more than one. Digitless number **-l** (and **-m** / **-n**) brings in an unnamed amount of that kind, and **`gral`** still says *more than one*.
 
-> `zuzozen drar vawebol.`
-> z-Uzozen | d-some-amount | v-see
+> `zazozon drar vayebel.`
+> z-Azozon | d-some-amount | v-see
 >
-> "Uzozen sees some number of them."
+> "Azozon sees some number of them."
 
 In a question, the same word is the blank: *how many?*.
 
-> `yel drar zuzozen vawebol.`
-> y-question | d-how-many | z-Uzozen | v-see
+> `yel drar zazozon vayebel.`
+> y-question | d-how-many | z-Azozon | v-see
 >
-> "How many does Uzozen see?"
+> "How many does Azozon see?"
 
 To repeat a number already given, keep at least one digit (`drager`), as in [number endings](number-markers.md#number-endings).
 
@@ -65,10 +65,10 @@ To repeat a number already given, keep at least one digit (`drager`), as in [num
 
 To ask for a **number**, write a [number word](/numbers) with no digits and the **-r** ending (written **`=`** after the role letter). That empty number is the blank, the same way `zar` is the blank for *who?* ([fill-ask](/questions#fill-ask-r)). The marker says which kind of number you want. (cue: **-r** names this member; the marker vowel says count, place, or code)
 
-> `yel dagozolx grar zuzozen vawebol.`
-> y-question | [d-cat-x | g-how-many] | z-Uzozen | v-see
+> `yel dogozelx grar zazozon vayebel.`
+> y-question | [d-cat-x | g-how-many] | z-Azozon | v-see
 >
-> "How many cats does Uzozen see?"
+> "How many cats does Azozon see?"
 
 <!-- cheat-sheet: numbers -->
 | Agebon | Use | English | Cue |
@@ -77,25 +77,25 @@ To ask for a **number**, write a [number word](/numbers) with no digits and the 
 | `g=#` (`gror`) | fill a place in order | *Which place?* (*which floor, which chapter*) | **e** ≈ order |
 | `g=_` (`grer`) | fill a code or label | *What number?* (*phone, room*) | **o** ≈ one |
 
-> `yel el bror zolazun vuhohol.`
-> y-question | [at | b-which-place] | z-Olazun | v-sit
+> `yel el bror zalazun vehohel.`
+> y-question | [at | b-which-place] | z-Alazun | v-sit
 >
-> "Which place does Olazun sit in?" (first, second, and so on)
+> "Which place does Alazun sit in?" (first, second, and so on)
 
 Answer with the number as a [citation](/word-endings#citation-forms) or a full sentence.
 
-**Compare with:** outside a question, the same word is *some number* (`zuzozen drar vawebol.` *Uzozen sees some number of them*). To repeat a number already given, keep a digit: `drager` ([above](#digitless)).
+**Compare with:** outside a question, the same word is *some number* (`zazozon drar vayebel.` *Azozon sees some number of them*). To repeat a number already given, keep a digit: `drager` ([above](#digitless)).
 
 ### How big? How fast? {#how-big}
 
 To ask **how much** of a quality, put the same blank on `/w/` immediately before the adjective or adverb: **`wrar`**.
 
-> `yel wrar gelazom zudozol.`
+> `yel wrar gelazem zodozel.`
 > y-question | [w-how-many | g-big] | z-dog
 >
 > "How big is the dog?"
 
-> `yel wrar hedurem zudozol varuvel.`
+> `yel wrar hadurom zodozel veruvol.`
 > y-question | [w-how-many | h-haste] | z-dog | v-run
 >
 > "How fast does the dog run?"
@@ -185,9 +185,9 @@ The **e** of **`the`** is the vowel of order: the next group comes in order. Say
 
 **Nested rank.** On an ordinal, each comma opens a place *within* the place before it, innermost first, as in dates: `g#2,3` is *seat 2 in row 3*; `g#16,4` is *verse 16 of chapter 4*. A large ordinal is one group of plain digits: `g#1005` (*the 1005th*).
 
-> `zozohol g#2,3.`
+> `zuzohel g#2,3.`
 >
-> 🔊 `zozohol grodothegel.`
+> 🔊 `zuzohel grodothegel.`
 >
 > z-seat | g-#-2,3
 >
@@ -209,13 +209,13 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Use
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *grain* | `ugelal` |
+| *grain* | `ogelal` |
 | *cart* | `ogowal` |
-| *see* | `vawebol` |
-| *sit* | `vuhohol` |
+| *see* | `vayebel` |
+| *sit* | `vehohel` |
 | *slow* | `uzezam` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
@@ -223,23 +223,23 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Use
 **1.** *A few grains sit.*
 
 ::: details Show answer
-`zugelalx gram vuhohol.`
+`zogelalx gram vehohel.`
 
 [z-grain-x | g-more-than-one.about] | v-sit
 :::
 
-**2.** *How many trucks does Uzozen see?*
+**2.** *How many trucks does Azozon see?*
 
 ::: details Show answer
-`yel dudavalx grar zuzozen vawebol.`
+`yel dudavalx grar zazozon vayebel.`
 
-y-question | [d-truck-x | g-how-many] | z-Uzozen | v-see
+y-question | [d-truck-x | g-how-many] | z-Azozon | v-see
 :::
 
 **3.** *Thousands of grains sit.* (somewhere from 1000 to 9999, no exact count)
 
 ::: details Show answer
-`zugelalx grawagel.`
+`zogelalx grawagel.`
 
 z-grain-x | g-+-e3
 :::
@@ -264,17 +264,17 @@ y-question | [w-how-many | h-slow] | z-truck
 *How slow is the truck?*
 :::
 
-**2.** `zugelalx g+27e6.`
+**2.** `zogelalx g+27e6.`
 
 ::: details Show answer
-🔊 `zugelalx grawavoyadorel.`
+🔊 `zogelalx grawavoyadorel.`
 
 z-grain-x | g-27e6
 
 *There are 27 million grains.*
 :::
 
-**3.** `zahelan dugelalx grar vawebol.`
+**3.** `zahelan dogelalx grar vayebel.`
 
 ::: details Show answer
 z-Ahelan | [d-grain-x | g-some-amount] | v-see
@@ -284,12 +284,12 @@ z-Ahelan | [d-grain-x | g-some-amount] | v-see
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *How many trucks does Olazun see?* `yel dudavalx grar zolazun vawebol.` or `yel dudavalx gror zolazun vawebol.`
+**1.** *How many trucks does Alazun see?* `yel dudavalx grar zalazun vayebel.` or `yel dudavalx gror zalazun vayebel.`
 
 ::: details Show answer
-`yel dudavalx grar zolazun vawebol.`
+`yel dudavalx grar zalazun vayebel.`
 
-y-question | [d-truck-x | g-how-many] | z-Olazun | v-see
+y-question | [d-truck-x | g-how-many] | z-Alazun | v-see
 
 **-r** on the count marker asks *how many?*; **`ro`** would ask *which place?*
 :::

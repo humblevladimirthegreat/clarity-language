@@ -7,25 +7,25 @@ band: intermediate
 ### Associate-set resolution
 <a id="associate-resolution"></a>
 
-English *Uzozen and them* does not say who belongs. Agebon **-x** is the same: who counts is **open** unless you say. When the list matters, name the members with a [join](/joins). When it does not, the listener guesses in this order: a group already named in the conversation, then the obvious group in the scene (this meeting, this household).
+English *Azozon and them* does not say who belongs. Agebon **-x** is the same: who counts is **open** unless you say. When the list matters, name the members with a [join](/joins). When it does not, the listener guesses in this order: a group already named in the conversation, then the obvious group in the scene (this meeting, this household).
 
-> `zuzozenx vowurel.`
+> `zazozonx vowurol.`
 >
-> z-Uzozen-x | v-walk
+> z-Azozon-x | v-walk
 >
-> "Uzozen and associates walk."
+> "Azozon and associates walk."
 
 If the wrong reading would matter, say so. Use **`aya`** or a join for *you and I*. For *not you*, use speaker **-x**, or subtract the listener with the *except* [hook](/hooks) **`ul`**:
 
-> `zuzozenx ul zawan vowurel.`
+> `zazozonx ul zawan vowurol.`
 >
-> z-Uzozen-x | except | z-listener | v-walk
+> z-Azozon-x | except | z-listener | v-walk
 >
-> "Uzozen and associates, not counting you, walk."
+> "Azozon and associates, not counting you, walk."
 
 | Priority | Use | English |
 |----------|-----|---------|
-| Explicit join / except | listed members win | *Uzozen and Olazun*; associates minus the listener |
+| Explicit join / except | listed members win | *Azozon and Alazun*; associates minus the listener |
 | Recently named cohort | family, team title already in the conversation | that introduced group |
 | Institutional frame | this meeting, this household | the scene’s default group |
 | Open | no further cue | the listener may or may not be in the set |
@@ -34,48 +34,48 @@ For the **address set** (`awanx`), count everyone called by name at the start of
 
 ### Groups as the topic
 
-A [topic word](topic.md#topic-groups) takes **-x** like any noun: `xuzozenx` makes *Uzozen and associates* the topic, `xudozolx` makes *some dogs* the topic, and `xuzozerx` returns to the group. The published [linkers](sentence-linkers.md#sentence-linkers) take no **-x**.
+A [topic word](topic.md#topic-groups) takes **-x** like any noun: `xazozonx` makes *Azozon and associates* the topic, `xodozelx` makes *some dogs* the topic, and `xazozorx` returns to the group. The published [linkers](sentence-linkers.md#sentence-linkers) take no **-x**.
 
 ### Verbs (`/v/`): collective {#verbs-v}
 
 English *they walk* does not say whether it was one shared outing. Put **-x** on the **verb** (after its ending) when the event is **one shared act** (a **collective** act). Without verb **-x**, a group subject leaves open whether they acted together or separately, except with a counted object (below). Noun **-x** says **who** is in the group; verb **-x** says they did it as one act.
 
-> `zuzozenx vezuyolx.`
+> `zazozonx vozuyelx.`
 >
-> z-Uzozen-x | v-sing-x
+> z-Azozon-x | v-sing-x
 >
-> "They sing as one performance." (Uzozen and associates)
+> "They sing as one performance." (Azozon and associates)
 
 | Agebon | Use | English |
 |--------|-----|---------|
 | subject set + singular `/v/` | how they act is left open | *they walk* (together, separately, or don’t care) |
 | subject set + `/v/`…**-x** | collective: one shared act | *they walk as one outing* |
-| named person + `/v/`…**-x** | joint doing; unnamed others share the act | *Uzozen sings jointly* (not a solo) |
+| named person + `/v/`…**-x** | joint doing; unnamed others share the act | *Azozon sings jointly* (not a solo) |
 | group-kind singular (*the family*) + `/v/`…**-x** | the group acts as one unit | *the family walks as one unit* |
 
 <!-- cheat-sheet: people-pointing -->
 | Agebon | English |
 |--------|---------|
-| `zuzozenx vezuyol` | *Uzozen and associates sing* (together or each, or don’t care) |
-| `zuzozenx vezuyolx` | *they sing as one performance* |
-| `zuzozen vezuyolx` | *Uzozen sings jointly* (not a solo) |
-| `zavayal vowurelx` | *the family walks as one unit* |
+| `zazozonx vozuyel` | *Azozon and associates sing* (together or each, or don’t care) |
+| `zazozonx vozuyelx` | *they sing as one performance* |
+| `zazozon vozuyelx` | *Azozon sings jointly* (not a solo) |
+| `zuvayal vowurolx` | *the family walks as one unit* |
 
 A `/v/` join word is a verb too, so it takes the same **-x**: `zayan varx.` is *we do something together*, and `zayan valx.` is *we do nothing together*.
 
 **Counts with a set subject:** when a set subject has a counted object, a singular verb gives the count to **each member** (*apiece*). Verb **-x** makes the count the **total** for the shared act.
 
-> `zuzozen zolazun zal vawebol dagozolx gragel.`
+> `zazozon zalazun zal vayebel dogozelx gragel.`
 >
-> [z-Uzozen | z-Olazun | z-and] | v-see | [d-cat-x | g-three]
+> [z-Azozon | z-Alazun | z-and] | v-see | [d-cat-x | g-three]
 >
-> "Uzozen and Olazun each see three cats."
+> "Azozon and Alazun each see three cats."
 
-> `zuzozen zolazun zal vawebolx dagozolx gragel.`
+> `zazozon zalazun zal vayebelx dogozelx gragel.`
 >
-> [z-Uzozen | z-Olazun | z-and] | v-see-x | [d-cat-x | g-three]
+> [z-Azozon | z-Alazun | z-and] | v-see-x | [d-cat-x | g-three]
 >
-> "Uzozen and Olazun see three cats between them."
+> "Azozon and Alazun see three cats between them."
 
 **-rx** on `/v/` resumes a prior **collective** verb (*still as one shared act*).
 
@@ -86,7 +86,7 @@ A `/v/` join word is a verb too, so it takes the same **-x**: `zayan varx.` is *
 
 English *the boxes are heavy* can mean each box or the pile. Put **-x** on the **adjective** (after its ending) when the property holds of the noun's group **as one unit**. Without **-x**, the adjective leaves open whether it holds of each member or of the whole pile. With **-x**, a pile can be heavy when no single box is.
 
-> `zavonalx garolomx.`
+> `zavonalx garolemx.`
 >
 > z-file-box-x | g-heavy-x
 >
@@ -102,11 +102,11 @@ After nouns joined into a list with **`a`** ([joins](/joins)), one plain `/ɡ/` 
 <!-- cheat-sheet: people-pointing -->
 | Agebon | English |
 |--------|---------|
-| `zavonal zuwal zal garolom` | *the file-box and the tool are each heavy* |
-| `zavonal zuwal zal garolomx` | *the file-box and the tool are heavy together* (collective) |
-| `zavayal gogalam` | *the family is vast* (group-level size) |
-| `zavonalx garolom` | *the file-boxes are heavy* (members / plain) |
-| `zavonalx garolomx` | *the file-boxes are heavy collectively* |
+| `zavonal zuwal zal garolem` | *the file-box and the tool are each heavy* |
+| `zavonal zuwal zal garolemx` | *the file-box and the tool are heavy together* (collective) |
+| `zuvayal gagalam` | *the family is vast* (group-level size) |
+| `zavonalx garolem` | *the file-boxes are heavy* (members / plain) |
+| `zavonalx garolemx` | *the file-boxes are heavy collectively* |
 
 **-rx** on `/ɡ/` resumes a prior **collective** adjective (*still collectively so*).
 
@@ -120,9 +120,9 @@ For *red books*, put **-x** on the **noun** and leave the color word plain, sinc
 
 To call a group at the start of a turn, put **-x** on the call word (the vocative, `/y/`) after its ending, the same way you mark associates on a noun. That names who you are talking to as an associative group. A call ends in **-n** (or resumes with **-r**), so a kind you address takes **-n** as a title. An interjection (**-l** / **-m**) calls no one, so it takes no **-x**.
 
-> `yagozonx.`
+> `yogozenx.`
 >
-> y-Agozon-x
+> y-Ogozen-x
 >
 > "Hey, cats!"
 
@@ -138,7 +138,7 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 
 | Word | Use | English |
 |------|-----|---------|
-| nouns `/z/` `/d/` `/b/` | associative group (name / resume); indefinite group (kind **-lx** / **-mx**) | *Uzozen and associates*; *some dogs* |
+| nouns `/z/` `/d/` `/b/` | associative group (name / resume); indefinite group (kind **-lx** / **-mx**) | *Azozon and associates*; *some dogs* |
 | vocatives `/y/` | group address | *hey, cats*; *Team Alpha* |
 | person-role specials | speaker’s people / address set | *I and my people*; *you all* |
 | join **-rx** (`zarx`) | [unnamed group](/joins#unspecified-member-r-phrase) of members | *some ones* / *some of them* |
@@ -146,7 +146,7 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 | `/ɡ/`…**-x** | collective property | the set as one pile |
 | inner words of a non-opaque span | group reference inside the span | **-x** on those inner words |
 
-**Related form:** a count uses a [number](/numbers) on `/ɡ/` (digitless **`gral`** = more than one; `gragel` = three). **-x** and a count can combine (`zagozolx gragel`).
+**Related form:** a count uses a [number](/numbers) on `/ɡ/` (digitless **`gral`** = more than one; `gragel` = three). **-x** and a count can combine (`zogozelx gragel`).
 
 ### Practice {#intermediate-practice}
 
@@ -158,46 +158,46 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *sheet-music* | `ehorel` | 🎼 |
-| *heavy* | `arolom` | 🪨 from *rock* |
+| *sheet-music* | `ehorol` | 🎼 |
+| *heavy* | `arolem` | 🪨 from *rock* |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *listener* | `awan` |
-| *topic* | `alon` |
-| *family* | `avayal` |
-| *trumpet* | `eyorel` |
-| *page* | `ebonel` |
-| *sing* | `vezuyol` |
-| *see* | `vawebol` |
+| *topic* | `alen` |
+| *family* | `uvayal` |
+| *trumpet* | `adorol` |
+| *page* | `obonol` |
+| *sing* | `vozuyel` |
+| *see* | `vayebel` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
-**1.** *They sing as one performance.* (Uzozen and associates)
+**1.** *They sing as one performance.* (Azozon and associates)
 
 ::: details Show answer
-`zuzozenx vezuyolx.`
+`zazozonx vozuyelx.`
 
-z-Uzozen-x | v-sing-x
+z-Azozon-x | v-sing-x
 :::
 
-**2.** *Olazun sings jointly.* (not a solo)
+**2.** *Alazun sings jointly.* (not a solo)
 
 ::: details Show answer
-`zolazun vezuyolx.`
+`zalazun vozuyelx.`
 
-z-Olazun | v-sing-x
+z-Alazun | v-sing-x
 :::
 
 **3.** *The sheets of music are heavy as a pile.*
 
 ::: details Show answer
-`zehorelx garolomx.`
+`zehorolx garolemx.`
 
 z-sheet-music-x | g-heavy-x
 :::
@@ -210,25 +210,25 @@ z-sheet-music-x | g-heavy-x
 y-listener-x
 :::
 
-**5.** *Uzozen and Olazun see three pages between them.*
+**5.** *Azozon and Alazun see three pages between them.*
 
 ::: details Show answer
-`zuzozen zolazun zal vawebolx debonelx gragel.`
+`zazozon zalazun zal vayebelx dobonolx gragel.`
 
-[z-Uzozen | z-Olazun | z-and] | v-see-x | [d-page-x | g-three]
+[z-Azozon | z-Alazun | z-and] | v-see-x | [d-page-x | g-three]
 :::
 
 **6.** *Ahelan and associates, not counting you, sing.*
 
 ::: details Show answer
-`zahelanx ul zawan vezuyol.`
+`zahelanx ul zawan vozuyel.`
 
 z-Ahelan-x | except | z-listener | v-sing
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zavayal vezuyolx.`
+**1.** `zuvayal vozuyelx.`
 
 ::: details Show answer
 z-family | v-sing-x
@@ -236,15 +236,15 @@ z-family | v-sing-x
 *The family sings as one unit.*
 :::
 
-**2.** `zolazun zahelan zal vawebol dehorelx gradol.`
+**2.** `zalazun zahelan zal vayebel dehorolx gradol.`
 
 ::: details Show answer
-[z-Olazun | z-Ahelan | z-and] | v-see | [d-sheet-music-x | g-two]
+[z-Alazun | z-Ahelan | z-and] | v-see | [d-sheet-music-x | g-two]
 
-*Olazun and Ahelan each see two sheets of music.*
+*Alazun and Ahelan each see two sheets of music.*
 :::
 
-**3.** `zebonel zeyorel zal garolomx.`
+**3.** `zobonol zadorol zal garolemx.`
 
 ::: details Show answer
 [z-page | z-trumpet | z-and | g-heavy-x]
@@ -252,23 +252,23 @@ z-family | v-sing-x
 *The page and the trumpet are heavy together.*
 :::
 
-**4.** `xuzozenx zalon vezuyol.`
+**4.** `xazozonx zalen vozuyel.`
 
 ::: details Show answer
-x-Uzozen-x | z-TOPIC | v-sing
+x-Azozon-x | z-TOPIC | v-sing
 
-*Now, about Uzozen and associates: they sing.*
+*Now, about Azozon and associates: they sing.*
 :::
 
-**5.** `yolazunx.`
+**5.** `yalazunx.`
 
 ::: details Show answer
-y-Olazun-x
+y-Alazun-x
 
-*Hey, Olazun and associates!*
+*Hey, Alazun and associates!*
 :::
 
-**6.** `zehorelx garolom.`
+**6.** `zehorolx garolem.`
 
 ::: details Show answer
 z-sheet-music-x | g-heavy
@@ -278,10 +278,10 @@ z-sheet-music-x | g-heavy
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *The trumpet and the sheet music are each heavy.* `zeyorel zehorel zal garolom.` or `zeyorel zehorel zal garolomx.`
+**1.** *The trumpet and the sheet music are each heavy.* `zadorol zehorol zal garolem.` or `zadorol zehorol zal garolemx.`
 
 ::: details Show answer
-`zeyorel zehorel zal garolom.`
+`zadorol zehorol zal garolem.`
 
 [z-trumpet | z-sheet-music | z-and | g-heavy]
 
@@ -300,10 +300,10 @@ A call is `/y/` with **-nx**; `zahelanx.` only says Ahelan and associates are th
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *They sing.* (Ahelan and associates) <!-- lint: error -->`zahelan vezuyolx.`
+**1.** *They sing.* (Ahelan and associates) <!-- lint: error -->`zahelan vozuyelx.`
 
 ::: details Show answer
-`zahelanx vezuyol.`
+`zahelanx vozuyel.`
 
 z-Ahelan-x | v-sing
 

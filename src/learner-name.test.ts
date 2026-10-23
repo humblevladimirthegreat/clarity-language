@@ -39,7 +39,7 @@ describe("eligibleNames", () => {
       assert.equal(eligibleRoots.has(root), false, root);
       assert.ok(reason(root), root);
     }
-    assert.match(reason(CLOSED.lion)!, /Olazun/);
+    assert.match(reason(CLOSED.lion)!, /Alazun/);
     // **-n** on a mood root (DECISION ✅, MAY 💭) is an ordinary proper name, so these stay eligible.
     for (const root of [rootOf("✅"), rootOf("💭")]) assert.equal(eligibleRoots.has(root), true, root);
     const flag = rows.find((row) => /[\u{1F1E6}-\u{1F1FF}]/u.test(row.emoji))!;
@@ -62,7 +62,7 @@ describe("suggestedNames", () => {
 describe("fillSelf", () => {
   it("fills words with the default speaker root", () => {
     assert.equal(DEFAULT_SELF_ROOT, CLOSED.microphone);
-    assert.equal(fillSelf("zSELFn vowurel."), `z${CLOSED.microphone}n vowurel.`);
+    assert.equal(fillSelf("zSELFn vowurol."), `z${CLOSED.microphone}n vowurol.`);
     assert.equal(fillSelf("SELFn."), `${CLOSED.microphone}n.`);
   });
 
@@ -83,7 +83,7 @@ describe("fillSelf", () => {
     const root = DEFAULT_SELF_ROOT;
     assert.equal(unfillSelfChange("SELFxen", `${root}xen`, `${root}xon`), "SELFxon");
     assert.equal(unfillSelfChange(`zSELFn`, `z${root}n`, `z${root}n`), "zSELFn");
-    assert.equal(unfillSelfChange("SELFxen", `${root}xen`, "vuzunexol"), null);
-    assert.equal(unfillSelfChange("uwoxen", `${root}xen`, `${root}xon`), null);
+    assert.equal(unfillSelfChange("SELFxen", `${root}xen`, "vuzunoxol"), null);
+    assert.equal(unfillSelfChange("uwexen", `${root}xen`, `${root}xon`), null);
   });
 });

@@ -11,7 +11,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 ### Phonotactics (word shape)
 <a id="phonotactics"></a>
 
-Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-r`. Here is the full shape of that word, in order, written as one lowercase token (`zuzozen`).
+Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-r`. Here is the full shape of that word, in order, written as one lowercase token (`zazozon`).
 
 <!-- cheat-sheet: sounds-spelling -->
 | Agebon | Use | English |
@@ -22,12 +22,12 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Root(s) **V(CV)+** | content | start with a vowel; each later consonant starts a new syllable |
 | Mid-word `x` | productive compound seam | joins two roots inside one word |
 | Mid-word `th` | stance seam | joins a sake to its stance vowel ([sakes](/sakes)) |
-| Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`obahoha` *bedroom*) |
+| Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`oyaheha` *bedroom*) |
 | `-l` / `-m` / `-n` / `-r` | [word ending](/word-endings) | audible end of the content word |
 | Optional `-x` | [plural](/plurality) after the ending | word-final `-lx` / `-mx` / `-nx` / `-rx` / `-lnx` (letter `x`) |
 | Stand-in `-rl` / `-rm` | [dependent clauses](/dependents#dependent-clauses) | word-final `rl` / `rm` |
 
-A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubulel`: prefix `z`, root `ubule`, ending `-l`). Each spelling has only one pronunciation.
+A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zobulol`: prefix `z`, root `obulo`, ending `-l`). Each spelling has only one pronunciation.
 
 Some short grammar words put two vowels side by side, a **vowel stack** (a join such as `ua`). A stack always puts its vowels in alphabetical order (`u`, `a`, `o`, `e`): `u` comes first and `e` comes last. That gives six stacks: `ua`, `uo`, `ue`, `ao`, `ae`, and `oe`. The two vowels stay two separate syllables.
 
@@ -50,7 +50,7 @@ Each vowel keeps its [pitch](/phonology#vowel-pitch) in a stack, so every stack 
 
 When English says *how many* or *which place*, Agebon uses a [number word](/numbers). A number word puts `r` right after the role letter. Ordinary words never have that cluster, because their roots start with a vowel, so a role letter followed directly by `r` tells you a number is coming. The marker is `ra`, `ru`, `re`, or `ro`. To count from the end, write `#-` before the digits; it is spelled and spoken `rue`. Two vowels in a row stay two separate syllables.
 
-> `zagozolx gragel.`
+> `zogozelx gragel.`
 >
 > z-cat-x | g-three
 >
@@ -69,7 +69,7 @@ A [hosted extra noun](/clause#extra-nouns) writes `l` after its `b`. When that w
 | `bral` | /bɹäl/ |
 | `blral` | /bl̩.ɹäl/ |
 
-This is the only beat with no vowel letter. Like a vowel, you can hold it. Before a vowel, `bl` is one ordinary start of a beat (`bluzozen` /blʉ.zo̞.ze̞n/).
+This is the only beat with no vowel letter. Like a vowel, you can hold it. Before a vowel, `bl` is one ordinary start of a beat (`blazozon` /blʉ.zo̞.ze̞n/).
 
 Audio of *bottle* is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) by [Dvortygirl](https://commons.wikimedia.org/wiki/User:Dvortygirl).
 
@@ -104,7 +104,7 @@ The table is in **alphabetical order**. The ten letters that begin a digit sylla
 
 <!-- retie: letter-names -->
 ```text
-`agozo` → `a` `go` `o` `zu` `o`
+`ogoze` → `o` `go` `o` `zu` `e`
 ```
 
 In a clause, a letter you talk about (such as `z`) is read aloud by its letter name (`zu`).

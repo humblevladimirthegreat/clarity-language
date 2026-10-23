@@ -8,27 +8,27 @@ describe("padExerciseSpoilerBlanks", () => {
   it("inserts blank between morph and loose English in details", () => {
     const md = `### Translation practice
 
-**1.** \`zuzozen vuhohol.\`
+**1.** \`zazozon vehohel.\`
 
 ::: details Show answer
-z-Uzozen | v-sit
-*Uzozen sits.*
+z-Azozon | v-sit
+*Azozon sits.*
 :::
 `;
     const out = padExerciseSpoilerBlanks(md);
-    assert.match(out, /z-Uzozen \| v-sit\n\n\*Uzozen sits\.\*/);
+    assert.match(out, /z-Azozon \| v-sit\n\n\*Azozon sits\.\*/);
   });
 
   it("pads a converted Practice checkpoint", () => {
     const md = `### Practice
 
 ::: details Show answer
-\`zuzozen vuhohol.\`
-z-Uzozen | v-sit
+\`zazozon vehohel.\`
+z-Azozon | v-sit
 :::
 `;
     const out = padExerciseSpoilerBlanks(md);
-    assert.match(out, /`zuzozen vuhohol\.`\n\nz-Uzozen \| v-sit/);
+    assert.match(out, /`zazozon vehohel\.`\n\nz-Azozon \| v-sit/);
   });
 
   it("gives every spoiler line its own paragraph in a converted checkpoint", () => {
@@ -36,22 +36,22 @@ z-Uzozen | v-sit
 
 #### Pick one
 
-**1.** *Uzozen sees Olazun.* \`zuzozen dolazun vawebol.\` or \`zolazun duzozen vawebol.\`
+**1.** *Azozon sees Alazun.* \`zazozon dalazun vayebel.\` or \`zalazun dazozon vayebel.\`
 
 ::: details Show answer
-\`zuzozen dolazun vawebol.\`
-z-Uzozen | d-Olazun | v-see
+\`zazozon dalazun vayebel.\`
+z-Azozon | d-Alazun | v-see
 The one who sees takes **z-**.
 :::
 `;
-    assert.match(padExerciseSpoilerBlanks(md), /vawebol\.`\n\nz-Uzozen \| d-Olazun \| v-see\n\nThe one who sees takes \*\*z-\*\*\.\n:::/);
+    assert.match(padExerciseSpoilerBlanks(md), /vayebel\.`\n\nz-Azozon \| d-Alazun \| v-see\n\nThe one who sees takes \*\*z-\*\*\.\n:::/);
   });
 
   it("leaves legacy spoiler prose lines joined", () => {
     const md = `### Translation practice
 
 ::: details Show answer
-*Uzozen sits,*
+*Azozon sits,*
 *and waits.*
 :::
 `;
@@ -62,12 +62,12 @@ The one who sees takes **z-**.
     const md = `### Translation practice
 
 ::: details Show answer
-\`zuzozen vuhohol.\`
-z-Uzozen | v-sit
+\`zazozon vehohel.\`
+z-Azozon | v-sit
 :::
 `;
     const out = padExerciseSpoilerBlanks(md);
-    assert.match(out, /`zuzozen vuhohol\.`\n\nz-Uzozen \| v-sit/);
+    assert.match(out, /`zazozon vehohel\.`\n\nz-Azozon \| v-sit/);
   });
 
   it("pads comparatives beginner block", () => {
@@ -76,7 +76,7 @@ z-Uzozen | v-sit
     const end = md.indexOf("## Intermediate", start);
     const slice = md.slice(start, end);
     const out = padExerciseSpoilerBlanks(slice);
-    assert.match(out, /`zahelan zuzozen zoel guzezam\.`\n\n\[z-Ahelan/);
+    assert.match(out, /`zahelan zazozon zoel guzezam\.`\n\n\[z-Ahelan/);
     assert.match(out, /\[z-Ahelan \| z-rank\/more \| g-agility\]\n\n\*Ahelan is the most agile\.\*/);
   });
 });

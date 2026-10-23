@@ -14,7 +14,7 @@ const tables = loadDefaultTables();
 const data = loadHelperData();
 const context = loadPromptContext(tables);
 
-const english = "A very angry Olazun finds money.";
+const english = "A very angry Alazun finds money.";
 const analysis = analyzeEnglish(data, english);
 const prompt = buildHelperPrompt([{ english, analysis }], data, context);
 const shows = promptShows(prompt, [analysis]);

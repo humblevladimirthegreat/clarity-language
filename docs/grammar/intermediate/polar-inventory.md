@@ -19,11 +19,11 @@ Beginner already used *yes* / *true* (**`yaol`**), *no* / *false* (**`yuol`**), 
 
 **`yual`** answers a question that assumes something false. *Have you stopped lying?* has no honest *yes* or *no* if you never lied. **`yual.`** says so in one word, without accepting the frame. It judges the question, not the speaker's willingness: for a refusal to answer, use **`yoel`** (below).
 
-> `yel zuzozen vowurel ul bahehal. yual.`
+> `yel zazozon vowurol ul bohehal. yual.`
 >
-> y-question | z-Uzozen | v-walk | [from | b-house] . y-reject-frame
+> y-question | z-Azozon | v-walk | [from | b-house] . y-reject-frame
 >
-> "Did Uzozen walk away from the house?" "The question doesn't apply." (Uzozen was never at the house)
+> "Did Azozon walk away from the house?" "The question doesn't apply." (Azozon was never at the house)
 
 #### Three endings {#polar-endings}
 
@@ -41,27 +41,27 @@ Each stance word takes one of three endings, on the same settled-to-passing scal
 
 **`yaor`** takes a claim on board without committing to it. English *oh, I see* often sounds like agreement; **`yaor`** says only that you hold the claim for now. You can restate the claim after the stance word:
 
-> `yaor zuzozen vowurel.`
+> `yaor zazozon vowurol.`
 >
-> y-yes-for-now | z-Uzozen | v-walk
+> y-yes-for-now | z-Azozon | v-walk
 >
-> "All right, so Uzozen walks, for now."
+> "All right, so Azozon walks, for now."
 
 **`yuar`** says the question's premise fails at the moment, though it may hold later (cue: a door that is not there yet). **`yuor`** holds off on the claim; **`yuar`** holds off on what the question took for granted.
 
-> `yel zuzozen vowurel ul bahehal. yuar.`
+> `yel zazozon vowurol ul bohehal. yuar.`
 >
-> y-question | z-Uzozen | v-walk | [from | b-house] . y-reject-frame-for-now
+> y-question | z-Azozon | v-walk | [from | b-house] . y-reject-frame-for-now
 >
-> "Is Uzozen walking away from the house?" "The question doesn't apply, for now." (Uzozen isn't at the house yet)
+> "Is Azozon walking away from the house?" "The question doesn't apply, for now." (Azozon isn't at the house yet)
 
 **`yoel`**, **`yoem`** and **`yoer`** decline to answer without saying *no* and without judging the question. Nobody should hear them as a denial or as a rejected frame.
 
-> `yel zolazun vezuvol. yoer.`
+> `yel zalazun vezuvel. yoer.`
 >
-> y-question | z-Olazun | v-sleep . y-decline-for-now
+> y-question | z-Alazun | v-sleep . y-decline-for-now
 >
-> "Is Olazun asleep?" "I'll pass for now."
+> "Is Alazun asleep?" "I'll pass for now."
 
 #### Answering a command or request {#answer-command}
 
@@ -80,13 +80,13 @@ After a flat command, `yaol` / `yuol` are the plain comply / refuse. After a req
 
 After [two stacked act words](speech-acts.md#stacked-acts), answer the first one, the act the speaker really does. A request that sounds like a question (`yol yel …`) takes **`yael`** / **`yuel`**, not a *yes* or *no* about whether you could.
 
-> `yol vowurel zawan. yaol.`
+> `yol vowurol zawan. yaol.`
 >
 > y-command | v-walk | z-listener . y-yes
 >
 > "Walk." "Will do."
 
-> `yom vowurel zawan. yuer.`
+> `yom vowurol zawan. yuer.`
 >
 > y-request | v-walk | z-listener . y-refuse-option-for-now
 >
@@ -114,7 +114,7 @@ For a stronger stance, use the [tone mark](tone-marks.md#tone-marks) **`!!`**, n
 | Loaded question | **`yual`** | **`yuam`** |
 | Declined question | **`yoel`** | **`yoem`** |
 
-A stance word can stand alone (`yaol.`), sit before a body (`yaol zuzozen vowurel.`), or come as a confirm tag in the next turn after `.`. After a stance word plus a body, continue with **`/x/`**; write a second polar word only in a new turn. When you think aloud on your own, **`yuol`** can mark a correction, **`yael`** the next step, and **`yaol`** a point you settle.
+A stance word can stand alone (`yaol.`), sit before a body (`yaol zazozon vowurol.`), or come as a confirm tag in the next turn after `.`. After a stance word plus a body, continue with **`/x/`**; write a second polar word only in a new turn. When you think aloud on your own, **`yuol`** can mark a correction, **`yael`** the next step, and **`yaol`** a point you settle.
 
 **Compare with:** *not* inside the clause uses **`zul`** / **`vul`**. Polar **`yuol`** / **`yuel`** answer a *yes* / *no* or an offer.
 
@@ -124,23 +124,23 @@ Beginner closed a claim with the tag **`yel yaol.`** (*…, right?*). Every pola
 
 After a request or a suggestion, **`yel yael.`** asks *okay?*: will they take it up? **`yel yuel.`** asks *or would you rather not?*, so they can turn it down without having to push back. After a claim, **`yel yuol.`** asks *or am I wrong?*: it invites a correction, where **`yel yaol.`** leans toward agreement.
 
-> `yom vowurel zayan. yel yael.`
+> `yom vowurol zayan. yel yael.`
 >
 > y-request | v-walk | z-interlocutors . y-question | y-sure
 >
 > "Let's walk, okay?"
 
-> `yom vowurel zawan. yel yuel.`
+> `yom vowurol zawan. yel yuel.`
 >
 > y-request | v-walk | z-listener . y-question | y-refuse-option
 >
 > "Please walk, or would you rather not?"
 
-> `zuzozen vowurel. yel yuol.`
+> `zazozon vowurol. yel yuol.`
 >
-> z-Uzozen | v-walk . y-question | y-no
+> z-Azozon | v-walk . y-question | y-no
 >
-> "Uzozen walked, or am I wrong?"
+> "Azozon walked, or am I wrong?"
 
 | Agebon | Use | English |
 <!-- cheat-sheet: talking -->
@@ -156,27 +156,27 @@ Soft **`yem`** asks more gently (`yem yael.` *…, if that's okay?*), and the ot
 
 After [two stacked act words](speech-acts.md#stacked-acts), a tag asks about the first one, the real act. So *okay?* after a command that sounds gentle shows that the gentle sound was only a surface:
 
-> `yol yem vowurel zawan. yel yael.`
+> `yol yem vowurol zawan. yel yael.`
 >
 > y-command | y-soft-question | v-walk | z-listener . y-question | y-sure
 >
 > "Would you maybe walk? Okay?" (it is an order)
 
-**Compare with:** `yom vowurel zawan. yel yael.` is a real request, which the listener is free to turn down.
+**Compare with:** `yom vowurol zawan. yel yael.` is a real request, which the listener is free to turn down.
 
 **Compare with:** the answer itself is the polar word alone (`yael.` *sure*). The tag puts **`yel`** first, so it asks for that answer instead of giving it.
 
 ### Confirming a negative {#confirming-a-negative}
 
-When the question already contains *not* (*Didn’t Uzozen run?*), *yes* and *no* still say whether **that claim** matches. **`yaol`** confirms the denial (*true: they didn’t*). **`yuol`** says the denial is false (*they did*). Restate the body after the stance word to make the answer unmistakable. Offer words (**`yael`** / **`yuel`**) still answer *take this?*, not true/false.
+When the question already contains *not* (*Didn’t Azozon run?*), *yes* and *no* still say whether **that claim** matches. **`yaol`** confirms the denial (*true: they didn’t*). **`yuol`** says the denial is false (*they did*). Restate the body after the stance word to make the answer unmistakable. Offer words (**`yael`** / **`yuel`**) still answer *take this?*, not true/false.
 
-> `yel zuzozen varuvel vul. yaol.`
+> `yel zazozon veruvol vul. yaol.`
 >
-> y-question | z-Uzozen | [v-run | v-not] . y-yes
+> y-question | z-Azozon | [v-run | v-not] . y-yes
 >
-> "Didn’t Uzozen run?" "True, Uzozen didn’t."
+> "Didn’t Azozon run?" "True, Azozon didn’t."
 
-> `yaol varuvel vul.`
+> `yaol veruvol vul.`
 >
 > y-yes | [v-run | v-not]
 >
@@ -186,13 +186,13 @@ When the question already contains *not* (*Didn’t Uzozen run?*), *yes* and *no
 <a id="yes-no-single-item-standalone"></a>
 <a id="under-question"></a>
 
-A *yes/no* question can also check a **named** item: put a single-item join after it instead of a fill-ask blank. Single-item **-l** (or usual **-n**) asks the listener to confirm that this one item alone is meant (*Just Uzozen?*, *Has to be Uzozen?*). Single-item **-m** offers it (*How about Ahelan?*). **`…ul`** / **`…um`** / **`…un`** confirm or offer a denial (*Not Uzozen?*). Standalone **-l** / **-m** check emptiness (*Nothing?*, *Got nothing?*). Fill-ask still uses join **-r**.
+A *yes/no* question can also check a **named** item: put a single-item join after it instead of a fill-ask blank. Single-item **-l** (or usual **-n**) asks the listener to confirm that this one item alone is meant (*Just Azozon?*, *Has to be Azozon?*). Single-item **-m** offers it (*How about Ahelan?*). **`…ul`** / **`…um`** / **`…un`** confirm or offer a denial (*Not Azozon?*). Standalone **-l** / **-m** check emptiness (*Nothing?*, *Got nothing?*). Fill-ask still uses join **-r**.
 
-> `yel zuzozen zal.`
+> `yel zazozon zal.`
 >
-> y-question | [z-Uzozen | z-and]
+> y-question | [z-Azozon | z-and]
 >
-> "Just Uzozen?"
+> "Just Azozon?"
 
 > `yel zahelan zam.`
 >
@@ -212,11 +212,11 @@ A **rhetorical question** sounds like a question, but you are not waiting for a 
 >
 > "Who cares?" (nobody does)
 
-> `yal yel zuzozen vowurel.`
+> `yal yel zazozon vowurol.`
 >
-> y-statement | y-question | z-Uzozen | v-walk
+> y-statement | y-question | z-Azozon | v-walk
 >
-> "Doesn't Uzozen walk?" (of course Uzozen does)
+> "Doesn't Azozon walk?" (of course Azozon does)
 
 Soft **`yam yel`** muses rather than insists: you lean toward an answer but put it forward lightly, as if thinking aloud.
 
@@ -243,7 +243,7 @@ The listener may still reply, but no reply is owed.
 
 A **quiz** asks something you already know, because you want the other person to say it. Put the question word first, because a question is what you really ask, then the statement word: you already hold the answer. The body is an ordinary yes/no question or fill-ask, in a question's usual order.
 
-> `yel yal ? zar vanuvul dobogal.`
+> `yel yal ? zar vabuvul dubogal.`
 >
 > y-question | y-statement | ? | z-wh | v-punch | d-box
 >
@@ -264,7 +264,7 @@ A question can also sound like a command or a prohibition. It still asks, and th
 | **`yel yol`** | question demanded as an order: an answer is required | *Tell me where you were.* |
 | **`yel yul`** | question that hopes for *no* | *You're not leaving, are you?* |
 
-> `yel yul ? zawan velurul.`
+> `yel yul ? zawan vudurul.`
 >
 > y-question | y-prohibition | ? | z-listener | v-departure
 >
@@ -284,33 +284,33 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *phone* | `ovewol` | 📱 |
-| *attest* | `vugol` | 👁️‍🗨️ |
+| *phone* | `ovewel` | 📱 |
+| *attest* | `vugel` | 👁️‍🗨️ |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
+| *Azozon* | `azozon` |
 | *listener* | `awan` |
-| *tell* | `vezuyel` |
-| *lie* | `valamul` |
-| *see* | `vawebol` |
+| *tell* | `vezuyol` |
+| *lie* | `vulamul` |
+| *see* | `vayebel` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
-**1.** *Didn’t Uzozen tell?* *True, Uzozen didn’t.* (confirm the negative)
+**1.** *Didn’t Azozon tell?* *True, Azozon didn’t.* (confirm the negative)
 
 ::: details Show answer
-`yel zuzozen vezuyel vul. yaol.`
+`yel zazozon vezuyol vul. yaol.`
 
-y-question | z-Uzozen | [v-tell | v-not] . y-yes
+y-question | z-Azozon | [v-tell | v-not] . y-yes
 :::
 
 **2.** *Please attest, okay?*
 
 ::: details Show answer
-`yom vugol zawan. yel yael.`
+`yom vugel zawan. yel yael.`
 
 y-request | v-attest | z-listener . y-question | y-sure
 :::
@@ -318,17 +318,17 @@ y-request | v-attest | z-listener . y-question | y-sure
 **3.** *So who lies?* (you already know; they say it)
 
 ::: details Show answer
-`yel yal ? zar valamul.`
+`yel yal ? zar vulamul.`
 
 y-question | y-statement | ? | z-wh | v-lie
 :::
 
-**4.** *Just Uzozen?*
+**4.** *Just Azozon?*
 
 ::: details Show answer
-`yel zuzozen zal.`
+`yel zazozon zal.`
 
-y-question | [z-Uzozen | z-and]
+y-question | [z-Azozon | z-and]
 :::
 
 **5.** *I'd rather not say.*
@@ -342,14 +342,14 @@ y-decline-soft
 **6.** *You're not lying, are you?* (a real question; you hope not)
 
 ::: details Show answer
-`yel yul ? zawan valamul.`
+`yel yul ? zawan vulamul.`
 
 y-question | y-prohibition | ? | z-listener | v-lie
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `yel dovewol der.`
+**1.** `yel dovewel der.`
 
 ::: details Show answer
 y-question | [d-phone | d-any]
@@ -357,7 +357,7 @@ y-question | [d-phone | d-any]
 *Any phone?* (name one; any will do)
 :::
 
-**2.** `yal yel zar vugol.`
+**2.** `yal yel zar vugel.`
 
 ::: details Show answer
 y-statement | y-question | z-wh | v-attest
@@ -373,12 +373,12 @@ y-decline-for-now
 *I'll pass for now.*
 :::
 
-**4.** `zuzozen valamul. yel yuol.`
+**4.** `zazozon vulamul. yel yuol.`
 
 ::: details Show answer
-z-Uzozen | v-lie . y-question | y-no
+z-Azozon | v-lie . y-question | y-no
 
-*Uzozen lied, or am I wrong?*
+*Azozon lied, or am I wrong?*
 :::
 
 **5.** `!!yuel.`
@@ -389,24 +389,24 @@ z-Uzozen | v-lie . y-question | y-no
 *Hell no!*
 :::
 
-**6.** `yaor zuzozen vawebol.`
+**6.** `yaor zazozon vayebel.`
 
 ::: details Show answer
-y-yes-for-now | z-Uzozen | v-see
+y-yes-for-now | z-Azozon | v-see
 
-*All right, so Uzozen sees, for now.*
+*All right, so Azozon sees, for now.*
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *False, Olazun did lie.* (answering *Didn’t Olazun lie?*) `yuol.` or `yaol.`
+**1.** *False, Alazun did lie.* (answering *Didn’t Alazun lie?*) `yuol.` or `yaol.`
 
 ::: details Show answer
 `yuol.`
 
 y-no
 
-The answer says whether the denial matches: **`yuol`** says it does not, so Olazun lied.
+The answer says whether the denial matches: **`yuol`** says it does not, so Alazun lied.
 :::
 
 **2.** *Did you stop lying?* (you never lied) `yual.` or `yuol.`
@@ -421,10 +421,10 @@ y-reject-frame
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *So who attests?* (you already know; they say it) <!-- lint: error -->`yal yel ? zar vugol.`
+**1.** *So who attests?* (you already know; they say it) <!-- lint: error -->`yal yel ? zar vugel.`
 
 ::: details Show answer
-`yel yal ? zar vugol.`
+`yel yal ? zar vugel.`
 
 y-question | y-statement | ? | z-wh | v-attest
 

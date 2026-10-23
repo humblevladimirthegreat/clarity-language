@@ -88,7 +88,7 @@ Pin counts with `node scripts/find.mjs --word … --count` on the default paths 
 | 3 | Hook + extra-noun | [Hooks](#hooks-do), [Extra nouns](#extra-nouns-do) | hook 869 → 470; prefix 109 → 73; hooked form → 82; locus 377 → 67 | 601 → 356; 38 → 33; → 42; 80 → 21 | Same spelling, three jobs. *Whose* / contrary. |
 | 4 | Scope | [Label scope](#label-scope-and-role-compounds-do) | role/scope 439 → 327; say scope 247 → 247; landmark 48 → 16 | 140 → 108; 53 → 55; 20 → 7 | **a**↔**u** on roles. Landmark dest `the` needs membership union `o`/`e` around the write. |
 | 5 | Pointers + ability + conversation | [Pointers](#pointers-do), [Ability](#ability-do), [Conversation length](#conversation-length-do) | pointer 162 → 162; ability 88 → 43; greeting 38 | 102 → 104; 50 → 26; 13 | Remaining size letter-swaps. Split off scope so this session is two maps, not four. |
-| 6 | Root job | [Root job](#root-job-do) | lexicon: 246 `one` + 282 `order` rows (19 + 18 three-letter). `retie-docs`, not find. | | Teach `--all` three-letter tails, then `SHAPE_VOWELS` / retie. Maybe the language name. |
+| 6 | Root job | [Root job](#root-job-do) | lexicon: 246 `ono` + 282 `order` rows (19 + 18 three-letter). `retie-docs`, not find. | | Teach `--all` three-letter tails, then `SHAPE_VOWELS` / retie. Maybe the language name. |
 | 7 | Hang cues + tags + cue tree | [Sake](#sake-stance-do), [Tags](#tags-do), [Finger code](#finger-code-keep), [Order](#order-keep) | tags 97 docs / 60 code (hand-edit A then O). Other series cue-only. | | Hang cues on every owning page. Letters already sit. |
 
 Hook compounds are `xFamily=hookPrefix` (0 hits for `family=hookCompound`). Breakdowns used to decide the split live in the phase bodies.
@@ -202,9 +202,9 @@ Label scope, role compounds, say-word **scope** slot, stacked scope, landmark fa
 
 **Hang cue (scope → size):** how **far the label reaches** (type / practice / pair / episode) — amount of scenes. Not join: a type is a bigger claim, not an *and*. Not order: tags are which person in a queue.
 
-**Scope:** **a** type, **o** practice, **e** pair, **u** episode. Role compounds after **`w`**: beginner opens **u** then **o**; type **a** stays Intermediate. D-40 examples `zwuzuduyel` / `zwozuduyel`. Stacked scope: English stays; letters follow Phase 1 and 3 stacks. Say-word **scope** slot (answer slot already moved in Phase 2): `hwavam` → `hwuvam`, `hwavom` → `hwuvom`. Landmark facing **`tho` → `the`**; motive stays **`tho`**. Pointer **scope** on role pointers waits for Phase 5 (same `--map scope` there). Claritish Labels.
+**Scope:** **a** type, **o** practice, **e** pair, **u** episode. Role compounds after **`w`**: beginner opens **u** then **o**; type **a** stays Intermediate. D-40 examples `zwuzeduyol` / `zwozeduyol`. Stacked scope: English stays; letters follow Phase 1 and 3 stacks. Say-word **scope** slot (answer slot already moved in Phase 2): `hwavam` → `hwuvam`, `hwavom` → `hwuvom`. Landmark facing **`tho` → `the`**; motive stays **`tho`**. Pointer **scope** on role pointers waits for Phase 5 (same `--map scope` there). Claritish Labels.
 
-**Blast:** `xFamily=role|scope|hookPrefix` 439 docs examples / 24 files / 327 replacements (code 140 / 108). Roles 284 docs; hosted scope 46. Simplex **a|u** 172; **o|e** 127; stacks 24. Say scope 247 docs examples / 247 replacements (every say word has a scope slot; code 53 / 55). Landmark facing: `xFamily=lateral` 48 docs examples / 16 replacements (code 20 / 7). Pair scope is on `scope`; motive `tho` does not match. Dest `gazuhethel` still classifies as label scope until `landmarkLateral` accepts **e** (widen to the union around the write, then shrink).
+**Blast:** `xFamily=role|scope|hookPrefix` 439 docs examples / 24 files / 327 replacements (code 140 / 108). Roles 284 docs; hosted scope 46. Simplex **a|u** 172; **o|e** 127; stacks 24. Say scope 247 docs examples / 247 replacements (every say word has a scope slot; code 53 / 55). Landmark facing: `xFamily=lateral` 48 docs examples / 16 replacements (code 20 / 7). Pair scope is on `scope`; motive `tho` does not match. Dest `gazuhothel` still classifies as label scope until `landmarkLateral` accepts **e** (widen to the union around the write, then shrink).
 
 **Pages:** `label-seams.md`, `roles.md`, `viewpoint.md` (landmark facing), say-scope rows, Claritish `labels.md`, D-40. Cheat sheets `word-shape-clause.md`. Hang cue in the label-scope lead.
 
@@ -216,11 +216,11 @@ node scripts/find.mjs --word family=say --map scope=a:u,u:a,e:o,o:e,ae:ao,ao:ae,
 node scripts/find.mjs --word xFamily=lateral --map scope=o:e,e:o
 ```
 
-The third command rewrites `gazuhethol` → `gazuhethel` and not motive `tho`. Widen `landmarkLateral` to **o** and **e** around that write, then shrink to **e**.
+The third command rewrites `gazuhothol` → `gazuhothel` and not motive `tho`. Widen `landmarkLateral` to **o** and **e** around that write, then shrink to **e**.
 
 **Commits:** (1) `landmarkLateral` union **o**/**e**; (2) scope owning pages + D-40; (3) `--write` role/scope/hookPrefix + say-scope + stacked scope; (4) `--write` landmark facing, then shrink `landmarkLateral` to **e**; (5) Claritish Labels; (6) verify.
 
-**Done when:** `zwuzuduyel` is *someone who teaches*, `hwuvam` is *you may*, `gazuhethel` is *behind the house*, and `landmarkLateral` reads pair scope **e** only.
+**Done when:** `zwuzeduyol` is *someone who teaches*, `hwuvam` is *you may*, `gazuhothel` is *behind the house*, and `landmarkLateral` reads pair scope **e** only.
 
 ### Phase 5 — Pointers, ability, conversation length (absorbed)
 
@@ -251,19 +251,19 @@ node scripts/find.mjs --word xFamily=ability --map stance=e:o,o:e
 
 **Commits:** (1) pointer owning pages; (2) `--write` pointers; (3) ability + conversation pages (drop join cues); (4) `--write` ability + greetings + Claritish; (5) verify.
 
-**Done when:** `zwuzer` is the latest doer, `vezuyoxol` is *can't right now*, `SELFxon` is a few minutes.
+**Done when:** `zwuzer` is the latest doer, `vozuyexol` is *can't right now*, `SELFxon` is a few minutes.
 
 ### Phase 6 — Root job
 
-Last vowel **hangs on join**: **`one`** → **e**, **`order`** → **o**. `holds` / `takes-away` stay. Middle vowel stays size.
+Last vowel **hangs on join**: **`ono`** → **e**, **`order`** → **o**. `holds` / `takes-away` stay. Middle vowel stays size.
 
 **Hang cue (last vowel → join):** what the root **does to stuff** (gathers / travel the line / one piece / take away) — list operations. Size is the **middle** vowel (how big). Hook would predict the same letters; the parent is still join.
 
-**Blast:** published lexicon 246 `one` + 282 `order` rows, including 19 + 18 three-letter roots. Compounds have no `shape` column; they follow the head via retie. Find does not rewrite this phase.
+**Blast:** published lexicon 246 `ono` + 282 `order` rows, including 19 + 18 three-letter roots. Compounds have no `shape` column; they follow the head via retie. Find does not rewrite this phase.
 
 **Tooling first:** `--all` currently keeps three-letter roots, so a `SHAPE_VOWELS` flip would leave those 19 + 18 short *one* / *order* tails on the old last vowel. Change `convert-word` so `--all` rewrites those last vowels from `kind` + `shape` and keeps the first vowel (overlay uniqueness is the first two letters; a last-vowel swap does not need a re-place). Do not retarget three-letter rows by hand. Document that in [lexicon.md](../meta/lexicon.md).
 
-**Then the usual remap:** point `SHAPE_VOWELS` at the new letters (`one` → **e**, `order` → **o**); `npm run convert-word -- --lexicon --all`; `npm run retie-docs` then `-- --write`; if the dry run prints `language name 👓 old → new`, `npm run rename-language` then `-- --write` in this same phase (glasses is `body` + `one`, `agebo` → `agebe`); `npm run english-helper-wordnet`; lexicon.md shape-letter map; `root-tails.md` including tail suffixes (`ye` not `yo` for *friend*); pegs (`npm test` fails on an empty 0–9 / 00–99 cell).
+**Then the usual remap:** point `SHAPE_VOWELS` at the new letters (`ono` → **e**, `order` → **o**); `npm run convert-word -- --lexicon --all`; `npm run retie-docs` then `-- --write`; if the dry run prints `language name 👓 old → new`, `npm run rename-language` then `-- --write` in this same phase (glasses is `body` + `ono`, `agebe` → `agebe`); `npm run english-helper-wordnet`; lexicon.md shape-letter map; `root-tails.md` including tail suffixes (`ye` not `yo` for *friend*); pegs (`npm test` fails on an empty 0–9 / 00–99 cell).
 
 **Commits:** (1) `convert-word` three-letter tail rewrite + lexicon.md; (2) `SHAPE_VOWELS` + `convert-word -- --lexicon --all`; (3) `retie-docs --write`; (4) `rename-language --write` if needed; (5) wordnet + root-tails.md + pegs + tests.
 
@@ -347,7 +347,7 @@ Hang cue: how much can-do is in. Reorder remaining ability down to none. Same **
 | **xe** | can't right now | can't yet | small: not there yet |
 | **xu** | can never | can never | none |
 
-Default when unsure moves with *can't yet*: use **xe**. Hostless **`oda`** takes the same vowels (`hodaxel` is then *can't yet*, `hodaxol` *can't right now*). Today's `zolazun vezuyoxel` (*can't sing right now*) becomes `zolazun vezuyoxol`.
+Default when unsure moves with *can't yet*: use **xe**. Hostless **`oda`** takes the same vowels (`hodaxel` is then *can't yet*, `hodaxol` *can't right now*). Today's `zalazun vozuyexel` (*can't sing right now*) becomes `zalazun vozuyexol`.
 
 Claritish: `drive-xo` a sprained ankle, `code-xe` hasn't learned yet.
 
@@ -381,18 +381,18 @@ Role compounds write the same vowels after **`w`**.
 
 | Now | Proposed | English |
 |-----|----------|---------|
-| `zwazuduyel` | `zwuzuduyel` | *someone who teaches* (this once) |
-| `zwezuduyel` | `zwozuduyel` | *a teacher* (practice) |
-| `gwozuduyel blolazun` | `gwezuduyel blolazun` | *is a teacher to Olazun* |
-| `zwuzuduyel` | `zwazuduyel` | *a teacher type* |
+| `zwazeduyol` | `zwuzeduyol` | *someone who teaches* (this once) |
+| `zwezeduyol` | `zwozeduyol` | *a teacher* (practice) |
+| `gwozeduyol blalazun` | `gwezeduyol blalazun` | *is a teacher to Alazun* |
+| `zwuzeduyol` | `zwazeduyol` | *a teacher type* |
 
-On a content root: `gunemuthal` *angry this time* becomes `gunemuthul`; `ganumuthul` *an anxious type* becomes `ganumuthal`; `golayothom blolazun` *a stranger to Olazun* becomes `golayothem`; `gwezuduyel` *is a teacher* becomes `gwozuduyel`.
+On a content root: `gonumuthal` *angry this time* becomes `gonumuthul`; `ganomuthul` *an anxious type* becomes `ganomuthal`; `gulayethom blalazun` *a stranger to Alazun* becomes `gulayethem`; `gwezeduyol` *is a teacher* becomes `gwozeduyol`.
 
-**a** ↔ **u** and **o** ↔ **e** are pairwise swaps: every old spelling still parses, with the opposite reach. `zwazuduyel` left untouched would become *a teacher type*.
+**a** ↔ **u** and **o** ↔ **e** are pairwise swaps: every old spelling still parses, with the opposite reach. `zwazeduyol` left untouched would become *a teacher type*.
 
 ### Keep the one-act nudge
 
-[D-40](../meta/design-decisions.md) still holds: every role word picks a scope, so one fight is not a fighter. **a** is now the wide claim, so do **not** teach it first. Beginner role compounds open with **u** (*someone who teaches*), then **o** (*a teacher*). Type **a** stays Intermediate. Update D-40's example spellings when absorbed (`zwuzuduyel` / `zwozuduyel`).
+[D-40](../meta/design-decisions.md) still holds: every role word picks a scope, so one fight is not a fighter. **a** is now the wide claim, so do **not** teach it first. Beginner role compounds open with **u** (*someone who teaches*), then **o** (*a teacher*). Type **a** stays Intermediate. Update D-40's example spellings when absorbed (`zwuzeduyol` / `zwozeduyol`).
 
 ### Stacked scope: English stays, letters follow joins and hooks
 
@@ -413,7 +413,7 @@ Say-word *scope* is label scope. Say-word *answers* hang on act (above). Both sl
 
 Require on this act: `hwavem` *you have to* → `hwuvom`. `hwadam` and `hwudam` swap meaning from scope alone.
 
-Landmark facing is pair scope on a direction: **`tho` → `the`**. `gazuhethol blahehal` *behind the house* becomes `gazuhethel`. Arrow roots still take no other scope vowel. Motive stays **`tho`**, so landmark facing and motive no longer share a letter. The facing vowel is already on `scope`; Phase 4 still widens `landmarkLateral` to **o**/**e** around the write so dest `the` reparses as facing, not label scope.
+Landmark facing is pair scope on a direction: **`tho` → `the`**. `gazuhothol blohehal` *behind the house* becomes `gazuhothel`. Arrow roots still take no other scope vowel. Motive stays **`tho`**, so landmark facing and motive no longer share a letter. The facing vowel is already on `scope`; Phase 4 still widens `landmarkLateral` to **o**/**e** around the write so dest `the` reparses as facing, not label scope.
 
 Role pointers always write episode scope after **`w`**. That letter becomes **u**. Combined with the pointer vowels below, `zwazar` *the latest doer* becomes `zwuzer`.
 
@@ -509,13 +509,13 @@ Beginner still only needs the ends: **`tha`** met, **`thu`** unmet. Motive is mo
 
 **`the`** is *ought this act for this sake*: advice, not yet yours. **`tho`** is *doing for this sake*: a description, not a *should*. A command still tells someone to act without naming a sake; prescription names the sake. Ending tables and feeling tails stay on these letters.
 
-Forms stay: `thawathum` *detracts from relatedness*, `thawothem` *ought, offered, for relatedness*, `thawothom` *talks to feel connected*, `thawatham` *serves relatedness*.
+Forms stay: `thawathum` *detracts from relatedness*, `thawethem` *ought, offered, for relatedness*, `thawethom` *talks to feel connected*, `thawatham` *serves relatedness*.
 
 ## Root job (do)
 
 The [middle vowel](/root-tails#root-tails) hangs on size (keep): how big the named thing is. The last vowel hangs on join, not size and not hook. The owning page already says it uses the same series as [joins](/joins): **a** add, **o** one, **e** order, **u** undo. After the join remap that is **a** add, **o** rank, **e** choice, **u** *not*.
 
-In [`SHAPE_VOWELS`](../../src/root-tails.ts), **`one`** becomes **e** (choice: one compact thing) and **`order`** becomes **o** (rank: a path, membership stays). The `shape` column keeps those names. **`holds`** and **`takes-away`** stay **a** / **u**.
+In [`SHAPE_VOWELS`](../../src/root-tails.ts), **`ono`** becomes **e** (choice: one compact thing) and **`order`** becomes **o** (rank: a path, membership stays). The `shape` column keeps those names. **`holds`** and **`takes-away`** stay **a** / **u**.
 
 | Last vowel | Now | Proposed | Join |
 |------------|-----|----------|------|
@@ -528,7 +528,7 @@ Fallback outline follows the letters: hollow **a**, long **o** (a road), round *
 
 Tail suffixes follow: *friend* (*hug* + person, one thing marked by the left) is **`ye`**, not **`yo`**.
 
-Change `convert-word` so `--all` rewrites three-letter last vowels from `shape` (keep the first vowel); then point `SHAPE_VOWELS` at the new letters, run `npm run convert-word -- --lexicon --all`, then `retie-docs`. Do not re-place those short roots by hand. If the dry run prints `language name 👓 old → new`, run **`npm run rename-language`**: the glasses root is `body` + `one`, so its last vowel moves with this map. Pegs follow the consonants; `npm test` fails if a respelling empties a 0–9 / 00–99 cell.
+Change `convert-word` so `--all` rewrites three-letter last vowels from `shape` (keep the first vowel); then point `SHAPE_VOWELS` at the new letters, run `npm run convert-word -- --lexicon --all`, then `retie-docs`. Do not re-place those short roots by hand. If the dry run prints `language name 👓 old → new`, run **`npm run rename-language`**: the glasses root is `body` + `ono`, so its last vowel moves with this map. Pegs follow the consonants; `npm test` fails if a respelling empties a 0–9 / 00–99 cell.
 
 ## Tags (do)
 

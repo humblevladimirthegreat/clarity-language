@@ -5,7 +5,7 @@ import { isNativeSurface, toPhonemeWord, wordIpaPhones } from "./phonemes.js";
 
 describe("wordIpaPhones", () => {
   it("keeps citation dots on ipa and joins syllables without them", () => {
-    const word = toPhonemeWord("zuzozen");
+    const word = toPhonemeWord("zazozon");
     assert.equal(word.ipa, "zʉ.zo̞.ze̞n");
     assert.equal(wordIpaPhones(word), "zʉzo̞ze̞n");
     const yuon = toPhonemeWord("yuon");
@@ -18,8 +18,8 @@ describe("wordIpaPhones", () => {
 
 describe("th stance letter", () => {
   it("reads th as one letter /ð/", () => {
-    assert.ok(isNativeSurface("thodohom"));
-    assert.equal(toPhonemeWord("thodohom").ipa, "ðo̞.do̞.ɦo̞m");
+    assert.ok(isNativeSurface("thodohem"));
+    assert.equal(toPhonemeWord("thodohem").ipa, "ðo̞.do̞.ɦo̞m");
     assert.ok(!isNativeSurface("todohom"));
   });
 });
@@ -40,7 +40,7 @@ describe("toPhonemeWord", () => {
   it("gives bl- its own syllabic beat before r and w (blral, blwar)", () => {
     assert.equal(toPhonemeWord("blral").ipa, "bl̩.ɹäl");
     assert.equal(toPhonemeWord("blwar").ipa, "bl̩.wäɹ");
-    assert.equal(toPhonemeWord("bluzozen").ipa, "blʉ.zo̞.ze̞n");
+    assert.equal(toPhonemeWord("blazozon").ipa, "blʉ.zo̞.ze̞n");
     assert.equal(toPhonemeWord("bral").ipa, "bɹäl");
   });
 
@@ -53,8 +53,8 @@ describe("toPhonemeWord", () => {
     assert.equal(word.ipa, "jʉ.o̞n");
   });
 
-  it("keeps word-final -x as letter x /ʒ/ (zuzozenx)", () => {
-    const word = toPhonemeWord("zuzozenx");
+  it("keeps word-final -x as letter x /ʒ/ (zazozonx)", () => {
+    const word = toPhonemeWord("zazozonx");
     assert.equal(word.ipa, "zʉ.zo̞.ze̞nʒ");
     assert.equal(word.syllables.at(-1)?.ipa.endsWith("ʒ"), true);
   });
@@ -65,20 +65,20 @@ describe("toPhonemeWord", () => {
     assert.equal(word.ipa, "zʉ.ɡo̞.bo̞.ʒɹä.wo̞n");
   });
 
-  it("keeps gl- as an onset cluster (glelulul)", () => {
-    const word = toPhonemeWord("glelulul");
+  it("keeps gl- as an onset cluster (glululul)", () => {
+    const word = toPhonemeWord("glululul");
     assert.equal(word.ipa, "ɡle̞.lʉ.lʉl");
   });
 
   it("matches the phonology try-it line", () => {
-    assert.equal(toPhonemeWord("zuzozen").ipa, "zʉ.zo̞.ze̞n");
+    assert.equal(toPhonemeWord("zazozon").ipa, "zʉ.zo̞.ze̞n");
     assert.equal(toPhonemeWord("gozulamum").ipa, "ɡo̞.zʉ.lä.mʉm");
   });
 });
 
 describe("isNativeSurface", () => {
   it("accepts ordinary words and rejects writing shorthand", () => {
-    assert.equal(isNativeSurface("zuzozen"), true);
+    assert.equal(isNativeSurface("zazozon"), true);
     assert.equal(isNativeSurface("gragel"), true);
     assert.equal(isNativeSurface("g+3"), false);
     assert.equal(isNativeSurface("d[hi]"), false);

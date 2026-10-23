@@ -4,49 +4,49 @@ band: beginner
 
 # Social relations {#social-ties}
 
-### Social relations (*Uzozen's friend*, *boss*) {#social-relations}
+### Social relations (*Azozon's friend*, *boss*) {#social-relations}
 
-English *'s* also names a social tie (*Uzozen's friend*, *Uzozen's boss*). Put the root for the tie on `/ɡ/` with **-m** (the abstract sense), and put the other person in a `bl-` word right after it, as with the *of* relations. `/b/` is the person the tie points to.
+English *'s* also names a social tie (*Azozon's friend*, *Azozon's boss*). Put the root for the tie on `/ɡ/` with **-m** (the abstract sense), and put the other person in a `bl-` word right after it, as with the *of* relations. `/b/` is the person the tie points to.
 
-> `zolazun gumayam bluzozen.`
+> `zalazun gamayam blazozon.`
 >
-> z-Olazun | [g-companionship | bl-Uzozen]
+> z-Alazun | [g-companionship | bl-Azozon]
 >
-> "Olazun is Uzozen's friend."
+> "Alazun is Azozon's friend."
 
-> `zuzozen dolazun gugobem bluzozen vawebol.`
+> `zazozon dalazun gegobom blazozon vayebel.`
 >
-> z-Uzozen | [d-Olazun | [g-leadership | bl-Uzozen]] | v-see
+> z-Azozon | [d-Alazun | [g-leadership | bl-Azozon]] | v-see
 >
-> "Uzozen sees Olazun, Uzozen's boss."
+> "Azozon sees Alazun, Azozon's boss."
 
-With no `bl-` word after a joined subject, the tie points at the other members, as with `gewom` ([similative](relations.md#similative)). The other party is left out.
+With no `bl-` word after a joined subject, the tie points at the other members, as with `gewem` ([similative](relations.md#similative)). The other party is left out.
 
-> `zuzozen zolazun zal gumayam.`
+> `zazozon zalazun zal gamayam.`
 >
-> [z-Uzozen | z-Olazun | z-and | g-companionship]
+> [z-Azozon | z-Alazun | z-and | g-companionship]
 >
-> "Uzozen and Olazun are friends."
+> "Azozon and Alazun are friends."
 
-Any root whose abstract sense is a tie works this way (`gohuyam` *partner of*, `gawom` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with **`o`**: after `zolazun gumayam bluzozen`, `zwubumayar` is *the other party of that friendship* (Uzozen).
+Any root whose abstract sense is a tie works this way (`gohuyam` *partner of*, `gawem` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with **`o`**: after `zalazun gamayam blazozon`, `zwubamayar` is *the other party of that friendship* (Azozon).
 
 <!-- cheat-sheet: linking-clauses -->
 | Agebon | Use | English | Same root as |
 |--------|-----|---------|--------------|
-| **`gumayam`** + `/b/` | companion of `/b/` | *friend of* | `umayal` *Mrs Claus* |
-| **`gugobem`** + `/b/` | the one `/b/` answers to | *boss of* | `ugobel` *crown* |
+| **`gamayam`** + `/b/` | companion of `/b/` | *friend of* | `amayal` *Mrs Claus* |
+| **`gegobom`** + `/b/` | the one `/b/` answers to | *boss of* | `egobol` *crown* |
 | **`gohuyam`** + `/b/` | partner of `/b/` | *partner of* | `ohuyal` *holding hands* |
-| **`gobolom`** + `/b/` | the one `/b/` looks after | *in the care of* (*Uzozen's patient*, *team*) | `obolol` *house plant* |
+| **`gabolem`** + `/b/` | the one `/b/` looks after | *in the care of* (*Azozon's patient*, *team*) | `abolel` *house plant* |
 
-A tie of care (*Uzozen's patient*, *Uzozen's team*) is **`gobolom`**: `/b/` looks after the person. It says Uzozen is responsible for them, not that Uzozen owns or uses them. (cue: 🪴 a house plant needs someone to tend it)
+A tie of care (*Azozon's patient*, *Azozon's team*) is **`gabolem`**: `/b/` looks after the person. It says Azozon is responsible for them, not that Azozon owns or uses them. (cue: 🪴 a house plant needs someone to tend it)
 
-> `zolazun gobolom bluzozen.`
+> `zalazun gabolem blazozon.`
 >
-> z-Olazun | [g-tending | bl-Uzozen]
+> z-Alazun | [g-tending | bl-Azozon]
 >
-> "Olazun is in Uzozen's care."
+> "Alazun is in Azozon's care."
 
-**Compare with:** plain *Uzozen's*, with the tie left unsaid, is the hook [`om`](extra-noun-hooks.md#genitive). Ownership is `gogunum`.
+**Compare with:** plain *Azozon's*, with the tie left unsaid, is the hook [`om`](extra-noun-hooks.md#genitive). Ownership is `gegunum`.
 
 ### Practice {#beginner-practice}
 
@@ -58,94 +58,94 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *companionship* | `gumayam` | 🤶 from *Mrs Claus*: a companion at your side |
-| *leadership* | `gugobem` | 👑 from *crown*: the one others answer to |
-| *tending* | `gobolom` | 🪴 from *house plant*: looking after what grows |
+| *companionship* | `gamayam` | 🤶 from *Mrs Claus*: a companion at your side |
+| *leadership* | `gegobom` | 👑 from *crown*: the one others answer to |
+| *tending* | `gabolem` | 🪴 from *house plant*: looking after what grows |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *see* | `vawebol` |
-| *sit* | `vuhohol` |
-| *run* | `varuvel` |
+| *see* | `vayebel` |
+| *sit* | `vehohel` |
+| *run* | `veruvol` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *Ahelan is Olazun's friend.*
+**1.** *Ahelan is Alazun's friend.*
 
 ::: details Show answer
-`zahelan gumayam blolazun.`
+`zahelan gamayam blalazun.`
 
-z-Ahelan | [g-companionship | bl-Olazun]
+z-Ahelan | [g-companionship | bl-Alazun]
 :::
 
-**2.** *Uzozen sees Olazun, Uzozen's boss.*
+**2.** *Azozon sees Alazun, Azozon's boss.*
 
 ::: details Show answer
-`zuzozen dolazun gugobem bluzozen vawebol.`
+`zazozon dalazun gegobom blazozon vayebel.`
 
-z-Uzozen | [d-Olazun | [g-leadership | bl-Uzozen]] | v-see
+z-Azozon | [d-Alazun | [g-leadership | bl-Azozon]] | v-see
 :::
 
-**3.** *Olazun is in Uzozen's care.*
+**3.** *Alazun is in Azozon's care.*
 
 ::: details Show answer
-`zolazun gobolom bluzozen.`
+`zalazun gabolem blazozon.`
 
-z-Olazun | [g-tending | bl-Uzozen]
+z-Alazun | [g-tending | bl-Azozon]
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zuzozen zahelan zal gumayam.`
+**1.** `zazozon zahelan zal gamayam.`
 
 ::: details Show answer
-[z-Uzozen | z-Ahelan | z-and | g-companionship]
+[z-Azozon | z-Ahelan | z-and | g-companionship]
 
-*Uzozen and Ahelan are friends.*
+*Azozon and Ahelan are friends.*
 :::
 
-**2.** `zolazun gumayam bluzozen varuvel.`
+**2.** `zalazun gamayam blazozon veruvol.`
 
 ::: details Show answer
-[z-Olazun | [g-companionship | bl-Uzozen]] | v-run
+[z-Alazun | [g-companionship | bl-Azozon]] | v-run
 
-*Olazun, Uzozen's friend, runs.*
+*Alazun, Azozon's friend, runs.*
 :::
 
-**3.** `zahelan gobolom blolazun vuhohol.`
+**3.** `zahelan gabolem blalazun vehohel.`
 
 ::: details Show answer
-[z-Ahelan | [g-tending | bl-Olazun]] | v-sit
+[z-Ahelan | [g-tending | bl-Alazun]] | v-sit
 
-*Ahelan, in Olazun's care, sits.*
+*Ahelan, in Alazun's care, sits.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Olazun and Ahelan are friends.* `zolazun zahelan zal gumayam.` or `zolazun gumayam blahelan.`
+**1.** *Alazun and Ahelan are friends.* `zalazun zahelan zal gamayam.` or `zalazun gamayam blahelan.`
 
 ::: details Show answer
-`zolazun zahelan zal gumayam.`
+`zalazun zahelan zal gamayam.`
 
-[z-Olazun | z-Ahelan | z-and | g-companionship]
+[z-Alazun | z-Ahelan | z-and | g-companionship]
 
-With no `bl-` word, the tie points at the other members of the join; **`gumayam blahelan`** would say only Olazun is Ahelan's friend.
+With no `bl-` word, the tie points at the other members of the join; **`gamayam blahelan`** would say only Alazun is Ahelan's friend.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Olazun is Uzozen's friend.* <!-- lint: error -->`zolazun em buzozen.`
+**1.** *Alazun is Azozon's friend.* <!-- lint: error -->`zalazun em bazozon.`
 
 ::: details Show answer
-`zolazun gumayam bluzozen.`
+`zalazun gamayam blazozon.`
 
-z-Olazun | [g-companionship | bl-Uzozen]
+z-Alazun | [g-companionship | bl-Azozon]
 
-A social tie takes the tie root on `/ɡ/` with **/b/**; **`om`** is *in Uzozen's use*.
+A social tie takes the tie root on `/ɡ/` with **/b/**; **`om`** is *in Azozon's use*.
 :::
 

@@ -9,53 +9,53 @@ English *they* and *the Smiths* often mean a named person plus people around the
 
 ### Associative group (`-x`) {#associative}
 
-Without **-x**, the word picks **one** person or thing. With **-x** after the ending, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation; on a name it reads as *Uzozen and associates*. (cue: **-x** ≈ set with the named anchor)
+Without **-x**, the word picks **one** person or thing. With **-x** after the ending, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation; on a name it reads as *Azozon and associates*. (cue: **-x** ≈ set with the named anchor)
 
-> `zuzozenx vowurel.`
+> `zazozonx vowurol.`
 >
-> z-Uzozen-x | v-walk
+> z-Azozon-x | v-walk
 >
-> "Uzozen and associates walk."
+> "Azozon and associates walk."
 
-A name already ends in **-n**, so a name plus associates is **-nx** (`zuzozenx`). The same **-nx** also marks a group that has its own name or title (*Team Alpha*).
+A name already ends in **-n**, so a name plus associates is **-nx** (`zazozonx`). The same **-nx** also marks a group that has its own name or title (*Team Alpha*).
 
 To point back to that group (or to a prior person **and** their associates), add **-x** after resume **-r**:
 
-> `zuzozerx vuhohol.`
+> `zazozorx vehohel.`
 >
-> z-←Uzozen-x | v-sit
+> z-←Azozon-x | v-sit
 >
-> "They sit." (Uzozen and associates)
+> "They sit." (Azozon and associates)
 
 A [role pointer](pronouns.md#role-pointers) takes **-x** the same way: that one and associates, or the whole group when the earlier slot held a joined list.
 
-> `zuzozen vowurel. zwuzerx vuhohol.`
+> `zazozon vowurol. zwuzerx vehohel.`
 >
-> z-Uzozen | v-walk . z-←episode-agent.same-x | v-sit
+> z-Azozon | v-walk . z-←episode-agent.same-x | v-sit
 >
-> "Uzozen walks. They sit." (Uzozen and associates)
+> "Azozon walks. They sit." (Azozon and associates)
 
 To introduce several things of one kind (English *some cats*), use **-lx** (concrete) or **-mx** (abstract). Plain **-l** / **-m** introduce one thing. With **-x** added, they introduce an **indefinite group**: a set of that kind in this situation, with no anchor and no associates.
 
-> `zagozolx vuhohol.`
+> `zogozelx vehohel.`
 >
 > z-cat-x | v-sit
 >
 > "Some cats sit."
 
-> `zuzozen dudozolx vawebol.`
+> `zazozon dodozelx vayebel.`
 >
-> z-Uzozen | d-dog-x | v-see
+> z-Azozon | d-dog-x | v-see
 >
-> "Uzozen sees some dogs."
+> "Azozon sees some dogs."
 
-An extra noun takes **-x** the same way. Here the recipient is Olazun and associates:
+An extra noun takes **-x** the same way. Here the recipient is Alazun and associates:
 
-> `zuzozen vezuyel bolazunx.`
+> `zazozon vezuyol balazunx.`
 >
-> z-Uzozen | v-tell | b-Olazun-x
+> z-Azozon | v-tell | b-Alazun-x
 >
-> "Uzozen talks to Olazun and associates."
+> "Azozon talks to Alazun and associates."
 
 **Compare with:** English *cats* can mean the kind in general. **-lx** means only a set in this situation.
 
@@ -63,8 +63,8 @@ An extra noun takes **-x** the same way. Here the recipient is Olazun and associ
 |--------|-----|---------|
 | **-lx** | indefinite group (a set in this situation), concrete | *some cats* (a set in this situation) |
 | **-mx** | indefinite group (a set in this situation), abstract | same grouping on a **-m** root |
-| **-nx** | named / titled group | *Team Alpha*; *Uzozen and associates* as a title |
-| **-lnx** | indefinite group of things a name applies to | *some Uzozens* (beds of that brand) |
+| **-nx** | named / titled group | *Team Alpha*; *Azozon and associates* as a title |
+| **-lnx** | indefinite group of things a name applies to | *some Azozons* (beds of that brand) |
 | **-rx** | resume someone already mentioned and associates, or a prior group | *they* (that one and associates) |
 
 ### Person-role **-x** {#person-role-x}
@@ -74,68 +74,68 @@ English *we* and *you* do not say whether the listener is in the group (the spli
 
 Inclusive *you and I* is **`aya`** ([special pronouns](pronouns.md#special-pronouns)). With **-x** it adds the speaker’s and listener’s shared people.
 
-> `zawanx vowurel.`
+> `zawanx vowurol.`
 >
 > z-listener-x | v-walk
 >
 > "You all walk." (everyone I'm talking to)
 
-> `zuwonx vuhohol.`
+> `zuwenx vehohel.`
 >
 > z-speaker-x | v-sit
 >
 > "My people and I sit." (not you)
 
-> `zolazunx vuhohol.`
+> `zalazunx vehohel.`
 >
-> z-Olazun-x | v-sit
+> z-Alazun-x | v-sit
 >
-> "You and your associates sit." (said to Olazun)
+> "You and your associates sit." (said to Alazun)
 
-> `zayan vowurel.`
+> `zayan vowurol.`
 >
 > z-interlocutors | v-walk
 >
 > "We walk." (you and I)
 
-The same roots take the role letter of the slot they fill. As a direct object they are **`duwonx`**, **`dawanx`**, **`dayan`**:
+The same roots take the role letter of the slot they fill. As a direct object they are **`duwenx`**, **`dawanx`**, **`dayan`**:
 
-> `zuzozen duwonx vawebol.`
+> `zazozon duwenx vayebel.`
 >
-> z-Uzozen | d-speaker-x | v-see
+> z-Azozon | d-speaker-x | v-see
 >
-> "Uzozen sees me and my people." (not you)
+> "Azozon sees me and my people." (not you)
 
-> `zuzozen dawanx vawebol.`
+> `zazozon dawanx vayebel.`
 >
-> z-Uzozen | d-listener-x | v-see
+> z-Azozon | d-listener-x | v-see
 >
-> "Uzozen sees you all." (everyone I'm talking to)
+> "Azozon sees you all." (everyone I'm talking to)
 
-> `zuzozen dayan vawebol.`
+> `zazozon dayan vayebel.`
 >
-> z-Uzozen | d-interlocutors | v-see
+> z-Azozon | d-interlocutors | v-see
 >
-> "Uzozen sees us." (you and I)
+> "Azozon sees us." (you and I)
 
 <!-- cheat-sheet: people-pointing -->
 | Agebon | Use | English |
 |--------|-----|---------|
-| **`uwonx`** | speaker plus that person’s people (listener not assumed); `zuwonx` as subject, `duwonx` as object | *I and my people* (not you) |
+| **`uwenx`** | speaker plus that person’s people (listener not assumed); `zuwenx` as subject, `duwenx` as object | *I and my people* (not you) |
 | **`awanx`** | all current addressees; `zawanx` as subject, `dawanx` as object | *you all* |
 | **`ayan`** | the interlocutor set; `zayan` as subject, `dayan` as object | *we* (you and I) |
 | **`ayanx`** | the interlocutor set plus associates beyond this conversation | *we all*, *us and our people* (you included) |
 | name **-nx** / resume **-rx** | that person plus associates | *X and associates* |
 
-> `zayanx vowurel.`
+> `zayanx vowurol.`
 >
 > z-interlocutors-x | v-walk
 >
 > "We all walk." (you, I and our people)
 
-**Compare with:** inclusive *we* uses **`aya`** (`zayan`), not **`uwonx`**. **`uwonx`** leaves you out, **`awanx`** leaves the speaker out, and **`ayanx`** takes in both and the people around you. Nonspecific *someone* (**`umo`**) names no group, so it takes no **-x**: *some people* is `zeyolx`.
+**Compare with:** inclusive *we* uses **`aya`** (`zayan`), not **`uwenx`**. **`uwenx`** leaves you out, **`awanx`** leaves the speaker out, and **`ayanx`** takes in both and the people around you. Nonspecific *someone* (**`ume`**) names no group, so it takes no **-x**: *some people* is `zeyelx`.
 
-For *you and yours* (one listener plus that person's people), put **-x** on the listener's name (`zolazunx`). **`awanx`** means only the address set.
+For *you and yours* (one listener plus that person's people), put **-x** on the listener's name (`zalazunx`). **`awanx`** means only the address set.
 
 ### Practice {#beginner-practice}
 
@@ -147,86 +147,86 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *ant* | `unezal` | 🐜 |
+| *ant* | `enezal` | 🐜 |
 | *basket* | `abowal` | 🧺 |
 | *sandwich* | `edal` | 🥪 |
-| *wine* | `awudal` | 🍷 |
+| *wine* | `owudal` | 🍷 |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *speaker* | `uwon` |
+| *speaker* | `uwen` |
 | *listener* | `awan` |
 | *interlocutors* | `ayan` |
-| *angry* | `unemul` |
-| *haste* | `hedurem` |
-| *run* | `varuvel` |
-| *sit* | `vuhohol` |
-| *see* | `vawebol` |
-| *drink* | `vodudal` |
+| *angry* | `onumul` |
+| *haste* | `hadurom` |
+| *run* | `veruvol` |
+| *sit* | `vehohel` |
+| *see* | `vayebel` |
+| *drink* | `vuwudal` |
 | *knife* | `anewul` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *Uzozen and associates sit.*
+**1.** *Azozon and associates sit.*
 
 ::: details Show answer
-`zuzozenx vuhohol.`
+`zazozonx vehohel.`
 
-z-Uzozen-x | v-sit
+z-Azozon-x | v-sit
 :::
 
 **2.** *Some angry ants run hastily.*
 
 ::: details Show answer
-`zunezalx gunemul hedurem varuvel.`
+`zenezalx gonumul hadurom veruvol.`
 
 [z-ant-x | g-angry] | h-haste | v-run
 
-**Also correct:** `zunezalx gunemul varuvel hedurem.`
+**Also correct:** `zenezalx gonumul veruvol hadurom.`
 :::
 
-**3.** *Uzozen sees some baskets.*
+**3.** *Azozon sees some baskets.*
 
 ::: details Show answer
-`zuzozen dabowalx vawebol.`
+`zazozon dabowalx vayebel.`
 
-z-Uzozen | d-basket-x | v-see
+z-Azozon | d-basket-x | v-see
 :::
 
 **4.** *We all see a sandwich.* (you, I and our people)
 
 ::: details Show answer
-`zayanx dedal vawebol.`
+`zayanx dedal vayebel.`
 
 z-interlocutors-x | d-sandwich | v-see
 :::
 
-**5.** *Uzozen drinks wine. They sit.* (Uzozen and associates)
+**5.** *Azozon drinks wine. They sit.* (Azozon and associates)
 
 ::: details Show answer
-`zuzozen dawudal vodudal. zwuzerx vuhohol.`
+`zazozon dowudal vuwudal. zwuzerx vehohel.`
 
-z-Uzozen | d-wine | v-drink . z-←episode-agent.same-x | v-sit
+z-Azozon | d-wine | v-drink . z-←episode-agent.same-x | v-sit
 
-**Also correct:** `zuzozen dawudal vodudal. zuzozerx vuhohol.`
+**Also correct:** `zazozon dowudal vuwudal. zazozorx vehohel.`
 :::
 
 **6.** *You all sit.* (everyone I'm talking to)
 
 ::: details Show answer
-`zawanx vuhohol.`
+`zawanx vehohel.`
 
 z-listener-x | v-sit
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zahelanx dedal vawebol.`
+**1.** `zahelanx dedal vayebel.`
 
 ::: details Show answer
 z-Ahelan-x | d-sandwich | v-see
@@ -234,7 +234,7 @@ z-Ahelan-x | d-sandwich | v-see
 *Ahelan and associates see a sandwich.*
 :::
 
-**2.** `zuwonx vuhohol.`
+**2.** `zuwenx vehohel.`
 
 ::: details Show answer
 z-speaker-x | v-sit
@@ -242,23 +242,23 @@ z-speaker-x | v-sit
 *My people and I sit.* (not you)
 :::
 
-**3.** `zolazun vuhohol. zolazurx dedal vawebol.`
+**3.** `zalazun vehohel. zalazurx dedal vayebel.`
 
 ::: details Show answer
-z-Olazun | v-sit . z-←Olazun-x | d-sandwich | v-see
+z-Alazun | v-sit . z-←Alazun-x | d-sandwich | v-see
 
-*Olazun sits. They see a sandwich.* (Olazun and associates)
+*Alazun sits. They see a sandwich.* (Alazun and associates)
 :::
 
-**4.** `zuzozen danewulx vawebol.`
+**4.** `zazozon danewulx vayebel.`
 
 ::: details Show answer
-z-Uzozen | d-knife-x | v-see
+z-Azozon | d-knife-x | v-see
 
-*Uzozen sees some knives.*
+*Azozon sees some knives.*
 :::
 
-**5.** `yel zawanx vuhohol.`
+**5.** `yel zawanx vehohel.`
 
 ::: details Show answer
 y-question | z-listener-x | v-sit
@@ -266,7 +266,7 @@ y-question | z-listener-x | v-sit
 *Are you all sitting?*
 :::
 
-**6.** `zayan dawudal vodudal.`
+**6.** `zayan dowudal vuwudal.`
 
 ::: details Show answer
 z-interlocutors | d-wine | v-drink
@@ -276,36 +276,36 @@ z-interlocutors | d-wine | v-drink
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Some ants sit.* `zunezalx vuhohol.` or `zunezal vuhohol.`
+**1.** *Some ants sit.* `zenezalx vehohel.` or `zenezal vehohel.`
 
 ::: details Show answer
-`zunezalx vuhohol.`
+`zenezalx vehohel.`
 
 z-ant-x | v-sit
 
 **-lx** introduces a group in this situation; plain **-l** is one ant.
 :::
 
-**2.** *Uzozen sees Olazun and associates.* `zuzozen dolazunx vawebol.` or `zuzozenx dolazun vawebol.`
+**2.** *Azozon sees Alazun and associates.* `zazozon dalazunx vayebel.` or `zazozonx dalazun vayebel.`
 
 ::: details Show answer
-`zuzozen dolazunx vawebol.`
+`zazozon dalazunx vayebel.`
 
-z-Uzozen | d-Olazun-x | v-see
+z-Azozon | d-Alazun-x | v-see
 
 **-x** goes on the word whose group it is: here the ones seen.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *We sit.* (you and I) <!-- lint: error -->`zuwonx vuhohol.`
+**1.** *We sit.* (you and I) <!-- lint: error -->`zuwenx vehohel.`
 
 ::: details Show answer
-`zayan vuhohol.`
+`zayan vehohel.`
 
 z-interlocutors | v-sit
 
-**`uwonx`** is the speaker and their people, leaving you out; *you and I* is **`ayan`**.
+**`uwenx`** is the speaker and their people, leaving you out; *you and I* is **`ayan`**.
 :::
 ## See also
 

@@ -15,25 +15,25 @@ band: beginner
 | **`thahum`** | the reason made it happen; no fault claimed | *because* | **-m** ≈ the ordinary case |
 | **`thahur`** | the reason is one share among others | *partly because* / *played a part* | **-r** ≈ one wall of several holding it up |
 
-> `zuzozen velurul thahul blarl zolazun vezuyel.`
+> `zazozon vudurul thahul blarl zalazun vezuyol.`
 >
-> z-Uzozen | v-departure | [th-because.fault | bl-that-clause] | z-Olazun | v-tell
+> z-Azozon | v-departure | [th-because.fault | bl-that-clause] | z-Alazun | v-tell
 >
-> "Uzozen left because Olazun spoke, and Olazun was wrong to."
+> "Azozon left because Alazun spoke, and Alazun was wrong to."
 
-> `zuzozen velurul thahum blarl zolazun vezuyel.`
+> `zazozon vudurul thahum blarl zalazun vezuyol.`
 >
-> z-Uzozen | v-departure | [th-because | bl-that-clause] | z-Olazun | v-tell
+> z-Azozon | v-departure | [th-because | bl-that-clause] | z-Alazun | v-tell
 >
-> "Uzozen left because Olazun spoke." (no one is to blame)
+> "Azozon left because Alazun spoke." (no one is to blame)
 
-> `zuzozen velurul thahur blerulal.`
+> `zazozon vudurul thahur blerulal.`
 >
-> z-Uzozen | v-departure | [th-because.share | bl-rain]
+> z-Azozon | v-departure | [th-because.share | bl-rain]
 >
-> "The rain is part of why Uzozen left."
+> "The rain is part of why Azozon left."
 
-The rule from [*because*](dependents.md#poles) matters most here: the act goes in the `bl-` word, not the person (`thahul blarl zolazun vezuyel` *Olazun's speaking is to blame*, never `thahul blolazun`). So fault lands on what someone did, which leaves room for *Olazun did a wrong thing* without *Olazun is bad*. A thing or circumstance (`blerulal`) is fine there, because there is no person to blame.
+The rule from [*because*](dependents.md#poles) matters most here: the act goes in the `bl-` word, not the person (`thahul blarl zalazun vezuyol` *Alazun's speaking is to blame*, never `thahul blalazun`). So fault lands on what someone did, which leaves room for *Alazun did a wrong thing* without *Alazun is bad*. A thing or circumstance (`blerulal`) is fine there, because there is no person to blame.
 
 Fault is still a claim. You can hedge it with [MAY](knowing.md#may) right before the pole (`thomam thahul blarl …`).
 
@@ -47,88 +47,88 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *because* | `thahum` |
 | *rain* | `erulal` |
-| *departure* | `velurul` |
-| *sit* | `vuhohol` |
-| *pour* | `vobuvul` |
-| *tell* | `vezuyel` |
-| *run* | `varuvel` |
+| *departure* | `vudurul` |
+| *sit* | `vehohel` |
+| *pour* | `vowuvul` |
+| *tell* | `vezuyol` |
+| *run* | `veruvol` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *Olazun ran because Uzozen poured, and Uzozen was wrong to.*
+**1.** *Alazun ran because Azozon poured, and Azozon was wrong to.*
 
 ::: details Show answer
-`zolazun varuvel thahul blarl zuzozen vobuvul.`
+`zalazun veruvol thahul blarl zazozon vowuvul.`
 
-z-Olazun | v-run | [th-because.fault | bl-that-clause] | z-Uzozen | v-pour
+z-Alazun | v-run | [th-because.fault | bl-that-clause] | z-Azozon | v-pour
 :::
 
-**2.** *Uzozen left because Olazun spoke.* (no one is to blame)
+**2.** *Azozon left because Alazun spoke.* (no one is to blame)
 
 ::: details Show answer
-`zuzozen velurul thahum blarl zolazun vezuyel.`
+`zazozon vudurul thahum blarl zalazun vezuyol.`
 
-z-Uzozen | v-departure | [th-because | bl-that-clause] | z-Olazun | v-tell
+z-Azozon | v-departure | [th-because | bl-that-clause] | z-Alazun | v-tell
 :::
 
-**3.** *The rain is part of why Uzozen left.*
+**3.** *The rain is part of why Azozon left.*
 
 ::: details Show answer
-`zuzozen velurul thahur blerulal.`
+`zazozon vudurul thahur blerulal.`
 
-z-Uzozen | v-departure | [th-because.share | bl-rain]
+z-Azozon | v-departure | [th-because.share | bl-rain]
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zuzozen velurul thahul blarl zolazun vezuyel.`
+**1.** `zazozon vudurul thahul blarl zalazun vezuyol.`
 
 ::: details Show answer
-z-Uzozen | v-departure | [th-because.fault | bl-that-clause] | z-Olazun | v-tell
+z-Azozon | v-departure | [th-because.fault | bl-that-clause] | z-Alazun | v-tell
 
-*Uzozen left because Olazun spoke, and Olazun was wrong to.*
+*Azozon left because Alazun spoke, and Alazun was wrong to.*
 :::
 
-**2.** `zuzozen velurul thahur blerulal.`
+**2.** `zazozon vudurul thahur blerulal.`
 
 ::: details Show answer
-z-Uzozen | v-departure | [th-because.share | bl-rain]
+z-Azozon | v-departure | [th-because.share | bl-rain]
 
-*The rain is part of why Uzozen left.*
+*The rain is part of why Azozon left.*
 :::
 
-**3.** `zuzozen vuhohol thahum blarl zolazun vobuvul.`
+**3.** `zazozon vehohel thahum blarl zalazun vowuvul.`
 
 ::: details Show answer
-z-Uzozen | v-sit | [th-because | bl-that-clause] | z-Olazun | v-pour
+z-Azozon | v-sit | [th-because | bl-that-clause] | z-Alazun | v-pour
 
-*Uzozen sits because Olazun pours.* (no one is to blame)
+*Azozon sits because Alazun pours.* (no one is to blame)
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Uzozen sits because Olazun pours.* (no one is to blame) `zuzozen vuhohol thahum blarl zolazun vobuvul.` or `zuzozen vuhohol thahul blarl zolazun vobuvul.`
+**1.** *Azozon sits because Alazun pours.* (no one is to blame) `zazozon vehohel thahum blarl zalazun vowuvul.` or `zazozon vehohel thahul blarl zalazun vowuvul.`
 
 ::: details Show answer
-`zuzozen vuhohol thahum blarl zolazun vobuvul.`
+`zazozon vehohel thahum blarl zalazun vowuvul.`
 
-z-Uzozen | v-sit | [th-because | bl-that-clause] | z-Olazun | v-pour
+z-Azozon | v-sit | [th-because | bl-that-clause] | z-Alazun | v-pour
 
 **-m** is the plain cause; **-l** would say the pouring broke a rule.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Uzozen left because Olazun spoke, and Olazun was wrong to.* <!-- lint: error -->`zuzozen velurul thahul bolazun.`
+**1.** *Azozon left because Alazun spoke, and Alazun was wrong to.* <!-- lint: error -->`zazozon vudurul thahul balazun.`
 
 ::: details Show answer
-`zuzozen velurul thahul blarl zolazun vezuyel.`
+`zazozon vudurul thahul blarl zalazun vezuyol.`
 
-z-Uzozen | v-departure | [th-because.fault | bl-that-clause] | z-Olazun | v-tell
+z-Azozon | v-departure | [th-because.fault | bl-that-clause] | z-Alazun | v-tell
 
 Fault names the act after **`blarl`**, not the person.
 :::

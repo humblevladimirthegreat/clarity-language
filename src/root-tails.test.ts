@@ -200,7 +200,7 @@ describe("placeTailRoots", () => {
 
   it("keeps every root clear of the holder check", () => {
     // Every counting (`r`) onset's first three letters spell a host + `r`: the placer must skip each one.
-    const holderHosts = new Set(["abar", "ebor", "uzur"]);
+    const holderHosts = new Set(["abar", "eber", "uzur"]);
     const rows = Array.from({ length: 40 }, () => ({ kind: "counting" as const, shape: "one" as const, cmu: "" }));
     const { roots, unmet } = placeTailRoots({ rows, shortRoots: new Set(), holderHosts, compounds: [], steps: 5_000 });
     assert.deepEqual(unmet, []);

@@ -15,9 +15,9 @@ A `/y/` word starts a new turn and goes before the body of the clause. A `/y/` w
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Call someone](/speech-moves#vocative): `/y/` + name (**-n**) | `yolazun.` | *Olazun!* | B |
+| [Call someone](/speech-moves#vocative): `/y/` + name (**-n**) | `yalazun.` | *Alazun!* | B |
 | [Call a kind](/speech-moves#vocative): `/y/` + kind with **-n** | `yagayun` | *Guard!* (come here) | B |
-| [Reaction](/speech-moves#interjections): `/y/` + root with **-l** / **-m** | `yemol.` / `yemom.` | *What a surprise!* / *Amazing!* | B |
+| [Reaction](/speech-moves#interjections): `/y/` + root with **-l** / **-m** | `yemel.` / `yemem.` | *What a surprise!* / *Amazing!* | B |
 | [Reaction, not a call](/speech-moves#interjections): **-l** vs **-n** | `yagayul` | *Guard!* (an alarm) | B |
 | [Call a group](/collectives#vocatives-y) | `yawanx` | *hey, you all* | I |
 
@@ -34,11 +34,11 @@ The vowel picks the act: **a** statement, **o** command, **e** question, **u** p
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Command](/speech-moves#speech-act-beginner) | `yol vowurel.` | *Walk!* | B |
-| [Request with *let's*](/firm-soft#speech-act) | `yom vowurel zayan.` | *Let's walk.* | B |
-| [Soft prohibition with *let's not*](/firm-soft#speech-act) | `yum zayan vezuvol.` | *Let's not sleep.* | B |
-| [Provisional statement](/firm-soft#act-r) | `yar zuzozen vowurel.` | *As things stand, Uzozen walks.* | B |
-| [Doubled act word](/speech-acts#doubled-act): repeat only the opening act word | `yul yul vazuyul.` | *Don't sneak. I mean it.* | I |
+| [Command](/speech-moves#speech-act-beginner) | `yol vowurol.` | *Walk!* | B |
+| [Request with *let's*](/firm-soft#speech-act) | `yom vowurol zayan.` | *Let's walk.* | B |
+| [Soft prohibition with *let's not*](/firm-soft#speech-act) | `yum zayan vezuvel.` | *Let's not sleep.* | B |
+| [Provisional statement](/firm-soft#act-r) | `yar zazozon vowurol.` | *As things stand, Azozon walks.* | B |
+| [Doubled act word](/speech-acts#doubled-act): repeat only the opening act word | `yul yul vozuyul.` | *Don't sneak. I mean it.* | I |
 | [Insisted statement](/speech-acts#doubled-act) | `yal yal` | *I'm telling you, …* | I |
 | [Pressing question](/speech-acts#doubled-act) | `yel yel` | *I really need to know: …?* | I |
 | [Urgent command](/speech-acts#doubled-act) | `yol yol` | *Do it. Now.* | I |
@@ -50,18 +50,18 @@ The [first act word](/speech-acts#stacked-acts) is what you really do, the secon
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Request that sounds like a question](/speech-acts#stacked-acts) | `yol yel vanuvul dobogal zawan.` | *Could you punch the box?* | I |
+| [Request that sounds like a question](/speech-acts#stacked-acts) | `yol yel vabuvul dubogal zawan.` | *Could you punch the box?* | I |
 | [Directive that sounds like a description](/speech-acts#stacked-acts) | `yol yal` | *Passengers remain seated.* | I |
 | [Teasing: sounds like *don't*, means *do*](/speech-acts#stacked-acts) | `yol yul` | *Don't you dare finish those cookies.* | I |
-| [Prohibition that sounds like a norm](/speech-acts#stacked-acts) | `yul yal zayan dobogal vanuvul.` | *We don't punch the box.* | I |
+| [Prohibition that sounds like a norm](/speech-acts#stacked-acts) | `yul yal zayan dubogal vabuvul.` | *We don't punch the box.* | I |
 | [Discouraging question](/speech-acts#stacked-acts) | `yul yel` | *Must you?* | I |
-| [Sarcastic dare](/speech-acts#stacked-acts) | `yul yol dobogal vanuvul.` | *Go ahead, punch the box.* (don't) | I |
+| [Sarcastic dare](/speech-acts#stacked-acts) | `yul yol dubogal vabuvul.` | *Go ahead, punch the box.* (don't) | I |
 | [Claim as an instruction to notice](/speech-acts#stacked-acts) | `yal yol` | *Mark my words.* | I |
 | [Saying it while claiming you won't](/speech-acts#stacked-acts) | `yal yul` | *I won't even mention that he lied.* | I |
 | [Soft request that sounds like a question](/speech-acts#stacked-acts) | `yom yel` | *Would you mind…?* | I |
 | [Firm command that sounds like a gentle ask](/speech-acts#stacked-acts) | `yol yem` | *Would you maybe…?* (not optional) | I |
 | [Command with a *please* that is not optional](/speech-acts#stacked-acts) | `yol yom` | *Please do it.* | I |
-| [Offer that sounds like a command](/speech-acts#stacked-acts) | `yom yol vuhohol.` | *Sit, sit!* | I |
+| [Offer that sounds like a command](/speech-acts#stacked-acts) | `yom yol vehohel.` | *Sit, sit!* | I |
 | [Rule for now](/speech-acts#stacked-acts) | `yor yal` | *For now, everyone stays inside.* | I |
 | [Soft norm](/speech-acts#stacked-acts) | `yum yal` | *We'd rather people didn't…* | I |
 | [Firm *no* that sounds like *not yet*](/speech-acts#stacked-acts) | `yul yur` | *Let's hold off for now.* (never) | I |
@@ -81,11 +81,11 @@ A [tone mark](/tone-marks#tone-marks) changes your voice only, never the speech 
 
 | Where you write it | Colors | Example | Stage |
 |--------------------|--------|---------|-------|
-| [Attached to a word](/tone-marks#tone-marks) | that word | `zuzozen vawebol ?dudozol.` | I |
+| [Attached to a word](/tone-marks#tone-marks) | that word | `zazozon vayebel ?dodozel.` | I |
 | [Attached to a span](/tone-marks#tone-marks) | the span | `!d[ … ]` | I |
-| [Alone, then a space](/tone-marks#tone-marks) | the rest, to the period | `! zuzozen vowurel.` | I |
-| [Doubled](/tone-marks#tone-marks) | stronger | `zuzozen !!vowurel.` | I |
-| [Stacked](/tone-marks#tone-marks) | mixed | `?! zolazun vawebol dudozol.` | I |
+| [Alone, then a space](/tone-marks#tone-marks) | the rest, to the period | `! zazozon vowurol.` | I |
+| [Doubled](/tone-marks#tone-marks) | stronger | `zazozon !!vowurol.` | I |
+| [Stacked](/tone-marks#tone-marks) | mixed | `?! zalazun vayebel dodozel.` | I |
 
 `yel` asks; `?` only sounds unsure: it raises the whole word, and the word's vowel pitches keep their order inside it. A third copy (`!!!`) is not a mark.
 
@@ -95,8 +95,8 @@ A stance word says in words how you are speaking, where a tone mark only changes
 
 | Agebon | English | Stage |
 |--------|---------|-------|
-| [`thagebom`](/speech-acts#speech-manner) | *to be clear* / *to put it plainly* | I |
-| [`thavewem`](/speech-acts#speech-manner) | *frankly* / *honestly* | I |
+| [`thagebem`](/speech-acts#speech-manner) | *to be clear* / *to put it plainly* | I |
+| [`thavewom`](/speech-acts#speech-manner) | *frankly* / *honestly* | I |
 
 ## Asking {#asking}
 
@@ -104,15 +104,15 @@ A stance word says in words how you are speaking, where a tone mark only changes
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Yes/no question](/questions#question) | `yel zuzozen vowurel.` | *Does Uzozen walk?* | B |
-| [Gentler](/questions#question) | `yem zolazun vezuvol.` | *Is Olazun sleeping, I wonder?* | B |
+| [Yes/no question](/questions#question) | `yel zazozon vowurol.` | *Does Azozon walk?* | B |
+| [Gentler](/questions#question) | `yem zalazun vezuvel.` | *Is Alazun sleeping, I wonder?* | B |
 | [No body: ask about what was just said](/questions#question) | `yel.` | *Huh?* | B |
-| [Fill one blank](/questions#fill-ask-r): join **-r** in the slot | `yel zar vowurel.` | *Who walks?* | B |
-| [Fill every blank](/questions#fill-all) | `yel zar dar vawebol.` | *Who sees what?* | B |
-| [One blank, one known](/questions#fill-all) | `yel zar vawebol dudozol.` | *Who sees a dog?* | B |
-| [Rise on the blank](/questions#question-tone) | `yel ?zar vowurel.` | *Who walks?* | B |
-| [Rise on the whole question](/questions#question-tone) | `yel ? zuzozen vowurel.` | *Does Uzozen walk?* | B |
-| [Check one named item](/polar-inventory#yes-no-single-item-standalone) | `yel zuzozen zal.` | *Just Uzozen?* | I |
+| [Fill one blank](/questions#fill-ask-r): join **-r** in the slot | `yel zar vowurol.` | *Who walks?* | B |
+| [Fill every blank](/questions#fill-all) | `yel zar dar vayebel.` | *Who sees what?* | B |
+| [One blank, one known](/questions#fill-all) | `yel zar vayebel dodozel.` | *Who sees a dog?* | B |
+| [Rise on the blank](/questions#question-tone) | `yel ?zar vowurol.` | *Who walks?* | B |
+| [Rise on the whole question](/questions#question-tone) | `yel ? zazozon vowurol.` | *Does Azozon walk?* | B |
+| [Check one named item](/polar-inventory#yes-no-single-item-standalone) | `yel zazozon zal.` | *Just Azozon?* | I |
 | [Offer one named item](/polar-inventory#yes-no-single-item-standalone) | `yel zahelan zam.` | *How about Ahelan?* | I |
 
 The reply to a fill-ask is the fill as a [citation](/word-endings#citation-forms), or a full sentence with role letters. The sentence still ends in a period.
@@ -121,13 +121,13 @@ The reply to a fill-ask is the fill as a [citation](/word-endings#citation-forms
 
 | You want | Write | English | Stage |
 |----------|-------|---------|-------|
-| [What kind?](/fill-ask-jobs#what-kind) | `yel gar zudozol.` | *What is the dog like?* | B |
-| [When?](/fill-ask-jobs#when) | `yel har zahelan vowurel.` | *When does Ahelan walk?* | B |
-| [Where?](/fill-ask-jobs#where) | `yel el bar zahelan vowurel.` | *Where does Ahelan walk?* | B |
-| [Whose?](/fill-ask-jobs#whose) | `yel zudozol om bar vowurel.` | *Whose dog walks?* | B |
-| [How?](/fill-ask-jobs#how) | `yel hewom blar zuzozen vowurel.` | *How does Uzozen walk?* | B |
-| [Why?](/fill-ask-jobs#why) | `yel thahum blar zuzozen vowurel.` | *Why does Uzozen walk?* | B |
-| [What for?](/fill-ask-jobs#why) | `yel hovam blar zuzozen vowurel.` | *What does Uzozen walk for?* | B |
+| [What kind?](/fill-ask-jobs#what-kind) | `yel gar zodozel.` | *What is the dog like?* | B |
+| [When?](/fill-ask-jobs#when) | `yel har zahelan vowurol.` | *When does Ahelan walk?* | B |
+| [Where?](/fill-ask-jobs#where) | `yel el bar zahelan vowurol.` | *Where does Ahelan walk?* | B |
+| [Whose?](/fill-ask-jobs#whose) | `yel zodozel om bar vowurol.` | *Whose dog walks?* | B |
+| [How?](/fill-ask-jobs#how) | `yel hewem blar zazozon vowurol.` | *How does Azozon walk?* | B |
+| [Why?](/fill-ask-jobs#why) | `yel thahum blar zazozon vowurol.` | *Why does Azozon walk?* | B |
+| [What for?](/fill-ask-jobs#why) | `yel hovam blar zazozon vowurol.` | *What does Azozon walk for?* | B |
 
 <!-- cheat-sheet: talking -->
 | Blank | Means | Stage |
@@ -137,7 +137,7 @@ The reply to a fill-ask is the fill as a [citation](/word-endings#citation-forms
 | [`el ber`](/fill-ask-jobs#where) / `el bur` | *anywhere?* / *where else?* | B |
 | [`thahum blar`](/fill-ask-jobs#why) | *why?* | B |
 | [`hovam blar`](/fill-ask-jobs#why) | *what for?* | B |
-| [`thohom blar`](/fill-ask-jobs#why) | *under what condition?* | B |
+| [`thohem blar`](/fill-ask-jobs#why) | *under what condition?* | B |
 
 ### Fill-ask by vowel and count {#arity}
 
@@ -154,23 +154,23 @@ The blank **-r** takes a vowel; the count is how many items you listed before it
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Who all, any kind](/questions#fill-all) | `yel zarx vowurel.` | *Who all walks?* | B |
+| [Who all, any kind](/questions#fill-all) | `yel zarx vowurol.` | *Who all walks?* | B |
 
 ### Questions inside other clauses {#embedded}
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Report a question](/questions#embedded-whether) | `zuzozen vawebol derl zolazun vowurel.` | *Uzozen sees whether Olazun walks.* | B |
-| [Blank belongs to *whether*](/fill-ask-roles#blank-in-dependent) | `yel zawan vanam derl zar vowurel.` | *Do you know who walks?* | I |
-| [Blank belongs to the outer question](/fill-ask-roles#blank-in-dependent) | `yel zawan vevemol darl zar vowurel.` | *Who do you think walks?* | I |
+| [Report a question](/questions#embedded-whether) | `zazozon vayebel derl zalazun vowurol.` | *Azozon sees whether Alazun walks.* | B |
+| [Blank belongs to *whether*](/fill-ask-roles#blank-in-dependent) | `yel zawan vanam derl zar vowurol.` | *Do you know who walks?* | I |
+| [Blank belongs to the outer question](/fill-ask-roles#blank-in-dependent) | `yel zawan vevemel darl zar vowurol.` | *Who do you think walks?* | I |
 | [Question you don't want answered](/polar-inventory#rhetorical): `yal` before `yel` | `yal yel zar vegemal.` | *Who cares?* (nobody) | I |
 | [Musing](/polar-inventory#rhetorical) | `yam yel zar vegemal.` | *Who really cares, though?* | I |
 | [Rhetorical for now](/polar-inventory#rhetorical) | `yar yel` | *Surely, as things stand…?* | I |
 | [Sounds like idle wondering](/polar-inventory#rhetorical) | `yal yem` | *I wonder who cares…* | I |
 | [Sounds like a check](/polar-inventory#rhetorical) | `yal yer` | *Just checking, it's Tuesday, right?* | I |
-| [Quiz](/polar-inventory#quiz): `yel` before `yal`, you know the answer | `yel yal ? zar vanuvul dobogal.` | *So who punched the box?* | I |
+| [Quiz](/polar-inventory#quiz): `yel` before `yal`, you know the answer | `yel yal ? zar vabuvul dubogal.` | *So who punched the box?* | I |
 | [Question demanded as an order](/polar-inventory#stacked-questions) | `yel yol` | *Tell me where you were.* | I |
-| [Question that hopes for *no*](/polar-inventory#stacked-questions) | `yel yul ? zawan velurul.` | *You're not leaving, are you?* | I |
+| [Question that hopes for *no*](/polar-inventory#stacked-questions) | `yel yul ? zawan vudurul.` | *You're not leaving, are you?* | I |
 
 ## Answering {#answering}
 
@@ -189,7 +189,7 @@ Write `y`, two vowels, then an ending. A turn holds one polar word; an answer fo
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Answer with a sentence after](/questions#polar-stance): no `yal` | `yaol` + body | *yes, …* | B |
-| [Back up your own claim](/questions#polar-stance) | `zuzozen vowurel. yaol.` | *Uzozen walks. Yes.* | B |
+| [Back up your own claim](/questions#polar-stance) | `zazozon vowurol. yaol.` | *Azozon walks. Yes.* | B |
 | [Answer a command or request](/polar-inventory#answer-command) | `yaol` / `yuol` | *will do* / *I won't* | I |
 
 ### Tags: asking for an answer {#tags}
@@ -210,9 +210,9 @@ After your sentence, write `yel` and a polar word as a turn of its own. It asks 
 
 | This | vs | That |
 |------|----|------|
-| `yolazun` *Olazun!* ([a call, **-n**](/speech-moves#vocative)) | | `zolazun vowurel` *Olazun walks* ([a subject](/speech-moves#vocative)) |
+| `yalazun` *Alazun!* ([a call, **-n**](/speech-moves#vocative)) | | `zalazun vowurol` *Alazun walks* ([a subject](/speech-moves#vocative)) |
 | `yagayun` *Guard!* ([call the guard](/speech-moves#interjections)) | | `yagayul` *Guard!* ([an alarm](/speech-moves#interjections)) |
 | `yel` *question* ([asks](/questions#question)) | | `?` *unsure voice* ([only sounds unsure](/tone-marks#tone-marks)) |
 | `yul` *don't* ([prohibition](/speech-moves#speech-act-beginner)) | | `yuol` *no, false* ([answers a claim](/questions#polar-stance)) |
 | `yel yaol.` *…, right?* ([a tag asks](/polar-inventory#tags)) | | `yaol.` *yes* ([an answer gives](/questions#polar-stance)) |
-| `thahum blar` *why?* ([the cause](/fill-ask-jobs#why)) | | `hewom blar` *like what?* ([a model to resemble](/fill-ask-jobs#how)) |
+| `thahum blar` *why?* ([the cause](/fill-ask-jobs#why)) | | `hewem blar` *like what?* ([a model to resemble](/fill-ask-jobs#how)) |

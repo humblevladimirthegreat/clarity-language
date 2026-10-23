@@ -15,27 +15,27 @@ Each letter reuses a job it already has somewhere in the grammar:
 <!-- cheat-sheet: consonants -->
 | Second consonant | Kind | Example | Why this letter |
 |------------------|------|---------|-----------------|
-| `z` | creatures: animals, microbes | `agozo` *cat* | [`/z/`](/clause#role-letters) is the one who acts |
-| `y` | people: persons, kin, roles, and what only a person does | `eboye` *baby* | [`/y/` + name](/speech-moves#vocative) calls someone |
+| `z` | creatures: animals, microbes | `ogoze` *cat* | [`/z/`](/clause#role-letters) is the one who acts |
+| `y` | people: persons, kin, roles, and what only a person does | `eboyo` *baby* | [`/y/` + name](/speech-moves#vocative) calls someone |
 | `m` | mind and feeling: faces, emotions, mental states | `evemu` *fear* | [**-m**](/word-endings#abstract-m) is the abstract ending |
 | `b` | the body and what goes on it: parts, clothes, what you carry, medicine | `aheba` *hand* | [`/b/`](/clause#role-letters) is the bolted-on piece |
-| `v` | doing, playing and moving: actions, toys, vehicles | `aruve` *run* | [`/v/`](/clause#role-letters) is the action |
-| `h` | places and fixtures: buildings, landscapes, rooms, headings | `aheha` *house* | [`/h/`](/clause#role-letters) is where |
-| `l` | nature and raw stuff: plants, weather, sky, materials, colors | `edale` *tree* | [**-l**](/word-endings#concrete-l) is the concrete ending |
-| `d` | food and drink, with dishes and kitchen gear | `oledo` *apple* | [`/d/`](/clause#role-letters) is what is done to (eaten) |
+| `v` | doing, playing and moving: actions, toys, vehicles | `eruvo` *run* | [`/v/`](/clause#role-letters) is the action |
+| `h` | places and fixtures: buildings, landscapes, rooms, headings | `oheha` *house* | [`/h/`](/clause#role-letters) is where |
+| `l` | nature and raw stuff: plants, weather, sky, materials, colors | `edalo` *tree* | [**-l**](/word-endings#concrete-l) is the concrete ending |
+| `d` | food and drink, with dishes and kitchen gear | `alede` *apple* | [`/d/`](/clause#role-letters) is what is done to (eaten) |
 | `w` | tools and things you use | `anewu` *knife* | [`/w/`](/clause#role-letters) is *with* |
-| `g` | signs and marks: symbols, letters, religion marks | `awugu` *warning* | [`/ɡ/`](/clause#role-letters) is a grade, a mark on something |
-| `r` | counting, time, money and rhythm | `egore` *clock* | `r` after a role letter starts a [number](/numbers#counts) |
-| `n` | titles: mail, paper, labels, and named sports | `unona` *newspaper*, `azuna` *soccer* | [**-n**](/proper-names#proper-name--n) is the name ending |
+| `g` | signs and marks: symbols, letters, religion marks | `ewugu` *warning* | [`/ɡ/`](/clause#role-letters) is a grade, a mark on something |
+| `r` | counting, time, money and rhythm | `ugoro` *clock* | `r` after a role letter starts a [number](/numbers#counts) |
+| `n` | titles: mail, paper, labels, and named sports | `unona` *newspaper*, `ezuna` *soccer* | [**-n**](/proper-names#proper-name--n) is the name ending |
 
 The last vowel is the job, with the same vowel series as [joins](/joins): **a** add, **o** one, **e** order, **u** undo.
 
 <!-- cheat-sheet: vowels -->
 | Last vowel | Job | Examples |
 |------------|-----|----------|
-| `a` | holds or gathers: containers, groups, masses, what you go inside; or hollow, like a bowl | `abowa` *basket*, `oruda` *rice*, `uneza` *ant* (it lives in a colony) |
-| `o` | one whole thing: round or compact, like a ball | `agozo` *cat*, `oledo` *apple* |
-| `e` | order: ranked, in sequence, a stage or cycle, a path you travel or are led along; or long, like a road | `orahe` *road*, `egore` *clock*, `aruve` *run*, `urule` *rainbow* |
+| `a` | holds or gathers: containers, groups, masses, what you go inside; or hollow, like a bowl | `abowa` *basket*, `aruda` *rice*, `eneza` *ant* (it lives in a colony) |
+| `o` | one whole thing: round or compact, like a ball | `ogoze` *cat*, `alede` *apple* |
+| `e` | order: ranked, in sequence, a stage or cycle, a path you travel or are led along; or long, like a road | `oraho` *road*, `ugoro` *clock*, `eruvo` *run*, `urulo` *rainbow* |
 | `u` | takes away or works against: cuts, removes, harms, stings, forbids; or sharp, like a blade | `anewu` *knife*, `ezozu` *snake*, `evemu` *fear* |
 
 When more than one job fits, try **u** first, then **a**, then **e**. A knife is one tool, but it cuts, so its root ends in `u`. When no job fits, the thing's outline decides: hollow `a`, long `e`, sharp `u`, round or compact `o`. A banana ends in `e` and an apple in `o`. For a feeling, it's which way the feeling points (toward others `a`, inward `o`); for an action, how it unfolds (with others `a`, along a course `e`).
@@ -58,7 +58,7 @@ A [dictionary word](/compounds#lexical-compounds) made of two roots ends in its 
 
 A few dictionary words end in a bare tail instead of a second root. *Friend* is *hug* plus `yo`: `y` for a person, `o` for one thing marked by the left piece, so *a person known by hugs*. The two letters already say what kind of thing the word names, so it needs no second root such as *person*.
 
-> `zahuyayol.`
+> `zahuyayel.`
 >
 > z-friend
 >
@@ -66,12 +66,12 @@ A few dictionary words end in a bare tail instead of a second root. *Friend* is 
 
 | Agebon | Pieces | English |
 |--------|--------|---------|
-| `zahuyayol` | *hug* + `yo` | friend |
-| `zobahohal` | *bed* + `ha` | bedroom |
-| `zubezozal` | *bird* + `za` | flock |
-| `zevogoyol` | *flag* + `yo` | citizen |
-| `zehahayol` | *hut* + `yo` | neighbor |
-| `zogewoyol` | *camera* + `yo` | celebrity |
+| `zahuyayel` | *hug* + `yo` | friend |
+| `zoyahehal` | *bed* + `ha` | bedroom |
+| `zebezezal` | *bird* + `za` | flock |
+| `zavogeyel` | *flag* + `yo` | citizen |
+| `zahahayel` | *hut* + `yo` | neighbor |
+| `zugeweyel` | *camera* + `yo` | celebrity |
 
 The left piece is always a five-letter root, and there is no join letter: five letters, then the tail, then the ending. The tail vowel does the same jobs as on a root: **a** the thing holds or gathers the left, **o** it is one thing marked by the left, **e** it follows the left in order or along a path, **u** it takes the left away or works against it. The tail consonant is any kind but nature `l`, mind `m` and counting `r`; those words take a full second root.
 

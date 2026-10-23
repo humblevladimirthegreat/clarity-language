@@ -10,9 +10,9 @@ English *anxious*, *thank you*, *hopefully*, and *may* / *must* / *they agreed* 
 
 English emotion words (*anxious*, *resentful*, *proud*) often do **judgment or explanation** work: one label packs in what is at stake and why it feels that way. In Agebon you name the pieces instead, on **one word**: the [sake stance](/sakes#sakes) on the situation, a **locus** (where the feeling sits or what it points at), and a **motion ending** (how the feeling moves). The sake word keeps its stance vowel and its ending letter, then adds the locus (the vowels of a [hook](/hooks#extra-noun)) and the motion ending. You can then say what you make of a situation without leaning on a single emotion word.
 
-Put that word where any sake word goes: on `/ɡ/` after a belonging, on `/w/` immediately before [stimulus](/sakes#stimulus) **`goyem`** when the noun is not yours, or on `/th/` by itself when the feeling has no object. For the bare noun *emotion*, with no judgment to explain, use the compound `zabolohalal` (the water of the heart).
+Put that word where any sake word goes: on `/ɡ/` after a belonging, on `/w/` immediately before [stimulus](/sakes#stimulus) **`goyom`** when the noun is not yours, or on `/th/` by itself when the feeling has no object. For the bare noun *emotion*, with no judgment to explain, use the compound `zabelohalal` (the water of the heart).
 
-> `zezuyel wuwathuraer goyem.`
+> `zezuyol wuwathuraer goyom.`
 >
 > z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]
 >
@@ -42,15 +42,15 @@ A **direction** locus says what the charge points at:
 
 A direction names the **dominant** pull when feelings mix; use two feeling words for two pulls. AIMED lands on a party or a goal; RESISTING opposes an outcome or a demand. ON-BEHALF is your own feeling about someone else's stake; FAWN is placating someone for your own safety.
 
-Name the landmark with a `bl-` word right after the feeling (after **`goyem`** when the feeling is on `/w/`): the target of a direction, or the situation for CIRCUM. INTERNAL and UNPLACED take no `/b/`: they have no landmark. A direction with no `/b/` points at the stimulus noun when there is one, otherwise at someone unnamed.
+Name the landmark with a `bl-` word right after the feeling (after **`goyom`** when the feeling is on `/w/`): the target of a direction, or the situation for CIRCUM. INTERNAL and UNPLACED take no `/b/`: they have no landmark. A direction with no `/b/` points at the stimulus noun when there is one, otherwise at someone unnamed.
 
 A feeling word with a direction tail already uses its `/b/` for the landmark, so it cannot also name [whose stake](prescription.md#whose-stake).
 
-> `zonal wawothumel goyem blolazun.`
+> `zonal wawethumel goyom blalazun.`
 >
-> z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Olazun]
+> z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Alazun]
 >
-> "I resent Olazun over the memo, holding it in."
+> "I resent Alazun over the memo, holding it in."
 
 The motion ending says how the feeling moves, on the [settled-to-passing scale](/sakes#settled-to-passing): **-l** is the most settled, **-m** is the ordinary case, and **-r** the most passing, lasting only right now. (cue: a feeling is water: still, a current, or a wave)
 
@@ -64,37 +64,37 @@ Motion is how the feeling moves, not how strong it is. Strong but steady anger i
 
 Say how **strong** the feeling is with a [degree word](left-bound.md#degree-w) on `/w/` right before the feeling word. Before a `/ɡ/` feeling it grades that adjective as usual. Before a `/w/` feeling, it grades the feeling, not the stimulus. With no degree word, strength is unstated.
 
-> `zebewem wohalal guwathamar.`
+> `zobewom wohalal guwathamar.`
 >
 > z-draft | [w-ocean | g-competence-met-any-term-INTERNAL-SURGING]
 >
 > "I'm overwhelmingly proud of my draft."
 
-> `zonal wamezom wawothumem goyem blolazun.`
+> `zonal wamezem wawethumem goyom blalazun.`
 >
-> z-memo | [[w-small | w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | bl-Olazun]
+> z-memo | [[w-small | w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | bl-Alazun]
 >
-> "I feel a mild, steady irritation at Olazun over the memo."
+> "I feel a mild, steady irritation at Alazun over the memo."
 
 The locus plus the motion ending is the **emotion tail**. It goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Prescription **`the`** is advice, not a feeling, so it takes no tail. A word with no tail (`wuwathur`) is an ordinary sake word.
 
 <!-- cheat-sheet: why-allowed -->
 | Agebon | English |
 |---------|---------|
-| `zezuyel wuwathuraer goyem` | *anxious about the dialogue* (competence at stake, temporary; hangs over the room; surging) |
-| `zozowum wawothumual goyem` | *given up over the division* (unmet relatedness; out of fight; still) |
-| `zebewem guwathamar` | *proud of the draft* (met competence; held inside; surging) |
-| `zonal wawothumom goyem bluzozen` | *upset for Uzozen about the memo* (unmet relatedness; on Uzozen's behalf; flowing) |
-| `zezuyel wawothumum goyem blolazun` | *avoiding Olazun over the dialogue* (unmet relatedness; moving off from Olazun; flowing) |
-| `zezuyel wawothumaom goyem blolazun` | *placating Olazun about the dialogue* (unmet relatedness; appeasing Olazun; flowing) |
-| `zonal wawothumoem goyem bluzozen` | *upset about the memo and turning to Uzozen for comfort* (unmet relatedness; seeking Uzozen; flowing) |
-| `zonal wawothumuor goyem` | *objecting to the memo* (unmet relatedness; pushing against the memo; surging) |
-| `zezuyel wurethumal goyem` | *the dialogue feels pointless* (unmet purpose; held inside; still) |
-| `zebewem gewathamam` | *glad my draft helped* (met beneficence; held inside; flowing) |
-| `zezuyel wamezom wuwathuruem goyem` | *a little uneasy about the dialogue, and I can't say why* (competence at stake, temporary; slightly; unplaced; flowing) |
-| `zezuyel wuwathumuor guzezam` | *the dialogue is frustratingly slow* (unmet competence on the slowness; pushing against it; surging) |
+| `zezuyol wuwathuraer goyom` | *anxious about the dialogue* (competence at stake, temporary; hangs over the room; surging) |
+| `zozowum wawethumual goyom` | *given up over the division* (unmet relatedness; out of fight; still) |
+| `zobewom guwathamar` | *proud of the draft* (met competence; held inside; surging) |
+| `zonal wawethumom goyom blazozon` | *upset for Azozon about the memo* (unmet relatedness; on Azozon's behalf; flowing) |
+| `zezuyol wawethumum goyom blalazun` | *avoiding Alazun over the dialogue* (unmet relatedness; moving off from Alazun; flowing) |
+| `zezuyol wawethumaom goyom blalazun` | *placating Alazun about the dialogue* (unmet relatedness; appeasing Alazun; flowing) |
+| `zonal wawethumoem goyom blazozon` | *upset about the memo and turning to Azozon for comfort* (unmet relatedness; seeking Azozon; flowing) |
+| `zonal wawethumuor goyom` | *objecting to the memo* (unmet relatedness; pushing against the memo; surging) |
+| `zezuyol wurothumal goyom` | *the dialogue feels pointless* (unmet purpose; held inside; still) |
+| `zobewom gewathamam` | *glad my draft helped* (met beneficence; held inside; flowing) |
+| `zezuyol wamezem wuwathuruem goyom` | *a little uneasy about the dialogue, and I can't say why* (competence at stake, temporary; slightly; unplaced; flowing) |
+| `zezuyol wuwathumuor guzezam` | *the dialogue is frustratingly slow* (unmet competence on the slowness; pushing against it; surging) |
 
-Raw feeling (contacting a sensation without judgment) may go unlabeled. To name a feeling without explaining it, its lexicon root works as an ordinary [property](/predication) word: `zuwon gunemul` (*I am angry*). Use the full compose when an emotion word would have done judgment work.
+Raw feeling (contacting a sensation without judgment) may go unlabeled. To name a feeling without explaining it, its lexicon root works as an ordinary [property](/predication) word: `zuwen gonumul` (*I am angry*). Use the full compose when an emotion word would have done judgment work.
 
 **Compare with:** *could be* uses [MAY](/knowing#may) (`thomam`). *Because of* is a causal claim with the because pole. The stimulus says what the feeling is **about**; a direction `/b/` says what it is **aimed at**; the because pole says what **caused** it.
 
@@ -102,11 +102,11 @@ Raw feeling (contacting a sensation without judgment) may go unlabeled. To name 
 
 On the clause, a feeling word is about the clause's event, so English *moved that …* or *glad that …* puts the feeling on the clause it names:
 
-> `zolazun vowurel thawothamar.`
+> `zalazun vowurol thawethamar.`
 >
-> z-Olazun | v-walk | th-relatedness-met-any-term-INTERNAL-SURGING
+> z-Alazun | v-walk | th-relatedness-met-any-term-INTERNAL-SURGING
 >
-> "I'm moved that Olazun walks."
+> "I'm moved that Alazun walks."
 
 With no event at all, a feeling word on `/th/` is a whole sentence about **you**: how you feel right now, with nothing as its object.
 
@@ -124,23 +124,23 @@ A lone feeling can still name what caused it. The cause is not the object: the f
 >
 > "I'm anxious, and the rain caused it."
 
-**Compare with:** a lone noun before the feeling is an [existence](/predication#existence) clause, so the noun's being there is the stimulus: `zolazun thuwathuruer.` is *anxious that Olazun is here*, not *Olazun is anxious*.
+**Compare with:** a lone noun before the feeling is an [existence](/predication#existence) clause, so the noun's being there is the stimulus: `zalazun thuwathuruer.` is *anxious that Alazun is here*, not *Alazun is anxious*.
 
 ### Hopefully and other attitudes {#speaker-attitude}
 
-English *hopefully*, *luckily*, and *worryingly* say how **you**, the speaker, feel about the whole claim. In Agebon, put the content root for that feeling on `/th/` with **-m**. It is always the speaker's attitude, never the subject's. For the subject's manner (*Uzozen walks hopefully*), use `/h/` (`hoguyem`).
+English *hopefully*, *luckily*, and *worryingly* say how **you**, the speaker, feel about the whole claim. In Agebon, put the content root for that feeling on `/th/` with **-m**. It is always the speaker's attitude, never the subject's. For the subject's manner (*Azozon walks hopefully*), use `/h/` (`huwuyom`).
 
 | Agebon | Use | English | Same root as |
 |--------|-----|---------|--------------|
-| **`thoguyem`** | you want it, and it is still open | *hopefully* | `oguyel` *crossed-fingers* |
-| **`tholezom`** | it went well by chance | *luckily* | `olezol` *ladybug* |
+| **`thuwuyom`** | you want it, and it is still open | *hopefully* | `uwuyol` *crossed-fingers* |
+| **`tholezem`** | it went well by chance | *luckily* | `olezel` *ladybug* |
 | **`thewemum`** | it concerns you | *worryingly* | `ewemul` *worried* |
 
-> `zuzozen thoguyem vowurel.`
+> `zazozon thuwuyom vowurol.`
 >
-> z-Uzozen | th-hope | v-walk
+> z-Azozon | th-hope | v-walk
 >
-> "Hopefully Uzozen is walking."
+> "Hopefully Azozon is walking."
 
 Hope is not a way of **knowing**, so it cannot hold up a forecast by itself. To say *hopefully … will*, add a real evidence channel as well. Hope says how you feel about the claim; the channel says what backs it.
 
@@ -148,11 +148,11 @@ Hope is not a way of **knowing**, so it cannot hold up a forecast by itself. To 
 
 English *may*, *must*, *may not*, and *they agreed* each say that someone has a say over an act. Agebon puts that in one **say word** on `/h/`. A grant, a ban, a demand, or a yes is said openly, so a say word needs no channel; like an [intention adverb](/clause#intention-adverbs), it covers the whole clause. Write **`h`**, **`w`**, a scope vowel, whose say it is, the answer, and an ending.
 
-> `zuzozen vowurel hwuvam.`
+> `zazozon vowurol hwuvam.`
 >
-> z-Uzozen | v-walk | h-episode-event-ALLOW-said
+> z-Azozon | v-walk | h-episode-event-ALLOW-said
 >
-> "Uzozen may walk; I'm allowing it."
+> "Azozon may walk; I'm allowing it."
 
 | Piece | Says | In `hwuvam` |
 |-------|------|-------------|
@@ -169,23 +169,23 @@ If you do not know how it stands, use **-m**.
 
 **`v`** is the say of someone outside the act: a rule, a person with the standing to decide, or custom. On **-m** that person is the speaker, unless a `bl-` word right after names someone else.
 
-> `zuzozen vowurel hwuvam blolazun.`
+> `zazozon vowurol hwuvam blalazun.`
 >
-> z-Uzozen | v-walk | [h-episode-event-ALLOW-said | bl-Olazun]
+> z-Azozon | v-walk | [h-episode-event-ALLOW-said | bl-Alazun]
 >
-> "Olazun lets Uzozen walk."
+> "Alazun lets Azozon walk."
 
-> `zahelan vuhohol hwuval.`
+> `zahelan vehohel hwuval.`
 >
 > z-Ahelan | v-sit | h-episode-event-ALLOW-rule
 >
 > "The rules allow Ahelan to sit."
 
-> `zolazun vezuvol hwuvor.`
+> `zalazun vezuvel hwuvor.`
 >
-> z-Olazun | v-sleep | h-episode-event-REQUIRE-tacit
+> z-Alazun | v-sleep | h-episode-event-REQUIRE-tacit
 >
-> "Olazun is supposed to sleep."
+> "Alazun is supposed to sleep."
 
 | Answer | **-l** the rules | **-m** a person | **-r** nobody said |
 |--------|------------------|-----------------|--------------------|
@@ -194,9 +194,9 @@ If you do not know how it stands, use **-m**.
 | **`o`** | `hwuvol` *the rules require* | `hwuvom` *you have to* | `hwuvor` *it's customary* / *is supposed to* |
 | **`e`** | `hwuvel` *the rules leave it optional* | `hwuvem` *it's up to you* | `hwuver` *nobody cares either way* |
 
-When the speaker is in the clause, the speaker's own say is their part, not **`v`**, so a bare **`v`** on **-m** has no reading there. So *I have to walk* says who requires it: the rules (`zuwon vowurel hwuvol.`), a person (`zuwon vowurel hwuvom blolazun.`), custom (`zuwon vowurel hwuvor.`), or you yourself (`zuwon vowurel hwuzom.` *I'm making myself walk*). Telling an outside demand from one you put on yourself is the point of the split.
+When the speaker is in the clause, the speaker's own say is their part, not **`v`**, so a bare **`v`** on **-m** has no reading there. So *I have to walk* says who requires it: the rules (`zuwen vowurol hwuvol.`), a person (`zuwen vowurol hwuvom blalazun.`), custom (`zuwen vowurol hwuvor.`), or you yourself (`zuwen vowurol hwuzom.` *I'm making myself walk*). Telling an outside demand from one you put on yourself is the point of the split.
 
-To **ask** for permission, put the clause under [ask](/questions#question): `yem zuwon vuhohol hwuvam.` (*May I sit?*). The question asks the listener, so the speaker may be in it. Grant it with [**`yael.`**](/questions#polar-stance) (*go ahead*).
+To **ask** for permission, put the clause under [ask](/questions#question): `yem zuwen vehohel hwuvam.` (*May I sit?*). The question asks the listener, so the speaker may be in it. Grant it with [**`yael.`**](/questions#polar-stance) (*go ahead*).
 
 **Compare with:** [prescription](/ought-for-a-sake#sake-force) **`the`** says the act *ought* to serve a named sake, a reason you can check; a say word says only who allows or demands it. A [command](/speech-moves#speech-act-beginner) **`yol`** is the speaker telling the listener now; **`hwuvom`** reports a demand, which may be someone else's.
 
@@ -204,29 +204,29 @@ To **ask** for permission, put the clause under [ask](/questions#question): `yem
 
 Consent is the say of someone **in** the act: their body, their things, their time. Write the role letter that person has in the clause: **`d`** the one it's done to, **`b`** the recipient, **`z`** the doer. They are already in the clause, so the say word needs no `bl-` word.
 
-> `zuzozen vezuyel bahelan hwubam.`
+> `zazozon vezuyol bahelan hwubam.`
 >
-> z-Uzozen | v-tell | b-Ahelan | h-episode-recipient-ALLOW-said
+> z-Azozon | v-tell | b-Ahelan | h-episode-recipient-ALLOW-said
 >
-> "Uzozen tells Ahelan, and Ahelan said yes to it."
+> "Azozon tells Ahelan, and Ahelan said yes to it."
 
-> `zuzozen dolazun vawebol hwudam.`
+> `zazozon dalazun vayebel hwudam.`
 >
-> z-Uzozen | d-Olazun | v-see | h-episode-patient-ALLOW-said
+> z-Azozon | d-Alazun | v-see | h-episode-patient-ALLOW-said
 >
-> "Uzozen looks at Olazun, and Olazun agreed."
+> "Azozon looks at Alazun, and Alazun agreed."
 
-> `zuzozen vezuyel bahelan bolazun bal hwubar.`
+> `zazozon vezuyol bahelan balazun bal hwubar.`
 >
-> z-Uzozen | v-tell | [b-Ahelan | b-Olazun | b-and] | h-episode-recipient-ALLOW-tacit
+> z-Azozon | v-tell | [b-Ahelan | b-Alazun | b-and] | h-episode-recipient-ALLOW-tacit
 >
-> "Uzozen tells Ahelan and Olazun, assuming they are OK with it."
+> "Azozon tells Ahelan and Alazun, assuming they are OK with it."
 
-> `zolazun vezuvol hwuzam.`
+> `zalazun vezuvel hwuzam.`
 >
-> z-Olazun | v-sleep | h-episode-agent-ALLOW-said
+> z-Alazun | v-sleep | h-episode-agent-ALLOW-said
 >
-> "Olazun lets themself sleep."
+> "Alazun lets themself sleep."
 
 The ending says how binding the yes is. **-l** is a binding agreement: they signed on in advance, and withdrawing has terms. **-m** is a yes they can take back at any time. **-r** is a yes nobody said, taken as given; it is allowed, but choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*.
 
@@ -243,20 +243,20 @@ The ending says how binding the yes is. **-l** is a binding agreement: they sign
 | **`o`** | `hwudol` *they're owed it*, `hwuzol` *a rule they set themself* | `hwudor` *they'd want it*, `hwuzor` *feels they have to* |
 | **`e`** | `hwudel` *their call, by agreement* | `hwuzer` *presumably their own choice* |
 
-- **`hwuzor`** is the unspoken *should*: *I feel I have to* when nobody asked. Beside `hwuvom blolazun` (someone asked), `hwuvol` (the rules), and `hwuzom` (pushing yourself), it shows where the pressure comes from.
+- **`hwuzor`** is the unspoken *should*: *I feel I have to* when nobody asked. Beside `hwuvom blalazun` (someone asked), `hwuvol` (the rules), and `hwuzom` (pushing yourself), it shows where the pressure comes from.
 - **`hwuzol`** is a personal rule (*I don't drink on weekdays*). Naming a rigid rule as self-set makes it something to examine.
 - **`hwudor`** (*they'd want to know*) is a common excuse for acting on someone's behalf; **-r** marks it as an assumption, as `hwudar` does for consent.
-- **`e`** hands the choice to that party: neither allowed, forbidden, nor required, but up to them. `hwuzem` (*chose it freely*) differs from `hwuzam` (*let themself*), which suggests a reluctance overcome. *No answer yet* needs no vowel: ask it (`yem zuzozen dolazun vawebol hwudam.`).
+- **`e`** hands the choice to that party: neither allowed, forbidden, nor required, but up to them. `hwuzem` (*chose it freely*) differs from `hwuzam` (*let themself*), which suggests a reluctance overcome. *No answer yet* needs no vowel: ask it (`yem zazozon dalazun vayebel hwudam.`).
 
-> `zolazun vezuvol hwuzem.`
+> `zalazun vezuvel hwuzem.`
 >
-> z-Olazun | v-sleep | h-episode-agent-CHOICE-said
+> z-Alazun | v-sleep | h-episode-agent-CHOICE-said
 >
-> "Olazun sleeps, by their own choice."
+> "Alazun sleeps, by their own choice."
 
-**Promise:** a vow (`hwuzal`) commits you to an act, and said to someone it is a promise to them. `zuwon vowurel hwuzal.`, said to someone, is *I promise (you) to walk*. A self-set rule (`hwuzol`) is a policy you hold toward yourself, not a promise. The weaker endings stay weaker on purpose: `hwuzam` is *I'll do it* (you can still back out), and `hwuzar` cannot pass for a promise.
+**Promise:** a vow (`hwuzal`) commits you to an act, and said to someone it is a promise to them. `zuwen vowurol hwuzal.`, said to someone, is *I promise (you) to walk*. A self-set rule (`hwuzol`) is a policy you hold toward yourself, not a promise. The weaker endings stay weaker on purpose: `hwuzam` is *I'll do it* (you can still back out), and `hwuzar` cannot pass for a promise.
 
-To check in, ask: `yem zuwon vezuyel bawan hwubam.` (*Are you still OK with me telling you?*).
+To check in, ask: `yem zuwen vezuyol bawan hwubam.` (*Are you still OK with me telling you?*).
 
 A say word takes no **-x**: a group's say comes from a group in the clause.
 
@@ -266,11 +266,11 @@ The scope vowel is [label scope](/label-seams#label-scope), the same vowels as a
 
 - **`u`:** this act. `hwudam` is a yes to this act, which is why consent is asked for each time.
 - **`o`:** standing. `hwodam` is standing consent (*they're generally fine with this*), `hwovam` standing permission (*you may, any time*), `hwovom` a standing duty, and `hwozom` a discipline. Standing is not binding: `hwodam` can still be taken back, and only **-l** binds.
-- **`e`:** toward one party, named in a `bl-` word. `zuwon vowurel hwezal blahelan.` is a vow toward Ahelan: *I promise Ahelan I'll walk*. On **`v`**, the `bl-` word is still who has the say, and **`e`** limits it to their own part: `hwuvam blolazun` is *Olazun lets Uzozen walk*, and `hwevam blolazun` is *fine as far as Olazun is concerned*; others may still object. Bare `hwevam` is *fine by me*, without speaking for anyone else.
+- **`e`:** toward one party, named in a `bl-` word. `zuwen vowurol hwezal blahelan.` is a vow toward Ahelan: *I promise Ahelan I'll walk*. On **`v`**, the `bl-` word is still who has the say, and **`e`** limits it to their own part: `hwuvam blalazun` is *Alazun lets Azozon walk*, and `hwevam blalazun` is *fine as far as Alazun is concerned*; others may still object. Bare `hwevam` is *fine by me*, without speaking for anyone else.
 - **`a`:** a type across scenes. `hwadam` is *they're the type who's fine with it*, and `hwavom` *their kind has to*. These are the inferences consent and fairness warn against; the form makes them visible instead of hiding them.
 - **Pairs** compose as on any label: `hwuovam` is *you may, but not in my official role*.
 
-> `zuwon vowurel hwezal blahelan.`
+> `zuwen vowurol hwezal blahelan.`
 >
 > z-speaker | v-walk | [h-pair-agent-ALLOW-rule | bl-Ahelan]
 >
@@ -280,19 +280,19 @@ Only **`v`** and pair scope **`e`** take a `bl-` word.
 
 English *against the rules* and *against their will* put [contrary to](prescription.md#contrary-to-stance) **`uom`** right before the say word. That word then names what the event goes against, and it no longer applies to the claim.
 
-> `zuzozen vowurel uom hwuvul.`
+> `zazozon vowurol uom hwuvul.`
 >
-> z-Uzozen | v-walk | [contrary-to | h-episode-event-FORBID-rule]
+> z-Azozon | v-walk | [contrary-to | h-episode-event-FORBID-rule]
 >
-> "Uzozen walks against the rules."
+> "Azozon walks against the rules."
 
-> `zuzozen vezuyel bolazun uom hwubum.`
+> `zazozon vezuyol balazun uom hwubum.`
 >
-> z-Uzozen | v-tell | b-Olazun | [contrary-to | h-episode-recipient-FORBID-said]
+> z-Azozon | v-tell | b-Alazun | [contrary-to | h-episode-recipient-FORBID-said]
 >
-> "Uzozen tells Olazun, against Olazun's will." (Olazun said no)
+> "Azozon tells Alazun, against Alazun's will." (Alazun said no)
 
-A yes only lifts a restriction, so no say word with answer **`a`** follows **`uom`**: not permission (`hwuvam`), and not consent (`hwudam`, `hwuzal`). *Their call* (**`o`**) sets nothing to go against either. A yes that was taken back is a no, so use the refusal: `zuzozen vezuyel bahelan uom hwubum.` To say you broke a promise, give the promise its own sentence after **`hezom blarl`**: `zuwon vezuvol hezom blarl zuwon vowurel hwuzal.`
+A yes only lifts a restriction, so no say word with answer **`a`** follows **`uom`**: not permission (`hwuvam`), and not consent (`hwudam`, `hwuzal`). *Their call* (**`o`**) sets nothing to go against either. A yes that was taken back is a no, so use the refusal: `zazozon vezuyol bahelan uom hwubum.` To say you broke a promise, give the promise its own sentence after **`hezem blarl`**: `zuwen vezuvel hezem blarl zuwen vowurol hwuzal.`
 
 ### Practice {#intermediate-practice}
 
@@ -310,49 +310,49 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *speaker* | `uwon` |
+| *speaker* | `uwen` |
 | *competence* | `uwal` |
-| *relatedness* | `awol` |
-| *stimulus* | `goyem` |
-| *sit* | `vuhohol` |
-| *sleep* | `vezuvol` |
-| *tell* | `vezuyel` |
+| *relatedness* | `awel` |
+| *stimulus* | `goyom` |
+| *sit* | `vehohel` |
+| *sleep* | `vezuvel` |
+| *tell* | `vezuyol` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
-**1.** *Ahelan lets Uzozen hug.*
+**1.** *Ahelan lets Azozon hug.*
 
 ::: details Show answer
-`zuzozen vahuyal hwuvam blahelan.`
+`zazozon vahuyal hwuvam blahelan.`
 
-z-Uzozen | v-hug | [h-episode-event-ALLOW-said | bl-Ahelan]
+z-Azozon | v-hug | [h-episode-event-ALLOW-said | bl-Ahelan]
 :::
 
-**2.** *Uzozen tells Ahelan, and Ahelan agreed.*
+**2.** *Azozon tells Ahelan, and Ahelan agreed.*
 
 ::: details Show answer
-`zuzozen vezuyel bahelan hwubam.`
+`zazozon vezuyol bahelan hwubam.`
 
-z-Uzozen | v-tell | b-Ahelan | h-episode-recipient-ALLOW-said
+z-Azozon | v-tell | b-Ahelan | h-episode-recipient-ALLOW-said
 :::
 
 **3.** *I feel waves of resentment at the hug.*
 
 ::: details Show answer
-`zahuyal wawothumer goyem.`
+`zahuyal wawethumer goyom.`
 
 z-hug | [w-relatedness-unmet-modifiable-AIMED-SURGING | g-stimulus]
 :::
 
-**4.** *Uzozen hugs, and no one's stopping it.*
+**4.** *Azozon hugs, and no one's stopping it.*
 
 ::: details Show answer
-`zuzozen vahuyal hwuvar.`
+`zazozon vahuyal hwuvar.`
 
-z-Uzozen | v-hug | h-episode-event-ALLOW-tacit
+z-Azozon | v-hug | h-episode-event-ALLOW-tacit
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
@@ -365,7 +365,7 @@ th-competence-unmet-passing-UNPLACED-SURGING
 *I'm anxious.*
 :::
 
-**2.** `zahelan vezuvol hwuvor.`
+**2.** `zahelan vezuvel hwuvor.`
 
 ::: details Show answer
 z-Ahelan | v-sleep | h-episode-event-REQUIRE-tacit
@@ -373,36 +373,36 @@ z-Ahelan | v-sleep | h-episode-event-REQUIRE-tacit
 *Ahelan is supposed to sleep.*
 :::
 
-**3.** `zolazun vahuyal hwuval.`
+**3.** `zalazun vahuyal hwuval.`
 
 ::: details Show answer
-z-Olazun | v-hug | h-episode-event-ALLOW-rule
+z-Alazun | v-hug | h-episode-event-ALLOW-rule
 
-*The rules allow Olazun to hug.*
+*The rules allow Alazun to hug.*
 :::
 
-**4.** `zuzozen vahuyal uom hwuvul.`
+**4.** `zazozon vahuyal uom hwuvul.`
 
 ::: details Show answer
-z-Uzozen | v-hug | [contrary-to | h-episode-event-FORBID-rule]
+z-Azozon | v-hug | [contrary-to | h-episode-event-FORBID-rule]
 
-*Uzozen hugs against the rules.*
+*Azozon hugs against the rules.*
 :::
 
-**5.** `zahuyal wawothumel goyem blolazun.`
+**5.** `zahuyal wawethumel goyom blalazun.`
 
 ::: details Show answer
-z-hug | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Olazun]
+z-hug | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Alazun]
 
-*I resent Olazun over the hug, holding it in.*
+*I resent Alazun over the hug, holding it in.*
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *The rules allow Ahelan to sit.* `zahelan vuhohol hwuval.` or `zahelan vuhohol hwuvam.`
+**1.** *The rules allow Ahelan to sit.* `zahelan vehohel hwuval.` or `zahelan vehohel hwuvam.`
 
 ::: details Show answer
-`zahelan vuhohol hwuval.`
+`zahelan vehohel hwuval.`
 
 z-Ahelan | v-sit | h-episode-event-ALLOW-rule
 
@@ -411,10 +411,10 @@ z-Ahelan | v-sit | h-episode-event-ALLOW-rule
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *I'm making myself hug.* <!-- lint: error -->`zuwon vahuyal hwavem.`
+**1.** *I'm making myself hug.* <!-- lint: error -->`zuwen vahuyal hwavem.`
 
 ::: details Show answer
-`zuwon vahuyal hwuzom.`
+`zuwen vahuyal hwuzom.`
 
 z-speaker | v-hug | h-episode-agent-REQUIRE-said
 

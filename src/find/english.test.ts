@@ -16,7 +16,7 @@ function entriesOf(markdown: string) {
 
 describe("tokens", () => {
   it("drops stop words and markdown, and stems", () => {
-    assert.deepEqual(tokens("*Uzozen* walks to the `hill`"), ["uzozen", "walk", "hill"]);
+    assert.deepEqual(tokens("*Azozon* walks to the `hill`"), ["azozon", "walk", "hill"]);
     assert.deepEqual(tokens("stories"), ["story"]);
   });
 });
@@ -65,27 +65,27 @@ describe("collectEnglishEntries", () => {
 
 ### Point back {#hook-resume}
 
-> \`er zuzozen vowurel.\`
+> \`er zazozon vowurol.\`
 >
-> "Anyway, Uzozen walks."
+> "Anyway, Azozon walks."
 `);
     const example = entries.find((e) => e.kind === "example")!;
-    assert.equal(example.english, "Anyway, Uzozen walks.");
+    assert.equal(example.english, "Anyway, Azozon walks.");
     assert.equal(example.slug, "hook-resume");
     assert.equal(example.band, "intermediate");
     assert.equal(example.line, 5);
     const gloss = entries.find((e) => e.kind === "gloss" && e.form === "er")!;
     assert.equal(gloss.english, "anyway");
-    assert.ok(entries.some((e) => e.kind === "gloss" && e.form === "vowurel" && e.english === "walk"));
+    assert.ok(entries.some((e) => e.kind === "gloss" && e.form === "vowurol" && e.english === "walk"));
   });
 });
 
 describe("searchEnglish", () => {
   const entries = entriesOf(`### Walking
 
-> \`zuzozen vowurel.\`
+> \`zazozon vowurol.\`
 >
-> "Uzozen walks."
+> "Azozon walks."
 
 ### From the end
 
@@ -108,7 +108,7 @@ describe("taught cues in docs/grammar", () => {
   const all = listMarkdown("docs/grammar").flatMap((file) => collectEnglishEntries(readFileSync(file, "utf8"), file, tables));
   const cases: { phrase: string; page: string; slug?: string; forms: string[] }[] = [
     { phrase: "anyway", page: "discourse-hooks.md", slug: "hook-resume", forms: ["er"] },
-    { phrase: "late", page: "vague-amounts.md", slug: "vague-amounts", forms: ["thubem / zol / zuol / bral"] },
+    { phrase: "late", page: "vague-amounts.md", slug: "vague-amounts", forms: ["thubom / zol / zuol / bral"] },
     { phrase: "last time", page: "stacked-markers.md", forms: ["gruodol", "g#-2", "h#-2"] },
   ];
   for (const { phrase, page, slug, forms } of cases) {
@@ -154,7 +154,7 @@ describe("recipe table harvest", () => {
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
-| in B's use (*Uzozen's dog*) | hook **\`om\`** + \`/b/\` | [Whose](extra-noun-hooks.md#genitive) |
+| in B's use (*Azozon's dog*) | hook **\`om\`** + \`/b/\` | [Whose](extra-noun-hooks.md#genitive) |
 
 ## Everyday words {#everyday-words}
 

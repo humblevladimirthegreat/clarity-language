@@ -18,11 +18,11 @@ Nine published roots are the sakes you can name, and no other root takes the sak
 |--------|-----|---------|--------------|-----|
 | **`una`** | autonomy sake | *autonomy* (choice, agency, self-direction) | `unal` *ballot* | 🗳️: voting is choosing for yourself |
 | **`uwa`** | competence sake | *competence* (efficacy, skill, getting things to work) | `uwal` *tool* | 🧰: the kit that gets things working |
-| **`owo`** | understanding sake | *understanding* (making sense, learning, discovery) | `owol` *lightbulb* | 💡: the light goes on when it makes sense |
-| **`ure`** | purpose sake | *purpose* (meaning, direction, an aim that matters) | `urel` *compass* | 🧭: a heading worth following |
-| **`awo`** | relatedness sake | *relatedness* (connection, belonging, care) | `awol` *knot* | 🪢: ties people together |
+| **`owe`** | understanding sake | *understanding* (making sense, learning, discovery) | `owel` *lightbulb* | 💡: the light goes on when it makes sense |
+| **`uro`** | purpose sake | *purpose* (meaning, direction, an aim that matters) | `urol` *compass* | 🧭: a heading worth following |
+| **`awe`** | relatedness sake | *relatedness* (connection, belonging, care) | `awel` *knot* | 🪢: ties people together |
 | **`ewa`** | beneficence sake | *beneficence* (making someone better off) | `ewal` *present* | 🎁: a gift leaves someone better off |
-| **`odo`** | pleasure sake | *pleasure* (enjoyment, comfort, aesthetic payoff) | `odol` *strawberry* | 🍓: sweetness you enjoy |
+| **`ode`** | pleasure sake | *pleasure* (enjoyment, comfort, aesthetic payoff) | `odel` *strawberry* | 🍓: sweetness you enjoy |
 | **`oba`** | physical sake | *physical* (health, exercise, food, sleep, shelter, safety from harm) | `obal` *lungs* | 🫁: breathing easy means the body is well |
 | **`uda`** | a sake without picking among the eight | *unspecified sake* | `udal` *egg* | 🥚: not yet a specific kind |
 
@@ -61,7 +61,7 @@ Each sake answers a different question about what pays off. Ask the question, th
 
 To say that a belonging of yours **serves** a sake (pays it off), write that thing as a noun, then a `/ɡ/` word: sake root, mid-word **`th`**, **`a`**, then an ending. That adjective describes the noun. The ending says the payoff's **time horizon**: whether the payoff lasts or arrives right away. With **-m**, you leave the time horizon unstated:
 
-> `zahehal guwatham.`
+> `zohehal guwatham.`
 >
 > z-house | g-competence-met-any-term
 >
@@ -80,7 +80,7 @@ On a *serves* word, the ending says **when the payoff lands**: **-l** lasting, *
 | `…tham` | serves the sake; time horizon unstated (soft default if unknown) | *serves* | **-m** ≈ open |
 | `…thar` | serves the sake right away | *immediate* | **-r** ≈ right now |
 
-> `zewal gawothal.`
+> `zewal gawethal.`
 >
 > z-present | g-relatedness-met-lasting
 >
@@ -94,7 +94,7 @@ On a *serves* word, the ending says **when the payoff lands**: **-l** lasting, *
 
 An immediate payoff is often exactly what is needed:
 
-> `zodol godothar.`
+> `zodel godethar.`
 >
 > z-strawberry | g-pleasure-met-immediate
 >
@@ -127,7 +127,7 @@ That ending is **changeability**: how lasting the harm to the sake is, on the sa
 
 One noun can carry both a **`tha`** word and a **`thu`** word. The pair can run either way: *good now, costly later* (an immediate **`tha`** word and a lasting **`thu`** word), or *costly now, good later*:
 
-> `zanal godothur guwathal.`
+> `zanal godethur guwathal.`
 >
 > [z-book | g-pleasure-unmet-passing | g-competence-met-lasting]
 >
@@ -148,40 +148,40 @@ A sake word ends in **-l**, **-m**, or **-r**, from that stance’s table. It ne
 
 On `/th/`, the sake word says how the event itself stands toward the sake:
 
-> `zuzozen vezuyel thuwatham.`
+> `zazozon vezuyol thuwatham.`
 >
-> z-Uzozen | v-tell | th-competence-met-any-term
+> z-Azozon | v-tell | th-competence-met-any-term
 >
-> "Uzozen talks, and that boosts my confidence."
+> "Azozon talks, and that boosts my confidence."
 
-Without mid-word **`th`**, the root keeps its everyday sense: `gunal` is *ballot-like*, and `hodol` is the adverb from *strawberry*.
+Without mid-word **`th`**, the root keeps its everyday sense: `gunal` is *ballot-like*, and `hodel` is the adverb from *strawberry*.
 
 ### Personal possession {#personal-possession}
 <a id="stimulus"></a>
 
-A sake word on `/ɡ/` also says the noun is **yours**, with no separate word for *my*. That shortcut makes thanks and costs cheap to say about the things you already call *my X*. To say who owns something without naming a sake, use `gogunum` plus `/b/`. Someone else's thing uses that pair too, never a sake word alone on `/ɡ/`.
+A sake word on `/ɡ/` also says the noun is **yours**, with no separate word for *my*. That shortcut makes thanks and costs cheap to say about the things you already call *my X*. To say who owns something without naming a sake, use `gegunum` plus `/b/`. Someone else's thing uses that pair too, never a sake word alone on `/ɡ/`.
 
-When the noun is **not** yours (weather, a gathering, another person’s church), follow it with the adjective **`goyem`**, *as stimulus*: the thing you react to, not something you keep. Put the same met or unmet word you would use on `/ɡ/` on `/w/` immediately before **`goyem`**, as extra detail on it. (cue: ☝️ *point*: you point at the thing; you do not hold it)
+When the noun is **not** yours (weather, a gathering, another person’s church), follow it with the adjective **`goyom`**, *as stimulus*: the thing you react to, not something you keep. Put the same met or unmet word you would use on `/ɡ/` on `/w/` immediately before **`goyom`**, as extra detail on it. (cue: ☝️ *point*: you point at the thing; you do not hold it)
 
-> `zabowam wunathur goyem.`
+> `zabowam wunathur goyom.`
 >
 > z-gathering | [w-autonomy-unmet-passing | g-stimulus]
 >
 > "The gathering detracts from autonomy right now." (passing)
 
-The same `/w/` sake word can sit before any adjective. Then it is about **that property**: the tea's heat is what serves pleasure, not the tea as a whole. **`goyem`** is the case where the property is the noun itself, as the thing you react to.
+The same `/w/` sake word can sit before any adjective. Then it is about **that property**: the tea's heat is what serves pleasure, not the tea as a whole. **`goyom`** is the case where the property is the noun itself, as the thing you react to.
 
-> `zududal wodotham gohamul.`
+> `zedudal wodetham gohamul.`
 >
 > z-tea | [w-pleasure-met-any-term | g-hot]
 >
 > "The tea is pleasantly hot."
 
-As a plain noun, `zoyel` is *emphasis*. **`goyem`** with no `/w/` sake word before it names no sake. An event (*this raining*, *this telling*) takes its sake word on `/th/` on the clause, whether or not it is yours.
+As a plain noun, `zoyol` is *emphasis*. **`goyom`** with no `/w/` sake word before it names no sake. An event (*this raining*, *this telling*) takes its sake word on `/th/` on the clause, whether or not it is yours.
 
 | Agebon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`goyem`** | unowned noun as sake-target | *as stimulus* | `oyel` *emphasis* | ☝️: you point at it rather than keep it |
+| **`goyom`** | unowned noun as sake-target | *as stimulus* | `oyol` *emphasis* | ☝️: you point at it rather than keep it |
 
 ### Practice {#beginner-practice}
 
@@ -193,39 +193,39 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *tent* | `edehal` | ⛺ |
-| *wind* | `ewulel` | 🌬️ |
-| *calendar* | `agorel` | 📅 |
+| *tent* | `udehal` | ⛺ |
+| *wind* | `awulol` | 🌬️ |
+| *calendar* | `agorol` | 📅 |
 | *autonomy* | `unal` | 🗳️ from *ballot*: voting is choosing for yourself |
 | *competence* | `uwal` | 🧰 from *tool*: the kit that gets things working |
-| *understanding* | `owol` | 💡 from *lightbulb*: the light goes on when it makes sense |
+| *understanding* | `owel` | 💡 from *lightbulb*: the light goes on when it makes sense |
 | *beneficence* | `ewal` | 🎁 from *present*: a gift leaves someone better off |
 | *physical* | `obal` | 🫁 from *lungs*: breathing easy means the body is well |
-| *pleasure* | `odol` | 🍓 from *strawberry*: sweetness you enjoy |
+| *pleasure* | `odel` | 🍓 from *strawberry*: sweetness you enjoy |
 | *sake* | `udal` | 🥚 from *egg*: not yet a specific kind |
-| *stimulus* | `goyem` | ☝️ from *point*: you point at it rather than keep it |
+| *stimulus* | `goyom` | ☝️ from *point*: you point at it rather than keep it |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
+| *Azozon* | `azozon` |
 | *Ahelan* | `ahelan` |
 | *knife* | `anewul` |
 | *bucket* | `obowal` |
-| *cookie* | `ugedol` |
+| *cookie* | `ugedel` |
 | *rain* | `erulal` |
-| *thunderstorm* | `enulul` |
+| *thunderstorm* | `anulul` |
 | *night* | `anurul` |
-| *cook* | `vuguyel` |
-| *sing* | `vezuyol` |
+| *cook* | `vuguyol` |
+| *sing* | `vozuyel` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *My tent serves the physical sake in the long term.*
 
 ::: details Show answer
-`zedehal gobathal.`
+`zudehal gobathal.`
 
 z-tent | g-physical-met-lasting
 :::
@@ -241,7 +241,7 @@ z-knife | g-sake-met-any-term
 **3.** *The wind detracts from the physical sake right now.* (passing)
 
 ::: details Show answer
-`zewulel wobathur goyem.`
+`zawulol wobathur goyom.`
 
 z-wind | [w-physical-unmet-passing | g-stimulus]
 :::
@@ -249,23 +249,23 @@ z-wind | [w-physical-unmet-passing | g-stimulus]
 **4.** *The thunderstorm detracts from pleasure.* (modifiable)
 
 ::: details Show answer
-`zenulul wodothum goyem.`
+`zanulul wodethum goyom.`
 
 z-thunderstorm | [w-pleasure-unmet-modifiable | g-stimulus]
 :::
 
-**5.** *Uzozen cooks, and I enjoy it right now.*
+**5.** *Azozon cooks, and I enjoy it right now.*
 
 ::: details Show answer
-`zuzozen vuguyel thodothar.`
+`zazozon vuguyol thodethar.`
 
-z-Uzozen | v-cook | th-pleasure-met-immediate
+z-Azozon | v-cook | th-pleasure-met-immediate
 :::
 
 **6.** *My calendar detracts from autonomy.* (modifiable)
 
 ::: details Show answer
-`zagorel gunathum.`
+`zagorol gunathum.`
 
 z-calendar | g-autonomy-unmet-modifiable
 :::
@@ -280,7 +280,7 @@ z-bucket | g-beneficence-met-lasting
 *My bucket serves beneficence in the long term.*
 :::
 
-**2.** `zerulal wobathum goyem.`
+**2.** `zerulal wobathum goyom.`
 
 ::: details Show answer
 z-rain | [w-physical-unmet-modifiable | g-stimulus]
@@ -288,7 +288,7 @@ z-rain | [w-physical-unmet-modifiable | g-stimulus]
 *The rain detracts from the physical sake.* (modifiable)
 :::
 
-**3.** `zugedol godothar.`
+**3.** `zugedel godethar.`
 
 ::: details Show answer
 z-cookie | g-pleasure-met-immediate
@@ -296,15 +296,15 @@ z-cookie | g-pleasure-met-immediate
 *My cookie is a pleasure right now.*
 :::
 
-**4.** `zuzozen vezuyol thuwathum.`
+**4.** `zazozon vozuyel thuwathum.`
 
 ::: details Show answer
-z-Uzozen | v-sing | th-competence-unmet-modifiable
+z-Azozon | v-sing | th-competence-unmet-modifiable
 
-*Uzozen sings, and that knocks my confidence.* (modifiable)
+*Azozon sings, and that knocks my confidence.* (modifiable)
 :::
 
-**5.** `zedehal godothur gobathal.`
+**5.** `zudehal godethur gobathal.`
 
 ::: details Show answer
 [z-tent | g-pleasure-unmet-passing | g-physical-met-lasting]
@@ -312,7 +312,7 @@ z-Uzozen | v-sing | th-competence-unmet-modifiable
 *My tent is unpleasant for now, but it serves the physical sake in the long term.*
 :::
 
-**6.** `zanurul wowotham goyem.`
+**6.** `zanurul wowetham goyom.`
 
 ::: details Show answer
 z-night | [w-understanding-met-any-term | g-stimulus]
@@ -332,10 +332,10 @@ z-knife | g-competence-unmet-modifiable
 **`thu`** detracts from the sake; **`tha`** serves it.
 :::
 
-**2.** *Ahelan sings, and I enjoy it.* `zahelan vezuyol thodotham.` or `zahelan godotham vezuyol.`
+**2.** *Ahelan sings, and I enjoy it.* `zahelan vozuyel thodetham.` or `zahelan godetham vozuyel.`
 
 ::: details Show answer
-`zahelan vezuyol thodotham.`
+`zahelan vozuyel thodetham.`
 
 z-Ahelan | v-sing | th-pleasure-met-any-term
 
@@ -344,14 +344,14 @@ The singing is an event, so its sake word goes on `/th/`; on `/ɡ/` after `zahel
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *The rain serves pleasure.* <!-- lint: error -->`zerulal godotham.`
+**1.** *The rain serves pleasure.* <!-- lint: error -->`zerulal godetham.`
 
 ::: details Show answer
-`zerulal wodotham goyem.`
+`zerulal wodetham goyom.`
 
 z-rain | [w-pleasure-met-any-term | g-stimulus]
 
-A sake word alone on `/ɡ/` says the rain is yours; for a thing you do not keep, put the sake word on `/w/` before **`goyem`**.
+A sake word alone on `/ɡ/` says the rain is yours; for a thing you do not keep, put the sake word on `/w/` before **`goyom`**.
 :::
 ## See also
 

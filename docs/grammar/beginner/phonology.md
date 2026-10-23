@@ -83,7 +83,7 @@ Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org
 
 A content word ends in one of four consonants: `-l`, `-m`, `-n`, or `-r`. That last consonant is the audible end of the word. Inside the word, consonants start syllables. They do not close a syllable in the middle.
 
-`uzozen` = *u-zo-zen*. `udozol` = *u-do-zol*.
+`azozon` = *a-zo-zon*. `odozel` = *o-do-zel*.
 ## See also
 
 - Citation (root + ending, no sentence): [word-endings.md](word-endings.md)

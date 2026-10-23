@@ -56,7 +56,7 @@ Concrete and abstract stay on **separate labeled lines**, never one merged gloss
 
 **Production cards have one answer.** A row’s concrete and abstract never repeat another row’s ([labels and senses](../../meta/lexicon.md#labels-and-senses)), so the glosses on the front pick out one stem. Aliases may repeat across rows; they help recall but do not have to identify the row on their own. An overlay’s production front leads with its `definition` (*autonomy sake*), which keeps it apart from a root whose sense shares the overlay’s short `gloss`. A compound whose sense collides with a root’s is a lexicon fix, found by the note-builder test.
 
-**Compound parts** show the stem’s left root, boundary letter, and head (`obaho` + `l` + `uraha`) with each root’s concrete gloss. The compound becomes readable from roots the learner already knows, and the boundary letter is drilled in passing.
+**Compound parts** show the stem’s left root, boundary letter, and head (`oyahe` + `l` + `uraha`) with each root’s concrete gloss. The compound becomes readable from roots the learner already knows, and the boundary letter is drilled in passing.
 
 ### Fields
 
@@ -105,7 +105,7 @@ All packs use the same note type. A pack is a filter over the note list plus dec
 | **Compounds** | All of `lexicon-compounds.csv`, not only core stems |
 | **Feelings** | Roots from the feelings and emotion-compose sections |
 
-**Before the overlay packs: a key rule for sense forms that differ by row.** Several sense forms carry a different meaning per `pos` row, so collapsing them into one note would merge two lessons: a join act and its join relations (`an` on `v` vs `g` / `h`), the similative's manner and type readings (`ewom` on `h` vs `g`), the AS-OF stance pole on `th` beside its clause poles (`enam`, `enar`, `unem`, `uner`), and the CAUSE causer note on `th` (`ewem`). Options: key those notes by `sense_form` + `kind` (still one note per join act / join relation), or by `sense_form` + `pos` when the definitions differ. Settle it with the v2 overlay packs.
+**Before the overlay packs: a key rule for sense forms that differ by row.** Several sense forms carry a different meaning per `pos` row, so collapsing them into one note would merge two lessons: a join act and its join relations (`an` on `v` vs `g` / `h`), the similative's manner and type readings (`ewem` on `h` vs `g`), the AS-OF stance pole on `th` beside its clause poles (`enam`, `enar`, `unom`, `unor`), and the CAUSE causer note on `th` (`ewom`). Options: key those notes by `sense_form` + `kind` (still one note per join act / join relation), or by `sense_form` + `pos` when the definitions differ. Settle it with the v2 overlay packs.
 
 Overlays wait for v2 because each one is a grammar piece taught on its own page: `unam` alone on a card, without the mid-word `th` around it, is a weak cue until its section has been read. The sake overlays, which learners need early, are already in the v1 **Sakes** pack. Overlay decks are tagged by the stage of their `anchor` section, not blanket “advanced”: many `evidential` and plan / want forms are taught at beginner stage.
 

@@ -29,91 +29,91 @@ Write the mark **before** what it colors, so you see the tone before you say the
 
 | Written | Colors |
 |---------|--------|
-| Attached to a word: `!zuzozen` | that word |
+| Attached to a word: `!zazozon` | that word |
 | Attached to a [span](/spans): `!d[ … ]` | the span |
-| Standing alone, then a space: `! zuzozen …` | the rest of the sentence, up to the period |
+| Standing alone, then a space: `! zazozon …` | the rest of the sentence, up to the period |
 
-> `zuzozen vawebol ?dudozol.`
+> `zazozon vayebel ?dodozel.`
 >
-> z-Uzozen | v-see | ?d-dog
+> z-Azozon | v-see | ?d-dog
 >
-> "Uzozen saw a dog, I think." (unsure about just the dog)
+> "Azozon saw a dog, I think." (unsure about just the dog)
 
-> `! zuzozen vowurel.`
+> `! zazozon vowurol.`
 >
-> ! | z-Uzozen | v-walk
+> ! | z-Azozon | v-walk
 >
-> "Uzozen walks!"
+> "Azozon walks!"
 
-> `zuzozen vawebol &dudozol.`
+> `zazozon vayebel &dodozel.`
 >
-> z-Uzozen | v-see | &d-dog
+> z-Azozon | v-see | &d-dog
 >
-> "Uzozen saw a *dog*." (a dog, not something else)
+> "Azozon saw a *dog*." (a dog, not something else)
 
 The other marks work the same way:
 
-> `zuzozen !!vowurel.`
+> `zazozon !!vowurol.`
 >
-> z-Uzozen | !!v-walk
+> z-Azozon | !!v-walk
 >
-> "Uzozen *walks*!!"
+> "Azozon *walks*!!"
 
-> `?! zolazun vawebol dudozol.`
+> `?! zalazun vayebel dodozel.`
 >
-> ?! | z-Olazun | v-see | d-dog
+> ?! | z-Alazun | v-see | d-dog
 >
-> "Olazun saw a dog?!"
+> "Alazun saw a dog?!"
 
-> `%;zolazun vowurel.`
+> `%;zalazun vowurol.`
 >
-> %;z-Olazun | v-walk
+> %;z-Alazun | v-walk
 >
-> "Good old Olazun walks." (teasing, but fond)
+> "Good old Alazun walks." (teasing, but fond)
 
-> `zuzozen vawebol ??dudozol.`
+> `zazozon vayebel ??dodozel.`
 >
-> z-Uzozen | v-see | ??d-dog
+> z-Azozon | v-see | ??d-dog
 >
-> "Uzozen saw a dog, I think, but I'm really not sure." (unsure about just the dog)
+> "Azozon saw a dog, I think, but I'm really not sure." (unsure about just the dog)
 
-> `%% zuzozen vowurel.`
+> `%% zazozon vowurol.`
 >
-> %% | z-Uzozen | v-walk
+> %% | z-Azozon | v-walk
 >
-> "Uzozen walks." (broad teasing)
+> "Azozon walks." (broad teasing)
 
-> `zuzozen vawebol &&dudozol.`
+> `zazozon vayebel &&dodozel.`
 >
-> z-Uzozen | v-see | &&d-dog
+> z-Azozon | v-see | &&d-dog
 >
-> "Uzozen saw a *dog*." (a dog, and definitely not something else)
+> "Azozon saw a *dog*." (a dog, and definitely not something else)
 
-> `;;zolazun vawebol dudozol.`
+> `;;zalazun vayebel dodozel.`
 >
-> ;;z-Olazun | v-see | d-dog
+> ;;z-Alazun | v-see | d-dog
 >
-> "Dearest Olazun saw a dog."
+> "Dearest Alazun saw a dog."
 
-> `% zuzozen vowurel.`
+> `% zazozon vowurol.`
 >
-> % | z-Uzozen | v-walk
+> % | z-Azozon | v-walk
 >
-> "Uzozen walks." (joking)
+> "Azozon walks." (joking)
 
-> `;zolazun vawebol dudozol.`
+> `;zalazun vayebel dodozel.`
 >
-> ;z-Olazun | v-see | d-dog
+> ;z-Alazun | v-see | d-dog
 >
-> "Dear Olazun saw a dog."
+> "Dear Alazun saw a dog."
 
 A mark on a span colors all of it:
 
-> `zuzozen ?d[uzozen] vezuyel.`
+> `zazozon ?d[azozon] vezuyol.`
 >
-> z-Uzozen | ?d-CITE[Uzozen] | v-tell
+> z-Azozon | ?d-CITE[Azozon] | v-tell
 >
-> "Uzozen said “Uzozen,” I think." (unsure about just the quoted word)
+> "Azozon said “Azozon,” I think." (unsure about just the quoted word)
 
 **Compare with:** **`yel`** asks a question; `?` only sounds unsure. A tone mark shows the feeling.
 
@@ -134,84 +134,84 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
-| *trumpet* | `eyorel` |
-| *see* | `vawebol` |
-| *find* | `vumewol` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
+| *trumpet* | `adorol` |
+| *see* | `vayebel` |
+| *find* | `vumewel` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
-**1.** *Uzozen sees a trumpet!* (strong feeling about the whole sentence)
+**1.** *Azozon sees a trumpet!* (strong feeling about the whole sentence)
 
 ::: details Show answer
-`! zuzozen deyorel vawebol.`
+`! zazozon dadorol vayebel.`
 
-! | z-Uzozen | d-trumpet | v-see
+! | z-Azozon | d-trumpet | v-see
 :::
 
-**2.** *Olazun sees a trumpet, not something else.*
+**2.** *Alazun sees a trumpet, not something else.*
 
 ::: details Show answer
-`zolazun vawebol &deyorel.`
+`zalazun vayebel &dadorol.`
 
-z-Olazun | v-see | &d-trumpet
+z-Alazun | v-see | &d-trumpet
 :::
 
-**3.** *Olazun finds the trumpet, I think.* (unsure about the trumpet)
+**3.** *Alazun finds the trumpet, I think.* (unsure about the trumpet)
 
 ::: details Show answer
-`zolazun vumewol ?deyorel.`
+`zalazun vumewel ?dadorol.`
 
-z-Olazun | v-find | ?d-trumpet
+z-Alazun | v-find | ?d-trumpet
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `! zolazun deyorel vumewol.`
+**1.** `! zalazun dadorol vumewel.`
 
 ::: details Show answer
-! | z-Olazun | d-trumpet | v-find
+! | z-Alazun | d-trumpet | v-find
 
-*Olazun finds a trumpet!*
+*Alazun finds a trumpet!*
 :::
 
-**2.** `zuzozen vawebol ;deyorel.`
+**2.** `zazozon vayebel ;dadorol.`
 
 ::: details Show answer
-z-Uzozen | v-see | ;d-trumpet
+z-Azozon | v-see | ;d-trumpet
 
-*Uzozen sees a trumpet.* (fondly, about the trumpet)
+*Azozon sees a trumpet.* (fondly, about the trumpet)
 :::
 
-**3.** `?! zolazun vumewol deyorel.`
+**3.** `?! zalazun vumewel dadorol.`
 
 ::: details Show answer
-?! | z-Olazun | v-find | d-trumpet
+?! | z-Alazun | v-find | d-trumpet
 
-*Olazun finds a trumpet?* (surprised and doubtful about the whole claim)
+*Alazun finds a trumpet?* (surprised and doubtful about the whole claim)
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzozen sees the trumpet, I think.* (unsure about the trumpet) `zuzozen vawebol ?deyorel.` or `yem zuzozen deyorel vawebol.`
+**1.** *Azozon sees the trumpet, I think.* (unsure about the trumpet) `zazozon vayebel ?dadorol.` or `yem zazozon dadorol vayebel.`
 
 ::: details Show answer
-`zuzozen vawebol ?deyorel.`
+`zazozon vayebel ?dadorol.`
 
-z-Uzozen | v-see | ?d-trumpet
+z-Azozon | v-see | ?d-trumpet
 
 `?` only sounds unsure; **`yem`** makes the whole turn a soft question.
 :::
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Uzozen finds a trumpet!* (strong feeling about the whole sentence) <!-- lint: error -->`zuzozen deyorel vumewol !.`
+**1.** *Azozon finds a trumpet!* (strong feeling about the whole sentence) <!-- lint: error -->`zazozon dadorol vumewel !.`
 
 ::: details Show answer
-`! zuzozen deyorel vumewol.`
+`! zazozon dadorol vumewel.`
 
-! | z-Uzozen | d-trumpet | v-find
+! | z-Azozon | d-trumpet | v-find
 
 The tone mark goes before what it colors, not after the period.
 :::

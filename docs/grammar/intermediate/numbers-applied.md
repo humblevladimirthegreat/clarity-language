@@ -11,13 +11,13 @@ A number word can do more than count. This page shows how to write a code or lab
 
 English names many things with letters as well as digits: a vitamin (*B12*), a flat (*4B*), a jet (*F-16*). A **`_`** code may hold letters too. Write each letter in lowercase, in shorthand, just like the digits: `g_b12`.
 
-> `zuzozen dobebul g_b12 vagedal.`
+> `zazozon debebul g_b12 vagedal.`
 >
-> 🔊 `zuzozen dobebul grebubadol vagedal.`
+> 🔊 `zazozon debebul grebubadol vagedal.`
 >
-> z-Uzozen | [d-pill | g-_b12] | v-eat
+> z-Azozon | [d-pill | g-_b12] | v-eat
 >
-> "Uzozen takes a B12 pill."
+> "Azozon takes a B12 pill."
 
 Say each character as one syllable, after the marker **`re`**:
 
@@ -51,11 +51,11 @@ Rules for letters in a code:
 
 To say **how much of a unit** (*two meters*, *three hours*), use the unit's noun and put the amount on it as a `/ɡ/` number, the same way a count sits on a noun. Each SI or everyday unit is the [abstract](/word-endings#abstract-m) sense of a published root, so the unit noun ends in **-m**. Say that word, not a Latin abbreviation (`m`, `kg`, `s`). Once the unit phrase has been mentioned, resume it with **-r**.
 
-> `zuzozen bezerem gradol vowurel.`
+> `zazozon bezerom gradol vowurol.`
 >
-> z-Uzozen | [b-meter | g-two] | v-walk
+> z-Azozon | [b-meter | g-two] | v-walk
 >
-> "Uzozen walks two meters."
+> "Azozon walks two meters."
 
 For a price (*for five grams*), put the same measure phrase in a `bl-` word after the [exchange](/relations#exchange) word **`heham`**.
 
@@ -64,9 +64,9 @@ The amount hosts nothing, so no `bl-` word comes after it. A plain `/b/` there i
 <!-- cheat-sheet: numbers -->
 | Agebon | Use | English |
 |--------|-----|---------|
-| `bezerem g+2` | extra noun (`/b/`) | *two meters* |
-| `zazerem g+3`; `deberom g+5` | subject / object / … | *three seconds*; *five grams* |
-| `gezerem g+2` after a noun | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
+| `bezerom g+2` | extra noun (`/b/`) | *two meters* |
+| `zazerom g+3`; `duberem g+5` | subject / object / … | *three seconds*; *five grams* |
+| `gezerom g+2` after a noun | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
 
 The amount takes the usual number endings, so **-m** makes it fuzzy (`gradom` ≈ *about two*). The **unit** takes ordinary word endings.
 
@@ -77,27 +77,27 @@ Each unit is a metaphor on a published root. The **Literal on same root** column
 <!-- cheat-sheet: numbers -->
 | SI / everyday unit | Unit root (metaphor) | Example | Literal on same root | Cue |
 |--------------------|----------------------|---------|----------------------|-----|
-| meter | `ezere` *meter* | `bezerem g+2` | `ezerel` *set-square* | 📐: exact length |
-| gram | `ebero` *gram* | `beberom g+5` | `eberol` *pound* (banknote) | 💷: standard mass |
-| second | `azere` *second* | `bazerem g+3` | `azerel` *stopwatch* | ⏱️: short tick |
-| minute | `emure` *minute* | `bemurem g+5` | `emurel` *three-o'clock* | 🕒: the hand steps one minute at a time |
+| meter | `ezero` *meter* | `bezerom g+2` | `ezerol` *set-square* | 📐: exact length |
+| gram | `ubere` *gram* | `buberem g+5` | `uberel` *pound* (banknote) | 💷: standard mass |
+| second | `azero` *second* | `bazerom g+3` | `azerol` *stopwatch* | ⏱️: short tick |
+| minute | `umuro` *minute* | `bumurom g+5` | `umurol` *three-o'clock* | 🕒: the hand steps one minute at a time |
 | liter | `ubuna` *liter* | `bubunam g+1` | `ubunal` *pool* | 🎱: liquid volume |
 | ampere | `ogava` *ampere* | `bogavam g+2` | `ogaval` *cable-car* | 🚠: current along a line |
-| kelvin | `ezulo` *kelvin* | `bezulom g+300` | `ezulol` *ice* | 🧊: thermodynamic temperature |
-| mole | `omowo` *mole* | `bomowom g+1` | `omowol` *microscope* | 🔬: amount of substance |
-| candela | `owo` *candela* | `bowom g+100` | `owol` *lightbulb* | 💡: luminous intensity |
+| kelvin | `uzule` *kelvin* | `buzulem g+300` | `uzulel` *ice* | 🧊: thermodynamic temperature |
+| mole | `omowe` *mole* | `bomowem g+1` | `omowel` *microscope* | 🔬: amount of substance |
+| candela | `owe` *candela* | `bowem g+100` | `owel` *lightbulb* | 💡: luminous intensity |
 | hour (civil duration) | `agoru` *hour* | `bagorum g+3` | `agorul` *hourglass* | ⏳: civil hour block |
-| day | `uzure` *day* | `buzurem g+2` | `uzurel` *sunrise* | 🌅: sunrise to sunrise |
-| week | `agore` *week* | `bagorem g+1` | `agorel` *calendar* | 📅: one row of the calendar page |
-| month | `umale` *month* | `bumalem g+6` | `umalel` *moon* | 🌙: one lunar cycle |
-| year | `avuva` *year* | `bavuvam g+10` | `avuval` *fireworks* | 🎆: fireworks greet each new year |
+| day | `azuro` *day* | `bazurom g+2` | `azurol` *sunrise* | 🌅: sunrise to sunrise |
+| week | `agoro` *week* | `bagorom g+1` | `agorol` *calendar* | 📅: one row of the calendar page |
+| month | `amalo` *month* | `bamalom g+6` | `amalol` *moon* | 🌙: one lunar cycle |
+| year | `ovuva` *year* | `bovuvam g+10` | `ovuval` *fireworks* | 🎆: fireworks greet each new year |
 | inch | `ebuvu` *inch* | `bebuvum g+3` | `ebuvul` *pinch* | 🤏: about a finger-pinch |
-| foot | `uvobe` *foot-length* | `buvobem g+6` | `uvobel` *foot* | 🦶: about one foot long |
+| foot | `evobo` *foot-length* | `bevobom g+6` | `evobol` *foot* | 🦶: about one foot long |
 | mile | `unoba` *mile* | `bunobam g+2` | `unobal` *boot* | 🥾: a long walk |
-| pound | `ayoba` *pound-mass* | `bayobam g+5` | `ayobal` *shopping-bag* | 🛍️: sold by the pound |
-| heat grade (not kelvin) | `uvere` *temperature* | `buverem g+37` | `uverel` *thermometer* | 🌡️: how hot or cold |
+| pound | `awoba` *pound-mass* | `bawobam g+5` | `awobal` *shopping-bag* | 🛍️: sold by the pound |
+| heat grade (not kelvin) | `overo` *temperature* | `boverom g+37` | `overol` *thermometer* | 🌡️: how hot or cold |
 
-Words for a quantity itself (*heavy*, *flow*, *time* as a continuum, …) are ordinary roots (`arolom` *heavy*, `gadurem` *duration*, …), not units.
+Words for a quantity itself (*heavy*, *flow*, *time* as a continuum, …) are ordinary roots (`arolem` *heavy*, `godurom` *duration*, …), not units.
 
 Spelled out, `bagorum g+3` is `bagorum gragel` *three hours*.
 
@@ -118,7 +118,7 @@ Between two numbers, *3, including 5* has nothing to include into, so **`al`** r
 
 To count a range of things, put the endpoints on the counted noun, the same way one count sits on it. The noun names the line:
 
-> `zudozol gragel al grazal vowurel.`
+> `zodozel gragel al grazal vowurol.`
 >
 > [z-dog | g-three] | through | g-five | v-walk
 >
@@ -147,15 +147,15 @@ A word after **B** describes **B** alone, and a word on the counted noun describ
 
 **`ual`** and **`uol`** are the [range hooks](ending-grids.md#ranges), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zragel al zrazam` = *3 to about 5*).
 
-**Compare with:** `zragel zrazal zaol` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zuzozen zolazun zol gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](of-relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
+**Compare with:** `zragel zrazal zaol` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zazozon zalazun zol gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](of-relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
 
 ### Percent and percentage points {#percent-and-percentage-points}
 
-To give a percent of a whole (*25% of the cats*), end a **count** number (`ra` / `ru`) with **`yo`**. Put it on the noun for the whole, in the same `/ɡ/` slot as a count (`zagozolx gragel` = *three cats*).
+To give a percent of a whole (*25% of the cats*), end a **count** number (`ra` / `ru`) with **`yo`**. Put it on the noun for the whole, in the same `/ɡ/` slot as a count (`zogozelx gragel` = *three cats*).
 
-> `zagozolx g+25%.`
+> `zogozelx g+25%.`
 >
-> 🔊 `zagozolx gradozayol.`
+> 🔊 `zogozelx gradozayol.`
 >
 > z-cat-x | g-25yo
 >
@@ -177,13 +177,13 @@ In [preferred writing](number-markers.md#writing-preferred-shorthand): **`%`** �
 
 To name one part of a whole (*half of the cats*, *a third of the tea*), put a minus number **`g-N`** right after the noun. Here the **`ru`** marker divides, as it does in `/h/` **`h-N`**: with N of 2 or more, the word names one part in N.
 
-> `zagozolx grudol vuhohol.`
+> `zogozelx grudol vehohel.`
 >
 > [z-cat-x | g-half-of] | v-sit
 >
 > "Half of the cats sit."
 
-> `zududal grugel vuhohol.`
+> `zedudal grugel vehohel.`
 >
 > [z-tea | g-third-of] | v-sit
 >
@@ -191,21 +191,21 @@ To name one part of a whole (*half of the cats*, *a third of the tea*), put a mi
 
 To say how many parts, put the count first and the fraction after it: **`g+N`** then **`g-M`** is *N parts of M*. English *two thirds* is the same two words in the same order.
 
-> `zagozolx gradol grugel vuhohol.`
+> `zogozelx gradol grugel vehohel.`
 >
 > [z-cat-x | g-two | g-third-of] | v-sit
 >
 > "Two thirds of the cats sit."
 
-**`g-N`** alone is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bezerem grudol` *minus 2 meters*). The count makes the fraction plain in any slot, a unit included: a count then a minus is never a negative amount, since a unit takes one amount.
+**`g-N`** alone is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bezerom grudol` *minus 2 meters*). The count makes the fraction plain in any slot, a unit included: a count then a minus is never a negative amount, since a unit takes one amount.
 
-> `zuzozen vowurel bagorum grabal grugel.`
+> `zazozon vowurol bagorum grabal grugel.`
 >
-> z-Uzozen | v-walk | [b-hour | g-one | g-third-of]
+> z-Azozon | v-walk | [b-hour | g-one | g-third-of]
 >
-> "Uzozen walks for a third of an hour."
+> "Azozon walks for a third of an hour."
 
-*Half* of a unit also has a decimal route (`bezerem g+0.5`).
+*Half* of a unit also has a decimal route (`bezerom g+0.5`).
 
 ### Practice {#intermediate-practice}
 
@@ -218,36 +218,36 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agebon | Cue |
 |---------|--------|-----|
 | *bottle* | `awodal` | 🍼 |
-| *meter* | `ezerem` | 📐 from *set square* |
+| *meter* | `ezerom` | 📐 from *set square* |
 | *hour* | `agorum` | ⏳ from *hourglass* |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *pill* | `obebul` |
-| *walk* | `vowurel` |
-| *see* | `vawebol` |
+| *Azozon* | `azozon` |
+| *pill* | `ebebul` |
+| *walk* | `vowurol` |
+| *see* | `vayebel` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *25% of the pills.*
 
 ::: details Show answer
-`zobebulx g+25%.`
+`zebebulx g+25%.`
 
-🔊 `zobebulx gradozayol.`
+🔊 `zebebulx gradozayol.`
 
 z-pill-x | g-25yo
 :::
 
-**2.** *Uzozen walks two meters.*
+**2.** *Azozon walks two meters.*
 
 ::: details Show answer
-`zuzozen bezerem gradol vowurel.`
+`zazozon bezerom gradol vowurol.`
 
-z-Uzozen | [b-meter | g-two] | v-walk
+z-Azozon | [b-meter | g-two] | v-walk
 :::
 
 **3.** *Three to five hours.*
@@ -261,19 +261,19 @@ z-Uzozen | [b-meter | g-two] | v-walk
 **4.** *Two thirds of the pills.*
 
 ::: details Show answer
-`zobebulx gradol grugel.`
+`zebebulx gradol grugel.`
 
 [z-pill-x | g-two | g-third-of]
 :::
 
-**5.** *Uzozen sees a B12 pill.*
+**5.** *Azozon sees a B12 pill.*
 
 ::: details Show answer
-`zuzozen dobebul g_b12 vawebol.`
+`zazozon debebul g_b12 vayebel.`
 
-🔊 `zuzozen dobebul grebubadol vawebol.`
+🔊 `zazozon debebul grebubadol vayebel.`
 
-z-Uzozen | [d-pill | g-_b12] | v-see
+z-Azozon | [d-pill | g-_b12] | v-see
 :::
 
 
@@ -313,10 +313,10 @@ z-ten | outside | z-20
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *a third of the pills* `zobebulx grugel.` or `zobebulx gragel.`
+**1.** *a third of the pills* `zebebulx grugel.` or `zebebulx gragel.`
 
 ::: details Show answer
-`zobebulx grugel.`
+`zebebulx grugel.`
 
 z-pill-x | g-third-of
 

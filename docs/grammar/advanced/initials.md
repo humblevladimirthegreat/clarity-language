@@ -8,9 +8,9 @@ band: advanced
 
 English shortens a long title to its initials (*FBI*). Agebon does too: take each root of a long [hyphenated name](/proper-names#multipart-names), in order, and write its **first consonant** as a [letter code](/numbers-applied#letter-codes) with **`@`** (**-n**, an official designation). A root always starts with a vowel, so its first letter would leave only four choices; its first consonant is the letter you hear.
 
-> `z@_nl vezuyel.`
+> `z@_nl vezuyol.`
 >
-> 🔊 `zrenulan vezuyel.`
+> 🔊 `zrenulan vezuyol.`
 >
 > z-_nl.named | v-tell
 >
@@ -18,11 +18,11 @@ English shortens a long title to its initials (*FBI*). Agebon does too: take eac
 
 | Agebon | Use | English |
 |--------|-----|---------|
-| `zanaxolazun` | long title (`ana` × `olazu`) | *Book-Courage* |
-| `z@_nl` (🔊 `zrenulan`) | initials: `n` from `ana`, `l` from `olazu` | *the NL*, the same office |
+| `zanaxalazun` | long title (`ana` × `alazu`) | *Book-Courage* |
+| `z@_nl` (🔊 `zrenulan`) | initials: `n` from `ana`, `l` from `alazu` | *the NL*, the same office |
 | `z=_nl` (🔊 `zrenular`) | resume | *that office again* |
 
-- **Any title works.** Each initial is its own syllable, so two roots with the same first consonant give a doubled letter (`zanaxanumun` → `z@_nn`, 🔊 `zrenunun`), and a title of any length gives one letter per root.
+- **Any title works.** Each initial is its own syllable, so two roots with the same first consonant give a doubled letter (`zanaxanomun` → `z@_nn`, 🔊 `zrenunun`), and a title of any length gives one letter per root.
 - **Initials can be shared,** as in English. Context sorts out which office is meant. When you need a name nobody else has, give the office a [proper name](/proper-names#proper-name--n) of its own instead: one published root + **-n**.
 - **Say it mid-sentence.** The whole rule is *say each root's first consonant by its letter name*, so you can make the initials while you talk.
 
@@ -53,7 +53,7 @@ English *5 or more* / *less than 5* is a **ray**: a band with only one end. Writ
 | **`zruwal ul zrazal`** | −∞ up to 5, 5 left out | *less than 5* (`< 5`) |
 | **`zrazal am zrawal`** | soft | *about 5 or more* |
 
-For counts, −∞ reads as *no lower limit*: `zagozolx gruwal al grazal` is *up to five cats*.
+For counts, −∞ reads as *no lower limit*: `zogozelx gruwal al grazal` is *up to five cats*.
 
 Ranks take the first and last place as ends. **`growal`** is the last place and **`growul`** the first, so `zrodol al zrowal` is *2nd through last*.
 
@@ -81,11 +81,11 @@ The range hook takes the other hook endings too.
 
 With **-r**, the hook stands in for one value you are not naming. Under a [question](/questions#fill-ask-r) it asks for that value, as `zar` asks *who?*:
 
-> `zuzozen dagozolx gragel ar grazal vawebol.`
+> `zazozon dogozelx gragel ar grazal vayebel.`
 >
-> z-Uzozen | [d-cat-x | g-three] | some.through | g-five | v-see
+> z-Azozon | [d-cat-x | g-three] | some.through | g-five | v-see
 >
-> "Uzozen sees some number of cats from 3 to 5."
+> "Azozon sees some number of cats from 3 to 5."
 
 The [range hooks](/ending-grids#ranges) take **-r** the same way: `zragel uar zrazal` is *some value strictly between 3 and 5*, and `zragel uor zrazal` *some value outside 3–5*.
 
@@ -131,44 +131,44 @@ Generations form a **tree**, like an outline. A cohort is only the members **und
 
 The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest sibling, **`g#-1e0`** the youngest. To say whose family it is, put the anchor person in a `bl-` word right after the number. (cue: the number says how far up or down the tree; `/b/` says from whom)
 
-> `zolazun growamol bluzozen vowurel.`
+> `zalazun growamol blazozon vowurol.`
 >
-> [z-Olazun | [g-#-e0 | bl-Uzozen]] | v-walk
+> [z-Alazun | [g-#-e0 | bl-Azozon]] | v-walk
 >
-> "Olazun, Uzozen's sibling, walks."
+> "Alazun, Azozon's sibling, walks."
 
 With no `bl-` word after a joined subject, each member is a sibling of the others.
 
-> `zuzozen zolazun zal growamol.`
+> `zazozon zalazun zal growamol.`
 >
-> [z-Uzozen | z-Olazun | z-and | g-#-e0]
+> [z-Azozon | z-Alazun | z-and | g-#-e0]
 >
-> "Uzozen and Olazun are siblings."
+> "Azozon and Alazun are siblings."
 
-> `zolazun g#1e0 bluzozen vowurel.`
+> `zalazun g#1e0 blazozon vowurol.`
 >
-> 🔊 `zolazun growamoyabal bluzozen vowurel.`
+> 🔊 `zalazun growamoyabal blazozon vowurol.`
 >
-> [z-Olazun | [g-#-1e0 | bl-Uzozen]] | v-walk
+> [z-Alazun | [g-#-1e0 | bl-Azozon]] | v-walk
 >
-> "Olazun, Uzozen's eldest sibling, walks."
+> "Alazun, Azozon's eldest sibling, walks."
 
-> `zahoyel g#2e1 bluzozen vowurel.`
+> `zohoyol g#2e1 blazozon vowurol.`
 >
-> 🔊 `zahoyel growabayadol bluzozen vowurel.`
+> 🔊 `zohoyol growabayadol blazozon vowurol.`
 >
-> [z-child | [g-#-2e1 | bl-Uzozen]] | v-walk
+> [z-child | [g-#-2e1 | bl-Azozon]] | v-walk
 >
-> "Uzozen's second child walks."
+> "Azozon's second child walks."
 
 For a side branch, nest a second anchor: first step to the relative, then from there. *Aunt or uncle* is a sibling of a parent.
 
-> `zolazun growamol bleyol g#1e-1 bluzozen vowurel.`
+> `zalazun growamol bleyel g#1e-1 blazozon vowurol.`
 >
-> 🔊 `zolazun growamol bleyol growubayabal bluzozen vowurel.`
+> 🔊 `zalazun growamol bleyel growubayabal blazozon vowurol.`
 >
-> [z-Olazun | [g-#-e0 | [bl-person | [g-#-1e-1 | bl-Uzozen]]]] | v-walk
+> [z-Alazun | [g-#-e0 | [bl-person | [g-#-1e-1 | bl-Azozon]]]] | v-walk
 >
-> "Olazun, Uzozen's aunt or uncle, walks." (a sibling of the first of Uzozen's parents)
+> "Alazun, Azozon's aunt or uncle, walks." (a sibling of the first of Azozon's parents)
 
 **Compare with:** friends, bosses, and other non-kin relations are not generations, so these forms do not name them.

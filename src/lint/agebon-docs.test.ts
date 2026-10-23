@@ -66,7 +66,7 @@ describe("isAgebonLintCandidate", () => {
 describe("peelLintChunk", () => {
   it("peels sentence punct and wrapping parens, not writing-span brackets", () => {
     assert.deepEqual(peelLintChunk("zazawan."), { prefix: "", core: "zazawan", suffix: "." });
-    assert.deepEqual(peelLintChunk("(hugom)"), { prefix: "(", core: "hugom", suffix: ")" });
+    assert.deepEqual(peelLintChunk("(hugem)"), { prefix: "(", core: "hugem", suffix: ")" });
     assert.deepEqual(peelLintChunk("d[hi]"), { prefix: "", core: "d[hi]", suffix: "" });
     assert.deepEqual(peelLintChunk("d<sushi>"), { prefix: "", core: "d<sushi>", suffix: "" });
   });
@@ -183,8 +183,8 @@ describe("lintAgebonSpans", () => {
   });
 
   it("parses multi-word phrases unless marked a fragment", () => {
-    assert.equal(lintAgebonSpans("`vowurel glorol`", tables)[0]?.kind, "phrase");
-    assert.deepEqual(lintAgebonSpans("<!-- lint: fragment -->`vowurel glorol`", tables), []);
+    assert.equal(lintAgebonSpans("`vowurol glorel`", tables)[0]?.kind, "phrase");
+    assert.deepEqual(lintAgebonSpans("<!-- lint: fragment -->`vowurol glorel`", tables), []);
     assert.equal(lintAgebonSpans("<!-- lint: skip -->`wo zo yo`", tables)[0]?.kind, "bad-marker");
   });
 
@@ -222,7 +222,7 @@ describe("lintAgebonSpans", () => {
   it("requires an info string on fenced blocks and checks agebon fences", () => {
     assert.equal(lintAgebonSpans("```\nA HOOK B\n```\n", tables)[0]?.kind, "unmarked-fence");
     assert.deepEqual(lintAgebonSpans("```text\nA HOOK B\n```\n", tables), []);
-    assert.equal(lintAgebonSpans("```text\nzazawan vowurel\n```\n", tables)[0]?.kind, "agebon-in-text-fence");
+    assert.equal(lintAgebonSpans("```text\nzazawan vowurol\n```\n", tables)[0]?.kind, "agebon-in-text-fence");
     assert.equal(lintAgebonSpans("```agebon\nzul zazawan vazawal.\n```\n", tables)[0]?.kind, "sentence");
   });
 
@@ -233,14 +233,14 @@ describe("lintAgebonSpans", () => {
 
   it("traces a written <…> fence in <code> as a loan", () => {
     const ids: string[] = [];
-    lintAgebonSpans("<code>zazawan d&lt;kimchi&gt; veyel.</code>", tables, emptySpanStats(), (id) => ids.push(id));
+    lintAgebonSpans("<code>zazawan d&lt;kimchi&gt; veyol.</code>", tables, emptySpanStats(), (id) => ids.push(id));
     assert.ok(ids.includes("word.family.foreign"));
   });
 
   it("lets a Fix it wrong form fail to parse, and uses none of its constructions", async () => {
     const { houseTables, PRACTICE } = await import("./practice-fixtures.js");
-    const md = PRACTICE.replace("<!-- lint: error -->`zazawan dolazun vawebol.`", "<!-- lint: error -->`zolazun dazawan.`");
-    const fix = md.indexOf("`zolazun dazawan.`") + 1;
+    const md = PRACTICE.replace("<!-- lint: error -->`zazawan dalazun vayebel.`", "<!-- lint: error -->`zalazun dazawan.`");
+    const fix = md.indexOf("`zalazun dazawan.`") + 1;
     const stats = emptySpanStats();
     const used: number[] = [];
     assert.deepEqual(lintAgebonSpans(md, houseTables(), stats, (_id, index) => used.push(index)), []);
@@ -251,7 +251,7 @@ describe("lintAgebonSpans", () => {
   it("rejects the error marker outside a Fix it prompt", async () => {
     const { houseTables, PRACTICE } = await import("./practice-fixtures.js");
     assert.equal(lintAgebonSpans("<!-- lint: error -->`zazawan`", tables)[0]?.kind, "bad-marker");
-    const md = PRACTICE.replace("**1.** `zolazun dahelan vawebol.`", "**1.** <!-- lint: error -->`zolazun dahelan vawebol.`");
+    const md = PRACTICE.replace("**1.** `zalazun dahelan vayebel.`", "**1.** <!-- lint: error -->`zalazun dahelan vayebel.`");
     assert.equal(lintAgebonSpans(md, houseTables())[0]?.kind, "bad-marker");
     assert.equal(lintAgebonSpans(md.replace("### Practice", "### Translation practice"), houseTables())[0]?.kind, "bad-marker");
   });
@@ -274,7 +274,7 @@ describe("lintBareRoots", () => {
     // Spellings from the live lexicon, so a retie can't publish the unknown one.
     const known = CLOSED.swan;
     const unknown = ["ezuzo", "ububu", "ededu", "ogogo"].find((root) => !tables.published.has(root))!;
-    const found = lintBareRoots(`Use \`${known}\`, \`tha\`, \`thogo\`, and \`${unknown}\` or \`th${unknown}\`.`, tables).map((i) => i.text);
+    const found = lintBareRoots(`Use \`${known}\`, \`tha\`, \`thoge\`, and \`${unknown}\` or \`th${unknown}\`.`, tables).map((i) => i.text);
     assert.deepEqual(found, [unknown, `th${unknown}`]);
   });
 });
@@ -284,16 +284,16 @@ describe("unhostedJoins", () => {
   const found = (text: string) => unhostedJoins(parseWithTables(text, tables)).map(({ host, join }) => `${host.raw} ${join.raw}`);
 
   it("flags a plain /b/ join with no items right after a host word", () => {
-    assert.deepEqual(found("yel hewom bar zuzozen vowurel."), ["hewom bar"]);
-    assert.deepEqual(found("zuzozen vowurel huan bur."), ["huan bur"]);
-    assert.deepEqual(found("yel hedurem bar zuzozen varal."), ["hedurem bar"]);
+    assert.deepEqual(found("yel hewem bar zazozon vowurol."), ["hewem bar"]);
+    assert.deepEqual(found("zazozon vowurol huan bur."), ["huan bur"]);
+    assert.deepEqual(found("yel hadurom bar zazozon varal."), ["hadurom bar"]);
   });
 
   it("leaves hosted blanks, hooks, plain nouns, and joins that close items", () => {
-    assert.deepEqual(found("yel hewom blar zuzozen vowurel."), []);
-    assert.deepEqual(found("yel ol bar zuzozen vowurel."), []);
-    assert.deepEqual(found("zuzozen hedurem bolazun varal."), []);
-    assert.deepEqual(found("zuzozen vezuyel bolazun thagem bol hral."), []);
-    assert.deepEqual(found("yel bar zuzozen hedurem varal."), []);
+    assert.deepEqual(found("yel hewem blar zazozon vowurol."), []);
+    assert.deepEqual(found("yel ol bar zazozon vowurol."), []);
+    assert.deepEqual(found("zazozon hadurom balazun varal."), []);
+    assert.deepEqual(found("zazozon vezuyol balazun thagom bol hral."), []);
+    assert.deepEqual(found("yel bar zazozon hadurom varal."), []);
   });
 });

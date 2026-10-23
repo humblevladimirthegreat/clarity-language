@@ -12,30 +12,30 @@ An English tense bundles up to three questions: **when** the event sits, **how y
 
 | English | You mean | Agebon |
 |---------|----------|--------|
-| *walks* (now) | you are watching it | LIVE **`thugom`** |
+| *walks* (now) | you are watching it | LIVE **`thugem`** |
 | *walks* (now) | no channel named | bare verb ([this stretch](/ability#predict-evidentiality)), unless an earlier channel is still [carried](/evidentiality#carry-forward) |
 | *walked* | you remember it | MEMORY **`thevum`** |
-| *walked* | going by clues or cases | CLUES **`theyem`** / PATTERN **`thubem`** plus a `-` offset |
+| *walked* | going by clues or cases | CLUES **`theyom`** / PATTERN **`thubom`** plus a `-` offset |
 | *walked* | they told you, or you read it | REPORTED **`thebam`** plus a `-` [offset](/universality#dated-channel) |
 | *walked* (telling what happened) | one ground for the whole story | the channel and offset on the first sentence; bare verbs after it keep them ([carry forward](/evidentiality#carry-forward)) |
 | *walked* (a made-up story) | it is fiction | NOTIONAL **`theyum`** on the first sentence; bare verbs after it stay in the story ([carry forward](/evidentiality#carry-forward)) |
 | *walked yesterday* / *three hours ago* | a measured time back | channel + signed amount ([dated channel](/universality#dated-channel)) |
 | *has walked* | the outcome still counts | RESIDUE **`haram`** |
-| *has already walked* | the change has come | **`havom`** |
-| *has walked before* / *has never walked* | at least once / not once | **`havom`** + **`har`** / **`hal`** ([ever / never](/already-still-yet#ever-never)) |
+| *has already walked* | the change has come | **`havem`** |
+| *has walked before* / *has never walked* | at least once / not once | **`havem`** + **`har`** / **`hal`** ([ever / never](/already-still-yet#ever-never)) |
 | *had walked* | as of a past moment | [*as-of*](/as-of#as-of) plus the same stance |
-| *is walking* | it is in view | LIVE **`thugom`** |
-| *is walking* | they are in the middle of it | the event root on `/ɡ/`: `zuzozen gowurel` ([in progress](/predication#in-progress)) |
+| *is walking* | it is in view | LIVE **`thugem`** |
+| *is walking* | they are in the middle of it | the event root on `/ɡ/`: `zazozon gowurol` ([in progress](/predication#in-progress)) |
 | *is still walking* | the state goes on | **`hawum`** |
 | *has stopped walking* | the state ended | **`huvum`** |
-| *will walk* | your plan | PLAN **`thagem`**; someone else's plan takes a [holder](/holder#holder) |
+| *will walk* | your plan | PLAN **`thagom`**; someone else's plan takes a [holder](/holder#holder) |
 | *will walk* | a forecast | channel + **`blral`** ([forecast](/evidentiality#forecast)) |
 | *is going to walk* | your plan, or clues say so | PLAN, or CLUES + **`blral`** |
 | *is about to walk* / *will walk soon* | a hair / a short while after now | **`blrawul`** / **`blrawum`** on a channel |
 | *just walked* | a hair before now | **`blruwul`** on a channel |
 | *was going to walk* | intention as of a past moment | PLAN + *as-of* |
 | *used to walk* | a pattern that is not today's | FORMER **`helam`** + **`hual`** |
-| *would walk* (if …) | a long shot | **`thohom blarl`** + **`thrul`** |
+| *would walk* (if …) | a long shot | **`thohem blarl`** + **`thrul`** |
 | *would have walked* (if …) | known false | bookmark *as-of* + **`theyur`** |
 
 Every offset counts from now, or from the *as-of* now when one is set. No row needs a tense letter on the verb.
@@ -44,27 +44,27 @@ Every offset counts from now, or from the *as-of* now when one is set. No row ne
 
 **Needs:** [Live vs memory](/live-and-memory#live-vs-memory) · [Dated channel](/universality#dated-channel)
 
-English *Uzozen walked* hides whether you saw it, read it, or were told. Choose the channel. A remembered sighting is MEMORY. Add a `-` amount to say how long ago.
+English *Azozon walked* hides whether you saw it, read it, or were told. Choose the channel. A remembered sighting is MEMORY. Add a `-` amount to say how long ago.
 
-> `zuzozen thevum vowurel.`
+> `zazozon thevum vowurol.`
 >
-> z-Uzozen | th-MEMORY | v-walk
+> z-Azozon | th-MEMORY | v-walk
 >
-> "Uzozen walked, I remember it."
+> "Azozon walked, I remember it."
 
-> `zuzozen thevum bluzurem grubal vowurel.`
+> `zazozon thevum blazurom grubal vowurol.`
 >
-> z-Uzozen | [th-MEMORY | [bl-day | g-minus-one]] | v-walk
+> z-Azozon | [th-MEMORY | [bl-day | g-minus-one]] | v-walk
 >
-> "I saw Uzozen walk yesterday."
+> "I saw Azozon walk yesterday."
 
 Reports and reasoning need their own `-` amount, because those channels do not fix the time.
 
-> `zuzozen thebam bluzurem grubal vowurel.`
+> `zazozon thebam blazurom grubal vowurol.`
 >
-> z-Uzozen | [th-REPORTED | [bl-day | g-minus-one]] | v-walk
+> z-Azozon | [th-REPORTED | [bl-day | g-minus-one]] | v-walk
 >
-> "I hear Uzozen walked yesterday."
+> "I hear Azozon walked yesterday."
 
 **Compare with:** a clock or date (`h_#22,7`) dates the event with no channel. **`thevum`** with a `+` amount is not a sentence.
 
@@ -74,25 +74,25 @@ Reports and reasoning need their own `-` amount, because those channels do not f
 
 English *has left* mixes three ideas. Choose the one you mean.
 
-> `zolazun haram velurul.`
+> `zalazun haram vudurul.`
 >
-> z-Olazun | h-RESIDUE | v-departure
+> z-Alazun | h-RESIDUE | v-departure
 >
-> "Olazun has left and is still gone."
+> "Alazun has left and is still gone."
 
-> `zolazun havom velurul.`
+> `zalazun havem vudurul.`
 >
-> z-Olazun | h-already | v-departure
+> z-Alazun | h-already | v-departure
 >
-> "Olazun has already left."
+> "Alazun has already left."
 
-> `zuzozen havom vazuvel har.`
+> `zazozon havem vazuvol har.`
 >
-> z-Uzozen | h-already | v-swim | h-sometimes
+> z-Azozon | h-already | v-swim | h-sometimes
 >
-> "Uzozen has swum at some point."
+> "Azozon has swum at some point."
 
-**Compare with:** RESIDUE does not say the leaving was earlier. **`havom`** compares now with the change and dates nothing.
+**Compare with:** RESIDUE does not say the leaving was earlier. **`havem`** compares now with the change and dates nothing.
 
 ### Past perfect: as of a past moment {#past-perfect}
 
@@ -100,15 +100,15 @@ English *has left* mixes three ideas. Choose the one you mean.
 
 English *had left* means the leaving counted **as of** an earlier moment. Write the same stance and add *as-of* with that moment in `/b/`.
 
-> `zolazun haram henam bl_#22,7 velurul.`
+> `zalazun haram henam bl_#22,7 vudurul.`
 >
-> z-Olazun | h-RESIDUE | [h-as-of.ledger | bl-_22,7] | v-departure
+> z-Alazun | h-RESIDUE | [h-as-of.ledger | bl-_22,7] | v-departure
 >
-> "As of 22 July, Olazun had left and was still gone."
+> "As of 22 July, Alazun had left and was still gone."
 
 *Was going to* is PLAN with the stance *as-of* **`thenam`** ([stance as-of](/as-of#stance-as-of)), since a plan is a stance:
 
-> `zuwon thagem vowurel thenam bl_#22,7.`
+> `zuwen thagom vowurol thenam bl_#22,7.`
 >
 > z-speaker | th-plan-itinerary | v-walk | [th-as-of.ledger | bl-_22,7]
 >
@@ -118,27 +118,27 @@ English *had left* means the leaving counted **as of** an earlier moment. Write 
 
 **Needs:** [In progress](/predication#in-progress) · [Live vs memory](/live-and-memory#live-vs-memory) · [Already, still, not yet](/already-still-yet#phasal)
 
-English *is walking* usually means one of three things. Put the event root on `/ɡ/` when you say they are in the middle of it. Say **`thugom`** when the walking is in view now. Say **`hawum`** when you stress that it goes on.
+English *is walking* usually means one of three things. Put the event root on `/ɡ/` when you say they are in the middle of it. Say **`thugem`** when the walking is in view now. Say **`hawum`** when you stress that it goes on.
 
-> `zuzozen gowurel.`
+> `zazozon gowurol.`
 >
-> z-Uzozen | g-walk
+> z-Azozon | g-walk
 >
-> "Uzozen is walking."
+> "Azozon is walking."
 
-> `zuzozen thugom vowurel.`
+> `zazozon thugem vowurol.`
 >
-> z-Uzozen | th-LIVE | v-walk
+> z-Azozon | th-LIVE | v-walk
 >
-> "Uzozen is walking, I can see it."
+> "Azozon is walking, I can see it."
 
-> `zuzozen hawum vowurel.`
+> `zazozon hawum vowurol.`
 >
-> z-Uzozen | h-still | v-walk
+> z-Azozon | h-still | v-walk
 >
-> "Uzozen is still walking."
+> "Azozon is still walking."
 
-For *was walking when …*, keep the ordinary verb and hang the other event on [**`herem blarl`**](/dependents#dependent-clauses) (*while*).
+For *was walking when …*, keep the ordinary verb and hang the other event on [**`herom blarl`**](/dependents#dependent-clauses) (*while*).
 
 ### Future: plan, forecast, promise {#future}
 
@@ -148,33 +148,33 @@ English *will* is three different claims.
 
 | English *will* | Agebon |
 |----------------|--------|
-| I mean to | PLAN **`thagem`** ([endings](/intention#plan-map-resolution) show how much is drawn) |
+| I mean to | PLAN **`thagom`** ([endings](/intention#plan-map-resolution) show how much is drawn) |
 | the world will | channel + **`blral`** |
 | I promise | a vow **`hwuzal`** ([promise](/feelings-permission#say-words)) |
 
-> `zuwon thagem vowurel.`
+> `zuwen thagom vowurol.`
 >
 > z-speaker | th-plan-itinerary | v-walk
 >
 > "I will walk." (that is the plan)
 
-> `zuzozen thebamuzozen thagem vowurel.`
+> `zazozon thebamazozon thagom vowurol.`
 >
-> z-Uzozen | th-REPORTED-Uzozen | th-plan-itinerary | v-walk
+> z-Azozon | th-REPORTED-Azozon | th-plan-itinerary | v-walk
 >
-> "Uzozen will walk, I hear." (that is Uzozen's plan)
+> "Azozon will walk, I hear." (that is Azozon's plan)
 
-> `thubem blral verulal.`
+> `thubom blral verulal.`
 >
 > [th-PATTERN | bl-later] | v-rain
 >
 > "It will rain, going by the pattern."
 
-> `zuzozen thebam bluzurem grabal vowurel.`
+> `zazozon thebam blazurom grabal vowurol.`
 >
-> z-Uzozen | [th-REPORTED | [bl-day | g-one]] | v-walk
+> z-Azozon | [th-REPORTED | [bl-day | g-one]] | v-walk
 >
-> "I hear Uzozen walks tomorrow."
+> "I hear Azozon walks tomorrow."
 
 **Compare with:** a forecast always names how you know, so *it will rain* has no bare form. For *I hope it will*, see [hoping](say-reasons.md#hope-forecast).
 
@@ -186,35 +186,35 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 
 | English | Agebon |
 |---------|--------|
-| *today* / *now* | a channel with an offset of zero: `theyem bluzurem gramol` (zero days); with `bagorum` it is *right now* |
-| *yesterday* / *tomorrow* | a channel with one day back or ahead: `buzurem grubal` / `buzurem grabal` |
-| *tonight* | today plus *at night*: `theyem bluzurem gramol` and **`herem blanurul`** |
-| *last night* / *tomorrow night* | a channel with one day back or ahead, plus *at night*: `thevum bluzurem grubal herem blanurul` |
+| *today* / *now* | a channel with an offset of zero: `theyom blazurom gramol` (zero days); with `bagorum` it is *right now* |
+| *yesterday* / *tomorrow* | a channel with one day back or ahead: `bazurom grubal` / `bazurom grabal` |
+| *tonight* | today plus *at night*: `theyom blazurom gramol` and **`herom blanurul`** |
+| *last night* / *tomorrow night* | a channel with one day back or ahead, plus *at night*: `thevum blazurom grubal herom blanurul` |
 | *recently* / *recent* | a channel + **`blruwum`** (*a short while before now*; **`blruwul`** is *just now*) |
-| *forever* / *permanent* | a measure phrase with an unbounded amount: `bavuvam grawal` (for `permanent`, add **`hawum`**) |
+| *forever* / *permanent* | a measure phrase with an unbounded amount: `bovuvam grawal` (for `permanent`, add **`hawum`**) |
 | *eventually* / *ultimately* | **`xrowal`** opens the last point (*Finally, …*) |
-| *whenever* | **`herem blual`** + the occasion as a quality: `herem blual gerulal` |
-| *currently* / *nowadays* / *at present* / *modern* / *contemporary* | LIVE **`thugom`** when it is in view; otherwise the bare verb, which reports this stretch |
+| *whenever* | **`herom blual`** + the occasion as a quality: `herom blual gerulal` |
+| *currently* / *nowadays* / *at present* / *modern* / *contemporary* | LIVE **`thugem`** when it is in view; otherwise the bare verb, which reports this stretch |
 | *previously* / *formerly* / *originally* / *once* (*once walked*) | FORMER **`helam`** |
 | *past* / *in the past* | FORMER **`helam`**, or a channel with a `-` offset |
 | *future* / *in the future* | a channel + **`blral`** |
 | *once* (*one time*) | `h+1` before the verb |
-| ever (*Have you walked at all?*) | **`havom`** + **`her`** (*anytime*) under **`yel`**: `yel her zawan havom vowurel` |
-| *during* (*during the storm*) | **`herem`** + `/b/`: `herem blenulul` |
+| ever (*Have you walked at all?*) | **`havem`** + **`her`** (*anytime*) under **`yel`**: `yel her zawan havem vowurol` |
+| *during* (*during the storm*) | **`herom`** + `/b/`: `herom blanulul` |
 | *immediately* / *immediate* / *right away* / *at once* (*about to*) | a channel + **`blrawul`** (*a hair after now*) |
-| *initially* / *at first* / *firstly* | **`hugulem`** (*first*, as a manner adverb) |
+| *initially* / *at first* / *firstly* | **`hugulom`** (*first*, as a manner adverb) |
 | *continue* / *keep doing* | **`hawum`** (*still*) |
-| *subsequently* / *after* | **`halam`** + `/b/`: `halam blolazun` |
-| *prior to* | **`habam`** + `/b/`: `habam blolazun` |
-| *in March* / *in 1962* / *on the 12th* | **`herem`** + a month or year in `/b/` (`herem blumalem grogel`, `herem blavuvam g_1962`); a day alone is `h_#12` ([time](/digit-strings#time)) |
+| *subsequently* / *after* | **`halam`** + `/b/`: `halam blalazun` |
+| *prior to* | **`habam`** + `/b/`: `habam blalazun` |
+| *in March* / *in 1962* / *on the 12th* | **`herom`** + a month or year in `/b/` (`herom blamalom grogel`, `herom blovuvam g_1962`); a day alone is `h_#12` ([time](/digit-strings#time)) |
 
-> `zuzozen theyem bluzurem gramol vowurel.`
+> `zazozon theyom blazurom gramol vowurol.`
 >
-> z-Uzozen | [th-CLUES | [bl-day | g-zero]] | v-walk
+> z-Azozon | [th-CLUES | [bl-day | g-zero]] | v-walk
 >
-> "It looks like Uzozen is walking today."
+> "It looks like Azozon is walking today."
 
-> `yel her zawan havom vowurel.`
+> `yel her zawan havem vowurol.`
 >
 > y-question | h-anytime | z-listener | h-already | v-walk
 >
@@ -226,13 +226,13 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 
 English *used to walk* is a pattern that is no longer today's report: **`hual`** with FORMER after the verb.
 
-> `zuzozen hual vezuyel helam.`
+> `zazozon hual vezuyol helam.`
 >
-> z-Uzozen | h-always | v-tell | h-FORMER
+> z-Azozon | h-always | v-tell | h-FORMER
 >
-> "Uzozen always used to talk." (no claim about now)
+> "Azozon always used to talk." (no claim about now)
 
-For *would* in a condition (*if Olazun swam, Uzozen would walk*), see [remote and unreal conditions](say-reasons.md#remote-unreal).
+For *would* in a condition (*if Alazun swam, Azozon would walk*), see [remote and unreal conditions](say-reasons.md#remote-unreal).
 
 ## Modals {#modals}
 
@@ -255,25 +255,25 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 | *Can I …?* | asking permission | `yem` + **`hwuvam`** |
 | *Could you …?* (polite) | a request | **`yom`** ([speech act](/firm-soft#speech-act)) |
 
-> `zuzozen vezuyoxal.`
+> `zazozon vozuyexal.`
 >
-> z-Uzozen | v-sing-able
+> z-Azozon | v-sing-able
 >
-> "Uzozen can sing."
+> "Azozon can sing."
 
-> `zolazun thomam velurul.`
+> `zalazun thomam vudurul.`
 >
-> z-Olazun | th-MAY | v-departure
+> z-Alazun | th-MAY | v-departure
 >
-> "Olazun may leave." (could be)
+> "Alazun may leave." (could be)
 
-> `zuzozen vowurel hwuvam.`
+> `zazozon vowurol hwuvam.`
 >
-> z-Uzozen | v-walk | h-episode-event-ALLOW-said
+> z-Azozon | v-walk | h-episode-event-ALLOW-said
 >
-> "Uzozen may walk; I'm allowing it."
+> "Azozon may walk; I'm allowing it."
 
-> `yom vowurel zawan.`
+> `yom vowurol zawan.`
 >
 > y-request | v-walk | z-listener
 >
@@ -289,24 +289,24 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 
 | English | Agebon |
 |---------|--------|
-| *capable* / *ability* / *capability* | the verb or quality with **`xa`**: `zuzozen gezuyoxal` (*able to sing*); with no single verb, **`hodaxal`** |
-| *afford* (*can pay*) | `zuzozen varaxal danal` |
-| *visible* / *invisible* | the undergoer with ability: `zudozol gwudaweboxal` / `zudozol gwudaweboxul` |
-| *blind* | `zuzozen gaweboxul` (*can never see*) |
+| *capable* / *ability* / *capability* | the verb or quality with **`xa`**: `zazozon gozuyexal` (*able to sing*); with no single verb, **`hodaxal`** |
+| *afford* (*can pay*) | `zazozon varaxal danal` |
+| *visible* / *invisible* | the undergoer with ability: `zodozel gwudayebexal` / `zodozel gwudayebexul` |
+| *blind* | `zazozon gayebexul` (*can never see*) |
 | *possible* / *potentially* | MAY **`thomam`** |
 | *acceptable* / *privilege* | permission **`hwuval`** |
 | *expect* / *anticipate* | a forecast: a channel + **`blral`**; when custom expects it, **`hwuvor`** |
-| *shall* | PLAN **`thagem`** |
+| *shall* | PLAN **`thagom`** |
 | *have to* | **`hwuvom`** |
 | *do* / *does* / *did* (helper: *Do you walk?*) | no word: the verb under **`yel`** |
 
-> `zudozol gwudaweboxal.`
+> `zodozel gwudayebexal.`
 >
 > z-dog | g-episode-patient-eye-able
 >
 > "The dog is visible."
 
-> `yel zawan vowurel.`
+> `yel zawan vowurol.`
 >
 > y-question | z-listener | v-walk
 >
@@ -332,27 +332,27 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 | *mustn't* | you forbid it now | prohibition **`yul`** |
 | *don't have to*, *needn't* | not doing it is allowed | permission **`hwuvam`** (**`hwuval`** when a rule allows it) before the act + **`vul`** |
 
-> `zuzozen vowurel hwuvol.`
+> `zazozon vowurol hwuvol.`
 >
-> z-Uzozen | v-walk | h-episode-event-REQUIRE-rule
+> z-Azozon | v-walk | h-episode-event-REQUIRE-rule
 >
-> "Uzozen must walk; it's the rule."
+> "Azozon must walk; it's the rule."
 
-> `zuzozen vezuyel thawothem blwuzor.`
+> `zazozon vezuyol thawethem blwuzor.`
 >
-> z-Uzozen | v-tell | [th-relatedness-ought-offered | bl-←episode-agent.self]
+> z-Azozon | v-tell | [th-relatedness-ought-offered | bl-←episode-agent.self]
 >
-> "Uzozen should talk; it would help them feel connected." (unasked advice)
+> "Azozon should talk; it would help them feel connected." (unasked advice)
 
-> `zuzozen thawothem blwuzor vezuyel vul.`
+> `zazozon thawethem blwuzor vezuyol vul.`
 >
-> z-Uzozen | [th-relatedness-ought-offered | bl-←episode-agent.self] | [v-tell | v-not]
+> z-Azozon | [th-relatedness-ought-offered | bl-←episode-agent.self] | [v-tell | v-not]
 >
-> "Uzozen shouldn't talk; it would hurt their sense of connection." (unasked advice)
+> "Azozon shouldn't talk; it would hurt their sense of connection." (unasked advice)
 
 For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`thenam`**; **`thenam blrul`** is *back then*. The ought then reads from that past moment. English also implies the act did not happen; if that matters, say it in its own sentence.
 
-> `zawan thenam blrul thudathem vezuyel. zawan vezuyel vul.`
+> `zawan thenam blrul thudathem vezuyol. zawan vezuyol vul.`
 >
 > z-listener | [th-as-of.ledger | bl-earlier] | th-sake-ought-offered | v-tell . z-listener | [v-tell | v-not]
 >
@@ -360,13 +360,13 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 
 *Don't have to* lifts a demand: skipping the act is allowed. Put permission before the verb and deny the act.
 
-> `zuzozen hwuvam vowurel vul.`
+> `zazozon hwuvam vowurol vul.`
 >
-> z-Uzozen | h-episode-event-ALLOW-said | [v-walk | v-not]
+> z-Azozon | h-episode-event-ALLOW-said | [v-walk | v-not]
 >
-> "Uzozen doesn't have to walk." (not walking is allowed)
+> "Azozon doesn't have to walk." (not walking is allowed)
 
-**Compare with:** requirement reports a demand, which may be someone else's; **`yol`** is you telling the listener. Requirement with a denied act (`zuzozen hwuvom vowurel vul`) is *Uzozen is required not to walk*, which is *mustn't*, not *doesn't have to*.
+**Compare with:** requirement reports a demand, which may be someone else's; **`yol`** is you telling the listener. Requirement with a denied act (`zazozon hwuvom vowurol vul`) is *Azozon is required not to walk*, which is *mustn't*, not *doesn't have to*.
 
 ### Will, want, try, let's {#will-want}
 
@@ -374,37 +374,37 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 
 | English | Agebon |
 |---------|--------|
-| *will* (willing) | PLAN **`thagem`**, or **`hwuzam`** (*I'll do it*, you can back out) |
-| *I want*, *I feel like* | WANT **`thalem`** (**`thalel`** lasting, **`thaler`** passing); someone else's want takes a [holder](/holder#holder): **`thebamuzozen thalem`** |
-| *intend to*, details open | PLAN sketch **`thager`** |
-| *hopefully* | **`thoguyem`** |
+| *will* (willing) | PLAN **`thagom`**, or **`hwuzam`** (*I'll do it*, you can back out) |
+| *I want*, *I feel like* | WANT **`thalom`** (**`thalol`** lasting, **`thalor`** passing); someone else's want takes a [holder](/holder#holder): **`thebamazozon thalom`** |
+| *intend to*, details open | PLAN sketch **`thagor`** |
+| *hopefully* | **`thuwuyom`** |
 | *tries to* | **`howam`** |
-| *if only …*, *I wish …* | WANT alone, which is already your own: **`thalem`** |
+| *if only …*, *I wish …* | WANT alone, which is already your own: **`thalom`** |
 | *let's* | request **`yom`** with **`aya`** as subject |
 
-> `zolazun thebamolazun thalem vowurel.`
+> `zalazun thebamalazun thalom vowurol.`
 >
-> z-Olazun | th-REPORTED-Olazun | th-WANT-unstated | v-walk
+> z-Alazun | th-REPORTED-Alazun | th-WANT-unstated | v-walk
 >
-> "I hear Olazun wants to walk."
+> "I hear Alazun wants to walk."
 
-> `zuzozen thalem vowurel.`
+> `zazozon thalom vowurol.`
 >
-> z-Uzozen | th-WANT-unstated | v-walk
+> z-Azozon | th-WANT-unstated | v-walk
 >
-> "If only Uzozen would walk."
+> "If only Azozon would walk."
 
-> `zuwon thager vowurel.`
+> `zuwen thagor vowurol.`
 >
 > z-speaker | th-plan-sketch | v-walk
 >
 > "I intend to walk; the details are open."
 
-> `zolazun howar vezuyol.`
+> `zalazun howar vozuyel.`
 >
-> z-Olazun | h-ATTEMPT-trial | v-sing
+> z-Alazun | h-ATTEMPT-trial | v-sing
 >
-> "Olazun gives singing a try."
+> "Alazun gives singing a try."
 
 ## Practice {#practice}
 
@@ -418,75 +418,75 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
-| *walk* | `vowurel` |
-| *leave* | `velurul` |
-| *tell* | `vezuyel` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
+| *walk* | `vowurol` |
+| *leave* | `vudurul` |
+| *tell* | `vezuyol` |
 | *rain* | `verulal` |
 
 #### English → Agebon {#tense-english-to-agebon}
 
-**1.** *Uzozen walked, I remember it.*
+**1.** *Azozon walked, I remember it.*
 
 ::: details Show answer
-`zuzozen thevum vowurel.`
+`zazozon thevum vowurol.`
 
-z-Uzozen | th-MEMORY | v-walk
+z-Azozon | th-MEMORY | v-walk
 :::
 
-**2.** *I hear Uzozen walks tomorrow.*
+**2.** *I hear Azozon walks tomorrow.*
 
 ::: details Show answer
-`zuzozen thebam bluzurem grabal vowurel.`
+`zazozon thebam blazurom grabal vowurol.`
 
-z-Uzozen | [th-REPORTED | [b-day | g-one]] | v-walk
+z-Azozon | [th-REPORTED | [b-day | g-one]] | v-walk
 :::
 
-**3.** *Olazun has already left.*
+**3.** *Alazun has already left.*
 
 ::: details Show answer
-`zolazun havom velurul.`
+`zalazun havem vudurul.`
 
-z-Olazun | h-already | v-departure
+z-Alazun | h-already | v-departure
 :::
 
-**4.** *Uzozen is still walking.*
+**4.** *Azozon is still walking.*
 
 ::: details Show answer
-`zuzozen hawum vowurel.`
+`zazozon hawum vowurol.`
 
-z-Uzozen | h-still | v-walk
+z-Azozon | h-still | v-walk
 :::
 
 **5.** *It will rain, going by the pattern.*
 
 ::: details Show answer
-`thubem blral verulal.`
+`thubom blral verulal.`
 
 [th-PATTERN | b-later] | v-rain
 :::
 
-**6.** *Uzozen always used to talk.*
+**6.** *Azozon always used to talk.*
 
 ::: details Show answer
-`zuzozen hual vezuyel helam.`
+`zazozon hual vezuyol helam.`
 
-z-Uzozen | h-always | v-tell | h-FORMER
+z-Azozon | h-always | v-tell | h-FORMER
 :::
 
-**7.** *Uzozen may walk; I'm allowing it.*
+**7.** *Azozon may walk; I'm allowing it.*
 
 ::: details Show answer
-`zuzozen vowurel hwuvam.`
+`zazozon vowurol hwuvam.`
 
-z-Uzozen | v-walk | h-episode-event-ALLOW-said
+z-Azozon | v-walk | h-episode-event-ALLOW-said
 :::
 
-**8.** *Uzozen must walk; it's the rule.*
+**8.** *Azozon must walk; it's the rule.*
 
 ::: details Show answer
-`zuzozen vowurel hwuvol.`
+`zazozon vowurol hwuvol.`
 
-z-Uzozen | v-walk | h-episode-event-REQUIRE-rule
+z-Azozon | v-walk | h-episode-event-REQUIRE-rule
 :::

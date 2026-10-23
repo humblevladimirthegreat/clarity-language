@@ -9,17 +9,17 @@ English *I think* can be a guess, a memory, or a conclusion from clues, and the 
 
 ### MAY {#may}
 
-To say something **could be** so without claiming that it is (*Olazun may be leaving*), keep the ordinary verb and add **`oma`** plus an ending as a [stance](clause.md#stance-th) word on `/th/`. This word is called **MAY**. The sentence now says the leaving is possible, not that it happens, and it gives no reason for thinking so. This matters most for painful guesses (a rejection, a blow, a loss), which English *I think* easily turns into facts. Start with **`thomam`**, *may* / *could be*. (cue: 💭 *thought*: a balloon over the scene)
+To say something **could be** so without claiming that it is (*Alazun may be leaving*), keep the ordinary verb and add **`oma`** plus an ending as a [stance](clause.md#stance-th) word on `/th/`. This word is called **MAY**. The sentence now says the leaving is possible, not that it happens, and it gives no reason for thinking so. This matters most for painful guesses (a rejection, a blow, a loss), which English *I think* easily turns into facts. Start with **`thomam`**, *may* / *could be*. (cue: 💭 *thought*: a balloon over the scene)
 
-Without the `/th/` word, you are reporting that it happens. As a plain noun the root keeps its own meaning (`zomal` *a thought*); the verb *think* is a different root, `vevemol`.
+Without the `/th/` word, you are reporting that it happens. As a plain noun the root keeps its own meaning (`zomal` *a thought*); the verb *think* is a different root, `vevemel`.
 
-> `zolazun thomam velurul dahelan.`
+> `zalazun thomam vudurul dahelan.`
 >
-> z-Olazun | th-MAY | v-departure | d-Ahelan
+> z-Alazun | th-MAY | v-departure | d-Ahelan
 >
-> "Olazun may be leaving Ahelan."
+> "Alazun may be leaving Ahelan."
 
-**Compare with:** `zuzozen vevemol.` is *Uzozen thinks*, a report of the act of thinking; it does not mark anything as a guess.
+**Compare with:** `zazozon vevemel.` is *Azozon thinks*, a report of the act of thinking; it does not mark anything as a guess.
 
 ### Hold endings (MAY)
 <a id="may-hold"></a>
@@ -34,19 +34,19 @@ The ending on MAY says whether you mean to follow up on the *could be*: with **-
 
 When you are not sure, use **`thomam`**: it says *could be* and nothing about following up.
 
-> `zolazun thomal vanuvul duzozen.`
+> `zalazun thomal vabuvul dazozon.`
 >
-> z-Olazun | th-MAY-find-out | v-punch | d-Uzozen
+> z-Alazun | th-MAY-find-out | v-punch | d-Azozon
 >
-> "Olazun may be punching Uzozen, I'll find out."
+> "Alazun may be punching Azozon, I'll find out."
 
 In a yes/no question, **`thomal`** says you are asking in order to find out:
 
-> `yel zuzozen vanuvul thomal dolazun.`
+> `yel zazozon vabuvul thomal dalazun.`
 >
-> y-question | z-Uzozen | v-punch | th-MAY-find-out | d-Olazun
+> y-question | z-Azozon | v-punch | th-MAY-find-out | d-Alazun
 >
-> "Might Uzozen be punching Olazun? Let's find out."
+> "Might Azozon be punching Alazun? Let's find out."
 
 > `zahelan thomar vagamul.`
 >
@@ -64,9 +64,9 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *departure* | `velurul` | 🛫 |
+| *departure* | `vudurul` | 🛫 |
 | *cry* | `vagamul` | 😭 |
-| *fight* | `vavuvul` | 🫯 |
+| *fight* | `vuvuvul` | 🫯 |
 | *eat* | `vagedal` | 🍴 from *cutlery* |
 | *MAY* | `thomam` | 💭 from *thought*: a balloon over the scene |
 
@@ -74,50 +74,50 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *think* | `vevemol` |
+| *think* | `vevemel` |
 | *pay* | `varal` |
-| *tell* | `vezuyel` |
-| *wine* | `awudal` |
-| *pour* | `vobuvul` |
-| *scream* | `varemul` |
+| *tell* | `vezuyol` |
+| *wine* | `owudal` |
+| *pour* | `vowuvul` |
+| *scream* | `veyamul` |
 | *sandwich* | `edal` |
-| *punch* | `vanuvul` |
+| *punch* | `vabuvul` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *Ahelan may be leaving Uzozen.*
+**1.** *Ahelan may be leaving Azozon.*
 
 ::: details Show answer
-`zahelan thomam velurul duzozen.`
+`zahelan thomam vudurul dazozon.`
 
-z-Ahelan | th-MAY | v-departure | d-Uzozen
+z-Ahelan | th-MAY | v-departure | d-Azozon
 :::
 
-**2.** *Uzozen may be fighting Olazun, I'll find out.*
+**2.** *Azozon may be fighting Alazun, I'll find out.*
 
 ::: details Show answer
-`zuzozen thomal vavuvul dolazun.`
+`zazozon thomal vuvuvul dalazun.`
 
-z-Uzozen | th-MAY-find-out | v-fight | d-Olazun
+z-Azozon | th-MAY-find-out | v-fight | d-Alazun
 :::
 
-**3.** *Olazun may be crying, who knows.*
+**3.** *Alazun may be crying, who knows.*
 
 ::: details Show answer
-`zolazun thomar vagamul.`
+`zalazun thomar vagamul.`
 
-z-Olazun | th-MAY-who-knows | v-cry
+z-Alazun | th-MAY-who-knows | v-cry
 :::
 
-**4.** *Uzozen thinks.* (an act of thinking)
+**4.** *Azozon thinks.* (an act of thinking)
 
 ::: details Show answer
-`zuzozen vevemol.`
+`zazozon vevemel.`
 
-z-Uzozen | v-think
+z-Azozon | v-think
 :::
 
 **5.** *Could Ahelan be paying?*
@@ -128,25 +128,25 @@ z-Uzozen | v-think
 y-question | z-Ahelan | v-pay | th-MAY
 :::
 
-**6.** *Olazun may be telling Uzozen.*
+**6.** *Alazun may be telling Azozon.*
 
 ::: details Show answer
-`zolazun thomam vezuyel buzozen.`
+`zalazun thomam vezuyol bazozon.`
 
-z-Olazun | th-MAY | v-tell | b-Uzozen
+z-Alazun | th-MAY | v-tell | b-Azozon
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zuzozen thomam dawudal vobuvul.`
+**1.** `zazozon thomam dowudal vowuvul.`
 
 ::: details Show answer
-z-Uzozen | th-MAY | d-wine | v-pour
+z-Azozon | th-MAY | d-wine | v-pour
 
-*Uzozen may be pouring wine.*
+*Azozon may be pouring wine.*
 :::
 
-**2.** `zahelan thomal varemul.`
+**2.** `zahelan thomal veyamul.`
 
 ::: details Show answer
 z-Ahelan | th-MAY-find-out | v-scream
@@ -154,48 +154,48 @@ z-Ahelan | th-MAY-find-out | v-scream
 *Ahelan may be screaming, I'll find out.*
 :::
 
-**3.** `yel zolazun vavuvul thomal duzozen.`
+**3.** `yel zalazun vuvuvul thomal dazozon.`
 
 ::: details Show answer
-y-question | z-Olazun | v-fight | th-MAY-find-out | d-Uzozen
+y-question | z-Alazun | v-fight | th-MAY-find-out | d-Azozon
 
-*Might Olazun be fighting Uzozen? Let's find out.*
+*Might Alazun be fighting Azozon? Let's find out.*
 :::
 
-**4.** `zuzozen thomar dedal vagedal.`
+**4.** `zazozon thomar dedal vagedal.`
 
 ::: details Show answer
-z-Uzozen | th-MAY-who-knows | d-sandwich | v-eat
+z-Azozon | th-MAY-who-knows | d-sandwich | v-eat
 
-*Uzozen may be eating a sandwich, who knows.*
+*Azozon may be eating a sandwich, who knows.*
 :::
 
-**5.** `zahelan thomam vanuvul dolazun.`
+**5.** `zahelan thomam vabuvul dalazun.`
 
 ::: details Show answer
-z-Ahelan | th-MAY | v-punch | d-Olazun
+z-Ahelan | th-MAY | v-punch | d-Alazun
 
-*Ahelan may be punching Olazun.*
+*Ahelan may be punching Alazun.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Uzozen may be crying, I'll find out.* `zuzozen thomal vagamul.` or `zuzozen thomar vagamul.`
+**1.** *Azozon may be crying, I'll find out.* `zazozon thomal vagamul.` or `zazozon thomar vagamul.`
 
 ::: details Show answer
-`zuzozen thomal vagamul.`
+`zazozon thomal vagamul.`
 
-z-Uzozen | th-MAY-find-out | v-cry
+z-Azozon | th-MAY-find-out | v-cry
 
 **-l** commits to settling it; **-r** is a passing thought you are not pursuing.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Ahelan may be leaving.* (a guess, not a claim) <!-- lint: error -->`zahelan velurul.`
+**1.** *Ahelan may be leaving.* (a guess, not a claim) <!-- lint: error -->`zahelan vudurul.`
 
 ::: details Show answer
-`zahelan thomam velurul.`
+`zahelan thomam vudurul.`
 
 z-Ahelan | th-MAY | v-departure
 

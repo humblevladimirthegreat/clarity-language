@@ -10,11 +10,11 @@ You already mark whether a turn is a statement, question, command, or prohibitio
 
 The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a** statement, **o** command, **e** question, **u** prohibition). With **-l** you stand behind the act. With **-m** you offer it softly and leave the other person free to take it up or not. **-r** marks an act you hold only for now. Write the act word whenever the turn is not a plain statement; a period still lets you omit **`yal`**.
 
-> `yam zuzozen vowurel.`
+> `yam zazozon vowurol.`
 >
-> y-soft-statement | z-Uzozen | v-walk
+> y-soft-statement | z-Azozon | v-walk
 >
-> "For what it's worth, Uzozen walks."
+> "For what it's worth, Azozon walks."
 
 **Compare with:** [MAY](knowing.md#may) (`thomam`) marks the scene as *could be*. **`yam`** is still a statement; you put it forward without insisting the other person take it up.
 
@@ -32,13 +32,13 @@ The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a
 
 For *let's*, make a soft request with inclusive *we*, **`aya`** ([special pronouns](pronouns.md#special-pronouns)), as the subject. *Let's not* is the soft prohibition.
 
-> `yom vowurel zayan.`
+> `yom vowurol zayan.`
 >
 > y-request | v-walk | z-interlocutors
 >
 > "Let's walk."
 
-> `yum zayan vezuvol.`
+> `yum zayan vezuvel.`
 >
 > y-soft-prohibition | z-interlocutors | v-sleep
 >
@@ -58,17 +58,17 @@ A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` w
 | **`yor`** | **command for now**: do this until told otherwise | *for now, …* / *go ahead and … for now* | **o** rank + **-r**: an instruction you expect to revisit |
 | **`yur`** | **hold off**: don't, for now | *hold off on …* / *don't … yet* | **u** undo + **-r**: take the action back, for now |
 
-> `yur vowurel.`
+> `yur vowurol.`
 >
 > y-hold-off | v-walk
 >
 > "Hold off on walking for now."
 
-> `yar zuzozen vowurel.`
+> `yar zazozon vowurol.`
 >
-> y-provisional-statement | z-Uzozen | v-walk
+> y-provisional-statement | z-Azozon | v-walk
 >
-> "As things stand, Uzozen walks."
+> "As things stand, Azozon walks."
 
 ### Practice {#beginner-practice}
 
@@ -80,20 +80,20 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *interlocutors* | `ayan` |
-| *sing* | `vezuyol` |
-| *stop* | `vozohul` |
-| *quiet* | `ogowul` |
+| *sing* | `vozuyel` |
+| *stop* | `vezohul` |
+| *quiet* | `ugowul` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *For what it's worth, Ahelan sings.*
 
 ::: details Show answer
-`yam zahelan vezuyol.`
+`yam zahelan vozuyel.`
 
 y-soft-statement | z-Ahelan | v-sing
 :::
@@ -101,7 +101,7 @@ y-soft-statement | z-Ahelan | v-sing
 **2.** *Let's sing.*
 
 ::: details Show answer
-`yom vezuyol zayan.`
+`yom vozuyel zayan.`
 
 y-request | v-sing | z-interlocutors
 :::
@@ -109,22 +109,22 @@ y-request | v-sing | z-interlocutors
 **3.** *As things stand, Ahelan sings quietly.*
 
 ::: details Show answer
-`yar zahelan hogowul vezuyol.`
+`yar zahelan hugowul vozuyel.`
 
 y-provisional-statement | z-Ahelan | h-quiet | v-sing
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `yor vezuyol zuzozen.`
+**1.** `yor vozuyel zazozon.`
 
 ::: details Show answer
-y-command-for-now | v-sing | z-Uzozen
+y-command-for-now | v-sing | z-Azozon
 
-*For now, Uzozen is to sing.*
+*For now, Azozon is to sing.*
 :::
 
-**2.** `yum zayan vozohul.`
+**2.** `yum zayan vezohul.`
 
 ::: details Show answer
 y-soft-prohibition | z-interlocutors | v-stop
@@ -132,30 +132,30 @@ y-soft-prohibition | z-interlocutors | v-stop
 *Let's not stop.*
 :::
 
-**3.** `yem zolazun vezuyol.`
+**3.** `yem zalazun vozuyel.`
 
 ::: details Show answer
-y-soft-question | z-Olazun | v-sing
+y-soft-question | z-Alazun | v-sing
 
-*Does Olazun sing, I wonder?*
+*Does Alazun sing, I wonder?*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Please sing.* `yom vezuyol.` or `yol vezuyol.`
+**1.** *Please sing.* `yom vozuyel.` or `yol vozuyel.`
 
 ::: details Show answer
-`yom vezuyol.`
+`yom vozuyel.`
 
 y-request | v-sing
 
 Soft **-m** asks; firm **`yol`** commands.
 :::
 
-**2.** *Hold off on singing for now.* `yur vezuyol.` or `yul vezuyol.`
+**2.** *Hold off on singing for now.* `yur vozuyel.` or `yul vozuyel.`
 
 ::: details Show answer
-`yur vezuyol.`
+`yur vozuyel.`
 
 y-hold-off | v-sing
 

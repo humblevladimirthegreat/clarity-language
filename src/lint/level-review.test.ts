@@ -22,9 +22,9 @@ const stage = (name: string) => `# Page ${name}
 const item = (n: number, rule: string | null) => `**${n}.** *x*
 
 ::: details Show answer
-\`zuzozen vuhohol.\`
+\`zazozon vehohel.\`
 
-z-Uzozen | v-sit
+z-Azozon | v-sit
 ${rule === null ? "" : `\n${rule}\n`}:::
 `;
 
@@ -64,7 +64,7 @@ describe("lintLevelReview", () => {
         item(3, "**Rule:** [Practice](a.md#beginner-practice)"),
         item(4, "**Rule:** [Gone](a.md#gone)"),
         item(5, "**Rule:** see a.md"),
-        `**6.** *x*\n\n::: details Show answer\n\`zuzozen vuhohol.\`\n\n**Rule:** [Basics](a.md#basics)\n\nz-Uzozen | v-sit\n:::\n`,
+        `**6.** *x*\n\n::: details Show answer\n\`zazozon vehohel.\`\n\n**Rule:** [Basics](a.md#basics)\n\nz-Azozon | v-sit\n:::\n`,
       ].join("\n"),
     );
     const out = findings(md).filter((d) => !counts(d));

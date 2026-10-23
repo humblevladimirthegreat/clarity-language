@@ -17,23 +17,23 @@ The `/y/` words go at the start of the turn, before its **body** (the subject, o
 
 To call someone into the turn, put `/y/` before their name, which ends in **-n**. The call can be the whole turn or come before a clause. A `/y/` word that ends in **-n** is always a call.
 
-> `yolazun.`
+> `yalazun.`
 >
-> y-Olazun
+> y-Alazun
 >
-> "Olazun!" (calling Olazun)
+> "Alazun!" (calling Alazun)
 
-A `/ɡ/` word right after the call describes the person you call, as it would after any noun. So a full name calls with its family name (`yalen galowen.` *Alen Alowen!*), and `yolazun guzemol.` is *sleepy Olazun!*.
+A `/ɡ/` word right after the call describes the person you call, as it would after any noun. So a full name calls with its family name (`yalon golowon.` *Alon Olowon!*), and `yalazun guzemel.` is *sleepy Alazun!*.
 
-> `yalen galowen.`
+> `yalon golowon.`
 >
-> [y-Alen | g-Alowen]
+> [y-Alon | g-Olowon]
 >
-> "Alen Alowen!" (calling Alen Alowen)
+> "Alon Olowon!" (calling Alon Olowon)
 
 To call someone by what they are (*Waiter!*, *Doctor!*), use the kind as a title: it still ends in **-n**, so `yagayun` calls the guard.
 
-**Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Olazun uses `/y/`; saying Olazun walks uses `/z/` (`zolazun vowurel`).
+**Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Alazun uses `/y/`; saying Alazun walks uses `/z/` (`zalazun vowurol`).
 
 ### Interjections: reactions
 <a id="interjections"></a>
@@ -41,23 +41,23 @@ To call someone by what they are (*Waiter!*, *Doctor!*), use the kind as a title
 
 An **interjection** is a short reaction or exclamation that stands on its own. Write the reaction under `/y/` with an ordinary ending: **-l** for the everyday sense, **-m** for the abstract sense, just as on any [first mention](word-endings.md).
 
-> `yemol.`
+> `yemel.`
 >
 > y-surprise
 >
 > "What a surprise!"
 
-> `yemom.`
+> `yemem.`
 >
 > y-amazement
 >
 > "Amazing!"
 
-The ending tells a reaction from a call: **-n** calls someone (`yolazun`, `yagayun`), and **-l** / **-m** give the reaction itself. So `yagayul` is *Guard!* shouted as an alarm, and `yagayun` calls the guard over.
+The ending tells a reaction from a call: **-n** calls someone (`yalazun`, `yagayun`), and **-l** / **-m** give the reaction itself. So `yagayul` is *Guard!* shouted as an alarm, and `yagayun` calls the guard over.
 
 A `/ɡ/` word right after a reaction describes it, as one after a call describes the person called.
 
-> `yemol gelazom.`
+> `yemel gelazem.`
 >
 > [y-surprise | g-big]
 >
@@ -72,7 +72,7 @@ Each turn does one thing: it states, asks, commands, or forbids. That is its **s
 
 When the turn is not a statement, put its act word immediately before the body:
 
-> `yol vowurel.`
+> `yol vowurol.`
 >
 > y-command | v-walk
 >
@@ -92,25 +92,25 @@ The vowel picks the act. Its cues hang on the join leftover-list: **a** add a cl
 
 The first letter of each word already says its role, so any order of the body means the same thing. Each act still has a **usual order**. Use it: the act word is one short syllable, and if a listener misses it, the order still tells them which act you meant.
 
-> `zuzozen dobogal vanuvul.`
+> `zazozon dubogal vabuvul.`
 >
-> z-Uzozen | d-box | v-punch
+> z-Azozon | d-box | v-punch
 >
-> "Uzozen punches the box."
+> "Azozon punches the box."
 
-> `yel zuzozen vanuvul dobogal.`
+> `yel zazozon vabuvul dubogal.`
 >
-> y-question | z-Uzozen | v-punch | d-box
+> y-question | z-Azozon | v-punch | d-box
 >
-> "Does Uzozen punch the box?"
+> "Does Azozon punch the box?"
 
-> `yol vanuvul dobogal.`
+> `yol vabuvul dubogal.`
 >
 > y-command | v-punch | d-box
 >
 > "Punch the box!"
 
-> `yul dobogal vanuvul.`
+> `yul dubogal vabuvul.`
 >
 > y-prohibition | d-box | v-punch
 >
@@ -126,7 +126,7 @@ Only a command starts with its verb. A question or prohibition whose act word ge
 | command | verb first | the action comes first: do it |
 | prohibition | verb late, as in a statement | the action is held back |
 
-The person who receives (`/b/`) stays right after the verb, wherever the verb goes: `yol varal buzozen.` *Pay Uzozen!* A question with no subject puts another word before its verb, so that it still does not start with the verb.
+The person who receives (`/b/`) stays right after the verb, wherever the verb goes: `yol varal bazozon.` *Pay Azozon!* A question with no subject puts another word before its verb, so that it still does not start with the verb.
 
 ### Practice {#beginner-practice}
 
@@ -138,22 +138,22 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *surprise* | `emol` | 😮 |
-| *sit* | `vuhohol` | 🪑 from *chair* |
-| *peek* | `vebemel` | 🫣 |
-| *run* | `varuvel` | 🏃 |
+| *surprise* | `emel` | 😮 |
+| *sit* | `vehohel` | 🪑 from *chair* |
+| *peek* | `vebemol` | 🫣 |
+| *run* | `veruvol` | 🏃 |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *pay* | `varal` |
-| *haste* | `hedurem` |
-| *very* | `welazom` |
-| *angry* | `unemul` |
+| *haste* | `hadurom` |
+| *very* | `welazem` |
+| *angry* | `onumul` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
@@ -168,62 +168,62 @@ y-Ahelan
 **2.** *Amazing!*
 
 ::: details Show answer
-`yemom.`
+`yemem.`
 
 y-amazement
 :::
 
-**3.** *Does Olazun pay Uzozen?*
+**3.** *Does Alazun pay Azozon?*
 
 ::: details Show answer
-`yel zolazun varal buzozen.`
+`yel zalazun varal bazozon.`
 
-y-question | z-Olazun | v-pay | b-Uzozen
+y-question | z-Alazun | v-pay | b-Azozon
 
-**Also correct:** `yel zolazun buzozen varal.`
+**Also correct:** `yel zalazun bazozon varal.`
 :::
 
-**4.** *Uzozen, sit!*
+**4.** *Azozon, sit!*
 
 ::: details Show answer
-`yuzozen yol vuhohol.`
+`yazozon yol vehohel.`
 
-y-Uzozen | y-command | v-sit
+y-Azozon | y-command | v-sit
 :::
 
 **5.** *Pay hastily!*
 
 ::: details Show answer
-`yol varal hedurem.`
+`yol varal hadurom.`
 
 y-command | v-pay | h-haste
 
-**Also correct:** `yol hedurem varal.`
+**Also correct:** `yol hadurom varal.`
 :::
 
 **6.** *Don’t pay hastily.*
 
 ::: details Show answer
-`yul hedurem varal.`
+`yul hadurom varal.`
 
 y-prohibition | h-haste | v-pay
 
 A prohibition keeps its verb late, as in a statement; only a command starts with its verb.
 
-**Also correct:** `yul varal hedurem.`
+**Also correct:** `yul varal hadurom.`
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `yuzozen.`
+**1.** `yazozon.`
 
 ::: details Show answer
-y-Uzozen
+y-Azozon
 
-*Uzozen!* (calling Uzozen)
+*Azozon!* (calling Azozon)
 :::
 
-**2.** `yel zahelan vuhohol.`
+**2.** `yel zahelan vehohel.`
 
 ::: details Show answer
 y-question | z-Ahelan | v-sit
@@ -231,7 +231,7 @@ y-question | z-Ahelan | v-sit
 *Does Ahelan sit?*
 :::
 
-**3.** `yol varuvel.`
+**3.** `yol veruvol.`
 
 ::: details Show answer
 y-command | v-run
@@ -239,7 +239,7 @@ y-command | v-run
 *Run!*
 :::
 
-**4.** `yemol.`
+**4.** `yemel.`
 
 ::: details Show answer
 y-surprise
@@ -247,15 +247,15 @@ y-surprise
 *What a surprise!*
 :::
 
-**5.** `yolazun yul varuvel.`
+**5.** `yalazun yul veruvol.`
 
 ::: details Show answer
-y-Olazun | y-prohibition | v-run
+y-Alazun | y-prohibition | v-run
 
-*Olazun, don’t run!*
+*Alazun, don’t run!*
 :::
 
-**6.** `zahelan welazom gunemul vebemel.`
+**6.** `zahelan welazem gonumul vebemol.`
 
 ::: details Show answer
 [z-Ahelan | [w-very | g-angry]] | v-peek
@@ -265,20 +265,20 @@ y-Olazun | y-prohibition | v-run
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Olazun!* (calling Olazun over) `yolazul.` or `yolazun.`
+**1.** *Alazun!* (calling Alazun over) `yalazul.` or `yalazun.`
 
 ::: details Show answer
-`yolazun.`
+`yalazun.`
 
-y-Olazun
+y-Alazun
 
-A call ends in **-n**; `yolazul` is a reaction, *Lion!*
+A call ends in **-n**; `yalazul` is a reaction, *Lion!*
 :::
 
-**2.** *Don’t sit.* `yol vuhohol.` or `yul vuhohol.`
+**2.** *Don’t sit.* `yol vehohel.` or `yul vehohel.`
 
 ::: details Show answer
-`yul vuhohol.`
+`yul vehohel.`
 
 y-prohibition | v-sit
 
@@ -287,12 +287,12 @@ y-prohibition | v-sit
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Does Uzozen pay?* <!-- lint: error -->`zuzozen varal yol.`
+**1.** *Does Azozon pay?* <!-- lint: error -->`zazozon varal yol.`
 
 ::: details Show answer
-`yel zuzozen varal.`
+`yel zazozon varal.`
 
-y-question | z-Uzozen | v-pay
+y-question | z-Azozon | v-pay
 
 The act word goes before the body; a `/y/` word after a finished body starts the next turn.
 :::

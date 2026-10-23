@@ -37,9 +37,9 @@ The clusters Agebon allows: left-hanging `gl-`; hosted `bl-`, with a [syllabic `
 
 Try singing a short Agebon line quickly at a high but comfortable pitch:
 
-`zuzozen gamahum.`
+`zazozon gamahum.`
 
-/ zʉ.zo̞.ze̞n ɡä.mä.ɦʉm /
+/ zä.zo̞.zo̞n ɡä.mä.ɦʉm /
 
 Compare a line, not Agebon, that piles up vowels side by side, clusters, and consonants that stop the sound mid-word. It is only a little harder to speak, but much harder to hold on a note:
 
@@ -51,9 +51,9 @@ Give every syllable about the same length, and keep its vowel full however fast 
 
 Each word takes a light stress on its **first syllable**. Since the rule never changes, spelling does not mark it. The ending consonant already tells a listener where a word stops; the stressed first beat tells them where the next one starts, so fast speech still splits into words. A [number word](/numbers) stresses the last digit of each group instead.
 
-`zuzozen gamahum.`
+`zazozon gamahum.`
 
-/ ˈzʉ.zo̞.ze̞n ˈɡä.mä.ɦʉm /
+/ ˈzä.zo̞.zo̞n ˈɡä.mä.ɦʉm /
 
 The first beat also keeps apart two lines that differ only by a word break: a word that starts mid-line takes a fresh stressed beat, where the same letters inside one word do not. A hooked join (*someone in there*, as one word) and a join followed by a hook (*some people*, then *in there*) can be spelled with the same letters, and this beat tells them apart.
 

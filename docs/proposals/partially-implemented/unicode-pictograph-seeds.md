@@ -106,7 +106,7 @@ Still valid UTF-8; fallback still per character. There is **no** ZWJ or ligature
 
 ### Inside romanized Agebon
 
-**Out of scope.** Roots stay unicase Latin (`ogala`). Pictographs are seed/display, not letters after the PoS.
+**Out of scope.** Roots stay unicase Latin (`agala`). Pictographs are seed/display, not letters after the PoS.
 
 ### Paste outside the site
 

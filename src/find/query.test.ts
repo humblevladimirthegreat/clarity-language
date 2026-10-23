@@ -50,46 +50,46 @@ describe("parseTerm", () => {
 });
 
 describe("regex conditions", () => {
-  const { words } = sentence("zuzozen vowurel al behaham om buwon.");
+  const { words } = sentence("zazozon vowurol al bahaham om buwen.");
   const raws = (term: string) => words.filter((w) => matchesTerm(w, parseTerm(term))).map((w) => w.word.raw);
 
   it("match the whole value", () => {
     assert.deepEqual(raws("raw=om"), ["om"]);
-    assert.deepEqual(raws("raw=.*ham"), ["behaham"]);
+    assert.deepEqual(raws("raw=.*ham"), ["bahaham"]);
   });
   it("take alternations and classes on any key", () => {
     assert.deepEqual(raws("family=hook,raw=al|om"), ["al", "om"]);
-    assert.deepEqual(raws("role=[zv]"), ["zuzozen", "vowurel"]);
+    assert.deepEqual(raws("role=[zv]"), ["zazozon", "vowurol"]);
   });
   it("negate with !=", () => {
-    assert.deepEqual(raws("role=b,raw!=.*n"), ["behaham"]);
+    assert.deepEqual(raws("role=b,raw!=.*n"), ["bahaham"]);
   });
   it("match roots inside mid-word x compounds", () => {
-    const [word] = sentence("zubedaxuyudal.").words;
-    assert.ok(matchesTerm(word!, parseTerm("root=uyuda")));
-    assert.ok(matchesTerm(word!, parseTerm("family=compound,root=ubeda")));
+    const [word] = sentence("zuwedaxubudal.").words;
+    assert.ok(matchesTerm(word!, parseTerm("root=ubuda")));
+    assert.ok(matchesTerm(word!, parseTerm("family=compound,root=uweda")));
   });
 });
 
 describe("example words", () => {
   it("lists words in surface order with their unit", () => {
-    const { words } = sentence("zuzozen vavobel oel buwon.");
+    const { words } = sentence("zazozon vavobol oel buwen.");
     assert.deepEqual(
       words.map((w) => [w.word.raw, w.unit]),
       [
-        ["zuzozen", "np"],
-        ["vavobel", "vp"],
+        ["zazozon", "np"],
+        ["vavobol", "vp"],
         ["oel", "hook"],
-        ["buwon", "np"],
+        ["buwen", "np"],
       ],
     );
   });
   it("includes left-edge hooks", () => {
-    const { words } = sentence("er zuzozen vowurel.");
+    const { words } = sentence("er zazozon vowurol.");
     assert.ok(matchesTerm(words[0]!, parseTerm("family=hook,ending=r")));
   });
   it("matches adjacent sequences only", () => {
-    const { words } = sentence("zolazun vezuyel thewem bluzozen.");
+    const { words } = sentence("zalazun vezuyol thewom blazozon.");
     assert.deepEqual(matchSequence(words, [parseTerm("role=th"), parseTerm("role=b")]), [2]);
     assert.deepEqual(matchSequence(words, [parseTerm("role=v"), parseTerm("role=b")]), []);
   });
@@ -105,21 +105,21 @@ describe("collectExamples", () => {
 
   it("reads inline, <code>, and agebon fence spans, and skips fragments", () => {
     const md = [
-      "Say `zuzozen vowurel.` or <code>zolazun vowurel.</code>.",
+      "Say `zazozon vowurol.` or <code>zalazun vowurol.</code>.",
       "",
       "```agebon",
-      "zuzozen vezuvol.",
+      "zazozon vezuvel.",
       "```",
       "",
-      "<!-- lint: fragment --> `zuzozen vowurel`",
+      "<!-- lint: fragment --> `zazozon vowurol`",
       "",
       "```text",
-      "zuzozen vowurel.",
+      "zazozon vowurol.",
       "```",
     ].join("\n");
     assert.deepEqual(
       collectExamples(md, tables).map((e) => e.text),
-      ["zuzozen vowurel.", "zuzozen vezuvol.", "zolazun vowurel."],
+      ["zazozon vowurol.", "zazozon vezuvel.", "zalazun vowurol."],
     );
   });
 });
@@ -131,14 +131,14 @@ describe("parse field keys", () => {
       .map((w) => w.word.raw);
 
   it("matches join series o, not a hook or polar yes", () => {
-    const text = "zuzozen zol vowurel al buwon. yaol.";
+    const text = "zazozon zol vowurol al buwen. yaol.";
     assert.deepEqual(raws(text, "family=joinMarker,series=o"), ["zol"]);
     assert.deepEqual(raws(text, "family=hook,form=al|om"), ["al"]);
     assert.deepEqual(raws(text, "family=joinMarker,role=y,series=ao"), ["yaol"]);
   });
 
   it("matches hook form on a prefix", () => {
-    assert.deepEqual(raws("guoxavuvul.", "form=uol"), ["guoxavuvul"]);
+    assert.deepEqual(raws("guoxuvuvul.", "form=uol"), ["guoxuvuvul"]);
   });
 
   it("treats writing and speech number markers as twins, not a digit re", () => {
@@ -149,17 +149,17 @@ describe("parse field keys", () => {
   });
 
   it("matches say answer and scope", () => {
-    const text = "zuzozen vowurel hwuvam. zuzozen vowurel hwuvom.";
+    const text = "zazozon vowurol hwuvam. zazozon vowurol hwuvom.";
     assert.deepEqual(raws(text, "family=say,answer=a"), ["hwuvam"]);
     assert.deepEqual(raws(text, "family=say,answer=o"), ["hwuvom"]);
     assert.deepEqual(raws(text, "family=say,scope=u").sort(), ["hwuvam", "hwuvom"]);
   });
 
   it("matches ability and sake stance, not th-scope", () => {
-    assert.deepEqual(raws("vuzunexol.", "xFamily=ability,stance=o"), ["vuzunexol"]);
+    assert.deepEqual(raws("vuzunoxol.", "xFamily=ability,stance=o"), ["vuzunoxol"]);
     const sake = `g${CLOSED.ballot}thal`;
     assert.deepEqual(raws(sake, "xFamily=sake,stance=a"), [sake]);
-    const [scope] = sentence("guzozethul").words;
+    const [scope] = sentence("gazozothul").words;
     assert.ok(scope);
     assert.equal(scope.word.family.kind === "x" && scope.word.family.xFamily, "scope");
     assert.ok(matchesTerm(scope, parseTerm("scope=u")));
@@ -167,7 +167,7 @@ describe("parse field keys", () => {
   });
 
   it("matches landmark facing as pair scope, not sake stance", () => {
-    const facing = { word: classify(parseWord("gazuhethel"), tables), unit: "", position: 0 };
+    const facing = { word: classify(parseWord("gazuhothel"), tables), unit: "", position: 0 };
     assert.ok(matchesTerm(facing, parseTerm("xFamily=lateral,scope=e")));
     assert.ok(!matchesTerm(facing, parseTerm("stance=o")));
   });
@@ -180,7 +180,7 @@ describe("parse field keys", () => {
   });
 
   it("matches restrictor reading, not a join", () => {
-    const text = "zahelan vezuyol hol. zuzozen zol vowurel.";
+    const text = "zahelan vozuyel hol. zazozon zol vowurol.";
     assert.deepEqual(raws(text, "reading=restrictor"), ["hol"]);
     assert.deepEqual(raws(text, "reading=join,series=o"), ["zol"]);
   });
@@ -205,7 +205,7 @@ describe("parse field keys", () => {
   });
 
   it("matches hooked-join form and a feeling locus", () => {
-    assert.deepEqual(raws("zexual blahehal.", "family=joinMarker,form=el"), ["zexual"]);
+    assert.deepEqual(raws("zexual blohehal.", "family=joinMarker,form=el"), ["zexual"]);
     const locus = { word: classify(parseWord("wuwathuraer"), tables), unit: "", position: 0 };
     assert.ok(matchesTerm(locus, parseTerm("xFamily=sake,locus=ae")));
   });
@@ -214,8 +214,8 @@ describe("parse field keys", () => {
 describe("learner name slot", () => {
   it("parses SELF examples with the default learner root", () => {
     assert.deepEqual(
-      collectExamples("`yem zSELFn vuhohol hwuvam.`", tables).map((e) => e.text),
-      ["yem zuwon vuhohol hwuvam."],
+      collectExamples("`yem zSELFn vehohel hwuvam.`", tables).map((e) => e.text),
+      ["yem zuwen vehohel hwuvam."],
     );
   });
 });

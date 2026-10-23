@@ -32,15 +32,15 @@ The same letters name a part in an earlier event on [role pointers](/pronouns#ro
 
 A content word's last letter is **-l**, **-m**, **-n**, or **-r**. Optional [**-x**](/plurality#associative) after that marks associates or a group. The same four letters are reused. Each **scale** below is one four-cell reading of those letters. None hangs on another. A mixed host writes one ending letter and reads it by cell: a [number](/number-markers#number-endings) is exactness on **-l** / **-m**, content on **-n**, reference on **-r**.
 
-Shown on one root, `uzoze`. From [word endings](/word-endings#concrete-l) and [resume](/pronouns#resume-r). Content is **-l** / **-m** / **-n**; **-r** is reference.
+Shown on one root, `azozo`. From [word endings](/word-endings#concrete-l) and [resume](/pronouns#resume-r). Content is **-l** / **-m** / **-n**; **-r** is reference.
 
 | Ending | Means | Example | English | Stage |
 |--------|-------|---------|---------|-------|
-| **-l** | [first mention, everyday kind](/word-endings#concrete-l) | `uzozel` | *swan* | B |
-| **-m** | [first mention, published abstract](/word-endings#abstract-m) | `uzozem` | *grace* | B |
-| **-n** | [a name](/word-endings#named-n-beginner) | `uzozen` | *Uzozen* | B |
-| **-r** | [the same one again](/pronouns#resume-r) | `zuzozer` | *Uzozen* (again) | B |
-| **-x** after any of these | [associates, or a group](/plurality#associative) | `zuzozenx` | *Uzozen and associates* | B |
+| **-l** | [first mention, everyday kind](/word-endings#concrete-l) | `azozol` | *swan* | B |
+| **-m** | [first mention, published abstract](/word-endings#abstract-m) | `azozom` | *grace* | B |
+| **-n** | [a name](/word-endings#named-n-beginner) | `azozon` | *Azozon* | B |
+| **-r** | [the same one again](/pronouns#resume-r) | `zazozor` | *Azozon* (again) | B |
+| **-x** after any of these | [associates, or a group](/plurality#associative) | `zazozonx` | *Azozon and associates* | B |
 
 ### Ending scales {#ending-scales}
 
@@ -80,23 +80,23 @@ l m r n
 │     ├── restrictor / more occasions / universals (are join)
 │     ├── stance join (is join, on /th/)
 │     ├── same-role / discourse hook closed / open / titled phrase
-│     ├── ranges (-m soft ends; -n names the range; -r one member)
+│     ├── ranges (-m soft ends; -n names the range; -r a member)
 │     ├── fill-ask (is join -r in a question)
 │     ├── digitless number -r (grar some number / which number?)
-│     ├── fault (broke a rule / plain cause / one share among others)
+│     ├── fault (broke a rule / plain cause / a share among others)
 │     ├── say-word (a rule / a person said so / nobody said)
 │     ├── clause-join -n (sequence)
 │     └── join-act / join-relation -n (the list-move as a verb or relation)
 ├── reference — which referent relative to what is already in play
-│     ├── role pointer          -l new one · -m the part · -r the same one
+│     ├── role pointer          -l a new person · -m the part · -r the same person
 │     ├── tag                   -l assign / someone A · -m what A did · -r recall · -n recall of a name
 │     └── -r only
 │           ├── whole-stem resume
 │           ├── hook resume (there / as I said)
-│           ├── role compound (the one teaching, this instance)
+│           ├── role compound (the person teaching, this instance)
 │           ├── number with digits (grager those three)
 │           ├── span =
-│           └── topic return (xuzozer)
+│           └── topic return (xazozor)
 └── settled-to-passing — how lasting the hold is; no -n
       ├── sake time horizon · unmet changeability · motive (are the scale)
       ├── prescription warrant (invited / offered / worth a try)
@@ -127,18 +127,18 @@ A root's last consonant hints at the kind of thing. From [root tails](/root-tail
 
 | Letter | Kind | Example | Why this letter | Stage |
 |--------|------|---------|-----------------|-------|
-| `z` | creatures | `agozo` *cat* | [`/z/`](/clause#role-letters) who acts | A |
-| `y` | people | `eboye` *baby* | [`/y/` + name](/speech-moves#vocative) calls someone | A |
+| `z` | creatures | `ogoze` *cat* | [`/z/`](/clause#role-letters) who acts | A |
+| `y` | people | `eboyo` *baby* | [`/y/` + name](/speech-moves#vocative) calls someone | A |
 | `m` | mind and feeling | `evemu` *fear* | [**-m**](/word-endings#abstract-m) abstract | A |
 | `b` | body and what goes on it | `aheba` *hand* | [`/b/`](/clause#role-letters) the extra piece | A |
-| `v` | doing, playing, moving | `aruve` *run* | [`/v/`](/clause#role-letters) the action | A |
-| `h` | places and fixtures | `aheha` *house* | [`/h/`](/clause#role-letters) where | A |
-| `l` | nature and raw stuff | `edale` *tree* | [**-l**](/word-endings#concrete-l) concrete | A |
-| `d` | food, drink, kitchen | `oledo` *apple* | [`/d/`](/clause#role-letters) what is done to | A |
+| `v` | doing, playing, moving | `eruvo` *run* | [`/v/`](/clause#role-letters) the action | A |
+| `h` | places and fixtures | `oheha` *house* | [`/h/`](/clause#role-letters) where | A |
+| `l` | nature and raw stuff | `edalo` *tree* | [**-l**](/word-endings#concrete-l) concrete | A |
+| `d` | food, drink, kitchen | `alede` *apple* | [`/d/`](/clause#role-letters) what is done to | A |
 | `w` | tools | `anewu` *knife* | [`/w/`](/clause#role-letters) *with* | A |
-| `g` | signs and marks | `awugu` *warning* | [`/ɡ/`](/clause#role-letters) a mark on something | A |
-| `r` | counting, time, money | `egore` *clock* | `r` after a role letter starts a [number](/numbers#counts) | A |
-| `n` | titles, paper, named sports | `unona` *newspaper*, `azuna` *soccer* | [**-n**](/proper-names#proper-name--n) the name ending | A |
+| `g` | signs and marks | `ewugu` *warning* | [`/ɡ/`](/clause#role-letters) a mark on something | A |
+| `r` | counting, time, money | `ugoro` *clock* | `r` after a role letter starts a [number](/numbers#counts) | A |
+| `n` | titles, paper, named sports | `unona` *newspaper*, `ezuna` *soccer* | [**-n**](/proper-names#proper-name--n) the name ending | A |
 
 ## Other jobs {#other-jobs}
 

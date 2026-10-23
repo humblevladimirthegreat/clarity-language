@@ -18,12 +18,12 @@ const tables = createClassifyTables(
 
 describe("checkAmbiguity", () => {
   it("is off by default (no ambiguity field)", () => {
-    const result = parse("zuzozen vawalal.", tables);
+    const result = parse("zazozon vuwalal.", tables);
     assert.equal(result.ambiguity, undefined);
   });
 
   it("returns an empty list when the flag is on and nothing residual collides", () => {
-    const result = parse("zuzozen vawalal.", tables, { checkAmbiguity: true });
+    const result = parse("zazozon vuwalal.", tables, { checkAmbiguity: true });
     assert.deepEqual(result.ambiguity, []);
   });
 

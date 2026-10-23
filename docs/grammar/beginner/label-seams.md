@@ -6,13 +6,13 @@ band: beginner
 
 ### Label scope {#label-scope}
 
-English *Olazun is angry* can mean one outburst or the kind of person Olazun is. The same word does both jobs, and a single act easily turns into a claim about someone's nature. To say what kind of claim a label is, write the root, then mid-word **`th`**, then a scope vowel, then the ending. How far the label reaches is how much of the person's scenes it covers, biggest to smallest: a type across scenes, a practiced role, one relationship, or this episode. A type is a bigger claim, not an *and*, and not which person in a queue. The word keeps its usual slot, so a label on `/ɡ/` is still *is ADJ*, and a verb is still the verb.
+English *Alazun is angry* can mean one outburst or the kind of person Alazun is. The same word does both jobs, and a single act easily turns into a claim about someone's nature. To say what kind of claim a label is, write the root, then mid-word **`th`**, then a scope vowel, then the ending. How far the label reaches is how much of the person's scenes it covers, biggest to smallest: a type across scenes, a practiced role, one relationship, or this episode. A type is a bigger claim, not an *and*, and not which person in a queue. The word keeps its usual slot, so a label on `/ɡ/` is still *is ADJ*, and a verb is still the verb.
 
-> `zolazun gunemuthul.`
+> `zalazun gonumuthul.`
 >
-> z-Olazun | g-angry-th-episode
+> z-Alazun | g-angry-th-episode
 >
-> "Olazun is angry this time."
+> "Alazun is angry this time."
 
 A label with no scope vowel says nothing about how far it reaches. Use one when that reach matters, the way you would add *this time* or *a teacher* in English.
 
@@ -21,36 +21,36 @@ A label with no scope vowel says nothing about how far it reaches. Use one when 
 |--------|-----|---------|-----|
 | **`tha`** | a type across scenes: the quality follows them | *an anxious type*, *a teacher type* | **a** ≈ biggest (the claim covers scenes) |
 | **`tho`** | a practiced role: the office they inhabit | *a teacher*, *lying as their craft* | **o** ≈ medium (a life they inhabit) |
-| **`the`** | this pair: true in one relationship | *a stranger to Uzozen*, *lying, in dealings with Olazun* | **e** ≈ small (one person in reach) |
+| **`the`** | this pair: true in one relationship | *a stranger to Azozon*, *lying, in dealings with Alazun* | **e** ≈ small (one person in reach) |
 | **`thu`** | this episode: this stretch of doing | *angry this time*, *lied (this once)* | **u** ≈ none (a speck of time) |
 
-Mid-word **`th`** with a scope vowel goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root. It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zuwothul` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead. A [role compound](roles.md#one-time-or-a-practice) writes the same vowels after **`w`**, not after **`th`**.
+Mid-word **`th`** with a scope vowel goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root. It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zuwethul` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead. A [role compound](roles.md#one-time-or-a-practice) writes the same vowels after **`w`**, not after **`th`**.
 
 To say **when** that claim counts (*only at school*, *always except when it rains*), put a [restrictor](restrictors.md) on `/w/` immediately before a scoped `/ɡ/` word, with the circumstance words on `/w/` too. The scope vowel says what kind of claim the label is; the restrictor says on which occasions it holds. A restrictor on **`/h/`** limits the whole sentence instead (*walks only when it rains*), not the label.
 
-> `zolazun wanurul wal gwozuduyel.`
+> `zalazun wanurul wal gwozeduyol.`
 >
-> z-Olazun | [w-night | w-only-when | g-role-agent-teach]
+> z-Alazun | [w-night | w-only-when | g-role-agent-teach]
 >
-> "Olazun is a teacher only at night."
+> "Alazun is a teacher only at night."
 
-**Compare with:** **`hual`** / **`wual`** says the claim holds at every time. **`tha`** says you are treating them as that type across scenes, which can still have exceptions. **`wual gwozuduyel`** is the practiced role at every time, and **`ganumuthal`** is the type-claim. Using both together doubles down.
+**Compare with:** **`hual`** / **`wual`** says the claim holds at every time. **`tha`** says you are treating them as that type across scenes, which can still have exceptions. **`wual gwozeduyol`** is the practiced role at every time, and **`ganomuthal`** is the type-claim. Using both together doubles down.
 
 #### This episode (`thu`) {#scope-occasion}
 
-> `zuzozen valamuthul.`
+> `zazozon vulamuthul.`
 >
-> z-Uzozen | v-lie-th-episode
+> z-Azozon | v-lie-th-episode
 >
-> "Uzozen lied this once."
+> "Azozon lied this once."
 
 #### Practiced role (`tho`) {#scope-occupation}
 
-> `zuzozen valamuthol.`
+> `zazozon vulamuthol.`
 >
-> z-Uzozen | v-lie-th-role
+> z-Azozon | v-lie-th-role
 >
-> "Uzozen lies as their craft."
+> "Azozon lies as their craft."
 
 On a verb, **`tho`** is that act as their practice, not one outing.
 
@@ -60,49 +60,49 @@ On a verb, **`tho`** is that act as their practice, not one outing.
 
 **`the`** says the label holds in one relationship: toward one other party. Put that party in a `bl-` word right after the word, on `/ɡ/`, `/h/`, and `/v/` alike. A verb's recipient stays a plain `/b/`. On a noun, **`the`** stands alone; to name the party, say the label on `/ɡ/` instead.
 
-> `zuzozen golayothem blolazun.`
+> `zazozon gulayethem blalazun.`
 >
-> z-Uzozen | [g-strangeness-th-pair | bl-Olazun]
+> z-Azozon | [g-strangeness-th-pair | bl-Alazun]
 >
-> "Uzozen is a stranger to Olazun."
+> "Azozon is a stranger to Alazun."
 
-> `zuzozen valamuthel blolazun.`
+> `zazozon vulamuthel blalazun.`
 >
-> z-Uzozen | [v-lie-th-pair | bl-Olazun]
+> z-Azozon | [v-lie-th-pair | bl-Alazun]
 >
-> "With Olazun, Uzozen lies." (in that relationship)
+> "With Alazun, Azozon lies." (in that relationship)
 
 With no `/b/`, the party is unstated: *a stranger (to someone)*.
 
-On a [role compound](roles.md#one-time-or-a-practice) the same vowel sits after **`w`**: `gwezuduyel blolazun` is *is a teacher to Olazun*.
+On a [role compound](roles.md#one-time-or-a-practice) the same vowel sits after **`w`**: `gwezeduyol blalazun` is *is a teacher to Alazun*.
 
 #### Type across scenes (`tha`) {#scope-type}
 
-> `zolazun ganumuthal.`
+> `zalazun ganomuthal.`
 >
-> z-Olazun | g-anxious-th-type
+> z-Alazun | g-anxious-th-type
 >
-> "Olazun is an anxious type."
+> "Alazun is an anxious type."
 
-On a [role compound](roles.md#one-time-or-a-practice) the same vowel sits after **`w`**: `zwazuduyel` is *a teacher type*.
+On a [role compound](roles.md#one-time-or-a-practice) the same vowel sits after **`w`**: `zwazeduyol` is *a teacher type*.
 
 #### On a role compound {#scope-role}
 
-These are the same vowels, written right after **`w`** on a [role compound](roles.md#role-compounds): there they scope the role, not the act. `gwozuduyel` is *is a teacher*, `gwuzuduyel` *is one who teaches (this time)*, and `zwazuduyel` *a teacher type*.
+These are the same vowels, written right after **`w`** on a [role compound](roles.md#role-compounds): there they scope the role, not the act. `gwozeduyol` is *is a teacher*, `gwuzeduyol` *is one who teaches (this time)*, and `zwazeduyol` *a teacher type*.
 
-> `zwazuduyel varuvel.`
+> `zwazeduyol veruvol.`
 >
 > z-type-agent-teach | v-run
 >
 > "A teacher type runs."
 
-A role word takes no **`th`** seam after its stem: its scope is written once, at the front. Scope on a plain verb stem (`vuduyethul`) scopes the teaching.
+A role word takes no **`th`** seam after its stem: its scope is written once, at the front. Scope on a plain verb stem (`veduyothul`) scopes the teaching.
 
-**Compare with:** the **`th`** seam scopes the word itself (the act on a verb, the quality on an adjective, the manner on an adverb), and the verb keeps the rest of its clause: `zuzozen valamuthul bolazun.` is *Uzozen lied to Olazun, this once*. A role compound names the person by their part: `zuzozen gwozalamul.` is *Uzozen is a liar*.
+**Compare with:** the **`th`** seam scopes the word itself (the act on a verb, the quality on an adjective, the manner on an adverb), and the verb keeps the rest of its clause: `zazozon vulamuthul balazun.` is *Azozon lied to Alazun, this once*. A role compound names the person by their part: `zazozon gwozulamul.` is *Azozon is a liar*.
 
 #### Stacked scope {#scope-stacks}
 
-The four scope vowels also combine in pairs, the same pairs that [joins](joins.md) and [hooks](hooks.md#extra-noun) use. A pair that starts with **`u`** reads like a join's *everything but*: **`u`** is every scene, and the second vowel is the one set aside (*every time but this one*, *with everyone but Olazun*, *as themselves, not in the role*). The other pairs read like the extra-noun hooks: **`ae`** *over*, **`ao`** *using*, **`oe`** *toward*. Do not read them as the first vowel's meaning followed by the second's. Do not read a stack as the new simplex letters glued together.
+The four scope vowels also combine in pairs, the same pairs that [joins](joins.md) and [hooks](hooks.md#extra-noun) use. A pair that starts with **`u`** reads like a join's *everything but*: **`u`** is every scene, and the second vowel is the one set aside (*every time but this one*, *with everyone but Alazun*, *as themselves, not in the role*). The other pairs read like the extra-noun hooks: **`ae`** *over*, **`ao`** *using*, **`oe`** *toward*. Do not read them as the first vowel's meaning followed by the second's. Do not read a stack as the new simplex letters glued together.
 
 <!-- cheat-sheet: word-shape-clause -->
 | Agebon | Use | English | Cue |
@@ -111,82 +111,82 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 | **`thao`** | **using** the role for a purpose | *playing the teacher* | **ao** ≈ using |
 | **`thoe`** | **toward** the role | *becoming a teacher* | **oe** ≈ toward |
 | **`thua`** | type, **except** this episode | *a teacher type, except this time* | **ua** ≈ everything but: every time but this one |
-| **`thue`** | type, **except** this pair | *a teacher type, except with Olazun* | **ue** ≈ anything but: everyone but this one |
+| **`thue`** | type, **except** this pair | *a teacher type, except with Alazun* | **ue** ≈ anything but: everyone but this one |
 | **`thuo`** | as themselves, **not in that role** | *not as a teacher* (off duty) | **uo** ≈ every scene but the role |
 
-> `zolazun gunemuthael.`
+> `zalazun gonumuthael.`
 >
-> z-Olazun | g-angry-th-situation
+> z-Alazun | g-angry-th-situation
 >
-> "Olazun is angry, but it's the situation, not Olazun."
+> "Alazun is angry, but it's the situation, not Alazun."
 
-> `zolazun gunemuthael blerulal.`
+> `zalazun gonumuthael blerulal.`
 >
-> z-Olazun | [g-angry-th-situation | bl-rain]
+> z-Alazun | [g-angry-th-situation | bl-rain]
 >
-> "Olazun is angry, but it's the rain, not Olazun."
+> "Alazun is angry, but it's the rain, not Alazun."
 
-> `zuwon gwaozuduyel.`
+> `zuwen gwaozeduyol.`
 >
 > z-speaker | g-using-agent-teach
 >
 > "I'm playing the teacher." (taking on the role for a purpose)
 
-> `zolazun gwoezuduyel.`
+> `zalazun gwoezeduyol.`
 >
-> z-Olazun | g-toward-role-agent-teach
+> z-Alazun | g-toward-role-agent-teach
 >
-> "Olazun is becoming a teacher."
+> "Alazun is becoming a teacher."
 
-> `zuzozen valamuthual.`
+> `zazozon vulamuthual.`
 >
-> z-Uzozen | v-lie-th-except-episode
+> z-Azozon | v-lie-th-except-episode
 >
-> "Uzozen is a lying type, except this time."
+> "Azozon is a lying type, except this time."
 
-> `zuzozen gunemuthuel blolazun.`
+> `zazozon gonumuthuel blalazun.`
 >
-> z-Uzozen | [g-angry-th-except-pair | bl-Olazun]
+> z-Azozon | [g-angry-th-except-pair | bl-Alazun]
 >
-> "Uzozen is an angry type, except with Olazun."
+> "Azozon is an angry type, except with Alazun."
 
-> `zuzozen gwuozuduyel.`
+> `zazozon gwuozeduyol.`
 >
-> z-Uzozen | g-outside-role-agent-teach
+> z-Azozon | g-outside-role-agent-teach
 >
-> "Uzozen is not a teacher here."
+> "Azozon is not a teacher here."
 
-> `zuzozen gwaezuduyel.`
+> `zazozon gwaezeduyol.`
 >
-> z-Uzozen | g-situation-agent-teach
+> z-Azozon | g-situation-agent-teach
 >
-> "Uzozen is a teacher by circumstance." (the situation made them one)
+> "Azozon is a teacher by circumstance." (the situation made them one)
 
-> `zwuazuduyel varuvel.`
+> `zwuazeduyol veruvol.`
 >
 > z-except-episode-agent-teach | v-run
 >
 > "A teacher type, except this time, runs."
 
-> `zuzozen gwuezuduyel blolazun.`
+> `zazozon gwuezeduyol blalazun.`
 >
-> z-Uzozen | [g-except-pair-agent-teach | bl-Olazun]
+> z-Azozon | [g-except-pair-agent-teach | bl-Alazun]
 >
-> "Uzozen is a teacher type, except with Olazun."
+> "Azozon is a teacher type, except with Alazun."
 
-> `zuzozen valamuthaol.`
+> `zazozon vulamuthaol.`
 >
-> z-Uzozen | v-lie-th-using
+> z-Azozon | v-lie-th-using
 >
-> "Uzozen is using lying as a tool."
+> "Azozon is using lying as a tool."
 
-> `zolazun valamuthoel.`
+> `zalazun vulamuthoel.`
 >
-> z-Olazun | v-lie-th-toward-role
+> z-Alazun | v-lie-th-toward-role
 >
-> "Olazun is becoming a liar."
+> "Alazun is becoming a liar."
 
-> `zuwon vezuyethuol bawan.`
+> `zuwen vezuyothuol bawan.`
 >
 > z-speaker | v-tell-th-outside-role | b-listener
 >
@@ -204,67 +204,67 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *frame* | `uvogal` | 🖼️ |
-| *anxious* | `anumul` | 😰 |
-| *strangeness* | `olayom` | 👽 from *alien* |
-| *teach* | `vuduyel` | 🧑‍🏫 |
+| *frame* | `evogal` | 🖼️ |
+| *anxious* | `anomul` | 😰 |
+| *strangeness* | `ulayem` | 👽 from *alien* |
+| *teach* | `veduyol` | 🧑‍🏫 |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *angry* | `unemul` |
-| *lie* | `valamul` |
-| *see* | `vawebol` |
+| *angry* | `onumul` |
+| *lie* | `vulamul` |
+| *see* | `vayebel` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *Ahelan is angry this time.*
 
 ::: details Show answer
-`zahelan gunemuthul.`
+`zahelan gonumuthul.`
 
 z-Ahelan | g-angry-th-episode
 :::
 
-**2.** *Uzozen is a teacher to Olazun.*
+**2.** *Azozon is a teacher to Alazun.*
 
 ::: details Show answer
-`zuzozen gwezuduyel blolazun.`
+`zazozon gwezeduyol blalazun.`
 
-z-Uzozen | [g-pair-agent-teach | bl-Olazun]
+z-Azozon | [g-pair-agent-teach | bl-Alazun]
 :::
 
 **3.** *Ahelan lied, but it was the situation, not Ahelan.*
 
 ::: details Show answer
-`zahelan valamuthael.`
+`zahelan vulamuthael.`
 
 z-Ahelan | v-lie-th-situation
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zuzozen ganumuthal.`
+**1.** `zazozon ganomuthal.`
 
 ::: details Show answer
-z-Uzozen | g-anxious-th-type
+z-Azozon | g-anxious-th-type
 
-*Uzozen is an anxious type.*
+*Azozon is an anxious type.*
 :::
 
-**2.** `zuzozen valamuthel blolazun.`
+**2.** `zazozon vulamuthel blalazun.`
 
 ::: details Show answer
-z-Uzozen | [v-lie-th-pair | bl-Olazun]
+z-Azozon | [v-lie-th-pair | bl-Alazun]
 
-*With Olazun, Uzozen lies.*
+*With Alazun, Azozon lies.*
 :::
 
-**3.** `zwazuduyel duvogal vawebol.`
+**3.** `zwazeduyol devogal vayebel.`
 
 ::: details Show answer
 z-type-agent-teach | d-frame | v-see
@@ -272,34 +272,34 @@ z-type-agent-teach | d-frame | v-see
 *A teacher type sees a frame.*
 :::
 
-**4.** `zolazun gwoezuduyel.`
+**4.** `zalazun gwoezeduyol.`
 
 ::: details Show answer
-z-Olazun | g-toward-role-agent-teach
+z-Alazun | g-toward-role-agent-teach
 
-*Olazun is becoming a teacher.*
+*Alazun is becoming a teacher.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Olazun is anxious this time.* `zolazun ganumuthul.` or `zolazun ganumuthal.`
+**1.** *Alazun is anxious this time.* `zalazun ganomuthul.` or `zalazun ganomuthal.`
 
 ::: details Show answer
-`zolazun ganumuthul.`
+`zalazun ganomuthul.`
 
-z-Olazun | g-anxious-th-episode
+z-Alazun | g-anxious-th-episode
 
-**`thu`** keeps the label to this episode; **`tha`** would make Olazun an anxious type.
+**`thu`** keeps the label to this episode; **`tha`** would make Alazun an anxious type.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Uzozen is a stranger to Ahelan.* <!-- lint: error -->`zuzozen bahelan golayothom.`
+**1.** *Azozon is a stranger to Ahelan.* <!-- lint: error -->`zazozon bahelan gulayethom.`
 
 ::: details Show answer
-`zuzozen golayothem blahelan.`
+`zazozon gulayethem blahelan.`
 
-z-Uzozen | [g-strangeness-th-pair | bl-Ahelan]
+z-Azozon | [g-strangeness-th-pair | bl-Ahelan]
 
 The other party goes in `/b/` right **after** the **`the`** word.
 :::

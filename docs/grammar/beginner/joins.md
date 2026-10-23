@@ -19,25 +19,25 @@ The join’s first letter matches the items: `zam` after two `/z/` nouns, `vam` 
 
 The ending says whether the list is complete. Closed **-l** means these are the only items, so the English needs no extra words. Open **-m** means other members may exist: add *(and possibly more)*. When unsure, prefer **-m**.
 
-> `zudozol zagozol zal.`
+> `zodozel zogozel zal.`
 >
 > [z-dog | z-cat | z-and]
 >
 > "a dog and a cat."
 
-> `zudozol zagozol zam.`
+> `zodozel zogozel zam.`
 >
 > [z-dog | z-cat | z-and.open]
 >
 > "a dog and a cat." (and possibly more)
 
-> `zuzozen zolazun zam.`
+> `zazozon zalazun zam.`
 >
-> [z-Uzozen | z-Olazun | z-and.open]
+> [z-Azozon | z-Alazun | z-and.open]
 >
-> "Uzozen and Olazun." (and possibly more)
+> "Azozon and Alazun." (and possibly more)
 
-> `vowurel varuvel vam.`
+> `vowurol veruvol vam.`
 >
 > [v-walk | v-run | v-and.open]
 >
@@ -45,47 +45,47 @@ The ending says whether the list is complete. Closed **-l** means these are the 
 
 Whatever the join, the whole list fills one role in the clause. A [role pointer](pronouns.md#role-pointers) back to that role picks up the whole group:
 
-> `zuzozen zolazun zal vowurel. zwuzer vuhohol.`
+> `zazozon zalazun zal vowurol. zwuzer vehohel.`
 >
-> [z-Uzozen | z-Olazun | z-and] | v-walk . z-←episode-agent.same | v-sit
+> [z-Azozon | z-Alazun | z-and] | v-walk . z-←episode-agent.same | v-sit
 >
-> "Uzozen and Olazun walk. They sit." (both of them)
+> "Azozon and Alazun walk. They sit." (both of them)
 
 ### Right-close fence {#right-close}
 <a id="join-series-ending-shared"></a>
 
 Write the items first, then the join. Readers treat the items up to that join as one role in the clause, filled by several members. A flat list needs only one join, at its end.
 
-The join is never optional. Two nouns of the same role side by side, or two verbs, must close with one, because only the join says how the items combine: *Uzozen and Olazun walk* is `zuzozen zolazun zal vowurel.`, never the two names alone. Two verbs in one clause take the join even with other words between them. The join takes every item right before it, back to the last word of another role. Adjectives and adverbs are different: a row of them needs no join, because each one describes on its own ([clause](clause.md#adjectives-ɡ)).
+The join is never optional. Two nouns of the same role side by side, or two verbs, must close with one, because only the join says how the items combine: *Azozon and Alazun walk* is `zazozon zalazun zal vowurol.`, never the two names alone. Two verbs in one clause take the join even with other words between them. The join takes every item right before it, back to the last word of another role. Adjectives and adverbs are different: a row of them needs no join, because each one describes on its own ([clause](clause.md#adjectives-ɡ)).
 
 Two full clauses are the one exception: the join that starts with `x` goes **between** them, so you hear how the clauses relate before the second one starts.
 
 Objects and extra nouns list the same way. Two `/d/` objects close with `dal`; two `/b/` recipients close with `bal`.
 
-> `zuzozen dudozol dagozol dal vawebol.`
+> `zazozon dodozel dogozel dal vayebel.`
 >
-> z-Uzozen | [d-dog | d-cat | d-and] | v-see
+> z-Azozon | [d-dog | d-cat | d-and] | v-see
 >
-> "Uzozen sees a dog and a cat."
+> "Azozon sees a dog and a cat."
 
-> `zuzozen vezuyel bolazun bahelan bal.`
+> `zazozon vezuyol balazun bahelan bal.`
 >
-> z-Uzozen | v-tell | [b-Olazun | b-Ahelan | b-and]
+> z-Azozon | v-tell | [b-Alazun | b-Ahelan | b-and]
 >
-> "Uzozen tells Olazun and Ahelan."
+> "Azozon tells Alazun and Ahelan."
 
 ### Choice (`e`) {#choice-e}
 <a id="empty-allowed-om"></a>
 
 When English would offer a menu and ask to *pick one*, or leave the pick *(optional)*, use vowel **e**. Closed **-l** (`zel`) means pick one of the listed items. Open **-m** (`zem`) means the pick is optional. (cue: **e** ≈ either.)
 
-> `zududal zugudal zel.`
+> `zedudal zogudal zel.`
 >
 > [z-tea | z-coffee | z-or-exactly-one]
 >
 > "tea or coffee." (pick one)
 
-> `zugudal zem.`
+> `zogudal zem.`
 >
 > [z-coffee | z-or.open]
 >
@@ -102,41 +102,41 @@ The join still comes last when there is only one item, or none. How many items s
 | **Single-item** (1) | `A zal` | that one item is the whole story | *just X* |
 | **Standalone** (0) | `zam` | the join alone | *nothing, as far as I know* |
 
-> `zuzozen zal.`
+> `zazozon zal.`
 >
-> [z-Uzozen | z-and]
+> [z-Azozon | z-and]
 >
-> "just Uzozen."
+> "just Azozon."
 
 Single-item **-l** also covers English *just* in the sense *merely*: the one item is all there is, with nothing more to it.
 
-> `zuzozen dagozol dal vawebol.`
+> `zazozon dogozel dal vayebel.`
 >
-> z-Uzozen | [d-cat | d-and] | v-see
+> z-Azozon | [d-cat | d-and] | v-see
 >
-> "Uzozen sees just a cat, nothing more."
+> "Azozon sees just a cat, nothing more."
 
 A standalone join fills its slot with no items. In the object slot, `dal` is *nothing*; in the extra-noun slot, `bal` is *nobody*.
 
-> `zuzozen dal vawebol.`
+> `zazozon dal vayebel.`
 >
-> z-Uzozen | d-none | v-see
+> z-Azozon | d-none | v-see
 >
-> "Uzozen sees nothing."
+> "Azozon sees nothing."
 
-> `zuzozen vezuyel bal.`
+> `zazozon vezuyol bal.`
 >
-> z-Uzozen | v-tell | b-none
+> z-Azozon | v-tell | b-none
 >
-> "Uzozen tells nobody."
+> "Azozon tells nobody."
 
 Right after a word that takes a [`bl-` partner](clause.md#extra-nouns), a standalone join is that whole partner, so it takes `bl-` too. Written plain, it would be the one who receives.
 
-> `zuzozen vowurel hewom blal.`
+> `zazozon vowurol hewem blal.`
 >
-> z-Uzozen | v-walk | [h-like | bl-none]
+> z-Azozon | v-walk | [h-like | bl-none]
 >
-> "Uzozen walks like nobody."
+> "Azozon walks like nobody."
 
 ### Negation (`u`) {#negation-u}
 
@@ -148,13 +148,13 @@ When English would deny the listed items, use vowel **u**. One item before `zul`
 >
 > "not challenging."
 
-> `zuzozen zul.`
+> `zazozon zul.`
 >
-> [z-Uzozen | z-not]
+> [z-Azozon | z-not]
 >
-> "not Uzozen."
+> "not Azozon."
 
-> `zududal zugudal zul.`
+> `zedudal zogudal zul.`
 >
 > [z-tea | z-coffee | z-not]
 >
@@ -177,11 +177,11 @@ The *and* / *or* / *not* joins above are **set** joins: the items share a slot a
 
 Write the items in that order, then a join with vowel **o**. The earlier item outranks the later. One item before `zol` means *only X matters*; before `zom`, *X first* / *mainly X*. (cue: **o** ≈ order.)
 
-> `zuzozen zol.`
+> `zazozon zol.`
 >
-> [z-Uzozen | z-rank/more]
+> [z-Azozon | z-rank/more]
 >
-> "only Uzozen matters."
+> "only Azozon matters."
 
 ### Unspecified member (`-r`) {#unspecified-member-r-phrase}
 
@@ -200,13 +200,13 @@ When English says *something* or *someone*, or *one of these* without saying whi
 >
 > "something" / "someone."
 
-> `zeyol zar.`
+> `zeyel zar.`
 >
 > [z-person | z-something]
 >
 > "some person." (unknown who)
 
-> `zududal zugudal zar.`
+> `zedudal zogudal zar.`
 >
 > [z-tea | z-coffee | z-something]
 >
@@ -216,17 +216,17 @@ Write A and B, then `zar`: the join still closes the list, and **-r** means some
 
 When English says *some of them* or *some people*, more than one, add [**-x**](plurality.md#associative) after the **-r**. The join then stands for a group of members you are not naming.
 
-> `zarx vowurel.`
+> `zarx vowurol.`
 >
 > z-something-x | v-walk
 >
 > "Some of them walk."
 
-> `zuzozen zolazun zahelan zarx vowurel.`
+> `zazozon zalazun zahelan zarx vowurol.`
 >
-> [z-Uzozen | z-Olazun | z-Ahelan | z-something-x] | v-walk
+> [z-Azozon | z-Alazun | z-Ahelan | z-something-x] | v-walk
 >
-> "Some of Uzozen, Olazun, and Ahelan walk."
+> "Some of Azozon, Alazun, and Ahelan walk."
 
 **-x** goes after **-r** only. A closed or open empty set already covers every member.
 
@@ -276,17 +276,17 @@ With two or more items, each join reads as taught above. This table collects the
 
 A clause is long, so a join that waits until the end would leave you holding two whole sentences before you learn how they relate. A clause join that starts with `x` therefore goes **between** the clauses: first clause, join, second clause. Every other join still closes its list on the right.
 
-> `zuzozen vowurel xam zolazun varuvel.`
+> `zazozon vowurol xam zalazun veruvol.`
 >
-> [z-Uzozen | v-walk | x-and.open | z-Olazun | v-run]
+> [z-Azozon | v-walk | x-and.open | z-Alazun | v-run]
 >
-> "Uzozen walks and Olazun runs." (and possibly more)
+> "Azozon walks and Alazun runs." (and possibly more)
 
-> `zuzozen vowurel xel zolazun varuvel xel zahelan vezuvol.`
+> `zazozon vowurol xel zalazun veruvol xel zahelan vezuvel.`
 >
-> [z-Uzozen | v-walk | x-or-exactly-one | z-Olazun | v-run | x-or-exactly-one | z-Ahelan | v-sleep]
+> [z-Azozon | v-walk | x-or-exactly-one | z-Alazun | v-run | x-or-exactly-one | z-Ahelan | v-sleep]
 >
-> "Uzozen walks, or Olazun runs, or Ahelan sleeps: exactly one of the three."
+> "Azozon walks, or Alazun runs, or Ahelan sleeps: exactly one of the three."
 
 Repeating the same join word keeps the list flat. Switching to a **different** join word closes everything before it as one group: `A xel B xal C` is *(A or B) and C*.
 
@@ -294,21 +294,21 @@ So a group always sits on the left. The set joins **a** / **e** / **u** ignore o
 
 After a stand-in such as **`derl`** or **`blarl`**, every clause joined in the same sentence belongs to the dependent clause. A clause meant for the main sentence also starts a new sentence.
 
-> `zuzozen vowurel. xan zolazun varuvel xel zahelan vezuvol.`
+> `zazozon vowurol. xan zalazun veruvol xel zahelan vezuvel.`
 >
-> z-Uzozen | v-walk . x-and-then | [z-Olazun | v-run | x-or-exactly-one | z-Ahelan | v-sleep]
+> z-Azozon | v-walk . x-and-then | [z-Alazun | v-run | x-or-exactly-one | z-Ahelan | v-sleep]
 >
-> "Uzozen walks. Then Olazun runs or Ahelan sleeps."
+> "Azozon walks. Then Alazun runs or Ahelan sleeps."
 
-A clause join never sits on one clause alone. To deny or single out one clause, put the join on the part you mean: **`vowurel vul`** *does not walk*, **`zuzozen zal`** *only Uzozen*.
+A clause join never sits on one clause alone. To deny or single out one clause, put the join on the part you mean: **`vowurol vul`** *does not walk*, **`zazozon zal`** *only Azozon*.
 
 A join word with no clause before it stands for a clause of its own: `xal.` *nothing happened*, `xar` *something happened*, `xur` *something else happened*, `xual` *everything happened*. That join word can also be one item of a clause list:
 
 | Agebon | English |
 |--------|---------|
-| `zuzozen vowurel xam xar.` | *Uzozen walks, for one* (and something else happened too) |
-| `zuzozen vowurel xel xal.` | *Uzozen may walk* (Uzozen walks, or nothing happens) |
-| `zuzozen vowurel xol xur.` | *mainly, Uzozen walks* (that outranks anything else) |
+| `zazozon vowurol xam xar.` | *Azozon walks, for one* (and something else happened too) |
+| `zazozon vowurol xel xal.` | *Azozon may walk* (Azozon walks, or nothing happens) |
+| `zazozon vowurol xol xur.` | *mainly, Azozon walks* (that outranks anything else) |
 
 **Compare with:** a sentence linker (*therefore*, *however*) also starts the next sentence, but it is a content word with its own meaning ([continue](dependents.md#continue-x)).
 
@@ -322,35 +322,35 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *bread* | `ebodol` | 🍞 |
-| *tomato* | `udedol` | 🍅 |
-| *mango* | `emedol` | 🥭 |
-| *watermelon* | `owodol` | 🍉 |
+| *bread* | `obodel` | 🍞 |
+| *tomato* | `odedel` | 🍅 |
+| *mango* | `amedel` | 🥭 |
+| *watermelon* | `owodel` | 🍉 |
 | *cart* | `ogowal` | 🛒 |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *pay* | `varal` |
 | *basket* | `abowal` |
-| *see* | `vawebol` |
-| *scream* | `varemul` |
-| *big* | `gelazom` |
+| *see* | `vayebel` |
+| *scream* | `veyamul` |
+| *big* | `gelazem` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *Uzozen sees a mango and a watermelon.*
+**1.** *Azozon sees a mango and a watermelon.*
 
 ::: details Show answer
-`zuzozen demedol dowodol dal vawebol.`
+`zazozon damedel dowodel dal vayebel.`
 
-z-Uzozen | [d-mango | d-watermelon | d-and] | v-see
+z-Azozon | [d-mango | d-watermelon | d-and] | v-see
 
-**Also correct:** `zuzozen vawebol demedol dowodol dal.`
+**Also correct:** `zazozon vayebel damedel dowodel dal.`
 :::
 
 **2.** *Ahelan pays nobody.*
@@ -371,34 +371,34 @@ z-Ahelan | v-pay | b-none
 [z-cart | z-not]
 :::
 
-**4.** *Olazun pays and Uzozen sees a basket.* (and possibly more)
+**4.** *Alazun pays and Azozon sees a basket.* (and possibly more)
 
 ::: details Show answer
-`zolazun varal xam zuzozen dabowal vawebol.`
+`zalazun varal xam zazozon dabowal vayebel.`
 
-[z-Olazun | v-pay | x-and.open | z-Uzozen | d-basket | v-see]
+[z-Alazun | v-pay | x-and.open | z-Azozon | d-basket | v-see]
 :::
 
-**5.** *only Uzozen matters*
+**5.** *only Azozon matters*
 
 ::: details Show answer
-`zuzozen zol.`
+`zazozon zol.`
 
-[z-Uzozen | z-rank/more]
+[z-Azozon | z-rank/more]
 :::
 
-**6.** *Some of Uzozen, Olazun, and Ahelan pay.*
+**6.** *Some of Azozon, Alazun, and Ahelan pay.*
 
 ::: details Show answer
-`zuzozen zolazun zahelan zarx varal.`
+`zazozon zalazun zahelan zarx varal.`
 
-[z-Uzozen | z-Olazun | z-Ahelan | z-something-x] | v-pay
+[z-Azozon | z-Alazun | z-Ahelan | z-something-x] | v-pay
 :::
 
 **7.** *not big*
 
 ::: details Show answer
-`gelazom gul.`
+`gelazem gul.`
 
 [g-big | g-not]
 :::
@@ -421,7 +421,7 @@ z-everything-but
 *everything* / *everyone*
 :::
 
-**3.** `zebodol zar.`
+**3.** `zobodel zar.`
 
 ::: details Show answer
 [z-bread | z-something]
@@ -429,7 +429,7 @@ z-everything-but
 *some bread* (unknown which)
 :::
 
-**4.** `zemedol zudedol zul.`
+**4.** `zamedel zodedel zul.`
 
 ::: details Show answer
 [z-mango | z-tomato | z-not]
@@ -437,52 +437,52 @@ z-everything-but
 *neither a mango nor a tomato*
 :::
 
-**5.** `zuzozen dal vawebol.`
+**5.** `zazozon dal vayebel.`
 
 ::: details Show answer
-z-Uzozen | d-none | v-see
+z-Azozon | d-none | v-see
 
-*Uzozen sees nothing.*
+*Azozon sees nothing.*
 :::
 
-**6.** `zolazun varemul xel zahelan varal.`
+**6.** `zalazun veyamul xel zahelan varal.`
 
 ::: details Show answer
-[z-Olazun | v-scream | x-or-exactly-one | z-Ahelan | v-pay]
+[z-Alazun | v-scream | x-or-exactly-one | z-Ahelan | v-pay]
 
-*Olazun screams or Ahelan pays: exactly one of the two.*
+*Alazun screams or Ahelan pays: exactly one of the two.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *a watermelon or a tomato* (pick one) `zowodol zudedol zel.` or `zowodol zudedol zem.`
+**1.** *a watermelon or a tomato* (pick one) `zowodel zodedel zel.` or `zowodel zodedel zem.`
 
 ::: details Show answer
-`zowodol zudedol zel.`
+`zowodel zodedel zel.`
 
 [z-watermelon | z-tomato | z-or-exactly-one]
 
 Closed **-l** means pick one of these; **-m** leaves the pick open.
 :::
 
-**2.** *Uzozen sees just bread.* `zuzozen debodol dal vawebol.` or `zuzozen debodol dam vawebol.`
+**2.** *Azozon sees just bread.* `zazozon dobodel dal vayebel.` or `zazozon dobodel dam vayebel.`
 
 ::: details Show answer
-`zuzozen debodol dal vawebol.`
+`zazozon dobodel dal vayebel.`
 
-z-Uzozen | [d-bread | d-and] | v-see
+z-Azozon | [d-bread | d-and] | v-see
 
 One item before closed **`dal`** is the whole story; `dam` is *bread, for one*.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Uzozen and Olazun see a cart.* <!-- lint: error -->`zuzozen zam zolazun dogowal vawebol.`
+**1.** *Azozon and Alazun see a cart.* <!-- lint: error -->`zazozon zam zalazun dogowal vayebel.`
 
 ::: details Show answer
-`zuzozen zolazun zal dogowal vawebol.`
+`zazozon zalazun zal dogowal vayebel.`
 
-[z-Uzozen | z-Olazun | z-and] | d-cart | v-see
+[z-Azozon | z-Alazun | z-and] | d-cart | v-see
 
 The join closes the list after **both** items, not between them as English *and* does.
 :::

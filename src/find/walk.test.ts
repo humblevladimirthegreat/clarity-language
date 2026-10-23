@@ -51,7 +51,7 @@ describe("source and TSV spans", () => {
     );
     const out = rewritePlainSpans(source, [{ example: sentence, nextSource: rewritten.nextSource }], tables);
     assert.equal(out.parseErrors.length, 0);
-    assert.match(out.text, /zuzozen zel vowurel\./);
+    assert.match(out.text, /zazozon zel vowurol\./);
     assert.equal(out.text.includes(sentence.source), false);
   });
 
@@ -63,7 +63,7 @@ describe("source and TSV spans", () => {
     const hits = cell.words.flatMap((w, i) => (w.word.raw === "zol" ? [i] : []));
     const rewritten = rewriteExample(cell, hits, parseMap("series=e:o"));
     const out = rewritePlainSpans(text, [{ example: cell, nextSource: rewritten.nextSource }], tables);
-    assert.match(out.text, /zuzozen zol vowurel\./);
+    assert.match(out.text, /zazozon zol vowurol\./);
   });
 
   it("does not list a lone letter as a skip for a hook form map", () => {

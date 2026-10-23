@@ -21,15 +21,15 @@ describe("splitFreeEnglish", () => {
   const one = (sentence: string, note: string | null = null) => ({ sentence, note, parts: [sentence], join: "one" });
 
   it("splits a quoted sentence and its note", () => {
-    assert.deepEqual(splitFreeEnglish('"Uzozen walks."'), one("Uzozen walks."));
+    assert.deepEqual(splitFreeEnglish('"Azozon walks."'), one("Azozon walks."));
     assert.deepEqual(splitFreeEnglish('"tea or coffee." (pick one)'), one("tea or coffee.", "pick one"));
     assert.deepEqual(splitFreeEnglish('"A." (whose (left))'), one("A.", "whose (left)"));
     assert.deepEqual(splitFreeEnglish("*3 to 5* (`[3, 5)`)", "*"), one("3 to 5", "`[3, 5)`"));
   });
 
   it("splits italics in a checkpoint", () => {
-    assert.deepEqual(splitFreeEnglish("*Ahelan sees that Olazun sneaks.*", "*"), one("Ahelan sees that Olazun sneaks."));
-    assert.deepEqual(splitFreeEnglish("*Uzozen sits.* (no one is to blame)", "*"), one("Uzozen sits.", "no one is to blame"));
+    assert.deepEqual(splitFreeEnglish("*Ahelan sees that Alazun sneaks.*", "*"), one("Ahelan sees that Alazun sneaks."));
+    assert.deepEqual(splitFreeEnglish("*Azozon sits.* (no one is to blame)", "*"), one("Azozon sits.", "no one is to blame"));
   });
 
   it("splits alternatives and takes the first as the sentence", () => {
@@ -54,7 +54,7 @@ describe("splitFreeEnglish", () => {
       parts: ["Walk.", "Will do."],
       join: "turns",
     });
-    assert.equal(splitFreeEnglish("*Didn’t Uzozen tell?* *True, Uzozen didn’t.*", "*")?.join, "turns");
+    assert.equal(splitFreeEnglish("*Didn’t Azozon tell?* *True, Azozon didn’t.*", "*")?.join, "turns");
   });
 
   it("rejects every other shape", () => {
@@ -63,32 +63,32 @@ describe("splitFreeEnglish", () => {
     assert.equal(splitFreeEnglish('"A." (one).'), null);
     assert.equal(splitFreeEnglish('"A." You name yourself.'), null);
     assert.equal(splitFreeEnglish('"A." (one) "B."'), null);
-    assert.equal(splitFreeEnglish("*Uzozen sits* (no one is to blame).", "*"), null);
-    assert.equal(splitFreeEnglish("*Didn’t Uzozen tell?* Then confirm: *true, Uzozen didn’t.*", "*"), null);
+    assert.equal(splitFreeEnglish("*Azozon sits* (no one is to blame).", "*"), null);
+    assert.equal(splitFreeEnglish("*Didn’t Azozon tell?* Then confirm: *true, Azozon didn’t.*", "*"), null);
     assert.equal(splitFreeEnglish("A."), null);
   });
 });
 
 describe("parenGroups", () => {
   it("counts top-level groups only", () => {
-    assert.equal(parenGroups("Uzozen walks."), 0);
-    assert.equal(parenGroups("Uzozen (A) and Olazun (E) harvest."), 2);
-    assert.equal(parenGroups("Uzozen walks (quietly (very))."), 1);
+    assert.equal(parenGroups("Azozon walks."), 0);
+    assert.equal(parenGroups("Azozon (A) and Alazun (E) harvest."), 2);
+    assert.equal(parenGroups("Azozon walks (quietly (very))."), 1);
   });
 });
 
 describe("extraParens", () => {
   it("allows one group per aside or scope island", () => {
-    assert.equal(extraParens("Uzozen walks (quietly).", "z-Uzozen | v-walk | ASIDE[th-quiet]"), 0);
-    assert.equal(extraParens("Uzozen and (just water).", "[z-Uzozen | SCOPE[z-water | z-and] | z-and.open]"), 0);
-    assert.equal(extraParens("Uzozen walks (as mechanism).", "z-Uzozen | v-walk"), 1);
+    assert.equal(extraParens("Azozon walks (quietly).", "z-Azozon | v-walk | ASIDE[th-quiet]"), 0);
+    assert.equal(extraParens("Azozon and (just water).", "[z-Azozon | SCOPE[z-water | z-and] | z-and.open]"), 0);
+    assert.equal(extraParens("Azozon walks (as mechanism).", "z-Azozon | v-walk"), 1);
   });
 
   it("allows a letter group only for a tag the gloss sets", () => {
     const gloss = "[[z-dog | z-tag.A] | [z-cat | z-tag.E] | z-and.open] | v-walk . z-←tag.A+E | v-run";
     assert.equal(extraParens("A dog (A) and a cat (E) walk. A and E run.", gloss), 0);
     assert.equal(extraParens("A dog (A) walks (quietly).", gloss), 1);
-    assert.equal(extraParens("Uzozen (A) punches.", "z-Uzozen | d-←tag.A | v-punch"), 1);
+    assert.equal(extraParens("Azozon (A) punches.", "z-Azozon | d-←tag.A | v-punch"), 1);
   });
 });
 
@@ -96,16 +96,16 @@ describe("noteFindings", () => {
   const kinds = (note: string) => noteFindings(note, labels).map((f) => f.kind);
 
   it("allows plain English", () => {
-    for (const note of ["pick one", "the surprise is Uzozen's", "an open list", "a cause, and no one is blamed", "Uzozen's left", "he/she/they"]) {
+    for (const note of ["pick one", "the surprise is Azozon's", "an open list", "a cause, and no one is blamed", "Azozon's left", "he/she/they"]) {
       assert.deepEqual(kinds(note), [], note);
     }
   });
 
   it("flags forms, labels, and grammar terms", () => {
-    assert.deepEqual(kinds("`zwuzer` would be Olazun"), ["note-form"]);
+    assert.deepEqual(kinds("`zwuzer` would be Alazun"), ["note-form"]);
     assert.deepEqual(kinds("/w/ does not retarget it"), ["note-form"]);
     assert.deepEqual(kinds("PATTERN is the baseline"), ["note-label"]);
-    assert.deepEqual(kinds("mirative with an Uzozen holder"), ["note-term", "note-term"]);
+    assert.deepEqual(kinds("mirative with an Azozon holder"), ["note-term", "note-term"]);
     assert.deepEqual(kinds("say [how you know it](holder.md#holder)"), []);
     assert.deepEqual(kinds("takes a [holder](holder.md#holder)"), ["note-term"]);
   });
@@ -119,16 +119,16 @@ describe("noteFindings", () => {
 describe("extractFreeEnglish", () => {
   it("reads example blocks with or without a morph line", () => {
     const md = [
-      "> `zuzozen vowurel.`",
+      "> `zazozon vowurol.`",
       ">",
-      '> "Uzozen walks." (alone)',
+      '> "Azozon walks." (alone)',
       "",
-      "> `zuzozen vuduyel.`",
-      "> `zwuzuduyer vezuvol.`",
+      "> `zazozon veduyol.`",
+      "> `zwuzeduyor vezuvel.`",
       ">",
-      "> z-Uzozen | v-teach . z-←episode-agent-teach | v-sleep",
+      "> z-Azozon | v-teach . z-←episode-agent-teach | v-sleep",
       ">",
-      '> "Uzozen teaches. The one teaching sleeps."',
+      '> "Azozon teaches. The one teaching sleeps."',
       "",
       '> "English only."',
     ].join("\n");
@@ -136,15 +136,15 @@ describe("extractFreeEnglish", () => {
     assert.equal(lines.length, 2);
     assert.deepEqual(lines[0], {
       kind: "example",
-      agebon: "zuzozen vowurel.",
+      agebon: "zazozon vowurol.",
       morph: null,
-      text: '"Uzozen walks." (alone)',
-      index: md.indexOf('"Uzozen walks."'),
+      text: '"Azozon walks." (alone)',
+      index: md.indexOf('"Azozon walks."'),
       delimiter: '"',
-      split: { sentence: "Uzozen walks.", note: "alone", parts: ["Uzozen walks."], join: "one" },
+      split: { sentence: "Azozon walks.", note: "alone", parts: ["Azozon walks."], join: "one" },
     });
-    assert.equal(lines[1]!.agebon, "zuzozen vuduyel. zwuzuduyer vezuvol.");
-    assert.equal(lines[1]!.morph, "z-Uzozen | v-teach . z-←episode-agent-teach | v-sleep");
+    assert.equal(lines[1]!.agebon, "zazozon veduyol. zwuzeduyor vezuvel.");
+    assert.equal(lines[1]!.morph, "z-Azozon | v-teach . z-←episode-agent-teach | v-sleep");
   });
 
   it("reads checkpoint prompts and answers", () => {
@@ -153,37 +153,37 @@ describe("extractFreeEnglish", () => {
       "",
       "#### English → Agebon {#beginner-english-to-agebon}",
       "",
-      "**1.** *Uzozen walks.* (alone)",
+      "**1.** *Azozon walks.* (alone)",
       "",
       "::: details Show answer",
-      "`zuzozen vowurel.`",
+      "`zazozon vowurol.`",
       "",
-      "z-Uzozen | v-walk",
+      "z-Azozon | v-walk",
       ":::",
       "",
       "#### Agebon → English {#beginner-agebon-to-english}",
       "",
-      "**1.** `zuzozen vowurel.`",
+      "**1.** `zazozon vowurol.`",
       "",
       "::: details Show answer",
-      "z-Uzozen | v-walk",
+      "z-Azozon | v-walk",
       "",
-      "*Uzozen walks.* (alone)",
+      "*Azozon walks.* (alone)",
       ":::",
       "",
       "#### Fix it {#beginner-fix-it}",
       "",
-      "**1.** *Uzozen walks.* <!-- lint: error -->`vowurel zuzozen.`",
+      "**1.** *Azozon walks.* <!-- lint: error -->`vowurol zazozon.`",
       "",
       "::: details Show answer",
-      "`zuzozen vowurel.`",
+      "`zazozon vowurol.`",
       ":::",
     ].join("\n");
     const lines = extractFreeEnglish(md).map(({ kind, agebon, morph, text }) => ({ kind, agebon, morph, text }));
     assert.deepEqual(lines, [
-      { kind: "en-ag", agebon: "zuzozen vowurel.", morph: "z-Uzozen | v-walk", text: "*Uzozen walks.* (alone)" },
-      { kind: "ag-en", agebon: "zuzozen vowurel.", morph: "z-Uzozen | v-walk", text: "*Uzozen walks.* (alone)" },
-      { kind: "fix", agebon: "zuzozen vowurel.", morph: null, text: "*Uzozen walks.*" },
+      { kind: "en-ag", agebon: "zazozon vowurol.", morph: "z-Azozon | v-walk", text: "*Azozon walks.* (alone)" },
+      { kind: "ag-en", agebon: "zazozon vowurol.", morph: "z-Azozon | v-walk", text: "*Azozon walks.* (alone)" },
+      { kind: "fix", agebon: "zazozon vowurol.", morph: null, text: "*Azozon walks.*" },
     ]);
   });
 });
@@ -192,15 +192,15 @@ describe("lintFreeEnglish", () => {
   const kinds = (md: string) => lintFreeEnglish(md, tables).map((f) => f.kind);
 
   it("allows parentheses inside the quotes only for an aside span", () => {
-    assert.deepEqual(kinds('> `zuzozen vowurel.`\n>\n> "Uzozen walks (quietly)."'), ["inside-parens"]);
-    assert.deepEqual(kinds('> `zuzozen vowurel th(hogowul).`\n>\n> "Uzozen walks (quietly)."'), []);
-    assert.deepEqual(kinds('> `zuzozen vowurel th(hogowul).`\n>\n> "Uzozen walks, quietly."'), []);
+    assert.deepEqual(kinds('> `zazozon vowurol.`\n>\n> "Azozon walks (quietly)."'), ["inside-parens"]);
+    assert.deepEqual(kinds('> `zazozon vowurol th(hugowul).`\n>\n> "Azozon walks (quietly)."'), []);
+    assert.deepEqual(kinds('> `zazozon vowurol th(hugowul).`\n>\n> "Azozon walks, quietly."'), []);
   });
 
   it("flags the shape and the note", () => {
-    assert.deepEqual(kinds('> `zuzozen vowurel.`\n>\n> "Uzozen walks." You name yourself.'), ["shape"]);
-    assert.deepEqual(kinds('> `zuzozen vowurel.`\n>\n> "Uzozen walks." (a mirative)'), ["note-term"]);
-    assert.deepEqual(kinds('> `zuzozen vowurel.`\n>\n> "Uzozen walks." (alone)'), []);
+    assert.deepEqual(kinds('> `zazozon vowurol.`\n>\n> "Azozon walks." You name yourself.'), ["shape"]);
+    assert.deepEqual(kinds('> `zazozon vowurol.`\n>\n> "Azozon walks." (a mirative)'), ["note-term"]);
+    assert.deepEqual(kinds('> `zazozon vowurol.`\n>\n> "Azozon walks." (alone)'), []);
   });
 });
 
@@ -209,43 +209,43 @@ describe("tableEnglish", () => {
     [header, "|-----|---------|---------|-------|", ...rows].join("\n");
 
   it("reads italic English cells beside an Agebon phrase or sentence", () => {
-    const md = sheet(["| Walk | `zuzozen vowurel.` | *Uzozen walks.* (alone) | B |", "| Kin | `growubal` | the layer above the focus | A |"]);
+    const md = sheet(["| Walk | `zazozon vowurol.` | *Azozon walks.* (alone) | B |", "| Kin | `growubal` | the layer above the focus | A |"]);
     assert.deepEqual(
       tableEnglish(md).map(({ agebon, text }) => ({ agebon, text })),
-      [{ agebon: "zuzozen vowurel.", text: "*Uzozen walks.* (alone)" }],
+      [{ agebon: "zazozon vowurol.", text: "*Azozon walks.* (alone)" }],
     );
-    assert.deepEqual(tableEnglish(sheet(["| `hanom` | here | *here*, *this* | B |"], "| Agebon | Use | English | Stage |")), []);
+    assert.deepEqual(tableEnglish(sheet(["| `hanem` | here | *here*, *this* | B |"], "| Agebon | Use | English | Stage |")), []);
     assert.deepEqual(tableEnglish(sheet(["| Join | `A xol B` | *(A or B)* | B |"])), []);
-    assert.deepEqual(tableEnglish("| English | Agebon |\n|---|---|\n| *walks, strolls* | `zuzozen vowurel.` |"), []);
+    assert.deepEqual(tableEnglish("| English | Agebon |\n|---|---|\n| *walks, strolls* | `zazozon vowurol.` |"), []);
   });
 
   it("splits pieces and pairs them with the Example pieces", () => {
-    const md = sheet(["| Acts | `yol vowurel.` · `yul vowurel.` | *Walk!* · *Don't walk.* (a ban) | B |"]);
+    const md = sheet(["| Acts | `yol vowurol.` · `yul vowurol.` | *Walk!* · *Don't walk.* (a ban) | B |"]);
     assert.deepEqual(
       tableEnglish(md).map(({ agebon, text }) => ({ agebon, text })),
       [
-        { agebon: "yol vowurel.", text: "*Walk!*" },
-        { agebon: "yul vowurel.", text: "*Don't walk.* (a ban)" },
+        { agebon: "yol vowurol.", text: "*Walk!*" },
+        { agebon: "yul vowurol.", text: "*Don't walk.* (a ban)" },
       ],
     );
   });
 
   it("skips generated blocks", () => {
-    const md = ["<!-- generated: overlays kind=x -->", sheet(["| A | `zuzozen vowurel.` | *Uzozen walks (alone).* | B |"]), "<!-- /generated -->"].join("\n");
+    const md = ["<!-- generated: overlays kind=x -->", sheet(["| A | `zazozon vowurol.` | *Azozon walks (alone).* | B |"]), "<!-- /generated -->"].join("\n");
     assert.deepEqual(tableEnglish(md), []);
   });
 });
 
 describe("lintTableEnglish", () => {
   const kinds = (cell: string) =>
-    lintTableEnglish(["| Job | Example | English |", "|---|---|---|", `| Walk | \`zuzozen vowurel.\` | ${cell} |`].join("\n"), tables).map(
+    lintTableEnglish(["| Job | Example | English |", "|---|---|---|", `| Walk | \`zazozon vowurol.\` | ${cell} |`].join("\n"), tables).map(
       (f) => f.kind,
     );
 
   it("flags the shape and parentheses inside the sentence, not the note", () => {
-    assert.deepEqual(kinds("*Uzozen walks* (alone)."), ["shape"]);
-    assert.deepEqual(kinds("*Uzozen walks (alone).*"), ["inside-parens"]);
-    assert.deepEqual(kinds("*Uzozen walks.* (a mirative)"), []);
-    assert.deepEqual(kinds("*Uzozen walks.* (alone; quietly)"), []);
+    assert.deepEqual(kinds("*Azozon walks* (alone)."), ["shape"]);
+    assert.deepEqual(kinds("*Azozon walks (alone).*"), ["inside-parens"]);
+    assert.deepEqual(kinds("*Azozon walks.* (a mirative)"), []);
+    assert.deepEqual(kinds("*Azozon walks.* (alone; quietly)"), []);
   });
 });

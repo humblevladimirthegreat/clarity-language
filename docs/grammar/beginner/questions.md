@@ -11,29 +11,29 @@ You can ask for *yes* or *no*, or you can leave a blank for *who* / *what* (a **
 
 ### Ask (`yel` / `yem`) {#question}
 
-A **question** asks for a reply instead of stating a fact. English marks it by moving words around (*Uzozen walks* → *Does Uzozen walk?*). Agebon marks it with the act word **`yel`** at the start of the turn, followed by the body (subject, verb, and so on). Every word keeps the form it would have in a statement. Only the usual order changes: the verb comes [second](speech-moves.md#act-word-order), right after the subject.
+A **question** asks for a reply instead of stating a fact. English marks it by moving words around (*Azozon walks* → *Does Azozon walk?*). Agebon marks it with the act word **`yel`** at the start of the turn, followed by the body (subject, verb, and so on). Every word keeps the form it would have in a statement. Only the usual order changes: the verb comes [second](speech-moves.md#act-word-order), right after the subject.
 
 Soft **`yem`** asks the same question more gently (wondering rather than pressing). End a written question with a period, like any sentence.
 
 When every person and action in the clause is already named, the expected reply is *yes* or *no*. (cue: **e** ≈ choice: collapse to an answer.)
 
-> `yel zuzozen vowurel.`
+> `yel zazozon vowurol.`
 >
-> y-question | z-Uzozen | v-walk
+> y-question | z-Azozon | v-walk
 >
-> "Does Uzozen walk?"
+> "Does Azozon walk?"
 
-> `yem zolazun vezuvol.`
+> `yem zalazun vezuvel.`
 >
-> y-soft-question | z-Olazun | v-sleep
+> y-soft-question | z-Alazun | v-sleep
 >
-> "Is Olazun sleeping, I wonder?"
+> "Is Alazun sleeping, I wonder?"
 
-> `yel zuzozen vawebol dagozol.`
+> `yel zazozon vayebel dogozel.`
 >
-> y-question | z-Uzozen | v-see | d-cat
+> y-question | z-Azozon | v-see | d-cat
 >
-> "Does Uzozen see a cat?"
+> "Does Azozon see a cat?"
 
 With no body at all, the question asks about what was just said: *Huh?* / *What?* Soft **`yem.`** is gentler (*Hm?*).
 
@@ -45,7 +45,7 @@ With no body at all, the question asks about what was just said: *Huh?* / *What?
 
 A question whose subject is *nobody* (`zal`), or whose whole clause is *nothing happened* (`xal`), still asks for *yes* or *no*, not *who*.
 
-> `yel zal vowurel.`
+> `yel zal vowurol.`
 >
 > y-question | z-none | v-walk
 >
@@ -58,7 +58,7 @@ Sometimes you do not want *yes* or *no*. You want the other person to **name** s
 
 Keep **`yel`** or **`yem`** at the start. In the slot you want filled, use a join word that ends in **-r** (`zar`, `var`, `xar`, …). That **-r** is the blank ([unspecified-member **-r**](joins.md#unspecified-member-r-phrase)). (cue: **-r** names this member; **a** ≈ add for *who/what*, **u** ≈ undo for *who/what else*.)
 
-> `yel zar vowurel.`
+> `yel zar vowurol.`
 >
 > y-question | z-wh | v-walk
 >
@@ -66,36 +66,36 @@ Keep **`yel`** or **`yem`** at the start. In the slot you want filled, use a joi
 
 Put the blank **first** in the body, and the other words in their statement order after it. The listener hears what you are asking before anything else, and the blank itself marks the turn as a question even if **`yel`** is missed.
 
-> `yel dar zuzozen vawebol.`
+> `yel dar zazozon vayebel.`
 >
-> y-question | d-wh | z-Uzozen | v-see
+> y-question | d-wh | z-Azozon | v-see
 >
-> "What does Uzozen see?"
+> "What does Azozon see?"
 
-A blank that completes another word comes first together with that word: *like whom?* is `hewom blar`, so `yel hewom blar zuzozen vowurel.` asks *Whom does Uzozen walk like?*
+A blank that completes another word comes first together with that word: *like whom?* is `hewem blar`, so `yel hewem blar zazozon vowurol.` asks *Whom does Azozon walk like?*
 
 In the word-by-word line under an example, a fill-ask blank shows as *wh*, short for whichever question word fits the slot (*who*, *what*, *where*, and so on).
 
 If the reply is just the fill, not a full sentence, write it as a [citation](word-endings.md#citation-forms): root + ending, no role letter. Leave no join **-r** in the answer; that **-r** was the blank. A full-sentence answer uses ordinary role letters.
 
-> `uzozen.`
+> `azozon.`
 >
-> "Uzozen."
+> "Azozon."
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** (`zar` · `var` · `xar`) | ask for who or what | *Who/what?* / *What happened?* | **a** ≈ add |
 | **u** (`zur` · `vur` · `xur`) | ask for who or what else | *Who else?* / *What else?* | **u** ≈ undo |
 
-> `yel zur vezuvol.`
+> `yel zur vezuvel.`
 >
 > y-question | z-wh-else | v-sleep
 >
 > "Who else sleeps?"
 
-> `olazun.`
+> `alazun.`
 >
-> "Olazun."
+> "Alazun."
 
 **Compare with:** pointing back at someone already named uses resume **-r** on a whole stem or a role pointer ([pronouns](pronouns.md)). A fill-ask uses only **join** **-r**. The spelling tells them apart: a resume spells a whole stem, and a role pointer has **`w`**, a scope vowel, a part consonant, and a pointer vowel. A join word has no stem, only its role letter, its join vowel or vowels, and its ending.
 
@@ -106,13 +106,13 @@ The act word **`yel`** / **`yem`** already makes the sentence a question, so the
 - **Yes/no question:** write a free-standing `?` right after the `/y/` words, so it applies to the whole rest of the sentence.
 - **Fill-ask:** attach `?` to the front of each fill-ask word (the join **-r** blank), so the raised voice falls on what you want filled.
 
-> `yel ? zuzozen vowurel.`
+> `yel ? zazozon vowurol.`
 >
-> y-question | ? | z-Uzozen | v-walk
+> y-question | ? | z-Azozon | v-walk
 >
-> "Does Uzozen walk?" (with the raised voice)
+> "Does Azozon walk?" (with the raised voice)
 
-> `yel ?zar vowurel.`
+> `yel ?zar vowurol.`
 >
 > y-question | ?z-wh | v-walk
 >
@@ -124,45 +124,45 @@ The sentence still ends in a period.
 
 To ask *who sees what?*, put join **-r** in every slot you want filled, and put all the blanks first. Each of those **-r** words is a blank, and the answer is expected to **fill all** of them, in the order the question gave them.
 
-> `yel zar dar vawebol.`
+> `yel zar dar vayebel.`
 >
 > y-question | z-wh | d-wh | v-see
 >
 > "Who sees what?"
 
-> `uzozen udozol.`
+> `azozon odozel.`
 >
-> Uzozen | dog
+> Azozon | dog
 >
-> "Uzozen, a dog."
+> "Azozon, a dog."
 
 To ask for several members of one slot (*who all?*), put [**-x**](joins.md#unspecified-member-r-phrase) after the blank. The answer lists them with a join.
 
-> `yel zarx vowurel.`
+> `yel zarx vowurol.`
 >
 > y-question | z-wh-x | v-walk
 >
 > "Who all walks?"
 
-> `zuzozen zolazun zam.`
+> `zazozon zalazun zam.`
 >
-> [z-Uzozen | z-Olazun | z-and.open]
+> [z-Azozon | z-Alazun | z-and.open]
 >
-> "Uzozen and Olazun, among others."
+> "Azozon and Alazun, among others."
 
-To ask only about people, put the kind before the blank: `yel zeyol zarx vowurel.` is *Which people walk?*
+To ask only about people, put the kind before the blank: `yel zeyel zarx vowurol.` is *Which people walk?*
 
 If only one slot is unknown, put join **-r** only there. Write the known thing as an ordinary word (`-l` / `-m`).
 
-> `yel zar vawebol dudozol.`
+> `yel zar vayebel dodozel.`
 >
 > y-question | z-wh | v-see | d-dog
 >
 > "Who sees a dog?"
 
-> `uzozen.`
+> `azozon.`
 >
-> "Uzozen."
+> "Azozon."
 
 ### Polar stance (*yes* / *no* / *sure*) {#polar-stance}
 <a id="answers"></a>
@@ -220,19 +220,19 @@ A turn holds one polar word. Do not stack two, and do not put one before an act 
 
 To back up your own statement with *yes*, give **`yaol`** a turn of its own: finish the statement with a period, then write **`yaol.`**
 
-> `zuzozen vowurel. yaol.`
+> `zazozon vowurol. yaol.`
 >
-> z-Uzozen | v-walk . y-yes
+> z-Azozon | v-walk . y-yes
 >
-> "Uzozen walks. Yes."
+> "Azozon walks. Yes."
 
 To ask the listener to confirm instead (*…, right?*), put the question word **`yel`** before it: **`yel yaol.`** A short question like this after a statement is a **tag**. Soft **`yem yaol.`** is *…, isn't it?*
 
-> `zuzozen vowurel. yel yaol.`
+> `zazozon vowurol. yel yaol.`
 >
-> z-Uzozen | v-walk . y-question | y-yes
+> z-Azozon | v-walk . y-question | y-yes
 >
-> "Uzozen walks, right?"
+> "Azozon walks, right?"
 
 **Compare with:** a command *Don’t walk* uses **`yul`**. **`yuol`** answers whether a claim is true.
 
@@ -240,15 +240,15 @@ Inside the clause, *not X* is the join **`zul`** / **`vul`**, not a polar word.
 
 ### Embedded *whether* {#embedded-whether}
 
-English *whether* reports a yes/no question inside a statement (*Uzozen sees whether Olazun walks*). Write the stand-in [**`derl`**](dependents.md#dependent-clauses) in the object slot, with the inner question right after it. The whole sentence is still a statement, so do not write **`yel`** at its start.
+English *whether* reports a yes/no question inside a statement (*Azozon sees whether Alazun walks*). Write the stand-in [**`derl`**](dependents.md#dependent-clauses) in the object slot, with the inner question right after it. The whole sentence is still a statement, so do not write **`yel`** at its start.
 
-> `zuzozen vawebol derl zolazun vowurel.`
+> `zazozon vayebel derl zalazun vowurol.`
 >
-> z-Uzozen | v-see | d-whether-clause | z-Olazun | v-walk
+> z-Azozon | v-see | d-whether-clause | z-Alazun | v-walk
 >
-> "Uzozen sees whether Olazun walks."
+> "Azozon sees whether Alazun walks."
 
-**Compare with:** a direct question (*Does Uzozen walk?*) puts **`yel`** at the start of the turn.
+**Compare with:** a direct question (*Does Azozon walk?*) puts **`yel`** at the start of the turn.
 
 ### Practice {#beginner-practice}
 
@@ -262,66 +262,66 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *umbrella* | `omobul` | ☂️ |
 | *coat* | `ogobal` | 🧥 |
-| *key* | `ogewel` | 🔑 |
-| *write* | `varayel` | ✍️ |
-| *lie* | `valamul` | 🤥 |
+| *key* | `egewol` | 🔑 |
+| *write* | `varuyol` | ✍️ |
+| *lie* | `vulamul` | 🤥 |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *find* | `vumewol` |
-| *see* | `vawebol` |
-| *eraser* | `urewul` |
+| *find* | `vumewel` |
+| *see* | `vayebel` |
+| *eraser* | `erewul` |
 | *book* | `anal` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *Does Uzozen find the key?* (with the raised voice)
+**1.** *Does Azozon find the key?* (with the raised voice)
 
 ::: details Show answer
-`yel ? zuzozen vumewol dogewel.`
+`yel ? zazozon vumewel degewol.`
 
-y-question | ? | z-Uzozen | v-find | d-key
+y-question | ? | z-Azozon | v-find | d-key
 
-**Also correct:** `yel zuzozen vumewol dogewel.`
+**Also correct:** `yel zazozon vumewel degewol.`
 :::
 
 **2.** *Who sees the umbrella?*
 
 ::: details Show answer
-`yel ?zar domobul vawebol.`
+`yel ?zar domobul vayebel.`
 
 y-question | ?z-wh | d-umbrella | v-see
 
-**Also correct:** `yel ?zar vawebol domobul.`
+**Also correct:** `yel ?zar vayebel domobul.`
 :::
 
-**3.** *Is Olazun lying, I wonder?*
+**3.** *Is Alazun lying, I wonder?*
 
 ::: details Show answer
-`yem zolazun valamul.`
+`yem zalazun vulamul.`
 
-y-soft-question | z-Olazun | v-lie
+y-soft-question | z-Alazun | v-lie
 :::
 
 **4.** *Who finds what?*
 
 ::: details Show answer
-`yel zar dar vumewol.`
+`yel zar dar vumewel.`
 
 y-question | z-wh | d-wh | v-find
 
-**Also correct:** `yel zar vumewol dar.`
+**Also correct:** `yel zar vumewel dar.`
 :::
 
 **5.** *Ahelan writes, right?*
 
 ::: details Show answer
-`zahelan varayel. yel yaol.`
+`zahelan varuyol. yel yaol.`
 
 z-Ahelan | v-write . y-question | y-yes
 :::
@@ -336,7 +336,7 @@ y-no
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `yem zahelan vawebol dogobal.`
+**1.** `yem zahelan vayebel dogobal.`
 
 ::: details Show answer
 y-soft-question | z-Ahelan | v-see | d-coat
@@ -344,7 +344,7 @@ y-soft-question | z-Ahelan | v-see | d-coat
 *Is Ahelan seeing the coat, I wonder?*
 :::
 
-**2.** `yel zur durewul vumewol.`
+**2.** `yel zur derewul vumewel.`
 
 ::: details Show answer
 y-question | z-wh-else | d-eraser | v-find
@@ -352,7 +352,7 @@ y-question | z-wh-else | d-eraser | v-find
 *Who else finds an eraser?*
 :::
 
-**3.** `yel zal vumewol danal.`
+**3.** `yel zal vumewel danal.`
 
 ::: details Show answer
 y-question | z-none | v-find | d-book
@@ -360,12 +360,12 @@ y-question | z-none | v-find | d-book
 *Does nobody find a book?*
 :::
 
-**4.** `zuzozen vawebol derl zolazun dogewel vumewol.`
+**4.** `zazozon vayebel derl zalazun degewol vumewel.`
 
 ::: details Show answer
-z-Uzozen | v-see | d-whether-clause | z-Olazun | d-key | v-find
+z-Azozon | v-see | d-whether-clause | z-Alazun | d-key | v-find
 
-*Uzozen sees whether Olazun finds the key.*
+*Azozon sees whether Alazun finds the key.*
 :::
 
 **5.** `yaem.`
@@ -376,27 +376,27 @@ y-sure-soft
 *Okay.* / *Sure, I guess.*
 :::
 
-**6.** `olazun.`
+**6.** `alazun.`
 
 ::: details Show answer
-Olazun
+Alazun
 
-*Olazun.* (a one-word answer)
+*Alazun.* (a one-word answer)
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Who writes?* `yel ?zar varayel.` or `yel ?zur varayel.`
+**1.** *Who writes?* `yel ?zar varuyol.` or `yel ?zur varuyol.`
 
 ::: details Show answer
-`yel ?zar varayel.`
+`yel ?zar varuyol.`
 
 y-question | ?z-wh | v-write
 
 **`zar`** asks *who*; **`zur`** asks *who else*.
 :::
 
-**2.** *No.* (answering *Does Olazun lie?*) `yuol.` or `yul.`
+**2.** *No.* (answering *Does Alazun lie?*) `yuol.` or `yul.`
 
 ::: details Show answer
 `yuol.`
@@ -408,12 +408,12 @@ y-no
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Uzozen finds the coat, right?* <!-- lint: error -->`yol zuzozen vumewol dogobal. yael.`
+**1.** *Azozon finds the coat, right?* <!-- lint: error -->`yol zazozon vumewel dogobal. yael.`
 
 ::: details Show answer
-`zuzozen dogobal vumewol. yel yaol.`
+`zazozon dogobal vumewel. yel yaol.`
 
-z-Uzozen | d-coat | v-find . y-question | y-yes
+z-Azozon | d-coat | v-find . y-question | y-yes
 
 The statement stays a statement; the tag **`yel yaol.`** is its own short question after it.
 :::

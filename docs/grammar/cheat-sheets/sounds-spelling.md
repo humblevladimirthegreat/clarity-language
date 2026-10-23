@@ -45,7 +45,7 @@ The name is what you say when you [spell a word aloud](/phonotactics#letter-name
 | `y` | /j/ | *yes* | | `yu` | B |
 | `x` | /ʒ/ | *vision* (not English *x*) | /ʃ/ | `xe` | B |
 
-Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), then the other consonants. The vowels come last and name themselves (`u`, `a`, `o`, `e`). Pause between names: `agozo` is `a` `go` `o` `zu` `o`. A letter you talk about in a clause is a [mention](/span-mention#mention), read by its name.
+Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), then the other consonants. The vowels come last and name themselves (`u`, `a`, `o`, `e`). Pause between names: `ogoze` is `a` `go` `o` `zu` `o`. A letter you talk about in a clause is a [mention](/span-mention#mention), read by its name.
 
 ## Word shape {#word-shape}
 
@@ -53,12 +53,12 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 
 | Rule | Example | Stage |
 |------|---------|-------|
-| [A content word ends in **-l**, **-m**, **-n**, or **-r**](/phonology#word-edges), the audible end | `uzozen` = *u-zo-zen* | B |
-| [Inside a word, a consonant starts a syllable](/phonology#word-edges) and never closes one | `udozol` = *u-do-zol* | B |
-| [Roots are vowel-first](/phonotactics#phonotactics): **V(CV)+** | `zubulel` = `z` + `ubule` + **-l** | I |
+| [A content word ends in **-l**, **-m**, **-n**, or **-r**](/phonology#word-edges), the audible end | `azozon` = *a-zo-zon* | B |
+| [Inside a word, a consonant starts a syllable](/phonology#word-edges) and never closes one | `odozel` = *o-do-zel* | B |
+| [Roots are vowel-first](/phonotactics#phonotactics): **V(CV)+** | `zobulol` = `z` + `obulo` + **-l** | I |
 | [Place-name root](/singability#place-name-roots) with no cluster: seven letters, ends `n` + vowel | `azabanan` *Japan* | A |
 | [Place-name root](/singability#place-name-roots) that keeps a cluster | `avranzan` *France* | A |
-| [A root's last two letters hint at its kind and job](/root-tails#root-tails) | `agozo` *cat*: `z` a creature, `o` one of its kind | A |
+| [A root's last two letters hint at its kind and job](/root-tails#root-tails) | `ogoze` *cat*: `z` a creature, `o` one of its kind | A |
 
 ### Parts of a word, in order {#parts-in-order}
 
@@ -67,7 +67,7 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 | [Role letter](/phonotactics#phonotactics) | first letter: the word's job in the clause | I |
 | Optional `l` after `/ɡ/` | [adjective before the noun](/left-bound-adjectives#left-bound-adjectives) | B |
 | Optional `l` after `/b/` | [`bl-`](/clause#extra-nouns): completes the word right before it | B |
-| Root(s) | vowel-first; a [dictionary compound](/phonotactics#phonotactics) is one long root (`obahoha` *bedroom*); a root after a root is joined by mid-word `x` ([compounds](/compounds)) | I |
+| Root(s) | vowel-first; a [dictionary compound](/phonotactics#phonotactics) is one long root (`oyaheha` *bedroom*); a root after a root is joined by mid-word `x` ([compounds](/compounds)) | I |
 | Mid-word `th` | the stance seam: [scope](/label-seams#label-scope), [sakes](/sakes), [viewpoint](/viewpoint#viewpoint-laterals) | I |
 | **-l** / **-m** / **-n** / **-r** | the [word ending](/word-endings) | B |
 | **-ln** | [one of a name](/proper-names#name-instance--ln) | I |

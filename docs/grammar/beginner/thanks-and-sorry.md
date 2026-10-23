@@ -8,7 +8,7 @@ band: beginner
 
 Agebon has no set phrase for *thank you*. Say that your sake **is met**: a lone `/th/` met word is a whole sentence about you, and saying it to the one who acted is the thanks. Pick the sake that was actually served; the ending says how long the payoff lasts ([endings on met](sakes.md#time-horizon-endings-on-met)). (cue: thanks = *my sake is met*)
 
-> `thawotham.`
+> `thawetham.`
 >
 > th-relatedness-met-any-term
 >
@@ -29,7 +29,7 @@ Agebon has no set phrase for *thank you*. Say that your sake **is met**: a lone 
 
 *Sorry* is about **their** sake, not yours. A lone unmet word would say *my* sake went unmet, so name whose sake in a `bl-` word right after it. The ending is the same [changeability](sakes.md#sake-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your sake*)
 
-> `thawothum blawan.`
+> `thawethum blawan.`
 >
 > [th-relatedness-unmet-modifiable | bl-listener]
 >
@@ -42,9 +42,9 @@ Agebon has no set phrase for *thank you*. Say that your sake **is met**: a lone 
 | `…thum blawan` | the harm can be softened (default) | *I'm sorry* |
 | `…thur blawan` | the harm is passing | *my bad* |
 
-The `/b/` can name anyone: `thawothum blolazun.` owns up to a harm to Olazun, even when you are telling someone else.
+The `/b/` can name anyone: `thawethum blalazun.` owns up to a harm to Alazun, even when you are telling someone else.
 
-**Compare with:** a met word with a `/b/` person (`thawotham blolazun.`) says the act met **Olazun's** sake: *Olazun appreciated it*, not your thanks.
+**Compare with:** a met word with a `/b/` person (`thawetham blalazun.`) says the act met **Alazun's** sake: *Alazun appreciated it*, not your thanks.
 
 ### Practice {#beginner-practice}
 
@@ -57,10 +57,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agebon |
 |---------|--------|
 | *listener* | `awan` |
-| *relatedness* | `awol` |
+| *relatedness* | `awel` |
 | *competence* | `uwal` |
 | *guard* | `agayul` |
-| *police* | `obayel` |
+| *police* | `ebayol` |
 | *basket* | `abowal` |
 
 #### English → Agebon {#beginner-english-to-agebon}
@@ -68,7 +68,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Guard, thank you, that meant a lot to me.*
 
 ::: details Show answer
-`yagayul thawotham.`
+`yagayul thawetham.`
 
 y-guard | th-relatedness-met-any-term
 :::
@@ -76,7 +76,7 @@ y-guard | th-relatedness-met-any-term
 **2.** *I'm sorry; that hurt your sense of connection.*
 
 ::: details Show answer
-`thawothum blawan.`
+`thawethum blawan.`
 
 [th-relatedness-unmet-modifiable | bl-listener]
 :::
@@ -91,7 +91,7 @@ th-competence-met-lasting
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `thawothum blobayel.`
+**1.** `thawethum blebayol.`
 
 ::: details Show answer
 [th-relatedness-unmet-modifiable | bl-police]
@@ -99,7 +99,7 @@ th-competence-met-lasting
 *That hurt the police officer's sense of connection.*
 :::
 
-**2.** `yabowal thawothar.`
+**2.** `yabowal thawethar.`
 
 ::: details Show answer
 y-basket | th-relatedness-met-immediate
@@ -107,7 +107,7 @@ y-basket | th-relatedness-met-immediate
 *Basket, thanks, that got me through.*
 :::
 
-**3.** `thawothul blawan.`
+**3.** `thawethul blawan.`
 
 ::: details Show answer
 [th-relatedness-unmet-irreversible | bl-listener]
@@ -117,22 +117,22 @@ y-basket | th-relatedness-met-immediate
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Thank you, that meant a lot to me.* `thawotham.` or `thawothar.`
+**1.** *Thank you, that meant a lot to me.* `thawetham.` or `thawethar.`
 
 ::: details Show answer
-`thawotham.`
+`thawetham.`
 
 th-relatedness-met-any-term
 
-**-m** leaves the horizon unstated; **`thawothar.`** is thanks that landed right when needed.
+**-m** leaves the horizon unstated; **`thawethar.`** is thanks that landed right when needed.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *I'm sorry; that hurt your sense of connection.* <!-- lint: error -->`thawothum.`
+**1.** *I'm sorry; that hurt your sense of connection.* <!-- lint: error -->`thawethum.`
 
 ::: details Show answer
-`thawothum blawan.`
+`thawethum blawan.`
 
 [th-relatedness-unmet-modifiable | bl-listener]
 

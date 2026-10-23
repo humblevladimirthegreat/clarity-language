@@ -8,29 +8,29 @@ English doesn't mark whether a claim was seen, remembered, worked out, or heard 
 
 | Drop-in | Channel |
 |---------|---------|
-| `thugom` | live: you're seeing, hearing, or feeling it now |
+| `thugem` | live: you're seeing, hearing, or feeling it now |
 | `thevum` | from memory (you sensed it before) |
-| `thubem` | from the pattern (similar cases you know of) |
-| `theyem` | worked out from clues about this case |
+| `thubom` | from the pattern (similar cases you know of) |
+| `theyom` | worked out from clues about this case |
 | `thanam` | deduced: it must follow from what you already grant |
 | `thebam` | reported: someone told you, or you read it |
-| `thabom` | intuition: a gut sense |
+| `thabem` | intuition: a gut sense |
 
-Seven channels is a menu; you don't need to memorize it. A recording counts as your own senses: `thugom` while you watch it, `thevum` once you have. A document counts as a report.
+Seven channels is a menu; you don't need to memorize it. A recording counts as your own senses: `thugem` while you watch it, `thevum` once you have. A document counts as a report.
 
 Clues and a deduction are not the same. Clues make a claim likely, and it can still fail with every clue true. A deduction can't fail unless something it starts from is false. Save `thanam` for *it follows*, *so it must be*, not for *it's obvious*.
 
-Swap the ending to say **how strong the evidence is**: **-l** strong, **-m** the default, **-r** weak. `thebar` is a rumor, `thevul` is a vivid memory, and `thabor` is a faint hunch. For a pattern, `thubel` is a well-established one and `thuber` rests on a few cases. For a deduction, the ending grades how far you checked the steps: `thanal` you could show every step, `thanar` it seems to follow but you haven't checked. Strength is how much the claim rests on, not how likely the event is. A solid source can still report something unlikely.
+Swap the ending to say **how strong the evidence is**: **-l** strong, **-m** the default, **-r** weak. `thebar` is a rumor, `thevul` is a vivid memory, and `thaber` is a faint hunch. For a pattern, `thubol` is a well-established one and `thubor` rests on a few cases. For a deduction, the ending grades how far you checked the steps: `thanal` you could show every step, `thanar` it seems to follow but you haven't checked. Strength is how much the claim rests on, not how likely the event is. A solid source can still report something unlikely.
 
 This is the same settled-to-passing scale as in How sure are you?: solid evidence is lasting (**-l**), and a rumor could shift at any moment (**-r**).
 
 ## Examples {#examples}
 
-> The server is down `thugom`.  
+> The server is down `thugem`.  
 > Marco quit `thebar`.  
 > The meeting got moved `thebal`.  
 > I locked the door `thevur`.  
-> This bug is in the parser `theyem`, `thomam`.
+> This bug is in the parser `theyom`, `thomam`.
 
 `thebal` is a reliable source, like an official notice; `thevur` is a hazy memory. The last example says you worked it out from clues **and** it's only a *could be*. How you know and how sure you are are separate questions, so you can answer both.
 
@@ -59,13 +59,13 @@ Dana's engaged `thebar`.
 **3.** *The bus is late.* (going by similar cases)
 
 ::: details Show answer
-The bus is late `thubem`.
+The bus is late `thubom`.
 :::
 
 **4.** *Something's wrong.* (a gut feeling)
 
 ::: details Show answer
-Something's wrong `thabom`.
+Something's wrong `thabem`.
 :::
 
 **5.** *The package was delivered to the old address.* (it must have been, given the address on the order; you traced every step)

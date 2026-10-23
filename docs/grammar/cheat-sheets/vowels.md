@@ -93,7 +93,7 @@ Full extra-noun grid: [extra nouns](/extra-noun-hooks#extra-noun-intermediate). 
 | Job | **a** | **o** | **e** | **u** | Stage |
 |-----|-------|-------|-------|-------|-------|
 | [Label scope](/label-seams#label-scope) | `tha` a type | `tho` practiced role | `the` this pair | `thu` this episode | I |
-| [Role compound](/roles#one-time-or-a-practice) | | `zwozuduyel` a teacher | | `zwuzuduyel` someone who teaches | B |
+| [Role compound](/roles#one-time-or-a-practice) | | `zwozeduyol` a teacher | | `zwuzeduyol` someone who teaches | B |
 
 ## Root job and size {#root-vowels}
 
@@ -101,9 +101,9 @@ From [root tails](/root-tails#root-tails). Memory aids only: grammar does not re
 
 | Last vowel | Job | Examples | Stage |
 |------------|-----|----------|-------|
-| `a` | holds or gathers | `abowa` *basket*, `oruda` *rice*, `uneza` *ant* | A |
-| `o` | one whole thing | `agozo` *cat*, `oledo` *apple* | A |
-| `e` | order, path, sequence | `orahe` *road*, `egore` *clock*, `aruve` *run*, `urule` *rainbow* | A |
+| `a` | holds or gathers | `abowa` *basket*, `aruda` *rice*, `eneza` *ant* | A |
+| `o` | one whole thing | `ogoze` *cat*, `alede` *apple* | A |
+| `e` | order, path, sequence | `oraho` *road*, `ugoro` *clock*, `eruvo` *run*, `urulo` *rainbow* | A |
 | `u` | takes away | `anewu` *knife*, `ezozu` *snake*, `evemu` *fear* | A |
 
 | [Middle vowel](/root-tails#root-tails) | Size | Stage |

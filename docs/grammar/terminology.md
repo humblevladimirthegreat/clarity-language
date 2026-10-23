@@ -15,47 +15,47 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | Label | Gloss | Example | Teach |
 |-------|-------|---------|-------|
 | **ABIL** | Hostless *can* / *can’t* (no single verb) | `hodaxol` | [Can and can't](/can-and-cant#ability-fallback) |
-| **AIMED** | Emotion locus: aimed at a target | `wawothumel` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **ASIDE** | An aside span | `th(hogowul)` | [Spans](/spans#asides) |
+| **AIMED** | Emotion locus: aimed at a target | `wawethumel` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **ASIDE** | An aside span | `th(hugowul)` | [Spans](/spans#asides) |
 | **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwuvam` | [Feelings and permission](/feelings-permission#say-words) |
 | **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Decision and try](/ability#try) |
-| **AWAY** | Emotion locus: moving off from a target | `wawothumum` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **CAUSE** | Mechanism-framing mood (*make X do*) | `thewem` | [Iff and CAUSE](/iff-fault#cause) |
+| **AWAY** | Emotion locus: moving off from a target | `wawethumum` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **CAUSE** | Mechanism-framing mood (*make X do*) | `thewom` | [Iff and CAUSE](/iff-fault#cause) |
 | **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraer` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **CITE** | A cite span: quoted wording | `d[uzozen]` | [Spans](/spans#writing) |
-| **CLUES** | Evidential: reasoned from clues about this case | `theyem` | [Evidentiality](/evidentiality#evidentiality) |
+| **CITE** | A cite span: quoted wording | `d[azozon]` | [Spans](/spans#writing) |
+| **CLUES** | Evidential: reasoned from clues about this case | `theyom` | [Evidentiality](/evidentiality#evidentiality) |
 | **CHOICE** | Say word answer: their call | `hwuvem` | [Feelings and permission](/feelings-permission#say-words) |
-| **COLLAPSE** | Emotion locus: out of fight, giving up | `wawothumual` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **DECISION** | Pick-firmness mood | `thogom` | [Decision and try](/ability#decision) |
+| **COLLAPSE** | Emotion locus: out of fight, giving up | `wawethumual` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **DECISION** | Pick-firmness mood | `thogem` | [Decision and try](/ability#decision) |
 | **DEDUCED** | Evidential: must hold if the premises hold | `thanam` | [Evidentiality](/evidentiality#deduction) |
-| **FAWN** | Emotion locus: placating a target | `wawothumaom` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **FLOWING** | Emotion motion: steady, a current you can ride | `wawothumom` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **FAWN** | Emotion locus: placating a target | `wawethumaom` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **FLOWING** | Emotion motion: steady, a current you can ride | `wawethumom` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **FORBID** | Say word answer: no, forbid | `hwuvul` | [Feelings and permission](/feelings-permission#say-words) |
 | **FORMER** | Episode standing: not the climate claimed now | `helam` | [Notional and standing](/notional-standing#residue) |
 | **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **INTUITION** | Evidential: gut sense you cannot fully spell out | `thabom` | [Evidentiality](/evidentiality#evidentiality) |
-| **LIVE** | Evidential: sensed now, by any sense | `thugom` | [Live and memory](/live-and-memory#live-vs-memory) |
+| **INTUITION** | Evidential: gut sense you cannot fully spell out | `thabem` | [Evidentiality](/evidentiality#evidentiality) |
+| **LIVE** | Evidential: sensed now, by any sense | `thugem` | [Live and memory](/live-and-memory#live-vs-memory) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thomam` | [Knowing](/knowing#may) |
 | **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevum` | [Live and memory](/live-and-memory#live-vs-memory) |
-| **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegel z[udozo] gamezom.` | [Mention and islands](/span-mention#mention) |
-| **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themom` | [Notional and standing](/notional-standing#mirative) |
-| **NAME** | A package titled with **-n** | `zebodol zuyudal zan.` | [Join islands](/join-islands#named-list) |
+| **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegol z[odoze] gamezem.` | [Mention and islands](/span-mention#mention) |
+| **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themem` | [Notional and standing](/notional-standing#mirative) |
+| **NAME** | A package titled with **-n** | `zobodel zubudal zan.` | [Join islands](/join-islands#named-list) |
 | **NOTIONAL** | As-if / pretense mood | `theyum` | [Notional and standing](/notional-standing#notional) |
-| **ON-BEHALF** | Emotion locus: felt for someone's sake | `wawothumom` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **ON-BEHALF** | Emotion locus: felt for someone's sake | `wawethumom` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **OPAQUE** | An opaque span: foreign or raw writing | <code>d&lt;kimchi&gt;</code> | [Spans](/spans#loans) |
-| **PATTERN** | Evidential: from regularity | `thubem` | [Evidentiality](/evidentiality#evidentiality) |
-| **PLAN** | Intention-framing mood | `thagem` | [Intention](/intention#plan-predict) |
+| **PATTERN** | Evidential: from regularity | `thubom` | [Evidentiality](/evidentiality#evidentiality) |
+| **PLAN** | Intention-framing mood | `thagom` | [Intention](/intention#plan-predict) |
 | **REPORTED** | Evidential: said or written by someone else | `thebam` | [Evidentiality](/evidentiality#evidentiality) |
 | **REQUIRE** | Say word answer: require, ask for (*must*) | `hwuvol` | [Feelings and permission](/feelings-permission#say-words) |
 | **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Notional and standing](/notional-standing#residue) |
-| **RESISTING** | Emotion locus: pushing against a target | `wawothumuor` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **SAME** | Identity copula | `gorol` | [Predication](/predication#identity) |
-| **SCOPE** | Scope island `{ … }` | `{ hegugom zudozol gerulel }` | [Mention and islands](/span-mention#scope-islands) |
-| **SEEKING** | Emotion locus: turning to someone for comfort | `wawothumoem` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **STILL** | Emotion motion: not moving (held, frozen, numb) | `wawothumel` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **RESISTING** | Emotion locus: pushing against a target | `wawethumuor` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **SAME** | Identity copula | `gorel` | [Predication](/predication#identity) |
+| **SCOPE** | Scope island `{ … }` | `{ hogugem zodozel gerulol }` | [Mention and islands](/span-mention#scope-islands) |
+| **SEEKING** | Emotion locus: turning to someone for comfort | `wawethumoem` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **STILL** | Emotion motion: not moving (held, frozen, numb) | `wawethumel` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **SURGING** | Emotion motion: in waves or spikes | `wuwathuraer` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruem` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **WANT** | Desire mood: lasting / unstated / passing | `thalem` | [Decision and try](/ability#want) |
+| **WANT** | Desire mood: lasting / unstated / passing | `thalom` | [Decision and try](/ability#want) |
 
 **Compare with:** [quasi](#quasi) (`-e-xROOT`) is not **NOTIONAL**.
 
@@ -138,7 +138,7 @@ How many items sit before a join: **list** (2+), **single-item** (1), **standalo
 
 ### As-for
 
-Complex `/h/` + `/b/` (**`hahugem`**) *as for X*: a frame for one sentence.
+Complex `/h/` + `/b/` (**`hehugom`**) *as for X*: a frame for one sentence.
 
 [People and places](say-people-places.md#as-for)
 
@@ -188,11 +188,11 @@ Silence counted in beats at a sentence edge with no word: a **break** puts the n
 
 ### Capacity
 
-A slot-part role compound on `/h/` (`hwozuduyel`): the role the act is done in (*as a teacher*).
+A slot-part role compound on `/h/` (`hwozeduyol`): the role the act is done in (*as a teacher*).
 
 [Viewpoint and landmark](/viewpoint#capacity)
 
-**Compare with:** resemblance is the [similative](/relations#similative) (`hewom blwozuduyel` *like a teacher*). [Classification](#classification) on `/ɡ/` says someone **is** that role (`gwozuduyel`).
+**Compare with:** resemblance is the [similative](/relations#similative) (`hewem blwozeduyol` *like a teacher*). [Classification](#classification) on `/ɡ/` says someone **is** that role (`gwozeduyol`).
 
 ### Invited / offered / trial
 <a id="asked-typical-history"></a>
@@ -225,7 +225,7 @@ Kind / role as predicative `/ɡ/` (no *to-be* verb).
 
 ### Clause pole / NP pole
 
-Condition vs outcome as NPs vs full sentences after **`blarl`**. **Clause pole** is the causation reading. Concession **`hezom`** uses the same NP vs clause split (*despite Olazun* vs *although Olazun walks*). Intended outcome **`hovam`** uses it too (*for a money-bag* vs *so that Olazun sits*).
+Condition vs outcome as NPs vs full sentences after **`blarl`**. **Clause pole** is the causation reading. Concession **`hezem`** uses the same NP vs clause split (*despite Alazun* vs *although Alazun walks*). Intended outcome **`hovam`** uses it too (*for a money-bag* vs *so that Alazun sits*).
 
 [Causation](/causation), [dependents](/dependents#dependent-clauses)
 
@@ -267,7 +267,7 @@ Polar patterns that confirm a denied body.
 
 ### Content of the event
 
-A role word whose part consonant names a quality of the event (`dwuhowurel` *a way of walking*, `dwuher` *the way it was done*), not a person in it.
+A role word whose part consonant names a quality of the event (`dwuhowurol` *a way of walking*, `dwuher` *the way it was done*), not a person in it.
 
 [Viewpoint and landmark](/viewpoint#content-of-the-event)
 
@@ -423,7 +423,7 @@ Extra-noun [hook](/hooks#extra-noun) **`aol`** plus implement `/b/` (*using / wi
 
 ### Simile (*like*)
 
-Hosted **`hewom`** / **`gewom`** plus model `/b/` (*like* a duck / *like* Uzozen’s); with **-l**, **`hewol`** / **`gewol`** is *exactly like*. Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
+Hosted **`hewem`** / **`gewem`** plus model `/b/` (*like* a duck / *like* Azozon’s); with **-l**, **`hewel`** / **`gewel`** is *exactly like*. Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
 
 [Relations](/relations#similative), [Of-relations](/of-relations#exactly-like)
 
@@ -435,7 +435,7 @@ Hosted **`heham`** / **`geham`** plus consideration `/b/` (*in exchange for* a h
 
 ### Proxy (*on behalf of*)
 
-Hosted **`hanom`** / **`ganom`** plus principal `/b/` (*on behalf of* Olazun). Not hook *instead*, not recipient `/b/`.
+Hosted **`hanem`** / **`ganem`** plus principal `/b/` (*on behalf of* Alazun). Not hook *instead*, not recipient `/b/`.
 
 [Relations](/relations#proxy)
 
@@ -472,7 +472,7 @@ A claim that something **will** happen: an evidential channel plus the later off
 
 ### Greeting / conversation length
 
-A named citation is a hello (`uzozen.`). Add mid-word **`x`** plus **`a`** / **`e`** / **`o`** / **`u`** to say how long the conversation is expected to last: open-ended, a few minutes, one slot, or passing. At departure, **`xon`** means leaving soon, **`xen`** about to leave, and **`xun`** leaving now. When people set different lengths at arrival, the lesser bid holds.
+A named citation is a hello (`azozon.`). Add mid-word **`x`** plus **`a`** / **`e`** / **`o`** / **`u`** to say how long the conversation is expected to last: open-ended, a few minutes, one slot, or passing. At departure, **`xon`** means leaving soon, **`xen`** about to leave, and **`xun`** leaving now. When people set different lengths at arrival, the lesser bid holds.
 
 [Word endings](/word-endings#greeting) · [Compound families](/compound-families#conversation-length)
 
@@ -484,7 +484,7 @@ A named citation is a hello (`uzozen.`). Add mid-word **`x`** plus **`a`** / **`
 
 ### Holder
 
-Whose view a clause reports. The name is fused onto an evidential, **MAY**, or **NOTIONAL** after that word's own ending letter (`theyemuzozen`). The fused word is the speaker's warrant; every other stance in the clause is the holder's.
+Whose view a clause reports. The name is fused onto an evidential, **MAY**, or **NOTIONAL** after that word's own ending letter (`theyomazozon`). The fused word is the speaker's warrant; every other stance in the clause is the holder's.
 
 [Whose view](/holder#holder)
 
@@ -506,7 +506,7 @@ Closed **SAME** + `/b/`.
 
 ### In progress
 
-An event root on `/ɡ/`: the noun is in the middle of that event, as its doer (*a walking dog*, *Uzozen is walking*).
+An event root on `/ɡ/`: the noun is in the middle of that event, as its doer (*a walking dog*, *Azozon is walking*).
 
 [Predication](/predication#in-progress)
 
@@ -572,7 +572,7 @@ Sake stances **`tha` / `thu`** (Beginner); **`the`** (Beginner ought); **`tho`**
 
 [Sakes](/sakes)
 
-**Compare with:** [as-for](#as-for) is **`hahugem`**, not a sake stance.
+**Compare with:** [as-for](#as-for) is **`hehugom`**, not a sake stance.
 
 ### Thanks and sorry
 
@@ -616,7 +616,7 @@ Number problem / solution / goal candidates with free ordinals.
 
 ### Numeric prefix
 
-Role letter + number body + **`x`** (or **`mx`** for an approximate number) + root: a kind of the root, named by a number idea (`zrawaxolamal` *essence of love*, `zragexezuyel` *a three-part dialogue*). Like English *quasi-*, *proto-*, *multi-*, *tri-*.
+Role letter + number body + **`x`** (or **`mx`** for an approximate number) + root: a kind of the root, named by a number idea (`zrawaxolamal` *essence of love*, `zragexezuyol` *a three-part dialogue*). Like English *quasi-*, *proto-*, *multi-*, *tri-*.
 
 [Numeric prefixes](/numeric-derivation)
 
@@ -634,15 +634,15 @@ Single-item **-m** under question (*How about X?*).
 
 ### Generic pronoun
 
-**`eyon`**: any person, as a rule. English *one*, generic *you*.
+**`eyen`**: any person, as a rule. English *one*, generic *you*.
 
 [Pronouns](/pronouns#generic-pronoun)
 
-**Compare with:** `awan` is always the person actually listening; `umon` is one unidentified individual.
+**Compare with:** `awan` is always the person actually listening; `umen` is one unidentified individual.
 
 ### One of a name
 
-Ending **-ln** (span mark **`^@`**): one thing a name applies to, such as one unit of a brand or one copy of a work (`duzozeln` *an Uzozen*).
+Ending **-ln** (span mark **`^@`**): one thing a name applies to, such as one unit of a brand or one copy of a work (`dazozoln` *an Azozon*).
 
 [Names and titles](/proper-names#name-instance--ln)
 
@@ -652,7 +652,7 @@ FIELD × KIND with mid-word **`x`**; closed stem with join letter and no `x`.
 
 [Compounds](/compounds)
 
-**Compare with:** a [Hook compounds](/hook-compounds#hook-compounds) is a citation plus an extra-noun hook (`owurelul` *leave*), still with no **`x`**.
+**Compare with:** a [Hook compounds](/hook-compounds#hook-compounds) is a citation plus an extra-noun hook (`owurolul` *leave*), still with no **`x`**.
 
 ### Overlay / sense-form
 
@@ -682,7 +682,7 @@ Singling out one word against others: the contrast mark `&`. Word order adds no 
 
 ### Quasi
 
-Numeric prefix `-e-xROOT` (and quasi-N): the shape of a kind, not the real thing (`zruwuxahuyayol` *a quasi-friend*).
+Numeric prefix `-e-xROOT` (and quasi-N): the shape of a kind, not the real thing (`zruwuxahuyayel` *a quasi-friend*).
 
 [Numeric prefixes](/numeric-derivation#quasi)
 
@@ -736,20 +736,20 @@ Prefix-less *including / rather / instead / except*, discourse glue, extra-noun 
 
 ### Hook prefix
 
-Role letter + extra-noun hook vowels + **`x`** (or **`mx`** for the hook's **-m** frame) + stem: something in that hook's relation to the stem (`guoxavuvul` *anti-fighting*, `gamxohalal` *mid-ocean*). Like English *anti-*, *in-*, *trans-*, *-ward*.
+Role letter + extra-noun hook vowels + **`x`** (or **`mx`** for the hook's **-m** frame) + stem: something in that hook's relation to the stem (`guoxuvuvul` *anti-fighting*, `gamxohalal` *mid-ocean*). Like English *anti-*, *in-*, *trans-*, *-ward*.
 
 [Hook compounds](/hook-compounds#hook-prefixes)
 
 ### Hooked join
 
-Role letter + extra-noun hook vowels (+ **`m`** for the frame or **`r`** to point back) + **`x`** + a join, with the hook's landmark as the `bl-` word after it: the join's set, bounded by that relation (`zexual blahehal` *everyone at the house*, `doxar bluwon` *something for me*). On `/h/` it bounds which times a restrictor covers (`huxal blenulul` *never since the thunderstorm*).
+Role letter + extra-noun hook vowels (+ **`m`** for the frame or **`r`** to point back) + **`x`** + a join, with the hook's landmark as the `bl-` word after it: the join's set, bounded by that relation (`zexual blohehal` *everyone at the house*, `doxar bluwen` *something for me*). On `/h/` it bounds which times a restrictor covers (`huxal blanulul` *never since the thunderstorm*).
 
 [Hooked joins](/hooked-joins#hooked-joins)
 
 ### Role compound / agent / patient / recipient
 <a id="role-compound--agent--place--patient--recipient"></a>
 
-Role letter + **`w`** + scope vowel + part consonant + stem (`zwuzuduyel`). The part consonant is the role letter the participant had in the event: **`z`** the doer (agent), **`d`** what it acts on or makes (patient), **`b`** the extra party (recipient, or the other party on a relation stem). On `/h/` a slot part is [capacity](#capacity). A [content](#content-of-the-event) part names a quality of the event.
+Role letter + **`w`** + scope vowel + part consonant + stem (`zwuzeduyol`). The part consonant is the role letter the participant had in the event: **`z`** the doer (agent), **`d`** what it acts on or makes (patient), **`b`** the extra party (recipient, or the other party on a relation stem). On `/h/` a slot part is [capacity](#capacity). A [content](#content-of-the-event) part names a quality of the event.
 
 [Role compounds](/roles#role-compounds)
 
@@ -787,7 +787,7 @@ The last two letters of a root: a consonant for the kind of thing and a vowel fo
 
 ### So that / event purpose
 
-Clause-pole **`hovam`**: intended outcome of the host (*so that Olazun sits*; NP *for a money-bag*). Not locative *toward*, not sake **`tho`**, not discourse *therefore*.
+Clause-pole **`hovam`**: intended outcome of the host (*so that Alazun sits*; NP *for a money-bag*). Not locative *toward*, not sake **`tho`**, not discourse *therefore*.
 
 [Dependents](/dependents#so-that)
 
@@ -831,11 +831,11 @@ Short word in a role slot (`darl` / `barl` / `derl` / `dorl` / `durl`, open **`-
 
 [Sentence linkers](/sentence-linkers#stand-in)
 
-**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole-np-pole) (`thahum`, `thohom`) name the relation; the stand-in fills `/b/`.
+**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole-np-pole) (`thahum`, `thohem`) name the relation; the stand-in fills `/b/`.
 
 ### Special pronoun
 
-**`uwo` / `awa` / `aya` / `umo`**.
+**`uwe` / `awa` / `aya` / `ume`**.
 
 [Pronouns](/pronouns#special-pronouns)
 
@@ -857,7 +857,7 @@ Utterance setting: statement / question / command / prohibition.
 
 ### Tail suffix
 
-A dictionary word whose head is a bare root tail instead of a second root (`zahuyayol` *a friend*: *hug* + a person tail).
+A dictionary word whose head is a bare root tail instead of a second root (`zahuyayel` *a friend*: *hug* + a person tail).
 
 [Root tails](/root-tails#tail-suffixes)
 
@@ -869,7 +869,7 @@ A dictionary word whose head is a bare root tail instead of a second root (`zahu
 
 ### Tag pronoun
 
-Role letter + **`w`** + a tag vowel (A, E, O, U) + ending: a label the speaker assigns to a phrase (`zudozol zwal` *a dog, call it A*) and recalls in any role (`zwar`), or shares with **-m** (`zwam` *what A did*).
+Role letter + **`w`** + a tag vowel (A, E, O, U) + ending: a label the speaker assigns to a phrase (`zodozel zwal` *a dog, call it A*) and recalls in any role (`zwar`), or shares with **-m** (`zwam` *what A did*).
 
 [Tag pronouns](/tag-pronouns#tag-pronouns)
 
@@ -894,7 +894,7 @@ Single-item rank with a number = bound on a line.
 
 ### Topic
 
-What the talk is about from here on, set only by an `/x/` word: introduce (`xuzozen`), return (`xuzozer`), or clear (`xuvewem` / `xuvedam`).
+What the talk is about from here on, set only by an `/x/` word: introduce (`xazozon`), return (`xazozor`), or clear (`xevewom` / `xavedam`).
 
 [Topic](/topic#topic)
 
@@ -902,7 +902,7 @@ What the talk is about from here on, set only by an `/x/` word: introduce (`xuzo
 
 ### Topic pronoun
 
-**`alon`**: the current topic, in the same form in every role (`zalon` / `dalon` / `balon`).
+**`alen`**: the current topic, in the same form in every role (`zalen` / `dalen` / `balen`).
 
 [Topic](/topic#topic-pronoun)
 
@@ -938,7 +938,7 @@ The default word order of a body, set by its speech act: verb late in a statemen
 
 ### Usual role
 
-A role compound with practiced-role scope **`o`** after its **`w`** (`zwozuduyel`): the role as the office they inhabit (*a teacher*). With scope **`u`**, a role compound makes no claim about how often.
+A role compound with practiced-role scope **`o`** after its **`w`** (`zwozeduyol`): the role as the office they inhabit (*a teacher*). With scope **`u`**, a role compound makes no claim about how often.
 
 [Role compounds](/roles#one-time-or-a-practice)
 
@@ -950,7 +950,7 @@ A channel on a clause with a universal fence or restrictor: how you know the gen
 
 ### Sakes
 
-Sake + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`goyem`** + `/w/` need.
+Sake + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`goyom`** + `/w/` need.
 
 [Sakes](/sakes)
 

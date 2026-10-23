@@ -15,13 +15,13 @@ For English *somewhere*, *nowhere*, and *everywhere*, put a [standalone join](jo
 | **`el bal`** | *nowhere* |
 | **`el bual`** | *everywhere* |
 
-> `zuzozen vowurel el bual.`
+> `zazozon vowurol el bual.`
 >
-> z-Uzozen | v-walk | [at | b-everything]
+> z-Azozon | v-walk | [at | b-everything]
 >
-> "Uzozen walks everywhere."
+> "Azozon walks everywhere."
 
-> `zudozol vezuvol el bal.`
+> `zodozel vezuvel el bal.`
 >
 > z-dog | v-sleep | [at | b-none]
 >
@@ -31,73 +31,73 @@ For English *somewhere*, *nowhere*, and *everywhere*, put a [standalone join](jo
 
 English *here*, *there*, *this*, and *that* point at things by their distance from the speaker. Agebon points from a **person in the conversation** instead: put a place hook before the [speaker, listener, or interlocutors](pronouns.md#special-pronouns) in `/b/`.
 
-Names come first. When you know who is talking or listening, use their name as the landmark (`em buzozen` *near Uzozen*). Use speaker and listener when the conversation role itself matters, or when you have no name to use.
+Names come first. When you know who is talking or listening, use their name as the landmark (`em bazozon` *near Azozon*). Use speaker and listener when the conversation role itself matters, or when you have no name to use.
 
 <!-- cheat-sheet: joins-hooks -->
 | Agebon | Landmark | English |
 |--------|----------|---------|
-| `em buwon` | near the speaker | *here* / *this* |
+| `em buwen` | near the speaker | *here* / *this* |
 | `em bawan` | near the listener | *there* / *that* (by you) |
 | `em bayan` | near both of you | *here* (with us) |
 | `um bayan` | away from both of you | *over there* / *yonder* |
 
-Use `el` in place of `em` for the exact spot (`el buwon` *right where I am*).
+Use `el` in place of `em` for the exact spot (`el buwen` *right where I am*).
 
-> `zudozol em buwon vuhohol.`
+> `zodozel em buwen vehohel.`
 >
 > z-dog | [near | b-speaker] | v-sit
 >
 > "This dog sits here by me."
 
-> `zuzozen danal em bawan vawebol.`
+> `zazozon danal em bawan vayebel.`
 >
-> z-Uzozen | d-book | [near | b-listener] | v-see
+> z-Azozon | d-book | [near | b-listener] | v-see
 >
-> "Uzozen sees that book by you."
+> "Azozon sees that book by you."
 
-> `zolazun vezuvol um bayan.`
+> `zalazun vezuvel um bayan.`
 >
-> z-Olazun | v-sleep | [away-from | b-interlocutors]
+> z-Alazun | v-sleep | [away-from | b-interlocutors]
 >
-> "Olazun sleeps over there." (away from both you and me)
+> "Alazun sleeps over there." (away from both you and me)
 
-English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agebon names the landmark with the plain motion verb **`vavobel`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vavobel` says nothing about how someone travels; use `vowurel` (*walk*) or `varuvel` (*run*) only when the manner matters.
+English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agebon names the landmark with the plain motion verb **`vavobol`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vavobol` says nothing about how someone travels; use `vowurol` (*walk*) or `veruvol` (*run*) only when the manner matters.
 
-> `zuzozen vavobel oel buwon.`
+> `zazozon vavobol oel buwen.`
 >
-> z-Uzozen | v-go | [toward | b-speaker]
+> z-Azozon | v-go | [toward | b-speaker]
 >
-> "Uzozen comes over to me."
+> "Azozon comes over to me."
 
-> `zolazun vavobel oel bawan.`
+> `zalazun vavobol oel bawan.`
 >
-> z-Olazun | v-go | [toward | b-listener]
+> z-Alazun | v-go | [toward | b-listener]
 >
-> "Olazun is coming to you."
+> "Alazun is coming to you."
 
-> `zuzozen vavobel ul buwon.`
+> `zazozon vavobol ul buwen.`
 >
-> z-Uzozen | v-go | [from | b-speaker]
+> z-Azozon | v-go | [from | b-speaker]
 >
-> "Uzozen goes away from me."
+> "Azozon goes away from me."
 
-With an object, `vavobel` moves something else: `zuzozen vavobel duhohol.` *Uzozen moves the chair.* When the mover goes along with the thing, use **`velobal`** (*carry*). The same hooks then give English *bring* and *take*:
+With an object, `vavobol` moves something else: `zazozon vavobol dehohel.` *Azozon moves the chair.* When the mover goes along with the thing, use **`velobal`** (*carry*). The same hooks then give English *bring* and *take*:
 
-> `zuzozen velobal dobogal oel buwon.`
+> `zazozon velobal dubogal oel buwen.`
 >
-> z-Uzozen | v-carry | d-box | [toward | b-speaker]
+> z-Azozon | v-carry | d-box | [toward | b-speaker]
 >
-> "Uzozen brings me the box."
+> "Azozon brings me the box."
 
-> `zuzozen velobal dobogal ul buwon.`
+> `zazozon velobal dubogal ul buwen.`
 >
-> z-Uzozen | v-carry | d-box | [from | b-speaker]
+> z-Azozon | v-carry | d-box | [from | b-speaker]
 >
-> "Uzozen takes the box away." (away from where I am)
+> "Azozon takes the box away." (away from where I am)
 
-In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#which-noun)), `em buwon` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
+In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#which-noun)), `em buwen` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
 
-**Compare with:** *that dog* for a dog already named is [resume **-r**](pronouns.md#resume-r) (`zudozor`), not a place.
+**Compare with:** *that dog* for a dog already named is [resume **-r**](pronouns.md#resume-r) (`zodozer`), not a place.
 
 ### Practice {#beginner-practice}
 
@@ -110,61 +110,61 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agebon | Cue |
 |---------|--------|-----|
 | *luggage* | `elobal` | 🧳 |
-| *dog* | `udozol` | 🐕 |
+| *dog* | `odozel` | 🐕 |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *speaker* | `uwon` |
+| *speaker* | `uwen` |
 | *listener* | `awan` |
 | *interlocutors* | `ayan` |
-| *key* | `ogewel` |
-| *sit* | `vuhohol` |
-| *find* | `vumewol` |
-| *see* | `vawebol` |
-| *sleep* | `vezuvol` |
+| *key* | `egewol` |
+| *sit* | `vehohel` |
+| *find* | `vumewel` |
+| *see* | `vayebel` |
+| *sleep* | `vezuvel` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *The luggage is here.* (near me)
 
 ::: details Show answer
-`zelobal em buwon.`
+`zelobal em buwen.`
 
 z-luggage | [near | b-speaker]
 :::
 
-**2.** *Olazun sleeps over there.* (away from both of you)
+**2.** *Alazun sleeps over there.* (away from both of you)
 
 ::: details Show answer
-`zolazun vezuvol um bayan.`
+`zalazun vezuvel um bayan.`
 
-z-Olazun | v-sleep | [away-from | b-interlocutors]
+z-Alazun | v-sleep | [away-from | b-interlocutors]
 :::
 
-**3.** *Uzozen sits here with us.*
+**3.** *Azozon sits here with us.*
 
 ::: details Show answer
-`zuzozen vuhohol em bayan.`
+`zazozon vehohel em bayan.`
 
-z-Uzozen | v-sit | [near | b-interlocutors]
+z-Azozon | v-sit | [near | b-interlocutors]
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zolazun dogewel vumewol el bal.`
+**1.** `zalazun degewol vumewel el bal.`
 
 ::: details Show answer
-z-Olazun | d-key | v-find | [at | b-none]
+z-Alazun | d-key | v-find | [at | b-none]
 
-*Olazun doesn't find the key anywhere.*
+*Alazun doesn't find the key anywhere.*
 :::
 
-**2.** `zahelan delobal em bawan vawebol.`
+**2.** `zahelan delobal em bawan vayebel.`
 
 ::: details Show answer
 z-Ahelan | d-luggage | [near | b-listener] | v-see
@@ -172,7 +172,7 @@ z-Ahelan | d-luggage | [near | b-listener] | v-see
 *Ahelan sees that luggage by you.*
 :::
 
-**3.** `zudozol em buwon vuhohol.`
+**3.** `zodozel em buwen vehohel.`
 
 ::: details Show answer
 z-dog | [near | b-speaker] | v-sit
@@ -182,10 +182,10 @@ z-dog | [near | b-speaker] | v-sit
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *The key is right where I am.* `zogewel el buwon.` or `zogewel em buwon.`
+**1.** *The key is right where I am.* `zegewol el buwen.` or `zegewol em buwen.`
 
 ::: details Show answer
-`zogewel el buwon.`
+`zegewol el buwen.`
 
 z-key | [at | b-speaker]
 
@@ -194,12 +194,12 @@ z-key | [at | b-speaker]
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Uzozen sits everywhere.* <!-- lint: error -->`zuzozen vuhohol ol bor.`
+**1.** *Azozon sits everywhere.* <!-- lint: error -->`zazozon vehohel ol bor.`
 
 ::: details Show answer
-`zuzozen vuhohol el bual.`
+`zazozon vehohel el bual.`
 
-z-Uzozen | v-sit | [at | b-everything]
+z-Azozon | v-sit | [at | b-everything]
 
 **`bual`** is *everywhere*; **`ber`** asks *anywhere?* under a question, or means *any place will do*.
 :::

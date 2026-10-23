@@ -43,28 +43,28 @@ function roundTrip(agebon: string): string {
 describe("glossToAgebon", () => {
   it("rebuilds each spec example exactly", () => {
     for (const agebon of [
-      "dududal en dugudal.",
-      "zudozol gorol bluzozen gubulel.",
-      "glorol bluzozen zudozol gorol blolazun.",
-      "zududal zugudal zel zerulal zal vowurel.",
-      "zuzozen vuhuyel d[zuzozen vowurel].",
-      "zuzozen vuhuyel d@[enuron olazun].",
-      "zolazun duzozeln vawebol. zuzozer gelazom.",
-      "zolazun d^@<iPhone> vawebol.",
-      "zolazun d^@[enuron olazun] vawebol.",
-      "zahelan d~@[enuron olazun] vezuyol.",
-      "zolazun d~^@<iPhone> vawebol.",
-      "zududal zugudal zol { hewom bluzozen } vowurel.",
-      "zuzozen vowurel. zuzozer vuhuyel.",
-      "zuzozen vowurel. zwuzer vuhuyel.",
-      "zuzozen vawebol dwuzor.",
-      "zuzozen dolazun vawebol. zwudarx varuvel.",
-      "zuzozen d[amobam#|] vezuyel.",
-      "glegel z<kimchi> gamezom.",
-      "zagozolx gragel.",
-      "zagozolx gragel.",
-      "zuwonx vowurel.",
-      "zuzozen vuhuyel d[zuzozer vowurel]. dududal en dugudal.",
+      "dedudal en dogudal.",
+      "zodozel gorel blazozon gobulol.",
+      "glorel blazozon zodozel gorel blalazun.",
+      "zedudal zogudal zel zerulal zal vowurol.",
+      "zazozon vuhuyol d[zazozon vowurol].",
+      "zazozon vuhuyol d@[onuren alazun].",
+      "zalazun dazozoln vayebel. zazozor gelazem.",
+      "zalazun d^@<iPhone> vayebel.",
+      "zalazun d^@[onuren alazun] vayebel.",
+      "zahelan d~@[onuren alazun] vozuyel.",
+      "zalazun d~^@<iPhone> vayebel.",
+      "zedudal zogudal zol { hewem blazozon } vowurol.",
+      "zazozon vowurol. zazozor vuhuyol.",
+      "zazozon vowurol. zwuzer vuhuyol.",
+      "zazozon vayebel dwuzor.",
+      "zazozon dalazun vayebel. zwudarx veruvol.",
+      "zazozon d[ayobam#|] vezuyol.",
+      "glegol z<kimchi> gamezem.",
+      "zogozelx gragel.",
+      "zogozelx gragel.",
+      "zuwenx vowurol.",
+      "zazozon vuhuyol d[zazozor vowurol]. dedudal en dogudal.",
     ]) {
       assert.equal(canonical(roundTrip(agebon)), canonical(agebon), agebon);
     }
@@ -92,12 +92,12 @@ describe("glossToAgebon", () => {
   it("spells a hosted bl- word with no doc line to copy it from", () => {
     const bare = buildGlossIndex(tables);
     for (const agebon of [
-      "zexual blehaval vezuvol.",
-      "zuzozen vowurel halam blehaval.",
-      "zudozol gaham blehaval vezuvol.",
-      "zuzozen vowurel halam blolazun.",
-      "yel hewom blar zuzozen vowurel.",
-      "zuzozen vuhohol el bahehal. zexual blahehar vezuvol.",
+      "zexual blahaval vezuvel.",
+      "zazozon vowurol halam blahaval.",
+      "zodozel gaham blahaval vezuvel.",
+      "zazozon vowurol halam blalazun.",
+      "yel hewem blar zazozon vowurol.",
+      "zazozon vehohel el bohehal. zexual blohehar vezuvel.",
     ]) {
       assert.equal(canonical(glossToAgebon(morphGlossLine(agebon, tables), tables, bare)), canonical(agebon), agebon);
     }

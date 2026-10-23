@@ -8,15 +8,15 @@ band: beginner
 
 English puts the adjective before the noun (*an angry dog*). Agebon can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending), and that adjective describes the **next** noun instead of the one before it. This lets you choose the order for meter or emphasis, and it frees the spot after the noun for another adjective. (cue: **l** ≈ lean: the word leans toward the noun ahead.)
 
-> `glunemul zudozol.`
+> `glonumul zodozel.`
 >
 > [gl-angry | z-dog]
 >
 > "an angry dog"
 
-A `bl-` word the adjective hosts still follows it, and a `/w/` word still sits immediately before it (`welazom glunemul zudozol` = *a very angry dog*). On `/ɡ/`, this extra **`l`** only moves the adjective; the word means the same either way. On `/b/`, [`bl-`](clause.md#extra-nouns) is a different job, not a different order. A noun must come after it: with no noun to lean on, write a plain `/ɡ/` adjective after the noun instead (`zudozol gunemul`). It leans on a [call](speech-moves.md#vocative) the same way.
+A `bl-` word the adjective hosts still follows it, and a `/w/` word still sits immediately before it (`welazem glonumul zodozel` = *a very angry dog*). On `/ɡ/`, this extra **`l`** only moves the adjective; the word means the same either way. On `/b/`, [`bl-`](clause.md#extra-nouns) is a different job, not a different order. A noun must come after it: with no noun to lean on, write a plain `/ɡ/` adjective after the noun instead (`zodozel gonumul`). It leans on a [call](speech-moves.md#vocative) the same way.
 
-> `glunemul yudozol.`
+> `glonumul yodozel.`
 >
 > [gl-angry | y-dog]
 >
@@ -32,37 +32,37 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *train* | `edavel` | 🚆 |
-| *blue* | `ubulel` | 🔵 |
-| *stand* | `vawuvol` | 🧍 |
+| *train* | `edavol` | 🚆 |
+| *blue* | `obulol` | 🔵 |
+| *stand* | `vuzuvel` | 🧍 |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *police* | `obayel` |
-| *sleepy* | `uzemol` |
-| *very* | `welazom` |
-| *sit* | `vuhohol` |
-| *see* | `vawebol` |
+| *police* | `ebayol` |
+| *sleepy* | `uzemel` |
+| *very* | `welazem` |
+| *sit* | `vehohel` |
+| *see* | `vayebel` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *A sleepy Olazun stands.* (*sleepy* first)
+**1.** *A sleepy Alazun stands.* (*sleepy* first)
 
 ::: details Show answer
-`gluzemol zolazun vawuvol.`
+`gluzemel zalazun vuzuvel.`
 
-[gl-sleepy | z-Olazun] | v-stand
+[gl-sleepy | z-Alazun] | v-stand
 :::
 
 **2.** *Ahelan sees a blue train.* (*blue* first)
 
 ::: details Show answer
-`zahelan glubulel dedavel vawebol.`
+`zahelan globulol dedavol vayebel.`
 
 z-Ahelan | [gl-blue | d-train] | v-see
 :::
@@ -70,14 +70,14 @@ z-Ahelan | [gl-blue | d-train] | v-see
 **3.** *A sleepy police officer sits.* (*sleepy* first)
 
 ::: details Show answer
-`gluzemol zobayel vuhohol.`
+`gluzemel zebayol vehohel.`
 
 [gl-sleepy | z-police] | v-sit
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `welazom gluzemol zobayel vuhohol.`
+**1.** `welazem gluzemel zebayol vehohel.`
 
 ::: details Show answer
 [[w-very | gl-sleepy] | z-police] | v-sit
@@ -85,7 +85,7 @@ z-Ahelan | [gl-blue | d-train] | v-see
 *A very sleepy police officer sits.*
 :::
 
-**2.** `welazom glubulel zedavel vawuvol.`
+**2.** `welazem globulol zedavol vuzuvel.`
 
 ::: details Show answer
 [[w-very | gl-blue] | z-train] | v-stand
@@ -93,7 +93,7 @@ z-Ahelan | [gl-blue | d-train] | v-see
 *A very blue train stands.*
 :::
 
-**3.** `gluzemol zahelan vawuvol.`
+**3.** `gluzemel zahelan vuzuvel.`
 
 ::: details Show answer
 [gl-sleepy | z-Ahelan] | v-stand
@@ -103,22 +103,22 @@ z-Ahelan | [gl-blue | d-train] | v-see
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Uzozen sees a sleepy Ahelan.* (*sleepy* first) `zuzozen gluzemol dahelan vawebol.` or `zuzozen dahelan guzemol vawebol.`
+**1.** *Azozon sees a sleepy Ahelan.* (*sleepy* first) `zazozon gluzemel dahelan vayebel.` or `zazozon dahelan guzemel vayebel.`
 
 ::: details Show answer
-`zuzozen gluzemol dahelan vawebol.`
+`zazozon gluzemel dahelan vayebel.`
 
-z-Uzozen | [gl-sleepy | d-Ahelan] | v-see
+z-Azozon | [gl-sleepy | d-Ahelan] | v-see
 
 **`gl-`** leans on the noun ahead; a plain `/ɡ/` after the noun would still be *sleepy Ahelan*, but *sleepy* would not come first.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *A blue train stands.* (*blue* first) <!-- lint: error -->`gubulel zedavel vawuvol.`
+**1.** *A blue train stands.* (*blue* first) <!-- lint: error -->`gobulol zedavol vuzuvel.`
 
 ::: details Show answer
-`glubulel zedavel vawuvol.`
+`globulol zedavol vuzuvel.`
 
 [gl-blue | z-train] | v-stand
 

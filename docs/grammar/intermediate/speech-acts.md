@@ -11,7 +11,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 Say an act word twice among the opening `/y/` words to make the act more insistent. The act stays the same; the repeat never cancels it. Use it most where a missed *don't* would be dangerous.
 
-> `yul yul vazuyul.`
+> `yul yul vozuyul.`
 >
 > y-prohibition | y-prohibition | v-sneak
 >
@@ -35,7 +35,7 @@ Repeat only the opening act word: an act word after the body starts a new turn i
 
 People often do one act while sounding like another. *Could you pass the salt?* is a request that sounds like a question. *We don't hit in this house* is a prohibition that sounds like a statement. Two different act words say both: the **first** is what you really do, and the **second** is how it sounds. The listener always knows the real act from the first word, and answers that act.
 
-> `yol yel vanuvul dobogal zawan.`
+> `yol yel vabuvul dubogal zawan.`
 >
 > y-command | y-question | v-punch | d-box | z-listener
 >
@@ -43,13 +43,13 @@ People often do one act while sounding like another. *Could you pass the salt?* 
 
 The body takes the **first** word's [usual order](/speech-moves#act-word-order). The second word only says how the turn sounds and never moves the verb. So a prohibition that sounds like a command still keeps its verb late, and a missed **`yul`** never leaves an order to act.
 
-> `yul yol dobogal vanuvul.`
+> `yul yol dubogal vabuvul.`
 >
 > y-prohibition | y-command | d-box | v-punch
 >
 > "Go ahead, punch the box." (sarcastic: don't)
 
-> `yul yal zayan dobogal vanuvul.`
+> `yul yal zayan dubogal vabuvul.`
 >
 > y-prohibition | y-statement | z-interlocutors | d-box | v-punch
 >
@@ -80,7 +80,7 @@ Each word's ending describes its own act. The first ending says how firmly you r
 | **`yum yal`** | soft norm | *We'd rather people didn't…* |
 | **`yul yur`** | firm *no* that sounds like *not yet* | *Let's hold off for now.* (meaning never) |
 
-> `yom yol vuhohol.`
+> `yom yol vehohel.`
 >
 > y-request | y-command | v-sit
 >
@@ -92,13 +92,13 @@ A stack has two act words at most, with nothing between them. A call, a reaction
 
 A call or a reaction can also take an adjective **before** it, with [**`gl-`**](/left-bound-adjectives#left-bound-adjectives), the way a noun does. Its `/w/` and its `/b/` come along as usual.
 
-> `glolamam yolazun.`
+> `glolamam yalazun.`
 >
-> [gl-cherished | y-Olazun]
+> [gl-cherished | y-Alazun]
 >
-> "Dear Olazun!"
+> "Dear Alazun!"
 
-> `glugemam yuburel.`
+> `glugomam yuburol.`
 >
 > [gl-delight | y-birthday]
 >
@@ -106,7 +106,7 @@ A call or a reaction can also take an adjective **before** it, with [**`gl-`**](
 
 A reaction can also take a [degree word](left-bound.md#degree-w) right before it, to say how strongly it holds. A call takes none: the person you call is not more or less called.
 
-> `welazom yemom.`
+> `welazem yemem.`
 >
 > [w-very | y-amazement]
 >
@@ -114,7 +114,7 @@ A reaction can also take a [degree word](left-bound.md#degree-w) right before it
 
 The degree word grades the reaction itself. A tone mark is how you sound saying it, so the two can go together.
 
-To say who or what you react to (*hooray for Uzozen*), add a [hook](/hooks#extra-noun) and `/b/` after the reaction: `yohumal ol buzozen.` A bare `/b/` there would start the body as the person who receives.
+To say who or what you react to (*hooray for Azozon*), add a [hook](/hooks#extra-noun) and `/b/` after the reaction: `yahumal ol bazozon.` A bare `/b/` there would start the body as the person who receives.
 
 ### Speech manner (*frankly* / *to be clear*) {#speech-manner}
 
@@ -123,22 +123,22 @@ English *frankly* and *to be clear* say in words how you are speaking. A tone ma
 <!-- cheat-sheet: talking -->
 | Agebon | English | Root |
 |--------|---------|------|
-| **`thagebom`** | *to be clear* / *to put it plainly* | clarity |
-| **`thavewem`** | *frankly* / *honestly* / *to tell the truth* | revelation |
+| **`thagebem`** | *to be clear* / *to put it plainly* | clarity |
+| **`thavewom`** | *frankly* / *honestly* / *to tell the truth* | revelation |
 
-> `thagebom zuzozen vowurel.`
+> `thagebem zazozon vowurol.`
 >
-> th-clarity | z-Uzozen | v-walk
+> th-clarity | z-Azozon | v-walk
 >
-> "To be clear, Uzozen walks."
+> "To be clear, Azozon walks."
 
-> `thavewem zolazun vezuvol.`
+> `thavewom zalazun vezuvel.`
 >
-> th-revelation | z-Olazun | v-sleep
+> th-revelation | z-Alazun | v-sleep
 >
-> "Honestly, Olazun is sleeping."
+> "Honestly, Alazun is sleeping."
 
-**Compare with:** the stance word describes your way of saying the claim, not the action. `/h/` on the same root (`hagebom`) would describe how the action itself is done.
+**Compare with:** the stance word describes your way of saying the claim, not the action. `/h/` on the same root (`hagebem`) would describe how the action itself is done.
 
 ### Number as interjection {#number-as-interjection}
 
@@ -154,61 +154,61 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *trumpet* | `eyorel` | 🎺 |
-| *clarity* | `thagebom` | 👓 from *glasses*: seeing it plainly |
-| *revelation* | `thavewem` | 🔦 from *flashlight*: showing what was hidden |
+| *trumpet* | `adorol` | 🎺 |
+| *clarity* | `thagebem` | 👓 from *glasses*: seeing it plainly |
+| *revelation* | `thavewom` | 🔦 from *flashlight*: showing what was hidden |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
-| *stop* | `vozohul` |
-| *run* | `varuvel` |
-| *page* | `ebonel` |
-| *write* | `varayel` |
-| *see* | `vawebol` |
-| *very* | `welazom` |
-| *surprise* | `emol` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
+| *stop* | `vezohul` |
+| *run* | `veruvol` |
+| *page* | `obonol` |
+| *write* | `varuyol` |
+| *see* | `vayebel` |
+| *very* | `welazem` |
+| *surprise* | `emel` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *Don't run. I mean it.*
 
 ::: details Show answer
-`yul yul varuvel.`
+`yul yul veruvol.`
 
 y-prohibition | y-prohibition | v-run
 :::
 
-**2.** *To be clear, Uzozen writes a page.*
+**2.** *To be clear, Azozon writes a page.*
 
 ::: details Show answer
-`thagebom zuzozen debonel varayel.`
+`thagebem zazozon dobonol varuyol.`
 
-th-clarity | z-Uzozen | d-page | v-write
+th-clarity | z-Azozon | d-page | v-write
 :::
 
 **3.** *Please, please stop.*
 
 ::: details Show answer
-`yom yom vozohul.`
+`yom yom vezohul.`
 
 y-request | y-request | v-stop
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `yem thavewem zolazun vawebol deyorel.`
+**1.** `yem thavewom zalazun vayebel dadorol.`
 
 ::: details Show answer
-y-soft-question | th-revelation | z-Olazun | v-see | d-trumpet
+y-soft-question | th-revelation | z-Alazun | v-see | d-trumpet
 
-*Honestly, does Olazun see the trumpet, I wonder?*
+*Honestly, does Alazun see the trumpet, I wonder?*
 :::
 
-**2.** `welazom yemom.`
+**2.** `welazem yemem.`
 
 ::: details Show answer
 [w-very | y-amazement]
@@ -216,7 +216,7 @@ y-soft-question | th-revelation | z-Olazun | v-see | d-trumpet
 *Truly amazing!*
 :::
 
-**3.** `yul yol vozohul.`
+**3.** `yul yol vezohul.`
 
 ::: details Show answer
 y-prohibition | y-command | v-stop
@@ -226,10 +226,10 @@ y-prohibition | y-command | v-stop
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Go ahead, stop.* (sarcastic) `yul yol vozohul.` or `yol yol vozohul.`
+**1.** *Go ahead, stop.* (sarcastic) `yul yol vezohul.` or `yol yol vezohul.`
 
 ::: details Show answer
-`yul yol vozohul.`
+`yul yol vezohul.`
 
 y-prohibition | y-command | v-stop
 
@@ -238,10 +238,10 @@ Two different act words stack as one sarcastic turn; repeating **`yol`** only in
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Don't stop. I mean it.* <!-- lint: error -->`yul vozohul yul.`
+**1.** *Don't stop. I mean it.* <!-- lint: error -->`yul vezohul yul.`
 
 ::: details Show answer
-`yul yul vozohul.`
+`yul yul vezohul.`
 
 y-prohibition | y-prohibition | v-stop
 

@@ -22,23 +22,23 @@ The ending says why you think the move is welcome. Use **-l** when the person in
 
 A sake word with no `/b/` is about **your** sake, so advice for the other person's own good names them in a `bl-` word right after the sake word. In the same sentence, that is the [themself](pronouns.md#themself) pointer **`bwuzor`**. The `/b/` says whose stake the act serves, not why they would do it.
 
-> `zuzozen vezuyel thawothem blwuzor.`
+> `zazozon vezuyol thawethem blwuzor.`
 >
-> z-Uzozen | v-tell | [th-relatedness-ought-offered | bl-←episode-agent.self]
+> z-Azozon | v-tell | [th-relatedness-ought-offered | bl-←episode-agent.self]
 >
-> "Uzozen ought to talk; it would help them feel connected." (unasked advice)
+> "Azozon ought to talk; it would help them feel connected." (unasked advice)
 
-> `zahelan vezuyol thobathel blwuzor.`
+> `zahelan vozuyel thobathel blwuzor.`
 >
 > z-Ahelan | v-sing | [th-physical-ought-invited | bl-←episode-agent.self]
 >
 > "Ahelan ought to sing; it's good for their health." (Ahelan asked for advice)
 
-> `zolazun vabuyel thawother blwuzor.`
+> `zalazun vabuyol thawether blwuzor.`
 >
-> z-Olazun | v-bow | [th-relatedness-ought-trial | bl-←episode-agent.self]
+> z-Alazun | v-bow | [th-relatedness-ought-trial | bl-←episode-agent.self]
 >
-> "Olazun could try bowing, to see whether it helps them feel connected."
+> "Alazun could try bowing, to see whether it helps them feel connected."
 
 ### Practice {#beginner-practice}
 
@@ -50,27 +50,27 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *relatedness* | `awol` | 🪢 from *knot* |
+| *relatedness* | `awel` | 🪢 from *knot* |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *physical* | `obal` |
-| *sit* | `vuhohol` |
-| *sing* | `vezuyol` |
-| *tell* | `vezuyel` |
-| *cook* | `vuguyel` |
+| *sit* | `vehohel` |
+| *sing* | `vozuyel` |
+| *tell* | `vezuyol` |
+| *cook* | `vuguyol` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *Ahelan ought to sit; it would help their health.* (unasked advice)
 
 ::: details Show answer
-`zahelan vuhohol thobathem blwuzor.`
+`zahelan vehohel thobathem blwuzor.`
 
 z-Ahelan | v-sit | [th-physical-ought-offered | bl-←episode-agent.self]
 :::
@@ -78,51 +78,51 @@ z-Ahelan | v-sit | [th-physical-ought-offered | bl-←episode-agent.self]
 **2.** *Ahelan ought to sing; it's good for their health.* (Ahelan asked for advice)
 
 ::: details Show answer
-`zahelan vezuyol thobathel blwuzor.`
+`zahelan vozuyel thobathel blwuzor.`
 
 z-Ahelan | v-sing | [th-physical-ought-invited | bl-←episode-agent.self]
 :::
 
-**3.** *Olazun could try cooking, to see whether it's good for their health.*
+**3.** *Alazun could try cooking, to see whether it's good for their health.*
 
 ::: details Show answer
-`zolazun vuguyel thobather blwuzor.`
+`zalazun vuguyol thobather blwuzor.`
 
-z-Olazun | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
+z-Alazun | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zuzozen vezuyel thawothem blwuzor.`
+**1.** `zazozon vezuyol thawethem blwuzor.`
 
 ::: details Show answer
-z-Uzozen | v-tell | [th-relatedness-ought-offered | bl-←episode-agent.self]
+z-Azozon | v-tell | [th-relatedness-ought-offered | bl-←episode-agent.self]
 
-*Uzozen ought to talk; it would help them feel connected.* (unasked advice)
+*Azozon ought to talk; it would help them feel connected.* (unasked advice)
 :::
 
-**2.** `zolazun vezuyol thobathel blwuzor.`
+**2.** `zalazun vozuyel thobathel blwuzor.`
 
 ::: details Show answer
-z-Olazun | v-sing | [th-physical-ought-invited | bl-←episode-agent.self]
+z-Alazun | v-sing | [th-physical-ought-invited | bl-←episode-agent.self]
 
-*Olazun ought to sing; it's good for their health.* (Olazun asked for advice)
+*Alazun ought to sing; it's good for their health.* (Alazun asked for advice)
 :::
 
-**3.** `zolazun vuguyel thobather blwuzor.`
+**3.** `zalazun vuguyol thobather blwuzor.`
 
 ::: details Show answer
-z-Olazun | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
+z-Alazun | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
 
-*Olazun could try cooking, to see whether it's good for their health.*
+*Alazun could try cooking, to see whether it's good for their health.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Ahelan ought to sit; it would help their health.* (unasked advice) `zahelan vuhohol thobathem blwuzor.` or `zahelan vuhohol thobathel blwuzor.`
+**1.** *Ahelan ought to sit; it would help their health.* (unasked advice) `zahelan vehohel thobathem blwuzor.` or `zahelan vehohel thobathel blwuzor.`
 
 ::: details Show answer
-`zahelan vuhohol thobathem blwuzor.`
+`zahelan vehohel thobathem blwuzor.`
 
 z-Ahelan | v-sit | [th-physical-ought-offered | bl-←episode-agent.self]
 
@@ -131,10 +131,10 @@ z-Ahelan | v-sit | [th-physical-ought-offered | bl-←episode-agent.self]
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Ahelan ought to sit; it would help their health.* (unasked advice) <!-- lint: error -->`zahelan vuhohol thobathem.`
+**1.** *Ahelan ought to sit; it would help their health.* (unasked advice) <!-- lint: error -->`zahelan vehohel thobathem.`
 
 ::: details Show answer
-`zahelan vuhohol thobathem blwuzor.`
+`zahelan vehohel thobathem blwuzor.`
 
 z-Ahelan | v-sit | [th-physical-ought-offered | bl-←episode-agent.self]
 

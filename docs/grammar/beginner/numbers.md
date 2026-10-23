@@ -33,15 +33,15 @@ Neighbouring letters in a group, the ones easiest to mishear for each other, alw
 
 So *three* is **g** + **ra** + **ge** + **l**: **`gragel`**.
 
-> `zagozolx gragel.`
+> `zogozelx gragel.`
 > z-cat-x | g-three
 >
 > "There are three cats."
 
-> `zuzozen danalx gragel vawebol.`
-> z-Uzozen | [d-book-x | g-three] | v-see
+> `zazozon danalx gragel vayebel.`
+> z-Azozon | [d-book-x | g-three] | v-see
 >
-> "Uzozen sees three books."
+> "Azozon sees three books."
 
 A number with more digits is still **one word**: one syllable per digit, left to right. *Twenty* is **g** + **ra** + **do** + **mo** + **l**: **`gradomol`**.
 
@@ -54,10 +54,10 @@ To say **which place** a thing has in a series (*the first*, *the second*, …),
 >
 > "There is a second book."
 
-> `zolazun danal grogel varayel.`
-> z-Olazun | [d-book | g-3rd] | v-write
+> `zalazun danal grogel varuyol.`
+> z-Alazun | [d-book | g-3rd] | v-write
 >
-> "Olazun writes the third book."
+> "Alazun writes the third book."
 
 | Marker | Use | English | Cue |
 |--------|--------|---------|-----|
@@ -70,9 +70,9 @@ The **`r`** right after the role letter tells you the word is a number: no other
 
 You can say the count is **more than one** without naming how many. Keep the count marker and leave the digits off: **`gral`**.
 
-This is a different tool from [**-x**](plurality.md) on the noun: **-x** says you mean a group (*cats* as a set), and **`gral`** says how much. Both may sit on the same noun (`zagozolx gral`).
+This is a different tool from [**-x**](plurality.md) on the noun: **-x** says you mean a group (*cats* as a set), and **`gral`** says how much. Both may sit on the same noun (`zogozelx gral`).
 
-> `zagozolx gral.`
+> `zogozelx gral.`
 > z-cat-x | g-more-than-one
 >
 > "There is more than one cat."
@@ -89,56 +89,56 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *baguette* | `ebodel` | 🥖 |
-| *croissant* | `agedol` | 🥐 |
-| *cake* | `egodol` | 🎂 |
-| *doughnut* | `odedol` | 🍩 |
-| *smell* | `vonebol` | 👃 from *nose* |
+| *baguette* | `ebodol` | 🥖 |
+| *croissant* | `agedel` | 🥐 |
+| *cake* | `egodel` | 🎂 |
+| *doughnut* | `udodel` | 🍩 |
+| *smell* | `vonebel` | 👃 from *nose* |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *ant* | `unezal` |
-| *bread* | `ebodol` |
-| *cookie* | `ugedol` |
-| *cook* | `vuguyel` |
-| *see* | `vawebol` |
-| *find* | `vumewol` |
+| *ant* | `enezal` |
+| *bread* | `obodel` |
+| *cookie* | `ugedel` |
+| *cook* | `vuguyol` |
+| *see* | `vayebel` |
+| *find* | `vumewel` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *There are three croissants.*
 
 ::: details Show answer
-`zagedolx gragel.`
+`zagedelx gragel.`
 
 z-croissant-x | g-three
 :::
 
-**2.** *Uzozen sees two cakes.*
+**2.** *Azozon sees two cakes.*
 
 ::: details Show answer
-`zuzozen degodolx gradol vawebol.`
+`zazozon degodelx gradol vayebel.`
 
-z-Uzozen | [d-cake-x | g-two] | v-see
+z-Azozon | [d-cake-x | g-two] | v-see
 :::
 
-**3.** *Olazun finds the second doughnut.*
+**3.** *Alazun finds the second doughnut.*
 
 ::: details Show answer
-`zolazun dodedol grodol vumewol.`
+`zalazun dudodel grodol vumewel.`
 
-z-Olazun | [d-doughnut | g-2nd] | v-find
+z-Alazun | [d-doughnut | g-2nd] | v-find
 :::
 
 **4.** *Ahelan smells more than one baguette.*
 
 ::: details Show answer
-`zahelan debodelx gral vonebol.`
+`zahelan debodolx gral vonebel.`
 
 z-Ahelan | [d-baguette-x | g-more-than-one] | v-smell
 :::
@@ -146,22 +146,22 @@ z-Ahelan | [d-baguette-x | g-more-than-one] | v-smell
 **5.** *There are twelve ants.*
 
 ::: details Show answer
-`zunezalx grabadol.`
+`zenezalx grabadol.`
 
 z-ant-x | g-twelve.spelled
 :::
 
-**6.** *Uzozen cooks the tenth cake.*
+**6.** *Azozon cooks the tenth cake.*
 
 ::: details Show answer
-`zuzozen degodol grobamol vuguyel.`
+`zazozon degodel grobamol vuguyol.`
 
-z-Uzozen | [d-cake | g-10th.spelled] | v-cook
+z-Azozon | [d-cake | g-10th.spelled] | v-cook
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zebodelx grahul.`
+**1.** `zebodolx grahul.`
 
 ::: details Show answer
 z-baguette-x | g-four
@@ -169,15 +169,15 @@ z-baguette-x | g-four
 *There are four baguettes.*
 :::
 
-**2.** `zolazun debodol grogel vonebol.`
+**2.** `zalazun dobodel grogel vonebel.`
 
 ::: details Show answer
-z-Olazun | [d-bread | g-3rd] | v-smell
+z-Alazun | [d-bread | g-3rd] | v-smell
 
-*Olazun smells the third loaf of bread.*
+*Alazun smells the third loaf of bread.*
 :::
 
-**3.** `zunezalx gral dugedol vawebol.`
+**3.** `zenezalx gral dugedel vayebel.`
 
 ::: details Show answer
 [z-ant-x | g-more-than-one] | d-cookie | v-see
@@ -185,7 +185,7 @@ z-Olazun | [d-bread | g-3rd] | v-smell
 *More than one ant sees a cookie.*
 :::
 
-**4.** `zahelan dagedolx gradomol vumewol.`
+**4.** `zahelan dagedelx gradomol vumewel.`
 
 ::: details Show answer
 z-Ahelan | [d-croissant-x | g-20.spelled] | v-find
@@ -193,7 +193,7 @@ z-Ahelan | [d-croissant-x | g-20.spelled] | v-find
 *Ahelan finds twenty croissants.*
 :::
 
-**5.** `zegodol grobal.`
+**5.** `zegodel grobal.`
 
 ::: details Show answer
 z-cake | g-1st
@@ -203,20 +203,20 @@ z-cake | g-1st
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Uzozen sees the second baguette.* `zuzozen debodel grodol vawebol.` or `zuzozen debodel gradol vawebol.`
+**1.** *Azozon sees the second baguette.* `zazozon debodol grodol vayebel.` or `zazozon debodol gradol vayebel.`
 
 ::: details Show answer
-`zuzozen debodel grodol vawebol.`
+`zazozon debodol grodol vayebel.`
 
-z-Uzozen | [d-baguette | g-2nd] | v-see
+z-Azozon | [d-baguette | g-2nd] | v-see
 
 Rank marker **`ro`** gives the place in a series; **`ra`** would count two.
 :::
 
-**2.** *There are three doughnuts.* `zodedolx gragel.` or `zodedolx gral.`
+**2.** *There are three doughnuts.* `zudodelx gragel.` or `zudodelx gral.`
 
 ::: details Show answer
-`zodedolx gragel.`
+`zudodelx gragel.`
 
 z-doughnut-x | g-three
 
@@ -225,14 +225,14 @@ z-doughnut-x | g-three
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Olazun sees four cakes.* <!-- lint: error -->`zolazun grahul degodolx vawebol.`
+**1.** *Alazun sees four cakes.* <!-- lint: error -->`zalazun grahul degodelx vayebel.`
 
 ::: details Show answer
-`zolazun degodolx grahul vawebol.`
+`zalazun degodelx grahul vayebel.`
 
-z-Olazun | [d-cake-x | g-four] | v-see
+z-Alazun | [d-cake-x | g-four] | v-see
 
-A number word is a `/ɡ/` word, so it goes after its noun; before `degodolx` it counts Olazun.
+A number word is a `/ɡ/` word, so it goes after its noun; before `degodelx` it counts Alazun.
 :::
 
 ## See also

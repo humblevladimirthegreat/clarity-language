@@ -7,7 +7,7 @@ import { dataPath } from "../repo-paths.js";
 import { analyzeEnglish, createHelperData, suggestionChip, type HelperPayload } from "./browser.js";
 import { helperPayload, loadHelperData } from "./load.js";
 
-const SENTENCES = ["My sister could not come to the tea shop.", "The teacher saw/n a puppy by the living room.", "Uzozen walks."];
+const SENTENCES = ["My sister could not come to the tea shop.", "The teacher saw/n a puppy by the living room.", "Azozon walks."];
 
 describe("English helper in the browser", () => {
   const node = loadHelperData();

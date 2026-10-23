@@ -34,7 +34,7 @@ describe("parseWord — content / gl- / citation", () => {
     const group = parseOk("dazawalnx");
     assert.equal(group.ending, "ln");
     assert.equal(group.plural, true);
-    const compound = parseOk("zalexaloweln");
+    const compound = parseOk("zaloxolowoln");
     assert.equal(compound.ending, "ln");
     const span = parseOk("d^@<iPhone>");
     assert.equal(span.ending, "ln");
@@ -304,7 +304,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
   });
 
   it("parses stacked label-scope vowels on a content root and a role compound", () => {
-    const word = parseOk("gunemuthael");
+    const word = parseOk("gonumuthael");
     assert.equal(word.family.kind, "x");
     if (word.family.kind === "x") {
       assert.equal(word.family.xFamily, "sake");
@@ -465,13 +465,13 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
   });
 
   it("parses numeric prefixes on x and mx, on a compound stem, and hosted", () => {
-    const approx = parseOk("dragemxezuyel");
+    const approx = parseOk("dragemxezuyol");
     assert.equal(approx.family.kind === "x" && approx.family.approx, true);
     assert.equal(parseOk("zrawaxolovem").ending, "m");
     const compound = parseOk("zragexahehaxowurel");
     assert.deepEqual(compound.family.kind === "x" && compound.family.rightRoots, ["aheha", "owure"]);
-    assert.equal(parseOk("blragexezuyel").bl, true);
-    assert.equal(parseOk("zragexezuyelx").plural, true);
+    assert.equal(parseOk("blragexezuyol").bl, true);
+    assert.equal(parseOk("zragexezuyolx").plural, true);
     assert.equal(parseOk("rawaxolovel").family.kind, "x");
   });
 

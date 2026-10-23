@@ -12,7 +12,7 @@ const spoken = (text: string): string[] =>
 
 describe("expandWritingSpan", () => {
   it("speaks a cite's words and nothing for the brackets", () => {
-    assert.deepEqual(spoken("d[zudaval zagozol]"), ["zudaval", "zagozol"]);
+    assert.deepEqual(spoken("d[zudaval zogozel]"), ["zudaval", "zogozel"]);
   });
 
   it("skips a foreign interior as foreign", () => {
@@ -22,7 +22,7 @@ describe("expandWritingSpan", () => {
   });
 
   it("gives marks no spoken word", () => {
-    assert.deepEqual(spoken("d@[zudaval zagozol]"), ["zudaval", "zagozol"]);
+    assert.deepEqual(spoken("d@[zudaval zogozel]"), ["zudaval", "zogozel"]);
     assert.deepEqual(spoken("d~[zudaval]"), ["zudaval"]);
   });
 

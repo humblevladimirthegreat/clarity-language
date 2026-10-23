@@ -21,7 +21,7 @@ The marker still says amount or rank. A code has no magnitude, so it takes no ex
 <a id="infinity"></a>
 <a id="special-numeric-values"></a>
 
-> `zagozolx grawal.`
+> `zogozelx grawal.`
 > z-cat-x | g-plus-infinity
 >
 > "There are infinitely many cats."
@@ -78,16 +78,16 @@ On `/v/` and `/h/`, these special values (∞, last, start, a tiny amount) becom
 | **`v~-e-`** | *ease down a little* |
 | **`h+e`** | **unbounded multiplicity** (× without bound / unboundedly many times) |
 | **`h~+e`** | *many times but finite* |
-| **`h+e-`** | **barely**: the action clears one full time by a hair (`zuzozen h+e- vuhohol.` *Uzozen barely sits*) |
+| **`h+e-`** | **barely**: the action clears one full time by a hair (`zazozon h+e- vehohel.` *Azozon barely sits*) |
 | **`h~+e-`** | *scraped by*: it happened, but only with strain |
-| **`h-e-`** | **almost**: the action falls a hair short of one full time (`zuzozen h-e- vuhohol.` *Uzozen almost sits*) |
+| **`h-e-`** | **almost**: the action falls a hair short of one full time (`zazozon h-e- vehohel.` *Azozon almost sits*) |
 | **`h~-e-`** | *came close*: it fell short despite a real effort |
 
-**Margin vs effort:** **-l** (`hrawul` / `hruwul`) measures the margin: over or under by a hair. **`~`** (**-m**) reports the felt effort instead: `zuzozen hrawum vuhohol.` is *Uzozen managed to sit, just*; `zuzozen hruwum vuhohol.` is *Uzozen tried hard to sit and didn't quite*. Division into parts keeps its counted form `h-N`.
+**Margin vs effort:** **-l** (`hrawul` / `hruwul`) measures the margin: over or under by a hair. **`~`** (**-m**) reports the felt effort instead: `zazozon hrawum vehohel.` is *Azozon managed to sit, just*; `zazozon hruwum vehohel.` is *Azozon tried hard to sit and didn't quite*. Division into parts keeps its counted form `h-N`.
 
 **On a quality:** the same pair sits on `/w/` before an adjective or adverb. **`wrawul`** = *barely*; **`wruwul`** = *almost*.
 
-> `zudozol wruwul gunemul vowurel.`
+> `zodozel wruwul gonumul vowurol.`
 > [z-dog | [w---e- | g-angry]] | v-walk
 >
 > "An almost angry dog walks."
@@ -293,26 +293,26 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *telescope* | `edowel` | 🔭 |
+| *telescope* | `udowol` | 🔭 |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *star* | `alol` |
+| *star* | `alel` |
 | *cloud* | `ugalal` |
-| *sun* | `uzalel` |
-| *see* | `vawebol` |
+| *sun* | `ezalol` |
+| *see* | `vayebel` |
 
 #### English → Agebon {#advanced-english-to-agebon}
 
 **1.** *There are infinitely many stars.*
 
 ::: details Show answer
-`zalolx grawal.`
+`zalelx grawal.`
 
 z-star-x | g-plus-infinity
 :::
@@ -320,30 +320,30 @@ z-star-x | g-plus-infinity
 **2.** *There are one gazillion telescopes.*
 
 ::: details Show answer
-`zedowelx grabawal.`
+`zudowolx grabawal.`
 
 z-telescope-x | g-+-1e
 :::
 
-**3.** *Finally: Uzozen sees the clouds.*
+**3.** *Finally: Azozon sees the clouds.*
 
 ::: details Show answer
-`xrowal zuzozen dugalalx vawebol.`
+`xrowal zazozon dugalalx vayebel.`
 
-x-finally | z-Uzozen | d-cloud-x | v-see
+x-finally | z-Azozon | d-cloud-x | v-see
 :::
 
-**4.** *Olazun almost sees the sun.*
+**4.** *Alazun almost sees the sun.*
 
 ::: details Show answer
-`zolazun hruwul duzalel vawebol.`
+`zalazun hruwul dezalol vayebel.`
 
-z-Olazun | h---e- | d-sun | v-see
+z-Alazun | h---e- | d-sun | v-see
 :::
 
 #### Agebon → English {#advanced-agebon-to-english}
 
-**1.** `zalolx grawam.`
+**1.** `zalelx grawam.`
 
 ::: details Show answer
 z-star-x | g-plus-infinity.about
@@ -359,7 +359,7 @@ z-cloud-x | g-+-0e
 *There are absolutely no clouds.*
 :::
 
-**3.** `xrowul zahelan dalol vawebol.`
+**3.** `xrowul zahelan dalel vayebel.`
 
 ::: details Show answer
 x-starting-with | z-Ahelan | d-star | v-see
@@ -369,19 +369,19 @@ x-starting-with | z-Ahelan | d-star | v-see
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Uzozen barely sees the star.* `zuzozen hrawul dalol vawebol.` or `zuzozen hruwul dalol vawebol.`
+**1.** *Azozon barely sees the star.* `zazozon hrawul dalel vayebel.` or `zazozon hruwul dalel vayebel.`
 
 ::: details Show answer
-`zuzozen hrawul dalol vawebol.`
+`zazozon hrawul dalel vayebel.`
 
-z-Uzozen | h-+-e- | d-star | v-see
+z-Azozon | h-+-e- | d-star | v-see
 
 **`ra`** clears one full time by a hair (*barely*); **`ru`** falls a hair short (*almost*).
 :::
 
 #### What changes {#advanced-what-changes}
 
-**1.** `zalolx gramol.` / `zalolx gramowal.`
+**1.** `zalelx gramol.` / `zalelx gramowal.`
 
 ::: details Show answer
 z-star-x | g-zero

@@ -77,7 +77,7 @@ Agebon syllables have a fixed shape, so the code times them the same way every t
 
 Because each hand has its own letters, a beat always reads one way: one hand alone is either a vowel with no consonant before it or a consonant at the end of a word, and the direction of the fingers says which.
 
-For example, `thohom` (*if*) is three beats:
+For example, `thohem` (*if*) is three beats:
 
 | Beat | Consonant hand | Vowel hand |
 |------|----------------|------------|
@@ -193,9 +193,9 @@ Type Agebon, or click a sentence below, and press **Play**. Pick a channel to se
 
 <FingerCode>
 
-- `zuzozen vowurel thohom blerulal.` *Uzozen walks if it rains.*
-- `zerulal gohom blugalal.` *There is rain if there are clouds.*
-- `zuzozen vowurel uom berulal.` *Uzozen walks despite the rain.*
-- `zudozol vowurel. xahem zagozol varuvel.` *A dog walks. Therefore a cat runs.*
+- `zazozon vowurol thohem blerulal.` *Azozon walks if it rains.*
+- `zerulal gohem blugalal.` *There is rain if there are clouds.*
+- `zazozon vowurol uom berulal.` *Azozon walks despite the rain.*
+- `zodozel vowurol. xahom zogozel veruvol.` *A dog walks. Therefore a cat runs.*
 
 </FingerCode>

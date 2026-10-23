@@ -25,25 +25,25 @@ Each content type has one lexicalized form; there is no closed / open pair here.
 
 For example, the `/v/` word takes the following sentence as its content:
 
-> `zuzozen vaon zolazun vuhohol.`
+> `zazozon vaon zalazun vehohel.`
 >
-> z-Uzozen | v-confirm | z-Olazun | v-sit
+> z-Azozon | v-confirm | z-Alazun | v-sit
 >
-> "Uzozen confirms that Olazun sits."
+> "Azozon confirms that Alazun sits."
 
-> `zuzozen vuen zuzozen vuhohol.`
+> `zazozon vuen zazozon vehohel.`
 >
-> z-Uzozen | v-decline-to | z-Uzozen | v-sit
+> z-Azozon | v-decline-to | z-Azozon | v-sit
 >
-> "Uzozen declines to sit."
+> "Azozon declines to sit."
 
 A `/z/` stand-in puts the whole following sentence in the subject slot. With a `/ɡ/` word describing that sentence, that is English *it is … that* / *it is … to*.
 
-> `gamahum zarl zuzozen vowurel.`
+> `gamahum zarl zazozon vowurol.`
 >
-> g-challenge | z-that-clause | z-Uzozen | v-walk
+> g-challenge | z-that-clause | z-Azozon | v-walk
 >
-> "It is hard for Uzozen to walk."
+> "It is hard for Azozon to walk."
 
 The sentence after one of these verbs has its own subject when the chosen content type requires one, just as it does after **`darl`** / **`derl`**. Changing the role letter lets the same kind of content serve as an object, a described property, or another role the clause allows.
 
@@ -51,11 +51,11 @@ The sentence after one of these verbs has its own subject when the chosen conten
 
 A clause has at most one **stand-in**, at its end. But the dependent clause is a clause too, so it may end in its own **`blarl`**, and a further sentence follows it on the **right**.
 
-> `zuzozen guzemol thahum blarl zolazun vowurel thahum blarl zahelan vezuvol.`
+> `zazozon guzemel thahum blarl zalazun vowurol thahum blarl zahelan vezuvel.`
 >
-> [z-Uzozen | g-sleepy] | [th-because | bl-that-clause] | z-Olazun | v-walk | [th-because | bl-that-clause] | z-Ahelan | v-sleep
+> [z-Azozon | g-sleepy] | [th-because | bl-that-clause] | z-Alazun | v-walk | [th-because | bl-that-clause] | z-Ahelan | v-sleep
 >
-> "Uzozen is sleepy because Olazun walks because Ahelan sleeps." (Ahelan's sleep is why Olazun walks)
+> "Azozon is sleepy because Alazun walks because Ahelan sleeps." (Ahelan's sleep is why Alazun walks)
 
 ### Practice {#advanced-practice}
 
@@ -76,88 +76,88 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *because* | `thahum` |
-| *angry* | `unemul` |
-| *scream* | `varemul` |
-| *tell* | `vezuyel` |
-| *sit* | `vuhohol` |
-| *see* | `vawebol` |
+| *angry* | `onumul` |
+| *scream* | `veyamul` |
+| *tell* | `vezuyol` |
+| *sit* | `vehohel` |
+| *see* | `vayebel` |
 
 #### English → Agebon {#advanced-english-to-agebon}
 
-**1.** *Uzozen commands that Olazun sit.*
+**1.** *Azozon commands that Alazun sit.*
 
 ::: details Show answer
-`zuzozen vorn zolazun vuhohol.`
+`zazozon vorn zalazun vehohel.`
 
-z-Uzozen | v-command | z-Olazun | v-sit
+z-Azozon | v-command | z-Alazun | v-sit
 :::
 
-**2.** *Uzozen is angry because Olazun screams because Ahelan sits.*
+**2.** *Azozon is angry because Alazun screams because Ahelan sits.*
 
 ::: details Show answer
-`zuzozen gunemul thahum blarl zolazun varemul thahum blarl zahelan vuhohol.`
+`zazozon gonumul thahum blarl zalazun veyamul thahum blarl zahelan vehohel.`
 
-[z-Uzozen | g-angry] | [th-because | bl-that-clause] | z-Olazun | v-scream | [th-because | bl-that-clause] | z-Ahelan | v-sit
+[z-Azozon | g-angry] | [th-because | bl-that-clause] | z-Alazun | v-scream | [th-because | bl-that-clause] | z-Ahelan | v-sit
 :::
 
-**3.** *Uzozen sees the statement that Ahelan sits.*
+**3.** *Azozon sees the statement that Ahelan sits.*
 
 ::: details Show answer
-`zuzozen vawebol darn zahelan vuhohol.`
+`zazozon vayebel darn zahelan vehohel.`
 
-z-Uzozen | v-see | d-statement | z-Ahelan | v-sit
+z-Azozon | v-see | d-statement | z-Ahelan | v-sit
 :::
 
 #### Agebon → English {#advanced-agebon-to-english}
 
-**1.** `zuzozen varn zolazun vuhohol.`
+**1.** `zazozon varn zalazun vehohel.`
 
 ::: details Show answer
-z-Uzozen | v-state | z-Olazun | v-sit
+z-Azozon | v-state | z-Alazun | v-sit
 
-*Uzozen states that Olazun sits.*
+*Azozon states that Alazun sits.*
 :::
 
-**2.** `zuzozen vurn zolazun vuhohol.`
+**2.** `zazozon vurn zalazun vehohel.`
 
 ::: details Show answer
-z-Uzozen | v-prohibit | z-Olazun | v-sit
+z-Azozon | v-prohibit | z-Alazun | v-sit
 
-*Uzozen prohibits Olazun from sitting.*
+*Azozon prohibits Alazun from sitting.*
 :::
 
-**3.** `zahelan vezuyel thahum blarl zolazun vuhohol thahum blarl zuzozen varemul.`
+**3.** `zahelan vezuyol thahum blarl zalazun vehohel thahum blarl zazozon veyamul.`
 
 ::: details Show answer
-z-Ahelan | v-tell | [th-because | bl-that-clause] | z-Olazun | v-sit | [th-because | bl-that-clause] | z-Uzozen | v-scream
+z-Ahelan | v-tell | [th-because | bl-that-clause] | z-Alazun | v-sit | [th-because | bl-that-clause] | z-Azozon | v-scream
 
-*Ahelan talks because Olazun sits because Uzozen screams.*
+*Ahelan talks because Alazun sits because Azozon screams.*
 :::
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Uzozen commands that Olazun sit.* `zuzozen vorn zolazun vuhohol.` or `zuzozen varn zolazun vuhohol.`
+**1.** *Azozon commands that Alazun sit.* `zazozon vorn zalazun vehohel.` or `zazozon varn zalazun vehohel.`
 
 ::: details Show answer
-`zuzozen vorn zolazun vuhohol.`
+`zazozon vorn zalazun vehohel.`
 
-z-Uzozen | v-command | z-Olazun | v-sit
+z-Azozon | v-command | z-Alazun | v-sit
 
-**`vorn`** takes the next sentence as an instruction; **`varn`** only states that Olazun sits.
+**`vorn`** takes the next sentence as an instruction; **`varn`** only states that Alazun sits.
 :::
 
 #### Fix it {#advanced-fix-it}
 
-**1.** *Uzozen is angry because Olazun screams because Ahelan sits.* <!-- lint: error -->`zuzozen gunemul thahum blarl zolazun varemul zahelan vuhohol.`
+**1.** *Azozon is angry because Alazun screams because Ahelan sits.* <!-- lint: error -->`zazozon gonumul thahum blarl zalazun veyamul zahelan vehohel.`
 
 ::: details Show answer
-`zuzozen gunemul thahum blarl zolazun varemul thahum blarl zahelan vuhohol.`
+`zazozon gonumul thahum blarl zalazun veyamul thahum blarl zahelan vehohel.`
 
-[z-Uzozen | g-angry] | [th-because | bl-that-clause] | z-Olazun | v-scream | [th-because | bl-that-clause] | z-Ahelan | v-sit
+[z-Azozon | g-angry] | [th-because | bl-that-clause] | z-Alazun | v-scream | [th-because | bl-that-clause] | z-Ahelan | v-sit
 
 Each further *because* needs its own **`thahum blarl`**; without the second pair, Ahelan sitting is not a nested grounds clause.
 :::

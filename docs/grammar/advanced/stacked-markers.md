@@ -83,26 +83,26 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *car* | `egaval` | 🚗 |
-| *parking* | `abuhal` | 🅿️ |
+| *car* | `ugaval` | 🚗 |
+| *parking* | `ebahal` | 🅿️ |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *see* | `vawebol` |
-| *sit* | `vuhohol` |
-| *stand* | `vawuvol` |
+| *see* | `vayebel` |
+| *sit* | `vehohel` |
+| *stand* | `vuzuvel` |
 
 #### English → Agebon {#advanced-english-to-agebon}
 
 **1.** *A second-to-last car stands.*
 
 ::: details Show answer
-`zegaval gruodol vawuvol.`
+`zugaval gruodol vuzuvel.`
 
 [z-car | g-2nd-from-end] | v-stand
 :::
@@ -110,22 +110,22 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **2.** *Ahelan sees parking −2.* (a label below zero)
 
 ::: details Show answer
-`zahelan dabuhal gruedol vawebol.`
+`zahelan debahal gruedol vayebel.`
 
 z-Ahelan | [d-parking | g-negative-label-2] | v-see
 :::
 
-**3.** *Olazun sees three cars, give or take one.*
+**3.** *Alazun sees three cars, give or take one.*
 
 ::: details Show answer
-`zolazun degavalx gragel gruabal vawebol.`
+`zalazun dugavalx gragel gruabal vayebel.`
 
-z-Olazun | [d-car-x | g-three | g-plus-minus-1] | v-see
+z-Alazun | [d-car-x | g-three | g-plus-minus-1] | v-see
 :::
 
 #### Agebon → English {#advanced-agebon-to-english}
 
-**1.** `zabuhal gruodol.`
+**1.** `zebahal gruodol.`
 
 ::: details Show answer
 z-parking | g-2nd-from-end
@@ -133,32 +133,32 @@ z-parking | g-2nd-from-end
 *There is a second-to-last parking stall.*
 :::
 
-**2.** `zegavalx g+3e0.`
+**2.** `zugavalx g+3e0.`
 
 ::: details Show answer
-🔊 `zegavalx grawamoyagel.`
+🔊 `zugavalx grawamoyagel.`
 
 z-car-x | g-3e0
 
 *Three cars sit at ones.* (not ambient thousands)
 :::
 
-**3.** `x#-2 zuzozen vuhohol.`
+**3.** `x#-2 zazozon vehohel.`
 
 ::: details Show answer
-🔊 `xruodol zuzozen vuhohol.`
+🔊 `xruodol zazozon vehohel.`
 
-x-2nd-from-end.short | z-Uzozen | v-sit
+x-2nd-from-end.short | z-Azozon | v-sit
 
-*Penultimate item: Uzozen sits.*
+*Penultimate item: Azozon sits.*
 :::
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *There is a second car.* `zegaval grodol.` or `zegaval gruodol.`
+**1.** *There is a second car.* `zugaval grodol.` or `zugaval gruodol.`
 
 ::: details Show answer
-`zegaval grodol.`
+`zugaval grodol.`
 
 z-car | g-2nd
 
@@ -167,12 +167,12 @@ z-car | g-2nd
 
 #### What changes {#advanced-what-changes}
 
-**1.** `zegavalx gragel.` / `zegavalx g+3e0.`
+**1.** `zugavalx gragel.` / `zugavalx g+3e0.`
 
 ::: details Show answer
 z-car-x | g-three
 
-🔊 `zegavalx grawamoyagel.`
+🔊 `zugavalx grawamoyagel.`
 
 z-car-x | g-3e0
 

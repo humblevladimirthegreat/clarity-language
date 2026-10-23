@@ -14,7 +14,7 @@ Outside a sentence (a list, a heading, a dictionary line) you write **root + end
 
 When you mention a kind of thing for the first time, in its everyday **concrete** meaning (a scene you could point at), end the citation with **-l**. The listener treats it as a new, ordinary instance of that kind. English for the citation is the bare kind, with no article. (cue: **l** ≈ look / concrete)
 
-> `uzozel`
+> `azozol`
 >
 > "swan"
 
@@ -23,22 +23,22 @@ When you mention a kind of thing for the first time, in its everyday **concrete*
 
 Many roots also have one **abstract** sense listed in the lexicon (its **published** abstract): an idea you cannot point at, which grows out of the concrete picture. When you introduce that sense for the first time, end the citation with **-m**. (cue: **m** ≈ meaning / abstract)
 
-> `uzozem`
+> `azozom`
 >
 > "grace"
 
-**Compare with:** the everyday picture of the same root uses **-l** (`uzozel` *swan*). *Grace* is the published abstract of `uzoze`, so the citation is **-m**. (cue: from *swan*: the glide of *grace*)
+**Compare with:** the everyday picture of the same root uses **-l** (`azozol` *swan*). *Grace* is the published abstract of `azozo`, so the citation is **-m**. (cue: from *swan*: the glide of *grace*)
 
 ### Named (`-n`)
 <a id="named-n-beginner"></a>
 
 When the word is a **name** for one particular person or place, not a kind of thing, end the citation with **-n**. (cue: **n** ≈ name)
 
-> `uzozen`
+> `azozon`
 >
-> "Uzozen"
+> "Azozon"
 
-**Compare with:** the same root as a kind is `uzozel` *swan*; as the published abstract, `uzozem` *grace*. **-n** names the person.
+**Compare with:** the same root as a kind is `azozol` *swan*; as the published abstract, `azozom` *grace*. **-n** names the person.
 
 Most roots can be your own name this way. Pick one here or from the [lexicon](./lexicon.md), and examples where you are the speaker will show it.
 
@@ -60,23 +60,23 @@ The greeting names **you**, not the person you greet, so it works the same for a
 
 ### The three endings
 
-The last letters you just used, on the same root `uzoze`:
+The last letters you just used, on the same root `azozo`:
 
 <!-- cheat-sheet: word-shape-clause -->
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| `uzozel` | first mention, everyday kind | *swan* | **l** ≈ concrete |
-| `uzozem` | first mention, published abstract | *grace* | **m** ≈ abstract |
-| `uzozen` | this person or place as a name | *Uzozen* | **n** ≈ name |
+| `azozol` | first mention, everyday kind | *swan* | **l** ≈ concrete |
+| `azozom` | first mention, published abstract | *grace* | **m** ≈ abstract |
+| `azozon` | this person or place as a name | *Azozon* | **n** ≈ name |
 
 ### Writing {#citation-forms}
 <a id="prefix-less-citation"></a>
 
-A citation is **lowercase** root + ending (`uzozel`, `uzozem`, `uzozen`). English for a citation is the bare sense (*swan*, *grace*, *Uzozen*), with no article. In a sentence you add a first letter for the word’s role. A [greeting](#greeting) is the named citation as a whole opening (`SELFn.`).
+A citation is **lowercase** root + ending (`azozol`, `azozom`, `azozon`). English for a citation is the bare sense (*swan*, *grace*, *Azozon*), with no article. In a sentence you add a first letter for the word’s role. A [greeting](#greeting) is the named citation as a whole opening (`SELFn.`).
 
 ### Practice {#beginner-practice}
 
-Short drills for Beginner. Try each item before opening **Show answer**. Choose **-l** (new concrete), **-m** (new abstract), or **-n** (named). Every answer is a citation (no first letter). For a name, the English prompt gives the root's **meaning** (*courage*), not the name as English spells it (*Olazun*), except in the greeting items.
+Short drills for Beginner. Try each item before opening **Show answer**. Choose **-l** (new concrete), **-m** (new abstract), or **-n** (named). Every answer is a citation (no first letter). For a name, the English prompt gives the root's **meaning** (*courage*), not the name as English spells it (*Alazun*), except in the greeting items.
 
 **Setting:** a classroom
 
@@ -88,11 +88,11 @@ The word bank lists the roots this checkpoint introduces. **English** is what yo
 |---------|--------|-----|
 | *school* | `uzahal` | 🏫: a school teaches, so its abstract is *education* |
 | *book* | `anal` | 📖: a book holds *knowledge* |
-| *eraser* | `urewul` | 🪌: an eraser rubs out a mistake, so its abstract is *correction* |
+| *eraser* | `erewul` | 🪌: an eraser rubs out a mistake, so its abstract is *correction* |
 | *bell* | `eboral` | 🔔: a bell rings to warn, so its abstract is *alert* |
-| *magnify* | `umewol` | 🔍: close looking, so its abstract is *scrutiny* |
-| *Uzozen* | `uzozen` | 🦢 *swan*, abstract *grace* |
-| *Olazun* | `olazun` | 🦁 *lion*, abstract *courage* |
+| *magnify* | `umewel` | 🔍: close looking, so its abstract is *scrutiny* |
+| *Azozon* | `azozon` | 🦢 *swan*, abstract *grace* |
+| *Alazun* | `alazun` | 🦁 *lion*, abstract *courage* |
 | *Ahelan* | `ahelan` | 🌺 *hibiscus*, abstract *beauty* |
 | *your name* | `SELFn` | from the name helper above |
 
@@ -125,17 +125,17 @@ alert
 **4.** *courage* (as a name)
 
 ::: details Show answer
-`olazun`
+`alazun`
 
-Olazun
+Alazun
 :::
 
-**5.** *Hello.* (said by Uzozen)
+**5.** *Hello.* (said by Azozon)
 
 ::: details Show answer
-`uzozen.`
+`azozon.`
 
-Uzozen
+Azozon
 :::
 
 **6.** *Hello.* (said by you)
@@ -157,7 +157,7 @@ education
 *education*
 :::
 
-**2.** `urewul`
+**2.** `erewul`
 
 ::: details Show answer
 
@@ -166,7 +166,7 @@ eraser
 *eraser*
 :::
 
-**3.** `umewol`
+**3.** `umewel`
 
 ::: details Show answer
 
@@ -204,40 +204,40 @@ Ahelan
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *scrutiny* `umewol` or `umewom`
+**1.** *scrutiny* `umewel` or `umewem`
 
 ::: details Show answer
-`umewom`
+`umewem`
 
 scrutiny
 
-*Scrutiny* is the abstract sense of the root, so it takes **-m**; `umewol` is *magnify*.
+*Scrutiny* is the abstract sense of the root, so it takes **-m**; `umewel` is *magnify*.
 :::
 
-**2.** *Uzozen* (in a list of names) `uzozel` or `uzozen`
+**2.** *Azozon* (in a list of names) `azozol` or `azozon`
 
 ::: details Show answer
-`uzozen`
+`azozon`
 
-Uzozen
+Azozon
 
-A name for one person takes **-n**; `uzozel` is a *swan*.
+A name for one person takes **-n**; `azozol` is a *swan*.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *correction* <!-- lint: error -->`urewul`
+**1.** *correction* <!-- lint: error -->`erewul`
 
 ::: details Show answer
-`urewum`
+`erewum`
 
 correction
 
-*Correction* is the abstract sense, so it takes **-m**, not **-l**; `urewul` is the *eraser* itself.
+*Correction* is the abstract sense, so it takes **-m**, not **-l**; `erewul` is the *eraser* itself.
 :::
 ## See also
 
-- [pronouns.md](pronouns.md): resume **-r**; special **`uwo`** / **`awa`** / **`aya`** / **`umo`**
+- [pronouns.md](pronouns.md): resume **-r**; special **`uwe`** / **`awa`** / **`aya`** / **`ume`**
 - [plurality.md](plurality.md): **-x** after the ending
 - [clause.md](clause.md): role letters; adding a first letter to a citation
 - [spans.md](spans.md#loans): mention / opaque when the **form** or a foreign acronym is the point

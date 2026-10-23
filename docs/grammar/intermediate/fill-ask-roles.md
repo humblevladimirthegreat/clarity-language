@@ -23,19 +23,19 @@ With nothing listed, **-r** in the asked-about slot is an open *who* / *what*. B
 
 English puts *who* in different places in *Do you know who walks?* and *Who do you think walks?*. In the first, the inner clause asks; in the second, the main question asks. In Agebon the blank stays in the inner clause both times (it never moves to the front of the outer sentence), and the stand-in's vowel says which question it belongs to. **`derl`** (*whether*) is itself question-like, so its blank belongs to it, and the outer **`yel`** is yes/no. **`darl`** (*that*) is statement-like and cannot ask, so its blank belongs to the outer **`yel`**.
 
-> `yel zawan vanam derl zar vowurel.`
+> `yel zawan vanam derl zar vowurol.`
 >
 > y-question | z-listener | v-knowledge | d-whether-clause | z-wh | v-walk
 >
 > "Do you know who walks?"
 
-> `yel zawan vevemol darl zar vowurel.`
+> `yel zawan vevemel darl zar vowurol.`
 >
 > y-question | z-listener | v-think | d-that-clause | z-wh | v-walk
 >
 > "Who do you think walks?"
 
-If the outer sentence has a blank of its own, that blank is the main question and the inner one stays with `derl`: `yel zar vanam derl zar vowurel.` is *Who knows who walks?* Under a statement, `derl` plus a blank is a [reported question](/questions#embedded-whether).
+If the outer sentence has a blank of its own, that blank is the main question and the inner one stays with `derl`: `yel zar vanam derl zar vowurol.` is *Who knows who walks?* Under a statement, `derl` plus a blank is a [reported question](/questions#embedded-whether).
 
 ### Practice {#intermediate-practice}
 
@@ -48,19 +48,19 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agebon |
 |---------|--------|
 | *listener* | `awan` |
-| *map* | `agel` |
-| *find* | `vumewol` |
-| *walk* | `vowurel` |
-| *think* | `vevemol` |
+| *map* | `agol` |
+| *find* | `vumewel` |
+| *walk* | `vowurol` |
+| *think* | `vevemel` |
 | *knowledge* | `vanam` |
-| *ticket* | `udenel` |
+| *ticket* | `odenol` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *Who do you think walks?*
 
 ::: details Show answer
-`yel zawan vevemol darl zar vowurel.`
+`yel zawan vevemel darl zar vowurol.`
 
 y-question | z-listener | v-think | d-that-clause | z-wh | v-walk
 :::
@@ -68,7 +68,7 @@ y-question | z-listener | v-think | d-that-clause | z-wh | v-walk
 **2.** *Which map?*
 
 ::: details Show answer
-`yel dagel dar.`
+`yel dagol dar.`
 
 y-question | [d-map | d-wh]
 :::
@@ -76,14 +76,14 @@ y-question | [d-map | d-wh]
 **3.** *Which of these?* (the map or the ticket)
 
 ::: details Show answer
-`yel dagel dudenel dar.`
+`yel dagol dodenol dar.`
 
 y-question | [d-map | d-ticket | d-wh]
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `yel dagel dudenel der.`
+**1.** `yel dagol dodenol der.`
 
 ::: details Show answer
 y-question | [d-map | d-ticket | d-any]
@@ -91,7 +91,7 @@ y-question | [d-map | d-ticket | d-any]
 *Any of these?* (the map or the ticket; any will do)
 :::
 
-**2.** `yel zawan vanam derl zar vowurel.`
+**2.** `yel zawan vanam derl zar vowurol.`
 
 ::: details Show answer
 y-question | z-listener | v-knowledge | d-whether-clause | z-wh | v-walk
@@ -99,7 +99,7 @@ y-question | z-listener | v-knowledge | d-whether-clause | z-wh | v-walk
 *Do you know who walks?*
 :::
 
-**3.** `yel dagel dur.`
+**3.** `yel dagol dur.`
 
 ::: details Show answer
 y-question | [d-map | d-wh-else]
@@ -109,10 +109,10 @@ y-question | [d-map | d-wh-else]
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Any map?* `yel dagel der.` or `yel dagel dar.`
+**1.** *Any map?* `yel dagol der.` or `yel dagol dar.`
 
 ::: details Show answer
-`yel dagel der.`
+`yel dagol der.`
 
 y-question | [d-map | d-any]
 
@@ -121,10 +121,10 @@ y-question | [d-map | d-any]
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Do you know who finds the map?* <!-- lint: error -->`yol zawan vanam darl zar dagel vumewol.`
+**1.** *Do you know who finds the map?* <!-- lint: error -->`yol zawan vanam darl zar dagol vumewel.`
 
 ::: details Show answer
-`yel zawan vanam derl zar dagel vumewol.`
+`yel zawan vanam derl zar dagol vumewel.`
 
 y-question | z-listener | v-knowledge | d-whether-clause | z-wh | d-map | v-find
 

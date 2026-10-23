@@ -29,7 +29,7 @@ Beginner put the number after a noun (*three cats*). You can also put the **numb
 
 Change only the first letter. The marker and digits stay the same, and on these four role letters the number still means a plain amount, rank, or code.
 
-> `zragel vezuvol.`
+> `zragel vezuvel.`
 > z-three | v-sleep
 >
 > "Three are sleeping."
@@ -78,10 +78,10 @@ Beginner already used exact **-l**. The other endings mark *about*, a convention
 
 A resume needs **at least one digit**: `grager` = *that three again*; `grodor` = *that second one again*. Use the same marker as the number you repeat. Digitless **-r** (`grar`) is not a resume: like a standalone join **-r**, it is *some number* in a statement and *which number?* in a question. **`=`** is never combined with **`~`** or **`@`**.
 
-> `zolazun dragel vawebol. zuzozen drager vawebol.`
-> z-Olazun | d-three | v-see . z-Uzozen | d-←three | v-see
+> `zalazun dragel vayebel. zazozon drager vayebel.`
+> z-Alazun | d-three | v-see . z-Azozon | d-←three | v-see
 >
-> "Olazun sees three. Uzozen sees those three too."
+> "Alazun sees three. Azozon sees those three too."
 
 ### Writing (preferred shorthand) {#writing-preferred-shorthand}
 
@@ -194,10 +194,10 @@ On `/h/`, the marker decides what kind of adverb the number is.
 | **`ro`** | `h#N` | **Nth occurrence of the event (from the start)**: *for the Nth time*; *on the Nth try* (clause-event ordinal, not discourse list independence). |
 | **`re`** | `h_…` | **Clock** and **date** (a calendar ordinal). Channel, frequency, and other codes use a host relation + `/b/` (or `/ɡ/` on a noun). |
 
-> `zolazun vowurel hragel.`
-> z-Olazun | v-walk | h-three
+> `zalazun vowurol hragel.`
+> z-Alazun | v-walk | h-three
 >
-> "Olazun walks three times."
+> "Alazun walks three times."
 
 Worked examples: `hragel` *three times*; `hrugel` *÷3 / into 3*; `hrogel` *for the third time*. A frequency code goes after a relation word: *on* (on `/h/`) + `b_101`.
 
@@ -242,20 +242,20 @@ Endings still apply (**-l** newly stated item, **-r** *as in (N) above* (with a 
 #### Number as degree (by marker) {#number-as-degree}
 <a id="place-on-a-scale"></a>
 
-On `/w/`, a number sits in the degree slot right before an adjective or adverb ([clause](/clause#adjective-detail-w)). Only the ordinal marker gives a new reading: **`w#N`** (N from 2) is the **place on that scale**, in a superlative frame (`zuzozen zol wrodol gelazom` *Uzozen is the second biggest*). A count or a fraction on `/w/` (`w+3`) is not used: a factor goes on `/h/` (`hradol` *twice*, factor).
+On `/w/`, a number sits in the degree slot right before an adjective or adverb ([clause](/clause#adjective-detail-w)). Only the ordinal marker gives a new reading: **`w#N`** (N from 2) is the **place on that scale**, in a superlative frame (`zazozon zol wrodol gelazem` *Azozon is the second biggest*). A count or a fraction on `/w/` (`w+3`) is not used: a factor goes on `/h/` (`hradol` *twice*, factor).
 
 #### Number as stance (by marker) {#number-as-stance-by-marker}
 <a id="likelihood"></a>
 
 `/th/` + number is your [stance](/clause#stance-th) on the whole claim: how likely you think it is, or which numbered source it rests on. Spoken, it starts **`thr…`**, as in English *three*.
 
-> `zolazun vowurel th+70.`
+> `zalazun vowurol th+70.`
 >
-> 🔊 `zolazun vowurel thraremol.`
+> 🔊 `zalazun vowurol thraremol.`
 >
-> z-Olazun | v-walk | th-70-percent-likely
+> z-Alazun | v-walk | th-70-percent-likely
 >
-> "Olazun is probably walking." (I'd put it at 70%)
+> "Alazun is probably walking." (I'd put it at 70%)
 
 | Marker | Writing | Stance sense |
 |--------|---------|--------------|
@@ -278,76 +278,76 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Use
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *seat* | `ozohol` | 💺 |
+| *seat* | `uzohel` | 💺 |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *trophy* | `odoral` |
-| *see* | `vawebol` |
-| *sit* | `vuhohol` |
-| *run* | `varuvel` |
-| *punch* | `vanuvul` |
+| *see* | `vayebel` |
+| *sit* | `vehohel` |
+| *run* | `veruvol` |
+| *punch* | `vabuvul` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *There are about three seats.*
 
 ::: details Show answer
-`zozoholx gragem.`
+`zuzohelx gragem.`
 
 z-seat-x | g-three.about
 :::
 
-**2.** *Olazun runs three times.*
+**2.** *Alazun runs three times.*
 
 ::: details Show answer
-`zolazun varuvel hragel.`
+`zalazun veruvol hragel.`
 
-z-Olazun | v-run | h-three
+z-Alazun | v-run | h-three
 :::
 
-**3.** *Point 2: Uzozen sits.*
+**3.** *Point 2: Azozon sits.*
 
 ::: details Show answer
-`xrodol zuzozen vuhohol.`
+`xrodol zazozon vehohel.`
 
-x-2nd | z-Uzozen | v-sit
+x-2nd | z-Azozon | v-sit
 :::
 
-**4.** *Olazun removes three from the score.*
+**4.** *Alazun removes three from the score.*
 
 ::: details Show answer
-`zolazun dodoram vrugel.`
+`zalazun dodoram vrugel.`
 
-z-Olazun | d-score | v-minus-three
+z-Alazun | d-score | v-minus-three
 :::
 
-**5.** *Uzozen is probably throwing a punch.* (I'd put it at 70%)
+**5.** *Azozon is probably throwing a punch.* (I'd put it at 70%)
 
 ::: details Show answer
-`zuzozen vanuvul th+70.`
+`zazozon vabuvul th+70.`
 
-🔊 `zuzozen vanuvul thraremol.`
+🔊 `zazozon vabuvul thraremol.`
 
-z-Uzozen | v-punch | th-70-percent-likely
+z-Azozon | v-punch | th-70-percent-likely
 :::
 
-**6.** *Olazun sees three seats, and Uzozen sees those three.*
+**6.** *Alazun sees three seats, and Azozon sees those three.*
 
 ::: details Show answer
-`zolazun dozoholx gragel vawebol xal zuzozen drager vawebol.`
+`zalazun duzohelx gragel vayebel xal zazozon drager vayebel.`
 
-[z-Olazun | [d-seat-x | g-three] | v-see | x-and | z-Uzozen | d-←three | v-see]
+[z-Alazun | [d-seat-x | g-three] | v-see | x-and | z-Azozon | d-←three | v-see]
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zrodol dodoral vawebol.`
+**1.** `zrodol dodoral vayebel.`
 
 ::: details Show answer
 z-2nd | d-trophy | v-see
@@ -365,7 +365,7 @@ y-_3
 *Three!* (a score or label)
 :::
 
-**3.** `zahelan vuhohol hrogel.`
+**3.** `zahelan vehohel hrogel.`
 
 ::: details Show answer
 z-Ahelan | v-sit | h-3rd
@@ -373,10 +373,10 @@ z-Ahelan | v-sit | h-3rd
 *Ahelan sits for the third time.*
 :::
 
-**4.** `zahelan dozoholx g~+30 vawebol.`
+**4.** `zahelan duzohelx g~+30 vayebel.`
 
 ::: details Show answer
-🔊 `zahelan dozoholx gragemom vawebol.`
+🔊 `zahelan duzohelx gragemom vayebel.`
 
 z-Ahelan | [d-seat-x | g-30.about] | v-see
 
@@ -385,20 +385,20 @@ z-Ahelan | [d-seat-x | g-30.about] | v-see
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Olazun sees about four seats.* `zolazun dozoholx grahum vawebol.` or `zolazun dozoholx grahul vawebol.`
+**1.** *Alazun sees about four seats.* `zalazun duzohelx grahum vayebel.` or `zalazun duzohelx grahul vayebel.`
 
 ::: details Show answer
-`zolazun dozoholx grahum vawebol.`
+`zalazun duzohelx grahum vayebel.`
 
-z-Olazun | [d-seat-x | g-four.about] | v-see
+z-Alazun | [d-seat-x | g-four.about] | v-see
 
 **-m** makes the number approximate; **-l** is exact.
 :::
 
-**2.** *Ahelan sees seat 5.* (its label) `zahelan dozohol grezal vawebol.` or `zahelan dozohol grazal vawebol.`
+**2.** *Ahelan sees seat 5.* (its label) `zahelan duzohel grezal vayebel.` or `zahelan duzohel grazal vayebel.`
 
 ::: details Show answer
-`zahelan dozohol grezal vawebol.`
+`zahelan duzohel grezal vayebel.`
 
 z-Ahelan | [d-seat | g-_5.spelled] | v-see
 
@@ -407,10 +407,10 @@ A label is a digit string, marker **`re`**; **`ra`** would count five.
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *There is a fifth seat.* <!-- lint: error -->`zozohol grazal.`
+**1.** *There is a fifth seat.* <!-- lint: error -->`zuzohel grazal.`
 
 ::: details Show answer
-`zozohol grozal.`
+`zuzohel grozal.`
 
 z-seat | g-5th
 

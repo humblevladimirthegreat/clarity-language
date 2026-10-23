@@ -48,14 +48,14 @@ describe("digit pegs", () => {
       assert.deepEqual(digitsOf(word), [{ raw: word, roots: ["udozo"], digits: "25" }]);
     }
     assert.deepEqual(
-      digitsOf("zudozol dabedol varuvel").map((word) => ("digits" in word ? word.digits : "")),
+      digitsOf("zudozol dabedol veruvol").map((word) => ("digits" in word ? word.digits : "")),
       ["25", "12", "76"],
     );
   });
 
   it("counts a dictionary compound's join letter and reads x compounds left to right", () => {
     assert.equal((digitsOf("zoholeboral")[0] as { digits: string }).digits, "4817");
-    assert.equal((digitsOf("zudozoxagebol")[0] as { digits: string }).digits, "2531");
+    assert.equal((digitsOf("zudozoxagebel")[0] as { digits: string }).digits, "2531");
   });
 
   it("refuses number words, grammar words and digitless roots", () => {

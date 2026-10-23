@@ -11,32 +11,32 @@ English splits three nearby jobs on a quality like *challenging*. *More … than
 ### Comparatives (`o`) {#comparatives}
 <a id="comparative-shared-scale"></a>
 
-When English would say *Uzozen is more challenging than Olazun*, you put two people in order on one quality. Write both names, then the **rank join** **`zol`** (vowel **`o`**), then the adjective they share (`/ɡ/`). The first name sits higher on that quality than the second. Both may still sit high; the join only says who ranks higher. (cue: **`o`** ≈ order; the shared `/ɡ/` is the ladder)
+When English would say *Azozon is more challenging than Alazun*, you put two people in order on one quality. Write both names, then the **rank join** **`zol`** (vowel **`o`**), then the adjective they share (`/ɡ/`). The first name sits higher on that quality than the second. Both may still sit high; the join only says who ranks higher. (cue: **`o`** ≈ order; the shared `/ɡ/` is the ladder)
 
-> `zuzozen zolazun zol gamahum.`
+> `zazozon zalazun zol gamahum.`
 >
-> [z-Uzozen | z-Olazun | z-rank/more | g-challenge]
+> [z-Azozon | z-Alazun | z-rank/more | g-challenge]
 >
-> "Uzozen is more challenging than Olazun."
+> "Azozon is more challenging than Alazun."
 
-> `zahelan zuzozen zol gelazom.`
+> `zahelan zazozon zol gelazem.`
 >
-> [z-Ahelan | z-Uzozen | z-rank/more | g-big]
+> [z-Ahelan | z-Azozon | z-rank/more | g-big]
 >
-> "Ahelan is bigger than Uzozen."
+> "Ahelan is bigger than Azozon."
 
 ### Superlatives (`zol` + one name)
 <a id="superlatives"></a>
 
 When English would say *the most challenging*, you are still ranking, but you name only the winner. One name before `zol`, then the same shared adjective, means that person ranks highest in the group you have in mind.
 
-> `zuzozen zol gamahum.`
+> `zazozon zol gamahum.`
 >
-> [z-Uzozen | z-rank/more | g-challenge]
+> [z-Azozon | z-rank/more | g-challenge]
 >
-> "Uzozen is the most challenging."
+> "Azozon is the most challenging."
 
-> `zahelan zol guzemol.`
+> `zahelan zol guzemel.`
 >
 > [z-Ahelan | z-rank/more | g-sleepy]
 >
@@ -47,11 +47,11 @@ When English would say *the most challenging*, you are still ranking, but you na
 
 English *much more* / *slightly more* adds **how large the gap is**, without giving a number. Write that extra detail as `/w/` immediately before the same shared adjective.
 
-> `zuzozen zolazun zol wohalal gamahum.`
+> `zazozon zalazun zol wohalal gamahum.`
 >
-> [z-Uzozen | z-Olazun | z-rank/more | [w-ocean | g-challenge]]
+> [z-Azozon | z-Alazun | z-rank/more | [w-ocean | g-challenge]]
 >
-> "Uzozen is much more challenging than Olazun."
+> "Azozon is much more challenging than Alazun."
 
 ### Equatives (`oe` + shared scale)
 <a id="equatives"></a>
@@ -60,27 +60,27 @@ English *much more* / *slightly more* adds **how large the gap is**, without giv
 
 When English would say *as challenging as*, you are not picking a winner. You are saying two people sit at the **same height** on the quality. Write both names, then the tie **`zoel`** (rank-join vowels **`oe`**), then the shared adjective (`/ɡ/`). Closed **-l** (`zoel`) is an exact match. Open **-m** (`zoem`) is *about as … as*. (cue: **`oe`** ≈ one + order; they share one rank)
 
-> `zuzozen zolazun zoel gamahum.`
+> `zazozon zalazun zoel gamahum.`
 >
-> [z-Uzozen | z-Olazun | z-equal-rank | g-challenge]
+> [z-Azozon | z-Alazun | z-equal-rank | g-challenge]
 >
-> "Uzozen is as challenging as Olazun."
+> "Azozon is as challenging as Alazun."
 
-> `zolazun zahelan zoel guzemol.`
+> `zalazun zahelan zoel guzemel.`
 >
-> [z-Olazun | z-Ahelan | z-equal-rank | g-sleepy]
+> [z-Alazun | z-Ahelan | z-equal-rank | g-sleepy]
 >
-> "Olazun is as sleepy as Ahelan."
+> "Alazun is as sleepy as Ahelan."
 
-> `zuzozen zolazun zoem gabulol.`
+> `zazozon zalazun zoem gubalel.`
 >
-> [z-Uzozen | z-Olazun | z-equal-rank.open | g-bright]
+> [z-Azozon | z-Alazun | z-equal-rank.open | g-bright]
 >
-> "Uzozen is about as bright as Olazun."
+> "Azozon is about as bright as Alazun."
 
-**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zuzozen gamahum` *Uzozen is challenging*. Use **`oe`** when two people share a height on the quality. *Walks like a duck* is resemblance ([*like*](relations.md#similative) `hewom`), not the same score on a named quality.
+**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazozon gamahum` *Azozon is challenging*. Use **`oe`** when two people share a height on the quality. *Walks like a duck* is resemblance ([*like*](relations.md#similative) `hewem`), not the same score on a named quality.
 
-**Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zuzozen zolazun zal gamahum`): each has the quality. It does not rank them or say they match. Use **`oe`** only for *as … as*.
+**Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zazozon zalazun zal gamahum`): each has the quality. It does not rank them or say they match. Use **`oe`** only for *as … as*.
 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | Use | English | Cue |
@@ -99,75 +99,75 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agebon | Cue |
 |---------|--------|-----|
 | *slow* | `uzezam` | 🐌 from *snail* |
-| *agility* | `evunem` | 🏑 from *field hockey* |
-| *intensity* | `uhunem` | 🏒 from *hockey* |
+| *agility* | `evunom` | 🏑 from *field hockey* |
+| *intensity* | `ahunom` | 🏒 from *hockey* |
 | *ocean* | `wohalal` | 🌊: an ocean of it, so *much* before a quality |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *haste* | `hedurem` |
+| *haste* | `hadurom` |
 | *challenge* | `amahum` |
-| *angry* | `unemul` |
-| *sleepy* | `uzemol` |
+| *angry* | `onumul` |
+| *sleepy* | `uzemel` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *Uzozen is more agile than Olazun.*
+**1.** *Azozon is more agile than Alazun.*
 
 ::: details Show answer
-`zuzozen zolazun zol gevunem.`
+`zazozon zalazun zol gevunom.`
 
-[z-Uzozen | z-Olazun | z-rank/more | g-agility]
+[z-Azozon | z-Alazun | z-rank/more | g-agility]
 :::
 
-**2.** *Ahelan is as slow as Uzozen.*
+**2.** *Ahelan is as slow as Azozon.*
 
 ::: details Show answer
-`zahelan zuzozen zoel guzezam.`
+`zahelan zazozon zoel guzezam.`
 
-[z-Ahelan | z-Uzozen | z-equal-rank | g-slow]
+[z-Ahelan | z-Azozon | z-equal-rank | g-slow]
 :::
 
-**3.** *Olazun is the hastiest.*
+**3.** *Alazun is the hastiest.*
 
 ::: details Show answer
-`zolazun zol gedurem.`
+`zalazun zol gadurom.`
 
-[z-Olazun | z-rank/more | g-haste]
+[z-Alazun | z-rank/more | g-haste]
 :::
 
-**4.** *Uzozen is about as intense as Ahelan.*
+**4.** *Azozon is about as intense as Ahelan.*
 
 ::: details Show answer
-`zuzozen zahelan zoem guhunem.`
+`zazozon zahelan zoem gahunom.`
 
-[z-Uzozen | z-Ahelan | z-equal-rank.open | g-intensity]
+[z-Azozon | z-Ahelan | z-equal-rank.open | g-intensity]
 :::
 
-**5.** *Olazun is much more challenging than Uzozen.*
+**5.** *Alazun is much more challenging than Azozon.*
 
 ::: details Show answer
-`zolazun zuzozen zol wohalal gamahum.`
+`zalazun zazozon zol wohalal gamahum.`
 
-[z-Olazun | z-Uzozen | z-rank/more | [w-ocean | g-challenge]]
+[z-Alazun | z-Azozon | z-rank/more | [w-ocean | g-challenge]]
 :::
 
-**6.** *Uzozen is the angriest.*
+**6.** *Azozon is the angriest.*
 
 ::: details Show answer
-`zuzozen zol gunemul.`
+`zazozon zol gonumul.`
 
-[z-Uzozen | z-rank/more | g-angry]
+[z-Azozon | z-rank/more | g-angry]
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zahelan zol gevunem.`
+**1.** `zahelan zol gevunom.`
 
 ::: details Show answer
 [z-Ahelan | z-rank/more | g-agility]
@@ -175,76 +175,76 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *Ahelan is the most agile.*
 :::
 
-**2.** `zolazun zahelan zoel gedurem.`
+**2.** `zalazun zahelan zoel gadurom.`
 
 ::: details Show answer
-[z-Olazun | z-Ahelan | z-equal-rank | g-haste]
+[z-Alazun | z-Ahelan | z-equal-rank | g-haste]
 
-*Olazun is as hasty as Ahelan.*
+*Alazun is as hasty as Ahelan.*
 :::
 
-**3.** `zahelan zolazun zol wohalal guzezam.`
+**3.** `zahelan zalazun zol wohalal guzezam.`
 
 ::: details Show answer
-[z-Ahelan | z-Olazun | z-rank/more | [w-ocean | g-slow]]
+[z-Ahelan | z-Alazun | z-rank/more | [w-ocean | g-slow]]
 
-*Ahelan is much slower than Olazun.*
+*Ahelan is much slower than Alazun.*
 :::
 
-**4.** `zuzozen zolazun zoem gunemul.`
+**4.** `zazozon zalazun zoem gonumul.`
 
 ::: details Show answer
-[z-Uzozen | z-Olazun | z-equal-rank.open | g-angry]
+[z-Azozon | z-Alazun | z-equal-rank.open | g-angry]
 
-*Uzozen is about as angry as Olazun.*
+*Azozon is about as angry as Alazun.*
 :::
 
-**5.** `zolazun zol guhunem.`
+**5.** `zalazun zol gahunom.`
 
 ::: details Show answer
-[z-Olazun | z-rank/more | g-intensity]
+[z-Alazun | z-rank/more | g-intensity]
 
-*Olazun is the most intense.*
+*Alazun is the most intense.*
 :::
 
-**6.** `zuzozen zahelan zol guzemol.`
+**6.** `zazozon zahelan zol guzemel.`
 
 ::: details Show answer
-[z-Uzozen | z-Ahelan | z-rank/more | g-sleepy]
+[z-Azozon | z-Ahelan | z-rank/more | g-sleepy]
 
-*Uzozen is sleepier than Ahelan.*
+*Azozon is sleepier than Ahelan.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Olazun is as agile as Uzozen.* `zolazun zuzozen zoel gevunem.` or `zolazun zuzozen zol gevunem.`
+**1.** *Alazun is as agile as Azozon.* `zalazun zazozon zoel gevunom.` or `zalazun zazozon zol gevunom.`
 
 ::: details Show answer
-`zolazun zuzozen zoel gevunem.`
+`zalazun zazozon zoel gevunom.`
 
-[z-Olazun | z-Uzozen | z-equal-rank | g-agility]
+[z-Alazun | z-Azozon | z-equal-rank | g-agility]
 
-*As … as* is the tie **`zoel`**; **`zol`** would rank Olazun higher.
+*As … as* is the tie **`zoel`**; **`zol`** would rank Alazun higher.
 :::
 
-**2.** *Ahelan is more challenging than Olazun.* `zahelan zolazun zol gamahum.` or `zolazun zahelan zol gamahum.`
+**2.** *Ahelan is more challenging than Alazun.* `zahelan zalazun zol gamahum.` or `zalazun zahelan zol gamahum.`
 
 ::: details Show answer
-`zahelan zolazun zol gamahum.`
+`zahelan zalazun zol gamahum.`
 
-[z-Ahelan | z-Olazun | z-rank/more | g-challenge]
+[z-Ahelan | z-Alazun | z-rank/more | g-challenge]
 
 The first item before **`zol`** ranks higher.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Uzozen is slower than Olazun.* <!-- lint: error -->`zuzozen zol zolazun guzezam.`
+**1.** *Azozon is slower than Alazun.* <!-- lint: error -->`zazozon zol zalazun guzezam.`
 
 ::: details Show answer
-`zuzozen zolazun zol guzezam.`
+`zazozon zalazun zol guzezam.`
 
-[z-Uzozen | z-Olazun | z-rank/more | g-slow]
+[z-Azozon | z-Alazun | z-rank/more | g-slow]
 
 **`zol`** closes the list after both names; it is not a word between them like English *than*.
 :::
@@ -252,5 +252,5 @@ The first item before **`zol`** ranks higher.
 
 - Fence shape, single-item / standalone, SHARED scale: [joins.md](joins.md)
 - Manner adverbs: [clause.md](clause.md#adverbs-h)
-- Kind and identity (*is a dog*, *is Uzozen*): [predication.md](predication.md)
+- Kind and identity (*is a dog*, *is Azozon*): [predication.md](predication.md)
 - Measure phrases: [numbers-applied.md](/numbers-applied#measure-phrases)

@@ -13,7 +13,7 @@ Sometimes one Agebon word is two smaller meanings with **`x`** in the middle. Th
 
 English often treats two words as one idea (*peanut butter*), or joins two names with a hyphen. In Agebon you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md) (subject, verb, and so on). The [ending](word-endings.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
 
-> `zubedaxuyudal.`
+> `zuwedaxubudal.`
 >
 > z-peanut-x-butter
 >
@@ -29,9 +29,9 @@ The last root is the kind of thing; the left root specifies it (what field, what
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| full root **`x`** full root | two roots, one word | `zubedaxuyudal` *peanut butter* | **x** ≈ plus |
+| full root **`x`** full root | two roots, one word | `zuwedaxubudal` *peanut butter* | **x** ≈ plus |
 
-**Not the same job as:** a [role compound](roles.md#role-compounds) opens with **`w`**, a scope vowel, and a part consonant (`zwuzuduyel`). Only a noun inside its stem takes **`x`**.
+**Not the same job as:** a [role compound](roles.md#role-compounds) opens with **`w`**, a scope vowel, and a part consonant (`zwuzeduyol`). Only a noun inside its stem takes **`x`**.
 
 **Not the same job as:** a word that **starts** with **`x`** [keeps the same speech move going](dependents.md#continue-x). That **`x`** is not this glue in the middle.
 
@@ -44,7 +44,7 @@ English *bedroom*, *doorbell*, and *textbook* feel like one word. Agebon lists t
 
 Inside the dictionary spelling you can still see the two old roots, with a join letter instead of **`x`**. That letter is the [word ending](word-endings.md) of the **left** root: **-l** when that piece is the everyday kind, **-m** when it is the abstract sense (named **-n** or resume **-r** if that left piece is a name or a resume). The last letter of the word is still the ending of the **whole** entry. In a sentence you add a role letter and that whole-word ending, the same way you do for *dog* or *hammer*.
 
-> `zoholeboral.`
+> `zoheleboral.`
 >
 > z-doorbell
 >
@@ -53,12 +53,12 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| `zoholeboral` | door **-l** bell | doorbell | left piece everyday |
+| `zoheleboral` | door **-l** bell | doorbell | left piece everyday |
 | `zuzahalanal` | school **-l** book | textbook | left piece everyday |
 | `zerulalogobal` | rain **-l** coat | raincoat | left piece everyday |
 | `…m…` | left root in its [abstract](word-endings.md#abstract-m) sense | same two roots, join **-m** | **m** ≈ meaning |
 
-If the pairing is not in the dictionary, either glue with **`x`** (`zubedaxuyudal` *peanut butter*) or use two words.
+If the pairing is not in the dictionary, either glue with **`x`** (`zuwedaxubudal` *peanut butter*) or use two words.
 
 ### One thing or two?
 <a id="compound-vs-separate"></a>
@@ -68,9 +68,9 @@ Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agebo
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| two words | two things, or a property already marked another way | `zehowol zerewol zam` *a hammer and a wrench*; `zudozol gubulel` *a blue dog* (`/ɡ/`) | |
-| **`x`** in the middle | one thing; you can still hear both roots | `gagamaxolamal` *in love* (the crush kind); `zubedaxuyudal` *peanut butter*; `zuzozexolazun` (one person) | **x** ≈ plus |
-| dictionary word | one familiar kind, listed as a single entry | `zobahohal` *bedroom*; `zozalal` *sunflower* | join letter in the entry, not **`x`** |
+| two words | two things, or a property already marked another way | `zohowel zurewel zam` *a hammer and a wrench*; `zodozel gobulol` *a blue dog* (`/ɡ/`) | |
+| **`x`** in the middle | one thing; you can still hear both roots | `gagamaxolamal` *in love* (the crush kind); `zuwedaxubudal` *peanut butter*; `zazozoxalazun` (one person) | **x** ≈ plus |
+| dictionary word | one familiar kind, listed as a single entry | `zoyahehal` *bedroom*; `zezalal` *sunflower* | join letter in the entry, not **`x`** |
 
 **Compare with:** a property on a noun uses `/ɡ/` (or `/w/`). A list uses a [join](joins.md).
 
@@ -86,30 +86,30 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *doorbell* | `oholeboral` | 🚪🔔 door **-l** bell |
+| *doorbell* | `oheleboral` | 🚪🔔 door **-l** bell |
 | *raincoat* | `erulalogobal` | 🌧️🧥 rain **-l** coat |
-| *wrench* | `erewol` | 🔧 |
+| *wrench* | `urewel` | 🔧 |
 | *saw* | `ozowul` | 🪚 |
-| *wood* | `ulel` | 🪵 |
+| *wood* | `ulol` | 🪵 |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *hammer* | `ehowol` |
+| *hammer* | `ohowel` |
 | *bell* | `eboral` |
-| *find* | `vumewol` |
-| *see* | `vawebol` |
+| *find* | `vumewel` |
+| *see* | `vayebel` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *a bell and a doorbell*
 
 ::: details Show answer
-`zeboral zoholeboral zal.`
+`zeboral zoheleboral zal.`
 
 [z-bell | z-doorbell | z-and]
 :::
@@ -117,54 +117,54 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **2.** *a hammer and a wrench* (and possibly more)
 
 ::: details Show answer
-`zehowol zerewol zam.`
+`zohowel zurewel zam.`
 
 [z-hammer | z-wrench | z-and.open]
 :::
 
-**3.** *Olazun finds a raincoat and a doorbell.*
+**3.** *Alazun finds a raincoat and a doorbell.*
 
 ::: details Show answer
-`zolazun derulalogobal doholeboral dal vumewol.`
+`zalazun derulalogobal doheleboral dal vumewel.`
 
-z-Olazun | [d-raincoat | d-doorbell | d-and] | v-find
+z-Alazun | [d-raincoat | d-doorbell | d-and] | v-find
 :::
 
 **4.** *Ahelan finds a raincoat.*
 
 ::: details Show answer
-`zahelan derulalogobal vumewol.`
+`zahelan derulalogobal vumewel.`
 
 z-Ahelan | d-raincoat | v-find
 :::
 
-**5.** *Uzozen-Olazun* (one person)
+**5.** *Azozon-Alazun* (one person)
 
 ::: details Show answer
-`zuzozexolazun.`
+`zazozoxalazun.`
 
-z-Uzozen-x-Olazun
+z-Azozon-x-Alazun
 :::
 
-**6.** *Olazun sees wood.*
+**6.** *Alazun sees wood.*
 
 ::: details Show answer
-`zolazun dulel vawebol.`
+`zalazun dulol vayebel.`
 
-z-Olazun | d-wood | v-see
+z-Alazun | d-wood | v-see
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zolazun doholeboral vumewol.`
+**1.** `zalazun doheleboral vumewel.`
 
 ::: details Show answer
-z-Olazun | d-doorbell | v-find
+z-Alazun | d-doorbell | v-find
 
-*Olazun finds a doorbell.*
+*Alazun finds a doorbell.*
 :::
 
-**2.** `zulel zozowul zal.`
+**2.** `zulol zozowul zal.`
 
 ::: details Show answer
 [z-wood | z-saw | z-and]
@@ -172,7 +172,7 @@ z-Olazun | d-doorbell | v-find
 *wood and a saw* (two things)
 :::
 
-**3.** `zahelan dulexozowul vawebol.`
+**3.** `zahelan duloxozowul vayebel.`
 
 ::: details Show answer
 z-Ahelan | d-wood-x-saw | v-see
@@ -180,7 +180,7 @@ z-Ahelan | d-wood-x-saw | v-see
 *Ahelan sees a wood saw.*
 :::
 
-**4.** `zerewol zeboral zam.`
+**4.** `zurewel zeboral zam.`
 
 ::: details Show answer
 [z-wrench | z-bell | z-and.open]
@@ -188,15 +188,15 @@ z-Ahelan | d-wood-x-saw | v-see
 *a wrench and a bell* (and possibly more)
 :::
 
-**5.** `zuzozen derulalogobal vawebol.`
+**5.** `zazozon derulalogobal vayebel.`
 
 ::: details Show answer
-z-Uzozen | d-raincoat | v-see
+z-Azozon | d-raincoat | v-see
 
-*Uzozen sees a raincoat.*
+*Azozon sees a raincoat.*
 :::
 
-**6.** `zahelan dehowoxerewol vumewol.`
+**6.** `zahelan dohowexurewel vumewel.`
 
 ::: details Show answer
 z-Ahelan | d-hammer-x-wrench | v-find
@@ -206,10 +206,10 @@ z-Ahelan | d-hammer-x-wrench | v-find
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *a wood saw* `zulexozowul.` or `zozowuxulel.`
+**1.** *a wood saw* `zuloxozowul.` or `zozowuxulol.`
 
 ::: details Show answer
-`zulexozowul.`
+`zuloxozowul.`
 
 z-wood-x-saw
 
@@ -218,10 +218,10 @@ The last root is the kind of thing (a saw); the root before **`x`** says which k
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *a doorbell* <!-- lint: error -->`zohoxeboral.`
+**1.** *a doorbell* <!-- lint: error -->`zohexeboral.`
 
 ::: details Show answer
-`zoholeboral.`
+`zoheleboral.`
 
 z-doorbell
 

@@ -12,7 +12,7 @@ const SAKES = [
   "",
   "### Emotion compose {#emotion-compose}",
   "",
-  "`zebewem guwathamar` and `wuwathuraer`.",
+  "`zobewom guwathamar` and `wuwathuraer`.",
 ].join("\n");
 
 function terminology(rows: string[], body = ""): string {
@@ -56,14 +56,14 @@ describe("lintTerminology", () => {
     const body = [
       "### Emotion",
       "",
-      "Say `wonathonar` with **ACT**; the root `ezuye`.",
+      "Say `wonathonar` with **ACT**; the root `ezuyo`.",
       "",
       "[Feelings](sakes.md#nowhere)",
     ].join("\n");
     const out = lint(terminology([INTERNAL], body), ["INTERNAL"]).join("\n");
     assert.match(out, /`wonathonar` does not appear/);
     assert.match(out, /\*\*ACT\*\*/);
-    assert.match(out, /bare root `ezuye`/);
+    assert.match(out, /bare root `ezuyo`/);
     assert.match(out, /sakes\.md#nowhere is not an anchor/);
     assert.match(out, /link text "Feelings"/);
   });

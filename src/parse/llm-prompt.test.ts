@@ -97,35 +97,35 @@ describe("translation prompt core", () => {
 describe("doc examples", () => {
   it("joins a dialogue block's Agebon lines and skips spoken lines", () => {
     const md = [
-      "> `zuzozen vuduyel.`",
-      "> `zwuzuduyer vezuvol.`",
+      "> `zazozon veduyol.`",
+      "> `zwuzeduyor vezuvel.`",
       ">",
-      "> 🔊 `zuzozen vuduyel.`",
+      "> 🔊 `zazozon veduyol.`",
       ">",
-      '> "Uzozen teaches. The one teaching sleeps."',
+      '> "Azozon teaches. The one teaching sleeps."',
       "",
-      "> `zudozol vowurel.`",
+      "> `zodozel vowurol.`",
       ">",
       '> "A dog walks."',
       '> "Dogs walk."',
     ].join("\n");
     assert.deepEqual(docExamples(md), [
-      { agebon: "zuzozen vuduyel. zwuzuduyer vezuvol.", free: '"Uzozen teaches. The one teaching sleeps."', line: 1 },
+      { agebon: "zazozon veduyol. zwuzeduyor vezuvel.", free: '"Azozon teaches. The one teaching sleeps."', line: 1 },
     ]);
   });
 
   it("keeps parentheses inside the quotes only for an aside span", () => {
-    const plain = examplePair({ agebon: "zuzozen vowurel.", free: '"Uzozen walks (quietly)."', line: 1 }, "x.md:1", tables);
+    const plain = examplePair({ agebon: "zazozon vowurol.", free: '"Azozon walks (quietly)."', line: 1 }, "x.md:1", tables);
     assert.equal(plain, null);
-    const aside = examplePair({ agebon: "zuzozen vowurel th(hogowul).", free: '"Uzozen walks (quietly)."', line: 1 }, "x.md:1", tables);
+    const aside = examplePair({ agebon: "zazozon vowurol th(hugowul).", free: '"Azozon walks (quietly)."', line: 1 }, "x.md:1", tables);
     assert.ok(aside?.gloss.includes("ASIDE["));
   });
 
   it("reads table rows with italic English", () => {
-    const md = ["| Job | Example | English |", "|------|---------|---------|", "| x | `zuzozen vowurel.` | *Uzozen walks.* (alone) |"].join("\n");
-    assert.deepEqual(tableExamples(md), [{ agebon: "zuzozen vowurel.", free: "*Uzozen walks.* (alone)", line: 3, delimiter: "*" }]);
+    const md = ["| Job | Example | English |", "|------|---------|---------|", "| x | `zazozon vowurol.` | *Azozon walks.* (alone) |"].join("\n");
+    assert.deepEqual(tableExamples(md), [{ agebon: "zazozon vowurol.", free: "*Azozon walks.* (alone)", line: 3, delimiter: "*" }]);
     const row = examplePair(tableExamples(md)[0]!, "x.md:3", tables);
-    assert.deepEqual([row?.sentence, row?.note], ["Uzozen walks.", "alone"]);
+    assert.deepEqual([row?.sentence, row?.note], ["Azozon walks.", "alone"]);
   });
 
   it("reads Agebon → English checkpoint answers as the test set", () => {
@@ -158,14 +158,14 @@ describe("selectExamples", () => {
   const pool = [
     pair("z-dog | v-walk", common),
     pair("z-cat | v-walk", common),
-    pair("z-Uzozen | th-CLUES-Olazun | v-walk", [...common, "word.xFamily.holder"], "the clue is Olazun's"),
+    pair("z-Azozon | th-CLUES-Alazun | v-walk", [...common, "word.xFamily.holder"], "the clue is Alazun's"),
     pair("[z-A | z-B | z-rank/more | g-big]", ["join.o", "sentence.unit.zCoord"]),
-    pair("z-A | th-PATTERN | v-walk", [...common, "overlay.ubem.th"]),
+    pair("z-A | th-PATTERN | v-walk", [...common, "overlay.ubom.th"]),
   ];
 
   it("prefers rare shared features and covers new ones first", () => {
     const picked = selectExamples({ constructions: [...common, "word.xFamily.holder", "join.o"], labels: ["CLUES"] }, pool, { count: 2 });
-    assert.deepEqual(picked.map((p) => p.gloss).sort(), ["[z-A | z-B | z-rank/more | g-big]", "z-Uzozen | th-CLUES-Olazun | v-walk"]);
+    assert.deepEqual(picked.map((p) => p.gloss).sort(), ["[z-A | z-B | z-rank/more | g-big]", "z-Azozon | th-CLUES-Alazun | v-walk"]);
   });
 
   it("never picks the input's own gloss", () => {
@@ -203,30 +203,30 @@ describe("buildPrompt", () => {
   };
 
   it("has the core, the legend for this input, examples, task, and the gloss last", () => {
-    const prompt = buildPrompt(["z-Uzozen | th-CLUES-Olazun | v-walk"], ["word.xFamily.holder"], context);
+    const prompt = buildPrompt(["z-Azozon | th-CLUES-Alazun | v-walk"], ["word.xFamily.holder"], context);
     assert.match(prompt, /## How to read the gloss/);
     assert.match(prompt, /- `CLUES`: Evidential/);
     assert.match(prompt, /- HOLDER NOTE/);
     assert.match(prompt, /ENGLISH: "z-A \| th-CLUES-B \| v-walk" \(the clue is B's\)/);
     assert.match(prompt, /add one short plain-English note/);
-    assert.ok(prompt.trimEnd().endsWith("## Gloss\n\nz-Uzozen | th-CLUES-Olazun | v-walk"));
+    assert.ok(prompt.trimEnd().endsWith("## Gloss\n\nz-Azozon | th-CLUES-Alazun | v-walk"));
   });
 
   it("numbers several inputs as one passage", () => {
-    const prompt = buildPrompt(["z-Uzozen | v-walk", "z-←Uzozen | v-sleep"], [], context);
-    assert.match(prompt, /## Gloss lines\n\n1 z-Uzozen \| v-walk\n2 z-←Uzozen \| v-sleep\n$/);
+    const prompt = buildPrompt(["z-Azozon | v-walk", "z-←Azozon | v-sleep"], [], context);
+    assert.match(prompt, /## Gloss lines\n\n1 z-Azozon \| v-walk\n2 z-←Azozon \| v-sleep\n$/);
     assert.match(prompt, /`1 ENGLISH:/);
   });
 
   it("asks for no note and shows none with loose", () => {
-    const prompt = buildPrompt(["z-Uzozen | th-CLUES-Olazun | v-walk"], ["word.xFamily.holder"], context, { loose: true });
+    const prompt = buildPrompt(["z-Azozon | th-CLUES-Alazun | v-walk"], ["word.xFamily.holder"], context, { loose: true });
     assert.doesNotMatch(prompt, /the clue is B's/);
     assert.match(prompt, /Give the sentence only, with no note/);
   });
 
   it("explains a variant tail only when a gloss uses it", () => {
-    assert.doesNotMatch(buildPrompt(["z-Uzozen | v-walk"], [], context, { examples: 0 }), /`\.strong`/);
-    assert.match(buildPrompt(["z-Uzozen | th-CLUES.strong | v-walk"], [], context, { examples: 0 }), /`\.strong` after a word: strong evidence/);
+    assert.doesNotMatch(buildPrompt(["z-Azozon | v-walk"], [], context, { examples: 0 }), /`\.strong`/);
+    assert.match(buildPrompt(["z-Azozon | th-CLUES.strong | v-walk"], [], context, { examples: 0 }), /`\.strong` after a word: strong evidence/);
   });
 });
 
@@ -234,9 +234,9 @@ describe("promptForPassage", () => {
   const context: PromptContext = { index: [], labelGlosses: new Map(), readers: new Map() };
 
   it("numbers one gloss line per input and adds the final stop", () => {
-    const glosses = passageGlosses(["zuzozen vowurel.", "zuzozen vowurel"], tables);
+    const glosses = passageGlosses(["zazozon vowurol.", "zazozon vowurol"], tables);
     assert.equal(glosses.length, 2);
-    const prompt = promptForPassage(["zuzozen vowurel.", "zuzozen vowurel"], tables, context);
+    const prompt = promptForPassage(["zazozon vowurol.", "zazozon vowurol"], tables, context);
     assert.ok(prompt.trimEnd().endsWith(`## Gloss lines\n\n1 ${glosses[0]}\n2 ${glosses[1]}`));
   });
 });

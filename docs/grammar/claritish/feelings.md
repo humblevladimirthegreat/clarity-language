@@ -60,7 +60,7 @@ Build the feeling word from the parts in the note.
 **1.** *My friend remembered my favorite song.* (relatedness met, default ending; held inside; surging)
 
 ::: details Show answer
-My friend remembered my favorite song `thawothamar`.
+My friend remembered my favorite song `thawethamar`.
 :::
 
 **2.** *The meeting ran two hours over.* (autonomy unmet, default ending; pushing back; flowing)
@@ -72,7 +72,7 @@ The meeting ran two hours over `thunathumuom`.
 **3.** How you feel right now, with no clause. (purpose unmet, default ending; held inside; still)
 
 ::: details Show answer
-`thurethumal`.
+`thurothumal`.
 :::
 
 <!-- Source (editors): feelings-permission.md#emotion-compose, feelings-permission.md#feeling-no-object. -->

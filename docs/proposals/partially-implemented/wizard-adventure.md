@@ -149,7 +149,7 @@ Every published root records a `kind`, `shape` and `size` ([root tails](../../me
 | Column | Values | Game default |
 |--------|--------|--------------|
 | `kind` | creature, person, food, tool, nature, place, body, … (letter map in [`src/root-tails.ts`](../../../src/root-tails.ts)) | Creatures move and react, people talk, food is eaten, tools are wielded, nature things burn, flow or grow, places are entered |
-| `shape` | `holds`, `one`, `order`, `takes-away` | Containers hold things; `takes-away` things cut, hide or harm; `order` things lead somewhere (paths, ladders, stages) |
+| `shape` | `holds`, `ono`, `order`, `takes-away` | Containers hold things; `takes-away` things cut, hide or harm; `order` things lead somewhere (paths, ladders, stages) |
 | `size` | `small`, `medium`, `big`, `none` | Small things are carried, big things block a way, `none` is a substance or an act with no body |
 
 So any of the roughly 1,150 non-`named` roots can appear in the world with sensible behavior. A small **override table** inside the game adds the interactions that make play fun (fire burns wood, water puts out fire, a dog chases a cat) and fixes the few rows whose category is right for spelling but odd in play. The lexicon is never edited for the game's sake.
@@ -287,7 +287,7 @@ The engine is in [`src/game/`](../../../src/game/), the page is [`wizard.md`](..
 - **The error table's doc seed is the Fix it drills**, not the **Compare with** notes: a drill pairs a wrong form with its fix and the reason, while a Compare-with note contrasts two right forms. 20 of the 49 drills reduce to a row (role letter, ending, whole word, turn word to the front); the rest are structural.
 - **Make and unmake** are `construct` 👷 and `eraser` 🪌, both core roots of the school.
 - **No Ink yet.** The fixed lines (*yes*, *no*, *sure*, *huh?*, *thank you*) are glosses spelled at build time; generated lines are spelled in the browser with an index that grows one root at a time. A name in an authored gloss is a `{concrete}` slot (`y-{guard}`), so it follows a respelling.
-- **A resume binds to a same-stem verb in its sentence.** `yel vohol dohor` resumes the opening, not the door ([resume](/pronouns#resume-r): the most recent word with that stem), so the scripts say `dohol`, and the generator falls back to **-l** when a **-r** would bind to the verb.
+- **A resume binds to a same-stem verb in its sentence.** `yel vohel doher` resumes the opening, not the door ([resume](/pronouns#resume-r): the most recent word with that stem), so the scripts say `dohel`, and the generator falls back to **-l** when a **-r** would bind to the verb.
 - **No verb puts a thing down.** Among the first handlers, things leave your hands only by giving; the quest models have no *drop* action, and a person can always be asked to give a thing back.
 - **The player's position** is a section on the learning order. The sandbox opens everything, and a tester can pretend to have reached any checkpoint to watch narration and speech gate.
 

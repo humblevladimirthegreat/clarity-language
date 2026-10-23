@@ -22,53 +22,53 @@ Beginner used whole-stem **-r** in the same slot as the earlier word (*he sits*)
 | `/y/` interjection … `-r` | same exclamation again | repeating that call-out |
 | `/x/` … `-r` after `/x/` | same linker again | *and so* / *likewise* |
 
-A few [closed roots](/pronouns#special-pronouns) give **-r** a meaning of their own: the light end of a scale (`thomar` *may, who knows*, `thager` *plan-sketch*). On those, **-r** is that meaning, not a resume. Every other closed root resumes with **-r** like any content root, so `thohor` after `thohom` is the same condition again:
+A few [closed roots](/pronouns#special-pronouns) give **-r** a meaning of their own: the light end of a scale (`thomar` *may, who knows*, `thagor` *plan-sketch*). On those, **-r** is that meaning, not a resume. Every other closed root resumes with **-r** like any content root, so `thoher` after `thohem` is the same condition again:
 
-> `zolazun vowurel thohom blerulal. zuzozen vowurel thohor.`
+> `zalazun vowurol thohem blerulal. zazozon vowurol thoher.`
 >
-> z-Olazun | v-walk | [th-if | bl-rain] . z-Uzozen | v-walk | th-←if
+> z-Alazun | v-walk | [th-if | bl-rain] . z-Azozon | v-walk | th-←if
 >
-> "Olazun walks if it rains. In that case, Uzozen walks too."
+> "Alazun walks if it rains. In that case, Azozon walks too."
 
 For English *too* / *also*, resume the action. `/v/` **-r** is *the same action again*, so a new subject with a resumed verb reads *does so too*. With the same subject, give the resumed verb a new object: *sees a dog too*.
 
-> `zolazun vowurel. zuzozen vowurer.`
+> `zalazun vowurol. zazozon vowuror.`
 >
-> z-Olazun | v-walk . z-Uzozen | v-←walk
+> z-Alazun | v-walk . z-Azozon | v-←walk
 >
-> "Olazun walks. Uzozen does too."
+> "Alazun walks. Azozon does too."
 
-> `zuzozen vawebol dagozol. zuzozen vawebor dudozol.`
+> `zazozon vayebel dogozel. zazozon vayeber dodozel.`
 >
-> z-Uzozen | v-see | d-cat . z-Uzozen | v-←see | d-dog
+> z-Azozon | v-see | d-cat . z-Azozon | v-←see | d-dog
 >
-> "Uzozen sees a cat. Uzozen sees a dog too."
+> "Azozon sees a cat. Azozon sees a dog too."
 
 **Compare with:** English *that* pointing at a quoted title, proverb, or aside uses a [role pointer](/pronouns#role-pointers) (`dwuder`, *that quote*), not whole-stem **-r**.
 
 ### Resume one sense (**-rl** / **-rm**) {#resume-sense}
 
-Many roots carry both a concrete **-l** sense and an abstract **-m** sense (`udozol` *dog*, `udozom` *loyalty*), and both share one whole stem. Plain **-r** takes the most recent word with that stem, whichever sense it had. When both senses are in the conversation, pin the one you mean: **-rl** resumes the concrete sense, **-rm** the abstract sense. Everything else about a resume stays the same: the role letter, the whole stem, and the most recent match.
+Many roots carry both a concrete **-l** sense and an abstract **-m** sense (`odozel` *dog*, `odozem` *loyalty*), and both share one whole stem. Plain **-r** takes the most recent word with that stem, whichever sense it had. When both senses are in the conversation, pin the one you mean: **-rl** resumes the concrete sense, **-rm** the abstract sense. Everything else about a resume stays the same: the role letter, the whole stem, and the most recent match.
 
-> `zuzozen dudozol vawebol. zolazun dudozom vawebol. zuzozen dudozorl vawebol. zolazun dudozorm vawebol.`
+> `zazozon dodozel vayebel. zalazun dodozem vayebel. zazozon dodozerl vayebel. zalazun dodozerm vayebel.`
 >
-> z-Uzozen | d-dog | v-see . z-Olazun | d-loyalty | v-see . z-Uzozen | d-←dog | v-see . z-Olazun | d-←loyalty | v-see
+> z-Azozon | d-dog | v-see . z-Alazun | d-loyalty | v-see . z-Azozon | d-←dog | v-see . z-Alazun | d-←loyalty | v-see
 >
-> "Uzozen sees a dog. Olazun sees loyalty. Uzozen sees the dog. Olazun sees the loyalty."
+> "Azozon sees a dog. Alazun sees loyalty. Azozon sees the dog. Alazun sees the loyalty."
 
-Here plain `dudozor` would mean the loyalty, the most recent match. **-rl** reaches back past it to the dog.
+Here plain `dodozer` would mean the loyalty, the most recent match. **-rl** reaches back past it to the dog.
 
-Pinning is optional. Write plain **-r** when only one sense has come up, or when the latest one is the one you mean. A pinned resume with no earlier word of that sense falls back the way plain **-r** does: it means the one you both already know (`zudozorm` alone is *the loyalty* you both know). A name has no sense to pin, and only a content word or a compound takes **-rl** / **-rm**. A [stand-in](sentence-linkers.md#stand-in) is a different word: it has a vowel and no root.
+Pinning is optional. Write plain **-r** when only one sense has come up, or when the latest one is the one you mean. A pinned resume with no earlier word of that sense falls back the way plain **-r** does: it means the one you both already know (`zodozerm` alone is *the loyalty* you both know). A name has no sense to pin, and only a content word or a compound takes **-rl** / **-rm**. A [stand-in](sentence-linkers.md#stand-in) is a different word: it has a vowel and no root.
 
 ### Cross-role recast
 
 Sometimes you still mean that person or thing, but you need a **different** slot: the doing, the kind, the manner. Change only the first letter; keep the whole stem and **-r**. English then uses a longer phrase (*do the same with him*, *of that kind*) instead of *he* / *him*.
 
-> `zuzozen vuhohol. zolazun vuzozer.`
+> `zazozon vehohel. zalazun vazozor.`
 >
-> z-Uzozen | v-sit . z-Olazun | v-←Uzozen
+> z-Azozon | v-sit . z-Alazun | v-←Azozon
 >
-> "Uzozen sits. Olazun does the same with Uzozen."
+> "Azozon sits. Alazun does the same with Azozon."
 
 | Agebon | Use | English |
 |--------|-----|---------|
@@ -80,37 +80,37 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 
 For English *one* (*a black one*, *the red one*) of a noun a [role pointer](/pronouns#a-new-one) reaches, write that pointer with **-l** and the new property on `/ɡ/`. For a noun no pointer reaches (a topic, a noun inside a quote, a hook landmark with no part consonant), write the unspecified **`dar`** *something* and resume the noun as a kind on `/ɡ/`, then add the new property. A resume on `/d/` would be the same dog; **`dar`** with a `/ɡ/` resume is another thing of the dog kind.
 
-> `zuzozen dudozol gerulel vawebol. zolazun dar gudozor gubulol vawebol.`
+> `zazozon dodozel gerulol vayebel. zalazun dar godozer gubulel vayebel.`
 >
-> z-Uzozen | [d-dog | g-red] | v-see . z-Olazun | [d-something | g-←dog] | g-black | v-see
+> z-Azozon | [d-dog | g-red] | v-see . z-Alazun | [d-something | g-←dog] | g-black | v-see
 >
-> "Uzozen sees a red dog. Olazun sees a black one."
+> "Azozon sees a red dog. Alazun sees a black one."
 
 ### Each other {#reciprocal}
 
-For *each other*, join the people in `/z/` and add **`hehem`** after the verb. The root is **`ehe`** *reciprocity*: each one does it to the others. Do not write a resume in `/d/` (`duzozer` would just mean Uzozen again).
+For *each other*, join the people in `/z/` and add **`hehom`** after the verb. The root is **`eho`** *reciprocity*: each one does it to the others. Do not write a resume in `/d/` (`dazozor` would just mean Azozon again).
 
-> `zuzozen zolazun zal vawebol hehem.`
+> `zazozon zalazun zal vayebel hehom.`
 >
-> [z-Uzozen | z-Olazun | z-and] | v-see | h-reciprocity
+> [z-Azozon | z-Alazun | z-and] | v-see | h-reciprocity
 >
-> "Uzozen and Olazun see each other."
+> "Azozon and Alazun see each other."
 
-With **-l**, **`hehel`** is strictly pairwise: every one of them does it to every other one. **-m** is the everyday *each other* / *one another*, where it only has to go both ways in general.
+With **-l**, **`hehol`** is strictly pairwise: every one of them does it to every other one. **-m** is the everyday *each other* / *one another*, where it only has to go both ways in general.
 
-**Compare with:** **`thehem blarl`** on `/th/` is *if and only if* ([dependents](/dependents#poles)). On `/h/` with no `/b/`, the same root is *each other*.
+**Compare with:** **`thehom blarl`** on `/th/` is *if and only if* ([dependents](/dependents#poles)). On `/h/` with no `/b/`, the same root is *each other*.
 
 ### Addressing several people
 
 English *you* does not say whether you are talking to one person or several. Agebon does: one addressee is **`awa`**, and the listener root plus associative **-x** (**`awanx`**) names everyone this turn addresses. That is everyone the turn’s calls named, plus anyone you were already addressing. Inclusive *shall we* is still **`aya`**, and soft **`zayam`** hedges whether you really share the act.
 
-> `zawanx vuhohol.`
+> `zawanx vehohel.`
 >
 > z-listener-x | v-sit
 >
 > "You all sit."
 
-**Compare with:** *you and I* is **`aya`**. *Uzozen and associates* is name…**-x** ([plurality](/plurality#associative)).
+**Compare with:** *you and I* is **`aya`**. *Azozon and associates* is name…**-x** ([plurality](/plurality#associative)).
 
 ### Tag pronouns {#tag-pronouns}
 
@@ -119,7 +119,7 @@ English sometimes labels people to keep them apart: *call the first one A*, *sup
 <!-- cheat-sheet: people-pointing -->
 | Agebon | Use | English |
 |--------|-----|---------|
-| `zudozol zwal` | a phrase, then tag + **-l** in the same role: assign | *a dog, call it A* |
+| `zodozel zwal` | a phrase, then tag + **-l** in the same role: assign | *a dog, call it A* |
 | `zwal` | tag + **-l** with no phrase before it | *someone A*: a new referent with no name |
 | `zwar` / `dwar` / `bwar` | tag + **-r**: the one tagged A, in that role | *A* |
 | `zwan` / `dwan` / `bwan` | tag + **-n**: **-r** that needs a name | *A*, when A was assigned to a name |
@@ -128,7 +128,7 @@ English sometimes labels people to keep them apart: *call the first one A*, *sup
 
 The other tags follow the same pattern: `zwel` / `zwer` / `zwem`, `zwol` / `zwor` / `zwom`, `zwul` / `zwur` / `zwum`.
 
-> `zudozol zwal dugedol dwel vawebol. zagozol dwar vawebol. zwar vowurel.`
+> `zodozel zwal dugedel dwel vayebel. zogozel dwar vayebel. zwar vowurol.`
 >
 > [z-dog | z-tag.A] | [d-cookie | d-tag.E] | v-see . z-cat | d-←tag.A | v-see . z-←tag.A | v-walk
 >
@@ -138,15 +138,15 @@ The last `zwar` is still the dog, though the cat is the newer doer. `zwuzer` wou
 
 - **Assign.** A tag with **-l** right after a phrase in the same role names that phrase: a noun with its `/ɡ/` describers, a name, a resume, or a role pointer. With no phrase before it, it brings in someone new.
 - **Recall.** A tag with **-r** is the ordinary [whole-stem resume](/pronouns#resume-r): `zwar` resumes `zwal`, so it picks the latest word with that stem, which is the one that assigned the tag.
-- **Named recall.** A tag with **-n** is **-r** for a tag assigned to a **-n** word (`zuzozen zwal`, then `zwan`). It picks the same referent as `zwar`; it adds the claim that A is a name. If A was assigned to a kind (`zudozol zwal`), to a placeholder (`zwal` alone), or to a group that is not all names, `zwan` is not a sentence, and it does not fall back to **-r**. `zwan` is always the tag and never a name, as no root begins with `w`.
+- **Named recall.** A tag with **-n** is **-r** for a tag assigned to a **-n** word (`zazozon zwal`, then `zwan`). It picks the same referent as `zwar`; it adds the claim that A is a name. If A was assigned to a kind (`zodozel zwal`), to a placeholder (`zwal` alone), or to a group that is not all names, `zwan` is not a sentence, and it does not fall back to **-r**. `zwan` is always the tag and never a name, as no root begins with `w`.
 - **Reassign.** A newer `zwal` takes A over, by the same rule.
-- **Tag later.** A tag can go on a resume: `dudozor dwel` is *the dog, call it E*.
-- **Lists.** Inside a [join fence](/joins#right-close), each tag names the item right before it: `zudozol zwal zagozol zwel zam` is *a dog (A) and a cat (E)*. After the join word, a tag names the whole group: `zudozol zagozol zam zwal` is *a dog and a cat, call them A*. A new tag listed with something else goes first: `zwal zudozol zam` is *A and a dog*.
+- **Tag later.** A tag can go on a resume: `dodozer dwel` is *the dog, call it E*.
+- **Lists.** Inside a [join fence](/joins#right-close), each tag names the item right before it: `zodozel zwal zogozel zwel zam` is *a dog (A) and a cat (E)*. After the join word, a tag names the whole group: `zodozel zogozel zam zwal` is *a dog and a cat, call them A*. A new tag listed with something else goes first: `zwal zodozel zam` is *A and a dog*.
 - **No fallback.** An ordinary **-r** can mean the one you both know. A tag **-r** or **-m** with no assignment earlier in the conversation is not a sentence.
 
 With no phrase to tag, a tag holds a placeholder, as in *suppose A tells E*:
 
-> `zwal vezuyel bwel. zwer dugedol vagedal.`
+> `zwal vezuyol bwel. zwer dugedel vagedal.`
 >
 > z-tag.A | v-tell | b-tag.E . z-←tag.E | d-cookie | v-eat
 >
@@ -154,13 +154,13 @@ With no phrase to tag, a tag holds a placeholder, as in *suppose A tells E*:
 
 A tag with **-m** is a [share](/pronouns#share): A's part in the latest earlier sentence where A filled a part, in whatever role. `zwuzem` picks the event by role; `zwam` picks it by who.
 
-> `zuzozen zwal dolazun vanuvul. zahelan dwam vawebol.`
+> `zazozon zwal dalazun vabuvul. zahelan dwam vayebel.`
 >
-> [z-Uzozen | z-tag.A] | d-Olazun | v-punch . z-Ahelan | d-←tag.A.part | v-see
+> [z-Azozon | z-tag.A] | d-Alazun | v-punch . z-Ahelan | d-←tag.A.part | v-see
 >
-> "Uzozen (A) punches Olazun. Ahelan sees what A did."
+> "Azozon (A) punches Alazun. Ahelan sees what A did."
 
-Tags fill `/z/`, `/d/`, and `/b/` only. To call someone, use their name (`yolazun`). A word that is already a pronoun with one fixed form takes no tag: the [special pronouns](/pronouns#special-pronouns), the generic pronoun, a topic pronoun, and a tag itself. A resume and a role pointer do take one, because a tag keeps them fixed while they would otherwise follow the latest match. **-x** goes only on **-r** and **-n**: a share is a part, not a group of people, and to tag a group, tag its phrase (`zudozolx zwal`).
+Tags fill `/z/`, `/d/`, and `/b/` only. To call someone, use their name (`yalazun`). A word that is already a pronoun with one fixed form takes no tag: the [special pronouns](/pronouns#special-pronouns), the generic pronoun, a topic pronoun, and a tag itself. A resume and a role pointer do take one, because a tag keeps them fixed while they would otherwise follow the latest match. **-x** goes only on **-r** and **-n**: a share is a part, not a group of people, and to tag a group, tag its phrase (`zodozelx zwal`).
 
 A tag lasts until it is assigned again or the conversation ends with a [goodbye](/word-endings#greeting). Distance does not blur it, so placeholder reasoning can run through other sentences and back. A tag assigned inside a [dependent](/dependents#dependent-clauses) holds after it, because the dependent is the same talk. A quote keeps its own tags.
 
@@ -175,17 +175,17 @@ A stacked vowel names two tags together. There are six stacks, one for each pair
 | `zwaem` | pair + **-m**: their parts in the latest earlier event both took part in | *what A and E did* |
 | `zwaerx` | pair **-r** + **-x** | *A, E, and associates* |
 
-> `zudozol zwal zagozol zwel zam vowurel. zwaer varuvel. zuzozen dwaem vawebol.`
+> `zodozel zwal zogozel zwel zam vowurol. zwaer veruvol. zazozon dwaem vayebel.`
 >
-> [[z-dog | z-tag.A] | [z-cat | z-tag.E] | z-and.open] | v-walk . z-←tag.A+E | v-run . z-Uzozen | d-←tag.A+E.part | v-see
+> [[z-dog | z-tag.A] | [z-cat | z-tag.E] | z-and.open] | v-walk . z-←tag.A+E | v-run . z-Azozon | d-←tag.A+E.part | v-see
 >
-> "A dog (A) and a cat (E) walk. A and E run. Uzozen sees what A and E did."
+> "A dog (A) and a cat (E) walk. A and E run. Azozon sees what A and E did."
 
-Both tags must already be assigned. A pair never assigns: to tag two things, tag each one (`zudozol zwal zagozol zwel zam`), or tag the group as one (`zudozol zagozol zam zwal`).
+Both tags must already be assigned. A pair never assigns: to tag two things, tag each one (`zodozel zwal zogozel zwel zam`), or tag the group as one (`zodozel zogozel zam zwal`).
 
 **Compare with:** `zwaer` says in one word what a list of `zwar` and `zwer` closed by `zam` says.
 
-**Compare with:** a name already resumes from anywhere (`zuzozer`), and two people rarely share a name. Reach for a tag when the referent has no name, when its stem is a long compound, when two of the same kind are in play, or when a role pointer would pick someone newer.
+**Compare with:** a name already resumes from anywhere (`zazozor`), and two people rarely share a name. Reach for a tag when the referent has no name, when its stem is a long compound, when two of the same kind are in play, or when a role pointer would pick someone newer.
 
 ### Practice {#intermediate-practice}
 
@@ -197,86 +197,86 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *harvest* | `vugelam` | 🌾 from *grain*: bringing the crop in |
-| *red* | `erulel` | 🔴 |
-| *reciprocity* | `hehem` | ↔️ from *east-west*: each one to the others |
+| *harvest* | `vogelam` | 🌾 from *grain*: bringing the crop in |
+| *red* | `erulol` | 🔴 |
+| *reciprocity* | `hehom` | ↔️ from *east-west*: each one to the others |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *listener* | `awan` |
-| *pour* | `vobuvul` |
-| *tomato* | `udedol` |
-| *watermelon* | `owodol` |
-| *like* | `hewom` |
-| *see* | `vawebol` |
-| *scream* | `varemul` |
+| *pour* | `vowuvul` |
+| *tomato* | `odedel` |
+| *watermelon* | `owodel` |
+| *like* | `hewem` |
+| *see* | `vayebel` |
+| *scream* | `veyamul` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
-**1.** *Olazun pours. Uzozen does too.*
+**1.** *Alazun pours. Azozon does too.*
 
 ::: details Show answer
-`zolazun vobuvul. zuzozen vobuvur.`
+`zalazun vowuvul. zazozon vowuvur.`
 
-z-Olazun | v-pour . z-Uzozen | v-←pour
+z-Alazun | v-pour . z-Azozon | v-←pour
 :::
 
 **2.** *A tomato is red. So is a watermelon.*
 
 ::: details Show answer
-`zudedol gerulel. zowodol geruler.`
+`zodedel gerulol. zowodel gerulor.`
 
 z-tomato | g-red . z-watermelon | g-←red
 :::
 
-**3.** *Uzozen and Olazun see each other.*
+**3.** *Azozon and Alazun see each other.*
 
 ::: details Show answer
-`zuzozen zolazun zal vawebol hehem.`
+`zazozon zalazun zal vayebel hehom.`
 
-[z-Uzozen | z-Olazun | z-and] | v-see | h-reciprocity
+[z-Azozon | z-Alazun | z-and] | v-see | h-reciprocity
 :::
 
-**4.** *Ahelan (A) pours. Olazun (E) harvests. A sees E.*
+**4.** *Ahelan (A) pours. Alazun (E) harvests. A sees E.*
 
 ::: details Show answer
-`zahelan zwal vobuvul. zolazun zwel vugelam. zwar dwer vawebol.`
+`zahelan zwal vowuvul. zalazun zwel vogelam. zwar dwer vayebel.`
 
-[z-Ahelan | z-tag.A] | v-pour . [z-Olazun | z-tag.E] | v-harvest . z-←tag.A | d-←tag.E | v-see
+[z-Ahelan | z-tag.A] | v-pour . [z-Alazun | z-tag.E] | v-harvest . z-←tag.A | d-←tag.E | v-see
 :::
 
-**5.** *Uzozen (A) and Olazun (E) harvest. A and E scream.*
+**5.** *Azozon (A) and Alazun (E) harvest. A and E scream.*
 
 ::: details Show answer
-`zuzozen zwal zolazun zwel zam vugelam. zwaer varemul.`
+`zazozon zwal zalazun zwel zam vogelam. zwaer veyamul.`
 
-[[z-Uzozen | z-tag.A] | [z-Olazun | z-tag.E] | z-and.open] | v-harvest . z-←tag.A+E | v-scream
+[[z-Azozon | z-tag.A] | [z-Alazun | z-tag.E] | z-and.open] | v-harvest . z-←tag.A+E | v-scream
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zolazun hewom bluzozen vobuvul. zahelan hewor vugelam.`
+**1.** `zalazun hewem blazozon vowuvul. zahelan hewer vogelam.`
 
 ::: details Show answer
-z-Olazun | [h-like | bl-Uzozen] | v-pour . z-Ahelan | h-←like | v-harvest
+z-Alazun | [h-like | bl-Azozon] | v-pour . z-Ahelan | h-←like | v-harvest
 
-*Olazun pours like Uzozen. Ahelan harvests that way.*
+*Alazun pours like Azozon. Ahelan harvests that way.*
 :::
 
-**2.** `zuzozen vugelam. zolazun vuzozer.`
+**2.** `zazozon vogelam. zalazun vazozor.`
 
 ::: details Show answer
-z-Uzozen | v-harvest . z-Olazun | v-←Uzozen
+z-Azozon | v-harvest . z-Alazun | v-←Azozon
 
-*Uzozen harvests. Olazun does the same with Uzozen.*
+*Azozon harvests. Alazun does the same with Azozon.*
 :::
 
-**3.** `zawanx vugelam.`
+**3.** `zawanx vogelam.`
 
 ::: details Show answer
 z-listener-x | v-harvest
@@ -284,30 +284,30 @@ z-listener-x | v-harvest
 *You all harvest.*
 :::
 
-**4.** `zuzozen varemul. zolazun varemur.`
+**4.** `zazozon veyamul. zalazun veyamur.`
 
 ::: details Show answer
-z-Uzozen | v-scream . z-Olazun | v-←scream
+z-Azozon | v-scream . z-Alazun | v-←scream
 
-*Uzozen screams. Olazun does too.*
+*Azozon screams. Alazun does too.*
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzozen (A) pours. Olazun (E) harvests. E screams.* `zuzozen zwal vobuvul. zolazun zwel vugelam. zwer varemul.` or `zuzozen zwal vobuvul. zolazun zwel vugelam. zwar varemul.`
+**1.** *Azozon (A) pours. Alazun (E) harvests. E screams.* `zazozon zwal vowuvul. zalazun zwel vogelam. zwer veyamul.` or `zazozon zwal vowuvul. zalazun zwel vogelam. zwar veyamul.`
 
 ::: details Show answer
-`zuzozen zwal vobuvul. zolazun zwel vugelam. zwer varemul.`
+`zazozon zwal vowuvul. zalazun zwel vogelam. zwer veyamul.`
 
-[z-Uzozen | z-tag.A] | v-pour . [z-Olazun | z-tag.E] | v-harvest . z-←tag.E | v-scream
+[z-Azozon | z-tag.A] | v-pour . [z-Alazun | z-tag.E] | v-harvest . z-←tag.E | v-scream
 
-The tag vowel picks the referent: **`e`** is Olazun, whoever acted last.
+The tag vowel picks the referent: **`e`** is Alazun, whoever acted last.
 :::
 
-**2.** *You all scream.* `zawanx varemul.` or `zawan varemul.`
+**2.** *You all scream.* `zawanx veyamul.` or `zawan veyamul.`
 
 ::: details Show answer
-`zawanx varemul.`
+`zawanx veyamul.`
 
 z-listener-x | v-scream
 
@@ -316,12 +316,12 @@ z-listener-x | v-scream
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Uzozen (A) pours. Olazun harvests. A screams.* <!-- lint: error -->`zuzozen zwal vobuvul. zolazun vugelam. zwuzer varemul.`
+**1.** *Azozon (A) pours. Alazun harvests. A screams.* <!-- lint: error -->`zazozon zwal vowuvul. zalazun vogelam. zwuzer veyamul.`
 
 ::: details Show answer
-`zuzozen zwal vobuvul. zolazun vugelam. zwar varemul.`
+`zazozon zwal vowuvul. zalazun vogelam. zwar veyamul.`
 
-[z-Uzozen | z-tag.A] | v-pour . z-Olazun | v-harvest . z-←tag.A | v-scream
+[z-Azozon | z-tag.A] | v-pour . z-Alazun | v-harvest . z-←tag.A | v-scream
 
-A tag stays on A; **`zwuzer`** is the latest doer, Olazun.
+A tag stays on A; **`zwuzer`** is the latest doer, Alazun.
 :::

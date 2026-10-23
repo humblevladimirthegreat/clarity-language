@@ -8,7 +8,7 @@
 
 | Drop-in | Meaning |
 |---------|---------|
-| `thogol` / `thogom` / `thogor` | decided for good / decided, can still change / decided for now |
+| `thogel` / `thogem` / `thoger` | decided for good / decided, can still change / decided for now |
 | `howal` / `howam` / `howar` | committed to trying / tries / a trial run |
 
 The endings are back on the settled-to-passing scale: **-l** for good, **-m** the default, **-r** right now only.
@@ -18,10 +18,10 @@ A trial run (`howar`) plans for failure: if it doesn't work, finding that out wa
 ## Examples {#examples}
 
 > I'm going vegetarian `howar`.  
-> We're moving to Denver `thogol`.  
-> I'm taking the job `thogom`.  
+> We're moving to Denver `thogel`.  
+> I'm taking the job `thogem`.  
 > I'm learning piano `howal`.  
-> We're skipping the party `thogor`.
+> We're skipping the party `thoger`.
 
 *I'm learning piano `howal`* says you'll keep at it until it works or is ruled out.
 
@@ -38,13 +38,13 @@ I'm quitting coffee `howar`.
 **2.** *We're selling the house.* (decided for good)
 
 ::: details Show answer
-We're selling the house `thogol`.
+We're selling the house `thogel`.
 :::
 
 **3.** *I'm staying home tonight.* (decided for now)
 
 ::: details Show answer
-I'm staying home tonight `thogor`.
+I'm staying home tonight `thoger`.
 :::
 
 <!-- Source (editors): ability.md#decision, ability.md#try. -->

@@ -20,16 +20,16 @@ Only the root spells digits, so first take off the letters around it:
 2. Drop the ending (**-l**, **-m**, **-n**, **-r**) and anything after it, such as plural **-x**.
 3. In the root that is left, skip the vowels and the letters `w` and `y`. Read the other consonants as digits, left to right.
 
-`zudozol` *dog* is 25: drop `z` and **-l**, and the root's consonants are `d` and `z`. The role letter and the ending change what the word does in the sentence, not the thing you picture, so `dudozom` is the same dog and still 25.
+`zodozel` *dog* is 25: drop `z` and **-l**, and the root's consonants are `d` and `z`. The role letter and the ending change what the word does in the sentence, not the thing you picture, so `dodozem` is the same dog and still 25.
 
-`w` and `y` fill out a syllable without spelling a digit, so a five-letter root with one of them spells a single digit: `erowol` *radio* is 7, and `anewul` *knife* is 9. A root whose only consonants are `w` and `y`, like `oyayul` *ogre*, spells no number.
+`w` and `y` fill out a syllable without spelling a digit, so a five-letter root with one of them spells a single digit: `arowel` *radio* is 7, and `anewul` *knife* is 9. A root whose only consonants are `w` and `y`, like `ogayul` *ogre*, spells no number.
 
-Vowels never count, so roots that differ only in their vowels spell the same number: `agedal` *cutlery*, `agedol` *croissant* and `ogodal` *coconut* are all 32. When a number has several roots, pick the picture you find most vivid.
+Vowels never count, so roots that differ only in their vowels spell the same number: `agedal` *cutlery*, `agedel` *croissant* and `ogodal` *coconut* are all 32. When a number has several roots, pick the picture you find most vivid.
 
 Longer words spell longer numbers:
 
-- A [dictionary word](/compounds#lexical-compounds) made of two roots counts its joining letter like any other consonant: `oholeboral` *doorbell* is 4817.
-- A word glued with a mid-word `x` reads each root in turn, and the `x` spells nothing: `zubedaxuyudal` *peanut butter* is 12, then 2.
+- A [dictionary word](/compounds#lexical-compounds) made of two roots counts its joining letter like any other consonant: `oheleboral` *doorbell* is 4817.
+- A word glued with a mid-word `x` reads each root in turn, and the `x` spells nothing: `zuwedaxubudal` *peanut butter* is 12, then 2.
 
 Number words (`gragel` *three*), pronouns and other grammar words are not pegs. Read them for what they say.
 
@@ -37,10 +37,10 @@ Number words (`gragel` *three*), pronouns and other grammar words are not pegs. 
 
 | Root | Digits | Peg for |
 |------|--------|---------|
-| three letters (`ohol` *door*) | one | 0 to 9 |
-| five letters with `w` or `y` (`erowol` *radio*) | one | 0 to 9 |
-| five letters, two digit consonants (`abedol` *pear*) | two | 00 to 99 |
-| dictionary word (`oholeboral` *doorbell*) | three or more | a longer piece |
+| three letters (`ohel` *door*) | one | 0 to 9 |
+| five letters with `w` or `y` (`arowel` *radio*) | one | 0 to 9 |
+| five letters, two digit consonants (`ubedel` *pear*) | two | 00 to 99 |
+| dictionary word (`oheleboral` *doorbell*) | three or more | a longer piece |
 
 The dictionary has at least one root for every digit and for every pair from 00 to 99. On a five-letter root the last consonant also says what kind of thing the root names ([root tails](/root-tails#root-tails)), so the second digit of a pair tells you what sort of picture to look for: 2 is a food or drink, 5 an animal, 9 something with a title, such as a newspaper or a sport.
 
@@ -50,7 +50,7 @@ The dictionary has at least one root for every digit and for every pair from 00 
 2. For each piece, pick a root that spells exactly those digits.
 3. Picture the thing each root names (its emoji in the [lexicon](./lexicon.md) is a good start). Place the pictures one by one along a route you know well, such as the rooms of your home.
 
-2371 is 23, then 71: `udugul` *triangle*, then `orebol` *ring*. Picture a triangle threaded through a ring.
+2371 is 23, then 71: `odugul` *triangle*, then `orebel` *ring*. Picture a triangle threaded through a ring.
 
 Each place on the route holds one piece, so you know how many digits it gives back. If a place that held a pair gives you three digits, you counted the ending or a `w` or `y`. If it gives you one, you skipped a consonant of the root.
 
@@ -60,7 +60,7 @@ For a number with a decimal point, use two places: one for the whole part, one f
 
 To hold six digits in one picture, make a sentence with a subject, an object and a verb, each a two-digit root. Read the digits in the sentence's usual order: subject, object, verb.
 
-> `zudozol dabedol vanuvul.`
+> `zodozel dubedel vabuvul.`
 > z-dog | d-pear | v-punch
 >
 > "The dog punches a pear."

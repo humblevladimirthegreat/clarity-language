@@ -8,13 +8,13 @@ band: beginner
 
 When English uses a number as a **code** (a phone, room, channel, or serial number) rather than an amount, write it with the digit-string marker **`re`** (written **`_`**). A code has no exponent and no percent. The code can then fill whatever role the clause needs (`/d/`, `/b/`, `/ɡ/`).
 
-> `zuzozen d_555,123,4567 vawebol.`
+> `zazozon d_555,123,4567 vayebel.`
 >
-> 🔊 `zuzozen drezazazathebadogethehuzavorel vawebol.`
+> 🔊 `zazozon drezazazathebadogethehuzavorel vayebel.`
 >
-> z-Uzozen | d-_555,123,4567 | v-see
+> z-Azozon | d-_555,123,4567 | v-see
 >
-> "Uzozen sees 555-123-4567."
+> "Azozon sees 555-123-4567."
 
 Ending is usually **-l** (exact label); **-n** for an official designation; **-r** with digits repeats a code already mentioned. A label keeps its digits exactly as written.
 
@@ -36,25 +36,25 @@ A comma in a code marks a **field**: a part that is a value of its own, such as 
 
 English makes a label plural to name the whole run of labels that start with it: *the ’90s* are the years 90 through 99, and *the 1800s* are 1800 through 1899. Put plural **-x** on the label: `z_90x`. The final zeros stand for any digit, so `_90x` covers 90 to 99. Only a label with digits takes **-x**; a count does not.
 
-> `zuzozen vowurel herem bl_90x.`
+> `zazozon vowurol herom bl_90x.`
 >
-> 🔊 `zuzozen vowurel herem blrenamolx.`
+> 🔊 `zazozon vowurol herom blrenamolx.`
 >
-> z-Uzozen | v-walk | [h-while | bl-_90-x]
+> z-Azozon | v-walk | [h-while | bl-_90-x]
 >
-> "Uzozen walked in the ’90s."
+> "Azozon walked in the ’90s."
 
 ### Time {#time}
 
 To say when something happens by the clock or the calendar (*at 15:30*, *on 22 July*), write a digit string under `/h/` with no relation word before it. Clock takes marker **`re`** (spoken **`hre`**, written `h_…`). Date takes calendar-ordinal **`oe`** (spoken **`hroe`**, written `h_#…`). Fields are read by position, so the word already says which number is the hour or the month.
 
-> `h_15,30 zuzozen vowurel.`
+> `h_15,30 zazozon vowurol.`
 >
-> 🔊 `hrebazathegemol zuzozen vowurel.`
+> 🔊 `hrebazathegemol zazozon vowurol.`
 >
-> h-_15,30 | z-Uzozen | v-walk
+> h-_15,30 | z-Azozon | v-walk
 >
-> "At 15:30 Uzozen walks."
+> "At 15:30 Azozon walks."
 
 Clock and date together:
 
@@ -62,31 +62,31 @@ Clock and date together:
 |-----|-----|
 | **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left to right; commas are writing only: hour, minute, optional seconds (`h_15,30`, `h_15,30,00`). |
 | **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). A date may stop after the day (`h_#12`, *on the 12th*); context gives the month. You may also name the relation with a *date* word plus `/b/`, but you do not need to. |
-| **Day of the week** | Ordinal on **`olere`** *weekday*, counting from Monday: `zolerem grobal` is *Monday*, `zolerem grorel` is *Sunday* (the seventh). |
-| **Month or year alone** | A month is an ordinal on **`umale`** *month*, counting from January, the same way as weekdays: *March* is the third month (`zumalem grogel`). A year is a label on **`avuva`** *year* (`zavuvam g_1962`). To place an event in one, put that noun in `/b/` after **`herem`** *during*. |
+| **Day of the week** | Ordinal on **`olero`** *weekday*, counting from Monday: `zolerom grobal` is *Monday*, `zolerom grorel` is *Sunday* (the seventh). |
+| **Month or year alone** | A month is an ordinal on **`amalo`** *month*, counting from January, the same way as weekdays: *March* is the third month (`zamalom grogel`). A year is a label on **`ovuva`** *year* (`zovuvam g_1962`). To place an event in one, put that noun in `/b/` after **`herom`** *during*. |
 | **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, or a signed offset (*three hours ago* / *in three hours*). There is no past or future ending. An amount of time (*for 3 days*) is a relation word plus a measure phrase. |
 
 Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** with digits repeats a clock time or date already mentioned. Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 
 For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`oel`** *toward* ([extra nouns](extra-noun-hooks.md#extra-noun-intermediate)). Right after an `ul` extra noun, `oel` and its `/b/` close the pair: `ul X oel Y` is one unit, *from X to Y*. It works for any two endpoints, not only times.
 
-> `zuzozen ul b_9 oel b_17 vowurel.`
+> `zazozon ul b_9 oel b_17 vowurol.`
 >
-> 🔊 `zuzozen ul brenal oel brebarel vowurel.`
+> 🔊 `zazozon ul brenal oel brebarel vowurol.`
 >
-> z-Uzozen | [from | b-_9 | toward | b-_17] | v-walk
+> z-Azozon | [from | b-_9 | toward | b-_17] | v-walk
 >
-> "Uzozen walks from 9:00 to 17:00."
+> "Azozon walks from 9:00 to 17:00."
 
 With one verb, the two halves may also sit on either side of it, as two extra nouns:
 
-> `zuzozen ul b_9 vowurel oel b_17.`
+> `zazozon ul b_9 vowurol oel b_17.`
 >
-> 🔊 `zuzozen ul brenal vowurel oel brebarel.`
+> 🔊 `zazozon ul brenal vowurol oel brebarel.`
 >
-> z-Uzozen | [from | b-_9] | v-walk | [toward | b-_17]
+> z-Azozon | [from | b-_9] | v-walk | [toward | b-_17]
 >
-> "Uzozen walks from 9:00 to 17:00."
+> "Azozon walks from 9:00 to 17:00."
 
 For a decade (*the ’90s*), use a [plural label](#plural-labels).
 
@@ -104,108 +104,108 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *pill* | `obebul` | 💊 |
+| *pill* | `ebebul` | 💊 |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
-| *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *walk* | `vowurel` |
-| *see* | `vawebol` |
-| *scream* | `varemul` |
+| *walk* | `vowurol` |
+| *see* | `vayebel` |
+| *scream* | `veyamul` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *Uzozen sees pill 12.*
+**1.** *Azozon sees pill 12.*
 
 ::: details Show answer
-`zuzozen dobebul g_12 vawebol.`
+`zazozon debebul g_12 vayebel.`
 
-🔊 `zuzozen dobebul grebadol vawebol.`
+🔊 `zazozon debebul grebadol vayebel.`
 
-z-Uzozen | [d-pill | g-_12] | v-see
+z-Azozon | [d-pill | g-_12] | v-see
 :::
 
-**2.** *From 9:00 to 17:00 Uzozen sees Ahelan.*
+**2.** *From 9:00 to 17:00 Azozon sees Ahelan.*
 
 ::: details Show answer
-`zuzozen ul b_9 oel b_17 dahelan vawebol.`
+`zazozon ul b_9 oel b_17 dahelan vayebel.`
 
-🔊 `zuzozen ul brenal oel brebarel dahelan vawebol.`
+🔊 `zazozon ul brenal oel brebarel dahelan vayebel.`
 
-z-Uzozen | [from | b-_9 | toward | b-_17] | d-Ahelan | v-see
+z-Azozon | [from | b-_9 | toward | b-_17] | d-Ahelan | v-see
 :::
 
-**3.** *At 15:30 Uzozen walks.*
+**3.** *At 15:30 Azozon walks.*
 
 ::: details Show answer
-`h_15,30 zuzozen vowurel.`
+`h_15,30 zazozon vowurol.`
 
-🔊 `hrebazathegemol zuzozen vowurel.`
+🔊 `hrebazathegemol zazozon vowurol.`
 
-h-_15,30 | z-Uzozen | v-walk
+h-_15,30 | z-Azozon | v-walk
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `h_9 zuzozen varemul.`
+**1.** `h_9 zazozon veyamul.`
 
 ::: details Show answer
 
-🔊 `hrenal zuzozen varemul.`
+🔊 `hrenal zazozon veyamul.`
 
-h-_9 | z-Uzozen | v-scream
+h-_9 | z-Azozon | v-scream
 
-*At 9:00 Uzozen screams.*
+*At 9:00 Azozon screams.*
 :::
 
-**2.** `h_#1,4 zolazun vowurel.`
+**2.** `h_#1,4 zalazun vowurol.`
 
 ::: details Show answer
 
-🔊 `hroebathehul zolazun vowurel.`
+🔊 `hroebathehul zalazun vowurol.`
 
-h-_1,4 | z-Olazun | v-walk
+h-_1,4 | z-Alazun | v-walk
 
-*On 1 April, Olazun walks.*
+*On 1 April, Alazun walks.*
 :::
 
-**3.** `zuzozen ul b_9 vowurel oel b_17.`
+**3.** `zazozon ul b_9 vowurol oel b_17.`
 
 ::: details Show answer
 
-🔊 `zuzozen ul brenal vowurel oel brebarel.`
+🔊 `zazozon ul brenal vowurol oel brebarel.`
 
-z-Uzozen | [from | b-_9] | v-walk | [toward | b-_17]
+z-Azozon | [from | b-_9] | v-walk | [toward | b-_17]
 
-*Uzozen walks from 9:00 to 17:00.*
+*Azozon walks from 9:00 to 17:00.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Olazun sees pill 3.* `zolazun dobebul gregel vawebol.` or `zolazun dobebul gragel vawebol.`
+**1.** *Alazun sees pill 3.* `zalazun debebul gregel vayebel.` or `zalazun debebul gragel vayebel.`
 
 ::: details Show answer
-`zolazun dobebul gregel vawebol.`
+`zalazun debebul gregel vayebel.`
 
-z-Olazun | [d-pill | g-_3.spelled] | v-see
+z-Alazun | [d-pill | g-_3.spelled] | v-see
 
 A label is a digit string, marker **`re`**; **`ra`** counts three pills.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *At 15:30 Olazun walks.* <!-- lint: error -->`hragel zolazun vowurel.`
+**1.** *At 15:30 Alazun walks.* <!-- lint: error -->`hragel zalazun vowurol.`
 
 ::: details Show answer
-`h_15,30 zolazun vowurel.`
+`h_15,30 zalazun vowurol.`
 
-🔊 `hrebazathegemol zolazun vowurel.`
+🔊 `hrebazathegemol zalazun vowurol.`
 
-h-_15,30 | z-Olazun | v-walk
+h-_15,30 | z-Alazun | v-walk
 
 A clock time is a digit string under `/h/`; **`hragel`** is *three times*.
 :::
