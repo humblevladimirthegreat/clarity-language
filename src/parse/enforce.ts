@@ -104,7 +104,7 @@ export class ConstructionError extends SentenceParseError {
 
 const NO_PLURAL_POS = new Set(["w", "h", "th", "x"]);
 const SAKE_POS = new Set(["g", "th", "w"]);
-/** Label scope goes on content slots (predication.md#label-scope). */
+/** Label scope goes on content slots (label-scope.md#label-scope). */
 const SCOPE_POS = new Set(["g", "z", "d", "b", "v", "h"]);
 /** Slot-rule parts: the participant that sat in that slot (roles.md#role-compounds). */
 const SLOT_PARTS = new Set(["z", "d", "b"]);
@@ -112,7 +112,7 @@ const SLOT_PARTS = new Set(["z", "d", "b"]);
 const ROLE_COMPOUND_POS = new Set(["z", "d", "b", "g", "h", "x", "y"]);
 /** A hook prefix names a property, a participant, or how the clause stands to the stem (hooks.md#hook-prefixes). */
 const HOOK_PREFIX_POS = new Set(["z", "d", "b", "g", "h"]);
-/** Ability goes on a verb or a property (intention.md#ability). */
+/** Ability goes on a verb or a property (ability.md#ability). */
 const ABILITY_POS = new Set(["g", "v"]);
 /** A hooked join bounds a set of participants, or the times a restrictor covers (hooks.md#hooked-joins). */
 const HOOKED_JOIN_POS = new Set(["z", "d", "b", "h"]);
@@ -305,7 +305,7 @@ function enforceSpanSlot(word: LexWord): void {
   if (family.bracket === "(" ? !ASIDE_POS.has(word.pos) : word.pos === "th") throw new ConstructionError("spanSlot", word.raw);
 }
 
-/** **-ln** and span `^@` name one thing a name applies to: a noun slot or a citation only (word-endings.md#name-instance--ln). */
+/** **-ln** and span `^@` name one thing a name applies to: a noun slot or a citation only (proper-names.md#name-instance--ln). */
 function enforceNameInstance(word: LexWord): void {
   if (word.ending !== "ln") return;
   if (word.gl || (word.pos && !["z", "d", "b"].includes(word.pos))) throw new ConstructionError("nameInstanceSlot", word.raw);
@@ -721,7 +721,7 @@ function isSpeakerParticipant(unit: Unit): boolean {
 
 /**
  * WANT, PLAN and DECISION host no person: with no holder they are the speaker's own, and someone else's goes through a
- * holder seam, so a `/b/` cannot slip in another person's wish, plan or choice with no grounds (intention.md#whose-intention).
+ * holder seam, so a `/b/` cannot slip in another person's wish, plan or choice with no grounds (ability.md#whose-intention).
  * WANT and PLAN take a time offset; DECISION carries no time, so it takes no `/b/` at all.
  */
 function enforceIntentionHost(unit: HUnit): void {
@@ -733,7 +733,7 @@ function enforceIntentionHost(unit: HUnit): void {
   throw new ConstructionError("intentionHost", `${unit.word.raw} ${bound.raw}`);
 }
 
-/** `uem` + a stance: the stance must say something the event can go against, and holds no stand-in (sakes.md#contrary-to-stance). */
+/** `uem` + a stance: the stance must say something the event can go against, and holds no stand-in (prescription.md#contrary-to-stance). */
 function enforceFrame(hook: LexWord, frame: HUnit, tables: ClassifyTables): void {
   if (!isFrameStance(frame.word, tables)) throw new ConstructionError("frameKind", `${hook.raw} ${frame.word.raw}`);
   enforceChannelSign(frame.word, frame.hosted);
@@ -912,7 +912,7 @@ function enforceVerbPredicate(units: Unit[]): void {
 }
 
 /**
- * Tag pronouns (pronouns.md#tag-pronouns): `/z/` `/d/` `/b/` only (`/y/` `/x/` closed by D-24, the rest open),
+ * Tag pronouns (tag-pronouns.md#tag-pronouns): `/z/` `/d/` `/b/` only (`/y/` `/x/` closed by D-24, the rest open),
  * gl- never; **-l** / **-r** / **-m** / **-n**; **-x** only on **-r** / **-n** (*A and associates*); a pair (`zwaer`) recalls or shares only.
  */
 function enforceTag(word: LexWord): void {
@@ -924,7 +924,7 @@ function enforceTag(word: LexWord): void {
 
 /**
  * **-x** on a join: after **-r** on a noun slot, an unspecified group (`zarx`, joins.md#unspecified-member-r-phrase);
- * on a `/v/` join, one shared act, as on any verb (`zayan varx`, plurality.md#verbs-v).
+ * on a `/v/` join, one shared act, as on any verb (`zayan varx`, collectives.md#verbs-v).
  */
 function enforceJoinPlural(word: LexWord): void {
   if (!word.plural || word.family.kind !== "joinMarker") return;
@@ -934,7 +934,7 @@ function enforceJoinPlural(word: LexWord): void {
 }
 
 /**
- * A tag names a phrase that is not already a pronoun with one fixed form (pronouns.md#tag-pronouns): never a special,
+ * A tag names a phrase that is not already a pronoun with one fixed form (tag-pronouns.md#tag-pronouns): never a special,
  * generic, or topic pronoun, or another tag. A resume or role pointer may take one.
  */
 function enforceTagHost(node: AstNode): void {
@@ -993,7 +993,7 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
 
 /**
  * `/w/` grades a reaction, never a call; a number cheer or a `/y/` span takes no describing words at all
- * (speech-moves.md#describe-turn-word).
+ * (speech-acts.md#describe-turn-word).
  */
 function enforceTurnWordMods(left: LeftEdge): void {
   left.vocativeAdjs?.forEach((mods, i) => {
@@ -1013,7 +1013,7 @@ function enforceGlLeans(result: ParseResult): void {
   const leaning = new Set<LexWord>();
   // The mention marker before a topic span leans on that span (spans.md#mention).
   for (const { bodies } of result.utterances) for (const { topicMarker } of bodies) if (topicMarker) leaning.add(topicMarker);
-  // A `gl-` adjective before a call or reaction leans on it (speech-moves.md#describe-turn-word).
+  // A `gl-` adjective before a call or reaction leans on it (speech-acts.md#describe-turn-word).
   for (const { left } of result.utterances) {
     for (const mods of [...(left.vocativeAdjs ?? []), ...(left.interjectionMods ?? [])]) if (mods.glAdj) leaning.add(mods.glAdj.word);
   }
@@ -1165,7 +1165,7 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
   if (at > 0 && isAny(tokens[at]!, [HostedB, HostedOdo])) {
     throw new ConstructionError("slotlessHost", `${tokens[at - 1]!.image} ${tokens[at]!.image}`);
   }
-  // An asking tag (`yol yael.`) is a turn of its own: nothing follows its polar word (questions.md#tags).
+  // An asking tag (`yol yael.`) is a turn of its own: nothing follows its polar word (polar-inventory.md#tags).
   let polar = at - 1;
   while (polar >= 0 && tokenMatcher(tokens[polar]!, Polar)) polar -= 1;
   if (at > 0 && polar < at - 1 && polar >= 0 && tokenMatcher(tokens[polar]!, Force)) {

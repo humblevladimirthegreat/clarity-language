@@ -23,35 +23,35 @@ Shown on one root, `uzoze`.
 | **-m** | [first mention, published abstract](../word-endings.md#abstract-m) | `uzozem` | *grace* | B |
 | **-n** | [a name](../word-endings.md#named-n-beginner) | `uzozen` | *Uzozen* | B |
 | **-r** | [the same one again](../pronouns.md#resume-r) | `zuzozer` | *Uzozen* (again) | B |
-| **-ln** | [one of a name](../word-endings.md#name-instance--ln) | `duzozeln` | *an Uzozen* | I |
-| **-lnx** | [some of a name](../word-endings.md#name-instance--ln) | `duzozelnx` | *some Uzozens* | I |
+| **-ln** | [one of a name](../proper-names.md#name-instance--ln) | `duzozeln` | *an Uzozen* | I |
+| **-lnx** | [some of a name](../proper-names.md#name-instance--ln) | `duzozelnx` | *some Uzozens* | I |
 | **-x** after any of these | [associates, or a group](../plurality.md#associative) | `zuzozenx` | *Uzozen and associates* | B |
 
 A greeting is [your own name and a period](../word-endings.md#greeting): `SELFn.`
 
 ### What **-n** names, by role {#n-by-role}
 
-The role letter says the job ([role map](../word-endings.md#proper-name--n)); **-n** says the thing bears that name, not the kind the root describes.
+The role letter says the job ([role map](../proper-names.md#proper-name--n)); **-n** says the thing bears that name, not the kind the root describes.
 
 | Role | **-n** there | Stage |
 |------|--------------|-------|
-| `/z/` `/d/` `/b/` | [a named person, place, work, or brand](../word-endings.md#proper-name--n) | I |
+| `/z/` `/d/` `/b/` | [a named person, place, work, or brand](../proper-names.md#proper-name--n) | I |
 | `/v/` | a named event or rite | I |
 | `/ɡ/` | a named style or brand | I |
 | `/w/` | a named scale or grade | I |
 | `/h/` | a named standard or frame | I |
-| `/y/` | [call this named person](../word-endings.md#proper-name--n) | I |
+| `/y/` | [call this named person](../proper-names.md#proper-name--n) | I |
 
 ### Names of more than one word {#long-names}
 
 | Shape | Example | English | Stage |
 |-------|---------|---------|-------|
-| [Full name](../word-endings.md#multipart-names): given name, then family name on `/ɡ/` + **-n** | `zalen galowen vowurel.` | *Alen Alowen walks.* | I |
-| [Full name](../word-endings.md#multipart-names) as a citation, and its resume | `alen galowen`; `zalen galowen`; `zaler` | *Alen Alowen*; *Alen* (the same person) | I |
-| [Hyphenated name](../word-endings.md#multipart-names): roots joined by mid-word `x` | `zalexalowen vowurel.` | *Alexalowen walks.* | I |
-| [One of a full name](../word-endings.md#name-instance--ln) | `zaleln galowen` | *someone named Alen Alowen* | I |
-| [Titled phrase](../word-endings.md#titled-phrases): **-n** on the hook, join, or span that packages it | `dududal on dugudal` | *Coffee-Instead-of-Tea* (a cafe) | I |
-| [Country and tradition](../word-endings.md#countries-traditions) on `azabana` | `azabanan` / `gazabanam` / `dazabanal` | *Japan* / *Japanese* / *a Japanese flag* | I |
+| [Full name](../proper-names.md#multipart-names): given name, then family name on `/ɡ/` + **-n** | `zalen galowen vowurel.` | *Alen Alowen walks.* | I |
+| [Full name](../proper-names.md#multipart-names) as a citation, and its resume | `alen galowen`; `zalen galowen`; `zaler` | *Alen Alowen*; *Alen* (the same person) | I |
+| [Hyphenated name](../proper-names.md#multipart-names): roots joined by mid-word `x` | `zalexalowen vowurel.` | *Alexalowen walks.* | I |
+| [One of a full name](../proper-names.md#name-instance--ln) | `zaleln galowen` | *someone named Alen Alowen* | I |
+| [Titled phrase](../proper-names.md#titled-phrases): **-n** on the hook, join, or span that packages it | `dududal on dugudal` | *Coffee-Instead-of-Tea* (a cafe) | I |
+| [Country and tradition](../proper-names.md#countries-traditions) on `azabana` | `azabanan` / `gazabanam` / `dazabanal` | *Japan* / *Japanese* / *a Japanese flag* | I |
 
 ## The clause {#clause}
 
@@ -137,9 +137,9 @@ Agebon has no word for *is*. The kind of claim comes from the pattern.
 | | a new noun + `/ɡ/` | `zudozol gelazom.` | *There is a big dog.* | B |
 | [Same person](../predication.md#identity) | `gorol` + `/b/`, side by side | `zolazun gorol bluzozen.` | *Olazun is Uzozen.* (one person, two names) | B |
 | [Same one again](../predication.md#identity) | `gorol`, no `/b/` | `zolazun danal gorol varayel.` | *Olazun is writing the same book.* (the book already mentioned) | B |
-| [Basically the same](../predication.md#same-endings) | **-m** | `zolazun gorom bluzozen` | *Olazun is basically Uzozen.* | I |
-| [Not the same](../predication.md#same-endings) | `gul` after the pair | `zolazun gorol bluzozen gul` | *Olazun is not Uzozen.* | I |
-| [The one who is Uzozen](../predication.md#same-endings) | inside a noun phrase | `zeyol gorol bluzozen` | *the person who is Uzozen* | I |
+| [Basically the same](../label-scope.md#same-endings) | **-m** | `zolazun gorom bluzozen` | *Olazun is basically Uzozen.* | I |
+| [Not the same](../label-scope.md#same-endings) | `gul` after the pair | `zolazun gorol bluzozen gul` | *Olazun is not Uzozen.* | I |
+| [The one who is Uzozen](../label-scope.md#same-endings) | inside a noun phrase | `zeyol gorol bluzozen` | *the person who is Uzozen* | I |
 
 With a name or a resumed noun, the pair is a [property](../predication.md#existence), not a new thing: `zudozor gelazom.` is *The dog is big.*
 
@@ -147,24 +147,24 @@ With a name or a resumed noun, the pair is a [property](../predication.md#existe
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Not](../predication.md#classification-packaging) | `zuzozen gudozol gul.` | *Uzozen is not a dog.* | I |
-| [Always](../predication.md#classification-packaging) | `zuzozen gudozol hual` | *Uzozen is always a dog.* | I |
-| [Sort of](../predication.md#classification-packaging) | `zuzozen woyurem gudozol.` | *Uzozen is something of a dog.* | I |
-| [Be ADJ!](../predication.md#command-property) | `yel gayulem.` | *Be careful!* | I |
-| [Don't be ADJ](../predication.md#command-property) | `yul` + `/ɡ/` | | I |
+| [Not](../label-scope.md#classification-packaging) | `zuzozen gudozol gul.` | *Uzozen is not a dog.* | I |
+| [Always](../label-scope.md#classification-packaging) | `zuzozen gudozol hual` | *Uzozen is always a dog.* | I |
+| [Sort of](../label-scope.md#classification-packaging) | `zuzozen woyurem gudozol.` | *Uzozen is something of a dog.* | I |
+| [Be ADJ!](../label-scope.md#command-property) | `yel gayulem.` | *Be careful!* | I |
+| [Don't be ADJ](../label-scope.md#command-property) | `yul` + `/ɡ/` | | I |
 
 ### How far a label reaches {#label-scope}
 
-Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`. A [role word](../predication.md#scope-role) writes the same vowels right after its **`w`**.
+Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`. A [role word](../label-scope.md#scope-role) writes the same vowels right after its **`w`**.
 
 | Vowel | Reach | Example | English | Stage |
 |-------|-------|---------|---------|-------|
-| [`tha`](../predication.md#scope-occasion) | this episode | `zuzozen valamuthal.` | *Uzozen lied this once.* | I |
-| [`the`](../predication.md#scope-occupation) | a practiced role | `zuzozen valamuthel.` | *Uzozen lies as their craft.* | I |
-| [`tho`](../predication.md#scope-relative) | this pair (`/b/` follows) | `zuzozen golayothom blolazun.` | *Uzozen is a stranger to Olazun.* | I |
-| [`thu`](../predication.md#scope-type) | a type across scenes | `zolazun ganumuthul.` | *Olazun is an anxious type.* | I |
+| [`tha`](../label-scope.md#scope-occasion) | this episode | `zuzozen valamuthal.` | *Uzozen lied this once.* | I |
+| [`the`](../label-scope.md#scope-occupation) | a practiced role | `zuzozen valamuthel.` | *Uzozen lies as their craft.* | I |
+| [`tho`](../label-scope.md#scope-relative) | this pair (`/b/` follows) | `zuzozen golayothom blolazun.` | *Uzozen is a stranger to Olazun.* | I |
+| [`thu`](../label-scope.md#scope-type) | a type across scenes | `zolazun ganumuthul.` | *Olazun is an anxious type.* | I |
 
-[Stacked scope](../predication.md#scope-stacks): pairs that start with **u** read like *everything but* (every scene, the second vowel set aside); the others read like hooks (*over*, *using*, *toward*).
+[Stacked scope](../label-scope.md#scope-stacks): pairs that start with **u** read like *everything but* (every scene, the second vowel set aside); the others read like hooks (*over*, *using*, *toward*).
 
 | Vowel | Reach | English | Stage |
 |-------|-------|---------|-------|
@@ -184,4 +184,4 @@ Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 | `zudozol gelazom.` *There is a big dog* ([new noun](../predication.md#existence)) | | `zudozor gelazom.` *The dog is big* ([resumed noun](../predication.md#existence)) |
 | `zuzozen vowurel.` *Uzozen walks* ([the verb](../clause.md#who-acts-and-the-action)) | | `zuzozen gowurel.` *Uzozen is walking* ([under way](../predication.md#in-progress)) |
 | `duzozen vawebol.` *Uzozen was seen* ([no subject named](../clause.md#no-subject)) | | `zumon` *someone did it* ([an unnamed someone](../pronouns.md#special-pronouns)) |
-| `duzozel` *a swan* ([-l](../word-endings.md#proper-name--n)) | | `duzozeln` *an Uzozen* ([-ln: one of the name](../word-endings.md#name-instance--ln)) |
+| `duzozel` *a swan* ([-l](../proper-names.md#proper-name--n)) | | `duzozeln` *an Uzozen* ([-ln: one of the name](../proper-names.md#name-instance--ln)) |

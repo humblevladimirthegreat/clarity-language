@@ -1,6 +1,6 @@
 # Proposal: One sitting per file, grouped by band in the sidebar
 
-**Status:** phase 0 landed (dual-mode lint, peel script, hash map, editor policy). Not design authority; fold into grammar / meta docs, then drop.  
+**Status:** phase 0 and phase 1 landed (B+I peels on the holding list). Not design authority; fold into grammar / meta docs, then drop.  
 **Related:** [learning levels](../../meta/learning-levels.md), [empty stages](../../meta/grammar-docs.md#empty-stages), [page skeleton](../../meta/grammar-docs.md#page-skeleton), [level reviews](../../meta/translation-exercises.md#level-reviews), [AGENTS.md policy](../../meta/agents-md.md), [site redirects](../../meta/site-redirects.md).  
 **Code:** [`reading-order.ts`](../../grammar/.vitepress/lib/reading-order.ts), [`holding-list.ts`](../../grammar/.vitepress/lib/holding-list.ts), [`hash-redirect.ts`](../../grammar/.vitepress/lib/hash-redirect.ts), [`learning-order.ts`](../../../src/lint/learning-order.ts), [`peel-band.ts`](../../../scripts/peel-band.ts), [`lint-forward-links.ts`](../../../scripts/lint-forward-links.ts), [`constructions.ts`](../../../src/parse/constructions.ts).
 
@@ -139,7 +139,7 @@ One session per phase unless the phase says it is several peel sessions.
 
 ### Phase 1 — B+I peels
 
-Eleven parents in the second table. Prefer two clean peels per session, small files first (causation, predication, restrictors). Each commit: script, `lint-forward-links`, `lint-agebon`, cheat-sheet blocks, then `npm run build`. `[skip-cd]`. Update the AGENTS.md Owns line when a job leaves.
+**Landed.** Eleven parents in the second table, sittings on the holding list. How to learn still describes H2s until regroup.
 
 ### Phase 2 — Three-band peels
 

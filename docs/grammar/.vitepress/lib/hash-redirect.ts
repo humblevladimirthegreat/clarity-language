@@ -11,7 +11,30 @@ export type HashRedirect = {
   to: string
 }
 
-export const hashRedirects: HashRedirect[] = []
+export const hashRedirects: HashRedirect[] = [
+  { page: "causation.md", hash: "intermediate", to: "iff-fault.md" },
+  { page: "causation.md", hash: "beginner", to: "causation.md" },
+  { page: "predication.md", hash: "intermediate", to: "label-scope.md" },
+  { page: "predication.md", hash: "beginner", to: "predication.md" },
+  { page: "restrictors.md", hash: "intermediate", to: "more-occasions.md" },
+  { page: "restrictors.md", hash: "beginner", to: "restrictors.md" },
+  { page: "word-endings.md", hash: "intermediate", to: "proper-names.md" },
+  { page: "word-endings.md", hash: "beginner", to: "word-endings.md" },
+  { page: "speech-moves.md", hash: "intermediate", to: "speech-acts.md" },
+  { page: "speech-moves.md", hash: "beginner", to: "speech-moves.md" },
+  { page: "pronouns.md", hash: "intermediate", to: "tag-pronouns.md" },
+  { page: "pronouns.md", hash: "beginner", to: "pronouns.md" },
+  { page: "plurality.md", hash: "intermediate", to: "collectives.md" },
+  { page: "plurality.md", hash: "beginner", to: "plurality.md" },
+  { page: "questions.md", hash: "intermediate", to: "polar-inventory.md" },
+  { page: "questions.md", hash: "beginner", to: "questions.md" },
+  { page: "sakes.md", hash: "intermediate", to: "prescription.md" },
+  { page: "sakes.md", hash: "beginner", to: "sakes.md" },
+  { page: "intention.md", hash: "intermediate", to: "ability.md" },
+  { page: "intention.md", hash: "beginner", to: "intention.md" },
+  { page: "roles.md", hash: "intermediate", to: "viewpoint.md" },
+  { page: "roles.md", hash: "beginner", to: "roles.md" },
+]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */
 export function routePathToPage(path: string): string {

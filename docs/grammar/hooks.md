@@ -426,7 +426,7 @@ At the front of a sentence, **-m** says this sentence is one of several you coul
 | **o** (*instead*) | `ol`: *Instead, …* | `om`: *Instead, for instance, …* |
 | **u** (*except*) | `ul`: *Except, …* | `um`: *Except, among other exceptions, …* |
 
-To make a whole `A HOOK B` phrase into a name (a store, a title, a handle), give the hook **-n** ([titled phrases](word-endings.md#titled-phrases)). Otherwise use **-l** or **-m**. The two sides keep their usual endings (kinds **-l**, abstracts **-m**, a name **-n**).
+To make a whole `A HOOK B` phrase into a name (a store, a title, a handle), give the hook **-n** ([titled phrases](proper-names.md#titled-phrases)). Otherwise use **-l** or **-m**. The two sides keep their usual endings (kinds **-l**, abstracts **-m**, a name **-n**).
 
 > `dududal on dugudal.`
 >
@@ -951,7 +951,7 @@ The stem may be an ordinary compound (`guexahehaxowurel` *against walking in hou
 >
 > "Olazun is against leaving."
 
-[Label scope](predication.md#label-scope) goes after the stem, as on any word, and **-r** resumes the whole word:
+[Label scope](label-scope.md#label-scope) goes after the stem, as on any word, and **-r** resumes the whole word:
 
 > `zolazun guexavuvuthal.`
 >
@@ -1263,5 +1263,5 @@ The hooked join bounds who counts; a free hook after the verb says where the wal
 - *When* this hook counts: [restrictors.md](restrictors.md)
 - Stacked discourse, *here* / *there*, and resume hooks: [discourse-hooks.md](discourse-hooks.md)
 - Prefix-less citation: [word-endings.md](word-endings.md#citation-forms)
-- Titled phrases: [word-endings.md](word-endings.md#titled-phrases)
+- Titled phrases: [word-endings.md](proper-names.md#titled-phrases)
 - Dictionary compounds without **`x`**: [compounds.md](compounds.md#lexical-compounds)

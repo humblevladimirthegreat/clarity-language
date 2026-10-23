@@ -120,7 +120,7 @@ describe("parse — clause.md beginner", () => {
   });
 });
 
-describe("parse — multipart names (word-endings.md#multipart-names)", () => {
+describe("parse — multipart names (proper-names.md#multipart-names)", () => {
   const onlyPackage = (text: string) => {
     const unit = parseText(text).utterances[0]!.bodies[0]!.clause.units;
     assert.equal(unit.length, 1);
@@ -173,7 +173,7 @@ describe("parse — multipart names (word-endings.md#multipart-names)", () => {
   }
 });
 
-describe("parse — describing a call or reaction (speech-moves.md#describe-turn-word)", () => {
+describe("parse — describing a call or reaction (speech-acts.md#describe-turn-word)", () => {
   const left = (text: string) => parseText(text).utterances[0]!.left;
 
   it("puts /ɡ/ after a reaction on the reaction", () => {
@@ -203,7 +203,7 @@ describe("parse — describing a call or reaction (speech-moves.md#describe-turn
 
   it("rejects /w/ on a call and describing words on a number cheer or span", () => {
     for (const text of ["welazom yolazun.", "welazom yrawagel.", "yrawagel gelazom.", "y<Amen> gelazom."]) {
-      assert.throws(() => parseText(text), /speech-moves\.md#describe-turn-word/, text);
+      assert.throws(() => parseText(text), /speech-acts\.md#describe-turn-word/, text);
     }
   });
 });

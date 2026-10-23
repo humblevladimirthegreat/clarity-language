@@ -15,7 +15,7 @@ export class WordParseError extends Error {
 
 /**
  * On a content word or compound, **-rl** / **-rm** is a resume pinned to the root's concrete / abstract
- * sense (pronouns.md#resume-sense). Read it as **-r** plus `resumeSense`, so every resume rule applies unchanged.
+ * sense (tag-pronouns.md#resume-sense). Read it as **-r** plus `resumeSense`, so every resume rule applies unchanged.
  */
 function readResumeSense(word: MorphWord): MorphWord {
   const family = word.family;

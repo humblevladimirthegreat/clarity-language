@@ -103,7 +103,7 @@ The note is the careful reading written as a fact, not as an awkward second sent
 |-----|---------|---------|
 | An [aside](../grammar/spans.md#asides) span | "Uzozen walks (quietly)." | One group per aside. An aside may also come out as commas or *by the way* |
 | A [scope island](../grammar/spans.md#scope-islands) | "Uzozen and (just water)." | One group per island. English has no other way to fence a group, so the parentheses are the translation |
-| A [tag](../grammar/pronouns.md#tag-pronouns) letter, right after the noun it names | "A dog (A) sees a cookie (E). A cat sees A." | A single capital letter, once per tag the sentence sets; later sentences use the letter as a name |
+| A [tag](../grammar/tag-pronouns.md#tag-pronouns) letter, right after the noun it names | "A dog (A) sees a cookie (E). A cat sees A." | A single capital letter, once per tag the sentence sets; later sentences use the letter as a name |
 
 Grouping that English can say does not use parentheses: *either Uzozen walks or Olazun runs, and Ahelan sleeps*; *a challenging dog and a challenging cat*. A tone mark is English hedging or stress, not *(?)*: "Uzozen saw a dog, I think." (unsure about just the dog).
 
@@ -294,7 +294,7 @@ A **labeled bracket** `LABEL[ … ]` marks a package. The label is uppercase Eng
 
 | Label | Package |
 |-------|---------|
-| `NAME[…]` | [Titled phrase](../grammar/word-endings.md#titled-phrases): **-n** on the hook, join, or span that packages it |
+| `NAME[…]` | [Titled phrase](../grammar/proper-names.md#titled-phrases): **-n** on the hook, join, or span that packages it |
 | `CITE[…]` / `ASIDE[…]` / `OPAQUE[…]` | Span (`d[…]` / `th(…)` / `d<…>`) |
 | `CITE.about[…]` | Paraphrase **-m** span (`d~[…]`) |
 | `NAME.CITE[…]` | Proper **-n** span (`d@[…]`) |
@@ -310,7 +310,7 @@ The mention marker is a word, not a bracket: `glegel` → `gl-MENTION`, `glegen`
 A morph line corresponds **one-to-one** with its Agebon. From the gloss alone you can rebuild the exact written words, so glosses must never merge two forms:
 
 - **Every written word is glossed**, including a spoken **`yal`**. A `yal` that was left out is not added.
-- **Sentence marks.** When one line holds several sentences, the mark between them stands alone with spaces: `z-Uzozen | v-walk . z-←Uzozen | v-judge`. A line-final period is implicit. A [tone mark](../grammar/speech-moves.md#tone-marks) is copied as written: attached to the glossed word or span it colors (`!z-Uzozen`), or standing alone with spaces for sentence scope (`! z-Uzozen | v-walk`).
+- **Sentence marks.** When one line holds several sentences, the mark between them stands alone with spaces: `z-Uzozen | v-walk . z-←Uzozen | v-judge`. A line-final period is implicit. A [tone mark](../grammar/speech-acts.md#tone-marks) is copied as written: attached to the glossed word or span it colors (`!z-Uzozen`), or standing alone with spaces for sentence scope (`! z-Uzozen | v-walk`).
 - **One label per form.** Each (PoS, root, ending) maps to one English label. Two roots never share an English sense: when they would, reword one row in the lexicon. `npm run lint:lexicon` checks this, and `npm test` round-trips every glossed example in `docs/grammar/`.
 - **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and a surface mark when a number word is not in its [preferred writing](../grammar/numbers.md#writing-style-numeric-vs-spelled): `.spelled` on a spelled-out word that prefers shorthand (`grabadol` → `g-twelve.spelled`; `g+12` → `g-twelve`), `.short` on shorthand that prefers spelling — no digit or one digit (`g+3` → `g-three.short`; `gragel` → `g-three`; `g+` → `g-more-than-one.short`).
 - **Ordinals use digits** (`gredol` → `g-2nd`, `gruedol` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
@@ -334,7 +334,7 @@ Only when it is **not** already baked into the English sense-root:
 | `(←…)` binding for **-r** | Resume is not a lexicon sense; see below |
 | Rare teaching callouts | If you must contrast two same-sense forms that differ only by ending, prefer distinct English labels (`and.open` / `and`, `y-question` / `y-soft-question`) over re-attaching `-m` / `-l` or `~` |
 
-Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **-n** uses the English name (`z-Uzozen`), not `-n` / `-proper` / `@`. [One of a name](../grammar/word-endings.md#name-instance--ln) (**-ln**) is the name plus `.instance` (`d-Uzozen.instance`); on a span, **`^@`** is `NAME.<TYPE>.instance` (`d-NAME.OPAQUE.instance["iPhone"]`). Abstract **-m** uses the abstract word (`g-volume`), not `volume~`.
+Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **-n** uses the English name (`z-Uzozen`), not `-n` / `-proper` / `@`. [One of a name](../grammar/proper-names.md#name-instance--ln) (**-ln**) is the name plus `.instance` (`d-Uzozen.instance`); on a span, **`^@`** is `NAME.<TYPE>.instance` (`d-NAME.OPAQUE.instance["iPhone"]`). Abstract **-m** uses the abstract word (`g-volume`), not `volume~`.
 
 ### Sense labels
 
@@ -380,7 +380,7 @@ A [resume](../grammar/pronouns.md#resume-r) spells its antecedent's whole stem, 
 | Resume of a prior content word | | `z-←someone` / `d-←tea` |
 | No antecedent, stem not in the lexicon | | `z-←"…"` (the stem itself) |
 | Fill-ask / unspecified member | `zar` | `z-wh` / `z-something` (as the docs require for that form) |
-| [Tag pronoun](../grammar/pronouns.md#tag-pronouns) | `zwal` / `zwar` / `dwam` | `z-tag.A` (assign) / `z-←tag.A` (recall) / `d-←tag.A.part` (share) / `z-←tag.A.name` (**-n** recall of a name): the letter name, never the referent. An assigning tag rides in its phrase's bracket: `[z-dog \| z-tag.A]`, or after a fence's bracket for the whole group. A pair joins the letters with `+`: `z-←tag.A+E` |
+| [Tag pronoun](../grammar/tag-pronouns.md#tag-pronouns) | `zwal` / `zwar` / `dwam` | `z-tag.A` (assign) / `z-←tag.A` (recall) / `d-←tag.A.part` (share) / `z-←tag.A.name` (**-n** recall of a name): the letter name, never the referent. An assigning tag rides in its phrase's bracket: `[z-dog \| z-tag.A]`, or after a fence's bracket for the whole group. A pair joins the letters with `+`: `z-←tag.A+E` |
 | [Role pointer](../grammar/pronouns.md#role-pointers) | `zwazar` / `zwazor` / `dwazer` | `z-←episode-agent.same` / `z-←episode-agent.other` / `d-←episode-agent.self` / `z-←episode-agent.unsaid` (scope, part, and event, never the person's name); `d-←episode-patient.same.new` (**-l**), `z-←episode-agent.same.part` (**-m**) |
 
 Do not write `z-←microphone` for a speaker antecedent.

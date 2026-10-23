@@ -17,10 +17,10 @@ Words made from an ordinary root and an ending (`zudozol` *a dog*) are not here:
 |-------|--------|---------|-------|
 | vowel(s) + ending, no role letter | [hook](../hooks.md) | `al`, `ol` | B |
 | role letter + vowel(s) + ending, no root | [join](../joins.md) | `zal`, `vul` | B |
-| `y` + vowel + ending, no root | [speech act](../speech-moves.md#speech-act) | `yal` | I |
+| `y` + vowel + ending, no root | [speech act](../speech-acts.md#speech-act) | `yal` | I |
 | role letter + vowel + **-rn** | [stand-in word](../dependents.md#stand-in-roles) | `darn` *a statement* | I |
 | role letter + `w` + vowel + part + vowel + ending | [role pointer](../pronouns.md#role-pointers) | `zwazar` *the latest doer* | B |
-| role letter + `w` + vowel + ending | [tag](../pronouns.md#tag-pronouns) | `zwar` *A* | I |
+| role letter + `w` + vowel + ending | [tag](../tag-pronouns.md#tag-pronouns) | `zwar` *A* | I |
 | a name's root + **-r** | [resume](../pronouns.md#resume-r) | `zuzozer` *Uzozen again* | B |
 
 Every join and hook, with its English: [Joins and hooks cheat sheet](joins-hooks.md).
@@ -58,7 +58,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `gadam` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `gaen` | join-relation starting with (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `gaham` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
-| `gahum` | BECAUSE clause pole (explanatory reason) | [Because, iff, and only because](../causation.md#only-because) | I |
+| `gahum` | BECAUSE clause pole (explanatory reason) | [Because, iff, and only because](../iff-fault.md#only-because) | I |
 | `galam` | AFTER clause pole (just-after) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
 | `gan` | join-relation including (adjective + argument) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `ganom` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](../relations.md#proxy) | B |
@@ -69,7 +69,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `gegel` | mention marker (the span is a word or phrase as spelling) | [Mention](../spans.md#mention) | I |
 | `gegen` | name-string mention marker (the span is a name as spelling) | [Mention](../spans.md#mention) | I |
 | `geham` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](../relations.md#exchange) | B |
-| `gehem` | IFF clause pole (biconditional) | [Because, iff, and only because](../causation.md#only-because) | I |
+| `gehem` | IFF clause pole (biconditional) | [Because, iff, and only because](../iff-fault.md#only-because) | I |
 | `gen` | join-relation prioritizing (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `genam` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
 | `genar` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](../relations.md#as-of) | A |
@@ -134,14 +134,14 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `hewom` | similative like (manner resemblance) | [Extra nouns (/b/)](../clause.md#extra-nouns) | B |
 | `hezom` | ALTHOUGH clause pole (concession; NP despite) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `hobem` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
-| `hodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](../intention.md#ability-fallback) | I |
+| `hodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](../ability.md#ability-fallback) | I |
 | `hoen` | join-relation equating or tying (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `hohem` | locative across (edge to far edge of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
 | `hon` | join-relation exclusively for (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `hovam` | SO-THAT clause pole (intended outcome; NP for-goal) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](../intention.md#try) | I |
-| `howam` | attempt mood (commitment unstated) | [Try](../intention.md#try) | I |
-| `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](../intention.md#try) | I |
+| `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](../ability.md#try) | I |
+| `howam` | attempt mood (commitment unstated) | [Try](../ability.md#try) | I |
+| `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](../ability.md#try) | I |
 | `huan` | join-relation excluding (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `huen` | join-relation deprioritizing (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `hulem` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
@@ -165,12 +165,12 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `thagel` | plan mood atlas map-resolution (includes backups; fully prepared) | [Plan](../intention.md#plan) | B |
 | `thagem` | plan mood itinerary map-resolution (steps on the map; detail unstated) | [Plan](../intention.md#plan) | B |
 | `thager` | plan mood sketch map-resolution (direction only; details left open) | [Plan](../intention.md#plan) | B |
-| `thahul` | BECAUSE clause pole with fault (the reason broke a norm) | [Fault](../causation.md#fault) | I |
+| `thahul` | BECAUSE clause pole with fault (the reason broke a norm) | [Fault](../iff-fault.md#fault) | I |
 | `thahum` | BECAUSE clause pole (explanatory reason) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `thahur` | BECAUSE clause pole with a share (the reason contributed among others) | [Fault](../causation.md#fault) | I |
-| `thalel` | want mood lasting (a wish that keeps returning) | [Want](../intention.md#want) | I |
-| `thalem` | want mood (duration unstated) | [Want](../intention.md#want) | I |
-| `thaler` | want mood passing (a whim that fades) | [Want](../intention.md#want) | I |
+| `thahur` | BECAUSE clause pole with a share (the reason contributed among others) | [Fault](../iff-fault.md#fault) | I |
+| `thalel` | want mood lasting (a wish that keeps returning) | [Want](../ability.md#want) | I |
+| `thalem` | want mood (duration unstated) | [Want](../ability.md#want) | I |
+| `thaler` | want mood passing (a whim that fades) | [Want](../ability.md#want) | I |
 | `thanal` | deduced evidential with strong evidence (every step could be shown) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thanam` | deduced evidential (follows from the premises) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `thanar` | deduced evidential with weak evidence (seems to follow; steps unchecked) | [Evidence strength](../knowing.md#evidence-strength) | I |
@@ -187,16 +187,16 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `thevul` | memory evidential with strong evidence (vivid memory) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thevum` | memory evidential (remembered firsthand / reconstructive) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `thevur` | memory evidential with weak evidence (hazy memory) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thewem` | CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make) | [CAUSE](../causation.md#cause) | I |
+| `thewem` | CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make) | [CAUSE](../iff-fault.md#cause) | I |
 | `theyel` | clues evidential with strong evidence (strong clues) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `theyem` | clues evidential (reasoned from clues about this case) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `theyer` | clues evidential with weak evidence (a weak clue) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `theyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Hold endings (NOTIONAL)](../notional-standing.md#hold-endings-notional) | I |
 | `theyum` | notional mood default hold (imagining a scene without a further purpose) | [Notional (as-if framing)](../notional-standing.md#notional-as-if-framing) | I |
 | `theyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Hold endings (NOTIONAL)](../notional-standing.md#hold-endings-notional) | I |
-| `thogol` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
-| `thogom` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
-| `thogor` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
+| `thogol` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](../ability.md#decision-revisability) | I |
+| `thogom` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](../ability.md#decision-revisability) | I |
+| `thogor` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](../ability.md#decision-revisability) | I |
 | `thohom` | IF clause pole (one-way conditional) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `thomal` | may mood find-out hold (I'll / let's find out) | [Hold endings (MAY)](../knowing.md#hold-endings-may) | B |
 | `thomam` | may mood (could be; default) | [MAY](../knowing.md#may) | B |
@@ -258,14 +258,14 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `wevul` | memory evidential with strong evidence (vivid memory) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wevum` | memory evidential (remembered firsthand / reconstructive) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wevur` | memory evidential with weak evidence (hazy memory) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wewem` | CAUSE mood (mechanism framing) | [CAUSE](../causation.md#cause) | I |
+| `wewem` | CAUSE mood (mechanism framing) | [CAUSE](../iff-fault.md#cause) | I |
 | `weyel` | clues evidential with strong evidence (strong clues) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `weyem` | clues evidential (reasoned from clues about this case) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `weyer` | clues evidential with weak evidence (a weak clue) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `weyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `weyum` | notional mood default hold (imagining a scene without a further purpose) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `weyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](../intention.md#ability-fallback) | I |
+| `wodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](../ability.md#ability-fallback) | I |
 | `womal` | may mood find-out hold (I'll / let's find out) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `womam` | may mood (could be; default) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `womar` | may mood who-knows hold (leave unsettled; may never know) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |

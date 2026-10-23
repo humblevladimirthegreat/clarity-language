@@ -450,7 +450,7 @@ Worked examples: `y_3` *Three!*; `yragel` *Three more!*; `yrugel` *Three short!*
 
 Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call name, **-r** resume a prior shout’s value, with a digit).
 
-**Compare with:** statement / question / command words in the [speech-act section](speech-moves.md#speech-act).
+**Compare with:** statement / question / command words in the [speech-act section](speech-acts.md#speech-act).
 
 Bare OoM bands keep their band under `/v/` `/h/` `/y/` ([digitless and exponents](digitless-exponents.md)).
 

@@ -13,7 +13,7 @@ An English tense bundles up to three questions: **when** the event sits, **how y
 | English | You mean | Agebon |
 |---------|----------|--------|
 | *walks* (now) | you are watching it | LIVE **`thugom`** |
-| *walks* (now) | no channel named | bare verb ([this stretch](intention.md#predict-evidentiality)), unless an earlier channel is still [carried](knowing.md#carry-forward) |
+| *walks* (now) | no channel named | bare verb ([this stretch](ability.md#predict-evidentiality)), unless an earlier channel is still [carried](knowing.md#carry-forward) |
 | *walked* | you remember it | MEMORY **`thevum`** |
 | *walked* | going by clues or cases | CLUES **`theyem`** / PATTERN **`thubem`** plus a `-` offset |
 | *walked* | they told you, or you read it | REPORTED **`thebam`** plus a `-` [offset](knowing.md#dated-channel) |
@@ -142,7 +142,7 @@ For *was walking when …*, keep the ordinary verb and hang the other event on [
 
 ### Future: plan, forecast, promise {#future}
 
-**Needs:** [Plan](intention.md#plan-predict) · [Plan or forecast](intention.md#predict-evidentiality) · [Forecasts](knowing.md#forecast) · [Consent](feelings-permission.md#consent)
+**Needs:** [Plan](intention.md#plan-predict) · [Plan or forecast](ability.md#predict-evidentiality) · [Forecasts](knowing.md#forecast) · [Consent](feelings-permission.md#consent)
 
 English *will* is three different claims.
 
@@ -238,22 +238,22 @@ For *would* in a condition (*if Olazun swam, Uzozen would walk*), see [remote an
 
 ### Can, could, may, might {#can-may}
 
-**Needs:** [Ability](intention.md#ability) · [MAY](knowing.md#may) · [Permission](feelings-permission.md#permission) · [FORMER](notional-standing.md#former-climate)
+**Needs:** [Ability](ability.md#ability) · [MAY](knowing.md#may) · [Permission](feelings-permission.md#permission) · [FORMER](notional-standing.md#former-climate)
 
 English *can* and *may* each carry several meanings. Pick the meaning.
 
 | English | You mean | Agebon |
 |---------|----------|--------|
-| *can* | able | verb + **`xa`** ([can](intention.md#can)) |
+| *can* | able | verb + **`xa`** ([can](ability.md#can)) |
 | *can't* | not now / not yet / never | **`xe`** / **`xo`** / **`xu`** |
 | *could* | used to be able | **`xa`** + FORMER **`helam`** |
 | *couldn't* | couldn't back then | **`xe`** / **`xo`** / **`xu`** + FORMER **`helam`** |
-| *couldn't* | tried, that one time | try **`howam`** ([try](intention.md#try)) + the [simple past](#simple-past); the sentence leaves the outcome open |
+| *couldn't* | tried, that one time | try **`howam`** ([try](ability.md#try)) + the [simple past](#simple-past); the sentence leaves the outcome open |
 | *could*, *might*, *may* | it could be | MAY **`thomam`** |
 | *may*, *is allowed to* | a rule / a person / no objection | **`hwaval`** / **`hwavam`** / **`hwavar`** |
 | *may not* | forbidden | **`hwavul`** / **`hwavum`** / **`hwavur`** |
 | *Can I …?* | asking permission | `yom` + **`hwavam`** |
-| *Could you …?* (polite) | a request | **`yem`** ([speech act](speech-moves.md#speech-act)) |
+| *Could you …?* (polite) | a request | **`yem`** ([speech act](speech-acts.md#speech-act)) |
 
 > `zuzozen vezuyoxal.`
 >
@@ -283,7 +283,7 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 
 ### Ability, possibility and permission words {#ability-words}
 
-**Needs:** [Ability](intention.md#ability) · [Can be](intention.md#role-ability) · [MAY](knowing.md#may) · [Permission](feelings-permission.md#permission) · [Forecasts](knowing.md#forecast) · [Requirement](feelings-permission.md#requirement)
+**Needs:** [Ability](ability.md#ability) · [Can be](ability.md#role-ability) · [MAY](knowing.md#may) · [Permission](feelings-permission.md#permission) · [Forecasts](knowing.md#forecast) · [Requirement](feelings-permission.md#requirement)
 
 English adjectives and verbs built on *can* and *may* take the same forms as the modals.
 
@@ -314,7 +314,7 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 
 ### Must, have to, should {#must-should}
 
-**Needs:** [Requirement](feelings-permission.md#requirement) · [Prescription](sakes.md#sake-force) · [Motive](sakes.md#sake-preference) · [Permission](feelings-permission.md#permission) · [Speech act](speech-moves.md#speech-act) · [Stance as-of](relations.md#stance-as-of)
+**Needs:** [Requirement](feelings-permission.md#requirement) · [Prescription](prescription.md#sake-force) · [Motive](prescription.md#sake-preference) · [Permission](feelings-permission.md#permission) · [Speech act](speech-acts.md#speech-act) · [Stance as-of](relations.md#stance-as-of)
 
 English *must* and *should* differ in what stands behind the demand. Choose the source.
 
@@ -370,7 +370,7 @@ For *should have*, date the ought with [stance as-of](relations.md#stance-as-of)
 
 ### Will, want, try, let's {#will-want}
 
-**Needs:** [Plan](intention.md#plan-predict) · [Want](intention.md#want) · [Try](intention.md#try) · [Hopefully](feelings-permission.md#speaker-attitude) · [Speech act](speech-moves.md#speech-act)
+**Needs:** [Plan](intention.md#plan-predict) · [Want](ability.md#want) · [Try](ability.md#try) · [Hopefully](feelings-permission.md#speaker-attitude) · [Speech act](speech-acts.md#speech-act)
 
 | English | Agebon |
 |---------|--------|

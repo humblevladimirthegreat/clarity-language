@@ -182,7 +182,7 @@ function illustration(inputs: readonly HelperInput[]): string | undefined {
   return undefined;
 }
 
-/** How to write a word and a clause (clause.md#beginner, word-endings.md#beginner). Plain English, no fixed Agebon. */
+/** How to write a word and a clause (clause.md#beginner, word-endings.md#concrete-l). Plain English, no fixed Agebon. */
 function writingRules(inputs: readonly HelperInput[]): string[] {
   const example = illustration(inputs);
   return [

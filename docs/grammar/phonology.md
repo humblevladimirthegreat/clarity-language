@@ -217,7 +217,7 @@ Choose **Stacks** to hear each stack against your home note and say it back. **D
 
 A country or territory name is spelled from the English sound. The root still starts and ends with a vowel. It may keep a consonant cluster from the English name (`avranza` from *France*). A name with no cluster is at least seven letters and ends in `n` plus that last vowel (`azabana` from *Japan*), so it does not look like a three- or five-letter dictionary root.
 
-The ending is the ordinary name ending: `azabanan` is *Japan*, `azabanam` belonging, `azabanal` the flag ([countries](word-endings.md#countries-traditions)).
+The ending is the ordinary name ending: `azabanan` is *Japan*, `azabanam` belonging, `azabanal` the flag ([countries](proper-names.md#countries-traditions)).
 
 A person or place that is not in the lexicon can take the same spelling. The [lexicon](lexicon.md#respell) writes it for a name you type. To keep the original letters, use a [span](spans.md#loans).
 
@@ -242,7 +242,7 @@ These choices about word shape make Agebon easier to sing:
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-ln` / `-r` / `-rl` / `-rm` (optional `-x`); stand-ins end in `-rl` / `-rm` / `-rth` |
 
-The clusters Agebon allows: left-hanging `gl-`; hosted `bl-`, with a [syllabic `l`](#syllabic-l) before `r` / `w`; number-word role letter + `r`; role letter + `w` on a [tag pronoun](pronouns.md#tag-pronouns), a [role compound](roles.md#role-compounds), a [role pointer](pronouns.md#role-pointers), or a say word (`zw`, `dw`, `bw`, `gw`, `hw`, `yw`, and `blw` on a hosted role word); mid-word `mx` after the hook vowels of a hook prefix's **-m** frame, or after the number body of an approximate [numeric prefix](numeric-derivation.md); mid-word `mx` or `rx` after the hook vowels of a hooked join (its hook's frame or point-back); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`; consonant runs inside a [place-name root](#place-name-roots). The `m` or `r` before `x` is the only syllable-final consonant inside an ordinary word.
+The clusters Agebon allows: left-hanging `gl-`; hosted `bl-`, with a [syllabic `l`](#syllabic-l) before `r` / `w`; number-word role letter + `r`; role letter + `w` on a [tag pronoun](tag-pronouns.md#tag-pronouns), a [role compound](roles.md#role-compounds), a [role pointer](pronouns.md#role-pointers), or a say word (`zw`, `dw`, `bw`, `gw`, `hw`, `yw`, and `blw` on a hosted role word); mid-word `mx` after the hook vowels of a hook prefix's **-m** frame, or after the number body of an approximate [numeric prefix](numeric-derivation.md); mid-word `mx` or `rx` after the hook vowels of a hooked join (its hook's frame or point-back); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`; consonant runs inside a [place-name root](#place-name-roots). The `m` or `r` before `x` is the only syllable-final consonant inside an ordinary word.
 
 Try singing a short Agebon line quickly at a high but comfortable pitch:
 
@@ -294,11 +294,11 @@ English swallows small words that change the meaning: *can* and *can't* often di
 | Negation: the `u` joins ([negation](joins.md#negation-u)) | Missing one flips the claim |
 | [MAY](knowing.md#may) and its hold endings | Missing one makes a guess sound certain |
 | [How you know](knowing.md#evidentiality) and [how strong the evidence is](knowing.md#evidence-strength) | Missing one hides where the claim came from |
-| The kind of *can't* ([ability](intention.md#ability)) | Missing one turns *not right now* into *not ever* |
+| The kind of *can't* ([ability](ability.md#ability)) | Missing one turns *not right now* into *not ever* |
 
 ### Voice and certainty {#voice-and-certainty}
 
-Only the words and the written [tone marks](speech-moves.md#tone-marks) carry meaning. How firmly you stand behind a claim is the ending on the [act word](speech-moves.md#speech-act); how sure you are is [MAY](knowing.md#may). Pitch carries two things only: each [vowel's own pitch](#vowel-pitch-values), and the `?` mark, which raises a word's whole range. An unwritten rise or fall adds nothing. A statement said with a rising voice is still a statement, and a firm `-l` claim said hesitantly is still firm.
+Only the words and the written [tone marks](speech-acts.md#tone-marks) carry meaning. How firmly you stand behind a claim is the ending on the [act word](speech-acts.md#speech-act); how sure you are is [MAY](knowing.md#may). Pitch carries two things only: each [vowel's own pitch](#vowel-pitch-values), and the `?` mark, which raises a word's whole range. An unwritten rise or fall adds nothing. A statement said with a rising voice is still a statement, and a firm `-l` claim said hesitantly is still firm.
 
 So listen to the words, not the voice. A speaker whose voice naturally rises at the end is not hedging, and a confident voice is not evidence.
 
@@ -329,7 +329,7 @@ In song, a period takes a rest or a held note, and an island is phrased as its o
 
 ### Singing on one note {#one-note}
 
-Every distinction Agebon makes is spelled in its letters, so a line sung on a single pitch still says everything it says in speech. A melody owns the pitch, so song drops [vowel pitch](#vowel-pitch-values): sing each vowel on the melody's note. A songwriter may let a melody follow the vowel pitches, but no song has to. When a melody takes over your pitch, voice each [tone mark](speech-moves.md#tone-marks) with how you shape the note:
+Every distinction Agebon makes is spelled in its letters, so a line sung on a single pitch still says everything it says in speech. A melody owns the pitch, so song drops [vowel pitch](#vowel-pitch-values): sing each vowel on the melody's note. A songwriter may let a melody follow the vowel pitches, but no song has to. When a melody takes over your pitch, voice each [tone mark](speech-acts.md#tone-marks) with how you shape the note:
 
 | Mark | In speech | In song |
 |------|-----------|---------|

@@ -47,4 +47,4 @@ We're selling the house `thogol`.
 I'm staying home tonight `thogor`.
 :::
 
-<!-- Source (editors): intention.md#decision, intention.md#try. -->
+<!-- Source (editors): ability.md#decision, ability.md#try. -->

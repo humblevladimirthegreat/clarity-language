@@ -49,7 +49,7 @@ export const GLOSS_READER = {
     x: "links this sentence to the one before (`x-however`), or names the topic",
     "": "no prefix: a hook. Between two words of the same role it relates them, and the right one is what holds: `d-tea | instead | d-coffee` = coffee instead of tea. With a `b-` noun in its bracket it is a relation (`[from | b-dog]`)",
   } as Record<string, string>,
-  /** Part names in `SCOPE-PART-verb` and pointers (roles.md#role-compounds, roles.md#content-of-the-event). */
+  /** Part names in `SCOPE-PART-verb` and pointers (roles.md#role-compounds, viewpoint.md#content-of-the-event). */
   roles: {
     agent: "the doer",
     patient: "the one it happens to, or what it makes",

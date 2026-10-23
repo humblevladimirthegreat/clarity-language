@@ -251,7 +251,7 @@ const ABILITY_STANCE: Record<string, string> = {
   u: "unable-irreversible",
 };
 
-/** Label scope seam vowels (predication.md#label-scope). */
+/** Label scope seam vowels (label-scope.md#label-scope). */
 export const SCOPE_VOWEL: Record<string, string> = {
   a: "episode",
   e: "role",
@@ -307,7 +307,7 @@ const GREETING_STANCE: Record<string, string> = {
   u: "passing",
 };
 
-/** Role word part consonants (roles.md#role-compounds, roles.md#content-of-the-event). */
+/** Role word part consonants (roles.md#role-compounds, viewpoint.md#content-of-the-event). */
 export const ROLE_PART: Record<string, string> = {
   z: "agent",
   d: "patient",
@@ -411,7 +411,7 @@ export function senseLabel(
       ? "-th-"
       : "-x-";
   let body = sensePieces(word, tables, ctx).join(hinge);
-  // **-ln**: one thing the name applies to (word-endings.md#name-instance--ln).
+  // **-ln**: one thing the name applies to (proper-names.md#name-instance--ln).
   if (word.ending === "ln") body += ".instance";
   if (word.plural) return body ? `${body}-x` : "-x";
   return body;
@@ -1471,7 +1471,7 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
       return grain ? [`${host}-${stance}-${grain}`] : [host, stance];
     }
     const stance = ABILITY_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "ability";
-    // Ability resume (`vowoxar`): the resumed host keeps the ability (intention.md#ability).
+    // Ability resume (`vowoxar`): the resumed host keeps the ability (ability.md#ability).
     if (word.ending === "r" && antecedent) {
       const antecedentFamily = antecedent.family;
       const resumed =
@@ -1517,7 +1517,7 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
 
   if (family.xFamily === "lateral") {
     const dir = rootSense(family.leftRoots[0]!, "l", tables, { named: false, pos: word.pos });
-    // **-r** resumes the facing anchor (`howuhethuzozer`, roles.md#viewpoint-laterals).
+    // **-r** resumes the facing anchor (`howuhethuzozer`, viewpoint.md#viewpoint-laterals).
     if (word.ending === "r" && !family.landmark) {
       const resumed: LexWord = { ...word, overlay: undefined, family: { kind: "content", roots: family.rightRoots ?? [] } };
       return [dir, ...sensePieces(resumed, tables, { antecedent })];

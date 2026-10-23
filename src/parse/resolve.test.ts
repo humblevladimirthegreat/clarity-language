@@ -33,7 +33,7 @@ describe("resolve — content anaphors (pronouns.md#resume-r)", () => {
     assert.equal(anaphors[0]!.antecedent?.raw, "zululon");
   });
 
-  it("pins a resume to one sense with -rl / -rm (pronouns.md#resume-sense)", () => {
+  it("pins a resume to one sense with -rl / -rm (tag-pronouns.md#resume-sense)", () => {
     const { anaphors } = resolveOf("zuzozen dudozol vawebol. zolazun dudozom vawebol. zuzozen dudozorl vawebol. zolazun dudozorm vawebol. zuzozen dudozor vawebol.");
     assert.deepEqual(
       anaphors.map((bind) => bind.antecedent?.raw),
@@ -80,7 +80,7 @@ describe("resolve — content anaphors (pronouns.md#resume-r)", () => {
     assert.equal(anaphors[0]!.antecedent, undefined);
   });
 
-  it("binds an ability resume on its whole stem and keeps the ability (intention.md#ability)", () => {
+  it("binds an ability resume on its whole stem and keeps the ability (ability.md#ability)", () => {
     const { anaphors } = resolveOf("zuzozen vowurexal. zugobon vowurexar.");
     assert.equal(anaphors[0]!.pronoun.raw, "vowurexar");
     assert.equal(anaphors[0]!.antecedent?.raw, "vowurexal");
@@ -142,7 +142,7 @@ describe("resolve — role pointers (pronouns.md#role-pointers)", () => {
     assert.deepEqual(pointers("zuzozen vowurel. d[zolazun varuvel] vawebol. zwazar vuhohol."), ["zwazar→zuzozen"]);
   });
 
-  it("is no holder and no facing anchor: a seam resumes the person (roles.md#viewpoint-laterals)", () => {
+  it("is no holder and no facing anchor: a seam resumes the person (viewpoint.md#viewpoint-laterals)", () => {
     assert.throws(() => parseText("zuzozen vowurel. zolazun theyemaxar velurul."));
     assert.throws(() => parseText("zuzozen vowurel. zolazun vuhohol howuhethwazar."));
     const lateral = resolveOf("zuzozen vowurel. zolazun vuhohol howuhethuzozer.").anaphors.find((a) => a.pronoun.raw === "howuhethuzozer");
@@ -179,7 +179,7 @@ describe("resolve — role pointers (pronouns.md#role-pointers)", () => {
   });
 });
 
-describe("resolve — content-rule pointers (roles.md#content-of-the-event)", () => {
+describe("resolve — content-rule pointers (viewpoint.md#content-of-the-event)", () => {
   function pointers(text: string): string[] {
     return resolveOf(text)
       .anaphors.filter((a) => a.kind === "pointer")
@@ -245,7 +245,7 @@ describe("resolve — span and number anaphors", () => {
     assert.equal(question.asks[0]?.gaps[0]?.raw, "g=+");
   });
 
-  it("asks by the outer of two stacked act words (speech-moves.md#stacked-acts)", () => {
+  it("asks by the outer of two stacked act words (speech-acts.md#stacked-acts)", () => {
     assert.equal(resolveOf("yol yal zar vanuvul dobogal.").asks[0]?.kind, "fillAsk");
     assert.equal(resolveOf("yal yol zar vegemal.").asks[0]?.kind, "rhetorical");
     assert.equal(resolveOf("yel yol vanuvul dobogal zawan.").asks[0]?.kind, "rhetorical");
@@ -253,7 +253,7 @@ describe("resolve — span and number anaphors", () => {
   });
 });
 
-describe("resolve — tag pronouns (pronouns.md#tag-pronouns)", () => {
+describe("resolve — tag pronouns (tag-pronouns.md#tag-pronouns)", () => {
   function tags(text: string): string[] {
     return resolveOf(text)
       .anaphors.filter((a) => a.kind === "tag")

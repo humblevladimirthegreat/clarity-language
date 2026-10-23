@@ -23,8 +23,8 @@ Write a thing letter (`/z/` `/d/` `/b/`), **`w`**, a scope vowel, a part consona
 |-------|-------|---------|---------|-------|
 | [**`a`**](../roles.md#one-time-or-a-practice) | this episode | `zwazuduyel` | *someone who teaches* | B |
 | [**`e`**](../roles.md#one-time-or-a-practice) | practiced role | `zwezuduyel` | *a teacher* | B |
-| [**`o`**](../roles.md#scope) | toward one party | `gwozuduyel blolazun` | *is a teacher to Olazun* | I |
-| [**`u`**](../roles.md#scope) | a type across scenes | `zwuzuduyel` | *a teacher type* | I |
+| [**`o`**](../viewpoint.md#scope) | toward one party | `gwozuduyel blolazun` | *is a teacher to Olazun* | I |
+| [**`u`**](../viewpoint.md#scope) | a type across scenes | `zwuzuduyel` | *a teacher type* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -35,8 +35,8 @@ Write a thing letter (`/z/` `/d/` `/b/`), **`w`**, a scope vowel, a part consona
 | [Is a teacher](../roles.md#saying-someone-is-a-teacher) | `zuzozen gwezuduyel.` | *Uzozen is a teacher.* | B |
 | [The event itself](../roles.md#the-event-itself): no **`w`** | `davuvul` | *a fight* | B |
 | [What it makes](../roles.md#the-undergoer-d): **`d`** | `dwadeguyel` | *something built* | B |
-| [A kind of tool, place, or time](../roles.md#places-tools-times): a compound with a head root | `darayexuwal` | *a writing tool* | I |
-| [The role you act in](../roles.md#capacity): on `/h/` | `zuzozen vezuyel hwezuduyel.` | *Uzozen speaks as a teacher.* | I |
+| [A kind of tool, place, or time](../viewpoint.md#places-tools-times): a compound with a head root | `darayexuwal` | *a writing tool* | I |
+| [The role you act in](../viewpoint.md#capacity): on `/h/` | `zuzozen vezuyel hwezuduyel.` | *Uzozen speaks as a teacher.* | I |
 
 A role compound has one part consonant, right after its scope vowel. Its stem is an event or a state (`zwazunemul` *someone who is angry*); `zwazuwon` is not a word.
 
@@ -46,13 +46,13 @@ A part consonant can name a quality of the event, not a person in it. Pointers d
 
 | Part | Names | Compound | Pointer | Stage |
 |------|-------|----------|---------|-------|
-| [**`h`**](../roles.md#content-of-the-event) | how, when, or where | `dwahowurel` | `dwahar` | I |
-| [**`g`**](../roles.md#content-of-the-event) | the state it leaves | `dwaguguyel` | `dwagar` | I |
-| [**`th`**](../roles.md#content-of-the-event) | a reason or feeling | `dwathowurel` | `dwathar` | I |
-| [**`w`**](../roles.md#content-of-the-event) | how much | `dwawowurel` | `dwawar` | I |
-| [**`y`**](../roles.md#content-of-the-event) | the turn that said it | `dwayowurel` | `dwayar` | I |
-| [**`x`**](../roles.md#content-of-the-event) | what followed | `dwaxowurel` | `dwaxar` | I |
-| [**`v`**](../roles.md#content-of-the-event) | the event itself | (the event noun: `dowurel`) | `dwavar` | I |
+| [**`h`**](../viewpoint.md#content-of-the-event) | how, when, or where | `dwahowurel` | `dwahar` | I |
+| [**`g`**](../viewpoint.md#content-of-the-event) | the state it leaves | `dwaguguyel` | `dwagar` | I |
+| [**`th`**](../viewpoint.md#content-of-the-event) | a reason or feeling | `dwathowurel` | `dwathar` | I |
+| [**`w`**](../viewpoint.md#content-of-the-event) | how much | `dwawowurel` | `dwawar` | I |
+| [**`y`**](../viewpoint.md#content-of-the-event) | the turn that said it | `dwayowurel` | `dwayar` | I |
+| [**`x`**](../viewpoint.md#content-of-the-event) | what followed | `dwaxowurel` | `dwaxar` | I |
+| [**`v`**](../viewpoint.md#content-of-the-event) | the event itself | (the event noun: `dowurel`) | `dwavar` | I |
 
 ### Without the stem {#pointers}
 
@@ -61,8 +61,8 @@ A role pointer drops the stem. The pointer vowel picks the event by position: **
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Whoever did the latest thing](../roles.md#role-pointers-family) | `zwazar` | *they* | B |
-| [The landmark a clause named](../roles.md#places-tools-times): resume its noun | `zuzozen vuguyel ael banewul. zahelan danewur vawebol.` | *Uzozen cooks with a knife. Ahelan sees the knife.* | I |
-| [That landmark as a means](../roles.md#places-tools-times): the hook's pointer | `zuzozen vuguyel ael banewul. zahelan vuguyel aer.` | *Uzozen cooks with a knife. Ahelan cooks with it too.* | I |
+| [The landmark a clause named](../viewpoint.md#places-tools-times): resume its noun | `zuzozen vuguyel ael banewul. zahelan danewur vawebol.` | *Uzozen cooks with a knife. Ahelan sees the knife.* | I |
+| [That landmark as a means](../viewpoint.md#places-tools-times): the hook's pointer | `zuzozen vuguyel ael banewul. zahelan vuguyel aer.` | *Uzozen cooks with a knife. Ahelan cooks with it too.* | I |
 
 ## Left, right, up, down {#directions}
 
@@ -71,62 +71,62 @@ Bare arrow words are compass headings. With mid-word **`th`** and a facing perso
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | Compass | On a face | Stage |
 |--------|---------|-----------|-------|
-| [**`onuhel`**](../roles.md#arrow-rose-compass-vs-face) | *north* | *ahead* | I |
-| [**`azuhel`**](../roles.md#arrow-rose-compass-vs-face) | *south* | *back* | I |
-| [**`ahel`**](../roles.md#arrow-rose-compass-vs-face) | *east* | *right* | I |
-| [**`owuhel`**](../roles.md#arrow-rose-compass-vs-face) | *west* | *left* | I |
-| [**`unuhel`**](../roles.md#arrow-rose-compass-vs-face) | *northeast* | *forward-right* | I |
-| [**`anuhel`**](../roles.md#arrow-rose-compass-vs-face) | *northwest* | *forward-left* | I |
-| [**`ezuhel`**](../roles.md#arrow-rose-compass-vs-face) | *southeast* | *back-right* | I |
-| [**`uzuhel`**](../roles.md#arrow-rose-compass-vs-face) | *southwest* | *back-left* | I |
+| [**`onuhel`**](../viewpoint.md#arrow-rose-compass-vs-face) | *north* | *ahead* | I |
+| [**`azuhel`**](../viewpoint.md#arrow-rose-compass-vs-face) | *south* | *back* | I |
+| [**`ahel`**](../viewpoint.md#arrow-rose-compass-vs-face) | *east* | *right* | I |
+| [**`owuhel`**](../viewpoint.md#arrow-rose-compass-vs-face) | *west* | *left* | I |
+| [**`unuhel`**](../viewpoint.md#arrow-rose-compass-vs-face) | *northeast* | *forward-right* | I |
+| [**`anuhel`**](../viewpoint.md#arrow-rose-compass-vs-face) | *northwest* | *forward-left* | I |
+| [**`ezuhel`**](../viewpoint.md#arrow-rose-compass-vs-face) | *southeast* | *back-right* | I |
+| [**`uzuhel`**](../viewpoint.md#arrow-rose-compass-vs-face) | *southwest* | *back-left* | I |
 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`ayuhel`**](../roles.md#gravity) | skyward, shared frame | *up* | I |
-| [**`aduhel`**](../roles.md#gravity) | toward the pull, shared frame | *down* | I |
-| [**`evuhel`**](../roles.md#gravity) | the vertical axis | *up–down axis* | I |
+| [**`ayuhel`**](../viewpoint.md#gravity) | skyward, shared frame | *up* | I |
+| [**`aduhel`**](../viewpoint.md#gravity) | toward the pull, shared frame | *down* | I |
+| [**`evuhel`**](../viewpoint.md#gravity) | the vertical axis | *up–down axis* | I |
 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [Bare DIR](../roles.md#viewpoint-vs-landmark) | compass / gravity | `gowuhel` *west*; `gayuhel` *up* | I |
-| [**`DIR th ANCHOR`**](../roles.md#viewpoint-vs-landmark) | that point on **ANCHOR's** facing rose | `gowuhethawan` *listener-left* | I |
-| [DIR + **`th`** + **`o`** + `/b/`](../roles.md#landmark-facing) | that point on the **landmark's** own rose | `gazuhethol blahehal` *behind the house* | I |
-| [complex `/ɡ/` + `/b/`](../roles.md#viewpoint-vs-landmark) | region on a side **of a landmark** | `gowuhethuzozen bledalel` *left of the tree, from Uzozen's view* | I |
+| [Bare DIR](../viewpoint.md#viewpoint-vs-landmark) | compass / gravity | `gowuhel` *west*; `gayuhel` *up* | I |
+| [**`DIR th ANCHOR`**](../viewpoint.md#viewpoint-vs-landmark) | that point on **ANCHOR's** facing rose | `gowuhethawan` *listener-left* | I |
+| [DIR + **`th`** + **`o`** + `/b/`](../viewpoint.md#landmark-facing) | that point on the **landmark's** own rose | `gazuhethol blahehal` *behind the house* | I |
+| [complex `/ɡ/` + `/b/`](../viewpoint.md#viewpoint-vs-landmark) | region on a side **of a landmark** | `gowuhethuzozen bledalel` *left of the tree, from Uzozen's view* | I |
 
 The anchor can be `uwo` *speaker*, `awa` *listener*, a name, or a role pointer on **-r**. The ending applies to the anchor, not the direction.
 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | English | Stage |
 |--------|---------|-------|
-| [`gowuhel`](../roles.md#endings-and-resume) | *west* (shared map) | I |
-| [`gowuhethuzozen`](../roles.md#endings-and-resume) | *Uzozen's left* | I |
-| [`gowuhethawan`](../roles.md#endings-and-resume) | *your left* (listener facing) | I |
-| [`gowuhethuwon`](../roles.md#endings-and-resume) | *my left* (speaker facing) | I |
-| [`gowuhethayan`](../roles.md#endings-and-resume) | *our left* (shared facing) | I |
-| [`gayuhel` / `hayuhel`](../roles.md#endings-and-resume) | gravity *up* | I |
+| [`gowuhel`](../viewpoint.md#endings-and-resume) | *west* (shared map) | I |
+| [`gowuhethuzozen`](../viewpoint.md#endings-and-resume) | *Uzozen's left* | I |
+| [`gowuhethawan`](../viewpoint.md#endings-and-resume) | *your left* (listener facing) | I |
+| [`gowuhethuwon`](../viewpoint.md#endings-and-resume) | *my left* (speaker facing) | I |
+| [`gowuhethayan`](../viewpoint.md#endings-and-resume) | *our left* (shared facing) | I |
+| [`gayuhel` / `hayuhel`](../viewpoint.md#endings-and-resume) | gravity *up* | I |
 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | English | Stage |
 |--------|---------|-------|
-| [`gazuhethol blahehal`](../roles.md#landmark-facing) | *behind the house* (its own back) | I |
-| [`gonuhethol blahehal`](../roles.md#landmark-facing) | *in front of the house* | I |
-| [`gowuhethol blahehal`](../roles.md#landmark-facing) | *on the house's left* | I |
-| [`gowuhethuzozen blahehal`](../roles.md#landmark-facing) | *left of the house, from Uzozen's view* | I |
-| [`gowuhel blahehal`](../roles.md#landmark-facing) | *west of the house* | I |
+| [`gazuhethol blahehal`](../viewpoint.md#landmark-facing) | *behind the house* (its own back) | I |
+| [`gonuhethol blahehal`](../viewpoint.md#landmark-facing) | *in front of the house* | I |
+| [`gowuhethol blahehal`](../viewpoint.md#landmark-facing) | *on the house's left* | I |
+| [`gowuhethuzozen blahehal`](../viewpoint.md#landmark-facing) | *left of the house, from Uzozen's view* | I |
+| [`gowuhel blahehal`](../viewpoint.md#landmark-facing) | *west of the house* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Compass](../roles.md#viewpoint-laterals) | `yel vowurel howuhel.` | *Walk west.* | I |
-| [Uzozen's left](../roles.md#viewpoint-laterals) | `yel vowurel howuhethuzozen.` | *Walk left.* (Uzozen's left) | I |
-| [Your left](../roles.md#viewpoint-laterals) | `yel vowurel zawan howuhethawan.` | *You, walk left.* (your left) | I |
-| [Their left](../roles.md#viewpoint-laterals) | `zuzozen vowurel. zolazun vuhohol howuhethuzozer.` | *Uzozen walks. Olazun sits on their left.* | I |
-| [Up](../roles.md#gravity) | `yel vowurel hayuhel.` | *Walk up.* | I |
-| [Under](../roles.md#viewpoint-vs-landmark) | `zudozol vezuvol haduhel bledalel.` | *The dog sleeps under the tree.* | I |
-| [Above](../roles.md#viewpoint-vs-landmark) | `zubezol vuhohol gayuhel bludozol.` | *A bird sits above the dog.* | I |
-| [Left of a landmark](../roles.md#viewpoint-vs-landmark) | `zanal gowuhethuzozen bledalel.` | *The book is left of the tree, from Uzozen's view.* | I |
-| [Behind](../roles.md#landmark-facing) | `zudozol vuhohol gazuhethol blahehal.` | *The dog sits behind the house.* | I |
+| [Compass](../viewpoint.md#viewpoint-laterals) | `yel vowurel howuhel.` | *Walk west.* | I |
+| [Uzozen's left](../viewpoint.md#viewpoint-laterals) | `yel vowurel howuhethuzozen.` | *Walk left.* (Uzozen's left) | I |
+| [Your left](../viewpoint.md#viewpoint-laterals) | `yel vowurel zawan howuhethawan.` | *You, walk left.* (your left) | I |
+| [Their left](../viewpoint.md#viewpoint-laterals) | `zuzozen vowurel. zolazun vuhohol howuhethuzozer.` | *Uzozen walks. Olazun sits on their left.* | I |
+| [Up](../viewpoint.md#gravity) | `yel vowurel hayuhel.` | *Walk up.* | I |
+| [Under](../viewpoint.md#viewpoint-vs-landmark) | `zudozol vezuvol haduhel bledalel.` | *The dog sleeps under the tree.* | I |
+| [Above](../viewpoint.md#viewpoint-vs-landmark) | `zubezol vuhohol gayuhel bludozol.` | *A bird sits above the dog.* | I |
+| [Left of a landmark](../viewpoint.md#viewpoint-vs-landmark) | `zanal gowuhethuzozen bledalel.` | *The book is left of the tree, from Uzozen's view.* | I |
+| [Behind](../viewpoint.md#landmark-facing) | `zudozol vuhohol gazuhethol blahehal.` | *The dog sits behind the house.* | I |
 
 ## Reading mid-word `x` {#x}
 
@@ -137,11 +137,11 @@ After the role letter, look at both sides of the **first** **`x`**. A role word 
 |-----------------|------------------|---------|---------|-------|
 | [full root](../compounds.md#families-by-shape) | full root | one ordinary compound | `zubedaxuyudal` *peanut butter*; `zalexalowen` (a hyphenated name) | B |
 | [name](../compounds.md#conversation-length) | a single vowel, then **-n** | conversation length | *Uzozen, I have time* | I |
-| [longer root](../compounds.md#families-by-shape) | a single vowel | [ability](../intention.md#ability) | *can't sing right now* | I |
+| [longer root](../compounds.md#families-by-shape) | a single vowel | [ability](../ability.md#ability) | *can't sing right now* | I |
 | [hook vowels](../hooks.md#hook-prefixes), maybe **`m`** | a stem | hook prefix | `guexavuvul` *anti-fighting*; `gamxohalal` *mid-ocean* | A |
 | [hook vowels](../hooks.md#hooked-joins), maybe **`m`** or **`r`** | a join: vowels and an ending | hooked join, landmark after it | `zoxual blahehal` *everyone at the house* | A |
 
-Mid-word **`th`** is another family: a sake root and a vowel (`guwathal`), any other root and a vowel ([label scope](../predication.md#label-scope)), or a direction root and a facing person (`gowuhethuzozen`). After a sake root, root-shaped letters are always the emotion tail.
+Mid-word **`th`** is another family: a sake root and a vowel (`guwathal`), any other root and a vowel ([label scope](../label-scope.md#label-scope)), or a direction root and a facing person (`gowuhethuzozen`). After a sake root, root-shaped letters are always the emotion tail.
 
 ### One thing or two {#one-or-two}
 
@@ -333,10 +333,10 @@ English *many* and *often* rank against an unstated baseline. Agebon names the b
 | `zolazun zuzozen zel huhunem vowurel` *more intensely than* ([ranks the manner](../comparatives.md#manner-scale)) | | `guhunem` *more intense* ([a quality of the people](../comparatives.md#manner-scale)) |
 | `zuzozen thagem zel bral vovurel` *later than planned* ([a bar before the join](../comparatives.md#bars)) | | `zuzozen zel bral vovurel thagem` *I plan for them to be last* ([a stance after](../comparatives.md#bars)) |
 | `zwazuduyel` *someone who teaches* ([any one who does it](../roles.md#role-compounds)) | | `zwezuduyel` *a teacher* ([a practiced role](../roles.md#one-time-or-a-practice)) |
-| `hwezuduyel` *as a teacher* ([the role you act in](../roles.md#capacity)) | | `hewom blwezuduyel` *like a teacher* ([a similative](../relations.md#similative)) |
-| `dwahowurel` *a way of walking* ([a quality of the event](../roles.md#content-of-the-event)) | | `dwazowurel` *someone who walks* ([a participant](../roles.md#role-compounds)) |
+| `hwezuduyel` *as a teacher* ([the role you act in](../viewpoint.md#capacity)) | | `hewom blwezuduyel` *like a teacher* ([a similative](../relations.md#similative)) |
+| `dwahowurel` *a way of walking* ([a quality of the event](../viewpoint.md#content-of-the-event)) | | `dwazowurel` *someone who walks* ([a participant](../roles.md#role-compounds)) |
 | `zwazuduyer` *the one teaching* ([this instance](../roles.md#role-compounds)) | | `gwazuduyel` *is one who teaches* ([a label](../roles.md#saying-someone-is-a-teacher)) |
-| `darayexuwal` *a writing tool* ([a compound](../roles.md#places-tools-times)) | | `ael` *using* ([a hook on the clause](../hooks.md#extra-noun)) |
-| `gowuhel` *west* ([compass](../roles.md#endings-and-resume)) | | `gowuhethuzozen` *Uzozen's left* ([a face](../roles.md#endings-and-resume)) |
-| `gowuhethuzozen bledalel` *left of the tree, from Uzozen's view* ([a facing person](../roles.md#viewpoint-vs-landmark)) | | `gowuhethol blahehal` *on the house's left* ([the landmark's own front](../roles.md#landmark-facing)) |
+| `darayexuwal` *a writing tool* ([a compound](../viewpoint.md#places-tools-times)) | | `ael` *using* ([a hook on the clause](../hooks.md#extra-noun)) |
+| `gowuhel` *west* ([compass](../viewpoint.md#endings-and-resume)) | | `gowuhethuzozen` *Uzozen's left* ([a face](../viewpoint.md#endings-and-resume)) |
+| `gowuhethuzozen bledalel` *left of the tree, from Uzozen's view* ([a facing person](../viewpoint.md#viewpoint-vs-landmark)) | | `gowuhethol blahehal` *on the house's left* ([the landmark's own front](../viewpoint.md#landmark-facing)) |
 | `zobahohal` *bedroom* ([a dictionary word](../compounds.md#lexical-compounds)) | | `zubedaxuyudal` *peanut butter* ([glued with `x`](../compounds.md#compound-vs-separate)) |

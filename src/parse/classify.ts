@@ -470,7 +470,7 @@ export function isBarStance(word: LexWord, tables: ClassifyTables): boolean {
   return word.reading === "ordinary" && family.kind === "content";
 }
 
-/** Closed `/th/` or clause-adverb kinds `uem` takes as its frame: each has content an event can go against (sakes.md#contrary-to-stance). */
+/** Closed `/th/` or clause-adverb kinds `uem` takes as its frame: each has content an event can go against (prescription.md#contrary-to-stance). */
 const FRAME_OVERLAY_KINDS = new Set(["evidential", "plan", "decision", "want"]);
 
 /**
@@ -494,7 +494,7 @@ export function isFrameStance(word: LexWord, tables: ClassifyTables): boolean {
   return word.reading === "ordinary" && family.kind === "content";
 }
 
-/** Arrow-rose roots (roles.md#arrow-rose-compass-vs-face); `DIR th o` on these is a landmark lateral. */
+/** Arrow-rose roots (viewpoint.md#arrow-rose-compass-vs-face); `DIR th o` on these is a landmark lateral. */
 export const arrowRoots = closedDerived(
   () =>
     new Set([
@@ -517,7 +517,7 @@ function landmarkLateral(word: MorphWord): MorphWord | undefined {
   return { ...word, family: { kind: "x", xFamily: "lateral", leftRoots: family.leftRoots, rightRoots: [], landmark: true } };
 }
 
-/** `ROOT th V` on any root outside the eight sake roots is label scope (predication.md#label-scope). */
+/** `ROOT th V` on any root outside the eight sake roots is label scope (label-scope.md#label-scope). */
 function labelScope(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
   const family = word.family;
   if (family.kind !== "x" || family.xFamily !== "sake") return undefined;
@@ -527,7 +527,7 @@ function labelScope(word: MorphWord, tables: ClassifyTables): MorphWord | undefi
 
 /**
  * `ROOT th V C V` + ending: the emotion tail on a sake root (feelings-permission.md#emotion-compose);
- * on any other root the same letters are a viewpoint lateral `DIR th ANCHOR` (roles.md#viewpoint-laterals).
+ * on any other root the same letters are a viewpoint lateral `DIR th ANCHOR` (viewpoint.md#viewpoint-laterals).
  */
 function tailLateral(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
   const family = word.family;

@@ -162,18 +162,18 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 <!-- generated: overlays pos=th|h kind=want|plan|decision|attempt -->
 | Agebon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](../intention.md#try) | I |
-| `howam` | attempt mood (commitment unstated) | [Try](../intention.md#try) | I |
-| `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](../intention.md#try) | I |
+| `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](../ability.md#try) | I |
+| `howam` | attempt mood (commitment unstated) | [Try](../ability.md#try) | I |
+| `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](../ability.md#try) | I |
 | `thagel` | plan mood atlas map-resolution (includes backups; fully prepared) | [Plan](../intention.md#plan) | B |
 | `thagem` | plan mood itinerary map-resolution (steps on the map; detail unstated) | [Plan](../intention.md#plan) | B |
 | `thager` | plan mood sketch map-resolution (direction only; details left open) | [Plan](../intention.md#plan) | B |
-| `thalel` | want mood lasting (a wish that keeps returning) | [Want](../intention.md#want) | I |
-| `thalem` | want mood (duration unstated) | [Want](../intention.md#want) | I |
-| `thaler` | want mood passing (a whim that fades) | [Want](../intention.md#want) | I |
-| `thogol` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
-| `thogom` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
-| `thogor` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
+| `thalel` | want mood lasting (a wish that keeps returning) | [Want](../ability.md#want) | I |
+| `thalem` | want mood (duration unstated) | [Want](../ability.md#want) | I |
+| `thaler` | want mood passing (a whim that fades) | [Want](../ability.md#want) | I |
+| `thogol` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](../ability.md#decision-revisability) | I |
+| `thogom` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](../ability.md#decision-revisability) | I |
+| `thogor` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](../ability.md#decision-revisability) | I |
 <!-- /generated -->
 
 | Job | Example | English | Stage |
@@ -181,21 +181,21 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 | [Plan](../intention.md#plan-predict): yours | `zuwon thagem vowurel.` | *I plan to walk.* | B |
 | [Plan, sketch](../intention.md#plan-predict) | `zuwon thager vowurel.` | *I intend to walk; the details are open.* | B |
 | [Plan, atlas](../intention.md#plan-predict) | `zuwon thagel vowurel.` | *I'm fully prepared to walk.* | B |
-| [Decision](../intention.md#decision): yours, no time | `zuwon thogom vezuyol.` | *I've decided to sing, and can still change that.* | I |
-| [Try](../intention.md#try) | `zuzozen howam varayel.` | *Uzozen tries to write.* | I |
-| [Trial run](../intention.md#try) | `zolazun howar vezuyol.` | *Olazun gives singing a try.* | I |
-| [Committed](../intention.md#try) | `zolazun howal vowurel.` | *Olazun keeps trying to walk.* | I |
-| [Want](../intention.md#want): yours | `zuzozen thalem vowurel.` | *I want Uzozen to walk.* | I |
-| [Someone else's want](../intention.md#whose-intention): a holder | `zuzozen thebamuzozen thalem vowurel.` | *I hear Uzozen wants to walk.* | I |
-| [Want, a whim](../intention.md#want-endings) | `zolazun thaler vezuyol.` | *Right now I feel like having Olazun sing.* | I |
-| [Stacked: want, then plan](../intention.md#want-endings) | `zuwon thalel thagem vowurel.` | *I have long wanted to walk, and I plan to.* | I |
-| [Against my wishes](../intention.md#want-endings) | `zuzozen vowurel uem thalem.` | *Uzozen walks, against my wishes.* | I |
-| [Against someone's wishes](../intention.md#whose-intention) | `zolazun vezuvol uem theyemuzozen thalem.` | *Olazun sleeps, against Uzozen's wishes, as far as I can tell.* | I |
+| [Decision](../ability.md#decision): yours, no time | `zuwon thogom vezuyol.` | *I've decided to sing, and can still change that.* | I |
+| [Try](../ability.md#try) | `zuzozen howam varayel.` | *Uzozen tries to write.* | I |
+| [Trial run](../ability.md#try) | `zolazun howar vezuyol.` | *Olazun gives singing a try.* | I |
+| [Committed](../ability.md#try) | `zolazun howal vowurel.` | *Olazun keeps trying to walk.* | I |
+| [Want](../ability.md#want): yours | `zuzozen thalem vowurel.` | *I want Uzozen to walk.* | I |
+| [Someone else's want](../ability.md#whose-intention): a holder | `zuzozen thebamuzozen thalem vowurel.` | *I hear Uzozen wants to walk.* | I |
+| [Want, a whim](../ability.md#want-endings) | `zolazun thaler vezuyol.` | *Right now I feel like having Olazun sing.* | I |
+| [Stacked: want, then plan](../ability.md#want-endings) | `zuwon thalel thagem vowurel.` | *I have long wanted to walk, and I plan to.* | I |
+| [Against my wishes](../ability.md#want-endings) | `zuzozen vowurel uem thalem.` | *Uzozen walks, against my wishes.* | I |
+| [Against someone's wishes](../ability.md#whose-intention) | `zolazun vezuvol uem theyemuzozen thalem.` | *Olazun sleeps, against Uzozen's wishes, as far as I can tell.* | I |
 | [Someone else's plan](../knowing.md#holder): a holder | `zuzozen thebamuzozen thagem vowurel.` | *I hear Uzozen plans to walk.* | I |
-| [Someone else's decision](../intention.md#whose-intention): a holder | `zuzozen theyemuzozen thogom vowurel.` | *I gather Uzozen has decided to walk, and can still change that.* | I |
-| [Plan, and when](../intention.md#predict-evidentiality) | `zuwon thagem blral vuhohol.` | *I plan to sit down later.* | I |
-| [Try, failing that](../intention.md#fallback): `xon` | `zuzozen howar vowurel xon zuzozer vezuyol.` | *Uzozen gives walking a try; failing that, Uzozen sings.* | I |
-| [A plan with backups](../intention.md#fallback) | `zuwon thagel vowurel xon zuwon thagel vezuyol xon zuwon thagel vezuvol.` | *walk; failing that, sing; failing that, sleep* | I |
+| [Someone else's decision](../ability.md#whose-intention): a holder | `zuzozen theyemuzozen thogom vowurel.` | *I gather Uzozen has decided to walk, and can still change that.* | I |
+| [Plan, and when](../ability.md#predict-evidentiality) | `zuwon thagem blral vuhohol.` | *I plan to sit down later.* | I |
+| [Try, failing that](../ability.md#fallback): `xon` | `zuzozen howar vowurel xon zuzozer vezuyol.` | *Uzozen gives walking a try; failing that, Uzozen sings.* | I |
+| [A plan with backups](../ability.md#fallback) | `zuwon thagel vowurel xon zuwon thagel vezuyol xon zuwon thagel vezuvol.` | *walk; failing that, sing; failing that, sleep* | I |
 
 The `bl-` word right after PLAN is only ever a time. WANT, PLAN, and DECISION take no `bl-` word for whose they are.
 
@@ -206,20 +206,20 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 <!-- cheat-sheet: knowing-intending -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`xa`](../intention.md#can) | they can | *can* | I |
-| [`xe`](../intention.md#ability-stance) | can't, just for now | *can't right now* | I |
-| [`xo`](../intention.md#ability-stance) | can't yet | *can't yet* | I |
-| [`xu`](../intention.md#ability-stance) | can never | *can never* | I |
+| [`xa`](../ability.md#can) | they can | *can* | I |
+| [`xe`](../ability.md#ability-stance) | can't, just for now | *can't right now* | I |
+| [`xo`](../ability.md#ability-stance) | can't yet | *can't yet* | I |
+| [`xu`](../ability.md#ability-stance) | can never | *can never* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Can](../intention.md#can) | `zuzozen vezuyoxal.` | *Uzozen can sing.* | I |
-| [Could, a past skill](../intention.md#can) | `zuzozen vezuyoxal helam.` | *Uzozen could sing.* | I |
-| [So can I](../intention.md#can) | `zuzozen vowurexal. zolazun vowurexar.` | *Uzozen can walk, and so can Olazun.* | I |
-| [Can't right now](../intention.md#ability-stance) | `zolazun vezuyoxel.` | *Olazun can't sing right now.* | I |
-| [Can't yet](../intention.md#ability-stance) | `zahelan vezuyoxol.` | *Ahelan can't sing yet.* | I |
-| [Can never](../intention.md#ability-stance) | `zuzozen varuvexul.` | *Uzozen can never run.* | I |
-| [No single verb](../intention.md#ability-fallback) | `zuzozen hodaxel.` | *Uzozen can't right now.* | I |
+| [Can](../ability.md#can) | `zuzozen vezuyoxal.` | *Uzozen can sing.* | I |
+| [Could, a past skill](../ability.md#can) | `zuzozen vezuyoxal helam.` | *Uzozen could sing.* | I |
+| [So can I](../ability.md#can) | `zuzozen vowurexal. zolazun vowurexar.` | *Uzozen can walk, and so can Olazun.* | I |
+| [Can't right now](../ability.md#ability-stance) | `zolazun vezuyoxel.` | *Olazun can't sing right now.* | I |
+| [Can't yet](../ability.md#ability-stance) | `zahelan vezuyoxol.` | *Ahelan can't sing yet.* | I |
+| [Can never](../ability.md#ability-stance) | `zuzozen varuvexul.` | *Uzozen can never run.* | I |
+| [No single verb](../ability.md#ability-fallback) | `zuzozen hodaxel.` | *Uzozen can't right now.* | I |
 
 ## Don't mix up {#dont-mix-up}
 
@@ -230,6 +230,6 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | `theyel` *strong clues* ([how good your evidence is](../knowing.md#evidence-strength)) | | `thregel` *third-hand* ([how many hands](../knowing.md#hand-depth)) |
 | `thubem blral` *will, by the pattern* ([a forecast](../knowing.md#forecast)) | | `thagem` *I plan to* ([an intention](../intention.md#plan-predict)) |
 | `haram` *still in effect* ([the outcome stays](../notional-standing.md#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](../notional-standing.md#phasal)) |
-| `thogom` *I've decided* ([how open the choice is, no time](../intention.md#decision)) | | `thagem` *I plan* ([how worked out, still ahead](../intention.md#plan-predict)) |
-| `howam` *tries* ([acts, outcome open](../intention.md#try)) | | `vezuyoxal` *can sing* ([a claim about ability](../intention.md#can)) |
-| `thalem` *I want* ([your own wanting](../intention.md#want)) | | `thebamuzozen thagem` *I hear Uzozen plans* ([someone else's plan](../knowing.md#holder)) |
+| `thogom` *I've decided* ([how open the choice is, no time](../ability.md#decision)) | | `thagem` *I plan* ([how worked out, still ahead](../intention.md#plan-predict)) |
+| `howam` *tries* ([acts, outcome open](../ability.md#try)) | | `vezuyoxal` *can sing* ([a claim about ability](../ability.md#can)) |
+| `thalem` *I want* ([your own wanting](../ability.md#want)) | | `thebamuzozen thagem` *I hear Uzozen plans* ([someone else's plan](../knowing.md#holder)) |

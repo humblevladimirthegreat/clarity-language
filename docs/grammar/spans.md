@@ -428,7 +428,7 @@ A span fills a role like any noun, so a [role pointer](pronouns.md#role-pointers
 
 The same holds for a loan word or any other span, and `dwadal` is [another one](pronouns.md#a-new-one) of what the span holds.
 
-An aside gives role pointers nothing to point back to. A [tag](pronouns.md#tag-pronouns) assigned inside a cite or an aside does not hold outside it, and a pointer outside never reaches a word inside one.
+An aside gives role pointers nothing to point back to. A [tag](tag-pronouns.md#tag-pronouns) assigned inside a cite or an aside does not hold outside it, and a pointer outside never reaches a word inside one.
 
 A span in a `/v/` slot (`v[vozohul]`) has no resume pronoun.
 
@@ -454,7 +454,7 @@ A loan adjective or a cite leans the same way:
 
 ### One of a title (`^@`) {#one-of-a-title}
 
-A span with **`@`** names the work or product itself: <code>d@&lt;iPhone&gt;</code> is the iPhone as a product. For one thing that name applies to (one phone, one copy of a book, one performance of a song), write **`^@`** in the mark slot instead. It is the span's form of the [**-ln**](word-endings.md#name-instance--ln) ending, and like **-ln** it brings a new thing into the conversation. (cue: **^** points up to the name the thing falls under)
+A span with **`@`** names the work or product itself: <code>d@&lt;iPhone&gt;</code> is the iPhone as a product. For one thing that name applies to (one phone, one copy of a book, one performance of a song), write **`^@`** in the mark slot instead. It is the span's form of the [**-ln**](proper-names.md#name-instance--ln) ending, and like **-ln** it brings a new thing into the conversation. (cue: **^** points up to the name the thing falls under)
 
 > <code>zolazun d^@&lt;iPhone&gt; vawebol.</code>
 >
@@ -482,7 +482,7 @@ A quoted question or command keeps its own [act word](speech-moves.md#speech-act
 
 ### Topics in a quote {#topic-quotes}
 
-A cite holds someone else's words, so a [topic](topic.md#topic) never carries into it or out of it. The inside of a cite starts with no topic, no [tags](pronouns.md#tag-pronouns), and its own targets for [role pointers](pronouns.md#role-pointers), and may open with a topic word of its own. When the cite ends, your own topic and tags are as they were.
+A cite holds someone else's words, so a [topic](topic.md#topic) never carries into it or out of it. The inside of a cite starts with no topic, no [tags](tag-pronouns.md#tag-pronouns), and its own targets for [role pointers](pronouns.md#role-pointers), and may open with a topic word of its own. When the cite ends, your own topic and tags are as they were.
 
 A cite or opaque span can also be a topic word itself, under `/x/`: a titled work, a word as spelling (with the mention marker before it), or a foreign name.
 
@@ -517,7 +517,7 @@ Sometimes a word like *possibly*, or a join, should apply to only part of the se
 
 Here **`hegugom`** reaches only *a red dog*, not the seeing.
 
-A [tone mark](speech-moves.md#tone-marks) written right before the opening brace colors the whole island (`!{ hegugom zudozol gerulel }`).
+A [tone mark](speech-acts.md#tone-marks) written right before the opening brace colors the whole island (`!{ hegugom zudozol gerulel }`).
 
 **Compare with:** quoting, asides, mentions, and opaque blobs use [spans](#writing) (`d[…]`, `th(…)`, <code>d&lt;…&gt;</code>). Islands only group so a binder inside can target that chunk.
 
@@ -888,6 +888,6 @@ Both quotes trail off; with **`|`**, the closer also shuts every span still open
 
 - Scope islands: [joins.md](joins.md#scope-islands-join)
 - Identity vs parenthetical comment: [predication.md](predication.md#identity)
-- Multipart names: [word-endings.md](word-endings.md#multipart-names)
-- Titled phrases (hook / join / span): [word-endings.md](word-endings.md#titled-phrases)
+- Multipart names: [word-endings.md](proper-names.md#multipart-names)
+- Titled phrases (hook / join / span): [word-endings.md](proper-names.md#titled-phrases)
 - Prefix-less citation outside a clause: [word-endings.md](word-endings.md#citation-forms)

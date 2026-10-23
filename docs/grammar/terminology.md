@@ -14,19 +14,19 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 
 | Label | Gloss | Example | Teach |
 |-------|-------|---------|-------|
-| **ABIL** | Hostless *can* / *can’t* (no single verb) | `hodaxel` | [Intention](intention.md#ability-fallback) |
+| **ABIL** | Hostless *can* / *can’t* (no single verb) | `hodaxel` | [Ability, decision, and try](ability.md#ability-fallback) |
 | **AIMED** | Emotion locus: aimed at a target | `wawothumol` | [Feelings and permission](feelings-permission.md#emotion-compose) |
 | **ASIDE** | An aside span | `th(hogowul)` | [Spans](spans.md#asides) |
 | **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwavam` | [Feelings and permission](feelings-permission.md#say-words) |
-| **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Intention](intention.md#try) |
+| **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Ability, decision, and try](ability.md#try) |
 | **AWAY** | Emotion locus: moving off from a target | `wawothumum` | [Feelings and permission](feelings-permission.md#emotion-compose) |
-| **CAUSE** | Mechanism-framing mood (*make X do*) | `thewem` | [Causation](causation.md#cause) |
+| **CAUSE** | Mechanism-framing mood (*make X do*) | `thewem` | [Iff, fault, and CAUSE](iff-fault.md#cause) |
 | **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraor` | [Feelings and permission](feelings-permission.md#emotion-compose) |
 | **CITE** | A cite span: quoted wording | `d[uzozen]` | [Spans](spans.md#writing) |
 | **CLUES** | Evidential: reasoned from clues about this case | `theyem` | [Knowing](knowing.md#evidentiality) |
 | **CHOICE** | Say word answer: their call | `hwavom` | [Feelings and permission](feelings-permission.md#say-words) |
 | **COLLAPSE** | Emotion locus: out of fight, giving up | `wawothumual` | [Feelings and permission](feelings-permission.md#emotion-compose) |
-| **DECISION** | Pick-firmness mood | `thogom` | [Intention](intention.md#decision) |
+| **DECISION** | Pick-firmness mood | `thogom` | [Ability, decision, and try](ability.md#decision) |
 | **DEDUCED** | Evidential: must hold if the premises hold | `thanam` | [Knowing](knowing.md#deduction) |
 | **FAWN** | Emotion locus: placating a target | `wawothumaem` | [Feelings and permission](feelings-permission.md#emotion-compose) |
 | **FLOWING** | Emotion motion: steady, a current you can ride | `wawothumem` | [Feelings and permission](feelings-permission.md#emotion-compose) |
@@ -55,7 +55,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **STILL** | Emotion motion: not moving (held, frozen, numb) | `wawothumol` | [Feelings and permission](feelings-permission.md#emotion-compose) |
 | **SURGING** | Emotion motion: in waves or spikes | `wuwathuraor` | [Feelings and permission](feelings-permission.md#emotion-compose) |
 | **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruom` | [Feelings and permission](feelings-permission.md#emotion-compose) |
-| **WANT** | Desire mood: lasting / unstated / passing | `thalem` | [Intention](intention.md#want) |
+| **WANT** | Desire mood: lasting / unstated / passing | `thalem` | [Ability, decision, and try](ability.md#want) |
 
 **Compare with:** [quasi](#quasi) (`-e-xROOT`) is not **NOTIONAL**.
 
@@ -86,13 +86,13 @@ From [numbers](numbers.md#marker-vowel-referential-identity): **scalar** (`+` / 
 
 Hosted *can* / *can’t* (`xa` / `xe` / `xo` / `xu`) and hostless **ABIL**.
 
-[Intention](intention.md#ability)
+[Ability, decision, and try](ability.md#ability)
 
 ### Act word
 
 The written `/y/` word: **`yal` / `yol` / `yel` / `yul`** and soft **-m**.
 
-[Speech moves](speech-moves.md#speech-act)
+[Speech acts and tone marks](speech-acts.md#speech-act)
 
 **Compare with:** [speech act](#speech-act) is the setting (statement / question / command / prohibition). Polar [stance](#polar-stance) particles are not act words.
 
@@ -190,7 +190,7 @@ Silence counted in beats at a sentence edge with no word: a **break** puts the n
 
 A slot-part role compound on `/h/` (`hwezuduyel`): the role the act is done in (*as a teacher*).
 
-[Role compounds](roles.md#capacity)
+[Viewpoint and landmark](viewpoint.md#capacity)
 
 **Compare with:** resemblance is the [similative](relations.md#similative) (`hewom blwezuduyel` *like a teacher*). [Classification](#classification) on `/ɡ/` says someone **is** that role (`gwezuduyel`).
 
@@ -201,13 +201,13 @@ A slot-part role compound on `/h/` (`hwezuduyel`): the role the act is done in (
 
 Prescription endings on sake **`the`**: why a move is welcome. **-l** invited, **-m** offered to serve the sake, **-r** a trial, worth trying to see whether it serves the sake.
 
-[Sakes](sakes.md#sake-force)
+[Prescription and motive](prescription.md#sake-force)
 
 ### Changeability
 
 Endings on unmet **`thu`**, **DECISION**, and ability *can’t*.
 
-[Sakes](sakes.md#sake-changeability), [Intention](intention.md#decision)
+[Sakes](sakes.md#sake-changeability), [Ability, decision, and try](ability.md#decision)
 
 ### Citation / prefix-less citation
 
@@ -239,13 +239,13 @@ Who counts as *we* / *you* when names are unavailable.
 
 **-x** on `/v/` (one shared act) vs on `/ɡ/` (property of the group as a unit).
 
-[Plurality](plurality.md#verbs-v), [plurality](plurality.md#adjectives-g)
+[Collectives](collectives.md#verbs-v), [plurality](collectives.md#adjectives-g)
 
 ### Command / request / prohibition
 
 Speech act **`yel` / `yem` / `yul` / `yum`**.
 
-[Speech moves](speech-moves.md#speech-act)
+[Speech acts and tone marks](speech-acts.md#speech-act)
 
 ### Comparative / superlative / equative
 
@@ -263,13 +263,13 @@ Rank join + SHARED **scale** (`/ɡ/` quality or `/h/` manner); single-item = sup
 
 Polar patterns that confirm a denied body.
 
-[Questions](questions.md#confirming-a-negative)
+[Polar inventory and rhetorical](polar-inventory.md#confirming-a-negative)
 
 ### Content of the event
 
 A role word whose part consonant names a quality of the event (`dwahowurel` *a way of walking*, `dwahar` *the way it was done*), not a person in it.
 
-[Role compounds](roles.md#content-of-the-event)
+[Viewpoint and landmark](viewpoint.md#content-of-the-event)
 
 ### Continue (`/x/`)
 
@@ -393,7 +393,7 @@ Hosted: noun bolted onto a complex `/ɡ/`, `/h/`, or `/th/`. Unhosted: recipient
 
 Mid-word **`th`** plus a vowel on a content root, or the vowel right after **`w`** on a role word: this episode (**`tha`**), practiced role (**`the`**), this pair (**`tho`**), type across scenes (**`thu`**), or a stacked vowel.
 
-[Predication](predication.md#label-scope)
+[Label scope](label-scope.md#label-scope)
 
 **Compare with:** [restrictor](#restrictor) names the occasions, not the kind of claim. [Usual role](#usual-role) is practiced-role **`e`** on a role compound.
 
@@ -405,7 +405,7 @@ Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; frame **-m**
 
 ### Means
 
-Extra-noun [hook](hooks.md#extra-noun) **`ael`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*. To name a kind of tool as its own noun, use a compound with a head root ([places, tools, and times](roles.md#places-tools-times)).
+Extra-noun [hook](hooks.md#extra-noun) **`ael`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*. To name a kind of tool as its own noun, use a compound with a head root ([places, tools, and times](viewpoint.md#places-tools-times)).
 
 [Hooks](hooks.md#extra-noun-intermediate)
 
@@ -449,7 +449,7 @@ Under question, join **-r** is a blank; several **-r** = fill all.
 
 Speech-act ending **-l** vs **-m**.
 
-[Speech moves](speech-moves.md#speech-act)
+[Speech acts and tone marks](speech-acts.md#speech-act)
 
 ### Forecast
 <a id="forecast-source"></a>
@@ -482,7 +482,7 @@ Whose view a clause reports. The name is fused onto an evidential, **MAY**, or *
 
 Content root a sake `th`-stance or an ability `x`-stance attaches to.
 
-[Intention](intention.md#ability), [sakes](sakes.md)
+[Ability, decision, and try](ability.md#ability), [sakes](sakes.md)
 
 **Compare with:** a measure [unit](#measure-phrase-unit) is not a host. Classification names the classified noun, not a host.
 
@@ -612,7 +612,7 @@ Listed pieces before a restrictor (when the host applies).
 
 Single-item **-m** under question (*How about X?*).
 
-[Questions](questions.md#yes-no-single-item-standalone)
+[Polar inventory and rhetorical](polar-inventory.md#yes-no-single-item-standalone)
 
 ### Generic pronoun
 
@@ -626,7 +626,7 @@ Single-item **-m** under question (*How about X?*).
 
 Ending **-ln** (span mark **`^@`**): one thing a name applies to, such as one unit of a brand or one copy of a work (`duzozeln` *an Uzozen*).
 
-[Word endings](word-endings.md#name-instance--ln)
+[Proper names and titled phrases](proper-names.md#name-instance--ln)
 
 ### Ordinary compound / lexical compound
 
@@ -654,13 +654,13 @@ Closed `/y/` particles **`yael` / `yuel` / …**.
 
 Motive **`tho`** endings.
 
-[Sakes](sakes.md#sake-preference)
+[Prescription and motive](prescription.md#sake-preference)
 
 ### Prominence
 
 Singling out one word against others: the contrast mark `&`. Word order adds no prominence.
 
-[Clause](clause.md#english-emphasis), [Speech moves](speech-moves.md#tone-marks)
+[Clause](clause.md#english-emphasis), [Speech acts and tone marks](speech-acts.md#tone-marks)
 
 ### Quasi
 
@@ -827,7 +827,7 @@ Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-
 
 Utterance setting: statement / question / command / prohibition.
 
-[Speech moves](speech-moves.md#speech-act)
+[Speech acts and tone marks](speech-acts.md#speech-act)
 
 **Compare with:** sake **prescription warrant** is [invited / offered / trial](#asked-typical-history), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
 
@@ -847,13 +847,13 @@ A dictionary word whose head is a bare root tail instead of a second root (`zahu
 
 **`yol`** plus a [polar stance](#polar-stance) word as its own turn after a sentence: asks the listener for that answer (`yol yael.` *…, right?*, `yol yaol.` *…, okay?*, `yol yuel.` *…, or am I wrong?*).
 
-[Questions](questions.md#tags)
+[Polar inventory and rhetorical](polar-inventory.md#tags)
 
 ### Tag pronoun
 
 Role letter + **`w`** + a tag vowel (A, E, O, U) + ending: a label the speaker assigns to a phrase (`zudozol zwal` *a dog, call it A*) and recalls in any role (`zwar`), or shares with **-m** (`zwam` *what A did*).
 
-[Pronouns](pronouns.md#tag-pronouns)
+[Tag pronouns and resume sense](tag-pronouns.md#tag-pronouns)
 
 ### Time horizon
 <a id="contact--contact-channel"></a>
@@ -866,7 +866,7 @@ Met-sake **`tha`** endings: **-l** lasting, **-m** unstated (default), **-r** im
 
 A proper-name phrase whose **-n** sits on the hook, join, or span; inner words keep their own endings.
 
-[Word endings](word-endings.md#titled-phrases)
+[Proper names and titled phrases](proper-names.md#titled-phrases)
 
 ### Threshold
 
@@ -904,7 +904,7 @@ New speech move.
 
 Join readings when the speech act is question.
 
-[Questions](questions.md#under-question)
+[Polar inventory and rhetorical](polar-inventory.md#under-question)
 
 ### Unspecified member
 
@@ -940,7 +940,7 @@ Sake + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`goyem`** + `/w/
 
 DIR × ANCHOR; the anchor sets the facing frame (person or oriented object, or a role pointer on **-r**); the ending refers to the anchor, not DIR.
 
-[Role compounds](roles.md#viewpoint-laterals)
+[Viewpoint and landmark](viewpoint.md#viewpoint-laterals)
 
 ### Vocative
 

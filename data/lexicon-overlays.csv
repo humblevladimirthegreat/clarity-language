@@ -69,9 +69,9 @@ elam,w,🪹,former_climate,FORMER,former-climate mood (not the climate claimed n
 ager,th,🗺️,plan,plan-sketch,plan mood sketch map-resolution (direction only; details left open),map charts a route; sketch plan is intention without steps,intention.md#plan
 agem,th,🗺️,plan,plan-itinerary,plan mood itinerary map-resolution (steps on the map; detail unstated),map charts a route; itinerary plan fills in how,intention.md#plan
 agel,th,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups,intention.md#plan
-ogol,th,✅,decision,DECISION-irreversible,decision mood irreversible changeability (settled pick; no time),checkmark confirms a pick; irreversible decision is settled as final,intention.md#decision-revisability
-ogom,th,✅,decision,DECISION-modifiable,decision mood modifiable changeability (open to revision; no time),checkmark confirms a pick; modifiable decision stays open to change,intention.md#decision-revisability
-ogor,th,✅,decision,DECISION-temporary,decision mood temporary changeability (pick for now; no time),checkmark confirms a pick; temporary decision holds only this moment,intention.md#decision-revisability
+ogol,th,✅,decision,DECISION-irreversible,decision mood irreversible changeability (settled pick; no time),checkmark confirms a pick; irreversible decision is settled as final,ability.md#decision-revisability
+ogom,th,✅,decision,DECISION-modifiable,decision mood modifiable changeability (open to revision; no time),checkmark confirms a pick; modifiable decision stays open to change,ability.md#decision-revisability
+ogor,th,✅,decision,DECISION-temporary,decision mood temporary changeability (pick for now; no time),checkmark confirms a pick; temporary decision holds only this moment,ability.md#decision-revisability
 omam,th,💭,may,MAY,may mood (could be; default),thought balloon: the scene may be so; -m does not find out and does not shrug it off,knowing.md#may
 omam,w,💭,may,MAY,may mood (could be; default),thought balloon: the scene may be so; -m does not find out and does not shrug it off,knowing.md#mood-on-one-adjective
 omal,th,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),"thought balloon plus looking: could be, and you are seeking",knowing.md#hold-endings-may
@@ -84,17 +84,17 @@ eyur,th,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a
 eyur,w,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a possibility or assumption for now),theater mask tried on for a moment to toy with what might follow,knowing.md#mood-on-one-adjective
 eyul,th,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,notional-standing.md#hold-endings-notional
 eyul,w,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,knowing.md#mood-on-one-adjective
-odam,h,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#ability-fallback
-odam,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#ability-fallback
+odam,h,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,ability.md#ability-fallback
+odam,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,ability.md#ability-fallback
 orol,g,🪙,identity,SAME,SAME identity (identical-to / same-as),coin has two faces one substance; same is one referent two labels,predication.md#identity-same
 ohom,th,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,dependents.md#poles
 ohom,g,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if
 ehem,th,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,dependents.md#poles
-ehem,g,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,causation.md#only-because
+ehem,g,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,iff-fault.md#only-because
 ahum,th,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,dependents.md#poles
-ahul,th,🧱,clause_pole,because.fault,BECAUSE clause pole with fault (the reason broke a norm),a wall stands on its foundation; -l locks the blame on a broken norm,causation.md#fault
-ahur,th,🧱,clause_pole,because.share,BECAUSE clause pole with a share (the reason contributed among others),a wall stands on its foundation; -r is one wall among several holding it up,causation.md#fault
-ahum,g,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,causation.md#only-because
+ahul,th,🧱,clause_pole,because.fault,BECAUSE clause pole with fault (the reason broke a norm),a wall stands on its foundation; -l locks the blame on a broken norm,iff-fault.md#fault
+ahur,th,🧱,clause_pole,because.share,BECAUSE clause pole with a share (the reason contributed among others),a wall stands on its foundation; -r is one wall among several holding it up,iff-fault.md#fault
+ahum,g,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,iff-fault.md#only-because
 ebom,th,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,dependents.md#poles
 ebom,g,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
 ezom,h,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#poles
@@ -128,8 +128,8 @@ uner,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now /
 uner,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
 uner,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
 uner,th,🔖,clause_pole,as-of.bookmark,AS-OF stance pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#stance-as-of
-ewem,th,⚙️,cause,CAUSE,CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make),a machine runs on mechanism; mechanism frames how the link works,causation.md#cause
-ewem,w,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),a machine runs on mechanism; mechanism frames how the link works,causation.md#cause
+ewem,th,⚙️,cause,CAUSE,CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make),a machine runs on mechanism; mechanism frames how the link works,iff-fault.md#cause
+ewem,w,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),a machine runs on mechanism; mechanism frames how the link works,iff-fault.md#cause
 an,v,,join_act,includes,join-act includes or adds object,set join a+n as verb; includes adds this object to the set,join-across-roles.md#join-act-verbs
 an,g,,join_relation,including,join-relation including (adjective + argument),set join a+n on /g/; including frames host with argument,join-across-roles.md#join-relations
 an,h,,join_relation,including,join-relation with or including (adverb + argument),set join a+n on /h/; with frames event alongside argument,join-across-roles.md#join-relations
@@ -207,12 +207,12 @@ uvum,h,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could 
 uvum,w,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,notional-standing.md#phasal
 uvur,h,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,notional-standing.md#phasal
 uvur,w,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,notional-standing.md#phasal
-owal,h,🧪,attempt,ATTEMPT-committed,attempt mood committed (keep going until it works or is ruled out),test tube runs the experiment; a committed attempt keeps testing until it settles,intention.md#try
-owam,h,🧪,attempt,ATTEMPT-unstated,attempt mood (commitment unstated),test tube tries a sample; an attempt is testing whether it works,intention.md#try
-owar,h,🧪,attempt,ATTEMPT-trial,attempt mood trial run (low-stakes probe; failing is useful data),test tube tries a small sample; a trial run is a probe whose failure still teaches,intention.md#try
-alel,th,🌠,want,WANT-lasting,want mood lasting (a wish that keeps returning),shooting star grants a wish; a lasting want is a wish that keeps coming back,intention.md#want
-alem,th,🌠,want,WANT-unstated,want mood (duration unstated),wishing on a star; a want is wishing for a thing or an act,intention.md#want
-aler,th,🌠,want,WANT-passing,want mood passing (a whim that fades),shooting star streaks past; a passing want fades quickly,intention.md#want
+owal,h,🧪,attempt,ATTEMPT-committed,attempt mood committed (keep going until it works or is ruled out),test tube runs the experiment; a committed attempt keeps testing until it settles,ability.md#try
+owam,h,🧪,attempt,ATTEMPT-unstated,attempt mood (commitment unstated),test tube tries a sample; an attempt is testing whether it works,ability.md#try
+owar,h,🧪,attempt,ATTEMPT-trial,attempt mood trial run (low-stakes probe; failing is useful data),test tube tries a small sample; a trial run is a probe whose failure still teaches,ability.md#try
+alel,th,🌠,want,WANT-lasting,want mood lasting (a wish that keeps returning),shooting star grants a wish; a lasting want is a wish that keeps coming back,ability.md#want
+alem,th,🌠,want,WANT-unstated,want mood (duration unstated),wishing on a star; a want is wishing for a thing or an act,ability.md#want
+aler,th,🌠,want,WANT-passing,want mood passing (a whim that fades),shooting star streaks past; a passing want fades quickly,ability.md#want
 ubam,w,🧦,pairing,respectively,respective pairing (item N of one list goes with item N of the other),socks sort into matched pairs; respectively matches each item to its partner,joins.md#respectively
 egel,g,🔤,mention,MENTION,mention marker (the span is a word or phrase as spelling),letters spell a word; a mention is a word as its letters,spans.md#mention
 egen,g,🔤,mention,NAME.MENTION,name-string mention marker (the span is a name as spelling),letters spell a name; the name-string is a name as its letters,spans.md#mention

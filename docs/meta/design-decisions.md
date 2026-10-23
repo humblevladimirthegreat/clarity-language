@@ -121,7 +121,7 @@ A dependent runs to the end of the written sentence, so `dorl P xol Q` is *wheth
 Role letter + `w` + knowledge vowel + kind letter + a standalone join (`zwuyar` *someone; I don't know who*, `zweyual` *everyone we know*, `hweral` *never, in the times we both know*) is retired.
 
 - **The kind letter** mostly made one word of what two already say (`zeyol zar`, `zul geyol`). It also made a root tail, otherwise a memory aid, into grammar.
-- **The knowledge vowel** was optional, and plain `zar` stayed the default. A route with an extra clause is just as optional, so nothing is lost on how often people mark who knows which one, only length. A real question is plain `yol … bar`; *remind me* takes MEMORY on the question, and a choice PLAN; *I know who* is its own sentence (`zuwon vanam dorl zar.`); *you know the one* is a resume with no antecedent (`zeyor`); *nobody I'll name* as a source is `thebam blumon` plus that sentence; a shared-history *never* is the holder seam (`hal thevumayan`); *everyone we know* bounds the join with pair scope (`zual gwodanam blayan`). The quiz is a stacked question over a statement ([quiz](../grammar/questions.md#quiz)).
+- **The knowledge vowel** was optional, and plain `zar` stayed the default. A route with an extra clause is just as optional, so nothing is lost on how often people mark who knows which one, only length. A real question is plain `yol … bar`; *remind me* takes MEMORY on the question, and a choice PLAN; *I know who* is its own sentence (`zuwon vanam dorl zar.`); *you know the one* is a resume with no antecedent (`zeyor`); *nobody I'll name* as a source is `thebam blumon` plus that sentence; a shared-history *never* is the holder seam (`hal thevumayan`); *everyone we know* bounds the join with pair scope (`zual gwodanam blayan`). The quiz is a stacked question over a statement ([quiz](../grammar/polar-inventory.md#quiz)).
 - **The shape is wanted elsewhere.** Role letter + `w` + vowel + consonant is the shape of [role compounds and pointers](../grammar/roles.md#role-compounds).
 - **Hooked joins tighten three of them.** *Everyone here* is `zomxual bluwon`, *people anywhere* `zoxuam blual`, and *never, over a stretch the speaker names* `huxal blarl` ([hooked joins](../grammar/hooks.md#hooked-joins)).
 
@@ -142,7 +142,7 @@ A role word writes its label scope right after **`w`** (`zwazuduyel`, `zwezuduye
 
 ### Stacked scope readings {#stacked-scope-readings}
 
-A **`u`** scope pair reads like a join's *everything but* (**`u`** every scene, the second vowel set aside), and the other pairs read like extra-noun hooks, so **`ao`** is *over*: the label belongs to the situation, not the person ([predication](../grammar/predication.md#scope-stacks)).
+A **`u`** scope pair reads like a join's *everything but* (**`u`** every scene, the second vowel set aside), and the other pairs read like extra-noun hooks, so **`ao`** is *over*: the label belongs to the situation, not the person ([predication](../grammar/label-scope.md#scope-stacks)).
 
 - **`ao` is not *this time, toward this one*.** That reading was plain **`a`** + **`o`**, the only non-**`u`** pair that ignored its hook. The situation reading targets the commonest labeling bias (character blamed for what the circumstances did), which **`tha`** only limits in time. Loss: *this once, to Olazun* takes **`tha`** with a plain recipient, or two words.
 - **`ue` is off duty, not refusal.** Setting the role aside presumes it; refusing it denies it, and one spelling cannot do both. Denying a label is **`gul`** after it.
@@ -194,7 +194,7 @@ Plain *I* is `uwon`, not your own name. A name for *I* left *I* and *you* unmatc
 
 ### Multipart names
 
-A full name is the given name plus a family name on `/ɡ/` + **-n** ([word-endings.md](../grammar/word-endings.md#multipart-names)). Rejected:
+A full name is the given name plus a family name on `/ɡ/` + **-n** ([word-endings.md](../grammar/proper-names.md#multipart-names)). Rejected:
 
 - **`/v/`, `/h/`, `/w/` or `/th/` + -n as a name part:** each works on the whole clause and already has its own **-n** reading (a titled event, a named standard, a named scale), so a name like *Uguda Owoga* on `/v/` would read as *Uguda performs Owoga*. Names with grammar inside are titled phrases or spans.
 - **`/ɡ/` + -m for belonging to a family:** **-m** is a root's published abstract sense, so a family-name root on **-m** could not be told from that sense. Belonging uses *whose* (`em` + the family).
@@ -231,7 +231,7 @@ The ranking is the same in semitones (0 / 3 / 5 / 7) as in steps. An order with 
 
 Vowel sound still separates every pair, so the crowded rises cost something only when the vowels are also half-heard. Removing a same-shape pair that crosses the **u** line, and giving polarity the strongest pitch cue, was judged worth two close pairs inside the non-**u** side.
 
-**Polar stance reads by its first vowel.** Alphabet order matches the family ranking (undo, then accept, then pass), so the first vowel of a polar pair names its family ([questions](../grammar/questions.md#polar-stance-fuller-inventory)). Under `u o a e`, *sure* could not start with its accept vowel, and a pair would have to be read by which vowels it has.
+**Polar stance reads by its first vowel.** Alphabet order matches the family ranking (undo, then accept, then pass), so the first vowel of a polar pair names its family ([questions](../grammar/polar-inventory.md#polar-stance-fuller-inventory)). Under `u o a e`, *sure* could not start with its accept vowel, and a pair would have to be read by which vowels it has.
 
 **e comes last, not o.** In a rank join stack the last vowel names the move and the first adjusts it, so every rank join ends in **e** (`e` `ae` `ue` `oe`). Spelling the tie `eo` would make it the one rank join that does not end in **e**. With **u** as /ʉ/, `oe` vs `ue` is a clear contrast, so the sound gives no reason to move **o** last.
 

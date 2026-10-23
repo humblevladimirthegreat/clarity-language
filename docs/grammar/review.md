@@ -368,7 +368,7 @@ z-Ahelan | v-climb . x-it-follows | z-Ahelan | [v-swim | v-not]
 
 z-Ahelan | [g-police | g-not]
 
-**Rule:** [Classification packaging](predication.md#classification-packaging)
+**Rule:** [Classification packaging](label-scope.md#classification-packaging)
 :::
 
 **3.** *Ahelan sees a hammer made of wood.*
@@ -400,7 +400,7 @@ z-Ahelan | [d-hammer | [g-material | bl-wood]] | v-see
 
 z-Olazun | v-cry | [th-because | bl-wind]
 
-**Rule:** [Because, iff, and only because](causation.md#only-because)
+**Rule:** [Because, iff, and only because](iff-fault.md#only-because)
 :::
 
 **6.** *Olazun sits on Ahelan's left.*
@@ -410,7 +410,7 @@ z-Olazun | v-cry | [th-because | bl-wind]
 
 z-Olazun | v-sit | h-west-th-Ahelan
 
-**Rule:** [Viewpoint laterals](roles.md#viewpoint-laterals)
+**Rule:** [Viewpoint laterals](viewpoint.md#viewpoint-laterals)
 :::
 
 **7.** *Uzozen would rather cook than fight.*
@@ -462,7 +462,7 @@ z-Ahelan | d-tent | v-see . z-Ahelan | v-←see | d-bucket
 
 *Ahelan sees a tent. Ahelan sees a bucket too.*
 
-**Rule:** [How English approximates -r](pronouns.md#how-english-approximates-r)
+**Rule:** [How English approximates -r](tag-pronouns.md#how-english-approximates-r)
 :::
 
 **2.** `zolazun zudozal em bolazur zal vazuvel.`
@@ -528,7 +528,7 @@ z-Uzozen | NAME[d-sandwich | instead | d-salad] | v-see
 
 **-n** on the hook names the whole phrase; **`ol`** would be *a salad instead of a sandwich*.
 
-**Rule:** [Titled phrases](word-endings.md#titled-phrases)
+**Rule:** [Titled phrases](proper-names.md#titled-phrases)
 :::
 
 **2.** *Olazun walks like an angry guard.* `zolazun hewom blagayul gunemul vowurel.` or `zolazun gunemul hewom blagayul vowurel.`
@@ -552,7 +552,7 @@ y-Ahelan | y-soft-prohibition | v-cry
 
 **-m** asks softly; **`yul`** is a firm *don't*.
 
-**Rule:** [Speech act: firm and soft](speech-moves.md#speech-act)
+**Rule:** [Speech act: firm and soft](speech-acts.md#speech-act)
 :::
 
 **4.** *Olazun and Ahelan each cook three cookies.* `zolazun zahelan zal vuguyel dugedolx gragel.` or `zolazun zahelan zal vuguyelx dugedolx gragel.`
@@ -564,7 +564,7 @@ y-Ahelan | y-soft-prohibition | v-cry
 
 With a plain verb, each of them cooks three; **`vuguyelx`** would make three in all, between them.
 
-**Rule:** [Verbs (/v/): collective](plurality.md#verbs-v)
+**Rule:** [Verbs (/v/): collective](collectives.md#verbs-v)
 :::
 
 **5.** *Olazun cried, or am I wrong?* `zolazun vagamul. yol yuel.` or `zolazun vagamul. yol yael.`
@@ -576,7 +576,7 @@ z-Olazun | v-cry . y-question | y-no
 
 The tag **`yol yuel`** invites a correction; **`yol yael`** leans toward agreement (*…, right?*).
 
-**Rule:** [Tags: asking for an answer](questions.md#tags)
+**Rule:** [Tags: asking for an answer](polar-inventory.md#tags)
 :::
 
 **6.** *Olazun climbs through the fog.* `zolazun vuguvel uol bovulul.` or `zolazun vuguvel ual bovulul.`
@@ -600,7 +600,7 @@ z-Ahelan | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
 
 **`the`** is the *ought*, and **-r** makes it a move worth trying; `thobathor` would be a motive, not advice: Ahelan cooks, serving their health right away.
 
-**Rule:** [Prescription](sakes.md#sake-force)
+**Rule:** [Prescription](prescription.md#sake-force)
 :::
 
 **8.** *It looks like Olazun fought.* (strong clues) `zolazun theyel vavuvul.` or `zolazun theyem vavuvul.`
@@ -674,7 +674,7 @@ z-Olazun | v-fight | h-night | h-always-except
 
 With **`hul`**, Olazun fights, but not at night, and other times are left open. With **`hual`**, Olazun fights at every time except at night.
 
-**Rule:** [More occasions](restrictors.md#more-occasions)
+**Rule:** [More occasions](more-occasions.md#more-occasions)
 :::
 
 **2.** `zuwon thogol varal.` / `zuwon thogor varal.`
@@ -686,7 +686,7 @@ z-speaker | th-DECISION-temporary | v-pay
 
 With **`thogol`**, I have decided for good to pay. With **`thogor`**, I have decided to pay only for now.
 
-**Rule:** [Decision (revisability)](intention.md#decision)
+**Rule:** [Decision (revisability)](ability.md#decision)
 :::
 
 ## Advanced

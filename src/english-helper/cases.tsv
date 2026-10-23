@@ -26,7 +26,7 @@ Uzozen is glad that it rains.	that	first:feeling-that	*that* after a feeling wor
 My sister couldn't come yesterday.	sister	link:say-people-places.md#kin-words	a kin word goes to its table
 The teacher sings.	teacher	first:role	a doer noun with no root gets a role compound
 The teacher sings.	teacher	link:roles.md#one-time-or-a-practice	the practiced role comes with it
-Uzozen speaks as a teacher.	as a teacher	link:roles.md#capacity	*as a teacher* is the role the act is done in
+Uzozen speaks as a teacher.	as a teacher	link:viewpoint.md#capacity	*as a teacher* is the role the act is done in
 The flower sings.	flower	not:roles.md#role-compounds	a noun with a root of its own is no doer
 The flower sings.	flower	not:roles.md#one-time-or-a-practice	a noun with a root of its own is no doer
 # Clause openers
@@ -37,7 +37,7 @@ I know that.	that	first:job	*that* with no clause after it is a pronoun
 I know that.	that	not:dependents.md#dependent-clauses	*that* with no clause after it is a pronoun
 # Hooks and prepositions
 We went aboard the train.	aboard	link:relations.md#locative-relations	a preposition tagged as an adjective still gets its hook
-The cat slept underneath the table.	underneath	link:roles.md#gravity	a preposition tagged as an adjective still gets its hook
+The cat slept underneath the table.	underneath	link:viewpoint.md#gravity	a preposition tagged as an adjective still gets its hook
 Five dollars per hour.	per	link:say-amounts.md#per-unit	*per* is a rate
 Five dollars per hour.	per	not:hooks.md#extra-noun	*per* is a rate, not an extra-noun hook
 Uzozen walks from the house to the station.	to	has:from-to	*from … to* is noted

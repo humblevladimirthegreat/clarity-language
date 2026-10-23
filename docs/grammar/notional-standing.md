@@ -232,7 +232,7 @@ NOTIONAL takes a [holder](knowing.md#holder) the same way a channel does: `theyu
 ### Hold endings (NOTIONAL) {#hold-endings-notional}
 <a id="notional-hold"></a>
 
-The ending on NOTIONAL says what the imagining is for: with **-l** you rehearse a scene to prepare for doing it, with **-m** you picture it with no further purpose (the default), and with **-r** you toy with a *what if* for the moment. The three run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing), like the endings on [PLAN](intention.md#plan-predict). With **-n**, the word is an ordinary [name](word-endings.md#proper-name--n).
+The ending on NOTIONAL says what the imagining is for: with **-l** you rehearse a scene to prepare for doing it, with **-m** you picture it with no further purpose (the default), and with **-r** you toy with a *what if* for the moment. The three run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing), like the endings on [PLAN](intention.md#plan-predict). With **-n**, the word is an ordinary [name](proper-names.md#proper-name--n).
 
 | Agebon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -301,7 +301,7 @@ A [holder](knowing.md#holder) on a comparison bar names **whose expectation** yo
 
 ### Channels after `uem` {#channel-frame}
 
-English *contrary to what I was told* and *against my gut* say the event went against what a source led you to expect. Put the channel after the hook **`uem`** (*contrary to*), the same way as a ban or a plan ([contrary to a stance](sakes.md#contrary-to-stance)). The pair names what the event goes **against**; the channel then says nothing about how you know the claim.
+English *contrary to what I was told* and *against my gut* say the event went against what a source led you to expect. Put the channel after the hook **`uem`** (*contrary to*), the same way as a ban or a plan ([contrary to a stance](prescription.md#contrary-to-stance)). The pair names what the event goes **against**; the channel then says nothing about how you know the claim.
 
 > `zuzozen vowurel uem thebam.`
 >
@@ -324,7 +324,7 @@ English *contrary to what I was told* and *against my gut* say the event went ag
 | REPORTED `thebam` | what was said or written | *contrary to what I was told* / *contrary to legend* |
 | INTUITION `thabom` | your gut expectation | *against my gut* |
 
-*Off schedule* goes against a plan: **`uem thagem`** ([contrary to a stance](sakes.md#contrary-to-stance)). MIRATIVE already says the claim ran against what you expected, so it does not follow **`uem`**. MAY, NOTIONAL, RESIDUE, and FORMER do not either: none of them is something the event could go against.
+*Off schedule* goes against a plan: **`uem thagem`** ([contrary to a stance](prescription.md#contrary-to-stance)). MIRATIVE already says the claim ran against what you expected, so it does not follow **`uem`**. MAY, NOTIONAL, RESIDUE, and FORMER do not either: none of them is something the event could go against.
 
 A [holder](knowing.md#holder) on a channel after **`uem`** names **whose view** the event goes against. The seam covers only that pair: the event is still your claim.
 
@@ -506,4 +506,4 @@ z-Ahelan | th-NOTIONAL | v-departure
 
 - How you know: [knowing.md](knowing.md)
 - Rank bars: [comparatives.md](comparatives.md#bars)
-- Contrary to a stance: [sakes.md](sakes.md#contrary-to-stance)
+- Contrary to a stance: [sakes.md](prescription.md#contrary-to-stance)

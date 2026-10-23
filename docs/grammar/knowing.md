@@ -386,7 +386,7 @@ English *judging by*, *going by*, and *given that* name the **grounds** for a cl
 >
 > "Olazun punched, judging by the fact that Uzozen is screaming."
 
-Grounds are not a cause. With [`thahum blarl`](causation.md#only-because), the clause after `blarl` is what made the event happen. With a reasoned channel, it is only how you know the event happened: the screaming did not make Olazun punch.
+Grounds are not a cause. With [`thahum blarl`](iff-fault.md#only-because), the clause after `blarl` is what made the event happen. With a reasoned channel, it is only how you know the event happened: the screaming did not make Olazun punch.
 
 > `zuzozen varemul thahum blarl zolazun vanuvul.`
 >
@@ -487,7 +487,7 @@ The frame is **yours**. It covers only your own claims, and someone else who rep
 **What ends it:**
 
 - **A new frame.** Any channel replaces it.
-- **The statement word, written out.** **`yal`** (or **`yam`** / **`yar`**) before a body says you are back in your own voice, with no frame. It is the one place where writing the usually silent [statement word](speech-moves.md#speech-act) changes the meaning. In [two stacked act words](speech-moves.md#stacked-acts), it counts only as the first word, the act you really do: a rhetorical **`yal yol`** is your own claim and ends the frame, but a quiz **`yol yal`** does not.
+- **The statement word, written out.** **`yal`** (or **`yam`** / **`yar`**) before a body says you are back in your own voice, with no frame. It is the one place where writing the usually silent [statement word](speech-acts.md#speech-act) changes the meaning. In [two stacked act words](speech-acts.md#stacked-acts), it counts only as the first word, the act you really do: a rhetorical **`yal yol`** is your own claim and ends the frame, but a quiz **`yol yal`** does not.
 - **`xuvedam`** *by the way*: a digression leaves what you were telling. To go back, name the channel again.
 - **A goodbye**, which ends the conversation.
 
@@ -516,7 +516,7 @@ English *it follows that*, *P, so Q* and *by deduction* claim more than good evi
 >
 > "Uzozen teaches, since every teacher teaches and Uzozen is a teacher."
 
-To claim only that the conclusion follows, put a [pole](causation.md#only-because) between the channel and **`blarl`**. The pole is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
+To claim only that the conclusion follows, put a [pole](iff-fault.md#only-because) between the channel and **`blarl`**. The pole is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
 
 > `zuzozen vuduyel thanam thohom blarl zual gwezuduyel vuduyel xam zuzozen gwezuduyel.`
 >
@@ -591,7 +591,7 @@ A holder [carries forward](#carry-forward) like a channel. After it, your bare c
 >
 > "I gather Uzozen thinks Olazun left. Olazun is asleep." (the sleeping is Uzozen's view too)
 
-The holder word ends the way a noun for that person would. **-n** is a name. **-r** [resumes](pronouns.md#resume-r) someone already named, which is English *he* / *she* / *they*. Add [associative **-x**](plurality.md#associative) after the ending for the person and their associates. A kind of person on **-lx** is some people of that kind. A [tag](pronouns.md#tag-pronouns) never goes in the seam, since the seam letter before its `w` would end a syllable mid-word. For a holder you don't name, name the kind of person: `zolazun theyemeyol velurul.` is *I gather someone thinks Olazun left*.
+The holder word ends the way a noun for that person would. **-n** is a name. **-r** [resumes](pronouns.md#resume-r) someone already named, which is English *he* / *she* / *they*. Add [associative **-x**](plurality.md#associative) after the ending for the person and their associates. A kind of person on **-lx** is some people of that kind. A [tag](tag-pronouns.md#tag-pronouns) never goes in the seam, since the seam letter before its `w` would end a syllable mid-word. For a holder you don't name, name the kind of person: `zolazun theyemeyol velurul.` is *I gather someone thinks Olazun left*.
 
 > `zuzozen vowurel. zolazun theyemuzozer velurul.`
 >
@@ -625,7 +625,7 @@ The holder may be the [topic pronoun](topic.md#topic-pronoun), whoever the conve
 >
 > "I gather one would think Olazun left."
 
-**Someone else's plan** goes the same way. [PLAN](intention.md#plan-predict) alone is yours; after a holder it is theirs, and the seam word says how you know what they plan. After **`uem`** ([contrary to a stance](sakes.md#contrary-to-stance)), write the holder word, then the plan, for *against their plan*.
+**Someone else's plan** goes the same way. [PLAN](intention.md#plan-predict) alone is yours; after a holder it is theirs, and the seam word says how you know what they plan. After **`uem`** ([contrary to a stance](prescription.md#contrary-to-stance)), write the holder word, then the plan, for *against their plan*.
 
 > `zuzozen thebamuzozen thagem vowurel.`
 >
@@ -653,7 +653,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 >
 > "Uzozen walks, against Olazun's plan, as far as I can tell."
 
-**Someone else's motive** goes the same way. A [motive](sakes.md#sake-preference) word alone names what the act serves for you; it does not say why the actor does it. After a holder, the motive is the holder's, and the seam word says how you know their reason.
+**Someone else's motive** goes the same way. A [motive](prescription.md#sake-preference) word alone names what the act serves for you; it does not say why the actor does it. After a holder, the motive is the holder's, and the seam word says how you know their reason.
 
 > `zuzozen vezuyel thawothom theyemuzozen.`
 >
@@ -847,7 +847,7 @@ The scream is your evidence, so it goes after CLUES; **`thahum`** would make the
 
 The `/th/` words MAY and the channels, [NOTIONAL](notional-standing.md#notional), and the `/h/` words [RESIDUE and FORMER](notional-standing.md#residue) cover the whole sentence. When one applies only to a single `/ɡ/` adjective, put the same word on `/w/` right before that adjective instead.
 
-Only words about **how you know** or **how things stand** move to `/w/` this way: the ones above, [CAUSE](causation.md#cause), the [*already* / *still* words](notional-standing.md#phasal), and [*can* with `oda`](intention.md#ability-fallback). A plan, decision, try, or want stays on its own letter (`/th/`, or `/h/` for a try): on `/w/` the same spelling is the ordinary word of its root (`wagem` *as planned*, `wogom` *decidedly*, `wowam` *tentatively*, `walem` *wishfully*).
+Only words about **how you know** or **how things stand** move to `/w/` this way: the ones above, [CAUSE](iff-fault.md#cause), the [*already* / *still* words](notional-standing.md#phasal), and [*can* with `oda`](ability.md#ability-fallback). A plan, decision, try, or want stays on its own letter (`/th/`, or `/h/` for a try): on `/w/` the same spelling is the ordinary word of its root (`wagem` *as planned*, `wogom` *decidedly*, `wowam` *tentatively*, `walem` *wishfully*).
 
 > `zuzozen danobal wevum gerulel vawebol.`
 >
@@ -1032,7 +1032,7 @@ A [cause or condition](causation.md) on a general claim says how things work. It
 >
 > "Every cat sleeps when it is sleepy; that is how it works."
 
-A **definition** works both ways: whatever has the property is that kind, and every member of the kind has it. Write it on a closed fence with **`thehem`** (*if and only if*, from [causation](causation.md#only-because)). The grounds sentence is the defining property. A definition needs no channel, because it is a decision about a word, not a report about the world.
+A **definition** works both ways: whatever has the property is that kind, and every member of the kind has it. Write it on a closed fence with **`thehem`** (*if and only if*, from [causation](iff-fault.md#only-because)). The grounds sentence is the defining property. A definition needs no channel, because it is a decision about a word, not a report about the world.
 
 > `zual geyol gwezuduyel thehem blarl zeyor vuduyel.`
 >

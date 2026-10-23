@@ -123,7 +123,7 @@ export function isGreeting(clause: Clause): boolean {
   const [item, ...more] = part!.items;
   if (more.length > 0 || part!.join || item?.kind !== "package") return false;
   const { head, adjs, glAdj, adjCoord } = item.package;
-  // A full name greets too (`SELFn galuden.`): only family-name `/ɡ/` words on **-n** (word-endings.md#multipart-names).
+  // A full name greets too (`SELFn galuden.`): only family-name `/ɡ/` words on **-n** (proper-names.md#multipart-names).
   const familyName = (adj: GPackage) => adj.word.ending === "n" && !adj.hosted && adj.modifiers.length === 0;
   return !head.pos && head.ending === "n" && !adjCoord && adjs.every(familyName) && (!glAdj || familyName(glAdj));
 }

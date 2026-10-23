@@ -42,7 +42,7 @@ A direction names the **dominant** pull when feelings mix; use two feeling words
 
 Name the landmark with a `bl-` word right after the feeling (after **`goyem`** when the feeling is on `/w/`): the target of a direction, or the situation for CIRCUM. INTERNAL and UNPLACED take no `/b/`: they have no landmark. A direction with no `/b/` points at the stimulus noun when there is one, otherwise at someone unnamed.
 
-A feeling word with a direction tail already uses its `/b/` for the landmark, so it cannot also name [whose stake](sakes.md#whose-stake).
+A feeling word with a direction tail already uses its `/b/` for the landmark, so it cannot also name [whose stake](prescription.md#whose-stake).
 
 > `zonal wawothumol goyem blolazun.`
 >
@@ -204,7 +204,7 @@ English *may*, *must*, *may not*, and *they agreed* each say that someone has a 
 
 | Piece | Says | In `hwavam` |
 |-------|------|-------------|
-| `w` | a closed word with no root, as on a [tag](pronouns.md#tag-pronouns) | `w` |
+| `w` | a closed word with no root, as on a [tag](tag-pronouns.md#tag-pronouns) | `w` |
 | scope vowel | how far the say reaches: **`a`** this act (more below) | `a` |
 | whose say | **`v`** someone over the act and outside it; **`z`** the doer; **`d`** the one it's done to; **`b`** the recipient | `v` |
 | answer | **`a`** yes, allow (as in `yael`); **`u`** no, forbid (as in `yuel`); **`e`** require, ask for (**e** ≈ order); **`o`** their call (**o** ≈ pick) | `a` |
@@ -246,7 +246,7 @@ When the speaker is in the clause, the speaker's own say is their part, not **`v
 
 To **ask** for permission, put the clause under [ask](questions.md#question): `yom zuwon vuhohol hwavam.` (*May I sit?*). The question asks the listener, so the speaker may be in it. Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
 
-**Compare with:** [prescription](sakes.md#sake-force) **`the`** says the act *ought* to serve a named sake, a reason you can check; a say word says only who allows or demands it. A [command](speech-moves.md#speech-act-beginner) **`yel`** is the speaker telling the listener now; **`hwavem`** reports a demand, which may be someone else's.
+**Compare with:** [prescription](prescription.md#sake-force) **`the`** says the act *ought* to serve a named sake, a reason you can check; a say word says only who allows or demands it. A [command](speech-moves.md#speech-act-beginner) **`yel`** is the speaker telling the listener now; **`hwavem`** reports a demand, which may be someone else's.
 
 ### Someone in the act: consent (`z` / `d` / `b`) {#consent}
 
@@ -310,7 +310,7 @@ A say word takes no **-x**: a group's say comes from a group in the clause.
 
 ### How far the say reaches (scope) {#say-scope}
 
-The scope vowel is [label scope](predication.md#label-scope), the same vowels as after **`th`** on a label:
+The scope vowel is [label scope](label-scope.md#label-scope), the same vowels as after **`th`** on a label:
 
 - **`a`:** this act. `hwadam` is a yes to this act, which is why consent is asked for each time.
 - **`e`:** standing. `hwedam` is standing consent (*they're generally fine with this*), `hwevam` standing permission (*you may, any time*), `hwevem` a standing duty, and `hwezem` a discipline. Standing is not binding: `hwedam` can still be taken back, and only **-l** binds.
@@ -326,7 +326,7 @@ The scope vowel is [label scope](predication.md#label-scope), the same vowels as
 
 Only **`v`** and pair scope **`o`** take a `bl-` word.
 
-English *against the rules* and *against their will* put [contrary to](sakes.md#contrary-to-stance) **`uem`** right before the say word. That word then names what the event goes against, and it no longer applies to the claim.
+English *against the rules* and *against their will* put [contrary to](prescription.md#contrary-to-stance) **`uem`** right before the say word. That word then names what the event goes against, and it no longer applies to the claim.
 
 > `zuzozen vowurel uem hwavul.`
 >

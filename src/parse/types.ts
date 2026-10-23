@@ -3,14 +3,14 @@ import type { OverlayKind } from "../lexicon-search.js";
 /**
  * Role word part consonant (roles.md#role-compounds): the slot the participant had in the event (`z` doer, `d`
  * undergoer, `b` the extra party), or a quality of the event (`h` manner, `g` state, `th` stance, `w` extent,
- * `y` speech move, `x` outcome, `v` the event itself; roles.md#content-of-the-event).
+ * `y` speech move, `x` outcome, `v` the event itself; viewpoint.md#content-of-the-event).
  */
 export type RolePart = "z" | "d" | "b" | "h" | "g" | "th" | "w" | "y" | "x" | "v";
 
 /** Role pointer vowel: `a` same, `o` other, `e` self, `u` unsaid (pronouns.md#role-pointers). */
 export type PointerVowel = "a" | "e" | "o" | "u";
 
-/** Label-scope seam: simplex or the six stacks (predication.md#label-scope). */
+/** Label-scope seam: simplex or the six stacks (label-scope.md#label-scope). */
 export type ScopeVowel = "a" | "e" | "o" | "u" | "ae" | "ao" | "oe" | "ua" | "ue" | "uo";
 
 /** Part-of-speech prefix letters (role stamps). */
@@ -80,7 +80,7 @@ export type MorphWordFamily =
       leftRoots: string[];
       /** Roots right of the seam (a compound, prefix, or role-compound stem; a lateral or holder anchor). */
       rightRoots?: string[];
-      /** Viewpoint lateral `DIR th o`: the hosted `/b/` landmark's own facing (roles.md#landmark-facing). */
+      /** Viewpoint lateral `DIR th o`: the hosted `/b/` landmark's own facing (viewpoint.md#landmark-facing). */
       landmark?: boolean;
       /** Role compound or role pointer: the part consonant. */
       part?: RolePart;
@@ -88,7 +88,7 @@ export type MorphWordFamily =
       pointerVowel?: PointerVowel;
       /** Values / label-scope / ability stance vowel (also role + ability on `/ɡ/`, `gwezuduyexal`). */
       stanceVowel?: ScopeVowel;
-      /** Role compound or role pointer: the label scope vowel(s) after `w` (`zwezuduyel`; roles.md#scope). Hook prefix: scope after the stem's `th` seam (`zuexavuvuthel`). */
+      /** Role compound or role pointer: the label scope vowel(s) after `w` (`zwezuduyel`; viewpoint.md#scope). Hook prefix: scope after the stem's `th` seam (`zuexavuvuthel`). */
       scopeVowel?: ScopeVowel;
       /** Emotion compose: sake horizon letter moved mid-word (feelings-permission.md#emotion-compose). */
       horizon?: "l" | "m" | "r";
@@ -125,7 +125,7 @@ export type MorphWordFamily =
     }
   | { kind: "foreign"; payload: string }
   /**
-   * Tag pronoun: role letter + `w` + tag vowel (A, E, O, U) + ending (`zwal`, `zwar`, `zwam`; pronouns.md#tag-pronouns).
+   * Tag pronoun: role letter + `w` + tag vowel (A, E, O, U) + ending (`zwal`, `zwar`, `zwam`; tag-pronouns.md#tag-pronouns).
    * A stacked vowel is two tags at once (`zwaer` *A and E*), in written order.
    */
   | { kind: "tag"; vowels: TagVowel[] }
@@ -140,7 +140,7 @@ export type SayPart = "z" | "d" | "b" | "v";
 /** What they said: `a` allow, `u` forbid, `e` require, `o` their call (feelings-permission.md#say-words). */
 export type SayAnswer = "a" | "e" | "o" | "u";
 
-/** Tag pronoun vowel, named by its letter name: A, E, O, U (pronouns.md#tag-pronouns). */
+/** Tag pronoun vowel, named by its letter name: A, E, O, U (tag-pronouns.md#tag-pronouns). */
 export type TagVowel = "a" | "e" | "o" | "u";
 
 /**
@@ -155,7 +155,7 @@ export type MorphWord = {
   /** Hosted `/b/` only (`bl-`): the extra noun that completes the word before it (clause.md#extra-nouns). */
   bl?: boolean;
   ending?: Ending;
-  /** A content resume pinned to one sense of the stem: **-rl** concrete, **-rm** abstract (`ending` is then `r`; pronouns.md#resume-sense). */
+  /** A content resume pinned to one sense of the stem: **-rl** concrete, **-rm** abstract (`ending` is then `r`; tag-pronouns.md#resume-sense). */
   resumeSense?: "l" | "m";
   plural?: boolean;
   family: MorphWordFamily;
@@ -242,7 +242,7 @@ export type LeftEdge = {
   vocativeAdjs?: TurnWordMods[];
   /** Reactions: `/y/` words in -l / -m (numbers included) and unnamed spans (`y<…>`). */
   interjections: LexWord[];
-  /** `gl-`, `/w/`, and `/ɡ/` words on each reaction, parallel to `interjections` (`yezul gelavam`, speech-moves.md#describe-turn-word); absent when none. */
+  /** `gl-`, `/w/`, and `/ɡ/` words on each reaction, parallel to `interjections` (`yezul gelavam`, speech-acts.md#describe-turn-word); absent when none. */
   interjectionMods?: TurnWordMods[];
   polars: LexWord[];
   hook?: LexWord;
@@ -295,7 +295,7 @@ export type NpPackage = {
   adjs: GPackage[];
   /** Present when the adjectives form a joined list (`garedel gumuzem gul gelem gal`): order and fences. */
   adjCoord?: GCoord;
-  /** Tag pronoun **-l** right after the phrase in the same role: names it (`zodogal zwal`, pronouns.md#tag-pronouns). */
+  /** Tag pronoun **-l** right after the phrase in the same role: names it (`zodogal zwal`, tag-pronouns.md#tag-pronouns). */
   tag?: LexWord;
 };
 
@@ -331,7 +331,7 @@ export type NpCoord = {
   level: "z" | "d" | "b";
   /** `joinModifiers`: `/w/` words right before the join word (respectively `wazem`). */
   /** `factor`: digit `/h/` number after an equative's shared scale (*twice as … as*). */
-  /** `tag`: a tag **-l** right after the fence closed by this part's join names the whole group (pronouns.md#tag-pronouns). */
+  /** `tag`: a tag **-l** right after the fence closed by this part's join names the whole group (tag-pronouns.md#tag-pronouns). */
   /** `landmark`: the `bl-` word right after a hooked join, which bounds its set (hooks.md#hooked-joins). */
   parts: { items: NpItem[]; join?: LexWord; landmark?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord; tag?: LexWord }[];
 };
@@ -342,7 +342,7 @@ export type VpCoord = {
     join?: LexWord;
     shared: CoordShared[];
     joinModifiers?: LexWord[];
-    /** Hosted `/b/` right after a label-scope `tho` verb (predication.md#label-scope). */
+    /** Hosted `/b/` right after a label-scope `tho` verb (label-scope.md#label-scope). */
     hostedVerbs?: { verb: LexWord; hosted: Hosted }[];
     /**
      * Words between two verbs of a joined list belong to the later verb's item (join-across-roles.md#vp-clause-forms):
@@ -389,9 +389,9 @@ export type Unit =
       job?: HookJob;
       /** Its `/b/` pair describes the noun or landmark on its left, not the clause. */
       onLeft?: true;
-      /** `uem` + a `/th/` stance: the opposing frame the event goes contrary to (sakes.md#contrary-to-stance). */
+      /** `uem` + a `/th/` stance: the opposing frame the event goes contrary to (prescription.md#contrary-to-stance). */
       frame?: HUnit;
-      /** WANT, PLAN or DECISION after a holder frame: the holder's wish, plan or choice the event goes against (intention.md#whose-intention). */
+      /** WANT, PLAN or DECISION after a holder frame: the holder's wish, plan or choice the event goes against (ability.md#whose-intention). */
       heldIntention?: LexWord;
       /** `oel` + `/b/` right after an `ul` extra noun: the end of one *from … to* unit (numbers-applied.md#time). */
       fromTo?: true;

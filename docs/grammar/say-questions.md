@@ -6,9 +6,9 @@ Recipes for English question shapes beyond plain *yes/no* and *who / what*. Ever
 
 ### Echo questions {#echo}
 
-**Needs:** [Ask](questions.md#question) · [tone marks](speech-moves.md#tone-marks)
+**Needs:** [Ask](questions.md#question) · [tone marks](speech-acts.md#tone-marks)
 
-An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yol`**. Put the doubting [tone mark](speech-moves.md#tone-marks) **`?!`** on the blank or on the word you doubt.
+An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yol`**. Put the doubting [tone mark](speech-acts.md#tone-marks) **`?!`** on the blank or on the word you doubt.
 
 > `yol ?!dar zawan vawebol.`
 >
@@ -24,7 +24,7 @@ An echo question repeats what someone just said, because you doubt it or did not
 
 ### *Really?*, *Is that so?* {#really}
 
-**Needs:** [Polar stance](questions.md#polar-stance) · [tone marks](speech-moves.md#tone-marks)
+**Needs:** [Polar stance](questions.md#polar-stance) · [tone marks](speech-acts.md#tone-marks)
 
 English *Really?* asks the speaker to confirm what they just said. Write the confirm tag as your own turn: **`yol yael.`** (*Is that so?*). Put the doubting mark **`?!`** on it for disbelief.
 
@@ -52,7 +52,7 @@ To report a *who* / *what* question inside a claim (*Uzozen asks who walks*), pu
 
 ### *Mm-hm* while someone talks {#continuer}
 
-**Needs:** [Three endings](questions.md#polar-endings)
+**Needs:** [Three endings](polar-inventory.md#polar-endings)
 
 While someone tells you something, English keeps them going with *mm-hm* or *I see*, without agreeing or disagreeing. Reply **`yaer.`** after each point: it takes the point on board for now, without committing to it.
 
@@ -66,7 +66,7 @@ While someone tells you something, English keeps them going with *mm-hm* or *I s
 
 ### *Well…* before an unwelcome answer {#well}
 
-**Needs:** [Three endings](questions.md#polar-endings)
+**Needs:** [Three endings](polar-inventory.md#polar-endings)
 
 English *well…* warns that the answer is not the plain *yes* the question hoped for. Start the reply with **`yuam`** (*it's more complicated than that*), then give the answer.
 
@@ -124,7 +124,7 @@ English *admittedly*, *granted* and *that's true, but* concede a point before pu
 
 ### *What a big dog!* {#exclamations}
 
-**Needs:** [tone marks](speech-moves.md#tone-marks) · [extra detail on an adjective](clause.md#adjective-detail-w) · [interjections](speech-moves.md#interjections)
+**Needs:** [tone marks](speech-acts.md#tone-marks) · [extra detail on an adjective](clause.md#adjective-detail-w) · [interjections](speech-moves.md#interjections)
 
 English *What a big dog!* and *How big the dog is!* say the dog is very big and that you feel strongly about it. Say the degree with *very* **`welazom`** and the feeling with the tone mark **`!`** before the sentence. Use **`!!`** for more.
 
@@ -169,7 +169,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 >
 > "Is Uzozen the only priority?"
 
-**Not the same job as:** proper-name **-n** ([word ending](word-endings.md#proper-name--n)).
+**Not the same job as:** proper-name **-n** ([word ending](proper-names.md#proper-name--n)).
 
 **Related form:** fill-ask length uses [join **-r**](fill-ask-roles.md#fill-ask-arity).
 
@@ -249,7 +249,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 ### Ask, interview, conversation {#ask-words}
 
-**Needs:** [Ask](questions.md#question) · [Reported questions](#reported-questions) · [Stand-in vowels](dependents.md#stand-in) · [Speech act: firm and soft](speech-moves.md#speech-act) · [Stacking two act words](speech-moves.md#stacked-acts) · [Quiz](questions.md#quiz) · [Conversation length](compounds.md#conversation-length) · [Call someone](speech-moves.md#vocative)
+**Needs:** [Ask](questions.md#question) · [Reported questions](#reported-questions) · [Stand-in vowels](dependents.md#stand-in) · [Speech act: firm and soft](speech-acts.md#speech-act) · [Stacking two act words](speech-acts.md#stacked-acts) · [Quiz](polar-inventory.md#quiz) · [Conversation length](compounds.md#conversation-length) · [Call someone](speech-moves.md#vocative)
 
 English *ask* is four jobs. You can put a question to someone, ask them for something, ask them to do something, or report that a question was asked. A question is the act word **`yol`**. A request is **`yem`**. A reported question hangs on the telling ([reported questions](#reported-questions)). *Ask* or *tell someone to do* something is a telling with the to-clause stand-in **`derl`**, and the person told is plain `/b/`; *not to* is **`durl`**. English picks *ask* or *tell* for politeness, which Agebon carries on the act word, not the verb. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
 
@@ -276,7 +276,7 @@ English *ask* is four jobs. You can put a question to someone, ask them for some
 
 ### Offer, suggest, recommend, invite {#offer-words}
 
-**Needs:** [Speech act: firm and soft](speech-moves.md#speech-act) · [Tags](questions.md#tags) · [Prescription](sakes.md#sake-force) · [Permission](feelings-permission.md#permission) · [Which noun](dependents.md#which-noun)
+**Needs:** [Speech act: firm and soft](speech-acts.md#speech-act) · [Tags](polar-inventory.md#tags) · [Prescription](prescription.md#sake-force) · [Permission](feelings-permission.md#permission) · [Which noun](dependents.md#which-noun)
 
 English *offer*, *suggest*, *propose*, *recommend* and *advise* all put something forward that the other person may take or leave. Agebon picks how firmly. A soft act word (**-m**) leaves the choice open. A soft request with *we* proposes a joint act, and a tag after it asks whether they take it up. A prescription **`the`** on a sake says the act ought to serve it, and its ending says whether the person invited it (**-l**) or you are offering it unasked (**-m**).
 

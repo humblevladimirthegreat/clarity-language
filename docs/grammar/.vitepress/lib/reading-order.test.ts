@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import { describe, it } from 'node:test'
 
 import { lessonPages, pathPages, readingOrder } from './reading-order.js'
-import type { HoldingSitting } from './holding-list.js'
+import { holdingList, type HoldingSitting } from './holding-list.js'
 
 const lessons = [
   { text: 'Why Agebon', link: '/' },
@@ -12,12 +12,23 @@ const lessons = [
 
 describe('pathPages', () => {
   it('matches sidebar order plus the review page when the holding list is empty', () => {
-    const pages = pathPages()
+    const pages = pathPages(readingOrder, [], 'review.md')
     assert.equal(pages[0], 'index.md')
     assert.equal(pages[1], 'introduction.md')
     assert.equal(pages.at(-1), 'review.md')
     assert.equal(pages.length, readingOrder.length + 1)
     assert.ok(!pages.includes(''))
+  })
+
+  it('splices the live holding list after each parent', () => {
+    const pages = pathPages()
+    assert.equal(pages.length, readingOrder.length + holdingList.length + 1)
+    for (const sitting of holdingList) {
+      const parent = pages.indexOf(sitting.parent)
+      const child = pages.indexOf(sitting.page)
+      assert.ok(parent >= 0, sitting.parent)
+      assert.ok(child > parent, `${sitting.page} after ${sitting.parent}`)
+    }
   })
 
   it('splices peeled sittings after their parent, Intermediate before Advanced', () => {

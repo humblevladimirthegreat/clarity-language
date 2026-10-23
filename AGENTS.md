@@ -18,29 +18,29 @@ Each row names what the file owns. The file is the authority; this table is only
 | `introduction.md` | Name, design goals, learning path. |
 | `clause.md` | **Source of truth** for one-clause grammar: role letters, default order, hosting, chaining. Other docs own their subsystems. |
 | `phonology.md` | Phonology, phonotactics, letter names. |
-| `word-endings.md` | Word endings, proper names, titled phrases, citation forms, greetings. |
-| `pronouns.md` | Whole-stem resume, role pointers, tag, special, and generic pronouns. |
+| `word-endings.md` | Word endings, citation forms, greetings; proper names and titled phrases (`proper-names.md`). |
+| `pronouns.md` | Whole-stem resume, role pointers, special, and generic pronouns; tag pronouns (`tag-pronouns.md`). |
 | `topic.md` | Discourse topic, topic pronoun. |
-| `plurality.md` | Plural, associative, address sets, clusivity, collectives. |
-| `questions.md` | Yes/no and fill questions, polar stance particles. |
+| `plurality.md` | Plural, associative, address sets, clusivity; collectives (`collectives.md`). |
+| `questions.md` | Yes/no and fill questions, polar stance particles; polar inventory and rhetorical (`polar-inventory.md`). |
 | `fill-ask-roles.md` | Fill-ask roles: arity, what kind / when / where / whose / how / why, blank in a dependent. |
-| `speech-moves.md` | Turns, vocatives, interjections, speech acts, the reusable vowel series, tone marks. |
+| `speech-moves.md` | Turns, vocatives, interjections, speech acts, the reusable vowel series; tone marks (`speech-acts.md`). |
 | `dependents.md` | Next-sentence grammar: continue, stand-ins, subordinators, relative-clause equivalents, linkers. |
 | `relations.md` | Hosted relation catalog: similative, exchange, proxy, of-relations, as-of, social ties. |
 | `hooks.md` | Prefix-less hooks: in-clause, range hooks, discourse glue, extra-noun (and abstract landmarks), hook compounds, hook prefixes, hooked joins. |
 | `discourse-hooks.md` | Stacked discourse, somewhere / nowhere / everywhere, here and there, hook resume, parallel chains, discourse placements. |
-| `restrictors.md` | `/h/` / `/w/` restrictors, habitual. |
+| `restrictors.md` | `/h/` / `/w/` restrictors, habitual; more occasions (`more-occasions.md`). |
 | `joins.md` | Phrase and clause joins, fences, set vs rank, arity, denying a whole list. |
 | `join-across-roles.md` | Joins across roles, join-act verbs, join-relations. |
 | `comparatives.md` | Comparatives, superlatives, equatives, manner scale, stance bars. |
-| `predication.md` | Classification, identity, label scope. |
-| `causation.md` | Causation / condition poles, fault, CAUSE mood. |
-| `sakes.md` | Sakes, met / unmet, prescription, motive, attachment, whose stake, contrary, sake bars. |
+| `predication.md` | Classification, identity; label scope (`label-scope.md`). |
+| `causation.md` | Causation / condition poles; iff, fault, CAUSE (`iff-fault.md`). |
+| `sakes.md` | Sakes, met / unmet; prescription, motive, attachment, whose stake, contrary, sake bars (`prescription.md`). |
 | `feelings-permission.md` | Feelings, thanks, speaker attitude, permission, consent. |
-| `intention.md` | Plan, decision, try / fallback, ability / incapability. |
+| `intention.md` | Plan; decision, try / fallback, ability / incapability (`ability.md`). |
 | `knowing.md` | MAY, evidentiality and evidence strength, forecasts, holder, universality. |
 | `notional-standing.md` | Notional and standing: mirative, residue / former, phasal, notional, channel bars. |
-| `roles.md` | Role compounds, viewpoint laterals, landmark facing, gravity. |
+| `roles.md` | Role compounds; viewpoint laterals, landmark facing, gravity (`viewpoint.md`). |
 | `compounds.md` | Mid-word `x` families and the mid-word `th` seam, dictionary compounds, conversation length, root tails, tail suffixes. |
 | `spans.md` | Span fences, asides, scope islands. |
 | `numbers.md` | Numerals, markers, endings, stance numbers, writing style. |

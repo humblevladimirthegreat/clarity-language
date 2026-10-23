@@ -341,7 +341,7 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
   const named_ = core.match(/^((?:th|gl|[zdbvgwhxy])-)?([A-Z].*?)(\.instance)?$/);
   if (named_) {
     const root = nameRoot(named_[2]!);
-    // `Azawan.instance` is **-ln**, one thing the name applies to (word-endings.md#name-instance--ln).
+    // `Azawan.instance` is **-ln**, one thing the name applies to (proper-names.md#name-instance--ln).
     const ending = named_[3] ? "ln" : "n";
     if (root) out.add(`${(named_[1] ?? "").replace(/-$/, "")}${root}${ending}${suffix}`);
   }

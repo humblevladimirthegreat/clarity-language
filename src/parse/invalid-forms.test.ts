@@ -291,7 +291,7 @@ const ROWS: Row[] = [
     rejection: "joinDetail",
     valid: "zuzozen zolazun zal dagozol dudozol wubam dal vawebol.",
   },
-  // `uem` + a stance: the stance must say what the event goes against (sakes.md#contrary-to-stance).
+  // `uem` + a stance: the stance must say what the event goes against (prescription.md#contrary-to-stance).
   { invalid: "zuzozen vowurel uem hwavam.", rejection: "frameKind", valid: "zuzozen vowurel uem hwavum." },
   { invalid: "zuzozen vezuyel bolazun uem hwabam.", rejection: "frameKind", valid: "zuzozen vezuyel bolazun uem hwabum." },
   { invalid: "zuzozen vowurel uem hwavom.", rejection: "frameKind", valid: "zuzozen vowurel uem hwavem." },

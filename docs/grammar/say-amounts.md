@@ -33,7 +33,7 @@ English *both are challenging* (or *Uzozen and Olazun are challenging*) says **e
 
 **Compare with:** *as challenging as* uses equality **`oe`** (`zoel`). *More challenging than* uses rank **`e`**.
 
-**Related form:** *ADJ as a unit* uses shared `/ɡ/`…**-x** under **`a`**: [plurality](plurality.md#adjectives-g). Shared comparative and equative adjectives are singular.
+**Related form:** *ADJ as a unit* uses shared `/ɡ/`…**-x** under **`a`**: [plurality](collectives.md#adjectives-g). Shared comparative and equative adjectives are singular.
 
 Equality **`oe`** with a shared scale needs **two or more** names. **`oe`** with no shared scale is a tie among the names (equal rank).
 
@@ -219,7 +219,7 @@ English degree words (*really*, *quite*, *barely*) say how far a quality or an a
 
 ### How: *carefully*, *properly*, *gently*, *hard to* {#manner-words}
 
-**Needs:** [Adverbs `/h/`](clause.md#adverbs-h) · [Manner scale](comparatives.md#manner-scale) · [Every bar](comparatives.md#stance-bars) · [Can](intention.md#can)
+**Needs:** [Adverbs `/h/`](clause.md#adverbs-h) · [Manner scale](comparatives.md#manner-scale) · [Every bar](comparatives.md#stance-bars) · [Can](ability.md#can)
 
 English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the abstract ending **-m**, as in `hedurem` *hastily*. When the quality is the root's everyday sense and the abstract sense is something else, use **-l**: `ogugo` is *correct* and its abstract sense is *inclusion*, so *properly* is `hogugol`.
 
@@ -255,7 +255,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 
 The easy / hard pair on a quality ranks effort against a bar ([vague amounts](comparatives.md#vague-amounts)): `zanal thubem zuel guzubam` is *the book is easy* (less effort than usual), and `zel` in place of `zuel` is *hard*.
 
-*Hard to* + a verb puts the same effort scale on whoever would do it: they can, but only with more effort than usual. Write the doer as the ranked item, the bar, the rank word and **`huzubam`**, then the verb with [*can*](intention.md#can) **`xa`**.
+*Hard to* + a verb puts the same effort scale on whoever would do it: they can, but only with more effort than usual. Write the doer as the ranked item, the bar, the rank word and **`huzubam`**, then the verb with [*can*](ability.md#can) **`xa`**.
 
 > `zuzozen thubem zel huzubam danal varayexal.`
 >
@@ -346,7 +346,7 @@ With no `/b/`, **`thubem`** is the item's own usual level or the usual case in t
 | *strong* / *powerful* (than most people) | `thubem bleyolx zel gobobom` |
 | *weak* / *feeble* / *frail* (than most people) | `thubem bleyolx zuel gobobom` |
 | *weak today* / *not as strong as usual* | `thubem zuel gobobom` |
-| *not strong enough* (for what you need) | `thudatham zuel gobobom` ([sake bar](sakes.md#sake-bars)) |
+| *not strong enough* (for what you need) | `thudatham zuel gobobom` ([sake bar](prescription.md#sake-bars)) |
 | *busy* / *hard-working* | `thubem zel guzubam` (more effort than usual) |
 | *far* / *far away* / *distant* / *remote* | `thubem zel gazavem` (farther than usual) |
 | *wide* / *broad* | `thubem zel gorahem` |
@@ -417,7 +417,7 @@ English *just*, *only*, *especially* and *also* point at one item and say how it
 >
 > "Uzozen walks. Also, Olazun walks."
 
-**Compare with:** *just* meaning *only a moment ago* is the hair before now (**`blruwul`**, [recently](say-tense.md#time-words)), not a join. *Only when* is the restrictor **`hal`** ([restrictors](restrictors.md#beginner)), and *only if* is **`thebom`** ([only if](causation.md#only-if)).
+**Compare with:** *just* meaning *only a moment ago* is the hair before now (**`blruwul`**, [recently](say-tense.md#time-words)), not a join. *Only when* is the restrictor **`hal`** ([restrictors](restrictors.md)), and *only if* is **`thebom`** ([only if](causation.md#only-if)).
 
 ## Units and dates {#units-dates}
 
@@ -464,7 +464,7 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 ### Named standards and derived units
 <a id="unit-short-form"></a>
 
-**Needs:** [Measure phrases](numbers-applied.md#measure-phrases) · [Proper name `-n`](word-endings.md#proper-name--n)
+**Needs:** [Measure phrases](numbers-applied.md#measure-phrases) · [Proper name `-n`](proper-names.md#proper-name--n)
 
 Everyday measure uses the **unit metaphor** on the stock roots above (`bezerem gradol`). When you cite the **conventional SI name** as a titled standard (*the meter*, *the pascal*), use **-n** on that unit root ([named handles](word-endings.md#named-n-beginner)). Resume a prior unit phrase with **-r** on the same root (`bezerer gradol` after `bezerem gradol` is on the table).
 

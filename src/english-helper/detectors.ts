@@ -80,7 +80,7 @@ export const ROUTE_QUALIFIERS: Readonly<Record<Exclude<RouteClass, "kin">, strin
 /**
  * English that picks a sake word's **-l** or **-r** ending, by stance vowel; none is **-m**
  * ([met](sakes.md#time-horizon-endings-on-met), [unmet](sakes.md#sake-changeability),
- * [ought](sakes.md#sake-force), [motive](sakes.md#sake-preference)).
+ * [ought](prescription.md#sake-force), [motive](prescription.md#sake-preference)).
  */
 export const SAKE_ENDINGS: Readonly<Record<string, { l: string[]; r: string[] }>> = {
   a: { l: ["lasting", "in the long run", "in the long term", "over time"], r: ["immediate", "immediately", "right now", "right away", "quick"] },
@@ -132,7 +132,7 @@ export const WORD_DETECTORS: readonly WordDetector[] = [
   { id: "third-person", label: (t) => `*${t.normal}* (point back)`, links: ["pronouns.md#resume-r"], test: (t) => THIRD_PERSON.has(t.normal) },
   { id: "possessive", label: () => "possessive *'s*", links: ["english.md#of"], test: (t) => !!t.possessive && t.cls !== "pronoun" },
   { id: "possessive-pronoun", label: (t) => `possessive *${t.normal}*`, links: ["english.md#of"], test: (t) => !!t.possessive && t.cls === "pronoun" },
-  { id: "proper-name", label: () => "proper name", links: ["word-endings.md#proper-name--n"], test: (t) => !!t.proper },
+  { id: "proper-name", label: () => "proper name", links: ["proper-names.md#proper-name--n"], test: (t) => !!t.proper },
   { id: "plural", label: () => "plural noun", links: ["plurality.md#associative"], test: (t) => t.cls === "noun" && !!t.plural && !t.proper },
   { id: "relation-prefix", label: (t) => `*${t.normal}*: a hook prefix (the hook's vowels, \`x\` or \`mx\`, then the noun's root)`, links: ["english.md#relation-prefixes", "hooks.md#hook-prefixes"], test: (t) => relationWord(t.normal) },
   { id: "number-prefix", label: (t) => `*${t.normal}*: a numeric prefix (the number body, \`x\` or \`mx\`, then the noun's root)`, links: ["english.md#number-prefixes", "numeric-derivation.md#numeric-derivation"], test: (t) => numberPrefixWord(t.normal) },

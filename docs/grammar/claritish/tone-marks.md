@@ -57,4 +57,4 @@ I asked for the &blue one.
 ?!She's moving to Iceland.
 :::
 
-<!-- Source (editors): speech-moves.md#tone-marks. Lesson pages never link into the grammar; see docs/meta/grammar-docs.md#claritish-track. -->
+<!-- Source (editors): speech-acts.md#tone-marks. Lesson pages never link into the grammar; see docs/meta/grammar-docs.md#claritish-track. -->

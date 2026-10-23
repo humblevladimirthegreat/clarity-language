@@ -525,7 +525,7 @@ A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaini
 | Join family | Use of SHARED `/ɡ/` |
 |-------------|----------------------|
 | **a** | distributive property (*both ADJ*) or bundle description |
-| **a** + `/ɡ/`…**-x** | [collective](plurality.md#adjectives-g) (*ADJ together*) |
+| **a** + `/ɡ/`…**-x** | [collective](collectives.md#adjectives-g) (*ADJ together*) |
 | **oe** + SHARED scale | [equative](comparatives.md#equatives) (`/ɡ/` or `/h/`) |
 | **e** / **ue** on NP | [comparison scale](comparatives.md) (`/ɡ/` or `/h/`) |
 | **ae** on NP | sorted low to high (`/ɡ/` or `/h/`) |
@@ -930,7 +930,7 @@ For *everyone, no exceptions*, use `zual geyol`. As a topic, `xeyon` (*now, abou
 
 #### Every and none, by set {#kind-domains}
 
-*Everyone hates me* and *nobody ever listens* hide how far they reach. To name the set a claim covers, put a SHARED word after the join that bounds it. *Everyone we know* is the undergoer role compound of *know* with [pair scope](predication.md#scope-relative): `gwodanam blayan` is *known to the two of us*.
+*Everyone hates me* and *nobody ever listens* hide how far they reach. To name the set a claim covers, put a SHARED word after the join that bounds it. *Everyone we know* is the undergoer role compound of *know* with [pair scope](label-scope.md#scope-relative): `gwodanam blayan` is *known to the two of us*.
 
 > `zual gwodanam blayan vezuvol.`
 >
@@ -1159,7 +1159,7 @@ A join takes every same-role item before it. When English groups a small list in
 <a id="named-list"></a>
 <a id="named--conventional-ending-phrase-level-all-join-vowels"></a>
 
-When a list is a familiar set phrase (*Stop–Drop–Roll*), end its join with **-n** (under `/z/`, `/d/`, or `/b/`). The **-n** names the whole list as one title, the way it names a person ([titled phrases](word-endings.md#titled-phrases)). Members keep their usual endings unless a member is itself a name.
+When a list is a familiar set phrase (*Stop–Drop–Roll*), end its join with **-n** (under `/z/`, `/d/`, or `/b/`). The **-n** names the whole list as one title, the way it names a person ([titled phrases](proper-names.md#titled-phrases)). Members keep their usual endings unless a member is itself a name.
 
 > `zebodol zuyudal zan.`
 >
@@ -1180,8 +1180,8 @@ A join has at most two vowels. Which endings it can take depends on its role let
 |-------|----------------|-------|
 | `/z/` `/d/` `/b/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**), **-rx** | phrase lists; **-n** is a named package; **-rx** is an [unnamed group](#unspecified-member-r-phrase) |
 | `/w/` | none | not a phrase list: the only `/w/` before a join word is [`wubam`](#respectively), with **-l** or **-m** |
-| `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](restrictors.md#defined-core-full); **-n** forms are [join-relations](join-across-roles.md#join-relations) |
-| `/v/` | **-l** / **-m** / **-r**, each with **-x** | **-x** is one [shared act](plurality.md#verbs-v); parallel **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs) |
+| `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](more-occasions.md#defined-core-full); **-n** forms are [join-relations](join-across-roles.md#join-relations) |
+| `/v/` | **-l** / **-m** / **-r**, each with **-x** | **-x** is one [shared act](collectives.md#verbs-v); parallel **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs) |
 | `/th/` | **-l** / **-m** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | [stance joins](join-across-roles.md#stance-joins) on stance words (*not because…*) |
 | `/x/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | between clauses, not after them ([clause joins](#clause-joins)); forms: [Join across roles](join-across-roles.md) |
 
@@ -1354,4 +1354,4 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 - Applicability *when* under `/h/` `/w/`: [restrictors.md](restrictors.md)
 - Fill-ask and yes/no on single-item/standalone joins: [questions.md](questions.md)
 - Join series across roles: [join-across-roles.md](join-across-roles.md)
-- Titled phrases: [word-endings.md](word-endings.md#titled-phrases)
+- Titled phrases: [word-endings.md](proper-names.md#titled-phrases)

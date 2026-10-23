@@ -698,7 +698,7 @@ Once whose-now is set, these count from it:
 - [FORMER](notional-standing.md#former-climate) means the pattern no longer held **at** that now.
 - A bare verb happens **at** that now.
 
-[MAY](knowing.md#may), [CAUSE](causation.md#cause), and every other stance still count from speech-now. Evidentials, apart from LIVE at the snapshot, still say how *you* know at speech-now.
+[MAY](knowing.md#may), [CAUSE](iff-fault.md#cause), and every other stance still count from speech-now. Evidentials, apart from LIVE at the snapshot, still say how *you* know at speech-now.
 
 > `zuzozen zolazun zel wenam b_#22,7 gamahum.`
 >
@@ -757,7 +757,7 @@ An *as-of* pair inside a finished inner clause cannot be resumed later in the ma
 
 ### Stance as-of {#stance-as-of}
 
-A stance is yours at speech-now: `thomam` is how unsure you are **as you speak**, and a sake or feeling word is how you stand **now**. English *I was sure then*, *back then it stung*, and *I'd be relieved* date the stance itself. Put the same *as-of* pair on `/th/`: **`thenam`** for a real now, **`thunem`** for a now you are not claiming, then the snapshot in `/b/`. Every stance word in the clause, including MAY, WANT, CAUSE, sakes, and feelings, then reads from that now. A [PLAN](intention.md#plan-predict) is then planned **from** that now, and a [DECISION](intention.md#decision) is held **at** it.
+A stance is yours at speech-now: `thomam` is how unsure you are **as you speak**, and a sake or feeling word is how you stand **now**. English *I was sure then*, *back then it stung*, and *I'd be relieved* date the stance itself. Put the same *as-of* pair on `/th/`: **`thenam`** for a real now, **`thunem`** for a now you are not claiming, then the snapshot in `/b/`. Every stance word in the clause, including MAY, WANT, CAUSE, sakes, and feelings, then reads from that now. A [PLAN](intention.md#plan-predict) is then planned **from** that now, and a [DECISION](ability.md#decision) is held **at** it.
 
 > `zolazun thenam bl_#22,7 thomam velurul.`
 >

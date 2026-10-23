@@ -59,4 +59,4 @@ I `drink-xu` milk.
 She `drive-xa`.
 :::
 
-<!-- Source (editors): intention.md#ability-changeability (can, can't); x sound from phonology.md. -->
+<!-- Source (editors): ability.md#ability-changeability (can, can't); x sound from phonology.md. -->

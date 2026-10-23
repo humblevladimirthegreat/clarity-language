@@ -63,7 +63,7 @@ describe("sentence-parser synthetic", () => {
     assert.equal(result.utterances[1]!.left.hookModifiers?.[0]?.raw, "wewem");
   });
 
-  it("parses two stacked act words, outer first (speech-moves.md#stacked-acts)", () => {
+  it("parses two stacked act words, outer first (speech-acts.md#stacked-acts)", () => {
     const left = parseSentenceTokens(tokens("yal yol zar vegemal.")).utterances[0]!.left;
     assert.equal(left.leadForce?.raw, "yal");
     assert.equal(left.force?.raw, "yol");

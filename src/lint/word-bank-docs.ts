@@ -132,7 +132,7 @@ function allowedSenses(
   const hostLemmas = new Set<string>();
   const word = classify(morph, tables);
   add(all, senseLabel(word, tables)?.split("-x-").join("-"));
-  // **-ln** is one thing the name applies to: *an Azawan* (word-endings.md#name-instance--ln).
+  // **-ln** is one thing the name applies to: *an Azawan* (proper-names.md#name-instance--ln).
   if (morph.ending === "ln") {
     const name = senseLabel(word, tables)?.replace(/\.instance$/, "").split("-x-").join("-");
     add(all, name && `a ${name}`);

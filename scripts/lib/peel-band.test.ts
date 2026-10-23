@@ -158,7 +158,8 @@ describe("appendObjectToExportedArray", () => {
       band: "intermediate",
       title: "Rank joins",
     });
-    assert.match(one, /parent: "joins.md"/);
+    assert.match(one, /export const holdingList: HoldingSitting\[\] = \[\n  \{ parent: "joins.md"/);
+    assert.doesNotMatch(one, /HoldingSitting\[\n/);
     const two = appendObjectToExportedArray(one, "holdingList", {
       parent: "joins.md",
       page: "join-islands.md",
@@ -167,5 +168,6 @@ describe("appendObjectToExportedArray", () => {
     });
     assert.match(two, /join-islands.md/);
     assert.match(two, /Rank joins/);
+    assert.match(two, /HoldingSitting\[\] = \[/);
   });
 });

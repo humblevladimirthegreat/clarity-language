@@ -13,7 +13,7 @@ When English tells events in time order (*and then*), put ending **-n** on a cla
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | `xan` | sequence add | *and then…* | **a** ≈ add |
-| `xon` | sequence menu | *or maybe…*; after an [attempt](intention.md#try), *failing that…* | **o** ≈ one |
+| `xon` | sequence menu | *or maybe…*; after an [attempt](ability.md#try), *failing that…* | **o** ≈ one |
 | `xun` | sequence deny | *and then not…* | **u** ≈ undo |
 | `xaon` | sequence inclusive | *and/or maybe…* | **ao** ≈ add one or more |
 | `xuen` | sequence turned back | *and before that…* | **ue** ≈ undo + order (the order runs backward) |
@@ -26,7 +26,7 @@ When English tells events in time order (*and then*), put ending **-n** on a cla
 >
 > "Uzozen sat, and before that, they walked."
 
-Under `/v/`, `/ɡ/`, and `/h/`, a join word with **-n** names a list move instead. On a content word, **-n** marks a [name](word-endings.md#proper-name--n) as usual.
+Under `/v/`, `/ɡ/`, and `/h/`, a join word with **-n** names a list move instead. On a content word, **-n** marks a [name](proper-names.md#proper-name--n) as usual.
 
 ### Verb-phrase and clause forms {#vp-clause-forms}
 <a id="vowels--endings"></a>
@@ -279,7 +279,7 @@ Outside a question, only the single-vowel **-r** cells are words. Under a questi
 
 ### Join-act verbs {#join-act-verbs}
 
-When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the join vowel for that move, and ending **-n** (`van`, `von`, …). The object is one `/d/` phrase: one thing, or a group joined with a [phrase join](joins.md). You can now name the act itself instead of only joining a list. On these verbs, **-n** does not mark a [name](word-endings.md#proper-name--n).
+When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the join vowel for that move, and ending **-n** (`van`, `von`, …). The object is one `/d/` phrase: one thing, or a group joined with a [phrase join](joins.md). You can now name the act itself instead of only joining a list. On these verbs, **-n** does not mark a [name](proper-names.md#proper-name--n).
 
 > `zuzozen doledol van.`
 >
@@ -287,7 +287,7 @@ When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*)
 >
 > "Uzozen adds an apple."
 
-For an associative group (*Olazun and company*), put noun **-x** on the object as usual. **-x** on the verb itself is [collective](plurality.md#verbs-v).
+For an associative group (*Olazun and company*), put noun **-x** on the object as usual. **-x** on the verb itself is [collective](collectives.md#verbs-v).
 
 **Related form:** joining a list uses [joins](joins.md) (`zal` / `val` / `xal`, …).
 

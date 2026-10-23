@@ -65,7 +65,7 @@ export function deckId(name: string): number {
   return (1 << 30) + (createHash("sha256").update(`agebon-deck/${name}`).digest().readUInt32BE(0) % (1 << 30));
 }
 
-/** `speech-moves.md#intermediate-practice` → `agebon::core::speech-moves::intermediate`. */
+/** `speech-acts.md#intermediate-practice` → `agebon::core::speech-moves::intermediate`. */
 function coreTag(cell: string, band: Band): string {
   return `agebon::core::${cell.split("#")[0]!.replace(/\.md$/, "")}::${band}`;
 }

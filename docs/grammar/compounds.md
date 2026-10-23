@@ -236,10 +236,10 @@ Beginner already used two roots glued with **`x`** and dictionary words with no 
 |--------|-----|---------|-----|
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | conversation length | *Uzozen, I have time* | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | ability | *can’t sing right now* | extra vowel after the root |
-| full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zubedaxuyudal`; `zalexalowen` ([hyphenated names](word-endings.md#multipart-names)) | **x** ≈ plus |
+| full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zubedaxuyudal`; `zalexalowen` ([hyphenated names](proper-names.md#multipart-names)) | **x** ≈ plus |
 | sake root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [sakes](sakes.md) | `guwathal` | **th** ≈ *think* (your view of the sake) |
-| other root **`th`** **`a`** / **`e`** / **`o`** / **`u`** (or a stack) | [label scope](predication.md#label-scope) | *angry this time*; *a teacher* | **th** ≈ *think* (what kind of claim the label is) |
-| direction root **`th`** facing person | [viewpoint lateral](roles.md#viewpoint-laterals) | `gowuhethuzozen` *Uzozen’s left* | **th** ≈ *think* (whose point of view) |
+| other root **`th`** **`a`** / **`e`** / **`o`** / **`u`** (or a stack) | [label scope](label-scope.md#label-scope) | *angry this time*; *a teacher* | **th** ≈ *think* (what kind of claim the label is) |
+| direction root **`th`** facing person | [viewpoint lateral](viewpoint.md#viewpoint-laterals) | `gowuhethuzozen` *Uzozen’s left* | **th** ≈ *think* (whose point of view) |
 
 A root is at least three letters, so one or two vowels left of **`x`** are never a root.
 
@@ -259,18 +259,18 @@ To narrow a compound further, or to build a hyphenated name from several labels,
 >
 > "Coffee-Tea-Water" (one named shop)
 
-[Hyphenated names](word-endings.md#multipart-names) use the same order (*Mary-Kate*: first piece first). A family name is not part of this stack; it is a separate `/ɡ/` word after the given name. [Body left / right](roles.md#viewpoint-laterals) is not this stack: it joins the direction and whose facing counts with **`th`** (`gowuhethuzozen`), because the second root is a point of view, not a kind.
+[Hyphenated names](proper-names.md#multipart-names) use the same order (*Mary-Kate*: first piece first). A family name is not part of this stack; it is a separate `/ɡ/` word after the given name. [Body left / right](viewpoint.md#viewpoint-laterals) is not this stack: it joins the direction and whose facing counts with **`th`** (`gowuhethuzozen`), because the second root is a point of view, not a kind.
 
 A [role compound](roles.md#role-compounds) can take such a stack as its stem (`zwazudozoxowurel` *someone who walks dogs*), but is never one piece of a stack.
 
-**Compare with:** a short office **handle** is one root plus [**-n**](word-endings.md#proper-name--n), not this stack. A dictionary compound is one listed word, not a live list you extend.
+**Compare with:** a short office **handle** is one root plus [**-n**](proper-names.md#proper-name--n), not this stack. A dictionary compound is one listed word, not a live list you extend.
 
 ### Which family is this?
 <a id="decision-order"></a>
 
-Use the table above. If the word has a mid-word **`th`**, it is a [sake](sakes.md) word (a [sake root](sakes.md#sake-inventory), then a vowel, with an optional [emotion tail](feelings-permission.md#emotion-compose)), a [label scope](predication.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). The root before **`th`** decides: after a sake root, letters that look like a root are always the emotion tail (`guwathamol`), never a lateral. Otherwise read both sides of the first **`x`** in this order:
+Use the table above. If the word has a mid-word **`th`**, it is a [sake](sakes.md) word (a [sake root](sakes.md#sake-inventory), then a vowel, with an optional [emotion tail](feelings-permission.md#emotion-compose)), a [label scope](label-scope.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](viewpoint.md#viewpoint-laterals) (a root follows **`th`**). The root before **`th`** decides: after a sake root, letters that look like a root are always the emotion tail (`guwathamol`), never a lateral. Otherwise read both sides of the first **`x`** in this order:
 
-- A name (one root or a [hyphenated name](word-endings.md#multipart-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a conversation-length bid → conversation length.
+- A name (one root or a [hyphenated name](proper-names.md#multipart-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a conversation-length bid → conversation length.
 - A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **ability**.
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
 
@@ -298,7 +298,7 @@ English *I can stay a while* or *I only have a minute* tells the other person ho
 | `SELFxon` | one slot: *one ask or comment* | about to leave | **o** ≈ one (one last slot) |
 | `SELFxun` | passing: *just acknowledging; not opening a talk* | leaving right now | **u** ≈ undo (lift the talk) |
 
-On a [full name](word-endings.md#multipart-names), the vowel goes on the given name (`alexen galowen.`); a family name takes no bid, since **`x`** + vowel on a `/ɡ/` word is ability. Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](word-endings.md#named-n-beginner) ending.
+On a [full name](proper-names.md#multipart-names), the vowel goes on the given name (`alexen galowen.`); a family name takes no bid, since **`x`** + vowel on a `/ɡ/` word is ability. Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](word-endings.md#named-n-beginner) ending.
 
 At arrival, the other person can answer with their own bid. The **lesser** bid sets the shared limit: **a** (open-ended) is more than **e** (a few minutes), **e** is more than **o** (one slot), and **o** is more than **u** (passing). If you offer open-ended time and Olazun offers one slot, you have one slot.
 
@@ -522,7 +522,7 @@ Each letter reuses a job it already has somewhere in the grammar:
 | `w` | tools and things you use | `anewu` *knife* | [`/w/`](clause.md#role-letters) is *with* |
 | `g` | signs and marks: symbols, letters, religion marks | `awugu` *warning* | [`/ɡ/`](clause.md#role-letters) is a grade, a mark on something |
 | `r` | counting, time, money and rhythm | `egore` *clock* | `r` after a role letter starts a [number](numbers.md#counts) |
-| `n` | titles: mail, paper, labels, and named sports | `unona` *newspaper*, `azuna` *soccer* | [**-n**](word-endings.md#proper-name--n) is the name ending |
+| `n` | titles: mail, paper, labels, and named sports | `unona` *newspaper*, `azuna` *soccer* | [**-n**](proper-names.md#proper-name--n) is the name ending |
 
 The last vowel is the job, with the same vowel series as [joins](joins.md#beginner): **a** add, **o** one, **e** order, **u** undo.
 
@@ -577,6 +577,6 @@ Like every dictionary word, you look these up. You never add a tail to a root on
 
 - **`x`** at the start of a word (keep going): [dependents.md](dependents.md#continue-x)
 - How **`x`** sits in the word shape: [phonology.md](phonology.md#phonotactics)
-- [intention.md#ability](intention.md#ability) / [sakes.md](sakes.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
+- [ability.md#ability](ability.md#ability) / [sakes.md](sakes.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
 - Conversation length: [name **`x`** vowel](#conversation-length); bare hello: [word-endings.md](word-endings.md#greeting)
 - Extra-noun fuse on a citation: [hooks.md](hooks.md#hook-compounds)

@@ -108,7 +108,7 @@ export function setBandFrontMatter(markdown: string, band: Band): string {
 export function rewriteAnchorRefs(text: string, map: Map<string, string>): { text: string; changes: { from: string; to: string }[] } {
   const changes: { from: string; to: string }[] = [];
   const textOut = text.replace(
-    /(\]\()?((?:[\w.-]+\/)*)([\w.-]+\.md)#([A-Za-z0-9_-]+)(\))?/g,
+    /(\]\()?((?:[\w.-]+\/)*)([\w.-]+\.md)#([A-Za-z0-9_-]+)(?![A-Za-z0-9_-])(\))?/g,
     (whole, linkOpen: string | undefined, dir: string, page: string, id: string, linkClose: string | undefined) => {
       const to = map.get(`${page}#${id}`);
       if (!to) return whole;
@@ -146,7 +146,9 @@ export function appendObjectToExportedArray(
   const marker = `export const ${exportName}`;
   const start = source.indexOf(marker);
   if (start < 0) throw new Error(`missing ${marker}`);
-  const open = source.indexOf("[", start);
+  const assign = source.indexOf("=", start);
+  if (assign < 0) throw new Error(`${exportName} has no assignment`);
+  const open = source.indexOf("[", assign);
   if (open < 0) throw new Error(`${exportName} is not an array`);
   let depth = 0;
   let close = -1;

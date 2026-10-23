@@ -11,7 +11,7 @@ A quick look at the places where Agebon breaks one of its own patterns. Each row
 
 ## `-n` that is not a name {#n-not-a-name}
 
-On a content word, the ending **-n** marks a name: this person, place, work, or brand, not a kind of thing ([word endings](../word-endings.md#proper-name--n)). These closed word families also end in **-n** without naming anything:
+On a content word, the ending **-n** marks a name: this person, place, work, or brand, not a kind of thing ([word endings](../proper-names.md#proper-name--n)). These closed word families also end in **-n** without naming anything:
 
 | Words | What **-n** does there | Example |
 |-------|------------------------|---------|
@@ -23,6 +23,6 @@ These still count as names:
 
 | Words | Why it is still a name |
 |-------|------------------------|
-| a phrase join under `/z/`, `/d/`, or `/b/` | **-n** titles the bundle ([titled phrases](../word-endings.md#titled-phrases)) |
-| a hook | **-n** titles a proper-name phrase ([titled phrases](../word-endings.md#titled-phrases)) |
-| a number word | **-n** is a conventional designation, such as an official label or *the Second* ([number-word exception](../word-endings.md#number-word-exception)) |
+| a phrase join under `/z/`, `/d/`, or `/b/` | **-n** titles the bundle ([titled phrases](../proper-names.md#titled-phrases)) |
+| a hook | **-n** titles a proper-name phrase ([titled phrases](../proper-names.md#titled-phrases)) |
+| a number word | **-n** is a conventional designation, such as an official label or *the Second* ([number-word exception](../proper-names.md#number-word-exception)) |

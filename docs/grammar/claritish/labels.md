@@ -51,4 +51,4 @@ She's a `nurse-the`.
 He's `bossy-tho` with his brother.
 :::
 
-<!-- Source (editors): predication.md#label-scope. -->
+<!-- Source (editors): label-scope.md#label-scope. -->

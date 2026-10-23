@@ -27,7 +27,7 @@ describe("parseWord — content / gl- / citation", () => {
     assert.deepEqual(word.family, { kind: "content", roots: ["azawa"] });
   });
 
-  it("parses -ln as one thing a name applies to, with -x after it (word-endings.md#name-instance--ln)", () => {
+  it("parses -ln as one thing a name applies to, with -x after it (proper-names.md#name-instance--ln)", () => {
     const word = parseOk("dazawaln");
     assert.equal(word.ending, "ln");
     assert.deepEqual(word.family, { kind: "content", roots: ["azawa"] });
@@ -556,7 +556,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.equal(parseOk("zwazam").family.kind, "x");
   });
 
-  it("parses a slot-part role compound on /h/ as capacity (roles.md#capacity)", () => {
+  it("parses a slot-part role compound on /h/ as capacity (viewpoint.md#capacity)", () => {
     const word = parseOk("hwezuduyel");
     if (word.family.kind === "x") {
       assert.equal(word.family.xFamily, "role");
@@ -567,7 +567,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.equal(word.pos, "h");
   });
 
-  it("parses content-rule parts as pointers and compounds (roles.md#content-of-the-event)", () => {
+  it("parses content-rule parts as pointers and compounds (viewpoint.md#content-of-the-event)", () => {
     const pointer = parseOk("dwahar");
     assert.deepEqual(pointer.family, {
       kind: "x",

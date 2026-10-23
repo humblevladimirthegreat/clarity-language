@@ -328,7 +328,7 @@ English puts the adjective before the noun (*an angry dog*). Agebon can too: add
 
 A `bl-` word the adjective hosts still follows it, and a `/w/` word still sits immediately before it (`welazom glunemul zudozol` = *a very angry dog*). On `/ɡ/`, this extra **`l`** only moves the adjective; the word means the same either way. On `/b/`, [`bl-`](#extra-nouns) is a different job, not a different order. A noun must come after it: with no noun to lean on, write a plain `/ɡ/` adjective after the noun instead (`zudozol gunemul`).
 
-A [family name](word-endings.md#multipart-names) is a `/ɡ/` word too, so **`gl-`** puts it first, for a culture that names people family first. It leans on a [call](speech-moves.md#vocative) the same way.
+A [family name](proper-names.md#multipart-names) is a `/ɡ/` word too, so **`gl-`** puts it first, for a culture that names people family first. It leans on a [call](speech-moves.md#vocative) the same way.
 
 > `glalowen zalen vowurel.`
 >
@@ -624,7 +624,7 @@ An adjective before its noun takes **`gl-`**; a plain `/ɡ/` word describes the 
 
 English often moves or stresses a word to single it out: *It's a cat that Uzozen sees*, *It was Uzozen who saw the cat*, or a stressed *Uzozen saw the cat*. Agebon word order carries no emphasis. A sentence's usual order is set by its [speech act](speech-moves.md#act-word-order), and any other order means exactly the same (with joined verbs, a word's place says which verb it goes with, [verb-phrase forms](join-across-roles.md#vp-clause-forms)). When you translate, ask what the English emphasis is doing.
 
-If the English sets one person or thing against others (*Uzozen, not someone else*), put the [contrastive focus](speech-moves.md#tone-marks) mark **`&`** on that word.
+If the English sets one person or thing against others (*Uzozen, not someone else*), put the [contrastive focus](speech-acts.md#tone-marks) mark **`&`** on that word.
 
 > `zuzozen &dagozol vawebol.`
 >

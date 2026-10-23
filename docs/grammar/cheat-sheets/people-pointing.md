@@ -20,8 +20,8 @@ A quick look at [pronouns](../pronouns.md), [topic](../topic.md), and [plurality
 | [By the part they played](../pronouns.md#role-pointers) | role letter + `wa` + part consonant + pointer vowel + **-r** | `zwazar` | *the latest doer* | B |
 | [A new one of that kind](../pronouns.md#a-new-one) | the same pointer with **-l** | `dwadal` | *another one* (as object) | B |
 | [Their part, not them](../pronouns.md#share) | the same pointer with **-m** | `zwazam` | *what the doer did* | B |
-| [Pin one sense](../pronouns.md#resume-sense) | **-rl** concrete, **-rm** abstract | `dudozorl` | *the dog* (not the loyalty) | I |
-| [A label you chose](../pronouns.md#tag-pronouns) | role letter + `w` + tag vowel | `zwar` | *A* | I |
+| [Pin one sense](../tag-pronouns.md#resume-sense) | **-rl** concrete, **-rm** abstract | `dudozorl` | *the dog* (not the loyalty) | I |
+| [A label you chose](../tag-pronouns.md#tag-pronouns) | role letter + `w` + tag vowel | `zwar` | *A* | I |
 | [The talk's topic](../topic.md#topic-pronoun) | `alo` + **-n** | `zalon` | *the topic* | I |
 
 A resume uses the **whole stem**: `dobahohar` is *the bedroom*, `dobahor` is *the bed*. It points at the **most recent** word with that stem.
@@ -49,13 +49,13 @@ Endings on a pointer: **-r** the same one, **-l** [a new one](../pronouns.md#a-n
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Same action again](../pronouns.md#cross-role-recast): change only the role letter | `zolazun vuzozer.` | *Olazun does the same with Uzozen.* | I |
-| [Each other](../pronouns.md#reciprocal) | `zuzozen zolazun zal vawebol hehem.` | *Uzozen and Olazun see each other.* | I |
-| [A new one with a new property](../pronouns.md#cross-role-recast) | `zolazun dar gudozor gubulol vawebol.` | *Olazun sees a black one.* | I |
+| [Same action again](../tag-pronouns.md#cross-role-recast): change only the role letter | `zolazun vuzozer.` | *Olazun does the same with Uzozen.* | I |
+| [Each other](../tag-pronouns.md#reciprocal) | `zuzozen zolazun zal vawebol hehem.` | *Uzozen and Olazun see each other.* | I |
+| [A new one with a new property](../tag-pronouns.md#cross-role-recast) | `zolazun dar gudozor gubulol vawebol.` | *Olazun sees a black one.* | I |
 
 ### Tags {#tags}
 
-A [tag](../pronouns.md#tag-pronouns) is a label you choose: role letter, `w`, a tag vowel (A **a**, E **e**, O **o**, U **u**), an ending. It stays on its referent. Tags fill `/z/`, `/d/`, `/b/` only.
+A [tag](../tag-pronouns.md#tag-pronouns) is a label you choose: role letter, `w`, a tag vowel (A **a**, E **e**, O **o**, U **u**), an ending. It stays on its referent. Tags fill `/z/`, `/d/`, `/b/` only.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -113,13 +113,13 @@ Role letter + the root + **-n** ([special pronouns](../pronouns.md#special-prono
 |------|-------|---------|---------|-------|
 | [name **-nx**](../plurality.md#associative) | anchor and associates | `zuzozenx` | *Uzozen and associates* | B |
 | [**-lx** / **-mx**](../plurality.md#associative) | an indefinite group | `zagozolx` | *some cats* | B |
-| [**-lnx**](../word-endings.md#name-instance--ln) | some of a name | `duzozelnx` | *some Uzozens* | I |
+| [**-lnx**](../proper-names.md#name-instance--ln) | some of a name | `duzozelnx` | *some Uzozens* | I |
 | [**-rx**](../plurality.md#associative) | someone mentioned, and associates | `zuzozerx` | *they* | B |
 | [speaker **-x**](../plurality.md#person-role-x) | the speaker and their people, you not included | `uwonx` (`zuwonx`, `duwonx`) | *I and my people* | B |
 | [listener **-x**](../plurality.md#person-role-x) | the address set, speaker not included | `awanx` (`zawanx`, `dawanx`) | *you all* | B |
 | [interlocutors **-x**](../plurality.md#person-role-x) | everyone here, and their people | `ayanx` | *we all* | B |
 
-Who counts as an associate is [open unless you say](../plurality.md#associate-resolution): a join or `ul` names it; otherwise a group already named, then the obvious group in the scene. Nonspecific `umon` takes no **-x**; *some people* is `zeyolx`.
+Who counts as an associate is [open unless you say](../collectives.md#associate-resolution): a join or `ul` names it; otherwise a group already named, then the obvious group in the scene. Nonspecific `umon` takes no **-x**; *some people* is `zeyolx`.
 
 ### One act, one unit {#collective}
 
@@ -127,16 +127,16 @@ Who counts as an associate is [open unless you say](../plurality.md#associate-re
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Group, act left open](../plurality.md#verbs-v) | `zuzozenx vezuyol` | *Uzozen and associates sing* | I |
-| [One shared act](../plurality.md#verbs-v) | `zuzozenx vezuyolx` | *they sing as one performance* | I |
-| [Joint doing, others unnamed](../plurality.md#verbs-v) | `zuzozen vezuyolx` | *Uzozen sings jointly* | I |
-| [The group as one unit](../plurality.md#verbs-v) | `zavayal vowurelx` | *the family walks as one unit* | I |
-| [Property of each member](../plurality.md#adjectives-g) | `zavonal zuwal zal garolom` | *the file-box and the toolbox are each heavy* | I |
-| [Property of the whole](../plurality.md#adjectives-g) | `zavonal zuwal zal garolomx` | *heavy together* | I |
-| [Group-level size](../plurality.md#adjectives-g) | `zavayal gogalam` | *the family is vast* | I |
-| [Members, plain](../plurality.md#adjectives-g) | `zavonalx garolom` | *the file-boxes are heavy* | I |
-| [Members, collectively](../plurality.md#adjectives-g) | `zavonalx garolomx` | *the file-boxes are heavy collectively* | I |
-| [Call a group](../plurality.md#vocatives-y) | `yawanx` | *hey, you all* | I |
+| [Group, act left open](../collectives.md#verbs-v) | `zuzozenx vezuyol` | *Uzozen and associates sing* | I |
+| [One shared act](../collectives.md#verbs-v) | `zuzozenx vezuyolx` | *they sing as one performance* | I |
+| [Joint doing, others unnamed](../collectives.md#verbs-v) | `zuzozen vezuyolx` | *Uzozen sings jointly* | I |
+| [The group as one unit](../collectives.md#verbs-v) | `zavayal vowurelx` | *the family walks as one unit* | I |
+| [Property of each member](../collectives.md#adjectives-g) | `zavonal zuwal zal garolom` | *the file-box and the toolbox are each heavy* | I |
+| [Property of the whole](../collectives.md#adjectives-g) | `zavonal zuwal zal garolomx` | *heavy together* | I |
+| [Group-level size](../collectives.md#adjectives-g) | `zavayal gogalam` | *the family is vast* | I |
+| [Members, plain](../collectives.md#adjectives-g) | `zavonalx garolom` | *the file-boxes are heavy* | I |
+| [Members, collectively](../collectives.md#adjectives-g) | `zavonalx garolomx` | *the file-boxes are heavy collectively* | I |
+| [Call a group](../collectives.md#vocatives-y) | `yawanx` | *hey, you all* | I |
 
 ## Don't mix up {#dont-mix-up}
 

@@ -105,7 +105,7 @@ Source: [restrictors.md](../grammar/restrictors.md)
 - **open:** further `/w/` bare forms beyond **`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur` / `wer`** and the non-bare Intermediate core: the same competing readings.
 - **open:** **-n** on `/w/` (`wan`, …). `/w/` is never a phrase-list item, so there is no package to name. (`/h/`…**-n** is [join-relations](../grammar/join-across-roles.md#join-relations).)
 - **open:** **`wubam`** before **-r** / **-n**. *Respectively something* has no reading.
-- **open:** other join spellings under `/h/` / `/w/` beyond the [defined restrictor core](../grammar/restrictors.md#defined-core-full) and the join-relations, such as stacked **-r** (`haor`): a stacked blank has no statement job. See also [phrase join inventory](../grammar/joins.md#phrase-reserved-forms).
+- **open:** other join spellings under `/h/` / `/w/` beyond the [defined restrictor core](../grammar/more-occasions.md#defined-core-full) and the join-relations, such as stacked **-r** (`haor`): a stacked blank has no statement job. See also [phrase join inventory](../grammar/joins.md#phrase-reserved-forms).
 
 ## Joins
 
@@ -135,7 +135,7 @@ Source: [relations.md](../grammar/relations.md)
 
 ## Hooks — in-clause
 
-Source: [hooks.md](../grammar/hooks.md#ranges), [sakes.md](../grammar/sakes.md#contrary-to-stance)
+Source: [hooks.md](../grammar/hooks.md#ranges), [sakes.md](../grammar/prescription.md#contrary-to-stance)
 
 - **open:** in-clause **`ao`** / **`ae`** / **`uo`** (`aol` / `ael` / `uol` and **-m** / **-n**) between same-role words. `aol` has two guesses (*for example*, from discourse `aol …`, or *namely*); `ael` *A, in fact B* (it escalates and keeps A, unlike `el`) is a fair fill but rarely needed; `uol` has no guess. The parser rejects them; extra-noun and discourse uses are unaffected.
 - **open:** stacked **-r** at the front of a sentence (`aor …`, `aer …`, `uor …`). Extra-noun point-back is assigned; as sentence glue they have no guess (*For example, anyway?* *In fact, as I said?*). Parser: `hookDiscourseStack`.
@@ -178,7 +178,7 @@ Source: [hooks.md](../grammar/hooks.md#hooked-joins)
 
 Source: [roles.md](../grammar/roles.md), [compounds.md](../grammar/compounds.md)
 
-- **open:** a role compound on `/v/` / `/w/` / `/th/`. A role compound names a participant or a quality of an event, and these slots take none: it fills `/z/` `/d/` `/b/` `/ɡ/`, sets a topic under `/x/`, calls under `/y/`, and on `/h/` takes a slot part as [capacity](../grammar/roles.md#capacity). Parser: `roleCompoundSlot`.
+- **open:** a role compound on `/v/` / `/w/` / `/th/`. A role compound names a participant or a quality of an event, and these slots take none: it fills `/z/` `/d/` `/b/` `/ɡ/`, sets a topic under `/x/`, calls under `/y/`, and on `/h/` takes a slot part as [capacity](../grammar/viewpoint.md#capacity). Parser: `roleCompoundSlot`.
 - **open:** a content-part compound on `/h/` (`hwahowurel`). The manner of an event as an adverb is the ordinary `/h/` word (`howurel`); a person-as-adverb on `/h/` is capacity, which needs a slot part. Parser: `roleCompoundSlot`.
 - **closed:** **`v`** in a role compound (`zwavowurel`). The event noun is the stem itself (`dowurel`). Parser: no word.
 - **closed ([hooked parts](design-decisions.md#hooked-parts-and-the-result)):** a role word for a hooked part (scene, instrument, goal, source, path, bearer) or a separate result. No part consonant names one. Parser: no word.
@@ -201,7 +201,7 @@ Source: [pronouns.md](../grammar/pronouns.md#role-pointers)
 
 ## Tag pronouns
 
-Source: [pronouns.md](../grammar/pronouns.md#tag-pronouns)
+Source: [pronouns.md](../grammar/tag-pronouns.md#tag-pronouns)
 
 - **closed (D-24):** a tag on `/y/` / `/x/` (`ywar`, `xwar`).
 - **open:** a tag on `/v/` / `/ɡ/` / `/h/` / `/w/` / `/th/`, or with `gl-` (`vwar`). A tag names a participant, and these slots take none. Parser: `tagSlot`.
@@ -214,7 +214,7 @@ Source: [pronouns.md](../grammar/pronouns.md#tag-pronouns)
 
 ## Role letter + `w` + vowel + consonant
 
-Source: [roles.md](../grammar/roles.md#content-of-the-event)
+Source: [roles.md](../grammar/viewpoint.md#content-of-the-event)
 
 - **open:** role letter + `w` + scope + a consonant that is not a part + vowel(s) + ending (`zweyual`, `hweral`). The part consonants are **`z`** **`d`** **`b`** **`h`** **`g`** **`th`** **`w`** **`y`** **`x`** **`v`**. Parser: no word.
 
@@ -250,7 +250,7 @@ Source: [predication.md](../grammar/predication.md)
 
 ## Closed-root endings
 
-Source: [causation.md](../grammar/causation.md#poles), [relations.md](../grammar/relations.md), [dependents.md](../grammar/dependents.md#dependent-clauses), [knowing.md](../grammar/notional-standing.md#residue)
+Source: [causation.md](../grammar/iff-fault.md#poles), [relations.md](../grammar/relations.md), [dependents.md](../grammar/dependents.md#dependent-clauses), [knowing.md](../grammar/notional-standing.md#residue)
 
 An **-r** grade on a closed root without its own **-r** would take away the live whole-stem resume ([design-decisions § Closed-root endings](design-decisions.md#closed-root-endings)). **-l** has two competing guesses (strongest, as on *exactly like* `hewol`, or broke a norm, as on *because*), so a family where neither fits has no guessable **-l**.
 
@@ -281,11 +281,11 @@ Source: [dependents.md](../grammar/dependents.md#sentence-linkers)
 
 ## Turn words (`/y/`)
 
-Source: [speech-moves.md](../grammar/speech-moves.md#speech-act), [stacked act words](../grammar/speech-moves.md#stacked-acts), [describing a call or reaction](../grammar/speech-moves.md#describe-turn-word), [questions.md](../grammar/questions.md#polar-endings)
+Source: [speech-moves.md](../grammar/speech-acts.md#speech-act), [stacked act words](../grammar/speech-acts.md#stacked-acts), [describing a call or reaction](../grammar/speech-acts.md#describe-turn-word), [questions.md](../grammar/polar-inventory.md#polar-endings)
 
 - **closed (closed-root endings):** act and polar series with **-n** (`yan` / `yon` / `yen` / `yun`, `yaen` / …). On `/y/`, **-n** calls someone. Parser: `turnSeriesCall`.
-- **closed (D-59):** a third opening act word (`yul yul yul`), and anything between two [stacked act words](../grammar/speech-moves.md#stacked-acts) (`yel al yol`).
-- **closed (closed-root endings):** a fill-ask blank for the act itself (*are you asking or telling?*). `yar` / `yor` / `yer` / `yur` are the [for-now acts](../grammar/speech-moves.md#act-r).
+- **closed (D-59):** a third opening act word (`yul yul yul`), and anything between two [stacked act words](../grammar/speech-acts.md#stacked-acts) (`yel al yol`).
+- **closed (closed-root endings):** a fill-ask blank for the act itself (*are you asking or telling?*). `yar` / `yor` / `yer` / `yur` are the [for-now acts](../grammar/speech-acts.md#act-r).
 - **closed (D-31):** a polar word before an act word, or two polar words in a row; a topic-only question.
 - **open:** an asking tag with a body after it (`yol yael zuzozen vowurel.`). The tag asks about the sentence before it and is a turn of its own; a body after it would be a second move in the same turn, and no question has asked for one. Parser: `tagBody`.
 - **closed (D-43):** a `/b/` hosted by a call or reaction; `yohumal buzozen` is a reaction and then a body with a recipient.
@@ -327,9 +327,9 @@ Source: [clause.md](../grammar/clause.md)
 
 ## Vowel series and tone marks
 
-Source: [speech-moves.md](../grammar/speech-moves.md#tone-marks), [intention.md](../grammar/intention.md#ability)
+Source: [speech-moves.md](../grammar/speech-acts.md#tone-marks), [intention.md](../grammar/ability.md#ability)
 
-- **open:** stacked vowels after ability **x** (`xua`, …) and after sake **th** as a second stance (`guwathaol`). Not guessable (*can again*? *it depends*?): *it depends* is MAY or a sentence (polar `oe` is *decline to answer*), and *can again* is `xa` plus a sentence. Label scope uses those stacks ([predication](../grammar/predication.md#scope-stacks)). Sake locus stacks still come after the horizon letter (`guwathamol`). The parser rejects a stacked sake stance and stacked ability.
+- **open:** stacked vowels after ability **x** (`xua`, …) and after sake **th** as a second stance (`guwathaol`). Not guessable (*can again*? *it depends*?): *it depends* is MAY or a sentence (polar `oe` is *decline to answer*), and *can again* is `xa` plus a sentence. Label scope uses those stacks ([predication](../grammar/label-scope.md#scope-stacks)). Sake locus stacks still come after the horizon letter (`guwathamol`). The parser rejects a stacked sake stance and stacked ability.
 - **open:** a new tone mark (whisper, sarcasm, …). No voice job is left: `;` `%` `?` already cover quiet, sarcasm and hesitation.
 - **closed (D-23):** `~` as a tone mark, and a third copy of a mark (`!!!`).
 

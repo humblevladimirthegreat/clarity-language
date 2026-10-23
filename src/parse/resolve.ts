@@ -66,7 +66,7 @@ type Ctx = {
   hookLandmarks: Set<LexWord>;
   /** Names said in this conversation; a greeting from one of them while closing is goodbye too. */
   named: Set<string>;
-  /** Tags assigned in this conversation (pronouns.md#tag-pronouns); a topic change leaves them alone. */
+  /** Tags assigned in this conversation (tag-pronouns.md#tag-pronouns); a topic change leaves them alone. */
   tags: Map<TagVowel, TagBinding>;
   /** Head of the noun package the walk is in: a tag **-l** riding on the package names it. */
   packageHead?: LexWord;
@@ -84,7 +84,7 @@ type Ctx = {
   /** Predicates in order, one per clause body; role pointers pick from these. */
   anchors: Anchor[];
   clauses: OpenClause[];
-  /** Completed turns, in order; a `y` pointer reads these (roles.md#content-of-the-event). */
+  /** Completed turns, in order; a `y` pointer reads these (viewpoint.md#content-of-the-event). */
   turns: { head: LexWord }[];
   /** The utterance the walk is in, until it closes. */
   currentTurn?: { head?: LexWord };
@@ -138,7 +138,7 @@ function contentRoots(word: LexWord): string[] {
   }
   // A hook or numeric prefix's **-r** resumes the whole word, prefix and stem (`zuexavuvur`, hooks.md#hook-prefixes).
   if (family.kind === "x" && (family.xFamily === "hookPrefix" || family.xFamily === "numeric")) return family.rightRoots ?? [];
-  // Ability host (`vezehexal`): a resume keeps the *can* ([intention.md](docs/grammar/intention.md#incapability)).
+  // Ability host (`vezehexal`): a resume keeps the *can* ([intention.md](docs/grammar/ability.md#incapability)).
   if (family.kind === "x" && family.xFamily === "ability") return family.leftRoots;
   return [];
 }
@@ -240,7 +240,7 @@ function isPointer(word: LexWord): boolean {
 
 /**
  * The person a seam's own **-r** resumes: a holder's (`thevemazawar`, knowing.md#holder) or a viewpoint lateral's facing
- * anchor (`howuhethuzozer`, roles.md#viewpoint-laterals).
+ * anchor (`howuhethuzozer`, viewpoint.md#viewpoint-laterals).
  */
 function holderRoots(word: LexWord): string[] {
   const family = word.family;
@@ -453,7 +453,7 @@ function isConsequenceLinker(word: LexWord): boolean {
  * The anchor of a clause: its verb (or its `/ɡ/` word with no verb) and the overt filler of each
  * role. Doer `/z/`, undergoer `/d/`; the extra party is the verb's unhosted `/b/` or the `/b/` a
  * `/ɡ/` predicate hosts. Content-rule parts harvest manner `/h/` and stance `/th/` words here
- * (roles.md#content-of-the-event).
+ * (viewpoint.md#content-of-the-event).
  */
 function anchorOf(clause: Clause): Anchor | undefined {
   let verb: LexWord | undefined;
@@ -537,7 +537,7 @@ function resultingState(anchor: Anchor): Filler | undefined {
 }
 
 /**
- * Content-rule pointers (roles.md#content-of-the-event): manner, state, stance, extent, speech move,
+ * Content-rule pointers (viewpoint.md#content-of-the-event): manner, state, stance, extent, speech move,
  * outcome, and the event itself. Structure decides which words count; the resolver uses no word meanings.
  */
 function bindContentPointer(ctx: Ctx, bind: AnaphorBind, pronoun: LexWord, part: RolePart, pointerVowel: PointerVowel): void {
@@ -683,7 +683,7 @@ function bindPointer(ctx: Ctx, pronoun: LexWord): void {
   pinPointer(ctx, bind, pronoun, part, filler, anchor.predicate);
 }
 
-// ── Tag pronouns (pronouns.md#tag-pronouns) ────────────────────────────────
+// ── Tag pronouns (tag-pronouns.md#tag-pronouns) ────────────────────────────────
 
 type TagWord = LexWord & { family: { kind: "tag"; vowels: TagVowel[] } };
 
@@ -763,7 +763,7 @@ function considerTag(ctx: Ctx, word: TagWord, slot: WordSlot | undefined): void 
   else recallTag(ctx, word);
 }
 
-/** Which sense of its stem a word carries: **-l** / **-m**, or a resume's own pin or its antecedent's (pronouns.md#resume-sense). */
+/** Which sense of its stem a word carries: **-l** / **-m**, or a resume's own pin or its antecedent's (tag-pronouns.md#resume-sense). */
 function sensePinned(ctx: Ctx, word: LexWord): "l" | "m" | undefined {
   if (word.ending === "l" || word.ending === "m") return word.ending;
   if (word.ending !== "r") return undefined;
@@ -916,7 +916,7 @@ function resolveVisitor(ctx: Ctx): Visitor {
       if (node.kind === "utterance") {
         const { left } = node.utterance;
         let kind: AskKind = "none";
-        // A question word only as the inner of a stack sounds like a question but asks nothing (speech-moves.md#stacked-acts).
+        // A question word only as the inner of a stack sounds like a question but asks nothing (speech-acts.md#stacked-acts).
         if (ctx.question) kind = !isQuestionForce(actWord(left)) ? "rhetorical" : ctx.gaps.length > 0 ? "fillAsk" : "yesNo";
         ctx.asks.push({ utteranceIndex: node.index, kind, gaps: ctx.gaps, ...(ctx.innerGaps.length > 0 ? { inner: ctx.innerGaps } : {}) });
         if (ctx.currentTurn?.head) ctx.turns.push({ head: ctx.currentTurn.head });

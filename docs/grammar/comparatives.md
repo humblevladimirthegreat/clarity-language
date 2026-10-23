@@ -652,7 +652,7 @@ A factor goes with the equative **`zoel`**; after **`zel`** the number is just *
 <a id="worse-than"></a>
 <a id="best-effort"></a>
 
-Intermediate ranked against a plan, and [sake bars](sakes.md#sake-bars) rank against what a sake needs. Any stance that **sets a value** can be the [bar](#bars), and each keeps its own endings and meaning. A channel word (how you know something: you saw it, remember it, were told it, worked it out) sets **the level that source led you to expect**. So *than usual*, *than I remember*, and *than advertised* each put one channel word in the bar slot.
+Intermediate ranked against a plan, and [sake bars](prescription.md#sake-bars) rank against what a sake needs. Any stance that **sets a value** can be the [bar](#bars), and each keeps its own endings and meaning. A channel word (how you know something: you saw it, remember it, were told it, worked it out) sets **the level that source led you to expect**. So *than usual*, *than I remember*, and *than advertised* each put one channel word in the bar slot.
 
 > `zuzozen thubem zel guzemol.`
 >
@@ -669,7 +669,7 @@ Intermediate ranked against a plan, and [sake bars](sakes.md#sake-bars) rank aga
 <!-- cheat-sheet: roles-comparing -->
 | Bar | Ranks against | English |
 |-----|---------------|---------|
-| met sake `thudatham`, `thobatham`, … ([sake bars](sakes.md#sake-bars)) | what that sake needs | *enough* / *too much* / *not enough* |
+| met sake `thudatham`, `thobatham`, … ([sake bars](prescription.md#sake-bars)) | what that sake needs | *enough* / *too much* / *not enough* |
 | LIVE `thugom` | how it looks | *than it looks* |
 | MEMORY `thevum` | how you remember it | *than I remember* / *than last time* |
 | PATTERN `thubem` | the trail of cases | *than usual* / *normal* |
@@ -760,7 +760,7 @@ To rank one kind against another, keep one kind as the item and put the other in
 
 A CLUES or PATTERN bar can also take [`blarl`](knowing.md#evidence-clause): the next sentence is the grounds you worked the bar out from.
 
-**Ability.** The ability word [`oda`](intention.md#ability-fallback) as the bar is the limit of **what can be done**. A tie against **`hodaxal`** is *as … as possible*. The ability vowel says how fixed that limit is, so rank **`zel`** against **`hodaxel`** is *more than can be done for now*, and against **`hodaxul`** *more than could ever be done*.
+**Ability.** The ability word [`oda`](ability.md#ability-fallback) as the bar is the limit of **what can be done**. A tie against **`hodaxal`** is *as … as possible*. The ability vowel says how fixed that limit is, so rank **`zel`** against **`hodaxel`** is *more than can be done for now*, and against **`hodaxul`** *more than could ever be done*.
 
 > `zolazun hodaxal zoel hedurem vowurel.`
 >
@@ -796,7 +796,7 @@ A CLUES or PATTERN bar can also take [`blarl`](knowing.md#evidence-clause): the 
 >
 > "The book is even less clear than I feared."
 
-Only these stances set a value. A [cause or condition pole](causation.md), [MAY](knowing.md#may), [MIRATIVE](notional-standing.md#mirative), [DECISION](intention.md#decision), and [ATTEMPT](intention.md#try) do not, so none of them is a bar. A want sets the level wanted; a decision or an attempt commits to an act and sets no level, so *more than decided* is the [plan](intention.md#plan-predict) bar.
+Only these stances set a value. A [cause or condition pole](causation.md), [MAY](knowing.md#may), [MIRATIVE](notional-standing.md#mirative), [DECISION](ability.md#decision), and [ATTEMPT](ability.md#try) do not, so none of them is a bar. A want sets the level wanted; a decision or an attempt commits to an act and sets no level, so *more than decided* is the [plan](intention.md#plan-predict) bar.
 
 ### Vague amounts (*many* / *few*) {#vague-amounts}
 

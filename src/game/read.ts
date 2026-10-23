@@ -197,7 +197,7 @@ function readUtterance(utterance: Utterance, gaps: Set<LexWord>, antecedents: Ma
       }
     }
     readUnits(units, act, gaps);
-    // With no verb, the subject's adjectives say what it is (predication.md#beginner); with a verb they pick which one.
+    // With no verb, the subject's adjectives say what it is (predication.md#property-is-adj); with a verb they pick which one.
     if (!act.verb && act.subject && act.subject.kind !== "gap" && act.subject.kind !== "speaker" && act.subject.kind !== "listener" && act.subject.kind !== "pointer") {
       act.predicate.push(...act.subject.adjs);
       act.subject = { ...act.subject, adjs: [] };

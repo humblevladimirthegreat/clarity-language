@@ -90,7 +90,7 @@ function rewriteTargets(): string[] {
       if (statSync(full).isDirectory()) {
         if (SKIP_DIRS.has(name)) continue;
         stack.push(full);
-      } else if (/\.(?:md|ts|vue|csv)$/.test(name) && !name.startsWith("peel-band")) {
+      } else if (/\.(?:md|ts|vue|csv|tsv)$/.test(name) && !name.startsWith("peel-band")) {
         out.push(full);
       }
     }
@@ -105,7 +105,7 @@ function applyMaps(
   homeMap: Map<string, string>,
 ): { text: string; changes: { from: string; to: string }[] } {
   const currentPage = file.endsWith(".md") ? file.split(/[/\\]/).pop()! : "";
-  const code = /\.(?:ts|vue|csv)$/.test(file);
+  const code = /\.(?:ts|vue|csv|tsv)$/.test(file);
   const map = code ? new Map([...linkMap, ...homeMap]) : linkMap;
   let next = text;
   const changes: { from: string; to: string }[] = [];

@@ -149,7 +149,7 @@ When the thing only comes **from** B (*the sound of the drums*), use origin **`g
 
 ### Named handles {#named-handles}
 
-**Needs:** [Proper name `-n`](word-endings.md#proper-name--n) · [Multipart names](word-endings.md#multipart-names) · [Initials](numbers-applied.md#initials)
+**Needs:** [Proper name `-n`](proper-names.md#proper-name--n) · [Multipart names](proper-names.md#multipart-names) · [Initials](numbers-applied.md#initials)
 
 A long official title (bureau, act, titled group) may have a **handle**: one published root plus **-n**, used like any proper name, including on first mention. The long form is the same office spelled as a hyphenated name (`ROOT x ROOT` … + **-n**).
 
@@ -177,7 +177,7 @@ Resume the handle like any name: its whole stem + **-r** (`zanar`).
 
 ### An English name as Agebon {#english-name}
 
-**Needs:** [Named `-n`](word-endings.md#named-n-beginner) · [Countries](word-endings.md#countries-traditions) · [Opaque](spans.md#loans) · [Respell](lexicon.md#respell)
+**Needs:** [Named `-n`](word-endings.md#named-n-beginner) · [Countries](proper-names.md#countries-traditions) · [Opaque](spans.md#loans) · [Respell](lexicon.md#respell)
 
 English *Japan* as a place already has a published root: write `azabanan`. English *Sam* as a person is either a published root you pick as a name, a respelling that follows the English sound, or a span that keeps the original letters.
 
@@ -199,7 +199,7 @@ To keep *Sam* as English spelling, write the span. To see the Agebon sound-spell
 
 ### Who does it: *student*, *singer*, *manager* {#agent-nouns}
 
-**Needs:** [Role compounds (the doer)](roles.md#role-compounds) · [One time or a practice](roles.md#one-time-or-a-practice) · [Saying someone is a teacher](roles.md#saying-someone-is-a-teacher) · [The role you act in](roles.md#capacity)
+**Needs:** [Role compounds (the doer)](roles.md#role-compounds) · [One time or a practice](roles.md#one-time-or-a-practice) · [Saying someone is a teacher](roles.md#saying-someone-is-a-teacher) · [The role you act in](viewpoint.md#capacity)
 
 English names a person by what they usually do (*a singer*, *a manager*). Agebon builds that noun from the event root: person letter, **`w`**, the practiced-role scope **`e`**, the doer **`z`**, the root, then the ending ([one time or a practice](roles.md#one-time-or-a-practice)). `zwezezuyol` is *a singer* from `ezuyol` *sing*, and on `/ɡ/` (`gwezezuyol`) it says someone is one. With scope **`a`**, `zwazezuyol` is only *someone who sings*. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
 
@@ -270,7 +270,7 @@ Rows with scope **`a`** name a part in one event (*winner*, *witness*, *passenge
 
 A noun that specifies the job goes in the stem: `zwezudozoxowurel` is *a dog walker*. The noun's part in the job is as open as in English.
 
-English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwezuduyel` is *as a teacher* ([the role you act in](roles.md#capacity)). `hwuezuduyel` is *not as a teacher*, speaking off duty.
+English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwezuduyel` is *as a teacher* ([the role you act in](viewpoint.md#capacity)). `hwuezuduyel` is *not as a teacher*, speaking off duty.
 
 **Compare with:** *like a teacher* is the [similative](relations.md#similative) (`hewom blwezuduyel`).
 
@@ -360,7 +360,7 @@ English *buy* and *sell* are two views of one swap. Agebon has one trading verb,
 
 ### Give, get, lend, earn, owe {#give-get}
 
-**Needs:** [The extra `/b/` party (`o`)](roles.md#role-compounds) · [Extra noun (`el`, `em`)](hooks.md#extra-noun) · [Exchange](relations.md#exchange) · [Coordinated lists](joins.md#respectively) · [Fault](causation.md#fault)
+**Needs:** [The extra `/b/` party (`o`)](roles.md#role-compounds) · [Extra noun (`el`, `em`)](hooks.md#extra-noun) · [Exchange](relations.md#exchange) · [Coordinated lists](joins.md#respectively) · [Fault](iff-fault.md#fault)
 
 English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Agebon keeps the giving verb `vewal` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in plain `/b/` after the verb ([recipient](clause.md#extra-nouns)). To name the parties from the verb itself, use the [role compounds](roles.md#role-compounds): **`zwazewal`** is the giver (*supplier*, *provider*) and **`zwabewal`** is the recipient (*receiver*). **-r** (`zwabewar`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vegeral` (*credit*, with the *lend* sense): the borrower is the recipient.
 
@@ -607,7 +607,7 @@ An English noun like *case* or *board* covers several jobs, and Agebon has a dif
 
 ### Contribution, acquisition, murder, comparison and other act nouns {#act-nouns}
 
-**Needs:** [The event itself](roles.md#the-event-itself) · [Role compounds](roles.md#role-compounds) · [Someone's act](#someones-act) · [Fault](causation.md#fault) · [Label scope](predication.md#label-scope) · [Proxy](relations.md#proxy) · [Exchange](relations.md#exchange)
+**Needs:** [The event itself](roles.md#the-event-itself) · [Role compounds](roles.md#role-compounds) · [Someone's act](#someones-act) · [Fault](iff-fault.md#fault) · [Label scope](label-scope.md#label-scope) · [Proxy](relations.md#proxy) · [Exchange](relations.md#exchange)
 
 English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *comparison*). Agebon has no separate noun for them. Put the verb stem on a thing letter with no **`w`** and part to name the act itself, write **`d`** as the part to name the thing the act happens to, or say the act as a sentence and resume it with **-r**. A wrongness or a pattern is the pole or label on the act, not a different noun.
 
@@ -656,7 +656,7 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 >
 > "Uzozen compares Olazun with Ahelan."
 
-**Compare with:** a ranking (*Uzozen is more challenging than Olazun*) is the [rank join](comparatives.md#comparatives), not **`vezom`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](sakes.md#sake-preference); **`zolamalugulel`** names the one chosen. *Often* / *usually* is a [restrictor](restrictors.md) (`huam`, `war`). A type across scenes is [label scope](predication.md#scope-type) **`thu`**.
+**Compare with:** a ranking (*Uzozen is more challenging than Olazun*) is the [rank join](comparatives.md#comparatives), not **`vezom`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](prescription.md#sake-preference); **`zolamalugulel`** names the one chosen. *Often* / *usually* is a [restrictor](restrictors.md) (`huam`, `war`). A type across scenes is [label scope](label-scope.md#scope-type) **`thu`**.
 
 ### Fair, keep, public, ride, admit and other leftover senses {#leftover-senses}
 
@@ -751,7 +751,7 @@ English *himself*, *herself*, *itself* and *themself* say the object is the same
 
 ### Cross-role inventory {#cross-role-inventory}
 
-**Needs:** [Resume](pronouns.md#resume-r) · [Cross-role recast](pronouns.md#cross-role-recast)
+**Needs:** [Resume](pronouns.md#resume-r) · [Cross-role recast](tag-pronouns.md#cross-role-recast)
 
 Intermediate already recast one referent into a new slot. Each table is an **antecedent** role; rows are the **pronoun** role. The mechanism is still one **-r**.
 
@@ -1091,7 +1091,7 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 
 **Needs:** [Opaque and loan words](spans.md#loans)
 
-When a fence glyph (`[` / `]` / `(` / `)` / `<` / `>` / `{` / `}` / `=` / `|` / `#`) or a [tone mark](speech-moves.md#tone-marks) (`!` / `?`) must appear **as content**, wrap that token in an **opaque** `<…>` span. The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
+When a fence glyph (`[` / `]` / `(` / `)` / `<` / `>` / `{` / `}` / `=` / `|` / `#`) or a [tone mark](speech-acts.md#tone-marks) (`!` / `?`) must appear **as content**, wrap that token in an **opaque** `<…>` span. The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
 
 ```agebon
 d[ varayel d<]> ]
@@ -1111,7 +1111,7 @@ d[code > 1]
 
 ### Role, title, address {#role-title-address}
 
-**Needs:** [Role compounds](roles.md#role-compounds) · [Kind / role](predication.md#classification) · [Cite](spans.md#writing) · [Call someone](speech-moves.md#vocative) · [Vocatives](plurality.md#vocatives-y)
+**Needs:** [Role compounds](roles.md#role-compounds) · [Kind / role](predication.md#classification) · [Cite](spans.md#writing) · [Call someone](speech-moves.md#vocative) · [Vocatives](collectives.md#vocatives-y)
 
 These three English nouns each hide two jobs. *Role* is the function someone plays. Say it as a kind on `/ɡ/`, or as the usual doer of the event with a role compound and **`the`**. *Title* is either the name of a work or a claim to own something. *Address* is either speaking to someone or a speech.
 

@@ -333,7 +333,7 @@ describe("morphGlossLine — restrictor -r vs -l", () => {
 });
 
 describe("morphGlossLine — tags, xuen, hewol, pointer anchors", () => {
-  it("every polar stance keeps its reading (questions.md#polar-stance-fuller-inventory)", () => {
+  it("every polar stance keeps its reading (polar-inventory.md#polar-stance-fuller-inventory)", () => {
     expectLine("yael", "y-yes");
     expectLine("yaol", "y-sure");
     expectLine("yuel", "y-no");
@@ -341,7 +341,7 @@ describe("morphGlossLine — tags, xuen, hewol, pointer anchors", () => {
     expectLine("yual", "y-reject-frame");
     expectLine("yoel", "y-decline");
   });
-  it("any polar word makes a tag after yol (questions.md#tags)", () => {
+  it("any polar word makes a tag after yol (polar-inventory.md#tags)", () => {
     expectLine("yem zayan vowurel. yol yaol.", "y-request | z-interlocutors | v-walk . y-question | y-sure");
     expectLine("yem zawan vowurel. yol yuol.", "y-request | z-listener | v-walk . y-question | y-refuse-option");
     expectLine("zuzozen vowurel. yol yuel.", "z-Uzozen | v-walk . y-question | y-no");
@@ -353,7 +353,7 @@ describe("morphGlossLine — tags, xuen, hewol, pointer anchors", () => {
     expectLine("zuzozen hewol bludozal vowurel.", "z-Uzozen | [h-exactly-like | bl-duck] | v-walk");
     expectLine("zahehal gewol bluzozen.", "z-house | [g-exactly-like | bl-Uzozen]");
   });
-  it("a viewpoint lateral's -r resumes its facing anchor (roles.md#viewpoint-laterals)", () => {
+  it("a viewpoint lateral's -r resumes its facing anchor (viewpoint.md#viewpoint-laterals)", () => {
     expectLine("zuzozen vowurel. zolazun vuhohol howuhethuzozer.", "z-Uzozen | v-walk . z-Olazun | v-sit | h-west-th-←Uzozen");
   });
 });
@@ -395,7 +395,7 @@ describe("compareMorphGloss", () => {
     expectLine("zuzozen d@[enuron olazun] vegugum", "z-Uzozen | d-NAME.CITE[Enuron | Olazun] | v-rejection");
   });
 
-  it("glosses -ln and ^@ as the name plus .instance (word-endings.md#name-instance--ln)", () => {
+  it("glosses -ln and ^@ as the name plus .instance (proper-names.md#name-instance--ln)", () => {
     expectLine("zolazun duzozeln vawebol", "z-Olazun | d-Uzozen.instance | v-see");
     expectLine("zolazun duzozelnx vawebol", "z-Olazun | d-Uzozen.instance-x | v-see");
     expectLine("zolazun d^@<iPhone> vawebol", 'z-Olazun | d-NAME.OPAQUE.instance["iPhone"] | v-see');

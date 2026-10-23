@@ -87,7 +87,7 @@ Introduce, return, and clear each start a new **topic stretch**.
 |-------|---------|-----|
 | [Role pointer](pronouns.md#role-pointers) anchors | yes | `zwazar` *the latest doer* and `zwazor` *the other one* never reach into an earlier stretch. Someone from before is picked up by name or whole-stem **-r**. |
 | Whole-stem **-r** | no | It is the explicit way back (`xuzozer`), so it reaches across stretches. |
-| [Tags](pronouns.md#tag-pronouns) | no | A tag is assigned on purpose, so distance does not blur it, and placeholder reasoning often runs through a side topic. |
+| [Tags](tag-pronouns.md#tag-pronouns) | no | A tag is assigned on purpose, so distance does not blur it, and placeholder reasoning often runs through a side topic. |
 | Agenda numbering (`x#N`, outline depth) | no | Agenda items sit above topics; one item may hold several. |
 | Speech move, line of talk | no | They track the move and the line of talk, not people. |
 
@@ -149,7 +149,7 @@ To ask what the talk is about, ask *which topic?*: the fill-ask blank `zar`, the
 >
 > "Which topic?" / "What are we talking about?"
 
-**Compare with:** English *topic* covers several jobs, and Agebon keeps them apart. The discourse topic is `/x/`. A sentence frame is `hahugem` *as for*. `&` contrasts one phrase ([tone marks](speech-moves.md#tone-marks)). `zal` / `zem` / `zel` rank among others. Only `/x/` sets the topic.
+**Compare with:** English *topic* covers several jobs, and Agebon keeps them apart. The discourse topic is `/x/`. A sentence frame is `hahugem` *as for*. `&` contrasts one phrase ([tone marks](speech-acts.md#tone-marks)). `zal` / `zem` / `zel` rank among others. Only `/x/` sets the topic.
 
 ### Practice {#intermediate-practice}
 

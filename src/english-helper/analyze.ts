@@ -536,9 +536,9 @@ function spellHookPhrases(slots: readonly Slot[]): void {
   });
 }
 
-/** A label-scope seam as a row's form names it (`tha`, `thao`; predication.md#label-scope). */
+/** A label-scope seam as a row's form names it (`tha`, `thao`; label-scope.md#label-scope). */
 const SCOPE_SEAM = /^th(ao|ae|oe|ua|uo|ue|a|e|o|u)$/;
-const SCOPE_SECTION = /^predication\.md#scope-/;
+const SCOPE_SECTION = /^(?:predication|label-scope)\.md#scope-/;
 
 /** The seam a label-scope job or entry names, if it is one. */
 export function scopeSeam(s: Suggestion): string | undefined {
@@ -571,7 +571,7 @@ function scopedWord(data: HelperData, slot: Slot, seam: string): string | undefi
   return undefined;
 }
 
-/** Seams whose party follows in a `bl-` word (predication.md#scope-relative): **`tho`**, **`thuo`**. */
+/** Seams whose party follows in a `bl-` word (label-scope.md#scope-relative): **`tho`**, **`thuo`**. */
 const PAIR_SEAMS = new Set(["tho", "thuo"]);
 
 /** The first noun after slot `n`, as a `bl-` word (`zolazun` → `blolazun`): a pair scope's party. */
@@ -614,9 +614,9 @@ function sakeRoot(s: Suggestion): string | undefined {
   return (s.kind === "job" || s.kind === "entry") && s.link === "sakes.md#sake-inventory" && SAKE_ROOT.test(s.form) ? s.form : undefined;
 }
 
-/** The stance vowel a sakes.md row names, when it names one (*serves* → `a`, *for* → `o`). */
+/** The stance vowel a sakes.md or prescription.md row names, when it names one (*serves* → `a`, *for* → `o`). */
 function sakeStance(s: Suggestion): string | undefined {
-  if ((s.kind !== "job" && s.kind !== "entry") || !s.link.startsWith("sakes.md#")) return undefined;
+  if ((s.kind !== "job" && s.kind !== "entry") || !/^(?:sakes|prescription)\.md#/.test(s.link)) return undefined;
   const vowels = new Set(s.form.split(" / ").flatMap((p) => SAKE_STANCE.exec(p.trim())?.[1] ?? []));
   return vowels.size === 1 ? [...vowels][0] : undefined;
 }

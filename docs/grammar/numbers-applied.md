@@ -511,7 +511,7 @@ An *and*-join names only the two ends; a range of numbers puts **`al`** between 
 
 ### Initials {#initials}
 
-English shortens a long title to its initials (*FBI*). Agebon does too: take each root of a long [hyphenated name](word-endings.md#multipart-names), in order, and write its **first consonant** as a [letter code](#letter-codes) with **`@`** (**-n**, an official designation). A root always starts with a vowel, so its first letter would leave only four choices; its first consonant is the letter you hear.
+English shortens a long title to its initials (*FBI*). Agebon does too: take each root of a long [hyphenated name](proper-names.md#multipart-names), in order, and write its **first consonant** as a [letter code](#letter-codes) with **`@`** (**-n**, an official designation). A root always starts with a vowel, so its first letter would leave only four choices; its first consonant is the letter you hear.
 
 > `z@_nl vezuyel.`
 >
@@ -528,7 +528,7 @@ English shortens a long title to its initials (*FBI*). Agebon does too: take eac
 | `z=_nl` (🔊 `zronular`) | resume | *that office again* |
 
 - **Any title works.** Each initial is its own syllable, so two roots with the same first consonant give a doubled letter (`zanaxanumun` → `z@_nn`, 🔊 `zronunun`), and a title of any length gives one letter per root.
-- **Initials can be shared,** as in English. Context sorts out which office is meant. When you need a name nobody else has, give the office a [proper name](word-endings.md#proper-name--n) of its own instead: one published root + **-n**.
+- **Initials can be shared,** as in English. Context sorts out which office is meant. When you need a name nobody else has, give the office a [proper name](proper-names.md#proper-name--n) of its own instead: one published root + **-n**.
 - **Say it mid-sentence.** The whole rule is *say each root's first consonant by its letter name*, so you can make the initials while you talk.
 
 ### Rays {#rays}

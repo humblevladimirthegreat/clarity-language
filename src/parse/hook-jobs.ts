@@ -10,7 +10,7 @@
  * - `stray`: `em` + `/b/` with no noun on its left; enforce rejects it.
  * - `span`: a hook between two same-kind endpoints.
  * - `resume`: a resume hook (`-r`) that points back.
- * - `frame`: `uem` + a `/th/` stance it holds as the opposing frame (sakes.md#contrary-to-stance).
+ * - `frame`: `uem` + a `/th/` stance it holds as the opposing frame (prescription.md#contrary-to-stance).
  */
 import { visitResult, visitUnit, vpUnitLists } from "./ast-walk.js";
 import { topicEffect } from "./linkers.js";

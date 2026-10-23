@@ -26,7 +26,7 @@ That is five words, and three of them make you choose something English lets you
 
 - `thabor` says how you know: a gut sense, and only a faint one. Other words say you saw it, remember it, worked it out from clues, or were told, and other endings say the hunch is strong. Said once, it covers the next sentence too ([evidentiality](knowing.md#evidentiality)).
 - `guwathum` names what the failure costs: competence, one of the [sakes](sakes.md) (things that are good for a person). Its ending says the cost can change with effort or circumstance; other endings say it is lasting, or only for now. Other sakes, such as relatedness or purpose, name a different cost, and swapping the *unmet* vowel for the *met* one names a gain instead. The sake word also makes the failure yours, with no separate word for *my*.
-- `veverexom` is *can't succeed*, but only *yet*: it may still change. Other vowels say *right now* (you usually can) or *never* ([ability](intention.md#ability)).
+- `veverexom` is *can't succeed*, but only *yet*: it may still change. Other vowels say *right now* (you usually can) or *never* ([ability](ability.md#ability)).
 
 Agebon does not force the gentler answer. You can still say *I can never succeed* (`zuwon veverexum.`), call the hunch strong, or call the cost lasting, and sometimes that is true. But English *I'll never be good at this* does not ask how you know or how lasting it is, so the harsh version slips by unchecked. In Agebon you cannot say *can't* without choosing among *right now*, *yet*, and *never*, and that one moment of choosing is often enough to notice that *yet* is the honest answer.
 
@@ -56,7 +56,7 @@ A hard moment, a label, or a past pattern hardens into a fixed fact about a pers
 
 English *Olazun is angry* can mean one outburst or the kind of person Olazun is. One act slides into a verdict on someone's nature, and a name for a problem (*lazy*, *anxious*) starts to sound like its cause.
 
-[Label scope](predication.md#label-scope) lets any label say what kind of claim it makes: about this stretch of doing, about a practiced role, about one relationship (*a stranger to Uzozen*), or about a type that follows the person across scenes.
+[Label scope](label-scope.md#label-scope) lets any label say what kind of claim it makes: about this stretch of doing, about a practiced role, about one relationship (*a stranger to Uzozen*), or about a type that follows the person across scenes.
 
 Marking a label's reach helps you describe what happened without turning it into a verdict on who someone is, yourself included.
 
@@ -66,7 +66,7 @@ In English: [Claritish: Labels](claritish/labels.md).
 
 English *I can’t* can mean a temporary block, a lasting inability, or a choice not to.
 
-[Ability](intention.md#ability) says whether someone can do an activity or have a property, and for *can’t*, which kind: not right now, not now but it may change, or not ever. Choosing not to is an ordinary *won’t*, not a kind of *can’t*.
+[Ability](ability.md#ability) says whether someone can do an activity or have a property, and for *can’t*, which kind: not right now, not now but it may change, or not ever. Choosing not to is an ordinary *won’t*, not a kind of *can’t*.
 
 Saying *can’t right now* or *may yet change* instead of *impossible* helps you stop treating a temporary block as a fixed incapability.
 
@@ -113,7 +113,7 @@ In English: [Claritish: Feelings in three parts](claritish/feelings.md).
 
 English *thank you* says you are grateful, but not for what.
 
-Agebon has no set phrase for [thanks](feelings-permission.md#thanks-sorry). Instead, you say which of your sakes was met; saying that to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](sakes.md#whose-stake)). Put the sake word right after a thing you own and it appreciates that thing, with no separate word for *my*, so appreciating what you already have takes one word ([personal possession](sakes.md#personal-possession)).
+Agebon has no set phrase for [thanks](feelings-permission.md#thanks-sorry). Instead, you say which of your sakes was met; saying that to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](prescription.md#whose-stake)). Put the sake word right after a thing you own and it appreciates that thing, with no separate word for *my*, so appreciating what you already have takes one word ([personal possession](sakes.md#personal-possession)).
 
 Naming the need that was met makes thanks specific, which helps both of you notice what actually helped.
 
@@ -127,7 +127,7 @@ An explanation of what made something happen slides into blame, and one cause am
 
 English *because of you* can mean you made it happen, you did something wrong, or you were one part of it.
 
-The ending on a [because](causation.md#fault) word says which claim you make: plain cause with no fault (`thahum`), a reason that broke a norm (`thahul`, *it's their fault*), or one share among other causes (`thahur`, *partly because*). Plain cause is the default.
+The ending on a [because](iff-fault.md#fault) word says which claim you make: plain cause with no fault (`thahum`), a reason that broke a norm (`thahul`, *it's their fault*), or one share among other causes (`thahur`, *partly because*). Plain cause is the default.
 
 Keeping cause apart from fault helps you explain what happened without blaming, and saying *partly* keeps one person, including you, from carrying a whole outcome.
 
@@ -173,7 +173,7 @@ A link between events, a habit, or an ought gets treated as a law the world must
 
 Everyday English *because*, *leads to*, and *have to* blur three distinctions: a condition that is enough vs one that is required, a reason in the world vs your grounds for saying something, and a wish vs a law of nature.
 
-[Causation](causation.md) gives each link its own word: *if*, *only if*, *because*, and *if and only if*. An intended result (*so that*) uses a separate word, `hovam` ([so that](dependents.md#so-that)): the action is aimed at that outcome without claiming it happens, and it is not the same as acting for a sake ([motive](sakes.md#sake-preference), `tho`). When the “rule” is really an ought (*hard work should earn promotion*), say it with a sakes [prescription](sakes.md#sake-force) (`the`) on the act, not with a causation word.
+[Causation](causation.md) gives each link its own word: *if*, *only if*, *because*, and *if and only if*. An intended result (*so that*) uses a separate word, `hovam` ([so that](dependents.md#so-that)): the action is aimed at that outcome without claiming it happens, and it is not the same as acting for a sake ([motive](prescription.md#sake-preference), `tho`). When the “rule” is really an ought (*hard work should earn promotion*), say it with a sakes [prescription](prescription.md#sake-force) (`the`) on the act, not with a causation word.
 
 Keeping these apart helps you stop treating wishes and habits as laws the world must obey.
 
@@ -221,7 +221,7 @@ In English: [Claritish: Allowed, required, agreed](claritish/allowed-required-ag
 
 English *will* mixes plan and prediction, and *I want to* can sound like a promise. It is easy to talk as if the future were already known, and a confident prediction can fuel anxiety or overconfidence. A pick, meanwhile, often sounds more locked than it is.
 
-Agebon splits them: [want](intention.md#want) for what you wish for, without meaning to do it yet; [PLAN](intention.md#plan-predict) for what you mean to do; [DECISION](intention.md#decision) for how revisable a pick is; and a [forecast](knowing.md#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `blral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
+Agebon splits them: [want](ability.md#want) for what you wish for, without meaning to do it yet; [PLAN](intention.md#plan-predict) for what you mean to do; [DECISION](ability.md#decision) for how revisable a pick is; and a [forecast](knowing.md#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `blral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
 
 Wants, plans, and decisions all live in someone's mind, so with nothing else marked they are yours; someone else's want, plan, or decision takes a [holder](knowing.md#holder) that says how you know it.
 
@@ -239,7 +239,7 @@ Every attempt can feel like a full commitment that either succeeds or fails, eve
 
 English *try* does not say whether you are committing to keep going or only testing whether something works, so every attempt can sound like it will end in success or failure.
 
-[Try](intention.md#try) says that an attempt happens and leaves the outcome open. Its ending says how far the attempt will go: a committed attempt (`howal`) keeps going until it works or is ruled out, and a trial run (`howar`) is a low-stakes probe where failing is useful to know.
+[Try](ability.md#try) says that an attempt happens and leaves the outcome open. Its ending says how far the attempt will go: a committed attempt (`howal`) keeps going until it works or is ruled out, and a trial run (`howar`) is a low-stakes probe where failing is useful to know.
 
 Calling an attempt a trial run helps you start without betting everything on it: if it fails, finding that out was the point.
 
@@ -249,7 +249,7 @@ In English: [Claritish: Decisions and tries](claritish/decisions-and-tries.md).
 
 A plan made in English often names only the first choice, and it either stays vague or feels like it has to be complete before you act.
 
-A [fallback](intention.md#fallback) joins an attempt to its backup with `xon`: *try A; failing that, B*. The backup counts only if the attempt before it fails. The [PLAN](intention.md#plan-predict) ending says how much of the plan is drawn: backups included, steps filled in, or only a direction. No level is better, and a sketch is often all a small or early plan needs; for a plan that matters, the backups-included ending is a prompt to ask what could go wrong.
+A [fallback](ability.md#fallback) joins an attempt to its backup with `xon`: *try A; failing that, B*. The backup counts only if the attempt before it fails. The [PLAN](intention.md#plan-predict) ending says how much of the plan is drawn: backups included, steps filled in, or only a direction. No level is better, and a sketch is often all a small or early plan needs; for a plan that matters, the backups-included ending is a prompt to ask what could go wrong.
 
 Naming the backup before you start helps a setback turn into the next step instead of a dead end, and matching plan detail to the task keeps planning from becoming a reason not to start.
 
@@ -257,7 +257,7 @@ Naming the backup before you start helps a setback turn into the next step inste
 
 English *enough* and *too much* often compare a result with an unstated ideal, so nothing ever counts as done.
 
-A [sake bar](sakes.md#sake-bars) measures an amount against what a [sake](#sakes-gratitude-and-oughts) actually needs: *enough*, *too much*, or *not enough* for that need. When you do not name which sake, the unspecified sake stands in.
+A [sake bar](prescription.md#sake-bars) measures an amount against what a [sake](#sakes-gratitude-and-oughts) actually needs: *enough*, *too much*, or *not enough* for that need. When you do not name which sake, the unspecified sake stands in.
 
 Measuring against the need instead of against perfect helps you notice when a result is good enough to stop.
 
@@ -293,7 +293,7 @@ Many roots have an **abstract** sense beside a **concrete** one, so an idea you 
 - [Former climate as an empty nest](notional-standing.md#former-climate) ([a moment as identity](#trap-identity)): the nesting season is over; a pattern that has ended, not a past tense.
 - [A pattern as paw-prints](knowing.md#universality) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
 - [*As if* as theater](notional-standing.md#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene; what really happened stays **offstage**.
-- [Mechanism as gears](causation.md#cause) ([a wish as a law](#trap-wish-as-law)): you say *how* a result comes about, like gears meshing, not only that it follows.
+- [Mechanism as gears](iff-fault.md#cause) ([a wish as a law](#trap-wish-as-law)): you say *how* a result comes about, like gears meshing, not only that it follows.
 - [Affect as water](feelings-permission.md#emotion-compose) ([a feeling as a label](#trap-feeling)): surging, flowing, or still water (motion) plus where the feeling sits or points, instead of an opaque emotion label that hides the sake.
 
 Because each picture already carries a warning against the trap, it helps you reach for the healthier frame in the moment and remember it later.
@@ -340,4 +340,4 @@ Even if the language does lose its potency over a century, a positive impact on 
 
 ## Next {#next}
 
-To try the ideas in English first, start with [Claritish](claritish/index.md). To go straight to the language, continue with [introduction.md](introduction.md) for the name, the grammar's design, and how to use these docs, then [phonology.md](phonology.md#beginner) for letters, [word-endings.md](word-endings.md#beginner) for citation endings, [clause.md](clause.md#beginner) for clause shape, [speech-moves.md](speech-moves.md#beginner) for turns, then [dependents.md](dependents.md#beginner). To ask questions or follow updates, join the community on [Reddit](https://www.reddit.com/r/ClarityLanguage) or [Discord](https://discord.gg/CAMGw2Akhc).
+To try the ideas in English first, start with [Claritish](claritish/index.md). To go straight to the language, continue with [introduction.md](introduction.md) for the name, the grammar's design, and how to use these docs, then [phonology.md](phonology.md#beginner) for letters, [word-endings.md](word-endings.md) for citation endings, [clause.md](clause.md#beginner) for clause shape, [speech-moves.md](speech-moves.md) for turns, then [dependents.md](dependents.md#beginner). To ask questions or follow updates, join the community on [Reddit](https://www.reddit.com/r/ClarityLanguage) or [Discord](https://discord.gg/CAMGw2Akhc).

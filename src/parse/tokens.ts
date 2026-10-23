@@ -196,9 +196,9 @@ export const Factor = wordToken("Factor");
  * adverb or a noun of its own there.
  */
 export const HScale = wordToken("HScale");
-/** A `/th/` stance right after *contrary to* `uem`: the hook's frame, not a stance on the claim (sakes.md#contrary-to-stance). Set by `markContext`. */
+/** A `/th/` stance right after *contrary to* `uem`: the hook's frame, not a stance on the claim (prescription.md#contrary-to-stance). Set by `markContext`. */
 export const HFrame = wordToken("HFrame");
-/** WANT, PLAN or DECISION right after a holder frame: whose wish, plan or choice the event goes against, with how you know it (intention.md#whose-intention). Set by `markContext`. */
+/** WANT, PLAN or DECISION right after a holder frame: whose wish, plan or choice the event goes against, with how you know it (ability.md#whose-intention). Set by `markContext`. */
 export const HFrameHeld = wordToken("HFrameHeld");
 export const BScale = wordToken("BScale");
 /** A `/th/` stance word that is a rank fence's bar: it runs up to the list's rank join (comparatives.md#bars). Set by `markContext`. */
@@ -206,7 +206,7 @@ export const Bar = wordToken("Bar");
 export const BarPlain = wordToken("BarPlain", [Bar]);
 /** The first bar right after a closed `ua` fence: the whole fence is its ranked item (comparatives.md § every bar). Set by `markContext`. */
 export const FenceBar = wordToken("FenceBar", [Bar]);
-/** A bare tag **-l** (`zwal`): it names the phrase right before it, or a new referent (pronouns.md#tag-pronouns). */
+/** A bare tag **-l** (`zwal`): it names the phrase right before it, or a new referent (tag-pronouns.md#tag-pronouns). */
 export const TagZ = wordToken("TagZ");
 export const TagD = wordToken("TagD");
 export const TagB = wordToken("TagB");

@@ -161,7 +161,7 @@ const NP_SLOTS = ["z", "d", "b"] as const;
 /**
  * What the last unit of a clause was, which limits the next one (see the `unit` rules). `zFree` (and `dFree`, `bFree`):
  * the main clause ended with a stand-in or `barl` of that slot and no tag, so the next sentence starts as at `start`,
- * except with a bare tag of that slot, which would name the phrase before it (pronouns.md#tag-pronouns).
+ * except with a bare tag of that slot, which would name the phrase before it (tag-pronouns.md#tag-pronouns).
  */
 type ChainState = "start" | NpSlot | "v" | "g" | "h" | "zFree" | "dFree" | "bFree";
 /**
@@ -191,7 +191,7 @@ const NP_HEAD = {
   b: { noun: B, standIn: OdoB, standInList: OdoBList, standInLone: OdoBLone, span: WritingSpanB, tag: TagB },
 } as const;
 
-/** A label-scope verb that names a pair or a situation hosts the `/b/` right after it (predication.md#scope-relative). */
+/** A label-scope verb that names a pair or a situation hosts the `/b/` right after it (label-scope.md#scope-relative). */
 function isScopeThoVerb(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;
   const v = family?.kind === "x" && family.xFamily === "scope" ? family.stanceVowel : undefined;
@@ -231,14 +231,14 @@ function isHolderWord(token: IToken): boolean {
   return family?.kind === "x" && family.xFamily === "holder";
 }
 
-/** A `/th/` WANT, PLAN or DECISION word (intention.md#whose-intention). */
+/** A `/th/` WANT, PLAN or DECISION word (ability.md#whose-intention). */
 function isIntentionStance(token: IToken): boolean {
   const word = token.payload as LexWord | undefined;
   const kind = word?.overlay?.kind;
   return tokenIs(token, HTh) && word?.pos === "th" && (kind === "want" || kind === "plan" || kind === "decision");
 }
 
-/** `uem` *contrary to*: a `/th/` stance right after it is its opposing frame (sakes.md#contrary-to-stance). */
+/** `uem` *contrary to*: a `/th/` stance right after it is its opposing frame (prescription.md#contrary-to-stance). */
 function isFrameHook(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;
   return tokenIs(token, Hook) && family?.kind === "hook" && family.form === "uem";
@@ -394,7 +394,7 @@ class AgebonSentenceParser extends CstParser {
 
   /**
    * A call (or a greeting bid) or a reaction, with what describes it: a `gl-` adjective before it, `/w/` right before it,
-   * and plain `/ɡ/` words after it (`yohun galuden`, `glelavam yezul`, `welavam yezum`; speech-moves.md#describe-turn-word).
+   * and plain `/ɡ/` words after it (`yohun galuden`, `glelavam yezul`, `welavam yezum`; speech-acts.md#describe-turn-word).
    */
   public turnWord = this.RULE("turnWord", () => {
     this.OPTION(() => this.SUBRULE(this.glPackageTurn, { LABEL: "glAdj" }));
@@ -436,7 +436,7 @@ class AgebonSentenceParser extends CstParser {
         other: {
           ALT: () => this.or(4, [{ ALT: () => this.consume(4, Polar) }, { ALT: () => glue(4) }]),
         },
-        // An act word, or two stacked act words (`yul yul`, `yel yol`): any pair; a third is a new turn (speech-moves.md#stacked-acts).
+        // An act word, or two stacked act words (`yul yul`, `yel yol`): any pair; a third is a new turn (speech-acts.md#stacked-acts).
         force: {
           ALT: () => {
             this.option(5, () => this.consume(5, Force, { LABEL: "LeadForce" }));
@@ -450,7 +450,7 @@ class AgebonSentenceParser extends CstParser {
   }
 
   /**
-   * An asking tag (`yol yael.`, `yom yaol.`; questions.md#tags): an act word (or a force pair) and polar words, a turn
+   * An asking tag (`yol yael.`, `yom yaol.`; polar-inventory.md#tags): an act word (or a force pair) and polar words, a turn
    * of its own with no body. Enforce allows one polar word.
    */
   public leftEdgeTag = this.RULE("leftEdgeTag", () => {
@@ -778,7 +778,7 @@ class AgebonSentenceParser extends CstParser {
    * next sentence is the grounds (comparatives.md#bars). The parts after the first come as a right-recursive rest
    * (read back by `npPartNodes`), so a part's end is known before deciding whether more follow:
    * - After a part a group tag closes (`Tagged`), the next part may open with a new tag (`zwal zodogal zam`); after any
-   *   other part it may not: a tag right after a join names the whole list (pronouns.md#tag-pronouns).
+   *   other part it may not: a tag right after a join names the whole list (tag-pronouns.md#tag-pronouns).
    * - A part that opens with a bar ({@link FenceBar}) follows a closed `ua` fence, so it is never the first part.
    */
   private npRules(level: NpSlot) {
@@ -842,7 +842,7 @@ class AgebonSentenceParser extends CstParser {
       const groupTag = NP_HEAD[level].tag;
       const grounds = end.startsWith("Grounds");
       const shape = end.replace(/^Grounds/, "") as CloseEnd | "Tagged";
-      // The join and a tag **-l** right after it, which names the whole list (`zodogal zagadul zam zwal`, pronouns.md#tag-pronouns).
+      // The join and a tag **-l** right after it, which names the whole list (`zodogal zagadul zam zwal`, tag-pronouns.md#tag-pronouns).
       const ending = (k: number, label: string) => {
         if (shape !== "Tagged") {
           this.subrule(k, close[shape], { LABEL: label });
@@ -869,7 +869,7 @@ class AgebonSentenceParser extends CstParser {
       const alts: { ALT: () => void }[] = [
         { ALT: () => items(7, () => this.SUBRULE(pkg, { LABEL: "npConjunct" })) },
       ];
-      // A new tag listed with other items goes first (`zwal zodogal zam`, pronouns.md#tag-pronouns).
+      // A new tag listed with other items goes first (`zwal zodogal zam`, tag-pronouns.md#tag-pronouns).
       if (start === "First") alts.push({ ALT: () => items(5, () => this.SUBRULE(tag, { LABEL: "npConjunct" })) });
       if (!grounds) alts.push({ ALT: () => ending(1, "standaloneJoin") });
       if (start === "Rest" && !grounds) {
@@ -1441,7 +1441,7 @@ class AgebonSentenceParser extends CstParser {
   });
 
   /**
-   * A hook, and the stance `uem` holds as its frame (sakes.md#contrary-to-stance): one whose hosted `/b/` the adjectives
+   * A hook, and the stance `uem` holds as its frame (prescription.md#contrary-to-stance): one whose hosted `/b/` the adjectives
    * after it describe (`Open`), or any other (`Closed`). A `Plain` hook has no `/b/` or frame right after it ({@link HookPlain}).
    */
   public hookUnitPlain = this.hookUnitRule("hookUnitPlain", "plain");
@@ -1492,7 +1492,7 @@ class AgebonSentenceParser extends CstParser {
   /**
    * A noun package: any head in a list (`Package`). A lone phrase is a noun or written span (`Noun`), a forward
    * stand-in (`StandIn`), which ends its sentence's main clause, or a bare tag **-l** as a new referent (`Tag`).
-   * A tag **-l** right after the head and its adjectives names that phrase (pronouns.md#tag-pronouns); a lone noun
+   * A tag **-l** right after the head and its adjectives names that phrase (tag-pronouns.md#tag-pronouns); a lone noun
    * or stand-in with one is `…Tagged`, since a plain adjective after the tag no longer describes the noun.
    */
   private npPackageRule(level: NpSlot, variant: "Package" | "Noun" | "NounTagged" | "StandIn" | "StandInTagged" | "Tag") {
@@ -1773,7 +1773,7 @@ function disambiguateClause(units: Unit[]): Unit[] {
   if (item.kind !== "package") return units;
   const pkg = item.package;
   if (pkg.adjs.length !== 1) return units;
-  // A named citation keeps its `/ɡ/` words: `ohun galuden` is a full name, not *Ohu is an Aluden* (word-endings.md#multipart-names).
+  // A named citation keeps its `/ɡ/` words: `ohun galuden` is a full name, not *Ohu is an Aluden* (proper-names.md#multipart-names).
   if (rest.length === 0 && !pkg.head.pos && pkg.head.ending === "n") return units;
 
   const adj = pkg.adjs[0]!;
@@ -1897,7 +1897,7 @@ function isLabelMarker(marker: NumberMarker): boolean {
 /**
  * Give words the token their neighbors decide. A word that completes the word right before it (clause.md § extra
  * nouns): a `bl-` word after an `/h/`, `/th/` or `/ɡ/` word, a hooked join (hooks.md#hooked-joins), or a label-scope
- * verb that names a pair (predication.md#scope-relative), becomes {@link HostedB}, and a `bl-` stand-in after an `/h/` or `/th/` word
+ * verb that names a pair (label-scope.md#scope-relative), becomes {@link HostedB}, and a `bl-` stand-in after an `/h/` or `/th/` word
  * {@link HostedOdo}. A plain `/b/` there stays the verb's recipient.
  * A cardinal `/ɡ/` right after a hosted `/b/` is that unit's {@link Amount}, and a signed `/h/` number after an
  * equative's shared scale its {@link Factor}. An `/h/` or digitless `/b/` number right after a rank noun join is its
