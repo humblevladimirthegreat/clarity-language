@@ -113,7 +113,7 @@ export const RULE_RE = /^\*\*Rule:\*\*/;
 
 export function practiceItems(
   markdown: string,
-  { review = false }: { review?: boolean } = {},
+  { review = false, page }: { review?: boolean; page?: string } = {},
 ): { items: PracticeItem[]; findings: PracticeShapeFinding[] } {
   const lines = markdown.split(/\r?\n/);
   const starts: number[] = [];
@@ -172,6 +172,14 @@ export function practiceItems(
 
     const at = starts[range.start]!;
     const { band, S } = practiceBandStats(lines, range.start);
+    if (!review && S > 10) {
+      const pageName = page ?? "this page";
+      const bandName = band ? `${band[0]!.toUpperCase()}${band.slice(1)}` : "this band";
+      findings.push({
+        index: at,
+        detail: `${pageName} ${bandName} teaches ${S} sections; a band past 10 splits into a sibling page`,
+      });
+    }
     const limits = itemLimits(band, S);
     for (const type of ["en-ag", "ag-en"] as const) {
       const title = PRACTICE_H4.find((h) => h.type === type)!.title;

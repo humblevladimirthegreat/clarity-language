@@ -251,7 +251,7 @@ Pick one channel for how you know.
 
 LIVE covers every sense, not only sight: a sound in earshot, cold on your skin, an ache in your knee. MEMORY is the same senses, remembered. A screen or a recording extends your senses, so footage is LIVE while you watch it and MEMORY once you have watched it, with the device as the source. A document is REPORTED: someone wrote it, so it reached you from someone else.
 
-**Compare with:** the act of seeing is the ordinary verb **`vawebol`**; LIVE only says how you know the claim. In the same way, hearing a door is an ordinary `/v/` verb, not REPORTED. A feeling such as fear or hope is an [emotion compose](sakes.md#emotion-compose); INTUITION is a way of knowing, not a feeling about the event. Something a schedule says will happen is someone's [PLAN](intention.md#plan-predict). A tale you tell for its own sake is an imagined scene, not a report of fact.
+**Compare with:** the act of seeing is the ordinary verb **`vawebol`**; LIVE only says how you know the claim. In the same way, hearing a door is an ordinary `/v/` verb, not REPORTED. A feeling such as fear or hope is an [emotion compose](feelings-permission.md#emotion-compose); INTUITION is a way of knowing, not a feeling about the event. Something a schedule says will happen is someone's [PLAN](intention.md#plan-predict). A tale you tell for its own sake is an imagined scene, not a report of fact.
 
 ### Evidence strength {#evidence-strength}
 
@@ -372,7 +372,7 @@ In a [question](questions.md#question), the channel asks what the **listener's**
 >
 > "Will it rain, going by the pattern you see?"
 
-On a [feeling](sakes.md#emotion-compose) (a sake word with a locus and a motion ending, before **`goyem`**), the channel and offset date the **stimulus**. On a [feeling with no object](sakes.md#feeling-no-object), they date a stimulus you leave unnamed. The feeling itself stays now.
+On a [feeling](feelings-permission.md#emotion-compose) (a sake word with a locus and a motion ending, before **`goyem`**), the channel and offset date the **stimulus**. On a [feeling with no object](feelings-permission.md#feeling-no-object), they date a stimulus you leave unnamed. The feeling itself stays now.
 
 **Compare with:** [PLAN](intention.md#plan-predict) (`thagem`) says what you **intend** to do. Your own intention needs no channel. A forecast is a claim about the world. *Could be* with nothing behind it is [MAY](#may), not a forecast.
 
@@ -667,7 +667,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 |---------------|----------------|---------------|
 | The event | you assert it | what the holder takes to be so; you do not assert it |
 | MAY, CAUSE poles, PLAN, prescription | yours | the holder's |
-| [Sake](sakes.md) words and [emotion compose](sakes.md#emotion-compose), with their endings | your stake and feeling | the holder's stake and feeling |
+| [Sake](sakes.md) words and [emotion compose](feelings-permission.md#emotion-compose), with their endings | your stake and feeling | the holder's stake and feeling |
 | A `/ɡ/` sake's *my* reading ([personal possession](sakes.md#personal-possession)) | your belonging | the holder's belonging |
 | Another evidential | how you know | how the holder knows |
 | The grounds after an inferring or pattern host's [`blarl`](#evidence-clause) | grounds you assert | the holder's grounds; you do not assert them |
@@ -685,7 +685,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 >
 > "I gather Uzozen is watching Olazun leave."
 
-A [feeling with no object](sakes.md#feeling-no-object) works the same way: the holder makes it someone else's feeling.
+A [feeling with no object](feelings-permission.md#feeling-no-object) works the same way: the holder makes it someone else's feeling.
 
 > `thuwathuruor theyemolazun.`
 >
@@ -717,7 +717,7 @@ The first sake word has no holder, so it is yours. The second is Uzozen's.
 
 Only the seven channels and MAY take a holder: they are the ways you can have access to someone else's view. When they told you in their own words, a [cite](spans.md#writing) keeps their wording instead.
 
-**Compare with:** being upset **for** Uzozen is your own feeling about Uzozen's stake (the ON-BEHALF locus in [emotion compose](sakes.md#emotion-compose)); with a holder the feeling is Uzozen's. *On behalf of* Uzozen is [proxy](relations.md#proxy) (`hanom`). A `/b/` on [permission](sakes.md#permission) or [consent](sakes.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](compounds.md#lexical-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
+**Compare with:** being upset **for** Uzozen is your own feeling about Uzozen's stake (the ON-BEHALF locus in [emotion compose](feelings-permission.md#emotion-compose)); with a holder the feeling is Uzozen's. *On behalf of* Uzozen is [proxy](relations.md#proxy) (`hanom`). A `/b/` on [permission](feelings-permission.md#permission) or [consent](feelings-permission.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](compounds.md#lexical-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
 
 ### Practice {#intermediate-practice}
 
@@ -1042,7 +1042,7 @@ A **definition** works both ways: whatever has the property is that kind, and ev
 
 The channel stays on the main sentence and covers the whole generalization. Put it before the pole, as with the [evidence clause](#evidence-clause): `zual gagozol vezuvol thubel thohom blarl …` is *going by a well-established pattern, every cat sleeps when …*.
 
-**Compare with:** a general claim you are **not** giving as today's report is [FORMER](notional-standing.md#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is a [requirement](sakes.md#say-words) (`hwavem`), not a law of how things work. *Maybe every cat sleeps* is [MAY](#may) on the same clause.
+**Compare with:** a general claim you are **not** giving as today's report is [FORMER](notional-standing.md#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is a [requirement](feelings-permission.md#say-words) (`hwavem`), not a law of how things work. *Maybe every cat sleeps* is [MAY](#may) on the same clause.
 
 ### Practice {#advanced-practice}
 
@@ -1165,7 +1165,7 @@ Both channels sit on the adjective only: the red is remembered in the first, see
 ## See also
 
 - Sake ascription: [sakes.md](sakes.md)
-- Emotion compose: [sakes.md](sakes.md#emotion-compose)
+- Emotion compose: [sakes.md](feelings-permission.md#emotion-compose)
 - Plan vs forecast: [intention.md](intention.md#plan-predict)
 - Clock / date / when-frames: [numbers-applied.md](numbers-applied.md#time)
 - Habitual *always*: [restrictors.md](restrictors.md)

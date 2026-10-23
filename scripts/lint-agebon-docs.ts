@@ -352,7 +352,7 @@ function main(): void {
     }
 
     const review = dirname(file) === grammarDir && basename(file) === levelReviewPage;
-    for (const finding of lintPracticeItems(original, tables, { review })) {
+    for (const finding of lintPracticeItems(original, tables, { review, page: basename(file) })) {
       practiceCount += 1;
       console.error(`${rel}:${lineNumberAt(original, finding.index)}  practice-item  (${finding.detail})`);
     }

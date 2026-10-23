@@ -448,7 +448,7 @@ The stem is still the event. The part says which quality of it you mean. Pointer
 >
 > "Uzozen walks in haste. Ahelan sees the way it was done."
 
-If that clause named no manner word, `dwahar` is the event's own manner: how walking went, unnamed. A restrictor, a time pole, or a [say word](sakes.md#say-words) is already doing its own job on `/h/`, so the pointer skips it.
+If that clause named no manner word, `dwahar` is the event's own manner: how walking went, unnamed. A restrictor, a time pole, or a [say word](feelings-permission.md#say-words) is already doing its own job on `/h/`, so the pointer skips it.
 
 | Part | Names | Compound | Pointer |
 |------|-------|----------|---------|
@@ -486,7 +486,7 @@ English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) 
 
 A person’s front is the direction they face. For an object, use the front its design or current use makes forward; if that does not settle a front, make the frame clear from context.
 
-The [sake](sakes.md#sake-inventory) roots are never a direction: after one of them, **`th`** starts a sake word, even when a root-shaped piece follows ([emotion compose](sakes.md#emotion-compose)).
+The [sake](sakes.md#sake-inventory) roots are never a direction: after one of them, **`th`** starts a sake word, even when a root-shaped piece follows ([emotion compose](feelings-permission.md#emotion-compose)).
 
 > `yel vowurel howuhethuzozen.`
 >

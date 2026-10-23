@@ -265,7 +265,7 @@ export const SCOPE_VOWEL: Record<string, string> = {
   ue: "outside-role",
 };
 
-/** Say word parts, answers, and endings (sakes.md#say-words). */
+/** Say word parts, answers, and endings (feelings-permission.md#say-words). */
 export const SAY_PART: Record<string, string> = { z: "agent", d: "patient", b: "recipient", v: "event" };
 export const SAY_ANSWER: Record<string, string> = { a: "ALLOW", u: "FORBID", e: "REQUIRE", o: "CHOICE" };
 export const SAY_ENDING: Record<string, string> = { l: "rule", m: "said", r: "tacit" };
@@ -285,7 +285,7 @@ const SAKE_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
   u: { l: "irreversible", m: "modifiable", r: "passing" },
 };
 
-/** Emotion tail (sakes.md#emotion-compose): locus hook vowel(s), then motion ending. */
+/** Emotion tail (feelings-permission.md#emotion-compose): locus hook vowel(s), then motion ending. */
 const EMOTION_LOCUS: Record<string, string> = {
   a: "INTERNAL",
   ao: "CIRCUM",

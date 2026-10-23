@@ -103,7 +103,7 @@ In English: [Claritish: Oughts and motives](claritish/oughts-and-motives.md).
 
 Opaque labels (*angry*, *anxious*, *proud*) hide which sake is in play and what to ask for.
 
-Agebon [builds an emotion](sakes.md#emotion-compose) from three parts: a [sake](sakes.md) and how it stands (usually met or unmet), where the feeling sits or what it points at, and its motion (surging, flowing, or still).
+Agebon [builds an emotion](feelings-permission.md#emotion-compose) from three parts: a [sake](sakes.md) and how it stands (usually met or unmet), where the feeling sits or what it points at, and its motion (surging, flowing, or still).
 
 Building the feeling from those parts shows you what to ask for, instead of leaving you stuck at the label.
 
@@ -113,7 +113,7 @@ In English: [Claritish: Feelings in three parts](claritish/feelings.md).
 
 English *thank you* says you are grateful, but not for what.
 
-Agebon has no set phrase for [thanks](sakes.md#thanks-sorry). Instead, you say which of your sakes was met; saying that to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](sakes.md#whose-stake)). Put the sake word right after a thing you own and it appreciates that thing, with no separate word for *my*, so appreciating what you already have takes one word ([personal possession](sakes.md#personal-possession)).
+Agebon has no set phrase for [thanks](feelings-permission.md#thanks-sorry). Instead, you say which of your sakes was met; saying that to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](sakes.md#whose-stake)). Put the sake word right after a thing you own and it appreciates that thing, with no separate word for *my*, so appreciating what you already have takes one word ([personal possession](sakes.md#personal-possession)).
 
 Naming the need that was met makes thanks specific, which helps both of you notice what actually helped.
 
@@ -211,7 +211,7 @@ Wanting, needing, and being obliged blur into a bare *should*, and a plan or a p
 
 English *must*, *have to*, and *is supposed to* sound equally binding, whether a law requires something, a person demands it, or people only expect it. *May* hides the same split for permission.
 
-A [say word](sakes.md#say-words) says where a *must* comes from: a rule, a person who demands it, only an unwritten expectation that nobody actually demands, or you yourself. It does the same for *may*: a rule allows it, someone said yes, or nobody objected.
+A [say word](feelings-permission.md#say-words) says where a *must* comes from: a rule, a person who demands it, only an unwritten expectation that nobody actually demands, or you yourself. It does the same for *may*: a rule allows it, someone said yes, or nobody objected.
 
 Naming the source helps you notice when a *have to* is only an expectation, so you can decide whether to meet it.
 
@@ -269,7 +269,7 @@ An act that touches someone else's body, things, or time can go ahead on a yes n
 
 English *she's fine with it* does not say whether she signed on, said yes and can take it back, or was never asked.
 
-A [say word](sakes.md#say-words) names whose yes it is (the one the act happens to, the one it is told or given to, or the doer) and says how binding it is: a binding agreement made in advance, a yes they can take back at any time, or a yes you are only assuming because nobody objected.
+A [say word](feelings-permission.md#say-words) names whose yes it is (the one the act happens to, the one it is told or given to, or the doer) and says how binding it is: a binding agreement made in advance, a yes they can take back at any time, or a yes you are only assuming because nobody objected.
 
 Marking an assumed yes as an assumption helps you check before acting, and marking a spoken yes as revocable keeps it theirs to withdraw.
 
@@ -294,7 +294,7 @@ Many roots have an **abstract** sense beside a **concrete** one, so an idea you 
 - [A pattern as paw-prints](knowing.md#universality) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
 - [*As if* as theater](notional-standing.md#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene; what really happened stays **offstage**.
 - [Mechanism as gears](causation.md#cause) ([a wish as a law](#trap-wish-as-law)): you say *how* a result comes about, like gears meshing, not only that it follows.
-- [Affect as water](sakes.md#emotion-compose) ([a feeling as a label](#trap-feeling)): surging, flowing, or still water (motion) plus where the feeling sits or points, instead of an opaque emotion label that hides the sake.
+- [Affect as water](feelings-permission.md#emotion-compose) ([a feeling as a label](#trap-feeling)): surging, flowing, or still water (motion) plus where the feeling sits or points, instead of an opaque emotion label that hides the sake.
 
 Because each picture already carries a warning against the trap, it helps you reach for the healthier frame in the moment and remember it later.
 

@@ -24,6 +24,7 @@ export const readingOrder = [
   { text: 'Comparatives', link: '/comparatives' },
   { text: 'Causation', link: '/causation' },
   { text: 'Sakes', link: '/sakes' },
+  { text: 'Feelings and permission', link: '/feelings-permission' },
   { text: 'Knowing', link: '/knowing' },
   { text: 'Notional and standing', link: '/notional-standing' },
   { text: 'Role compounds', link: '/roles' },

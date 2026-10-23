@@ -145,7 +145,7 @@ Path items joined with `·` are **co-located**, not ordered. Do **not** recycle 
 | 8 | `pronouns.md` · `plurality.md` |
 | 12 | `hooks.md` · `restrictors.md` |
 | 15 | `numbers.md` · `digitless-exponents.md` · `numbers-applied.md` · `comparatives.md` · `causation.md` |
-| 16 | `sakes.md` · `intention.md` · `knowing.md` · `roles.md` · `compounds.md` |
+| 16 | `sakes.md` · `feelings-permission.md` · `intention.md` · `knowing.md` · `roles.md` · `compounds.md` |
 
 Later path numbers **may** recycle both siblings (e.g. joins Beginner may use pronouns **and** plurality Beginner).
 
@@ -222,7 +222,8 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `say-reasons.md` | Reasons and conditions | a chemistry lab |
 | `sakes.md` | Beginner | a shelter tent |
 | `sakes.md` | Intermediate | a monastery |
-| `sakes.md` | Advanced | unset |
+| `sakes.md` | Advanced | — |
+| `feelings-permission.md` | Intermediate | a support group |
 | `knowing.md` | Beginner | a café patio |
 | `knowing.md` | Intermediate | a press conference |
 | `knowing.md` | Advanced | a film archive |
@@ -359,8 +360,10 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `comparatives.md` | Advanced | **exists** | Stance bars (channels, FORMER, ABIL, REQUIRE, attitudes); bar inside vs stance after the fence | |
 | 15 | `causation.md` | Intermediate | **exists** | Following-sentence **`blarl`**; **`ahu`** *because* / **`ehe`** *iff*; asserted necessary **`thebom thahum`**; **CAUSE** **`ewe`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
 | 15 | `causation.md` | Advanced | — | no Advanced stage | |
-| 16 | `sakes.md` | Intermediate | **exists** | Prescription **`the`** + force; motive **`tho`** + time horizon; which ending table; attachment sites; sake bars (*enough* / *too*) | |
-| 16 | `sakes.md` | Advanced | **exists** | Combined matrices; one boundary trap | — |
+| 16 | `sakes.md` | Intermediate | **exists** | Prescription **`the`** + force; motive **`tho`** + time horizon; which ending table; attachment sites; whose stake; contrary **`uem`**; sake bars (*enough* / *too*) | |
+| 16 | `feelings-permission.md` | Intermediate | **exists** | Emotion compose; feeling with no object; thanks and sorry; speaker attitude; say words (permission, consent, scope) | No Beginner slot. Recycle = all Beginner + sakes Intermediate (whose stake, contrary **`uem`**, prescription contrast) |
+| 16 | `feelings-permission.md` | Advanced | — | no Advanced stage | |
+| 16 | `sakes.md` | Advanced | — | no Advanced stage | |
 | 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; MAY vs nearby jobs; **holder** seam (someone else's view); a source you won't name or don't know (`blwoyar` / `blwuyar`) | |
 | 16 | `knowing.md` | Advanced | **exists** | Mood on one adjective; dated channel; channels on a generalization | One checkpoint for the whole stage |
 | 16 | `roles.md` | Intermediate | **exists** | Content-rule parts (manner **`h`** pointer or compound); capacity on `/h/` (slot-part compound); viewpoint laterals **`DIR th ANCHOR`**; bare arrow roots = compass; gravity **`ayuhe`/`aduhe`**; name/listener anchor | Prefer `…thazawan` over silent speaker default. **`awa`/`uwo`** only when testing role-anchor. Include at least one bare cardinal, one gravity item, one content part, and one capacity item |
@@ -371,7 +374,6 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 17 | `notional-standing.md` | Intermediate | **exists** | **MIRATIVE**; **RESIDUE** / **FORMER**; already / still / not yet / no longer; **NOTIONAL** **`eyu`** + play holds; channels as bars; channels after `uem` | No Beginner slot. Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
 | 17 | `intention.md` | Intermediate | **exists** | **DECISION** **`ogo`** changeability; forecast = evidential + `blral` vs PLAN; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
 | 17 | `intention.md` | Advanced | — | no Advanced stage | |
-| 17 | `sakes.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value) | Recycle values Beginner. |
 | 18 | `numeric-derivation.md` | Advanced | **exists** | `NUM x ROOT` as the stage teaches (essence / `+N` / `#N` / quasi / …; `mx` approximate) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) |
 
 ## Leak index
@@ -425,7 +427,8 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Join-act **`van`** / join-relation **`gan`** | `join-across-roles.md` Intermediate |
 | **PLAN** | `intention.md` Beginner |
 | **DECISION** | `intention.md` Intermediate |
-| Emotion compose | `sakes.md` Intermediate |
+| Emotion compose | `feelings-permission.md` Intermediate |
+| Say words (`hwavam`, consent) | `feelings-permission.md` Intermediate |
 | Numbered alternatives | `numbers-applied.md` Intermediate |
 | PLAN bar (`thagem zel`) | `comparatives.md` Intermediate |
 | Sake bars (`thudatham zoel`) | `sakes.md` Intermediate |

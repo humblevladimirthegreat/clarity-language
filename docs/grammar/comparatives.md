@@ -718,7 +718,7 @@ The bar's ending keeps its own job: on a channel it is [evidence strength](knowi
 >
 > "The book is lighter than I wanted."
 
-The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on a [say word](sakes.md#say-words) over the act (`hwavem`, `hwavam`) it is the person who demands or grants. WANT takes no `/b/`: for someone else's wants, put a [holder](knowing.md#holder) on the clause. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
+The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on a [say word](feelings-permission.md#say-words) over the act (`hwavem`, `hwavam`) it is the person who demands or grants. WANT takes no `/b/`: for someone else's wants, put a [holder](knowing.md#holder) on the clause. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
 
 > `zanal thebam blolazun zuel gagebom.`
 >

@@ -269,7 +269,7 @@ export const OPENER_LINKS = {
   /** *tells someone that the dog runs*: a stand-in, then the clause as the next sentence. */
   content: ["dependents.md#dependent-clauses"],
   /** *glad that it rains*: the feeling word goes on the clause it is about. */
-  feeling: ["sakes.md#feeling-no-object"],
+  feeling: ["feelings-permission.md#feeling-no-object"],
   /** *the dog that runs*: two sentences. */
   relative: ["dependents.md#which-noun"],
 } as const;

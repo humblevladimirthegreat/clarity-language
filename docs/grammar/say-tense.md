@@ -142,7 +142,7 @@ For *was walking when …*, keep the ordinary verb and hang the other event on [
 
 ### Future: plan, forecast, promise {#future}
 
-**Needs:** [Plan](intention.md#plan-predict) · [Plan or forecast](intention.md#predict-evidentiality) · [Forecasts](knowing.md#forecast) · [Consent](sakes.md#consent)
+**Needs:** [Plan](intention.md#plan-predict) · [Plan or forecast](intention.md#predict-evidentiality) · [Forecasts](knowing.md#forecast) · [Consent](feelings-permission.md#consent)
 
 English *will* is three different claims.
 
@@ -150,7 +150,7 @@ English *will* is three different claims.
 |----------------|--------|
 | I mean to | PLAN **`thagem`** ([endings](intention.md#plan-map-resolution) show how much is drawn) |
 | the world will | channel + **`blral`** |
-| I promise | a vow **`hwazal`** ([promise](sakes.md#say-words)) |
+| I promise | a vow **`hwazal`** ([promise](feelings-permission.md#say-words)) |
 
 > `zuwon thagem vowurel.`
 >
@@ -238,7 +238,7 @@ For *would* in a condition (*if Olazun swam, Uzozen would walk*), see [remote an
 
 ### Can, could, may, might {#can-may}
 
-**Needs:** [Ability](intention.md#ability) · [MAY](knowing.md#may) · [Permission](sakes.md#permission) · [FORMER](notional-standing.md#former-climate)
+**Needs:** [Ability](intention.md#ability) · [MAY](knowing.md#may) · [Permission](feelings-permission.md#permission) · [FORMER](notional-standing.md#former-climate)
 
 English *can* and *may* each carry several meanings. Pick the meaning.
 
@@ -283,7 +283,7 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 
 ### Ability, possibility and permission words {#ability-words}
 
-**Needs:** [Ability](intention.md#ability) · [Can be](intention.md#role-ability) · [MAY](knowing.md#may) · [Permission](sakes.md#permission) · [Forecasts](knowing.md#forecast) · [Requirement](sakes.md#requirement)
+**Needs:** [Ability](intention.md#ability) · [Can be](intention.md#role-ability) · [MAY](knowing.md#may) · [Permission](feelings-permission.md#permission) · [Forecasts](knowing.md#forecast) · [Requirement](feelings-permission.md#requirement)
 
 English adjectives and verbs built on *can* and *may* take the same forms as the modals.
 
@@ -314,7 +314,7 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 
 ### Must, have to, should {#must-should}
 
-**Needs:** [Requirement](sakes.md#requirement) · [Prescription](sakes.md#sake-force) · [Motive](sakes.md#sake-preference) · [Permission](sakes.md#permission) · [Speech act](speech-moves.md#speech-act) · [Stance as-of](relations.md#stance-as-of)
+**Needs:** [Requirement](feelings-permission.md#requirement) · [Prescription](sakes.md#sake-force) · [Motive](sakes.md#sake-preference) · [Permission](feelings-permission.md#permission) · [Speech act](speech-moves.md#speech-act) · [Stance as-of](relations.md#stance-as-of)
 
 English *must* and *should* differ in what stands behind the demand. Choose the source.
 
@@ -370,7 +370,7 @@ For *should have*, date the ought with [stance as-of](relations.md#stance-as-of)
 
 ### Will, want, try, let's {#will-want}
 
-**Needs:** [Plan](intention.md#plan-predict) · [Want](intention.md#want) · [Try](intention.md#try) · [Hopefully](sakes.md#speaker-attitude) · [Speech act](speech-moves.md#speech-act)
+**Needs:** [Plan](intention.md#plan-predict) · [Want](intention.md#want) · [Try](intention.md#try) · [Hopefully](feelings-permission.md#speaker-attitude) · [Speech act](speech-moves.md#speech-act)
 
 | English | Agebon |
 |---------|--------|

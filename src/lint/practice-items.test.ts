@@ -122,7 +122,7 @@ describe("practiceBandStats", () => {
 
 describe("practiceItems, scaled counts", () => {
   it("names S in the error and allows more than 6 items on a large band", () => {
-    const taught = Array.from({ length: 15 }, (_, i) => `### Section ${i + 1}\n`).join("\n");
+    const taught = Array.from({ length: 10 }, (_, i) => `### Section ${i + 1}\n`).join("\n");
     const md = `## Intermediate
 
 ${taught}
@@ -141,7 +141,32 @@ ${details(2)}
     const details_ = practiceItems(md).findings.map((f) => f.detail);
     assert.deepEqual(details_, []);
     const over = practiceItems(md.replace(details(7), details(11))).findings.map((f) => f.detail);
-    assert.ok(over.some((d) => d === "11 English → Agebon item(s); this band teaches 15 sections, use 3–10"));
+    assert.ok(over.some((d) => d === "11 English → Agebon item(s); this band teaches 10 sections, use 3–7"));
+  });
+
+  it("fails when S is past 10, naming the page, the band, and S", () => {
+    const band = (n: number) => {
+      const taught = Array.from({ length: n }, (_, i) => `### Section ${i + 1}\n`).join("\n");
+      return `## Intermediate
+
+${taught}
+### Practice
+
+#### English → Agebon
+
+${details(6)}
+#### Agebon → English
+
+${details(6)}
+#### Pick one
+
+${details(2)}
+`;
+    };
+    const details_ = practiceItems(band(12), { page: "sakes.md" }).findings.map((f) => f.detail);
+    assert.ok(details_.some((d) => d === "sakes.md Intermediate teaches 12 sections; a band past 10 splits into a sibling page"));
+    const atTen = practiceItems(band(10)).findings.map((f) => f.detail);
+    assert.equal(atTen.some((d) => d.includes("splits into a sibling page")), false);
   });
 });
 

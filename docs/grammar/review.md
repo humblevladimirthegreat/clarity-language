@@ -651,6 +651,18 @@ y-question | [d-cookie-x | g-how-many] | z-Uzozen | v-see
 **Rule:** [How many?](digitless-exponents.md#how-many)
 :::
 
+**12.** *The rules allow Olazun to sit.* `zolazun vuhohol hwaval.` or `zolazun vuhohol hwavam.`
+
+::: details Show answer
+`zolazun vuhohol hwaval.`
+
+z-Olazun | v-sit | h-episode-event-ALLOW-rule
+
+**-l** is permission from a rule; **-m** is a person granting it.
+
+**Rule:** [Someone over the act](feelings-permission.md#permission)
+:::
+
 #### What changes {#intermediate-what-changes}
 
 **1.** `zolazun vavuvul hanurul hul.` / `zolazun vavuvul hanurul hual.`

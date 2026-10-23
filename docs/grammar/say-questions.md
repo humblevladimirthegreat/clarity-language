@@ -80,7 +80,7 @@ English *well…* warns that the answer is not the plain *yes* the question hope
 
 ### *It sounds like…*, *I hear that you…* {#reflecting}
 
-**Needs:** [Whose view](knowing.md#holder) · [Evidentiality](knowing.md#evidentiality) · [Feeling with no object](sakes.md#feeling-no-object) · [Emotion compose](sakes.md#emotion-compose)
+**Needs:** [Whose view](knowing.md#holder) · [Evidentiality](knowing.md#evidentiality) · [Feeling with no object](feelings-permission.md#feeling-no-object) · [Emotion compose](feelings-permission.md#emotion-compose)
 
 English *it sounds like you're anxious* and *I hear that you're upset* give the speaker's feeling back to them. You cannot state someone else's feeling outright, so name the listener as the holder on CLUES (**`theyem`**): you worked it out from what they said.
 
@@ -276,7 +276,7 @@ English *ask* is four jobs. You can put a question to someone, ask them for some
 
 ### Offer, suggest, recommend, invite {#offer-words}
 
-**Needs:** [Speech act: firm and soft](speech-moves.md#speech-act) · [Tags](questions.md#tags) · [Prescription](sakes.md#sake-force) · [Permission](sakes.md#permission) · [Which noun](dependents.md#which-noun)
+**Needs:** [Speech act: firm and soft](speech-moves.md#speech-act) · [Tags](questions.md#tags) · [Prescription](sakes.md#sake-force) · [Permission](feelings-permission.md#permission) · [Which noun](dependents.md#which-noun)
 
 English *offer*, *suggest*, *propose*, *recommend* and *advise* all put something forward that the other person may take or leave. Agebon picks how firmly. A soft act word (**-m**) leaves the choice open. A soft request with *we* proposes a joint act, and a tag after it asks whether they take it up. A prescription **`the`** on a sake says the act ought to serve it, and its ending says whether the person invited it (**-l**) or you are offering it unasked (**-m**).
 

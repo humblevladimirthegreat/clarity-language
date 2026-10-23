@@ -80,9 +80,9 @@ A relationship subsystem, borrowed from dating and friendship sims, for the vill
 |-------------|---------|--------|
 | Asks what the character feels or wants, instead of assuming | [Fill questions](../../grammar/questions.md#intermediate), [whose stake](../../grammar/sakes.md#whose-stake) | Opens what the character is holding back, an information gap about a person |
 | Says how they know something about the character (*I saw* vs. *I heard*) | [Evidentiality](../../grammar/knowing.md#evidentiality) | Rumor stated as fact cools the character; marked hearsay invites a correction |
-| Asks before acting on or for the character | [Permission](../../grammar/sakes.md#permission), [consent](../../grammar/sakes.md#consent) | The next step happens only with consent; a *no* is final for that scene and costs the player nothing if it is accepted |
-| Thanks or apologizes specifically | [Thanks and sorry](../../grammar/sakes.md#thanks-sorry) | Specific thanks for a named act counts; a bare greeting chunk does not |
-| Names a feeling with its object | [Emotion compose](../../grammar/sakes.md#emotion-compose) | Characters answer in kind, which is input for the same forms |
+| Asks before acting on or for the character | [Permission](../../grammar/feelings-permission.md#permission), [consent](../../grammar/feelings-permission.md#consent) | The next step happens only with consent; a *no* is final for that scene and costs the player nothing if it is accepted |
+| Thanks or apologizes specifically | [Thanks and sorry](../../grammar/feelings-permission.md#thanks-sorry) | Specific thanks for a named act counts; a bare greeting chunk does not |
+| Names a feeling with its object | [Emotion compose](../../grammar/feelings-permission.md#emotion-compose) | Characters answer in kind, which is input for the same forms |
 
 - **Characters have their own sakes and limits** drawn from the [sake inventory](../../grammar/sakes.md#sake-inventory). What a character wants is authored; what they reveal depends on being asked well.
 - **Relationship state is not a score the player sees.** Characters show it in what they say and do: what they share, whether they seek the player out, how they speak to them.

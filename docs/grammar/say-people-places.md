@@ -500,7 +500,7 @@ English makes nouns for a part, a kind, a role, and a manner. Agebon has no sepa
 
 ### Case, deal, figure, board and other several-sense nouns {#sense-nouns}
 
-**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Exchange](relations.md#exchange) · [Between](relations.md#locative-relations) · [Number as verb](numbers.md#number-as-verb-by-marker) · [Role pointers](pronouns.md#role-pointers) · [Consent](sakes.md#consent) · [Joins](joins.md) · [Role letters](clause.md#role-letters)
+**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Exchange](relations.md#exchange) · [Between](relations.md#locative-relations) · [Number as verb](numbers.md#number-as-verb-by-marker) · [Role pointers](pronouns.md#role-pointers) · [Consent](feelings-permission.md#consent) · [Joins](joins.md) · [Role letters](clause.md#role-letters)
 
 An English noun like *case* or *board* covers several jobs, and Agebon has a different word for each. Decide which job you mean first, then write that word. Where a job is a whole clause (*in that case*, *a deal*), the recipe is a clause, not a noun.
 

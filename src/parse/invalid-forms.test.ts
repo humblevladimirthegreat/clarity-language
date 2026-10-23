@@ -295,7 +295,7 @@ const ROWS: Row[] = [
   { invalid: "zuzozen vowurel uem hwavam.", rejection: "frameKind", valid: "zuzozen vowurel uem hwavum." },
   { invalid: "zuzozen vezuyel bolazun uem hwabam.", rejection: "frameKind", valid: "zuzozen vezuyel bolazun uem hwabum." },
   { invalid: "zuzozen vowurel uem hwavom.", rejection: "frameKind", valid: "zuzozen vowurel uem hwavem." },
-  // Say words (sakes.md#say-words): the slot, whose say a bl- word names, and the speaker's own act.
+  // Say words (feelings-permission.md#say-words): the slot, whose say a bl- word names, and the speaker's own act.
   { invalid: "zuzozen vowurel tholem.", rejection: "retiredDeonticRoot", valid: "zuzozen vowurel hwavam." },
   { invalid: "zuzozen vowurel hwadam blolazun.", rejection: "sayHost", valid: "zuzozen vowurel hwodam blolazun." },
   { invalid: "zuwon vowurel hwavam.", rejection: "saySpeaker", valid: "zuwon vowurel hwazem." },

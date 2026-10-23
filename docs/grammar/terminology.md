@@ -15,24 +15,24 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | Label | Gloss | Example | Teach |
 |-------|-------|---------|-------|
 | **ABIL** | Hostless *can* / *can’t* (no single verb) | `hodaxel` | [Intention](intention.md#ability-fallback) |
-| **AIMED** | Emotion locus: aimed at a target | `wawothumol` | [Sakes](sakes.md#emotion-compose) |
+| **AIMED** | Emotion locus: aimed at a target | `wawothumol` | [Feelings and permission](feelings-permission.md#emotion-compose) |
 | **ASIDE** | An aside span | `th(hogowul)` | [Spans](spans.md#asides) |
-| **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwavam` | [Sakes](sakes.md#say-words) |
+| **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwavam` | [Feelings and permission](feelings-permission.md#say-words) |
 | **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Intention](intention.md#try) |
-| **AWAY** | Emotion locus: moving off from a target | `wawothumum` | [Sakes](sakes.md#emotion-compose) |
+| **AWAY** | Emotion locus: moving off from a target | `wawothumum` | [Feelings and permission](feelings-permission.md#emotion-compose) |
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thewem` | [Causation](causation.md#cause) |
-| **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraor` | [Sakes](sakes.md#emotion-compose) |
+| **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraor` | [Feelings and permission](feelings-permission.md#emotion-compose) |
 | **CITE** | A cite span: quoted wording | `d[uzozen]` | [Spans](spans.md#writing) |
 | **CLUES** | Evidential: reasoned from clues about this case | `theyem` | [Knowing](knowing.md#evidentiality) |
-| **CHOICE** | Say word answer: their call | `hwavom` | [Sakes](sakes.md#say-words) |
-| **COLLAPSE** | Emotion locus: out of fight, giving up | `wawothumual` | [Sakes](sakes.md#emotion-compose) |
+| **CHOICE** | Say word answer: their call | `hwavom` | [Feelings and permission](feelings-permission.md#say-words) |
+| **COLLAPSE** | Emotion locus: out of fight, giving up | `wawothumual` | [Feelings and permission](feelings-permission.md#emotion-compose) |
 | **DECISION** | Pick-firmness mood | `thogom` | [Intention](intention.md#decision) |
 | **DEDUCED** | Evidential: must hold if the premises hold | `thanam` | [Knowing](knowing.md#deduction) |
-| **FAWN** | Emotion locus: placating a target | `wawothumaem` | [Sakes](sakes.md#emotion-compose) |
-| **FLOWING** | Emotion motion: steady, a current you can ride | `wawothumem` | [Sakes](sakes.md#emotion-compose) |
-| **FORBID** | Say word answer: no, forbid | `hwavul` | [Sakes](sakes.md#say-words) |
+| **FAWN** | Emotion locus: placating a target | `wawothumaem` | [Feelings and permission](feelings-permission.md#emotion-compose) |
+| **FLOWING** | Emotion motion: steady, a current you can ride | `wawothumem` | [Feelings and permission](feelings-permission.md#emotion-compose) |
+| **FORBID** | Say word answer: no, forbid | `hwavul` | [Feelings and permission](feelings-permission.md#say-words) |
 | **FORMER** | Episode standing: not the climate claimed now | `helam` | [Notional and standing](notional-standing.md#residue) |
-| **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Sakes](sakes.md#emotion-compose) |
+| **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Feelings and permission](feelings-permission.md#emotion-compose) |
 | **INTUITION** | Evidential: gut sense you cannot fully spell out | `thabom` | [Knowing](knowing.md#evidentiality) |
 | **LIVE** | Evidential: sensed now, by any sense | `thugom` | [Knowing](knowing.md#evidentiality) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thomam` | [Knowing](knowing.md#may) |
@@ -41,20 +41,20 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themom` | [Notional and standing](notional-standing.md#mirative) |
 | **NAME** | A package titled with **-n** | `zebodol zuyudal zan.` | [Joins](joins.md#named-list) |
 | **NOTIONAL** | As-if / pretense mood | `theyum` | [Notional and standing](notional-standing.md#notional) |
-| **ON-BEHALF** | Emotion locus: felt for someone's sake | `wawothumem` | [Sakes](sakes.md#emotion-compose) |
+| **ON-BEHALF** | Emotion locus: felt for someone's sake | `wawothumem` | [Feelings and permission](feelings-permission.md#emotion-compose) |
 | **OPAQUE** | An opaque span: foreign or raw writing | <code>d&lt;kimchi&gt;</code> | [Spans](spans.md#loans) |
 | **PATTERN** | Evidential: from regularity | `thubem` | [Knowing](knowing.md#evidentiality) |
 | **PLAN** | Intention-framing mood | `thagem` | [Intention](intention.md#plan-predict) |
 | **REPORTED** | Evidential: said or written by someone else | `thebam` | [Knowing](knowing.md#evidentiality) |
-| **REQUIRE** | Say word answer: require, ask for (*must*) | `hwavel` | [Sakes](sakes.md#say-words) |
+| **REQUIRE** | Say word answer: require, ask for (*must*) | `hwavel` | [Feelings and permission](feelings-permission.md#say-words) |
 | **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Notional and standing](notional-standing.md#residue) |
-| **RESISTING** | Emotion locus: pushing against a target | `wawothumuer` | [Sakes](sakes.md#emotion-compose) |
+| **RESISTING** | Emotion locus: pushing against a target | `wawothumuer` | [Feelings and permission](feelings-permission.md#emotion-compose) |
 | **SAME** | Identity copula | `gorol` | [Predication](predication.md#identity) |
 | **SCOPE** | Scope island `{ … }` | `{ hegugom zudozol gerulel }` | [Spans](spans.md#scope-islands) |
-| **SEEKING** | Emotion locus: turning to someone for comfort | `wawothumoem` | [Sakes](sakes.md#emotion-compose) |
-| **STILL** | Emotion motion: not moving (held, frozen, numb) | `wawothumol` | [Sakes](sakes.md#emotion-compose) |
-| **SURGING** | Emotion motion: in waves or spikes | `wuwathuraor` | [Sakes](sakes.md#emotion-compose) |
-| **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruom` | [Sakes](sakes.md#emotion-compose) |
+| **SEEKING** | Emotion locus: turning to someone for comfort | `wawothumoem` | [Feelings and permission](feelings-permission.md#emotion-compose) |
+| **STILL** | Emotion motion: not moving (held, frozen, numb) | `wawothumol` | [Feelings and permission](feelings-permission.md#emotion-compose) |
+| **SURGING** | Emotion motion: in waves or spikes | `wuwathuraor` | [Feelings and permission](feelings-permission.md#emotion-compose) |
+| **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruom` | [Feelings and permission](feelings-permission.md#emotion-compose) |
 | **WANT** | Desire mood: lasting / unstated / passing | `thalem` | [Intention](intention.md#want) |
 
 **Compare with:** [quasi](#quasi) (`-e-xROOT`) is not **NOTIONAL**.

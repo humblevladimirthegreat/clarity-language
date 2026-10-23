@@ -268,7 +268,7 @@ A [role compound](roles.md#role-compounds) can take such a stack as its stem (`z
 ### Which family is this?
 <a id="decision-order"></a>
 
-Use the table above. If the word has a mid-word **`th`**, it is a [sake](sakes.md) word (a [sake root](sakes.md#sake-inventory), then a vowel, with an optional [emotion tail](sakes.md#emotion-compose)), a [label scope](predication.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). The root before **`th`** decides: after a sake root, letters that look like a root are always the emotion tail (`guwathamol`), never a lateral. Otherwise read both sides of the first **`x`** in this order:
+Use the table above. If the word has a mid-word **`th`**, it is a [sake](sakes.md) word (a [sake root](sakes.md#sake-inventory), then a vowel, with an optional [emotion tail](feelings-permission.md#emotion-compose)), a [label scope](predication.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). The root before **`th`** decides: after a sake root, letters that look like a root are always the emotion tail (`guwathamol`), never a lateral. Otherwise read both sides of the first **`x`** in this order:
 
 - A name (one root or a [hyphenated name](word-endings.md#multipart-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a conversation-length bid → conversation length.
 - A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **ability**.

@@ -226,7 +226,7 @@ export const TOKEN_CONSTRUCTIONS: Record<TokenBranch, ConstructionEntry> = {
   yVocative: { anchor: "speech-moves.md#vocative", summary: "/y/ name (-n), named span, or resume (-r): a vocative" },
   yInterjection: { anchor: "speech-moves.md#interjections-reactions", summary: "/y/ word in -l / -m, or an unnamed span: an interjection" },
   linker: { anchor: "dependents.md#continue-x", summary: "/x/ content word: a sentence linker, or a topic word" },
-  clauseAdverb: { anchor: "sakes.md#say-words", summary: "intention adverb on /h/ (try, ability, a say word, RESIDUE, FORMER): covers the whole clause like a /th/ word" },
+  clauseAdverb: { anchor: "feelings-permission.md#say-words", summary: "intention adverb on /h/ (try, ability, a say word, RESIDUE, FORMER): covers the whole clause like a /th/ word" },
   tagAssign: { anchor: "pronouns.md#tag-pronouns", summary: "bare tag -l: names the phrase before it, or a new referent" },
   content: { anchor: "phonology.md#word-edges", summary: "content word in its role slot" },
   citationFallback: { anchor: "phonology.md#word-edges", summary: "word with no role letter: names, filling no slot" },
@@ -244,7 +244,7 @@ export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = 
   writingSpan: { anchor: "spans.md#writing", summary: "written span" },
   foreign: { anchor: "spans.md#loans", summary: "foreign / opaque payload" },
   tag: { anchor: "pronouns.md#tag-pronouns", summary: "tag pronoun (role letter + w + tag vowel)" },
-  say: { anchor: "sakes.md#say-words", summary: "say word (h + w + scope + whose say + answer + ending): permission, a ban, a requirement, consent" },
+  say: { anchor: "feelings-permission.md#say-words", summary: "say word (h + w + scope + whose say + answer + ending): permission, a ban, a requirement, consent" },
 };
 
 export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
@@ -475,7 +475,7 @@ export const SAKE_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vo
   "ending.o.l": { anchor: "sakes.md#motive-tho-time-horizon", summary: "motive standing -l" },
   "ending.o.m": { anchor: "sakes.md#motive-tho-time-horizon", summary: "motive standing -m" },
   "ending.o.r": { anchor: "sakes.md#motive-tho-time-horizon", summary: "motive standing -r" },
-  "emotion": { anchor: "sakes.md#emotion-compose", summary: "emotion tail (locus vowel + motion ending)" },
+  "emotion": { anchor: "feelings-permission.md#emotion-compose", summary: "emotion tail (locus vowel + motion ending)" },
 };
 
 /** Join fence series vowel (joins.md, comparatives.md). */
@@ -725,11 +725,11 @@ export const REJECTIONS = {
   pluralOnPos: { anchor: "plurality.md#beginner", summary: "-x is unused on /w/, /h/, /th/, and the published /x/ linkers" },
   pluralInterjection: { anchor: "plurality.md#vocatives-y", summary: "-x on /y/ goes on a vocative (-n / -r), not an interjection" },
   sakeSlot: { anchor: "sakes.md#beginner", summary: "a sake form goes on /ɡ/, /th/, or /w/ only" },
-  emotionTail: { anchor: "sakes.md#emotion-compose", summary: "the emotion tail goes on tha / tho / thu and ends in -r / -m / -l" },
+  emotionTail: { anchor: "feelings-permission.md#emotion-compose", summary: "the emotion tail goes on tha / tho / thu and ends in -r / -m / -l" },
   sakeEnding: { anchor: "sakes.md#word-shape", summary: "a sake word ends in -l / -m / -r (its stance's ending table), with or without an emotion tail" },
   sakeStackedVowel: { anchor: "sakes.md#word-shape", summary: "a sake stance is one vowel; stacked vowels after th are the emotion locus after the horizon letter" },
   prescriptionSlot: { anchor: "sakes.md#prescription-the-ought-this-act-for-this-sake", summary: "prescription (the) goes on /th/ only: it is about an act, not a noun" },
-  feelingLandmark: { anchor: "sakes.md#emotion-compose", summary: "an INTERNAL (a) or UNPLACED (uo) feeling takes no /b/; a landmark goes with a direction or CIRCUM locus" },
+  feelingLandmark: { anchor: "feelings-permission.md#emotion-compose", summary: "an INTERNAL (a) or UNPLACED (uo) feeling takes no /b/; a landmark goes with a direction or CIRCUM locus" },
   labelScopeSlot: { anchor: "predication.md#label-scope", summary: "label scope goes on /ɡ/, /z/, /d/, /b/, /v/, or /h/ only" },
   labelScopeStem: { anchor: "predication.md#label-scope", summary: "a scope seam labels a content root, not a special pronoun" },
   roleCompoundSlot: { anchor: "roles.md#role-compounds", summary: "a role compound goes on /z/, /d/, /b/, /ɡ/, as a topic under /x/, as a call under /y/ (-n / -r), or as capacity under /h/ with a slot part; not on /v/, /w/, or /th/, and not a content part on /h/" },
@@ -831,9 +831,9 @@ export const REJECTIONS = {
   retiredIntentionRoot: { anchor: "intention.md#plan", summary: "/h/ on the map or check root is not an intention: PLAN and DECISION are /th/ stances (`thagem`, `thogom`), someone else's through a holder" },
   channelOffsetSign: { anchor: "knowing.md#dated-channel", summary: "MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one" },
   retiredChannelRoot: { anchor: "knowing.md#evidentiality", summary: "/th/ on the record or scroll root is not a channel: a record or document is REPORTED with the source in /b/, footage is LIVE or MEMORY with the device in /b/, a schedule is PLAN, and a tale is NOTIONAL" },
-  retiredDeonticRoot: { anchor: "sakes.md#say-words", summary: "/th/ on the green, no-entry, or memo root is no stance: permission, a ban, and a requirement are say words on /h/ (`hwavam`, `hwavul`, `hwavem`)" },
-  sayHost: { anchor: "sakes.md#say-words", summary: "a bl- word after a say word names someone over the act (v), or the one party under pair scope o; a participant's say needs no bl- word" },
-  saySpeaker: { anchor: "sakes.md#say-words", summary: "a bare v say word on -m is the speaker saying so, so in a statement where the speaker is a participant name whose say it is: the rules (hwavel), a person (hwavem bl-), custom (hwaver), or the speaker's own part (hwazem)" },
+  retiredDeonticRoot: { anchor: "feelings-permission.md#say-words", summary: "/th/ on the green, no-entry, or memo root is no stance: permission, a ban, and a requirement are say words on /h/ (`hwavam`, `hwavul`, `hwavem`)" },
+  sayHost: { anchor: "feelings-permission.md#permission", summary: "a bl- word after a say word names someone over the act (v), or the one party under pair scope o; a participant's say needs no bl- word" },
+  saySpeaker: { anchor: "feelings-permission.md#permission", summary: "a bare v say word on -m is the speaker saying so, so in a statement where the speaker is a participant name whose say it is: the rules (hwavel), a person (hwavem bl-), custom (hwaver), or the speaker's own part (hwazem)" },
   poleOffsetWarrant: { anchor: "knowing.md#dated-channel", summary: "a signed offset on a time pole needs a command, request, PLAN, or channel in its clause" },
   joinDetail: { anchor: "joins.md#respectively", summary: "the only /w/ before a join word is respectively (`wubam`), and it goes only there, on a closed (-l) or open (-m) and-list" },
   respectivePartner: { anchor: "joins.md#respectively", summary: "a respectively list pairs with another and-list of the same length in its clause" },

@@ -35,7 +35,8 @@ Each row names what the file owns. The file is the authority; this table is only
 | `comparatives.md` | Comparatives, superlatives, equatives, manner scale, stance bars. |
 | `predication.md` | Classification, identity, label scope. |
 | `causation.md` | Causation / condition poles, fault, CAUSE mood. |
-| `sakes.md` | Sakes, emotion compose, permission, consent. |
+| `sakes.md` | Sakes, met / unmet, prescription, motive, attachment, whose stake, contrary, sake bars. |
+| `feelings-permission.md` | Feelings, thanks, speaker attitude, permission, consent. |
 | `intention.md` | Plan, decision, try / fallback, ability / incapability. |
 | `knowing.md` | MAY, evidentiality and evidence strength, forecasts, holder, universality. |
 | `notional-standing.md` | Notional and standing: mirative, residue / former, phasal, notional, channel bars. |

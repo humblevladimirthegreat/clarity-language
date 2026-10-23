@@ -192,7 +192,7 @@ Source: [roles.md](../grammar/roles.md), [compounds.md](../grammar/compounds.md)
 
 Source: [pronouns.md](../grammar/pronouns.md#role-pointers)
 
-- **open:** a role pointer on `/v/` / `/ɡ/` / `/w/` (`vwazar`). A pointer picks a participant, and these slots take none; *does so* and *such* are whole-stem **-r**. Parser: `pointerSlot`. On `/h/` the pointer shape is a [say word](../grammar/sakes.md#say-words) (`hwazam`).
+- **open:** a role pointer on `/v/` / `/ɡ/` / `/w/` (`vwazar`). A pointer picks a participant, and these slots take none; *does so* and *such* are whole-stem **-r**. Parser: `pointerSlot`. On `/h/` the pointer shape is a [say word](../grammar/feelings-permission.md#say-words) (`hwazam`).
 - **closed (D-24):** a role pointer on `/y/` / `/x/`.
 - **open:** a new-one pointer (**-l**) with pointer vowel `u`, or after a special, topic or generic pronoun (`zwazul`). A new-one pointer copies a kind, and an unsaid filler or a conversation role has none. Parser: `pointerNewUnsaid`, `pointerNewSpecial`.
 - **open:** a share (**-m**) with pointer vowel `e` or with **-x** (`zwazem`, `zwazamx`). A share is a part of an event, so it names no group and cannot be the very event it describes. Parser: `pointerShareSelf`, `pointerSharePlural`.
@@ -220,7 +220,7 @@ Source: [roles.md](../grammar/roles.md#content-of-the-event)
 
 ## Say words
 
-Source: [sakes.md](../grammar/sakes.md#say-words)
+Source: [feelings-permission.md](../grammar/feelings-permission.md#say-words)
 
 - **closed ([D-46](design-decisions.md)):** `/th/` on the green, no-entry, or memo root, any ending but **-n** (`tholem`, `thegul`, `thonam`). Parser: `retiredDeonticRoot`.
 - **closed (D-46):** a bare **`v`** say word on **-m** in a statement whose speaker is a participant (`zuwon vowurel hwavam.`). It would be the speaker's say over their own act, which is their part (`hwazem`). Parser: `saySpeaker`.
@@ -258,7 +258,7 @@ An **-r** grade on a closed root without its own **-r** would take away the live
 - **closed (closed-root -r):** clause-pole **-r** as *one of several* on *if* (`thohor`), *only if* (`thebor`) and *so that* (`hovar`). The resume is the only route to *in that case* (`thohor`); *partly because* is `thahur`.
 - **closed (closed-root -r):** CAUSE **-r** as *one contributing push* (`thewer`); RESIDUE and FORMER **-r** as *for now* (`tharar`, `thelar`); similative **-r** as *a bit like* (`hewor`, `gewor`).
 - **open:** clause-pole **-l** beyond *because* (`thahul`) and *by* (`arul`). Neither guess fits these poles. The nearest, *if* **-l** as *by rule* (`thohol`), is not a stronger *if* but a rule, which `thohom` plus a deontic says.
-- **open:** CAUSE **-l** as *compel* (`thewel`). **-l** is not guessable here, and refused consent plus CAUSE ([consent](../grammar/sakes.md#consent)) says more: it names whose will was overridden.
+- **open:** CAUSE **-l** as *compel* (`thewel`). **-l** is not guessable here, and refused consent plus CAUSE ([consent](../grammar/feelings-permission.md#consent)) says more: it names whose will was overridden.
 - **open:** RESIDUE and FORMER **-l** (`tharal`, `thelal`). Two guesses compete: *for good*, as on the phasals (`havol`), and *strong*, as on the channels.
 - **open:** **-l** on exchange (`eha`), proxy (`ano`), the of-relations, the locatives, stimulus (`oye`), and *respectively* (`uba`). *Strongest* is the only guess, and none of these has needed it (*exactly between*?).
 

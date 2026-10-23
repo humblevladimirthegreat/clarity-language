@@ -632,7 +632,7 @@ tagWord
       };
     }
 
-// ── Say words (sakes.md#say-words) ───────────────────────────────────────────
+// ── Say words (feelings-permission.md#say-words) ───────────────────────────────────────────
 
 // `w` + label scope + whose say (`z` / `d` / `b` / `v`) + answer vowel + **-l** / **-m** / **-r** (`hwavam`, `hwadum`).
 // A consonant after the scope keeps it apart from a tag (`zwar`). Only on `/h/`: elsewhere the shape is a role pointer's.
@@ -735,7 +735,7 @@ SeamVowel
   = "ao" / "ae" / "oe" / "ua" / "ue" / "uo" / [aeou]
 
 // Sakes: sake root + `th` + stance vowel (sakes.md); optional emotion
-// tail = horizon letter + locus hook vowel(s), then the motion ending (sakes.md#emotion-compose).
+// tail = horizon letter + locus hook vowel(s), then the motion ending (feelings-permission.md#emotion-compose).
 // On a non-sake host the tailed shape is a viewpoint lateral (classify.ts).
 ValueCompound
   = host:CompoundHost "th" stanceV:SeamVowel tail:(h:[lmr] l:("ao" / "ae" / "oe" / "ua" / "uo" / "ue" / [aeou]) { return [h, l]; })? ending:Ending plural:PluralSuffix? WordEnd {

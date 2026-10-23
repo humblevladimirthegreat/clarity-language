@@ -36,7 +36,7 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}
 
-**Needs:** [Evidence strength](knowing.md#evidence-strength) · [Deduction](knowing.md#deduction) · [MAY](knowing.md#may) · [Hold endings (NOTIONAL)](notional-standing.md#hold-endings-notional) · [Hopefully and other attitudes](sakes.md#speaker-attitude) · [Unmet](sakes.md#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](spans.md#asides) · [CAUSE](causation.md#cause) · [Every bar](comparatives.md#stance-bars)
+**Needs:** [Evidence strength](knowing.md#evidence-strength) · [Deduction](knowing.md#deduction) · [MAY](knowing.md#may) · [Hold endings (NOTIONAL)](notional-standing.md#hold-endings-notional) · [Hopefully and other attitudes](feelings-permission.md#speaker-attitude) · [Unmet](sakes.md#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](spans.md#asides) · [CAUSE](causation.md#cause) · [Every bar](comparatives.md#stance-bars)
 
 English adverbs like *obviously*, *apparently* and *presumably* say **how you know** a claim. Agebon has no word for each one. It puts a channel on the clause as a `/th/` word, and the ending grades the evidence: **-l** solid, **-m** ordinary, **-r** thin. *Guess* and *assume* are not channels: a guess is a *could be* (MAY), and an assumption is toying with a premise (NOTIONAL). *Unfortunately* says how **you** feel about the claim, so it is an attitude word.
 
@@ -88,11 +88,11 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 >
 > "Unfortunately, Uzozen is leaving."
 
-**Compare with:** *hopefully* and *worryingly* are the other speaker attitudes ([hopefully](sakes.md#speaker-attitude)). *Assuming that Q, P* keeps the condition open: P with **`thohom blarl`** ([if](causation.md#if)).
+**Compare with:** *hopefully* and *worryingly* are the other speaker attitudes ([hopefully](feelings-permission.md#speaker-attitude)). *Assuming that Q, P* keeps the condition open: P with **`thohom blarl`** ([if](causation.md#if)).
 
 ### Reason, purpose, guilty {#reason-purpose-guilty}
 
-**Needs:** [Because](causation.md#only-because) · [Fault](causation.md#fault) · [Motive](sakes.md#sake-preference) · [Prescription](sakes.md#sake-force) · [Attachment sites](sakes.md#attachment-sites) · [So that](dependents.md#so-that) · [Why?](fill-ask-roles.md#why) · [Emotion compose](sakes.md#emotion-compose) · [Feeling with no object](sakes.md#feeling-no-object)
+**Needs:** [Because](causation.md#only-because) · [Fault](causation.md#fault) · [Motive](sakes.md#sake-preference) · [Prescription](sakes.md#sake-force) · [Attachment sites](sakes.md#attachment-sites) · [So that](dependents.md#so-that) · [Why?](fill-ask-roles.md#why) · [Emotion compose](feelings-permission.md#emotion-compose) · [Feeling with no object](feelings-permission.md#feeling-no-object)
 
 English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each split the same way. Name which one you mean: what **made it happen** (the because pole), what the speaker is **doing it for** (a motive, on a sake), or the **faculty** of thinking (the abstract sense of `ebobo`).
 
@@ -150,7 +150,7 @@ What makes the feeling guilt is the fault pole on **your own** act. The feeling 
 
 Put the **act** in a `bl-` word after a fault pole, not the person ([fault](causation.md#fault)). *Guilty* is then *the wrong rests on that act*, and it leaves room for *Olazun did a wrong thing* without *Olazun is bad*.
 
-**Compare with:** owning a harm to someone else (*I'm sorry*) is [thanks and sorry](sakes.md#thanks-sorry), not a guilt feeling.
+**Compare with:** owning a harm to someone else (*I'm sorry*) is [thanks and sorry](feelings-permission.md#thanks-sorry), not a guilt feeling.
 
 ### Kill, feed, remove, prevent, persuade, introduce, show, create, excite {#cause-verbs}
 
@@ -242,7 +242,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 
 ### Condition, factor, requirement, motivation, satisfaction, truth {#reason-nouns}
 
-**Needs:** [If](causation.md#if) · [Only because](causation.md#only-because) · [Fault](causation.md#fault) · [Requirement](sakes.md#requirement) · [Motive](sakes.md#sake-preference) · [Met](sakes.md#time-horizon-endings-on-met) · [Thanks and sorry](sakes.md#thanks-sorry) · [Intention](intention.md#plan-predict) · [Speech manner](speech-moves.md#speech-manner) · [Evidentiality](knowing.md#evidentiality) · [Enough and too](sakes.md#sake-bars)
+**Needs:** [If](causation.md#if) · [Only because](causation.md#only-because) · [Fault](causation.md#fault) · [Requirement](feelings-permission.md#requirement) · [Motive](sakes.md#sake-preference) · [Met](sakes.md#time-horizon-endings-on-met) · [Thanks and sorry](feelings-permission.md#thanks-sorry) · [Intention](intention.md#plan-predict) · [Speech manner](speech-moves.md#speech-manner) · [Evidentiality](knowing.md#evidentiality) · [Enough and too](sakes.md#sake-bars)
 
 English turns reasons and feelings into nouns (*condition*, *motivation*, *satisfaction*, *truth*). Agebon has no noun for most of them. It keeps the stance word on the clause, so the noun becomes a short claim about how you stand: a condition is the pole word, a motive is a sake, a requirement is a demand, a truth is how you vouch for it.
 
@@ -446,7 +446,7 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 
 ### Hoping something will happen {#hope-forecast}
 
-**Needs:** [Hopefully](sakes.md#speaker-attitude) · [forecasts](knowing.md#forecast) · [evidentiality](knowing.md#evidentiality) · [soon](knowing.md#dated-channel)
+**Needs:** [Hopefully](feelings-permission.md#speaker-attitude) · [forecasts](knowing.md#forecast) · [evidentiality](knowing.md#evidentiality) · [soon](knowing.md#dated-channel)
 
 English *I hope X will happen* is two claims: you want it, and you expect it. **`thoguyem`** gives the wanting. The *will* is a [forecast](knowing.md#forecast), so it needs a channel plus **`blral`** (or **`blrawum`** for *soon*). If nothing backs it but your gut, the honest channel is INTUITION: faint **`thabor`** for a slim hope, **`thabom`** for an ordinary one.
 
@@ -462,7 +462,7 @@ English *I hope X will happen* is two claims: you want it, and you expect it. **
 
 ### Important, useful, helpful, benefit, satisfy, upset {#sake-words}
 
-**Needs:** [Sake inventory](sakes.md#sake-inventory) · [Met](sakes.md#time-horizon-endings-on-met) · [Emotion compose](sakes.md#emotion-compose) · [Thanks and sorry](sakes.md#thanks-sorry) · [Bars](comparatives.md#bars)
+**Needs:** [Sake inventory](sakes.md#sake-inventory) · [Met](sakes.md#time-horizon-endings-on-met) · [Emotion compose](feelings-permission.md#emotion-compose) · [Thanks and sorry](feelings-permission.md#thanks-sorry) · [Bars](comparatives.md#bars)
 
 English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Agebon names the someone's **sake** (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical). A met word says the thing serves that sake, and its ending says how long the payoff lasts. On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it on `/w/` before **`goyem`**. Put a person in `/b/` for whose sake it is.
 
@@ -473,7 +473,7 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 | *meaningful* / *worthwhile* | `wuretham goyem` | purpose, met |
 | *pointless* / *futile* | `wurethum goyem` | purpose, unmet |
 | *glad to help* / *rewarding to give* | `thewatham.` | the act met your beneficence |
-| *grateful* / *thankful* / *appreciate* (your own thanks) | `thawotham.`, or the met word for the sake that was served | your sake, met: the thanks ([thanks and sorry](sakes.md#thanks-sorry)) |
+| *grateful* / *thankful* / *appreciate* (your own thanks) | `thawotham.`, or the met word for the sake that was served | your sake, met: the thanks ([thanks and sorry](feelings-permission.md#thanks-sorry)) |
 | *benefit* / *benefits Olazun* | `thawotham blolazun` | the act met Olazun's sake |
 | *advantage* (a lead over someone) | `zel` with the scale | rank against the other |
 | *satisfy* (you) | `thawotham blawan` | the act met your sake |
@@ -553,7 +553,7 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrec
 
 ### Deserve, earn, entitled {#deserve}
 
-**Needs:** [Prescription](sakes.md#sake-force) · [Requirement](sakes.md#requirement) · [Permission](sakes.md#permission) · [Exchange](relations.md#exchange) · [Adverbs `/h/`](clause.md#adverbs-h)
+**Needs:** [Prescription](sakes.md#sake-force) · [Requirement](feelings-permission.md#requirement) · [Permission](feelings-permission.md#permission) · [Exchange](relations.md#exchange) · [Adverbs `/h/`](clause.md#adverbs-h)
 
 English *deserve* says something is owed without saying why. Name the ground. It is owed because giving it would be **fair**, because a **rule** gives a right to it, or because it was **earned** in exchange for effort.
 
@@ -580,7 +580,7 @@ English *deserve* says something is owed without saying why. Name the ground. It
 
 ### Clear, honest, false, general, proud {#trait-words}
 
-**Needs:** [Negation](joins.md#negation-u) · [Universals, domains and generics](joins.md#universals-domains-generics) · [Fault](causation.md#fault) · [Emotion compose](sakes.md#emotion-compose) · [Number as stance](digitless-exponents.md#special-number-as-stance)
+**Needs:** [Negation](joins.md#negation-u) · [Universals, domains and generics](joins.md#universals-domains-generics) · [Fault](causation.md#fault) · [Emotion compose](feelings-permission.md#emotion-compose) · [Number as stance](digitless-exponents.md#special-number-as-stance)
 
 Many English adjectives are the plain opposite of something that has a root (*unclear*, *honest*, *false*). Agebon says the positive root and closes it with **`gul`** (*not*). Others claim how far something holds (*general*, *universal*, *absolute*). That is the universal fence: closed for no exceptions, open for *as a rule*. A few are a feeling (*proud*), which is an emotion compose, so the sake and the stimulus are named.
 
@@ -715,7 +715,7 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 ### When the stimulus happens {#emotion-stimulus-time}
 
-**Needs:** [Emotion compose](sakes.md#emotion-compose) · [forecasts](knowing.md#forecast) · [evidentiality](knowing.md#evidentiality) · [evidence strength](knowing.md#evidence-strength) · [RESIDUE](notional-standing.md#residue) · [NOTIONAL](notional-standing.md#notional)
+**Needs:** [Emotion compose](feelings-permission.md#emotion-compose) · [forecasts](knowing.md#forecast) · [evidentiality](knowing.md#evidentiality) · [evidence strength](knowing.md#evidence-strength) · [RESIDUE](notional-standing.md#residue) · [NOTIONAL](notional-standing.md#notional)
 
 
 A feeling word is how you feel **now**. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`goyem`**, as for any [forecast](knowing.md#forecast) or [dated claim](knowing.md#dated-channel): the offset dates the stimulus, and the channel says how you know it.
@@ -748,7 +748,7 @@ Other shapes use forms you already have:
 | recurring | [always](restrictors.md) `hual` | *dreading every dialogue* |
 | did not happen | [NOTIONAL](notional-standing.md#notional) | *relieved about what didn't happen* |
 
-A [feeling with no object](sakes.md#feeling-no-object) can take a channel and offset too. Then the stimulus is real but unnamed: you know when it is, not what it is.
+A [feeling with no object](feelings-permission.md#feeling-no-object) can take a channel and offset too. Then the stimulus is real but unnamed: you know when it is, not what it is.
 
 > `thuwathuruor thabor blral.`
 >
@@ -760,7 +760,7 @@ How the stimulus is known matters. A dialogue a reliable source announced (`theb
 
 ### Feeling then {#emotion-feeling-time}
 
-**Needs:** [Emotion compose](sakes.md#emotion-compose) · [stance as-of](relations.md#stance-as-of) · [evidentiality](knowing.md#evidentiality)
+**Needs:** [Emotion compose](feelings-permission.md#emotion-compose) · [stance as-of](relations.md#stance-as-of) · [evidentiality](knowing.md#evidentiality)
 
 
 To say you **felt** it at another time, date the feeling itself with [stance as-of](relations.md#stance-as-of): **`thenam`** plus the time or event in `/b/`, after the stimulus. Add a remembering channel for *I remember feeling it*.
@@ -781,7 +781,7 @@ With no pair, the feeling is now. Keeping *it hurt then* apart from *it hurts no
 
 ### Cause is not target {#emotion-blame}
 
-**Needs:** [Emotion compose](sakes.md#emotion-compose) · [Because](causation.md#only-because) · [Fault](causation.md#fault) · [MAY](knowing.md#may)
+**Needs:** [Emotion compose](feelings-permission.md#emotion-compose) · [Because](causation.md#only-because) · [Fault](causation.md#fault) · [MAY](knowing.md#may)
 
 
 A direction locus says where the charge **goes**. It does not say who **caused** it. Name the cause with the [because pole](causation.md#because) after the feeling, and name its [fault](causation.md#fault) only when you mean it. The target and the cause may differ.
@@ -808,7 +808,7 @@ Put an **act** after the pole (`barl zolazun vezuyel`), not the person. A feelin
 
 ### Curious, confused, bored, awed, surprised {#understanding-feelings}
 
-**Needs:** [Sake inventory](sakes.md#sake-inventory) · [Emotion compose](sakes.md#emotion-compose) · [Feeling with no object](sakes.md#feeling-no-object) · [Mirative](notional-standing.md#mirative)
+**Needs:** [Sake inventory](sakes.md#sake-inventory) · [Emotion compose](feelings-permission.md#emotion-compose) · [Feeling with no object](feelings-permission.md#feeling-no-object) · [Mirative](notional-standing.md#mirative)
 
 Most of these feelings are about the **understanding** sake: whether something makes sense. Surprise is different. It says the news ran against what you expected, so it is the [mirative](notional-standing.md#mirative), and a sake word says how the news lands.
 

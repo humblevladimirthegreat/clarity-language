@@ -124,7 +124,7 @@ function indexHookedJoinForms(index: GlossIndex, tables: ClassifyTables): void {
   }
 }
 
-/** Say words (sakes.md#say-words): every scope × whose say × answer × ending on `/h/`. */
+/** Say words (feelings-permission.md#say-words): every scope × whose say × answer × ending on `/h/`. */
 function indexSayForms(index: GlossIndex, tables: ClassifyTables): void {
   for (const scope of ["a", "e", "o", "u", "ao", "ae", "oe", "ua", "uo", "ue"]) {
     for (const part of ["z", "d", "b", "v"]) {

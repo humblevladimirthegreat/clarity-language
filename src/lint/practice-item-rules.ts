@@ -13,7 +13,11 @@ import { ERROR_MARKER, practiceItems, type PracticeItem, type SpoilerLine } from
 
 export type PracticeItemFinding = { index: number; detail: string };
 
-export function lintPracticeItems(markdown: string, tables: ClassifyTables, options: { review?: boolean } = {}): PracticeItemFinding[] {
+export function lintPracticeItems(
+  markdown: string,
+  tables: ClassifyTables,
+  options: { review?: boolean; page?: string } = {},
+): PracticeItemFinding[] {
   const { items, findings } = practiceItems(markdown, options);
   const out: PracticeItemFinding[] = [...findings];
   for (const item of items) {

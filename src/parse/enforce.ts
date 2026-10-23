@@ -415,7 +415,7 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (word.pos === "th" && (stemRoot === CLOSED.record || stemRoot === CLOSED.scroll) && word.ending !== "n") {
     throw new ConstructionError("retiredChannelRoot", word.raw);
   }
-  // The green, no-entry and memo roots are no stance: permission, a ban and a requirement are say words (sakes.md#say-words).
+  // The green, no-entry and memo roots are no stance: permission, a ban and a requirement are say words (feelings-permission.md#say-words).
   if (word.pos === "th" && (stemRoot === CLOSED.green || stemRoot === CLOSED.noEntry || stemRoot === CLOSED.memo) && word.ending !== "n") {
     throw new ConstructionError("retiredDeonticRoot", word.raw);
   }
@@ -669,7 +669,7 @@ function enforceBars(coord: NpCoord, tables: ClassifyTables): void {
   }
 }
 
-/** A placement locus (INTERNAL `a`, UNPLACED `uo`) has no landmark, so its feeling takes no hosted `/b/` (sakes.md#emotion-compose). */
+/** A placement locus (INTERNAL `a`, UNPLACED `uo`) has no landmark, so its feeling takes no hosted `/b/` (feelings-permission.md#emotion-compose). */
 function enforceFeelingLandmark(words: LexWord[], hosted: Hosted | undefined): void {
   if (!hosted) return;
   for (const word of words) {
@@ -680,7 +680,7 @@ function enforceFeelingLandmark(words: LexWord[], hosted: Hosted | undefined): v
   }
 }
 
-/** Whose say: a `bl-` word names someone over the act (`v`), or, under pair scope `o`, the one party a participant's say is toward (sakes.md#say-words). */
+/** Whose say: a `bl-` word names someone over the act (`v`), or, under pair scope `o`, the one party a participant's say is toward (feelings-permission.md#say-words). */
 function enforceSayHost(unit: HUnit): void {
   const family = unit.word.family;
   if (family.kind !== "say") return;
@@ -770,7 +770,7 @@ function enforceHookStandIn(hook: LexWord, next: Unit | undefined): void {
 
 /**
  * The sentence after a stand-in names an event or a thing: stance words alone fill no slot, except a lone
- * sake word, which is a whole sentence about the speaker (dependents.md#dependent-clauses, sakes.md#feeling-no-object).
+ * sake word, which is a whole sentence about the speaker (dependents.md#dependent-clauses, feelings-permission.md#feeling-no-object).
  */
 function enforceDependentContent(clause: Clause): void {
   const dependent = clause.dependent;

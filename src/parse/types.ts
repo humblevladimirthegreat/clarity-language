@@ -90,9 +90,9 @@ export type MorphWordFamily =
       stanceVowel?: ScopeVowel;
       /** Role compound or role pointer: the label scope vowel(s) after `w` (`zwezuduyel`; roles.md#scope). Hook prefix: scope after the stem's `th` seam (`zuexavuvuthel`). */
       scopeVowel?: ScopeVowel;
-      /** Emotion compose: sake horizon letter moved mid-word (sakes.md#emotion-compose). */
+      /** Emotion compose: sake horizon letter moved mid-word (feelings-permission.md#emotion-compose). */
       horizon?: "l" | "m" | "r";
-      /** Emotion compose locus: hook vowel(s) for placement or direction (sakes.md#emotion-compose). */
+      /** Emotion compose locus: hook vowel(s) for placement or direction (feelings-permission.md#emotion-compose). */
       locus?: "a" | "e" | "o" | "u" | "ao" | "ae" | "oe" | "ua" | "uo" | "ue";
       /** Numeric prefix: the number body left of the seam (numeric-derivation.md). */
       numberStem?: NumberStem;
@@ -131,13 +131,13 @@ export type MorphWordFamily =
   | { kind: "tag"; vowels: TagVowel[] }
   /**
    * Say word: `h` + `w` + label scope + whose say + answer + ending (`hwavam` *you may*, `hwadum` *they refused*;
-   * sakes.md#say-words). The part is the doer `z`, the one it's done to `d`, the recipient `b`, or someone over the act `v`.
+   * feelings-permission.md#say-words). The part is the doer `z`, the one it's done to `d`, the recipient `b`, or someone over the act `v`.
    */
   | { kind: "say"; scope: ScopeVowel; part: SayPart; answer: SayAnswer };
 
-/** Whose say a say word gives (sakes.md#say-words). */
+/** Whose say a say word gives (feelings-permission.md#say-words). */
 export type SayPart = "z" | "d" | "b" | "v";
-/** What they said: `a` allow, `u` forbid, `e` require, `o` their call (sakes.md#say-words). */
+/** What they said: `a` allow, `u` forbid, `e` require, `o` their call (feelings-permission.md#say-words). */
 export type SayAnswer = "a" | "e" | "o" | "u";
 
 /** Tag pronoun vowel, named by its letter name: A, E, O, U (pronouns.md#tag-pronouns). */
