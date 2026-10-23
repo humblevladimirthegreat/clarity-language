@@ -2,8 +2,7 @@
 band: beginner
 ---
 
-# Predication (classification and identity)
-<a id="predication"></a>
+# Predication {#predication}
 
 English *is* does two jobs that look alike. You can say someone **is a kind or role** (*Uzozen is a dog*): they belong in that category. You can also say two names pick out **the same one** (*Olazun is Uzozen*): one person under two labels, not a category. Agebon uses a different word pattern for each.
 

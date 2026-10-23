@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Proper names and titled phrases {#proper-names-and-titled-phrases}
+# Names and titles {#proper-names-and-titled-phrases}
 
 ::: tip Reminder:
 Intermediate sections assume you have read the beginner sections of every page.

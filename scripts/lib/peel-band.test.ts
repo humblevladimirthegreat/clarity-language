@@ -44,12 +44,12 @@ describe("peelBand, last remaining sitting", () => {
     parentMarkdown: PARENT,
     band: "intermediate",
     newPage: "proper-names.md",
-    title: "Proper names and titled phrases",
+    title: "Names and titles",
   });
 
   it("copies the slice into a banded sitting and drops both band H2s", () => {
     assert.match(result.sitting, /^---\nband: intermediate\n---\n/);
-    assert.match(result.sitting, /# Proper names and titled phrases \{#proper-names-and-titled-phrases\}/);
+    assert.match(result.sitting, /# Names and titles \{#names-and-titles\}/);
     assert.match(result.sitting, /### Proper names \{#proper-names\}/);
     assert.match(result.sitting, /### Practice \{#intermediate-practice\}/);
     assert.doesNotMatch(result.sitting, /## Intermediate/);
@@ -79,7 +79,7 @@ describe("peelBand, last remaining sitting", () => {
       parent: "word-endings.md",
       page: "proper-names.md",
       band: "intermediate",
-      title: "Proper names and titled phrases",
+      title: "Names and titles",
     });
   });
 });

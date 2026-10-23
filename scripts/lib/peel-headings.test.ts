@@ -36,13 +36,13 @@ describe("peelHeadings", () => {
     parentMarkdown: PARENT,
     ids: ["speech-act"],
     newPage: "firm-soft.md",
-    title: "Speech act: firm and soft",
+    title: "Firm and soft",
     band: "beginner",
   });
 
   it("copies the H3 cluster, including nested H4s, onto a beginner sitting", () => {
     assert.match(result.sitting, /^---\nband: beginner\n---\n/);
-    assert.match(result.sitting, /# Speech act: firm and soft \{#speech-act-firm-and-soft\}/);
+    assert.match(result.sitting, /# Firm and soft \{#firm-and-soft\}/);
     assert.match(result.sitting, /### Speech act: firm and soft \{#speech-act\}/);
     assert.match(result.sitting, /#### For now \(\*\*-r\*\*\) \{#act-r\}/);
     assert.doesNotMatch(result.sitting, /### Tone marks/);
@@ -104,7 +104,7 @@ From-to.
     parentMarkdown: md,
     ids: ["digit-strings", "time"],
     newPage: "digit-strings.md",
-    title: "Digit-strings and time",
+    title: "Digits and time",
     band: "beginner",
   });
 

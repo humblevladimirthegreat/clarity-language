@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Verb-phrase and clause forms {#verb-phrase-and-clause-forms}
+# VP and clause forms {#verb-phrase-and-clause-forms}
 
 ::: tip Reminder:
 Intermediate sections assume you have read the beginner sections of every page.

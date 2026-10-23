@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Word shape, markers, and endings {#word-shape-markers-and-endings}
+# Number shape {#word-shape-markers-and-endings}
 
 ### Word shape
 

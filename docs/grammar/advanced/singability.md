@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# Singability and speech edges {#singability-and-speech-edges}
+# Singability {#singability-and-speech-edges}
 
 ### Place-name roots {#place-name-roots}
 

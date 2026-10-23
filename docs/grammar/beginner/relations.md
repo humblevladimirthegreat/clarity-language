@@ -2,7 +2,7 @@
 band: beginner
 ---
 
-# Hosted relations
+# Relations
 
 Some English prepositions need a content root of their own (*like*, *for* in a swap, *on behalf of*, *between*, *part of*, *as of*). Agebon writes each one as a **relation** word on `/h/` (or `/ɡ/` on a noun), followed by an extra noun in `/b/` that completes it. Everyday *in* / *at* / *from* / *for* (a get) / *using* are [hooks](hooks.md#extra-noun) instead.
 

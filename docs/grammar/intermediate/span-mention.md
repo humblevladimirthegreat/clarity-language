@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Mention and scope islands {#mention-and-scope-islands}
+# Mention and islands {#mention-and-scope-islands}
 
 ### Written only {#written-only}
 

@@ -11,7 +11,7 @@
 | `thawothem` | prescription | this act ought to be done, for my need to feel connected |
 | `thawothom` | motive | this act is being done for my need to feel connected |
 
-Both are built like the thanks and sorry words from Thanks and sorry that say why: `th` + sake + a stance + an ending. There the stance said a need was **met** (`tha`) or **unmet** (`thu`). **Prescription** `the` says the act ought to serve the need, and **motive** `tho` says the need is why the act is happening. So `thobathem` is *that's worth doing for my health*, and `thowothom` is *I'm doing it to understand*.
+Both are built like the thanks and sorry words from Thanks and sorry: `th` + sake + a stance + an ending. There the stance said a need was **met** (`tha`) or **unmet** (`thu`). **Prescription** `the` says the act ought to serve the need, and **motive** `tho` says the need is why the act is happening. So `thobathem` is *that's worth doing for my health*, and `thowothom` is *I'm doing it to understand*.
 
 The need is always **yours**, the speaker's, even when someone else does the act. *Open the window `thobathem`* asks for it for your own health, not theirs. These drop-ins never say why someone else acts: their reasons are in their mind, not in your sentence.
 
@@ -25,13 +25,13 @@ The endings have two different jobs here, so read the column you are in:
 | **-m** | your own offer, unasked (the default) | unstated (the default) |
 | **-r** | worth a try, to see whether it helps | right away |
 
-The motive column is the settled-to-passing scale again (**-l** lasting, **-r** right now). The prescription column is not; like Allowed, required, agreed it grades where the word comes from, not how long it lasts. When you cannot tell which fits, **-m** is the honest answer in both columns.
+The motive column is the settled-to-passing scale again (**-l** lasting, **-r** right now). The prescription column is not; like Allowed and required it grades where the word comes from, not how long it lasts. When you cannot tell which fits, **-m** is the honest answer in both columns.
 
 If none of the three prescription endings is true, leave the ought word off. Advice you were not invited to give, are not offering, and do not want tried is not advice, and plain English says the rest.
 
 A motive word is not an excuse and not a cause: it names the need the act serves, not what made the act happen. It also says nothing about whether the act was a good idea.
 
-One vowel apart, and four different jobs. `thawotham` and `thawothum` are the thanks and sorry words from Thanks and sorry that say why:
+One vowel apart, and four different jobs. `thawotham` and `thawothum` are the thanks and sorry words from Thanks and sorry:
 
 | Drop-in | Says |
 |---------|------|

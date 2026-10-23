@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Polar inventory and rhetorical {#polar-inventory-and-rhetorical}
+# Polar inventory {#polar-inventory-and-rhetorical}
 
 ### Polar stance: fuller inventory
 

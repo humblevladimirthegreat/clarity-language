@@ -2,8 +2,7 @@
 band: beginner
 ---
 
-# Restrictors (`/h/` / `/w/`)
-<a id="restrictors"></a>
+# Restrictors {#restrictors}
 
 
 Use these words when you want to say **when** a claim counts: *only when it rains*, *never*, *always*. They take the adverb letter **`h`** (or **`w`** immediately before the adjective they limit) plus the same vowels and endings you already use on [joins](joins.md). Time or case words sit **before** the restrictor. Together they limit when the verb's claim (or that adjective) holds; they do not describe how it happens.

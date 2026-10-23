@@ -2,7 +2,7 @@
 band: beginner
 ---
 
-# Digit-strings and time {#digit-strings-and-time}
+# Digits and time {#digit-strings-and-time}
 
 ### Digit-strings {#digit-strings}
 

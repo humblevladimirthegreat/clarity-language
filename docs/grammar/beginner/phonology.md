@@ -2,8 +2,7 @@
 band: beginner
 ---
 
-# Phonology and phonotactics
-<a id="phonology"></a>
+# Phonology {#phonology}
 
 How to **sound out** Agebon. Each letter has one pronunciation. Syllables end with a consonant only at the end of the word, so you know when words stop.
 

@@ -39,7 +39,7 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 | reported: told or read | `thebal` | `thebam` | `thebar` |
 | intuition: a gut sense | `thabol` | `thabom` | `thabor` |
 
-## [Allowed, required, agreed](allowed-required-agreed.md) {#allowed}
+## [Allowed and required](allowed-required-agreed.md) {#allowed}
 
 | | **-l** by a rule | **-m** by a person | **-r** no one's word |
 |-|------------------|--------------------|----------------------|

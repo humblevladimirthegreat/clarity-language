@@ -2,7 +2,7 @@
 band: beginner
 ---
 
-# Speech act: firm and soft {#speech-act-firm-and-soft}
+# Firm and soft {#speech-act-firm-and-soft}
 
 ### Speech act: firm and soft {#speech-act}
 

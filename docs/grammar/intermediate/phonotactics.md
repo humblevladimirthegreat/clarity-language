@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Phonotactics and letter names {#phonotactics-and-letter-names}
+# Phonotactics {#phonotactics-and-letter-names}
 
 ::: tip Reminder:
 Intermediate sections assume you have read the beginner sections of every page.

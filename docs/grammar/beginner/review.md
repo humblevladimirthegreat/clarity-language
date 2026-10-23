@@ -370,7 +370,7 @@ z-Olazun | g-angry-th-episode
 
 **`tha`** is this episode; **`thu`** would make Olazun an angry type.
 
-**Rule:** [How far a label reaches](label-seams.md#label-scope)
+**Rule:** [Label scope](label-seams.md#label-scope)
 :::
 
 **13.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyel thobather blwazer.` or `zahelan vuguyel thobathem blwazer.`

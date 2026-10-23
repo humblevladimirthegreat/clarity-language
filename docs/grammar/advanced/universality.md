@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# Universality and dated channel {#universality-and-dated-channel}
+# Universality {#universality-and-dated-channel}
 
 ### Mood on one adjective
 <a id="mood-on-adjective"></a>

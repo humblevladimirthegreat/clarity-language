@@ -198,7 +198,7 @@ Motion is how the feeling moves, not how strong it is. For strength, put a [degr
 | [A feeling about an event](/feelings-permission#feeling-no-object) | `zolazun vowurel thawothamar` | *moved that Olazun walks* | I |
 | [Naming it plainly](/feelings-permission#emotion-compose) | `zuwon gunemul` | *I am angry* | I |
 
-## Allowed, required, agreed {#deontic}
+## Allowed and required {#deontic}
 
 A [say word](/feelings-permission#say-words) on `/h/`: **`h`** **`w`**, a scope vowel, whose say, the answer, and an ending. Whose say: **`v`** someone over the act (the speaker, or the `bl-` word after), **`z`** the doer, **`d`** the one it's done to, **`b`** the recipient. Answer: **`a`** allow, **`u`** forbid, **`e`** require, **`o`** their call. Ending: **-l** a rule or binding agreement, **-m** a person said so, **-r** nobody said. When unsure, use **-m**. All Intermediate.
 

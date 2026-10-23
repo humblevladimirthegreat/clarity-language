@@ -2,7 +2,7 @@
 band: beginner
 ---
 
-# Here, there, and somewhere {#here-there-and-somewhere}
+# Here and there {#here-there-and-somewhere}
 
 ### Somewhere, nowhere, everywhere {#place-indefinites}
 

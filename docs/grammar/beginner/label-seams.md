@@ -2,7 +2,7 @@
 band: beginner
 ---
 
-# How far a label reaches {#how-far-a-label-reaches}
+# Label seams {#how-far-a-label-reaches}
 
 ### Label scope {#label-scope}
 

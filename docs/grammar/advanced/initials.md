@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# Initials, rays, named ranges {#initials-rays-named-ranges}
+# Initials and rays {#initials-rays-named-ranges}
 
 ### Initials {#initials}
 

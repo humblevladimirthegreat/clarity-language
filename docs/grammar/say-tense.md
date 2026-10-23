@@ -1,4 +1,4 @@
-# Tense, aspect and modals
+# Tense and modals
 
 Recipes for English *walked* / *has walked* / *will walk* / *used to walk*, and for *can* / *may* / *must* / *should*. Verbs in Agebon carry no tense. Every form here is taught on a grammar page; each recipe links what it needs.
 

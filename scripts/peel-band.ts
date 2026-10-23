@@ -1,8 +1,8 @@
 /**
  * Peel one band sitting off a grammar page onto a new file.
  *
- * Run: npm run peel-band -- --parent word-endings.md --band intermediate --to proper-names.md --title "Proper names and titled phrases"
- *      npm run peel-band -- --parent word-endings.md --band intermediate --to proper-names.md --title "Proper names and titled phrases" --write
+ * Run: npm run peel-band -- --parent word-endings.md --band intermediate --to proper-names.md --title "Names and titles"
+ *      npm run peel-band -- --parent word-endings.md --band intermediate --to proper-names.md --title "Names and titles" --write
  *
  * Dry run prints the new sitting, parent, hash-map rows, sidebar row, and
  * construction homes on retired band fragments. `--write` applies them, then
@@ -74,7 +74,7 @@ function parseArgs(argv: string[]): Options {
   }
   if (!parent || !band || !to || !title) {
     throw new Error(
-      'Usage: npm run peel-band -- --parent word-endings.md --band intermediate --to proper-names.md --title "Proper names and titled phrases" [--h1-id id] [--write]',
+      'Usage: npm run peel-band -- --parent word-endings.md --band intermediate --to proper-names.md --title "Names and titles" [--h1-id id] [--write]',
     );
   }
   return { parent, band, to, title, h1Id, write };

@@ -45,7 +45,7 @@ The failure is psychological, not structural. A gap is a thinking trap the reade
 - **Long menus say they are menus.** A locus or channel inventory is followed by *you don't need to memorize it*.
 - **Say when to leave it out.** Every lesson marks at least one place the drop-in is unnecessary, and none of them implies that plain English is a mistake: *none of the three is the "right" one*; *leave the suffix off when the scope doesn't matter*.
 - **Rule out the near miss.** Where the obvious English reading is wrong, deny it in one short sentence (*motion is not strength*).
-- **Endings** are the settled-to-passing scale, with the cue **-l ≈ lasting, -r ≈ right now**, and each lesson notes when the scale comes back. Allowed, required, agreed grades the source instead, as do the prescription endings in Oughts and motives (invited / offered / trial). Labels and Can and can't teach hyphenated suffixes, which take no ending.
+- **Endings** are the settled-to-passing scale, with the cue **-l ≈ lasting, -r ≈ right now**, and each lesson notes when the scale comes back. Allowed and required grades the source instead, as do the prescription endings in Oughts and motives (invited / offered / trial). Labels and Can and can't teach hyphenated suffixes, which take no ending.
 - **Pronunciation** is taught once, in How sure are you?, in English keywords. Later lessons do not repeat it.
 
 ## The hyphenated English host
@@ -74,7 +74,7 @@ Lessons carry no full Agebon sentences and no morph gloss lines. Explain a drop-
 ## Back-references
 <a id="back-references"></a>
 
-Lessons carry no numbers. A lesson may name an earlier lesson by title, in plain text, when it reuses its form ("start from a thanks or sorry word from Thanks and sorry that say why"), as a reminder of one word, not a recap. No links between lessons, no links into the grammar, and no previews of lessons ahead outside the list on the intro page.
+Lessons carry no numbers. A lesson may name an earlier lesson by title, in plain text, when it reuses its form ("start from a thanks or sorry word from Thanks and sorry"), as a reminder of one word, not a recap. No links between lessons, no links into the grammar, and no previews of lessons ahead outside the list on the intro page.
 
 ## Editor cues and cards
 <a id="editor-cards"></a>

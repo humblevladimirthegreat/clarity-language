@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# Join islands and role grid {#join-islands-and-role-grid}
+# Join islands {#join-islands-and-role-grid}
 
 ### Scope islands {#scope-islands-join}
 

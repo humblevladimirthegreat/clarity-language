@@ -2,8 +2,7 @@
 band: beginner
 ---
 
-# Comparatives, superlatives, and equatives
-<a id="comparatives-page"></a>
+# Comparatives {#comparatives-page}
 
 English splits three nearby jobs on a quality like *challenging*. *More … than* and *the most* put people in **order** on that quality. *As … as* says they sit at the **same height**. *Both are challenging* only says **each has** the quality; it does not say who ranks higher or whether they match. Agebon writes the first two with a rank join from joins followed by the shared adjective, and the third with an ordinary *and*-list.
 

@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# Emphasis and audible start {#emphasis-and-audible-start}
+# Emphasis {#emphasis-and-audible-start}
 
 ### English emphasis and clefts {#english-emphasis}
 

@@ -2,8 +2,7 @@
 band: beginner
 ---
 
-# Sakes (`/ɡ/` / `/th/` / `/w/`)
-<a id="sakes"></a>
+# Sakes {#sakes}
 <a id="sake-ascription"></a>
 
 English *good for me* and *costs me* say what something does for a person. Agebon names that payoff as a **sake**: something good for a person, a psychological payoff you can name (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or an unspecified sake). It means *for your sake* (what is good for you), not *for argument's sake*. A sake word also carries your **stance**, how the thing stands toward that sake: it **serves** the sake or **detracts from** it. An unmet sake is a cost to name, not a lack in you.

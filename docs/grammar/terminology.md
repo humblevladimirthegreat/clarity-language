@@ -37,9 +37,9 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **LIVE** | Evidential: sensed now, by any sense | `thugom` | [Live and memory](/live-and-memory#live-vs-memory) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thomam` | [Knowing](/knowing#may) |
 | **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevum` | [Live and memory](/live-and-memory#live-vs-memory) |
-| **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegel z[udozo] gamezom.` | [Mention and scope islands](/span-mention#mention) |
+| **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegel z[udozo] gamezom.` | [Mention and islands](/span-mention#mention) |
 | **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themom` | [Notional and standing](/notional-standing#mirative) |
-| **NAME** | A package titled with **-n** | `zebodol zuyudal zan.` | [Join islands and role grid](/join-islands#named-list) |
+| **NAME** | A package titled with **-n** | `zebodol zuyudal zan.` | [Join islands](/join-islands#named-list) |
 | **NOTIONAL** | As-if / pretense mood | `theyum` | [Notional and standing](/notional-standing#notional) |
 | **ON-BEHALF** | Emotion locus: felt for someone's sake | `wawothumem` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **OPAQUE** | An opaque span: foreign or raw writing | <code>d&lt;kimchi&gt;</code> | [Spans](/spans#loans) |
@@ -50,7 +50,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Notional and standing](/notional-standing#residue) |
 | **RESISTING** | Emotion locus: pushing against a target | `wawothumuer` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **SAME** | Identity copula | `gorol` | [Predication](/predication#identity) |
-| **SCOPE** | Scope island `{ … }` | `{ hegugom zudozol gerulel }` | [Mention and scope islands](/span-mention#scope-islands) |
+| **SCOPE** | Scope island `{ … }` | `{ hegugom zudozol gerulel }` | [Mention and islands](/span-mention#scope-islands) |
 | **SEEKING** | Emotion locus: turning to someone for comfort | `wawothumoem` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **STILL** | Emotion motion: not moving (held, frozen, numb) | `wawothumol` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **SURGING** | Emotion motion: in waves or spikes | `wuwathuraor` | [Feelings and permission](/feelings-permission#emotion-compose) |
@@ -78,7 +78,7 @@ English names for set / rank join vowels ([joins](/joins)):
 
 ### Number marker identities
 
-From [Word shape, markers, and endings](/number-markers#marker-vowel-referential-identity): **scalar** (`+` / `-`), **ordinal** / rank from the start (`#`), **end-relative ordinal** (`#-`), **digit-string** / label (`_`).
+From [Number shape](/number-markers#marker-vowel-referential-identity): **scalar** (`+` / `-`), **ordinal** / rank from the start (`#`), **end-relative ordinal** (`#-`), **digit-string** / label (`_`).
 
 ## A–Z
 
@@ -92,7 +92,7 @@ Hosted *can* / *can’t* (`xa` / `xe` / `xo` / `xu`) and hostless **ABIL**.
 
 The written `/y/` word: **`yal` / `yol` / `yel` / `yul`** and soft **-m**.
 
-[Speech act: firm and soft](/firm-soft#speech-act)
+[Firm and soft](/firm-soft#speech-act)
 
 **Compare with:** [speech act](#speech-act) is the setting (statement / question / command / prohibition). Polar [stance](#polar-stance) particles are not act words.
 
@@ -122,7 +122,7 @@ Ordinary manner `/h/`.
 
 Casual claim that an omitted exponent inherits a discourse order of magnitude; **`Ne0`** asserts OoM 0.
 
-[End-relative and stacked markers](/stacked-markers#ambient-magnitude)
+[Stacked markers](/stacked-markers#ambient-magnitude)
 
 ### Antecedent
 
@@ -140,7 +140,7 @@ How many items sit before a join: **list** (2+), **single-item** (1), **standalo
 
 Complex `/h/` + `/b/` (**`hahugem`**) *as for X*: a frame for one sentence.
 
-[People, things and places](say-people-places.md#as-for)
+[People and places](say-people-places.md#as-for)
 
 **Compare with:** sake [met](#met-unmet-motive-prescription-sakes) / unmet on `/ɡ/` is how a sake stands toward a noun, not *as for*. *Now, about X* sets the [topic](#topic).
 
@@ -166,13 +166,13 @@ Digitless exponent naming a magnitude band (`g+e0`, `grawagel`).
 
 A `/th/` stance word in the comparee slot of a rank join: the value you rank against (*than planned*, *enough*, *than usual*).
 
-[Comparative arity and scales](/comparative-arity#bars)
+[Comparative scales](/comparative-arity#bars)
 
 ### Binder
 
 Inside a scope island: scope-taking `/h/` or `/th/` and/or a join.
 
-[Mention and scope islands](/span-mention#scope-islands)
+[Mention and islands](/span-mention#scope-islands)
 
 ### Body (utterance)
 
@@ -184,7 +184,7 @@ Clause content after the left-edge `/y/` cluster.
 
 Silence counted in beats at a sentence edge with no word: a **break** puts the next beat half a beat late (around a scope island), a **rest** is one silent beat (a period).
 
-[Singability and speech edges](/singability#speech-edges)
+[Singability](/singability#speech-edges)
 
 ### Capacity
 
@@ -245,7 +245,7 @@ Who counts as *we* / *you* when names are unavailable.
 
 Speech act **`yel` / `yem` / `yul` / `yum`**.
 
-[Speech act: firm and soft](/firm-soft#speech-act)
+[Firm and soft](/firm-soft#speech-act)
 
 ### Comparative / superlative / equative
 
@@ -263,7 +263,7 @@ Rank join + SHARED **scale** (`/ɡ/` quality or `/h/` manner); single-item = sup
 
 Polar patterns that confirm a denied body.
 
-[Polar inventory and rhetorical](/polar-inventory#confirming-a-negative)
+[Polar inventory](/polar-inventory#confirming-a-negative)
 
 ### Content of the event
 
@@ -283,7 +283,7 @@ Same-speech-act forward motion.
 
 Number ending **-n**.
 
-[Word shape, markers, and endings](/number-markers#number-endings)
+[Number shape](/number-markers#number-endings)
 
 **Compare with:** content **-n** is [named](#concrete-abstract-named-resume). Phrase join **-n** is a [named list](#named-list). Clause join **-n** is a [sequence](#sequence).
 
@@ -311,7 +311,7 @@ Number word with marker and ending but no digit groups.
 
 Advanced free-number specials (`+e`, `-e-`, `+0e`, …). **Just short** is free `-e-`.
 
-[Special values, hyperbole, number as stance](/special-values#special-values), [just short](/special-values#just-short)
+[Number stance](/special-values#special-values), [just short](/special-values#just-short)
 
 **Compare with:** [quasi](#quasi) is the numeric prefix `-e-xROOT`. **NOTIONAL** is the as-if [mood](#mood-tags), not a number.
 
@@ -325,13 +325,13 @@ Set **`a`** + singular SHARED = *both/each are ADJ*.
 
 `zuan` plus a SHARED kind: the kind itself as one individual, not its members (*the dodo is extinct*).
 
-[Universals, domains, and generics](/universals-domains#kind-reference)
+[Universals and domains](/universals-domains#kind-reference)
 
 ### Domain / generic / *every K*
 
 SHARED kind plus invert / standalone joins; a SHARED word after the join can bound the set (`zual gwodanam blayan` *everyone we know*).
 
-[Universals, domains, and generics](/universals-domains#universals-domains-generics)
+[Universals and domains](/universals-domains#universals-domains-generics)
 
 Closed **-l** allows no exceptions; open **-m** leaves the exceptions open (*as far as I know*, *as a rule*). A channel on the clause says how you know the general claim.
 
@@ -351,7 +351,7 @@ Final **-l / -m / -n / -r** (plus optional **-x**). **Word endings** names the c
 
 Reason for the *could be* (**MAY**), not a *because* about the world (`thahum`).
 
-[Reasons, knowledge and plans](say-reasons.md#epistemic-because)
+[Reasons and plans](say-reasons.md#epistemic-because)
 
 ### Equative
 
@@ -381,7 +381,7 @@ A channel, NOTIONAL, or holder that keeps covering your later claims with no cha
 
 Four `/h/` words for how a change stands now, not when it happened.
 
-[Already, still, not yet, no longer](/already-still-yet#phasal)
+[Already and still](/already-still-yet#phasal)
 
 ### Residue / former climate
 
@@ -405,7 +405,7 @@ Hosted: noun bolted onto a complex `/ɡ/`, `/h/`, or `/th/`. Unhosted: recipient
 
 Mid-word **`th`** plus a vowel on a content root, or the vowel right after **`w`** on a role word: this episode (**`tha`**), practiced role (**`the`**), this pair (**`tho`**), type across scenes (**`thu`**), or a stacked vowel.
 
-[How far a label reaches](/label-seams#label-scope)
+[Label seams](/label-seams#label-scope)
 
 **Compare with:** [restrictor](#restrictor) names the occasions, not the kind of claim. [Usual role](#usual-role) is practiced-role **`e`** on a role compound.
 
@@ -413,7 +413,7 @@ Mid-word **`th`** plus a vowel on a content root, or the vowel right after **`w`
 
 Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; frame **-m** *amid* / *near* / *over* / *away from* / *in the direction of* / *out from among* / *by way of*) as extra-noun [hooks](/hooks#extra-noun) plus landmark `/b/`. *Between* is hosted `/h/` or `/ɡ/` plus a `/b/` join. A *from A to B* path is two hook extras (source, then goal).
 
-[Of-relations and social ties](/of-relations#locative-relations)
+[Of-relations](/of-relations#locative-relations)
 
 ### Means
 
@@ -425,7 +425,7 @@ Extra-noun [hook](/hooks#extra-noun) **`ael`** plus implement `/b/` (*using / wi
 
 Hosted **`hewom`** / **`gewom`** plus model `/b/` (*like* a duck / *like* Uzozen’s); with **-l**, **`hewol`** / **`gewol`** is *exactly like*. Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
 
-[Relations](/relations#similative), [Of-relations and social ties](/of-relations#exactly-like)
+[Relations](/relations#similative), [Of-relations](/of-relations#exactly-like)
 
 ### Exchange (*for*)
 
@@ -443,13 +443,13 @@ Hosted **`hanom`** / **`ganom`** plus principal `/b/` (*on behalf of* Olazun). N
 
 Hosted `/h/` or `/ɡ/` plus `/b/` for English *of* that is not ownership or a place: *part of*, *contents of*, *made of*, origin *from*.
 
-[Of-relations and social ties](/of-relations#of-relations)
+[Of-relations](/of-relations#of-relations)
 
 ### Factivity
 
 Whether *if* vs *because* treats the dependent as asserted.
 
-[Reasons, knowledge and plans](say-reasons.md#factivity)
+[Reasons and plans](say-reasons.md#factivity)
 
 ### Fill-ask / fill-all
 
@@ -461,7 +461,7 @@ Under question, join **-r** is a blank; several **-r** = fill all.
 
 Speech-act ending **-l** vs **-m**.
 
-[Speech act: firm and soft](/firm-soft#speech-act)
+[Firm and soft](/firm-soft#speech-act)
 
 ### Forecast
 <a id="forecast-source"></a>
@@ -534,7 +534,7 @@ Content `/v/` or `/ɡ/` `/h/` + join vowel + **-n**.
 
 `/ɡ/` with second letter **l**: adjective before the next noun.
 
-[Adjectives before the noun](/left-bound-adjectives#left-bound-adjectives)
+[Adjectives first](/left-bound-adjectives#left-bound-adjectives)
 
 ### Left edge
 
@@ -584,13 +584,13 @@ A lone `/th/` met word is thanks (*my sake is met*). *Sorry* is unmet plus a `bl
 
 Short **-n** label for a long title.
 
-[People, things and places](say-people-places.md#named-handles)
+[People and places](say-people-places.md#named-handles)
 
 ### Named list
 
 Phrase join **-n**.
 
-[Join islands and role grid](/join-islands#named-list)
+[Join islands](/join-islands#named-list)
 
 **Compare with:** a [titled phrase](#titled-phrase) can use that join **-n** while members keep ordinary endings.
 
@@ -604,7 +604,7 @@ Six closed psychological sakes under `/ɡ/` `/th/` `/w/`.
 
 Number word under `/v/` `/h/` `/th/` `/y/` `/x/`.
 
-[Word shape, markers, and endings](/number-markers#number-as-roles)
+[Number shape](/number-markers#number-as-roles)
 
 ### Numbered alternatives
 
@@ -630,7 +630,7 @@ Listed pieces before a restrictor (when the host applies).
 
 Single-item **-m** under question (*How about X?*).
 
-[Polar inventory and rhetorical](/polar-inventory#yes-no-single-item-standalone)
+[Polar inventory](/polar-inventory#yes-no-single-item-standalone)
 
 ### Generic pronoun
 
@@ -644,7 +644,7 @@ Single-item **-m** under question (*How about X?*).
 
 Ending **-ln** (span mark **`^@`**): one thing a name applies to, such as one unit of a brand or one copy of a work (`duzozeln` *an Uzozen*).
 
-[Proper names and titled phrases](/proper-names#name-instance--ln)
+[Names and titles](/proper-names#name-instance--ln)
 
 ### Ordinary compound / lexical compound
 
@@ -660,7 +660,7 @@ Special reading of a published root under a PoS.
 
 [Lexicon](lexicon.md)
 
-**Compare with:** a number under `/v/` `/h/` `/th/` `/y/` `/x/` is [Word shape, markers, and endings](/number-markers#number-as-roles), not an overlay. Lexicon abstract **-m** stays abstract.
+**Compare with:** a number under `/v/` `/h/` `/th/` `/y/` `/x/` is [Number shape](/number-markers#number-as-roles), not an overlay. Lexicon abstract **-m** stays abstract.
 
 ### Polar stance
 
@@ -678,7 +678,7 @@ Motive **`tho`** endings.
 
 Singling out one word against others: the contrast mark `&`. Word order adds no prominence.
 
-[Emphasis and audible start](/emphasis#english-emphasis), [Tone marks](/tone-marks#tone-marks)
+[Emphasis](/emphasis#english-emphasis), [Tone marks](/tone-marks#tone-marks)
 
 ### Quasi
 
@@ -690,7 +690,7 @@ Numeric prefix `-e-xROOT` (and quasi-N): the shape of a kind, not the real thing
 
 Numeric from–to with a hook between the ends (`al` / `ul`); a ray has ±∞ as one end. The same idea on any ordered line is the [range hook](#range-hook).
 
-[Numbers in use](/numbers-applied#ranges), [Initials, rays, named ranges](/initials#rays)
+[Numbers in use](/numbers-applied#ranges), [Initials and rays](/initials#rays)
 
 ### Range hook
 
@@ -722,7 +722,7 @@ Join-shaped `/h/` `/w/` *when the host applies*.
 
 Content / number **-r** pointing back. A content resume spells the earlier word’s whole stem.
 
-[Pronouns](/pronouns), [Word shape, markers, and endings](/number-markers#number-endings)
+[Pronouns](/pronouns), [Number shape](/number-markers#number-endings)
 
 **Compare with:** join / restrictor **-r** is an [unspecified member](#unspecified-member). English *the dog that…* is two sentences, then this resume ([which person or thing](/dependents#which-noun)).
 
@@ -777,13 +777,13 @@ The last two letters of a root: a consonant for the kind of thing and a vowel fo
 
 `{ … }` with binder inside.
 
-[Mention and scope islands](/span-mention#scope-islands), [Join islands and role grid](/join-islands#scope-islands-join)
+[Mention and islands](/span-mention#scope-islands), [Join islands](/join-islands#scope-islands-join)
 
 ### Sentence linker
 
 `/x/` *therefore / however / meanwhile*.
 
-[Sentence linkers and stand-ins](/sentence-linkers#sentence-linkers)
+[Sentence linkers](/sentence-linkers#sentence-linkers)
 
 ### So that / event purpose
 
@@ -829,7 +829,7 @@ Written cite `[…]`, aside `(…)` and opaque `<…>` fences, with a role lette
 
 Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-rm`**) that stands for the **following sentence**. Same vowel series as joins; not a join (joins close a list already said).
 
-[Sentence linkers and stand-ins](/sentence-linkers#stand-in)
+[Sentence linkers](/sentence-linkers#stand-in)
 
 **Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole-np-pole) (`thahum`, `thohom`) name the relation; the stand-in fills `/b/`.
 
@@ -845,7 +845,7 @@ Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-
 
 Utterance setting: statement / question / command / prohibition.
 
-[Speech act: firm and soft](/firm-soft#speech-act)
+[Firm and soft](/firm-soft#speech-act)
 
 **Compare with:** sake **prescription warrant** is [invited / offered / trial](#asked-typical-history), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
 
@@ -865,13 +865,13 @@ A dictionary word whose head is a bare root tail instead of a second root (`zahu
 
 **`yol`** plus a [polar stance](#polar-stance) word as its own turn after a sentence: asks the listener for that answer (`yol yael.` *…, right?*, `yol yaol.` *…, okay?*, `yol yuel.` *…, or am I wrong?*).
 
-[Polar inventory and rhetorical](/polar-inventory#tags)
+[Polar inventory](/polar-inventory#tags)
 
 ### Tag pronoun
 
 Role letter + **`w`** + a tag vowel (A, E, O, U) + ending: a label the speaker assigns to a phrase (`zudozol zwal` *a dog, call it A*) and recalls in any role (`zwar`), or shares with **-m** (`zwam` *what A did*).
 
-[Tag pronouns and resume sense](/tag-pronouns#tag-pronouns)
+[Tag pronouns](/tag-pronouns#tag-pronouns)
 
 ### Time horizon
 <a id="contact--contact-channel"></a>
@@ -884,7 +884,7 @@ Met-sake **`tha`** endings: **-l** lasting, **-m** unstated (default), **-r** im
 
 A proper-name phrase whose **-n** sits on the hook, join, or span; inner words keep their own endings.
 
-[Proper names and titled phrases](/proper-names#titled-phrases)
+[Names and titles](/proper-names#titled-phrases)
 
 ### Threshold
 
@@ -922,7 +922,7 @@ New speech move.
 
 Join readings when the speech act is question.
 
-[Polar inventory and rhetorical](/polar-inventory#under-question)
+[Polar inventory](/polar-inventory#under-question)
 
 ### Unspecified member
 
@@ -946,7 +946,7 @@ A role compound with practiced-role scope **`e`** after its **`w`** (`zwezuduyel
 
 A channel on a clause with a universal fence or restrictor: how you know the general claim.
 
-[Universality and dated channel](/universality#universality)
+[Universality](/universality#universality)
 
 ### Sakes
 
@@ -970,7 +970,7 @@ Left-edge `/y/` addressing.
 
 The fixed, optional pitch of each vowel: `u` high, `e` mid-high, `o` mid-low, `a` low. It backs up the vowel's sound and adds no meaning.
 
-[Phonology](/phonology#vowel-pitch), [Singability and speech edges](/singability#vowel-pitch-values)
+[Phonology](/phonology#vowel-pitch), [Singability](/singability#vowel-pitch-values)
 
 ### Vowel series
 
@@ -982,7 +982,7 @@ The fixed, optional pitch of each vowel: `u` high, `e` mid-high, `o` mid-low, `a
 
 Prefer an audible left `/y/` rather than implied **`yal`**.
 
-[Emphasis and audible start](/emphasis#audible-start)
+[Emphasis](/emphasis#audible-start)
 
 ### Yes/no
 

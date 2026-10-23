@@ -2,7 +2,7 @@
 band: beginner
 ---
 
-# Already, still, not yet, no longer {#already-still-not-yet-no-longer}
+# Already and still {#already-still-not-yet-no-longer}
 
 ### Already, still, not yet, no longer {#phasal}
 

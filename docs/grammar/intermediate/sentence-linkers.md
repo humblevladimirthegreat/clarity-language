@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Sentence linkers and stand-ins {#sentence-linkers-and-stand-ins}
+# Sentence linkers {#sentence-linkers-and-stand-ins}
 
 ::: tip Reminder:
 Intermediate sections assume you have read the beginner sections of every page.

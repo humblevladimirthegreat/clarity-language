@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Universals, domains, and generics {#universals-domains-and-generics}
+# Universals and domains {#universals-domains-and-generics}
 
 ::: tip Reminder:
 Intermediate sections assume you have read the beginner sections of every page.

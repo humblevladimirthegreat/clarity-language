@@ -56,7 +56,7 @@ describe('lessonPages', () => {
   it('uses job titles for later sittings', () => {
     const titles = lessonPages().map((item) => item.title)
     assert.ok(titles.includes('Rank joins'))
-    assert.ok(titles.includes('Proper names and titled phrases'))
+    assert.ok(titles.includes('Names and titles'))
     assert.equal(titles.filter((title) => title === 'Review').length, 3)
   })
 })

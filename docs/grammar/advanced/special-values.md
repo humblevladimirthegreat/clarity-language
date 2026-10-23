@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# Special values, hyperbole, number as stance {#special-values-hyperbole-number-as-stance}
+# Number stance {#special-values-hyperbole-number-as-stance}
 
 To say *infinitely many*, *last place*, *a gazillion*, or *absolutely zero*, write the exponent mark **`wa`** or **`wu`** with **no** exponent digits. What the word means depends on what comes before the empty exponent: nothing, nonzero mantissa digits, or the mantissa **`0`** (table). A word has only one such group, and that group takes no percent closer.
 

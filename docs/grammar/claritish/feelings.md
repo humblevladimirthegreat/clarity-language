@@ -6,9 +6,9 @@ One English emotion word (*anxious*, *resentful*, *proud*) hides three things: w
 
 ## The forms {#forms}
 
-Start from a thanks or sorry word from Thanks and sorry that say why: `th` + sake + `tha` (met) or `thu` (unmet) + its ending. Keep that whole word, then add a **locus** and a **motion ending**. Put it after the English clause the feeling is about, like any other drop-in. On its own, with no clause, it says how you feel right now.
+Start from a thanks or sorry word from Thanks and sorry: `th` + sake + `tha` (met) or `thu` (unmet) + its ending. Keep that whole word, then add a **locus** and a **motion ending**. Put it after the English clause the feeling is about, like any other drop-in. On its own, with no clause, it says how you feel right now.
 
-The word now has two **-l / -m / -r** slots: the ending from Thanks and sorry that say why stays in the middle, and the motion ending goes last.
+The word now has two **-l / -m / -r** slots: the ending from Thanks and sorry stays in the middle, and the motion ending goes last.
 
 | `thuwa` | `thu` | `r` | `ao` | `r` |
 |---------|-------|-----|------|-----|

@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Left-bound adjectives and chaining {#left-bound-adjectives-and-chaining}
+# Left-bound chaining {#left-bound-adjectives-and-chaining}
 
 ::: tip Reminder:
 Intermediate sections assume you have read the beginner sections of every page.

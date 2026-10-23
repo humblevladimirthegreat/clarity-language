@@ -2,7 +2,7 @@
 band: beginner
 ---
 
-# Dependents and continue
+# Dependents
 
 How a **next sentence** fills a slot in the sentence before it, how English *who / that / which* is two sentences, and how to keep the same speech move going.
 

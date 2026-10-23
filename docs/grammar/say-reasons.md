@@ -1,4 +1,4 @@
-# Reasons, knowledge and plans
+# Reasons and plans
 
 Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* doing, *as of that date*, and when or why a feeling happens. Every form here is taught on a grammar page; each recipe links what it needs.
 
@@ -613,7 +613,7 @@ English *deserve* says something is owed without saying why. Name the ground. It
 
 ### Clear, honest, false, general, proud {#trait-words}
 
-**Needs:** [Negation](/joins#negation-u) · [Universals, domains and generics](/universals-domains#universals-domains-generics) · [Fault](/fault#fault) · [Emotion compose](/feelings-permission#emotion-compose) · [Number as stance](/special-values#special-number-as-stance)
+**Needs:** [Negation](/joins#negation-u) · [Universals and domains](/universals-domains#universals-domains-generics) · [Fault](/fault#fault) · [Emotion compose](/feelings-permission#emotion-compose) · [Number as stance](/special-values#special-number-as-stance)
 
 Many English adjectives are the plain opposite of something that has a root (*unclear*, *honest*, *false*). Agebon says the positive root and closes it with **`gul`** (*not*). Others claim how far something holds (*general*, *universal*, *absolute*). That is the universal fence: closed for no exceptions, open for *as a rule*. A few are a feeling (*proud*), which is an emotion compose, so the sake and the stimulus are named.
 

@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Of-relations and social ties {#of-relations-and-social-ties}
+# Of-relations {#of-relations-and-social-ties}
 
 ### Exactly like (`hewol` / `gewol`) {#exactly-like}
 

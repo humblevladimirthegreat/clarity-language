@@ -1,4 +1,4 @@
-# Allowed, required, agreed {#allowed-required-agreed}
+# Allowed and required {#allowed-required-agreed}
 
 ## The gap {#gap}
 

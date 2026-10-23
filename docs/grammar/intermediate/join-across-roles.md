@@ -4,7 +4,7 @@ band: intermediate
 
 # Join across roles {#join-across-roles}
 
-[Verb-phrase and clause forms](/vp-clause-forms) already used the join vowels under `/v/` and `/x/`. This sitting covers stance words under `/th/` (*not because of the rain*), and join words with ending **-n** that become verbs, adjectives, or adverbs naming a list move (*includes*, *without*). Phrase fences and their set, rank, arity, and scope patterns are in [joins](/joins).
+[VP and clause forms](/vp-clause-forms) already used the join vowels under `/v/` and `/x/`. This sitting covers stance words under `/th/` (*not because of the rain*), and join words with ending **-n** that become verbs, adjectives, or adverbs naming a list move (*includes*, *without*). Phrase fences and their set, rank, arity, and scope patterns are in [joins](/joins).
 
 ### Stance joins {#stance-joins}
 

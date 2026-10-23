@@ -2,8 +2,7 @@
 band: beginner
 ---
 
-# Hooks (*including* / *in* / *instead* / *for*)
-<a id="hooks"></a>
+# Hooks {#hooks}
 
 
 English uses small words such as *including*, *instead*, *in*, and *for* to attach one piece to another. Agebon does this with **hooks**: short words with **no role letter** (no `z` / `v` / `g` / …), just a vowel (or two vowels) plus an ending. A hook attaches the piece on its right to something already in play: a phrase in the same role, the sentence before, or the clause itself as an extra noun.

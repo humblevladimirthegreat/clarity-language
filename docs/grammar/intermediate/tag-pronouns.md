@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Tag pronouns and resume sense {#tag-pronouns-and-resume-sense}
+# Tag pronouns {#tag-pronouns-and-resume-sense}
 
 ### How English approximates **-r**
 

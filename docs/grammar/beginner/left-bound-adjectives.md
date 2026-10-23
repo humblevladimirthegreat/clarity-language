@@ -2,7 +2,7 @@
 band: beginner
 ---
 
-# Adjectives before the noun {#adjectives-before-the-noun}
+# Adjectives first {#adjectives-before-the-noun}
 
 ### Adjectives before the noun (`gl-`) {#left-bound-adjectives}
 

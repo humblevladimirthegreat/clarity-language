@@ -117,7 +117,7 @@ Agebon has no set phrase for [thanks](/thanks-and-sorry#thanks-sorry). Instead, 
 
 Naming the need that was met makes thanks specific, which helps both of you notice what actually helped.
 
-In English: [Claritish: Thanks and sorry that say why](/thanks-and-sorry).
+In English: [Claritish: Thanks and sorry](/thanks-and-sorry).
 
 #### Treating a cause as a fault {#trap-fault}
 
@@ -215,7 +215,7 @@ A [say word](/feelings-permission#say-words) says where a *must* comes from: a r
 
 Naming the source helps you notice when a *have to* is only an expectation, so you can decide whether to meet it.
 
-In English: [Claritish: Allowed, required, agreed](claritish/allowed-required-agreed.md).
+In English: [Claritish: Allowed and required](claritish/allowed-required-agreed.md).
 
 ##### Wanting, planning, and deciding {#wanting-planning-and-deciding}
 
