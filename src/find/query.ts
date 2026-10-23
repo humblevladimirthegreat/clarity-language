@@ -140,7 +140,7 @@ export function flattenWords(result: unknown, chunks: string[]): FoundWord[] {
   return found.sort((a, b) => a.position - b.position);
 }
 
-function numberStem(word: LexWord): NumberStem | undefined {
+export function numberStem(word: LexWord): NumberStem | undefined {
   const { family } = word;
   if (family.kind === "number") return family.stem;
   if (family.kind === "x") return family.numberStem;
@@ -156,7 +156,7 @@ function markerValues(stem: NumberStem | undefined): string[] {
   return twin && twin !== stored ? [stored, twin] : [stored];
 }
 
-function formValues(word: LexWord): string[] {
+export function formValues(word: LexWord): string[] {
   const { family } = word;
   const forms: string[] = [];
   if (family.kind === "hook") forms.push(family.form);
@@ -166,7 +166,7 @@ function formValues(word: LexWord): string[] {
   return forms;
 }
 
-function scopeValue(word: LexWord): string | undefined {
+export function scopeValue(word: LexWord): string | undefined {
   const { family } = word;
   if (family.kind === "say") return family.scope;
   if (family.kind !== "x") return undefined;
@@ -174,17 +174,17 @@ function scopeValue(word: LexWord): string | undefined {
   return family.scopeVowel;
 }
 
-function stanceValue(word: LexWord): string | undefined {
+export function stanceValue(word: LexWord): string | undefined {
   const { family } = word;
   if (family.kind !== "x" || family.xFamily === "scope") return undefined;
   return family.stanceVowel;
 }
 
-function seriesValue(word: LexWord): string | undefined {
+export function seriesValue(word: LexWord): string | undefined {
   return word.family.kind === "joinMarker" ? word.family.series : undefined;
 }
 
-function pointerValue(word: LexWord): string | undefined {
+export function pointerValue(word: LexWord): string | undefined {
   return word.family.kind === "x" ? word.family.pointerVowel : undefined;
 }
 

@@ -1,6 +1,6 @@
 # Proposal: parse-aware find and replace
 
-**Status:** Phase 1 absorbed; Phases 2–3 not started.  
+**Status:** Phases 1–2 absorbed; Phase 3 not started.  
 **Related:** [`scripts/find.mjs`](../../scripts/find.mjs), [`src/find/`](../../src/find/), [`src/retie/`](../../src/retie/) (span walk and gloss follow, root maps only), [retie limits](../meta/retie.md), `vowel-series-realignment.md` (the first absorb that needs this; do not start that absorb before Phase 2).  
 **Design authority:** none. This is a process for the tool. It does not add grammar.
 
