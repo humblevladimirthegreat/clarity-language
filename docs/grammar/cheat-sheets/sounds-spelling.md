@@ -7,7 +7,7 @@ outline: false
 
 # Sounds and spelling cheat sheet {#sounds-spelling-cheat-sheet}
 
-A quick look at [phonology](/phonology) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [phonology](/phonology). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## Letters {#letters}
 
@@ -47,6 +47,8 @@ The name is what you say when you [spell a word aloud](/phonotactics#letter-name
 
 Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), then the other consonants. The vowels come last and name themselves (`u`, `a`, `o`, `e`). Pause between names: `ogoze` is `a` `go` `o` `zu` `o`. A letter you talk about in a clause is a [mention](/span-mention#mention), read by its name.
 
+<PageBreak />
+
 ## Word shape {#word-shape}
 
 ### Edges and syllables {#edges}
@@ -83,6 +85,8 @@ Word-initial `x` is the [continue](/dependents#continue-x) prefix, not a compoun
 |------|---------|---------|-------|
 | [A role letter followed by `r` starts a number word](/phonotactics#number-word-exception) | `gragel` | *three* (`g` + `ra` + `ge` + **-l**) | I |
 | [Counting from the end](/phonotactics#number-word-exception) is spoken **rue** before the digits | | | I |
+
+<PageBreak />
 
 ### Digit syllables and letter names {#digit-names}
 

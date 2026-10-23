@@ -176,24 +176,9 @@
   border-color: var(--vp-c-brand-1);
 }
 
-/* Screen: a dashed rule so the intended sheet start is visible. Print: a real page. */
+/* Screen: invisible. Print: a new sheet. The markdown `<PageBreak />` is the inventory. */
 .cheat-sheet-page-break {
-  position: relative;
-  height: 0;
-  margin: 1.4em 0;
-  border: 0;
-  border-top: 1px dashed var(--vp-c-divider);
-}
-
-.cheat-sheet-page-break-label {
-  position: absolute;
-  top: -0.7em;
-  left: 0;
-  padding-right: 8px;
-  background: var(--vp-c-bg);
-  color: var(--vp-c-text-2);
-  font-size: 11px;
-  line-height: 1;
+  display: none;
 }
 
 @page {
@@ -258,13 +243,11 @@
   }
 
   .cheat-sheet-page-break {
+    display: block;
+    height: 0;
     break-before: page;
     margin: 0;
     border: 0;
-  }
-
-  .cheat-sheet-page-break-label {
-    display: none;
   }
 
   :is(.claritish-cheat-sheet, .cheat-sheet) .VPNav,

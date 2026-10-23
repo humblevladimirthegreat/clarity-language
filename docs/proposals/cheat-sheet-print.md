@@ -29,7 +29,7 @@ grammar-docs still says **one printable page per subsystem**. Several sheets alr
 
 - A page-count cap (four or otherwise). Do not fail a sheet for being long. Extra blank space at the bottom of a short sheet is expected.
 - Matching every print-dialog override (headers and footers, “fit to printable area”). `@page` is the contract the lint uses.
-- Paged.js, on-screen letter-sized cards, or a visual print-preview route as the source of truth. A dashed rule on the marker is enough for a screen screenshot of the intended start.
+- Paged.js, on-screen letter-sized cards, or a visual print-preview route as the source of truth. The marker does not paint on screen.
 - Changing what a sheet teaches, or splitting a sheet into several sidebar entries, unless rearrangement cannot save a table.
 - Adding Playwright, Chromium, or this check to `npm run build` or Amplify. Publish stays free of a browser download.
 
@@ -78,7 +78,7 @@ A Vue component `<PageBreak />`, registered next to `PrintButton`. Authors put i
 | Context | Behavior |
 |---------|----------|
 | Print | `break-before: page`; the marker itself does not paint |
-| Screen | A short dashed rule (and a “print page” label) so a screenshot shows the intended start |
+| Screen | Hidden; learners see one continuous column |
 | Markdown | Grep-able; same pattern as `<PrintButton />` |
 
 Do not hang pagination on heading classes. A break often belongs *before a table* under the same `##`.
@@ -142,7 +142,7 @@ After this ships, “where does the next sheet start?” has two answers that th
 
 | Sheet | Status | Chromium pages | What's left |
 |-------|--------|----------------|-------------|
-| [Sounds and spelling](../grammar/cheat-sheets/sounds-spelling.md) | Open | 3 | Markers; pack leftover |
+| [Sounds and spelling](../grammar/cheat-sheets/sounds-spelling.md) | Packed | 3 | Leftover 43 / 219 / 353 px |
 | [Vowels](../grammar/cheat-sheets/vowels.md) | Open | 5 | Markers; tables `acts` and `order` taller than a page |
 | [Consonants](../grammar/cheat-sheets/consonants.md) | Packed | 4 | Lint default. Leftover 196 / 81 / 330 / 288 px |
 | [Word shape and clause](../grammar/cheat-sheets/word-shape-clause.md) | Open | 5 | Markers; split `packaging` |
