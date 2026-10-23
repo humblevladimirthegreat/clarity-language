@@ -7,7 +7,7 @@ outline: false
 
 # Roles and comparing cheat sheet {#roles-comparing-cheat-sheet}
 
-A quick look at [role compounds](/roles), [mid-word `x`](/compounds), and [comparatives](/comparatives) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [role compounds](/roles), [mid-word `x`](/compounds), and [comparatives](/comparatives). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## Naming a part of an event {#roles}
 
@@ -68,8 +68,6 @@ A role pointer drops the stem. The pointer vowel picks the event by position: **
 
 ## Left, right, up, down {#directions}
 
-Bare arrow words are compass headings. With mid-word **`th`** and a facing person they become that direction from the person's body. Gravity words need no facing person.
-
 <!-- cheat-sheet: roles-comparing -->
 | Ageben | Compass | On a face | Stage |
 |--------|---------|-----------|-------|
@@ -90,6 +88,8 @@ Bare arrow words are compass headings. With mid-word **`th`** and a facing perso
 | [**`evuhol`**](/viewpoint#gravity) | the vertical axis | *up–down axis* | I |
 
 <PageBreak />
+
+Bare arrow words are compass headings. With mid-word **`th`** and a facing person they become that direction from the person's body. Gravity words need no facing person.
 
 <!-- cheat-sheet: roles-comparing -->
 | Ageben | Use | English | Stage |

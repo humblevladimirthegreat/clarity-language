@@ -100,8 +100,6 @@ A say word is scope then act (`hwuvom`: this-act **u**, require **o**). A role p
 | `e` | no bigger than your hand | A |
 | `u` | nothing you could measure | A |
 
-<PageBreak />
-
 | Job | **a** | **o** | **e** | **u** | Stage |
 |-----|-------|-------|-------|-------|-------|
 | [Ability](/can-and-cant#ability) | `xa` can | `xo` can't right now | `xe` can't yet | `xu` never | B |
@@ -110,6 +108,8 @@ A say word is scope then act (`hwuvom`: this-act **u**, require **o**). A role p
 | [Sake stance](/prescription) | `tha` met / serves | `tho` motive | `the` prescription | `thu` unmet / detracts | B |
 | [Label scope](/label-seams#label-scope) | `tha` a type | `tho` practiced role | `the` this pair | `thu` this episode | I |
 | [Role compound](/roles#one-time-or-a-practice) | | `zwozeduyol` a teacher | | `zwuzeduyol` someone who teaches | B |
+
+<PageBreak />
 
 ## Join {#series}
 

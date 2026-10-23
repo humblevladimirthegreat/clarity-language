@@ -7,7 +7,7 @@ outline: false
 
 # Numbers cheat sheet {#numbers-cheat-sheet}
 
-A quick look at [numbers](/numbers), [digit-strings and time](/digit-strings), [digitless and exponents](/digitless-exponents), and [numbers in use](/numbers-applied) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced. Written shorthand is used from two digits up; zero, one digit, or none stays spelled.
+A quick look at [numbers](/numbers), [digit-strings and time](/digit-strings), [digitless and exponents](/digitless-exponents), and [numbers in use](/numbers-applied). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced. Written shorthand is used from two digits up; zero, one digit, or none stays spelled.
 
 ## Building a number word {#build}
 
