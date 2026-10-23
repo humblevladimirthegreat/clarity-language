@@ -3,7 +3,7 @@
  * Same skip set as retie for `src/retie/` (its fixtures keep their own maps).
  */
 import { existsSync, readdirSync, statSync } from "node:fs";
-import { join, relative, sep } from "node:path";
+import { basename, join, relative, sep } from "node:path";
 
 import { classify, type ClassifyTables } from "../parse/classify.js";
 import { peelWordChunk } from "../parse/peel.js";
@@ -21,6 +21,8 @@ import { matchesTerm, type Term } from "./query.js";
 import { spliceWord, type FieldMaps } from "./rewrite.js";
 
 const SOURCE_FILE = /\.(?:ts|mts|mjs|vue)$/;
+/** `--write` skips these unless `--tests`: assertions next to Agebon literals do not move. */
+const TEST_FILE = /\.(?:test|spec)\.[cm]?[jt]sx?$/;
 const SKIP_DIR_NAMES = new Set(["node_modules", "cache", "dist"]);
 /** Path prefixes under the repo that a directory walk never enters. */
 const SKIP_WALK_PREFIXES = ["src/retie", "src/generated", "src/find/fixtures"];
@@ -37,6 +39,11 @@ function posixRel(file: string): string {
 function skippedWalkPath(file: string): boolean {
   const rel = posixRel(file);
   return SKIP_WALK_PREFIXES.some((prefix) => rel === prefix || rel.startsWith(`${prefix}/`));
+}
+
+/** True for `*.test.ts` / `*.spec.ts` (and the .mts/.mjs/.tsx twins). `--write` skips these unless `--tests`. */
+export function isFindTestFile(file: string): boolean {
+  return TEST_FILE.test(basename(file));
 }
 
 /** Markdown, TypeScript/Vue, and TSV under `path`. A file path is returned as is. */

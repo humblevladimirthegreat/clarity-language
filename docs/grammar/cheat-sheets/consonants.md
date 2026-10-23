@@ -58,36 +58,36 @@ Reference **-l** and **-m** are only on [role pointers](/pronouns#a-new-one) and
 
 ### How the scales hang {#ending-tree}
 
-```
+```text
 l m r n
-├── content (which lexicon reading)
+├── content — which lexicon reading
 │     ├── citation / content word (concrete / abstract / name)
 │     ├── resume-sense -rl / -rm (pin which sense of a stem)
 │     ├── role compound -l / -m / -n (anyone in that part, by sense)
 │     ├── sentence linker default -m (the linker root's abstract)
 │     ├── special pronoun -n · vocative name · greeting / conversation-length bid
 │     └── root-tail kinds (memory: l concrete, m abstract, n name)
-├── exactness (how tightly you mean the stated form)
+├── exactness — how tightly you mean the stated form
 │     ├── number -l / -m (exact / about)
 │     ├── span none / ~ (verbatim / gist)
 │     ├── stand-in -rl / -rm (the whole next sentence / the gist)
 │     ├── SAME (is / basically)
 │     ├── exactly-like vs like
 │     ├── each-other (strictly pairwise / everyday both-ways)
-│     └── extra-noun contact vs frame (in / amid, at / near, for / used by)
-├── completeness (how fully the slot is specified)
+│     └── place hook contact vs frame (in / amid, at / near, for / used by)
+├── completeness — how fully the slot is specified
 │     ├── join closed / open / unnamed / named list
 │     ├── restrictor / more occasions / universals (are join)
 │     ├── stance join (is join, on /th/)
 │     ├── same-role / discourse hook closed / open / titled phrase
 │     ├── ranges (-m soft ends; -n names the range; -r one member)
-│     ├── fill-ask (is join -r under a question)
+│     ├── fill-ask (is join -r in a question)
 │     ├── digitless number -r (grar some number / which number?)
 │     ├── fault (broke a rule / plain cause / one share among others)
 │     ├── say-word (a rule / a person said so / nobody said)
 │     ├── clause-join -n (sequence)
 │     └── join-act / join-relation -n (the list-move as a verb or relation)
-├── reference (which referent relative to what is already in play)
+├── reference — which referent relative to what is already in play
 │     ├── role pointer          -l new one · -m the part · -r the same one
 │     ├── tag                   -l assign / someone A · -m what A did · -r recall · -n recall of a name
 │     └── -r only
@@ -97,7 +97,7 @@ l m r n
 │           ├── number with digits (grager those three)
 │           ├── span =
 │           └── topic return (xuzozer)
-└── settled-to-passing (how lasting the hold is; no -n)
+└── settled-to-passing — how lasting the hold is; no -n
       ├── sake time horizon · unmet changeability · motive (are the scale)
       ├── prescription warrant (invited / offered / worth a try)
       ├── feeling motion (still / flowing / surging)

@@ -13,6 +13,7 @@
  *   node scripts/find.mjs --word marker=re --count
  *   node scripts/find.mjs --word family=joinMarker,series=e|o --map series=e:o,o:e
  *   node scripts/find.mjs --word family=joinMarker,series=e|o --map series=e:o,o:e --write
+ *   node scripts/find.mjs --word xFamily=pointer --map pointer=a:o --write --tests
  *
  * Terms are `key=regex[,key=regex]` with keys role / ending / root / family /
  * overlay / unit / raw / series / form / marker / xFamily / reading / scope /
@@ -23,8 +24,9 @@
  * `--map field=from:to,from:to` rewrites those letters on matched words from the
  * original parse (a swap is one map). Paths default to docs/grammar and docs/examples;
  * pass `src`, `scripts`, or a `.tsv` to walk string literals and TSV cells. `--count`
- * is always matching examples, with or without `--map`. `--write` leaves a span that
- * does not reparse and still writes the rest of the file.
+ * is always matching examples, with or without `--map`. `--write` patches docs, TSV,
+ * and non-test source; `*.test.ts` needs `--tests` (assertions next to a literal stay).
+ * `--write` leaves a span that does not reparse and still writes the rest of the file.
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { relative } from "node:path";
@@ -48,7 +50,7 @@ import {
   rewritePlainSpans,
   type FieldMaps,
 } from "./rewrite.js";
-import { collectFileSpans, listFindFiles, skipWorthListing, type FindQuery } from "./walk.js";
+import { collectFileSpans, isFindTestFile, listFindFiles, skipWorthListing, type FindQuery } from "./walk.js";
 
 type Query = FindQuery;
 
@@ -70,7 +72,7 @@ function constructionTest(pattern: string): (id: string) => boolean {
 
 function usage(message: string, code = 2): never {
   console.error(
-    `${message}\nusage: find.mjs [--word TERM] [--seq TERM TERM…] [--construction ID|prefix*|/regex/] [--map field=from:to[,…]] [--write] [--check-ambiguity] [--json|--count] [paths…]\n  TERM is key=regex[,key!=regex…]; keys: ${TERM_KEYS.join(" ")}; each regex matches the whole value`,
+    `${message}\nusage: find.mjs [--word TERM] [--seq TERM TERM…] [--construction ID|prefix*|/regex/] [--map field=from:to[,…]] [--write] [--tests] [--check-ambiguity] [--json|--count] [paths…]\n  TERM is key=regex[,key!=regex…]; keys: ${TERM_KEYS.join(" ")}; each regex matches the whole value`,
   );
   process.exit(code);
 }
@@ -88,6 +90,7 @@ const paths: string[] = [];
 let output: "text" | "json" | "count" = "text";
 let maps: FieldMaps | undefined;
 let write = false;
+let writeTests = false;
 let checkAmbiguity = false;
 const args = process.argv.slice(2);
 for (let i = 0; i < args.length; i++) {
@@ -111,6 +114,7 @@ for (let i = 0; i < args.length; i++) {
       usage((error as Error).message);
     }
   } else if (arg === "--write") write = true;
+  else if (arg === "--tests") writeTests = true;
   else if (arg === "--check-ambiguity") checkAmbiguity = true;
   else if (arg === "--json") output = "json";
   else if (arg === "--count") output = "count";
@@ -120,6 +124,7 @@ for (let i = 0; i < args.length; i++) {
 }
 if (queries.length === 0) usage("give at least one --word, --seq, or --construction");
 if (write && !maps) usage("--write needs --map");
+if (writeTests && !write) usage("--tests needs --write");
 
 /** Indexes of the words a query highlights, or null when it does not match. */
 export function matchQuery(example: Example, query: Query): number[] | null {
@@ -171,6 +176,8 @@ for (const root of paths.length ? paths : ["docs/grammar", "docs/examples"].filt
       }
     }
     const filePatches: { example: Example; nextSource: string }[] = [];
+    const skipTestWrite = write && !writeTests && isFindTestFile(file);
+    let skippedTestPatch = false;
     for (const example of examples) {
       const matches = queries.map((q) => matchQuery(example, q));
       if (matches.some((m) => m === null)) continue;
@@ -185,6 +192,11 @@ for (const root of paths.length ? paths : ["docs/grammar", "docs/examples"].filt
         words: [...hits].sort((a, b) => a - b).map((i) => hitWord(example.words[i]!)),
       });
       if (!maps) continue;
+      if (skipTestWrite) {
+        const rewritten = rewriteExample(example, [...hits], maps);
+        if (rewritten.nextSource !== example.source) skippedTestPatch = true;
+        continue;
+      }
       const rewritten = rewriteExample(example, [...hits], maps);
       for (const review of rewritten.reviews) {
         reviews.push({ file: rel, line, raw: review.raw, message: review.message });
@@ -195,6 +207,9 @@ for (const root of paths.length ? paths : ["docs/grammar", "docs/examples"].filt
       if (rewritten.nextSource !== example.source) {
         filePatches.push({ example, nextSource: rewritten.nextSource });
       }
+    }
+    if (skippedTestPatch) {
+      skips.push({ file: rel, line: 1, text: "test file; pass --tests" });
     }
     if (write && maps && filePatches.length) {
       const out = file.endsWith(".md")

@@ -4,7 +4,7 @@ Wording policies for editors writing learner-facing Agebon grammar pages under *
 
 ## Punctuation
 
-Em dashes are banned in published and root Markdown (`npm run build` fails on them); use commas, colons, parentheses, or separate sentences. Editor notes under `docs/meta/` and `docs/proposals/` are not checked.
+Em dashes are banned in published and root Markdown (`npm run build` fails on them); use commas, colons, parentheses, or separate sentences. Hang trees may use an em dash in a node label (the hang cue after `├──`), and a table cell that is only an em dash marks an unused slot. Fenced code is not checked. Editor notes under `docs/meta/` and `docs/proposals/` are not checked.
 
 ## Voice and length
 

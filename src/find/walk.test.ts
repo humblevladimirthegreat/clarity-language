@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 import { loadDefaultTables } from "../parse/index.js";
 import { parseTerm } from "./query.js";
 import { parseMap, rewriteExample, rewritePlainSpans } from "./rewrite.js";
-import { collectFileSpans, listFindFiles, skipWorthListing } from "./walk.js";
+import { collectFileSpans, isFindTestFile, listFindFiles, skipWorthListing } from "./walk.js";
 
 const tables = loadDefaultTables();
 const here = dirname(fileURLToPath(import.meta.url));
@@ -24,6 +24,15 @@ describe("listFindFiles", () => {
 
   it("still opens an explicit fixture path", () => {
     assert.deepEqual(listFindFiles(fixtureTs), [fixtureTs]);
+  });
+});
+
+describe("isFindTestFile", () => {
+  it("matches *.test.ts and *.spec.ts, not fixtures or cases.tsv", () => {
+    assert.equal(isFindTestFile("src/parse/word.test.ts"), true);
+    assert.equal(isFindTestFile("src/find/walk.spec.mts"), true);
+    assert.equal(isFindTestFile("src/find/fixtures/map-write.ts"), false);
+    assert.equal(isFindTestFile("src/english-helper/cases.tsv"), false);
   });
 });
 

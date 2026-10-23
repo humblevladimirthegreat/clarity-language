@@ -25,7 +25,9 @@
  *
  * Quinary (all scanned Markdown outside `docs/meta/` and `docs/proposals/`):
  * the em dash (U+2014) is banned in prose; use commas, colons, parentheses,
- * or separate sentences ([doc-style](docs/meta/doc-style.md)). Fenced code is skipped.
+ * or separate sentences ([doc-style](docs/meta/doc-style.md)). Fenced code,
+ * hang-tree lines, and a table cell that is only an em dash (an unused slot)
+ * are skipped.
  *
  * Note: TipTap's default schema also rejects bold+code (`**`foo`**`). Cursor
  * accepts that pattern (other docs render fine), so we do NOT treat bold+code
@@ -349,6 +351,9 @@ function findProposalLinks(file, text) {
   return hits;
 }
 
+/** Box-drawing hang tree: `├──`, `└──`, `│` continuations. */
+const HANG_TREE_LINE_RE = /^[\s│]*[├└│]/;
+
 /** Em dash ban applies to published and root Markdown, not editor notes or proposals. */
 function findEmDashes(file, text) {
   const rel = relative(ROOT, file).split(sep).join("/");
@@ -362,10 +367,21 @@ function findEmDashes(file, text) {
       return;
     }
     if (inFence) return;
-    const col = line.indexOf("\u2014");
-    if (col !== -1) hits.push({ line: i + 1, col: col + 1 });
+    if (HANG_TREE_LINE_RE.test(line)) return;
+    for (let col = 0; (col = line.indexOf("\u2014", col)) !== -1; col += 1) {
+      if (isUnusedTableCellEmDash(line, col)) continue;
+      hits.push({ line: i + 1, col: col + 1 });
+    }
   });
   return hits;
+}
+
+/** A table cell whose whole contents are an em dash marks an unused slot, not prose. */
+function isUnusedTableCellEmDash(line, col) {
+  const left = line.lastIndexOf("|", col);
+  const right = line.indexOf("|", col);
+  if (left === -1 || right === -1) return false;
+  return line.slice(left + 1, right).trim() === "\u2014";
 }
 
 async function main() {

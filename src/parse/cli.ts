@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { readFileSync } from "node:fs";
 
+import { parseCliArgs } from "./cli-args.js";
 import { loadDefaultTables, parse, SentenceParseError } from "./index.js";
 import { unknownWords } from "./lexicon-check.js";
 import { loadPromptContext } from "./llm-examples.js";
@@ -10,6 +11,7 @@ const USAGE = [
   "Usage: node scripts/parse.mjs [--check-ambiguity] [--check-lexicon] [--constructions] '<Agebon text>' ['<Agebon text>' ...]",
   "       node scripts/parse.mjs [--check-ambiguity] [--check-lexicon] [--constructions] - < inputs.txt   (one input per line)",
   "       node scripts/parse.mjs --llm-prompt [--loose] [--examples N] '<Agebon text>' ['<Agebon text>' ...]",
+  "  Several quoted inputs print a JSON array. There is no --json flag.",
   "  --check-lexicon  exit 1 and list words the lexicon does not know (a stem that only parses is not a lexicon word)",
   "  --llm-prompt     print a translation prompt for an LLM with no Agebon context (several inputs make one passage)",
   "  --loose          with --llm-prompt: ask for the sentence only, no note",
@@ -26,25 +28,13 @@ function usage(message: string): never {
   process.exit(1);
 }
 
-const raw = process.argv.slice(2);
-const checkAmbiguity = raw.includes("--check-ambiguity");
-const constructions = raw.includes("--constructions");
-const checkLexicon = raw.includes("--check-lexicon");
-const llmPrompt = raw.includes("--llm-prompt");
-const loose = raw.includes("--loose");
-let examples: number | undefined;
-const args: string[] = [];
-for (let i = 0; i < raw.length; i++) {
-  const arg = raw[i]!;
-  if (arg === "--examples") {
-    examples = Number(raw[++i]);
-    if (!Number.isInteger(examples) || examples < 0) usage("--examples needs a whole number");
-  } else if (!["--check-ambiguity", "--constructions", "--check-lexicon", "--llm-prompt", "--loose"].includes(arg)) {
-    args.push(arg);
-  }
+let parsed: ReturnType<typeof parseCliArgs>;
+try {
+  parsed = parseCliArgs(process.argv.slice(2));
+} catch (error) {
+  usage(error instanceof Error ? error.message : String(error));
 }
-if (llmPrompt && (constructions || checkAmbiguity)) usage("--llm-prompt prints text; it does not combine with --constructions or --check-ambiguity");
-if (!llmPrompt && (loose || examples !== undefined)) usage("--loose and --examples go with --llm-prompt");
+const { checkAmbiguity, constructions, checkLexicon, llmPrompt, loose, examples, args } = parsed;
 
 // Each argument is one input; `-` (or no arguments with piped stdin) reads one input per line.
 const readStdin = args.includes("-") || (args.length === 0 && !process.stdin.isTTY);
