@@ -32,6 +32,8 @@ describe('applyHashRedirect', () => {
     assert.equal(applyHashRedirect('/joins.html', '#clause-joins', map), undefined)
     assert.equal(applyHashRedirect('/joins.html', '', map), undefined)
     assert.equal(applyHashRedirect('/clause.html', '#intermediate', map), undefined)
+    assert.equal(applyHashRedirect('/joins.html', undefined, map), undefined)
+    assert.equal(applyHashRedirect(undefined, '#intermediate', map), undefined)
   })
 })
 

@@ -103,12 +103,12 @@ export function pageToRoutePath(page: string): string {
  * The replacement keeps `?query`; it never keeps the old fragment.
  */
 export function applyHashRedirect(
-  path: string,
-  hash: string,
+  path: string | undefined,
+  hash: string | undefined,
   map: readonly HashRedirect[] = hashRedirects,
 ): { path: string; hash: string } | undefined {
-  const fragment = hash.replace(/^#/, '')
-  if (!fragment) return
+  const fragment = hash?.replace(/^#/, '')
+  if (!fragment || !path) return
   const page = routePathToPage(path)
   const row = map.find((item) => item.page === page && item.hash === fragment)
   if (!row) return
