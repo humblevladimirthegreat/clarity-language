@@ -146,7 +146,7 @@ The stem may be an ordinary compound (`guoxahehaxowurel` *against walking in hou
 
 [Label scope](/label-seams#label-scope) goes after the stem, as on any word, and **-r** resumes the whole word:
 
-> `zolazun guoxavuvuthal.`
+> `zolazun guoxavuvuthul.`
 >
 > z-Olazun | g-against-x-fight-th-episode
 >

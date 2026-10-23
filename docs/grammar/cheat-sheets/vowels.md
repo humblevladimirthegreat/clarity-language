@@ -92,8 +92,8 @@ Full extra-noun grid: [extra nouns](/extra-noun-hooks#extra-noun-intermediate). 
 
 | Job | **a** | **o** | **e** | **u** | Stage |
 |-----|-------|-------|-------|-------|-------|
-| [Label scope](/label-seams#label-scope) | `tha` this episode | `tho` this pair | `the` practiced role | `thu` a type | I |
-| [Role compound](/roles#one-time-or-a-practice) | `zwazuduyel` someone who teaches | | `zwezuduyel` a teacher | | B |
+| [Label scope](/label-seams#label-scope) | `tha` a type | `tho` practiced role | `the` this pair | `thu` this episode | I |
+| [Role compound](/roles#one-time-or-a-practice) | | `zwozuduyel` a teacher | | `zwuzuduyel` someone who teaches | B |
 
 ## Root job and size {#root-vowels}
 

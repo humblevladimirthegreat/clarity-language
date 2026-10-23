@@ -30,7 +30,9 @@ The same letters name a part in an earlier event on [role pointers](/pronouns#ro
 
 ## Endings {#endings}
 
-Shown on one root, `uzoze`. From [word endings](/word-endings#concrete-l) and [resume](/pronouns#resume-r).
+A content word's last letter is **-l**, **-m**, **-n**, or **-r**. Optional [**-x**](/plurality#associative) after that marks associates or a group. The same four letters are reused. Each **scale** below is one four-cell reading of those letters. None hangs on another. A mixed host writes one ending letter and reads it by cell: a [number](/number-markers#number-endings) is exactness on **-l** / **-m**, content on **-n**, reference on **-r**.
+
+Shown on one root, `uzoze`. From [word endings](/word-endings#concrete-l) and [resume](/pronouns#resume-r). Content is **-l** / **-m** / **-n**; **-r** is reference.
 
 | Ending | Means | Example | English | Stage |
 |--------|-------|---------|---------|-------|
@@ -40,7 +42,84 @@ Shown on one root, `uzoze`. From [word endings](/word-endings#concrete-l) and [r
 | **-r** | [the same one again](/pronouns#resume-r) | `zuzozer` | *Uzozen* (again) | B |
 | **-x** after any of these | [associates, or a group](/plurality#associative) | `zuzozenx` | *Uzozen and associates* | B |
 
-On a join, the same endings are [closed / open / unnamed member](/joins#join-type-vowel-series): **-l** the listed items only, **-m** *(and possibly more)*, **-r** *someone* / *something*.
+### Ending scales {#ending-scales}
+
+From [word endings](/word-endings), [number endings](/number-markers#number-endings), [spans](/spans#when-required), [joins](/joins#join-type-vowel-series), [hooks](/hooks), [role pointers](/pronouns#role-pointers), [tags](/tag-pronouns#tag-pronouns), and [settled-to-passing](/sakes#settled-to-passing).
+
+| Scale | Hang cue | **-l** | **-m** | **-r** | **-n** |
+|-------|----------|--------|--------|--------|--------|
+| [Content](/word-endings) | which lexicon reading | concrete | published abstract | — | a name |
+| [Exactness](/number-markers#number-endings) | how tightly you mean the stated form | exact | approximate | — | — |
+| [Completeness](/joins#join-type-vowel-series) | how fully the slot is specified | locked: only these | open: maybe more | a member you have not named | the package as a name |
+| [Reference](/pronouns#resume-r) | which referent relative to what is already in play | a new one | their part | the same one | — |
+| [Settled-to-passing](/sakes#settled-to-passing) | how lasting the hold is | lasting | default | passing | — |
+
+Reference **-l** and **-m** are only on [role pointers](/pronouns#a-new-one) and [tags](/tag-pronouns#tag-pronouns). Tag [**-n**](/tag-pronouns#tag-pronouns) is reference **-r** plus a claim that the referent is a name.
+
+### How the scales hang {#ending-tree}
+
+```
+l m r n
+├── content (which lexicon reading)
+│     ├── citation / content word (concrete / abstract / name)
+│     ├── resume-sense -rl / -rm (pin which sense of a stem)
+│     ├── role compound -l / -m / -n (anyone in that part, by sense)
+│     ├── sentence linker default -m (the linker root's abstract)
+│     ├── special pronoun -n · vocative name · greeting / conversation-length bid
+│     └── root-tail kinds (memory: l concrete, m abstract, n name)
+├── exactness (how tightly you mean the stated form)
+│     ├── number -l / -m (exact / about)
+│     ├── span none / ~ (verbatim / gist)
+│     ├── stand-in -rl / -rm (the whole next sentence / the gist)
+│     ├── SAME (is / basically)
+│     ├── exactly-like vs like
+│     ├── each-other (strictly pairwise / everyday both-ways)
+│     └── extra-noun contact vs frame (in / amid, at / near, for / used by)
+├── completeness (how fully the slot is specified)
+│     ├── join closed / open / unnamed / named list
+│     ├── restrictor / more occasions / universals (are join)
+│     ├── stance join (is join, on /th/)
+│     ├── same-role / discourse hook closed / open / titled phrase
+│     ├── ranges (-m soft ends; -n names the range; -r one member)
+│     ├── fill-ask (is join -r under a question)
+│     ├── digitless number -r (grar some number / which number?)
+│     ├── fault (broke a rule / plain cause / one share among others)
+│     ├── say-word (a rule / a person said so / nobody said)
+│     ├── clause-join -n (sequence)
+│     └── join-act / join-relation -n (the list-move as a verb or relation)
+├── reference (which referent relative to what is already in play)
+│     ├── role pointer          -l new one · -m the part · -r the same one
+│     ├── tag                   -l assign / someone A · -m what A did · -r recall · -n recall of a name
+│     └── -r only
+│           ├── whole-stem resume
+│           ├── hook resume (there / as I said)
+│           ├── role compound (the one teaching, this instance)
+│           ├── number with digits (grager those three)
+│           ├── span =
+│           └── topic return (xuzozer)
+└── settled-to-passing (how lasting the hold is; no -n)
+      ├── sake time horizon · unmet changeability · motive (are the scale)
+      ├── prescription warrant (invited / offered / worth a try)
+      ├── feeling motion (still / flowing / surging)
+      ├── MAY hold · NOTIONAL hold · MIRATIVE
+      ├── PLAN · WANT · DECISION · TRY
+      ├── already / still / not yet / no longer
+      ├── speech act / polar
+      ├── sentence-linker firm -l
+      └── evidence strength (show / describe / gesture)
+```
+
+**-ln** ([one of a name](/proper-names#name-instance--ln)) writes content **-n** and reads as reference **-l**.
+
+| Relation | Pair | Stage |
+|----------|------|-------|
+| **is** the same job | tag **-m** is pointer [share](/pronouns#share) (`zwazam` by role, [`zwam`](/tag-pronouns#tag-pronouns) by who) | B / I |
+| **is** | hook closed / open is [join](/joins#join-type-vowel-series) closed / open | B |
+| **is** | [fill-ask](/questions#fill-ask-r) is join **-r** under a question; digitless [`grar`](/number-markers#number-endings) is join **-r** | B / I |
+| **is** | [polar](/polar-inventory#polar-endings) is the [act ending](/firm-soft#speech-act) | B / I |
+| **is** | [decision](/ability#decision-changeability) is unmet [changeability](/sakes#sake-changeability) | I |
+| **same spelling, not the same scale** | extra-noun [**-m**](/extra-noun-hooks#extra-noun-intermediate) (*amid*) is exactness; same-role [**-m**](/hooks) (*and maybe more*) is completeness | B |
+| **same spelling, not the same scale** | stand-in [**`-rm`**](/sentence-linkers#stand-in) is exactness (gist); resume-sense [**`-rm`**](/tag-pronouns#resume-sense) is content (the abstract) | I |
 
 ## Root-tail kinds {#root-kinds}
 

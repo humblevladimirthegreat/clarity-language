@@ -204,34 +204,34 @@ A [say word](/feelings-permission#say-words) on `/h/`: **`h`** **`w`**, a scope 
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Permission, granted](/feelings-permission#say-words) | `zuzozen vowurel hwavam.` | *Uzozen may walk; I'm allowing it.* | I |
-| [Permission, by someone](/feelings-permission#permission) | `zuzozen vowurel hwavam blolazun.` | *Olazun lets Uzozen walk.* | I |
-| [Permission, by rule](/feelings-permission#permission) | `zahelan vuhohol hwaval.` | *The rules allow Ahelan to sit.* | I |
-| [Requirement, by custom](/feelings-permission#permission) | `zolazun vezuvol hwavor.` | *Olazun is supposed to sleep.* | I |
-| [Ask permission](/feelings-permission#permission) | `yem zuwon vuhohol hwavam.` | *May I sit?* | I |
-| [Your own *have to*](/feelings-permission#permission): say who requires it | `zuwon vowurel hwavol.` / `zuwon vowurel hwazom.` | *I have to walk: the rules / I'm making myself* | I |
-| [Consent, by the recipient](/feelings-permission#consent) | `zuzozen vezuyel bahelan hwabam.` | *Uzozen tells Ahelan, and Ahelan said yes.* | I |
-| [Consent, by the one it's done to](/feelings-permission#consent) | `zuzozen dolazun vawebol hwadam.` | *Uzozen looks at Olazun, and Olazun agreed.* | I |
-| [Assumed consent, several people](/feelings-permission#consent) | `zuzozen vezuyel bahelan bolazun bal hwabar.` | *assuming Ahelan and Olazun are OK* | I |
-| [Letting yourself](/feelings-permission#consent) | `zolazun vezuvol hwazam.` | *Olazun lets themself sleep.* | I |
-| [A promise](/feelings-permission#consent) | `zuwon vowurel hwazal.` | *I promise to walk.* (to you) | I |
-| [Promise to someone else](/feelings-permission#say-scope): pair scope **`o`** | `zuwon vowurel hwozal blahelan.` | *I promise Ahelan I'll walk.* | I |
-| [Check in](/feelings-permission#consent) | `yem zuwon vezuyel bawan hwabam.` | *Are you still OK with me telling you?* | I |
-| [Contrary to a stance](/feelings-permission#say-scope): `uom` first | `zuzozen vowurel uom hwavul.` | *Uzozen walks anyway.* | I |
+| [Permission, granted](/feelings-permission#say-words) | `zuzozen vowurel hwuvam.` | *Uzozen may walk; I'm allowing it.* | I |
+| [Permission, by someone](/feelings-permission#permission) | `zuzozen vowurel hwuvam blolazun.` | *Olazun lets Uzozen walk.* | I |
+| [Permission, by rule](/feelings-permission#permission) | `zahelan vuhohol hwuval.` | *The rules allow Ahelan to sit.* | I |
+| [Requirement, by custom](/feelings-permission#permission) | `zolazun vezuvol hwuvor.` | *Olazun is supposed to sleep.* | I |
+| [Ask permission](/feelings-permission#permission) | `yem zuwon vuhohol hwuvam.` | *May I sit?* | I |
+| [Your own *have to*](/feelings-permission#permission): say who requires it | `zuwon vowurel hwuvol.` / `zuwon vowurel hwuzom.` | *I have to walk: the rules / I'm making myself* | I |
+| [Consent, by the recipient](/feelings-permission#consent) | `zuzozen vezuyel bahelan hwubam.` | *Uzozen tells Ahelan, and Ahelan said yes.* | I |
+| [Consent, by the one it's done to](/feelings-permission#consent) | `zuzozen dolazun vawebol hwudam.` | *Uzozen looks at Olazun, and Olazun agreed.* | I |
+| [Assumed consent, several people](/feelings-permission#consent) | `zuzozen vezuyel bahelan bolazun bal hwubar.` | *assuming Ahelan and Olazun are OK* | I |
+| [Letting yourself](/feelings-permission#consent) | `zolazun vezuvol hwuzam.` | *Olazun lets themself sleep.* | I |
+| [A promise](/feelings-permission#consent) | `zuwon vowurel hwuzal.` | *I promise to walk.* (to you) | I |
+| [Promise to someone else](/feelings-permission#say-scope): pair scope **`o`** | `zuwon vowurel hwezal blahelan.` | *I promise Ahelan I'll walk.* | I |
+| [Check in](/feelings-permission#consent) | `yem zuwon vezuyel bawan hwubam.` | *Are you still OK with me telling you?* | I |
+| [Contrary to a stance](/feelings-permission#say-scope): `uom` first | `zuzozen vowurel uom hwuvul.` | *Uzozen walks anyway.* | I |
 
 | Answer | [**`v`** someone over the act](/feelings-permission#permission) | [**`z`** the doer](/feelings-permission#consent) | [**`d`** the one it's done to](/feelings-permission#consent) | [**`b`** the recipient](/feelings-permission#consent) | Stage |
 |--------|-------------------|------------------|------------------------------|-----------------------|-------|
-| **`a`** | `hwavam` *you may* | `hwazam` *lets themself* | `hwadam` *they agreed* | `hwabam` *the recipient agreed* | I |
-| **`u`** | `hwavum` *you may not* | `hwazum` *won't let themself* | `hwadum` *they refused* | `hwabum` *the recipient refused* | I |
-| **`e`** | `hwavom` *you have to* | `hwazom` *makes themself* | `hwadom` *at their request* | `hwabom` *at the recipient's request* | I |
-| **`o`** | `hwavem` *it's up to you* | `hwazem` *their own choice* | `hwadem` *it's their call* | `hwabem` *the recipient's call* | I |
+| **`a`** | `hwuvam` *you may* | `hwuzam` *lets themself* | `hwudam` *they agreed* | `hwubam` *the recipient agreed* | I |
+| **`u`** | `hwuvum` *you may not* | `hwuzum` *won't let themself* | `hwudum` *they refused* | `hwubum` *the recipient refused* | I |
+| **`e`** | `hwuvom` *you have to* | `hwuzom` *makes themself* | `hwudom` *at their request* | `hwubom` *at the recipient's request* | I |
+| **`o`** | `hwuvem` *it's up to you* | `hwuzem` *their own choice* | `hwudem` *it's their call* | `hwubem` *the recipient's call* | I |
 
 | [Scope](/feelings-permission#say-scope) | Example | English | Stage |
 |-------|---------|---------|-------|
-| **`a`** this act | `hwadam` | *they agreed to this* | I |
-| **`e`** standing | `hwedam` / `hwevam` | *they're generally fine with it* / *you may, any time* | I |
-| **`o`** toward one party | `hwovam blolazun` | *fine as far as Olazun is concerned* | I |
-| **`u`** a type | `hwudam` | *they're the type who's fine with it* | I |
+| **`a`** this act | `hwudam` | *they agreed to this* | I |
+| **`e`** standing | `hwodam` / `hwovam` | *they're generally fine with it* / *you may, any time* | I |
+| **`o`** toward one party | `hwevam blolazun` | *fine as far as Olazun is concerned* | I |
+| **`u`** a type | `hwadam` | *they're the type who's fine with it* | I |
 
 ## Don't mix up {#dont-mix-up}
 
@@ -241,8 +241,8 @@ A [say word](/feelings-permission#say-words) on `/h/`: **`h`** **`w`**, a scope 
 | `thohom` *if* ([other routes remain](/causation#only-if)) | | `thebom` *only if* ([the outcome needs it](/causation#only-if)) |
 | `thahum` *because* ([a cause, no blame](/fault#fault)) | | `thahul` *fault* ([someone did wrong](/fault#fault)) |
 | `thahum` *because* ([the condition](/iff-fault#cause)) | | `thewem` *mechanism* ([how it is produced](/iff-fault#cause)) |
-| `hwavam` *may* ([someone over the act allows it](/feelings-permission#permission)) | | `hwadam` *they agreed* ([the yes of the one it's done to](/feelings-permission#consent)) |
-| `hwavam` *may* ([the act is allowed](/feelings-permission#permission)) | | `hwavom` *has to* ([the act is demanded](/feelings-permission#permission)) |
-| `hwavol` *the rules require it* ([an outside demand](/feelings-permission#permission)) | | `hwazor` *I feel I have to* ([an unspoken should](/feelings-permission#consent)) |
+| `hwuvam` *may* ([someone over the act allows it](/feelings-permission#permission)) | | `hwudam` *they agreed* ([the yes of the one it's done to](/feelings-permission#consent)) |
+| `hwuvam` *may* ([the act is allowed](/feelings-permission#permission)) | | `hwuvom` *has to* ([the act is demanded](/feelings-permission#permission)) |
+| `hwuvol` *the rules require it* ([an outside demand](/feelings-permission#permission)) | | `hwuzor` *I feel I have to* ([an unspoken should](/feelings-permission#consent)) |
 | `thawothem` *ought to, for relatedness* ([advice for a sake](/ought-for-a-sake#sake-force)) | | `thawothom` *for relatedness* ([why it is done](/prescription#sake-preference)) |
 | `thawotham` *thank you* ([my sake is met](/thanks-and-sorry#thanks-sorry)) | | `thawothum blawan` *I'm sorry* ([your sake is hurt](/thanks-and-sorry#thanks-sorry)) |

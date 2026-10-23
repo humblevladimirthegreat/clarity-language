@@ -445,16 +445,16 @@ type Vowel = "a" | "e" | "o" | "u";
 
 /** Label scope: each seam vowel (label-seams.md#label-scope). */
 const SCOPE_FEATURE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
-  "vowel.a": { anchor: "label-seams.md#label-scope", summary: "this episode tha", reader: SCOPE_READER },
-  "vowel.e": { anchor: "label-seams.md#label-scope", summary: "practiced role the", reader: SCOPE_READER },
-  "vowel.o": { anchor: "label-seams.md#label-scope", summary: "this pair tho", reader: SCOPE_READER },
-  "vowel.u": { anchor: "label-seams.md#label-scope", summary: "type across scenes thu", reader: SCOPE_READER },
-  "vowel.ao": { anchor: "label-seams.md#scope-stacks", summary: "episode on this pair thao", reader: SCOPE_READER },
-  "vowel.ae": { anchor: "label-seams.md#scope-stacks", summary: "using the role thae", reader: SCOPE_READER },
+  "vowel.a": { anchor: "label-seams.md#label-scope", summary: "type across scenes tha", reader: SCOPE_READER },
+  "vowel.e": { anchor: "label-seams.md#label-scope", summary: "this pair the", reader: SCOPE_READER },
+  "vowel.o": { anchor: "label-seams.md#label-scope", summary: "practiced role tho", reader: SCOPE_READER },
+  "vowel.u": { anchor: "label-seams.md#label-scope", summary: "this episode thu", reader: SCOPE_READER },
+  "vowel.ae": { anchor: "label-seams.md#scope-stacks", summary: "the situation thae", reader: SCOPE_READER },
+  "vowel.ao": { anchor: "label-seams.md#scope-stacks", summary: "using the role thao", reader: SCOPE_READER },
   "vowel.oe": { anchor: "label-seams.md#scope-stacks", summary: "toward the role thoe", reader: SCOPE_READER },
   "vowel.ua": { anchor: "label-seams.md#scope-stacks", summary: "type except this episode thua", reader: SCOPE_READER },
-  "vowel.uo": { anchor: "label-seams.md#scope-stacks", summary: "type except this pair thuo", reader: SCOPE_READER },
-  "vowel.ue": { anchor: "label-seams.md#scope-stacks", summary: "not in that capacity thue", reader: SCOPE_READER },
+  "vowel.ue": { anchor: "label-seams.md#scope-stacks", summary: "type except this pair thue", reader: SCOPE_READER },
+  "vowel.uo": { anchor: "label-seams.md#scope-stacks", summary: "not in that capacity thuo", reader: SCOPE_READER },
 };
 
 /** Sakes: each stance vowel, and the endings on it (sakes.md). */
@@ -629,23 +629,27 @@ export const ROLE_FEATURE_CONSTRUCTIONS: Record<
   "part.w": { anchor: "viewpoint.md#content-of-the-event", summary: "extent w" },
   "part.y": { anchor: "viewpoint.md#content-of-the-event", summary: "speech move y" },
   "part.x": { anchor: "viewpoint.md#content-of-the-event", summary: "outcome x" },
-  "scope.a": { anchor: "pronouns.md#role-pointers", summary: "this episode a" },
-  "scope.e": { anchor: "roles.md#one-time-or-a-practice", summary: "practiced role e" },
-  "scope.o": { anchor: "label-seams.md#scope-relative", summary: "this pair o" },
-  "scope.u": { anchor: "label-seams.md#scope-type", summary: "type across scenes u" },
-  "scope.ao": { anchor: "label-seams.md#scope-stacks", summary: "episode on this pair ao" },
-  "scope.ae": { anchor: "label-seams.md#scope-stacks", summary: "using the role ae" },
+  "scope.a": { anchor: "label-seams.md#scope-type", summary: "type across scenes a" },
+  "scope.e": { anchor: "label-seams.md#scope-relative", summary: "this pair e" },
+  "scope.o": { anchor: "roles.md#one-time-or-a-practice", summary: "practiced role o" },
+  "scope.u": { anchor: "roles.md#role-compounds", summary: "this episode u" },
+  "scope.ae": { anchor: "label-seams.md#scope-stacks", summary: "the situation ae" },
+  "scope.ao": { anchor: "label-seams.md#scope-stacks", summary: "using the role ao" },
   "scope.oe": { anchor: "label-seams.md#scope-stacks", summary: "toward the role oe" },
   "scope.ua": { anchor: "label-seams.md#scope-stacks", summary: "type except this episode ua" },
-  "scope.uo": { anchor: "label-seams.md#scope-stacks", summary: "type except this pair uo" },
-  "scope.ue": { anchor: "label-seams.md#scope-stacks", summary: "not in that capacity ue" },
+  "scope.ue": { anchor: "label-seams.md#scope-stacks", summary: "type except this pair ue" },
+  "scope.uo": { anchor: "label-seams.md#scope-stacks", summary: "not in that capacity uo" },
   ability: { anchor: "can-and-cant.md#can-be-role-ability", summary: "role + ability: can be that role" },
   instance: { anchor: "roles.md#this-instance-r", summary: "-r this instance" },
   capacity: { anchor: "viewpoint.md#capacity", summary: "slot-part role compound on /h/: the role the act is done in" },
 };
 
 /** Role pointers: which part the consonant names, and which event the pointer vowel picks (pronouns.md#role-pointers). */
-export const POINTER_FEATURE_CONSTRUCTIONS: Record<`vowel.${PointerVowel}` | `part.${RolePart}` | "new" | "share", ConstructionEntry> = {
+export const POINTER_FEATURE_CONSTRUCTIONS: Record<
+  `vowel.${PointerVowel}` | `part.${RolePart}` | "scope.a" | "new" | "share",
+  ConstructionEntry
+> = {
+  "scope.a": { anchor: "pronouns.md#role-pointers", summary: "this episode a" },
   "part.z": { anchor: "pronouns.md#role-pointers", summary: "pointer to the doer" },
   "part.d": { anchor: "pronouns.md#role-pointers", summary: "pointer to the undergoer" },
   "part.b": { anchor: "pronouns.md#role-pointers", summary: "pointer to the extra party" },
@@ -745,7 +749,7 @@ export const REJECTIONS = {
   hookedJoinTime: { anchor: "hooked-joins.md#hooked-joins-time", summary: "an /h/ hooked join takes a hook with a time reading: `a` `e` `u` `oe`, the frame `em`, or point-back `ar` `er` `ur`" },
   roleCompoundStem: { anchor: "roles.md#role-compounds", summary: "a role compound names a role of an event; a special pronoun is not an event" },
   abilitySlot: { anchor: "can-and-cant.md#ability", summary: "ability (x + vowel) goes on /v/ or /ɡ/ only; name + x + vowel + -n is a conversation-length bid only as a citation or a /y/ call" },
-  labelScopeArrow: { anchor: "viewpoint.md#landmark-facing", summary: "on a direction root the th seam takes only o (the landmark's own facing)" },
+  labelScopeArrow: { anchor: "viewpoint.md#landmark-facing", summary: "on a direction root the th seam takes only e (the landmark's own facing)" },
   pluralKindAfterUniversal: { anchor: "universals-domains.md#universals-domains-generics", summary: "the kind word after ua / uo takes no -x" },
   stackedHookResume: { anchor: "ending-grids.md#ranges", summary: "stacked range hook -r (oer / uar / uor) needs same-role words on both sides" },
   hookSameRoleStack: { anchor: "hooks.md#including-am-al", summary: "between same-role words only the plain hooks (al el ol ul) and the range hooks (oel ual uol) have a reading; for such as, use am" },
@@ -822,7 +826,7 @@ export const REJECTIONS = {
   islandOneSlot: { anchor: "span-mention.md#scope-islands", summary: "a scope island holds at most one phrase: /z/, /d/, /b/, /v/, or a /ɡ/ stack" },
   islandSlotRole: { anchor: "span-mention.md#scope-islands", summary: "a scope island needs one /z/, /d/, /b/, /v/, or /ɡ/ phrase after its binder" },
   islandBinder: { anchor: "span-mention.md#scope-islands", summary: "a scope island needs a binder inside: an /h/ word or a join" },
-  landmarkLateralBound: { anchor: "viewpoint.md#landmark-facing", summary: "a landmark lateral (DIR th o) needs its landmark in hosted /b/" },
+  landmarkLateralBound: { anchor: "viewpoint.md#landmark-facing", summary: "a landmark lateral (DIR th e) needs its landmark in hosted /b/" },
   asOfIntroduceBound: { anchor: "as-of.md#as-of", summary: "an as-of word introduces its bound with a /b/ word" },
   asOfResumeBound: { anchor: "as-of.md#as-of", summary: "an as-of resume (-r) takes no /b/" },
   hookResumeNoun: { anchor: "discourse-hooks.md#hook-resume", summary: "a resume hook (-r) points back and takes no noun on its right" },
@@ -832,9 +836,9 @@ export const REJECTIONS = {
   retiredIntentionRoot: { anchor: "intention.md#plan", summary: "/h/ on the map or check root is not an intention: PLAN and DECISION are /th/ stances (`thagem`, `thogom`), someone else's through a holder" },
   channelOffsetSign: { anchor: "universality.md#dated-channel", summary: "MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one" },
   retiredChannelRoot: { anchor: "evidentiality.md#evidentiality", summary: "/th/ on the record or scroll root is not a channel: a record or document is REPORTED with the source in /b/, footage is LIVE or MEMORY with the device in /b/, a schedule is PLAN, and a tale is NOTIONAL" },
-  retiredDeonticRoot: { anchor: "feelings-permission.md#say-words", summary: "/th/ on the green, no-entry, or memo root is no stance: permission, a ban, and a requirement are say words on /h/ (`hwavam`, `hwavul`, `hwavom`)" },
-  sayHost: { anchor: "feelings-permission.md#permission", summary: "a bl- word after a say word names someone over the act (v), or the one party under pair scope o; a participant's say needs no bl- word" },
-  saySpeaker: { anchor: "feelings-permission.md#permission", summary: "a bare v say word on -m is the speaker saying so, so in a statement where the speaker is a participant name whose say it is: the rules (hwavol), a person (hwavom bl-), custom (hwaver), or the speaker's own part (hwazem)" },
+  retiredDeonticRoot: { anchor: "feelings-permission.md#say-words", summary: "/th/ on the green, no-entry, or memo root is no stance: permission, a ban, and a requirement are say words on /h/ (`hwuvam`, `hwuvul`, `hwuvom`)" },
+  sayHost: { anchor: "feelings-permission.md#permission", summary: "a bl- word after a say word names someone over the act (v), or the one party under pair scope e; a participant's say needs no bl- word" },
+  saySpeaker: { anchor: "feelings-permission.md#permission", summary: "a bare v say word on -m is the speaker saying so, so in a statement where the speaker is a participant name whose say it is: the rules (hwuvol), a person (hwuvom bl-), custom (hwuvor), or the speaker's own part (hwuzom)" },
   poleOffsetWarrant: { anchor: "universality.md#dated-channel", summary: "a signed offset on a time pole needs a command, request, PLAN, or channel in its clause" },
   joinDetail: { anchor: "rank-joins.md#respectively", summary: "the only /w/ before a join word is respectively (`wubam`), and it goes only there, on a closed (-l) or open (-m) and-list" },
   respectivePartner: { anchor: "rank-joins.md#respectively", summary: "a respectively list pairs with another and-list of the same length in its clause" },

@@ -149,26 +149,26 @@ describe("parse field keys", () => {
   });
 
   it("matches say answer and scope", () => {
-    const text = "zuzozen vowurel hwavam. zuzozen vowurel hwavom.";
-    assert.deepEqual(raws(text, "family=say,answer=a"), ["hwavam"]);
-    assert.deepEqual(raws(text, "family=say,answer=o"), ["hwavom"]);
-    assert.deepEqual(raws(text, "family=say,scope=a").sort(), ["hwavam", "hwavom"]);
+    const text = "zuzozen vowurel hwuvam. zuzozen vowurel hwuvom.";
+    assert.deepEqual(raws(text, "family=say,answer=a"), ["hwuvam"]);
+    assert.deepEqual(raws(text, "family=say,answer=o"), ["hwuvom"]);
+    assert.deepEqual(raws(text, "family=say,scope=u").sort(), ["hwuvam", "hwuvom"]);
   });
 
   it("matches ability and sake stance, not th-scope", () => {
     assert.deepEqual(raws("vuzunexel.", "xFamily=ability,stance=e"), ["vuzunexel"]);
     const sake = `g${CLOSED.ballot}thal`;
     assert.deepEqual(raws(sake, "xFamily=sake,stance=a"), [sake]);
-    const [scope] = sentence("guzozethal").words;
+    const [scope] = sentence("guzozethul").words;
     assert.ok(scope);
     assert.equal(scope.word.family.kind === "x" && scope.word.family.xFamily, "scope");
-    assert.ok(matchesTerm(scope, parseTerm("scope=a")));
+    assert.ok(matchesTerm(scope, parseTerm("scope=u")));
     assert.ok(!matchesTerm(scope, parseTerm("stance=a")));
   });
 
   it("matches landmark facing as pair scope, not sake stance", () => {
-    const facing = { word: classify(parseWord("gazuhethol"), tables), unit: "", position: 0 };
-    assert.ok(matchesTerm(facing, parseTerm("xFamily=lateral,scope=o")));
+    const facing = { word: classify(parseWord("gazuhethel"), tables), unit: "", position: 0 };
+    assert.ok(matchesTerm(facing, parseTerm("xFamily=lateral,scope=e")));
     assert.ok(!matchesTerm(facing, parseTerm("stance=o")));
   });
 
@@ -214,8 +214,8 @@ describe("parse field keys", () => {
 describe("learner name slot", () => {
   it("parses SELF examples with the default learner root", () => {
     assert.deepEqual(
-      collectExamples("`yem zSELFn vuhohol hwavam.`", tables).map((e) => e.text),
-      ["yem zuwon vuhohol hwavam."],
+      collectExamples("`yem zSELFn vuhohol hwuvam.`", tables).map((e) => e.text),
+      ["yem zuwon vuhohol hwuvam."],
     );
   });
 });

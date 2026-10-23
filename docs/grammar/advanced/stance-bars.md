@@ -37,9 +37,9 @@ Intermediate ranked against a plan, and [sake bars](/prescription#sake-bars) ran
 | PLAN `thagem` | the plan or the schedule | *than planned* / *than scheduled* |
 | WANT `thalel` / `thalem` / `thaler` | the level wanted | *than wanted* / *than I wanted* |
 | ABIL `hodaxal` | what can be done | *as … as possible* |
-| a requirement `hwavol` / `hwavom` / `hwavor` | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* |
-| a permission `hwaval` / `hwavam` / `hwavar` | the rule, the grant, or what is tolerated | *over the limit* / *more than they allow* / *than tolerated* |
-| consent `hwadam` | the agreed terms | *more than agreed* |
+| a requirement `hwuvol` / `hwuvom` / `hwuvor` | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* |
+| a permission `hwuval` / `hwuvam` / `hwuvar` | the rule, the grant, or what is tolerated | *over the limit* / *more than they allow* / *than tolerated* |
+| consent `hwudam` | the agreed terms | *more than agreed* |
 | speaker attitude (`thoguyem`, `thewemum`) | the case you hoped for or feared | *than hoped* / *than feared* |
 
 The bar's ending keeps its own job: on a channel it is [evidence strength](/evidentiality#evidence-strength) (`thubel` *than it reliably is*, `thuber` *than the few cases so far*).
@@ -74,7 +74,7 @@ The bar's ending keeps its own job: on a channel it is [evidence strength](/evid
 >
 > "The book is lighter than I wanted."
 
-The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on a [say word](/feelings-permission#say-words) over the act (`hwavom`, `hwavam`) it is the person who demands or grants. WANT takes no `/b/`: for someone else's wants, put a [holder](/holder#holder) on the clause. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
+The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on a [say word](/feelings-permission#say-words) over the act (`hwuvom`, `hwuvam`) it is the person who demands or grants. WANT takes no `/b/`: for someone else's wants, put a [holder](/holder#holder) on the clause. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
 
 > `zanal thebam blolazun zuol gagebom.`
 >
@@ -82,7 +82,7 @@ The bar's `/b/` works as it does on the clause. On REPORTED it is the source, an
 >
 > "The book is less clear than Olazun said."
 
-> `zuzozen thubem blwezeluyelx zol gezuyol.`
+> `zuzozen thubem blwozeluyelx zol gezuyol.`
 >
 > [z-Uzozen | [th-PATTERN | bl-role-agent-learn-x] | z-rank/more | g-sing]
 >
@@ -92,7 +92,7 @@ On a rank join, an event root on `/ɡ/` is the scale itself: how well the act go
 
 An adjective after that `/b/` describes it, as after any [host](/left-bound#complex-chaining), so it narrows the population.
 
-> `zuzozen thubem blwezeluyelx guzemol zol gezuyol.`
+> `zuzozen thubem blwozeluyelx guzemol zol gezuyol.`
 >
 > [z-Uzozen | [th-PATTERN | [bl-role-agent-learn-x | g-sleepy]] | z-rank/more | g-sing]
 >
@@ -100,7 +100,7 @@ An adjective after that `/b/` describes it, as after any [host](/left-bound#comp
 
 The ranked item can be a whole kind. Write the [universal fence](/universals-domains#universals-domains-generics) first, then the bar: the whole closed fence counts as the one ranked item, the way an inner list sits inside an outer one ([fence nesting](/rank-joins#fence-nesting)). Open **`zuam`** is *people of that kind, as a rule*.
 
-> `zuam gwazodamul thubem zol hral vabezum.`
+> `zuam gwuzodamul thubem zol hral vabezum.`
 >
 > [[z-everything.open | g-episode-agent-tired] | th-PATTERN | z-rank/more | h-how-often] | v-flaw
 >
@@ -108,7 +108,7 @@ The ranked item can be a whole kind. Write the [universal fence](/universals-dom
 
 To rank one kind against another, keep one kind as the item and put the other in the PATTERN bar's `/b/`.
 
-> `zuam gwazenuvom thubem bleyolx godamum zol hemebem vuzubal.`
+> `zuam gwuzenuvom thubem bleyolx godamum zol hemebem vuzubal.`
 >
 > [[z-everything.open | g-episode-agent-rest] | [th-PATTERN | [bl-person-x | g-burnout]] | z-rank/more | h-achievement] | v-sweat
 >
@@ -126,13 +126,13 @@ A CLUES or PATTERN bar can also take [`blarl`](/evidentiality#evidence-clause): 
 
 **Rules and permission.** A requirement as the bar is the demand; a tie meets it. A permission is the limit; rank **`zol`** goes over it.
 
-> `zahehal hwavol zoel gobobom.`
+> `zahehal hwuvol zoel gobobom.`
 >
 > [z-house | h-episode-event-REQUIRE-rule | z-equal-rank | g-strength]
 >
 > "The house is as strong as the rules require."
 
-> `zududal hwaval zol gral.`
+> `zududal hwuval zol gral.`
 >
 > [z-tea | h-episode-event-ALLOW-rule | z-rank/more | g-amount]
 >

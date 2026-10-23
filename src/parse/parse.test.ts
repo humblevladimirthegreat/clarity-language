@@ -669,7 +669,7 @@ describe("parse — comparatives.md bars", () => {
       ["zududal thudatham zoel gral.", "thudatham"],
       ["zanal thugom zuom garolom.", "thugom"],
       ["zolazun hodaxal zoel hedurem vowurel.", "hodaxal"],
-      ["zahehal hwavol zoel gobobom.", "hwavol"],
+      ["zahehal hwuvol zoel gobobom.", "hwuvol"],
       ["zanal thoguyem zol gagebom.", "thoguyem"],
       ["zuzozen thabomolazun zol guzemol.", "thabomolazun"],
     ] as const) {
@@ -688,7 +688,7 @@ describe("parse — comparatives.md bars", () => {
   });
 
   it("ranks a closed universal fence against the bar after it", () => {
-    for (const text of ["zuam gwazodamul thubem zol hral vabezum.", "zuan gwazodamul thubem zol hral vabezum.", "zual gagozol thubem zol guzemol."]) {
+    for (const text of ["zuam gwuzodamul thubem zol hral vabezum.", "zuan gwuzodamul thubem zol hral vabezum.", "zual gagozol thubem zol guzemol."]) {
       const units = parseText(text).utterances[0]!.bodies[0]!.clause.units;
       const np = units[0]!;
       assert.ok(np.kind === "np", text);
@@ -703,8 +703,8 @@ describe("parse — comparatives.md bars", () => {
   });
 
   it("reads an adjective after a bar's hosted /b/ as describing that noun, inside the fence", () => {
-    const bar = barOf("zuzozen thubem blwezeluyelx guzemol zol gezuyol.");
-    assert.equal(bar?.hosted?.bound.raw, "blwezeluyelx");
+    const bar = barOf("zuzozen thubem blwozeluyelx guzemol zol gezuyol.");
+    assert.equal(bar?.hosted?.bound.raw, "blwozeluyelx");
     assert.deepEqual(bar?.hosted?.adjs?.map((a) => a.word.raw), ["guzemol"]);
     // On the clause too, an adjective after a `/th/` host's `/b/` describes that noun (left-bound.md#complex-chaining).
     const units = parseText("zuzozen thebam blolazun guzemol vowurel.").utterances[0]!.bodies[0]!.clause.units;
@@ -812,7 +812,7 @@ describe("parse — contrary to a stance (uom + /th/)", () => {
       assert.equal(hook.frame?.word.pos, "th", text);
       assert.ok(!units.some((unit) => unit.kind === "h"), text);
     }
-    for (const text of ["zuzozen vowurel uom hwavul.", "zuzozen vowurel uom hwavol."]) {
+    for (const text of ["zuzozen vowurel uom hwuvul.", "zuzozen vowurel uom hwuvol."]) {
       const { hook, units } = frameOf(text);
       assert.equal(hook.job, "frame", text);
       assert.equal(hook.frame?.word.family.kind, "say", text);
@@ -830,23 +830,23 @@ describe("parse — contrary to a stance (uom + /th/)", () => {
   });
 
   it("keeps the stance's hosted /b/ inside the frame", () => {
-    const { hook } = frameOf("zuzozen vezuyel uom hwavom blolazun.");
-    assert.equal(hook.frame?.word.raw, "hwavom");
+    const { hook } = frameOf("zuzozen vezuyel uom hwuvom blolazun.");
+    assert.equal(hook.frame?.word.raw, "hwuvom");
     assert.equal(hook.frame?.hosted?.bound.raw, "blolazun");
   });
 
   it("takes the frame at the left edge too", () => {
-    const result = parseText("uom hwavul zuzozen vowurel.");
+    const result = parseText("uom hwuvul zuzozen vowurel.");
     assert.equal(result.utterances[0]!.left.hook, undefined);
-    const { hook } = frameOf("uom hwavul zuzozen vowurel.");
-    assert.equal(hook.frame?.word.raw, "hwavul");
+    const { hook } = frameOf("uom hwuvul zuzozen vowurel.");
+    assert.equal(hook.frame?.word.raw, "hwuvul");
   });
 
   it("leaves a stance elsewhere in the clause on the claim", () => {
-    const { hook, units } = frameOf("zuzozen vowurel uom hwavul hwavam.");
-    assert.equal(hook.frame?.word.raw, "hwavul");
+    const { hook, units } = frameOf("zuzozen vowurel uom hwuvul hwuvam.");
+    assert.equal(hook.frame?.word.raw, "hwuvul");
     const claim = units.filter((unit) => unit.kind === "h");
-    assert.deepEqual(claim.map((unit) => unit.kind === "h" && unit.unit.word.raw), ["hwavam"]);
+    assert.deepEqual(claim.map((unit) => unit.kind === "h" && unit.unit.word.raw), ["hwuvam"]);
   });
 
   it("keeps uom + /b/ as an extra noun", () => {
@@ -886,7 +886,7 @@ describe("negation scope at a fence or a pole", () => {
   });
 
   it("keeps a stance join before barl in the main sentence and barl on the pole", () => {
-    const clause = parseText("zuzozen vuduyel thanam thohom thul blarl zuzozen gwezuduyel.").utterances[0]!.bodies[0]!.clause;
+    const clause = parseText("zuzozen vuduyel thanam thohom thul blarl zuzozen gwozuduyel.").utterances[0]!.bodies[0]!.clause;
     const hs = clause.units.flatMap((u) => (u.kind === "h" ? [u.unit] : []));
     assert.deepEqual(hs.map((h) => h.word.raw), ["thanam", "thohom", "thul"]);
     assert.equal(hs[1]!.hosted?.bound.raw, "blarl");
@@ -960,7 +960,7 @@ describe("parse — one tree per sentence (syntactic-unambiguity batch 5a)", () 
     assert.equal(z.coord.parts.length, 1);
     assert.equal(z.coord.parts[0]!.items.length, 2);
     // Right after a closed `ua` fence, the bar starts a part of its own that ranks the whole fence.
-    const [fence] = units("zuam gwazodamul thubem zol hral vabezum.");
+    const [fence] = units("zuam gwuzodamul thubem zol hral vabezum.");
     assert.ok(fence?.kind === "np");
     assert.deepEqual(fence.coord.parts.map((p) => p.items.map((i) => i.kind)), [[], ["bar"]]);
   });

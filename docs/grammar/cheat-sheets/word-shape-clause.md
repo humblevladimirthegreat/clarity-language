@@ -159,21 +159,21 @@ Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 
 | Vowel | Reach | Example | English | Stage |
 |-------|-------|---------|---------|-------|
-| [`tha`](/label-seams#scope-occasion) | this episode | `zuzozen valamuthal.` | *Uzozen lied this once.* | I |
-| [`the`](/label-seams#scope-occupation) | a practiced role | `zuzozen valamuthel.` | *Uzozen lies as their craft.* | I |
-| [`tho`](/label-seams#scope-relative) | this pair (`/b/` follows) | `zuzozen golayothom blolazun.` | *Uzozen is a stranger to Olazun.* | I |
-| [`thu`](/label-seams#scope-type) | a type across scenes | `zolazun ganumuthul.` | *Olazun is an anxious type.* | I |
+| [`thu`](/label-seams#scope-occasion) | this episode | `zuzozen valamuthul.` | *Uzozen lied this once.* | I |
+| [`tho`](/label-seams#scope-occupation) | a practiced role | `zuzozen valamuthol.` | *Uzozen lies as their craft.* | I |
+| [`the`](/label-seams#scope-relative) | this pair (`/b/` follows) | `zuzozen golayothem blolazun.` | *Uzozen is a stranger to Olazun.* | I |
+| [`tha`](/label-seams#scope-type) | a type across scenes | `zolazun ganumuthal.` | *Olazun is an anxious type.* | I |
 
 [Stacked scope](/label-seams#scope-stacks): pairs that start with **u** read like *everything but* (every scene, the second vowel set aside); the others read like hooks (*over*, *using*, *toward*).
 
 | Vowel | Reach | English | Stage |
 |-------|-------|---------|-------|
-| `thao` | the situation, not the person (*over*) | *angry, but it's the situation* | I |
-| `thae` | using the role for a purpose | *playing the teacher* | I |
+| `thae` | the situation, not the person (*over*) | *angry, but it's the situation* | I |
+| `thao` | using the role for a purpose | *playing the teacher* | I |
 | `thoe` | toward the role | *becoming a teacher* | I |
 | `thua` | type, except this episode | *a teacher type, except this time* | I |
-| `thuo` | type, except this pair | *a teacher type, except with Olazun* | I |
-| `thue` | as themselves, not in that role | *not as a teacher* (off duty) | I |
+| `thue` | type, except this pair | *a teacher type, except with Olazun* | I |
+| `thuo` | as themselves, not in that role | *not as a teacher* (off duty) | I |
 
 ## Don't mix up {#dont-mix-up}
 

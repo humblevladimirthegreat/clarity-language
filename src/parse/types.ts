@@ -80,7 +80,7 @@ export type MorphWordFamily =
       leftRoots: string[];
       /** Roots right of the seam (a compound, prefix, or role-compound stem; a lateral or holder anchor). */
       rightRoots?: string[];
-      /** Viewpoint lateral `DIR th o`: the hosted `/b/` landmark's own facing (viewpoint.md#landmark-facing). */
+      /** Viewpoint lateral `DIR th e`: the hosted `/b/` landmark's own facing (viewpoint.md#landmark-facing). */
       landmark?: boolean;
       /** Role compound or role pointer: the part consonant. */
       part?: RolePart;
@@ -88,7 +88,7 @@ export type MorphWordFamily =
       pointerVowel?: PointerVowel;
       /** Values / label-scope / ability stance vowel (also role + ability on `/ɡ/`, `gwezuduyexal`). */
       stanceVowel?: ScopeVowel;
-      /** Role compound or role pointer: the label scope vowel(s) after `w` (`zwezuduyel`; viewpoint.md#scope). Hook prefix: scope after the stem's `th` seam (`zuexavuvuthel`). Landmark facing: pair scope after `th` (`gazuhethol`; viewpoint.md#landmark-facing). */
+      /** Role compound or role pointer: the label scope vowel(s) after `w` (`zwozuduyel`; viewpoint.md#scope). Hook prefix: scope after the stem's `th` seam (`zuexavuvuthol`). Landmark facing: pair scope after `th` (`gazuhethel`; viewpoint.md#landmark-facing). */
       scopeVowel?: ScopeVowel;
       /** Emotion compose: sake horizon letter moved mid-word (feelings-permission.md#emotion-compose). */
       horizon?: "l" | "m" | "r";
@@ -130,7 +130,7 @@ export type MorphWordFamily =
    */
   | { kind: "tag"; vowels: TagVowel[] }
   /**
-   * Say word: `h` + `w` + label scope + whose say + answer + ending (`hwavam` *you may*, `hwadum` *they refused*;
+   * Say word: `h` + `w` + label scope + whose say + answer + ending (`hwuvam` *you may*, `hwudum` *they refused*;
    * feelings-permission.md#say-words). The part is the doer `z`, the one it's done to `d`, the recipient `b`, or someone over the act `v`.
    */
   | { kind: "say"; scope: ScopeVowel; part: SayPart; answer: SayAnswer };

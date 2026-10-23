@@ -494,7 +494,7 @@ export function isFrameStance(word: LexWord, tables: ClassifyTables): boolean {
   return word.reading === "ordinary" && family.kind === "content";
 }
 
-/** Arrow-rose roots (viewpoint.md#arrow-rose-compass-vs-face); `DIR th o` on these is a landmark lateral. */
+/** Arrow-rose roots (viewpoint.md#arrow-rose-compass-vs-face); `DIR th e` on these is a landmark lateral. */
 export const arrowRoots = closedDerived(
   () =>
     new Set([
@@ -509,10 +509,10 @@ export const arrowRoots = closedDerived(
     ]),
 );
 
-/** `DIR th o` parses as a sake shape; on an arrow root it is the landmark's own facing (pair scope). */
+/** `DIR th e` parses as a sake shape; on an arrow root it is the landmark's own facing (pair scope). */
 function landmarkLateral(word: MorphWord): MorphWord | undefined {
   const family = word.family;
-  if (family.kind !== "x" || family.xFamily !== "sake" || family.stanceVowel !== "o" || family.horizon) return undefined;
+  if (family.kind !== "x" || family.xFamily !== "sake" || family.stanceVowel !== "e" || family.horizon) return undefined;
   if (family.leftRoots.length !== 1 || !arrowRoots().has(family.leftRoots[0]!)) return undefined;
   return {
     ...word,

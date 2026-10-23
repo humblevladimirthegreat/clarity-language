@@ -124,7 +124,7 @@ describe("extractFreeEnglish", () => {
       '> "Uzozen walks." (alone)',
       "",
       "> `zuzozen vuduyel.`",
-      "> `zwazuduyer vezuvol.`",
+      "> `zwuzuduyer vezuvol.`",
       ">",
       "> z-Uzozen | v-teach . z-←episode-agent-teach | v-sleep",
       ">",
@@ -143,7 +143,7 @@ describe("extractFreeEnglish", () => {
       delimiter: '"',
       split: { sentence: "Uzozen walks.", note: "alone", parts: ["Uzozen walks."], join: "one" },
     });
-    assert.equal(lines[1]!.agebon, "zuzozen vuduyel. zwazuduyer vezuvol.");
+    assert.equal(lines[1]!.agebon, "zuzozen vuduyel. zwuzuduyer vezuvol.");
     assert.equal(lines[1]!.morph, "z-Uzozen | v-teach . z-←episode-agent-teach | v-sleep");
   });
 

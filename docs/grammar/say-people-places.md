@@ -39,7 +39,7 @@ Beginner already used two sentences for English *who / that / which*. Prefer [re
 
 A place, tool, or *of*-relation on the noun is still an extra-noun [hook](/hooks#extra-noun) or hosted `/ɡ/` + `/b/` (*the guard [in](/hooks#extra-noun) a bank*, *a book written [with a hammer](/hooks#extra-noun)*). A one-place role (*a guard who sits*, *a place where someone sleeps*) is a [role compound](/roles#role-compounds) on `/ɡ/` with a non-resume ending; add **`the`** for a usual role (*a teacher*), the same pattern as *is a teacher*. Resume **-r** on that compound is **this instance** (*the one teaching*), not the occupation. A noun in the middle of an act (*a fighting guard*) is the plain event root on `/ɡ/` ([in progress](/predication#in-progress)).
 
-> `zuzozen dagayul gwazuhohol vawebol.`
+> `zuzozen dagayul gwuzuhohol vawebol.`
 >
 > z-Uzozen | [d-guard | g-episode-agent-chair] | v-see
 >
@@ -63,7 +63,7 @@ English uses the same *who* clause for two jobs. When it picks out **which** one
 >
 > "Uzozen, who walks, sings."
 
-**Compare with:** ordinary `guhohol` is *chair* / *position* as a property, not *sitting*: the root's everyday sense is a chair, not an event, so it has no [in-progress](/predication#in-progress) reading. For *sitting*, use the role word `gwazuhohol`. [Restrictors](/restrictors) say when a **claim** counts (*never*, *only when it rains*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](/left-bound#complex-chaining)).
+**Compare with:** ordinary `guhohol` is *chair* / *position* as a property, not *sitting*: the root's everyday sense is a chair, not an event, so it has no [in-progress](/predication#in-progress) reading. For *sitting*, use the role word `gwuzuhohol`. [Restrictors](/restrictors) say when a **claim** counts (*never*, *only when it rains*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](/left-bound#complex-chaining)).
 
 ### Stacked owners (*Uzozen's dog's bone*) {#stacked-owners}
 
@@ -109,13 +109,13 @@ For *unlike* / *different from*, use the [similative](/relations#similative) **`
 
 English *what* in *Olazun sees what Uzozen writes* names the thing an event happened to, with no noun for it. State that event first, then point back at its undergoer with the **`u`** role compound in **-r**: *the thing written*.
 
-> `zuzozen varayel. zolazun vawebol dwadarayer.`
+> `zuzozen varayel. zolazun vawebol dwudarayer.`
 >
 > z-Uzozen | v-write . z-Olazun | v-see | d-←episode-patient-write
 >
 > "Olazun sees what Uzozen writes."
 
-Keep the two verbs different. **-r** points at the latest matching event, so `zolazun vawebol dwadawebor` would point at Olazun's own seeing.
+Keep the two verbs different. **-r** points at the latest matching event, so `zolazun vawebol dwudawebor` would point at Olazun's own seeing.
 
 **Compare with:** `dar` is *something* (a new, unnamed thing), not the thing from an event already said.
 
@@ -201,9 +201,9 @@ To keep *Sam* as English spelling, write the span. To see the Agebon sound-spell
 
 **Needs:** [Role compounds (the doer)](/roles#role-compounds) · [One time or a practice](/roles#one-time-or-a-practice) · [Saying someone is a teacher](/roles#saying-someone-is-a-teacher) · [The role you act in](/viewpoint#capacity)
 
-English names a person by what they usually do (*a singer*, *a manager*). Agebon builds that noun from the event root: person letter, **`w`**, the practiced-role scope **`e`**, the doer **`z`**, the root, then the ending ([one time or a practice](/roles#one-time-or-a-practice)). `zwezezuyol` is *a singer* from `ezuyol` *sing*, and on `/ɡ/` (`gwezezuyol`) it says someone is one. With scope **`a`**, `zwazezuyol` is only *someone who sings*. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
+English names a person by what they usually do (*a singer*, *a manager*). Agebon builds that noun from the event root: person letter, **`w`**, the practiced-role scope **`e`**, the doer **`z`**, the root, then the ending ([one time or a practice](/roles#one-time-or-a-practice)). `zwozezuyol` is *a singer* from `ezuyol` *sing*, and on `/ɡ/` (`gwozezuyol`) it says someone is one. With scope **`a`**, `zwuzezuyol` is only *someone who sings*. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
 
-> `zwezeluyel varayel.`
+> `zwozeluyel varayel.`
 >
 > z-role-agent-learn | v-write
 >
@@ -211,70 +211,70 @@ English names a person by what they usually do (*a singer*, *a manager*). Agebon
 
 | Agebon | English | Same root as |
 |--------|---------|--------------|
-| `zwezeluyel` | *student* / *pupil* | `eluyel` *learn* |
-| `zwezuduyel` | *teacher* / *professor* / *coach* | `uduyel` *teach* |
-| `zwezaruyel` | *researcher* | `aruyel` *research* |
-| `zwezanalawebol` | *reader* | `analawebol` *read* |
-| `zwezegavalunewol` | *driver* | `egavalunewol` *drive* |
-| `zwezehorelezuyel` | *poet* | `ehorelezuyel` *poetry* |
-| `zwezaralobolol` | *investor* | `aralobolol` *investment* |
-| `zwezaralamuyal` | *employee* | `aralamuyal` *employment* |
-| `zwebaralamuyal` | *employer* (the one the work is done for) | `aralamuyal` *employment* |
-| `zwazayal` | *participant* | `ayal` *handshake* |
-| `zwezugobel` | *leader* / *chairman* / *president* | `ugobel` *crown* |
-| `zwezurel` | *director* | `urel` *compass* |
-| `zwezaduyel` | *manager* / *executive* / *operator* | `aduyel` *administrate* |
-| `zwezalowel` | *adviser* / *consultant* | `alowel` *lantern* |
-| `zwazunal` | *voter* | `unal` *ballot* |
-| `zwezuhuyel` | *critic* | `uhuyel` *judge* |
-| `zwezamuyal` | *maker* / *producer* / *manufacturer* | `amuyal` *manufacture* |
-| `zwezunonal` | *reporter* / *journalist* | `unonal` *newspaper* |
-| `zwazugol` | *witness* / *reference* (one who vouches) | `ugol` *attest* |
-| `zwezarayel` | *writer* | `arayel` *write* |
-| `zwezahurel` | *analyst* | `ahurel` *bar-chart* |
-| `zwezuguyol` | *designer* | `uguyol` *craft* |
-| `zwezeguyel` | *engineer* | `eguyel` *construct* |
-| `zwezobebul` | *doctor* | `obebul` *pill* |
-| `zwezezuyol` | *singer* | `ezuyol` *sing* |
-| `zwezehorel` | *musician* | `ehorel` *sheet-music* |
-| `zwezeyul` | *actor* | `eyul` *theater* |
-| `zwazeyahal` | *player* | `eyahal` *playground* |
-| `zwezuzuval` | *athlete* | `uzuval` *sport* |
-| `zwazowunal` | *competitor* | `owunal` *water-polo* |
-| `zwazeverel` | *winner* | `everel` *victory* |
-| `zwezegobel` | *supporter* / *sponsor* | `egobel` *crutch* |
-| `zwezolamal` | *lover* | `olamal` *love* |
-| `zwezuwodal` | *servant* / *server* / *assistant* | `uwodal` *plate* |
-| `zwezuzubal` | *worker* | `uzubal` *sweat* |
-| `zwezehal` | *dealer* | `ehal` *currency-exchange* |
-| `zwazemahel` | *immigrant* | `emahel` *immigration* |
-| `zwazebal` | *audience* (those who hear) | `ebal` *ear* |
-| `zwezoyayul` | *terrorist* | `oyayul` *ogre* |
-| `zwazehavam` | *tourist* | `ehaval` *ship* |
-| `zwezaheham` | *neighbor* (add `em buwon` for *near me*) | `ahehal` *house* |
-| `zwezobayel` | *officer* (police) | `obayel` *police* |
-| `zwezagahem` | *official* / *minister* | `agahem` *institution* |
-| `zwezahalagahel` | *politician* | `ahalagahel` *government* |
-| `zwezenal` | *secretary* (keeps the ledger) | `enal` *ledger* |
-| `zwezobewem` | *artist* | `obewem` *artistry* |
-| `zwazogunum` | *owner* | `ogunum` *ownership* |
-| `zwezonel` | *historian* | `onel` *scroll* |
-| `zwezogowam` | *consumer* | `ogowam` *consumption* |
-| `zwazubaval` | *passenger* / *rider* (of a bus) | `ubaval` *bus* |
-| `zwezuzubalx` | *staff* / *personnel* (workers as a set) | `uzubal` *sweat* |
-| `zwadunal` | *candidate* (the one voted for) | `unal` *ballot* |
-| `zwabehal` | *customer* / *purchaser* (the other party of a trade) | `ehal` *currency-exchange* |
-| `zwabobulem` | *host* (the other party of a hospitality tie) | `obulem` *hospitality* |
+| `zwozeluyel` | *student* / *pupil* | `eluyel` *learn* |
+| `zwozuduyel` | *teacher* / *professor* / *coach* | `uduyel` *teach* |
+| `zwozaruyel` | *researcher* | `aruyel` *research* |
+| `zwozanalawebol` | *reader* | `analawebol` *read* |
+| `zwozegavalunewol` | *driver* | `egavalunewol` *drive* |
+| `zwozehorelezuyel` | *poet* | `ehorelezuyel` *poetry* |
+| `zwozaralobolol` | *investor* | `aralobolol` *investment* |
+| `zwozaralamuyal` | *employee* | `aralamuyal` *employment* |
+| `zwobaralamuyal` | *employer* (the one the work is done for) | `aralamuyal` *employment* |
+| `zwuzayal` | *participant* | `ayal` *handshake* |
+| `zwozugobel` | *leader* / *chairman* / *president* | `ugobel` *crown* |
+| `zwozurel` | *director* | `urel` *compass* |
+| `zwozaduyel` | *manager* / *executive* / *operator* | `aduyel` *administrate* |
+| `zwozalowel` | *adviser* / *consultant* | `alowel` *lantern* |
+| `zwuzunal` | *voter* | `unal` *ballot* |
+| `zwozuhuyel` | *critic* | `uhuyel` *judge* |
+| `zwozamuyal` | *maker* / *producer* / *manufacturer* | `amuyal` *manufacture* |
+| `zwozunonal` | *reporter* / *journalist* | `unonal` *newspaper* |
+| `zwuzugol` | *witness* / *reference* (one who vouches) | `ugol` *attest* |
+| `zwozarayel` | *writer* | `arayel` *write* |
+| `zwozahurel` | *analyst* | `ahurel` *bar-chart* |
+| `zwozuguyol` | *designer* | `uguyol` *craft* |
+| `zwozeguyel` | *engineer* | `eguyel` *construct* |
+| `zwozobebul` | *doctor* | `obebul` *pill* |
+| `zwozezuyol` | *singer* | `ezuyol` *sing* |
+| `zwozehorel` | *musician* | `ehorel` *sheet-music* |
+| `zwozeyul` | *actor* | `eyul` *theater* |
+| `zwuzeyahal` | *player* | `eyahal` *playground* |
+| `zwozuzuval` | *athlete* | `uzuval` *sport* |
+| `zwuzowunal` | *competitor* | `owunal` *water-polo* |
+| `zwuzeverel` | *winner* | `everel` *victory* |
+| `zwozegobel` | *supporter* / *sponsor* | `egobel` *crutch* |
+| `zwozolamal` | *lover* | `olamal` *love* |
+| `zwozuwodal` | *servant* / *server* / *assistant* | `uwodal` *plate* |
+| `zwozuzubal` | *worker* | `uzubal` *sweat* |
+| `zwozehal` | *dealer* | `ehal` *currency-exchange* |
+| `zwuzemahel` | *immigrant* | `emahel` *immigration* |
+| `zwuzebal` | *audience* (those who hear) | `ebal` *ear* |
+| `zwozoyayul` | *terrorist* | `oyayul` *ogre* |
+| `zwuzehavam` | *tourist* | `ehaval` *ship* |
+| `zwozaheham` | *neighbor* (add `em buwon` for *near me*) | `ahehal` *house* |
+| `zwozobayel` | *officer* (police) | `obayel` *police* |
+| `zwozagahem` | *official* / *minister* | `agahem` *institution* |
+| `zwozahalagahel` | *politician* | `ahalagahel` *government* |
+| `zwozenal` | *secretary* (keeps the ledger) | `enal` *ledger* |
+| `zwozobewem` | *artist* | `obewem` *artistry* |
+| `zwuzogunum` | *owner* | `ogunum` *ownership* |
+| `zwozonel` | *historian* | `onel` *scroll* |
+| `zwozogowam` | *consumer* | `ogowam` *consumption* |
+| `zwuzubaval` | *passenger* / *rider* (of a bus) | `ubaval` *bus* |
+| `zwozuzubalx` | *staff* / *personnel* (workers as a set) | `uzubal` *sweat* |
+| `zwudunal` | *candidate* (the one voted for) | `unal` *ballot* |
+| `zwubehal` | *customer* / *purchaser* (the other party of a trade) | `ehal` *currency-exchange* |
+| `zwubobulem` | *host* (the other party of a hospitality tie) | `obulem` *hospitality* |
 
-Rows with scope **`a`** name a part in one event (*winner*, *witness*, *passenger*), so that vowel is enough. The one acted on uses part **`d`**: `zwadenamul` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zwazebalx`).
+Rows with scope **`a`** name a part in one event (*winner*, *witness*, *passenger*), so that vowel is enough. The one acted on uses part **`d`**: `zwudenamul` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zwuzebalx`).
 
-A noun that specifies the job goes in the stem: `zwezudozoxowurel` is *a dog walker*. The noun's part in the job is as open as in English.
+A noun that specifies the job goes in the stem: `zwozudozoxowurel` is *a dog walker*. The noun's part in the job is as open as in English.
 
-English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwezuduyel` is *as a teacher* ([the role you act in](/viewpoint#capacity)). `hwuezuduyel` is *not as a teacher*, speaking off duty.
+English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwozuduyel` is *as a teacher* ([the role you act in](/viewpoint#capacity)). `hwuozuduyel` is *not as a teacher*, speaking off duty.
 
-**Compare with:** *like a teacher* is the [similative](/relations#similative) (`hewom blwezuduyel`).
+**Compare with:** *like a teacher* is the [similative](/relations#similative) (`hewom blwozuduyel`).
 
-*Shareholder* is *owner* of a part: `zwazogunum gobem blahehal` (owner of a part of the house). *Colleague* is a worker tied to you: `zwezuzubal gohuyam bluwon`. *Relative* is a person who is part of the family: `zeyol gobem blavayal`.
+*Shareholder* is *owner* of a part: `zwuzogunum gobem blahehal` (owner of a part of the house). *Colleague* is a worker tied to you: `zwozuzubal gohuyam bluwon`. *Relative* is a person who is part of the family: `zeyol gobem blavayal`.
 
 **Compare with:** for *boss* or *chief*, the tie form names whom they lead: `zolazun gugobem bluzozen` is *Olazun is Uzozen's boss* ([social relations](/social-ties#social-relations)).
 
@@ -362,16 +362,16 @@ English *buy* and *sell* are two views of one swap. Agebon has one trading verb,
 
 **Needs:** [The extra `/b/` party (`o`)](/roles#role-compounds) · [Extra noun (`ol`, `om`)](/hooks#extra-noun) · [Exchange](/relations#exchange) · [Coordinated lists](/rank-joins#respectively) · [Fault](/fault#fault)
 
-English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Agebon keeps the giving verb `vewal` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in plain `/b/` after the verb ([recipient](/clause#extra-nouns)). To name the parties from the verb itself, use the [role compounds](/roles#role-compounds): **`zwazewal`** is the giver (*supplier*, *provider*) and **`zwabewal`** is the recipient (*receiver*). **-r** (`zwabewar`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vegeral` (*credit*, with the *lend* sense): the borrower is the recipient.
+English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Agebon keeps the giving verb `vewal` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in plain `/b/` after the verb ([recipient](/clause#extra-nouns)). To name the parties from the verb itself, use the [role compounds](/roles#role-compounds): **`zwuzewal`** is the giver (*supplier*, *provider*) and **`zwubewal`** is the recipient (*receiver*). **-r** (`zwubewar`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vegeral` (*credit*, with the *lend* sense): the borrower is the recipient.
 
 | English | Agebon | Reading |
 |---------|--------|---------|
 | *give* / *provide* / *contribute* / *submit* / *hand in* | `zuzozen danal vewal bolazun.` | the book goes to Olazun |
 | *get* / *receive* / *acquire* (a thing handed over) | the same sentence | the receiver is the `/b/` |
-| *giver* / *supplier* / *provider* | `zwazewal` | doer of the giving |
-| *receiver* | `zwabewal` | the one given to |
+| *giver* / *supplier* / *provider* | `zwuzewal` | doer of the giving |
+| *receiver* | `zwubewal` | the one given to |
 | *lend* / *borrow* | `zuzozen danal vegeral bolazun.` | the book is lent to Olazun |
-| *borrower* | `zwabegeral` | the one lent to |
+| *borrower* | `zwubegeral` | the one lent to |
 | *distribute* | `zuzozen danal vewal bolazun bahelan bal.` | the book goes to each of them |
 | *earn* | `zuzozen varayel heham blaral.` | write in exchange for money |
 | *owe* | `zuzozen garam blolazun.` | in debt to Olazun |
@@ -471,7 +471,7 @@ English makes nouns for a part, a kind, a role, and a manner. Agebon has no sepa
 | *the dodo* / *the wolf* (the species itself) | `zuan gedozol` | [the kind itself](/universals-domains#kind-reference) |
 | *gender* / *sex* (the category) | `zevugom zemugom zam.` | the open pair female, male |
 | *sex* (the act) | `zelemam` | sexuality |
-| *patient* (being treated) | `zwaduhemul` | the one who undergoes healing |
+| *patient* (being treated) | `zwuduhemul` | the one who undergoes healing |
 | *scene* (where it happens) | `zuzozen vowurel el bahehal. zolazun vuhohol er.` | the place already named: *there* |
 | *function* (purpose) | `zanal guwathom.` | the book's purpose is competence |
 | *size* (how big) | `zanal zehowol zoel gelazom.` | same size as the hammer |
@@ -512,7 +512,7 @@ An English noun like *case* or *board* covers several jobs, and Agebon has a dif
 | *deal* / *bargain* (a swap) | `zuzozen danal heham blaral veham.` | trades a book for money |
 | *deal* (*a great deal*) | `thubem zol gral` | more than the usual amount |
 | *bid* / *offer* (a price) | `zuzozen daral vewal heham blanal.` | offers money in exchange for the book |
-| *contract* (agreement) | `hwadal` on the clause | they signed on: a binding yes |
+| *contract* (agreement) | `hwudal` on the clause | they signed on: a binding yes |
 | *figure out* / *find out* | `zuzozen danal vumewol.` | finds the object |
 | *figure* (shape) | `zuvogal` | a frame |
 | *object* (a thing) | `zar` | an unnamed thing |
@@ -541,17 +541,17 @@ An English noun like *case* or *board* covers several jobs, and Agebon has a dif
 | *density* | `zehazologoral` | bulk packed into an extent |
 | *afternoon* | `zuzureladurul` | the late part of the day |
 | *popular* | `golamalehazol` | loved by the many |
-| *user* | `zwazahebal` | doer with the hand |
+| *user* | `zwuzahebal` | doer with the hand |
 | *sentence* (a punishment) / *punishment* / *penalty* | `zobayemenamul` | harm from authority |
 | *punish* | `zuzozen dobayemenamul vewal bolazun.` | gives Olazun a penalty ([give](#give-get)) |
 | *set* (a group of things) | `zanalx` | books as a group ([group words](say-amounts.md#group-words)) |
 | *abortion* | `zawayalogahal` | a pregnancy ended |
-| *available* | `gwabewaxal` | can be the recipient of a gift |
+| *available* | `gwubewaxal` | can be the recipient of a gift |
 | *independent* | `gebom gahum blolazun gul` | does not depend on Olazun |
 | *independent* (of everyone) | `zuzozen gebom gahum blur gul.` | depends on no other |
 | *straight* (direct) | `gurem` | direction |
 | *hang* | `zuzozen dolazun vawuladuhel.` | holds Olazun from above |
-| *editor* | `zwazebeweloruyol` | doer of the editing |
+| *editor* | `zwuzebeweloruyol` | doer of the editing |
 | *closely* | `zuzozen vawebol hazavem hul.` | looks, not at a distance |
 | *briefly* | `zuzozen vowurel bazerem gram.` | walks for about five seconds |
 | *wherever* | `el bual gahehal` | everywhere houses are |
@@ -586,7 +586,7 @@ An English noun like *case* or *board* covers several jobs, and Agebon has a dif
 | *environment* / *surroundings* | `zahehamogugal` | the world seen as the home around you |
 | *efficiency* | `zuvahamuzubal` | output for the effort |
 | *holder* (a thing that holds) | `zahebalamobal` | what holds in the hand |
-| *holder* (a person who bears) | `zwazamobal` | doer of the bearing |
+| *holder* (a person who bears) | `zwuzamobal` | doer of the bearing |
 | *intervention* | `zuzozen vavobel hedam blolazun blahelan bal.` | comes between the two |
 | *reduce* | `zuzozen danal v-3.` | decreases the object by three |
 | *reduce* (cut down) | `zuzozen danal vagowul.` | cuts it |
@@ -614,8 +614,8 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 | English | Agebon | Reading |
 |---------|--------|---------|
 | *contribution* / *acquisition* (the act) | `zewal` | a giving, seen as a whole |
-| *contribution* (what is given) / *acquisition* (what is got) | `zwadewal` | the thing the giving happens to |
-| *that contribution* / *that acquisition* | `dewar` / `dwadewar` | the latest giving, or what it passed on |
+| *contribution* (what is given) / *acquisition* (what is got) | `zwudewal` | the thing the giving happens to |
+| *that contribution* / *that acquisition* | `dewar` / `dwudewar` | the latest giving, or what it passed on |
 | *contribution* (a share in a cause) | `thahur blarl` | one share among several causes |
 | *representation* (acting for someone) | `zuzozen ganom blolazun` | Uzozen, on behalf of Olazun |
 | *reaction* / *response* | `zogewem` | the answer to what unlocked it |
@@ -624,10 +624,10 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 | *comparison* / *contrast* (setting two against each other) | `zezom` | contrast |
 | *compare A with B* | `zuzozen dolazun vezom bahelan.` | sets Olazun against Ahelan |
 | *preference* (the one preferred) | `zolamalugulel` | the one loved first |
-| *tendency* (a type across scenes) | `zalamuthul` | lying as a type: a tendency to lie |
-| *a liar type* (the person) | `zwuzalamul` | someone who lies, as a type |
+| *tendency* (a type across scenes) | `zalamuthal` | lying as a type: a tendency to lie |
+| *a liar type* (the person) | `zwazalamul` | someone who lies, as a type |
 | *tends to* / *often lies* | `zuzozen valamul huam.` | usually lies |
-| *a lying type* | `zuzozen valamuthul.` | the type-claim |
+| *a lying type* | `zuzozen valamuthal.` | the type-claim |
 | *introduction* (the act) | `zolazun veluyel duzozen thewem blahelan.` | Olazun learns Uzozen, Ahelan makes it happen |
 | *introduction* (opening of a text) | `zugulel gobem blanal` | the first part of a book |
 | *unemployment* | `zuzozen garalamuyal gul.` | not in paid production |
@@ -1117,14 +1117,14 @@ These three English nouns each hide two jobs. *Role* is the function someone pla
 
 | English | Agebon | Reading |
 |---------|--------|---------|
-| *role* (the function someone plays) | `zolazun gwezuduyel.` | the usual role: role compound with **`the`** on `/ɡ/` |
+| *role* (the function someone plays) | `zolazun gwozuduyel.` | the usual role: role compound with **`the`** on `/ɡ/` |
 | *title* (the name of a work) | `d@[enuron olazun]` | cite with **`@`** |
 | *title* (a claim to own) | `zogunum` | *ownership*, the abstract sense of `ogunu` |
 | *address* (speak to someone) | `yolazun.` | call them with `/y/` + their name |
 | *address* (speak to a group) | `yeyonx.` | `/y/` + the kind as a title, **-nx** |
 | *address* (a speech) | `vezuyel` | the telling itself |
 
-> `zolazun gwezuduyel.`
+> `zolazun gwozuduyel.`
 >
 > z-Olazun | g-role-agent-teach
 >

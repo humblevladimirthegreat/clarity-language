@@ -195,7 +195,7 @@ const NP_HEAD = {
 function isScopeThoVerb(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;
   const v = family?.kind === "x" && family.xFamily === "scope" ? family.stanceVowel : undefined;
-  return tokenIs(token, V) && (v === "o" || v === "ao" || v === "uo");
+  return tokenIs(token, V) && (v === "e" || v === "ae" || v === "ue");
 }
 
 function joinSeries(token: IToken): string {

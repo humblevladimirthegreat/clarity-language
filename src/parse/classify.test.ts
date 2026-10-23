@@ -51,15 +51,15 @@ describe("classify", () => {
     assert.deepEqual(lateral.family, { kind: "x", xFamily: "lateral", leftRoots: ["eweze"], rightRoots: ["amo"] });
   });
 
-  it("reads DIR th o on an arrow root as landmark facing with pair scope", () => {
-    const word = classifyText("gazuhethol");
+  it("reads DIR th e on an arrow root as landmark facing with pair scope", () => {
+    const word = classifyText("gazuhethel");
     assert.deepEqual(word.family, {
       kind: "x",
       xFamily: "lateral",
       leftRoots: ["azuhe"],
       rightRoots: [],
       landmark: true,
-      scopeVowel: "o",
+      scopeVowel: "e",
     });
   });
 

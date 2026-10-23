@@ -114,7 +114,7 @@ When a joined subject shares one thing marked [**`SAME`**](/predication#identity
 
 For English *whoever* / *whatever*, use a bare [role compound](/roles#role-compounds), which names anyone who does it: *whoever walks* is *everyone who walks*. Use the agent compound (**`a`**) for *whoever*, and the undergoer compound (**`u`**) for *whatever*.
 
-> `zual gwazowurel vezuyol.`
+> `zual gwuzowurel vezuyol.`
 >
 > [z-everything | g-episode-agent-walk] | v-sing
 >
@@ -180,9 +180,9 @@ For *everyone, no exceptions*, use `zual geyol`. As a topic, `xeyon` (*now, abou
 
 #### Every and none, by set {#kind-domains}
 
-*Everyone hates me* and *nobody ever listens* hide how far they reach. To name the set a claim covers, put a SHARED word after the join that bounds it. *Everyone we know* is the undergoer role compound of *know* with [pair scope](/label-seams#scope-relative): `gwodanam blayan` is *known to the two of us*.
+*Everyone hates me* and *nobody ever listens* hide how far they reach. To name the set a claim covers, put a SHARED word after the join that bounds it. *Everyone we know* is the undergoer role compound of *know* with [pair scope](/label-seams#scope-relative): `gwedanam blayan` is *known to the two of us*.
 
-> `zual gwodanam blayan vezuvol.`
+> `zual gwedanam blayan vezuvol.`
 >
 > [z-everything | [g-pair-patient-knowledge | bl-interlocutors]] | v-sleep
 >
@@ -193,12 +193,12 @@ The join does the rest, as on any SHARED word:
 | Agebon | Covers | English |
 |--------|--------|---------|
 | `zual geyol` | the people in this situation | *everyone* (here) |
-| `zual gwodanam blayan` | the people we both know | *everyone we know* |
-| `zuam gwodanam blayan` | the people we both know, exceptions left open | *everyone we know, as far as I know* |
-| `zal gwodanam blayan` | none of the people we both know | *nobody we know* |
-| `zarx gwodanam blayan` | some of the people we both know | *some people we know* |
-| `zual gwodanam blayan zul` | the people we both know, denied as a whole | *not everyone we know* |
-| `zual gwodanam bluwon` | the people I know | *everyone I know* |
+| `zual gwedanam blayan` | the people we both know | *everyone we know* |
+| `zuam gwedanam blayan` | the people we both know, exceptions left open | *everyone we know, as far as I know* |
+| `zal gwedanam blayan` | none of the people we both know | *nobody we know* |
+| `zarx gwedanam blayan` | some of the people we both know | *some people we know* |
+| `zual gwedanam blayan zul` | the people we both know, denied as a whole | *not everyone we know* |
+| `zual gwedanam bluwon` | the people I know | *everyone I know* |
 
 With `blayan`, the other party is the two of you together: people both of you know. The listener can name someone in that set, which an unbounded *everyone* never allows.
 

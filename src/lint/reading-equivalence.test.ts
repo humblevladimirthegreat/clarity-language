@@ -34,7 +34,7 @@ describe("sameReading", () => {
   });
 
   it("does not match a role compound against the event's own resume", () => {
-    assert.equal(sameReading("zuzozen vuhohol. zwazuhohor vowurel.", "zuzozen vuhohol. zuhohor vowurel.", tables), false);
+    assert.equal(sameReading("zuzozen vuhohol. zwuzuhohor vowurel.", "zuzozen vuhohol. zuhohor vowurel.", tables), false);
   });
 
   it("does not match swapped hook sides or swapped hooks", () => {

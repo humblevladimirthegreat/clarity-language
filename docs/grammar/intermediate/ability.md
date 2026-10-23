@@ -25,7 +25,7 @@ Unlike PLAN, DECISION carries **no time**. It says what you chose, not that the 
 
 **Compare with:** [PLAN](/intention#plan-predict) says how fully you have planned a later act. DECISION says how readily you may change a choice, whenever the act falls.
 
-**Compare with:** a [say word](feelings-permission.md#say-words) on yourself is a yes you give openly. `zuwon vowurel hwazal.` is *I promise to walk*, which others can hold you to; `zuwon thogol vowurel.` is *I've decided for good to walk*, a choice only you can see.
+**Compare with:** a [say word](feelings-permission.md#say-words) on yourself is a yes you give openly. `zuwon vowurel hwuzal.` is *I promise to walk*, which others can hold you to; `zuwon thogol vowurel.` is *I've decided for good to walk*, a choice only you can see.
 
 #### Endings: changeability
 <a id="decision-changeability"></a>
@@ -216,7 +216,7 @@ After a holder, WANT and DECISION are the holder's, just as PLAN is. After **`uo
 >
 > "Olazun sleeps, against Uzozen's wishes, as far as I can tell."
 
-**Compare with:** [requirement](feelings-permission.md#requirement) `zuzozen vowurel hwavom blolazun.` (*Olazun makes Uzozen walk*) puts a demand on Uzozen, who now owes the walk. **`zuzozen thogom vowurel.`** (*I've decided that Uzozen walks*) says only that you chose how things go, the way a coach decides who plays, with nothing asked of Uzozen.
+**Compare with:** [requirement](feelings-permission.md#requirement) `zuzozen vowurel hwuvom blolazun.` (*Olazun makes Uzozen walk*) puts a demand on Uzozen, who now owes the walk. **`zuzozen thogom vowurel.`** (*I've decided that Uzozen walks*) says only that you chose how things go, the way a coach decides who plays, with nothing asked of Uzozen.
 
 ### Plan or forecast
 <a id="predict-evidentiality"></a>

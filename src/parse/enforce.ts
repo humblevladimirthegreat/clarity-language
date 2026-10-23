@@ -680,12 +680,14 @@ function enforceFeelingLandmark(words: LexWord[], hosted: Hosted | undefined): v
   }
 }
 
-/** Whose say: a `bl-` word names someone over the act (`v`), or, under pair scope `o`, the one party a participant's say is toward (feelings-permission.md#say-words). */
+/** Whose say: a `bl-` word names someone over the act (`v`), or, under pair scope, the one party a participant's say is toward (feelings-permission.md#say-words). */
 function enforceSayHost(unit: HUnit): void {
   const family = unit.word.family;
   if (family.kind !== "say") return;
   const bound = unit.hosted?.bound;
-  if (bound && family.part !== "v" && !family.scope.includes("o")) throw new ConstructionError("sayHost", `${unit.word.raw} ${bound.raw}`);
+  if (bound && family.part !== "v" && !family.scope.includes("e")) {
+    throw new ConstructionError("sayHost", `${unit.word.raw} ${bound.raw}`);
+  }
 }
 
 /**

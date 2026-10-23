@@ -68,7 +68,7 @@ export type DetectorSuggestion = DetectorHit & Exampled & { kind: "detector"; ti
 export type EntrySuggestion = HookPhrase & Exampled & { kind: "entry"; tier: "grammar"; form: string; english: string; link: string; band?: Band };
 /**
  * A role compound for a doer noun (*teacher*, *dog walker*): the `route` tier, since the lexicon
- * leaves doers out on purpose. `usual` adds **`the`** (*a teacher*, the usual role); without it
+ * leaves doers out on purpose. `usual` adds **`tho`** (*a teacher*, the usual role); without it
  * the word is *someone who teaches*.
  */
 export type RoleSuggestion = {
@@ -316,7 +316,7 @@ function eventRoots(data: HelperData, verb: string): LexiconSuggestion[] {
 
 /**
  * Role compounds for a doer noun ([role compounds](roles.md#role-compounds)): the practiced role
- * (`zwezuduyel` *a teacher*) and the plain doer (`zwazuduyel` *someone who teaches*), and, when a
+ * (`zwozuduyel` *a teacher*) and the plain doer (`zwuzuduyel` *someone who teaches*), and, when a
  * noun before it specifies the event, the stacked stem (`zwezudozoxowurel` *a dog walker*).
  */
 function roleSuggestions(data: HelperData, t: TaggedTerm, role: string | undefined, modifier: TaggedTerm | undefined): RoleSuggestion[] {
@@ -330,7 +330,7 @@ function roleSuggestions(data: HelperData, t: TaggedTerm, role: string | undefin
     const stems = [...(modRoot ? [{ stem: `${modRoot.form}x${root.form}`, modifier: { english: modifier!.normal, root: modRoot.form } }] : []), { stem: root.form }];
     for (const { stem, modifier: mod } of stems) {
       for (const usual of [true, false]) {
-        const form = `${role}w${usual ? "e" : "a"}z${stem}${ending}`;
+        const form = `${role}w${usual ? "o" : "u"}z${stem}${ending}`;
         if (data.wordParses && !data.wordParses(form)) continue;
         out.push({
           kind: "role",
@@ -550,7 +550,7 @@ export function scopeSeam(s: Suggestion): string | undefined {
 }
 
 /**
- * The slot's word with `seam` before its ending: a root's word (`gunemul` → `gunemuthal`), or the
+ * The slot's word with `seam` before its ending: a root's word (`gunemul` → `gunemuthul`), or the
  * act on `/v/` for an *-ing* noun (*a lying type*) and a doer noun (*becoming a liar*), when the
  * word parser accepts it.
  */
@@ -571,8 +571,8 @@ function scopedWord(data: HelperData, slot: Slot, seam: string): string | undefi
   return undefined;
 }
 
-/** Seams whose party follows in a `bl-` word (label-seams.md#scope-relative): **`tho`**, **`thuo`**. */
-const PAIR_SEAMS = new Set(["tho", "thuo"]);
+/** Seams whose party follows in a `bl-` word (label-seams.md#scope-relative): **`the`**, **`thue`**. */
+const PAIR_SEAMS = new Set(["the", "thue"]);
 
 /** The first noun after slot `n`, as a `bl-` word (`zolazun` → `blolazun`): a pair scope's party. */
 function partyWord(slots: readonly Slot[], n: number): string | undefined {

@@ -276,7 +276,7 @@ A [quote](/spans#writing) keeps its speaker's frame: nothing carries into it fro
 
 English *it follows that*, *P, so Q* and *by deduction* claim more than good evidence: if the premises hold, the conclusion **must** hold. Put DEDUCED (**`thanam`**) on the conclusion and the premises after **`blarl`**, as in any [evidence clause](#evidence-clause). Join several premises with a [clause join](/joins#clause-joins); a join after a stand-in stays in the dependent, so every premise is grounds. You assert the premises and the conclusion.
 
-> `zuzozen vuduyel thanam blarl zual gwezuduyel vuduyel xam zuzozen gwezuduyel.`
+> `zuzozen vuduyel thanam blarl zual gwozuduyel vuduyel xam zuzozen gwozuduyel.`
 >
 > z-Uzozen | v-teach | [th-DEDUCED | bl-that-clause] | [[z-everything | g-role-agent-teach] | v-teach | x-and.open | z-Uzozen | g-role-agent-teach]
 >
@@ -284,7 +284,7 @@ English *it follows that*, *P, so Q* and *by deduction* claim more than good evi
 
 To claim only that the conclusion follows, put a [pole](iff-fault.md#only-because) between the channel and **`blarl`**. The pole is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
 
-> `zuzozen vuduyel thanam thohom blarl zual gwezuduyel vuduyel xam zuzozen gwezuduyel.`
+> `zuzozen vuduyel thanam thohom blarl zual gwozuduyel vuduyel xam zuzozen gwozuduyel.`
 >
 > z-Uzozen | v-teach | th-DEDUCED | [th-if | bl-that-clause] | [[z-everything | g-role-agent-teach] | v-teach | x-and.open | z-Uzozen | g-role-agent-teach]
 >
@@ -302,7 +302,7 @@ The ending grades how far you checked the steps ([evidence strength](#evidence-s
 
 When the premises come first, open the conclusion with the linker **`xahel`** *it follows that* ([sentence linkers](sentence-linkers.md#sentence-linkers)). It reaches back to the one sentence before it, so join every premise into that sentence.
 
-> `zual gwezuduyel vuduyel xam zuzozen gwezuduyel. xahel zuzozen vuduyel.`
+> `zual gwozuduyel vuduyel xam zuzozen gwozuduyel. xahel zuzozen vuduyel.`
 >
 > [[z-everything | g-role-agent-teach] | v-teach | x-and.open | z-Uzozen | g-role-agent-teach] . x-it-follows | z-Uzozen | v-teach
 >

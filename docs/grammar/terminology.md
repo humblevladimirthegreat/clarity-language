@@ -17,20 +17,20 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **ABIL** | Hostless *can* / *can’t* (no single verb) | `hodaxel` | [Can and can't](/can-and-cant#ability-fallback) |
 | **AIMED** | Emotion locus: aimed at a target | `wawothumel` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **ASIDE** | An aside span | `th(hogowul)` | [Spans](/spans#asides) |
-| **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwavam` | [Feelings and permission](/feelings-permission#say-words) |
+| **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwuvam` | [Feelings and permission](/feelings-permission#say-words) |
 | **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Decision and try](/ability#try) |
 | **AWAY** | Emotion locus: moving off from a target | `wawothumum` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thewem` | [Iff and CAUSE](/iff-fault#cause) |
 | **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraer` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **CITE** | A cite span: quoted wording | `d[uzozen]` | [Spans](/spans#writing) |
 | **CLUES** | Evidential: reasoned from clues about this case | `theyem` | [Evidentiality](/evidentiality#evidentiality) |
-| **CHOICE** | Say word answer: their call | `hwavem` | [Feelings and permission](/feelings-permission#say-words) |
+| **CHOICE** | Say word answer: their call | `hwuvem` | [Feelings and permission](/feelings-permission#say-words) |
 | **COLLAPSE** | Emotion locus: out of fight, giving up | `wawothumual` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **DECISION** | Pick-firmness mood | `thogom` | [Decision and try](/ability#decision) |
 | **DEDUCED** | Evidential: must hold if the premises hold | `thanam` | [Evidentiality](/evidentiality#deduction) |
 | **FAWN** | Emotion locus: placating a target | `wawothumaom` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **FLOWING** | Emotion motion: steady, a current you can ride | `wawothumom` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **FORBID** | Say word answer: no, forbid | `hwavul` | [Feelings and permission](/feelings-permission#say-words) |
+| **FORBID** | Say word answer: no, forbid | `hwuvul` | [Feelings and permission](/feelings-permission#say-words) |
 | **FORMER** | Episode standing: not the climate claimed now | `helam` | [Notional and standing](/notional-standing#residue) |
 | **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **INTUITION** | Evidential: gut sense you cannot fully spell out | `thabom` | [Evidentiality](/evidentiality#evidentiality) |
@@ -46,7 +46,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **PATTERN** | Evidential: from regularity | `thubem` | [Evidentiality](/evidentiality#evidentiality) |
 | **PLAN** | Intention-framing mood | `thagem` | [Intention](/intention#plan-predict) |
 | **REPORTED** | Evidential: said or written by someone else | `thebam` | [Evidentiality](/evidentiality#evidentiality) |
-| **REQUIRE** | Say word answer: require, ask for (*must*) | `hwavol` | [Feelings and permission](/feelings-permission#say-words) |
+| **REQUIRE** | Say word answer: require, ask for (*must*) | `hwuvol` | [Feelings and permission](/feelings-permission#say-words) |
 | **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Notional and standing](/notional-standing#residue) |
 | **RESISTING** | Emotion locus: pushing against a target | `wawothumuor` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **SAME** | Identity copula | `gorol` | [Predication](/predication#identity) |
@@ -188,11 +188,11 @@ Silence counted in beats at a sentence edge with no word: a **break** puts the n
 
 ### Capacity
 
-A slot-part role compound on `/h/` (`hwezuduyel`): the role the act is done in (*as a teacher*).
+A slot-part role compound on `/h/` (`hwozuduyel`): the role the act is done in (*as a teacher*).
 
 [Viewpoint and landmark](/viewpoint#capacity)
 
-**Compare with:** resemblance is the [similative](/relations#similative) (`hewom blwezuduyel` *like a teacher*). [Classification](#classification) on `/ɡ/` says someone **is** that role (`gwezuduyel`).
+**Compare with:** resemblance is the [similative](/relations#similative) (`hewom blwozuduyel` *like a teacher*). [Classification](#classification) on `/ɡ/` says someone **is** that role (`gwozuduyel`).
 
 ### Invited / offered / trial
 <a id="asked-typical-history"></a>
@@ -267,7 +267,7 @@ Polar patterns that confirm a denied body.
 
 ### Content of the event
 
-A role word whose part consonant names a quality of the event (`dwahowurel` *a way of walking*, `dwahar` *the way it was done*), not a person in it.
+A role word whose part consonant names a quality of the event (`dwuhowurel` *a way of walking*, `dwahar` *the way it was done*), not a person in it.
 
 [Viewpoint and landmark](/viewpoint#content-of-the-event)
 
@@ -329,7 +329,7 @@ Set **`a`** + singular SHARED = *both/each are ADJ*.
 
 ### Domain / generic / *every K*
 
-SHARED kind plus invert / standalone joins; a SHARED word after the join can bound the set (`zual gwodanam blayan` *everyone we know*).
+SHARED kind plus invert / standalone joins; a SHARED word after the join can bound the set (`zual gwedanam blayan` *everyone we know*).
 
 [Universals and domains](/universals-domains#universals-domains-generics)
 
@@ -403,11 +403,11 @@ Hosted: noun bolted onto a complex `/ɡ/`, `/h/`, or `/th/`. Unhosted: recipient
 
 ### Label scope
 
-Mid-word **`th`** plus a vowel on a content root, or the vowel right after **`w`** on a role word: this episode (**`tha`**), practiced role (**`the`**), this pair (**`tho`**), type across scenes (**`thu`**), or a stacked vowel.
+Mid-word **`th`** plus a vowel on a content root, or the vowel right after **`w`** on a role word: this episode (**`thu`**), practiced role (**`tho`**), this pair (**`the`**), type across scenes (**`tha`**), or a stacked vowel.
 
 [Label seams](/label-seams#label-scope)
 
-**Compare with:** [restrictor](#restrictor) names the occasions, not the kind of claim. [Usual role](#usual-role) is practiced-role **`e`** on a role compound.
+**Compare with:** [restrictor](#restrictor) names the occasions, not the kind of claim. [Usual role](#usual-role) is practiced-role **`o`** on a role compound.
 
 ### Locative relation
 
@@ -749,7 +749,7 @@ Role letter + extra-noun hook vowels (+ **`m`** for the frame or **`r`** to poin
 ### Role compound / agent / patient / recipient
 <a id="role-compound--agent--place--patient--recipient"></a>
 
-Role letter + **`w`** + scope vowel + part consonant + stem (`zwazuduyel`). The part consonant is the role letter the participant had in the event: **`z`** the doer (agent), **`d`** what it acts on or makes (patient), **`b`** the extra party (recipient, or the other party on a relation stem). On `/h/` a slot part is [capacity](#capacity). A [content](#content-of-the-event) part names a quality of the event.
+Role letter + **`w`** + scope vowel + part consonant + stem (`zwuzuduyel`). The part consonant is the role letter the participant had in the event: **`z`** the doer (agent), **`d`** what it acts on or makes (patient), **`b`** the extra party (recipient, or the other party on a relation stem). On `/h/` a slot part is [capacity](#capacity). A [content](#content-of-the-event) part names a quality of the event.
 
 [Role compounds](/roles#role-compounds)
 
@@ -938,7 +938,7 @@ The default word order of a body, set by its speech act: verb late in a statemen
 
 ### Usual role
 
-A role compound with practiced-role scope **`e`** after its **`w`** (`zwezuduyel`): the role as the office they inhabit (*a teacher*). With scope **`a`**, a role compound makes no claim about how often.
+A role compound with practiced-role scope **`o`** after its **`w`** (`zwozuduyel`): the role as the office they inhabit (*a teacher*). With scope **`u`**, a role compound makes no claim about how often.
 
 [Role compounds](/roles#one-time-or-a-practice)
 

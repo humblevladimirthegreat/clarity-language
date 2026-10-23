@@ -10,10 +10,10 @@ Add a hyphen to the English word, then `th` and a vowel for the reach:
 
 | Suffix | Reach |
 |--------|-------|
-| `-tha` | this episode: this stretch of doing |
-| `-the` | a practiced role: the office they inhabit |
-| `-tho` | this pair: true in one relationship |
-| `-thu` | a type across scenes |
+| `-thu` | this episode: this stretch of doing |
+| `-tho` | a practiced role: the office they inhabit |
+| `-the` | this pair: true in one relationship |
+| `-tha` | a type across scenes |
 
 The hyphen only shows that the word in front is English. The letters after it are spelled exactly as in Agebon. The vowel carries the meaning, so the endings from the other lessons do not come back.
 
@@ -21,13 +21,13 @@ Leave the suffix off when the reach doesn't matter. Add it when you'd otherwise 
 
 ## Examples {#examples}
 
-> He `lied-tha`. He's not a `liar-the`.  
-> I was `lazy-tha` this morning.  
-> She's `rude-tho`, to him at least.  
-> We were `careless-tha` on that release.  
-> He's `anxious-thu`.
+> He `lied-thu`. He's not a `liar-tho`.  
+> I was `lazy-thu` this morning.  
+> She's `rude-the`, to him at least.  
+> We were `careless-thu` on that release.  
+> He's `anxious-tha`.
 
-The first line says one act happened, and denies that lying is his practice. `rude-tho` keeps the label inside one relationship. `anxious-thu` does call it a type; the suffix makes that a choice you can see.
+The first line says one act happened, and denies that lying is his practice. `rude-the` keeps the label inside one relationship. `anxious-tha` does call it a type; the suffix makes that a choice you can see.
 
 ## Practice {#practice}
 
@@ -36,19 +36,19 @@ Add the suffix that fits the note.
 **1.** *I was impatient with you.* (just this once)
 
 ::: details Show answer
-I was `impatient-tha` with you.
+I was `impatient-thu` with you.
 :::
 
 **2.** *She's a nurse.* (her role)
 
 ::: details Show answer
-She's a `nurse-the`.
+She's a `nurse-tho`.
 :::
 
 **3.** *He's bossy.* (only with his brother)
 
 ::: details Show answer
-He's `bossy-tho` with his brother.
+He's `bossy-the` with his brother.
 :::
 
 <!-- Source (editors): label-seams.md#label-scope. -->

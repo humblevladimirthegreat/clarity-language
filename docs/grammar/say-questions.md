@@ -291,7 +291,7 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 | *recommend* (you asked for it) | `thawothel` | prescription, invited |
 | *advice* / *suggestion* / *proposal* | the suggestion as a sentence, then point back | [which noun](/dependents#which-noun) |
 | *invite* / *welcome* (someone) | `vunodum` | *hospitality* |
-| *welcome* (you may) | `hwavam` | permission granted |
+| *welcome* (you may) | `hwuvam` | permission granted |
 
 > `yom vowurel zayan.`
 >

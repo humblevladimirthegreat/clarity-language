@@ -357,10 +357,10 @@ y-question | [d-cookie-x | g-how-many] | z-Uzozen | v-see
 **Rule:** [How many?](digitless-exponents.md#how-many)
 :::
 
-**12.** *The rules allow Olazun to sit.* `zolazun vuhohol hwaval.` or `zolazun vuhohol hwavam.`
+**12.** *The rules allow Olazun to sit.* `zolazun vuhohol hwuval.` or `zolazun vuhohol hwuvam.`
 
 ::: details Show answer
-`zolazun vuhohol hwaval.`
+`zolazun vuhohol hwuval.`
 
 z-Olazun | v-sit | h-episode-event-ALLOW-rule
 

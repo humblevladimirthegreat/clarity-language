@@ -301,10 +301,10 @@ z-helmet | g-physical-met-lasting
 **Rule:** [Met](sakes.md#met)
 :::
 
-**7.** *Uzozen sees someone who was punched.* `zuzozen dwadanuvul vawebol.` or `zuzozen dwazanuvul vawebol.`
+**7.** *Uzozen sees someone who was punched.* `zuzozen dwudanuvul vawebol.` or `zuzozen dwuzanuvul vawebol.`
 
 ::: details Show answer
-`zuzozen dwadanuvul vawebol.`
+`zuzozen dwudanuvul vawebol.`
 
 z-Uzozen | d-episode-patient-punch | v-see
 
@@ -361,10 +361,10 @@ z-Olazun | v-sing-unable-modifiable
 **Rule:** [Ability and incapability](can-and-cant.md#ability)
 :::
 
-**12.** *Olazun is angry this time.* `zolazun gunemuthal.` or `zolazun gunemuthul.`
+**12.** *Olazun is angry this time.* `zolazun gunemuthul.` or `zolazun gunemuthal.`
 
 ::: details Show answer
-`zolazun gunemuthal.`
+`zolazun gunemuthul.`
 
 z-Olazun | g-angry-th-episode
 

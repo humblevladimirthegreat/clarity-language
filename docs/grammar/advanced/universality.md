@@ -163,7 +163,7 @@ To say **how you know** the general claim, add a [channel](/evidentiality#eviden
 >
 > "Uzozen always walks, from the few cases I have seen."
 
-> `zual gwezuduyel vuduyel thanal.`
+> `zual gwozuduyel vuduyel thanal.`
 >
 > [z-everything | g-role-agent-teach] | v-teach | th-DEDUCED.strong
 >
@@ -181,8 +181,8 @@ The fence says how far the claim reaches, and the channel says what it rests on.
 |---------|---------------------|---------|---------|
 | *usually*, *as a rule* | `huam` / `zuam` | any, or none | `zuzozen huam vowurel.` |
 | *always, as far as I have checked* | `hual` / `zual` | a weak channel | `zuzozen hual vowurel thuber.` |
-| *it follows that every …* | `zual` | DEDUCED.strong `thanal` | `zual gwezuduyel vuduyel thanal.` |
-| *by definition* | `zual` + `thehem blarl` | none | `zual geyol gwezuduyel thehem blarl zeyor vuduyel.` |
+| *it follows that every …* | `zual` | DEDUCED.strong `thanal` | `zual gwozuduyel vuduyel thanal.` |
+| *by definition* | `zual` + `thehem blarl` | none | `zual geyol gwozuduyel thehem blarl zeyor vuduyel.` |
 | *under the rules of …* | `hal` / `hual` | REPORTED.strong with the rules in `/b/` | `zolazun hal vanuvul thebal blazunal.` |
 | *cats are sleepy* (in general) | `zuam` + kind | any, or none | `zuam gagozol guzemol thubem.` |
 
@@ -196,7 +196,7 @@ A [cause or condition](/causation) on a general claim says how things work. It h
 
 A **definition** works both ways: whatever has the property is that kind, and every member of the kind has it. Write it on a closed fence with **`thehem`** (*if and only if*, from [causation](/iff-fault#only-because)). The grounds sentence is the defining property. A definition needs no channel, because it is a decision about a word, not a report about the world.
 
-> `zual geyol gwezuduyel thehem blarl zeyor vuduyel.`
+> `zual geyol gwozuduyel thehem blarl zeyor vuduyel.`
 >
 > [z-everything | g-person] | g-role-agent-teach | [th-iff | bl-that-clause] | z-←person | v-teach
 >
@@ -204,7 +204,7 @@ A **definition** works both ways: whatever has the property is that kind, and ev
 
 The channel stays on the main sentence and covers the whole generalization. Put it before the pole, as with the [evidence clause](/evidentiality#evidence-clause): `zual gagozol vezuvol thubel thohom blarl …` is *going by a well-established pattern, every cat sleeps when …*.
 
-**Compare with:** a general claim you are **not** giving as today's report is [FORMER](/notional-standing#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is a [requirement](/feelings-permission#say-words) (`hwavom`), not a law of how things work. *Maybe every cat sleeps* is [MAY](/knowing#may) on the same clause.
+**Compare with:** a general claim you are **not** giving as today's report is [FORMER](/notional-standing#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is a [requirement](/feelings-permission#say-words) (`hwuvom`), not a law of how things work. *Maybe every cat sleeps* is [MAY](/knowing#may) on the same clause.
 
 ### Practice {#advanced-practice}
 

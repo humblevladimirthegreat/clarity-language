@@ -8,10 +8,10 @@ English *can*, *may*, *should*, and *OK* blur who allowed something, and whether
 
 | Drop-in | Meaning |
 |---------|---------|
-| `hwaval` / `hwavam` / `hwavar` | allowed by a rule / by a person / tolerated |
-| `hwavul` / `hwavum` / `hwavur` | forbidden by a rule / by a person / frowned on |
-| `hwavol` / `hwavom` / `hwavor` | required by a rule / by a person / by custom |
-| `hwadal` / `hwadam` / `hwadar` | the affected person agreed in advance / said yes (and can take it back) / is assumed to be OK |
+| `hwuval` / `hwuvam` / `hwuvar` | allowed by a rule / by a person / tolerated |
+| `hwuvul` / `hwuvum` / `hwuvur` | forbidden by a rule / by a person / frowned on |
+| `hwuvol` / `hwuvom` / `hwuvor` | required by a rule / by a person / by custom |
+| `hwudal` / `hwudam` / `hwudar` | the affected person agreed in advance / said yes (and can take it back) / is assumed to be OK |
 
 The endings have a new job here: the **source**. Cue: **l ≈ law, m ≈ mouth, r ≈ read the room.** **-l** is a rule, **-m** is a person's word (the default), and **-r** is no one's word at all.
 
@@ -19,13 +19,13 @@ On the consent words, **-r** is allowed but visibly weaker: it puts *I assumed* 
 
 ## Examples {#examples}
 
-> I borrowed your car `hwadar`. I should have asked for `hwadam`.  
-> You can leave early `hwavam`.  
-> We wear ties `hwavor`, not `hwavol`.  
-> Visitors sign in at the desk `hwavol`.  
-> No phones at dinner `hwavum`.
+> I borrowed your car `hwudar`. I should have asked for `hwudam`.  
+> You can leave early `hwuvam`.  
+> We wear ties `hwuvor`, not `hwuvol`.  
+> Visitors sign in at the desk `hwuvol`.  
+> No phones at dinner `hwuvum`.
 
-*We wear ties `hwavor`, not `hwavol`* says it's custom, not a rule.
+*We wear ties `hwuvor`, not `hwuvol`* says it's custom, not a rule.
 
 ## Practice {#practice}
 
@@ -34,25 +34,25 @@ Add the drop-in that fits the note.
 **1.** *You can park here.* (the rules allow it)
 
 ::: details Show answer
-You can park here `hwaval`.
+You can park here `hwuval`.
 :::
 
 **2.** *I posted the photo of us.* (you said yes)
 
 ::: details Show answer
-I posted the photo of us `hwadam`.
+I posted the photo of us `hwudam`.
 :::
 
 **3.** *People bring a dish.* (custom expects it)
 
 ::: details Show answer
-People bring a dish `hwavor`.
+People bring a dish `hwuvor`.
 :::
 
 **4.** *Talking during the film.* (frowned on)
 
 ::: details Show answer
-Talking during the film `hwavur`.
+Talking during the film `hwuvur`.
 :::
 
 <!-- Source (editors): feelings-permission.md#say-words. -->

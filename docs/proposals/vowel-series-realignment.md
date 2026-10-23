@@ -1,6 +1,6 @@
 # Proposal: realign amount-scale vowel series
 
-**Status:** Phase 1 and Phase 2 absorbed. Later phases are still proposed.  
+**Status:** Phases 1–4 absorbed. Later phases are still proposed.  
 **Related:** [root tails](/root-tails#root-tails) (size), [joins](/joins#join-type-vowel-series), [speech acts](/speech-moves#speech-act-beginner), [polar stance](/questions#polar-stance), [hooks](/hooks), [extra nouns](/hooks#extra-noun), [sakes](/sakes#word-shape), [tag pronouns](/tag-pronouns#tag-pronouns), [vowel pitch](/phonology#vowel-pitch), [finger code](/finger-code), [digit syllables](/numbers#counts), [letter names](/phonotactics#letter-names), [conversation length](/compound-families#conversation-length), [ability](/can-and-cant#ability), [label scope](/label-seams#label-scope), [role compounds](/roles#one-time-or-a-practice), [role pointers](/pronouns#role-pointers), [say-word scope](/feelings-permission#say-scope), [landmark facing](/viewpoint#landmark-facing), [stacked scope](/label-seams#scope-stacks), [Claritish Labels](/claritish/labels) and [Can and can't](/claritish/can-and-cant), [D-40](../meta/design-decisions.md), [D-44](../meta/design-decisions.md), [D-49](../meta/design-decisions.md), [`scripts/find.mjs`](../../scripts/find.mjs) (`--map` / `--write`; `src/find/`).  
 **Design authority:** none until absorbed into those pages. Parser summaries in [`src/parse/constructions.ts`](../../src/parse/constructions.ts) follow the pages.
 
@@ -165,7 +165,7 @@ Say **scope** is not in the third map (`hwavem` → `hwavom`; `hwa…` waits for
 
 **Done when:** `yol` commands, `yaol` is *yes*, and `--word family=joinMarker,role=y,series=o --count` is the old question count.
 
-### Phase 3 — Hook and extra-noun
+### Phase 3 — Hook and extra-noun (absorbed)
 
 One spelling, three jobs. Same **o**/**e** swap as join, on prefix-less hooks only (not join `zol`).
 
@@ -196,7 +196,7 @@ node scripts/find.mjs --word xFamily=sake --map locus=o:e,e:o,ao:ae,ae:ao,uo:ue,
 
 **Done when:** `ol bar` is *for whom?*, `el bar` is *where?*, `om` is *whose*, same-role `ol` is *rather*, and `--word family=hook,form=ol --count` is the old *instead* / *at* count.
 
-### Phase 4 — Scope
+### Phase 4 — Scope (absorbed)
 
 Label scope, role compounds, say-word **scope** slot, stacked scope, landmark facing, D-40, Claritish Labels. Not pointers, ability, or conversation length.
 

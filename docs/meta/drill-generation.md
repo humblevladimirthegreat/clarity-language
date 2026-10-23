@@ -493,7 +493,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | **DECISION** | `ability.md` Intermediate |
 | Emotion compose | `feelings-permission.md` Intermediate |
 | Thanks / sorry (lone `/th/` met; unmet + `bl-`) | `thanks-and-sorry.md` Beginner |
-| Say words (`hwavam`, consent) | `feelings-permission.md` Intermediate |
+| Say words (`hwuvam`, consent) | `feelings-permission.md` Intermediate |
 | Numbered alternatives | `numbers-applied.md` Intermediate |
 | PLAN bar (`thagem zol`) | `comparatives.md` Intermediate |
 | Sake bars (`thudatham zoel`) | `prescription.md` Intermediate |

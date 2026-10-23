@@ -6,7 +6,7 @@ band: intermediate
 
 ### Left and right of `x` {#families-by-shape}
 
-Beginner already used two roots glued with **`x`** and dictionary words with no **`x`**. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family. A [role compound](/roles#role-compounds) or [role pointer](/pronouns#role-pointers) is not one of these families: it opens with **`w`**, a scope vowel, and a part consonant (`zwazuduyel`, `zwazar`), and only a noun inside its stem takes **`x`**.
+Beginner already used two roots glued with **`x`** and dictionary words with no **`x`**. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family. A [role compound](/roles#role-compounds) or [role pointer](/pronouns#role-pointers) is not one of these families: it opens with **`w`**, a scope vowel, and a part consonant (`zwuzuduyel`, `zwazar`), and only a noun inside its stem takes **`x`**.
 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | Use | English | Cue |
@@ -38,7 +38,7 @@ To narrow a compound further, or to build a hyphenated name from several labels,
 
 [Hyphenated names](proper-names.md#multipart-names) use the same order (*Mary-Kate*: first piece first). A family name is not part of this stack; it is a separate `/ɡ/` word after the given name. [Body left / right](viewpoint.md#viewpoint-laterals) is not this stack: it joins the direction and whose facing counts with **`th`** (`gowuhethuzozen`), because the second root is a point of view, not a kind.
 
-A [role compound](/roles#role-compounds) can take such a stack as its stem (`zwazudozoxowurel` *someone who walks dogs*), but is never one piece of a stack.
+A [role compound](/roles#role-compounds) can take such a stack as its stem (`zwuzudozoxowurel` *someone who walks dogs*), but is never one piece of a stack.
 
 **Compare with:** a short office **handle** is one root plus [**-n**](proper-names.md#proper-name--n), not this stack. A dictionary compound is one listed word, not a live list you extend.
 

@@ -43,10 +43,10 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 
 | | **-l** by a rule | **-m** by a person | **-r** no one's word |
 |-|------------------|--------------------|----------------------|
-| allowed | `hwaval` | `hwavam` | `hwavar` tolerated |
-| forbidden | `hwavul` | `hwavum` | `hwavur` frowned on |
-| required | `hwavol` | `hwavom` | `hwavor` by custom |
-| agreed (the affected person) | `hwadal` in advance | `hwadam` said yes, can take it back | `hwadar` assumed OK |
+| allowed | `hwuval` | `hwuvam` | `hwuvar` tolerated |
+| forbidden | `hwuvul` | `hwuvum` | `hwuvur` frowned on |
+| required | `hwuvol` | `hwuvom` | `hwuvor` by custom |
+| agreed (the affected person) | `hwudal` in advance | `hwudam` said yes, can take it back | `hwudar` assumed OK |
 
 ## Suffixes on English words {#suffixes}
 

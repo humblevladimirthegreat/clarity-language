@@ -193,7 +193,7 @@ describe("resolve — content-rule pointers (viewpoint.md#content-of-the-event)"
 
   it("h skips restrictors, time poles, and say words", () => {
     assert.deepEqual(pointers("zuzozen vowurel hual. dwahar vawebol."), ["dwahar→vowurel"]);
-    assert.deepEqual(pointers("zuzozen vowurel hwavam. dwahar vawebol."), ["dwahar→vowurel"]);
+    assert.deepEqual(pointers("zuzozen vowurel hwuvam. dwahar vawebol."), ["dwahar→vowurel"]);
   });
 
   it("g: the undergoer's state, else the doer's", () => {
@@ -353,8 +353,8 @@ describe("resolve — topic (topic.md#topic)", () => {
   });
 
   it("takes a role compound as the topic, and returns to it by whole stem", () => {
-    assert.deepEqual(topics("xwazuduyel zuzozen dalon vawebol. zalon varuvel."), ["dalon→xwazuduyel", "zalon→xwazuduyel"]);
-    assert.deepEqual(topics("xwazuduyel. xuzozen. xwazuduyer. zalon varuvel."), ["zalon→xwazuduyer"]);
+    assert.deepEqual(topics("xwuzuduyel zuzozen dalon vawebol. zalon varuvel."), ["dalon→xwuzuduyel", "zalon→xwuzuduyel"]);
+    assert.deepEqual(topics("xwuzuduyel. xuzozen. xwuzuduyer. zalon varuvel."), ["zalon→xwuzuduyer"]);
   });
 
   it("takes any compound as the topic", () => {
@@ -411,20 +411,20 @@ describe("resolve — topic (topic.md#topic)", () => {
 
 describe("resolve — role anaphors (roles.md)", () => {
   it("binds zwazozowor to the prior conflict verb", () => {
-    const { anaphors } = resolveOf("zar dugobon vozowol. zwazozowor vurunul.");
+    const { anaphors } = resolveOf("zar dugobon vozowol. zwuzozowor vurunul.");
     const role = anaphors.find((a) => a.kind === "role");
     assert.ok(role);
-    assert.equal(role!.pronoun.raw, "zwazozowor");
+    assert.equal(role!.pronoun.raw, "zwuzozowor");
     assert.equal(role!.part, "z");
     assert.equal(role!.antecedent?.raw, "vozowol");
   });
 
 
   it("binds zwabezuyor as recipient of the prior tell verb", () => {
-    const { anaphors } = resolveOf("zuzozen vezuyol. zwabezuyor vurunul.");
+    const { anaphors } = resolveOf("zuzozen vezuyol. zwubezuyor vurunul.");
     const role = anaphors.find((a) => a.kind === "role");
     assert.ok(role);
-    assert.equal(role!.pronoun.raw, "zwabezuyor");
+    assert.equal(role!.pronoun.raw, "zwubezuyor");
     assert.equal(role!.part, "b");
     assert.equal(role!.antecedent?.raw, "vezuyol");
   });

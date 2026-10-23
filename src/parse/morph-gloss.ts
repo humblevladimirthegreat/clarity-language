@@ -253,16 +253,16 @@ const ABILITY_STANCE: Record<string, string> = {
 
 /** Label scope seam vowels (label-seams.md#label-scope). */
 export const SCOPE_VOWEL: Record<string, string> = {
-  a: "episode",
-  e: "role",
-  o: "pair",
-  u: "type",
-  ao: "situation",
-  ae: "using",
+  a: "type",
+  e: "pair",
+  o: "role",
+  u: "episode",
+  ae: "situation",
+  ao: "using",
   oe: "toward-role",
   ua: "except-episode",
-  uo: "except-pair",
-  ue: "outside-role",
+  ue: "except-pair",
+  uo: "outside-role",
 };
 
 /** Say word parts, answers, and endings (feelings-permission.md#say-words). */
@@ -324,6 +324,24 @@ export const ROLE_PART: Record<string, string> = {
 /** A role word's front: its label scope, then its part (`episode-agent`; glosses.md § Round trip). */
 export function roleFront(scope: string | undefined, part: string | undefined): string {
   return `${SCOPE_VOWEL[scope ?? ""] ?? "scope"}-${ROLE_PART[part ?? ""] ?? "role"}`;
+}
+
+/** Pointer scope letters stay on the pre-Phase-4 map until Phase 5 remaps them. */
+export const POINTER_SCOPE_VOWEL: Record<string, string> = {
+  a: "episode",
+  e: "role",
+  o: "pair",
+  u: "type",
+  ao: "situation",
+  ae: "using",
+  oe: "toward-role",
+  ua: "except-episode",
+  uo: "except-pair",
+  ue: "outside-role",
+};
+
+function pointerFront(scope: string | undefined, part: string | undefined): string {
+  return `${POINTER_SCOPE_VOWEL[scope ?? ""] ?? "scope"}-${ROLE_PART[part ?? ""] ?? "role"}`;
 }
 
 /** Role pointer vowel: which event the pointer reads (pronouns.md#role-pointers). */
@@ -1014,7 +1032,7 @@ function sensePieces(
   if (resume) {
     // A role pointer glosses its scope, part, and which event, never the referent (glosses.md § Anaphors).
     if (family.kind === "x" && family.xFamily === "pointer") {
-      return [`←${roleFront(family.scopeVowel, family.part)}.${POINTER_VOWEL[family.pointerVowel ?? ""] ?? "pointer"}${POINTER_ENDING[word.ending ?? ""] ?? ""}`];
+      return [`←${pointerFront(family.scopeVowel, family.part)}.${POINTER_VOWEL[family.pointerVowel ?? ""] ?? "pointer"}${POINTER_ENDING[word.ending ?? ""] ?? ""}`];
     }
     if (ctx.antecedent) {
       // A role-compound resume keeps its scope and part, so the doer and undergoer of one event stay apart (glosses.md § Round trip).

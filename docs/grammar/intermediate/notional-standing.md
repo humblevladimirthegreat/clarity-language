@@ -177,7 +177,7 @@ When you are not sure, use **`theyum`**.
 
 To reason from a premise you do not grant, suppose it with **`theyur`**. The frame carries, so every step after it stays supposed. To keep what you found, state the link with its own [channel](evidentiality.md#deduction), which ends the supposition:
 
-> `zuzozen theyur gwezuduyel. xahel zuzozen vuduyel. zuzozen vuduyel thanam thohom blarl zuzozen gwezuduyel.`
+> `zuzozen theyur gwozuduyel. xahel zuzozen vuduyel. zuzozen vuduyel thanam thohom blarl zuzozen gwozuduyel.`
 >
 > z-Uzozen | th-NOTIONAL-suppose | g-role-agent-teach . x-it-follows | z-Uzozen | v-teach . z-Uzozen | v-teach | th-DEDUCED | [th-if | bl-that-clause] | [z-Uzozen | g-role-agent-teach]
 >

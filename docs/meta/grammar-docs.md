@@ -389,7 +389,7 @@ Learner tables under `docs/grammar/` almost never publish a **bare stem** (`udoz
 | Publish | Example |
 |---------|---------|
 | Citation of this row’s sense | `udozol` *dog*; `ogowum` *volume*; `uzozen` *Uzozen*; `ahel` *therefore* |
-| Inflected form the row teaches | `thomam`, `thagem`, `xahem`, `zwazavuvul`; drill-bank `vawebol` *see* |
+| Inflected form the row teaches | `thomam`, `thagem`, `xahem`, `zwuzavuvul`; drill-bank `vawebol` *see* |
 | Special with its default ending | citation `uwon` / `awan` / `ayan` / `umon`; in-clause `zuwon` when the slot is the point |
 
 Do **not** call `udozo` a citation. Overlay / need / linker / mood inventories use the citation or the floating `/th/` (or `/x/`) word, not the stem (`unal` or `thunam`, not `una`; `omal` or `thomam`, not `oma`). Combinability (`tha` / `the`, hold endings) belongs in a **pattern** column (`…thal`) or in extra inflected rows, not by stripping the ending.
@@ -399,7 +399,7 @@ Do **not** call `udozo` a citation. Overlay / need / linker / mood inventories u
 | Exception | Why | Example |
 |-----------|-----|---------|
 | Not a content root | Letters, IPA, role letters, vowel-series cells, ending / stance slots, number formulas, shape templates | `/z/`; **`a`**; **`xa`**; `…xal`; `g+e`; `+1xROOT`; “full root **`x`** full root” |
-| Inner piece of an **`x`** word | That piece has **no ending of its own**; a citation there invites a stranded inner suffix | Bank `avuvu` only if the cell is the event after **`ax`**; prefer the whole word `zwazavuvul` |
+| Inner piece of an **`x`** word | That piece has **no ending of its own**; a citation there invites a stranded inner suffix | Bank `avuvu` only if the cell is the event after **`ax`**; prefer the whole word `zwuzavuvul` |
 | Naming the constant while endings are the lesson | Prose may say “the same root `uzoze`”; the **table** still lists citations | `uzozel` / `uzozem` / `uzozen` in the ending table |
 | Editor matching keys | Lexicon CSVs, this page’s house-cast **Root** column, [example root bank](drill-generation.md#root-bank) token lists — not learner grammar tables | `data/lexicon-published.csv` stems |
 | Language-name composition | Showing **`agebo`** + proper **-n** once, not as a vocab row | [introduction.md](../grammar/introduction.md) name gloss |

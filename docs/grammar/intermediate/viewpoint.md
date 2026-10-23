@@ -4,28 +4,28 @@ band: intermediate
 
 # Viewpoint and landmark {#viewpoint-and-landmark}
 
-### Scope across scenes (`o`, `u`, pairs) {#scope}
+### Scope across scenes (`e`, `a`, pairs) {#scope}
 <a id="scope-across-scenes"></a>
 
-The scope slot after **`w`** takes every [label scope](/label-seams#label-scope) vowel, not just **`a`** and **`e`**. They are the same vowels other labels write after mid-word **`th`**; on a role word they come first, and nowhere else. A **`th`** scope after a role word's stem (`zwazuduyethel`) is not a word.
+The scope slot after **`w`** takes every [label scope](/label-seams#label-scope) vowel, not just **`u`** and **`o`**. They are the same vowels other labels write after mid-word **`th`**; on a role word they come first, and nowhere else. A **`th`** scope after a role word's stem (`zwuzuduyethel`) is not a word.
 
 | V1 | Reach | Example | English |
 |----|-------|---------|---------|
-| **`a`** | this episode: one act is enough | `zwazuduyel` | *someone who teaches* |
-| **`e`** | practiced role | `zwezuduyel` | *a teacher* |
-| **`o`** | this pair: toward one party, named in a `bl-` word on `/ɡ/` | `gwozuduyel blolazun` | *is a teacher to Olazun* |
-| **`u`** | a type across scenes | `zwuzuduyel` | *a teacher type* |
-| pairs | the scope stacks: **`ao`**, **`ae`**, **`oe`**, **`ua`**, **`uo`**, **`ue`** | `gwuezuduyel`, `gwaozuduyel` | *not in that capacity*, *a teacher by circumstance* |
+| **`u`** | this episode: one act is enough | `zwuzuduyel` | *someone who teaches* |
+| **`o`** | practiced role | `zwozuduyel` | *a teacher* |
+| **`e`** | this pair: toward one party, named in a `bl-` word on `/ɡ/` | `gwezuduyel blolazun` | *is a teacher to Olazun* |
+| **`a`** | a type across scenes | `zwazuduyel` | *a teacher type* |
+| pairs | the scope stacks: **`ae`**, **`ao`**, **`oe`**, **`ua`**, **`ue`**, **`uo`** | `gwuozuduyel`, `gwaezuduyel` | *not in that capacity*, *a teacher by circumstance* |
 
-> `zuzozen gwozuduyel blolazun.`
+> `zuzozen gwezuduyel blolazun.`
 >
 > z-Uzozen | [g-pair-agent-teach | bl-Olazun]
 >
 > "Uzozen is Olazun's teacher."
 
-On `/z/`, `/d/`, and `/b/`, pair scope **`o`** stands alone: the party is the one the clause already relates the person to. On `/ɡ/` it takes its `bl-` party, as on any [pair-scope label](/label-seams#scope-relative).
+On `/z/`, `/d/`, and `/b/`, pair scope **`e`** stands alone: the party is the one the clause already relates the person to. On `/ɡ/` it takes its `bl-` party, as on any [pair-scope label](/label-seams#scope-relative).
 
-> `zuzozen gwuezuduyel.`
+> `zuzozen gwuozuduyel.`
 >
 > z-Uzozen | g-outside-role-agent-teach
 >
@@ -37,26 +37,26 @@ Scope works on [role pointers](/pronouns#role-pointers) too. `zwazar` is *the la
 
 English *as a teacher, I …* names the role the act is done in, not a person standing in the clause. Write the same role compound, with a slot part (`z`, `d`, or `b`), on `/h/`: a person cannot be an adverb, so the word is the capacity the act is done in.
 
-> `zuzozen vezuyel hwezuduyel.`
+> `zuzozen vezuyel hwozuduyel.`
 >
 > z-Uzozen | v-tell | h-role-agent-teach
 >
 > "Uzozen speaks as a teacher."
 
-The scope vowel does its usual work. Pair scope **`o`** takes its `bl-` party, as on `/ɡ/`.
+The scope vowel does its usual work. Pair scope **`e`** takes its `bl-` party, as on `/ɡ/`.
 
 | Agebon | English |
 |--------|---------|
-| `hwazuduyel` | *as the one teaching this time* |
-| `hwezuduyel` | *as a teacher* |
-| `hwozuduyel blolazun` | *as Olazun's teacher* |
-| `hwuezuduyel` | *not as a teacher* (off duty) |
-| `hwedobebul` | *as a patient* (the one a doctor treats) |
-| `hwebezuyel` | *as a confidant* |
+| `hwuzuduyel` | *as the one teaching this time* |
+| `hwozuduyel` | *as a teacher* |
+| `hwezuduyel blolazun` | *as Olazun's teacher* |
+| `hwuozuduyel` | *not as a teacher* (off duty) |
+| `hwodobebul` | *as a patient* (the one a doctor treats) |
+| `hwobezuyel` | *as a confidant* |
 
-**Compare with:** resemblance is the [similative](/relations#similative) (`hewom blwezuduyel` *like a teacher*). An ordinary `/h/` adverb is how the event goes (`hedurem` *hastily*).
+**Compare with:** resemblance is the [similative](/relations#similative) (`hewom blwozuduyel` *like a teacher*). An ordinary `/h/` adverb is how the event goes (`hedurem` *hastily*).
 
-**Compare with:** `zuzozen gwezuduyel.` says Uzozen **is** a teacher. `zuzozen vezuyel hwezuduyel.` says the telling is done in that role.
+**Compare with:** `zuzozen gwozuduyel.` says Uzozen **is** a teacher. `zuzozen vezuyel hwozuduyel.` says the telling is done in that role.
 
 ### Places, tools, and times {#places-tools-times}
 
@@ -86,13 +86,13 @@ A role compound names a participant: the doer, what the event acts on or makes, 
 
 English *the way it was done*, *what it left them*, *what came of it*, or *that remark* names a quality of an event, not a person in it. Write the same role-word shape, and put a part consonant for that quality after the scope vowel: the word is then a thing you can talk about, resume, or point to.
 
-> `dwahowurel vawebol.`
+> `dwuhowurel vawebol.`
 >
 > d-episode-manner-walk | v-see
 >
 > "Someone sees a way of walking."
 
-A slot part on the same stem is still a participant: `dwazowurel` is *someone who walks*, as [role compounds](/roles#role-compounds) name a doer.
+A slot part on the same stem is still a participant: `dwuzowurel` is *someone who walks*, as [role compounds](/roles#role-compounds) name a doer.
 
 The stem is still the event. The part says which quality of it you mean. Pointers drop the stem and read the latest matching event, as [role pointers](/pronouns#role-pointers) do for people:
 
@@ -106,15 +106,15 @@ If that clause named no manner word, `dwahar` is the event's own manner: how wal
 
 | Part | Names | Compound | Pointer |
 |------|-------|----------|---------|
-| **`h`** | how, when, or where it happened | `dwahowurel` *a way of walking* | `dwahar` *the way it was done* |
-| **`g`** | the state it leaves its participant in | `dwaguguyel` *how cooked it is* | `dwagar` *the state it left them in* |
-| **`th`** | a reason, thought, or feeling about it | `dwathowurel` *a reason to walk* | `dwathar` *the reason for it* |
-| **`w`** | how much or how intense it was | `dwawowurel` *the amount of walking* | `dwawar` *how much it was* |
-| **`y`** | the turn that said it (question, command, remark) | `dwayowurel` *a remark about walking* | `dwayar` *that remark* |
-| **`x`** | what followed from it | `dwaxowurel` *what comes of walking* | `dwaxar` *what came of it* |
+| **`h`** | how, when, or where it happened | `dwuhowurel` *a way of walking* | `dwahar` *the way it was done* |
+| **`g`** | the state it leaves its participant in | `dwuguguyel` *how cooked it is* | `dwagar` *the state it left them in* |
+| **`th`** | a reason, thought, or feeling about it | `dwuthowurel` *a reason to walk* | `dwathar` *the reason for it* |
+| **`w`** | how much or how intense it was | `dwuwowurel` *the amount of walking* | `dwawar` *how much it was* |
+| **`y`** | the turn that said it (question, command, remark) | `dwuyowurel` *a remark about walking* | `dwayar` *that remark* |
+| **`x`** | what followed from it | `dwuxowurel` *what comes of walking* | `dwaxar` *what came of it* |
 | **`v`** | the event itself | (no compound: the event noun is the stem, `dowurel`) | `dwavar` *that event* |
 
-Scope **`a`** / **`e`** / **`o`** / **`u`** still say how far the label reaches: `dwehowurel` is *someone's usual way of walking*, `dwuhowurel` *a walking style*.
+Scope **`a`** / **`e`** / **`o`** / **`u`** still say how far the label reaches: `dwohowurel` is *someone's usual way of walking*, `dwahowurel` *a walking style*.
 
 A **`g`** pointer is the `/d/` participant's state when the event has one, and the `/z/` participant's otherwise. After *Uzozen punches Olazun*, `dwagar` is Olazun's state; after *Uzozen runs*, it is Uzozen's. **`w`** always reads the event's own extent: a `/w/` word grades the next adjective, never the event, so `dwawar` is *that much*. `dwagor` and `dwawor` are not words: no clause names a resulting state or an amount for *the other* to differ from.
 
@@ -180,7 +180,7 @@ For *their left*, [resume](/pronouns#resume-r) the person on **-r** after **`th`
 | ANCHOR | what sets the facing frame: [special](/pronouns#special-pronouns) **`uwo`** / **`awa`** / **`aya`**, a person’s name, or a content **-r** of a person or oriented object | *Uzozen’s left*, *your left*, *the car’s left*, *their left* |
 | Ending | ordinary ending is written at the end of the whole compound; its reference is the viewpoint anchor, not the direction | viewpoint kind / hedge / name / resume |
 
-**Compare with:** naming a doer from an event puts **`w`**, a scope vowel, and a part consonant before the stem ([role compounds](/roles#role-compounds): `zwazavuvul`). Viewpoint laterals put a **direction root** left of **`th`** and a facing person on the right.
+**Compare with:** naming a doer from an event puts **`w`**, a scope vowel, and a part consonant before the stem ([role compounds](/roles#role-compounds): `zwuzavuvul`). Viewpoint laterals put a **direction root** left of **`th`** and a facing person on the right.
 
 ### Arrow rose (compass vs face)
 
@@ -256,35 +256,35 @@ Gravity works the same way: bare **`aduhe`** + `/b/` is *under* the landmark, an
 |--------|-----|---------|
 | Bare DIR | compass / gravity | `gowuhel` *west*; `gayuhel` *up* |
 | **`DIR th ANCHOR`** | that point on **ANCHOR’s** facing rose | `gowuhethawan` *listener-left* |
-| DIR + **`th`** + **`o`** + `/b/` | that point on the **landmark’s** own rose | `gazuhethol blahehal` *behind the house* |
+| DIR + **`th`** + **`e`** + `/b/` | that point on the **landmark’s** own rose | `gazuhethel blahehal` *behind the house* |
 | **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gowuhethuzozen bledalel` *left of the tree, from Uzozen’s view* |
 
-### The landmark's own front (DIR + `th` + `o`) {#landmark-facing}
+### The landmark's own front (DIR + `th` + `e`) {#landmark-facing}
 
-English *behind the house* means the house's own back, not a compass heading and not the speaker's back. Write the arrow root, then **`th`**, then **`o`** in place of a facing person, then the ending. Put the landmark in a `bl-` word right after it. **`o`** is the same vowel as pair scope on a label: here, the one `/b/` landmark is the one whose facing counts.
+English *behind the house* means the house's own back, not a compass heading and not the speaker's back. Write the arrow root, then **`th`**, then **`e`** in place of a facing person, then the ending. Put the landmark in a `bl-` word right after it. **`e`** is the same vowel as pair scope on a label: here, the one `/b/` landmark is the one whose facing counts.
 
-> `zudozol vuhohol gazuhethol blahehal.`
+> `zudozol vuhohol gazuhethel blahehal.`
 >
 > z-dog | v-sit | [g-south-th-landmark | bl-house]
 >
 > "The dog sits behind the house."
 
-> `zuzozen vowurel honuhethol blohol.`
+> `zuzozen vowurel honuhethel blohol.`
 >
 > z-Uzozen | v-walk | [h-north-th-landmark | bl-door]
 >
 > "Uzozen walks in front of the door."
 
-This is [label scope](/label-seams#label-scope) **`tho`** on a direction: the direction relative to that landmark. Arrow roots take no other scope vowel.
+This is [label scope](/label-seams#label-scope) **`the`** on a direction: the direction relative to that landmark. Arrow roots take no other scope vowel.
 
-The landmark's front is where its design or current use faces (a house's front door, a car's windshield). A DIR + **`th`** + **`o`** word always takes a `/b/` landmark.
+The landmark's front is where its design or current use faces (a house's front door, a car's windshield). A DIR + **`th`** + **`e`** word always takes a `/b/` landmark.
 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | English |
 |--------|---------|
-| `gazuhethol blahehal` | *behind the house* (its own back) |
-| `gonuhethol blahehal` | *in front of the house* |
-| `gowuhethol blahehal` | *on the house's left* |
+| `gazuhethel blahehal` | *behind the house* (its own back) |
+| `gonuhethel blahehal` | *in front of the house* |
+| `gowuhethel blahehal` | *on the house's left* |
 | `gowuhethuzozen blahehal` | *left of the house, from Uzozen's view* |
 | `gowuhel blahehal` | *west of the house* |
 
@@ -345,7 +345,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Olazun is a thief.* (stealing is what Olazun regularly does)
 
 ::: details Show answer
-`zolazun gwezurozum.`
+`zolazun gwozurozum.`
 
 z-Olazun | g-role-agent-theft
 :::
@@ -385,7 +385,7 @@ y-command | v-walk | z-Ahelan | h-west-th-Uzozen
 **6.** *Uzozen goes as a thief.*
 
 ::: details Show answer
-`zuzozen vavobel hwezurozum.`
+`zuzozen vavobel hwozurozum.`
 
 z-Uzozen | v-go | h-role-agent-theft
 :::
@@ -416,7 +416,7 @@ z-Ahelan | d-boat | v-construct . z-Olazun | d-←episode-patient.same | v-see
 *Ahelan builds a boat. Olazun sees it.*
 :::
 
-**4.** `zahelan dwahurozum vawebol.`
+**4.** `zahelan dwuhurozum vawebol.`
 
 ::: details Show answer
 z-Ahelan | d-episode-manner-theft | v-see
@@ -442,20 +442,20 @@ z-Ahelan | v-run . z-Uzozen | v-sit | h-west-th-←Ahelan
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzozen sits on the boat's left.* `zuzozen vuhohol howuhethol blebaval.` or `zuzozen vuhohol howuhel blebaval.`
+**1.** *Uzozen sits on the boat's left.* `zuzozen vuhohol howuhethel blebaval.` or `zuzozen vuhohol howuhel blebaval.`
 
 ::: details Show answer
-`zuzozen vuhohol howuhethol blebaval.`
+`zuzozen vuhohol howuhethel blebaval.`
 
 z-Uzozen | v-sit | [h-west-th-landmark | bl-boat]
 
 **`tho`** turns the arrow to the boat's own facing; bare `howuhel` is *west of the boat*.
 :::
 
-**2.** *Ahelan sees a way of walking.* `zahelan dwahowurel vawebol.` or `zahelan dwazowurel vawebol.`
+**2.** *Ahelan sees a way of walking.* `zahelan dwuhowurel vawebol.` or `zahelan dwuzowurel vawebol.`
 
 ::: details Show answer
-`zahelan dwahowurel vawebol.`
+`zahelan dwuhowurel vawebol.`
 
 z-Ahelan | d-episode-manner-walk | v-see
 

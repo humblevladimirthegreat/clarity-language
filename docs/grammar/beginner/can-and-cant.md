@@ -43,19 +43,19 @@ For English *so can I* / *can too*, [resume](pronouns.md#resume-r) the verb and 
 
 To say someone **can be** something (*can be the author*, *can be a teacher*) rather than that they can do the act, put the ability vowel on a [role compound](roles.md#role-compounds) on `/ɡ/`. Write the role compound, then **`x`** and the ability vowel, then the ending. This works only on `/ɡ/`, the same slot that says *is a teacher* ([classification](predication.md#classification)). The role compound keeps its [scope](roles.md#one-time-or-a-practice) at the front, so scope and ability combine: **`a`** is the role this once (*can be the author* of this), **`e`** the role as a practice (*can be a teacher*).
 
-> `zolazun gwazarayexam.`
+> `zolazun gwuzarayexam.`
 >
 > z-Olazun | g-episode-agent-authorship-able
 >
 > "Olazun can be the author."
 
-> `zuzozen gwezuduyexul.`
+> `zuzozen gwozuduyexul.`
 >
 > z-Uzozen | g-role-agent-teach-unable-irreversible
 >
 > "Uzozen can never be a teacher."
 
-**Compare with:** `vuduyexal` is *can teach* (the act). `gwezuduyexal` is *can be a teacher, as a practice* (fit for the role).
+**Compare with:** `vuduyexal` is *can teach* (the act). `gwozuduyexal` is *can be a teacher, as a practice* (fit for the role).
 
 #### Can't (`xe` / `xo` / `xu`)
 <a id="ability-changeability"></a>
@@ -153,7 +153,7 @@ z-Ahelan | v-sit-unable-temporary
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zolazun gwazarayexam.`
+**1.** `zolazun gwuzarayexam.`
 
 ::: details Show answer
 z-Olazun | g-episode-agent-authorship-able

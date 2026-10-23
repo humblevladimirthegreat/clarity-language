@@ -15,30 +15,30 @@ Write a thing letter (`/z/` `/d/` `/b/`), **`w`**, a scope vowel, a part consona
 
 | Part | Names | Example | English | Stage |
 |------|-------|---------|---------|-------|
-| [**`z`**](/roles#role-compounds) | the doer | `zwazuduyel` | *someone who teaches* | B |
-| [**`d`**](/roles#the-undergoer-d) | what it acts on or makes | `zwadawebor` | *the one seen* | B |
-| [**`b`**](/roles#the-extra-b-party-b) | the extra `/b/` party | `zwabezuyer` | *the one told* | B |
+| [**`z`**](/roles#role-compounds) | the doer | `zwuzuduyel` | *someone who teaches* | B |
+| [**`d`**](/roles#the-undergoer-d) | what it acts on or makes | `zwudawebor` | *the one seen* | B |
+| [**`b`**](/roles#the-extra-b-party-b) | the extra `/b/` party | `zwubezuyer` | *the one told* | B |
 
 | Scope | Reach | Example | English | Stage |
 |-------|-------|---------|---------|-------|
-| [**`a`**](/roles#one-time-or-a-practice) | this episode | `zwazuduyel` | *someone who teaches* | B |
-| [**`e`**](/roles#one-time-or-a-practice) | practiced role | `zwezuduyel` | *a teacher* | B |
-| [**`o`**](/viewpoint#scope) | toward one party | `gwozuduyel blolazun` | *is a teacher to Olazun* | I |
-| [**`u`**](/viewpoint#scope) | a type across scenes | `zwuzuduyel` | *a teacher type* | I |
+| [**`u`**](/roles#one-time-or-a-practice) | this episode | `zwuzuduyel` | *someone who teaches* | B |
+| [**`o`**](/roles#one-time-or-a-practice) | practiced role | `zwozuduyel` | *a teacher* | B |
+| [**`e`**](/viewpoint#scope) | toward one party | `gwezuduyel blolazun` | *is a teacher to Olazun* | I |
+| [**`a`**](/viewpoint#scope) | a type across scenes | `zwazuduyel` | *a teacher type* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [The one, from an earlier event](/roles#this-instance-r): **-r** | `zuzozen vuhohol. zwazuhohor vowurel.` | *Uzozen sits. The one who sat walks.* | B |
-| [A noun in the stem](/roles#role-compounds): another **`x`** | `zwazudozoxowurel varuvel.` | *Someone who walks dogs runs.* | B |
-| [Is one who](/roles#saying-someone-is-a-teacher): on `/ɡ/` | `zuzozen gwazuduyel.` | *Uzozen is someone who teaches.* | B |
-| [A practiced role](/roles#one-time-or-a-practice): scope **`e`** | `zwezuduyel varuvel.` | *A teacher runs.* | B |
-| [Is a teacher](/roles#saying-someone-is-a-teacher) | `zuzozen gwezuduyel.` | *Uzozen is a teacher.* | B |
+| [The one, from an earlier event](/roles#this-instance-r): **-r** | `zuzozen vuhohol. zwuzuhohor vowurel.` | *Uzozen sits. The one who sat walks.* | B |
+| [A noun in the stem](/roles#role-compounds): another **`x`** | `zwuzudozoxowurel varuvel.` | *Someone who walks dogs runs.* | B |
+| [Is one who](/roles#saying-someone-is-a-teacher): on `/ɡ/` | `zuzozen gwuzuduyel.` | *Uzozen is someone who teaches.* | B |
+| [A practiced role](/roles#one-time-or-a-practice): scope **`o`** | `zwozuduyel varuvel.` | *A teacher runs.* | B |
+| [Is a teacher](/roles#saying-someone-is-a-teacher) | `zuzozen gwozuduyel.` | *Uzozen is a teacher.* | B |
 | [The event itself](/roles#the-event-itself): no **`w`** | `davuvul` | *a fight* | B |
-| [What it makes](/roles#the-undergoer-d): **`d`** | `dwadeguyel` | *something built* | B |
+| [What it makes](/roles#the-undergoer-d): **`d`** | `dwudeguyel` | *something built* | B |
 | [A kind of tool, place, or time](/viewpoint#places-tools-times): a compound with a head root | `darayexuwal` | *a writing tool* | I |
-| [The role you act in](/viewpoint#capacity): on `/h/` | `zuzozen vezuyel hwezuduyel.` | *Uzozen speaks as a teacher.* | I |
+| [The role you act in](/viewpoint#capacity): on `/h/` | `zuzozen vezuyel hwozuduyel.` | *Uzozen speaks as a teacher.* | I |
 
-A role compound has one part consonant, right after its scope vowel. Its stem is an event or a state (`zwazunemul` *someone who is angry*); `zwazuwon` is not a word.
+A role compound has one part consonant, right after its scope vowel. Its stem is an event or a state (`zwuzunemul` *someone who is angry*); `zwuzuwon` is not a word.
 
 ### Content of the event {#content}
 
@@ -46,12 +46,12 @@ A part consonant can name a quality of the event, not a person in it. Pointers d
 
 | Part | Names | Compound | Pointer | Stage |
 |------|-------|----------|---------|-------|
-| [**`h`**](/viewpoint#content-of-the-event) | how, when, or where | `dwahowurel` | `dwahar` | I |
-| [**`g`**](/viewpoint#content-of-the-event) | the state it leaves | `dwaguguyel` | `dwagar` | I |
-| [**`th`**](/viewpoint#content-of-the-event) | a reason or feeling | `dwathowurel` | `dwathar` | I |
-| [**`w`**](/viewpoint#content-of-the-event) | how much | `dwawowurel` | `dwawar` | I |
-| [**`y`**](/viewpoint#content-of-the-event) | the turn that said it | `dwayowurel` | `dwayar` | I |
-| [**`x`**](/viewpoint#content-of-the-event) | what followed | `dwaxowurel` | `dwaxar` | I |
+| [**`h`**](/viewpoint#content-of-the-event) | how, when, or where | `dwuhowurel` | `dwahar` | I |
+| [**`g`**](/viewpoint#content-of-the-event) | the state it leaves | `dwuguguyel` | `dwagar` | I |
+| [**`th`**](/viewpoint#content-of-the-event) | a reason or feeling | `dwuthowurel` | `dwathar` | I |
+| [**`w`**](/viewpoint#content-of-the-event) | how much | `dwuwowurel` | `dwawar` | I |
+| [**`y`**](/viewpoint#content-of-the-event) | the turn that said it | `dwuyowurel` | `dwayar` | I |
+| [**`x`**](/viewpoint#content-of-the-event) | what followed | `dwuxowurel` | `dwaxar` | I |
 | [**`v`**](/viewpoint#content-of-the-event) | the event itself | (the event noun: `dowurel`) | `dwavar` | I |
 
 ### Without the stem {#pointers}
@@ -92,7 +92,7 @@ Bare arrow words are compass headings. With mid-word **`th`** and a facing perso
 |--------|-----|---------|-------|
 | [Bare DIR](/viewpoint#viewpoint-vs-landmark) | compass / gravity | `gowuhel` *west*; `gayuhel` *up* | I |
 | [**`DIR th ANCHOR`**](/viewpoint#viewpoint-vs-landmark) | that point on **ANCHOR's** facing rose | `gowuhethawan` *listener-left* | I |
-| [DIR + **`th`** + **`o`** + `/b/`](/viewpoint#landmark-facing) | that point on the **landmark's** own rose | `gazuhethol blahehal` *behind the house* | I |
+| [DIR + **`th`** + **`e`** + `/b/`](/viewpoint#landmark-facing) | that point on the **landmark's** own rose | `gazuhethel blahehal` *behind the house* | I |
 | [complex `/ɡ/` + `/b/`](/viewpoint#viewpoint-vs-landmark) | region on a side **of a landmark** | `gowuhethuzozen bledalel` *left of the tree, from Uzozen's view* | I |
 
 The anchor can be `uwo` *speaker*, `awa` *listener*, a name, or a role pointer on **-r**. The ending applies to the anchor, not the direction.
@@ -110,9 +110,9 @@ The anchor can be `uwo` *speaker*, `awa` *listener*, a name, or a role pointer o
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | English | Stage |
 |--------|---------|-------|
-| [`gazuhethol blahehal`](/viewpoint#landmark-facing) | *behind the house* (its own back) | I |
-| [`gonuhethol blahehal`](/viewpoint#landmark-facing) | *in front of the house* | I |
-| [`gowuhethol blahehal`](/viewpoint#landmark-facing) | *on the house's left* | I |
+| [`gazuhethel blahehal`](/viewpoint#landmark-facing) | *behind the house* (its own back) | I |
+| [`gonuhethel blahehal`](/viewpoint#landmark-facing) | *in front of the house* | I |
+| [`gowuhethel blahehal`](/viewpoint#landmark-facing) | *on the house's left* | I |
 | [`gowuhethuzozen blahehal`](/viewpoint#landmark-facing) | *left of the house, from Uzozen's view* | I |
 | [`gowuhel blahehal`](/viewpoint#landmark-facing) | *west of the house* | I |
 
@@ -126,11 +126,11 @@ The anchor can be `uwo` *speaker*, `awa` *listener*, a name, or a role pointer o
 | [Under](/viewpoint#viewpoint-vs-landmark) | `zudozol vezuvol haduhel bledalel.` | *The dog sleeps under the tree.* | I |
 | [Above](/viewpoint#viewpoint-vs-landmark) | `zubezol vuhohol gayuhel bludozol.` | *A bird sits above the dog.* | I |
 | [Left of a landmark](/viewpoint#viewpoint-vs-landmark) | `zanal gowuhethuzozen bledalel.` | *The book is left of the tree, from Uzozen's view.* | I |
-| [Behind](/viewpoint#landmark-facing) | `zudozol vuhohol gazuhethol blahehal.` | *The dog sits behind the house.* | I |
+| [Behind](/viewpoint#landmark-facing) | `zudozol vuhohol gazuhethel blahehal.` | *The dog sits behind the house.* | I |
 
 ## Reading mid-word `x` {#x}
 
-After the role letter, look at both sides of the **first** **`x`**. A role word is not one of these: it opens with **`w`**, a scope vowel, and a part consonant (`zwazuduyel`, `zwazar`).
+After the role letter, look at both sides of the **first** **`x`**. A role word is not one of these: it opens with **`w`**, a scope vowel, and a part consonant (`zwuzuduyel`, `zwazar`).
 
 <!-- cheat-sheet: roles-comparing -->
 | Left of **`x`** | Right of **`x`** | Reading | Example | Stage |
@@ -273,8 +273,8 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [Than I expected](/stance-bars#stance-bars) | `zuzozen thabom zol guzemol.` | *Uzozen is sleepier than I expected.* | A |
 | [Than they used to be](/stance-bars#stance-bars) | `zuzozen helam zol guzemol.` | *Uzozen is sleepier than they used to be.* | A |
 | [As … as possible](/stance-bars#stance-bars) | `zolazun hodaxal zoel hedurem vowurel.` | *Olazun walks as hastily as possible.* | A |
-| [Up to code](/stance-bars#stance-bars) | `zahehal hwavol zoel gobobom.` | *The house is as strong as the rules require.* | A |
-| [More than allowed](/stance-bars#stance-bars) | `zududal hwaval zol gral.` | *There is more tea than the rules allow.* | A |
+| [Up to code](/stance-bars#stance-bars) | `zahehal hwuvol zoel gobobom.` | *The house is as strong as the rules require.* | A |
+| [More than allowed](/stance-bars#stance-bars) | `zududal hwuval zol gral.` | *There is more tea than the rules allow.* | A |
 | [Than hoped](/stance-bars#stance-bars) | `zanal thoguyem zol gagebom.` | *The book is clearer than I hoped.* | A |
 | [Than feared](/stance-bars#stance-bars) | `zanal thewemum zuol gagebom.` | *The book is even less clear than I feared.* | A |
 
@@ -295,9 +295,9 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [PLAN `thagem`](/stance-bars#stance-bars) | the plan or the schedule | *than planned* / *than scheduled* | A |
 | [WANT `thalel` / `thalem` / `thaler`](/stance-bars#stance-bars) | the level wanted | *than wanted* / *than I wanted* | A |
 | [ABIL `hodaxal`](/stance-bars#stance-bars) | what can be done | *as … as possible* | A |
-| [a requirement `hwavol` / `hwavom` / `hwavor`](/stance-bars#stance-bars) | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* | A |
-| [a permission `hwaval` / `hwavam` / `hwavar`](/stance-bars#stance-bars) | the rule, the grant, or what is tolerated | *over the limit* / *than they allow* | A |
-| [consent `hwadam`](/stance-bars#stance-bars) | the agreed terms | *more than agreed* | A |
+| [a requirement `hwuvol` / `hwuvom` / `hwuvor`](/stance-bars#stance-bars) | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* | A |
+| [a permission `hwuval` / `hwuvam` / `hwuvar`](/stance-bars#stance-bars) | the rule, the grant, or what is tolerated | *over the limit* / *than they allow* | A |
+| [consent `hwudam`](/stance-bars#stance-bars) | the agreed terms | *more than agreed* | A |
 | [speaker attitude `thoguyem`, `thewemum`](/stance-bars#stance-bars) | the case you hoped for or feared | *than hoped* / *than feared* | A |
 
 The bar's ending keeps its own job: on a channel it is evidence strength (`thubel`, `thuber`). The bar's `/b/` is the source (REPORTED), the holder (WANT, a say word over the act), or whose cases set the pattern (PATTERN). Only stances that set a value are bars: a pole, MAY, MIRATIVE, DECISION, and ATTEMPT are not.
@@ -330,11 +330,11 @@ English *many* and *often* rank against an unstated baseline. Agebon names the b
 | `zol gamahum` *no most* ([standalone](/comparative-arity#comparative-arity)) | | `zor gamahum` *whatever ranks highest* ([someone is on top](/comparative-arity#comparative-arity)) |
 | `zolazun zuzozen zol huhunem vowurel` *more intensely than* ([ranks the manner](/comparative-arity#manner-scale)) | | `guhunem` *more intense* ([a quality of the people](/comparative-arity#manner-scale)) |
 | `zuzozen thagem zol bral vovurel` *later than planned* ([a bar before the join](/comparative-arity#bars)) | | `zuzozen zol bral vovurel thagem` *I plan for them to be last* ([a stance after](/comparative-arity#bars)) |
-| `zwazuduyel` *someone who teaches* ([any one who does it](/roles#role-compounds)) | | `zwezuduyel` *a teacher* ([a practiced role](/roles#one-time-or-a-practice)) |
-| `hwezuduyel` *as a teacher* ([the role you act in](/viewpoint#capacity)) | | `hewom blwezuduyel` *like a teacher* ([a similative](/relations#similative)) |
-| `dwahowurel` *a way of walking* ([a quality of the event](/viewpoint#content-of-the-event)) | | `dwazowurel` *someone who walks* ([a participant](/roles#role-compounds)) |
-| `zwazuduyer` *the one teaching* ([this instance](/roles#role-compounds)) | | `gwazuduyel` *is one who teaches* ([a label](/roles#saying-someone-is-a-teacher)) |
+| `zwuzuduyel` *someone who teaches* ([any one who does it](/roles#role-compounds)) | | `zwozuduyel` *a teacher* ([a practiced role](/roles#one-time-or-a-practice)) |
+| `hwozuduyel` *as a teacher* ([the role you act in](/viewpoint#capacity)) | | `hewom blwozuduyel` *like a teacher* ([a similative](/relations#similative)) |
+| `dwuhowurel` *a way of walking* ([a quality of the event](/viewpoint#content-of-the-event)) | | `dwuzowurel` *someone who walks* ([a participant](/roles#role-compounds)) |
+| `zwuzuduyer` *the one teaching* ([this instance](/roles#role-compounds)) | | `gwuzuduyel` *is one who teaches* ([a label](/roles#saying-someone-is-a-teacher)) |
 | `darayexuwal` *a writing tool* ([a compound](/viewpoint#places-tools-times)) | | `aol` *using* ([a hook on the clause](/hooks#extra-noun)) |
 | `gowuhel` *west* ([compass](/viewpoint#endings-and-resume)) | | `gowuhethuzozen` *Uzozen's left* ([a face](/viewpoint#endings-and-resume)) |
-| `gowuhethuzozen bledalel` *left of the tree, from Uzozen's view* ([a facing person](/viewpoint#viewpoint-vs-landmark)) | | `gowuhethol blahehal` *on the house's left* ([the landmark's own front](/viewpoint#landmark-facing)) |
+| `gowuhethuzozen bledalel` *left of the tree, from Uzozen's view* ([a facing person](/viewpoint#viewpoint-vs-landmark)) | | `gowuhethel blahehal` *on the house's left* ([the landmark's own front](/viewpoint#landmark-facing)) |
 | `zobahohal` *bedroom* ([a dictionary word](/compounds#lexical-compounds)) | | `zubedaxuyudal` *peanut butter* ([glued with `x`](/compounds#compound-vs-separate)) |

@@ -150,7 +150,7 @@ English *will* is three different claims.
 |----------------|--------|
 | I mean to | PLAN **`thagem`** ([endings](/intention#plan-map-resolution) show how much is drawn) |
 | the world will | channel + **`blral`** |
-| I promise | a vow **`hwazal`** ([promise](/feelings-permission#say-words)) |
+| I promise | a vow **`hwuzal`** ([promise](/feelings-permission#say-words)) |
 
 > `zuwon thagem vowurel.`
 >
@@ -250,9 +250,9 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 | *couldn't* | couldn't back then | **`xe`** / **`xo`** / **`xu`** + FORMER **`helam`** |
 | *couldn't* | tried, that one time | try **`howam`** ([try](/ability#try)) + the [simple past](#simple-past); the sentence leaves the outcome open |
 | *could*, *might*, *may* | it could be | MAY **`thomam`** |
-| *may*, *is allowed to* | a rule / a person / no objection | **`hwaval`** / **`hwavam`** / **`hwavar`** |
-| *may not* | forbidden | **`hwavul`** / **`hwavum`** / **`hwavur`** |
-| *Can I …?* | asking permission | `yem` + **`hwavam`** |
+| *may*, *is allowed to* | a rule / a person / no objection | **`hwuval`** / **`hwuvam`** / **`hwuvar`** |
+| *may not* | forbidden | **`hwuvul`** / **`hwuvum`** / **`hwuvur`** |
+| *Can I …?* | asking permission | `yem` + **`hwuvam`** |
 | *Could you …?* (polite) | a request | **`yom`** ([speech act](/firm-soft#speech-act)) |
 
 > `zuzozen vezuyoxal.`
@@ -267,7 +267,7 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 >
 > "Olazun may leave." (could be)
 
-> `zuzozen vowurel hwavam.`
+> `zuzozen vowurel hwuvam.`
 >
 > z-Uzozen | v-walk | h-episode-event-ALLOW-said
 >
@@ -291,16 +291,16 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 |---------|--------|
 | *capable* / *ability* / *capability* | the verb or quality with **`xa`**: `zuzozen gezuyoxal` (*able to sing*); with no single verb, **`hodaxal`** |
 | *afford* (*can pay*) | `zuzozen varaxal danal` |
-| *visible* / *invisible* | the undergoer with ability: `zudozol gwadaweboxal` / `zudozol gwadaweboxul` |
+| *visible* / *invisible* | the undergoer with ability: `zudozol gwudaweboxal` / `zudozol gwudaweboxul` |
 | *blind* | `zuzozen gaweboxul` (*can never see*) |
 | *possible* / *potentially* | MAY **`thomam`** |
-| *acceptable* / *privilege* | permission **`hwaval`** |
-| *expect* / *anticipate* | a forecast: a channel + **`blral`**; when custom expects it, **`hwavor`** |
+| *acceptable* / *privilege* | permission **`hwuval`** |
+| *expect* / *anticipate* | a forecast: a channel + **`blral`**; when custom expects it, **`hwuvor`** |
 | *shall* | PLAN **`thagem`** |
-| *have to* | **`hwavom`** |
+| *have to* | **`hwuvom`** |
 | *do* / *does* / *did* (helper: *Do you walk?*) | no word: the verb under **`yel`** |
 
-> `zudozol gwadaweboxal.`
+> `zudozol gwudaweboxal.`
 >
 > z-dog | g-episode-patient-eye-able
 >
@@ -320,9 +320,9 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 
 | English | You mean | Agebon |
 |---------|----------|--------|
-| *must*, *is required to* | a rule requires it | **`hwavol`** |
-| *has to*, *I need you to* | a person demands it | **`hwavom`** |
-| *is supposed to* | custom expects it | **`hwavor`** |
+| *must*, *is required to* | a rule requires it | **`hwuvol`** |
+| *has to*, *I need you to* | a person demands it | **`hwuvom`** |
+| *is supposed to* | custom expects it | **`hwuvor`** |
 | *do it!* | you tell the listener now | command **`yol`** |
 | *should*, *ought to* | it serves a named sake | sake + **`the`** |
 | *shouldn't*, *ought not to* | the ought, with the act denied | sake + **`the`** before the act, **`vul`** after the verb |
@@ -330,9 +330,9 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 | *has to* (for a reason) | why they do it | sake + **`tho`** |
 | *should* (it will pay off) | a forecast | channel + **`blral`** |
 | *mustn't* | you forbid it now | prohibition **`yul`** |
-| *don't have to*, *needn't* | not doing it is allowed | permission **`hwavam`** (**`hwaval`** when a rule allows it) before the act + **`vul`** |
+| *don't have to*, *needn't* | not doing it is allowed | permission **`hwuvam`** (**`hwuval`** when a rule allows it) before the act + **`vul`** |
 
-> `zuzozen vowurel hwavol.`
+> `zuzozen vowurel hwuvol.`
 >
 > z-Uzozen | v-walk | h-episode-event-REQUIRE-rule
 >
@@ -360,13 +360,13 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 
 *Don't have to* lifts a demand: skipping the act is allowed. Put permission before the verb and deny the act.
 
-> `zuzozen hwavam vowurel vul.`
+> `zuzozen hwuvam vowurel vul.`
 >
 > z-Uzozen | h-episode-event-ALLOW-said | [v-walk | v-not]
 >
 > "Uzozen doesn't have to walk." (not walking is allowed)
 
-**Compare with:** requirement reports a demand, which may be someone else's; **`yol`** is you telling the listener. Requirement with a denied act (`zuzozen hwavom vowurel vul`) is *Uzozen is required not to walk*, which is *mustn't*, not *doesn't have to*.
+**Compare with:** requirement reports a demand, which may be someone else's; **`yol`** is you telling the listener. Requirement with a denied act (`zuzozen hwuvom vowurel vul`) is *Uzozen is required not to walk*, which is *mustn't*, not *doesn't have to*.
 
 ### Will, want, try, let's {#will-want}
 
@@ -374,7 +374,7 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 
 | English | Agebon |
 |---------|--------|
-| *will* (willing) | PLAN **`thagem`**, or **`hwazam`** (*I'll do it*, you can back out) |
+| *will* (willing) | PLAN **`thagem`**, or **`hwuzam`** (*I'll do it*, you can back out) |
 | *I want*, *I feel like* | WANT **`thalem`** (**`thalel`** lasting, **`thaler`** passing); someone else's want takes a [holder](/holder#holder): **`thebamuzozen thalem`** |
 | *intend to*, details open | PLAN sketch **`thager`** |
 | *hopefully* | **`thoguyem`** |
@@ -478,7 +478,7 @@ z-Uzozen | h-always | v-tell | h-FORMER
 **7.** *Uzozen may walk; I'm allowing it.*
 
 ::: details Show answer
-`zuzozen vowurel hwavam.`
+`zuzozen vowurel hwuvam.`
 
 z-Uzozen | v-walk | h-episode-event-ALLOW-said
 :::
@@ -486,7 +486,7 @@ z-Uzozen | v-walk | h-episode-event-ALLOW-said
 **8.** *Uzozen must walk; it's the rule.*
 
 ::: details Show answer
-`zuzozen vowurel hwavol.`
+`zuzozen vowurel hwuvol.`
 
 z-Uzozen | v-walk | h-episode-event-REQUIRE-rule
 :::

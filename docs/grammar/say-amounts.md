@@ -229,7 +229,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 | *carefully* | `hayulem` |
 | *gently* | `hegemam` |
 | *properly* / *correctly* | `hogugol` |
-| *properly* (*up to standard*) | the doer, then `hwavol zoel hogugol` (as correctly as the rules require) |
+| *properly* (*up to standard*) | the doer, then `hwuvol zoel hogugol` (as correctly as the rules require) |
 | *precisely* / *accurately* | `hubugom` |
 | *neatly* / *in an orderly way* | `henodam` |
 | *seriously* | `hozedom` |
@@ -263,9 +263,9 @@ The easy / hard pair on a quality ranks effort against a bar ([vague amounts](/v
 >
 > "The book is hard for Uzozen to write."
 
-*Properly* in the sense of *up to standard* names the standard as a bar ([every bar](/stance-bars#stance-bars)): REQUIRE **`hwavol`** is the rule, and a tie meets it. Use **`hwavor`** for what is customary.
+*Properly* in the sense of *up to standard* names the standard as a bar ([every bar](/stance-bars#stance-bars)): REQUIRE **`hwuvol`** is the rule, and a tie meets it. Use **`hwuvor`** for what is customary.
 
-> `zuzozen hwavol zoel hogugol varayel.`
+> `zuzozen hwuvol zoel hogugol varayel.`
 >
 > [z-Uzozen | h-episode-event-REQUIRE-rule | z-equal-rank | h-correct] | v-write
 >

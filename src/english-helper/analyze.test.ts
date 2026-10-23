@@ -48,8 +48,8 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
     const teacher = slots("The teacher sings.").find((s) => s.text === "teacher")!;
     const roles = teacher.suggestions.filter((s): s is RoleSuggestion => s.kind === "role");
     assert.deepEqual(roles.map((r) => [r.usual, r.link]), [[true, "roles.md#one-time-or-a-practice"], [false, "roles.md#role-compounds"]]);
-    assert.equal(roles[0]!.form, `zwez${roles[0]!.root}l`);
-    assert.equal(roles[1]!.form, `zwaz${roles[0]!.root}l`);
+    assert.equal(roles[0]!.form, `zwoz${roles[0]!.root}l`);
+    assert.equal(roles[1]!.form, `zwuz${roles[0]!.root}l`);
     assert.equal(teacher.suggestions[0]!.kind, "role");
   });
 
@@ -57,7 +57,7 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
     const walker = slots("Uzozen sees a dog walker.").find((s) => s.text === "walker")!;
     const stacked = walker.suggestions.find((s): s is RoleSuggestion => s.kind === "role" && !!s.modifier)!;
     assert.equal(stacked.modifier!.english, "dog");
-    assert.equal(stacked.form, `dwez${stacked.modifier!.root}x${stacked.root}l`);
+    assert.equal(stacked.form, `dwoz${stacked.modifier!.root}x${stacked.root}l`);
   });
 
   it("lists every job of a multi-job word, in table order", () => {
