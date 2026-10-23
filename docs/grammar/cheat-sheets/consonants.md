@@ -30,7 +30,7 @@ The same letters name a part in an earlier event on [role pointers](/pronouns#ro
 
 ## Endings {#endings}
 
-A content word's last letter is **-l**, **-m**, **-n**, or **-r**. Optional [**-x**](/plurality#associative) after that marks associates or a group. The same four letters are reused. Each **scale** below is one four-cell reading of those letters. None hangs on another. A mixed host writes one ending letter and reads it by cell: a [number](/number-markers#number-endings) is exactness on **-l** / **-m**, content on **-n**, reference on **-r**.
+A content word's last letter is **-l**, **-m**, **-n**, or **-r**. Optional [**-x**](/plurality#associative) after that marks associates or a group. The letter order **l m r n** has five sibling **scales**: content, exactness, completeness, reference, settled-to-passing. Each **series** reuses one scale’s **cell logic**, the mapping of those letters. A **hang cue** says why. Unused cells are an em dash. A mixed host writes one ending letter and reads it by cell: a [number](/number-markers#number-endings) is exactness on **-l** / **-m**, content on **-n**, reference on **-r**.
 
 Shown on one root, `azozo`. From [word endings](/word-endings#concrete-l) and [resume](/pronouns#resume-r). Content is **-l** / **-m** / **-n**; **-r** is reference.
 
@@ -44,7 +44,7 @@ Shown on one root, `azozo`. From [word endings](/word-endings#concrete-l) and [r
 
 <PageBreak />
 
-### Ending scales {#ending-scales}
+### Scales and series {#scales}
 
 From [word endings](/word-endings), [number endings](/number-markers#number-endings), [spans](/spans#when-required), [joins](/joins#join-type-vowel-series), [hooks](/hooks), [role pointers](/pronouns#role-pointers), [tags](/tag-pronouns#tag-pronouns), and [settled-to-passing](/sakes#settled-to-passing).
 
@@ -58,7 +58,7 @@ From [word endings](/word-endings), [number endings](/number-markers#number-endi
 
 Reference **-l** and **-m** are only on [role pointers](/pronouns#a-new-one) and [tags](/tag-pronouns#tag-pronouns). Tag [**-n**](/tag-pronouns#tag-pronouns) is reference **-r** plus a claim that the referent is a name.
 
-### How the scales hang {#ending-tree}
+### How the series hang {#ending-tree}
 
 ```text
 l m r n
@@ -133,9 +133,9 @@ l m r n
 
 ## Root-tail kinds {#root-kinds}
 
-A root's last consonant hints at the kind of thing. From [root tails](/root-tails#root-tails). Memory aid only: grammar does not read it.
+A root's last consonant hints at the kind of thing. From [root tails](/root-tails#root-tails). Memory aid only: grammar does not read it. Each kind **echoes** a letter job: it points at a job that letter already has.
 
-| Letter | Kind | Example | Why this letter | Stage |
+| Letter | Kind | Example | Echo | Stage |
 |--------|------|---------|-----------------|-------|
 | `z` | creatures | `ogoze` *cat* | [`/z/`](/clause#role-letters) who acts | A |
 | `y` | people | `eboyo` *baby* | [`/y/` + name](/speech-moves#vocative) calls someone | A |
@@ -151,6 +151,8 @@ A root's last consonant hints at the kind of thing. From [root tails](/root-tail
 | `n` | titles, paper, named sports | `unona` *newspaper*, `ezuna` *soccer* | [**-n**](/proper-names#proper-name--n) the name ending | A |
 
 ## Other jobs {#other-jobs}
+
+Same letter, different **letter job** by **placement**: where the letter sits picks the job.
 
 | Letter | Where | Job | Stage |
 |--------|-------|-----|-------|

@@ -7,7 +7,7 @@ band: beginner
 
 English uses small words such as *including*, *instead*, *in*, and *for* to attach one piece to another. Ageben does this with **hooks**: short words with **no role letter** (no `z` / `v` / `g` / …), just a vowel (or two vowels) plus an ending. A hook attaches the piece on its right to something already in play: a phrase in the same role, the sentence before, or the clause itself as an extra noun.
 
-How much of **A is still in the slot** after B arrives: added, still A, replaced, or none of B. That leftover is the same scale as [joins](joins.md#join-type-vowel-series), not size: you are changing membership of the slot, not measuring A.
+How much of **A is still in the slot** after B arrives: added, still A, replaced, or none of B. That leftover hangs on the [join](joins.md#join-type-vowel-series) series, not size: you are changing membership of the slot, not measuring A.
 
 The same spellings work in all three places. You tell them apart by what comes right **after** the hook, and by whether a `/b/` word comes right **before** it.
 

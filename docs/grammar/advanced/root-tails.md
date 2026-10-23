@@ -10,11 +10,11 @@ A root ends in a **tail**, its last two letters, that hints at what it names. Th
 
 The tail is a memory aid. No grammar reads it, and you never build a root from the tail. It just means that if you know what a thing is, you already know two letters of its root, and an unknown word in a text still tells you roughly what it names. A country or territory name has no tail: it is spelled from the English sound ([place-name roots](singability.md#place-name-roots)).
 
-Each letter reuses a job it already has somewhere in the grammar:
+Each letter **echoes** a job it already has somewhere in the grammar: the letter points at that job as a memory aid, and grammar does not read it.
 
 <!-- cheat-sheet: consonants -->
-| Second consonant | Kind | Example | Why this letter |
-|------------------|------|---------|-----------------|
+| Second consonant | Kind | Example | Echo |
+|------------------|------|---------|------|
 | `z` | creatures: animals, microbes | `ogoze` *cat* | [`/z/`](/clause#role-letters) is the one who acts |
 | `y` | people: persons, kin, roles, and what only a person does | `eboyo` *baby* | [`/y/` + name](/speech-moves#vocative) calls someone |
 | `m` | mind and feeling: faces, emotions, mental states | `evemu` *fear* | [**-m**](/word-endings#abstract-m) is the abstract ending |

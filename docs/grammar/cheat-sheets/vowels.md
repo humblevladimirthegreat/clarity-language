@@ -29,7 +29,7 @@ The letter order **a o e u** has two sibling **scales**: size is amount (biggest
 | [Digit](/numbers#counts) | order | next unused vowel | `ba` `za` `na` | `do` `vo` `mo` | `ge` `re` | `hu` `lu` | B |
 | [Finger code](/finger-code#counting) (vowel hand) | order | pinky-first count | 1 (pinky) | 2 | 3 | 4 | B |
 
-### How the scales hang {#vowel-tree}
+### How the series hang {#vowel-tree}
 
 ```text
 four vowels

@@ -209,6 +209,12 @@ Endings on unmet **`thu`**, **DECISION**, and ability *can’t*.
 
 [Sakes](/sakes#sake-changeability), [Decision and try](/ability#decision)
 
+### Cell logic
+
+The reusable mapping of ending letters **-l / -m / -r / -n** on a scale. Ending series reuse a scale’s cell logic the way vowel series reuse leftover-logic. Unused cells are an em dash.
+
+[Consonants cheat sheet](/cheat-sheets/consonants)
+
 ### Citation / prefix-less citation
 
 Root + ending with no role letter, outside a sentence.
@@ -334,6 +340,12 @@ SHARED kind plus invert / standalone joins; a SHARED word after the join can bou
 [Universals and domains](/universals-domains#universals-domains-generics)
 
 Closed **-l** allows no exceptions; open **-m** leaves the exceptions open (*as far as I know*, *as a rule*). A channel on the clause says how you know the general claim.
+
+### Echo
+
+A memory-aid pointer from a root-tail kind to a letter job. Grammar does not read it.
+
+[Root tails](/root-tails#root-tails), [consonants cheat sheet](/cheat-sheets/consonants)
 
 ### Empty-allowed
 
@@ -484,9 +496,9 @@ A named citation is a hello (`azozon.`). Add mid-word **`x`** plus **`a`** / **`
 
 ### Hang cue
 
-Why a vowel series reuses another series’ leftover-logic, in one affirmative sentence. Cell cues stay in Cue columns.
+Why a series reuses a parent scale’s leftover-logic or cell logic, in one affirmative sentence. On a scale, the hang cue is that leftover-logic or cell logic itself. Cell cues stay in Cue columns.
 
-[Vowels cheat sheet](/cheat-sheets/vowels)
+[Vowels cheat sheet](/cheat-sheets/vowels), [consonants cheat sheet](/cheat-sheets/consonants)
 
 ### Holder
 
@@ -498,9 +510,9 @@ Whose view a clause reports. The name is fused onto an evidential, **MAY**, or *
 
 ### Hangs on
 
-A series has its own slogans; its letters and leftover-logic come from a parent series or scale.
+A series has its own slogans; its letters and leftover-logic or cell logic come from a parent series or scale.
 
-[Vowels cheat sheet](/cheat-sheets/vowels)
+[Vowels cheat sheet](/cheat-sheets/vowels), [consonants cheat sheet](/cheat-sheets/consonants)
 
 ### Host
 
@@ -559,6 +571,12 @@ Content `/v/` or `/ɡ/` `/h/` + join vowel + **-n**.
 Vocative → polar stance → act word, then body.
 
 [Speech moves](/speech-moves#turn-y)
+
+### Letter job
+
+What a consonant does in a position: first letter is a [role letter](#role-letter), last letter is an ending cell, mid-word is a seam or compound.
+
+[Clause](/clause#role-letters), [consonants cheat sheet](/cheat-sheets/consonants)
 
 ### Concrete / abstract / named / resume
 
@@ -680,6 +698,12 @@ Special reading of a published root under a PoS.
 
 **Compare with:** a number under `/v/` `/h/` `/th/` `/y/` `/x/` is [Number shape](/number-markers#number-as-roles), not an overlay. Lexicon abstract **-m** stays abstract.
 
+### Placement
+
+Where a consonant sits picks its letter job: first, last, or mid-word. Same letter, different job by placement.
+
+[Consonants cheat sheet](/cheat-sheets/consonants)
+
 ### Polar stance
 
 Closed `/y/` particles **`yaol` / `yuol` / …**.
@@ -791,11 +815,11 @@ The last two letters of a root: a consonant for the kind of thing and a vowel fo
 
 [Root tails](/root-tails#root-tails)
 
-### Scale (size and order)
+### Scale
 
-Two sibling readings of **a o e u**: **size** is amount (biggest to smallest); **order** is sequence (first to fourth). Amount series hang on size; digit vowels, tags, pitch, and the finger-code vowel hand hang on order.
+A sibling parent map with no parent of its own. On **a o e u**, **size** is amount (biggest to smallest) and **order** is sequence (first to fourth). On **-l -m -r -n**, the five are content, exactness, completeness, reference, and settled-to-passing. Series hang on a scale; sibling scales do not hang on each other.
 
-[Vowels cheat sheet](/cheat-sheets/vowels)
+[Vowels cheat sheet](/cheat-sheets/vowels), [consonants cheat sheet](/cheat-sheets/consonants)
 
 ### Scope island
 
@@ -998,9 +1022,9 @@ The fixed, optional pitch of each vowel: `u` high, `e` mid-high, `o` mid-low, `a
 
 ### Vowel series
 
-A four-cell English map on **a o e u**. The leftover-list map is the [join series](#join-series); other series hang on size or order, or on join.
+A four-cell English map on **a o e u**. The leftover-list map is the [join series](#join-series); other series hang on size or order, or on join. Ending series are the parallel on **-l -m -r -n**: own slogans, cell logic from an ending scale.
 
-[Joins](/joins#join-type-vowel-series), [vowels cheat sheet](/cheat-sheets/vowels)
+[Joins](/joins#join-type-vowel-series), [vowels cheat sheet](/cheat-sheets/vowels), [consonants cheat sheet](/cheat-sheets/consonants)
 
 ### Audible start
 
