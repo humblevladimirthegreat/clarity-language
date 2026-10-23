@@ -157,7 +157,7 @@ A stack has two act words at most, with nothing between them. A call, a reaction
 
 ### Describing a call or reaction {#describe-turn-word}
 
-A call or a reaction can also take an adjective **before** it, with [**`gl-`**](clause.md#left-bound-adjectives), the way a noun does. Its `/w/` and its `/b/` come along as usual.
+A call or a reaction can also take an adjective **before** it, with [**`gl-`**](left-bound.md#left-bound-adjectives), the way a noun does. Its `/w/` and its `/b/` come along as usual.
 
 > `glolamam yolazun.`
 >
@@ -171,7 +171,7 @@ A call or a reaction can also take an adjective **before** it, with [**`gl-`**](
 >
 > "Happy birthday!"
 
-A reaction can also take a [degree word](clause.md#degree-w) right before it, to say how strongly it holds. A call takes none: the person you call is not more or less called.
+A reaction can also take a [degree word](left-bound.md#degree-w) right before it, to say how strongly it holds. A call takes none: the person you call is not more or less called.
 
 > `welazom yemom.`
 >

@@ -67,7 +67,7 @@ Closed **`hel`** ranks the listed occasions: the first one listed is the preferr
 >
 > "Uzozen walks preferably on weekends, or else at night."
 
-One occasion before **`huel`** is the last resort: the claim counts there, but only when nothing better applies. With several, the order reverses, as with [`zuel`](joins.md#invert-u-stacks): the last one listed is the most preferred, so `herulal hanurul huel` makes night the first choice and rain the last. On `/w/` the same words limit the next adjective (`wuel` / `wuem`).
+One occasion before **`huel`** is the last resort: the claim counts there, but only when nothing better applies. With several, the order reverses, as with [`zuel`](rank-joins.md#invert-u-stacks): the last one listed is the most preferred, so `herulal hanurul huel` makes night the first choice and rain the last. On `/w/` the same words limit the next adjective (`wuel` / `wuem`).
 
 > `zuzozen vowurel herulal huel.`
 >

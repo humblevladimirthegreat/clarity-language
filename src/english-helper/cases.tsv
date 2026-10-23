@@ -4,6 +4,7 @@ english	slot	expect	why
 Uzozen sees me.	me	link:pronouns.md#special-pronouns	*me* is the speaker
 Uzozen sees me.	me	no-gap	*me* once had no suggestion
 You walk.	You	first:job	a row whose first cue is *you* comes first
+Uzozen walks by the station.	by	link:clause.md#who-acts-and-the-action	the many-jobs *by* table still leads
 # Possessives
 My cat runs.	My	has:possessive-pronoun	*my* names the possessive job
 # Numbers
@@ -36,7 +37,7 @@ Uzozen sees whether Olazun walks.	whether	first:whether-clause	*whether* opens a
 I know that.	that	first:job	*that* with no clause after it is a pronoun
 I know that.	that	not:dependents.md#dependent-clauses	*that* with no clause after it is a pronoun
 # Hooks and prepositions
-We went aboard the train.	aboard	link:relations.md#locative-relations	a preposition tagged as an adjective still gets its hook
+We went aboard the train.	aboard	link:of-relations.md#locative-relations	a preposition tagged as an adjective still gets its hook
 The cat slept underneath the table.	underneath	link:viewpoint.md#gravity	a preposition tagged as an adjective still gets its hook
 Five dollars per hour.	per	link:say-amounts.md#per-unit	*per* is a rate
 Five dollars per hour.	per	not:hooks.md#extra-noun	*per* is a rate, not an extra-noun hook
@@ -50,9 +51,9 @@ We sat in the living room.	living room	sense:living-room	a multi-word compound s
 She read a school book.	book	first:compound	a listed compound from two words' roots comes first
 # Hook prefixes
 Olazun is anti-war.	anti-war	has:relation-prefix	a hyphenated relation prefix is a hook prefix
-Uzozen walks homeward.	homeward	link:hooks.md#hook-prefixes	*-ward* on a noun is a hook prefix
+Uzozen walks homeward.	homeward	link:hook-compounds.md#hook-prefixes	*-ward* on a noun is a hook prefix
 The ship is transoceanic.	transoceanic	has:relation-prefix	*trans-* + a place adjective is a hook prefix
-Uzozen walks forward.	forward	not:hooks.md#hook-prefixes	an everyday *-ward* word is not built from a noun
+Uzozen walks forward.	forward	not:hook-compounds.md#hook-prefixes	an everyday *-ward* word is not built from a noun
 # Numeric prefixes
 Ahelan is a quasi-friend.	quasi friend	link:numeric-derivation.md#limit-polarity-stage	*quasi-* on a noun is the quasi row
 Uzozen sees a three-part dialogue.	three part	link:numeric-derivation.md#scalar-digit-morphs	*three-part* names the kind by its parts
@@ -60,9 +61,9 @@ Uzozen sees a tri-dialogue.	tri-dialogue	has:number-prefix	a hyphenated number p
 Uzozen sees a union.	union	not:numeric-derivation.md#numeric-derivation	a prefix needs its hyphen
 # Hooked joins
 Everyone at the house sleeps.	at	has:hooked-join	*everyone* + a preposition: the hook bounds who counts
-Is there something for me?	something for me	link:hooks.md#hooked-joins-endings	*something for me* is one cue run, a hooked join
+Is there something for me?	something for me	link:hook-compounds.md#hooked-joins-endings	*something for me* is one cue run, a hooked join
 The guard is against everyone at the school.	at	has:hooked-join	*everyone at* the school bounds who counts
-Uzozen sleeps at the house.	at	not:hooks.md#hooked-joins	a hook after a verb places the act
+Uzozen sleeps at the house.	at	not:hook-compounds.md#hooked-joins	a hook after a verb places the act
 You have never listened since the storm.	since	has:hooked-join-time	*never … since* bounds the times
 # Label scope: the seam spelled on the word it scopes
 Uzozen lied this once.	this once	scope:tha:lie	the cue run leaves *lied* its own slot

@@ -122,7 +122,7 @@ A **`th`** pointer reads [sake](sakes.md) words, feeling roots, and [causation p
 
 A **`y`** pointer reaches turns, not events: `dwayar` the latest turn, `dwayor` the one before it, `dwayer` this very turn, `dwayur` whatever was said. With **-m**, `dwayam` is what the saying did, apart from what it said.
 
-If the next sentence after an event opened with a [consequence linker](dependents.md#sentence-linkers) (`xahem` *therefore*, `xahel` *it follows that*), an **`x`** pointer is that sentence's event:
+If the next sentence after an event opened with a [consequence linker](sentence-linkers.md#sentence-linkers) (`xahem` *therefore*, `xahel` *it follows that*), an **`x`** pointer is that sentence's event:
 
 > `zuzozen vanuvul. xahem zolazun varemul. zahelan dwaxar vawebol.`
 >
@@ -249,7 +249,7 @@ Gravity works the same way: bare **`aduhe`** + `/b/` is *under* the landmark, an
 >
 > "A bird sits above the dog."
 
-**Compare with:** locative *at* / *on* / *inside* name how the figure sits relative to the landmark ([locative relations](relations.md#locative-relations)), not a compass heading.
+**Compare with:** locative *at* / *on* / *inside* name how the figure sits relative to the landmark ([locative relations](of-relations.md#locative-relations)), not a compass heading.
 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | Use | English |

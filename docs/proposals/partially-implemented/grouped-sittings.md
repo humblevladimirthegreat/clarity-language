@@ -1,6 +1,6 @@
 # Proposal: One sitting per file, grouped by band in the sidebar
 
-**Status:** phase 0 and phase 1 landed (B+I peels on the holding list). Not design authority; fold into grammar / meta docs, then drop.  
+**Status:** phase 0, 1, and 2 landed (B+I and B+I+A peels on the holding list). Not design authority; fold into grammar / meta docs, then drop.  
 **Related:** [learning levels](../../meta/learning-levels.md), [empty stages](../../meta/grammar-docs.md#empty-stages), [page skeleton](../../meta/grammar-docs.md#page-skeleton), [level reviews](../../meta/translation-exercises.md#level-reviews), [AGENTS.md policy](../../meta/agents-md.md), [site redirects](../../meta/site-redirects.md).  
 **Code:** [`reading-order.ts`](../../grammar/.vitepress/lib/reading-order.ts), [`holding-list.ts`](../../grammar/.vitepress/lib/holding-list.ts), [`hash-redirect.ts`](../../grammar/.vitepress/lib/hash-redirect.ts), [`learning-order.ts`](../../../src/lint/learning-order.ts), [`peel-band.ts`](../../../scripts/peel-band.ts), [`lint-forward-links.ts`](../../../scripts/lint-forward-links.ts), [`constructions.ts`](../../../src/parse/constructions.ts).
 
@@ -53,7 +53,7 @@ Today a band is only an H2 title ([`pageSections`](../../../src/lint/learning-or
   5. Append a hash-map row for `#intermediate` / `#advanced` on the parent path.
   6. Add the new file to a **holding list** (not yet a visible sidebar group).
 - **Hash map + theme snippet:** on `joins.md`, `#intermediate` replaces to the new sitting (keep `?query`). Same-file `#beginner` after the H2 is gone scrolls to the top.
-- **Construction homes** that pointed at `hooks.md#beginner` retarget to the first taught H3 (or the H1 id) on that sitting. The script prints the list; do not leave homes on a retired band fragment.
+- **Construction homes** that pointed at `hooks.md` retarget to the first taught H3 (or the H1 id) on that sitting. The script prints the list; do not leave homes on a retired band fragment.
 - Then `npm run cheat-sheet-blocks -- --write`.
 
 Policy edits in the same commit: [learning-levels](../../meta/learning-levels.md) (how to apply + cross-doc path wording), [page skeleton](../../meta/grammar-docs.md#page-skeleton) item 3, [drill-generation](../../meta/drill-generation.md) “do not split by level,” empty-stage notes that assume a missing H2 on the same file. How to learn waits for regroup (learner-facing).
@@ -143,7 +143,7 @@ One session per phase unless the phase says it is several peel sessions.
 
 ### Phase 2 — Three-band peels
 
-Eleven parents. Phonology and clause first (short Advanced). Joins, hooks, dependents, relations last. Intermediate then Advanced on the same parent may share a session only when both cuts are contiguous and the parent is not already a 1,400-line edit.
+**Landed.** Eleven parents, twenty-two sittings on the holding list. How to learn still describes H2s until regroup.
 
 ### Phase 3 — Remaining I+A peels
 
@@ -164,9 +164,9 @@ After this phase, prev/next is the curriculum. A filter is unnecessary.
 
 ## Out of scope
 
-- Reordering inside a group (allowed after regroup; not part of the peel).
+- Reordering inside a group, and changing the rubric (follow `band-criteria.md` after this proposal’s Done when).
 - Folders per topic (`hooks/…`). Optional later if AGENTS.md rows get crowded; not required for routing.
-- Changing the rubric, cheat-sheet Stage column, or recipe track.
+- Cheat-sheet Stage column meaning, or the recipe track.
 - Band-aware search, or teaching new forms while peeling.
 - Runtime sidebar filter on unsplit pages.
 

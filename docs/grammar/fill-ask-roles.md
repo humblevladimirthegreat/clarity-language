@@ -94,7 +94,7 @@ To ask *whose?*, write the hook **`em`** (*used by*) after the thing, then the b
 >
 > "Whose dog walks?"
 
-Answer with the hook and the user, as a [citation](word-endings.md#citation-forms): `em buzozen.` ("Uzozen's."). For ownership rather than use, see [`gogunum`](joins.md#scope-fence-p-join).
+Answer with the hook and the user, as a [citation](word-endings.md#citation-forms): `em buzozen.` ("Uzozen's."). For ownership rather than use, see [`gogunum`](rank-joins.md#scope-fence-p-join).
 
 ### How? {#how}
 

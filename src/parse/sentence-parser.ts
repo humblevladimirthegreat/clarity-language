@@ -225,7 +225,7 @@ function isStanceWord(token: IToken): boolean {
   return tokenIs(token, HTh);
 }
 
-/** A holder seam word (`thunemazawan`): whose view it is (knowing.md#holder). */
+/** A holder seam word (`thunemazawan`): whose view it is (evidentiality.md#holder). */
 function isHolderWord(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;
   return family?.kind === "x" && family.xFamily === "holder";
@@ -485,7 +485,7 @@ class AgebonSentenceParser extends CstParser {
       this.OR([
         {
           ALT: () => {
-            // A mention marker before a topic span (`glelel x[udozo] …`, spans.md#mention).
+            // A mention marker before a topic span (`glelel x[udozo] …`, span-mention.md#mention).
             this.OPTION4(() => this.CONSUME(GGlBefore.Linker, { LABEL: "topicMarker" }));
             this.CONSUME(Linker);
             // A topic word, or a marked topic span, may be the whole sentence (`xazawan.`, `glelel x[udozo].`; topic.md#topic).
@@ -569,7 +569,7 @@ class AgebonSentenceParser extends CstParser {
    *   adjective: that adjective would describe the unit. Only a `/ɡ/` list that opens with its join word, or a
    *   respectively list, follows there (`*Open` rules).
    * - After a list whose join shares an adjective (`*Shared` rules), a respectively `/ɡ/` list does not follow: its
-   *   adjectives start right at the join, so the first one is not shared (joins.md#respectively).
+   *   adjectives start right at the join, so the first one is not shared (rank-joins.md#respectively).
    */
   public unit = this.unitChainRule("unit", "start", "closed");
   /** The first clause item after a cross-period join: a unit chain that does not open with a hook. */
@@ -775,7 +775,7 @@ class AgebonSentenceParser extends CstParser {
   /**
    * One slot's rules. A list is one or more parts, each closed by its join; it ends as its last part does (see the
    * `unit` rules), and in a `Grounds` list the last part's bar hosts `barl`, so the main clause ends with the list and the
-   * next sentence is the grounds (comparatives.md#bars). The parts after the first come as a right-recursive rest
+   * next sentence is the grounds (comparative-arity.md#bars). The parts after the first come as a right-recursive rest
    * (read back by `npPartNodes`), so a part's end is known before deciding whether more follow:
    * - After a part a group tag closes (`Tagged`), the next part may open with a new tag (`zwal zodogal zam`); after any
    *   other part it may not: a tag right after a join names the whole list (tag-pronouns.md#tag-pronouns).
@@ -861,7 +861,7 @@ class AgebonSentenceParser extends CstParser {
           this.consume(k, B, { LABEL: "itemHookBound" });
         });
         // A stance word before a rank join is the comparee: the bar (comparatives.md § bars). A CLUES or PATTERN bar
-        // may host `barl`: the next sentence is the grounds (comparatives.md#bars).
+        // may host `barl`: the next sentence is the grounds (comparative-arity.md#bars).
         if (grounds) this.subrule(k, this.barsGrounds, { LABEL: "bar" });
         else this.many(k + 1, () => this.subrule(k, this.barUnit, { LABEL: "bar" }));
         ending(k, "npJoinClose");
@@ -891,7 +891,7 @@ class AgebonSentenceParser extends CstParser {
   }
 
   /**
-   * A list's join word, and what the join shares (joins.md#shared-after-the-join): an adjective after any join, a
+   * A list's join word, and what the join shares (rank-joins.md#shared-after-the-join): an adjective after any join, a
    * scale after a rank join ({@link HScale}, {@link BScale}), then the factor after an equative's scale. `Bare`: nothing
    * shared; `Open`: an adjective or scale whose hosted `/b/` the adjectives after it describe; `Shared`: any other
    * adjective; `Closed`: a scale, or a factor.
@@ -903,7 +903,7 @@ class AgebonSentenceParser extends CstParser {
         this.CONSUME(WBefore[NP_W_TARGET[level]], { LABEL: "W" });
       });
       this.CONSUME(NP_JOIN[level]);
-      // A hooked join's landmark: the `bl-` word right after it (hooks.md#hooked-joins).
+      // A hooked join's landmark: the `bl-` word right after it (hook-compounds.md#hooked-joins).
       this.OPTION3(() => this.CONSUME3(HostedB, { LABEL: "joinLandmark" }));
       const label = { LABEL: "sharedAfterJoin" };
       if (variant === "Open") {
@@ -1145,7 +1145,7 @@ class AgebonSentenceParser extends CstParser {
 
   /**
    * A `/ɡ/` list right after a noun join that shares nothing: its first part is a lone join word, or a respectively
-   * list (`zalahen zal gelavam gamazam wazem gal`, joins.md#respectively). Any other first adjective would be shared.
+   * list (`zalahen zal gelavam gamazam wazem gal`, rank-joins.md#respectively). Any other first adjective would be shared.
    */
   public gCoordLead = this.RULE("gCoordLead", () => {
     this.SUBRULE(this.gCoordPartLead, { LABEL: "gCoordPart" });
@@ -1160,7 +1160,7 @@ class AgebonSentenceParser extends CstParser {
 
   /**
    * A `/ɡ/` list after a list that shares an adjective: its first part is not a respectively list, whose first
-   * adjective would sit right after the noun join (joins.md#respectively).
+   * adjective would sit right after the noun join (rank-joins.md#respectively).
    */
   public gCoordPlainLead = this.RULE("gCoordPlainLead", () => {
     this.SUBRULE(this.gCoordPartPlain, { LABEL: "gCoordPart" });
@@ -1344,7 +1344,7 @@ class AgebonSentenceParser extends CstParser {
     });
   }
 
-  /** A CLUES or PATTERN bar hosting `barl`: the next sentence is the grounds (comparatives.md#bars). */
+  /** A CLUES or PATTERN bar hosting `barl`: the next sentence is the grounds (comparative-arity.md#bars). */
   public barStandIn = this.RULE("barStandIn", () => {
     this.MANY(() => {
       this.CONSUME(WBefore.Bar, { LABEL: "W" });
@@ -1379,7 +1379,7 @@ class AgebonSentenceParser extends CstParser {
   /**
    * A host's `/b/`: an `open` one is a noun with no join, which the plain adjectives after it describe (so a plain
    * adjective after the host would be one more of them); a `closed` one has a join, or is a number. With `grounds`
-   * (a `/th/` host), `barl` may follow a number: a channel's offset, then the grounds (knowing.md#evidence-clause).
+   * (a `/th/` host), `barl` may follow a number: a channel's offset, then the grounds (evidentiality.md#evidence-clause).
    */
   private landmarkHosted(k: number, shape: "open" | "closed" | "any", grounds = false): void {
     const open = () => {
@@ -1418,7 +1418,7 @@ class AgebonSentenceParser extends CstParser {
 
   /**
    * Plain adjectives after a word, each describing it (clause.md#adjectives-ɡ). Only the last may end open (its hosted
-   * `/b/` takes the adjectives after it, clause.md#complex-chaining), so the run itself always ends open.
+   * `/b/` takes the adjectives after it, left-bound.md#complex-chaining), so the run itself always ends open.
    */
   private trailingAdjs(k: number): void {
     this.option(k + 1, () => this.subrule(k, this.trailingAdjRun, { LABEL: "gPackage" }));
@@ -1528,7 +1528,7 @@ class AgebonSentenceParser extends CstParser {
       1,
       heads.map(({ type, label }, i) => ({ ALT: () => this.consume(i + 1, type, label ? { LABEL: label } : undefined) })),
     );
-    // A `gl-` adjective leans on the next noun, so it ends this package (clause.md#left-bound-adjectives).
+    // A `gl-` adjective leans on the next noun, so it ends this package (left-bound.md#left-bound-adjectives).
     this.trailingAdjs(1);
     if (tag && tagged === "optional") this.OPTION3(() => this.CONSUME(tag, { LABEL: "tag" }));
     if (tag && tagged === "required") this.CONSUME2(tag, { LABEL: "tag" });
@@ -1557,7 +1557,7 @@ class AgebonSentenceParser extends CstParser {
    * - `gLone…`: an adjective unit of its own ({@link GAdj}); `gShared…` / `gPackage` (any shape): the adjective a noun
    *   join shares ({@link GShareable}).
    * - `gListItem` / `gRespItem`: an item of a joined `/ɡ/` list, where a plain adjective after its `/b/` is the next item.
-   * - `glPackage`: a `gl-` adjective, which leans on the noun or call after it (clause.md#left-bound-adjectives).
+   * - `glPackage`: a `gl-` adjective, which leans on the noun or call after it (left-bound.md#left-bound-adjectives).
    */
   public gPackageOpen = this.gPackageRule("gPackageOpen", GPlain, "open");
   public gPackageClosed = this.gPackageRule("gPackageClosed", GPlain, "closed");
@@ -1896,7 +1896,7 @@ function isLabelMarker(marker: NumberMarker): boolean {
 
 /**
  * Give words the token their neighbors decide. A word that completes the word right before it (clause.md § extra
- * nouns): a `bl-` word after an `/h/`, `/th/` or `/ɡ/` word, a hooked join (hooks.md#hooked-joins), or a label-scope
+ * nouns): a `bl-` word after an `/h/`, `/th/` or `/ɡ/` word, a hooked join (hook-compounds.md#hooked-joins), or a label-scope
  * verb that names a pair (label-scope.md#scope-relative), becomes {@link HostedB}, and a `bl-` stand-in after an `/h/` or `/th/` word
  * {@link HostedOdo}. A plain `/b/` there stays the verb's recipient.
  * A cardinal `/ɡ/` right after a hosted `/b/` is that unit's {@link Amount}, and a signed `/h/` number after an
@@ -1951,7 +1951,7 @@ function hListTypeAt(tokens: IToken[], at: number): TokenType | undefined {
   if (token.tokenType !== HPlain && token.tokenType !== HTh) return undefined;
   let next = at;
   while (true) {
-    // A noun `/b/` takes the plain adjectives after it, each with its own hosted `/b/` (clause.md#complex-chaining).
+    // A noun `/b/` takes the plain adjectives after it, each with its own hosted `/b/` (left-bound.md#complex-chaining).
     const landmark = tokens[next + 1]?.tokenType === HostedBNoun;
     next = skipHosted(tokens, next + 1);
     if (landmark) {
@@ -2045,7 +2045,7 @@ const GL_TARGET_HEADS: [GlTarget, TokenType[]][] = [
 ];
 
 /**
- * A `gl-` adjective leans on the word after it (clause.md#left-bound-adjectives), past its own hosted `/b/` (with the
+ * A `gl-` adjective leans on the word after it (left-bound.md#left-bound-adjectives), past its own hosted `/b/` (with the
  * list that fills it and its amount) and the plain adjectives that describe that `/b/` (`glugol bazawan gugol zodogal`).
  */
 function glTypeAt(tokens: IToken[], at: number): TokenType | undefined {
@@ -2109,7 +2109,7 @@ function wTypeAt(tokens: IToken[], at: number): TokenType | undefined {
 
 /**
  * A hook and its `/b/` right before a noun list's join word, or before its bar, after a noun of that slot and what
- * describes it: the hook belongs to that last item (joins.md#shared-after-the-join), not to the clause.
+ * describes it: the hook belongs to that last item (rank-joins.md#shared-after-the-join), not to the clause.
  */
 function isItemHookAt(tokens: IToken[], at: number): boolean {
   if (!tokenIs(tokens[at]!, Hook) || tokens[at + 1]?.tokenType !== B) return false;
@@ -2133,7 +2133,7 @@ function hostedType(token: IToken, before: IToken[], after: IToken[]): TokenType
   if (token.tokenType === HPlain && before[skipWBack(before, before.length - 1)]?.tokenType === JoinV) return HSharedV;
   if (tokenIs(token, B) && isRankNounJoin(host) && scaleNumberAhead(token)) return BScale;
   const locked = !!(token.payload as LexWord | undefined)?.bl;
-  // A hooked join's landmark: one `bl-` word, never a list (hooks.md#hooked-joins). An `/h/` one hosts as any `/h/` word.
+  // A hooked join's landmark: one `bl-` word, never a list (hook-compounds.md#hooked-joins). An `/h/` one hosts as any `/h/` word.
   if (locked && tokenIs(token, B, JoinB) && isHookedNounJoin(host)) {
     return (token.payload as LexWord | undefined)?.family.kind === "number" ? HostedBNumber : HostedBNoun;
   }
@@ -2196,7 +2196,7 @@ function joinClosesAhead(after: IToken[]): boolean {
 
 /**
  * `blarl` that fills a `/th/` host from further right: after a stance join that closes a pole with no `/b/` yet
- * (join-across-roles.md#stance-join-before-barl), or after a channel's offset (knowing.md#evidence-clause).
+ * (join-across-roles.md#stance-join-before-barl), or after a channel's offset (evidentiality.md#evidence-clause).
  */
 function isLateOdoAt(before: IToken[]): boolean {
   let i = before.length - 1;
@@ -2230,8 +2230,8 @@ function skipWBack(tokens: IToken[], i: number): number {
   return i;
 }
 
-/** A rank, equative or sequence join of a noun list: the word after it may be its shared scale (joins.md#shared-after-the-join). */
-/** A `/z/`, `/d/` or `/b/` hooked join, which hosts its landmark (hooks.md#hooked-joins). */
+/** A rank, equative or sequence join of a noun list: the word after it may be its shared scale (rank-joins.md#shared-after-the-join). */
+/** A `/z/`, `/d/` or `/b/` hooked join, which hosts its landmark (hook-compounds.md#hooked-joins). */
 function isHookedNounJoin(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;
   return tokenIs(token, JoinZ, JoinD, JoinB) && family?.kind === "joinMarker" && !!family.hook;

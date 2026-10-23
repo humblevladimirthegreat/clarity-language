@@ -119,7 +119,7 @@ describe("overlay csv", () => {
           gloss: "PATTERN",
           definition: "pattern evidential",
           mnemonic: "",
-          anchor: "knowing.md#evidentiality",
+          anchor: "evidentiality.md#evidentiality",
         },
       ],
       [],

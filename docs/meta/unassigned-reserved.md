@@ -67,7 +67,7 @@ Source: [numbers.md](../grammar/numbers.md), [numeric-derivation.md](../grammar/
 
 ### Number markers on `/w/`, `/th/`, and stacks
 
-- **open:** **`w+N`**, **`w-N`**, **`w_N`** (a count or fraction on `/w/`). Not guessable: before an adjective a count could be a ratio (*twice as big*) or a difference (*bigger by two*). A factor is `hradol` / `hrudol` on `/h/` ([factor](../grammar/comparatives.md#factor)).
+- **open:** **`w+N`**, **`w-N`**, **`w_N`** (a count or fraction on `/w/`). Not guessable: before an adjective a count could be a ratio (*twice as big*) or a difference (*bigger by two*). A factor is `hradol` / `hrudol` on `/h/` ([factor](../grammar/comparative-arity.md#factor)).
 - **open:** **`w#-N`**, **`w#1`**, and `w#N` outside a single-name `zel` / `zuel` frame. No learner reaches for them: English never says *the first biggest* (first place is the plain superlative) or counts a scale *from the end* (*second smallest* is `zuel` + `w#2`), and `w#N` needs one name before the fence to rank within.
 - **closed (D-38):** **`th#1`** as *first-hand*.
 - **closed (D-41):** **`th#N`** in a clause with LIVE or MEMORY (`thugom thredol`).
@@ -105,7 +105,7 @@ Source: [restrictors.md](../grammar/restrictors.md)
 - **open:** further `/w/` bare forms beyond **`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur` / `wer`** and the non-bare Intermediate core: the same competing readings.
 - **open:** **-n** on `/w/` (`wan`, …). `/w/` is never a phrase-list item, so there is no package to name. (`/h/`…**-n** is [join-relations](../grammar/join-across-roles.md#join-relations).)
 - **open:** **`wubam`** before **-r** / **-n**. *Respectively something* has no reading.
-- **open:** other join spellings under `/h/` / `/w/` beyond the [defined restrictor core](../grammar/more-occasions.md#defined-core-full) and the join-relations, such as stacked **-r** (`haor`): a stacked blank has no statement job. See also [phrase join inventory](../grammar/joins.md#phrase-reserved-forms).
+- **open:** other join spellings under `/h/` / `/w/` beyond the [defined restrictor core](../grammar/more-occasions.md#defined-core-full) and the join-relations, such as stacked **-r** (`haor`): a stacked blank has no statement job. See also [phrase join inventory](../grammar/join-islands.md#phrase-reserved-forms).
 
 ## Joins
 
@@ -121,7 +121,7 @@ Source: [joins.md](../grammar/joins.md), [join-across-roles.md](../grammar/join-
 
 ## Comparison bars
 
-Source: [comparatives.md](../grammar/comparatives.md#bars)
+Source: [comparatives.md](../grammar/comparative-arity.md#bars)
 
 - **open:** a stance that sets no value as a bar: clause poles, MAY, MIRATIVE, DECISION, ATTEMPT, RESIDUE, CAUSE, and a say word's no or *their call* (`hwavul`, `hwadum`, `hwavom`). None sets a level to rank against: a decision or an attempt commits to an act, a ban or a refusal only says no, and *their call* sets nothing. *Than decided* is PLAN. Parser: `barKind`.
 - **open:** a second comparee next to a bar (`barCount`). A bar fence ranks one item against one bar, so a second item has nothing to rank against.
@@ -135,7 +135,7 @@ Source: [relations.md](../grammar/relations.md)
 
 ## Hooks — in-clause
 
-Source: [hooks.md](../grammar/hooks.md#ranges), [sakes.md](../grammar/prescription.md#contrary-to-stance)
+Source: [hooks.md](../grammar/ending-grids.md#ranges), [sakes.md](../grammar/prescription.md#contrary-to-stance)
 
 - **open:** in-clause **`ao`** / **`ae`** / **`uo`** (`aol` / `ael` / `uol` and **-m** / **-n**) between same-role words. `aol` has two guesses (*for example*, from discourse `aol …`, or *namely*); `ael` *A, in fact B* (it escalates and keeps A, unlike `el`) is a fair fill but rarely needed; `uol` has no guess. The parser rejects them; extra-noun and discourse uses are unaffected.
 - **open:** stacked **-r** at the front of a sentence (`aor …`, `aer …`, `uor …`). Extra-noun point-back is assigned; as sentence glue they have no guess (*For example, anyway?* *In fact, as I said?*). Parser: `hookDiscourseStack`.
@@ -146,13 +146,13 @@ Source: [hooks.md](../grammar/hooks.md#ranges), [sakes.md](../grammar/prescripti
 
 ## Hook compounds
 
-Source: [hooks.md](../grammar/hooks.md#hook-compounds)
+Source: [hooks.md](../grammar/hook-compounds.md#hook-compounds)
 
 - **closed (D-50):** a three-letter root + **-l** / **-m** + an extra-noun hook (*map* + *from*). It reads as a five-letter root + ending, or as nothing.
 
 ## Hook prefixes {#hook-prefixes}
 
-Source: [hooks.md](../grammar/hooks.md#hook-prefixes)
+Source: [hooks.md](../grammar/hook-compounds.md#hook-prefixes)
 
 - **open:** a vowel pair that is no hook (`ea`, `eo`, `eu`, `oa`, `ou`, `au`, …) before **`x`** or **`mx`** (`geaxavuvul`, `gouxavuvul`). No hook to read. Parser: no word.
 - **open:** **`n`** between hook vowels and the seam (`guenxavuvul`). It would need a job of the hook's **-n** inside a word. Parser: no word.
@@ -163,7 +163,7 @@ Source: [hooks.md](../grammar/hooks.md#hook-prefixes)
 
 ## Hooked joins {#hooked-joins}
 
-Source: [hooks.md](../grammar/hooks.md#hooked-joins)
+Source: [hooks.md](../grammar/hook-compounds.md#hooked-joins)
 
 - **open:** join **-n** or hook **-n** on a hooked join (`zoxuan`, `zonxual`), and a stand-in coda after the join (`zoxarl`). A named bounded set, or a named hook inside a word, has no job yet. Parser: no word.
 - **closed (D-57):** `l` before the seam (`zolxual`). Plain **`x`** already spells the hook's **-l** reading. Parser: no word.
@@ -264,7 +264,7 @@ An **-r** grade on a closed root without its own **-r** would take away the live
 
 ## Stand-ins and dependents
 
-Source: [dependents.md](../grammar/dependents.md#stand-in)
+Source: [dependents.md](../grammar/sentence-linkers.md#stand-in)
 
 - **closed (D-32):** a stand-in on `/ɡ/` (`garl`).
 - **open:** forward, back and named stand-ins (`-rl` `-rm` `-rth` `-rn`) on `/h/` `/w/` `/th/` (`harth`, `tharn`) and on `/x/` `/y/`. Not guessable: a sentence filling an adverb slot could be its manner, its time, or its condition, and `/x/` and `/y/` words already open sentences. *Such* is whole-stem **-r** and *like that* is `hewom blarth`. Parser: `standInRole`.
@@ -273,7 +273,7 @@ Source: [dependents.md](../grammar/dependents.md#stand-in)
 
 ## Sentence linkers (`/x/`)
 
-Source: [dependents.md](../grammar/dependents.md#sentence-linkers)
+Source: [dependents.md](../grammar/sentence-linkers.md#sentence-linkers)
 
 - **closed (D-32):** a linker and a topic word in one sentence (`xezom xuzozen …`).
 - **open:** a linker with no clause after it (`xezom.`). A linker joins the last sentence to the one it starts, so alone it links to nothing; *however* as a reply of its own has not come up. The clearing linkers `xuvewem` and `xuvedam` stand alone, since clearing the topic is a move of its own. Parser: `linkerAlone`.
@@ -319,7 +319,7 @@ Source: [clause.md](../grammar/clause.md)
 - **open:** a `gl-` adjective with no noun after it (`zuzozen glubulel.`, `zuzozen dedavel glubulel vawebol.`). It describes the next noun, and there is none; an adjective on the noun before it is a plain `/ɡ/` word. Parser: `glNoNoun`.
 - **open:** a `bl-` word with no `/ɡ/`, `/h/`, or `/th/` host right before it (`zuzozen varal bluzozen.`). It completes the word before it, and that word names no relation; the recipient is a plain `/b/`. Parser: `blNoHost`.
 - **open:** a plain `/b/` item in a hosted list (`hazam bludehal buzedel bal`). Every item of the hosted slot takes `bl-`. Parser: `blListItem`.
-- **open:** lean **`l`** on any role letter but `/ɡ/` and `/b/`: `zl-` / `dl-` / `vl-` / `hl-` / `thl-` / `wl-`. No job: a noun modifying a noun is mid-word **`x`** ([compounds](../grammar/compounds.md#ordinary-compound-order)); an event root on `/ɡ/` or in `gl-` is already an act [in progress](../grammar/predication.md#in-progress); `/h/` and `/th/` already go anywhere; `/w/` already sits before its host.
+- **open:** lean **`l`** on any role letter but `/ɡ/` and `/b/`: `zl-` / `dl-` / `vl-` / `hl-` / `thl-` / `wl-`. No job: a noun modifying a noun is mid-word **`x`** ([compounds](../grammar/compound-families.md#ordinary-compound-order)); an event root on `/ɡ/` or in `gl-` is already an act [in progress](../grammar/predication.md#in-progress); `/h/` and `/th/` already go anywhere; `/w/` already sits before its host.
 - **open:** `/w/` before `/z/`, `/d/`, `/b/`, or `/v/`. Not guessable: *very* on a verb could mean how intensely, how often, or how fully, and an `/h/` adverb says which (a degree word before a manner adverb); degree on a noun goes through an adjective.
 - **closed (D-22):** a `bl-` word after `/z/`, `/d/`, `/v/`, or `/w/`.
 - **closed (D-46):** a `bl-` person after WANT or PLAN (`thalem blolazun`, `thagem blolazun`), and any `bl-` word after DECISION (`thogom blolazun`, `thogom blral`). Someone else's want, plan or decision goes through a holder. Parser: `intentionHost`.

@@ -1,5 +1,5 @@
 /**
- * Place-name roots (phonology.md#place-name-roots): a country or territory row's root echoes the
+ * Place-name roots (singability.md#place-name-roots): a country or territory row's root echoes the
  * English name instead of taking a root tail. It may hold consonant clusters; a root with none is
  * at least seven letters and ends in `n` + a vowel, so it never looks like a three- or five-letter root.
  * The shape check lives in src/root-shape.ts so the browser parser can share it.

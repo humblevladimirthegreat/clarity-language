@@ -105,7 +105,7 @@ export type ClassSuggestion = {
 };
 /**
  * A live `x` compound built from a modifier noun and a head noun that have roots
- * ([adding another piece](compounds.md#ordinary-compound-order)): open, no lexicon row.
+ * ([adding another piece](compound-families.md#ordinary-compound-order)): open, no lexicon row.
  */
 export type LiveSuggestion = {
   kind: "live";
@@ -499,7 +499,7 @@ const HOOK_FORM = /^[aeiou]{1,2}[lmnr]$/;
 const HOSTED_FORM = /^[hɡg][a-z]+$/;
 
 /** Sections whose lone-hook rows are extra-noun hooks (a lone `al` elsewhere may be a range or *including*). */
-const EXTRA_NOUN_SECTION = /^hooks\.md#extra-noun/;
+const EXTRA_NOUN_SECTION = /^(?:hooks|ending-grids)\.md#extra-noun/;
 
 /**
  * The word a job's form puts before its `/b/` landmark: a hook with `/b/` (`om / /b/`) or alone

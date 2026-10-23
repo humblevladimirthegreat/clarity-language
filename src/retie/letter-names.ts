@@ -2,7 +2,7 @@
  * A word spelled aloud letter by letter (`agadu` → `a` `ga` `a` `da` `u`) copies its root's letters,
  * so a retie must respell the names too. The line sits in the fence after a
  * `<!-- retie: letter-names -->` marker, and the names come from the page's own letter-name table
- * ([phonology.md § letter names](../../docs/grammar/phonology.md#letter-names)).
+ * ([phonology.md § letter names](../../docs/grammar/phonotactics.md#letter-names)).
  */
 
 const MARKER_RE = /<!--\s*retie:\s*letter-names\s*-->\s*\n(```|~~~)[^\n]*\n([\s\S]*?)\n\1/g;

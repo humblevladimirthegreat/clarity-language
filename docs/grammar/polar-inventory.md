@@ -6,7 +6,7 @@ band: intermediate
 
 ### Polar stance: fuller inventory
 
-Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), and *sure* (**`yaol`**). The rest of the map is *reject this option*, *reject the question itself*, and *decline to answer*. The first vowel names the family: **`u`** undo, **`a`** accept, **`o`** pass. The second vowel says what you are answering: **`e`** the claim or the order, **`o`** this option, **`a`** the question's own premise. You can also hear the family: the three undo answers [fall](phonology.md#phonotactics) and the other three rise.
+Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), and *sure* (**`yaol`**). The rest of the map is *reject this option*, *reject the question itself*, and *decline to answer*. The first vowel names the family: **`u`** undo, **`a`** accept, **`o`** pass. The second vowel says what you are answering: **`e`** the claim or the order, **`o`** this option, **`a`** the question's own premise. You can also hear the family: the three undo answers [fall](phonotactics.md#phonotactics) and the other three rise.
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|

@@ -58,7 +58,7 @@ Many roots carry both a concrete **-l** sense and an abstract **-m** sense (`udo
 
 Here plain `dudozor` would mean the loyalty, the most recent match. **-rl** reaches back past it to the dog.
 
-Pinning is optional. Write plain **-r** when only one sense has come up, or when the latest one is the one you mean. A pinned resume with no earlier word of that sense falls back the way plain **-r** does: it means the one you both already know (`zudozorm` alone is *the loyalty* you both know). A name has no sense to pin, and only a content word or a compound takes **-rl** / **-rm**. A [stand-in](dependents.md#stand-in) is a different word: it has a vowel and no root.
+Pinning is optional. Write plain **-r** when only one sense has come up, or when the latest one is the one you mean. A pinned resume with no earlier word of that sense falls back the way plain **-r** does: it means the one you both already know (`zudozorm` alone is *the loyalty* you both know). A name has no sense to pin, and only a content word or a compound takes **-rl** / **-rm**. A [stand-in](sentence-linkers.md#stand-in) is a different word: it has a vowel and no root.
 
 ### Cross-role recast
 
@@ -114,7 +114,7 @@ English *you* does not say whether you are talking to one person or several. Age
 
 ### Tag pronouns {#tag-pronouns}
 
-English sometimes labels people to keep them apart: *call the first one A*, *suppose A tells E*. A **tag** is that label. You choose it, and it stays on the same referent however many others come and go. Write the role letter, **`w`**, a tag vowel, and an ending. The four vowels are four tags, named by the vowel's [letter name](phonology.md#letter-names): A, E, O, U. Roots start with a vowel, so a consonant right after the role letter, or after the `l` of a [hosted](clause.md#extra-nouns) `bl-` word, is always a marker: `r` starts a [number word](numbers.md), and `w` followed by vowels and an ending is a tag (`blwar` completes the word before it, with a [syllabic `l`](phonology.md#syllabic-l)). (cue: **w** ≈ *we call it*: the label you and the listener agree on)
+English sometimes labels people to keep them apart: *call the first one A*, *suppose A tells E*. A **tag** is that label. You choose it, and it stays on the same referent however many others come and go. Write the role letter, **`w`**, a tag vowel, and an ending. The four vowels are four tags, named by the vowel's [letter name](phonotactics.md#letter-names): A, E, O, U. Roots start with a vowel, so a consonant right after the role letter, or after the `l` of a [hosted](clause.md#extra-nouns) `bl-` word, is always a marker: `r` starts a [number word](numbers.md), and `w` followed by vowels and an ending is a tag (`blwar` completes the word before it, with a [syllabic `l`](phonotactics.md#syllabic-l)). (cue: **w** ≈ *we call it*: the label you and the listener agree on)
 
 <!-- cheat-sheet: people-pointing -->
 | Agebon | Use | English |

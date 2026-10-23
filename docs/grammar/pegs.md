@@ -42,7 +42,7 @@ Number words (`gragel` *three*), pronouns and other grammar words are not pegs. 
 | five letters, two digit consonants (`abedol` *pear*) | two | 00 to 99 |
 | dictionary word (`oholeboral` *doorbell*) | three or more | a longer piece |
 
-The dictionary has at least one root for every digit and for every pair from 00 to 99. On a five-letter root the last consonant also says what kind of thing the root names ([root tails](./compounds.md#root-tails)), so the second digit of a pair tells you what sort of picture to look for: 2 is a food or drink, 5 an animal, 9 something with a title, such as a newspaper or a sport.
+The dictionary has at least one root for every digit and for every pair from 00 to 99. On a five-letter root the last consonant also says what kind of thing the root names ([root tails](./root-tails.md#root-tails)), so the second digit of a pair tells you what sort of picture to look for: 2 is a food or drink, 5 an animal, 9 something with a title, such as a newspaper or a sport.
 
 ## Remembering a number {#remembering}
 

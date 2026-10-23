@@ -109,7 +109,7 @@ export function reportDrafts(gen: Generator, world: World, event: WorldEvent, vi
   return drafts;
 }
 
-/** A list as the object: `z-listener | [d-dog | d-table | d-and] | v-see` (joins.md#beginner). */
+/** A list as the object: `z-listener | [d-dog | d-table | d-and] | v-see` (joins.md#and-lists-a). */
 export function listDrafts(gen: Generator, world: World, subject: EntityId, items: EntityId[], verb: string, view: View, english: string): Draft[] {
   const drafts: Draft[] = [];
   for (const fresh of [false, true]) {

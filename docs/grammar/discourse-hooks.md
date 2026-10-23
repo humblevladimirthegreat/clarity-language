@@ -14,7 +14,7 @@ English *In fact, …* or *What's more, …* adds a point that goes further than
 >
 > "In fact, Olazun sleeps."
 
-Opening with **`aol …`** gives English *For example, …*: this sentence is one case of what you just said. (cue: **ao** ≈ add one sample) With **-m**, `aom …` adds *among others* and `aem …` adds *in fact, and maybe more*. No other two-vowel hook opens a sentence: for *next*, *by the way*, and *on the contrary*, use a [linker](dependents.md#sentence-linkers).
+Opening with **`aol …`** gives English *For example, …*: this sentence is one case of what you just said. (cue: **ao** ≈ add one sample) With **-m**, `aom …` adds *among others* and `aem …` adds *in fact, and maybe more*. No other two-vowel hook opens a sentence: for *next*, *by the way*, and *on the contrary*, use a [linker](sentence-linkers.md#sentence-linkers).
 
 > `zavayal vowurel. aol zolazun vowurel.`
 >
@@ -115,7 +115,7 @@ With an object, `vavobel` moves something else: `zuzozen vavobel duhohol.` *Uzoz
 >
 > "Uzozen takes the box away." (away from where I am)
 
-In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#stand-in)), `om buwon` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
+In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](sentence-linkers.md#stand-in)), `om buwon` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
 
 **Compare with:** *that dog* for a dog already named is [resume **-r**](pronouns.md#resume-r) (`zudozor`), not a place. *Where?* is `ol bar` ([Where?](fill-ask-roles.md#where)).
 
@@ -352,5 +352,5 @@ in.fact | z-Olazun | v-sit
 ## See also
 
 - Everyday hooks: [hooks.md](hooks.md)
-- Sentence linkers: [dependents.md](dependents.md#sentence-linkers)
+- Sentence linkers: [dependents.md](sentence-linkers.md#sentence-linkers)
 - The topic pronoun: [topic.md](topic.md)

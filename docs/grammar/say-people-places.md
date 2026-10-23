@@ -45,7 +45,7 @@ A place, tool, or *of*-relation on the noun is still an extra-noun [hook](hooks.
 >
 > "Uzozen sees a guard who sits."
 
-For English *whose*, resume the person after the [whose hook **`em`**](hooks.md#genitive) in the second sentence. Use **`gogunum`** instead when the point is that the guard legally owns it.
+For English *whose*, resume the person after the [whose hook **`em`**](ending-grids.md#genitive) in the second sentence. Use **`gogunum`** instead when the point is that the guard legally owns it.
 
 > `zagayul vuhohol. zudozol em bagayur varuvel.`
 >
@@ -63,11 +63,11 @@ English uses the same *who* clause for two jobs. When it picks out **which** one
 >
 > "Uzozen, who walks, sings."
 
-**Compare with:** ordinary `guhohol` is *chair* / *position* as a property, not *sitting*: the root's everyday sense is a chair, not an event, so it has no [in-progress](predication.md#in-progress) reading. For *sitting*, use the role word `gwazuhohol`. [Restrictors](restrictors.md) say when a **claim** counts (*never*, *only when it rains*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](clause.md#complex-chaining)).
+**Compare with:** ordinary `guhohol` is *chair* / *position* as a property, not *sitting*: the root's everyday sense is a chair, not an event, so it has no [in-progress](predication.md#in-progress) reading. For *sitting*, use the role word `gwazuhohol`. [Restrictors](restrictors.md) say when a **claim** counts (*never*, *only when it rains*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](left-bound.md#complex-chaining)).
 
 ### Stacked owners (*Uzozen's dog's bone*) {#stacked-owners}
 
-**Needs:** [Whose (`em`)](hooks.md#genitive) · [Sequence `ae`](joins.md#sequence-ae)
+**Needs:** [Whose (`em`)](ending-grids.md#genitive) · [Sequence `ae`](rank-joins.md#sequence-ae)
 
 When English stacks possessives, keep one **`em`** and list every owner in its `/b/`, closed by the sequence join **`bael`**. Put the **nearest** owner first: the first `/b/` uses the host, and each later `/b/` keeps the one before it.
 
@@ -121,7 +121,7 @@ Keep the two verbs different. **-r** points at the latest matching event, so `zo
 
 ### *Someone's act* (*Uzozen's walk*) {#someones-act}
 
-**Needs:** [Which person or thing](dependents.md#which-noun) · [Resume](pronouns.md#resume-r) · [Of relations](relations.md#of-relations) · [Negation](joins.md#negation-u)
+**Needs:** [Which person or thing](dependents.md#which-noun) · [Resume](pronouns.md#resume-r) · [Of relations](of-relations.md#of-relations) · [Negation](joins.md#negation-u)
 
 English *'s* on an act (*Uzozen's walk*, *the monkey's tricks*) names who did it. **`em`** is for things in someone's use, and an act is not one. Say the act as its own sentence first, then resume its verb root with **-r** in the next sentence: *that walk*.
 
@@ -173,7 +173,7 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 
 Resume the handle like any name: its whole stem + **-r** (`zanar`).
 
-**Compare with:** a [mention](spans.md#mention) is the **word** (`glegel z[ana]` = *the word “ana”*). A foreign code whose letters all have Agebon letters is a native [letter code](numbers-applied.md#letter-codes) (`z_v16` *F-16*); one with a letter Agebon lacks stays an opaque span (<code>z@&lt;FBI&gt;</code>).
+**Compare with:** a [mention](span-mention.md#mention) is the **word** (`glegel z[ana]` = *the word “ana”*). A foreign code whose letters all have Agebon letters is a native [letter code](numbers-applied.md#letter-codes) (`z_v16` *F-16*); one with a letter Agebon lacks stays an opaque span (<code>z@&lt;FBI&gt;</code>).
 
 ### An English name as Agebon {#english-name}
 
@@ -276,7 +276,7 @@ English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwezud
 
 *Shareholder* is *owner* of a part: `zwazogunum gobem blahehal` (owner of a part of the house). *Colleague* is a worker tied to you: `zwezuzubal gohuyam bluwon`. *Relative* is a person who is part of the family: `zeyol gobem blavayal`.
 
-**Compare with:** for *boss* or *chief*, the tie form names whom they lead: `zolazun gugobem bluzozen` is *Olazun is Uzozen's boss* ([social relations](relations.md#social-relations)).
+**Compare with:** for *boss* or *chief*, the tie form names whom they lead: `zolazun gugobem bluzozen` is *Olazun is Uzozen's boss* ([social relations](of-relations.md#social-relations)).
 
 ### Kin words {#kin-words}
 
@@ -360,7 +360,7 @@ English *buy* and *sell* are two views of one swap. Agebon has one trading verb,
 
 ### Give, get, lend, earn, owe {#give-get}
 
-**Needs:** [The extra `/b/` party (`o`)](roles.md#role-compounds) · [Extra noun (`el`, `em`)](hooks.md#extra-noun) · [Exchange](relations.md#exchange) · [Coordinated lists](joins.md#respectively) · [Fault](iff-fault.md#fault)
+**Needs:** [The extra `/b/` party (`o`)](roles.md#role-compounds) · [Extra noun (`el`, `em`)](hooks.md#extra-noun) · [Exchange](relations.md#exchange) · [Coordinated lists](rank-joins.md#respectively) · [Fault](iff-fault.md#fault)
 
 English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Agebon keeps the giving verb `vewal` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in plain `/b/` after the verb ([recipient](clause.md#extra-nouns)). To name the parties from the verb itself, use the [role compounds](roles.md#role-compounds): **`zwazewal`** is the giver (*supplier*, *provider*) and **`zwabewal`** is the recipient (*receiver*). **-r** (`zwabewar`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vegeral` (*credit*, with the *lend* sense): the borrower is the recipient.
 
@@ -407,7 +407,7 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 
 ### Join, belong, comprise, replace, represent, prefer, involve, agree {#relating-verbs}
 
-**Needs:** [Rank joins](joins.md#rank-joins) · [Join-act verbs](join-across-roles.md#join-act-verbs) · [Join-relations](join-across-roles.md#join-relations) · [Of relations](relations.md#of-relations) · [Whose](hooks.md#genitive) · [Exchange](relations.md#exchange) · [Proxy](relations.md#proxy) · [Simile](relations.md#similative)
+**Needs:** [Rank joins](rank-joins.md#rank-joins) · [Join-act verbs](join-across-roles.md#join-act-verbs) · [Join-relations](join-across-roles.md#join-relations) · [Of relations](of-relations.md#of-relations) · [Whose](ending-grids.md#genitive) · [Exchange](relations.md#exchange) · [Proxy](relations.md#proxy) · [Simile](relations.md#similative)
 
 Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer*) say how two things **stand to each other** more than what anyone does. Agebon writes that stance as a hosted relation word with the other thing in `/b/`, or as a join-act verb when someone really acts on a thing. Pick the relation, and keep the ordinary verb for the activity.
 
@@ -455,11 +455,11 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 >
 > "Uzozen would rather walk than run."
 
-**Compare with:** *or rather* (correcting what you just said) is the revision hook [`el`](hooks.md#rather-el), not a preference. *Belong to* as legal ownership is `gogunum` ([of relations](relations.md#of-relations)). *Represent* as *stand for* a symbol is not proxy, and has no recipe here.
+**Compare with:** *or rather* (correcting what you just said) is the revision hook [`el`](hooks.md#rather-el), not a preference. *Belong to* as legal ownership is `gogunum` ([of relations](of-relations.md#of-relations)). *Represent* as *stand for* a symbol is not proxy, and has no recipe here.
 
 ### Piece, species, gender, patient, function, size, way {#thing-nouns}
 
-**Needs:** [Of relations](relations.md#of-relations) · [Role compounds](roles.md#role-compounds) · [Universals](joins.md#universals-domains-generics) · [Joins](joins.md) · [Adjectives](clause.md#adjectives-ɡ) · [Equatives](comparatives.md#equatives) · [Adverbs](clause.md#adverbs-h) · [Stacked discourse hooks](discourse-hooks.md#stacked-discourse)
+**Needs:** [Of relations](of-relations.md#of-relations) · [Role compounds](roles.md#role-compounds) · [Universals](rank-joins.md#universals-domains-generics) · [Joins](joins.md) · [Adjectives](clause.md#adjectives-ɡ) · [Equatives](comparatives.md#equatives) · [Adverbs](clause.md#adverbs-h) · [Stacked discourse hooks](discourse-hooks.md#stacked-discourse)
 
 English makes nouns for a part, a kind, a role, and a manner. Agebon has no separate noun for most of them. A part is a relation to its whole, a kind is the classification root, a role is a role compound on the verb, and a manner is an adverb. Pick the job and write that.
 
@@ -468,7 +468,7 @@ English makes nouns for a part, a kind, a role, and a manner. Agebon has no sepa
 | *piece* / *fragment* / *feature* | `zehowol gobem blahehal.` | a part of the whole |
 | *cluster* / *bunch* | the kind with **-x**: `zudozolx` | a set here ([group words](say-amounts.md#group-words)) |
 | *species* / *kind* (the category) | `zulenom` | classification |
-| *the dodo* / *the wolf* (the species itself) | `zuan gedozol` | [the kind itself](joins.md#kind-reference) |
+| *the dodo* / *the wolf* (the species itself) | `zuan gedozol` | [the kind itself](rank-joins.md#kind-reference) |
 | *gender* / *sex* (the category) | `zevugom zemugom zam.` | the open pair female, male |
 | *sex* (the act) | `zelemam` | sexuality |
 | *patient* (being treated) | `zwaduhemul` | the one who undergoes healing |
@@ -500,7 +500,7 @@ English makes nouns for a part, a kind, a role, and a manner. Agebon has no sepa
 
 ### Case, deal, figure, board and other several-sense nouns {#sense-nouns}
 
-**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Exchange](relations.md#exchange) · [Between](relations.md#locative-relations) · [Number as verb](numbers.md#number-as-verb-by-marker) · [Role pointers](pronouns.md#role-pointers) · [Consent](feelings-permission.md#consent) · [Joins](joins.md) · [Role letters](clause.md#role-letters)
+**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Exchange](relations.md#exchange) · [Between](of-relations.md#locative-relations) · [Number as verb](number-markers.md#number-as-verb-by-marker) · [Role pointers](pronouns.md#role-pointers) · [Consent](feelings-permission.md#consent) · [Joins](joins.md) · [Role letters](clause.md#role-letters)
 
 An English noun like *case* or *board* covers several jobs, and Agebon has a different word for each. Decide which job you mean first, then write that word. Where a job is a whole clause (*in that case*, *a deal*), the recipe is a clause, not a noun.
 
@@ -1066,7 +1066,7 @@ Examples:
 
 ### Arrow roots as talk-moves
 
-**Needs:** [Arrow rose](roles.md#arrow-rose) · [Sentence linkers](dependents.md#sentence-linkers)
+**Needs:** [Arrow rose](roles.md#arrow-rose) · [Sentence linkers](sentence-linkers.md#sentence-linkers)
 
 When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`th`** + facing person). Generic heading is **`ure`** (*direction*). Facing-relative ahead / back still uses **`DIR th ANCHOR`**.
 
@@ -1083,7 +1083,7 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 | **`uzuhem`** (bare) | talk pulls back | *retreat* |
 | **`urel`** | heading in general | *compass* / *direction* |
 
-**For *therefore*, use:** the [linker](dependents.md#sentence-linkers) **`xahem`**. Body *left* / *right* still needs **`DIR th ANCHOR`**.
+**For *therefore*, use:** the [linker](sentence-linkers.md#sentence-linkers) **`xahem`**. Body *left* / *right* still needs **`DIR th ANCHOR`**.
 
 ### Literal content (fence words / fence marks)
 <a id="literal-content"></a>
@@ -1134,7 +1134,7 @@ These three English nouns each hide two jobs. *Role* is the function someone pla
 
 ### Sentence, phrase, word {#words-about-words}
 
-**Needs:** [Mention](spans.md#mention)
+**Needs:** [Mention](span-mention.md#mention)
 
 To talk about a word, a phrase or a whole sentence as a thing in itself, use a mention: the marker **`glegel`**, then the span. English *the word …*, *the phrase …* and *the sentence …* all use the same frame. The span is a cite of the Agebon, and its role letter still says what the mention does in the clause.
 

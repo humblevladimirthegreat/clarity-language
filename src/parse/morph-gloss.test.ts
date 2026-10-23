@@ -32,7 +32,7 @@ describe("morphGlossLine — join blanks", () => {
   });
 });
 
-describe("morphGlossLine — hooked joins (hooks.md#hooked-joins)", () => {
+describe("morphGlossLine — hooked joins (hook-compounds.md#hooked-joins)", () => {
   it("glosses the hook, -x-, the join, and brackets the landmark with it", () => {
     expectLine("zoxual blahehal vezuvol.", "[z-at-x-everything | bl-house] | v-sleep");
     expectLine("zomxuam bluwon vezuvol.", "[z-near-x-everything.open | bl-speaker] | v-sleep");
@@ -349,7 +349,7 @@ describe("morphGlossLine — tags, xuen, hewol, pointer anchors", () => {
   it("xuen tells a sequence last first (join-across-roles.md#sequence)", () => {
     expectLine("zuzozen vuhohol xuen zuzozer vowurel.", "[z-Uzozen | v-sit | x-and-before-that | z-←Uzozen | v-walk]");
   });
-  it("hewol / gewol are exactly like (relations.md#exactly-like)", () => {
+  it("hewol / gewol are exactly like (of-relations.md#exactly-like)", () => {
     expectLine("zuzozen hewol bludozal vowurel.", "z-Uzozen | [h-exactly-like | bl-duck] | v-walk");
     expectLine("zahehal gewol bluzozen.", "z-house | [g-exactly-like | bl-Uzozen]");
   });

@@ -192,7 +192,7 @@ Sake words cannot follow **`uem`**: to say an act goes against someone's interes
 
 ### Enough and too (sake bars) {#sake-bars}
 
-English *enough* and *too much* compare an amount with **what a need requires**. Write a met sake word on `/th/` as the [bar](comparatives.md#bars) right before a rank join: it stands for what that sake needs, and the rank join compares the amount with it. The equal-rank join **`zoel`** is *enough*. Rank **`zel`** is *too much*, and **`zuel`** is *not enough*. Use the unspecified sake **`uda`** when you do not name which sake.
+English *enough* and *too much* compare an amount with **what a need requires**. Write a met sake word on `/th/` as the [bar](comparative-arity.md#bars) right before a rank join: it stands for what that sake needs, and the rank join compares the amount with it. The equal-rank join **`zoel`** is *enough*. Rank **`zel`** is *too much*, and **`zuel`** is *not enough*. Use the unspecified sake **`uda`** when you do not name which sake.
 
 > `zududal thudatham zoel gral.`
 >
@@ -234,7 +234,7 @@ Name a sake to say which need sets the limit. With a quality as the scale, the s
 >
 > "The tea is too hot for Olazun's health."
 
-On the [time scale](comparatives.md#time-scale), a sake bar is *too late* and *too early*:
+On the [time scale](comparative-arity.md#time-scale), a sake bar is *too late* and *too early*:
 
 > `zuzozen thudatham zuel bral vovurel.`
 >

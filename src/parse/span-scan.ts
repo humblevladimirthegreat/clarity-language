@@ -6,7 +6,7 @@ const OPEN_CLOSE: Record<string, string> = {
 };
 
 /**
- * Native text is unicase lowercase (phonology.md#beginner), so read any capital as its lowercase letter.
+ * Native text is unicase lowercase (phonology.md#vowels), so read any capital as its lowercase letter.
  * Opaque payloads (`<…>`) keep their spelling (spans.md#loans). Same length as the input, so offsets hold.
  */
 export function lowerNative(text: string): string {

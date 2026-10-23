@@ -41,7 +41,7 @@ describe("vowel pitch", () => {
     assert.equal(contours.oe, "rises");
   });
 
-  it("falls exactly on the u stacks (phonology.md#phonotactics)", () => {
+  it("falls exactly on the u stacks (phonotactics.md#phonotactics)", () => {
     for (const { caption, word } of drillPhrases("contours")) assert.equal(caption, word!.startsWith("u") ? "falls" : "rises", word!);
   });
 
@@ -54,7 +54,7 @@ describe("vowel pitch", () => {
   });
 
   it("says the page's letter names on the scale down", () => {
-    const names = letterNameTable(readFileSync(new URL("../docs/grammar/phonology.md", import.meta.url), "utf8"));
+    const names = letterNameTable(readFileSync(new URL("../docs/grammar/phonotactics.md", import.meta.url), "utf8"));
     const said = drillPhrases("down", true).flatMap((p) => p.steps.map((s) => s.onset! + s.vowel));
     assert.deepEqual(said, CONSONANT_LETTERS.map((l) => names.get(l)));
   });

@@ -45,7 +45,7 @@ const CLOSED_ROWS = {
   southwest: { emoji: "↙️", root: "uzuhe" },
   west: { emoji: "⬅️", root: "owuhe" },
   northwest: { emoji: "↖️", root: "anuhe" },
-  // no channel on `/th/` (knowing.md#evidentiality): a record is REPORTED, a tale NOTIONAL
+  // no channel on `/th/` (evidentiality.md#evidentiality): a record is REPORTED, a tale NOTIONAL
   record: { emoji: "⏺️", root: "ego" },
   scroll: { emoji: "📜", root: "one" },
   // no intention on `/h/` (intention.md#plan): PLAN and DECISION are `/th/` stances

@@ -75,6 +75,7 @@ import {
   type ConstructionUse,
 } from "../src/lint/drill-coverage.js";
 import { CONSTRUCTIONS as STATIC_CONSTRUCTIONS, constructionRegistry } from "../src/parse/constructions.js";
+import { holdingList } from "../docs/grammar/.vitepress/lib/holding-list.js";
 import { lessonPages, levelReviewPage, pathPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { lintLevelReview } from "../src/lint/level-review.js";
 import { loadDefaultTables } from "../src/parse/index.js";
@@ -151,7 +152,13 @@ function lintOverlayHosts(): number {
 
 /** Prints construction-coverage gaps; returns their number. */
 function checkConstructionCoverage(uses: readonly ConstructionUse[]): number {
-  const gaps = constructionCoverageGaps(STATIC_CONSTRUCTIONS, uses);
+  const extraPages = new Map<string, string[]>();
+  for (const sitting of holdingList) {
+    const list = extraPages.get(sitting.parent) ?? [];
+    list.push(sitting.page);
+    extraPages.set(sitting.parent, list);
+  }
+  const gaps = constructionCoverageGaps(STATIC_CONSTRUCTIONS, uses, extraPages);
   if (gaps.length === 0) return 0;
   console.error(
     `\n${gaps.length} construction(s) not exercised by their anchor page. ` +

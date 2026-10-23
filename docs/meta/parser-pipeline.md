@@ -26,7 +26,7 @@ Library-first multi-stage parser for CLI checks, fixtures that lock the grammar 
 
 | Layer | Library | Role |
 |-------|---------|------|
-| Word morph, number stems, writing forms | **[Peggy](https://peggyjs.org/)** | Ordered choice matches the [compounds decision order](../grammar/compounds.md#decision-order); generates JS + `.d.ts` at build time |
+| Word morph, number stems, writing forms | **[Peggy](https://peggyjs.org/)** | Ordered choice matches the [compounds decision order](../grammar/compound-families.md#decision-order); generates JS + `.d.ts` at build time |
 | Sentence / joins / spans / stand-ins / framing | **[Chevrotain](https://chevrotain.io/)** | Grammar as TS; CST → sentence AST; operates on **typed word tokens**, not raw characters |
 | Overlays and open roots | CSV → `Map` | [`lexicon-overlays.csv`](../../data/lexicon-overlays.csv), [`lexicon-published.csv`](../../data/lexicon-published.csv), [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv) — classification, not parsing |
 | Anaphor / question / SHARED resolve | [`src/parse/resolve.ts`](../../src/parse/resolve.ts) | Discourse over a finished AST |
@@ -97,7 +97,7 @@ Semantic actions build a discriminated `MorphWord` only. **No lexicon calls insi
 
 1. Overlay hit on `(sense_form, pos)` → closed special vocabulary reading
 2. Else already-classified number stem → stay number
-3. Else value/ability vs [conversation length](../grammar/compounds.md#conversation-length) (named citation or `/y/` + **-n**) vs published root vs [hook compound](../grammar/hooks.md#hook-compounds) (citation + extra-noun hook) vs lexical-compound stem
+3. Else value/ability vs [conversation length](../grammar/compound-families.md#conversation-length) (named citation or `/y/` + **-n**) vs published root vs [hook compound](../grammar/hook-compounds.md#hook-compounds) (citation + extra-noun hook) vs lexical-compound stem
 4. Else unknown / foreign payload
 
 This is where join-act vs soft clause **-n**, mood vs manner, value vs ability, etc. become **readings** without re-parsing spelling.
@@ -153,7 +153,7 @@ Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokeni
 Owns:
 
 - Utterance framing ([speech-moves.md](../grammar/speech-moves.md) — `/y/` turns, including a written `/y/` span at the left edge ([spans.md](../grammar/spans.md#y-spans)), omissible default assertoric; [dependents.md](../grammar/dependents.md) — `/x/` continue)
-- Right-close joins at phrase / VP / clause level (illegal left fence); a `/th/` stance word right before a rank join (`e` / `ue` / `oe`, **-l** / **-m**) is that fence's bar, an `NpItem` of kind `bar` ([comparatives.md](../grammar/comparatives.md#bars))
+- Right-close joins at phrase / VP / clause level (illegal left fence); a `/th/` stance word right before a rank join (`e` / `ue` / `oe`, **-l** / **-m**) is that fence's bar, an `NpItem` of kind `bar` ([comparatives.md](../grammar/comparative-arity.md#bars))
 - `uem` right before a `/th/` stance word holds that stance (with its hosted `/b/`) as the hook unit's `frame`, job `frame`, at the left edge too: the stance the event goes against, not a stance on the claim ([sakes.md](../grammar/prescription.md#contrary-to-stance)). Enforce checks the frame kind (`frameKind`)
 - Adjunct islands **`{ … }`** (`IslandOpen` / `IslandClose` tokens); a mention marker before a topic span (`topicMarker`)
 - Complex `/ɡ|h/` + `/b/`; `/w/` + `/b/` only for *as-of* overlays; floating `/h/` as adjuncts
@@ -169,7 +169,7 @@ Recovery is off. Illegal left fences and binderless islands throw `SentenceParse
 |-----|------|
 | Content **-r** | Most recent prior word with the identical whole stem (the letters between role letter and ending; a compound or hook compound only as a whole). With none, a lexicon stem is the one you both know; any other stem is rejected ([pronouns.md](../grammar/pronouns.md#resume-r)) |
 | Role pointer | One anchor per clause body: its verb, or its `/ɡ/` predicate. Each anchor records the overt filler of every role (`/z/`, `/d/`, the extra party, the scene, the stacked-hook `/b/`s). **`a`**: core roles take the latest anchor with that role filled, other roles the latest anchor; **`o`**: the nearest earlier anchor whose core filler is a different referent; **`e`**: this clause's anchor. No referent is a rejection ([pronouns.md](../grammar/pronouns.md#role-pointers), [roles.md](../grammar/roles.md#role-pointers-family)) |
-| Number **-r** / `g=+` | Most recent number with the same marker identity ([numbers.md](../grammar/numbers.md#number-endings)) |
+| Number **-r** / `g=+` | Most recent number with the same marker identity ([numbers.md](../grammar/number-markers.md#number-endings)) |
 | Role **-r** | This instance of the matching event’s role (doer / place / undergoer / extra `/b/` party); most recent verb / event noun / relation / role compound with that whole stem. Non-resume is the lexical kind (*teacher* vs *the one teaching*) ([roles.md](../grammar/roles.md)) |
 | Join **-r** under `yol` / `yom` | Fill-ask gaps in spoken order; none → yes/no ([questions.md](../grammar/questions.md)) |
 | SHARED `/ɡ/` or `/h/` after a join | `scale` / `equative` / `distribute` / `collective` / `kind` / `ordinary` from join series + conjunct kinds (`/h/` is manner scale under rank / `oe`) |

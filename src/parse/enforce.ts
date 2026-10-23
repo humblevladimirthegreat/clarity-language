@@ -110,15 +110,15 @@ const SCOPE_POS = new Set(["g", "z", "d", "b", "v", "h"]);
 const SLOT_PARTS = new Set(["z", "d", "b"]);
 /** A role compound names a participant or a quality of an event (roles.md#role-compounds); `/y/` takes it only as a call (-n / -r); `/h/` takes a slot part as capacity. */
 const ROLE_COMPOUND_POS = new Set(["z", "d", "b", "g", "h", "x", "y"]);
-/** A hook prefix names a property, a participant, or how the clause stands to the stem (hooks.md#hook-prefixes). */
+/** A hook prefix names a property, a participant, or how the clause stands to the stem (hook-compounds.md#hook-prefixes). */
 const HOOK_PREFIX_POS = new Set(["z", "d", "b", "g", "h"]);
 /** Ability goes on a verb or a property (ability.md#ability). */
 const ABILITY_POS = new Set(["g", "v"]);
-/** A hooked join bounds a set of participants, or the times a restrictor covers (hooks.md#hooked-joins). */
+/** A hooked join bounds a set of participants, or the times a restrictor covers (hook-compounds.md#hooked-joins). */
 const HOOKED_JOIN_POS = new Set(["z", "d", "b", "h"]);
 
 /**
- * A hooked join goes on `/z/`, `/d/`, `/b/` or `/h/`, never hosted (hooks.md#hooked-joins). Its point-back is a hook
+ * A hooked join goes on `/z/`, `/d/`, `/b/` or `/h/`, never hosted (hook-compounds.md#hooked-joins). Its point-back is a hook
  * that points back on its own. On `/h/` the join is a bare restrictor and the hook one with a time reading.
  */
 function enforceHookedJoinWord(word: LexWord): void {
@@ -131,7 +131,7 @@ function enforceHookedJoinWord(word: LexWord): void {
   if (!TIME_HOOKS.has(hook)) throw new ConstructionError("hookedJoinTime", word.raw);
 }
 
-/** A hooked join's landmark: the `bl-` word after hook **-l** or **-m**, and none after point-back **-r** (hooks.md#hooked-joins). */
+/** A hooked join's landmark: the `bl-` word after hook **-l** or **-m**, and none after point-back **-r** (hook-compounds.md#hooked-joins). */
 function enforceHookedJoinLandmark(join: LexWord, landmark: LexWord | undefined): void {
   const hook = joinHook(join);
   if (!hook) return;
@@ -140,7 +140,7 @@ function enforceHookedJoinLandmark(join: LexWord, landmark: LexWord | undefined)
     return;
   }
   if (!landmark) throw new ConstructionError("hookedJoinLandmark", join.raw);
-  // Only an `/h/` hooked join takes a clause (hooks.md#hooked-joins-clause).
+  // Only an `/h/` hooked join takes a clause (hook-compounds.md#hooked-joins-clause).
   if (join.pos !== "h" && isStandIn(landmark)) throw new ConstructionError("hookedJoinClause", `${join.raw} ${landmark.raw}`);
 }
 
@@ -254,7 +254,7 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
 /**
  * A `bl-` word completes the `/ɡ/`, `/h/` or `/th/` word or the hooked join right before it, so it needs that host; a
  * plain `/b/` there is the recipient. In a hosted list every `/b/` item takes `bl-`, and the join word does not
- * (clause.md#extra-nouns). Only an `/h/` hooked join takes a clause (hooks.md#hooked-joins-clause).
+ * (clause.md#extra-nouns). Only an `/h/` hooked join takes a clause (hook-compounds.md#hooked-joins-clause).
  */
 function enforceLocks(tokens: IToken[]): void {
   let list = false;
@@ -392,7 +392,7 @@ function enforceRespectively(units: Unit[]): void {
 
 function enforceWord(word: LexWord, tables: ClassifyTables): void {
   enforceHookedJoinWord(word);
-  // A holder names people, so it takes -x like any noun (`thodumazawanx`, knowing.md#holder).
+  // A holder names people, so it takes -x like any noun (`thodumazawanx`, evidentiality.md#holder).
   const holder = word.family.kind === "x" && word.family.xFamily === "holder";
   // A topic word is a noun, so it takes -x like one (`xazawanx`, topic.md#topic-groups); a published linker does not.
   const topic = word.pos === "x" && (word.family.kind === "content" || isTopicCompound(word)) && !linkerEnglish(word);
@@ -411,7 +411,7 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (word.family.kind === "tag") enforceTag(word);
   if (isHolderSeamW(word, tables)) throw new ConstructionError("holderSeamW", word.raw);
   enforceJoinPlural(word);
-  // The record and scroll roots are no channel: a record is REPORTED, a tale NOTIONAL (knowing.md#evidentiality).
+  // The record and scroll roots are no channel: a record is REPORTED, a tale NOTIONAL (evidentiality.md#evidentiality).
   if (word.pos === "th" && (stemRoot === CLOSED.record || stemRoot === CLOSED.scroll) && word.ending !== "n") {
     throw new ConstructionError("retiredChannelRoot", word.raw);
   }
@@ -539,7 +539,7 @@ function enforceHostedStandIn(units: Unit[], index: number, unit: HUnit, tables:
   const bound = hosted.grounds ?? hosted.bound;
   const s = series(bound);
   if (isGroundsChannel(host, tables)) {
-    // Evidence clause (knowing.md#evidence-clause): `barl`, alone or after the offset; never a pole stack.
+    // Evidence clause (evidentiality.md#evidence-clause): `barl`, alone or after the offset; never a pole stack.
     if (bound.pos !== "b" || s !== "a") throw new ConstructionError("standInHost", `${host.raw} ${bound.raw}`);
     const prev = units[index - 1];
     if (prev?.kind === "h" && !prev.unit.hosted && isPole(prev.unit.word)) {
@@ -548,7 +548,7 @@ function enforceHostedStandIn(units: Unit[], index: number, unit: HUnit, tables:
     return;
   }
   // A simile's model may be an event: `humum blarl` + the next sentence (relations.md#similative). So may the time an
-  // `/h/` hooked join bounds (`huxal blarl`, hooks.md#hooked-joins-clause).
+  // `/h/` hooked join bounds (`huxal blarl`, hook-compounds.md#hooked-joins-clause).
   if (!hosted.grounds && (host.overlay?.kind === "similative" || joinHook(host)) && bound.pos === "b" && s === "a") return;
   if (hosted.grounds || !isPole(host)) throw new ConstructionError("standInHost", `${host.raw} ${bound.raw}`);
   const undoHost = host.overlay!.gloss === "so-that" || host.overlay!.gloss === "if";
@@ -600,7 +600,7 @@ function isPlan(word: LexWord): boolean {
   return word.pos === "th" && word.overlay?.kind === "plan";
 }
 
-/** MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one (knowing.md#dated-channel). */
+/** MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one (universality.md#dated-channel). */
 function enforceChannelSign(word: LexWord, hosted: HUnit["hosted"]): void {
   const sign = offsetSign(hosted?.bound, hosted?.amount);
   if (!sign || word.pos !== "th" || !word.overlay) return;
@@ -612,7 +612,7 @@ function enforceChannelSign(word: LexWord, hosted: HUnit["hosted"]): void {
   if (wrong) throw new ConstructionError("channelOffsetSign", `${word.raw} ${hosted!.bound.raw}${hosted!.amount ? ` ${hosted!.amount.raw}` : ""}`);
 }
 
-/** A first-hand channel: LIVE or MEMORY, which no hand count can follow (knowing.md#hand-depth). */
+/** A first-hand channel: LIVE or MEMORY, which no hand count can follow (evidentiality.md#hand-depth). */
 function isFirstHandChannel(word: LexWord): boolean {
   if (word.pos !== "th" || word.overlay?.kind !== "evidential") return false;
   const base = word.overlay.gloss.split(".")[0];
@@ -651,7 +651,7 @@ function enforceOffsets(units: Unit[], directive: boolean): void {
   }
 }
 
-/** A rank fence's bar: one value-setting stance, ranked against one item (comparatives.md#bars). */
+/** A rank fence's bar: one value-setting stance, ranked against one item (comparative-arity.md#bars). */
 function enforceBars(coord: NpCoord, tables: ClassifyTables): void {
   for (const part of coord.parts) {
     const bars = part.items.flatMap((item) => (item.kind === "bar" ? [item.bar] : []));
@@ -960,7 +960,7 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
     // Command / request (e) and prohibition (u) act words may name a time without a channel.
     const directive = /^y[eu]/.test(actWord(left)?.raw ?? "");
     for (const body of bodies) {
-      // A linker joins the sentence before it to the one it starts, so a clause follows it (dependents.md#sentence-linkers).
+      // A linker joins the sentence before it to the one it starts, so a clause follows it (sentence-linkers.md#sentence-linkers).
       if (body.linker && body.clause.units.length === 0 && topicEffect(body.linker) === "none") {
         throw new ConstructionError("linkerAlone", body.linker.raw);
       }
@@ -1008,10 +1008,10 @@ function enforceTurnWordMods(left: LeftEdge): void {
   });
 }
 
-/** A `gl-` adjective leans on the next noun, call, or reaction (or a mention marker on its topic span); one with nothing after it is left over (clause.md#left-bound-adjectives). */
+/** A `gl-` adjective leans on the next noun, call, or reaction (or a mention marker on its topic span); one with nothing after it is left over (left-bound.md#left-bound-adjectives). */
 function enforceGlLeans(result: ParseResult): void {
   const leaning = new Set<LexWord>();
-  // The mention marker before a topic span leans on that span (spans.md#mention).
+  // The mention marker before a topic span leans on that span (span-mention.md#mention).
   for (const { bodies } of result.utterances) for (const { topicMarker } of bodies) if (topicMarker) leaning.add(topicMarker);
   // A `gl-` adjective before a call or reaction leans on it (speech-acts.md#describe-turn-word).
   for (const { left } of result.utterances) {
@@ -1097,7 +1097,7 @@ function enforceIsland(island: IslandUnit, tables: ClassifyTables): void {
   enforceUnitList(island.units, tables);
 }
 
-/** `zuam gagadul thobam zel …`: a closed `ua` fence is the one item ranked against the bar after it (comparatives.md#stance-bars). */
+/** `zuam gagadul thobam zel …`: a closed `ua` fence is the one item ranked against the bar after it (stance-bars.md#stance-bars). */
 function rankedUniversalFence(coord: NpCoord): boolean {
   const [fence, bar] = coord.parts;
   return (
@@ -1110,7 +1110,7 @@ function rankedUniversalFence(coord: NpCoord): boolean {
   );
 }
 
-/** `zual gagadul zul`: a `ua` fence is the one item a `u` join denies, *not every cat* (joins.md#not-every). */
+/** `zual gagadul zul`: a `ua` fence is the one item a `u` join denies, *not every cat* (rank-joins.md#not-every). */
 function deniedUniversalFence(coord: NpCoord): boolean {
   const [fence, denial] = coord.parts;
   return (
@@ -1143,7 +1143,7 @@ const DESCRIBING = [G, W, HostedB];
 
 /**
  * Name the rule behind a parse failure: a `/b/` after a word with no `/b/` slot (numbers-applied.md#measure-phrases), a
- * `gl-` adjective with nothing to lean on (clause.md#left-bound-adjectives), respectively `wazem` away from a join word,
+ * `gl-` adjective with nothing to lean on (left-bound.md#left-bound-adjectives), respectively `wazem` away from a join word,
  * or
  * a noun or verb right after a phrase of the same slot (joins.md#right-close): a join word before its conjuncts, or
  * two nouns of one role (or two verbs) with no join after them.
@@ -1153,7 +1153,7 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
   const failed = (error.parserErrors[0] as { token?: IToken } | undefined)?.token;
   const tokens = markContext(input);
   const at = tokens.findIndex((token) => failed && token.payload === failed.payload);
-  // Braces pair up within one sentence (spans.md#scope-islands).
+  // Braces pair up within one sentence (span-mention.md#scope-islands).
   let depth = 0;
   for (const token of tokens) {
     if (tokenMatcher(token, IslandOpen)) depth += 1;
@@ -1171,10 +1171,10 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
   if (at > 0 && polar < at - 1 && polar >= 0 && tokenMatcher(tokens[polar]!, Force)) {
     throw new ConstructionError("tagBody", tokens.slice(polar, at).map((token) => token.image).join(" "));
   }
-  // *Respectively* (`wazem`) sits only right before a join word (joins.md#respectively).
+  // *Respectively* (`wazem`) sits only right before a join word (rank-joins.md#respectively).
   const pairing = tokens.findIndex((token, i) => tokenMatcher(token, WPairing) && !isAny(tokens[i + 1] ?? token, [JoinZ, JoinD, JoinB, JoinG, JoinV]));
   if (pairing >= 0) throw new ConstructionError("joinDetail", tokens[pairing]!.image);
-  // A `gl-` adjective leans on the noun or call after its hosted `/b/` (clause.md#left-bound-adjectives). The parser
+  // A `gl-` adjective leans on the noun or call after its hosted `/b/` (left-bound.md#left-bound-adjectives). The parser
   // stops at the adjective (or a `/w/` before it) when no unit can start there, or at the word after it.
   let gl = -1;
   for (let i = at; i >= 0 && i < tokens.length && isAny(tokens[i]!, [W, GGl]); i += 1) if (tokenMatcher(tokens[i]!, GGl)) gl = i;

@@ -79,13 +79,13 @@ Public helpers: `previewSpeech(text)`, `previewPhonemes(text)`, `skipLabel(reaso
 
 | Writing | Spoken behavior | Doc |
 |---------|-----------------|-----|
-| Free-number shorthand (`g+3`, `g#-2`, `d_…`, `%`, …) | Full CV number word, group-final stress mark `ˈ` | [numbers.md](../grammar/numbers.md#writing-preferred-shorthand) |
+| Free-number shorthand (`g+3`, `g#-2`, `d_…`, `%`, …) | Full CV number word, group-final stress mark `ˈ` | [numbers.md](../grammar/number-markers.md#writing-preferred-shorthand) |
 | Span brackets (`d[…]`, `d@[Hamlet]`, `th(…)`, …) | Open word + interior tokens + close when required | [spans.md](../grammar/spans.md#writing-vs-speech) |
 | Span anaphor / empty (`d[=]`, `d[]`) | Spoken open only | same |
 | Orthographic digit-group commas | Spoken separator per numbers.md | [digitless-exponents.md](../grammar/digitless-exponents.md#group-separator) |
-| `.` / `?` / `!`, soft **-m** body | Boundary tags `period` / `qmark` / `bang` / `softM` | [dependents.md](../grammar/dependents.md#orthography-and-prosody-periods) |
+| `.` / `?` / `!`, soft **-m** body | Boundary tags `period` / `qmark` / `bang` / `softM` | [dependents.md](../grammar/sentence-linkers.md#orthography-and-prosody-periods) |
 | `/x/` continue vs new `/y/` turn | `xContinue` / `yTurn` | same |
-| Scope island `^ … ^` | `islandEnter` / `islandExit`; no spoken words | [spans.md](../grammar/spans.md#scope-islands) |
+| Scope island `^ … ^` | `islandEnter` / `islandExit`; no spoken words | [spans.md](../grammar/span-mention.md#scope-islands) |
 
 Skip reasons (`foreign`, `writing`, `shorthand`, `punct`, `error`) are surfaced to the UI via `skipLabel`.
 
@@ -135,7 +135,7 @@ Phone set for v1 (plus silence `#`):
 | Onsets | `/ɦ/` `/w/` `/ɡ/` `/d/` `/j/` `/b/` `/z/` `/m/` `/n/` `/v/` `/l/` `/ɹ/` `/ʒ/` |
 | Extra coda | none (plural **-x** is letter **x** `/ʒ/` after the ending) |
 
-Do **not** ship unused C–C pairs. Generate the list from [phonotactics](../grammar/phonology.md#phonotactics) and [number-word exception](../grammar/phonology.md#number-word-exception):
+Do **not** ship unused C–C pairs. Generate the list from [phonotactics](../grammar/phonotactics.md#phonotactics) and [number-word exception](../grammar/phonotactics.md#number-word-exception):
 
 | Pattern | Diphones |
 |---------|----------|
@@ -229,7 +229,7 @@ No IMS-Toucan in the docs path (Python, large, approximate phones).
 | Topic | Doc |
 |-------|-----|
 | Letter IPA | [phonology.md](../grammar/phonology.md) |
-| Phonotactics / **-x** / **gl-** / number **r** | [phonology.md](../grammar/phonology.md#phonotactics) |
+| Phonotactics / **-x** / **gl-** / number **r** | [phonology.md](../grammar/phonotactics.md#phonotactics) |
 | SpeechPlan / G2P | `src/tts/` (`phonemes.ts`, `plan.ts`, `numbers.ts`, `spans.ts`) |
 | Rejected predecessor | `learner-tts.md` (KittenTTS) |
-| Writing → speech | [spans.md](../grammar/spans.md#writing-vs-speech), [numbers.md](../grammar/numbers.md#writing-preferred-shorthand) |
+| Writing → speech | [spans.md](../grammar/spans.md#writing-vs-speech), [numbers.md](../grammar/number-markers.md#writing-preferred-shorthand) |

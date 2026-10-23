@@ -16,7 +16,7 @@ Per-feature teaching already has its practice: rule → cue → 1–3 worked exa
 | Where | Job |
 |-------|-----|
 | **Inside each feature** | Worked examples only (house style) |
-| **End of a page stage** (e.g. [clause.md Beginner](../grammar/clause.md#beginner) → [practice](../grammar/clause.md#beginner-practice)) | Short checkpoint for *that page’s* stack |
+| **End of a page stage** (e.g. [clause.md Beginner](../grammar/clause.md) → [practice](../grammar/clause.md#beginner-practice)) | Short checkpoint for *that page’s* stack |
 | **End of whole Beginner / Intermediate / Advanced** (cross-doc) | Required [level review](#level-reviews) on [review.md](../grammar/review.md), one band per level; do **not** duplicate a review on every grammar file |
 | **After a real trap** | At most 1–2 items *if* English pulls the wrong Agebon shape (e.g. *because* as a verb, a general *to be*, opaque `<>` when the page is not teaching loans) |
 

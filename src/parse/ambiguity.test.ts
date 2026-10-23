@@ -48,7 +48,7 @@ describe("checkAmbiguity", () => {
           gloss: "planted",
           definition: "planted overlay",
           mnemonic: "",
-          anchor: "knowing.md#evidentiality",
+          anchor: "evidentiality.md#evidentiality",
         },
       ],
     );

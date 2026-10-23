@@ -1,7 +1,7 @@
 # Proposal: diphone singing (pitch / timing contour)
 
 **Status:** PROPOSED  
-**Related:** waveform units and concat glue in `diphone-tts.md`; parse → `toSpeech` → `toPhonemes` in `src/tts/` (see `diphone-tts.md`); singability **design** (not this UI) in [phonology.md § Singability](../grammar/phonology.md#singability-constraints)  
+**Related:** waveform units and concat glue in `diphone-tts.md`; parse → `toSpeech` → `toPhonemes` in `src/tts/` (see `diphone-tts.md`); singability **design** (not this UI) in [phonology.md § Singability](../grammar/singability.md#singability-constraints)  
 **Design authority:** letters, syllables, and voiced-preferred consonants stay in the grammar. This proposal is **tooling only**: the same recorded diphone bank, with a **drawn F0 + duration contour** instead of spoken defaults. It does not add melody to the language or a singing orthography.
 
 ## Motivation
@@ -24,7 +24,7 @@ Spoken Play is then the boring special case of the same engine.
 
 ## Non-goals
 
-- Changing [singability constraints](../grammar/phonology.md#singability-constraints) or encoding stress/melody in spelling.
+- Changing [singability constraints](../grammar/singability.md#singability-constraints) or encoding stress/melody in spelling.
 - Neural singing (DiffSinger, SynthV, “AI cover”) or cloning a singer.
 - Choir, harmony, or multi-track v1 (one F0 stream).
 - Studio Vocaloid expressivity (phoneme timing editors with dozens of flags) in v1.
@@ -155,7 +155,7 @@ No extra neural weights.
 
 | Topic | Doc |
 |-------|-----|
-| Singability (language design) | [phonology.md](../grammar/phonology.md#singability-constraints) |
+| Singability (language design) | [phonology.md](../grammar/singability.md#singability-constraints) |
 | Letter IPA / hiatus | [phonology.md](../grammar/phonology.md) |
 | Diphone bank / concat | `diphone-tts.md` |
 | SpeechPlan / G2P | `src/tts/` |

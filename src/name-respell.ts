@@ -1,5 +1,5 @@
 /**
- * Respell an English person or place name as a place-name root (phonology.md#place-name-roots).
+ * Respell an English person or place name as a place-name root (singability.md#place-name-roots).
  * Same algorithm as `convert-word --kind named`. No file access.
  */
 import { lookupPronunciationIn } from "./cmu-lookup.ts";

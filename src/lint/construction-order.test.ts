@@ -60,6 +60,16 @@ describe("constructionCoverageGaps", () => {
     assert.deepEqual(gaps, []);
   });
 
+  it("counts a peeled sitting of the home page", () => {
+    const extra = new Map([["a.md", ["a-later.md"]]]);
+    const peeled: ConstructionUse = {
+      id: "value.x",
+      section: { page: "a-later.md", slug: "more", title: "More", level: 3, offset: 0, end: 0 },
+    };
+    const gaps = constructionCoverageGaps(reg, [peeled, use("value.y", "b.md#first"), use("value.z", "b.md#first")], extra);
+    assert.deepEqual(gaps, []);
+  });
+
   it("reports where an unexercised construction is used instead", () => {
     const gaps = constructionCoverageGaps(reg, [use("value.x", "a.md#basics"), use("value.y", "a.md#more"), use("value.y", "a.md#basics")]);
     assert.deepEqual(

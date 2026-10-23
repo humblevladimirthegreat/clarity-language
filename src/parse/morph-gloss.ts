@@ -570,7 +570,7 @@ export function quotePayload(payload: string): string {
 const WRITTEN_SPAN: Record<string, string> = { "[": "CITE", "(": "ASIDE", "<": "OPAQUE" };
 
 /** One leaf of the morph line; written spans render as a labeled bracket. */
-/** Word indexes of scale numbers: a digitless `+` right after a rank join ([comparatives § Amount scale](../../docs/grammar/comparatives.md#amount-scale)). */
+/** Word indexes of scale numbers: a digitless `+` right after a rank join ([comparatives § Amount scale](../../docs/grammar/comparative-arity.md#amount-scale)). */
 function scaleIndexes(parsed: ParseResult | undefined): Set<number> {
   const out = new Set<number>();
   if (!parsed) return out;
@@ -1111,10 +1111,10 @@ function hookLabel(form: string, ctx: MorphGlossContext): string {
   }
 }
 
-/** On `/h/`, a hooked join's point-back names a time (hooks.md#hooked-joins-time). */
+/** On `/h/`, a hooked join's point-back names a time (hook-compounds.md#hooked-joins-time). */
 const HOOKED_JOIN_TIME_RESUME: Record<string, string> = { ar: "within.then", or: "at.then", ur: "since.then" };
 
-/** A hooked join's hook, read off the extra-noun grid (`at`, `near`, `there`; hooks.md#hooked-joins). */
+/** A hooked join's hook, read off the extra-noun grid (`at`, `near`, `there`; hook-compounds.md#hooked-joins). */
 function hookedJoinHookLabel(hook: string, pos: Pos | undefined): string {
   if (pos === "h" && HOOKED_JOIN_TIME_RESUME[hook]) return HOOKED_JOIN_TIME_RESUME[hook];
   return HOOK_EXTRA_NOUN[hook] ?? hook;
@@ -1340,7 +1340,7 @@ function numberLabel(stem: NumberStem, pos: Pos | undefined): string {
   }
 
   if (stem.groups.length === 0 && !exp) {
-    // Digitless signed amount on /b/ is an unmeasured offset (knowing.md#forecast).
+    // Digitless signed amount on /b/ is an unmeasured offset (evidentiality.md#forecast).
     if (pos === "b" && stem.marker === "+") return "later";
     if (pos === "b" && stem.marker === "-") return "earlier";
     if (stem.marker === "+") return "more-than-one";
@@ -1427,7 +1427,7 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
 
   if (family.xFamily === "hookPrefix") {
     // The hook, the seam, then the stem; a stem compound keeps its `-x-` (`against-x-house-x-walk`), and label scope
-    // keeps its `-th-` hinge (`against-x-fight-th-role`; hooks.md#hook-prefixes).
+    // keeps its `-th-` hinge (`against-x-fight-th-role`; hook-compounds.md#hook-prefixes).
     const roots = family.rightRoots ?? [];
     const stem = family.stemHook
       ? hookCompoundGloss(
@@ -1499,7 +1499,7 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
 
   if (family.xFamily === "holder") {
     const host = tables.overlays.get(overlayKey("th", `${family.leftRoots[0]}${family.grade ?? "m"}`))?.gloss ?? family.leftRoots[0]!;
-    // Holder -r resumes the person whose view it is (knowing.md#holder).
+    // Holder -r resumes the person whose view it is (evidentiality.md#holder).
     if (word.ending === "r") {
       const resumed: LexWord = { ...word, overlay: undefined, family: { kind: "content", roots: family.rightRoots ?? [] } };
       return [host, ...sensePieces(resumed, tables, { antecedent })];
@@ -1672,7 +1672,7 @@ function hyphenEnglish(text: string): string {
 }
 
 /**
- * Whether a number word is preferred in shorthand ([numbers § Style](../../docs/grammar/numbers.md#writing-style-numeric-vs-spelled)):
+ * Whether a number word is preferred in shorthand ([numbers § Style](../../docs/grammar/number-markers.md#writing-style-numeric-vs-spelled)):
  * more than one digit in total (mantissa and exponent), or a digit-string label.
  * Zero or one digit is preferred spelled (`gral`, `gragel`, `grawamol`).
  */

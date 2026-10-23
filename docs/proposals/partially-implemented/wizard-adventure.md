@@ -63,9 +63,9 @@ A fully closed world runs out of practice and recycles badly; a fully generative
 ### Plot: a hub with a light main thread
 
 - **The first area is a school of wizardry**, in two wings with a main quest each. Its vocabulary is not chosen but read from the `core` column, and that set already reads as a school (school, book, bell, eraser, magnify, chair, guard, eye, speech, money, think, run, …).
-  - **First wing** (cross-doc path through [dependents](../../grammar/dependents.md#beginner)): the player acts by **calling and commanding** things, creatures and people ([call](../../grammar/speech-moves.md#vocative), [speech act](../../grammar/speech-moves.md#speech-act-beginner)), and asks yes/no questions. Characters talk about each other by name. The wizard ordering a door to open is where the game feels most like magic. Commands before *I* and *you* matches the path, where pronouns come later; that order is intended.
+  - **First wing** (cross-doc path through [dependents](../../grammar/dependents.md)): the player acts by **calling and commanding** things, creatures and people ([call](../../grammar/speech-moves.md#vocative), [speech act](../../grammar/speech-moves.md#speech-act-beginner)), and asks yes/no questions. Characters talk about each other by name. The wizard ordering a door to open is where the game feels most like magic. Commands before *I* and *you* matches the path, where pronouns come later; that order is intended.
   - **Second wing** (through [pronouns](../../grammar/pronouns.md) and [plurality](../../grammar/plurality.md)): *I* and *you* arrive with [special pronouns](../../grammar/pronouns.md#special-pronouns), and real conversation opens up, along with groups and counting. Their checkpoints add a few food roots (cookie, sandwich, drink, basket) that suit a school canteen and lead into the village.
-- **A village hub** opens after the school, once food roots arrive with [joins](../../grammar/joins.md#beginner) and [numbers](../../grammar/numbers.md#beginner). Its recurring characters' relationships with the player change, and they recycle vocabulary naturally: the baker always talks about bread, prices and thanks.
+- **A village hub** opens after the school, once food roots arrive with [joins](../../grammar/joins.md) and [numbers](../../grammar/numbers.md). Its recurring characters' relationships with the player change, and they recycle vocabulary naturally: the baker always talks about bread, prices and thanks.
 - **One main quest per area.** Areas open in grammar-stage order, so the main thread enforces the learning path without a fixed linear story.
 - **Free exploration within an area**, with optional quests (often generated errands) for review and extra practice.
 - **Optional content is never required.** The main path assumes only what the main path taught.
@@ -79,7 +79,7 @@ A relationship subsystem, borrowed from dating and friendship sims, for the vill
 | Player move | Grammar | Effect |
 |-------------|---------|--------|
 | Asks what the character feels or wants, instead of assuming | [Fill questions](../../grammar/polar-inventory.md), [whose stake](../../grammar/prescription.md#whose-stake) | Opens what the character is holding back, an information gap about a person |
-| Says how they know something about the character (*I saw* vs. *I heard*) | [Evidentiality](../../grammar/knowing.md#evidentiality) | Rumor stated as fact cools the character; marked hearsay invites a correction |
+| Says how they know something about the character (*I saw* vs. *I heard*) | [Evidentiality](../../grammar/evidentiality.md#evidentiality) | Rumor stated as fact cools the character; marked hearsay invites a correction |
 | Asks before acting on or for the character | [Permission](../../grammar/feelings-permission.md#permission), [consent](../../grammar/feelings-permission.md#consent) | The next step happens only with consent; a *no* is final for that scene and costs the player nothing if it is accepted |
 | Thanks or apologizes specifically | [Thanks and sorry](../../grammar/feelings-permission.md#thanks-sorry) | Specific thanks for a named act counts; a bare greeting chunk does not |
 | Names a feeling with its object | [Emotion compose](../../grammar/feelings-permission.md#emotion-compose) | Characters answer in kind, which is input for the same forms |
@@ -92,10 +92,10 @@ A relationship subsystem, borrowed from dating and friendship sims, for the vill
 
 ### Mysteries {#mysteries}
 
-A detective subsystem for the language's bias-awareness theme: the player works out what happened from what witnesses say, and the skill is knowing how each witness knows. It opens with [evidentiality](../../grammar/knowing.md#evidentiality), and causal accusations wait for [causation](../../grammar/iff-fault.md).
+A detective subsystem for the language's bias-awareness theme: the player works out what happened from what witnesses say, and the skill is knowing how each witness knows. It opens with [evidentiality](../../grammar/evidentiality.md#evidentiality), and causal accusations wait for [causation](../../grammar/iff-fault.md).
 
-- **Witnesses mark their source.** Every claim carries how the witness knows it ([evidentiality](../../grammar/knowing.md#evidentiality), [evidence strength](../../grammar/knowing.md#evidence-strength), [second-hand and further](../../grammar/knowing.md#hand-depth)). A confident witness who only heard it is the classic trap.
-- **Interviews are information gaps.** The player asks [who, where, when and why](../../grammar/polar-inventory.md), and can ask a witness for their [source](../../grammar/knowing.md#source). Two witnesses may each hold half of a fact.
+- **Witnesses mark their source.** Every claim carries how the witness knows it ([evidentiality](../../grammar/evidentiality.md#evidentiality), [evidence strength](../../grammar/evidentiality.md#evidence-strength), [second-hand and further](../../grammar/evidentiality.md#hand-depth)). A confident witness who only heard it is the classic trap.
+- **Interviews are information gaps.** The player asks [who, where, when and why](../../grammar/polar-inventory.md), and can ask a witness for their [source](../../grammar/evidentiality.md#source). Two witnesses may each hold half of a fact.
 - **Biased witnesses.** Some witnesses have a stake in the outcome (their [sakes](../../grammar/prescription.md#whose-stake)), and the case gives the player a way to find that out. Learning that a witness has a reason to blame someone, without assuming they are lying, is the lesson.
 - **Accusations are sentences.** To close a case the player states what caused what, with [*because*](../../grammar/iff-fault.md#only-because) and [fault](../../grammar/iff-fault.md#fault), and marks how they know it. The engine checks the claim against the case's hidden facts. A true claim stated with too much certainty from weak evidence is accepted, but a character points out the overreach.
 - **Wrong accusations cost story, not grammar.** An accused innocent is hurt and says so, and the case continues; the player apologizes and keeps going. This keeps the [no penalty for language errors](#learning-principles) rule: the cost is for a wrong judgment, not a wrong sentence.
@@ -135,8 +135,8 @@ Narration comes from the same structured world events the systemic world and cha
 
 | When | Agebon narration |
 |------|------------------|
-| From [clause Beginner](../../grammar/clause.md#beginner) | Events (*the guard sits*, *the bell rings*, *the dog sees the cat*) and descriptions (*the book is red*) |
-| Before location can be said | Scene contents as an emoji-and-citation-noun list, not sentences; *on the table* waits for [hooks](../../grammar/hooks.md#beginner) |
+| From [clause Beginner](../../grammar/clause.md) | Events (*the guard sits*, *the bell rings*, *the dog sees the cat*) and descriptions (*the book is red*) |
+| Before location can be said | Scene contents as an emoji-and-citation-noun list, not sentences; *on the table* waits for [hooks](../../grammar/hooks.md) |
 | As grammar arrives | Location, groups, *because* and *then* chaining, what characters believe |
 | Last | Authored story beats, which need an author-written gloss and stay English until then |
 

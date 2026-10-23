@@ -16,8 +16,8 @@ Each row names what the file owns. The file is the authority; this table is only
 |--------|------|
 | `purpose.md` | Psychological purpose, limits, learner tour. Site home. |
 | `introduction.md` | Name, design goals, learning path. |
-| `clause.md` | **Source of truth** for one-clause grammar: role letters, default order, hosting, chaining. Other docs own their subsystems. |
-| `phonology.md` | Phonology, phonotactics, letter names. |
+| `clause.md` | **Source of truth** for one-clause grammar: role letters, default order, hosting; left-bound adjectives, chaining (`left-bound.md`); emphasis, audible start (`emphasis.md`). Other docs own their subsystems. |
+| `phonology.md` | Phonology; phonotactics, letter names (`phonotactics.md`); singability, speech edges (`singability.md`). |
 | `word-endings.md` | Word endings, citation forms, greetings; proper names and titled phrases (`proper-names.md`). |
 | `pronouns.md` | Whole-stem resume, role pointers, special, and generic pronouns; tag pronouns (`tag-pronouns.md`). |
 | `topic.md` | Discourse topic, topic pronoun. |
@@ -25,25 +25,25 @@ Each row names what the file owns. The file is the authority; this table is only
 | `questions.md` | Yes/no and fill questions, polar stance particles; polar inventory and rhetorical (`polar-inventory.md`). |
 | `fill-ask-roles.md` | Fill-ask roles: arity, what kind / when / where / whose / how / why, blank in a dependent. |
 | `speech-moves.md` | Turns, vocatives, interjections, speech acts, the reusable vowel series; tone marks (`speech-acts.md`). |
-| `dependents.md` | Next-sentence grammar: continue, stand-ins, subordinators, relative-clause equivalents, linkers. |
-| `relations.md` | Hosted relation catalog: similative, exchange, proxy, of-relations, as-of, social ties. |
-| `hooks.md` | Prefix-less hooks: in-clause, range hooks, discourse glue, extra-noun (and abstract landmarks), hook compounds, hook prefixes, hooked joins. |
+| `dependents.md` | Next-sentence grammar: continue, subordinators; sentence linkers, stand-ins (`sentence-linkers.md`); lexicalized stand-ins (`stand-in-roles.md`). |
+| `relations.md` | Hosted relation catalog: similative, exchange, proxy; of-relations, social ties (`of-relations.md`); as-of (`as-of.md`). |
+| `hooks.md` | Prefix-less hooks: in-clause, discourse glue, extra-noun; ending grids, ranges (`ending-grids.md`); hook compounds, prefixes, hooked joins (`hook-compounds.md`). |
 | `discourse-hooks.md` | Stacked discourse, somewhere / nowhere / everywhere, here and there, hook resume, parallel chains, discourse placements. |
 | `restrictors.md` | `/h/` / `/w/` restrictors, habitual; more occasions (`more-occasions.md`). |
-| `joins.md` | Phrase and clause joins, fences, set vs rank, arity, denying a whole list. |
+| `joins.md` | Phrase and clause joins, fences, set vs rank; rank joins (`rank-joins.md`); join islands, role grid (`join-islands.md`). |
 | `join-across-roles.md` | Joins across roles, join-act verbs, join-relations. |
-| `comparatives.md` | Comparatives, superlatives, equatives, manner scale, stance bars. |
+| `comparatives.md` | Comparatives, superlatives, equatives; manner scale (`comparative-arity.md`); stance bars (`stance-bars.md`). |
 | `predication.md` | Classification, identity; label scope (`label-scope.md`). |
 | `causation.md` | Causation / condition poles; iff, fault, CAUSE (`iff-fault.md`). |
 | `sakes.md` | Sakes, met / unmet; prescription, motive, attachment, whose stake, contrary, sake bars (`prescription.md`). |
 | `feelings-permission.md` | Feelings, thanks, speaker attitude, permission, consent. |
 | `intention.md` | Plan; decision, try / fallback, ability / incapability (`ability.md`). |
-| `knowing.md` | MAY, evidentiality and evidence strength, forecasts, holder, universality. |
+| `knowing.md` | MAY; evidentiality, holder (`evidentiality.md`); universality, dated channel (`universality.md`). |
 | `notional-standing.md` | Notional and standing: mirative, residue / former, phasal, notional, channel bars. |
 | `roles.md` | Role compounds; viewpoint laterals, landmark facing, gravity (`viewpoint.md`). |
-| `compounds.md` | Mid-word `x` families and the mid-word `th` seam, dictionary compounds, conversation length, root tails, tail suffixes. |
-| `spans.md` | Span fences, asides, scope islands. |
-| `numbers.md` | Numerals, markers, endings, stance numbers, writing style. |
+| `compounds.md` | Mid-word `x`, dictionary compounds; compound families, conversation length (`compound-families.md`); root tails, tail suffixes (`root-tails.md`). |
+| `spans.md` | Span fences, asides; mention, scope islands (`span-mention.md`); editorial close, nesting (`span-nesting.md`). |
+| `numbers.md` | Numerals; word shape, markers, endings, writing (`number-markers.md`); end-relative, stacked markers (`stacked-markers.md`). |
 | `digitless-exponents.md` | Digitless forms, exponents, bare OoM, group separator. |
 | `numbers-applied.md` | Digit strings, time and date, ranges, measure phrases. |
 | `numeric-derivation.md` | Numeric prefixes: number + `x` + root (advanced only). |

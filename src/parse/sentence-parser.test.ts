@@ -56,7 +56,7 @@ describe("sentence-parser synthetic", () => {
     assert.equal(parseSentenceTokens(tokens("yol. zuzozen vowurel.")).utterances[0]!.bodies[0]!.punct, "period");
   });
 
-  it("reads a /w/ + hook after a period as discourse glue, as at the start (hooks.md#hook-w)", () => {
+  it("reads a /w/ + hook after a period as discourse glue, as at the start (ending-grids.md#hook-w)", () => {
     const result = parseSentenceTokens(tokens("zuzozen vowurel. wewem al zolazun vezuvol."));
     assert.equal(result.utterances.length, 2);
     assert.equal(result.utterances[1]!.left.hook?.raw, "al");

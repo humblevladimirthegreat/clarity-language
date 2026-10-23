@@ -36,7 +36,7 @@ A name made from a root has that root's picture: `xuzozen` *now, about Uzozen* s
 
 ### When there is no picture
 
-Some topics have no single emoji: a foreign name in a [span](../grammar/spans.md#topic-quotes), a root with no emoji, or a compound whose parts do not combine well into one picture. For these, write the topic word itself in small text at the top of the rule. The reader still has a heading to scan for; it is just text.
+Some topics have no single emoji: a foreign name in a [span](../grammar/span-mention.md#topic-quotes), a root with no emoji, or a compound whose parts do not combine well into one picture. For these, write the topic word itself in small text at the top of the rule. The reader still has a heading to scan for; it is just text.
 
 Same rule as `syntax-highlighting.md`: where the parser cannot resolve the topic, show nothing.
 

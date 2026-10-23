@@ -87,7 +87,7 @@ export function sizeFieldError(kind: Kind, size: string): string | null {
 
 /**
  * `/th/` sense forms that take a holder after their grade letter (`ugur`, `odor`: host root + **-l / -m / -r**,
- * knowing.md#holder). The classifier reads any `/th/` stem that starts with one and is not a published root
+ * evidentiality.md#holder). The classifier reads any `/th/` stem that starts with one and is not a published root
  * as a holder seam ([`holderSeam`](parse/classify.ts)).
  */
 export function holderHostForms(overlays: Iterable<OverlayRow>): Set<string> {

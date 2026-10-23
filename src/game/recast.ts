@@ -123,7 +123,7 @@ export function nearMisses(input: string, errorKind: string, options: RecastOpti
   if (spelled) add(spelled, "typed gloss", 0, { why: "That is a morph gloss; here it is in Agebon.", source: "inspect.md" });
 
   const base = orthographyFix(input);
-  if (base !== input) add(base, "orthography", 0, { why: "Agebon is written in lowercase, with `th` for one letter and no hyphen after the role letter.", source: "phonology.md#beginner" });
+  if (base !== input) add(base, "orthography", 0, { why: "Agebon is written in lowercase, with `th` for one letter and no hyphen after the role letter.", source: "phonology.md#vowels" });
 
   const toks = tokens(base);
   const rules = [...options.rules].sort((a, b) => Number(b.errorKind === errorKind) - Number(a.errorKind === errorKind));

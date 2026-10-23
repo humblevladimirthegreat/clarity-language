@@ -20,7 +20,7 @@ Beginner already used **`gral`** for *more than one*. Any marker may drop every 
 
 **Compare with:** noun [**-x**](plurality.md) names a **group of things**. Digitless **`ra`** names a **count or amount above one** without saying how many. Both may sit on the same noun (`zagozolx gral`).
 
-On a [hosted](clause.md#extra-nouns) offset right after a channel, digitless **`blral`** is *later* and **`blrul`** is *earlier*, with no amount claimed. A hosted number keeps its `bl` in writing too (`bl+` for `blral`), and its `l` is a [beat of its own](phonology.md#syllabic-l).
+On a [hosted](clause.md#extra-nouns) offset right after a channel, digitless **`blral`** is *later* and **`blrul`** is *earlier*, with no amount claimed. A hosted number keeps its `bl` in writing too (`bl+` for `blral`), and its `l` is a [beat of its own](phonotactics.md#syllabic-l).
 
 <a id="a-few"></a>
 
@@ -56,7 +56,7 @@ In a question, the same word is the blank: *how many?*.
 >
 > "How many does Uzozen see?"
 
-To repeat a number already given, keep at least one digit (`drager`), as in [number endings](numbers.md#number-endings).
+To repeat a number already given, keep at least one digit (`drager`), as in [number endings](number-markers.md#number-endings).
 
 ### How many? {#how-many}
 
@@ -433,7 +433,7 @@ On `/y/`, the special values are cheers:
 
 Under `/x/`, a digitful exponent on **`#`** is **outline depth** relative to the focused agenda item: **`x#3e2`** = *3rd sub-sub-point under the focus*; **`xrewubal`** = *parent-layer item(s)*; **`xrewamol`** = *current-layer item(s)*. A flat list uses **`x#N`** (and *Finally* / *Starting with* as above).
 
-These sit beside the numbered points of [Number as discourse marker](numbers.md#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`** ([from the end](numbers.md#from-the-end)). **Just-before discourse:** **`xruwul`** = *just before that:* (step back a moment in the telling). Soft **`xruwum`**; named **`xruwun`**; resume **`xruwur`**. Corroborating is **`xral`**; independent is **`xrul`**.
+These sit beside the numbered points of [Number as discourse marker](number-markers.md#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`** ([from the end](stacked-markers.md#from-the-end)). **Just-before discourse:** **`xruwul`** = *just before that:* (step back a moment in the telling). Soft **`xruwum`**; named **`xruwun`**; resume **`xruwur`**. Corroborating is **`xral`**; independent is **`xrul`**.
 
 ### Zero × exponent {#zero-exponent}
 <a id="zero-exponential"></a>
@@ -514,7 +514,7 @@ Free **`grawamol`** / **`g+Ne0`** are bare OoM / OoM assert on free numbers, not
 <a id="gazillion"></a>
 <a id="hyperbole-gazillion"></a>
 
-For a joking exaggeration (*a gazillion*, *the umpteenth*), write nonzero **mantissa digits** and then a digitless **`wa`** or **`wu`**. On an amount this is comically huge (**`wa`**) or tiny (**`wu`**); on a rank it is a comically late or early place. Mantissa **`0`** + digitless is [zero × exponent](#zero-exponent). Real powers of ten keep digitful exponents (`g+1e9`). End-relative place is marker **`#-`** ([from the end](numbers.md#from-the-end)).
+For a joking exaggeration (*a gazillion*, *the umpteenth*), write nonzero **mantissa digits** and then a digitless **`wa`** or **`wu`**. On an amount this is comically huge (**`wa`**) or tiny (**`wu`**); on a rank it is a comically late or early place. Mantissa **`0`** + digitless is [zero × exponent](#zero-exponent). Real powers of ten keep digitful exponents (`g+1e9`). End-relative place is marker **`#-`** ([from the end](stacked-markers.md#from-the-end)).
 
 #### Scalar (`ra` / `ru`)
 
@@ -572,7 +572,7 @@ Digitless **`e`/`e-`** sits in its own group (no **`ye`** / **`yo`** / **`yu`** 
 
 ### Number as stance {#special-number-as-stance}
 
-Digitless specials, zero × exponent, and hyperbole keep their meaning under [stance](numbers.md#number-as-stance-by-marker) `/th/`:
+Digitless specials, zero × exponent, and hyperbole keep their meaning under [stance](number-markers.md#number-as-stance-by-marker) `/th/`:
 
 | Form | Reading |
 |------|---------|

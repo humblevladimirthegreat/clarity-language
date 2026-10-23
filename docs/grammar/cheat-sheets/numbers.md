@@ -33,34 +33,34 @@ A number word is one word: role letter, marker, one syllable per digit, ending. 
 <!-- cheat-sheet: numbers -->
 | Marker | Writing | Use | Example | Stage |
 |--------|---------|-----|---------|-------|
-| [**a**](../numbers.md#marker-vowel-referential-identity) | `+` | positive count or amount | `g+3` *three cats*; `b+12` *of size 12* | B |
-| [**u**](../numbers.md#marker-vowel-referential-identity) | `-` | negative amount | `d-3` *−3* (object); `z-` *some negative amount*; `g-2` a signed measure | I |
-| [**e**](../numbers.md#marker-vowel-referential-identity) | `#` | rank from the start | `g#2` *the second page*; `z#2` *second* (as subject) | B |
-| [**o**](../numbers.md#marker-vowel-referential-identity) | `_` | digit-string label or code | `g_12` *room 12*; `d_5551234`; `d_` *some code* | I |
+| [**a**](../number-markers.md#marker-vowel-referential-identity) | `+` | positive count or amount | `g+3` *three cats*; `b+12` *of size 12* | B |
+| [**u**](../number-markers.md#marker-vowel-referential-identity) | `-` | negative amount | `d-3` *−3* (object); `z-` *some negative amount*; `g-2` a signed measure | I |
+| [**e**](../number-markers.md#marker-vowel-referential-identity) | `#` | rank from the start | `g#2` *the second page*; `z#2` *second* (as subject) | B |
+| [**o**](../number-markers.md#marker-vowel-referential-identity) | `_` | digit-string label or code | `g_12` *room 12*; `d_5551234`; `d_` *some code* | I |
 
 A sign applies once to the whole word; a label never takes one. In other slots the number stays an amount, rank, or code:
 
 <!-- cheat-sheet: numbers -->
 | Prefix | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`/ɡ/`](../numbers.md#parts-of-speech-on-numbers) | modifier after the noun | *three cats*, *the second page*, *room 12* | I |
-| [`/z/`](../numbers.md#parts-of-speech-on-numbers) | subject | the value, code, or rank as subject | I |
-| [`/d/`](../numbers.md#parts-of-speech-on-numbers) | direct object | a code being dialed or a value being stated | I |
-| [`/b/`](../numbers.md#parts-of-speech-on-numbers) | extra noun | *of size 12* | I |
+| [`/ɡ/`](../number-markers.md#parts-of-speech-on-numbers) | modifier after the noun | *three cats*, *the second page*, *room 12* | I |
+| [`/z/`](../number-markers.md#parts-of-speech-on-numbers) | subject | the value, code, or rank as subject | I |
+| [`/d/`](../number-markers.md#parts-of-speech-on-numbers) | direct object | a code being dialed or a value being stated | I |
+| [`/b/`](../number-markers.md#parts-of-speech-on-numbers) | extra noun | *of size 12* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Number as subject](../numbers.md#parts-of-speech-on-numbers) | `zragel vezuvol.` | *Three are sleeping.* | I |
+| [Number as subject](../number-markers.md#parts-of-speech-on-numbers) | `zragel vezuvol.` | *Three are sleeping.* | I |
 
 ### The ending {#ending}
 
 <!-- cheat-sheet: numbers -->
 | Written | Spoken | Use | Stage |
 |---------|--------|-----|-------|
-| [*(none)*](../numbers.md#number-endings): `g+3`, `g+`, [`d_12`](../numbers.md#ending-marks-second-slot-after-pos) | **-l** | exact, newly stated | B |
-| [**`~`**](../numbers.md#number-endings): `g~+3`, `g~+`, [`g~+12`, `g~#2`](../numbers.md#ending-marks-second-slot-after-pos) | **-m** | approximate: *about N* | I |
-| [**`@`**](../numbers.md#number-endings): `g@#2`, [`g@_12`](../numbers.md#ending-marks-second-slot-after-pos) | **-n** | conventional title or label | I |
-| [**`=`**](../numbers.md#number-endings): `g=+3`, `g=#2`, `d=_12` | **-r** | resume a number already given (needs a digit) | I |
+| [*(none)*](../number-markers.md#number-endings): `g+3`, `g+`, [`d_12`](../number-markers.md#ending-marks-second-slot-after-pos) | **-l** | exact, newly stated | B |
+| [**`~`**](../number-markers.md#number-endings): `g~+3`, `g~+`, [`g~+12`, `g~#2`](../number-markers.md#ending-marks-second-slot-after-pos) | **-m** | approximate: *about N* | I |
+| [**`@`**](../number-markers.md#number-endings): `g@#2`, [`g@_12`](../number-markers.md#ending-marks-second-slot-after-pos) | **-n** | conventional title or label | I |
+| [**`=`**](../number-markers.md#number-endings): `g=+3`, `g=#2`, `d=_12` | **-r** | resume a number already given (needs a digit) | I |
 
 Digitless **-r** is not a resume: `grar` is *some number* in a statement and *which number?* in a question.
 
@@ -69,7 +69,7 @@ Digitless **-r** is not a resume: `grar` is *some number* in a statement and *wh
 <!-- cheat-sheet: numbers -->
 | Speech | Writing | Stage |
 |--------|---------|-------|
-| [digit syllables `ba` … `mo`](../numbers.md#body) | `0`–`9` | I |
+| [digit syllables `ba` … `mo`](../number-markers.md#body) | `0`–`9` | I |
 | [`wa` / `wu`](../digitless-exponents.md#exponents) | `e` / `e-` | I |
 | [group separator `the`](../digitless-exponents.md#group-separator) | `,` | I |
 | [`ye`](../digitless-exponents.md#exponents) | `.` | I |
@@ -79,15 +79,15 @@ Digitless **-r** is not a resume: `grar` is *some number* in a statement and *wh
 <!-- cheat-sheet: numbers -->
 | Value | Writing | Reading | Stage |
 |-------|---------|---------|-------|
-| [plural / more than one](../numbers.md#starter-examples) | `g+` | digitless `ra` | I |
-| [three (modifier)](../numbers.md#starter-examples) | `g+3` | on a noun | I |
-| [three (subject)](../numbers.md#starter-examples) | `z+3` | | I |
-| [−3 (object)](../numbers.md#starter-examples) | `d-3` | | I |
-| [second (modifier)](../numbers.md#starter-examples) | `g#2` | | I |
-| [about 3](../numbers.md#starter-examples) | `g~+3` | approximate | I |
-| [how many? / some amount](../numbers.md#starter-examples) | `g=+` | digitless **-r** blank | I |
-| [that three again](../numbers.md#starter-examples) | `g=+3` | **-r** resume | I |
-| [room 12](../numbers.md#starter-examples) | `g_12` | digit-string label | I |
+| [plural / more than one](../number-markers.md#starter-examples) | `g+` | digitless `ra` | I |
+| [three (modifier)](../number-markers.md#starter-examples) | `g+3` | on a noun | I |
+| [three (subject)](../number-markers.md#starter-examples) | `z+3` | | I |
+| [−3 (object)](../number-markers.md#starter-examples) | `d-3` | | I |
+| [second (modifier)](../number-markers.md#starter-examples) | `g#2` | | I |
+| [about 3](../number-markers.md#starter-examples) | `g~+3` | approximate | I |
+| [how many? / some amount](../number-markers.md#starter-examples) | `g=+` | digitless **-r** blank | I |
+| [that three again](../number-markers.md#starter-examples) | `g=+3` | **-r** resume | I |
+| [room 12](../number-markers.md#starter-examples) | `g_12` | digit-string label | I |
 
 Choose by digit count: two or more digits and every label or code in shorthand (`g+12`, `d_555,123,4567`); one digit or none spelled (`gragel`, `gredol`, `gramol`, `gral`). Number words side by side share one writing. A number built onto a root is always spelled and never takes `~`, `@`, or `=`.
 
@@ -121,7 +121,7 @@ Drop every digit and the word says what kind of number, not its value. With **-r
 | [How big?](../digitless-exponents.md#how-big): blank on `/w/` | `yol wrar gelazom zudozol.` | *How big is the dog?* | I |
 | [How fast?](../digitless-exponents.md#how-big) | `yol wrar hedurem zudozol varuvel.` | *How fast does the dog run?* | I |
 
-*Many*, *few*, *enough*, and *too much* are [comparatives](../comparatives.md#vague-amounts), not number words. Do not confuse the blank on `/h/` with `har` *sometimes*.
+*Many*, *few*, *enough*, and *too much* are [comparatives](../stance-bars.md#vague-amounts), not number words. Do not confuse the blank on `/h/` with `har` *sometimes*.
 
 ## Big and small {#big-small}
 
@@ -158,7 +158,7 @@ Each comma is spoken as the separator **`the`**, on every marker.
 
 On a rank, each comma opens a place within the one before. A large ordinal is one group (`g#1005`).
 
-In casual talk a stretch may set an ambient order of magnitude, so bare numbers are heard at that size until cancelled. Write `Ne0` to insist on ones ([ambient](../numbers.md#ambient-magnitude)).
+In casual talk a stretch may set an ambient order of magnitude, so bare numbers are heard at that size until cancelled. Write `Ne0` to insist on ones ([ambient](../stacked-markers.md#ambient-magnitude)).
 
 ## The number in another slot {#slots}
 
@@ -166,24 +166,24 @@ The role letter picks the use; the marker still says amount, rank, or code. Only
 
 | Slot | `ra` `+` | `ru` `-` | `re` `#` | `ro` `_` | Stage |
 |------|----------|----------|----------|----------|-------|
-| [`/v/` verb](../numbers.md#number-as-verb-by-marker) | add N | remove N | take place N | enter / dial the code | I |
-| [`/h/` adverb](../numbers.md#number-as-adverb-by-marker) | *N times* | *÷N*, *every Nth* | *for the Nth time* | clock time | I |
-| [`/y/` shout](../numbers.md#number-as-interjection-by-marker) | *N more!* | *N short!* | *First!* | *Three!* (a score) | I |
-| [`/x/` list point](../numbers.md#number-as-discourse-marker-by-marker) | corroborating N | independent N | point N | cite label N | I |
-| [`/th/` stance](../numbers.md#number-as-stance-by-marker) | N% likely | unlikely | N-th hand | per source N | I |
+| [`/v/` verb](../number-markers.md#number-as-verb-by-marker) | add N | remove N | take place N | enter / dial the code | I |
+| [`/h/` adverb](../number-markers.md#number-as-adverb-by-marker) | *N times* | *÷N*, *every Nth* | *for the Nth time* | clock time | I |
+| [`/y/` shout](../number-markers.md#number-as-interjection-by-marker) | *N more!* | *N short!* | *First!* | *Three!* (a score) | I |
+| [`/x/` list point](../number-markers.md#number-as-discourse-marker-by-marker) | corroborating N | independent N | point N | cite label N | I |
+| [`/th/` stance](../number-markers.md#number-as-stance-by-marker) | N% likely | unlikely | N-th hand | per source N | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Three times](../numbers.md#number-as-adverb-by-marker) | `zolazun vowurel hragel.` | *Olazun walks three times.* | I |
-| [For the third time](../numbers.md#number-as-adverb-by-marker) | `hregel` | *for the third time* | I |
-| [Three more!](../numbers.md#number-as-interjection-by-marker) | `yragel` | *Three more!* | I |
-| [Three!](../numbers.md#number-as-interjection-by-marker) | `y_3` | *Three!* (a score) | I |
-| [First!](../numbers.md#number-as-interjection-by-marker) | `yrebal` | *First!* | I |
-| [Point 2](../numbers.md#number-as-discourse-marker-by-marker) | `xredol` | *point 2:* | I |
-| [Corroborating 2](../numbers.md#number-as-discourse-marker-by-marker) | `xradol` | *corroborating 2:* | I |
-| [Independent 2](../numbers.md#number-as-discourse-marker-by-marker) | `xrudol` | *independent 2:* | I |
-| [Likelihood](../numbers.md#number-as-stance-by-marker): the digits are already a percent | `zolazun vowurel th+70.` | *Olazun is probably walking.* (I'd put it at 70%) | I |
-| [Place on a scale](../numbers.md#number-as-degree): `w#N` from 2; [see comparatives](../comparatives.md#place-on-a-scale) | `zuzozen zel wredol gelazom.` | *Uzozen is the second biggest.* | I |
+| [Three times](../number-markers.md#number-as-adverb-by-marker) | `zolazun vowurel hragel.` | *Olazun walks three times.* | I |
+| [For the third time](../number-markers.md#number-as-adverb-by-marker) | `hregel` | *for the third time* | I |
+| [Three more!](../number-markers.md#number-as-interjection-by-marker) | `yragel` | *Three more!* | I |
+| [Three!](../number-markers.md#number-as-interjection-by-marker) | `y_3` | *Three!* (a score) | I |
+| [First!](../number-markers.md#number-as-interjection-by-marker) | `yrebal` | *First!* | I |
+| [Point 2](../number-markers.md#number-as-discourse-marker-by-marker) | `xredol` | *point 2:* | I |
+| [Corroborating 2](../number-markers.md#number-as-discourse-marker-by-marker) | `xradol` | *corroborating 2:* | I |
+| [Independent 2](../number-markers.md#number-as-discourse-marker-by-marker) | `xrudol` | *independent 2:* | I |
+| [Likelihood](../number-markers.md#number-as-stance-by-marker): the digits are already a percent | `zolazun vowurel th+70.` | *Olazun is probably walking.* (I'd put it at 70%) | I |
+| [Place on a scale](../number-markers.md#number-as-degree): `w#N` from 2; [see comparatives](../comparative-arity.md#place-on-a-scale) | `zuzozen zel wredol gelazom.` | *Uzozen is the second biggest.* | I |
 
 `th+` / `th-` is *likely* / *unlikely* with no figure; `th_N` is *per source N*; `th#N` is *N-th hand* from 2. A factor goes on `/h/`, never `/w/`. Likelihood **-m** hedges (`th~+70`), **-n** names a level (`th@+95`), **-r** repeats it (`th=+70`).
 
@@ -397,28 +397,28 @@ Marker `ue` (written `#-`, spoken `rue`) counts from the last place within the s
 <!-- cheat-sheet: numbers -->
 | Form | Reading | Stage |
 |------|---------|-------|
-| [`g#-1`](../numbers.md#from-the-end) | 1st from the end: the last, framed as counting back | A |
-| [`g#-2`](../numbers.md#from-the-end) | *penultimate* | A |
-| [`g#-3`](../numbers.md#from-the-end) | *antepenultimate* | A |
-| [`g~#-2`](../numbers.md#from-the-end) | about 2nd from the end | A |
-| [`g@#-2`](../numbers.md#from-the-end) | titled *penultimate* | A |
-| [`g=#-2`](../numbers.md#from-the-end) | resume that end-relative place | A |
-| [`g#-`](../numbers.md#from-the-end) | some end-relative rank | A |
+| [`g#-1`](../stacked-markers.md#from-the-end) | 1st from the end: the last, framed as counting back | A |
+| [`g#-2`](../stacked-markers.md#from-the-end) | *penultimate* | A |
+| [`g#-3`](../stacked-markers.md#from-the-end) | *antepenultimate* | A |
+| [`g~#-2`](../stacked-markers.md#from-the-end) | about 2nd from the end | A |
+| [`g@#-2`](../stacked-markers.md#from-the-end) | titled *penultimate* | A |
+| [`g=#-2`](../stacked-markers.md#from-the-end) | resume that end-relative place | A |
+| [`g#-`](../stacked-markers.md#from-the-end) | some end-relative rank | A |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Penultimate](../numbers.md#from-the-end) | `zanal gruedol.` | *There is a second-to-last book.* | A |
-| [Penultimate time](../numbers.md#from-the-end) | `h#-2` | *the penultimate time* | A |
+| [Penultimate](../stacked-markers.md#from-the-end) | `zanal gruedol.` | *There is a second-to-last book.* | A |
+| [Penultimate time](../stacked-markers.md#from-the-end) | `h#-2` | *the penultimate time* | A |
 
 Two marker vowels in one word: speak `u` first.
 
 <!-- cheat-sheet: numbers -->
 | Stack | Spoken | Use | Stage |
 |-------|--------|-----|-------|
-| [`#_`](../numbers.md#stacked-markers) | **r-u-o** | a label whose value is negative: a basement floor (`gruobal`) | A |
-| [`+-`](../numbers.md#stacked-markers) | **r-u-a** | a symmetric error bound ±N (`gruagel`) | A |
-| [`#-`](../numbers.md#stacked-markers) | **r-u-e** | count from the end | A |
-| [`_#`](../numbers.md#stacked-markers) | **r-o-e** | a calendar date | A |
+| [`#_`](../stacked-markers.md#stacked-markers) | **r-u-o** | a label whose value is negative: a basement floor (`gruobal`) | A |
+| [`+-`](../stacked-markers.md#stacked-markers) | **r-u-a** | a symmetric error bound ±N (`gruagel`) | A |
+| [`#-`](../stacked-markers.md#stacked-markers) | **r-u-e** | count from the end | A |
+| [`_#`](../stacked-markers.md#stacked-markers) | **r-o-e** | a calendar date | A |
 
 Those four are the whole set.
 
@@ -453,7 +453,7 @@ On a family tree, put the anchor person in a `bl-` word right after the number.
 | [Grandchildren](../numbers-applied.md#kin-generations) | `grewadol` | the focus's grandchildren | A |
 | [Aunt or uncle](../numbers-applied.md#kin-generations) | `zolazun grewamol bleyol g#1e-1 bluzozen vowurel.` | *Olazun, Uzozen's aunt or uncle, walks.* (a sibling of the first of Uzozen's parents) | A |
 
-Only kin make generations: friends and bosses are [social relations](../relations.md#social-relations).
+Only kin make generations: friends and bosses are [social relations](../of-relations.md#social-relations).
 
 ## Don't mix up {#dont-mix-up}
 
@@ -463,14 +463,14 @@ Only kin make generations: friends and bosses are [social relations](../relation
 | `gral` *more than one* ([an amount](../numbers.md#more-than-one)) | | `zagozolx` *cats* ([a group, with **-x**](../digitless-exponents.md#digitless)) |
 | `gram` *a few* ([a soft count](../digitless-exponents.md#digitless)) | | `gral` *more than one* ([a firm one](../numbers.md#more-than-one)) |
 | `grar` *how many?* ([a blank](../digitless-exponents.md#how-many)) | | `drager` *those three again* ([a resume, needs a digit](../digitless-exponents.md#digitless)) |
-| `hragel` *three times* ([a factor](../numbers.md#number-as-adverb-by-marker)) | | `h_15,30` *at 15:30* ([a clock time](../numbers-applied.md#time)) |
-| `hragel` *three times* ([a count of times](../numbers.md#number-as-adverb-by-marker)) | | `hregel` *for the third time* ([which time](../numbers.md#number-as-adverb-by-marker)) |
-| `gredol` *the second* ([from the start](../numbers.md#ordinals)) | | `gruedol` *second from the end* ([from the end](../numbers.md#from-the-end)) |
+| `hragel` *three times* ([a factor](../number-markers.md#number-as-adverb-by-marker)) | | `h_15,30` *at 15:30* ([a clock time](../numbers-applied.md#time)) |
+| `hragel` *three times* ([a count of times](../number-markers.md#number-as-adverb-by-marker)) | | `hregel` *for the third time* ([which time](../number-markers.md#number-as-adverb-by-marker)) |
+| `gredol` *the second* ([from the start](../numbers.md#ordinals)) | | `gruedol` *second from the end* ([from the end](../stacked-markers.md#from-the-end)) |
 | `grewal` *last place* ([the landmark](../digitless-exponents.md#special-referential)) | | `grebal` *1st* ([numbered first](../digitless-exponents.md#special-referential)) |
 | `grewul` *the start landmark* ([the onset](../digitless-exponents.md#special-referential)) | | `grebal` *1st* ([a counted first](../digitless-exponents.md#special-referential)) |
 | `grawamol` *the ones band* ([bare OoM](../digitless-exponents.md#bare-oom)) | | `gramowal` *absolute zero* ([a strong zero](../digitless-exponents.md#zero-exponent-referential)) |
 | `gruwul` *just short* ([a hair under](../digitless-exponents.md#special-referential)) | | `grawul` *a hair over* ([a hair above zero](../digitless-exponents.md#special-referential)) |
-| `x#2` *point 2:* ([a numbered step](../numbers.md#examples)) | | `x#-2` *2nd from the end:* ([counting back](../numbers.md#from-the-end)) |
-| `x-2` *independent item 2:* ([a new line of support](../numbers.md#examples)) | | `x#-2` *2nd from the end:* ([counting back](../numbers.md#from-the-end)) |
-| `th+70` *70% likely* ([a stance](../numbers.md#number-as-stance-by-marker)) | | `thomam` *maybe* ([open, with no figure](../knowing.md#may)) |
+| `x#2` *point 2:* ([a numbered step](../stacked-markers.md#examples)) | | `x#-2` *2nd from the end:* ([counting back](../stacked-markers.md#from-the-end)) |
+| `x-2` *independent item 2:* ([a new line of support](../stacked-markers.md#examples)) | | `x#-2` *2nd from the end:* ([counting back](../stacked-markers.md#from-the-end)) |
+| `th+70` *70% likely* ([a stance](../number-markers.md#number-as-stance-by-marker)) | | `thomam` *maybe* ([open, with no figure](../knowing.md#may)) |
 | `zragel al zrazal` *3 to 5* ([a band](../numbers-applied.md#ranges)) | | `zragel zrazal zael` *3, then 5* ([two values in order](../numbers-applied.md#ranges)) |

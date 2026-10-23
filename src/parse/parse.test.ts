@@ -276,7 +276,7 @@ describe("parse — stand-in dependents", () => {
     }
   });
 
-  it("parses deduction: premises joined in the grounds, or under a pole (knowing.md#deduction)", () => {
+  it("parses deduction: premises joined in the grounds, or under a pole (evidentiality.md#deduction)", () => {
     const asserted = parseText("zuzozen vowurel thanal blarl zolazun vezuvol xam zolazun varuvel.").utterances[0]!.bodies[0]!.clause;
     assert.equal(asserted.dependent?.orodo.raw, "blarl");
     const valid = parseText("zuzozen vowurel thanam thohom blarl zolazun vezuvol.").utterances[0]!.bodies[0]!.clause;
@@ -706,7 +706,7 @@ describe("parse — comparatives.md bars", () => {
     const bar = barOf("zuzozen thubem blwezeluyelx guzemol zel gezuyol.");
     assert.equal(bar?.hosted?.bound.raw, "blwezeluyelx");
     assert.deepEqual(bar?.hosted?.adjs?.map((a) => a.word.raw), ["guzemol"]);
-    // On the clause too, an adjective after a `/th/` host's `/b/` describes that noun (clause.md#complex-chaining).
+    // On the clause too, an adjective after a `/th/` host's `/b/` describes that noun (left-bound.md#complex-chaining).
     const units = parseText("zuzozen thebam blolazun guzemol vowurel.").utterances[0]!.bodies[0]!.clause.units;
     assert.ok(units.some((u) => u.kind === "h" && u.unit.hosted?.adjs?.[0]?.word.raw === "guzemol"));
   });
@@ -876,7 +876,7 @@ describe("parse — whose plan or decision (holder)", () => {
 });
 
 describe("negation scope at a fence or a pole", () => {
-  it("reads zual + kind + zul as not every K (joins.md#not-every)", () => {
+  it("reads zual + kind + zul as not every K (rank-joins.md#not-every)", () => {
     const units = parseText("zual gagozol zul vezuvol.").utterances[0]!.bodies[0]!.clause.units;
     const np = units[0]!;
     assert.equal(np.kind, "np");

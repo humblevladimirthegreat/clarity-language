@@ -19,7 +19,7 @@ When English uses a number as a **code** (a phone, room, channel, or serial numb
 
 Ending is usually **-l** (exact label); **-n** for an official designation; **-r** with digits repeats a code already mentioned. Digitless `dror` / `gror` is *some code*, or *what number?* in a question; digitless **-l** `…_` is an unspecified label ([digitless](digitless-exponents.md#digitless)).
 
-**For numeric *plus or minus*, use:** [sign](numbers.md#sign) on a count or ordinal. A label keeps its digits exactly as written.
+**For numeric *plus or minus*, use:** [sign](number-markers.md#sign) on a count or ordinal. A label keeps its digits exactly as written.
 
 To place an event by a code (*on channel 7*), put the code in a `bl-` word after a relation word (`/h/` *on* + `bl_7`), or put it on a noun as `/ɡ/` (*channel* `g_7`).
 
@@ -62,7 +62,7 @@ English names many things with letters as well as digits: a vitamin (*B12*), a f
 Say each character as one syllable, after the marker **`ro`**:
 
 - A digit is its digit syllable (`ba` … `mo`).
-- A consonant is its [letter name](phonology.md#letter-names) (`bu` … `me`, `tho`, `wa`, `yu`). A letter name never sounds like a digit, because it takes the [opposite vowel](phonology.md#opposite-vowels): `bu` is *b*, `ba` is *1*.
+- A consonant is its [letter name](phonotactics.md#letter-names) (`bu` … `me`, `tho`, `wa`, `yu`). A letter name never sounds like a digit, because it takes the [opposite vowel](phonology.md#opposite-vowels): `bu` is *b*, `ba` is *1*.
 - A vowel is its own sound after a short break, the catch in English *uh-oh*. The spelled form writes the break as `'`. Without it, `bu` + `u` would run into one long vowel, and `ro` + `e` would sound like another marker.
 
 <!-- cheat-sheet: numbers -->
@@ -105,7 +105,7 @@ Clock and date together:
 | **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). Digitless `h_#` covers an unspecified date. A date may stop after the day (`h_#12`, *on the 12th*); context gives the month. You may also name the relation with a *date* word plus `/b/`, but you do not need to. |
 | **Day of the week** | Ordinal on **`olere`** *weekday*, counting from Monday: `zolerem grebal` is *Monday*, `zolerem grerel` is *Sunday* (the seventh). |
 | **Month or year alone** | A month is an ordinal on **`umale`** *month*, counting from January, the same way as weekdays: `zumalem gregel` is *March*. A year is a label on **`avuva`** *year*: `zavuvam g_1962` is *1962*. To place an event in one, put it in `/b/` after **`herem`** *during*: `herem blumalem gregel` (*in March*), `herem blavuvam g_1962` (*in 1962*). |
-| **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, a signed offset on the channel (*three hours ago* / *in three hours*) or on a time pole (*until tomorrow*), or a stance word that places the event in time ([LIVE](knowing.md#live-vs-memory) / [MEMORY](knowing.md#live-vs-memory), or a channel plus `b+` for a [forecast](knowing.md#forecast)). [RESIDUE](notional-standing.md#residue) / [FORMER](notional-standing.md#former-climate) do **not** place an event in time. There is no past or future ending. An amount of time (*for 3 days*) is a relation word plus a measure phrase. |
+| **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, a signed offset on the channel (*three hours ago* / *in three hours*) or on a time pole (*until tomorrow*), or a stance word that places the event in time ([LIVE](evidentiality.md#live-vs-memory) / [MEMORY](evidentiality.md#live-vs-memory), or a channel plus `b+` for a [forecast](evidentiality.md#forecast)). [RESIDUE](notional-standing.md#residue) / [FORMER](notional-standing.md#former-climate) do **not** place an event in time. There is no past or future ending. An amount of time (*for 3 days*) is a relation word plus a measure phrase. |
 
 > `zuzozen vowurel herem blumalem gregel.`
 >
@@ -123,7 +123,7 @@ Clock and date together:
 
 Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** with digits repeats a clock time or date already mentioned; digitless `hror` asks *when?* / *what time?* in a question ([digitless](digitless-exponents.md#digitless)). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 
-For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`oel`** *toward* ([extra nouns](hooks.md#extra-noun-intermediate)). Right after an `ul` extra noun, `oel` and its `/b/` close the pair: `ul X oel Y` is one unit, *from X to Y*, not a [range](hooks.md#ranges). It works for any two endpoints, not only times.
+For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`oel`** *toward* ([extra nouns](ending-grids.md#extra-noun-intermediate)). Right after an `ul` extra noun, `oel` and its `/b/` close the pair: `ul X oel Y` is one unit, *from X to Y*, not a [range](ending-grids.md#ranges). It works for any two endpoints, not only times.
 
 > `zuzozen ul b_9 oel b_17 vowurel.`
 >
@@ -245,7 +245,7 @@ To count a range of things, put the endpoints on the counted noun, the same way 
 >
 > "Three to five hours."
 
-A word after **B** describes **B** alone, and a word on the counted noun describes the whole range. To add a detail to the range itself, put a `/w/` word right before the hook ([detail on the hook](hooks.md#hook-w)).
+A word after **B** describes **B** alone, and a word on the counted noun describes the whole range. To add a detail to the range itself, put a `/w/` word right before the hook ([detail on the hook](ending-grids.md#hook-w)).
 
 **Exclude an end with `ul`.** *3, except 5* reads as the band that stops short of 5: the hook excludes the endpoint **after** it. The ends are read in the order you say them, so to exclude the low end, say it second.
 
@@ -260,9 +260,9 @@ A word after **B** describes **B** alone, and a word on the counted noun describ
 | `zragel ual zrazal` | both ends out | *strictly between 3 and 5* (`(3, 5)`) |
 | `zragel uel zrazal` | outside the band | *below 3 or above 5* |
 
-**`ual`** and **`uel`** are the [range hooks](hooks.md#ranges), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zragel al zrazam` = *3 to about 5*).
+**`ual`** and **`uel`** are the [range hooks](ending-grids.md#ranges), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zragel al zrazam` = *3 to about 5*).
 
-**Compare with:** `zragel zrazal zael` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zuzozen zolazun zel gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
+**Compare with:** `zragel zrazal zael` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zuzozen zolazun zel gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](of-relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
 
 ### Percent and percentage points {#percent-and-percentage-points}
 
@@ -286,7 +286,7 @@ Digits follow the [normal digit rules](digitless-exponents.md#exponents) (includ
 
 Order: integer digits, optional **`ye`** + fractional digits, then **`yo`** or **`yu`**. **`yo`** / **`yu`** sit on **`ra`** / **`ru`** only. At most one **`yo`** or **`yu`** group in the number word; leave **`wa`** / **`wu`** off that word. Endings still apply (**-l** exact, **-m** about, **-n** conventional label, **-r** resume).
 
-In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → speech **`yo`**; **`%*`** → speech **`yu`** (sign still on **`ra`** / **`ru`**, written **`+`** / **`-`**).
+In [preferred writing](number-markers.md#writing-preferred-shorthand): **`%`** → speech **`yo`**; **`%*`** → speech **`yu`** (sign still on **`ra`** / **`ru`**, written **`+`** / **`-`**).
 
 #### Fractions (*half of*) {#fractions}
 
@@ -592,7 +592,7 @@ With **-r**, the hook stands in for one value you are not naming. Under a [quest
 >
 > "Uzozen sees some number of cats from 3 to 5."
 
-The [range hooks](hooks.md#ranges) take **-r** the same way: `zragel uar zrazal` is *some value strictly between 3 and 5*, and `zragel uer zrazal` *some value outside 3–5*.
+The [range hooks](ending-grids.md#ranges) take **-r** the same way: `zragel uar zrazal` is *some value strictly between 3 and 5*, and `zragel uer zrazal` *some value outside 3–5*.
 
 ### Ordinal generation: digitful exponent on **`#`** / **`#-`**
 <a id="ordinal-generation"></a>
@@ -682,5 +682,5 @@ For a side branch, nest a second anchor: first step to the relative, then from t
 
 - Number-word anatomy (markers, endings, exponents): [numbers.md](numbers.md)
 - Numeric prefixes (`NUMxROOT`): [numeric-derivation.md](numeric-derivation.md)
-- Hooks behind ranges: [hooks.md](hooks.md#ranges)
+- Hooks behind ranges: [hooks.md](ending-grids.md#ranges)
 - Measured differentials on comparative scales: [comparatives.md](comparatives.md)

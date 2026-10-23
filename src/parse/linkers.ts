@@ -1,5 +1,5 @@
 /**
- * The closed set of `/x/` sentence linkers ([dependents.md § Sentence linkers](../../docs/grammar/dependents.md#sentence-linkers)).
+ * The closed set of `/x/` sentence linkers ([dependents.md § Sentence linkers](../../docs/grammar/sentence-linkers.md#sentence-linkers)).
  * Keyed by root + ending: **-m** is the default link (the root's abstract sense), **-l** a firm link
  * where one is taught. Every other `/x/` content word sets the topic (topic.md#topic): **-l** / **-m** / **-n**
  * introduce it and **-r** returns to it, so none of those is listed.
@@ -38,7 +38,7 @@ export const CLEARING_LINKERS: ReadonlySet<string> = new Set([`${CLOSED.film}m`,
 /** What a `/x/` content word does to the topic (topic.md#topic); `none` for the other published linkers. */
 export type TopicEffect = "introduce" | "return" | "clear" | "none";
 
-/** An `/x/` cite or opaque span as a topic word (`x@<Sam>`, `x<odoga>`, spans.md#topic-quotes). */
+/** An `/x/` cite or opaque span as a topic word (`x@<Sam>`, `x<odoga>`, span-mention.md#topic-quotes). */
 export function isTopicSpan(word: LexWord): boolean {
   if (word.pos !== "x") return false;
   const { family } = word;

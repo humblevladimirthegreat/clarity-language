@@ -24,7 +24,7 @@ export const AGEBON_CONSONANTS = [
 ] as const;
 
 /**
- * Whether `root` is a legal place-name root (phonology.md#place-name-roots): a vowel first and last,
+ * Whether `root` is a legal place-name root (singability.md#place-name-roots): a vowel first and last,
  * consonant runs between single vowels, no **-l** / **-m** + `r` seam, and either a cluster or at least
  * seven letters ending in `n` + a vowel.
  */

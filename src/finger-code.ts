@@ -24,7 +24,7 @@ export type Shape = {
 export const DIGIT_LETTERS: readonly string[] = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"].map(
   (digit) => NUMBER_SYLLABLES.digits[digit]![0]!,
 );
-/** The consonants after the digit letters, in alphabet order (phonology.md#letter-names): hooked runs 1–4. */
+/** The consonants after the digit letters, in alphabet order (phonotactics.md#letter-names): hooked runs 1–4. */
 export const HOOKED_LETTERS: readonly string[] = ["th", "w", "y", "x"];
 /** Vowels in count order, lowest pitch first (phonology.md#vowels): runs 1–4 from the pinky on the vowel hand. */
 export const VOWEL_LETTERS: readonly string[] = ["a", "o", "e", "u"];

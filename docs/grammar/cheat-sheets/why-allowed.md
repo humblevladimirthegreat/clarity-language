@@ -174,7 +174,7 @@ An [emotion](../feelings-permission.md#emotion-compose) is built on one word: th
 | [**-m**](../feelings-permission.md#emotion-compose) | flowing | *steady, a pace you can ride* | I |
 | [**-r**](../feelings-permission.md#emotion-compose) | surging | *waves or spikes* | I |
 
-Motion is how the feeling moves, not how strong it is. For strength, put a [degree word](../clause.md#degree-w) on `/w/` before it. A direction `/b/` names the landmark, so it cannot also name whose stake.
+Motion is how the feeling moves, not how strong it is. For strength, put a [degree word](../left-bound.md#degree-w) on `/w/` before it. A direction `/b/` names the landmark, so it cannot also name whose stake.
 
 <!-- cheat-sheet: why-allowed -->
 | Agebon | English | Stage |

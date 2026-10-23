@@ -14,7 +14,8 @@ use [skip-cd] for amplify to not deploy.
 -proposals
 -cheat sheet for vowels?
 -cheat sheet for reading a word?
--split sittings into single lessons, with computationally-derived ideal lesson order based on dependency, difficulty, usefulness scores
+-after grouped-sittings Done when: `band-criteria.md` (gates, reassign, reorder; not a scored lesson list)
+-use git mv to move all grammar pages into their respective band folders
 
 Finger code (experimental, docs/grammar/finger-code.md; remove the warning once tested):
 -piano on a real instrument, with a player controlling the timing: do the held coda and the one-beat word rest read at speed, is the hook mark easy to hear, do `n` (a sixth) and `e` + hook (a seventh) sound smooth

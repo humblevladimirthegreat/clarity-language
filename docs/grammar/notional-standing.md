@@ -6,7 +6,7 @@ English *as if*, *it turns out*, *has left*, and *still* mix imagining a scene, 
 
 ### Mirative (`themom`) {#mirative}
 
-English *it turns out*, *to my surprise*, and *so … after all* say the news ran **against what you expected**. Put **`themom`** on the clause. This `/th/` word is called **MIRATIVE**. It is not a channel: it says nothing about how you know, so add a [channel](knowing.md#evidentiality) beside it when you want to say that too.
+English *it turns out*, *to my surprise*, and *so … after all* say the news ran **against what you expected**. Put **`themom`** on the clause. This `/th/` word is called **MIRATIVE**. It is not a channel: it says nothing about how you know, so add a [channel](evidentiality.md#evidentiality) beside it when you want to say that too.
 
 > `zolazun themom velurul.`
 >
@@ -28,7 +28,7 @@ The ending says how firm the expectation was that the news overturned. If you do
 >
 > "Olazun is walking, I see it, and I never expected that."
 
-MIRATIVE does not end a [channel frame](knowing.md#carry-forward): a surprise inside a report is still part of the report.
+MIRATIVE does not end a [channel frame](evidentiality.md#carry-forward): a surprise inside a report is still part of the report.
 
 The mirative says only that the news was unexpected, not whether it is good or bad. To say how it lands, add a [feeling](feelings-permission.md#emotion-compose): the mirative after **`goyem`** says the stimulus was unexpected.
 
@@ -38,7 +38,7 @@ The mirative says only that the news was unexpected, not whether it is good or b
 >
 > "I'm pleasantly surprised by the present."
 
-With a [holder](knowing.md#holder), the surprise is the holder's:
+With a [holder](evidentiality.md#holder), the surprise is the holder's:
 
 > `zolazun themom theyemuzozen velurul.`
 >
@@ -46,7 +46,7 @@ With a [holder](knowing.md#holder), the surprise is the holder's:
 >
 > "I gather Olazun's leaving surprised Uzozen." (the surprise is Uzozen's)
 
-**Compare with:** *even* on the including hook ([`wemom al`](hooks.md#hook-w)) singles out the one unexpected member of a set. **`themom`** says the whole claim was unexpected. For *surprisingly* on one adjective (*surprisingly tired*), put the ordinary word **`wemom`** (*amazement*) on `/w/` right before it, the same word that grades the hook in *even*:
+**Compare with:** *even* on the including hook ([`wemom al`](ending-grids.md#hook-w)) singles out the one unexpected member of a set. **`themom`** says the whole claim was unexpected. For *surprisingly* on one adjective (*surprisingly tired*), put the ordinary word **`wemom`** (*amazement*) on `/w/` right before it, the same word that grades the hook in *even*:
 
 > `zuzozen wemom godamul vowurel.`
 >
@@ -59,7 +59,7 @@ With a [holder](knowing.md#holder), the surprise is the holder's:
 <a id="former-climate"></a>
 <a id="episode-standing"></a>
 
-English *has left* and *used to tell* mix two things: when the event happened, and how it stands now. Agebon places events in time with other tools: [*before* / *after* / *while*](dependents.md#time-poles), a clock or date, [LIVE](knowing.md#live-vs-memory) / [MEMORY](knowing.md#live-vs-memory), or a [forecast](knowing.md#forecast). Two `/h/` words keep the books on how it stands. **RESIDUE** says the outcome of an event is still in effect now. **FORMER** says a usual pattern is not one you are claiming for now. Neither says when anything happened, so use them alongside a channel or a when-frame, never as a past or present tense.
+English *has left* and *used to tell* mix two things: when the event happened, and how it stands now. Agebon places events in time with other tools: [*before* / *after* / *while*](dependents.md#time-poles), a clock or date, [LIVE](evidentiality.md#live-vs-memory) / [MEMORY](evidentiality.md#live-vs-memory), or a [forecast](evidentiality.md#forecast). Two `/h/` words keep the books on how it stands. **RESIDUE** says the outcome of an event is still in effect now. **FORMER** says a usual pattern is not one you are claiming for now. Neither says when anything happened, so use them alongside a channel or a when-frame, never as a past or present tense.
 
 **RESIDUE** (`ara`) says the result still counts: an unpaid tab, a door that is still shut. Without it, you make no claim that anything is left over (the event is over and done, or nothing remains from it). As a plain noun, `zaram` is *debt*. (cue: 💰 a debt still on the books)
 
@@ -81,7 +81,7 @@ English *has left* and *used to tell* mix two things: when the event happened, a
 >
 > "Olazun has left and is still gone, I can see it." (what is left over is in view)
 
-**Compare with:** [*after*](dependents.md#time-poles) (`halam blohol`) orders two events. **`haram`** does not say the leaving was earlier; it says the **outcome is still in effect**. [LIVE](knowing.md#live-vs-memory) is how you know, not what is left over. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
+**Compare with:** [*after*](dependents.md#time-poles) (`halam blohol`) orders two events. **`haram`** does not say the leaving was earlier; it says the **outcome is still in effect**. [LIVE](evidentiality.md#live-vs-memory) is how you know, not what is left over. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
 
 **FORMER** (`ela`) says a usual pattern held, but you are **not** claiming it holds now: *Uzozen always sings* as a past habit. Without it, [always](restrictors.md) **`hual`** describes the pattern as it stands now. As a plain noun, `zelam` is *emptiness*. (cue: 🪹 the nesting season is over; a former climate, not today's weather)
 
@@ -209,7 +209,7 @@ To talk about a scene that is only imagined (*imagine …*, *as if …*, *for th
 
 **For *could be*, use:** [MAY](knowing.md#may).
 
-NOTIONAL [carries forward](knowing.md#carry-forward) like a channel, so a story you make up, or a supposition you reason through, runs over several sentences. *Once upon a time* is NOTIONAL on the first sentence. It also **ends** a channel frame: from there on, the imagined scene carries.
+NOTIONAL [carries forward](evidentiality.md#carry-forward) like a channel, so a story you make up, or a supposition you reason through, runs over several sentences. *Once upon a time* is NOTIONAL on the first sentence. It also **ends** a channel frame: from there on, the imagined scene carries.
 
 > `zuzozen theyum vowurel. zuzozen vuhohol. zuzozen vezuyol.`
 >
@@ -217,9 +217,9 @@ NOTIONAL [carries forward](knowing.md#carry-forward) like a channel, so a story 
 >
 > "Imagine Uzozen walking. Uzozen sits down. Uzozen sings."
 
-A legend that people pass on as true is not NOTIONAL: it is REPORTED, often with a [hand count](knowing.md#hand-depth).
+A legend that people pass on as true is not NOTIONAL: it is REPORTED, often with a [hand count](evidentiality.md#hand-depth).
 
-NOTIONAL takes a [holder](knowing.md#holder) the same way a channel does: `theyum` plus `uzozen` is `theyumuzozen`.
+NOTIONAL takes a [holder](evidentiality.md#holder) the same way a channel does: `theyum` plus `uzozen` is `theyumuzozen`.
 
 > `zolazun theyumuzozen velurul.`
 >
@@ -254,7 +254,7 @@ When you are not sure, use **`theyum`**.
 >
 > "Suppose Uzozen writes."
 
-To reason from a premise you do not grant, suppose it with **`theyur`**. The frame carries, so every step after it stays supposed. To keep what you found, state the link with its own [channel](knowing.md#deduction), which ends the supposition:
+To reason from a premise you do not grant, suppose it with **`theyur`**. The frame carries, so every step after it stays supposed. To keep what you found, state the link with its own [channel](evidentiality.md#deduction), which ends the supposition:
 
 > `zuzozen theyur gwezuduyel. xahel zuzozen vuduyel. zuzozen vuduyel thanam thohom blarl zuzozen gwezuduyel.`
 >
@@ -264,7 +264,7 @@ To reason from a premise you do not grant, suppose it with **`theyur`**. The fra
 
 ### Channels as comparison bars {#channel-bars}
 
-English *sleepier than usual* and *bigger than it looks* compare against an expectation. Put the channel right before the rank word (**`zel`** / **`zuel`** / **`zoel`**) as the comparison's [bar](comparatives.md#bars). The bar is then **what that channel led you to expect**, not how you know the claim. After the comparison, the same word is the claim's channel again.
+English *sleepier than usual* and *bigger than it looks* compare against an expectation. Put the channel right before the rank word (**`zel`** / **`zuel`** / **`zoel`**) as the comparison's [bar](comparative-arity.md#bars). The bar is then **what that channel led you to expect**, not how you know the claim. After the comparison, the same word is the claim's channel again.
 
 > `zuzozen thubem zel guzemol.`
 >
@@ -289,9 +289,9 @@ English *sleepier than usual* and *bigger than it looks* compare against an expe
 | FORMER `helam` | how it used to be | *than it used to be* |
 | NOTIONAL `theyum` | the imagined case | *than imagined* |
 
-MAY and MIRATIVE give no expected value to compare against, so neither can be a bar. *Than scheduled* ranks against a plan: that is the [PLAN bar](comparatives.md#bars) (`thagem`).
+MAY and MIRATIVE give no expected value to compare against, so neither can be a bar. *Than scheduled* ranks against a plan: that is the [PLAN bar](comparative-arity.md#bars) (`thagem`).
 
-A [holder](knowing.md#holder) on a comparison bar names **whose expectation** you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
+A [holder](evidentiality.md#holder) on a comparison bar names **whose expectation** you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
 
 > `zuzozen thabomolazun zel guzemol.`
 >
@@ -326,7 +326,7 @@ English *contrary to what I was told* and *against my gut* say the event went ag
 
 *Off schedule* goes against a plan: **`uem thagem`** ([contrary to a stance](prescription.md#contrary-to-stance)). MIRATIVE already says the claim ran against what you expected, so it does not follow **`uem`**. MAY, NOTIONAL, RESIDUE, and FORMER do not either: none of them is something the event could go against.
 
-A [holder](knowing.md#holder) on a channel after **`uem`** names **whose view** the event goes against. The seam covers only that pair: the event is still your claim.
+A [holder](evidentiality.md#holder) on a channel after **`uem`** names **whose view** the event goes against. The seam covers only that pair: the event is still your claim.
 
 > `zuzozen vowurel uem thebamolazun.`
 >
@@ -505,5 +505,5 @@ z-Ahelan | th-NOTIONAL | v-departure
 ## See also
 
 - How you know: [knowing.md](knowing.md)
-- Rank bars: [comparatives.md](comparatives.md#bars)
+- Rank bars: [comparatives.md](comparative-arity.md#bars)
 - Contrary to a stance: [sakes.md](prescription.md#contrary-to-stance)

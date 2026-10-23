@@ -60,7 +60,7 @@ The motion ending says how the feeling moves, on the [settled-to-passing scale](
 
 Motion is how the feeling moves, not how strong it is. Strong but steady anger is flowing, and so is calm contentment. Fury held in check and a numb flatness are both still. Surging and still are information, not verdicts: surging can be a cue to ground; still can be a cue to rest, or to re-engage gently. Freezing is STILL: AWAY with **-l** is *frozen, wanting out*.
 
-Say how **strong** the feeling is with a [degree word](clause.md#degree-w) on `/w/` right before the feeling word. Before a `/ɡ/` feeling it grades that adjective as usual. Before a `/w/` feeling, it grades the feeling, not the stimulus. With no degree word, strength is unstated.
+Say how **strong** the feeling is with a [degree word](left-bound.md#degree-w) on `/w/` right before the feeling word. Before a `/ɡ/` feeling it grades that adjective as usual. Before a `/w/` feeling, it grades the feeling, not the stimulus. With no degree word, strength is unstated.
 
 > `zebewem wohalal guwathamar.`
 >

@@ -2,7 +2,7 @@
 
 **Status:** PROPOSED  
 **Related:** reverse of `diphone-tts.md`; long-term TODO *speech to text*; parser assumed shipped ([parser-pipeline.md](../meta/parser-pipeline.md))  
-**Design authority:** spoken forms stay in the grammar docs ([phonology.md](../grammar/phonology.md), [spans.md](../grammar/spans.md#writing-vs-speech), [numbers.md](../grammar/numbers.md#writing-preferred-shorthand), [clause.md](../grammar/clause.md#role-letters)). This proposal covers **tooling only**: microphone audio → Agebon letters → optional preferred writing. It does **not** train an Agebon acoustic model.
+**Design authority:** spoken forms stay in the grammar docs ([phonology.md](../grammar/phonology.md), [spans.md](../grammar/spans.md#writing-vs-speech), [numbers.md](../grammar/number-markers.md#writing-preferred-shorthand), [clause.md](../grammar/clause.md#role-letters)). This proposal covers **tooling only**: microphone audio → Agebon letters → optional preferred writing. It does **not** train an Agebon acoustic model.
 
 ## Motivation
 
@@ -69,7 +69,7 @@ Microphone audio
 | **Phoneme ASR** | Wav / mic | Phone sequence | Third-party model; thin adapter |
 | **`collapseAllophones`** | IPA | Agebon-target IPA | [phonology.md](../grammar/phonology.md) (no voice contrast) |
 | **`phonesToLetters`** | Target IPA | Letter stream (`u a o e` … `x`) | Inverse of [`phonemes.ts`](../../src/tts/phonemes.ts) |
-| **`segmentWords`** | Letter stream | Speech-surface tokens | [phonotactics](../grammar/phonology.md#phonotactics) |
+| **`segmentWords`** | Letter stream | Speech-surface tokens | [phonotactics](../grammar/phonotactics.md#phonotactics) |
 | **`snapLexicon`** | Tokens | Tokens (nearest legal word) | Lexicon CSV + closed lists |
 | **`toWriting`** | Speech tokens | Preferred writing | Inverse of TTS expansions |
 
@@ -120,7 +120,7 @@ Walk the letter stream with the same syllabify rules as TTS (onset + vowel; left
 - **-l / -m / -n / -r**
 - same plus **-x** (`lx` `mx` `nx` `rx`)
 
-Prefix-less [citation](../grammar/word-endings.md#citation-forms) is legal (root + ending, no PoS). **`PoS+r`** is reserved for [number words](../grammar/phonology.md#number-word-exception). Revisers (`al`, `am`, …) stay prefix-less closed words.
+Prefix-less [citation](../grammar/word-endings.md#citation-forms) is legal (root + ending, no PoS). **`PoS+r`** is reserved for [number words](../grammar/phonotactics.md#number-word-exception). Revisers (`al`, `am`, …) stay prefix-less closed words.
 
 If segmentation fails, return a **partial transcript** plus a skip/error span (do not invent phones). Same spirit as TTS: do not speak or hear material that is not in the signal.
 
@@ -248,6 +248,6 @@ Expect the phoneme model to dwarf the TS glue. Keep it off the critical docs ren
 | Forward speech stack | `diphone-tts.md` |
 | Phonology / IPA | [phonology.md](../grammar/phonology.md) |
 | Writing vs speech (spans) | [spans.md](../grammar/spans.md#writing-vs-speech) |
-| Number shorthand vs speech | [numbers.md](../grammar/numbers.md#writing-preferred-shorthand) |
-| Orthography / citation | [phonology.md](../grammar/phonology.md#beginner), [word-endings.md](../grammar/word-endings.md#citation-forms) |
+| Number shorthand vs speech | [numbers.md](../grammar/number-markers.md#writing-preferred-shorthand) |
+| Orthography / citation | [phonology.md](../grammar/phonology.md), [word-endings.md](../grammar/word-endings.md#citation-forms) |
 | Parser | [parser-pipeline.md](../meta/parser-pipeline.md) |

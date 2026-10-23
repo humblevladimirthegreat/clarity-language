@@ -108,8 +108,8 @@ describe("taught cues in docs/grammar", () => {
   const all = listMarkdown("docs/grammar").flatMap((file) => collectEnglishEntries(readFileSync(file, "utf8"), file, tables));
   const cases: { phrase: string; page: string; slug?: string; forms: string[] }[] = [
     { phrase: "anyway", page: "discourse-hooks.md", slug: "hook-resume", forms: ["or"] },
-    { phrase: "late", page: "comparatives.md", slug: "vague-amounts", forms: ["thubem / zel / zuel / bral"] },
-    { phrase: "last time", page: "numbers.md", forms: ["gruedol", "g#-2", "h#-2"] },
+    { phrase: "late", page: "stance-bars.md", slug: "vague-amounts", forms: ["thubem / zel / zuel / bral"] },
+    { phrase: "last time", page: "stacked-markers.md", forms: ["gruedol", "g#-2", "h#-2"] },
   ];
   for (const { phrase, page, slug, forms } of cases) {
     it(`finds *${phrase}* first`, () => {
@@ -154,7 +154,7 @@ describe("recipe table harvest", () => {
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
-| in B's use (*Uzozen's dog*) | hook **\`em\`** + \`/b/\` | [Whose](hooks.md#genitive) |
+| in B's use (*Uzozen's dog*) | hook **\`em\`** + \`/b/\` | [Whose](ending-grids.md#genitive) |
 
 ## Everyday words {#everyday-words}
 
@@ -165,7 +165,7 @@ describe("recipe table harvest", () => {
 
   it("keeps the Teach link and the cue words", () => {
     const [of, on] = entriesOf(markdown);
-    assert.deepEqual([of!.teach, of!.cues], ["hooks.md#genitive", ["'s", "of"]]);
+    assert.deepEqual([of!.teach, of!.cues], ["ending-grids.md#genitive", ["'s", "of"]]);
     assert.deepEqual([on!.teach, on!.cues], ["hooks.md#extra-noun", ["on", "onto"]]);
   });
 

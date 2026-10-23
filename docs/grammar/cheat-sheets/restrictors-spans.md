@@ -93,7 +93,7 @@ A **span** is a role letter and a pair of brackets. The letter is the role of th
 | [`[…]`](../spans.md#writing) | Agebon | cite: what someone said, a title | `zuzozen d[uzozen] vezuyel.` | B |
 | [<code>&lt;…&gt;</code>](../spans.md#loans) | not Agebon | opaque: a foreign word, code, a name | <code>zuzozen d&lt;kimchi&gt; vawebol.</code> | B |
 | [`th(…)`](../spans.md#asides) | Agebon | aside: a side comment; `g(…)` on a noun, `w(…)` on the next word, `h(…)` on the action | `zuzozen vowurel th(hogowul).` | B |
-| [`{ … }`](../spans.md#scope-islands) | Agebon | scope island: a binder inside reaches only that chunk | `zuzozen { hegugom zudozol gerulel } vawebol.` | I |
+| [`{ … }`](../span-mention.md#scope-islands) | Agebon | scope island: a binder inside reaches only that chunk | `zuzozen { hegugom zudozol gerulel } vawebol.` | I |
 
 When the lexicon has a matching root, write the ordinary word, not a span. An aside holds the same speech act as the outer sentence and never goes under `/y/`, `/z/`, `/d/`, `/b/`, or `/v/`.
 
@@ -106,8 +106,8 @@ When the lexicon has a matching root, write the ordinary word, not a span. An as
 | [**`~`**](../spans.md#exact-paraphrase-proper) | paraphrase | the gist | `d~[zuzozen vezuyol]` | B |
 | [**`@`**](../spans.md#exact-paraphrase-proper) | proper | a work known by that title | `d@[enuron olazun]` | B |
 | [**`~@`**](../spans.md#exact-paraphrase-proper) | proper, loosely remembered | *something like that title* | `d~@[enuron olazun]` | B |
-| [**`^@`**](../spans.md#one-of-a-title) | one thing under the name | *an iPhone* / *a copy of* | `d^@[enuron olazun]` | I |
-| [**`~^@`**](../spans.md#one-of-a-title) | one copy, title roughly | *a copy of something like* | `d~^@[enuron olazun]` | I |
+| [**`^@`**](../span-mention.md#one-of-a-title) | one thing under the name | *an iPhone* / *a copy of* | `d^@[enuron olazun]` | I |
+| [**`~^@`**](../span-mention.md#one-of-a-title) | one copy, title roughly | *a copy of something like* | `d~^@[enuron olazun]` | I |
 
 A one-word name is an ordinary **-n** word (`denuron`), not a span.
 
@@ -132,16 +132,16 @@ A one-word name is an ordinary **-n** word (`denuron`), not a span.
 | [A cite as the verb](../spans.md#pos) | `yul zolazun v[vozohul].` | *Don't say “stop,” Olazun.* | B |
 | [A loan verb](../spans.md#pos) | <code>zolazun v&lt;google&gt; duzozen.</code> | *Olazun googled Uzozen.* | B |
 | [A loan adjective](../spans.md#pos) | <code>zudozol g&lt;rouge&gt; vowurel.</code> | *A rouge dog walks.* | B |
-| [A quoted question](../spans.md#quote-acts) | `zuzozen d[yol zolazun vowurel] vezuyel.` | *Uzozen said, “Does Olazun walk?”* | I |
-| [Point back at a quote](../spans.md#span-noun) | `zolazun d[uzozen] vezuyel. zahelan dwadar varayel.` | *Olazun said “Uzozen.” Ahelan wrote that down.* | I |
-| [Topic from a title](../spans.md#topic-quotes) | `x@[enuron olazun] dalon vezuyol.` | *Now, about Enuron Olazun: it is sung.* | I |
+| [A quoted question](../span-mention.md#quote-acts) | `zuzozen d[yol zolazun vowurel] vezuyel.` | *Uzozen said, “Does Olazun walk?”* | I |
+| [Point back at a quote](../span-mention.md#span-noun) | `zolazun d[uzozen] vezuyel. zahelan dwadar varayel.` | *Olazun said “Uzozen.” Ahelan wrote that down.* | I |
+| [Topic from a title](../span-mention.md#topic-quotes) | `x@[enuron olazun] dalon vezuyol.` | *Now, about Enuron Olazun: it is sung.* | I |
 | [An aside as a clause](../spans.md#asides) | `zuzozen vowurel th(zolazun vezuvol).` | *Uzozen walks (Olazun is asleep).* | B |
 | [An aside on a noun](../spans.md#asides) | `zuzozen g(zuzozer vowurel) vezuyol.` | *Uzozen, who walks, sings.* | B |
 | [An aside on one word](../spans.md#asides) | `zudozol w(zuzozen vezuyel) gerulel vowurel.` | *A (so Uzozen says) red dog walks.* | B |
-| [An aside before the noun](../spans.md#gl-spans) | `gl(gerulel) zudozol gamezom vowurel.` | *The small dog (it is red) walks.* | I |
-| [A loan adjective before the noun](../spans.md#gl-spans) | <code>gl&lt;rouge&gt; zudozol vowurel.</code> | *A rouge dog walks.* | I |
+| [An aside before the noun](../span-mention.md#gl-spans) | `gl(gerulel) zudozol gamezom vowurel.` | *The small dog (it is red) walks.* | I |
+| [A loan adjective before the noun](../span-mention.md#gl-spans) | <code>gl&lt;rouge&gt; zudozol vowurel.</code> | *A rouge dog walks.* | I |
 | [A loan degree word](../spans.md#pos) | <code>zudozol w&lt;molto&gt; gubulel vowurel.</code> | *A molto blue dog walks.* | B |
-| [Aside inside a cite](../spans.md#nesting) | `zuzozen d[ th(hogowul) uzozen ] vezuyel.` | *Uzozen said “(quietly) Uzozen.”* | A |
+| [Aside inside a cite](../span-nesting.md#nesting) | `zuzozen d[ th(hogowul) uzozen ] vezuyel.` | *Uzozen said “(quietly) Uzozen.”* | A |
 
 ### Calls and mentions {#calls-mentions}
 
@@ -150,16 +150,16 @@ A one-word name is an ordinary **-n** word (`denuron`), not a span.
 | [Call a foreign name](../spans.md#y-spans) | <code>y@&lt;Sam&gt;</code> | *Sam!* | B |
 | [Name of uncertain spelling](../spans.md#y-spans) | <code>y~@&lt;Sam&gt;</code> | *Sam?* (not sure of the name) | B |
 | [Foreign interjection](../spans.md#y-spans) | <code>y&lt;Wow&gt;</code> | *Wow!* | B |
-| [A word as spelling](../spans.md#mention): `glegel` | `glegel z[udozo] gamezom.` | *The word “udozo” is small.* | I |
-| [A name as spelling](../spans.md#mention): `glegen` | `zuzozen glegen d[enuron] vegugum.` | *Uzozen dislikes the name “enuron.”* | I |
+| [A word as spelling](../span-mention.md#mention): `glegel` | `glegel z[udozo] gamezom.` | *The word “udozo” is small.* | I |
+| [A name as spelling](../span-mention.md#mention): `glegen` | `zuzozen glegen d[enuron] vegugum.` | *Uzozen dislikes the name “enuron.”* | I |
 
 ### Writing the close {#close}
 
 | Writing | Use | English | Stage |
 |---------|-----|---------|-------|
-| [`d[…]`](../spans.md#close-forms-complete-editorial-close-all) | close one span, whole | the matching closer | A |
-| [`d[…#]`](../spans.md#close-forms-complete-editorial-close-all) | editorial: cut off or faulty | *trailing off* | A |
-| [`d[…\|]`](../spans.md#close-forms-complete-editorial-close-all) | close all open spans | sweep everything | A |
+| [`d[…]`](../span-nesting.md#close-forms-complete-editorial-close-all) | close one span, whole | the matching closer | A |
+| [`d[…#]`](../span-nesting.md#close-forms-complete-editorial-close-all) | editorial: cut off or faulty | *trailing off* | A |
+| [`d[…\|]`](../span-nesting.md#close-forms-complete-editorial-close-all) | close all open spans | sweep everything | A |
 
 ## Scope islands {#islands}
 
@@ -167,25 +167,25 @@ Braces `{ … }` group one chunk so a binder inside reaches only it. The edges a
 
 | Rule | Detail | Stage |
 |------|--------|-------|
-| [Binder required](../spans.md#scope-islands) | a scope-taking `/h/` or `/th/`, or a join, inside; a hook is never a binder | I |
-| [At most one phrase](../spans.md#scope-islands) | a noun phrase, verb phrase, or `/ɡ/` stack, with its own detail | I |
-| [One island per clause](../spans.md#scope-islands) | islands do not nest | I |
-| [Hosts keep their `/b/`](../spans.md#scope-islands) | host and hosted `/b/` are both inside or both outside | I |
-| [No role letter](../spans.md#scope-islands) | on the edges | I |
-| [Empty `{ }`](../spans.md#scope-islands) | has no reading | I |
+| [Binder required](../span-mention.md#scope-islands) | a scope-taking `/h/` or `/th/`, or a join, inside; a hook is never a binder | I |
+| [At most one phrase](../span-mention.md#scope-islands) | a noun phrase, verb phrase, or `/ɡ/` stack, with its own detail | I |
+| [One island per clause](../span-mention.md#scope-islands) | islands do not nest | I |
+| [Hosts keep their `/b/`](../span-mention.md#scope-islands) | host and hosted `/b/` are both inside or both outside | I |
+| [No role letter](../span-mention.md#scope-islands) | on the edges | I |
+| [Empty `{ }`](../span-mention.md#scope-islands) | has no reading | I |
 
 | Placement | Reading | Stage |
 |-----------|---------|-------|
-| [`/h/` or `/th/` inside](../spans.md#scope-islands) | frames that chunk | I |
-| [`/h/` or `/th/` outside](../spans.md#scope-islands) | ordinary floating word: frames the verb or clause | I |
-| [Join inside](../spans.md#scope-islands) | joins only the interior conjuncts | I |
-| [Join outside](../spans.md#scope-islands) | ordinary lookback; the edges do not filter it | I |
+| [`/h/` or `/th/` inside](../span-mention.md#scope-islands) | frames that chunk | I |
+| [`/h/` or `/th/` outside](../span-mention.md#scope-islands) | ordinary floating word: frames the verb or clause | I |
+| [Join inside](../span-mention.md#scope-islands) | joins only the interior conjuncts | I |
+| [Join outside](../span-mention.md#scope-islands) | ordinary lookback; the edges do not filter it | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [A possibility, on one chunk](../spans.md#scope-islands) | `zuzozen { hegugom zudozol gerulel } vawebol.` | *Uzozen saw what was possibly a red dog.* | I |
-| [A join, on one pair](../spans.md#scope-islands) | `zuzozen { zolazun zal } zam vowurel.` | *Uzozen and (just Olazun) walk.* | I |
-| [A recipient first, then the binder](../spans.md#scope-islands) | `zuzozen { bolazun hegugom } vezuyel.` | *Uzozen talks, possibly to Olazun.* | I |
+| [A possibility, on one chunk](../span-mention.md#scope-islands) | `zuzozen { hegugom zudozol gerulel } vawebol.` | *Uzozen saw what was possibly a red dog.* | I |
+| [A join, on one pair](../span-mention.md#scope-islands) | `zuzozen { zolazun zal } zam vowurel.` | *Uzozen and (just Olazun) walk.* | I |
+| [A recipient first, then the binder](../span-mention.md#scope-islands) | `zuzozen { bolazun hegugom } vezuyel.` | *Uzozen talks, possibly to Olazun.* | I |
 
 ## Don't mix up {#dont-mix-up}
 
@@ -197,5 +197,5 @@ Braces `{ … }` group one chunk so a binder inside reaches only it. The edges a
 | `hur` *some other time* ([a leftover occasion](../more-occasions.md#more-occasions)) | | `huol` *anytime except when…* ([leftover times in general](../more-occasions.md#more-occasions)) |
 | `herulal hal` *only when it rains* ([a restrictor list](../more-occasions.md#occasions-vs-a-dependent-when)) | | `thohom blarl` *if a whole sentence* ([a dependent](../more-occasions.md#occasions-vs-a-dependent-when)) |
 | `d[uzozen]` *what was said* ([a cite](../spans.md#writing)) | | `denuron` *the one-word name* ([an ordinary -n word](../spans.md#exact-paraphrase-proper)) |
-| `d@[enuron olazun]` *the work* ([a proper span](../spans.md#exact-paraphrase-proper)) | | `glegen` *the name as spelling* ([a mention](../spans.md#mention)) |
-| `th(…)` *an aside* ([a comment](../spans.md#asides)) | | `{ … }` *a scope island* ([a chunk for a binder](../spans.md#scope-islands)) |
+| `d@[enuron olazun]` *the work* ([a proper span](../spans.md#exact-paraphrase-proper)) | | `glegen` *the name as spelling* ([a mention](../span-mention.md#mention)) |
+| `th(…)` *an aside* ([a comment](../spans.md#asides)) | | `{ … }` *a scope island* ([a chunk for a binder](../span-mention.md#scope-islands)) |

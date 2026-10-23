@@ -318,7 +318,7 @@ const ROWS: Row[] = [
   { invalid: "zuzozen vowurel hezom blarl hwavul thebam.", rejection: "dependentStanceOnly", valid: "zuzozen vowurel hezom blarl thuwathuruor." },
   // A second turn starts only after a period; only the legal force pairs stack.
   { invalid: "zalx vowurel.", rejection: "joinPlural", valid: "zarx vowurel." },
-  // Hooked joins (hooks.md#hooked-joins): a landmark after hook -l / -m, none after point-back -r.
+  // Hooked joins (hook-compounds.md#hooked-joins): a landmark after hook -l / -m, none after point-back -r.
   { invalid: "zoxual vezuvol.", rejection: "hookedJoinLandmark", valid: "zoxual blahehal vezuvol." },
   { invalid: "zuzozen vuhohol ol bahehal. zorxual blahehal vezuvol.", rejection: "hookedJoinPointBackLandmark", valid: "zuzozen vuhohol ol bahehal. zorxual vezuvol." },
   { invalid: "zorxual vezuvol.", rejection: "hookedJoinUnbound", valid: "zuzozen vuhohol ol bahehal. zorxual vezuvol." },

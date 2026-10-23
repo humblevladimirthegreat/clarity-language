@@ -93,7 +93,7 @@ function featureConstructions(word: LexWord): string[] {
       if (word.ending === "r") ids.push("role.instance");
       if (word.pos === "h") ids.push("role.capacity");
     }
-    // A hook prefix teaches its hook, and any label scope after the stem (hooks.md#hook-prefixes).
+    // A hook prefix teaches its hook, and any label scope after the stem (hook-compounds.md#hook-prefixes).
     if (family.xFamily === "hookPrefix") {
       if (family.hook) ids.push(`hook.${family.hook}`);
       if (family.scopeVowel) ids.push(`scope.vowel.${family.scopeVowel}`);

@@ -72,7 +72,7 @@ export function derivedHookGloss(hook: ExtraNounHook): string {
 
 /**
  * Split a prefix-less citation (`awalalul`) into a five-letter left + extra-noun hook, by shape alone.
- * Only a five-letter root fuses (hooks.md#hook-compounds), so a five-letter root + **-l** / **-m**
+ * Only a five-letter root fuses (hook-compounds.md#hook-compounds), so a five-letter root + **-l** / **-m**
  * never reads as a three-letter root + ending + hook.
  */
 export function parseHookCompoundCite(cite: string): HookCompoundParts | null {
@@ -110,7 +110,7 @@ export function hookCompoundFromMorph(word: MorphWord): HookCompoundParts | null
 }
 
 /**
- * A hook compound as the lexicon reads it (hooks.md#hook-compounds): the left piece is a five-letter
+ * A hook compound as the lexicon reads it (hook-compounds.md#hook-compounds): the left piece is a five-letter
  * dictionary root, and the whole stem is not one.
  */
 export function readHookCompound(word: MorphWord, isRoot: (root: string) => boolean): HookCompoundParts | null {

@@ -32,7 +32,7 @@ Under `/v/`, `/ɡ/`, and `/h/`, a join word with **-n** names a list move instea
 <a id="vowels--endings"></a>
 <a id="ending-senses-clause-joins"></a>
 
-[Joins](joins.md#beginner) already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/`, `/x/`, and stance `/th/`. Clause **-n** forms are in [Sequence](#sequence); `/v/` **-n** forms are join-act verbs.
+[Joins](joins.md) already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/`, `/x/`, and stance `/th/`. Clause **-n** forms are in [Sequence](#sequence); `/v/` **-n** forms are join-act verbs.
 
 | | **-l** | **-m** | **-r** |
 |---|--------|--------|--------|
@@ -137,7 +137,7 @@ A rank join on verb phrases puts the acts in order of priority, so the earlier a
 
 Nothing is SHARED after a clause (`/x/`) join; each clause carries its own words.
 
-Sequence **`ae`** keeps its [phrase meaning](joins.md#sequence-ae) in both roles: the first item is where you start. Under `/v/` it is one subject doing steps in order; under `/x/` it fences a list of steps whose order is part of the message (a recipe, directions). Standalone **`xael`** says the steps can go in any order.
+Sequence **`ae`** keeps its [phrase meaning](rank-joins.md#sequence-ae) in both roles: the first item is where you start. Under `/v/` it is one subject doing steps in order; under `/x/` it fences a list of steps whose order is part of the message (a recipe, directions). Standalone **`xael`** says the steps can go in any order.
 
 > `zuzozen vowurel varuvel vael.`
 >
@@ -217,7 +217,7 @@ When the grounds are a whole clause (*not because Olazun runs*), the pole takes 
 >
 > "Uzozen walks, but not because Olazun runs."
 
-The same join after DEDUCED and an *if* pole says a conclusion **does not follow** from its premises ([deduction](knowing.md#deduction)). You deny the link and claim nothing about either clause.
+The same join after DEDUCED and an *if* pole says a conclusion **does not follow** from its premises ([deduction](evidentiality.md#deduction)). You deny the link and claim nothing about either clause.
 
 > `zuzozen vuduyel thanam thohom thul blarl zuzozen gwezuduyel.`
 >
@@ -227,7 +227,7 @@ The same join after DEDUCED and an *if* pole says a conclusion **does not follow
 
 **Compare with:** `thanam thul thohom blarl` denies only the channel: *if P, then Q*, but you do not know that by deduction.
 
-Only one join fits there, and only when the last stance word before it is a pole with no `/b/` yet. The same works for every join vowel and every pole, and for a channel that takes grounds ([evidence clause](knowing.md#evidence-clause)).
+Only one join fits there, and only when the last stance word before it is a pole with no `/b/` yet. The same works for every join vowel and every pole, and for a channel that takes grounds ([evidence clause](evidentiality.md#evidence-clause)).
 
 #### Standalone stance joins {#standalone-stance-joins}
 
@@ -331,7 +331,7 @@ When English ties one extra thing to a noun or an action by a list move (*a cupc
 >
 > "A cupcake with peanuts."
 
-**`gan`** always needs its `/b/` word (`gan b…`). To talk about the word itself, with no `/b/`, use a [mention](spans.md#mention) span.
+**`gan`** always needs its `/b/` word (`gan b…`). To talk about the word itself, with no `/b/`, use a [mention](span-mention.md#mention) span.
 
 **Compare with:** *writes with a hammer* is an extra-noun [hook](hooks.md#extra-noun) (`ael` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Olazun* is [proxy](relations.md#proxy) (`hanom`), not **`hon`** *exclusively for*. **`uel`** is *against* that party, not **`hun`** *refusing*.
 

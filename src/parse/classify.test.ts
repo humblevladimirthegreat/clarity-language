@@ -291,7 +291,7 @@ describe("classify", () => {
   });
 
   it("a three-letter root + ending + hook is not a hook compound", () => {
-    // Only a five-letter root fuses (hooks.md#hook-compounds): `map` + l + `ul` stays unread.
+    // Only a five-letter root fuses (hook-compounds.md#hook-compounds): `map` + l + `ul` stays unread.
     const word = classifyText(`v${CLOSED.map}lul`);
     assert.equal(word.hookCompound, undefined);
   });

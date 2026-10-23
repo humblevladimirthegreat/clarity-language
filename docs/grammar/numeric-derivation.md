@@ -21,9 +21,9 @@ PoS + NUM + {x|mx} + ROOT + {-l|-m|-n|-r}
 | Piece | Use | Cue |
 |-------|-----|-----|
 | **PoS** | Ordinary slot for the whole word | |
-| **NUM** | Number body: the same marker vowel and digit or digitless exponent as a free [number](numbers.md), without the role letter and the ending (`grawal` → **`rawa`**). Tables below use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …), but real words are always spelled out (`rawa`, `robado`, `rabawa`, …): [writing style](numbers.md#writing-style-numeric-vs-spelled) | it starts with **`r`**, like every spoken number |
+| **NUM** | Number body: the same marker vowel and digit or digitless exponent as a free [number](numbers.md), without the role letter and the ending (`grawal` → **`rawa`**). Tables below use [shorthand](number-markers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …), but real words are always spelled out (`rawa`, `robado`, `rabawa`, …): [writing style](number-markers.md#writing-style-numeric-vs-spelled) | it starts with **`r`**, like every spoken number |
 | **seam** | **`x`** the number is exact; **`mx`** approximately that number | the same **`m`** as `gragem` *about three* |
-| **ROOT** | Any content root (`V(CV)+`), or an ordinary [**`x`** compound](compounds.md#ordinary-compound-order), whose last root is the kind | |
+| **ROOT** | Any content root (`V(CV)+`), or an ordinary [**`x`** compound](compound-families.md#ordinary-compound-order), whose last root is the kind | |
 | **Ending** | The root's sense, as on any **`x`** compound: **-l** its everyday sense, **-m** its abstract sense; or **-n** a name, **-r** a resume | `zrawaxolamam` is the essence of love in its abstract sense, *cherished* |
 
 The **Agebon** columns below write the shape in shorthand (`+exROOT`), but a real word is always spelled out (`zrawaxolamal`): shorthand is for free numbers only.
@@ -382,4 +382,4 @@ z-Ahelan | d-telos-x-fire | v-see
 
 - Free counts / ranks / number as verb / adverb / interjection / discourse: [numbers.md](numbers.md)
 - Labels, time, measure, ranges, percent: [numbers-applied.md](numbers-applied.md)
-- The root last, as in every **`x`** compound: [compounds.md](compounds.md#ordinary-compound-order)
+- The root last, as in every **`x`** compound: [compounds.md](compound-families.md#ordinary-compound-order)

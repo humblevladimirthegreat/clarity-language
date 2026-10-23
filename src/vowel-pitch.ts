@@ -7,10 +7,10 @@ import { CONSONANT_LETTERS, DIGIT_LETTERS, VOWEL_LETTERS, vowelKey } from "./fin
 
 /** Vowels lowest pitch first: the finger code's count order. */
 export const PITCH_ORDER: readonly string[] = VOWEL_LETTERS;
-/** Vowels in alphabet order (phonology.md#letter-names); a stack puts its two vowels in this order. */
+/** Vowels in alphabet order (phonotactics.md#letter-names); a stack puts its two vowels in this order. */
 export const ALPHABET_VOWELS: readonly string[] = ["u", "a", "o", "e"];
 
-/** Semitones above the home note, the note `a` is sung on (phonology.md#vowel-pitch-values). */
+/** Semitones above the home note, the note `a` is sung on (singability.md#vowel-pitch-values). */
 export const VOWEL_PITCH: Readonly<Record<string, number>> = { a: 0, o: 3, e: 5, u: 7 };
 
 /** The default home note: its finger-code piano key (D♯3). */
@@ -57,7 +57,7 @@ const vowelsOf = (word: string): string[] => [...word].filter((c) => PITCH_ORDER
 
 /**
  * The phrases a mode plays. With `consonants`, the scale runs through consonants in alphabet order
- * (phonology.md#letter-names), one per note, its vowels repeating; each phrase is one run of the scale, tied to the next.
+ * (phonotactics.md#letter-names), one per note, its vowels repeating; each phrase is one run of the scale, tied to the next.
  * The scale up then counts, so it stops at the ten digit letters; the scale down says every letter name.
  * Pairs and stacks have no consonants: a consonant between two stacked vowels would split the stack.
  */

@@ -72,7 +72,7 @@ Beginner's *if* and *only if* do not claim the condition is true. The table comp
 
 A noun after a because pole names an **act or a thing**, not a person. For *because of Olazun*, say what Olazun did as a sentence after **`blarl`**. A name in that `/b/` slot is a named event or place (a storm, a city), never the person.
 
-English *unless* means *if … not*. Keep **`thohom`**, but use the stand-in **`blurl`** instead of **`blarl`** ([stand-in vowels](dependents.md#stand-in)): the outcome holds unless the next sentence is true.
+English *unless* means *if … not*. Keep **`thohom`**, but use the stand-in **`blurl`** instead of **`blarl`** ([stand-in vowels](sentence-linkers.md#stand-in)): the outcome holds unless the next sentence is true.
 
 > `zuzozen vowurel thohom blurl zolazun vezuvol.`
 >
@@ -167,7 +167,7 @@ In English *Uzozen makes Olazun speak*, Uzozen makes it happen and Olazun does t
 
 When a pole follows **`thewem`**, the `/b/` belongs to the pole, as above (`thewem thahum blavulul` *because of fire, as mechanism*).
 
-**Compare with:** *Get someone to* (ask, persuade) is tell + a *to* [stand-in](dependents.md#stand-in).
+**Compare with:** *Get someone to* (ask, persuade) is tell + a *to* [stand-in](sentence-linkers.md#stand-in).
 
 | Agebon | English |
 |--------|---------|

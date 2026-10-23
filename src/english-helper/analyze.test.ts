@@ -109,7 +109,7 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
     const my = slots("My cat runs.").find((s) => s.text === "My")!;
     const possessive = my.suggestions.find((s) => s.kind === "detector" && s.id === "possessive-pronoun");
     assert.ok(possessive?.kind === "detector" && possessive.example);
-    assert.equal(possessive.example.link, "hooks.md#genitive");
+    assert.equal(possessive.example.link, "ending-grids.md#genitive");
     assert.match(possessive.example.english, /\bmy\b/i);
   });
 
@@ -240,7 +240,7 @@ describe("compounds", () => {
     assert.equal(live.kind, "live");
     assert.equal(live.stem, `${root("tea")}x${root("shop")}`);
     assert.equal(live.form, `b${live.stem}l`);
-    assert.equal(live.link, "compounds.md#ordinary-compound-order");
+    assert.equal(live.link, "compound-families.md#ordinary-compound-order");
   });
 
   it("keeps an adjective and a noun as two words", () => {

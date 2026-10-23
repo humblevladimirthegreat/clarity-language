@@ -358,7 +358,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 z-Ahelan | v-climb . x-it-follows | z-Ahelan | [v-swim | v-not]
 
-**Rule:** [Sentence linkers](dependents.md#sentence-linkers)
+**Rule:** [Sentence linkers](sentence-linkers.md#sentence-linkers)
 :::
 
 **2.** *Ahelan is not a police officer.*
@@ -380,7 +380,7 @@ z-Ahelan | [d-hammer | [g-material | bl-wood]] | v-see
 
 **Also correct:** `zahelan vawebol dehowol gulem blulel.`
 
-**Rule:** [Of relations](relations.md#of-relations)
+**Rule:** [Of relations](of-relations.md#of-relations)
 :::
 
 **4.** *Ahelan swims as slowly as Olazun.*
@@ -390,7 +390,7 @@ z-Ahelan | [d-hammer | [g-material | bl-wood]] | v-see
 
 [z-Ahelan | z-Olazun | z-equal-rank | h-slow] | v-swim
 
-**Rule:** [Manner scale](comparatives.md#manner-scale)
+**Rule:** [Manner scale](comparative-arity.md#manner-scale)
 :::
 
 **5.** *Olazun cries because of the wind.*
@@ -440,7 +440,7 @@ z-Ahelan | [b-hour | g-two.about] | v-sleep
 
 z-Olazun | th-CLUES-Ahelan | v-sing
 
-**Rule:** [Whose view (holder)](knowing.md#holder)
+**Rule:** [Whose view (holder)](evidentiality.md#holder)
 :::
 
 **10.** *Now, about Olazun: Olazun sits.*
@@ -472,7 +472,7 @@ z-Ahelan | d-tent | v-see . z-Ahelan | v-←see | d-bucket
 
 *Olazun and their duck swim.*
 
-**Rule:** [SHARED after the join](joins.md#shared-after-the-join)
+**Rule:** [SHARED after the join](rank-joins.md#shared-after-the-join)
 :::
 
 **3.** `zahelan glegel d[uzozen] varayel.`
@@ -482,7 +482,7 @@ z-Ahelan | [gl-MENTION | d-CITE[Uzozen]] | v-write
 
 *Ahelan writes the word “uzozen.”*
 
-**Rule:** [Mention](spans.md#mention)
+**Rule:** [Mention](span-mention.md#mention)
 :::
 
 **4.** `zuzozen danewulx gragel vawebol. zahelan dugedolx grager vawebol.`
@@ -492,7 +492,7 @@ z-Uzozen | [d-knife-x | g-three] | v-see . z-Ahelan | [d-cookie-x | g-←three] 
 
 *Uzozen sees three knives. Ahelan sees three cookies, the same number.*
 
-**Rule:** [Number endings](numbers.md#number-endings)
+**Rule:** [Number endings](number-markers.md#number-endings)
 :::
 
 **5.** `SELFxen. olazuxan.`
@@ -504,7 +504,7 @@ SELF-minutes . Olazun-presence
 
 The lesser bid sets the limit, so the talk lasts a few minutes.
 
-**Rule:** [Conversation length](compounds.md#conversation-length)
+**Rule:** [Conversation length](compound-families.md#conversation-length)
 :::
 
 **6.** `yol ol bar zahelan vuhohol.`
@@ -540,7 +540,7 @@ z-Olazun | [h-like | [bl-guard | g-angry]] | v-walk
 
 After the `/b/` of a host, a plain adjective describes that extra noun; right after `zolazun`, *angry* describes Olazun.
 
-**Rule:** [Complex chaining](clause.md#complex-chaining)
+**Rule:** [Complex chaining](left-bound.md#complex-chaining)
 :::
 
 **3.** *Ahelan, please don't cry.* `yahelan yum vagamul.` or `yahelan yul vagamul.`
@@ -588,7 +588,7 @@ z-Olazun | v-climb | [through | b-fog]
 
 **`uol`** passes through the fog; **`ual`** is *out of* it.
 
-**Rule:** [Extra noun: stacked vowels](hooks.md#extra-noun-intermediate)
+**Rule:** [Extra noun: stacked vowels](ending-grids.md#extra-noun-intermediate)
 :::
 
 **7.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyel thobather blwazer.` or `zahelan vuguyel thobathor blwazer.`
@@ -612,7 +612,7 @@ z-Olazun | th-CLUES.strong | v-fight
 
 **-l** says you could show the clues; **`theyem`** only describes them.
 
-**Rule:** [Evidence strength](knowing.md#evidence-strength)
+**Rule:** [Evidence strength](evidentiality.md#evidence-strength)
 :::
 
 **9.** *Imagine Olazun walking.* `zolazun theyum vowurel.` or `zolazun theyul vowurel.`
@@ -732,7 +732,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 &z-Olazun | d-tomato | v-cook
 
-**Rule:** [English emphasis and clefts](clause.md#english-emphasis)
+**Rule:** [English emphasis and clefts](emphasis.md#english-emphasis)
 :::
 
 **2.** *As of 3 May, Uzozen is sitting in a school.*
@@ -742,7 +742,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 z-Uzozen | [h-as-of.ledger | bl-_3,5] | v-sit | [in | b-school]
 
-**Rule:** [As-of (whose now)](relations.md#as-of)
+**Rule:** [As-of (whose now)](as-of.md#as-of)
 :::
 
 **3.** *Ahelan sees a station that I remember as quiet.*
@@ -752,7 +752,7 @@ z-Uzozen | [h-as-of.ledger | bl-_3,5] | v-sit | [in | b-school]
 
 z-Ahelan | [d-station | [w-MEMORY | g-quiet]] | v-see
 
-**Rule:** [Mood on one adjective](knowing.md#mood-on-adjective)
+**Rule:** [Mood on one adjective](universality.md#mood-on-adjective)
 :::
 
 #### Agebon → English {#advanced-agebon-to-english}
@@ -764,7 +764,7 @@ z-Ahelan | [d-station | [w-MEMORY | g-quiet]] | v-see
 
 *Everyone at the station sits.*
 
-**Rule:** [Hooked joins](hooks.md#hooked-joins)
+**Rule:** [Hooked joins](hook-compounds.md#hooked-joins)
 :::
 
 **2.** `zahelan d[omobul#] varayel.`
@@ -774,7 +774,7 @@ z-Ahelan | d-CITE[umbrella]# | v-write
 
 *Ahelan wrote “umbrella…”*
 
-**Rule:** [Editorial close and close-all](spans.md#close-forms-complete-editorial-close-all)
+**Rule:** [Editorial close and close-all](span-nesting.md#close-forms-complete-editorial-close-all)
 :::
 
 **3.** `zuzozen grawaxogowul.`
@@ -798,7 +798,7 @@ z-Olazun | NAME[d-tomato | d-watermelon | d-and] | v-cook
 
 **-n** on the join names the list as one set phrase; **`dal`** is just *a tomato and a watermelon*.
 
-**Rule:** [Named phrase](joins.md#named-list)
+**Rule:** [Named phrase](join-islands.md#named-list)
 :::
 
 **2.** *Olazun is sleepier than Ahelan said.* `zolazun thebam blahelan zel guzemol.` or `zolazun zel guzemol thebam blahelan.`
@@ -810,7 +810,7 @@ z-Olazun | NAME[d-tomato | d-watermelon | d-and] | v-cook
 
 Before the rank join, REPORTED is the bar: what Ahelan said sets the level. After the fence it is a stance on the whole superlative: *Olazun is the sleepiest, Ahelan says*.
 
-**Rule:** [Every bar](comparatives.md#stance-bars)
+**Rule:** [Every bar](stance-bars.md#stance-bars)
 :::
 
 **3.** *Uzozen sees a huge but finite number of baguettes.* `zuzozen debodelx grawam vawebol.` or `zuzozen debodelx grawal vawebol.`
@@ -834,7 +834,7 @@ Open **-m** keeps the amount finite, just very large; **`grawal`** is infinitely
 
 On `/w/` right before the adjective, MEMORY covers only *sleepy*; **`thevum`** on `/th/` covers the whole sentence: *I remember sleepy Uzozen sleeping*.
 
-**Rule:** [Mood on one adjective](knowing.md#mood-on-adjective)
+**Rule:** [Mood on one adjective](universality.md#mood-on-adjective)
 :::
 
 **5.** *Uzozen commands that Olazun cook.* `zuzozen vern zolazun vuguyel.` or `zuzozen varn zolazun vuguyel.`
@@ -846,7 +846,7 @@ z-Uzozen | v-command | z-Olazun | v-cook
 
 **`vern`** takes the next sentence as an instruction; **`varn`** would only state that Olazun cooks.
 
-**Rule:** [Lexicalized stand-ins in other roles](dependents.md#stand-in-roles)
+**Rule:** [Lexicalized stand-ins in other roles](stand-in-roles.md#stand-in-roles)
 :::
 
 **6.** *There is a second-to-last baguette.* `zebodel gruedol.` or `zebodel gredol.`
@@ -858,7 +858,7 @@ z-baguette | g-2nd-from-end
 
 **`rue`** counts from the end; **`re`** would be the second baguette from the start.
 
-**Rule:** [From the end](numbers.md#from-the-end)
+**Rule:** [From the end](stacked-markers.md#from-the-end)
 :::
 
 #### Fix it {#advanced-fix-it}
@@ -872,7 +872,7 @@ z-Ahelan | [th-MEMORY | [bl-hour | g-minus-two]] | v-sleep
 
 The offset is signed and counts from now, so *ago* needs **`ru`** (minus); MEMORY with a later offset is not a sentence.
 
-**Rule:** [Dated channel (signed offset)](knowing.md#dated-channel)
+**Rule:** [Dated channel (signed offset)](universality.md#dated-channel)
 :::
 
 #### What changes {#advanced-what-changes}
@@ -886,5 +886,5 @@ z-Uzozen | d-station | v-recede
 
 With **`ul`** fused, Uzozen leaves the station. With **`um`**, Uzozen only recedes from it, moving away without leaving it behind.
 
-**Rule:** [Hook compounds](hooks.md#hook-compounds)
+**Rule:** [Hook compounds](hook-compounds.md#hook-compounds)
 :::

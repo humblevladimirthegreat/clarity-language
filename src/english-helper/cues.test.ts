@@ -24,7 +24,7 @@ const page = `# Saying it
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
 | *next to* / *beside* (*sits beside me*) | hook **\`om\`** + \`/b/\` | [Here](hooks.md#deixis) |
-| *X and Y, respectively* | **\`wubam\`** | [Respectively](joins.md#respectively) |
+| *X and Y, respectively* | **\`wubam\`** | [Respectively](rank-joins.md#respectively) |
 
 ### Practice {#practice}
 

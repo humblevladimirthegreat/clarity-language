@@ -98,11 +98,11 @@ export type MorphWordFamily =
       numberStem?: NumberStem;
       /** Numeric prefix: the `mx` seam, approximately that number (`zragemxezuyel`). */
       approx?: boolean;
-      /** Hook prefix: the extra-noun hook it spells, **-l** for the `x` seam, **-m** for `mx` (`uel`, `uem`; hooks.md#hook-prefixes). */
+      /** Hook prefix: the extra-noun hook it spells, **-l** for the `x` seam, **-m** for `mx` (`uel`, `uem`; hook-compounds.md#hook-prefixes). */
       hook?: string;
       /** Hook prefix on a hook-compound citation (`guexowurelul`): the stem root's own ending and its fused hook. */
       stemHook?: { leftEnding: "l" | "m"; hook: string };
-      /** Holder seam: the host's own grade letter before the holder (knowing.md#holder). */
+      /** Holder seam: the host's own grade letter before the holder (evidentiality.md#holder). */
       grade?: "l" | "m" | "r";
     }
   | { kind: "hook"; form: string }
@@ -114,7 +114,7 @@ export type MorphWordFamily =
     }
   /**
    * Join word. `hook`: a hooked join's extra-noun hook, as its free form (`ol`, `om`, `or`): the hook bounds the
-   * join's set, and its landmark is the `bl-` word right after (`zoxual blahehal`, hooks.md#hooked-joins).
+   * join's set, and its landmark is the `bl-` word right after (`zoxual blahehal`, hook-compounds.md#hooked-joins).
    */
   | { kind: "joinMarker"; series: string; hook?: string }
   | {
@@ -170,7 +170,7 @@ export type LexReading =
   | "restrictor"
   /** Any closed overlay row that is not a join-series form, sake or ability; read `word.overlay.kind`. */
   | "overlay"
-  /** The mention marker: a `gl-` word right before a written span (spans.md#mention). */
+  /** The mention marker: a `gl-` word right before a written span (span-mention.md#mention). */
   | "mention"
   | "join"
   | "standIn"
@@ -269,7 +269,7 @@ export type Hosted = {
   amount?: LexWord;
   /** Plain adjectives after the hosted pair describe the landmark, not the host's noun. */
   adjs?: GPackage[];
-  /** `barl` after an evidential's offset: the next sentence is the grounds (knowing.md#evidence-clause). */
+  /** `barl` after an evidential's offset: the next sentence is the grounds (evidentiality.md#evidence-clause). */
   grounds?: LexWord;
   /** A stance join sits between the host and its `barl` (`thoyem thul barl`), closing the stance words before it. */
   afterJoin?: true;
@@ -332,7 +332,7 @@ export type NpCoord = {
   /** `joinModifiers`: `/w/` words right before the join word (respectively `wazem`). */
   /** `factor`: digit `/h/` number after an equative's shared scale (*twice as … as*). */
   /** `tag`: a tag **-l** right after the fence closed by this part's join names the whole group (tag-pronouns.md#tag-pronouns). */
-  /** `landmark`: the `bl-` word right after a hooked join, which bounds its set (hooks.md#hooked-joins). */
+  /** `landmark`: the `bl-` word right after a hooked join, which bounds its set (hook-compounds.md#hooked-joins). */
   parts: { items: NpItem[]; join?: LexWord; landmark?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord; tag?: LexWord }[];
 };
 
@@ -407,7 +407,7 @@ export type Clause = {
 };
 
 export type BodyClause = {
-  /** The mention marker before a topic span (`glelel x[udozo]`, spans.md#mention). */
+  /** The mention marker before a topic span (`glelel x[udozo]`, span-mention.md#mention). */
   topicMarker?: LexWord;
   linker?: LexWord;
   clause: Clause;

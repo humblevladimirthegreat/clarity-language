@@ -28,13 +28,19 @@ export type CoverageGap = { id: string; anchor: string; summary: string; usedOn:
 
 /**
  * Check 2 of docs/proposals/parser-strictness.md: every construction is used by
- * an example on the page its anchor names. One gap per construction that is not.
+ * an example on the page its anchor names. Peeled sittings of that parent also
+ * count (`extraPages`). One gap per construction that is not.
  */
-export function constructionCoverageGaps(registry: Registry, uses: readonly ConstructionUse[]): CoverageGap[] {
+export function constructionCoverageGaps(
+  registry: Registry,
+  uses: readonly ConstructionUse[],
+  extraPages: ReadonlyMap<string, readonly string[]> = new Map(),
+): CoverageGap[] {
   const gaps: CoverageGap[] = [];
   for (const [id, entry] of registry) {
     const page = entry.anchor.split("#")[0]!;
-    if (uses.some((u) => u.id === id && u.section.page === page)) continue;
+    const pages = new Set([page, ...(extraPages.get(page) ?? [])]);
+    if (uses.some((u) => u.id === id && pages.has(u.section.page))) continue;
     const usedOn = [...new Set(uses.filter((u) => u.id === id).map((u) => u.section.page))];
     gaps.push({ id, anchor: entry.anchor, summary: entry.summary, usedOn });
   }

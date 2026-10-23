@@ -31,7 +31,7 @@ Each spoken digit starts with its own consonant ([counts](./numbers.md#counts)):
 | `n` | 9 | open hand |
 | `m` | 0 | index + pinky (horns) |
 
-The four consonants left over come next in [alphabet order](./phonology.md#letter-names): `th`, `w`, `y`, `x`. They are the runs 1 to 4 again, with the fingers hooked: keep the base knuckle straight and curl the two outer joints, so the hook sticks out from the fist instead of folding into it. Straight fingers mean a digit letter; hooked fingers mean one of these four. The thumb is never hooked.
+The four consonants left over come next in [alphabet order](./phonotactics.md#letter-names): `th`, `w`, `y`, `x`. They are the runs 1 to 4 again, with the fingers hooked: keep the base knuckle straight and curl the two outer joints, so the hook sticks out from the fist instead of folding into it. Straight fingers mean a digit letter; hooked fingers mean one of these four. The thumb is never hooked.
 
 | Letter | Shape |
 |--------|-------|
@@ -63,7 +63,7 @@ The consonant hand counts from the index and the vowel hand from the pinky, so i
 
 ## One beat per syllable {#beats}
 
-Agebon syllables have a fixed shape, so the code times them the same way every time. Each syllable takes one beat, and every beat is the same length, as in [speech](./phonology.md#rhythm-and-stress):
+Agebon syllables have a fixed shape, so the code times them the same way every time. Each syllable takes one beat, and every beat is the same length, as in [speech](./singability.md#rhythm-and-stress):
 
 | In speech | In the finger code |
 |-----------|--------------------|

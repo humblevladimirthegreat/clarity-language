@@ -103,7 +103,7 @@ function indexSeriesForms(index: GlossIndex, tables: ClassifyTables): void {
 const HOOK_VOWELS = ["a", "ao", "o", "oe", "u", "ua", "uo", "e", "ae", "ue"];
 
 /**
- * Hooked joins (hooks.md#hooked-joins): every hook on **-l**, **-m**, and point-back **-r** × every join on **-l**,
+ * Hooked joins (hook-compounds.md#hooked-joins): every hook on **-l**, **-m**, and point-back **-r** × every join on **-l**,
  * **-m**, **-r**, **-rx** under `/z/` `/d/` `/b/`; under `/h/`, the time hooks × the bare restrictors.
  */
 function indexHookedJoinForms(index: GlossIndex, tables: ClassifyTables): void {

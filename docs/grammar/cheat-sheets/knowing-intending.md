@@ -20,13 +20,13 @@ Pick one channel for how you know. LIVE and MEMORY place the event in time; the 
 <!-- cheat-sheet: knowing-intending -->
 | Channel | Kind | Agebon | English | Stage |
 |---------|------|--------|---------|-------|
-| LIVE | direct | [`thugom`](../knowing.md#evidentiality) | *live* / *from the scene* | I |
-| MEMORY | direct | [`thevum`](../knowing.md#evidentiality) | *from memory* | I |
-| PATTERN | reasoned | [`thubem`](../knowing.md#evidentiality) | *from the pattern* | I |
-| CLUES | reasoned | [`theyem`](../knowing.md#evidentiality) | *from the clues* / *apparently* | I |
-| DEDUCED | reasoned | [`thanam`](../knowing.md#evidentiality) | *it follows* / *by deduction* | I |
-| REPORTED | received | [`thebam`](../knowing.md#evidentiality) | *so they say* | I |
-| INTUITION | internal | [`thabom`](../knowing.md#evidentiality) | *my gut says* | I |
+| LIVE | direct | [`thugom`](../evidentiality.md#evidentiality) | *live* / *from the scene* | I |
+| MEMORY | direct | [`thevum`](../evidentiality.md#evidentiality) | *from memory* | I |
+| PATTERN | reasoned | [`thubem`](../evidentiality.md#evidentiality) | *from the pattern* | I |
+| CLUES | reasoned | [`theyem`](../evidentiality.md#evidentiality) | *from the clues* / *apparently* | I |
+| DEDUCED | reasoned | [`thanam`](../evidentiality.md#evidentiality) | *it follows* / *by deduction* | I |
+| REPORTED | received | [`thebam`](../evidentiality.md#evidentiality) | *so they say* | I |
+| INTUITION | internal | [`thabom`](../evidentiality.md#evidentiality) | *my gut says* | I |
 
 ### Evidence strength {#strength}
 
@@ -35,42 +35,42 @@ The ending grades your evidence: **-l** you could show it, **-m** you could desc
 <!-- cheat-sheet: knowing-intending -->
 | Channel | Graded on | **-l** show | **-m** describe | **-r** gesture | Stage |
 |---------|-----------|-------------|-----------------|----------------|-------|
-| [LIVE](../knowing.md#evidence-strength) | clarity of view | `thugol` a clear view | `thugom` | `thugor` a glimpse | I |
-| [MEMORY](../knowing.md#evidence-strength) | vividness | `thevul` a vivid memory | `thevum` | `thevur` a hazy memory | I |
-| [PATTERN](../knowing.md#evidence-strength) | cases, consistency | `thubel` well established | `thubem` | `thuber` a few cases | I |
-| [CLUES](../knowing.md#evidence-strength) | strength of clues | `theyel` strong clues | `theyem` | `theyer` a weak clue | I |
-| [DEDUCED](../knowing.md#evidence-strength) | how far you checked the steps | `thanal` every step shown | `thanam` | `thanar` seems to follow | I |
-| [REPORTED](../knowing.md#evidence-strength) | reliability of source | `thebal` a reliable source | `thebam` | `thebar` a rumor | I |
-| [INTUITION](../knowing.md#evidence-strength) | how well you can state it | `thabol` a strong sense | `thabom` | `thabor` a faint hunch | I |
+| [LIVE](../evidentiality.md#evidence-strength) | clarity of view | `thugol` a clear view | `thugom` | `thugor` a glimpse | I |
+| [MEMORY](../evidentiality.md#evidence-strength) | vividness | `thevul` a vivid memory | `thevum` | `thevur` a hazy memory | I |
+| [PATTERN](../evidentiality.md#evidence-strength) | cases, consistency | `thubel` well established | `thubem` | `thuber` a few cases | I |
+| [CLUES](../evidentiality.md#evidence-strength) | strength of clues | `theyel` strong clues | `theyem` | `theyer` a weak clue | I |
+| [DEDUCED](../evidentiality.md#evidence-strength) | how far you checked the steps | `thanal` every step shown | `thanam` | `thanar` seems to follow | I |
+| [REPORTED](../evidentiality.md#evidence-strength) | reliability of source | `thebal` a reliable source | `thebam` | `thebar` a rumor | I |
+| [INTUITION](../evidentiality.md#evidence-strength) | how well you can state it | `thabol` a strong sense | `thabom` | `thabor` a faint hunch | I |
 
 ### Adding to a channel {#channel-add}
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Name the source](../knowing.md#source): a noun in a `bl-` word right after | `zolazun thebam bluzozen velurul.` | *Olazun left, according to Uzozen.* | I |
-| [A device as the source](../knowing.md#source) | `zolazun thugom blogewol vezuvol.` | *Olazun is asleep, going by the camera.* | I |
-| [A source you don't name](../knowing.md#source): `blumon`, then say whether you know who | `zolazun thebam blumon velurul. zuwon vanam dorl zar.` | *Olazun left, according to someone. I know who.* | I |
-| [How many hands](../knowing.md#hand-depth): `th#N` after a channel | `zolazun thebam thregel velurul.` | *Olazun left, so they say, third-hand.* | I |
-| [A forecast](../knowing.md#forecast): channel + `blral` | `thubem blral verulal.` | *It will rain, going by the pattern.* | I |
-| [A hunch about later](../knowing.md#forecast) | `zolazun thabor blral velurul.` | *Olazun will leave, a faint hunch.* | I |
-| [A dated claim](../knowing.md#dated-channel): signed time measure | `zuzozen thevum blagorum grugel vowurel.` | *I saw Uzozen walk three hours ago.* | A |
-| [Later, dated](../knowing.md#dated-channel) | `zolazun thebam blagorum gragel velurul.` | *I hear Olazun leaves in three hours.* | A |
-| [Give the grounds](../knowing.md#evidence-clause): `blarl`, grounds in the next sentence | `theyem thahum blarl` | *inferred, and it was caused* | I |
+| [Name the source](../evidentiality.md#source): a noun in a `bl-` word right after | `zolazun thebam bluzozen velurul.` | *Olazun left, according to Uzozen.* | I |
+| [A device as the source](../evidentiality.md#source) | `zolazun thugom blogewol vezuvol.` | *Olazun is asleep, going by the camera.* | I |
+| [A source you don't name](../evidentiality.md#source): `blumon`, then say whether you know who | `zolazun thebam blumon velurul. zuwon vanam dorl zar.` | *Olazun left, according to someone. I know who.* | I |
+| [How many hands](../evidentiality.md#hand-depth): `th#N` after a channel | `zolazun thebam thregel velurul.` | *Olazun left, so they say, third-hand.* | I |
+| [A forecast](../evidentiality.md#forecast): channel + `blral` | `thubem blral verulal.` | *It will rain, going by the pattern.* | I |
+| [A hunch about later](../evidentiality.md#forecast) | `zolazun thabor blral velurul.` | *Olazun will leave, a faint hunch.* | I |
+| [A dated claim](../universality.md#dated-channel): signed time measure | `zuzozen thevum blagorum grugel vowurel.` | *I saw Uzozen walk three hours ago.* | A |
+| [Later, dated](../universality.md#dated-channel) | `zolazun thebam blagorum gragel velurul.` | *I hear Olazun leaves in three hours.* | A |
+| [Give the grounds](../evidentiality.md#evidence-clause): `blarl`, grounds in the next sentence | `theyem thahum blarl` | *inferred, and it was caused* | I |
 
 | Offset | Sign | Stage |
 |--------|------|-------|
-| [`thevum` MEMORY](../knowing.md#dated-channel) | **`-`** only | A |
-| [`thugom` LIVE](../knowing.md#dated-channel) | no offset | A |
-| [`thubem` PATTERN](../knowing.md#dated-channel) | **`-`** or **`+`** | A |
+| [`thevum` MEMORY](../universality.md#dated-channel) | **`-`** only | A |
+| [`thugom` LIVE](../universality.md#dated-channel) | no offset | A |
+| [`thubem` PATTERN](../universality.md#dated-channel) | **`-`** or **`+`** | A |
 
-What a `bl-` word after a channel does: a person or thing is the [source](../knowing.md#source); a time measure is the [offset](../knowing.md#dated-channel); `blarl` takes only CLUES, PATTERN and DEDUCED. A cause or condition word may not come before the channel.
+What a `bl-` word after a channel does: a person or thing is the [source](../evidentiality.md#source); a time measure is the [offset](../universality.md#dated-channel); `blarl` takes only CLUES, PATTERN and DEDUCED. A cause or condition word may not come before the channel.
 
 <!-- cheat-sheet: knowing-intending -->
 | You say | Clause after `blarl` is | Form | Stage |
 |---------|------------------------|------|-------|
-| what made it happen | the cause | [`thahum blarl`](../knowing.md#evidence-clause) | I |
-| what must hold for it | the condition | [`thohom blarl`](../knowing.md#evidence-clause) / `thebom blarl` / `thehem blarl` | I |
-| how you know it happened | your grounds | [`theyem blarl`](../knowing.md#evidence-clause) / `thubem blarl` / `thanam blarl` | I |
+| what made it happen | the cause | [`thahum blarl`](../evidentiality.md#evidence-clause) | I |
+| what must hold for it | the condition | [`thohom blarl`](../evidentiality.md#evidence-clause) / `thebom blarl` / `thehem blarl` | I |
+| how you know it happened | your grounds | [`theyem blarl`](../evidentiality.md#evidence-clause) / `thubem blarl` / `thanam blarl` | I |
 
 ### Deduction {#deduction}
 
@@ -79,10 +79,10 @@ What you assert depends on what sits before `blarl`: the channel alone asserts t
 <!-- cheat-sheet: knowing-intending -->
 | You claim | Form | You assert | Stage |
 |-----------|------|------------|-------|
-| *P, so Q* | Q [`thanam blarl`](../knowing.md#deduction) P | P and Q | I |
-| *Q follows from P* | Q [`thanam thohom blarl`](../knowing.md#deduction) P | only the link | I |
-| *P and Q come to the same thing* | Q [`thanam thehem blarl`](../knowing.md#deduction) P | only the link, both ways | I |
-| *P rules out Q* | Q denied with `vul`, then [`thanam thohom blarl`](../knowing.md#deduction) P | only that P and Q cannot both hold | I |
+| *P, so Q* | Q [`thanam blarl`](../evidentiality.md#deduction) P | P and Q | I |
+| *Q follows from P* | Q [`thanam thohom blarl`](../evidentiality.md#deduction) P | only the link | I |
+| *P and Q come to the same thing* | Q [`thanam thehem blarl`](../evidentiality.md#deduction) P | only the link, both ways | I |
+| *P rules out Q* | Q denied with `vul`, then [`thanam thohom blarl`](../evidentiality.md#deduction) P | only that P and Q cannot both hold | I |
 | *Q doesn't follow from P* | Q [`thanam thohom thul blarl`](../join-across-roles.md#stance-join-before-barl) P | that the link fails | I |
 
 ### Whose view {#holder}
@@ -91,22 +91,22 @@ Join the name to a channel, MAY, or NOTIONAL: keep the word's last letter and wr
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Holder on a channel](../knowing.md#holder) | `zolazun theyemuzozen velurul.` | *I gather Uzozen thinks Olazun left.* | I |
-| [Holder on REPORTED](../knowing.md#holder) | `zolazun thebamuzozen velurul.` | *I hear Uzozen thinks Olazun left.* | I |
-| [Holder on MAY](../knowing.md#holder) | `zolazun thomamuzozen velurul.` | *Maybe Uzozen thinks Olazun left.* | I |
+| [Holder on a channel](../evidentiality.md#holder) | `zolazun theyemuzozen velurul.` | *I gather Uzozen thinks Olazun left.* | I |
+| [Holder on REPORTED](../evidentiality.md#holder) | `zolazun thebamuzozen velurul.` | *I hear Uzozen thinks Olazun left.* | I |
+| [Holder on MAY](../evidentiality.md#holder) | `zolazun thomamuzozen velurul.` | *Maybe Uzozen thinks Olazun left.* | I |
 | [Holder on NOTIONAL](../notional-standing.md#notional) | `zolazun theyumuzozen velurul.` | *Imagine it as Uzozen sees it.* | I |
-| [Strength before the name](../knowing.md#holder) | `zolazun theyeluzozen velurul.` | *Strong clues say Uzozen thinks Olazun left.* | I |
-| [Shared history](../knowing.md#holder): MEMORY with the interlocutors | `zawan vebal hal thevumayan.` | *From what we both remember, you've never listened.* | I |
+| [Strength before the name](../evidentiality.md#holder) | `zolazun theyeluzozen velurul.` | *Strong clues say Uzozen thinks Olazun left.* | I |
+| [Shared history](../evidentiality.md#holder): MEMORY with the interlocutors | `zawan vebal hal thevumayan.` | *From what we both remember, you've never listened.* | I |
 
 ### Keeping a channel {#carry}
 
-A channel you name is your frame, and later claims of yours keep it. See [carrying a channel forward](../knowing.md#carry-forward).
+A channel you name is your frame, and later claims of yours keep it. See [carrying a channel forward](../evidentiality.md#carry-forward).
 
 | It keeps the frame | It ends the frame |
 |--------------------|-------------------|
-| [your later statements](../knowing.md#carry-forward) | [a new channel or a holder](../knowing.md#carry-forward) · [NOTIONAL](../notional-standing.md#notional) |
-| [a new topic, sentence linkers, asides](../knowing.md#carry-forward) | [`yal` written out](../knowing.md#carry-forward) |
-| [MAY](../knowing.md#carry-forward) · [MIRATIVE](../notional-standing.md#mirative) | [`xuvedam` *by the way*, or a goodbye](../knowing.md#carry-forward) |
+| [your later statements](../evidentiality.md#carry-forward) | [a new channel or a holder](../evidentiality.md#carry-forward) · [NOTIONAL](../notional-standing.md#notional) |
+| [a new topic, sentence linkers, asides](../evidentiality.md#carry-forward) | [`yal` written out](../evidentiality.md#carry-forward) |
+| [MAY](../evidentiality.md#carry-forward) · [MIRATIVE](../notional-standing.md#mirative) | [`xuvedam` *by the way*, or a goodbye](../evidentiality.md#carry-forward) |
 
 A question, command, request, or prohibition does not take the frame, and does not end it.
 
@@ -191,7 +191,7 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 | [Stacked: want, then plan](../ability.md#want-endings) | `zuwon thalel thagem vowurel.` | *I have long wanted to walk, and I plan to.* | I |
 | [Against my wishes](../ability.md#want-endings) | `zuzozen vowurel uem thalem.` | *Uzozen walks, against my wishes.* | I |
 | [Against someone's wishes](../ability.md#whose-intention) | `zolazun vezuvol uem theyemuzozen thalem.` | *Olazun sleeps, against Uzozen's wishes, as far as I can tell.* | I |
-| [Someone else's plan](../knowing.md#holder): a holder | `zuzozen thebamuzozen thagem vowurel.` | *I hear Uzozen plans to walk.* | I |
+| [Someone else's plan](../evidentiality.md#holder): a holder | `zuzozen thebamuzozen thagem vowurel.` | *I hear Uzozen plans to walk.* | I |
 | [Someone else's decision](../ability.md#whose-intention): a holder | `zuzozen theyemuzozen thogom vowurel.` | *I gather Uzozen has decided to walk, and can still change that.* | I |
 | [Plan, and when](../ability.md#predict-evidentiality) | `zuwon thagem blral vuhohol.` | *I plan to sit down later.* | I |
 | [Try, failing that](../ability.md#fallback): `xon` | `zuzozen howar vowurel xon zuzozer vezuyol.` | *Uzozen gives walking a try; failing that, Uzozen sings.* | I |
@@ -225,11 +225,11 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 
 | This | vs | That |
 |------|----|------|
-| `thomam` *could be* ([a guess, no reasons](../knowing.md#may)) | | `theyem` *from the clues* ([reasons you worked out](../knowing.md#evidentiality)) |
-| `thebam` *so they say* ([someone said it](../knowing.md#evidentiality)) | | `theyum` *imagine* ([a scene you make up](../notional-standing.md#notional-as-if-framing)) |
-| `theyel` *strong clues* ([how good your evidence is](../knowing.md#evidence-strength)) | | `thregel` *third-hand* ([how many hands](../knowing.md#hand-depth)) |
-| `thubem blral` *will, by the pattern* ([a forecast](../knowing.md#forecast)) | | `thagem` *I plan to* ([an intention](../intention.md#plan-predict)) |
+| `thomam` *could be* ([a guess, no reasons](../knowing.md#may)) | | `theyem` *from the clues* ([reasons you worked out](../evidentiality.md#evidentiality)) |
+| `thebam` *so they say* ([someone said it](../evidentiality.md#evidentiality)) | | `theyum` *imagine* ([a scene you make up](../notional-standing.md#notional-as-if-framing)) |
+| `theyel` *strong clues* ([how good your evidence is](../evidentiality.md#evidence-strength)) | | `thregel` *third-hand* ([how many hands](../evidentiality.md#hand-depth)) |
+| `thubem blral` *will, by the pattern* ([a forecast](../evidentiality.md#forecast)) | | `thagem` *I plan to* ([an intention](../intention.md#plan-predict)) |
 | `haram` *still in effect* ([the outcome stays](../notional-standing.md#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](../notional-standing.md#phasal)) |
 | `thogom` *I've decided* ([how open the choice is, no time](../ability.md#decision)) | | `thagem` *I plan* ([how worked out, still ahead](../intention.md#plan-predict)) |
 | `howam` *tries* ([acts, outcome open](../ability.md#try)) | | `vezuyoxal` *can sing* ([a claim about ability](../ability.md#can)) |
-| `thalem` *I want* ([your own wanting](../ability.md#want)) | | `thebamuzozen thagem` *I hear Uzozen plans* ([someone else's plan](../knowing.md#holder)) |
+| `thalem` *I want* ([your own wanting](../ability.md#want)) | | `thebamuzozen thagem` *I hear Uzozen plans* ([someone else's plan](../evidentiality.md#holder)) |

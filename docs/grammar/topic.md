@@ -14,7 +14,7 @@ A topic is set only by an `/x/` word at the start of a sentence: `/x/`, then the
 | `xuzozen` | introduce a person | *now, about Uzozen* |
 | `xudozol` | introduce a kind | *now, about a dog* |
 | `xuzozer` | return to an earlier topic: whole stem + **-r** | *back to Uzozen* |
-| `xuvewem` / `xuvedam` | clear the topic ([linkers](dependents.md#sentence-linkers)) | *next* / *by the way* |
+| `xuvewem` / `xuvedam` | clear the topic ([linkers](sentence-linkers.md#sentence-linkers)) | *next* / *by the way* |
 
 1. **No topic at the start.** A conversation opens with none.
 2. **Introduce.** An `/x/` word on **-l**, **-m**, or **-n** that is not one of the six sentence linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xudozol` *now, about a dog*). Any [compound](compounds.md) works the same way: a hyphenated name (`xuzozexolazun`), a noun pair (`xubedaxuyudal` *now, about peanut butter*), or a [role compound](roles.md#role-compounds) (`xwazuduyel` *now, about people who teach*; `xwazuduyer` returns to it). It takes the same adjectives and hooks as any noun (`xudozol em buzozen` *now, about Uzozen's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it.
@@ -33,7 +33,7 @@ A topic is set only by an `/x/` word at the start of a sentence: `/x/`, then the
 
 **Every return is explicit.** There is one topic, not a stack. Coming back from a side topic, or from a new frame, means naming the old topic again with `xuzozer`.
 
-A topic-setting `/x/` word needs no voice of its own: the `/x/` word itself tells the listener that the subject changed. The speech move is unchanged, so the listener hears a new subject, not a new act ([periods](dependents.md#orthography-and-prosody-periods)).
+A topic-setting `/x/` word needs no voice of its own: the `/x/` word itself tells the listener that the subject changed. The speech move is unchanged, so the listener hears a new subject, not a new act ([periods](sentence-linkers.md#orthography-and-prosody-periods)).
 
 ### The topic pronoun {#topic-pronoun}
 
@@ -105,7 +105,7 @@ Both set the topic. The difference is the ordinary difference between **-r** and
 | `xudozol` | **a** dog, new to the talk | *now, about a dog* |
 | `xudozor` | **the** dog from before | *back to the dog* |
 
-For names, the two pick the same person: choose by what the listener should hear, something new or a way back. For kinds, only the return reaches the earlier thing. A return that resumes a [sentence linker](dependents.md#sentence-linkers) (`xaher` after `xahem`) is only that linker again, and sets no topic.
+For names, the two pick the same person: choose by what the listener should hear, something new or a way back. For kinds, only the return reaches the earlier thing. A return that resumes a [sentence linker](sentence-linkers.md#sentence-linkers) (`xaher` after `xahem`) is only that linker again, and sets no topic.
 
 A return makes no claim by itself, but it does set the topic, so leaving it out changes who `zalon` is, or leaves `zalon` with no topic, which is not a sentence.
 
@@ -305,4 +305,4 @@ A dropped subject is never the topic: write **`zalon`** when the topic is the on
 ## See also
 
 - Pointing back: [pronouns.md](pronouns.md)
-- Sentence linkers: [dependents.md](dependents.md#sentence-linkers)
+- Sentence linkers: [dependents.md](sentence-linkers.md#sentence-linkers)

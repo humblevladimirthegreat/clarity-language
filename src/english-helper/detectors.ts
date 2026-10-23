@@ -90,7 +90,7 @@ export const SAKE_ENDINGS: Readonly<Record<string, { l: string[]; r: string[] }>
 };
 
 /** A listed compound reached from its parts, and a live `x` compound built from them. */
-export const COMPOUND_LINKS = { listed: "compounds.md#lexical-compounds", live: "compounds.md#ordinary-compound-order" } as const;
+export const COMPOUND_LINKS = { listed: "compounds.md#lexical-compounds", live: "compound-families.md#ordinary-compound-order" } as const;
 
 const THIRD_PERSON = new Set(["he", "she", "it", "they", "him", "her", "them", "his", "its", "their", "theirs", "hers"]);
 
@@ -134,7 +134,7 @@ export const WORD_DETECTORS: readonly WordDetector[] = [
   { id: "possessive-pronoun", label: (t) => `possessive *${t.normal}*`, links: ["english.md#of"], test: (t) => !!t.possessive && t.cls === "pronoun" },
   { id: "proper-name", label: () => "proper name", links: ["proper-names.md#proper-name--n"], test: (t) => !!t.proper },
   { id: "plural", label: () => "plural noun", links: ["plurality.md#associative"], test: (t) => t.cls === "noun" && !!t.plural && !t.proper },
-  { id: "relation-prefix", label: (t) => `*${t.normal}*: a hook prefix (the hook's vowels, \`x\` or \`mx\`, then the noun's root)`, links: ["english.md#relation-prefixes", "hooks.md#hook-prefixes"], test: (t) => relationWord(t.normal) },
+  { id: "relation-prefix", label: (t) => `*${t.normal}*: a hook prefix (the hook's vowels, \`x\` or \`mx\`, then the noun's root)`, links: ["english.md#relation-prefixes", "hook-compounds.md#hook-prefixes"], test: (t) => relationWord(t.normal) },
   { id: "number-prefix", label: (t) => `*${t.normal}*: a numeric prefix (the number body, \`x\` or \`mx\`, then the noun's root)`, links: ["english.md#number-prefixes", "numeric-derivation.md#numeric-derivation"], test: (t) => numberPrefixWord(t.normal) },
   { id: "participle", label: (t) => (t.shape === "er" ? "doer noun (*-er*, *-or*)" : `*-${t.shape}* word used as ${t.cls === "noun" ? "a noun" : "an adjective"}`), links: ["english.md#participles"], test: (t) => !!t.shape },
 ];
@@ -156,19 +156,19 @@ export const SAME_ROLE_HOOKS: Readonly<Record<string, string>> = {
 /** Sections for each shape a hook takes in English, keyed by what comes before or after it. */
 export const HOOK_LINKS = {
   /** A preposition + noun with no table row: an extra-noun hook. */
-  extraNoun: ["hooks.md#extra-noun", "hooks.md#extra-noun-intermediate", "relations.md#locative-relations"],
+  extraNoun: ["hooks.md#extra-noun", "ending-grids.md#extra-noun-intermediate", "of-relations.md#locative-relations"],
   sameRole: ["english.md#same-slot"],
   /** A hook right after another landmark describes that landmark. */
-  landmark: ["hooks.md#extra-noun-intermediate"],
+  landmark: ["ending-grids.md#extra-noun-intermediate"],
   /** A hook right after a subject or object can describe that noun. */
-  onNoun: ["relations.md#locative-relations"],
-  fromTo: ["numbers-applied.md#time", "relations.md#locative-relations"],
+  onNoun: ["of-relations.md#locative-relations"],
+  fromTo: ["numbers-applied.md#time", "of-relations.md#locative-relations"],
   resume: ["discourse-hooks.md#hook-resume"],
   blank: ["fill-ask-roles.md#where", "discourse-hooks.md#place-indefinites"],
   /** *everyone at the house*: the hook bounds the join's set. */
-  hookedJoin: ["hooks.md#hooked-joins"],
+  hookedJoin: ["hook-compounds.md#hooked-joins"],
   /** *never since …*, *always until …*: the hook bounds a restrictor's times. */
-  hookedJoinTime: ["hooks.md#hooked-joins-time"],
+  hookedJoinTime: ["hook-compounds.md#hooked-joins-time"],
 } as const;
 
 /** English join words a hook can bound (*everyone at …*, *something for …*): a hooked join. */
@@ -183,7 +183,7 @@ const BOUNDED_JOIN: Readonly<Record<string, string>> = {
   anyone: "or", anybody: "or", anything: "or",
   nobody: "al", nothing: "al",
 };
-/** The extra-noun hook a preposition names, as written before the seam (`m` for a frame; hooks.md#extra-noun-intermediate). */
+/** The extra-noun hook a preposition names, as written before the seam (`m` for a frame; ending-grids.md#extra-noun-intermediate). */
 const SEAM_HOOK: Readonly<Record<string, string>> = {
   in: "a", inside: "a", amid: "am", among: "am", on: "ao", over: "aom", at: "o", near: "om", by: "om",
   toward: "oe", towards: "oe", from: "u", "away from": "um", "out of": "ua", through: "uo",
@@ -192,7 +192,7 @@ const SEAM_HOOK: Readonly<Record<string, string>> = {
 
 /** The bare restrictor each English time word spells (restrictors.md). */
 const BOUNDED_RESTRICTOR: Readonly<Record<string, string>> = { never: "al", always: "ual", sometimes: "ar" };
-/** The time hook a preposition names on an `/h/` hooked join (hooks.md#hooked-joins-time). */
+/** The time hook a preposition names on an `/h/` hooked join (hook-compounds.md#hooked-joins-time). */
 const TIME_SEAM_HOOK: Readonly<Record<string, string>> = { since: "u", until: "oe", till: "oe", during: "a", around: "om", at: "o" };
 
 /** A closed join with its open twin (`zoxual` / `zoxuam`), or the one form. */

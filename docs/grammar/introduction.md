@@ -47,7 +47,7 @@ Grammar pages split their material into **Beginner**, **Intermediate**, and **Ad
 
 Follow the **Agebon Lessons** in the site sidebar. Read each page's Beginner section in that order, then start again from the top for Intermediate, and once more for Advanced.
 
-Start with [phonology.md](phonology.md#beginner) for letters and word edges, then [word-endings.md](word-endings.md) for citation endings (by then you can already say your name as a [greeting](word-endings.md#greeting)), then [clause.md](clause.md#beginner) for clause shape, [speech-moves.md](speech-moves.md) for turns, and [dependents.md](dependents.md#beginner).
+Start with [phonology.md](phonology.md) for letters and word edges, then [word-endings.md](word-endings.md) for citation endings (by then you can already say your name as a [greeting](word-endings.md#greeting)), then [clause.md](clause.md) for clause shape, [speech-moves.md](speech-moves.md) for turns, and [dependents.md](dependents.md).
 
 When you finish a level, take its review under **Level reviews** in the sidebar ([Beginner](review.md#beginner), [Intermediate](review.md#intermediate), [Advanced](review.md#advanced)). Each review has one item per page at that level, and each answer links back to the section it tests.
 

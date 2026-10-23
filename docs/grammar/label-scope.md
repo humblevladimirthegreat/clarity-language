@@ -160,7 +160,7 @@ A role word takes no **`th`** seam after its stem: its scope is written once, at
 
 #### Stacked scope {#scope-stacks}
 
-The four scope vowels also combine in pairs, the same pairs that [joins](joins.md#beginner) and [hooks](hooks.md#extra-noun) use. A pair that starts with **`u`** reads like a join's *everything but*: **`u`** is every scene, and the second vowel is the one set aside (*every time but this one*, *with everyone but Olazun*, *as themselves, not in the role*). The other pairs read like the extra-noun hooks: **`ao`** *over*, **`ae`** *using*, **`oe`** *toward*. Do not read them as the first vowel's meaning followed by the second's.
+The four scope vowels also combine in pairs, the same pairs that [joins](joins.md) and [hooks](hooks.md#extra-noun) use. A pair that starts with **`u`** reads like a join's *everything but*: **`u`** is every scene, and the second vowel is the one set aside (*every time but this one*, *with everyone but Olazun*, *as themselves, not in the role*). The other pairs read like the extra-noun hooks: **`ao`** *over*, **`ae`** *using*, **`oe`** *toward*. Do not read them as the first vowel's meaning followed by the second's.
 
 <!-- cheat-sheet: word-shape-clause -->
 | Agebon | Use | English | Cue |

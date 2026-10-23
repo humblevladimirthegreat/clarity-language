@@ -415,7 +415,7 @@ function hostOverlay(word: MorphWord, tables: ClassifyTables): { hostOverlay?: L
   return row && (row.kind === "sake" || row.kind === "ability") ? { hostOverlay: overlayFromRow(row) } : {};
 }
 
-/** Channels whose hosted `/b/` may be a clause: the grounds, by clues, by pattern, or the premises (knowing.md#evidence-clause). */
+/** Channels whose hosted `/b/` may be a clause: the grounds, by clues, by pattern, or the premises (evidentiality.md#evidence-clause). */
 const GROUNDS_CHANNELS = new Set(["CLUES", "PATTERN", "DEDUCED"]);
 
 /** A CLUES, PATTERN or DEDUCED `/th/` channel, with or without a holder seam (`thevem`, `thabelazawan`). */
@@ -445,7 +445,7 @@ export function isClauseAdverb(word: LexWord): boolean {
   return !!word.overlay && CLAUSE_ADVERB_KINDS.has(word.overlay.kind);
 }
 
-/** Closed `/th/` or clause-adverb kinds a rank fence takes as its bar: each sets a value to rank against (comparatives.md#bars). */
+/** Closed `/th/` or clause-adverb kinds a rank fence takes as its bar: each sets a value to rank against (comparative-arity.md#bars). */
 const BAR_OVERLAY_KINDS = new Set(["evidential", "former_climate", "notional", "plan", "want", "ability"]);
 
 /**
@@ -538,7 +538,7 @@ function tailLateral(word: MorphWord, tables: ClassifyTables): MorphWord | undef
   return { ...word, family: { kind: "x", xFamily: "lateral", leftRoots: family.leftRoots, rightRoots: [anchor] } };
 }
 
-/** Overlay kinds whose `/th/` word can take a holder after its grade letter (knowing.md#holder). */
+/** Overlay kinds whose `/th/` word can take a holder after its grade letter (evidentiality.md#holder). */
 export const HOLDER_HOST_KINDS = new Set(["evidential", "may", "notional"]);
 
 /**
@@ -586,7 +586,7 @@ export function classifiedShape(word: MorphWord, tables: ClassifyTables): MorphW
 }
 
 /**
- * A hook prefix whose stem is a hook-compound citation (`guexowurelul` *anti-leaving*, hooks.md#hook-prefixes). The word
+ * A hook prefix whose stem is a hook-compound citation (`guexowurelul` *anti-leaving*, hook-compounds.md#hook-prefixes). The word
  * parser reads the citation as one long root; split it the way a plain hook compound splits.
  */
 function hookPrefixOnHookCompound(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
@@ -776,7 +776,7 @@ export function missingAbstractSense(word: MorphWord, tables: ClassifyTables): s
 }
 
 /**
- * The mention marker (spans.md#mention): a `gl-` word right before a written span, spelled as the 🔤 root
+ * The mention marker (span-mention.md#mention): a `gl-` word right before a written span, spelled as the 🔤 root
  * on **-l** (a word or phrase) or **-n** (a name-string). Anywhere else the same spelling is the ordinary adjective.
  */
 export function markMentions(words: LexWord[], tables: ClassifyTables): LexWord[] {

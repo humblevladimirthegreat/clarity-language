@@ -61,14 +61,14 @@ export const VContEnd = wordToken("VContEnd", [VCont]);
 export const VContMore = wordToken("VContMore", [VCont]);
 export const JoinVEnd = wordToken("JoinVEnd", [JoinV]);
 export const JoinVMore = wordToken("JoinVMore", [JoinV]);
-/** A `/ɡ/` word: a plain adjective describes what is before it; a `gl-` adjective leans on the noun or call after it (clause.md#left-bound-adjectives). */
+/** A `/ɡ/` word: a plain adjective describes what is before it; a `gl-` adjective leans on the noun or call after it (left-bound.md#left-bound-adjectives). */
 export const G = wordToken("G");
 export const GPlain = wordToken("GPlain", [G]);
-/** A plain adjective a noun list's join may share (joins.md#shared-after-the-join): not one that starts a respectively list. */
+/** A plain adjective a noun list's join may share (rank-joins.md#shared-after-the-join): not one that starts a respectively list. */
 export const GShareable = wordToken("GShareable");
 /**
  * A plain adjective by the run it sits in (set by `markContext`): one that a `/ɡ/` join closes (`GInList`), one that
- * `wazem` and a `/ɡ/` join close (`GInRespList`, joins.md#respectively), or any other (`GAdj`). Where a plain adjective
+ * `wazem` and a `/ɡ/` join close (`GInRespList`, rank-joins.md#respectively), or any other (`GAdj`). Where a plain adjective
  * describes the word before it, it does so whatever its run.
  */
 export const GAdj = wordToken("GAdj", [GPlain, GShareable]);
@@ -82,11 +82,11 @@ export const GGl = wordToken("GGl", [G]);
 export const GL_TARGETS = ["Z", "D", "B", "Turn", "Citation", "Linker", "Other"] as const;
 export type GlTarget = (typeof GL_TARGETS)[number];
 export const GGlBefore = Object.fromEntries(GL_TARGETS.map((target) => [target, wordToken(`GGl${target}`, [GGl])])) as Record<GlTarget, AgebonTokenType>;
-/** A `/w/` word. An as-of `/w/` opens a pair with the `/b/` after it (relations.md#as-of); every other `/w/` grades what follows. */
+/** A `/w/` word. An as-of `/w/` opens a pair with the `/b/` after it (as-of.md#as-of); every other `/w/` grades what follows. */
 export const W = wordToken("W");
 export const WPlain = wordToken("WPlain", [W]);
 export const WAsOf = wordToken("WAsOf", [W]);
-/** Respectively `wazem`: right before a join word, it pairs the list item by item with an earlier one (joins.md#respectively). */
+/** Respectively `wazem`: right before a join word, it pairs the list item by item with an earlier one (rank-joins.md#respectively). */
 export const WPairing = wordToken("WPairing", [W]);
 /**
  * What a `/w/` word grades: the word after its `/w/` run (past an as-of pair's `/b/`). Each `/w/` gets one leaf type
@@ -152,7 +152,7 @@ export const WLeaf = Object.fromEntries(
     ),
   ]),
 ) as Record<WKind, Record<WTarget, AgebonTokenType>>;
-/** An `/h/` adverb or a `/th/` stance word. A plain adjective after either host's `/b/` describes that noun (clause.md#complex-chaining). */
+/** An `/h/` adverb or a `/th/` stance word. A plain adjective after either host's `/b/` describes that noun (left-bound.md#complex-chaining). */
 export const H = wordToken("H");
 export const HPlain = wordToken("HPlain", [H]);
 export const HTh = wordToken("HTh", [H]);
@@ -183,15 +183,15 @@ export const HSharedV = wordToken("HSharedV");
 /**
  * `barl` that fills a `/th/` host from further right, so it is never a `/b/` stand-in of its own: after a stance join
  * that closes a pole with no `/b/` (join-across-roles.md#stance-join-before-barl), or after a channel's offset
- * (knowing.md#evidence-clause). Set by `markContext`.
+ * (evidentiality.md#evidence-clause). Set by `markContext`.
  */
 export const LateOdo = wordToken("LateOdo");
 /** A cardinal `/ɡ/` number right after a hosted `/b/`: that unit's amount (numbers-applied.md#measure-phrases). Set by `markContext`. */
 export const Amount = wordToken("Amount");
-/** A signed `/h/` number right after an equative's shared scale: the factor (comparatives.md#factor). Set by `markContext`. */
+/** A signed `/h/` number right after an equative's shared scale: the factor (comparative-arity.md#factor). Set by `markContext`. */
 export const Factor = wordToken("Factor");
 /**
- * The scale a rank, equative or sequence noun join shares (comparatives.md#manner-scale): an `/h/` or `/th/` word right
+ * The scale a rank, equative or sequence noun join shares (comparative-arity.md#manner-scale): an `/h/` or `/th/` word right
  * after the join (past any `/w/`), or a digitless `/b/` number right after it. Set by `markContext`; neither is an
  * adverb or a noun of its own there.
  */
@@ -201,7 +201,7 @@ export const HFrame = wordToken("HFrame");
 /** WANT, PLAN or DECISION right after a holder frame: whose wish, plan or choice the event goes against, with how you know it (ability.md#whose-intention). Set by `markContext`. */
 export const HFrameHeld = wordToken("HFrameHeld");
 export const BScale = wordToken("BScale");
-/** A `/th/` stance word that is a rank fence's bar: it runs up to the list's rank join (comparatives.md#bars). Set by `markContext`. */
+/** A `/th/` stance word that is a rank fence's bar: it runs up to the list's rank join (comparative-arity.md#bars). Set by `markContext`. */
 export const Bar = wordToken("Bar");
 export const BarPlain = wordToken("BarPlain", [Bar]);
 /** The first bar right after a closed `ua` fence: the whole fence is its ranked item (comparatives.md § every bar). Set by `markContext`. */
@@ -240,7 +240,7 @@ export const HookPlain = wordToken("HookPlain", [Hook]);
 export const HookHosting = wordToken("HookHosting", [Hook]);
 /**
  * A hook and its `/b/` right before a noun list's join word (or its bar), after a noun of that list's slot: it belongs
- * to that last item (joins.md#shared-after-the-join), so no hook unit takes it. Set by `markContext`.
+ * to that last item (rank-joins.md#shared-after-the-join), so no hook unit takes it. Set by `markContext`.
  */
 export const ItemHook = wordToken("ItemHook", [Hook]);
 /** A written span as a noun-phrase head, by slot. A span with no slot letter keeps the bare category, which no rule takes. */

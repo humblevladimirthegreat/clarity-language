@@ -179,7 +179,7 @@ describe("parseWord — spans and writing atoms", () => {
 });
 
 describe("parseWord — capitals", () => {
-  it("reads native capitals as lowercase (phonology.md#beginner)", () => {
+  it("reads native capitals as lowercase (phonology.md#vowels)", () => {
     assert.deepEqual(parseWord("ZAzawan"), parseWord("zazawan"));
     assert.deepEqual(parseWord("D[Azawan]"), parseWord("d[azawan]"));
   });
@@ -317,7 +317,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     }
   });
 
-  it("reads ao as one stack in a feeling word (phonology.md#phonotactics)", () => {
+  it("reads ao as one stack in a feeling word (phonotactics.md#phonotactics)", () => {
     for (const raw of ["wuwathuraor", "thuwathuraor"]) {
       const word = parseOk(raw);
       assert.ok(word.family.kind === "x" && word.family.xFamily === "sake", raw);
@@ -329,7 +329,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     for (const locus of ["a", "o", "uo", "ae"]) assert.equal((parseOk(`wuwathur${locus}r`).family as { locus?: string }).locus, locus);
   });
 
-  it("parses hooked joins: hook, optional m / r, x, join (hooks.md#hooked-joins)", () => {
+  it("parses hooked joins: hook, optional m / r, x, join (hook-compounds.md#hooked-joins)", () => {
     const cases: [string, string, string, string, boolean][] = [
       ["zoxual", "ol", "ua", "l", false],
       ["daoxar", "aol", "a", "r", false],
@@ -353,7 +353,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     }
   });
 
-  it("parses hook prefixes on x and mx (hooks.md#hook-prefixes)", () => {
+  it("parses hook prefixes on x and mx (hook-compounds.md#hook-prefixes)", () => {
     const cases: [string, string, string[]][] = [
       ["guexavuvul", "uel", ["avuvu"]],
       ["daexarayel", "ael", ["araye"]],

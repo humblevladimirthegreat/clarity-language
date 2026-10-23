@@ -78,7 +78,7 @@ function phonesOf(raw: string): Phone[] {
 export function syllabify(phones: Phone[]): Syllable[] {
   const syllables: Syllable[] = [];
   let i = 0;
-  // A hosted number or tag (`blral`, `blwar`): `l` before `r` / `w` is a beat of its own (phonology.md#syllabic-l).
+  // A hosted number or tag (`blral`, `blwar`): `l` before `r` / `w` is a beat of its own (phonotactics.md#syllabic-l).
   if (phones[0]?.letter === "b" && phones[1]?.letter === "l" && (phones[2]?.letter === "r" || phones[2]?.letter === "w")) {
     syllables.push(syllableFrom(phones.slice(0, 2)));
     i = 2;

@@ -24,7 +24,7 @@ Here is a common ruminating thought in English: *I failed. I'm no good at this, 
 
 That is five words, and three of them make you choose something English lets you skip. Each choice is a question about the thought itself, and answering it honestly is what turned *never* into *yet*:
 
-- `thabor` says how you know: a gut sense, and only a faint one. Other words say you saw it, remember it, worked it out from clues, or were told, and other endings say the hunch is strong. Said once, it covers the next sentence too ([evidentiality](knowing.md#evidentiality)).
+- `thabor` says how you know: a gut sense, and only a faint one. Other words say you saw it, remember it, worked it out from clues, or were told, and other endings say the hunch is strong. Said once, it covers the next sentence too ([evidentiality](evidentiality.md#evidentiality)).
 - `guwathum` names what the failure costs: competence, one of the [sakes](sakes.md) (things that are good for a person). Its ending says the cost can change with effort or circumstance; other endings say it is lasting, or only for now. Other sakes, such as relatedness or purpose, name a different cost, and swapping the *unmet* vowel for the *met* one names a gain instead. The sake word also makes the failure yours, with no separate word for *my*.
 - `veverexom` is *can't succeed*, but only *yet*: it may still change. Other vowels say *right now* (you usually can) or *never* ([ability](ability.md#ability)).
 
@@ -76,7 +76,7 @@ English *has done* and *used to* mix two questions: **when** something happened,
 
 [RESIDUE](notional-standing.md#residue) says the result of a past event still counts now (a debt still unpaid, a door still shut). [FORMER](notional-standing.md#former-climate) says a pattern was usual but you are **not** claiming it as how things are now (cue: usual weather vs today’s report). Neither word is a past tense: each can combine with what you see now, what you remember, or a forecast.
 
-Because residue is marked, an event you mention without it counts as closed, so carrying a past event forward is a choice rather than a default, and rumination stays optional. Marking a former pattern lets *I was always this way* describe the past without claiming the present. [As-of](relations.md#as-of) names the moment that leftovers and patterns are measured from (*as of Friday*), so you can weigh an old situation by its own date instead of against today. For English *if they had … they would*, the as-of moment is a placeholder you do not claim is real, which is not the same as pretending.
+Because residue is marked, an event you mention without it counts as closed, so carrying a past event forward is a choice rather than a default, and rumination stays optional. Marking a former pattern lets *I was always this way* describe the past without claiming the present. [As-of](as-of.md#as-of) names the moment that leftovers and patterns are measured from (*as of Friday*), so you can weigh an old situation by its own date instead of against today. For English *if they had … they would*, the as-of moment is a placeholder you do not claim is real, which is not the same as pretending.
 
 #### Treating a feeling as a label {#trap-feeling}
 
@@ -149,11 +149,11 @@ A guess, a rumor, a hazy memory, or a wish gets treated as settled fact, and a f
 
 It is easy to treat a *could be* that keeps looping in your head as settled fact, and to lump memory, hearsay, gut feel, and *maybe they left* together as if they were equally good grounds.
 
-[Evidentiality](knowing.md#evidentiality) lets a claim about the world name **how you know**: a live look, memory, a pattern, clues, a report, or a gut sense. **MEMORY** is recalling a scene from earlier, and memory can be wrong. A live look (**LIVE**) is sensing it while it is still in view. Name the channel once and it carries over your next claims, so a whole story can rest visibly on one *so they say*.
+[Evidentiality](evidentiality.md#evidentiality) lets a claim about the world name **how you know**: a live look, memory, a pattern, clues, a report, or a gut sense. **MEMORY** is recalling a scene from earlier, and memory can be wrong. A live look (**LIVE**) is sensing it while it is still in view. Name the channel once and it carries over your next claims, so a whole story can rest visibly on one *so they say*.
 
-The [ending](knowing.md#evidence-strength) on that evidence word says how strong the evidence is (a vivid memory or a hazy one, a reliable source or a rumor), separately from how likely the claim is. Marking how you know helps you catch overconfidence and hearsay before a claim hardens into settled fact.
+The [ending](evidentiality.md#evidence-strength) on that evidence word says how strong the evidence is (a vivid memory or a hazy one, a reliable source or a rumor), separately from how likely the claim is. Marking how you know helps you catch overconfidence and hearsay before a claim hardens into settled fact.
 
-A [deduction](knowing.md#deduction) is its own channel, apart from strong clues: it says the claim **must** hold if its premises do, and its ending says how far you checked the steps. *It obviously follows* is easy to say about a conclusion the clues only make likely; keeping the two apart, and marking whether you grant the premises at all, helps you catch a leap dressed as a proof.
+A [deduction](evidentiality.md#deduction) is its own channel, apart from strong clues: it says the claim **must** hold if its premises do, and its ending says how far you checked the steps. *It obviously follows* is easy to say about a conclusion the clues only make likely; keeping the two apart, and marking whether you grant the premises at all, helps you catch a leap dressed as a proof.
 
 In English: [Claritish: How sure are you?](claritish/could-be.md) and [How do you know?](claritish/how-you-know.md).
 
@@ -161,7 +161,7 @@ In English: [Claritish: How sure are you?](claritish/could-be.md) and [How do yo
 
 English *always* and *never* sound absolute even when you mean *usually*, and they do not say how many cases they rest on.
 
-A [general claim](knowing.md#universality) says in its ending whether it allows exceptions: closed *always* (`hual`) allows none, and open *always* (`huam`) leaves them open, like *usually* or *as a rule*. A PATTERN evidence word says how much the claim rests on, from a well-established pattern (`thubel`) to only a few cases (`thuber`).
+A [general claim](universality.md#universality) says in its ending whether it allows exceptions: closed *always* (`hual`) allows none, and open *always* (`huam`) leaves them open, like *usually* or *as a rule*. A PATTERN evidence word says how much the claim rests on, from a well-established pattern (`thubel`) to only a few cases (`thuber`).
 
 Saying *usually* when you mean it, and *from a few cases* when that is all you have, helps you catch overgeneralizing before one bad day becomes *it always goes wrong*.
 
@@ -193,7 +193,7 @@ Saying whether a list is open or closed helps you notice false dichotomies, and 
 
 Work talk often freezes on *the* problem or *the* solution, or ranks options against a standard nobody has said out loud.
 
-Prefer numbered alternatives (ordinary nouns plus an [ordinal](numbers.md#ordinals), like *solution 2*) so candidates stay plural and revisable. Reframe the same situation with softer wording rather than inventing a second candidate. A comparison like *worse than…* names its [bar](comparatives.md#bars), the standard it measures against (*than usual*, *than I expected*, *than you demand*), so the standard stays visible, including when it is only your own expectation.
+Prefer numbered alternatives (ordinary nouns plus an [ordinal](numbers.md#ordinals), like *solution 2*) so candidates stay plural and revisable. Reframe the same situation with softer wording rather than inventing a second candidate. A comparison like *worse than…* names its [bar](comparative-arity.md#bars), the standard it measures against (*than usual*, *than I expected*, *than you demand*), so the standard stays visible, including when it is only your own expectation.
 
 Numbering candidates, rewording, and naming the bar help you keep choices and standards revisable instead of freezing on a single framing or a hidden standard.
 
@@ -221,9 +221,9 @@ In English: [Claritish: Allowed, required, agreed](claritish/allowed-required-ag
 
 English *will* mixes plan and prediction, and *I want to* can sound like a promise. It is easy to talk as if the future were already known, and a confident prediction can fuel anxiety or overconfidence. A pick, meanwhile, often sounds more locked than it is.
 
-Agebon splits them: [want](ability.md#want) for what you wish for, without meaning to do it yet; [PLAN](intention.md#plan-predict) for what you mean to do; [DECISION](ability.md#decision) for how revisable a pick is; and a [forecast](knowing.md#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `blral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
+Agebon splits them: [want](ability.md#want) for what you wish for, without meaning to do it yet; [PLAN](intention.md#plan-predict) for what you mean to do; [DECISION](ability.md#decision) for how revisable a pick is; and a [forecast](evidentiality.md#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `blral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
 
-Wants, plans, and decisions all live in someone's mind, so with nothing else marked they are yours; someone else's want, plan, or decision takes a [holder](knowing.md#holder) that says how you know it.
+Wants, plans, and decisions all live in someone's mind, so with nothing else marked they are yours; someone else's want, plan, or decision takes a [holder](evidentiality.md#holder) that says how you know it.
 
 Splitting these helps you hold a want without owing it to anyone, avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and keep a revisable pick from sounding locked forever. Marking how you know someone else's intention keeps a guess about what they mean to do from passing as fact.
 
@@ -277,7 +277,7 @@ Marking an assumed yes as an assumption helps you check before acting, and marki
 
 English *hi* does not say whether you can stay a while, have only a few minutes, have one thing to ask, or are just passing by.
 
-A [greeting](word-endings.md#greeting) is your own name said as a sentence (`SELFn.`). Calling someone is a [vocative](speech-moves.md#vocative). A [conversation-length bid](compounds.md#conversation-length) adds one vowel to your name: open-ended, a few minutes, one thing to ask, or passing by. The other person can answer with their own bid; the **shorter** bid sets the limit for both of you. When you leave, the same form says whether you are leaving soon, about to leave, or leaving now. The vowel describes the conversation, not either person.
+A [greeting](word-endings.md#greeting) is your own name said as a sentence (`SELFn.`). Calling someone is a [vocative](speech-moves.md#vocative). A [conversation-length bid](compound-families.md#conversation-length) adds one vowel to your name: open-ended, a few minutes, one thing to ask, or passing by. The other person can answer with their own bid; the **shorter** bid sets the limit for both of you. When you leave, the same form says whether you are leaving soon, about to leave, or leaving now. The vowel describes the conversation, not either person.
 
 Marking the opening that way lets you agree on how long to talk, so saying hello never commits you to unlimited time.
 
@@ -287,11 +287,11 @@ Abstract ideas are hard to hold onto; without a concrete picture, the psychologi
 
 Many roots have an **abstract** sense beside a **concrete** one, so an idea you cannot see is tied to a familiar scene that already carries the caution. For example:
 
-- [Memory as fishing](knowing.md#evidentiality) ([a guess as fact](#trap-certainty)): cast into opaque water; you may pull up a fish or a **boot** (the memory can be wrong).
-- [Live look as attesting](knowing.md#live-vs-memory) ([a guess as fact](#trap-certainty)): you report what you see while the scene is still in view.
+- [Memory as fishing](evidentiality.md#evidentiality) ([a guess as fact](#trap-certainty)): cast into opaque water; you may pull up a fish or a **boot** (the memory can be wrong).
+- [Live look as attesting](evidentiality.md#live-vs-memory) ([a guess as fact](#trap-certainty)): you report what you see while the scene is still in view.
 - [Residue as unpaid debt](notional-standing.md#residue) ([a moment as identity](#trap-identity)): the result still counts, like a balance still owed; not a past tense.
 - [Former climate as an empty nest](notional-standing.md#former-climate) ([a moment as identity](#trap-identity)): the nesting season is over; a pattern that has ended, not a past tense.
-- [A pattern as paw-prints](knowing.md#universality) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
+- [A pattern as paw-prints](universality.md#universality) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
 - [*As if* as theater](notional-standing.md#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene; what really happened stays **offstage**.
 - [Mechanism as gears](iff-fault.md#cause) ([a wish as a law](#trap-wish-as-law)): you say *how* a result comes about, like gears meshing, not only that it follows.
 - [Affect as water](feelings-permission.md#emotion-compose) ([a feeling as a label](#trap-feeling)): surging, flowing, or still water (motion) plus where the feeling sits or points, instead of an opaque emotion label that hides the sake.
@@ -340,4 +340,4 @@ Even if the language does lose its potency over a century, a positive impact on 
 
 ## Next {#next}
 
-To try the ideas in English first, start with [Claritish](claritish/index.md). To go straight to the language, continue with [introduction.md](introduction.md) for the name, the grammar's design, and how to use these docs, then [phonology.md](phonology.md#beginner) for letters, [word-endings.md](word-endings.md) for citation endings, [clause.md](clause.md#beginner) for clause shape, [speech-moves.md](speech-moves.md) for turns, then [dependents.md](dependents.md#beginner). To ask questions or follow updates, join the community on [Reddit](https://www.reddit.com/r/ClarityLanguage) or [Discord](https://discord.gg/CAMGw2Akhc).
+To try the ideas in English first, start with [Claritish](claritish/index.md). To go straight to the language, continue with [introduction.md](introduction.md) for the name, the grammar's design, and how to use these docs, then [phonology.md](phonology.md) for letters, [word-endings.md](word-endings.md) for citation endings, [clause.md](clause.md) for clause shape, [speech-moves.md](speech-moves.md) for turns, then [dependents.md](dependents.md). To ask questions or follow updates, join the community on [Reddit](https://www.reddit.com/r/ClarityLanguage) or [Discord](https://discord.gg/CAMGw2Akhc).

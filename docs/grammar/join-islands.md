@@ -1,0 +1,216 @@
+---
+band: advanced
+---
+
+# Join islands and role grid {#join-islands-and-role-grid}
+
+### Scope islands {#scope-islands-join}
+
+A join takes every same-role item before it. When English groups a small list inside a bigger one of the same role (*Uzozen and (just water)*), wrap the small list and its join in **`{ … }`**, called a scope island. The join inside the island takes members only from between those marks. One island per clause; material outside needs its own outer join. An island holds at most one phrase and may close partway through it ([scope islands](span-mention.md#scope-islands)).
+
+| Agebon | English |
+|--------|---------|
+| `zuzozen { zowulal zal } zam` | *Uzozen and (just water)* |
+| `zuzozen { zal } zam` | *Uzozen and nothing* |
+| `{ zowulal zal }` | *just water* (alone in the slot) |
+
+> `zuzozen { zowulal zal } zam.`
+>
+> [z-Uzozen | SCOPE[z-water | z-and] | z-and.open]
+>
+> "Uzozen and (just water)."
+
+**Compare with:** an island limits only what a join or an `/h/` word covers.
+
+### Named phrase **`-n`**
+<a id="named-list"></a>
+<a id="named--conventional-ending-phrase-level-all-join-vowels"></a>
+
+When a list is a familiar set phrase (*Stop–Drop–Roll*), end its join with **-n** (under `/z/`, `/d/`, or `/b/`). The **-n** names the whole list as one title, the way it names a person ([titled phrases](proper-names.md#titled-phrases)). Members keep their usual endings unless a member is itself a name.
+
+> `zebodol zuyudal zan.`
+>
+> NAME[z-bread | z-butter | z-and]
+>
+> "bread and butter" (the familiar bundle)
+
+Standalone **…an** (no items) is *null* / *void*. Under `/ɡ/` `/h/`, **-n** forms join-derived relations; see [Join across roles](join-across-roles.md#join-relations).
+
+**Compare with:** clause **`xan`** is *and then*, not a named list.
+
+### Allowed joins by role letter {#allowed-joins-by-pos}
+<a id="phrase-reserved-forms"></a>
+
+A join has at most two vowels. Which endings it can take depends on its role letter:
+
+| Role | Join endings | Notes |
+|-------|----------------|-------|
+| `/z/` `/d/` `/b/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**), **-rx** | phrase lists; **-n** is a named package; **-rx** is an [unnamed group](joins.md#unspecified-member-r-phrase) |
+| `/w/` | none | not a phrase list: the only `/w/` before a join word is [`wubam`](rank-joins.md#respectively), with **-l** or **-m** |
+| `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](more-occasions.md#defined-core-full); **-n** forms are [join-relations](join-across-roles.md#join-relations) |
+| `/v/` | **-l** / **-m** / **-r**, each with **-x** | **-x** is one [shared act](collectives.md#verbs-v); parallel **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs) |
+| `/th/` | **-l** / **-m** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | [stance joins](join-across-roles.md#stance-joins) on stance words (*not because…*) |
+| `/x/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | between clauses, not after them ([clause joins](joins.md#clause-joins)); forms: [Join across roles](join-across-roles.md) |
+
+Word shape: [phonology](phonotactics.md#phonotactics).
+
+### Constraints
+
+These limits apply to every join.
+
+| Limit | Pattern |
+|-------|---------|
+| One slot per chain | one subject, object, plain `/b/` recipient, `/ɡ/` stack, or `/w/` / `/h/` / `/th/` unit; hosted `/b/` stays on its `/ɡ/`, `/h/`, or `/th/` |
+| Matching role letter | every item head and the join share the first letter |
+| One right-close per flat list | nest as [fence nesting](rank-joins.md#fence-nesting) |
+| Shared modifiers | only immediately after each join |
+| Phrase **-r** | only **…ar** / **…or** / **…er** / **…ur**, plus **-x** for a group on `/z/` `/d/` `/b/` |
+| Join **-x** | after **-r** on `/z/` `/d/` `/b/` (a group); after any ending on `/v/` (one shared act) |
+| Verb+object packages | verb-phrase `/v/`; full sentences use `/x/` ([forms](join-across-roles.md)) |
+| Revising one item | in-clause *including* / *rather* / *instead* / *except* are [hooks](hooks.md) |
+| Several manners on `/h/` `/w/` | juxtaposition (`hedurel halozul`) |
+
+**Compare with:** prefix-less **`al`** / **`am`** / … are [hooks](hooks.md). Under `/h/` `/w/`, the unit is a [restrictor](restrictors.md), not sibling *and*.
+
+*Because* / *if* use `/th/` plus `/b/` [**`blarl`**](dependents.md#poles). An `/h/` or `/th/` word between the items of a noun, adjective, or `/b/` list does not end the list. For how far an `/h/` reaches in a verb list, see [VP and clause forms](join-across-roles.md#vp-clause-forms). Each item of a clause join is a full clause.
+
+### Practice {#advanced-practice}
+
+Short drills for Advanced. Try each item before opening **Show answer**.
+
+**Setting:** a treaty table
+
+**New words:**
+
+| English | Agebon | Cue |
+|---------|--------|-----|
+| *dove* | `adozol` | 🕊️ |
+| *imprimatur* | `ezazom` | 🦭 from *seal*: the stamp of approval |
+
+**Review:**
+
+| English | Agebon |
+|---------|--------|
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *Ahelan* | `ahelan` |
+| *page* | `ebonel` |
+| *pen* | `abewel` |
+| *see* | `vawebol` |
+
+#### English → Agebon {#advanced-english-to-agebon}
+
+**1.** *a page or a pen* (the familiar set phrase)
+
+::: details Show answer
+`zebonel zabewel zon.`
+
+NAME[z-page | z-pen | z-or-exactly-one]
+:::
+
+**2.** *Uzozen and (just Ahelan)*
+
+::: details Show answer
+`zuzozen { zahelan zal } zam.`
+
+[z-Uzozen | SCOPE[z-Ahelan | z-and] | z-and.open]
+:::
+
+**3.** *null* / *void*
+
+::: details Show answer
+`zan.`
+
+NAME[z-and]
+:::
+
+**4.** *Olazun sees something other than the dove.*
+
+::: details Show answer
+`zolazun dadozol dur vawebol.`
+
+z-Olazun | [d-dove | d-something-else] | v-see
+:::
+
+#### Agebon → English {#advanced-agebon-to-english}
+
+**1.** `zoen.`
+
+::: details Show answer
+NAME[z-equal-rank]
+
+*It's a draw.* (the stock phrase)
+:::
+
+**2.** `zuzozen { zal } zam.`
+
+::: details Show answer
+[z-Uzozen | SCOPE[z-none] | z-and.open]
+
+*Uzozen and nothing*
+:::
+
+**3.** `zezazom zebonel zur.`
+
+::: details Show answer
+[z-imprimatur | z-page | z-something-else]
+
+*something other than the seal and the page*
+:::
+
+**4.** `zolazun debonel dabewel dan vawebol.`
+
+::: details Show answer
+z-Olazun | NAME[d-page | d-pen | d-and] | v-see
+
+*Olazun sees “Page-and-Pen”.* (the familiar pair)
+:::
+
+#### Pick one {#advanced-pick-one}
+
+**1.** *Uzozen and (just the dove)* `zuzozen { zadozol zal } zam.` or `zuzozen zadozol zal zam.`
+
+::: details Show answer
+`zuzozen { zadozol zal } zam.`
+
+[z-Uzozen | SCOPE[z-dove | z-and] | z-and.open]
+
+The island keeps **`zal`** on the dove alone; without braces it closes Uzozen and the dove together.
+:::
+
+**2.** *“Page and Pen”* (the familiar set phrase) `zebonel zabewel zan.` or `zebonel zabewel zal.`
+
+::: details Show answer
+`zebonel zabewel zan.`
+
+NAME[z-page | z-pen | z-and]
+
+**-n** names the list as one set phrase; **-l** is an ordinary *a page and a pen*.
+:::
+
+## Reference tables {#reference-tables}
+
+Lookup grids that restate forms taught above; nothing here is new.
+
+### Rare arities and edge readings
+
+Most other phrase joins need two or more items. These edge readings keep a defined sense at every arity, or mix two joins by nesting.
+
+| Agebon | Use | English |
+|--------|-----|---------|
+| **…ul** / **…um** / **…un** | deny at every arity | standalone *no*; one item *not X*; multi *none of* |
+| **…ar** / **…or** / **…er** / **…ur** | unspecified member at every arity | [unspecified **-r**](joins.md#unspecified-member-r-phrase) |
+| **…oen** / **…en** / **…an** standalone | stock empty rank / named empty | *it's a draw*; *no favorite* (stock); *null* / *void* |
+| **…ual** / **…uol** standalone | empty invert | *everything*; *anything (goes)* |
+| `zeyol` vs `zeyol zar` | content **-l** vs join **-r** | *a person* vs *some person, unknown who* |
+| `A B C zor` vs `… zer` | menu vs rank unspecified | any of them is fine vs pick by ranking |
+| `A B zar` / `zur` / `zual` | among / leftover / invert | some one among; some one other than; *everything but* |
+| `A B zel` vs `A B zael` | rank vs [sequence](rank-joins.md#sequence-ae) | A matters more than B vs A, then B |
+
+> `zududal zugudal zowulal zor.`
+>
+> [z-tea | z-coffee | z-water | z-anything]
+>
+> "any of tea, coffee, or water is fine."
+
+**For *except*, use:** hook **`ul`** / **`um`** ([hooks](hooks.md)). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (pick one of a closed list, but the pick is optional: `zududal zugudal zol zom`).

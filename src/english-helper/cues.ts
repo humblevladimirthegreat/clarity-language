@@ -2,7 +2,7 @@
  * English cue → grammar jobs, built from the tables the docs already have (src/find/english.ts
  * harvests them). A row's cues are the italic words of its English cell, or of the `###` heading
  * under `#many-jobs`; its link is the `Teach` cell when there is one, else the row's own section.
- * Rows sharing a cue are kept in page order, so a multi-job word lists its jobs as the table does.
+ * Rows sharing a cue keep rank, then the recipe-track pages (`english.md`, `say-*.md`), then page order, so a multi-job word lists its jobs as the many-jobs table does.
  */
 import type { EnglishEntry } from "../find/english.js";
 import { plainText } from "../find/english.js";
@@ -109,7 +109,10 @@ export function buildCueIndex(entries: readonly EnglishEntry[], words: (cue: str
       index.set(key, list);
     }
   }
-  for (const list of index.values()) list.sort((a, b) => a.rank - b.rank);
+  const recipePage = (source: string) => (/^(?:english|say-[a-z0-9-]+)\.md:/.test(source) ? 0 : 1);
+  for (const list of index.values()) {
+    list.sort((a, b) => a.rank - b.rank || recipePage(a.source) - recipePage(b.source));
+  }
   return index;
 }
 

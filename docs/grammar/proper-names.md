@@ -171,7 +171,7 @@ Beginner used the ending to say how to take a content word’s meaning. On an `/
 
 ### Number-word exception {#number-word-exception}
 
-Beginner used **-l** / **-m** / **-n** to say how to take a citation’s meaning. On [number words](numbers.md), those same letters (and **-r**) have **number-specific** meanings. After a role letter, the number marker **r** may start a cluster that only number words use ([phonology.md](phonology.md#phonotactics)).
+Beginner used **-l** / **-m** / **-n** to say how to take a citation’s meaning. On [number words](numbers.md), those same letters (and **-r**) have **number-specific** meanings. After a role letter, the number marker **r** may start a cluster that only number words use ([phonology.md](phonotactics.md#phonotactics)).
 
 ### Practice {#intermediate-practice}
 

@@ -79,19 +79,19 @@ Calls and sentence glue use [`/y/`](../speech-moves.md) and [`/x/`](../dependent
 | [Subject, verb](../clause.md#who-acts-and-the-action) | `zudozol vowurel.` | *A dog walks.* | B |
 | [Subject, object, verb](../clause.md#direct-object-d) | `zudozol dagozol vawebol.` | *A dog sees a cat.* | B |
 | [`/h/` and `/th/` go anywhere](../clause.md#adverbs-h) | `zudozol hedurem vowurel.` | *A dog walks hastily.* | B |
-| [Leave out the subject](../clause.md#no-subject): nobody is named as the doer | `duzozen vawebol.` | *Uzozen was seen.* | I |
+| [Leave out the subject](../left-bound.md#no-subject): nobody is named as the doer | `duzozen vawebol.` | *Uzozen was seen.* | I |
 | [Moving words changes nothing](../clause.md#direct-object-d) | `dagozol zudozol vawebol.` | *A dog sees a cat.* | B |
 | [Usual order by speech act](../speech-moves.md#act-word-order): question verb second, command verb first, prohibition verb late | `yol zuzozen vanuvul dobogal.` · `yel vanuvul dobogal.` · `yul dobogal vanuvul.` | *Does Uzozen punch the box?* · *Punch the box!* · *Don't punch the box.* | B |
 | [Fill-ask: blank first](../questions.md#fill-ask) | `yol dar zuzozen vawebol.` | *What does Uzozen see?* | B |
-| [Contrast one word with `&`](../clause.md#english-emphasis) | `&zuzozen dagozol vawebol.` · `zuzozen &dagozol vawebol.` · `zuzozen dagozol &vawebol.` | *It was Uzozen who saw the cat.* · *It's a cat that Uzozen sees.* (not something else) · *Uzozen sees the cat.* (rather than doing something else to it) | A |
-| [Cleft with no contrast: plain sentence](../clause.md#english-emphasis) | `zuzozen dagozol vawebol.` | *It's a cat that Uzozen sees.* (answering *what?*) | A |
+| [Contrast one word with `&`](../emphasis.md#english-emphasis) | `&zuzozen dagozol vawebol.` · `zuzozen &dagozol vawebol.` · `zuzozen dagozol &vawebol.` | *It was Uzozen who saw the cat.* · *It's a cat that Uzozen sees.* (not something else) · *Uzozen sees the cat.* (rather than doing something else to it) | A |
+| [Cleft with no contrast: plain sentence](../emphasis.md#english-emphasis) | `zuzozen dagozol vawebol.` | *It's a cat that Uzozen sees.* (answering *what?*) | A |
 
 ### Describing words {#describing}
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Adjective after the noun](../clause.md#adjectives-ɡ) | `zudozol gunemul vowurel.` | *An angry dog walks.* | B |
-| [Adjective before the noun](../clause.md#left-bound-adjectives): `l` after `/ɡ/` | `glunemul zudozol` | *an angry dog* | I |
+| [Adjective before the noun](../left-bound.md#left-bound-adjectives): `l` after `/ɡ/` | `glunemul zudozol` | *an angry dog* | I |
 | [Detail on an adjective](../clause.md#adjective-detail-w) | `zudozol welazom gunemul vowurel.` | *A very angry dog walks.* | B |
 | [Stance on the whole claim](../clause.md#stance-th) | `zudozol thevemom vowurel.` | *I doubt a dog is walking.* | B |
 
@@ -99,12 +99,12 @@ Calls and sentence glue use [`/y/`](../speech-moves.md) and [`/x/`](../dependent
 
 | Slot | Words | English | Stage |
 |------|-------|---------|-------|
-| [`/w/`](../clause.md#degree-w), before an adjective or adverb | `welazom` | *very* | B |
+| [`/w/`](../left-bound.md#degree-w), before an adjective or adverb | `welazom` | *very* | B |
 | | `wohalal` | *extremely* | I |
 | | `wamezom` | *slightly* | I |
 | | `wadowom` | *quite* | I |
 | | `wuhuram` | *completely* | I |
-| [`/h/`](../clause.md#degree-w), on the verb | `hoyurem` | *kind of* | I |
+| [`/h/`](../left-bound.md#degree-w), on the verb | `hoyurem` | *kind of* | I |
 | | `hurugem` | *again* | I |
 
 ### The extra noun `/b/` {#extra-noun}
@@ -116,10 +116,10 @@ Tell the two jobs apart by the word right before the `/b/` word.
 | a `/ɡ/`, `/h/`, or `/th/` word | [completes that word](../clause.md#extra-nouns) (the host) | `hewom bluzozen` | *like Uzozen* | B |
 | anything else | [who receives](../clause.md#extra-nouns) (at most one) | `zuzozen vezuyel bolazun.` | *Uzozen tells Olazun.* | B |
 | a host, with `/w/` first | [`/w/` stays before the host](../clause.md#extra-nouns) | `welazom hewom bluzozen` | *very like Uzozen* | B |
-| a host's `/b/`, then `/ɡ/` | [describes the extra noun](../clause.md#complex-chaining) | `zagayul gorol bluzozen guzemol` | *a guard who is the same person as sleepy Uzozen* | I |
-| two relations on one noun | [put one before with `gl-`](../clause.md#complex-chaining) | `glorol bluzozen zagayul gorol blobayel` | *a guard who is both Uzozen and the police officer* | I |
+| a host's `/b/`, then `/ɡ/` | [describes the extra noun](../left-bound.md#complex-chaining) | `zagayul gorol bluzozen guzemol` | *a guard who is the same person as sleepy Uzozen* | I |
+| two relations on one noun | [put one before with `gl-`](../left-bound.md#complex-chaining) | `glorol bluzozen zagayul gorol blobayel` | *a guard who is both Uzozen and the police officer* | I |
 
-A [hook](../clause.md#complex-chaining) followed by `/b/` means *in* / *at* / *for*, not the person who receives.
+A [hook](../left-bound.md#complex-chaining) followed by `/b/` means *in* / *at* / *for*, not the person who receives.
 
 ## Predication {#predication}
 
@@ -183,5 +183,5 @@ Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 | `hewom bluzozen` *like Uzozen* ([`/b/` completes a host](../clause.md#extra-nouns)) | | `zuzozen vezuyel bolazun.` *Uzozen tells Olazun* ([`/b/` receives](../clause.md#extra-nouns)) |
 | `zudozol gelazom.` *There is a big dog* ([new noun](../predication.md#existence)) | | `zudozor gelazom.` *The dog is big* ([resumed noun](../predication.md#existence)) |
 | `zuzozen vowurel.` *Uzozen walks* ([the verb](../clause.md#who-acts-and-the-action)) | | `zuzozen gowurel.` *Uzozen is walking* ([under way](../predication.md#in-progress)) |
-| `duzozen vawebol.` *Uzozen was seen* ([no subject named](../clause.md#no-subject)) | | `zumon` *someone did it* ([an unnamed someone](../pronouns.md#special-pronouns)) |
+| `duzozen vawebol.` *Uzozen was seen* ([no subject named](../left-bound.md#no-subject)) | | `zumon` *someone did it* ([an unnamed someone](../pronouns.md#special-pronouns)) |
 | `duzozel` *a swan* ([-l](../proper-names.md#proper-name--n)) | | `duzozeln` *an Uzozen* ([-ln: one of the name](../proper-names.md#name-instance--ln)) |

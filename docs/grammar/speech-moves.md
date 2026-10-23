@@ -298,6 +298,6 @@ The act word goes before the body; a `/y/` word after a finished body starts the
 :::
 ## See also
 
-- [Clause](clause.md#beginner)
+- [Clause](clause.md)
 - [Questions](questions.md)
-- [Vowel series in joins](joins.md#beginner)
+- [Vowel series in joins](joins.md)
