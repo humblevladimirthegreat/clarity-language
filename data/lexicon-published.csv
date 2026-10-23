@@ -275,7 +275,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐒,monkey,emoza,creature,holds,medium,mimicry,monkey see monkey do,,copy,
 🦍,gorilla,egaze,creature,order,big,dominance,the silverback dominates the group,,dominate,
 🦧,orangutan,orozo,creature,one,medium,,,,,
-🐕,dog,udozo,creature,one,medium,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,fill-ask-jobs.md#beginner-practice
+🐕,dog,udozo,creature,one,medium,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,here-there.md#beginner-practice
 🦮,guide-dog,egoze,creature,order,medium,reliance,a guide dog is relied on to lead; reliance is depending on something,,,
 🐺,wolf,owozu,creature,takes-away,medium,predation,wolf at the door,,,
 🦊,fox,ovozu,creature,takes-away,medium,cunning,sly as a fox,,,
@@ -696,7 +696,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🎗️,awareness,awema,mind,holds,,solidarity,the ribbon is worn for a cause; solidarity is standing with others,,aware,
 🎟️,admission-tickets,edena,title,holds,small,admission,ticket grants entry inside; admission is being let in,,entry,
 🎫,ticket,udene,title,order,small,,,,,left-bound.md#intermediate-practice
-🏆,trophy,odora,counting,holds,medium,score,trophy marks the final tally; score is the counted result,,grade; prize; champion; rating,number-markers.md#intermediate-practice
+🏆,trophy,odora,counting,holds,medium,score,trophy marks the final tally; score is the counted result,,grade; prize; champion; rating,join-across-roles.md#intermediate-practice
 🏅,medal,emebe,body,order,small,achievement,medal marks accomplished feat; achievement is reaching a goal,,success; achieve; successful; award; fulfill; accomplish,
 🥇,gold,ugule,nature,order,none,first,gold medal marks top place; first is leading all others,,primary; priority; prime,numeric-derivation.md#advanced-practice
 🥈,silver,azule,nature,order,none,runner-up,silver medal marks runner-up; second is next after first,,,

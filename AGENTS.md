@@ -32,14 +32,14 @@ Each row names what the file owns. The file is the authority; this table is only
 | `restrictors.md` | `/h/` / `/w/` restrictors, habitual; more occasions (`more-occasions.md`). |
 | `joins.md` | Phrase and clause joins, fences, set vs rank; rank joins (`rank-joins.md`); join islands, role grid (`join-islands.md`). |
 | `join-across-roles.md` | Joins across roles, join-act verbs, join-relations; clause sequence (`clause-sequence.md`). |
-| `comparatives.md` | Comparatives, superlatives, equatives; manner scale (`comparative-arity.md`); stance bars (`stance-bars.md`). |
+| `comparatives.md` | Comparatives, superlatives, equatives; manner scale (`comparative-arity.md`); vague amounts (`vague-amounts.md`); stance bars (`stance-bars.md`). |
 | `predication.md` | Classification, identity; how far a label reaches (`label-seams.md`); packaging (`label-scope.md`). |
-| `causation.md` | Causation / condition poles; iff, fault, CAUSE (`iff-fault.md`). |
-| `sakes.md` | Sakes, met / unmet; ought for a sake, motive, attachment, whose stake, contrary, sake bars (`prescription.md`). |
-| `feelings-permission.md` | Feelings, thanks and sorry, speaker attitude, permission, consent. |
+| `causation.md` | Causation / condition poles; fault (`fault.md`); iff, CAUSE (`iff-fault.md`). |
+| `sakes.md` | Sakes, met / unmet; ought for a sake (`ought-for-a-sake.md`); motive, attachment, whose stake, contrary, sake bars (`prescription.md`). |
+| `feelings-permission.md` | Feelings, speaker attitude, permission, consent; thanks and sorry (`thanks-and-sorry.md`). |
 | `intention.md` | Plan; decision, try / fallback (`ability.md`); ability / incapability (`can-and-cant.md`). |
 | `knowing.md` | MAY; live / memory (`live-and-memory.md`); evidentiality, holder (`evidentiality.md`); universality, dated channel (`universality.md`). |
-| `notional-standing.md` | Notional and standing: mirative, residue / former, already / still / not yet / no longer, notional, channel bars. |
+| `notional-standing.md` | Notional and standing: mirative, residue / former, notional, channel bars; already / still / not yet / no longer (`already-still-yet.md`). |
 | `roles.md` | Role compounds; viewpoint laterals, landmark facing, gravity (`viewpoint.md`). |
 | `compounds.md` | Mid-word `x`, dictionary compounds; compound families, conversation length (`compound-families.md`); root tails, tail suffixes (`root-tails.md`). |
 | `spans.md` | Span fences, asides; mention, scope islands (`span-mention.md`); editorial close, nesting (`span-nesting.md`). |
@@ -93,8 +93,8 @@ Each row names what the file owns. The file is the authority; this table is only
 - Tests run with **`npm test`** (Node's built-in runner via `tsx --test`). Vitest is intentionally **not** installed, never run bare `npx vitest`. Use `npx --no-install <tool>` to check for a CLI; avoid bare `npx <tool>` for tools this repo does not depend on.
 - Language design work goes through `introduction.md`, `purpose.md`, `clause.md` and the linked grammar docs (and `TODO.md` until absorbed). Do **not** treat any parser implementation as design authority until it matches the docs.
 - **Parser changes ship with grammar changes:** a change to what the parser accepts, rejects, or how it reads a form lands in the same change as the grammar-doc edit that teaches it (the owning page, plus `unassigned-reserved.md` for a newly rejected spelling and `design-decisions.md` when the rejection has a reason beyond *no reading yet*). Never change parser behavior without the matching grammar edit.
-- **Orthography invariants** ([phonology](docs/grammar/phonology.md)): `th` is one letter written with two characters, and there is no `t`. No hyphen after the PoS letter. Native text is unicase lowercase; capitals only inside foreign / opaque payloads ([spans](docs/grammar/spans.md)). Named reference is marked by ending, not case. Prefer published lexicon roots when the gloss matches.
-- **Example sentences**: do not add a leading assertion turn to every example when it is omissible, see [clause.md](docs/grammar/clause.md) and [speech-moves.md](docs/grammar/speech-moves.md).
+- **Orthography invariants** ([phonology](/phonology)): `th` is one letter written with two characters, and there is no `t`. No hyphen after the PoS letter. Native text is unicase lowercase; capitals only inside foreign / opaque payloads ([spans](/spans)). Named reference is marked by ending, not case. Prefer published lexicon roots when the gloss matches.
+- **Example sentences**: do not add a leading assertion turn to every example when it is omissible, see [clause.md](/clause) and [speech-moves.md](/speech-moves).
 - **Learner name slot:** **`SELF`** is the reader's own name, only where the name is the form (greeting, conversation-length bid, self-introduction); plain *I* is not the slot: [first person](docs/meta/grammar-docs.md#house-cast). The site fills it ([`src/learner-name.ts`](src/learner-name.ts)).
 - **One tree per sentence:** after changing `src/parse/sentence-parser.ts` (rules or `markContext`), run **`npm run grammar-check`** (about a minute; not part of `npm test`). It fails on any `GATE`, LR(1) conflict, or doc sentence with two trees; turn a new choice into structure or a token mark, never a gate.
 - **Parsing Agebon:** run **`node scripts/parse.mjs '<sentence>'`** directly (not `npm run parse` or `tsx src/parse/cli.ts`). It rebuilds automatically when `src/` changes. Pass several quoted inputs in one call (JSON array out), or `-` for one input per line on stdin. Add `--check-ambiguity` as needed, and `--check-lexicon` to list words the lexicon does not know (a stem that only parses is not a lexicon word, and an unlisted compound shows its possible split).

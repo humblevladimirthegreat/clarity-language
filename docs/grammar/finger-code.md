@@ -12,7 +12,7 @@ The finger code is a way to produce Agebon with your fingers instead of your voi
 
 ## Counting on your fingers {#counting}
 
-Each spoken digit starts with its own consonant ([counts](./numbers.md#counts)): `b` for 1, `d` for 2, and so on to `m` for 0. In the finger code, each of these ten letters is shown as its digit, counted on your fingers the way you already count:
+Each spoken digit starts with its own consonant ([counts](/numbers#counts)): `b` for 1, `d` for 2, and so on to `m` for 0. In the finger code, each of these ten letters is shown as its digit, counted on your fingers the way you already count:
 
 - 1 to 4 is a run: fingers raised in order, starting at the index finger (index; index + middle; index + middle + ring; all four).
 - The thumb counts five: the thumb alone is 5, the thumb plus a run of 1 is 6, and so on up to the open hand for 9 (cue: the five bead on an abacus).
@@ -31,7 +31,7 @@ Each spoken digit starts with its own consonant ([counts](./numbers.md#counts)):
 | `n` | 9 | open hand |
 | `m` | 0 | index + pinky (horns) |
 
-The four consonants left over come next in [alphabet order](./phonotactics.md#letter-names): `th`, `w`, `y`, `x`. They are the runs 1 to 4 again, with the fingers hooked: keep the base knuckle straight and curl the two outer joints, so the hook sticks out from the fist instead of folding into it. Straight fingers mean a digit letter; hooked fingers mean one of these four. The thumb is never hooked.
+The four consonants left over come next in [alphabet order](/phonotactics#letter-names): `th`, `w`, `y`, `x`. They are the runs 1 to 4 again, with the fingers hooked: keep the base knuckle straight and curl the two outer joints, so the hook sticks out from the fist instead of folding into it. Straight fingers mean a digit letter; hooked fingers mean one of these four. The thumb is never hooked.
 
 | Letter | Shape |
 |--------|-------|
@@ -40,7 +40,7 @@ The four consonants left over come next in [alphabet order](./phonotactics.md#le
 | `y` | index + middle + ring, hooked |
 | `x` | all four, hooked (claw) |
 
-The vowels go on the other hand. They count up the [vowel pitches](./phonology.md#vowel-pitch) the way the digits count: a run of 1 to 4 fingers starting at the **pinky**, from the lowest vowel to the highest. More fingers means a higher vowel.
+The vowels go on the other hand. They count up the [vowel pitches](/phonology#vowel-pitch) the way the digits count: a run of 1 to 4 fingers starting at the **pinky**, from the lowest vowel to the highest. More fingers means a higher vowel.
 
 | Vowel | Count | Shape |
 |-------|-------|-------|
@@ -49,7 +49,7 @@ The vowels go on the other hand. They count up the [vowel pitches](./phonology.m
 | `e` | 3 | pinky + ring + middle |
 | `u` | 4 | four fingers |
 
-Of the [opposite vowels](./phonology.md#opposite-vowels), `a` and `u` are one finger against four, as far apart as they are in pitch, and `o` and `e` are one finger apart. Pinky + ring is the hardest shape to hold, because the middle finger tends to rise with the ring: fold the thumb over the index and middle to keep them down. A fist is never a letter: it means *this hand is silent on this beat*.
+Of the [opposite vowels](/phonology#opposite-vowels), `a` and `u` are one finger against four, as far apart as they are in pitch, and `o` and `e` are one finger apart. Pinky + ring is the hardest shape to hold, because the middle finger tends to rise with the ring: fold the thumb over the index and middle to keep them down. A fist is never a letter: it means *this hand is silent on this beat*.
 
 The chart in [Try it](#try-it) draws every shape in a sentence.
 
@@ -63,7 +63,7 @@ The consonant hand counts from the index and the vowel hand from the pinky, so i
 
 ## One beat per syllable {#beats}
 
-Agebon syllables have a fixed shape, so the code times them the same way every time. Each syllable takes one beat, and every beat is the same length, as in [speech](./singability.md#rhythm-and-stress):
+Agebon syllables have a fixed shape, so the code times them the same way every time. Each syllable takes one beat, and every beat is the same length, as in [speech](/singability#rhythm-and-stress):
 
 | In speech | In the finger code |
 |-----------|--------------------|
@@ -131,7 +131,7 @@ Pick **Touch** in [Try it](#try-it) to see a sentence pressed into a receiver's 
 
 On a piano, every note is a black key. The black keys make one five-note scale, so any notes you play together sound pleasant. The left hand plays vowels and the right hand plays consonants for every player, left-handed or not, so the consonants sit on top.
 
-Pressing a whole run would sound as a blur of neighboring notes that is hard to hear apart. So on the keys you strike where the count ends: only the last finger of a run goes down, plus the thumb when the thumb is part of the count. A vowel run ends at its innermost finger, so the key climbs with the count, and each vowel's key is its [pitch](./phonology.md#vowel-pitch). The horns shape for `m` presses both of its fingers. Fingers are numbered 1 (thumb) to 5 (pinky).
+Pressing a whole run would sound as a blur of neighboring notes that is hard to hear apart. So on the keys you strike where the count ends: only the last finger of a run goes down, plus the thumb when the thumb is part of the count. A vowel run ends at its innermost finger, so the key climbs with the count, and each vowel's key is its [pitch](/phonology#vowel-pitch). The horns shape for `m` presses both of its fingers. Fingers are numbered 1 (thumb) to 5 (pinky).
 
 | Hand | Thumb (1) | 2 | 3 | 4 | Pinky (5) |
 |------|-----------|---|---|---|-----------|

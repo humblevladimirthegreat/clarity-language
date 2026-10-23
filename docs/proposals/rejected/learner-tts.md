@@ -2,7 +2,7 @@
 
 **Status:** REJECTED — KittenTTS synthesis and the Speak UI were removed (unreliable output, build-time model download). Reimplementation is `diphone-tts.md`, which carries the kept stages, loan policy and UI notes. The engine-neutral code (`src/tts/`) remains.  
 **Related:** long-term TODO *text to speech*; depends on [parser-pipeline.md](../../meta/parser-pipeline.md) (**assumed shipped** — `parse(text)` → typed AST); inverse dictation (no Agazan speech training) is `learner-stt.md`  
-**Design authority:** spoken forms stay in the grammar docs ([phonology.md](../../grammar/phonology.md), [spans.md](../../grammar/spans.md#writing-vs-speech), [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand), [dependents.md](../../grammar/dependents.md#orthography-and-prosody-periods)). This proposal covers **tooling only**: writing → speech surface → audio.
+**Design authority:** spoken forms stay in the grammar docs ([phonology.md](/phonology), [spans.md](/spans#writing-vs-speech), [numbers.md](/numbers#writing-preferred-shorthand), [dependents.md](/dependents#orthography-and-prosody-periods)). This proposal covers **tooling only**: writing → speech surface → audio.
 
 ## Motivation
 
@@ -16,7 +16,7 @@ With a finished parser, most of the hard mapping is already structured in the AS
 
 1. Play **any parseable Agazan string** in the browser (docs examples, exercises, future UI).
 2. Expand **writing → speech** from the AST (spans, free-number shorthand, writing atoms) before synthesis.
-3. Map speech-surface letters to **IPA / phonemes** exactly as [phonology.md](../../grammar/phonology.md) specifies (including syllable splits on stacked vowels and word-final **-x**).
+3. Map speech-surface letters to **IPA / phonemes** exactly as [phonology.md](/phonology) specifies (including syllable splits on stacked vowels and word-final **-x**).
 4. Ship **offline-capable** synthesis (WASM or equivalent) so docs work without a cloud TTS API.
 5. Expose a small API (`speak(text)` / `speakAst(ast)`) shared by CLI smoke tests and web UI.
 6. Keep fixtures **doc-locked**: speech expansions and phoneme strings quoted from grammar pages.
@@ -61,7 +61,7 @@ Agazan text (writing or speech surface)
 |-------|--------|--------|------|
 | **Parse** | Surface string | Typed AST | Existing library ([parser-pipeline.md](../../meta/parser-pipeline.md)) |
 | **`toSpeech`** | AST | Ordered **speech tokens** + boundary tags | Writing↔speech maps in spans / numbers / core |
-| **`toPhonemes`** | Speech tokens | Phoneme strings + syllable breaks | [phonology.md](../../grammar/phonology.md) letter table only |
+| **`toPhonemes`** | Speech tokens | Phoneme strings + syllable breaks | [phonology.md](/phonology) letter table only |
 | **`synthesize`** | Phoneme plan | Audio | Third-party engine + thin adapter |
 
 **No lexicon lookup is required for pronunciation** of native Agazan (spelling shows the sound). Lexicon may still annotate UI (“play this example”) but does not drive G2P.
@@ -74,13 +74,13 @@ Preferred writing is not always what is spoken. The AST already distinguishes wr
 
 | Writing | Spoken behavior | Doc |
 |---------|-----------------|-----|
-| Free-number shorthand (`g+3`, `g#-2`, `d_…`, `%`, …) | Full CV number word (marker `r`+V, spoken digits / specials, ending letter) | [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand) |
-| Span brackets (`d[…]`, `d@[Hamlet]`, `th(…)`, …) | Open word (`daxal` / `daxon` / …) + interior tokens + close when required | [spans.md](../../grammar/spans.md#writing-vs-speech) |
+| Free-number shorthand (`g+3`, `g#-2`, `d_…`, `%`, …) | Full CV number word (marker `r`+V, spoken digits / specials, ending letter) | [numbers.md](/numbers#writing-preferred-shorthand) |
+| Span brackets (`d[…]`, `d@[Hamlet]`, `th(…)`, …) | Open word (`daxal` / `daxon` / …) + interior tokens + close when required | [spans.md](/spans#writing-vs-speech) |
 | Span anaphor / empty (`d[=]`, `d[]`) | Spoken open only (`daxur`, `daxul`) | same |
-| Orthographic-only commas in digit groups | **Omit** (not spoken) | [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand) |
-| Period / `?` / `!` | Boundary tags for pause + pitch hint | [dependents.md](../../grammar/dependents.md#orthography-and-prosody-periods) |
+| Orthographic-only commas in digit groups | **Omit** (not spoken) | [numbers.md](/numbers#writing-preferred-shorthand) |
+| Period / `?` / `!` | Boundary tags for pause + pitch hint | [dependents.md](/dependents#orthography-and-prosody-periods) |
 | `/x/` continue vs new `/y/` turn | Boundary tags (dip vs reset) | same |
-| Adjunct-scope `^ … ^` | **No** open/close words; island boundary tags only | [spans.md](../../grammar/spans.md#scope-islands) |
+| Adjunct-scope `^ … ^` | **No** open/close words; island boundary tags only | [spans.md](/spans#scope-islands) |
 
 ### Already speech-shaped
 
@@ -109,7 +109,7 @@ TTS speaks **only what appears in the input string**, after documented writing�
 
 ## Grapheme → phoneme (`toPhonemes`)
 
-Single table from [phonology.md](../../grammar/phonology.md); no English respelling stage.
+Single table from [phonology.md](/phonology); no English respelling stage.
 
 | Orthography | IPA (engine input) | Notes |
 |-------------|--------------------|-------|
@@ -256,9 +256,9 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 | Topic | Doc |
 |-------|-----|
 | Parser dependency | [parser-pipeline.md](../../meta/parser-pipeline.md) |
-| Phonology / IPA | [phonology.md](../../grammar/phonology.md) |
-| Writing vs speech (spans) | [spans.md](../../grammar/spans.md#writing-vs-speech) |
-| Number shorthand vs speech | [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand) |
-| Periods / force prosody | [dependents.md](../../grammar/dependents.md#orthography-and-prosody-periods) |
-| Orthography | [phonology.md](../../grammar/phonology.md#beginner), [clause.md](../../grammar/clause.md#role-letters) |
+| Phonology / IPA | [phonology.md](/phonology) |
+| Writing vs speech (spans) | [spans.md](/spans#writing-vs-speech) |
+| Number shorthand vs speech | [numbers.md](/numbers#writing-preferred-shorthand) |
+| Periods / force prosody | [dependents.md](/dependents#orthography-and-prosody-periods) |
+| Orthography | [phonology.md](/phonology#beginner), [clause.md](/clause#role-letters) |
 | Inverse (phoneme ASR) | `learner-stt.md` |

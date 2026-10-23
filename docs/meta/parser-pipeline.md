@@ -11,7 +11,7 @@ Library-first multi-stage parser for CLI checks, fixtures that lock the grammar 
 
 1. **Library-owned string and clause structure** — morphology, numbers, writing atoms, joins, spans, utterance framing.
 2. **Thin custom layer** — lexicon/overlay classification, token adapters, AST assembly, orchestration, resolve.
-3. **Doc sync** — mid-word **`x`** rule order mirrors [compounds.md](../grammar/compounds.md); number stems mirror [numbers.md](../grammar/numbers.md); sentence fences mirror [joins.md](../grammar/joins.md) / [spans.md](../grammar/spans.md) / [clause.md](../grammar/clause.md) / [dependents.md](../grammar/dependents.md).
+3. **Doc sync** — mid-word **`x`** rule order mirrors [compounds.md](/compounds); number stems mirror [numbers.md](/numbers); sentence fences mirror [joins.md](/joins) / [spans.md](/spans) / [clause.md](/clause) / [dependents.md](/dependents).
 4. **Testable stages** — morph fixtures, classify fixtures, sentence fixtures, and resolve fixtures fail independently.
 5. **No design authority creep** — if a parse fork is not in the docs, fix the docs or reject the input; do not paper over with backtracking across stages.
 
@@ -26,7 +26,7 @@ Library-first multi-stage parser for CLI checks, fixtures that lock the grammar 
 
 | Layer | Library | Role |
 |-------|---------|------|
-| Word morph, number stems, writing forms | **[Peggy](https://peggyjs.org/)** | Ordered choice matches the [compounds decision order](../grammar/compound-families.md#decision-order); generates JS + `.d.ts` at build time |
+| Word morph, number stems, writing forms | **[Peggy](https://peggyjs.org/)** | Ordered choice matches the [compounds decision order](/compound-families#decision-order); generates JS + `.d.ts` at build time |
 | Sentence / joins / spans / stand-ins / framing | **[Chevrotain](https://chevrotain.io/)** | Grammar as TS; CST → sentence AST; operates on **typed word tokens**, not raw characters |
 | Overlays and open roots | CSV → `Map` | [`lexicon-overlays.csv`](../../data/lexicon-overlays.csv), [`lexicon-published.csv`](../../data/lexicon-published.csv), [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv) — classification, not parsing |
 | Anaphor / question / SHARED resolve | [`src/parse/resolve.ts`](../../src/parse/resolve.ts) | Discourse over a finished AST |
@@ -83,11 +83,11 @@ Owns every **string-shaped** subsystem:
 
 - PoS prefix, left-bound **`gl-`**, reference ending, optional **-x**
 - Foreign `PoS<…>ENDING` / opaque `PoS<…>` (no phonology inside `<>`)
-- Free number words and writing shorthand ([numbers.md](../grammar/numbers.md))
+- Free number words and writing shorthand ([numbers.md](/numbers))
 - Role compounds take an ordinary-compound stem and one tail: ability (`/ɡ/` only) or label scope; `enforce` limits them to `/z/` `/d/` `/b/` `/ɡ/`, `/x/` (a topic word) and `/y/` + **-n** / **-r**
 - Mid-word **`x`** families: rule alternation order = doc decision order (role → conversation length name+vowel+**-n` (citation or `/y/`) → hook prefix → value/ability → numeric prefix → ordinary compound)
 - Writing bracket atoms (`d@[…]`, `th(…)`, `d<…>`); a span has no spoken word shape
-- Prefix-less [hooks](../grammar/hooks.md)
+- Prefix-less [hooks](/hooks)
 
 Semantic actions build a discriminated `MorphWord` only. **No lexicon calls inside Peggy.**
 
@@ -97,7 +97,7 @@ Semantic actions build a discriminated `MorphWord` only. **No lexicon calls insi
 
 1. Overlay hit on `(sense_form, pos)` → closed special vocabulary reading
 2. Else already-classified number stem → stay number
-3. Else value/ability vs [conversation length](../grammar/compound-families.md#conversation-length) (named citation or `/y/` + **-n**) vs published root vs [hook compound](../grammar/hook-compounds.md#hook-compounds) (citation + extra-noun hook) vs lexical-compound stem
+3. Else value/ability vs [conversation length](/compound-families#conversation-length) (named citation or `/y/` + **-n**) vs published root vs [hook compound](/hook-compounds#hook-compounds) (citation + extra-noun hook) vs lexical-compound stem
 4. Else unknown / foreign payload
 
 This is where join-act vs soft clause **-n**, mood vs manner, value vs ability, etc. become **readings** without re-parsing spelling.
@@ -152,9 +152,9 @@ Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokeni
 
 Owns:
 
-- Utterance framing ([speech-moves.md](../grammar/speech-moves.md) — `/y/` turns, including a written `/y/` span at the left edge ([spans.md](../grammar/spans.md#y-spans)), omissible default assertoric; [dependents.md](../grammar/dependents.md) — `/x/` continue)
-- Right-close joins at phrase / VP / clause level (illegal left fence); a `/th/` stance word right before a rank join (`e` / `ue` / `oe`, **-l** / **-m**) is that fence's bar, an `NpItem` of kind `bar` ([comparatives.md](../grammar/comparative-arity.md#bars))
-- `uem` right before a `/th/` stance word holds that stance (with its hosted `/b/`) as the hook unit's `frame`, job `frame`, at the left edge too: the stance the event goes against, not a stance on the claim ([sakes.md](../grammar/prescription.md#contrary-to-stance)). Enforce checks the frame kind (`frameKind`)
+- Utterance framing ([speech-moves.md](/speech-moves) — `/y/` turns, including a written `/y/` span at the left edge ([spans.md](/spans#y-spans)), omissible default assertoric; [dependents.md](/dependents) — `/x/` continue)
+- Right-close joins at phrase / VP / clause level (illegal left fence); a `/th/` stance word right before a rank join (`e` / `ue` / `oe`, **-l** / **-m**) is that fence's bar, an `NpItem` of kind `bar` ([comparatives.md](/comparative-arity#bars))
+- `uem` right before a `/th/` stance word holds that stance (with its hosted `/b/`) as the hook unit's `frame`, job `frame`, at the left edge too: the stance the event goes against, not a stance on the claim ([sakes.md](/prescription#contrary-to-stance)). Enforce checks the frame kind (`frameKind`)
 - Adjunct islands **`{ … }`** (`IslandOpen` / `IslandClose` tokens); a mention marker before a topic span (`topicMarker`)
 - Complex `/ɡ|h/` + `/b/`; `/w/` + `/b/` only for *as-of* overlays; floating `/h/` as adjuncts
 - Matrix-final **stand-in** (`darl` / `barl`) + contiguous dependent
@@ -167,14 +167,14 @@ Recovery is off. Illegal left fences and binderless islands throw `SentenceParse
 
 | Job | Rule |
 |-----|------|
-| Content **-r** | Most recent prior word with the identical whole stem (the letters between role letter and ending; a compound or hook compound only as a whole). With none, a lexicon stem is the one you both know; any other stem is rejected ([pronouns.md](../grammar/pronouns.md#resume-r)) |
-| Role pointer | One anchor per clause body: its verb, or its `/ɡ/` predicate. Each anchor records the overt filler of every role (`/z/`, `/d/`, the extra party, the scene, the stacked-hook `/b/`s). **`a`**: core roles take the latest anchor with that role filled, other roles the latest anchor; **`o`**: the nearest earlier anchor whose core filler is a different referent; **`e`**: this clause's anchor. No referent is a rejection ([pronouns.md](../grammar/pronouns.md#role-pointers), [roles.md](../grammar/roles.md#role-pointers-family)) |
-| Number **-r** / `g=+` | Most recent number with the same marker identity ([numbers.md](../grammar/number-markers.md#number-endings)) |
-| Role **-r** | This instance of the matching event’s role (doer / place / undergoer / extra `/b/` party); most recent verb / event noun / relation / role compound with that whole stem. Non-resume is the lexical kind (*teacher* vs *the one teaching*) ([roles.md](../grammar/roles.md)) |
-| Join **-r** under `yol` / `yom` | Fill-ask gaps in spoken order; none → yes/no ([questions.md](../grammar/questions.md)) |
+| Content **-r** | Most recent prior word with the identical whole stem (the letters between role letter and ending; a compound or hook compound only as a whole). With none, a lexicon stem is the one you both know; any other stem is rejected ([pronouns.md](/pronouns#resume-r)) |
+| Role pointer | One anchor per clause body: its verb, or its `/ɡ/` predicate. Each anchor records the overt filler of every role (`/z/`, `/d/`, the extra party, the scene, the stacked-hook `/b/`s). **`a`**: core roles take the latest anchor with that role filled, other roles the latest anchor; **`o`**: the nearest earlier anchor whose core filler is a different referent; **`e`**: this clause's anchor. No referent is a rejection ([pronouns.md](/pronouns#role-pointers), [roles.md](/roles#role-pointers-family)) |
+| Number **-r** / `g=+` | Most recent number with the same marker identity ([numbers.md](/number-markers#number-endings)) |
+| Role **-r** | This instance of the matching event’s role (doer / place / undergoer / extra `/b/` party); most recent verb / event noun / relation / role compound with that whole stem. Non-resume is the lexical kind (*teacher* vs *the one teaching*) ([roles.md](/roles)) |
+| Join **-r** under `yol` / `yom` | Fill-ask gaps in spoken order; none → yes/no ([questions.md](/questions)) |
 | SHARED `/ɡ/` or `/h/` after a join | `scale` / `equative` / `distribute` / `collective` / `kind` / `ordinary` from join series + conjunct kinds (`/h/` is manner scale under rank / `oe`) |
 
-Skipped as anaphors: join **-r** (ask / unspecified-member), restrictors, values / ability ending channels, and every overlay whose family defines its own **-r** (the settled-to-passing grades, `because` share). Other closed roots resume with **-r** like content ([pronouns.md](../grammar/tag-pronouns.md#how-english-approximates-r)). Dangling resumes are recorded with no `antecedent` — they do not fail the parse.
+Skipped as anaphors: join **-r** (ask / unspecified-member), restrictors, values / ability ending channels, and every overlay whose family defines its own **-r** (the settled-to-passing grades, `because` share). Other closed roots resume with **-r** like content ([pronouns.md](/tag-pronouns#how-english-approximates-r)). Dangling resumes are recorded with no `antecedent` — they do not fail the parse.
 
 SHARED classification is **structural** (join vowel + conjunct kinds). The lexicon CSV has no gradable column yet. Number ranges are hooks, not joins: the span reading (`isSpanHook`) is decided in the morph gloss from the endpoint number kinds.
 
@@ -234,7 +234,7 @@ The docs site bundles the parser and lexicon search through Vite (`@parse-browse
 
 **Shipped**
 
-- Peggy word grammar covers orthography, numbers (writing + speech), and [compounds](../grammar/compounds.md) decision order.
+- Peggy word grammar covers orthography, numbers (writing + speech), and [compounds](/compounds) decision order.
 - `classify` is table-driven from the lexicon CSVs. Overlay **`kind`** / **`gloss`** live on overlays only ([kinds](#overlay-kinds)).
 - Chevrotain sentence grammar covers framing, right-close joins, islands, and **stand-in** dependents.
 - Public `parse(text)` returns a typed AST plus `resolve`; fixture tests drawn from `docs/grammar/`.
@@ -262,19 +262,19 @@ The docs site bundles the parser and lexicon search through Vite (`@parse-browse
 
 | Topic | Doc |
 |-------|------|
-| Clause grammar / `/y/` framing | [clause.md](../grammar/clause.md) |
-| Dependents / `/x/` continue / stand-ins | [dependents.md](../grammar/dependents.md) |
-| Hosted relations | [relations.md](../grammar/relations.md) |
-| Mid-word **`x`** families | [compounds.md](../grammar/compounds.md) |
-| Numbers | [numbers.md](../grammar/numbers.md) |
-| Digitless and exponents | [digitless-exponents.md](../grammar/digitless-exponents.md) |
-| Joins | [joins.md](../grammar/joins.md) |
-| Spans | [spans.md](../grammar/spans.md) |
-| Pronouns / **-r** | [pronouns.md](../grammar/pronouns.md) |
-| Topic | [topic.md](../grammar/topic.md) |
-| Questions / fill-ask | [questions.md](../grammar/questions.md) |
-| Fill-ask roles | [fill-ask-roles.md](../grammar/fill-ask-roles.md) |
-| Comparatives / SHARED scale | [comparatives.md](../grammar/comparatives.md) |
+| Clause grammar / `/y/` framing | [clause.md](/clause) |
+| Dependents / `/x/` continue / stand-ins | [dependents.md](/dependents) |
+| Hosted relations | [relations.md](/relations) |
+| Mid-word **`x`** families | [compounds.md](/compounds) |
+| Numbers | [numbers.md](/numbers) |
+| Digitless and exponents | [digitless-exponents.md](/digitless-exponents) |
+| Joins | [joins.md](/joins) |
+| Spans | [spans.md](/spans) |
+| Pronouns / **-r** | [pronouns.md](/pronouns) |
+| Topic | [topic.md](/topic) |
+| Questions / fill-ask | [questions.md](/questions) |
+| Fill-ask roles | [fill-ask-roles.md](/fill-ask-roles) |
+| Comparatives / SHARED scale | [comparatives.md](/comparatives) |
 | Closed overlays | [lexicon](../grammar/lexicon.md) |
-| Hooks | [hooks.md](../grammar/hooks.md) |
-| Discourse hooks | [discourse-hooks.md](../grammar/discourse-hooks.md) |
+| Hooks | [hooks.md](/hooks) |
+| Discourse hooks | [discourse-hooks.md](/discourse-hooks) |

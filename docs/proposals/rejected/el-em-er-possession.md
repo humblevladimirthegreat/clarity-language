@@ -1,10 +1,10 @@
 # Proposal: `el` / `em` / `er` possession series
 
-**Status:** REJECTED. Taking `el` would cost the everyday *for*, and the inalienable slot already exists as `gabom`. Adopted instead: `em` narrowed to use / access, plus a care tie `gahazum` — see [hooks](../../grammar/hooks.md#genitive) and [social relations](../../grammar/relations.md#social-relations).
+**Status:** REJECTED. Taking `el` would cost the everyday *for*, and the inalienable slot already exists as `gabom`. Adopted instead: `em` narrowed to use / access, plus a care tie `gahazum` — see [hooks](/hooks#genitive) and [social relations](/relations#social-relations).
 
 ## Idea
 
-Turn the extra-noun `e` hook into a possession series whose ending is a time horizon, the way [sakes](../../grammar/sakes.md) endings are (**-l** lasting / **-m** unstated / **-r** immediate):
+Turn the extra-noun `e` hook into a possession series whose ending is a time horizon, the way [sakes](/sakes) endings are (**-l** lasting / **-m** unstated / **-r** immediate):
 
 | Form | Proposed meaning |
 |------|------------------|

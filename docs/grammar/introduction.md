@@ -30,7 +30,7 @@ English *it* and *they* can point to almost anything mentioned earlier. In Agebo
 
 ### Semantic {#semantic}
 
-Each dictionary entry has one sense. When a meaning is related to a word but belongs to a different area of life, it gets its own compound instead of becoming a second sense: the area first, then the kind. For example, *love* in the *crush* sense is its own compound, not a second meaning of *love*. The [compound pages](compounds.md) teach how to spell these.
+Each dictionary entry has one sense. When a meaning is related to a word but belongs to a different area of life, it gets its own compound instead of becoming a second sense: the area first, then the kind. For example, *love* in the *crush* sense is its own compound, not a second meaning of *love*. The [compound pages](/compounds) teach how to spell these.
 
 ### Tools those goals make possible
 <a id="tools"></a>
@@ -47,9 +47,9 @@ Grammar pages are grouped in the sidebar as **Beginner**, **Intermediate**, and 
 
 Follow those three groups in the site sidebar. Intermediate and Advanced start collapsed; the group that contains the page you are on opens.
 
-Start with [phonology.md](phonology.md) for letters and word edges, then [word-endings.md](word-endings.md) for citation endings (by then you can already say your name as a [greeting](word-endings.md#greeting)), then [clause.md](clause.md) for clause shape, [speech-moves.md](speech-moves.md) for turns, and [dependents.md](dependents.md).
+Start with [phonology.md](/phonology) for letters and word edges, then [word-endings.md](/word-endings) for citation endings (by then you can already say your name as a [greeting](/word-endings#greeting)), then [clause.md](/clause) for clause shape, [speech-moves.md](/speech-moves) for turns, and [dependents.md](/dependents).
 
-When you finish a group, take its **Review** at the end of that group ([Beginner](review.md), [Intermediate](review-intermediate.md), [Advanced](review-advanced.md)). Each review has one item per page at that level, and each answer links back to the section it tests.
+When you finish a group, take its **Review** at the end of that group ([Beginner](/review), [Intermediate](/review-intermediate), [Advanced](/review-advanced)). Each review has one item per page at that level, and each answer links back to the section it tests.
 
 The sidebar **Tools** list has [Terminology](terminology.md), which gives the English names these pages use for grammar, each with a short gloss and a link to the section that teaches it. It also has [Lexicon](lexicon.md), for looking up roots and respelling an English name, and [Inspect](inspect.md), for word-by-word breakdowns.
 

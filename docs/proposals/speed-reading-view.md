@@ -23,7 +23,7 @@ An earlier sketch replaced every word with its root's emoji, with the part-of-sp
 
 Use pictures only where they make a passage easy to find: one per **topic stretch**.
 
-`syntax-highlighting.md` draws a left rule beside each topic stretch: the sentences from a topic-setting `/x/` word ([topic](../grammar/topic.md#topic)) until the topic changes or clears. This proposal puts the topic's emoji at the top of that rule. Down the left edge of a page, the reader sees a short column of pictures, one per stretch, which works like a table of contents. There are few pictures, so each one still stands out. The text itself does not change.
+`syntax-highlighting.md` draws a left rule beside each topic stretch: the sentences from a topic-setting `/x/` word ([topic](/topic#topic)) until the topic changes or clears. This proposal puts the topic's emoji at the top of that rule. Down the left edge of a page, the reader sees a short column of pictures, one per stretch, which works like a table of contents. There are few pictures, so each one still stands out. The text itself does not change.
 
 | Topic event | Margin |
 |-------------|--------|
@@ -36,7 +36,7 @@ A name made from a root has that root's picture: `xuzozen` *now, about Uzozen* s
 
 ### When there is no picture
 
-Some topics have no single emoji: a foreign name in a [span](../grammar/span-mention.md#topic-quotes), a root with no emoji, or a compound whose parts do not combine well into one picture. For these, write the topic word itself in small text at the top of the rule. The reader still has a heading to scan for; it is just text.
+Some topics have no single emoji: a foreign name in a [span](/span-mention#topic-quotes), a root with no emoji, or a compound whose parts do not combine well into one picture. For these, write the topic word itself in small text at the top of the rule. The reader still has a heading to scan for; it is just text.
 
 Same rule as `syntax-highlighting.md`: where the parser cannot resolve the topic, show nothing.
 
@@ -69,7 +69,7 @@ Topic stretches matter on long text: dialogues, readings, and multi-paragraph pa
 ## Open questions
 
 - **Abstract topics.** `xuzozem` (*grace* as topic) would show 🦢. Show it anyway, show it with a mark for *abstract sense*, or fall back to text?
-- **Compound topics.** A noun pair (`xubedaxuyudal` *peanut butter*), a multipart name, or a [role compound](../grammar/roles.md#role-compounds) (`xwazuduyel` *people who teach*): show each part's picture (up to two), only the head's, or text?
+- **Compound topics.** A noun pair (`xubedaxuyudal` *peanut butter*), a multipart name, or a [role compound](/roles#role-compounds) (`xwazuduyel` *people who teach*): show each part's picture (up to two), only the head's, or text?
 - **Repeated introductions.** When the same root is introduced again (not returned), should the picture be the same, or marked as a new stretch about a new one of that kind?
 - **Long stretches.** Should a stretch that runs past one screen repeat its picture at the top of each screen while scrolling?
 

@@ -1,6 +1,5 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { join } from "node:path";
 import { describe, it } from "node:test";
 
 import { CLOSED } from "./closed-roots.js";
@@ -26,7 +25,7 @@ import { parsePublishedCsv } from "./lexicon-search.js";
 import { pageSections } from "./lint/learning-order.js";
 import { PRACTICE_TITLE_RE } from "./lint/practice-sections.js";
 import { loadDefaultTables } from "./parse/index.js";
-import { readData, REPO_ROOT } from "./repo-paths.js";
+import { grammarFile, readData } from "./repo-paths.js";
 
 const tables = loadDefaultTables();
 const [dog, book, walk] = ["dog", "book", "walk"].map((sense) => {
@@ -316,7 +315,7 @@ describe("core column", () => {
       const [file, id] = core!.split("#") as [string, string | undefined];
       let markdown: string;
       try {
-        markdown = readFileSync(join(REPO_ROOT, "docs", "grammar", file), "utf8");
+        markdown = readFileSync(grammarFile(file), "utf8");
       } catch {
         bad.push(`${key}: ${core} (no page)`);
         continue;

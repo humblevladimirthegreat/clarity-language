@@ -2,7 +2,7 @@
 
 **Status:** PROPOSED  
 **Related:** reverse of `diphone-tts.md`; long-term TODO *speech to text*; parser assumed shipped ([parser-pipeline.md](../meta/parser-pipeline.md))  
-**Design authority:** spoken forms stay in the grammar docs ([phonology.md](../grammar/phonology.md), [spans.md](../grammar/spans.md#writing-vs-speech), [numbers.md](../grammar/number-markers.md#writing-preferred-shorthand), [clause.md](../grammar/clause.md#role-letters)). This proposal covers **tooling only**: microphone audio → Agebon letters → optional preferred writing. It does **not** train an Agebon acoustic model.
+**Design authority:** spoken forms stay in the grammar docs ([phonology.md](/phonology), [spans.md](/spans#writing-vs-speech), [numbers.md](/number-markers#writing-preferred-shorthand), [clause.md](/clause#role-letters)). This proposal covers **tooling only**: microphone audio → Agebon letters → optional preferred writing. It does **not** train an Agebon acoustic model.
 
 ## Motivation
 
@@ -16,7 +16,7 @@ Agebon is a small, regular sound system with spelling that shows the sound. The 
 
 1. Transcribe **native Agebon speech** to the **spoken channel** (CV number words, spoken span opens/closes, ordinary `PoS+root+ending`).
 2. Reuse a **pretrained phoneme ASR** (no Agebon recordings, no fine-tune on eSpeak).
-3. Map phones → letters with the **same table** as [phonology.md](../grammar/phonology.md) / [`src/tts/phonemes.ts`](../../src/tts/phonemes.ts), including collapse of unvoiced **style** allophones.
+3. Map phones → letters with the **same table** as [phonology.md](/phonology) / [`src/tts/phonemes.ts`](../../src/tts/phonemes.ts), including collapse of unvoiced **style** allophones.
 4. Segment words using **phonotactics** (coda only at the word edge: **-l / -m / -n / -r**, optional **-x**).
 5. Optionally **snap** tokens to published roots and closed lists; optionally **compress** spoken numbers/spans to preferred writing (inverse of TTS `toSpeech`).
 6. Keep fixtures **doc-locked**: phone collapse, letter map, and writing↔speech maps quoted from grammar pages.
@@ -67,9 +67,9 @@ Microphone audio
 | Stage | Input | Output | Owns |
 |-------|--------|--------|------|
 | **Phoneme ASR** | Wav / mic | Phone sequence | Third-party model; thin adapter |
-| **`collapseAllophones`** | IPA | Agebon-target IPA | [phonology.md](../grammar/phonology.md) (no voice contrast) |
+| **`collapseAllophones`** | IPA | Agebon-target IPA | [phonology.md](/phonology) (no voice contrast) |
 | **`phonesToLetters`** | Target IPA | Letter stream (`u a o e` … `x`) | Inverse of [`phonemes.ts`](../../src/tts/phonemes.ts) |
-| **`segmentWords`** | Letter stream | Speech-surface tokens | [phonotactics](../grammar/phonotactics.md#phonotactics) |
+| **`segmentWords`** | Letter stream | Speech-surface tokens | [phonotactics](/phonotactics#phonotactics) |
 | **`snapLexicon`** | Tokens | Tokens (nearest legal word) | Lexicon CSV + closed lists |
 | **`toWriting`** | Speech tokens | Preferred writing | Inverse of TTS expansions |
 
@@ -120,7 +120,7 @@ Walk the letter stream with the same syllabify rules as TTS (onset + vowel; left
 - **-l / -m / -n / -r**
 - same plus **-x** (`lx` `mx` `nx` `rx`)
 
-Prefix-less [citation](../grammar/word-endings.md#citation-forms) is legal (root + ending, no PoS). **`PoS+r`** is reserved for [number words](../grammar/phonotactics.md#number-word-exception). Revisers (`al`, `am`, …) stay prefix-less closed words.
+Prefix-less [citation](/word-endings#citation-forms) is legal (root + ending, no PoS). **`PoS+r`** is reserved for [number words](/phonotactics#number-word-exception). Revisers (`al`, `am`, …) stay prefix-less closed words.
 
 If segmentation fails, return a **partial transcript** plus a skip/error span (do not invent phones). Same spirit as TTS: do not speak or hear material that is not in the signal.
 
@@ -246,8 +246,8 @@ Expect the phoneme model to dwarf the TS glue. Keep it off the critical docs ren
 | Topic | Doc |
 |-------|-----|
 | Forward speech stack | `diphone-tts.md` |
-| Phonology / IPA | [phonology.md](../grammar/phonology.md) |
-| Writing vs speech (spans) | [spans.md](../grammar/spans.md#writing-vs-speech) |
-| Number shorthand vs speech | [numbers.md](../grammar/number-markers.md#writing-preferred-shorthand) |
-| Orthography / citation | [phonology.md](../grammar/phonology.md), [word-endings.md](../grammar/word-endings.md#citation-forms) |
+| Phonology / IPA | [phonology.md](/phonology) |
+| Writing vs speech (spans) | [spans.md](/spans#writing-vs-speech) |
+| Number shorthand vs speech | [numbers.md](/number-markers#writing-preferred-shorthand) |
+| Orthography / citation | [phonology.md](/phonology), [word-endings.md](/word-endings#citation-forms) |
 | Parser | [parser-pipeline.md](../meta/parser-pipeline.md) |

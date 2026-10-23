@@ -16,14 +16,15 @@
 // swapped). The feelings lesson is exempt from the first check: the sheet
 // teaches the feeling-word pattern with one worked example, not the lesson's
 // vocabulary.
-import { readdirSync, readFileSync } from "node:fs";
-import { join, posix } from "node:path";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { basename, join, posix, relative } from "node:path";
 
 import { classifyAgebonSpan } from "../src/lint/agebon-docs.js";
 import { spans, tables } from "../src/lint/cheat-sheet-tables.js";
 import { pageSections, type PageSections } from "../src/lint/learning-order.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
-import { REPO_ROOT } from "../src/repo-paths.js";
+import { listMarkdown } from "../src/markdown-files.js";
+import { grammarFile, REPO_ROOT } from "../src/repo-paths.js";
 
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
 const sheetsDir = "cheat-sheets";
@@ -90,7 +91,8 @@ function loadPage(page: string) {
   if (!pageCache.has(page)) {
     let markdown: string;
     try {
-      markdown = readFileSync(join(grammarDir, page), "utf8");
+      const path = existsSync(join(grammarDir, page)) ? join(grammarDir, page) : grammarFile(basename(page));
+      markdown = readFileSync(path, "utf8");
     } catch {
       pageCache.set(page, null);
       return null;
@@ -103,7 +105,12 @@ function loadPage(page: string) {
 /** Text of the section a link on `sheet` lands in (the whole page when it has no anchor). */
 function linkedText(target: string, sheet: string): string | undefined {
   const [file, id] = target.split("#");
-  const page = loadPage(file ? posix.join(posix.dirname(sheet), file) : sheet);
+  const resolved = !file
+    ? sheet
+    : file.startsWith("/")
+      ? `${file.replace(/^\//, "").replace(/\.html?$/, "")}.md`.replace(/\.md\.md$/, ".md")
+      : posix.join(posix.dirname(sheet), file);
+  const page = loadPage(resolved.endsWith(".md") ? resolved : `${resolved}.md`);
   if (!page) return undefined;
   if (!id) return page.markdown;
   const section = page.sections.anchors.get(id);
@@ -146,8 +153,9 @@ function lintGrammarSheet(file: string): void {
 function lintCoverage(): void {
   const sheetText = new Map<string, string>();
   for (const [id, file] of Object.entries(SHEETS)) sheetText.set(id, readFileSync(join(grammarDir, sheetsDir, file), "utf8"));
-  for (const page of readdirSync(grammarDir).filter((f) => f.endsWith(".md"))) {
-    const markdown = readFileSync(join(grammarDir, page), "utf8");
+  for (const file of listMarkdown(grammarDir)) {
+    const page = relative(grammarDir, file).replaceAll("\\", "/");
+    const markdown = readFileSync(file, "utf8");
     for (const m of markdown.matchAll(MARKER_RE)) {
       const where = `${page}:${lineNumberAt(markdown, m.index!)}`;
       const id = m[1]!;

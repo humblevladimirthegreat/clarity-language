@@ -48,7 +48,7 @@
  * scripts/frequency-coverage.ts has downloaded the list), and tmp/english-helper-report.md.
  */
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { basename, join } from "node:path";
 
 import { parseCsv, serializeCsv } from "../src/csv.js";
 import { analyzeEnglish, suggestionLinks, TIERS, type Analysis, type Slot, type Suggestion } from "../src/english-helper/analyze.js";
@@ -64,6 +64,7 @@ import { practiceItems } from "../src/lint/practice-items.js";
 import { docExamples, examplePair, loadPromptContext, tableExamples } from "../src/parse/llm-examples.js";
 import { constructionRegistry } from "../src/parse/constructions.js";
 import { loadDefaultTables, parseWithTables } from "../src/parse/index.js";
+import { listMarkdown } from "../src/markdown-files.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 
 const GRAMMAR_DIR = join(REPO_ROOT, "docs", "grammar");
@@ -91,8 +92,8 @@ const tables = loadDefaultTables();
 const data = loadHelperData();
 const context = loadPromptContext(tables);
 const registry = constructionRegistry(tables.overlays.values());
-const pages = readdirSync(GRAMMAR_DIR).filter((p) => p.endsWith(".md")).sort();
-const markdownOf = new Map(pages.map((page) => [page, readFileSync(join(GRAMMAR_DIR, page), "utf8")]));
+const pages = listMarkdown(GRAMMAR_DIR).map((file) => basename(file)).sort();
+const markdownOf = new Map(listMarkdown(GRAMMAR_DIR).map((file) => [basename(file), readFileSync(file, "utf8")]));
 
 /** Content roots, live-compound parts, and role-compound stems the parse tree uses. */
 function usedRoots(tree: unknown): string[] {

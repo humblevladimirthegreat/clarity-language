@@ -1,7 +1,8 @@
 import { existsSync, statSync } from "node:fs";
-import { dirname, resolve } from "node:path";
+import { basename, dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import config from "../docs/grammar/.vitepress/config.js";
+import { pageRelPath } from "../docs/grammar/.vitepress/lib/reading-order.js";
 
 const grammarDir = resolve(dirname(fileURLToPath(import.meta.url)), "../docs/grammar");
 
@@ -15,7 +16,13 @@ function pagePath(link: string): string | undefined {
   if (/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(link)) return;
   const pathname = link.split(/[?#]/, 1)[0]!;
   const relativePath = pathname.replace(/^\//, "");
-  return resolve(grammarDir, relativePath);
+  if (!relativePath) return resolve(grammarDir, "index.md");
+  if (relativePath.endsWith("/")) return resolve(grammarDir, relativePath, "index.md");
+  const parts = relativePath.split("/").filter(Boolean);
+  const last = parts.at(-1)!;
+  const file = /\.(?:html?|md)$/i.test(last) ? last.replace(/\.html?$/i, ".md") : `${last}.md`;
+  if (parts.length === 1) return resolve(grammarDir, pageRelPath(file));
+  return resolve(grammarDir, ...parts.slice(0, -1), file);
 }
 
 function collectItems(value: unknown): SidebarItem[] {

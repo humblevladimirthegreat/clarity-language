@@ -28,21 +28,21 @@ export const beginnerLessons = [
   { text: 'Role compounds', link: '/roles' },
   { text: 'Compounds', link: '/compounds' },
   { text: 'Intention', link: '/intention' },
-  { text: "Speech act: firm and soft", link: "/firm-soft" },
-  { text: "Adjectives before the noun", link: "/left-bound-adjectives" },
-  { text: "Extra nouns and whose", link: "/extra-noun-hooks" },
-  { text: "What kind, when, where, whose, how, why", link: "/fill-ask-jobs" },
-  { text: "Here, there, and somewhere", link: "/here-there" },
-  { text: "Social relations", link: "/social-ties" },
-  { text: "Clause sequence", link: "/clause-sequence" },
-  { text: "Digit-strings and time", link: "/digit-strings" },
-  { text: "Can and can't", link: "/can-and-cant" },
-  { text: "Live and memory", link: "/live-and-memory" },
-  { text: "How far a label reaches", link: "/label-seams" },
-  { text: "Thanks and sorry", link: "/thanks-and-sorry" },
-  { text: "Ought for a sake", link: "/ought-for-a-sake" },
-  { text: "Already, still, not yet, no longer", link: "/already-still-yet" },
-  { text: "Fault", link: "/fault" },
+  { text: 'Adjectives before the noun', link: '/left-bound-adjectives' },
+  { text: 'Speech act: firm and soft', link: '/firm-soft' },
+  { text: 'Extra nouns and whose', link: '/extra-noun-hooks' },
+  { text: 'Here, there, and somewhere', link: '/here-there' },
+  { text: 'What kind, when, where, whose, how, why', link: '/fill-ask-jobs' },
+  { text: 'Social relations', link: '/social-ties' },
+  { text: 'Clause sequence', link: '/clause-sequence' },
+  { text: 'Digit-strings and time', link: '/digit-strings' },
+  { text: 'How far a label reaches', link: '/label-seams' },
+  { text: 'Fault', link: '/fault' },
+  { text: 'Ought for a sake', link: '/ought-for-a-sake' },
+  { text: 'Thanks and sorry', link: '/thanks-and-sorry' },
+  { text: 'Live and memory', link: '/live-and-memory' },
+  { text: 'Already, still, not yet, no longer', link: '/already-still-yet' },
+  { text: "Can and can't", link: '/can-and-cant' },
 ]
 
 /** Intermediate sittings, in the same topic order as the Beginner group. */
@@ -57,6 +57,7 @@ export const intermediateLessons = [
   { text: 'Collectives', link: '/collectives' },
   { text: 'Label scope', link: '/label-scope' },
   { text: 'Rank joins', link: '/rank-joins' },
+  { text: 'Join across roles', link: '/join-across-roles' },
   { text: 'Polar inventory and rhetorical', link: '/polar-inventory' },
   { text: 'Fill-ask roles', link: '/fill-ask-roles' },
   { text: 'Ending grids', link: '/ending-grids' },
@@ -66,17 +67,17 @@ export const intermediateLessons = [
   { text: 'Mention and scope islands', link: '/span-mention' },
   { text: 'Word shape, markers, and endings', link: '/number-markers' },
   { text: 'Digitless and exponents', link: '/digitless-exponents' },
+  { text: 'Numbers in use', link: '/numbers-applied' },
   { text: 'Comparative arity and scales', link: '/comparative-arity' },
-  { text: 'Iff, fault, and CAUSE', link: '/iff-fault' },
+  { text: 'Iff and CAUSE', link: '/iff-fault' },
   { text: 'Prescription and motive', link: '/prescription' },
   { text: 'Feelings and permission', link: '/feelings-permission' },
   { text: 'Evidentiality', link: '/evidentiality' },
+  { text: 'Vague amounts', link: '/vague-amounts' },
   { text: 'Notional and standing', link: '/notional-standing' },
   { text: 'Viewpoint and landmark', link: '/viewpoint' },
   { text: 'Compound families', link: '/compound-families' },
-  { text: 'Ability, decision, and try', link: '/ability' },
-  { text: 'Join across roles', link: '/join-across-roles' },
-  { text: 'Numbers in use', link: '/numbers-applied' },
+  { text: 'Decision and try', link: '/ability' },
 ]
 
 /** Advanced sittings, in the same topic order as the earlier groups. */
@@ -139,6 +140,21 @@ export const readingOrder: LessonLink[] = [
 function pageFile(link: string): string {
   const path = link.split(/[?#]/, 1)[0]!.replace(/^\//, '').replace(/\.(?:md|html)$/, '')
   return `${path || 'index'}.md`
+}
+
+const sittingNames = (lessons: readonly LessonLink[]) => new Set(lessons.map((item) => pageFile(item.link)))
+
+const beginnerPages = sittingNames(beginnerLessons)
+const intermediatePages = sittingNames(intermediateLessons)
+const advancedPages = sittingNames(advancedLessons)
+
+/** Disk path of a sitting or review relative to `docs/grammar/`. Public URLs stay flat. */
+export function pageRelPath(page: string): string {
+  const name = page.replace(/^.*\//, '')
+  if (name === 'review.md' || beginnerPages.has(name)) return `beginner/${name}`
+  if (name === 'review-intermediate.md' || intermediatePages.has(name)) return `intermediate/${name}`
+  if (name === 'review-advanced.md' || advancedPages.has(name)) return `advanced/${name}`
+  return name
 }
 
 /** Sidebar curriculum pages (orientation, sittings, and each group’s review). */

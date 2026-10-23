@@ -4,7 +4,7 @@
 import { readFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { isLevelReview, lessonPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { isLevelReview, lessonPages, pageRelPath } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { pageSections, sectionAt, type Band, type PageSections } from "../src/lint/learning-order.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
 
@@ -20,7 +20,7 @@ type Page = { markdown: string; sections: PageSections };
 
 const pages = new Map<string, Page>();
 for (const name of stages) {
-  const markdown = readFileSync(resolve(grammarDir, name), "utf8");
+  const markdown = readFileSync(resolve(grammarDir, pageRelPath(name)), "utf8");
   pages.set(name, { markdown, sections: pageSections(name, markdown) });
 }
 
@@ -34,8 +34,9 @@ const isAfter = (a: number[], b: number[]) => (a[0]! - b[0]! || a[1]! - b[1]! ||
 function targetPage(href: string, current: string): string | undefined {
   if (/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(href)) return;
   const path = href.replace(/^\.\//, "").replace(/^\//, "");
-  if (path.includes("/")) return;
-  const stem = path.replace(/\.(?:md|html)$/, "");
+  const leaf = path.includes("/") ? path.split("/").pop()! : path;
+  if (leaf.includes("/") || leaf === "..") return;
+  const stem = leaf.replace(/\.(?:md|html)$/, "");
   return `${stem || current.replace(/\.md$/, "")}.md`;
 }
 

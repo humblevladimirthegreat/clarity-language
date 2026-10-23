@@ -8,11 +8,11 @@
  * construction homes on retired band fragments. `--write` applies them, then
  * run `npm run cheat-sheet-blocks -- --write` and `npm run build`.
  */
-import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
-import { join, relative } from "node:path";
+import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import { dirname, join, relative } from "node:path";
 
 import { BANDS, type Band } from "../src/lint/learning-order.js";
-import { REPO_ROOT } from "../src/repo-paths.js";
+import { grammarFile, REPO_ROOT } from "../src/repo-paths.js";
 import {
   appendObjectToExportedArray,
   peelBand,
@@ -124,8 +124,8 @@ function applyMaps(
 
 function main(): void {
   const options = parseArgs(process.argv.slice(2));
-  const parentPath = join(grammarDir, options.parent);
-  const sittingPath = join(grammarDir, options.to);
+  const parentPath = grammarFile(options.parent);
+  const sittingPath = join(grammarDir, options.band, options.to);
   if (!existsSync(parentPath)) throw new Error(`missing ${relative(REPO_ROOT, parentPath)}`);
   if (existsSync(sittingPath)) throw new Error(`${options.to} already exists`);
 
@@ -159,6 +159,7 @@ function main(): void {
     return;
   }
 
+  mkdirSync(dirname(sittingPath), { recursive: true });
   writeFileSync(sittingPath, result.sitting);
   writeFileSync(parentPath, result.parent);
   writeFileSync(

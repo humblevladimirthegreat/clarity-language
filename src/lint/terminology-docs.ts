@@ -30,10 +30,15 @@ function hasLabel(gloss: string, label: string): boolean {
   return new RegExp(`(?<![A-Za-z])${label}(?![A-Za-z])`).test(gloss);
 }
 
+const PAGE_HREF = /\/?(?:(?:beginner|intermediate|advanced)\/)?([a-z][a-z0-9-]+)(?:\.md)?/;
+
 /** Links to sibling grammar pages, with or without an anchor (`[Joins](joins.md)`). */
 function pageLinks(markdown: string): { index: number; page: string }[] {
   const blanked = markdown.replace(/`[^`\n]*`/g, (m) => " ".repeat(m.length));
-  return [...blanked.matchAll(/\]\(([a-z][a-z0-9-]*\.md)(?:#[^)\s]*)?\)/g)].map((m) => ({ index: m.index!, page: m[1]! }));
+  return [...blanked.matchAll(new RegExp(`\\]\\(${PAGE_HREF.source}(?:#[^)\\s]*)?\\)`, "g"))].map((m) => ({
+    index: m.index!,
+    page: `${m[1]}.md`,
+  }));
 }
 
 type Entry = { index: number; end: number; pages: Set<string> };
@@ -190,15 +195,16 @@ export function lintTerminology(
     const cells = line.startsWith("|") ? line.split("|").slice(1, -1) : [line];
     let cellStart = lineStart + (line.startsWith("|") ? 1 : 0);
     for (const cell of cells) {
-      const links = [...cell.matchAll(/\[([^\]]+)\]\(([a-z][a-z0-9-]*\.md)(?:#[^)\s]*)?\)/g)];
+      const links = [...cell.matchAll(new RegExp(`\\[([^\\]]+)\\]\\(${PAGE_HREF.source}(?:#[^)\\s]*)?\\)`, "g"))];
       const rest = cell.replace(/\[[^\]]+\]\([^)]*\)/g, "").replace(/[\s,·]/g, "");
       if (links.length > 0 && rest === "") {
         const named = new Set<string>();
         for (const m of links) {
           // A second link to the same page names a section of it.
-          if (named.has(m[2]!)) continue;
-          named.add(m[2]!);
-          const name = names.get(m[2]!);
+          const page = `${m[2]}.md`;
+          if (named.has(page)) continue;
+          named.add(page);
+          const name = names.get(page);
           if (name && m[1]!.toLowerCase() !== name.toLowerCase()) {
             findings.push({ index: cellStart + m.index!, detail: `link text "${m[1]}" should name ${m[2]} as the sidebar does: "${name}"` });
           }

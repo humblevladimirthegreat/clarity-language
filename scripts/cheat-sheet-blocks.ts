@@ -29,7 +29,8 @@ import { parseOverlayCsv, type OverlayRow } from "../src/lexicon-search.js";
 import { isExtraNounHook } from "../src/parse/hook-compounds.js";
 import { pageSections, type Band, type PageSections } from "../src/lint/learning-order.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
-import { readData, REPO_ROOT } from "../src/repo-paths.js";
+import { pageRelPath } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { grammarFile, readData, REPO_ROOT } from "../src/repo-paths.js";
 
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
 const sheetsDir = join(grammarDir, "cheat-sheets");
@@ -46,7 +47,7 @@ const pageCache = new Map<string, { title: string; sections: PageSections }>();
 
 function page(file: string) {
   if (!pageCache.has(file)) {
-    const markdown = readFileSync(join(grammarDir, file), "utf8");
+    const markdown = readFileSync(grammarFile(file), "utf8");
     const title = /^#\s+(.+?)(?:\s*\{#[^}]+\})?\s*$/m.exec(markdown)?.[1] ?? file;
     pageCache.set(file, { title, sections: pageSections(file, markdown) });
   }
@@ -55,14 +56,15 @@ function page(file: string) {
 
 const plain = (s: string) => s.replace(/[*`]/g, "").replace(/\s*\{#[^}]+\}$/, "").trim();
 
-/** `[Section title](../page.md#id)` (sheets sit one folder down) and the section's stage letter. */
+/** `[Section title](../band/page.md#id)` (sheets sit one folder down) and the section's stage letter. */
 function sectionCell(anchor: string): { link: string; stage: string } {
   const [file, id] = anchor.split("#") as [string, string | undefined];
   const p = page(file);
   const section = id ? p.sections.anchors.get(id) : undefined;
   if (id && !section) throw new Error(`anchor ${anchor} lands in no section`);
   const title = !section || section.level <= 2 ? plain(p.title) : plain(section.title);
-  return { link: `[${title}](../${anchor})`, stage: section?.band ? STAGE[section.band] : "" };
+  const href = `/${file.replace(/\.md$/, "")}${id ? `#${id}` : ""}`;
+  return { link: `[${title}](${href})`, stage: section?.band ? STAGE[section.band] : "" };
 }
 
 // ---------------------------------------------------------------- sources

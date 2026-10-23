@@ -24,9 +24,9 @@ Here is a common ruminating thought in English: *I failed. I'm no good at this, 
 
 That is five words, and three of them make you choose something English lets you skip. Each choice is a question about the thought itself, and answering it honestly is what turned *never* into *yet*:
 
-- `thabor` says how you know: a gut sense, and only a faint one. Other words say you saw it, remember it, worked it out from clues, or were told, and other endings say the hunch is strong. Said once, it covers the next sentence too ([evidentiality](evidentiality.md#evidentiality)).
-- `guwathum` names what the failure costs: competence, one of the [sakes](sakes.md) (things that are good for a person). Its ending says the cost can change with effort or circumstance; other endings say it is lasting, or only for now. Other sakes, such as relatedness or purpose, name a different cost, and swapping the *unmet* vowel for the *met* one names a gain instead. The sake word also makes the failure yours, with no separate word for *my*.
-- `veverexom` is *can't succeed*, but only *yet*: it may still change. Other vowels say *right now* (you usually can) or *never* ([ability](can-and-cant.md#ability)).
+- `thabor` says how you know: a gut sense, and only a faint one. Other words say you saw it, remember it, worked it out from clues, or were told, and other endings say the hunch is strong. Said once, it covers the next sentence too ([evidentiality](/evidentiality#evidentiality)).
+- `guwathum` names what the failure costs: competence, one of the [sakes](/sakes) (things that are good for a person). Its ending says the cost can change with effort or circumstance; other endings say it is lasting, or only for now. Other sakes, such as relatedness or purpose, name a different cost, and swapping the *unmet* vowel for the *met* one names a gain instead. The sake word also makes the failure yours, with no separate word for *my*.
+- `veverexom` is *can't succeed*, but only *yet*: it may still change. Other vowels say *right now* (you usually can) or *never* ([ability](/can-and-cant#ability)).
 
 Agebon does not force the gentler answer. You can still say *I can never succeed* (`zuwon veverexum.`), call the hunch strong, or call the cost lasting, and sometimes that is true. But English *I'll never be good at this* does not ask how you know or how lasting it is, so the harsh version slips by unchecked. In Agebon you cannot say *can't* without choosing among *right now*, *yet*, and *never*, and that one moment of choosing is often enough to notice that *yet* is the honest answer.
 
@@ -56,7 +56,7 @@ A hard moment, a label, or a past pattern hardens into a fixed fact about a pers
 
 English *Olazun is angry* can mean one outburst or the kind of person Olazun is. One act slides into a verdict on someone's nature, and a name for a problem (*lazy*, *anxious*) starts to sound like its cause.
 
-[Label scope](label-seams.md#label-scope) lets any label say what kind of claim it makes: about this stretch of doing, about a practiced role, about one relationship (*a stranger to Uzozen*), or about a type that follows the person across scenes.
+[Label scope](/label-seams#label-scope) lets any label say what kind of claim it makes: about this stretch of doing, about a practiced role, about one relationship (*a stranger to Uzozen*), or about a type that follows the person across scenes.
 
 Marking a label's reach helps you describe what happened without turning it into a verdict on who someone is, yourself included.
 
@@ -66,7 +66,7 @@ In English: [Claritish: Labels](claritish/labels.md).
 
 English *I can’t* can mean a temporary block, a lasting inability, or a choice not to.
 
-[Ability](can-and-cant.md#ability) says whether someone can do an activity or have a property, and for *can’t*, which kind: not right now, not now but it may change, or not ever. Choosing not to is an ordinary *won’t*, not a kind of *can’t*.
+[Ability](/can-and-cant#ability) says whether someone can do an activity or have a property, and for *can’t*, which kind: not right now, not now but it may change, or not ever. Choosing not to is an ordinary *won’t*, not a kind of *can’t*.
 
 Saying *can’t right now* or *may yet change* instead of *impossible* helps you stop treating a temporary block as a fixed incapability.
 
@@ -74,9 +74,9 @@ Saying *can’t right now* or *may yet change* instead of *impossible* helps you
 
 English *has done* and *used to* mix two questions: **when** something happened, and whether it **still matters now**. *Used to* also leaves open whether a habit still describes you today.
 
-[RESIDUE](notional-standing.md#residue) says the result of a past event still counts now (a debt still unpaid, a door still shut). [FORMER](notional-standing.md#former-climate) says a pattern was usual but you are **not** claiming it as how things are now (cue: usual weather vs today’s report). Neither word is a past tense: each can combine with what you see now, what you remember, or a forecast.
+[RESIDUE](/notional-standing#residue) says the result of a past event still counts now (a debt still unpaid, a door still shut). [FORMER](/notional-standing#former-climate) says a pattern was usual but you are **not** claiming it as how things are now (cue: usual weather vs today’s report). Neither word is a past tense: each can combine with what you see now, what you remember, or a forecast.
 
-Because residue is marked, an event you mention without it counts as closed, so carrying a past event forward is a choice rather than a default, and rumination stays optional. Marking a former pattern lets *I was always this way* describe the past without claiming the present. [As-of](as-of.md#as-of) names the moment that leftovers and patterns are measured from (*as of Friday*), so you can weigh an old situation by its own date instead of against today. For English *if they had … they would*, the as-of moment is a placeholder you do not claim is real, which is not the same as pretending.
+Because residue is marked, an event you mention without it counts as closed, so carrying a past event forward is a choice rather than a default, and rumination stays optional. Marking a former pattern lets *I was always this way* describe the past without claiming the present. [As-of](/as-of#as-of) names the moment that leftovers and patterns are measured from (*as of Friday*), so you can weigh an old situation by its own date instead of against today. For English *if they had … they would*, the as-of moment is a placeholder you do not claim is real, which is not the same as pretending.
 
 #### Treating a feeling as a label {#trap-feeling}
 
@@ -86,7 +86,7 @@ A feeling, a thanks, or a *should* arrives as a single opaque label, so what is 
 
 English often blurs *I want*, *I need*, *I should*, and *this is good for me*, so gratitude, motive, and ought run together.
 
-Agebon’s [sakes](sakes.md) are a fixed list of things that are good for a person (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or unspecified), and each sake word also says how you stand toward that sake:
+Agebon’s [sakes](/sakes) are a fixed list of things that are good for a person (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or unspecified), and each sake word also says how you stand toward that sake:
 
 | Stance       | Meaning                                                                                                                                         |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -103,7 +103,7 @@ In English: [Claritish: Oughts and motives](claritish/oughts-and-motives.md).
 
 Opaque labels (*angry*, *anxious*, *proud*) hide which sake is in play and what to ask for.
 
-Agebon [builds an emotion](feelings-permission.md#emotion-compose) from three parts: a [sake](sakes.md) and how it stands (usually met or unmet), where the feeling sits or what it points at, and its motion (surging, flowing, or still).
+Agebon [builds an emotion](/feelings-permission#emotion-compose) from three parts: a [sake](/sakes) and how it stands (usually met or unmet), where the feeling sits or what it points at, and its motion (surging, flowing, or still).
 
 Building the feeling from those parts shows you what to ask for, instead of leaving you stuck at the label.
 
@@ -113,11 +113,11 @@ In English: [Claritish: Feelings in three parts](claritish/feelings.md).
 
 English *thank you* says you are grateful, but not for what.
 
-Agebon has no set phrase for [thanks](thanks-and-sorry.md#thanks-sorry). Instead, you say which of your sakes was met; saying that to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](prescription.md#whose-stake)). Put the sake word right after a thing you own and it appreciates that thing, with no separate word for *my*, so appreciating what you already have takes one word ([personal possession](sakes.md#personal-possession)).
+Agebon has no set phrase for [thanks](/thanks-and-sorry#thanks-sorry). Instead, you say which of your sakes was met; saying that to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](/prescription#whose-stake)). Put the sake word right after a thing you own and it appreciates that thing, with no separate word for *my*, so appreciating what you already have takes one word ([personal possession](/sakes#personal-possession)).
 
 Naming the need that was met makes thanks specific, which helps both of you notice what actually helped.
 
-In English: [Claritish: Thanks and sorry that say why](claritish/thanks-and-sorry.md).
+In English: [Claritish: Thanks and sorry that say why](/thanks-and-sorry).
 
 #### Treating a cause as a fault {#trap-fault}
 
@@ -127,7 +127,7 @@ An explanation of what made something happen slides into blame, and one cause am
 
 English *because of you* can mean you made it happen, you did something wrong, or you were one part of it.
 
-The ending on a [because](fault.md#fault) word says which claim you make: plain cause with no fault (`thahum`), a reason that broke a norm (`thahul`, *it's their fault*), or one share among other causes (`thahur`, *partly because*). Plain cause is the default.
+The ending on a [because](/fault#fault) word says which claim you make: plain cause with no fault (`thahum`), a reason that broke a norm (`thahul`, *it's their fault*), or one share among other causes (`thahur`, *partly because*). Plain cause is the default.
 
 Keeping cause apart from fault helps you explain what happened without blaming, and saying *partly* keeps one person, including you, from carrying a whole outcome.
 
@@ -149,11 +149,11 @@ A guess, a rumor, a hazy memory, or a wish gets treated as settled fact, and a f
 
 It is easy to treat a *could be* that keeps looping in your head as settled fact, and to lump memory, hearsay, gut feel, and *maybe they left* together as if they were equally good grounds.
 
-[Evidentiality](evidentiality.md#evidentiality) lets a claim about the world name **how you know**: a live look, memory, a pattern, clues, a report, or a gut sense. **MEMORY** is recalling a scene from earlier, and memory can be wrong. A live look (**LIVE**) is sensing it while it is still in view. Name the channel once and it carries over your next claims, so a whole story can rest visibly on one *so they say*.
+[Evidentiality](/evidentiality#evidentiality) lets a claim about the world name **how you know**: a live look, memory, a pattern, clues, a report, or a gut sense. **MEMORY** is recalling a scene from earlier, and memory can be wrong. A live look (**LIVE**) is sensing it while it is still in view. Name the channel once and it carries over your next claims, so a whole story can rest visibly on one *so they say*.
 
-The [ending](evidentiality.md#evidence-strength) on that evidence word says how strong the evidence is (a vivid memory or a hazy one, a reliable source or a rumor), separately from how likely the claim is. Marking how you know helps you catch overconfidence and hearsay before a claim hardens into settled fact.
+The [ending](/evidentiality#evidence-strength) on that evidence word says how strong the evidence is (a vivid memory or a hazy one, a reliable source or a rumor), separately from how likely the claim is. Marking how you know helps you catch overconfidence and hearsay before a claim hardens into settled fact.
 
-A [deduction](evidentiality.md#deduction) is its own channel, apart from strong clues: it says the claim **must** hold if its premises do, and its ending says how far you checked the steps. *It obviously follows* is easy to say about a conclusion the clues only make likely; keeping the two apart, and marking whether you grant the premises at all, helps you catch a leap dressed as a proof.
+A [deduction](/evidentiality#deduction) is its own channel, apart from strong clues: it says the claim **must** hold if its premises do, and its ending says how far you checked the steps. *It obviously follows* is easy to say about a conclusion the clues only make likely; keeping the two apart, and marking whether you grant the premises at all, helps you catch a leap dressed as a proof.
 
 In English: [Claritish: How sure are you?](claritish/could-be.md) and [How do you know?](claritish/how-you-know.md).
 
@@ -161,7 +161,7 @@ In English: [Claritish: How sure are you?](claritish/could-be.md) and [How do yo
 
 English *always* and *never* sound absolute even when you mean *usually*, and they do not say how many cases they rest on.
 
-A [general claim](universality.md#universality) says in its ending whether it allows exceptions: closed *always* (`hual`) allows none, and open *always* (`huam`) leaves them open, like *usually* or *as a rule*. A PATTERN evidence word says how much the claim rests on, from a well-established pattern (`thubel`) to only a few cases (`thuber`).
+A [general claim](/universality#universality) says in its ending whether it allows exceptions: closed *always* (`hual`) allows none, and open *always* (`huam`) leaves them open, like *usually* or *as a rule*. A PATTERN evidence word says how much the claim rests on, from a well-established pattern (`thubel`) to only a few cases (`thuber`).
 
 Saying *usually* when you mean it, and *from a few cases* when that is all you have, helps you catch overgeneralizing before one bad day becomes *it always goes wrong*.
 
@@ -173,7 +173,7 @@ A link between events, a habit, or an ought gets treated as a law the world must
 
 Everyday English *because*, *leads to*, and *have to* blur three distinctions: a condition that is enough vs one that is required, a reason in the world vs your grounds for saying something, and a wish vs a law of nature.
 
-[Causation](causation.md) gives each link its own word: *if*, *only if*, *because*, and *if and only if*. An intended result (*so that*) uses a separate word, `hovam` ([so that](dependents.md#so-that)): the action is aimed at that outcome without claiming it happens, and it is not the same as acting for a sake ([motive](prescription.md#sake-preference), `tho`). When the “rule” is really an ought (*hard work should earn promotion*), say it with a sakes [prescription](ought-for-a-sake.md#sake-force) (`the`) on the act, not with a causation word.
+[Causation](/causation) gives each link its own word: *if*, *only if*, *because*, and *if and only if*. An intended result (*so that*) uses a separate word, `hovam` ([so that](/dependents#so-that)): the action is aimed at that outcome without claiming it happens, and it is not the same as acting for a sake ([motive](/prescription#sake-preference), `tho`). When the “rule” is really an ought (*hard work should earn promotion*), say it with a sakes [prescription](/ought-for-a-sake#sake-force) (`the`) on the act, not with a causation word.
 
 Keeping these apart helps you stop treating wishes and habits as laws the world must obey.
 
@@ -185,7 +185,7 @@ Two options pose as the only ones, one way of seeing a situation poses as the si
 
 It is easy to present two options as if they were the only ones possible.
 
-[Joins](joins.md) mark what kind of list you are building (inventory, exclusive choice, inclusive *and/or*, rank, …) and whether the listed items are the **only** ones in play (**closed**) or still **open**. Open forms leave room for alternatives you have not listed.
+[Joins](/joins) mark what kind of list you are building (inventory, exclusive choice, inclusive *and/or*, rank, …) and whether the listed items are the **only** ones in play (**closed**) or still **open**. Open forms leave room for alternatives you have not listed.
 
 Saying whether a list is open or closed helps you notice false dichotomies, and leaves room for options you have not named yet.
 
@@ -193,7 +193,7 @@ Saying whether a list is open or closed helps you notice false dichotomies, and 
 
 Work talk often freezes on *the* problem or *the* solution, or ranks options against a standard nobody has said out loud.
 
-Prefer numbered alternatives (ordinary nouns plus an [ordinal](numbers.md#ordinals), like *solution 2*) so candidates stay plural and revisable. Reframe the same situation with softer wording rather than inventing a second candidate. A comparison like *worse than…* names its [bar](comparative-arity.md#bars), the standard it measures against (*than usual*, *than I expected*, *than you demand*), so the standard stays visible, including when it is only your own expectation.
+Prefer numbered alternatives (ordinary nouns plus an [ordinal](/numbers#ordinals), like *solution 2*) so candidates stay plural and revisable. Reframe the same situation with softer wording rather than inventing a second candidate. A comparison like *worse than…* names its [bar](/comparative-arity#bars), the standard it measures against (*than usual*, *than I expected*, *than you demand*), so the standard stays visible, including when it is only your own expectation.
 
 Numbering candidates, rewording, and naming the bar help you keep choices and standards revisable instead of freezing on a single framing or a hidden standard.
 
@@ -211,7 +211,7 @@ Wanting, needing, and being obliged blur into a bare *should*, and a plan or a p
 
 English *must*, *have to*, and *is supposed to* sound equally binding, whether a law requires something, a person demands it, or people only expect it. *May* hides the same split for permission.
 
-A [say word](feelings-permission.md#say-words) says where a *must* comes from: a rule, a person who demands it, only an unwritten expectation that nobody actually demands, or you yourself. It does the same for *may*: a rule allows it, someone said yes, or nobody objected.
+A [say word](/feelings-permission#say-words) says where a *must* comes from: a rule, a person who demands it, only an unwritten expectation that nobody actually demands, or you yourself. It does the same for *may*: a rule allows it, someone said yes, or nobody objected.
 
 Naming the source helps you notice when a *have to* is only an expectation, so you can decide whether to meet it.
 
@@ -221,9 +221,9 @@ In English: [Claritish: Allowed, required, agreed](claritish/allowed-required-ag
 
 English *will* mixes plan and prediction, and *I want to* can sound like a promise. It is easy to talk as if the future were already known, and a confident prediction can fuel anxiety or overconfidence. A pick, meanwhile, often sounds more locked than it is.
 
-Agebon splits them: [want](ability.md#want) for what you wish for, without meaning to do it yet; [PLAN](intention.md#plan-predict) for what you mean to do; [DECISION](ability.md#decision) for how revisable a pick is; and a [forecast](evidentiality.md#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `blral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
+Agebon splits them: [want](/ability#want) for what you wish for, without meaning to do it yet; [PLAN](/intention#plan-predict) for what you mean to do; [DECISION](/ability#decision) for how revisable a pick is; and a [forecast](/evidentiality#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `blral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
 
-Wants, plans, and decisions all live in someone's mind, so with nothing else marked they are yours; someone else's want, plan, or decision takes a [holder](evidentiality.md#holder) that says how you know it.
+Wants, plans, and decisions all live in someone's mind, so with nothing else marked they are yours; someone else's want, plan, or decision takes a [holder](/evidentiality#holder) that says how you know it.
 
 Splitting these helps you hold a want without owing it to anyone, avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and keep a revisable pick from sounding locked forever. Marking how you know someone else's intention keeps a guess about what they mean to do from passing as fact.
 
@@ -239,7 +239,7 @@ Every attempt can feel like a full commitment that either succeeds or fails, eve
 
 English *try* does not say whether you are committing to keep going or only testing whether something works, so every attempt can sound like it will end in success or failure.
 
-[Try](ability.md#try) says that an attempt happens and leaves the outcome open. Its ending says how far the attempt will go: a committed attempt (`howal`) keeps going until it works or is ruled out, and a trial run (`howar`) is a low-stakes probe where failing is useful to know.
+[Try](/ability#try) says that an attempt happens and leaves the outcome open. Its ending says how far the attempt will go: a committed attempt (`howal`) keeps going until it works or is ruled out, and a trial run (`howar`) is a low-stakes probe where failing is useful to know.
 
 Calling an attempt a trial run helps you start without betting everything on it: if it fails, finding that out was the point.
 
@@ -249,7 +249,7 @@ In English: [Claritish: Decisions and tries](claritish/decisions-and-tries.md).
 
 A plan made in English often names only the first choice, and it either stays vague or feels like it has to be complete before you act.
 
-A [fallback](ability.md#fallback) joins an attempt to its backup with `xon`: *try A; failing that, B*. The backup counts only if the attempt before it fails. The [PLAN](intention.md#plan-predict) ending says how much of the plan is drawn: backups included, steps filled in, or only a direction. No level is better, and a sketch is often all a small or early plan needs; for a plan that matters, the backups-included ending is a prompt to ask what could go wrong.
+A [fallback](/ability#fallback) joins an attempt to its backup with `xon`: *try A; failing that, B*. The backup counts only if the attempt before it fails. The [PLAN](/intention#plan-predict) ending says how much of the plan is drawn: backups included, steps filled in, or only a direction. No level is better, and a sketch is often all a small or early plan needs; for a plan that matters, the backups-included ending is a prompt to ask what could go wrong.
 
 Naming the backup before you start helps a setback turn into the next step instead of a dead end, and matching plan detail to the task keeps planning from becoming a reason not to start.
 
@@ -257,7 +257,7 @@ Naming the backup before you start helps a setback turn into the next step inste
 
 English *enough* and *too much* often compare a result with an unstated ideal, so nothing ever counts as done.
 
-A [sake bar](prescription.md#sake-bars) measures an amount against what a [sake](#sakes-gratitude-and-oughts) actually needs: *enough*, *too much*, or *not enough* for that need. When you do not name which sake, the unspecified sake stands in.
+A [sake bar](/prescription#sake-bars) measures an amount against what a [sake](#sakes-gratitude-and-oughts) actually needs: *enough*, *too much*, or *not enough* for that need. When you do not name which sake, the unspecified sake stands in.
 
 Measuring against the need instead of against perfect helps you notice when a result is good enough to stop.
 
@@ -269,7 +269,7 @@ An act that touches someone else's body, things, or time can go ahead on a yes n
 
 English *she's fine with it* does not say whether she signed on, said yes and can take it back, or was never asked.
 
-A [say word](feelings-permission.md#say-words) names whose yes it is (the one the act happens to, the one it is told or given to, or the doer) and says how binding it is: a binding agreement made in advance, a yes they can take back at any time, or a yes you are only assuming because nobody objected.
+A [say word](/feelings-permission#say-words) names whose yes it is (the one the act happens to, the one it is told or given to, or the doer) and says how binding it is: a binding agreement made in advance, a yes they can take back at any time, or a yes you are only assuming because nobody objected.
 
 Marking an assumed yes as an assumption helps you check before acting, and marking a spoken yes as revocable keeps it theirs to withdraw.
 
@@ -277,7 +277,7 @@ Marking an assumed yes as an assumption helps you check before acting, and marki
 
 English *hi* does not say whether you can stay a while, have only a few minutes, have one thing to ask, or are just passing by.
 
-A [greeting](word-endings.md#greeting) is your own name said as a sentence (`SELFn.`). Calling someone is a [vocative](speech-moves.md#vocative). A [conversation-length bid](compound-families.md#conversation-length) adds one vowel to your name: open-ended, a few minutes, one thing to ask, or passing by. The other person can answer with their own bid; the **shorter** bid sets the limit for both of you. When you leave, the same form says whether you are leaving soon, about to leave, or leaving now. The vowel describes the conversation, not either person.
+A [greeting](/word-endings#greeting) is your own name said as a sentence (`SELFn.`). Calling someone is a [vocative](/speech-moves#vocative). A [conversation-length bid](/compound-families#conversation-length) adds one vowel to your name: open-ended, a few minutes, one thing to ask, or passing by. The other person can answer with their own bid; the **shorter** bid sets the limit for both of you. When you leave, the same form says whether you are leaving soon, about to leave, or leaving now. The vowel describes the conversation, not either person.
 
 Marking the opening that way lets you agree on how long to talk, so saying hello never commits you to unlimited time.
 
@@ -287,14 +287,14 @@ Abstract ideas are hard to hold onto; without a concrete picture, the psychologi
 
 Many roots have an **abstract** sense beside a **concrete** one, so an idea you cannot see is tied to a familiar scene that already carries the caution. For example:
 
-- [Memory as fishing](evidentiality.md#evidentiality) ([a guess as fact](#trap-certainty)): cast into opaque water; you may pull up a fish or a **boot** (the memory can be wrong).
-- [Live look as attesting](live-and-memory.md#live-vs-memory) ([a guess as fact](#trap-certainty)): you report what you see while the scene is still in view.
-- [Residue as unpaid debt](notional-standing.md#residue) ([a moment as identity](#trap-identity)): the result still counts, like a balance still owed; not a past tense.
-- [Former climate as an empty nest](notional-standing.md#former-climate) ([a moment as identity](#trap-identity)): the nesting season is over; a pattern that has ended, not a past tense.
-- [A pattern as paw-prints](universality.md#universality) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
-- [*As if* as theater](notional-standing.md#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene; what really happened stays **offstage**.
-- [Mechanism as gears](iff-fault.md#cause) ([a wish as a law](#trap-wish-as-law)): you say *how* a result comes about, like gears meshing, not only that it follows.
-- [Affect as water](feelings-permission.md#emotion-compose) ([a feeling as a label](#trap-feeling)): surging, flowing, or still water (motion) plus where the feeling sits or points, instead of an opaque emotion label that hides the sake.
+- [Memory as fishing](/evidentiality#evidentiality) ([a guess as fact](#trap-certainty)): cast into opaque water; you may pull up a fish or a **boot** (the memory can be wrong).
+- [Live look as attesting](/live-and-memory#live-vs-memory) ([a guess as fact](#trap-certainty)): you report what you see while the scene is still in view.
+- [Residue as unpaid debt](/notional-standing#residue) ([a moment as identity](#trap-identity)): the result still counts, like a balance still owed; not a past tense.
+- [Former climate as an empty nest](/notional-standing#former-climate) ([a moment as identity](#trap-identity)): the nesting season is over; a pattern that has ended, not a past tense.
+- [A pattern as paw-prints](/universality#universality) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
+- [*As if* as theater](/notional-standing#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene; what really happened stays **offstage**.
+- [Mechanism as gears](/iff-fault#cause) ([a wish as a law](#trap-wish-as-law)): you say *how* a result comes about, like gears meshing, not only that it follows.
+- [Affect as water](/feelings-permission#emotion-compose) ([a feeling as a label](#trap-feeling)): surging, flowing, or still water (motion) plus where the feeling sits or points, instead of an opaque emotion label that hides the sake.
 
 Because each picture already carries a warning against the trap, it helps you reach for the healthier frame in the moment and remember it later.
 
@@ -340,4 +340,4 @@ Even if the language does lose its potency over a century, a positive impact on 
 
 ## Next {#next}
 
-To try the ideas in English first, start with [Claritish](claritish/index.md). To go straight to the language, continue with [introduction.md](introduction.md) for the name, the grammar's design, and how to use these docs, then [phonology.md](phonology.md) for letters, [word-endings.md](word-endings.md) for citation endings, [clause.md](clause.md) for clause shape, [speech-moves.md](speech-moves.md) for turns, then [dependents.md](dependents.md). To ask questions or follow updates, join the community on [Reddit](https://www.reddit.com/r/ClarityLanguage) or [Discord](https://discord.gg/CAMGw2Akhc).
+To try the ideas in English first, start with [Claritish](claritish/index.md). To go straight to the language, continue with [introduction.md](introduction.md) for the name, the grammar's design, and how to use these docs, then [phonology.md](/phonology) for letters, [word-endings.md](/word-endings) for citation endings, [clause.md](/clause) for clause shape, [speech-moves.md](/speech-moves) for turns, then [dependents.md](/dependents). To ask questions or follow updates, join the community on [Reddit](https://www.reddit.com/r/ClarityLanguage) or [Discord](https://discord.gg/CAMGw2Akhc).

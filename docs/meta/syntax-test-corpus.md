@@ -18,7 +18,7 @@ Before logging a grammar gap:
 
 1. Run `node scripts/find-english.mjs '<phrase>'` on the English and on one or two rewordings.
 2. Try the recurring fixes: a resume hook (`or` / `er` / `ar` / `ur`), counting from the end (`gruedol`), the discourse hooks (`ael` / `aol`), and a time pole plus PLAN.
-3. If the English puts a feeling, belief, want or other stance on **someone other than the speaker** (*she was hurt*, *he thinks*, *it makes sense that you feel*), it is almost never a gap. This has been logged as one several times. Name that person as the holder on the channel, MAY or NOTIONAL word that gives you access to their view (`theyemuzozen`, `thebamawan`, `theyeleyor`: [whose view](../grammar/evidentiality.md#holder)). For a stance **on** their stance, put your stance in the main sentence and theirs in a dependent with its own holder seam word, naming what their feeling is about (`wowotham goyem zarl zevur wawothumam goyem theyemawan`).
+3. If the English puts a feeling, belief, want or other stance on **someone other than the speaker** (*she was hurt*, *he thinks*, *it makes sense that you feel*), it is almost never a gap. This has been logged as one several times. Name that person as the holder on the channel, MAY or NOTIONAL word that gives you access to their view (`theyemuzozen`, `thebamawan`, `theyeleyor`: [whose view](/evidentiality#holder)). For a stance **on** their stance, put your stance in the main sentence and theirs in a dependent with its own holder seam word, naming what their feeling is about (`wowotham goyem zarl zevur wawothumam goyem theyemawan`).
 4. Record the phrases you tried in the gap row.
 
 Every Agebon line below was checked with `node scripts/parse.mjs`.
@@ -330,7 +330,7 @@ Every Agebon line below was checked with `node scripts/parse.mjs`.
 - **STC-147, *on the wing*:** *flier* (agent compound on *wing*).
 - **STC-149, *rooms*:** the dictionary words *living room*, *bedroom*, and *kitchen*. *Had three rooms* is an existence list SHARED as *part of the little house*; the count is the list.
 - **STC-151, 182, *each day* / *every spring and fall*:** a counted unit is a count per unit (`hrabal hrubal bluzurem`, once per day); named seasons are a universal kind in the time pole (`herem blual gahelem`). *Something new* is `dar` (an unnamed new thing) plus *news* (`gunonam`).
-- **STC-152, *market*, *minutes*, *this week*:** *market* is the new abstract on 🏬 (`zodaham`, L-09). *Minute* is the new stock unit `bemurem` (L-10). *This week* is the full-root resume `bagorer` plus `om buwon`, which describes the week ([hook + `/b/` on a landmark](../grammar/hooks.md)). *Earlier* is the `bral` scale against the *Usual* bar.
+- **STC-152, *market*, *minutes*, *this week*:** *market* is the new abstract on 🏬 (`zodaham`, L-09). *Minute* is the new stock unit `bemurem` (L-10). *This week* is the full-root resume `bagorer` plus `om buwon`, which describes the week ([hook + `/b/` on a landmark](/hooks)). *Earlier* is the `bral` scale against the *Usual* bar.
 - **STC-153, *find … too great*:** *distance* is *length* (`zeravam`). MEMORY under `yol` asks for the listener's own warrant, as in STC-97.
 - **STC-154, 155, 164, address:** *children* is a kind vocative with **-x** (`yahoyelx`). *Madam* and *my son* are the listener (`yawan`); the title and the kin word are dropped.
 - **STC-155, *obey*:** `vehozam` (the *conformity* abstract). *Command* is dropped; `vern` states a command as content, but here the act is the obeying.
@@ -342,12 +342,12 @@ Every Agebon line below was checked with `node scripts/parse.mjs`.
 - **STC-162, *think first and then act*:** verb join `xan` (*and then*). *Act* is *effort* (`vuzubam`).
 - **STC-163, *a little mite of a girl*:** an aside with a resume of the speaker (`th(zuwor gagoyel gamezom)`). *Falling* is the agent compound on *down* (`gwazaduhel`).
 - **STC-164, *show … tell*:** *show* is CAUSE with the listener as causer (`thewem blawan`): the guests are the subject of *see*. *History* is *tale*, and *strange* is the *alien* abstract (`golayom`).
-- **STC-165, *nothing but*:** the single-item **-l** join is *just* ([joins](../grammar/joins.md)): `ol buzubam em bawan bal` is *at only your effort*. *Best* is *effort*.
+- **STC-165, *nothing but*:** the single-item **-l** join is *just* ([joins](/joins)): `ol buzubam em bawan bal` is *at only your effort*. *Best* is *effort*.
 - **STC-166, *consider … faithful friends*:** `darl` and a second sentence. *Faithful* is the *loyalty* abstract on *dog* (`gudozom`).
 - **STC-167, *make this place our home*:** *make* (`vamuyal`) with `el` (*for*) and *home* (`baheham`, the *house* abstract), owned by us with `em`. *This place* is *locality* plus `om buwon`.
 - **STC-168, *warm and snug … soft moss*:** *warm* is *quite hot* (`wadowom gohamul`), *snug* is *comfort*, *moss* is *herb* (`bebelal`); *soft* is dropped. The noun join `bal` closes *herb and leaf*, both under `ael`.
-- **STC-169, 174, 176, *-self* as *unaided*:** the single-item **-l** join is *just* ([joins](../grammar/joins.md)): `zagoyel gamezom zal` is *only the little girl*, so nobody else did it. It also gives *alone* (STC-176).
-- **STC-170, 171, 173, 175, reflexives:** a resume in the object or recipient slot points back at the subject ([pronouns](../grammar/pronouns.md#resume-r)). *Ashamed of myself* is unmet relatedness aimed at oneself (`thawothumom bluwor`). **STC-172:** *proved* is the *proof* abstract as a verb (`vurenem`).
+- **STC-169, 174, 176, *-self* as *unaided*:** the single-item **-l** join is *just* ([joins](/joins)): `zagoyel gamezom zal` is *only the little girl*, so nobody else did it. It also gives *alone* (STC-176).
+- **STC-170, 171, 173, 175, reflexives:** a resume in the object or recipient slot points back at the subject ([pronouns](/pronouns#resume-r)). *Ashamed of myself* is unmet relatedness aimed at oneself (`thawothumom bluwor`). **STC-172:** *proved* is the *proof* abstract as a verb (`vurenem`).
 - **STC-177, *embroidered*, *princess*:** no subject, with *sew* from *needle* (`venewul`). *Princess* is *small girl* with *leadership* (`gugobem`). *National flower of the Country* is a second sentence: `gobem blahal` (*country*, 🗾).
 - **STC-178, *symbol of liberty*:** *symbols* (`gozugal`) with *about* (`gahugem`) and the *liberty* abstract on *statue*.
 - **STC-179, *with him as our protector*:** `han bluzozen gagayul em buwonx` (including Uzozen the guard). *No danger* is `dogobum dul`.
@@ -355,7 +355,7 @@ Every Agebon line below was checked with `node scripts/parse.mjs`.
 - **STC-181, *light … like a feather*:** `darl` and a second sentence. *Light* is *less heavy than the unspecified sake bar* (`thudatham zuel garolom`).
 - **STC-182, *cousins*, *long visit*:** cousin is a child of a sibling of a parent: three kin anchors (`grewabal bleyol grewamol bleyol grewubal bluwonx`). *Long* is `hadurem`; *pay a visit* is *attend* with the visited as object.
 - **STC-183, *climate*, *remains*:** `zual` + kind + `/ɡ/` is a property of every member (STC-84); *remains* is `hawum`; *climate* is *weather* (`bogulum`).
-- **STC-184–187, relative clauses:** two sentences with a resume. *Brought* is *carry*; *ordered* is *consumption* (`vogowam`, from *cart*), so *bought*. **STC-187:** the fisherman's own event comes first (`vogunum`, *own*), then the doer resume `zwazogunur` ([roles](../grammar/roles.md#this-instance-r)), and *demanded payment* is `vern` with *money given*.
+- **STC-184–187, relative clauses:** two sentences with a resume. *Brought* is *carry*; *ordered* is *consumption* (`vogowam`, from *cart*), so *bought*. **STC-187:** the fisherman's own event comes first (`vogunum`, *own*), then the doer resume `zwazogunur` ([roles](/roles#this-instance-r)), and *demanded payment* is `vern` with *money given*.
 - **STC-188–190:** `herem blarl` is *when*, `thohom blarl` is *if*. *Stop* is `vozohul`; *called* is *summoned* (`vohorem`).
 - **STC-191, *seem*:** the holder seam names the listener (`theyemawan`, *as you see it*), so the speaker never states the impression as plain fact. *Absent-minded* is *not attentive* (`gazebom gul`).
 - **STC-192, *lend*, *need*:** *lend* is role English on *credit-card* (`vegeral`); *need* is the *necessity* abstract as a verb (`vebom`). Two sentences with a book resume.

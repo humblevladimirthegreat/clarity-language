@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { readFileSync } from "node:fs";
 import { padExerciseSpoilerBlanks } from "./pad-exercise-spoiler-blanks.js";
+import { grammarFile } from "../repo-paths.js";
 
 describe("padExerciseSpoilerBlanks", () => {
   it("inserts blank between morph and loose English in details", () => {
@@ -70,7 +71,7 @@ z-Uzozen | v-sit
   });
 
   it("pads comparatives beginner block", () => {
-    const md = readFileSync("docs/grammar/comparatives.md", "utf8");
+    const md = readFileSync(grammarFile("comparatives.md"), "utf8");
     const start = md.indexOf("### Practice {#beginner-practice}");
     const end = md.indexOf("## Intermediate", start);
     const slice = md.slice(start, end);

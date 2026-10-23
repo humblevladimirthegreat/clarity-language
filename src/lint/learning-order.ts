@@ -164,8 +164,9 @@ export function anchorLinks(page: string, markdown: string): MarkdownLink[] {
     const target = m[1]!;
     if (/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(target)) continue;
     const file = target === "" ? page : target.replace(/^\.\//, "").replace(/^\//, "");
-    if (file.includes("/")) continue;
-    out.push({ index: m.index!, page: file.endsWith(".md") ? file : `${file.replace(/\.html$/, "")}.md`, anchor: m[2]! });
+    const leaf = file.includes("/") ? file.split("/").pop()! : file;
+    if (!leaf || leaf === "..") continue;
+    out.push({ index: m.index!, page: leaf.endsWith(".md") ? leaf : `${leaf.replace(/\.html$/, "")}.md`, anchor: m[2]! });
   }
   return out;
 }

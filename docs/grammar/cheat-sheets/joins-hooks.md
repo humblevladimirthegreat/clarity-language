@@ -7,24 +7,24 @@ outline: false
 
 # Joins and hooks cheat sheet {#joins-hooks-cheat-sheet}
 
-A quick look at [joins](../joins.md), [joins across roles](../join-across-roles.md), [hooks](../hooks.md), and [discourse hooks](../discourse-hooks.md) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [joins](/joins), [joins across roles](/join-across-roles), [hooks](/hooks), and [discourse hooks](/discourse-hooks) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## One vowel map {#vowel-map}
 
 Joins and hooks share their vowels. Single vowels and the join **ua** are Beginner; the other stacked vowels are Intermediate.
 
-| Vowel | [Join](../joins.md#join-type-vowel-series) after a list | Hook between two same-role words | Hook before `/b/` (**-l** / **-m**) |
+| Vowel | [Join](/joins#join-type-vowel-series) after a list | Hook between two same-role words | Hook before `/b/` (**-l** / **-m**) |
 |-------|------------------------------------------------------|----------------------------------|--------------------------------------|
-| **a** ≈ add | *and* | [*including*](../hooks.md#including) | [*in* / *amid*](../hooks.md#extra-noun) |
-| **o** ≈ one | *pick one* | [*instead*](../hooks.md#instead) | *at* / *near* |
-| **e** ≈ order | rank: first matters most | [*or rather*](../hooks.md#rather) | *for* / *used by* |
-| **u** ≈ undo | *not* / *neither* / *none of* | [*except*](../hooks.md#except) | *from* / *away from* |
-| **ao** | [*and/or*](../rank-joins.md#exclusivity-and-denying-a-whole-list) (at least one) | | [*on* / *over*](../extra-noun-hooks.md#extra-noun-intermediate) |
-| **ua** | [*everything but*](../joins.md#everything-ua); alone *everything* | [range](../ending-grids.md#ranges): strictly between | *out of* / *out from among* |
-| **uo** | [*anything but*](../rank-joins.md#invert-u-stacks) | | *through* / *by way of* |
-| **ae** | [in order](../rank-joins.md#sequence-ae): *A, then B* | | *using* / *by* |
-| **oe** | [tie](../rank-joins.md#rank-joins): equal rank | [range](../ending-grids.md#ranges): *A through B* | *toward* / *in the direction of* |
-| **ue** | [rank reversed](../rank-joins.md#invert-u-stacks): last first | [range](../ending-grids.md#ranges): outside *A–B* | *against* / *contrary to* |
+| **a** ≈ add | *and* | [*including*](/hooks#including) | [*in* / *amid*](/hooks#extra-noun) |
+| **o** ≈ one | *pick one* | [*instead*](/hooks#instead) | *at* / *near* |
+| **e** ≈ order | rank: first matters most | [*or rather*](/hooks#rather) | *for* / *used by* |
+| **u** ≈ undo | *not* / *neither* / *none of* | [*except*](/hooks#except) | *from* / *away from* |
+| **ao** | [*and/or*](/rank-joins#exclusivity-and-denying-a-whole-list) (at least one) | | [*on* / *over*](/extra-noun-hooks#extra-noun-intermediate) |
+| **ua** | [*everything but*](/joins#everything-ua); alone *everything* | [range](/ending-grids#ranges): strictly between | *out of* / *out from among* |
+| **uo** | [*anything but*](/rank-joins#invert-u-stacks) | | *through* / *by way of* |
+| **ae** | [in order](/rank-joins#sequence-ae): *A, then B* | | *using* / *by* |
+| **oe** | [tie](/rank-joins#rank-joins): equal rank | [range](/ending-grids#ranges): *A through B* | *toward* / *in the direction of* |
+| **ue** | [rank reversed](/rank-joins#invert-u-stacks): last first | [range](/ending-grids#ranges): outside *A–B* | *against* / *contrary to* |
 
 ## Joins {#joins}
 
@@ -32,26 +32,26 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 
 | Rule | Example | English | Stage |
 |------|---------|---------|-------|
-| [Items first, then the join](../joins.md#and-lists-a); its first letter matches the items | `zudozol zagozol zal` | *a dog and a cat* | B |
+| [Items first, then the join](/joins#and-lists-a); its first letter matches the items | `zudozol zagozol zal` | *a dog and a cat* | B |
 | | `vowurel varuvel vam` | *walks and runs* (and possibly more) | B |
-| [Clause joins](../joins.md#clause-joins) (`/x/`) go **between** clauses | `zuzozen vowurel xam zolazun varuvel` | *Uzozen walks and Olazun runs* | B |
-| A [different clause join](../joins.md#clause-joins) closes everything before it | `A xol B xal C` | *(A or B) and C* | B |
-| [Nest](../rank-joins.md#fence-nesting) by stacking joins | `zududal zugudal zol zowulal zal` | *either tea or coffee, and water* | I |
-| [Scope island](../join-islands.md#scope-islands-join) keeps a small list inside a bigger one of the same role | `zuzozen { zowulal zal } zam` | *Uzozen and (just water)* | A |
+| [Clause joins](/joins#clause-joins) (`/x/`) go **between** clauses | `zuzozen vowurel xam zolazun varuvel` | *Uzozen walks and Olazun runs* | B |
+| A [different clause join](/joins#clause-joins) closes everything before it | `A xol B xal C` | *(A or B) and C* | B |
+| [Nest](/rank-joins#fence-nesting) by stacking joins | `zududal zugudal zol zowulal zal` | *either tea or coffee, and water* | I |
+| [Scope island](/join-islands#scope-islands-join) keeps a small list inside a bigger one of the same role | `zuzozen { zowulal zal } zam` | *Uzozen and (just water)* | A |
 
 ### Endings {#join-endings}
 
 | Ending | On a join | Stage |
 |--------|-----------|-------|
-| **-l** | [closed](../joins.md#join-type-vowel-series): the listed items are the only ones | B |
-| **-m** | [open](../joins.md#and-lists-a): *(and possibly more)*; [alone](../joins.md#standalone-phrase), *as far as I know* | B |
-| **-r** | [one unnamed member](../joins.md#unspecified-member-r-phrase) (*something*, *someone*); one vowel only | B |
-| **-rx** | [an unnamed group](../joins.md#unspecified-member-r-phrase) (`zarx` *some ones*); `/z/` `/d/` `/b/` only | B |
-| **-n** | `/z/` `/d/` `/b/`: [a named list](../join-islands.md#named-list); `/x/`: [sequence](../clause-sequence.md#clause-sequence); `/v/`: [join-act verb](../join-across-roles.md#join-act-verbs); `/ɡ/` `/h/`: [join-relation](../join-across-roles.md#join-relations) | I–A |
+| **-l** | [closed](/joins#join-type-vowel-series): the listed items are the only ones | B |
+| **-m** | [open](/joins#and-lists-a): *(and possibly more)*; [alone](/joins#standalone-phrase), *as far as I know* | B |
+| **-r** | [one unnamed member](/joins#unspecified-member-r-phrase) (*something*, *someone*); one vowel only | B |
+| **-rx** | [an unnamed group](/joins#unspecified-member-r-phrase) (`zarx` *some ones*); `/z/` `/d/` `/b/` only | B |
+| **-n** | `/z/` `/d/` `/b/`: [a named list](/join-islands#named-list); `/x/`: [sequence](/clause-sequence#clause-sequence); `/v/`: [join-act verb](/join-across-roles#join-act-verbs); `/ɡ/` `/h/`: [join-relation](/join-across-roles#join-relations) | I–A |
 
 ### How many items {#arity}
 
-The same join reads differently with two or more items, [one item](../joins.md#standalone-phrase), or none. Shown under `/z/`; swap the first letter for any role. Full lists: [single-item and standalone inventories](../rank-joins.md#full-single-item-and-standalone-inventories).
+The same join reads differently with two or more items, [one item](/joins#standalone-phrase), or none. Shown under `/z/`; swap the first letter for any role. Full lists: [single-item and standalone inventories](/rank-joins#full-single-item-and-standalone-inventories).
 
 | Join | 2+ items | 1 item (X) | No items | Stage |
 |------|----------|------------|----------|-------|
@@ -81,21 +81,21 @@ A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `x
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [SHARED](../rank-joins.md#shared-after-the-join): describe every item, right after the join | `zudozol zagozol zal gamahum` | *a challenging dog and a challenging cat* | I |
-| [Every K](../rank-joins.md#universals-domains-generics) | `zual gagozol` | *every cat* | I |
-| [K in general](../rank-joins.md#universals-domains-generics) | `zuam gagozol` | *cats in general* | I |
-| [The kind itself](../rank-joins.md#kind-reference) | `zuan gagozol` | *the cat* (as a species) | I |
-| [No K](../rank-joins.md#universals-domains-generics) | `zul gagozol` | *no cat* | I |
-| [Not every K](../rank-joins.md#not-every) | `zual gagozol zul` | *not every cat* | I |
-| [Every, by set](../rank-joins.md#kind-domains) | `zual gwodanam blayan` | *everyone we know* | I |
-| [Respectively](../rank-joins.md#respectively) | `zuzozen zolazun zal vawebol dagozol dudozol wubam dal` | *saw a cat and a dog, respectively* | I |
-| [Deny the whole list](../rank-joins.md#exclusivity-and-denying-a-whole-list) | `vowurel varuvel val vul` | *not both walk and run* | I |
-| [Deny each item](../rank-joins.md#exclusivity-and-denying-a-whole-list) | `vowurel varuvel vul` | *neither walk nor run* | B |
-| [Named list](../join-islands.md#named-list) | `zebodol zuyudal zan` | *bread and butter* (the set phrase) | A |
+| [SHARED](/rank-joins#shared-after-the-join): describe every item, right after the join | `zudozol zagozol zal gamahum` | *a challenging dog and a challenging cat* | I |
+| [Every K](/rank-joins#universals-domains-generics) | `zual gagozol` | *every cat* | I |
+| [K in general](/rank-joins#universals-domains-generics) | `zuam gagozol` | *cats in general* | I |
+| [The kind itself](/rank-joins#kind-reference) | `zuan gagozol` | *the cat* (as a species) | I |
+| [No K](/rank-joins#universals-domains-generics) | `zul gagozol` | *no cat* | I |
+| [Not every K](/rank-joins#not-every) | `zual gagozol zul` | *not every cat* | I |
+| [Every, by set](/rank-joins#kind-domains) | `zual gwodanam blayan` | *everyone we know* | I |
+| [Respectively](/rank-joins#respectively) | `zuzozen zolazun zal vawebol dagozol dudozol wubam dal` | *saw a cat and a dog, respectively* | I |
+| [Deny the whole list](/rank-joins#exclusivity-and-denying-a-whole-list) | `vowurel varuvel val vul` | *not both walk and run* | I |
+| [Deny each item](/rank-joins#exclusivity-and-denying-a-whole-list) | `vowurel varuvel vul` | *neither walk nor run* | B |
+| [Named list](/join-islands#named-list) | `zebodol zuyudal zan` | *bread and butter* (the set phrase) | A |
 
 ## Joins across roles {#across-roles}
 
-The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, they become [join-act verbs](../join-across-roles.md#join-act-verbs), [join-relations](../join-across-roles.md#join-relations) (always followed by one `/b/`), and [clause sequence](../clause-sequence.md#clause-sequence) words. Sequence is Beginner; join-act and join-relations are Intermediate.
+The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, they become [join-act verbs](/join-across-roles#join-act-verbs), [join-relations](/join-across-roles#join-relations) (always followed by one `/b/`), and [clause sequence](/clause-sequence#clause-sequence) words. Sequence is Beginner; join-act and join-relations are Intermediate.
 
 | Vowel | Verb (`/v/` + object) | Relation (`/ɡ/` / `/h/` + `/b/`) | Between clauses (`/x/`) |
 |-------|------------------------|----------------------------------|--------------------------|
@@ -110,7 +110,7 @@ The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, 
 | **oe** | `voen` *equates* | `goen` / `hoen` *on a par with* | |
 | **ue** | `vuen` *deprioritizes* | `guen` / `huen` *deprioritizing* | `xuen` *and before that* |
 
-[Stance joins](../join-across-roles.md#stance-joins) (`/th/`) work on the stance words before them, not the claim: `thahum blerulal thul` *not because of the rain*. With clause grounds, the join goes [before `blarl`](../join-across-roles.md#stance-join-before-barl): `thahum thul blarl` *not because …*. [Alone](../join-across-roles.md#standalone-stance-joins), they say how to take the claim:
+[Stance joins](/join-across-roles#stance-joins) (`/th/`) work on the stance words before them, not the claim: `thahum blerulal thul` *not because of the rain*. With clause grounds, the join goes [before `blarl`](/join-across-roles#stance-join-before-barl): `thahum thul blarl` *not because …*. [Alone](/join-across-roles#standalone-stance-joins), they say how to take the claim:
 
 | Agebon | English | Agebon | English |
 |--------|---------|--------|---------|
@@ -124,37 +124,37 @@ A hook has no role letter: just a vowel (or two) and an ending. Tell the kinds a
 
 | Around the hook | Kind | Example | English | Stage |
 |-----------------|------|---------|---------|-------|
-| two words in the same role | [same-role](../hooks.md#including) | `zavayal al zuzozen` | *the family, including Uzozen* | B |
-| front of the sentence | [glue to prior talk](../hooks.md#discourse-hooks) | `al zuzozen vowurel` | *Additionally, Uzozen walks* | B |
-| `/b/` right after, no recipient `/b/` right before | [extra noun](../hooks.md#extra-noun) | `zudozol vezuvol al bahehal` | *a dog sleeps in a house* | B |
-| **-r**, nothing on the right | [point back](../discourse-hooks.md#hook-resume) | `zolazun vuhohol or` | *Olazun sits there* | I |
-| stacked vowel between two same-role words | [range](../ending-grids.md#ranges) | `zuzozen oel zahelan` | *Uzozen through Ahelan* | I |
-| fused onto a citation | [hook compound](../hook-compounds.md#hook-compounds) | `vowurelul` | *leave* | A |
-| hook vowels, then **`x`** and a stem | [hook prefix](../hook-compounds.md#hook-prefixes) | `guexavuvul` | *anti-fighting* | A |
-| role letter, hook vowels, **`x`**, a join, then a `bl-` landmark | [hooked join](../hook-compounds.md#hooked-joins) | `zoxual blahehal` | *everyone at the house* | A |
+| two words in the same role | [same-role](/hooks#including) | `zavayal al zuzozen` | *the family, including Uzozen* | B |
+| front of the sentence | [glue to prior talk](/hooks#discourse-hooks) | `al zuzozen vowurel` | *Additionally, Uzozen walks* | B |
+| `/b/` right after, no recipient `/b/` right before | [extra noun](/hooks#extra-noun) | `zudozol vezuvol al bahehal` | *a dog sleeps in a house* | B |
+| **-r**, nothing on the right | [point back](/discourse-hooks#hook-resume) | `zolazun vuhohol or` | *Olazun sits there* | I |
+| stacked vowel between two same-role words | [range](/ending-grids#ranges) | `zuzozen oel zahelan` | *Uzozen through Ahelan* | I |
+| fused onto a citation | [hook compound](/hook-compounds#hook-compounds) | `vowurelul` | *leave* | A |
+| hook vowels, then **`x`** and a stem | [hook prefix](/hook-compounds#hook-prefixes) | `guexavuvul` | *anti-fighting* | A |
+| role letter, hook vowels, **`x`**, a join, then a `bl-` landmark | [hooked join](/hook-compounds#hooked-joins) | `zoxual blahehal` | *everyone at the house* | A |
 
 ### Same-role and front of sentence {#same-role-discourse}
 
 **-l**: B is the whole story. **-m**: *and maybe more* (in-clause) or *one of several* (at the front). **-n** names the whole phrase: `dududal on dugudal` *Coffee-Instead-of-Tea* (a cafe).
 
-| Hook | `A HOOK B` | [At the front](../hooks.md#discourse-hooks) | **-m** at the front | Stage |
+| Hook | `A HOOK B` | [At the front](/hooks#discourse-hooks) | **-m** at the front | Stage |
 |------|------------|--------------|---------------------|-------|
-| `al` | [*A, including B*](../hooks.md#including) | *Additionally, …* | `am` *Among other things, …* | B |
-| `el` | [*A, or rather B*](../hooks.md#rather) | *In other words, …* | `em` *To put it one way, …* | B |
-| `ol` | [*B instead of A*](../hooks.md#instead) | *Instead, …* / *Actually, …* | `om` *Instead, for instance, …* | B |
-| `ul` | [*A except B*](../hooks.md#except) | *Except, …* | `um` *Except, among other exceptions, …* | B |
-| `ael` | | [*In fact, …*](../discourse-hooks.md#stacked-discourse) | `aem` *In fact, and maybe more, …* | I |
-| `aol` | | [*For example, …*](../discourse-hooks.md#stacked-discourse) | `aom` *For example, among others, …* | I |
-| `or` | | [*Anyway, …*](../discourse-hooks.md#hook-resume) | | I |
-| `er` | | [*As I said, …*](../discourse-hooks.md#hook-resume) | | I |
-| `ar` | | [*Going back to that, …*](../discourse-hooks.md#hook-resume) | | I |
-| `ur` | | [*Never mind that, …*](../discourse-hooks.md#hook-resume) | | I |
+| `al` | [*A, including B*](/hooks#including) | *Additionally, …* | `am` *Among other things, …* | B |
+| `el` | [*A, or rather B*](/hooks#rather) | *In other words, …* | `em` *To put it one way, …* | B |
+| `ol` | [*B instead of A*](/hooks#instead) | *Instead, …* / *Actually, …* | `om` *Instead, for instance, …* | B |
+| `ul` | [*A except B*](/hooks#except) | *Except, …* | `um` *Except, among other exceptions, …* | B |
+| `ael` | | [*In fact, …*](/discourse-hooks#stacked-discourse) | `aem` *In fact, and maybe more, …* | I |
+| `aol` | | [*For example, …*](/discourse-hooks#stacked-discourse) | `aom` *For example, among others, …* | I |
+| `or` | | [*Anyway, …*](/discourse-hooks#hook-resume) | | I |
+| `er` | | [*As I said, …*](/discourse-hooks#hook-resume) | | I |
+| `ar` | | [*Going back to that, …*](/discourse-hooks#hook-resume) | | I |
+| `ur` | | [*Never mind that, …*](/discourse-hooks#hook-resume) | | I |
 
-More: [parallel chains](../discourse-hooks.md#parallel-chains) `zavayal am zuzozen ul zolazun` (each hook applies to A); [detail on the hook](../ending-grids.md#hook-w) `wemom al` *even*; ranges `ual` *strictly between*, `uel` *outside*, `uar` *someone between*. All Intermediate.
+More: [parallel chains](/discourse-hooks#parallel-chains) `zavayal am zuzozen ul zolazun` (each hook applies to A); [detail on the hook](/ending-grids#hook-w) `wemom al` *even*; ranges `ual` *strictly between*, `uel` *outside*, `uar` *someone between*. All Intermediate.
 
 ### Extra nouns {#extra-nouns}
 
-Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting. **-r** drops the landmark and [points back](../discourse-hooks.md#hook-resume). Fused onto a citation, the hook makes a [verb](../hook-compounds.md#hook-compounds) (shown from *walk*). Its vowels before **`x`** (or **`mx`** for the **-m** frame) and a stem make a [hook prefix](../hook-compounds.md#hook-prefixes). With an [abstract landmark](../ending-grids.md#abstract-landmarks) the hook keeps its picture: `al bobowum` *in a crisis*, `ual baram` *out of debt*.
+Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting. **-r** drops the landmark and [points back](/discourse-hooks#hook-resume). Fused onto a citation, the hook makes a [verb](/hook-compounds#hook-compounds) (shown from *walk*). Its vowels before **`x`** (or **`mx`** for the **-m** frame) and a stem make a [hook prefix](/hook-compounds#hook-prefixes). With an [abstract landmark](/ending-grids#abstract-landmarks) the hook keeps its picture: `al bobowum` *in a crisis*, `ual baram` *out of debt*.
 
 | **-l** | **-m** | **-r** | Fused **-l** | Prefix **-l** | Prefix **-m** |
 |--------|--------|--------|--------------|---------------|---------------|
@@ -162,14 +162,14 @@ Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting.
 | `aol` *on* | `aom` *over* | `aor` *on it* | `owurelaol` *mount* | `gaoxohalal` *seagoing* | `gaomxohalal` *over the ocean* |
 | `ol` *at* | `om` *near* | `or` *there* | `owurelol` *attend* | `goxahehal` *at the house* | `gomxahehal` *near the house* |
 | `oel` *toward* | `oem` *in the direction of* | | `owureloel` *head for* | `goexahehal` *houseward* | `goemxahehal` *facing the house* |
-| `ul` *from*, [*since*](../hooks.md#since) | `um` *away from* | `ur` *from there* | `owurelul` *leave* | `guxahehal` *from the house* | `gumxahehal` *away from the house* |
+| `ul` *from*, [*since*](/hooks#since) | `um` *away from* | `ur` *from there* | `owurelul` *leave* | `guxahehal` *from the house* | `gumxahehal` *away from the house* |
 | `ual` *out of* | `uam` *out from among* | | `owurelual` *exit* | `guaxowulal` *out of the water* | `guamxayayal` *picked from the group* |
 | `uol` *through* | `uom` *by way of* | `uor` *through there* | `owureluol` *traverse* | `guoxohalal` *transoceanic* | `guomxohel` *bridge-routed* |
-| `el` *for* | `em` [*used by*](../extra-noun-hooks.md#genitive) (*B's*) | `er` *for it* | `owurelel` *serve* | `gexahehal` *household* | `gemxayayal` *group-owned* |
+| `el` *for* | `em` [*used by*](/extra-noun-hooks#genitive) (*B's*) | `er` *for it* | `owurelel` *serve* | `gexahehal` *household* | `gemxayayal` *group-owned* |
 | `ael` *using* | `aem` *by* | `aer` *with it* | `owurelael` *wield* | `gaexowulal` *water-powered* | `gaemxorahel` *road-borne* |
 | `uel` *against* | `uem` *contrary to* | | `owureluel` *oppose* | `guexohalal` *sea-facing* | `guemxewulel` *headwind* |
 
-Stage: one-vowel extra-noun **-l** (`al` `ol` `ul` `el`) Beginner on [hooks](../hooks.md#extra-noun); two-vowel extra-noun and `em` Beginner on [extra nouns](../extra-noun-hooks.md#extra-noun-intermediate); abstract landmarks Intermediate; fused forms and prefixes Advanced.
+Stage: one-vowel extra-noun **-l** (`al` `ol` `ul` `el`) Beginner on [hooks](/hooks#extra-noun); two-vowel extra-noun and `em` Beginner on [extra nouns](/extra-noun-hooks#extra-noun-intermediate); abstract landmarks Intermediate; fused forms and prefixes Advanced.
 
 ### Hooked joins {#hooked-joins}
 
@@ -177,43 +177,43 @@ Role letter, the hook's vowels (**`m`** for its frame, **`r`** to point back), *
 
 | Agebon | English |
 |--------|---------|
-| `zoxual blahehal` | [*everyone at the house*](../hook-compounds.md#hooked-joins) |
-| `zomxual bluwon` / `zumxual blayan` | [*everyone here*](../hook-compounds.md#hooked-joins-hooks) / *everyone over there* |
-| `zuexual bluwon` | [*everyone against me*](../hook-compounds.md#hooked-joins-hooks) |
-| `dexar bluwon` | [*something for me*](../hook-compounds.md#hooked-joins-endings) |
-| `zoxuam blual` | [*people anywhere, in general*](../hook-compounds.md#hooked-joins-endings) |
-| `zorxual` | [*everyone there*](../hook-compounds.md#hooked-joins-point-back) (the place just named) |
-| `haxual blenulul` | [*always, during the thunderstorm*](../hook-compounds.md#hooked-joins-time) |
-| `hoxar blenulul` | [*at some point at the thunderstorm*](../hook-compounds.md#hooked-joins-time) |
-| `huxal blenulul` | [*never since the thunderstorm*](../hook-compounds.md#hooked-joins-time) |
-| `hoexual blenulul` | [*always, until the thunderstorm*](../hook-compounds.md#hooked-joins-time) |
-| `homxual blenulul` | [*always, around the time of the thunderstorm*](../hook-compounds.md#hooked-joins-time) |
-| `hurxal` | [*never since then*](../hook-compounds.md#hooked-joins-time) |
-| `huxal blarl` + clause | [*never since* (that happened)](../hook-compounds.md#hooked-joins-clause) |
+| `zoxual blahehal` | [*everyone at the house*](/hook-compounds#hooked-joins) |
+| `zomxual bluwon` / `zumxual blayan` | [*everyone here*](/hook-compounds#hooked-joins-hooks) / *everyone over there* |
+| `zuexual bluwon` | [*everyone against me*](/hook-compounds#hooked-joins-hooks) |
+| `dexar bluwon` | [*something for me*](/hook-compounds#hooked-joins-endings) |
+| `zoxuam blual` | [*people anywhere, in general*](/hook-compounds#hooked-joins-endings) |
+| `zorxual` | [*everyone there*](/hook-compounds#hooked-joins-point-back) (the place just named) |
+| `haxual blenulul` | [*always, during the thunderstorm*](/hook-compounds#hooked-joins-time) |
+| `hoxar blenulul` | [*at some point at the thunderstorm*](/hook-compounds#hooked-joins-time) |
+| `huxal blenulul` | [*never since the thunderstorm*](/hook-compounds#hooked-joins-time) |
+| `hoexual blenulul` | [*always, until the thunderstorm*](/hook-compounds#hooked-joins-time) |
+| `homxual blenulul` | [*always, around the time of the thunderstorm*](/hook-compounds#hooked-joins-time) |
+| `hurxal` | [*never since then*](/hook-compounds#hooked-joins-time) |
+| `huxal blarl` + clause | [*never since* (that happened)](/hook-compounds#hooked-joins-clause) |
 
 ### Handy phrases {#handy-phrases}
 
 | Agebon | English | Stage |
 |--------|---------|-------|
-| `ul barl` + clause | [*since*](../hooks.md#since) (that happened) | B |
-| `ol bar` | [*somewhere*](../here-there.md#place-indefinites); in a question, *where?* | B |
-| `ol bur` / `ol bal` / `ol bual` | [*somewhere else*](../here-there.md#place-indefinites) / *nowhere* / *everywhere* | B |
-| `ael bar` (in a question) | [*with what?*](../fill-ask-jobs.md#how) | B |
-| `om buwon` / `om bawan` | [*here*, *this*](../here-there.md#deixis) / *there by you*, *that* | B |
-| `om bayan` / `um bayan` | [*here with us*](../here-there.md#deixis) / *over there* | B |
-| `vavobel oel buwon` | [*comes to me*](../here-there.md#deixis) | B |
-| `velobal dobogal oel buwon` | [*brings me the package*](../here-there.md#deixis) | B |
-| `zudozol em buwon` | [*my dog*](../extra-noun-hooks.md#genitive) (in my use) | B |
+| `ul barl` + clause | [*since*](/hooks#since) (that happened) | B |
+| `ol bar` | [*somewhere*](/here-there#place-indefinites); in a question, *where?* | B |
+| `ol bur` / `ol bal` / `ol bual` | [*somewhere else*](/here-there#place-indefinites) / *nowhere* / *everywhere* | B |
+| `ael bar` (in a question) | [*with what?*](/fill-ask-jobs#how) | B |
+| `om buwon` / `om bawan` | [*here*, *this*](/here-there#deixis) / *there by you*, *that* | B |
+| `om bayan` / `um bayan` | [*here with us*](/here-there#deixis) / *over there* | B |
+| `vavobel oel buwon` | [*comes to me*](/here-there#deixis) | B |
+| `velobal dobogal oel buwon` | [*brings me the package*](/here-there#deixis) | B |
+| `zudozol em buwon` | [*my dog*](/extra-noun-hooks#genitive) (in my use) | B |
 
 ## Don't mix up {#dont-mix-up}
 
 | This | vs | That |
 |------|----|------|
-| `zudozol zul` *no dog* ([join denies](../rank-joins.md#universals-domains-generics)) | | `zavayal ul zuzozen` *the family except Uzozen* ([hook takes B out of A](../hooks.md#except)) |
-| `zoxual blahehal vezuvol` *everyone at the house sleeps* ([who counts](../hook-compounds.md#hooked-joins)) | | `zual vezuvol ol bahehal` *everyone sleeps at the house* (where it happens) |
-| `zahunam gan bluzozen` *a team including Uzozen* ([join-relation](../join-across-roles.md#join-relations)) | | `zahunam al zuzozen` *the team, including Uzozen* (afterthought) |
-| `zuzozen zahelan zal` *the two of them* ([vs a range](../ending-grids.md#ranges)) | | `zuzozen oel zahelan` *Uzozen through Ahelan*; `zuzozen zahelan zael` *Uzozen, then Ahelan* |
-| hook `oel` *toward X* ([where a path ends](../extra-noun-hooks.md#extra-noun-intermediate)) | | `zael` + X *start with X* ([where it starts](../rank-joins.md#sequence-ae)) |
-| `xan` *and then* ([what happened next](../clause-sequence.md#clause-sequence)) | | `xael` ([the order is part of the claim](../join-across-roles.md#vp-clause-forms): a recipe) |
-| `vun` [*refuses*](../join-across-roles.md#join-act-verbs) | | `vuan` *excludes* |
-| `ol …` *Instead, …* ([replaces the last claim](../hooks.md#discourse-hooks)) | | `or …` *Anyway, …* ([back to the main line](../discourse-hooks.md#hook-resume)) |
+| `zudozol zul` *no dog* ([join denies](/rank-joins#universals-domains-generics)) | | `zavayal ul zuzozen` *the family except Uzozen* ([hook takes B out of A](/hooks#except)) |
+| `zoxual blahehal vezuvol` *everyone at the house sleeps* ([who counts](/hook-compounds#hooked-joins)) | | `zual vezuvol ol bahehal` *everyone sleeps at the house* (where it happens) |
+| `zahunam gan bluzozen` *a team including Uzozen* ([join-relation](/join-across-roles#join-relations)) | | `zahunam al zuzozen` *the team, including Uzozen* (afterthought) |
+| `zuzozen zahelan zal` *the two of them* ([vs a range](/ending-grids#ranges)) | | `zuzozen oel zahelan` *Uzozen through Ahelan*; `zuzozen zahelan zael` *Uzozen, then Ahelan* |
+| hook `oel` *toward X* ([where a path ends](/extra-noun-hooks#extra-noun-intermediate)) | | `zael` + X *start with X* ([where it starts](/rank-joins#sequence-ae)) |
+| `xan` *and then* ([what happened next](/clause-sequence#clause-sequence)) | | `xael` ([the order is part of the claim](/join-across-roles#vp-clause-forms): a recipe) |
+| `vun` [*refuses*](/join-across-roles#join-act-verbs) | | `vuan` *excludes* |
+| `ol …` *Instead, …* ([replaces the last claim](/hooks#discourse-hooks)) | | `or …` *Anyway, …* ([back to the main line](/discourse-hooks#hook-resume)) |

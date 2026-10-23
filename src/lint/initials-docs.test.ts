@@ -1,12 +1,11 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
 import { describe, it } from "node:test";
-import { fileURLToPath } from "node:url";
 
 import { parseWord } from "../parse/word.js";
+import { grammarFile } from "../repo-paths.js";
 
-const page = join(dirname(fileURLToPath(import.meta.url)), "../../docs/grammar/initials.md");
+const page = grammarFile("initials.md");
 
 /** Each title root's first consonant, `th` as one letter (initials.md#initials). */
 function initials(title: string): string {

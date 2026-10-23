@@ -76,7 +76,7 @@ import {
 } from "../src/lint/drill-coverage.js";
 import { CONSTRUCTIONS as STATIC_CONSTRUCTIONS, constructionRegistry } from "../src/parse/constructions.js";
 import { hashRedirects } from "../docs/grammar/.vitepress/lib/hash-redirect.js";
-import { isLevelReview, lessonPages, levelReviewPages, pathPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { isLevelReview, lessonPages, levelReviewPages, pageRelPath, pathPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { lintLevelReview } from "../src/lint/level-review.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
@@ -92,6 +92,7 @@ import { REPO_ROOT, readData } from "../src/repo-paths.js";
 const CONSTRUCTIONS = constructionRegistry(loadDefaultTables().overlays.values());
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
 const cheatSheetsDir = join(grammarDir, "cheat-sheets");
+const isSittingFile = (file: string) => relative(grammarDir, file).replaceAll("\\", "/") === pageRelPath(basename(file));
 const metaDir = join(REPO_ROOT, "docs", "meta");
 /** A record of past spellings (docs/meta/retie.md#skipped) keeps its old names. */
 const RETIE_SKIP_RE = /^<!--\s*retie:\s*skip\s*-->\s*$/m;
@@ -310,7 +311,7 @@ function main(): void {
     }
 
     let used: ((id: string, index: number) => void) | undefined;
-    if (dirname(file) === grammarDir) {
+    if (isSittingFile(file)) {
       for (const id of duplicateIds(original)) {
         duplicateIdCount += 1;
         console.error(`${rel}  #${id}  id is used more than once on the page (headings and <a id> share one namespace)`);
@@ -328,7 +329,7 @@ function main(): void {
       pageMarkdown.set(ps.page, original);
       used = (id, index) => uses.push({ id, section: sectionAt(ps.sections, index) });
     }
-    if (dirname(file) === grammarDir || dirname(file) === cheatSheetsDir) {
+    if (isSittingFile(file) || dirname(file) === cheatSheetsDir) {
       for (const finding of lintTableEnglish(original, tables)) {
         freeEnglishCount += 1;
         console.error(`${rel}:${lineNumberAt(original, finding.index)}  free-english ${finding.kind}  (${finding.detail})`);
@@ -362,7 +363,7 @@ function main(): void {
       console.log(formatMorphGlossFinding(rel, finding));
     }
 
-    const review = dirname(file) === grammarDir && isLevelReview(basename(file));
+    const review = isSittingFile(file) && isLevelReview(basename(file));
     for (const finding of lintPracticeItems(original, tables, { review, page: basename(file) })) {
       practiceCount += 1;
       console.error(`${rel}:${lineNumberAt(original, finding.index)}  practice-item  (${finding.detail})`);
@@ -382,7 +383,7 @@ function main(): void {
       console.error(formatPracticeBankFinding(rel, finding));
     }
 
-    if (dirname(file) === grammarDir && NUMBER_SPEECH_FILES.includes(basename(file))) {
+    if (isSittingFile(file) && NUMBER_SPEECH_FILES.includes(basename(file))) {
       for (const finding of lintNumberSpeechMarkdown(original)) {
         speechCount += 1;
         console.log(formatNumberSpeechFinding(rel, finding));

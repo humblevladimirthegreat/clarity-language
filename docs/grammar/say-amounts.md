@@ -6,9 +6,9 @@ Recipes for English comparisons, percentages, units and dates. Every form here i
 
 ### Sorted lists (`ae`) {#sequence-scale}
 
-**Needs:** [Sequence `ae`](rank-joins.md#sequence-ae) · [Comparatives](comparatives.md#comparatives-e)
+**Needs:** [Sequence `ae`](/rank-joins#sequence-ae) · [Comparatives](/comparatives#comparatives-e)
 
-When English would say *from least to most ADJ* (*easiest to hardest*, a syllabus order), you are not naming a winner. You are listing items along the scale from its low end. Use [sequence](rank-joins.md#sequence-ae) **`ae`** before the shared adjective: the first name is the **start** of the scale, the last is the far end.
+When English would say *from least to most ADJ* (*easiest to hardest*, a syllabus order), you are not naming a winner. You are listing items along the scale from its low end. Use [sequence](/rank-joins#sequence-ae) **`ae`** before the shared adjective: the first name is the **start** of the scale, the last is the far end.
 
 > `zuzozen zolazun zahelan zael gamahum.`
 >
@@ -21,7 +21,7 @@ When English would say *from least to most ADJ* (*easiest to hardest*, a syllabu
 ### Distributive *both are ADJ*
 <a id="distributive-both"></a>
 
-**Needs:** [And-lists](joins.md#and-lists-a) · [Equatives](comparatives.md#equatives-oe-shared-scale)
+**Needs:** [And-lists](/joins#and-lists-a) · [Equatives](/comparatives#equatives-oe-shared-scale)
 
 English *both are challenging* (or *Uzozen and Olazun are challenging*) says **each** has the quality. It does not rank them and does not say they match in height. Write the names, then set join **`a`** (`zal`), then a shared singular adjective (`/ɡ/`). Each name gets that adjective.
 
@@ -33,7 +33,7 @@ English *both are challenging* (or *Uzozen and Olazun are challenging*) says **e
 
 **Compare with:** *as challenging as* uses equality **`oe`** (`zoel`). *More challenging than* uses rank **`e`**.
 
-**Related form:** *ADJ as a unit* uses shared `/ɡ/`…**-x** under **`a`**: [plurality](collectives.md#adjectives-g). Shared comparative and equative adjectives are singular.
+**Related form:** *ADJ as a unit* uses shared `/ɡ/`…**-x** under **`a`**: [plurality](/collectives#adjectives-g). Shared comparative and equative adjectives are singular.
 
 Equality **`oe`** with a shared scale needs **two or more** names. **`oe`** with no shared scale is a tie among the names (equal rank).
 
@@ -45,9 +45,9 @@ Equality **`oe`** with a shared scale needs **two or more** names. **`oe`** with
 ### Measured differentials {#measured-differentials}
 <a id="measure-gap"></a>
 
-**Needs:** [Comparatives](comparatives.md#comparatives-e) · [Measure phrases](numbers-applied.md#measure-phrases)
+**Needs:** [Comparatives](/comparatives#comparatives-e) · [Measure phrases](/numbers-applied#measure-phrases)
 
-English *two meters taller* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit** (published abstract = SI name), and `/ɡ/` on the unit is the **amount** ([measure phrases](numbers-applied.md#measure-phrases)).
+English *two meters taller* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit** (published abstract = SI name), and `/ɡ/` on the unit is the **amount** ([measure phrases](/numbers-applied#measure-phrases)).
 
 > `zuzozen zolazun zel gadahem blezerem gradol.`
 >
@@ -60,9 +60,9 @@ English *two meters taller* still ranks two people on one quality, and it also n
 ### Snapshot on a shared scale
 <a id="as-of-scale"></a>
 
-**Needs:** [Comparatives](comparatives.md#comparatives-e) · [*as-of*](as-of.md#as-of)
+**Needs:** [Comparatives](/comparatives#comparatives-e) · [*as-of*](/as-of#as-of)
 
-To score the shared adjective as of a dated now, write [*as-of*](as-of.md#as-of) on `/w/` immediately before that `/ɡ/` word, with `/b/` between them. That snapshot does not retarget the verb; the clause still needs `/h/` *as-of* if the event also scores against that now.
+To score the shared adjective as of a dated now, write [*as-of*](/as-of#as-of) on `/w/` immediately before that `/ɡ/` word, with `/b/` between them. That snapshot does not retarget the verb; the clause still needs `/h/` *as-of* if the event also scores against that now.
 
 > `zuzozen zolazun zel wenam b_#22,7 gamahum.`
 >
@@ -76,7 +76,7 @@ To score the shared adjective as of a dated now, write [*as-of*](as-of.md#as-of)
 <a id="no-metric-prefixes"></a>
 <a id="metric-prefixes"></a>
 
-**Needs:** [Measure phrases](numbers-applied.md#measure-phrases) · [Exponents](digitless-exponents.md#exponents)
+**Needs:** [Measure phrases](/numbers-applied#measure-phrases) · [Exponents](/digitless-exponents#exponents)
 
 Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / an exact count): `bezerem g+5400` or `bezerem g+5.4e3`; `beberom g+70e3`.
 
@@ -88,7 +88,7 @@ For *two meters taller*, see [measured differentials](#measured-differentials). 
 <a id="percent-denominators"></a>
 <a id="percent-of-what"></a>
 
-**Needs:** [Percent](numbers-applied.md#percent-and-percentage-points) · [Associative `-x`](plurality.md#associative) · [Resume](pronouns.md#resume-r)
+**Needs:** [Percent](/numbers-applied#percent-and-percentage-points) · [Associative `-x`](/plurality#associative) · [Resume](/pronouns#resume-r)
 
 | Agebon | Use | English |
 |--------|-----|---------|
@@ -109,7 +109,7 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 ### *Most* {#most}
 
-**Needs:** [Percent](numbers-applied.md#percent-and-percentage-points) · [Ranges](numbers-applied.md#ranges)
+**Needs:** [Percent](/numbers-applied#percent-and-percentage-points) · [Ranges](/numbers-applied#ranges)
 
 *Most of the cats* means *more than half*: the band from all of them down to half, with half left out. Write **`g+100%`**, then **`ul`**, then **`g+50%`**. The hook excludes the endpoint after it.
 
@@ -123,9 +123,9 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 ### *One in three* {#one-in-n}
 
-**Needs:** [Fractions](numbers-applied.md#fractions)
+**Needs:** [Fractions](/numbers-applied#fractions)
 
-*One in three cats* is the same share as *a third of the cats*. Write the [fraction](numbers-applied.md#fractions) **`g-N`** right after the noun.
+*One in three cats* is the same share as *a third of the cats*. Write the [fraction](/numbers-applied#fractions) **`g-N`** right after the noun.
 
 > `zagozolx grugel vuhohol.`
 >
@@ -137,7 +137,7 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 ### *Per hour* and *3 to 1* {#per-unit}
 
-**Needs:** [Number as adverb](number-markers.md#number-as-adverb-by-marker) · [Measure phrases](numbers-applied.md#measure-phrases) · [Factor](comparative-arity.md#factor)
+**Needs:** [Number as adverb](/number-markers#number-as-adverb-by-marker) · [Measure phrases](/numbers-applied#measure-phrases) · [Factor](/comparative-arity#factor)
 
 *Three times an hour* is a count per unit. Write the count, then the divider **`hrubal`** (*÷1*), then the unit as a `bl-` word right after it. The divider hosts the unit, so the `bl-` word is structural, not a recipient.
 
@@ -151,17 +151,17 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 >
 > "Uzozen walks three times an hour."
 
-A ratio (*three cats to one dog*) is a [factor](comparative-arity.md#factor) on the equative amount scale: `zagozolx zudozolx zoel gral hragel` is *three times as many cats as dogs*.
+A ratio (*three cats to one dog*) is a [factor](/comparative-arity#factor) on the equative amount scale: `zagozolx zudozolx zoel gral hragel` is *three times as many cats as dogs*.
 
 ### Percent points, factors, and other wholes
 
-**Needs:** [Percent](numbers-applied.md#percent-and-percentage-points) · [Number as adverb](number-markers.md#number-as-adverb-by-marker) · [Of relations](of-relations.md#of-relations)
+**Needs:** [Percent](/numbers-applied#percent-and-percentage-points) · [Number as adverb](/number-markers#number-as-adverb-by-marker) · [Of relations](/of-relations#of-relations)
 
-**`yu`** is a point-scale amount or delta (`+2` percentage points; often `/v/` **`ra`** / **`ru`**: increase or decrease by that point amount). `from A% to B%` uses [ranges](numbers-applied.md#ranges).
+**`yu`** is a point-scale amount or delta (`+2` percentage points; often `/v/` **`ra`** / **`ru`**: increase or decrease by that point amount). `from A% to B%` uses [ranges](/numbers-applied#ranges).
 
 **For *+50% relative to baseline*, use:** a multiplicative `/h/` factor (**`h+1.5`**, …) or ordinary *relative-to* wording.
 
-When the whole is not the modified head, use a complex `/ɡ/` or `/h/` [of relation](of-relations.md#of-relations) (`gobem` *part of*) + `/b/` whole, with the percent elsewhere in the clause as needed. Numbers take no `/w/` and no open arguments.
+When the whole is not the modified head, use a complex `/ɡ/` or `/h/` [of relation](/of-relations#of-relations) (`gobem` *part of*) + `/b/` whole, with the percent elsewhere in the clause as needed. Numbers take no `/w/` and no open arguments.
 
 **`…yu`** point amounts, factor change (`/h/` **`h+…`**), *top / bottom N%* rank bands, and *N% done* take their “whole” from context or a separately named class.
 
@@ -170,7 +170,7 @@ A bare `/z/` (or other freestanding) **`…yo`** percent with no named whole is 
 ### Unspecified value in the range (**-r**)
 <a id="unspecified-value-in-the-range--r"></a>
 
-**Needs:** [Ranges](numbers-applied.md#ranges) · [Named and unknown ranges](initials.md#named-ranges)
+**Needs:** [Ranges](/numbers-applied#ranges) · [Named and unknown ranges](/initials#named-ranges)
 
 A range hook with **-r** names **one value in the band** without saying which.
 
@@ -181,7 +181,7 @@ A range hook with **-r** names **one value in the band** without saying which.
 | `zrazal ar zrawal` | some value on the ray | *some value of 5 or more* |
 | `z+3 uer z+5` | some value outside the band | *some value below 3 or above 5* |
 
-Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value from 3 to 5?*). The same shape works under `/d/` `/b/` `/ɡ/` as the slot needs (`d+10 ur d+20` = object *some value from 10 up to 20*).
+Under [question](/questions#fill-ask-r) force, these are fill-asks (*which value from 3 to 5?*). The same shape works under `/d/` `/b/` `/ɡ/` as the slot needs (`d+10 ur d+20` = object *some value from 10 up to 20*).
 
 **Not the same job as:** the resume hooks `ar` / `ur` with nothing on the right (*in there* / *from there*), and discrete *something among two listed values* (`zragel zrazal zar`).
 
@@ -189,7 +189,7 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 ### How much: *very*, *slightly*, *barely* {#degree-words}
 
-**Needs:** [Degree](left-bound.md#degree-w) · [Number as verb and adverb](special-values.md#special-number-as-verb-and-adverb) · [Number as stance](special-values.md#special-number-as-stance)
+**Needs:** [Degree](/left-bound#degree-w) · [Number as verb and adverb](/special-values#special-number-as-verb-and-adverb) · [Number as stance](/special-values#special-number-as-stance)
 
 English degree words (*really*, *quite*, *barely*) say how far a quality or an action goes. Agebon has stock degree words for the adjective or adverb that follows them, and a pair for *barely* and *almost*. A claim you are sure of takes the stance number `th+e`.
 
@@ -219,7 +219,7 @@ English degree words (*really*, *quite*, *barely*) say how far a quality or an a
 
 ### How: *carefully*, *properly*, *gently*, *hard to* {#manner-words}
 
-**Needs:** [Adverbs `/h/`](clause.md#adverbs-h) · [Manner scale](comparative-arity.md#manner-scale) · [Every bar](stance-bars.md#stance-bars) · [Can](can-and-cant.md#can)
+**Needs:** [Adverbs `/h/`](/clause#adverbs-h) · [Manner scale](/comparative-arity#manner-scale) · [Every bar](/stance-bars#stance-bars) · [Can](/can-and-cant#can)
 
 English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the abstract ending **-m**, as in `hedurem` *hastily*. When the quality is the root's everyday sense and the abstract sense is something else, use **-l**: `ogugo` is *correct* and its abstract sense is *inclusion*, so *properly* is `hogugol`.
 
@@ -235,7 +235,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 | *seriously* | `hozedom` |
 | *surprisingly* / *suddenly* | `hemom` |
 | *surprisingly* + adjective (*surprisingly blue*) | `wemom` right before the `/ɡ/` word |
-| *pleasantly* / *usefully* / *frustratingly* + adjective (*pleasantly hot*) | a `/w/` sake word right before the `/ɡ/` word: `wodotham gohamul` ([personal possession](sakes.md#personal-possession)) |
+| *pleasantly* / *usefully* / *frustratingly* + adjective (*pleasantly hot*) | a `/w/` sake word right before the `/ɡ/` word: `wodotham gohamul` ([personal possession](/sakes#personal-possession)) |
 | *successfully* | `hemebem` |
 | *strongly* | `hobobom` |
 | *heavily* | `harolom` |
@@ -253,9 +253,9 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 >
 > "Uzozen walks carefully."
 
-The easy / hard pair on a quality ranks effort against a bar ([vague amounts](stance-bars.md#vague-amounts)): `zanal thubem zuel guzubam` is *the book is easy* (less effort than usual), and `zel` in place of `zuel` is *hard*.
+The easy / hard pair on a quality ranks effort against a bar ([vague amounts](/vague-amounts#vague-amounts)): `zanal thubem zuel guzubam` is *the book is easy* (less effort than usual), and `zel` in place of `zuel` is *hard*.
 
-*Hard to* + a verb puts the same effort scale on whoever would do it: they can, but only with more effort than usual. Write the doer as the ranked item, the bar, the rank word and **`huzubam`**, then the verb with [*can*](can-and-cant.md#can) **`xa`**.
+*Hard to* + a verb puts the same effort scale on whoever would do it: they can, but only with more effort than usual. Write the doer as the ranked item, the bar, the rank word and **`huzubam`**, then the verb with [*can*](/can-and-cant#can) **`xa`**.
 
 > `zuzozen thubem zel huzubam danal varayexal.`
 >
@@ -263,7 +263,7 @@ The easy / hard pair on a quality ranks effort against a bar ([vague amounts](st
 >
 > "The book is hard for Uzozen to write."
 
-*Properly* in the sense of *up to standard* names the standard as a bar ([every bar](stance-bars.md#stance-bars)): REQUIRE **`hwavel`** is the rule, and a tie meets it. Use **`hwaver`** for what is customary.
+*Properly* in the sense of *up to standard* names the standard as a bar ([every bar](/stance-bars#stance-bars)): REQUIRE **`hwavel`** is the rule, and a tie meets it. Use **`hwaver`** for what is customary.
 
 > `zuzozen hwavel zoel hogugol varayel.`
 >
@@ -273,7 +273,7 @@ The easy / hard pair on a quality ranks effort against a bar ([vague amounts](st
 
 ### How often {#frequency-words}
 
-**Needs:** [Always](restrictors.md#always-hual) · [Sometimes](restrictors.md#sometimes--anytime--some-other-time) · [Frequency scale](comparative-arity.md#frequency-scale) · [Whose view](evidentiality.md#holder)
+**Needs:** [Always](/restrictors#always-hual) · [Sometimes](/restrictors#sometimes--anytime--some-other-time) · [Frequency scale](/comparative-arity#frequency-scale) · [Whose view](/evidentiality#holder)
 
 English *always*, *usually*, *often* and *sometimes* sit on a scale from every time to some time. Agebon uses the restrictor for the ends and the frequency scale for *often*. For *every day*, hang a unit on `herem` *while* with `bual` (*everything*).
 
@@ -300,7 +300,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 ### How many and how big {#quantity-words}
 
-**Needs:** [Vague amounts](stance-bars.md#vague-amounts) · [Bars](comparative-arity.md#bars) · [Place on a scale](comparative-arity.md#place-on-a-scale) · [Measure phrases](numbers-applied.md#measure-phrases) · [Rays](initials.md#rays) · [Fractions](numbers-applied.md#fractions)
+**Needs:** [Vague amounts](/vague-amounts#vague-amounts) · [Bars](/comparative-arity#bars) · [Place on a scale](/comparative-arity#place-on-a-scale) · [Measure phrases](/numbers-applied#measure-phrases) · [Rays](/initials#rays) · [Fractions](/numbers-applied#fractions)
 
 | English | Agebon |
 |---------|--------|
@@ -316,14 +316,14 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *multiple* (*more than one*) | a ray: `zagozolx g+2 al grawal` |
 | *minority* (*fewer than half*) | `zagozolx g+0% ul g+50%` |
 | *exactly* / *precisely* / *specific* (*exactly five*) | the plain number `g+5`; `gram` is *about five* |
-| *literally* (*word for word*) | an exact quote: bare brackets, no `~` ([exact, paraphrase, proper](spans.md#when-required)) |
+| *literally* (*word for word*) | an exact quote: bare brackets, no `~` ([exact, paraphrase, proper](/spans#when-required)) |
 | *a dozen* | `zudalx g+12` |
 | *a quarter of the cats* | `zagozolx g-4` (or `g+25%`) |
-| *two thirds of the cats*, *three quarters* | `zagozolx gradol grugel` (count, then [fraction](numbers-applied.md#fractions)) |
+| *two thirds of the cats*, *three quarters* | `zagozolx gradol grugel` (count, then [fraction](/numbers-applied#fractions)) |
 | *a third of an hour* | `bagorum grabal grugel` |
-| *the second biggest*, *the third tallest* | `zuzozen zel wredol gelazom` ([place on a scale](comparative-arity.md#place-on-a-scale)) |
+| *the second biggest*, *the third tallest* | `zuzozen zel wredol gelazom` ([place on a scale](/comparative-arity#place-on-a-scale)) |
 | *twice* / *double* (two times) | `h+2` before the verb |
-| *ratio* (*three cats to one dog*) | `zagozolx zudozolx zoel gral hragel` ([factor](comparative-arity.md#factor)) |
+| *ratio* (*three cats to one dog*) | `zagozolx zudozolx zoel gral hragel` ([factor](/comparative-arity#factor)) |
 | *at least 5* / *at most 5* (*minimum* / *maximum*) | `zrazal al zrawal` / `zruwal al zrazal` |
 | *decade* / *century* | `bavuvam g+10` / `bavuvam g+100` |
 | *unit* | the measure phrase: `bezerem g+2` |
@@ -331,7 +331,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 ### Expensive, cheap, weak, remarkable {#bar-words}
 
-**Needs:** [Vague amounts](stance-bars.md#vague-amounts) · [Every bar](stance-bars.md#stance-bars) · [Adjectives](clause.md#adjectives-ɡ) · [Important](say-reasons.md#sake-words)
+**Needs:** [Vague amounts](/vague-amounts#vague-amounts) · [Every bar](/stance-bars#stance-bars) · [Adjectives](/clause#adjectives-ɡ) · [Important](say-reasons.md#sake-words)
 
 English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an unstated usual. Agebon always states the bar. Write the PATTERN bar **`thubem`** (*than usual*), then the rank word (**`zel`** for *more than*, **`zuel`** for *less than*), then the quality as an adjective. The quality is the root that names what is measured, in its abstract sense (**-m**): cost, strength, effort.
 
@@ -346,7 +346,7 @@ With no `/b/`, **`thubem`** is the item's own usual level or the usual case in t
 | *strong* / *powerful* (than most people) | `thubem bleyolx zel gobobom` |
 | *weak* / *feeble* / *frail* (than most people) | `thubem bleyolx zuel gobobom` |
 | *weak today* / *not as strong as usual* | `thubem zuel gobobom` |
-| *not strong enough* (for what you need) | `thudatham zuel gobobom` ([sake bar](prescription.md#sake-bars)) |
+| *not strong enough* (for what you need) | `thudatham zuel gobobom` ([sake bar](/prescription#sake-bars)) |
 | *busy* / *hard-working* | `thubem zel guzubam` (more effort than usual) |
 | *far* / *far away* / *distant* / *remote* | `thubem zel gazavem` (farther than usual) |
 | *wide* / *broad* | `thubem zel gorahem` |
@@ -382,13 +382,13 @@ With no `/b/`, **`thubem`** is the item's own usual level or the usual case in t
 >
 > "Uzozen is not strong enough."
 
-**Compare with:** any stance that sets a value can be the bar ([every bar](stance-bars.md#stance-bars)). *More expensive than I expected* is INTUITION, `thabom zel goderom`, and *too expensive* is a sake bar, `thudatham zel goderom`. Bare *good* and *bad* have no root ([wrong, ugly](say-reasons.md#wrong-ugly)).
+**Compare with:** any stance that sets a value can be the bar ([every bar](/stance-bars#stance-bars)). *More expensive than I expected* is INTUITION, `thabom zel goderom`, and *too expensive* is a sake bar, `thudatham zel goderom`. Bare *good* and *bad* have no root ([wrong, ugly](say-reasons.md#wrong-ugly)).
 
 ### Just, only, also, especially {#focus-words}
 
-**Needs:** [One item or none](joins.md#standalone-phrase) · [Join vowels and endings](joins.md#join-type-vowel-series) · [Stacked discourse hooks](discourse-hooks.md#stacked-discourse) · [Dated channel](universality.md#now)
+**Needs:** [One item or none](/joins#standalone-phrase) · [Join vowels and endings](/joins#join-type-vowel-series) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse) · [Dated channel](/universality#now)
 
-English *just*, *only*, *especially* and *also* point at one item and say how it stands among the others. Agebon does that with a [join](joins.md) that has one item in front of it. The vowel says what the item is worth among the rest: **`zal`** (the closed ending) says it is the whole story, **`zem`** (the open ending) says it comes first and others may follow, and **`zel`** says it is the only one that matters. For *also*, there is no word to hang on the item: open the next sentence with the discourse hook **`al`**, which adds a separate point.
+English *just*, *only*, *especially* and *also* point at one item and say how it stands among the others. Agebon does that with a [join](/joins) that has one item in front of it. The vowel says what the item is worth among the rest: **`zal`** (the closed ending) says it is the whole story, **`zem`** (the open ending) says it comes first and others may follow, and **`zel`** says it is the only one that matters. For *also*, there is no word to hang on the item: open the next sentence with the discourse hook **`al`**, which adds a separate point.
 
 | English | Agebon |
 |---------|--------|
@@ -417,13 +417,13 @@ English *just*, *only*, *especially* and *also* point at one item and say how it
 >
 > "Uzozen walks. Also, Olazun walks."
 
-**Compare with:** *just* meaning *only a moment ago* is the hair before now (**`blruwul`**, [recently](say-tense.md#time-words)), not a join. *Only when* is the restrictor **`hal`** ([restrictors](restrictors.md)), and *only if* is **`thebom`** ([only if](causation.md#only-if)).
+**Compare with:** *just* meaning *only a moment ago* is the hair before now (**`blruwul`**, [recently](say-tense.md#time-words)), not a join. *Only when* is the restrictor **`hal`** ([restrictors](/restrictors)), and *only if* is **`thebom`** ([only if](/causation#only-if)).
 
 ## Units and dates {#units-dates}
 
 ### Group, crowd, bunch, pair, list, range, member {#group-words}
 
-**Needs:** [Associative group](plurality.md#associative) · [Vague amounts](stance-bars.md#vague-amounts) · [Unspecified member](joins.md#unspecified-member-r) · [Ranges](numbers-applied.md#ranges) · [Of relations](of-relations.md#of-relations)
+**Needs:** [Associative group](/plurality#associative) · [Vague amounts](/vague-amounts#vague-amounts) · [Unspecified member](/joins#unspecified-member-r) · [Ranges](/numbers-applied#ranges) · [Of relations](/of-relations#of-relations)
 
 English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). Agebon has no noun for the set itself. It marks the kind as a **group in this situation** with **-x** after the ending (**-lx** for everyday things), and a number or a vague amount says how big. A set of people, flowers or cats is the kind plus **-x**, not a separate word.
 
@@ -464,9 +464,9 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 ### Named standards and derived units
 <a id="unit-short-form"></a>
 
-**Needs:** [Measure phrases](numbers-applied.md#measure-phrases) · [Proper name `-n`](proper-names.md#proper-name--n)
+**Needs:** [Measure phrases](/numbers-applied#measure-phrases) · [Proper name `-n`](/proper-names#proper-name--n)
 
-Everyday measure uses the **unit metaphor** on the stock roots above (`bezerem gradol`). When you cite the **conventional SI name** as a titled standard (*the meter*, *the pascal*), use **-n** on that unit root ([named handles](word-endings.md#named-n-beginner)). Resume a prior unit phrase with **-r** on the same root (`bezerer gradol` after `bezerem gradol` is on the table).
+Everyday measure uses the **unit metaphor** on the stock roots above (`bezerem gradol`). When you cite the **conventional SI name** as a titled standard (*the meter*, *the pascal*), use **-n** on that unit root ([named handles](/word-endings#named-n-beginner)). Resume a prior unit phrase with **-r** on the same root (`bezerer gradol` after `bezerem gradol` is on the table).
 
 **Common derived (optional)**: unit metaphor on a dedicated root; related **quantity** stays on the original row:
 
@@ -481,12 +481,12 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bezerem g
 | coulomb | `alevo` *coulomb* | `balevom g+2` | `urazu` *charge* |
 | radian | `udugu` *radian* | `budugum g+1` | `aruge` *cycle* |
 
-**Related form:** general **`+1xROOT`** (*primary / singleton of a kind*) is a [numeric prefix](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
+**Related form:** general **`+1xROOT`** (*primary / singleton of a kind*) is a [numeric prefix](/numeric-derivation#scalar-digit-morphs), not an SI alias.
 
 ### *Until tomorrow*, *by tomorrow* {#pole-from-now}
 <a id="until-tomorrow"></a>
 
-**Needs:** [Time poles](dependents.md#dependent-clauses) · [Signed count from now](universality.md#dated-channel) · [Dated channel](universality.md#dated-channel)
+**Needs:** [Time poles](/dependents#dependent-clauses) · [Signed count from now](/universality#dated-channel) · [Dated channel](/universality#dated-channel)
 
 English *until tomorrow* (also *till tomorrow*), *by tomorrow*, and *before next week* count from today. A command or a plan has no channel to count from, so the time pole takes the count itself: a signed measure in its `/b/` runs from now.
 
@@ -501,9 +501,9 @@ Use **`harum`** for *until* / *till*, **`hevahum`** for *by*, **`habam`** for *b
 ### Date as books vs event-when
 <a id="as-of-vs-clock"></a>
 
-**Needs:** [Time](digit-strings.md#time) · [*as-of*](as-of.md#as-of)
+**Needs:** [Time](/digit-strings#time) · [*as-of*](/as-of#as-of)
 
-Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftover, climate, plan, and forecast score against is [*as-of*](as-of.md#as-of) (`henam` / `hunem` plus `/b/`). Put the date on that pole (`henam bl_#22,7`); do not also write spare `h_#22,7` for the same snapshot. Clock / *before* / *after* may sit beside *as-of*: books vs event-when are different jobs.
+Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftover, climate, plan, and forecast score against is [*as-of*](/as-of#as-of) (`henam` / `hunem` plus `/b/`). Put the date on that pole (`henam bl_#22,7`); do not also write spare `h_#22,7` for the same snapshot. Clock / *before* / *after* may sit beside *as-of*: books vs event-when are different jobs.
 
 ## Brainstorming {#brainstorming}
 
@@ -511,9 +511,9 @@ Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftove
 <a id="numbered-alternatives"></a>
 <a id="ideation"></a>
 
-**Needs:** [Ordinals](numbers.md#ordinals)
+**Needs:** [Ordinals](/numbers#ordinals)
 
-When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`), not a closed overlay. *Problem* and *solution* take the published **-m** senses; *goal* is already the **-l** literal. Prefer at least **`grebal`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
+When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](/numbers) (`g#N`), not a closed overlay. *Problem* and *solution* take the published **-m** senses; *goal* is already the **-l** literal. Prefer at least **`grebal`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
 
 > `zuzozen dogewem gredol vezuyel.`
 > z-Uzozen | [d-solution | g-2nd] | v-tell
@@ -532,7 +532,7 @@ When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*)
 
 Unnumbered `zabevam` is just *a problem*, not a candidate in a set, write **`g#N`** when brainstorming. `-l` on the first two roots is still the picture (`zabeval` *a puzzle piece*; `zogewel` *a key*; `vogewel` *to unlock*). Reframing the **same** situation is different wording of one frame, not a second digit.
 
-**Compare with:** discourse *point N:* uses free **`x#N`** ([number as discourse](number-markers.md#number-as-discourse-marker-by-marker)), a continue. Numbered alternatives are problem / solution / goal nouns plus **`g#N`**. Clause *so that* is [**`hovam`**](dependents.md#so-that), not **`oval`**.
+**Compare with:** discourse *point N:* uses free **`x#N`** ([number as discourse](/number-markers#number-as-discourse-marker-by-marker)), a continue. Numbered alternatives are problem / solution / goal nouns plus **`g#N`**. Clause *so that* is [**`hovam`**](/dependents#so-that), not **`oval`**.
 
 ## Practice {#practice}
 

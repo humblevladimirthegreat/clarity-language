@@ -6,30 +6,30 @@ Recipes for English *walked* / *has walked* / *will walk* / *used to walk*, and 
 
 ### One English tense, several jobs {#tense-jobs}
 
-**Needs:** [Evidentiality](evidentiality.md#evidentiality) · [Forecasts](evidentiality.md#forecast) · [Dated channel](universality.md#dated-channel) · [RESIDUE and FORMER](notional-standing.md#residue) · [Already, still, not yet](already-still-yet.md#phasal) · [*as-of*](as-of.md#as-of)
+**Needs:** [Evidentiality](/evidentiality#evidentiality) · [Forecasts](/evidentiality#forecast) · [Dated channel](/universality#dated-channel) · [RESIDUE and FORMER](/notional-standing#residue) · [Already, still, not yet](/already-still-yet#phasal) · [*as-of*](/as-of#as-of)
 
 An English tense bundles up to three questions: **when** the event sits, **how you know** it, and whether it **still counts** now. Agebon asks them separately. Pick the row for the English form, then the job you mean.
 
 | English | You mean | Agebon |
 |---------|----------|--------|
 | *walks* (now) | you are watching it | LIVE **`thugom`** |
-| *walks* (now) | no channel named | bare verb ([this stretch](ability.md#predict-evidentiality)), unless an earlier channel is still [carried](evidentiality.md#carry-forward) |
+| *walks* (now) | no channel named | bare verb ([this stretch](/ability#predict-evidentiality)), unless an earlier channel is still [carried](/evidentiality#carry-forward) |
 | *walked* | you remember it | MEMORY **`thevum`** |
 | *walked* | going by clues or cases | CLUES **`theyem`** / PATTERN **`thubem`** plus a `-` offset |
-| *walked* | they told you, or you read it | REPORTED **`thebam`** plus a `-` [offset](universality.md#dated-channel) |
-| *walked* (telling what happened) | one ground for the whole story | the channel and offset on the first sentence; bare verbs after it keep them ([carry forward](evidentiality.md#carry-forward)) |
-| *walked* (a made-up story) | it is fiction | NOTIONAL **`theyum`** on the first sentence; bare verbs after it stay in the story ([carry forward](evidentiality.md#carry-forward)) |
-| *walked yesterday* / *three hours ago* | a measured time back | channel + signed amount ([dated channel](universality.md#dated-channel)) |
+| *walked* | they told you, or you read it | REPORTED **`thebam`** plus a `-` [offset](/universality#dated-channel) |
+| *walked* (telling what happened) | one ground for the whole story | the channel and offset on the first sentence; bare verbs after it keep them ([carry forward](/evidentiality#carry-forward)) |
+| *walked* (a made-up story) | it is fiction | NOTIONAL **`theyum`** on the first sentence; bare verbs after it stay in the story ([carry forward](/evidentiality#carry-forward)) |
+| *walked yesterday* / *three hours ago* | a measured time back | channel + signed amount ([dated channel](/universality#dated-channel)) |
 | *has walked* | the outcome still counts | RESIDUE **`haram`** |
 | *has already walked* | the change has come | **`havom`** |
-| *has walked before* / *has never walked* | at least once / not once | **`havom`** + **`har`** / **`hal`** ([ever / never](already-still-yet.md#ever-never)) |
-| *had walked* | as of a past moment | [*as-of*](as-of.md#as-of) plus the same stance |
+| *has walked before* / *has never walked* | at least once / not once | **`havom`** + **`har`** / **`hal`** ([ever / never](/already-still-yet#ever-never)) |
+| *had walked* | as of a past moment | [*as-of*](/as-of#as-of) plus the same stance |
 | *is walking* | it is in view | LIVE **`thugom`** |
-| *is walking* | they are in the middle of it | the event root on `/ɡ/`: `zuzozen gowurel` ([in progress](predication.md#in-progress)) |
+| *is walking* | they are in the middle of it | the event root on `/ɡ/`: `zuzozen gowurel` ([in progress](/predication#in-progress)) |
 | *is still walking* | the state goes on | **`hawum`** |
 | *has stopped walking* | the state ended | **`huvum`** |
-| *will walk* | your plan | PLAN **`thagem`**; someone else's plan takes a [holder](evidentiality.md#holder) |
-| *will walk* | a forecast | channel + **`blral`** ([forecast](evidentiality.md#forecast)) |
+| *will walk* | your plan | PLAN **`thagem`**; someone else's plan takes a [holder](/evidentiality#holder) |
+| *will walk* | a forecast | channel + **`blral`** ([forecast](/evidentiality#forecast)) |
 | *is going to walk* | your plan, or clues say so | PLAN, or CLUES + **`blral`** |
 | *is about to walk* / *will walk soon* | a hair / a short while after now | **`blrawul`** / **`blrawum`** on a channel |
 | *just walked* | a hair before now | **`blruwul`** on a channel |
@@ -42,7 +42,7 @@ Every offset counts from now, or from the *as-of* now when one is set. No row ne
 
 ### Simple past: pick how you know {#simple-past}
 
-**Needs:** [Live vs memory](live-and-memory.md#live-vs-memory) · [Dated channel](universality.md#dated-channel)
+**Needs:** [Live vs memory](/live-and-memory#live-vs-memory) · [Dated channel](/universality#dated-channel)
 
 English *Uzozen walked* hides whether you saw it, read it, or were told. Choose the channel. A remembered sighting is MEMORY. Add a `-` amount to say how long ago.
 
@@ -70,7 +70,7 @@ Reports and reasoning need their own `-` amount, because those channels do not f
 
 ### Present perfect: leftover, done, or ever {#present-perfect}
 
-**Needs:** [RESIDUE](notional-standing.md#residue) · [Already, still, not yet](already-still-yet.md#phasal)
+**Needs:** [RESIDUE](/notional-standing#residue) · [Already, still, not yet](/already-still-yet#phasal)
 
 English *has left* mixes three ideas. Choose the one you mean.
 
@@ -96,7 +96,7 @@ English *has left* mixes three ideas. Choose the one you mean.
 
 ### Past perfect: as of a past moment {#past-perfect}
 
-**Needs:** [*As-of*](as-of.md#as-of) · [RESIDUE](notional-standing.md#residue) · [Plan and forecast against a snapshot](say-reasons.md#as-of-intention)
+**Needs:** [*As-of*](/as-of#as-of) · [RESIDUE](/notional-standing#residue) · [Plan and forecast against a snapshot](say-reasons.md#as-of-intention)
 
 English *had left* means the leaving counted **as of** an earlier moment. Write the same stance and add *as-of* with that moment in `/b/`.
 
@@ -106,7 +106,7 @@ English *had left* means the leaving counted **as of** an earlier moment. Write 
 >
 > "As of 22 July, Olazun had left and was still gone."
 
-*Was going to* is PLAN with the stance *as-of* **`thenam`** ([stance as-of](as-of.md#stance-as-of)), since a plan is a stance:
+*Was going to* is PLAN with the stance *as-of* **`thenam`** ([stance as-of](/as-of#stance-as-of)), since a plan is a stance:
 
 > `zuwon thagem vowurel thenam bl_#22,7.`
 >
@@ -116,7 +116,7 @@ English *had left* means the leaving counted **as of** an earlier moment. Write 
 
 ### Progressive: mid-way, in view, or still {#progressive}
 
-**Needs:** [In progress](predication.md#in-progress) · [Live vs memory](live-and-memory.md#live-vs-memory) · [Already, still, not yet](already-still-yet.md#phasal)
+**Needs:** [In progress](/predication#in-progress) · [Live vs memory](/live-and-memory#live-vs-memory) · [Already, still, not yet](/already-still-yet#phasal)
 
 English *is walking* usually means one of three things. Put the event root on `/ɡ/` when you say they are in the middle of it. Say **`thugom`** when the walking is in view now. Say **`hawum`** when you stress that it goes on.
 
@@ -138,19 +138,19 @@ English *is walking* usually means one of three things. Put the event root on `/
 >
 > "Uzozen is still walking."
 
-For *was walking when …*, keep the ordinary verb and hang the other event on [**`herem blarl`**](dependents.md#dependent-clauses) (*while*).
+For *was walking when …*, keep the ordinary verb and hang the other event on [**`herem blarl`**](/dependents#dependent-clauses) (*while*).
 
 ### Future: plan, forecast, promise {#future}
 
-**Needs:** [Plan](intention.md#plan-predict) · [Plan or forecast](ability.md#predict-evidentiality) · [Forecasts](evidentiality.md#forecast) · [Consent](feelings-permission.md#consent)
+**Needs:** [Plan](/intention#plan-predict) · [Plan or forecast](/ability#predict-evidentiality) · [Forecasts](/evidentiality#forecast) · [Consent](/feelings-permission#consent)
 
 English *will* is three different claims.
 
 | English *will* | Agebon |
 |----------------|--------|
-| I mean to | PLAN **`thagem`** ([endings](intention.md#plan-map-resolution) show how much is drawn) |
+| I mean to | PLAN **`thagem`** ([endings](/intention#plan-map-resolution) show how much is drawn) |
 | the world will | channel + **`blral`** |
-| I promise | a vow **`hwazal`** ([promise](feelings-permission.md#say-words)) |
+| I promise | a vow **`hwazal`** ([promise](/feelings-permission#say-words)) |
 
 > `zuwon thagem vowurel.`
 >
@@ -180,7 +180,7 @@ English *will* is three different claims.
 
 ### Everyday time words {#time-words}
 
-**Needs:** [Dated channel](universality.md#dated-channel) · [Now and today](universality.md#now) · [RESIDUE and FORMER](notional-standing.md#residue) · [Already, still, not yet](already-still-yet.md#phasal) · [Forecasts](evidentiality.md#forecast) · [Dependent clauses](dependents.md#dependent-clauses)
+**Needs:** [Dated channel](/universality#dated-channel) · [Now and today](/universality#now) · [RESIDUE and FORMER](/notional-standing#residue) · [Already, still, not yet](/already-still-yet#phasal) · [Forecasts](/evidentiality#forecast) · [Dependent clauses](/dependents#dependent-clauses)
 
 English time words (*today*, *previously*, *continue*) mostly ride on the same channels and offsets as tense. Each row says which one.
 
@@ -206,7 +206,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 | *continue* / *keep doing* | **`hawum`** (*still*) |
 | *subsequently* / *after* | **`halam`** + `/b/`: `halam blolazun` |
 | *prior to* | **`habam`** + `/b/`: `habam blolazun` |
-| *in March* / *in 1962* / *on the 12th* | **`herem`** + a month or year in `/b/` (`herem blumalem gregel`, `herem blavuvam g_1962`); a day alone is `h_#12` ([time](digit-strings.md#time)) |
+| *in March* / *in 1962* / *on the 12th* | **`herem`** + a month or year in `/b/` (`herem blumalem gregel`, `herem blavuvam g_1962`); a day alone is `h_#12` ([time](/digit-strings#time)) |
 
 > `zuzozen theyem bluzurem gramol vowurel.`
 >
@@ -222,7 +222,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 
 ### Used to and would (habit) {#used-to}
 
-**Needs:** [FORMER](notional-standing.md#former-climate) · [Always](restrictors.md) · [If](causation.md#if)
+**Needs:** [FORMER](/notional-standing#former-climate) · [Always](/restrictors) · [If](/causation#if)
 
 English *used to walk* is a pattern that is no longer today's report: **`hual`** with FORMER after the verb.
 
@@ -238,22 +238,22 @@ For *would* in a condition (*if Olazun swam, Uzozen would walk*), see [remote an
 
 ### Can, could, may, might {#can-may}
 
-**Needs:** [Ability](can-and-cant.md#ability) · [MAY](knowing.md#may) · [Permission](feelings-permission.md#permission) · [FORMER](notional-standing.md#former-climate)
+**Needs:** [Ability](/can-and-cant#ability) · [MAY](/knowing#may) · [Permission](/feelings-permission#permission) · [FORMER](/notional-standing#former-climate)
 
 English *can* and *may* each carry several meanings. Pick the meaning.
 
 | English | You mean | Agebon |
 |---------|----------|--------|
-| *can* | able | verb + **`xa`** ([can](can-and-cant.md#can)) |
+| *can* | able | verb + **`xa`** ([can](/can-and-cant#can)) |
 | *can't* | not now / not yet / never | **`xe`** / **`xo`** / **`xu`** |
 | *could* | used to be able | **`xa`** + FORMER **`helam`** |
 | *couldn't* | couldn't back then | **`xe`** / **`xo`** / **`xu`** + FORMER **`helam`** |
-| *couldn't* | tried, that one time | try **`howam`** ([try](ability.md#try)) + the [simple past](#simple-past); the sentence leaves the outcome open |
+| *couldn't* | tried, that one time | try **`howam`** ([try](/ability#try)) + the [simple past](#simple-past); the sentence leaves the outcome open |
 | *could*, *might*, *may* | it could be | MAY **`thomam`** |
 | *may*, *is allowed to* | a rule / a person / no objection | **`hwaval`** / **`hwavam`** / **`hwavar`** |
 | *may not* | forbidden | **`hwavul`** / **`hwavum`** / **`hwavur`** |
 | *Can I …?* | asking permission | `yom` + **`hwavam`** |
-| *Could you …?* (polite) | a request | **`yem`** ([speech act](firm-soft.md#speech-act)) |
+| *Could you …?* (polite) | a request | **`yem`** ([speech act](/firm-soft#speech-act)) |
 
 > `zuzozen vezuyoxal.`
 >
@@ -283,7 +283,7 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 
 ### Ability, possibility and permission words {#ability-words}
 
-**Needs:** [Ability](can-and-cant.md#ability) · [Can be](can-and-cant.md#role-ability) · [MAY](knowing.md#may) · [Permission](feelings-permission.md#permission) · [Forecasts](evidentiality.md#forecast) · [Requirement](feelings-permission.md#requirement)
+**Needs:** [Ability](/can-and-cant#ability) · [Can be](/can-and-cant#role-ability) · [MAY](/knowing#may) · [Permission](/feelings-permission#permission) · [Forecasts](/evidentiality#forecast) · [Requirement](/feelings-permission#requirement)
 
 English adjectives and verbs built on *can* and *may* take the same forms as the modals.
 
@@ -314,7 +314,7 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 
 ### Must, have to, should {#must-should}
 
-**Needs:** [Requirement](feelings-permission.md#requirement) · [Prescription](ought-for-a-sake.md#sake-force) · [Motive](prescription.md#sake-preference) · [Permission](feelings-permission.md#permission) · [Speech act](firm-soft.md#speech-act) · [Stance as-of](as-of.md#stance-as-of)
+**Needs:** [Requirement](/feelings-permission#requirement) · [Prescription](/ought-for-a-sake#sake-force) · [Motive](/prescription#sake-preference) · [Permission](/feelings-permission#permission) · [Speech act](/firm-soft#speech-act) · [Stance as-of](/as-of#stance-as-of)
 
 English *must* and *should* differ in what stands behind the demand. Choose the source.
 
@@ -350,7 +350,7 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 >
 > "Uzozen shouldn't talk; it would hurt their sense of connection." (unasked advice)
 
-For *should have*, date the ought with [stance as-of](as-of.md#stance-as-of) **`thenam`**; **`thenam blrul`** is *back then*. The ought then reads from that past moment. English also implies the act did not happen; if that matters, say it in its own sentence.
+For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`thenam`**; **`thenam blrul`** is *back then*. The ought then reads from that past moment. English also implies the act did not happen; if that matters, say it in its own sentence.
 
 > `zawan thenam blrul thudathem vezuyel. zawan vezuyel vul.`
 >
@@ -370,12 +370,12 @@ For *should have*, date the ought with [stance as-of](as-of.md#stance-as-of) **`
 
 ### Will, want, try, let's {#will-want}
 
-**Needs:** [Plan](intention.md#plan-predict) · [Want](ability.md#want) · [Try](ability.md#try) · [Hopefully](feelings-permission.md#speaker-attitude) · [Speech act](firm-soft.md#speech-act)
+**Needs:** [Plan](/intention#plan-predict) · [Want](/ability#want) · [Try](/ability#try) · [Hopefully](/feelings-permission#speaker-attitude) · [Speech act](/firm-soft#speech-act)
 
 | English | Agebon |
 |---------|--------|
 | *will* (willing) | PLAN **`thagem`**, or **`hwazam`** (*I'll do it*, you can back out) |
-| *I want*, *I feel like* | WANT **`thalem`** (**`thalel`** lasting, **`thaler`** passing); someone else's want takes a [holder](evidentiality.md#holder): **`thebamuzozen thalem`** |
+| *I want*, *I feel like* | WANT **`thalem`** (**`thalel`** lasting, **`thaler`** passing); someone else's want takes a [holder](/evidentiality#holder): **`thebamuzozen thalem`** |
 | *intend to*, details open | PLAN sketch **`thager`** |
 | *hopefully* | **`thoguyem`** |
 | *tries to* | **`howam`** |

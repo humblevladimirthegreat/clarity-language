@@ -4,7 +4,7 @@ aside: false
 
 # Number Pegs
 
-A long number, such as a PIN or a phone number, is easier to remember as a few pictures than as a row of digits. In Agebon, each digit is spoken with its own consonant ([counts](./numbers.md#counts)), and ordinary roots are built from the same consonants. So every root's consonants spell a number. To remember a number, cut it into one- or two-digit pieces and, for each piece, pick a root whose consonants spell those digits. A root used this way is a **peg**: you picture the thing it names, and later read the digits back off its spelling.
+A long number, such as a PIN or a phone number, is easier to remember as a few pictures than as a row of digits. In Agebon, each digit is spoken with its own consonant ([counts](/numbers#counts)), and ordinary roots are built from the same consonants. So every root's consonants spell a number. To remember a number, cut it into one- or two-digit pieces and, for each piece, pick a root whose consonants spell those digits. A root used this way is a **peg**: you picture the thing it names, and later read the digits back off its spelling.
 
 ## Reading a word as digits {#reading}
 
@@ -28,7 +28,7 @@ Vowels never count, so roots that differ only in their vowels spell the same num
 
 Longer words spell longer numbers:
 
-- A [dictionary word](./compounds.md#lexical-compounds) made of two roots counts its joining letter like any other consonant: `oholeboral` *doorbell* is 4817.
+- A [dictionary word](/compounds#lexical-compounds) made of two roots counts its joining letter like any other consonant: `oholeboral` *doorbell* is 4817.
 - A word glued with a mid-word `x` reads each root in turn, and the `x` spells nothing: `zubedaxuyudal` *peanut butter* is 12, then 2.
 
 Number words (`gragel` *three*), pronouns and other grammar words are not pegs. Read them for what they say.
@@ -42,7 +42,7 @@ Number words (`gragel` *three*), pronouns and other grammar words are not pegs. 
 | five letters, two digit consonants (`abedol` *pear*) | two | 00 to 99 |
 | dictionary word (`oholeboral` *doorbell*) | three or more | a longer piece |
 
-The dictionary has at least one root for every digit and for every pair from 00 to 99. On a five-letter root the last consonant also says what kind of thing the root names ([root tails](./root-tails.md#root-tails)), so the second digit of a pair tells you what sort of picture to look for: 2 is a food or drink, 5 an animal, 9 something with a title, such as a newspaper or a sport.
+The dictionary has at least one root for every digit and for every pair from 00 to 99. On a five-letter root the last consonant also says what kind of thing the root names ([root tails](/root-tails#root-tails)), so the second digit of a pair tells you what sort of picture to look for: 2 is a food or drink, 5 an animal, 9 something with a title, such as a newspaper or a sport.
 
 ## Remembering a number {#remembering}
 

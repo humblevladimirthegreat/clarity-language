@@ -7,7 +7,7 @@ outline: false
 
 # Restrictors and spans cheat sheet {#restrictors-spans-cheat-sheet}
 
-A quick look at [restrictors](../restrictors.md) and [spans](../spans.md) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [restrictors](/restrictors) and [spans](/spans) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## When a claim counts {#restrictors}
 
@@ -17,20 +17,20 @@ List the **occasions** (times or cases) in the adverb slot `/h/`, then end with 
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Only when](../restrictors.md#only-when-never-hal) | `zuzozen vowurel herulal hal.` | *Uzozen walks only when it rains.* | B |
-| [Never](../restrictors.md#only-when-never-hal): no occasion, closed | `zolazun vowurel hal.` | *Olazun never walks.* | B |
-| [Always](../restrictors.md#always-hual) | `zahelan vezuyol hual.` | *Ahelan always sings.* | B |
-| [Usually](../restrictors.md#always-hual): open | `zahelan vezuyol huam.` | *Ahelan usually sings.* | B |
-| [Always except](../restrictors.md#always-hual) | `zuzozen vowurel herulal hual.` | *Uzozen always walks except when it rains.* | B |
-| [Sometimes](../restrictors.md#sometimes-anytime-some-other-time) | `zolazun varuvel har.` | *Olazun runs sometimes.* | B |
-| [Anytime](../restrictors.md#sometimes-anytime-some-other-time) | `zahelan vowurel hor.` | *Ahelan walks anytime.* (whichever time you pick) | B |
-| [Some other time](../restrictors.md#sometimes-anytime-some-other-time) | `zahelan vowurel hur.` | *Ahelan walks at some other time.* | B |
-| [When and at other times too](../restrictors.md#listed-occasions-open): open | `zuzozen vezuvol herulal hanurul ham.` | *Uzozen sleeps when it rains and at night, among other times.* | B |
-| [Only the adjective](../restrictors.md#on-the-following-adjective-w) | `zuzozen wal guzemol.` | *Uzozen is never sleepy.* | B |
-| [Only the adjective, listed](../restrictors.md#on-the-following-adjective-w) | `zuzozen werulal wal guzemol.` | *Uzozen is sleepy only when it rains.* | B |
-| [A habit, on an adjective](../restrictors.md#on-the-following-adjective-w) | `zolazun wual guzemol.` | *Olazun is always sleepy.* | B |
+| [Only when](/restrictors#only-when-never-hal) | `zuzozen vowurel herulal hal.` | *Uzozen walks only when it rains.* | B |
+| [Never](/restrictors#only-when-never-hal): no occasion, closed | `zolazun vowurel hal.` | *Olazun never walks.* | B |
+| [Always](/restrictors#always-hual) | `zahelan vezuyol hual.` | *Ahelan always sings.* | B |
+| [Usually](/restrictors#always-hual): open | `zahelan vezuyol huam.` | *Ahelan usually sings.* | B |
+| [Always except](/restrictors#always-hual) | `zuzozen vowurel herulal hual.` | *Uzozen always walks except when it rains.* | B |
+| [Sometimes](/restrictors#sometimes-anytime-some-other-time) | `zolazun varuvel har.` | *Olazun runs sometimes.* | B |
+| [Anytime](/restrictors#sometimes-anytime-some-other-time) | `zahelan vowurel hor.` | *Ahelan walks anytime.* (whichever time you pick) | B |
+| [Some other time](/restrictors#sometimes-anytime-some-other-time) | `zahelan vowurel hur.` | *Ahelan walks at some other time.* | B |
+| [When and at other times too](/restrictors#listed-occasions-open): open | `zuzozen vezuvol herulal hanurul ham.` | *Uzozen sleeps when it rains and at night, among other times.* | B |
+| [Only the adjective](/restrictors#on-the-following-adjective-w) | `zuzozen wal guzemol.` | *Uzozen is never sleepy.* | B |
+| [Only the adjective, listed](/restrictors#on-the-following-adjective-w) | `zuzozen werulal wal guzemol.` | *Uzozen is sleepy only when it rains.* | B |
+| [A habit, on an adjective](/restrictors#on-the-following-adjective-w) | `zolazun wual guzemol.` | *Olazun is always sleepy.* | B |
 
-Two manner adverbs in a row, with no restrictor, both describe the walk: `zuzozen vowurel hedurem halozum.` *quickly and quietly* ([only when / never](../restrictors.md#only-when-never-hal)).
+Two manner adverbs in a row, with no restrictor, both describe the walk: `zuzozen vowurel hedurem halozum.` *quickly and quietly* ([only when / never](/restrictors#only-when-never-hal)).
 
 ### Which restrictor {#which}
 
@@ -39,22 +39,22 @@ The vowel picks the reading and the ending says how open the list is: **-l** clo
 <!-- cheat-sheet: restrictors-spans -->
 | Agebon | Use | English (with occasions) | English (bare) | Stage |
 |--------|-----|--------------------------|----------------|-------|
-| [**`hal` / `ham`**](../more-occasions.md#more-occasions) | listed times | *only when…* / *when…, among others* | *never* / *never, as far as I know* | B |
-| [**`hol` / `hom`**](../more-occasions.md#more-occasions) | one exclusive menu | *either when A or when B (not both)* | | I |
-| [**`haol` / `haom`**](../more-occasions.md#more-occasions) | any of the listed times | *when A and/or when B* | | I |
-| [**`hul` / `hum`**](../more-occasions.md#more-occasions) | invert the list | *not when…* | | I |
-| [**`hual` / `huam`**](../more-occasions.md#more-occasions) | every time minus the list | *always except when…* | *always* / *usually* | B |
-| [**`huol` / `huom`**](../more-occasions.md#more-occasions) | any leftover time minus the list | *anytime except when…* | | I |
+| [**`hal` / `ham`**](/more-occasions#more-occasions) | listed times | *only when…* / *when…, among others* | *never* / *never, as far as I know* | B |
+| [**`hol` / `hom`**](/more-occasions#more-occasions) | one exclusive menu | *either when A or when B (not both)* | | I |
+| [**`haol` / `haom`**](/more-occasions#more-occasions) | any of the listed times | *when A and/or when B* | | I |
+| [**`hul` / `hum`**](/more-occasions#more-occasions) | invert the list | *not when…* | | I |
+| [**`hual` / `huam`**](/more-occasions#more-occasions) | every time minus the list | *always except when…* | *always* / *usually* | B |
+| [**`huol` / `huom`**](/more-occasions#more-occasions) | any leftover time minus the list | *anytime except when…* | | I |
 
 ### Ranked {#ranked}
 
 <!-- cheat-sheet: restrictors-spans -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`hel` / `hem`**](../more-occasions.md#more-occasions) | priority | *preferably when A ≻ when B* | I |
-| [**`hael` / `haem`**](../more-occasions.md#more-occasions) | in order | *first when A, then when B* | I |
-| [**`hoel` / `hoem`**](../more-occasions.md#more-occasions) | equal frequency | *equally when A and when B* | I |
-| [**`huel` / `huem`**](../more-occasions.md#more-occasions) | last-first | *as a last resort when A* | I |
+| [**`hel` / `hem`**](/more-occasions#more-occasions) | priority | *preferably when A ≻ when B* | I |
+| [**`hael` / `haem`**](/more-occasions#more-occasions) | in order | *first when A, then when B* | I |
+| [**`hoel` / `hoem`**](/more-occasions#more-occasions) | equal frequency | *equally when A and when B* | I |
+| [**`huel` / `huem`**](/more-occasions#more-occasions) | last-first | *as a last resort when A* | I |
 
 With several occasions before `huel`, the last listed is the first choice.
 
@@ -65,22 +65,22 @@ With several occasions before `huel`, the last listed is the first choice.
 <!-- cheat-sheet: restrictors-spans -->
 | Agebon | Use | English (with occasions) | English (bare) | Stage |
 |--------|-----|--------------------------|----------------|-------|
-| [**`har`**](../more-occasions.md#more-occasions) | some member of the listed times | *sometimes among these* | *sometimes* | B |
-| [**`hor`**](../more-occasions.md#more-occasions) | some member of a one-choice menu | *anytime among these* | *anytime* | B |
-| [**`hur`**](../more-occasions.md#more-occasions) | a leftover occasion | *some time other than these* | *some other time* | B |
-| [**`her`**](../more-occasions.md#more-occasions) | the first-ranked occasion | *at whichever ranks first* | *at the preferred time* | I |
+| [**`har`**](/more-occasions#more-occasions) | some member of the listed times | *sometimes among these* | *sometimes* | B |
+| [**`hor`**](/more-occasions#more-occasions) | some member of a one-choice menu | *anytime among these* | *anytime* | B |
+| [**`hur`**](/more-occasions#more-occasions) | a leftover occasion | *some time other than these* | *some other time* | B |
+| [**`her`**](/more-occasions#more-occasions) | the first-ranked occasion | *at whichever ranks first* | *at the preferred time* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Either, not both](../more-occasions.md#more-occasions) | `zuzozen vowurel herulal hanurul hol.` | *Uzozen walks either when it rains or at night.* (not both) | I |
-| [And/or](../more-occasions.md#more-occasions) | `zolazun vezuvol herulal hozulal haol.` | *Olazun sleeps when it rains and/or when it snows.* | I |
-| [Preferably](../more-occasions.md#more-occasions) | `zuzozen vowurel hubeham hanurul hel.` | *preferably on weekends, or else at night* | I |
-| [Last resort](../more-occasions.md#more-occasions) | `zuzozen vowurel herulal huel.` | *When it rains, Uzozen walks only as a last resort.* | I |
-| [When's best?](../more-occasions.md#more-occasions) | `yol her zayan vowurel.` | *When's best for us to walk?* | I |
-| [On an adjective, one of two](../more-occasions.md#more-occasions) | `zuzozen werulal wanurul wol guzemol.` | *sleepy either when it rains or at night* (not both) | I |
-| [A whole clause as the occasion](../more-occasions.md#occasions-vs-a-dependent-when): `blarl` | `zahelan vezuyol thohom blarl zuzozen vowurel.` | *Ahelan sings if Uzozen walks.* | I |
+| [Either, not both](/more-occasions#more-occasions) | `zuzozen vowurel herulal hanurul hol.` | *Uzozen walks either when it rains or at night.* (not both) | I |
+| [And/or](/more-occasions#more-occasions) | `zolazun vezuvol herulal hozulal haol.` | *Olazun sleeps when it rains and/or when it snows.* | I |
+| [Preferably](/more-occasions#more-occasions) | `zuzozen vowurel hubeham hanurul hel.` | *preferably on weekends, or else at night* | I |
+| [Last resort](/more-occasions#more-occasions) | `zuzozen vowurel herulal huel.` | *When it rains, Uzozen walks only as a last resort.* | I |
+| [When's best?](/more-occasions#more-occasions) | `yol her zayan vowurel.` | *When's best for us to walk?* | I |
+| [On an adjective, one of two](/more-occasions#more-occasions) | `zuzozen werulal wanurul wol guzemol.` | *sleepy either when it rains or at night* (not both) | I |
+| [A whole clause as the occasion](/more-occasions#occasions-vs-a-dependent-when): `blarl` | `zahelan vezuyol thohom blarl zuzozen vowurel.` | *Ahelan sings if Uzozen walks.* | I |
 
-Use a restrictor when each occasion is a word; use `blarl` when the occasion is a full clause. To ask *when?*, see [When?](../fill-ask-jobs.md#when).
+Use a restrictor when each occasion is a word; use `blarl` when the occasion is a full clause. To ask *when?*, see [When?](/fill-ask-jobs#when).
 
 ## Setting a chunk apart {#spans}
 
@@ -90,10 +90,10 @@ A **span** is a role letter and a pair of brackets. The letter is the role of th
 
 | Bracket | Inside is | Use | Example | Stage |
 |---------|-----------|-----|---------|-------|
-| [`[…]`](../spans.md#writing) | Agebon | cite: what someone said, a title | `zuzozen d[uzozen] vezuyel.` | B |
-| [<code>&lt;…&gt;</code>](../spans.md#loans) | not Agebon | opaque: a foreign word, code, a name | <code>zuzozen d&lt;kimchi&gt; vawebol.</code> | B |
-| [`th(…)`](../spans.md#asides) | Agebon | aside: a side comment; `g(…)` on a noun, `w(…)` on the next word, `h(…)` on the action | `zuzozen vowurel th(hogowul).` | B |
-| [`{ … }`](../span-mention.md#scope-islands) | Agebon | scope island: a binder inside reaches only that chunk | `zuzozen { hegugom zudozol gerulel } vawebol.` | I |
+| [`[…]`](/spans#writing) | Agebon | cite: what someone said, a title | `zuzozen d[uzozen] vezuyel.` | B |
+| [<code>&lt;…&gt;</code>](/spans#loans) | not Agebon | opaque: a foreign word, code, a name | <code>zuzozen d&lt;kimchi&gt; vawebol.</code> | B |
+| [`th(…)`](/spans#asides) | Agebon | aside: a side comment; `g(…)` on a noun, `w(…)` on the next word, `h(…)` on the action | `zuzozen vowurel th(hogowul).` | B |
+| [`{ … }`](/span-mention#scope-islands) | Agebon | scope island: a binder inside reaches only that chunk | `zuzozen { hegugom zudozol gerulel } vawebol.` | I |
 
 When the lexicon has a matching root, write the ordinary word, not a span. An aside holds the same speech act as the outer sentence and never goes under `/y/`, `/z/`, `/d/`, `/b/`, or `/v/`.
 
@@ -102,12 +102,12 @@ When the lexicon has a matching root, write the ordinary word, not a span. An as
 <!-- cheat-sheet: restrictors-spans -->
 | Mark | Use | English | Example | Stage |
 |------|-----|---------|---------|-------|
-| [*(none)*](../spans.md#exact-paraphrase-proper) | exact | verbatim wording | `d[uzozen]` | B |
-| [**`~`**](../spans.md#exact-paraphrase-proper) | paraphrase | the gist | `d~[zuzozen vezuyol]` | B |
-| [**`@`**](../spans.md#exact-paraphrase-proper) | proper | a work known by that title | `d@[enuron olazun]` | B |
-| [**`~@`**](../spans.md#exact-paraphrase-proper) | proper, loosely remembered | *something like that title* | `d~@[enuron olazun]` | B |
-| [**`^@`**](../span-mention.md#one-of-a-title) | one thing under the name | *an iPhone* / *a copy of* | `d^@[enuron olazun]` | I |
-| [**`~^@`**](../span-mention.md#one-of-a-title) | one copy, title roughly | *a copy of something like* | `d~^@[enuron olazun]` | I |
+| [*(none)*](/spans#exact-paraphrase-proper) | exact | verbatim wording | `d[uzozen]` | B |
+| [**`~`**](/spans#exact-paraphrase-proper) | paraphrase | the gist | `d~[zuzozen vezuyol]` | B |
+| [**`@`**](/spans#exact-paraphrase-proper) | proper | a work known by that title | `d@[enuron olazun]` | B |
+| [**`~@`**](/spans#exact-paraphrase-proper) | proper, loosely remembered | *something like that title* | `d~@[enuron olazun]` | B |
+| [**`^@`**](/span-mention#one-of-a-title) | one thing under the name | *an iPhone* / *a copy of* | `d^@[enuron olazun]` | I |
+| [**`~^@`**](/span-mention#one-of-a-title) | one copy, title roughly | *a copy of something like* | `d~^@[enuron olazun]` | I |
 
 A one-word name is an ordinary **-n** word (`denuron`), not a span.
 
@@ -116,86 +116,86 @@ A one-word name is an ordinary **-n** word (`denuron`), not a span.
 <!-- cheat-sheet: restrictors-spans -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`/d/`](../spans.md#pos) | object | *said / wrote / saw “…”* | B |
-| [`/z/`](../spans.md#pos) | subject | a foreign name as the subject | B |
-| [`/b/`](../spans.md#pos) | extra party | a foreign name as the recipient | B |
-| [`/v/`](../spans.md#pos) | verb | echo the act as wording; a loan verb | B |
-| [`/ɡ/`](../spans.md#pos) | adjective | a loan adjective; an aside on the noun | B |
-| [`/w/`](../spans.md#pos) | extra detail | a loan degree word; an aside on the next word | B |
-| [`/h/`](../spans.md#pos) | adverb | a loan adverb; an aside on the action | B |
-| [`/th/`](../spans.md#pos) | stance | an aside on the sentence | B |
+| [`/d/`](/spans#pos) | object | *said / wrote / saw “…”* | B |
+| [`/z/`](/spans#pos) | subject | a foreign name as the subject | B |
+| [`/b/`](/spans#pos) | extra party | a foreign name as the recipient | B |
+| [`/v/`](/spans#pos) | verb | echo the act as wording; a loan verb | B |
+| [`/ɡ/`](/spans#pos) | adjective | a loan adjective; an aside on the noun | B |
+| [`/w/`](/spans#pos) | extra detail | a loan degree word; an aside on the next word | B |
+| [`/h/`](/spans#pos) | adverb | a loan adverb; an aside on the action | B |
+| [`/th/`](/spans#pos) | stance | an aside on the sentence | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Quote a sentence](../spans.md#exact-paraphrase-proper) | `zolazun d~[zuzozen vezuyol] varayel.` | *Olazun wrote something like “Uzozen sings.”* | B |
-| [A title of several words](../spans.md#exact-paraphrase-proper) | `zahelan d@[enuron olazun] vezuyol.` | *Ahelan sang Enuron Olazun.* | B |
-| [A cite as the verb](../spans.md#pos) | `yul zolazun v[vozohul].` | *Don't say “stop,” Olazun.* | B |
-| [A loan verb](../spans.md#pos) | <code>zolazun v&lt;google&gt; duzozen.</code> | *Olazun googled Uzozen.* | B |
-| [A loan adjective](../spans.md#pos) | <code>zudozol g&lt;rouge&gt; vowurel.</code> | *A rouge dog walks.* | B |
-| [A quoted question](../span-mention.md#quote-acts) | `zuzozen d[yol zolazun vowurel] vezuyel.` | *Uzozen said, “Does Olazun walk?”* | I |
-| [Point back at a quote](../span-mention.md#span-noun) | `zolazun d[uzozen] vezuyel. zahelan dwadar varayel.` | *Olazun said “Uzozen.” Ahelan wrote that down.* | I |
-| [Topic from a title](../span-mention.md#topic-quotes) | `x@[enuron olazun] dalon vezuyol.` | *Now, about Enuron Olazun: it is sung.* | I |
-| [An aside as a clause](../spans.md#asides) | `zuzozen vowurel th(zolazun vezuvol).` | *Uzozen walks (Olazun is asleep).* | B |
-| [An aside on a noun](../spans.md#asides) | `zuzozen g(zuzozer vowurel) vezuyol.` | *Uzozen, who walks, sings.* | B |
-| [An aside on one word](../spans.md#asides) | `zudozol w(zuzozen vezuyel) gerulel vowurel.` | *A (so Uzozen says) red dog walks.* | B |
-| [An aside before the noun](../span-mention.md#gl-spans) | `gl(gerulel) zudozol gamezom vowurel.` | *The small dog (it is red) walks.* | I |
-| [A loan adjective before the noun](../span-mention.md#gl-spans) | <code>gl&lt;rouge&gt; zudozol vowurel.</code> | *A rouge dog walks.* | I |
-| [A loan degree word](../spans.md#pos) | <code>zudozol w&lt;molto&gt; gubulel vowurel.</code> | *A molto blue dog walks.* | B |
-| [Aside inside a cite](../span-nesting.md#nesting) | `zuzozen d[ th(hogowul) uzozen ] vezuyel.` | *Uzozen said “(quietly) Uzozen.”* | A |
+| [Quote a sentence](/spans#exact-paraphrase-proper) | `zolazun d~[zuzozen vezuyol] varayel.` | *Olazun wrote something like “Uzozen sings.”* | B |
+| [A title of several words](/spans#exact-paraphrase-proper) | `zahelan d@[enuron olazun] vezuyol.` | *Ahelan sang Enuron Olazun.* | B |
+| [A cite as the verb](/spans#pos) | `yul zolazun v[vozohul].` | *Don't say “stop,” Olazun.* | B |
+| [A loan verb](/spans#pos) | <code>zolazun v&lt;google&gt; duzozen.</code> | *Olazun googled Uzozen.* | B |
+| [A loan adjective](/spans#pos) | <code>zudozol g&lt;rouge&gt; vowurel.</code> | *A rouge dog walks.* | B |
+| [A quoted question](/span-mention#quote-acts) | `zuzozen d[yol zolazun vowurel] vezuyel.` | *Uzozen said, “Does Olazun walk?”* | I |
+| [Point back at a quote](/span-mention#span-noun) | `zolazun d[uzozen] vezuyel. zahelan dwadar varayel.` | *Olazun said “Uzozen.” Ahelan wrote that down.* | I |
+| [Topic from a title](/span-mention#topic-quotes) | `x@[enuron olazun] dalon vezuyol.` | *Now, about Enuron Olazun: it is sung.* | I |
+| [An aside as a clause](/spans#asides) | `zuzozen vowurel th(zolazun vezuvol).` | *Uzozen walks (Olazun is asleep).* | B |
+| [An aside on a noun](/spans#asides) | `zuzozen g(zuzozer vowurel) vezuyol.` | *Uzozen, who walks, sings.* | B |
+| [An aside on one word](/spans#asides) | `zudozol w(zuzozen vezuyel) gerulel vowurel.` | *A (so Uzozen says) red dog walks.* | B |
+| [An aside before the noun](/span-mention#gl-spans) | `gl(gerulel) zudozol gamezom vowurel.` | *The small dog (it is red) walks.* | I |
+| [A loan adjective before the noun](/span-mention#gl-spans) | <code>gl&lt;rouge&gt; zudozol vowurel.</code> | *A rouge dog walks.* | I |
+| [A loan degree word](/spans#pos) | <code>zudozol w&lt;molto&gt; gubulel vowurel.</code> | *A molto blue dog walks.* | B |
+| [Aside inside a cite](/span-nesting#nesting) | `zuzozen d[ th(hogowul) uzozen ] vezuyel.` | *Uzozen said “(quietly) Uzozen.”* | A |
 
 ### Calls and mentions {#calls-mentions}
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Call a foreign name](../spans.md#y-spans) | <code>y@&lt;Sam&gt;</code> | *Sam!* | B |
-| [Name of uncertain spelling](../spans.md#y-spans) | <code>y~@&lt;Sam&gt;</code> | *Sam?* (not sure of the name) | B |
-| [Foreign interjection](../spans.md#y-spans) | <code>y&lt;Wow&gt;</code> | *Wow!* | B |
-| [A word as spelling](../span-mention.md#mention): `glegel` | `glegel z[udozo] gamezom.` | *The word “udozo” is small.* | I |
-| [A name as spelling](../span-mention.md#mention): `glegen` | `zuzozen glegen d[enuron] vegugum.` | *Uzozen dislikes the name “enuron.”* | I |
+| [Call a foreign name](/spans#y-spans) | <code>y@&lt;Sam&gt;</code> | *Sam!* | B |
+| [Name of uncertain spelling](/spans#y-spans) | <code>y~@&lt;Sam&gt;</code> | *Sam?* (not sure of the name) | B |
+| [Foreign interjection](/spans#y-spans) | <code>y&lt;Wow&gt;</code> | *Wow!* | B |
+| [A word as spelling](/span-mention#mention): `glegel` | `glegel z[udozo] gamezom.` | *The word “udozo” is small.* | I |
+| [A name as spelling](/span-mention#mention): `glegen` | `zuzozen glegen d[enuron] vegugum.` | *Uzozen dislikes the name “enuron.”* | I |
 
 ### Writing the close {#close}
 
 | Writing | Use | English | Stage |
 |---------|-----|---------|-------|
-| [`d[…]`](../span-nesting.md#close-forms-complete-editorial-close-all) | close one span, whole | the matching closer | A |
-| [`d[…#]`](../span-nesting.md#close-forms-complete-editorial-close-all) | editorial: cut off or faulty | *trailing off* | A |
-| [`d[…\|]`](../span-nesting.md#close-forms-complete-editorial-close-all) | close all open spans | sweep everything | A |
+| [`d[…]`](/span-nesting#close-forms-complete-editorial-close-all) | close one span, whole | the matching closer | A |
+| [`d[…#]`](/span-nesting#close-forms-complete-editorial-close-all) | editorial: cut off or faulty | *trailing off* | A |
+| [`d[…\|]`](/span-nesting#close-forms-complete-editorial-close-all) | close all open spans | sweep everything | A |
 
 ## Scope islands {#islands}
 
-Braces `{ … }` group one chunk so a binder inside reaches only it. The edges are a short break in speech. A [tone mark](../speech-acts.md#tone-marks) right before the brace colors the whole island.
+Braces `{ … }` group one chunk so a binder inside reaches only it. The edges are a short break in speech. A [tone mark](/speech-acts#tone-marks) right before the brace colors the whole island.
 
 | Rule | Detail | Stage |
 |------|--------|-------|
-| [Binder required](../span-mention.md#scope-islands) | a scope-taking `/h/` or `/th/`, or a join, inside; a hook is never a binder | I |
-| [At most one phrase](../span-mention.md#scope-islands) | a noun phrase, verb phrase, or `/ɡ/` stack, with its own detail | I |
-| [One island per clause](../span-mention.md#scope-islands) | islands do not nest | I |
-| [Hosts keep their `/b/`](../span-mention.md#scope-islands) | host and hosted `/b/` are both inside or both outside | I |
-| [No role letter](../span-mention.md#scope-islands) | on the edges | I |
-| [Empty `{ }`](../span-mention.md#scope-islands) | has no reading | I |
+| [Binder required](/span-mention#scope-islands) | a scope-taking `/h/` or `/th/`, or a join, inside; a hook is never a binder | I |
+| [At most one phrase](/span-mention#scope-islands) | a noun phrase, verb phrase, or `/ɡ/` stack, with its own detail | I |
+| [One island per clause](/span-mention#scope-islands) | islands do not nest | I |
+| [Hosts keep their `/b/`](/span-mention#scope-islands) | host and hosted `/b/` are both inside or both outside | I |
+| [No role letter](/span-mention#scope-islands) | on the edges | I |
+| [Empty `{ }`](/span-mention#scope-islands) | has no reading | I |
 
 | Placement | Reading | Stage |
 |-----------|---------|-------|
-| [`/h/` or `/th/` inside](../span-mention.md#scope-islands) | frames that chunk | I |
-| [`/h/` or `/th/` outside](../span-mention.md#scope-islands) | ordinary floating word: frames the verb or clause | I |
-| [Join inside](../span-mention.md#scope-islands) | joins only the interior conjuncts | I |
-| [Join outside](../span-mention.md#scope-islands) | ordinary lookback; the edges do not filter it | I |
+| [`/h/` or `/th/` inside](/span-mention#scope-islands) | frames that chunk | I |
+| [`/h/` or `/th/` outside](/span-mention#scope-islands) | ordinary floating word: frames the verb or clause | I |
+| [Join inside](/span-mention#scope-islands) | joins only the interior conjuncts | I |
+| [Join outside](/span-mention#scope-islands) | ordinary lookback; the edges do not filter it | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [A possibility, on one chunk](../span-mention.md#scope-islands) | `zuzozen { hegugom zudozol gerulel } vawebol.` | *Uzozen saw what was possibly a red dog.* | I |
-| [A join, on one pair](../span-mention.md#scope-islands) | `zuzozen { zolazun zal } zam vowurel.` | *Uzozen and (just Olazun) walk.* | I |
-| [A recipient first, then the binder](../span-mention.md#scope-islands) | `zuzozen { bolazun hegugom } vezuyel.` | *Uzozen talks, possibly to Olazun.* | I |
+| [A possibility, on one chunk](/span-mention#scope-islands) | `zuzozen { hegugom zudozol gerulel } vawebol.` | *Uzozen saw what was possibly a red dog.* | I |
+| [A join, on one pair](/span-mention#scope-islands) | `zuzozen { zolazun zal } zam vowurel.` | *Uzozen and (just Olazun) walk.* | I |
+| [A recipient first, then the binder](/span-mention#scope-islands) | `zuzozen { bolazun hegugom } vezuyel.` | *Uzozen talks, possibly to Olazun.* | I |
 
 ## Don't mix up {#dont-mix-up}
 
 | This | vs | That |
 |------|----|------|
-| `hal` *only when* ([a closed list](../restrictors.md#only-when-never-hal)) | | `ham` *among other times* ([an open list](../restrictors.md#listed-occasions-open)) |
-| `hual` *always* ([every time](../restrictors.md#always-hual)) | | `har` *sometimes* ([some time](../restrictors.md#sometimes-anytime-some-other-time)) |
-| `hor` *anytime* ([any one will do](../restrictors.md#sometimes-anytime-some-other-time)) | | `hual` *always* ([at all times](../restrictors.md#always-hual)) |
-| `hur` *some other time* ([a leftover occasion](../more-occasions.md#more-occasions)) | | `huol` *anytime except when…* ([leftover times in general](../more-occasions.md#more-occasions)) |
-| `herulal hal` *only when it rains* ([a restrictor list](../more-occasions.md#occasions-vs-a-dependent-when)) | | `thohom blarl` *if a whole sentence* ([a dependent](../more-occasions.md#occasions-vs-a-dependent-when)) |
-| `d[uzozen]` *what was said* ([a cite](../spans.md#writing)) | | `denuron` *the one-word name* ([an ordinary -n word](../spans.md#exact-paraphrase-proper)) |
-| `d@[enuron olazun]` *the work* ([a proper span](../spans.md#exact-paraphrase-proper)) | | `glegen` *the name as spelling* ([a mention](../span-mention.md#mention)) |
-| `th(…)` *an aside* ([a comment](../spans.md#asides)) | | `{ … }` *a scope island* ([a chunk for a binder](../span-mention.md#scope-islands)) |
+| `hal` *only when* ([a closed list](/restrictors#only-when-never-hal)) | | `ham` *among other times* ([an open list](/restrictors#listed-occasions-open)) |
+| `hual` *always* ([every time](/restrictors#always-hual)) | | `har` *sometimes* ([some time](/restrictors#sometimes-anytime-some-other-time)) |
+| `hor` *anytime* ([any one will do](/restrictors#sometimes-anytime-some-other-time)) | | `hual` *always* ([at all times](/restrictors#always-hual)) |
+| `hur` *some other time* ([a leftover occasion](/more-occasions#more-occasions)) | | `huol` *anytime except when…* ([leftover times in general](/more-occasions#more-occasions)) |
+| `herulal hal` *only when it rains* ([a restrictor list](/more-occasions#occasions-vs-a-dependent-when)) | | `thohom blarl` *if a whole sentence* ([a dependent](/more-occasions#occasions-vs-a-dependent-when)) |
+| `d[uzozen]` *what was said* ([a cite](/spans#writing)) | | `denuron` *the one-word name* ([an ordinary -n word](/spans#exact-paraphrase-proper)) |
+| `d@[enuron olazun]` *the work* ([a proper span](/spans#exact-paraphrase-proper)) | | `glegen` *the name as spelling* ([a mention](/span-mention#mention)) |
+| `th(…)` *an aside* ([a comment](/spans#asides)) | | `{ … }` *a scope island* ([a chunk for a binder](/span-mention#scope-islands)) |

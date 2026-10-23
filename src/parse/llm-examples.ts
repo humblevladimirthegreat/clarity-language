@@ -5,7 +5,7 @@
  * cached next to the parse CLI bundle and rebuilt when docs/grammar, src, or data change.
  */
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
-import { dirname, join } from "node:path";
+import { basename, dirname, join } from "node:path";
 
 import { exampleBlocks, extractFreeEnglish, extraParens, splitFreeEnglish, tableEnglish } from "../lint/free-english.js";
 import { fillSelf } from "../learner-name.js";
@@ -14,6 +14,7 @@ import { constructionRegistry } from "./constructions.js";
 import { glossLabels, type ExamplePair, type PromptContext } from "./llm-prompt.js";
 import { morphGlossLine } from "./morph-gloss.js";
 import { parseWithTables } from "./parse-core.js";
+import { listMarkdown } from "../markdown-files.js";
 import { REPO_ROOT } from "../repo-paths.js";
 
 /**
@@ -86,17 +87,15 @@ export function examplePair(example: DocExample, source: string, tables: Classif
   };
 }
 
-function grammarPages(dir: string): string[] {
-  return readdirSync(dir)
-    .filter((name) => name.endsWith(".md"))
-    .sort();
+function grammarPages(dir: string): { page: string; path: string }[] {
+  return listMarkdown(dir).map((path) => ({ page: basename(path), path }));
 }
 
 /** Every usable example on the top-level grammar pages, one per distinct gloss; a block wins over a table row. */
 export function buildExampleIndex(grammarDir: string, tables: ClassifyTables): ExamplePair[] {
   const seen = new Set<string>();
   const out: ExamplePair[] = [];
-  const pages = grammarPages(grammarDir).map((page) => ({ page, markdown: readFileSync(join(grammarDir, page), "utf8") }));
+  const pages = grammarPages(grammarDir).map(({ page, path }) => ({ page, markdown: readFileSync(path, "utf8") }));
   const examples = [
     ...pages.flatMap(({ page, markdown }) => docExamples(markdown).map((example) => ({ page, example }))),
     ...pages.flatMap(({ page, markdown }) => tableExamples(markdown).map((example) => ({ page, example }))),
@@ -114,8 +113,8 @@ export function buildExampleIndex(grammarDir: string, tables: ClassifyTables): E
 export function buildTestSet(grammarDir: string, tables: ClassifyTables): ExamplePair[] {
   const seen = new Set<string>();
   const out: ExamplePair[] = [];
-  for (const page of grammarPages(grammarDir)) {
-    const markdown = readFileSync(join(grammarDir, page), "utf8");
+  for (const { page, path } of grammarPages(grammarDir)) {
+    const markdown = readFileSync(path, "utf8");
     for (const example of checkpointAnswers(markdown)) {
       const pair = examplePair(example, `${page}:${example.line}`, tables);
       if (!pair || seen.has(pair.gloss)) continue;
@@ -166,7 +165,7 @@ const GRAMMAR_DIR = join(REPO_ROOT, "docs", "grammar");
 /** The prompt's doc inputs, from the cache when it is newer than the docs, src, and data. */
 export function loadPromptContext(tables: ClassifyTables): PromptContext {
   const sources = [
-    ...grammarPages(GRAMMAR_DIR).map((page) => join(GRAMMAR_DIR, page)),
+    ...grammarPages(GRAMMAR_DIR).map(({ path }) => path),
     join(REPO_ROOT, "src"),
     join(REPO_ROOT, "data"),
   ];

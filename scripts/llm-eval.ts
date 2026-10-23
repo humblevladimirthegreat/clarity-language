@@ -15,11 +15,12 @@
  */
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync, appendFileSync } from "node:fs";
-import { join } from "node:path";
+import { basename, join } from "node:path";
 
 import { loadDefaultTables } from "../src/parse/index.js";
 import { buildTestSet, docExamples, loadPromptContext } from "../src/parse/llm-examples.js";
 import { buildPrompt, featureWeights, normalizeGloss, type ExamplePair } from "../src/parse/llm-prompt.js";
+import { listMarkdown } from "../src/markdown-files.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 import { claude as claudeCall, rng, shuffle, withRetry } from "./lib/claude-cli.js";
 
@@ -55,9 +56,9 @@ const context = loadPromptContext(tables);
 const weights = featureWeights(context.index);
 
 const blockSources = new Set(
-  readdirSync(GRAMMAR_DIR)
-    .filter((name) => name.endsWith(".md"))
-    .flatMap((page) => docExamples(readFileSync(join(GRAMMAR_DIR, page), "utf8")).map((example) => `${page}:${example.line}`)),
+  listMarkdown(GRAMMAR_DIR).flatMap((file) =>
+    docExamples(readFileSync(file, "utf8")).map((example) => `${basename(file)}:${example.line}`),
+  ),
 );
 const pools: Record<Kind, ExamplePair[]> = {
   block: context.index.filter((pair) => blockSources.has(pair.source)),

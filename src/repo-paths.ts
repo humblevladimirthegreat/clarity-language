@@ -2,6 +2,8 @@ import { existsSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { pageRelPath } from "../docs/grammar/.vitepress/lib/reading-order.js";
+
 /** The nearest directory above this module with a package.json: the repo, whether run from src/ or a dist/ bundle. */
 function findRepoRoot(): string {
   let dir = dirname(fileURLToPath(import.meta.url));
@@ -22,4 +24,11 @@ export function dataPath(name: string): string {
 
 export function readData(name: string): string {
   return readFileSync(dataPath(name), "utf8");
+}
+
+export const GRAMMAR_DIR = join(REPO_ROOT, "docs", "grammar");
+
+/** Absolute path of a grammar page. Sittings live in a band folder; public URLs stay flat. */
+export function grammarFile(page: string): string {
+  return join(GRAMMAR_DIR, pageRelPath(page));
 }

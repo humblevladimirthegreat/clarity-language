@@ -6,7 +6,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { isLevelReview, pathPages } from "../../docs/grammar/.vitepress/lib/reading-order.js";
+import { isLevelReview, pageRelPath, pathPages } from "../../docs/grammar/.vitepress/lib/reading-order.js";
 import { NOT_CORE_ROOTS } from "../core-vocabulary.js";
 import { listMarkdown } from "../markdown-files.js";
 import { extractMorphPairs } from "../lint/morph-gloss-docs.js";
@@ -32,7 +32,7 @@ const GRAMMAR_DIR = join(REPO_ROOT, "docs", "grammar");
 export { pathPages };
 
 function readPage(page: string): string | undefined {
-  const path = join(GRAMMAR_DIR, page);
+  const path = join(GRAMMAR_DIR, pageRelPath(page));
   return existsSync(path) ? readFileSync(path, "utf8") : undefined;
 }
 

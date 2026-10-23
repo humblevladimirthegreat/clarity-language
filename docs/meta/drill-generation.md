@@ -114,7 +114,7 @@ Reply with: which checkpoints you added, replaced, or skipped, the new and revie
 
 One level per agent, once every stage checkpoint of that level is a `### Practice`. Shape and rules: [level reviews](translation-exercises.md#level-reviews).
 
-1. **Target.** The level's review file ([review.md](../grammar/review.md), `review-intermediate.md`, `review-advanced.md`): `### Practice {#<band>-practice}`, last in that sidebar group. Add the file to that group in `docs/grammar/.vitepress/lib/reading-order.ts`, and to the review sentence in [introduction.md How to learn](../grammar/introduction.md#how-to-learn).
+1. **Target.** The level's review file ([review.md](/review), `review-intermediate.md`, `review-advanced.md`): `### Practice {#<band>-practice}`, last in that sidebar group. Add the file to that group in `docs/grammar/.vitepress/lib/reading-order.ts`, and to the review sentence in [introduction.md How to learn](../grammar/introduction.md#how-to-learn).
 2. **Read.** Each stage checkpoint of the level in path order (`npm run core-vocabulary` lists them), its allowlist **Introduces** cell, and the teaching section that owns its main decision. Do not open later levels.
 3. **Vocabulary.** `npm run core-vocabulary -- --for review.md:beginner` (or `review-intermediate.md:intermediate` / `review-advanced.md:advanced`); prefer the roots unused longest. Every root goes under **Review**.
 4. **Write.** One item per checkpoint, in path order within each H4, aimed at the page's main decision with words and packaging its checkpoint did not use. Choose the item type per page to meet the mix; end every answer with its **Rule:** link.
@@ -227,6 +227,8 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `comparatives.md` | Beginner | a racetrack |
 | `comparatives.md` | Intermediate | a weighing room |
 | `comparatives.md` | Advanced | a talent contest |
+| `stance-bars.md` | Advanced | a talent contest |
+| `vague-amounts.md` | Intermediate | an open mic |
 | `causation.md` | Beginner | a greenhouse |
 | `iff-fault.md` | Intermediate | a dam control room |
 | `fault.md` | Beginner | a bike rack |
@@ -358,7 +360,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 7 | `dependents.md` | Advanced | **exists** | Lexicalized stand-ins in other roles (`varn` / `vaen` / `vuon` / `darn` / …); nested **`blarl`** | Recycle Beginner **`darl`/`barl`** and Intermediate stand-ins |
 | 13 | `relations.md` | Intermediate | **exists** | *between* **`hedam`**; of-relations (`gobem`, `gadam`, `gulem`, `gaham`); recycle extra-noun hooks for other place talk | *Between* recycles joins Beginner `/b/` join. Social ties are Beginner on `social-ties.md` |
 | 13 | `relations.md` | Advanced | **exists** | Hosted *as-of* **`henam` / `hunem`**; `/h/` `/ɡ/` `/w/`; resume **-r**; date in `/b/` | Recycle RESIDUE, forecast, calendar `b_#…`. Not persist hooks |
-| 4 | `proper-names.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); full names (given + `/ɡ/` family **-n**) and hyphenated names `ROOTxROOT`+**-n**; [titled phrases](../grammar/proper-names.md#titled-phrases) (hook / join / span **-n**, inner **-l** / **-m**) | Not value/ability/plan ending tables |
+| 4 | `proper-names.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); full names (given + `/ɡ/` family **-n**) and hyphenated names `ROOTxROOT`+**-n**; [titled phrases](/proper-names#titled-phrases) (hook / join / span **-n**, inner **-l** / **-m**) | Not value/ability/plan ending tables |
 | 4 | `word-endings.md` | Advanced | skip | — | no Advanced stage |
 | 9 | `tag-pronouns.md` | Intermediate | **exists** | English approximations of **-r**; resume one sense; cross-role recast; each other; addressing several people; tags | |
 | 9 | `topic.md` | Intermediate | **exists** | `/x/` introduce / return / clear; topic pronoun **`alon`**; what a topic change resets; groups as topic; asking about the topic | No Beginner slot. Recycle = all Beginner + `tag-pronouns.md` (tags) and pronouns Beginner (role pointers) |
@@ -388,7 +390,9 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `numbers.md` | Advanced | **exists** | From the end (`#-` / `ue`); stacked markers (`#_` / `+-`); ambient magnitude **as used in the stage’s teach examples** | — |
 | 15 | `digitless-exponents.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp / special stance **as used in the stage’s teach examples** — not unassigned cells | Recycle sibling Intermediate |
 | 15 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; manner `/h/` immediately after the join; PLAN bar right before the join | |
-| 15 | `comparatives.md` | Advanced | **exists** | Stance bars (channels, FORMER, ABIL, REQUIRE, attitudes); bar inside vs stance after the fence | |
+| 15 | `comparatives.md` | Advanced | **exists** | Stance bars (channels, FORMER, ABIL, REQUIRE, attitudes); bar inside vs stance after the fence | Vague *many* / *few* is Intermediate on `vague-amounts.md`. The Advanced sitting is `stance-bars.md` |
+| 15 | `stance-bars.md` | Advanced | **exists** | Every bar (channels, FORMER, ABIL, REQUIRE, attitudes); bar inside vs stance after the fence | Vague amounts are Intermediate on `vague-amounts.md` |
+| 15 | `vague-amounts.md` | Intermediate | **exists** | Vague *many* / *few* / *often* / *late* with a named PATTERN bar | Recycle = all Beginner + comparative-arity + evidentiality. Not ABIL / FORMER as bars |
 | 15 | `iff-fault.md` | Intermediate | **exists** | Following-sentence **`blarl`**; **`ahu`** *because* / **`ehe`** *iff*; asserted necessary **`thebom thahum`**; **CAUSE** **`ewe`** **-m** | Fault endings are Beginner on `fault.md`. Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
 | 15 | `causation.md` | Advanced | — | no Advanced stage | |
 | 16 | `prescription.md` | Intermediate | **exists** | Motive **`tho`** + time horizon; which ending table; attachment sites; whose stake; contrary **`uem`**; sake bars (*enough* / *too*) | Prescription **`the`** is Beginner on `ought-for-a-sake.md` |
@@ -398,7 +402,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels after LIVE/MEMORY; MAY vs nearby jobs; **holder** seam (someone else's view); a source you won't name or don't know (`blwoyar` / `blwuyar`) | LIVE/MEMORY are Beginner on `live-and-memory.md` |
 | 16 | `knowing.md` | Advanced | **exists** | Mood on one adjective; dated channel; channels on a generalization | One checkpoint for the whole stage |
 | 16 | `viewpoint.md` | Intermediate | **exists** | Content-rule parts (manner **`h`** pointer or compound); capacity on `/h/` (slot-part compound); viewpoint laterals **`DIR th ANCHOR`**; bare arrow roots = compass; gravity **`ayuhe`/`aduhe`**; name/listener anchor | Prefer `…thazawan` over silent speaker default. **`awa`/`uwo`** only when testing role-anchor. Include at least one bare cardinal, one gravity item, one content part, and one capacity item |
-| 16 | `compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *a few minutes* / passing) | Recycle [greeting](../grammar/word-endings.md#greeting) and [vocative](../grammar/speech-moves.md#vocative). Not ability (`vezuyoxel`). Not values |
+| 16 | `compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *a few minutes* / passing) | Recycle [greeting](/word-endings#greeting) and [vocative](/speech-moves#vocative). Not ability (`vezuyoxel`). Not values |
 | 16 | `compounds.md` | Advanced | skip | — | Root tails are a memory aid and tail-suffix words are dictionary entries: nothing to build or choose |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
 | 17 | `join-across-roles.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`); join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | Sequence `xan` is Beginner on `clause-sequence.md`. Recycle = all Beginner + earlier Intermediate (path before 17) |

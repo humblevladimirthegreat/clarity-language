@@ -77,13 +77,14 @@ Soft dependency (“easier after fluent X”) may swap two sittings that are alr
 ## How to apply
 <a id="how-to-apply"></a>
 
-- One sitting per file, marked with front matter `band: beginner | intermediate | advanced`. The sidebar groups sittings by band. Peel a later band off a parent with `npm run peel-band` rather than tagging several bands with H2s on a new page. Omit a later sitting when it would only recap or list unused slots ([empty or pointless stages](grammar-docs.md#empty-stages)).
+- One sitting per file, marked with front matter `band: beginner | intermediate | advanced`. The sidebar groups sittings by band, and the files live on disk as `docs/grammar/{beginner,intermediate,advanced}/`. Public URLs stay flat (`/grammar/clause.html`). Peel a later band off a parent with `npm run peel-band`, or named H3s onto a job-named file with `npm run peel-headings`, rather than tagging several bands with H2s on a new page. Omit a later sitting when it would only recap or list unused slots ([empty or pointless stages](grammar-docs.md#empty-stages)).
+- Dispatch: whole-sitting `band:` flip (move the sidebar row and that sitting’s review item; do not demote a Beginner parent slug — peel instead); heading peel onto a job-named file; in-band cluster reorder of the three sidebar lists (no scoring, no solver).
 - Sibling splits by **job** when *S* > 10 still apply ([drill-generation](drill-generation.md)); this split is by **sitting**. Later sittings of the same topic use a job title, not the topic name again.
-- Do **not** score every morph. For each sitting, run the [gates](#gates), pick a band, then place it with gate 4 and the [within-band order](#order-inside-a-band).
+- Do **not** score every morph. For each sitting, run the [gates](#gates), pick a band, then place it with gate 4 and the [within-band order](#order-inside-a-band). Do not teach a new form while moving bands; do not refill a checkpoint except to drop a leak.
 - Stacked → later **in the same band**, unless it fails corpus or usable. Dense but freestanding stays Beginner when it is usable and first-corpus. Easy + not first-corpus is Intermediate, not Advanced.
 - When examples need a later home, first try **thinning examples** or **a smaller slice**, not a silent band shift.
 - Do **not** empty a Beginner parent URL. Demote ineligible H3s by peeling them onto a new Intermediate sitting. Promote a whole Intermediate sitting by changing `band:` and the sidebar row only (URL and content stay). To add a Beginner slice of an Intermediate-only topic, make a **new** Beginner file named by job.
-- A split keeps `{#id}`s. Rewrite `parent.md#id` wherever the id now lives.
+- A split keeps `{#id}`s. Rewrite `parent.md#id` in docs, `constructions.ts`, overlay CSV, lexicon `core`, game `source`, cheat sheets, and Claritish `<!-- Source -->`. `AGENTS.md` stays a routing table of topic nouns: edit the parent’s Owns line when a job leaves; add a row only for a new topic.
 - A band move moves that sitting’s review item. A split gives the new sitting its own item at the end of its group (or in that group’s review).
 - Grammar prose: [teach now; don’t preview later](grammar-docs.md#teach-now-dont-preview-later) — no teaser links to peers the path has not reached yet. Later-stage H3s: [Intermediate and Advanced stage shape](grammar-docs.md#later-stage-shape).
 - A thin Beginner that only says “see Intermediate” does **not** earn a Beginner sitting. Give one usable pattern, or drop the page from the Beginner path.
@@ -93,7 +94,7 @@ Soft dependency (“easier after fluent X”) may swap two sittings that are alr
 
 Read **`docs/grammar/`** only, in the three sidebar groups: every Beginner sitting, then Intermediate, then Advanced. Each group ends with its review. [purpose.md](../grammar/purpose.md) and [introduction.md](../grammar/introduction.md) are orientation (not sittings); they sit above the Beginner group. Learner-facing [How to learn](../grammar/introduction.md#how-to-learn) matches this.
 
-[causation.md](../grammar/causation.md), [intention.md](../grammar/intention.md), [pronouns.md](../grammar/pronouns.md), [questions.md](../grammar/questions.md) and [roles.md](../grammar/roles.md) have no Advanced sitting: their former Advanced sections were applications and live on the recipe track.
+[causation.md](/causation), [intention.md](/intention), [pronouns.md](/pronouns), [questions.md](/questions) and [roles.md](/roles) have no Advanced sitting: their former Advanced sections were applications and live on the recipe track.
 
 ### Recipe track (outside the stages) {#recipe-track}
 

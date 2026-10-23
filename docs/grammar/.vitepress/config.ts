@@ -25,6 +25,11 @@ export default defineConfig({
   description:
     'Learner grammar for Agebon — compassion, rationality, and empowerment encoded in vocabulary and grammar.',
   base: '/grammar/',
+  rewrites: {
+    'beginner/:page': ':page',
+    'intermediate/:page': ':page',
+    'advanced/:page': ':page',
+  },
   // Repo root `dist/grammar/` so Amplify can publish `dist/` and serve at /grammar/
   outDir: '../../dist/grammar',
   // Amplify static hosting serves `.html` files as-is; avoid extensionless URLs

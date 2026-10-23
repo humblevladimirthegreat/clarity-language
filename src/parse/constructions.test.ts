@@ -1,18 +1,15 @@
 import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
 
 import { grammarHeadings } from "../lint/grammar-anchors.js";
 import { sentenceGrammarKeys } from "./construction-trace.js";
 import { constructionRegistry, REJECTIONS, SENTENCE_CONSTRUCTIONS } from "./constructions.js";
 import { loadDefaultTables, parse } from "./index.js";
+import { grammarFile } from "../repo-paths.js";
 
 const CONSTRUCTIONS = constructionRegistry(loadDefaultTables().overlays.values());
 import { sentenceGrammar } from "./sentence-parser.js";
-
-const grammarDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "docs", "grammar");
 
 describe("construction registry", () => {
   it("covers every sentence-grammar production, and only those", () => {
@@ -36,7 +33,7 @@ describe("construction registry", () => {
     const entries = [...CONSTRUCTIONS, ...Object.entries(REJECTIONS).map(([id, entry]) => [`reject.${id}`, entry] as const)];
     for (const [id, entry] of entries) {
       const [page, fragment] = entry.anchor.split("#");
-      const path = join(grammarDir, page!);
+      const path = grammarFile(page!);
       if (!fragment || !existsSync(path)) {
         broken.push(`${id}: ${entry.anchor}`);
         continue;

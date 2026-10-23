@@ -40,21 +40,28 @@ export function teachingEntry(entry: EnglishEntry): boolean {
   return !SKIP_PAGES.test(entry.page) && !/practice$/.test(entry.slug);
 }
 
-/** `docs/grammar/english.md` → `english.md`; `cheat-sheets/x.md` stays nested. */
+/** `docs/grammar/english.md` → `english.md`; sittings drop the band folder; `cheat-sheets/x.md` stays nested. */
 export function grammarPath(page: string): string {
-  return page.replace(/^.*?docs\/grammar\//, "");
+  return page.replace(/^.*?docs\/grammar\//, "").replace(/^(?:beginner|intermediate|advanced)\//, "");
 }
 
 /** A `Teach` link relative to its page, as a docs/grammar path (`hooks.md#extra-noun`). */
 export function resolveLink(page: string, link: string): string {
-  if (link.startsWith("#")) return `${grammarPath(page)}${link}`;
+  const hashAt = link.indexOf("#");
+  const hash = hashAt >= 0 ? link.slice(hashAt) : "";
+  const path = hashAt >= 0 ? link.slice(0, hashAt) : link;
+  if (!path) return `${grammarPath(page)}${hash}`;
+  if (path.startsWith("/")) {
+    const leaf = path.replace(/^\//, "").replace(/\.html?$/, "");
+    return `${grammarPath(`${leaf}.md`)}${hash}`;
+  }
   const dir = grammarPath(page).split("/").slice(0, -1);
   const parts = [...dir];
-  for (const piece of link.split("/")) {
+  for (const piece of path.split("/")) {
     if (piece === "..") parts.pop();
     else if (piece !== ".") parts.push(piece);
   }
-  return parts.join("/");
+  return `${grammarPath(parts.join("/"))}${hash}`;
 }
 
 /**

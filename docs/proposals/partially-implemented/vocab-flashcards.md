@@ -77,7 +77,7 @@ An overlay has no concrete / abstract split; its `gloss` fills the concrete line
 
 **Tags** use Anki’s `::` hierarchy: `agebon::root` / `agebon::compound` / `agebon::overlay`; `agebon::core::<page>::<band>` from the `core` cell (e.g. `agebon::core::clause::beginner`); `agebon::overlay::<kind>`; `agebon::stage::<band>`.
 
-**Citation vs sentence use:** cards study stems as in the lexicon. The PoS letter and reference ending are not on the card; learners add them when writing sentences ([role letters](../../grammar/clause.md#role-letters)).
+**Citation vs sentence use:** cards study stems as in the lexicon. The PoS letter and reference ending are not on the card; learners add them when writing sentences ([role letters](/clause#role-letters)).
 
 ## Packs
 
@@ -88,7 +88,7 @@ All packs use the same note type. A pack is a filter over the note list plus dec
 | Pack | Contents | Source of the list |
 |------|----------|--------------------|
 | **Core** | Every published root and compound with a `core` cell. One subdeck per checkpoint, numbered in path order (`Agebon::Core::01 Clause · beginner`, …); within a subdeck, CSV order | `core` column, ordered by `stageCheckpoints` (reading order, every Beginner checkpoint, then Intermediate, then Advanced) |
-| **Sakes** | The nine sake roots, each followed by its sake overlay note, in [sake inventory](../../grammar/sakes.md#sake-inventory) order | `sake` rows of `lexicon-overlays.csv`; each root is the overlay's host (`senseFormRoot`) |
+| **Sakes** | The nine sake roots, each followed by its sake overlay note, in [sake inventory](/sakes#sake-inventory) order | `sake` rows of `lexicon-overlays.csv`; each root is the overlay's host (`senseFormRoot`) |
 | **Everything** | All published roots and compounds, one deck per source | Published and compound CSVs |
 
 **Core follows the checkpoints.** A root’s `core` cell names the checkpoint that introduces it, so the Core subdecks are exactly the **New words** of each checkpoint, in the order a learner meets them. A learner unlocks the next subdeck as they reach its checkpoint. The column is hand-edited and linted (at most 5 new roots per checkpoint), so the pack inherits that pacing without its own list. Level reviews introduce no roots and get no subdeck. The checkpoints ask for English → Agebon translation from the first beginner band, which is why production cards ship with v1.

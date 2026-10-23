@@ -1,12 +1,12 @@
 # Proposal: diphone singing (pitch / timing contour)
 
 **Status:** PROPOSED  
-**Related:** waveform units and concat glue in `diphone-tts.md`; parse → `toSpeech` → `toPhonemes` in `src/tts/` (see `diphone-tts.md`); singability **design** (not this UI) in [phonology.md § Singability](../grammar/singability.md#singability-constraints)  
+**Related:** waveform units and concat glue in `diphone-tts.md`; parse → `toSpeech` → `toPhonemes` in `src/tts/` (see `diphone-tts.md`); singability **design** (not this UI) in [phonology.md § Singability](/singability#singability-constraints)  
 **Design authority:** letters, syllables, and voiced-preferred consonants stay in the grammar. This proposal is **tooling only**: the same recorded diphone bank, with a **drawn F0 + duration contour** instead of spoken defaults. It does not add melody to the language or a singing orthography.
 
 ## Motivation
 
-[Phonology](../grammar/phonology.md) is built so ordinary lines are easy to sing: mid-to-open vowels, one nucleus per letter, almost no mid-word codas, voiced consonants so a note can continue. Docs Speak still **speaks**. Kitten-class neural TTS cannot take a melody without an English singing prior.
+[Phonology](/phonology) is built so ordinary lines are easy to sing: mid-to-open vowels, one nucleus per letter, almost no mid-word codas, voiced consonants so a note can continue. Docs Speak still **speaks**. Kitten-class neural TTS cannot take a melody without an English singing prior.
 
 Classic singing synth (Vocaloid-era concatenative, UTAU) is diphones plus a **score**. `diphone-tts.md` already imposes F0 and stretches vowel mids for speech (flat pitch, equal ms). Singing is that renderer with the numbers coming from a **contour**, not a new model.
 
@@ -24,7 +24,7 @@ Spoken Play is then the boring special case of the same engine.
 
 ## Non-goals
 
-- Changing [singability constraints](../grammar/singability.md#singability-constraints) or encoding stress/melody in spelling.
+- Changing [singability constraints](/singability#singability-constraints) or encoding stress/melody in spelling.
 - Neural singing (DiffSinger, SynthV, “AI cover”) or cloning a singer.
 - Choir, harmony, or multi-track v1 (one F0 stream).
 - Studio Vocaloid expressivity (phoneme timing editors with dozens of flags) in v1.
@@ -155,7 +155,7 @@ No extra neural weights.
 
 | Topic | Doc |
 |-------|-----|
-| Singability (language design) | [phonology.md](../grammar/singability.md#singability-constraints) |
-| Letter IPA / hiatus | [phonology.md](../grammar/phonology.md) |
+| Singability (language design) | [phonology.md](/singability#singability-constraints) |
+| Letter IPA / hiatus | [phonology.md](/phonology) |
 | Diphone bank / concat | `diphone-tts.md` |
 | SpeechPlan / G2P | `src/tts/` |

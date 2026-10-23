@@ -16,7 +16,7 @@ Per-feature teaching already has its practice: rule → cue → 1–3 worked exa
 | Where | Job |
 |-------|-----|
 | **Inside each feature** | Worked examples only (house style) |
-| **End of a page stage** (e.g. [clause.md Beginner](../grammar/clause.md) → [practice](../grammar/clause.md#beginner-practice)) | Short checkpoint for *that page’s* stack |
+| **End of a page stage** (e.g. [clause.md Beginner](/clause) → [practice](/clause#beginner-practice)) | Short checkpoint for *that page’s* stack |
 | **End of whole Beginner / Intermediate / Advanced** (cross-doc) | Required [level review](#level-reviews) last in each sidebar group; do **not** duplicate a review on every grammar file |
 | **After a real trap** | At most 1–2 items *if* English pulls the wrong Agebon shape (e.g. *because* as a verb, a general *to be*, opaque `<>` when the page is not teaching loans) |
 
@@ -24,7 +24,7 @@ Per-feature teaching already has its practice: rule → cue → 1–3 worked exa
 
 **Coverage:** every **productive** page stage gets a checkpoint. Orientation, phonology charts, and parser maps do not — [allowlist](drill-generation.md#allowlist) **skip**. Every construction family taught in that band, parser-built or data, needs at least one practice item in the same-band checkpoint (either direction). Do **not** add a spoiler block after every H3. Named settings in use: [settings](drill-generation.md#settings).
 
-**Status:** all **generate** checkpoints **exist** (see [allowlist](drill-generation.md#allowlist)). All are converted to this page's standard; none is [legacy](#legacy-checkpoints). Invoke [drill-generation.md](drill-generation.md#execute) **one grammar file per agent** only to **replace** a checkpoint, which converts it to this page's standard. All three [level reviews](#level-reviews) exist ([Beginner](../grammar/review.md), [Intermediate](../grammar/review-intermediate.md), [Advanced](../grammar/review-advanced.md)); procedure in [drill-generation.md](drill-generation.md#level-review).
+**Status:** all **generate** checkpoints **exist** (see [allowlist](drill-generation.md#allowlist)). All are converted to this page's standard; none is [legacy](#legacy-checkpoints). Invoke [drill-generation.md](drill-generation.md#execute) **one grammar file per agent** only to **replace** a checkpoint, which converts it to this page's standard. All three [level reviews](#level-reviews) exist ([Beginner](/review), [Intermediate](/review-intermediate), [Advanced](/review-advanced)); procedure in [drill-generation.md](drill-generation.md#level-review).
 
 ## What belongs where
 <a id="what-belongs-where"></a>
@@ -35,7 +35,7 @@ Per-feature teaching already has its practice: rule → cue → 1–3 worked exa
 | Stage checkpoint (translation plus [decision items](#item-types)) | End of that page’s **Beginner** / **Intermediate** / **Advanced** stage |
 | Practice for a recipe | `## Practice` at the end of that `say-*.md` page ([recipe track](grammar-docs.md#recipe-track)); same principles, not a stage checkpoint |
 | Multi-turn dialogue practice | [`examples/`](../examples/) — not inside every grammar section; grammar pages do not link there |
-| Cross-doc “finish the whole level” review | [Level review](#level-reviews): the level's band on [review.md](../grammar/review.md); not on each peer page |
+| Cross-doc “finish the whole level” review | [Level review](#level-reviews): the level's band on [review.md](/review); not on each peer page |
 
 ## Drill principles
 <a id="principles"></a>
@@ -218,7 +218,7 @@ The difference in plain English.
 
 Number items from **1** under each H4. Keep the two translation directions first; the decision-item H4s follow in this order and appear only when used. **Also correct:** comes last in an English → Agebon answer, with variants comma-separated; omit the line when no likely variant exists. Omit **Review** on a checkpoint with no earlier core roots.
 
-Omit recoverable **`yal`** unless the drill is teaching speech act. Match role letters and sense endings to the grammar page ([clause.md](../grammar/clause.md#role-letters), [word ending](../grammar/word-endings.md)). English items that need a person use house names (*Uzozen waits*), not *I* / *you*. English *they* / *he* / *she* only when the Agebon is a pronoun ([house scene](#house-scene)).
+Omit recoverable **`yal`** unless the drill is teaching speech act. Match role letters and sense endings to the grammar page ([clause.md](/clause#role-letters), [word ending](/word-endings)). English items that need a person use house names (*Uzozen waits*), not *I* / *you*. English *they* / *he* / *she* only when the Agebon is a pronoun ([house scene](#house-scene)).
 
 ### Vocab table
 <a id="vocab-table"></a>
@@ -230,16 +230,16 @@ Omit recoverable **`yal`** unless the drill is teaching speech act. Match role l
 
 - One sense per row (split house names `uzozen` / `olazun` / `ahelan`). Do not pack several pairs into one row.
 - **English** is the published lemma for that spelling (literal, metaphor, or packed role English); `build` checks it against the lexicon. Do not put an inflected English word in the bank (*running*, *hasty*, *the lie*) when the lemma is *run* / *haste* / *lie*; prompts may still use the obvious related form. SI nicknames (*gram*, *liter*) stay in **Cue** until that unit has its own published lemma. English is not an ending tag (`(**-m**)`). House people use the nativized name (`*Uzozen*`). Overlay **English** is the overlay gloss (`*MEMORY*`). Role compounds use the morph sense (`*agent-building*`). Named **`x`** stems use the hyphenated host lemmas (`*hospital-bed*`). Speaker/listener specials use *I* / *you* or *speaker* / *listener*.
-- **Agebon** is the [citation](../grammar/word-endings.md#citation-forms) of the English sense (`udozol`, `ogowum` *volume*), ending on, not a bare stem (`udozo`). It is the in-clause word only when the English matches only with a role or `/x/` / `/h/` / `/w/` letter (`vawebol` *see*, `vuhohol` *sit*, `vezuyel` *tell*, `xahem` *therefore*, `hedurem` *haste*). Closed specials use their default ending (`ugobon`). Inner **`x`** pieces and other exceptions: [citation in tables](grammar-docs.md#citation-in-tables).
+- **Agebon** is the [citation](/word-endings#citation-forms) of the English sense (`udozol`, `ogowum` *volume*), ending on, not a bare stem (`udozo`). It is the in-clause word only when the English matches only with a role or `/x/` / `/h/` / `/w/` letter (`vawebol` *see*, `vuhohol` *sit*, `vezuyel` *tell*, `xahem` *therefore*, `hedurem` *haste*). Closed specials use their default ending (`ugobon`). Inner **`x`** pieces and other exceptions: [citation in tables](grammar-docs.md#citation-in-tables).
 - Every **New words** row has a **Cue**. When **Agebon** is not the citation of the English, the cue names the citation sense (`👁️ from *eye*`, `🔈 from *quiet*`). When a root has no useful cue, give the emoji alone. A cue is never the English to produce, and never a mid-dot prose list.
 - `lint:agebon` checks the columns of each group, the English, a cue on every **New words** row, one row per root across both groups, and that the bank lists exactly the content roots the drills use. The **Fix it** wrong form is not a use.
 
-**Caption and legend:** the captions are **`New words:`** and **`Review:`**. Spell out what the columns mean only on the first converted banks ([clause.md](../grammar/clause.md#beginner-practice) Beginner, [word-endings.md](../grammar/word-endings.md#beginner-practice) Beginner), and update the [How to learn](../grammar/introduction.md#cues) legend when the first page converts.
+**Caption and legend:** the captions are **`New words:`** and **`Review:`**. Spell out what the columns mean only on the first converted banks ([clause.md](/clause#beginner-practice) Beginner, [word-endings.md](/word-endings#beginner-practice) Beginner), and update the [How to learn](../grammar/introduction.md#cues) legend when the first page converts.
 
 ## Level reviews
 <a id="level-reviews"></a>
 
-Each level ends with a review: [review.md](../grammar/review.md) for Beginner, [review-intermediate.md](../grammar/review-intermediate.md), [review-advanced.md](../grammar/review-advanced.md), last in that sidebar group, outside the stage pages. The docs lint reads each review after every sitting of its band: the learning-order check and the [core vocabulary](#core-vocabulary) rules see it at the end of its level. Stage pages do not link to it. A review follows the [template](#template) and every drill principle except where this table differs.
+Each level ends with a review: [review.md](/review) for Beginner, [review-intermediate.md](/review-intermediate), [review-advanced.md](/review-advanced), last in that sidebar group, outside the stage pages. The docs lint reads each review after every sitting of its band: the learning-order check and the [core vocabulary](#core-vocabulary) rules see it at the end of its level. Stage pages do not link to it. A review follows the [template](#template) and every drill principle except where this table differs.
 
 | Rule | Detail |
 |------|--------|

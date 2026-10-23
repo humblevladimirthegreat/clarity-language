@@ -24,8 +24,12 @@ const grammarDir = join(REPO_ROOT, "docs", "grammar");
 const outDir = join(REPO_ROOT, "tmp", "free-english-review");
 
 const args = process.argv.slice(2);
+const sittingDir = (file: string) => {
+  const dir = dirname(relative(grammarDir, file)).replaceAll("\\", "/");
+  return dir === "." || dir === "beginner" || dir === "intermediate" || dir === "advanced";
+};
 const files = (args.length === 0 ? listMarkdown(grammarDir) : args.flatMap((arg) => listMarkdown(resolve(arg)))).filter(
-  (file) => dirname(file) === grammarDir,
+  sittingDir,
 );
 const tables = loadDefaultTables();
 mkdirSync(outDir, { recursive: true });

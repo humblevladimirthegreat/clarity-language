@@ -30,13 +30,23 @@ for (let i = 0; i < args.length; i++) {
 
 const git = (...a: string[]) => execFileSync("git", a, { cwd: REPO_ROOT, encoding: "utf8", maxBuffer: 64 << 20 });
 const grammarDir = join("docs", "grammar");
+const isGrammarPage = (file: string) => {
+  const dir = dirname(file).replaceAll("\\", "/");
+  return (
+    file.endsWith(".md") &&
+    (dir === grammarDir ||
+      dir === `${grammarDir}/beginner` ||
+      dir === `${grammarDir}/intermediate` ||
+      dir === `${grammarDir}/advanced`)
+  );
+};
 const changed = git("diff", "--name-only", base, "--", grammarDir)
   .split("\n")
   .filter(Boolean);
 const outside = git("diff", "--name-only", base)
   .split("\n")
-  .filter((file) => file && !(dirname(file) === grammarDir && file.endsWith(".md")));
-const files = (pages.length ? pages : changed).filter((file) => dirname(file) === grammarDir && changed.includes(file));
+  .filter((file) => file && !isGrammarPage(file));
+const files = (pages.length ? pages : changed).filter((file) => isGrammarPage(file) && changed.includes(file));
 
 const tables = loadDefaultTables();
 const constructionCache = new Map<string, string[] | null>();

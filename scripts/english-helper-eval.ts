@@ -26,7 +26,7 @@
  */
 import { createHash } from "node:crypto";
 import { appendFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { basename, join } from "node:path";
 
 import { analyzeEnglish } from "../src/english-helper/analyze.js";
 import { coverWord, promptShows, treeWords, type Coverage } from "../src/english-helper/coverage.js";
@@ -41,6 +41,7 @@ import { promptForPassage } from "../src/parse/llm-passage.js";
 import { loadPromptContext } from "../src/parse/llm-examples.js";
 import { featureWeights, type PromptContext } from "../src/parse/llm-prompt.js";
 import { morphGlossLine } from "../src/parse/morph-gloss.js";
+import { listMarkdown } from "../src/markdown-files.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 import { claude, rng, shuffle, withRetry, type CallResult } from "./lib/claude-cli.js";
 
@@ -80,8 +81,9 @@ const backWeights = featureWeights(context.index);
 /** Every English → Agebon checkpoint item with its accepted answers and its level. */
 function checkpointItems(): Item[] {
   const out: Item[] = [];
-  for (const page of readdirSync(GRAMMAR_DIR).filter((p) => p.endsWith(".md")).sort()) {
-    const markdown = readFileSync(join(GRAMMAR_DIR, page), "utf8");
+  for (const file of listMarkdown(GRAMMAR_DIR)) {
+    const page = basename(file);
+    const markdown = readFileSync(file, "utf8");
     const sections = pageSections(page, markdown).sections;
     for (const item of practiceItems(markdown, { review: page === "review.md" }).items) {
       if (item.type !== "en-ag" || !item.promptEnglish) continue;

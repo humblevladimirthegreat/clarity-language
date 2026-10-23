@@ -193,10 +193,10 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "npPackage.Citation": { anchor: "word-endings.md#greeting", summary: "word with no role letter, with what describes it" },
   "npPackage.tag": { anchor: "tag-pronouns.md#tag-pronouns", summary: "tag -l naming the noun before it" },
 
-  "hUnitRule.boundJoinTail": { anchor: "of-relations.md#locative-relations", summary: "hosted /b/ slot filled by a join" },
-  "gPackage.boundJoinTail": { anchor: "of-relations.md#locative-relations", summary: "hosted /b/ slot on /ɡ/ filled by a join" },
-  "boundJoinTail.B": { anchor: "of-relations.md#locative-relations", summary: "later member of a hosted /b/ join" },
-  "boundJoinTail.JoinB": { anchor: "of-relations.md#locative-relations", summary: "join word closing a hosted /b/ slot" },
+  "hUnitRule.boundJoinTail": { anchor: "join-across-roles.md#join-relations", summary: "hosted /b/ slot filled by a join" },
+  "gPackage.boundJoinTail": { anchor: "join-across-roles.md#join-relations", summary: "hosted /b/ slot on /ɡ/ filled by a join" },
+  "boundJoinTail.B": { anchor: "join-across-roles.md#join-relations", summary: "later member of a hosted /b/ join" },
+  "boundJoinTail.JoinB": { anchor: "join-across-roles.md#join-relations", summary: "join word closing a hosted /b/ slot" },
   "asOfWPair.W": { anchor: "as-of.md#as-of", summary: "as-of /w/" },
   "asOfWPair.B": { anchor: "as-of.md#as-of", summary: "as-of /b/ bound" },
   "gPackage.W": { anchor: "clause.md#adjective-detail-w", summary: "/w/ detail on an adjective" },
@@ -206,7 +206,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "gPackage.B": { anchor: "predication.md#identity-same", summary: "hosted /b/ after /ɡ/" },
 
   "sharedAfterJoin.gPackage": { anchor: "joins.md#right-close", summary: "shared /ɡ/ after a join" },
-  "sharedAfterJoin.hUnitRule": { anchor: "comparative-arity.md#manner-scale", summary: "shared /h/ after a join" },
+  "sharedAfterJoin.hUnitRule": { anchor: "join-across-roles.md#vp-clause-forms", summary: "shared /h/ after a join" },
   "sharedAfterJoin.scale": { anchor: "comparative-arity.md#time-scale", summary: "digitless bral after a rank join: how late" },
 };
 

@@ -6,6 +6,7 @@ import { readFileSync } from "node:fs";
 import { CONSONANT_LETTERS, vowelKey } from "./finger-code.ts";
 import { letterNameTable } from "./retie/letter-names.ts";
 import { drillPhrases, PITCH_ORDER, STACKS, VOWEL_PITCH, type DrillMode } from "./vowel-pitch.ts";
+import { grammarFile } from "./repo-paths.js";
 
 describe("vowel pitch", () => {
   it("sits on the finger code's piano keys", () => {
@@ -54,7 +55,7 @@ describe("vowel pitch", () => {
   });
 
   it("says the page's letter names on the scale down", () => {
-    const names = letterNameTable(readFileSync(new URL("../docs/grammar/phonotactics.md", import.meta.url), "utf8"));
+    const names = letterNameTable(readFileSync(grammarFile("phonotactics.md"), "utf8"));
     const said = drillPhrases("down", true).flatMap((p) => p.steps.map((s) => s.onset! + s.vowel));
     assert.deepEqual(said, CONSONANT_LETTERS.map((l) => names.get(l)));
   });

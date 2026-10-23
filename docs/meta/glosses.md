@@ -44,7 +44,7 @@ Worked examples in grammar pages use a **blockquote**, not a code fence (so Mark
 > "Uzozen is a dog."
 ```
 
-**When it would only repeat the quote**, omit it — typical of a simple [citation](../grammar/word-endings.md#citation-forms) whose sense *is* the English:
+**When it would only repeat the quote**, omit it — typical of a simple [citation](/word-endings#citation-forms) whose sense *is* the English:
 
 ```markdown
 > `uzozel`
@@ -101,9 +101,9 @@ The note is the careful reading written as a fact, not as an awkward second sent
 
 | Job | Example | Allowed |
 |-----|---------|---------|
-| An [aside](../grammar/spans.md#asides) span | "Uzozen walks (quietly)." | One group per aside. An aside may also come out as commas or *by the way* |
-| A [scope island](../grammar/span-mention.md#scope-islands) | "Uzozen and (just water)." | One group per island. English has no other way to fence a group, so the parentheses are the translation |
-| A [tag](../grammar/tag-pronouns.md#tag-pronouns) letter, right after the noun it names | "A dog (A) sees a cookie (E). A cat sees A." | A single capital letter, once per tag the sentence sets; later sentences use the letter as a name |
+| An [aside](/spans#asides) span | "Uzozen walks (quietly)." | One group per aside. An aside may also come out as commas or *by the way* |
+| A [scope island](/span-mention#scope-islands) | "Uzozen and (just water)." | One group per island. English has no other way to fence a group, so the parentheses are the translation |
+| A [tag](/tag-pronouns#tag-pronouns) letter, right after the noun it names | "A dog (A) sees a cookie (E). A cat sees A." | A single capital letter, once per tag the sentence sets; later sentences use the letter as a name |
 
 Grouping that English can say does not use parentheses: *either Uzozen walks or Olazun runs, and Ahelan sleeps*; *a challenging dog and a challenging cat*. A tone mark is English hedging or stress, not *(?)*: "Uzozen saw a dog, I think." (unsure about just the dog).
 
@@ -212,11 +212,11 @@ Published strings share one phonological root, but **concrete**, **abstract**, a
 | `thevum` | `th-MEMORY` | `h-uvuvu(fishing→MEMORY)-m` |
 | `gaheham` | `g-home` | `g-ohohu(house→home)-m` |
 
-Same English label for `zuwom` and `zuwon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agebon line and from [word-endings.md](../grammar/word-endings.md). The gloss’s job is the **sense**, not a second orthography.
+Same English label for `zuwom` and `zuwon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agebon line and from [word-endings.md](/word-endings). The gloss’s job is the **sense**, not a second orthography.
 
 **Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Agebon letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
 
-**Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zuwon` / `zawan` / `zayan` / `zumon` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. The topic pronoun and the generic pronoun gloss in capitals on `/z/` `/d/` `/b/` and as a holder (`zalon` → `z-TOPIC`, `zeyon` → `z-ONE`, `theyemalon` → `th-CLUES-TOPIC`); on any other slot they are ordinary names. A topic word glosses as its noun (`xuzozen` → `x-Uzozen`, `xuzozer` → `x-←Uzozen`), and `hahugem` as `h-as-for`. **Stand-ins** (`darl` / `dorl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
+**Special pronouns** ([pronouns.md](/pronouns)): `zuwon` / `zawan` / `zayan` / `zumon` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. The topic pronoun and the generic pronoun gloss in capitals on `/z/` `/d/` `/b/` and as a holder (`zalon` → `z-TOPIC`, `zeyon` → `z-ONE`, `theyemalon` → `th-CLUES-TOPIC`); on any other slot they are ordinary names. A topic word glosses as its noun (`xuzozen` → `x-Uzozen`, `xuzozer` → `x-←Uzozen`), and `hahugem` as `h-as-for`. **Stand-ins** (`darl` / `dorl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
 
 ### Ordinary lexicon plus packed role English
 <a id="no-lexicon-pos-specials"></a>
@@ -294,7 +294,7 @@ A **labeled bracket** `LABEL[ … ]` marks a package. The label is uppercase Eng
 
 | Label | Package |
 |-------|---------|
-| `NAME[…]` | [Titled phrase](../grammar/proper-names.md#titled-phrases): **-n** on the hook, join, or span that packages it |
+| `NAME[…]` | [Titled phrase](/proper-names#titled-phrases): **-n** on the hook, join, or span that packages it |
 | `CITE[…]` / `ASIDE[…]` / `OPAQUE[…]` | Span (`d[…]` / `th(…)` / `d<…>`) |
 | `CITE.about[…]` | Paraphrase **-m** span (`d~[…]`) |
 | `NAME.CITE[…]` | Proper **-n** span (`d@[…]`) |
@@ -310,13 +310,13 @@ The mention marker is a word, not a bracket: `glegel` → `gl-MENTION`, `glegen`
 A morph line corresponds **one-to-one** with its Agebon. From the gloss alone you can rebuild the exact written words, so glosses must never merge two forms:
 
 - **Every written word is glossed**, including a spoken **`yal`**. A `yal` that was left out is not added.
-- **Sentence marks.** When one line holds several sentences, the mark between them stands alone with spaces: `z-Uzozen | v-walk . z-←Uzozen | v-judge`. A line-final period is implicit. A [tone mark](../grammar/speech-acts.md#tone-marks) is copied as written: attached to the glossed word or span it colors (`!z-Uzozen`), or standing alone with spaces for sentence scope (`! z-Uzozen | v-walk`).
+- **Sentence marks.** When one line holds several sentences, the mark between them stands alone with spaces: `z-Uzozen | v-walk . z-←Uzozen | v-judge`. A line-final period is implicit. A [tone mark](/speech-acts#tone-marks) is copied as written: attached to the glossed word or span it colors (`!z-Uzozen`), or standing alone with spaces for sentence scope (`! z-Uzozen | v-walk`).
 - **One label per form.** Each (PoS, root, ending) maps to one English label. Two roots never share an English sense: when they would, reword one row in the lexicon. `npm run lint:lexicon` checks this, and `npm test` round-trips every glossed example in `docs/grammar/`.
-- **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and a surface mark when a number word is not in its [preferred writing](../grammar/number-markers.md#writing-style-numeric-vs-spelled): `.spelled` on a spelled-out word that prefers shorthand (`grabadol` → `g-twelve.spelled`; `g+12` → `g-twelve`), `.short` on shorthand that prefers spelling — no digit or one digit (`g+3` → `g-three.short`; `gragel` → `g-three`; `g+` → `g-more-than-one.short`).
+- **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and a surface mark when a number word is not in its [preferred writing](/number-markers#writing-style-numeric-vs-spelled): `.spelled` on a spelled-out word that prefers shorthand (`grabadol` → `g-twelve.spelled`; `g+12` → `g-twelve`), `.short` on shorthand that prefers spelling — no digit or one digit (`g+3` → `g-three.short`; `gragel` → `g-three`; `g+` → `g-more-than-one.short`).
 - **Ordinals use digits** (`gredol` → `g-2nd`, `gruedol` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
 - **Role words** gloss the scope after **`w`**, then the part, then the stem, joined with `-`: `zwazuduyel` → `z-episode-agent-teach`, `gwezuduyel` → `g-role-agent-teach`, `hwezuduyel` → `h-role-agent-teach` (*as a teacher*), `dwabezuyel` → `d-episode-recipient-speech`, `dwahowurel` → `d-episode-manner-walk`. Scope takes the label-scope labels (`episode`, `role`, `pair`, `type`, and the stacked labels); the part is `agent` (**`z`**), `patient` (**`d`**), `recipient` (**`b`**), or a quality of the event: `manner` (**`h`**), `state` (**`g`**), `stance` (**`th`**), `extent` (**`w`**), `move` (**`y`**), `outcome` (**`x`**), `event` (**`v`**, pointers only). A stem compound keeps its `-x-` (`zwazudozoxowurel` → `z-episode-agent-dog-x-walk`), and ability follows the stem (`gwezuduyexal` → `g-role-agent-teach-able`).
 - **Hook prefixes** gloss the hook as its extra-noun label, then `-x-`, then the stem: `guexavuvul` → `g-against-x-fight`, `guemxewulel` → `g-contrary-to-x-wind` (the **`mx`** frame is the hook's **-m** label), `guexahehaxowurel` → `g-against-x-house-x-walk`. A hook-compound stem glosses as the fused verb (`guexowurelul` → `g-against-x-leave`), and label scope keeps its `-th-` hinge (`zuexavuvuthel` → `z-against-x-fight-th-role`).
-- **Hooked joins** gloss the hook's label from the [extra-noun grid](../grammar/extra-noun-hooks.md#extra-noun-intermediate) (the frame label on hook **-m**, the point-back label on hook **-r**), then `-x-`, then the join's label, with `.open` for join **-m**; the landmark rides in the bracket: `zoxual blahehal` → `[z-at-x-everything | bl-house]`, `zomxuam bluwon` → `[z-near-x-everything.open | bl-speaker]`, `dexar` under a question → `d-for-x-wh`, `zorxual` → `z-there-x-everything`, `daorxar` → `d-on.it-x-something`. On `/h/`, a point-back names a time: `hurxal` → `h-since.then-x-never` (`ar` `within.then`, `or` `at.then`).
+- **Hooked joins** gloss the hook's label from the [extra-noun grid](/extra-noun-hooks#extra-noun-intermediate) (the frame label on hook **-m**, the point-back label on hook **-r**), then `-x-`, then the join's label, with `.open` for join **-m**; the landmark rides in the bracket: `zoxual blahehal` → `[z-at-x-everything | bl-house]`, `zomxuam bluwon` → `[z-near-x-everything.open | bl-speaker]`, `dexar` under a question → `d-for-x-wh`, `zorxual` → `z-there-x-everything`, `daorxar` → `d-on.it-x-something`. On `/h/`, a point-back names a time: `hurxal` → `h-since.then-x-never` (`ar` `within.then`, `or` `at.then`).
 - **Numeric prefixes** gloss the number body's kind label, then `-x-`, then the stem in the sense its ending picks: `zrawaxolamal` → `z-infinity-x-love`, `zruwuxahuyayol` → `z-quasi-x-friend`, `zragexezuyel` → `z-three-x-speech`, `drebaxebewem` → `d-1st-x-draft`. The **`mx`** seam adds `.about` to the number (`dragemxezuyel` → `d-three.about-x-speech`).
 - **Role-compound resumes** keep their scope and part: `dwazarayer` → `d-←episode-agent-write`, `dwadarayer` → `d-←episode-patient-write`. A bare `d-←write` would merge the doer, undergoer, and extra party of one event.
 - **Role pointers** gloss their scope, part, and pointer vowel, never the referent: `zwazar` → `z-←episode-agent.same`, `dwador` → `d-←episode-patient.other`, `dwazer` → `d-←episode-agent.self`, `zwazur` → `z-←episode-agent.unsaid`, `zwezar` → `z-←role-agent.same`, `dwahar` → `d-←episode-manner.same`, `dwavar` → `d-←episode-event.same`. **-l** adds `.new` and **-m** adds `.part` (`dwadal` → `d-←episode-patient.same.new`, `zwazam` → `z-←episode-agent.same.part`, `zwabom` → `z-←episode-recipient.other.part`, `zwazum` → `z-←episode-agent.unsaid.part`).
@@ -334,7 +334,7 @@ Only when it is **not** already baked into the English sense-root:
 | `(←…)` binding for **-r** | Resume is not a lexicon sense; see below |
 | Rare teaching callouts | If you must contrast two same-sense forms that differ only by ending, prefer distinct English labels (`and.open` / `and`, `y-question` / `y-soft-question`) over re-attaching `-m` / `-l` or `~` |
 
-Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **-n** uses the English name (`z-Uzozen`), not `-n` / `-proper` / `@`. [One of a name](../grammar/proper-names.md#name-instance--ln) (**-ln**) is the name plus `.instance` (`d-Uzozen.instance`); on a span, **`^@`** is `NAME.<TYPE>.instance` (`d-NAME.OPAQUE.instance["iPhone"]`). Abstract **-m** uses the abstract word (`g-volume`), not `volume~`.
+Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **-n** uses the English name (`z-Uzozen`), not `-n` / `-proper` / `@`. [One of a name](/proper-names#name-instance--ln) (**-ln**) is the name plus `.instance` (`d-Uzozen.instance`); on a span, **`^@`** is `NAME.<TYPE>.instance` (`d-NAME.OPAQUE.instance["iPhone"]`). Abstract **-m** uses the abstract word (`g-volume`), not `volume~`.
 
 ### Sense labels
 
@@ -369,7 +369,7 @@ When you retie a published literal (`dancing` → `dance`), morph lines that cop
 
 The binder **is** the gloss root. No trailing `-r` (resume is already marked by `←`).
 
-A [resume](../grammar/pronouns.md#resume-r) spells its antecedent's whole stem, so the antecedent's label rebuilds the exact word.
+A [resume](/pronouns#resume-r) spells its antecedent's whole stem, so the antecedent's label rebuilds the exact word.
 
 | Case | Agebon | Morph gloss |
 |------|--------|-------------|
@@ -380,8 +380,8 @@ A [resume](../grammar/pronouns.md#resume-r) spells its antecedent's whole stem, 
 | Resume of a prior content word | | `z-←someone` / `d-←tea` |
 | No antecedent, stem not in the lexicon | | `z-←"…"` (the stem itself) |
 | Fill-ask / unspecified member | `zar` | `z-wh` / `z-something` (as the docs require for that form) |
-| [Tag pronoun](../grammar/tag-pronouns.md#tag-pronouns) | `zwal` / `zwar` / `dwam` | `z-tag.A` (assign) / `z-←tag.A` (recall) / `d-←tag.A.part` (share) / `z-←tag.A.name` (**-n** recall of a name): the letter name, never the referent. An assigning tag rides in its phrase's bracket: `[z-dog \| z-tag.A]`, or after a fence's bracket for the whole group. A pair joins the letters with `+`: `z-←tag.A+E` |
-| [Role pointer](../grammar/pronouns.md#role-pointers) | `zwazar` / `zwazor` / `dwazer` | `z-←episode-agent.same` / `z-←episode-agent.other` / `d-←episode-agent.self` / `z-←episode-agent.unsaid` (scope, part, and event, never the person's name); `d-←episode-patient.same.new` (**-l**), `z-←episode-agent.same.part` (**-m**) |
+| [Tag pronoun](/tag-pronouns#tag-pronouns) | `zwal` / `zwar` / `dwam` | `z-tag.A` (assign) / `z-←tag.A` (recall) / `d-←tag.A.part` (share) / `z-←tag.A.name` (**-n** recall of a name): the letter name, never the referent. An assigning tag rides in its phrase's bracket: `[z-dog \| z-tag.A]`, or after a fence's bracket for the whole group. A pair joins the letters with `+`: `z-←tag.A+E` |
+| [Role pointer](/pronouns#role-pointers) | `zwazar` / `zwazor` / `dwazer` | `z-←episode-agent.same` / `z-←episode-agent.other` / `d-←episode-agent.self` / `z-←episode-agent.unsaid` (scope, part, and event, never the person's name); `d-←episode-patient.same.new` (**-l**), `z-←episode-agent.same.part` (**-m**) |
 
 Do not write `z-←microphone` for a speaker antecedent.
 
@@ -398,7 +398,7 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 
 ### Mid-word `x` families
 
-Gloss each piece by **family** ([compounds.md](../grammar/compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/sakes.md), keep the stance **and** the ending table (contact / prescription warrant / time horizon / changeability): `thuwathom` → `th-competence-motive-any-term`, not `th-competence-th-motive`.
+Gloss each piece by **family** ([compounds.md](/compounds)) — English only. Drop sense-picking **-l / -m / -n**. On [values](/sakes), keep the stance **and** the ending table (contact / prescription warrant / time horizon / changeability): `thuwathom` → `th-competence-motive-any-term`, not `th-competence-th-motive`.
 
 | Family | Example Agebon | Morph gloss |
 |--------|-----------------|-------------|
@@ -595,10 +595,10 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 
 ## See also
 
-- [spans.md](../grammar/spans.md) — mention / cite / opaque; interiors [above](#span-interiors)
-- [word-endings.md](../grammar/word-endings.md) — **-l** / **-m** / **-n** / **-r**
+- [spans.md](/spans) — mention / cite / opaque; interiors [above](#span-interiors)
+- [word-endings.md](/word-endings) — **-l** / **-m** / **-n** / **-r**
 - [lexicon.md](../grammar/lexicon.md) — overlays and closed labels
-- [pronouns.md](../grammar/pronouns.md) — **-r** and special pronouns
-- [compounds.md](../grammar/compounds.md) — mid-word `x` families
-- [clause.md](../grammar/clause.md#role-letters) — role letters in a sentence
-- [sakes.md](../grammar/sakes.md) — need stances and endings (morph keeps them; loose free usually drops channel / standing / force / changeability)
+- [pronouns.md](/pronouns) — **-r** and special pronouns
+- [compounds.md](/compounds) — mid-word `x` families
+- [clause.md](/clause#role-letters) — role letters in a sentence
+- [sakes.md](/sakes) — need stances and endings (morph keeps them; loose free usually drops channel / standing / force / changeability)

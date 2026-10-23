@@ -1,7 +1,7 @@
 # Proposal: twelve-note chord channel
 
 **Status:** REJECTED. On piano, the root changes at syllable rate, so the left hand jumps all over the keyboard, and the chromatic root movement can't be predicted from the text. Adopted instead: the pentatonic piano channel in `manual-phonology.md`, where neither hand moves and nothing clashes.  
-**Related:** [phonology.md](../../grammar/phonology.md) ([opposite vowels](../../grammar/phonology.md#opposite-vowels), [letter names](../../grammar/phonology.md#letter-names)); [numbers.md § Counts](../../grammar/numbers.md#counts) (digit letters).
+**Related:** [phonology.md](/phonology) ([opposite vowels](/phonology#opposite-vowels), [letter names](/phonology#letter-names)); [numbers.md § Counts](/numbers#counts) (digit letters).
 
 ## Idea
 

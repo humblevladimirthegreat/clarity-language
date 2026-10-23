@@ -15,16 +15,16 @@ Agazan does not mark English articles. The real cut is **introduce** vs **resume
 
 | English job | Agazan already |
 |-------------|----------------|
-| New instance of a kind (*a dog*, citation *dog*) | **`-l`** / **`-m`** ([word ending](../../grammar/word-endings.md)) |
-| Same stem again (*the dog* after *a dog*) | resume **`-r`** ([pronouns](../../grammar/pronouns.md#resume-r)); a second **`-l`** is a **new** instance |
-| Unique label, title, handle (*Paris*, *the Odyssey*, office name) | **`-n`**, including first mention ([named](../../grammar/word-endings.md#proper-name--n), [handles](../../grammar/word-endings.md#named-handles)) |
+| New instance of a kind (*a dog*, citation *dog*) | **`-l`** / **`-m`** ([word ending](/word-endings)) |
+| Same stem again (*the dog* after *a dog*) | resume **`-r`** ([pronouns](/pronouns#resume-r)); a second **`-l`** is a **new** instance |
+| Unique label, title, handle (*Paris*, *the Odyssey*, office name) | **`-n`**, including first mention ([named](/word-endings#proper-name--n), [handles](/word-endings#named-handles)) |
 | One obvious object in the scene (*pass the salt*, *close the door*) | **`-l`**: new kind in a situation that already uniquely picks the object. The English article is translation, not a missing morph |
 | Bridging part (*a car… the steering wheel*) | **`-l`** on the part plus relevance to the just-named whole. A second, unrelated wheel would need other material (restrictor, extra noun, a second sentence) |
-| Shared household / frame unique on the first utterance (*feed the cat*) | **`-n`** if it is a name; otherwise **`-l`** in a frame that already has one cat. If several cats, say which ([which-noun](../../grammar/dependents.md#which-noun), adjective, join) — do not presuppose uniqueness |
-| *the only X* | single-item join ([joins](../../grammar/joins.md)) |
-| *the biggest X* | rank join ([comparatives](../../grammar/comparatives.md)) |
-| Generic *the whale is a mammal* | joins / domains ([universals](../../grammar/joins.md#universals-domains-generics)), not an article |
-| Cataphoric *the fact that…* | stand-in **`darl` / `barl`** ([dependents](../../grammar/dependents.md#stand-in)) |
+| Shared household / frame unique on the first utterance (*feed the cat*) | **`-n`** if it is a name; otherwise **`-l`** in a frame that already has one cat. If several cats, say which ([which-noun](/dependents#which-noun), adjective, join) — do not presuppose uniqueness |
+| *the only X* | single-item join ([joins](/joins)) |
+| *the biggest X* | rank join ([comparatives](/comparatives)) |
+| Generic *the whale is a mammal* | joins / domains ([universals](/joins#universals-domains-generics)), not an article |
+| Cataphoric *the fact that…* | stand-in **`darl` / `barl`** ([dependents](/dependents#stand-in)) |
 | Role as titled instance | **`-n`** on that role letter |
 
 **Negation and questions** (*I didn’t see a dog* vs *the dog*; *is there a bathroom?* vs *where is the bathroom?*) look like an article gap. They are existence vs a **given** referent. If the referent is given, it already has a stem (resume) or a name (`-n`) or the scene makes **`-l`** unique. If it is not given, the speaker should not pretend it is: introduce, then resume, or ask which. Encoding “treat as given” on a new stem would hide that choice.

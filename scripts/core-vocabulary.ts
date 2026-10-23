@@ -35,7 +35,7 @@ import {
 import { parseCsv, serializeCsv } from "../src/csv.js";
 import type { ClassifyTables } from "../src/parse/classify.js";
 import { loadDefaultTables } from "../src/parse/index.js";
-import { dataPath, REPO_ROOT } from "../src/repo-paths.js";
+import { dataPath, grammarFile, REPO_ROOT } from "../src/repo-paths.js";
 
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
 const files = [
@@ -143,7 +143,7 @@ function main(): void {
   const checkpoints = stageCheckpoints(
     pages,
     (page) => {
-      const path = join(grammarDir, page);
+      const path = grammarFile(page);
       return existsSync(path) ? readFileSync(path, "utf8") : undefined;
     },
     tables,

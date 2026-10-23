@@ -6,9 +6,9 @@ Recipes for English question shapes beyond plain *yes/no* and *who / what*. Ever
 
 ### Echo questions {#echo}
 
-**Needs:** [Ask](questions.md#question) · [tone marks](speech-acts.md#tone-marks)
+**Needs:** [Ask](/questions#question) · [tone marks](/speech-acts#tone-marks)
 
-An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yol`**. Put the doubting [tone mark](speech-acts.md#tone-marks) **`?!`** on the blank or on the word you doubt.
+An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yol`**. Put the doubting [tone mark](/speech-acts#tone-marks) **`?!`** on the blank or on the word you doubt.
 
 > `yol ?!dar zawan vawebol.`
 >
@@ -24,7 +24,7 @@ An echo question repeats what someone just said, because you doubt it or did not
 
 ### *Really?*, *Is that so?* {#really}
 
-**Needs:** [Polar stance](questions.md#polar-stance) · [tone marks](speech-acts.md#tone-marks)
+**Needs:** [Polar stance](/questions#polar-stance) · [tone marks](/speech-acts#tone-marks)
 
 English *Really?* asks the speaker to confirm what they just said. Write the confirm tag as your own turn: **`yol yael.`** (*Is that so?*). Put the doubting mark **`?!`** on it for disbelief.
 
@@ -38,9 +38,9 @@ English *Really?* asks the speaker to confirm what they just said. Write the con
 
 ### Reported questions {#reported-questions}
 
-**Needs:** [Fill-ask](questions.md#fill-ask-r) · [whether](questions.md#embedded-whether)
+**Needs:** [Fill-ask](/questions#fill-ask-r) · [whether](/questions#embedded-whether)
 
-To report a *who* / *what* question inside a claim (*Uzozen asks who walks*), put the same blank you would use in a direct question inside [**`dorl`**](questions.md#embedded-whether). To quote the question as wording, keep `yol` inside a [cite](span-mention.md#quote-acts). To ask someone else whether they know such an answer (*Do you know who walks?*), see [a blank inside a dependent](fill-ask-roles.md#blank-in-dependent).
+To report a *who* / *what* question inside a claim (*Uzozen asks who walks*), put the same blank you would use in a direct question inside [**`dorl`**](/questions#embedded-whether). To quote the question as wording, keep `yol` inside a [cite](/span-mention#quote-acts). To ask someone else whether they know such an answer (*Do you know who walks?*), see [a blank inside a dependent](/fill-ask-roles#blank-in-dependent).
 
 > `zuzozen vezuyel dorl zar vowurel.`
 >
@@ -52,7 +52,7 @@ To report a *who* / *what* question inside a claim (*Uzozen asks who walks*), pu
 
 ### *Mm-hm* while someone talks {#continuer}
 
-**Needs:** [Three endings](polar-inventory.md#polar-endings)
+**Needs:** [Three endings](/polar-inventory#polar-endings)
 
 While someone tells you something, English keeps them going with *mm-hm* or *I see*, without agreeing or disagreeing. Reply **`yaer.`** after each point: it takes the point on board for now, without committing to it.
 
@@ -66,7 +66,7 @@ While someone tells you something, English keeps them going with *mm-hm* or *I s
 
 ### *Well…* before an unwelcome answer {#well}
 
-**Needs:** [Three endings](polar-inventory.md#polar-endings)
+**Needs:** [Three endings](/polar-inventory#polar-endings)
 
 English *well…* warns that the answer is not the plain *yes* the question hoped for. Start the reply with **`yuam`** (*it's more complicated than that*), then give the answer.
 
@@ -80,7 +80,7 @@ English *well…* warns that the answer is not the plain *yes* the question hope
 
 ### *It sounds like…*, *I hear that you…* {#reflecting}
 
-**Needs:** [Whose view](evidentiality.md#holder) · [Evidentiality](evidentiality.md#evidentiality) · [Feeling with no object](feelings-permission.md#feeling-no-object) · [Emotion compose](feelings-permission.md#emotion-compose)
+**Needs:** [Whose view](/evidentiality#holder) · [Evidentiality](/evidentiality#evidentiality) · [Feeling with no object](/feelings-permission#feeling-no-object) · [Emotion compose](/feelings-permission#emotion-compose)
 
 English *it sounds like you're anxious* and *I hear that you're upset* give the speaker's feeling back to them. You cannot state someone else's feeling outright, so name the listener as the holder on CLUES (**`theyem`**): you worked it out from what they said.
 
@@ -102,7 +102,7 @@ To say the feeling **makes sense**, put your own stance in the main sentence and
 
 ### *Admittedly*, *granted* before a *but* {#admittedly}
 
-**Needs:** [Polar stance](questions.md#polar-stance) · [Sentence linkers](sentence-linkers.md#sentence-linkers)
+**Needs:** [Polar stance](/questions#polar-stance) · [Sentence linkers](/sentence-linkers#sentence-linkers)
 
 English *admittedly*, *granted* and *that's true, but* concede a point before pushing back. Open with **`yael`** (*true*): before a body it concedes that body, and alone it concedes what was just said. Then push back with **`xegohum`** (*but*).
 
@@ -118,13 +118,13 @@ English *admittedly*, *granted* and *that's true, but* concede a point before pu
 >
 > "Uzozen walks." "That's true, but Olazun sits."
 
-**Compare with:** *even so* after the concession is *despite that*, **`hezom blarth`** ([pointing back](sentence-linkers.md#stand-in-back)). **`yaem`** (*I think so*) agrees only softly.
+**Compare with:** *even so* after the concession is *despite that*, **`hezom blarth`** ([pointing back](/sentence-linkers#stand-in-back)). **`yaem`** (*I think so*) agrees only softly.
 
 ## Exclamations and side remarks {#reactions}
 
 ### *What a big dog!* {#exclamations}
 
-**Needs:** [tone marks](speech-acts.md#tone-marks) · [extra detail on an adjective](clause.md#adjective-detail-w) · [interjections](speech-moves.md#interjections)
+**Needs:** [tone marks](/speech-acts#tone-marks) · [extra detail on an adjective](/clause#adjective-detail-w) · [interjections](/speech-moves#interjections)
 
 English *What a big dog!* and *How big the dog is!* say the dog is very big and that you feel strongly about it. Say the degree with *very* **`welazom`** and the feeling with the tone mark **`!`** before the sentence. Use **`!!`** for more.
 
@@ -144,7 +144,7 @@ For a bare *So big!*, give the reaction as an interjection with **`!`**:
 
 ### *By the way* {#by-the-way}
 
-**Needs:** [asides](spans.md#asides)
+**Needs:** [asides](/spans#asides)
 
 English *by the way* adds a side remark, then goes back to the main point. Put an aside **`th(`** … **`)`** at the start of the sentence. The closing fence is the return to the main point.
 
@@ -159,7 +159,7 @@ English *by the way* adds a side remark, then goes back to the main point. Put a
 ### Single-item and standalone inventory
 <a id="single-item-standalone-inventory"></a>
 
-**Needs:** [Ask](questions.md#question) · [Fill-ask](questions.md#fill-ask-r) · [How many items](joins.md#standalone-phrase)
+**Needs:** [Ask](/questions#question) · [Fill-ask](/questions#fill-ask-r) · [How many items](/joins#standalone-phrase)
 
 Under question, the rest of the single-item and standalone join map is confirm / offer (and fill-ask **-r**). On a list of two or more (no **-r**): **-l** picks from that closed menu; **-m** allows another name (and for **o**, *or none*); **u** is *none of* the listed; **ua** / **uo** is the complement of the listed; **ue** reverse-ranks among the listed. Join **-n** here is stock/usual.
 
@@ -169,9 +169,9 @@ Under question, the rest of the single-item and standalone join map is confirm /
 >
 > "Is Uzozen the only priority?"
 
-**Not the same job as:** proper-name **-n** ([word ending](proper-names.md#proper-name--n)).
+**Not the same job as:** proper-name **-n** ([word ending](/proper-names#proper-name--n)).
 
-**Related form:** fill-ask length uses [join **-r**](fill-ask-roles.md#fill-ask-arity).
+**Related form:** fill-ask length uses [join **-r**](/fill-ask-roles#fill-ask-arity).
 
 #### Rank: single-item (under question)
 
@@ -249,7 +249,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 ### Ask, interview, conversation {#ask-words}
 
-**Needs:** [Ask](questions.md#question) · [Reported questions](#reported-questions) · [Stand-in vowels](sentence-linkers.md#stand-in) · [Speech act: firm and soft](firm-soft.md#speech-act) · [Stacking two act words](speech-acts.md#stacked-acts) · [Quiz](polar-inventory.md#quiz) · [Conversation length](compound-families.md#conversation-length) · [Call someone](speech-moves.md#vocative)
+**Needs:** [Ask](/questions#question) · [Reported questions](#reported-questions) · [Stand-in vowels](/sentence-linkers#stand-in) · [Speech act: firm and soft](/firm-soft#speech-act) · [Stacking two act words](/speech-acts#stacked-acts) · [Quiz](/polar-inventory#quiz) · [Conversation length](/compound-families#conversation-length) · [Call someone](/speech-moves#vocative)
 
 English *ask* is four jobs. You can put a question to someone, ask them for something, ask them to do something, or report that a question was asked. A question is the act word **`yol`**. A request is **`yem`**. A reported question hangs on the telling ([reported questions](#reported-questions)). *Ask* or *tell someone to do* something is a telling with the to-clause stand-in **`derl`**, and the person told is plain `/b/`; *not to* is **`durl`**. English picks *ask* or *tell* for politeness, which Agebon carries on the act word, not the verb. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
 
@@ -276,7 +276,7 @@ English *ask* is four jobs. You can put a question to someone, ask them for some
 
 ### Offer, suggest, recommend, invite {#offer-words}
 
-**Needs:** [Speech act: firm and soft](firm-soft.md#speech-act) · [Tags](polar-inventory.md#tags) · [Prescription](ought-for-a-sake.md#sake-force) · [Permission](feelings-permission.md#permission) · [Which noun](dependents.md#which-noun)
+**Needs:** [Speech act: firm and soft](/firm-soft#speech-act) · [Tags](/polar-inventory#tags) · [Prescription](/ought-for-a-sake#sake-force) · [Permission](/feelings-permission#permission) · [Which noun](/dependents#which-noun)
 
 English *offer*, *suggest*, *propose*, *recommend* and *advise* all put something forward that the other person may take or leave. Agebon picks how firmly. A soft act word (**-m**) leaves the choice open. A soft request with *we* proposes a joint act, and a tag after it asks whether they take it up. A prescription **`the`** on a sake says the act ought to serve it, and its ending says whether the person invited it (**-l**) or you are offering it unasked (**-m**).
 
@@ -289,7 +289,7 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 | *suggest* (a view) | `yam` | soft statement: *for what it's worth* |
 | *recommend* / *advise* (unasked) | `thawothem` | prescription, offered |
 | *recommend* (you asked for it) | `thawothel` | prescription, invited |
-| *advice* / *suggestion* / *proposal* | the suggestion as a sentence, then point back | [which noun](dependents.md#which-noun) |
+| *advice* / *suggestion* / *proposal* | the suggestion as a sentence, then point back | [which noun](/dependents#which-noun) |
 | *invite* / *welcome* (someone) | `vunodum` | *hospitality* |
 | *welcome* (you may) | `hwavam` | permission granted |
 
@@ -313,7 +313,7 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 
 ### Hello, sir, yeah, quote, mention {#reply-words}
 
-**Needs:** [Greeting](word-endings.md#greeting) · [Polar stance](questions.md#polar-stance) · [Cite](spans.md#writing) · [Mention](span-mention.md#mention) · [Asides](spans.md#asides)
+**Needs:** [Greeting](/word-endings#greeting) · [Polar stance](/questions#polar-stance) · [Cite](/spans#writing) · [Mention](/span-mention#mention) · [Asides](/spans#asides)
 
 | English | Agebon | Reading |
 |---------|--------|---------|

@@ -6,37 +6,37 @@ Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* do
 
 ### English → Agebon {#english-cues}
 
-**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Contrary to a stance](prescription.md#contrary-to-stance) · [Continue](dependents.md#continue-x) · [Sentence linkers](sentence-linkers.md#sentence-linkers) · [Stacked discourse hooks](discourse-hooks.md#stacked-discourse) · [Because](iff-fault.md#only-because) · [Point back](discourse-hooks.md#hook-resume) · [Clause sequence](clause-sequence.md#clause-sequence)
+**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Contrary to a stance](/prescription#contrary-to-stance) · [Continue](/dependents#continue-x) · [Sentence linkers](/sentence-linkers#sentence-linkers) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse) · [Because](/iff-fault#only-because) · [Point back](/discourse-hooks#hook-resume) · [Clause sequence](/clause-sequence#clause-sequence)
 
 Time and discourse dependents use the same **`blarl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
 
 | English | Agebon |
 |---------|---------|
-| *although* / *while* / *whilst* / *until* / *till* / *before* / *after* | same pole + **`blarl`** shape on adverb `/h/`, **-m** ([dependent clauses](dependents.md#dependent-clauses)): **`hezom`** / **`herem`** / **`harum`** / … |
-| *so that* / *in order to* | same shape: **`hovam`** ([so that](dependents.md#so-that)); NP intended get = **`hovam`** + `/b/` **noun** |
+| *although* / *while* / *whilst* / *until* / *till* / *before* / *after* | same pole + **`blarl`** shape on adverb `/h/`, **-m** ([dependent clauses](/dependents#dependent-clauses)): **`hezom`** / **`herem`** / **`harum`** / … |
+| *so that* / *in order to* | same shape: **`hovam`** ([so that](/dependents#so-that)); NP intended get = **`hovam`** + `/b/` **noun** |
 | *despite* (NP) | same **`hezom`** (or **`gezom`**) + `/b/` **noun**, not a second pole |
-| *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uem`** + the stance it goes against: `uem hwavul` / `uem hwadum` / `uem thagem` / `uem thogol` / `uem thebam` ([contrary to a stance](prescription.md#contrary-to-stance)) |
-| *though I promised* / *breaking my promise* | **`hezom blarl`** + the promise as its own sentence: `zuwon vezuvol hezom blarl zuwon vowurel hwazal.` (*I sleep, although I promised to walk*) ([contrary to a stance](prescription.md#contrary-to-stance)) |
-| *after they took back their yes* / *more than they agreed to* | a yes taken back is a no: **`uem hwadum`**; past the agreed terms is the consent bar **`hwadam`** ([every bar](stance-bars.md#stance-bars)) |
-| *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`blarl`**: **`theyem blarl`** / **`thubem blarl`** ([evidence clause](evidentiality.md#evidence-clause)) |
-| *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xahem`** ([continue](dependents.md#continue-x)) |
-| *it follows that* / *necessarily, then* (a deduction from the last sentence) | **`xahel`** ([sentence linkers](sentence-linkers.md#sentence-linkers)) |
+| *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uem`** + the stance it goes against: `uem hwavul` / `uem hwadum` / `uem thagem` / `uem thogol` / `uem thebam` ([contrary to a stance](/prescription#contrary-to-stance)) |
+| *though I promised* / *breaking my promise* | **`hezom blarl`** + the promise as its own sentence: `zuwon vezuvol hezom blarl zuwon vowurel hwazal.` (*I sleep, although I promised to walk*) ([contrary to a stance](/prescription#contrary-to-stance)) |
+| *after they took back their yes* / *more than they agreed to* | a yes taken back is a no: **`uem hwadum`**; past the agreed terms is the consent bar **`hwadam`** ([every bar](/stance-bars#stance-bars)) |
+| *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`blarl`**: **`theyem blarl`** / **`thubem blarl`** ([evidence clause](/evidentiality#evidence-clause)) |
+| *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xahem`** ([continue](/dependents#continue-x)) |
+| *it follows that* / *necessarily, then* (a deduction from the last sentence) | **`xahel`** ([sentence linkers](/sentence-linkers#sentence-linkers)) |
 | *that doesn't follow* / *non sequitur* | **`thanam thohom thul blarl`** ([arguments](#arguments)) |
-| *thus* (*in this way*) | the same adverb again: `/h/` with **-r** ([how English approximates -r](tag-pronouns.md#how-english-approximates-r)) |
-| *the fact that* / *the idea that* / *it is a fact that* | a predicate with a `/z/` stand-in: `gumugom zarl zuzozen vowurel.`; or two sentences, then `zarth` ([stand-in vowels](sentence-linkers.md#stand-in)): `zuzozen vowurel. zarth gumugom.` A clause never modifies a noun |
+| *thus* (*in this way*) | the same adverb again: `/h/` with **-r** ([how English approximates -r](/tag-pronouns#how-english-approximates-r)) |
+| *the fact that* / *the idea that* / *it is a fact that* | a predicate with a `/z/` stand-in: `gumugom zarl zuzozen vowurel.`; or two sentences, then `zarth` ([stand-in vowels](/sentence-linkers#stand-in)): `zuzozen vowurel. zarth gumugom.` A clause never modifies a noun |
 | *due to* / *owing to* / *because of* (NP) | **`thahum`** + `/b/` **noun** (`thahum blerulal`) |
-| *not because* (clause) | **`thahum thul blarl`** ([stance join before `blarl`](join-across-roles.md#stance-join-before-barl)) |
+| *not because* (clause) | **`thahum thul blarl`** ([stance join before `blarl`](/join-across-roles#stance-join-before-barl)) |
 | *however* / *meanwhile* (discourse) | **`xezom`** / **`xegorem`** |
 | *regardless of* (NP) | same **`hezom`** + `/b/` **noun** as *despite* |
-| *anyway* / *anyhow* (back to the main line) | the resume hook **`or …`** ([point back](discourse-hooks.md#hook-resume)) |
-| *otherwise* / *or else* (failing that) | **`xon`** between the clauses ([clause sequence](clause-sequence.md#clause-sequence)) |
+| *anyway* / *anyhow* (back to the main line) | the resume hook **`or …`** ([point back](/discourse-hooks#hook-resume)) |
+| *otherwise* / *or else* (failing that) | **`xon`** between the clauses ([clause sequence](/clause-sequence#clause-sequence)) |
 | *nevertheless* / *nonetheless* (discourse) | **`xezom`** after the finished claim; inside one sentence, **`hezom blarl`** |
 | *whereas* (two claims set against each other) | **`xezom`** before the second claim, or **`hezom blarl`** inside one sentence |
-| *moreover* / *furthermore* (discourse) | **`ael …`** opens the sentence that goes further; **`al …`** adds a separate point ([stacked discourse hooks](discourse-hooks.md#stacked-discourse)) |
+| *moreover* / *furthermore* (discourse) | **`ael …`** opens the sentence that goes further; **`al …`** adds a separate point ([stacked discourse hooks](/discourse-hooks#stacked-discourse)) |
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}
 
-**Needs:** [Evidence strength](evidentiality.md#evidence-strength) · [Deduction](evidentiality.md#deduction) · [MAY](knowing.md#may) · [Hold endings (NOTIONAL)](notional-standing.md#hold-endings-notional) · [Hopefully and other attitudes](feelings-permission.md#speaker-attitude) · [Unmet](sakes.md#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](spans.md#asides) · [CAUSE](iff-fault.md#cause) · [Every bar](stance-bars.md#stance-bars)
+**Needs:** [Evidence strength](/evidentiality#evidence-strength) · [Deduction](/evidentiality#deduction) · [MAY](/knowing#may) · [Hold endings (NOTIONAL)](/notional-standing#hold-endings-notional) · [Hopefully and other attitudes](/feelings-permission#speaker-attitude) · [Unmet](/sakes#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](/spans#asides) · [CAUSE](/iff-fault#cause) · [Every bar](/stance-bars#stance-bars)
 
 English adverbs like *obviously*, *apparently* and *presumably* say **how you know** a claim. Agebon has no word for each one. It puts a channel on the clause as a `/th/` word, and the ending grades the evidence: **-l** solid, **-m** ordinary, **-r** thin. *Guess* and *assume* are not channels: a guess is a *could be* (MAY), and an assumption is toying with a premise (NOTIONAL). *Unfortunately* says how **you** feel about the claim, so it is an attitude word.
 
@@ -88,11 +88,11 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 >
 > "Unfortunately, Uzozen is leaving."
 
-**Compare with:** *hopefully* and *worryingly* are the other speaker attitudes ([hopefully](feelings-permission.md#speaker-attitude)). *Assuming that Q, P* keeps the condition open: P with **`thohom blarl`** ([if](causation.md#if)).
+**Compare with:** *hopefully* and *worryingly* are the other speaker attitudes ([hopefully](/feelings-permission#speaker-attitude)). *Assuming that Q, P* keeps the condition open: P with **`thohom blarl`** ([if](/causation#if)).
 
 ### Reason, purpose, guilty {#reason-purpose-guilty}
 
-**Needs:** [Because](iff-fault.md#only-because) · [Fault](fault.md#fault) · [Motive](prescription.md#sake-preference) · [Prescription](ought-for-a-sake.md#sake-force) · [Attachment sites](prescription.md#attachment-sites) · [So that](dependents.md#so-that) · [Why?](fill-ask-jobs.md#why) · [Emotion compose](feelings-permission.md#emotion-compose) · [Feeling with no object](feelings-permission.md#feeling-no-object)
+**Needs:** [Because](/iff-fault#only-because) · [Fault](/fault#fault) · [Motive](/prescription#sake-preference) · [Prescription](/ought-for-a-sake#sake-force) · [Attachment sites](/prescription#attachment-sites) · [So that](/dependents#so-that) · [Why?](/fill-ask-jobs#why) · [Emotion compose](/feelings-permission#emotion-compose) · [Feeling with no object](/feelings-permission#feeling-no-object)
 
 English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each split the same way. Name which one you mean: what **made it happen** (the because pole), what the speaker is **doing it for** (a motive, on a sake), or the **faculty** of thinking (the abstract sense of `ebobo`).
 
@@ -120,7 +120,7 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 >
 > z-Uzozen | v-tell | th-relatedness-motive-any-term | th-REPORTED-Uzozen
 >
-> "I hear Uzozen's reason for talking is feeling connected." (for someone else's reason, say [how you know it](evidentiality.md#holder))
+> "I hear Uzozen's reason for talking is feeling connected." (for someone else's reason, say [how you know it](/evidentiality#holder))
 
 > `zuzozen vowurel hovam blarl zolazun vuhohol.`
 >
@@ -148,15 +148,15 @@ What makes the feeling guilt is the fault pole on **your own** act. The feeling 
 >
 > "I'm hurt that Olazun spoke."
 
-Put the **act** in a `bl-` word after a fault pole, not the person ([fault](fault.md#fault)). *Guilty* is then *the wrong rests on that act*, and it leaves room for *Olazun did a wrong thing* without *Olazun is bad*.
+Put the **act** in a `bl-` word after a fault pole, not the person ([fault](/fault#fault)). *Guilty* is then *the wrong rests on that act*, and it leaves room for *Olazun did a wrong thing* without *Olazun is bad*.
 
-**Compare with:** owning a harm to someone else (*I'm sorry*) is [thanks and sorry](thanks-and-sorry.md#thanks-sorry), not a guilt feeling.
+**Compare with:** owning a harm to someone else (*I'm sorry*) is [thanks and sorry](/thanks-and-sorry#thanks-sorry), not a guilt feeling.
 
 ### Kill, feed, remove, prevent, persuade, introduce, show, create, excite {#cause-verbs}
 
-**Needs:** [Make someone do it](iff-fault.md#make) · [Decision](ability.md#decision) · [So that](dependents.md#so-that) · [Extra nouns](hooks.md#extra-noun)
+**Needs:** [Make someone do it](/iff-fault#make) · [Decision](/ability#decision) · [So that](/dependents#so-that) · [Extra nouns](/hooks#extra-noun)
 
-English has a separate verb for *make someone do X* in many common cases: *kill* is *make die*, *feed* is *make eat*. Agebon has one way to say all of them. Keep the ordinary verb for what happens, let the one it happens to be the subject, and put the one who makes it happen in a `bl-` word right after **`thewem`** ([make](iff-fault.md#make)). Change only the verb root.
+English has a separate verb for *make someone do X* in many common cases: *kill* is *make die*, *feed* is *make eat*. Agebon has one way to say all of them. Keep the ordinary verb for what happens, let the one it happens to be the subject, and put the one who makes it happen in a `bl-` word right after **`thewem`** ([make](/iff-fault#make)). Change only the verb root.
 
 | English | Agebon | Reading |
 |---------|--------|---------|
@@ -197,26 +197,26 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 >
 > "Uzozen walks so that Olazun does not leave."
 
-**Compare with:** *get someone to* by asking is tell plus a *to* [stand-in](sentence-linkers.md#stand-in), not **`thewem`**. **`thewem`** says the causer made it happen. Persuading puts the decision on the one persuaded, so a later change of mind stays possible. Their decision is in their mind, so a [holder](evidentiality.md#holder) says how you know it.
+**Compare with:** *get someone to* by asking is tell plus a *to* [stand-in](/sentence-linkers#stand-in), not **`thewem`**. **`thewem`** says the causer made it happen. Persuading puts the decision on the one persuaded, so a later change of mind stays possible. Their decision is in their mind, so a [holder](/evidentiality#holder) says how you know it.
 
 ### Know, mean, explain, realize, forget, become {#mind-verbs}
 
-**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Embedded whether](questions.md#embedded-whether) · [Because](iff-fault.md#only-because) · [Already, still, not yet](already-still-yet.md#phasal) · [Can](can-and-cant.md#can) · [Existence](predication.md#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](comparatives.md#comparatives-e)
+**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Embedded whether](/questions#embedded-whether) · [Because](/iff-fault#only-because) · [Already, still, not yet](/already-still-yet#phasal) · [Can](/can-and-cant#can) · [Existence](/predication#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](/comparatives#comparatives-e)
 
 English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mostly sit on a few plain moves: tell, know, remember, and whether the change has come. Agebon keeps those roots and adds the phasal word for the change, so *realize* is *already know* and *forget* is *no longer remember*. *Mean* in the sense of *signify* is the compound `ezuyeloma` (*meaning*, speech that carries a thought).
 
 | English | Agebon | Reading |
 |---------|--------|---------|
 | *mean* (signify) | `zezuyel dudozol vezuyelomal.` | the word carries the meaning *dog* |
-| *mean* (intend) | `zuwon thagem vowurel.` | I plan to walk ([intention](intention.md#plan-predict)) |
+| *mean* (intend) | `zuwon thagem vowurel.` | I plan to walk ([intention](/intention#plan-predict)) |
 | *define* | `zuzozen dezuyelomal hahugem bludozol vezuyel.` | tells the meaning, about the dog |
 | *explain* | `zuzozen vezuyel bolazun darl zolazun vowurel thahum blarl zudozol varuvel.` | tells Olazun that the walk has the run as its reason |
 | *describe* | `zuzozen hahugem bludozol vezuyel bolazun.` | tells Olazun about the dog |
-| *know* (that) | `zuzozen vanam darl zudozol varuvel.` | knows that the dog runs; to say how *you* know it, use a [channel](evidentiality.md#evidentiality) |
+| *know* (that) | `zuzozen vanam darl zudozol varuvel.` | knows that the dog runs; to say how *you* know it, use a [channel](/evidentiality#evidentiality) |
 | *know whether* / *know which* | `zuzozen vanam dorl zudozol varuvel.` | knows whether the dog runs; a blank inside asks *which* (`dor`) |
 | *find out* | `zuzozen vumewol dorl zudozol varuvel.` | finds whether the dog runs |
-| *know someone* | `zuzozen havom dolazun vawebol har.` | has met Olazun at some point ([ever](already-still-yet.md#ever-never)) |
-| *know how to* | `zuzozen vezuyoxal.` | can sing ([can](can-and-cant.md#can)) |
+| *know someone* | `zuzozen havom dolazun vawebol har.` | has met Olazun at some point ([ever](/already-still-yet#ever-never)) |
+| *know how to* | `zuzozen vezuyoxal.` | can sing ([can](/can-and-cant#can)) |
 | *realize* / *notice* | `zuzozen havom vanam darl zudozol varuvel.` | already knows that the dog runs |
 | *forget* | `zuzozen dolazun vevum huvum.` | no longer remembers Olazun |
 | *become* | `zuzozen vebugem duzemol.` | starts being sleepy |
@@ -224,7 +224,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | *happen* / *occur* | the event's own verb: `verulal.` | no helper word |
 | *depend on* | `zuzozen vowurel thebom thahum blerulal.` | only because of rain |
 | *allege* / *claim* | `thebam` on the clause | REPORTED: so they say |
-| *compare* / *exceed* | `zuzozen zolazun zel gelazom.` | rank on a shared scale ([comparatives](comparatives.md#comparatives-e)) |
+| *compare* / *exceed* | `zuzozen zolazun zel gelazom.` | rank on a shared scale ([comparatives](/comparatives#comparatives-e)) |
 
 > `zuzozen havom vanam darl zudozol varuvel.`
 >
@@ -242,7 +242,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 
 ### Condition, factor, requirement, motivation, satisfaction, truth {#reason-nouns}
 
-**Needs:** [If](causation.md#if) · [Only because](iff-fault.md#only-because) · [Fault](fault.md#fault) · [Requirement](feelings-permission.md#requirement) · [Motive](prescription.md#sake-preference) · [Met](sakes.md#time-horizon-endings-on-met) · [Thanks and sorry](thanks-and-sorry.md#thanks-sorry) · [Intention](intention.md#plan-predict) · [Speech manner](speech-acts.md#speech-manner) · [Evidentiality](evidentiality.md#evidentiality) · [Enough and too](prescription.md#sake-bars)
+**Needs:** [If](/causation#if) · [Only because](/iff-fault#only-because) · [Fault](/fault#fault) · [Requirement](/feelings-permission#requirement) · [Motive](/prescription#sake-preference) · [Met](/sakes#time-horizon-endings-on-met) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Intention](/intention#plan-predict) · [Speech manner](/speech-acts#speech-manner) · [Evidentiality](/evidentiality#evidentiality) · [Enough and too](/prescription#sake-bars)
 
 English turns reasons and feelings into nouns (*condition*, *motivation*, *satisfaction*, *truth*). Agebon has no noun for most of them. It keeps the stance word on the clause, so the noun becomes a short claim about how you stand: a condition is the pole word, a motive is a sake, a requirement is a demand, a truth is how you vouch for it.
 
@@ -253,9 +253,9 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 | *circumstance* / *context* | a dependent after `blarl` (`herem blarl`, `thahum blarl`) | the situation as a clause |
 | *requirement* / *demand* | `hwavel` / `hwavem` / `hwaver` | rule, person, or expectation |
 | *necessary* / *unnecessary* | `hwavel` on the act; *more than needed* is the sake bar `thudatham zel` | required by a rule; past what the need asks |
-| *motivation* / *motive* | `zuwon vowurel thawothom.` | my reason; someone else's motive takes a [holder](evidentiality.md#holder) |
+| *motivation* / *motive* | `zuwon vowurel thawothom.` | my reason; someone else's motive takes a [holder](/evidentiality#holder) |
 | *satisfaction* / *pleasure* | `thodotham.` | pleasure, met |
-| *desire* / *wish* | `zuzozen thalem vowurel.` | I want Uzozen to walk; someone else's wish takes a [holder](evidentiality.md#holder) |
+| *desire* / *wish* | `zuzozen thalem vowurel.` | I want Uzozen to walk; someone else's wish takes a [holder](/evidentiality#holder) |
 | *regret* (for the harm) | `thawothum blawan.` | unmet relatedness, yours |
 | *mistake* / *error* | `gogugol gul` or `thahul blarl` | not correct, or at fault |
 | *assumption* | `theyur` | NOTIONAL, toy with it |
@@ -275,23 +275,23 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 >
 > "That was a pleasure."
 
-**Compare with:** a sake word names the sake that is met, so pick the one you mean: relatedness, competence, pleasure ([sakes](sakes.md#sake-inventory)). A noun that says what someone did is a [free relative](say-people-places.md#free-relative-what).
+**Compare with:** a sake word names the sake that is met, so pick the one you mean: relatedness, competence, pleasure ([sakes](/sakes#sake-inventory)). A noun that says what someone did is a [free relative](say-people-places.md#free-relative-what).
 
 ### Biased, wishful thinking, overconfident {#biased}
 
-**Needs:** [Motive](prescription.md#sake-preference) · [Want](ability.md#want) · [MAY](knowing.md#may) · [Speech manner](speech-acts.md#speech-manner) · [Every bar](stance-bars.md#stance-bars)
+**Needs:** [Motive](/prescription#sake-preference) · [Want](/ability#want) · [MAY](/knowing#may) · [Speech manner](/speech-acts#speech-manner) · [Every bar](/stance-bars#stance-bars)
 
-English *biased* says a view may be bent by what the holder wants from it. Agebon says that outright: put a [motive](prescription.md#sake-preference) on the thinking, so the view is held *for a stake*. Name the sake when you know which one, or use the unspecified sake **`uda`**. *Wishful thinking* and *I'd like to believe* are a want on the thinking itself. *Overconfident* ranks your trust against what the clues warrant: a CLUES [bar](stance-bars.md#stance-bars) on *trust*.
+English *biased* says a view may be bent by what the holder wants from it. Agebon says that outright: put a [motive](/prescription#sake-preference) on the thinking, so the view is held *for a stake*. Name the sake when you know which one, or use the unspecified sake **`uda`**. *Wishful thinking* and *I'd like to believe* are a want on the thinking itself. *Overconfident* ranks your trust against what the clues warrant: a CLUES [bar](/stance-bars#stance-bars) on *trust*.
 
 | English | Agebon | Reading |
 |---------|--------|---------|
 | *I may be biased* | `zuwon thomam vevemol thudathom.` | I may think this for a stake of my own |
 | *biased* (someone else) | `zuzozen vevemol thudathom blwazer.` | as you see it, Uzozen's view serves a stake of their own |
-| *bias* (the noun, *Uzozen's bias*) | `zuzozen vevemol thudathom blwazer.` | the view held for a stake; [point back](dependents.md#which-noun) to it to name it |
+| *bias* (the noun, *Uzozen's bias*) | `zuzozen vevemol thudathom blwazer.` | the view held for a stake; [point back](/dependents#which-noun) to it to name it |
 | *I'd like to believe* / *wishful thinking* | `zuwon thalem vevemol darl zolazun vowurel.` | I want to think that Olazun walks |
 | *overconfident* | `zuwon theyem zel gugowem.` | surer than the clues warrant |
 | *underconfident* | `zuzozen theyem zuel gugowem.` | less sure than the clues warrant |
-| *to be honest*, before owning a bias | `thavewem` | [speech manner](speech-acts.md#speech-manner) |
+| *to be honest*, before owning a bias | `thavewem` | [speech manner](/speech-acts#speech-manner) |
 
 > `thavewem zuwon thomam vevemol thudathom.`
 >
@@ -305,12 +305,12 @@ English *biased* says a view may be bent by what the holder wants from it. Agebo
 >
 > "I'm overconfident."
 
-**Compare with:** *I think* as a guess is [MAY](knowing.md#may) on the claim. The motive says why the view is held, not how sure you are.
+**Compare with:** *I think* as a guess is [MAY](/knowing#may) on the claim. The motive says why the view is held, not how sure you are.
 
 ### Factivity (`if` vs `because`)
 <a id="factivity"></a>
 
-**Needs:** [If](causation.md#if) · [Because](iff-fault.md#only-because) · [MAY](knowing.md#may) · [*as-of*](as-of.md#as-of) · [RESIDUE](notional-standing.md#residue) · [forecasts](evidentiality.md#forecast)
+**Needs:** [If](/causation#if) · [Because](/iff-fault#only-because) · [MAY](/knowing#may) · [*as-of*](/as-of#as-of) · [RESIDUE](/notional-standing#residue) · [forecasts](/evidentiality#forecast)
 
 English *because* and *if* can hide whether you **assert the dependent as a world fact**. Agebon puts that choice on the pole: **`thahum`** asserts the condition as the reason the outcome rests on; **`thohom`** does not (the outcome is under that opportunity). *Only if* vs *only because* is the same factivity split on the necessary pole.
 
@@ -326,7 +326,7 @@ English *because* and *if* can hide whether you **assert the dependent as a worl
 >
 > "Uzozen walks if it rains." (whether it rains is left open)
 
-English *If he'd left, the door would still be locked* is not this pole. Write bookmark [*as-of*](as-of.md#as-of) (`hunem`) plus [RESIDUE](notional-standing.md#residue) / a [forecast](evidentiality.md#forecast) (a channel such as CLUES plus `blral`) as needed, with **no** `thohom`. `thohom` stays speaker-now opportunity (*if it rains*). *If it rains, the Friday tab still stands* may stack both: `thohom` plus a **date** in *as-of* `/b/`.
+English *If he'd left, the door would still be locked* is not this pole. Write bookmark [*as-of*](/as-of#as-of) (`hunem`) plus [RESIDUE](/notional-standing#residue) / a [forecast](/evidentiality#forecast) (a channel such as CLUES plus `blral`) as needed, with **no** `thohom`. `thohom` stays speaker-now opportunity (*if it rains*). *If it rains, the Friday tab still stands* may stack both: `thohom` plus a **date** in *as-of* `/b/`.
 
 > `zohol gelewul haram theyem blral hunem blarl zolazun velurul.`
 >
@@ -340,11 +340,11 @@ English *If he'd left, the door would still be locked* is not this pole. Write b
 >
 > "If it rains, the 22 July tab still stands."
 
-**Compare with:** [NOTIONAL](notional-standing.md#notional) is play (*as if*), not a bookmark now.
+**Compare with:** [NOTIONAL](/notional-standing#notional) is play (*as if*), not a bookmark now.
 
 ### Remote and unreal conditions {#remote-unreal}
 
-**Needs:** [If](causation.md#if) · [Dependent clauses](dependents.md#dependent-clauses) · [stance numbers](number-markers.md#number-as-stance-by-marker) · [NOTIONAL](notional-standing.md#notional)
+**Needs:** [If](/causation#if) · [Dependent clauses](/dependents#dependent-clauses) · [stance numbers](/number-markers#number-as-stance-by-marker) · [NOTIONAL](/notional-standing#notional)
 
 English *If Olazun swam, Uzozen would walk* (past-tense *if*) says the condition is a long shot. Keep the open pole **`thohom blarl`** and put *unlikely* **`thrul`** inside the dependent clause.
 
@@ -364,7 +364,7 @@ When the condition is known to be false (*If Olazun had left…*), keep the book
 
 #### Epistemic *because* {#epistemic-because}
 
-English often uses *because* for **speaker grounds** (*it rained, because the street is wet*): Q is how you know P, not what made P happen. Put the inferring or pattern channel on the main sentence and hang the grounds on it with **`blarl`** ([evidence clause](evidentiality.md#evidence-clause)). The channel's ending grades the grounds.
+English often uses *because* for **speaker grounds** (*it rained, because the street is wet*): Q is how you know P, not what made P happen. Put the inferring or pattern channel on the main sentence and hang the grounds on it with **`blarl`** ([evidence clause](/evidentiality#evidence-clause)). The channel's ending grades the grounds.
 
 > `verulal theyel blarl zugalal gegulol.`
 >
@@ -372,7 +372,7 @@ English often uses *because* for **speaker grounds** (*it rained, because the st
 >
 > "It is raining, judging by the gray clouds." (strong clues)
 
-Use **`thahum blarl`** only when Q is also asserted as a world-foundation, what made P happen. For a soft *could be* with no grounds stated, put [MAY](knowing.md#may) (`thomam`, …) on the main sentence.
+Use **`thahum blarl`** only when Q is also asserted as a world-foundation, what made P happen. For a soft *could be* with no grounds stated, put [MAY](/knowing#may) (`thomam`, …) on the main sentence.
 
 > `zolazun thomam velurul dahelan.`
 >
@@ -380,13 +380,13 @@ Use **`thahum blarl`** only when Q is also asserted as a world-foundation, what 
 >
 > "Olazun may be leaving Ahelan."
 
-**For *could be*, use:** [MAY](knowing.md#may) (`oma`). **`thahum`** is world-reason under the claim; **`theyem`** / **`thubem`** + **`blarl`** is the grounds you go by.
+**For *could be*, use:** [MAY](/knowing#may) (`oma`). **`thahum`** is world-reason under the claim; **`theyem`** / **`thubem`** + **`blarl`** is the grounds you go by.
 
 **Related form:** *P, since / given that Q* (Q already shared) uses **`thahum blarl`** when Q is the reason P holds in the world, and **`theyem blarl`** when Q is only your grounds.
 
 ### Arguments: premises, validity, contradiction {#arguments}
 
-**Needs:** [Deduction](evidentiality.md#deduction) · [Evidence clause](evidentiality.md#evidence-clause) · [If](causation.md#if) · [Because, iff, and only because](iff-fault.md#only-because) · [Clause joins](joins.md#clause-joins) · [Sentence linkers](sentence-linkers.md#sentence-linkers) · [Hold endings (NOTIONAL)](notional-standing.md#hold-endings-notional)
+**Needs:** [Deduction](/evidentiality#deduction) · [Evidence clause](/evidentiality#evidence-clause) · [If](/causation#if) · [Because, iff, and only because](/iff-fault#only-because) · [Clause joins](/joins#clause-joins) · [Sentence linkers](/sentence-linkers#sentence-linkers) · [Hold endings (NOTIONAL)](/notional-standing#hold-endings-notional)
 
 An argument has three parts, and each has its own slot. The **link** between premises and conclusion is a pole (*if*, *if and only if*). **How you know** the link is the channel: DEDUCED (`thanam`) when the conclusion must hold. **Whether you grant the premises** depends on what sits before **`blarl`**: the channel alone asserts them, and a pole between the channel and **`blarl`** does not.
 
@@ -397,7 +397,7 @@ An argument has three parts, and each has its own slot. The **link** between pre
 | *P is equivalent to Q* / *P just means Q* | Q **`thanam thehem blarl`** P | only the link, both ways |
 | *P contradicts Q* / *P rules out Q* / *P and Q are inconsistent* | Q **`vul thanam thohom blarl`** P | only that they cannot both hold |
 | *Q doesn't follow from P* / *that's a non sequitur* / *an invalid argument* | Q **`thanam thohom thul blarl`** P | only that the link fails |
-| several premises (*P and R, so Q*) | one [clause join](joins.md#clause-joins) after **`blarl`**: P **`xam`** R | as above |
+| several premises (*P and R, so Q*) | one [clause join](/joins#clause-joins) after **`blarl`**: P **`xam`** R | as above |
 | *it follows that* (premises in the sentence before) | **`xahel`** Q | Q, on the frame the premises carried |
 | *for the sake of argument* / *suppose P* | P with **`theyur`**, then **`xahel`** for each step | nothing: the steps stay supposed |
 | *I checked every step* / *it seems to follow* | **`thanal`** / **`thanar`** | the same, graded on your check of the steps |
@@ -410,7 +410,7 @@ An argument has three parts, and each has its own slot. The **link** between pre
 
 **Compare with:** *it obviously follows* from strong clues (*obviously, it rained*) is CLUES (`theyel`), not a deduction: the clues make it likely, not certain. *Because* in the sense of what made it happen is **`thahum`** ([factivity](#factivity)).
 
-To talk **about** an argument rather than make one, use the dictionary words. Each is *reason* (`ebobo`, as in `zebobom` *the faculty of reason*) joined to a second root ([words you look up](compounds.md#lexical-compounds)).
+To talk **about** an argument rather than make one, use the dictionary words. Each is *reason* (`ebobo`, as in `zebobom` *the faculty of reason*) joined to a second root ([words you look up](/compounds#lexical-compounds)).
 
 | English | Agebon | Built from |
 |---------|--------|------------|
@@ -432,9 +432,9 @@ A word about the argument does not make it. *The argument is valid* names the li
 ### Stacks (evidentiality, CAUSE, restrictors)
 <a id="stacks"></a>
 
-**Needs:** [If](causation.md#if) · [evidentiality](evidentiality.md#evidentiality) · [restrictors](restrictors.md) · [CAUSE](iff-fault.md#cause)
+**Needs:** [If](/causation#if) · [evidentiality](/evidentiality#evidentiality) · [restrictors](/restrictors) · [CAUSE](/iff-fault#cause)
 
-A one-off episode and a standing pattern use the same poles. Add extra words for the extra jobs: evidential `/th/` for *how you know* ([evidentiality](evidentiality.md#evidentiality)), **`hual` / `huam`** for how often ([restrictors](restrictors.md)), **`thewem`** for mechanism ([CAUSE](iff-fault.md#cause)).
+A one-off episode and a standing pattern use the same poles. Add extra words for the extra jobs: evidential `/th/` for *how you know* ([evidentiality](/evidentiality#evidentiality)), **`hual` / `huam`** for how often ([restrictors](/restrictors)), **`thewem`** for mechanism ([CAUSE](/iff-fault#cause)).
 
 > `zerulal gohom blugalal hual.`
 >
@@ -442,11 +442,11 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 >
 > "It always rains if there are clouds."
 
-**Compare with:** to say how you know a general claim, put a channel on it ([channels on a generalization](universality.md#universality)). **CAUSE** is **`thewem`**. English *habit* when a cue produces the act is [habit](#habit).
+**Compare with:** to say how you know a general claim, put a channel on it ([channels on a generalization](/universality#universality)). **CAUSE** is **`thewem`**. English *habit* when a cue produces the act is [habit](#habit).
 
 ### Habit, triggered by {#habit}
 
-**Needs:** [CAUSE](iff-fault.md#cause) · [Because](iff-fault.md#only-because) · [If](causation.md#if) · [Always](restrictors.md) · [Only when](restrictors.md) · [Label scope](label-scope.md#label-scope) · [Used to](say-tense.md#used-to) · [PLAN](intention.md#plan-predict)
+**Needs:** [CAUSE](/iff-fault#cause) · [Because](/iff-fault#only-because) · [If](/causation#if) · [Always](/restrictors) · [Only when](/restrictors) · [Label scope](/label-scope#label-scope) · [Used to](say-tense.md#used-to) · [PLAN](/intention#plan-predict)
 
 English *habit*, *I have a habit of*, and *triggered by* pack how often the act repeats, what cues it, and whether that is who you are. Name the job you mean. When a cue is how the act is produced, put **`thewem`** right before **`thahum`** (the cue is a fact) or **`thohom`** (you do not claim it holds), and the cue in that pole's `/b/`.
 
@@ -456,7 +456,7 @@ English *habit*, *I have a habit of*, and *triggered by* pack how often the act 
 | *does X if Y* (Y as the mechanism; Y not asserted) | **`thewem thohom`** + `/b/` the cue |
 | *always X* (how often; no cue) | **`hual`** / **`huam`** |
 | *only when Y* (when the claim counts, not that Y pulls the act) | occasion + **`hal`** |
-| *I'm an X type* (kind of person) | [label scope](label-scope.md#label-scope) |
+| *I'm an X type* (kind of person) | [label scope](/label-scope#label-scope) |
 | *used to X* (pattern, no claim about now) | **`hual`** + FORMER **`helam`** |
 | *automatically* / *by itself* (no external cue) | **`thewem blanar`** |
 | *I plan to X when Y* (a chosen if-then) | PLAN **`thagem`** + **`thohom`** |
@@ -475,13 +475,13 @@ English *habit*, *I have a habit of*, and *triggered by* pack how often the act 
 
 **Compare with:** *always walks* (`vowurel hual`) names no cue. *Walks only when it rains* (`vowurel herulal hal`) says when the claim counts.
 
-**For *I'm an anxious type*, use:** a [scope](label-scope.md#label-scope) vowel on the label, not CAUSE.
+**For *I'm an anxious type*, use:** a [scope](/label-scope#label-scope) vowel on the label, not CAUSE.
 
 ### Hoping something will happen {#hope-forecast}
 
-**Needs:** [Hopefully](feelings-permission.md#speaker-attitude) · [forecasts](evidentiality.md#forecast) · [evidentiality](evidentiality.md#evidentiality) · [soon](universality.md#dated-channel)
+**Needs:** [Hopefully](/feelings-permission#speaker-attitude) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [soon](/universality#dated-channel)
 
-English *I hope X will happen* is two claims: you want it, and you expect it. **`thoguyem`** gives the wanting. The *will* is a [forecast](evidentiality.md#forecast), so it needs a channel plus **`blral`** (or **`blrawum`** for *soon*). If nothing backs it but your gut, the honest channel is INTUITION: faint **`thabor`** for a slim hope, **`thabom`** for an ordinary one.
+English *I hope X will happen* is two claims: you want it, and you expect it. **`thoguyem`** gives the wanting. The *will* is a [forecast](/evidentiality#forecast), so it needs a channel plus **`blral`** (or **`blrawum`** for *soon*). If nothing backs it but your gut, the honest channel is INTUITION: faint **`thabor`** for a slim hope, **`thabom`** for an ordinary one.
 
 > `thoguyem thabor blrawum huvum verulal.`
 >
@@ -495,7 +495,7 @@ English *I hope X will happen* is two claims: you want it, and you expect it. **
 
 ### Important, useful, helpful, benefit, satisfy, upset {#sake-words}
 
-**Needs:** [Sake inventory](sakes.md#sake-inventory) · [Met](sakes.md#time-horizon-endings-on-met) · [Emotion compose](feelings-permission.md#emotion-compose) · [Thanks and sorry](thanks-and-sorry.md#thanks-sorry) · [Bars](comparative-arity.md#bars)
+**Needs:** [Sake inventory](/sakes#sake-inventory) · [Met](/sakes#time-horizon-endings-on-met) · [Emotion compose](/feelings-permission#emotion-compose) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Bars](/comparative-arity#bars)
 
 English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Agebon names the someone's **sake** (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical). A met word says the thing serves that sake, and its ending says how long the payoff lasts. On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it on `/w/` before **`goyem`**. Put a person in `/b/` for whose sake it is.
 
@@ -506,7 +506,7 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 | *meaningful* / *worthwhile* | `wuretham goyem` | purpose, met |
 | *pointless* / *futile* | `wurethum goyem` | purpose, unmet |
 | *glad to help* / *rewarding to give* | `thewatham.` | the act met your beneficence |
-| *grateful* / *thankful* / *appreciate* (your own thanks) | `thawotham.`, or the met word for the sake that was served | your sake, met: the thanks ([thanks and sorry](thanks-and-sorry.md#thanks-sorry)) |
+| *grateful* / *thankful* / *appreciate* (your own thanks) | `thawotham.`, or the met word for the sake that was served | your sake, met: the thanks ([thanks and sorry](/thanks-and-sorry#thanks-sorry)) |
 | *benefit* / *benefits Olazun* | `thawotham blolazun` | the act met Olazun's sake |
 | *advantage* (a lead over someone) | `zel` with the scale | rank against the other |
 | *satisfy* (you) | `thawotham blawan` | the act met your sake |
@@ -552,18 +552,18 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 >
 > "Upset about the memo."
 
-**Compare with:** *too* and *enough* rank against a [sake bar](comparative-arity.md#bars). Bare *good* and *nice* have no root; they go the same way, to a met sake.
+**Compare with:** *too* and *enough* rank against a [sake bar](/comparative-arity#bars). Bare *good* and *nice* have no root; they go the same way, to a met sake.
 
 ### Wrong, ugly {#wrong-ugly}
 
-**Needs:** [Fault](fault.md#fault) · [Every bar](stance-bars.md#stance-bars) · [Negation](joins.md#negation-u) · [Unmet](sakes.md#sake-changeability)
+**Needs:** [Fault](/fault#fault) · [Every bar](/stance-bars#stance-bars) · [Negation](/joins#negation-u) · [Unmet](/sakes#sake-changeability)
 
 English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrect** (not matching), **morally wrong** (someone broke a norm), or **bad for someone** (a sake unmet). *Ugly* is **not beautiful**, **less beautiful than a bar**, or **unpleasant to me**.
 
 | English | Agebon | Reading |
 |---------|--------|---------|
 | *wrong* (incorrect) | `gogugol gul` | not correct, closed with **`gul`** |
-| *wrong* (morally) | `thahul blarl` + the act | fault on the act ([fault](fault.md#fault)) |
+| *wrong* (morally) | `thahul blarl` + the act | fault on the act ([fault](/fault#fault)) |
 | *wrong* (bad for someone) | `thawothum blolazun` | the act detracted from Olazun's sake |
 | *badly* (manner) | the doer, then `thubem zuel hogugol` | less correctly than usual ([manner words](say-amounts.md#manner-words)) |
 | *ugly* (not beautiful) | `gahelal gul` | not beautiful |
@@ -586,7 +586,7 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrec
 
 ### Deserve, earn, entitled {#deserve}
 
-**Needs:** [Prescription](ought-for-a-sake.md#sake-force) · [Requirement](feelings-permission.md#requirement) · [Permission](feelings-permission.md#permission) · [Exchange](relations.md#exchange) · [Adverbs `/h/`](clause.md#adverbs-h)
+**Needs:** [Prescription](/ought-for-a-sake#sake-force) · [Requirement](/feelings-permission#requirement) · [Permission](/feelings-permission#permission) · [Exchange](/relations#exchange) · [Adverbs `/h/`](/clause#adverbs-h)
 
 English *deserve* says something is owed without saying why. Name the ground. It is owed because giving it would be **fair**, because a **rule** gives a right to it, or because it was **earned** in exchange for effort.
 
@@ -613,7 +613,7 @@ English *deserve* says something is owed without saying why. Name the ground. It
 
 ### Clear, honest, false, general, proud {#trait-words}
 
-**Needs:** [Negation](joins.md#negation-u) · [Universals, domains and generics](rank-joins.md#universals-domains-generics) · [Fault](fault.md#fault) · [Emotion compose](feelings-permission.md#emotion-compose) · [Number as stance](special-values.md#special-number-as-stance)
+**Needs:** [Negation](/joins#negation-u) · [Universals, domains and generics](/rank-joins#universals-domains-generics) · [Fault](/fault#fault) · [Emotion compose](/feelings-permission#emotion-compose) · [Number as stance](/special-values#special-number-as-stance)
 
 Many English adjectives are the plain opposite of something that has a root (*unclear*, *honest*, *false*). Agebon says the positive root and closes it with **`gul`** (*not*). Others claim how far something holds (*general*, *universal*, *absolute*). That is the universal fence: closed for no exceptions, open for *as a rule*. A few are a feeling (*proud*), which is an emotion compose, so the sake and the stimulus are named.
 
@@ -622,7 +622,7 @@ Many English adjectives are the plain opposite of something that has a root (*un
 | *unclear* / *obscure* | `gagebom gul` | not clear |
 | *honest* / *truthful* / *sincere* | `galamum gul` | not deceiving |
 | *false* / *untrue* | `gogugol gul` | not correct |
-| *responsible* (to blame) | `thahul blarl` + the act | fault on the act ([fault](fault.md#fault)) |
+| *responsible* (to blame) | `thahul blarl` + the act | fault on the act ([fault](/fault#fault)) |
 | *responsible* (in charge) | `gobayem` | of authority |
 | *general* / *generally true* | `zuam` with the kind | every member, as a rule |
 | *universal* / *absolute* / *without exception* | `zual` with the kind | every member, no exceptions |
@@ -648,11 +648,11 @@ Many English adjectives are the plain opposite of something that has a root (*un
 >
 > "Proud of the memo."
 
-**Compare with:** *proud* rides on whichever sake the pride serves: competence for a skill, relatedness for a tie ([sakes](sakes.md#sake-inventory)). *Confident* about someone else's claim needs a [holder](evidentiality.md#holder). `th+e` is only the speaker's own certainty.
+**Compare with:** *proud* rides on whichever sake the pride serves: competence for a skill, relatedness for a tie ([sakes](/sakes#sake-inventory)). *Confident* about someone else's claim needs a [holder](/evidentiality#holder). `th+e` is only the speaker's own certainty.
 
 ## Starting and stopping {#phase-verbs}
 
-**Needs:** [objects `/d/`](clause.md), [word endings](word-endings.md).
+**Needs:** [objects `/d/`](/clause), [word endings](/word-endings).
 
 English *start* / *stop* / *finish* doing something are ordinary verbs. Put the activity in `/d/` as an ordinary noun (`dowurel` *a walk*).
 
@@ -676,16 +676,16 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 *Stop* means the activity ends, finished or not. *Finish* means it reached its end.
 
-**Compare with:** *still* / *no longer* / *not yet* are [phasal words](already-still-yet.md#phasal), not these verbs.
+**Compare with:** *still* / *no longer* / *not yet* are [phasal words](/already-still-yet#phasal), not these verbs.
 
 ## Against a dated now {#dated-now}
 
 ### Residue against a snapshot
 <a id="as-of-standing"></a>
 
-**Needs:** [RESIDUE and FORMER](notional-standing.md#residue) · [evidentiality](evidentiality.md#evidentiality) · [*as-of*](as-of.md#as-of) · [NOTIONAL](notional-standing.md#notional)
+**Needs:** [RESIDUE and FORMER](/notional-standing#residue) · [evidentiality](/evidentiality#evidentiality) · [*as-of*](/as-of#as-of) · [NOTIONAL](/notional-standing#notional)
 
-[RESIDUE](notional-standing.md#residue) and [FORMER](notional-standing.md#former-climate) without a hosted pair score against **today’s** books. To score them against a dated now, add [*as-of*](as-of.md#as-of). LIVE plus *as-of* puts the camera in that snapshot. MEMORY plus *as-of* is memory of a scene whose internal now is the snapshot. Write **`thevum`** again on the next memory clause; resume the books with **`henar`**. [MAY](knowing.md#may) still evaluates from speech-now.
+[RESIDUE](/notional-standing#residue) and [FORMER](/notional-standing#former-climate) without a hosted pair score against **today’s** books. To score them against a dated now, add [*as-of*](/as-of#as-of). LIVE plus *as-of* puts the camera in that snapshot. MEMORY plus *as-of* is memory of a scene whose internal now is the snapshot. Write **`thevum`** again on the next memory clause; resume the books with **`henar`**. [MAY](/knowing#may) still evaluates from speech-now.
 
 > `zolazun haram henam bl_#22,7 velurul.`
 >
@@ -711,7 +711,7 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 >
 > "As of 22 July, Uzozen's habit of always talking was already in the past."
 
-[NOTIONAL](notional-standing.md#notional) may stack with *as-of* (*as if, from Friday’s books*). Serious English *if he had* stays bookmark `hunem`, not play.
+[NOTIONAL](/notional-standing#notional) may stack with *as-of* (*as if, from Friday’s books*). Serious English *if he had* stays bookmark `hunem`, not play.
 
 > `zolazun theyum henam bl_#22,7 velurul.`
 >
@@ -722,9 +722,9 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 ### Plan and forecast against a snapshot
 <a id="as-of-intention"></a>
 
-**Needs:** [PLAN](intention.md#plan-predict) · [forecasts](evidentiality.md#forecast) · [DECISION](ability.md#decision) · [*as-of*](as-of.md#as-of)
+**Needs:** [PLAN](/intention#plan-predict) · [forecasts](/evidentiality#forecast) · [DECISION](/ability#decision) · [*as-of*](/as-of#as-of)
 
-[PLAN](intention.md#plan-predict), [DECISION](ability.md#decision), and a [forecast](evidentiality.md#forecast) (channel + `blral`) without a hosted pair score against **speech-now**. PLAN and DECISION are stances, so the stance pair **`thenam`** ([stance as-of](as-of.md#stance-as-of)) dates them: the plan as it stood **at** that now, aimed later than it (*was going to*), and the pick as it stood then. With an event pair ([*as-of*](as-of.md#as-of)), the forecast offset counts **after** that now (*would rain*). Repeat the channel and `blral` on the next clause; resume whose-now with `henar` / `huner`.
+[PLAN](/intention#plan-predict), [DECISION](/ability#decision), and a [forecast](/evidentiality#forecast) (channel + `blral`) without a hosted pair score against **speech-now**. PLAN and DECISION are stances, so the stance pair **`thenam`** ([stance as-of](/as-of#stance-as-of)) dates them: the plan as it stood **at** that now, aimed later than it (*was going to*), and the pick as it stood then. With an event pair ([*as-of*](/as-of#as-of)), the forecast offset counts **after** that now (*would rain*). Repeat the channel and `blral` on the next clause; resume whose-now with `henar` / `huner`.
 
 > `zuwon thager vowurel thenam bl_#22,7.`
 >
@@ -748,10 +748,10 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 ### When the stimulus happens {#emotion-stimulus-time}
 
-**Needs:** [Emotion compose](feelings-permission.md#emotion-compose) · [forecasts](evidentiality.md#forecast) · [evidentiality](evidentiality.md#evidentiality) · [evidence strength](evidentiality.md#evidence-strength) · [RESIDUE](notional-standing.md#residue) · [NOTIONAL](notional-standing.md#notional)
+**Needs:** [Emotion compose](/feelings-permission#emotion-compose) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [evidence strength](/evidentiality#evidence-strength) · [RESIDUE](/notional-standing#residue) · [NOTIONAL](/notional-standing#notional)
 
 
-A feeling word is how you feel **now**. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`goyem`**, as for any [forecast](evidentiality.md#forecast) or [dated claim](universality.md#dated-channel): the offset dates the stimulus, and the channel says how you know it.
+A feeling word is how you feel **now**. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`goyem`**, as for any [forecast](/evidentiality#forecast) or [dated claim](/universality#dated-channel): the offset dates the stimulus, and the channel says how you know it.
 
 > `zezuyel wuwathuraor goyem thebal blral.`
 >
@@ -777,11 +777,11 @@ Other shapes use forms you already have:
 |----------|-------|---------|
 | coming | channel + `blral` | *dreading*, *hoping* |
 | over | channel + `blrul` | *regretting*, *relieved*, *grieving* |
-| over, still counting | [RESIDUE](notional-standing.md#residue) `haram` | *still stung, though it's done* |
-| recurring | [always](restrictors.md) `hual` | *dreading every dialogue* |
-| did not happen | [NOTIONAL](notional-standing.md#notional) | *relieved about what didn't happen* |
+| over, still counting | [RESIDUE](/notional-standing#residue) `haram` | *still stung, though it's done* |
+| recurring | [always](/restrictors) `hual` | *dreading every dialogue* |
+| did not happen | [NOTIONAL](/notional-standing#notional) | *relieved about what didn't happen* |
 
-A [feeling with no object](feelings-permission.md#feeling-no-object) can take a channel and offset too. Then the stimulus is real but unnamed: you know when it is, not what it is.
+A [feeling with no object](/feelings-permission#feeling-no-object) can take a channel and offset too. Then the stimulus is real but unnamed: you know when it is, not what it is.
 
 > `thuwathuruor thabor blral.`
 >
@@ -793,10 +793,10 @@ How the stimulus is known matters. A dialogue a reliable source announced (`theb
 
 ### Feeling then {#emotion-feeling-time}
 
-**Needs:** [Emotion compose](feelings-permission.md#emotion-compose) · [stance as-of](as-of.md#stance-as-of) · [evidentiality](evidentiality.md#evidentiality)
+**Needs:** [Emotion compose](/feelings-permission#emotion-compose) · [stance as-of](/as-of#stance-as-of) · [evidentiality](/evidentiality#evidentiality)
 
 
-To say you **felt** it at another time, date the feeling itself with [stance as-of](as-of.md#stance-as-of): **`thenam`** plus the time or event in `/b/`, after the stimulus. Add a remembering channel for *I remember feeling it*.
+To say you **felt** it at another time, date the feeling itself with [stance as-of](/as-of#stance-as-of): **`thenam`** plus the time or event in `/b/`, after the stimulus. Add a remembering channel for *I remember feeling it*.
 
 > `zezuyel wawothumol goyem thenam blezuyel.`
 >
@@ -814,10 +814,10 @@ With no pair, the feeling is now. Keeping *it hurt then* apart from *it hurts no
 
 ### Cause is not target {#emotion-blame}
 
-**Needs:** [Emotion compose](feelings-permission.md#emotion-compose) · [Because](iff-fault.md#only-because) · [Fault](fault.md#fault) · [MAY](knowing.md#may)
+**Needs:** [Emotion compose](/feelings-permission#emotion-compose) · [Because](/iff-fault#only-because) · [Fault](/fault#fault) · [MAY](/knowing#may)
 
 
-A direction locus says where the charge **goes**. It does not say who **caused** it. Name the cause with the [because pole](iff-fault.md#because) after the feeling, and name its [fault](fault.md#fault) only when you mean it. The target and the cause may differ.
+A direction locus says where the charge **goes**. It does not say who **caused** it. Name the cause with the [because pole](/iff-fault#because) after the feeling, and name its [fault](/fault#fault) only when you mean it. The target and the cause may differ.
 
 > `zezuyel wawothumom goyem bluzozen thahum blerulal.`
 >
@@ -841,9 +841,9 @@ Put an **act** after the pole (`barl zolazun vezuyel`), not the person. A feelin
 
 ### Curious, confused, bored, awed, surprised {#understanding-feelings}
 
-**Needs:** [Sake inventory](sakes.md#sake-inventory) · [Emotion compose](feelings-permission.md#emotion-compose) · [Feeling with no object](feelings-permission.md#feeling-no-object) · [Mirative](notional-standing.md#mirative)
+**Needs:** [Sake inventory](/sakes#sake-inventory) · [Emotion compose](/feelings-permission#emotion-compose) · [Feeling with no object](/feelings-permission#feeling-no-object) · [Mirative](/notional-standing#mirative)
 
-Most of these feelings are about the **understanding** sake: whether something makes sense. Surprise is different. It says the news ran against what you expected, so it is the [mirative](notional-standing.md#mirative), and a sake word says how the news lands.
+Most of these feelings are about the **understanding** sake: whether something makes sense. Surprise is different. It says the news ran against what you expected, so it is the [mirative](/notional-standing#mirative), and a sake word says how the news lands.
 
 | English | Agebon | Reading |
 |---------|--------|---------|

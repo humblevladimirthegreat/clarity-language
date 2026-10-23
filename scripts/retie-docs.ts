@@ -39,7 +39,7 @@ import { letterNameTable, respellLetterNames } from "../src/retie/letter-names.j
 import { lineNumberAt, peelChunk } from "../src/retie/tokens.js";
 import { lexiconConverted, retieTables } from "../src/retie/tables.js";
 import { verifyRetiedSpans } from "../src/retie/verify.js";
-import { REPO_ROOT, dataPath } from "../src/repo-paths.js";
+import { REPO_ROOT, dataPath, grammarFile } from "../src/repo-paths.js";
 import { applyResumeKeeps, bareResumeDrift, newLintFindings, rootsInUse } from "../src/retie/drift.js";
 
 const markdownDirs = [
@@ -317,7 +317,7 @@ async function main(): Promise<void> {
   }
 
   // IPA lines, syllable hints and inline spelled-out words copy a word's letters; they follow the page's word changes.
-  const letterNames = letterNameTable(readFileSync(join(REPO_ROOT, "docs", "grammar", "phonology.md"), "utf8"));
+  const letterNames = letterNameTable(readFileSync(grammarFile("phonology.md"), "utf8"));
   for (const [file, result] of results) {
     const derived = respellDerived(result.text, wordPairsOf(result.changes), letterNames);
     if (derived.fixes.length === 0) continue;

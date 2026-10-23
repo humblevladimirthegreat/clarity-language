@@ -1,6 +1,6 @@
 # Grammar doc content and teaching (for learners)
 
-What belongs in Agebon **grammar docs** under **`docs/grammar/`**, and how to organize it for learners. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). For wording, voice, and sentence-level style, see [doc-style.md](doc-style.md). Design authority for morphology stays in those pages (one-clause grammar: [clause.md](../grammar/clause.md); hosted relations: [relations.md](../grammar/relations.md); dependents / continue: [dependents.md](../grammar/dependents.md)); this page standardizes **pedagogy and content** only.
+What belongs in Agebon **grammar docs** under **`docs/grammar/`**, and how to organize it for learners. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). For wording, voice, and sentence-level style, see [doc-style.md](doc-style.md). Design authority for morphology stays in those pages (one-clause grammar: [clause.md](/clause); hosted relations: [relations.md](/relations); dependents / continue: [dependents.md](/dependents)); this page standardizes **pedagogy and content** only.
 
 Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page, [doc-style.md](doc-style.md), [learning-levels.md](learning-levels.md), and [translation-exercises.md](translation-exercises.md) privately.
 
@@ -137,9 +137,9 @@ Mark the one mix-up so it is easy to scan. Use **one** of these four starters (b
 | Prefer | Avoid |
 |--------|--------|
 | **Compare with:** *if* / *because* use the poles above. | Sufficient / necessary / *if* / *because* **stay on** the joins. Exceptionlessness **stays on** the fence. |
-| **For *could be*, use:** [MAY](../grammar/knowing.md#may) (`oma`). This inventory is *how you know a world-claim*. | First-person *could be* **stays** MAY. |
-| **Related form:** packaging a list uses [joins](../grammar/joins.md) (`zal` / `val` / `xal`, …). | Phrase joins stay on joins.md; VP and clause joins go in join-across-roles.md. |
-| **Not the same job as:** [PLAN](../grammar/intention.md#plan-predict) (map grain). This mood marks **pick firmness**. | Intention map grain **stays PLAN**. |
+| **For *could be*, use:** [MAY](/knowing#may) (`oma`). This inventory is *how you know a world-claim*. | First-person *could be* **stays** MAY. |
+| **Related form:** packaging a list uses [joins](/joins) (`zal` / `val` / `xal`, …). | Phrase joins stay on joins.md; VP and clause joins go in join-across-roles.md. |
+| **Not the same job as:** [PLAN](/intention#plan-predict) (map grain). This mood marks **pick firmness**. | Intention map grain **stays PLAN**. |
 
 Place the labeled beat **after** the worked example for this form, not in the page lead. The lead says what **this** form does. **At most two** labeled beats per teach block. A third sibling is not a table — omit it; the learner can open that page.
 
@@ -155,7 +155,7 @@ Do **not** add an **Agebon · Use** (or English-bundle) table whose rows are oth
 ## Cues live in tables
 <a id="cues-live-in-tables"></a>
 
-Do not append free-text `**Cue:**` or `**Mnemonic:**` paragraphs after a table (that leftover is editor layout). Put each row’s memory aid in a **Cue** column. For tables whose rows come from the [vowel series](../grammar/speech-moves.md), **Cue** shows how **`a`** / **`o`** / **`e`** / **`u`** maps to that row. Metaphor emoji may serve as the visual cue, consistent with published-root conventions.
+Do not append free-text `**Cue:**` or `**Mnemonic:**` paragraphs after a table (that leftover is editor layout). Put each row’s memory aid in a **Cue** column. For tables whose rows come from the [vowel series](/speech-moves), **Cue** shows how **`a`** / **`o`** / **`e`** / **`u`** maps to that row. Metaphor emoji may serve as the visual cue, consistent with published-root conventions.
 
 If a page has several such tables, give each its own **Cue** column; never summarize the whole series once in prose and leave later tables bare. Column names and what may sit in **Cue**: [Cues](#cues-columns).
 
@@ -174,8 +174,8 @@ Do **not** keep a heading whose only job is to say there is nothing here. Learne
 
 1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only when the learner will reach for that form *now* — [Compare with](#compare-with), not “this page owns / does not own” fencing.
 2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → extra nouns + **`darl`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; word-endings Beginner” on every page.
-3. **One sitting, one band** — front matter `band: beginner | intermediate | advanced` on the file; no `## Beginner` (etc.) H2 on a sitting. Assign the band with the [gates](learning-levels.md#gates). Include an Advanced sitting only when the Advanced gate applies ([empty or pointless stages](#empty-stages)). Later sittings of the same topic use a **job title** (the slice’s first real H3), not the topic name again.
-4. Inside each stage: **concept → English job → Agebon shape → one consequence → 1–3 examples → (optional contrast) → full table if needed**. Cue in the same block or in the **Cue** column, not as the lead. Inside **Beginner**, H3 order is **dependency order for this page’s job** ([Beginner stage shape](#beginner-stage-shape)), not inventory order. On clause pages that is building a clause; citation notes are last (or already taught on [word-endings.md](../grammar/word-endings.md)). Later stages: [Intermediate and Advanced stage shape](#later-stage-shape). [Explain before you slogan](doc-style.md#explain-before-you-slogan).
+3. **One sitting, one band** — front matter `band: beginner | intermediate | advanced` on the file; no `## Beginner` (etc.) H2 on a sitting. Sittings live under `docs/grammar/{beginner,intermediate,advanced}/`; public URLs stay `/grammar/<page>.html`. Assign the band with the [gates](learning-levels.md#gates). Include an Advanced sitting only when the Advanced gate applies ([empty or pointless stages](#empty-stages)). Later sittings of the same topic use a **job title** (the slice’s first real H3), not the topic name again.
+4. Inside each stage: **concept → English job → Agebon shape → one consequence → 1–3 examples → (optional contrast) → full table if needed**. Cue in the same block or in the **Cue** column, not as the lead. Inside **Beginner**, H3 order is **dependency order for this page’s job** ([Beginner stage shape](#beginner-stage-shape)), not inventory order. On clause pages that is building a clause; citation notes are last (or already taught on [word-endings.md](/word-endings)). Later stages: [Intermediate and Advanced stage shape](#later-stage-shape). [Explain before you slogan](doc-style.md#explain-before-you-slogan).
 5. Optional **See also** at the end — a few precise related forms only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
 
 Front matter that orients (psychological purpose / limits / benefit tour — [purpose.md](../grammar/purpose.md); grammar design / how to learn — [introduction.md](../grammar/introduction.md)) is not a learning stage. Reading order lives in the path / sidebar — not repeated as Prerequisites.
@@ -200,7 +200,7 @@ Do not open a **Beginner** section, or a later-stage H3 that teaches a **new Eng
 
 This is how you write a sitting already tagged Beginner, not how you pick the band ([gates](learning-levels.md#gates)).
 
-**Grow one job at a time.** A Beginner stage opens with the **smallest form that does this page’s English job**. For clause pages that is a working sentence. For [phonology.md](../grammar/phonology.md) that is letters and cited word edges. For [word-endings.md](../grammar/word-endings.md) Beginner that is prefix-less **citation** (root + ending), not a sentence.
+**Grow one job at a time.** A Beginner stage opens with the **smallest form that does this page’s English job**. For clause pages that is a working sentence. For [phonology.md](/phonology) that is letters and cited word edges. For [word-endings.md](/word-endings) Beginner that is prefix-less **citation** (root + ending), not a sentence.
 
 Each later H3 adds **one** job (or one letter) and a worked example.
 
@@ -210,7 +210,7 @@ Do **not** open Beginner with:
 - writing-system notes (unicase, citation / prefix-less forms, “outside a sentence”) on a **clause** page before a working sentence
 - a form the stage’s **translation practice does not use**, unless that form is required to **parse** an example they do use (then **one sentence**, not its own H3)
 
-**Writing meta last (or elsewhere).** How letters look (lowercase) may live on [phonology.md](../grammar/phonology.md). Citation (prefix-less root + ending) is taught on [word-endings.md](../grammar/word-endings.md) Beginner. [clause.md](../grammar/clause.md) Beginner adds the role letter to a citation they already write. Other pages do not re-teach citation.
+**Writing meta last (or elsewhere).** How letters look (lowercase) may live on [phonology.md](/phonology). Citation (prefix-less root + ending) is taught on [word-endings.md](/word-endings) Beginner. [clause.md](/clause) Beginner adds the role letter to a citation they already write. Other pages do not re-teach citation.
 
 **Do not preview this page’s later H3s.** A section must not name *turn* / *continue* / omit-`yal` (or any later job on the same page) before that section exists. Either teach the opener first, or state the current pattern as a **bare statement body** (a period already marks a statement) until Turn is taught.
 
@@ -247,7 +247,7 @@ Do **not** rerun [Beginner stage shape](#beginner-stage-shape) on later stages. 
 
 **Slogan test on new-job leads only.** Cover the example: could they restate the new choice? Inventory H3s need not pass that test; the table is the teaching.
 
-**Drills.** Intermediate checkpoints exist ([translation-exercises.md](translation-exercises.md)). They cover the **new jobs**, not every inventory row. A pointer-only H3 (number-as-interjection → [numbers.md](../grammar/numbers.md)) needs no drill on this page.
+**Drills.** Intermediate checkpoints exist ([translation-exercises.md](translation-exercises.md)). They cover the **new jobs**, not every inventory row. A pointer-only H3 (number-as-interjection → [numbers.md](/numbers)) needs no drill on this page.
 
 ## Cues
 <a id="cues-columns"></a>
@@ -262,7 +262,7 @@ Learner tables use these headers (omit a column when every cell would be empty o
 | **Agebon** | yes | The spelling (word, letter, or pattern). A **content word** is a [citation](#citation-in-tables) whenever **Same root as** is empty — not a role-marked copy of that citation, and not a bare stem. Inflected **Agebon** (role letter already on) only when **Same root as** is filled and the English needs that letter (`vawebol` *see*). |
 | **Use** | yes | What the form **does** in the clause (subject, command, continue). Not a pun. |
 | **English** | yes | English the learner may **say or produce** (sense or free English). Not a pun, and not an ending tag (`(**-m**)`). |
-| **Same root as** | no | The everyday kind of that root as a [citation](../grammar/word-endings.md) (**-l**): `` `ahul` *wall* ``. Fill it only when this row’s **English** is not that citation’s lemma: a published abstract, a closed overlay, or packed role English that **differs** from the citation (`` `awebol` *eye* `` beside `vawebol` *see*). If English already is the citation lemma (*climb*), leave **Same root as** empty and put the citation in **Agebon** (`uguvel`, not `vuguvel`). That licenses the picture in **Cue**. Omit the column when every row is a letter, vowel-series, punctuation, or other non-lexicon cue. Empty cells are fine in a mixed drill bank. |
+| **Same root as** | no | The everyday kind of that root as a [citation](/word-endings) (**-l**): `` `ahul` *wall* ``. Fill it only when this row’s **English** is not that citation’s lemma: a published abstract, a closed overlay, or packed role English that **differs** from the citation (`` `awebol` *eye* `` beside `vawebol` *see*). If English already is the citation lemma (*climb*), leave **Same root as** empty and put the citation in **Agebon** (`uguvel`, not `vuguvel`). That licenses the picture in **Cue**. Omit the column when every row is a letter, vowel-series, punctuation, or other non-lexicon cue. Empty cells are fine in a mixed drill bank. |
 | **Cue** | no | Recall only: **why** the token maps. Cover this column: the rest must still be the language. ([rubric](#cue-rubric)) |
 
 **Use** and **Cue** must not be the same string. If they would be (`add` / *add*), unpack **Use** (*hold / inventory*) and keep the slogan in **Cue**.
@@ -307,7 +307,7 @@ A **scene** cue (`emoji *literal*: why`) is for remembering a published picture.
 
 **State it** on a **closed overlay**: a fixed special reading under one part of speech (MAY, SAME, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, clause-pole **`oho`**, locatives, means, simile *like*, exchange *for*, proxy *on behalf of*, of-relations, special pronouns, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column with **Same root as** naming the **-l** citation. One line that the same spelling is still ordinary content under other letters is fine.
 
-**Do not state it** when the example is ordinary **lexicon abstract** (content **-m**): `welazom` *size* / *very*, `hedurem` *hastily*. Do **not** add a following sentence of the form “**`edure`** here is the published abstract *haste*. (cue: 💨 *dash*: …).” The morph gloss and quoted English already give the sense. **-m** as a system is taught on [word-endings.md](../grammar/word-endings.md#abstract-m); that page (and drill **Cue** cells) may show `from *swan*: the glide of *grace*` because the lesson *is* the abstract ending.
+**Do not state it** when the example is ordinary **lexicon abstract** (content **-m**): `welazom` *size* / *very*, `hedurem` *hastily*. Do **not** add a following sentence of the form “**`edure`** here is the published abstract *haste*. (cue: 💨 *dash*: …).” The morph gloss and quoted English already give the sense. **-m** as a system is taught on [word-endings.md](/word-endings#abstract-m); that page (and drill **Cue** cells) may show `from *swan*: the glide of *grace*` because the lesson *is* the abstract ending.
 
 | Do | Don’t |
 |----|--------|
@@ -345,7 +345,7 @@ Usual sources (prefer one; reuse the language’s own systems):
 ### House people
 <a id="house-cast"></a>
 
-When an example needs a **person**, use these nativized names (published root + **-n**). Free English keeps *Uzozen*, not *Grace* / *I* / *you*. Checkpoint **English** cells match that name (`*Uzozen*`), not `*grace* (name **Uzozen**)`. Sense-led *grace* (as a name) is only for [word-endings.md](../grammar/word-endings.md) Beginner citation drills. Do not cast abstract roots as participants (`yal zuzozen gudozol`, not “grace is more challenging than courage”). Keep abstract roots for the form being taught.
+When an example needs a **person**, use these nativized names (published root + **-n**). Free English keeps *Uzozen*, not *Grace* / *I* / *you*. Checkpoint **English** cells match that name (`*Uzozen*`), not `*grace* (name **Uzozen**)`. Sense-led *grace* (as a name) is only for [word-endings.md](/word-endings) Beginner citation drills. Do not cast abstract roots as participants (`yal zuzozen gudozol`, not “grace is more challenging than courage”). Keep abstract roots for the form being taught.
 
 | Agebon | English | Root |
 |--------|---------|------|
@@ -355,7 +355,7 @@ When an example needs a **person**, use these nativized names (published root + 
 
 Plain *I* / *you* are **`uwon`** / **`awan`** from pronouns.md Beginner on ([first person](#house-cast)). Before that, **`uwo` / `awa`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (performance **`zuwon`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`aya`**; nonspecific *someone* stays **`umo`**. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
 
-**The learner (first person).** Plain *I* / *me* / *my* is **`uwon`** with its resume, from pronouns.md Beginner on; before that, use the house cast and no *I* except a greeting. The name slot **`SELF`** is only for uses where the name itself is what you say: a greeting (`SELFn.`), a [conversation-length bid](../grammar/compound-families.md#conversation-length) (`SELFxan.`), and self-introduction. The slot exists so the reader sees their own name do those jobs. Write a free-standing `SELF` in the morph line (`SELF`, `SELF-presence`). The site shows the name the learner chose in the name helper ([word-endings.md](../grammar/word-endings.md#named-n-beginner), nav chip), or **`uwon`** / *speaker* until they choose. `build` checks the slot as **`uwo`**. Do not make a house person “name himself” to mean *I*. A checkpoint bank row for the slot is `*your name*` / `` `SELFn` ``. Available from word-endings Beginner onward.
+**The learner (first person).** Plain *I* / *me* / *my* is **`uwon`** with its resume, from pronouns.md Beginner on; before that, use the house cast and no *I* except a greeting. The name slot **`SELF`** is only for uses where the name itself is what you say: a greeting (`SELFn.`), a [conversation-length bid](/compound-families#conversation-length) (`SELFxan.`), and self-introduction. The slot exists so the reader sees their own name do those jobs. Write a free-standing `SELF` in the morph line (`SELF`, `SELF-presence`). The site shows the name the learner chose in the name helper ([word-endings.md](/word-endings#named-n-beginner), nav chip), or **`uwon`** / *speaker* until they choose. `build` checks the slot as **`uwo`**. Do not make a house person “name himself” to mean *I*. A checkpoint bank row for the slot is `*your name*` / `` `SELFn` ``. Available from word-endings Beginner onward.
 
 Default example block ([layout](glosses.md#example-block)):
 
@@ -384,7 +384,7 @@ Short Eng ↔ Agebon checkpoints: end of a page stage only — [translation-exer
 ### Citation in tables
 <a id="citation-in-tables"></a>
 
-Learner tables under `docs/grammar/` almost never publish a **bare stem** (`udozo`, `ogowu`, `uzoze`, `oma`). A content-word **Agebon** cell is a spelling the learner could write **as a word**. If **Same root as** is empty, that spelling is always the [citation](../grammar/word-endings.md#citation-forms) (prefix-less root + ending): `uguvel` *climb*, not `vuguvel`. The **inflected** form (role letter already on) is only for rows that also fill **Same root as**, when the English needs that letter (`vawebol` *see*). **English** is the lexicon lemma for that spelling (published literal / metaphor / packed role English) — do not tag `(**-m**)` or `(**-l**)` there; the Agebon ending already carries that. **Same root as** stays the everyday **-l** citation of the picture (`ahul` *wall*; `awebol` *eye* when **Agebon** is `vawebol`), not a stem, and that picture English is also the published lemma (`*correct*`, not a retired gloss). Checkpoint banks apply the same rule ([translation-exercises.md](translation-exercises.md#template)); `build` checks them.
+Learner tables under `docs/grammar/` almost never publish a **bare stem** (`udozo`, `ogowu`, `uzoze`, `oma`). A content-word **Agebon** cell is a spelling the learner could write **as a word**. If **Same root as** is empty, that spelling is always the [citation](/word-endings#citation-forms) (prefix-less root + ending): `uguvel` *climb*, not `vuguvel`. The **inflected** form (role letter already on) is only for rows that also fill **Same root as**, when the English needs that letter (`vawebol` *see*). **English** is the lexicon lemma for that spelling (published literal / metaphor / packed role English) — do not tag `(**-m**)` or `(**-l**)` there; the Agebon ending already carries that. **Same root as** stays the everyday **-l** citation of the picture (`ahul` *wall*; `awebol` *eye* when **Agebon** is `vawebol`), not a stem, and that picture English is also the published lemma (`*correct*`, not a retired gloss). Checkpoint banks apply the same rule ([translation-exercises.md](translation-exercises.md#template)); `build` checks them.
 
 | Publish | Example |
 |---------|---------|
@@ -415,7 +415,7 @@ Resume teaching may talk about a “whole stem” in running prose; the Agebon c
 - Never link to or mention `meta/`, `examples/`, `proposals/`, `data/`, or repo-root files from a grammar page.
 - One canonical anchor per concept (`<a id="…">`), matching the current heading. When a heading changes, retarget links; do not keep the old id — [one current heading, one current id](#one-current-heading).
 - Do not dump the whole related-inventory into the lead paragraph.
-- **IPA and pronunciation** belong in [phonology.md](../grammar/phonology.md) (letter table, teaching cues) and on the [Inspect](../grammar/inspect.md) tool (**IPA:** beside **Speak Agebon** transcribes the same spoken forms). Other grammar pages use orthographic letters (`y`, `x`, `/y/`, `/x/`) — never IPA transcriptions or sound cues in running examples (the one exception is the opening sentence in [purpose.md](../grammar/purpose.md#at-a-glance), which shows its IPA). If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
+- **IPA and pronunciation** belong in [phonology.md](/phonology) (letter table, teaching cues) and on the [Inspect](../grammar/inspect.md) tool (**IPA:** beside **Speak Agebon** transcribes the same spoken forms). Other grammar pages use orthographic letters (`y`, `x`, `/y/`, `/x/`) — never IPA transcriptions or sound cues in running examples (the one exception is the opening sentence in [purpose.md](../grammar/purpose.md#at-a-glance), which shows its IPA). If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
 
 ### Teach now; don’t preview later
 <a id="teach-now-dont-preview-later"></a>
@@ -458,7 +458,7 @@ Wording and voice for the track: [claritish-style.md](claritish-style.md).
 **What a drop-in is:** a closed Agebon word spelled exactly as the owning page spells it: a tone mark, a stance word, a sake word (thanks, sorry, feelings), or the set phrase `blawan`. No Agebon syntax around it (role letters, hosted `/b/`, joins, spans, hooks, role compounds, numeric derivation), no numerals or stance numbers, no respelling for English readers.
 
 - **Placement** follows English: where an adverb or tag would sit (after the clause, before it, or beside the word it colors). A stance drop-in covers the English clause it sits in. A lone feeling word with no clause is how the speaker feels right now.
-- **Suffixes on English words** are [label scope](../grammar/label-seams.md#label-scope) and [ability](../grammar/can-and-cant.md#ability-changeability) (`-xa` / `-xe` / `-xo` / `-xu`), written with a hyphen on an English host. The rule and its marking live in [Claritish wording and voice](claritish-style.md#hyphenated-host).
+- **Suffixes on English words** are [label scope](/label-seams#label-scope) and [ability](/can-and-cant#ability-changeability) (`-xa` / `-xe` / `-xo` / `-xu`), written with a hyphen on an English host. The rule and its marking live in [Claritish wording and voice](claritish-style.md#hyphenated-host).
 - **Tone marks** go before what they color, as in Agebon. English punctuation stays English (a sentence-final `!` is English; sentences need no Agebon period).
 - **Endings:** on stance drop-ins, **-l / -m / -r** are taught as the settled-to-passing scale (*-l ≈ lasting, -r ≈ right now*), and each lesson points out when the scale comes back. Allowed, required, agreed (permission, requirement, consent) grades the source instead (*l ≈ law, m ≈ mouth, r ≈ read the room*), and the prescription endings in Oughts and motives grade why the move is welcome (**invited / offered / trial**); its motive endings are the usual scale. Never teach the concrete vs abstract citation split.
 
@@ -503,10 +503,10 @@ Grammar cheat sheets live in `docs/grammar/cheat-sheets/`, one printable page pe
 | Band gates / reading order | [learning-levels.md](learning-levels.md) ([gates](learning-levels.md#gates), [cross-doc path](learning-levels.md#cross-doc-path)) |
 | Doc content / teaching order | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns), [Compare with](#compare-with)); wording and voice: [doc-style.md](doc-style.md), [claritish-style.md](claritish-style.md) |
 | Goals / feature criteria | [purpose.md](../grammar/purpose.md) (psych aims); [feature-criteria.md](feature-criteria.md) (test for a new psych feature); [introduction.md](../grammar/introduction.md) (grammar design, [cue tables](../grammar/introduction.md#cues)) |
-| Clause grammar (one clause) | [clause.md](../grammar/clause.md) |
-| Hosted relation catalog | [relations.md](../grammar/relations.md) |
-| Dependents / continue (`/x/`, stand-ins) | [dependents.md](../grammar/dependents.md) |
-| IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (letter table); [inspect.md](../grammar/inspect.md) (**IPA:** on spoken forms). Not in other grammar-page examples |
+| Clause grammar (one clause) | [clause.md](/clause) |
+| Hosted relation catalog | [relations.md](/relations) |
+| Dependents / continue (`/x/`, stand-ins) | [dependents.md](/dependents) |
+| IPA / pronunciation / phonotactics | [phonology.md](/phonology) (letter table); [inspect.md](../grammar/inspect.md) (**IPA:** on spoken forms). Not in other grammar-page examples |
 | Unassigned / unused-slot inventory | [unassigned-reserved.md](unassigned-reserved.md) — **never** a grammar-page row, drill, or “reserved” gloss |
 | Parser / CLI / site implementation notes | Code and `docs/meta/` — not titles, leads, or “house rules” on grammar pages |
 | Why a form or reading is deliberately absent | [design-decisions.md](design-decisions.md) |
@@ -548,7 +548,7 @@ End a full example sentence with a period, so it gets the sentence check. When a
 
 A morph line is compared only after the whole example parses. If it doesn't parse, that is a finding, never a skipped comparison.
 
-An example that parses also fails when a plain `/b/` join with no items sits right after a `/ɡ/`, `/h/`, or `/th/` word (`hewom bar`, `herem bual`). It parses as the recipient, but it is nearly always meant as the host's partner, which takes `bl-` (`hewom blar`, [standalone joins](../grammar/joins.md#standalone-phrase)). An example that does mean the recipient puts it elsewhere in the clause (`yol bar zuzozen hedurem varal.`). Plain nouns there are not checked: `zuzozen hedurem bolazun varal.` is the recipient.
+An example that parses also fails when a plain `/b/` join with no items sits right after a `/ɡ/`, `/h/`, or `/th/` word (`hewom bar`, `herem bual`). It parses as the recipient, but it is nearly always meant as the host's partner, which takes `bl-` (`hewom blar`, [standalone joins](/joins#standalone-phrase)). An example that does mean the recipient puts it elsewhere in the clause (`yol bar zuzozen hedurem varal.`). Plain nouns there are not checked: `zuzozen hedurem bolazun varal.` is the recipient.
 
 ### HTML comments
 <a id="html-comments"></a>

@@ -1,7 +1,7 @@
 # Proposal: diphone concatenative Speak
 
 **Status:** PROPOSED  
-**Related:** kept linguistic stages in `src/tts/` (parse → `toSpeech` → `toPhonemes`; see [Existing stages](#existing-stages)); inverse dictation is `learner-stt.md`; sung contours (same bank) in `diphone-singing.md`; phones from [phonology.md](../grammar/phonology.md)  
+**Related:** kept linguistic stages in `src/tts/` (parse → `toSpeech` → `toPhonemes`; see [Existing stages](#existing-stages)); inverse dictation is `learner-stt.md`; sung contours (same bank) in `diphone-singing.md`; phones from [phonology.md](/phonology)  
 **Design authority:** spoken forms and IPA stay in the grammar docs. This proposal covers the **`synthesize`** stage (a recorded Agebon diphone bank plus in-browser concatenation) and the site **Speak UI**. It does not change letters, phonotactics, or writing→speech maps. It is the only proposal needed to reimplement Speak; the earlier `learner-tts.md` (KittenTTS) is rejected and its still-relevant policy is folded in below.
 
 ## Motivation
@@ -10,7 +10,7 @@ Learners need to **hear** Agebon, not only read it. Native `speechSynthesis` on 
 
 A first attempt shipped KittenTTS (an English-trained neural vocoder with an IPA tokenizer) and was removed: output was unreliable, the build downloaded the model from HuggingFace (failing in restricted networks), and feeding Agebon G2P still imposed **English rhythm** (stress-timed shortening, pull toward schwa). Its workaround — lengthening non-final vowels with `ː` — was not Agebon phonology and has been dropped from `wordIpaPhones`.
 
-Learners need to hear the [phonology](../grammar/phonology.md) table: four full vowels, stacked vowels as **two syllables**, monophthong **`o`**, `/ɦ/` and `/ɹ/` as specified. A diphone concatenator plays **those** takes, with **duration owned by the engine** (equal syllable timing), not by an English acoustic prior.
+Learners need to hear the [phonology](/phonology) table: four full vowels, stacked vowels as **two syllables**, monophthong **`o`**, `/ɦ/` and `/ɹ/` as specified. A diphone concatenator plays **those** takes, with **duration owned by the engine** (equal syllable timing), not by an English acoustic prior.
 
 There is **no** off-the-shelf IPA-universal diphone database. MBROLA / Festival banks are other languages (English `/oʊ/`, Spanish tap **r**, missing `/ɦ/`). Reusing them would repeat Kitten’s class of error. The bank is **one speaker, recorded for Agebon**.
 
@@ -30,7 +30,7 @@ There is **no** off-the-shelf IPA-universal diphone database. MBROLA / Festival 
 - Studio naturalness, singing, or musical timing (phonology singability stays a **design** filter; Speak stays speech).
 - Unvoiced **style** allophones in v1 (`/k t p s f h/` etc.) — default **voiced** inventory only.
 - Reusing MBROLA/Festival diphone files as the shipped voice.
-- Changing [phonology.md](../grammar/phonology.md) to match a synthesizer.
+- Changing [phonology.md](/phonology) to match a synthesizer.
 - Speaking opaque / foreign interiors as Agebon — see [Foreign and opaque](#foreign-and-opaque).
 - Speaking parser recoveries or other material **not present in the written input** — see [Write-only surface](#write-only-surface).
 - Perfect discourse intonation beyond existing SpeechPlan pause / turn / continue tags.
@@ -56,7 +56,7 @@ PhonemePlan (existing)
         AudioBuffer
 ```
 
-`toPhonemes` stays the [letter table](../grammar/phonology.md): **`e`** `/e̞/`, **`u`** `/u/`, **`o`** `/o/`, **`a`** `/ɑ/`, **`h`** `/ɦ/`, **`r`** `/ɹ/`, **`x`** `/ʒ/`. The concatenator maps those IPA symbols onto **unit ids**, not onto English ARPAbet.
+`toPhonemes` stays the [letter table](/phonology): **`e`** `/e̞/`, **`u`** `/u/`, **`o`** `/o/`, **`a`** `/ɑ/`, **`h`** `/ɦ/`, **`r`** `/ɹ/`, **`x`** `/ʒ/`. The concatenator maps those IPA symbols onto **unit ids**, not onto English ARPAbet.
 
 ## Existing stages
 
@@ -70,7 +70,7 @@ Agebon text → parse → toSpeech (SpeechPlan) → toPhonemes (PhonemePlan) →
 |-------|--------|--------|------|
 | **Parse** | Surface string | Typed AST | [parser-pipeline.md](../meta/parser-pipeline.md) |
 | **`toSpeech`** (`plan.ts`) | AST | Ordered speech tokens + boundary tags + skipped items | Writing↔speech maps in spans / numbers |
-| **`toPhonemes`** (`plan.ts`, `phonemes.ts`) | Speech tokens | Per-word syllables + IPA (`ipa` dotted for display; `ipaPhonemes` undotted stream with boundary punctuation) | [phonology.md](../grammar/phonology.md) letter table only |
+| **`toPhonemes`** (`plan.ts`, `phonemes.ts`) | Speech tokens | Per-word syllables + IPA (`ipa` dotted for display; `ipaPhonemes` undotted stream with boundary punctuation) | [phonology.md](/phonology) letter table only |
 | **`synthesize`** | Phoneme plan | Audio | This proposal |
 
 Public helpers: `previewSpeech(text)`, `previewPhonemes(text)`, `skipLabel(reason)` (exported via `src/tts/browser.ts`, aliased `@tts-browser` in the VitePress config). Inspect already shows `previewPhonemes(text).words[].ipa` as the **IPA:** line. **No lexicon lookup** drives pronunciation of native Agebon.
@@ -79,13 +79,13 @@ Public helpers: `previewSpeech(text)`, `previewPhonemes(text)`, `skipLabel(reaso
 
 | Writing | Spoken behavior | Doc |
 |---------|-----------------|-----|
-| Free-number shorthand (`g+3`, `g#-2`, `d_…`, `%`, …) | Full CV number word, group-final stress mark `ˈ` | [numbers.md](../grammar/number-markers.md#writing-preferred-shorthand) |
-| Span brackets (`d[…]`, `d@[Hamlet]`, `th(…)`, …) | Open word + interior tokens + close when required | [spans.md](../grammar/spans.md#writing-vs-speech) |
+| Free-number shorthand (`g+3`, `g#-2`, `d_…`, `%`, …) | Full CV number word, group-final stress mark `ˈ` | [numbers.md](/number-markers#writing-preferred-shorthand) |
+| Span brackets (`d[…]`, `d@[Hamlet]`, `th(…)`, …) | Open word + interior tokens + close when required | [spans.md](/spans#writing-vs-speech) |
 | Span anaphor / empty (`d[=]`, `d[]`) | Spoken open only | same |
-| Orthographic digit-group commas | Spoken separator per numbers.md | [digitless-exponents.md](../grammar/digitless-exponents.md#group-separator) |
-| `.` / `?` / `!`, soft **-m** body | Boundary tags `period` / `qmark` / `bang` / `softM` | [dependents.md](../grammar/sentence-linkers.md#orthography-and-prosody-periods) |
+| Orthographic digit-group commas | Spoken separator per numbers.md | [digitless-exponents.md](/digitless-exponents#group-separator) |
+| `.` / `?` / `!`, soft **-m** body | Boundary tags `period` / `qmark` / `bang` / `softM` | [dependents.md](/sentence-linkers#orthography-and-prosody-periods) |
 | `/x/` continue vs new `/y/` turn | `xContinue` / `yTurn` | same |
-| Scope island `^ … ^` | `islandEnter` / `islandExit`; no spoken words | [spans.md](../grammar/span-mention.md#scope-islands) |
+| Scope island `^ … ^` | `islandEnter` / `islandExit`; no spoken words | [spans.md](/span-mention#scope-islands) |
 
 Skip reasons (`foreign`, `writing`, `shorthand`, `punct`, `error`) are surfaced to the UI via `skipLabel`.
 
@@ -135,7 +135,7 @@ Phone set for v1 (plus silence `#`):
 | Onsets | `/ɦ/` `/w/` `/ɡ/` `/d/` `/j/` `/b/` `/z/` `/m/` `/n/` `/v/` `/l/` `/ɹ/` `/ʒ/` |
 | Extra coda | none (plural **-x** is letter **x** `/ʒ/` after the ending) |
 
-Do **not** ship unused C–C pairs. Generate the list from [phonotactics](../grammar/phonotactics.md#phonotactics) and [number-word exception](../grammar/phonotactics.md#number-word-exception):
+Do **not** ship unused C–C pairs. Generate the list from [phonotactics](/phonotactics#phonotactics) and [number-word exception](/phonotactics#number-word-exception):
 
 | Pattern | Diphones |
 |---------|----------|
@@ -187,7 +187,7 @@ No IMS-Toucan in the docs path (Python, large, approximate phones).
 |------|------------|
 | Clicks / double consonants | Recut mids; longer overlap only on vowels |
 | Pitch yodel | Monotone takes + F0 imposition; do not ship raw glue if F0 varies |
-| Missing number **PoS–ɹ** units | Inventory fixture includes every number PoS from [numbers.md](../grammar/numbers.md) |
+| Missing number **PoS–ɹ** units | Inventory fixture includes every number PoS from [numbers.md](/numbers) |
 | Speaker drift across sessions | Re-record the whole bank rather than mixing rooms |
 | Bundle size | Sprite compress (Opus/ADPCM); lazy-load; voiced-only v1 |
 | Learners copy the metronome as “the accent” | UI copy: instructional timing; phonology still allows musical stress later |
@@ -209,7 +209,7 @@ No IMS-Toucan in the docs path (Python, large, approximate phones).
 ## Acceptance criteria
 
 - [ ] Legal diphone list is generated from phonotactics + number **PoS–ɹ** + **gl-** + **-x** clusters; tests fail if Speak requests an unlisted unit.
-- [ ] Native example words from [phonology.md](../grammar/phonology.md) play with **one vowel nucleus per letter**, no G2P `ː`.
+- [ ] Native example words from [phonology.md](/phonology) play with **one vowel nucleus per letter**, no G2P `ː`.
 - [ ] Hiatus (`yuon` = `/ju.on/`) is two syllables of comparable length.
 - [ ] Speak UI surfaces in [UI integration](#ui-integration) are restored and pass the Vue a11y lint.
 - [ ] Offline after first sprite load; no cloud.
@@ -228,8 +228,8 @@ No IMS-Toucan in the docs path (Python, large, approximate phones).
 
 | Topic | Doc |
 |-------|-----|
-| Letter IPA | [phonology.md](../grammar/phonology.md) |
-| Phonotactics / **-x** / **gl-** / number **r** | [phonology.md](../grammar/phonotactics.md#phonotactics) |
+| Letter IPA | [phonology.md](/phonology) |
+| Phonotactics / **-x** / **gl-** / number **r** | [phonology.md](/phonotactics#phonotactics) |
 | SpeechPlan / G2P | `src/tts/` (`phonemes.ts`, `plan.ts`, `numbers.ts`, `spans.ts`) |
 | Rejected predecessor | `learner-tts.md` (KittenTTS) |
-| Writing → speech | [spans.md](../grammar/spans.md#writing-vs-speech), [numbers.md](../grammar/number-markers.md#writing-preferred-shorthand) |
+| Writing → speech | [spans.md](/spans#writing-vs-speech), [numbers.md](/number-markers#writing-preferred-shorthand) |

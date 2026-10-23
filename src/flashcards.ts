@@ -12,7 +12,7 @@ import { parseCompoundCsv, type CompoundRow } from "./lexicon-compounds.js";
 import { parseOverlayCsv, parsePublishedCsv, senseFormRoot, type OverlayRow, type PublishedRow } from "./lexicon-search.js";
 import { BANDS, pageSections, type Band, type PageSections } from "./lint/learning-order.js";
 import { loadDefaultTables } from "./parse/index.js";
-import { readData, REPO_ROOT } from "./repo-paths.js";
+import { grammarFile, readData, REPO_ROOT } from "./repo-paths.js";
 
 export type NoteSource = "root" | "compound" | "overlay";
 
@@ -196,7 +196,7 @@ export function loadFlashcardInputs(
   const markdown = new Map<string, string>();
   for (const { page } of pages) {
     try {
-      markdown.set(page, readFileSync(join(grammarDir, page), "utf8"));
+      markdown.set(page, readFileSync(grammarFile(page), "utf8"));
     } catch {
       // Off-disk sidebar pages have no checkpoints.
     }
@@ -204,7 +204,7 @@ export function loadFlashcardInputs(
   const sections = new Map<string, PageSections>();
   const sectionsOf = (page: string) => {
     if (!sections.has(page)) {
-      const text = markdown.get(page) ?? readFileSync(join(grammarDir, page), "utf8");
+      const text = markdown.get(page) ?? readFileSync(grammarFile(page), "utf8");
       sections.set(page, pageSections(page, text));
     }
     return sections.get(page)!;
@@ -220,7 +220,7 @@ export function loadFlashcardInputs(
       return sectionsOf(page).anchors.get(id ?? "")?.band;
     },
     pageTitle: (page) => titles.get(page) ?? page.replace(/\.md$/, ""),
-    sakeRoots: sakeInventoryRoots(markdown.get("sakes.md") ?? readFileSync(join(grammarDir, "sakes.md"), "utf8")),
+    sakeRoots: sakeInventoryRoots(markdown.get("sakes.md") ?? readFileSync(grammarFile("sakes.md"), "utf8")),
   };
 }
 
