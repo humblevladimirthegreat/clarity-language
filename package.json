@@ -41,7 +41,8 @@
     "english-helper-wordnet": "tsx scripts/english-helper-wordnet.ts",
     "flashcards": "tsx scripts/flashcards.ts",
     "peel-band": "tsx scripts/peel-band.ts",
-    "peel-headings": "tsx scripts/peel-headings.ts"
+    "peel-headings": "tsx scripts/peel-headings.ts",
+    "page-lines": "tsx scripts/page-lines.ts"
   },
   "engines": {
     "node": ">=24"

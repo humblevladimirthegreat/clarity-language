@@ -12,8 +12,10 @@ import { computed, onBeforeUnmount, onMounted, watch } from 'vue'
 import {
   DRILL_MODES,
   DRILL_TEMPOS,
+  PITCH_HOMES,
   PITCH_ORDER,
   drillPhrases,
+  nearestHome,
   pitchOf,
   type DrillMode,
   type DrillPhrase,
@@ -27,10 +29,10 @@ import { noteName, pianoBus, pianoContext, pianoVoice } from '../lib/piano-voice
 // Plays vowel-pitch patterns on the finger code's piano voice and lights each vowel as its note sounds;
 // the learner says the vowels back on their notes. Tempo sets the beat. `level` intermediate swaps pairs for the contour
 // mode and runs the scales through the consonants in alphabet order, with no rest between runs.
-// The microphone is optional: *Find my home note* sets the home note from a held `a`, and *Check me* leaves a
+// The microphone is optional: *Find my home note* sets the home note from a held `a` (the nearest listed home), and *Check me* leaves a
 // silent turn after each note and marks the note with what the learner said in it; a clicked step does the same for one note.
 // With *From memory*, the vowel notes do not sound, so the learner says each unprompted; an opening `a` still sounds.
-// Without the microphone, − and + set the home note.
+// *Strict* (only while checking) halves the match window. Without the microphone, the home-note buttons set the home.
 
 const props = defineProps<{ level?: 'intermediate' }>()
 
@@ -47,8 +49,6 @@ const phrases = ref<DrillPhrase[]>(drillPhrases(mode.value, consonants))
 const playing = ref(false)
 const now = ref(-1)
 
-const BASE_MIN = 36
-const BASE_MAX = 72
 /** The normal beat: the length of a lone note, and the unit of the say turns, which never speed up. */
 const BEAT = 0.7
 /** Seconds at the start of a say turn not judged: the learner's reaction time and the last note's tail. */
@@ -59,6 +59,8 @@ const FIND_LIMIT = 8
 const check = ref(false)
 /** While checking: whether each vowel's note sounds before the learner's turn. */
 const hearFirst = ref(true)
+/** While checking: half-semitone match instead of a semitone. Off until the learner turns it on. */
+const strict = ref(false)
 const finding = ref(false)
 const hearing = ref<number | null>(null)
 const micNote = ref('')
@@ -135,7 +137,7 @@ async function ensureMic(): Promise<boolean> {
     micNote.value = ''
     return true
   } catch {
-    micNote.value = 'No microphone available. Set your home note with − and + instead.'
+    micNote.value = 'No microphone available. Choose a home note instead.'
     return false
   }
 }
@@ -159,7 +161,7 @@ function listen(): void {
     const key = `${t.phrase}:${t.step}`
     if (!t.turn || now.value < t.at + t.dur || results.value[key]) continue
     const s = phrases.value[t.phrase]!.steps[t.step]!
-    results.value[key] = judgePitch(heardIn.get(key) ?? [], pitchOf(s.vowel, base.value))
+    results.value[key] = judgePitch(heardIn.get(key) ?? [], pitchOf(s.vowel, base.value), strict.value ? 0.5 : 1)
   }
 }
 
@@ -189,6 +191,7 @@ function stop(): void {
 
 function play(): void {
   stop()
+  endPreview()
   results.value = {}
   heardIn.clear()
   const a = pianoContext()
@@ -204,14 +207,39 @@ function play(): void {
 }
 
 let previewBus: GainNode | null = null
+const previewMidi = ref<number | null>(null)
+let previewClear = 0
+
+function endPreview(): void {
+  if (previewClear) clearTimeout(previewClear)
+  previewClear = 0
+  previewMidi.value = null
+}
 
 /** Sounds one vowel's pitch alone: the new `a` after a step, or any vowel the learner clicks. */
 function preview(vowel: string): void {
   const a = pianoContext()
   if (previewBus) previewBus.gain.setTargetAtTime(0, a.currentTime, 0.02)
   previewBus = pianoBus(a)
-  pianoVoice(a, previewBus, pitchOf(vowel, base.value), a.currentTime + 0.02, BEAT * 0.9, 0.9, 0.4)
+  const midi = pitchOf(vowel, base.value)
+  const dur = BEAT * 0.9
+  pianoVoice(a, previewBus, midi, a.currentTime + 0.02, dur, 0.9, 0.4)
+  previewMidi.value = midi
+  if (previewClear) clearTimeout(previewClear)
+  previewClear = window.setTimeout(() => {
+    previewClear = 0
+    previewMidi.value = null
+  }, (dur + 0.05) * 1000)
 }
+
+/** The piano note sounding now, or null while nothing plays. */
+const playedMidi = computed(() => {
+  if (previewMidi.value !== null) return previewMidi.value
+  const e = active.value
+  if (!playing.value || !e || e.turn) return null
+  return pitchOf(phrases.value[e.phrase]!.steps[e.step]!.vowel, base.value)
+})
+const playedName = computed(() => (playedMidi.value === null ? '' : noteName(Math.round(playedMidi.value))))
 
 /** A step the learner clicked while the microphone checks: its note sounds, then a turn to say it back. */
 const manual = ref<{ key: string; saying: boolean } | null>(null)
@@ -245,17 +273,19 @@ function clickStep(pi: number, si: number, vowel: string): void {
       if (m !== null) heard.push(m)
     }
     if (t >= lead + SAY_BACK) {
-      results.value[key] = judgePitch(heard, target)
+      results.value[key] = judgePitch(heard, target, strict.value ? 0.5 : 1)
       endManual()
     } else manualRaf = requestAnimationFrame(tick)
   }
   manualRaf = requestAnimationFrame(tick)
 }
 
-function step(by: number): void {
-  const next = Math.min(BASE_MAX, Math.max(BASE_MIN, base.value + by))
-  if (next === base.value) return
-  base.value = next
+function setHome(midi: number): void {
+  if (midi === base.value) {
+    preview('a')
+    return
+  }
+  base.value = midi
   preview('a')
 }
 
@@ -288,7 +318,7 @@ async function findA(): Promise<void> {
     const held = heldNote(heard, t)
     if (held !== null) {
       endFind()
-      base.value = Math.min(BASE_MAX, Math.max(BASE_MIN, Math.round(held)))
+      base.value = nearestHome(held)
       preview('a')
     } else if (t > FIND_LIMIT) {
       endFind()
@@ -310,7 +340,7 @@ watch(mode, (m) => {
   results.value = {}
   phrases.value = drillPhrases(m, consonants)
 })
-watch([base, tempo, check, hearFirst], () => {
+watch([base, tempo, check, hearFirst, strict], () => {
   stop()
   results.value = {}
 })
@@ -318,7 +348,7 @@ watch([base, tempo, check, hearFirst], () => {
 onMounted(() => {
   try {
     const saved = Number(window.localStorage.getItem(STORAGE_KEY))
-    if (Number.isInteger(saved) && saved >= BASE_MIN && saved <= BASE_MAX) base.value = saved
+    if (Number.isFinite(saved)) base.value = nearestHome(saved)
   } catch {
     // Storage blocked: start from the default note.
   }
@@ -333,6 +363,7 @@ watch(base, (b) => {
 
 onBeforeUnmount(() => {
   stop()
+  endPreview()
   check.value = false
   endFind()
 })
@@ -340,12 +371,21 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="pitch-drill">
+    <div class="pd-now" aria-live="polite">{{ playedName }}</div>
     <div class="pd-controls">
       <div class="pd-row">
         <div class="pd-group" role="group" aria-label="Home note">
-          <span class="pd-base-note">Home: {{ noteName(base) }}</span>
-          <button type="button" class="btn" aria-label="Lower the home note by a semitone" :disabled="base <= BASE_MIN" @click="step(-1)">−</button>
-          <button type="button" class="btn" aria-label="Raise the home note by a semitone" :disabled="base >= BASE_MAX" @click="step(1)">+</button>
+          <button
+            v-for="h in PITCH_HOMES"
+            :key="h.midi"
+            type="button"
+            class="btn"
+            :class="{ on: base === h.midi }"
+            :aria-pressed="base === h.midi"
+            @click="setHome(h.midi)"
+          >
+            {{ h.label }}
+          </button>
           <button type="button" class="btn find" :class="{ on: finding }" :aria-pressed="finding" @click="findA">
             <template v-if="finding">Listening… {{ hearing === null ? '' : noteName(Math.round(hearing)) }}</template>
             <template v-else>🎤 Find my home note</template>
@@ -388,6 +428,7 @@ onBeforeUnmount(() => {
         <div v-if="check" class="pd-group" role="group" aria-label="Check">
           <button type="button" class="btn" :class="{ on: hearFirst }" :aria-pressed="hearFirst" @click="hearFirst = true">Hear first</button>
           <button type="button" class="btn" :class="{ on: !hearFirst }" :aria-pressed="!hearFirst" @click="hearFirst = false">From memory</button>
+          <button type="button" class="btn" :class="{ on: strict }" :aria-pressed="strict" @click="strict = !strict">Strict</button>
         </div>
       </div>
     </div>
@@ -427,10 +468,22 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .pitch-drill {
+  position: relative;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
-  padding: 0.75rem;
+  padding: 1.6rem 0.75rem 0.75rem;
   margin: 1rem 0;
+}
+
+.pd-now {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.75rem;
+  min-height: 1rem;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--vp-c-text-2);
+  pointer-events: none;
 }
 
 .pd-controls {
@@ -457,11 +510,6 @@ onBeforeUnmount(() => {
   font-size: 0.8rem;
   color: var(--vp-c-text-2);
   margin-inline-end: 0.15rem;
-}
-
-.pd-base-note {
-  min-width: 5.5rem;
-  font-size: 0.9rem;
 }
 
 .btn {

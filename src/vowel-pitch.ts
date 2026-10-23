@@ -16,6 +16,26 @@ export const VOWEL_PITCH: Readonly<Record<string, number>> = { a: 0, o: 3, e: 5,
 /** The default home note: its finger-code piano key (D♯3). */
 export const PITCH_BASE = vowelKey("a");
 
+/**
+ * Home notes the pitch drill offers, low to high. Mid is the finger-code piano's `a`.
+ * Find-my-home and a saved note snap to the nearest of these.
+ */
+export const PITCH_HOMES: readonly { midi: number; label: string }[] = [
+  { midi: 43, label: "Very Low" },
+  { midi: 45, label: "Low" },
+  { midi: 47, label: "Low-Mid" },
+  { midi: 49, label: "Mid-Low" },
+  { midi: PITCH_BASE, label: "Mid" },
+  { midi: 53, label: "Mid-High" },
+  { midi: 55, label: "High-Mid" },
+  { midi: 57, label: "High" },
+  { midi: 60, label: "Very High" },
+];
+
+/** The listed home closest to `midi` (a lower home wins a tie). */
+export const nearestHome = (midi: number): number =>
+  PITCH_HOMES.reduce((best, h) => (Math.abs(h.midi - midi) < Math.abs(best - midi) ? h.midi : best), PITCH_HOMES[0]!.midi);
+
 /** A vowel's pitch as a MIDI note, from the home note. */
 export const pitchOf = (vowel: string, base = PITCH_BASE): number => base + VOWEL_PITCH[vowel]!;
 

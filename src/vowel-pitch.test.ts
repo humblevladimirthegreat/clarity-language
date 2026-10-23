@@ -5,10 +5,21 @@ import { readFileSync } from "node:fs";
 
 import { CONSONANT_LETTERS, vowelKey } from "./finger-code.ts";
 import { letterNameTable } from "./retie/letter-names.ts";
-import { drillPhrases, PITCH_ORDER, STACKS, VOWEL_PITCH, type DrillMode } from "./vowel-pitch.ts";
+import { drillPhrases, nearestHome, PITCH_BASE, PITCH_HOMES, PITCH_ORDER, STACKS, VOWEL_PITCH, type DrillMode } from "./vowel-pitch.ts";
 import { grammarFile } from "./repo-paths.js";
 
 describe("vowel pitch", () => {
+  it("lists nine homes around the finger-code piano's a", () => {
+    assert.equal(PITCH_HOMES.length, 9);
+    assert.deepEqual(PITCH_HOMES.map((h) => h.label), ["Very Low", "Low", "Low-Mid", "Mid-Low", "Mid", "Mid-High", "High-Mid", "High", "Very High"]);
+    assert.equal(PITCH_HOMES[4]!.midi, PITCH_BASE);
+    assert.equal(nearestHome(51), PITCH_BASE);
+    assert.equal(nearestHome(50.9), PITCH_BASE);
+    assert.equal(nearestHome(43), 43);
+    assert.equal(nearestHome(61), 60);
+    assert.equal(nearestHome(44), 43);
+  });
+
   it("sits on the finger code's piano keys", () => {
     for (const v of PITCH_ORDER) assert.equal(VOWEL_PITCH[v], vowelKey(v) - vowelKey("a"), v);
   });

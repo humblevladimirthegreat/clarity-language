@@ -53,5 +53,7 @@ describe('pitch detect', () => {
     assert.deepEqual(judgePitch([48, 48, 48, 48, 48], 55), { verdict: 'sharp', off: 5 })
     assert.deepEqual(judgePitch([52, 52, 52, 52, 52], 55), { verdict: 'flat', off: -3 })
     assert.equal(judgePitch([55, 55], 55).verdict, 'silent')
+    assert.equal(judgePitch([55.6, 55.6, 55.6, 55.6, 55.6], 55, 0.5).verdict, 'close')
+    assert.equal(judgePitch([55.4, 55.4, 55.4, 55.4, 55.4], 55, 0.5).verdict, 'ok')
   })
 })

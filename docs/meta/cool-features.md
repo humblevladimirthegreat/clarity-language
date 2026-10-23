@@ -5,6 +5,37 @@ This document contains a record of features that have been posted to the r/conla
 
 Use this document for styling examples when producing more posts, and seeing what has already been posted. New posts should be added at the top under this section.
 
+### Roots Are Built, Not Invented
+
+I don't pick Agebon root spellings by ear. Every published root is placed by a program from a concrete seed (usually an emoji) plus three tags: **kind** of thing, **job**, and **size**. The last two letters of the root are a *tail* that a learner can read even on a word they have never seen.
+
+A five-letter root is `V C V C V`. The last consonant is the kind, and the last vowel is the job (the same vowel series as the joins: **a** add / holds, **o** one, **e** order, **u** undo / takes away). The middle vowel is usually how big the thing is against a person.
+
+| Last C | Kind | Example |
+|--------|------|---------|
+| `z` | creature | `udozo` *dog* |
+| `y` | person | `eboye` *baby* |
+| `m` | mind / feeling | `evemu` *fear* |
+| `b` | body / worn | `aheba` *hand* |
+| `v` | doing / vehicle | `aruve` *run* |
+| `h` | place / fixture | `aheha` *house* |
+| `l` | nature / stuff | `edale` *tree* |
+| `d` | food | `oledo` *apple* |
+| `w` | tool | `anewu` *knife* |
+| `g` | sign / mark | `awugu` *warning* |
+| `r` | counting / time | `egore` *clock* |
+| `n` | title / paper | `unona` *newspaper* |
+
+So `anewu` *knife* is a small (`e`) tool (`w`) that takes away (`u`). `aheha` *house* is person-sized (`a`), a place (`h`) that holds (`a`). `oledo` *apple* is hand-sized (`e`) food (`d`) that is one compact thing (`o`). A banana is long, so its job vowel is `e` instead.
+
+The first two letters keep same-kind roots apart (two dogs that both start `ud-` would be easy to mix up) and, when there is room, echo the English label's first consonant: *dog* can keep `d`, *knife* can keep `n`. Ties go to a closer English sound, then to fewer stop consonants. Overlay-backed roots (closed grammar senses on a seed, plus a few pronouns) get three letters instead: ❤️ *heart* is `abo`, the seed for *compassion*.
+
+The abstract sense is reached through the pictured thing, never through an English pun. *Compassion* lives on *heart* because that is how you feel it, not because of how the English words sound.
+
+A side effect I like: digit names use the same consonants, so every ordinary root is also a [mnemonic peg](https://clarityconlang.com/grammar/pegs.html). Drop the role letter and the ending, skip vowels and fillers `w` / `y`, and `zudozol` *dog* reads as 25 (`d`=2, `z`=5). The dictionary has at least one picture for every 0–9 and 00–99 cell.
+
+Full docs: https://clarityconlang.com/grammar/root-tails.html#root-tails
+
 ### Command vs Prohibition Redundancy via Word-Order
 
 Sentences in Agebon start with a speech act word: yal for statements (usually omitted), yol for questions, yel for commands, and yul for prohibitions. Being only a single vowel apart can lead to mishearing though, so each act also has its own usual word order for redundancy:
