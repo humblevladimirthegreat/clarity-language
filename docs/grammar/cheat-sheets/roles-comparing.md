@@ -46,21 +46,21 @@ A part consonant can name a quality of the event, not a person in it. Pointers d
 
 | Part | Names | Compound | Pointer | Stage |
 |------|-------|----------|---------|-------|
-| [**`h`**](/viewpoint#content-of-the-event) | how, when, or where | `dwuhowurel` | `dwahar` | I |
-| [**`g`**](/viewpoint#content-of-the-event) | the state it leaves | `dwuguguyel` | `dwagar` | I |
-| [**`th`**](/viewpoint#content-of-the-event) | a reason or feeling | `dwuthowurel` | `dwathar` | I |
-| [**`w`**](/viewpoint#content-of-the-event) | how much | `dwuwowurel` | `dwawar` | I |
-| [**`y`**](/viewpoint#content-of-the-event) | the turn that said it | `dwuyowurel` | `dwayar` | I |
-| [**`x`**](/viewpoint#content-of-the-event) | what followed | `dwuxowurel` | `dwaxar` | I |
-| [**`v`**](/viewpoint#content-of-the-event) | the event itself | (the event noun: `dowurel`) | `dwavar` | I |
+| [**`h`**](/viewpoint#content-of-the-event) | how, when, or where | `dwuhowurel` | `dwuher` | I |
+| [**`g`**](/viewpoint#content-of-the-event) | the state it leaves | `dwuguguyel` | `dwuger` | I |
+| [**`th`**](/viewpoint#content-of-the-event) | a reason or feeling | `dwuthowurel` | `dwuther` | I |
+| [**`w`**](/viewpoint#content-of-the-event) | how much | `dwuwowurel` | `dwuwer` | I |
+| [**`y`**](/viewpoint#content-of-the-event) | the turn that said it | `dwuyowurel` | `dwuyer` | I |
+| [**`x`**](/viewpoint#content-of-the-event) | what followed | `dwuxowurel` | `dwuxer` | I |
+| [**`v`**](/viewpoint#content-of-the-event) | the event itself | (the event noun: `dowurel`) | `dwuver` | I |
 
 ### Without the stem {#pointers}
 
-A role pointer drops the stem. The pointer vowel picks the event by position: **`a`** the latest, **`e`** this sentence's own, **`o`** the other, **`u`** the one that left the part unsaid. **-r** is the participant, **-l** a new one of its kind, **-m** its part.
+A role pointer drops the stem. The pointer vowel picks the event by position: **`e`** the latest, **`a`** the other, **`o`** this sentence's own, **`u`** the one that left the part unsaid. **-r** is the participant, **-l** a new one of its kind, **-m** its part.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Whoever did the latest thing](/roles#role-pointers-family) | `zwazar` | *they* | B |
+| [Whoever did the latest thing](/roles#role-pointers-family) | `zwuzer` | *they* | B |
 | [The landmark a clause named](/viewpoint#places-tools-times): resume its noun | `zuzozen vuguyel aol banewul. zahelan danewur vawebol.` | *Uzozen cooks with a knife. Ahelan sees the knife.* | I |
 | [That landmark as a means](/viewpoint#places-tools-times): the hook's pointer | `zuzozen vuguyel aol banewul. zahelan vuguyel aer.` | *Uzozen cooks with a knife. Ahelan cooks with it too.* | I |
 
@@ -130,7 +130,7 @@ The anchor can be `uwo` *speaker*, `awa` *listener*, a name, or a role pointer o
 
 ## Reading mid-word `x` {#x}
 
-After the role letter, look at both sides of the **first** **`x`**. A role word is not one of these: it opens with **`w`**, a scope vowel, and a part consonant (`zwuzuduyel`, `zwazar`).
+After the role letter, look at both sides of the **first** **`x`**. A role word is not one of these: it opens with **`w`**, a scope vowel, and a part consonant (`zwuzuduyel`, `zwuzer`).
 
 <!-- cheat-sheet: roles-comparing -->
 | Left of **`x`** | Right of **`x`** | Reading | Example | Stage |
@@ -173,16 +173,16 @@ Name + **`x`** + one vowel + **-n**, on a greeting or a call. At arrival it says
 | Form | At arrival | At departure | Stage |
 |------|------------|--------------|-------|
 | [`SELFxan`](/compound-families#conversation-length) | open-ended: *we can stay* | none | I |
-| [`SELFxen`](/compound-families#conversation-length) | a few minutes | leaving soon | I |
-| [`SELFxon`](/compound-families#conversation-length) | one slot: *one ask or comment* | about to leave | I |
+| [`SELFxon`](/compound-families#conversation-length) | a few minutes | leaving soon | I |
+| [`SELFxen`](/compound-families#conversation-length) | one slot: *one ask or comment* | about to leave | I |
 | [`SELFxun`](/compound-families#conversation-length) | passing | leaving right now | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Arriving](/compound-families#conversation-length) | `SELFxan.` | *I have time; we can stay.* | I |
-| [Calling with a bid](/compound-families#conversation-length) | `yolazuxen.` | *Olazun, I have a few minutes.* | I |
-| [The other bid](/compound-families#conversation-length) | `olazuxon.` | *Olazun here. I only have time for one thing.* | I |
-| [Leaving soon](/compound-families#conversation-length) | `SELFxen.` | *I'm leaving soon.* | I |
+| [Calling with a bid](/compound-families#conversation-length) | `yolazuxon.` | *Olazun, I have a few minutes.* | I |
+| [The other bid](/compound-families#conversation-length) | `olazuxen.` | *Olazun here. I only have time for one thing.* | I |
+| [Leaving soon](/compound-families#conversation-length) | `SELFxon.` | *I'm leaving soon.* | I |
 
 ## More, as much, less {#comparing}
 

@@ -6,7 +6,7 @@ band: intermediate
 
 ### Left and right of `x` {#families-by-shape}
 
-Beginner already used two roots glued with **`x`** and dictionary words with no **`x`**. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family. A [role compound](/roles#role-compounds) or [role pointer](/pronouns#role-pointers) is not one of these families: it opens with **`w`**, a scope vowel, and a part consonant (`zwuzuduyel`, `zwazar`), and only a noun inside its stem takes **`x`**.
+Beginner already used two roots glued with **`x`** and dictionary words with no **`x`**. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family. A [role compound](/roles#role-compounds) or [role pointer](/pronouns#role-pointers) is not one of these families: it opens with **`w`**, a scope vowel, and a part consonant (`zwuzuduyel`, `zwuzer`), and only a noun inside its stem takes **`x`**.
 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | Use | English | Cue |
@@ -55,13 +55,15 @@ Use the table above. If the word has a mid-word **`th`**, it is a [sake](/sakes)
 
 English *I can stay a while* or *I only have a minute* tells the other person how long you can talk. In Agebon, add **`x`** and one vowel before **-n** on a [greeting](/word-endings#greeting) (your own name with a period, `SELFn.`) or a [call](/speech-moves#vocative) (their name under **`/y/`**, `yolazun.`). At arrival, the vowel sets how long you expect the conversation to last. At departure, the same form says how soon you are leaving. The vowel is about the conversation, not a grade of the person.
 
+The vowel says how much talk is left. Join vowels pick list type. That job stays on join words.
+
 > `SELFxan.`
 >
 > SELF-presence
 >
 > "I have time; we can stay."
 
-> `yolazuxen.`
+> `yolazuxon.`
 >
 > y-Olazun-minutes
 >
@@ -70,14 +72,14 @@ English *I can stay a while* or *I only have a minute* tells the other person ho
 <!-- cheat-sheet: roles-comparing -->
 | Form | At arrival | At departure | Cue |
 |------|------------|--------------|-----|
-| `SELFxan` | open-ended: *we can stay* | none | **a** ≈ add (time is in) |
-| `SELFxen` | a few minutes: *I have a little time* | leaving soon | **e** ≈ order (the slot has an end) |
-| `SELFxon` | one slot: *one ask or comment* | about to leave | **o** ≈ one (one last slot) |
-| `SELFxun` | passing: *just acknowledging; not opening a talk* | leaving right now | **u** ≈ undo (lift the talk) |
+| `SELFxan` | open-ended: *we can stay* | none | **a** ≈ open-ended |
+| `SELFxon` | a few minutes: *I have a little time* | leaving soon | **o** ≈ a few minutes |
+| `SELFxen` | one slot: *one ask or comment* | about to leave | **e** ≈ one slot |
+| `SELFxun` | passing: *just acknowledging; not opening a talk* | leaving right now | **u** ≈ passing |
 
-On a [full name](proper-names.md#multipart-names), the vowel goes on the given name (`alexen galowen.`); a family name takes no bid, since **`x`** + vowel on a `/ɡ/` word is ability. Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](/word-endings#named-n-beginner) ending.
+On a [full name](proper-names.md#multipart-names), the vowel goes on the given name (`alexon galowen.`); a family name takes no bid, since **`x`** + vowel on a `/ɡ/` word is ability. Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](/word-endings#named-n-beginner) ending.
 
-At arrival, the other person can answer with their own bid. The **lesser** bid sets the shared limit: **a** (open-ended) is more than **e** (a few minutes), **e** is more than **o** (one slot), and **o** is more than **u** (passing). If you offer open-ended time and Olazun offers one slot, you have one slot.
+At arrival, the other person can answer with their own bid. The **lesser** bid sets the shared limit: **a** (open-ended) is more than **o** (a few minutes), **o** is more than **e** (one slot), and **e** is more than **u** (passing). If you offer open-ended time and Olazun offers one slot, you have one slot.
 
 > `SELFxan.`
 >
@@ -85,7 +87,7 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 >
 > "I have time; we can stay."
 
-> `olazuxon.`
+> `olazuxen.`
 >
 > Olazun-ask
 >
@@ -97,13 +99,13 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 
 At departure, use your own name with the reduced level:
 
-> `SELFxen.`
+> `SELFxon.`
 >
 > SELF-minutes
 >
 > "I’m leaving soon."
 
-> `SELFxon.`
+> `SELFxen.`
 >
 > SELF-ask
 >
@@ -155,7 +157,7 @@ SELF-presence
 **2.** *Olazun, I have a few minutes.* (calling)
 
 ::: details Show answer
-`yolazuxen.`
+`yolazuxon.`
 
 y-Olazun-minutes
 :::
@@ -171,7 +173,7 @@ y-Ahelan-passing
 **4.** *Uzozen, I have a few minutes. Olazun sees the doorbell.*
 
 ::: details Show answer
-`yuzozexen zolazun doholeboral vawebol.`
+`yuzozexon zolazun doholeboral vawebol.`
 
 y-Uzozen-minutes | z-Olazun | d-doorbell | v-see
 :::
@@ -194,7 +196,7 @@ z-Uvela-x-Azada-x-Agedon
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `SELFxon.`
+**1.** `SELFxen.`
 
 ::: details Show answer
 SELF-ask
@@ -218,7 +220,7 @@ z-flower-x-plate
 *a flower plate*
 :::
 
-**4.** `yahelaxen zuzozen duvelal vawebol.`
+**4.** `yahelaxon zuzozen duvelal vawebol.`
 
 ::: details Show answer
 y-Ahelan-minutes | z-Uzozen | d-flower | v-see
@@ -226,7 +228,7 @@ y-Ahelan-minutes | z-Uzozen | d-flower | v-see
 *Ahelan, I have a few minutes. Uzozen sees a flower.*
 :::
 
-**5.** `SELFxen.` (said when leaving)
+**5.** `SELFxon.` (said when leaving)
 
 ::: details Show answer
 SELF-minutes
@@ -254,14 +256,14 @@ z-croissant-x-plate
 The last root is the kind (a plate); the root before **`x`** narrows it.
 :::
 
-**2.** *Ahelan, I have time for just one thing.* (calling) `yahelaxon.` or `yahelaxen.`
+**2.** *Ahelan, I have time for just one thing.* (calling) `yahelaxen.` or `yahelaxon.`
 
 ::: details Show answer
-`yahelaxon.`
+`yahelaxen.`
 
 y-Ahelan-ask
 
-**`o`** is one slot; **`e`** offers a few minutes.
+**`e`** is one slot; **`o`** offers a few minutes.
 :::
 
 #### Fix it {#intermediate-fix-it}

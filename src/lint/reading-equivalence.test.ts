@@ -16,7 +16,7 @@ describe("sameReading", () => {
   });
 
   it("matches a role pointer against a resume of the same one", () => {
-    assert.equal(sameReading("zuzozen vowurel. zwazar vuhohol.", "zuzozen vowurel. zuzozer vuhohol.", tables), true);
+    assert.equal(sameReading("zuzozen vowurel. zwuzer vuhohol.", "zuzozen vowurel. zuzozer vuhohol.", tables), true);
   });
 
   it("matches a hook phrase or an adverb moved as a whole", () => {
@@ -29,8 +29,8 @@ describe("sameReading", () => {
   });
 
   it("does not match a pointer in -l or -m against one in -r", () => {
-    assert.equal(sameReading("zuzozen dolazun vawebol. zahelan dwadal vawebol.", "zuzozen dolazun vawebol. zahelan dwadar vawebol.", tables), false);
-    assert.equal(sameReading("zuzozen dolazun vawebol. zahelan dwazam vawebol.", "zuzozen dolazun vawebol. zahelan dwazar vawebol.", tables), false);
+    assert.equal(sameReading("zuzozen dolazun vawebol. zahelan dwudel vawebol.", "zuzozen dolazun vawebol. zahelan dwuder vawebol.", tables), false);
+    assert.equal(sameReading("zuzozen dolazun vawebol. zahelan dwuzem vawebol.", "zuzozen dolazun vawebol. zahelan dwuzer vawebol.", tables), false);
   });
 
   it("does not match a role compound against the event's own resume", () => {

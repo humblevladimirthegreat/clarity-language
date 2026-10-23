@@ -192,12 +192,12 @@ Source: [roles.md](/roles), [compounds.md](/compounds)
 
 Source: [pronouns.md](/pronouns#role-pointers)
 
-- **open:** a role pointer on `/v/` / `/ɡ/` / `/w/` (`vwazar`). A pointer picks a participant, and these slots take none; *does so* and *such* are whole-stem **-r**. Parser: `pointerSlot`. On `/h/` the pointer shape is a [say word](/feelings-permission#say-words) (`hwuzam`).
+- **open:** a role pointer on `/v/` / `/ɡ/` / `/w/` (`vwuzer`). A pointer picks a participant, and these slots take none; *does so* and *such* are whole-stem **-r**. Parser: `pointerSlot`. On `/h/` the pointer shape is a [say word](/feelings-permission#say-words) (`hwuzam`).
 - **closed (D-24):** a role pointer on `/y/` / `/x/`.
-- **open:** a new-one pointer (**-l**) with pointer vowel `u`, or after a special, topic or generic pronoun (`zwazul`). A new-one pointer copies a kind, and an unsaid filler or a conversation role has none. Parser: `pointerNewUnsaid`, `pointerNewSpecial`.
-- **open:** a share (**-m**) with pointer vowel `e` or with **-x** (`zwazem`, `zwazamx`). A share is a part of an event, so it names no group and cannot be the very event it describes. Parser: `pointerShareSelf`, `pointerSharePlural`.
-- **closed ([pointers in a seam](design-decisions.md#pointers-in-a-seam)):** a role pointer in a holder seam or as a viewpoint lateral's facing anchor (`theyemwazar`, `howuhethwazar`). Resume the person instead (`theyemuzozer`, `howuhethuzozer`). Parser: `holderSeamW`, no word.
-- **closed:** `dwagor`, `dwawor`. No clause names a resulting state or an amount for *the other* to differ from. Parser: `pointerOtherState`, `pointerOtherExtent`.
+- **open:** a new-one pointer (**-l**) with pointer vowel `u`, or after a special, topic or generic pronoun (`zwuzul`). A new-one pointer copies a kind, and an unsaid filler or a conversation role has none. Parser: `pointerNewUnsaid`, `pointerNewSpecial`.
+- **open:** a share (**-m**) with pointer vowel `o` or with **-x** (`zwuzom`, `zwuzemx`). A share is a part of an event, so it names no group and cannot be the very event it describes. Parser: `pointerShareSelf`, `pointerSharePlural`.
+- **closed ([pointers in a seam](design-decisions.md#pointers-in-a-seam)):** a role pointer in a holder seam or as a viewpoint lateral's facing anchor (`theyemwuzer`, `howuhethwuzer`). Resume the person instead (`theyemuzozer`, `howuhethuzozer`). Parser: `holderSeamW`, no word.
+- **closed:** `dwugar`, `dwuwar`. No clause names a resulting state or an amount for *the other* to differ from. Parser: `pointerOtherState`, `pointerOtherExtent`.
 
 ## Tag pronouns
 
@@ -299,7 +299,7 @@ Source: [speech-moves.md](/firm-soft#speech-act), [stacked act words](/speech-ac
 Source: [spans.md](/spans)
 
 - **open:** an aside under `/z/` `/d/` `/b/` `/v/` (`d(…)`); a cite, opaque or mention under `/th/` (`th[…]`). An aside comments and fills no slot of the verb, and no job has asked for a quoted or foreign stance word: a foreign phrase goes in an aside or a `/y/` interjection. Parser: `spanSlot`.
-- **open:** a span resume (`d[=]`). The shape is not guessable, and a span is an ordinary noun for role pointers (`dwadar`).
+- **open:** a span resume (`d[=]`). The shape is not guessable, and a span is an ordinary noun for role pointers (`dwuder`).
 - **open:** a resume pronoun for a span in a `/v/` slot (`v[vozohul]`). A verb span echoes wording, so there is no stem to resume.
 
 ## Values and sakes

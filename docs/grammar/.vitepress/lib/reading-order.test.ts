@@ -1,9 +1,14 @@
 import assert from 'node:assert/strict'
+import { readdirSync } from 'node:fs'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { describe, it } from 'node:test'
 
 import {
   advancedLessons,
   beginnerLessons,
+  cheatSheetSidebar,
+  cheatSheetSlug,
   intermediateLessons,
   lessonPages,
   levelReviewPages,
@@ -12,6 +17,8 @@ import {
   readingOrder,
   sidebarGroups,
 } from './reading-order.js'
+
+const cheatSheetsDir = join(dirname(fileURLToPath(import.meta.url)), '../../cheat-sheets')
 
 describe('pathPages', () => {
   it('is orientation, then each group with its review last', () => {
@@ -58,5 +65,15 @@ describe('lessonPages', () => {
     assert.ok(titles.includes('Rank joins'))
     assert.ok(titles.includes('Names and titles'))
     assert.equal(titles.filter((title) => title === 'Review').length, 3)
+  })
+})
+
+describe('cheatSheetSidebar', () => {
+  it('lists every file in docs/grammar/cheat-sheets/', () => {
+    const onDisk = readdirSync(cheatSheetsDir)
+      .filter((name) => name.endsWith('.md'))
+      .sort()
+    const inSidebar = cheatSheetSidebar.map((item) => `${cheatSheetSlug(item.link)}.md`).sort()
+    assert.deepEqual(inSidebar, onDisk)
   })
 })

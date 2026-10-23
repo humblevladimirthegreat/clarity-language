@@ -6,7 +6,7 @@ import { ensureCmuDict } from '../../../src/echo-pronunciation.ts'
 import { buildStampIso, formatBuildStampEt } from './lib/build-stamp.ts'
 import { injectInArticleToc } from './lib/inject-in-article-toc.ts'
 import { learnerNameSlots } from './lib/learner-name-md.ts'
-import { orientation, sidebarGroups } from './lib/reading-order.ts'
+import { cheatSheetSidebar, orientation, sidebarGroups } from './lib/reading-order.ts'
 
 const buildAt = new Date()
 
@@ -128,23 +128,7 @@ export default defineConfig({
       {
         text: 'Cheat Sheets',
         collapsed: true,
-        items: [
-          { text: 'Sounds and spelling', link: '/cheat-sheets/sounds-spelling' },
-          { text: 'Vowels', link: '/cheat-sheets/vowels' },
-          { text: 'Consonants', link: '/cheat-sheets/consonants' },
-          { text: 'Word shape and clause', link: '/cheat-sheets/word-shape-clause' },
-          { text: 'People and pointing', link: '/cheat-sheets/people-pointing' },
-          { text: 'Talking', link: '/cheat-sheets/talking' },
-          { text: 'Knowing and intending', link: '/cheat-sheets/knowing-intending' },
-          { text: 'Why and allowed', link: '/cheat-sheets/why-allowed' },
-          { text: 'Joins and hooks', link: '/cheat-sheets/joins-hooks' },
-          { text: 'Restrictors and spans', link: '/cheat-sheets/restrictors-spans' },
-          { text: 'Linking clauses', link: '/cheat-sheets/linking-clauses' },
-          { text: 'Roles and comparing', link: '/cheat-sheets/roles-comparing' },
-          { text: 'Numbers', link: '/cheat-sheets/numbers' },
-          { text: 'Agebon → English', link: '/cheat-sheets/to-english' },
-          { text: 'Exceptions', link: '/cheat-sheets/exceptions' },
-        ],
+        items: cheatSheetSidebar,
       },
     ],
     outline: {

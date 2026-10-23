@@ -545,13 +545,13 @@ function bindContentPointer(ctx: Ctx, bind: AnaphorBind, pronoun: LexWord, part:
   const earlier = ctx.anchors.slice(0, open?.before ?? ctx.anchors.length).reverse();
 
   if (part === "y") {
-    if (pointerVowel === "e") {
+    if (pointerVowel === "o") {
       const head = ctx.currentTurn?.head;
       if (head) pinPointer(ctx, bind, pronoun, part, undefined, head);
       return;
     }
     const latest = ctx.turns.at(-1);
-    if (pointerVowel === "o") {
+    if (pointerVowel === "a") {
       const other = ctx.turns.at(-2);
       if (other) pinPointer(ctx, bind, pronoun, part, undefined, other.head);
       return;
@@ -560,13 +560,13 @@ function bindContentPointer(ctx: Ctx, bind: AnaphorBind, pronoun: LexWord, part:
     return;
   }
 
-  if ((part === "g" || part === "w") && pointerVowel === "o") return;
+  if ((part === "g" || part === "w") && pointerVowel === "a") return;
 
   if (part === "h" || part === "th") {
     const slot = part;
     let anchor: Anchor | undefined;
     let filler: Filler | undefined;
-    if (pointerVowel === "e") {
+    if (pointerVowel === "o") {
       anchor = open?.anchor;
       filler = anchor?.fillers[slot];
     } else if (pointerVowel === "u") {
@@ -574,17 +574,17 @@ function bindContentPointer(ctx: Ctx, bind: AnaphorBind, pronoun: LexWord, part:
     } else {
       const filled = earlier.filter((item) => item.fillers[slot]);
       anchor = filled[0];
-      if (pointerVowel === "o" && anchor) {
+      if (pointerVowel === "a" && anchor) {
         const same = fillerKey(ctx, anchor.fillers[slot]!);
         anchor = filled.find((item) => fillerKey(ctx, item.fillers[slot]!) !== same);
         filler = anchor?.fillers[slot];
-      } else if (pointerVowel === "a") {
+      } else if (pointerVowel === "e") {
         filler = anchor?.fillers[slot];
         if (!anchor) anchor = earlier[0];
       }
     }
     if (!anchor) return;
-    if (pointerVowel !== "u" && pointerVowel !== "a" && pointerVowel !== "e" && !filler) return;
+    if (pointerVowel !== "u" && pointerVowel !== "e" && pointerVowel !== "o" && !filler) return;
     pinPointer(ctx, bind, pronoun, part, filler, anchor.predicate);
     return;
   }
@@ -592,7 +592,7 @@ function bindContentPointer(ctx: Ctx, bind: AnaphorBind, pronoun: LexWord, part:
   if (part === "g") {
     let anchor: Anchor | undefined;
     let filler: Filler | undefined;
-    if (pointerVowel === "e") {
+    if (pointerVowel === "o") {
       anchor = open?.anchor;
       filler = anchor ? resultingState(anchor) : undefined;
     } else if (pointerVowel === "u") {
@@ -609,8 +609,8 @@ function bindContentPointer(ctx: Ctx, bind: AnaphorBind, pronoun: LexWord, part:
 
   if (part === "w" || part === "v") {
     let anchor: Anchor | undefined;
-    if (pointerVowel === "e") anchor = open?.anchor;
-    else if (pointerVowel === "o") anchor = earlier[1];
+    if (pointerVowel === "o") anchor = open?.anchor;
+    else if (pointerVowel === "a") anchor = earlier[1];
     else anchor = earlier[0];
     if (!anchor) return;
     pinPointer(ctx, bind, pronoun, part, undefined, anchor.predicate);
@@ -620,7 +620,7 @@ function bindContentPointer(ctx: Ctx, bind: AnaphorBind, pronoun: LexWord, part:
   if (part === "x") {
     let anchor: Anchor | undefined;
     let filler: Filler | undefined;
-    if (pointerVowel === "e") {
+    if (pointerVowel === "o") {
       if (ctx.consequenceHere && open?.anchor) {
         pinPointer(ctx, bind, pronoun, part, undefined, open.anchor.predicate);
         return;
@@ -632,7 +632,7 @@ function bindContentPointer(ctx: Ctx, bind: AnaphorBind, pronoun: LexWord, part:
     } else {
       const filled = earlier.filter((item) => item.fillers.x);
       anchor = filled[0];
-      if (pointerVowel === "o" && anchor) {
+      if (pointerVowel === "a" && anchor) {
         const same = fillerKey(ctx, anchor.fillers.x!);
         anchor = filled.find((item) => fillerKey(ctx, item.fillers.x!) !== same);
       }
@@ -660,7 +660,7 @@ function bindPointer(ctx: Ctx, pronoun: LexWord): void {
   // The pointer follows whoever last filled that slot.
   let anchor: Anchor | undefined;
   let filler: Filler | undefined;
-  if (pointerVowel === "e") {
+  if (pointerVowel === "o") {
     anchor = open?.anchor;
     filler = anchor?.fillers[part];
     if (filler?.words.includes(pronoun)) {
@@ -672,7 +672,7 @@ function bindPointer(ctx: Ctx, pronoun: LexWord): void {
   } else {
     const filled = earlier.filter((item) => item.fillers[part]);
     anchor = filled[0];
-    if (pointerVowel === "o" && anchor) {
+    if (pointerVowel === "a" && anchor) {
       const same = fillerKey(ctx, anchor.fillers[part]!);
       anchor = filled.find((item) => fillerKey(ctx, item.fillers[part]!) !== same);
     }

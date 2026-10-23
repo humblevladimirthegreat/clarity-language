@@ -20,21 +20,21 @@ The ending says why you think the move is welcome. Use **-l** when the person in
 | `…them` | an unsolicited offer meant to serve the sake | *offered* | **-m** ≈ open offer |
 | `…ther` | a move worth trying, to see whether it serves the sake | *worth a try* | **-r** ≈ right now (a trial run) |
 
-A sake word with no `/b/` is about **your** sake, so advice for the other person's own good names them in a `bl-` word right after the sake word. In the same sentence, that is the [themself](pronouns.md#themself) pointer **`bwazer`**. The `/b/` says whose stake the act serves, not why they would do it.
+A sake word with no `/b/` is about **your** sake, so advice for the other person's own good names them in a `bl-` word right after the sake word. In the same sentence, that is the [themself](pronouns.md#themself) pointer **`bwuzor`**. The `/b/` says whose stake the act serves, not why they would do it.
 
-> `zuzozen vezuyel thawothem blwazer.`
+> `zuzozen vezuyel thawothem blwuzor.`
 >
 > z-Uzozen | v-tell | [th-relatedness-ought-offered | bl-←episode-agent.self]
 >
 > "Uzozen ought to talk; it would help them feel connected." (unasked advice)
 
-> `zahelan vezuyol thobathel blwazer.`
+> `zahelan vezuyol thobathel blwuzor.`
 >
 > z-Ahelan | v-sing | [th-physical-ought-invited | bl-←episode-agent.self]
 >
 > "Ahelan ought to sing; it's good for their health." (Ahelan asked for advice)
 
-> `zolazun vabuyel thawother blwazer.`
+> `zolazun vabuyel thawother blwuzor.`
 >
 > z-Olazun | v-bow | [th-relatedness-ought-trial | bl-←episode-agent.self]
 >
@@ -70,7 +70,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Ahelan ought to sit; it would help their health.* (unasked advice)
 
 ::: details Show answer
-`zahelan vuhohol thobathem blwazer.`
+`zahelan vuhohol thobathem blwuzor.`
 
 z-Ahelan | v-sit | [th-physical-ought-offered | bl-←episode-agent.self]
 :::
@@ -78,7 +78,7 @@ z-Ahelan | v-sit | [th-physical-ought-offered | bl-←episode-agent.self]
 **2.** *Ahelan ought to sing; it's good for their health.* (Ahelan asked for advice)
 
 ::: details Show answer
-`zahelan vezuyol thobathel blwazer.`
+`zahelan vezuyol thobathel blwuzor.`
 
 z-Ahelan | v-sing | [th-physical-ought-invited | bl-←episode-agent.self]
 :::
@@ -86,14 +86,14 @@ z-Ahelan | v-sing | [th-physical-ought-invited | bl-←episode-agent.self]
 **3.** *Olazun could try cooking, to see whether it's good for their health.*
 
 ::: details Show answer
-`zolazun vuguyel thobather blwazer.`
+`zolazun vuguyel thobather blwuzor.`
 
 z-Olazun | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zuzozen vezuyel thawothem blwazer.`
+**1.** `zuzozen vezuyel thawothem blwuzor.`
 
 ::: details Show answer
 z-Uzozen | v-tell | [th-relatedness-ought-offered | bl-←episode-agent.self]
@@ -101,7 +101,7 @@ z-Uzozen | v-tell | [th-relatedness-ought-offered | bl-←episode-agent.self]
 *Uzozen ought to talk; it would help them feel connected.* (unasked advice)
 :::
 
-**2.** `zolazun vezuyol thobathel blwazer.`
+**2.** `zolazun vezuyol thobathel blwuzor.`
 
 ::: details Show answer
 z-Olazun | v-sing | [th-physical-ought-invited | bl-←episode-agent.self]
@@ -109,7 +109,7 @@ z-Olazun | v-sing | [th-physical-ought-invited | bl-←episode-agent.self]
 *Olazun ought to sing; it's good for their health.* (Olazun asked for advice)
 :::
 
-**3.** `zolazun vuguyel thobather blwazer.`
+**3.** `zolazun vuguyel thobather blwuzor.`
 
 ::: details Show answer
 z-Olazun | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
@@ -119,10 +119,10 @@ z-Olazun | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Ahelan ought to sit; it would help their health.* (unasked advice) `zahelan vuhohol thobathem blwazer.` or `zahelan vuhohol thobathel blwazer.`
+**1.** *Ahelan ought to sit; it would help their health.* (unasked advice) `zahelan vuhohol thobathem blwuzor.` or `zahelan vuhohol thobathel blwuzor.`
 
 ::: details Show answer
-`zahelan vuhohol thobathem blwazer.`
+`zahelan vuhohol thobathem blwuzor.`
 
 z-Ahelan | v-sit | [th-physical-ought-offered | bl-←episode-agent.self]
 
@@ -134,10 +134,10 @@ z-Ahelan | v-sit | [th-physical-ought-offered | bl-←episode-agent.self]
 **1.** *Ahelan ought to sit; it would help their health.* (unasked advice) <!-- lint: error -->`zahelan vuhohol thobathem.`
 
 ::: details Show answer
-`zahelan vuhohol thobathem blwazer.`
+`zahelan vuhohol thobathem blwuzor.`
 
 z-Ahelan | v-sit | [th-physical-ought-offered | bl-←episode-agent.self]
 
-A sake word with no `/b/` is about **your** sake; **`blwazer`** names Ahelan's own.
+A sake word with no `/b/` is about **your** sake; **`blwuzor`** names Ahelan's own.
 :::
 

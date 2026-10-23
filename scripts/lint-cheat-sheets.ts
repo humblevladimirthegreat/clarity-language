@@ -24,6 +24,7 @@ import { spans, tables } from "../src/lint/cheat-sheet-tables.js";
 import { pageSections, type PageSections } from "../src/lint/learning-order.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
 import { listMarkdown } from "../src/markdown-files.js";
+import { cheatSheetSidebar, cheatSheetSlug } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { grammarFile, REPO_ROOT } from "../src/repo-paths.js";
 
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
@@ -206,6 +207,20 @@ function lintClaritish(): number {
     }
   }
   return lessons.length;
+}
+
+// ---------------------------------------------------------------- sidebar
+
+const sidebarSlugs = cheatSheetSidebar.map((item) => cheatSheetSlug(item.link));
+for (const id of Object.keys(SHEETS)) {
+  if (!sidebarSlugs.includes(id)) {
+    problems.push(`cheat-sheets: \`${id}\` is in SHEETS but missing from cheatSheetSidebar`);
+  }
+}
+for (const slug of sidebarSlugs) {
+  if (!SHEETS[slug]) {
+    problems.push(`cheat-sheets: \`${slug}\` is in cheatSheetSidebar but missing from SHEETS`);
+  }
 }
 
 // ---------------------------------------------------------------- main

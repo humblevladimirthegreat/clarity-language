@@ -156,7 +156,7 @@ describe("parse field keys", () => {
   });
 
   it("matches ability and sake stance, not th-scope", () => {
-    assert.deepEqual(raws("vuzunexel.", "xFamily=ability,stance=e"), ["vuzunexel"]);
+    assert.deepEqual(raws("vuzunexol.", "xFamily=ability,stance=o"), ["vuzunexol"]);
     const sake = `g${CLOSED.ballot}thal`;
     assert.deepEqual(raws(sake, "xFamily=sake,stance=a"), [sake]);
     const [scope] = sentence("guzozethul").words;
@@ -173,10 +173,10 @@ describe("parse field keys", () => {
   });
 
   it("matches pointer vowel and role scope", () => {
-    const [pointer] = sentence("dwahar").words;
+    const [pointer] = sentence("dwuher").words;
     assert.ok(pointer);
-    assert.ok(matchesTerm(pointer, parseTerm("xFamily=pointer,pointer=a")));
-    assert.ok(matchesTerm(pointer, parseTerm("scope=a")));
+    assert.ok(matchesTerm(pointer, parseTerm("xFamily=pointer,pointer=e")));
+    assert.ok(matchesTerm(pointer, parseTerm("scope=u")));
   });
 
   it("matches restrictor reading, not a join", () => {

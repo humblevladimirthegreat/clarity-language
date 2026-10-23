@@ -338,13 +338,13 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 >
 > "Uzozen must walk; it's the rule."
 
-> `zuzozen vezuyel thawothem blwazer.`
+> `zuzozen vezuyel thawothem blwuzor.`
 >
 > z-Uzozen | v-tell | [th-relatedness-ought-offered | bl-←episode-agent.self]
 >
 > "Uzozen should talk; it would help them feel connected." (unasked advice)
 
-> `zuzozen thawothem blwazer vezuyel vul.`
+> `zuzozen thawothem blwuzor vezuyel vul.`
 >
 > z-Uzozen | [th-relatedness-ought-offered | bl-←episode-agent.self] | [v-tell | v-not]
 >

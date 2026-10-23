@@ -234,8 +234,8 @@ describe("resume-aware markdown retie", () => {
 
   it("leaves role pointers alone", () => {
     const map = mapOf(["azawa", "ululo"]);
-    const { text } = rewriteMarkdown("`zazawan vawalal. zwazar vayul.`", map);
-    assert.equal(text, "`zululon vawalal. zwazar vayul.`");
+    const { text } = rewriteMarkdown("`zazawan vawalal. zwuzer vayul.`", map);
+    assert.equal(text, "`zululon vawalal. zwuzer vayul.`");
   });
 });
 

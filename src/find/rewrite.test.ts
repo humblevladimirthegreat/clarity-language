@@ -78,8 +78,8 @@ describe("spliceWord", () => {
   });
   it("splices role scope, pointer vowels, and ability stance", () => {
     assert.deepEqual(splice("zwozuduyel", "scope=o:e"), { kind: "changed", raw: "zwezuduyel" });
-    const pointer = maps("scope=a:u", "pointer=a:o,o:e,e:a");
-    assert.deepEqual(splice("dwahar", pointer), { kind: "changed", raw: "dwuhor" });
+    const pointer = maps("scope=a:u", "pointer=a:e,e:o,o:a");
+    assert.deepEqual(splice("dwahar", pointer), { kind: "changed", raw: "dwuher" });
     assert.deepEqual(splice("vuzunexel", "stance=e:o"), { kind: "changed", raw: "vuzunexol" });
   });
   it("splices landmark facing pair scope", () => {

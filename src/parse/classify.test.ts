@@ -138,13 +138,13 @@ describe("classify", () => {
   });
 
   it("ability on non-sake host compound", () => {
-    expectReading("vuhahaxel", "ability");
+    expectReading("vuhahaxol", "ability");
   });
 
   it("greeting bid on citation or /y/ vocative, not ability", () => {
     expectReading("uzozexan", "greeting");
     expectReading("yuzozexan", "greeting");
-    expectReading("yolazuxen", "greeting");
+    expectReading("yolazuxon", "greeting");
     expectReading("ahelaxun", "greeting");
   });
 

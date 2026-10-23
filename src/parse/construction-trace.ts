@@ -99,7 +99,7 @@ function featureConstructions(word: LexWord): string[] {
       if (family.scopeVowel) ids.push(`scope.vowel.${family.scopeVowel}`);
     }
     if (family.xFamily === "pointer") {
-      if (family.scopeVowel === "a") ids.push("pointer.scope.a");
+      if (family.scopeVowel === "u") ids.push("pointer.scope.u");
       if (family.part) ids.push(`pointer.part.${family.part}`);
       if (family.pointerVowel) ids.push(`pointer.vowel.${family.pointerVowel}`);
       if (word.ending === "l") ids.push("pointer.new");

@@ -133,7 +133,7 @@ A one-word name is an ordinary **-n** word (`denuron`), not a span.
 | [A loan verb](/spans#pos) | <code>zolazun v&lt;google&gt; duzozen.</code> | *Olazun googled Uzozen.* | B |
 | [A loan adjective](/spans#pos) | <code>zudozol g&lt;rouge&gt; vowurel.</code> | *A rouge dog walks.* | B |
 | [A quoted question](/span-mention#quote-acts) | `zuzozen d[yel zolazun vowurel] vezuyel.` | *Uzozen said, “Does Olazun walk?”* | I |
-| [Point back at a quote](/span-mention#span-noun) | `zolazun d[uzozen] vezuyel. zahelan dwadar varayel.` | *Olazun said “Uzozen.” Ahelan wrote that down.* | I |
+| [Point back at a quote](/span-mention#span-noun) | `zolazun d[uzozen] vezuyel. zahelan dwuder varayel.` | *Olazun said “Uzozen.” Ahelan wrote that down.* | I |
 | [Topic from a title](/span-mention#topic-quotes) | `x@[enuron olazun] dalon vezuyol.` | *Now, about Enuron Olazun: it is sung.* | I |
 | [An aside as a clause](/spans#asides) | `zuzozen vowurel th(zolazun vezuvol).` | *Uzozen walks (Olazun is asleep).* | B |
 | [An aside on a noun](/spans#asides) | `zuzozen g(zuzozer vowurel) vezuyol.` | *Uzozen, who walks, sings.* | B |

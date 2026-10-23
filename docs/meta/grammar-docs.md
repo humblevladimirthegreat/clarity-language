@@ -489,7 +489,7 @@ Grammar cheat sheets live in `docs/grammar/cheat-sheets/`, one printable page pe
 
 **Opting an owning table in.** Put `<!-- cheat-sheet: ID -->` on the line right before a table on a grammar page, where ID is the sheet's key in the lint's `SHEETS` map. Every form in that table must then be on the sheet. Mark tables that list a subsystem's forms in backticks; leave example-only tables unmarked. A change to a marked table updates its sheet in the same change.
 
-**Adding a sheet:** create it in `cheat-sheets/`, register it in `SHEETS`, add it to the sidebar, and mark its owning tables.
+**Adding a sheet:** create it in `cheat-sheets/`, register it in `SHEETS`, add a row to `cheatSheetSidebar` in [`reading-order.ts`](../grammar/.vitepress/lib/reading-order.ts) (the VitePress config imports it), and mark its owning tables.
 
 ## What belongs where
 <a id="what-belongs-where"></a>

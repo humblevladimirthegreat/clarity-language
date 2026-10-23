@@ -119,7 +119,7 @@ z-Uzozen | d-CITE[z-Olazun | v-write]# | v-tell
 *Uzozen said “Olazun writes…”*
 :::
 
-**4.** `zolazun d[abezum#] vezuyel. zahelan dwadar varayel.`
+**4.** `zolazun d[abezum#] vezuyel. zahelan dwuder varayel.`
 
 ::: details Show answer
 z-Olazun | d-CITE[flaw]# | v-tell . z-Ahelan | d-←episode-patient.same | v-write

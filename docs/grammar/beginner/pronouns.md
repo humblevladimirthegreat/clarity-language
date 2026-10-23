@@ -48,7 +48,9 @@ When nothing earlier matches, **-r** on a word from the lexicon means the one yo
 
 ### Role pointers {#role-pointers}
 
-A resume spells the whole stem again. For someone in a recent sentence, a **role pointer** is shorter: it names them by the part they played in an earlier event. Write the role letter for the slot you need now, then **`wa`**, then a **part consonant**: the role letter they had in that earlier event. Then a **pointer vowel** for which event, and **-r**.
+A resume spells the whole stem again. For someone in a recent sentence, a **role pointer** is shorter: it names them by the part they played in an earlier event. Write the role letter for the slot you need now, then **`wu`**, then a **part consonant**: the role letter they had in that earlier event. Then a **pointer vowel** for which event, and **-r**.
+
+The pointer vowel says how far the pointing reaches. Tags pick a label you chose; join vowels pick list type. Those jobs stay on their own words.
 
 | Part consonant | Part in the earlier event | Where it sat |
 |----------------|---------------------------|--------------|
@@ -56,11 +58,11 @@ A resume spells the whole stem again. For someone in a recent sentence, a **role
 | **`d`** | the one it happens to | `/d/` |
 | **`b`** | the extra party (*the one told*) | `/b/` |
 
-Pointer vowel **`a`** picks the latest sentence that had someone in that part. `zwazar` is *the latest doer*, as subject; `dwadar` is *the latest one something happened to*, as object. (cue: **a** ≈ again (the same one again); pointer vowels do not carry the add / pick / order / undo cues of the [act words](speech-moves.md#speech-act-beginner))
+Pointer vowel **`e`** picks the latest sentence that had someone in that part. `zwuzer` is *the latest doer*, as subject; `dwuder` is *the latest one something happened to*, as object. (cue: **e** ≈ the latest reach)
 
-The **`a`** after **`w`** is this episode: the latest act is enough. After the pointer vowel and the ending, the word ends.
+The **`u`** after **`w`** is this episode: the latest act is enough. After the pointer vowel and the ending, the word ends.
 
-> `zuzozen vowurel. zwazar vuhohol.`
+> `zuzozen vowurel. zwuzer vuhohol.`
 >
 > z-Uzozen | v-walk . z-←episode-agent.same | v-sit
 >
@@ -68,21 +70,21 @@ The **`a`** after **`w`** is this episode: the latest act is enough. After the p
 
 The role letter is the slot **now**, so a pointer can move someone to a new role. Here the one seen becomes the one who runs:
 
-> `zuzozen dolazun vawebol. zwadar varuvel.`
+> `zuzozen dolazun vawebol. zwuder varuvel.`
 >
 > z-Uzozen | d-Olazun | v-see . z-←episode-patient.same | v-run
 >
 > "Uzozen sees Olazun. They run." (Olazun)
 
-> `zuzozen vezuyel bolazun. zwabar varuvel.`
+> `zuzozen vezuyel bolazun. zwuber varuvel.`
 >
 > z-Uzozen | v-tell | b-Olazun . z-←episode-recipient.same | v-run
 >
 > "Uzozen talks to Olazun. They run." (Olazun)
 
-A sentence with nobody in that part does not count. *It rains* has no doer, so `zwazar` reaches past it:
+A sentence with nobody in that part does not count. *It rains* has no doer, so `zwuzer` reaches past it:
 
-> `zuzozen vowurel. verulal. zwazar vuhohol.`
+> `zuzozen vowurel. verulal. zwuzer vuhohol.`
 >
 > z-Uzozen | v-walk . v-rain . z-←episode-agent.same | v-sit
 >
@@ -92,53 +94,53 @@ A pointer looks back as far as it needs to: across turns and paragraphs, and thr
 
 A pointer takes associative **-x** like a name. If no earlier sentence has someone in that part, the pointer points at nothing, and the whole thing is not a sentence.
 
-### Themself (`e`) {#themself}
+### Themself (`o`) {#themself}
 
-English *herself* / *himself* / *themself* (a reflexive) point back to someone in the same sentence. Pointer vowel **`e`** does that: it picks **this** sentence’s own event, so a pointer in the object slot can name this sentence’s doer. (cue: **e** ≈ echo (this same sentence))
+English *herself* / *himself* / *themself* (a reflexive) point back to someone in the same sentence. Pointer vowel **`o`** does that: it picks **this** sentence’s own event, so a pointer in the object slot can name this sentence’s doer. (cue: **o** ≈ this same sentence)
 
-> `zuzozen vawebol dwazer.`
+> `zuzozen vawebol dwuzor.`
 >
 > z-Uzozen | v-see | d-←episode-agent.self
 >
 > "Uzozen sees themself."
 
-A pointer never names its own slot: `zwazer` as the subject would be the subject pointing at itself, so it is not a sentence.
+A pointer never names its own slot: `zwuzor` as the subject would be the subject pointing at itself, so it is not a sentence.
 
-### The other one (`o`) {#the-other-one}
+### The other one (`a`) {#the-other-one}
 
-English *the other one* skips the person you just mentioned. Pointer vowel **`o`** does the same: it skips whoever had that part last and picks the nearest earlier sentence with someone **else** in that part. (cue: **o** ≈ other)
+English *the other one* skips the person you just mentioned. Pointer vowel **`a`** does the same: it skips whoever had that part last and picks the nearest earlier sentence with someone **else** in that part. (cue: **a** ≈ a different reach)
 
-> `zuzozen vowurel. zolazun varuvel. zolazun vuhohol. zwazor vezuvol.`
+> `zuzozen vowurel. zolazun varuvel. zolazun vuhohol. zwuzar vezuvol.`
 >
 > z-Uzozen | v-walk . z-Olazun | v-run . z-Olazun | v-sit . z-←episode-agent.other | v-sleep
 >
 > "Uzozen walks. Olazun runs. Olazun sits. The other one sleeps." (Uzozen)
 
-Here `zwazar` would be Olazun, the latest doer.
+Here `zwuzer` would be Olazun, the latest doer.
 
-**`o`** goes with the three part consonants above: `zwazor`, `zwador`, `zwabor`.
+**`a`** goes with the three part consonants above: `zwuzar`, `zwudar`, `zwubar`.
 
 ### Whoever it was (`u`) {#whoever-it-was}
 
 Sometimes an earlier sentence has the event but never says who took part. *The cookie got eaten* has no doer, and naming one would be a guess. Pointer vowel **`u`** picks the latest sentence that left that part **unsaid** and points at whoever filled it, without saying who. English: *whoever did it*. (cue: **u** ≈ unsaid)
 
-> `dugedol vawebol. zwazur varuvel.`
+> `dugedol vawebol. zwuzur varuvel.`
 >
 > d-cookie | v-see . z-←episode-agent.unsaid | v-run
 >
 > "The cookie is seen. Whoever saw it runs."
 
-This is the **`a`** rule turned around: **`a`** skips a sentence with nobody in that part, and **`u`** looks for exactly that sentence. It does not ask whether the verb could have that part: *it rains* also leaves its doer unsaid, so `zwazur` right after it is *whatever made it rain*.
+This is the **`e`** rule turned around: **`e`** skips a sentence with nobody in that part, and **`u`** looks for exactly that sentence. It does not ask whether the verb could have that part: *it rains* also leaves its doer unsaid, so `zwuzur` right after it is *whatever made it rain*.
 
-Once used, `zwazur` fills the subject like any noun, so a later `zwazar` reaches it (*they*, still unnamed). **`u`** goes with the same three part consonants: `zwadur` is *whatever it happened to*, when no sentence said what.
+Once used, `zwuzur` fills the subject like any noun, so a later `zwuzer` reaches it (*they*, still unnamed). **`u`** goes with the same three part consonants: `zwudur` is *whatever it happened to*, when no sentence said what.
 
-**Compare with:** `umon` *someone* is tied to no event. `zwazur` is tied to one known event, *whoever did that*.
+**Compare with:** `umon` *someone* is tied to no event. `zwuzur` is tied to one known event, *whoever did that*.
 
 ### A new one (-l) {#a-new-one}
 
 A pointer with **-r** is the same one again. To say a **new** one of the same kind, English uses *one* (*Uzozen sees a cookie. Olazun sees **one** too.*), and the second cookie is a different cookie. Write the same pointer with **-l**, the ending of a first mention: a new thing, of the kind the pointer reaches.
 
-> `zuzozen dugedol vawebol. zolazun dwadal vawebol.`
+> `zuzozen dugedol vawebol. zolazun dwudel vawebol.`
 >
 > z-Uzozen | d-cookie | v-see . z-Olazun | d-←episode-patient.same.new | v-see
 >
@@ -146,7 +148,7 @@ A pointer with **-r** is the same one again. To say a **new** one of the same ki
 
 **-l** copies only the noun, never the words that described it, so you can change the description. After a red dog, the pointer is just *a dog*, and a `/ɡ/` word after it gives the new property, as in the next example. To keep the old property, say it again on a `/ɡ/` word after the pointer.
 
-> `zuzozen dudozol gerulel vawebol. zolazun dwadal gubulol vawebol.`
+> `zuzozen dudozol gerulel vawebol. zolazun dwudel gubulol vawebol.`
 >
 > z-Uzozen | [d-dog | g-red] | v-see . z-Olazun | [d-←episode-patient.same.new | g-black] | v-see
 >
@@ -154,35 +156,35 @@ A pointer with **-r** is the same one again. To say a **new** one of the same ki
 
 In a yes/no question, a pointer works like any other noun and keeps the same meaning:
 
-> `zuzozen dudozol gerulel vawebol. yel zolazun vawebol dwadal gubulol.`
+> `zuzozen dudozol gerulel vawebol. yel zolazun vawebol dwudel gubulol.`
 >
 > z-Uzozen | [d-dog | g-red] | v-see . y-question | z-Olazun | v-see | [d-←episode-patient.same.new | g-black]
 >
 > "Uzozen sees a red dog. Does Olazun see a black one?"
 
-**-l** takes pointer vowels **`a`**, **`e`** and **`o`**, and every part consonant: `zwazal` is another one like the latest doer. It has no reading with **`u`**, because an unsaid part has no kind to copy, and none after a special pronoun such as *I* or *you*. After a name, **-l** is a new thing that name applies to, and after a joined list it is a new group of the same make-up.
+**-l** takes pointer vowels **`e`**, **`a`** and **`o`**, and every part consonant: `zwuzel` is another one like the latest doer. It has no reading with **`u`**, because an unsaid part has no kind to copy, and none after a special pronoun such as *I* or *you*. After a name, **-l** is a new thing that name applies to, and after a joined list it is a new group of the same make-up.
 
-**Compare with:** **-r** is the same one (`dwadar`); **-l** is another (`dwadal`). Writing the noun out (`dugedol`) says the same as `dwadal`, and the pointer only saves repeating it.
+**Compare with:** **-r** is the same one (`dwuder`); **-l** is another (`dwudel`). Writing the noun out (`dugedol`) says the same as `dwudel`, and the pointer only saves repeating it.
 
 ### Share (-m) {#share}
 
 English often blurs *what they did* with *who they are*. A pointer with **-m** (a **share**) names the participant's **part** in the event, not the participant. That lets you talk about an act, to praise or criticize it, without making it a claim about the person.
 
-> `zuzozen dolazun vanuvul. zahelan dwazar vawebol.`
+> `zuzozen dolazun vanuvul. zahelan dwuzer vawebol.`
 >
 > z-Uzozen | d-Olazun | v-punch . z-Ahelan | d-←episode-agent.same | v-see
 >
 > "Uzozen punches Olazun. Ahelan sees them." (Uzozen)
 
-> `zuzozen dolazun vanuvul. zahelan dwazam vawebol.`
+> `zuzozen dolazun vanuvul. zahelan dwuzem vawebol.`
 >
 > z-Uzozen | d-Olazun | v-punch . z-Ahelan | d-←episode-agent.same.part | v-see
 >
 > "Uzozen punches Olazun. Ahelan sees what they did." (Uzozen's punch, not Uzozen)
 
-Each part consonant names a different part: `zwazam` is the doing, `zwadam` what it was for the one it happened to, and `zwabam` what reached the one told. Pointer vowels **`a`**, **`o`** and **`u`** work as before (`zwazom` *what the other one did*; `zwazum` *what was done, by whoever*). **`e`** and **-x** have no reading with **-m**: a share cannot be part of the very event being described (**`e`**), and it is not a group of people (**-x**).
+Each part consonant names a different part: `zwuzem` is the doing, `zwudem` what it was for the one it happened to, and `zwubem` what reached the one told. Pointer vowels **`e`**, **`a`** and **`u`** work as before (`zwuzam` *what the other one did*; `zwuzum` *what was done, by whoever*). **`o`** and **-x** have no reading with **-m**: a share cannot be part of the very event being described (**`o`**), and it is not a group of people (**-x**).
 
-**Compare with:** a resumed event noun names the whole event with everyone in it (*that punch*); `zwazam` names one person's part of it. `zwazar` is the person.
+**Compare with:** a resumed event noun names the whole event with everyone in it (*that punch*); `zwuzem` names one person's part of it. `zwuzer` is the person.
 
 ### Special pronouns {#special-pronouns}
 
@@ -281,7 +283,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Uzozen drinks. They cook.*
 
 ::: details Show answer
-`zuzozen vodudal. zwazar vuguyel.`
+`zuzozen vodudal. zwuzer vuguyel.`
 
 z-Uzozen | v-drink . z-←episode-agent.same | v-cook
 
@@ -295,7 +297,7 @@ z-Uzozen | v-drink . z-←episode-agent.same | v-cook
 
 z-Olazun | d-knife | v-find . z-Ahelan | d-←knife | v-see
 
-**Also correct:** `zolazun danewul vumewol. zahelan dwadar vawebol.`
+**Also correct:** `zolazun danewul vumewol. zahelan dwuder vawebol.`
 :::
 
 **3.** *I see you.*
@@ -309,7 +311,7 @@ z-speaker | d-listener | v-see
 **4.** *Someone punches Ahelan. They scream.* (Ahelan)
 
 ::: details Show answer
-`zumon dahelan vanuvul. zwadar varemul.`
+`zumon dahelan vanuvul. zwuder varemul.`
 
 z-someone | d-Ahelan | v-punch . z-←episode-patient.same | v-scream
 
@@ -319,7 +321,7 @@ z-someone | d-Ahelan | v-punch . z-←episode-patient.same | v-scream
 **5.** *Uzozen sees a cookie. Olazun finds one.*
 
 ::: details Show answer
-`zuzozen dugedol vawebol. zolazun dwadal vumewol.`
+`zuzozen dugedol vawebol. zolazun dwudel vumewol.`
 
 z-Uzozen | d-cookie | v-see . z-Olazun | d-←episode-patient.same.new | v-find
 :::
@@ -334,7 +336,7 @@ z-interlocutors | v-cook
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zahelan vuguyel. zolazun vodudal. zwazor varemul.`
+**1.** `zahelan vuguyel. zolazun vodudal. zwuzar varemul.`
 
 ::: details Show answer
 z-Ahelan | v-cook . z-Olazun | v-drink . z-←episode-agent.other | v-scream
@@ -342,7 +344,7 @@ z-Ahelan | v-cook . z-Olazun | v-drink . z-←episode-agent.other | v-scream
 *Ahelan cooks. Olazun drinks. The other one screams.* (Ahelan)
 :::
 
-**2.** `dugedol vumewol. zwazur varemul.`
+**2.** `dugedol vumewol. zwuzur varemul.`
 
 ::: details Show answer
 d-cookie | v-find . z-←episode-agent.unsaid | v-scream
@@ -350,7 +352,7 @@ d-cookie | v-find . z-←episode-agent.unsaid | v-scream
 *The cookie is found. Whoever found it screams.*
 :::
 
-**3.** `zolazun duzozen vanuvul. zahelan dwazam vawebol.`
+**3.** `zolazun duzozen vanuvul. zahelan dwuzem vawebol.`
 
 ::: details Show answer
 z-Olazun | d-Uzozen | v-punch . z-Ahelan | d-←episode-agent.same.part | v-see
@@ -366,7 +368,7 @@ z-ONE | v-scream
 *One screams.* / *People scream.*
 :::
 
-**5.** `zuzozen vawebol dwazer.`
+**5.** `zuzozen vawebol dwuzor.`
 
 ::: details Show answer
 z-Uzozen | v-see | d-←episode-agent.self
@@ -374,7 +376,7 @@ z-Uzozen | v-see | d-←episode-agent.self
 *Uzozen sees themself.*
 :::
 
-**6.** `zuzozen vezuyel bahelan. zwabar dugedol vuguyel.`
+**6.** `zuzozen vezuyel bahelan. zwuber dugedol vuguyel.`
 
 ::: details Show answer
 z-Uzozen | v-tell | b-Ahelan . z-←episode-recipient.same | d-cookie | v-cook
@@ -384,24 +386,24 @@ z-Uzozen | v-tell | b-Ahelan . z-←episode-recipient.same | d-cookie | v-cook
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Uzozen sees Olazun. They scream.* (Olazun) `zuzozen dolazun vawebol. zwadar varemul.` or `zuzozen dolazun vawebol. zwazar varemul.`
+**1.** *Uzozen sees Olazun. They scream.* (Olazun) `zuzozen dolazun vawebol. zwuder varemul.` or `zuzozen dolazun vawebol. zwuzer varemul.`
 
 ::: details Show answer
-`zuzozen dolazun vawebol. zwadar varemul.`
+`zuzozen dolazun vawebol. zwuder varemul.`
 
 z-Uzozen | d-Olazun | v-see . z-←episode-patient.same | v-scream
 
-Olazun was the one seen, part **`d`**; `zwazar` is the doer, Uzozen.
+Olazun was the one seen, part **`d`**; `zwuzer` is the doer, Uzozen.
 :::
 
-**2.** *Uzozen talks to Olazun. Ahelan sees them.* (Olazun) `zuzozen vezuyel bolazun. zahelan dwabar vawebol.` or `zuzozen vezuyel bolazun. zahelan dwazar vawebol.`
+**2.** *Uzozen talks to Olazun. Ahelan sees them.* (Olazun) `zuzozen vezuyel bolazun. zahelan dwuber vawebol.` or `zuzozen vezuyel bolazun. zahelan dwuzer vawebol.`
 
 ::: details Show answer
-`zuzozen vezuyel bolazun. zahelan dwabar vawebol.`
+`zuzozen vezuyel bolazun. zahelan dwuber vawebol.`
 
 z-Uzozen | v-tell | b-Olazun . z-Ahelan | d-←episode-recipient.same | v-see
 
-Olazun was the one told, part **`b`**; `dwazar` is the doer, Uzozen.
+Olazun was the one told, part **`b`**; `dwuzer` is the doer, Uzozen.
 :::
 
 #### Fix it {#beginner-fix-it}

@@ -286,8 +286,8 @@ English *biased* says a view may be bent by what the holder wants from it. Agebo
 | English | Agebon | Reading |
 |---------|--------|---------|
 | *I may be biased* | `zuwon thomam vevemol thudathom.` | I may think this for a stake of my own |
-| *biased* (someone else) | `zuzozen vevemol thudathom blwazer.` | as you see it, Uzozen's view serves a stake of their own |
-| *bias* (the noun, *Uzozen's bias*) | `zuzozen vevemol thudathom blwazer.` | the view held for a stake; [point back](/dependents#which-noun) to it to name it |
+| *biased* (someone else) | `zuzozen vevemol thudathom blwuzor.` | as you see it, Uzozen's view serves a stake of their own |
+| *bias* (the noun, *Uzozen's bias*) | `zuzozen vevemol thudathom blwuzor.` | the view held for a stake; [point back](/dependents#which-noun) to it to name it |
 | *I'd like to believe* / *wishful thinking* | `zuwon thalem vevemol darl zolazun vowurel.` | I want to think that Olazun walks |
 | *overconfident* | `zuwon theyem zol gugowem.` | surer than the clues warrant |
 | *underconfident* | `zuzozen theyem zuol gugowem.` | less sure than the clues warrant |

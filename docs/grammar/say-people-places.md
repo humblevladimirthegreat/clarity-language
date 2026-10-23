@@ -531,7 +531,7 @@ An English noun like *case* or *board* covers several jobs, and Agebon has a dif
 | *campaign* | `zuzozen vavuvum herem blenulul.` | struggles during a period |
 | *behavior* | `zezobam` | the activity, or a manner adverb |
 | *population* | `zeyolx gaham blahal` | people of the country |
-| *reference* (point back) | `dwadar` | a role pointer to the last thing done to |
+| *reference* (point back) | `dwuder` | a role pointer to the last thing done to |
 | *principle* | `zonam` | a policy |
 | *furniture* | `zuhohol zobahol zam` | chair, bed, and maybe more |
 | *emotion* / *feeling* (in general) | `zabolohalal` | the water of the heart |

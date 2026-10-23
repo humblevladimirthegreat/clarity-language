@@ -136,7 +136,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("alexalowen", "wish-x-guidance");
     expectLine("yunoduxozalan", "y-Unodu-x-Ozalan");
     expectLine("zuzedoxugudaxududan", "z-Uzedo-x-Uguda-x-Ududan");
-    expectLine("vowurexel", "v-walk-unable-temporary");
+    expectLine("vowurexol", "v-walk-unable-temporary");
     expectLine("thuwathem", "th-competence-ought-offered");
     expectLine("zwuzezuyer", "z-episode-agent-speech");
     expectLine("zwuzavuvul", "z-episode-agent-fight");
@@ -207,7 +207,7 @@ describe("morphGlossLine — glosses.md single words", () => {
   it("worked single-words table", () => {
     expectLine("yewuyal", "y-greeting");
     expectLine("uzozen.", "Uzozen");
-    expectLine("yolazuxen", "y-Olazun-minutes");
+    expectLine("yolazuxon", "y-Olazun-minutes");
     expectLine("yaol", "y-yes");
     expectLine("yel", "y-question");
     expectLine("zawan", "z-listener");
@@ -231,7 +231,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("dorl", "d-to-clause");
     expectLine("durl", "d-lest-clause");
     expectLine("darm", "d-that-clause.open");
-    expectLine("hodaxel", "h-ABIL-unable-temporary");
+    expectLine("hodaxol", "h-ABIL-unable-temporary");
   });
 
   it("lexicon senses use packed role English when present", () => {
@@ -270,7 +270,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("ability + value motive", () => {
     expectLine(
-      "yuol zuwon vowurexel thuwathom.",
+      "yuol zuwon vowurexol thuwathom.",
       "y-no | z-speaker | v-walk-unable-temporary | th-competence-motive-any-term",
     );
   });
@@ -283,7 +283,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
   });
 
   it("literal key is not ideation solution", () => {
-    expectLine("zogewel wodaxel.", "z-key | w-ABIL-unable-temporary");
+    expectLine("zogewel wodaxol.", "z-key | w-ABIL-unable-temporary");
   });
 
   it("inclusive we", () => {
@@ -556,11 +556,11 @@ describe("compareMorphGloss", () => {
   });
 
   it("role pointers gloss their role and event, not the referent", () => {
-    expectLine("zuzozen vowurel. zwazar vuhohol", "z-Uzozen | v-walk . z-←episode-agent.same | v-sit");
-    expectLine("zuzozen vawebol dwazer", "z-Uzozen | v-see | d-←episode-agent.self");
-    expectLine("zuzozen zolazun zal vowurel. zwazarx vuhohol", "[z-Uzozen | z-Olazun | z-and] | v-walk . z-←episode-agent.same-x | v-sit");
-    expectLine("zuzozen vowurel. dwahar vawebol", "z-Uzozen | v-walk . d-←episode-manner.same | v-see");
-    expectLine("zuzozen vowurel. dwavar vawebol", "z-Uzozen | v-walk . d-←episode-event.same | v-see");
+    expectLine("zuzozen vowurel. zwuzer vuhohol", "z-Uzozen | v-walk . z-←episode-agent.same | v-sit");
+    expectLine("zuzozen vawebol dwuzor", "z-Uzozen | v-see | d-←episode-agent.self");
+    expectLine("zuzozen zolazun zal vowurel. zwuzerx vuhohol", "[z-Uzozen | z-Olazun | z-and] | v-walk . z-←episode-agent.same-x | v-sit");
+    expectLine("zuzozen vowurel. dwuher vawebol", "z-Uzozen | v-walk . d-←episode-manner.same | v-see");
+    expectLine("zuzozen vowurel. dwuver vawebol", "z-Uzozen | v-walk . d-←episode-event.same | v-see");
     expectLine("dwahowurel", "d-type-manner-walk");
   });
 

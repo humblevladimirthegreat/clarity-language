@@ -657,10 +657,10 @@ xWord
   / NumericPrefix
   / OrdinaryCompound
 
-// Role pointer: `w` + label scope + part consonant + pointer vowel + **-r** / **-l** / **-m** (`zwazar`, `dwadal`,
-// `dwazam`; pronouns.md#role-pointers). The pointer vowel picks the event: `a` same, `o` other, `e` self, `u` unsaid.
+// Role pointer: `w` + label scope + part consonant + pointer vowel + **-r** / **-l** / **-m** (`zwuzer`, `dwudel`,
+// `dwuzem`; pronouns.md#role-pointers). The pointer vowel picks the event: `e` same, `a` other, `o` self, `u` unsaid.
 // **-r** names the participant or quality, **-l** a new one of its kind, **-m** its part in the event. Then the word
-// ends; a compound's stem goes on (`zwazar` against `zwazarayel`). Content parts (`h` `g` `th` `w` `y` `x` `v`)
+// ends; a compound's stem goes on (`zwuzer` against `zwuzerayel`). Content parts (`h` `g` `th` `w` `y` `x` `v`)
 // follow the same shape (roles.md#content-of-the-event); `v` is pointers only.
 RolePointer
   = "w" scope:SeamVowel part:RolePart pointerV:[aeou] end:[rlm] plural:PluralSuffix? WordEnd {

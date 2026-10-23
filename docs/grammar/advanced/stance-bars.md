@@ -116,7 +116,7 @@ To rank one kind against another, keep one kind as the item and put the other in
 
 A CLUES or PATTERN bar can also take [`blarl`](/evidentiality#evidence-clause): the next sentence is the grounds you worked the bar out from.
 
-**Ability.** The ability word [`oda`](/can-and-cant#ability-fallback) as the bar is the limit of **what can be done**. A tie against **`hodaxal`** is *as … as possible*. The ability vowel says how fixed that limit is, so rank **`zol`** against **`hodaxel`** is *more than can be done for now*, and against **`hodaxul`** *more than could ever be done*.
+**Ability.** The ability word [`oda`](/can-and-cant#ability-fallback) as the bar is the limit of **what can be done**. A tie against **`hodaxal`** is *as … as possible*. The ability vowel says how fixed that limit is, so rank **`zol`** against **`hodaxol`** is *more than can be done for now*, and against **`hodaxul`** *more than could ever be done*.
 
 > `zolazun hodaxal zoel hedurem vowurel.`
 >

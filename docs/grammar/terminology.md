@@ -14,7 +14,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 
 | Label | Gloss | Example | Teach |
 |-------|-------|---------|-------|
-| **ABIL** | Hostless *can* / *can’t* (no single verb) | `hodaxel` | [Can and can't](/can-and-cant#ability-fallback) |
+| **ABIL** | Hostless *can* / *can’t* (no single verb) | `hodaxol` | [Can and can't](/can-and-cant#ability-fallback) |
 | **AIMED** | Emotion locus: aimed at a target | `wawothumel` | [Feelings and permission](/feelings-permission#emotion-compose) |
 | **ASIDE** | An aside span | `th(hogowul)` | [Spans](/spans#asides) |
 | **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwuvam` | [Feelings and permission](/feelings-permission#say-words) |
@@ -152,7 +152,7 @@ A parenthetical comment span (`th(…)` on the sentence; `g(…)`, `w(…)`, or 
 
 ### Associative
 
-**-x** = named **anchor plus associates**. On a kind word (**-lx**) or a join **-r** (`zarx`), an indefinite group.
+**-x** = named **anchor plus associates**. On a kind word (**-lx**) or a resume (**-rx**), an indefinite group.
 
 [Plurality](/plurality#associative)
 
@@ -267,7 +267,7 @@ Polar patterns that confirm a denied body.
 
 ### Content of the event
 
-A role word whose part consonant names a quality of the event (`dwuhowurel` *a way of walking*, `dwahar` *the way it was done*), not a person in it.
+A role word whose part consonant names a quality of the event (`dwuhowurel` *a way of walking*, `dwuher` *the way it was done*), not a person in it.
 
 [Viewpoint and landmark](/viewpoint#content-of-the-event)
 
@@ -757,7 +757,7 @@ Role letter + **`w`** + scope vowel + part consonant + stem (`zwuzuduyel`). The 
 
 ### Role pointer
 
-Role letter + **`w`** + scope vowel + part consonant + pointer vowel + ending (`zwazar`): a participant of an earlier event (**`a`** the latest one with that role, **`o`** the other one, **`u`** the one the event left unsaid) or of this sentence (**`e`**, a reflexive). **-r** names the participant, **-l** a new one of the same kind (`zwazal`), and **-m** the participant’s part in the event (`zwazam`).
+Role letter + **`w`** + scope vowel + part consonant + pointer vowel + ending (`zwuzer`): a participant of an earlier event (**`e`** the latest one with that role, **`a`** the other one, **`u`** the one the event left unsaid) or of this sentence (**`o`**, a reflexive). **-r** names the participant, **-l** a new one of the same kind (`zwuzel`), and **-m** the participant’s part in the event (`zwuzem`).
 
 [Pronouns](/pronouns#role-pointers) · [Role compounds](/roles#role-pointers-family)
 

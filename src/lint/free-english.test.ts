@@ -102,7 +102,7 @@ describe("noteFindings", () => {
   });
 
   it("flags forms, labels, and grammar terms", () => {
-    assert.deepEqual(kinds("`zwazar` would be Olazun"), ["note-form"]);
+    assert.deepEqual(kinds("`zwuzer` would be Olazun"), ["note-form"]);
     assert.deepEqual(kinds("/w/ does not retarget it"), ["note-form"]);
     assert.deepEqual(kinds("PATTERN is the baseline"), ["note-label"]);
     assert.deepEqual(kinds("mirative with an Uzozen holder"), ["note-term", "note-term"]);

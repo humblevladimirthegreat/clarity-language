@@ -14,7 +14,7 @@ Agebon is not therapy, and its effects are a design intent, not a proven result.
 
 Here is a common ruminating thought in English: *I failed. I'm no good at this, and I never will be.* English lets you say all of that without checking any of it. Here is how the same thought might come out in Agebon:
 
-> `zuguvem thabor guwathum. zuwon veverexom.`
+> `zuguvem thabor guwathum. zuwon veverexem.`
 >
 > /zʉ.ɡʉ.ve̞m ðä.bo̞ɹ ɡʉ.wä.ðʉm. zʉ.wo̞n ve̞.ve̞.ɹe̞.ʒo̞m/
 >
@@ -26,7 +26,7 @@ That is five words, and three of them make you choose something English lets you
 
 - `thabor` says how you know: a gut sense, and only a faint one. Other words say you saw it, remember it, worked it out from clues, or were told, and other endings say the hunch is strong. Said once, it covers the next sentence too ([evidentiality](/evidentiality#evidentiality)).
 - `guwathum` names what the failure costs: competence, one of the [sakes](/sakes) (things that are good for a person). Its ending says the cost can change with effort or circumstance; other endings say it is lasting, or only for now. Other sakes, such as relatedness or purpose, name a different cost, and swapping the *unmet* vowel for the *met* one names a gain instead. The sake word also makes the failure yours, with no separate word for *my*.
-- `veverexom` is *can't succeed*, but only *yet*: it may still change. Other vowels say *right now* (you usually can) or *never* ([ability](/can-and-cant#ability)).
+- `veverexem` is *can't succeed*, but only *yet*: it may still change. Other vowels say *right now* (you usually can) or *never* ([ability](/can-and-cant#ability)).
 
 Agebon does not force the gentler answer. You can still say *I can never succeed* (`zuwon veverexum.`), call the hunch strong, or call the cost lasting, and sometimes that is true. But English *I'll never be good at this* does not ask how you know or how lasting it is, so the harsh version slips by unchecked. In Agebon you cannot say *can't* without choosing among *right now*, *yet*, and *never*, and that one moment of choosing is often enough to notice that *yet* is the honest answer.
 

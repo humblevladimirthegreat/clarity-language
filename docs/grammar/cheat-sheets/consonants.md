@@ -113,7 +113,7 @@ l m r n
 
 | Relation | Pair | Stage |
 |----------|------|-------|
-| **is** the same job | tag **-m** is pointer [share](/pronouns#share) (`zwazam` by role, [`zwam`](/tag-pronouns#tag-pronouns) by who) | B / I |
+| **is** the same job | tag **-m** is pointer [share](/pronouns#share) (`zwuzem` by role, [`zwam`](/tag-pronouns#tag-pronouns) by who) | B / I |
 | **is** | hook closed / open is [join](/joins#join-type-vowel-series) closed / open | B |
 | **is** | [fill-ask](/questions#fill-ask-r) is join **-r** under a question; digitless [`grar`](/number-markers#number-endings) is join **-r** | B / I |
 | **is** | [polar](/polar-inventory#polar-endings) is the [act ending](/firm-soft#speech-act) | B / I |

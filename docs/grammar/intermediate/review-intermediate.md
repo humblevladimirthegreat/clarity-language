@@ -201,7 +201,7 @@ z-Uzozen | [d-knife-x | g-three] | v-see . z-Ahelan | [d-cookie-x | g-←three] 
 **Rule:** [Number endings](number-markers.md#number-endings)
 :::
 
-**5.** `SELFxen. olazuxan.`
+**5.** `SELFxon. olazuxan.`
 
 ::: details Show answer
 SELF-minutes . Olazun-presence

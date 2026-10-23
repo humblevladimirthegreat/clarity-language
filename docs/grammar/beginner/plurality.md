@@ -29,7 +29,7 @@ To point back to that group (or to a prior person **and** their associates), add
 
 A [role pointer](pronouns.md#role-pointers) takes **-x** the same way: that one and associates, or the whole group when the earlier slot held a joined list.
 
-> `zuzozen vowurel. zwazarx vuhohol.`
+> `zuzozen vowurel. zwuzerx vuhohol.`
 >
 > z-Uzozen | v-walk . z-←episode-agent.same-x | v-sit
 >
@@ -209,7 +209,7 @@ z-interlocutors-x | d-sandwich | v-see
 **5.** *Uzozen drinks wine. They sit.* (Uzozen and associates)
 
 ::: details Show answer
-`zuzozen dawudal vodudal. zwazarx vuhohol.`
+`zuzozen dawudal vodudal. zwuzerx vuhohol.`
 
 z-Uzozen | d-wine | v-drink . z-←episode-agent.same-x | v-sit
 

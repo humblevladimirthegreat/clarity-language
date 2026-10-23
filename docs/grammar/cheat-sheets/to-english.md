@@ -19,7 +19,7 @@ Words made from an ordinary root and an ending (`zudozol` *a dog*) are not here:
 | role letter + vowel(s) + ending, no root | [join](/joins) | `zal`, `vul` | B |
 | `y` + vowel + ending, no root | [speech act](/firm-soft#speech-act) | `yal` | B |
 | role letter + vowel + **-rn** | [stand-in word](/stand-in-roles#stand-in-roles) | `darn` *a statement* | I |
-| role letter + `w` + vowel + part + vowel + ending | [role pointer](/pronouns#role-pointers) | `zwazar` *the latest doer* | B |
+| role letter + `w` + vowel + part + vowel + ending | [role pointer](/pronouns#role-pointers) | `zwuzer` *the latest doer* | B |
 | role letter + `w` + vowel + ending | [tag](/tag-pronouns#tag-pronouns) | `zwar` *A* | I |
 | a name's root + **-r** | [resume](/pronouns#resume-r) | `zuzozer` *Uzozen again* | B |
 

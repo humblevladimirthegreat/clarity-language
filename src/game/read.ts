@@ -22,7 +22,7 @@ function nounRef(word: LexWord, adjs: LexWord[], gaps: Set<LexWord>): NounRef | 
   if (word.plural) return `a group (${word.raw})`;
   if (word.family.kind === "x" && word.family.xFamily === "pointer") {
     const role = POINTER_ROLES[word.family.part ?? ""];
-    if (!role || word.family.scopeVowel !== "a" || word.family.pointerVowel !== "a" || word.ending !== "r") return `this role pointer (${word.raw})`;
+    if (!role || word.family.scopeVowel !== "u" || word.family.pointerVowel !== "e" || word.ending !== "r") return `this role pointer (${word.raw})`;
     return { kind: "pointer", word, role };
   }
   if (word.family.kind === "content" && word.family.roots.length > 1) return `a compound word (${word.raw})`;

@@ -46,7 +46,7 @@ Polar answers stack two of these vowels. Beginner *yes* / *no* / *sure*: [polar 
 | [Hook resume, front](/discourse-hooks#hook-resume) | `ar` *Going back to that* | `er` *Anyway* | `or` *As I said* | `ur` *Never mind that* | I |
 | [Number marker](/number-markers#marker-vowel-referential-identity) | `+` count | `#` ordinal | `_` digit string | `-` negative | I |
 | [Restrictor](/restrictors) | `hal` *only when* / *never* | `her` *anytime* | | `hur` *some other time*; `hual` *always* | B |
-| [Conversation length](/compound-families#conversation-length) | `SELFxan` open-ended | `SELFxon` one slot | `SELFxen` a few minutes | `SELFxun` passing | I |
+| [Conversation length](/compound-families#conversation-length) | `SELFxan` open-ended | `SELFxon` a few minutes | `SELFxen` one slot | `SELFxun` passing | I |
 | [Comparative](/comparatives#comparatives) / [equative](/comparatives#equatives) | | `zoel` *as … as* | `zol` *more … than* | | B |
 | [Sake stance](/sakes#word-shape) | `tha` met / serves | | | `thu` unmet / detracts | B |
 | [Root job](/root-tails#root-tails) | holds or gathers | one whole thing | order, path, sequence | takes away | A |
@@ -121,8 +121,8 @@ These use the same letters, not the add / one / order / undo map.
 
 | Job | **a** | **o** | **e** | **u** | Stage |
 |-----|-------|-------|-------|-------|-------|
-| [Pointer](/pronouns#role-pointers) | latest with that part (`zwazar`) | [the other one](/pronouns#the-other-one) (`zwazor`) | [this sentence](/pronouns#themself) (`dwazer`) | [left unsaid](/pronouns#whoever-it-was) (`zwazur`) | B |
+| [Pointer](/pronouns#role-pointers) | [the other one](/pronouns#the-other-one) (`zwuzar`) | [this sentence](/pronouns#themself) (`dwuzor`) | latest with that part (`zwuzer`) | [left unsaid](/pronouns#whoever-it-was) (`zwuzur`) | B |
 | [Tag](/tag-pronouns#tag-pronouns) | tag A (`zwar`) | tag O | tag E | tag U | I |
 | [Pitch](/phonology#vowel-pitch) | low | mid-low | mid-high | high | B |
 
-Pitch adds no meaning. Pointer vowels are taught as *again* / *other* / *echo* / *unsaid*, not as the series.
+Pitch adds no meaning. Pointer vowels say how far the pointing reaches, not list type.

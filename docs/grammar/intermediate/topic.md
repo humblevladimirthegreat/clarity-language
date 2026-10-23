@@ -55,7 +55,7 @@ A thing works as a topic the same way:
 >
 > "Now, about a dog: Uzozen sees it. It runs. Uzozen sits."
 
-With Uzozen as the topic, *Uzozen sees themself* is `xuzozen zalon vawebol dalon.` (`dwazer` still works), and *Uzozen's dog walks* is `xuzozen zudozol om balon vowurel.`: *the topic's* is the same in every role.
+With Uzozen as the topic, *Uzozen sees themself* is `xuzozen zalon vawebol dalon.` (`dwuzor` still works), and *Uzozen's dog walks* is `xuzozen zudozol om balon vowurel.`: *the topic's* is the same in every role.
 
 A dropped subject is never read as the topic. `xuzozen dolazun vawebol.` leaves out who sees; it does not say Uzozen sees. Write `zalon` whenever the topic is the doer (and `dalon` or `balon` in the other roles).
 
@@ -87,7 +87,7 @@ Introduce, return, and clear each start a new **topic stretch**.
 
 | State | Resets? | Why |
 |-------|---------|-----|
-| [Role pointer](/pronouns#role-pointers) anchors | yes | `zwazar` *the latest doer* and `zwazor` *the other one* never reach into an earlier stretch. Someone from before is picked up by name or whole-stem **-r**. |
+| [Role pointer](/pronouns#role-pointers) anchors | yes | `zwuzer` *the latest doer* and `zwuzar` *the other one* never reach into an earlier stretch. Someone from before is picked up by name or whole-stem **-r**. |
 | Whole-stem **-r** | no | It is the explicit way back (`xuzozer`), so it reaches across stretches. |
 | [Tags](tag-pronouns.md#tag-pronouns) | no | A tag is assigned on purpose, so distance does not blur it, and placeholder reasoning often runs through a side topic. |
 | Agenda numbering (`x#N`, outline depth) | no | Agenda items sit above topics; one item may hold several. |

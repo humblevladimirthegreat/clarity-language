@@ -69,15 +69,15 @@ A marker before a topic span works the same way:
 
 ### A span is an ordinary noun {#span-noun}
 
-A span fills a role like any noun, so a [role pointer](/pronouns#role-pointers) for that role can point back to it. After a cite, `dwadar` is *that quote*: the latest thing done to.
+A span fills a role like any noun, so a [role pointer](/pronouns#role-pointers) for that role can point back to it. After a cite, `dwuder` is *that quote*: the latest thing done to.
 
-> `zolazun d[uzozen] vezuyel. zahelan dwadar varayel.`
+> `zolazun d[uzozen] vezuyel. zahelan dwuder varayel.`
 >
 > z-Olazun | d-CITE[Uzozen] | v-tell . z-Ahelan | d-←episode-patient.same | v-write
 >
 > "Olazun said “Uzozen.” Ahelan wrote that down."
 
-The same holds for a loan word or any other span, and `dwadal` is [another one](/pronouns#a-new-one) of what the span holds.
+The same holds for a loan word or any other span, and `dwudel` is [another one](/pronouns#a-new-one) of what the span holds.
 
 An aside gives role pointers nothing to point back to. A [tag](tag-pronouns.md#tag-pronouns) assigned inside a cite or an aside does not hold outside it, and a pointer outside never reaches a word inside one.
 
@@ -264,7 +264,7 @@ z-Olazun | d-CITE[z-Uzozen | v-attest] | v-tell
 **2.** *Olazun said “Uzozen.” Ahelan wrote that down.* (*that* is the quote)
 
 ::: details Show answer
-`zolazun d[uzozen] vezuyel. zahelan dwadar varayel.`
+`zolazun d[uzozen] vezuyel. zahelan dwuder varayel.`
 
 z-Olazun | d-CITE[Uzozen] | v-tell . z-Ahelan | d-←episode-patient.same | v-write
 :::

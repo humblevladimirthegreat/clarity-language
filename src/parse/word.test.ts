@@ -276,15 +276,15 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.equal(word.family.kind, "number");
   });
 
-  it("parses vuzunexel as ability (intention.md § Ability)", () => {
-    const word = parseOk("vuzunexel");
+  it("parses vuzunexol as ability (intention.md § Ability)", () => {
+    const word = parseOk("vuzunexol");
     assert.equal(word.family.kind, "x");
     if (word.family.kind === "x") {
       assert.deepEqual(word.family, {
         kind: "x",
         xFamily: "ability",
         leftRoots: ["uzune"],
-        stanceVowel: "e",
+        stanceVowel: "o",
       });
     }
   });
@@ -544,8 +544,8 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     }
   });
 
-  it("tells a pointer from a compound after the part consonant (zwazar, zwazarayel)", () => {
-    const pointer = parseOk("zwazar");
+  it("tells a pointer from a compound after the part consonant (zwuzer, zwuzarayel)", () => {
+    const pointer = parseOk("zwuzer");
     assert.equal(pointer.family.kind === "x" && pointer.family.xFamily, "pointer");
     const compound = parseOk("zwuzarayel");
     assert.equal(compound.family.kind === "x" && compound.family.xFamily, "role");
@@ -553,7 +553,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
 
   it("reads the pointer shape on /h/ as a say word", () => {
     assert.equal(parseOk("hwuzam").family.kind, "say");
-    assert.equal(parseOk("zwazam").family.kind, "x");
+    assert.equal(parseOk("zwuzem").family.kind, "x");
   });
 
   it("parses a slot-part role compound on /h/ as capacity (viewpoint.md#capacity)", () => {
@@ -568,14 +568,14 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
   });
 
   it("parses content-rule parts as pointers and compounds (viewpoint.md#content-of-the-event)", () => {
-    const pointer = parseOk("dwahar");
+    const pointer = parseOk("dwuher");
     assert.deepEqual(pointer.family, {
       kind: "x",
       xFamily: "pointer",
       leftRoots: [],
-      scopeVowel: "a",
+      scopeVowel: "u",
       part: "h",
-      pointerVowel: "a",
+      pointerVowel: "e",
     });
     const compound = parseOk("dwuhowurel");
     if (compound.family.kind === "x") {
@@ -583,12 +583,12 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
       assert.equal(compound.family.part, "h");
       assert.deepEqual(compound.family.rightRoots, ["owure"]);
     }
-    const event = parseOk("dwavar");
+    const event = parseOk("dwuver");
     assert.equal(event.family.kind === "x" && event.family.part, "v");
     assert.throws(() => parseWord("zwavowurel"), WordParseError);
-    const stance = parseOk("dwathar");
+    const stance = parseOk("dwuther");
     assert.equal(stance.family.kind === "x" && stance.family.part, "th");
-    const move = parseOk("zwuyar");
+    const move = parseOk("zwayer");
     assert.equal(move.family.kind === "x" && move.family.xFamily, "pointer");
     assert.equal(move.family.kind === "x" && move.family.part, "y");
   });

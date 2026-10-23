@@ -7,7 +7,7 @@ import type { OverlayKind } from "../lexicon-search.js";
  */
 export type RolePart = "z" | "d" | "b" | "h" | "g" | "th" | "w" | "y" | "x" | "v";
 
-/** Role pointer vowel: `a` same, `o` other, `e` self, `u` unsaid (pronouns.md#role-pointers). */
+/** Role pointer vowel: `e` same, `a` other, `o` self, `u` unsaid (pronouns.md#role-pointers). */
 export type PointerVowel = "a" | "e" | "o" | "u";
 
 /** Label-scope seam: simplex or the six stacks (label-seams.md#label-scope). */
@@ -455,7 +455,7 @@ export type AnaphorBind = {
   part?: RolePart;
   /** Role pointer: which event it reads (pronouns.md#role-pointers). */
   pointerVowel?: PointerVowel;
-  /** A self pointer (`e`) that would name its own slot (`zwazer` in `/z/`): never a sentence. */
+  /** A self pointer (`o`) that would name its own slot (`zwuzor` in `/z/`): never a sentence. */
   ownSlot?: true;
   /** Absent when no prior match. */
   antecedent?: LexWord;

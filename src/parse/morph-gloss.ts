@@ -246,8 +246,8 @@ const POLAR_JOB: Record<string, string> = {
 
 const ABILITY_STANCE: Record<string, string> = {
   a: "able",
-  e: "unable-temporary",
-  o: "unable-modifiable",
+  o: "unable-temporary",
+  e: "unable-modifiable",
   u: "unable-irreversible",
 };
 
@@ -302,8 +302,8 @@ const EMOTION_MOTION: Record<string, string> = { r: "SURGING", m: "FLOWING", l: 
 
 const GREETING_STANCE: Record<string, string> = {
   a: "presence",
-  o: "ask",
-  e: "minutes",
+  o: "minutes",
+  e: "ask",
   u: "passing",
 };
 
@@ -326,29 +326,15 @@ export function roleFront(scope: string | undefined, part: string | undefined): 
   return `${SCOPE_VOWEL[scope ?? ""] ?? "scope"}-${ROLE_PART[part ?? ""] ?? "role"}`;
 }
 
-/** Pointer scope letters stay on the pre-Phase-4 map until Phase 5 remaps them. */
-export const POINTER_SCOPE_VOWEL: Record<string, string> = {
-  a: "episode",
-  e: "role",
-  o: "pair",
-  u: "type",
-  ao: "situation",
-  ae: "using",
-  oe: "toward-role",
-  ua: "except-episode",
-  uo: "except-pair",
-  ue: "outside-role",
-};
-
 function pointerFront(scope: string | undefined, part: string | undefined): string {
-  return `${POINTER_SCOPE_VOWEL[scope ?? ""] ?? "scope"}-${ROLE_PART[part ?? ""] ?? "role"}`;
+  return `${SCOPE_VOWEL[scope ?? ""] ?? "scope"}-${ROLE_PART[part ?? ""] ?? "role"}`;
 }
 
 /** Role pointer vowel: which event the pointer reads (pronouns.md#role-pointers). */
 /** Role pointer ending suffix: **-l** a new one, **-m** a share; **-r** is the participant itself. */
 export const POINTER_ENDING: Record<string, string> = { l: ".new", m: ".part" };
 
-export const POINTER_VOWEL: Record<string, string> = { a: "same", o: "other", e: "self", u: "unsaid" };
+export const POINTER_VOWEL: Record<string, string> = { e: "same", a: "other", o: "self", u: "unsaid" };
 
 const CARDINALS = [
   "zero",

@@ -11,7 +11,7 @@
 
 import type { ClassifyTables } from "./classify.js";
 import { classify } from "./classify.js";
-import { POINTER_SCOPE_VOWEL, POINTER_VOWEL, ROLE_PART, SCOPE_VOWEL, morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine } from "./morph-gloss.js";
+import { POINTER_VOWEL, ROLE_PART, SCOPE_VOWEL, morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine } from "./morph-gloss.js";
 import type { MorphGlossContext } from "./morph-gloss.js";
 import { parseWords } from "./word.js";
 import { POINT_BACK_HOOKS, TIME_HOOKS, TIME_JOINS } from "./series.js";
@@ -278,10 +278,6 @@ const SCOPE_BY_LABEL: Record<string, string> = Object.fromEntries(
   Object.entries(SCOPE_VOWEL).map(([vowel, label]) => [label, vowel]),
 );
 
-const POINTER_SCOPE_BY_LABEL: Record<string, string> = Object.fromEntries(
-  Object.entries(POINTER_SCOPE_VOWEL).map(([vowel, label]) => [label, vowel]),
-);
-
 /** A role word's front, `SCOPE-PART` (`episode-agent`), then the rest. */
 const ROLE_FRONT = new RegExp(
   `^(${Object.keys(SCOPE_BY_LABEL).join("|")})-(${Object.keys(PART_BY_LABEL).join("|")})(.*)$`,
@@ -321,11 +317,11 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
     const pos = (resume[1] ?? "").replace(/-$/, "");
     let body = resume[2]!;
     const front = body.match(ROLE_FRONT);
-    // Role pointer: `←episode-agent.same` → `w` + `a` + `z` + `a` + **-r**; `.new` is **-l**, `.part` is **-m**.
+    // Role pointer: `←episode-agent.same` → `w` + `u` + `z` + `e` + **-r**; `.new` is **-l**, `.part` is **-m**.
     const pointer = front?.[3]!.match(/^\.([a-z]+)(?:\.(new|part))?$/);
     if (front && pointer && POINTER_BY_LABEL[pointer[1]!] !== undefined) {
       const ending = pointer[2] === "new" ? "l" : pointer[2] === "part" ? "m" : "r";
-      out.add(`${pos}w${POINTER_SCOPE_BY_LABEL[front[1]!]}${PART_BY_LABEL[front[2]!]}${POINTER_BY_LABEL[pointer[1]!]}${ending}${suffix}`);
+      out.add(`${pos}w${SCOPE_BY_LABEL[front[1]!]}${PART_BY_LABEL[front[2]!]}${POINTER_BY_LABEL[pointer[1]!]}${ending}${suffix}`);
       return [...out];
     }
     // Role-compound resume: `←episode-agent-write` → `w` + `a` + `z` + resumed stem + **-r**.

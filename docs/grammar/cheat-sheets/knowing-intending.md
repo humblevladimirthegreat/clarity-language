@@ -206,18 +206,18 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`xa`](/can-and-cant#can) | they can | *can* | B |
-| [`xe`](/can-and-cant#ability-stance) | can't, just for now | *can't right now* | B |
-| [`xo`](/can-and-cant#ability-stance) | can't yet | *can't yet* | B |
+| [`xo`](/can-and-cant#ability-stance) | can't, just for now | *can't right now* | B |
+| [`xe`](/can-and-cant#ability-stance) | can't yet | *can't yet* | B |
 | [`xu`](/can-and-cant#ability-stance) | can never | *can never* | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Can](/can-and-cant#can) | `zuzozen vezuyoxal.` | *Uzozen can sing.* | B |
 | [So can I](/can-and-cant#can) | `zuzozen vowurexal. zolazun vowurexar.` | *Uzozen can walk, and so can Olazun.* | B |
-| [Can't right now](/can-and-cant#ability-stance) | `zolazun vezuyoxel.` | *Olazun can't sing right now.* | B |
-| [Can't yet](/can-and-cant#ability-stance) | `zahelan vezuyoxol.` | *Ahelan can't sing yet.* | B |
+| [Can't right now](/can-and-cant#ability-stance) | `zolazun vezuyoxol.` | *Olazun can't sing right now.* | B |
+| [Can't yet](/can-and-cant#ability-stance) | `zahelan vezuyoxel.` | *Ahelan can't sing yet.* | B |
 | [Can never](/can-and-cant#ability-stance) | `zuzozen varuvexul.` | *Uzozen can never run.* | B |
-| [No single verb](/can-and-cant#ability-fallback) | `zuzozen hodaxel.` | *Uzozen can't right now.* | B |
+| [No single verb](/can-and-cant#ability-fallback) | `zuzozen hodaxol.` | *Uzozen can't right now.* | B |
 
 ## Don't mix up {#dont-mix-up}
 

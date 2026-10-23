@@ -44,7 +44,7 @@ For English *too* / *also*, resume the action. `/v/` **-r** is *the same action 
 >
 > "Uzozen sees a cat. Uzozen sees a dog too."
 
-**Compare with:** English *that* pointing at a quoted title, proverb, or aside uses a [role pointer](/pronouns#role-pointers) (`dwadar`, *that quote*), not whole-stem **-r**.
+**Compare with:** English *that* pointing at a quoted title, proverb, or aside uses a [role pointer](/pronouns#role-pointers) (`dwuder`, *that quote*), not whole-stem **-r**.
 
 ### Resume one sense (**-rl** / **-rm**) {#resume-sense}
 
@@ -134,7 +134,7 @@ The other tags follow the same pattern: `zwel` / `zwer` / `zwem`, `zwol` / `zwor
 >
 > "A dog (A) sees a cookie (E). A cat sees A. A walks."
 
-The last `zwar` is still the dog, though the cat is the newer doer. `zwazar` would pick the cat.
+The last `zwar` is still the dog, though the cat is the newer doer. `zwuzer` would pick the cat. The tag vowel is only the label you chose. How far a role pointer reaches is a different job.
 
 - **Assign.** A tag with **-l** right after a phrase in the same role names that phrase: a noun with its `/ɡ/` describers, a name, a resume, or a role pointer. With no phrase before it, it brings in someone new.
 - **Recall.** A tag with **-r** is the ordinary [whole-stem resume](/pronouns#resume-r): `zwar` resumes `zwal`, so it picks the latest word with that stem, which is the one that assigned the tag.
@@ -152,7 +152,7 @@ With no phrase to tag, a tag holds a placeholder, as in *suppose A tells E*:
 >
 > "A talks to E. E eats a cookie."
 
-A tag with **-m** is a [share](/pronouns#share): A's part in the latest earlier sentence where A filled a part, in whatever role. `zwazam` picks the event by role; `zwam` picks it by who.
+A tag with **-m** is a [share](/pronouns#share): A's part in the latest earlier sentence where A filled a part, in whatever role. `zwuzem` picks the event by role; `zwam` picks it by who.
 
 > `zuzozen zwal dolazun vanuvul. zahelan dwam vawebol.`
 >
@@ -316,12 +316,12 @@ z-listener-x | v-scream
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Uzozen (A) pours. Olazun harvests. A screams.* <!-- lint: error -->`zuzozen zwal vobuvul. zolazun vugelam. zwazar varemul.`
+**1.** *Uzozen (A) pours. Olazun harvests. A screams.* <!-- lint: error -->`zuzozen zwal vobuvul. zolazun vugelam. zwuzer varemul.`
 
 ::: details Show answer
 `zuzozen zwal vobuvul. zolazun vugelam. zwar varemul.`
 
 [z-Uzozen | z-tag.A] | v-pour . z-Olazun | v-harvest . z-←tag.A | v-scream
 
-A tag stays on A; **`zwazar`** is the latest doer, Olazun.
+A tag stays on A; **`zwuzer`** is the latest doer, Olazun.
 :::

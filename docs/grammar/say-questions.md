@@ -264,7 +264,7 @@ English *ask* is four jobs. You can put a question to someone, ask them for some
 | *ask* / *tell someone to* | `zuzozen vezuyel bolazun dorl vuhohol.` | telling + to-clause |
 | *ask* / *tell someone not to* | `zuzozen vezuyel bolazun durl varuvel.` | telling + lest-clause |
 | *please ask her to* | `yom vezuyel bolazun zawan dorl vuhohol.` | request: tell Olazun to sit |
-| *ask* (one question, as a bid for time) | `olazuxon.` | one slot |
+| *ask* (one question, as a bid for time) | `olazuxen.` | one slot |
 | *interview* | `yolazun.` then a run of `yel` questions | call, then ask |
 | *conversation* / *chat* / *dialog* | `zezuyem` | *discourse* |
 

@@ -31,7 +31,7 @@ On `/z/`, `/d/`, and `/b/`, pair scope **`e`** stands alone: the party is the on
 >
 > "Uzozen is not acting as a teacher here."
 
-Scope works on [role pointers](/pronouns#role-pointers) too. `zwazar` is *the latest doer*; `zwezar` is *the latest doer, in their practiced role*: after *Uzozen teaches*, `zwezar` is Uzozen as a teacher. With **-m** it gives a useful contrast: `dwazam` is *what they did (this time)*, and `dwezam` is *their practice, their craft*.
+Scope works on [role pointers](/pronouns#role-pointers) too. `zwuzer` is *the latest doer*; `zwozer` is *the latest doer, in their practiced role*: after *Uzozen teaches*, `zwozer` is Uzozen as a teacher. With **-m** it gives a useful contrast: `dwuzem` is *what they did (this time)*, and `dwozem` is *their practice, their craft*.
 
 ### The role you act in (`/h/`) {#capacity}
 
@@ -96,41 +96,41 @@ A slot part on the same stem is still a participant: `dwuzowurel` is *someone wh
 
 The stem is still the event. The part says which quality of it you mean. Pointers drop the stem and read the latest matching event, as [role pointers](/pronouns#role-pointers) do for people:
 
-> `zuzozen vowurel hedurem. zahelan dwahar vawebol.`
+> `zuzozen vowurel hedurem. zahelan dwuher vawebol.`
 >
 > z-Uzozen | v-walk | h-haste . z-Ahelan | d-←episode-manner.same | v-see
 >
 > "Uzozen walks in haste. Ahelan sees the way it was done."
 
-If that clause named no manner word, `dwahar` is the event's own manner: how walking went, unnamed. A restrictor, a time pole, or a [say word](feelings-permission.md#say-words) is already doing its own job on `/h/`, so the pointer skips it.
+If that clause named no manner word, `dwuher` is the event's own manner: how walking went, unnamed. A restrictor, a time pole, or a [say word](feelings-permission.md#say-words) is already doing its own job on `/h/`, so the pointer skips it.
 
 | Part | Names | Compound | Pointer |
 |------|-------|----------|---------|
-| **`h`** | how, when, or where it happened | `dwuhowurel` *a way of walking* | `dwahar` *the way it was done* |
-| **`g`** | the state it leaves its participant in | `dwuguguyel` *how cooked it is* | `dwagar` *the state it left them in* |
-| **`th`** | a reason, thought, or feeling about it | `dwuthowurel` *a reason to walk* | `dwathar` *the reason for it* |
-| **`w`** | how much or how intense it was | `dwuwowurel` *the amount of walking* | `dwawar` *how much it was* |
-| **`y`** | the turn that said it (question, command, remark) | `dwuyowurel` *a remark about walking* | `dwayar` *that remark* |
-| **`x`** | what followed from it | `dwuxowurel` *what comes of walking* | `dwaxar` *what came of it* |
-| **`v`** | the event itself | (no compound: the event noun is the stem, `dowurel`) | `dwavar` *that event* |
+| **`h`** | how, when, or where it happened | `dwuhowurel` *a way of walking* | `dwuher` *the way it was done* |
+| **`g`** | the state it leaves its participant in | `dwuguguyel` *how cooked it is* | `dwuger` *the state it left them in* |
+| **`th`** | a reason, thought, or feeling about it | `dwuthowurel` *a reason to walk* | `dwuther` *the reason for it* |
+| **`w`** | how much or how intense it was | `dwuwowurel` *the amount of walking* | `dwuwer` *how much it was* |
+| **`y`** | the turn that said it (question, command, remark) | `dwuyowurel` *a remark about walking* | `dwuyer` *that remark* |
+| **`x`** | what followed from it | `dwuxowurel` *what comes of walking* | `dwuxer` *what came of it* |
+| **`v`** | the event itself | (no compound: the event noun is the stem, `dowurel`) | `dwuver` *that event* |
 
 Scope **`a`** / **`e`** / **`o`** / **`u`** still say how far the label reaches: `dwohowurel` is *someone's usual way of walking*, `dwahowurel` *a walking style*.
 
-A **`g`** pointer is the `/d/` participant's state when the event has one, and the `/z/` participant's otherwise. After *Uzozen punches Olazun*, `dwagar` is Olazun's state; after *Uzozen runs*, it is Uzozen's. **`w`** always reads the event's own extent: a `/w/` word grades the next adjective, never the event, so `dwawar` is *that much*. `dwagor` and `dwawor` are not words: no clause names a resulting state or an amount for *the other* to differ from.
+A **`g`** pointer is the `/d/` participant's state when the event has one, and the `/z/` participant's otherwise. After *Uzozen punches Olazun*, `dwuger` is Olazun's state; after *Uzozen runs*, it is Uzozen's. **`w`** always reads the event's own extent: a `/w/` word grades the next adjective, never the event, so `dwuwer` is *that much*. `dwugar` and `dwuwar` are not words: no clause names a resulting state or an amount for *the other* to differ from.
 
-A **`th`** pointer reads [sake](/sakes) words, feeling roots, and [causation poles](/causation) on `/th/`. A channel, MAY, the notional, or a holder is the speaker's stance on the *claim*, not a stance on the event, so the pointer skips those too. With no such word, `dwathar` is still *the reason for it*: the gap the spelling fills.
+A **`th`** pointer reads [sake](/sakes) words, feeling roots, and [causation poles](/causation) on `/th/`. A channel, MAY, the notional, or a holder is the speaker's stance on the *claim*, not a stance on the event, so the pointer skips those too. With no such word, `dwuther` is still *the reason for it*: the gap the spelling fills.
 
-A **`y`** pointer reaches turns, not events: `dwayar` the latest turn, `dwayor` the one before it, `dwayer` this very turn, `dwayur` whatever was said. With **-m**, `dwayam` is what the saying did, apart from what it said.
+A **`y`** pointer reaches turns, not events: `dwuyer` the latest turn, `dwuyar` the one before it, `dwuyor` this very turn, `dwuyur` whatever was said. With **-m**, `dwuyem` is what the saying did, apart from what it said.
 
 If the next sentence after an event opened with a [consequence linker](sentence-linkers.md#sentence-linkers) (`xahem` *therefore*, `xahel` *it follows that*), an **`x`** pointer is that sentence's event:
 
-> `zuzozen vanuvul. xahem zolazun varemul. zahelan dwaxar vawebol.`
+> `zuzozen vanuvul. xahem zolazun varemul. zahelan dwuxer vawebol.`
 >
 > z-Uzozen | v-punch . x-therefore | z-Olazun | v-scream . z-Ahelan | d-←episode-outcome.same | v-see
 >
 > "Uzozen punches. Therefore Olazun screams. Ahelan sees what came of it."
 
-**Compare with:** a landmark is a thing (*the house*, *the knife*), reached by resuming its noun or with a hook pointer (`aer` *with it*). An **`h`** part is a quality of the event (*the haste*): *how* is `dwahar`. **`g`** is the state the event leaves its participant in; **`x`** is what happens next because of it.
+**Compare with:** a landmark is a thing (*the house*, *the knife*), reached by resuming its noun or with a hook pointer (`aer` *with it*). An **`h`** part is a quality of the event (*the haste*): *how* is `dwuher`. **`g`** is the state the event leaves its participant in; **`x`** is what happens next because of it.
 
 ### Viewpoint laterals (`DIR` × anchor) {#viewpoint-laterals}
 <a id="spatial-laterals"></a>
@@ -353,7 +353,7 @@ z-Olazun | g-role-agent-theft
 **2.** *Ahelan walks west. Uzozen sees the way it was done.*
 
 ::: details Show answer
-`zahelan vowurel howuhel. zuzozen dwahar vawebol.`
+`zahelan vowurel howuhel. zuzozen dwuher vawebol.`
 
 z-Ahelan | v-walk | h-west . z-Uzozen | d-←episode-manner.same | v-see
 :::
@@ -408,7 +408,7 @@ z-Uzozen | v-swim | [h-down | bl-boat]
 *Uzozen swims under the boat.*
 :::
 
-**3.** `zahelan debaval veguyel. zolazun dwadar vawebol.`
+**3.** `zahelan debaval veguyel. zolazun dwuder vawebol.`
 
 ::: details Show answer
 z-Ahelan | d-boat | v-construct . z-Olazun | d-←episode-patient.same | v-see

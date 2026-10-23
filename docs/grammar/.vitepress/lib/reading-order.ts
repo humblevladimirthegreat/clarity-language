@@ -120,6 +120,33 @@ export function isLevelReview(page: string): boolean {
 
 export type LessonLink = { text: string; link: string }
 
+/** Public slug for a cheat-sheet sidebar link (`/cheat-sheets/vowels` → `vowels`). */
+export function cheatSheetSlug(link: string): string {
+  const path = link.split(/[?#]/, 1)[0]!
+  const match = /^\/cheat-sheets\/([^/]+)$/.exec(path)
+  if (!match) throw new Error(`not a cheat-sheet link: ${link}`)
+  return match[1]!
+}
+
+/** Cheat Sheets sidebar, in reading order (sounds, letter meanings, then subsystems; lookup sheets last). */
+export const cheatSheetSidebar: LessonLink[] = [
+  { text: 'Sounds and spelling', link: '/cheat-sheets/sounds-spelling' },
+  { text: 'Vowels', link: '/cheat-sheets/vowels' },
+  { text: 'Consonants', link: '/cheat-sheets/consonants' },
+  { text: 'Word shape and clause', link: '/cheat-sheets/word-shape-clause' },
+  { text: 'People and pointing', link: '/cheat-sheets/people-pointing' },
+  { text: 'Talking', link: '/cheat-sheets/talking' },
+  { text: 'Knowing and intending', link: '/cheat-sheets/knowing-intending' },
+  { text: 'Why and allowed', link: '/cheat-sheets/why-allowed' },
+  { text: 'Joins and hooks', link: '/cheat-sheets/joins-hooks' },
+  { text: 'Restrictors and spans', link: '/cheat-sheets/restrictors-spans' },
+  { text: 'Linking clauses', link: '/cheat-sheets/linking-clauses' },
+  { text: 'Roles and comparing', link: '/cheat-sheets/roles-comparing' },
+  { text: 'Numbers', link: '/cheat-sheets/numbers' },
+  { text: 'Agebon → English', link: '/cheat-sheets/to-english' },
+  { text: 'Exceptions', link: '/cheat-sheets/exceptions' },
+]
+
 function withReview(lessons: readonly LessonLink[], review: LessonLink): LessonLink[] {
   return [...lessons, review]
 }

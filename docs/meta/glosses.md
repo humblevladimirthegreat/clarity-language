@@ -163,7 +163,7 @@ The sentence drops these. A [note](#note-required) carries one only when it is r
 
 | Agebon distinction | The sentence does |
 |---------------------|-----------------|
-| Cast resumes and role pointers (`zuzozer`, `zwazar` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
+| Cast resumes and role pointers (`zuzozer`, `zwuzer` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
 | Join packaging (open `zam` vs closed `zal`, exclusive `del`, fence shape) | Plain *and / or*; no “exactly one”, no open-list footnotes |
 | Sense-picking **-l / -m / -n** | Never (already omitted from morph when they only pick sense) |
@@ -319,7 +319,7 @@ A morph line corresponds **one-to-one** with its Agebon. From the gloss alone yo
 - **Hooked joins** gloss the hook's label from the [extra-noun grid](/extra-noun-hooks#extra-noun-intermediate) (the frame label on hook **-m**, the point-back label on hook **-r**), then `-x-`, then the join's label, with `.open` for join **-m**; the landmark rides in the bracket: `zexual blahehal` → `[z-at-x-everything | bl-house]`, `zemxuam bluwon` → `[z-near-x-everything.open | bl-speaker]`, `doxar` under a question → `d-for-x-wh`, `zerxual` → `z-there-x-everything`, `daorxar` → `d-on.it-x-something`. On `/h/`, a point-back names a time: `hurxal` → `h-since.then-x-never` (`ar` `within.then`, `er` `at.then`).
 - **Numeric prefixes** gloss the number body's kind label, then `-x-`, then the stem in the sense its ending picks: `zrawaxolamal` → `z-infinity-x-love`, `zruwuxahuyayol` → `z-quasi-x-friend`, `zragexezuyel` → `z-three-x-speech`, `drobaxebewem` → `d-1st-x-draft`. The **`mx`** seam adds `.about` to the number (`dragemxezuyel` → `d-three.about-x-speech`).
 - **Role-compound resumes** keep their scope and part: `dwuzarayer` → `d-←episode-agent-write`, `dwudarayer` → `d-←episode-patient-write`. A bare `d-←write` would merge the doer, undergoer, and extra party of one event.
-- **Role pointers** gloss their scope, part, and pointer vowel, never the referent: `zwazar` → `z-←episode-agent.same`, `dwador` → `d-←episode-patient.other`, `dwazer` → `d-←episode-agent.self`, `zwazur` → `z-←episode-agent.unsaid`, `zwezar` → `z-←role-agent.same`, `dwahar` → `d-←episode-manner.same`, `dwavar` → `d-←episode-event.same`. **-l** adds `.new` and **-m** adds `.part` (`dwadal` → `d-←episode-patient.same.new`, `zwazam` → `z-←episode-agent.same.part`, `zwabom` → `z-←episode-recipient.other.part`, `zwazum` → `z-←episode-agent.unsaid.part`).
+- **Role pointers** gloss their scope, part, and pointer vowel, never the referent: `zwuzer` → `z-←episode-agent.same`, `dwudar` → `d-←episode-patient.other`, `dwuzor` → `d-←episode-agent.self`, `zwuzur` → `z-←episode-agent.unsaid`, `zwozer` → `z-←role-agent.same`, `dwuher` → `d-←episode-manner.same`, `dwuver` → `d-←episode-event.same`. **-l** adds `.new` and **-m** adds `.part` (`dwudel` → `d-←episode-patient.same.new`, `zwuzem` → `z-←episode-agent.same.part`, `zwubam` → `z-←episode-recipient.other.part`, `zwuzum` → `z-←episode-agent.unsaid.part`).
 - **Say words** gloss scope, whose say, the answer, and the ending, joined with `-`: `hwuvam` → `h-episode-event-ALLOW-said`, `hwudum` → `h-episode-patient-FORBID-said`, `hwezal` → `h-pair-agent-ALLOW-rule`. Scope takes the label-scope labels; whose say is `agent` / `patient` / `recipient` / `event`; the answer is `ALLOW` / `FORBID` / `REQUIRE` / `CHOICE`; the ending is `rule` (**-l**), `said` (**-m**), or `tacit` (**-r**).
 - **Unknown words fail.** A content word the lexicon cannot gloss has no morph line: a root missing from the lexicon, or **-m** on a root with no abstract sense (unless a closed overlay defines that **-m** form). `lint:agebon` reports it.
 - **Quoted pass-through.** Raw payloads (opaque interiors, and a resume stem with no known antecedent) go in straight double quotes: `z-OPAQUE["kimchi"]`. A `"` inside the payload is written `""`.
@@ -381,7 +381,7 @@ A [resume](/pronouns#resume-r) spells its antecedent's whole stem, so the antece
 | No antecedent, stem not in the lexicon | | `z-←"…"` (the stem itself) |
 | Fill-ask / unspecified member | `zar` | `z-wh` / `z-something` (as the docs require for that form) |
 | [Tag pronoun](/tag-pronouns#tag-pronouns) | `zwal` / `zwar` / `dwam` | `z-tag.A` (assign) / `z-←tag.A` (recall) / `d-←tag.A.part` (share) / `z-←tag.A.name` (**-n** recall of a name): the letter name, never the referent. An assigning tag rides in its phrase's bracket: `[z-dog \| z-tag.A]`, or after a fence's bracket for the whole group. A pair joins the letters with `+`: `z-←tag.A+E` |
-| [Role pointer](/pronouns#role-pointers) | `zwazar` / `zwazor` / `dwazer` | `z-←episode-agent.same` / `z-←episode-agent.other` / `d-←episode-agent.self` / `z-←episode-agent.unsaid` (scope, part, and event, never the person's name); `d-←episode-patient.same.new` (**-l**), `z-←episode-agent.same.part` (**-m**) |
+| [Role pointer](/pronouns#role-pointers) | `zwuzer` / `zwuzar` / `dwuzor` | `z-←episode-agent.same` / `z-←episode-agent.other` / `d-←episode-agent.self` / `z-←episode-agent.unsaid` (scope, part, and event, never the person's name); `d-←episode-patient.same.new` (**-l**), `z-←episode-agent.same.part` (**-m**) |
 
 Do not write `z-←microphone` for a speaker antecedent.
 
@@ -404,7 +404,7 @@ Gloss each piece by **family** ([compounds.md](/compounds)) — English only. Dr
 |--------|-----------------|-------------|
 | Ordinary / name compound | `yunoduxozalan` | `y-Unodu-x-Ozalan` |
 | Ordinary (three roots) | `zugudaxududaxowulan` | `z-Uguda-x-Ududa-x-Owulan` |
-| Ability / values stance | `vowurexel` | `v-walk-unable-temporary` |
+| Ability / values stance | `vowurexol` | `v-walk-unable-temporary` |
 | Values stance on need | `thuwathom` | `th-competence-motive-any-term` |
 | Role compound | `zwuzavuvul` | `z-episode-agent-fight` ([role words](#round-trip)) |
 | Capacity | `hwozuduyel` | `h-role-agent-teach` ([role words](#round-trip)) |
@@ -457,7 +457,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `zoem` | `z-equal-rank.open` |
 | `zar` | `z-wh` / `z-something` |
 | `zarx` | `z-wh-x` / `z-something-x` |
-| `zwoyar` | `z-wh.person.withheld` / `z-something.person.withheld` |
+| `zweyer` | `z-←pair-move.same` |
 | `zul` / `gul` | `z-not` / `g-not` |
 | `zual` | `z-everything-but` |
 | `xan` | `x-and-then` |
@@ -486,7 +486,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | Agebon | Morph gloss | Free English (separate) |
 |---------|-------------|-------------------------|
 | `uzozen.` | `Uzozen` | *Uzozen.* (hello) |
-| `yolazuxen` | `y-Olazun-minutes` | *Olazun — a few minutes.* |
+| `yolazuxon` | `y-Olazun-minutes` | *Olazun — a few minutes.* |
 | `yaol` | `y-yes` | *Yes.* |
 | `yel` | `y-question` | *(yes/no or fill-ask)* |
 | `zuwol` | `z-microphone` | *a microphone* |
@@ -525,7 +525,7 @@ No note: *as I remember* already says whose memory it is. Do not render the over
 
 ### Ability + value motive
 
-> `yuol zuwon vowurexel thuwathom.`
+> `yuol zuwon vowurexol thuwathom.`
 >
 > y-no | z-speaker | v-walk-unable-temporary | th-competence-motive-any-term
 >

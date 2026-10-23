@@ -152,10 +152,10 @@ describe("parse — multipart names (proper-names.md#multipart-names)", () => {
   });
 
   it("puts the length bid on the given name; /ɡ/ + x + vowel stays ability", () => {
-    const left = parseText("alexen galowen.").utterances[0]!.left;
+    const left = parseText("alexon galowen.").utterances[0]!.left;
     assert.equal(left.vocatives[0]?.reading, "greeting");
     assert.equal(left.vocativeAdjs?.[0]?.adjs[0]?.word.raw, "galowen");
-    assert.equal(onlyPackage("alen galowexen.")?.adjs[0]?.word.reading, "ability");
+    assert.equal(onlyPackage("alen galowexon.")?.adjs[0]?.word.reading, "ability");
   });
 
   it("a plain /b/ after the family name receives; a bl- word there is hosted", () => {
@@ -366,8 +366,8 @@ describe("parse — spans", () => {
   });
 
   it("anchors a role pointer on a span like any noun (pronouns.md#role-pointers)", () => {
-    const result = parseText("zuzozen d[uzozen] vezuyel. zolazun dwadar vezuyel.");
-    const pointer = result.resolve!.anaphors.find((bind) => bind.pronoun.raw === "dwadar");
+    const result = parseText("zuzozen d[uzozen] vezuyel. zolazun dwuder vezuyel.");
+    const pointer = result.resolve!.anaphors.find((bind) => bind.pronoun.raw === "dwuder");
     assert.equal(pointer?.antecedent?.raw, "d[uzozen]");
   });
 });

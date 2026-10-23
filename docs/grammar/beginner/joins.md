@@ -45,7 +45,7 @@ The ending says whether the list is complete. Closed **-l** means these are the 
 
 Whatever the join, the whole list fills one role in the clause. A [role pointer](pronouns.md#role-pointers) back to that role picks up the whole group:
 
-> `zuzozen zolazun zal vowurel. zwazar vuhohol.`
+> `zuzozen zolazun zal vowurel. zwuzer vuhohol.`
 >
 > [z-Uzozen | z-Olazun | z-and] | v-walk . z-←episode-agent.same | v-sit
 >

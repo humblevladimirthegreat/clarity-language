@@ -136,7 +136,7 @@ With **-l**, **-m**, or **-n**, the word is **any** such participant: someone wh
 
 ### Without the stem: role pointers {#role-pointers-family}
 
-A [role pointer](pronouns.md#role-pointers) is this same word with the event stem left out: **`w`**, the scope vowel, the part consonant, a pointer vowel, and an ending (**-r** the participant itself, **-l** a new one of its kind, **-m** its part in the event). Instead of naming the event, the pointer vowel picks it by position: **`a`** the latest one, **`e`** this sentence’s own, **`o`** the other one, **`u`** the one that left the part unsaid. `zwuzuhohor` is *the one who sat*; `zwazar` is *whoever did the latest thing*. After the pointer vowel and ending the word ends, while a compound's stem goes on (`zwazar` against `zwuzarayel`, *someone who writes*).
+A [role pointer](pronouns.md#role-pointers) is this same word with the event stem left out: **`w`**, the scope vowel, the part consonant, a pointer vowel, and an ending (**-r** the participant itself, **-l** a new one of its kind, **-m** its part in the event). Instead of naming the event, the pointer vowel picks it by position: **`e`** the latest one, **`a`** the other one, **`o`** this sentence’s own, **`u`** the one that left the part unsaid. `zwuzuhohor` is *the one who sat*; `zwuzer` is *whoever did the latest thing*. After the pointer vowel and ending the word ends, while a compound's stem goes on (`zwuzer` against `zwuzarayel`, *someone who writes*).
 
 A pointer looks back to whoever last had that part, skipping events without one ([role pointers](pronouns.md#role-pointers)).
 
@@ -309,7 +309,7 @@ z-episode-patient-punch | v-scream
 *Someone who gets punched screams.*
 :::
 
-**6.** `zahelan dehobul veguyel. zolazun dwadar vawebol.`
+**6.** `zahelan dehobul veguyel. zolazun dwuder vawebol.`
 
 ::: details Show answer
 z-Ahelan | d-helmet | v-construct . z-Olazun | d-←episode-patient.same | v-see

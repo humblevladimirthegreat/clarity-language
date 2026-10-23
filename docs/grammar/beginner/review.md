@@ -80,7 +80,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 z-Ahelan | d-guard | v-see . z-←guard | v-run
 
-**Also correct:** `zahelan dagayul vawebol. zwadar varuvel.`
+**Also correct:** `zahelan dagayul vawebol. zwuder varuvel.`
 
 **Rule:** [Resume with -r](pronouns.md#resume-r)
 :::
@@ -349,14 +349,14 @@ z-Olazun | v-fight | [against | b-guard]
 **Rule:** [Extra noun: stacked vowels](extra-noun-hooks.md#extra-noun-intermediate)
 :::
 
-**11.** *Olazun can't sing yet.* `zolazun vezuyoxol.` or `zolazun vezuyoxel.`
+**11.** *Olazun can't sing yet.* `zolazun vezuyoxel.` or `zolazun vezuyoxol.`
 
 ::: details Show answer
-`zolazun vezuyoxol.`
+`zolazun vezuyoxel.`
 
 z-Olazun | v-sing-unable-modifiable
 
-**`xo`** is *can't yet*; **`xe`** is *can't right now* when they usually can.
+**`xe`** is *can't yet*; **`xo`** is *can't right now* when they usually can.
 
 **Rule:** [Ability and incapability](can-and-cant.md#ability)
 :::
@@ -373,10 +373,10 @@ z-Olazun | g-angry-th-episode
 **Rule:** [Label scope](label-seams.md#label-scope)
 :::
 
-**13.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyel thobather blwazer.` or `zahelan vuguyel thobathem blwazer.`
+**13.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyel thobather blwuzor.` or `zahelan vuguyel thobathem blwuzor.`
 
 ::: details Show answer
-`zahelan vuguyel thobather blwazer.`
+`zahelan vuguyel thobather blwuzor.`
 
 z-Ahelan | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
 

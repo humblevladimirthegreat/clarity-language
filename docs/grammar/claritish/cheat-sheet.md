@@ -53,8 +53,8 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 | [Label scope](labels.md) | | [Ability](can-and-cant.md) | |
 |--------------------------|-|----------------------------|-|
 | `-tha` | this episode | `-xa` | can |
-| `-the` | a practiced role | `-xe` | can't, just for now |
-| `-tho` | this pair: one relationship | `-xo` | can't yet (the default) |
+| `-the` | a practiced role | `-xo` | can't, just for now |
+| `-tho` | this pair: one relationship | `-xe` | can't yet (the default) |
 | `-thu` | a type across scenes | `-xu` | can never |
 
 ## [Sakes](thanks-and-sorry.md) {#sakes}

@@ -208,13 +208,13 @@ English pronouns are often ambiguous as to what the antecedent is, especially *i
 
 The first letter is the part of speech in this sentence (`z-` subject, `d-` object, …). Then **`w`**, a scope vowel (`a` this episode), a part consonant (`z` the doer, `d` the one it happened to, `b` the extra party), a pointer vowel (`a` the latest, `o` the other one, `e` this same sentence), and -r.
 
-> `zazawan dalahen vemedul. zwadar dwazar vabahel.`
+> `zazawan dalahen vemedul. zwuder dwuzer vabahel.`
 
 > z-Azawan | d-Alahen | v-middle-finger . z-←episode-patient.same | d-←episode-agent.same | v-punch
 
 > "Azawan flips off Alahen. He (Alahen) punches them (Azawan)."
 
-`zwadar` is *the one it just happened to* (Alahen), now the subject; `dwazar` is *the one who just did it* (Azawan), now the object. The roles swap and the pronouns still point the right way.
+`zwuder` is *the one it just happened to* (Alahen), now the subject; `dwuzer` is *the one who just did it* (Azawan), now the object. The roles swap and the pronouns still point the right way.
 
 For anything further back, copy the earlier word's whole stem and end it with -r: `zodogar` is *the dog*. 
 
