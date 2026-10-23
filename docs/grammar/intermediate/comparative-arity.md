@@ -12,7 +12,7 @@ Beginner already used two names plus **`zol`** (*more … than*) and one name (*
 <!-- cheat-sheet: roles-comparing -->
 | Ageben | Use | English | Cue |
 |---------|-----|---------|-----|
-| **Multi (2+)** + shared scale under **`o` / `uo`** | comparative ladder | earlier above later (`o`); later above earlier under **`uo`** | **`o`** ≈ order; **`u`** ≈ undo |
+| **Multi (2+)** + shared scale under **`o` / `uo`** | comparative ladder | earlier above later (`o`); later above earlier under **`uo`** | **`o`** ≈ rank; **`u`** ≈ undo |
 | **Single-item (1)** + shared scale under **`o` / `uo`** | superlative | *the …-est* / *the least …* under **`uo`** | one name is the extreme |
 | **Standalone (0)** + shared scale under **`o` / `uo`** | empty superlative | *there is no biggest* / *there is no smallest* under **`uo`**; open **-m** = none comes to mind | empty list: nobody is on top |
 
@@ -44,7 +44,7 @@ English *no more challenging than* says less: the first name is below the second
 
 ### Place on a scale (`w#N`) {#place-on-a-scale}
 
-English *the second biggest* names a place just below the winner. Keep the superlative frame (one name before `zol`) and put an **ordinal** in the degree slot, `/w/` right before the adjective: **`wrodol`** (`w#2`) is *second*. The place is on the scale the adjective names. (cue: **`o`** ≈ order, as in `grodol` *the second*)
+English *the second biggest* names a place just below the winner. Keep the superlative frame (one name before `zol`) and put an **ordinal** in the degree slot, `/w/` right before the adjective: **`wrodol`** (`w#2`) is *second*. The place is on the scale the adjective names. (cue: **`o`** ≈ rank, as in `grodol` *the second*)
 
 > `zazozon zol wrodol gelazem.`
 >

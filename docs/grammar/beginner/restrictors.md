@@ -65,7 +65,7 @@ To say *sometimes*, *anytime*, or *some other time* without naming the occasion 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`har`** | unspecified member of the time inventory | *sometimes* / *at some time* | **-r** names a member |
-| **`her`** | unspecified member of a one-choice time menu | *anytime* (any one particular time, whichever you pick) | **e** ≈ either |
+| **`her`** | unspecified member of a one-choice time menu | *anytime* (any one particular time, whichever you pick) | **e** ≈ choice |
 | **`hur`** | unspecified leftover occasion | *some other time* | **u** ≈ undo |
 
 > `zalazun veruvol har.`

@@ -51,8 +51,8 @@ Beginner already used **`ra`** (*how many*) and **`ro`** (*which place from the 
 |---|---------|---------|-----|
 | **a** (`+`) | positive **scalar** (count or measure amount) | `g+3` *three cats*; `g+` *plural / more than one*; `z+3` *three* (subj); `b+12` *of size 12* | **`a`** ≈ add |
 | **u** (`-`) | negative **scalar** | `d-3` *−3* (obj); `z-` *some negative amount*; `g-2` signed measure on a noun | **`u`** ≈ undo |
-| **o** (`#`) | **ordinal** / rank **from the start** | `g#2` *the second page*; `g#` *some rank*; `z#2` *second* (rank as subject) | **`o`** ≈ order |
-| **e** (`_`) | **digit-string** / label (phones, IDs, “read the digits”) | `d_5551234`; `d_` *some code*; `g_12` *room 12*-style; `b_…` under a host relation | **`e`** ≈ either (one string) |
+| **o** (`#`) | **ordinal** / rank **from the start** | `g#2` *the second page*; `g#` *some rank*; `z#2` *second* (rank as subject) | **`o`** ≈ rank |
+| **e** (`_`) | **digit-string** / label (phones, IDs, “read the digits”) | `d_5551234`; `d_` *some code*; `g_12` *room 12*-style; `b_…` under a host relation | **`e`** ≈ choice (one string) |
 
 Each number word is one kind of number, set by its marker. In preferred writing, the marker is **`+`** / **`-`** / **`#`** / **`_`**.
 

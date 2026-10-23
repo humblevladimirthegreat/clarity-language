@@ -50,7 +50,7 @@ When nothing earlier matches, **-r** on a word from the lexicon means the one yo
 
 A resume spells the whole stem again. For someone in a recent sentence, a **role pointer** is shorter: it names them by the part they played in an earlier event. Write the role letter for the slot you need now, then **`wu`**, then a **part consonant**: the role letter they had in that earlier event. Then a **pointer vowel** for which event, and **-r**.
 
-The pointer vowel says how far the pointing reaches. Tags pick a label you chose; join vowels pick list type. Those jobs stay on their own words.
+The pointer vowel says how far the pointing reaches (past the last person, this event, the last person, nobody). Tags are an assignment queue, not how far the pointing goes.
 
 | Part consonant | Part in the earlier event | Where it sat |
 |----------------|---------------------------|--------------|

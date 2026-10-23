@@ -40,15 +40,15 @@ Neither end is better; a good day needs both, and doing something for a payoff r
 
 ### Which ending table?
 
-Beginner already used *serves* and *detracts from*. Intermediate adds *ought this act for* and *doing for*. Pick the ending table that matches the stance vowel.
+Beginner already used *serves* and *detracts from*. Intermediate adds *ought this act for* and *doing for*. Pick the ending table that matches the stance vowel. The vowel says how much of the sake is in.
 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`tha`** | [time horizon](/sakes#time-horizon-endings-on-met) endings | *serves* / *met* | **a** ≈ add |
-| **`the`** | [invited / offered / trial](/ought-for-a-sake#sake-force) endings | *ought this act for this sake* | **e** ≈ order (instruct / ought) |
-| **`tho`** | [time horizon](#sake-preference) endings | *doing for this sake* | **o** ≈ one (one sake as the reason) |
-| **`thu`** | [changeability](/sakes#sake-changeability) endings | *detracts from* / *unmet* | **u** ≈ undo |
+| **`tha`** | [time horizon](/sakes#time-horizon-endings-on-met) endings | *serves* / *met* | **a** ≈ the payoff is in |
+| **`the`** | [invited / offered / trial](/ought-for-a-sake#sake-force) endings | *ought this act for this sake* | **e** ≈ only the advice |
+| **`tho`** | [time horizon](#sake-preference) endings | *doing for this sake* | **o** ≈ doing-for |
+| **`thu`** | [changeability](/sakes#sake-changeability) endings | *detracts from* / *unmet* | **u** ≈ none of the sake |
 
 ### Attachment sites
 
@@ -115,7 +115,7 @@ The `/b/` names whose **stake** it is, not who **owns** the noun. On `/ɡ/` the 
 
 ### Contrary to a stance (`uom`) {#contrary-to-stance}
 
-English *contrary to the plan* says that the event happens even though a plan says otherwise. Put the hook **`uom`** *contrary to* right before a `/th/` stance word or an [intention adverb](/clause#intention-adverbs). That word then says what the event goes against, and it no longer applies to the claim. `zazozon vowurol thagom.` says you plan for Azozon to walk; `zazozon vowurol uom thagom.` says Azozon walks anyway. (cue: **ue** ≈ undo aimed at; **-m** the opposing frame, which the stance spells out)
+English *contrary to the plan* says that the event happens even though a plan says otherwise. Put the hook **`uom`** *contrary to* right before a `/th/` stance word or an [intention adverb](/clause#intention-adverbs). That word then says what the event goes against, and it no longer applies to the claim. `zazozon vowurol thagom.` says you plan for Azozon to walk; `zazozon vowurol uom thagom.` says Azozon walks anyway. (cue: **uo** ≈ contrary; **-m** the opposing frame, which the stance spells out)
 
 > `zazozon vowurol uom thagom.`
 >

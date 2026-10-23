@@ -103,7 +103,7 @@ The note is the careful reading written as a fact, not as an awkward second sent
 |-----|---------|---------|
 | An [aside](/spans#asides) span | "Azozon walks (quietly)." | One group per aside. An aside may also come out as commas or *by the way* |
 | A [scope island](/span-mention#scope-islands) | "Azozon and (just water)." | One group per island. English has no other way to fence a group, so the parentheses are the translation |
-| A [tag](/tag-pronouns#tag-pronouns) letter, right after the noun it names | "A dog (A) sees a cookie (E). A cat sees A." | A single capital letter, once per tag the sentence sets; later sentences use the letter as a name |
+| A [tag](/tag-pronouns#tag-pronouns) letter, right after the noun it names | "A dog (A) sees a cookie (O). A cat sees A." | A single capital letter, once per tag the sentence sets; later sentences use the letter as a name |
 
 Grouping that English can say does not use parentheses: *either Azozon walks or Alazun runs, and Ahelan sleeps*; *a challenging dog and a challenging cat*. A tone mark is English hedging or stress, not *(?)*: "Azozon saw a dog, I think." (unsure about just the dog).
 
@@ -380,7 +380,7 @@ A [resume](/pronouns#resume-r) spells its antecedent's whole stem, so the antece
 | Resume of a prior content word | | `z-←someone` / `d-←tea` |
 | No antecedent, stem not in the lexicon | | `z-←"…"` (the stem itself) |
 | Fill-ask / unspecified member | `zar` | `z-wh` / `z-something` (as the docs require for that form) |
-| [Tag pronoun](/tag-pronouns#tag-pronouns) | `zwal` / `zwar` / `dwam` | `z-tag.A` (assign) / `z-←tag.A` (recall) / `d-←tag.A.part` (share) / `z-←tag.A.name` (**-n** recall of a name): the letter name, never the referent. An assigning tag rides in its phrase's bracket: `[z-dog \| z-tag.A]`, or after a fence's bracket for the whole group. A pair joins the letters with `+`: `z-←tag.A+E` |
+| [Tag pronoun](/tag-pronouns#tag-pronouns) | `zwal` / `zwar` / `dwam` | `z-tag.A` (assign) / `z-←tag.A` (recall) / `d-←tag.A.part` (share) / `z-←tag.A.name` (**-n** recall of a name): the letter name, never the referent. An assigning tag rides in its phrase's bracket: `[z-dog \| z-tag.A]`, or after a fence's bracket for the whole group. A pair joins the letters with `+`: `z-←tag.A+O` |
 | [Role pointer](/pronouns#role-pointers) | `zwuzer` / `zwuzar` / `dwuzor` | `z-←episode-agent.same` / `z-←episode-agent.other` / `d-←episode-agent.self` / `z-←episode-agent.unsaid` (scope, part, and event, never the person's name); `d-←episode-patient.same.new` (**-l**), `z-←episode-agent.same.part` (**-m**) |
 
 Do not write `z-←microphone` for a speaker antecedent.

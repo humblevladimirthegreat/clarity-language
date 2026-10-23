@@ -13,7 +13,7 @@ When English tells events in time order (*and then*), put ending **-n** on a cla
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `xan` | sequence add | *and then…* | **a** ≈ add |
-| `xen` | sequence menu | *or maybe…*; *failing that…* | **o** ≈ one |
+| `xen` | sequence menu | *or maybe…*; *failing that…* | **e** ≈ choice |
 | `xun` | sequence deny | *and then not…* | **u** ≈ undo |
 
 > `zazozon vehohel xan zazozor vowurol.`

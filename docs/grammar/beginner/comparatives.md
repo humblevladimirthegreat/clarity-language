@@ -11,7 +11,7 @@ English splits three nearby jobs on a quality like *challenging*. *More … than
 ### Comparatives (`o`) {#comparatives}
 <a id="comparative-shared-scale"></a>
 
-When English would say *Azozon is more challenging than Alazun*, you put two people in order on one quality. Write both names, then the **rank join** **`zol`** (vowel **`o`**), then the adjective they share (`/ɡ/`). The first name sits higher on that quality than the second. Both may still sit high; the join only says who ranks higher. (cue: **`o`** ≈ order; the shared `/ɡ/` is the ladder)
+When English would say *Azozon is more challenging than Alazun*, you put two people in order on one quality. Write both names, then the **rank join** **`zol`** (vowel **`o`**), then the adjective they share (`/ɡ/`). The first name sits higher on that quality than the second. Both may still sit high; the join only says who ranks higher. (cue: **`o`** ≈ rank; the shared `/ɡ/` is the ladder)
 
 > `zazozon zalazun zol gamahum.`
 >
@@ -58,7 +58,7 @@ English *much more* / *slightly more* adds **how large the gap is**, without giv
 <a id="equative"></a>
 <a id="as-as"></a>
 
-When English would say *as challenging as*, you are not picking a winner. You are saying two people sit at the **same height** on the quality. Write both names, then the tie **`zoel`** (rank-join vowels **`oe`**), then the shared adjective (`/ɡ/`). Closed **-l** (`zoel`) is an exact match. Open **-m** (`zoem`) is *about as … as*. (cue: **`oe`** ≈ one + order; they share one rank)
+When English would say *as challenging as*, you are not picking a winner. You are saying two people sit at the **same height** on the quality. Write both names, then the tie **`zoel`** (rank-join vowels **`oe`**), then the shared adjective (`/ɡ/`). Closed **-l** (`zoel`) is an exact match. Open **-m** (`zoem`) is *about as … as*. (cue: **`oe`** ≈ rank then choice; they share one rank)
 
 > `zazozon zalazun zoel gamahum.`
 >
@@ -85,8 +85,8 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 <!-- cheat-sheet: roles-comparing -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| Rank **`o`** (`zol`) | rank on a shared quality | *more … than* / *the …-est* | **`o`** ≈ order |
-| Equality **`oe`** (`zoel` / `zoem`) | same height on the quality | *as … as* / *about as … as* | **`oe`** ≈ either + order (one shared rank) |
+| Rank **`o`** (`zol`) | rank on a shared quality | *more … than* / *the …-est* | **`o`** ≈ rank |
+| Equality **`oe`** (`zoel` / `zoem`) | same height on the quality | *as … as* / *about as … as* | **`oe`** ≈ rank then choice (one shared rank) |
 
 ### Practice {#beginner-practice}
 

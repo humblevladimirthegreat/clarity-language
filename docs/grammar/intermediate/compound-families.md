@@ -55,7 +55,7 @@ Use the table above. If the word has a mid-word **`th`**, it is a [sake](/sakes)
 
 English *I can stay a while* or *I only have a minute* tells the other person how long you can talk. In Ageben, add **`x`** and one vowel before **-n** on a [greeting](/word-endings#greeting) (your own name with a period, `SELFn.`) or a [call](/speech-moves#vocative) (their name under **`/y/`**, `yalazun.`). At arrival, the vowel sets how long you expect the conversation to last. At departure, the same form says how soon you are leaving. The vowel is about the conversation, not a grade of the person.
 
-The vowel says how much talk is left. Join vowels pick list type. That job stays on join words.
+The vowel says how much talk is left (open, a stretch, one ask, none). That is remaining time, not which kind of list.
 
 > `SELFxan.`
 >

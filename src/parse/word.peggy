@@ -622,7 +622,7 @@ PrefixedBody
 
 // Role letter + `w` + tag vowel + ending (`zwal` assign, `zwar` recall, `zwam` share). Roots start with a
 // vowel, so a `w` right after the role letter is always this marker. A stacked vowel is two tags at once
-// (`zwaer` *A and E*). enforce.ts keeps the slots and endings.
+// (`zwaor` *A and O*). enforce.ts keeps the slots and endings.
 tagWord
   = "w" vowels:("ao" / "ae" / "oe" / "ua" / "uo" / "ue" / [aeou]) ending:Ending plural:PluralSuffix? WordEnd {
       return {

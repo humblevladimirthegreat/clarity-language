@@ -130,15 +130,15 @@ Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 | Ageben | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
 | **`van`** | hold the object in the set | *includes / adds* | **a** ≈ add (hold / inventory) | `zazozon daledel van` |
-| **`ven`** | lock the object as the sole pick | *chooses (as the one choice)* | **e** ≈ either (single pick) | `zazozon dedudal ven` |
+| **`ven`** | lock the object as the sole pick | *chooses (as the one choice)* | **e** ≈ choice (single pick) | `zazozon dedudal ven` |
 | **`vaen`** | admit the object; more may follow | *picks (more picks may follow)* | **ae** ≈ add one, more may follow (open pick) | `zazozon dugedam vaen` |
 | **`vun`** | reject the object | *denies / refuses* | **u** ≈ undo (take that member back) | `zazozon dulamul vun` |
 | **`vuan`** | leave the object out of the set | *excludes* | **ua** ≈ undo + add (cut that member) | `zazozon duwedal vuan` |
-| **`vuen`** | bar that one; the rest stay free | *bars (anything but)* | **ue** ≈ undo + either (forbid that pick) | `zazozon dogudal vuen` |
-| **`von`** | rank the object first | *prioritizes* | **o** ≈ order (put this first) | `zazozon dabezul von` |
-| **`vaon`** | put the object first in order | *starts with* | **ao** ≈ add + order (begin here) | `zazozon durewem vaon` |
-| **`voen`** | put the objects at the same rank | *equates / ties* | **oe** ≈ one + order (same height) | `zazozon dalazun dahelan dal voen` |
-| **`vuon`** | rank the object lower | *deprioritizes* | **uo** ≈ undo + order (drop this rank) | `zazozon dugedam vuon` |
+| **`vuen`** | bar that one; the rest stay free | *bars (anything but)* | **ue** ≈ undo + choice (forbid that pick) | `zazozon dogudal vuen` |
+| **`von`** | rank the object first | *prioritizes* | **o** ≈ rank (put this first) | `zazozon dabezul von` |
+| **`vaon`** | put the object first in order | *starts with* | **ao** ≈ add + rank (begin here) | `zazozon durewem vaon` |
+| **`voen`** | put the objects at the same rank | *equates / ties* | **oe** ≈ rank then choice (same height) | `zazozon dalazun dahelan dal voen` |
+| **`vuon`** | rank the object lower | *deprioritizes* | **uo** ≈ undo + rank (drop this rank) | `zazozon dugedam vuon` |
 
 English *refuse* vs *leave out*: `zazozon dumudel vun` (*Azozon refuses meat*) vs `zazozon dumudel vuan` (*Azozon excludes meat*). One locked choice vs an open pick: `zazozon duwedal ven` vs `zazozon duwedal vaen`. Rank vs sequence: `zazozon durewem von` (*prioritizes the workaround*: first by importance) vs `zazozon durewem vaon` (*starts with the workaround*: first in order).
 
@@ -165,15 +165,15 @@ For several members, put a [phrase join](/joins) **inside** the `/b/` phrase (`g
 | Ageben | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
 | **`gan` / `han`** | `/ɡ/` noun or `/h/` event toward `/b/` | *including / with* | **a** ≈ add (hold the extra member) | `zugedal gan bluwedal`; `zazozon han blalazun vowurol` |
-| **`gen` / `hen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | **e** ≈ either (lock that pick) | `zuhunam gen blazozon`; `… hen blazozon vowurol` |
-| **`gaen` / `haen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to* (more may follow); `/h/` *among options* | **ae** ≈ add either, and more may follow | `zugedal gaen bluwedal`; `… haen bluwedal vowurol` |
+| **`gen` / `hen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | **e** ≈ choice (lock that pick) | `zuhunam gen blazozon`; `… hen blazozon vowurol` |
+| **`gaen` / `haen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to* (more may follow); `/h/` *among options* | **ae** ≈ add + choice, and more may follow | `zugedal gaen bluwedal`; `… haen bluwedal vowurol` |
 | **`gun` / `hun`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *against / anti-*; `/h/` *refusing* | **u** ≈ undo (reject that member) | `zugedal gun bluwedal`; `… hun blumudel vowurol` |
 | **`guan` / `huan`** | `/ɡ/` or `/h/` toward `/b/` | *without / excluding* | **ua** ≈ undo + add (leave that member out) | `zugedal guan bluwedal`; `… huan bluwedal vowurol` |
-| **`guen` / `huen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to anything but*; `/h/` *barring / anything but* | **ue** ≈ undo + either (bar that one; rest free) | `zowulal guen bluwedal`; `… huen bluwedal vowurol` |
-| **`gon` / `hon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *prioritizing / headed by*; `/h/` *prioritizing* | **o** ≈ order (put this first) | `zobeval gon blabezul`; `… hon blabezul vurewem` |
-| **`gaon` / `haon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *starting with*; `/h/` *starting with* | **ao** ≈ add + order (begin here) | `zobeval gaon blurewem`; `… haon blurewem vowurol` |
-| **`goen` / `hoen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *on a par with*; `/h/` *equating / tying* | **oe** ≈ either + order (same height) | `zedudal goen blogudal`; `… hoen blalazun vowurol` |
-| **`guon` / `huon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *deprioritizing / trailing*; `/h/` *deprioritizing* | **uo** ≈ undo + order (drop this rank) | `zugedal guon blugedam`; `… huon blugedam vowurol` |
+| **`guen` / `huen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to anything but*; `/h/` *barring / anything but* | **ue** ≈ undo + choice (bar that one; rest free) | `zowulal guen bluwedal`; `… huen bluwedal vowurol` |
+| **`gon` / `hon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *prioritizing / headed by*; `/h/` *prioritizing* | **o** ≈ rank (put this first) | `zobeval gon blabezul`; `… hon blabezul vurewem` |
+| **`gaon` / `haon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *starting with*; `/h/` *starting with* | **ao** ≈ add + rank (begin here) | `zobeval gaon blurewem`; `… haon blurewem vowurol` |
+| **`goen` / `hoen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *on a par with*; `/h/` *equating / tying* | **oe** ≈ rank then choice (same height) | `zedudal goen blogudal`; `… hoen blalazun vowurol` |
+| **`guon` / `huon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *deprioritizing / trailing*; `/h/` *deprioritizing* | **uo** ≈ undo + rank (drop this rank) | `zugedal guon blugedam`; `… huon blugedam vowurol` |
 
 *Anti-* vs *without*: `gun blumudel` vs `guan blumudel`. *Without X* vs *anything but X*: `guan bluwedal` vs `guen bluwedal`. Sole pick vs among options: `gen blazozon` vs `gaen blazozon`. Workaround as top priority vs workaround as first step: `gon blurewem` vs `gaon blurewem`.
 

@@ -81,8 +81,8 @@ At the front of a sentence, a resume hook points back to an earlier stretch of t
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| `er …` | back to the main line after a side topic | *Anyway, …* | **o** ≈ one (the one main thread) |
-| `or …` | say an earlier point again | *As I said, …* | **e** ≈ order (the wording again) |
+| `er …` | back to the main line after a side topic | *Anyway, …* | **e** ≈ replaced (the main thread again) |
+| `or …` | say an earlier point again | *As I said, …* | **o** ≈ still A (the wording again) |
 | `ar …` | add to an earlier point, not the last one | *Going back to that, …* | **a** ≈ add |
 | `ur …` | drop the last point | *Never mind that, …* | **u** ≈ undo |
 

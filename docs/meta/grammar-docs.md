@@ -155,7 +155,9 @@ Do **not** add an **Ageben · Use** (or English-bundle) table whose rows are oth
 ## Cues live in tables
 <a id="cues-live-in-tables"></a>
 
-Do not append free-text `**Cue:**` or `**Mnemonic:**` paragraphs after a table (that leftover is editor layout). Put each row’s memory aid in a **Cue** column. For tables whose rows come from the [vowel series](/speech-moves), **Cue** shows how **`a`** / **`o`** / **`e`** / **`u`** maps to that row. Metaphor emoji may serve as the visual cue, consistent with published-root conventions.
+Do not append free-text `**Cue:**` or `**Mnemonic:**` paragraphs after a table (that leftover is editor layout). Put each row’s memory aid in a **Cue** column. For tables whose rows come from a vowel series, **Cue** shows how **`a`** / **`o`** / **`e`** / **`u`** maps to that row (the **cell cue**). Metaphor emoji may serve as the visual cue, consistent with published-root conventions.
+
+A **hang cue** is a different job: one affirmative sentence in the series lead that says why this series reuses that parent’s leftover-logic, plus a short gloss on the [vowels cheat sheet](/cheat-sheets/vowels) tree. It must tell this parent from the near-miss parent. Do not put hang cues in Cue columns, and do not use a cell slogan that would also fit the near-miss parent as the hang sentence.
 
 If a page has several such tables, give each its own **Cue** column; never summarize the whole series once in prose and leave later tables bare. Column names and what may sit in **Cue**: [Cues](#cues-columns).
 

@@ -7,7 +7,7 @@ band: beginner
 ### Prescription (`the`): ought this act for this sake
 <a id="sake-force"></a>
 
-When English puts *should* / *ought to* on **doing** something for a named sake (*Ahelan ought to sing; it's good for their health*), put a `/th/` word on the clause: sake root, mid-word **`th`**, **`e`**, then an ending. The clause's verb names the act that ought to count toward the sake. The sentence then says the act *ought* to happen; it does not report that the act is already happening.
+When English puts *should* / *ought to* on **doing** something for a named sake (*Ahelan ought to sing; it's good for their health*), put a `/th/` word on the clause: sake root, mid-word **`th`**, **`e`**, then an ending. **`e`** is how much of the sake is in: you only have the advice, not the act yet. The clause's verb names the act that ought to count toward the sake. The sentence then says the act *ought* to happen; it does not report that the act is already happening.
 
 The ending says why you think the move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the sake. Use **-r** for a trial: the move is worth trying to see whether it serves the sake, not a settled recommendation. These endings describe why the move is offered and what it aims at, not whether it succeeds. How firmly you put the act on the listener is a separate choice, made by the speech-act word on `/y/` (**`yol`** / **`yom`**, **`yal`** / **`yam`**). If none of the three reasons applies, drop **`the`**.
 

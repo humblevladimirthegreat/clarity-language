@@ -328,7 +328,7 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebe
 | *what are we talking about?* | **`yel zar gehugom.`** | [Asking about the topic](/topic#topic-question) |
 | *one*, generic *you*, *people* (in general) | **`eyen`** | [Generic pronoun](/pronouns#generic-pronoun) |
 | *the latter* / *the former* (of two just named in the same role) | role pointer **`zwuzer`** (*the latter*) / **`zwuzar`** (*the other one*); to keep two apart for longer, tag them when you name them (`zodozel zwal`, then `zwar`) | [Role pointers](/pronouns#role-pointers), [tag pronouns](/tag-pronouns#tag-pronouns) |
-| *call it A*, *let A be a dog*, *suppose A tells E* | tag + **-l** after the phrase (**`zodozel zwal`**) or alone for a placeholder (**`zwal`**); then **`zwar`** | [Tag pronouns](/tag-pronouns#tag-pronouns) |
+| *call it A*, *let A be a dog*, *suppose A tells O* | tag + **-l** after the phrase (**`zodozel zwal`**) or alone for a placeholder (**`zwal`**); then **`zwar`** | [Tag pronouns](/tag-pronouns#tag-pronouns) |
 
 ### Greetings {#greetings}
 

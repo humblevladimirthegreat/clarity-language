@@ -9,7 +9,7 @@ band: beginner
 
 English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Ageben you fold that meaning into the verb or adjective itself. After the root, write **`x`**, then a vowel for *can* or for which kind of *can't*, then the same [ending](word-endings.md) the word would have without it.
 
-The ability vowel says how much can-do is in. Join vowels pick list type. That job stays on join words.
+The ability vowel says how much can-do is in (full, a dip, not yet, never). You are not combining options: a dip is still can-do, not a shorter list.
 
 #### Can (`xa`)
 <a id="can"></a>

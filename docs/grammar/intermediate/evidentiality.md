@@ -88,7 +88,7 @@ DEDUCED grades how far you checked the steps, not the premises. A step can be ai
 
 ### Second-hand and further (`th#N`) {#hand-depth}
 
-English *second-hand*, *third-hand*, *a secondary source* and *a tertiary source* count the hands between the person who was there and you. A channel does not say that. Add a [stance number](number-markers.md#number-as-stance-by-marker) with the rank marker after the channel: **`th#N`** (from 2) is *N-th hand*. The channel says what form the claim reached you in, and the number says how far that is from the event. So `throdol` (`th#2`) is one step removed: told by someone who was there, or written by someone who asked them. `throgel` (`th#3`) is two steps removed: told by someone who was told, or compiled from reports. (cue: **`o`** ≈ order, the place in the chain)
+English *second-hand*, *third-hand*, *a secondary source* and *a tertiary source* count the hands between the person who was there and you. A channel does not say that. Add a [stance number](number-markers.md#number-as-stance-by-marker) with the rank marker after the channel: **`th#N`** (from 2) is *N-th hand*. The channel says what form the claim reached you in, and the number says how far that is from the event. So `throdol` (`th#2`) is one step removed: told by someone who was there, or written by someone who asked them. `throgel` (`th#3`) is two steps removed: told by someone who was told, or compiled from reports. (cue: **`o`** ≈ rank, the place in the chain)
 
 > `zalazun thebam throgel vudurul.`
 >

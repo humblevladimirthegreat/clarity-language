@@ -261,9 +261,9 @@ describe("resolve — tag pronouns (tag-pronouns.md#tag-pronouns)", () => {
   }
 
   it("names the phrase right before it, and recalls it in any role", () => {
-    assert.deepEqual(tags("zodozel zwal dugedel dwel vayebel. zogozel dwar vayebel. zwar vowurol."), [
+    assert.deepEqual(tags("zodozel zwal dugedel dwol vayebel. zogozel dwar vayebel. zwar vowurol."), [
       "zwal→zodozel",
-      "dwel→dugedel",
+      "dwol→dugedel",
       "dwar→zodozel",
       "zwar→zodozel",
     ]);
@@ -280,11 +280,11 @@ describe("resolve — tag pronouns (tag-pronouns.md#tag-pronouns)", () => {
   });
 
   it("introduces a new referent with no phrase before it", () => {
-    assert.deepEqual(tags("zwal bwel vezuyol. zwer dugedel vagedal."), ["zwer→bwel"]);
+    assert.deepEqual(tags("zwal bwol vezuyol. zwor dugedel vagedal."), ["zwor→bwol"]);
   });
 
   it("tags each item of a list, and a tag listed first is new", () => {
-    assert.deepEqual(tags("zodozel zwal zogozel zwel zam vowurol. zwer veruvol."), ["zwal→zodozel", "zwel→zogozel", "zwer→zogozel"]);
+    assert.deepEqual(tags("zodozel zwal zogozel zwol zam vowurol. zwor veruvol."), ["zwal→zodozel", "zwol→zogozel", "zwor→zogozel"]);
     assert.deepEqual(tags("zwal zodozel zam vowurol. zwar veruvol."), ["zwar→zwal"]);
   });
 
@@ -299,17 +299,17 @@ describe("resolve — tag pronouns (tag-pronouns.md#tag-pronouns)", () => {
   });
 
   it("recalls two tags at once with a stacked vowel, and shares their parts in one event", () => {
-    const { anaphors } = resolveOf("zodozel zwal zogozel zwel zam vowurol. zwaer veruvol. zazozon dwaem vayebel.");
-    const pair = anaphors.find((a) => a.pronoun.raw === "zwaer");
+    const { anaphors } = resolveOf("zodozel zwal zogozel zwol zam vowurol. zwaor veruvol. zazozon dwaom vayebel.");
+    const pair = anaphors.find((a) => a.pronoun.raw === "zwaor");
     assert.deepEqual(pair?.antecedents?.map((word) => word.raw), ["zodozel", "zogozel"]);
-    const share = anaphors.find((a) => a.pronoun.raw === "dwaem");
+    const share = anaphors.find((a) => a.pronoun.raw === "dwaom");
     assert.deepEqual(share?.antecedents?.map((word) => word.raw), ["zodozel", "zogozel"]);
-    assert.deepEqual(tags("zwal bwel vezuyol. zwaerx veruvol."), ["zwaerx→zwal"]);
-    assert.throws(() => parseText("zazozon zwal vowurol. zalazun zwel veruvol. zahelan dwaem vayebel."), /tag -r or -m/);
+    assert.deepEqual(tags("zwal bwol vezuyol. zwaorx veruvol."), ["zwaorx→zwal"]);
+    assert.throws(() => parseText("zazozon zwal vowurol. zalazun zwol veruvol. zahelan dwaom vayebel."), /tag -r or -m/);
   });
 
   it("retro-tags a resume, and a newer assignment takes the tag over", () => {
-    assert.deepEqual(tags("zodozel vowurol. dodozer dwel zazozon vayebel. zwer veruvol."), ["dwel→dodozer", "zwer→dodozer"]);
+    assert.deepEqual(tags("zodozel vowurol. dodozer dwol zazozon vayebel. zwor veruvol."), ["dwol→dodozer", "zwor→dodozer"]);
     assert.deepEqual(tags("zodozel zwal vowurol. zogozel zwal veruvol. zwar vehohel."), ["zwal→zodozel", "zwal→zogozel", "zwar→zogozel"]);
   });
 

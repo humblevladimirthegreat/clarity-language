@@ -41,11 +41,11 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 | Ageben | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
 | **`hal` / `ham`** | listed times; empty list is *never* | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never, as far as I know* | **a** ≈ add |
-| **`hel` / `hem`** | one exclusive time menu | *either when A or when B (not both)*; **`hem`** also allows *or never* | | **e** ≈ either |
-| **`hael` / `haem`** | any of the listed times suffices | *when A and/or when B* | | **a** ≈ add the others + **e** ≈ either time suffices |
+| **`hel` / `hem`** | one exclusive time menu | *either when A or when B (not both)*; **`hem`** also allows *or never* | | **e** ≈ choice |
+| **`hael` / `haem`** | any of the listed times suffices | *when A and/or when B* | | **a** ≈ add the others + **e** ≈ choice: any listed time suffices |
 | **`hul` / `hum`** | invert the listed times | *not when…* / *not when…, for one* | | **u** ≈ undo |
 | **`hual` / `huam`** | every time minus listed exceptions | *always except when…* | ***always*** / *usually* (*always, as far as I know*) | **u** ≈ undo then **a** ≈ add |
-| **`huel` / `huem`** | any leftover time minus listed exceptions | *anytime except when…* | | **u** ≈ undo + **e** ≈ either |
+| **`huel` / `huem`** | any leftover time minus listed exceptions | *anytime except when…* | | **u** ≈ undo + **e** ≈ choice |
 
 **Compare with:** **`hur`** is some leftover occasion (*some other time*). **`huel`** is leftover times in general (*anytime except when…*).
 
@@ -56,10 +56,10 @@ Closed **`hol`** ranks the listed occasions: the first one listed is the preferr
 <!-- cheat-sheet: restrictors-spans -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`hol` / `hom`** | priority among occasions | *preferably when A ≻ when B…* (closed / open) | **o** ≈ order |
-| **`haol` / `haom`** | occasions in order | *first when A, then when B* (closed / open) | **a** ≈ add + **o** ≈ order |
-| **`hoel` / `hoem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **o** ≈ order + **e** ≈ either |
-| **`huol` / `huom`** | occasions last-first | *as a last resort when A* (one occasion); several run last-listed first (closed / open) | **u** ≈ undo + **o** ≈ order |
+| **`hol` / `hom`** | priority among occasions | *preferably when A ≻ when B…* (closed / open) | **o** ≈ rank |
+| **`haol` / `haom`** | occasions in order | *first when A, then when B* (closed / open) | **a** ≈ add + **o** ≈ rank |
+| **`hoel` / `hoem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **o** ≈ rank + **e** ≈ choice |
+| **`huol` / `huom`** | occasions last-first | *as a last resort when A* (one occasion); several run last-listed first (closed / open) | **u** ≈ undo + **o** ≈ rank |
 
 > `zazozon vowurol hebeham hanurul hol.`
 >
@@ -83,9 +83,9 @@ Statement readings below. Asking *when*: [When?](/fill-ask-jobs#when).
 | Ageben | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
 | **`har`** | unspecified member of the listed times | *sometimes among these* | *sometimes* | **-r** some member |
-| **`her`** | unspecified member of a one-choice time menu | *anytime among these* | *anytime* | **e** ≈ either + **-r** |
+| **`her`** | unspecified member of a one-choice time menu | *anytime among these* | *anytime* | **e** ≈ choice + **-r** |
 | **`hur`** | unspecified leftover occasion | *some time other than these* | *some other time* | **u** ≈ undo + **-r** |
-| **`hor`** | unspecified first-ranked occasion | *at whichever of these ranks first* | *at the preferred time* | **o** ≈ order + **-r** |
+| **`hor`** | unspecified first-ranked occasion | *at whichever of these ranks first* | *at the preferred time* | **o** ≈ rank + **-r** |
 
 Under a question, **`hor`** asks which time ranks first: *When's best?* With occasions before it, the listener picks the one they prefer.
 

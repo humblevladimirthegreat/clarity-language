@@ -40,7 +40,7 @@ The four consonants left over come next in [alphabet order](/phonotactics#letter
 | `y` | index + middle + ring, hooked |
 | `x` | all four, hooked (claw) |
 
-The vowels go on the other hand. They count up the [vowel pitches](/phonology#vowel-pitch) the way the digits count: a run of 1 to 4 fingers starting at the **pinky**, from the lowest vowel to the highest. More fingers means a higher vowel.
+The vowels go on the other hand. That hand hangs on letter order: a run of 1 to 4 fingers starting at the **pinky**, first vowel to fourth. Pinky is **`a`**, four fingers is **`u`**. The consonant hand does not: it counts digit letters from the index. Piano keys and guitar bass still climb with the count, because [vowel pitch](/phonology#vowel-pitch) also hangs on order (first is low, fourth is high).
 
 | Vowel | Count | Shape |
 |-------|-------|-------|

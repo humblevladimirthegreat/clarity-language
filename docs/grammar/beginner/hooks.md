@@ -118,8 +118,8 @@ English can open a sentence with *Additionally*, *In other words*, *Instead*, or
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `al …` | add another point you stand behind | *Additionally, …* | **a** ≈ add |
-| `ol …` | say the last point another way | *In other words, …* | **e** ≈ order |
-| `el …` | this claim replaces the last one | *Instead, …* / *Actually, …* | **o** ≈ one |
+| `ol …` | say the last point another way | *In other words, …* | **o** ≈ still A |
+| `el …` | this claim replaces the last one | *Instead, …* / *Actually, …* | **e** ≈ replaced |
 | `ul …` | an exception to what was just said | *Except, …* | **u** ≈ undo |
 
 > `al zazozon vowurol.`

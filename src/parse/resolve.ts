@@ -717,7 +717,7 @@ function fillerHas(ctx: Ctx, filler: Filler, key: string): LexWord | undefined {
 }
 
 /**
- * **-r** is the tagged referent, and **-n** the same when it was assigned to a name; **-m** its part in the latest earlier event it filled a part of. A pair (`zwaer`) is
+ * **-r** is the tagged referent, and **-n** the same when it was assigned to a name; **-m** its part in the latest earlier event it filled a part of. A pair (`zwaor`) is
  * both at once: together on **-r**, and their parts in the latest earlier event both took part in on **-m**.
  * A recall or share with a tag not assigned (or, for **-n**, not assigned to a name) stays unbound (enforce rejects it).
  */

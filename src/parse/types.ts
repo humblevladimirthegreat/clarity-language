@@ -126,7 +126,7 @@ export type MorphWordFamily =
   | { kind: "foreign"; payload: string }
   /**
    * Tag pronoun: role letter + `w` + tag vowel (A, E, O, U) + ending (`zwal`, `zwar`, `zwam`; tag-pronouns.md#tag-pronouns).
-   * A stacked vowel is two tags at once (`zwaer` *A and E*), in written order.
+   * A stacked vowel is two tags at once (`zwaor` *A and O*), in written order.
    */
   | { kind: "tag"; vowels: TagVowel[] }
   /**
@@ -459,7 +459,7 @@ export type AnaphorBind = {
   ownSlot?: true;
   /** Absent when no prior match. */
   antecedent?: LexWord;
-  /** A tag pair (`zwaer`): each tag's antecedent, in written order; `antecedent` is the first. */
+  /** A tag pair (`zwaor`): each tag's antecedent, in written order; `antecedent` is the first. */
   antecedents?: LexWord[];
 };
 

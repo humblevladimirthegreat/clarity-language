@@ -114,7 +114,7 @@ English *you* does not say whether you are talking to one person or several. Age
 
 ### Tag pronouns {#tag-pronouns}
 
-English sometimes labels people to keep them apart: *call the first one A*, *suppose A tells E*. A **tag** is that label. You choose it, and it stays on the same referent however many others come and go. Write the role letter, **`w`**, a tag vowel, and an ending. The four vowels are four tags, named by the vowel's [letter name](phonotactics.md#letter-names): A, E, O, U. Roots start with a vowel, so a consonant right after the role letter, or after the `l` of a [hosted](/clause#extra-nouns) `bl-` word, is always a marker: `r` starts a [number word](/numbers), and `w` followed by vowels and an ending is a tag (`blwar` completes the word before it, with a [syllabic `l`](phonotactics.md#syllabic-l)). (cue: **w** ≈ *we call it*: the label you and the listener agree on)
+English sometimes labels people to keep them apart: *call the first one A*, *suppose A tells O*. A **tag** is that label. You choose it, and it stays on the same referent however many others come and go. Write the role letter, **`w`**, a tag vowel, and an ending. The four vowels are four tags, named by the vowel's [letter name](phonotactics.md#letter-names): A, O, E, U. Assign **a** first, then **o**, then **e**, last **u**: the same assignment queue as [digit vowels](numbers.md#counts). That is a teaching default, not a ban: a skipped tag still names that letter. Tags do not measure how much person is in, and they are not how far a [role pointer](/pronouns#role-pointers) reaches. Roots start with a vowel, so a consonant right after the role letter, or after the `l` of a [hosted](/clause#extra-nouns) `bl-` word, is always a marker: `r` starts a [number word](/numbers), and `w` followed by vowels and an ending is a tag (`blwar` completes the word before it, with a [syllabic `l`](phonotactics.md#syllabic-l)). (cue: **w** ≈ *we call it*: the label you and the listener agree on)
 
 <!-- cheat-sheet: people-pointing -->
 | Ageben | Use | English |
@@ -126,13 +126,13 @@ English sometimes labels people to keep them apart: *call the first one A*, *sup
 | `zwam` / `dwam` / `bwam` | tag + **-m**: A's part in the latest event A took part in | *what A did* |
 | `zwarx` / `zwanx` | **-r** or **-n** + **-x** | *A and associates* |
 
-The other tags follow the same pattern: `zwel` / `zwer` / `zwem`, `zwol` / `zwor` / `zwom`, `zwul` / `zwur` / `zwum`.
+The other tags follow the same pattern: `zwol` / `zwor` / `zwom`, `zwel` / `zwer` / `zwem`, `zwul` / `zwur` / `zwum`.
 
-> `zodozel zwal dugedel dwel vayebel. zogozel dwar vayebel. zwar vowurol.`
+> `zodozel zwal dugedel dwol vayebel. zogozel dwar vayebel. zwar vowurol.`
 >
-> [z-dog | z-tag.A] | [d-cookie | d-tag.E] | v-see . z-cat | d-←tag.A | v-see . z-←tag.A | v-walk
+> [z-dog | z-tag.A] | [d-cookie | d-tag.O] | v-see . z-cat | d-←tag.A | v-see . z-←tag.A | v-walk
 >
-> "A dog (A) sees a cookie (E). A cat sees A. A walks."
+> "A dog (A) sees a cookie (O). A cat sees A. A walks."
 
 The last `zwar` is still the dog, though the cat is the newer doer. `zwuzer` would pick the cat. The tag vowel is only the label you chose. How far a role pointer reaches is a different job.
 
@@ -140,17 +140,17 @@ The last `zwar` is still the dog, though the cat is the newer doer. `zwuzer` wou
 - **Recall.** A tag with **-r** is the ordinary [whole-stem resume](/pronouns#resume-r): `zwar` resumes `zwal`, so it picks the latest word with that stem, which is the one that assigned the tag.
 - **Named recall.** A tag with **-n** is **-r** for a tag assigned to a **-n** word (`zazozon zwal`, then `zwan`). It picks the same referent as `zwar`; it adds the claim that A is a name. If A was assigned to a kind (`zodozel zwal`), to a placeholder (`zwal` alone), or to a group that is not all names, `zwan` is not a sentence, and it does not fall back to **-r**. `zwan` is always the tag and never a name, as no root begins with `w`.
 - **Reassign.** A newer `zwal` takes A over, by the same rule.
-- **Tag later.** A tag can go on a resume: `dodozer dwel` is *the dog, call it E*.
-- **Lists.** Inside a [join fence](/joins#right-close), each tag names the item right before it: `zodozel zwal zogozel zwel zam` is *a dog (A) and a cat (E)*. After the join word, a tag names the whole group: `zodozel zogozel zam zwal` is *a dog and a cat, call them A*. A new tag listed with something else goes first: `zwal zodozel zam` is *A and a dog*.
+- **Tag later.** A tag can go on a resume: `dodozer dwol` is *the dog, call it O*.
+- **Lists.** Inside a [join fence](/joins#right-close), each tag names the item right before it: `zodozel zwal zogozel zwol zam` is *a dog (A) and a cat (O)*. After the join word, a tag names the whole group: `zodozel zogozel zam zwal` is *a dog and a cat, call them A*. A new tag listed with something else goes first: `zwal zodozel zam` is *A and a dog*.
 - **No fallback.** An ordinary **-r** can mean the one you both know. A tag **-r** or **-m** with no assignment earlier in the conversation is not a sentence.
 
-With no phrase to tag, a tag holds a placeholder, as in *suppose A tells E*:
+With no phrase to tag, a tag holds a placeholder, as in *suppose A tells O*:
 
-> `zwal vezuyol bwel. zwer dugedel vagedal.`
+> `zwal vezuyol bwol. zwor dugedel vagedal.`
 >
-> z-tag.A | v-tell | b-tag.E . z-←tag.E | d-cookie | v-eat
+> z-tag.A | v-tell | b-tag.O . z-←tag.O | d-cookie | v-eat
 >
-> "A talks to E. E eats a cookie."
+> "A talks to O. O eats a cookie."
 
 A tag with **-m** is a [share](/pronouns#share): A's part in the latest earlier sentence where A filled a part, in whatever role. `zwuzem` picks the event by role; `zwam` picks it by who.
 
@@ -166,24 +166,24 @@ A tag lasts until it is assigned again or the conversation ends with a [goodbye]
 
 #### Two tags at once {#tag-pairs}
 
-A stacked vowel names two tags together. There are six stacks, one for each pair of tags: `zwaer` is *A and E*, `zwaor` *A and O*, `zwoer` *O and E*, `zwuar` *U and A*, `zwuor` *U and O*, and `zwuer` *U and E*. Each pair has this one spelling, whichever tag you name first.
+A stacked vowel names two tags together. There are six stacks, one for each pair of tags. The everyday pair is the first two: `zwaor` is *A and O*. The others are `zwaer` *A and E*, `zwoer` *O and E*, `zwuar` *U and A*, `zwuor` *U and O*, and `zwuer` *U and E*. Each pair has this one spelling, whichever tag you name first.
 
 <!-- cheat-sheet: people-pointing -->
 | Ageben | Use | English |
 |--------|-----|---------|
-| `zwaer` | pair + **-r**: both, together | *A and E* |
-| `zwaem` | pair + **-m**: their parts in the latest earlier event both took part in | *what A and E did* |
-| `zwaerx` | pair **-r** + **-x** | *A, E, and associates* |
+| `zwaor` | pair + **-r**: both, together | *A and O* |
+| `zwaom` | pair + **-m**: their parts in the latest earlier event both took part in | *what A and O did* |
+| `zwaorx` | pair **-r** + **-x** | *A, O, and associates* |
 
-> `zodozel zwal zogozel zwel zam vowurol. zwaer veruvol. zazozon dwaem vayebel.`
+> `zodozel zwal zogozel zwol zam vowurol. zwaor veruvol. zazozon dwaom vayebel.`
 >
-> [[z-dog | z-tag.A] | [z-cat | z-tag.E] | z-and.open] | v-walk . z-←tag.A+E | v-run . z-Azozon | d-←tag.A+E.part | v-see
+> [[z-dog | z-tag.A] | [z-cat | z-tag.O] | z-and.open] | v-walk . z-←tag.A+O | v-run . z-Azozon | d-←tag.A+O.part | v-see
 >
-> "A dog (A) and a cat (E) walk. A and E run. Azozon sees what A and E did."
+> "A dog (A) and a cat (O) walk. A and O run. Azozon sees what A and O did."
 
-Both tags must already be assigned. A pair never assigns: to tag two things, tag each one (`zodozel zwal zogozel zwel zam`), or tag the group as one (`zodozel zogozel zam zwal`).
+Both tags must already be assigned. A pair never assigns: to tag two things, tag each one (`zodozel zwal zogozel zwol zam`), or tag the group as one (`zodozel zogozel zam zwal`).
 
-**Compare with:** `zwaer` says in one word what a list of `zwar` and `zwer` closed by `zam` says.
+**Compare with:** `zwaor` says in one word what a list of `zwar` and `zwor` closed by `zam` says.
 
 **Compare with:** a name already resumes from anywhere (`zazozor`), and two people rarely share a name. Reach for a tag when the referent has no name, when its stem is a long compound, when two of the same kind are in play, or when a role pointer would pick someone newer.
 
@@ -242,20 +242,20 @@ z-tomato | g-red . z-watermelon | g-←red
 [z-Azozon | z-Alazun | z-and] | v-see | h-reciprocity
 :::
 
-**4.** *Ahelan (A) pours. Alazun (E) harvests. A sees E.*
+**4.** *Ahelan (A) pours. Alazun (O) harvests. A sees O.*
 
 ::: details Show answer
-`zahelan zwal vowuvul. zalazun zwel vogelam. zwar dwer vayebel.`
+`zahelan zwal vowuvul. zalazun zwol vogelam. zwar dwor vayebel.`
 
-[z-Ahelan | z-tag.A] | v-pour . [z-Alazun | z-tag.E] | v-harvest . z-←tag.A | d-←tag.E | v-see
+[z-Ahelan | z-tag.A] | v-pour . [z-Alazun | z-tag.O] | v-harvest . z-←tag.A | d-←tag.O | v-see
 :::
 
-**5.** *Azozon (A) and Alazun (E) harvest. A and E scream.*
+**5.** *Azozon (A) and Alazun (O) harvest. A and O scream.*
 
 ::: details Show answer
-`zazozon zwal zalazun zwel zam vogelam. zwaer veyamul.`
+`zazozon zwal zalazun zwol zam vogelam. zwaor veyamul.`
 
-[[z-Azozon | z-tag.A] | [z-Alazun | z-tag.E] | z-and.open] | v-harvest . z-←tag.A+E | v-scream
+[[z-Azozon | z-tag.A] | [z-Alazun | z-tag.O] | z-and.open] | v-harvest . z-←tag.A+O | v-scream
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
@@ -294,14 +294,14 @@ z-Azozon | v-scream . z-Alazun | v-←scream
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azozon (A) pours. Alazun (E) harvests. E screams.* `zazozon zwal vowuvul. zalazun zwel vogelam. zwer veyamul.` or `zazozon zwal vowuvul. zalazun zwel vogelam. zwar veyamul.`
+**1.** *Azozon (A) pours. Alazun (O) harvests. O screams.* `zazozon zwal vowuvul. zalazun zwol vogelam. zwor veyamul.` or `zazozon zwal vowuvul. zalazun zwol vogelam. zwar veyamul.`
 
 ::: details Show answer
-`zazozon zwal vowuvul. zalazun zwel vogelam. zwer veyamul.`
+`zazozon zwal vowuvul. zalazun zwol vogelam. zwor veyamul.`
 
-[z-Azozon | z-tag.A] | v-pour . [z-Alazun | z-tag.E] | v-harvest . z-←tag.E | v-scream
+[z-Azozon | z-tag.A] | v-pour . [z-Alazun | z-tag.O] | v-harvest . z-←tag.O | v-scream
 
-The tag vowel picks the referent: **`e`** is Alazun, whoever acted last.
+The tag vowel picks the referent: **`o`** is Alazun, whoever acted last.
 :::
 
 **2.** *You all scream.* `zawanx veyamul.` or `zawan veyamul.`

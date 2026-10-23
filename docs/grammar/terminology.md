@@ -66,15 +66,15 @@ English names for set / rank join vowels ([joins](/joins)):
 | Name | Vowel | Gloss |
 |------|-------|--------|
 | additive | **a** | *and* (inventory) |
-| choice | **o** | exclusive *or* |
-| cochoice | **ao** | inclusive *and/or* |
+| rank | **o** | earlier outranks later |
+| sequence | **ao** | ordered path: first item is the start, not the top |
 | negation | **u** | *not* / *none of* / standalone *no* |
 | counteradditive | **ua** | *everything but* |
-| counterchoice | **uo** | *anything but* |
-| rank | **e** | earlier outranks later |
+| counterrank | **uo** | rank reversal |
+| choice | **e** | exclusive *or* |
+| cochoice | **ae** | inclusive *and/or* |
 | corank | **oe** | equal rank / tie |
-| sequence | **ae** | ordered path: first item is the start, not the top |
-| counterrank | **ue** | rank reversal |
+| counterchoice | **ue** | *anything but* |
 
 ### Number marker identities
 
@@ -482,6 +482,12 @@ A named citation is a hello (`azozon.`). Add mid-word **`x`** plus **`a`** / **`
 
 [Knowing](/knowing#may-hold)
 
+### Hang cue
+
+Why a vowel series reuses another series’ leftover-logic, in one affirmative sentence. Cell cues stay in Cue columns.
+
+[Vowels cheat sheet](/cheat-sheets/vowels)
+
 ### Holder
 
 Whose view a clause reports. The name is fused onto an evidential, **MAY**, or **NOTIONAL** after that word's own ending letter (`theyomazozon`). The fused word is the speaker's warrant; every other stance in the clause is the holder's.
@@ -489,6 +495,12 @@ Whose view a clause reports. The name is fused onto an evidential, **MAY**, or *
 [Whose view](/holder#holder)
 
 **Compare with:** a person in hosted `/b/` after an evidential is the source you heard it from, not the holder. The ON-BEHALF locus is your own feeling about someone else's stake.
+
+### Hangs on
+
+A series has its own slogans; its letters and leftover-logic come from a parent series or scale.
+
+[Vowels cheat sheet](/cheat-sheets/vowels)
 
 ### Host
 
@@ -529,6 +541,12 @@ Right-close list closer; **conjunct** = listed item.
 Content `/v/` or `/ɡ/` `/h/` + join vowel + **-n**.
 
 [Join across roles](/join-across-roles)
+
+### Join series
+
+**`a`** *and* / **`o`** rank / **`e`** choice / **`u`** *not*; the prefix picks the table.
+
+[Joins](/joins#join-type-vowel-series), [vowels cheat sheet](/cheat-sheets/vowels)
 
 ### Left-bound adjective
 
@@ -773,6 +791,12 @@ The last two letters of a root: a consonant for the kind of thing and a vowel fo
 
 [Root tails](/root-tails#root-tails)
 
+### Scale (size and order)
+
+Two sibling readings of **a o e u**: **size** is amount (biggest to smallest); **order** is sequence (first to fourth). Amount series hang on size; digit vowels, tags, pitch, and the finger-code vowel hand hang on order.
+
+[Vowels cheat sheet](/cheat-sheets/vowels)
+
 ### Scope island
 
 `{ … }` with binder inside.
@@ -827,7 +851,7 @@ Written cite `[…]`, aside `(…)` and opaque `<…>` fences, with a role lette
 
 ### Stand-in
 
-Short word in a role slot (`darl` / `barl` / `derl` / `dorl` / `durl`, open **`-rm`**) that stands for the **following sentence**. Same vowel series as joins; not a join (joins close a list already said).
+Short word in a role slot (`darl` / `barl` / `derl` / `dorl` / `durl`, open **`-rm`**) that stands for the **following sentence**. Same vowels as speech acts; not a join (joins close a list already said).
 
 [Sentence linkers](/sentence-linkers#stand-in)
 
@@ -974,9 +998,9 @@ The fixed, optional pitch of each vowel: `u` high, `e` mid-high, `o` mid-low, `a
 
 ### Vowel series
 
-**`a`** add / **`o`** one / **`e`** order / **`u`** undo; the prefix picks the table.
+A four-cell English map on **a o e u**. The leftover-list map is the [join series](#join-series); other series hang on size or order, or on join.
 
-[Speech moves](/speech-moves)
+[Joins](/joins#join-type-vowel-series), [vowels cheat sheet](/cheat-sheets/vowels)
 
 ### Audible start
 

@@ -80,8 +80,8 @@ Beginner already used *everything but* (**`ua`**). A leading **u** inverts **o**
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **ua** | invert add | *everything but* the listed | **u** ≈ undo + **a** ≈ add |
-| **uo** | invert rank | *A after B after C* (last first) | **u** ≈ undo + **o** ≈ order |
-| **ue** | invert menu | *anything but* the listed (free choice outside) | **u** ≈ undo + **e** ≈ either |
+| **uo** | invert rank | *A after B after C* (last first) | **u** ≈ undo + **o** ≈ rank |
+| **ue** | invert menu | *anything but* the listed (free choice outside) | **u** ≈ undo + **e** ≈ choice |
 
 What *everything* or *anything* ranges over comes from context, or from a [SHARED](#shared-after-the-join) `/ɡ/` that names the kind. Only plain **`…om`** means *optional*; on **ue**, **-m** leaves the list open as usual. **-r** still attaches only to one-vowel **a** / **o** / **e** / **u**.
 
@@ -116,7 +116,7 @@ Rank **`o`** puts the first item at the **top** (*A matters more than B*). When 
 | Single-item | `X zaol` *start with X* / *from X on* | `X zaom` *maybe start with X* |
 | Standalone | `zaol` *in no particular order* / *any order* | `zaom` *not sure where to start* |
 
-A sequence does not say which item is better. With a SHARED quality it sorts the list from low to high. Two numbers in a sequence are two values in order (`zragel zrazal zaol` = *3, then 5*). (cue: **a** ≈ add + **o** ≈ order: *and then*)
+A sequence does not say which item is better. With a SHARED quality it sorts the list from low to high. Two numbers in a sequence are two values in order (`zragel zrazal zaol` = *3, then 5*). (cue: **a** ≈ add + **o** ≈ rank: *and then*)
 
 ### Respectively (`wubam`) {#respectively}
 

@@ -199,7 +199,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *scream* | `veyamul` | 😱 |
 | *therefore* | `xahom` | ➡️ from *east*: the sun's path, so the talk moves on |
 | *that-clause* | `darl` | **a** ≈ add: the content that follows |
-| *whether-clause* | `derl` | **o** ≈ one: pick yes or no |
+| *whether-clause* | `derl` | **e** ≈ choice: pick yes or no |
 | *because* | `thahum` | 🧱 from *wall*: the cause is what the result sits on |
 | *if* | `thohem` | 🚪 from *door*: walk through only if it opens |
 | *although* | `hezem` | 🦓 from *zebra*: two stripes, still one animal |

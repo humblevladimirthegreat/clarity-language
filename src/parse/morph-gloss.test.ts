@@ -191,11 +191,11 @@ describe("morphGlossLine — glosses.md single words", () => {
   });
 
   it("glosses a tag pronoun by its letter name, never the referent (glosses.md § Anaphors)", () => {
-    expectLine("zodozel zwal dogozel dwel vayebel. zwer vowurol.", "[z-dog | z-tag.A] | [d-cat | d-tag.E] | v-see . z-←tag.E | v-walk");
+    expectLine("zodozel zwal dogozel dwol vayebel. zwor vowurol.", "[z-dog | z-tag.A] | [d-cat | d-tag.O] | v-see . z-←tag.O | v-walk");
     expectLine("zazozon zwal vowurol. zalazun dwam vayebel.", "[z-Azozon | z-tag.A] | v-walk . z-Alazun | d-←tag.A.part | v-see");
     expectLine("zazozon zwal vowurol. zwarx vezuvel.", "[z-Azozon | z-tag.A] | v-walk . z-←tag.A-x | v-sleep");
     expectLine("zodozel zogozel zam zwal vowurol.", "[[z-dog | z-cat | z-and.open] | z-tag.A] | v-walk");
-    expectLine("zwal bwel vezuyol. zwaer vowurol.", "z-tag.A | b-tag.E | v-tell . z-←tag.A+E | v-walk");
+    expectLine("zwal bwol vezuyol. zwaor vowurol.", "z-tag.A | b-tag.O | v-tell . z-←tag.A+O | v-walk");
   });
 
   it("scientific and percent number writing", () => {

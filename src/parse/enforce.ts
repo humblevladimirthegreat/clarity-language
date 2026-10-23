@@ -915,7 +915,7 @@ function enforceVerbPredicate(units: Unit[]): void {
 
 /**
  * Tag pronouns (tag-pronouns.md#tag-pronouns): `/z/` `/d/` `/b/` only (`/y/` `/x/` closed by D-24, the rest open),
- * gl- never; **-l** / **-r** / **-m** / **-n**; **-x** only on **-r** / **-n** (*A and associates*); a pair (`zwaer`) recalls or shares only.
+ * gl- never; **-l** / **-r** / **-m** / **-n**; **-x** only on **-r** / **-n** (*A and associates*); a pair (`zwaor`) recalls or shares only.
  */
 function enforceTag(word: LexWord): void {
   if (word.gl || !(word.pos === "z" || word.pos === "d" || word.pos === "b")) throw new ConstructionError("tagSlot", word.raw);

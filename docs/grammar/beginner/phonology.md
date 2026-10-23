@@ -41,7 +41,7 @@ To find `u`, start from `a`: keep the tongue centered, close the jaw, and round 
 
 #### Vowel pitch {#vowel-pitch}
 
-Each vowel also has its own **pitch**, always the same one: `u` is high, `e` mid-high, `o` mid-low, and `a` low. Vowel pitch is optional and adds no meaning. It backs up the vowel's sound, so a listener who half-hears a vowel can still tell which one it was. When a vowel's sound and its pitch disagree, trust the sound. The opposite vowels `a` and `u` are also the furthest apart in pitch. Keep each vowel's pitch when you say a word with feeling: make it louder, not higher.
+Each vowel also has its own **pitch**, always the same one: `a` is low, `o` mid-low, `e` mid-high, and `u` high. That climb hangs on letter order (first is low, fourth is high). Vowel pitch is optional and adds no meaning of its own. It backs up the vowel's sound, so a listener who half-hears a vowel can still tell which one it was. When a vowel's sound and its pitch disagree, trust the sound. The opposite vowels `a` and `u` are also the furthest apart in pitch. Keep each vowel's pitch when you say a word with feeling: make it louder, not higher.
 
 Voices differ, so a vowel's pitch is not a fixed note but how far it sits above your **home note**, the note you say `a` on. Any comfortable note works. To practice, pick a pattern and a tempo below, choose a home note that sits easily low in your speaking voice (**Mid** is the piano's `a`), press **Play**, and say each vowel on its note as it lights up. The corner shows the piano note while it sounds. Matching a note is a skill like any other, and it improves quickly with practice. Each vowel's sound already tells it apart, so your Ageben is clear while you learn.
 

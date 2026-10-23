@@ -72,7 +72,7 @@ describe("splitFreeEnglish", () => {
 describe("parenGroups", () => {
   it("counts top-level groups only", () => {
     assert.equal(parenGroups("Azozon walks."), 0);
-    assert.equal(parenGroups("Azozon (A) and Alazun (E) harvest."), 2);
+    assert.equal(parenGroups("Azozon (A) and Alazun (O) harvest."), 2);
     assert.equal(parenGroups("Azozon walks (quietly (very))."), 1);
   });
 });
@@ -85,8 +85,8 @@ describe("extraParens", () => {
   });
 
   it("allows a letter group only for a tag the gloss sets", () => {
-    const gloss = "[[z-dog | z-tag.A] | [z-cat | z-tag.E] | z-and.open] | v-walk . z-←tag.A+E | v-run";
-    assert.equal(extraParens("A dog (A) and a cat (E) walk. A and E run.", gloss), 0);
+    const gloss = "[[z-dog | z-tag.A] | [z-cat | z-tag.O] | z-and.open] | v-walk . z-←tag.A+O | v-run";
+    assert.equal(extraParens("A dog (A) and a cat (O) walk. A and O run.", gloss), 0);
     assert.equal(extraParens("A dog (A) walks (quietly).", gloss), 1);
     assert.equal(extraParens("Azozon (A) punches.", "z-Azozon | d-←tag.A | v-punch"), 1);
   });

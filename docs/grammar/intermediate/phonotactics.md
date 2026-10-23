@@ -78,6 +78,8 @@ Audio of *bottle* is from Wikimedia Commons under [CC BY-SA 3.0](https://creativ
 
 When you **spell a word aloud** or **name a letter**, say the Ageben name for it. Pause between names so two names do not run into one syllable. A code inside a number word spells its letters with these names too, and makes the pause required before a vowel (`zro'ebal`).
 
+Each digit letter keeps its consonant and takes the [opposite vowel](phonology.md#opposite-vowels) of the digit (`a`↔`u`, `o`↔`e`), so naming a letter never sounds like counting. Reciting those ten names walks **u e o a** (`bu` `de` `go` `ha` …) as a consequence, not as a series. The rest of the alphabet continues that walk.
+
 The table is in **alphabetical order**. The ten letters that begin a digit syllable come first, in digit order (1 to 9, then 0), so `b` is the first letter and `m` the tenth. The other consonants follow, and the vowels come last.
 
 <!-- cheat-sheet: sounds-spelling -->

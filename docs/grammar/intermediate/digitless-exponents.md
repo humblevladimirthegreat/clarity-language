@@ -18,8 +18,8 @@ Beginner already used **`gral`** for *more than one*. Any marker may drop every 
 |--------|---------|---------|-----|
 | **`ra`** (`…+`) | unspecified **positive scalar**, specialized to **plural count / amount `>1`** | complements `…+0` (zero), `…+1` (one), `…+N` (exact N≥2) | **`a`** ≈ add |
 | **`ru`** (`…-`) | unspecified **negative scalar** | *some negative amount*; exact negatives keep digits (`…-N`) | **`u`** ≈ undo |
-| **`ro`** (`…#`) | unspecified **rank from the start** | *some nth* / *some place*; exact ranks keep digits (`…#N`) | **`o`** ≈ order |
-| **`re`** (`…_`) | unspecified **digit-string / label** | *some code*; *a label*; exact labels keep digits (`…_…`) | **`e`** ≈ either (one string) |
+| **`ro`** (`…#`) | unspecified **rank from the start** | *some nth* / *some place*; exact ranks keep digits (`…#N`) | **`o`** ≈ rank |
+| **`re`** (`…_`) | unspecified **digit-string / label** | *some code*; *a label*; exact labels keep digits (`…_…`) | **`e`** ≈ choice (one string) |
 
 **Compare with:** noun [**-x**](/plurality) names a **group of things**. Digitless **`ra`** names a **count or amount above one** without saying how many. Both may sit on the same noun (`zogozelx gral`).
 
@@ -74,8 +74,8 @@ To ask for a **number**, write a [number word](/numbers) with no digits and the 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `g=+` (`grar`) | fill a count or amount | *How many?* / *How much?* | **a** ≈ add |
-| `g=#` (`gror`) | fill a place in order | *Which place?* (*which floor, which chapter*) | **e** ≈ order |
-| `g=_` (`grer`) | fill a code or label | *What number?* (*phone, room*) | **o** ≈ one |
+| `g=#` (`gror`) | fill a place in order | *Which place?* (*which floor, which chapter*) | **o** ≈ rank |
+| `g=_` (`grer`) | fill a code or label | *What number?* (*phone, room*) | **e** ≈ choice |
 
 > `yel el bror zalazun vehohel.`
 > y-question | [at | b-which-place] | z-Alazun | v-sit

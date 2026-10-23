@@ -14,8 +14,8 @@ Beginner already used closed **-l** and open **-m** for how complete B is, or ho
 | | **-l** | **-m** |
 |--|--------|--------|
 | **a** (*including*) | `al`: including B | `am`: including B, and maybe more |
-| **e** (*rather*) | `ol`: or rather B | `om`: or rather B, and maybe more |
-| **o** (*instead*) | `el`: instead (B in place of A) | `em`: B instead of A, B being one of several possible replacements |
+| **o** (*rather*) | `ol`: or rather B | `om`: or rather B, and maybe more |
+| **e** (*instead*) | `el`: instead (B in place of A) | `em`: B instead of A, B being one of several possible replacements |
 | **u** (*except*) | `ul`: except B | `um`: except B, and maybe more |
 
 #### Discourse
@@ -26,8 +26,8 @@ At the front of a sentence, **-m** says this sentence is one of several you coul
 | | **-l** | **-m** |
 |--|--------|--------|
 | **a** (*additionally*) | `al`: *Additionally, …* | `am`: *Among other things, …* |
-| **e** (*in other words*) | `ol`: *In other words, …* | `om`: *To put it one way, …* |
-| **o** (*instead*) | `el`: *Instead, …* | `em`: *Instead, for instance, …* |
+| **o** (*in other words*) | `ol`: *In other words, …* | `om`: *To put it one way, …* |
+| **e** (*instead*) | `el`: *Instead, …* | `em`: *Instead, for instance, …* |
 | **u** (*except*) | `ul`: *Except, …* | `um`: *Except, among other exceptions, …* |
 
 To make a whole `A HOOK B` phrase into a name (a store, a title, a handle), give the hook **-n** ([titled phrases](proper-names.md#titled-phrases)). Otherwise use **-l** or **-m**. The two sides keep their usual endings (kinds **-l**, abstracts **-m**, a name **-n**).
@@ -131,7 +131,7 @@ When the items sit on a line with an order (people in a queue, days, chapters, n
 |--------|-----|---------|-----|
 | **`oel`** | A, B, and everything between | *A through B* | **o** ≈ at + **e** ≈ for: start at A, head for B |
 | **`ual`** | only what lies between | *strictly between A and B* | **ua** ≈ take away both ends |
-| **`uol`** | only what lies outside | *outside A–B* | **ue** ≈ undo the stretch from A to B |
+| **`uol`** | only what lies outside | *outside A–B* | **uo** ≈ undo the stretch from A to B |
 
 The range runs from A to B, in the order you say them. Endings work as on other hooks: **-m** makes the ends soft (*roughly A through B*), and **-n** names the range as a whole. **-r** stands in for one member you are not naming, and under a [question](/questions#fill-ask-r) it asks which one:
 

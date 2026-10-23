@@ -798,7 +798,7 @@ export const REJECTIONS = {
   tagSlot: { anchor: "tag-pronouns.md#tag-pronouns", summary: "a tag pronoun fills /z/, /d/, or /b/; to call someone or return to them as the topic, use their name" },
   tagEnding: { anchor: "tag-pronouns.md#tag-pronouns", summary: "a tag pronoun takes -l (assign), -r (recall), -m (share), or -n (recall a named one)" },
   tagPronoun: { anchor: "tag-pronouns.md#tag-pronouns", summary: "a tag names a phrase that is not already a fixed pronoun: never a special (uwen, awan, ayan, umen), generic, or topic pronoun, or another tag; a resume or role pointer takes one" },
-  tagPairAssign: { anchor: "tag-pronouns.md#tag-pairs", summary: "a tag pair (`zwaer`) recalls or shares two tags already assigned; assign each tag on its own (`zodozel zwal zogozel zwel zam`)" },
+  tagPairAssign: { anchor: "tag-pronouns.md#tag-pairs", summary: "a tag pair (`zwaor`) recalls or shares two tags already assigned; assign each tag on its own (`zodozel zwal zogozel zwol zam`)" },
   tagPlural: { anchor: "tag-pronouns.md#tag-pronouns", summary: "a tag takes -x only on -r or -n (`zwarx`, `zwanx`, A and associates); to tag a group, tag its plural phrase (`zodozelx zwal`)" },
   joinPlural: { anchor: "joins.md#unspecified-member-r-phrase", summary: "a join takes -x after -r on /z/ /d/ /b/ (`zarx`, some ones), or on /v/ for one shared act (`varx`)" },
   holderSeamW: { anchor: "holder.md#holder", summary: "a tag is never a holder: the seam letter before `w` would end a syllable mid-word (D-56); for a holder you don't name, name the kind of person (`theyomeyel`)" },

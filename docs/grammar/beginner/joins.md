@@ -77,7 +77,7 @@ Objects and extra nouns list the same way. Two `/d/` objects close with `dal`; t
 ### Choice (`e`) {#choice-e}
 <a id="empty-allowed-om"></a>
 
-When English would offer a menu and ask to *pick one*, or leave the pick *(optional)*, use vowel **e**. Closed **-l** (`zel`) means pick one of the listed items. Open **-m** (`zem`) means the pick is optional. (cue: **e** ≈ either.)
+When English would offer a menu and ask to *pick one*, or leave the pick *(optional)*, use vowel **e**. Closed **-l** (`zel`) means pick one of the listed items. Open **-m** (`zem`) means the pick is optional. (cue: **e** ≈ choice.)
 
 > `zedudal zogudal zel.`
 >
@@ -175,7 +175,7 @@ When English would say *everything* / *everyone*, write a standalone join with t
 
 The *and* / *or* / *not* joins above are **set** joins: the items share a slot as a group, and writing one before the other does not rank them. A **rank** join is the other English job: you care which item comes first (priority, favorite, *A before B*).
 
-Write the items in that order, then a join with vowel **o**. The earlier item outranks the later. One item before `zol` means *only X matters*; before `zom`, *X first* / *mainly X*. (cue: **o** ≈ order.)
+Write the items in that order, then a join with vowel **o**. The earlier item outranks the later. One item before `zol` means *only X matters*; before `zom`, *X first* / *mainly X*. (cue: **o** ≈ rank.)
 
 > `zazozon zol.`
 >
@@ -190,8 +190,8 @@ When English says *something* or *someone*, or *one of these* without saying whi
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `zar` / `var` / `xar` | unspecified member of an add-set | *something* / *do something* / *something happened* | **a** ≈ add |
-| `zer` / `ver` / `xer` | unspecified member of a menu | *anything* / *do anything* | **e** ≈ either |
-| `zor` / `vor` / `xor` | unspecified member of a ranking | *whatever ranks highest* | **o** ≈ order |
+| `zer` / `ver` / `xer` | unspecified member of a menu | *anything* / *do anything* | **e** ≈ choice |
+| `zor` / `vor` / `xor` | unspecified member of a ranking | *whatever ranks highest* | **o** ≈ rank |
 | `zur` / `vur` / `xur` | unspecified leftover | *something else* / *someone else* | **u** ≈ undo |
 
 > `zar.`
@@ -238,10 +238,10 @@ When English says *some of them* or *some people*, more than one, add [**-x**](p
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** | add the items | *and* | **a** ≈ add |
-| **o** | rank among items | *A before B*; one item *only X matters* | **o** ≈ order |
+| **o** | rank among items | *A before B*; one item *only X matters* | **o** ≈ rank |
 | **u** | deny the listed | *not* / *neither* / *none of* / standalone *no* | **u** ≈ undo |
 | **ua** | universal; one listed item is the leftover | standalone *everything*; one item *everything but* | **u** ≈ undo, then **a** ≈ add |
-| **e** | exclusive choice | exclusive *or* | **e** ≈ either |
+| **e** | exclusive choice | exclusive *or* | **e** ≈ choice |
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|

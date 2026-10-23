@@ -25,7 +25,7 @@ Digits are spoken and written as these syllables:
 Two patterns build the table:
 
 - **Consonant:** 1–3 are the stops **b d g**, each further back in the mouth; 4–6 the breathy sounds **h z v**, each further forward; and 7–0 the four [word endings](word-endings.md) **r l n m**.
-- **Vowel:** the digits climb the [vowel pitches](phonology.md#vowel-pitch) **a o e u**, low to high, like the notes of a scale. Digit 1 is the lowest, 4 the highest, and 5 starts the climb again. 0 counts as the tenth digit, so it carries on the climb.
+- **Vowel:** counting assigns the next unused vowel in **a o e u** (first, second, third, fourth): `ba` `do` `ge` `hu`, then the climb starts again (`za` `vo` `re` `lu` `na` `mo`). [Vowel pitch](phonology.md#vowel-pitch) is how that count sounds (first is low, fourth is high), not the parent of the digits.
 
 Three cues help with the endings: a **7**'s stroke runs back to the left, and **-r** is the ending that points back; an **8** is a loop (*l* for *loop*); for **0** the lips close and nothing comes out (*mmm*).
 
@@ -62,7 +62,7 @@ To say **which place** a thing has in a series (*the first*, *the second*, …),
 | Marker | Use | English | Cue |
 |--------|--------|---------|-----|
 | **`ra`** | count | *how many* | **`a`** ≈ add |
-| **`ro`** | rank | *which place* | **`o`** ≈ order |
+| **`ro`** | rank | *which place* | **`o`** ≈ rank |
 
 The **`r`** right after the role letter tells you the word is a number: no other word puts a consonant there.
 

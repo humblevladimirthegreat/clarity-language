@@ -138,13 +138,13 @@ One noun can carry both a **`tha`** word and a **`thu`** word. The pair can run 
 
 A sake word is a sake root with mid-word **`th`**, a stance vowel, and an ending. On `/ɡ/` it describes a **noun you keep**; on `/th/` it describes the **event**. A noun that is not yours takes the stimulus word, with the same sake word on `/w/` immediately before it.
 
-A sake word ends in **-l**, **-m**, or **-r**, from that stance’s table. It never takes **-n**. The stance itself is one vowel after **`th`**.
+A sake word ends in **-l**, **-m**, or **-r**, from that stance’s table. It never takes **-n**. The stance itself is one vowel after **`th`**. That vowel says how much of the sake is in (the payoff, doing-for, only the advice, none). Motive is more “have” than prescription: the act is happening for the sake, versus only being told it ought to.
 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`tha`** | the belonging or event pays off this sake | *serves* / *met* | **a** ≈ add (the payoff is in) |
-| **`thu`** | the belonging or event subtracts from this sake | *detracts from* / *unmet* | **u** ≈ undo (the sake is taken down) |
+| **`tha`** | the belonging or event pays off this sake | *serves* / *met* | **a** ≈ the payoff is in |
+| **`thu`** | the belonging or event subtracts from this sake | *detracts from* / *unmet* | **u** ≈ none of the sake |
 
 On `/th/`, the sake word says how the event itself stands toward the sake:
 

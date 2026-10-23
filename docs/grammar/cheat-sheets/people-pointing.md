@@ -55,7 +55,7 @@ Endings on a pointer: **-r** the same one, **-l** [a new one](/pronouns#a-new-on
 
 ### Tags {#tags}
 
-A [tag](/tag-pronouns#tag-pronouns) is a label you choose: role letter, `w`, a tag vowel (A **a**, E **e**, O **o**, U **u**), an ending. It stays on its referent. Tags fill `/z/`, `/d/`, `/b/` only.
+A [tag](/tag-pronouns#tag-pronouns) is a label you choose: role letter, `w`, a tag vowel (assign **a** first, then **o**, then **e**, last **u**), an ending. It stays on its referent. Tags fill `/z/`, `/d/`, `/b/` only.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -65,9 +65,9 @@ A [tag](/tag-pronouns#tag-pronouns) is a label you choose: role letter, `w`, a t
 | Recall a tag assigned to a name | `zwan` / `dwan` / `bwan` | *A* (a named one) | I |
 | A's part in the latest event | `zwam` / `dwam` / `bwam` | *what A did* | I |
 | A and associates | `zwarx` / `zwanx` | *A and associates* | I |
-| Two tags (six stacks: `zwaer` `zwaor` `zwoer` `zwuar` `zwuor` `zwuer`) | `zwaer` | *A and E* | I |
-| Two tags, their parts | `zwaem` | *what A and E did* | I |
-| Two tags and associates | `zwaerx` | *A, E, and associates* | I |
+| Two tags (six stacks: `zwaor` `zwaer` `zwoer` `zwuar` `zwuor` `zwuer`) | `zwaor` | *A and O* | I |
+| Two tags, their parts | `zwaom` | *what A and O did* | I |
+| Two tags and associates | `zwaorx` | *A, O, and associates* | I |
 
 ## The topic {#topic}
 
