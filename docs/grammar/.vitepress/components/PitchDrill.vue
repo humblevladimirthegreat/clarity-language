@@ -35,6 +35,7 @@ import { noteName, pianoBus, pianoContext, pianoVoice } from '../lib/piano-voice
 // *Strict* (only while checking) halves the match window. Without the microphone, the home-note buttons set the home.
 
 const props = defineProps<{ level?: 'intermediate' }>()
+const homeSelectId = `pd-home-${props.level ?? 'beginner'}`
 
 const modes = computed(() => DRILL_MODES.filter((m) => (props.level ? m.intermediate : m.beginner)))
 
@@ -289,6 +290,10 @@ function setHome(midi: number): void {
   preview('a')
 }
 
+function onHome(e: Event): void {
+  setHome(Number((e.target as HTMLSelectElement).value))
+}
+
 let findRaf = 0
 
 function endFind(): void {
@@ -374,18 +379,13 @@ onBeforeUnmount(() => {
     <div class="pd-now" aria-live="polite">{{ playedName }}</div>
     <div class="pd-controls">
       <div class="pd-row">
-        <div class="pd-group" role="group" aria-label="Home note">
-          <button
-            v-for="h in PITCH_HOMES"
-            :key="h.midi"
-            type="button"
-            class="btn"
-            :class="{ on: base === h.midi }"
-            :aria-pressed="base === h.midi"
-            @click="setHome(h.midi)"
-          >
-            {{ h.label }}
-          </button>
+        <div class="pd-group">
+          <label class="pd-home" :for="homeSelectId">
+            Home
+            <select :id="homeSelectId" :value="base" @change="onHome">
+              <option v-for="h in PITCH_HOMES" :key="h.midi" :value="h.midi">{{ h.label }}</option>
+            </select>
+          </label>
           <button type="button" class="btn find" :class="{ on: finding }" :aria-pressed="finding" @click="findA">
             <template v-if="finding">Listening… {{ hearing === null ? '' : noteName(Math.round(hearing)) }}</template>
             <template v-else>🎤 Find my home note</template>
@@ -510,6 +510,30 @@ onBeforeUnmount(() => {
   font-size: 0.8rem;
   color: var(--vp-c-text-2);
   margin-inline-end: 0.15rem;
+}
+
+.pd-home {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--vp-c-text-2);
+}
+
+.pd-home select {
+  font: inherit;
+  font-size: 0.85rem;
+  line-height: 1;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  cursor: pointer;
+}
+
+.pd-home select:hover {
+  border-color: var(--vp-c-brand-1);
 }
 
 .btn {

@@ -65,6 +65,8 @@ export default defineConfig({
       fs: {
         allow: [repoRoot],
       },
+      // Rebuild on disk; the tab only picks up changes on a manual refresh.
+      hmr: false,
     },
   },
   themeConfig: {
