@@ -325,13 +325,13 @@ Set **`a`** + singular SHARED = *both/each are ADJ*.
 
 `zuan` plus a SHARED kind: the kind itself as one individual, not its members (*the dodo is extinct*).
 
-[Rank joins](/rank-joins#kind-reference)
+[Universals, domains, and generics](/universals-domains#kind-reference)
 
 ### Domain / generic / *every K*
 
 SHARED kind plus invert / standalone joins; a SHARED word after the join can bound the set (`zual gwodanam blayan` *everyone we know*).
 
-[Rank joins](/rank-joins#universals-domains-generics)
+[Universals, domains, and generics](/universals-domains#universals-domains-generics)
 
 Closed **-l** allows no exceptions; open **-m** leaves the exceptions open (*as far as I know*, *as a rule*). A channel on the clause says how you know the general claim.
 
@@ -486,7 +486,7 @@ A named citation is a hello (`uzozen.`). Add mid-word **`x`** plus **`a`** / **`
 
 Whose view a clause reports. The name is fused onto an evidential, **MAY**, or **NOTIONAL** after that word's own ending letter (`theyemuzozen`). The fused word is the speaker's warrant; every other stance in the clause is the holder's.
 
-[Evidentiality](/evidentiality#holder)
+[Whose view](/holder#holder)
 
 **Compare with:** a person in hosted `/b/` after an evidential is the source you heard it from, not the holder. The ON-BEHALF locus is your own feeling about someone else's stake.
 
@@ -678,7 +678,7 @@ Motive **`tho`** endings.
 
 Singling out one word against others: the contrast mark `&`. Word order adds no prominence.
 
-[Emphasis and audible start](/emphasis#english-emphasis), [Speech acts and tone marks](/speech-acts#tone-marks)
+[Emphasis and audible start](/emphasis#english-emphasis), [Tone marks](/tone-marks#tone-marks)
 
 ### Quasi
 
@@ -744,7 +744,7 @@ Role letter + extra-noun hook vowels + **`x`** (or **`mx`** for the hook's **-m*
 
 Role letter + extra-noun hook vowels (+ **`m`** for the frame or **`r`** to point back) + **`x`** + a join, with the hook's landmark as the `bl-` word after it: the join's set, bounded by that relation (`zoxual blahehal` *everyone at the house*, `dexar bluwon` *something for me*). On `/h/` it bounds which times a restrictor covers (`huxal blenulul` *never since the thunderstorm*).
 
-[Hook compounds](/hook-compounds#hooked-joins)
+[Hooked joins](/hooked-joins#hooked-joins)
 
 ### Role compound / agent / patient / recipient
 <a id="role-compound--agent--place--patient--recipient"></a>

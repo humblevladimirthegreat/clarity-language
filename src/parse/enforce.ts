@@ -114,11 +114,11 @@ const ROLE_COMPOUND_POS = new Set(["z", "d", "b", "g", "h", "x", "y"]);
 const HOOK_PREFIX_POS = new Set(["z", "d", "b", "g", "h"]);
 /** Ability goes on a verb or a property (can-and-cant.md#ability). */
 const ABILITY_POS = new Set(["g", "v"]);
-/** A hooked join bounds a set of participants, or the times a restrictor covers (hook-compounds.md#hooked-joins). */
+/** A hooked join bounds a set of participants, or the times a restrictor covers (hooked-joins.md#hooked-joins). */
 const HOOKED_JOIN_POS = new Set(["z", "d", "b", "h"]);
 
 /**
- * A hooked join goes on `/z/`, `/d/`, `/b/` or `/h/`, never hosted (hook-compounds.md#hooked-joins). Its point-back is a hook
+ * A hooked join goes on `/z/`, `/d/`, `/b/` or `/h/`, never hosted (hooked-joins.md#hooked-joins). Its point-back is a hook
  * that points back on its own. On `/h/` the join is a bare restrictor and the hook one with a time reading.
  */
 function enforceHookedJoinWord(word: LexWord): void {
@@ -131,7 +131,7 @@ function enforceHookedJoinWord(word: LexWord): void {
   if (!TIME_HOOKS.has(hook)) throw new ConstructionError("hookedJoinTime", word.raw);
 }
 
-/** A hooked join's landmark: the `bl-` word after hook **-l** or **-m**, and none after point-back **-r** (hook-compounds.md#hooked-joins). */
+/** A hooked join's landmark: the `bl-` word after hook **-l** or **-m**, and none after point-back **-r** (hooked-joins.md#hooked-joins). */
 function enforceHookedJoinLandmark(join: LexWord, landmark: LexWord | undefined): void {
   const hook = joinHook(join);
   if (!hook) return;
@@ -140,7 +140,7 @@ function enforceHookedJoinLandmark(join: LexWord, landmark: LexWord | undefined)
     return;
   }
   if (!landmark) throw new ConstructionError("hookedJoinLandmark", join.raw);
-  // Only an `/h/` hooked join takes a clause (hook-compounds.md#hooked-joins-clause).
+  // Only an `/h/` hooked join takes a clause (hooked-joins.md#hooked-joins-clause).
   if (join.pos !== "h" && isStandIn(landmark)) throw new ConstructionError("hookedJoinClause", `${join.raw} ${landmark.raw}`);
 }
 
@@ -254,7 +254,7 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
 /**
  * A `bl-` word completes the `/ɡ/`, `/h/` or `/th/` word or the hooked join right before it, so it needs that host; a
  * plain `/b/` there is the recipient. In a hosted list every `/b/` item takes `bl-`, and the join word does not
- * (clause.md#extra-nouns). Only an `/h/` hooked join takes a clause (hook-compounds.md#hooked-joins-clause).
+ * (clause.md#extra-nouns). Only an `/h/` hooked join takes a clause (hooked-joins.md#hooked-joins-clause).
  */
 function enforceLocks(tokens: IToken[]): void {
   let list = false;
@@ -392,7 +392,7 @@ function enforceRespectively(units: Unit[]): void {
 
 function enforceWord(word: LexWord, tables: ClassifyTables): void {
   enforceHookedJoinWord(word);
-  // A holder names people, so it takes -x like any noun (`thodumazawanx`, evidentiality.md#holder).
+  // A holder names people, so it takes -x like any noun (`thodumazawanx`, holder.md#holder).
   const holder = word.family.kind === "x" && word.family.xFamily === "holder";
   // A topic word is a noun, so it takes -x like one (`xazawanx`, topic.md#topic-groups); a published linker does not.
   const topic = word.pos === "x" && (word.family.kind === "content" || isTopicCompound(word)) && !linkerEnglish(word);
@@ -548,7 +548,7 @@ function enforceHostedStandIn(units: Unit[], index: number, unit: HUnit, tables:
     return;
   }
   // A simile's model may be an event: `humum blarl` + the next sentence (relations.md#similative). So may the time an
-  // `/h/` hooked join bounds (`huxal blarl`, hook-compounds.md#hooked-joins-clause).
+  // `/h/` hooked join bounds (`huxal blarl`, hooked-joins.md#hooked-joins-clause).
   if (!hosted.grounds && (host.overlay?.kind === "similative" || joinHook(host)) && bound.pos === "b" && s === "a") return;
   if (hosted.grounds || !isPole(host)) throw new ConstructionError("standInHost", `${host.raw} ${bound.raw}`);
   const undoHost = host.overlay!.gloss === "so-that" || host.overlay!.gloss === "if";
@@ -1110,7 +1110,7 @@ function rankedUniversalFence(coord: NpCoord): boolean {
   );
 }
 
-/** `zual gagadul zul`: a `ua` fence is the one item a `u` join denies, *not every cat* (rank-joins.md#not-every). */
+/** `zual gagadul zul`: a `ua` fence is the one item a `u` join denies, *not every cat* (universals-domains.md#not-every). */
 function deniedUniversalFence(coord: NpCoord): boolean {
   const [fence, denial] = coord.parts;
   return (

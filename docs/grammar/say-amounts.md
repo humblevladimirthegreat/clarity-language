@@ -273,7 +273,7 @@ The easy / hard pair on a quality ranks effort against a bar ([vague amounts](/v
 
 ### How often {#frequency-words}
 
-**Needs:** [Always](/restrictors#always-hual) · [Sometimes](/restrictors#sometimes--anytime--some-other-time) · [Frequency scale](/comparative-arity#frequency-scale) · [Whose view](/evidentiality#holder)
+**Needs:** [Always](/restrictors#always-hual) · [Sometimes](/restrictors#sometimes--anytime--some-other-time) · [Frequency scale](/comparative-arity#frequency-scale) · [Whose view](/holder#holder)
 
 English *always*, *usually*, *often* and *sometimes* sit on a scale from every time to some time. Agebon uses the restrictor for the ends and the frequency scale for *often*. For *every day*, hang a unit on `herem` *while* with `bual` (*everything*).
 

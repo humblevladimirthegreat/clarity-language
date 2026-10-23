@@ -77,7 +77,7 @@ z-Ahelan | [d-station | [w-MEMORY | g-quiet]] | v-see
 
 *Everyone at the station sits.*
 
-**Rule:** [Hooked joins](hook-compounds.md#hooked-joins)
+**Rule:** [Hooked joins](hooked-joins.md#hooked-joins)
 :::
 
 **2.** `zahelan d[omobul#] varayel.`

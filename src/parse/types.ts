@@ -102,7 +102,7 @@ export type MorphWordFamily =
       hook?: string;
       /** Hook prefix on a hook-compound citation (`guexowurelul`): the stem root's own ending and its fused hook. */
       stemHook?: { leftEnding: "l" | "m"; hook: string };
-      /** Holder seam: the host's own grade letter before the holder (evidentiality.md#holder). */
+      /** Holder seam: the host's own grade letter before the holder (holder.md#holder). */
       grade?: "l" | "m" | "r";
     }
   | { kind: "hook"; form: string }
@@ -114,7 +114,7 @@ export type MorphWordFamily =
     }
   /**
    * Join word. `hook`: a hooked join's extra-noun hook, as its free form (`ol`, `om`, `or`): the hook bounds the
-   * join's set, and its landmark is the `bl-` word right after (`zoxual blahehal`, hook-compounds.md#hooked-joins).
+   * join's set, and its landmark is the `bl-` word right after (`zoxual blahehal`, hooked-joins.md#hooked-joins).
    */
   | { kind: "joinMarker"; series: string; hook?: string }
   | {
@@ -332,7 +332,7 @@ export type NpCoord = {
   /** `joinModifiers`: `/w/` words right before the join word (respectively `wazem`). */
   /** `factor`: digit `/h/` number after an equative's shared scale (*twice as … as*). */
   /** `tag`: a tag **-l** right after the fence closed by this part's join names the whole group (tag-pronouns.md#tag-pronouns). */
-  /** `landmark`: the `bl-` word right after a hooked join, which bounds its set (hook-compounds.md#hooked-joins). */
+  /** `landmark`: the `bl-` word right after a hooked join, which bounds its set (hooked-joins.md#hooked-joins). */
   parts: { items: NpItem[]; join?: LexWord; landmark?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord; tag?: LexWord }[];
 };
 
@@ -345,12 +345,12 @@ export type VpCoord = {
     /** Hosted `/b/` right after a label-scope `tho` verb (label-seams.md#label-scope). */
     hostedVerbs?: { verb: LexWord; hosted: Hosted }[];
     /**
-     * Words between two verbs of a joined list belong to the later verb's item (join-across-roles.md#vp-clause-forms):
+     * Words between two verbs of a joined list belong to the later verb's item (vp-clause-forms.md#vp-clause-forms):
      * `/h/` units and `/d/` `/b/` phrases, in spoken order before `verb`.
      */
     itemUnits?: { verb: LexWord; units: Unit[] }[];
     /**
-     * Words right after the list's last join that every verb shares (join-across-roles.md#vp-clause-forms): `/d/`
+     * Words right after the list's last join that every verb shares (vp-clause-forms.md#vp-clause-forms): `/d/`
      * and `/b/` phrases and `/h/` units, in spoken order after the join's own shared adverb.
      */
     sharedUnits?: Unit[];

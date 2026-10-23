@@ -6,9 +6,9 @@ Recipes for English question shapes beyond plain *yes/no* and *who / what*. Ever
 
 ### Echo questions {#echo}
 
-**Needs:** [Ask](/questions#question) · [tone marks](/speech-acts#tone-marks)
+**Needs:** [Ask](/questions#question) · [tone marks](/tone-marks#tone-marks)
 
-An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yol`**. Put the doubting [tone mark](/speech-acts#tone-marks) **`?!`** on the blank or on the word you doubt.
+An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yol`**. Put the doubting [tone mark](/tone-marks#tone-marks) **`?!`** on the blank or on the word you doubt.
 
 > `yol ?!dar zawan vawebol.`
 >
@@ -24,7 +24,7 @@ An echo question repeats what someone just said, because you doubt it or did not
 
 ### *Really?*, *Is that so?* {#really}
 
-**Needs:** [Polar stance](/questions#polar-stance) · [tone marks](/speech-acts#tone-marks)
+**Needs:** [Polar stance](/questions#polar-stance) · [tone marks](/tone-marks#tone-marks)
 
 English *Really?* asks the speaker to confirm what they just said. Write the confirm tag as your own turn: **`yol yael.`** (*Is that so?*). Put the doubting mark **`?!`** on it for disbelief.
 
@@ -80,7 +80,7 @@ English *well…* warns that the answer is not the plain *yes* the question hope
 
 ### *It sounds like…*, *I hear that you…* {#reflecting}
 
-**Needs:** [Whose view](/evidentiality#holder) · [Evidentiality](/evidentiality#evidentiality) · [Feeling with no object](/feelings-permission#feeling-no-object) · [Emotion compose](/feelings-permission#emotion-compose)
+**Needs:** [Whose view](/holder#holder) · [Evidentiality](/evidentiality#evidentiality) · [Feeling with no object](/feelings-permission#feeling-no-object) · [Emotion compose](/feelings-permission#emotion-compose)
 
 English *it sounds like you're anxious* and *I hear that you're upset* give the speaker's feeling back to them. You cannot state someone else's feeling outright, so name the listener as the holder on CLUES (**`theyem`**): you worked it out from what they said.
 
@@ -124,7 +124,7 @@ English *admittedly*, *granted* and *that's true, but* concede a point before pu
 
 ### *What a big dog!* {#exclamations}
 
-**Needs:** [tone marks](/speech-acts#tone-marks) · [extra detail on an adjective](/clause#adjective-detail-w) · [interjections](/speech-moves#interjections)
+**Needs:** [tone marks](/tone-marks#tone-marks) · [extra detail on an adjective](/clause#adjective-detail-w) · [interjections](/speech-moves#interjections)
 
 English *What a big dog!* and *How big the dog is!* say the dog is very big and that you feel strongly about it. Say the degree with *very* **`welazom`** and the feeling with the tone mark **`!`** before the sentence. Use **`!!`** for more.
 

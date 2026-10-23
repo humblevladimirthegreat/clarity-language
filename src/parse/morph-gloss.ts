@@ -1111,10 +1111,10 @@ function hookLabel(form: string, ctx: MorphGlossContext): string {
   }
 }
 
-/** On `/h/`, a hooked join's point-back names a time (hook-compounds.md#hooked-joins-time). */
+/** On `/h/`, a hooked join's point-back names a time (hooked-joins.md#hooked-joins-time). */
 const HOOKED_JOIN_TIME_RESUME: Record<string, string> = { ar: "within.then", or: "at.then", ur: "since.then" };
 
-/** A hooked join's hook, read off the extra-noun grid (`at`, `near`, `there`; hook-compounds.md#hooked-joins). */
+/** A hooked join's hook, read off the extra-noun grid (`at`, `near`, `there`; hooked-joins.md#hooked-joins). */
 function hookedJoinHookLabel(hook: string, pos: Pos | undefined): string {
   if (pos === "h" && HOOKED_JOIN_TIME_RESUME[hook]) return HOOKED_JOIN_TIME_RESUME[hook];
   return HOOK_EXTRA_NOUN[hook] ?? hook;
@@ -1499,7 +1499,7 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
 
   if (family.xFamily === "holder") {
     const host = tables.overlays.get(overlayKey("th", `${family.leftRoots[0]}${family.grade ?? "m"}`))?.gloss ?? family.leftRoots[0]!;
-    // Holder -r resumes the person whose view it is (evidentiality.md#holder).
+    // Holder -r resumes the person whose view it is (holder.md#holder).
     if (word.ending === "r") {
       const resumed: LexWord = { ...word, overlay: undefined, family: { kind: "content", roots: family.rightRoots ?? [] } };
       return [host, ...sensePieces(resumed, tables, { antecedent })];

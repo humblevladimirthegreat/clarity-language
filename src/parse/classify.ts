@@ -538,7 +538,7 @@ function tailLateral(word: MorphWord, tables: ClassifyTables): MorphWord | undef
   return { ...word, family: { kind: "x", xFamily: "lateral", leftRoots: family.leftRoots, rightRoots: [anchor] } };
 }
 
-/** Overlay kinds whose `/th/` word can take a holder after its grade letter (evidentiality.md#holder). */
+/** Overlay kinds whose `/th/` word can take a holder after its grade letter (holder.md#holder). */
 export const HOLDER_HOST_KINDS = new Set(["evidential", "may", "notional"]);
 
 /**

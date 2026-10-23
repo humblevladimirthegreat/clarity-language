@@ -120,7 +120,7 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 >
 > z-Uzozen | v-tell | th-relatedness-motive-any-term | th-REPORTED-Uzozen
 >
-> "I hear Uzozen's reason for talking is feeling connected." (for someone else's reason, say [how you know it](/evidentiality#holder))
+> "I hear Uzozen's reason for talking is feeling connected." (for someone else's reason, say [how you know it](/holder#holder))
 
 > `zuzozen vowurel hovam blarl zolazun vuhohol.`
 >
@@ -197,7 +197,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 >
 > "Uzozen walks so that Olazun does not leave."
 
-**Compare with:** *get someone to* by asking is tell plus a *to* [stand-in](/sentence-linkers#stand-in), not **`thewem`**. **`thewem`** says the causer made it happen. Persuading puts the decision on the one persuaded, so a later change of mind stays possible. Their decision is in their mind, so a [holder](/evidentiality#holder) says how you know it.
+**Compare with:** *get someone to* by asking is tell plus a *to* [stand-in](/sentence-linkers#stand-in), not **`thewem`**. **`thewem`** says the causer made it happen. Persuading puts the decision on the one persuaded, so a later change of mind stays possible. Their decision is in their mind, so a [holder](/holder#holder) says how you know it.
 
 ### Know, mean, explain, realize, forget, become {#mind-verbs}
 
@@ -253,9 +253,9 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 | *circumstance* / *context* | a dependent after `blarl` (`herem blarl`, `thahum blarl`) | the situation as a clause |
 | *requirement* / *demand* | `hwavel` / `hwavem` / `hwaver` | rule, person, or expectation |
 | *necessary* / *unnecessary* | `hwavel` on the act; *more than needed* is the sake bar `thudatham zel` | required by a rule; past what the need asks |
-| *motivation* / *motive* | `zuwon vowurel thawothom.` | my reason; someone else's motive takes a [holder](/evidentiality#holder) |
+| *motivation* / *motive* | `zuwon vowurel thawothom.` | my reason; someone else's motive takes a [holder](/holder#holder) |
 | *satisfaction* / *pleasure* | `thodotham.` | pleasure, met |
-| *desire* / *wish* | `zuzozen thalem vowurel.` | I want Uzozen to walk; someone else's wish takes a [holder](/evidentiality#holder) |
+| *desire* / *wish* | `zuzozen thalem vowurel.` | I want Uzozen to walk; someone else's wish takes a [holder](/holder#holder) |
 | *regret* (for the harm) | `thawothum blawan.` | unmet relatedness, yours |
 | *mistake* / *error* | `gogugol gul` or `thahul blarl` | not correct, or at fault |
 | *assumption* | `theyur` | NOTIONAL, toy with it |
@@ -613,7 +613,7 @@ English *deserve* says something is owed without saying why. Name the ground. It
 
 ### Clear, honest, false, general, proud {#trait-words}
 
-**Needs:** [Negation](/joins#negation-u) · [Universals, domains and generics](/rank-joins#universals-domains-generics) · [Fault](/fault#fault) · [Emotion compose](/feelings-permission#emotion-compose) · [Number as stance](/special-values#special-number-as-stance)
+**Needs:** [Negation](/joins#negation-u) · [Universals, domains and generics](/universals-domains#universals-domains-generics) · [Fault](/fault#fault) · [Emotion compose](/feelings-permission#emotion-compose) · [Number as stance](/special-values#special-number-as-stance)
 
 Many English adjectives are the plain opposite of something that has a root (*unclear*, *honest*, *false*). Agebon says the positive root and closes it with **`gul`** (*not*). Others claim how far something holds (*general*, *universal*, *absolute*). That is the universal fence: closed for no exceptions, open for *as a rule*. A few are a feeling (*proud*), which is an emotion compose, so the sake and the stimulus are named.
 
@@ -648,7 +648,7 @@ Many English adjectives are the plain opposite of something that has a root (*un
 >
 > "Proud of the memo."
 
-**Compare with:** *proud* rides on whichever sake the pride serves: competence for a skill, relatedness for a tie ([sakes](/sakes#sake-inventory)). *Confident* about someone else's claim needs a [holder](/evidentiality#holder). `th+e` is only the speaker's own certainty.
+**Compare with:** *proud* rides on whichever sake the pride serves: competence for a skill, relatedness for a tie ([sakes](/sakes#sake-inventory)). *Confident* about someone else's claim needs a [holder](/holder#holder). `th+e` is only the speaker's own certainty.
 
 ## Starting and stopping {#phase-verbs}
 

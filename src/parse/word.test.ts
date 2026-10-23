@@ -329,7 +329,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     for (const locus of ["a", "o", "uo", "ae"]) assert.equal((parseOk(`wuwathur${locus}r`).family as { locus?: string }).locus, locus);
   });
 
-  it("parses hooked joins: hook, optional m / r, x, join (hook-compounds.md#hooked-joins)", () => {
+  it("parses hooked joins: hook, optional m / r, x, join (hooked-joins.md#hooked-joins)", () => {
     const cases: [string, string, string, string, boolean][] = [
       ["zoxual", "ol", "ua", "l", false],
       ["daoxar", "aol", "a", "r", false],

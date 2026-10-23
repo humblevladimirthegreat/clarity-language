@@ -459,7 +459,7 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 
 ### Piece, species, gender, patient, function, size, way {#thing-nouns}
 
-**Needs:** [Of relations](/of-relations#of-relations) · [Role compounds](/roles#role-compounds) · [Universals](/rank-joins#universals-domains-generics) · [Joins](/joins) · [Adjectives](/clause#adjectives-ɡ) · [Equatives](/comparatives#equatives) · [Adverbs](/clause#adverbs-h) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse)
+**Needs:** [Of relations](/of-relations#of-relations) · [Role compounds](/roles#role-compounds) · [Universals](/universals-domains#universals-domains-generics) · [Joins](/joins) · [Adjectives](/clause#adjectives-ɡ) · [Equatives](/comparatives#equatives) · [Adverbs](/clause#adverbs-h) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse)
 
 English makes nouns for a part, a kind, a role, and a manner. Agebon has no separate noun for most of them. A part is a relation to its whole, a kind is the classification root, a role is a role compound on the verb, and a manner is an adverb. Pick the job and write that.
 
@@ -468,7 +468,7 @@ English makes nouns for a part, a kind, a role, and a manner. Agebon has no sepa
 | *piece* / *fragment* / *feature* | `zehowol gobem blahehal.` | a part of the whole |
 | *cluster* / *bunch* | the kind with **-x**: `zudozolx` | a set here ([group words](say-amounts.md#group-words)) |
 | *species* / *kind* (the category) | `zulenom` | classification |
-| *the dodo* / *the wolf* (the species itself) | `zuan gedozol` | [the kind itself](/rank-joins#kind-reference) |
+| *the dodo* / *the wolf* (the species itself) | `zuan gedozol` | [the kind itself](/universals-domains#kind-reference) |
 | *gender* / *sex* (the category) | `zevugom zemugom zam.` | the open pair female, male |
 | *sex* (the act) | `zelemam` | sexuality |
 | *patient* (being treated) | `zwaduhemul` | the one who undergoes healing |
@@ -1091,7 +1091,7 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 
 **Needs:** [Opaque and loan words](/spans#loans)
 
-When a fence glyph (`[` / `]` / `(` / `)` / `<` / `>` / `{` / `}` / `=` / `|` / `#`) or a [tone mark](/speech-acts#tone-marks) (`!` / `?`) must appear **as content**, wrap that token in an **opaque** `<…>` span. The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
+When a fence glyph (`[` / `]` / `(` / `)` / `<` / `>` / `{` / `}` / `=` / `|` / `#`) or a [tone mark](/tone-marks#tone-marks) (`!` / `?`) must appear **as content**, wrap that token in an **opaque** `<…>` span. The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
 
 ```agebon
 d[ varayel d<]> ]

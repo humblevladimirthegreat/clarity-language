@@ -147,7 +147,7 @@ Use zero on a channel that takes either sign. **LIVE** `thugom` already means *n
 <a id="universality-mood"></a>
 <a id="generalization"></a>
 
-English *always*, *usually*, *every*, and *never* make a general claim. The [universal fences](/rank-joins#universals-domains-generics) (`zual` / `zuam`) and the [restrictors](/restrictors) (`hual` / `huam` / `hal`) already say **who** or **when** the claim covers, and their ending says how many exceptions it allows: closed **-l** allows none, and open **-m** leaves them open, as on any list (*usually*, *as a rule*). No other word is needed for the claim itself.
+English *always*, *usually*, *every*, and *never* make a general claim. The [universal fences](/universals-domains#universals-domains-generics) (`zual` / `zuam`) and the [restrictors](/restrictors) (`hual` / `huam` / `hal`) already say **who** or **when** the claim covers, and their ending says how many exceptions it allows: closed **-l** allows none, and open **-m** leaves them open, as on any list (*usually*, *as a rule*). No other word is needed for the claim itself.
 
 > `zuzozen huam vowurel.`
 >

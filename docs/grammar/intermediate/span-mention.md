@@ -168,7 +168,7 @@ Sometimes a word like *possibly*, or a join, should apply to only part of the se
 
 Here **`hegugom`** reaches only *a red dog*, not the seeing.
 
-A [tone mark](speech-acts.md#tone-marks) written right before the opening brace colors the whole island (`!{ hegugom zudozol gerulel }`).
+A [tone mark](tone-marks.md#tone-marks) written right before the opening brace colors the whole island (`!{ hegugom zudozol gerulel }`).
 
 **Compare with:** quoting, asides, mentions, and opaque blobs use [spans](/spans#writing) (`d[…]`, `th(…)`, <code>d&lt;…&gt;</code>). Islands only group so a binder inside can target that chunk.
 

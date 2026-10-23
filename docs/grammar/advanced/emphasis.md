@@ -6,9 +6,9 @@ band: advanced
 
 ### English emphasis and clefts {#english-emphasis}
 
-English often moves or stresses a word to single it out: *It's a cat that Uzozen sees*, *It was Uzozen who saw the cat*, or a stressed *Uzozen saw the cat*. Agebon word order carries no emphasis. A sentence's usual order is set by its [speech act](/speech-moves#act-word-order), and any other order means exactly the same (with joined verbs, a word's place says which verb it goes with, [verb-phrase forms](/join-across-roles#vp-clause-forms)). When you translate, ask what the English emphasis is doing.
+English often moves or stresses a word to single it out: *It's a cat that Uzozen sees*, *It was Uzozen who saw the cat*, or a stressed *Uzozen saw the cat*. Agebon word order carries no emphasis. A sentence's usual order is set by its [speech act](/speech-moves#act-word-order), and any other order means exactly the same (with joined verbs, a word's place says which verb it goes with, [verb-phrase forms](/vp-clause-forms#vp-clause-forms)). When you translate, ask what the English emphasis is doing.
 
-If the English sets one person or thing against others (*Uzozen, not someone else*), put the [contrastive focus](/speech-acts#tone-marks) mark **`&`** on that word.
+If the English sets one person or thing against others (*Uzozen, not someone else*), put the [contrastive focus](/tone-marks#tone-marks) mark **`&`** on that word.
 
 > `zuzozen &dagozol vawebol.`
 >

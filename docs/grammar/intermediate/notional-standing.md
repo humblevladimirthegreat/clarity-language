@@ -40,7 +40,7 @@ The mirative says only that the news was unexpected, not whether it is good or b
 >
 > "I'm pleasantly surprised by the present."
 
-With a [holder](evidentiality.md#holder), the surprise is the holder's:
+With a [holder](holder.md#holder), the surprise is the holder's:
 
 > `zolazun themom theyemuzozen velurul.`
 >
@@ -140,7 +140,7 @@ NOTIONAL [carries forward](evidentiality.md#carry-forward) like a channel, so a 
 
 A legend that people pass on as true is not NOTIONAL: it is REPORTED, often with a [hand count](evidentiality.md#hand-depth).
 
-NOTIONAL takes a [holder](evidentiality.md#holder) the same way a channel does: `theyum` plus `uzozen` is `theyumuzozen`.
+NOTIONAL takes a [holder](holder.md#holder) the same way a channel does: `theyum` plus `uzozen` is `theyumuzozen`.
 
 > `zolazun theyumuzozen velurul.`
 >
@@ -212,7 +212,7 @@ English *sleepier than usual* and *bigger than it looks* compare against an expe
 
 MAY and MIRATIVE give no expected value to compare against, so neither can be a bar. *Than scheduled* ranks against a plan: that is the [PLAN bar](comparative-arity.md#bars) (`thagem`).
 
-A [holder](evidentiality.md#holder) on a comparison bar names **whose expectation** you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
+A [holder](holder.md#holder) on a comparison bar names **whose expectation** you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
 
 > `zuzozen thabomolazun zel guzemol.`
 >
@@ -247,7 +247,7 @@ English *contrary to what I was told* and *against my gut* say the event went ag
 
 *Off schedule* goes against a plan: **`uem thagem`** ([contrary to a stance](prescription.md#contrary-to-stance)). MIRATIVE already says the claim ran against what you expected, so it does not follow **`uem`**. MAY, NOTIONAL, RESIDUE, and FORMER do not either: none of them is something the event could go against.
 
-A [holder](evidentiality.md#holder) on a channel after **`uem`** names **whose view** the event goes against. The seam covers only that pair: the event is still your claim.
+A [holder](holder.md#holder) on a channel after **`uem`** names **whose view** the event goes against. The seam covers only that pair: the event is still your claim.
 
 > `zuzozen vowurel uem thebamolazun.`
 >

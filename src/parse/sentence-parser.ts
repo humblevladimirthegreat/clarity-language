@@ -225,7 +225,7 @@ function isStanceWord(token: IToken): boolean {
   return tokenIs(token, HTh);
 }
 
-/** A holder seam word (`thunemazawan`): whose view it is (evidentiality.md#holder). */
+/** A holder seam word (`thunemazawan`): whose view it is (holder.md#holder). */
 function isHolderWord(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;
   return family?.kind === "x" && family.xFamily === "holder";
@@ -903,7 +903,7 @@ class AgebonSentenceParser extends CstParser {
         this.CONSUME(WBefore[NP_W_TARGET[level]], { LABEL: "W" });
       });
       this.CONSUME(NP_JOIN[level]);
-      // A hooked join's landmark: the `bl-` word right after it (hook-compounds.md#hooked-joins).
+      // A hooked join's landmark: the `bl-` word right after it (hooked-joins.md#hooked-joins).
       this.OPTION3(() => this.CONSUME3(HostedB, { LABEL: "joinLandmark" }));
       const label = { LABEL: "sharedAfterJoin" };
       if (variant === "Open") {
@@ -936,7 +936,7 @@ class AgebonSentenceParser extends CstParser {
   /**
    * A verb list: parts, each closed by its `/v/` join. An item is a verb and the `/h/`, `/d/` and `/b/` words before it,
    * so an item ends at its verb; the first item is a bare verb, since words before every verb are the clause's own and
-   * cover every item (join-across-roles.md#vp-clause-forms). A verb or join marked `…More` has another verb after its
+   * cover every item (vp-clause-forms.md#vp-clause-forms). A verb or join marked `…More` has another verb after its
    * item words ({@link VPlainMore}), so the list goes on past it; one marked `…End` ends its part, or the list.
    *
    * The parts after the first come as a right-recursive tail (read back by `vpPartNodes`): after a join that another
@@ -1896,7 +1896,7 @@ function isLabelMarker(marker: NumberMarker): boolean {
 
 /**
  * Give words the token their neighbors decide. A word that completes the word right before it (clause.md § extra
- * nouns): a `bl-` word after an `/h/`, `/th/` or `/ɡ/` word, a hooked join (hook-compounds.md#hooked-joins), or a label-scope
+ * nouns): a `bl-` word after an `/h/`, `/th/` or `/ɡ/` word, a hooked join (hooked-joins.md#hooked-joins), or a label-scope
  * verb that names a pair (label-seams.md#scope-relative), becomes {@link HostedB}, and a `bl-` stand-in after an `/h/` or `/th/` word
  * {@link HostedOdo}. A plain `/b/` there stays the verb's recipient.
  * A cardinal `/ɡ/` right after a hosted `/b/` is that unit's {@link Amount}, and a signed `/h/` number after an
@@ -2133,7 +2133,7 @@ function hostedType(token: IToken, before: IToken[], after: IToken[]): TokenType
   if (token.tokenType === HPlain && before[skipWBack(before, before.length - 1)]?.tokenType === JoinV) return HSharedV;
   if (tokenIs(token, B) && isRankNounJoin(host) && scaleNumberAhead(token)) return BScale;
   const locked = !!(token.payload as LexWord | undefined)?.bl;
-  // A hooked join's landmark: one `bl-` word, never a list (hook-compounds.md#hooked-joins). An `/h/` one hosts as any `/h/` word.
+  // A hooked join's landmark: one `bl-` word, never a list (hooked-joins.md#hooked-joins). An `/h/` one hosts as any `/h/` word.
   if (locked && tokenIs(token, B, JoinB) && isHookedNounJoin(host)) {
     return (token.payload as LexWord | undefined)?.family.kind === "number" ? HostedBNumber : HostedBNoun;
   }
@@ -2152,7 +2152,7 @@ function hostedType(token: IToken, before: IToken[], after: IToken[]): TokenType
 }
 
 /**
- * The words a verb list's item may hold before its verb (join-across-roles.md#vp-clause-forms): its `/d/`, `/b/` and
+ * The words a verb list's item may hold before its verb (vp-clause-forms.md#vp-clause-forms): its `/d/`, `/b/` and
  * `/h/` phrases and lists, with what describes them. A shared adverb after a `/v/` join is crossed too. A stand-in is
  * not: it ends the main clause, so a verb after it starts the next sentence (dependents.md#dependent-clauses).
  */
@@ -2231,7 +2231,7 @@ function skipWBack(tokens: IToken[], i: number): number {
 }
 
 /** A rank, equative or sequence join of a noun list: the word after it may be its shared scale (rank-joins.md#shared-after-the-join). */
-/** A `/z/`, `/d/` or `/b/` hooked join, which hosts its landmark (hook-compounds.md#hooked-joins). */
+/** A `/z/`, `/d/` or `/b/` hooked join, which hosts its landmark (hooked-joins.md#hooked-joins). */
 function isHookedNounJoin(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;
   return tokenIs(token, JoinZ, JoinD, JoinB) && family?.kind === "joinMarker" && !!family.hook;

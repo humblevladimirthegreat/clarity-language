@@ -148,7 +148,7 @@ To say that you **want** something to happen, put **`thale`** plus an ending on 
 >
 > "I want Uzozen to walk."
 
-A want is in someone's mind, so someone else's want (*Uzozen wants to walk*) is their **view**: you say whose it is and how you know it with a [holder](evidentiality.md#holder), not with WANT alone.
+A want is in someone's mind, so someone else's want (*Uzozen wants to walk*) is their **view**: you say whose it is and how you know it with a [holder](holder.md#holder), not with WANT alone.
 
 To want a person or thing (*want Uzozen*), name the act that would get it (*see*, *take*) and put the person or thing in `/d/` as usual.
 
@@ -182,7 +182,7 @@ A want, a [plan](/intention#plan-predict), and a [decision](#decision) are three
 >
 > "I have long wanted to walk, and I plan to."
 
-For *against my wishes*, put WANT after the hook **`uem`** ([contrary to a stance](prescription.md#contrary-to-stance)): the event goes against that want. For someone else's wishes, a [holder](evidentiality.md#holder) goes between **`uem`** and WANT.
+For *against my wishes*, put WANT after the hook **`uem`** ([contrary to a stance](prescription.md#contrary-to-stance)): the event goes against that want. For someone else's wishes, a [holder](holder.md#holder) goes between **`uem`** and WANT.
 
 > `zuzozen vowurel uem thalem.`
 >
@@ -194,7 +194,7 @@ For *against my wishes*, put WANT after the hook **`uem`** ([contrary to a stanc
 
 ### Someone else's want, plan, or decision {#whose-intention}
 
-WANT, PLAN, and DECISION are all in a mind, and with nothing else marked that mind is yours. English *Olazun plans for Uzozen to walk* and *Uzozen has decided to walk* report what is in someone else's mind as if you could see it. None of the three takes a `/b/` for whose it is. Someone else's want, plan, or decision is their view: you give it with a [holder](evidentiality.md#holder), which says how you know it. That keeps a guess about someone's intentions from sounding like a fact.
+WANT, PLAN, and DECISION are all in a mind, and with nothing else marked that mind is yours. English *Olazun plans for Uzozen to walk* and *Uzozen has decided to walk* report what is in someone else's mind as if you could see it. None of the three takes a `/b/` for whose it is. Someone else's want, plan, or decision is their view: you give it with a [holder](holder.md#holder), which says how you know it. That keeps a guess about someone's intentions from sounding like a fact.
 
 After a holder, WANT and DECISION are the holder's, just as PLAN is. After **`uem`**, write the holder word, then the stance, for *against their wishes*.
 

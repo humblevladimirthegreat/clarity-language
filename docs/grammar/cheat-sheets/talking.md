@@ -68,7 +68,7 @@ The [first act word](/speech-acts#stacked-acts) is what you really do, the secon
 
 ## Tone marks {#tone-marks}
 
-A [tone mark](/speech-acts#tone-marks) changes your voice only, never the speech act. Double a mark for more; stack different marks to mix (no spaces, any order, each at most twice).
+A [tone mark](/tone-marks#tone-marks) changes your voice only, never the speech act. Double a mark for more; stack different marks to mix (no spaces, any order, each at most twice).
 
 <!-- cheat-sheet: talking -->
 | Mark | Feeling | Cue | Stage |
@@ -81,11 +81,11 @@ A [tone mark](/speech-acts#tone-marks) changes your voice only, never the speech
 
 | Where you write it | Colors | Example | Stage |
 |--------------------|--------|---------|-------|
-| [Attached to a word](/speech-acts#tone-marks) | that word | `zuzozen vawebol ?dudozol.` | I |
-| [Attached to a span](/speech-acts#tone-marks) | the span | `!d[ … ]` | I |
-| [Alone, then a space](/speech-acts#tone-marks) | the rest, to the period | `! zuzozen vowurel.` | I |
-| [Doubled](/speech-acts#tone-marks) | stronger | `zuzozen !!vowurel.` | I |
-| [Stacked](/speech-acts#tone-marks) | mixed | `?! zolazun vawebol dudozol.` | I |
+| [Attached to a word](/tone-marks#tone-marks) | that word | `zuzozen vawebol ?dudozol.` | I |
+| [Attached to a span](/tone-marks#tone-marks) | the span | `!d[ … ]` | I |
+| [Alone, then a space](/tone-marks#tone-marks) | the rest, to the period | `! zuzozen vowurel.` | I |
+| [Doubled](/tone-marks#tone-marks) | stronger | `zuzozen !!vowurel.` | I |
+| [Stacked](/tone-marks#tone-marks) | mixed | `?! zolazun vawebol dudozol.` | I |
 
 `yol` asks; `?` only sounds unsure: it raises the whole word, and the word's vowel pitches keep their order inside it. A third copy (`!!!`) is not a mark.
 
@@ -212,7 +212,7 @@ After your sentence, write `yol` and a polar word as a turn of its own. It asks 
 |------|----|------|
 | `yolazun` *Olazun!* ([a call, **-n**](/speech-moves#vocative)) | | `zolazun vowurel` *Olazun walks* ([a subject](/speech-moves#vocative)) |
 | `yagayun` *Guard!* ([call the guard](/speech-moves#interjections)) | | `yagayul` *Guard!* ([an alarm](/speech-moves#interjections)) |
-| `yol` *question* ([asks](/questions#question)) | | `?` *unsure voice* ([only sounds unsure](/speech-acts#tone-marks)) |
+| `yol` *question* ([asks](/questions#question)) | | `?` *unsure voice* ([only sounds unsure](/tone-marks#tone-marks)) |
 | `yul` *don't* ([prohibition](/speech-moves#speech-act-beginner)) | | `yuel` *no, false* ([answers a claim](/questions#polar-stance)) |
 | `yol yael.` *…, right?* ([a tag asks](/polar-inventory#tags)) | | `yael.` *yes* ([an answer gives](/questions#polar-stance)) |
 | `thahum blar` *why?* ([the cause](/fill-ask-jobs#why)) | | `hewom blar` *like what?* ([a model to resemble](/fill-ask-jobs#how)) |

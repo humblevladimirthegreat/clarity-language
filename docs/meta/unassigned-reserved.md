@@ -163,7 +163,7 @@ Source: [hooks.md](/hook-compounds#hook-prefixes)
 
 ## Hooked joins {#hooked-joins}
 
-Source: [hooks.md](/hook-compounds#hooked-joins)
+Source: [hooks.md](/hooked-joins#hooked-joins)
 
 - **open:** join **-n** or hook **-n** on a hooked join (`zoxuan`, `zonxual`), and a stand-in coda after the join (`zoxarl`). A named bounded set, or a named hook inside a word, has no job yet. Parser: no word.
 - **closed (D-57):** `l` before the seam (`zolxual`). Plain **`x`** already spells the hook's **-l** reading. Parser: no word.
@@ -327,7 +327,7 @@ Source: [clause.md](/clause)
 
 ## Vowel series and tone marks
 
-Source: [speech-moves.md](/speech-acts#tone-marks), [intention.md](/can-and-cant#ability)
+Source: [speech-moves.md](/tone-marks#tone-marks), [intention.md](/can-and-cant#ability)
 
 - **open:** stacked vowels after ability **x** (`xua`, …) and after sake **th** as a second stance (`guwathaol`). Not guessable (*can again*? *it depends*?): *it depends* is MAY or a sentence (polar `oe` is *decline to answer*), and *can again* is `xa` plus a sentence. Label scope uses those stacks ([predication](/label-seams#scope-stacks)). Sake locus stacks still come after the horizon letter (`guwathamol`). The parser rejects a stacked sake stance and stacked ability.
 - **open:** a new tone mark (whisper, sarcasm, …). No voice job is left: `;` `%` `?` already cover quiet, sarcasm and hesitation.

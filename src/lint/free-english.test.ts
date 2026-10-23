@@ -106,8 +106,8 @@ describe("noteFindings", () => {
     assert.deepEqual(kinds("/w/ does not retarget it"), ["note-form"]);
     assert.deepEqual(kinds("PATTERN is the baseline"), ["note-label"]);
     assert.deepEqual(kinds("mirative with an Uzozen holder"), ["note-term", "note-term"]);
-    assert.deepEqual(kinds("say [how you know it](evidentiality.md#holder)"), []);
-    assert.deepEqual(kinds("takes a [holder](evidentiality.md#holder)"), ["note-term"]);
+    assert.deepEqual(kinds("say [how you know it](holder.md#holder)"), []);
+    assert.deepEqual(kinds("takes a [holder](holder.md#holder)"), ["note-term"]);
   });
 
   it("reports the longest matching term", () => {

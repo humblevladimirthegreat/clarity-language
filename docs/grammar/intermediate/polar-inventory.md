@@ -92,7 +92,7 @@ After [two stacked act words](speech-acts.md#stacked-acts), answer the first one
 >
 > "Please walk." "Not right now."
 
-For a stronger stance, use the [tone mark](speech-acts.md#tone-marks) **`!!`**, not a different word. **`!!yaol`** is *Absolutely!* / *Yes, please!*, and **`!!yuol`** is *Hell no!*
+For a stronger stance, use the [tone mark](tone-marks.md#tone-marks) **`!!`**, not a different word. **`!!yaol`** is *Absolutely!* / *Yes, please!*, and **`!!yuol`** is *Hell no!*
 
 > `!!yaol.`
 >

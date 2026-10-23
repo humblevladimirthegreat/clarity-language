@@ -74,7 +74,7 @@ The bar's ending keeps its own job: on a channel it is [evidence strength](/evid
 >
 > "The book is lighter than I wanted."
 
-The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on a [say word](/feelings-permission#say-words) over the act (`hwavem`, `hwavam`) it is the person who demands or grants. WANT takes no `/b/`: for someone else's wants, put a [holder](/evidentiality#holder) on the clause. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
+The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on a [say word](/feelings-permission#say-words) over the act (`hwavem`, `hwavam`) it is the person who demands or grants. WANT takes no `/b/`: for someone else's wants, put a [holder](/holder#holder) on the clause. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
 
 > `zanal thebam blolazun zuel gagebom.`
 >
@@ -98,7 +98,7 @@ An adjective after that `/b/` describes it, as after any [host](/left-bound#comp
 >
 > "Uzozen sings well for a sleepy learner."
 
-The ranked item can be a whole kind. Write the [universal fence](/rank-joins#universals-domains-generics) first, then the bar: the whole closed fence counts as the one ranked item, the way an inner list sits inside an outer one ([fence nesting](/rank-joins#fence-nesting)). Open **`zuam`** is *people of that kind, as a rule*.
+The ranked item can be a whole kind. Write the [universal fence](/universals-domains#universals-domains-generics) first, then the bar: the whole closed fence counts as the one ranked item, the way an inner list sits inside an outer one ([fence nesting](/rank-joins#fence-nesting)). Open **`zuam`** is *people of that kind, as a rule*.
 
 > `zuam gwazodamul thubem zel hral vabezum.`
 >

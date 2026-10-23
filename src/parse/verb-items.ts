@@ -1,5 +1,5 @@
 /**
- * Which verb of a joined verb list a word belongs to (join-across-roles.md#vp-clause-forms), decided once after the
+ * Which verb of a joined verb list a word belongs to (vp-clause-forms.md#vp-clause-forms), decided once after the
  * clause is built. The grammar reads a verb list's later items itself; this pass places the rest:
  *
  * - The first item starts at the subject: the `/d/`, `/b/`, `/h/` and hook words between the subject and the first verb
@@ -121,7 +121,7 @@ function isRecipient(units: Unit[], index: number): boolean {
 
 /**
  * A verb with its own object takes no shared one, and a verb with its own recipient no shared recipient
- * (join-across-roles.md#vp-clause-forms): the noun's slot or recipient that would take two. `undefined` when none.
+ * (vp-clause-forms.md#vp-clause-forms): the noun's slot or recipient that would take two. `undefined` when none.
  */
 export function doubledVerbSlot(units: Unit[]): { slot: "d" | "b"; vp: VpCoord } | undefined {
   for (const unit of units) {

@@ -192,6 +192,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `label-seams.md` | Beginner | a costume shop |
 | `speech-moves.md` | Beginner | a theater foyer |
 | `speech-acts.md` | Intermediate | a music rehearsal |
+| `tone-marks.md` | Intermediate | a poetry slam |
 | `firm-soft.md` | Beginner | a concert warmup |
 | `left-bound-adjectives.md` | Beginner | a depot yard |
 | `left-bound.md` | Intermediate | a waiting room |
@@ -202,8 +203,10 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `clause-sequence.md` | Beginner | a stairwell |
 | `digit-strings.md` | Beginner | a clinic clock |
 | `joins.md` | Beginner | a market stall |
-| `joins.md` | Intermediate | a wedding |
+| `joins.md` | Intermediate | — |
 | `joins.md` | Advanced | a treaty table |
+| `rank-joins.md` | Intermediate | a wedding |
+| `universals-domains.md` | Intermediate | a catalog counter |
 | `questions.md` | Beginner | a lost-and-found |
 | `polar-inventory.md` | Intermediate | a detective interview |
 | `fill-ask-roles.md` | Intermediate | an information booth |
@@ -211,7 +214,9 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `say-tense.md` | Tense and modals | a train station |
 | `hooks.md` | Beginner | a restaurant pass |
 | `hooks.md` | Intermediate | a newsroom |
-| `hooks.md` | Advanced | a ferry slip |
+| `hooks.md` | Advanced | — |
+| `hook-compounds.md` | Advanced | a ferry slip |
+| `hooked-joins.md` | Advanced | a lockgate |
 | `discourse-hooks.md` | Intermediate | a hotel lobby |
 | `restrictors.md` | Beginner | a swimming pool |
 | `more-occasions.md` | Intermediate | a mountain trail |
@@ -240,7 +245,9 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `feelings-permission.md` | Intermediate | a support group |
 | `thanks-and-sorry.md` | Beginner | a gift table |
 | `knowing.md` | Beginner | a café patio |
-| `knowing.md` | Intermediate | a press conference |
+| `knowing.md` | Intermediate | — |
+| `evidentiality.md` | Intermediate | a press conference |
+| `holder.md` | Intermediate | a witness stand |
 | `knowing.md` | Advanced | a film archive |
 | `live-and-memory.md` | Beginner | a lookout |
 | `notional-standing.md` | Intermediate | a magic show |
@@ -255,6 +262,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `can-and-cant.md` | Beginner | a workshop |
 | `say-reasons.md` | Plans against a snapshot | a delayed departure board |
 | `join-across-roles.md` | Intermediate | a relay race |
+| `vp-clause-forms.md` | Intermediate | a baton pass |
 | `numeric-derivation.md` | Advanced | a foundry |
 
 ## Example root bank
@@ -355,7 +363,8 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 |------|------|------|--------|-------------------------|-------|
 | 5 | `clause.md` | Intermediate | **exists** | adverb topic `/h/`+`/b/`; complex chaining | **`gl-`** is Beginner on `left-bound-adjectives.md` |
 | 5 | `clause.md` | Advanced | **exists** | Leftmost content-word prominence; English cleft / *what*-cleft / fronted adverb | Weak-pause cues are recognition, not the drill |
-| 6 | `speech-acts.md` | Intermediate | **exists** | Doubled and stacked act words; tone marks; speech manner; number-as-interjection pointer only if the stage’s examples already show it | Soft/firm twins and **-r** acts are Beginner on `firm-soft.md`. Do not require numbers Intermediate readings |
+| 6 | `speech-acts.md` | Intermediate | **exists** | Doubled and stacked act words; speech manner; number-as-interjection pointer only if the stage’s examples already show it | Soft/firm twins and **-r** acts are Beginner on `firm-soft.md`. Tone marks are Intermediate on `tone-marks.md`. Do not require numbers Intermediate readings |
+| 6 | `tone-marks.md` | Intermediate | **exists** | Tone marks (`!` / `?` / `%` / `&` / `;`, stacks, word vs sentence scope) | Doubled / stacked act words and speech manner are Intermediate on `speech-acts.md` |
 | 7 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xahem`, `xezom`, …); nested **`barl`**; stand-in vowels | Recycle Beginner **`darl`/`barl`** |
 | 7 | `dependents.md` | Advanced | **exists** | Lexicalized stand-ins in other roles (`varn` / `vaen` / `vuon` / `darn` / …); nested **`blarl`** | Recycle Beginner **`darl`/`barl`** and Intermediate stand-ins |
 | 13 | `relations.md` | Intermediate | **exists** | *between* **`hedam`**; of-relations (`gobem`, `gadam`, `gulem`, `gaham`); recycle extra-noun hooks for other place talk | *Between* recycles joins Beginner `/b/` join. Social ties are Beginner on `social-ties.md` |
@@ -370,7 +379,9 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 9 | `plurality.md` | Advanced | — | no Advanced stage | |
 | 10 | `label-scope.md` | Intermediate | **exists** | Classification packaging; **SAME** endings / open **-m** | Label scope seams are Beginner on `label-seams.md` |
 | 10 | `predication.md` | Advanced | skip | boundaries | |
-| 11 | `joins.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains (every and none, by set); SHARED after join; `{ }` islands; fence nesting | Sample **decisions**, not every H3 |
+| 11 | `joins.md` | Intermediate | skip | — | Rank joins, SHARED after the join, and fence nesting are Intermediate on `rank-joins.md`. Universals and kind-reference are Intermediate on `universals-domains.md` |
+| 11 | `rank-joins.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; SHARED after join; `{ }` islands; fence nesting | Universals/domains are Intermediate on `universals-domains.md`. Sample **decisions**, not every H3 |
+| 11 | `universals-domains.md` | Intermediate | **exists** | Universals/domains (every and none, by set); kind-reference; not-every | Rank joins and SHARED after the join are Intermediate on `rank-joins.md` |
 | 11 | `joins.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from this stage | — |
 | 12 | `polar-inventory.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; yes/no with single-item/standalone; tags; rhetorical; quiz; stacked questions | |
 | 12 | `questions.md` | Advanced | — | no Advanced stage | |
@@ -379,7 +390,9 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 12 | `hooks.md` | Intermediate | **exists** | Ending grids; abstract landmarks (`ual baram`); detail on the hook (`/w/`); ranges | Extra-noun stacks and whose (`em`) are Beginner on `extra-noun-hooks.md` |
 | 12 | `discourse-hooks.md` | Intermediate | **exists** | Stacked discourse (`ael` / `aol` at the front); hook resume (`or` / `ar` / `ur` / `er`, stacked `aor` / `aer` / `uor`); parallel chains; discourse placements | Somewhere / here and there are Beginner on `here-there.md`. Recycle = all Beginner + hooks Intermediate (abstract landmarks, `/w/`, ranges) |
 | 12 | `discourse-hooks.md` | Advanced | — | no Advanced stage | |
-| 12 | `hooks.md` | Advanced | **exists** | Extra-noun **hook compounds** (citation keeps **-l** / **-m**, then the extra-noun hook; lemma is the citation; `/d/` landmark); **hook prefixes** (hook vowels + **`x`** / **`mx`** + stem, on `/ɡ/` `/z/` `/d/` `/b/` `/h/`); **hooked joins** (hook vowels + **`x`** + a join, `bl-` landmark; `/h/` time bounds) | Recycle extra-noun grid and abstract landmarks. Not same-role *including*. Not two-word `vowurel ul …`. Hooked join vs a free hook after the verb (who counts vs where) |
+| 12 | `hooks.md` | Advanced | skip | — | Hook compounds and prefixes are Advanced on `hook-compounds.md`. Hooked joins are Advanced on `hooked-joins.md` |
+| 12 | `hook-compounds.md` | Advanced | **exists** | Extra-noun **hook compounds** (citation keeps **-l** / **-m**, then the extra-noun hook; lemma is the citation; `/d/` landmark); **hook prefixes** (hook vowels + **`x`** / **`mx`** + stem, on `/ɡ/` `/z/` `/d/` `/b/` `/h/`) | Recycle extra-noun grid and abstract landmarks. Not same-role *including*. Not two-word `vowurel ul …`. Hooked joins are Advanced on `hooked-joins.md` |
+| 12 | `hooked-joins.md` | Advanced | **exists** | **Hooked joins** (hook vowels + **`x`** + a join, `bl-` landmark; `/h/` time bounds) | Recycle extra-noun grid and abstract landmarks. Hooked join vs a free hook after the verb (who counts vs where) |
 | 13 | `more-occasions.md` | Intermediate | **exists** | Defined core (full); conjuncts; dependent *when* | |
 | 13 | `restrictors.md` | Advanced | — | no Advanced stage | |
 | 14 | `spans.md` | Intermediate | **exists** | Written spans; marks; mention marker; **`{ … }`** scope islands; mention of a handle **form** vs office **-n** | |
@@ -399,13 +412,16 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 16 | `feelings-permission.md` | Intermediate | **exists** | Emotion compose; feeling with no object; speaker attitude; say words (permission, consent, scope) | Thanks and sorry are Beginner on `thanks-and-sorry.md`. Recycle = all Beginner + `prescription.md` (whose stake, contrary **`uem`**, prescription contrast) |
 | 16 | `feelings-permission.md` | Advanced | — | no Advanced stage | |
 | 16 | `sakes.md` | Advanced | — | no Advanced stage | |
-| 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels after LIVE/MEMORY; MAY vs nearby jobs; **holder** seam (someone else's view); a source you won't name or don't know (`blwoyar` / `blwuyar`) | LIVE/MEMORY are Beginner on `live-and-memory.md` |
+| 16 | `knowing.md` | Intermediate | skip | — | Evidentiality channels are Intermediate on `evidentiality.md`. Holder is Intermediate on `holder.md` |
+| 16 | `evidentiality.md` | Intermediate | **exists** | Evidentiality channels after LIVE/MEMORY; MAY vs nearby jobs; a source you won't name or don't know (`blwoyar` / `blwuyar`) | LIVE/MEMORY are Beginner on `live-and-memory.md`. Holder is Intermediate on `holder.md` |
+| 16 | `holder.md` | Intermediate | **exists** | **Holder** seam (someone else's view) | Channels are Intermediate on `evidentiality.md` |
 | 16 | `knowing.md` | Advanced | **exists** | Mood on one adjective; dated channel; channels on a generalization | One checkpoint for the whole stage |
 | 16 | `viewpoint.md` | Intermediate | **exists** | Content-rule parts (manner **`h`** pointer or compound); capacity on `/h/` (slot-part compound); viewpoint laterals **`DIR th ANCHOR`**; bare arrow roots = compass; gravity **`ayuhe`/`aduhe`**; name/listener anchor | Prefer `…thazawan` over silent speaker default. **`awa`/`uwo`** only when testing role-anchor. Include at least one bare cardinal, one gravity item, one content part, and one capacity item |
 | 16 | `compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *a few minutes* / passing) | Recycle [greeting](/word-endings#greeting) and [vocative](/speech-moves#vocative). Not ability (`vezuyoxel`). Not values |
 | 16 | `compounds.md` | Advanced | skip | — | Root tails are a memory aid and tail-suffix words are dictionary entries: nothing to build or choose |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
-| 17 | `join-across-roles.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`); join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | Sequence `xan` is Beginner on `clause-sequence.md`. Recycle = all Beginner + earlier Intermediate (path before 17) |
+| 17 | `vp-clause-forms.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`) | Sequence `xan` is Beginner on `clause-sequence.md`. Stance joins, join-act verbs, and join-relations are Intermediate on `join-across-roles.md`. Recycle = all Beginner + earlier Intermediate (path before 17) |
+| 17 | `join-across-roles.md` | Intermediate | **exists** | Stance joins; join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | Verb-phrase and clause joins are Intermediate on `vp-clause-forms.md`. Sequence `xan` is Beginner on `clause-sequence.md`. Recycle = all Beginner + earlier Intermediate (path before 17) |
 | 17 | `notional-standing.md` | Intermediate | **exists** | **MIRATIVE**; **RESIDUE** / **FORMER**; **NOTIONAL** **`eyu`** + play holds; channels as bars; channels after `uem` | already / still / not yet / no longer are Beginner on `already-still-yet.md`. Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
 | 17 | `ability.md` | Intermediate | **exists** | **DECISION** **`ogo`** changeability; forecast = evidential + `blral` vs PLAN; PLAN + DECISION stack | Ability **`xa`/`xe`/`xo`/`xu`** is Beginner on `can-and-cant.md`. Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
 | 17 | `intention.md` | Advanced | — | no Advanced stage | |
@@ -442,9 +458,9 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Resume hooks (`or` / `ar` / `aor`); stacked discourse (`ael` / `aol` at the front) | `discourse-hooks.md` Intermediate |
 | Extra-noun stacks (`aol` / `ael` / `em` whose) | `extra-noun-hooks.md` Beginner |
 | Social ties (`gumayam`) | `social-ties.md` Beginner |
-| Extra-noun hook compounds (`owurelul`) | `hooks.md` Advanced |
-| Hook prefixes (`guexavuvul`, `gamxohalal`) | `hooks.md` Advanced |
-| Hooked joins (`zoxual blahehal`, `huxal blenulul`) | `hooks.md` Advanced |
+| Extra-noun hook compounds (`owurelul`) | `hook-compounds.md` Advanced |
+| Hook prefixes (`guexavuvul`, `gamxohalal`) | `hook-compounds.md` Advanced |
+| Hooked joins (`zoxual blahehal`, `huxal blenulul`) | `hooked-joins.md` Advanced |
 | **`hal`/`hual`/`har`** | `restrictors.md` Beginner |
 | Span brackets / `<>` | `spans.md` Beginner |
 | spelled counts / ordinals / `gral` (no shorthand) | `numbers.md` Beginner |
@@ -463,7 +479,8 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Motive **`tho`** (values) | `prescription.md` Intermediate |
 | LIVE / MEMORY | `live-and-memory.md` Beginner |
 | Label scope seams | `label-seams.md` Beginner |
-| Evidentiality / holder | `knowing.md` Intermediate |
+| Evidentiality | `evidentiality.md` Intermediate |
+| Holder | `holder.md` Intermediate |
 | already / still / not yet / no longer | `already-still-yet.md` Beginner |
 | NOTIONAL / RESIDUE / FORMER / MIRATIVE | `notional-standing.md` Intermediate |
 | Viewpoint laterals | `viewpoint.md` Intermediate |

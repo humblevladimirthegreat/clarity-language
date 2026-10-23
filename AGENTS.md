@@ -24,21 +24,21 @@ Each row names what the file owns. The file is the authority; this table is only
 | `plurality.md` | Plural, associative, address sets, clusivity; collectives (`collectives.md`). |
 | `questions.md` | Yes/no and fill questions, polar stance particles; polar inventory and rhetorical (`polar-inventory.md`). |
 | `fill-ask-roles.md` | Fill-ask roles: arity, blank in a dependent; what kind / when / where / whose / how / why (`fill-ask-jobs.md`). |
-| `speech-moves.md` | Turns, vocatives, interjections, speech acts, the reusable vowel series; firm and soft (`firm-soft.md`); tone marks (`speech-acts.md`). |
+| `speech-moves.md` | Turns, vocatives, interjections, speech acts, the reusable vowel series; firm and soft (`firm-soft.md`); tone marks (`tone-marks.md`). |
 | `dependents.md` | Next-sentence grammar: continue, subordinators; sentence linkers, stand-ins (`sentence-linkers.md`); lexicalized stand-ins (`stand-in-roles.md`). |
 | `relations.md` | Hosted relation catalog: similative, exchange, proxy; of-relations (`of-relations.md`); social ties (`social-ties.md`); as-of (`as-of.md`). |
-| `hooks.md` | Prefix-less hooks: in-clause, discourse glue, extra-noun; stacked extra-noun and whose (`extra-noun-hooks.md`); ending grids, ranges (`ending-grids.md`); hook compounds, prefixes, hooked joins (`hook-compounds.md`). |
+| `hooks.md` | Prefix-less hooks: in-clause, discourse glue, extra-noun; stacked extra-noun and whose (`extra-noun-hooks.md`); ending grids, ranges (`ending-grids.md`); hook compounds, prefixes (`hook-compounds.md`); hooked joins (`hooked-joins.md`). |
 | `discourse-hooks.md` | Stacked discourse, hook resume, parallel chains, discourse placements; somewhere / here and there (`here-there.md`). |
 | `restrictors.md` | `/h/` / `/w/` restrictors, habitual; more occasions (`more-occasions.md`). |
-| `joins.md` | Phrase and clause joins, fences, set vs rank; rank joins (`rank-joins.md`); join islands, role grid (`join-islands.md`). |
-| `join-across-roles.md` | Joins across roles, join-act verbs, join-relations; clause sequence (`clause-sequence.md`). |
+| `joins.md` | Phrase and clause joins, fences, set vs rank; rank joins (`rank-joins.md`); universals, domains (`universals-domains.md`); join islands, role grid (`join-islands.md`). |
+| `join-across-roles.md` | Joins across roles, join-act verbs, join-relations; verb-phrase and clause forms (`vp-clause-forms.md`); clause sequence (`clause-sequence.md`). |
 | `comparatives.md` | Comparatives, superlatives, equatives; manner scale (`comparative-arity.md`); vague amounts (`vague-amounts.md`); stance bars (`stance-bars.md`). |
 | `predication.md` | Classification, identity; how far a label reaches (`label-seams.md`); packaging (`label-scope.md`). |
 | `causation.md` | Causation / condition poles; fault (`fault.md`); iff, CAUSE (`iff-fault.md`). |
 | `sakes.md` | Sakes, met / unmet; ought for a sake (`ought-for-a-sake.md`); motive, attachment, whose stake, contrary, sake bars (`prescription.md`). |
 | `feelings-permission.md` | Feelings, speaker attitude, permission, consent; thanks and sorry (`thanks-and-sorry.md`). |
 | `intention.md` | Plan; decision, try / fallback (`ability.md`); ability / incapability (`can-and-cant.md`). |
-| `knowing.md` | MAY; live / memory (`live-and-memory.md`); evidentiality, holder (`evidentiality.md`); universality, dated channel (`universality.md`). |
+| `knowing.md` | MAY; live / memory (`live-and-memory.md`); evidentiality (`evidentiality.md`); holder (`holder.md`); universality, dated channel (`universality.md`). |
 | `notional-standing.md` | Notional and standing: mirative, residue / former, notional, channel bars; already / still / not yet / no longer (`already-still-yet.md`). |
 | `roles.md` | Role compounds; viewpoint laterals, landmark facing, gravity (`viewpoint.md`). |
 | `compounds.md` | Mid-word `x`, dictionary compounds; compound families, conversation length (`compound-families.md`); root tails, tail suffixes (`root-tails.md`). |

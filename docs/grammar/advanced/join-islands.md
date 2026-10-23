@@ -72,7 +72,7 @@ These limits apply to every join.
 
 **Compare with:** prefix-less **`al`** / **`am`** / … are [hooks](/hooks). Under `/h/` `/w/`, the unit is a [restrictor](/restrictors), not sibling *and*.
 
-*Because* / *if* use `/th/` plus `/b/` [**`blarl`**](/dependents#poles). An `/h/` or `/th/` word between the items of a noun, adjective, or `/b/` list does not end the list. For how far an `/h/` reaches in a verb list, see [VP and clause forms](/join-across-roles#vp-clause-forms). Each item of a clause join is a full clause.
+*Because* / *if* use `/th/` plus `/b/` [**`blarl`**](/dependents#poles). An `/h/` or `/th/` word between the items of a noun, adjective, or `/b/` list does not end the list. For how far an `/h/` reaches in a verb list, see [VP and clause forms](/vp-clause-forms#vp-clause-forms). Each item of a clause join is a full clause.
 
 ### Practice {#advanced-practice}
 

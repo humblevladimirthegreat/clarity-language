@@ -10,7 +10,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 ### Writing and speech rhythm (periods) {#orthography-and-prosody-periods}
 
-A **period** closes the sentence body in writing, whatever the speech act. Speech matches that edge with a **rest**: one silent beat. The act word, not the punctuation, sets question or command. `?` and `!` are [tone marks](speech-acts.md#tone-marks) that go before the words they color.
+A **period** closes the sentence body in writing, whatever the speech act. Speech matches that edge with a **rest**: one silent beat. The act word, not the punctuation, sets question or command. `?` and `!` are [tone marks](tone-marks.md#tone-marks) that go before the words they color.
 
 | Writing | Speech | Use | Cue |
 |---------|--------|-----|-----|

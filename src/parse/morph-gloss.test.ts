@@ -32,7 +32,7 @@ describe("morphGlossLine — join blanks", () => {
   });
 });
 
-describe("morphGlossLine — hooked joins (hook-compounds.md#hooked-joins)", () => {
+describe("morphGlossLine — hooked joins (hooked-joins.md#hooked-joins)", () => {
   it("glosses the hook, -x-, the join, and brackets the landmark with it", () => {
     expectLine("zoxual blahehal vezuvol.", "[z-at-x-everything | bl-house] | v-sleep");
     expectLine("zomxuam bluwon vezuvol.", "[z-near-x-everything.open | bl-speaker] | v-sleep");

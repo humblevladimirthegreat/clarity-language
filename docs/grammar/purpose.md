@@ -223,7 +223,7 @@ English *will* mixes plan and prediction, and *I want to* can sound like a promi
 
 Agebon splits them: [want](/ability#want) for what you wish for, without meaning to do it yet; [PLAN](/intention#plan-predict) for what you mean to do; [DECISION](/ability#decision) for how revisable a pick is; and a [forecast](/evidentiality#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `blral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
 
-Wants, plans, and decisions all live in someone's mind, so with nothing else marked they are yours; someone else's want, plan, or decision takes a [holder](/evidentiality#holder) that says how you know it.
+Wants, plans, and decisions all live in someone's mind, so with nothing else marked they are yours; someone else's want, plan, or decision takes a [holder](/holder#holder) that says how you know it.
 
 Splitting these helps you hold a want without owing it to anyone, avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and keep a revisable pick from sounding locked forever. Marking how you know someone else's intention keeps a guess about what they mean to do from passing as fact.
 

@@ -172,9 +172,9 @@ export const HOOK_LINKS = {
   resume: ["discourse-hooks.md#hook-resume"],
   blank: ["fill-ask-jobs.md#where", "here-there.md#place-indefinites"],
   /** *everyone at the house*: the hook bounds the join's set. */
-  hookedJoin: ["hook-compounds.md#hooked-joins"],
+  hookedJoin: ["hooked-joins.md#hooked-joins"],
   /** *never since …*, *always until …*: the hook bounds a restrictor's times. */
-  hookedJoinTime: ["hook-compounds.md#hooked-joins-time"],
+  hookedJoinTime: ["hooked-joins.md#hooked-joins-time"],
 } as const;
 
 /** English join words a hook can bound (*everyone at …*, *something for …*): a hooked join. */
@@ -198,7 +198,7 @@ const SEAM_HOOK: Readonly<Record<string, string>> = {
 
 /** The bare restrictor each English time word spells (restrictors.md). */
 const BOUNDED_RESTRICTOR: Readonly<Record<string, string>> = { never: "al", always: "ual", sometimes: "ar" };
-/** The time hook a preposition names on an `/h/` hooked join (hook-compounds.md#hooked-joins-time). */
+/** The time hook a preposition names on an `/h/` hooked join (hooked-joins.md#hooked-joins-time). */
 const TIME_SEAM_HOOK: Readonly<Record<string, string>> = { since: "u", until: "oe", till: "oe", during: "a", around: "om", at: "o" };
 
 /** A closed join with its open twin (`zoxual` / `zoxuam`), or the one form. */

@@ -521,7 +521,7 @@ describe("resolve — SHARED (comparatives.md / numbers.md)", () => {
   });
 });
 
-describe("resolve — hooked-join point-back (hook-compounds.md#hooked-joins-point-back)", () => {
+describe("resolve — hooked-join point-back (hooked-joins.md#hooked-joins-point-back)", () => {
   const landmarkOf = (text: string) => resolveOf(text).anaphors.find((bind) => bind.kind === "landmark")?.antecedent?.raw;
 
   it("takes the latest landmark: a hook's /b/, a hosted bl- word, or a hooked join's", () => {

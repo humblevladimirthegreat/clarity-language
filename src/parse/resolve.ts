@@ -53,7 +53,7 @@ type TagBinding = { word: LexWord; key: string; named: boolean };
 /** What the talk is about now: the `/x/` word that set it, and the referent it names (topic.md#topic). */
 type Topic = { word: LexWord; key: string };
 
-/** A landmark in play (hook-compounds.md#hooked-joins-point-back): a hook's `/b/`, a hosted `bl-` word, or a hooked join's. */
+/** A landmark in play (hooked-joins.md#hooked-joins-point-back): a hook's `/b/`, a hosted `bl-` word, or a hooked join's. */
 type Landmark = { word: LexWord; time: boolean };
 
 type Ctx = {
@@ -196,7 +196,7 @@ function singleRoot(word: LexWord): string | undefined {
   return word.family.kind === "content" && word.family.roots.length === 1 ? word.family.roots[0] : undefined;
 }
 
-/** The root a pronoun is built on: the noun's own, or the one a holder seam names (`thunemozan`, evidentiality.md#holder). */
+/** The root a pronoun is built on: the noun's own, or the one a holder seam names (`thunemozan`, holder.md#holder). */
 function pronounRoot(word: LexWord): string | undefined {
   if (word.ending !== "n") return undefined;
   if (isNounSlot(word)) return singleRoot(word);
@@ -239,7 +239,7 @@ function isPointer(word: LexWord): boolean {
 }
 
 /**
- * The person a seam's own **-r** resumes: a holder's (`thevemazawar`, evidentiality.md#holder) or a viewpoint lateral's facing
+ * The person a seam's own **-r** resumes: a holder's (`thevemazawar`, holder.md#holder) or a viewpoint lateral's facing
  * anchor (`howuhethuzozer`, viewpoint.md#viewpoint-laterals).
  */
 function holderRoots(word: LexWord): string[] {
@@ -796,7 +796,7 @@ function harvest(ctx: Ctx, word: LexWord): void {
   }
 }
 
-// ── Hooked-join point-back (hook-compounds.md#hooked-joins-point-back) ──────────────
+// ── Hooked-join point-back (hooked-joins.md#hooked-joins-point-back) ──────────────
 
 /** A time pole (`halam`, `harum`, …) or an `/h/` hooked join: its landmark is a time. */
 function hostsTime(host: LexWord | undefined): boolean {

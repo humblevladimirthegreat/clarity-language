@@ -108,14 +108,14 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | from a time on (*has sat since the storm*) | hook **`ul`** (*from*) + the time in `/b/` | [Since](/hooks#since) |
 | from an event on (*since Olazun fell asleep*) | **`ul barl`** + the sentence | [Since](/hooks#since) |
 | reason (*since Olazun walks*) | **`thahum blarl`** | [Because](/iff-fault#because) |
-| *never since …* / *not once since …* (over the stretch since then) | **`huxal`** + the time: `huxal blenulul`; **`huxal blarl`** + the sentence | [Bounding a time](/hook-compounds#hooked-joins-time), [bounded by a clause](/hook-compounds#hooked-joins-clause) |
+| *never since …* / *not once since …* (over the stretch since then) | **`huxal`** + the time: `huxal blenulul`; **`huxal blarl`** + the sentence | [Bounding a time](/hooked-joins#hooked-joins-time), [bounded by a clause](/hooked-joins#hooked-joins-clause) |
 
 ### *against*
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
 | opponent (*fights against a guard*, *Uzozen versus Olazun*) | hook **`uel`** + `/b/` | [Hooks](/extra-noun-hooks#extra-noun-intermediate) |
-| who is against (*everyone against me*, *someone against the policy*) | hooked join **`…uex…`**: `zuexual bluwon`, `zuexar blonam` | [Hooked joins](/hook-compounds#hooked-joins-hooks) |
+| who is against (*everyone against me*, *someone against the policy*) | hooked join **`…uex…`**: `zuexual bluwon`, `zuexar blonam` | [Hooked joins](/hooked-joins#hooked-joins-hooks) |
 | a rule, a person's no, or a plan (*against the rules*, *against their will*, *contrary to the plan*, *against my decision*) | hook **`uem`** + the `/th/` stance it goes against | [Contrary to a stance](/prescription#contrary-to-stance) |
 | what you were told or expected (*contrary to what I was told*, *against my gut*) | hook **`uem`** + a channel | [Channels after `uem`](/notional-standing#channel-frame) |
 | a noun in the way (*against the rain*, *despite the rain*) | hook **`uem`** or **`hezom`** + `/b/` | [Hooks](/extra-noun-hooks#extra-noun-intermediate), [dependent clauses](/dependents#dependent-clauses) |
@@ -200,16 +200,16 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 | *a certain someone* / *someone I won't name* | **`zar`**, then *I know who*: `zuwon vanam dorl zar.` | [Unspecified member](/joins#unspecified-member-r-phrase), [dependent clauses](/dependents#dependent-clauses) |
 | *someone, I don't know who* | **`zar`**, then `zuwon vanam vul dorl zar.` | [Unspecified member](/joins#unspecified-member-r-phrase), [dependent clauses](/dependents#dependent-clauses) |
 | *you know the one* / *that person* (we both know) | **-r** with nothing earlier: `zeyor` | [Resume](/pronouns#resume-r) |
-| *everyone here* | **`zual geyol`**; near me, **`zomxual bluwon`** | [Universals](/rank-joins#universals-domains-generics), [hooked joins](/hook-compounds#hooked-joins-hooks) |
-| *everyone at the house* / *someone at the office* (who counts, not where it happens) | hooked join: **`zoxual blahehal`** / **`zoxar blovahal`** | [Hooked joins](/hook-compounds#hooked-joins) |
-| *anything for me?* / *something for me* | **`yol dexar bluwon.`** / **`dexar bluwon`** | [Hooked joins](/hook-compounds#hooked-joins-endings) |
-| *everyone there* (the place just named) | **`zorxual`** | [Point back](/hook-compounds#hooked-joins-point-back) |
-| *everyone we know* / *nobody we know* | **`zual gwodanam blayan`** / **`zal gwodanam blayan`** | [Every and none, by set](/rank-joins#kind-domains) |
+| *everyone here* | **`zual geyol`**; near me, **`zomxual bluwon`** | [Universals](/universals-domains#universals-domains-generics), [hooked joins](/hooked-joins#hooked-joins-hooks) |
+| *everyone at the house* / *someone at the office* (who counts, not where it happens) | hooked join: **`zoxual blahehal`** / **`zoxar blovahal`** | [Hooked joins](/hooked-joins#hooked-joins) |
+| *anything for me?* / *something for me* | **`yol dexar bluwon.`** / **`dexar bluwon`** | [Hooked joins](/hooked-joins#hooked-joins-endings) |
+| *everyone there* (the place just named) | **`zorxual`** | [Point back](/hooked-joins#hooked-joins-point-back) |
+| *everyone we know* / *nobody we know* | **`zual gwodanam blayan`** / **`zal gwodanam blayan`** | [Every and none, by set](/universals-domains#kind-domains) |
 | *everyone in the family* / *everyone from the town* | **`zual gobem blavayal`** / **`zual gaham blahaham`** | [Of relations](/of-relations#of-relations) |
-| *people in general* | **`zuam geyol`**, or **`eyon`** | [People in general](/rank-joins#generic-neighbors) |
+| *people in general* | **`zuam geyol`**, or **`eyon`** | [People in general](/universals-domains#generic-neighbors) |
 | *according to someone* (a source you won't name / don't know) | **`thebam blumon`**, then `zuwon vanam dorl zar.` / `zuwon vanam vul dorl zar.` | [Source](/evidentiality#source) |
-| *never* / *always*, in the times we both know | **`hal thevumayan`** / **`hual thevumayan`** | [Holder](/evidentiality#holder) |
-| *never since …* / *always, until …* / *always around …* (a stretch you name) | **`huxal`** / **`hoexual`** / **`homxual`** + the time: `hoexual blenulul` | [Bounding a time](/hook-compounds#hooked-joins-time) |
+| *never* / *always*, in the times we both know | **`hal thevumayan`** / **`hual thevumayan`** | [Holder](/holder#holder) |
+| *never since …* / *always, until …* / *always around …* (a stretch you name) | **`huxal`** / **`hoexual`** / **`homxual`** + the time: `hoexual blenulul` | [Bounding a time](/hooked-joins#hooked-joins-time) |
 | *where was it again?* (remind me) | MEMORY on the question: `yol ol bar zayan thevum vagedal.` | [Live vs memory](/live-and-memory#live-vs-memory) |
 | *where shall we …?* / *what shall we do?* (a choice) | PLAN on the question: `yol ol bar zayan thagem vagedal.`, `yol var zayan thagem.` | [Plan](/intention#plan) |
 

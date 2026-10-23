@@ -28,7 +28,7 @@ An English tense bundles up to three questions: **when** the event sits, **how y
 | *is walking* | they are in the middle of it | the event root on `/ɡ/`: `zuzozen gowurel` ([in progress](/predication#in-progress)) |
 | *is still walking* | the state goes on | **`hawum`** |
 | *has stopped walking* | the state ended | **`huvum`** |
-| *will walk* | your plan | PLAN **`thagem`**; someone else's plan takes a [holder](/evidentiality#holder) |
+| *will walk* | your plan | PLAN **`thagem`**; someone else's plan takes a [holder](/holder#holder) |
 | *will walk* | a forecast | channel + **`blral`** ([forecast](/evidentiality#forecast)) |
 | *is going to walk* | your plan, or clues say so | PLAN, or CLUES + **`blral`** |
 | *is about to walk* / *will walk soon* | a hair / a short while after now | **`blrawul`** / **`blrawum`** on a channel |
@@ -375,7 +375,7 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 | English | Agebon |
 |---------|--------|
 | *will* (willing) | PLAN **`thagem`**, or **`hwazam`** (*I'll do it*, you can back out) |
-| *I want*, *I feel like* | WANT **`thalem`** (**`thalel`** lasting, **`thaler`** passing); someone else's want takes a [holder](/evidentiality#holder): **`thebamuzozen thalem`** |
+| *I want*, *I feel like* | WANT **`thalem`** (**`thalel`** lasting, **`thaler`** passing); someone else's want takes a [holder](/holder#holder): **`thebamuzozen thalem`** |
 | *intend to*, details open | PLAN sketch **`thager`** |
 | *hopefully* | **`thoguyem`** |
 | *tries to* | **`howam`** |

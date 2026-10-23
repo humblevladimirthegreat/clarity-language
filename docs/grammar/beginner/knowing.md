@@ -209,5 +209,5 @@ Without **`thomam`**, the sentence reports that Ahelan is leaving.
 - Clock / date / when-frames: [numbers-applied.md](digit-strings.md#time)
 - Habitual *always*: [restrictors.md](restrictors.md)
 - General claims and their warrant: [Channels on a generalization](/universality#universality)
-- Someone else's view: [Whose view (holder)](/evidentiality#holder)
+- Someone else's view: [Whose view (holder)](/holder#holder)
 - Imagined scenes, surprise, and how a claim stands: [notional-standing.md](/notional-standing)

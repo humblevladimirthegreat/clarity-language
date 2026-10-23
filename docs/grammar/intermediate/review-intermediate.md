@@ -126,7 +126,7 @@ z-Olazun | v-sit | h-west-th-Ahelan
 
 z-Uzozen | [v-cook | v-fight | v-rank/more]
 
-**Rule:** [Verb-phrase and clause forms](join-across-roles.md#vp-clause-forms)
+**Rule:** [Verb-phrase and clause forms](vp-clause-forms.md#vp-clause-forms)
 :::
 
 **8.** *Ahelan sleeps about two hours.*
@@ -146,7 +146,7 @@ z-Ahelan | [b-hour | g-two.about] | v-sleep
 
 z-Olazun | th-CLUES-Ahelan | v-sing
 
-**Rule:** [Whose view (holder)](evidentiality.md#holder)
+**Rule:** [Whose view (holder)](holder.md#holder)
 :::
 
 **10.** *Now, about Olazun: Olazun sits.*
@@ -258,7 +258,7 @@ After the `/b/` of a host, a plain adjective describes that extra noun; right af
 
 `!` marks strong feeling about the sentence; **`yel`** would command Olazun to see it.
 
-**Rule:** [Tone marks](speech-acts.md#tone-marks)
+**Rule:** [Tone marks](tone-marks.md#tone-marks)
 :::
 
 **4.** *Olazun and Ahelan each cook three cookies.* `zolazun zahelan zal vuguyel dugedolx gragel.` or `zolazun zahelan zal vuguyelx dugedolx gragel.`
@@ -379,6 +379,42 @@ z-Olazun | v-sit | h-episode-event-ALLOW-rule
 After the fence, PATTERN is a stance on the whole superlative; before the rank join it is the bar, *more often than usual*.
 
 **Rule:** [Vague amounts (*many* / *few*)](vague-amounts.md#vague-amounts)
+:::
+
+**14.** *Don't fight. I mean it.* `yul yul vavuvul.` or `yel yel vavuvul.`
+
+::: details Show answer
+`yul yul vavuvul.`
+
+y-prohibition | y-prohibition | v-fight
+
+Repeating the act word insists on that act; repeating **`yel`** would insist on a command.
+
+**Rule:** [Doubling an act word](speech-acts.md#doubled-act)
+:::
+
+**15.** *every cookie* `zual gugedol.` or `zugedol zual.`
+
+::: details Show answer
+`zual gugedol.`
+
+[z-everything | g-cookie]
+
+The kind goes after **`zual`** as a SHARED `/ɡ/`; a noun before the join is the leftover.
+
+**Rule:** [Universals, domains, and generics](universals-domains.md#universals-domains-generics)
+:::
+
+**16.** *Uzozen walks, but not because of the night.* `zuzozen vowurel thahum blanurul thul.` or `zuzozen vowurel vul thahum blanurul.`
+
+::: details Show answer
+`zuzozen vowurel thahum blanurul thul.`
+
+z-Uzozen | v-walk | [th-because | bl-night] | th-not
+
+The `/th/` join denies the ground; **`vul`** after the verb would deny the walking.
+
+**Rule:** [Stance joins](join-across-roles.md#stance-joins)
 :::
 
 #### What changes {#intermediate-what-changes}

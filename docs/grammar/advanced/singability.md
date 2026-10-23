@@ -89,7 +89,7 @@ English swallows small words that change the meaning: *can* and *can't* often di
 
 ### Voice and certainty {#voice-and-certainty}
 
-Only the words and the written [tone marks](/speech-acts#tone-marks) carry meaning. How firmly you stand behind a claim is the ending on the [act word](/firm-soft#speech-act); how sure you are is [MAY](/knowing#may). Pitch carries two things only: each [vowel's own pitch](#vowel-pitch-values), and the `?` mark, which raises a word's whole range. An unwritten rise or fall adds nothing. A statement said with a rising voice is still a statement, and a firm `-l` claim said hesitantly is still firm.
+Only the words and the written [tone marks](/tone-marks#tone-marks) carry meaning. How firmly you stand behind a claim is the ending on the [act word](/firm-soft#speech-act); how sure you are is [MAY](/knowing#may). Pitch carries two things only: each [vowel's own pitch](#vowel-pitch-values), and the `?` mark, which raises a word's whole range. An unwritten rise or fall adds nothing. A statement said with a rising voice is still a statement, and a firm `-l` claim said hesitantly is still firm.
 
 So listen to the words, not the voice. A speaker whose voice naturally rises at the end is not hedging, and a confident voice is not evidence.
 
@@ -120,7 +120,7 @@ In song, a period takes a rest or a held note, and an island is phrased as its o
 
 ### Singing on one note {#one-note}
 
-Every distinction Agebon makes is spelled in its letters, so a line sung on a single pitch still says everything it says in speech. A melody owns the pitch, so song drops [vowel pitch](#vowel-pitch-values): sing each vowel on the melody's note. A songwriter may let a melody follow the vowel pitches, but no song has to. When a melody takes over your pitch, voice each [tone mark](/speech-acts#tone-marks) with how you shape the note:
+Every distinction Agebon makes is spelled in its letters, so a line sung on a single pitch still says everything it says in speech. A melody owns the pitch, so song drops [vowel pitch](#vowel-pitch-values): sing each vowel on the melody's note. A songwriter may let a melody follow the vowel pitches, but no song has to. When a melody takes over your pitch, voice each [tone mark](/tone-marks#tone-marks) with how you shape the note:
 
 | Mark | In speech | In song |
 |------|-----------|---------|

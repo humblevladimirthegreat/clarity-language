@@ -90,12 +90,12 @@ Join the name to a channel, MAY, or NOTIONAL: keep the word's last letter and wr
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Holder on a channel](/evidentiality#holder) | `zolazun theyemuzozen velurul.` | *I gather Uzozen thinks Olazun left.* | I |
-| [Holder on REPORTED](/evidentiality#holder) | `zolazun thebamuzozen velurul.` | *I hear Uzozen thinks Olazun left.* | I |
-| [Holder on MAY](/evidentiality#holder) | `zolazun thomamuzozen velurul.` | *Maybe Uzozen thinks Olazun left.* | I |
+| [Holder on a channel](/holder#holder) | `zolazun theyemuzozen velurul.` | *I gather Uzozen thinks Olazun left.* | I |
+| [Holder on REPORTED](/holder#holder) | `zolazun thebamuzozen velurul.` | *I hear Uzozen thinks Olazun left.* | I |
+| [Holder on MAY](/holder#holder) | `zolazun thomamuzozen velurul.` | *Maybe Uzozen thinks Olazun left.* | I |
 | [Holder on NOTIONAL](/notional-standing#notional) | `zolazun theyumuzozen velurul.` | *Imagine it as Uzozen sees it.* | I |
-| [Strength before the name](/evidentiality#holder) | `zolazun theyeluzozen velurul.` | *Strong clues say Uzozen thinks Olazun left.* | I |
-| [Shared history](/evidentiality#holder): MEMORY with the interlocutors | `zawan vebal hal thevumayan.` | *From what we both remember, you've never listened.* | I |
+| [Strength before the name](/holder#holder) | `zolazun theyeluzozen velurul.` | *Strong clues say Uzozen thinks Olazun left.* | I |
+| [Shared history](/holder#holder): MEMORY with the interlocutors | `zawan vebal hal thevumayan.` | *From what we both remember, you've never listened.* | I |
 
 ### Keeping a channel {#carry}
 
@@ -190,7 +190,7 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 | [Stacked: want, then plan](/ability#want-endings) | `zuwon thalel thagem vowurel.` | *I have long wanted to walk, and I plan to.* | I |
 | [Against my wishes](/ability#want-endings) | `zuzozen vowurel uem thalem.` | *Uzozen walks, against my wishes.* | I |
 | [Against someone's wishes](/ability#whose-intention) | `zolazun vezuvol uem theyemuzozen thalem.` | *Olazun sleeps, against Uzozen's wishes, as far as I can tell.* | I |
-| [Someone else's plan](/evidentiality#holder): a holder | `zuzozen thebamuzozen thagem vowurel.` | *I hear Uzozen plans to walk.* | I |
+| [Someone else's plan](/holder#holder): a holder | `zuzozen thebamuzozen thagem vowurel.` | *I hear Uzozen plans to walk.* | I |
 | [Someone else's decision](/ability#whose-intention): a holder | `zuzozen theyemuzozen thogom vowurel.` | *I gather Uzozen has decided to walk, and can still change that.* | I |
 | [Plan, and when](/ability#predict-evidentiality) | `zuwon thagem blral vuhohol.` | *I plan to sit down later.* | I |
 | [Try, failing that](/ability#fallback): `xon` | `zuzozen howar vowurel xon zuzozer vezuyol.` | *Uzozen gives walking a try; failing that, Uzozen sings.* | I |
@@ -230,4 +230,4 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | `haram` *still in effect* ([the outcome stays](/notional-standing#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](/already-still-yet#phasal)) |
 | `thogom` *I've decided* ([how open the choice is, no time](/ability#decision)) | | `thagem` *I plan* ([how worked out, still ahead](/intention#plan-predict)) |
 | `howam` *tries* ([acts, outcome open](/ability#try)) | | `vezuyoxal` *can sing* ([a claim about ability](/can-and-cant#can)) |
-| `thalem` *I want* ([your own wanting](/ability#want)) | | `thebamuzozen thagem` *I hear Uzozen plans* ([someone else's plan](/evidentiality#holder)) |
+| `thalem` *I want* ([your own wanting](/ability#want)) | | `thebamuzozen thagem` *I hear Uzozen plans* ([someone else's plan](/holder#holder)) |

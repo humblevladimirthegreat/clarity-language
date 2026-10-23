@@ -47,7 +47,7 @@ export const V = wordToken("V");
 export const VPlain = wordToken("VPlain", [V]);
 /**
  * A verb right after another verb or a `/v/` join, past only the `/h/`, `/d/` and `/b/` words of its own item: it goes on
- * a verb list, so it never starts one (join-across-roles.md#vp-clause-forms). Set by `markContext`.
+ * a verb list, so it never starts one (vp-clause-forms.md#vp-clause-forms). Set by `markContext`.
  */
 export const VCont = wordToken("VCont", [V]);
 /**
@@ -178,7 +178,7 @@ export const HostedBNoun = wordToken("HostedBNoun", [HostedB]);
 /** A hosted `/b/` whose `/b/` words run on to a `/b/` join: the list fills the hosted slot (joins.md#right-close). */
 export const HostedBJoined = wordToken("HostedBJoined", [HostedB]);
 export const HostedOdo = wordToken("HostedOdo");
-/** An `/h/` adverb right after a `/v/` join (past any `/w/`): SHARED, it covers every verb (join-across-roles.md#vp-clause-forms). Set by `markContext`. */
+/** An `/h/` adverb right after a `/v/` join (past any `/w/`): SHARED, it covers every verb (vp-clause-forms.md#vp-clause-forms). Set by `markContext`. */
 export const HSharedV = wordToken("HSharedV");
 /**
  * `barl` that fills a `/th/` host from further right, so it is never a `/b/` stand-in of its own: after a stance join

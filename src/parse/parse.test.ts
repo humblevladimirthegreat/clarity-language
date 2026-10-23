@@ -876,7 +876,7 @@ describe("parse — whose plan or decision (holder)", () => {
 });
 
 describe("negation scope at a fence or a pole", () => {
-  it("reads zual + kind + zul as not every K (rank-joins.md#not-every)", () => {
+  it("reads zual + kind + zul as not every K (universals-domains.md#not-every)", () => {
     const units = parseText("zual gagozol zul vezuvol.").utterances[0]!.bodies[0]!.clause.units;
     const np = units[0]!;
     assert.equal(np.kind, "np");

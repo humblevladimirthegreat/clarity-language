@@ -144,7 +144,7 @@ For *a piece of* a mass, put the substance first and `gozowum` right after it. W
 
 Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in* hook (`al`), not `gadam`.
 
-After a join, `gobem` and `gaham` bound the set the join covers, as SHARED words ([every and none, by set](rank-joins.md#kind-domains)). `gobem` gives membership, and `gaham` gives origin.
+After a join, `gobem` and `gaham` bound the set the join covers, as SHARED words ([every and none, by set](universals-domains.md#kind-domains)). `gobem` gives membership, and `gaham` gives origin.
 
 > `zual gobem blavayal vezuvol.`
 >
