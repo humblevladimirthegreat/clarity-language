@@ -1,85 +1,73 @@
 // Fails on any link in a stage page that points at material the learner meets later on the
 // reading path: all Beginner bands in sidebar order, then Intermediate, then Advanced, and
 // earlier lines first within a page ("Teach now; don't preview later" in grammar-docs.md).
+// Until regroup, that order comes from H2s on unsplit pages plus front matter `band:` on
+// peeled sittings, walking the current sidebar with the holding list spliced after each parent.
 import { readFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { lessonPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { pageSections, sectionAt, type Band, type PageSections } from "../src/lint/learning-order.js";
+import { lineNumberAt } from "../src/retie/tokens.js";
 
 const grammarDir = resolve(dirname(fileURLToPath(import.meta.url)), "../docs/grammar");
-// Orientation pages tour the whole language, so they are not stages.
-const orientation = new Set(["", "introduction"]);
-const stages = readingOrder
-  .map((item) => item.link.replace(/^\//, ""))
+const orientation = new Set(["index.md", "introduction.md"]);
+const stages = lessonPages()
+  .map((item) => item.page)
   .filter((page) => !orientation.has(page));
 
-const levelRank: Record<string, number> = { beginner: 0, intermediate: 1, advanced: 2 };
+const levelRank: Record<Band, number> = { beginner: 0, intermediate: 1, advanced: 2 };
 
-const slug = (heading: string) =>
-  heading
-    .toLowerCase()
-    .replace(/[`*_]/g, "")
-    .replace(/<[^>]+>/g, "")
-    .replace(/[^\p{L}\p{N}\s-]/gu, "")
-    .trim()
-    .replace(/\s+/g, "-");
-
-type Page = { lines: string[]; level: (string | undefined)[]; anchors: Map<string, number> };
+type Page = { markdown: string; sections: PageSections };
 
 const pages = new Map<string, Page>();
 for (const name of stages) {
-  const lines = readFileSync(resolve(grammarDir, `${name}.md`), "utf8").split("\n");
-  const level: (string | undefined)[] = [];
-  const anchors = new Map<string, number>();
-  let current: string | undefined;
-  lines.forEach((line, i) => {
-    const band = line.match(/^## (Beginner|Intermediate|Advanced)\b/);
-    if (band) current = band[1]!.toLowerCase();
-    level[i] = current;
-    const heading = line.match(/^#{1,6} (.*?)(?:\s*\{#([^}]+)\})?\s*$/);
-    if (heading) {
-      if (heading[2]) anchors.set(heading[2], i);
-      if (!anchors.has(slug(heading[1]!))) anchors.set(slug(heading[1]!), i);
-    }
-    for (const m of line.matchAll(/<a id="([^"]+)"/g)) anchors.set(m[1]!, i);
-  });
-  pages.set(name, { lines, level, anchors });
+  const markdown = readFileSync(resolve(grammarDir, name), "utf8");
+  pages.set(name, { markdown, sections: pageSections(name, markdown) });
 }
 
-const position = (name: string, line: number): [number, number, number] => [
-  levelRank[pages.get(name)!.level[line] ?? "beginner"]!,
+const position = (name: string, sectionBand: Band | undefined, offset: number): [number, number, number] => [
+  levelRank[sectionBand ?? "beginner"],
   stages.indexOf(name),
-  line,
+  offset,
 ];
 const isAfter = (a: number[], b: number[]) => (a[0]! - b[0]! || a[1]! - b[1]! || a[2]! - b[2]!) > 0;
 
+function targetPage(href: string, current: string): string | undefined {
+  if (/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(href)) return;
+  const path = href.replace(/^\.\//, "").replace(/^\//, "");
+  if (path.includes("/")) return;
+  const stem = path.replace(/\.(?:md|html)$/, "");
+  return `${stem || current.replace(/\.md$/, "")}.md`;
+}
+
 const problems: string[] = [];
 for (const name of stages) {
-  const { lines } = pages.get(name)!;
-  let fenced = false;
-  lines.forEach((line, i) => {
-    if (/^```/.test(line)) fenced = !fenced;
-    if (fenced) return;
-    for (const m of line.matchAll(/\]\(([^)\s]*)\)/g)) {
-      const [file = "", anchor] = m[1]!.split("#");
-      if (/^[a-z]+:/.test(file)) continue;
-      const target = file ? file.replace(/^\.\//, "").replace(/\.md$/, "") : name;
-      const targetPage = pages.get(target);
-      if (!targetPage) continue;
-      let targetLine = 0;
-      if (anchor) {
-        const found = targetPage.anchors.get(anchor);
-        if (found === undefined) {
-          problems.push(`${name}.md:${i + 1}: no anchor #${anchor} in ${target}.md`);
-          continue;
-        }
-        targetLine = found;
+  const { markdown, sections } = pages.get(name)!;
+  const blanked = markdown
+    .replace(/^\s*```[\s\S]*?^\s*```/gm, (m) => " ".repeat(m.length))
+    .replace(/`[^`\n]*`/g, (m) => " ".repeat(m.length));
+  for (const m of blanked.matchAll(/\]\(([^)\s]*)\)/g)) {
+    const [file = "", anchor] = m[1]!.split("#");
+    const target = targetPage(file, name);
+    if (!target) continue;
+    const targetParsed = pages.get(target);
+    if (!targetParsed) continue;
+    const from = sectionAt(sections.sections, m.index!);
+    if (from.ignored) continue;
+    let targetSection = targetParsed.sections.sections[0]!;
+    if (anchor) {
+      const found = targetParsed.sections.anchors.get(anchor);
+      if (found === undefined) {
+        problems.push(`${name}:${lineNumberAt(markdown, m.index!)}: no anchor #${anchor} in ${target}`);
+        continue;
       }
-      if (isAfter(position(target, targetLine), position(name, i))) {
-        problems.push(`${name}.md:${i + 1}: forward link to ${target}.md${anchor ? `#${anchor}` : ""}`);
-      }
+      targetSection = found;
     }
-  });
+    if (isAfter(position(target, targetSection.band, targetSection.offset), position(name, from.band, from.offset))) {
+      problems.push(`${name}:${lineNumberAt(markdown, m.index!)}: forward link to ${target}${anchor ? `#${anchor}` : ""}`);
+    }
+  }
 }
 
 if (problems.length) {

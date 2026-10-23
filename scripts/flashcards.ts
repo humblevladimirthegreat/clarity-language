@@ -12,9 +12,8 @@ import { spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 
-import { levelReviewPage, readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { lessonPages, levelReviewPage } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { buildNotes, buildPack, loadFlashcardInputs, NOTE_FIELDS, PACK_IDS, packTsv, type PackId } from "../src/flashcards.js";
-import { sidebarPage } from "../src/lint/learning-order.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 
 type Options = { packs: PackId[]; out: string; tsvOnly: boolean };
@@ -37,7 +36,7 @@ function parseArgs(argv: string[]): Options {
 
 function main(): void {
   const options = parseArgs(process.argv.slice(2));
-  const pages = [...readingOrder.map((item) => ({ page: sidebarPage(item.link), title: item.text })), { page: levelReviewPage, title: "Review" }];
+  const pages = [...lessonPages(), { page: levelReviewPage, title: "Review" }];
   const inputs = loadFlashcardInputs(pages, levelReviewPage);
   const notes = buildNotes(inputs);
   const python = join(REPO_ROOT, ".venv", "bin", "python");

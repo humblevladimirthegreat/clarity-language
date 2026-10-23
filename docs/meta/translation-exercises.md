@@ -136,7 +136,7 @@ When a drill needs only one person, prefer a beat that still fits the setting an
 ## Shape (template)
 <a id="template"></a>
 
-Use a stable heading and anchor at the **end** of the stage (before the next `## Intermediate` / `## Advanced`). The heading text repeats on every stage, so pin a stage-prefixed id on each heading (`{#beginner-…}`, `{#intermediate-…}`, `{#advanced-…}`); ids must be unique on a page ([one id per heading](grammar-docs.md#unique-ids)). Each stage has **one** checkpoint: when a stage teaches several topics, fold their items into that one section (the lint fails on a second checkpoint heading in a stage).
+Use a stable heading and anchor at the **end** of the sitting (before `## See also` / end of file, or on an unsplit page before the next `## Intermediate` / `## Advanced`). The heading text repeats on every sitting, so pin a stage-prefixed id on each heading (`{#beginner-…}`, `{#intermediate-…}`, `{#advanced-…}`); ids must be unique on a page ([one id per heading](grammar-docs.md#unique-ids)). Each sitting has **one** checkpoint: when a sitting teaches several topics, fold their items into that one section (the lint fails on a second checkpoint heading in a sitting).
 
 ````md
 ### Practice {#beginner-practice}

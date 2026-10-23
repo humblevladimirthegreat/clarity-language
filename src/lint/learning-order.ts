@@ -1,17 +1,38 @@
 /**
  * Learning order of grammar-page sections (docs/proposals/learning-order-check.md).
  *
- * Global order: every `## Beginner` band in sidebar order, then every
- * `## Intermediate` band, then every `## Advanced` band; within a band,
- * heading order. Only level-2 headings open a band, so `### Beginner forms`
- * stays inside its `## Beginner`; `## See also` closes it. Doc order comes
- * from the sidebar's `readingOrder`, passed in by the caller at run time.
- * Pages off the sidebar are not checked.
+ * Global order: every Beginner sitting in sidebar order, then Intermediate,
+ * then Advanced; within a sitting, heading order. A page with front matter
+ * `band:` is that sitting (still honor `## See also`). Unsplit pages still
+ * open a band at `## Beginner` / `## Intermediate` / `## Advanced`, so
+ * `### Beginner forms` stays inside its `## Beginner`. Doc order comes from
+ * the sidebar's `readingOrder` (plus peeled sittings on the holding list),
+ * passed in by the caller at run time. Pages off that list are not checked.
  */
 import { anchorTags, grammarHeadings } from "./grammar-anchors.js";
 
 export const BANDS = ["beginner", "intermediate", "advanced"] as const;
 export type Band = (typeof BANDS)[number];
+
+const FRONT_MATTER_RE = /^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/;
+
+/** YAML keys from the opening `---` fence, when the page has one. */
+export function parseFrontMatter(markdown: string): Record<string, string> {
+  const fence = FRONT_MATTER_RE.exec(markdown);
+  if (!fence) return {};
+  const attrs: Record<string, string> = {};
+  for (const line of fence[1]!.split(/\r?\n/)) {
+    const kv = /^([A-Za-z][\w-]*)\s*:\s*(.*?)\s*$/.exec(line);
+    if (kv) attrs[kv[1]!] = kv[2]!;
+  }
+  return attrs;
+}
+
+/** Front matter `band:` when it is beginner / intermediate / advanced. */
+export function pageBand(markdown: string): Band | undefined {
+  const value = parseFrontMatter(markdown).band?.toLowerCase();
+  return BANDS.find((b) => b === value);
+}
 
 export type Section = {
   page: string;
@@ -41,17 +62,25 @@ export type PageSections = {
 /**
  * Split a grammar page into heading sections, with bands and anchors. A
  * `## See also` section is `ignored`: it lists links, and is not part of any band.
+ * Front matter `band:` marks every other section; otherwise only a named H2 does.
  */
 export function pageSections(page: string, markdown: string): PageSections {
-  const sections: Section[] = [{ page, slug: "", title: "", level: 0, offset: 0, end: markdown.length }];
+  const fileBand = pageBand(markdown);
+  const sections: Section[] = [
+    { page, slug: "", title: "", level: 0, offset: 0, end: markdown.length, ...(fileBand ? { band: fileBand } : {}) },
+  ];
   const anchors = new Map<string, Section>();
-  let band: Band | undefined;
+  let band: Band | undefined = fileBand;
   let ignored = false;
   for (const h of grammarHeadings(markdown)) {
     if (h.level <= 2) {
-      const named = BANDS.find((b) => h.title.toLowerCase() === b);
       ignored = h.level === 2 && h.title.toLowerCase() === "see also";
-      band = ignored || h.level === 1 ? undefined : (named ?? band);
+      if (fileBand) {
+        band = ignored ? undefined : fileBand;
+      } else {
+        const named = BANDS.find((b) => h.title.toLowerCase() === b);
+        band = ignored || h.level === 1 ? undefined : (named ?? band);
+      }
     }
     for (const open of sections) {
       if (open.end === markdown.length && (open.level === 0 || open.level >= h.level)) open.end = h.offset;
@@ -87,7 +116,8 @@ export type LearningOrder = {
 
 /**
  * Number every banded section. `readingOrder` is the list of pages (`clause.md`,
- * …) in sidebar order; sections of pages off that list get no position.
+ * …) in sidebar order, with peeled sittings already spliced after their parent;
+ * sections of pages off that list get no position.
  */
 export function learningOrder(readingOrder: readonly string[], pages: Map<string, PageSections>): LearningOrder {
   const ordered: Section[] = [];

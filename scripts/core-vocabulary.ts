@@ -14,7 +14,7 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { levelReviewPage, readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { levelReviewPage, pathPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import {
   CORE_CAP,
   CORE_REVIEW_MIN,
@@ -33,7 +33,6 @@ import {
   type SpacingWord,
 } from "../src/core-vocabulary.js";
 import { parseCsv, serializeCsv } from "../src/csv.js";
-import { sidebarPage } from "../src/lint/learning-order.js";
 import type { ClassifyTables } from "../src/parse/classify.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { dataPath, REPO_ROOT } from "../src/repo-paths.js";
@@ -140,7 +139,7 @@ function printLookAlikes(checkpoints: Checkpoint[], core: ReadonlyMap<string, st
 function main(): void {
   const options = parseArgs(process.argv.slice(2));
   const tables = loadDefaultTables();
-  const pages = [...readingOrder.map((item) => sidebarPage(item.link)), levelReviewPage];
+  const pages = pathPages();
   const checkpoints = stageCheckpoints(
     pages,
     (page) => {

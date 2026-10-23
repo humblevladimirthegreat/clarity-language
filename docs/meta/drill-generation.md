@@ -49,7 +49,7 @@ Find the row(s) in the [allowlist](#allowlist).
 - [translation-exercises.md](translation-exercises.md) (principles, [checkpoint setting](translation-exercises.md#checkpoint-setting), template)
 - [grammar-docs.md](grammar-docs.md#house-cast) (house people)
 - [glosses.md](glosses.md#house-cast) (name glosses — not needed inside spoilers)
-- **This stage only** of the target file (`## Beginner` *or* `## Intermediate` *or* `## Advanced`) plus the page title / **Needs:** line
+- **This sitting only** of the target file (`band:` on the file, or `## Beginner` *or* `## Intermediate` *or* `## Advanced` on an unsplit page) plus the page title / **Needs:** line
 - Worked examples **inside that stage** (gold corpus for **morph** packaging, not for checkpoint verbs)
 - `data/lexicon-published.csv` (and overlays / compounds CSVs) to certify a setting English gloss has a published stem
 - `npm run core-vocabulary -- --for <page>.md:<band>`, to pick **New words** and **Review**. It lists the core roots this checkpoint may introduce, the next later core roots a setting could pull forward, and the earlier core roots ranked by how many checkpoints have passed since a bank last used them. Take review roots from the top of that list unless the setting needs others
@@ -84,13 +84,13 @@ If you cannot certify a token, drop the item. Do not guess from English. Do not 
 
 ### 5. Write the checkpoint
 
-Place **`### Practice {#<band>-practice}`** at the **end of the stage**, immediately before the next `## Intermediate` / `## Advanced` / `## See also` / end of file. Do not insert after every H3. Do not add a second checkpoint in the same stage unless the allowlist row says **split**.
+Place **`### Practice {#<band>-practice}`** at the **end of the sitting**, immediately before `## See also` / end of file, or on an unsplit page immediately before the next `## Intermediate` / `## Advanced`. Do not insert after every H3. Do not add a second checkpoint in the same sitting unless the allowlist row says **split**.
 
 Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Then the **New words** and **Review** tables ([vocab table](translation-exercises.md#vocab-table)): house names and `SELF` sit in New words on their first checkpoint and in Review after. House-person **English** is *Uzozen* / *Olazun* / *Ahelan*, not `*grace* (name **Uzozen**)`. Pick a setting **not already named** in [settings](#settings) ([unique globally](translation-exercises.md#checkpoint-setting)); write the same phrase into this file’s cell when you replace. At least half the items in each translation direction use a root or situation of the setting. Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill.
 
 *S* is the number of `###` headings in the band above the checkpoint, not counting Practice. Count every such heading, including a short recap, a Compare-with, and a section that only adds overlay or vocabulary rows. Do not count only sections that home a construction. Sitting length is headings: a new `###` is a new bite, whether it is a large table or a recap. The cap is **room**, not a target ([principle 6](translation-exercises.md#principles)): write only as many items as the band needs. Coverage already requires each family once; extra headings do not require extra items.
 
-A band past **10** taught sections is too long for one sitting. Split that **page** into two sibling grammar pages, each a full subsystem with its own stages and one checkpoint. Do not add an allowlist **split** row (a second checkpoint on the same page) unless one page must stay together. Do not split Beginner / Intermediate / Advanced into separate files. Do not add an H3 to a band already at 10 without splitting first.
+A sitting past **10** taught sections is too long. Split that **job** onto a sibling grammar page, each a full sitting with its own checkpoint. One band per file (peel with `npm run peel-band`); sibling splits by job when *S* > 10 still apply. Do not add an allowlist **split** row (a second checkpoint on the same sitting) unless one page must stay together. Do not add an H3 to a sitting already at 10 without splitting first.
 
 | Band kind | Per translation direction | Decision items |
 |-----------|---------------------------|----------------|

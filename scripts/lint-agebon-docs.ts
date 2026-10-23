@@ -60,7 +60,6 @@ import {
   learningOrder,
   pageSections,
   sectionAt,
-  sidebarPage,
   type LearningOrder,
   type PageSections,
 } from "../src/lint/learning-order.js";
@@ -76,7 +75,7 @@ import {
   type ConstructionUse,
 } from "../src/lint/drill-coverage.js";
 import { CONSTRUCTIONS as STATIC_CONSTRUCTIONS, constructionRegistry } from "../src/parse/constructions.js";
-import { levelReviewPage, readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { lessonPages, levelReviewPage, pathPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { lintLevelReview } from "../src/lint/level-review.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
@@ -387,7 +386,7 @@ function main(): void {
       const h1 = /^# (.+)$/m.exec(md)?.[1];
       if (h1) names.set(page, h1.replace(/\s*\{#[^}]+\}\s*$/, "").trim());
     }
-    for (const item of readingOrder) names.set(sidebarPage(item.link), item.text);
+    for (const item of lessonPages()) names.set(item.page, item.title);
     for (const finding of lintTerminology(terminology, pageMarkdown, tables, glossLabels(tables.overlays.values()), names)) {
       terminologyCount += 1;
       console.error(`docs/grammar/${TERMINOLOGY_PAGE}:${lineNumberAt(terminology, finding.index)}  terminology  (${finding.detail})`);
@@ -409,12 +408,12 @@ function main(): void {
   let reviewCount = 0;
   if (paths.length === 0) {
     // The level review page comes last, so each of its bands closes that level.
-    const pathPages = [...readingOrder.map((item) => sidebarPage(item.link)), levelReviewPage];
-    const order = learningOrder(pathPages, pages);
+    const orderPages = pathPages();
+    const order = learningOrder(orderPages, pages);
     coverageCount = checkConstructionCoverage(uses);
     orderCount = reportLearningOrder(order, uses, orderReport);
     drillCount = reportDrillCoverage(order, uses);
-    const checkpoints = stageCheckpoints(pathPages, (page) => pageMarkdown.get(page), tables, levelReviewPage);
+    const checkpoints = stageCheckpoints(orderPages, (page) => pageMarkdown.get(page), tables, levelReviewPage);
     const core = storedCore();
     for (const finding of lintCoreCounts(checkpoints, core)) {
       coreCount += 1;

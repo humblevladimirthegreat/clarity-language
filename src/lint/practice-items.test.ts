@@ -118,6 +118,24 @@ describe("practiceBandStats", () => {
     assert.deepEqual(practiceBandStats(lines, beginner), { band: "beginner", S: 2 });
     assert.deepEqual(practiceBandStats(lines, intermediate), { band: "intermediate", S: 3 });
   });
+
+  it("uses front matter band for a whole-file sitting", () => {
+    const md = `---
+band: intermediate
+---
+
+# Role pointers
+
+### One
+
+### Two
+
+### Practice
+`;
+    const lines = md.split("\n");
+    const practice = lines.findIndex((line) => line.startsWith("### Practice"));
+    assert.deepEqual(practiceBandStats(lines, practice), { band: "intermediate", S: 2 });
+  });
 });
 
 describe("practiceItems, scaled counts", () => {

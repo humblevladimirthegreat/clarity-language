@@ -7,7 +7,7 @@
  * A level review ([level-review.ts](level-review.ts)) has its own counts, so `review` skips them.
  */
 import { SPEECH_MARK } from "./number-speech-docs.js";
-import { BANDS, type Band } from "./learning-order.js";
+import { BANDS, pageBand, type Band } from "./learning-order.js";
 import { PRACTICE_H3_RE, practiceRanges } from "./practice-sections.js";
 
 export type PracticeItemType = "en-ag" | "ag-en" | "pick" | "fix" | "changes";
@@ -49,19 +49,22 @@ export function practiceBandStats(
   lines: readonly string[],
   practiceStart: number,
 ): { band: Band | undefined; S: number } {
-  let band: Band | undefined;
+  const fileBand = pageBand(lines.join("\n"));
+  let band: Band | undefined = fileBand;
   let bandLine = -1;
   let inFence = false;
-  for (let i = 0; i < practiceStart; i++) {
-    const line = lines[i]!;
-    if (/^\s*```/.test(line)) inFence = !inFence;
-    if (inFence) continue;
-    const h2 = BAND_H2.exec(line);
-    if (!h2) continue;
-    const name = h2[1]!.toLowerCase();
-    if (!BANDS.includes(name as Band)) continue;
-    band = name as Band;
-    bandLine = i;
+  if (!fileBand) {
+    for (let i = 0; i < practiceStart; i++) {
+      const line = lines[i]!;
+      if (/^\s*```/.test(line)) inFence = !inFence;
+      if (inFence) continue;
+      const h2 = BAND_H2.exec(line);
+      if (!h2) continue;
+      const name = h2[1]!.toLowerCase();
+      if (!BANDS.includes(name as Band)) continue;
+      band = name as Band;
+      bandLine = i;
+    }
   }
   let S = 0;
   inFence = false;

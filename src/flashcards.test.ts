@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { levelReviewPage, readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { lessonPages, levelReviewPage } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { CLOSED } from "./closed-roots.js";
 import { NOT_CORE_ROOTS } from "./core-vocabulary.js";
 import {
@@ -13,9 +13,8 @@ import {
   productionGlosses,
   sakeInventoryRoots,
 } from "./flashcards.js";
-import { sidebarPage } from "./lint/learning-order.js";
 
-const pages = [...readingOrder.map((item) => ({ page: sidebarPage(item.link), title: item.text })), { page: levelReviewPage, title: "Review" }];
+const pages = [...lessonPages(), { page: levelReviewPage, title: "Review" }];
 const inputs = loadFlashcardInputs(pages, levelReviewPage);
 const notes = buildNotes(inputs);
 const SAKES = [CLOSED.ballot, CLOSED.tool, CLOSED.lightbulb, CLOSED.compass, CLOSED.knot, CLOSED.present, CLOSED.strawberry, CLOSED.lungs, CLOSED.egg];

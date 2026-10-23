@@ -6,11 +6,11 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { levelReviewPage, readingOrder } from "../../docs/grammar/.vitepress/lib/reading-order.js";
+import { levelReviewPage, pathPages } from "../../docs/grammar/.vitepress/lib/reading-order.js";
 import { NOT_CORE_ROOTS } from "../core-vocabulary.js";
 import { listMarkdown } from "../markdown-files.js";
 import { extractMorphPairs } from "../lint/morph-gloss-docs.js";
-import { learningOrder, pageSections, resolveAnchor, sectionAt, sidebarPage, type LearningOrder } from "../lint/learning-order.js";
+import { learningOrder, pageSections, resolveAnchor, sectionAt, type LearningOrder } from "../lint/learning-order.js";
 import { practiceItems } from "../lint/practice-items.js";
 import type { ClassifyTables } from "../parse/classify.js";
 import { constructionRegistry } from "../parse/constructions.js";
@@ -29,10 +29,7 @@ import type { RecastRule } from "./recast.js";
 
 const GRAMMAR_DIR = join(REPO_ROOT, "docs", "grammar");
 
-/** Stage pages in path order, the level review last (as the docs lint reads them). */
-export function pathPages(): string[] {
-  return [...readingOrder.map((item) => sidebarPage(item.link)), levelReviewPage];
-}
+export { pathPages };
 
 function readPage(page: string): string | undefined {
   const path = join(GRAMMAR_DIR, page);

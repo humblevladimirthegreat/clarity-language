@@ -1,3 +1,5 @@
+import { holdingList, type HoldingSitting } from './holding-list.js'
+
 /** Grammar reading order: the sidebar, and the learning order the docs lint checks against. */
 export const readingOrder = [
   { text: 'Why Agebon', link: '/' },
@@ -47,3 +49,36 @@ export const levelReviews = [
   { text: 'Intermediate review', link: '/review#intermediate' },
   { text: 'Advanced review', link: '/review#advanced' },
 ]
+
+function pageFile(link: string): string {
+  const path = link.split(/[?#]/, 1)[0]!.replace(/^\//, '').replace(/\.(?:md|html)$/, '')
+  return `${path || 'index'}.md`
+}
+
+/** Sidebar lessons plus holding-list sittings after their parent. */
+export function lessonPages(
+  lessons: readonly { text: string; link: string }[] = readingOrder,
+  holding: readonly HoldingSitting[] = holdingList,
+): { page: string; title: string }[] {
+  const out: { page: string; title: string }[] = []
+  for (const item of lessons) {
+    const page = pageFile(item.link)
+    out.push({ page, title: item.text })
+    for (const sitting of holding) {
+      if (sitting.parent === page) out.push({ page: sitting.page, title: sitting.title })
+    }
+  }
+  return out
+}
+
+/**
+ * Stage pages in path order, level review last. Holding-list sittings sit after
+ * their parent so Intermediate/Advanced peels stay in the right band walk.
+ */
+export function pathPages(
+  lessons: readonly { text: string; link: string }[] = readingOrder,
+  holding: readonly HoldingSitting[] = holdingList,
+  review = levelReviewPage,
+): string[] {
+  return [...lessonPages(lessons, holding).map((item) => item.page), review]
+}

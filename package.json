@@ -39,7 +39,8 @@
     "english-helper-recall": "tsx scripts/english-helper-recall.ts",
     "english-helper-eval": "tsx scripts/english-helper-eval.ts",
     "english-helper-wordnet": "tsx scripts/english-helper-wordnet.ts",
-    "flashcards": "tsx scripts/flashcards.ts"
+    "flashcards": "tsx scripts/flashcards.ts",
+    "peel-band": "tsx scripts/peel-band.ts"
   },
   "engines": {
     "node": ">=24"

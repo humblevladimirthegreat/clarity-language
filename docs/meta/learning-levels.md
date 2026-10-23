@@ -24,17 +24,18 @@ Ask in order. Prefer the **earlier** stage when a concept sits on a boundary and
 
 ## How to apply
 
-- Tag **sections** inside each grammar doc (`## Beginner`, `## Intermediate`, `## Advanced`), rather than splitting files by level. Omit a later stage when it would only recap or list unused slots ([empty or pointless stages](grammar-docs.md#empty-stages)).
-- Do **not** score every morph. For each H2/H3, run the three questions, pick a stage, move on.
+- One sitting per file, marked with front matter `band: beginner | intermediate | advanced`. The sidebar will group sittings by band (regroup is a later step). Peel a later band off a parent with `npm run peel-band` rather than tagging several bands with H2s on a new page. Unsplit pages still use `## Beginner` / `## Intermediate` / `## Advanced` until peeled. Omit a later sitting when it would only recap or list unused slots ([empty or pointless stages](grammar-docs.md#empty-stages)).
+- Sibling splits by **job** when *S* > 10 still apply ([drill-generation](drill-generation.md)); this split is by **sitting**. Later sittings of the same topic use a job title, not the topic name again.
+- Do **not** score every morph. For each sitting (or each H2/H3 on an unsplit page), run the three questions, pick a stage, move on.
 - When stages conflict, **dependency wins** over subjective difficulty.
 - Boundary cases needed early for reading examples → prefer the **earlier** stage.
 - Grammar prose: [teach now; don’t preview later](grammar-docs.md#teach-now-dont-preview-later) — no teaser links to peers the path has not reached yet. Later-stage H3s: [Intermediate and Advanced stage shape](grammar-docs.md#later-stage-shape).
-- A thin Beginner that only says “see Intermediate” does **not** earn a Beginner slot. Give one usable pattern, or drop the page from the Beginner path.
+- A thin Beginner that only says “see Intermediate” does **not** earn a Beginner sitting. Give one usable pattern, or drop the page from the Beginner path.
 
 ## Cross-doc path
 <a id="cross-doc-path"></a>
 
-Read **`docs/grammar/`** only, in stage order. [purpose.md](../grammar/purpose.md) and [introduction.md](../grammar/introduction.md) are orientation (not stages).
+Read **`docs/grammar/`** only, in stage order: every Beginner sitting, then Intermediate, then Advanced. Until the sidebar regroups, that order still walks the current Agebon Lessons list (H2s on unsplit pages, `band:` on peeled ones, holding-list sittings after their parent). [purpose.md](../grammar/purpose.md) and [introduction.md](../grammar/introduction.md) are orientation (not stages). Learner-facing [How to learn](../grammar/introduction.md#how-to-learn) still describes H2s until regroup.
 
 ### Beginner
 
