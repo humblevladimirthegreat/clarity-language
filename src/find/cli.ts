@@ -7,9 +7,13 @@
  *   node scripts/find.mjs --seq family=hook,raw=em 'role!=[zdb]' role=b
  *   node scripts/find.mjs --construction 'overlay.egega*' --count
  *   node scripts/find.mjs --construction '/^sentence\.hUnitRule\./'
+ *   node scripts/find.mjs --word family=joinMarker,series=e --count
+ *   node scripts/find.mjs --word family=say,answer=e --json
+ *   node scripts/find.mjs --word marker=re --count
  *
  * Terms are `key=regex[,key=regex]` with keys role / ending / root / family /
- * overlay / unit / raw. Each regex must match the whole field (`raw=em` is the
+ * overlay / unit / raw / series / form / marker / xFamily / reading / scope /
+ * answer / stance / pointer. Each regex must match the whole field (`raw=em` is the
  * word `em`, `raw=.*em` any word ending in `em`); `key!=regex` negates. `--seq`
  * takes terms until the next flag and matches adjacent words. `--construction`
  * takes an exact ID, a `prefix*`, or a `/regex/`. Several flags must all match.
@@ -21,7 +25,15 @@ import { relative } from "node:path";
 import { loadDefaultTables } from "../parse/index.js";
 import { listMarkdown } from "../markdown-files.js";
 import { collectExamples, type Example } from "./examples.js";
-import { matchesTerm, matchSequence, parseTerm as parseTermStrict, type Term } from "./query.js";
+import {
+  hitWord,
+  matchesTerm,
+  matchSequence,
+  parseTerm as parseTermStrict,
+  TERM_KEYS,
+  type HitWord,
+  type Term,
+} from "./query.js";
 
 type Query =
   | { kind: "word"; term: Term }
@@ -45,7 +57,9 @@ function constructionTest(pattern: string): (id: string) => boolean {
 }
 
 function usage(message: string, code = 2): never {
-  console.error(`${message}\nusage: find.mjs [--word TERM] [--seq TERM TERM…] [--construction ID|prefix*|/regex/] [--json|--count] [paths…]\n  TERM is key=regex[,key!=regex…]; keys: role ending root family overlay unit raw; each regex matches the whole value`);
+  console.error(
+    `${message}\nusage: find.mjs [--word TERM] [--seq TERM TERM…] [--construction ID|prefix*|/regex/] [--json|--count] [paths…]\n  TERM is key=regex[,key!=regex…]; keys: ${TERM_KEYS.join(" ")}; each regex matches the whole value`,
+  );
   process.exit(code);
 }
 
@@ -112,7 +126,7 @@ function highlight(example: Example, hits: Set<number>): string {
 }
 
 const tables = loadDefaultTables();
-const results: { file: string; line: number; text: string; shown: string }[] = [];
+const results: { file: string; line: number; index: number; text: string; shown: string; words: HitWord[] }[] = [];
 for (const root of paths.length ? paths : ["docs/grammar", "docs/examples"].filter((dir) => existsSync(dir))) {
   for (const file of listMarkdown(root)) {
     const markdown = readFileSync(file, "utf8");
@@ -121,7 +135,14 @@ for (const root of paths.length ? paths : ["docs/grammar", "docs/examples"].filt
       if (matches.some((m) => m === null)) continue;
       const hits = new Set(matches.flatMap((m) => m!));
       const line = markdown.slice(0, example.index).split("\n").length;
-      results.push({ file: relative(process.cwd(), file), line, text: example.text, shown: highlight(example, hits) });
+      results.push({
+        file: relative(process.cwd(), file),
+        line,
+        index: example.index,
+        text: example.text,
+        shown: highlight(example, hits),
+        words: [...hits].sort((a, b) => a - b).map((i) => hitWord(example.words[i]!)),
+      });
     }
   }
 }

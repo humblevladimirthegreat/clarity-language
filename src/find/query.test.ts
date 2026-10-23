@@ -1,9 +1,10 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
+import { CLOSED } from "../closed-roots.js";
 import { loadDefaultTables } from "../parse/index.js";
 import { collectExamples } from "./examples.js";
-import { matchesTerm, matchSequence, parseTerm } from "./query.js";
+import { hitWord, matchesTerm, matchSequence, parseTerm } from "./query.js";
 
 const tables = loadDefaultTables();
 
@@ -35,6 +36,15 @@ describe("parseTerm", () => {
   it("rejects unknown keys and bad regexes", () => {
     assert.throws(() => parseTerm("colour=red"), /bad term/);
     assert.throws(() => parseTerm("raw=("), /bad regex/);
+  });
+  it("reads xFamily and marker keys", () => {
+    assert.deepEqual(
+      parseTerm("xFamily=ability,marker=re").map(({ key, value }) => [key, value]),
+      [
+        ["xFamily", "ability"],
+        ["marker", "re"],
+      ],
+    );
   });
 });
 
@@ -103,6 +113,80 @@ describe("collectExamples", () => {
       collectExamples(md, tables).map((e) => e.text),
       ["zuzozen vowurel.", "zuzozen vezuvol.", "zolazun vowurel."],
     );
+  });
+});
+
+describe("parse field keys", () => {
+  const raws = (text: string, term: string) =>
+    sentence(text)
+      .words.filter((w) => matchesTerm(w, parseTerm(term)))
+      .map((w) => w.word.raw);
+
+  it("matches join series e, not a hook or polar yes", () => {
+    const text = "zuzozen zel vowurel al buwon. yael.";
+    assert.deepEqual(raws(text, "family=joinMarker,series=e"), ["zel"]);
+    assert.deepEqual(raws(text, "family=hook,form=al|om"), ["al"]);
+    assert.deepEqual(raws(text, "family=joinMarker,role=y,series=ae"), ["yael"]);
+  });
+
+  it("matches hook form on a prefix", () => {
+    assert.deepEqual(raws("guexavuvul.", "form=uel"), ["guexavuvul"]);
+  });
+
+  it("treats writing and speech number markers as twins, not a digit re", () => {
+    const text = "zanal gredol. zanal g#2. zanal grarel.";
+    assert.deepEqual(raws(text, "marker=re").sort(), ["g#2", "gredol"]);
+    assert.deepEqual(raws(text, "marker=#").sort(), ["g#2", "gredol"]);
+    assert.deepEqual(raws(text, "marker=ra"), ["grarel"]);
+  });
+
+  it("matches say answer and scope", () => {
+    const text = "zuzozen vowurel hwavam. zuzozen vowurel hwavem.";
+    assert.deepEqual(raws(text, "family=say,answer=a"), ["hwavam"]);
+    assert.deepEqual(raws(text, "family=say,answer=e"), ["hwavem"]);
+    assert.deepEqual(raws(text, "family=say,scope=a").sort(), ["hwavam", "hwavem"]);
+  });
+
+  it("matches ability and sake stance, not th-scope", () => {
+    assert.deepEqual(raws("vuzunexel.", "xFamily=ability,stance=e"), ["vuzunexel"]);
+    const sake = `g${CLOSED.ballot}thal`;
+    assert.deepEqual(raws(sake, "xFamily=sake,stance=a"), [sake]);
+    const [scope] = sentence("guzozethal").words;
+    assert.ok(scope);
+    assert.equal(scope.word.family.kind === "x" && scope.word.family.xFamily, "scope");
+    assert.ok(matchesTerm(scope, parseTerm("scope=a")));
+    assert.ok(!matchesTerm(scope, parseTerm("stance=a")));
+  });
+
+  it("matches pointer vowel and role scope", () => {
+    const [pointer] = sentence("dwahar").words;
+    assert.ok(pointer);
+    assert.ok(matchesTerm(pointer, parseTerm("xFamily=pointer,pointer=a")));
+    assert.ok(matchesTerm(pointer, parseTerm("scope=a")));
+  });
+
+  it("matches restrictor reading, not a join", () => {
+    const text = "zahelan vezuyol hel. zuzozen zel vowurel.";
+    assert.deepEqual(raws(text, "reading=restrictor"), ["hel"]);
+    assert.deepEqual(raws(text, "reading=join,series=e"), ["zel"]);
+  });
+
+  it("projects hitWord fields including stored marker", () => {
+    const [ordinal] = sentence("gredol").words;
+    assert.deepEqual(hitWord(ordinal!), {
+      raw: "gredol",
+      role: "g",
+      family: "number",
+      series: null,
+      form: null,
+      marker: "#",
+      xFamily: null,
+      reading: "number",
+      scope: null,
+      answer: null,
+      stance: null,
+      pointer: null,
+    });
   });
 });
 

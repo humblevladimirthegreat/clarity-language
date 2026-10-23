@@ -2,7 +2,7 @@
  * Word-level queries over parsed examples: which words a parse contains, in
  * surface order, and whether they match a `key=value,…` term.
  */
-import type { LexWord } from "../parse/types.js";
+import type { LexWord, NumberMarker, NumberStem } from "../parse/types.js";
 
 /** One word of a parsed example, tagged with its clause unit and surface position. */
 export type FoundWord = {
@@ -13,14 +13,66 @@ export type FoundWord = {
   position: number;
 };
 
-const TERM_KEYS = ["role", "ending", "root", "family", "overlay", "unit", "raw"] as const;
+export const TERM_KEYS = [
+  "role",
+  "ending",
+  "root",
+  "family",
+  "overlay",
+  "unit",
+  "raw",
+  "series",
+  "form",
+  "marker",
+  "xFamily",
+  "reading",
+  "scope",
+  "answer",
+  "stance",
+  "pointer",
+] as const;
 export type TermKey = (typeof TERM_KEYS)[number];
 /** One `key=regex` (or negated `key!=regex`) condition; the regex must match a whole field value. */
 export type Condition = { key: TermKey; value: string; negate: boolean; pattern: RegExp };
 export type Term = Condition[];
 
+/** JSON projection of one matched word; absent letter fields are `null`. */
+export type HitWord = {
+  raw: string;
+  role: string | null;
+  family: string;
+  series: string | null;
+  form: string | null;
+  marker: string | null;
+  xFamily: string | null;
+  reading: string;
+  scope: string | null;
+  answer: string | null;
+  stance: string | null;
+  pointer: string | null;
+};
+
 /** A comma that starts the next `key=` / `key!=` condition (a regex may hold other commas, e.g. `{2,3}`). */
 const CONDITION_SPLIT = new RegExp(`,(?=(?:${TERM_KEYS.join("|")})!?=)`);
+const TERM_PART = new RegExp(`^(${TERM_KEYS.join("|")})(!?)=(.*)$`, "s");
+
+/** Writing glyph ↔ speech letters for one number-marker job (`#` / `re` are both ordinal-from-start). */
+const MARKER_TWIN: Record<string, string> = {
+  "+": "ra",
+  ra: "+",
+  "-": "ru",
+  ru: "-",
+  "#": "re",
+  re: "#",
+  "#-": "rue",
+  rue: "#-",
+  "#_": "ruo",
+  ruo: "#_",
+  "+-": "rua",
+  rua: "+-",
+  _: "ro",
+  ro: "_",
+};
 
 /**
  * Parse `role=v,ending=r` into its conditions. Each value is a regular expression
@@ -29,9 +81,9 @@ const CONDITION_SPLIT = new RegExp(`,(?=(?:${TERM_KEYS.join("|")})!?=)`);
  */
 export function parseTerm(text: string): Term {
   return text.split(CONDITION_SPLIT).map((part) => {
-    const m = /^([a-z]+)(!?)=(.*)$/s.exec(part);
+    const m = TERM_PART.exec(part);
     const key = m?.[1] as TermKey | undefined;
-    if (!m || !key || !TERM_KEYS.includes(key)) {
+    if (!m || !key) {
       throw new Error(`bad term "${part}": expected key=regex or key!=regex with key one of ${TERM_KEYS.join(", ")}`);
     }
     const value = m[3]!;
@@ -88,6 +140,79 @@ export function flattenWords(result: unknown, chunks: string[]): FoundWord[] {
   return found.sort((a, b) => a.position - b.position);
 }
 
+function numberStem(word: LexWord): NumberStem | undefined {
+  const { family } = word;
+  if (family.kind === "number") return family.stem;
+  if (family.kind === "x") return family.numberStem;
+  return undefined;
+}
+
+/** Stored marker plus its writing/speech twin; calendar `roe` is not the `_` / `ro` pair. */
+function markerValues(stem: NumberStem | undefined): string[] {
+  if (!stem) return [];
+  if (stem.calendarOrdinal) return ["roe"];
+  const stored: NumberMarker = stem.marker;
+  const twin = MARKER_TWIN[stored];
+  return twin && twin !== stored ? [stored, twin] : [stored];
+}
+
+function formValues(word: LexWord): string[] {
+  const { family } = word;
+  const forms: string[] = [];
+  if (family.kind === "hook") forms.push(family.form);
+  if (family.kind === "hookCompound") forms.push(family.hook);
+  if (family.kind === "x" && family.hook) forms.push(family.hook);
+  if (word.hookCompound) forms.push(word.hookCompound.hook);
+  return forms;
+}
+
+function scopeValue(word: LexWord): string | undefined {
+  const { family } = word;
+  if (family.kind === "say") return family.scope;
+  if (family.kind !== "x") return undefined;
+  if (family.xFamily === "scope") return family.stanceVowel;
+  return family.scopeVowel;
+}
+
+function stanceValue(word: LexWord): string | undefined {
+  const { family } = word;
+  if (family.kind !== "x" || family.xFamily === "scope") return undefined;
+  return family.stanceVowel;
+}
+
+function seriesValue(word: LexWord): string | undefined {
+  return word.family.kind === "joinMarker" ? word.family.series : undefined;
+}
+
+function pointerValue(word: LexWord): string | undefined {
+  return word.family.kind === "x" ? word.family.pointerVowel : undefined;
+}
+
+function first(values: string[]): string | null {
+  return values[0] ?? null;
+}
+
+/** Stored fields for `--json`; `marker` is the stem spelling, not the twin. */
+export function hitWord(item: FoundWord): HitWord {
+  const { word } = item;
+  const { family } = word;
+  const stem = numberStem(word);
+  return {
+    raw: word.raw,
+    role: word.pos ?? null,
+    family: family.kind,
+    series: seriesValue(word) ?? null,
+    form: first(formValues(word)),
+    marker: stem?.calendarOrdinal ? "roe" : (stem?.marker ?? null),
+    xFamily: family.kind === "x" ? family.xFamily : null,
+    reading: word.reading,
+    scope: scopeValue(word) ?? null,
+    answer: family.kind === "say" ? family.answer : null,
+    stance: stanceValue(word) ?? null,
+    pointer: pointerValue(word) ?? null,
+  };
+}
+
 /** The values a condition's regex is tested against (a word may have several roots or overlays). */
 function fieldValues(item: FoundWord, key: TermKey): string[] {
   const { word } = item;
@@ -110,6 +235,24 @@ function fieldValues(item: FoundWord, key: TermKey): string[] {
       return [item.unit];
     case "raw":
       return [word.raw];
+    case "series":
+      return seriesValue(word) ? [seriesValue(word)!] : [];
+    case "form":
+      return formValues(word);
+    case "marker":
+      return markerValues(numberStem(word));
+    case "xFamily":
+      return family.kind === "x" ? [family.xFamily] : [];
+    case "reading":
+      return [word.reading];
+    case "scope":
+      return scopeValue(word) ? [scopeValue(word)!] : [];
+    case "answer":
+      return family.kind === "say" ? [family.answer] : [];
+    case "stance":
+      return stanceValue(word) ? [stanceValue(word)!] : [];
+    case "pointer":
+      return pointerValue(word) ? [pointerValue(word)!] : [];
   }
 }
 

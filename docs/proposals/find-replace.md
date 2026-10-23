@@ -1,6 +1,6 @@
 # Proposal: parse-aware find and replace
 
-**Status:** PROPOSED. Nothing here is absorbed.  
+**Status:** Phase 1 absorbed; Phases 2–3 not started.  
 **Related:** [`scripts/find.mjs`](../../scripts/find.mjs), [`src/find/`](../../src/find/), [`src/retie/`](../../src/retie/) (span walk and gloss follow, root maps only), [retie limits](../meta/retie.md), `vowel-series-realignment.md` (the first absorb that needs this; do not start that absorb before Phase 2).  
 **Design authority:** none. This is a process for the tool. It does not add grammar.
 
@@ -84,7 +84,7 @@ Add find keys for fields already on `LexWord` / `MorphWordFamily`. Each value is
 
 Pin the new keys in [`src/find/query.test.ts`](../../src/find/query.test.ts). Update the AGENTS.md find bullet and the `find.mjs` header comment when absorbed.
 
-**Done when:** `find.mjs --word family=joinMarker,series=e --count` and `--word family=say,answer=e --json` work, polar *yes* is `--word family=joinMarker,role=y,series=ae` rather than `polar.starter`, and `--word marker=re --count` is spelled ordinals only (`gredol`, not `g#2`, not digit `re`).
+**Done when:** `find.mjs --word family=joinMarker,series=e --count` and `--word family=say,answer=e --json` work, polar *yes* is `--word family=joinMarker,role=y,series=ae` rather than `polar.starter`, and `--word marker=re --count` is the ordinal-from-start job in either script (`gredol` and `g#2`, not digit `re`).
 
 **Not this phase:** `--map`, `--write`, `src/` walks.
 
