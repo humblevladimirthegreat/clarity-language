@@ -91,7 +91,7 @@ Calls and sentence glue use [`/y/`](../speech-moves.md) and [`/x/`](../dependent
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Adjective after the noun](../clause.md#adjectives-ɡ) | `zudozol gunemul vowurel.` | *An angry dog walks.* | B |
-| [Adjective before the noun](../left-bound.md#left-bound-adjectives): `l` after `/ɡ/` | `glunemul zudozol` | *an angry dog* | I |
+| [Adjective before the noun](../left-bound-adjectives.md#left-bound-adjectives): `l` after `/ɡ/` | `glunemul zudozol` | *an angry dog* | B |
 | [Detail on an adjective](../clause.md#adjective-detail-w) | `zudozol welazom gunemul vowurel.` | *A very angry dog walks.* | B |
 | [Stance on the whole claim](../clause.md#stance-th) | `zudozol thevemom vowurel.` | *I doubt a dog is walking.* | B |
 

@@ -65,7 +65,7 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 | Part | What it is | Stage |
 |------|------------|-------|
 | [Role letter](../phonotactics.md#phonotactics) | first letter: the word's job in the clause | I |
-| Optional `l` after `/ɡ/` | [adjective before the noun](../left-bound.md#left-bound-adjectives) | I |
+| Optional `l` after `/ɡ/` | [adjective before the noun](../left-bound-adjectives.md#left-bound-adjectives) | B |
 | Optional `l` after `/b/` | [`bl-`](../clause.md#extra-nouns): completes the word right before it | B |
 | Root(s) | vowel-first; a [dictionary compound](../phonotactics.md#phonotactics) is one long root (`obahoha` *bedroom*); a root after a root is joined by mid-word `x` ([compounds](../compounds.md)) | I |
 | Mid-word `th` | the stance seam: [scope](../label-scope.md#label-scope), [sakes](../sakes.md), [viewpoint](../viewpoint.md#viewpoint-laterals) | I |

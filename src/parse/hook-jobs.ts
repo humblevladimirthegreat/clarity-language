@@ -115,7 +115,7 @@ function hookVowels(word: LexWord): string | undefined {
 }
 
 /**
- * `oel` + `/b/` right after an `ul` extra noun closes one *from … to* unit, not a range (numbers-applied.md#time):
+ * `oel` + `/b/` right after an `ul` extra noun closes one *from … to* unit, not a range (digit-strings.md#time):
  * `ul b_9 oel b_17`. Plain and loose endings only; the `ul` pair must stand on the clause, not on a landmark.
  */
 function closesFromTo(units: Unit[], index: number): boolean {

@@ -6,7 +6,7 @@ Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* do
 
 ### English → Agebon {#english-cues}
 
-**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Contrary to a stance](prescription.md#contrary-to-stance) · [Continue](dependents.md#continue-x) · [Sentence linkers](sentence-linkers.md#sentence-linkers) · [Stacked discourse hooks](discourse-hooks.md#stacked-discourse) · [Because](iff-fault.md#only-because) · [Point back](discourse-hooks.md#hook-resume) · [Clause sequence](join-across-roles.md#clause-sequence)
+**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Contrary to a stance](prescription.md#contrary-to-stance) · [Continue](dependents.md#continue-x) · [Sentence linkers](sentence-linkers.md#sentence-linkers) · [Stacked discourse hooks](discourse-hooks.md#stacked-discourse) · [Because](iff-fault.md#only-because) · [Point back](discourse-hooks.md#hook-resume) · [Clause sequence](clause-sequence.md#clause-sequence)
 
 Time and discourse dependents use the same **`blarl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
 
@@ -29,7 +29,7 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 | *however* / *meanwhile* (discourse) | **`xezom`** / **`xegorem`** |
 | *regardless of* (NP) | same **`hezom`** + `/b/` **noun** as *despite* |
 | *anyway* / *anyhow* (back to the main line) | the resume hook **`or …`** ([point back](discourse-hooks.md#hook-resume)) |
-| *otherwise* / *or else* (failing that) | **`xon`** between the clauses ([clause sequence](join-across-roles.md#clause-sequence)) |
+| *otherwise* / *or else* (failing that) | **`xon`** between the clauses ([clause sequence](clause-sequence.md#clause-sequence)) |
 | *nevertheless* / *nonetheless* (discourse) | **`xezom`** after the finished claim; inside one sentence, **`hezom blarl`** |
 | *whereas* (two claims set against each other) | **`xezom`** before the second claim, or **`hezom blarl`** inside one sentence |
 | *moreover* / *furthermore* (discourse) | **`ael …`** opens the sentence that goes further; **`al …`** adds a separate point ([stacked discourse hooks](discourse-hooks.md#stacked-discourse)) |
@@ -92,7 +92,7 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 
 ### Reason, purpose, guilty {#reason-purpose-guilty}
 
-**Needs:** [Because](iff-fault.md#only-because) · [Fault](iff-fault.md#fault) · [Motive](prescription.md#sake-preference) · [Prescription](prescription.md#sake-force) · [Attachment sites](prescription.md#attachment-sites) · [So that](dependents.md#so-that) · [Why?](fill-ask-roles.md#why) · [Emotion compose](feelings-permission.md#emotion-compose) · [Feeling with no object](feelings-permission.md#feeling-no-object)
+**Needs:** [Because](iff-fault.md#only-because) · [Fault](iff-fault.md#fault) · [Motive](prescription.md#sake-preference) · [Prescription](prescription.md#sake-force) · [Attachment sites](prescription.md#attachment-sites) · [So that](dependents.md#so-that) · [Why?](fill-ask-jobs.md#why) · [Emotion compose](feelings-permission.md#emotion-compose) · [Feeling with no object](feelings-permission.md#feeling-no-object)
 
 English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each split the same way. Name which one you mean: what **made it happen** (the because pole), what the speaker is **doing it for** (a motive, on a sake), or the **faculty** of thinking (the abstract sense of `ebobo`).
 

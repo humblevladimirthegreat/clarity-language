@@ -220,7 +220,7 @@ Worked examples: `y_3` *Three!*; `yragel` *Three more!*; `yrugel` *Three short!*
 
 Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call name, **-r** resume a prior shout’s value, with a digit).
 
-**Compare with:** statement / question / command words in the [speech-act section](speech-acts.md#speech-act).
+**Compare with:** statement / question / command words in the [speech-act section](firm-soft.md#speech-act).
 
 #### Number as discourse marker (by marker) {#number-as-discourse-marker-by-marker}
 
@@ -319,12 +319,12 @@ z-Olazun | v-run | h-three
 x-2nd | z-Uzozen | v-sit
 :::
 
-**4.** *Olazun adds three to the score.*
+**4.** *Olazun removes three from the score.*
 
 ::: details Show answer
-`zolazun dodoram vragel.`
+`zolazun dodoram vrugel.`
 
-z-Olazun | d-score | v-three
+z-Olazun | d-score | v-minus-three
 :::
 
 **5.** *Uzozen is probably throwing a punch.* (I'd put it at 70%)

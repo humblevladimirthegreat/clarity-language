@@ -346,7 +346,7 @@ describe("morphGlossLine — tags, xuen, hewol, pointer anchors", () => {
     expectLine("yem zawan vowurel. yol yuol.", "y-request | z-listener | v-walk . y-question | y-refuse-option");
     expectLine("zuzozen vowurel. yol yuel.", "z-Uzozen | v-walk . y-question | y-no");
   });
-  it("xuen tells a sequence last first (join-across-roles.md#sequence)", () => {
+  it("xuen tells a sequence last first (clause-sequence.md#sequence)", () => {
     expectLine("zuzozen vuhohol xuen zuzozer vowurel.", "[z-Uzozen | v-sit | x-and-before-that | z-←Uzozen | v-walk]");
   });
   it("hewol / gewol are exactly like (of-relations.md#exactly-like)", () => {

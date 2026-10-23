@@ -61,7 +61,7 @@ export const VContEnd = wordToken("VContEnd", [VCont]);
 export const VContMore = wordToken("VContMore", [VCont]);
 export const JoinVEnd = wordToken("JoinVEnd", [JoinV]);
 export const JoinVMore = wordToken("JoinVMore", [JoinV]);
-/** A `/ɡ/` word: a plain adjective describes what is before it; a `gl-` adjective leans on the noun or call after it (left-bound.md#left-bound-adjectives). */
+/** A `/ɡ/` word: a plain adjective describes what is before it; a `gl-` adjective leans on the noun or call after it (left-bound-adjectives.md#left-bound-adjectives). */
 export const G = wordToken("G");
 export const GPlain = wordToken("GPlain", [G]);
 /** A plain adjective a noun list's join may share (rank-joins.md#shared-after-the-join): not one that starts a respectively list. */

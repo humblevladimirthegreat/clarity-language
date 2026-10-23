@@ -947,7 +947,7 @@ function enforceTagHost(node: AstNode): void {
   }
 }
 
-/** A digit-string label with digits takes **-x** for the group English pluralizes: `z_90x` *the ’90s* (numbers-applied.md#plural-labels). */
+/** A digit-string label with digits takes **-x** for the group English pluralizes: `z_90x` *the ’90s* (digit-strings.md#plural-labels). */
 function isPluralLabel(word: LexWord): boolean {
   if (word.family.kind !== "number" || !(word.pos === "z" || word.pos === "d" || word.pos === "b")) return false;
   const stem = word.family.stem;
@@ -1008,7 +1008,7 @@ function enforceTurnWordMods(left: LeftEdge): void {
   });
 }
 
-/** A `gl-` adjective leans on the next noun, call, or reaction (or a mention marker on its topic span); one with nothing after it is left over (left-bound.md#left-bound-adjectives). */
+/** A `gl-` adjective leans on the next noun, call, or reaction (or a mention marker on its topic span); one with nothing after it is left over (left-bound-adjectives.md#left-bound-adjectives). */
 function enforceGlLeans(result: ParseResult): void {
   const leaning = new Set<LexWord>();
   // The mention marker before a topic span leans on that span (span-mention.md#mention).
@@ -1143,7 +1143,7 @@ const DESCRIBING = [G, W, HostedB];
 
 /**
  * Name the rule behind a parse failure: a `/b/` after a word with no `/b/` slot (numbers-applied.md#measure-phrases), a
- * `gl-` adjective with nothing to lean on (left-bound.md#left-bound-adjectives), respectively `wazem` away from a join word,
+ * `gl-` adjective with nothing to lean on (left-bound-adjectives.md#left-bound-adjectives), respectively `wazem` away from a join word,
  * or
  * a noun or verb right after a phrase of the same slot (joins.md#right-close): a join word before its conjuncts, or
  * two nouns of one role (or two verbs) with no join after them.
@@ -1174,7 +1174,7 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
   // *Respectively* (`wazem`) sits only right before a join word (rank-joins.md#respectively).
   const pairing = tokens.findIndex((token, i) => tokenMatcher(token, WPairing) && !isAny(tokens[i + 1] ?? token, [JoinZ, JoinD, JoinB, JoinG, JoinV]));
   if (pairing >= 0) throw new ConstructionError("joinDetail", tokens[pairing]!.image);
-  // A `gl-` adjective leans on the noun or call after its hosted `/b/` (left-bound.md#left-bound-adjectives). The parser
+  // A `gl-` adjective leans on the noun or call after its hosted `/b/` (left-bound-adjectives.md#left-bound-adjectives). The parser
   // stops at the adjective (or a `/w/` before it) when no unit can start there, or at the word after it.
   let gl = -1;
   for (let i = at; i >= 0 && i < tokens.length && isAny(tokens[i]!, [W, GGl]); i += 1) if (tokenMatcher(tokens[i]!, GGl)) gl = i;

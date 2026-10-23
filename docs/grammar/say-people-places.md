@@ -45,7 +45,7 @@ A place, tool, or *of*-relation on the noun is still an extra-noun [hook](hooks.
 >
 > "Uzozen sees a guard who sits."
 
-For English *whose*, resume the person after the [whose hook **`em`**](ending-grids.md#genitive) in the second sentence. Use **`gogunum`** instead when the point is that the guard legally owns it.
+For English *whose*, resume the person after the [whose hook **`em`**](extra-noun-hooks.md#genitive) in the second sentence. Use **`gogunum`** instead when the point is that the guard legally owns it.
 
 > `zagayul vuhohol. zudozol em bagayur varuvel.`
 >
@@ -67,7 +67,7 @@ English uses the same *who* clause for two jobs. When it picks out **which** one
 
 ### Stacked owners (*Uzozen's dog's bone*) {#stacked-owners}
 
-**Needs:** [Whose (`em`)](ending-grids.md#genitive) · [Sequence `ae`](rank-joins.md#sequence-ae)
+**Needs:** [Whose (`em`)](extra-noun-hooks.md#genitive) · [Sequence `ae`](rank-joins.md#sequence-ae)
 
 When English stacks possessives, keep one **`em`** and list every owner in its `/b/`, closed by the sequence join **`bael`**. Put the **nearest** owner first: the first `/b/` uses the host, and each later `/b/` keeps the one before it.
 
@@ -276,7 +276,7 @@ English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwezud
 
 *Shareholder* is *owner* of a part: `zwazogunum gobem blahehal` (owner of a part of the house). *Colleague* is a worker tied to you: `zwezuzubal gohuyam bluwon`. *Relative* is a person who is part of the family: `zeyol gobem blavayal`.
 
-**Compare with:** for *boss* or *chief*, the tie form names whom they lead: `zolazun gugobem bluzozen` is *Olazun is Uzozen's boss* ([social relations](of-relations.md#social-relations)).
+**Compare with:** for *boss* or *chief*, the tie form names whom they lead: `zolazun gugobem bluzozen` is *Olazun is Uzozen's boss* ([social relations](social-ties.md#social-relations)).
 
 ### Kin words {#kin-words}
 
@@ -407,7 +407,7 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 
 ### Join, belong, comprise, replace, represent, prefer, involve, agree {#relating-verbs}
 
-**Needs:** [Rank joins](rank-joins.md#rank-joins) · [Join-act verbs](join-across-roles.md#join-act-verbs) · [Join-relations](join-across-roles.md#join-relations) · [Of relations](of-relations.md#of-relations) · [Whose](ending-grids.md#genitive) · [Exchange](relations.md#exchange) · [Proxy](relations.md#proxy) · [Simile](relations.md#similative)
+**Needs:** [Rank joins](rank-joins.md#rank-joins) · [Join-act verbs](join-across-roles.md#join-act-verbs) · [Join-relations](join-across-roles.md#join-relations) · [Of relations](of-relations.md#of-relations) · [Whose](extra-noun-hooks.md#genitive) · [Exchange](relations.md#exchange) · [Proxy](relations.md#proxy) · [Simile](relations.md#similative)
 
 Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer*) say how two things **stand to each other** more than what anyone does. Agebon writes that stance as a hosted relation word with the other thing in `/b/`, or as a join-act verb when someone really acts on a thing. Pick the relation, and keep the ordinary verb for the activity.
 
@@ -674,7 +674,7 @@ Some English words have a second or third sense that a published root already ca
 | *side* (position, location) | `zuhohom` | a position |
 | *address* (a location) | `zuhohom` | where it is |
 | *public* (open to everyone) | `zahehal gaon blual.` | a house open to all |
-| *character* (a trait) | `zevebom` | identity, personality |
+| *character* (a trait) | `zevebom` | trace |
 | *special* (dear to one person) | `zuzozen golamam.` | cherished |
 | *fit* (healthy) | `zuzozen geredom.` | in health |
 | *fit* (suits) | `guwatham` | a met need ([sake words](say-reasons.md#sake-words)) |

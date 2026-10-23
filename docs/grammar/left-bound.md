@@ -7,33 +7,6 @@ band: intermediate
 ::: tip Reminder:
 Intermediate sections assume you have read the beginner sections of every page.
 :::
-
-### Adjectives before the noun (`gl-`) {#left-bound-adjectives}
-
-English puts the adjective before the noun (*an angry dog*). Agebon can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending), and that adjective describes the **next** noun instead of the one before it. This lets you choose the order for meter or emphasis, and it frees the spot after the noun for another adjective. (cue: **l** ≈ lean: the word leans toward the noun ahead.)
-
-> `glunemul zudozol.`
->
-> [gl-angry | z-dog]
->
-> "an angry dog"
-
-A `bl-` word the adjective hosts still follows it, and a `/w/` word still sits immediately before it (`welazom glunemul zudozol` = *a very angry dog*). On `/ɡ/`, this extra **`l`** only moves the adjective; the word means the same either way. On `/b/`, [`bl-`](clause.md#extra-nouns) is a different job, not a different order. A noun must come after it: with no noun to lean on, write a plain `/ɡ/` adjective after the noun instead (`zudozol gunemul`).
-
-A [family name](proper-names.md#multipart-names) is a `/ɡ/` word too, so **`gl-`** puts it first, for a culture that names people family first. It leans on a [call](speech-moves.md#vocative) the same way.
-
-> `glalowen zalen vowurel.`
->
-> [gl-Alowen | z-Alen] | v-walk
->
-> "Alowen Alen walks."
-
-> `glalowen yalen.`
->
-> [gl-Alowen | y-Alen]
->
-> "Alowen Alen!" (calling Alowen Alen)
-
 ### Complex chaining {#complex-chaining}
 
 A relation adjective and its `bl-` word (*the same as Uzozen*: **`gorol`** + `bl-`) work as one unit after a noun. A `/w/` word that grades the relation goes immediately before the `/ɡ/` word, as usual. You can keep chaining: a plain adjective after that pair describes the **extra noun**, not the first noun. (cue: 🪙 *coin*: two faces of one thing.)
@@ -58,7 +31,7 @@ The same holds after an `/h/` or `/th/` host: an adjective after its `/b/` descr
 >
 > "Uzozen sleeps like a tired dog."
 
-Because a second relation after the pair would attach to the extra noun, you cannot put two relation adjectives **after** the same first noun. To keep both on that noun in one clause, put one [before the noun](#left-bound-adjectives) with **`gl-`**; its `/b/` still follows it. Otherwise use [another sentence](dependents.md#which-noun).
+Because a second relation after the pair would attach to the extra noun, you cannot put two relation adjectives **after** the same first noun. To keep both on that noun in one clause, put one [before the noun](left-bound-adjectives.md#left-bound-adjectives) with **`gl-`**; its `/b/` still follows it. Otherwise use [another sentence](dependents.md#which-noun).
 
 > `glorol bluzozen zagayul gorol blobayel.`
 >
@@ -150,9 +123,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agebon | Cue |
 |---------|--------|-----|
 | *ticket* | `udenel` | 🎫 |
-| *train* | `edavel` | 🚆 |
-| *blue* | `ubulel` | 🔵 |
-| *stand* | `vawuvol` | 🧍 |
 | *again* | `hurugem` | 🔁 from *repeat*: the same thing once more |
 
 **Review:**
@@ -169,22 +139,16 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *very* | `welazom` |
 | *ocean* | `wohalal` |
 | *haste* | `hedurem` |
+| *train* | `edavel` |
+| *blue* | `ubulel` |
+| *stand* | `vawuvol` |
 | *umbrella* | `omobul` |
 | *see* | `vawebol` |
 | *find* | `vumewol` |
-| *sit* | `vuhohol` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
-**1.** *A sleepy Olazun stands.* (*sleepy* first)
-
-::: details Show answer
-`gluzemol zolazun vawuvol.`
-
-[gl-sleepy | z-Olazun] | v-stand
-:::
-
-**2.** *The police officer, who is the same person as sleepy Uzozen, stands up.*
+**1.** *The police officer, who is the same person as sleepy Uzozen, stands up.*
 
 ::: details Show answer
 `zobayel gorol bluzozen guzemol vawuvol.`
@@ -192,7 +156,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-police | [g-SAME | [bl-Uzozen | g-sleepy]]] | v-stand
 :::
 
-**3.** *Ahelan sees the train again.*
+**2.** *Ahelan sees the train again.*
 
 ::: details Show answer
 `zahelan dedavel hurugem vawebol.`
@@ -202,7 +166,7 @@ z-Ahelan | d-train | h-again | v-see
 **Also correct:** `zahelan hurugem dedavel vawebol.`
 :::
 
-**4.** *A ticket was seen.*
+**3.** *A ticket was seen.*
 
 ::: details Show answer
 `dudenel vawebol.`
@@ -210,7 +174,7 @@ z-Ahelan | d-train | h-again | v-see
 d-ticket | v-see
 :::
 
-**5.** *Olazun stands up extremely hastily.*
+**4.** *Olazun stands up extremely hastily.*
 
 ::: details Show answer
 `zolazun wohalal hedurem vawuvol.`
@@ -218,7 +182,7 @@ d-ticket | v-see
 z-Olazun | [w-ocean | h-haste] | v-stand
 :::
 
-**6.** *Olazun sees a very blue train.*
+**5.** *Olazun sees a very blue train.*
 
 ::: details Show answer
 `zolazun dedavel welazom gubulel vawebol.`
@@ -228,15 +192,7 @@ z-Olazun | [d-train | [w-very | g-blue]] | v-see
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `welazom gluzemol zobayel vuhohol.`
-
-::: details Show answer
-[[w-very | gl-sleepy] | z-police] | v-sit
-
-*A very sleepy police officer sits.*
-:::
-
-**2.** `glorol bluzozen zobayel gorol blagayul.`
+**1.** `glorol bluzozen zobayel gorol blagayul.`
 
 ::: details Show answer
 [[gl-SAME | bl-Uzozen] | z-police] | [g-SAME | bl-guard]
@@ -244,7 +200,7 @@ z-Olazun | [d-train | [w-very | g-blue]] | v-see
 *A police officer who is both Uzozen and the guard.*
 :::
 
-**3.** `domobul vumewol.`
+**2.** `domobul vumewol.`
 
 ::: details Show answer
 d-umbrella | v-find
@@ -252,7 +208,7 @@ d-umbrella | v-find
 *An umbrella was found.*
 :::
 
-**4.** `zuzozen welazom hedurem vawuvol.`
+**3.** `zuzozen welazom hedurem vawuvol.`
 
 ::: details Show answer
 z-Uzozen | [w-very | h-haste] | v-stand
@@ -260,7 +216,7 @@ z-Uzozen | [w-very | h-haste] | v-stand
 *Uzozen stands up very hastily.*
 :::
 
-**5.** `zedavel hurugem vawuvol.`
+**4.** `zedavel hurugem vawuvol.`
 
 ::: details Show answer
 z-train | h-again | v-stand
@@ -268,7 +224,7 @@ z-train | h-again | v-stand
 *A train stands still again.*
 :::
 
-**6.** `zahelan dudenel gorol vawebol.`
+**5.** `zahelan dudenel gorol vawebol.`
 
 ::: details Show answer
 z-Ahelan | [d-ticket | g-SAME] | v-see
@@ -296,16 +252,4 @@ After the **`gorol`** pair, a plain adjective describes the extra noun; before i
 d-Olazun | v-see
 
 Leave out the subject and keep Olazun as the object; `zolazun vawebol` is *Olazun sees*.
-:::
-
-#### Fix it {#intermediate-fix-it}
-
-**1.** *A blue train stands.* (*blue* first) <!-- lint: error -->`gubulel zedavel vawuvol.`
-
-::: details Show answer
-`glubulel zedavel vawuvol.`
-
-[gl-blue | z-train] | v-stand
-
-An adjective before its noun takes **`gl-`**; a plain `/ɡ/` word describes the noun before it.
 :::

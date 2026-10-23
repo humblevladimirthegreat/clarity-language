@@ -53,7 +53,7 @@ function firstItem(units: Unit[], at: number): Unit[] {
   if (units.slice(at + 1).some((unit) => isNp(unit, "z"))) return units;
   let start = at;
   while (start > 0 && itemWord(units, start - 1)) start -= 1;
-  // `em` + `/b/` right after a noun is that noun's (ending-grids.md#genitive): it stays with the subject. A claim word at
+  // `em` + `/b/` right after a noun is that noun's (extra-noun-hooks.md#genitive): it stays with the subject. A claim word at
   // the edge of the run is no item word either, so it stays outside the bracket.
   for (;;) {
     if (start < at && isGenitiveHook(units[start])) start += isNp(units[start + 1], "b") ? 2 : 1;

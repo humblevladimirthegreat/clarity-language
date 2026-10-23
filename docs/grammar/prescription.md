@@ -13,7 +13,7 @@ The ending says why you think the move is welcome. Use **-l** when the person in
 
 **Compare with:** a [command](speech-moves.md#speech-act-beginner) **`yel`** tells someone to act outright, without naming the sake or why the move is wanted. **`the`** is an *ought* tied to a sake (*ought to, to advance this sake*), with the reason on the ending.
 
-**Compare with:** to ask someone to act for **your** sake, make it a [request](speech-acts.md#speech-act) (**`yem`**) with motive **`tho`**. **`the`** is advice.
+**Compare with:** to ask someone to act for **your** sake, make it a [request](firm-soft.md#speech-act) (**`yem`**) with motive **`tho`**. **`the`** is advice.
 
 <!-- cheat-sheet: why-allowed -->
 | Agebon | Use | English | Cue |

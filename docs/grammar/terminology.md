@@ -92,7 +92,7 @@ Hosted *can* / *can’t* (`xa` / `xe` / `xo` / `xu`) and hostless **ABIL**.
 
 The written `/y/` word: **`yal` / `yol` / `yel` / `yul`** and soft **-m**.
 
-[Speech acts and tone marks](speech-acts.md#speech-act)
+[Speech act: firm and soft](firm-soft.md#speech-act)
 
 **Compare with:** [speech act](#speech-act) is the setting (statement / question / command / prohibition). Polar [stance](#polar-stance) particles are not act words.
 
@@ -245,7 +245,7 @@ Who counts as *we* / *you* when names are unavailable.
 
 Speech act **`yel` / `yem` / `yul` / `yum`**.
 
-[Speech acts and tone marks](speech-acts.md#speech-act)
+[Speech act: firm and soft](firm-soft.md#speech-act)
 
 ### Comparative / superlative / equative
 
@@ -407,7 +407,7 @@ Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; frame **-m**
 
 Extra-noun [hook](hooks.md#extra-noun) **`ael`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*. To name a kind of tool as its own noun, use a compound with a head root ([places, tools, and times](viewpoint.md#places-tools-times)).
 
-[Ending grids](ending-grids.md#extra-noun-intermediate)
+[Extra nouns and whose](extra-noun-hooks.md#extra-noun-intermediate)
 
 ### Simile (*like*)
 
@@ -449,7 +449,7 @@ Under question, join **-r** is a blank; several **-r** = fill all.
 
 Speech-act ending **-l** vs **-m**.
 
-[Speech acts and tone marks](speech-acts.md#speech-act)
+[Speech act: firm and soft](firm-soft.md#speech-act)
 
 ### Forecast
 <a id="forecast-source"></a>
@@ -522,7 +522,7 @@ Content `/v/` or `/ɡ/` `/h/` + join vowel + **-n**.
 
 `/ɡ/` with second letter **l**: adjective before the next noun.
 
-[Left-bound adjectives and chaining](left-bound.md#left-bound-adjectives)
+[Adjectives before the noun](left-bound-adjectives.md#left-bound-adjectives)
 
 ### Left edge
 
@@ -775,9 +775,9 @@ Clause-pole **`hovam`**: intended outcome of the host (*so that Olazun sits*; NP
 
 ### Sequence
 
-Clause join **-n** (`xan` *and then*; `xuen` *and before that*).
+Clause join **-n** (`xan` *and then*; `xon` *or maybe*; `xun` *and then not*).
 
-[Join across roles](join-across-roles.md#sequence)
+[Clause sequence](clause-sequence.md#sequence)
 
 ### Settled-to-passing scale
 
@@ -827,7 +827,7 @@ Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-
 
 Utterance setting: statement / question / command / prohibition.
 
-[Speech acts and tone marks](speech-acts.md#speech-act)
+[Speech act: firm and soft](firm-soft.md#speech-act)
 
 **Compare with:** sake **prescription warrant** is [invited / offered / trial](#asked-typical-history), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
 

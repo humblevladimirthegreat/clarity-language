@@ -17,7 +17,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 😋,yummy,oyama,mind,holds,,tempting,yummy looks tempting,,,
 😛,tongue-out,adumu,mind,takes-away,,mockery,"a stuck-out tongue teases; mockery is the stance, not the gesture",,,
 😜,tease,edema,mind,holds,,banter,a playful tease; banter is friendly mockery,,,
-🤪,zany,ezemo,mind,one,,crazy,zany antics defy common sense,,silly; mad,
+🤪,zany,ezemo,mind,one,,zaniness,"zany antics are unreasoned play; zaniness is that play, not a kind of person",,silly,
 🤑,greed,egoma,mind,holds,,wealth,greed hungers for wealth,,asset; wealthy; rich,
 🤭,gasp,agamo,mind,one,,shock,gasp at a shock,,,
 🫣,peek,ebeme,mind,order,,surveillance,peek to spy; surveillance is watching without being the seen act,,monitor; glance,speech-moves.md#beginner-practice
@@ -80,12 +80,12 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 😡,rage,eremu,mind,takes-away,,destructiveness,rage means fury; destructiveness is the unobservable will to wreck,,destroy; destruction,
 😠,angry,unemu,mind,takes-away,,hostility,angry means anger; hostility is the unobservable stance toward another,,hate; aggressive,clause.md#beginner-practice
 🤬,curse,eguyu,person,takes-away,none,profanity,cursing shows profanity,,damn,
-😈,devil,edayu,person,takes-away,big,mischief,devil shows mischief,,vice; evil,
+😈,devil,edayu,person,takes-away,big,mischief,devil shows mischief,,,
 👿,villain,ovayu,person,takes-away,big,malice,a villain means harm; malice is wanting harm,,,
 💀,skull,ezobu,body,takes-away,medium,death,a skull is what remains after death,v:die,dead,
 ☠️,crossbones,ogobu,body,takes-away,medium,danger,skull warns danger,,dangerous; poison; toxic,
 💩,poop,ubebo,body,one,small,vulgarity,poop is the crude waste polite company avoids,,,
-🤡,jest,ohuyo,person,one,none,foolishness,clowning is jest; foolishness is playing the fool,,joke; fool; stupid,
+🤡,jest,ohuyo,person,one,none,foolishness,clowning is jest; foolishness is playing the fool,,joke; fool,
 👹,ogre,oyayu,person,takes-away,big,menace,ogre shows menace,,threat; threaten,
 👺,goblin,ugoyu,person,takes-away,medium,,,,,
 👻,ghost,egayu,person,takes-away,big,spookiness,a haunting ghost makes a place feel eerie,,,
@@ -104,7 +104,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ❤️,heart,abo,body,one,,compassion,the heart feels for others; compassion is caring about their suffering,,center; middle; central,
 🩷,pink,ebulo,nature,one,none,,the pink heart is pink,,,
 💋,lips,elebo,body,one,small,,,,,
-💯,hundred,uhura,counting,holds,none,perfection,a hundred out of a hundred is a top mark,m.w:completely,perfect; totally; entirely; fully; altogether,
+💯,hundred,uhura,counting,holds,none,completeness,a hundred out of a hundred is the whole mark,m.w:completely,totally; entirely; fully; altogether,
 💢,anger,anemu,mind,takes-away,,offense,anger symbol shows rage; offense is the unobservable reading that a wrong was done,,crime,
 🫯,fight,avuvu,doing,takes-away,none,struggle,fighting stance pushes through opposition; struggle is pushing through what holds you back,,battle; tackle,knowing.md#beginner-practice
 💥,boom,ubuvu,doing,takes-away,none,consequence,collision bursts; consequence is the unobservable follow-on,,outcome; result; effect,
@@ -129,7 +129,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🤙,shaka,uhuya,person,holds,none,contact,shaka invites contact,,,
 🖕,middle-finger,amuyu,person,takes-away,none,contempt,middle finger shows contempt,,,
 ☝️,point,oye,person,order,,emphasis,point adds emphasis,,item; finger; insist; emphasize; specify; detail; spot; specifically,
-🫵,point-at-you,ubuye,person,order,none,blame,a finger pointed at you assigns blame,,accusation; accuse,
+🫵,point-at-you,ubuye,person,order,none,accusation,a finger pointed at you names a charge; an accusation is that charge,,accuse,
 👍,thumbs-up,uvuyo,person,one,none,approval,thumbs-up shows approval,,approve; recommendation,
 👎,thumbs-down,avuyu,person,takes-away,none,disapproval,thumbs-down shows disapproval,,,
 ✊,fist,ovebo,body,one,small,defiance,fist shows defiance,,resistance,
@@ -140,10 +140,10 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 👐,open-hands,oyoba,body,holds,medium,openness,open hands hide nothing; openness is having nothing to hide,,,
 🤲,cupped-hands,egoba,body,holds,medium,receptiveness,cupped hands wait to receive; receptiveness is being ready to take in,,,
 🤝,handshake,aya,person,holds,,co-participation,handshake seals shared presence; co-participation is sharing the floor,,participate; interaction; membership; participation; engage,
-🙏,pray,obuya,person,holds,none,gratitude,pray expresses gratitude,,grateful; appreciate,prescription.md#intermediate-practice
+🙏,pray,obuya,person,holds,none,petition,pray is asking; a petition is the ask,,,prescription.md#intermediate-practice
 ✍️,write,araye,person,order,none,authorship,write puts words on the page; authorship is claiming those words,,author,questions.md#beginner-practice
 💅,nail-polish,eneba,body,holds,small,,,,,
-🤳,selfie,ozuyo,person,one,none,vanity,selfie reflects vanity,,,
+🤳,selfie,ozuyo,person,one,none,posing,a selfie is a picture of yourself; posing is holding a look for the picture,,,
 💪,bicep,obobo,body,one,medium,strength,flex shows strength,,strong; arm; muscle; strengthen,
 🦾,prosthetic-arm,uyobe,body,order,medium,augmentation,mechanical arm gives augmentation,,,
 🦿,prosthetic-leg,awobe,body,order,medium,,,,,
@@ -151,8 +151,8 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🦶,foot,uvobe,body,order,medium,foot-length,the unit was first measured off a human foot,,,
 👂,ear,eba,body,holds,,hearsay,ear takes in what others say; hearsay is knowing by being told,v:hear,listen,
 🦻,hearing-aid,ohebo,body,one,small,,,,,
-👃,nose,onebo,body,one,small,intuition,nose leads intuition,v:smell; m.v:intuit,sensitive; sense; impression,numbers.md#beginner-practice
-🧠,brain,ebobo,body,one,medium,intellect,the brain does the thinking,,mental; intellectual; smart; mind; intelligence; psychological,
+👃,nose,onebo,body,one,small,scent,the nose follows a scent,v:smell,sensitive; sense,numbers.md#beginner-practice
+🧠,brain,ebobo,body,one,medium,intellect,the brain does the thinking,,mental; intellectual; psychological,
 🫀,organ,urobo,body,one,medium,,a heart stands for every organ: a body part with its own job,,,
 🫁,lungs,oba,body,holds,,breath,lungs carry breath,,breathe; chest,
 🦷,tooth,udebu,body,takes-away,small,,,,bite,
@@ -162,7 +162,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 👅,tongue,adebe,body,order,small,eloquence,tongue wields eloquence,,,
 👄,mouth,ameba,body,holds,small,,,,,
 🫦,lip-bite,elema,mind,holds,,sexuality,a lip-bite signals desire; sexuality is physical attraction,,sex,
-👶,baby,eboye,person,order,medium,innocence,baby embodies innocence,,infant; innocent,
+👶,baby,eboye,person,order,medium,infancy,the years a baby spends at the start of life,,infant,
 🧒,child,ahoye,person,order,medium,youth,a child has lived only a few years,,young; childhood; kid; teenager; adolescent,
 👦,boy,uboye,person,order,medium,boyhood,the years a boy spends growing up,,son,
 👧,girl,agoye,person,order,medium,girlhood,the years a girl spends growing up,,daughter,
@@ -214,7 +214,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🧑‍🍼,feeding-baby,evuya,person,holds,none,nurturing,feeding a baby helps it grow,,nurse,
 👼,angel,unayo,person,one,big,,,,,
 🎅,santa,ozaya,person,holds,big,,,,,
-🤶,mrs-claus,umaya,person,holds,big,companionship,mrs claus offers companionship,,accompany; ally,of-relations.md#intermediate-practice
+🤶,mrs-claus,umaya,person,holds,big,companionship,mrs claus offers companionship,,accompany; ally,social-ties.md#beginner-practice
 🦸,save,ezuyu,person,takes-away,none,heroism,saving shows heroism,,hero; spare,
 🦹,scheme,uzuyu,person,takes-away,none,villainy,scheming embodies villainy,,criminal; plot,
 🧙,conjure,aguyo,person,one,none,magic,conjuring wields magic,,,
@@ -231,7 +231,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 💆,massage,emuya,person,holds,none,soothing,massage brings relief,,,
 💇,hair,ehuba,body,holds,none,self-presentation,hair is groomed and styled; self-presentation is the unobservable aim,,,
 🚶,walk,owure,counting,order,none,,,,march; wander,relations.md#beginner-practice
-🧍,stand,awuvo,doing,one,none,presence,stand shows presence,,existence; attendance,left-bound.md#intermediate-practice
+🧍,stand,awuvo,doing,one,none,presence,stand shows presence,,existence; attendance,left-bound-adjectives.md#beginner-practice
 🧎,kneel,onuvo,doing,one,none,submission,kneel shows submission,,,prescription.md#intermediate-practice
 🧑‍🦼,power-chair,abave,doing,order,big,,,,,
 🧑‍🦽,propel,ebuve,doing,order,none,independence,self-propelling a chair shows independence,,motivate,
@@ -271,20 +271,20 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 👪,family,avaya,person,holds,big,kinship,a family is the people tied to you by blood,,household,hooks.md#beginner-practice
 🧑‍🧒,parent,ubaya,person,holds,big,,an adult with a child is a parent,,,
 👣,footprints,avobe,body,order,medium,legacy,footprints leave legacy,v:go,trace,viewpoint.md#intermediate-practice
-🫆,fingerprint,evebo,body,one,small,identity,fingerprint marks identity,,characteristic; personality,
+🫆,fingerprint,evebo,body,one,small,trace,a fingerprint is a unique mark left behind; a trace is that mark,,characteristic,
 🐒,monkey,emoza,creature,holds,medium,mimicry,monkey see monkey do,,copy,
-🦍,gorilla,egaze,creature,order,big,dominance,800-pound gorilla dominates,,dominate,
+🦍,gorilla,egaze,creature,order,big,dominance,the silverback dominates the group,,dominate,
 🦧,orangutan,orozo,creature,one,medium,,,,,
-🐕,dog,udozo,creature,one,medium,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,fill-ask-roles.md#intermediate-practice
+🐕,dog,udozo,creature,one,medium,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,fill-ask-jobs.md#beginner-practice
 🦮,guide-dog,egoze,creature,order,medium,reliance,a guide dog is relied on to lead; reliance is depending on something,,,
 🐺,wolf,owozu,creature,takes-away,medium,predation,wolf at the door,,,
 🦊,fox,ovozu,creature,takes-away,medium,cunning,sly as a fox,,,
 🦝,raccoon,urozu,creature,takes-away,medium,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal,,viewpoint.md#intermediate-practice
-🐈,cat,agozo,creature,one,medium,curiosity,curiosity killed the cat,,wonder; curious; interest,universality.md#advanced-practice
-🐈‍⬛,black-cat,ubozu,creature,takes-away,medium,omen,a black cat crossing your path is read as an omen; an omen is a sign taken to predict what comes,,,
+🐈,cat,agozo,creature,one,medium,curiosity,a cat pokes at whatever is new; curiosity is wanting to find out,,wonder; curious; interest,universality.md#advanced-practice
+🐈‍⬛,black-cat,ubozu,creature,takes-away,medium,omen,"a black cat crossing is read as a sign; an omen is a sign people take to predict, which need not mean it will",,,
 🦁,lion,olazu,creature,takes-away,big,courage,brave as a lion,,,
 🐅,tiger,udazu,creature,takes-away,big,ferocity,fight like a tiger,,,
-🐆,leopard,ulazu,creature,takes-away,big,nature,a leopard cannot change its spots,,environmental; wild; organic; natural,
+🐆,leopard,ulazu,creature,takes-away,big,nature,a leopard lives in the wild; nature is the living world apart from people,,environmental; wild; organic; natural,
 🫎,moose,umazu,creature,takes-away,big,,,,,
 🫏,donkey,adaze,creature,order,big,,,,,
 🐎,horse,ohaze,creature,order,big,,,,,
@@ -316,14 +316,14 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐻,bear,ebazu,creature,takes-away,big,burden,bear the burden,,load,
 🐨,koala,egoza,creature,holds,medium,lethargy,koala sleeps through the day,,,
 🐼,panda,ebazo,creature,one,big,diplomacy,panda diplomacy softens hard talks,,,
-🦥,sloth,ozozo,creature,one,medium,laziness,a sloth hangs and barely moves,,lazy,
+🦥,sloth,ozozo,creature,one,medium,slowness,a sloth hangs and barely moves; slowness is moving little,,,
 🦦,otter,anozo,creature,one,medium,playfulness,otter plays in the water,,funny; fun,
 🦨,skunk,azozu,creature,takes-away,medium,stigma,skunk leaves a lasting stigma,,,
 🦘,kangaroo,ugaza,creature,holds,big,bounce,kangaroo bounces back,v:jump,leap,
 🦡,badger,abozo,creature,one,medium,persistence,badger someone with persistence,,determination,
 🐾,paw-prints,ube,body,order,,pattern,pawprints mark a trail; a pattern is the regularity the trail of cases leaves,,trail; track,
 🦃,turkey,odoza,creature,holds,medium,folly,a turkey gobbles loudly without making sense,,,
-🐔,chicken,uhoza,creature,holds,medium,cowardice,a chicken flees at the first scare,,,
+🐔,chicken,uhoza,creature,holds,medium,startle,a chicken flees at the first scare; a startle is that jump,,,
 🐓,rooster,aroze,creature,order,medium,awakening,the rooster crows everyone awake,,,
 🐣,hatch,avo,doing,one,,emergence,a chick breaks out of its shell,,emerge; birth,
 🐤,chick,uheze,creature,order,small,newcomer,a chick has just arrived in the world; a newcomer has just arrived,,novice,
@@ -372,7 +372,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐜,ant,uneza,creature,holds,small,diligence,ants work with diligence,,,plurality.md#beginner-practice
 🐝,bee,obeza,creature,holds,small,,,,,
 🪲,beetle,abezo,creature,one,small,hardiness,a beetle's hard shell shrugs off hits,,solid; hard; firm; firmly,
-🐞,ladybug,olezo,creature,one,small,luck,ladybug brings luck,,lucky; fortune; fortunate,
+🐞,ladybug,olezo,creature,one,small,luck,"a ladybug landing is taken as a good chance; luck is when it went well by chance, not a charm you have",,lucky; fortune; fortunate,
 🦗,grasshopper,ogezo,creature,one,small,,,,,
 🪳,cockroach,agezu,creature,takes-away,small,resilience,cockroach survives anything,,survival; survive,
 🕷️,spider,azezu,creature,takes-away,small,entrapment,spider traps its prey,,,
@@ -395,7 +395,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🌷,tulip,udela,nature,holds,small,affection,tulip gift shows affection,,,
 🪻,hyacinth,ahele,nature,order,small,spring,hyacinth blooms in spring,,,
 🌱,seedling,ele,nature,order,,growth,a seedling pushes up out of the soil,,grow; seed; expansion; increase; development; develop; expand; mature,causation.md#beginner-practice
-🪴,plant,obolo,nature,one,medium,tending,a potted plant needs care; tending is looking after what grows,,garden,
+🪴,plant,obolo,nature,one,medium,tending,a potted plant needs care; tending is looking after what grows,,garden,social-ties.md#beginner-practice
 🌲,pine,abale,nature,order,big,constancy,a pine stays green all year; constancy is staying the same through change,,,
 🌳,tree,edale,nature,order,big,stability,tree roots give stability,,steady,
 🌴,palm,ubale,nature,order,big,escape,a palm means vacation escape,,,
@@ -414,9 +414,9 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🍈,fruit,uvoda,food,holds,medium,,a melon stands for fruit: the sweet seed-bearing food of a plant,,,
 🍉,watermelon,owodo,food,one,medium,refreshment,watermelon is cold juicy water on a hot day,,,joins.md#beginner-practice
 🍊,tangerine,adedo,food,one,small,skin,a tangerine peel is its outer covering; skin is the outer covering of a body,,orange-fruit; surface,
-🍋,lemon,eledu,food,takes-away,small,defect,a lemon is a bad deal,,,
+🍋,lemon,eledu,food,takes-away,small,sourness,a lemon tastes sharply sour; sourness is that taste,,,
 🍋‍🟩,lime,uledu,food,takes-away,small,zest,lime adds zest and tang,g:sour,tart; tangy,
-🍌,banana,obede,food,order,small,madness,to go bananas is to lose your head,,,
+🍌,banana,obede,food,order,small,bunch,bananas grow together on one stem; a bunch is several held as one,,,
 🍍,pineapple,unodu,food,takes-away,medium,hospitality,pineapple welcomes with hospitality,,invitation; invite,
 🥭,mango,emedo,food,one,small,exoticism,mango tastes of the exotic,,,joins.md#beginner-practice
 🍎,apple,oledo,food,one,small,temptation,forbidden apple is temptation,,,
@@ -455,7 +455,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🥨,pretzel,oredo,food,one,small,complexity,a pretzel is knotted and twisted back on itself,,complex; complicate,
 🥯,bagel,ewedo,food,one,small,,,,,
 🥞,pancake,unedo,food,one,small,flattening,pancake flattens under pressure,,flat; thin; smooth,
-🧇,waffle,owedo,food,one,small,indecision,to waffle is to flip back and forth,,,
+🧇,waffle,owedo,food,one,small,indecision,a waffle is cooked by turning; indecision is turning from one side to the other,,,
 🧀,cheese,ehedo,food,one,small,,,,,
 🍖,meat,omudo,food,one,none,substance,meat of the matter is substance,,protein; flesh,
 🍗,drumstick,odede,food,order,small,,,,,
@@ -495,7 +495,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🥮,moon-cake,umedo,food,one,small,,,,,
 🍡,dango,adede,food,order,small,togetherness,dumplings are skewered together on one stick,,,
 🥟,dumpling,udedu,food,takes-away,small,stomach,a dumpling is a stuffed pouch; the stomach is the body's food pouch,,,
-🥠,fortune-cookie,ovedu,food,takes-away,small,prophecy,fortune cookie foretells fate,,,
+🥠,fortune-cookie,ovedu,food,takes-away,small,written-fortune,the cookie hides a slip of paper; a written-fortune is the claim on that slip,,,
 🥡,takeout,adoda,food,holds,medium,,,,,
 🍦,ice-cream,azeda,food,holds,small,summer,ice cream is a summer treat; summer is the hot season,,,
 🍩,doughnut,odedo,food,one,small,reward,donut is a sweet reward,,profit,numbers.md#beginner-practice
@@ -531,13 +531,13 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🥢,stick,ezede,food,order,small,,chopsticks stand for any stick: a thin length of wood,,,
 🍽️,plate,uwoda,food,holds,medium,service,plate is set for service,,help; dish; assistance; favor; aid,compound-families.md#intermediate-practice
 🍴,cutlery,ageda,food,holds,small,provision,cutlery enables provision,v:eat,supply; resource; meal; food; diet,knowing.md#beginner-practice
-🥄,spoon,uzeda,food,holds,small,portion,spoon measures a portion,,component; segment,numbers-applied.md#intermediate-practice
+🥄,spoon,uzeda,food,holds,small,portion,spoon measures a portion,,component; segment,
 🔪,knife,anewu,tool,takes-away,small,severity,a knife cuts deep and hard,,sharp; severe,pronouns.md#beginner-practice
 🫙,jar,ada,food,holds,,storage,jar stores what is kept,,vessel; stock,
 🏺,amphora,emoda,food,holds,medium,,,,,
 🌍,earth,evala,nature,holds,big,world,the earth is the whole world we share,,,
 🌐,globe,oguga,sign,holds,none,connected,a globe links every place; connected means linked together,,global,
-🗺️,map,age,sign,order,,plan,a map charts a route; a plan charts a course,,agenda; design; project,fill-ask-roles.md#intermediate-practice
+🗺️,map,age,sign,order,,plan,a map charts a route; a plan charts a course,,agenda; design; project,fill-ask-jobs.md#beginner-practice
 🗾,country,aha,place,holds,,scope,a map of one country; scope is the area the picture includes,,national; region; nation; extent; regional; zone; territory; area,
 🧭,compass,ure,counting,order,,direction,a compass points the way; direction is where you're headed,,direct; guide,
 ⛰️,mountain,amahu,place,takes-away,big,challenge,mountains are hard to climb; a challenge is hard to face,,pile; heap,predication.md#beginner-practice
@@ -598,7 +598,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🎢,rollercoaster,erave,doing,order,big,volatility,a rollercoaster rises and drops; volatility swings up and down,,,
 💈,shave,uhuyu,person,takes-away,none,,,,,
 🎪,circus,uzava,doing,holds,big,spectacle,circus tent promises a show; spectacle is a striking display,,exhibition; demonstration; exhibit,
-🚆,train,edave,doing,order,big,momentum,train stays on its track; momentum keeps moving forward,,rail,left-bound.md#intermediate-practice
+🚆,train,edave,doing,order,big,momentum,train stays on its track; momentum keeps moving forward,,rail,left-bound-adjectives.md#beginner-practice
 🚉,station,uyahe,place,order,big,hub,station connects many routes; hub is where paths meet,,platform,of-relations.md#intermediate-practice
 🚌,bus,ubava,doing,holds,big,commute,bus carries many riders daily; commute is the daily journey,,,
 🚑,ambulance,amava,doing,holds,big,emergency,ambulance rushes to crisis; emergency is urgent crisis,,,proper-names.md#intermediate-practice
@@ -640,7 +640,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🚀,rocket,arave,doing,order,big,launch,rocket blasts into the sky; launch is a bold start,,establish,
 🛸,ufo,uyava,doing,holds,big,,,,,
 🛎️,bellhop,ebaya,person,holds,big,,,,,
-🧳,luggage,eloba,body,holds,medium,encumbrance,luggage is what you carry; encumbrance is the unobservable drag,v:carry,suitcase,sentence-linkers.md#intermediate-practice
+🧳,luggage,eloba,body,holds,medium,encumbrance,luggage is what you carry; encumbrance is the unobservable drag,v:carry,suitcase,here-there.md#beginner-practice
 ⌛,sand,ala,nature,holds,,recency,the sand has just run through; recency is nearness in time,,newly,
 ⏳,hourglass,agoru,counting,takes-away,medium,hour,hourglass sand marks civil duration; hour is the everyday duration unit,,,numbers-applied.md#intermediate-practice
 ⌚,watch,awere,counting,order,small,punctuality,watch tracks the exact moment; punctuality is being on time,,,
@@ -658,14 +658,14 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🌡️,thermometer,uvere,counting,order,small,temperature,thermometer reads how hot or cold; temperature is the heat continuum,,,proper-names.md#intermediate-practice
 ☀️,sun,uzale,nature,order,big,joule,sun radiates energy; joule is the SI energy unit,,,causation.md#beginner-practice
 🪐,saturn,uzalo,nature,one,big,grandeur,ringed planet looms vast in space; grandeur is impressive scale,,grand; planet; impressive,
-⭐,star,alo,nature,one,,fame,a star is seen by everyone; fame is being widely known,,reputation; famous,
+⭐,star,alo,nature,one,,visibility,a star is seen from far off; visibility is being there to be seen,,,
 🌠,shooting-star,ale,nature,order,,wish,shooting star grants a wish,,,
 🌌,galaxy,ogala,nature,holds,big,vastness,a galaxy holds billions of stars,,vast; universe,
 ☁️,cloud,ugala,nature,holds,big,sky,clouds fill the sky,,atmosphere,evidentiality.md#intermediate-practice
 ⛅,cloudy,ogulu,nature,takes-away,none,weather,sun behind cloud is a partly-cloudy sky; weather is the usual climate,,,
 ⛈️,thunderstorm,enulu,nature,takes-away,none,,,,storm,restrictors.md#beginner-practice
 🌦️,showers,ohula,nature,holds,none,,,,,
-🌧️,rain,erula,nature,holds,none,letdown,rain on the parade; a letdown is a hope that fell through,,,restrictors.md#beginner-practice
+🌧️,rain,erula,nature,holds,none,letdown,rain washes out what you hoped to do; a letdown is a hope that fell through,,,restrictors.md#beginner-practice
 🌨️,snow,ozula,nature,holds,none,stillness,snow quiets the landscape; stillness is calm / slack water,,,more-occasions.md#intermediate-practice
 🌪️,tornado,odulu,nature,takes-away,none,turmoil,tornado tears through order; turmoil is violent disorder,,,
 🌫️,fog,ovulu,nature,takes-away,none,confusion,fog blurs what is near; confusion blurs what is clear,,,more-occasions.md#intermediate-practice
@@ -733,8 +733,8 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🪁,kite,agovo,doing,one,medium,aspiration,kite rises on the wind; aspiration is striving upward,,dream,
 🔫,gun,ugevu,doing,takes-away,small,,,,,
 🎱,pool,ubuna,title,holds,none,liter,pool holds a volume of liquid; liter is the SI volume unit,,,
-🔮,crystal-ball,egewo,tool,one,small,foresight,crystal ball sees what may come; foresight is seeing ahead,,,
-🪄,wand,awowe,tool,order,medium,shortcut,a wand fixes in one wave; shortcut is bypassing hard work,,,
+🔮,crystal-ball,egewo,tool,one,small,speculation,the ball is a show of seeing ahead; speculation is claiming what may come without a channel,,,
+🪄,wand,awowe,tool,order,medium,shortcut,a wand skips the steps of the work; a shortcut is leaving steps out,,,
 🎮,game,uguva,doing,holds,none,,,,,
 🕹️,joystick,ehevo,doing,one,small,,,,,
 🎰,slot-machine,ozava,doing,holds,big,gamble,slot machine bets on chance; gamble is risking on chance,,bet; stake,
@@ -757,7 +757,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🪢,knot,awo,tool,one,,bond,knot ties two ends together; bond is holding fast together,,bind; integrate,
 🕶️,sunglasses,alebu,body,takes-away,small,unbothered,sunglasses hide the eyes; cool is calm unbothered style,,,
 🥽,goggles,ogebu,body,takes-away,small,,,,,
-🥼,lab-coat,aloba,body,holds,medium,expertise,lab coat marks scientific work; expertise is specialized knowledge,,technical; master; talent; specialist; specialize; pro; qualification; expert; professional,
+🥼,lab-coat,aloba,body,holds,medium,expertise,lab coat marks scientific work; expertise is specialized knowledge,,technical; master; specialist; specialize; pro; qualification; expert; professional,
 🦺,vest,avoba,body,holds,medium,safety,the vest keeps workers safe; safety is freedom from harm,,safe; secure; insurance; insure,
 👔,necktie,unobe,body,order,medium,neck,a necktie hangs at the neck; the neck joins head and body,,,
 👕,shirt,ehoba,body,holds,medium,casual,a shirt is everyday wear; casual is relaxed informal,,t-shirt,
@@ -776,7 +776,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 👚,blouse,oboba,body,holds,medium,,,,,
 🪭,fan,ovobu,body,takes-away,medium,coolness,a fan stirs the air and cools the skin,,,
 👛,purse,eyoba,body,holds,medium,savings,purse holds small valuables; savings is kept resources,,,
-👜,bag,amoba,body,holds,medium,responsibility,a bag carries what is needed; responsibility is the unobservable bearing,,duty; obligation; liability,
+👜,bag,amoba,body,holds,medium,bearing,a bag carries what is needed; bearing is carrying that load,,,
 👝,clutch,ageba,body,holds,small,,,,,
 🛍️,shopping-bag,ayoba,body,holds,medium,pound-mass,a shopping bag is weighed by the pound; pound-mass is the mass unit,,,
 🎒,backpack,aba,body,holds,,preparation,backpack holds what you need ahead; preparation is readying beforehand,,pack,
@@ -788,7 +788,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 👠,high-heel,ahoba,body,holds,medium,,,,,
 🩰,ballet-shoe,aboba,body,holds,medium,,,,,
 🪮,comb,ogebe,body,order,small,,,,,
-👑,crown,ugobe,body,order,medium,leadership,crown marks who rules; leadership is being the one others answer to,,lead,
+👑,crown,ugobe,body,order,medium,leadership,crown marks who rules; leadership is being the one others answer to,,lead,social-ties.md#beginner-practice
 👒,sun-hat,azobu,body,takes-away,medium,shade,a sunhat shields from sun above; shade is shelter from harshness,,shadow,
 🎩,top-hat,odaba,body,holds,medium,trick,a magician pulls a trick from a top hat,,,
 🎓,mortar-board,omoba,body,holds,medium,,,,college; university,
@@ -798,7 +798,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 📿,rosary,urebe,body,order,small,prayer,beads count prayers; prayer is speaking to the sacred,,,
 💄,lipstick,ulebe,body,order,small,appearance,lipstick colors the lips; appearance is how you present,,appear,
 💍,ring,orebo,body,one,small,promise,a ring seals a vow; a promise binds your future self,,surround; guarantee; assure,rank-joins.md#intermediate-practice
-💎,gemstone,uhelo,nature,one,small,value,gem is rare and precious; value is worth holding dear,,jewel; gem; worth; valuable; rate,
+💎,gemstone,uhelo,nature,one,small,preciousness,a gem is rare and held dear; preciousness is that quality of the stone,,jewel; gem,
 🔇,mute,emowu,tool,takes-away,medium,suppression,mute silences all sound; suppression is holding back expression,,,
 🔈,quiet,ogowu,tool,takes-away,medium,volume,quiet is sound turned low; volume is level of sound,,,spans.md#beginner-practice
 🔉,audio,adowo,tool,one,medium,voice,audio carries a speaking voice; voice is audible expression,m.w:quite,representative,
@@ -848,7 +848,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 📽️,projector,ubowo,tool,one,medium,projection,projector throws image on screen; projection is showing outward,,presentation,
 🎬,clapper-board,agowo,tool,one,medium,,,,,
 📺,television,udowo,tool,one,medium,,,,screen; video,
-📷,camera,ogewo,tool,one,small,,,,photo; photograph; picture; image,ending-grids.md#intermediate-practice
+📷,camera,ogewo,tool,one,small,,,,photo; photograph; picture; image,extra-noun-hooks.md#beginner-practice
 📹,camcorder,agewo,tool,one,small,recording,camcorder tapes moving scenes; recording is preserving over time,,,
 📼,videocassette,evewa,tool,holds,small,,,,,
 🔍,magnify,umewo,tool,one,small,scrutiny,magnifier enlarges small detail; scrutiny is close examination,v:find,seek; examination; detect; notice,word-endings.md#beginner-practice
@@ -885,7 +885,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 📫,mailbox,omoha,place,holds,medium,reception,closed mailbox holds delivered mail; reception is receiving inward,,,
 📮,post-box,eboha,place,holds,medium,dispatch,postbox sends mail on its way; dispatch is sending outward,,send; mail; deliver; post,
 🗳️,ballot,una,title,holds,,choice,ballot records your vote; choice is selecting among options,,vote; election; elect; poll; voluntary,
-✏️,pencil,ebewe,tool,order,small,draft,pencil marks can be erased; draft is tentative first version,,outline,ending-grids.md#intermediate-practice
+✏️,pencil,ebewe,tool,order,small,draft,pencil marks can be erased; draft is tentative first version,,outline,extra-noun-hooks.md#beginner-practice
 🖊️,pen,abewe,tool,order,small,commitment,pen ink stays on the page; commitment is a binding promise,,dedicate,ability.md#intermediate-practice
 🖌️,paintbrush,obewe,tool,order,small,artistry,brush paints with flowing strokes; artistry is skilled creative work,,art; paint; illustration; brush; draw; illustrate; stroke,stance-bars.md#advanced-practice
 🖍️,crayon,arewe,tool,order,small,boldness,crayon marks with thick color; boldness is strong visible stroke,,nerve,
@@ -929,8 +929,8 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🔩,bolt,obewo,tool,one,small,ohm,a bolt limits current through the joint; ohm is the SI resistance unit,,,
 ⚙️,machine,ewe,tool,order,,mechanism,a machine runs on mechanism,,device; instrument; engine; motor; functional; gear; cog,
 🗜️,clamp,agewa,tool,holds,small,pressure,clamp squeezes with steady force; pressure is squeezing force,,impose; tight; press,iff-fault.md#intermediate-practice
-⚖️,scale,uzore,counting,order,medium,justice,scales weigh both sides equally; justice is fair balance,,weigh; moral,
-🦯,cane,ugowe,tool,order,medium,trust,you lean your weight on a cane; trust is relying on someone,,confidence; rely; reliable; believe; belief,
+⚖️,scale,uzore,counting,order,medium,adjudication,scales weigh both sides; adjudication is weighing a case,,weigh,
+🦯,cane,ugowe,tool,order,medium,trust,you lean your weight on a cane; trust is relying on someone,,confidence; rely; reliable,
 🔗,link,ulewe,tool,order,small,,,,unite; relate,
 ⛓️‍💥,unlink,unewu,tool,takes-away,small,liberation,a broken chain frees the one it held,,release,
 ⛓️,chains,ehowe,tool,order,medium,bondage,chains bind and restrict movement; bondage is being held fast,,slave; constraint,
@@ -948,7 +948,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 📡,antenna,anowe,tool,order,medium,,,,,
 💉,syringe,ezebu,body,takes-away,small,intrusion,syringe puts fluid into body; injection is forcing something in,,shot,proper-names.md#intermediate-practice
 🩸,blood,ebuba,body,holds,none,violence,blood is spilled; violence is harm by force,,bloody; violent,
-💊,pill,obebu,body,takes-away,small,remedy,pill is swallowed to heal; remedy is fix for ailment,,drug; treatment; medicine,numbers-applied.md#intermediate-practice
+💊,pill,obebu,body,takes-away,small,remedy,pill is swallowed to heal; remedy is fix for ailment,,drug; treatment; medicine,digit-strings.md#beginner-practice
 🩹,bandage,abebu,body,takes-away,small,expedient,bandage covers a wound; expedient is the unobservable stopgap,,,
 🩼,crutch,egobe,body,order,medium,support,a crutch takes weight off an injured leg,,advocate,
 🩺,stethoscope,ezobe,body,order,medium,diagnosis,stethoscope listens to the body; diagnosis is finding what is wrong,,,
@@ -1041,7 +1041,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ♋,cancer,ogure,counting,order,none,,,,,
 ♌,leo,ulure,counting,order,none,,,,,
 ♍,virgo,uvure,counting,order,none,,,,,
-♎,libra,alure,counting,order,none,fairness,the scales weigh evenly; fairness is treating sides evenly,,fair; reasonable; deserve,
+♎,libra,alure,counting,order,none,fairness,the scales weigh evenly; fairness is treating sides evenly,,fair; reasonable,
 ♏,scorpio,ozure,counting,order,none,,,,,
 ♐,sagittarius,ezure,counting,order,none,,,,,
 ♑,capricorn,agure,counting,order,none,ambition,capricorn climbs the steep peak; ambition rises above the ordinary,,,
@@ -1112,7 +1112,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🟠,orange,orule,nature,order,none,,,,,
 🟡,yellow,ayule,nature,order,none,caution,yellow circle warns slow down; caution is careful awareness,,,
 🟢,green,ole,nature,order,,permission,green circle signals go ahead; permission is allowed to proceed,,license,
-🔵,blue,ubule,nature,order,none,,,,,left-bound.md#intermediate-practice
+🔵,blue,ubule,nature,order,none,,,,,left-bound-adjectives.md#beginner-practice
 🟣,purple,obule,nature,order,none,royalty,purple circle marks regal hue; royalty is high noble rank,,,
 🟤,brown,obulo,nature,one,none,earthiness,brown circle is soil and wood; earthiness is plain grounded quality,,,
 ⚫,black,ubulo,nature,one,none,,,,,

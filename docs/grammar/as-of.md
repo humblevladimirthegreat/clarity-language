@@ -43,7 +43,7 @@ The `bl-` word after the pair can be:
 - **`blarl`**, with the next sentence as whose-now (the pair then goes last)
 - extra-noun **-r**, which points back to a time already said (on a date, **-r** is written `=`: `bl=_#22,7` is *that 22 July again*; see the example below where Olazun walks on 22 July)
 
-It is never an offset from speech-now such as *three hours ago*: that would date the event without saying how you know the date. The *as-of* word already carries the date, so do not also write a separate `h_#22,7` for the same snapshot. A bare `h_#…` with no pair dates the event itself ([time](numbers-applied.md#time)). A clock time, *before*, or *after* may sit beside an *as-of* pair.
+It is never an offset from speech-now such as *three hours ago*: that would date the event without saying how you know the date. The *as-of* word already carries the date, so do not also write a separate `h_#22,7` for the same snapshot. A bare `h_#…` with no pair dates the event itself ([time](digit-strings.md#time)). A clock time, *before*, or *after* may sit beside an *as-of* pair.
 
 Do not put a bare person in `/b/` to mean “from Olazun’s now.” A person after `hanom` is [proxy](relations.md#proxy). To mean *as of when Olazun told it*, use **`blarl`** and a sentence: `henam blarl zolazun vezuyel`.
 

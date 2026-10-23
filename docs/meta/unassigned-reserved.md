@@ -281,11 +281,11 @@ Source: [dependents.md](../grammar/sentence-linkers.md#sentence-linkers)
 
 ## Turn words (`/y/`)
 
-Source: [speech-moves.md](../grammar/speech-acts.md#speech-act), [stacked act words](../grammar/speech-acts.md#stacked-acts), [describing a call or reaction](../grammar/speech-acts.md#describe-turn-word), [questions.md](../grammar/polar-inventory.md#polar-endings)
+Source: [speech-moves.md](../grammar/firm-soft.md#speech-act), [stacked act words](../grammar/speech-acts.md#stacked-acts), [describing a call or reaction](../grammar/speech-acts.md#describe-turn-word), [questions.md](../grammar/polar-inventory.md#polar-endings)
 
 - **closed (closed-root endings):** act and polar series with **-n** (`yan` / `yon` / `yen` / `yun`, `yaen` / …). On `/y/`, **-n** calls someone. Parser: `turnSeriesCall`.
 - **closed (D-59):** a third opening act word (`yul yul yul`), and anything between two [stacked act words](../grammar/speech-acts.md#stacked-acts) (`yel al yol`).
-- **closed (closed-root endings):** a fill-ask blank for the act itself (*are you asking or telling?*). `yar` / `yor` / `yer` / `yur` are the [for-now acts](../grammar/speech-acts.md#act-r).
+- **closed (closed-root endings):** a fill-ask blank for the act itself (*are you asking or telling?*). `yar` / `yor` / `yer` / `yur` are the [for-now acts](../grammar/firm-soft.md#act-r).
 - **closed (D-31):** a polar word before an act word, or two polar words in a row; a topic-only question.
 - **open:** an asking tag with a body after it (`yol yael zuzozen vowurel.`). The tag asks about the sentence before it and is a turn of its own; a body after it would be a second move in the same turn, and no question has asked for one. Parser: `tagBody`.
 - **closed (D-43):** a `/b/` hosted by a call or reaction; `yohumal buzozen` is a reaction and then a body with a recipient.

@@ -1,6 +1,6 @@
 # Proposal: Band gates, then reassign and reorder sittings
 
-**Status:** Phase 1 done. Gates are in [learning levels](../meta/learning-levels.md). Phases 2–5 apply the inventory; then absorb. Not design authority; fold leftover notes into learning levels and [grammar-docs](../meta/grammar-docs.md), then drop.  
+**Status:** Phases 1–2 done. Gates are in [learning levels](../meta/learning-levels.md). Phases 3–5 apply the inventory; then absorb. Not design authority; fold leftover notes into learning levels and [grammar-docs](../meta/grammar-docs.md), then drop.  
 **Related:** [learning levels](../meta/learning-levels.md) ([gates](../meta/learning-levels.md#gates), [order inside a band](../meta/learning-levels.md#order-inside-a-band)), [empty stages](../meta/grammar-docs.md#empty-stages), [page skeleton](../meta/grammar-docs.md#page-skeleton), [later-stage shape](../meta/grammar-docs.md#later-stage-shape), [stage checklist](../meta/grammar-docs.md#stage-checklist), [feature criteria](../meta/feature-criteria.md#easy-to-use), [level reviews](../meta/translation-exercises.md#level-reviews), [recipe track](../meta/grammar-docs.md#recipe-track).  
 **Code:** [`reading-order.ts`](../grammar/.vitepress/lib/reading-order.ts), [`learning-order.ts`](../../src/lint/learning-order.ts), [`lint-forward-links.ts`](../../scripts/lint-forward-links.ts), [`constructions.ts`](../../src/parse/constructions.ts).
 
@@ -61,16 +61,16 @@ Each phase below is a cluster. Open this file, take the first undone row in the 
 
 ### Phase 2 — First-corpus talk
 
-Ordinary dialogue jobs that drifted Intermediate because they stack. Homes are already Beginner.
+**Done.** Ordinary dialogue jobs that drifted Intermediate because they stack. New Beginner files sit at the end of the Beginner sidebar until Phase 5 clusters them.
 
-- **speech-acts.md** — split: firm/soft (`#speech-act`, including *-r*) → new B file; parent keeps tone marks, stacking, manner.
-- **left-bound.md** — split: adjectives before the noun (`#left-bound-adjectives`) → new B file; parent keeps chaining / degree / leaving-out. Thin family-name examples that need proper-names.
-- **ending-grids.md** — split: extra-noun two-vowel + genitive `em` → new B file; parent keeps discourse grids.
-- **fill-ask-roles.md** — split: what kind / when / where / whose / how / why → new B file; parent keeps arity + blank-in-dependent. After the ending-grids B slice (`em` for *whose*).
-- **discourse-hooks.md** — split: somewhere / nowhere / everywhere + here/there → new B file; parent keeps stacked discourse, hook resume, parallel chains.
-- **of-relations.md** — split: social relations → new B file; parent keeps locative / of.
-- **join-across-roles.md** — split: clause sequence (`#clause-sequence`) → new B file; parent keeps VP / stance / join-act. Thin the *try* cross-ref.
-- **numbers-applied.md** — split: digit-strings + time → new B file; parent keeps letter codes, measures, ranges, percent.
+- **speech-acts.md** — split: firm/soft (`#speech-act`, including *-r*) → `firm-soft.md`; parent keeps tone marks, stacking, manner.
+- **left-bound.md** — split: adjectives before the noun (`#left-bound-adjectives`) → `left-bound-adjectives.md`; parent keeps chaining / degree / leaving-out. Thin family-name examples that need proper-names.
+- **ending-grids.md** — split: extra-noun two-vowel + genitive `em` → `extra-noun-hooks.md`; parent keeps discourse grids.
+- **fill-ask-roles.md** — split: what kind / when / where / whose / how / why → `fill-ask-jobs.md`; parent keeps arity + blank-in-dependent. After the ending-grids B slice (`em` for *whose*).
+- **discourse-hooks.md** — split: somewhere / nowhere / everywhere + here/there → `here-there.md`; parent keeps stacked discourse, hook resume, parallel chains.
+- **of-relations.md** — split: social relations → `social-ties.md`; parent keeps locative / of.
+- **join-across-roles.md** — split: clause sequence (`#clause-sequence`) → `clause-sequence.md`; parent keeps VP / stance / join-act. Thin the *try* cross-ref.
+- **numbers-applied.md** — split: digit-strings + time → `digit-strings.md`; parent keeps letter codes, measures, ranges, percent.
 
 ### Phase 3 — Purpose slices
 
@@ -91,7 +91,7 @@ High-frequency purpose moves. Late Beginner, after sakes / knowing / predication
 
 ### Phase 5 — Reorder
 
-Put each new B file late Beginner after its homes; purpose slices after sakes / knowing / predication; restore topic clusters. How to learn still names the spine only. One contiguous cluster per session.
+Put each new B file late Beginner after its homes; purpose slices after sakes / knowing / predication; restore topic clusters. How to learn still names the spine only. One contiguous cluster per session. Also use git mv to move the grammar files into beginner, intermediate, advanced subfolders. Note somewhere in meta that bands exist in sidebar and also on filesystem.
 
 ### Absorb
 
@@ -184,6 +184,7 @@ One row per sitting (reviews and orientation omitted). Corpus / usable are for t
 ## Done when
 
 - [x] [learning-levels.md](../meta/learning-levels.md) states the gates and within-band order; the three questions are gone.
+- [x] Phase 2 first-corpus talk splits (eight new Beginner sittings).
 - Every sitting has an Inventory row, and the published sidebar matches **Proposed** (or an explicit note why a row stayed).
 - Beginner parent slugs still teach their Beginner sitting.
 - Reviews, cheat-sheet Stage, construction homes, and lexicon `core` cells resolve.

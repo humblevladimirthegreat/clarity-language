@@ -89,7 +89,7 @@ English swallows small words that change the meaning: *can* and *can't* often di
 
 ### Voice and certainty {#voice-and-certainty}
 
-Only the words and the written [tone marks](speech-acts.md#tone-marks) carry meaning. How firmly you stand behind a claim is the ending on the [act word](speech-acts.md#speech-act); how sure you are is [MAY](knowing.md#may). Pitch carries two things only: each [vowel's own pitch](#vowel-pitch-values), and the `?` mark, which raises a word's whole range. An unwritten rise or fall adds nothing. A statement said with a rising voice is still a statement, and a firm `-l` claim said hesitantly is still firm.
+Only the words and the written [tone marks](speech-acts.md#tone-marks) carry meaning. How firmly you stand behind a claim is the ending on the [act word](firm-soft.md#speech-act); how sure you are is [MAY](knowing.md#may). Pitch carries two things only: each [vowel's own pitch](#vowel-pitch-values), and the `?` mark, which raises a word's whole range. An unwritten rise or fall adds nothing. A statement said with a rising voice is still a statement, and a firm `-l` claim said hesitantly is still firm.
 
 So listen to the words, not the voice. A speaker whose voice naturally rises at the end is not hedging, and a confident voice is not evidence.
 

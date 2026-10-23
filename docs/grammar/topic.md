@@ -61,7 +61,7 @@ A dropped subject is never read as the topic. `xuzozen dolazun vawebol.` leaves 
 
 The topic pronoun is the topic itself, so it is never a topic word or a resume: `xalon`, `xalor` and `zalor` are not sentences. To start a new stretch on the same topic, name it again with `xuzozer`.
 
-A topic pronoun with no topic set is not a sentence. On **-l** and **-m** the star root keeps its ordinary senses: `zalol` *a star*, `zalom` *fame*. **-x** adds associates: `zalonx` *the topic and associates*.
+A topic pronoun with no topic set is not a sentence. On **-l** and **-m** the star root keeps its ordinary senses: `zalol` *a star*, `zalom` *visibility*. **-x** adds associates: `zalonx` *the topic and associates*.
 
 *As for* frames one sentence and leaves the topic alone:
 

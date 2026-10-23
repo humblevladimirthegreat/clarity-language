@@ -28,6 +28,14 @@ export const beginnerLessons = [
   { text: 'Role compounds', link: '/roles' },
   { text: 'Compounds', link: '/compounds' },
   { text: 'Intention', link: '/intention' },
+  { text: "Speech act: firm and soft", link: "/firm-soft" },
+  { text: "Adjectives before the noun", link: "/left-bound-adjectives" },
+  { text: "Extra nouns and whose", link: "/extra-noun-hooks" },
+  { text: "What kind, when, where, whose, how, why", link: "/fill-ask-jobs" },
+  { text: "Here, there, and somewhere", link: "/here-there" },
+  { text: "Social relations", link: "/social-ties" },
+  { text: "Clause sequence", link: "/clause-sequence" },
+  { text: "Digit-strings and time", link: "/digit-strings" },
 ]
 
 /** Intermediate sittings, in the same topic order as the Beginner group. */

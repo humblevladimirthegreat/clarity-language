@@ -5,36 +5,11 @@ band: intermediate
 # Join across roles {#join-across-roles}
 
 The join vowels you use on noun lists also join other things: verb phrases under `/v/` (*walks and runs*), whole clauses under `/x/` (*Uzozen walks, then Olazun runs*), and stance words under `/th/` (*not because of the rain*). With ending **-n** under `/v/`, `/ɡ/`, or `/h/`, a join word becomes a verb, adjective, or adverb that names a list move (*includes*, *without*). Phrase fences and their set, rank, arity, and scope patterns are in [joins](joins.md).
-
-### Sequence (`-n`, clause only) {#clause-sequence}
-<a id="sequence"></a>
-
-When English tells events in time order (*and then*), put ending **-n** on a clause join (`/x/`). Narrative *and then* is **`xan`**. Like every clause join, it goes [between](joins.md#clause-joins) the clauses: `A xan B xan C` reads one step at a time. The clauses keep one speech act; this **-n** orders them rather than naming a person.
-
-<!-- cheat-sheet: joins-hooks -->
-| Agebon | Use | English | Cue |
-|--------|-----|---------|-----|
-| `xan` | sequence add | *and then…* | **a** ≈ add |
-| `xon` | sequence menu | *or maybe…*; after an [attempt](ability.md#try), *failing that…* | **o** ≈ one |
-| `xun` | sequence deny | *and then not…* | **u** ≈ undo |
-| `xaon` | sequence inclusive | *and/or maybe…* | **ao** ≈ add one or more |
-| `xuen` | sequence turned back | *and before that…* | **ue** ≈ undo + order (the order runs backward) |
-
-**`xuen`** tells the steps last first: `A xuen B` says that B happened before A. Use it when you want to say the later event first and then step back, as English does with *before that*.
-
-> `zuzozen vuhohol xuen zuzozer vowurel.`
->
-> [z-Uzozen | v-sit | x-and-before-that | z-←Uzozen | v-walk]
->
-> "Uzozen sat, and before that, they walked."
-
-Under `/v/`, `/ɡ/`, and `/h/`, a join word with **-n** names a list move instead. On a content word, **-n** marks a [name](proper-names.md#proper-name--n) as usual.
-
 ### Verb-phrase and clause forms {#vp-clause-forms}
 <a id="vowels--endings"></a>
 <a id="ending-senses-clause-joins"></a>
 
-[Joins](joins.md) already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/`, `/x/`, and stance `/th/`. Clause **-n** forms are in [Sequence](#sequence); `/v/` **-n** forms are join-act verbs.
+[Joins](joins.md) already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/`, `/x/`, and stance `/th/`. Clause **-n** forms are in [Sequence](clause-sequence.md#sequence); `/v/` **-n** forms are join-act verbs.
 
 | | **-l** | **-m** | **-r** |
 |---|--------|--------|--------|
@@ -147,7 +122,7 @@ Sequence **`ae`** keeps its [phrase meaning](rank-joins.md#sequence-ae) in both 
 >
 > "Uzozen walks, then runs."
 
-**Compare with:** clause **`xan`** ([sequence](#sequence)) tells what happened next, one step at a time. **`xael`** makes the order part of the claim (a recipe, directions): `A xael B xael C` says these steps go in this order.
+**Compare with:** clause **`xan`** ([sequence](clause-sequence.md#sequence)) tells what happened next, one step at a time. **`xael`** makes the order part of the claim (a recipe, directions): `A xael B xael C` says these steps go in this order. With rank **ue**, **`xuen`** steps backward: `A xuen B` says B happened before A.
 
 A clause join with no clause before it is standalone, like `zal` *nothing*: `xal` means *nothing happened*, and open `xam` adds *as far as I know*.
 
@@ -277,7 +252,7 @@ Outside a question, only the single-vowel **-r** cells are words. Under a questi
 | `thoer` | *What are you torn between?* |
 | `thuer` | *What's your objection?* |
 
-**Compare with:** `thul` *no judgment* withholds any stance; a *no chance* stance number is a stance that the claim is false. `thar` asks for the speaker's grounds, not what caused the event; for *Why does it happen?* use [`thahum blar`](fill-ask-roles.md#why).
+**Compare with:** `thul` *no judgment* withholds any stance; a *no chance* stance number is a stance that the claim is false. `thar` asks for the speaker's grounds, not what caused the event; for *Why does it happen?* use [`thahum blar`](fill-ask-jobs.md#why).
 
 ### Join-act verbs {#join-act-verbs}
 
@@ -293,7 +268,7 @@ For an associative group (*Olazun and company*), put noun **-x** on the object a
 
 **Related form:** joining a list uses [joins](joins.md) (`zal` / `val` / `xal`, …).
 
-**Compare with:** *and then* between sentences uses clause [sequence](#sequence) (`xan`, …), not `van`.
+**Compare with:** *and then* between sentences uses clause [sequence](clause-sequence.md#sequence) (`xan`, …), not `van`.
 
 <!-- cheat-sheet: joins-hooks -->
 | Clause sequence | Join-act verb | Shared vowel move |
@@ -407,15 +382,7 @@ z-Uzozen | d-trophy | v-includes
 z-Olazun | [h-including | bl-Ahelan] | v-run
 :::
 
-**3.** *Uzozen punches, then Olazun screams.*
-
-::: details Show answer
-`zuzozen vanuvul xan zolazun varemul.`
-
-[z-Uzozen | v-punch | x-and-then | z-Olazun | v-scream]
-:::
-
-**4.** *Olazun runs and punches Ahelan.*
+**3.** *Olazun runs and punches Ahelan.*
 
 ::: details Show answer
 `zolazun varuvel dahelan vanuvul val.`
@@ -423,7 +390,7 @@ z-Olazun | [h-including | bl-Ahelan] | v-run
 z-Olazun | [v-run | [d-Ahelan | v-punch] | v-and]
 :::
 
-**5.** *Olazun runs, but not because Uzozen punches.*
+**4.** *Olazun runs, but not because Uzozen punches.*
 
 ::: details Show answer
 `zolazun varuvel thahum thul blarl zuzozen vanuvul.`
@@ -431,7 +398,7 @@ z-Olazun | [v-run | [d-Ahelan | v-punch] | v-and]
 z-Olazun | v-run | th-because | th-not | bl-that-clause | z-Uzozen | v-punch
 :::
 
-**6.** *Uzozen screamed; I either saw it or was told, not both.*
+**5.** *Uzozen screamed; I either saw it or was told, not both.*
 
 ::: details Show answer
 `zuzozen varemul thevum thebam thol.`
@@ -465,15 +432,7 @@ z-teamwork | [g-open-to | bl-Uzozen]
 *A team open to Uzozen.* (more members may follow)
 :::
 
-**4.** `zahelan varemul xuen zolazun vanuvul.`
-
-::: details Show answer
-[z-Ahelan | v-scream | x-and-before-that | z-Olazun | v-punch]
-
-*Ahelan screams; before that, Olazun punched.*
-:::
-
-**5.** `zahelan varuvel thevum thebam thel.`
+**4.** `zahelan varuvel thevum thebam thel.`
 
 ::: details Show answer
 z-Ahelan | v-run | th-MEMORY | th-REPORTED | th-rank/more
@@ -481,7 +440,7 @@ z-Ahelan | v-run | th-MEMORY | th-REPORTED | th-rank/more
 *Ahelan ran; I know mainly because I saw it, and also because I was told.*
 :::
 
-**6.** `yol thar zuzozen varuvel.`
+**5.** `yol thar zuzozen varuvel.`
 
 ::: details Show answer
 y-question | th-why | z-Uzozen | v-run
@@ -499,16 +458,6 @@ y-question | th-why | z-Uzozen | v-run
 z-Olazun | [h-refusing | bl-trophy] | v-run
 
 **`u`** rejects that member; **`han`** would run *with* the trophy.
-:::
-
-**2.** *Uzozen punches; before that, Olazun screamed.* `zuzozen vanuvul xuen zolazun varemul.` or `zuzozen vanuvul xan zolazun varemul.`
-
-::: details Show answer
-`zuzozen vanuvul xuen zolazun varemul.`
-
-[z-Uzozen | v-punch | x-and-before-that | z-Olazun | v-scream]
-
-**`xuen`** puts the second clause earlier; **`xan`** puts it after.
 :::
 
 #### Fix it {#intermediate-fix-it}

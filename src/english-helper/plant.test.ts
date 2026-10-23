@@ -33,10 +33,10 @@ describe("plantErrors", () => {
   });
 
   it("plants an alias on its other side", () => {
-    const grateful = rootOf("I am grateful.", "grateful", "alias");
-    const answer = `g${grateful}m.`;
-    const [plant] = plantErrors(answer, verifyDraft("I am grateful.", answer, tables, data).words!);
-    assert.deepEqual([plant?.kind, plant?.draft], ["alias-side", `g${grateful}l.`]);
+    const lucky = rootOf("I am lucky.", "lucky", "alias");
+    const answer = `g${lucky}m.`;
+    const [plant] = plantErrors(answer, verifyDraft("I am lucky.", answer, tables, data).words!);
+    assert.deepEqual([plant?.kind, plant?.draft], ["alias-side", `g${lucky}l.`]);
   });
 
   it("says nothing about a draft that does not parse", () => {

@@ -154,7 +154,7 @@ describe("recipe table harvest", () => {
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
-| in B's use (*Uzozen's dog*) | hook **\`em\`** + \`/b/\` | [Whose](ending-grids.md#genitive) |
+| in B's use (*Uzozen's dog*) | hook **\`em\`** + \`/b/\` | [Whose](extra-noun-hooks.md#genitive) |
 
 ## Everyday words {#everyday-words}
 
@@ -165,7 +165,7 @@ describe("recipe table harvest", () => {
 
   it("keeps the Teach link and the cue words", () => {
     const [of, on] = entriesOf(markdown);
-    assert.deepEqual([of!.teach, of!.cues], ["ending-grids.md#genitive", ["'s", "of"]]);
+    assert.deepEqual([of!.teach, of!.cues], ["extra-noun-hooks.md#genitive", ["'s", "of"]]);
     assert.deepEqual([on!.teach, on!.cues], ["hooks.md#extra-noun", ["on", "onto"]]);
   });
 

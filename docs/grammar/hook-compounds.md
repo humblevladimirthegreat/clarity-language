@@ -187,7 +187,7 @@ English bounds *everyone*, *someone*, and *nothing* with a preposition: *everyon
 | Piece | What it says | In `zoxual` |
 |-------|--------------|-------------|
 | role letter | the slot, as on any join: `/z/`, `/d/`, `/b/`, or `/h/` | `z` |
-| hook vowels | an [extra-noun hook](ending-grids.md#extra-noun-intermediate), with its **-l** left unwritten | `o` *at* |
+| hook vowels | an [extra-noun hook](extra-noun-hooks.md#extra-noun-intermediate), with its **-l** left unwritten | `o` *at* |
 | `m` or `r` | the hook's **-m** frame, or its **-r** point back | none |
 | **`x`** | the seam, as in a hook prefix | `x` |
 | join vowels + ending | any [standalone join](joins.md#standalone-phrase), read as usual | `ual` *everyone* |
@@ -200,7 +200,7 @@ In speech **`x`** starts the join's syllable (*zo-xu-al*). With `m` or `r`, that
 
 #### Which hook {#hooked-joins-hooks}
 
-Every hook in the [extra-noun grid](ending-grids.md#extra-noun-intermediate) works, with the reading it has there. The relation holds between each member and the landmark. **-l** (no letter before the seam) is the exact relation, and `m` before the seam is the frame, as on a free hook.
+Every hook in the [extra-noun grid](extra-noun-hooks.md#extra-noun-intermediate) works, with the reading it has there. The relation holds between each member and the landmark. **-l** (no letter before the seam) is the exact relation, and `m` before the seam is the frame, as on a free hook.
 
 | Hook | **-l** | Example | **-m** | Example |
 |------|--------|---------|--------|---------|
@@ -215,7 +215,7 @@ Every hook in the [extra-noun grid](ending-grids.md#extra-noun-intermediate) wor
 | `ae` | *using* | `zaexual blanewul` *everyone with a knife* | *by* | `zaemxual bledavel` *everyone going by train* |
 | `ue` | *against* | `zuexual bluwon` *everyone against me* | *contrary to* | `zuemxual blonam` *everyone acting contrary to the policy* |
 
-An [abstract landmark](ending-grids.md#abstract-landmarks) reads the same way: `zaxual blobowum` *everyone in crisis*, `zuexual blonam` *everyone against the policy*. A person landmark gives [here and there](discourse-hooks.md#deixis): `zomxual bluwon` *everyone here*, `zomxual blawan` *everyone there by you*, `zumxual blayan` *everyone over there*, and `zoxual bluwon` *everyone right where I am*.
+An [abstract landmark](ending-grids.md#abstract-landmarks) reads the same way: `zaxual blobowum` *everyone in crisis*, `zuexual blonam` *everyone against the policy*. A person landmark gives [here and there](here-there.md#deixis): `zomxual bluwon` *everyone here*, `zomxual blawan` *everyone there by you*, `zumxual blayan` *everyone over there*, and `zoxual bluwon` *everyone right where I am*.
 
 **Compare with:** belonging and origin are [of-relations](of-relations.md#of-relations), not places. *Everyone in the family* (its members) is `zual gobem blavayal`, and *everyone from the town* (where they are from) is `zual gaham blahaham`. `zaxual blavayal` is everyone inside the family's space, and `zuxual blahaham` is everyone who came from the town, since `u` names where a path starts.
 

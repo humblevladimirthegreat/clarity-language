@@ -206,7 +206,7 @@ Without **`thomam`**, the sentence reports that Ahelan is leaving.
 - Sake ascription: [sakes.md](sakes.md)
 - Emotion compose: [sakes.md](feelings-permission.md#emotion-compose)
 - Plan vs forecast: [intention.md](intention.md#plan-predict)
-- Clock / date / when-frames: [numbers-applied.md](numbers-applied.md#time)
+- Clock / date / when-frames: [numbers-applied.md](digit-strings.md#time)
 - Habitual *always*: [restrictors.md](restrictors.md)
 - General claims and their warrant: [Channels on a generalization](universality.md#universality)
 - Someone else's view: [Whose view (holder)](evidentiality.md#holder)

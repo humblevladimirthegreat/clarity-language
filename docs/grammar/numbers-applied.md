@@ -7,49 +7,6 @@ band: intermediate
 
 A number word can do more than count. This page shows how to write a code or label (*room 12*), a clock time or date, an amount of a unit (*two meters*), a range (*3 to 5*), and a percent. How the number word itself is built (markers, endings, writing) is in [numbers](numbers.md); unspecified amounts, exponents, and the spoken comma are in [digitless and exponents](digitless-exponents.md).
 
-
-### Digit-strings {#digit-strings}
-
-When English uses a number as a **code** (a phone, room, channel, or serial number) rather than an amount, write it with the digit-string marker **`ro`** (written **`_`**). A code has no exponent and no percent. The code can then fill whatever role the clause needs (`/d/`, `/b/`, `/ɡ/`).
-
-> `zuzozen d_555,123,4567 vawebol.`
->
-> 🔊 `zuzozen drozazazathebadogethehuzavorel vawebol.`
->
-> z-Uzozen | d-_555,123,4567 | v-see
->
-> "Uzozen sees 555-123-4567."
-
-Ending is usually **-l** (exact label); **-n** for an official designation; **-r** with digits repeats a code already mentioned. Digitless `dror` / `gror` is *some code*, or *what number?* in a question; digitless **-l** `…_` is an unspecified label ([digitless](digitless-exponents.md#digitless)).
-
-**For numeric *plus or minus*, use:** [sign](number-markers.md#sign) on a count or ordinal. A label keeps its digits exactly as written.
-
-To place an event by a code (*on channel 7*), put the code in a `bl-` word after a relation word (`/h/` *on* + `bl_7`), or put it on a noun as `/ɡ/` (*channel* `g_7`).
-
-#### Fields {#code-fields}
-
-A comma in a code marks a **field**: a part that is a value of its own, such as the hour in a clock time or the area code in a phone number. Each comma is spoken **`the`** ([group separator](digitless-exponents.md#group-separator)). The comma is part of the code, so `h_15,30` and `h_1530` are different words.
-
-| Rule | Examples |
-|------|----------|
-| Put a comma between fields | clock `h_15,30`; version `d_2,1,3` (*2.1.3*); phone `d_555,123,4567` (area code, exchange, line) |
-| Two number fields side by side always take one; without it they merge | `d_15,30` (two fields) is not `d_1,530` |
-| Drop source punctuation that marks no field | spaces in a serial number |
-| Do not chunk one long field: pause if you like, but say no `the` | serial `d_4071229385` |
-| Write `.` only for one decimal value used as a label | `b_101.1` (*101.1 FM*); *1.2.3* is `d_1,2,3` |
-
-#### Plural labels {#plural-labels}
-
-English makes a label plural to name the whole run of labels that start with it: *the ’90s* are the years 90 through 99, and *the 1800s* are 1800 through 1899. Put plural **-x** on the label: `z_90x`. The final zeros stand for any digit, so `_90x` covers 90 to 99. Only a label with digits takes **-x**; a count does not.
-
-> `zuzozen vowurel herem bl_90x.`
->
-> 🔊 `zuzozen vowurel herem blronamolx.`
->
-> z-Uzozen | v-walk | [h-while | bl-_90-x]
->
-> "Uzozen walked in the ’90s."
-
 ### Letter codes {#letter-codes}
 
 English names many things with letters as well as digits: a vitamin (*B12*), a flat (*4B*), a jet (*F-16*). A **`_`** code may hold letters too. Write each letter in lowercase, in shorthand, just like the digits: `g_b12`.
@@ -81,87 +38,12 @@ Say each character as one syllable, after the marker **`ro`**:
 Rules for letters in a code:
 
 - No comma between letters and digits: the switch is audible (`z_b12`, not `z_b,12`).
-- **`x`** is never a character, so a code before **`x`** is always a numeric prefix or plural **-x** (`z_b0x` covers B0 to B9, as in [plural labels](#plural-labels)).
+- **`x`** is never a character, so a code before **`x`** is always a numeric prefix or plural **-x** (`z_b0x` covers B0 to B9, as in [plural labels](digit-strings.md#plural-labels)).
 - Only the **`_`** marker takes letters: a count, a rank, a sign, or a date has none.
 - In a code, `e` is always the vowel letter, never an exponent.
 - A letter at the end of a code is a character, not the ending. A code with a letter always shows its ending by a mark: `z_nl` is **-l**, `z@_nl` is **-n**, `z=_nl` is **-r**.
 
 **A foreign code** keeps its letters when each one has an Agebon letter. English *p*, *t*, *k*, *s*, and *f* are the voiceless sounds of `b`, `d`, `g`, `z`, and `v`, so they take those letters: *F-16* is `z_v16`, and *P2* is `z_b2`. A code with a letter that has no Agebon sound (*c*, *i*, *j*, *q*, *x*) stays a [span](spans.md#loans): *FBI* is <code>z@&lt;FBI&gt;</code>.
-
-### Time {#time}
-
-To say when something happens by the clock or the calendar (*at 15:30*, *on 22 July*), write a digit string under `/h/` with no relation word before it. Clock takes marker **`ro`** (spoken **`hro`**, written `h_…`). Date takes calendar-ordinal **`oe`** (spoken **`hroe`**, written `h_#…`). Fields are read by position, so the word already says which number is the hour or the month.
-
-> `h_15,30 zuzozen vowurel.`
->
-> 🔊 `hrobazathegemol zuzozen vowurel.`
->
-> h-_15,30 | z-Uzozen | v-walk
->
-> "At 15:30 Uzozen walks."
-
-Clock and date together:
-
-| Job | How |
-|-----|-----|
-| **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left to right; commas are writing only: hour, minute, optional seconds (`h_15,30`, `h_15,30,00`). Digitless `h_` = *at some (unspecified) clock time*. |
-| **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). Digitless `h_#` covers an unspecified date. A date may stop after the day (`h_#12`, *on the 12th*); context gives the month. You may also name the relation with a *date* word plus `/b/`, but you do not need to. |
-| **Day of the week** | Ordinal on **`olere`** *weekday*, counting from Monday: `zolerem grebal` is *Monday*, `zolerem grerel` is *Sunday* (the seventh). |
-| **Month or year alone** | A month is an ordinal on **`umale`** *month*, counting from January, the same way as weekdays: `zumalem gregel` is *March*. A year is a label on **`avuva`** *year*: `zavuvam g_1962` is *1962*. To place an event in one, put it in `/b/` after **`herem`** *during*: `herem blumalem gregel` (*in March*), `herem blavuvam g_1962` (*in 1962*). |
-| **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, a signed offset on the channel (*three hours ago* / *in three hours*) or on a time pole (*until tomorrow*), or a stance word that places the event in time ([LIVE](evidentiality.md#live-vs-memory) / [MEMORY](evidentiality.md#live-vs-memory), or a channel plus `b+` for a [forecast](evidentiality.md#forecast)). [RESIDUE](notional-standing.md#residue) / [FORMER](notional-standing.md#former-climate) do **not** place an event in time. There is no past or future ending. An amount of time (*for 3 days*) is a relation word plus a measure phrase. |
-
-> `zuzozen vowurel herem blumalem gregel.`
->
-> z-Uzozen | v-walk | [h-while | [bl-month | g-3rd]]
->
-> "Uzozen walks in March."
-
-> `zuzozen vowurel herem blavuvam g_1962.`
->
-> 🔊 `zuzozen vowurel herem blavuvam grobanavodol.`
->
-> z-Uzozen | v-walk | [h-while | [bl-year | g-_1962]]
->
-> "Uzozen walked in 1962."
-
-Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** with digits repeats a clock time or date already mentioned; digitless `hror` asks *when?* / *what time?* in a question ([digitless](digitless-exponents.md#digitless)). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
-
-For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`oel`** *toward* ([extra nouns](ending-grids.md#extra-noun-intermediate)). Right after an `ul` extra noun, `oel` and its `/b/` close the pair: `ul X oel Y` is one unit, *from X to Y*, not a [range](ending-grids.md#ranges). It works for any two endpoints, not only times.
-
-> `zuzozen ul b_9 oel b_17 vowurel.`
->
-> 🔊 `zuzozen ul bronal oel brobarel vowurel.`
->
-> z-Uzozen | [from | b-_9 | toward | b-_17] | v-walk
->
-> "Uzozen walks from 9:00 to 17:00."
-
-Like any other word, the unit sits where its scope should be: with [joined verbs](join-across-roles.md#vp-clause-forms), before one verb for that verb alone, or after the join for every verb.
-
-> `zuzozen vowurel varuvel val ul b_9 oel b_17.`
->
-> 🔊 `zuzozen vowurel varuvel val ul bronal oel brobarel.`
->
-> z-Uzozen | [v-walk | v-run | v-and] | [from | b-_9 | toward | b-_17]
->
-> "Uzozen walks and runs from 9:00 to 17:00."
-
-With one verb, the two halves may also sit on either side of it, as two extra nouns:
-
-> `zuzozen ul b_9 vowurel oel b_17.`
->
-> 🔊 `zuzozen ul bronal vowurel oel brobarel.`
->
-> z-Uzozen | [from | b-_9] | v-walk | [toward | b-_17]
->
-> "Uzozen walks from 9:00 to 17:00."
-
-For a decade (*the ’90s*), use a [plural label](#plural-labels).
-
-**Compare with:** a phone or room **code** uses the same `_` marker under `/d/` `/b/` `/ɡ/`, not bare `/h/`. Restrictor **`har`** is *sometimes*; digitless `hrol` is *some clock or date*.
-
-**Not the same job as:** `hragel` (*three times*) and `hregel` (*for the third time*). Clock time `h_15,30` is still a digit-string.
-
 ### Measure phrases {#measure-phrases}
 <a id="units"></a>
 <a id="unit-amount"></a>
@@ -335,9 +217,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *pill* | `obebul` | 💊 |
 | *bottle* | `awodal` | 🍼 |
-| *spoon* | `uzedal` | 🥄 |
 | *meter* | `ezerem` | 📐 from *set square* |
 | *hour* | `agorum` | ⏳ from *hourglass* |
 
@@ -346,35 +226,13 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
-| *Ahelan* | `ahelan` |
+| *pill* | `obebul` |
 | *walk* | `vowurel` |
 | *see* | `vawebol` |
-| *scream* | `varemul` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
-**1.** *Uzozen sees a B12 pill.*
-
-::: details Show answer
-`zuzozen dobebul g_b12 vawebol.`
-
-🔊 `zuzozen dobebul grobubadol vawebol.`
-
-z-Uzozen | [d-pill | g-_b12] | v-see
-:::
-
-**2.** *From 9:00 to 17:00 Uzozen sees Ahelan.*
-
-::: details Show answer
-`zuzozen ul b_9 oel b_17 dahelan vawebol.`
-
-🔊 `zuzozen ul bronal oel brobarel dahelan vawebol.`
-
-z-Uzozen | [from | b-_9 | toward | b-_17] | d-Ahelan | v-see
-:::
-
-**3.** *25% of the pills.*
+**1.** *25% of the pills.*
 
 ::: details Show answer
 `zobebulx g+25%.`
@@ -384,7 +242,7 @@ z-Uzozen | [from | b-_9 | toward | b-_17] | d-Ahelan | v-see
 z-pill-x | g-25yo
 :::
 
-**4.** *Uzozen walks two meters.*
+**2.** *Uzozen walks two meters.*
 
 ::: details Show answer
 `zuzozen bezerem gradol vowurel.`
@@ -392,7 +250,7 @@ z-pill-x | g-25yo
 z-Uzozen | [b-meter | g-two] | v-walk
 :::
 
-**5.** *Three to five hours.*
+**3.** *Three to five hours.*
 
 ::: details Show answer
 `zagorum gragel al grazal.`
@@ -400,7 +258,7 @@ z-Uzozen | [b-meter | g-two] | v-walk
 [z-hour | g-three] | through | g-five
 :::
 
-**6.** *Two thirds of the pills.*
+**4.** *Two thirds of the pills.*
 
 ::: details Show answer
 `zobebulx gradol grugel.`
@@ -408,32 +266,20 @@ z-Uzozen | [b-meter | g-two] | v-walk
 [z-pill-x | g-two | g-third-of]
 :::
 
+**5.** *Uzozen sees a B12 pill.*
+
+::: details Show answer
+`zuzozen dobebul g_b12 vawebol.`
+
+🔊 `zuzozen dobebul grobubadol vawebol.`
+
+z-Uzozen | [d-pill | g-_b12] | v-see
+:::
+
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zawodal g_7.`
-
-::: details Show answer
-
-🔊 `zawodal grorel.`
-
-z-bottle | g-_7
-
-*Bottle 7.*
-:::
-
-**2.** `h~_23,59 zolazun varemul.`
-
-::: details Show answer
-
-🔊 `hrodogethezanam zolazun varemul.`
-
-h-_23,59.about | z-Olazun | v-scream
-
-*Around 23:59 Olazun screams.*
-:::
-
-**3.** `zawodalx g+50%.`
+**1.** `zawodalx g+50%.`
 
 ::: details Show answer
 
@@ -444,7 +290,7 @@ z-bottle-x | g-50yo
 *50% of the bottles.*
 :::
 
-**4.** `z+10 uel z+20.`
+**2.** `z+10 uel z+20.`
 
 ::: details Show answer
 
@@ -455,18 +301,7 @@ z-ten | outside | z-20
 *Below 10 or above 20.*
 :::
 
-**5.** `h_#1,4 zolazun vowurel.`
-
-::: details Show answer
-
-🔊 `hroebathehul zolazun vowurel.`
-
-h-_1,4 | z-Olazun | v-walk
-
-*On 1 April, Olazun walks.*
-:::
-
-**6.** `zawodalx gragel gruhul.`
+**3.** `zawodalx gragel gruhul.`
 
 ::: details Show answer
 
@@ -478,17 +313,7 @@ h-_1,4 | z-Olazun | v-walk
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Olazun sees spoon 3.* `zolazun duzedal grogel vawebol.` or `zolazun duzedal gragel vawebol.`
-
-::: details Show answer
-`zolazun duzedal grogel vawebol.`
-
-z-Olazun | [d-spoon | g-_3.spelled] | v-see
-
-A label is a digit string, marker **`ro`**; **`ra`** counts three spoons.
-:::
-
-**2.** *a third of the pills* `zobebulx grugel.` or `zobebulx gragel.`
+**1.** *a third of the pills* `zobebulx grugel.` or `zobebulx gragel.`
 
 ::: details Show answer
 `zobebulx grugel.`

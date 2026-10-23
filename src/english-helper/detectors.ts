@@ -47,13 +47,13 @@ const MODAL_LINKS: Record<string, string[]> = {
 
 const WH_LINKS: Record<string, string[]> = {
   who: ["questions.md#fill-all"],
-  what: ["questions.md#fill-all", "fill-ask-roles.md#what-kind"],
-  which: ["fill-ask-roles.md#what-kind"],
-  when: ["fill-ask-roles.md#when"],
-  where: ["fill-ask-roles.md#where"],
-  whose: ["fill-ask-roles.md#whose"],
-  how: ["fill-ask-roles.md#how"],
-  why: ["fill-ask-roles.md#why"],
+  what: ["questions.md#fill-all", "fill-ask-jobs.md#what-kind"],
+  which: ["fill-ask-jobs.md#what-kind"],
+  when: ["fill-ask-jobs.md#when"],
+  where: ["fill-ask-jobs.md#where"],
+  whose: ["fill-ask-jobs.md#whose"],
+  how: ["fill-ask-jobs.md#how"],
+  why: ["fill-ask-jobs.md#why"],
 };
 
 /** The section that teaches each role letter a content word lands on. */
@@ -156,15 +156,15 @@ export const SAME_ROLE_HOOKS: Readonly<Record<string, string>> = {
 /** Sections for each shape a hook takes in English, keyed by what comes before or after it. */
 export const HOOK_LINKS = {
   /** A preposition + noun with no table row: an extra-noun hook. */
-  extraNoun: ["hooks.md#extra-noun", "ending-grids.md#extra-noun-intermediate", "of-relations.md#locative-relations"],
+  extraNoun: ["hooks.md#extra-noun", "extra-noun-hooks.md#extra-noun-intermediate", "of-relations.md#locative-relations"],
   sameRole: ["english.md#same-slot"],
   /** A hook right after another landmark describes that landmark. */
-  landmark: ["ending-grids.md#extra-noun-intermediate"],
+  landmark: ["extra-noun-hooks.md#extra-noun-intermediate"],
   /** A hook right after a subject or object can describe that noun. */
   onNoun: ["of-relations.md#locative-relations"],
-  fromTo: ["numbers-applied.md#time", "of-relations.md#locative-relations"],
+  fromTo: ["digit-strings.md#time", "of-relations.md#locative-relations"],
   resume: ["discourse-hooks.md#hook-resume"],
-  blank: ["fill-ask-roles.md#where", "discourse-hooks.md#place-indefinites"],
+  blank: ["fill-ask-jobs.md#where", "here-there.md#place-indefinites"],
   /** *everyone at the house*: the hook bounds the join's set. */
   hookedJoin: ["hook-compounds.md#hooked-joins"],
   /** *never since …*, *always until …*: the hook bounds a restrictor's times. */
@@ -183,7 +183,7 @@ const BOUNDED_JOIN: Readonly<Record<string, string>> = {
   anyone: "or", anybody: "or", anything: "or",
   nobody: "al", nothing: "al",
 };
-/** The extra-noun hook a preposition names, as written before the seam (`m` for a frame; ending-grids.md#extra-noun-intermediate). */
+/** The extra-noun hook a preposition names, as written before the seam (`m` for a frame; extra-noun-hooks.md#extra-noun-intermediate). */
 const SEAM_HOOK: Readonly<Record<string, string>> = {
   in: "a", inside: "a", amid: "am", among: "am", on: "ao", over: "aom", at: "o", near: "om", by: "om",
   toward: "oe", towards: "oe", from: "u", "away from": "um", "out of": "ua", through: "uo",

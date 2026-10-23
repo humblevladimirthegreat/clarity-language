@@ -27,7 +27,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *cry* | `vagamul` |
 | *swim* | `vazuvel` |
 | *climb* | `vuguvel` |
-| *fog* | `ovulul` |
 | *therefore* | `xahem` |
 | *tent* | `edehal` |
 | *bucket* | `obowal` |
@@ -212,14 +211,14 @@ The lesser bid sets the limit, so the talk lasts a few minutes.
 **Rule:** [Conversation length](compound-families.md#conversation-length)
 :::
 
-**6.** `yol ol bar zahelan vuhohol.`
+**6.** `yol dugedol dar.`
 
 ::: details Show answer
-y-question | [at | b-wh] | z-Ahelan | v-sit
+y-question | [d-cookie | d-wh]
 
-*Where does Ahelan sit?*
+*Which cookie?*
 
-**Rule:** [Where?](fill-ask-roles.md#where)
+**Rule:** [Fill-ask arity](fill-ask-roles.md#fill-ask-arity)
 :::
 
 #### Pick one {#intermediate-pick-one}
@@ -248,16 +247,16 @@ After the `/b/` of a host, a plain adjective describes that extra noun; right af
 **Rule:** [Complex chaining](left-bound.md#complex-chaining)
 :::
 
-**3.** *Ahelan, please don't cry.* `yahelan yum vagamul.` or `yahelan yul vagamul.`
+**3.** *Olazun sees a sandwich!* (strong feeling about the whole sentence) `! zolazun dedal vawebol.` or `yel zolazun dedal vawebol.`
 
 ::: details Show answer
-`yahelan yum vagamul.`
+`! zolazun dedal vawebol.`
 
-y-Ahelan | y-soft-prohibition | v-cry
+! | z-Olazun | d-sandwich | v-see
 
-**-m** asks softly; **`yul`** is a firm *don't*.
+`!` marks strong feeling about the sentence; **`yel`** would command Olazun to see it.
 
-**Rule:** [Speech act: firm and soft](speech-acts.md#speech-act)
+**Rule:** [Tone marks](speech-acts.md#tone-marks)
 :::
 
 **4.** *Olazun and Ahelan each cook three cookies.* `zolazun zahelan zal vuguyel dugedolx gragel.` or `zolazun zahelan zal vuguyelx dugedolx gragel.`
@@ -284,16 +283,16 @@ The tag **`yol yuel`** invites a correction; **`yol yael`** leans toward agreeme
 **Rule:** [Tags: asking for an answer](polar-inventory.md#tags)
 :::
 
-**6.** *Olazun climbs through the fog.* `zolazun vuguvel uol bovulul.` or `zolazun vuguvel ual bovulul.`
+**6.** *Everyone from Uzozen through Ahelan sits.* `zuzozen oel zahelan vuhohol.` or `zuzozen zahelan zal vuhohol.`
 
 ::: details Show answer
-`zolazun vuguvel uol bovulul.`
+`zuzozen oel zahelan vuhohol.`
 
-z-Olazun | v-climb | [through | b-fog]
+z-Uzozen | through | z-Ahelan | v-sit
 
-**`uol`** passes through the fog; **`ual`** is *out of* it.
+**`oel`** names the range; **`zal`** is only the two ends.
 
-**Rule:** [Extra noun: stacked vowels](ending-grids.md#extra-noun-intermediate)
+**Rule:** [Ranges](ending-grids.md#ranges)
 :::
 
 **7.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyel thobather blwazer.` or `zahelan vuguyel thobathor blwazer.`

@@ -1528,7 +1528,7 @@ class AgebonSentenceParser extends CstParser {
       1,
       heads.map(({ type, label }, i) => ({ ALT: () => this.consume(i + 1, type, label ? { LABEL: label } : undefined) })),
     );
-    // A `gl-` adjective leans on the next noun, so it ends this package (left-bound.md#left-bound-adjectives).
+    // A `gl-` adjective leans on the next noun, so it ends this package (left-bound-adjectives.md#left-bound-adjectives).
     this.trailingAdjs(1);
     if (tag && tagged === "optional") this.OPTION3(() => this.CONSUME(tag, { LABEL: "tag" }));
     if (tag && tagged === "required") this.CONSUME2(tag, { LABEL: "tag" });
@@ -1557,7 +1557,7 @@ class AgebonSentenceParser extends CstParser {
    * - `gLone…`: an adjective unit of its own ({@link GAdj}); `gShared…` / `gPackage` (any shape): the adjective a noun
    *   join shares ({@link GShareable}).
    * - `gListItem` / `gRespItem`: an item of a joined `/ɡ/` list, where a plain adjective after its `/b/` is the next item.
-   * - `glPackage`: a `gl-` adjective, which leans on the noun or call after it (left-bound.md#left-bound-adjectives).
+   * - `glPackage`: a `gl-` adjective, which leans on the noun or call after it (left-bound-adjectives.md#left-bound-adjectives).
    */
   public gPackageOpen = this.gPackageRule("gPackageOpen", GPlain, "open");
   public gPackageClosed = this.gPackageRule("gPackageClosed", GPlain, "closed");
@@ -2045,7 +2045,7 @@ const GL_TARGET_HEADS: [GlTarget, TokenType[]][] = [
 ];
 
 /**
- * A `gl-` adjective leans on the word after it (left-bound.md#left-bound-adjectives), past its own hosted `/b/` (with the
+ * A `gl-` adjective leans on the word after it (left-bound-adjectives.md#left-bound-adjectives), past its own hosted `/b/` (with the
  * list that fills it and its amount) and the plain adjectives that describe that `/b/` (`glugol bazawan gugol zodogal`).
  */
 function glTypeAt(tokens: IToken[], at: number): TokenType | undefined {

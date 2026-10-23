@@ -48,7 +48,7 @@ export function plainTitle(title: string): string {
  */
 export type SuggestionChip = { tier: Tier; emoji?: string; form?: string; copy?: boolean; note: string; links: string[]; phrase?: string; example?: SectionExample };
 
-/** An alias's two words: `-l \`gebevol\` "pray" · -m \`gebevom\` "gratitude"`. */
+/** An alias's two words: `-l` *ladybug* · `-m` *luck*. */
 function sideWordsNote(s: RootSuggestion): string | undefined {
   if (!s.sideWords?.length) return undefined;
   return `a search word; pick the sense: ${s.sideWords.map((w) => `-${w.side === "concrete" ? "l" : "m"} \`${w.word}\` "${w.sense}"`).join(" · ")}`;

@@ -234,11 +234,11 @@ describe("searchLexicon", () => {
     assert.equal(hit.posEnglish.concrete.v, "see");
   });
 
-  it("finds nose metaphor packing intuit without treating it as literal see", () => {
-    const results = searchLexicon(index, rows, "intuit", { limit: 20, overlays, overlayIndex });
-    const hit = results.find((r) => r.concrete === "nose");
-    assert.ok(hit, "expected nose among intuit results");
-    assert.equal(hit.posEnglish.abstract.v, "intuit");
-    assert.equal(hit.posEnglish.concrete.v, "smell");
+  it("finds raccoon metaphor packing steal without treating it as a concrete verb", () => {
+    const results = searchLexicon(index, rows, "steal", { limit: 20, overlays, overlayIndex });
+    const hit = results.find((r) => r.concrete === "raccoon");
+    assert.ok(hit, "expected raccoon among steal results");
+    assert.equal(hit.posEnglish.abstract.v, "steal");
+    assert.equal(hit.posEnglish.concrete.v, undefined);
   });
 });

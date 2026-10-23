@@ -24,7 +24,7 @@ Beginner used **`hewom`** / **`gewom`** for *like*: the event or thing resembles
 
 ### Locative relations {#locative-relations}
 
-Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extra-noun hooks](ending-grids.md#extra-noun-intermediate). To say where someone moves from and to, use one hook for each landmark (*from* one, *toward* another), and write the **source** before the **goal**.
+Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extra-noun hooks](extra-noun-hooks.md#extra-noun-intermediate). To say where someone moves from and to, use one hook for each landmark (*from* one, *toward* another), and write the **source** before the **goal**.
 
 > `zuzozen ul buyahel vowurel oel bedavel.`
 >
@@ -165,56 +165,11 @@ After a join, `gobem` and `gaham` bound the set the join covers, as SHARED words
 
 **Compare with:**
 
-- Plain *Uzozen's*, with no particular tie, is the hook [`em`](ending-grids.md#genitive) (`zudozol em buzozen`). Ownership is `gogunum` + `/b/` ([joins](rank-joins.md#scope-fence-p-join)). A need from [sakes](sakes.md) on `/ɡ/` also says the thing is the speaker's.
+- Plain *Uzozen's*, with no particular tie, is the hook [`em`](extra-noun-hooks.md#genitive) (`zudozol em buzozen`). Ownership is `gogunum` + `/b/` ([joins](rank-joins.md#scope-fence-p-join)). A need from [sakes](sakes.md) on `/ɡ/` also says the thing is the speaker's.
 - Place *in* is the hook `al`; path *from* is the hook `ul` ([locative relations](#locative-relations)).
 - *A house like Uzozen’s* is [simile](relations.md#similative) (`gewom`), not *made of*. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`geham`).
 - `gobem` is a part that belongs to the thing's structure (a bone of the body); `gozowum` is a piece taken off it (a slice of bread).
 - *From* as the origin of a whole kind (`#e-xROOT`) is a numeric prefix, not this *from*, which is about one particular thing.
-
-### Social relations (*Uzozen's friend*, *boss*) {#social-relations}
-
-English *'s* also names a social tie (*Uzozen's friend*, *Uzozen's boss*). Put the root for the tie on `/ɡ/` with **-m** (the abstract sense), and put the other person in a `bl-` word right after it, as with the *of* relations. `/b/` is the person the tie points to.
-
-> `zolazun gumayam bluzozen.`
->
-> z-Olazun | [g-companionship | bl-Uzozen]
->
-> "Olazun is Uzozen's friend."
-
-> `zuzozen dolazun gugobem bluzozen vawebol.`
->
-> z-Uzozen | [d-Olazun | [g-leadership | bl-Uzozen]] | v-see
->
-> "Uzozen sees Olazun, Uzozen's boss."
-
-With no `bl-` word after a joined subject, the tie points at the other members, as with `gewom` ([similative](relations.md#similative)). The other party is left out.
-
-> `zuzozen zolazun zal gumayam.`
->
-> [z-Uzozen | z-Olazun | z-and | g-companionship]
->
-> "Uzozen and Olazun are friends."
-
-Any root whose abstract sense is a tie works this way (`gohuyam` *partner of*, `gawom` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with **`o`**: after `zolazun gumayam bluzozen`, `zwabumayar` is *the other party of that friendship* (Uzozen).
-
-<!-- cheat-sheet: linking-clauses -->
-| Agebon | Use | English | Same root as |
-|--------|-----|---------|--------------|
-| **`gumayam`** + `/b/` | companion of `/b/` | *friend of* | `umayal` *Mrs Claus* |
-| **`gugobem`** + `/b/` | the one `/b/` answers to | *boss of* | `ugobel` *crown* |
-| **`gohuyam`** + `/b/` | partner of `/b/` | *partner of* | `ohuyal` *holding hands* |
-| **`gobolom`** + `/b/` | the one `/b/` looks after | *in the care of* (*Uzozen's patient*, *team*) | `obolol` *house plant* |
-
-A tie of care (*Uzozen's patient*, *Uzozen's team*) is **`gobolom`**: `/b/` looks after the person. It says Uzozen is responsible for them, not that Uzozen owns or uses them. (cue: 🪴 a house plant needs someone to tend it)
-
-> `zolazun gobolom bluzozen.`
->
-> z-Olazun | [g-tending | bl-Uzozen]
->
-> "Olazun is in Uzozen's care."
-
-**Compare with:** plain *Uzozen's*, with the tie left unsaid, is the hook [`em`](ending-grids.md#genitive). Ownership is `gogunum`. *Part of* is `gobem`.
-
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -227,7 +182,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *station* | `uyahel` | 🚉 |
 | *house* | `ahehal` | 🏠 |
-| *companionship* | `gumayam` | 🤶 from *Mrs Claus*: a companion at your side |
 | *exactly-like* | `hewol` | 🪞 from *mirror*: **-l** for an exact match, **-m** for *like* |
 | *between* | `hedam` | 🥪 from *sandwich*: the filling sits between two sides |
 | *across* | `hohem` | 🌉 from *bridge*: a bridge spans the gap |
@@ -292,15 +246,7 @@ z-Uzozen | v-sit | [h-between | [bl-luggage | bl-train | b-and]]
 z-Ahelan | [d-teapot | [g-contents | bl-wine]] | v-see
 :::
 
-**5.** *Ahelan is Olazun's friend.*
-
-::: details Show answer
-`zahelan gumayam blolazun.`
-
-z-Ahelan | [g-companionship | bl-Olazun]
-:::
-
-**6.** *Olazun runs across the station.*
+**5.** *Olazun runs across the station.*
 
 ::: details Show answer
 `zolazun varuvel hohem bluyahel.`
@@ -342,15 +288,7 @@ z-luggage | [g-exactly-like | bl-Olazun]
 *Luggage just like Olazun's.*
 :::
 
-**5.** `zuzozen zahelan zal gumayam.`
-
-::: details Show answer
-[z-Uzozen | z-Ahelan | z-and | g-companionship]
-
-*Uzozen and Ahelan are friends.*
-:::
-
-**6.** `zolazun debodol gozowum vonebol.`
+**5.** `zolazun debodol gozowum vonebol.`
 
 ::: details Show answer
 z-Olazun | [d-bread | g-division] | v-smell

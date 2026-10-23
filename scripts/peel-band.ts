@@ -96,7 +96,7 @@ function rewriteTargets(): string[] {
       if (statSync(full).isDirectory()) {
         if (SKIP_DIRS.has(name)) continue;
         stack.push(full);
-      } else if (/\.(?:md|ts|vue|csv|tsv)$/.test(name) && !name.startsWith("peel-band")) {
+      } else if (/\.(?:md|ts|vue|csv|tsv)$/.test(name) && !/^(?:peel-band|peel-headings)/.test(name)) {
         out.push(full);
       }
     }

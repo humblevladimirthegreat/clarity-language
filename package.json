@@ -40,7 +40,8 @@
     "english-helper-eval": "tsx scripts/english-helper-eval.ts",
     "english-helper-wordnet": "tsx scripts/english-helper-wordnet.ts",
     "flashcards": "tsx scripts/flashcards.ts",
-    "peel-band": "tsx scripts/peel-band.ts"
+    "peel-band": "tsx scripts/peel-band.ts",
+    "peel-headings": "tsx scripts/peel-headings.ts"
   },
   "engines": {
     "node": ">=24"

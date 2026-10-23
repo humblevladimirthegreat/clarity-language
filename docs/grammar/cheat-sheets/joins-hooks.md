@@ -19,7 +19,7 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | **o** ≈ one | *pick one* | [*instead*](../hooks.md#instead) | *at* / *near* |
 | **e** ≈ order | rank: first matters most | [*or rather*](../hooks.md#rather) | *for* / *used by* |
 | **u** ≈ undo | *not* / *neither* / *none of* | [*except*](../hooks.md#except) | *from* / *away from* |
-| **ao** | [*and/or*](../rank-joins.md#exclusivity-and-denying-a-whole-list) (at least one) | | [*on* / *over*](../ending-grids.md#extra-noun-intermediate) |
+| **ao** | [*and/or*](../rank-joins.md#exclusivity-and-denying-a-whole-list) (at least one) | | [*on* / *over*](../extra-noun-hooks.md#extra-noun-intermediate) |
 | **ua** | [*everything but*](../joins.md#everything-ua); alone *everything* | [range](../ending-grids.md#ranges): strictly between | *out of* / *out from among* |
 | **uo** | [*anything but*](../rank-joins.md#invert-u-stacks) | | *through* / *by way of* |
 | **ae** | [in order](../rank-joins.md#sequence-ae): *A, then B* | | *using* / *by* |
@@ -47,7 +47,7 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | **-m** | [open](../joins.md#and-lists-a): *(and possibly more)*; [alone](../joins.md#standalone-phrase), *as far as I know* | B |
 | **-r** | [one unnamed member](../joins.md#unspecified-member-r-phrase) (*something*, *someone*); one vowel only | B |
 | **-rx** | [an unnamed group](../joins.md#unspecified-member-r-phrase) (`zarx` *some ones*); `/z/` `/d/` `/b/` only | B |
-| **-n** | `/z/` `/d/` `/b/`: [a named list](../join-islands.md#named-list); `/x/`: [sequence](../join-across-roles.md#clause-sequence); `/v/`: [join-act verb](../join-across-roles.md#join-act-verbs); `/ɡ/` `/h/`: [join-relation](../join-across-roles.md#join-relations) | I–A |
+| **-n** | `/z/` `/d/` `/b/`: [a named list](../join-islands.md#named-list); `/x/`: [sequence](../clause-sequence.md#clause-sequence); `/v/`: [join-act verb](../join-across-roles.md#join-act-verbs); `/ɡ/` `/h/`: [join-relation](../join-across-roles.md#join-relations) | I–A |
 
 ### How many items {#arity}
 
@@ -95,7 +95,7 @@ A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `x
 
 ## Joins across roles {#across-roles}
 
-The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, they become [join-act verbs](../join-across-roles.md#join-act-verbs), [join-relations](../join-across-roles.md#join-relations) (always followed by one `/b/`), and [clause sequence](../join-across-roles.md#clause-sequence) words. All Intermediate.
+The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, they become [join-act verbs](../join-across-roles.md#join-act-verbs), [join-relations](../join-across-roles.md#join-relations) (always followed by one `/b/`), and [clause sequence](../clause-sequence.md#clause-sequence) words. Sequence is Beginner; join-act and join-relations are Intermediate.
 
 | Vowel | Verb (`/v/` + object) | Relation (`/ɡ/` / `/h/` + `/b/`) | Between clauses (`/x/`) |
 |-------|------------------------|----------------------------------|--------------------------|
@@ -165,11 +165,11 @@ Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting.
 | `ul` *from*, [*since*](../hooks.md#since) | `um` *away from* | `ur` *from there* | `owurelul` *leave* | `guxahehal` *from the house* | `gumxahehal` *away from the house* |
 | `ual` *out of* | `uam` *out from among* | | `owurelual` *exit* | `guaxowulal` *out of the water* | `guamxayayal` *picked from the group* |
 | `uol` *through* | `uom` *by way of* | `uor` *through there* | `owureluol` *traverse* | `guoxohalal` *transoceanic* | `guomxohel` *bridge-routed* |
-| `el` *for* | `em` [*used by*](../ending-grids.md#genitive) (*B's*) | `er` *for it* | `owurelel` *serve* | `gexahehal` *household* | `gemxayayal` *group-owned* |
+| `el` *for* | `em` [*used by*](../extra-noun-hooks.md#genitive) (*B's*) | `er` *for it* | `owurelel` *serve* | `gexahehal` *household* | `gemxayayal` *group-owned* |
 | `ael` *using* | `aem` *by* | `aer` *with it* | `owurelael` *wield* | `gaexowulal` *water-powered* | `gaemxorahel` *road-borne* |
 | `uel` *against* | `uem` *contrary to* | | `owureluel` *oppose* | `guexohalal` *sea-facing* | `guemxewulel` *headwind* |
 
-Stage: `al` `ol` `ul` `el` **-l** are Beginner; the rest of the first three columns Intermediate, with abstract landmarks; fused forms and prefixes Advanced.
+Stage: one-vowel extra-noun **-l** (`al` `ol` `ul` `el`) Beginner on [hooks](../hooks.md#extra-noun); two-vowel extra-noun and `em` Beginner on [extra nouns](../extra-noun-hooks.md#extra-noun-intermediate); abstract landmarks Intermediate; fused forms and prefixes Advanced.
 
 ### Hooked joins {#hooked-joins}
 
@@ -196,14 +196,14 @@ Role letter, the hook's vowels (**`m`** for its frame, **`r`** to point back), *
 | Agebon | English | Stage |
 |--------|---------|-------|
 | `ul barl` + clause | [*since*](../hooks.md#since) (that happened) | B |
-| `ol bar` | [*somewhere*](../discourse-hooks.md#place-indefinites); in a question, *where?* | I |
-| `ol bur` / `ol bal` / `ol bual` | [*somewhere else*](../discourse-hooks.md#place-indefinites) / *nowhere* / *everywhere* | I |
-| `ael bar` (in a question) | [*with what?*](../ending-grids.md#extra-noun-intermediate) | I |
-| `om buwon` / `om bawan` | [*here*, *this*](../discourse-hooks.md#deixis) / *there by you*, *that* | I |
-| `om bayan` / `um bayan` | [*here with us*](../discourse-hooks.md#deixis) / *over there* | I |
-| `vavobel oel buwon` | [*comes to me*](../discourse-hooks.md#deixis) | I |
-| `velobal dobogal oel buwon` | [*brings me the package*](../discourse-hooks.md#deixis) | I |
-| `zudozol em buwon` | [*my dog*](../ending-grids.md#genitive) (in my use) | I |
+| `ol bar` | [*somewhere*](../here-there.md#place-indefinites); in a question, *where?* | B |
+| `ol bur` / `ol bal` / `ol bual` | [*somewhere else*](../here-there.md#place-indefinites) / *nowhere* / *everywhere* | B |
+| `ael bar` (in a question) | [*with what?*](../fill-ask-jobs.md#how) | B |
+| `om buwon` / `om bawan` | [*here*, *this*](../here-there.md#deixis) / *there by you*, *that* | B |
+| `om bayan` / `um bayan` | [*here with us*](../here-there.md#deixis) / *over there* | B |
+| `vavobel oel buwon` | [*comes to me*](../here-there.md#deixis) | B |
+| `velobal dobogal oel buwon` | [*brings me the package*](../here-there.md#deixis) | B |
+| `zudozol em buwon` | [*my dog*](../extra-noun-hooks.md#genitive) (in my use) | B |
 
 ## Don't mix up {#dont-mix-up}
 
@@ -213,7 +213,7 @@ Role letter, the hook's vowels (**`m`** for its frame, **`r`** to point back), *
 | `zoxual blahehal vezuvol` *everyone at the house sleeps* ([who counts](../hook-compounds.md#hooked-joins)) | | `zual vezuvol ol bahehal` *everyone sleeps at the house* (where it happens) |
 | `zahunam gan bluzozen` *a team including Uzozen* ([join-relation](../join-across-roles.md#join-relations)) | | `zahunam al zuzozen` *the team, including Uzozen* (afterthought) |
 | `zuzozen zahelan zal` *the two of them* ([vs a range](../ending-grids.md#ranges)) | | `zuzozen oel zahelan` *Uzozen through Ahelan*; `zuzozen zahelan zael` *Uzozen, then Ahelan* |
-| hook `oel` *toward X* ([where a path ends](../ending-grids.md#extra-noun-intermediate)) | | `zael` + X *start with X* ([where it starts](../rank-joins.md#sequence-ae)) |
-| `xan` *and then* ([what happened next](../join-across-roles.md#clause-sequence)) | | `xael` ([the order is part of the claim](../join-across-roles.md#vp-clause-forms): a recipe) |
+| hook `oel` *toward X* ([where a path ends](../extra-noun-hooks.md#extra-noun-intermediate)) | | `zael` + X *start with X* ([where it starts](../rank-joins.md#sequence-ae)) |
+| `xan` *and then* ([what happened next](../clause-sequence.md#clause-sequence)) | | `xael` ([the order is part of the claim](../join-across-roles.md#vp-clause-forms): a recipe) |
 | `vun` [*refuses*](../join-across-roles.md#join-act-verbs) | | `vuan` *excludes* |
 | `ol …` *Instead, …* ([replaces the last claim](../hooks.md#discourse-hooks)) | | `or …` *Anyway, …* ([back to the main line](../discourse-hooks.md#hook-resume)) |

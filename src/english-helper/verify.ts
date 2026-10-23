@@ -2,7 +2,7 @@
  * `--verify`: the parser's existing checks on an Agebon draft, to show beside its English: a
  * sentence parse, the lexicon check (`parse.mjs --check-lexicon`), and the morph gloss the
  * Inspect page shows. With the helper data it also lines up each content word's sense with the
- * English word whose suggestions named its root, so a parse that reads *pray* for *grateful*
+ * English word whose suggestions named its root, so a parse that reads *ladybug* for *lucky*
  * shows up before the round trip.
  */
 import type { ClassifyTables } from "../parse/classify.js";
@@ -135,7 +135,7 @@ export function verifyDraft(english: string, agebon: string, tables: ClassifyTab
 
 const ENDING: Record<Side, string> = { concrete: "-l", abstract: "-m" };
 
-/** `gebevol  ebevo -l "pray" (-m "gratitude")  ← *grateful*: a search word for this root; check the sense` */
+/** An alias draft: `-l` on the concrete sense ← *lucky*: a search word for this root; check the sense */
 function wordLine(w: WordSense, width: number): string {
   const otherSide: Side = w.side === "concrete" ? "abstract" : "concrete";
   const other = w.other ? ` (${ENDING[otherSide]} "${w.other}")` : "";

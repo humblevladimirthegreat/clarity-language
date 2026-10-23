@@ -7,7 +7,7 @@ outline: false
 
 # Numbers cheat sheet {#numbers-cheat-sheet}
 
-A quick look at [numbers](../numbers.md), [digitless and exponents](../digitless-exponents.md), and [numbers in use](../numbers-applied.md) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced. Written shorthand is used from two digits up; zero, one digit, or none stays spelled.
+A quick look at [numbers](../numbers.md), [digit-strings and time](../digit-strings.md), [digitless and exponents](../digitless-exponents.md), and [numbers in use](../numbers-applied.md) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced. Written shorthand is used from two digits up; zero, one digit, or none stays spelled.
 
 ## Building a number word {#build}
 
@@ -195,9 +195,9 @@ The digit-string marker `_` holds a phone, room, channel, or serial number, with
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [A code as object](../numbers-applied.md#digit-strings) | `zuzozen d_555,123,4567 vawebol.` | *Uzozen sees 555-123-4567.* | I |
-| [Fields](../numbers-applied.md#code-fields) | `d_2,1,3` | *version 2.1.3* | I |
-| [Plural label](../numbers-applied.md#plural-labels) | `zuzozen vowurel herem bl_90x.` | *Uzozen walked in the ’90s.* | I |
+| [A code as object](../digit-strings.md#digit-strings) | `zuzozen d_555,123,4567 vawebol.` | *Uzozen sees 555-123-4567.* | B |
+| [Fields](../digit-strings.md#code-fields) | `d_2,1,3` | *version 2.1.3* | B |
+| [Plural label](../digit-strings.md#plural-labels) | `zuzozen vowurel herem bl_90x.` | *Uzozen walked in the ’90s.* | B |
 | [Letter code](../numbers-applied.md#letter-codes) | `zuzozen dobebul g_b12 vagedal.` | *Uzozen takes a B12 pill.* | I |
 | [Initials](../initials.md#initials) | `z@_nl` | *the NL* (for `zanaxolazun`) | A |
 
@@ -220,17 +220,17 @@ A digit string under `/h/` with no relation word before it. Clock is `h_…`; a 
 <!-- cheat-sheet: numbers -->
 | Job | How | Stage |
 |-----|-----|-------|
-| [Clock](../numbers-applied.md#time) | digit-string `ro` as bare `/h/`, 24-hour, fields left to right (`h_15,30`, `h_15,30,00`) | I |
-| [Date](../numbers-applied.md#time) | `_` with `oe` (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`) | I |
-| [Day of the week](../numbers-applied.md#time) | ordinal on `olere`, from Monday (`zolerem grebal` *Monday*) | I |
-| [Month or year](../numbers-applied.md#time) | ordinal on `umale`; label on `avuva` (`zavuvam g_1962`) | I |
+| [Clock](../digit-strings.md#time) | digit-string `ro` as bare `/h/`, 24-hour, fields left to right (`h_15,30`, `h_15,30,00`) | B |
+| [Date](../digit-strings.md#time) | `_` with `oe` (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`) | B |
+| [Day of the week](../digit-strings.md#time) | ordinal on `olere`, from Monday (`zolerem grebal` *Monday*) | B |
+| [Month or year](../digit-strings.md#time) | ordinal on `umale`; label on `avuva` (`zavuvam g_1962`) | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [At a time](../numbers-applied.md#time) | `h_15,30 zuzozen vowurel.` | *At 15:30 Uzozen walks.* | I |
-| [In March](../numbers-applied.md#time) | `zuzozen vowurel herem blumalem gregel.` | *Uzozen walks in March.* | I |
-| [In 1962](../numbers-applied.md#time) | `zuzozen vowurel herem blavuvam g_1962.` | *Uzozen walked in 1962.* | I |
-| [From … to](../numbers-applied.md#time) | `zuzozen ul b_9 oel b_17 vowurel.` | *Uzozen walks from 9:00 to 17:00.* | I |
+| [At a time](../digit-strings.md#time) | `h_15,30 zuzozen vowurel.` | *At 15:30 Uzozen walks.* | B |
+| [March](../digit-strings.md#time) | `zumalem gregel` | *March* | B |
+| [A year](../digit-strings.md#time) | `zavuvam g_1962` | *1962* | B |
+| [From … to](../digit-strings.md#time) | `zuzozen ul b_9 oel b_17 vowurel.` | *Uzozen walks from 9:00 to 17:00.* | B |
 
 Digitless `hrol` is *some clock or date*; `hror` asks *when?* *Three times* (`hragel`) is not a clock time.
 
@@ -453,7 +453,7 @@ On a family tree, put the anchor person in a `bl-` word right after the number.
 | [Grandchildren](../initials.md#kin-generations) | `grewadol` | the focus's grandchildren | A |
 | [Aunt or uncle](../initials.md#kin-generations) | `zolazun grewamol bleyol g#1e-1 bluzozen vowurel.` | *Olazun, Uzozen's aunt or uncle, walks.* (a sibling of the first of Uzozen's parents) | A |
 
-Only kin make generations: friends and bosses are [social relations](../of-relations.md#social-relations).
+Only kin make generations: friends and bosses are [social relations](../social-ties.md#social-relations).
 
 ## Don't mix up {#dont-mix-up}
 
@@ -463,7 +463,7 @@ Only kin make generations: friends and bosses are [social relations](../of-relat
 | `gral` *more than one* ([an amount](../numbers.md#more-than-one)) | | `zagozolx` *cats* ([a group, with **-x**](../digitless-exponents.md#digitless)) |
 | `gram` *a few* ([a soft count](../digitless-exponents.md#digitless)) | | `gral` *more than one* ([a firm one](../numbers.md#more-than-one)) |
 | `grar` *how many?* ([a blank](../digitless-exponents.md#how-many)) | | `drager` *those three again* ([a resume, needs a digit](../digitless-exponents.md#digitless)) |
-| `hragel` *three times* ([a factor](../number-markers.md#number-as-adverb-by-marker)) | | `h_15,30` *at 15:30* ([a clock time](../numbers-applied.md#time)) |
+| `hragel` *three times* ([a factor](../number-markers.md#number-as-adverb-by-marker)) | | `h_15,30` *at 15:30* ([a clock time](../digit-strings.md#time)) |
 | `hragel` *three times* ([a count of times](../number-markers.md#number-as-adverb-by-marker)) | | `hregel` *for the third time* ([which time](../number-markers.md#number-as-adverb-by-marker)) |
 | `gredol` *the second* ([from the start](../numbers.md#ordinals)) | | `gruedol` *second from the end* ([from the end](../stacked-markers.md#from-the-end)) |
 | `grewal` *last place* ([the landmark](../special-values.md#special-referential)) | | `grebal` *1st* ([numbered first](../special-values.md#special-referential)) |

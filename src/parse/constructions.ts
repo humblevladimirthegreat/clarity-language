@@ -52,7 +52,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "turnWord.Vocative": { anchor: "speech-moves.md#vocative", summary: "the call or greeting name" },
   "turnWord.Interjection": { anchor: "speech-moves.md#interjections-reactions", summary: "interjection at the left edge" },
   "turnWord.gPackage": { anchor: "speech-moves.md#vocative", summary: "/ɡ/ after a call or reaction describes it (family name, *big surprise*)" },
-  "turnWord.glAdj": { anchor: "left-bound.md#left-bound-adjectives", summary: "gl- adjective before a call or reaction" },
+  "turnWord.glAdj": { anchor: "left-bound-adjectives.md#left-bound-adjectives", summary: "gl- adjective before a call or reaction" },
   "turnWord.W": { anchor: "speech-acts.md#describe-turn-word", summary: "/w/ degree right before a reaction" },
   "leftEdge.Polar": { anchor: "questions.md#polar-stance", summary: "polar stance turn" },
   "leftEdge.W": { anchor: "ending-grids.md#hook-w", summary: "/w/ on a left-edge hook" },
@@ -157,7 +157,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "gCoordPart.gPackage": { anchor: "joins.md#negation-u", summary: "clause-level adjective" },
   "gCoordPart.gJoinClose": { anchor: "joins.md#right-close", summary: "/ɡ/ join after its adjectives" },
   "gCoordPart.standaloneJoin": {
-    anchor: "label-scope.md#classification-packaging",
+    anchor: "fill-ask-jobs.md#what-kind",
     summary: "/ɡ/ join closing the adjective on the noun before it",
   },
   "gJoinClose.W": { anchor: "rank-joins.md#respectively", summary: "respectively /w/ before an adjective join word" },
@@ -339,7 +339,7 @@ export const WORD_PLURAL_CONSTRUCTIONS: Record<Exclude<Pos, "w" | "h" | "th" | "
 };
 
 export const WORD_MISC_CONSTRUCTIONS = {
-  gl: { anchor: "left-bound.md#left-bound-adjectives", summary: "gl- left-bound adjective" },
+  gl: { anchor: "left-bound-adjectives.md#left-bound-adjectives", summary: "gl- left-bound adjective" },
   bl: { anchor: "clause.md#extra-nouns", summary: "bl- hosted extra noun: completes the /ɡ/ /h/ or /th/ word right before it" },
   hookedJoin: {
     anchor: "hook-compounds.md#hooked-joins",
@@ -374,7 +374,7 @@ export const READING_CONSTRUCTIONS = {
   greeting: { anchor: "word-endings.md#greeting", summary: "a named citation said alone: hello / goodbye" },
   verbFirstItem: { anchor: "join-across-roles.md#vp-clause-forms", summary: "words between the subject and the first joined verb: that verb's own" },
   verbSharedNoun: { anchor: "join-across-roles.md#vp-clause-forms", summary: "/d/ or /b/ right after a verb join: every verb's" },
-  fromTo: { anchor: "numbers-applied.md#time", summary: "ul + /b/ + oel + /b/: one from … to unit" },
+  fromTo: { anchor: "digit-strings.md#time", summary: "ul + /b/ + oel + /b/: one from … to unit" },
 } satisfies Record<string, ConstructionEntry>;
 
 /** Tone marks: each mark, and each scope it colors (speech-moves.md § tone marks). */
@@ -407,7 +407,7 @@ export const NUMBER_FEATURE_CONSTRUCTIONS = {
   "marker.scalarNeg": { anchor: "number-markers.md#marker-vowel-referential-identity", summary: "- negative" },
   "marker.ordinalFwd": { anchor: "numbers.md#ordinals", summary: "# ordinal" },
   "marker.ordinalEnd": { anchor: "stacked-markers.md#from-the-end-end-relative-ordinal-marker-ue", summary: "#- ordinal from the end" },
-  "marker.label": { anchor: "number-markers.md#marker-vowel-referential-identity", summary: "_ label / digit string" },
+  "marker.label": { anchor: "digit-strings.md#digit-strings", summary: "_ label / digit string" },
   "marker.negativeLabel": { anchor: "stacked-markers.md#stacked-markers", summary: "#_ negative label" },
   "marker.errorBound": { anchor: "stacked-markers.md#stacked-markers", summary: "+- error bound" },
   digitless: { anchor: "numbers.md#more-than-one", summary: "number with no digits" },
@@ -419,7 +419,7 @@ export const NUMBER_FEATURE_CONSTRUCTIONS = {
   "exp.shortfall": { anchor: "special-values.md#special-referential", summary: "just-short -e-" },
   percent: { anchor: "numbers-applied.md#percent-and-percentage-points", summary: "percent / percentage points" },
   decimal: { anchor: "digitless-exponents.md#exponents", summary: "decimal point" },
-  groups: { anchor: "digitless-exponents.md#group-separator", summary: "more than one digit group" },
+  groups: { anchor: "digit-strings.md#digit-strings", summary: "more than one digit group" },
   code: {
     anchor: "numbers-applied.md#letter-codes",
     summary: "code with letters",
@@ -427,7 +427,7 @@ export const NUMBER_FEATURE_CONSTRUCTIONS = {
       "A `_` code may hold letters as well as digits, read as the letters themselves: `_b12` = B12, `_4b` = 4B, `_v16` = F-16 (Agebon `v`, `b`, `d`, `g`, `z` stand for English f, p, t, k, s). With `@` (`.named`) and only letters it is usually a title's initials (`@_nl` = the NL, short for a long two-root title).",
   },
   calendar: {
-    anchor: "numbers-applied.md#time",
+    anchor: "digit-strings.md#time",
     summary: "calendar ordinal (date)",
     reader: "A date: `_22,7` is day 22 of month 7 (22 July); a third field is the year (`_22,7,2026`).",
   },
@@ -435,7 +435,7 @@ export const NUMBER_FEATURE_CONSTRUCTIONS = {
   "writingMark.@": { anchor: "number-markers.md#number-endings", summary: "@ = -n in writing" },
   "writingMark.=": { anchor: "number-markers.md#number-endings", summary: "= = -r in writing" },
   "pos.v": { anchor: "number-markers.md#number-as-verb-by-marker", summary: "number as verb" },
-  "pos.h": { anchor: "number-markers.md#number-as-adverb-by-marker", summary: "number as adverb" },
+  "pos.h": { anchor: "digit-strings.md#time", summary: "number as adverb" },
   "pos.th": { anchor: "number-markers.md#number-as-stance-by-marker", summary: "number as stance" },
   "pos.y": { anchor: "number-markers.md#number-as-interjection-by-marker", summary: "number as interjection" },
   "pos.x": { anchor: "number-markers.md#number-as-discourse-marker-by-marker", summary: "number as discourse marker" },
@@ -584,23 +584,23 @@ export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "er" | "or" 
   om: { anchor: "hooks.md#closed-and-open-endings", summary: "om instead" },
   ul: { anchor: "hooks.md#except-ul", summary: "ul except" },
   um: { anchor: "hooks.md#closed-and-open-endings", summary: "um except" },
-  aol: { anchor: "ending-grids.md#extra-noun-stacked-vowels-and-loose-m", summary: "aol" },
-  aom: { anchor: "ending-grids.md#extra-noun-stacked-vowels-and-loose-m", summary: "aom" },
-  ael: { anchor: "ending-grids.md#extra-noun-stacked-vowels-and-loose-m", summary: "ael" },
-  aem: { anchor: "ending-grids.md#extra-noun-stacked-vowels-and-loose-m", summary: "aem" },
-  oel: { anchor: "ending-grids.md#extra-noun-stacked-vowels-and-loose-m", summary: "oel" },
-  oem: { anchor: "ending-grids.md#extra-noun-stacked-vowels-and-loose-m", summary: "oem" },
-  ual: { anchor: "ending-grids.md#extra-noun-stacked-vowels-and-loose-m", summary: "ual" },
-  uam: { anchor: "ending-grids.md#extra-noun-stacked-vowels-and-loose-m", summary: "uam" },
-  uol: { anchor: "ending-grids.md#extra-noun-stacked-vowels-and-loose-m", summary: "uol" },
-  uom: { anchor: "ending-grids.md#extra-noun-stacked-vowels-and-loose-m", summary: "uom" },
+  aol: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "aol" },
+  aom: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "aom" },
+  ael: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "ael" },
+  aem: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "aem" },
+  oel: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "oel" },
+  oem: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "oem" },
+  ual: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "ual" },
+  uam: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "uam" },
+  uol: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "uol" },
+  uom: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "uom" },
   uel: {
-    anchor: "ending-grids.md#extra-noun-stacked-vowels-and-loose-m",
+    anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m",
     summary: "uel",
     reader: "`A | outside | B` between two values is a band and everything beyond it: `z-two | outside | z-nine` = below 2 or above 9.",
   },
   uem: {
-    anchor: "ending-grids.md#extra-noun-stacked-vowels-and-loose-m",
+    anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m",
     summary: "uem",
     reader:
       "`[contrary-to | th-…]` = against that one stance (my plan, my wishes). A holder first makes it that person's, as one stance: `[contrary-to | th-CLUES-X | th-plan-itinerary]` = against X's plan, as far as I can tell.",
@@ -713,7 +713,7 @@ export function constructionRegistry(overlays: Iterable<OverlayEntrySource>): Ma
  */
 export const REJECTIONS = {
   verbSharedOwn: { anchor: "join-across-roles.md#vp-clause-forms", summary: "a joined verb with its own object or recipient takes no shared one: say it in that verb's item, or share it and drop the item's own" },
-  genitiveHost: { anchor: "ending-grids.md#genitive", summary: "`em` + `/b/` follows the noun B uses" },
+  genitiveHost: { anchor: "extra-noun-hooks.md#genitive", summary: "`em` + `/b/` follows the noun B uses" },
   turnSeriesCall: { anchor: "speech-moves.md#vocative", summary: "an act or polar series word takes -l / -m / -r, never the call ending -n (`yan`, `yaen`)" },
   polarOrder: { anchor: "questions.md#polar-stance", summary: "a polar word is one answer or one tag: not two in a row, and not before an act word (an answer and then a question are two turns)" },
   tagBody: { anchor: "polar-inventory.md#tags", summary: "a tag (`yol` and a polar word) is a turn of its own: end it with a period (`zuzozen vowurel. yol yael.`)" },
@@ -775,7 +775,7 @@ export const REJECTIONS = {
   predicateAfterVerb: { anchor: "predication.md#classification", summary: "a /ɡ/ word right after the verb has no reading (no depictive or resultative); say the state in its own sentence, with `herem blarl`, or with the adjective as a verb under `thewem`" },
   blNoHost: { anchor: "clause.md#extra-nouns", summary: "a bl- word completes the /ɡ/ /h/ or /th/ word right before it, so it needs one there (`hewom bluzozen`); a recipient is a plain /b/ (`bolazun`)" },
   blListItem: { anchor: "clause.md#extra-nouns", summary: "in a hosted list every /b/ item takes bl- (`hazam bludehal bluzedel bal`); the join word does not" },
-  glNoNoun: { anchor: "left-bound.md#left-bound-adjectives", summary: "a gl- adjective describes the next noun, so a noun must follow it (`glubulel zudozol`); with no noun after it, use a plain /ɡ/ word" },
+  glNoNoun: { anchor: "left-bound-adjectives.md#left-bound-adjectives", summary: "a gl- adjective describes the next noun, so a noun must follow it (`glubulel zudozol`); with no noun after it, use a plain /ɡ/ word" },
   nameInstanceSlot: { anchor: "proper-names.md#name-instance--ln", summary: "-ln (span ^@) is one thing a name applies to: it fills /z/ /d/ /b/ or stands as a citation, never on /ɡ/ /v/ /h/ /w/ /th/ /x/ /y/, and never on a pronoun root" },
   standInRole: { anchor: "sentence-linkers.md#stand-in", summary: "stand-ins (-rl -rm -rth -rn) fill /z/ /d/ /b/ only; there is no stand-in on /ɡ/ /h/ /w/ /th/ (such is whole-stem -r, like that is `hewom blarth`)" },
   standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is `blarl` after a listed pole, a clues / pattern channel, like (`hewom`), or an /h/ hooked join" },
@@ -797,7 +797,7 @@ export const REJECTIONS = {
   tagPlural: { anchor: "tag-pronouns.md#tag-pronouns", summary: "a tag takes -x only on -r or -n (`zwarx`, `zwanx`, A and associates); to tag a group, tag its plural phrase (`zudozolx zwal`)" },
   joinPlural: { anchor: "joins.md#unspecified-member-r-phrase", summary: "a join takes -x after -r on /z/ /d/ /b/ (`zarx`, some ones), or on /v/ for one shared act (`varx`)" },
   holderSeamW: { anchor: "evidentiality.md#holder", summary: "a tag is never a holder: the seam letter before `w` would end a syllable mid-word (D-56); for a holder you don't name, name the kind of person (`theyemeyol`)" },
-  numberPlural: { anchor: "numbers-applied.md#plural-labels", summary: "a number takes -x only as a plural label (z_90x)" },
+  numberPlural: { anchor: "digit-strings.md#plural-labels", summary: "a number takes -x only as a plural label (z_90x)" },
   resumeUnbound: { anchor: "pronouns.md#resume-r", summary: "an -r resume spells an earlier word's whole stem, or a lexicon stem" },
   pointerSlot: { anchor: "pronouns.md#role-pointers", summary: "a role pointer fills /z/, /d/, or /b/; in a holder seam or a viewpoint lateral, resume the person instead" },
   pointerUnbound: { anchor: "pronouns.md#role-pointers", summary: "a role pointer needs an earlier predicate with that role filled (o: with someone else in it; u: with that role unsaid)" },

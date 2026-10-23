@@ -8,7 +8,7 @@ Each level ends with one review. It mixes every page of that level, one item per
 
 Every word in a review was already met in an earlier practice, so there are no new words.
 
-The Beginner review covers every Beginner section, from word endings to plans.
+The Beginner review covers every Beginner section, from word endings to clock time.
 
 ### Practice {#beginner-practice}
 
@@ -52,6 +52,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *punch* | `vanuvul` |
 | *wood* | `ulel` |
 | *basket* | `abowal` |
+| *sit* | `vuhohol` |
+| *companionship* | `gumayam` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
@@ -109,6 +111,36 @@ z-Ahelan | v-sing | [th-if | bl-wind]
 **Rule:** [If](causation.md#if)
 :::
 
+**6.** *An angry Olazun runs.* (*angry* first)
+
+::: details Show answer
+`glunemul zolazun varuvel.`
+
+[gl-angry | z-Olazun] | v-run
+
+**Rule:** [Adjectives before the noun](left-bound-adjectives.md#left-bound-adjectives)
+:::
+
+**7.** *Ahelan is Olazun's friend.*
+
+::: details Show answer
+`zahelan gumayam blolazun.`
+
+z-Ahelan | [g-companionship | bl-Olazun]
+
+**Rule:** [Social relations](social-ties.md#social-relations)
+:::
+
+**8.** *Uzozen punches, then Olazun screams.*
+
+::: details Show answer
+`zuzozen vanuvul xan zolazun varemul.`
+
+[z-Uzozen | v-punch | x-and-then | z-Olazun | v-scream]
+
+**Rule:** [Sequence](clause-sequence.md#sequence)
+:::
+
 #### Agebon → English {#beginner-agebon-to-english}
 
 **1.** `zahelan vawebol darl zolazun vebemel.`
@@ -159,6 +191,26 @@ z-Olazun | th-MAY | v-fight
 *Olazun may be fighting.*
 
 **Rule:** [MAY](knowing.md#may)
+:::
+
+**6.** `yol ol bar zahelan vuhohol.`
+
+::: details Show answer
+y-question | [at | b-wh] | z-Ahelan | v-sit
+
+*Where does Ahelan sit?*
+
+**Rule:** [Where?](fill-ask-jobs.md#where)
+:::
+
+**7.** `zedal om buwon.`
+
+::: details Show answer
+z-sandwich | [near | b-speaker]
+
+*The sandwich is here.* (near me)
+
+**Rule:** [Here and there](here-there.md#deixis)
 :::
 
 #### Pick one {#beginner-pick-one}
@@ -259,6 +311,30 @@ A wood basket is a kind of basket, so *basket* comes last; `zabowaxulel` would b
 **Rule:** [Two roots, one word](compounds.md#two-roots-one-word)
 :::
 
+**9.** *Ahelan, please don't run.* `yahelan yum varuvel.` or `yahelan yul varuvel.`
+
+::: details Show answer
+`yahelan yum varuvel.`
+
+y-Ahelan | y-soft-prohibition | v-run
+
+**-m** asks softly; **`yul`** is a firm *don't*.
+
+**Rule:** [Speech act: firm and soft](firm-soft.md#speech-act)
+:::
+
+**10.** *Olazun fights against a guard.* `zolazun vavuvul uel bagayul.` or `zolazun vavuvul ual bagayul.`
+
+::: details Show answer
+`zolazun vavuvul uel bagayul.`
+
+z-Olazun | v-fight | [against | b-guard]
+
+**`uel`** is *against*; **`ual`** is *out of* the guard.
+
+**Rule:** [Extra noun: stacked vowels](extra-noun-hooks.md#extra-noun-intermediate)
+:::
+
 #### Fix it {#beginner-fix-it}
 
 **1.** *Ahelan, don’t run!* <!-- lint: error -->`yahelan yel varuvel.`
@@ -283,6 +359,20 @@ z-Olazun | g-police
 **`gorol`** says Olazun and the police are one and the same; to put Olazun in a kind, the kind word goes on `/ɡ/`.
 
 **Rule:** [Kind / role](predication.md#classification)
+:::
+
+**3.** *At 15:30 Olazun runs.* <!-- lint: error -->`hragel zolazun varuvel.`
+
+::: details Show answer
+`h_15,30 zolazun varuvel.`
+
+🔊 `hrobazathegemol zolazun varuvel.`
+
+h-_15,30 | z-Olazun | v-run
+
+A clock time is a digit string under `/h/`; **`hragel`** is *three times*.
+
+**Rule:** [Time](digit-strings.md#time)
 :::
 
 #### What changes {#beginner-what-changes}

@@ -88,8 +88,8 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
   });
 
   it("spells an alias both ways", () => {
-    const grateful = slots("I am grateful.").find((s) => s.text === "grateful")!;
-    const alias = grateful.suggestions.find((s): s is RootSuggestion => s.kind === "lexicon" && s.tier === "alias")!;
+    const lucky = slots("I am lucky.").find((s) => s.text === "lucky")!;
+    const alias = lucky.suggestions.find((s): s is RootSuggestion => s.kind === "lexicon" && s.tier === "alias")!;
     assert.equal(alias.word, undefined);
     assert.deepEqual(
       alias.sideWords!.map((w) => [w.side, w.word]),
@@ -109,7 +109,7 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
     const my = slots("My cat runs.").find((s) => s.text === "My")!;
     const possessive = my.suggestions.find((s) => s.kind === "detector" && s.id === "possessive-pronoun");
     assert.ok(possessive?.kind === "detector" && possessive.example);
-    assert.equal(possessive.example.link, "ending-grids.md#genitive");
+    assert.equal(possessive.example.link, "extra-noun-hooks.md#genitive");
     assert.match(possessive.example.english, /\bmy\b/i);
   });
 

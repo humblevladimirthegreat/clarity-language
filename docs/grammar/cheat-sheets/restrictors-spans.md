@@ -80,7 +80,7 @@ With several occasions before `huel`, the last listed is the first choice.
 | [On an adjective, one of two](../more-occasions.md#more-occasions) | `zuzozen werulal wanurul wol guzemol.` | *sleepy either when it rains or at night* (not both) | I |
 | [A whole clause as the occasion](../more-occasions.md#occasions-vs-a-dependent-when): `blarl` | `zahelan vezuyol thohom blarl zuzozen vowurel.` | *Ahelan sings if Uzozen walks.* | I |
 
-Use a restrictor when each occasion is a word; use `blarl` when the occasion is a full clause. To ask *when?*, see [When?](../fill-ask-roles.md#when).
+Use a restrictor when each occasion is a word; use `blarl` when the occasion is a full clause. To ask *when?*, see [When?](../fill-ask-jobs.md#when).
 
 ## Setting a chunk apart {#spans}
 

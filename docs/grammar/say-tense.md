@@ -206,7 +206,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 | *continue* / *keep doing* | **`hawum`** (*still*) |
 | *subsequently* / *after* | **`halam`** + `/b/`: `halam blolazun` |
 | *prior to* | **`habam`** + `/b/`: `habam blolazun` |
-| *in March* / *in 1962* / *on the 12th* | **`herem`** + a month or year in `/b/` (`herem blumalem gregel`, `herem blavuvam g_1962`); a day alone is `h_#12` ([time](numbers-applied.md#time)) |
+| *in March* / *in 1962* / *on the 12th* | **`herem`** + a month or year in `/b/` (`herem blumalem gregel`, `herem blavuvam g_1962`); a day alone is `h_#12` ([time](digit-strings.md#time)) |
 
 > `zuzozen theyem bluzurem gramol vowurel.`
 >
@@ -253,7 +253,7 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 | *may*, *is allowed to* | a rule / a person / no objection | **`hwaval`** / **`hwavam`** / **`hwavar`** |
 | *may not* | forbidden | **`hwavul`** / **`hwavum`** / **`hwavur`** |
 | *Can I …?* | asking permission | `yom` + **`hwavam`** |
-| *Could you …?* (polite) | a request | **`yem`** ([speech act](speech-acts.md#speech-act)) |
+| *Could you …?* (polite) | a request | **`yem`** ([speech act](firm-soft.md#speech-act)) |
 
 > `zuzozen vezuyoxal.`
 >
@@ -314,7 +314,7 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 
 ### Must, have to, should {#must-should}
 
-**Needs:** [Requirement](feelings-permission.md#requirement) · [Prescription](prescription.md#sake-force) · [Motive](prescription.md#sake-preference) · [Permission](feelings-permission.md#permission) · [Speech act](speech-acts.md#speech-act) · [Stance as-of](as-of.md#stance-as-of)
+**Needs:** [Requirement](feelings-permission.md#requirement) · [Prescription](prescription.md#sake-force) · [Motive](prescription.md#sake-preference) · [Permission](feelings-permission.md#permission) · [Speech act](firm-soft.md#speech-act) · [Stance as-of](as-of.md#stance-as-of)
 
 English *must* and *should* differ in what stands behind the demand. Choose the source.
 
@@ -370,7 +370,7 @@ For *should have*, date the ought with [stance as-of](as-of.md#stance-as-of) **`
 
 ### Will, want, try, let's {#will-want}
 
-**Needs:** [Plan](intention.md#plan-predict) · [Want](ability.md#want) · [Try](ability.md#try) · [Hopefully](feelings-permission.md#speaker-attitude) · [Speech act](speech-acts.md#speech-act)
+**Needs:** [Plan](intention.md#plan-predict) · [Want](ability.md#want) · [Try](ability.md#try) · [Hopefully](feelings-permission.md#speaker-attitude) · [Speech act](firm-soft.md#speech-act)
 
 | English | Agebon |
 |---------|--------|

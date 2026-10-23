@@ -499,7 +499,7 @@ const HOOK_FORM = /^[aeiou]{1,2}[lmnr]$/;
 const HOSTED_FORM = /^[hɡg][a-z]+$/;
 
 /** Sections whose lone-hook rows are extra-noun hooks (a lone `al` elsewhere may be a range or *including*). */
-const EXTRA_NOUN_SECTION = /^(?:hooks|ending-grids)\.md#extra-noun/;
+const EXTRA_NOUN_SECTION = /^(?:hooks|ending-grids|extra-noun-hooks)\.md#extra-noun/;
 
 /**
  * The word a job's form puts before its `/b/` landmark: a hook with `/b/` (`om / /b/`) or alone
@@ -706,7 +706,7 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
         const shownDetectors = roots.length ? detectors.filter((d) => d.id !== "participle") : detectors;
         // A table row that spells the same role compound repeats it; the built one says how it is made.
         const shownJobs = jobs.filter((j) => !roles.some((r) => j.form === r.form));
-        // An alias is a search word, not a sense: a grammar row for the word (*grateful*) comes first.
+        // An alias is a search word, not a sense: a grammar row for the word (*lucky*) comes first.
         const senses = roots.filter((s) => s.tier !== "alias");
         const aliases = roots.filter((s) => s.tier === "alias");
         let suggestions: Suggestion[] = [...listed, ...senses, ...roles, ...shownJobs, ...shownDetectors, ...aliases].filter((s) => withinStage(data, s, stage));

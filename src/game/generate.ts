@@ -134,7 +134,7 @@ export function whereDrafts(gen: Generator, world: World, id: EntityId, hook: st
   }));
 }
 
-/** A place as a fragment answer: `[in | b-←room]` (fill-ask-roles.md#where). */
+/** A place as a fragment answer: `[in | b-←room]` (fill-ask-jobs.md#where). */
 export function placeFragmentDrafts(gen: Generator, world: World, hook: string, landmark: EntityId, view: View, english: string): Draft[] {
   return [false, true].map((fresh) => ({
     gloss: `[${gen.hookLeaf(hook)} | ${gen.mention(world, landmark, "b", view, fresh)}]`,
@@ -150,7 +150,7 @@ export function citationDrafts(gen: Generator, world: World, id: EntityId, engli
   return [{ gloss: leaf, english, mentions: [id] }];
 }
 
-/** An adjective as the answer to *what is it like?* (fill-ask-roles.md#what-kind). */
+/** An adjective as the answer to *what is it like?* (fill-ask-jobs.md#what-kind). */
 export function adjectiveDrafts(gen: Generator, prop: string, english: string): Draft[] {
   return [{ gloss: gen.voice.leaf("g", prop, "l"), english, mentions: [] }];
 }
@@ -160,7 +160,7 @@ export function greetingDrafts(gen: Generator, nameRoot: string): Draft[] {
   return [{ gloss: gen.voice.leaf("", nameRoot, "n"), english: "Hello.", mentions: [] }];
 }
 
-/** Which one? `y-question | g-wh | z-←dog` (*What is the dog like?*, fill-ask-roles.md#what-kind). */
+/** Which one? `y-question | g-wh | z-←dog` (*What is the dog like?*, fill-ask-jobs.md#what-kind). */
 export function whichDrafts(gen: Generator, root: string): Draft[] {
   return [{ gloss: `y-question | g-wh | ${gen.voice.leaf("z", root, "r")}`, english: `Which ${gen.nounEnglish(root)}?`, mentions: [] }];
 }

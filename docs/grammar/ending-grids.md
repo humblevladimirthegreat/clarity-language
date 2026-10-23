@@ -46,79 +46,6 @@ To make a whole `A HOOK B` phrase into a name (a store, a title, a handle), give
 >
 > "No dog."
 
-### Extra noun: stacked vowels and loose **-m**
-<a id="extra-noun-intermediate"></a>
-
-Beginner already used the one-vowel extra-noun hooks (*in* / *at* / *from* / *for*). Hooks with two vowels name the rest of the everyday extras. The test is the same: `/b/` comes right after the hook, and the word right before the hook (skipping any `/w/`) is **not** a recipient `/b/` (so `buzozen al bolazun` is *including*).
-
-A hook + `/b/` right after a landmark (the `/b/` of another extra, or of a word such as a locative relation) describes that landmark, not the clause: *the village near me*.
-
-> `zuzozen vowurel al behaham om buwon.`
->
-> z-Uzozen | v-walk | [in | [b-locality | [near | b-speaker]]]
->
-> "Uzozen walks in the village near me."
-
-Several extra-noun hooks on one clause are several extras. To keep the second one on the clause, put a non-`/b/` word between the first landmark and the next hook. Extra-noun **-n** makes the hook and its landmark a name, as on same-role hooks; the landmark keeps its own ending.
-
-With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the general setting, not the exact contact, source, tool, or opponent. It is not a second copy of the same extra.
-
-<!-- cheat-sheet: joins-hooks -->
-| **-l** | English | **-m** | English | Cue |
-|--------|---------|--------|---------|-----|
-| **`al`** | *in* | **`am`** | *amid* | **a** ≈ add (into a volume); **-m** that volume as the setting |
-| **`aol`** | *on* | **`aom`** | *over* | **ao** ≈ added onto one face; **-m** that face as the setting |
-| **`ol`** | *at* | **`om`** | *near* | **o** ≈ one (the one point); **-m** that point as the setting |
-| **`oel`** | *toward* | **`oem`** | *in the direction of* | **o** ≈ at + **e** ≈ for: aimed at one point; **-m** that aim as the setting |
-| **`ul`** | *from* | **`um`** | *away from* | **u** ≈ undo (leave); **-m** that origin as the setting |
-| **`ual`** | *out of* | **`uam`** | *out from among* | **ua** ≈ leave a volume; **-m** that volume as the setting |
-| **`uol`** | *through* | **`uom`** | *by way of* | **uo** ≈ leave via one path; **-m** that path as the setting |
-| **`el`** | *for* | **`em`** | *used by* (*B's*) | **e** ≈ order (aim the act); **-m** what was meant for B is now in B's use |
-| **`ael`** | *using* | **`aem`** | *by* | **ae** ≈ add to the aim: the means that serves it; **-m** the channel |
-| **`uel`** | *against* | **`uem`** | *contrary to* | **ue** ≈ undo aimed at; **-m** the opposing frame |
-
-> `zuzozen vuhohol aol buhohol.`
->
-> z-Uzozen | v-sit | [on | b-chair]
->
-> "Uzozen sits on a chair."
-
-> `zuzozen danal ael babewel varayel.`
->
-> z-Uzozen | d-book | [using | b-pen] | v-write
->
-> "Uzozen writes a book with a pen."
-
-**Compare with:** hook **`oel`** names where a path **ends** (*toward X*). A [sequence](rank-joins.md#sequence-ae) join on one noun, **`zael`**, names where it **starts** (*from X on*).
-
-> `zuzozen uel bagayul vavuvul.`
->
-> z-Uzozen | [against | b-guard] | v-fight
->
-> "Uzozen fights against a guard."
-
-> `zuzozen vavobel aem bedavel.`
->
-> z-Uzozen | v-go | [by | b-train]
->
-> "Uzozen goes by train."
-
-> `zuzozen vowurel uem berulal.`
->
-> z-Uzozen | v-walk | [contrary-to | b-rain]
->
-> "Uzozen walks despite the rain."
-
-To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`ael`**, the same way as [Where?](fill-ask-roles.md#where).
-
-> `yol ael bar zuzozen danal varayel.`
->
-> y-question | [using | b-wh] | z-Uzozen | d-book | v-write
->
-> "What does Uzozen write the book with?"
-
-**Compare with:** some English prepositions use other forms. *So that Olazun sits* is **`hovam blarl`**.
-
 ### Abstract landmarks (*in a crisis*, *out of debt*) {#abstract-landmarks}
 
 English uses the same prepositions for states, plans, and conditions as for places: *in a crisis*, *on a policy*, *out of debt*. Agebon does the same. Put a noun in its abstract **-m** sense right after an extra-noun hook, and the hook keeps the picture it has with a place: a state is something you are **in**, a plan is a surface you stand **on**, a tendency is somewhere you head **toward**, a condition is something you get **out of**. So a new pairing needs no new word: read the hook's picture in an abstract space.
@@ -151,70 +78,6 @@ English uses the same prepositions for states, plans, and conditions as for plac
 The frames read the same way, with the landmark as the general setting: `am bobowum` *amid the crisis*, `uem bonam` *contrary to the policy*. A reading that needs a different picture is not a hook reading; say it with its own word.
 
 **Compare with:** the landmark's **-m** picks its abstract sense (`bobowum` *catastrophe*, where `bobowul` is *bomb*); the hook's own **-m** (`am`, `uem`) makes the landmark the setting. The two choices are separate, and a word can take both.
-
-### Whose (`em`) {#genitive}
-
-English *Uzozen's dog* often means the dog is in Uzozen's **use**: Uzozen keeps it, walks it, feeds it. Put **`em`** right after the noun, then the user in `/b/`. `em` says B uses the thing or has access to it. It does not say who owns it. (cue: **`el`** is *for B*, a get meant to reach B; **`em`** says it already reached B and is in B's use)
-
-> `zudozol em buzozen varuvel.`
->
-> [z-dog | [used-by | b-Uzozen]] | v-run
->
-> "Uzozen's dog runs." (the dog Uzozen keeps)
-
-> `zuzozen dahehal em bolazun vawebol.`
->
-> z-Uzozen | [d-house | [used-by | b-Olazun]] | v-see
->
-> "Uzozen sees Olazun's house." (the house Olazun lives in)
-
-For *my* and *your*, put the [speaker or listener](pronouns.md#special-pronouns) in `/b/`: `em buwon` is *my*, `em bawan` is *your*.
-
-> `zudozol em buwon vezuvol.`
->
-> [z-dog | [used-by | b-speaker]] | v-sleep
->
-> "My dog sleeps."
-
-To describe the thing, put its `/ɡ/` word **between** the noun and **`em`**. The adjective stays on the noun, and `em` still attaches to the noun. A `/ɡ/` word **after** the `/b/` describes B instead ([complex chaining](left-bound.md#complex-chaining)).
-
-> `zudozol gelazom em buwon vezuvol.`
->
-> [z-dog | g-big | [used-by | b-speaker]] | v-sleep
->
-> "My big dog sleeps."
-
-With no verb, the same order is a sentence. A noun marked with `em` is one the listener can pick out, so the `/ɡ/` word is a [property](predication.md#classification-property), not *there is …*.
-
-> `zudozol gelazom em buwon.`
->
-> [z-dog | g-big | [used-by | b-speaker]]
->
-> "My dog is big."
-
-**Compare with:** `zudozol gelazom.` is *There is a big dog* ([existence](predication.md#existence)): a new noun with no `em` introduces the thing. `zudozol em buwon gelazom` puts *big* on the speaker, not the dog. `zudozol em buwon.` alone says your dog is here (*there's my dog*).
-
-Things B uses include places B lives or sits, tools and rides B uses, ideas B works with, and B's turn, time, or occasion: *Uzozen's birthday* is the day that is Uzozen's to have.
-
-> `zuburel em buzozen.`
->
-> [z-birthday | [used-by | b-Uzozen]]
->
-> "It's Uzozen's birthday."
-
-Other kinds of *'s* each have their own word:
-
-| English *'s* | Use |
-|--------------|-----|
-| legal ownership (*the dog Uzozen owns*) | `gogunum` + `/b/` |
-| something B made (*the book Uzozen wrote*) | a [role compound](roles.md#role-compounds) |
-
-**`em`** always needs a noun on its left: it belongs to the nearest noun before it (after that noun's `/ɡ/` words). After a verb or at the start of a sentence there is no thing for B to use, so `em` + `/b/` is not a sentence there. For someone's act (*Uzozen's walk*), say the act as its own sentence, then [point back to it](dependents.md#which-noun).
-
-**`em`** never takes a person on the left: a person is not something someone uses. **`gogunum`** never does either, because no one owns a person. **`em`** never names a feeling or trait either: a feeling or trait stays something B has, not something B uses. A trait is a `/ɡ/` word on B.
-
-**Compare with:** *for Uzozen* is `el`. A [sake](sakes.md) on `/ɡ/` also marks the noun as yours, together with how it serves you.
-
 ### Detail on the hook (`/w/`) {#hook-w}
 
 To add detail to the hook itself (*hesitantly excepting*, *never excepting*), put a `/w/` word right before the hook. A `/w/` word always describes the word **right after** it, and a hook takes one the same way a `/ɡ/` or `/h/` word does. A [restrictor](restrictors.md) works there too. The hook's right-hand piece follows as usual.
@@ -309,9 +172,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agebon | Cue |
 |---------|--------|-----|
 | *newspaper* | `unonal` | 📰 |
-| *camera* | `ogewol` | 📷 |
 | *radio* | `erowol` | 📻 |
-| *pencil* | `ebewel` | ✏️ |
 | *policy* | `onam` | 📝 from *memo* |
 
 **Review:**
@@ -322,40 +183,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Olazun* | `olazun` |
 | *Ahelan* | `ahelan` |
 | *family* | `avayal` |
-| *page* | `ebonel` |
 | *surprise* | `emol` |
-| *big* | `gelazom` |
 | *write* | `varayel` |
 | *run* | `varuvel` |
 | *see* | `vawebol` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
-**1.** *Uzozen writes on the page.*
-
-::: details Show answer
-`zuzozen varayel aol bebonel.`
-
-z-Uzozen | v-write | [on | b-page]
-:::
-
-**2.** *Olazun writes a newspaper using a pencil.*
-
-::: details Show answer
-`zolazun dunonal ael bebewel varayel.`
-
-z-Olazun | d-newspaper | [using | b-pencil] | v-write
-:::
-
-**3.** *There's Ahelan's radio.*
-
-::: details Show answer
-`zerowol em bahelan.`
-
-[z-radio | [used-by | b-Ahelan]]
-:::
-
-**4.** *The family, even Uzozen, writes.*
+**1.** *The family, even Uzozen, writes.*
 
 ::: details Show answer
 `zavayal wemom al zuzozen varayel.`
@@ -363,14 +198,30 @@ z-Olazun | d-newspaper | [using | b-pencil] | v-write
 z-family | [w-amazement | including] | z-Uzozen | v-write
 :::
 
-#### Agebon → English {#intermediate-agebon-to-english}
-
-**1.** `zuzozen oel zahelan varayel.`
+**2.** *Olazun writes a newspaper against the policy.*
 
 ::: details Show answer
-z-Uzozen | through | z-Ahelan | v-write
+`zolazun dunonal varayel uel bonam.`
 
-*Everyone from Uzozen through Ahelan writes.*
+z-Olazun | d-newspaper | v-write | [against | b-policy]
+:::
+
+**3.** *Everyone from Uzozen through Ahelan writes.*
+
+::: details Show answer
+`zuzozen oel zahelan varayel.`
+
+z-Uzozen | through | z-Ahelan | v-write
+:::
+
+#### Agebon → English {#intermediate-agebon-to-english}
+
+**1.** `zuzozen oel zahelan varuvel.`
+
+::: details Show answer
+z-Uzozen | through | z-Ahelan | v-run
+
+*Everyone from Uzozen through Ahelan runs.*
 :::
 
 **2.** `zahelan dunonal om derowol vawebol.`
@@ -381,34 +232,34 @@ z-Ahelan | d-newspaper | instead.open | d-radio | v-see
 *Ahelan sees the radio instead of the newspaper.* (one possible replacement)
 :::
 
-**3.** `zolazun varayel uel bonam.`
+**3.** `zolazun varayel aol bonam.`
 
 ::: details Show answer
-z-Olazun | v-write | [against | b-policy]
+z-Olazun | v-write | [on | b-policy]
 
-*Olazun writes against the policy.*
+*Olazun writes on policy.*
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Ahelan runs toward the radio.* `zahelan varuvel oel berowol.` or `zahelan varuvel ul berowol.`
+**1.** *Among other things, Olazun writes.* `am zolazun varayel.` or `al zolazun varayel.`
 
 ::: details Show answer
-`zahelan varuvel oel berowol.`
+`am zolazun varayel.`
 
-z-Ahelan | v-run | [toward | b-radio]
+additionally.open | z-Olazun | v-write
 
-**`oel`** names where the path ends; **`ul`** is *from* the radio.
+Open **-m** adds one of several points; **`al`** is a single extra point (*Additionally*).
 :::
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Uzozen's camera is big.* <!-- lint: error -->`zogewol em buzozen gelazom.`
+**1.** *Everyone from Uzozen through Ahelan sees.* <!-- lint: error -->`zuzozen zahelan zal vawebol.`
 
 ::: details Show answer
-`zogewol gelazom em buzozen.`
+`zuzozen oel zahelan vawebol.`
 
-[z-camera | g-big | [used-by | b-Uzozen]]
+z-Uzozen | through | z-Ahelan | v-see
 
-Put the camera's `/ɡ/` word before **`em`**; after the `/b/` it describes Uzozen.
+An *and*-join names only the two ends; a range of people puts **`oel`** between them.
 :::

@@ -12,7 +12,7 @@ Apart from what is inside, `[…]` and <code>&lt;…&gt;</code> work the same wa
 
 ### Mention {#mention}
 
-To talk about a word or phrase itself, as a spelling (*the word “udozo” is small*), put the **mention marker** before a span. That is a **mention**: it is about the letters, not what they mean, and not a quote of what someone said (for that, use a [cite](spans.md#writing)). The marker is a [left-bound adjective](left-bound.md#left-bound-adjectives), so a listener hears *this is a word as spelling* before the span arrives. In English, write *the word …* or *the phrase …* and keep the Agebon spelling (`udozo`, not *dog*).
+To talk about a word or phrase itself, as a spelling (*the word “udozo” is small*), put the **mention marker** before a span. That is a **mention**: it is about the letters, not what they mean, and not a quote of what someone said (for that, use a [cite](spans.md#writing)). The marker is a [left-bound adjective](left-bound-adjectives.md#left-bound-adjectives), so a listener hears *this is a word as spelling* before the span arrives. In English, write *the word …* or *the phrase …* and keep the Agebon spelling (`udozo`, not *dog*).
 
 The marker is the *letters* root `ege` as a `gl-` adjective, on **-l** (`glegel`) or **-n** (`glegen`). (cue: 🔤 a word is its letters)
 
@@ -85,7 +85,7 @@ A span in a `/v/` slot (`v[vozohul]`) has no resume pronoun.
 
 ### Spans before the noun (`gl`) {#gl-spans}
 
-A span on `/ɡ/` can also come **before** its noun, the way a [`gl-` adjective](left-bound.md#left-bound-adjectives) does: write **`gl`** before the bracket. It describes the next noun, so a noun must follow it. A noun aside before the noun (`gl(…)`) keeps the spot after the noun free for a plain adjective that picks out which one.
+A span on `/ɡ/` can also come **before** its noun, the way a [`gl-` adjective](left-bound-adjectives.md#left-bound-adjectives) does: write **`gl`** before the bracket. It describes the next noun, so a noun must follow it. A noun aside before the noun (`gl(…)`) keeps the spot after the noun free for a plain adjective that picks out which one.
 
 > `gl(gerulel) zudozol gamezom vowurel.`
 >

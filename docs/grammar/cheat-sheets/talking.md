@@ -27,17 +27,17 @@ The vowel picks the act: **a** add, **o** one, **e** order, **u** undo. A period
 
 | Act | Firm **-l** | Soft **-m** | For now **-r** | Stage |
 |-----|-------------|-------------|----------------|-------|
-| statement | [`yal`](../speech-moves.md#speech-act-beginner) *(often omitted)* | [`yam`](../speech-acts.md#speech-act) *for what it's worth* | [`yar`](../speech-acts.md#act-r) *as things stand* | B / I |
-| question | [`yol`](../speech-moves.md#speech-act-beginner) | [`yom`](../speech-acts.md#speech-act) *I wonder* | [`yor`](../speech-acts.md#act-r) *just checking* | B / I |
-| command | [`yel`](../speech-moves.md#speech-act-beginner) | [`yem`](../speech-acts.md#speech-act) *please* | [`yer`](../speech-acts.md#act-r) *for now* | B / I |
-| prohibition | [`yul`](../speech-moves.md#speech-act-beginner) | [`yum`](../speech-acts.md#speech-act) *please don't* | [`yur`](../speech-acts.md#act-r) *hold off* | B / I |
+| statement | [`yal`](../speech-moves.md#speech-act-beginner) *(often omitted)* | [`yam`](../firm-soft.md#speech-act) *for what it's worth* | [`yar`](../firm-soft.md#act-r) *as things stand* | B |
+| question | [`yol`](../speech-moves.md#speech-act-beginner) | [`yom`](../firm-soft.md#speech-act) *I wonder* | [`yor`](../firm-soft.md#act-r) *just checking* | B |
+| command | [`yel`](../speech-moves.md#speech-act-beginner) | [`yem`](../firm-soft.md#speech-act) *please* | [`yer`](../firm-soft.md#act-r) *for now* | B |
+| prohibition | [`yul`](../speech-moves.md#speech-act-beginner) | [`yum`](../firm-soft.md#speech-act) *please don't* | [`yur`](../firm-soft.md#act-r) *hold off* | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Command](../speech-moves.md#speech-act-beginner) | `yel vowurel.` | *Walk!* | B |
-| [Request with *let's*](../speech-acts.md#speech-act) | `yem vowurel zayan.` | *Let's walk.* | I |
-| [Soft prohibition with *let's not*](../speech-acts.md#speech-act) | `yum zayan vezuvol.` | *Let's not sleep.* | I |
-| [Provisional statement](../speech-acts.md#act-r) | `yar zuzozen vowurel.` | *As things stand, Uzozen walks.* | I |
+| [Request with *let's*](../firm-soft.md#speech-act) | `yem vowurel zayan.` | *Let's walk.* | B |
+| [Soft prohibition with *let's not*](../firm-soft.md#speech-act) | `yum zayan vezuvol.` | *Let's not sleep.* | B |
+| [Provisional statement](../firm-soft.md#act-r) | `yar zuzozen vowurel.` | *As things stand, Uzozen walks.* | B |
 | [Doubled act word](../speech-acts.md#doubled-act): repeat only the opening act word | `yul yul vazuyul.` | *Don't sneak. I mean it.* | I |
 | [Insisted statement](../speech-acts.md#doubled-act) | `yal yal` | *I'm telling you, …* | I |
 | [Pressing question](../speech-acts.md#doubled-act) | `yol yol` | *I really need to know: …?* | I |
@@ -121,23 +121,23 @@ The reply to a fill-ask is the fill as a [citation](../word-endings.md#citation-
 
 | You want | Write | English | Stage |
 |----------|-------|---------|-------|
-| [What kind?](../fill-ask-roles.md#what-kind) | `yol gar zudozol.` | *What is the dog like?* | I |
-| [When?](../fill-ask-roles.md#when) | `yol har zahelan vowurel.` | *When does Ahelan walk?* | I |
-| [Where?](../fill-ask-roles.md#where) | `yol ol bar zahelan vowurel.` | *Where does Ahelan walk?* | I |
-| [Whose?](../fill-ask-roles.md#whose) | `yol zudozol em bar vowurel.` | *Whose dog walks?* | I |
-| [How?](../fill-ask-roles.md#how) | `yol hewom blar zuzozen vowurel.` | *How does Uzozen walk?* | I |
-| [Why?](../fill-ask-roles.md#why) | `yol thahum blar zuzozen vowurel.` | *Why does Uzozen walk?* | I |
-| [What for?](../fill-ask-roles.md#why) | `yol hovam blar zuzozen vowurel.` | *What does Uzozen walk for?* | I |
+| [What kind?](../fill-ask-jobs.md#what-kind) | `yol gar zudozol.` | *What is the dog like?* | B |
+| [When?](../fill-ask-jobs.md#when) | `yol har zahelan vowurel.` | *When does Ahelan walk?* | B |
+| [Where?](../fill-ask-jobs.md#where) | `yol ol bar zahelan vowurel.` | *Where does Ahelan walk?* | B |
+| [Whose?](../fill-ask-jobs.md#whose) | `yol zudozol em bar vowurel.` | *Whose dog walks?* | B |
+| [How?](../fill-ask-jobs.md#how) | `yol hewom blar zuzozen vowurel.` | *How does Uzozen walk?* | B |
+| [Why?](../fill-ask-jobs.md#why) | `yol thahum blar zuzozen vowurel.` | *Why does Uzozen walk?* | B |
+| [What for?](../fill-ask-jobs.md#why) | `yol hovam blar zuzozen vowurel.` | *What does Uzozen walk for?* | B |
 
 <!-- cheat-sheet: talking -->
 | Blank | Means | Stage |
 |-------|-------|-------|
-| [`gar`](../fill-ask-roles.md#what-kind) / `gor` / `gur` | *what is it like?* / *like anything?* / *what else is it like?* | I |
-| [`ol bar`](../fill-ask-roles.md#where) / `al bar` / `ul bar` / `el bar` | *where (at)?* / *in what?* / *where from?* / *for what?* | I |
-| [`ol bor`](../fill-ask-roles.md#where) / `ol bur` | *anywhere?* / *where else?* | I |
-| [`thahum blar`](../fill-ask-roles.md#why) | *why?* | I |
-| [`hovam blar`](../fill-ask-roles.md#why) | *what for?* | I |
-| [`thohom blar`](../fill-ask-roles.md#why) | *under what condition?* | I |
+| [`gar`](../fill-ask-jobs.md#what-kind) / `gor` / `gur` | *what is it like?* / *like anything?* / *what else is it like?* | B |
+| [`ol bar`](../fill-ask-jobs.md#where) / `al bar` / `ul bar` / `el bar` | *where (at)?* / *in what?* / *where from?* / *for what?* | B |
+| [`ol bor`](../fill-ask-jobs.md#where) / `ol bur` | *anywhere?* / *where else?* | B |
+| [`thahum blar`](../fill-ask-jobs.md#why) | *why?* | B |
+| [`hovam blar`](../fill-ask-jobs.md#why) | *what for?* | B |
+| [`thohom blar`](../fill-ask-jobs.md#why) | *under what condition?* | B |
 
 ### Fill-ask by vowel and count {#arity}
 
@@ -215,4 +215,4 @@ After your sentence, write `yol` and a polar word as a turn of its own. It asks 
 | `yol` *question* ([asks](../questions.md#question)) | | `?` *unsure voice* ([only sounds unsure](../speech-acts.md#tone-marks)) |
 | `yul` *don't* ([prohibition](../speech-moves.md#speech-act-beginner)) | | `yuel` *no, false* ([answers a claim](../questions.md#polar-stance)) |
 | `yol yael.` *…, right?* ([a tag asks](../polar-inventory.md#tags)) | | `yael.` *yes* ([an answer gives](../questions.md#polar-stance)) |
-| `thahum blar` *why?* ([the cause](../fill-ask-roles.md#why)) | | `hewom blar` *like what?* ([a model to resemble](../fill-ask-roles.md#how)) |
+| `thahum blar` *why?* ([the cause](../fill-ask-jobs.md#why)) | | `hewom blar` *like what?* ([a model to resemble](../fill-ask-jobs.md#how)) |

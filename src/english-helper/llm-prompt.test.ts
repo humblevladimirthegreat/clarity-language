@@ -144,8 +144,8 @@ describe("verifyDraft", () => {
     ]);
     const abstract = verifyDraft("The cat sleeps.", `z${cat}m v${sleep}l.`, tables, data);
     assert.equal(abstract.words![0]!.check, "other-side");
-    const grateful = rootOf("I am grateful.", "grateful", "alias");
-    const alias = verifyDraft("I am grateful.", `g${grateful}l.`, tables, data);
+    const lucky = rootOf("I am lucky.", "lucky", "alias");
+    const alias = verifyDraft("I am lucky.", `g${lucky}l.`, tables, data);
     assert.equal(alias.words![0]!.check, "alias");
   });
 });

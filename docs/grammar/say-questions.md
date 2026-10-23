@@ -249,7 +249,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 ### Ask, interview, conversation {#ask-words}
 
-**Needs:** [Ask](questions.md#question) · [Reported questions](#reported-questions) · [Stand-in vowels](sentence-linkers.md#stand-in) · [Speech act: firm and soft](speech-acts.md#speech-act) · [Stacking two act words](speech-acts.md#stacked-acts) · [Quiz](polar-inventory.md#quiz) · [Conversation length](compound-families.md#conversation-length) · [Call someone](speech-moves.md#vocative)
+**Needs:** [Ask](questions.md#question) · [Reported questions](#reported-questions) · [Stand-in vowels](sentence-linkers.md#stand-in) · [Speech act: firm and soft](firm-soft.md#speech-act) · [Stacking two act words](speech-acts.md#stacked-acts) · [Quiz](polar-inventory.md#quiz) · [Conversation length](compound-families.md#conversation-length) · [Call someone](speech-moves.md#vocative)
 
 English *ask* is four jobs. You can put a question to someone, ask them for something, ask them to do something, or report that a question was asked. A question is the act word **`yol`**. A request is **`yem`**. A reported question hangs on the telling ([reported questions](#reported-questions)). *Ask* or *tell someone to do* something is a telling with the to-clause stand-in **`derl`**, and the person told is plain `/b/`; *not to* is **`durl`**. English picks *ask* or *tell* for politeness, which Agebon carries on the act word, not the verb. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
 
@@ -276,7 +276,7 @@ English *ask* is four jobs. You can put a question to someone, ask them for some
 
 ### Offer, suggest, recommend, invite {#offer-words}
 
-**Needs:** [Speech act: firm and soft](speech-acts.md#speech-act) · [Tags](polar-inventory.md#tags) · [Prescription](prescription.md#sake-force) · [Permission](feelings-permission.md#permission) · [Which noun](dependents.md#which-noun)
+**Needs:** [Speech act: firm and soft](firm-soft.md#speech-act) · [Tags](polar-inventory.md#tags) · [Prescription](prescription.md#sake-force) · [Permission](feelings-permission.md#permission) · [Which noun](dependents.md#which-noun)
 
 English *offer*, *suggest*, *propose*, *recommend* and *advise* all put something forward that the other person may take or leave. Agebon picks how firmly. A soft act word (**-m**) leaves the choice open. A soft request with *we* proposes a joint act, and a tag after it asks whether they take it up. A prescription **`the`** on a sake says the act ought to serve it, and its ending says whether the person invited it (**-l**) or you are offering it unasked (**-m**).
 

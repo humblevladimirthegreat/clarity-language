@@ -182,7 +182,7 @@ The relation word takes the other noun as a `bl-` word right after it. Use `/h/`
 
 ### Where, around, between {#locative}
 
-Plain *in*, *on*, *at*, *from*, *toward* are [hooks](../ending-grids.md#extra-noun-intermediate); write the source before the goal. *Between*, *across*, and *around* need a root.
+Plain *in*, *on*, *at*, *from*, *toward* are [hooks](../extra-noun-hooks.md#extra-noun-intermediate); write the source before the goal. *Between*, *across*, and *around* need a root.
 
 <!-- cheat-sheet: linking-clauses -->
 | Event / noun | Use | English | Stage |
@@ -227,16 +227,16 @@ Put the tie root on `/ɡ/` with **-m**, then the other person in `/b/`.
 <!-- cheat-sheet: linking-clauses -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`gumayam`** + `/b/`](../of-relations.md#social-relations) | companion of `/b/` | *friend of* | I |
-| [**`gugobem`** + `/b/`](../of-relations.md#social-relations) | the one `/b/` answers to | *boss of* | I |
-| [**`gohuyam`** + `/b/`](../of-relations.md#social-relations) | partner of `/b/` | *partner of* | I |
-| [**`gobolom`** + `/b/`](../of-relations.md#social-relations) | the one `/b/` looks after | *in the care of* | I |
+| [**`gumayam`** + `/b/`](../social-ties.md#social-relations) | companion of `/b/` | *friend of* | B |
+| [**`gugobem`** + `/b/`](../social-ties.md#social-relations) | the one `/b/` answers to | *boss of* | B |
+| [**`gohuyam`** + `/b/`](../social-ties.md#social-relations) | partner of `/b/` | *partner of* | B |
+| [**`gobolom`** + `/b/`](../social-ties.md#social-relations) | the one `/b/` looks after | *in the care of* | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Friend of](../of-relations.md#social-relations) | `zolazun gumayam bluzozen.` | *Olazun is Uzozen's friend.* | I |
-| [Friends](../of-relations.md#social-relations) | `zuzozen zolazun zal gumayam.` | *Uzozen and Olazun are friends.* | I |
-| [In the care of](../of-relations.md#social-relations) | `zolazun gobolom bluzozen.` | *Olazun is in Uzozen's care.* | I |
+| [Friend of](../social-ties.md#social-relations) | `zolazun gumayam bluzozen.` | *Olazun is Uzozen's friend.* | B |
+| [Friends](../social-ties.md#social-relations) | `zuzozen zolazun zal gumayam.` | *Uzozen and Olazun are friends.* | B |
+| [In the care of](../social-ties.md#social-relations) | `zolazun gobolom bluzozen.` | *Olazun is in Uzozen's care.* | B |
 
 ### As of {#as-of}
 
@@ -278,7 +278,7 @@ Each pole, linker, and relation word is the abstract sense of an ordinary root. 
 | [`hedam`](../of-relations.md#locative-relations) *between*, [`hohem`](../of-relations.md#locative-relations) *across*, [`hevam`](../of-relations.md#locative-relations) *around* | `edal` 🥪, `ohel` 🌉, `eval` 🎠 | I |
 | [`hobem`](../of-relations.md#of-relations) *part of*, [`hadam`](../of-relations.md#of-relations) *contents of*, [`hulem`](../of-relations.md#of-relations) *made of* | `obel` 🦴, `adal` 🫙, `ulel` 🪵 | I |
 | [`haham`](../of-relations.md#of-relations) *from*, [`hozowum`](../of-relations.md#of-relations) *a piece of* | `ahal` 🗾, `ozowul` 🪚 | I |
-| [`gumayam`](../of-relations.md#social-relations) *friend*, [`gugobem`](../of-relations.md#social-relations) *boss*, [`gohuyam`](../of-relations.md#social-relations) *partner*, [`gobolom`](../of-relations.md#social-relations) *care* | `umayal` *Mrs Claus*, `ugobel` *crown*, `ohuyal` *holding hands*, `obolol` *house plant* | I |
+| [`gumayam`](../social-ties.md#social-relations) *friend*, [`gugobem`](../social-ties.md#social-relations) *boss*, [`gohuyam`](../social-ties.md#social-relations) *partner*, [`gobolom`](../social-ties.md#social-relations) *care* | `umayal` *Mrs Claus*, `ugobel` *crown*, `ohuyal` *holding hands*, `obolol` *house plant* | B |
 | [`henam`](../as-of.md#as-of) *as of* (ledger), [`hunem`](../as-of.md#as-of) *as of* (placeholder) | `enal` 📒, `unel` 🔖 | A |
 
 ## Don't mix up {#dont-mix-up}
@@ -292,6 +292,6 @@ Each pole, linker, and relation word is the abstract sense of an ordinary root. 
 | `thohom blarl` *if* ([a condition](../dependents.md#poles)) | | `dorl` *whether* ([an open question](../dependents.md#dependent-clauses)) |
 | `xahem` *therefore* ([starts a sentence](../dependents.md#continue-x)) | | `hezom blarl` *although* ([attaches a clause](../dependents.md#poles)) |
 | `hewom` *like* ([resembles, and is real](../relations.md#like-resembles)) | | `hewol` *exactly like* ([a perfect match](../of-relations.md#exactly-like)) |
-| `gadam` *contents of* ([what a vessel holds](../of-relations.md#of-relations)) | | `al` *in* ([a place hook](../ending-grids.md#extra-noun-intermediate)) |
+| `gadam` *contents of* ([what a vessel holds](../of-relations.md#of-relations)) | | `al` *in* ([a place hook](../extra-noun-hooks.md#extra-noun-intermediate)) |
 | `hanom` *on behalf of* ([an agent](../relations.md#proxy)) | | `heham` *in exchange for* ([the other half of a swap](../relations.md#exchange)) |
 | `henam` *as of* ([a dated now](../as-of.md#as-of)) | | `halam` *after* ([a time for the event](../dependents.md#time-poles)) |

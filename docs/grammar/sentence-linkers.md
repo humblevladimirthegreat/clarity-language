@@ -241,7 +241,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *luggage* | `elobal` | 🧳 |
 | *sneak* | `vazuyul` | 🥷 |
 | *however* | `xezom` | 🦓 from *zebra*: two stripes, still one animal |
 | *meanwhile* | `xegorem` | 🕰️ from *clock*: time passing beside the last claim |
@@ -259,6 +258,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
 | *Ahelan* | `ahelan` |
+| *luggage* | `elobal` |
 | *therefore* | `xahem` |
 | *departure* | `velurul` |
 | *train* | `edavel` |

@@ -311,7 +311,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *normal* / *typical* / *standard* / *ordinary* / *medium* / *average* (*normally big*) | the PATTERN bar with `zoel`: `zudozol thubem zoel gelazom` |
 | *single* (*just one*) | the plain number `g+1` |
 | *secondary* / *second* | the rank `g#2` |
-| *whole* / *entire* / *complete* / *total* / *ideal* (nothing lacking) | `guhuram` (*perfection*) |
+| *whole* / *entire* / *complete* / *total* (nothing lacking) | `guhuram` (*completeness*) |
 | *several* | approximate number: `zagozolx gram` (*about five cats*) |
 | *multiple* (*more than one*) | a ray: `zagozolx g+2 al grawal` |
 | *minority* (*fewer than half*) | `zagozolx g+0% ul g+50%` |
@@ -501,7 +501,7 @@ Use **`harum`** for *until* / *till*, **`hevahum`** for *by*, **`habam`** for *b
 ### Date as books vs event-when
 <a id="as-of-vs-clock"></a>
 
-**Needs:** [Time](numbers-applied.md#time) · [*as-of*](as-of.md#as-of)
+**Needs:** [Time](digit-strings.md#time) · [*as-of*](as-of.md#as-of)
 
 Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftover, climate, plan, and forecast score against is [*as-of*](as-of.md#as-of) (`henam` / `hunem` plus `/b/`). Put the date on that pole (`henam bl_#22,7`); do not also write spare `h_#22,7` for the same snapshot. Clock / *before* / *after* may sit beside *as-of*: books vs event-when are different jobs.
 

@@ -393,7 +393,7 @@ export type Unit =
       frame?: HUnit;
       /** WANT, PLAN or DECISION after a holder frame: the holder's wish, plan or choice the event goes against (ability.md#whose-intention). */
       heldIntention?: LexWord;
-      /** `oel` + `/b/` right after an `ul` extra noun: the end of one *from … to* unit (numbers-applied.md#time). */
+      /** `oel` + `/b/` right after an `ul` extra noun: the end of one *from … to* unit (digit-strings.md#time). */
       fromTo?: true;
     }
   | { kind: "writingSpan"; word: LexWord }
