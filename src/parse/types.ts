@@ -88,7 +88,7 @@ export type MorphWordFamily =
       pointerVowel?: PointerVowel;
       /** Values / label-scope / ability stance vowel (also role + ability on `/ɡ/`, `gwezuduyexal`). */
       stanceVowel?: ScopeVowel;
-      /** Role compound or role pointer: the label scope vowel(s) after `w` (`zwozuduyel`; viewpoint.md#scope). Hook prefix: scope after the stem's `th` seam (`zuexavuvuthol`). Landmark facing: pair scope after `th` (`gazuhethel`; viewpoint.md#landmark-facing). */
+      /** Role compound or role pointer: the label scope vowel(s) after `w` (`zwozuduyel`; viewpoint.md#scope). Hook prefix: scope after the stem's `th` seam (`zuexavuvuthol`). Landmark facing: pair scope after `th` (`gazuhothel`; viewpoint.md#landmark-facing). */
       scopeVowel?: ScopeVowel;
       /** Emotion compose: sake horizon letter moved mid-word (feelings-permission.md#emotion-compose). */
       horizon?: "l" | "m" | "r";

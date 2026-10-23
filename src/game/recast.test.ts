@@ -5,14 +5,14 @@ import { editDistance, nearMisses, orthographyFix, SEED_RULES, typedGloss, type 
 
 const options = (extra: Partial<Parameters<typeof nearMisses>[2]> = {}) => ({
   rules: SEED_RULES,
-  roots: ["udozo", "agozo", "oho"],
+    roots: ["udozo", "agozo", "oho"],
   known: (root: string) => ["udozo", "agozo", "oho"].includes(root),
   ...extra,
 });
 
 describe("orthographyFix", () => {
   it("lowercases, writes th for t, and drops a hyphen after the role letter", () => {
-    assert.equal(orthographyFix("Z-udozol tevemol"), "zudozol thevemel");
+    assert.equal(orthographyFix("Z-udozol tevemol"), "zudozol thevemol");
   });
 
   it("leaves a foreign span's capitals alone", () => {

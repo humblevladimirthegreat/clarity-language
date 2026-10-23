@@ -78,10 +78,10 @@ export function shortRootWithTail(root: string, kind: Kind, shape: Shape): strin
 }
 
 /** Last vowel each shape currently uses on published three- and five-letter roots. */
-export function shapeLastVowelsFromRoots(rows: readonly { root: string; shape: string }[]): Map<Shape, string> {
+export function shapeLastVowelsFromRoots(rows: readonly { root: string; shape?: string }[]): Map<Shape, string> {
   const found = new Map<Shape, string>();
   for (const row of rows) {
-    if (!isShape(row.shape)) continue;
+    if (!row.shape || !isShape(row.shape)) continue;
     const root = row.root.trim();
     if (root.length !== 3 && root.length !== 5) continue;
     const vowel = root.at(-1)!;
@@ -116,8 +116,8 @@ export type ShortLastVowelPair = {
 
 type ShortLastVowelRow = {
   root: string;
-  kind: string;
-  shape: string;
+  kind?: string;
+  shape?: string;
   emoji?: string;
   concrete?: string;
 };
@@ -135,7 +135,7 @@ export function planShortLastVowels(
   for (const row of rows) {
     const oldRoot = row.root.trim();
     if (oldRoot.length !== 3) continue;
-    if (tailFieldsError(row.kind, row.shape)) continue;
+    if (tailFieldsError(row.kind ?? "", row.shape ?? "")) continue;
     const newRoot = shortRootWithTail(oldRoot, row.kind as Kind, row.shape as Shape);
     items.push({
       emoji: (row.emoji ?? "").trim(),

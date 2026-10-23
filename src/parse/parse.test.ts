@@ -646,7 +646,7 @@ describe("parse — pronouns.md resume with no earlier match", () => {
     for (const text of ["zalazun vayebel donor.", "zoher vowurol.", "zodozer vowurol.", "zoyahehar vowurol.", "zalazun vowurolar."]) {
       assert.doesNotThrow(() => parseText(text), text);
     }
-    assert.throws(() => parseText("zaber vowurol."), SentenceParseError);
+    assert.throws(() => parseText("zabubur vowurol."), SentenceParseError);
   });
 });
 

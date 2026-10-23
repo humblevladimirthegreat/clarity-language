@@ -49,7 +49,7 @@ Polar answers stack two of these vowels. Beginner *yes* / *no* / *sure*: [polar 
 | [Conversation length](/compound-families#conversation-length) | `SELFxan` open-ended | `SELFxon` a few minutes | `SELFxen` one slot | `SELFxun` passing | I |
 | [Comparative](/comparatives#comparatives) / [equative](/comparatives#equatives) | | `zoel` *as … as* | `zol` *more … than* | | B |
 | [Sake stance](/sakes#word-shape) | `tha` met / serves | | | `thu` unmet / detracts | B |
-| [Root job](/root-tails#root-tails) | holds or gathers | one whole thing | order, path, sequence | takes away | A |
+| [Root job](/root-tails#root-tails) | holds or gathers | order, path, sequence | one whole thing | takes away | A |
 
 ### Stacked joins {#join-stacks}
 
@@ -102,8 +102,8 @@ From [root tails](/root-tails#root-tails). Memory aids only: grammar does not re
 | Last vowel | Job | Examples | Stage |
 |------------|-----|----------|-------|
 | `a` | holds or gathers | `abowa` *basket*, `aruda` *rice*, `eneza` *ant* | A |
-| `o` | one whole thing | `ogoze` *cat*, `alede` *apple* | A |
-| `e` | order, path, sequence | `oraho` *road*, `ugoro` *clock*, `eruvo` *run*, `urulo` *rainbow* | A |
+| `o` | order, path, sequence | `oraho` *road*, `ugoro` *clock*, `eruvo` *run*, `urulo` *rainbow* | A |
+| `e` | one whole thing | `ogoze` *cat*, `alede` *apple* | A |
 | `u` | takes away | `anewu` *knife*, `ezozu` *snake*, `evemu` *fear* | A |
 
 | [Middle vowel](/root-tails#root-tails) | Size | Stage |

@@ -28,17 +28,17 @@ Each letter reuses a job it already has somewhere in the grammar:
 | `r` | counting, time, money and rhythm | `ugoro` *clock* | `r` after a role letter starts a [number](/numbers#counts) |
 | `n` | titles: mail, paper, labels, and named sports | `unona` *newspaper*, `ezuna` *soccer* | [**-n**](/proper-names#proper-name--n) is the name ending |
 
-The last vowel is the job, with the same vowel series as [joins](/joins): **a** add, **o** one, **e** order, **u** undo.
+The last vowel is the job. It hangs on [joins](/joins): what the root **does to stuff** (gathers, travels the line, one piece, takes away). **a** holds (the list grows), **o** path or sequence (rank: the line stays), **e** one compact thing (choice: one piece), **u** takes away.
 
 <!-- cheat-sheet: vowels -->
 | Last vowel | Job | Examples |
 |------------|-----|----------|
 | `a` | holds or gathers: containers, groups, masses, what you go inside; or hollow, like a bowl | `abowa` *basket*, `aruda` *rice*, `eneza` *ant* (it lives in a colony) |
-| `o` | one whole thing: round or compact, like a ball | `ogoze` *cat*, `alede` *apple* |
-| `e` | order: ranked, in sequence, a stage or cycle, a path you travel or are led along; or long, like a road | `oraho` *road*, `ugoro` *clock*, `eruvo` *run*, `urulo` *rainbow* |
+| `o` | order: ranked, in sequence, a stage or cycle, a path you travel or are led along; or long, like a road | `oraho` *road*, `ugoro` *clock*, `eruvo` *run*, `urulo` *rainbow* |
+| `e` | one whole thing: round or compact, like a ball | `ogoze` *cat*, `alede` *apple* |
 | `u` | takes away or works against: cuts, removes, harms, stings, forbids; or sharp, like a blade | `anewu` *knife*, `ezozu` *snake*, `evemu` *fear* |
 
-When more than one job fits, try **u** first, then **a**, then **e**. A knife is one tool, but it cuts, so its root ends in `u`. When no job fits, the thing's outline decides: hollow `a`, long `e`, sharp `u`, round or compact `o`. A banana ends in `e` and an apple in `o`. For a feeling, it's which way the feeling points (toward others `a`, inward `o`); for an action, how it unfolds (with others `a`, along a course `e`).
+When more than one job fits, try **u** first, then **a**, then **o**. A knife is one tool, but it cuts, so its root ends in `u`. When no job fits, the thing's outline decides: hollow `a`, long `o`, round or compact `e`, sharp `u`. A banana ends in `o` and an apple in `e`. For a feeling, it's which way the feeling points (toward others `a`, along a standing `o`, inward `e`); for an action, how it unfolds (with others `a`, along a course `o`, once on the spot `e`).
 
 In every kind but feelings, the **middle vowel** usually says how big the thing is:
 
@@ -56,7 +56,7 @@ A [dictionary word](/compounds#lexical-compounds) made of two roots ends in its 
 
 ### Tail suffixes {#tail-suffixes}
 
-A few dictionary words end in a bare tail instead of a second root. *Friend* is *hug* plus `yo`: `y` for a person, `o` for one thing marked by the left piece, so *a person known by hugs*. The two letters already say what kind of thing the word names, so it needs no second root such as *person*.
+A few dictionary words end in a bare tail instead of a second root. *Friend* is *hug* plus `ye`: `y` for a person, `e` for one thing marked by the left piece, so *a person known by hugs*. The two letters already say what kind of thing the word names, so it needs no second root such as *person*.
 
 > `zahuyayel.`
 >
@@ -66,14 +66,14 @@ A few dictionary words end in a bare tail instead of a second root. *Friend* is 
 
 | Ageben | Pieces | English |
 |--------|--------|---------|
-| `zahuyayel` | *hug* + `yo` | friend |
+| `zahuyayel` | *hug* + `ye` | friend |
 | `zoyahehal` | *bed* + `ha` | bedroom |
 | `zebezezal` | *bird* + `za` | flock |
-| `zavogeyel` | *flag* + `yo` | citizen |
-| `zahahayel` | *hut* + `yo` | neighbor |
-| `zugeweyel` | *camera* + `yo` | celebrity |
+| `zavogeyel` | *flag* + `ye` | citizen |
+| `zahahayel` | *hut* + `ye` | neighbor |
+| `zugeweyel` | *camera* + `ye` | celebrity |
 
-The left piece is always a five-letter root, and there is no join letter: five letters, then the tail, then the ending. The tail vowel does the same jobs as on a root: **a** the thing holds or gathers the left, **o** it is one thing marked by the left, **e** it follows the left in order or along a path, **u** it takes the left away or works against it. The tail consonant is any kind but nature `l`, mind `m` and counting `r`; those words take a full second root.
+The left piece is always a five-letter root, and there is no join letter: five letters, then the tail, then the ending. The tail vowel does the same jobs as on a root: **a** the thing holds or gathers the left, **o** it follows the left in order or along a path, **e** it is one thing marked by the left, **u** it takes the left away or works against it. The tail consonant is any kind but nature `l`, mind `m` and counting `r`; those words take a full second root.
 
 When the thing is a more specific kind than its tail, the dictionary word keeps two full roots: *doorbell* ends in *bell*, not in a bare tool tail.
 

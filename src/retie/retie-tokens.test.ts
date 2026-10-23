@@ -772,7 +772,7 @@ describe("retie fixes (2026-10-19 root-tails dry run)", () => {
     };
     const source = [
       "const t = loadDefaultTables();",
-      'frameOf(`zazawan vowogal uem theyemazawan ${held}.`);',
+      'frameOf(`zazawan vowogal uem theyomazawal ${held}.`);',
       'assert.deepEqual(binds("zazawan vowogal hewezathazawar."), ["hewezathazawar→zazawan"]);',
       'expectLine("zuzuhexagavexedehen", "z-Uzuhe-x-Agave-x-Edehen");',
       "",
@@ -781,7 +781,7 @@ describe("retie fixes (2026-10-19 root-tails dry run)", () => {
       rewriteSourceLiterals(source, "x.test.ts", ctx).text,
       [
         "const t = loadDefaultTables();",
-        'frameOf(`zozozen vowogal uem theyemozozen ${held}.`);',
+        'frameOf(`zozozen vowogal uem theyomozozel ${held}.`);',
         'assert.deepEqual(binds("zozozen vowogal helegethozozer."), ["helegethozozer→zozozen"]);',
         'expectLine("zuzudoxogudaxedadan", "z-Uzudo-x-Oguda-x-Edadan");',
         "",

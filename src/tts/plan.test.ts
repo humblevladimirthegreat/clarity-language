@@ -116,14 +116,14 @@ describe("previewPhonemes", () => {
     const plan = previewPhonemes("zazozon gozulamum.");
     assert.deepEqual(
       plan.words.map((w) => w.ipa),
-      ["zʉ.zo̞.ze̞n", "ɡo̞.zʉ.lä.mʉm"],
+      ["zä.zo̞.zo̞n", "ɡo̞.zʉ.lä.mʉm"],
     );
-    assert.equal(plan.ipaPhonemes, "zʉzo̞ze̞n ɡo̞zʉlämʉm.");
+    assert.equal(plan.ipaPhonemes, "zäzo̞zo̞n ɡo̞zʉlämʉm.");
   });
 
   it("builds a word-spaced IPA phoneme stream", () => {
     const plan = previewPhonemes("zazozon vuwalal.");
-    assert.equal(plan.ipaPhonemes, "zʉzo̞ze̞n väwäläl.");
+    assert.equal(plan.ipaPhonemes, "zäzo̞zo̞n vʉwäläl.");
     const yuon = previewPhonemes("yuon");
     assert.equal(yuon.ipaPhonemes, "jʉo̞n");
   });
@@ -140,7 +140,7 @@ describe("previewPhonemes", () => {
 
   it("keeps word spaces inside islands without comma between words", () => {
     const plan = previewPhonemes("{ zazozon vuwalal }");
-    assert.match(plan.ipaPhonemes, /zʉzo̞ze̞n väwäläl/);
+    assert.match(plan.ipaPhonemes, /zäzo̞zo̞n vʉwäläl/);
     assert.doesNotMatch(plan.ipaPhonemes, /zo̞n, vä/);
   });
 });

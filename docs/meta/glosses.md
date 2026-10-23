@@ -264,7 +264,7 @@ Do not use `english_by_pos` for this. That column is role English: one lemma per
 - **english** — short English label for the **active** sense (hyphens OK inside a label: `that-clause`, `or-exactly-one`). **Uninflected lemma** for verb senses ([english lemma](#english-lemma)). **No** Ageben root letters. **No** writing glyphs **`@`** / **`~`** (those mark **-n** / **-m** in Ageben spelling only: numbers, span fences).
 - **`-x-`** — mid-word compound / stance / role / span hinge; each piece is English (or a stable TAG).
 - **-l / -m / -n** — **omit**. They only choose which English sense-root is in play. Do not re-spell them as `-l` / `-m` / `-n` or as `@` / `~`.
-- **Names** — the english slot is the **English name** (`z-Azozon`, `z-Hamlet`, `z-Alowen`, `z-Unodu-x-Ozalan`), not the virtue or kind that formed the stem, and not `z-grace@`.
+- **Names** — the english slot is the **English name** (`z-Azozon`, `z-Hamlet`, `z-Ahelan`, `z-Abodun-x-Ezalan`), not the virtue or kind that formed the stem, and not `z-grace@`.
 - **-x** — append `-x` when the written word has associative / address-set / collective **-x** (`z-Azozon-x`, `z-speaker-x`, `z-listener-x`).
 - **Prefix-less** hooks: English only — `instead`, `rather`, `additionally`, `in`, `using` (no fake PoS).
 - **Specials / overlays / joins** — still the overlay or join job (`z-speaker`, `v-and`), never `@` because the word happens to end in **-n**.
@@ -375,7 +375,7 @@ A [resume](/pronouns#resume-r) spells its antecedent's whole stem, so the antece
 |------|--------|-------------|
 | Resume of a name | `zazozor` | `z-←Azozon` |
 | Resume of a content word | `vezuver` | `v-←sleep` |
-| Compound name | `zaboduxezalar` | `z-←Unodu-x-Ozalan` |
+| Compound name | `zaboduxezalar` | `z-←Abodun-x-Ezalan` |
 | Resume of one of a name (**-ln**) | `zazozor` after `dazozoln` | `z-←Azozon.instance` |
 | Resume of a prior content word | | `z-←someone` / `d-←tea` |
 | No antecedent, stem not in the lexicon | | `z-←"…"` (the stem itself) |
@@ -402,7 +402,7 @@ Gloss each piece by **family** ([compounds.md](/compounds)) — English only. Dr
 
 | Family | Example Ageben | Morph gloss |
 |--------|-----------------|-------------|
-| Ordinary / name compound | `yaboduxezalan` | `y-Unodu-x-Ozalan` |
+| Ordinary / name compound | `yaboduxezalan` | `y-Abodun-x-Ezalan` |
 | Ordinary (three roots) | `zogudaxedudaxowulan` | `z-Uguda-x-Ududa-x-Owulan` |
 | Ability / values stance | `vowuroxol` | `v-walk-unable-temporary` |
 | Values stance on need | `thuwathom` | `th-competence-motive-any-term` |
@@ -414,7 +414,7 @@ Gloss each piece by **family** ([compounds.md](/compounds)) — English only. Dr
 | Span | `th(hugowul)` | `th-ASIDE[h-quiet]` ([labeled bracket](#phrase-brackets)) |
 | Number / enumeration | `xrowul` | `x-starting-with` |
 
-For **hyphenated names**, gloss each piece (`y-Unodu-x-Ozalan`, `z-Uguda-x-Ududa-x-Owulan`). Mid-word **`x`** stays visible as `-x-`. Do not put Ageben letters in the english slot, except [opaque interiors](#span-interiors).
+For **hyphenated names**, gloss each piece (`y-Abodun-x-Ezalan`, `z-Uguda-x-Ududa-x-Owulan`). Mid-word **`x`** stays visible as `-x-`. Do not put Ageben letters in the english slot, except [opaque interiors](#span-interiors).
 
 ### Mention marker and opaque interiors
 <a id="span-interiors"></a>
@@ -588,7 +588,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 1. English senses only — no Ageben root spellings, except [mention / opaque interiors](#span-interiors). Verb senses are the uninflected lemma (`dance`, not `dancing`).
 2. No `→` etymology chains.
 3. No **-l** / **-m** / **-n**, and no **`@`** / **`~`**, when they only selected the sense-root. Named **-n** is the English name (`z-Azozon`), not `-n`, `@`, or `-proper`.
-4. Compounds / stance / role / span `x` pieces are always hyphenated segments (`y-Unodu-x-Ozalan`). Do not fuse a name into one unsegmented English label.
+4. Compounds / stance / role / span `x` pieces are always hyphenated segments (`y-Abodun-x-Ezalan`). Do not fuse a name into one unsegmented English label.
 5. **-r** uses `←…` (no trailing `-r`); **-x** stays as `-x`. Resume of a house name is `z-←Azozon`, not `z-r`. Fill-ask is `z-wh`, not `z-ar`. `wh` is role-neutral (*who*, *what*, *where*, …), so the gloss never contradicts the translation; `wh-else` for **u**.
 6. Multi-word units are in [phrase brackets](#phrase-brackets), nested by attachment; packages use labeled brackets (`NAME[…]`, `CITE[…]`, `SCOPE[…]`). The line [round-trips](#round-trip) to the exact Ageben.
 7. Free English is on its own **quoted** line (or grammar-table Gloss column, or italic in a checkpoint): a loose sentence (or [alternatives or dialogue turns](#inside-parentheses)) plus at most one note after the closing quote, required when the section teaches the marking the sentence drops ([sentence and note](#free-english-sentence-and-note)). Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line only when `lint:ageben` treats parser output as redundant with that loose line).

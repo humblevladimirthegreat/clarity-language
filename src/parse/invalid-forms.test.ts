@@ -191,7 +191,7 @@ const ROWS: Row[] = [
     valid: "zazozon vowurol thebem thahum blarl zalazun vezuvel.",
   },
   { invalid: "zalazun dogozel.", rejection: "objectNeedsVerb", valid: "zodozel om babahal." },
-  { invalid: "zaber vowurol.", rejection: "resumeUnbound", valid: "zezer vowurol." },
+  { invalid: "zabubur vowurol.", rejection: "resumeUnbound", valid: "zezer vowurol." },
   { invalid: "zalazun vowurol. zelur vehohel.", rejection: "resumeUnbound", valid: "zalazun vowurol. zalazur vehohel." },
   { invalid: "zwuzer vowurol.", rejection: "pointerUnbound", valid: "zazozon vowurol. zwuzer vehohel." },
   { invalid: "zazozon vowurol. vwuzer.", rejection: "pointerSlot", valid: "zazozon vowurol. zalazun vowuror." },
@@ -328,7 +328,7 @@ const ROWS: Row[] = [
   { invalid: "zoxual blarl zazozon vezuvel.", rejection: "hookedJoinClause", valid: "zawan vebal huxal blarl zazozon vezuvel." },
   { invalid: "zawan vebal haexal blanulul.", rejection: "hookedJoinTime", valid: "zawan vebal huxal blanulul." },
   { invalid: "zawan vebal huxoel blanulul.", rejection: "hookedJoinRestrictor", valid: "zawan vebal huxual blanulul." },
-  { invalid: "zalazun theyemwar vudurul.", rejection: "holderSeamW", valid: "zalazun theyomeyel vudurul." },
+  { invalid: "zalazun theyomwar vudurul.", rejection: "holderSeamW", valid: "zalazun theyomeyel vudurul." },
 ];
 
 describe("invalid forms", () => {

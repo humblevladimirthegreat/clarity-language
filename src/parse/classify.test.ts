@@ -52,11 +52,11 @@ describe("classify", () => {
   });
 
   it("reads DIR th e on an arrow root as landmark facing with pair scope", () => {
-    const word = classifyText("gazuhethel");
+    const word = classifyText("gazuhothel");
     assert.deepEqual(word.family, {
       kind: "x",
       xFamily: "lateral",
-      leftRoots: ["azuhe"],
+      leftRoots: ["azuho"],
       rightRoots: [],
       landmark: true,
       scopeVowel: "e",

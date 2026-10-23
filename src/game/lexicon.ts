@@ -32,7 +32,7 @@ export function gameLexicon(tables: ClassifyTables): GameLexicon {
     label(row.abstract, row.root);
     for (const map of [row.posEnglish.concrete, row.posEnglish.abstract]) for (const english of Object.values(map)) label(english ?? "", row.root);
   }
-  // Closed overlay words gloss by their own label (`uwon` is *speaker*).
+  // Closed overlay words gloss by their own label (`uwen` is *speaker*).
   for (const overlay of tables.overlays.values()) {
     const root = senseFormRoot(overlay.senseForm);
     if (tables.published.has(root)) label(overlay.gloss, root);

@@ -574,7 +574,7 @@ function holderSeam(word: MorphWord, tables: ClassifyTables): MorphWord | undefi
 }
 
 /**
- * A holder host + seam with `w` after it (`theyemwar`): a tag in the holder slot. The
+ * A holder host + seam with `w` after it (`theyomwar`): a tag in the holder slot. The
  * seam letter would end a syllable mid-word, so it is never a holder (D-56).
  */
 export function isHolderSeamW(word: MorphWord, tables: ClassifyTables): boolean {

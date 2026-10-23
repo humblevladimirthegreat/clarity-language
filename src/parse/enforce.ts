@@ -709,7 +709,7 @@ function enforceSaySpeaker(result: ParseResult): void {
   }
 }
 
-/** A `/z/` `/d/` `/b/` phrase that holds the speaker (`uwon`, or `ayan` with the listener). */
+/** A `/z/` `/d/` `/b/` phrase that holds the speaker (`uwen`, or `ayan` with the listener). */
 function isSpeakerParticipant(unit: Unit): boolean {
   if (unit.kind !== "np") return false;
   return unit.coord.parts.some((part) =>

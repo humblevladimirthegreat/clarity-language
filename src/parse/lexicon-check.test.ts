@@ -6,10 +6,10 @@ import { unknownWords } from "./lexicon-check.js";
 
 describe("unknownWords", () => {
   it("reports a stem that parses but is not a lexicon word, with its compound split", () => {
-    const words = unknownWords(parse("zezolahezal vowurol."));
+    const words = unknownWords(parse("zezelahezal vowurol."));
     assert.equal(words.length, 1);
-    assert.equal(words[0]!.raw, "zezolahezal");
-    assert.deepEqual(words[0]!.maybeCompound, ["ezo+l+aheza"]);
+    assert.equal(words[0]!.raw, "zezelahezal");
+    assert.deepEqual(words[0]!.maybeCompound, ["eze+l+aheza"]);
   });
 
   it("does not report a listed compound stem or a published root", () => {
@@ -25,9 +25,9 @@ describe("unknownWords", () => {
   });
 
   it("still reports a role compound on an unlisted compound stem", () => {
-    const words = unknownWords(parse("zwuzezolahezal varuyol."));
+    const words = unknownWords(parse("zwuzezelahezal varuyol."));
     assert.equal(words.length, 1);
-    assert.equal(words[0]!.raw, "zwuzezolahezal");
+    assert.equal(words[0]!.raw, "zwuzezelahezal");
   });
 
   it("reports a nonsense root with no split", () => {
@@ -37,7 +37,7 @@ describe("unknownWords", () => {
   });
 
   it("skips an opaque span", () => {
-    assert.deepEqual(unknownWords(parse("zazozon d<kimchi> vawebol.")), []);
+    assert.deepEqual(unknownWords(parse("zazozon d<kimchi> vowurol.")), []);
   });
 
   it("checks the words inside a cite, not the cite as a whole", () => {
