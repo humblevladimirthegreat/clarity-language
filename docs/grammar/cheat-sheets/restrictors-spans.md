@@ -99,7 +99,7 @@ A **span** is a role letter and a pair of brackets. The letter is the role of th
 | [`[…]`](/spans#writing) | Ageben | cite: what someone said, a title | `zazozon d[azozon] vezuyol.` | B |
 | [<code>&lt;…&gt;</code>](/spans#loans) | not Ageben | opaque: a foreign word, code, a name | <code>zazozon d&lt;kimchi&gt; vayebel.</code> | B |
 | [`th(…)`](/spans#asides) | Ageben | aside: a side comment; `g(…)` on a noun, `w(…)` on the next word, `h(…)` on the action | `zazozon vowurol th(hugowul).` | B |
-| [`{ … }`](/span-mention#scope-islands) | Ageben | scope island: a binder inside reaches only that chunk | `zazozon { hogugem zodozel gerulol } vayebel.` | I |
+| [`{ … }`](/scope-islands#scope-islands) | Ageben | scope island: a binder inside reaches only that chunk | `zazozon { hogugem zodozel gerulol } vayebel.` | I |
 
 When the lexicon has a matching root, write the ordinary word, not a span. An aside holds the same speech act as the outer sentence and never goes under `/y/`, `/z/`, `/d/`, `/b/`, or `/v/`.
 
@@ -177,25 +177,25 @@ Braces `{ … }` group one chunk so a binder inside reaches only it. The edges a
 
 | Rule | Detail | Stage |
 |------|--------|-------|
-| [Binder required](/span-mention#scope-islands) | a scope-taking `/h/` or `/th/`, or a join, inside; a hook is never a binder | I |
-| [At most one phrase](/span-mention#scope-islands) | a noun phrase, verb phrase, or `/ɡ/` stack, with its own detail | I |
-| [One island per clause](/span-mention#scope-islands) | islands do not nest | I |
-| [Hosts keep their `/b/`](/span-mention#scope-islands) | host and hosted `/b/` are both inside or both outside | I |
-| [No role letter](/span-mention#scope-islands) | on the edges | I |
-| [Empty `{ }`](/span-mention#scope-islands) | has no reading | I |
+| [Binder required](/scope-islands#scope-islands) | a scope-taking `/h/` or `/th/`, or a join, inside; a hook is never a binder | I |
+| [At most one phrase](/scope-islands#scope-islands) | a noun phrase, verb phrase, or `/ɡ/` stack, with its own detail | I |
+| [One island per clause](/scope-islands#scope-islands) | islands do not nest | I |
+| [Hosts keep their `/b/`](/scope-islands#scope-islands) | host and hosted `/b/` are both inside or both outside | I |
+| [No role letter](/scope-islands#scope-islands) | on the edges | I |
+| [Empty `{ }`](/scope-islands#scope-islands) | has no reading | I |
 
 | Placement | Reading | Stage |
 |-----------|---------|-------|
-| [`/h/` or `/th/` inside](/span-mention#scope-islands) | frames that chunk | I |
-| [`/h/` or `/th/` outside](/span-mention#scope-islands) | ordinary floating word: frames the verb or clause | I |
-| [Join inside](/span-mention#scope-islands) | joins only the interior conjuncts | I |
-| [Join outside](/span-mention#scope-islands) | ordinary lookback; the edges do not filter it | I |
+| [`/h/` or `/th/` inside](/scope-islands#scope-islands) | frames that chunk | I |
+| [`/h/` or `/th/` outside](/scope-islands#scope-islands) | ordinary floating word: frames the verb or clause | I |
+| [Join inside](/scope-islands#scope-islands) | joins only the interior conjuncts | I |
+| [Join outside](/scope-islands#scope-islands) | ordinary lookback; the edges do not filter it | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [A possibility, on one chunk](/span-mention#scope-islands) | `zazozon { hogugem zodozel gerulol } vayebel.` | *Azozon saw what was possibly a red dog.* | I |
-| [A join, on one pair](/span-mention#scope-islands) | `zazozon { zalazun zal } zam vowurol.` | *Azozon and (just Alazun) walk.* | I |
-| [A recipient first, then the binder](/span-mention#scope-islands) | `zazozon { balazun hogugem } vezuyol.` | *Azozon talks, possibly to Alazun.* | I |
+| [A possibility, on one chunk](/scope-islands#scope-islands) | `zazozon { hogugem zodozel gerulol } vayebel.` | *Azozon saw what was possibly a red dog.* | I |
+| [A join, on one pair](/scope-islands#scope-islands) | `zazozon { zalazun zal } zam vowurol.` | *Azozon and (just Alazun) walk.* | I |
+| [A recipient first, then the binder](/scope-islands#scope-islands) | `zazozon { balazun hogugem } vezuyol.` | *Azozon talks, possibly to Alazun.* | I |
 
 ## Don't mix up {#dont-mix-up}
 
@@ -208,4 +208,4 @@ Braces `{ … }` group one chunk so a binder inside reaches only it. The edges a
 | `herulal hal` *only when it rains* ([a restrictor list](/more-occasions#occasions-vs-a-dependent-when)) | | `thohem blarl` *if a whole sentence* ([a dependent](/more-occasions#occasions-vs-a-dependent-when)) |
 | `d[azozon]` *what was said* ([a cite](/spans#writing)) | | `donuren` *the one-word name* ([an ordinary -n word](/spans#exact-paraphrase-proper)) |
 | `d@[onuren alazun]` *the work* ([a proper span](/spans#exact-paraphrase-proper)) | | `glegon` *the name as spelling* ([a mention](/span-mention#mention)) |
-| `th(…)` *an aside* ([a comment](/spans#asides)) | | `{ … }` *a scope island* ([a chunk for a binder](/span-mention#scope-islands)) |
+| `th(…)` *an aside* ([a comment](/spans#asides)) | | `{ … }` *a scope island* ([a chunk for a binder](/scope-islands#scope-islands)) |

@@ -22,7 +22,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | tool (*writes by / with a hammer*) | hook **`aol`** (*using*) + `/b/` | [Hooks](/hooks#extra-noun) |
 | place (*by the station*) | hook **`em`** (*near*) + `/b/` (or **`el`** *at*) | [Hooks](/hooks#extra-noun) |
 | deadline (*by 15:30*, *by the storm*) | **`huvahum`** + `/b/` (or **`huvahum blarl`** + sentence) | [By a deadline](/dependents#by-deadline) |
-| deadline a day away (*by tomorrow*) | **`huvahum`** + a signed count in `/b/` | [Count from now](/universality#dated-channel) |
+| deadline a day away (*by tomorrow*) | **`huvahum`** + a signed count in `/b/` | [Count from now](/dated-channel#dated-channel) |
 | manner (*by walking hastily*) | ordinary adverb `/h/`, no `/b/` | [Adverbs](/clause#adverbs-h) |
 | origin (*Alazun from the city*) | **`haham` / `gaham`** + `/b/` | [Of relations](/of-relations#of-relations) |
 
@@ -46,7 +46,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | recipient / addressee (*gives a book to Alazun*) | plain `/b/` | [Extra nouns](/clause#extra-nouns) |
-| goal reached (*walks to the station*, *from a house to a station*) | hook **`el`** (*at*) + `/b/`; for *from … to*, **`ul`** + the source first | [Locative relations](/of-relations#locative-relations) |
+| goal reached (*walks to the station*, *from a house to a station*) | hook **`el`** (*at*) + `/b/`; for *from … to*, **`ul`** + the source first | [Locative relations](/locative-relations#locative-relations) |
 | heading for, not there yet (*on the way to the train*) | hook **`oel`** (*toward*) + `/b/` | [Hooks](/extra-noun-hooks#extra-noun-intermediate) |
 | a stretch of time (*from the storm to the bell*) | one *from … to* unit: **`ul`** + start, **`oel`** + end | [Time](/digit-strings#time) |
 | end of a number range (*from 3 to 5*) | **`al`** between the two numbers | [Ranges](/numbers-applied#ranges) |
@@ -96,7 +96,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | role one acts in (*as a teacher, I …*) | role compound on `/h/`: `hwozeduyol` | [The role you act in](/role-scope#capacity) |
 | not in that role (*not as a teacher*, off duty) | scope **`ue`** on `/h/`: `hwuozeduyol` | [The role you act in](/role-scope#capacity) |
 | resemblance (*walks as / like a duck*) | **`hewem`** + `/b/` | [Simile](/relations#similative) |
-| how close (*exactly like*, *a bit like*) | **`hewel`** for an exact match (`hewel bladozal`), or `/w/` before **`hewem`**: `wubugem hewem bladozal` (*precisely*), `wamezem hewem bladozal` (*a bit*) | [Exactly like](/of-relations#exactly-like), [simile](/relations#similative), [degree words](/left-bound#degree-w) |
+| how close (*exactly like*, *a bit like*) | **`hewel`** for an exact match (`hewel bladozal`), or `/w/` before **`hewem`**: `wubugem hewem bladozal` (*precisely*), `wamezem hewem bladozal` (*a bit*) | [Exactly like](/exactly-like#exactly-like), [simile](/relations#similative), [degree words](/left-bound#degree-w) |
 | resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`hewem blarl`** + the event | [Simile](/relations#similative) |
 | pretense (*as if they walk*) | **NOTIONAL** | [Notional](/notional#notional) |
 | dated books (*as of Friday*) | **`henam` / `hunom`** + `/b/` | [*As-of*](/as-of#as-of) |
@@ -130,7 +130,7 @@ One English word, one row: the form that says it and the section that teaches it
 
 | English itch | Ageben job | Teach |
 |--------------|------------|-------|
-| *in* / *into* / *inside* / *within* / *aboard* (*runs into a train*, *sits inside the house*) | hook **`al`** + `/b/`; the verb says whether anything moves; leave out the `/b/` when the place is clear (*went aboard*) | [Locative relations](/of-relations#locative-relations) |
+| *in* / *into* / *inside* / *within* / *aboard* (*runs into a train*, *sits inside the house*) | hook **`al`** + `/b/`; the verb says whether anything moves; leave out the `/b/` when the place is clear (*went aboard*) | [Locative relations](/locative-relations#locative-relations) |
 | *on* / *onto* / *upon* (*sits on a chair*, *climbs onto the table*) | hook **`ael`** + `/b/`; the verb says whether anything moves | [Hooks](/hooks#extra-noun) |
 | *on it* (*sits on it too*) | resume hook **`aor`** | [Point back](/discourse-hooks#hook-resume) |
 | *beside* / *next to* / *nearby* (*sleeps near me*) | hook **`em`** + `/b/` | [Hooks](/hooks#extra-noun), [here and there](/here-there#deixis) |
@@ -139,8 +139,8 @@ One English word, one row: the form that says it and the section that teaches it
 | *under* / *below* / *beneath* / *underneath* (*sleeps under the tree*) | gravity down **`hoduhol`** (on a noun, **`goduhol`**) + `/b/` | [Gravity](/viewpoint#gravity) |
 | *above* / *upper* (*the book above the tree*) | gravity up **`habuhol`** (on a noun, **`gabuhol`**) + `/b/` | [Gravity](/viewpoint#gravity) |
 | *left side* / *right side* / *behind* / *in front of* (*behind the house*) | a direction with **`th`** + **`o`** + `/b/` landmark, such as `gazuhothel blohehal` | [Landmark's own front](/viewpoint#landmark-facing) |
-| *with* / *alongside* / *along with* (*runs with Alazun*) | **`han`** + `/b/` | [Join-relations](/join-across-roles#join-relations) |
-| *without* / *apart from* (*walks apart from the house*) | **`huan`** + `/b/` | [Join-relations](/join-across-roles#join-relations) |
+| *with* / *alongside* / *along with* (*runs with Alazun*) | **`han`** + `/b/` | [Join-relations](/join-relations#join-relations) |
+| *without* / *apart from* (*walks apart from the house*) | **`huan`** + `/b/` | [Join-relations](/join-relations#join-relations) |
 | *via* / *by way of* / *through* / *along* (*goes via the station*, *walks along the road*) | hook **`uel`** + `/b/` (**`uem`** for a setting) | [Hooks](/hooks#extra-noun) |
 | *through there* | resume hook **`uer`** | [Point back](/discourse-hooks#hook-resume) |
 | *with it* (the same tool) | resume hook **`aer`** | [Point back](/discourse-hooks#hook-resume) |
@@ -149,11 +149,11 @@ One English word, one row: the form that says it and the section that teaches it
 | *outside* / *external* / *outdoors* (*sits outside the house*) | hook **`al`** + the landmark + the join **`bul`** (*in, not the house*): `al bohehal bul` | [Hooks](/hooks#extra-noun), [negation](/joins#negation-u) |
 | *throughout* / *all over* (*walks throughout the house*) | **`el bual`** *everywhere*, then the landmark's hook: `el bual al bohehal` | [Somewhere, nowhere, everywhere](/here-there#place-indefinites) |
 | *abroad* (*in another country*) | **`el bahal bur`** (the kind *country*, then *some other one*) | [Somewhere, nowhere, everywhere](/here-there#place-indefinites) |
-| *overseas* (*across the water*) | **`ohom`** *across* + the water: `hohom blohalal` | [Locative relations](/of-relations#locative-relations) |
+| *overseas* (*across the water*) | **`ohom`** *across* + the water: `hohom blohalal` | [Locative relations](/locative-relations#locative-relations) |
 | *bottom* (the low part of a thing) | `zoduhol gobom blohehal` (a down part of the house) | [Of relations](/of-relations#of-relations) |
 | *parallel* (*parallel to Alazun*) | the direction, then *like*: `gurom gewem blalazun` | [Simile](/relations#similative) |
 | *lean* / *tilt* | `voduhol hruwul` (*almost falls*) | [Already, still, not yet](/already-still-yet#phasal) |
-| *corner* / *around the corner* | `zadugul` (the corner); `el badugul` *at the corner*; `hevam bladugul` *around the corner* | [Locative relations](/of-relations#locative-relations) |
+| *corner* / *around the corner* | `zadugul` (the corner); `el badugul` *at the corner*; `hevam bladugul` *around the corner* | [Locative relations](/locative-relations#locative-relations) |
 | *beyond* / *farther than* | rank on distance: `zohehal zol guzavom` (farther than the house) | [Bar words](say-amounts.md#bar-words) |
 | *versus* / *against* (*Azozon versus Alazun*) | hook **`uol`** + `/b/` | [Hooks](/hooks#extra-noun) |
 | *somewhere* / *nowhere* / *everywhere* / *elsewhere* | **`el bar`** / **`el bal`** / **`el bual`** / **`el bur`** | [Somewhere, nowhere, everywhere](/here-there#place-indefinites) |
@@ -178,7 +178,7 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 | *come* (*is coming to you*) | motion verb `vavobol` + hook **`oel`** + `/b/` for the person it heads to | [Here and there](/here-there#deixis) |
 | *bring* / *take* (*brings me the package*) | `velobal` (*carry*) + object + **`oel`** (toward) or **`ul`** (away from) | [Here and there](/here-there#deixis) |
 | *arrive* / *reach* (*has arrived at the house*) | **`havem`** (*already*) + `vavobol` + **`oel`** + `/b/` | [Already, still, not yet](/already-still-yet#phasal) |
-| *approach* / *head for* | `vavobol` + **`oel`** + `/b/` (no **`havem`**: still on the way) | [Locative relations](/of-relations#locative-relations) |
+| *approach* / *head for* | `vavobol` + **`oel`** + `/b/` (no **`havem`**: still on the way) | [Locative relations](/locative-relations#locative-relations) |
 | *follow* (*walks behind Alazun*) | manner direction **`hazuhothel`** + `/b/` for whoever leads | [Landmark's own front](/viewpoint#landmark-facing) |
 
 ### Matched lists and last resorts {#matched-lists}

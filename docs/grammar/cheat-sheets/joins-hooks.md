@@ -36,7 +36,7 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | **-m** | [open](/joins#and-lists-a): *(and possibly more)*; [alone](/joins#standalone-phrase), *as far as I know* | B |
 | **-r** | [one unnamed member](/joins#unspecified-member-r-phrase) (*something*, *someone*); one vowel only | B |
 | **-rx** | [an unnamed group](/joins#unspecified-member-r-phrase) (`zarx` *some ones*); `/z/` `/d/` `/b/` only | B |
-| **-n** | `/z/` `/d/` `/b/`: [a named list](/join-islands#named-list); `/x/`: [sequence](/clause-sequence#clause-sequence); `/v/`: [join-act verb](/join-across-roles#join-act-verbs); `/ɡ/` `/h/`: [join-relation](/join-across-roles#join-relations) | I–A |
+| **-n** | `/z/` `/d/` `/b/`: [a named list](/join-islands#named-list); `/x/`: [sequence](/clause-sequence#clause-sequence); `/v/`: [join-act verb](/join-acts#join-act-verbs); `/ɡ/` `/h/`: [join-relation](/join-relations#join-relations) | I–A |
 
 <PageBreak />
 
@@ -99,7 +99,7 @@ A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `x
 
 ## Joins across roles {#across-roles}
 
-The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, they become [join-act verbs](/join-across-roles#join-act-verbs), [join-relations](/join-across-roles#join-relations) (always followed by one `/b/`), and [clause sequence](/clause-sequence#clause-sequence) words. Sequence is Beginner; join-act and join-relations are Intermediate.
+The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, they become [join-act verbs](/join-acts#join-act-verbs), [join-relations](/join-relations#join-relations) (always followed by one `/b/`), and [clause sequence](/clause-sequence#clause-sequence) words. Sequence is Beginner; join-act and join-relations are Intermediate.
 
 | Vowel | Verb (`/v/` + object) | Relation (`/ɡ/` / `/h/` + `/b/`) | Between clauses (`/x/`) |
 |-------|------------------------|----------------------------------|--------------------------|
@@ -223,9 +223,9 @@ Role letter, the hook's vowels (**`m`** for its frame, **`r`** to point back), *
 |------|----|------|
 | `zodozel zul` *no dog* ([join denies](/universals-domains#universals-domains-generics)) | | `zuvayal ul zazozon` *the family except Azozon* ([hook takes B out of A](/hooks#except)) |
 | `zexual blohehal vezuvel` *everyone at the house sleeps* ([who counts](/hooked-joins#hooked-joins)) | | `zual vezuvel el bohehal` *everyone sleeps at the house* (where it happens) |
-| `zuhunam gan blazozon` *a team including Azozon* ([join-relation](/join-across-roles#join-relations)) | | `zuhunam al zazozon` *the team, including Azozon* (afterthought) |
+| `zuhunam gan blazozon` *a team including Azozon* ([join-relation](/join-relations#join-relations)) | | `zuhunam al zazozon` *the team, including Azozon* (afterthought) |
 | `zazozon zahelan zal` *the two of them* ([vs a range](/ending-grids#ranges)) | | `zazozon oel zahelan` *Azozon through Ahelan*; `zazozon zahelan zaol` *Azozon, then Ahelan* |
 | hook `oel` *toward X* ([where a path ends](/extra-noun-hooks#extra-noun-intermediate)) | | `zaol` + X *start with X* ([where it starts](/rank-joins#sequence-ao)) |
 | `xan` *and then* ([what happened next](/clause-sequence#clause-sequence)) | | `xaol` ([the order is part of the claim](/vp-clause-forms#vp-clause-forms): a recipe) |
-| `vun` [*refuses*](/join-across-roles#join-act-verbs) | | `vuan` *excludes* |
+| `vun` [*refuses*](/join-acts#join-act-verbs) | | `vuan` *excludes* |
 | `el …` *Instead, …* ([replaces the last claim](/hooks#discourse-hooks)) | | `er …` *Anyway, …* ([back to the main line](/discourse-hooks#hook-resume)) |

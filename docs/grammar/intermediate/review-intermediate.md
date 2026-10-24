@@ -55,6 +55,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *relatedness* | `awel` |
 | *PATTERN* | `thubom` |
 | *hope* | `thuwuyom` |
+| *want-unstated* | `thalom` |
+| *possibility* | `hogugem` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -462,6 +464,54 @@ z-Alazun | v-walk | h-role-agent-guard
 The role the act is done in sits on `/h/`; `/ɡ/` on Alazun would say Alazun **is** a guard who walks.
 
 **Rule:** [The role you act in](role-scope.md#capacity)
+:::
+
+**20.** *I want Azozon to walk.* `zazozon thalom vowurol.` or `zazozon thogel vowurol.`
+
+::: details Show answer
+`zazozon thalom vowurol.`
+
+z-Azozon | th-WANT-unstated | v-walk
+
+**`thalom`** is a want; **`thogel`** would be a final decision.
+
+**Rule:** [Want](want.md#want)
+:::
+
+**21.** *Azozon saw what was possibly a sandwich.* `zazozon { hogugem dedal } vayebel.` or `zazozon hogugem dedal vayebel.`
+
+::: details Show answer
+`zazozon { hogugem dedal } vayebel.`
+
+z-Azozon | SCOPE[h-possibility | d-sandwich] | v-see
+
+Inside braces, **`hogugem`** reaches only that chunk.
+
+**Rule:** [Scope islands](scope-islands.md#scope-islands)
+:::
+
+**22.** *Alazun walks exactly like a duck.* `zalazun hewel bladozal vowurol.` or `zalazun hewem bladozal vowurol.`
+
+::: details Show answer
+`zalazun hewel bladozal vowurol.`
+
+z-Alazun | [h-exactly-like | bl-duck] | v-walk
+
+**-l** locks an exact match; **-m** is resemblance.
+
+**Rule:** [Exactly like](exactly-like.md#exactly-like)
+:::
+
+**23.** *Alazun sits around a sandwich.* `zalazun vehohel hevam bledal.` or `zalazun vehohel hohom bledal.`
+
+::: details Show answer
+`zalazun vehohel hevam bledal.`
+
+z-Alazun | v-sit | [h-around | bl-sandwich]
+
+**`hevam`** is on all sides; **`hohom`** would be edge to far edge.
+
+**Rule:** [Locative relations](locative-relations.md#locative-relations)
 :::
 
 #### What changes {#intermediate-what-changes}

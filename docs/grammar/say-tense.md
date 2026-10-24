@@ -6,20 +6,20 @@ Recipes for English *walked* / *has walked* / *will walk* / *used to walk*, and 
 
 ### One English tense, several jobs {#tense-jobs}
 
-**Needs:** [How you know](/evidentiality#evidentiality) · [Forecasts](/evidentiality#forecast) · [Dated channel](/universality#dated-channel) · [RESIDUE and FORMER](/notional-standing#residue) · [Already, still, not yet](/already-still-yet#phasal) · [*as-of*](/as-of#as-of)
+**Needs:** [How you know](/evidentiality#evidentiality) · [Forecasts](/evidentiality#forecast) · [Dated channel](/dated-channel#dated-channel) · [RESIDUE and FORMER](/notional-standing#residue) · [Already, still, not yet](/already-still-yet#phasal) · [*as-of*](/as-of#as-of)
 
 An English tense bundles up to three questions: **when** the event sits, **how you know** it, and whether it **still counts** now. Ageben asks them separately. Pick the row for the English form, then the job you mean.
 
 | English | You mean | Ageben |
 |---------|----------|--------|
 | *walks* (now) | you are watching it | LIVE **`thugem`** |
-| *walks* (now) | no channel named | bare verb ([this stretch](/ability#predict-evidentiality)), unless an earlier channel is still [carried](/evidentiality#carry-forward) |
+| *walks* (now) | no channel named | bare verb ([this stretch](/evidentiality#forecast)), unless an earlier channel is still [carried](/evidentiality#carry-forward) |
 | *walked* | you remember it | MEMORY **`thevum`** |
 | *walked* | going by clues or cases | CLUES **`theyom`** / PATTERN **`thubom`** plus a `-` offset |
-| *walked* | they told you, or you read it | REPORTED **`thebam`** plus a `-` [offset](/universality#dated-channel) |
+| *walked* | they told you, or you read it | REPORTED **`thebam`** plus a `-` [offset](/dated-channel#dated-channel) |
 | *walked* (telling what happened) | one ground for the whole story | the channel and offset on the first sentence; bare verbs after it keep them ([carry forward](/evidentiality#carry-forward)) |
 | *walked* (a made-up story) | it is fiction | NOTIONAL **`theyum`** on the first sentence; bare verbs after it stay in the story ([carry forward](/evidentiality#carry-forward)) |
-| *walked yesterday* / *three hours ago* | a measured time back | channel + signed amount ([dated channel](/universality#dated-channel)) |
+| *walked yesterday* / *three hours ago* | a measured time back | channel + signed amount ([dated channel](/dated-channel#dated-channel)) |
 | *has walked* | the outcome still counts | RESIDUE **`haram`** |
 | *has already walked* | the change has come | **`havem`** |
 | *has walked before* / *has never walked* | at least once / not once | **`havem`** + **`har`** / **`hal`** ([ever / never](/already-still-yet#ever-never)) |
@@ -42,7 +42,7 @@ Every offset counts from now, or from the *as-of* now when one is set. No row ne
 
 ### Simple past: pick how you know {#simple-past}
 
-**Needs:** [Live vs memory](/live-and-memory#live-vs-memory) · [Dated channel](/universality#dated-channel)
+**Needs:** [Live vs memory](/live-and-memory#live-vs-memory) · [Dated channel](/dated-channel#dated-channel)
 
 English *Azozon walked* hides whether you saw it, read it, or were told. Choose the channel. A remembered sighting is MEMORY. Add a `-` amount to say how long ago.
 
@@ -142,7 +142,7 @@ For *was walking when …*, keep the ordinary verb and hang the other event on [
 
 ### Future: plan, forecast, promise {#future}
 
-**Needs:** [Plan](/intention#plan-predict) · [Plan or forecast](/ability#predict-evidentiality) · [Forecasts](/evidentiality#forecast) · [Consent](/permission-consent#consent)
+**Needs:** [Plan](/intention#plan-predict) · [Forecasts](/evidentiality#forecast) · [Consent](/permission-consent#consent)
 
 English *will* is three different claims.
 
@@ -180,7 +180,7 @@ English *will* is three different claims.
 
 ### Everyday time words {#time-words}
 
-**Needs:** [Dated channel](/universality#dated-channel) · [Now and today](/universality#now) · [RESIDUE and FORMER](/notional-standing#residue) · [Already, still, not yet](/already-still-yet#phasal) · [Forecasts](/evidentiality#forecast) · [Dependent clauses](/dependents#dependent-clauses)
+**Needs:** [Dated channel](/dated-channel#dated-channel) · [Now and today](/dated-channel#now) · [RESIDUE and FORMER](/notional-standing#residue) · [Already, still, not yet](/already-still-yet#phasal) · [Forecasts](/evidentiality#forecast) · [Dependent clauses](/dependents#dependent-clauses)
 
 English time words (*today*, *previously*, *continue*) mostly ride on the same channels and offsets as tense. Each row says which one.
 
@@ -370,7 +370,7 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 
 ### Will, want, try, let's {#will-want}
 
-**Needs:** [Plan](/intention#plan-predict) · [Want](/ability#want) · [Try](/ability#try) · [Hopefully](/feelings-permission#speaker-attitude) · [Speech act](/firm-soft#speech-act)
+**Needs:** [Plan](/intention#plan-predict) · [Want](/want#want) · [Try](/ability#try) · [Hopefully](/feelings-permission#speaker-attitude) · [Speech act](/firm-soft#speech-act)
 
 | English | Ageben |
 |---------|--------|

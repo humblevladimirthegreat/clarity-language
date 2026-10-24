@@ -58,8 +58,8 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 | [A content word ends in **-l**, **-m**, **-n**, or **-r**](/phonology#word-edges), the audible end | `azozon` = *a-zo-zon* | B |
 | [Inside a word, a consonant starts a syllable](/phonology#word-edges) and never closes one | `odozel` = *o-do-zel* | B |
 | [Roots are vowel-first](/phonotactics#phonotactics): **V(CV)+** | `zobulol` = `z` + `obulo` + **-l** | I |
-| [Place-name root](/singability#place-name-roots) with no cluster: seven letters, ends `n` + vowel | `azabanan` *Japan* | A |
-| [Place-name root](/singability#place-name-roots) that keeps a cluster | `avranzan` *France* | A |
+| [Place-name root](/place-name-roots#place-name-roots) with no cluster: seven letters, ends `n` + vowel | `azabanan` *Japan* | I |
+| [Place-name root](/place-name-roots#place-name-roots) that keeps a cluster | `avranzan` *France* | I |
 | [A root's last two letters hint at its kind and job](/root-tails#root-tails) | `ogoze` *cat*: `z` a creature, `o` one of its kind | A |
 
 ### Parts of a word, in order {#parts-in-order}
@@ -113,4 +113,4 @@ Ten letters also start a [digit syllable](/numbers#counts); the table is [here](
 | [No stress in spelling](/singability#singability-constraints) | rhythm may stress a beat | A |
 | [Voiced preferred](/singability#singability-constraints) | unvoiced is style only | A |
 | [Vowel pitch in song](/singability#one-note) | dropped: the melody owns the pitch | A |
-| [Legal clusters](/singability#singability-constraints) | `gl-`; `bl-`, with a [syllabic `l`](/phonotactics#syllabic-l) before `r` / `w`; role letter + `r` (number) or + `w` (tag); `-lx` `-mx` `-nx` `-rx`; `-ln`; `-rl` `-rm` `-rth`; clusters in a [place-name root](/singability#place-name-roots) | A |
+| [Legal clusters](/singability#singability-constraints) | `gl-`; `bl-`, with a [syllabic `l`](/phonotactics#syllabic-l) before `r` / `w`; role letter + `r` (number) or + `w` (tag); `-lx` `-mx` `-nx` `-rx`; `-ln`; `-rl` `-rm` `-rth`; clusters in a [place-name root](/place-name-roots#place-name-roots) | A |

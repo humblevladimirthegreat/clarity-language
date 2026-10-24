@@ -123,7 +123,7 @@ Gravity works the same way: bare **`oduho`** + `/b/` is *under* the landmark, an
 >
 > "A bird sits above the dog."
 
-**Compare with:** locative *at* / *on* / *inside* name how the figure sits relative to the landmark ([locative relations](of-relations.md#locative-relations)), not a compass heading.
+**Compare with:** locative *at* / *on* / *inside* name how the figure sits relative to the landmark ([locative relations](locative-relations.md#locative-relations)), not a compass heading.
 
 <!-- cheat-sheet: roles -->
 | Ageben | Use | English |

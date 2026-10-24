@@ -161,7 +161,7 @@ In English: [Claritish: How sure are you?](claritish/could-be.md) and [How do yo
 
 English *always* and *never* sound absolute even when you mean *usually*, and they do not say how many cases they rest on.
 
-A [general claim](/universality#universality) says in its ending whether it allows exceptions: closed *always* (`hual`) allows none, and open *always* (`huam`) leaves them open, like *usually* or *as a rule*. A PATTERN evidence word says how much the claim rests on, from a well-established pattern (`thubol`) to only a few cases (`thubor`).
+A [general claim](/usually-vs-must#universality) says in its ending whether it allows exceptions: closed *always* (`hual`) allows none, and open *always* (`huam`) leaves them open, like *usually* or *as a rule*. A PATTERN evidence word says how much the claim rests on, from a well-established pattern (`thubol`) to only a few cases (`thubor`).
 
 Saying *usually* when you mean it, and *from a few cases* when that is all you have, helps you catch overgeneralizing before one bad day becomes *it always goes wrong*.
 
@@ -221,7 +221,7 @@ In English: [Claritish: Allowed and required](claritish/allowed-required-agreed.
 
 English *will* mixes plan and prediction, and *I want to* can sound like a promise. It is easy to talk as if the future were already known, and a confident prediction can fuel anxiety or overconfidence. A pick, meanwhile, often sounds more locked than it is.
 
-Ageben splits them: [want](/ability#want) for what you wish for, without meaning to do it yet; [PLAN](/intention#plan-predict) for what you mean to do; [DECISION](/ability#decision) for how revisable a pick is; and a [forecast](/evidentiality#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `blral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
+Ageben splits them: [want](/want#want) for what you wish for, without meaning to do it yet; [PLAN](/intention#plan-predict) for what you mean to do; [DECISION](/ability#decision) for how revisable a pick is; and a [forecast](/evidentiality#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `blral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
 
 Wants, plans, and decisions all live in someone's mind, so with nothing else marked they are yours; someone else's want, plan, or decision takes a [holder](/holder#holder) that says how you know it.
 
@@ -291,7 +291,7 @@ Many roots have an **abstract** sense beside a **concrete** one, so an idea you 
 - [Live look as attesting](/live-and-memory#live-vs-memory) ([a guess as fact](#trap-certainty)): you report what you see while the scene is still in view.
 - [Residue as unpaid debt](/notional-standing#residue) ([a moment as identity](#trap-identity)): the result still counts, like a balance still owed; not a past tense.
 - [Former climate as an empty nest](/notional-standing#former-climate) ([a moment as identity](#trap-identity)): the nesting season is over; a pattern that has ended, not a past tense.
-- [A pattern as paw-prints](/universality#universality) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
+- [A pattern as paw-prints](/usually-vs-must#universality) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
 - [*As if* as theater](/notional#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene; what really happened stays **offstage**.
 - [Mechanism as gears](/iff-fault#cause) ([a wish as a law](#trap-wish-as-law)): you say *how* a result comes about, like gears meshing, not only that it follows.
 - [Affect as water](/feelings-permission#emotion-compose) ([a feeling as a label](#trap-feeling)): surging, flowing, or still water (motion) plus where the feeling sits or points, instead of an opaque emotion label that hides the sake.

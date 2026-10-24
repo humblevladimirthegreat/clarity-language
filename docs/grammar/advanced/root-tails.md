@@ -8,7 +8,7 @@ band: advanced
 
 A root ends in a **tail**, its last two letters, that hints at what it names. The last consonant says what **kind** of thing the root's concrete sense is, and the last vowel says what **job** it does. On a five-letter root the first three letters keep it apart from others of the same kind; on a three-letter root the first vowel does.
 
-The tail is a memory aid. No grammar reads it, and you never build a root from the tail. It just means that if you know what a thing is, you already know two letters of its root, and an unknown word in a text still tells you roughly what it names. A country or territory name has no tail: it is spelled from the English sound ([place-name roots](singability.md#place-name-roots)).
+The tail is a memory aid. No grammar reads it, and you never build a root from the tail. It just means that if you know what a thing is, you already know two letters of its root, and an unknown word in a text still tells you roughly what it names. A country or territory name has no tail: it is spelled from the English sound ([place-name roots](place-name-roots.md#place-name-roots)).
 
 Each letter **echoes** a job it already has somewhere in the grammar: the letter points at that job as a memory aid, and grammar does not read it.
 

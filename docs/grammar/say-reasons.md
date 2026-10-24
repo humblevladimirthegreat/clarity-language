@@ -279,7 +279,7 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 
 ### Biased, wishful thinking, overconfident {#biased}
 
-**Needs:** [Motive](/prescription#sake-preference) · [Want](/ability#want) · [MAY](/knowing#may) · [Speech manner](/speech-acts#speech-manner) · [Every bar](/stance-bars#stance-bars)
+**Needs:** [Motive](/prescription#sake-preference) · [Want](/want#want) · [MAY](/knowing#may) · [Speech manner](/speech-acts#speech-manner) · [Every bar](/stance-bars#stance-bars)
 
 English *biased* says a view may be bent by what the holder wants from it. Ageben says that outright: put a [motive](/prescription#sake-preference) on the thinking, so the view is held *for a stake*. Name the sake when you know which one, or use the unspecified sake **`uda`**. *Wishful thinking* and *I'd like to believe* are a want on the thinking itself. *Overconfident* ranks your trust against what the clues warrant: a CLUES [bar](/stance-bars#stance-bars) on *trust*.
 
@@ -442,7 +442,7 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 >
 > "It always rains if there are clouds."
 
-**Compare with:** to say how you know a general claim, put a channel on it ([channels on a generalization](/universality#universality)). **CAUSE** is **`thewom`**. English *habit* when a cue produces the act is [habit](#habit).
+**Compare with:** to say how you know a general claim, put a channel on it ([channels on a generalization](/usually-vs-must#universality)). **CAUSE** is **`thewom`**. English *habit* when a cue produces the act is [habit](#habit).
 
 ### Habit, triggered by {#habit}
 
@@ -479,7 +479,7 @@ English *habit*, *I have a habit of*, and *triggered by* pack how often the act 
 
 ### Hoping something will happen {#hope-forecast}
 
-**Needs:** [Hopefully](/feelings-permission#speaker-attitude) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [soon](/universality#dated-channel)
+**Needs:** [Hopefully](/feelings-permission#speaker-attitude) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [soon](/dated-channel#dated-channel)
 
 English *I hope X will happen* is two claims: you want it, and you expect it. **`thuwuyom`** gives the wanting. The *will* is a [forecast](/evidentiality#forecast), so it needs a channel plus **`blral`** (or **`blrawum`** for *soon*). If nothing backs it but your gut, the honest channel is INTUITION: faint **`thaber`** for a slim hope, **`thabem`** for an ordinary one.
 
@@ -751,7 +751,7 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 **Needs:** [Emotion compose](/feelings-permission#emotion-compose) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [evidence strength](/evidentiality#evidence-strength) · [RESIDUE](/notional-standing#residue) · [NOTIONAL](/notional#notional)
 
 
-A feeling word is how you feel **now**. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`goyom`**, as for any [forecast](/evidentiality#forecast) or [dated claim](/universality#dated-channel): the offset dates the stimulus, and the channel says how you know it.
+A feeling word is how you feel **now**. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`goyom`**, as for any [forecast](/evidentiality#forecast) or [dated claim](/dated-channel#dated-channel): the offset dates the stimulus, and the channel says how you know it.
 
 > `zezuyol wuwathuraer goyom thebal blral.`
 >

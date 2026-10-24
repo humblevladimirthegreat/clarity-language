@@ -85,7 +85,7 @@ Public helpers: `previewSpeech(text)`, `previewPhonemes(text)`, `skipLabel(reaso
 | Orthographic digit-group commas | Spoken separator per numbers.md | [digitless-exponents.md](/digitless-exponents#group-separator) |
 | `.` / `?` / `!`, soft **-m** body | Boundary tags `period` / `qmark` / `bang` / `softM` | [dependents.md](/sentence-linkers#orthography-and-prosody-periods) |
 | `/x/` continue vs new `/y/` turn | `xContinue` / `yTurn` | same |
-| Scope island `^ … ^` | `islandEnter` / `islandExit`; no spoken words | [spans.md](/span-mention#scope-islands) |
+| Scope island `^ … ^` | `islandEnter` / `islandExit`; no spoken words | [spans.md](/scope-islands#scope-islands) |
 
 Skip reasons (`foreign`, `writing`, `shorthand`, `punct`, `error`) are surfaced to the UI via `skipLabel`.
 

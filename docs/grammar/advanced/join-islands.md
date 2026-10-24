@@ -6,7 +6,7 @@ band: advanced
 
 ### Scope islands {#scope-islands-join}
 
-A join takes every same-role item before it. When English groups a small list inside a bigger one of the same role (*Azozon and (just water)*), wrap the small list and its join in **`{ … }`**, called a scope island. The join inside the island takes members only from between those marks. One island per clause; material outside needs its own outer join. An island holds at most one phrase and may close partway through it ([scope islands](/span-mention#scope-islands)).
+A join takes every same-role item before it. When English groups a small list inside a bigger one of the same role (*Azozon and (just water)*), wrap the small list and its join in **`{ … }`**, called a scope island. The join inside the island takes members only from between those marks. One island per clause; material outside needs its own outer join. An island holds at most one phrase and may close partway through it ([scope islands](/scope-islands#scope-islands)).
 
 | Ageben | English |
 |--------|---------|
@@ -34,7 +34,7 @@ When a list is a familiar set phrase (*Stop–Drop–Roll*), end its join with *
 >
 > "bread and butter" (the familiar bundle)
 
-Standalone **…an** (no items) is *null* / *void*. Under `/ɡ/` `/h/`, **-n** forms join-derived relations; see [Stance joins](/join-across-roles#join-relations).
+Standalone **…an** (no items) is *null* / *void*. Under `/ɡ/` `/h/`, **-n** forms join-derived relations; see [Stance joins](/join-relations#join-relations).
 
 **Compare with:** clause **`xan`** is *and then*, not a named list.
 
@@ -47,8 +47,8 @@ A join has at most two vowels. Which endings it can take depends on its role let
 |-------|----------------|-------|
 | `/z/` `/d/` `/b/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**), **-rx** | phrase lists; **-n** is a named package; **-rx** is an [unnamed group](/joins#unspecified-member-r-phrase) |
 | `/w/` | none | not a phrase list: the only `/w/` before a join word is [`wubam`](/rank-joins#respectively), with **-l** or **-m** |
-| `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](/more-occasions#defined-core-full); **-n** forms are [join-relations](/join-across-roles#join-relations) |
-| `/v/` | **-l** / **-m** / **-r**, each with **-x** | **-x** is one [shared act](/collectives#verbs-v); parallel **-n** forms are [join-act verbs](/join-across-roles#join-act-verbs) |
+| `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](/more-occasions#defined-core-full); **-n** forms are [join-relations](/join-relations#join-relations) |
+| `/v/` | **-l** / **-m** / **-r**, each with **-x** | **-x** is one [shared act](/collectives#verbs-v); parallel **-n** forms are [join-act verbs](/join-acts#join-act-verbs) |
 | `/th/` | **-l** / **-m** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | [stance joins](/join-across-roles#stance-joins) on stance words (*not because…*) |
 | `/x/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | between clauses, not after them ([clause joins](/joins#clause-joins)); forms: [Stance joins](/join-across-roles) |
 

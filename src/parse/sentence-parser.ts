@@ -231,7 +231,7 @@ function isHolderWord(token: IToken): boolean {
   return family?.kind === "x" && family.xFamily === "holder";
 }
 
-/** A `/th/` WANT, PLAN or DECISION word (ability.md#whose-intention). */
+/** A `/th/` WANT, PLAN or DECISION word (want.md#whose-intention). */
 function isIntentionStance(token: IToken): boolean {
   const word = token.payload as LexWord | undefined;
   const kind = word?.overlay?.kind;

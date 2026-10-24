@@ -53,17 +53,17 @@ The ending grades evidence, not how sure you feel or how likely the event is: **
 | [How many hands](/evidentiality#hand-depth): `th#N` after a channel | `zalazun thebam throgel vudurul.` | *Alazun left, so they say, third-hand.* | I |
 | [A forecast](/evidentiality#forecast): channel + `blral` | `thubom blral verulal.` | *It will rain, going by the pattern.* | I |
 | [A hunch about later](/evidentiality#forecast) | `zalazun thaber blral vudurul.` | *Alazun will leave, a faint hunch.* | I |
-| [A dated claim](/universality#dated-channel): signed time measure | `zazozon thevum blagorum grugel vowurol.` | *I saw Azozon walk three hours ago.* | A |
-| [Later, dated](/universality#dated-channel) | `zalazun thebam blagorum gragel vudurul.` | *I hear Alazun leaves in three hours.* | A |
+| [A dated claim](/dated-channel#dated-channel): signed time measure | `zazozon thevum blagorum grugel vowurol.` | *I saw Azozon walk three hours ago.* | A |
+| [Later, dated](/dated-channel#dated-channel) | `zalazun thebam blagorum gragel vudurul.` | *I hear Alazun leaves in three hours.* | A |
 | [Give the grounds](/evidentiality#evidence-clause): `blarl`, grounds in the next sentence | `theyom thahum blarl` | *inferred, and it was caused* | I |
 
 | Offset | Sign | Stage |
 |--------|------|-------|
-| [`thevum` MEMORY](/universality#dated-channel) | **`-`** only | A |
-| [`thugem` LIVE](/universality#dated-channel) | no offset | A |
-| [`thubom` PATTERN](/universality#dated-channel) | **`-`** or **`+`** | A |
+| [`thevum` MEMORY](/dated-channel#dated-channel) | **`-`** only | A |
+| [`thugem` LIVE](/dated-channel#dated-channel) | no offset | A |
+| [`thubom` PATTERN](/dated-channel#dated-channel) | **`-`** or **`+`** | A |
 
-After a channel, a `bl-` person or thing is the [source](/evidentiality#source); a time measure is the [offset](/universality#dated-channel). `blarl` takes only CLUES, PATTERN, and DEDUCED.
+After a channel, a `bl-` person or thing is the [source](/evidentiality#source); a time measure is the [offset](/dated-channel#dated-channel). `blarl` takes only CLUES, PATTERN, and DEDUCED.
 
 <!-- cheat-sheet: knowing-intending -->
 | You say | Clause after `blarl` is | Form | Stage |
@@ -173,9 +173,9 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 | `thagol` | plan mood atlas map-resolution (includes backups; fully prepared) | [Plan](/intention#plan) | B |
 | `thagom` | plan mood itinerary map-resolution (steps on the map; detail unstated) | [Plan](/intention#plan) | B |
 | `thagor` | plan mood sketch map-resolution (direction only; details left open) | [Plan](/intention#plan) | B |
-| `thalol` | want mood lasting (a wish that keeps returning) | [Want](/ability#want) | I |
-| `thalom` | want mood (duration unstated) | [Want](/ability#want) | I |
-| `thalor` | want mood passing (a whim that fades) | [Want](/ability#want) | I |
+| `thalol` | want mood lasting (a wish that keeps returning) | [Want](/want#want) | I |
+| `thalom` | want mood (duration unstated) | [Want](/want#want) | I |
+| `thalor` | want mood passing (a whim that fades) | [Want](/want#want) | I |
 | `thogel` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](/ability#decision-revisability) | I |
 | `thogem` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](/ability#decision-revisability) | I |
 | `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/ability#decision-revisability) | I |
@@ -192,15 +192,15 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 | [Try](/ability#try) | `zazozon howam varuyol.` | *Azozon tries to write.* | I |
 | [Trial run](/ability#try) | `zalazun howar vozuyel.` | *Alazun gives singing a try.* | I |
 | [Committed](/ability#try) | `zalazun howal vowurol.` | *Alazun keeps trying to walk.* | I |
-| [Want](/ability#want): yours | `zazozon thalom vowurol.` | *I want Azozon to walk.* | I |
-| [Someone else's want](/ability#whose-intention): a holder | `zazozon thebamazozon thalom vowurol.` | *I hear Azozon wants to walk.* | I |
-| [Want, a whim](/ability#want-endings) | `zalazun thalor vozuyel.` | *Right now I feel like having Alazun sing.* | I |
-| [Stacked: want, then plan](/ability#want-endings) | `zuwen thalol thagom vowurol.` | *I have long wanted to walk, and I plan to.* | I |
-| [Against my wishes](/ability#want-endings) | `zazozon vowurol uom thalom.` | *Azozon walks, against my wishes.* | I |
-| [Against someone's wishes](/ability#whose-intention) | `zalazun vezuvel uom theyomazozon thalom.` | *Alazun sleeps, against Azozon's wishes, as far as I can tell.* | I |
+| [Want](/want#want): yours | `zazozon thalom vowurol.` | *I want Azozon to walk.* | I |
+| [Someone else's want](/want#whose-intention): a holder | `zazozon thebamazozon thalom vowurol.` | *I hear Azozon wants to walk.* | I |
+| [Want, a whim](/want#want-endings) | `zalazun thalor vozuyel.` | *Right now I feel like having Alazun sing.* | I |
+| [Stacked: want, then plan](/want#want-endings) | `zuwen thalol thagom vowurol.` | *I have long wanted to walk, and I plan to.* | I |
+| [Against my wishes](/want#want-endings) | `zazozon vowurol uom thalom.` | *Azozon walks, against my wishes.* | I |
+| [Against someone's wishes](/want#whose-intention) | `zalazun vezuvel uom theyomazozon thalom.` | *Alazun sleeps, against Azozon's wishes, as far as I can tell.* | I |
 | [Someone else's plan](/holder#holder): a holder | `zazozon thebamazozon thagom vowurol.` | *I hear Azozon plans to walk.* | I |
-| [Someone else's decision](/ability#whose-intention): a holder | `zazozon theyomazozon thogem vowurol.` | *I gather Azozon has decided to walk, and can still change that.* | I |
-| [Plan, and when](/ability#predict-evidentiality) | `zuwen thagom blral vehohel.` | *I plan to sit down later.* | I |
+| [Someone else's decision](/want#whose-intention): a holder | `zazozon theyomazozon thogem vowurol.` | *I gather Azozon has decided to walk, and can still change that.* | I |
+| [Plan, and when](/intention#plan-predict) | `zuwen thagom blral vehohel.` | *I plan to sit down later.* | I |
 | [Try, failing that](/ability#fallback): `xen` | `zazozon howar vowurol xen zazozor vozuyel.` | *Azozon gives walking a try; failing that, Azozon sings.* | I |
 | [A plan with backups](/ability#fallback) | `zuwen thagol vowurol xen zuwen thagol vozuyel xen zuwen thagol vezuvel.` | *walk; failing that, sing; failing that, sleep* | I |
 
@@ -240,4 +240,4 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | `haram` *still in effect* ([the outcome stays](/notional-standing#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](/already-still-yet#phasal)) |
 | `thogem` *I've decided* ([how open the choice is, no time](/ability#decision)) | | `thagom` *I plan* ([how worked out, still ahead](/intention#plan-predict)) |
 | `howam` *tries* ([acts, outcome open](/ability#try)) | | `vozuyexal` *can sing* ([a claim about ability](/can-and-cant#can)) |
-| `thalom` *I want* ([your own wanting](/ability#want)) | | `thebamazozon thagom` *I hear Azozon plans* ([someone else's plan](/holder#holder)) |
+| `thalom` *I want* ([your own wanting](/want#want)) | | `thebamazozon thagom` *I hear Azozon plans* ([someone else's plan](/holder#holder)) |

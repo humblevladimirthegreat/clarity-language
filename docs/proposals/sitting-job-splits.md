@@ -33,8 +33,8 @@ Ids below were current when this file was written. Re-read the parent before pee
 | Phase | Parents | Why this bundle |
 |-------|---------|-----------------|
 | 1 | `viewpoint.md`, `feelings-permission.md`, `notional-standing.md` | Strongest kitchen-sink titles. **Done.** |
-| 2 | `ability.md`, `span-mention.md`, `of-relations.md` | Same test, next cluster |
-| 3 | `singability.md`, `join-across-roles.md`, `universality.md` | Place-name leftover; join leftovers; dated channel |
+| 2 | `ability.md`, `span-mention.md`, `of-relations.md` | **done** |
+| 3 | `singability.md`, `join-across-roles.md`, `universality.md` | Place-name leftover; join leftovers; dated channel. **Peels applied; Practice / reviews / build remaining.** |
 | 4 | `polar-inventory.md`, `iff-fault.md`, `sentence-linkers.md` | Rest of the must-split list |
 | 5 | Optional leftovers in [Phase 5](#phase-5) | Only if the parent title is still a list of unrelated jobs |
 | 6 | Sweep | Titles, sidebar order, AGENTS Owns, cheat sheets, reviews |
@@ -148,6 +148,12 @@ npm run peel-headings -- --parent of-relations.md --ids locative-relations --to 
 ## Phase 3
 
 `singability.md`, `join-across-roles.md`, `universality.md`.
+
+Peels are on disk. Resume here: hand-split Practice, unique settings, review items, allowlist rows, `npm run cheat-sheet-blocks -- --write`, `npm run build`. Do not re-peel.
+
+- `singability.md` → `place-name-roots.md` (**Place-name roots**, Intermediate, beside Names and titles). Gates put it with names, not Advanced singing.
+- `join-across-roles.md` → `join-acts.md` (**Join-act verbs**) and `join-relations.md` (**With and without**). Parent Practice is already stance-only; the dropped join-act / join-relation items are not yet on the new sittings.
+- `universality.md` → `dated-channel.md` (**Dated channel**) and `usually-vs-must.md` (**Usually vs must**). Parent Practice still holds dated-channel and generalization items; drop those when the new sittings get their own.
 
 ### `singability.md` (Singing and speech edges)
 

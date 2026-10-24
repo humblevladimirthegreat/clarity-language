@@ -175,7 +175,7 @@ On a content word, **-n** marks a name ([word endings](/proper-names#proper-name
 |-------|------------------------|---------|-------|
 | [special pronouns](/pronouns#special-pronouns), the [generic pronoun](/pronouns#generic-pronoun), and the [topic pronoun](/topic#topic-pronoun) | the usual ending on these person words | `zuwen` *I*, `zeyen` *one*, `zalen` *the topic* | B |
 | [stand-ins](/stand-in-roles#stand-in-roles) | **-rn** (single vowel) or **-n** (stacked vowel) names a kind of sentence content (statement, question, command, prohibition); on `/v/`, the matching response verb | `darn` *a statement*, `varn` *state* | A |
-| [join words](/joins) with a `/v/`, `/x/`, `/ɡ/`, or `/h/` first letter | join content: a [join-act](/join-across-roles#join-act-verbs) verb, clause [sequence](/clause-sequence#clause-sequence), or a [join-relation](/join-across-roles#join-relations) | `van` *include*, `xan` *and then*, `gan` *including* | B / I |
+| [join words](/joins) with a `/v/`, `/x/`, `/ɡ/`, or `/h/` first letter | join content: a [join-act](/join-acts#join-act-verbs) verb, clause [sequence](/clause-sequence#clause-sequence), or a [join-relation](/join-relations#join-relations) | `van` *include*, `xan` *and then*, `gan` *including* | B / I |
 
 These still count as names:
 

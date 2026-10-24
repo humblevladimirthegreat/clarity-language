@@ -407,7 +407,7 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 
 ### Join, belong, comprise, replace, represent, prefer, involve, agree {#relating-verbs}
 
-**Needs:** [Rank joins](/rank-joins#rank-joins) · [Join-act verbs](/join-across-roles#join-act-verbs) · [Join-relations](/join-across-roles#join-relations) · [Of relations](/of-relations#of-relations) · [Whose](/extra-noun-hooks#genitive) · [Exchange](/relations#exchange) · [Proxy](/relations#proxy) · [Simile](/relations#similative)
+**Needs:** [Rank joins](/rank-joins#rank-joins) · [Join-act verbs](/join-acts#join-act-verbs) · [Join-relations](/join-relations#join-relations) · [Of relations](/of-relations#of-relations) · [Whose](/extra-noun-hooks#genitive) · [Exchange](/relations#exchange) · [Proxy](/relations#proxy) · [Simile](/relations#similative)
 
 Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer*) say how two things **stand to each other** more than what anyone does. Ageben writes that stance as a hosted relation word with the other thing in `/b/`, or as a join-act verb when someone really acts on a thing. Pick the relation, and keep the ordinary verb for the activity.
 
@@ -500,7 +500,7 @@ English makes nouns for a part, a kind, a role, and a manner. Ageben has no sepa
 
 ### Case, deal, figure, board and other several-sense nouns {#sense-nouns}
 
-**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Exchange](/relations#exchange) · [Between](/of-relations#locative-relations) · [Number as verb](/number-markers#number-as-verb-by-marker) · [Role pointers](/pronouns#role-pointers) · [Consent](/permission-consent#consent) · [Joins](/joins) · [Role letters](/clause#role-letters)
+**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Exchange](/relations#exchange) · [Between](/locative-relations#locative-relations) · [Number as verb](/number-markers#number-as-verb-by-marker) · [Role pointers](/pronouns#role-pointers) · [Consent](/permission-consent#consent) · [Joins](/joins) · [Role letters](/clause#role-letters)
 
 An English noun like *case* or *board* covers several jobs, and Ageben has a different word for each. Decide which job you mean first, then write that word. Where a job is a whole clause (*in that case*, *a deal*), the recipe is a clause, not a noun.
 
@@ -660,7 +660,7 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 
 ### Fair, keep, public, ride, admit and other leftover senses {#leftover-senses}
 
-**Needs:** [Word endings](/word-endings#abstract-m) · [Join-relations](/join-across-roles#join-relations) · [Hooks](/hooks#extra-noun) · [Starting and stopping](say-reasons.md#phase-verbs)
+**Needs:** [Word endings](/word-endings#abstract-m) · [Join-relations](/join-relations#join-relations) · [Hooks](/hooks#extra-noun) · [Starting and stopping](say-reasons.md#phase-verbs)
 
 Some English words have a second or third sense that a published root already carries as a synonym. Look the sense up first; most of these need no new word, only the right ending (**-m** for the abstract sense) or the right host.
 

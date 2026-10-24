@@ -37,7 +37,7 @@ Uzozen sees whether Olazun walks.	whether	first:whether-clause	*whether* opens a
 I know that.	that	first:job	*that* with no clause after it is a pronoun
 I know that.	that	not:dependents.md#dependent-clauses	*that* with no clause after it is a pronoun
 # Hooks and prepositions
-We went aboard the train.	aboard	link:of-relations.md#locative-relations	a preposition tagged as an adjective still gets its hook
+We went aboard the train.	aboard	link:locative-relations.md#locative-relations	a preposition tagged as an adjective still gets its hook
 The cat slept underneath the table.	underneath	link:viewpoint.md#gravity	a preposition tagged as an adjective still gets its hook
 Five dollars per hour.	per	link:say-amounts.md#per-unit	*per* is a rate
 Five dollars per hour.	per	not:hooks.md#extra-noun	*per* is a rate, not an extra-noun hook

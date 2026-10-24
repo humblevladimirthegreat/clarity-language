@@ -118,7 +118,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 💭,thought,oma,mind,holds,,commentary,thought balloon floats a take over the scene; commentary is mind storying instead of bare contact,,idea; concept; notion; remark; theoretical; comment,
 💤,sleep,ezuve,doing,one,none,restoration,sleep means rest; restoration is the unobservable replenishing,,asleep,roles.md#beginner-practice
 👋,wave,owuya,person,holds,none,acknowledgment,a wave acknowledges someone; acknowledgment is the unobservable uptake,,acknowledge; recognition; greet; gesture,
-✋,hand,aheba,body,holds,small,,,,,
+✋,hand,aheba,body,holds,small,,,,,,of-relations.md#intermediate-practice
 🫴,palm-up,aweba,body,holds,small,offering,a palm held up holds something out to take; an offering is what you hold out,,offer,
 🫷,pushing-hand,ubebu,body,takes-away,small,pushback,a hand pushing back says not so fast; pushback is resisting a demand,,push,
 👌,ok,oguye,person,one,none,acceptance,the ok sign says it is fine as it is; acceptance is letting it be,,accept; alright; adopt; fine,
@@ -588,7 +588,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🌅,sunrise,azuro,counting,order,none,day,sunrise opens each new day; day is the sunrise-to-sunrise unit,,,
 🌆,dusk,aduru,counting,takes-away,none,closure,dusk ends the day; closure is bringing something to an end,,,
 🌇,sunset,uzuru,counting,takes-away,none,,,,,
-🌉,bridge,oho,place,order,,span,a bridge spans the gap; span is reaching across,,,
+🌉,bridge,oho,place,order,,span,a bridge spans the gap; span is reaching across,,,locative-relations.md#intermediate-practice
 🚐,van,uvava,doing,holds,big,,a minibus is a van,,,
 🛣️,road,oraho,place,order,big,wide,a road is made broad enough for many; wide is broad across,,broad; extensive,
 ♨️,springs,owaha,place,holds,big,rejuvenation,hot springs restore the body; rejuvenation restores energy,,,
@@ -955,7 +955,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🩻,x-ray,ogobe,body,one,medium,body,an x-ray shows a person inside; the body is the physical frame of a person,,,
 🚪,door,ohe,place,one,,opportunity,door opens to what is beyond; opportunity is an opening ahead,v:open,,
 🛗,elevator,ulaho,place,order,big,ascent,an elevator lifts you up through the floors,,,discourse-hooks.md#intermediate-practice
-🪞,mirror,ewe,tool,one,,reflection,a mirror throws your own image back at you,,reflect,
+🪞,mirror,ewe,tool,one,,reflection,a mirror throws your own image back at you,,reflect,exactly-like.md#intermediate-practice
 🪟,window,uwohe,place,one,medium,transparency,you can see through a window's clear glass,,clear; glass,
 🛏️,bed,oyahe,place,one,big,,,,,proper-names.md#intermediate-practice
 🛋️,furniture,ovahe,place,one,big,leisure,furniture is where you sit back; leisure is free time,,,
@@ -989,7 +989,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🪪,id,ane,title,one,,verification,an id card lets others check who you are,,genuine,
 🏧,atm,edaha,place,holds,big,withdrawal,atm gives cash on demand; withdrawal is taking out stored value,,,
 🚮,litter,ululu,nature,takes-away,none,disposal,litter bin marks where trash goes; disposal is getting rid of,,,
-🚰,water,owula,nature,holds,none,,,,,
+🚰,water,owula,nature,holds,none,,,,,,locative-relations.md#intermediate-practice
 ♿,accessible,oguhe,place,one,none,,,,,
 🚻,restroom,eraha,place,holds,big,designation,restroom sign marks facility type; designation is marked category,,appoint,
 🚼,baby-changing,obohe,place,one,medium,,,,,
@@ -1080,7 +1080,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ♾️,infinity,enuro,counting,order,none,boundlessness,infinity loop never closes; boundlessness is the unobservable without-limit,,,
 ‼️,bang,abugo,sign,order,none,,,,knock; snap; pop; tap,
 ⁉️,interrobang,onugo,sign,order,none,,,,,
-❓,question-mark,oguge,sign,one,none,possibility,a questionmark marks the open case; possibility is maybe-so,,theory; hypothesis,span-mention.md#intermediate-practice
+❓,question-mark,oguge,sign,one,none,possibility,a questionmark marks the open case; possibility is maybe-so,,theory; hypothesis,scope-islands.md#intermediate-practice
 ❗,exclamation,agugo,sign,order,none,importance,an exclamation calls attention; importance is mattering,,crucial; significance,
 〰️,squiggle,uzugo,sign,order,none,hesitation,a squiggle trails off uncertainly; hesitation is holding back action,,hesitate; curve,
 💱,currency-exchange,eha,place,holds,,convertibility,currency arrows swap one for another; exchange is swapping between sides,,interpret; translate,

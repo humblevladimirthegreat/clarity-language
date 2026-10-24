@@ -37,7 +37,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **LIVE** | Evidential: sensed now, by any sense | `thugem` | [Live and memory](/live-and-memory#live-vs-memory) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thomam` | [Knowing](/knowing#may) |
 | **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevum` | [Live and memory](/live-and-memory#live-vs-memory) |
-| **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegol z[odoze] gamezem.` | [Mention and islands](/span-mention#mention) |
+| **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegol z[odoze] gamezem.` | [Mention](/span-mention#mention) |
 | **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themem` | [It turns out](/mirative#mirative) |
 | **NAME** | A package titled with **-n** | `zobodel zubudal zan.` | [Named lists and join limits](/join-islands#named-list) |
 | **NOTIONAL** | As-if / pretense mood | `theyum` | [As if](/notional#notional) |
@@ -50,12 +50,12 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Residue and former](/notional-standing#residue) |
 | **RESISTING** | Emotion locus: pushing against a target | `wawethumuor` | [Feelings](/feelings-permission#emotion-compose) |
 | **SAME** | Identity copula | `gorel` | [Predication](/predication#identity) |
-| **SCOPE** | Scope island `{ … }` | `{ hogugem zodozel gerulol }` | [Mention and islands](/span-mention#scope-islands) |
+| **SCOPE** | Scope island `{ … }` | `{ hogugem zodozel gerulol }` | [Scope islands](/scope-islands#scope-islands) |
 | **SEEKING** | Emotion locus: turning to someone for comfort | `wawethumoem` | [Feelings](/feelings-permission#emotion-compose) |
 | **STILL** | Emotion motion: not moving (held, frozen, numb) | `wawethumel` | [Feelings](/feelings-permission#emotion-compose) |
 | **SURGING** | Emotion motion: in waves or spikes | `wuwathuraer` | [Feelings](/feelings-permission#emotion-compose) |
 | **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruem` | [Feelings](/feelings-permission#emotion-compose) |
-| **WANT** | Desire mood: lasting / unstated / passing | `thalom` | [Decision and try](/ability#want) |
+| **WANT** | Desire mood: lasting / unstated / passing | `thalom` | [Want](/want#want) |
 
 **Compare with:** [quasi](#quasi) (`-e-xROOT`) is not **NOTIONAL**.
 
@@ -172,7 +172,7 @@ A `/th/` stance word in the comparee slot of a rank join: the value you rank aga
 
 Inside a scope island: scope-taking `/h/` or `/th/` and/or a join.
 
-[Mention and islands](/span-mention#scope-islands)
+[Scope islands](/scope-islands#scope-islands)
 
 ### Body (utterance)
 
@@ -425,7 +425,7 @@ Mid-word **`th`** plus a vowel on a content root, or the vowel right after **`w`
 
 Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; frame **-m** *amid* / *near* / *over* / *away from* / *in the direction of* / *out from among* / *by way of*) as extra-noun [hooks](/hooks#extra-noun) plus landmark `/b/`. *Between* is hosted `/h/` or `/ɡ/` plus a `/b/` join. A *from A to B* path is two hook extras (source, then goal).
 
-[Part of, made of, from](/of-relations#locative-relations)
+[Between, across, and around](/locative-relations#locative-relations)
 
 ### Means
 
@@ -437,7 +437,7 @@ Extra-noun [hook](/hooks#extra-noun) **`aol`** plus implement `/b/` (*using / wi
 
 Hosted **`hewem`** / **`gewem`** plus model `/b/` (*like* a duck / *like* Azozon’s); with **-l**, **`hewel`** / **`gewel`** is *exactly like*. Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
 
-[Relations](/relations#similative), [Part of, made of, from](/of-relations#exactly-like)
+[Relations](/relations#similative), [Exactly like](/exactly-like#exactly-like)
 
 ### Exchange (*for*)
 
@@ -552,7 +552,7 @@ Right-close list closer; **conjunct** = listed item.
 
 Content `/v/` or `/ɡ/` `/h/` + join vowel + **-n**.
 
-[Stance joins](/join-across-roles)
+[Join-act verbs](/join-acts), [With and without](/join-relations)
 
 ### Join series
 
@@ -825,7 +825,7 @@ A sibling parent map with no parent of its own. On **a o e u**, **size** is amou
 
 `{ … }` with binder inside.
 
-[Mention and islands](/span-mention#scope-islands), [Named lists and join limits](/join-islands#scope-islands-join)
+[Scope islands](/scope-islands#scope-islands), [Named lists and join limits](/join-islands#scope-islands-join)
 
 ### Sentence linker
 
@@ -994,7 +994,7 @@ A role compound with practiced-role scope **`o`** after its **`w`** (`zwozeduyol
 
 A channel on a clause with a universal fence or restrictor: how you know the general claim.
 
-[Mood on one adjective](/universality#universality)
+[Usually vs must](/usually-vs-must#universality)
 
 ### Sakes
 

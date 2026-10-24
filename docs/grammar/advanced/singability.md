@@ -4,20 +4,6 @@ band: advanced
 
 # Singing and speech edges {#singing-and-speech-edges}
 
-### Place-name roots {#place-name-roots}
-
-A country or territory name is spelled from the English sound. The root still starts and ends with a vowel. It may keep a consonant cluster from the English name (`avranza` from *France*). A name with no cluster is at least seven letters and ends in `n` plus that last vowel (`azabana` from *Japan*), so it does not look like a three- or five-letter dictionary root.
-
-The ending is the ordinary name ending: `azabanan` is *Japan*, `azabanam` belonging, `azabanal` the flag ([countries](/proper-names#countries-traditions)).
-
-A person or place that is not in the lexicon can take the same spelling. The [lexicon](lexicon.md#respell) writes it for a name you type. To keep the original letters, use a [span](/spans#loans).
-
-<!-- cheat-sheet: sounds-spelling -->
-| Ageben | Use | English |
-|--------|-----|---------|
-| `azabanan` | place-name root with no cluster (seven letters, ends `n` + vowel) | *Japan* |
-| `avranzan` | place-name root that keeps a cluster | *France* |
-
 ### Singability constraints {#singability-constraints}
 
 These choices about word shape make Ageben easier to sing:
@@ -33,7 +19,7 @@ These choices about word shape make Ageben easier to sing:
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-ln` / `-r` / `-rl` / `-rm` (optional `-x`); stand-ins end in `-rl` / `-rm` / `-rth` |
 
-The clusters Ageben allows: left-hanging `gl-`; hosted `bl-`, with a [syllabic `l`](/phonotactics#syllabic-l) before `r` / `w`; number-word role letter + `r`; role letter + `w` on a [tag pronoun](/tag-pronouns#tag-pronouns), a [role compound](/roles#role-compounds), a [role pointer](/pronouns#role-pointers), or a say word (`zw`, `dw`, `bw`, `gw`, `hw`, `yw`, and `blw` on a hosted role word); mid-word `mx` after the hook vowels of a hook prefix's **-m** frame, or after the number body of an approximate numeric prefix; mid-word `mx` or `rx` after the hook vowels of a hooked join (its hook's frame or point-back); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`; consonant runs inside a [place-name root](#place-name-roots). The `m` or `r` before `x` is the only syllable-final consonant inside an ordinary word.
+The clusters Ageben allows: left-hanging `gl-`; hosted `bl-`, with a [syllabic `l`](/phonotactics#syllabic-l) before `r` / `w`; number-word role letter + `r`; role letter + `w` on a [tag pronoun](/tag-pronouns#tag-pronouns), a [role compound](/roles#role-compounds), a [role pointer](/pronouns#role-pointers), or a say word (`zw`, `dw`, `bw`, `gw`, `hw`, `yw`, and `blw` on a hosted role word); mid-word `mx` after the hook vowels of a hook prefix's **-m** frame, or after the number body of an approximate numeric prefix; mid-word `mx` or `rx` after the hook vowels of a hooked join (its hook's frame or point-back); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`; consonant runs inside a [place-name root](place-name-roots.md#place-name-roots). The `m` or `r` before `x` is the only syllable-final consonant inside an ordinary word.
 
 Try singing a short Ageben line quickly at a high but comfortable pitch:
 
@@ -108,7 +94,7 @@ From smallest to largest:
 | Item in a list, before the join word | Nothing extra | [right-close fence](/joins#right-close) |
 | Join word that ends a list | Nothing extra: the join word is heard | [right-close fence](/joins#right-close) |
 | Soft `-m` statement or answer | Nothing extra: the `-m` is heard | [periods](/sentence-linkers#orthography-and-prosody-periods) |
-| Scope island | Break before, one tight phrase, break after | [scope islands](/span-mention#scope-islands) |
+| Scope island | Break before, one tight phrase, break after | [scope islands](/scope-islands#scope-islands) |
 | `/x/` continue, stand-in hang | No rest: the sentence goes on | [periods](/sentence-linkers#orthography-and-prosody-periods) |
 | Period | Rest | [periods](/sentence-linkers#orthography-and-prosody-periods) |
 | Linker or topic word after a period | The period's rest; the `/x/` word says which | [periods](/sentence-linkers#orthography-and-prosody-periods), [topic](/topic#topic) |

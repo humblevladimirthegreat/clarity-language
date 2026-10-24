@@ -185,7 +185,7 @@ z-Ahelan | [th-MEMORY | [bl-hour | g-minus-two]] | v-sleep
 
 The offset is signed and counts from now, so *ago* needs **`ru`** (minus); MEMORY with a later offset is not a sentence.
 
-**Rule:** [Dated channel (signed offset)](universality.md#dated-channel)
+**Rule:** [Dated channel (signed offset)](dated-channel.md#dated-channel)
 :::
 
 #### What changes {#advanced-what-changes}

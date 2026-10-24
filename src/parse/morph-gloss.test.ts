@@ -349,7 +349,7 @@ describe("morphGlossLine — tags, xuen, hewel, pointer anchors", () => {
   it("xuen tells a sequence last first (clause-sequence.md#sequence)", () => {
     expectLine("zazozon vehohel xuon zazozor vowurol.", "[z-Azozon | v-sit | x-and-before-that | z-←Azozon | v-walk]");
   });
-  it("hewel / gewel are exactly like (of-relations.md#exactly-like)", () => {
+  it("hewel / gewel are exactly like (exactly-like.md#exactly-like)", () => {
     expectLine("zazozon hewel bladozal vowurol.", "z-Azozon | [h-exactly-like | bl-duck] | v-walk");
     expectLine("zohehal gewel blazozon.", "z-house | [g-exactly-like | bl-Azozon]");
   });

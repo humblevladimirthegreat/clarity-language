@@ -103,7 +103,7 @@ Source: [restrictors.md](/restrictors)
 
 - **open:** bare restrictors beyond `hal` / `hual` / `har` / `her` / `hur` / `hor`: **`hel` / `hem`**, **`hael` / `haem`**, **`hul` / `hum`**, **`huel` / `huem`**, **`hol` / `hom`**, **`haol` / `haom`**. With no occasions two readings compete: the restrictor's empty list (*never* / *always*) and the matching standalone join (`zel` *no options*, `zael` *nothing more needed*, `zuel` *anything goes*, `zol` *no favorite*, `zaol` *in no particular order*), so none is guessable.
 - **open:** further `/w/` bare forms beyond **`wal` / `wam` / `wual` / `wuam` / `war` / `wer` / `wur` / `wor`** and the non-bare Intermediate core: the same competing readings.
-- **open:** **-n** on `/w/` (`wan`, …). `/w/` is never a phrase-list item, so there is no package to name. (`/h/`…**-n** is [join-relations](/join-across-roles#join-relations).)
+- **open:** **-n** on `/w/` (`wan`, …). `/w/` is never a phrase-list item, so there is no package to name. (`/h/`…**-n** is [join-relations](/join-relations#join-relations).)
 - **open:** **`wubam`** before **-r** / **-n**. *Respectively something* has no reading.
 - **open:** other join spellings under `/h/` / `/w/` beyond the [defined restrictor core](/more-occasions#defined-core-full) and the join-relations, such as stacked **-r** (`haer`): a stacked blank has no statement job. See also [phrase join inventory](/join-islands#phrase-reserved-forms).
 

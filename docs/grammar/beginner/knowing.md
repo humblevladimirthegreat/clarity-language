@@ -208,6 +208,6 @@ Without **`thomam`**, the sentence reports that Ahelan is leaving.
 - Plan vs forecast: [intention.md](intention.md#plan-predict)
 - Clock / date / when-frames: [numbers-applied.md](digit-strings.md#time)
 - Habitual *always*: [restrictors.md](restrictors.md)
-- General claims and their warrant: [Channels on a generalization](/universality#universality)
+- General claims and their warrant: [Channels on a generalization](/usually-vs-must#universality)
 - Someone else's view: [Whose view (holder)](/holder#holder)
 - Imagined scenes, surprise, and how a claim stands: [notional-standing.md](/notional-standing)

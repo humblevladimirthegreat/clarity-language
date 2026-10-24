@@ -102,7 +102,7 @@ The note is the careful reading written as a fact, not as an awkward second sent
 | Job | Example | Allowed |
 |-----|---------|---------|
 | An [aside](/spans#asides) span | "Azozon walks (quietly)." | One group per aside. An aside may also come out as commas or *by the way* |
-| A [scope island](/span-mention#scope-islands) | "Azozon and (just water)." | One group per island. English has no other way to fence a group, so the parentheses are the translation |
+| A [scope island](/scope-islands#scope-islands) | "Azozon and (just water)." | One group per island. English has no other way to fence a group, so the parentheses are the translation |
 | A [tag](/tag-pronouns#tag-pronouns) letter, right after the noun it names | "A dog (A) sees a cookie (O). A cat sees A." | A single capital letter, once per tag the sentence sets; later sentences use the letter as a name |
 
 Grouping that English can say does not use parentheses: *either Azozon walks or Alazun runs, and Ahelan sleeps*; *a challenging dog and a challenging cat*. A tone mark is English hedging or stress, not *(?)*: "Azozon saw a dog, I think." (unsure about just the dog).

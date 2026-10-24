@@ -600,7 +600,7 @@ function isPlan(word: LexWord): boolean {
   return word.pos === "th" && word.overlay?.kind === "plan";
 }
 
-/** MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one (universality.md#dated-channel). */
+/** MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one (dated-channel.md#dated-channel). */
 function enforceChannelSign(word: LexWord, hosted: HUnit["hosted"]): void {
   const sign = offsetSign(hosted?.bound, hosted?.amount);
   if (!sign || word.pos !== "th" || !word.overlay) return;
@@ -723,7 +723,7 @@ function isSpeakerParticipant(unit: Unit): boolean {
 
 /**
  * WANT, PLAN and DECISION host no person: with no holder they are the speaker's own, and someone else's goes through a
- * holder seam, so a `/b/` cannot slip in another person's wish, plan or choice with no grounds (ability.md#whose-intention).
+ * holder seam, so a `/b/` cannot slip in another person's wish, plan or choice with no grounds (want.md#whose-intention).
  * WANT and PLAN take a time offset; DECISION carries no time, so it takes no `/b/` at all.
  */
 function enforceIntentionHost(unit: HUnit): void {
@@ -1155,7 +1155,7 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
   const failed = (error.parserErrors[0] as { token?: IToken } | undefined)?.token;
   const tokens = markContext(input);
   const at = tokens.findIndex((token) => failed && token.payload === failed.payload);
-  // Braces pair up within one sentence (span-mention.md#scope-islands).
+  // Braces pair up within one sentence (scope-islands.md#scope-islands).
   let depth = 0;
   for (const token of tokens) {
     if (tokenMatcher(token, IslandOpen)) depth += 1;

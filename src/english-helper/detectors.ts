@@ -162,13 +162,13 @@ export const SAME_ROLE_HOOKS: Readonly<Record<string, string>> = {
 /** Sections for each shape a hook takes in English, keyed by what comes before or after it. */
 export const HOOK_LINKS = {
   /** A preposition + noun with no table row: an extra-noun hook. */
-  extraNoun: ["hooks.md#extra-noun", "extra-noun-hooks.md#extra-noun-intermediate", "of-relations.md#locative-relations"],
+  extraNoun: ["hooks.md#extra-noun", "extra-noun-hooks.md#extra-noun-intermediate", "locative-relations.md#locative-relations"],
   sameRole: ["english.md#same-slot"],
   /** A hook right after another landmark describes that landmark. */
   landmark: ["extra-noun-hooks.md#extra-noun-intermediate"],
   /** A hook right after a subject or object can describe that noun. */
-  onNoun: ["of-relations.md#locative-relations"],
-  fromTo: ["digit-strings.md#time", "of-relations.md#locative-relations"],
+  onNoun: ["locative-relations.md#locative-relations"],
+  fromTo: ["digit-strings.md#time", "locative-relations.md#locative-relations"],
   resume: ["discourse-hooks.md#hook-resume"],
   blank: ["fill-ask-jobs.md#where", "here-there.md#place-indefinites"],
   /** *everyone at the house*: the hook bounds the join's set. */

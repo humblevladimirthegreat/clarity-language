@@ -198,7 +198,7 @@ export const Factor = wordToken("Factor");
 export const HScale = wordToken("HScale");
 /** A `/th/` stance right after *contrary to* `uom`: the hook's frame, not a stance on the claim (prescription.md#contrary-to-stance). Set by `markContext`. */
 export const HFrame = wordToken("HFrame");
-/** WANT, PLAN or DECISION right after a holder frame: whose wish, plan or choice the event goes against, with how you know it (ability.md#whose-intention). Set by `markContext`. */
+/** WANT, PLAN or DECISION right after a holder frame: whose wish, plan or choice the event goes against, with how you know it (want.md#whose-intention). Set by `markContext`. */
 export const HFrameHeld = wordToken("HFrameHeld");
 export const BScale = wordToken("BScale");
 /** A `/th/` stance word that is a rank fence's bar: it runs up to the list's rank join (comparative-arity.md#bars). Set by `markContext`. */

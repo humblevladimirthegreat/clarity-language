@@ -391,7 +391,7 @@ export type Unit =
       onLeft?: true;
       /** `uom` + a `/th/` stance: the opposing frame the event goes contrary to (prescription.md#contrary-to-stance). */
       frame?: HUnit;
-      /** WANT, PLAN or DECISION after a holder frame: the holder's wish, plan or choice the event goes against (ability.md#whose-intention). */
+      /** WANT, PLAN or DECISION after a holder frame: the holder's wish, plan or choice the event goes against (want.md#whose-intention). */
       heldIntention?: LexWord;
       /** `oel` + `/b/` right after an `ul` extra noun: the end of one *from … to* unit (digit-strings.md#time). */
       fromTo?: true;

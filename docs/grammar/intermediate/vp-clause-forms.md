@@ -9,7 +9,7 @@ band: intermediate
 <a id="vowels--endings"></a>
 <a id="ending-senses-clause-joins"></a>
 
-[Joins](/joins) already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/`, `/x/`, and stance `/th/`. Clause **-n** forms are in [Sequence](/clause-sequence#sequence); `/v/` **-n** forms are join-act verbs.
+[Joins](/joins) already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/`, `/x/`, and stance `/th/`. Clause **-n** forms are in [Sequence](/clause-sequence#sequence).
 
 | | **-l** | **-m** | **-r** |
 |---|--------|--------|--------|

@@ -179,7 +179,10 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `dependents.md` | Intermediate | a departure board |
 | `dependents.md` | Advanced | a complaint desk |
 | `relations.md` | Beginner | a tool crib |
-| `relations.md` | Intermediate | a train platform |
+| `relations.md` | Intermediate | — |
+| `of-relations.md` | Intermediate | a train platform |
+| `exactly-like.md` | Intermediate | a copy shop |
+| `locative-relations.md` | Intermediate | a river crossing |
 | `relations.md` | Advanced | a records room |
 | `pronouns.md` | Beginner | a kitchen |
 | `tag-pronouns.md` | Intermediate | a rooftop garden |
@@ -221,7 +224,9 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `restrictors.md` | Beginner | a swimming pool |
 | `more-occasions.md` | Intermediate | a mountain trail |
 | `spans.md` | Beginner | a rehearsal |
-| `spans.md` | Intermediate | a courtroom |
+| `spans.md` | Intermediate | — |
+| `span-mention.md` | Intermediate | a courtroom |
+| `scope-islands.md` | Intermediate | a news ticker |
 | `spans.md` | Advanced | a code review |
 | `numbers.md` | Beginner | a bakery |
 | `number-markers.md` | Intermediate | a sports stadium |
@@ -263,6 +268,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `compounds.md` | Advanced | unset |
 | `intention.md` | Beginner | a chess club |
 | `ability.md` | Intermediate | a board meeting |
+| `want.md` | Intermediate | a birthday party |
 | `can-and-cant.md` | Beginner | a workshop |
 | `say-reasons.md` | Plans against a snapshot | a delayed departure board |
 | `join-across-roles.md` | Intermediate | a relay race |
@@ -371,7 +377,10 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 6 | `tone-marks.md` | Intermediate | **exists** | Tone marks (`!` / `?` / `%` / `&` / `;`, stacks, word vs sentence scope) | Doubled / stacked act words and speech manner are Intermediate on `speech-acts.md` |
 | 7 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xahom`, `xezem`, …); nested **`barl`**; stand-in vowels | Recycle Beginner **`darl`/`barl`** |
 | 7 | `dependents.md` | Advanced | **exists** | Lexicalized stand-ins in other roles (`varn` / `vaen` / `vuon` / `darn` / …); nested **`blarl`** | Recycle Beginner **`darl`/`barl`** and Intermediate stand-ins |
-| 13 | `relations.md` | Intermediate | **exists** | *between* **`hedam`**; of-relations (`gobom`, `gadam`, `gulom`, `gaham`); recycle extra-noun hooks for other place talk | *Between* recycles joins Beginner `/b/` join. Social ties are Beginner on `social-ties.md` |
+| 13 | `relations.md` | Intermediate | skip | — | Of-relations are Intermediate on `of-relations.md`. Exactly like is Intermediate on `exactly-like.md`. Locative relations are Intermediate on `locative-relations.md` |
+| 13 | `of-relations.md` | Intermediate | **exists** | of-relations (`gobom`, `gadam`, `gulom`, `gaham`, `gozowum`) | *Between* / across / around are Intermediate on `locative-relations.md`. Exactly like is Intermediate on `exactly-like.md`. Recycle extra-noun hooks. Social ties are Beginner on `social-ties.md` |
+| 13 | `exactly-like.md` | Intermediate | **exists** | exactly like **`hewel` / `gewel`** | Simile **-m** is Beginner on `relations.md` |
+| 13 | `locative-relations.md` | Intermediate | **exists** | *between* **`hedam`**; *across* **`hohom`**; *around* **`hevam`**; recycle extra-noun hooks for *from* / *to* | *Between* recycles joins Beginner `/b/` join. Of-relations are Intermediate on `of-relations.md` |
 | 13 | `relations.md` | Advanced | **exists** | Hosted *as-of* **`henam` / `hunom`**; `/h/` `/ɡ/` `/w/`; resume **-r**; date in `/b/` | Recycle RESIDUE, forecast, calendar `b_#…`. Not persist hooks |
 | 4 | `proper-names.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); full names (given + `/ɡ/` family **-n**) and hyphenated names `ROOTxROOT`+**-n**; [titled phrases](/proper-names#titled-phrases) (hook / join / span **-n**, inner **-l** / **-m**) | Not value/ability/plan ending tables |
 | 4 | `word-endings.md` | Advanced | skip | — | no Advanced stage |
@@ -399,7 +408,9 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 12 | `hooked-joins.md` | Advanced | **exists** | **Hooked joins** (hook vowels + **`x`** + a join, `bl-` landmark; `/h/` time bounds) | Recycle extra-noun grid and abstract landmarks. Hooked join vs a free hook after the verb (who counts vs where) |
 | 13 | `more-occasions.md` | Intermediate | **exists** | Defined core (full); conjuncts; dependent *when* | |
 | 13 | `restrictors.md` | Advanced | — | no Advanced stage | |
-| 14 | `spans.md` | Intermediate | **exists** | Written spans; marks; mention marker; **`{ … }`** scope islands; mention of a handle **form** vs office **-n** | |
+| 14 | `spans.md` | Intermediate | skip | — | Mention is Intermediate on `span-mention.md`. Scope islands are Intermediate on `scope-islands.md` |
+| 14 | `span-mention.md` | Intermediate | **exists** | Written spans; marks; mention marker; mention of a handle **form** vs office **-n** | Scope islands are Intermediate on `scope-islands.md` |
+| 14 | `scope-islands.md` | Intermediate | **exists** | **`{ … }`** scope islands | Mention is Intermediate on `span-mention.md` |
 | 14 | `spans.md` | Advanced | **exists** | Close forms (editorial `#]` / close-all `\|]`) | — |
 | 15 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; number as verb / adverb / interjection / discourse as taught in this stage; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | Do not dump the whole Intermediate. Digitless, exponents, bare OoM, and the spoken comma live on **`digitless-exponents.md`** |
 | 15 | `digitless-exponents.md` | Intermediate | **exists** | Digitless amounts (`gram` / `gral` / `grar`); *how many?* / *how big?*; exponents; bare OoM; group separator | No Beginner slot. Recycle = all Beginner + numbers Intermediate (markers, endings, PoS, number as verb) |
@@ -431,7 +442,8 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 17 | `notional-standing.md` | Intermediate | **exists** | **RESIDUE** / **FORMER**; channels as bars; channels after `uom` | already / still / not yet / no longer are Beginner on `already-still-yet.md`. Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder). MIRATIVE is Intermediate on `mirative.md`. NOTIONAL is Intermediate on `notional.md` |
 | 17 | `mirative.md` | Intermediate | **exists** | **MIRATIVE** | Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
 | 17 | `notional.md` | Intermediate | **exists** | **NOTIONAL** **`eyu`** + play holds | Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
-| 17 | `ability.md` | Intermediate | **exists** | **DECISION** **`oge`** changeability; forecast = evidential + `blral` vs PLAN; PLAN + DECISION stack | Ability **`xa`/`xe`/`xo`/`xu`** is Beginner on `can-and-cant.md`. Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`ven`** only if already taught in this stage |
+| 17 | `ability.md` | Intermediate | **exists** | **DECISION** **`oge`** changeability; **ATTEMPT** **`owa`**; PLAN + DECISION stack; fallback **`xen`** | Ability **`xa`/`xe`/`xo`/`xu`** is Beginner on `can-and-cant.md`. Recycle Beginner PLAN. WANT is Intermediate on `want.md`. Join-act **`ven`** only if already taught in this stage |
+| 17 | `want.md` | Intermediate | **exists** | **WANT** **`alo`** lastingness; holder on WANT / PLAN / DECISION | DECISION and ATTEMPT are Intermediate on `ability.md`. Recycle Beginner PLAN and Intermediate holder |
 | 17 | `intention.md` | Advanced | — | no Advanced stage | |
 | 18 | `numeric-derivation.md` | Advanced | **exists** | `NUM x ROOT` as the stage teaches (essence / `+N` / `#N` / quasi / …; `mx` approximate) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) |
 
@@ -449,7 +461,8 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Conversation-length bid **`…xan` / `…xon` / `…xen` / `…xun`** on a citation or vocative | `compounds.md` Intermediate |
 | **`gl-`** | `left-bound-adjectives.md` Beginner |
 | **`yam`/`yem`/`yom`/`yum`** as a *speech-act* system | `firm-soft.md` Beginner |
-| Locative relations; of-relations (`gobom` / `gadam` / `gulom` / `gaham`) | `relations.md` Intermediate |
+| Locative relations | `locative-relations.md` Intermediate |
+| Of-relations (`gobom` / `gadam` / `gulom` / `gaham`) | `of-relations.md` Intermediate |
 | Hosted *as-of* (`henam` / `hunom`) | `relations.md` Advanced |
 | Remaining `/x/` linkers, nested **`blarl`**, stand-in vowels | `dependents.md` Intermediate |
 | Lexicalized stand-ins (`varn` / `vaen`) and nested **`blarl`** | `dependents.md` Advanced |

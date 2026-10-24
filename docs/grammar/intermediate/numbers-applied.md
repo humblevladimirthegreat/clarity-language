@@ -147,7 +147,7 @@ A word after **B** describes **B** alone, and a word on the counted noun describ
 
 **`ual`** and **`uol`** are the [range hooks](ending-grids.md#ranges), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zragel al zrazam` = *3 to about 5*).
 
-**Compare with:** `zragel zrazal zaol` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zazozon zalazun zol gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](of-relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
+**Compare with:** `zragel zrazal zaol` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zazozon zalazun zol gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](locative-relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
 
 ### Percent and percentage points {#percent-and-percentage-points}
 

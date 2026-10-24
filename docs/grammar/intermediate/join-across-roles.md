@@ -4,7 +4,7 @@ band: intermediate
 
 # Stance joins {#join-across-roles}
 
-[Joins on the verb](/vp-clause-forms) already used the join vowels under `/v/` and `/x/`. This sitting covers stance words under `/th/` (*not because of the rain*), and join words with ending **-n** that become verbs, adjectives, or adverbs naming a list move (*includes*, *without*). Phrase fences and their set, rank, arity, and scope patterns are in [joins](/joins).
+[Joins on the verb](/vp-clause-forms) already used the join vowels under `/v/` and `/x/`. This sitting covers stance words under `/th/` (*not because of the rain*). Phrase fences and their set, rank, arity, and scope patterns are in [joins](/joins).
 
 ### Stance joins {#stance-joins}
 
@@ -98,101 +98,11 @@ Outside a question, only the single-vowel **-r** cells are words. Under a questi
 
 **Compare with:** `thul` *no judgment* withholds any stance; a *no chance* stance number is a stance that the claim is false. `thar` asks for the speaker's grounds, not what caused the event; for *Why does it happen?* use [`thahum blar`](/fill-ask-jobs#why).
 
-### Join-act verbs {#join-act-verbs}
-
-When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the join vowel for that move, and ending **-n** (`van`, `ven`, …). The object is one `/d/` phrase: one thing, or a group joined with a [phrase join](/joins). You can now name the act itself instead of only joining a list. On these verbs, **-n** does not mark a [name](proper-names.md#proper-name--n).
-
-> `zazozon daledel van.`
->
-> z-Azozon | d-apple | v-includes
->
-> "Azozon adds an apple."
-
-For an associative group (*Alazun and company*), put noun **-x** on the object as usual. **-x** on the verb itself is [collective](collectives.md#verbs-v).
-
-**Related form:** joining a list uses [joins](/joins) (`zal` / `val` / `xal`, …).
-
-**Compare with:** *and then* between sentences uses clause [sequence](/clause-sequence#sequence) (`xan`, …), not `van`.
-
-<!-- cheat-sheet: joins-hooks -->
-| Clause sequence | Join-act verb | Shared vowel move |
-|-------------|---------------|-------------------|
-| `xan` | `van` | add / include |
-| `xen` | `ven` | one / choose |
-| `xun` | `vun` | undo / refuse |
-
-The `/x/` forms connect clauses and keep one speech act. Their `/v/` counterparts take an object and name an act on it. Prioritizing (`von`) has no clause sequence, and of the stacked vowels only `xaen` and `xuon` have one; the `/v/` forms follow the same series in the inventory below.
-
-These are ordinary content verbs. To refer back to a join-act you already named, use a whole-stem **-r** resume or say it again in full.
-
-Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
-
-| Ageben | Use | English | Cue | Example |
-|--------|-----|---------|-----|---------|
-| **`van`** | hold the object in the set | *includes / adds* | **a** ≈ add (hold / inventory) | `zazozon daledel van` |
-| **`ven`** | lock the object as the sole pick | *chooses (as the one choice)* | **e** ≈ choice (single pick) | `zazozon dedudal ven` |
-| **`vaen`** | admit the object; more may follow | *picks (more picks may follow)* | **ae** ≈ add one, more may follow (open pick) | `zazozon dugedam vaen` |
-| **`vun`** | reject the object | *denies / refuses* | **u** ≈ undo (take that member back) | `zazozon dulamul vun` |
-| **`vuan`** | leave the object out of the set | *excludes* | **ua** ≈ undo + add (cut that member) | `zazozon duwedal vuan` |
-| **`vuen`** | bar that one; the rest stay free | *bars (anything but)* | **ue** ≈ undo + choice (forbid that pick) | `zazozon dogudal vuen` |
-| **`von`** | rank the object first | *prioritizes* | **o** ≈ rank (put this first) | `zazozon dabezul von` |
-| **`vaon`** | put the object first in order | *starts with* | **ao** ≈ add + rank (begin here) | `zazozon durewem vaon` |
-| **`voen`** | put the objects at the same rank | *equates / ties* | **oe** ≈ rank then choice (same height) | `zazozon dalazun dahelan dal voen` |
-| **`vuon`** | rank the object lower | *deprioritizes* | **uo** ≈ undo + rank (drop this rank) | `zazozon dugedam vuon` |
-
-English *refuse* vs *leave out*: `zazozon dumudel vun` (*Azozon refuses meat*) vs `zazozon dumudel vuan` (*Azozon excludes meat*). One locked choice vs an open pick: `zazozon duwedal ven` vs `zazozon duwedal vaen`. Rank vs sequence: `zazozon durewem von` (*prioritizes the workaround*: first by importance) vs `zazozon durewem vaon` (*starts with the workaround*: first in order).
-
-### Join-relations {#join-relations}
-
-When English ties one extra thing to a noun or an action by a list move (*a cupcake with peanuts*, *walk without meat*, *work prioritizing the bug*), write the move as an adjective (first letter **`g`**) or an adverb (first letter **`h`**), with the same join vowel as [join-act verbs](#join-act-verbs) and ending **-n** (`gan` / `han`, …). Right after it comes one `/b/` word that names the extra thing. Keep that pair together: `gan` + `/b/` describes a noun, and `han` + `/b/` works as one adverb. You can now say *including*, *without*, or *prioritizing* without building a new list. Here too, **-n** does not mark a name, and an associative group on the `/b/` word takes noun **-x** as usual.
-
-> `zugedal gan bluwedal.`
->
-> z-cupcake | [g-including | bl-peanut]
->
-> "A cupcake with peanuts."
-
-**`gan`** always needs its `/b/` word (`gan b…`).
-
-**Compare with:** *writes with a hammer* is an extra-noun [hook](/hooks#extra-noun) (`aol` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Alazun* is [proxy](/relations#proxy) (`hanem`), not **`hen`** *exclusively for*. **`uol`** is *against* that party, not **`hun`** *refusing*.
-
-**Not the same job as:** adjective [joins](/joins) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
-
-**For *including* as an afterthought, use:** a [hook](/hooks) (`al`, …). `zuhunam gan blazozon` is *a team including Azozon*; `zuhunam al zazozon` is *the team, including Azozon*.
-
-For several members, put a [phrase join](/joins) **inside** the `/b/` phrase (`gan bluwedal blugedam bal`; `zazozon han blalazun blahelan bal vowurol`). For an unnamed member or none at all, use a [standalone](/joins#standalone-phrase) `/b/` join as the only `/b/` word (`gan blar` = *including something*; `guan blal` = *excluding nothing`).
-
-| Ageben | Use | English | Cue | Example |
-|--------|-----|---------|-----|---------|
-| **`gan` / `han`** | `/ɡ/` noun or `/h/` event toward `/b/` | *including / with* | **a** ≈ add (hold the extra member) | `zugedal gan bluwedal`; `zazozon han blalazun vowurol` |
-| **`gen` / `hen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | **e** ≈ choice (lock that pick) | `zuhunam gen blazozon`; `… hen blazozon vowurol` |
-| **`gaen` / `haen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to* (more may follow); `/h/` *among options* | **ae** ≈ add + choice, and more may follow | `zugedal gaen bluwedal`; `… haen bluwedal vowurol` |
-| **`gun` / `hun`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *against / anti-*; `/h/` *refusing* | **u** ≈ undo (reject that member) | `zugedal gun bluwedal`; `… hun blumudel vowurol` |
-| **`guan` / `huan`** | `/ɡ/` or `/h/` toward `/b/` | *without / excluding* | **ua** ≈ undo + add (leave that member out) | `zugedal guan bluwedal`; `… huan bluwedal vowurol` |
-| **`guen` / `huen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to anything but*; `/h/` *barring / anything but* | **ue** ≈ undo + choice (bar that one; rest free) | `zowulal guen bluwedal`; `… huen bluwedal vowurol` |
-| **`gon` / `hon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *prioritizing / headed by*; `/h/` *prioritizing* | **o** ≈ rank (put this first) | `zobeval gon blabezul`; `… hon blabezul vurewem` |
-| **`gaon` / `haon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *starting with*; `/h/` *starting with* | **ao** ≈ add + rank (begin here) | `zobeval gaon blurewem`; `… haon blurewem vowurol` |
-| **`goen` / `hoen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *on a par with*; `/h/` *equating / tying* | **oe** ≈ rank then choice (same height) | `zedudal goen blogudal`; `… hoen blalazun vowurol` |
-| **`guon` / `huon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *deprioritizing / trailing*; `/h/` *deprioritizing* | **uo** ≈ undo + rank (drop this rank) | `zugedal guon blugedam`; `… huon blugedam vowurol` |
-
-*Anti-* vs *without*: `gun blumudel` vs `guan blumudel`. *Without X* vs *anything but X*: `guan bluwedal` vs `guen bluwedal`. Sole pick vs among options: `gen blazozon` vs `gaen blazozon`. Workaround as top priority vs workaround as first step: `gon blurewem` vs `gaon blurewem`.
-
-**Compare with:** *a house like Azozon’s* / *walks like a duck* is resemblance ([like](/relations#like-resembles) `gewem` / `hewem`), not **`goen` / `hoen`** *on a par with* / *equating*.
-
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a relay race
-
-**New words:**
-
-| English | Ageben | Cue |
-|---------|--------|-----|
-| *finish-line* | `uvahul` | 🏁 |
-| *teamwork* | `uhunam` | 🤾 from *handball* |
-| *group* | `egayal` | 👥 |
-| *trophy* | `odoral` | 🏆: its abstract is *score* |
 
 **Review:**
 
@@ -208,23 +118,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
-**1.** *Azozon adds the trophy.*
-
-::: details Show answer
-`zazozon dodoral van.`
-
-z-Azozon | d-trophy | v-includes
-:::
-
-**2.** *Alazun runs with Ahelan.*
-
-::: details Show answer
-`zalazun han blahelan veruvol.`
-
-z-Alazun | [h-including | bl-Ahelan] | v-run
-:::
-
-**3.** *Alazun runs, but not because Azozon punches.*
+**1.** *Alazun runs, but not because Azozon punches.*
 
 ::: details Show answer
 `zalazun veruvol thahum thul blarl zazozon vabuvul.`
@@ -232,7 +126,7 @@ z-Alazun | [h-including | bl-Ahelan] | v-run
 z-Alazun | v-run | th-because | th-not | bl-that-clause | z-Azozon | v-punch
 :::
 
-**4.** *Azozon screams, but not because Ahelan punches.*
+**2.** *Azozon screams, but not because Ahelan punches.*
 
 ::: details Show answer
 `zazozon veyamul thahum thul blarl zahelan vabuvul.`
@@ -240,33 +134,17 @@ z-Alazun | v-run | th-because | th-not | bl-that-clause | z-Azozon | v-punch
 z-Azozon | v-scream | th-because | th-not | bl-that-clause | z-Ahelan | v-punch
 :::
 
+**3.** *Azozon runs. No judgment.*
+
+::: details Show answer
+`zazozon veruvol thul.`
+
+z-Azozon | v-run | th-not
+:::
+
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zalazun dodoral ven.`
-
-::: details Show answer
-z-Alazun | d-trophy | v-choose
-
-*Alazun chooses the trophy.* (as the one choice)
-:::
-
-**2.** `zuvahul guan blodoral.`
-
-::: details Show answer
-z-finish-line | [g-without | bl-trophy]
-
-*The finish line without the trophy.*
-:::
-
-**3.** `zuhunam gaen blazozon.`
-
-::: details Show answer
-z-teamwork | [g-open-to | bl-Azozon]
-
-*A team open to Azozon.* (more members may follow)
-:::
-
-**4.** `zahelan veruvol thahum thul blarl zalazun vabuvul.`
+**1.** `zahelan veruvol thahum thul blarl zalazun vabuvul.`
 
 ::: details Show answer
 z-Ahelan | v-run | th-because | th-not | bl-that-clause | z-Alazun | v-punch
@@ -274,7 +152,7 @@ z-Ahelan | v-run | th-because | th-not | bl-that-clause | z-Alazun | v-punch
 *Ahelan runs, but not because Alazun punches.*
 :::
 
-**5.** `yel thar zazozon veruvol.`
+**2.** `yel thar zazozon veruvol.`
 
 ::: details Show answer
 y-question | th-why | z-Azozon | v-run
@@ -282,33 +160,38 @@ y-question | th-why | z-Azozon | v-run
 *Why do you say Azozon runs?*
 :::
 
-#### Pick one {#intermediate-pick-one}
-
-**1.** *Alazun runs, refusing the trophy.* `zalazun hun blodoral veruvol.` or `zalazun han blodoral veruvol.`
+**3.** `zazozon veruvol thahum blalazun thul.`
 
 ::: details Show answer
-`zalazun hun blodoral veruvol.`
+z-Azozon | v-run | [th-because | bl-Alazun] | th-not
 
-z-Alazun | [h-refusing | bl-trophy] | v-run
-
-**`u`** rejects that member; **`han`** would run *with* the trophy.
+*Azozon runs, but not because of Alazun.*
 :::
 
-#### Fix it {#intermediate-fix-it}
+#### Pick one {#intermediate-pick-one}
 
-**1.** *a group including Ahelan* <!-- lint: error -->`zegayal al bahelan.`
+**1.** *Azozon runs, but not because of Alazun.* `zazozon veruvol thahum blalazun thul.` or `zazozon veruvol vul thahum blalazun.`
 
 ::: details Show answer
-`zegayal gan blahelan.`
+`zazozon veruvol thahum blalazun thul.`
 
-z-group | [g-including | bl-Ahelan]
+z-Azozon | v-run | [th-because | bl-Alazun] | th-not
 
-Before a `/b/` noun, the hook **`al`** means *in*; *including* an extra member is the join-relation **`gan`**.
+The `/th/` join denies the ground; **`vul`** after the verb would deny the running.
+:::
+
+#### What changes {#intermediate-what-changes}
+
+**1.** `zazozon veruvol thul.` / `zazozon veruvol thol.`
+
+::: details Show answer
+z-Azozon | v-run | th-not
+
+z-Azozon | v-run | th-rank/more
+
+**`thul`** withholds any stance: no judgment. **`thol`** says there are no decisive grounds, or ranks an empty list.
 :::
 
 ## See also
 
 - List joins (right-close fence): [joins.md](/joins)
-- Causal readings of open / without: [causation.md](/causation)
-- Prefix-less *including* / *instead*: [hooks.md](/hooks)
-- *Using* a tool: [hooks.md](/hooks#extra-noun)
