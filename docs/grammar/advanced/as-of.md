@@ -102,7 +102,7 @@ The second sentence's own pair replaces the 22 July now.
 
 An *as-of* pair inside a finished inner clause cannot be resumed later in the main clause. `henar` on its own parses, but write it only after a clause that set whose-now with `henam` and a `/b/`.
 
-**Compare with:** [*after*](/dependents#time-poles) **`halam`** and extra-noun **`el`** *at* place the event in time or next to a landmark; they do not set whose-now. [Causal *if*](/causation#if) **`thohem`** is a condition judged at speech-now, not English *if he had* (`hunom`). [NOTIONAL](/notional#notional) is pretend, not a placeholder now. [Scope islands](join-islands.md#scope-islands-join) limit how far a join reaches; they do not carry an *as-of* forward. On the next clause, repeat the evidential, resume the *as-of*, or both.
+**Compare with:** [*after*](/dependents#time-poles) **`halam`** and extra-noun **`el`** *at* place the event in time or next to a landmark; they do not set whose-now. [Causal *if*](/causation#if) **`thohem`** is a condition judged at speech-now, not English *if he had* (`hunom`). [NOTIONAL](/notional#notional) is pretend, not a placeholder now. [Scope islands](join-limits.md#scope-islands-join) limit how far a join reaches; they do not carry an *as-of* forward. On the next clause, repeat the evidential, resume the *as-of*, or both.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Same root as | Cue |

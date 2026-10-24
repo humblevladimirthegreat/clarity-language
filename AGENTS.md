@@ -30,7 +30,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `hooks.md` | Prefix-less hooks: in-clause, discourse glue, extra-noun; stacked extra-noun and whose (`extra-noun-hooks.md`); ending grids, ranges (`ending-grids.md`); hook compounds, prefixes (`hook-compounds.md`); hooked joins (`hooked-joins.md`). |
 | `discourse-hooks.md` | Stacked discourse, hook resume, parallel chains, discourse placements; somewhere / here and there (`here-there.md`). |
 | `restrictors.md` | `/h/` / `/w/` restrictors, habitual; more occasions (`more-occasions.md`). |
-| `joins.md` | Phrase and clause joins, fences, set vs rank; rank joins (`rank-joins.md`); universals, domains (`universals-domains.md`); join islands, role grid (`join-islands.md`). |
+| `joins.md` | Phrase and clause joins, fences, set vs rank; rank joins (`rank-joins.md`); universals, domains (`universals-domains.md`); join limits, role grid (`join-limits.md`). |
 | `join-across-roles.md` | Stance joins; join-act verbs (`join-acts.md`); join-relations (`join-relations.md`); verb-phrase and clause forms (`vp-clause-forms.md`); clause sequence (`clause-sequence.md`). |
 | `comparatives.md` | Comparatives, superlatives, equatives; manner scale (`comparative-arity.md`); vague amounts (`vague-amounts.md`); stance bars (`stance-bars.md`). |
 | `predication.md` | Classification, identity; how far a label reaches (`label-seams.md`); packaging (`label-scope.md`). |

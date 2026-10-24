@@ -16,7 +16,7 @@ use [skip-cd] for amplify to not deploy.
 -prioritize the size vowel over distinctness
 -should any other cheat sheets be added?
 -come up with criteria for what should be allowed in a single sitting file. 
--group subcategories
+-considering grouping lessons into categories
 
 Finger code (experimental, docs/grammar/finger-code.md; remove the warning once tested):
 -piano on a real instrument, with a player controlling the timing: do the held coda and the one-beat word rest read at speed, is the hook mark easy to hear, do `n` (a sixth) and `e` + hook (a seventh) sound smooth

@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# Named lists and join limits {#named-lists-and-join-limits}
+# Join limits {#join-limits}
 
 ### Scope islands {#scope-islands-join}
 

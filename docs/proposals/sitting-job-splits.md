@@ -224,7 +224,7 @@ Optional. Split only if, after Phases 1–4, the parent title is still a list of
 | `ending-grids.md` | Closed and open hooks | Peel `abstract-landmarks` and `ranges` from closed / open **-l** / **-m** |
 | `number-markers.md` | Number markers and endings | Peel the number-as-verb / adverb / interjection / discourse H3 (pin an id; it has none) from markers / endings / writing |
 | `special-values.md` | Infinity, zero, and hyperbole | Peel `special-number-as-stance` if it is not that trio; leave `zero-exponent` and `hyperbole` unless they cease to share a job |
-| `join-islands.md` | Named lists and join limits | Named phrase **-n** vs allowed-joins-by-PoS vs constraints vs rare arities |
+| `join-limits.md` | Join limits | Named phrase **-n** vs allowed-joins-by-PoS vs constraints vs rare arities |
 | `initials.md` | Initials and rays | Initials vs rays vs named ranges vs kin generations |
 | `stacked-markers.md` | From the end, and stacked marks | From-the-end vs stacked vs ambient magnitude |
 | `compound-families.md` | Which compound | Peel `conversation-length` if it is not which compound |

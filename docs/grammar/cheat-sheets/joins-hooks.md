@@ -36,7 +36,7 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | **-m** | [open](/joins#and-lists-a): *(and possibly more)*; [alone](/joins#standalone-phrase), *as far as I know* | B |
 | **-r** | [one unnamed member](/joins#unspecified-member-r-phrase) (*something*, *someone*); one vowel only | B |
 | **-rx** | [an unnamed group](/joins#unspecified-member-r-phrase) (`zarx` *some ones*); `/z/` `/d/` `/b/` only | B |
-| **-n** | `/z/` `/d/` `/b/`: [a named list](/join-islands#named-list); `/x/`: [sequence](/clause-sequence#clause-sequence); `/v/`: [join-act verb](/join-acts#join-act-verbs); `/ɡ/` `/h/`: [join-relation](/join-relations#join-relations) | I–A |
+| **-n** | `/z/` `/d/` `/b/`: [a named list](/join-limits#named-list); `/x/`: [sequence](/clause-sequence#clause-sequence); `/v/`: [join-act verb](/join-acts#join-act-verbs); `/ɡ/` `/h/`: [join-relation](/join-relations#join-relations) | I–A |
 
 <PageBreak />
 
@@ -49,7 +49,7 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | [Clause joins](/joins#clause-joins) (`/x/`) go **between** clauses | `zazozon vowurol xam zalazun veruvol` | *Azozon walks and Alazun runs* | B |
 | A [different clause join](/joins#clause-joins) closes everything before it | `A xel B xal C` | *(A or B) and C* | B |
 | [Nest](/rank-joins#fence-nesting) by stacking joins | `zedudal zogudal zel zowulal zal` | *either tea or coffee, and water* | I |
-| [Scope island](/join-islands#scope-islands-join) keeps a small list inside a bigger one of the same role | `zazozon { zowulal zal } zam` | *Azozon and (just water)* | A |
+| [Scope island](/join-limits#scope-islands-join) keeps a small list inside a bigger one of the same role | `zazozon { zowulal zal } zam` | *Azozon and (just water)* | A |
 
 ### How many items {#arity}
 
@@ -95,7 +95,7 @@ A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `x
 | [Respectively](/rank-joins#respectively) | `zazozon zalazun zal vayebel dogozel dodozel wubam dal` | *saw a cat and a dog, respectively* | I |
 | [Deny the whole list](/rank-joins#exclusivity-and-denying-a-whole-list) | `vowurol veruvol val vul` | *not both walk and run* | I |
 | [Deny each item](/rank-joins#exclusivity-and-denying-a-whole-list) | `vowurol veruvol vul` | *neither walk nor run* | B |
-| [Named list](/join-islands#named-list) | `zobodel zubudal zan` | *bread and butter* (the set phrase) | A |
+| [Named list](/join-limits#named-list) | `zobodel zubudal zan` | *bread and butter* (the set phrase) | A |
 
 ## Joins across roles {#across-roles}
 

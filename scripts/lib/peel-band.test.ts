@@ -162,11 +162,11 @@ describe("appendObjectToExportedArray", () => {
     assert.doesNotMatch(one, /HoldingSitting\[\n/);
     const two = appendObjectToExportedArray(one, "holdingList", {
       parent: "joins.md",
-      page: "join-islands.md",
+      page: "join-limits.md",
       band: "advanced",
-      title: "Join islands",
+      title: "Join limits",
     });
-    assert.match(two, /join-islands.md/);
+    assert.match(two, /join-limits.md/);
     assert.match(two, /Rank joins/);
     assert.match(two, /HoldingSitting\[\] = \[/);
   });

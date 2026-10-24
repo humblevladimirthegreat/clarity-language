@@ -100,7 +100,7 @@ export const advancedLessons = [
   { text: 'Singing and speech edges', link: '/singability' },
   { text: 'Emphasis and audible start', link: '/emphasis' },
   { text: 'Stand-in words', link: '/stand-in-roles' },
-  { text: 'Named lists and join limits', link: '/join-islands' },
+  { text: 'Join limits', link: '/join-limits' },
   { text: 'Cite plus a hook', link: '/hook-compounds' },
   { text: 'Hook plus a join', link: '/hooked-joins' },
   { text: 'Whose now', link: '/as-of' },

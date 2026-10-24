@@ -39,7 +39,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevum` | [Live and memory](/live-and-memory#live-vs-memory) |
 | **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegol z[odoze] gamezem.` | [Mention](/span-mention#mention) |
 | **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themem` | [It turns out](/mirative#mirative) |
-| **NAME** | A package titled with **-n** | `zobodel zubudal zan.` | [Named lists and join limits](/join-islands#named-list) |
+| **NAME** | A package titled with **-n** | `zobodel zubudal zan.` | [Join limits](/join-limits#named-list) |
 | **NOTIONAL** | As-if / pretense mood | `theyum` | [As if](/notional#notional) |
 | **ON-BEHALF** | Emotion locus: felt for someone's sake | `wawethumom` | [Feelings](/feelings-permission#emotion-compose) |
 | **OPAQUE** | An opaque span: foreign or raw writing | <code>d&lt;kimchi&gt;</code> | [Spans](/spans#loans) |
@@ -626,7 +626,7 @@ Short **-n** label for a long title.
 
 Phrase join **-n**.
 
-[Named lists and join limits](/join-islands#named-list)
+[Join limits](/join-limits#named-list)
 
 **Compare with:** a [titled phrase](#titled-phrase) can use that join **-n** while members keep ordinary endings.
 
@@ -825,7 +825,7 @@ A sibling parent map with no parent of its own. On **a o e u**, **size** is amou
 
 `{ … }` with binder inside.
 
-[Scope islands](/scope-islands#scope-islands), [Named lists and join limits](/join-islands#scope-islands-join)
+[Scope islands](/scope-islands#scope-islands), [Join limits](/join-limits#scope-islands-join)
 
 ### Sentence linker
 

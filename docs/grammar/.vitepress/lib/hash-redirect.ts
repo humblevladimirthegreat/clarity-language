@@ -59,7 +59,7 @@ export const hashRedirects: HashRedirect[] = [
   { page: "dependents.md", hash: "advanced", to: "stand-in-roles.md" },
   { page: "dependents.md", hash: "beginner", to: "dependents.md" },
   { page: "joins.md", hash: "intermediate", to: "rank-joins.md" },
-  { page: "joins.md", hash: "advanced", to: "join-islands.md" },
+  { page: "joins.md", hash: "advanced", to: "join-limits.md" },
   { page: "joins.md", hash: "beginner", to: "joins.md" },
   { page: "hooks.md", hash: "intermediate", to: "ending-grids.md" },
   { page: "hooks.md", hash: "advanced", to: "hook-compounds.md" },

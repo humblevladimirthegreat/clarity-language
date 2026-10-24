@@ -105,7 +105,7 @@ Source: [restrictors.md](/restrictors)
 - **open:** further `/w/` bare forms beyond **`wal` / `wam` / `wual` / `wuam` / `war` / `wer` / `wur` / `wor`** and the non-bare Intermediate core: the same competing readings.
 - **open:** **-n** on `/w/` (`wan`, …). `/w/` is never a phrase-list item, so there is no package to name. (`/h/`…**-n** is [join-relations](/join-relations#join-relations).)
 - **open:** **`wubam`** before **-r** / **-n**. *Respectively something* has no reading.
-- **open:** other join spellings under `/h/` / `/w/` beyond the [defined restrictor core](/more-occasions#defined-core-full) and the join-relations, such as stacked **-r** (`haer`): a stacked blank has no statement job. See also [phrase join inventory](/join-islands#phrase-reserved-forms).
+- **open:** other join spellings under `/h/` / `/w/` beyond the [defined restrictor core](/more-occasions#defined-core-full) and the join-relations, such as stacked **-r** (`haer`): a stacked blank has no statement job. See also [phrase join inventory](/join-limits#phrase-reserved-forms).
 
 ## Joins
 
