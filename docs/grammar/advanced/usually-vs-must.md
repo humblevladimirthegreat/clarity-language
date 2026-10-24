@@ -66,3 +66,106 @@ A **definition** works both ways: whatever has the property is that kind, and ev
 The channel stays on the main sentence and covers the whole generalization. Put it before the pole, as with the [evidence clause](/evidentiality#evidence-clause): `zual gogozel vezuvel thubol thohem blarl …` is *going by a well-established pattern, every cat sleeps when …*.
 
 **Compare with:** a general claim you are **not** giving as today's report is [FORMER](/notional-standing#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is a [requirement](/permission-consent#say-words) (`hwuvom`), not a law of how things work. *Maybe every cat sleeps* is [MAY](/knowing#may) on the same clause.
+
+### Practice {#advanced-practice}
+
+Short drills for Advanced. Try each item before opening **Show answer**.
+
+**Setting:** a lecture hall
+
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *cat* | `ogozel` | 🐈 |
+
+**Review:**
+
+| English | Ageben |
+|---------|--------|
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
+| *PATTERN* | `thubom` |
+| *CAUSE* | `thewom` |
+| *if* | `thohem` |
+| *sleepy* | `uzemel` |
+| *sit* | `vehohel` |
+| *sleep* | `vezuvel` |
+| *walk* | `vowurol` |
+
+#### English → Ageben {#advanced-english-to-ageben}
+
+**1.** *Cats sleep, as a rule, going by the pattern.*
+
+::: details Show answer
+`zuam gogozel vezuvel thubom.`
+
+[z-everything.open | g-cat] | v-sleep | th-PATTERN
+:::
+
+**2.** *Azozon always sits, going by the few cases I have seen.*
+
+::: details Show answer
+`zazozon hual vehohel thubor.`
+
+z-Azozon | h-always | v-sit | th-PATTERN.weak
+:::
+
+**3.** *Alazun usually walks.*
+
+::: details Show answer
+`zalazun huam vowurol.`
+
+z-Alazun | h-always.open | v-walk
+:::
+
+#### Ageben → English {#advanced-ageben-to-english}
+
+**1.** `zazozon huam vehohel.`
+
+::: details Show answer
+z-Azozon | h-always.open | v-sit
+
+*Azozon usually sits.*
+:::
+
+**2.** `zual gogozel vezuvel thewom thohem blarl zogozer guzemel.`
+
+::: details Show answer
+[z-everything | g-cat] | v-sleep | th-CAUSE | [th-if | bl-that-clause] | [z-←cat | g-sleepy]
+
+*Every cat sleeps when it is sleepy; that is how it works.*
+:::
+
+**3.** `zuam gogozel guzemel thubom.`
+
+::: details Show answer
+[z-everything.open | g-cat] | g-sleepy | th-PATTERN
+
+*Cats are sleepy, as a rule, going by the pattern.*
+:::
+
+#### Pick one {#advanced-pick-one}
+
+**1.** *Azozon always sits.* (no exceptions) `zazozon hual vehohel.` or `zazozon huam vehohel.`
+
+::: details Show answer
+`zazozon hual vehohel.`
+
+z-Azozon | h-always | v-sit
+
+Closed **-l** allows none; open **-m** leaves exceptions.
+:::
+
+#### What changes {#advanced-what-changes}
+
+**1.** `zazozon huam vehohel.` / `zazozon hual vehohel.`
+
+::: details Show answer
+z-Azozon | h-always.open | v-sit
+
+z-Azozon | h-always | v-sit
+
+**`huam`** is *as a rule*. **`hual`** claims no exceptions.
+:::
+

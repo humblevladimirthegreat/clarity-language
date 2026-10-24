@@ -41,6 +41,107 @@ For several members, put a [phrase join](/joins) **inside** the `/b/` phrase (`g
 
 **Compare with:** *a house like Azozon’s* / *walks like a duck* is resemblance ([like](/relations#like-resembles) `gewem` / `hewem`), not **`goen` / `hoen`** *on a par with* / *equating*.
 
+### Practice {#intermediate-practice}
+
+Short drills for Intermediate. Try each item before opening **Show answer**.
+
+**Setting:** a picnic blanket
+
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *finish-line* | `uvahul` | 🏁 |
+| *teamwork* | `uhunam` | 🤾 from *handball* |
+| *group* | `egayal` | 👥 |
+
+**Review:**
+
+| English | Ageben |
+|---------|--------|
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
+| *Ahelan* | `ahelan` |
+| *trophy* | `odoral` |
+| *run* | `veruvol` |
+| *drink* | `vuwudal` |
+
+#### English → Ageben {#intermediate-english-to-ageben}
+
+**1.** *Alazun runs with Ahelan.*
+
+::: details Show answer
+`zalazun han blahelan veruvol.`
+
+z-Alazun | [h-including | bl-Ahelan] | v-run
+:::
+
+**2.** *A team open to Azozon.*
+
+::: details Show answer
+`zuhunam gaen blazozon.`
+
+z-teamwork | [g-open-to | bl-Azozon]
+:::
+
+**3.** *Alazun runs, refusing the drink.*
+
+::: details Show answer
+`zalazun hun bluwudal veruvol.`
+
+z-Alazun | [h-refusing | bl-drink] | v-run
+:::
+
+#### Ageben → English {#intermediate-ageben-to-english}
+
+**1.** `zuvahul guan blodoral.`
+
+::: details Show answer
+z-finish-line | [g-without | bl-trophy]
+
+*The finish line without the trophy.*
+:::
+
+**2.** `zegayal gan blazozon.`
+
+::: details Show answer
+z-group | [g-including | bl-Azozon]
+
+*A group including Azozon.*
+:::
+
+**3.** `zazozon han blalazun veruvol.`
+
+::: details Show answer
+z-Azozon | [h-including | bl-Alazun] | v-run
+
+*Azozon runs with Alazun.*
+:::
+
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Alazun runs with the trophy.* `zalazun han blodoral veruvol.` or `zalazun hun blodoral veruvol.`
+
+::: details Show answer
+`zalazun han blodoral veruvol.`
+
+z-Alazun | [h-including | bl-trophy] | v-run
+
+**`han`** is company / including; **`hun`** would refuse the trophy.
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *a group including Ahelan* <!-- lint: error -->`zegayal al bahelan.`
+
+::: details Show answer
+`zegayal gan blahelan.`
+
+z-group | [g-including | bl-Ahelan]
+
+Before a `/b/` noun, the hook **`al`** means *in*; *including* an extra member is the join-relation **`gan`**.
+:::
+
 ## See also
 
 - Join-act verbs: [join-acts.md](/join-acts)
@@ -48,3 +149,4 @@ For several members, put a [phrase join](/joins) **inside** the `/b/` phrase (`g
 - Causal readings of open / without: [causation.md](/causation)
 - Prefix-less *including* / *instead*: [hooks.md](/hooks)
 - *Using* a tool: [hooks.md](/hooks#extra-noun)
+

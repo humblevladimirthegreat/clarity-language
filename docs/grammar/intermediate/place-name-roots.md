@@ -17,3 +17,103 @@ A person or place that is not in the lexicon can take the same spelling. The [le
 |--------|-----|---------|
 | `azabanan` | place-name root with no cluster (seven letters, ends `n` + vowel) | *Japan* |
 | `avranzan` | place-name root that keeps a cluster | *France* |
+
+### Practice {#intermediate-practice}
+
+Short drills for Intermediate. Try each item before opening **Show answer**.
+
+**Setting:** a stamp album
+
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *french* | `avranzan` | 🇫🇷 |
+
+**Review:**
+
+| English | Ageben |
+|---------|--------|
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
+| *Ahelan* | `ahelan` |
+| *japanese* | `azabanan` |
+| *see* | `vayebel` |
+| *walk* | `vowurol` |
+
+#### English → Ageben {#intermediate-english-to-ageben}
+
+**1.** *Alazun sees Japan.*
+
+::: details Show answer
+`zalazun dazabanan vayebel.`
+
+z-Alazun | d-Azabanan | v-see
+:::
+
+**2.** *Azozon walks in France.*
+
+::: details Show answer
+`zazozon al bavranzan vowurol.`
+
+z-Azozon | [in | b-Avranzan] | v-walk
+:::
+
+**3.** *Ahelan sees France.*
+
+::: details Show answer
+`zahelan davranzan vayebel.`
+
+z-Ahelan | d-Avranzan | v-see
+:::
+
+#### Ageben → English {#intermediate-ageben-to-english}
+
+**1.** `zalazun gazabanam.`
+
+::: details Show answer
+z-Alazun | g-japanese
+
+*Alazun is Japanese.*
+:::
+
+**2.** `zazozon dazabanan vayebel.`
+
+::: details Show answer
+z-Azozon | d-Azabanan | v-see
+
+*Azozon sees Japan.*
+:::
+
+**3.** `zahelan al bazabanan vowurol.`
+
+::: details Show answer
+z-Ahelan | [in | b-Azabanan] | v-walk
+
+*Ahelan walks in Japan.*
+:::
+
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Ahelan is Japanese.* `zahelan gazabanam.` or `zahelan gazabanan.`
+
+::: details Show answer
+`zahelan gazabanam.`
+
+z-Ahelan | g-japanese
+
+Belonging takes **-m**; **-n** is the country name.
+:::
+
+#### What changes {#intermediate-what-changes}
+
+**1.** `zalazun dazabanan vayebel.` / `zalazun davranzan vayebel.`
+
+::: details Show answer
+z-Alazun | d-Azabanan | v-see
+
+z-Alazun | d-Avranzan | v-see
+
+The named country is Japan, then France.
+:::
+

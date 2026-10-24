@@ -117,3 +117,101 @@ The unit sets how wide *now* is. Zero hours is *right now*; zero [days](/numbers
 > "I hear Azozon sings today."
 
 Use zero on a channel that takes either sign. **LIVE** `thugem` already means *now in view*, so it needs no offset. **MEMORY** takes **`-`** only and PLAN takes **`+`** only, so zero is not a sentence on them.
+
+### Practice {#advanced-practice}
+
+Short drills for Advanced. Try each item before opening **Show answer**.
+
+**Setting:** a night desk
+
+**Review:**
+
+| English | Ageben |
+|---------|--------|
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
+| *MEMORY* | `thevum` |
+| *PATTERN* | `thubom` |
+| *hour* | `agorum` |
+| *walk* | `vowurol` |
+| *write* | `varuyol` |
+| *sleep* | `vezuvel` |
+| *see* | `vayebel` |
+| *camera* | `ugewel` |
+
+#### English → Ageben {#advanced-english-to-ageben}
+
+**1.** *I saw Azozon write three hours ago.*
+
+::: details Show answer
+`zazozon thevum blagorum grugel varuyol.`
+
+z-Azozon | [th-MEMORY | [bl-hour | g-minus-three]] | v-write
+:::
+
+**2.** *I saw Azozon walk recently.*
+
+::: details Show answer
+`zazozon thevum blruwum vowurol.`
+
+z-Azozon | [th-MEMORY | bl---e-.about] | v-walk
+:::
+
+**3.** *I just saw Azozon look at the camera.*
+
+::: details Show answer
+`zazozon thevum blruwul dugewel vayebel.`
+
+z-Azozon | [th-MEMORY | bl---e-] | d-camera | v-see
+:::
+
+#### Ageben → English {#advanced-ageben-to-english}
+
+**1.** `zalazun thubom blagorum grugel vezuvel.`
+
+::: details Show answer
+z-Alazun | [th-PATTERN | [bl-hour | g-minus-three]] | v-sleep
+
+*Going by the pattern, Alazun slept three hours ago.*
+:::
+
+**2.** `zazozon thevum blruwul vowurol.`
+
+::: details Show answer
+z-Azozon | [th-MEMORY | bl---e-] | v-walk
+
+*I just saw Azozon walk.*
+:::
+
+**3.** `zazozon thevum blruwum dugewel vayebel.`
+
+::: details Show answer
+z-Azozon | [th-MEMORY | bl---e-.about] | d-camera | v-see
+
+*I recently saw Azozon look at the camera.*
+:::
+
+#### Pick one {#advanced-pick-one}
+
+**1.** *I just saw Azozon walk.* `zazozon thevum blruwul vowurol.` or `zazozon thevum blruwum vowurol.`
+
+::: details Show answer
+`zazozon thevum blruwul vowurol.`
+
+z-Azozon | [th-MEMORY | bl---e-] | v-walk
+
+**-l** is *just now*; open **-m** is *recently*.
+:::
+
+#### What changes {#advanced-what-changes}
+
+**1.** `zalazun thevum blagorum grugel vezuvel.` / `zalazun thevum blagorum grudol vezuvel.`
+
+::: details Show answer
+z-Alazun | [th-MEMORY | [bl-hour | g-minus-three]] | v-sleep
+
+z-Alazun | [th-MEMORY | [bl-hour | g-minus-two]] | v-sleep
+
+The signed amount is **three** hours back, then **two**.
+:::
+

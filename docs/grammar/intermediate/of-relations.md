@@ -67,7 +67,7 @@ After a join, `gobom` and `gaham` bound the set the join covers, as SHARED words
 **Compare with:**
 
 - Plain *Azozon's*, with no particular tie, is the hook [`om`](/extra-noun-hooks#genitive) (`zodozel om bazozon`). Ownership is `gegunum` + `/b/` ([joins](rank-joins.md#scope-fence-p-join)). A need from [sakes](/sakes) on `/ɡ/` also says the thing is the speaker's.
-- Place *in* is the hook `al`; path *from* is the hook `ul` ([locative relations](locative-relations.md#locative-relations)).
+- Place *in* is the hook `al`; path *from* is the hook `ul` ([extra nouns](/extra-noun-hooks#extra-noun-intermediate)).
 - *A house like Azozon’s* is [simile](/relations#similative) (`gewem`), not *made of*. *A book for a hammer* as a swap is [exchange](/relations#exchange) (`geham`).
 - `gobom` is a part that belongs to the thing's structure (a bone of the body); `gozowum` is a piece taken off it (a slice of bread).
 - *From* as the origin of a whole kind (`#e-xROOT`) is a numeric prefix, not this *from*, which is about one particular thing.
@@ -101,6 +101,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *wine* | `owudal` |
 | *bread* | `obodel` |
 | *wood* | `ulol` |
+| *saw* | `ozowul` |
 | *smell* | `vonebel` |
 | *see* | `vayebel` |
 | *find* | `vumewel` |
@@ -157,18 +158,6 @@ z-Alazun | [d-luggage | [g-origin | bl-station]] | v-find
 *Alazun finds luggage from the station.*
 :::
 
-#### Pick one {#intermediate-pick-one}
-
-**1.** *Ahelan sees a house made of wood.* `zahelan dohehal gulom blulol vayebel.` or `zahelan dohehal gadam blulol vayebel.`
-
-::: details Show answer
-`zahelan dohehal gulom blulol vayebel.`
-
-z-Ahelan | [d-house | [g-material | bl-wood]] | v-see
-
-**`gulom`** is constitution; **`gadam`** would treat wood as a filling.
-:::
-
 #### Fix it {#intermediate-fix-it}
 
 **1.** *Azozon sees a teapot full of wine.* <!-- lint: error -->`zazozon dowudal gadam bledodal vayebel.`
@@ -179,5 +168,17 @@ z-Ahelan | [d-house | [g-material | bl-wood]] | v-see
 z-Azozon | [d-teapot | [g-contents | bl-wine]] | v-see
 
 The vessel takes **`gadam`**; the filling sits in `/b/`.
+:::
+
+#### What changes {#intermediate-what-changes}
+
+**1.** `zahelan dohehal gulom blulol vayebel.` / `zahelan dohehal gadam blulol vayebel.`
+
+::: details Show answer
+z-Ahelan | [d-house | [g-material | bl-wood]] | v-see
+
+z-Ahelan | [d-house | [g-contents | bl-wood]] | v-see
+
+**`gulom`** is constitution. **`gadam`** treats wood as a filling.
 :::
 

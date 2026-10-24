@@ -57,6 +57,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *hope* | `thuwuyom` |
 | *want-unstated* | `thalom` |
 | *possibility* | `hogugem` |
+| *around* | `hevam` |
+| *french* | `avranzan` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -466,14 +468,14 @@ The role the act is done in sits on `/h/`; `/ɡ/` on Alazun would say Alazun **i
 **Rule:** [The role you act in](role-scope.md#capacity)
 :::
 
-**20.** *I want Azozon to walk.* `zazozon thalom vowurol.` or `zazozon thogel vowurol.`
+**20.** *I have long wanted Azozon to walk.* `zazozon thalol vowurol.` or `zazozon thalom vowurol.`
 
 ::: details Show answer
-`zazozon thalom vowurol.`
+`zazozon thalol vowurol.`
 
-z-Azozon | th-WANT-unstated | v-walk
+z-Azozon | th-WANT-lasting | v-walk
 
-**`thalom`** is a want; **`thogel`** would be a final decision.
+**-l** keeps coming back; **-m** leaves duration unstated.
 
 **Rule:** [Want](want.md#want)
 :::
@@ -502,16 +504,52 @@ z-Alazun | [h-exactly-like | bl-duck] | v-walk
 **Rule:** [Exactly like](exactly-like.md#exactly-like)
 :::
 
-**23.** *Alazun sits around a sandwich.* `zalazun vehohel hevam bledal.` or `zalazun vehohel hohom bledal.`
+**23.** *Alazun sits around a sandwich.* `zalazun vehohel hevam bledal.` or `zalazun gevam bledal vehohel.`
 
 ::: details Show answer
 `zalazun vehohel hevam bledal.`
 
 z-Alazun | v-sit | [h-around | bl-sandwich]
 
-**`hevam`** is on all sides; **`hohom`** would be edge to far edge.
+**`hevam`** frames the sitting; **`gevam`** would mark Alazun as the one around the sandwich.
 
 **Rule:** [Locative relations](locative-relations.md#locative-relations)
+:::
+
+**24.** *Azozon adds a sandwich.* `zazozon dedal van.` or `zazozon dedal ven.`
+
+::: details Show answer
+`zazozon dedal van.`
+
+z-Azozon | d-sandwich | v-includes
+
+**`van`** adds it to the set; **`ven`** would lock it as the one pick.
+
+**Rule:** [Join-act verbs](join-acts.md#join-act-verbs)
+:::
+
+**25.** *Alazun walks with Ahelan.* `zalazun han blahelan vowurol.` or `zalazun hun blahelan vowurol.`
+
+::: details Show answer
+`zalazun han blahelan vowurol.`
+
+z-Alazun | [h-including | bl-Ahelan] | v-walk
+
+**`han`** is company; **`hun`** would refuse Ahelan.
+
+**Rule:** [Join-relations](join-relations.md#join-relations)
+:::
+
+**26.** *Alazun is French.* `zalazun gavranzam.` or `zalazun gavranzan.`
+
+::: details Show answer
+`zalazun gavranzam.`
+
+z-Alazun | g-french
+
+Belonging takes **-m**; **-n** is the named country.
+
+**Rule:** [Place-name roots](place-name-roots.md#place-name-roots)
 :::
 
 #### What changes {#intermediate-what-changes}

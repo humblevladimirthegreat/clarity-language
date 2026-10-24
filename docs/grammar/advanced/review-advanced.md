@@ -174,6 +174,18 @@ z-baguette | g-2nd-from-end
 **Rule:** [From the end](stacked-markers.md#from-the-end)
 :::
 
+**7.** *Azozon usually sits.* `zazozon huam vehohel.` or `zazozon hual vehohel.`
+
+::: details Show answer
+`zazozon huam vehohel.`
+
+z-Azozon | h-always.open | v-sit
+
+Open **-m** leaves exceptions; closed **-l** allows none.
+
+**Rule:** [Channels on a generalization](usually-vs-must.md#universality)
+:::
+
 #### Fix it {#advanced-fix-it}
 
 **1.** *I saw Ahelan sleep two hours ago.* <!-- lint: error -->`zahelan thevum bagorum gradol vezuvel.`

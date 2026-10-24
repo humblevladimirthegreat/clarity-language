@@ -200,7 +200,7 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 | [Against someone's wishes](/want#whose-intention) | `zalazun vezuvel uom theyomazozon thalom.` | *Alazun sleeps, against Azozon's wishes, as far as I can tell.* | I |
 | [Someone else's plan](/holder#holder): a holder | `zazozon thebamazozon thagom vowurol.` | *I hear Azozon plans to walk.* | I |
 | [Someone else's decision](/want#whose-intention): a holder | `zazozon theyomazozon thogem vowurol.` | *I gather Azozon has decided to walk, and can still change that.* | I |
-| [Plan, and when](/intention#plan-predict) | `zuwen thagom blral vehohel.` | *I plan to sit down later.* | I |
+| [Plan](/intention#plan-predict) | `zuwen thagom vowurol.` | *I plan to walk.* | I |
 | [Try, failing that](/ability#fallback): `xen` | `zazozon howar vowurol xen zazozor vozuyel.` | *Azozon gives walking a try; failing that, Azozon sings.* | I |
 | [A plan with backups](/ability#fallback) | `zuwen thagol vowurol xen zuwen thagol vozuyel xen zuwen thagol vezuvel.` | *walk; failing that, sing; failing that, sleep* | I |
 

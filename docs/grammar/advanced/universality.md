@@ -39,7 +39,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 | English | Ageben | Cue |
 |---------|--------|-----|
-| *cat* | `ogozel` | 🐈 |
+| *hat* | `anobal` | 🧢 |
 
 **Review:**
 
@@ -47,19 +47,14 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
+| *Ahelan* | `ahelan` |
 | *LIVE* | `thugem` |
 | *MEMORY* | `thevum` |
-| *PATTERN* | `thubom` |
-| *CAUSE* | `thewom` |
-| *if* | `thohem` |
-| *sleepy* | `uzemel` |
+| *RESIDUE* | `haram` |
+| *tired* | `adamul` |
 | *red* | `erulol` |
-| *hour* | `agorum` |
-| *camera* | `ugewel` |
 | *walk* | `vowurol` |
-| *write* | `varuyol` |
 | *sit* | `vehohel` |
-| *sleep* | `vezuvel` |
 | *see* | `vayebel` |
 | *dress* | `edobal` |
 
@@ -73,66 +68,58 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 z-Alazun | [d-dress | [w-LIVE | g-red]] | v-see
 :::
 
-**2.** *I saw Azozon write three hours ago.*
+**2.** *Azozon sees a hat that I remember as red.*
 
 ::: details Show answer
-`zazozon thevum blagorum grugel varuyol.`
+`zazozon danobal wevum gerulol vayebel.`
 
-z-Azozon | [th-MEMORY | [bl-hour | g-minus-three]] | v-write
+z-Azozon | [d-hat | [w-MEMORY | g-red]] | v-see
 :::
 
-**3.** *Cats sleep, as a rule, going by the pattern.*
+**3.** *Azozon walks, still tired.*
 
 ::: details Show answer
-`zuam gogozel vezuvel thubom.`
+`zazozon waram gadamul vowurol.`
 
-[z-everything.open | g-cat] | v-sleep | th-PATTERN
+[z-Azozon | [w-RESIDUE | g-tired]] | v-walk
 :::
 
 #### Ageben → English {#advanced-ageben-to-english}
 
-**1.** `zazozon hual vehohel thubor.`
+**1.** `zazozon dedobal wevum gerulol vayebel.`
 
 ::: details Show answer
-z-Azozon | h-always | v-sit | th-PATTERN.weak
+z-Azozon | [d-dress | [w-MEMORY | g-red]] | v-see
 
-*Azozon always sits, going by the few cases I have seen.*
+*Azozon sees a dress that I remember as red.*
 :::
 
-**2.** `zalazun thubom blagorum grugel vezuvel.`
+**2.** `zalazun danobal wugem gerulol vayebel.`
 
 ::: details Show answer
-z-Alazun | [th-PATTERN | [bl-hour | g-minus-three]] | v-sleep
+z-Alazun | [d-hat | [w-LIVE | g-red]] | v-see
 
-*Going by the pattern, Alazun slept three hours ago.*
+*Alazun sees a hat that I can see is red.*
 :::
 
-**3.** `zual gogozel vezuvel thewom thohem blarl zogozer guzemel.`
+**3.** `zahelan waram gadamul vehohel.`
 
 ::: details Show answer
-[z-everything | g-cat] | v-sleep | th-CAUSE | [th-if | bl-that-clause] | [z-←cat | g-sleepy]
+[z-Ahelan | [w-RESIDUE | g-tired]] | v-sit
 
-*Every cat sleeps when it is sleepy; that is how it works.*
-:::
-
-**4.** `zazozon thevum blruwul dugewel vayebel.`
-
-::: details Show answer
-z-Azozon | [th-MEMORY | bl---e-] | d-camera | v-see
-
-*I just saw Azozon look at the camera.*
+*Ahelan sits, still tired.*
 :::
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *I saw Azozon walk recently.* `zazozon thevum blruwum vowurol.` or `zazozon thevum blruwul vowurol.`
+**1.** *Azozon sees a hat that I can see is red.* `zazozon danobal wugem gerulol vayebel.` or `zazozon danobal thugem gerulol vayebel.`
 
 ::: details Show answer
-`zazozon thevum blruwum vowurol.`
+`zazozon danobal wugem gerulol vayebel.`
 
-z-Azozon | [th-MEMORY | bl---e-.about] | v-walk
+z-Azozon | [d-hat | [w-LIVE | g-red]] | v-see
 
-Open **-m** softens the hair into *a short while ago*; **-l** is *just now*.
+**`wugem`** colors only the adjective; a clause **`thugem`** would frame the whole seeing.
 :::
 
 #### What changes {#advanced-what-changes}

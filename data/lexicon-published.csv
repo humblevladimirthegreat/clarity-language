@@ -118,7 +118,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 💭,thought,oma,mind,holds,,commentary,thought balloon floats a take over the scene; commentary is mind storying instead of bare contact,,idea; concept; notion; remark; theoretical; comment,
 💤,sleep,ezuve,doing,one,none,restoration,sleep means rest; restoration is the unobservable replenishing,,asleep,roles.md#beginner-practice
 👋,wave,owuya,person,holds,none,acknowledgment,a wave acknowledges someone; acknowledgment is the unobservable uptake,,acknowledge; recognition; greet; gesture,
-✋,hand,aheba,body,holds,small,,,,,,of-relations.md#intermediate-practice
+✋,hand,aheba,body,holds,small,,,,,of-relations.md#intermediate-practice
 🫴,palm-up,aweba,body,holds,small,offering,a palm held up holds something out to take; an offering is what you hold out,,offer,
 🫷,pushing-hand,ubebu,body,takes-away,small,pushback,a hand pushing back says not so fast; pushback is resisting a demand,,push,
 👌,ok,oguye,person,one,none,acceptance,the ok sign says it is fine as it is; acceptance is letting it be,,accept; alright; adopt; fine,
@@ -255,7 +255,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🤸,cartwheel,aguve,doing,one,none,exuberance,cartwheel shows exuberance,,,
 🤼‍♂️,wrestle,erunu,title,takes-away,none,,,,,
 🤽,water-polo,owuna,title,holds,none,competition,water polo teams battle to outscore each other,,compete; competitive,
-🤾,handball,uhuna,title,holds,none,teamwork,handball needs teamwork,,team,join-across-roles.md#intermediate-practice
+🤾,handball,uhuna,title,holds,none,teamwork,handball needs teamwork,,team,join-relations.md#intermediate-practice
 🤹,juggle,ahuva,doing,holds,none,multitasking,a juggler keeps several balls in the air at once,,,notional.md#intermediate-practice
 🧘,meditation,umame,mind,one,,mindfulness,meditate builds mindfulness,,,
 🛀,bath,ababa,body,holds,big,cleansing,bath brings cleansing,,wash,
@@ -266,7 +266,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🗣️,orator,arayo,person,order,big,rhetoric,an orator sways a crowd with persuasive words,,,
 👤,silhouette,ezaye,person,one,big,,,,profile,
 🧑‍🦲,head,ehobe,body,one,medium,,,,principal,
-👥,group,egaya,person,holds,big,community,busts stand for any group; community is the shared life a group builds,,society; club; association; folk; ethnic; racial,join-across-roles.md#intermediate-practice
+👥,group,egaya,person,holds,big,community,busts stand for any group; community is the shared life a group builds,,society; club; association; folk; ethnic; racial,join-relations.md#intermediate-practice
 🫂,hug,ahuya,person,holds,none,comfort,hug gives comfort,,comfortable; embrace,feelings-permission.md#intermediate-practice
 👪,family,uvaya,person,holds,big,kinship,a family is the people tied to you by blood,,household,hooks.md#beginner-practice
 🧑‍🧒,parent,abaya,person,holds,big,,an adult with a child is a parent,,,
@@ -280,7 +280,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐺,wolf,uwozu,creature,takes-away,medium,predation,wolf at the door,,,
 🦊,fox,avozu,creature,takes-away,medium,cunning,sly as a fox,,,
 🦝,raccoon,arozu,creature,takes-away,medium,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal,,role-scope.md#intermediate-practice
-🐈,cat,ogoze,creature,one,medium,curiosity,a cat pokes at whatever is new; curiosity is wanting to find out,,wonder; curious; interest,universality.md#advanced-practice
+🐈,cat,ogoze,creature,one,medium,curiosity,a cat pokes at whatever is new; curiosity is wanting to find out,,wonder; curious; interest,usually-vs-must.md#advanced-practice
 🐈‍⬛,black-cat,abozu,creature,takes-away,medium,omen,"a black cat crossing is read as a sign; an omen is a sign people take to predict, which need not mean it will",,,
 🦁,lion,alazu,creature,takes-away,big,courage,brave as a lion,,,
 🐅,tiger,edazu,creature,takes-away,big,ferocity,fight like a tiger,,,
@@ -696,7 +696,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🎗️,awareness,owema,mind,holds,,solidarity,the ribbon is worn for a cause; solidarity is standing with others,,aware,
 🎟️,admission-tickets,edena,title,holds,small,admission,ticket grants entry inside; admission is being let in,,entry,
 🎫,ticket,odeno,title,order,small,,,,,left-bound.md#intermediate-practice
-🏆,trophy,odora,counting,holds,medium,score,trophy marks the final tally; score is the counted result,,grade; prize; champion; rating,join-across-roles.md#intermediate-practice
+🏆,trophy,odora,counting,holds,medium,score,trophy marks the final tally; score is the counted result,,grade; prize; champion; rating,join-acts.md#intermediate-practice
 🏅,medal,emebo,body,order,small,achievement,medal marks accomplished feat; achievement is reaching a goal,,success; achieve; successful; award; fulfill; accomplish,
 🥇,gold,ugulo,nature,order,none,first,gold medal marks top place; first is leading all others,,primary; priority; prime,numeric-derivation.md#advanced-practice
 🥈,silver,uzulo,nature,order,none,runner-up,silver medal marks runner-up; second is next after first,,,
@@ -792,7 +792,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 👒,sun-hat,azobu,body,takes-away,medium,shade,a sunhat shields from sun above; shade is shelter from harshness,,shadow,
 🎩,top-hat,udoba,body,holds,medium,trick,a magician pulls a trick from a top hat,,,
 🎓,mortar-board,omoba,body,holds,medium,,,,college; university,
-🧢,hat,anoba,body,holds,medium,,,,cap,
+🧢,hat,anoba,body,holds,medium,,,,cap,universality.md#advanced-practice
 🪖,helmet,umobu,body,takes-away,medium,,,,,roles.md#beginner-practice
 ⛑️,hard-hat,ahobu,body,takes-away,medium,,,,,
 📿,rosary,orebo,body,order,small,prayer,beads count prayers; prayer is speaking to the sacred,,,
@@ -989,7 +989,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🪪,id,ane,title,one,,verification,an id card lets others check who you are,,genuine,
 🏧,atm,edaha,place,holds,big,withdrawal,atm gives cash on demand; withdrawal is taking out stored value,,,
 🚮,litter,ululu,nature,takes-away,none,disposal,litter bin marks where trash goes; disposal is getting rid of,,,
-🚰,water,owula,nature,holds,none,,,,,,locative-relations.md#intermediate-practice
+🚰,water,owula,nature,holds,none,,,,,locative-relations.md#intermediate-practice
 ♿,accessible,oguhe,place,one,none,,,,,
 🚻,restroom,eraha,place,holds,big,designation,restroom sign marks facility type; designation is marked category,,appoint,
 🚼,baby-changing,obohe,place,one,medium,,,,,
@@ -1125,7 +1125,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🔺,triangle,odugu,sign,takes-away,none,radian,triangle marks an angle wedge; radian is the SI plane-angle unit,,angle,
 🔻,down-triangle,adugu,sign,takes-away,none,corner,a triangle ends in a point; a corner is where two edges meet,,vertex,
 🔘,option,oyuge,sign,one,none,selection,radio button marks one chosen; selection is picking one option,,button; select; filter,
-🏁,finish-line,uvahu,place,takes-away,big,terminus,checkered flag marks finish,,,join-across-roles.md#intermediate-practice
+🏁,finish-line,uvahu,place,takes-away,big,terminus,checkered flag marks finish,,,join-relations.md#intermediate-practice
 🚩,sport,ozuva,doing,holds,none,alarm,red flag raises warning,,,
 🏴,flag,avoge,sign,one,medium,anarchy,black flag suggests anarchy,,,
 🏳️,parley,obogu,sign,takes-away,medium,surrender,waving a white flag gives up the fight,,submit,
@@ -1212,7 +1212,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🇫🇰,falkland-islands-flag,ovoglandaylandza,named,,,falklander,falkland islands people are falklander,,,
 🇫🇲,micronesia-flag,amaygroneza,named,,,micronesian,micronesia people are micronesian,,,
 🇫🇴,faroe-islands-flag,everowaylandza,named,,,faroese,faroe islands people are faroese,,,
-🇫🇷,france-flag,avranza,named,,,french,france people are french,,,
+🇫🇷,france-flag,avranza,named,,,french,france people are french,,,place-name-roots.md#intermediate-practice
 🇬🇦,gabon-flag,agabana,named,,,gabonese,gabon people are gabonese,,,
 🇬🇧,uk-flag,uyugeyene,named,,,british,uk people are british,,,
 🇬🇩,grenada-flag,egreneyda,named,,,grenadian,grenada people are grenadian,,,

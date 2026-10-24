@@ -97,9 +97,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *bridge* | `ohol` | 🌉 |
 | *water* | `owulal` | 🚰 |
-| *between* | `hedam` | 🥪 from *sandwich*: the filling sits between two sides |
-| *across* | `hohom` | 🌉 from *bridge*: a bridge spans the gap |
-| *around* | `hevam` | 🎠 from *carousel*: on all sides of the center pole |
 
 **Review:**
 
@@ -168,14 +165,14 @@ z-Alazun | v-walk | [h-across | bl-bridge]
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Alazun walks across the water.* `zalazun vowurol hohom blowulal.` or `zalazun vowurol uel blowulal.`
+**1.** *Alazun walks across the water.* `zalazun vowurol hohom blowulal.` or `zalazun gohom blowulal vowurol.`
 
 ::: details Show answer
 `zalazun vowurol hohom blowulal.`
 
 z-Alazun | v-walk | [h-across | bl-water]
 
-**`hohom`** goes edge to far edge; **`uel`** would pass through the inside.
+The path is an **/h/** relation on the walk; **`gohom`** would label Alazun as the thing that is across.
 :::
 
 #### Fix it {#intermediate-fix-it}

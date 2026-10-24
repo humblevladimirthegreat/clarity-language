@@ -48,8 +48,108 @@ Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 
 English *refuse* vs *leave out*: `zazozon dumudel vun` (*Azozon refuses meat*) vs `zazozon dumudel vuan` (*Azozon excludes meat*). One locked choice vs an open pick: `zazozon duwedal ven` vs `zazozon duwedal vaen`. Rank vs sequence: `zazozon durewem von` (*prioritizes the workaround*: first by importance) vs `zazozon durewem vaon` (*starts with the workaround*: first in order).
 
+### Practice {#intermediate-practice}
+
+Short drills for Intermediate. Try each item before opening **Show answer**.
+
+**Setting:** a roster desk
+
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *trophy* | `odoral` | 🏆: its abstract is *score* |
+
+**Review:**
+
+| English | Ageben |
+|---------|--------|
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
+| *Ahelan* | `ahelan` |
+| *sandwich* | `edal` |
+| *drink* | `vuwudal` |
+| *table* | `edohel` |
+
+#### English → Ageben {#intermediate-english-to-ageben}
+
+**1.** *Azozon adds the trophy.*
+
+::: details Show answer
+`zazozon dodoral van.`
+
+z-Azozon | d-trophy | v-includes
+:::
+
+**2.** *Alazun chooses the drink.*
+
+::: details Show answer
+`zalazun duwudal ven.`
+
+z-Alazun | d-drink | v-choose
+:::
+
+**3.** *Ahelan excludes the sandwich.*
+
+::: details Show answer
+`zahelan dedal vuan.`
+
+z-Ahelan | d-sandwich | v-excludes
+:::
+
+#### Ageben → English {#intermediate-ageben-to-english}
+
+**1.** `zalazun dodoral ven.`
+
+::: details Show answer
+z-Alazun | d-trophy | v-choose
+
+*Alazun chooses the trophy.* (as the one choice)
+:::
+
+**2.** `zazozon duwudal vun.`
+
+::: details Show answer
+z-Azozon | d-drink | v-denies
+
+*Azozon refuses the drink.*
+:::
+
+**3.** `zahelan dedohel von.`
+
+::: details Show answer
+z-Ahelan | d-table | v-prioritizes
+
+*Ahelan prioritizes the table.*
+:::
+
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Alazun chooses the trophy.* (as the one choice) `zalazun dodoral ven.` or `zalazun dodoral van.`
+
+::: details Show answer
+`zalazun dodoral ven.`
+
+z-Alazun | d-trophy | v-choose
+
+**`ven`** locks the one pick; **`van`** only adds it to the set.
+:::
+
+#### What changes {#intermediate-what-changes}
+
+**1.** `zazozon dodoral vun.` / `zazozon dodoral vuan.`
+
+::: details Show answer
+z-Azozon | d-trophy | v-denies
+
+z-Azozon | d-trophy | v-excludes
+
+**`vun`** refuses it; **`vuan`** leaves it out of the set.
+:::
+
 ## See also
 
 - List joins (right-close fence): [joins.md](/joins)
 - *And then* between sentences: [clause-sequence.md](/clause-sequence#sequence)
 - Collective **-x** on a verb: [collectives.md](/collectives#verbs-v)
+

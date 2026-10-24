@@ -32,7 +32,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Ageben | Cue |
 |---------|--------|-----|
-| *exactly-like* | `hewel` | 🪞 from *mirror*: **-l** for an exact match, **-m** for *like* |
 | *mirror* | `ewel` | 🪞 |
 
 **Review:**
@@ -47,7 +46,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *run* | `veruvol` |
 | *walk* | `vowurol` |
 | *see* | `vayebel` |
-| *like* | `hewem` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 

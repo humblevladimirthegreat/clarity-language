@@ -172,6 +172,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `phonology.md` | — | — |
 | `word-endings.md` | Beginner | a classroom |
 | `proper-names.md` | Intermediate | a hospital ward |
+| `place-name-roots.md` | Intermediate | a stamp album |
 | `clause.md` | Beginner | a bank |
 | `clause.md` | Intermediate | a waiting room |
 | `clause.md` | Advanced | a circus |
@@ -254,7 +255,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `knowing.md` | Intermediate | — |
 | `evidentiality.md` | Intermediate | a press conference |
 | `holder.md` | Intermediate | a witness stand |
-| `knowing.md` | Advanced | a film archive |
+| `knowing.md` | Advanced | — |
 | `live-and-memory.md` | Beginner | a lookout |
 | `notional-standing.md` | Intermediate | a magic show |
 | `mirative.md` | Intermediate | a card table |
@@ -269,9 +270,14 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `intention.md` | Beginner | a chess club |
 | `ability.md` | Intermediate | a board meeting |
 | `want.md` | Intermediate | a birthday party |
+| `universality.md` | Advanced | a film archive |
+| `dated-channel.md` | Advanced | a night desk |
+| `usually-vs-must.md` | Advanced | a lecture hall |
 | `can-and-cant.md` | Beginner | a workshop |
 | `say-reasons.md` | Plans against a snapshot | a delayed departure board |
 | `join-across-roles.md` | Intermediate | a relay race |
+| `join-acts.md` | Intermediate | a roster desk |
+| `join-relations.md` | Intermediate | a picnic blanket |
 | `vp-clause-forms.md` | Intermediate | a baton pass |
 | `numeric-derivation.md` | Advanced | a foundry |
 
@@ -383,6 +389,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 13 | `locative-relations.md` | Intermediate | **exists** | *between* **`hedam`**; *across* **`hohom`**; *around* **`hevam`**; recycle extra-noun hooks for *from* / *to* | *Between* recycles joins Beginner `/b/` join. Of-relations are Intermediate on `of-relations.md` |
 | 13 | `relations.md` | Advanced | **exists** | Hosted *as-of* **`henam` / `hunom`**; `/h/` `/ɡ/` `/w/`; resume **-r**; date in `/b/` | Recycle RESIDUE, forecast, calendar `b_#…`. Not persist hooks |
 | 4 | `proper-names.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); full names (given + `/ɡ/` family **-n**) and hyphenated names `ROOTxROOT`+**-n**; [titled phrases](/proper-names#titled-phrases) (hook / join / span **-n**, inner **-l** / **-m**) | Not value/ability/plan ending tables |
+| 4 | `place-name-roots.md` | Intermediate | **exists** | Place-name roots (cluster vs seven-letter `n`+vowel) | Country **-n** / **-m** / **-l** are Intermediate on `proper-names.md` |
 | 4 | `word-endings.md` | Advanced | skip | — | no Advanced stage |
 | 9 | `tag-pronouns.md` | Intermediate | **exists** | English approximations of **-r**; resume one sense; cross-role recast; each other; addressing several people; tags | |
 | 9 | `topic.md` | Intermediate | **exists** | `/x/` introduce / return / clear; topic pronoun **`alen`**; what a topic change resets; groups as topic; asking about the topic | No Beginner slot. Recycle = all Beginner + `tag-pronouns.md` (tags) and pronouns Beginner (role pointers) |
@@ -431,14 +438,19 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 16 | `knowing.md` | Intermediate | skip | — | Evidentiality channels are Intermediate on `evidentiality.md`. Holder is Intermediate on `holder.md` |
 | 16 | `evidentiality.md` | Intermediate | **exists** | Evidentiality channels after LIVE/MEMORY; MAY vs nearby jobs; a source you won't name or don't know (`blweyer` / `blwayer`) | LIVE/MEMORY are Beginner on `live-and-memory.md`. Holder is Intermediate on `holder.md` |
 | 16 | `holder.md` | Intermediate | **exists** | **Holder** seam (someone else's view) | Channels are Intermediate on `evidentiality.md` |
-| 16 | `knowing.md` | Advanced | **exists** | Mood on one adjective; dated channel; channels on a generalization | One checkpoint for the whole stage |
+| 16 | `knowing.md` | Advanced | skip | — | Mood on one adjective is Advanced on `universality.md`. Dated channel is Advanced on `dated-channel.md`. Channels on a generalization are Advanced on `usually-vs-must.md` |
+| 16 | `universality.md` | Advanced | **exists** | Mood on one adjective (`/w/` channel) | Dated channel is Advanced on `dated-channel.md`. Channels on a generalization are Advanced on `usually-vs-must.md` |
+| 16 | `dated-channel.md` | Advanced | **exists** | Dated channel; signed offset; *just* / *recently* | Mood on one adjective is Advanced on `universality.md` |
+| 16 | `usually-vs-must.md` | Advanced | **exists** | Channel on a generalization; fence vs warrant | Mood on one adjective is Advanced on `universality.md` |
 | 16 | `viewpoint.md` | Intermediate | **exists** | Viewpoint laterals **`DIR th ANCHOR`**; bare arrow roots = compass; gravity **`abuho`/`oduho`**; name/listener anchor; landmark facing | Prefer `…thazawan` over silent speaker default. **`awa`/`uwe`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
 | 16 | `role-scope.md` | Intermediate | **exists** | Scope vowels on role words; capacity on `/h/` (slot-part compound); places, tools, and times as landmarks; content-rule parts (manner **`h`** pointer or compound) | Viewpoint laterals are Intermediate on `viewpoint.md`. Include at least one content part and one capacity item |
 | 16 | `compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / minutes / one ask / passing) | Recycle [greeting](/word-endings#greeting) and [vocative](/speech-moves#vocative). Not ability (`vozuyexol`). Not values |
 | 16 | `compounds.md` | Advanced | skip | — | Root tails are a memory aid and tail-suffix words are dictionary entries: nothing to build or choose |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
 | 17 | `vp-clause-forms.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`) | Sequence `xan` is Beginner on `clause-sequence.md`. Stance joins, join-act verbs, and join-relations are Intermediate on `join-across-roles.md`. Recycle = all Beginner + earlier Intermediate (path before 17) |
-| 17 | `join-across-roles.md` | Intermediate | **exists** | Stance joins; join-act verbs `van` / `ven` / …; join-relations `gan` / `han` / … (unary `/b/`) | Verb-phrase and clause joins are Intermediate on `vp-clause-forms.md`. Sequence `xan` is Beginner on `clause-sequence.md`. Recycle = all Beginner + earlier Intermediate (path before 17) |
+| 17 | `join-across-roles.md` | Intermediate | **exists** | Stance joins | Join-act verbs are Intermediate on `join-acts.md`. Join-relations are Intermediate on `join-relations.md`. Verb-phrase and clause joins are Intermediate on `vp-clause-forms.md` |
+| 17 | `join-acts.md` | Intermediate | **exists** | Join-act verbs `van` / `ven` / … | Stance joins are Intermediate on `join-across-roles.md` |
+| 17 | `join-relations.md` | Intermediate | **exists** | Join-relations `gan` / `han` / … (unary `/b/`) | Stance joins are Intermediate on `join-across-roles.md`. Join-act verbs are Intermediate on `join-acts.md` |
 | 17 | `notional-standing.md` | Intermediate | **exists** | **RESIDUE** / **FORMER**; channels as bars; channels after `uom` | already / still / not yet / no longer are Beginner on `already-still-yet.md`. Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder). MIRATIVE is Intermediate on `mirative.md`. NOTIONAL is Intermediate on `notional.md` |
 | 17 | `mirative.md` | Intermediate | **exists** | **MIRATIVE** | Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
 | 17 | `notional.md` | Intermediate | **exists** | **NOTIONAL** **`eyu`** + play holds | Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
@@ -511,7 +523,8 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Digit-string labels / clock / calendar time | `digit-strings.md` Beginner |
 | Measure phrases / ranges / percent | `numbers-applied.md` Intermediate |
 | Clause sequence **`xan`** | `clause-sequence.md` Beginner |
-| Join-act **`van`** / join-relation **`gan`** | `join-across-roles.md` Intermediate |
+| Join-act **`van`** | `join-acts.md` Intermediate |
+| Join-relation **`gan`** | `join-relations.md` Intermediate |
 | **PLAN** | `intention.md` Beginner |
 | **DECISION** | `ability.md` Intermediate |
 | Emotion compose | `feelings-permission.md` Intermediate |
