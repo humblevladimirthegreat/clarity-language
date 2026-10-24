@@ -93,12 +93,12 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | falls short (*not as sleepy as*) | reverse rank **`ue`** | [Reverse rank](/comparative-arity#full-comparative-arity) |
 | most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`hodaxal`** + tie **`oe`** | [Every bar](/stance-bars#stance-bars) |
 | frame one sentence (*as for Azozon*) | **`hehugom`** + `/b/` | [As-for](say-people-places.md#as-for) |
-| role one acts in (*as a teacher, I …*) | role compound on `/h/`: `hwozeduyol` | [The role you act in](/viewpoint#capacity) |
-| not in that role (*not as a teacher*, off duty) | scope **`ue`** on `/h/`: `hwuozeduyol` | [The role you act in](/viewpoint#capacity) |
+| role one acts in (*as a teacher, I …*) | role compound on `/h/`: `hwozeduyol` | [The role you act in](/role-scope#capacity) |
+| not in that role (*not as a teacher*, off duty) | scope **`ue`** on `/h/`: `hwuozeduyol` | [The role you act in](/role-scope#capacity) |
 | resemblance (*walks as / like a duck*) | **`hewem`** + `/b/` | [Simile](/relations#similative) |
 | how close (*exactly like*, *a bit like*) | **`hewel`** for an exact match (`hewel bladozal`), or `/w/` before **`hewem`**: `wubugem hewem bladozal` (*precisely*), `wamezem hewem bladozal` (*a bit*) | [Exactly like](/of-relations#exactly-like), [simile](/relations#similative), [degree words](/left-bound#degree-w) |
 | resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`hewem blarl`** + the event | [Simile](/relations#similative) |
-| pretense (*as if they walk*) | **NOTIONAL** | [Notional](/notional-standing#notional) |
+| pretense (*as if they walk*) | **NOTIONAL** | [Notional](/notional#notional) |
 | dated books (*as of Friday*) | **`henam` / `hunom`** + `/b/` | [*As-of*](/as-of#as-of) |
 
 ### *since*
@@ -300,12 +300,12 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebe
 | *type*, *kind of person* (a lying type, an anxious type) | **`tha`** on the root: `zazozon vulamuthal` | [Type across scenes](/label-seams#scope-type) |
 | *lied to Alazun, this once* | **`thu`** on the verb, recipient as usual: `vulamuthul balazun` | [This episode](/label-seams#scope-occasion) |
 | *it's the situation*, *it was the situation*, *by circumstance* | **`thae`**: `gonumuthael`, `gwaezeduyol` | [Stacked scope](/label-seams#scope-stacks) |
-| *becoming a teacher* | scope **`oe`**: `gwoezeduyol` | [Scope across scenes](/viewpoint#scope) |
+| *becoming a teacher* | scope **`oe`**: `gwoezeduyol` | [Scope across scenes](/role-scope#scope) |
 | *becoming* (becoming a liar) | **`thoe`** on the root: `vulamuthoel` | [Stacked scope](/label-seams#scope-stacks) |
-| *as a teacher, I …* | role compound on `/h/`: `hwozeduyol` | [The role you act in](/viewpoint#capacity) |
-| *not as a teacher* (off duty) | scope **`uo`** on `/h/`: `hwuozeduyol` | [The role you act in](/viewpoint#capacity) |
-| *not as a teacher* (the label) | scope **`uo`**: `gwuozeduyol` | [Scope across scenes](/viewpoint#scope) |
-| *playing the teacher* (for a purpose) | scope **`ao`**: `gwaozeduyol` | [Scope across scenes](/viewpoint#scope) |
+| *as a teacher, I …* | role compound on `/h/`: `hwozeduyol` | [The role you act in](/role-scope#capacity) |
+| *not as a teacher* (off duty) | scope **`uo`** on `/h/`: `hwuozeduyol` | [The role you act in](/role-scope#capacity) |
+| *not as a teacher* (the label) | scope **`uo`**: `gwuozeduyol` | [Scope across scenes](/role-scope#scope) |
+| *playing the teacher* (for a purpose) | scope **`ao`**: `gwaozeduyol` | [Scope across scenes](/role-scope#scope) |
 | *as a tool*, *for a purpose* (using lying as a tool) | **`thao`** on the root: `vulamuthaol` | [Stacked scope](/label-seams#scope-stacks) |
 | *as myself*, *not in my role*, *off duty* | **`thue`** on the verb: `vezuyothuol` | [Stacked scope](/label-seams#scope-stacks) |
 | *except this time*, *except this once* | **`thua`**: `vulamuthual` | [Stacked scope](/label-seams#scope-stacks) |

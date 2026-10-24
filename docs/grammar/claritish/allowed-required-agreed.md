@@ -55,4 +55,4 @@ People bring a dish `hwuvor`.
 Talking during the film `hwuvur`.
 :::
 
-<!-- Source (editors): feelings-permission.md#say-words. -->
+<!-- Source (editors): permission-consent.md#say-words. -->

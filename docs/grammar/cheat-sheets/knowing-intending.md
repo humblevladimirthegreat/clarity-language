@@ -95,7 +95,7 @@ Join the name to a channel, MAY, or NOTIONAL: keep the word's last letter and wr
 | [Holder on a channel](/holder#holder) | `zalazun theyomazozon vudurul.` | *I gather Azozon thinks Alazun left.* | I |
 | [Holder on REPORTED](/holder#holder) | `zalazun thebamazozon vudurul.` | *I hear Azozon thinks Alazun left.* | I |
 | [Holder on MAY](/holder#holder) | `zalazun thomamazozon vudurul.` | *Maybe Azozon thinks Alazun left.* | I |
-| [Holder on NOTIONAL](/notional-standing#notional) | `zalazun theyumazozon vudurul.` | *Imagine it as Azozon sees it.* | I |
+| [Holder on NOTIONAL](/notional#notional) | `zalazun theyumazozon vudurul.` | *Imagine it as Azozon sees it.* | I |
 | [Strength before the name](/holder#holder) | `zalazun theyolazozon vudurul.` | *Strong clues say Azozon thinks Alazun left.* | I |
 | [Shared history](/holder#holder): MEMORY with the interlocutors | `zawan vebal hal thevumayan.` | *From what we both remember, you've never listened.* | I |
 
@@ -105,9 +105,9 @@ A channel you name is your frame, and later claims of yours keep it. See [carryi
 
 | It keeps the frame | It ends the frame |
 |--------------------|-------------------|
-| [your later statements](/evidentiality#carry-forward) | [a new channel or a holder](/evidentiality#carry-forward) · [NOTIONAL](/notional-standing#notional) |
+| [your later statements](/evidentiality#carry-forward) | [a new channel or a holder](/evidentiality#carry-forward) · [NOTIONAL](/notional#notional) |
 | [a new topic, sentence linkers, asides](/evidentiality#carry-forward) | [`yal` written out](/evidentiality#carry-forward) |
-| [MAY](/evidentiality#carry-forward) · [MIRATIVE](/notional-standing#mirative) | [`xavedam` *by the way*, or a goodbye](/evidentiality#carry-forward) |
+| [MAY](/evidentiality#carry-forward) · [MIRATIVE](/mirative#mirative) | [`xavedam` *by the way*, or a goodbye](/evidentiality#carry-forward) |
 
 A question, command, request, or prohibition does not take the frame, and does not end it.
 
@@ -122,12 +122,12 @@ MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words
 |--------|---------|-----------|-------|
 | `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](/notional-standing#residue-and-former-climate) | I |
 | `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](/notional-standing#residue-and-former-climate) | I |
-| `themel` | mirative mood overturning a firm expectation | [Mirative (themem)](/notional-standing#mirative) | I |
-| `themem` | mirative mood (newly found out and not expected) | [Mirative (themem)](/notional-standing#mirative) | I |
-| `themer` | mirative mood against a loose expectation | [Mirative (themem)](/notional-standing#mirative) | I |
-| `theyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Hold endings (NOTIONAL)](/notional-standing#hold-endings-notional) | I |
-| `theyum` | notional mood default hold (imagining a scene without a further purpose) | [Notional (as-if framing)](/notional-standing#notional-as-if-framing) | I |
-| `theyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Hold endings (NOTIONAL)](/notional-standing#hold-endings-notional) | I |
+| `themel` | mirative mood overturning a firm expectation | [Mirative (themem)](/mirative#mirative) | I |
+| `themem` | mirative mood (newly found out and not expected) | [Mirative (themem)](/mirative#mirative) | I |
+| `themer` | mirative mood against a loose expectation | [Mirative (themem)](/mirative#mirative) | I |
+| `theyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Hold endings (NOTIONAL)](/notional#hold-endings-notional) | I |
+| `theyum` | notional mood default hold (imagining a scene without a further purpose) | [Notional (as-if framing)](/notional#notional-as-if-framing) | I |
+| `theyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Hold endings (NOTIONAL)](/notional#hold-endings-notional) | I |
 | `thomal` | may mood find-out hold (I'll / let's find out) | [Hold endings (MAY)](/knowing#hold-endings-may) | B |
 | `thomam` | may mood (could be; default) | [MAY](/knowing#may) | B |
 | `thomar` | may mood who-knows hold (leave unsettled; may never know) | [Hold endings (MAY)](/knowing#hold-endings-may) | B |
@@ -234,7 +234,7 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | This | vs | That |
 |------|----|------|
 | `thomam` *could be* ([a guess, no reasons](/knowing#may)) | | `theyom` *from the clues* ([reasons you worked out](/evidentiality#evidentiality)) |
-| `thebam` *so they say* ([someone said it](/evidentiality#evidentiality)) | | `theyum` *imagine* ([a scene you make up](/notional-standing#notional-as-if-framing)) |
+| `thebam` *so they say* ([someone said it](/evidentiality#evidentiality)) | | `theyum` *imagine* ([a scene you make up](/notional#notional-as-if-framing)) |
 | `theyol` *strong clues* ([how good your evidence is](/evidentiality#evidence-strength)) | | `throgel` *third-hand* ([how many hands](/evidentiality#hand-depth)) |
 | `thubom blral` *will, by the pattern* ([a forecast](/evidentiality#forecast)) | | `thagom` *I plan to* ([an intention](/intention#plan-predict)) |
 | `haram` *still in effect* ([the outcome stays](/notional-standing#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](/already-still-yet#phasal)) |

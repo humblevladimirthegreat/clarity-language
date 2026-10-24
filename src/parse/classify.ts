@@ -456,7 +456,7 @@ const BAR_OVERLAY_KINDS = new Set(["evidential", "former_climate", "notional", "
 export function isBarStance(word: LexWord, tables: ClassifyTables): boolean {
   if (word.pos !== "th" && !isClauseAdverb(word)) return false;
   const family = word.family;
-  // A say word sets a value when it allows or requires (feelings-permission.md#say-words); a no or *their call* sets none.
+  // A say word sets a value when it allows or requires (permission-consent.md#say-words); a no or *their call* sets none.
   if (family.kind === "say") return family.answer === "a" || family.answer === "o";
   if (word.reading === "sake") return family.kind === "x" && family.stanceVowel === "a" && !family.horizon;
   if (word.reading === "ability") return true;

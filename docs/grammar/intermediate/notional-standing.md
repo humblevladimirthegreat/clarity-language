@@ -2,59 +2,9 @@
 band: intermediate
 ---
 
-# Surprise, residue, and as-if {#surprise-residue-and-as-if}
+# Residue and former {#residue-and-former}
 
-English *as if*, *it turns out*, *has left*, and *still* mix imagining a scene, news against expectation, and how a claim stands now. Ageben keeps those apart: **NOTIONAL** for an imagined scene, **MIRATIVE** for news that ran against what you expected, **RESIDUE** and **FORMER** for how an outcome or a usual pattern stands, and *already* / *still* / *not yet* / *no longer* for a change compared with now. How you know a world-claim is in [knowing](/knowing).
-
-### Mirative (`themem`) {#mirative}
-
-English *it turns out*, *to my surprise*, and *so … after all* say the news ran **against what you expected**. Put **`themem`** on the clause. This `/th/` word is called **MIRATIVE**. It is not a channel: it says nothing about how you know, so add a [channel](evidentiality.md#evidentiality) beside it when you want to say that too.
-
-> `zalazun themem vudurul.`
->
-> z-Alazun | th-MIRATIVE | v-departure
->
-> "Alazun left, it turns out."
-
-The ending says how firm the expectation was that the news overturned. If you do not know, use **-m**.
-
-| Ageben | Use | English | Cue |
-|--------|-----|---------|-----|
-| `themel` | it overturns a firm expectation | *astonishingly*, *I never expected that* | **-l** ≈ the expectation was locked in |
-| `themem` | it runs against what you expected (default) | *it turns out*, *surprisingly* | **-m** ≈ the ordinary case |
-| `themer` | it runs against a loose expectation | *oh*, *as it happens* | **-r** ≈ a passing guess |
-
-> `zalazun thugem themel vowurol.`
->
-> z-Alazun | th-LIVE | th-MIRATIVE.firm | v-walk
->
-> "Alazun is walking, I see it, and I never expected that."
-
-MIRATIVE does not end a [channel frame](evidentiality.md#carry-forward): a surprise inside a report is still part of the report.
-
-The mirative says only that the news was unexpected, not whether it is good or bad. To say how it lands, add a [feeling](feelings-permission.md#emotion-compose): the mirative after **`goyom`** says the stimulus was unexpected.
-
-> `zewal wawethamar goyom themem.`
->
-> [z-present | [w-relatedness-met-any-term-INTERNAL-SURGING | g-stimulus]] | th-MIRATIVE
->
-> "I'm pleasantly surprised by the present."
-
-With a [holder](holder.md#holder), the surprise is the holder's:
-
-> `zalazun themem theyomazozon vudurul.`
->
-> z-Alazun | th-MIRATIVE | th-CLUES-Azozon | v-departure
->
-> "I gather Alazun's leaving surprised Azozon." (the surprise is Azozon's)
-
-**Compare with:** *even* on the including hook ([`wemem al`](ending-grids.md#hook-w)) singles out the one unexpected member of a set. **`themem`** says the whole claim was unexpected. For *surprisingly* on one adjective (*surprisingly tired*), put the ordinary word **`wemem`** (*amazement*) on `/w/` right before it, the same word that grades the hook in *even*:
-
-> `zazozon wemem gadamul vowurol.`
->
-> [z-Azozon | [w-amazement | g-tired]] | v-walk
->
-> "Azozon walks, surprisingly tired."
+English *has left* and *used to tell* mix when the event happened and how it stands now. Ageben keeps those apart: **RESIDUE** and **FORMER** for how an outcome or a usual pattern stands, and *already* / *still* / *not yet* / *no longer* for a change compared with now. How you know a world-claim is in [knowing](/knowing).
 
 ### Residue and former climate {#residue-and-former-climate}
 <a id="residue"></a>
@@ -116,73 +66,6 @@ Do not write **`helam`** right before **`hual`**: that spot holds the restrictor
 
 Put RESIDUE and FORMER on `/h/`, anywhere in the sentence: like an [intention adverb](/clause#intention-adverbs), each covers the whole clause. Use `/w/` only when the word applies to the one `/ɡ/` adjective right after it. Both always end in **-m**.
 
-### Notional (as-if framing) {#notional-as-if-framing}
-<a id="notional"></a>
-<a id="notional-mood"></a>
-
-To talk about a scene that is only imagined (*imagine …*, *as if …*, *for the sake of argument*), keep the ordinary verb and add **`eyu`** plus an ending on `/th/`. This word is called **NOTIONAL**. The sentence now describes an imagined scene and makes no claim that it happens, so a pretend walk still uses the ordinary verb *walk*. (cue: 🎭 *theater*: a stage mask)
-
-> `zazozon theyum vowurol.`
->
-> z-Azozon | th-NOTIONAL | v-walk
->
-> "Imagine Azozon walking."
-
-**For *could be*, use:** [MAY](/knowing#may).
-
-NOTIONAL [carries forward](evidentiality.md#carry-forward) like a channel, so a story you make up, or a supposition you reason through, runs over several sentences. *Once upon a time* is NOTIONAL on the first sentence. It also **ends** a channel frame: from there on, the imagined scene carries.
-
-> `zazozon theyum vowurol. zazozon vehohel. zazozon vozuyel.`
->
-> z-Azozon | th-NOTIONAL | v-walk . z-Azozon | v-sit . z-Azozon | v-sing
->
-> "Imagine Azozon walking. Azozon sits down. Azozon sings."
-
-A legend that people pass on as true is not NOTIONAL: it is REPORTED, often with a [hand count](evidentiality.md#hand-depth).
-
-NOTIONAL takes a [holder](holder.md#holder) the same way a channel does: `theyum` plus `azozon` is `theyumazozon`.
-
-> `zalazun theyumazozon vudurul.`
->
-> z-Alazun | th-NOTIONAL-Azozon | v-departure
->
-> "Imagine it as Azozon sees it: Alazun left."
-
-**Compare with:** *walks like a duck* is a real walk; only its manner matches the model ([simile](/relations#similative) `hewem`). *Tells on behalf of Alazun* is a real telling, and Azozon is still the teller ([proxy](/relations#proxy) `hanem`).
-
-### Hold endings (NOTIONAL) {#hold-endings-notional}
-<a id="notional-hold"></a>
-
-The ending on NOTIONAL says what the imagining is for: with **-l** you rehearse a scene to prepare for doing it, with **-m** you picture it with no further purpose (the default), and with **-r** you toy with a *what if* for the moment. The three run on the same settled-to-passing scale as [time horizon](/sakes#settled-to-passing), like the endings on [PLAN](/intention#plan-predict). With **-n**, the word is an ordinary [name](proper-names.md#proper-name--n).
-
-| Ageben | Use | English | Same root as | Cue |
-|--------|-----|---------|--------------|-----|
-| **`theyul`** | rehearse a possible scene to prepare for action | *let’s practice…* / *try acting as if…* | `eyul` *theater* | 🎭: practice a scene |
-| **`theyum`** | imagine a scene without a further purpose (default) | *imagine…* / *as if…* | `eyul` *theater* | 🎭: picture a scene |
-| **`theyur`** | toy with a possibility or assumption, for now | *suppose…* / *what if…?* | `eyul` *theater* | 🎭: try on a mask for a moment |
-
-When you are not sure, use **`theyum`**.
-
-> `zahelan theyul vozuyel.`
->
-> z-Ahelan | th-NOTIONAL-rehearse | v-sing
->
-> "Ahelan practices singing." (an imagined run-through, to prepare)
-
-> `zazozon theyur varuyol.`
->
-> z-Azozon | th-NOTIONAL-suppose | v-write
->
-> "Suppose Azozon writes."
-
-To reason from a premise you do not grant, suppose it with **`theyur`**. The frame carries, so every step after it stays supposed. To keep what you found, state the link with its own [channel](evidentiality.md#deduction), which ends the supposition:
-
-> `zazozon theyur gwozeduyol. xahol zazozon veduyol. zazozon veduyol thanam thohem blarl zazozon gwozeduyol.`
->
-> z-Azozon | th-NOTIONAL-suppose | g-role-agent-teach . x-it-follows | z-Azozon | v-teach . z-Azozon | v-teach | th-DEDUCED | [th-if | bl-that-clause] | [z-Azozon | g-role-agent-teach]
->
-> "Suppose Azozon is a teacher. Then Azozon teaches. So if Azozon is a teacher, it follows that Azozon teaches."
-
 ### Channels as comparison bars {#channel-bars}
 
 English *sleepier than usual* and *bigger than it looks* compare against an expectation. Put the channel right before the rank word (**`zol`** / **`zuol`** / **`zoel`**) as the comparison's [bar](comparative-arity.md#bars). The bar is then **what that channel led you to expect**, not how you know the claim. After the comparison, the same word is the claim's channel again.
@@ -208,9 +91,8 @@ English *sleepier than usual* and *bigger than it looks* compare against an expe
 | REPORTED `thebam` | what was said or written | *than advertised* / *than the stories say* |
 | INTUITION `thabem` | your gut expectation | *than I expected* |
 | FORMER `helam` | how it used to be | *than it used to be* |
-| NOTIONAL `theyum` | the imagined case | *than imagined* |
 
-MAY and MIRATIVE give no expected value to compare against, so neither can be a bar. *Than scheduled* ranks against a plan: that is the [PLAN bar](comparative-arity.md#bars) (`thagom`).
+MAY gives no expected value to compare against, so it cannot be a bar. *Than scheduled* ranks against a plan: that is the [PLAN bar](comparative-arity.md#bars) (`thagom`).
 
 A [holder](holder.md#holder) on a comparison bar names **whose expectation** you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
 
@@ -245,7 +127,7 @@ English *contrary to what I was told* and *against my gut* say the event went ag
 | REPORTED `thebam` | what was said or written | *contrary to what I was told* / *contrary to legend* |
 | INTUITION `thabem` | your gut expectation | *against my gut* |
 
-*Off schedule* goes against a plan: **`uom thagom`** ([contrary to a stance](prescription.md#contrary-to-stance)). MIRATIVE already says the claim ran against what you expected, so it does not follow **`uom`**. MAY, NOTIONAL, RESIDUE, and FORMER do not either: none of them is something the event could go against.
+*Off schedule* goes against a plan: **`uom thagom`** ([contrary to a stance](prescription.md#contrary-to-stance)). MAY, RESIDUE, and FORMER do not follow **`uom`**: none of them is something the event could go against.
 
 A [holder](holder.md#holder) on a channel after **`uom`** names **whose view** the event goes against. The seam covers only that pair: the event is still your claim.
 
@@ -254,8 +136,6 @@ A [holder](holder.md#holder) on a channel after **`uom`** names **whose view** t
 > z-Azozon | v-walk | [contrary-to | th-REPORTED-Alazun]
 >
 > "Azozon walks, contrary to what I hear Alazun thinks."
-
-**Compare with:** `zazozon themem vowurol.` says the walking surprised you. `zazozon vowurol uom thabem.` says your gut expected otherwise, whether or not the news surprised you.
 
 ### Practice {#intermediate-practice}
 
@@ -268,10 +148,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *rabbit* | `arozel` | 🐇 |
-| *NOTIONAL* | `theyum` | 🎭 from *theater*: an imagined scene |
-| *RESIDUE* | `haram` | 💰 from *money*: a debt left standing |
-| *FORMER* | `helam` | 🪹 from *empty nest*: what used to be |
-| *MIRATIVE* | `themem` | 😮 from *surprise*: it turns out |
 
 **Review:**
 
@@ -282,11 +158,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *departure* | `vudurul` |
 | *sing* | `vozuyel` |
-| *see* | `vayebel` |
 | *walk* | `vowurol` |
 | *gray* | `agulel` |
 | *sleepy* | `uzemel` |
-| *CLUES* | `theyom` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -298,23 +172,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-rabbit | th-LIVE | h-RESIDUE | v-departure
 :::
 
-**2.** *I gather Alazun's singing surprised Azozon.* (the surprise is Azozon's)
-
-::: details Show answer
-`zalazun themem theyomazozon vozuyel.`
-
-z-Alazun | th-MIRATIVE | th-CLUES-Azozon | v-sing
-:::
-
-**3.** *Imagine the rabbit walking.*
-
-::: details Show answer
-`zarozel theyum vowurol.`
-
-z-rabbit | th-NOTIONAL | v-walk
-:::
-
-**4.** *The rabbit is sleepier than usual.*
+**2.** *The rabbit is sleepier than usual.*
 
 ::: details Show answer
 `zarozel thubom zol guzemel.`
@@ -322,12 +180,20 @@ z-rabbit | th-NOTIONAL | v-walk
 [z-rabbit | th-PATTERN | z-rank/more | g-sleepy]
 :::
 
-**5.** *Ahelan sings, contrary to what I was told.*
+**3.** *Ahelan sings, contrary to what I was told.*
 
 ::: details Show answer
 `zahelan vozuyel uom thebam.`
 
 z-Ahelan | v-sing | [contrary-to | th-REPORTED]
+:::
+
+**4.** *Azozon always used to sing.*
+
+::: details Show answer
+`zazozon hual vozuyel helam.`
+
+z-Azozon | h-always | v-sing | h-FORMER
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
@@ -340,15 +206,7 @@ z-Ahelan | v-sing | [contrary-to | th-REPORTED]
 *Alazun is grayer than Alazun used to be.*
 :::
 
-**2.** `zalazun theyum darozel vayebel.`
-
-::: details Show answer
-z-Alazun | th-NOTIONAL | d-rabbit | v-see
-
-*Imagine Alazun seeing a rabbit.*
-:::
-
-**3.** `zazozon vowurol uom thabem.`
+**2.** `zazozon vowurol uom thabem.`
 
 ::: details Show answer
 z-Azozon | v-walk | [contrary-to | th-INTUITION]
@@ -356,28 +214,36 @@ z-Azozon | v-walk | [contrary-to | th-INTUITION]
 *Azozon walks, against my gut.*
 :::
 
-#### Pick one {#intermediate-pick-one}
-
-**1.** *Ahelan practices singing.* `zahelan theyul vozuyel.` or `zahelan theyum vozuyel.`
+**3.** `zarozel thevum haram vudurul.`
 
 ::: details Show answer
-`zahelan theyul vozuyel.`
+z-rabbit | th-MEMORY | h-RESIDUE | v-departure
 
-z-Ahelan | th-NOTIONAL-rehearse | v-sing
+*I remember the rabbit leaving, and the rabbit is still gone.*
+:::
 
-NOTIONAL with **-l** is a rehearsal; **-m** only imagines the singing.
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Alazun is grayer than usual.* `zalazun thubom zol gagulel.` or `zalazun zol gagulel thubom.`
+
+::: details Show answer
+`zalazun thubom zol gagulel.`
+
+[z-Alazun | th-PATTERN | z-rank/more | g-gray]
+
+Before the rank word, PATTERN is the bar (*than usual*); after the fence it is how you know the superlative.
 :::
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Imagine Ahelan leaving.* <!-- lint: error -->`zahelan thomam vudurul.`
+**1.** *Azozon always used to sing.* <!-- lint: error -->`zazozon helam hual vozuyel.`
 
 ::: details Show answer
-`zahelan theyum vudurul.`
+`zazozon hual vozuyel helam.`
 
-z-Ahelan | th-NOTIONAL | v-departure
+z-Azozon | h-always | v-sing | h-FORMER
 
-**`thomam`** is *could be*; an imagined scene is **`theyum`**.
+Do not write **`helam`** right before **`hual`**: that spot holds the restrictor's list of occasions. Put **`hual`** first and FORMER after the verb.
 :::
 
 ## See also

@@ -176,7 +176,7 @@ The first sake word has no holder, so it is yours. The second is Azozon's.
 
 Only the seven channels and MAY take a holder: they are the ways you can have access to someone else's view. When they told you in their own words, a [cite](/spans#writing) keeps their wording instead.
 
-**Compare with:** being upset **for** Azozon is your own feeling about Azozon's stake (the ON-BEHALF locus in [emotion compose](feelings-permission.md#emotion-compose)); with a holder the feeling is Azozon's. *On behalf of* Azozon is [proxy](/relations#proxy) (`hanem`). A `/b/` on [permission](feelings-permission.md#permission) or [consent](feelings-permission.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](/compounds#lexical-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
+**Compare with:** being upset **for** Azozon is your own feeling about Azozon's stake (the ON-BEHALF locus in [emotion compose](feelings-permission.md#emotion-compose)); with a holder the feeling is Azozon's. *On behalf of* Azozon is [proxy](/relations#proxy) (`hanem`). A `/b/` on [permission](permission-consent.md#permission) or [consent](permission-consent.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](/compounds#lexical-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
 
 ### Practice {#intermediate-practice}
 

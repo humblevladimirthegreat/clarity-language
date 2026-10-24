@@ -211,7 +211,7 @@ Wanting, needing, and being obliged blur into a bare *should*, and a plan or a p
 
 English *must*, *have to*, and *is supposed to* sound equally binding, whether a law requires something, a person demands it, or people only expect it. *May* hides the same split for permission.
 
-A [say word](/feelings-permission#say-words) says where a *must* comes from: a rule, a person who demands it, only an unwritten expectation that nobody actually demands, or you yourself. It does the same for *may*: a rule allows it, someone said yes, or nobody objected.
+A [say word](/permission-consent#say-words) says where a *must* comes from: a rule, a person who demands it, only an unwritten expectation that nobody actually demands, or you yourself. It does the same for *may*: a rule allows it, someone said yes, or nobody objected.
 
 Naming the source helps you notice when a *have to* is only an expectation, so you can decide whether to meet it.
 
@@ -269,7 +269,7 @@ An act that touches someone else's body, things, or time can go ahead on a yes n
 
 English *she's fine with it* does not say whether she signed on, said yes and can take it back, or was never asked.
 
-A [say word](/feelings-permission#say-words) names whose yes it is (the one the act happens to, the one it is told or given to, or the doer) and says how binding it is: a binding agreement made in advance, a yes they can take back at any time, or a yes you are only assuming because nobody objected.
+A [say word](/permission-consent#say-words) names whose yes it is (the one the act happens to, the one it is told or given to, or the doer) and says how binding it is: a binding agreement made in advance, a yes they can take back at any time, or a yes you are only assuming because nobody objected.
 
 Marking an assumed yes as an assumption helps you check before acting, and marking a spoken yes as revocable keeps it theirs to withdraw.
 
@@ -292,7 +292,7 @@ Many roots have an **abstract** sense beside a **concrete** one, so an idea you 
 - [Residue as unpaid debt](/notional-standing#residue) ([a moment as identity](#trap-identity)): the result still counts, like a balance still owed; not a past tense.
 - [Former climate as an empty nest](/notional-standing#former-climate) ([a moment as identity](#trap-identity)): the nesting season is over; a pattern that has ended, not a past tense.
 - [A pattern as paw-prints](/universality#universality) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
-- [*As if* as theater](/notional-standing#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene; what really happened stays **offstage**.
+- [*As if* as theater](/notional#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene; what really happened stays **offstage**.
 - [Mechanism as gears](/iff-fault#cause) ([a wish as a law](#trap-wish-as-law)): you say *how* a result comes about, like gears meshing, not only that it follows.
 - [Affect as water](/feelings-permission#emotion-compose) ([a feeling as a label](#trap-feeling)): surging, flowing, or still water (motion) plus where the feeling sits or points, instead of an opaque emotion label that hides the sake.
 

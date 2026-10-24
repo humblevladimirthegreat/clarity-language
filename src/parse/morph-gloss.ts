@@ -265,7 +265,7 @@ export const SCOPE_VOWEL: Record<string, string> = {
   uo: "outside-role",
 };
 
-/** Say word parts, answers, and endings (feelings-permission.md#say-words). */
+/** Say word parts, answers, and endings (permission-consent.md#say-words). */
 export const SAY_PART: Record<string, string> = { z: "agent", d: "patient", b: "recipient", v: "event" };
 export const SAY_ANSWER: Record<string, string> = { a: "ALLOW", u: "FORBID", o: "REQUIRE", e: "CHOICE" };
 export const SAY_ENDING: Record<string, string> = { l: "rule", m: "said", r: "tacit" };
@@ -307,7 +307,7 @@ const GREETING_STANCE: Record<string, string> = {
   u: "passing",
 };
 
-/** Role word part consonants (roles.md#role-compounds, viewpoint.md#content-of-the-event). */
+/** Role word part consonants (roles.md#role-compounds, role-scope.md#content-of-the-event). */
 export const ROLE_PART: Record<string, string> = {
   z: "agent",
   d: "patient",

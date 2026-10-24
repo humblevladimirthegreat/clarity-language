@@ -54,6 +54,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *kneel* | `vanuvel` |
 | *relatedness* | `awel` |
 | *PATTERN* | `thubom` |
+| *hope* | `thuwuyom` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -157,6 +158,16 @@ z-Alazun | th-CLUES-Ahelan | v-sing
 x-Alazun | z-TOPIC | v-sit
 
 **Rule:** [The topic pronoun](topic.md#topic-pronoun)
+:::
+
+**11.** *Alazun has fought, and that still counts.*
+
+::: details Show answer
+`zalazun haram vuvuvul.`
+
+z-Alazun | h-RESIDUE | v-fight
+
+**Rule:** [Residue and former climate](notional-standing.md#residue-and-former-climate)
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
@@ -330,7 +341,7 @@ z-Alazun | th-NOTIONAL | v-walk
 
 **-m** pictures the walking with no further purpose; **`theyul`** would be a rehearsal, to prepare for walking.
 
-**Rule:** [Hold endings (NOTIONAL)](notional-standing.md#hold-endings-notional)
+**Rule:** [Hold endings (NOTIONAL)](notional.md#hold-endings-notional)
 :::
 
 **10.** *Anyway, Ahelan walks.* `er zahelan vowurol.` or `el zahelan vowurol.`
@@ -366,7 +377,7 @@ z-Alazun | v-sit | h-episode-event-ALLOW-rule
 
 **-l** is permission from a rule; **-m** is a person granting it.
 
-**Rule:** [Someone over the act](feelings-permission.md#permission)
+**Rule:** [Someone over the act](permission-consent.md#permission)
 :::
 
 **13.** *Azozon walks the most often, going by the pattern.* `zazozon zol hral vowurol thubom.` or `zazozon thubom zol hral vowurol.`
@@ -415,6 +426,42 @@ z-Azozon | v-walk | [th-because | bl-night] | th-not
 The `/th/` join denies the ground; **`vul`** after the verb would deny the walking.
 
 **Rule:** [Stance joins](join-across-roles.md#stance-joins)
+:::
+
+**17.** *Hopefully Azozon walks.* `zazozon thuwuyom vowurol.` or `zazozon huwuyom vowurol.`
+
+::: details Show answer
+`zazozon thuwuyom vowurol.`
+
+z-Azozon | th-hope | v-walk
+
+`/th/` is how **you** feel about the claim; `/h/` would be Azozon walking hopefully.
+
+**Rule:** [Hopefully and other attitudes](feelings-permission.md#speaker-attitude)
+:::
+
+**18.** *Alazun fought, it turns out.* `zalazun themem vuvuvul.` or `zalazun themel vuvuvul.`
+
+::: details Show answer
+`zalazun themem vuvuvul.`
+
+z-Alazun | th-MIRATIVE | v-fight
+
+**-m** is the ordinary *it turns out*; **-l** overturns a firm expectation.
+
+**Rule:** [Mirative](mirative.md#mirative)
+:::
+
+**19.** *Alazun walks as a guard.* `zalazun vowurol hwozagayul.` or `zalazun gwozagayul vowurol.`
+
+::: details Show answer
+`zalazun vowurol hwozagayul.`
+
+z-Alazun | v-walk | h-role-agent-guard
+
+The role the act is done in sits on `/h/`; `/ɡ/` on Alazun would say Alazun **is** a guard who walks.
+
+**Rule:** [The role you act in](role-scope.md#capacity)
 :::
 
 #### What changes {#intermediate-what-changes}

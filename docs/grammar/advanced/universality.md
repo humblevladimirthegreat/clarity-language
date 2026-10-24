@@ -7,7 +7,7 @@ band: advanced
 ### Mood on one adjective
 <a id="mood-on-adjective"></a>
 
-The `/th/` words MAY and the channels, [NOTIONAL](/notional-standing#notional), and the `/h/` words [RESIDUE and FORMER](/notional-standing#residue) cover the whole sentence. When one applies only to a single `/ɡ/` adjective, put the same word on `/w/` right before that adjective instead.
+The `/th/` words MAY and the channels, [NOTIONAL](/notional#notional), and the `/h/` words [RESIDUE and FORMER](/notional-standing#residue) cover the whole sentence. When one applies only to a single `/ɡ/` adjective, put the same word on `/w/` right before that adjective instead.
 
 Only words about **how you know** or **how things stand** move to `/w/` this way: the ones above, [CAUSE](/iff-fault#cause), the [*already* / *still* words](/already-still-yet#phasal), and [*can* with `oda`](/can-and-cant#ability-fallback). A plan, decision, try, or want stays on its own letter (`/th/`, or `/h/` for a try): on `/w/` the same spelling is the ordinary word of its root (`wagom` *as planned*, `wogem` *decidedly*, `wowam` *tentatively*, `walom` *wishfully*).
 
@@ -204,7 +204,7 @@ A **definition** works both ways: whatever has the property is that kind, and ev
 
 The channel stays on the main sentence and covers the whole generalization. Put it before the pole, as with the [evidence clause](/evidentiality#evidence-clause): `zual gogozel vezuvel thubol thohem blarl …` is *going by a well-established pattern, every cat sleeps when …*.
 
-**Compare with:** a general claim you are **not** giving as today's report is [FORMER](/notional-standing#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is a [requirement](/feelings-permission#say-words) (`hwuvom`), not a law of how things work. *Maybe every cat sleeps* is [MAY](/knowing#may) on the same clause.
+**Compare with:** a general claim you are **not** giving as today's report is [FORMER](/notional-standing#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is a [requirement](/permission-consent#say-words) (`hwuvom`), not a law of how things work. *Maybe every cat sleeps* is [MAY](/knowing#may) on the same clause.
 
 ### Practice {#advanced-practice}
 

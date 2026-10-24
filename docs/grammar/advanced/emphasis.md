@@ -52,7 +52,6 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *balloon* | `eboval` | 🎈 |
 | *drum* | `adoral` | 🥁 |
-| *mask* | `amebul` | 😷 |
 | *box* | `ubogal` | 📦 |
 
 **Review:**
@@ -62,6 +61,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
+| *mask* | `amebul` |
 | *trumpet* | `adorol` |
 | *haste* | `hadurom` |
 | *see* | `vayebel` |

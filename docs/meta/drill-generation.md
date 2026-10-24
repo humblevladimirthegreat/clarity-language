@@ -243,6 +243,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `ought-for-a-sake.md` | Beginner | a yoga studio |
 | `sakes.md` | Advanced | — |
 | `feelings-permission.md` | Intermediate | a support group |
+| `permission-consent.md` | Intermediate | a locker room |
 | `thanks-and-sorry.md` | Beginner | a gift table |
 | `knowing.md` | Beginner | a café patio |
 | `knowing.md` | Intermediate | — |
@@ -251,9 +252,12 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `knowing.md` | Advanced | a film archive |
 | `live-and-memory.md` | Beginner | a lookout |
 | `notional-standing.md` | Intermediate | a magic show |
+| `mirative.md` | Intermediate | a card table |
+| `notional.md` | Intermediate | an acting class |
 | `already-still-yet.md` | Beginner | a train platform |
 | `roles.md` | Beginner | a construction site |
 | `viewpoint.md` | Intermediate | a harbor |
+| `role-scope.md` | Intermediate | a film set |
 | `compounds.md` | Beginner | a hardware store |
 | `compounds.md` | Intermediate | a front porch |
 | `compounds.md` | Advanced | unset |
@@ -409,20 +413,24 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `iff-fault.md` | Intermediate | **exists** | Following-sentence **`blarl`**; **`ahu`** *because* / **`eho`** *iff*; asserted necessary **`thebem thahum`**; **CAUSE** **`ewo`** **-m** | Fault endings are Beginner on `fault.md`. Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
 | 15 | `causation.md` | Advanced | — | no Advanced stage | |
 | 16 | `prescription.md` | Intermediate | **exists** | Motive **`tho`** + time horizon; which ending table; attachment sites; whose stake; contrary **`uom`**; sake bars (*enough* / *too*) | Prescription **`the`** is Beginner on `ought-for-a-sake.md` |
-| 16 | `feelings-permission.md` | Intermediate | **exists** | Emotion compose; feeling with no object; speaker attitude; say words (permission, consent, scope) | Thanks and sorry are Beginner on `thanks-and-sorry.md`. Recycle = all Beginner + `prescription.md` (whose stake, contrary **`uom`**, prescription contrast) |
+| 16 | `feelings-permission.md` | Intermediate | **exists** | Emotion compose; feeling with no object; speaker attitude | Thanks and sorry are Beginner on `thanks-and-sorry.md`. Recycle = all Beginner + `prescription.md` (whose stake, contrary **`uom`**, prescription contrast). Say words are Intermediate on `permission-consent.md` |
+| 16 | `permission-consent.md` | Intermediate | **exists** | Say words (permission, consent, scope) | Emotion compose is Intermediate on `feelings-permission.md`. Recycle = all Beginner + `prescription.md` (whose stake, contrary **`uom`**, prescription contrast) |
 | 16 | `feelings-permission.md` | Advanced | — | no Advanced stage | |
 | 16 | `sakes.md` | Advanced | — | no Advanced stage | |
 | 16 | `knowing.md` | Intermediate | skip | — | Evidentiality channels are Intermediate on `evidentiality.md`. Holder is Intermediate on `holder.md` |
 | 16 | `evidentiality.md` | Intermediate | **exists** | Evidentiality channels after LIVE/MEMORY; MAY vs nearby jobs; a source you won't name or don't know (`blweyer` / `blwayer`) | LIVE/MEMORY are Beginner on `live-and-memory.md`. Holder is Intermediate on `holder.md` |
 | 16 | `holder.md` | Intermediate | **exists** | **Holder** seam (someone else's view) | Channels are Intermediate on `evidentiality.md` |
 | 16 | `knowing.md` | Advanced | **exists** | Mood on one adjective; dated channel; channels on a generalization | One checkpoint for the whole stage |
-| 16 | `viewpoint.md` | Intermediate | **exists** | Content-rule parts (manner **`h`** pointer or compound); capacity on `/h/` (slot-part compound); viewpoint laterals **`DIR th ANCHOR`**; bare arrow roots = compass; gravity **`abuho`/`oduho`**; name/listener anchor | Prefer `…thazawan` over silent speaker default. **`awa`/`uwe`** only when testing role-anchor. Include at least one bare cardinal, one gravity item, one content part, and one capacity item |
+| 16 | `viewpoint.md` | Intermediate | **exists** | Viewpoint laterals **`DIR th ANCHOR`**; bare arrow roots = compass; gravity **`abuho`/`oduho`**; name/listener anchor; landmark facing | Prefer `…thazawan` over silent speaker default. **`awa`/`uwe`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
+| 16 | `role-scope.md` | Intermediate | **exists** | Scope vowels on role words; capacity on `/h/` (slot-part compound); places, tools, and times as landmarks; content-rule parts (manner **`h`** pointer or compound) | Viewpoint laterals are Intermediate on `viewpoint.md`. Include at least one content part and one capacity item |
 | 16 | `compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / minutes / one ask / passing) | Recycle [greeting](/word-endings#greeting) and [vocative](/speech-moves#vocative). Not ability (`vozuyexol`). Not values |
 | 16 | `compounds.md` | Advanced | skip | — | Root tails are a memory aid and tail-suffix words are dictionary entries: nothing to build or choose |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
 | 17 | `vp-clause-forms.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`) | Sequence `xan` is Beginner on `clause-sequence.md`. Stance joins, join-act verbs, and join-relations are Intermediate on `join-across-roles.md`. Recycle = all Beginner + earlier Intermediate (path before 17) |
 | 17 | `join-across-roles.md` | Intermediate | **exists** | Stance joins; join-act verbs `van` / `ven` / …; join-relations `gan` / `han` / … (unary `/b/`) | Verb-phrase and clause joins are Intermediate on `vp-clause-forms.md`. Sequence `xan` is Beginner on `clause-sequence.md`. Recycle = all Beginner + earlier Intermediate (path before 17) |
-| 17 | `notional-standing.md` | Intermediate | **exists** | **MIRATIVE**; **RESIDUE** / **FORMER**; **NOTIONAL** **`eyu`** + play holds; channels as bars; channels after `uom` | already / still / not yet / no longer are Beginner on `already-still-yet.md`. Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
+| 17 | `notional-standing.md` | Intermediate | **exists** | **RESIDUE** / **FORMER**; channels as bars; channels after `uom` | already / still / not yet / no longer are Beginner on `already-still-yet.md`. Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder). MIRATIVE is Intermediate on `mirative.md`. NOTIONAL is Intermediate on `notional.md` |
+| 17 | `mirative.md` | Intermediate | **exists** | **MIRATIVE** | Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
+| 17 | `notional.md` | Intermediate | **exists** | **NOTIONAL** **`eyu`** + play holds | Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
 | 17 | `ability.md` | Intermediate | **exists** | **DECISION** **`oge`** changeability; forecast = evidential + `blral` vs PLAN; PLAN + DECISION stack | Ability **`xa`/`xe`/`xo`/`xu`** is Beginner on `can-and-cant.md`. Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`ven`** only if already taught in this stage |
 | 17 | `intention.md` | Advanced | — | no Advanced stage | |
 | 18 | `numeric-derivation.md` | Advanced | **exists** | `NUM x ROOT` as the stage teaches (essence / `+N` / `#N` / quasi / …; `mx` approximate) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) |
@@ -482,9 +490,11 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Evidentiality | `evidentiality.md` Intermediate |
 | Holder | `holder.md` Intermediate |
 | already / still / not yet / no longer | `already-still-yet.md` Beginner |
-| NOTIONAL / RESIDUE / FORMER / MIRATIVE | `notional-standing.md` Intermediate |
+| RESIDUE / FORMER | `notional-standing.md` Intermediate |
+| MIRATIVE | `mirative.md` Intermediate |
+| NOTIONAL | `notional.md` Intermediate |
 | Viewpoint laterals | `viewpoint.md` Intermediate |
-| Capacity on `/h/` | `viewpoint.md` Intermediate |
+| Capacity on `/h/` | `role-scope.md` Intermediate |
 | Digit-string labels / clock / calendar time | `digit-strings.md` Beginner |
 | Measure phrases / ranges / percent | `numbers-applied.md` Intermediate |
 | Clause sequence **`xan`** | `clause-sequence.md` Beginner |
@@ -493,7 +503,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | **DECISION** | `ability.md` Intermediate |
 | Emotion compose | `feelings-permission.md` Intermediate |
 | Thanks / sorry (lone `/th/` met; unmet + `bl-`) | `thanks-and-sorry.md` Beginner |
-| Say words (`hwuvam`, consent) | `feelings-permission.md` Intermediate |
+| Say words (`hwuvam`, consent) | `permission-consent.md` Intermediate |
 | Numbered alternatives | `numbers-applied.md` Intermediate |
 | PLAN bar (`thagom zol`) | `comparatives.md` Intermediate |
 | Sake bars (`thudatham zoel`) | `prescription.md` Intermediate |

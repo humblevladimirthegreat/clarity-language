@@ -142,7 +142,7 @@ For *was walking when …*, keep the ordinary verb and hang the other event on [
 
 ### Future: plan, forecast, promise {#future}
 
-**Needs:** [Plan](/intention#plan-predict) · [Plan or forecast](/ability#predict-evidentiality) · [Forecasts](/evidentiality#forecast) · [Consent](/feelings-permission#consent)
+**Needs:** [Plan](/intention#plan-predict) · [Plan or forecast](/ability#predict-evidentiality) · [Forecasts](/evidentiality#forecast) · [Consent](/permission-consent#consent)
 
 English *will* is three different claims.
 
@@ -150,7 +150,7 @@ English *will* is three different claims.
 |----------------|--------|
 | I mean to | PLAN **`thagom`** ([endings](/intention#plan-map-resolution) show how much is drawn) |
 | the world will | channel + **`blral`** |
-| I promise | a vow **`hwuzal`** ([promise](/feelings-permission#say-words)) |
+| I promise | a vow **`hwuzal`** ([promise](/permission-consent#say-words)) |
 
 > `zuwen thagom vowurol.`
 >
@@ -238,7 +238,7 @@ For *would* in a condition (*if Alazun swam, Azozon would walk*), see [remote an
 
 ### Can, could, may, might {#can-may}
 
-**Needs:** [Ability](/can-and-cant#ability) · [MAY](/knowing#may) · [Permission](/feelings-permission#permission) · [FORMER](/notional-standing#former-climate)
+**Needs:** [Ability](/can-and-cant#ability) · [MAY](/knowing#may) · [Permission](/permission-consent#permission) · [FORMER](/notional-standing#former-climate)
 
 English *can* and *may* each carry several meanings. Pick the meaning.
 
@@ -283,7 +283,7 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 
 ### Ability, possibility and permission words {#ability-words}
 
-**Needs:** [Ability](/can-and-cant#ability) · [Can be](/can-and-cant#role-ability) · [MAY](/knowing#may) · [Permission](/feelings-permission#permission) · [Forecasts](/evidentiality#forecast) · [Requirement](/feelings-permission#requirement)
+**Needs:** [Ability](/can-and-cant#ability) · [Can be](/can-and-cant#role-ability) · [MAY](/knowing#may) · [Permission](/permission-consent#permission) · [Forecasts](/evidentiality#forecast) · [Requirement](/permission-consent#requirement)
 
 English adjectives and verbs built on *can* and *may* take the same forms as the modals.
 
@@ -314,7 +314,7 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 
 ### Must, have to, should {#must-should}
 
-**Needs:** [Requirement](/feelings-permission#requirement) · [Prescription](/ought-for-a-sake#sake-force) · [Motive](/prescription#sake-preference) · [Permission](/feelings-permission#permission) · [Speech act](/firm-soft#speech-act) · [Stance as-of](/as-of#stance-as-of)
+**Needs:** [Requirement](/permission-consent#requirement) · [Prescription](/ought-for-a-sake#sake-force) · [Motive](/prescription#sake-preference) · [Permission](/permission-consent#permission) · [Speech act](/firm-soft#speech-act) · [Stance as-of](/as-of#stance-as-of)
 
 English *must* and *should* differ in what stands behind the demand. Choose the source.
 

@@ -59,9 +59,9 @@ aber,th,❤️,evidential,INTUITION.weak,intuition evidential with weak evidence
 abem,w,❤️,evidential,INTUITION,intuition evidential (gut sense you cannot fully spell out),heart marks gut sense; intuition is knowing you cannot fully spell out,universality.md#mood-on-one-adjective
 abel,w,❤️,evidential,INTUITION.strong,intuition evidential with strong evidence (strong gut sense),heart marks gut sense; intuition is knowing you cannot fully spell out,universality.md#mood-on-one-adjective
 aber,w,❤️,evidential,INTUITION.weak,intuition evidential with weak evidence (faint hunch),heart marks gut sense; intuition is knowing you cannot fully spell out,universality.md#mood-on-one-adjective
-emem,th,😮,mirative,MIRATIVE,mirative mood (newly found out and not expected),a surprised face meets what it did not expect; mirative marks news against expectation,notional-standing.md#mirative
-emel,th,😮,mirative,MIRATIVE.firm,mirative mood overturning a firm expectation,a surprised face meets what it did not expect; mirative marks news against expectation,notional-standing.md#mirative
-emer,th,😮,mirative,MIRATIVE.mild,mirative mood against a loose expectation,a surprised face meets what it did not expect; mirative marks news against expectation,notional-standing.md#mirative
+emem,th,😮,mirative,MIRATIVE,mirative mood (newly found out and not expected),a surprised face meets what it did not expect; mirative marks news against expectation,mirative.md#mirative
+emel,th,😮,mirative,MIRATIVE.firm,mirative mood overturning a firm expectation,a surprised face meets what it did not expect; mirative marks news against expectation,mirative.md#mirative
+emer,th,😮,mirative,MIRATIVE.mild,mirative mood against a loose expectation,a surprised face meets what it did not expect; mirative marks news against expectation,mirative.md#mirative
 aram,h,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books,notional-standing.md#residue-and-former-climate
 aram,w,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books,universality.md#mood-on-one-adjective
 elam,h,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current,notional-standing.md#residue-and-former-climate
@@ -78,11 +78,11 @@ omal,th,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),"th
 omal,w,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),"thought balloon plus looking: could be, and you are seeking",universality.md#mood-on-one-adjective
 omar,th,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may never know),"thought balloon with a shrug: could be, and you are not seeking — including if you never know",knowing.md#hold-endings-may
 omar,w,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may never know),"thought balloon with a shrug: could be, and you are not seeking — including if you never know",universality.md#mood-on-one-adjective
-eyum,th,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose,notional-standing.md#notional-as-if-framing
+eyum,th,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose,notional.md#notional-as-if-framing
 eyum,w,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose,universality.md#mood-on-one-adjective
-eyur,th,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a possibility or assumption for now),theater mask tried on for a moment to toy with what might follow,notional-standing.md#hold-endings-notional
+eyur,th,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a possibility or assumption for now),theater mask tried on for a moment to toy with what might follow,notional.md#hold-endings-notional
 eyur,w,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a possibility or assumption for now),theater mask tried on for a moment to toy with what might follow,universality.md#mood-on-one-adjective
-eyul,th,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,notional-standing.md#hold-endings-notional
+eyul,th,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,notional.md#hold-endings-notional
 eyul,w,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,universality.md#mood-on-one-adjective
 odam,h,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,can-and-cant.md#ability-fallback
 odam,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,can-and-cant.md#ability-fallback

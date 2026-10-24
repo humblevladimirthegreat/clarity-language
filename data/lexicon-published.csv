@@ -43,7 +43,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 😪,sleepy,uzeme,mind,one,,torpor,sleepy eye shows drowsiness; torpor is the unobservable low arousal,,,restrictors.md#beginner-practice
 🤤,drool,uduma,mind,holds,,craving,drool shows craving,,hunger,
 🫩,bleary,obeme,mind,one,,fatigue,bleary eyes show fatigue,,,
-😷,mask,amebu,body,takes-away,small,illness,a medical mask marks the sick; illness is being unwell,,,emphasis.md#advanced-practice
+😷,mask,amebu,body,takes-away,small,illness,a medical mask marks the sick; illness is being unwell,,,role-scope.md#intermediate-practice
 🤒,sick,ezemu,mind,takes-away,,pathology,sick means illness; pathology is the unobservable condition-kind,,disease; ill; symptom,
 🤕,injured,enemu,mind,takes-away,,harm,injured means hurt; harm is the unobservable detriment,,damage; hurt; injury; wound; abuse; pain,
 🤢,nauseated,onomu,mind,takes-away,,contamination,nauseated shows disgust; contamination is the unobservable reading that something is tainted,,pollution; dirty,
@@ -74,7 +74,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 😞,disappointed,udemu,mind,takes-away,,disillusion,disappointed shows disappointment; disillusion is the unobservable fall from a frame,,,
 😓,stressed,oremu,mind,takes-away,,tension,stressed face shows tension,,disturb,
 😩,weary,uwemu,mind,takes-away,,spentness,weary means exhaustion; spentness is the unobservable empty tank,,,
-😫,tired,adamu,mind,takes-away,,burnout,tired means fatigue; burnout is the unobservable spentness of a person,,exhaust,
+😫,tired,adamu,mind,takes-away,,burnout,tired means fatigue; burnout is the unobservable spentness of a person,,exhaust,mirative.md#intermediate-practice
 🥱,yawn,oyome,mind,one,,monotony,yawn shows boredom; monotony is the situation offering nothing new,,bore,
 😤,huff,ahamu,mind,takes-away,,,,,,
 😡,rage,aremu,mind,takes-away,,destructiveness,rage means fury; destructiveness is the unobservable will to wreck,,destroy; destruction,
@@ -124,7 +124,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 👌,ok,oguye,person,one,none,acceptance,the ok sign says it is fine as it is; acceptance is letting it be,,accept; alright; adopt; fine,
 🤏,pinch,ebuvu,doing,takes-away,none,inch,a pinch of fingers spans about an inch; an inch is a small unit of length,,,
 ✌️,victory,evero,counting,order,none,triumph,peace sign shows triumph,,succeed; defeat; overcome,
-🤞,crossed-fingers,uwuyo,person,order,none,hope,crossed fingers bring hope,,,stance-bars.md#advanced-practice
+🤞,crossed-fingers,uwuyo,person,order,none,hope,crossed fingers bring hope,,,feelings-permission.md#intermediate-practice
 🤘,horns,ohobu,body,takes-away,medium,,,,,
 🤙,shaka,uhuya,person,holds,none,contact,shaka invites contact,,,
 🖕,middle-finger,umuyu,person,takes-away,none,contempt,middle finger shows contempt,,,
@@ -256,7 +256,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🤼‍♂️,wrestle,erunu,title,takes-away,none,,,,,
 🤽,water-polo,owuna,title,holds,none,competition,water polo teams battle to outscore each other,,compete; competitive,
 🤾,handball,uhuna,title,holds,none,teamwork,handball needs teamwork,,team,join-across-roles.md#intermediate-practice
-🤹,juggle,ahuva,doing,holds,none,multitasking,a juggler keeps several balls in the air at once,,,
+🤹,juggle,ahuva,doing,holds,none,multitasking,a juggler keeps several balls in the air at once,,,notional.md#intermediate-practice
 🧘,meditation,umame,mind,one,,mindfulness,meditate builds mindfulness,,,
 🛀,bath,ababa,body,holds,big,cleansing,bath brings cleansing,,wash,
 🛌,in-bed,unuve,doing,one,none,rest,lying in bed; rest is recovering energy,,remain; stay; settle,
@@ -270,7 +270,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🫂,hug,ahuya,person,holds,none,comfort,hug gives comfort,,comfortable; embrace,feelings-permission.md#intermediate-practice
 👪,family,uvaya,person,holds,big,kinship,a family is the people tied to you by blood,,household,hooks.md#beginner-practice
 🧑‍🧒,parent,abaya,person,holds,big,,an adult with a child is a parent,,,
-👣,footprints,avobo,body,order,medium,legacy,footprints leave legacy,v:go,trace,viewpoint.md#intermediate-practice
+👣,footprints,avobo,body,order,medium,legacy,footprints leave legacy,v:go,trace,role-scope.md#intermediate-practice
 🫆,fingerprint,evebe,body,one,small,trace,a fingerprint is a unique mark left behind; a trace is that mark,,characteristic,
 🐒,monkey,amoza,creature,holds,medium,mimicry,monkey see monkey do,,copy,
 🦍,gorilla,egazo,creature,order,big,dominance,the silverback dominates the group,,dominate,
@@ -279,7 +279,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🦮,guide-dog,agozo,creature,order,medium,reliance,a guide dog is relied on to lead; reliance is depending on something,,,
 🐺,wolf,uwozu,creature,takes-away,medium,predation,wolf at the door,,,
 🦊,fox,avozu,creature,takes-away,medium,cunning,sly as a fox,,,
-🦝,raccoon,arozu,creature,takes-away,medium,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal,,viewpoint.md#intermediate-practice
+🦝,raccoon,arozu,creature,takes-away,medium,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal,,role-scope.md#intermediate-practice
 🐈,cat,ogoze,creature,one,medium,curiosity,a cat pokes at whatever is new; curiosity is wanting to find out,,wonder; curious; interest,universality.md#advanced-practice
 🐈‍⬛,black-cat,abozu,creature,takes-away,medium,omen,"a black cat crossing is read as a sign; an omen is a sign people take to predict, which need not mean it will",,,
 🦁,lion,alazu,creature,takes-away,big,courage,brave as a lion,,,
@@ -747,7 +747,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ♟️,pawn,abevo,doing,order,small,sacrifice,pawn is traded in chess strategy; sacrifice is giving up for gain,,,intention.md#beginner-practice
 🃏,joker,oheve,doing,one,small,,,,,
 🀄,mahjong,omeva,doing,holds,small,,,,,
-🎴,card,ageve,doing,one,small,,,,,
+🎴,card,ageve,doing,one,small,,,,,mirative.md#intermediate-practice
 🎭,theater,eyu,person,takes-away,,pretense,theater masks hide the actor; pretense is playing a role / as-if framing,,dramatic; drama; stage,
 🖼️,frame,evoga,sign,holds,medium,ostentation,a frame puts a picture on show; ostentation is showing-off as stance,,shape; form,label-seams.md#beginner-practice
 🎨,palette,ebowa,tool,holds,medium,,,,color,
@@ -962,7 +962,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🪑,chair,ehohe,place,one,medium,position,chair is where you take a seat; position is your assigned place,v:sit,place; situation; lay; status; location; locate; pose; situate; put; occupy,speech-moves.md#beginner-practice
 🚽,toilet,odohe,place,one,medium,,,,,
 🪠,plunger,awowu,tool,takes-away,medium,unblock,plunger clears a clogged pipe; unblock is clearing obstruction,,,
-🚿,shower,ahahe,place,one,big,renewal,shower washes away the day; refresh is restoring freshness,,update,
+🚿,shower,ahahe,place,one,big,renewal,shower washes away the day; refresh is restoring freshness,,update,permission-consent.md#intermediate-practice
 🛁,bathtub,ubaha,place,holds,big,,,,,
 🪤,mousetrap,amewu,tool,takes-away,small,trap,mousetrap lures then snaps shut; trap is lure into confinement,,,
 🪒,razor,urebu,body,takes-away,small,,,,,
@@ -972,7 +972,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🧺,basket,abowa,tool,holds,medium,gathering,basket collects items together; gathering is bringing together,,,plurality.md#beginner-practice
 🧻,paper-roll,ebe,body,one,,necessity,toilet paper meets basic need; necessity is what must be had,,necessary; tissue; essential; lack,
 🪣,bucket,obowa,tool,holds,medium,collection,bucket holds gathered liquid; collection is bringing together,,collect,causation.md#beginner-practice
-🧼,soap,ozebu,body,takes-away,small,cleanliness,soap washes away grime; cleanliness is freedom from dirt,,clean; pure,
+🧼,soap,ozebu,body,takes-away,small,cleanliness,soap washes away grime; cleanliness is freedom from dirt,,clean; pure,permission-consent.md#intermediate-practice
 🫧,bubbles,obela,nature,holds,small,fragility,bubbles pop with a touch; fragility is easily broken,,,
 🪥,toothbrush,udebu,body,takes-away,small,hygiene,toothbrush cleans each day; hygiene is healthful cleanliness,,,
 🧽,sponge,azewa,tool,holds,small,absorption,sponge soaks up spilled liquid; absorption is taking in fully,,,
@@ -1058,7 +1058,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ◀️,backward,ubugo,sign,order,none,reverse,backward plays opposite direction; reverse is going opposite direction,,,
 ⏪,rewind,erego,sign,order,none,backtrack,double rewind jumps back; backtrack is revisiting earlier,,,
 ⏮️,previous-track,owugo,sign,order,none,,,,previous,
-⏫,up,abuho,place,order,none,rise,double-up chevron is skyward; rise is moving upward,,arise; boost,
+⏫,up,abuho,place,order,none,rise,double-up chevron is skyward; rise is moving upward,,arise; boost,viewpoint.md#intermediate-practice
 ⏬,down,oduho,place,order,none,decline,double-down chevron is toward the pull; to decline is to move downward,v:fall,decrease; low; drop,more-occasions.md#intermediate-practice
 ⏸️,pause,obugu,sign,takes-away,none,hiatus,pause halts playback; hiatus is a temporary halt,,suspend,
 ⏺️,record,ege,sign,one,,preservation,record button captures now; preservation is the unobservable keeping-across-time,,tape; preserve; retain,

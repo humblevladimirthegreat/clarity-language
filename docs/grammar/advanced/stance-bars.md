@@ -74,7 +74,7 @@ The bar's ending keeps its own job: on a channel it is [evidence strength](/evid
 >
 > "The book is lighter than I wanted."
 
-The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on a [say word](/feelings-permission#say-words) over the act (`hwuvom`, `hwuvam`) it is the person who demands or grants. WANT takes no `/b/`: for someone else's wants, put a [holder](/holder#holder) on the clause. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
+The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on a [say word](/permission-consent#say-words) over the act (`hwuvom`, `hwuvam`) it is the person who demands or grants. WANT takes no `/b/`: for someone else's wants, put a [holder](/holder#holder) on the clause. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
 
 > `zanal thebam blalazun zuol gagebem.`
 >
@@ -152,7 +152,7 @@ A CLUES or PATTERN bar can also take [`blarl`](/evidentiality#evidence-clause): 
 >
 > "The book is even less clear than I feared."
 
-Only these stances set a value. A [cause or condition pole](/causation), [MAY](/knowing#may), [MIRATIVE](/notional-standing#mirative), [DECISION](/ability#decision), and [ATTEMPT](/ability#try) do not, so none of them is a bar. A want sets the level wanted; a decision or an attempt commits to an act and sets no level, so *more than decided* is the [plan](/intention#plan-predict) bar.
+Only these stances set a value. A [cause or condition pole](/causation), [MAY](/knowing#may), [MIRATIVE](/mirative#mirative), [DECISION](/ability#decision), and [ATTEMPT](/ability#try) do not, so none of them is a bar. A want sets the level wanted; a decision or an attempt commits to an act and sets no level, so *more than decided* is the [plan](/intention#plan-predict) bar.
 
 ### Practice {#advanced-practice}
 
@@ -167,7 +167,6 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *artistry* | `ubewom` | 🖌️ from *paintbrush* |
 | *showmanship* | `ohedam` | 🌭 from *hotdog* |
 | *INTUITION* | `thabem` | ❤️ from *heart*: your gut expectation |
-| *hope* | `thuwuyom` | 🤞 from *crossed fingers* |
 
 **Review:**
 
@@ -176,6 +175,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
+| *hope* | `thuwuyom` |
 | *PATTERN* | `thubom` |
 | *MEMORY* | `thevum` |
 | *REPORTED* | `thebam` |

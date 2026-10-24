@@ -15,46 +15,46 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | Label | Gloss | Example | Teach |
 |-------|-------|---------|-------|
 | **ABIL** | Hostless *can* / *can’t* (no single verb) | `hodaxol` | [Can and can't](/can-and-cant#ability-fallback) |
-| **AIMED** | Emotion locus: aimed at a target | `wawethumel` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **AIMED** | Emotion locus: aimed at a target | `wawethumel` | [Feelings](/feelings-permission#emotion-compose) |
 | **ASIDE** | An aside span | `th(hugowul)` | [Spans](/spans#asides) |
-| **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwuvam` | [Feelings and permission](/feelings-permission#say-words) |
+| **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwuvam` | [Permission and consent](/permission-consent#say-words) |
 | **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Decision and try](/ability#try) |
-| **AWAY** | Emotion locus: moving off from a target | `wawethumum` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **AWAY** | Emotion locus: moving off from a target | `wawethumum` | [Feelings](/feelings-permission#emotion-compose) |
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thewom` | [Because, iff, and make](/iff-fault#cause) |
-| **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraer` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraer` | [Feelings](/feelings-permission#emotion-compose) |
 | **CITE** | A cite span: quoted wording | `d[azozon]` | [Spans](/spans#writing) |
 | **CLUES** | Evidential: reasoned from clues about this case | `theyom` | [How you know](/evidentiality#evidentiality) |
-| **CHOICE** | Say word answer: their call | `hwuvem` | [Feelings and permission](/feelings-permission#say-words) |
-| **COLLAPSE** | Emotion locus: out of fight, giving up | `wawethumual` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **CHOICE** | Say word answer: their call | `hwuvem` | [Permission and consent](/permission-consent#say-words) |
+| **COLLAPSE** | Emotion locus: out of fight, giving up | `wawethumual` | [Feelings](/feelings-permission#emotion-compose) |
 | **DECISION** | Pick-firmness mood | `thogem` | [Decision and try](/ability#decision) |
 | **DEDUCED** | Evidential: must hold if the premises hold | `thanam` | [How you know](/evidentiality#deduction) |
-| **FAWN** | Emotion locus: placating a target | `wawethumaom` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **FLOWING** | Emotion motion: steady, a current you can ride | `wawethumom` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **FORBID** | Say word answer: no, forbid | `hwuvul` | [Feelings and permission](/feelings-permission#say-words) |
-| **FORMER** | Episode standing: not the climate claimed now | `helam` | [Surprise, residue, and as-if](/notional-standing#residue) |
-| **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **FAWN** | Emotion locus: placating a target | `wawethumaom` | [Feelings](/feelings-permission#emotion-compose) |
+| **FLOWING** | Emotion motion: steady, a current you can ride | `wawethumom` | [Feelings](/feelings-permission#emotion-compose) |
+| **FORBID** | Say word answer: no, forbid | `hwuvul` | [Permission and consent](/permission-consent#say-words) |
+| **FORMER** | Episode standing: not the climate claimed now | `helam` | [Residue and former](/notional-standing#residue) |
+| **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Feelings](/feelings-permission#emotion-compose) |
 | **INTUITION** | Evidential: gut sense you cannot fully spell out | `thabem` | [How you know](/evidentiality#evidentiality) |
 | **LIVE** | Evidential: sensed now, by any sense | `thugem` | [Live and memory](/live-and-memory#live-vs-memory) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thomam` | [Knowing](/knowing#may) |
 | **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevum` | [Live and memory](/live-and-memory#live-vs-memory) |
 | **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegol z[odoze] gamezem.` | [Mention and islands](/span-mention#mention) |
-| **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themem` | [Surprise, residue, and as-if](/notional-standing#mirative) |
+| **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themem` | [It turns out](/mirative#mirative) |
 | **NAME** | A package titled with **-n** | `zobodel zubudal zan.` | [Named lists and join limits](/join-islands#named-list) |
-| **NOTIONAL** | As-if / pretense mood | `theyum` | [Surprise, residue, and as-if](/notional-standing#notional) |
-| **ON-BEHALF** | Emotion locus: felt for someone's sake | `wawethumom` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **NOTIONAL** | As-if / pretense mood | `theyum` | [As if](/notional#notional) |
+| **ON-BEHALF** | Emotion locus: felt for someone's sake | `wawethumom` | [Feelings](/feelings-permission#emotion-compose) |
 | **OPAQUE** | An opaque span: foreign or raw writing | <code>d&lt;kimchi&gt;</code> | [Spans](/spans#loans) |
 | **PATTERN** | Evidential: from regularity | `thubom` | [How you know](/evidentiality#evidentiality) |
 | **PLAN** | Intention-framing mood | `thagom` | [Intention](/intention#plan-predict) |
 | **REPORTED** | Evidential: said or written by someone else | `thebam` | [How you know](/evidentiality#evidentiality) |
-| **REQUIRE** | Say word answer: require, ask for (*must*) | `hwuvol` | [Feelings and permission](/feelings-permission#say-words) |
-| **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Surprise, residue, and as-if](/notional-standing#residue) |
-| **RESISTING** | Emotion locus: pushing against a target | `wawethumuor` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **REQUIRE** | Say word answer: require, ask for (*must*) | `hwuvol` | [Permission and consent](/permission-consent#say-words) |
+| **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Residue and former](/notional-standing#residue) |
+| **RESISTING** | Emotion locus: pushing against a target | `wawethumuor` | [Feelings](/feelings-permission#emotion-compose) |
 | **SAME** | Identity copula | `gorel` | [Predication](/predication#identity) |
 | **SCOPE** | Scope island `{ … }` | `{ hogugem zodozel gerulol }` | [Mention and islands](/span-mention#scope-islands) |
-| **SEEKING** | Emotion locus: turning to someone for comfort | `wawethumoem` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **STILL** | Emotion motion: not moving (held, frozen, numb) | `wawethumel` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **SURGING** | Emotion motion: in waves or spikes | `wuwathuraer` | [Feelings and permission](/feelings-permission#emotion-compose) |
-| **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruem` | [Feelings and permission](/feelings-permission#emotion-compose) |
+| **SEEKING** | Emotion locus: turning to someone for comfort | `wawethumoem` | [Feelings](/feelings-permission#emotion-compose) |
+| **STILL** | Emotion motion: not moving (held, frozen, numb) | `wawethumel` | [Feelings](/feelings-permission#emotion-compose) |
+| **SURGING** | Emotion motion: in waves or spikes | `wuwathuraer` | [Feelings](/feelings-permission#emotion-compose) |
+| **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruem` | [Feelings](/feelings-permission#emotion-compose) |
 | **WANT** | Desire mood: lasting / unstated / passing | `thalom` | [Decision and try](/ability#want) |
 
 **Compare with:** [quasi](#quasi) (`-e-xROOT`) is not **NOTIONAL**.
@@ -190,7 +190,7 @@ Silence counted in beats at a sentence edge with no word: a **break** puts the n
 
 A slot-part role compound on `/h/` (`hwozeduyol`): the role the act is done in (*as a teacher*).
 
-[Role scope and viewpoint](/viewpoint#capacity)
+[Role scope](/role-scope#capacity)
 
 **Compare with:** resemblance is the [similative](/relations#similative) (`hewem blwozeduyol` *like a teacher*). [Classification](#classification) on `/ɡ/` says someone **is** that role (`gwozeduyol`).
 
@@ -275,7 +275,7 @@ Polar patterns that confirm a denied body.
 
 A role word whose part consonant names a quality of the event (`dwuhowurol` *a way of walking*, `dwuher` *the way it was done*), not a person in it.
 
-[Role scope and viewpoint](/viewpoint#content-of-the-event)
+[Role scope](/role-scope#content-of-the-event)
 
 ### Continue (`/x/`)
 
@@ -399,7 +399,7 @@ Four `/h/` words for how a change stands now, not when it happened.
 
 Closed `/th/` episode standing: leftover on the tally, or usual weather you are not claiming now. Not past tense.
 
-[Surprise, residue, and as-if](/notional-standing#residue)
+[Residue and former](/notional-standing#residue)
 
 ### Fault
 
@@ -429,7 +429,7 @@ Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; frame **-m**
 
 ### Means
 
-Extra-noun [hook](/hooks#extra-noun) **`aol`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*. To name a kind of tool as its own noun, use a compound with a head root ([places, tools, and times](/viewpoint#places-tools-times)).
+Extra-noun [hook](/hooks#extra-noun) **`aol`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*. To name a kind of tool as its own noun, use a compound with a head root ([places, tools, and times](/role-scope#places-tools-times)).
 
 [Extra nouns and whose](/extra-noun-hooks#extra-noun-intermediate)
 
@@ -1006,7 +1006,7 @@ Sake + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`goyom`** + `/w/
 
 DIR × ANCHOR; the anchor sets the facing frame (person or oriented object, or a role pointer on **-r**); the ending refers to the anchor, not DIR.
 
-[Role scope and viewpoint](/viewpoint#viewpoint-laterals)
+[Left, right, and facing](/viewpoint#viewpoint-laterals)
 
 ### Vocative
 

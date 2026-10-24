@@ -23,8 +23,8 @@ Write a thing letter (`/z/` `/d/` `/b/`), **`w`**, a scope vowel, a part consona
 |-------|-------|---------|---------|-------|
 | [**`u`**](/roles#one-time-or-a-practice) | this episode | `zwuzeduyol` | *someone who teaches* | B |
 | [**`o`**](/roles#one-time-or-a-practice) | practiced role | `zwozeduyol` | *a teacher* | B |
-| [**`e`**](/viewpoint#scope) | toward one party | `gwezeduyol blalazun` | *is a teacher to Alazun* | I |
-| [**`a`**](/viewpoint#scope) | a type across scenes | `zwazeduyol` | *a teacher type* | I |
+| [**`e`**](/role-scope#scope) | toward one party | `gwezeduyol blalazun` | *is a teacher to Alazun* | I |
+| [**`a`**](/role-scope#scope) | a type across scenes | `zwazeduyol` | *a teacher type* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -35,8 +35,8 @@ Write a thing letter (`/z/` `/d/` `/b/`), **`w`**, a scope vowel, a part consona
 | [Is a teacher](/roles#saying-someone-is-a-teacher) | `zazozon gwozeduyol.` | *Azozon is a teacher.* | B |
 | [The event itself](/roles#the-event-itself): no **`w`** | `duvuvul` | *a fight* | B |
 | [What it makes](/roles#the-undergoer-d): **`d`** | `dwudoguyol` | *something built* | B |
-| [A kind of tool, place, or time](/viewpoint#places-tools-times): a compound with a head root | `daruyoxuwal` | *a writing tool* | I |
-| [The role you act in](/viewpoint#capacity): on `/h/` | `zazozon vezuyol hwozeduyol.` | *Azozon speaks as a teacher.* | I |
+| [A kind of tool, place, or time](/role-scope#places-tools-times): a compound with a head root | `daruyoxuwal` | *a writing tool* | I |
+| [The role you act in](/role-scope#capacity): on `/h/` | `zazozon vezuyol hwozeduyol.` | *Azozon speaks as a teacher.* | I |
 
 A role compound has one part consonant, right after its scope vowel. Its stem is an event or a state (`zwuzonumul` *someone who is angry*); `zwuzuwen` is not a word.
 
@@ -48,13 +48,13 @@ A part consonant can name a quality of the event, not a person in it. Pointers d
 
 | Part | Names | Compound | Pointer | Stage |
 |------|-------|----------|---------|-------|
-| [**`h`**](/viewpoint#content-of-the-event) | how, when, or where | `dwuhowurol` | `dwuher` | I |
-| [**`g`**](/viewpoint#content-of-the-event) | the state it leaves | `dwuguguyol` | `dwuger` | I |
-| [**`th`**](/viewpoint#content-of-the-event) | a reason or feeling | `dwuthowurol` | `dwuther` | I |
-| [**`w`**](/viewpoint#content-of-the-event) | how much | `dwuwowurol` | `dwuwer` | I |
-| [**`y`**](/viewpoint#content-of-the-event) | the turn that said it | `dwuyowurol` | `dwuyer` | I |
-| [**`x`**](/viewpoint#content-of-the-event) | what followed | `dwuxowurol` | `dwuxer` | I |
-| [**`v`**](/viewpoint#content-of-the-event) | the event itself | (the event noun: `dowurol`) | `dwuver` | I |
+| [**`h`**](/role-scope#content-of-the-event) | how, when, or where | `dwuhowurol` | `dwuher` | I |
+| [**`g`**](/role-scope#content-of-the-event) | the state it leaves | `dwuguguyol` | `dwuger` | I |
+| [**`th`**](/role-scope#content-of-the-event) | a reason or feeling | `dwuthowurol` | `dwuther` | I |
+| [**`w`**](/role-scope#content-of-the-event) | how much | `dwuwowurol` | `dwuwer` | I |
+| [**`y`**](/role-scope#content-of-the-event) | the turn that said it | `dwuyowurol` | `dwuyer` | I |
+| [**`x`**](/role-scope#content-of-the-event) | what followed | `dwuxowurol` | `dwuxer` | I |
+| [**`v`**](/role-scope#content-of-the-event) | the event itself | (the event noun: `dowurol`) | `dwuver` | I |
 
 ### Without the stem {#pointers}
 
@@ -63,8 +63,8 @@ A role pointer drops the stem. The pointer vowel picks the event by position: **
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Whoever did the latest thing](/roles#role-pointers-family) | `zwuzer` | *they* | B |
-| [The landmark a clause named](/viewpoint#places-tools-times): resume its noun | `zazozon vuguyol aol banewul. zahelan danewur vayebel.` | *Azozon cooks with a knife. Ahelan sees the knife.* | I |
-| [That landmark as a means](/viewpoint#places-tools-times): the hook's pointer | `zazozon vuguyol aol banewul. zahelan vuguyol aer.` | *Azozon cooks with a knife. Ahelan cooks with it too.* | I |
+| [The landmark a clause named](/role-scope#places-tools-times): resume its noun | `zazozon vuguyol aol banewul. zahelan danewur vayebel.` | *Azozon cooks with a knife. Ahelan sees the knife.* | I |
+| [That landmark as a means](/role-scope#places-tools-times): the hook's pointer | `zazozon vuguyol aol banewul. zahelan vuguyol aer.` | *Azozon cooks with a knife. Ahelan cooks with it too.* | I |
 
 ## Left, right, up, down {#directions}
 
@@ -139,9 +139,9 @@ The anchor can be `uwe` *speaker*, `awa` *listener*, a name, or a role pointer o
 | This | vs | That |
 |------|----|------|
 | `zwuzeduyol` *someone who teaches* ([any one who does it](/roles#role-compounds)) | | `zwozeduyol` *a teacher* ([a practiced role](/roles#one-time-or-a-practice)) |
-| `dwuhowurol` *a way of walking* ([a quality of the event](/viewpoint#content-of-the-event)) | | `dwuzowurol` *someone who walks* ([a participant](/roles#role-compounds)) |
+| `dwuhowurol` *a way of walking* ([a quality of the event](/role-scope#content-of-the-event)) | | `dwuzowurol` *someone who walks* ([a participant](/roles#role-compounds)) |
 | `zwuzeduyor` *the one teaching* ([this instance](/roles#role-compounds)) | | `gwuzeduyol` *is one who teaches* ([a label](/roles#saying-someone-is-a-teacher)) |
-| `daruyoxuwal` *a writing tool* ([a compound](/viewpoint#places-tools-times)) | | `aol` *using* ([a hook on the clause](/hooks#extra-noun)) |
+| `daruyoxuwal` *a writing tool* ([a compound](/role-scope#places-tools-times)) | | `aol` *using* ([a hook on the clause](/hooks#extra-noun)) |
 | `gewuhol` *west* ([compass](/viewpoint#endings-and-resume)) | | `gewuhothazozon` *Azozon's left* ([a face](/viewpoint#endings-and-resume)) |
 | `gewuhothazozon bledalol` *left of the tree, from Azozon's view* ([a facing person](/viewpoint#viewpoint-vs-landmark)) | | `gewuhothel blohehal` *on the house's left* ([the landmark's own front](/viewpoint#landmark-facing)) |
-| `hwozeduyol` *as a teacher* ([the role you act in](/viewpoint#capacity)) | | `hewem blwozeduyol` *like a teacher* ([a similative](/relations#similative)) |
+| `hwozeduyol` *as a teacher* ([the role you act in](/role-scope#capacity)) | | `hewem blwozeduyol` *like a teacher* ([a similative](/relations#similative)) |

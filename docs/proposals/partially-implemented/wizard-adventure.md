@@ -80,7 +80,7 @@ A relationship subsystem, borrowed from dating and friendship sims, for the vill
 |-------------|---------|--------|
 | Asks what the character feels or wants, instead of assuming | [Fill questions](/polar-inventory), [whose stake](/prescription#whose-stake) | Opens what the character is holding back, an information gap about a person |
 | Says how they know something about the character (*I saw* vs. *I heard*) | [Evidentiality](/evidentiality#evidentiality) | Rumor stated as fact cools the character; marked hearsay invites a correction |
-| Asks before acting on or for the character | [Permission](/feelings-permission#permission), [consent](/feelings-permission#consent) | The next step happens only with consent; a *no* is final for that scene and costs the player nothing if it is accepted |
+| Asks before acting on or for the character | [Permission](/permission-consent#permission), [consent](/permission-consent#consent) | The next step happens only with consent; a *no* is final for that scene and costs the player nothing if it is accepted |
 | Thanks or apologizes specifically | [Thanks and sorry](/thanks-and-sorry#thanks-sorry) | Specific thanks for a named act counts; a bare greeting chunk does not |
 | Names a feeling with its object | [Emotion compose](/feelings-permission#emotion-compose) | Characters answer in kind, which is input for the same forms |
 

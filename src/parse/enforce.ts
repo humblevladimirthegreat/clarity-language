@@ -415,7 +415,7 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (word.pos === "th" && (stemRoot === CLOSED.record || stemRoot === CLOSED.scroll) && word.ending !== "n") {
     throw new ConstructionError("retiredChannelRoot", word.raw);
   }
-  // The green, no-entry and memo roots are no stance: permission, a ban and a requirement are say words (feelings-permission.md#say-words).
+  // The green, no-entry and memo roots are no stance: permission, a ban and a requirement are say words (permission-consent.md#say-words).
   if (word.pos === "th" && (stemRoot === CLOSED.green || stemRoot === CLOSED.noEntry || stemRoot === CLOSED.memo) && word.ending !== "n") {
     throw new ConstructionError("retiredDeonticRoot", word.raw);
   }
@@ -680,7 +680,7 @@ function enforceFeelingLandmark(words: LexWord[], hosted: Hosted | undefined): v
   }
 }
 
-/** Whose say: a `bl-` word names someone over the act (`v`), or, under pair scope, the one party a participant's say is toward (feelings-permission.md#say-words). */
+/** Whose say: a `bl-` word names someone over the act (`v`), or, under pair scope, the one party a participant's say is toward (permission-consent.md#say-words). */
 function enforceSayHost(unit: HUnit): void {
   const family = unit.word.family;
   if (family.kind !== "say") return;

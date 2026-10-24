@@ -3,7 +3,7 @@ import type { OverlayKind } from "../lexicon-search.js";
 /**
  * Role word part consonant (roles.md#role-compounds): the slot the participant had in the event (`z` doer, `d`
  * undergoer, `b` the extra party), or a quality of the event (`h` manner, `g` state, `th` stance, `w` extent,
- * `y` speech move, `x` outcome, `v` the event itself; viewpoint.md#content-of-the-event).
+ * `y` speech move, `x` outcome, `v` the event itself; role-scope.md#content-of-the-event).
  */
 export type RolePart = "z" | "d" | "b" | "h" | "g" | "th" | "w" | "y" | "x" | "v";
 
@@ -88,7 +88,7 @@ export type MorphWordFamily =
       pointerVowel?: PointerVowel;
       /** Values / label-scope / ability stance vowel (also role + ability on `/ɡ/`, `gwezuduyexal`). */
       stanceVowel?: ScopeVowel;
-      /** Role compound or role pointer: the label scope vowel(s) after `w` (`zwozuduyel`; viewpoint.md#scope). Hook prefix: scope after the stem's `th` seam (`zuexavuvuthol`). Landmark facing: pair scope after `th` (`gazuhothel`; viewpoint.md#landmark-facing). */
+      /** Role compound or role pointer: the label scope vowel(s) after `w` (`zwozuduyel`; role-scope.md#scope). Hook prefix: scope after the stem's `th` seam (`zuexavuvuthol`). Landmark facing: pair scope after `th` (`gazuhothel`; viewpoint.md#landmark-facing). */
       scopeVowel?: ScopeVowel;
       /** Emotion compose: sake horizon letter moved mid-word (feelings-permission.md#emotion-compose). */
       horizon?: "l" | "m" | "r";
@@ -131,13 +131,13 @@ export type MorphWordFamily =
   | { kind: "tag"; vowels: TagVowel[] }
   /**
    * Say word: `h` + `w` + label scope + whose say + answer + ending (`hwuvam` *you may*, `hwudum` *they refused*;
-   * feelings-permission.md#say-words). The part is the doer `z`, the one it's done to `d`, the recipient `b`, or someone over the act `v`.
+   * permission-consent.md#say-words). The part is the doer `z`, the one it's done to `d`, the recipient `b`, or someone over the act `v`.
    */
   | { kind: "say"; scope: ScopeVowel; part: SayPart; answer: SayAnswer };
 
-/** Whose say a say word gives (feelings-permission.md#say-words). */
+/** Whose say a say word gives (permission-consent.md#say-words). */
 export type SayPart = "z" | "d" | "b" | "v";
-/** What they said: `a` allow, `u` forbid, `o` require, `e` their call (feelings-permission.md#say-words). */
+/** What they said: `a` allow, `u` forbid, `o` require, `e` their call (permission-consent.md#say-words). */
 export type SayAnswer = "a" | "e" | "o" | "u";
 
 /** Tag pronoun vowel, named by its letter name: A, E, O, U (tag-pronouns.md#tag-pronouns). */

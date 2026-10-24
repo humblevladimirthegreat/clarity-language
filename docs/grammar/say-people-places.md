@@ -199,7 +199,7 @@ To keep *Sam* as English spelling, write the span. To see the Ageben sound-spell
 
 ### Who does it: *student*, *singer*, *manager* {#agent-nouns}
 
-**Needs:** [Role compounds (the doer)](/roles#role-compounds) · [One time or a practice](/roles#one-time-or-a-practice) · [Saying someone is a teacher](/roles#saying-someone-is-a-teacher) · [The role you act in](/viewpoint#capacity)
+**Needs:** [Role compounds (the doer)](/roles#role-compounds) · [One time or a practice](/roles#one-time-or-a-practice) · [Saying someone is a teacher](/roles#saying-someone-is-a-teacher) · [The role you act in](/role-scope#capacity)
 
 English names a person by what they usually do (*a singer*, *a manager*). Ageben builds that noun from the event root: person letter, **`w`**, the practiced-role scope **`e`**, the doer **`z`**, the root, then the ending ([one time or a practice](/roles#one-time-or-a-practice)). `zwozozuyel` is *a singer* from `ozuyel` *sing*, and on `/ɡ/` (`gwozozuyel`) it says someone is one. With scope **`a`**, `zwuzozuyel` is only *someone who sings*. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
 
@@ -270,7 +270,7 @@ Rows with scope **`a`** name a part in one event (*winner*, *witness*, *passenge
 
 A noun that specifies the job goes in the stem: `zwozodozexowurol` is *a dog walker*. The noun's part in the job is as open as in English.
 
-English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwozeduyol` is *as a teacher* ([the role you act in](/viewpoint#capacity)). `hwuozeduyol` is *not as a teacher*, speaking off duty.
+English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwozeduyol` is *as a teacher* ([the role you act in](/role-scope#capacity)). `hwuozeduyol` is *not as a teacher*, speaking off duty.
 
 **Compare with:** *like a teacher* is the [similative](/relations#similative) (`hewem blwozeduyol`).
 
@@ -500,7 +500,7 @@ English makes nouns for a part, a kind, a role, and a manner. Ageben has no sepa
 
 ### Case, deal, figure, board and other several-sense nouns {#sense-nouns}
 
-**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Exchange](/relations#exchange) · [Between](/of-relations#locative-relations) · [Number as verb](/number-markers#number-as-verb-by-marker) · [Role pointers](/pronouns#role-pointers) · [Consent](/feelings-permission#consent) · [Joins](/joins) · [Role letters](/clause#role-letters)
+**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Exchange](/relations#exchange) · [Between](/of-relations#locative-relations) · [Number as verb](/number-markers#number-as-verb-by-marker) · [Role pointers](/pronouns#role-pointers) · [Consent](/permission-consent#consent) · [Joins](/joins) · [Role letters](/clause#role-letters)
 
 An English noun like *case* or *board* covers several jobs, and Ageben has a different word for each. Decide which job you mean first, then write that word. Where a job is a whole clause (*in that case*, *a deal*), the recipe is a clause, not a noun.
 

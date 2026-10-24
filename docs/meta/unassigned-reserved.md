@@ -178,7 +178,7 @@ Source: [hooks.md](/hooked-joins#hooked-joins)
 
 Source: [roles.md](/roles), [compounds.md](/compounds)
 
-- **open:** a role compound on `/v/` / `/w/` / `/th/`. A role compound names a participant or a quality of an event, and these slots take none: it fills `/z/` `/d/` `/b/` `/ɡ/`, sets a topic under `/x/`, calls under `/y/`, and on `/h/` takes a slot part as [capacity](/viewpoint#capacity). Parser: `roleCompoundSlot`.
+- **open:** a role compound on `/v/` / `/w/` / `/th/`. A role compound names a participant or a quality of an event, and these slots take none: it fills `/z/` `/d/` `/b/` `/ɡ/`, sets a topic under `/x/`, calls under `/y/`, and on `/h/` takes a slot part as [capacity](/role-scope#capacity). Parser: `roleCompoundSlot`.
 - **open:** a content-part compound on `/h/` (`hwuhowurol`). The manner of an event as an adverb is the ordinary `/h/` word (`howurol`); a person-as-adverb on `/h/` is capacity, which needs a slot part. Parser: `roleCompoundSlot`.
 - **closed:** **`v`** in a role compound (`zwavowurel`). The event noun is the stem itself (`dowurol`). Parser: no word.
 - **closed ([hooked parts](design-decisions.md#hooked-parts-and-the-result)):** a role word for a hooked part (scene, instrument, goal, source, path, bearer) or a separate result. No part consonant names one. Parser: no word.
@@ -192,7 +192,7 @@ Source: [roles.md](/roles), [compounds.md](/compounds)
 
 Source: [pronouns.md](/pronouns#role-pointers)
 
-- **open:** a role pointer on `/v/` / `/ɡ/` / `/w/` (`vwuzer`). A pointer picks a participant, and these slots take none; *does so* and *such* are whole-stem **-r**. Parser: `pointerSlot`. On `/h/` the pointer shape is a [say word](/feelings-permission#say-words) (`hwuzam`).
+- **open:** a role pointer on `/v/` / `/ɡ/` / `/w/` (`vwuzer`). A pointer picks a participant, and these slots take none; *does so* and *such* are whole-stem **-r**. Parser: `pointerSlot`. On `/h/` the pointer shape is a [say word](/permission-consent#say-words) (`hwuzam`).
 - **closed (D-24):** a role pointer on `/y/` / `/x/`.
 - **open:** a new-one pointer (**-l**) with pointer vowel `u`, or after a special, topic or generic pronoun (`zwuzul`). A new-one pointer copies a kind, and an unsaid filler or a conversation role has none. Parser: `pointerNewUnsaid`, `pointerNewSpecial`.
 - **open:** a share (**-m**) with pointer vowel `o` or with **-x** (`zwuzom`, `zwuzemx`). A share is a part of an event, so it names no group and cannot be the very event it describes. Parser: `pointerShareSelf`, `pointerSharePlural`.
@@ -214,13 +214,13 @@ Source: [pronouns.md](/tag-pronouns#tag-pronouns)
 
 ## Role letter + `w` + vowel + consonant
 
-Source: [roles.md](/viewpoint#content-of-the-event)
+Source: [roles.md](/role-scope#content-of-the-event)
 
 - **open:** role letter + `w` + scope + a consonant that is not a part + vowel(s) + ending (`zweyual`, `hweral`). The part consonants are **`z`** **`d`** **`b`** **`h`** **`g`** **`th`** **`w`** **`y`** **`x`** **`v`**. Parser: no word.
 
 ## Say words
 
-Source: [feelings-permission.md](/feelings-permission#say-words)
+Source: [feelings-permission.md](/permission-consent#say-words)
 
 - **closed ([D-46](design-decisions.md)):** `/th/` on the green, no-entry, or memo root, any ending but **-n** (`tholom`, `thegul`, `thonam`). Parser: `retiredDeonticRoot`.
 - **closed (D-46):** a bare **`v`** say word on **-m** in a statement whose speaker is a participant (`zuwen vowurol hwuvam.`). It would be the speaker's say over their own act, which is their part (`hwuzom`). Parser: `saySpeaker`.
@@ -258,7 +258,7 @@ An **-r** grade on a closed root without its own **-r** would take away the live
 - **closed (closed-root -r):** clause-pole **-r** as *one of several* on *if* (`thoher`), *only if* (`theber`) and *so that* (`hovar`). The resume is the only route to *in that case* (`thoher`); *partly because* is `thahur`.
 - **closed (closed-root -r):** CAUSE **-r** as *one contributing push* (`thewor`); RESIDUE and FORMER **-r** as *for now* (`tharar`, `thelar`); similative **-r** as *a bit like* (`hewer`, `gewer`).
 - **open:** clause-pole **-l** beyond *because* (`thahul`) and *by* (`arul`). Neither guess fits these poles. The nearest, *if* **-l** as *by rule* (`thohel`), is not a stronger *if* but a rule, which `thohem` plus a deontic says.
-- **open:** CAUSE **-l** as *compel* (`thewol`). **-l** is not guessable here, and refused consent plus CAUSE ([consent](/feelings-permission#consent)) says more: it names whose will was overridden.
+- **open:** CAUSE **-l** as *compel* (`thewol`). **-l** is not guessable here, and refused consent plus CAUSE ([consent](/permission-consent#consent)) says more: it names whose will was overridden.
 - **open:** RESIDUE and FORMER **-l** (`tharal`, `thelal`). Two guesses compete: *for good*, as on the phasals (`havel`), and *strong*, as on the channels.
 - **open:** **-l** on exchange (`eha`), proxy (`ane`), the of-relations, the locatives, stimulus (`oyo`), and *respectively* (`uba`). *Strongest* is the only guess, and none of these has needed it (*exactly between*?).
 

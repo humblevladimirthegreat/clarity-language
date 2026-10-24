@@ -556,7 +556,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.equal(parseOk("zwuzem").family.kind, "x");
   });
 
-  it("parses a slot-part role compound on /h/ as capacity (viewpoint.md#capacity)", () => {
+  it("parses a slot-part role compound on /h/ as capacity (role-scope.md#capacity)", () => {
     const word = parseOk("hwozuduyel");
     if (word.family.kind === "x") {
       assert.equal(word.family.xFamily, "role");
@@ -567,7 +567,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.equal(word.pos, "h");
   });
 
-  it("parses content-rule parts as pointers and compounds (viewpoint.md#content-of-the-event)", () => {
+  it("parses content-rule parts as pointers and compounds (role-scope.md#content-of-the-event)", () => {
     const pointer = parseOk("dwuher");
     assert.deepEqual(pointer.family, {
       kind: "x",

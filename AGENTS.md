@@ -36,11 +36,11 @@ Each row names what the file owns. The file is the authority; this table is only
 | `predication.md` | Classification, identity; how far a label reaches (`label-seams.md`); packaging (`label-scope.md`). |
 | `causation.md` | Causation / condition poles; fault (`fault.md`); iff, CAUSE (`iff-fault.md`). |
 | `sakes.md` | Sakes, met / unmet; ought for a sake (`ought-for-a-sake.md`); motive, attachment, whose stake, contrary, sake bars (`prescription.md`). |
-| `feelings-permission.md` | Feelings, speaker attitude, permission, consent; thanks and sorry (`thanks-and-sorry.md`). |
+| `feelings-permission.md` | Feelings, speaker attitude; permission, consent (`permission-consent.md`); thanks and sorry (`thanks-and-sorry.md`). |
 | `intention.md` | Plan; decision, try / fallback (`ability.md`); ability / incapability (`can-and-cant.md`). |
 | `knowing.md` | MAY; live / memory (`live-and-memory.md`); evidentiality (`evidentiality.md`); holder (`holder.md`); universality, dated channel (`universality.md`). |
-| `notional-standing.md` | Notional and standing: mirative, residue / former, notional, channel bars; already / still / not yet / no longer (`already-still-yet.md`). |
-| `roles.md` | Role compounds; viewpoint laterals, landmark facing, gravity (`viewpoint.md`). |
+| `notional-standing.md` | Residue / former, channel bars; mirative (`mirative.md`); notional (`notional.md`); already / still / not yet / no longer (`already-still-yet.md`). |
+| `roles.md` | Role compounds; viewpoint laterals, landmark facing, gravity (`viewpoint.md`); role scope (`role-scope.md`). |
 | `compounds.md` | Mid-word `x`, dictionary compounds; compound families, conversation length (`compound-families.md`); root tails, tail suffixes (`root-tails.md`). |
 | `spans.md` | Span fences, asides; mention, scope islands (`span-mention.md`); editorial close, nesting (`span-nesting.md`). |
 | `numbers.md` | Numerals; word shape, markers, endings, writing (`number-markers.md`); end-relative, stacked markers (`stacked-markers.md`). |

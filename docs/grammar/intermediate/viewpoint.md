@@ -2,135 +2,9 @@
 band: intermediate
 ---
 
-# Role scope and viewpoint {#role-scope-and-viewpoint}
+# Left, right, and facing {#left-right-and-facing}
 
-### Scope across scenes (`e`, `a`, pairs) {#scope}
-<a id="scope-across-scenes"></a>
-
-The scope slot after **`w`** takes every [label scope](/label-seams#label-scope) vowel, not just **`u`** and **`o`**. They are the same vowels other labels write after mid-word **`th`**; on a role word they come first, and nowhere else. A **`th`** scope after a role word's stem (`zwuzuduyethel`) is not a word.
-
-| V1 | Reach | Example | English |
-|----|-------|---------|---------|
-| **`u`** | this episode: one act is enough | `zwuzeduyol` | *someone who teaches* |
-| **`o`** | practiced role | `zwozeduyol` | *a teacher* |
-| **`e`** | this pair: toward one party, named in a `bl-` word on `/ɡ/` | `gwezeduyol blalazun` | *is a teacher to Alazun* |
-| **`a`** | a type across scenes | `zwazeduyol` | *a teacher type* |
-| pairs | the scope stacks: **`ae`**, **`ao`**, **`oe`**, **`ua`**, **`ue`**, **`uo`** | `gwuozeduyol`, `gwaezeduyol` | *not in that capacity*, *a teacher by circumstance* |
-
-> `zazozon gwezeduyol blalazun.`
->
-> z-Azozon | [g-pair-agent-teach | bl-Alazun]
->
-> "Azozon is Alazun's teacher."
-
-On `/z/`, `/d/`, and `/b/`, pair scope **`e`** stands alone: the party is the one the clause already relates the person to. On `/ɡ/` it takes its `bl-` party, as on any [pair-scope label](/label-seams#scope-relative).
-
-> `zazozon gwuozeduyol.`
->
-> z-Azozon | g-outside-role-agent-teach
->
-> "Azozon is not acting as a teacher here."
-
-Scope works on [role pointers](/pronouns#role-pointers) too. `zwuzer` is *the latest doer*; `zwozer` is *the latest doer, in their practiced role*: after *Azozon teaches*, `zwozer` is Azozon as a teacher. With **-m** it gives a useful contrast: `dwuzem` is *what they did (this time)*, and `dwozem` is *their practice, their craft*.
-
-### The role you act in (`/h/`) {#capacity}
-
-English *as a teacher, I …* names the role the act is done in, not a person standing in the clause. Write the same role compound, with a slot part (`z`, `d`, or `b`), on `/h/`: a person cannot be an adverb, so the word is the capacity the act is done in.
-
-> `zazozon vezuyol hwozeduyol.`
->
-> z-Azozon | v-tell | h-role-agent-teach
->
-> "Azozon speaks as a teacher."
-
-The scope vowel does its usual work. Pair scope **`e`** takes its `bl-` party, as on `/ɡ/`.
-
-| Ageben | English |
-|--------|---------|
-| `hwuzeduyol` | *as the one teaching this time* |
-| `hwozeduyol` | *as a teacher* |
-| `hwezeduyol blalazun` | *as Alazun's teacher* |
-| `hwuozeduyol` | *not as a teacher* (off duty) |
-| `hwodebebul` | *as a patient* (the one a doctor treats) |
-| `hwobezuyol` | *as a confidant* |
-
-**Compare with:** resemblance is the [similative](/relations#similative) (`hewem blwozeduyol` *like a teacher*). An ordinary `/h/` adverb is how the event goes (`hadurom` *hastily*).
-
-**Compare with:** `zazozon gwozeduyol.` says Azozon **is** a teacher. `zazozon vezuyol hwozeduyol.` says the telling is done in that role.
-
-### Places, tools, and times {#places-tools-times}
-
-A role compound names a participant: the doer, what the event acts on or makes, or the extra `/b/` party. A place, tool, or time is a landmark, brought in with an [extra-noun hook](/hooks#extra-noun) (`al bohehal` *in a house*, `aol banewul` *using a knife*), and it has no role compound. Name it with words you already have:
-
-| Job | Ageben | English |
-|-----|--------|---------|
-| a kind of tool, place, or time | an ordinary [compound](/compounds#two-roots-one-word) with a head root: `daruyoxuwal` (write + tool), `dezuvexodurol` (sleep + time) | *a writing tool*, *bedtime* |
-| the landmark a clause named | resume its noun: after `aol banewul`, `danewur` | *that knife* |
-| that landmark as a place or means | the hook's own [pointer](discourse-hooks.md#hook-resume): `ar` *in there*, `er` *there*, `ur` *from there*, `aer` *with it* | *there*, *with it* |
-| a landmark nobody named | two sentences: a place exists, and the event happened there | *wherever it happened* |
-| who pays, who it is for | the hook in a clause (`uol` *against*, `ol` *for* plus `/b/`), then a resume | *the one it was stolen from* |
-
-> `zazozon vuguyol aol banewul. zahelan danewur vayebel.`
->
-> z-Azozon | v-cook | [using | b-knife] . z-Ahelan | d-←knife | v-see
->
-> "Azozon cooks with a knife. Ahelan sees the knife."
-
-> `zazozon vuguyol aol banewul. zahelan vuguyol aer.`
->
-> z-Azozon | v-cook | [using | b-knife] . z-Ahelan | v-cook | on.it
->
-> "Azozon cooks with a knife. Ahelan cooks with it too."
-
-### Content of the event {#content-of-the-event}
-
-English *the way it was done*, *what it left them*, *what came of it*, or *that remark* names a quality of an event, not a person in it. Write the same role-word shape, and put a part consonant for that quality after the scope vowel: the word is then a thing you can talk about, resume, or point to.
-
-> `dwuhowurol vayebel.`
->
-> d-episode-manner-walk | v-see
->
-> "Someone sees a way of walking."
-
-A slot part on the same stem is still a participant: `dwuzowurol` is *someone who walks*, as [role compounds](/roles#role-compounds) name a doer.
-
-The stem is still the event. The part says which quality of it you mean. Pointers drop the stem and read the latest matching event, as [role pointers](/pronouns#role-pointers) do for people:
-
-> `zazozon vowurol hadurom. zahelan dwuher vayebel.`
->
-> z-Azozon | v-walk | h-haste . z-Ahelan | d-←episode-manner.same | v-see
->
-> "Azozon walks in haste. Ahelan sees the way it was done."
-
-If that clause named no manner word, `dwuher` is the event's own manner: how walking went, unnamed. A restrictor, a time pole, or a [say word](feelings-permission.md#say-words) is already doing its own job on `/h/`, so the pointer skips it.
-
-| Part | Names | Compound | Pointer |
-|------|-------|----------|---------|
-| **`h`** | how, when, or where it happened | `dwuhowurol` *a way of walking* | `dwuher` *the way it was done* |
-| **`g`** | the state it leaves its participant in | `dwuguguyol` *how cooked it is* | `dwuger` *the state it left them in* |
-| **`th`** | a reason, thought, or feeling about it | `dwuthowurol` *a reason to walk* | `dwuther` *the reason for it* |
-| **`w`** | how much or how intense it was | `dwuwowurol` *the amount of walking* | `dwuwer` *how much it was* |
-| **`y`** | the turn that said it (question, command, remark) | `dwuyowurol` *a remark about walking* | `dwuyer` *that remark* |
-| **`x`** | what followed from it | `dwuxowurol` *what comes of walking* | `dwuxer` *what came of it* |
-| **`v`** | the event itself | (no compound: the event noun is the stem, `dowurol`) | `dwuver` *that event* |
-
-Scope **`a`** / **`e`** / **`o`** / **`u`** still say how far the label reaches: `dwohowurol` is *someone's usual way of walking*, `dwahowurol` *a walking style*.
-
-A **`g`** pointer is the `/d/` participant's state when the event has one, and the `/z/` participant's otherwise. After *Azozon punches Alazun*, `dwuger` is Alazun's state; after *Azozon runs*, it is Azozon's. **`w`** always reads the event's own extent: a `/w/` word grades the next adjective, never the event, so `dwuwer` is *that much*. `dwugar` and `dwuwar` are not words: no clause names a resulting state or an amount for *the other* to differ from.
-
-A **`th`** pointer reads [sake](/sakes) words, feeling roots, and [causation poles](/causation) on `/th/`. A channel, MAY, the notional, or a holder is the speaker's stance on the *claim*, not a stance on the event, so the pointer skips those too. With no such word, `dwuther` is still *the reason for it*: the gap the spelling fills.
-
-A **`y`** pointer reaches turns, not events: `dwuyer` the latest turn, `dwuyar` the one before it, `dwuyor` this very turn, `dwuyur` whatever was said. With **-m**, `dwuyem` is what the saying did, apart from what it said.
-
-If the next sentence after an event opened with a [consequence linker](sentence-linkers.md#sentence-linkers) (`xahom` *therefore*, `xahol` *it follows that*), an **`x`** pointer is that sentence's event:
-
-> `zazozon vabuvul. xahom zalazun veyamul. zahelan dwuxer vayebel.`
->
-> z-Azozon | v-punch . x-therefore | z-Alazun | v-scream . z-Ahelan | d-←episode-outcome.same | v-see
->
-> "Azozon punches. Therefore Alazun screams. Ahelan sees what came of it."
-
-**Compare with:** a landmark is a thing (*the house*, *the knife*), reached by resuming its noun or with a hook pointer (`aer` *with it*). An **`h`** part is a quality of the event (*the haste*): *how* is `dwuher`. **`g`** is the state the event leaves its participant in; **`x`** is what happens next because of it.
+English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of a viewpoint (*Azozon’s left*, *the car’s left*). Ageben writes a facing person after **`th`** when the viewpoint reading is meant, and writes gravity *up* / *down* with no facing person.
 
 ### Viewpoint laterals (`DIR` × anchor) {#viewpoint-laterals}
 <a id="spatial-laterals"></a>
@@ -321,9 +195,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *boat* | `onaval` | 🚤 |
 | *island* | `alahel` | 🏝️ |
-| *go* | `vavobol` | 👣 from *footprints* |
-| *steal* | `varozum` | 🦝 from *raccoon* |
 | *west* | `ewuhol` | ⬅️: west on the map, left on a face |
+| *up* | `abuhol` | ⏫: away from the pull |
 
 **Review:**
 
@@ -333,48 +206,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *down* | `oduhol` |
-| *construct* | `voguyol` |
 | *swim* | `vazuvol` |
 | *walk* | `vowurol` |
 | *run* | `veruvol` |
 | *sit* | `vehohel` |
-| *see* | `vayebel` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
-**1.** *Alazun is a thief.* (stealing is what Alazun regularly does)
-
-::: details Show answer
-`zalazun gwozarozum.`
-
-z-Alazun | g-role-agent-theft
-:::
-
-**2.** *Ahelan walks west. Azozon sees the way it was done.*
-
-::: details Show answer
-`zahelan vowurol hewuhol. zazozon dwuher vayebel.`
-
-z-Ahelan | v-walk | h-west . z-Azozon | d-←episode-manner.same | v-see
-:::
-
-**3.** *Alazun goes toward the island. Azozon sees the island.*
-
-::: details Show answer
-`zalazun vavobol oel balahel. zazozon dalaher vayebel.`
-
-z-Alazun | v-go | [toward | b-island] . z-Azozon | d-←island | v-see
-:::
-
-**4.** *Azozon goes from the island. Alazun swims from there.*
-
-::: details Show answer
-`zazozon vavobol ul balahel. zalazun vazuvol ur.`
-
-z-Azozon | v-go | [from | b-island] . z-Alazun | v-swim | from.there
-:::
-
-**5.** *Ahelan, walk left.* (Azozon's left)
+**1.** *Ahelan, walk left.* (Azozon's left)
 
 ::: details Show answer
 `yol vowurol zahelan hewuhothazozon.`
@@ -382,22 +221,38 @@ z-Azozon | v-go | [from | b-island] . z-Alazun | v-swim | from.there
 y-command | v-walk | z-Ahelan | h-west-th-Azozon
 :::
 
-**6.** *Azozon goes as a thief.*
+**2.** *Azozon sits above the boat.*
 
 ::: details Show answer
-`zazozon vavobol hwozarozum.`
+`zazozon vehohel gabuhol blonaval.`
 
-z-Azozon | v-go | h-role-agent-theft
+z-Azozon | v-sit | [g-up | bl-boat]
+:::
+
+**3.** *Alazun sits west of the island.*
+
+::: details Show answer
+`zalazun vehohel gewuhol blalahel.`
+
+z-Alazun | v-sit | [g-west | bl-island]
+:::
+
+**4.** *Ahelan runs. Azozon sits on Ahelan's left.*
+
+::: details Show answer
+`zahelan veruvol. zazozon vehohel hewuhothahelar.`
+
+z-Ahelan | v-run . z-Azozon | v-sit | h-west-th-←Ahelan
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `yol vavobol zalazun hewuhol.`
+**1.** `yol vowurol zalazun hewuhol.`
 
 ::: details Show answer
-y-command | v-go | z-Alazun | h-west
+y-command | v-walk | z-Alazun | h-west
 
-*Alazun, go west.*
+*Alazun, walk west.*
 :::
 
 **2.** `zazozon vazuvol hoduhol blonaval.`
@@ -408,36 +263,20 @@ z-Azozon | v-swim | [h-down | bl-boat]
 *Azozon swims under the boat.*
 :::
 
-**3.** `zahelan donaval voguyol. zalazun dwuder vayebel.`
+**3.** `zazozon vehohel hewuhothalazur.`
 
 ::: details Show answer
-z-Ahelan | d-boat | v-construct . z-Alazun | d-←episode-patient.same | v-see
+z-Azozon | v-sit | h-west-th-←Alazun
 
-*Ahelan builds a boat. Alazun sees it.*
+*Azozon sits on Alazun's left.*
 :::
 
-**4.** `zahelan dwuharozum vayebel.`
+**4.** `zalazun vazuvol hoduhol blalahel.`
 
 ::: details Show answer
-z-Ahelan | d-episode-manner-theft | v-see
+z-Alazun | v-swim | [h-down | bl-island]
 
-*Ahelan sees a way of stealing.*
-:::
-
-**5.** `zazozon vavobol oel balahel. zalazun vazuvol er.`
-
-::: details Show answer
-z-Azozon | v-go | [toward | b-island] . z-Alazun | v-swim | there
-
-*Azozon goes toward the island. Alazun swims there.*
-:::
-
-**6.** `zahelan veruvol. zazozon vehohel hewuhothahelar.`
-
-::: details Show answer
-z-Ahelan | v-run . z-Azozon | v-sit | h-west-th-←Ahelan
-
-*Ahelan runs. Azozon sits on Ahelan's left.*
+*Alazun swims under the island.*
 :::
 
 #### Pick one {#intermediate-pick-one}
@@ -452,24 +291,14 @@ z-Azozon | v-sit | [h-west-th-landmark | bl-boat]
 **`tho`** turns the arrow to the boat's own facing; bare `hewuhol` is *west of the boat*.
 :::
 
-**2.** *Ahelan sees a way of walking.* `zahelan dwuhowurol vayebel.` or `zahelan dwuzowurol vayebel.`
-
-::: details Show answer
-`zahelan dwuhowurol vayebel.`
-
-z-Ahelan | d-episode-manner-walk | v-see
-
-**`h`** names how walking goes; **`z`** would be someone who walks.
-:::
-
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Alazun goes left.* (Alazun's own left) <!-- lint: error -->`zalazun vavobol hewuhol.`
+**1.** *Alazun walks left.* (Alazun's own left) <!-- lint: error -->`zalazun vowurol hewuhol.`
 
 ::: details Show answer
-`zalazun vavobol hewuhothalazur.`
+`zalazun vowurol hewuhothalazur.`
 
-z-Alazun | v-go | h-west-th-←Alazun
+z-Alazun | v-walk | h-west-th-←Alazun
 
 A bare arrow word is the compass; for someone's left, add **`th`** and whose facing counts.
 :::

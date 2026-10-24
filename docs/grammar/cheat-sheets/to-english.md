@@ -212,8 +212,8 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `thebar` | reported evidential with weak evidence (rumor) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thebem` | ONLY-IF clause pole (necessary condition) | [Because, if, although (poles)](/dependents#poles) | B |
 | `thehom` | IFF clause pole (biconditional) | [Because, if, although (poles)](/dependents#poles) | B |
-| `themel` | mirative mood overturning a firm expectation | [Mirative (themem)](/notional-standing#mirative) | I |
-| `themem` | mirative mood (newly found out and not expected) | [Mirative (themem)](/notional-standing#mirative) | I |
+| `themel` | mirative mood overturning a firm expectation | [Mirative (themem)](/mirative#mirative) | I |
+| `themem` | mirative mood (newly found out and not expected) | [Mirative (themem)](/mirative#mirative) | I |
 <!-- /generated -->
 
 <PageBreak />
@@ -223,7 +223,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 <!-- generated: overlays pos=th skip=22 take=22 -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `themer` | mirative mood against a loose expectation | [Mirative (themem)](/notional-standing#mirative) | I |
+| `themer` | mirative mood against a loose expectation | [Mirative (themem)](/mirative#mirative) | I |
 | `thenam` | AS-OF stance pole (asserted whose-now / dated ledger) | [Stance as-of](/as-of#stance-as-of) | A |
 | `thenar` | AS-OF stance pole (asserted whose-now / dated ledger) resume | [Stance as-of](/as-of#stance-as-of) | A |
 | `thevul` | memory evidential with strong evidence (vivid memory) | [Evidence strength](/evidentiality#evidence-strength) | I |
@@ -233,9 +233,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `theyol` | clues evidential with strong evidence (strong clues) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `theyom` | clues evidential (reasoned from clues about this case) | [Evidentiality](/evidentiality#evidentiality) | I |
 | `theyor` | clues evidential with weak evidence (a weak clue) | [Evidence strength](/evidentiality#evidence-strength) | I |
-| `theyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Hold endings (NOTIONAL)](/notional-standing#hold-endings-notional) | I |
-| `theyum` | notional mood default hold (imagining a scene without a further purpose) | [Notional (as-if framing)](/notional-standing#notional-as-if-framing) | I |
-| `theyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Hold endings (NOTIONAL)](/notional-standing#hold-endings-notional) | I |
+| `theyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Hold endings (NOTIONAL)](/notional#hold-endings-notional) | I |
+| `theyum` | notional mood default hold (imagining a scene without a further purpose) | [Notional (as-if framing)](/notional#notional-as-if-framing) | I |
+| `theyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Hold endings (NOTIONAL)](/notional#hold-endings-notional) | I |
 | `thogel` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](/ability#decision-revisability) | I |
 | `thogem` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](/ability#decision-revisability) | I |
 | `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/ability#decision-revisability) | I |

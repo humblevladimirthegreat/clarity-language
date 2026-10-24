@@ -36,7 +36,7 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}
 
-**Needs:** [Evidence strength](/evidentiality#evidence-strength) · [Deduction](/evidentiality#deduction) · [MAY](/knowing#may) · [Hold endings (NOTIONAL)](/notional-standing#hold-endings-notional) · [Hopefully and other attitudes](/feelings-permission#speaker-attitude) · [Unmet](/sakes#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](/spans#asides) · [CAUSE](/iff-fault#cause) · [Every bar](/stance-bars#stance-bars)
+**Needs:** [Evidence strength](/evidentiality#evidence-strength) · [Deduction](/evidentiality#deduction) · [MAY](/knowing#may) · [Hold endings (NOTIONAL)](/notional#hold-endings-notional) · [Hopefully and other attitudes](/feelings-permission#speaker-attitude) · [Unmet](/sakes#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](/spans#asides) · [CAUSE](/iff-fault#cause) · [Every bar](/stance-bars#stance-bars)
 
 English adverbs like *obviously*, *apparently* and *presumably* say **how you know** a claim. Ageben has no word for each one. It puts a channel on the clause as a `/th/` word, and the ending grades the evidence: **-l** solid, **-m** ordinary, **-r** thin. *Guess* and *assume* are not channels: a guess is a *could be* (MAY), and an assumption is toying with a premise (NOTIONAL). *Unfortunately* says how **you** feel about the claim, so it is an attitude word.
 
@@ -242,7 +242,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 
 ### Condition, factor, requirement, motivation, satisfaction, truth {#reason-nouns}
 
-**Needs:** [If](/causation#if) · [Only because](/iff-fault#only-because) · [Fault](/fault#fault) · [Requirement](/feelings-permission#requirement) · [Motive](/prescription#sake-preference) · [Met](/sakes#time-horizon-endings-on-met) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Intention](/intention#plan-predict) · [Speech manner](/speech-acts#speech-manner) · [How you know](/evidentiality#evidentiality) · [Enough and too](/prescription#sake-bars)
+**Needs:** [If](/causation#if) · [Only because](/iff-fault#only-because) · [Fault](/fault#fault) · [Requirement](/permission-consent#requirement) · [Motive](/prescription#sake-preference) · [Met](/sakes#time-horizon-endings-on-met) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Intention](/intention#plan-predict) · [Speech manner](/speech-acts#speech-manner) · [How you know](/evidentiality#evidentiality) · [Enough and too](/prescription#sake-bars)
 
 English turns reasons and feelings into nouns (*condition*, *motivation*, *satisfaction*, *truth*). Ageben has no noun for most of them. It keeps the stance word on the clause, so the noun becomes a short claim about how you stand: a condition is the pole word, a motive is a sake, a requirement is a demand, a truth is how you vouch for it.
 
@@ -340,11 +340,11 @@ English *If he'd left, the door would still be locked* is not this pole. Write b
 >
 > "If it rains, the 22 July tab still stands."
 
-**Compare with:** [NOTIONAL](/notional-standing#notional) is play (*as if*), not a bookmark now.
+**Compare with:** [NOTIONAL](/notional#notional) is play (*as if*), not a bookmark now.
 
 ### Remote and unreal conditions {#remote-unreal}
 
-**Needs:** [If](/causation#if) · [Dependent clauses](/dependents#dependent-clauses) · [stance numbers](/number-markers#number-as-stance-by-marker) · [NOTIONAL](/notional-standing#notional)
+**Needs:** [If](/causation#if) · [Dependent clauses](/dependents#dependent-clauses) · [stance numbers](/number-markers#number-as-stance-by-marker) · [NOTIONAL](/notional#notional)
 
 English *If Alazun swam, Azozon would walk* (past-tense *if*) says the condition is a long shot. Keep the open pole **`thohem blarl`** and put *unlikely* **`thrul`** inside the dependent clause.
 
@@ -386,7 +386,7 @@ Use **`thahum blarl`** only when Q is also asserted as a world-foundation, what 
 
 ### Arguments: premises, validity, contradiction {#arguments}
 
-**Needs:** [Deduction](/evidentiality#deduction) · [Evidence clause](/evidentiality#evidence-clause) · [If](/causation#if) · [Because, iff, and only because](/iff-fault#only-because) · [Clause joins](/joins#clause-joins) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Hold endings (NOTIONAL)](/notional-standing#hold-endings-notional)
+**Needs:** [Deduction](/evidentiality#deduction) · [Evidence clause](/evidentiality#evidence-clause) · [If](/causation#if) · [Because, iff, and only because](/iff-fault#only-because) · [Clause joins](/joins#clause-joins) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Hold endings (NOTIONAL)](/notional#hold-endings-notional)
 
 An argument has three parts, and each has its own slot. The **link** between premises and conclusion is a pole (*if*, *if and only if*). **How you know** the link is the channel: DEDUCED (`thanam`) when the conclusion must hold. **Whether you grant the premises** depends on what sits before **`blarl`**: the channel alone asserts them, and a pole between the channel and **`blarl`** does not.
 
@@ -586,7 +586,7 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrec
 
 ### Deserve, earn, entitled {#deserve}
 
-**Needs:** [Prescription](/ought-for-a-sake#sake-force) · [Requirement](/feelings-permission#requirement) · [Permission](/feelings-permission#permission) · [Exchange](/relations#exchange) · [Adverbs `/h/`](/clause#adverbs-h)
+**Needs:** [Prescription](/ought-for-a-sake#sake-force) · [Requirement](/permission-consent#requirement) · [Permission](/permission-consent#permission) · [Exchange](/relations#exchange) · [Adverbs `/h/`](/clause#adverbs-h)
 
 English *deserve* says something is owed without saying why. Name the ground. It is owed because giving it would be **fair**, because a **rule** gives a right to it, or because it was **earned** in exchange for effort.
 
@@ -683,7 +683,7 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 ### Residue against a snapshot
 <a id="as-of-standing"></a>
 
-**Needs:** [RESIDUE and FORMER](/notional-standing#residue) · [evidentiality](/evidentiality#evidentiality) · [*as-of*](/as-of#as-of) · [NOTIONAL](/notional-standing#notional)
+**Needs:** [RESIDUE and FORMER](/notional-standing#residue) · [evidentiality](/evidentiality#evidentiality) · [*as-of*](/as-of#as-of) · [NOTIONAL](/notional#notional)
 
 [RESIDUE](/notional-standing#residue) and [FORMER](/notional-standing#former-climate) without a hosted pair score against **today’s** books. To score them against a dated now, add [*as-of*](/as-of#as-of). LIVE plus *as-of* puts the camera in that snapshot. MEMORY plus *as-of* is memory of a scene whose internal now is the snapshot. Write **`thevum`** again on the next memory clause; resume the books with **`henar`**. [MAY](/knowing#may) still evaluates from speech-now.
 
@@ -711,7 +711,7 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 >
 > "As of 22 July, Azozon's habit of always talking was already in the past."
 
-[NOTIONAL](/notional-standing#notional) may stack with *as-of* (*as if, from Friday’s books*). Serious English *if he had* stays bookmark `hunom`, not play.
+[NOTIONAL](/notional#notional) may stack with *as-of* (*as if, from Friday’s books*). Serious English *if he had* stays bookmark `hunom`, not play.
 
 > `zalazun theyum henam bl_#22,7 vudurul.`
 >
@@ -748,7 +748,7 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 ### When the stimulus happens {#emotion-stimulus-time}
 
-**Needs:** [Emotion compose](/feelings-permission#emotion-compose) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [evidence strength](/evidentiality#evidence-strength) · [RESIDUE](/notional-standing#residue) · [NOTIONAL](/notional-standing#notional)
+**Needs:** [Emotion compose](/feelings-permission#emotion-compose) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [evidence strength](/evidentiality#evidence-strength) · [RESIDUE](/notional-standing#residue) · [NOTIONAL](/notional#notional)
 
 
 A feeling word is how you feel **now**. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`goyom`**, as for any [forecast](/evidentiality#forecast) or [dated claim](/universality#dated-channel): the offset dates the stimulus, and the channel says how you know it.
@@ -779,7 +779,7 @@ Other shapes use forms you already have:
 | over | channel + `blrul` | *regretting*, *relieved*, *grieving* |
 | over, still counting | [RESIDUE](/notional-standing#residue) `haram` | *still stung, though it's done* |
 | recurring | [always](/restrictors) `hual` | *dreading every dialogue* |
-| did not happen | [NOTIONAL](/notional-standing#notional) | *relieved about what didn't happen* |
+| did not happen | [NOTIONAL](/notional#notional) | *relieved about what didn't happen* |
 
 A [feeling with no object](/feelings-permission#feeling-no-object) can take a channel and offset too. Then the stimulus is real but unnamed: you know when it is, not what it is.
 
@@ -841,9 +841,9 @@ Put an **act** after the pole (`barl zalazun vezuyol`), not the person. A feelin
 
 ### Curious, confused, bored, awed, surprised {#understanding-feelings}
 
-**Needs:** [Sake inventory](/sakes#sake-inventory) · [Emotion compose](/feelings-permission#emotion-compose) · [Feeling with no object](/feelings-permission#feeling-no-object) · [Mirative](/notional-standing#mirative)
+**Needs:** [Sake inventory](/sakes#sake-inventory) · [Emotion compose](/feelings-permission#emotion-compose) · [Feeling with no object](/feelings-permission#feeling-no-object) · [Mirative](/mirative#mirative)
 
-Most of these feelings are about the **understanding** sake: whether something makes sense. Surprise is different. It says the news ran against what you expected, so it is the [mirative](/notional-standing#mirative), and a sake word says how the news lands.
+Most of these feelings are about the **understanding** sake: whether something makes sense. Surprise is different. It says the news ran against what you expected, so it is the [mirative](/mirative#mirative), and a sake word says how the news lands.
 
 | English | Ageben | Reading |
 |---------|--------|---------|
