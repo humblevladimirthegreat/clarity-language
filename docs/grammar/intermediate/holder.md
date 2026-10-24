@@ -4,9 +4,6 @@ band: intermediate
 
 # Whose view {#whose-view}
 
-::: tip Reminder:
-Intermediate sections assume you have read the beginner sections of every page.
-:::
 
 ### Whose view (holder) {#holder}
 <a id="holder-seam"></a>

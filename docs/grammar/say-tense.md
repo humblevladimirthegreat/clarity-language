@@ -6,7 +6,7 @@ Recipes for English *walked* / *has walked* / *will walk* / *used to walk*, and 
 
 ### One English tense, several jobs {#tense-jobs}
 
-**Needs:** [Evidentiality](/evidentiality#evidentiality) · [Forecasts](/evidentiality#forecast) · [Dated channel](/universality#dated-channel) · [RESIDUE and FORMER](/notional-standing#residue) · [Already, still, not yet](/already-still-yet#phasal) · [*as-of*](/as-of#as-of)
+**Needs:** [How you know](/evidentiality#evidentiality) · [Forecasts](/evidentiality#forecast) · [Dated channel](/universality#dated-channel) · [RESIDUE and FORMER](/notional-standing#residue) · [Already, still, not yet](/already-still-yet#phasal) · [*as-of*](/as-of#as-of)
 
 An English tense bundles up to three questions: **when** the event sits, **how you know** it, and whether it **still counts** now. Ageben asks them separately. Pick the row for the English form, then the job you mean.
 

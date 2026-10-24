@@ -2,13 +2,11 @@
 band: intermediate
 ---
 
-# Ending grids {#ending-grids-sitting}
-
-### Ending grids
+# Closed and open hooks {#closed-and-open-hooks}
 
 Beginner already used closed **-l** and open **-m** for how complete B is, or how this sentence attaches to prior talk.
 
-#### In-clause
+### In-clause
 
 <!-- cheat-sheet: joins-hooks -->
 | | **-l** | **-m** |
@@ -18,7 +16,7 @@ Beginner already used closed **-l** and open **-m** for how complete B is, or ho
 | **e** (*instead*) | `el`: instead (B in place of A) | `em`: B instead of A, B being one of several possible replacements |
 | **u** (*except*) | `ul`: except B | `um`: except B, and maybe more |
 
-#### Discourse
+### Discourse
 
 At the front of a sentence, **-m** says this sentence is one of several you could say there: one more point among others, one way to reword, one possible replacement, one exception among others.
 

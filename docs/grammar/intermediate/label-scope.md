@@ -2,11 +2,8 @@
 band: intermediate
 ---
 
-# Label scope {#label-scope-sitting}
+# How a kind holds {#how-a-kind-holds}
 
-::: tip Reminder:
-Intermediate sections assume you have read the beginner sections of every page.
-:::
 ### Classification packaging {#classification-packaging}
 
 You already put a kind on `/ɡ/` after the name (*Azozon is a dog*). The extra choice here is how firmly the kind holds: hedge it, say it holds at every time, or deny it. The kind word stays on `/ɡ/`. Add a hedge on `/w/` before it (*sort of*), **`hual`** after the pair (*always*), or **`gul`** after it (*not*).

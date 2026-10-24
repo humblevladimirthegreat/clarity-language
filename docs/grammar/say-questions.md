@@ -80,7 +80,7 @@ English *well…* warns that the answer is not the plain *yes* the question hope
 
 ### *It sounds like…*, *I hear that you…* {#reflecting}
 
-**Needs:** [Whose view](/holder#holder) · [Evidentiality](/evidentiality#evidentiality) · [Feeling with no object](/feelings-permission#feeling-no-object) · [Emotion compose](/feelings-permission#emotion-compose)
+**Needs:** [Whose view](/holder#holder) · [How you know](/evidentiality#evidentiality) · [Feeling with no object](/feelings-permission#feeling-no-object) · [Emotion compose](/feelings-permission#emotion-compose)
 
 English *it sounds like you're anxious* and *I hear that you're upset* give the speaker's feeling back to them. You cannot state someone else's feeling outright, so name the listener as the holder on CLUES (**`theyom`**): you worked it out from what they said.
 
@@ -102,7 +102,7 @@ To say the feeling **makes sense**, put your own stance in the main sentence and
 
 ### *Admittedly*, *granted* before a *but* {#admittedly}
 
-**Needs:** [Polar stance](/questions#polar-stance) · [Sentence linkers](/sentence-linkers#sentence-linkers)
+**Needs:** [Polar stance](/questions#polar-stance) · [Linking sentences](/sentence-linkers#sentence-linkers)
 
 English *admittedly*, *granted* and *that's true, but* concede a point before pushing back. Open with **`yaol`** (*true*): before a body it concedes that body, and alone it concedes what was just said. Then push back with **`xugohum`** (*but*).
 

@@ -2,11 +2,8 @@
 band: intermediate
 ---
 
-# Evidentiality {#evidentiality-sitting}
+# How you know {#how-you-know}
 
-::: tip Reminder:
-Intermediate sections assume you have read the beginner sections of every page.
-:::
 ### Evidentiality {#evidentiality}
 <a id="evidential"></a>
 <a id="content-readings"></a>

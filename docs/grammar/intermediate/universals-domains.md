@@ -2,13 +2,9 @@
 band: intermediate
 ---
 
-# Universals and domains {#universals-domains-and-generics}
+# Every and none {#every-and-none}
 
-::: tip Reminder:
-Intermediate sections assume you have read the beginner sections of every page.
-:::
-
-### Universals, domains, and generics {#universals-domains-generics}
+### Every kind {#universals-domains-generics}
 <a id="generics"></a>
 <a id="every-k"></a>
 
@@ -19,7 +15,7 @@ When English would say *every cat* rather than *everything but the cat*, write *
 |--------|-------|---------|
 | standalone `zual` | empty invert-add | *everything* / *everyone* |
 | `zual` + SHARED `/ɡ/` | closed every-kind | *every K* (`zual gogozel` = *every cat*) |
-| `zuam` + SHARED `/ɡ/` | open every-kind | *every K, as far as I know*; English often says *K in general* |
+| `zuam` + SHARED `/ɡ/` | open every-kind | *every K, as far as I know*; English often says *K in general* (`zuam gogozel` = *cats in general*) |
 | `zuan` + SHARED `/ɡ/` | the kind itself | *the K* as a species |
 | single-item `zual X` (no SHARED) | leftover only | *everything but X* |
 
@@ -57,7 +53,7 @@ The same shape with no verb says there is **none** of that kind (*there is no �
 >
 > "There is no dog."
 
-#### Not every (`zual` … `zul`) {#not-every}
+### Not every (`zual` … `zul`) {#not-every}
 
 To deny *every cat* as a whole (*not every cat*, *not all cats*), close the **`zual`** fence with **`zul`**. The `ua` fence is the one item before the **`u`** join, so the join denies that item, as **`zul`** denies any single item. The claim is that the cats do not all sleep: some cat may still sleep.
 
@@ -126,7 +122,7 @@ Use closed `zual` plus kind when the claim allows no exceptions, and open `zuam`
 
 Plural **-x** ([plurality](/plurality)) is different: it names an anchor plus nearby associates, not *every K*.
 
-#### The kind itself (`zuan`) {#kind-reference}
+### The kind itself (`zuan`) {#kind-reference}
 
 English *the dodo is extinct* and *someone invented the megaphone* are not about any one dodo or megaphone, or about every one. They are about the **kind**: the one thing that lasts while its members come and go. Write **`zuan`** and put the kind as a shared adjective after it (`zuan gedozel`). The **-n** names the kind the way it names a person: one individual, not a set of members.
 
@@ -163,7 +159,7 @@ To choose, ask whether one member could have the property. If none could, the cl
 
 A [cause or condition](/causation) on a `zuan` clause is about the kind, not each member: why the kind is the way it is.
 
-#### People in general (`eyen`) {#generic-neighbors}
+### People in general (`eyen`) {#generic-neighbors}
 
 English *one*, generic *you*, and *people* make a claim about people as a rule. Ageben has a pronoun for this as well as the every-kind joins. The [generic pronoun](/pronouns#generic-pronoun) `eyen` works like a one-word version of the open every-kind `zuam geyel`: a default that allows exceptions, not a claim about everyone.
 
@@ -178,7 +174,7 @@ English *one*, generic *you*, and *people* make a claim about people as a rule. 
 
 For *everyone, no exceptions*, use `zual geyel`. As a topic, `xeyen` (*now, about people in general*) makes the [topic pronoun](topic.md#topic-pronoun) mean *one*.
 
-#### Every and none, by set {#kind-domains}
+### Every and none, by set {#kind-domains}
 
 *Everyone hates me* and *nobody ever listens* hide how far they reach. To name the set a claim covers, put a SHARED word after the join that bounds it. *Everyone we know* is the undergoer role compound of *know* with [pair scope](/label-seams#scope-relative): `gwedanam blayan` is *known to the two of us*.
 

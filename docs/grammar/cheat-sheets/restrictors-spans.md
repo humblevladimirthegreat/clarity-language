@@ -53,10 +53,10 @@ The vowel picks the reading and the ending says how open the list is: **-l** clo
 <!-- cheat-sheet: restrictors-spans -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`hol` / `hom`**](/more-occasions#more-occasions) | priority | *preferably when A ≻ when B* | I |
-| [**`haol` / `haom`**](/more-occasions#more-occasions) | in order | *first when A, then when B* | I |
-| [**`hoel` / `hoem`**](/more-occasions#more-occasions) | equal frequency | *equally when A and when B* | I |
-| [**`huol` / `huom`**](/more-occasions#more-occasions) | last-first | *as a last resort when A* | I |
+| [**`hol` / `hom`**](/more-occasions#ranked-with-listed-occasions) | priority | *preferably when A ≻ when B* | I |
+| [**`haol` / `haom`**](/more-occasions#ranked-with-listed-occasions) | in order | *first when A, then when B* | I |
+| [**`hoel` / `hoem`**](/more-occasions#ranked-with-listed-occasions) | equal frequency | *equally when A and when B* | I |
+| [**`huol` / `huom`**](/more-occasions#ranked-with-listed-occasions) | last-first | *as a last resort when A* | I |
 
 With several occasions before `huol`, the last listed is the first choice.
 
@@ -72,16 +72,16 @@ With several occasions before `huol`, the last listed is the first choice.
 | [**`har`**](/more-occasions#more-occasions) | some member of the listed times | *sometimes among these* | *sometimes* | B |
 | [**`her`**](/more-occasions#more-occasions) | some member of a one-choice menu | *anytime among these* | *anytime* | B |
 | [**`hur`**](/more-occasions#more-occasions) | a leftover occasion | *some time other than these* | *some other time* | B |
-| [**`hor`**](/more-occasions#more-occasions) | the first-ranked occasion | *at whichever ranks first* | *at the preferred time* | I |
+| [**`hor`**](/more-occasions#unspecified-member-r) | the first-ranked occasion | *at whichever ranks first* | *at the preferred time* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Either, not both](/more-occasions#more-occasions) | `zazozon vowurol herulal hanurul hel.` | *Azozon walks either when it rains or at night.* (not both) | I |
 | [And/or](/more-occasions#more-occasions) | `zalazun vezuvel herulal hozulal hael.` | *Alazun sleeps when it rains and/or when it snows.* | I |
-| [Preferably](/more-occasions#more-occasions) | `zazozon vowurol hebeham hanurul hol.` | *preferably on weekends, or else at night* | I |
-| [Last resort](/more-occasions#more-occasions) | `zazozon vowurol herulal huol.` | *When it rains, Azozon walks only as a last resort.* | I |
-| [When's best?](/more-occasions#more-occasions) | `yel hor zayan vowurol.` | *When's best for us to walk?* | I |
-| [On an adjective, one of two](/more-occasions#more-occasions) | `zazozon werulal wanurul wel guzemel.` | *sleepy either when it rains or at night* (not both) | I |
+| [Preferably](/more-occasions#ranked-with-listed-occasions) | `zazozon vowurol hebeham hanurul hol.` | *preferably on weekends, or else at night* | I |
+| [Last resort](/more-occasions#ranked-with-listed-occasions) | `zazozon vowurol herulal huol.` | *When it rains, Azozon walks only as a last resort.* | I |
+| [When's best?](/more-occasions#unspecified-member-r) | `yel hor zayan vowurol.` | *When's best for us to walk?* | I |
+| [On an adjective, one of two](/more-occasions#unspecified-member-r) | `zazozon werulal wanurul wel guzemel.` | *sleepy either when it rains or at night* (not both) | I |
 | [A whole clause as the occasion](/more-occasions#occasions-vs-a-dependent-when): `blarl` | `zahelan vozuyel thohem blarl zazozon vowurol.` | *Ahelan sings if Azozon walks.* | I |
 
 Use a restrictor when each occasion is a word; use `blarl` when the occasion is a full clause. To ask *when?*, see [When?](/fill-ask-jobs#when).

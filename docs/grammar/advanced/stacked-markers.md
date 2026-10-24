@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# Stacked markers {#end-relative-and-stacked-markers}
+# From the end, and stacked marks {#from-the-end-and-stacked-marks}
 
 ### From the end: end-relative ordinal marker **`#-`** / **`uo`** {#from-the-end-end-relative-ordinal-marker-uo}
 <a id="from-the-end"></a>

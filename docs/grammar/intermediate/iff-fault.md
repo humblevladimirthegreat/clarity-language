@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Iff and CAUSE {#iff-fault-and-cause}
+# Because, iff, and make {#because-iff-and-make}
 
 ### A following sentence
 <a id="dependent"></a>

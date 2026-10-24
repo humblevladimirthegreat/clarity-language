@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# Stance bars {#stance-bars-sitting}
+# Every bar {#every-bar}
 
 ### Every bar {#stance-bars}
 <a id="worse-than"></a>

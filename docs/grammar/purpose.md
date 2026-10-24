@@ -76,7 +76,7 @@ English *has done* and *used to* mix two questions: **when** something happened,
 
 [RESIDUE](/notional-standing#residue) says the result of a past event still counts now (a debt still unpaid, a door still shut). [FORMER](/notional-standing#former-climate) says a pattern was usual but you are **not** claiming it as how things are now (cue: usual weather vs today’s report). Neither word is a past tense: each can combine with what you see now, what you remember, or a forecast.
 
-Because residue is marked, an event you mention without it counts as closed, so carrying a past event forward is a choice rather than a default, and rumination stays optional. Marking a former pattern lets *I was always this way* describe the past without claiming the present. [As-of](/as-of#as-of) names the moment that leftovers and patterns are measured from (*as of Friday*), so you can weigh an old situation by its own date instead of against today. For English *if they had … they would*, the as-of moment is a placeholder you do not claim is real, which is not the same as pretending.
+Because residue is marked, an event you mention without it counts as closed, so carrying a past event forward is a choice rather than a default, and rumination stays optional. Marking a former pattern lets *I was always this way* describe the past without claiming the present. [Whose now](/as-of#as-of) names the moment that leftovers and patterns are measured from (*as of Friday*), so you can weigh an old situation by its own date instead of against today. For English *if they had … they would*, the as-of moment is a placeholder you do not claim is real, which is not the same as pretending.
 
 #### Treating a feeling as a label {#trap-feeling}
 
@@ -149,7 +149,7 @@ A guess, a rumor, a hazy memory, or a wish gets treated as settled fact, and a f
 
 It is easy to treat a *could be* that keeps looping in your head as settled fact, and to lump memory, hearsay, gut feel, and *maybe they left* together as if they were equally good grounds.
 
-[Evidentiality](/evidentiality#evidentiality) lets a claim about the world name **how you know**: a live look, memory, a pattern, clues, a report, or a gut sense. **MEMORY** is recalling a scene from earlier, and memory can be wrong. A live look (**LIVE**) is sensing it while it is still in view. Name the channel once and it carries over your next claims, so a whole story can rest visibly on one *so they say*.
+[How you know](/evidentiality#evidentiality) lets a claim about the world name **how you know**: a live look, memory, a pattern, clues, a report, or a gut sense. **MEMORY** is recalling a scene from earlier, and memory can be wrong. A live look (**LIVE**) is sensing it while it is still in view. Name the channel once and it carries over your next claims, so a whole story can rest visibly on one *so they say*.
 
 The [ending](/evidentiality#evidence-strength) on that evidence word says how strong the evidence is (a vivid memory or a hazy one, a reliable source or a rumor), separately from how likely the claim is. Marking how you know helps you catch overconfidence and hearsay before a claim hardens into settled fact.
 
@@ -316,7 +316,7 @@ The language is currently in **beta**: grammar, lexicon, and these docs can chan
 
 ### Can a language change how you think?
 
-Some people doubt that a language can influence how its speakers think (the claim that it can is the weak form of the Sapir-Whorf hypothesis). I make no claim here about natural languages, but for Ageben specifically, I offer this argument:
+Some people doubt that a language can influence how its speakers think (the claim that it can is the weak form of the Sapir-Whorf hypothesis). I make no claim here about other languages, but for Ageben specifically, I offer this argument:
 
 1. The way a concept is framed (phrased) affects how people think about it. This is well established in [psychology](https://en.wikipedia.org/wiki/Framing_effect_(psychology)) and the [social sciences generally](https://en.wikipedia.org/wiki/Framing_(social_sciences)).
 2. Ageben’s vocabulary and grammar build particular frames into how certain concepts are expressed, as laid out on this page and in the linked grammar docs.

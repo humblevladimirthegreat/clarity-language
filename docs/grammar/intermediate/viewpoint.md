@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Viewpoint and landmark {#viewpoint-and-landmark}
+# Role scope and viewpoint {#role-scope-and-viewpoint}
 
 ### Scope across scenes (`e`, `a`, pairs) {#scope}
 <a id="scope-across-scenes"></a>

@@ -2,11 +2,8 @@
 band: intermediate
 ---
 
-# Left-bound chaining {#left-bound-adjectives-and-chaining}
+# Longer chains {#longer-chains}
 
-::: tip Reminder:
-Intermediate sections assume you have read the beginner sections of every page.
-:::
 ### Complex chaining {#complex-chaining}
 
 A relation adjective and its `bl-` word (*the same as Azozon*: **`gorel`** + `bl-`) work as one unit after a noun. A `/w/` word that grades the relation goes immediately before the `/ɡ/` word, as usual. You can keep chaining: a plain adjective after that pair describes the **extra noun**, not the first noun. (cue: 🪙 *coin*: two faces of one thing.)

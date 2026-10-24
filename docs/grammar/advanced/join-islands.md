@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# Join islands {#join-islands-and-role-grid}
+# Named lists and join limits {#named-lists-and-join-limits}
 
 ### Scope islands {#scope-islands-join}
 
@@ -34,7 +34,7 @@ When a list is a familiar set phrase (*Stop–Drop–Roll*), end its join with *
 >
 > "bread and butter" (the familiar bundle)
 
-Standalone **…an** (no items) is *null* / *void*. Under `/ɡ/` `/h/`, **-n** forms join-derived relations; see [Join across roles](/join-across-roles#join-relations).
+Standalone **…an** (no items) is *null* / *void*. Under `/ɡ/` `/h/`, **-n** forms join-derived relations; see [Stance joins](/join-across-roles#join-relations).
 
 **Compare with:** clause **`xan`** is *and then*, not a named list.
 
@@ -50,7 +50,7 @@ A join has at most two vowels. Which endings it can take depends on its role let
 | `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](/more-occasions#defined-core-full); **-n** forms are [join-relations](/join-across-roles#join-relations) |
 | `/v/` | **-l** / **-m** / **-r**, each with **-x** | **-x** is one [shared act](/collectives#verbs-v); parallel **-n** forms are [join-act verbs](/join-across-roles#join-act-verbs) |
 | `/th/` | **-l** / **-m** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | [stance joins](/join-across-roles#stance-joins) on stance words (*not because…*) |
-| `/x/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | between clauses, not after them ([clause joins](/joins#clause-joins)); forms: [Join across roles](/join-across-roles) |
+| `/x/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | between clauses, not after them ([clause joins](/joins#clause-joins)); forms: [Stance joins](/join-across-roles) |
 
 Word shape: [phonology](/phonotactics#phonotactics).
 
@@ -72,7 +72,7 @@ These limits apply to every join.
 
 **Compare with:** prefix-less **`al`** / **`am`** / … are [hooks](/hooks). Under `/h/` `/w/`, the unit is a [restrictor](/restrictors), not sibling *and*.
 
-*Because* / *if* use `/th/` plus `/b/` [**`blarl`**](/dependents#poles). An `/h/` or `/th/` word between the items of a noun, adjective, or `/b/` list does not end the list. For how far an `/h/` reaches in a verb list, see [VP and clause forms](/vp-clause-forms#vp-clause-forms). Each item of a clause join is a full clause.
+*Because* / *if* use `/th/` plus `/b/` [**`blarl`**](/dependents#poles). An `/h/` or `/th/` word between the items of a noun, adjective, or `/b/` list does not end the list. For how far an `/h/` reaches in a verb list, see [Joins on the verb](/vp-clause-forms#vp-clause-forms). Each item of a clause join is a full clause.
 
 ### Practice {#advanced-practice}
 

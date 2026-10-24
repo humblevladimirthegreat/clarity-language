@@ -64,7 +64,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 z-Ahelan | v-climb . x-it-follows | z-Ahelan | [v-swim | v-not]
 
-**Rule:** [Sentence linkers](sentence-linkers.md#sentence-linkers)
+**Rule:** [Linking sentences](sentence-linkers.md#sentence-linkers)
 :::
 
 **2.** *Ahelan is not a police officer.*
@@ -402,7 +402,7 @@ Repeating the act word insists on that act; repeating **`yol`** would insist on 
 
 The kind goes after **`zual`** as a SHARED `/ɡ/`; a noun before the join is the leftover.
 
-**Rule:** [Universals, domains, and generics](universals-domains.md#universals-domains-generics)
+**Rule:** [Every kind](universals-domains.md#universals-domains-generics)
 :::
 
 **16.** *Azozon walks, but not because of the night.* `zazozon vowurol thahum blanurul thul.` or `zazozon vowurol vul thahum blanurul.`
@@ -428,7 +428,7 @@ z-Alazun | v-fight | h-night | h-always-except
 
 With **`hul`**, Alazun fights, but not at night, and other times are left open. With **`hual`**, Alazun fights at every time except at night.
 
-**Rule:** [More occasions](more-occasions.md#more-occasions)
+**Rule:** [Set / invert / inclusive](more-occasions.md#more-occasions)
 :::
 
 **2.** `zuwen thogel varal.` / `zuwen thoger varal.`

@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Compound families {#compound-families}
+# Which compound {#which-compound}
 
 ### Left and right of `x` {#families-by-shape}
 

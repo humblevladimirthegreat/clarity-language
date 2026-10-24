@@ -115,7 +115,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | opponent (*fights against a guard*, *Azozon versus Alazun*) | hook **`uol`** + `/b/` | [Hooks](/extra-noun-hooks#extra-noun-intermediate) |
-| who is against (*everyone against me*, *someone against the policy*) | hooked join **`…uex…`**: `zuoxual bluwen`, `zuoxar blonam` | [Hooked joins](/hooked-joins#hooked-joins-hooks) |
+| who is against (*everyone against me*, *someone against the policy*) | hooked join **`…uex…`**: `zuoxual bluwen`, `zuoxar blonam` | [Hook plus a join](/hooked-joins#hooked-joins-hooks) |
 | a rule, a person's no, or a plan (*against the rules*, *against their will*, *contrary to the plan*, *against my decision*) | hook **`uom`** + the `/th/` stance it goes against | [Contrary to a stance](/prescription#contrary-to-stance) |
 | what you were told or expected (*contrary to what I was told*, *against my gut*) | hook **`uom`** + a channel | [Channels after `uom`](/notional-standing#channel-frame) |
 | a noun in the way (*against the rain*, *despite the rain*) | hook **`uom`** or **`hezem`** + `/b/` | [Hooks](/extra-noun-hooks#extra-noun-intermediate), [dependent clauses](/dependents#dependent-clauses) |
@@ -201,8 +201,8 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 | *someone, I don't know who* | **`zar`**, then `zuwen vanam vul derl zar.` | [Unspecified member](/joins#unspecified-member-r-phrase), [dependent clauses](/dependents#dependent-clauses) |
 | *you know the one* / *that person* (we both know) | **-r** with nothing earlier: `zeyer` | [Resume](/pronouns#resume-r) |
 | *everyone here* | **`zual geyel`**; near me, **`zemxual bluwen`** | [Universals](/universals-domains#universals-domains-generics), [hooked joins](/hooked-joins#hooked-joins-hooks) |
-| *everyone at the house* / *someone at the office* (who counts, not where it happens) | hooked join: **`zexual blohehal`** / **`zexar blovahal`** | [Hooked joins](/hooked-joins#hooked-joins) |
-| *anything for me?* / *something for me* | **`yel doxar bluwen.`** / **`doxar bluwen`** | [Hooked joins](/hooked-joins#hooked-joins-endings) |
+| *everyone at the house* / *someone at the office* (who counts, not where it happens) | hooked join: **`zexual blohehal`** / **`zexar blovahal`** | [Hook plus a join](/hooked-joins#hooked-joins) |
+| *anything for me?* / *something for me* | **`yel doxar bluwen.`** / **`doxar bluwen`** | [Hook plus a join](/hooked-joins#hooked-joins-endings) |
 | *everyone there* (the place just named) | **`zerxual`** | [Point back](/hooked-joins#hooked-joins-point-back) |
 | *everyone we know* / *nobody we know* | **`zual gwedanam blayan`** / **`zal gwedanam blayan`** | [Every and none, by set](/universals-domains#kind-domains) |
 | *everyone in the family* / *everyone from the town* | **`zual gobom bluvayal`** / **`zual gaham bluhuham`** | [Of relations](/of-relations#of-relations) |

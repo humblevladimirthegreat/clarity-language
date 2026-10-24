@@ -300,7 +300,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 ### How many and how big {#quantity-words}
 
-**Needs:** [Vague amounts](/vague-amounts#vague-amounts) · [Bars](/comparative-arity#bars) · [Place on a scale](/comparative-arity#place-on-a-scale) · [Measure phrases](/numbers-applied#measure-phrases) · [Rays](/initials#rays) · [Fractions](/numbers-applied#fractions)
+**Needs:** [Many and few](/vague-amounts#vague-amounts) · [Bars](/comparative-arity#bars) · [Place on a scale](/comparative-arity#place-on-a-scale) · [Measure phrases](/numbers-applied#measure-phrases) · [Rays](/initials#rays) · [Fractions](/numbers-applied#fractions)
 
 | English | Ageben |
 |---------|--------|
@@ -331,7 +331,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 ### Expensive, cheap, weak, remarkable {#bar-words}
 
-**Needs:** [Vague amounts](/vague-amounts#vague-amounts) · [Every bar](/stance-bars#stance-bars) · [Adjectives](/clause#adjectives-ɡ) · [Important](say-reasons.md#sake-words)
+**Needs:** [Many and few](/vague-amounts#vague-amounts) · [Every bar](/stance-bars#stance-bars) · [Adjectives](/clause#adjectives-ɡ) · [Important](say-reasons.md#sake-words)
 
 English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an unstated usual. Ageben always states the bar. Write the PATTERN bar **`thubom`** (*than usual*), then the rank word (**`zol`** for *more than*, **`zuol`** for *less than*), then the quality as an adjective. The quality is the root that names what is measured, in its abstract sense (**-m**): cost, strength, effort.
 
@@ -423,7 +423,7 @@ English *just*, *only*, *especially* and *also* point at one item and say how it
 
 ### Group, crowd, bunch, pair, list, range, member {#group-words}
 
-**Needs:** [Associative group](/plurality#associative) · [Vague amounts](/vague-amounts#vague-amounts) · [Unspecified member](/joins#unspecified-member-r) · [Ranges](/numbers-applied#ranges) · [Of relations](/of-relations#of-relations)
+**Needs:** [Associative group](/plurality#associative) · [Many and few](/vague-amounts#vague-amounts) · [Unspecified member](/joins#unspecified-member-r) · [Ranges](/numbers-applied#ranges) · [Of relations](/of-relations#of-relations)
 
 English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). Ageben has no noun for the set itself. It marks the kind as a **group in this situation** with **-x** after the ending (**-lx** for everyday things), and a number or a vague amount says how big. A set of people, flowers or cats is the kind plus **-x**, not a separate word.
 

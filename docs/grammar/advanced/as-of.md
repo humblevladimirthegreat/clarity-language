@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# As-of {#as-of-sitting}
+# Whose now {#whose-now}
 
 ### As-of (whose now) {#as-of}
 <a id="as-of-ledger"></a>

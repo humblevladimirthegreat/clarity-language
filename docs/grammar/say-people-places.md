@@ -1066,7 +1066,7 @@ Examples:
 
 ### Arrow roots as talk-moves
 
-**Needs:** [Arrow rose](/roles#arrow-rose) · [Sentence linkers](/sentence-linkers#sentence-linkers)
+**Needs:** [Arrow rose](/roles#arrow-rose) · [Linking sentences](/sentence-linkers#sentence-linkers)
 
 When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`th`** + facing person). Generic heading is **`uro`** (*direction*). Facing-relative ahead / back still uses **`DIR th ANCHOR`**.
 

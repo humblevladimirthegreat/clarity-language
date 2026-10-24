@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Prescription and motive {#prescription-and-motive}
+# Motive and stake {#motive-and-stake}
 
 ### Motive (`tho`): time horizon
 <a id="sake-preference"></a>

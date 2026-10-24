@@ -2,11 +2,11 @@
 band: advanced
 ---
 
-# Hooked joins {#hooked-joins-sitting}
+# Hook plus a join {#hook-plus-a-join}
 
-### Hooked joins (hook + `x` + join) {#hooked-joins}
+### Bounding who counts {#hooked-joins}
 
-English bounds *everyone*, *someone*, and *nothing* with a preposition: *everyone at the house*, *something for me*, *everyone against me*. A free hook after a join does a different job: it is an extra of the whole clause, so `zual vezuvel el bohehal.` says where the sleeping happens, not who counts ([universals and domains](/universals-domains#universals-domains-generics)). To bound the join's own set, write the role letter, then the vowels of an extra-noun hook, then **`x`**, then the join, and put the hook's landmark right after the word as a `bl-` word. The join keeps its meaning and its ending, and the hook now says which members count: the ones that stand in that relation to the landmark. So *who counts* and *where it happens* get different spellings, and one clause can say both. (cue: the hook comes first, as in a [hook prefix](hook-compounds.md#hook-prefixes))
+English bounds *everyone*, *someone*, and *nothing* with a preposition: *everyone at the house*, *something for me*, *everyone against me*. A free hook after a join does a different job: it is an extra of the whole clause, so `zual vezuvel el bohehal.` says where the sleeping happens, not who counts ([every and none](/universals-domains#universals-domains-generics)). To bound the join's own set, write the role letter, then the vowels of an extra-noun hook, then **`x`**, then the join, and put the hook's landmark right after the word as a `bl-` word. The join keeps its meaning and its ending, and the hook now says which members count: the ones that stand in that relation to the landmark. So *who counts* and *where it happens* get different spellings, and one clause can say both. (cue: the hook comes first, as in a [hook prefix](hook-compounds.md#hook-prefixes))
 
 > `zexual blohehal vezuvel.`
 >
@@ -40,7 +40,7 @@ This lets a sweeping claim show how far it reaches. *Everyone's against me* name
 
 In speech **`x`** starts the join's syllable (*zo-xu-al*). With `m` or `r`, that letter closes the hook's syllable (*zom-xu-al*, *zor-xu-al*). The [first-syllable stress](singability.md#rhythm-and-stress) keeps a hooked join apart from a join followed by a hook: `zarxar` (*someone in there*) is one word with one stressed beat, and in `zarx ar` (*some people, in there*) `ar` takes a fresh beat.
 
-#### Which hook {#hooked-joins-hooks}
+### Which hook {#hooked-joins-hooks}
 
 Every hook in the [extra-noun grid](/extra-noun-hooks#extra-noun-intermediate) works, with the reading it has there. The relation holds between each member and the landmark. **-l** (no letter before the seam) is the exact relation, and `m` before the seam is the frame, as on a free hook.
 
@@ -61,7 +61,7 @@ An [abstract landmark](/ending-grids#abstract-landmarks) reads the same way: `za
 
 **Compare with:** belonging and origin are [of-relations](/of-relations#of-relations), not places. *Everyone in the family* (its members) is `zual gobom bluvayal`, and *everyone from the town* (where they are from) is `zual gaham bluhuham`. `zaxual bluvayal` is everyone inside the family's space, and `zuxual bluhuham` is everyone who came from the town, since `u` names where a path starts.
 
-#### Endings and items {#hooked-joins-endings}
+### Endings and items {#hooked-joins-endings}
 
 The join part keeps its readings, so every [join ending](/joins#standalone-phrase) works, under any hook ending. The hook's ending sits before the seam and the join's at the end of the word, so the two never meet.
 
@@ -107,7 +107,7 @@ A hooked join sits where any join of its role letter sits. A plain `/b/` one is 
 >
 > "The dog sleeps in something on the table."
 
-#### Point back (hook **-r**) {#hooked-joins-point-back}
+### Point back (hook **-r**) {#hooked-joins-point-back}
 
 To bound a join by a place already named (*everyone there*), write `r` before the seam and no `bl-` word. The hook then points back to the landmark already in play, the way [`er`](/discourse-hooks#hook-resume) does on its own: `zerxual` is *everyone there* as `er` is *there*. The hooks that point back on their own take it here: `zarxual` *everyone in there*, `zerxual` *everyone there*, `zurxual` *everyone from there*, `zorxual` *everyone it was for*, `zaorxual` *everyone on it*, `zaerxual` *everyone using it*, `zuerxual` *everyone passing through there*.
 
@@ -119,7 +119,7 @@ To bound a join by a place already named (*everyone there*), write `r` before th
 
 The landmark may be a free hook's `/b/`, any hosted `bl-` word, or an earlier hooked join's landmark; the latest one counts. A hooked join with `r` needs a landmark already in play, and every other hooked join needs its `bl-` word.
 
-#### Bounding a time (`/h/`) {#hooked-joins-time}
+### Bounding a time (`/h/`) {#hooked-joins-time}
 
 English *never since …* and *always, until …* bound how often something happens by a stretch of time. On `/h/`, a hooked join's join is a bare [restrictor](/restrictors), spelled as after the `h` of `hal` *never*, `ham`, `hual` *always*, `huam`, `har` *sometimes*, `her`, `hur`, or `hor`, and a time landmark bounds which times it covers. The restrictor still says how often; the hook says over which stretch.
 
@@ -163,7 +163,7 @@ A loose bound is often the honest one: *you always get like this at the holidays
 >
 > "Azozon walked after the thunderstorm. You haven't listened since then."
 
-#### Bounded by a clause {#hooked-joins-clause}
+### Bounded by a clause {#hooked-joins-clause}
 
 To name the stretch with a sentence (*never, in all the time since we moved in*), put the stand-in **`blarl`** after an `/h/` hooked join, as [`ul barl`](/hooks#since) takes one for *since*. The sentence after it is the time that bounds the restrictor. It runs to the period, so the hooked join comes last in the main clause.
 

@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# Hook compounds {#hook-compounds-sitting}
+# Cite plus a hook {#cite-plus-a-hook}
 
 ### Hook compounds (cite + extra-noun hook) {#hook-compounds}
 

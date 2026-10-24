@@ -4,9 +4,6 @@ band: intermediate
 
 # Decision and try {#ability-decision-and-try}
 
-::: tip Reminder:
-Intermediate sections assume you have read the beginner sections of every page.
-:::
 ### Decision (revisability)
 <a id="decision"></a>
 <a id="decision-mood"></a>

@@ -2,11 +2,8 @@
 band: intermediate
 ---
 
-# Sentence linkers {#sentence-linkers-and-stand-ins}
+# Linking sentences {#linking-sentences}
 
-::: tip Reminder:
-Intermediate sections assume you have read the beginner sections of every page.
-:::
 
 ### Writing and speech rhythm (periods) {#orthography-and-prosody-periods}
 

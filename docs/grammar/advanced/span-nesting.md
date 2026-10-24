@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# Span nesting {#editorial-close-and-nesting}
+# Closing and nesting spans {#closing-and-nesting-spans}
 
 ### Editorial close and close-all {#close-forms-complete-editorial-close-all}
 

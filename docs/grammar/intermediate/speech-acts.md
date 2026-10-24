@@ -2,11 +2,8 @@
 band: intermediate
 ---
 
-# Speech acts {#speech-acts}
+# Doubling and stacking acts {#doubling-and-stacking-acts}
 
-::: tip Reminder:
-Intermediate sections assume you have read the beginner sections of every page.
-:::
 ### Doubling an act word {#doubled-act}
 
 Say an act word twice among the opening `/y/` words to make the act more insistent. The act stays the same; the repeat never cancels it. Use it most where a missed *don't* would be dangerous.

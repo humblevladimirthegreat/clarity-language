@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Vague amounts {#vague-amounts-sitting}
+# Many and few {#many-and-few}
 
 ### Vague amounts (*many* / *few*) {#vague-amounts}
 

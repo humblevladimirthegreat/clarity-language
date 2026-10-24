@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Of-relations {#of-relations-and-social-ties}
+# Part of, made of, from {#part-of-made-of-from}
 
 ### Exactly like (`hewel` / `gewel`) {#exactly-like}
 

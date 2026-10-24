@@ -4,9 +4,6 @@ band: intermediate
 
 # Tone marks {#tone-marks-sitting}
 
-::: tip Reminder:
-Intermediate sections assume you have read the beginner sections of every page.
-:::
 
 ### Tone marks {#tone-marks}
 

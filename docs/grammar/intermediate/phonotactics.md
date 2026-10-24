@@ -2,11 +2,8 @@
 band: intermediate
 ---
 
-# Phonotactics {#phonotactics-and-letter-names}
+# Word shape and letter names {#word-shape-and-letter-names}
 
-::: tip Reminder:
-Intermediate sections assume you have read the beginner sections of every page.
-:::
 
 ### Phonotactics (word shape)
 <a id="phonotactics"></a>

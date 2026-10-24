@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Numbers in use
+# Measures, ranges, and percent {#measures-ranges-and-percent}
 <a id="numbers-applied"></a>
 
 A number word can do more than count. This page shows how to write a code or label (*room 12*), a clock time or date, an amount of a unit (*two meters*), a range (*3 to 5*), and a percent. How the number word itself is built (markers, endings, writing) is in [numbers](/numbers); unspecified amounts, exponents, and the spoken comma are in [digitless and exponents](digitless-exponents.md).

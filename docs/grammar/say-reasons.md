@@ -6,7 +6,7 @@ Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* do
 
 ### English → Ageben {#english-cues}
 
-**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Contrary to a stance](/prescription#contrary-to-stance) · [Continue](/dependents#continue-x) · [Sentence linkers](/sentence-linkers#sentence-linkers) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse) · [Because](/iff-fault#only-because) · [Point back](/discourse-hooks#hook-resume) · [Clause sequence](/clause-sequence#clause-sequence)
+**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Contrary to a stance](/prescription#contrary-to-stance) · [Continue](/dependents#continue-x) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse) · [Because](/iff-fault#only-because) · [Point back](/discourse-hooks#hook-resume) · [Clause sequence](/clause-sequence#clause-sequence)
 
 Time and discourse dependents use the same **`blarl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
 
@@ -242,7 +242,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 
 ### Condition, factor, requirement, motivation, satisfaction, truth {#reason-nouns}
 
-**Needs:** [If](/causation#if) · [Only because](/iff-fault#only-because) · [Fault](/fault#fault) · [Requirement](/feelings-permission#requirement) · [Motive](/prescription#sake-preference) · [Met](/sakes#time-horizon-endings-on-met) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Intention](/intention#plan-predict) · [Speech manner](/speech-acts#speech-manner) · [Evidentiality](/evidentiality#evidentiality) · [Enough and too](/prescription#sake-bars)
+**Needs:** [If](/causation#if) · [Only because](/iff-fault#only-because) · [Fault](/fault#fault) · [Requirement](/feelings-permission#requirement) · [Motive](/prescription#sake-preference) · [Met](/sakes#time-horizon-endings-on-met) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Intention](/intention#plan-predict) · [Speech manner](/speech-acts#speech-manner) · [How you know](/evidentiality#evidentiality) · [Enough and too](/prescription#sake-bars)
 
 English turns reasons and feelings into nouns (*condition*, *motivation*, *satisfaction*, *truth*). Ageben has no noun for most of them. It keeps the stance word on the clause, so the noun becomes a short claim about how you stand: a condition is the pole word, a motive is a sake, a requirement is a demand, a truth is how you vouch for it.
 
@@ -386,7 +386,7 @@ Use **`thahum blarl`** only when Q is also asserted as a world-foundation, what 
 
 ### Arguments: premises, validity, contradiction {#arguments}
 
-**Needs:** [Deduction](/evidentiality#deduction) · [Evidence clause](/evidentiality#evidence-clause) · [If](/causation#if) · [Because, iff, and only because](/iff-fault#only-because) · [Clause joins](/joins#clause-joins) · [Sentence linkers](/sentence-linkers#sentence-linkers) · [Hold endings (NOTIONAL)](/notional-standing#hold-endings-notional)
+**Needs:** [Deduction](/evidentiality#deduction) · [Evidence clause](/evidentiality#evidence-clause) · [If](/causation#if) · [Because, iff, and only because](/iff-fault#only-because) · [Clause joins](/joins#clause-joins) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Hold endings (NOTIONAL)](/notional-standing#hold-endings-notional)
 
 An argument has three parts, and each has its own slot. The **link** between premises and conclusion is a pole (*if*, *if and only if*). **How you know** the link is the channel: DEDUCED (`thanam`) when the conclusion must hold. **Whether you grant the premises** depends on what sits before **`blarl`**: the channel alone asserts them, and a pole between the channel and **`blarl`** does not.
 
@@ -446,7 +446,7 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 
 ### Habit, triggered by {#habit}
 
-**Needs:** [CAUSE](/iff-fault#cause) · [Because](/iff-fault#only-because) · [If](/causation#if) · [Always](/restrictors) · [Only when](/restrictors) · [Label scope](/label-scope#label-scope) · [Used to](say-tense.md#used-to) · [PLAN](/intention#plan-predict)
+**Needs:** [CAUSE](/iff-fault#cause) · [Because](/iff-fault#only-because) · [If](/causation#if) · [Always](/restrictors) · [Only when](/restrictors) · [How a kind holds](/label-scope#classification-packaging) · [Used to](say-tense.md#used-to) · [PLAN](/intention#plan-predict)
 
 English *habit*, *I have a habit of*, and *triggered by* pack how often the act repeats, what cues it, and whether that is who you are. Name the job you mean. When a cue is how the act is produced, put **`thewom`** right before **`thahum`** (the cue is a fact) or **`thohem`** (you do not claim it holds), and the cue in that pole's `/b/`.
 
@@ -456,7 +456,7 @@ English *habit*, *I have a habit of*, and *triggered by* pack how often the act 
 | *does X if Y* (Y as the mechanism; Y not asserted) | **`thewom thohem`** + `/b/` the cue |
 | *always X* (how often; no cue) | **`hual`** / **`huam`** |
 | *only when Y* (when the claim counts, not that Y pulls the act) | occasion + **`hal`** |
-| *I'm an X type* (kind of person) | [label scope](/label-scope#label-scope) |
+| *I'm an X type* (kind of person) | [label scope](/label-seams#label-scope) |
 | *used to X* (pattern, no claim about now) | **`hual`** + FORMER **`helam`** |
 | *automatically* / *by itself* (no external cue) | **`thewom blanar`** |
 | *I plan to X when Y* (a chosen if-then) | PLAN **`thagom`** + **`thohem`** |
@@ -475,7 +475,7 @@ English *habit*, *I have a habit of*, and *triggered by* pack how often the act 
 
 **Compare with:** *always walks* (`vowurol hual`) names no cue. *Walks only when it rains* (`vowurol herulal hal`) says when the claim counts.
 
-**For *I'm an anxious type*, use:** a [scope](/label-scope#label-scope) vowel on the label, not CAUSE.
+**For *I'm an anxious type*, use:** a [scope](/label-seams#label-scope) vowel on the label, not CAUSE.
 
 ### Hoping something will happen {#hope-forecast}
 
@@ -613,7 +613,7 @@ English *deserve* says something is owed without saying why. Name the ground. It
 
 ### Clear, honest, false, general, proud {#trait-words}
 
-**Needs:** [Negation](/joins#negation-u) · [Universals and domains](/universals-domains#universals-domains-generics) · [Fault](/fault#fault) · [Emotion compose](/feelings-permission#emotion-compose) · [Number as stance](/special-values#special-number-as-stance)
+**Needs:** [Negation](/joins#negation-u) · [Every and none](/universals-domains#universals-domains-generics) · [Fault](/fault#fault) · [Emotion compose](/feelings-permission#emotion-compose) · [Number as stance](/special-values#special-number-as-stance)
 
 Many English adjectives are the plain opposite of something that has a root (*unclear*, *honest*, *false*). Ageben says the positive root and closes it with **`gul`** (*not*). Others claim how far something holds (*general*, *universal*, *absolute*). That is the universal fence: closed for no exceptions, open for *as a rule*. A few are a feeling (*proud*), which is an emotion compose, so the sake and the stimulus are named.
 

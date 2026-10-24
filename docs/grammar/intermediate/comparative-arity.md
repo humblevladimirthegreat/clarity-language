@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Comparative scales {#comparative-arity-and-scales}
+# Place on a scale {#place-on-a-scale-sitting}
 
 ### Full comparative arity
 <a id="comparative-arity"></a>

@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# More occasions {#more-occasions-sitting}
+# Exclusive and ranked times {#exclusive-and-ranked-times}
 
 ### Occasions vs a dependent *when*
 
@@ -18,7 +18,7 @@ A listed restrictor occasion can also be a longer unit: an `/h/` word with its `
 
 **Compare with:** *only when it rains* is a restrictor list (`herulal hal`). *If Azozon walks* is the stand-in pattern above.
 
-### More occasions {#more-occasions}
+### Set / invert / inclusive {#more-occasions}
 <a id="defined-core-full"></a>
 
 Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometimes* / *anytime* / *some other time* (`har` / `her` / `hur`). The rest of the same vowel map names exclusive, inclusive, *not when*, ranked, and leftover readings. `/w/` uses that **same** map on the next adjective or prefix-less hook (`wal` / `wam` / `wual` / `wuam` / `war` / `wer` / `wur`, and the rows below). The occasion words and their restrictor count as one `/h/` unit (or, on `/w/`, one run of words immediately before the adjective or hook they limit).
@@ -35,8 +35,6 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 >
 > "Alazun sleeps when it rains and/or when it snows."
 
-#### Set / invert / inclusive
-
 <!-- cheat-sheet: restrictors-spans -->
 | Ageben | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
@@ -49,7 +47,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 
 **Compare with:** **`hur`** is some leftover occasion (*some other time*). **`huel`** is leftover times in general (*anytime except when…*).
 
-#### Ranked (with listed occasions)
+### Ranked (with listed occasions) {#ranked-with-listed-occasions}
 
 Closed **`hol`** ranks the listed occasions: the first one listed is the preferred time. Plain **`hal`** means *only when* these times, with no ranking among them.
 
@@ -75,7 +73,7 @@ One occasion before **`huol`** is the last resort: the claim counts there, but o
 >
 > "When it rains, Azozon walks only as a last resort."
 
-#### Unspecified-member (`-r`)
+### Unspecified-member (`-r`) {#unspecified-member-r}
 
 Statement readings below. Asking *when*: [When?](/fill-ask-jobs#when).
 

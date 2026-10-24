@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# Lexicalized stand-ins {#lexicalized-stand-ins}
+# Stand-in words {#stand-in-words}
 
 ### Lexicalized stand-ins in other roles {#stand-in-roles}
 

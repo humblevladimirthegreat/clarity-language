@@ -77,7 +77,7 @@ z-Ahelan | [d-station | [w-MEMORY | g-quiet]] | v-see
 
 *Everyone at the station sits.*
 
-**Rule:** [Hooked joins](hooked-joins.md#hooked-joins)
+**Rule:** [Hook plus a join](hooked-joins.md#hooked-joins)
 :::
 
 **2.** `zahelan d[omobul#] varuyol.`
@@ -199,5 +199,5 @@ z-Azozon | d-station | v-recede
 
 With **`ul`** fused, Azozon leaves the station. With **`um`**, Azozon only recedes from it, moving away without leaving it behind.
 
-**Rule:** [Hook compounds](hook-compounds.md#hook-compounds)
+**Rule:** [Cite plus a hook](hook-compounds.md#hook-compounds)
 :::

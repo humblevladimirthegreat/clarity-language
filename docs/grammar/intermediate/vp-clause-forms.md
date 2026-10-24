@@ -2,11 +2,8 @@
 band: intermediate
 ---
 
-# VP and clause forms {#verb-phrase-and-clause-forms}
+# Joins on the verb {#joins-on-the-verb}
 
-::: tip Reminder:
-Intermediate sections assume you have read the beginner sections of every page.
-:::
 
 ### Verb-phrase and clause forms {#vp-clause-forms}
 <a id="vowels--endings"></a>

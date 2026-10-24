@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Polar inventory {#polar-inventory-and-rhetorical}
+# Yes, no, and not that {#yes-no-and-not-that}
 
 ### Polar stance: fuller inventory
 

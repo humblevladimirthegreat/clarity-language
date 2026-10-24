@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# Universality {#universality-and-dated-channel}
+# Mood on one adjective {#mood-on-one-adjective-sitting}
 
 ### Mood on one adjective
 <a id="mood-on-adjective"></a>
