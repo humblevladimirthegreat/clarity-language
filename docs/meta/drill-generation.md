@@ -277,7 +277,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `say-reasons.md` | Plans against a snapshot | a delayed departure board |
 | `join-across-roles.md` | Intermediate | a relay race |
 | `join-acts.md` | Intermediate | a roster desk |
-| `join-relations.md` | Intermediate | a picnic blanket |
+| `join-relations.md` | Intermediate | a team bench |
 | `vp-clause-forms.md` | Intermediate | a baton pass |
 | `numeric-derivation.md` | Advanced | a foundry |
 
@@ -447,7 +447,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 16 | `compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / minutes / one ask / passing) | Recycle [greeting](/word-endings#greeting) and [vocative](/speech-moves#vocative). Not ability (`vozuyexol`). Not values |
 | 16 | `compounds.md` | Advanced | skip | — | Root tails are a memory aid and tail-suffix words are dictionary entries: nothing to build or choose |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
-| 17 | `vp-clause-forms.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`) | Sequence `xan` is Beginner on `clause-sequence.md`. Stance joins, join-act verbs, and join-relations are Intermediate on `join-across-roles.md`. Recycle = all Beginner + earlier Intermediate (path before 17) |
+| 17 | `vp-clause-forms.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`) | Sequence `xan` is Beginner on `clause-sequence.md`. Stance joins are Intermediate on `join-across-roles.md`. Join-act verbs are Intermediate on `join-acts.md`. Join-relations are Intermediate on `join-relations.md`. Recycle = all Beginner + earlier Intermediate (path before 17) |
 | 17 | `join-across-roles.md` | Intermediate | **exists** | Stance joins | Join-act verbs are Intermediate on `join-acts.md`. Join-relations are Intermediate on `join-relations.md`. Verb-phrase and clause joins are Intermediate on `vp-clause-forms.md` |
 | 17 | `join-acts.md` | Intermediate | **exists** | Join-act verbs `van` / `ven` / … | Stance joins are Intermediate on `join-across-roles.md` |
 | 17 | `join-relations.md` | Intermediate | **exists** | Join-relations `gan` / `han` / … (unary `/b/`) | Stance joins are Intermediate on `join-across-roles.md`. Join-act verbs are Intermediate on `join-acts.md` |
@@ -535,7 +535,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Sake bars (`thudatham zoel`) | `prescription.md` Intermediate |
 | Channel, FORMER, ABIL, REQUIRE, attitude bars | `comparatives.md` Advanced |
 | `NUM x ROOT` numeric prefix (`zrawaxolamal`, `zragexezuyol`) | `numeric-derivation.md` Advanced |
-| Channels on a generalization | `knowing.md` Advanced |
+| Channels on a generalization | `usually-vs-must.md` Advanced |
 
 **`yel`** yes/no with a house-name subject is core Beginner. **`yel zar …`** fill-ask is questions Beginner (needs joins unspecified **-r**).
 

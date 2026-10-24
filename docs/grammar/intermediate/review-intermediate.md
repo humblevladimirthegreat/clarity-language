@@ -58,7 +58,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *want-unstated* | `thalom` |
 | *possibility* | `hogugem` |
 | *around* | `hevam` |
-| *french* | `avranzan` |
+| *french* | `avranzam` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 

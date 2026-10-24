@@ -138,6 +138,8 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *sleep* | `vezuvel` |
 | *see* | `vayebel` |
 | *camera* | `ugewel` |
+| *command* | `yol` |
+| *until* | `harum` |
 
 #### English → Ageben {#advanced-english-to-ageben}
 
@@ -165,6 +167,14 @@ z-Azozon | [th-MEMORY | bl---e-.about] | v-walk
 z-Azozon | [th-MEMORY | bl---e-] | d-camera | v-see
 :::
 
+**4.** *Walk until an hour from now.* (command)
+
+::: details Show answer
+`yol vowurol harum blagorum grabal.`
+
+y-command | v-walk | [h-until | [bl-hour | g-one]]
+:::
+
 #### Ageben → English {#advanced-ageben-to-english}
 
 **1.** `zalazun thubom blagorum grugel vezuvel.`
@@ -175,12 +185,12 @@ z-Alazun | [th-PATTERN | [bl-hour | g-minus-three]] | v-sleep
 *Going by the pattern, Alazun slept three hours ago.*
 :::
 
-**2.** `zazozon thevum blruwul vowurol.`
+**2.** `zazozon thevum blagorum grudol varuyol.`
 
 ::: details Show answer
-z-Azozon | [th-MEMORY | bl---e-] | v-walk
+z-Azozon | [th-MEMORY | [bl-hour | g-minus-two]] | v-write
 
-*I just saw Azozon walk.*
+*I saw Azozon write two hours ago.*
 :::
 
 **3.** `zazozon thevum blruwum dugewel vayebel.`

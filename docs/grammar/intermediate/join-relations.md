@@ -45,7 +45,7 @@ For several members, put a [phrase join](/joins) **inside** the `/b/` phrase (`g
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
-**Setting:** a picnic blanket
+**Setting:** a team bench
 
 **New words:**
 
@@ -68,12 +68,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
-**1.** *Alazun runs with Ahelan.*
+**1.** *Alazun runs with Ahelan and Azozon.*
 
 ::: details Show answer
-`zalazun han blahelan veruvol.`
+`zalazun han blahelan blazozon bal veruvol.`
 
-z-Alazun | [h-including | bl-Ahelan] | v-run
+z-Alazun | [h-including | [bl-Ahelan | bl-Azozon | b-and]] | v-run
 :::
 
 **2.** *A team open to Azozon.*

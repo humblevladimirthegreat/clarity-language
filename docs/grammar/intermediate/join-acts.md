@@ -125,14 +125,14 @@ z-Ahelan | d-table | v-prioritizes
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Alazun chooses the trophy.* (as the one choice) `zalazun dodoral ven.` or `zalazun dodoral van.`
+**1.** *Ahelan prioritizes the table.* `zahelan dedohel von.` or `zahelan dedohel van.`
 
 ::: details Show answer
-`zalazun dodoral ven.`
+`zahelan dedohel von.`
 
-z-Alazun | d-trophy | v-choose
+z-Ahelan | d-table | v-prioritizes
 
-**`ven`** locks the one pick; **`van`** only adds it to the set.
+**`von`** ranks it first; **`van`** only adds it to the set.
 :::
 
 #### What changes {#intermediate-what-changes}

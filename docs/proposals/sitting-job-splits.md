@@ -149,7 +149,7 @@ npm run peel-headings -- --parent of-relations.md --ids locative-relations --to 
 
 `singability.md`, `join-across-roles.md`, `universality.md`.
 
-Peels are on disk. Do not re-peel. Practice, settings, review items, and allowlist rows were filled so the tree would lint while Phase 2 finished; the Phase 3 session should re-read those sittings and run `npm run cheat-sheet-blocks -- --write` then `npm run build`.
+Done. Peels, Practice, settings, review items, and allowlist rows are on disk. After re-read, run `npm run cheat-sheet-blocks -- --write` then `npm run build`.
 
 - `singability.md` → `place-name-roots.md` (**Place-name roots**, Intermediate, beside Names and titles). Gates put it with names, not Advanced singing.
 - `join-across-roles.md` → `join-acts.md` (**Join-act verbs**) and `join-relations.md` (**With and without**). Parent Practice is stance-only; join-act / join-relation drills live on the new sittings.

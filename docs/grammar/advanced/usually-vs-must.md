@@ -159,12 +159,12 @@ Closed **-l** allows none; open **-m** leaves exceptions.
 
 #### What changes {#advanced-what-changes}
 
-**1.** `zazozon huam vehohel.` / `zazozon hual vehohel.`
+**1.** `zalazun huam vowurol.` / `zalazun hual vowurol.`
 
 ::: details Show answer
-z-Azozon | h-always.open | v-sit
+z-Alazun | h-always.open | v-walk
 
-z-Azozon | h-always | v-sit
+z-Alazun | h-always | v-walk
 
 **`huam`** is *as a rule*. **`hual`** claims no exceptions.
 :::
