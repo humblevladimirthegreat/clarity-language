@@ -15,7 +15,7 @@ As plain words, the same root is `zewol` *a machine* and `vewol` *to operate / e
 >
 > z-Azozon | v-walk | th-CAUSE | [th-if | bl-rain]
 >
-> "Azozon walks if it rains." (rain as the mechanism)
+> "If it rains, rain is what makes Azozon walk."
 
 > `zalazun vowuvul thewom thahum blavulul.`
 >

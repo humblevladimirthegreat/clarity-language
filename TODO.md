@@ -18,12 +18,12 @@ use [skip-cd] for amplify to not deploy.
 -consider grouping lessons into categories/units
 -should vowel pitch be very forgiving at beginning (contour only)?
 -more stacked vowels (other series)
--replace "one" special pronoun with unassigned tag, use tags in first order logic. zwan for anonymous naming "Some person whom we will call zwan"
+-replace "one" special pronoun with unassigned tag, use tags in first order logic. zw*n for anonymous naming "Some person whom we will call zwan"
 -programming language
 Align emotional locus with normal emotions 
 Emotion requires stimulus 
 Cheat sheet distinguish cue vs exact match
-Stacked u consistently mean not
+Stacked u consistently mean not?
 Emotion ending is mood vs fleeting 
 
 

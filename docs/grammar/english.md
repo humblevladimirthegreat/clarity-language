@@ -52,7 +52,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | end of a number range (*from 3 to 5*) | **`al`** between the two numbers | [Ranges](/numbers-applied#ranges) |
 | end of a range on a line (*Azozon to Ahelan in the queue*) | **`oel`** between two words in one role | [Ranges](/ordered-ranges#ranges) |
 | purpose (*walks to sit*, *in order to sit*) | **`hovam blarl`** + the sentence, naming who sits | [So that](/dependents#so-that) |
-| an instruction or aim as content (*tells Alazun to sit*, *wishes to sit*) | stand-in **`dorl`** + the sentence; **`durl`** for *not to* | [Stand-in vowels](/stand-in-vowels#stand-in) |
+| an instruction or aim as content (*tells Alazun to sit*, *wishes to sit*) | stand-in **`dorl`** + the sentence; **`durl`** for *not to*; open **`dorm`** / **`durm`** when it may not be the only one (*and maybe more*) | [Stand-in vowels](/stand-in-vowels#stand-in) |
 
 ### *'s* / *of* {#of}
 
@@ -171,6 +171,16 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 | *except* / *excluding* / *other than* (*the family except Azozon*) | hook **`ul`** (**`um`**: and maybe others) between the two | [Except](/hooks#except) |
 | *instead of* / *rather than* (*coffee instead of tea*) | hook **`el`**, with what you expected first: `dedudal el dogudal` | [Instead](/hooks#instead) |
 | *or rather* (*tired, or rather, sleepy*) | hook **`ol`** between the two wordings | [Rather](/hooks#rather) |
+
+### *and maybe more* {#and-maybe-more}
+
+English adds *and maybe more* after whatever might not be complete. Ageben says it with the open **-m** ending on the word that closes that piece.
+
+| English itch | Ageben job | Teach |
+|--------------|------------|-------|
+| *and maybe more* / *and possibly more* / *among other things* after a list (*a dog and a cat, and maybe more*) | the list's join on **-m**: `zodozel zogozel zam` | [Vowels and endings](/joins#join-type-vowel-series) |
+| *and maybe more* / *and maybe others* after an including or except hook (*the family, including Azozon and maybe more*) | the hook on **-m**: **`am`** / **`um`** | [Closed and open endings](/hooks#closed-and-open-endings) |
+| *and maybe more* / *among other things* after a to-clause, that-clause or whether-clause (*tells Alazun to dance, and maybe more*) | the stand-in on **-rm**: **`dorm`**, **`darm`**, **`derm`**, **`durm`** | [Stand-in vowels](/stand-in-vowels#stand-in) |
 
 ### Coming, going and following {#motion}
 

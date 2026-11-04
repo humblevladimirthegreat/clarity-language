@@ -18,6 +18,16 @@ describe("tagEnglish", () => {
     assert.deepEqual([tool!.cls, tool!.lemma], ["noun", "saw"]);
   });
 
+  it("reads a noun / verb word between its subject and to + verb as the verb", () => {
+    for (const text of ["Ahelan wishes to sing.", "The cat wishes to eat.", "Ahelan often wishes to sing."]) {
+      const wishes = terms(text).find((x) => x.normal === "wishes")!;
+      assert.deepEqual([wishes.cls, wishes.lemma, wishes.plural], ["verb", "wish", undefined], text);
+    }
+    for (const text of ["The wishes to sing were loud.", "My plans to leave failed."]) {
+      assert.equal(terms(text)[1]!.cls, "noun", text);
+    }
+  });
+
   it("lemmatizes irregular forms", () => {
     const t = terms("The children went home.");
     assert.equal(t.find((x) => x.normal === "children")!.lemma, "child");

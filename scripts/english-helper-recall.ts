@@ -38,9 +38,25 @@
  * error each (plant.ts: a word on the other side's ending, an alias on its other side, a grammar
  * row's word with the other ending), where each flag is a catch (recall: the share flagged).
  *
+ * Top-1 is split by root class so a change in the item mix does not read as a ranking loss:
+ * open-class top-1 counts roots the reference reads as ordinary content words (and compound
+ * parts) found as their slot's first lexicon suggestion; closed row first counts roots it reads
+ * only as a closed row (overlay, stand-in, join, sake…) that some slot's first grammar or overlay
+ * row spells. The all-roots top-1 stays in the report.
+ *
+ * Checkpoint items are also scored on the prompt for their own band (`--stage`, from the page's
+ * folder): staged self-contained. Report only, beside prompt characters per self-contained sentence.
+ *
+ * Worklist classes found mechanically: missing cue, link without form, pattern read as spelling
+ * (the linking row's form is only notation), joined prose cell (a table cell joins two code spans
+ * with prose, so the helper offers them as alternatives), wrong side (the helper offers the root
+ * only on its other -l / -m side), tagger, ranking, and the two verify classes.
+ *
  * Baseline: src/generated/english-helper-baseline.json holds each set's headline metrics.
- * `--check` fails when one is worse than the baseline by more than its tolerance; it is not part
- * of `npm test`, since doc edits move the numbers. `--write-baseline` updates the sets it ran.
+ * `--check` fails when one is worse than the baseline by more than its tolerance; each metric
+ * names the sets it guards (the in-sample doc set guards only root recall anywhere, gap rate and
+ * prompt size). It is not part of `npm test`, since doc edits move the numbers.
+ * `--write-baseline` updates the sets it ran.
  *
  * Writes tmp/english-helper-recall.csv (one row per sentence), tmp/english-helper-worklist.csv
  * (one row per missing word, and for the wild set per gap and per guess ranked above a grammar
@@ -48,10 +64,10 @@
  * scripts/frequency-coverage.ts has downloaded the list), and tmp/english-helper-report.md.
  */
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { basename, join } from "node:path";
+import { basename, dirname, join } from "node:path";
 
 import { parseCsv, serializeCsv } from "../src/csv.js";
-import { analyzeEnglish, suggestionLinks, TIERS, type Analysis, type Slot, type Suggestion } from "../src/english-helper/analyze.js";
+import { analyzeEnglish, patternForm, suggestionLinks, TIERS, type Analysis, type Slot, type Suggestion } from "../src/english-helper/analyze.js";
 import { coverWord, familyRoots, promptShows, treeWords, type Coverage, type PromptShows, type TreeWord } from "../src/english-helper/coverage.js";
 import { buildHelperPrompt } from "../src/english-helper/llm-prompt.js";
 import { loadHelperData } from "../src/english-helper/load.js";
@@ -59,7 +75,7 @@ import { PLANT_KINDS, plantErrors, plantFlagged, type PlantKind } from "../src/e
 import { verifyDraft, type Verified } from "../src/english-helper/verify.js";
 import { tagEnglish } from "../src/english-helper/tag.js";
 import { fillSelf } from "../src/learner-name.js";
-import { BANDS } from "../src/lint/learning-order.js";
+import { BANDS, type Band } from "../src/lint/learning-order.js";
 import { practiceItems } from "../src/lint/practice-items.js";
 import { docExamples, examplePair, loadPromptContext, tableExamples } from "../src/parse/llm-examples.js";
 import { constructionRegistry } from "../src/parse/constructions.js";
@@ -94,20 +110,33 @@ const context = loadPromptContext(tables);
 const registry = constructionRegistry(tables.overlays.values());
 const pages = listMarkdown(GRAMMAR_DIR).map((file) => basename(file)).sort();
 const markdownOf = new Map(listMarkdown(GRAMMAR_DIR).map((file) => [basename(file), readFileSync(file, "utf8")]));
+/** A stage page's band, from its folder (`beginner/`, `intermediate/`, `advanced/`); none for top-level pages. */
+const bandOfPage = new Map(
+  listMarkdown(GRAMMAR_DIR).flatMap((file) => {
+    const folder = basename(dirname(file));
+    return (BANDS as readonly string[]).includes(folder) ? [[basename(file), folder as Band] as const] : [];
+  }),
+);
 
-/** Content roots, live-compound parts, and role-compound stems the parse tree uses. */
-function usedRoots(tree: unknown): string[] {
-  const out: string[] = [];
+/**
+ * Content roots, live-compound parts, and role-compound stems the parse tree uses. A root is
+ * open-class when some word reads it as an ordinary content word (or a compound part); a root
+ * the tree only reads as a closed row (an overlay, stand-in, join, sake…) is closed, and the
+ * helper reaches it through a grammar row, not a lexicon suggestion.
+ */
+function usedRoots(tree: unknown): { root: string; open: boolean }[] {
+  const out = new Map<string, boolean>();
+  const add = (root: string, open: boolean) => out.set(root, (out.get(root) ?? false) || open);
   const walk = (node: unknown) => {
     if (Array.isArray(node)) return node.forEach(walk);
     if (!node || typeof node !== "object") return;
-    const family = (node as { family?: { kind: string; roots?: string[]; xFamily?: string; leftRoots?: string[]; rightRoots?: string[] } }).family;
-    if (family?.kind === "content") out.push(...(family.roots ?? []));
-    if (family?.kind === "x" && (family.xFamily === "compound" || family.xFamily === "role")) out.push(...(family.leftRoots ?? []), ...(family.rightRoots ?? []));
+    const { family, reading } = node as { reading?: string; family?: { kind: string; roots?: string[]; xFamily?: string; leftRoots?: string[]; rightRoots?: string[] } };
+    if (family?.kind === "content") for (const root of family.roots ?? []) add(root, reading === "ordinary");
+    if (family?.kind === "x" && (family.xFamily === "compound" || family.xFamily === "role")) for (const root of [...(family.leftRoots ?? []), ...(family.rightRoots ?? [])]) add(root, true);
     for (const value of Object.values(node)) if (value && typeof value === "object") walk(value);
   };
   walk(tree);
-  return [...new Set(out)];
+  return [...out].map(([root, open]) => ({ root, open }));
 }
 
 /** Live `x` compound stems (two roots, no lexicon row) the parse tree uses. */
@@ -155,6 +184,20 @@ function rootResult(analysis: Analysis, root: string, sentenceWords: Set<string>
   return { result: "missed" };
 }
 
+/** The rows a closed root is reached through: grammar jobs, entries and detectors, and overlay rows. */
+const isRow = (s: Suggestion) => s.tier === "grammar" || s.tier === "overlay";
+const rowSpells = (s: Suggestion, root: string) => (s.kind === "lexicon" ? s.form === root : forms(s).some((f) => f.includes(root)));
+
+/** A closed root that some slot's first row spells (or builds on). */
+function rowFirst(analysis: Analysis, root: string): boolean {
+  return analysis.clauses.some((c) =>
+    c.slots.some((slot) => {
+      const first = slot.suggestions.find(isRow);
+      return !!first && rowSpells(first, root);
+    }),
+  );
+}
+
 /** One English sentence with its accepted Ageben answers (the first is the main one; none for the wild set). */
 type Sentence = { set: SetName; source: string; english: string; answers: string[]; phenomenon?: string; stage?: string };
 
@@ -182,7 +225,8 @@ function checkpointSentences(): Sentence[] {
       const main = item.spoiler.find((line) => line.kind === "ageben");
       if (!main) continue;
       const line = markdown.slice(0, item.index).split("\n").length;
-      out.push({ set: "checkpoint", source: `${page}:${line}`, english: item.promptEnglish, answers: [main.text, ...item.alsoCorrect.map((span) => span.text)].map((a) => fillSelf(a)) });
+      const stage = bandOfPage.get(page);
+      out.push({ set: "checkpoint", source: `${page}:${line}`, english: item.promptEnglish, answers: [main.text, ...item.alsoCorrect.map((span) => span.text)].map((a) => fillSelf(a)), ...(stage ? { stage } : {}) });
     }
   }
   return out;
@@ -202,14 +246,26 @@ function wildSentences(): Sentence[] {
 
 const sentencesOf = (set: SetName) => (set === "doc" ? docSentences() : set === "checkpoint" ? checkpointSentences() : wildSentences());
 
-type Kind = "missing cue" | "link without form" | "tagger" | "ranking" | "verify false alarm" | "verify blind spot";
-const KINDS: readonly Kind[] = ["missing cue", "link without form", "tagger", "ranking", "verify false alarm", "verify blind spot"];
+type Kind = "missing cue" | "link without form" | "pattern read as spelling" | "joined prose cell" | "wrong side" | "tagger" | "ranking" | "verify false alarm" | "verify blind spot";
+const KINDS: readonly Kind[] = ["missing cue", "link without form", "pattern read as spelling", "joined prose cell", "wrong side", "tagger", "ranking", "verify false alarm", "verify blind spot"];
 const ROUTE: Record<Kind, { owner: string; fix: string }> = {
   "missing cue": {
     owner: "say-*.md / english.md row, or the owning section's table",
     fix: "run find-english.mjs; if a page teaches the form, add an italic cue on its row; if none does, log a grammar gap with the phrases tried",
   },
   "link without form": { owner: "analyzer (describe.ts / analyze.ts)", fix: "the linked section spells this word: show it, or an e.g. sentence that uses it" },
+  "pattern read as spelling": {
+    owner: "the row's doc cell, or the analyzer's example pick (analyze.ts addExamples)",
+    fix: "the row that links the section writes its form only as notation (`/b/`, `+`, a sound): spell the word in the cell, or pick an example that uses it",
+  },
+  "joined prose cell": {
+    owner: "the recipe or section table cell (say-*.md, english.md, or the owning page)",
+    fix: "the cell joins two code spans with prose (and, then, +), so the helper offers them as alternatives: make the phrase one code span, or split the row",
+  },
+  "wrong side": {
+    owner: "the row's english_by_pos or sense cell (data/lexicon-published.csv), or a cue that names the side",
+    fix: "the helper offers this root only on its other side (-l concrete vs -m abstract) for the English word: add the English to the side the reference uses",
+  },
   tagger: { owner: "tag.ts overrides, or a context rule in analyze.ts", fix: "the English word that names this root was read as a function word or under another lemma" },
   ranking: { owner: "analyzer: cue rank, tier order or slot order (analyze.ts)", fix: "a guess (alias, WordNet lead, live compound) ranks above a grammar row for this word" },
   "verify false alarm": {
@@ -270,6 +326,27 @@ function lemmaFor(word: TreeWord, sentenceWords: Set<string>): string {
   return "";
 }
 
+/** Every suggestion in an analysis's slots. */
+const rowsOf = (analysis: Analysis) => analysis.clauses.flatMap((c) => c.slots.flatMap((s) => s.suggestions));
+
+/** Prose between two code spans of a table cell (`a` and `b`, `a` + `b`): the helper reads the spans as alternatives. */
+const JOINED_PROSE = /`[^`|]+`\**\s+(?:and|then|plus|\+|with|before|after)\s+\**`/;
+
+/** The source rows (`page.md:line`) whose form cell joins code spans with prose. */
+function joinedProseRow(source: string): boolean {
+  const [page, line] = source.split(":");
+  const text = markdownOf.get(page!)?.split("\n")[Number(line) - 1] ?? "";
+  return JOINED_PROSE.test(text);
+}
+
+/** A reference word on `-l` / `-m` whose root the lexicon suggestions offer only on the other side. */
+function wrongSide(word: TreeWord, analysis: Analysis): boolean {
+  if (word.reading !== "ordinary" || word.family.kind !== "content" || (word.ending !== "l" && word.ending !== "m")) return false;
+  const side = word.ending === "l" ? "concrete" : "abstract";
+  const offered = rowsOf(analysis).filter((s) => s.kind === "lexicon" && word.family.kind === "content" && word.family.roots.includes(s.form));
+  return offered.length > 0 && offered.every((s) => s.kind === "lexicon" && s.side !== undefined && s.side !== side && !s.sideWords?.length);
+}
+
 /** A root the prompt never shows, though a word of the sentence names it, is a tagger miss; a root it shows in the wrong shape is not. */
 function classify(word: TreeWord, analysis: Analysis, shows: PromptShows, sentenceWords: Set<string>): { kind: Kind; link: string } {
   const suggested = analysis.clauses.flatMap((c) => [...c.detectors, ...c.slots.flatMap((s) => s.suggestions)]).flatMap(suggestionLinks);
@@ -278,7 +355,10 @@ function classify(word: TreeWord, analysis: Analysis, shows: PromptShows, senten
     if ([...sentenceWords].some((w) => (data.lexicon.get(w) ?? []).some((s) => roots.includes(s.form)))) return { kind: "tagger", link: "" };
   }
   const spelled = suggested.find((link) => pageSpells(link.split("#")[0]!, word.raw));
-  if (spelled) return { kind: "link without form", link: spelled };
+  if (spelled) {
+    const notation = rowsOf(analysis).find((s) => (s.kind === "job" || s.kind === "entry") && suggestionLinks(s).includes(spelled) && patternForm(data, s.form));
+    return { kind: notation ? "pattern read as spelling" : "link without form", link: spelled };
+  }
   if (word.family.kind === "number") {
     const numbers = suggested.find((link) => link.startsWith("numbers"));
     if (numbers) return { kind: "link without form", link: numbers };
@@ -290,14 +370,22 @@ type Scored = { answer: string; tree: unknown; words: TreeWord[]; coverage: Cove
 
 const rows: Row[] = [];
 const misses: Miss[] = [];
+/** Joined prose rows already listed, by set and source row. */
+const joinedSeen = new Set<string>();
 type SetTally = {
   roots: Map<RootResult, number>;
+  /** Open-class root uses and those found as the slot's first lexicon suggestion. */
+  open: { uses: number; top1: number };
+  /** Closed root uses and those the slot's first row spells. */
+  closed: { uses: number; rowFirst: number };
   tiers: Map<string, number>;
   live: { uses: number; suggested: number; offered: number };
   missedRoots: Map<string, { count: number; result: RootResult }>;
   constructions: Map<string, { uses: number; anchor: number; page: number }>;
   coverage: Map<Coverage, number>;
   selfContained: number;
+  /** Checkpoint items scored on their own band's prompt (`--stage`), and those self-contained there. */
+  staged: { sentences: number; selfContained: number };
   promptChars: number[];
   /** Slots not skipped, slots with no suggestion by word class and lemma, suggestions and jobs in them. */
   slots: number;
@@ -360,12 +448,15 @@ const tallies = new Map<SetName, SetTally>();
 for (const set of sets) {
   const tally: SetTally = {
     roots: new Map(),
+    open: { uses: 0, top1: 0 },
+    closed: { uses: 0, rowFirst: 0 },
     tiers: new Map(),
     live: { uses: 0, suggested: 0, offered: 0 },
     missedRoots: new Map(),
     constructions: new Map(),
     coverage: new Map(),
     selfContained: 0,
+    staged: { sentences: 0, selfContained: 0 },
     promptChars: [],
     slots: 0,
     gaps: new Map(),
@@ -382,6 +473,7 @@ for (const set of sets) {
     const prompt = buildHelperPrompt([{ english: sentence.english, analysis }], data, context);
     const shows = promptShows(prompt, [analysis]);
     let best: Scored | undefined;
+    const parsed: TreeWord[][] = [];
     for (const answer of sentence.answers) {
       let tree: unknown;
       try {
@@ -390,11 +482,20 @@ for (const set of sets) {
         continue;
       }
       const words = treeWords(tree);
+      parsed.push(words);
       const coverage = words.map((w) => coverWord(w, shows));
       const missing = coverage.filter((c) => c === "missing").length;
       if (!best || missing < best.coverage.filter((c) => c === "missing").length) best = { answer, tree, words, coverage };
     }
     if (sentence.answers.length && !best) continue;
+    // Staged: the same item on the prompt a learner at the item's own band sees.
+    if (set === "checkpoint" && sentence.stage && parsed.length) {
+      const stage = sentence.stage as Band;
+      const stagedAnalysis = analyzeEnglish(data, sentence.english, { stage });
+      const stagedShows = promptShows(buildHelperPrompt([{ english: sentence.english, analysis: stagedAnalysis }], data, context), [stagedAnalysis]);
+      tally.staged.sentences++;
+      if (parsed.some((words) => words.every((w) => coverWord(w, stagedShows) !== "missing"))) tally.staged.selfContained++;
+    }
 
     const slots = analysis.clauses.flatMap((c) => c.slots).filter((slot) => !slot.skipped);
     const gapSlots = new Set(analysis.gaps.map((g) => g.word));
@@ -407,6 +508,11 @@ for (const set of sets) {
       if (above !== undefined) tally.guessSlots++;
       if (above) tally.guessAbove++;
       if (above && set === "wild") misses.push({ set, english: sentence.english, word: slot.text, kind: "ranking", lemma: slot.lemma, link: "" });
+      for (const s of slot.suggestions) {
+        if (s.kind !== "job" || !s.form.includes(" / ") || joinedSeen.has(`${set} ${s.source}`) || !joinedProseRow(s.source)) continue;
+        joinedSeen.add(`${set} ${s.source}`);
+        misses.push({ set, english: sentence.english, word: slot.text, kind: "joined prose cell", lemma: slot.lemma, link: `${s.source}: ${s.form}` });
+      }
     }
     for (const gap of analysis.gaps) {
       const byLemma = tally.gaps.get(gap.cls) ?? new Map<string, number>();
@@ -433,9 +539,16 @@ for (const set of sets) {
     const sentenceWords = new Set(tagEnglish(sentence.english).flatMap((s) => s.clauses.flatMap((c) => c.terms.flatMap((t) => [t.normal, t.lemma]))));
     const roots = usedRoots(tree);
     const liveStems = usedLiveStems(tree);
-    const results = roots.map((root) => ({ root, ...rootResult(analysis, root, sentenceWords) }));
-    for (const { root, result, tier } of results) {
+    const results = roots.map(({ root, open }) => ({ root, open, ...rootResult(analysis, root, sentenceWords) }));
+    for (const { root, open, result, tier } of results) {
       tally.roots.set(result, (tally.roots.get(result) ?? 0) + 1);
+      if (open) {
+        tally.open.uses++;
+        if (result === "top1") tally.open.top1++;
+      } else {
+        tally.closed.uses++;
+        if (rowFirst(analysis, root)) tally.closed.rowFirst++;
+      }
       if (tier) tally.tiers.set(tier, (tally.tiers.get(tier) ?? 0) + 1);
       if (result === "missed" || result === "tagging") {
         const m = tally.missedRoots.get(root) ?? { count: 0, result };
@@ -475,6 +588,9 @@ for (const set of sets) {
     for (const word of missingWords) {
       const { kind, link } = classify(word, analysis, shows, sentenceWords);
       misses.push({ set, english: sentence.english, word: word.raw, kind, lemma: lemmaFor(word, sentenceWords), link });
+    }
+    for (const word of best.words) {
+      if (wrongSide(word, analysis)) misses.push({ set, english: sentence.english, word: word.raw, kind: "wrong side", lemma: lemmaFor(word, sentenceWords), link: "" });
     }
 
     rows.push({
@@ -559,7 +675,8 @@ function summarize(set: SetName) {
       ? {
           selfContained: share(t.selfContained, sentences),
           wordInPrompt: share(word, totalWords),
-          rootTop1: share(top1, totalRoots),
+          rootTop1Open: share(t.open.top1, t.open.uses),
+          closedRowFirst: share(t.closed.rowFirst, t.closed.uses),
           rootAnywhere: share(totalRoots - missedRoots, totalRoots),
           constructionPage: share(
             taught.reduce((a, c) => a + c.page, 0),
@@ -611,7 +728,7 @@ function summarize(set: SetName) {
     roots: Object.fromEntries(t.roots),
     liveCompounds: t.live,
     foundByTier: Object.fromEntries(TIERS.filter((tier) => t.tiers.has(tier)).map((tier) => [tier, t.tiers.get(tier)!])),
-    rootRecall: { top1: pct(top1, totalRoots), top3: pct(top1 + (t.roots.get("top3") ?? 0), totalRoots), anywhere: pct(totalRoots - (t.roots.get("missed") ?? 0) - (t.roots.get("tagging") ?? 0), totalRoots), uses: totalRoots },
+    rootRecall: { open: `${pct(t.open.top1, t.open.uses)} of ${t.open.uses}`, closedRowFirst: `${pct(t.closed.rowFirst, t.closed.uses)} of ${t.closed.uses}`, top1: pct(top1, totalRoots), top3: pct(top1 + (t.roots.get("top3") ?? 0), totalRoots), anywhere: pct(totalRoots - (t.roots.get("missed") ?? 0) - (t.roots.get("tagging") ?? 0), totalRoots), uses: totalRoots },
     constructions: {
       uses: constructionUses,
       anchor: pct(taught.reduce((a, c) => a + c.anchor, 0), constructionUses),
@@ -624,7 +741,10 @@ function summarize(set: SetName) {
       patternInPrompt: pct(pattern, totalWords - word),
       missing: pct(totalWords - word - pattern, totalWords),
       selfContained: pct(t.selfContained, sentences),
+      stagedSelfContained: t.staged.sentences ? `${pct(t.staged.selfContained, t.staged.sentences)} of ${t.staged.sentences}` : "-",
       chars: { median: median(t.promptChars), p90: median(t.promptChars, 0.9) },
+      /** Prompt characters spent per self-contained sentence: growth is worth it only when this holds or falls. */
+      charsPerSelfContained: t.selfContained ? Math.round(t.promptChars.reduce((a, b) => a + b, 0) / t.selfContained) : 0,
     },
     missedRoots: [...t.missedRoots].sort((a, b) => b[1].count - a[1].count).slice(0, 30).map(([root, m]) => ({ root, sense: senseOf(root), ...m })),
     missedConstructions: [...t.constructions]
@@ -642,19 +762,23 @@ type Headline = Record<(typeof HEADLINE)[number]["key"], number>;
 type Baseline = { sets: Partial<Record<SetName, { sentences: number } & Partial<Headline>>> };
 
 /**
- * The metrics `--check` guards, with the direction that is better and how far the other way a
- * run may move before it fails (percentage points; characters for the prompt size).
+ * The metrics `--check` guards, with the direction that is better, how far the other way a run
+ * may move before it fails (percentage points; characters for the prompt size), and the sets it
+ * guards. The doc set is in-sample and doc edits move its scores for reasons unrelated to the
+ * helper, so it guards only breakage: roots found at all, gaps, and prompt size.
  */
+const HELD_OUT: readonly SetName[] = ["checkpoint", "wild"];
 const HEADLINE = [
-  { key: "selfContained", label: "self-contained", better: "higher", tolerance: 0.5 },
-  { key: "wordInPrompt", label: "word in prompt", better: "higher", tolerance: 0.5 },
-  { key: "rootTop1", label: "root recall top-1", better: "higher", tolerance: 0.5 },
-  { key: "rootAnywhere", label: "root recall anywhere", better: "higher", tolerance: 0.5 },
-  { key: "constructionPage", label: "construction recall page", better: "higher", tolerance: 0.5 },
-  { key: "gapRate", label: "gap rate", better: "lower", tolerance: 0.5 },
-  { key: "verifyPrecision", label: "verify precision", better: "higher", tolerance: 0.5 },
-  { key: "verifyRecall", label: "verify recall", better: "higher", tolerance: 0.5 },
-  { key: "promptChars", label: "prompt chars median", better: "lower", tolerance: 500 },
+  { key: "selfContained", label: "self-contained", better: "higher", tolerance: 0.5, sets: HELD_OUT },
+  { key: "wordInPrompt", label: "word in prompt", better: "higher", tolerance: 0.5, sets: HELD_OUT },
+  { key: "rootTop1Open", label: "open-class root top-1", better: "higher", tolerance: 0.5, sets: HELD_OUT },
+  { key: "closedRowFirst", label: "closed root row first", better: "higher", tolerance: 0.5, sets: HELD_OUT },
+  { key: "rootAnywhere", label: "root recall anywhere", better: "higher", tolerance: 0.5, sets: SETS },
+  { key: "constructionPage", label: "construction recall page", better: "higher", tolerance: 0.5, sets: HELD_OUT },
+  { key: "gapRate", label: "gap rate", better: "lower", tolerance: 0.5, sets: SETS },
+  { key: "verifyPrecision", label: "verify precision", better: "higher", tolerance: 0.5, sets: HELD_OUT },
+  { key: "verifyRecall", label: "verify recall", better: "higher", tolerance: 0.5, sets: HELD_OUT },
+  { key: "promptChars", label: "prompt chars median", better: "lower", tolerance: 500, sets: SETS },
 ] as const;
 
 function readBaseline(): Baseline {
@@ -672,6 +796,7 @@ function compareBaseline(baseline: Baseline): { worse: string[]; moved: string[]
       continue;
     }
     for (const m of HEADLINE) {
+      if (!(m.sets as readonly SetName[]).includes(set)) continue;
       const was = before[m.key];
       const now = summary[set]!.headline[m.key];
       if (was === undefined || now === undefined || was === now) continue;
@@ -701,7 +826,11 @@ refMetric("**self-contained**", (s) => `**${s.prompt.selfContained}**`);
 refMetric("word in prompt", (s) => s.prompt.wordInPrompt);
 refMetric("pattern in prompt (of the rest)", (s) => s.prompt.patternInPrompt);
 refMetric("words missing", (s) => s.prompt.missing);
-refMetric("root recall top-1 / top-3 / anywhere", (s) => `${s.rootRecall.top1} / ${s.rootRecall.top3} / ${s.rootRecall.anywhere}`);
+refMetric("staged self-contained (checkpoint at its own band)", (s) => s.prompt.stagedSelfContained);
+refMetric("prompt chars per self-contained sentence", (s) => s.prompt.charsPerSelfContained);
+refMetric("**open-class root top-1**", (s) => `**${s.rootRecall.open}**`);
+refMetric("**closed root row first**", (s) => `**${s.rootRecall.closedRowFirst}**`);
+refMetric("root recall top-1 (all) / top-3 / anywhere", (s) => `${s.rootRecall.top1} / ${s.rootRecall.top3} / ${s.rootRecall.anywhere}`);
 refMetric("construction recall anchor / page", (s) => `${s.constructions.anchor} / ${s.constructions.page}`);
 metric("**gap rate** (slots with no suggestion)", (s) => `**${s.gaps.rate}** (${s.gaps.gaps} of ${s.gaps.slots})`);
 metric("suggestions / jobs per slot", (s) => `${s.noise.suggestionsPerSlot} / ${s.noise.jobsPerSlot}`);
@@ -750,7 +879,9 @@ else {
     }
     console.log(`self-contained ${s.prompt.selfContained} — of ${s.prompt.words} reference words, ${s.prompt.wordInPrompt} in the prompt, ${s.prompt.patternInPrompt} of the rest a shown pattern, ${s.prompt.missing} missing`);
     console.log(`  misses: ${Object.entries(s.missesByKind).map(([k, n]) => `${k} ${n}`).join(", ")}; prompt chars median ${s.prompt.chars.median}, p90 ${s.prompt.chars.p90}`);
+    if (s.prompt.stagedSelfContained !== "-") console.log(`  staged self-contained ${s.prompt.stagedSelfContained}; prompt chars per self-contained sentence ${s.prompt.charsPerSelfContained}`);
     console.log(`roots: ${s.rootRecall.uses} uses — top-1 ${s.rootRecall.top1}, top-3 ${s.rootRecall.top3}, anywhere ${s.rootRecall.anywhere}`);
+    console.log(`  open-class top-1 ${s.rootRecall.open}; closed root row first ${s.rootRecall.closedRowFirst}`);
     for (const [k, v] of Object.entries(s.roots).sort((a, b) => b[1] - a[1])) console.log(`  ${k.padEnd(8)} ${v}`);
     console.log(`live x compounds: ${s.liveCompounds.suggested} of ${s.liveCompounds.uses} two-root uses built (${s.liveCompounds.offered} offered in all)`);
     console.log(`found by tier: ${Object.entries(s.foundByTier).map(([t, n]) => `${t} ${n}`).join(", ")}`);

@@ -195,6 +195,35 @@ function features(clause: Doc, terms: TaggedTerm[], sentenceIsQuestion: boolean)
   return f;
 }
 
+/** Words that can open the clause's subject noun phrase (*the old cat*, *my two friends*). */
+const NP_LEAD = new Set<WordClass>(["determiner", "adjective", "number", "pronoun"]);
+const SUBJECT_PRONOUNS = new Set(["i", "you", "he", "she", "it", "we", "they", "who", "someone", "everyone", "nobody", "somebody", "everybody"]);
+
+/**
+ * A noun / verb word between its subject and *to* + verb is the verb (*Ahelan wishes to sing*):
+ * the library reads some of them as plural nouns. The subject is a noun the clause opens with
+ * (after determiners, adjectives, numbers or a possessive: *the cat*, *my friend*), or a subject
+ * pronoun, with adverbs skipped (*Ahelan often wishes to sing*). A determiner or possessive right
+ * before the word keeps the noun (*the wishes to sing*, *my plans to leave*).
+ */
+function verbBeforeTo(terms: TaggedTerm[]): void {
+  terms.forEach((term, i) => {
+    if (term.cls !== "noun" || term.forced || term.proper || terms[i + 1]?.normal !== "to" || terms[i + 2]?.cls !== "verb") return;
+    let j = i - 1;
+    while (j >= 0 && terms[j]!.cls === "adverb") j--;
+    const subject = terms[j];
+    if (!subject || subject.possessive) return;
+    const nounPhrase = subject.cls === "noun" && terms.slice(0, j).every((t) => NP_LEAD.has(t.cls) && !(t.cls === "pronoun" && !POSSESSIVE_PRONOUNS.has(t.normal)));
+    const isSubject = nounPhrase || (subject.cls === "pronoun" && SUBJECT_PRONOUNS.has(subject.normal));
+    if (!isSubject) return;
+    const lemma = forcedLemma(term.text, "v");
+    if (!isVerb(lemma)) return;
+    Object.assign(term, { cls: "verb", lemma, tense: "present" });
+    delete term.plural;
+    delete term.shape;
+  });
+}
+
 /** Sentences → clauses → tagged words, with forced readings applied. */
 export function tagEnglish(input: string): TaggedSentence[] {
   const forced: { word: string; kind: keyof typeof FORCE_TAG }[] = [];
@@ -237,6 +266,7 @@ export function tagEnglish(input: string): TaggedSentence[] {
         // An expanded contraction leaves an empty term tagged Negative: *couldn't* → *could* + *not*.
         if (!term.normal && term.tags.includes("Negative")) Object.assign(term, { text: "not", normal: "not", lemma: "not", cls: "negative" });
       }
+      verbBeforeTo(terms);
       return { text: clause.text().trim(), terms, features: features(clause, terms, question) };
     }) as TaggedClause[];
     return { text: sentence.text().trim(), clauses };

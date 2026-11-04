@@ -430,7 +430,7 @@ export function sectionExample(data: HelperData, links: readonly string[], words
 }
 
 /** A form with no piece the word parser reads as words (`/ɡ/ / -r`, `one of six linkers + -m`): a pattern, not a spelling. */
-function patternForm(data: HelperData, form: string): boolean {
+export function patternForm(data: HelperData, form: string): boolean {
   if (!data.wordParses) return false;
   return !form.split(" / ").some((piece) => {
     const words = piece.trim().replace(/[.?!]$/, "").split(/\s+/);

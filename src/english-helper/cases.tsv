@@ -92,3 +92,10 @@ So who laughed?	So who	link:say-questions.md#ask-words	*so who* is a quiz
 Tell me who saw the trophy.	Tell me	link:say-questions.md#ask-words	*tell me* demands an answer
 Pressure is what makes the wheel stop.	what makes	link:say-reasons.md#habit	*what makes* is CAUSE with a because hinge, though *is* before it is an auxiliary
 Ahelan wishes to sing.	to	link:stand-in-vowels.md#stand-in	*to* before a verb can be a to-clause
+# Noun / verb words between a subject and *to* + verb
+Ahelan wishes to sing.	wishes	not:plurality.md#associative	*wishes* before *to* + verb is the verb, not a plural noun
+The cat wishes to eat.	wishes	not:plurality.md#associative	the subject can open with a determiner
+# Open *and maybe more*
+Azozon asks Alazun to dance, and maybe more.	and maybe more	link:stand-in-vowels.md#stand-in	after a to-clause, the open stand-in
+Azozon asks Alazun to dance, and maybe more.	to	form:dorm	the *to* row spells the open stand-in
+We bought bread and milk, among other things.	among other things	link:joins.md#join-type-vowel-series	after a list, the open join
