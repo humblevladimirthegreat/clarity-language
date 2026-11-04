@@ -587,7 +587,7 @@ function partyWord(slots: readonly Slot[], n: number): string | undefined {
  * (*becoming a liar*). `slots` are the whole sentence's, so a cue in a later clause reaches back.
  * A pair reach adds its party, the noun after the cue (*except with Olazun*).
  */
-function spellScopes(data: HelperData, slots: readonly Slot[]): void {
+function spellReaches(data: HelperData, slots: readonly Slot[]): void {
   slots.forEach((slot, n) => {
     for (const s of slot.suggestions) {
       const seam = reachSeam(s);
@@ -762,7 +762,7 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
       outer.push(...terms);
     }
     const sentenceSlots = clauses.slice(sentenceStart).flatMap((c) => c.slots);
-    spellScopes(data, sentenceSlots);
+    spellReaches(data, sentenceSlots);
     spellSakes(data, sentenceSlots, clauses.slice(sentenceStart).map((c) => c.text).join(" "));
   }
   return { clauses, gaps };

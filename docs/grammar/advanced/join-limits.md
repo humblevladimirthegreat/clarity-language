@@ -24,7 +24,6 @@ A join takes every same-role item before it. When English groups a small list in
 
 ### Named phrase **`-n`**
 <a id="named-list"></a>
-<a id="named--conventional-ending-phrase-level-all-join-vowels"></a>
 
 When a list is a familiar set phrase (*Stop–Drop–Roll*), end its join with **-n** (under `/z/`, `/d/`, or `/b/`). The **-n** names the whole list as one title, the way it names a person ([titled phrases](/proper-names#titled-phrases)). Members keep their usual endings unless a member is itself a name.
 

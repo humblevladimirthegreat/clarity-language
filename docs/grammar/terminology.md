@@ -6,7 +6,7 @@ This is not a dictionary of roots. For word senses, use the [Lexicon](lexicon.md
 
 ## Closed labels
 
-SMALLCAPS tags and series names as the lessons print them.
+SMALLCAPS labels and series names as the lessons print them.
 
 ### Mood labels
 
@@ -126,6 +126,12 @@ Ordinary manner `/h/`.
 
 **Compare with:** [mood labels](#mood-labels) are closed psychological [stance](#stance) `/th/`, not `/h/`.
 
+### Already / still / not yet / no longer
+
+Four `/h/` words for how a change stands now, not when it happened.
+
+[Already and still](/already-still-yet#phasal)
+
 ### Ambient magnitude
 
 Casual claim that an omitted exponent inherits a discourse order of magnitude; **`Ne0`** asserts OoM 0.
@@ -164,17 +170,23 @@ A parenthetical comment span (`th(…)` on the sentence; `g(…)`, `w(…)`, or 
 
 [Plurality](/plurality#associative)
 
-### Bare OoM
+### Audible start
 
-Digitless exponent naming a magnitude band (`g+e0`, `grawagel`).
+Prefer an audible left `/y/` rather than implied **`yal`**.
 
-[How many and how big](/digitless-exponents#bare-oom-bands)
+[Singing and speech edges](/singability#audible-start)
 
 ### Bar
 
 A `/th/` stance word in the comparee slot of a rank join: the value you rank against (*than planned*, *enough*, *than usual*).
 
 [Place on a scale](/comparative-arity#bars)
+
+### Bare OoM
+
+Digitless exponent naming a magnitude band (`g+e0`, `grawagel`).
+
+[How many and how big](/digitless-exponents#bare-oom-bands)
 
 ### Binder
 
@@ -194,17 +206,29 @@ Silence counted in beats at a sentence edge with no word: a **break** puts the n
 
 [Singing and speech edges](/singability#speech-edges)
 
+### Cell logic
+
+The reusable mapping of ending letters **-l / -m / -r / -n** on a scale. Ending series reuse a scale’s cell logic the way vowel series reuse leftover-logic. Unused cells are an em dash.
+
+[Consonants cheat sheet](/cheat-sheets/consonants)
+
 ### Changeability
 
 Endings on unmet **`thu`**, **DECISION**, and ability *can’t*.
 
 [Sakes](/sakes#sake-changeability), [Decision and try](/ability#decision)
 
-### Cell logic
+### Channel on a generalization
 
-The reusable mapping of ending letters **-l / -m / -r / -n** on a scale. Ending series reuse a scale’s cell logic the way vowel series reuse leftover-logic. Unused cells are an em dash.
+A channel on a clause with a universal fence or restrictor: how you know the general claim.
 
-[Consonants cheat sheet](/cheat-sheets/consonants)
+[Usually vs must](/usually-vs-must#universality)
+
+### Check-back
+
+**`yel`** plus a [polar particle](#polar-particle) as its own turn after a sentence: asks the listener for that answer (`yel yaol.` *…, right?*, `yel yael.` *…, okay?*, `yel yuol.` *…, or am I wrong?*).
+
+[Yes, no, and not that](/polar-inventory#check-backs)
 
 ### Citation / prefix-less citation
 
@@ -255,6 +279,12 @@ Rank join + SHARED **scale** (`/ɡ/` quality or `/h/` manner); single-item = sup
 `/ɡ/` or `/h/` plus immediately following `/b/`.
 
 [Clause](/clause#extra-nouns)
+
+### Concrete / abstract / named / resume
+
+Content endings **-l / -m / -n / -r**.
+
+[Word endings](/word-endings)
 
 ### Confirming a negative
 
@@ -316,12 +346,6 @@ Set **`a`** + singular SHARED = *both/each are ADJ*.
 
 [Amounts, sizes and time](say-amounts.md#distributive-both)
 
-### Kind reference
-
-`zuan` plus a SHARED kind: the kind itself as one individual, not its members (*the dodo is extinct*).
-
-[Every and none](/universals-domains#kind-reference)
-
 ### Domain / generic / *every K*
 
 SHARED kind plus invert / standalone joins; a SHARED word after the join can bound the set (`zual gwedanam blayan` *everyone we know*).
@@ -372,29 +396,11 @@ Closed `/th/` how-you-know roots: seven channels, two direct (LIVE, MEMORY), thr
 
 [How you know](/evidentiality#evidentiality)
 
-### Frame (carried channel)
+### Exchange (*for*)
 
-A channel, NOTIONAL, or holder that keeps covering your later claims with no channel, until a new frame, a written statement word, *by the way*, or a goodbye.
+Hosted **`heham`** / **`geham`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not sakes motive **`tho`**, not intended-outcome [**`hovam`**](/dependents#so-that).
 
-[How you know](/evidentiality#carry-forward)
-
-### Already / still / not yet / no longer
-
-Four `/h/` words for how a change stands now, not when it happened.
-
-[Already and still](/already-still-yet#phasal)
-
-### Residue / former climate
-
-Closed `/th/` episode standing: leftover on the tally, or usual weather you are not claiming now. Not past tense.
-
-[Residue and former](/notional-standing#residue)
-
-### Fault
-
-Endings on *because*: **-l** the reason broke a rule, **-m** plain cause, **-r** one share among others. The act sits in `/b/`, not the person.
-
-[Fault](/fault#fault)
+[Relations](/relations#exchange)
 
 ### Extra noun (`/b/`)
 
@@ -402,55 +408,17 @@ Hosted: noun bolted onto a complex `/ɡ/`, `/h/`, or `/th/`. Unhosted: recipient
 
 [Clause](/clause#extra-nouns)
 
-### Label reach
-
-Mid-word **`th`** plus a vowel on a content root, or the vowel right after **`w`** on a role word: this episode (**`thu`**), practiced role (**`tho`**), this pair (**`the`**), type across scenes (**`tha`**), or a stacked vowel.
-
-[Label seams](/label-seams#label-reach)
-
-**Compare with:** [restrictor](#restrictor) names the occasions, not the kind of claim. [Practiced role](#practiced-role) is **`o`** on a role compound.
-
-### Likeness (*like*)
-
-Hosted **`hewem`** / **`gewem`** plus model `/b/` (*like* a duck / *like* Azozon’s); with **-l**, **`hewel`** / **`gewel`** is *exactly like*. Not **IDENTITY**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
-
-[Relations](/relations#likeness), [Exactly like](/exactly-like#exactly-like)
-
-### Locative relation
-
-Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; zone **-m** *amid* / *near* / *over* / *away from* / *in the direction of* / *out from among* / *by way of*) as extra-noun [hooks](/hooks#extra-noun) plus landmark `/b/`. *Between* is hosted `/h/` or `/ɡ/` plus a `/b/` join. A *from A to B* path is two hook extras (source, then goal).
-
-[Between, across, and around](/locative-relations#locative-relations)
-
-### Means
-
-Extra-noun [hook](/hooks#extra-noun) **`aol`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*. To name a kind of tool as its own noun, use a compound with a head root ([places, tools, and times](/role-parts#places-tools-times)).
-
-[Extra nouns and whose](/extra-noun-hooks#extra-noun-intermediate)
-
-### Exchange (*for*)
-
-Hosted **`heham`** / **`geham`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not sakes motive **`tho`**, not intended-outcome [**`hovam`**](/dependents#so-that).
-
-[Relations](/relations#exchange)
-
-### Proxy (*on behalf of*)
-
-Hosted **`hanem`** / **`ganem`** plus principal `/b/` (*on behalf of* Alazun). Not hook *instead*, not recipient `/b/`.
-
-[Relations](/relations#proxy)
-
-### Of relation
-
-Hosted `/h/` or `/ɡ/` plus `/b/` for English *of* that is not ownership or a place: *part of*, *contents of*, *made of*, origin *from*.
-
-[Part of, made of, from](/of-relations#of-relations)
-
 ### Factivity
 
 Whether *if* vs *because* treats the dependent as asserted.
 
 [Reasons and plans](say-reasons.md#factivity)
+
+### Fault
+
+Endings on *because*: **-l** the reason broke a rule, **-m** plain cause, **-r** one share among others. The act sits in `/b/`, not the person.
+
+[Fault](/fault#fault)
 
 ### Fill-ask / fill-all
 
@@ -477,17 +445,36 @@ Why a series reuses a parent scale’s leftover-logic or cell logic, in one affi
 [Knowing](/knowing#follow-up-endings-may), [As if](/notional#follow-up-endings-notional)
 
 ### Forecast
-<a id="forecast-source"></a>
 
 A claim that something **will** happen: an evidential channel plus the later offset **`blral`**. There is no forecast word, so a forecast always names how you know it.
 
 [How you know](/evidentiality#forecast)
+
+### Frame (carried channel)
+
+A channel, NOTIONAL, or holder that keeps covering your later claims with no channel, until a new frame, a written statement word, *by the way*, or a goodbye.
+
+[How you know](/evidentiality#carry-forward)
+
+### Generic pronoun
+
+**`eyen`**: any person, as a rule. English *one*, generic *you*.
+
+[Pronouns](/pronouns#generic-pronoun)
+
+**Compare with:** `awan` is always the person actually listening; `umen` is one unidentified individual.
 
 ### Greeting / conversation length
 
 A named citation is a hello (`azozon.`). Add mid-word **`x`** plus **`a`** / **`e`** / **`o`** / **`u`** to say how long the conversation is expected to last: open-ended, a few minutes, one slot, or passing. At departure, **`xon`** means leaving soon, **`xen`** about to leave, and **`xun`** leaving now. When people set different lengths at arrival, the lesser bid holds.
 
 [Word endings](/word-endings#greeting) · [Conversation length](/conversation-length#conversation-length)
+
+### Hangs on
+
+A series has its own slogans; its letters and leftover-logic or cell logic come from a parent series or scale.
+
+[Vowels cheat sheet](/cheat-sheets/vowels), [consonants cheat sheet](/cheat-sheets/consonants)
 
 ### Holder
 
@@ -497,11 +484,25 @@ Whose view a clause reports. The name is fused onto an evidential, **MAY**, or *
 
 **Compare with:** a person in hosted `/b/` after an evidential is the source you heard it from, not the holder. The VICARIOUS locus is your own feeling about someone else's stake.
 
-### Hangs on
+### Hook
 
-A series has its own slogans; its letters and leftover-logic or cell logic come from a parent series or scale.
+Prefix-less *including / rather / instead / except*, discourse glue, extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (zone **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *used by* (whose) / *by* / *contrary to*; placement decides the job; **`uom`** before a `/th/` stance is *contrary to* that stance), and fused [Cite plus a hook](/hook-compounds#hook-compounds) (citation plus extra-noun hook). Optional `/w/` immediately before the free hook grades that hook (including restrictors); `/b/` sits immediately after the free hook. Stacked discourse, *somewhere* / *here* / *there*, resume **-r**, parallel chains, and extra placements are [discourse hooks](/discourse-hooks).
 
-[Vowels cheat sheet](/cheat-sheets/vowels), [consonants cheat sheet](/cheat-sheets/consonants)
+[Hooks](/hooks)
+
+[In fact, here, and anyway](/discourse-hooks)
+
+### Hook prefix
+
+Role letter + extra-noun hook vowels + **`x`** (or **`mx`** for the hook's **-m** zone) + stem: something in that hook's relation to the stem (`guoxuvuvul` *anti-fighting*, `gamxohalal` *mid-ocean*). Like English *anti-*, *in-*, *trans-*, *-ward*.
+
+[Cite plus a hook](/hook-compounds#hook-prefixes)
+
+### Hooked join
+
+Role letter + extra-noun hook vowels (+ **`m`** for the zone or **`r`** to point back) + **`x`** + a join, with the hook's landmark as the `bl-` word after it: the join's set, bounded by that relation (`zexual blohehal` *everyone at the house*, `doxar bluwen` *something for me*). On `/h/` it bounds which times a restrictor covers (`huxal blanulul` *never since the thunderstorm*).
+
+[Hook plus a join](/hooked-joins#hooked-joins)
 
 ### Host
 
@@ -523,7 +524,7 @@ An event root on `/ɡ/`: the noun is in the middle of that event, as its doer (*
 
 [Predication](/predication#in-progress)
 
-**Compare with:** a [role compound](#role-compound--agent--place--patient--recipient) names a participant, with no claim that the act is under way.
+**Compare with:** a [role compound](#role-compound-agent-patient-recipient) names a participant, with no claim that the act is under way.
 
 ### Invert
 
@@ -549,6 +550,20 @@ Right-close list closer; **conjunct** = listed item.
 
 [Joins](/joins#join-type-vowel-series), [vowels cheat sheet](/cheat-sheets/vowels)
 
+### Kind reference
+
+`zuan` plus a SHARED kind: the kind itself as one individual, not its members (*the dodo is extinct*).
+
+[Every and none](/universals-domains#kind-reference)
+
+### Label reach
+
+Mid-word **`th`** plus a vowel on a content root, or the vowel right after **`w`** on a role word: this episode (**`thu`**), practiced role (**`tho`**), this pair (**`the`**), type across scenes (**`tha`**), or a stacked vowel.
+
+[Label seams](/label-seams#label-reach)
+
+**Compare with:** [restrictor](#restrictor) names the occasions, not the kind of claim. [Practiced role](#practiced-role) is **`o`** on a role compound.
+
 ### Left-bound adjective
 
 `/ɡ/` with second letter **l**: adjective before the next noun.
@@ -567,17 +582,17 @@ What a consonant does in a position: first letter is a [role letter](#role-lette
 
 [Clause](/clause#role-letters), [consonants cheat sheet](/cheat-sheets/consonants)
 
+### Likeness (*like*)
+
+Hosted **`hewem`** / **`gewem`** plus model `/b/` (*like* a duck / *like* Azozon’s); with **-l**, **`hewel`** / **`gewel`** is *exactly like*. Not **IDENTITY**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
+
+[Relations](/relations#likeness), [Exactly like](/exactly-like#exactly-like)
+
 ### List verb / join-relation
 
 Content `/v/` or `/ɡ/` `/h/` + join vowel + **-n**.
 
 [List verbs](/list-verbs), [With and without](/join-relations)
-
-### Concrete / abstract / named / resume
-
-Content endings **-l / -m / -n / -r**.
-
-[Word endings](/word-endings)
 
 ### Loan / opaque span
 
@@ -585,11 +600,23 @@ Content endings **-l / -m / -n / -r**.
 
 [Spans](/spans#loans)
 
+### Locative relation
+
+Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; zone **-m** *amid* / *near* / *over* / *away from* / *in the direction of* / *out from among* / *by way of*) as extra-noun [hooks](/hooks#extra-noun) plus landmark `/b/`. *Between* is hosted `/h/` or `/ɡ/` plus a `/b/` join. A *from A to B* path is two hook extras (source, then goal).
+
+[Between, across, and around](/locative-relations#locative-relations)
+
 ### Map resolution
 
 **PLAN** endings: **-l** atlas / **-m** itinerary (default) / **-r** sketch.
 
 [Intention](/intention#plan-map-resolution)
+
+### Means
+
+Extra-noun [hook](/hooks#extra-noun) **`aol`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*. To name a kind of tool as its own noun, use a compound with a head root ([places, tools, and times](/role-parts#places-tools-times)).
+
+[Extra nouns and whose](/extra-noun-hooks#extra-noun-intermediate)
 
 ### Measure phrase / unit
 
@@ -605,20 +632,6 @@ Sake stances **`tha` / `thu`** (Beginner); **`the`** (Beginner ought); **`tho`**
 
 **Compare with:** [as-for](#as-for) is **`hehugom`**, not a sake stance.
 
-### Thanks and sorry
-
-A lone `/th/` met word is thanks (*my sake is met*). *Sorry* is unmet plus a `bl-` word for whose sake was hurt.
-
-[Thanks and sorry](/thanks-and-sorry#thanks-sorry)
-
-### Named (number **-n**)
-
-Number ending **-n**: the number as a name or title (*the Second*, an official label).
-
-[Number markers and endings](/number-markers#number-endings)
-
-**Compare with:** content **-n** is the same [named](#concrete-abstract-named-resume) cell on a content word. Phrase join **-n** is a [named list](#named-list). Clause join **-n** is a [sequence](#sequence).
-
 ### Named handle
 
 Short **-n** label for a long title.
@@ -633,11 +646,13 @@ Phrase join **-n**.
 
 **Compare with:** a [titled phrase](#titled-phrase) can use that join **-n** while members keep ordinary endings.
 
-### Sake inventory
+### Named (number **-n**)
 
-Six closed psychological sakes under `/ɡ/` `/th/` `/w/`.
+Number ending **-n**: the number as a name or title (*the Second*, an official label).
 
-[Sakes](/sakes#sake-inventory)
+[Number markers and endings](/number-markers#number-endings)
+
+**Compare with:** content **-n** is the same [named](#concrete-abstract-named-resume) cell on a content word. Phrase join **-n** is a [named list](#named-list). Clause join **-n** is a [sequence](#sequence).
 
 ### Number as verb / adverb / interjection / discourse
 
@@ -665,19 +680,17 @@ Listed pieces before a restrictor (when the host applies).
 
 [Restrictors](/restrictors)
 
+### Of relation
+
+Hosted `/h/` or `/ɡ/` plus `/b/` for English *of* that is not ownership or a place: *part of*, *contents of*, *made of*, origin *from*.
+
+[Part of, made of, from](/of-relations#of-relations)
+
 ### Offer (question)
 
 Single-item **-m** under question (*How about X?*).
 
 [Yes, no, and not that](/polar-inventory#yes-no-single-item-standalone)
-
-### Generic pronoun
-
-**`eyen`**: any person, as a rule. English *one*, generic *you*.
-
-[Pronouns](/pronouns#generic-pronoun)
-
-**Compare with:** `awan` is always the person actually listening; `umen` is one unidentified individual.
 
 ### One of a name
 
@@ -731,23 +744,29 @@ Singling out one word against others: the contrast mark `&`. Word order adds no 
 
 [Emphasis and clefts](/emphasis#english-emphasis), [Tone marks](/tone-marks#tone-marks)
 
+### Proxy (*on behalf of*)
+
+Hosted **`hanem`** / **`ganem`** plus principal `/b/` (*on behalf of* Alazun). Not hook *instead*, not recipient `/b/`.
+
+[Relations](/relations#proxy)
+
 ### Quasi
 
 Numeric prefix `-e-xROOT` (and quasi-N): the shape of a kind, not the real thing (`zruwuxahuyayel` *a quasi-friend*).
 
 [Numeric prefixes](/numeric-derivation#quasi)
 
-### Range / ray
-
-Numeric from–to with a hook between the ends (`al` / `ul`); a ray has ±∞ as one end. The same idea on any ordered line is the [range hook](#range-hook).
-
-[Measures, ranges, and percent](/numbers-applied#ranges), [Open and named ranges](/open-ranges#rays)
-
 ### Range hook
 
 Stacked hook between same-role words on an ordered line: `oel` *through*, `ual` *strictly between*, `uol` *outside*.
 
 [Ranges in order](/ordered-ranges#ranges)
+
+### Range / ray
+
+Numeric from–to with a hook between the ends (`al` / `ul`); a ray has ±∞ as one end. The same idea on any ordered line is the [range hook](#range-hook).
+
+[Measures, ranges, and percent](/numbers-applied#ranges), [Open and named ranges](/open-ranges#rays)
 
 ### Rank join / set join / SHARED
 
@@ -757,9 +776,15 @@ Material after the join closer; **SHARED scale**.
 
 ### Relative clause (English *who / that / which*)
 
-Identify a noun with two sentences (then [resume](#resume)), a hosted `/ɡ/` + `/b/` relation, or a [role compound](#role-compound--agent--place--patient--recipient) on `/ɡ/`.
+Identify a noun with two sentences (then [resume](#resume)), a hosted `/ɡ/` + `/b/` relation, or a [role compound](#role-compound-agent-patient-recipient) on `/ɡ/`.
 
 [Dependents](/dependents#which-noun)
+
+### Residue / former climate
+
+Closed `/th/` episode standing: leftover on the tally, or usual weather you are not claiming now. Not past tense.
+
+[Residue and former](/notional-standing#residue)
 
 ### Restrictor
 
@@ -777,28 +802,7 @@ Content / number **-r** pointing back. A content resume spells the earlier word�
 
 **Compare with:** join / restrictor **-r** is an [unspecified member](#unspecified-member). English *the dog that…* is two sentences, then this resume ([which person or thing](/dependents#which-noun)).
 
-### Hook
-
-Prefix-less *including / rather / instead / except*, discourse glue, extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (zone **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *used by* (whose) / *by* / *contrary to*; placement decides the job; **`uom`** before a `/th/` stance is *contrary to* that stance), and fused [Cite plus a hook](/hook-compounds#hook-compounds) (citation plus extra-noun hook). Optional `/w/` immediately before the free hook grades that hook (including restrictors); `/b/` sits immediately after the free hook. Stacked discourse, *somewhere* / *here* / *there*, resume **-r**, parallel chains, and extra placements are [discourse hooks](/discourse-hooks).
-
-[Hooks](/hooks)
-
-[In fact, here, and anyway](/discourse-hooks)
-
-### Hook prefix
-
-Role letter + extra-noun hook vowels + **`x`** (or **`mx`** for the hook's **-m** zone) + stem: something in that hook's relation to the stem (`guoxuvuvul` *anti-fighting*, `gamxohalal` *mid-ocean*). Like English *anti-*, *in-*, *trans-*, *-ward*.
-
-[Cite plus a hook](/hook-compounds#hook-prefixes)
-
-### Hooked join
-
-Role letter + extra-noun hook vowels (+ **`m`** for the zone or **`r`** to point back) + **`x`** + a join, with the hook's landmark as the `bl-` word after it: the join's set, bounded by that relation (`zexual blohehal` *everyone at the house*, `doxar bluwen` *something for me*). On `/h/` it bounds which times a restrictor covers (`huxal blanulul` *never since the thunderstorm*).
-
-[Hook plus a join](/hooked-joins#hooked-joins)
-
 ### Role compound / agent / patient / recipient
-<a id="role-compound--agent--place--patient--recipient"></a>
 
 Role letter + **`w`** + reach vowel + part consonant + stem (`zwuzeduyol`). The part consonant is the role letter the participant had in the event: **`z`** the doer (agent), **`d`** what it acts on or makes (patient), **`b`** the extra party (recipient, or the other party on a relation stem). On `/h/` a slot part is [acting as](#acting-as). A [content](#content-of-the-event) part names a quality of the event.
 
@@ -806,23 +810,35 @@ Role letter + **`w`** + reach vowel + part consonant + stem (`zwuzeduyol`). The 
 
 **Compare with:** *a guard who sits* is this stem on `/ɡ/` with a non-resume ending, and *teacher* takes reach **`e`** for the practiced role ([which noun, with resume and kinds](say-people-places.md#which-noun-intermediate)). Resume **-r** is *the one teaching* (this instance), not the practiced role.
 
-### Role pointer
-
-Role letter + **`w`** + reach vowel + part consonant + pointer vowel + ending (`zwuzer`): a participant of an earlier event (**`e`** the latest one with that role, **`a`** the other one, **`u`** the one the event left unsaid) or of this sentence (**`o`**, a reflexive). **-r** names the participant, **-l** a new one of the same kind (`zwuzel`), and **-m** the participant’s part in the event (`zwuzem`).
-
-[Pronouns](/pronouns#role-pointers) · [Role compounds](/roles#role-pointers-family)
-
 ### Role letter
 
 Word-initial job letter.
 
 [Clause](/clause#role-letters)
 
+### Role pointer
+
+Role letter + **`w`** + reach vowel + part consonant + pointer vowel + ending (`zwuzer`): a participant of an earlier event (**`e`** the latest one with that role, **`a`** the other one, **`u`** the one the event left unsaid) or of this sentence (**`o`**, a reflexive). **-r** names the participant, **-l** a new one of the same kind (`zwuzel`), and **-m** the participant’s part in the event (`zwuzem`).
+
+[Pronouns](/pronouns#role-pointers) · [Role compounds](/roles#role-pointers-family)
+
 ### Root tail
 
 The last two letters of a root: a consonant for the kind of thing and a vowel for its job. A memory aid only.
 
 [Root tails](/root-tails#root-tails)
+
+### Sake inventory
+
+Six closed psychological sakes under `/ɡ/` `/th/` `/w/`.
+
+[Sakes](/sakes#sake-inventory)
+
+### Sakes
+
+Sake + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`goyom`** + `/w/` need.
+
+[Sakes](/sakes)
 
 ### Scale
 
@@ -842,12 +858,6 @@ A sibling parent map with no parent of its own. On **a o e u**, **size** is amou
 
 [Linking sentences](/sentence-linkers#sentence-linkers)
 
-### So that / event purpose
-
-Clause-hinge **`hovam`**: intended outcome of the host (*so that Alazun sits*; NP *for a money-bag*). Not locative *toward*, not sake **`tho`**, not discourse *therefore*.
-
-[Dependents](/dependents#so-that)
-
 ### Sequence
 
 Clause join **-n** (`xan` *and then*; `xen` *or maybe*; `xun` *and then not*).
@@ -866,6 +876,12 @@ After-join `/ɡ/` (quality) or manner `/h/` in comparatives.
 
 [Comparatives](/comparatives)
 
+### So that / event purpose
+
+Clause-hinge **`hovam`**: intended outcome of the host (*so that Alazun sits*; NP *for a money-bag*). Not locative *toward*, not sake **`tho`**, not discourse *therefore*.
+
+[Dependents](/dependents#so-that)
+
 ### Span / span open
 
 Written cite `[…]`, aside `(…)` and opaque `<…>` fences, with a role letter before the bracket.
@@ -873,22 +889,6 @@ Written cite `[…]`, aside `(…)` and opaque `<…>` fences, with a role lette
 [Spans](/spans)
 
 **Compare with:** a numeric or ordered from–to is a [range](#range-ray), not a span.
-
-### Stance
-
-`/th/` role letter: how the speaker stands toward the whole claim (how sure, how known, why, as if), plus asides.
-
-[Clause](/clause#stance-th)
-
-**Compare with:** [adverb](#adverb) `/h/` says how, when, or where the event happened.
-
-### Stand-in
-
-Short word in a role slot (`darl` / `barl` / `derl` / `dorl` / `durl`, open **`-rm`**) that stands for the **following sentence**. Same vowels as speech acts; not a join (joins close a list already said).
-
-[Stand-in vowels](/stand-in-vowels#stand-in)
-
-**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause hinges](#clause-hinge-np-hinge) (`thahum`, `thohem`) name the relation; the stand-in fills `/b/`.
 
 ### Special pronoun
 
@@ -906,23 +906,27 @@ Utterance setting: statement / question / command / prohibition.
 
 **Compare with:** sake **prescription warrant** is [invited / unasked / tryout](#invited-unasked-tryout), not speech act. A [polar particle](#polar-particle) sits at the left edge.
 
+### Stance
+
+`/th/` role letter: how the speaker stands toward the whole claim (how sure, how known, why, as if), plus asides.
+
+[Clause](/clause#stance-th)
+
+**Compare with:** [adverb](#adverb) `/h/` says how, when, or where the event happened.
+
+### Stand-in
+
+Short word in a role slot (`darl` / `barl` / `derl` / `dorl` / `durl`, open **`-rm`**) that stands for the **following sentence**. Same vowels as speech acts; not a join (joins close a list already said).
+
+[Stand-in vowels](/stand-in-vowels#stand-in)
+
+**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause hinges](#clause-hinge-np-hinge) (`thahum`, `thohem`) name the relation; the stand-in fills `/b/`.
+
 ### Sufficient / necessary
 
 *If* (enough) vs *only if* (needed) vs *because* / *iff*.
 
 [Causation](/causation)
-
-### Tail suffix
-
-A dictionary word whose head is a bare root tail instead of a second root (`zahuyayel` *a friend*: *hug* + a person tail).
-
-[Root tails](/root-tails#tail-suffixes)
-
-### Check-back
-
-**`yel`** plus a [polar particle](#polar-particle) as its own turn after a sentence: asks the listener for that answer (`yel yaol.` *…, right?*, `yel yael.` *…, okay?*, `yel yuol.` *…, or am I wrong?*).
-
-[Yes, no, and not that](/polar-inventory#check-backs)
 
 ### Tag pronoun
 
@@ -930,8 +934,25 @@ Role letter + **`w`** + a tag vowel (A, E, O, U) + ending: a label the speaker a
 
 [Tag pronouns](/tag-pronouns#tag-pronouns)
 
+### Tail suffix
+
+A dictionary word whose head is a bare root tail instead of a second root (`zahuyayel` *a friend*: *hug* + a person tail).
+
+[Root tails](/root-tails#tail-suffixes)
+
+### Thanks and sorry
+
+A lone `/th/` met word is thanks (*my sake is met*). *Sorry* is unmet plus a `bl-` word for whose sake was hurt.
+
+[Thanks and sorry](/thanks-and-sorry#thanks-sorry)
+
+### Threshold
+
+Single-item rank with a number = bound on a line.
+
+[Measures, ranges, and percent](/numbers-applied)
+
 ### Time horizon
-<a id="contact--contact-channel"></a>
 
 Met-sake **`tha`** endings: **-l** lasting, **-m** unstated (default), **-r** immediate. Neither end is better.
 
@@ -942,12 +963,6 @@ Met-sake **`tha`** endings: **-l** lasting, **-m** unstated (default), **-r** im
 A proper-name phrase whose **-n** sits on the hook, join, or span; inner words keep their own endings.
 
 [Names and titles](/proper-names#titled-phrases)
-
-### Threshold
-
-Single-item rank with a number = bound on a line.
-
-[Measures, ranges, and percent](/numbers-applied)
 
 ### Topic
 
@@ -987,18 +1002,6 @@ Join / restrictor **-r** (*something* / *sometimes*); fill-ask under question. W
 
 [Joins](/joins#unspecified-member-r-phrase)
 
-### Channel on a generalization
-
-A channel on a clause with a universal fence or restrictor: how you know the general claim.
-
-[Usually vs must](/usually-vs-must#universality)
-
-### Sakes
-
-Sake + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`goyom`** + `/w/` need.
-
-[Sakes](/sakes)
-
 ### Viewpoint laterals
 
 DIR × ANCHOR; the anchor sets the facing (person or oriented object, or a role pointer on **-r**); the ending refers to the anchor, not DIR.
@@ -1022,12 +1025,6 @@ The fixed, optional pitch of each vowel: `u` high, `e` mid-high, `o` mid-low, `a
 A four-cell English map on **a o e u**. The leftover-list map is the [join series](#join-series); other series hang on size or order, or on join. Ending series are the parallel on **-l -m -r -n**: own slogans, cell logic from an ending scale.
 
 [Joins](/joins#join-type-vowel-series), [vowels cheat sheet](/cheat-sheets/vowels), [consonants cheat sheet](/cheat-sheets/consonants)
-
-### Audible start
-
-Prefer an audible left `/y/` rather than implied **`yal`**.
-
-[Singing and speech edges](/singability#audible-start)
 
 ### Yes/no
 

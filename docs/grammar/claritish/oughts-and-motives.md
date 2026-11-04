@@ -48,7 +48,7 @@ One vowel apart, and four different jobs. `thawetham` and `thawethum` are the th
 > I'm keeping Thursdays free `thawethol`.  
 > Try swapping the agenda order `thurother`.
 
-*Put the deadline in writing `thowethel`* is advice they asked for, and it says what the writing is for: so you understand the date the same way they do. *I walked instead of driving `thobathor`* gives a reason with no *should* in it, and the **-r** says the payoff was today's walk, not a fitness plan. *Try swapping the agenda order `thurother`* offers the move as a trial, aimed at whether the meeting feels worth your time, which is easier to turn down than *you should*.
+*Put the deadline in writing `thowethel`* is advice they asked for, and it says what the writing is for: so you understand the date the same way they do. *I walked instead of driving `thobathor`* gives a reason with no *should* in it, and the **-r** says the payoff was today's walk, not a fitness plan. *Try swapping the agenda order `thurother`* offers the move as a tryout, aimed at whether the meeting feels worth your time, which is easier to turn down than *you should*.
 
 ## Practice {#practice}
 
