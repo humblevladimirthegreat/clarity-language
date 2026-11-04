@@ -486,7 +486,7 @@ A claim that something **will** happen: an evidential channel plus the later off
 
 A named citation is a hello (`azozon.`). Add mid-word **`x`** plus **`a`** / **`e`** / **`o`** / **`u`** to say how long the conversation is expected to last: open-ended, a few minutes, one slot, or passing. At departure, **`xon`** means leaving soon, **`xen`** about to leave, and **`xun`** leaving now. When people set different lengths at arrival, the lesser bid holds.
 
-[Word endings](/word-endings#greeting) · [Which compound](/compound-families#conversation-length)
+[Word endings](/word-endings#greeting) · [Conversation length](/conversation-length#conversation-length)
 
 ### Hold
 
@@ -640,7 +640,7 @@ Six closed psychological sakes under `/ɡ/` `/th/` `/w/`.
 
 Number word under `/v/` `/h/` `/th/` `/y/` `/x/`.
 
-[Number markers and endings](/number-markers#number-as-roles)
+[A number in other roles](/number-roles#number-as-roles)
 
 ### Numbered alternatives
 
@@ -696,7 +696,7 @@ Special reading of a published root under a PoS.
 
 [Lexicon](lexicon.md)
 
-**Compare with:** a number under `/v/` `/h/` `/th/` `/y/` `/x/` is [Number markers and endings](/number-markers#number-as-roles), not an overlay. Lexicon abstract **-m** stays abstract.
+**Compare with:** a number under `/v/` `/h/` `/th/` `/y/` `/x/` is [A number in other roles](/number-roles#number-as-roles), not an overlay. Lexicon abstract **-m** stays abstract.
 
 ### Placement
 
@@ -714,13 +714,13 @@ Closed `/y/` particles **`yaol` / `yuol` / …**.
 
 Motive **`tho`** endings.
 
-[Motive and stake](/prescription#sake-preference)
+[Motive](/prescription#sake-preference)
 
 ### Prominence
 
 Singling out one word against others: the contrast mark `&`. Word order adds no prominence.
 
-[Emphasis and audible start](/emphasis#english-emphasis), [Tone marks](/tone-marks#tone-marks)
+[Emphasis and clefts](/emphasis#english-emphasis), [Tone marks](/tone-marks#tone-marks)
 
 ### Quasi
 
@@ -732,13 +732,13 @@ Numeric prefix `-e-xROOT` (and quasi-N): the shape of a kind, not the real thing
 
 Numeric from–to with a hook between the ends (`al` / `ul`); a ray has ±∞ as one end. The same idea on any ordered line is the [range hook](#range-hook).
 
-[Measures, ranges, and percent](/numbers-applied#ranges), [Initials and rays](/initials#rays)
+[Measures, ranges, and percent](/numbers-applied#ranges), [Open and named ranges](/open-ranges#rays)
 
 ### Range hook
 
 Stacked hook between same-role words on an ordered line: `oel` *through*, `ual` *strictly between*, `uol` *outside*.
 
-[Closed and open hooks](/ending-grids#ranges)
+[Ranges in order](/ordered-ranges#ranges)
 
 ### Rank join / set join / SHARED
 
@@ -1030,7 +1030,7 @@ A four-cell English map on **a o e u**. The leftover-list map is the [join serie
 
 Prefer an audible left `/y/` rather than implied **`yal`**.
 
-[Emphasis and audible start](/emphasis#audible-start)
+[Singing and speech edges](/singability#audible-start)
 
 ### Yes/no
 

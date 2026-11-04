@@ -132,7 +132,7 @@ On `/y/`, the special values are cheers:
 
 Under `/x/`, a digitful exponent on **`#`** is **outline depth** relative to the focused agenda item: **`x#3e2`** = *3rd sub-sub-point under the focus*; **`xrowubal`** = *parent-layer item(s)*; **`xrowamol`** = *current-layer item(s)*. A flat list uses **`x#N`** (and *Finally* / *Starting with* as above).
 
-These sit beside the numbered points of [Number as discourse marker](/number-markers#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`** ([from the end](stacked-markers.md#from-the-end)). **Just-before discourse:** **`xruwul`** = *just before that:* (step back a moment in the telling). Soft **`xruwum`**; named **`xruwun`**; resume **`xruwur`**. Corroborating is **`xral`**; independent is **`xrul`**.
+These sit beside the numbered points of [Number as discourse marker](/number-roles#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`** ([from the end](stacked-markers.md#from-the-end)). **Just-before discourse:** **`xruwul`** = *just before that:* (step back a moment in the telling). Soft **`xruwum`**; named **`xruwun`**; resume **`xruwur`**. Corroborating is **`xral`**; independent is **`xrul`**.
 
 ### Zero × exponent {#zero-exponent}
 <a id="zero-exponential"></a>
@@ -271,7 +271,7 @@ Digitless **`e`/`e-`** sits in its own group (no **`ye`** / **`yo`** / **`yu`** 
 
 ### Number as stance {#special-number-as-stance}
 
-Digitless specials, zero × exponent, and hyperbole keep their meaning under [stance](/number-markers#number-as-stance-by-marker) `/th/`:
+Digitless specials, zero × exponent, and hyperbole keep their meaning under [stance](/number-roles#number-as-stance-by-marker) `/th/`:
 
 | Form | Reading |
 |------|---------|

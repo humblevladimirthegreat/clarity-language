@@ -257,7 +257,7 @@ Naming the backup before you start helps a setback turn into the next step inste
 
 English *enough* and *too much* often compare a result with an unstated ideal, so nothing ever counts as done.
 
-A [sake bar](/prescription#sake-bars) measures an amount against what a [sake](#sakes-gratitude-and-oughts) actually needs: *enough*, *too much*, or *not enough* for that need. When you do not name which sake, the unspecified sake stands in.
+A [sake bar](/sake-bars#sake-bars) measures an amount against what a [sake](#sakes-gratitude-and-oughts) actually needs: *enough*, *too much*, or *not enough* for that need. When you do not name which sake, the unspecified sake stands in.
 
 Measuring against the need instead of against perfect helps you notice when a result is good enough to stop.
 
@@ -277,7 +277,7 @@ Marking an assumed yes as an assumption helps you check before acting, and marki
 
 English *hi* does not say whether you can stay a while, have only a few minutes, have one thing to ask, or are just passing by.
 
-A [greeting](/word-endings#greeting) is your own name said as a sentence (`SELFn.`). Calling someone is a [vocative](/speech-moves#vocative). A [conversation-length bid](/compound-families#conversation-length) adds one vowel to your name: open-ended, a few minutes, one thing to ask, or passing by. The other person can answer with their own bid; the **shorter** bid sets the limit for both of you. When you leave, the same form says whether you are leaving soon, about to leave, or leaving now. The vowel describes the conversation, not either person.
+A [greeting](/word-endings#greeting) is your own name said as a sentence (`SELFn.`). Calling someone is a [vocative](/speech-moves#vocative). A [conversation-length bid](/conversation-length#conversation-length) adds one vowel to your name: open-ended, a few minutes, one thing to ask, or passing by. The other person can answer with their own bid; the **shorter** bid sets the limit for both of you. When you leave, the same form says whether you are leaving soon, about to leave, or leaving now. The vowel describes the conversation, not either person.
 
 Marking the opening that way lets you agree on how long to talk, so saying hello never commits you to unlimited time.
 

@@ -99,8 +99,8 @@ A stance word says in words how you are speaking, where a tone mark only changes
 
 | Ageben | English | Stage |
 |--------|---------|-------|
-| [`thagebem`](/speech-acts#speech-manner) | *to be clear* / *to put it plainly* | I |
-| [`thavewom`](/speech-acts#speech-manner) | *frankly* / *honestly* | I |
+| [`thagebem`](/speech-manner#speech-manner) | *to be clear* / *to put it plainly* | I |
+| [`thavewom`](/speech-manner#speech-manner) | *frankly* / *honestly* | I |
 
 <PageBreak />
 

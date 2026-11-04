@@ -46,7 +46,7 @@ The left ending is part of the stem, so two different left roots stay distinct o
 | **`aol` / `aom`** | *using* / *by* | *wield* | *wield a tradition* | *channel* | `owurolael` / `owurolaem` |
 | **`uol` / `uom`** | *against* / *contrary to* | *oppose* | *oppose a policy* | *defy* | `owuroluel` / `owuroluem` |
 
-An abstract object keeps the hook's picture, as on the [free hook](/ending-grids#abstract-landmarks):
+An abstract object keeps the hook's picture, as on the [free hook](/abstract-landmarks#abstract-landmarks):
 
 > `zazozon dabowum vowuroluol.`
 >
@@ -80,7 +80,7 @@ English builds describing words from a relation and a thing: *anti-war*, *indoor
 >
 > "The ship is water-powered."
 
-Plain **`x`** spells the hook's **-l** reading. An **`m`** right before the **`x`** picks the hook's **-m** frame, the same **`m`** that turns `uol` into `uom`: `guomxawulol` is *contrary to the wind*, headed into it. The stem keeps its own sense choice: **-l** for the concrete sense, **-m** for the abstract one, read the way an [abstract landmark](/ending-grids#abstract-landmarks) reads after a free hook.
+Plain **`x`** spells the hook's **-l** reading. An **`m`** right before the **`x`** picks the hook's **-m** frame, the same **`m`** that turns `uol` into `uom`: `guomxawulol` is *contrary to the wind*, headed into it. The stem keeps its own sense choice: **-l** for the concrete sense, **-m** for the abstract one, read the way an [abstract landmark](/abstract-landmarks#abstract-landmarks) reads after a free hook.
 
 > `zazozon guomxawulol.`
 >

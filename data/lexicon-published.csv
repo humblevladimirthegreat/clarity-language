@@ -1,5 +1,5 @@
 emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_aliases,core
-👓,glasses,agebe,body,one,small,clarity,glasses sharpen what you see; clarity is seeing clearly,,,speech-acts.md#intermediate-practice
+👓,glasses,agebe,body,one,small,clarity,glasses sharpen what you see; clarity is seeing clearly,,,speech-manner.md#intermediate-practice
 😀,grin,ugoma,mind,holds,,delight,grin shows delight,,glad; pleasant; joy; happiness; enjoy,
 🙂,face,oveme,mind,one,,,,,,
 😅,phew,uvume,mind,one,,,,,,
@@ -49,7 +49,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🤢,nauseated,onomu,mind,takes-away,,contamination,nauseated shows disgust; contamination is the unobservable reading that something is tainted,,pollution; dirty,
 🤮,vomit,avamu,mind,takes-away,,revulsion,vomit shows revulsion,,,
 🤧,sneeze,uzemu,mind,takes-away,,infection,sneeze signals a cold; infection is the unobservable spread,,cough,
-🥵,hot,ohamu,mind,takes-away,,fever,a hot face is the body overheating from within,,,
+🥵,hot,ohamu,mind,takes-away,,fever,a hot face is the body overheating from within,,,sake-bars.md#intermediate-practice
 🥶,cold,ogomu,mind,takes-away,,,,,,
 🥴,woozy,awumu,mind,takes-away,,intoxication,woozy shows intoxication,,,
 🤯,mind-blown,amame,mind,one,,astonishment,a mindblown head bursts with astonishment,,,
@@ -681,7 +681,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 💧,droplet,odele,nature,one,small,beginning,one droplet starts the flow; beginning is a small start,,source; original; initial; wet; liquid,
 🌊,ocean,ohala,nature,holds,big,overwhelm,ocean is vast surging water; flood is high-arousal surge,,sea; flood,comparatives.md#beginner-practice
 🎃,jack-o-lantern,ohova,doing,holds,medium,concealment,jack-o-lantern hides a carved face; disguise hides true identity,,hide,
-🎄,christmas-tree,ogare,counting,one,big,tradition,christmas tree marks yearly ritual; tradition is repeated custom,,traditional; conservative; classic; convention; conventional; classical,
+🎄,christmas-tree,ogare,counting,one,big,tradition,christmas tree marks yearly ritual; tradition is repeated custom,,traditional; conservative; classic; convention; conventional; classical,abstract-landmarks.md#intermediate-practice
 🎆,fireworks,ovuva,doing,holds,none,year,fireworks greet each new year; year is the calendar-year unit,,,
 🎇,sparkle,uzeve,doing,one,small,coulomb,a sparkler holds electric charge in the hand; coulomb is the SI charge unit,,,
 🧨,firecracker,avevu,doing,takes-away,small,,,,,
@@ -817,7 +817,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🎧,headphones,awa,tool,holds,,immersion,headphones seal you in sound; immersion is deep involvement,,concentration; involvement,
 📻,radio,arowe,tool,one,medium,broadcast,radio sends sound through air; broadcast is sending widely,,spread,ending-grids.md#intermediate-practice
 🎷,saxophone,azoro,counting,order,medium,,,,,
-🎺,trumpet,adoro,counting,order,medium,,,,,speech-acts.md#intermediate-practice
+🎺,trumpet,adoro,counting,order,medium,,,,,speech-manner.md#intermediate-practice
 🪊,trombone,edoro,counting,order,medium,fanfare,trombones blare to herald a grand arrival,,,
 🪗,accordion,agora,counting,holds,medium,width,an accordion stretches out sideways; width is how far across,,,
 🎸,guitar,egore,counting,one,medium,rebellion,guitar drives raw loud sound; rebellion is breaking from norms,,revolution,spans.md#beginner-practice
@@ -854,7 +854,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🔍,magnify,umewe,tool,one,small,scrutiny,magnifier enlarges small detail; scrutiny is close examination,v:find,seek; examination; detect; notice,word-endings.md#beginner-practice
 🕯️,candle,agewo,tool,order,small,awash,candle light fills the room; awash is charge in the surrounding field,,wax,prescription.md#intermediate-practice
 💡,lightbulb,owe,tool,one,,candela,lightbulb sets luminous intensity; candela is the SI luminous-intensity unit,,,
-🔦,flashlight,avewo,tool,order,small,revelation,flashlight reveals what was dark; revelation is making known,,expose; flash,speech-acts.md#intermediate-practice
+🔦,flashlight,avewo,tool,order,small,revelation,flashlight reveals what was dark; revelation is making known,,expose; flash,speech-manner.md#intermediate-practice
 🏮,lantern,olowo,tool,order,medium,guidance,lantern lights the path ahead; guidance is showing the way,,counsel,
 🪔,lamp,elowa,tool,holds,medium,,,,,
 📖,book,ana,title,holds,,knowledge,book holds knowledge,,know; literary,word-endings.md#beginner-practice
@@ -919,7 +919,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ⛏️,pick,eyowu,tool,takes-away,medium,deep,a pick digs far below the surface; deep is far below,,,
 🗡️,weapon,ewowu,tool,takes-away,medium,,a blade stands for any weapon,,,
 ⚔️,duel,oduvu,doing,takes-away,none,conflict,two fighters face off to settle a quarrel,,attack; opposition; dispute; war,
-💣,bomb,abowu,tool,takes-away,medium,catastrophe,a bomb wrecks everything; catastrophe is disaster,,disaster; crisis,
+💣,bomb,abowu,tool,takes-away,medium,catastrophe,a bomb wrecks everything; catastrophe is disaster,,disaster; crisis,abstract-landmarks.md#intermediate-practice
 🪃,boomerang,obovo,doing,order,medium,,,v:throw,,
 🏹,archery,aruno,title,order,none,aim,archery sends an arrow to a target; aim is directing toward target,v:hunt,focus,
 🛡️,shield,ehowu,tool,takes-away,medium,defense,shield blocks incoming blows; defense is guarding against harm,,defend,

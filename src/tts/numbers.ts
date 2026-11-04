@@ -23,7 +23,7 @@ export function markerToSpeech(marker: NumberMarker): string {
   return "re";
 }
 
-/** Letter names for code characters ([phonology § Letter names](../../docs/grammar/phonotactics.md#letter-names)). */
+/** Letter names for code characters ([phonology § Letter names](../../docs/grammar/letter-names.md#letter-names)). */
 const CODE_LETTER_NAMES: Record<string, string> = {
   b: "bu", d: "de", g: "go", h: "ha", z: "zu", v: "ve", r: "ro", l: "la", n: "nu", m: "me", th: "tho", w: "wa", y: "yu",
 };

@@ -66,7 +66,7 @@ describe("vowel pitch", () => {
   });
 
   it("says the page's letter names on the scale down", () => {
-    const names = letterNameTable(readFileSync(grammarFile("phonotactics.md"), "utf8"));
+    const names = letterNameTable(readFileSync(grammarFile("letter-names.md"), "utf8"));
     const said = drillPhrases("down", true).flatMap((p) => p.steps.map((s) => s.onset! + s.vowel));
     assert.deepEqual(said, CONSONANT_LETTERS.map((l) => names.get(l)));
   });

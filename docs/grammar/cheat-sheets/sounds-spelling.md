@@ -26,7 +26,7 @@ Vowel pitch is optional and adds no meaning; when sound and pitch disagree, the 
 
 ### Consonants and their names {#consonants}
 
-The name is what you say when you [spell a word aloud](/phonotactics#letter-names). The unvoiced sound is fine for style; prefer the voiced one so you can hold a note.
+The name is what you say when you [spell a word aloud](/letter-names#letter-names). The unvoiced sound is fine for style; prefer the voiced one so you can hold a note.
 
 | Letter | Say | Like | Unvoiced | Name | Stage |
 |--------|-----|------|----------|------|-------|
@@ -90,11 +90,11 @@ Word-initial `x` is the [continue](/dependents#continue-x) prefix, not a compoun
 
 ### Digit syllables and letter names {#digit-names}
 
-Ten letters also start a [digit syllable](/numbers#counts); the table is [here](/phonotactics#letter-names). The letter's name uses the opposite vowel (`a`↔`u`, `o`↔`e`), so naming a letter is not counting.
+Ten letters also start a [digit syllable](/numbers#counts); the table is [here](/letter-names#letter-names). The letter's name uses the opposite vowel (`a`↔`u`, `o`↔`e`), so naming a letter is not counting.
 
 | Letter | Digit | Name | Stage |
 |--------|-------|------|-------|
-| [`b`](/phonotactics#letter-names) | `ba` (1) | `bu` | I |
+| [`b`](/letter-names#letter-names) | `ba` (1) | `bu` | I |
 | `d` | `do` (2) | `de` | I |
 | `g` | `ge` (3) | `go` | I |
 | `h` | `hu` (4) | `ha` | I |

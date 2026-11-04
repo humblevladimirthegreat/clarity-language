@@ -137,7 +137,7 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 ### *Per hour* and *3 to 1* {#per-unit}
 
-**Needs:** [Number as adverb](/number-markers#number-as-adverb-by-marker) · [Measure phrases](/numbers-applied#measure-phrases) · [Factor](/comparative-arity#factor)
+**Needs:** [Number as adverb](/number-roles#number-as-adverb-by-marker) · [Measure phrases](/numbers-applied#measure-phrases) · [Factor](/comparative-arity#factor)
 
 *Three times an hour* is a count per unit. Write the count, then the divider **`hrubal`** (*÷1*), then the unit as a `bl-` word right after it. The divider hosts the unit, so the `bl-` word is structural, not a recipient.
 
@@ -155,7 +155,7 @@ A ratio (*three cats to one dog*) is a [factor](/comparative-arity#factor) on th
 
 ### Percent points, factors, and other wholes
 
-**Needs:** [Percent](/numbers-applied#percent-and-percentage-points) · [Number as adverb](/number-markers#number-as-adverb-by-marker) · [Of relations](/of-relations#of-relations)
+**Needs:** [Percent](/numbers-applied#percent-and-percentage-points) · [Number as adverb](/number-roles#number-as-adverb-by-marker) · [Of relations](/of-relations#of-relations)
 
 **`yu`** is a point-scale amount or delta (`+2` percentage points; often `/v/` **`ra`** / **`ru`**: increase or decrease by that point amount). `from A% to B%` uses [ranges](/numbers-applied#ranges).
 
@@ -170,7 +170,7 @@ A bare `/z/` (or other freestanding) **`…yo`** percent with no named whole is 
 ### Unspecified value in the range (**-r**)
 <a id="unspecified-value-in-the-range--r"></a>
 
-**Needs:** [Ranges](/numbers-applied#ranges) · [Named and unknown ranges](/initials#named-ranges)
+**Needs:** [Ranges](/numbers-applied#ranges) · [Named and unknown ranges](/open-ranges#named-ranges)
 
 A range hook with **-r** names **one value in the band** without saying which.
 
@@ -300,7 +300,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 ### How many and how big {#quantity-words}
 
-**Needs:** [Many and few](/vague-amounts#vague-amounts) · [Bars](/comparative-arity#bars) · [Place on a scale](/comparative-arity#place-on-a-scale) · [Measure phrases](/numbers-applied#measure-phrases) · [Rays](/initials#rays) · [Fractions](/numbers-applied#fractions)
+**Needs:** [Many and few](/vague-amounts#vague-amounts) · [Bars](/comparative-arity#bars) · [Place on a scale](/comparative-arity#place-on-a-scale) · [Measure phrases](/numbers-applied#measure-phrases) · [Rays](/open-ranges#rays) · [Fractions](/numbers-applied#fractions)
 
 | English | Ageben |
 |---------|--------|
@@ -346,7 +346,7 @@ With no `/b/`, **`thubom`** is the item's own usual level or the usual case in t
 | *strong* / *powerful* (than most people) | `thubom bleyelx zol gabobem` |
 | *weak* / *feeble* / *frail* (than most people) | `thubom bleyelx zuol gabobem` |
 | *weak today* / *not as strong as usual* | `thubom zuol gabobem` |
-| *not strong enough* (for what you need) | `thudatham zuol gabobem` ([sake bar](/prescription#sake-bars)) |
+| *not strong enough* (for what you need) | `thudatham zuol gabobem` ([sake bar](/sake-bars#sake-bars)) |
 | *busy* / *hard-working* | `thubom zol guzubam` (more effort than usual) |
 | *far* / *far away* / *distant* / *remote* | `thubom zol guzavom` (farther than usual) |
 | *wide* / *broad* | `thubom zol gorahom` |
@@ -532,7 +532,7 @@ When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*)
 
 Unnumbered `zobevam` is just *a problem*, not a candidate in a set, write **`g#N`** when brainstorming. `-l` on the first two roots is still the picture (`zobeval` *a puzzle piece*; `zegewol` *a key*; `vegewol` *to unlock*). Reframing the **same** situation is different wording of one frame, not a second digit.
 
-**Compare with:** discourse *point N:* uses free **`x#N`** ([number as discourse](/number-markers#number-as-discourse-marker-by-marker)), a continue. Numbered alternatives are problem / solution / goal nouns plus **`g#N`**. Clause *so that* is [**`hovam`**](/dependents#so-that), not **`oval`**.
+**Compare with:** discourse *point N:* uses free **`x#N`** ([number as discourse](/number-roles#number-as-discourse-marker-by-marker)), a continue. Numbered alternatives are problem / solution / goal nouns plus **`g#N`**. Clause *so that* is [**`hovam`**](/dependents#so-that), not **`oval`**.
 
 ## Practice {#practice}
 

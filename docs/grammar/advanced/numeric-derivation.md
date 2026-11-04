@@ -194,7 +194,7 @@ On a free number, **`±0e-1`** is an amount. Before a root, the same bodies wipe
 |--------|-----|---------|-----|
 | **`#0exROOT`** | rank-annihilated / disqualified form of ROOT: place wiped as a kind property | `zromowaxamahum`: *a disqualified challenge (as type)*; `vromowaxamahum`: *to disqualify that challenge-kind*. Free **`g#0e`** is *disqualified place in this series*. | **#** is place; **0e** wipes that place |
 
-**`#0e`** vs **`#0`:** annihilated place vs zeroth-order rung. **`#0e`** vs **`+0e`:** rank wipe vs kind total-null. Free **`#e0`** is [current generation](initials.md#ordinal-generation). Same role-letter framing as other ordinal morphs (`/z/` disqualified kind, `/v/` disqualify-as-kind, `/y/` *Disqualified!*, …).
+**`#0e`** vs **`#0`:** annihilated place vs zeroth-order rung. **`#0e`** vs **`+0e`:** rank wipe vs kind total-null. Free **`#e0`** is [current generation](generations.md#ordinal-generation). Same role-letter framing as other ordinal morphs (`/z/` disqualified kind, `/v/` disqualify-as-kind, `/y/` *Disqualified!*, …).
 
 ### Ordinal digit morphs (`#N`)
 <a id="ordinal-digit-morphs"></a>

@@ -1,6 +1,6 @@
 # Split later sittings onto job-titled pages
 
-**Status:** Phases 1–4 shipped. Not design authority; fold into grammar / meta, then drop.  
+**Status:** Phases 1–5 shipped. Not design authority; fold into grammar / meta, then drop.  
 **Related:** [learning levels](../meta/learning-levels.md#how-to-apply), [later-stage shape](../meta/grammar-docs.md#later-stage-shape), [peel headings](../../scripts/peel-headings.ts), [drill generation](../meta/drill-generation.md), [level reviews](../meta/translation-exercises.md#level-reviews).
 
 A title-and-organization pass already renamed leftover Intermediate / Advanced titles and promoted wrapper subsections. It did **not** split. This file is the worklist and the per-session prompt.
@@ -36,7 +36,7 @@ Ids below were current when this file was written. Re-read the parent before pee
 | 2 | `ability.md`, `span-mention.md`, `of-relations.md` | **Done.** |
 | 3 | `singability.md`, `join-across-roles.md`, `universality.md` | Place-name leftover; join leftovers; dated channel. **Done.** |
 | 4 | `polar-inventory.md`, `iff-fault.md`, `sentence-linkers.md` | Rest of the must-split list. **Done.** |
-| 5 | Optional leftovers in [Phase 5](#phase-5) | Only if the parent title is still a list of unrelated jobs |
+| 5 | Optional leftovers in [Phase 5](#phase-5) | Only if the parent title is still a list of unrelated jobs. **Done.** |
 | 6 | Sweep | Titles, sidebar order, AGENTS Owns, cheat sheets, reviews |
 
 When a phase finishes, mark its rows done in this file.
@@ -222,6 +222,19 @@ npm run peel-headings -- --parent sentence-linkers.md --ids stand-in,stand-in-ba
 ## Phase 5
 
 Optional. Split only if, after Phases 1–4, the parent title is still a list of unrelated jobs.
+
+Done.
+
+- `number-markers.md` → `number-roles.md` (**A number in other roles**: `/v/` `/h/` `/y/` `/x/` `/w/` `/th/` by marker). Parent keeps its title.
+- `initials.md` → `open-ranges.md` (**Open and named ranges**: rays, named ranges) and `generations.md` (**Generations**: ordinal generations, kin). Parent retitled **Initials**. No Practice on any of the three, matching the parent (no translation checkpoint).
+- `compound-families.md` → `conversation-length.md` (**Conversation length**). The new sitting sits **before** *Which compound*, so the family table recaps it instead of previewing it.
+- `phonotactics.md` → `letter-names.md` (**Letter names**). Parent retitled **Word shape**; syllabic `l` stayed. No Practice, matching phonology (not translation).
+- `prescription.md` → `sake-bars.md` (**Enough and too**). Parent retitled **Motive**; whose stake and contrary `uom` stayed.
+- `ending-grids.md` → `ordered-ranges.md` (**Ranges in order**) and `abstract-landmarks.md` (**In a crisis, out of debt**). Detail on the hook stayed with the grids.
+- `speech-acts.md` → `speech-manner.md` (**Frankly and to be clear**). The number-as-interjection stub was dropped (it repeated `number-roles.md`).
+- `emphasis.md`: **Starting a sentence audibly** moved onto `singability.md` (speech edges); parent retitled **Emphasis and clefts**.
+
+Skipped: `label-scope.md` (SAME endings and commands to be ADJ are packaging, one family), `special-values.md` (number as stance finishes the trio), `join-limits.md` (one series), `stacked-markers.md` (ambient magnitude too thin), `numbers-applied.md` (letter codes' home would be Beginner), `left-bound.md` (title is not a list; leaving out who acts adds no form, a recipe-track candidate for Phase 6).
 
 | Parent | Current title | Cut if needed |
 |--------|---------------|----------------|

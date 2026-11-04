@@ -47,11 +47,13 @@ export const beginnerLessons = [
 
 /** Intermediate sittings, in the same topic order as the Beginner group. */
 export const intermediateLessons = [
-  { text: 'Word shape and letter names', link: '/phonotactics' },
+  { text: 'Word shape', link: '/phonotactics' },
+  { text: 'Letter names', link: '/letter-names' },
   { text: 'Names and titles', link: '/proper-names' },
   { text: 'Place-name roots', link: '/place-name-roots' },
   { text: 'Longer chains', link: '/left-bound' },
   { text: 'Doubling and stacking acts', link: '/speech-acts' },
+  { text: 'Frankly and to be clear', link: '/speech-manner' },
   { text: 'Tone marks', link: '/tone-marks' },
   { text: 'Linking sentences', link: '/sentence-linkers' },
   { text: 'Stand-in vowels', link: '/stand-in-vowels' },
@@ -69,6 +71,8 @@ export const intermediateLessons = [
   { text: 'Rhetorical questions', link: '/rhetorical-questions' },
   { text: 'Who, which, and any', link: '/fill-ask-roles' },
   { text: 'Closed and open hooks', link: '/ending-grids' },
+  { text: 'In a crisis, out of debt', link: '/abstract-landmarks' },
+  { text: 'Ranges in order', link: '/ordered-ranges' },
   { text: 'In fact, here, and anyway', link: '/discourse-hooks' },
   { text: 'Exclusive and ranked times', link: '/more-occasions' },
   { text: 'Part of, made of, from', link: '/of-relations' },
@@ -77,12 +81,14 @@ export const intermediateLessons = [
   { text: 'Mention', link: '/span-mention' },
   { text: 'Scope islands', link: '/scope-islands' },
   { text: 'Number markers and endings', link: '/number-markers' },
+  { text: 'A number in other roles', link: '/number-roles' },
   { text: 'How many and how big', link: '/digitless-exponents' },
   { text: 'Measures, ranges, and percent', link: '/numbers-applied' },
   { text: 'Place on a scale', link: '/comparative-arity' },
   { text: 'Because and iff', link: '/iff-fault' },
   { text: 'CAUSE', link: '/cause' },
-  { text: 'Motive and stake', link: '/prescription' },
+  { text: 'Motive', link: '/prescription' },
+  { text: 'Enough and too', link: '/sake-bars' },
   { text: 'Feelings', link: '/feelings-permission' },
   { text: 'Permission and consent', link: '/permission-consent' },
   { text: 'How you know', link: '/evidentiality' },
@@ -93,6 +99,7 @@ export const intermediateLessons = [
   { text: 'As if', link: '/notional' },
   { text: 'Left, right, and facing', link: '/viewpoint' },
   { text: 'Role scope', link: '/role-scope' },
+  { text: 'Conversation length', link: '/conversation-length' },
   { text: 'Which compound', link: '/compound-families' },
   { text: 'Decision and try', link: '/ability' },
   { text: 'Want', link: '/want' },
@@ -101,7 +108,7 @@ export const intermediateLessons = [
 /** Advanced sittings, in the same topic order as the earlier groups. */
 export const advancedLessons = [
   { text: 'Singing and speech edges', link: '/singability' },
-  { text: 'Emphasis and audible start', link: '/emphasis' },
+  { text: 'Emphasis and clefts', link: '/emphasis' },
   { text: 'Stand-in words', link: '/stand-in-roles' },
   { text: 'Join limits', link: '/join-limits' },
   { text: 'Cite plus a hook', link: '/hook-compounds' },
@@ -115,7 +122,9 @@ export const advancedLessons = [
   { text: 'Dated channel', link: '/dated-channel' },
   { text: 'Usually vs must', link: '/usually-vs-must' },
   { text: 'Root tails', link: '/root-tails' },
-  { text: 'Initials and rays', link: '/initials' },
+  { text: 'Initials', link: '/initials' },
+  { text: 'Open and named ranges', link: '/open-ranges' },
+  { text: 'Generations', link: '/generations' },
   { text: 'Numeric prefixes', link: '/numeric-derivation' },
 ]
 

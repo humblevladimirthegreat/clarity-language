@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Motive and stake {#motive-and-stake}
+# Motive {#motive}
 
 ### Motive (`tho`): time horizon
 <a id="sake-preference"></a>
@@ -143,68 +143,6 @@ Sake words cannot follow **`uom`**: to say an act goes against someone's interes
 
 **Compare with:** *despite the rain* is **`uom`** or **`hezem`** with a noun in `/b/` (`zazozon vowurol uom berulal.`). *Although Alazun said no* as a full sentence is **`hezem blarl`** plus that sentence. The sentence after **`blarl`** needs an event or a thing, so a stance word alone cannot fill it; use **`uom`** with the stance instead.
 
-### Enough and too (sake bars) {#sake-bars}
-
-English *enough* and *too much* compare an amount with **what a need requires**. Write a met sake word on `/th/` as the [bar](comparative-arity.md#bars) right before a rank join: it stands for what that sake needs, and the rank join compares the amount with it. The equal-rank join **`zoel`** is *enough*. Rank **`zol`** is *too much*, and **`zuol`** is *not enough*. Use the unspecified sake **`uda`** when you do not name which sake.
-
-> `zedudal thudatham zoel gral.`
->
-> [z-tea | th-sake-met-any-term | z-equal-rank | g-amount]
->
-> "There is enough tea."
-
-> `zedudal thudatham zol gral.`
->
-> [z-tea | th-sake-met-any-term | z-rank/more | g-amount]
->
-> "There is too much tea."
-
-> `zedudal thudatham zuol gral.`
->
-> [z-tea | th-sake-met-any-term | z-rank/less | g-amount]
->
-> "There is not enough tea."
-
-The bar keeps its [time-horizon ending](/sakes#time-horizon-endings-on-met), which now says **how long the payoff has to last**: **`thudathal`** is *enough to last*, and **`thudathar`** is *enough for now*.
-
-> `zedudal thudathar zoel gral.`
->
-> [z-tea | th-sake-met-immediate | z-equal-rank | g-amount]
->
-> "There is enough tea for now."
-
-Name a sake to say which need sets the limit. With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. To say **whose** stake it is, put that person in a `bl-` word right after the bar.
-
-> `zedudal thobatham zol gohamul.`
->
-> [z-tea | th-physical-met-any-term | z-rank/more | g-hot]
->
-> "The tea is too hot to be safe."
-
-> `zedudal thobatham blalazun zol gohamul.`
->
-> [z-tea | [th-physical-met-any-term | bl-Alazun] | z-rank/more | g-hot]
->
-> "The tea is too hot for Alazun's health."
-
-On the [time scale](comparative-arity.md#time-scale), a sake bar is *too late* and *too early*:
-
-> `zazozon thudatham zuol bral vevorol.`
->
-> [z-Azozon | th-sake-met-any-term | z-rank/less | b-later] | v-arrival
->
-> "Azozon arrives too early."
-
-| Ageben | Use | English |
-|--------|-----|---------|
-| met sake bar + **`zoel`** | reaches what the sake needs | *enough* / *ADJ enough* |
-| met sake bar + **`zol`** | past what the sake needs | *too much* / *too ADJ* / *too late* |
-| met sake bar + **`zuol`** | short of what the sake needs | *not enough* / *too early* |
-| bar ending **-l** / **-m** / **-r** | how long the payoff has to last | *enough to last* / *enough* / *enough for now* |
-| `bl-` word right after the bar | whose stake | *too hot for Alazun* |
-
-**Compare with:** the same met word after the fence is about the whole claim: `zedudal zol gohamul thobatham` is *the tea is the hottest, and that serves my health*.
-
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -229,10 +167,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *relatedness* | `awel` |
 | *speaker* | `uwen` |
-| *physical* | `obal` |
-| *heavy* | `arolem` |
 | *sit* | `vehohel` |
 | *sleep* | `vezuvel` |
+| *walk* | `vowurol` |
 | *PLAN* | `thagom` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
@@ -261,12 +198,12 @@ z-Ahelan | v-pray | [th-relatedness-motive-lasting | bl-Alazun]
 z-speaker | v-sit | th-purpose-motive-lasting
 :::
 
-**4.** *The candle is too heavy to be safe.*
+**4.** *Alazun walks for relatedness in the long term.*
 
 ::: details Show answer
-`zagewol thobatham zol garolem.`
+`zalazun vowurol thawethol.`
 
-[z-candle | th-physical-met-any-term | z-rank/more | g-heavy]
+z-Alazun | v-walk | th-relatedness-motive-lasting
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}

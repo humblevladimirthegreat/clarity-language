@@ -57,7 +57,7 @@ Every hook in the [extra-noun grid](/extra-noun-hooks#extra-noun-intermediate) w
 | `ae` | *using* | `zaoxual blanewul` *everyone with a knife* | *by* | `zaomxual bledavol` *everyone going by train* |
 | `ue` | *against* | `zuoxual bluwen` *everyone against me* | *contrary to* | `zuomxual blonam` *everyone acting contrary to the policy* |
 
-An [abstract landmark](/ending-grids#abstract-landmarks) reads the same way: `zaxual blabowum` *everyone in crisis*, `zuoxual blonam` *everyone against the policy*. A person landmark gives [here and there](/here-there#deixis): `zemxual bluwen` *everyone here*, `zemxual blawan` *everyone there by you*, `zumxual blayan` *everyone over there*, and `zexual bluwen` *everyone right where I am*.
+An [abstract landmark](/abstract-landmarks#abstract-landmarks) reads the same way: `zaxual blabowum` *everyone in crisis*, `zuoxual blonam` *everyone against the policy*. A person landmark gives [here and there](/here-there#deixis): `zemxual bluwen` *everyone here*, `zemxual blawan` *everyone there by you*, `zumxual blayan` *everyone over there*, and `zexual bluwen` *everyone right where I am*.
 
 **Compare with:** belonging and origin are [of-relations](/of-relations#of-relations), not places. *Everyone in the family* (its members) is `zual gobom bluvayal`, and *everyone from the town* (where they are from) is `zual gaham bluhuham`. `zaxual bluvayal` is everyone inside the family's space, and `zuxual bluhuham` is everyone who came from the town, since `u` names where a path starts.
 

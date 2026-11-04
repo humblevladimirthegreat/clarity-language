@@ -113,59 +113,18 @@ The degree word grades the reaction itself. A tone mark is how you sound saying 
 
 To say who or what you react to (*hooray for Azozon*), add a [hook](/hooks#extra-noun) and `/b/` after the reaction: `yahumal ol bazozon.` A bare `/b/` there would start the body as the person who receives.
 
-### Speech manner (*frankly* / *to be clear*) {#speech-manner}
-
-English *frankly* and *to be clear* say in words how you are speaking. A tone mark cannot do that, because it changes only your voice. Instead, use a stance word (`/th/`, [clause](/clause#stance-th)) built on an ordinary root. Like any stance word, it may sit anywhere in the sentence; the start is usual.
-
-<!-- cheat-sheet: talking -->
-| Ageben | English | Root |
-|--------|---------|------|
-| **`thagebem`** | *to be clear* / *to put it plainly* | clarity |
-| **`thavewom`** | *frankly* / *honestly* / *to tell the truth* | revelation |
-
-> `thagebem zazozon vowurol.`
->
-> th-clarity | z-Azozon | v-walk
->
-> "To be clear, Azozon walks."
-
-> `thavewom zalazun vezuvel.`
->
-> th-revelation | z-Alazun | v-sleep
->
-> "Honestly, Alazun is sleeping."
-
-**Compare with:** the stance word describes your way of saying the claim, not the action. `/h/` on the same root (`hagebem`) would describe how the action itself is done.
-
-### Number as interjection {#number-as-interjection}
-
-A number word in `/y/` is a call-out (*Three more!*, a score). It can sit with the other opening `/y/` words, before the act word, or stand alone as its own turn.
-
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a music rehearsal
 
-**New words:**
-
-| English | Ageben | Cue |
-|---------|--------|-----|
-| *trumpet* | `adorol` | 🎺 |
-| *clarity* | `thagebem` | 👓 from *glasses*: seeing it plainly |
-| *revelation* | `thavewom` | 🔦 from *flashlight*: showing what was hidden |
-
 **Review:**
 
 | English | Ageben |
 |---------|--------|
-| *Azozon* | `azozon` |
-| *Alazun* | `alazun` |
 | *stop* | `vezohul` |
 | *run* | `veruvol` |
-| *page* | `obonol` |
-| *write* | `varuyol` |
-| *see* | `vayebel` |
 | *very* | `welazem` |
 | *surprise* | `emel` |
 
@@ -179,15 +138,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 y-prohibition | y-prohibition | v-run
 :::
 
-**2.** *To be clear, Azozon writes a page.*
-
-::: details Show answer
-`thagebem zazozon dobonol varuyol.`
-
-th-clarity | z-Azozon | d-page | v-write
-:::
-
-**3.** *Please, please stop.*
+**2.** *Please, please stop.*
 
 ::: details Show answer
 `yom yom vezohul.`
@@ -195,17 +146,17 @@ th-clarity | z-Azozon | d-page | v-write
 y-request | y-request | v-stop
 :::
 
-#### Ageben → English {#intermediate-ageben-to-english}
-
-**1.** `yem thavewom zalazun vayebel dadorol.`
+**3.** *Stop. I mean it.*
 
 ::: details Show answer
-y-soft-question | th-revelation | z-Alazun | v-see | d-trumpet
+`yol yol vezohul.`
 
-*Honestly, does Alazun see the trumpet, I wonder?*
+y-command | y-command | v-stop
 :::
 
-**2.** `welazem yemem.`
+#### Ageben → English {#intermediate-ageben-to-english}
+
+**1.** `welazem yemem.`
 
 ::: details Show answer
 [w-very | y-amazement]
@@ -213,12 +164,20 @@ y-soft-question | th-revelation | z-Alazun | v-see | d-trumpet
 *Truly amazing!*
 :::
 
-**3.** `yul yol vezohul.`
+**2.** `yul yol vezohul.`
 
 ::: details Show answer
 y-prohibition | y-command | v-stop
 
 *Go ahead, stop.* (sarcastic: don't stop)
+:::
+
+**3.** `yom yom veruvol.`
+
+::: details Show answer
+y-request | y-request | v-run
+
+*Please, please run.*
 :::
 
 #### Pick one {#intermediate-pick-one}

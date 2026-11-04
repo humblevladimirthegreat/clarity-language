@@ -174,24 +174,24 @@ The role letter picks the use; the marker still says amount, rank, or code. Only
 
 | Slot | `ra` `+` | `ru` `-` | `re` `#` | `ro` `_` | Stage |
 |------|----------|----------|----------|----------|-------|
-| [`/v/` verb](/number-markers#number-as-verb-by-marker) | add N | remove N | take place N | enter / dial the code | I |
-| [`/h/` adverb](/number-markers#number-as-adverb-by-marker) | *N times* | *÷N*, *every Nth* | *for the Nth time* | clock time | I |
-| [`/y/` shout](/number-markers#number-as-interjection-by-marker) | *N more!* | *N short!* | *First!* | *Three!* (a score) | I |
-| [`/x/` list point](/number-markers#number-as-discourse-marker-by-marker) | corroborating N | independent N | point N | cite label N | I |
-| [`/th/` stance](/number-markers#number-as-stance-by-marker) | N% likely | unlikely | N-th hand | per source N | I |
+| [`/v/` verb](/number-roles#number-as-verb-by-marker) | add N | remove N | take place N | enter / dial the code | I |
+| [`/h/` adverb](/number-roles#number-as-adverb-by-marker) | *N times* | *÷N*, *every Nth* | *for the Nth time* | clock time | I |
+| [`/y/` shout](/number-roles#number-as-interjection-by-marker) | *N more!* | *N short!* | *First!* | *Three!* (a score) | I |
+| [`/x/` list point](/number-roles#number-as-discourse-marker-by-marker) | corroborating N | independent N | point N | cite label N | I |
+| [`/th/` stance](/number-roles#number-as-stance-by-marker) | N% likely | unlikely | N-th hand | per source N | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Three times](/number-markers#number-as-adverb-by-marker) | `zalazun vowurol hragel.` | *Alazun walks three times.* | I |
-| [For the third time](/number-markers#number-as-adverb-by-marker) | `hrogel` | *for the third time* | I |
-| [Three more!](/number-markers#number-as-interjection-by-marker) | `yragel` | *Three more!* | I |
-| [Three!](/number-markers#number-as-interjection-by-marker) | `y_3` | *Three!* (a score) | I |
-| [First!](/number-markers#number-as-interjection-by-marker) | `yrobal` | *First!* | I |
-| [Point 2](/number-markers#number-as-discourse-marker-by-marker) | `xrodol` | *point 2:* | I |
-| [Corroborating 2](/number-markers#number-as-discourse-marker-by-marker) | `xradol` | *corroborating 2:* | I |
-| [Independent 2](/number-markers#number-as-discourse-marker-by-marker) | `xrudol` | *independent 2:* | I |
-| [Likelihood](/number-markers#number-as-stance-by-marker): the digits are already a percent | `zalazun vowurol th+70.` | *Alazun is probably walking.* (I'd put it at 70%) | I |
-| [Place on a scale](/number-markers#number-as-degree): `w#N` from 2; [see comparatives](/comparative-arity#place-on-a-scale) | `zazozon zol wrodol gelazem.` | *Azozon is the second biggest.* | I |
+| [Three times](/number-roles#number-as-adverb-by-marker) | `zalazun vowurol hragel.` | *Alazun walks three times.* | I |
+| [For the third time](/number-roles#number-as-adverb-by-marker) | `hrogel` | *for the third time* | I |
+| [Three more!](/number-roles#number-as-interjection-by-marker) | `yragel` | *Three more!* | I |
+| [Three!](/number-roles#number-as-interjection-by-marker) | `y_3` | *Three!* (a score) | I |
+| [First!](/number-roles#number-as-interjection-by-marker) | `yrobal` | *First!* | I |
+| [Point 2](/number-roles#number-as-discourse-marker-by-marker) | `xrodol` | *point 2:* | I |
+| [Corroborating 2](/number-roles#number-as-discourse-marker-by-marker) | `xradol` | *corroborating 2:* | I |
+| [Independent 2](/number-roles#number-as-discourse-marker-by-marker) | `xrudol` | *independent 2:* | I |
+| [Likelihood](/number-roles#number-as-stance-by-marker): the digits are already a percent | `zalazun vowurol th+70.` | *Alazun is probably walking.* (I'd put it at 70%) | I |
+| [Place on a scale](/number-roles#number-as-degree): `w#N` from 2; [see comparatives](/comparative-arity#place-on-a-scale) | `zazozon zol wrodol gelazem.` | *Azozon is the second biggest.* | I |
 
 `th+` / `th-` is *likely* / *unlikely* with no figure; `th_N` is *per source N*; `th#N` is *N-th hand* from 2. A factor goes on `/h/`, never `/w/`. Likelihood **-m** hedges (`th~+70`), **-n** names a level (`th@+95`), **-r** repeats it (`th=+70`).
 
@@ -315,20 +315,20 @@ To limit to one end, make the other end infinity:
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`zrazal al zrawal`](/initials#rays) | 5 up to +∞ | *5 or more* | A |
-| [`zrawal ul zrazal`](/initials#rays) | 5 left out | *more than 5* | A |
-| [`zruwal al zrazal`](/initials#rays) | −∞ up to 5 | *5 or less* | A |
-| [`zruwal ul zrazal`](/initials#rays) | 5 left out | *less than 5* | A |
-| [`zrazal am zrawal`](/initials#rays) | soft | *about 5 or more* | A |
+| [`zrazal al zrawal`](/open-ranges#rays) | 5 up to +∞ | *5 or more* | A |
+| [`zrawal ul zrazal`](/open-ranges#rays) | 5 left out | *more than 5* | A |
+| [`zruwal al zrazal`](/open-ranges#rays) | −∞ up to 5 | *5 or less* | A |
+| [`zruwal ul zrazal`](/open-ranges#rays) | 5 left out | *less than 5* | A |
+| [`zrazal am zrawal`](/open-ranges#rays) | soft | *about 5 or more* | A |
 
 Ranks take `growal` (last) and `growul` (first) as ends: `zrodol al zrowal` is *2nd through last*. A named band uses **-n**, and **-r** stands for a value in it.
 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`z+13 an z+19`](/initials#named-ranges) | a named band | *the teens* | A |
-| [`zragel ar zrazal`](/initials#named-ranges) | some value in the band | *some value from 3 to 5* | A |
-| [`zragel ur zrazal`](/initials#named-ranges) | some value, 5 left out | *some value from 3 up to 5* | A |
+| [`z+13 an z+19`](/open-ranges#named-ranges) | a named band | *the teens* | A |
+| [`zragel ar zrazal`](/open-ranges#named-ranges) | some value in the band | *some value from 3 to 5* | A |
+| [`zragel ur zrazal`](/open-ranges#named-ranges) | some value, 5 left out | *some value from 3 up to 5* | A |
 
 <PageBreak />
 
@@ -451,29 +451,29 @@ On a rank, an exponent with digits is a generation, not a power of ten: `eK` goe
 <!-- cheat-sheet: numbers -->
 | Form | Reading | Stage |
 |------|---------|-------|
-| [`g#3`](/initials#ordinal-generation) | 3rd of the focus's own generation, from the start | A |
-| [`g#-3`](/initials#ordinal-generation) | 3rd of the own generation, from the end | A |
-| [`g#3e0`](/initials#ordinal-generation) | 3rd of the current generation, asserted | A |
-| [`g#e0`](/initials#ordinal-generation) | the current generation as a whole | A |
-| [`g#3e2`](/initials#ordinal-generation) | 3rd in generation +2 | A |
-| [`g#3e-2`](/initials#ordinal-generation) | 3rd in generation −2 | A |
-| [`g#-1e2`](/initials#ordinal-generation) | last of generation +2 | A |
-| [`g#e2`](/initials#ordinal-generation) | generation +2 as a whole | A |
-| [`g#e-1`](/initials#ordinal-generation) | generation −1: the parent layer | A |
-| [`g#1e-1`](/initials#ordinal-generation) | 1st of generation −1 | A |
+| [`g#3`](/generations#ordinal-generation) | 3rd of the focus's own generation, from the start | A |
+| [`g#-3`](/generations#ordinal-generation) | 3rd of the own generation, from the end | A |
+| [`g#3e0`](/generations#ordinal-generation) | 3rd of the current generation, asserted | A |
+| [`g#e0`](/generations#ordinal-generation) | the current generation as a whole | A |
+| [`g#3e2`](/generations#ordinal-generation) | 3rd in generation +2 | A |
+| [`g#3e-2`](/generations#ordinal-generation) | 3rd in generation −2 | A |
+| [`g#-1e2`](/generations#ordinal-generation) | last of generation +2 | A |
+| [`g#e2`](/generations#ordinal-generation) | generation +2 as a whole | A |
+| [`g#e-1`](/generations#ordinal-generation) | generation −1: the parent layer | A |
+| [`g#1e-1`](/generations#ordinal-generation) | 1st of generation −1 | A |
 
 On a family tree, put the anchor person in a `bl-` word right after the number.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Parents](/initials#kin-generations) | `growubal` | the layer above the focus | A |
-| [Siblings](/initials#kin-generations) | `zalazun growamol blazozon vowurol.` | *Alazun, Azozon's sibling, walks.* | A |
-| [Siblings of each other](/initials#kin-generations) | `zazozon zalazun zal growamol.` | *Azozon and Alazun are siblings.* | A |
-| [Eldest sibling](/initials#kin-generations) | `zalazun g#1e0 blazozon vowurol.` | *Alazun, Azozon's eldest sibling, walks.* | A |
-| [Second child](/initials#kin-generations) | `zohoyol g#2e1 blazozon vowurol.` | *Azozon's second child walks.* | A |
-| [Children](/initials#kin-generations) | `growabal` | the focus's own children | A |
-| [Grandchildren](/initials#kin-generations) | `growadol` | the focus's grandchildren | A |
-| [Aunt or uncle](/initials#kin-generations) | `zalazun growamol bleyel g#1e-1 blazozon vowurol.` | *Alazun, Azozon's aunt or uncle, walks.* (a sibling of the first of Azozon's parents) | A |
+| [Parents](/generations#kin-generations) | `growubal` | the layer above the focus | A |
+| [Siblings](/generations#kin-generations) | `zalazun growamol blazozon vowurol.` | *Alazun, Azozon's sibling, walks.* | A |
+| [Siblings of each other](/generations#kin-generations) | `zazozon zalazun zal growamol.` | *Azozon and Alazun are siblings.* | A |
+| [Eldest sibling](/generations#kin-generations) | `zalazun g#1e0 blazozon vowurol.` | *Alazun, Azozon's eldest sibling, walks.* | A |
+| [Second child](/generations#kin-generations) | `zohoyol g#2e1 blazozon vowurol.` | *Azozon's second child walks.* | A |
+| [Children](/generations#kin-generations) | `growabal` | the focus's own children | A |
+| [Grandchildren](/generations#kin-generations) | `growadol` | the focus's grandchildren | A |
+| [Aunt or uncle](/generations#kin-generations) | `zalazun growamol bleyel g#1e-1 blazozon vowurol.` | *Alazun, Azozon's aunt or uncle, walks.* (a sibling of the first of Azozon's parents) | A |
 
 Only kin make generations: friends and bosses are [social relations](/social-ties#social-relations).
 
@@ -487,8 +487,8 @@ Only kin make generations: friends and bosses are [social relations](/social-tie
 | `gral` *more than one* ([an amount](/numbers#more-than-one)) | | `zogozelx` *cats* ([a group, with **-x**](/digitless-exponents#digitless)) |
 | `gram` *a few* ([a soft count](/digitless-exponents#digitless)) | | `gral` *more than one* ([a firm one](/numbers#more-than-one)) |
 | `grar` *how many?* ([a blank](/digitless-exponents#how-many)) | | `drager` *those three again* ([a resume, needs a digit](/digitless-exponents#digitless)) |
-| `hragel` *three times* ([a factor](/number-markers#number-as-adverb-by-marker)) | | `h_15,30` *at 15:30* ([a clock time](/digit-strings#time)) |
-| `hragel` *three times* ([a count of times](/number-markers#number-as-adverb-by-marker)) | | `hrogel` *for the third time* ([which time](/number-markers#number-as-adverb-by-marker)) |
+| `hragel` *three times* ([a factor](/number-roles#number-as-adverb-by-marker)) | | `h_15,30` *at 15:30* ([a clock time](/digit-strings#time)) |
+| `hragel` *three times* ([a count of times](/number-roles#number-as-adverb-by-marker)) | | `hrogel` *for the third time* ([which time](/number-roles#number-as-adverb-by-marker)) |
 | `grodol` *the second* ([from the start](/numbers#ordinals)) | | `gruodol` *second from the end* ([from the end](/stacked-markers#from-the-end)) |
 | `growal` *last place* ([the landmark](/special-values#special-referential)) | | `grobal` *1st* ([numbered first](/special-values#special-referential)) |
 | `growul` *the start landmark* ([the onset](/special-values#special-referential)) | | `grobal` *1st* ([a counted first](/special-values#special-referential)) |
@@ -496,5 +496,5 @@ Only kin make generations: friends and bosses are [social relations](/social-tie
 | `gruwul` *just short* ([a hair under](/special-values#special-referential)) | | `grawul` *a hair over* ([a hair above zero](/special-values#special-referential)) |
 | `x#2` *point 2:* ([a numbered step](/stacked-markers#examples)) | | `x#-2` *2nd from the end:* ([counting back](/stacked-markers#from-the-end)) |
 | `x-2` *independent item 2:* ([a new line of support](/stacked-markers#examples)) | | `x#-2` *2nd from the end:* ([counting back](/stacked-markers#from-the-end)) |
-| `th+70` *70% likely* ([a stance](/number-markers#number-as-stance-by-marker)) | | `thomam` *maybe* ([open, with no figure](/knowing#may)) |
+| `th+70` *70% likely* ([a stance](/number-roles#number-as-stance-by-marker)) | | `thomam` *maybe* ([open, with no figure](/knowing#may)) |
 | `zragel al zrazal` *3 to 5* ([a band](/numbers-applied#ranges)) | | `zragel zrazal zaol` *3, then 5* ([two values in order](/numbers-applied#ranges)) |

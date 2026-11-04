@@ -54,7 +54,7 @@ The ending on a channel says **how strong the evidence is**. Use **-m** by defau
 
 What counts as showing depends on the channel, so the table names what each channel grades.
 
-Strength grades your evidence, not how sure you feel and not how likely the event is. Likelihood is a separate [stance number](number-markers.md#number-as-stance-by-marker) (`th+70`), so a strong pattern can still give middling odds, and a rumor can claim certainty. Strength is also not distance from the event: that is `th#N`, so a compiled report that is several hands removed can still be **-l**.
+Strength grades your evidence, not how sure you feel and not how likely the event is. Likelihood is a separate [stance number](number-roles.md#number-as-stance-by-marker) (`th+70`), so a strong pattern can still give middling odds, and a rumor can claim certainty. Strength is also not distance from the event: that is `th#N`, so a compiled report that is several hands removed can still be **-l**.
 
 <!-- cheat-sheet: knowing-intending -->
 | Channel | Graded on | **-l** show | **-m** (default) describe | **-r** gesture |
@@ -85,7 +85,7 @@ DEDUCED grades how far you checked the steps, not the premises. A step can be ai
 
 ### Second-hand and further (`th#N`) {#hand-depth}
 
-English *second-hand*, *third-hand*, *a secondary source* and *a tertiary source* count the hands between the person who was there and you. A channel does not say that. Add a [stance number](number-markers.md#number-as-stance-by-marker) with the rank marker after the channel: **`th#N`** (from 2) is *N-th hand*. The channel says what form the claim reached you in, and the number says how far that is from the event. So `throdol` (`th#2`) is one step removed: told by someone who was there, or written by someone who asked them. `throgel` (`th#3`) is two steps removed: told by someone who was told, or compiled from reports. (cue: **`o`** ≈ rank, the place in the chain)
+English *second-hand*, *third-hand*, *a secondary source* and *a tertiary source* count the hands between the person who was there and you. A channel does not say that. Add a [stance number](number-roles.md#number-as-stance-by-marker) with the rank marker after the channel: **`th#N`** (from 2) is *N-th hand*. The channel says what form the claim reached you in, and the number says how far that is from the event. So `throdol` (`th#2`) is one step removed: told by someone who was there, or written by someone who asked them. `throgel` (`th#3`) is two steps removed: told by someone who was told, or compiled from reports. (cue: **`o`** ≈ rank, the place in the chain)
 
 > `zalazun thebam throgel vudurul.`
 >

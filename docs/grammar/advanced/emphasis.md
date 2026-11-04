@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# Emphasis and audible start {#emphasis-and-audible-start}
+# Emphasis and clefts {#emphasis-and-clefts}
 
 ### English emphasis and clefts {#english-emphasis}
 
@@ -35,10 +35,6 @@ Translating the other way, an Ageben sentence in an unusual order (a line fitted
 | `zazozon dogozel &vayebel.` | act contrasted | *Azozon sees the cat.* (rather than doing something else to it) |
 
 **Compare with:** what the whole conversation is about is the [topic](/topic#topic), set only by an `/x/` word.
-
-### Starting a sentence audibly {#audible-start}
-
-In writing, the period shows where one sentence ends and the next begins. In speech, a listener may miss that pause, especially in singing or with free word order. When that could happen, begin the next sentence with a word that can only start one: *yes* / *no*, the name of the person you address, or the statement word `yal`.
 
 ### Practice {#advanced-practice}
 

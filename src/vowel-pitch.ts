@@ -7,7 +7,7 @@ import { CONSONANT_LETTERS, DIGIT_LETTERS, VOWEL_LETTERS, vowelKey } from "./fin
 
 /** Vowels lowest pitch first: the finger code's count order. */
 export const PITCH_ORDER: readonly string[] = VOWEL_LETTERS;
-/** Vowels in alphabet order (phonotactics.md#letter-names); a stack puts its two vowels in this order. */
+/** Vowels in alphabet order (letter-names.md#letter-names); a stack puts its two vowels in this order. */
 export const ALPHABET_VOWELS: readonly string[] = ["u", "a", "o", "e"];
 
 /** Semitones above the home note, the note `a` is sung on (singability.md#vowel-pitch-values). */
@@ -77,7 +77,7 @@ const vowelsOf = (word: string): string[] => [...word].filter((c) => PITCH_ORDER
 
 /**
  * The phrases a mode plays. With `consonants`, the scale runs through consonants in alphabet order
- * (phonotactics.md#letter-names), one per note, its vowels repeating; each phrase is one run of the scale, tied to the next.
+ * (letter-names.md#letter-names), one per note, its vowels repeating; each phrase is one run of the scale, tied to the next.
  * The scale up then counts, so it stops at the ten digit letters; the scale down says every letter name.
  * Pairs and stacks have no consonants: a consonant between two stacked vowels would split the stack.
  */

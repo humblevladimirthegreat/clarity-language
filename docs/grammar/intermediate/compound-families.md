@@ -51,72 +51,6 @@ Use the table above. If the word has a mid-word **`th`**, it is a [sake](/sakes)
 - A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **ability**.
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
 
-### Conversation length (name **`x`** vowel) {#conversation-length}
-
-English *I can stay a while* or *I only have a minute* tells the other person how long you can talk. In Ageben, add **`x`** and one vowel before **-n** on a [greeting](/word-endings#greeting) (your own name with a period, `SELFn.`) or a [call](/speech-moves#vocative) (their name under **`/y/`**, `yalazun.`). At arrival, the vowel sets how long you expect the conversation to last. At departure, the same form says how soon you are leaving. The vowel is about the conversation, not a grade of the person.
-
-The vowel says how much talk is left (open, a stretch, one ask, none). That is remaining time, not which kind of list.
-
-> `SELFxan.`
->
-> SELF-presence
->
-> "I have time; we can stay."
-
-> `yalazuxon.`
->
-> y-Alazun-minutes
->
-> "Alazun, I have a few minutes."
-
-<!-- cheat-sheet: word-shape-clause -->
-| Form | At arrival | At departure | Cue |
-|------|------------|--------------|-----|
-| `SELFxan` | open-ended: *we can stay* | none | **a** ≈ open-ended |
-| `SELFxon` | a few minutes: *I have a little time* | leaving soon | **o** ≈ a few minutes |
-| `SELFxen` | one slot: *one ask or comment* | about to leave | **e** ≈ one slot |
-| `SELFxun` | passing: *just acknowledging; not opening a talk* | leaving right now | **u** ≈ passing |
-
-On a [full name](proper-names.md#multipart-names), the vowel goes on the given name (`aloxon golowon.`); a family name takes no bid, since **`x`** + vowel on a `/ɡ/` word is ability. Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](/word-endings#named-n-beginner) ending.
-
-At arrival, the other person can answer with their own bid. The **lesser** bid sets the shared limit: **a** (open-ended) is more than **o** (a few minutes), **o** is more than **e** (one slot), and **e** is more than **u** (passing). If you offer open-ended time and Alazun offers one slot, you have one slot.
-
-> `SELFxan.`
->
-> SELF-presence
->
-> "I have time; we can stay."
-
-> `alazuxen.`
->
-> Alazun-ask
->
-> "Alazun here. I only have time for one thing."
-
-**Compare with:** the same **`x`** + vowel on a verb or adjective is ability (*can’t sing right now*). A [sake](/sakes) word takes **`th`** + vowel instead (`guwathal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**. In a clause body, a name with **`x`**, a vowel, and **-n** is not a word.
-
-**Compare with:** a plain named citation with a period is the basic hello (`SELFn.`). The bid says how much conversation the person is open to.
-
-At departure, use your own name with the reduced level:
-
-> `SELFxon.`
->
-> SELF-minutes
->
-> "I’m leaving soon."
-
-> `SELFxen.`
->
-> SELF-ask
->
-> "I’m about to leave."
-
-> `SELFxun.`
->
-> SELF-passing
->
-> "I’m leaving now."
-
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -134,51 +68,16 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Ageben |
 |---------|--------|
-| *your name* | `SELFn` |
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *doorbell* | `oheleboral` |
 | *flower* | `evelal` |
 | *croissant* | `agedel` |
 | *see* | `vayebel` |
-| *scream* | `veyamul` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
-**1.** *I have time; we can stay.* (hello, with your own name)
-
-::: details Show answer
-`SELFxan.`
-
-SELF-presence
-:::
-
-**2.** *Alazun, I have a few minutes.* (calling)
-
-::: details Show answer
-`yalazuxon.`
-
-y-Alazun-minutes
-:::
-
-**3.** *Ahelan, I'm just passing by.* (calling)
-
-::: details Show answer
-`yahelaxun.`
-
-y-Ahelan-passing
-:::
-
-**4.** *Azozon, I have a few minutes. Alazun sees the doorbell.*
-
-::: details Show answer
-`yazozoxon zalazun doheleboral vayebel.`
-
-y-Azozon-minutes | z-Alazun | d-doorbell | v-see
-:::
-
-**5.** *a salad plate* (one plate)
+**1.** *a salad plate* (one plate)
 
 ::: details Show answer
 `zazudaxuyodal.`
@@ -186,7 +85,7 @@ y-Azozon-minutes | z-Alazun | d-doorbell | v-see
 z-salad-x-plate
 :::
 
-**6.** *Flower-Salad-Croissant* (one café's name)
+**2.** *Flower-Salad-Croissant* (one café's name)
 
 ::: details Show answer
 `zevelaxazudaxageden.`
@@ -194,25 +93,17 @@ z-salad-x-plate
 z-Evela-x-Azuda-x-Ageden
 :::
 
+**3.** *Ahelan sees a croissant salad.*
+
+::: details Show answer
+`zahelan dagedexazudal vayebel.`
+
+z-Ahelan | d-croissant-x-salad | v-see
+:::
+
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `SELFxen.`
-
-::: details Show answer
-SELF-ask
-
-*I only have time for one thing.* / *I'm about to leave.* (arriving / leaving)
-:::
-
-**2.** `yazozoxun zalazun veyamul.`
-
-::: details Show answer
-y-Azozon-passing | z-Alazun | v-scream
-
-*Azozon, I'm just passing by. Alazun screams.*
-:::
-
-**3.** `zevelaxuyodal.`
+**1.** `zevelaxuyodal.`
 
 ::: details Show answer
 z-flower-x-plate
@@ -220,28 +111,20 @@ z-flower-x-plate
 *a flower plate*
 :::
 
-**4.** `yahelaxon zazozon develal vayebel.`
+**2.** `zalazun develaxazudal vayebel.`
 
 ::: details Show answer
-y-Ahelan-minutes | z-Azozon | d-flower | v-see
+z-Alazun | d-flower-x-salad | v-see
 
-*Ahelan, I have a few minutes. Azozon sees a flower.*
+*Alazun sees a flower salad.*
 :::
 
-**5.** `SELFxon.` (said when leaving)
+**3.** `zazozon dazudaxuyodalx vayebel.`
 
 ::: details Show answer
-SELF-minutes
+z-Azozon | d-salad-x-plate-x | v-see
 
-*I'm leaving soon.*
-:::
-
-**6.** `yalazuxan.`
-
-::: details Show answer
-y-Alazun-presence
-
-*Alazun, I have time.*
+*Azozon sees salad plates.*
 :::
 
 #### Pick one {#intermediate-pick-one}
@@ -254,16 +137,6 @@ y-Alazun-presence
 z-croissant-x-plate
 
 The last root is the kind (a plate); the root before **`x`** narrows it.
-:::
-
-**2.** *Ahelan, I have time for just one thing.* (calling) `yahelaxen.` or `yahelaxon.`
-
-::: details Show answer
-`yahelaxen.`
-
-y-Ahelan-ask
-
-**`e`** is one slot; **`o`** offers a few minutes.
 :::
 
 #### Fix it {#intermediate-fix-it}

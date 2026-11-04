@@ -60,6 +60,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *possibility* | `hogugem` |
 | *around* | `hevam` |
 | *french* | `avranzam` |
+| *catastrophe* | `abowum` |
+| *revelation* | `thavewom` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -226,7 +228,7 @@ SELF-minutes . Alazun-presence
 
 The lesser bid sets the limit, so the talk lasts a few minutes.
 
-**Rule:** [Conversation length](compound-families.md#conversation-length)
+**Rule:** [Conversation length](conversation-length.md#conversation-length)
 :::
 
 **6.** `yel dugedel dar.`
@@ -310,7 +312,7 @@ z-Azozon | through | z-Ahelan | v-sit
 
 **`oel`** names the range; **`zal`** is only the two ends.
 
-**Rule:** [Ranges](ending-grids.md#ranges)
+**Rule:** [Ranges](ordered-ranges.md#ranges)
 :::
 
 **7.** *Ahelan kneels, and to me it is about feeling connected.* `zahelan vanuvel thawethom.` or `zahelan vanuvel thawethem.`
@@ -587,6 +589,78 @@ z-Ahelan | v-tell | b-Alazun | d-lest-clause | v-climb
 *Not to* is avoidance, **`durl`**; **`dorl`** would tell Alazun *to* climb.
 
 **Rule:** [Stand-in vowels](stand-in-vowels.md#stand-in)
+:::
+
+**30.** *To put it one way, Alazun cries.* `om zalazun vagamul.` or `ol zalazun vagamul.`
+
+::: details Show answer
+`om zalazun vagamul.`
+
+in.other.words.open | z-Alazun | v-cry
+
+Open **-m** offers one of several ways to say it; **`ol`** is *in other words*, the one rewording.
+
+**Rule:** [Discourse](ending-grids.md#discourse)
+:::
+
+**31.** *a cookie bucket* (one bucket) `zugedexobowal.` or `zobowaxugedel.`
+
+::: details Show answer
+`zugedexobowal.`
+
+z-cookie-x-bucket
+
+The last root is the thing; the root before **`x`** says which kind.
+
+**Rule:** [Left and right of `x`](compound-families.md#families-by-shape)
+:::
+
+**32.** *Azozon walks for the third time.* `zazozon vowurol hrogel.` or `zazozon vowurol hragel.`
+
+::: details Show answer
+`zazozon vowurol hrogel.`
+
+z-Azozon | v-walk | h-3rd
+
+A rank on `/h/` (**`ro`**) counts which time the event happens; **`ra`** would be *three times*.
+
+**Rule:** [Number as adverb (by marker)](number-roles.md#number-as-adverb-by-marker)
+:::
+
+**33.** *Alazun walks out of a catastrophe.* `zalazun vowurol ual babowum.` or `zalazun vowurol ual babowul.`
+
+::: details Show answer
+`zalazun vowurol ual babowum.`
+
+z-Alazun | v-walk | [out-of | b-catastrophe]
+
+The landmark's **-m** picks the abstract sense; **-l** would be a real bomb.
+
+**Rule:** [Abstract landmarks](abstract-landmarks.md#abstract-landmarks)
+:::
+
+**34.** *Frankly, Azozon cooks.* `thavewom zazozon vuguyol.` or `zazozon vuguyol havewom.`
+
+::: details Show answer
+`thavewom zazozon vuguyol.`
+
+th-revelation | z-Azozon | v-cook
+
+*Frankly* is how you say the claim, a stance word; `/h/` would describe how Azozon cooks.
+
+**Rule:** [Speech manner](speech-manner.md#speech-manner)
+:::
+
+**35.** *There are enough cookies.* `zugedelx thudatham zoel gral.` or `zugedelx thudatham zol gral.`
+
+::: details Show answer
+`zugedelx thudatham zoel gral.`
+
+[z-cookie-x | th-sake-met-any-term | z-equal-rank | g-amount]
+
+**`zoel`** reaches what the sake needs; **`zol`** goes past it (*too many*).
+
+**Rule:** [Enough and too](sake-bars.md#sake-bars)
 :::
 
 #### What changes {#intermediate-what-changes}

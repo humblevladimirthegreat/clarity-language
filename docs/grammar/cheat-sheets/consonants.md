@@ -144,7 +144,7 @@ Same letter, different **letter job** by **placement**: where the letter sits pi
 | [**-x**](/plurality#associative) last | after the ending | associates or a group | B |
 | [`r`](/phonotactics#number-word-exception) after a role letter | `gragel` | starts a number word | I |
 
-`th` is one letter. Digit letters also start [digit syllables](/phonotactics#letter-names).
+`th` is one letter. Digit letters also start [digit syllables](/letter-names#letter-names).
 
 <PageBreak />
 

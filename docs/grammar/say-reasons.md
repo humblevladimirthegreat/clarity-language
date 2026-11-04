@@ -242,7 +242,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 
 ### Condition, factor, requirement, motivation, satisfaction, truth {#reason-nouns}
 
-**Needs:** [If](/causation#if) · [Only because](/iff-fault#only-because) · [Fault](/fault#fault) · [Requirement](/permission-consent#requirement) · [Motive](/prescription#sake-preference) · [Met](/sakes#time-horizon-endings-on-met) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Intention](/intention#plan-predict) · [Speech manner](/speech-acts#speech-manner) · [How you know](/evidentiality#evidentiality) · [Enough and too](/prescription#sake-bars)
+**Needs:** [If](/causation#if) · [Only because](/iff-fault#only-because) · [Fault](/fault#fault) · [Requirement](/permission-consent#requirement) · [Motive](/prescription#sake-preference) · [Met](/sakes#time-horizon-endings-on-met) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Intention](/intention#plan-predict) · [Speech manner](/speech-manner#speech-manner) · [How you know](/evidentiality#evidentiality) · [Enough and too](/sake-bars#sake-bars)
 
 English turns reasons and feelings into nouns (*condition*, *motivation*, *satisfaction*, *truth*). Ageben has no noun for most of them. It keeps the stance word on the clause, so the noun becomes a short claim about how you stand: a condition is the pole word, a motive is a sake, a requirement is a demand, a truth is how you vouch for it.
 
@@ -279,7 +279,7 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 
 ### Biased, wishful thinking, overconfident {#biased}
 
-**Needs:** [Motive](/prescription#sake-preference) · [Want](/want#want) · [MAY](/knowing#may) · [Speech manner](/speech-acts#speech-manner) · [Every bar](/stance-bars#stance-bars)
+**Needs:** [Motive](/prescription#sake-preference) · [Want](/want#want) · [MAY](/knowing#may) · [Speech manner](/speech-manner#speech-manner) · [Every bar](/stance-bars#stance-bars)
 
 English *biased* says a view may be bent by what the holder wants from it. Ageben says that outright: put a [motive](/prescription#sake-preference) on the thinking, so the view is held *for a stake*. Name the sake when you know which one, or use the unspecified sake **`uda`**. *Wishful thinking* and *I'd like to believe* are a want on the thinking itself. *Overconfident* ranks your trust against what the clues warrant: a CLUES [bar](/stance-bars#stance-bars) on *trust*.
 
@@ -291,7 +291,7 @@ English *biased* says a view may be bent by what the holder wants from it. Agebe
 | *I'd like to believe* / *wishful thinking* | `zuwen thalom vevemel darl zalazun vowurol.` | I want to think that Alazun walks |
 | *overconfident* | `zuwen theyom zol gegowom.` | surer than the clues warrant |
 | *underconfident* | `zazozon theyom zuol gegowom.` | less sure than the clues warrant |
-| *to be honest*, before owning a bias | `thavewom` | [speech manner](/speech-acts#speech-manner) |
+| *to be honest*, before owning a bias | `thavewom` | [speech manner](/speech-manner#speech-manner) |
 
 > `thavewom zuwen thomam vevemel thudathom.`
 >
@@ -344,7 +344,7 @@ English *If he'd left, the door would still be locked* is not this pole. Write b
 
 ### Remote and unreal conditions {#remote-unreal}
 
-**Needs:** [If](/causation#if) · [Dependent clauses](/dependents#dependent-clauses) · [stance numbers](/number-markers#number-as-stance-by-marker) · [NOTIONAL](/notional#notional)
+**Needs:** [If](/causation#if) · [Dependent clauses](/dependents#dependent-clauses) · [stance numbers](/number-roles#number-as-stance-by-marker) · [NOTIONAL](/notional#notional)
 
 English *If Alazun swam, Azozon would walk* (past-tense *if*) says the condition is a long shot. Keep the open pole **`thohem blarl`** and put *unlikely* **`thrul`** inside the dependent clause.
 

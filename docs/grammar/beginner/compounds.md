@@ -232,5 +232,5 @@ z-doorbell
 - **`x`** at the start of a word (keep going): [dependents.md](dependents.md#continue-x)
 - How **`x`** sits in the word shape: [phonology.md](/phonotactics#phonotactics)
 - [can-and-cant.md#ability](can-and-cant.md#ability) / [sakes.md](sakes.md) / [roles.md](roles.md) / [numeric-derivation.md](/numeric-derivation)
-- Conversation length: [name **`x`** vowel](/compound-families#conversation-length); bare hello: [word-endings.md](word-endings.md#greeting)
+- Conversation length: [name **`x`** vowel](/conversation-length#conversation-length); bare hello: [word-endings.md](word-endings.md#greeting)
 - Extra-noun fuse on a citation: [hooks.md](/hook-compounds#hook-compounds)

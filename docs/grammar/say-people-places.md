@@ -280,7 +280,7 @@ English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwozed
 
 ### Kin words {#kin-words}
 
-**Needs:** [Kin](/initials#kin-generations) · [Adjectives `/ɡ/`](/clause#adjectives-ɡ)
+**Needs:** [Kin](/generations#kin-generations) · [Adjectives `/ɡ/`](/clause#adjectives-ɡ)
 
 English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family tree and a sex. Ageben says the layer with the kin number and the sex with **`gemugel`** *male* or **`guvugel`** *female*, after `zeyel` *person*. Put the person the tie is from in a `bl-` word right after the number.
 
@@ -500,7 +500,7 @@ English makes nouns for a part, a kind, a role, and a manner. Ageben has no sepa
 
 ### Case, deal, figure, board and other several-sense nouns {#sense-nouns}
 
-**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Exchange](/relations#exchange) · [Between](/locative-relations#locative-relations) · [Number as verb](/number-markers#number-as-verb-by-marker) · [Role pointers](/pronouns#role-pointers) · [Consent](/permission-consent#consent) · [Joins](/joins) · [Role letters](/clause#role-letters)
+**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Exchange](/relations#exchange) · [Between](/locative-relations#locative-relations) · [Number as verb](/number-roles#number-as-verb-by-marker) · [Role pointers](/pronouns#role-pointers) · [Consent](/permission-consent#consent) · [Joins](/joins) · [Role letters](/clause#role-letters)
 
 An English noun like *case* or *board* covers several jobs, and Ageben has a different word for each. Decide which job you mean first, then write that word. Where a job is a whole clause (*in that case*, *a deal*), the recipe is a clause, not a noun.
 

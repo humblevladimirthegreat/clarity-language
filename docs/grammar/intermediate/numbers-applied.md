@@ -22,7 +22,7 @@ English names many things with letters as well as digits: a vitamin (*B12*), a f
 Say each character as one syllable, after the marker **`re`**:
 
 - A digit is its digit syllable (`ba` … `mo`).
-- A consonant is its [letter name](phonotactics.md#letter-names) (`bu` … `me`, `tho`, `wa`, `yu`). A letter name never sounds like a digit, because it takes the [opposite vowel](/phonology#opposite-vowels): `bu` is *b*, `ba` is *1*.
+- A consonant is its [letter name](letter-names.md#letter-names) (`bu` … `me`, `tho`, `wa`, `yu`). A letter name never sounds like a digit, because it takes the [opposite vowel](/phonology#opposite-vowels): `bu` is *b*, `ba` is *1*.
 - A vowel is its own sound after a short break, the catch in English *uh-oh*. The spelled form writes the break as `'`. Without it, `bu` + `u` would run into one long vowel, and `re` + `o` would sound like another marker.
 
 <!-- cheat-sheet: numbers -->
@@ -145,7 +145,7 @@ A word after **B** describes **B** alone, and a word on the counted noun describ
 | `zragel ual zrazal` | both ends out | *strictly between 3 and 5* (`(3, 5)`) |
 | `zragel uol zrazal` | outside the band | *below 3 or above 5* |
 
-**`ual`** and **`uol`** are the [range hooks](ending-grids.md#ranges), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zragel al zrazam` = *3 to about 5*).
+**`ual`** and **`uol`** are the [range hooks](ordered-ranges.md#ranges), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zragel al zrazam` = *3 to about 5*).
 
 **Compare with:** `zragel zrazal zaol` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zazozon zalazun zol gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](locative-relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
 
@@ -338,5 +338,5 @@ An *and*-join names only the two ends; a range of numbers puts **`al`** between 
 
 - Number-word anatomy (markers, endings, exponents): [numbers.md](/numbers)
 - Numeric prefixes (`NUMxROOT`): [numeric-derivation.md](/numeric-derivation)
-- Hooks behind ranges: [hooks.md](ending-grids.md#ranges)
+- Hooks behind ranges: [hooks.md](ordered-ranges.md#ranges)
 - Measured differentials on comparative scales: [comparatives.md](/comparatives)

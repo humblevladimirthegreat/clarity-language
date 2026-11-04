@@ -59,7 +59,7 @@ After the role letter, look at both sides of the **first** **`x`**. A role word 
 | Left of **`x`** | Right of **`x`** | Reading | Example | Stage |
 |-----------------|------------------|---------|---------|-------|
 | [full root](/compound-families#families-by-shape) | full root | one ordinary compound | `zuwedaxubudal` *peanut butter*; `zaloxolowon` (a hyphenated name) | B |
-| [name](/compound-families#conversation-length) | **`a`** / **`o`** / **`e`** / **`u`**, then **-n** | conversation length | *Azozon, I have time* | I |
+| [name](/conversation-length#conversation-length) | **`a`** / **`o`** / **`e`** / **`u`**, then **-n** | conversation length | *Azozon, I have time* | I |
 | [longer root](/compound-families#families-by-shape) | **`a`** / **`e`** / **`o`** / **`u`** | [ability](/can-and-cant#ability) | *can't sing right now* | I |
 | [hook vowels](/hook-compounds#hook-prefixes), maybe **`m`** | a stem | hook prefix | `guoxuvuvul` *anti-fighting*; `gamxohalal` *mid-ocean* | A |
 | [hook vowels](/hooked-joins#hooked-joins), maybe **`m`** or **`r`** | a join: vowels and an ending | hooked join, landmark after it | `zexual blohehal` *everyone at the house* | A |
@@ -97,17 +97,17 @@ Name + **`x`** + one vowel + **-n**, on a greeting or a call. At arrival it says
 <!-- cheat-sheet: word-shape-clause -->
 | Form | At arrival | At departure | Stage |
 |------|------------|--------------|-------|
-| [`SELFxan`](/compound-families#conversation-length) | open-ended: *we can stay* | none | I |
-| [`SELFxon`](/compound-families#conversation-length) | a few minutes | leaving soon | I |
-| [`SELFxen`](/compound-families#conversation-length) | one slot: *one ask or comment* | about to leave | I |
-| [`SELFxun`](/compound-families#conversation-length) | passing | leaving right now | I |
+| [`SELFxan`](/conversation-length#conversation-length) | open-ended: *we can stay* | none | I |
+| [`SELFxon`](/conversation-length#conversation-length) | a few minutes | leaving soon | I |
+| [`SELFxen`](/conversation-length#conversation-length) | one slot: *one ask or comment* | about to leave | I |
+| [`SELFxun`](/conversation-length#conversation-length) | passing | leaving right now | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Arriving](/compound-families#conversation-length) | `SELFxan.` | *I have time; we can stay.* | I |
-| [Calling with a bid](/compound-families#conversation-length) | `yalazuxon.` | *Alazun, I have a few minutes.* | I |
-| [The other bid](/compound-families#conversation-length) | `alazuxen.` | *Alazun here. I only have time for one thing.* | I |
-| [Leaving soon](/compound-families#conversation-length) | `SELFxon.` | *I'm leaving soon.* | I |
+| [Arriving](/conversation-length#conversation-length) | `SELFxan.` | *I have time; we can stay.* | I |
+| [Calling with a bid](/conversation-length#conversation-length) | `yalazuxon.` | *Alazun, I have a few minutes.* | I |
+| [The other bid](/conversation-length#conversation-length) | `alazuxen.` | *Alazun here. I only have time for one thing.* | I |
+| [Leaving soon](/conversation-length#conversation-length) | `SELFxon.` | *I'm leaving soon.* | I |
 
 ## The clause {#clause}
 

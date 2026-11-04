@@ -170,7 +170,7 @@ For *the more …, the less …*, use **`xuol`**: when the first scale rises, th
 
 ### Factor (*twice as … as*) {#factor}
 
-English *twice as big as* gives the **ratio** between the two heights. Use the [equative](/comparatives#equatives) **`zoel`** and its shared adjective, then a factor number (`/h/` + marker **`ra`**, [numbers](number-markers.md#number-as-adverb-by-marker)) **right after** the adjective. The first name sits at that many times the second's height.
+English *twice as big as* gives the **ratio** between the two heights. Use the [equative](/comparatives#equatives) **`zoel`** and its shared adjective, then a factor number (`/h/` + marker **`ra`**, [numbers](number-roles.md#number-as-adverb-by-marker)) **right after** the adjective. The first name sits at that many times the second's height.
 
 > `zazozon zalazun zoel gelazem hradol.`
 >

@@ -8,7 +8,7 @@ band: advanced
 <a id="worse-than"></a>
 <a id="best-effort"></a>
 
-Intermediate ranked against a plan, and [sake bars](/prescription#sake-bars) rank against what a sake needs. Any stance that **sets a value** can be the [bar](/comparative-arity#bars), and each keeps its own endings and meaning. A channel word (how you know something: you saw it, remember it, were told it, worked it out) sets **the level that source led you to expect**. So *than usual*, *than I remember*, and *than advertised* each put one channel word in the bar slot.
+Intermediate ranked against a plan, and [sake bars](/sake-bars#sake-bars) rank against what a sake needs. Any stance that **sets a value** can be the [bar](/comparative-arity#bars), and each keeps its own endings and meaning. A channel word (how you know something: you saw it, remember it, were told it, worked it out) sets **the level that source led you to expect**. So *than usual*, *than I remember*, and *than advertised* each put one channel word in the bar slot.
 
 > `zazozon thubom zol guzemel.`
 >
@@ -25,7 +25,7 @@ Intermediate ranked against a plan, and [sake bars](/prescription#sake-bars) ran
 <!-- cheat-sheet: comparing -->
 | Bar | Ranks against | English |
 |-----|---------------|---------|
-| met sake `thudatham`, `thobatham`, … ([sake bars](/prescription#sake-bars)) | what that sake needs | *enough* / *too much* / *not enough* |
+| met sake `thudatham`, `thobatham`, … ([sake bars](/sake-bars#sake-bars)) | what that sake needs | *enough* / *too much* / *not enough* |
 | LIVE `thugem` | how it looks | *than it looks* |
 | MEMORY `thevum` | how you remember it | *than I remember* / *than last time* |
 | PATTERN `thubom` | the trail of cases | *than usual* / *normal* |

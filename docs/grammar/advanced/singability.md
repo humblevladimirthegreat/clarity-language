@@ -104,6 +104,10 @@ A list needs no voice of its own, even though the join word comes last: a second
 
 In song, a period takes a rest or a held note, and an island is phrased as its own short phrase.
 
+### Starting a sentence audibly {#audible-start}
+
+In writing, the period shows where one sentence ends and the next begins. In speech, a listener may miss that pause, especially in singing or with free word order. When that could happen, begin the next sentence with a word that can only start one: *yes* / *no*, the name of the person you address, or the statement word `yal`.
+
 ### Singing on one note {#one-note}
 
 Every distinction Ageben makes is spelled in its letters, so a line sung on a single pitch still says everything it says in speech. A melody owns the pitch, so song drops [vowel pitch](#vowel-pitch-values): sing each vowel on the melody's note. A songwriter may let a melody follow the vowel pitches, but no song has to. When a melody takes over your pitch, voice each [tone mark](/tone-marks#tone-marks) with how you shape the note:
@@ -125,6 +129,6 @@ When you need a moment in the middle of speaking, English fills the gap with *um
 | *mmm*, lips closed | I am thinking it over | waits and leaves the silence | Lips closed: not ready to speak |
 | A held `a`, `e` or `o` (any of them), at its own pitch | I know what I mean but cannot find the word | may offer a word | Mouth open: the word is on its way |
 
-Do not hold `u`: in grammar words `u` usually means *undo* or *not*, so a held `u` can sound like a denial. A thinking vowel is held well past one beat, so it does not sound like a [letter name](/phonotactics#letter-names), which is short and followed by a pause.
+Do not hold `u`: in grammar words `u` usually means *undo* or *not*, so a held `u` can sound like a denial. A thinking vowel is held well past one beat, so it does not sound like a [letter name](/letter-names#letter-names), which is short and followed by a pause.
 
 **Compare with:** a thinking sound only holds the gap. To fix a word you already said, use a hook: [`ol`](/hooks#rather) for a better wording of the same thing, [`el`](/hooks#instead) for the thing you meant instead.
