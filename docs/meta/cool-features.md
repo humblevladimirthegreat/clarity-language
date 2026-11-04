@@ -5,36 +5,41 @@ This document contains a record of features that have been posted to the r/conla
 
 Use this document for styling examples when producing more posts, and seeing what has already been posted. New posts should be added at the top under this section.
 
-### Roots Are Built, Not Invented
+### Finger Code
 
-I don't pick Ageben root spellings by ear. Every published root is placed by a program from a concrete seed (usually an emoji) plus three tags: **kind** of thing, **job**, and **size**. The last two letters of the root are a *tail* that a learner can read even on a word they have never seen.
+Ageben's relatively small alphabet (14 consonants and 4 vowels) and fairly consistent CV syllable structure allows for an easy-to-learn two-handed manual phonology.
 
-A five-letter root is `V C V C V`. The last consonant is the kind, and the last vowel is the job (the same vowel series as the joins: **a** add / holds, **o** one, **e** order, **u** undo / takes away). The middle vowel is usually how big the thing is against a person.
+You use your dominant hand to spell consonants by raising the number of fingers for the letter's position in the alphabet. Your thumb represents adding five. Once you get to 11, you hook the fingers to keep counting.
 
-| Last C | Kind | Example |
-|--------|------|---------|
-| `z` | creature | `udozo` *dog* |
-| `y` | person | `eboye` *baby* |
-| `m` | mind / feeling | `evemu` *fear* |
-| `b` | body / worn | `aheba` *hand* |
-| `v` | doing / vehicle | `aruve` *run* |
-| `h` | place / fixture | `aheha` *house* |
-| `l` | nature / stuff | `edale` *tree* |
-| `d` | food | `oledo` *apple* |
-| `w` | tool | `anewu` *knife* |
-| `g` | sign / mark | `awugu` *warning* |
-| `r` | counting / time | `egore` *clock* |
-| `n` | title / paper | `unona` *newspaper* |
+At the same time as the right hand, you use your left hand to spell one of the four vowels for the syllable, simply raising the number of fingers for the vowel.
 
-So `anewu` *knife* is a small (`e`) tool (`w`) that takes away (`u`). `aheha` *house* is person-sized (`a`), a place (`h`) that holds (`a`). `oledo` *apple* is hand-sized (`e`) food (`d`) that is one compact thing (`o`). A banana is long, so its job vowel is `e` instead.
+It is easy to remember each letter's number position because the digit names also go in alphabetical order: *ba* means one, *b* is the first consonant and *a* is the first vowel. *do* means two, *d* is the second consonant and *o* is the second vowel, etc.
 
-The first two letters keep same-kind roots apart (two dogs that both start `ud-` would be easy to mix up) and, when there is room, echo the English label's first consonant: *dog* can keep `d`, *knife* can keep `n`. Ties go to a closer English sound, then to fewer stop consonants. Overlay-backed roots (closed grammar senses on a seed, plus a few pronouns) get three letters instead: ❤️ *heart* is `abo`, the seed for *compassion*.
+This isn't meant to be a proper sign language as it's probably too slow for consistent use, but it should work well as an easy-to-use system everyone can learn for signing a couple of words. Example uses:
 
-The abstract sense is reached through the pictured thing, never through an English pun. *Compassion* lives on *heart* because that is how you feel it, not because of how the English words sound.
+* communicating across a loud room ("get margarita")
 
-A side effect I like: digit names use the same consonants, so every ordinary root is also a [mnemonic peg](https://clarityconlang.com/grammar/pegs.html). Drop the role letter and the ending, skip vowels and fillers `w` / `y`, and `zudozol` *dog* reads as 25 (`d`=2, `z`=5). The dictionary has at least one picture for every 0–9 and 00–99 cell.
+* surreptitious communication by tapping someone's body using the same code ("let's go")
 
-Full docs: https://clarityconlang.com/grammar/root-tails.html#root-tails
+* mute/deaf/hard-of-hearing communication when one party isn't fluent in sign language
+
+The finger code can also be applied to music though I'm still iterating on the design for that.
+
+full docs: https://clarityconlang.com/grammar/finger-code.html
+
+### The last four letters of a stem carry distinct meanings
+
+Most stems in Ageben have six letters of the form VCVCVC. Everything but the first two letters have a meaning loosely applied to help you remember what the word is. The first vowel and consonant are used to disambiguate between similar words.
+
+The second vowel indicates how big the object is. The second consonant defines its "kind". The third vowel is the "job" (kind and job are explained in the linked documentation). The final consonant indicates whether you are using the concrete, abstract, or proper name sense of the word.
+
+`amahul` *mountain* is person-sized-or-bigger (`a`), a place (`h`) that works against you (`u`) and is concrete (`l`). Its abstract form `amahum` is *challenge*:  something hard to face.
+
+`agebel` *glasses* is hand-sized (`e`), something worn on the body (`b`) that is one compact thing (`e`) and is concrete (`l`). Its abstract form `agebem` is *clarity*, seeing clearly. The language's name comes from the proper form `ageben` *Clarity*/*Glasses*.
+
+You can't tell what an uknown word is from these letter cues alone, but it should greatly aid in recognition especially in the context of a sentence.
+
+Full docs: https://clarityconlang.com/grammar/root-tails.html
 
 ### Command vs Prohibition Redundancy via Word-Order
 
