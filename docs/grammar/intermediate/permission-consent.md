@@ -8,7 +8,7 @@ English *may*, *must*, *may not*, and *they agreed* each say that someone has a 
 
 ### Say words: permission, requirement, consent {#say-words}
 
-English *may*, *must*, *may not*, and *they agreed* each say that someone has a say over an act. Ageben puts that in one **say word** on `/h/`. A grant, a ban, a demand, or a yes is said openly, so a say word needs no channel; like an [intention adverb](/clause#intention-adverbs), it covers the whole clause. Write **`h`**, **`w`**, a scope vowel, whose say it is, the answer, and an ending.
+English *may*, *must*, *may not*, and *they agreed* each say that someone has a say over an act. Ageben puts that in one **say word** on `/h/`. A grant, a ban, a demand, or a yes is said openly, so a say word needs no channel; like an [intention adverb](/clause#intention-adverbs), it covers the whole clause. Write **`h`**, **`w`**, a reach vowel, whose say it is, the answer, and an ending.
 
 > `zazozon vowurol hwuvam.`
 >
@@ -19,7 +19,7 @@ English *may*, *must*, *may not*, and *they agreed* each say that someone has a 
 | Piece | Says | In `hwuvam` |
 |-------|------|-------------|
 | `w` | a closed word with no root, as on a [tag](tag-pronouns.md#tag-pronouns) | `w` |
-| scope vowel | how far the say reaches: **`u`** this stretch of doing (more below) | `u` |
+| reach vowel | how far the say reaches: **`u`** this stretch of doing (more below) | `u` |
 | whose say | **`v`** someone over the act and outside it; **`z`** the doer; **`d`** the one it's done to; **`b`** the recipient | `v` |
 | answer | **`a`** yes, allow (as in `yaol`); **`u`** no, forbid (as in `yuol`); **`o`** require, ask for (**o** ≈ rank); **`e`** their call (**e** ≈ choice) | `a` |
 | ending | **-l** a rule, or a binding agreement (≈ law); **-m** a person said so (≈ mouth); **-r** nobody said: tolerated, assumed, or customary (≈ read the room) | **-m** |
@@ -122,9 +122,9 @@ To check in, ask: `yem zuwen vezuyol bawan hwubam.` (*Are you still OK with me t
 
 A say word takes no **-x**: a group's say comes from a group in the clause.
 
-### How far the say reaches (scope) {#say-scope}
+### How far the say reaches {#say-reach}
 
-The scope vowel is [label scope](/label-seams#label-scope), the same vowels as after **`th`** on a label:
+The reach vowel is [label reach](/label-seams#label-reach), the same vowels as after **`th`** on a label:
 
 - **`u`:** this act. `hwudam` is a yes to this act, which is why consent is asked for each time.
 - **`o`:** standing. `hwodam` is standing consent (*they're generally fine with this*), `hwovam` standing permission (*you may, any time*), `hwovom` a standing duty, and `hwozom` a discipline. Standing is not binding: `hwodam` can still be taken back, and only **-l** binds.
@@ -138,7 +138,7 @@ The scope vowel is [label scope](/label-seams#label-scope), the same vowels as a
 >
 > "I promise Ahelan I'll walk."
 
-Only **`v`** and pair scope **`e`** take a `bl-` word.
+Only **`v`** and pair reach **`e`** take a `bl-` word.
 
 English *against the rules* and *against their will* put [contrary to](prescription.md#contrary-to-stance) **`uom`** right before the say word. That word then names what the event goes against, and it no longer applies to the claim.
 

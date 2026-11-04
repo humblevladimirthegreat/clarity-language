@@ -77,7 +77,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `genar` | AS-OF clause hinge (asserted whose-now / dated ledger) resume | [As-of (whose now)](/as-of#as-of) | A |
 | `gerom` | WHILE clause hinge (concurrent) | [Time hinges on a noun](/sentence-linkers#time-hinge-on-noun) | I |
 | `gevam` | locative around (figure on all sides of one landmark) | [Locative relations](/locative-relations#locative-relations) | I |
-| `gewel` | similative exactly like (type match) | [Exactly like (hewel / gewel)](/exactly-like#exactly-like) | I |
+| `gewel` | likeness exactly like (type match) | [Exactly like (hewel / gewel)](/exactly-like#exactly-like) | I |
 <!-- /generated -->
 
 <PageBreak />
@@ -87,7 +87,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 <!-- generated: overlays pos=g skip=22 -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `gewem` | similative like (type resemblance) | [Like (resembles)](/relations#like-resembles) | B |
+| `gewem` | likeness like (type resemblance) | [Likeness (like)](/relations#likeness) | B |
 | `gezem` | ALTHOUGH clause hinge (concession; NP despite) | [Because, if, although (hinges)](/dependents#hinges) | B |
 | `gobom` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `goen` | join-relation on a par with (adjective) | [Join-relations](/join-relations#join-relations) | I |
@@ -151,8 +151,8 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `henar` | AS-OF clause hinge (asserted whose-now / dated ledger) resume | [As-of (whose now)](/as-of#as-of) | A |
 | `herom` | WHILE clause hinge (concurrent) | [Because, if, although (hinges)](/dependents#hinges) | B |
 | `hevam` | locative around (figure on all sides of one landmark) | [Locative relations](/locative-relations#locative-relations) | I |
-| `hewel` | similative exactly like (manner match) | [Exactly like (hewel / gewel)](/exactly-like#exactly-like) | I |
-| `hewem` | similative like (manner resemblance) | [Extra nouns (/b/)](/clause#extra-nouns) | B |
+| `hewel` | likeness exactly like (manner match) | [Exactly like (hewel / gewel)](/exactly-like#exactly-like) | I |
+| `hewem` | likeness like (manner resemblance) | [Extra nouns (/b/)](/clause#extra-nouns) | B |
 | `hezem` | ALTHOUGH clause hinge (concession; NP despite) | [Because, if, although (hinges)](/dependents#hinges) | B |
 | `hobom` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `hodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](/can-and-cant#ability-fallback) | B |

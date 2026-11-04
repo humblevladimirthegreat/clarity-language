@@ -78,7 +78,7 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 >
 > "Azozon is about as bright as Alazun."
 
-**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazozon gamahum` *Azozon is challenging*. Use **`oe`** when two people share a height on the quality. *Walks like a duck* is resemblance ([*like*](relations.md#similative) `hewem`), not the same score on a named quality.
+**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazozon gamahum` *Azozon is challenging*. Use **`oe`** when two people share a height on the quality. *Walks like a duck* is resemblance ([*like*](relations.md#likeness) `hewem`), not the same score on a named quality.
 
 **Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zazozon zalazun zal gamahum`): each has the quality. It does not rank them or say they match. Use **`oe`** only for *as … as*.
 

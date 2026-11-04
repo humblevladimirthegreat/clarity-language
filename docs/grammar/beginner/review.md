@@ -92,7 +92,7 @@ z-Ahelan | d-guard | v-see . z-←guard | v-run
 
 z-Azozon | [h-like | bl-duck] | v-sing
 
-**Rule:** [Like (resembles)](relations.md#like-resembles)
+**Rule:** [Likeness (*like*)](relations.md#likeness)
 :::
 
 **4.** *Ahelan smells three tomatoes.*
@@ -370,7 +370,7 @@ z-Alazun | g-angry-th-episode
 
 **`tha`** is this episode; **`thu`** would make Alazun an angry type.
 
-**Rule:** [Label scope](label-seams.md#label-scope)
+**Rule:** [Label reach](label-seams.md#label-reach)
 :::
 
 **13.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyol thobather blwuzor.` or `zahelan vuguyol thobathem blwuzor.`

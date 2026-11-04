@@ -84,7 +84,7 @@ type Ctx = {
   /** Predicates in order, one per clause body; role pointers pick from these. */
   anchors: Anchor[];
   clauses: OpenClause[];
-  /** Completed turns, in order; a `y` pointer reads these (role-scope.md#content-of-the-event). */
+  /** Completed turns, in order; a `y` pointer reads these (role-parts.md#content-of-the-event). */
   turns: { head: LexWord }[];
   /** The utterance the walk is in, until it closes. */
   currentTurn?: { head?: LexWord };
@@ -453,7 +453,7 @@ function isConsequenceLinker(word: LexWord): boolean {
  * The anchor of a clause: its verb (or its `/ɡ/` word with no verb) and the overt filler of each
  * role. Doer `/z/`, undergoer `/d/`; the extra party is the verb's unhosted `/b/` or the `/b/` a
  * `/ɡ/` predicate hosts. Content-rule parts harvest manner `/h/` and stance `/th/` words here
- * (role-scope.md#content-of-the-event).
+ * (role-parts.md#content-of-the-event).
  */
 function anchorOf(clause: Clause): Anchor | undefined {
   let verb: LexWord | undefined;
@@ -537,7 +537,7 @@ function resultingState(anchor: Anchor): Filler | undefined {
 }
 
 /**
- * Content-rule pointers (role-scope.md#content-of-the-event): manner, state, stance, extent, speech move,
+ * Content-rule pointers (role-parts.md#content-of-the-event): manner, state, stance, extent, speech move,
  * outcome, and the event itself. Structure decides which words count; the resolver uses no word meanings.
  */
 function bindContentPointer(ctx: Ctx, bind: AnaphorBind, pronoun: LexWord, part: RolePart, pointerVowel: PointerVowel): void {

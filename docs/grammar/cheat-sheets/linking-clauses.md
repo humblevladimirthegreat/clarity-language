@@ -171,7 +171,7 @@ The relation word takes the other noun as a `bl-` word right after it. Use `/h/`
 <!-- cheat-sheet: linking-clauses -->
 | Event / noun | Use | English | Stage |
 |--------------|-----|---------|-------|
-| [**`hewem` / `gewem`**](/relations#like-resembles) | resemblance to a model | *like* | B |
+| [**`hewem` / `gewem`**](/relations#likeness) | resemblance to a model | *like* | B |
 | [**`hewel` / `gewel`**](/exactly-like#exactly-like) | an exact match | *exactly like* | I |
 | [**`heham` / `geham`**](/relations#exchange) | the other side of a swap | *in exchange for* | B |
 | [**`hanem` / `ganem`**](/relations#proxy) | authorized agency | *on behalf of* | B |
@@ -180,10 +180,10 @@ The relation word takes the other noun as a `bl-` word right after it. Use `/h/`
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Like, on an event](/relations#like-resembles) | `zazozon hewem bladozal vowurol.` | *Azozon walks like a duck.* | B |
-| [Like, on a noun](/relations#like-resembles) | `zohehal gewem blazozon.` | *A house like Azozon's.* | B |
-| [Like an event](/relations#like-resembles): `blarl` | `zazozon vowurol hewem blarl zadozal vazuvol.` | *Azozon walks the way a duck swims.* | B |
-| [Alike](/relations#like-resembles) | `zazozon zalazun zal gewem.` | *Azozon and Alazun are alike.* | B |
+| [Like, on an event](/relations#likeness) | `zazozon hewem bladozal vowurol.` | *Azozon walks like a duck.* | B |
+| [Like, on a noun](/relations#likeness) | `zohehal gewem blazozon.` | *A house like Azozon's.* | B |
+| [Like an event](/relations#likeness): `blarl` | `zazozon vowurol hewem blarl zadozal vazuvol.` | *Azozon walks the way a duck swims.* | B |
+| [Alike](/relations#likeness) | `zazozon zalazun zal gewem.` | *Azozon and Alazun are alike.* | B |
 | [Exactly like](/exactly-like#exactly-like) | `zazozon hewel bladozal vowurol.` | *Azozon walks exactly like a duck.* | I |
 | [In exchange](/relations#exchange) | `zazozon danal heham blohowel veham.` | *Azozon trades a book for a hammer.* | B |
 | [On behalf of](/relations#proxy) | `zazozon hanem blalazun vezuyol.` | *Azozon speaks on behalf of Alazun.* | B |
@@ -286,7 +286,7 @@ Each hinge, linker, and relation word is the abstract sense of an ordinary root.
 | [`habam`](/dependents#hinges) *before*, [`halam`](/dependents#hinges) *after*, [`hovam`](/dependents#hinges) *so that* | `abal` 🎒, `alal` ⌛, `oval` 🥅 | B |
 | [`xahom`](/sentence-linkers#sentence-linkers), [`xezem`](/sentence-linkers#sentence-linkers), [`xugorom`](/sentence-linkers#sentence-linkers) | `ahom` ➡️, `ezem` 🦓, `ugorom` 🕰️ | I |
 | [`xevewom`](/sentence-linkers#sentence-linkers), [`xugohum`](/sentence-linkers#sentence-linkers), [`xavedam`](/sentence-linkers#sentence-linkers) | `evewom` 🎞️, `ugohum` 🚧, `avedam` 🍟 | I |
-| [`hewem`](/relations#like-resembles) *like*, [`heham`](/relations#exchange) *in exchange for*, [`hanem`](/relations#proxy) *on behalf of* | `ewel` 🪞, `ehal` 💱, `anel` 🪪 | B |
+| [`hewem`](/relations#likeness) *like*, [`heham`](/relations#exchange) *in exchange for*, [`hanem`](/relations#proxy) *on behalf of* | `ewel` 🪞, `ehal` 💱, `anel` 🪪 | B |
 | [`hedam`](/locative-relations#locative-relations) *between*, [`hohom`](/locative-relations#locative-relations) *across*, [`hevam`](/locative-relations#locative-relations) *around* | `edal` 🥪, `ohol` 🌉, `eval` 🎠 | I |
 | [`hobom`](/of-relations#of-relations) *part of*, [`hadam`](/of-relations#of-relations) *contents of*, [`hulom`](/of-relations#of-relations) *made of* | `obol` 🦴, `adal` 🫙, `ulol` 🪵 | I |
 | [`haham`](/of-relations#of-relations) *from*, [`hozowum`](/of-relations#of-relations) *a piece of* | `ahal` 🗾, `ozowul` 🪚 | I |
@@ -303,7 +303,7 @@ Each hinge, linker, and relation word is the abstract sense of an ordinary root.
 | `hovam blarl` *so that* ([an aim, not claimed](/dependents#so-that)) | | `hahom blarl` *so … that* ([the result happened](/sentence-linkers#result-hinge)) |
 | `thohem blarl` *if* ([a condition](/dependents#hinges)) | | `derl` *whether* ([an open question](/dependents#dependent-clauses)) |
 | `xahom` *therefore* ([starts a sentence](/dependents#continue-x)) | | `hezem blarl` *although* ([attaches a clause](/dependents#hinges)) |
-| `hewem` *like* ([resembles, and is real](/relations#like-resembles)) | | `hewel` *exactly like* ([a perfect match](/exactly-like#exactly-like)) |
+| `hewem` *like* ([resembles, and is real](/relations#likeness)) | | `hewel` *exactly like* ([a perfect match](/exactly-like#exactly-like)) |
 | `gadam` *contents of* ([what a vessel holds](/of-relations#of-relations)) | | `al` *in* ([a place hook](/extra-noun-hooks#extra-noun-intermediate)) |
 | `hanem` *on behalf of* ([an agent](/relations#proxy)) | | `heham` *in exchange for* ([the other half of a swap](/relations#exchange)) |
 | `henam` *as of* ([a dated now](/as-of#as-of)) | | `halam` *after* ([a time for the event](/dependents#time-hinges)) |

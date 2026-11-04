@@ -9,9 +9,7 @@ Some English prepositions need a content root of their own (*like*, *for* in a s
 
 You already write *like Azozon* as a hosted pair (`hewem blazozon`): a relation word, then the extra noun as a `bl-` word right after it. The same shape covers the other prepositions on this page: pick the relation root, then put a `bl-` word after it. A `/w/` word that grades the relation sits immediately before the `/h/` or `/ɡ/` word.
 
-### Like (*resembles*) {#like-resembles}
-<a id="similative"></a>
-<a id="like"></a>
+### Likeness (*like*) {#likeness}
 
 When English says something **resembles** a model (*walks like a duck*, *a house like Azozon’s*), keep the same hosted pair as on the [clause](clause.md#extra-nouns) page. The relation word is **`hewem`**. Put the model in a `bl-` word right after it. Optional `/w/` sits immediately before the relation word. The event or thing itself is real; the `bl-` word is only what it is compared to. (cue: 🪞 *mirror*: you see a reflection, not the same object twice)
 
@@ -79,7 +77,7 @@ When English names the **other side of a swap** (*a book for a hammer*), use the
 
 On a noun, the same root is **`geham`** (`danal geham blohowel` *a book for a hammer*). As a plain noun, `zehal` is *a currency exchange*. As a verb, `veham` is *to trade* (the convertibility act).
 
-**Compare with:** a `/b/` word with no relation word before it is the recipient (*a book for Alazun* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun). *Like a duck* is [simile](#similative). *In a house* is a hook (`al`).
+**Compare with:** a `/b/` word with no relation word before it is the recipient (*a book for Alazun* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun). *Like a duck* is [likeness](#likeness). *In a house* is a hook (`al`).
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Same root as | Cue |
@@ -89,7 +87,7 @@ On a noun, the same root is **`geham`** (`danal geham blohowel` *a book for a ha
 ### Proxy (*on behalf of*) {#proxy}
 <a id="on-behalf-of"></a>
 
-When English says someone **acts as another person’s agent** (*tells on behalf of Alazun*), use the same hosted pair as [*like*](#similative). The relation word is **`hanem`**. Put that person in a `bl-` word right after it. The subject does the act; `/b/` is the person they act for, not who hears the telling. (cue: 🪪 *id*: the card stands as an authorized face; `/b/` is that person)
+When English says someone **acts as another person’s agent** (*tells on behalf of Alazun*), use the same hosted pair as [*like*](#likeness). The relation word is **`hanem`**. Put that person in a `bl-` word right after it. The subject does the act; `/b/` is the person they act for, not who hears the telling. (cue: 🪪 *id*: the card stands as an authorized face; `/b/` is that person)
 
 > `zazozon hanem blalazun vezuyol.`
 >

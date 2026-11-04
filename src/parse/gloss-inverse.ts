@@ -11,7 +11,7 @@
 
 import type { ClassifyTables } from "./classify.js";
 import { classify } from "./classify.js";
-import { POINTER_VOWEL, ROLE_PART, SCOPE_VOWEL, morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine } from "./morph-gloss.js";
+import { POINTER_VOWEL, ROLE_PART, REACH_VOWEL, morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine } from "./morph-gloss.js";
 import type { MorphGlossContext } from "./morph-gloss.js";
 import { parseWords } from "./word.js";
 import { POINT_BACK_HOOKS, TIME_HOOKS, TIME_JOINS } from "./series.js";
@@ -124,13 +124,13 @@ function indexHookedJoinForms(index: GlossIndex, tables: ClassifyTables): void {
   }
 }
 
-/** Say words (permission-consent.md#say-words): every scope × whose say × answer × ending on `/h/`. */
+/** Say words (permission-consent.md#say-words): every reach × whose say × answer × ending on `/h/`. */
 function indexSayForms(index: GlossIndex, tables: ClassifyTables): void {
-  for (const scope of ["a", "e", "o", "u", "ao", "ae", "oe", "ua", "uo", "ue"]) {
+  for (const reach of ["a", "e", "o", "u", "ao", "ae", "oe", "ua", "uo", "ue"]) {
     for (const part of ["z", "d", "b", "v"]) {
       for (const answer of ["a", "e", "o", "u"]) {
         for (const ending of ["l", "m", "r"]) {
-          const surface = `hw${scope}${part}${answer}${ending}`;
+          const surface = `hw${reach}${part}${answer}${ending}`;
           const gloss = glossOne(surface, tables, {});
           if (gloss) add(index.forms, gloss, surface);
         }
@@ -274,13 +274,13 @@ const PART_BY_LABEL: Record<string, string> = Object.fromEntries(
   Object.entries(ROLE_PART).map(([part, label]) => [label, part]),
 );
 
-const SCOPE_BY_LABEL: Record<string, string> = Object.fromEntries(
-  Object.entries(SCOPE_VOWEL).map(([vowel, label]) => [label, vowel]),
+const REACH_BY_LABEL: Record<string, string> = Object.fromEntries(
+  Object.entries(REACH_VOWEL).map(([vowel, label]) => [label, vowel]),
 );
 
-/** A role word's front, `SCOPE-PART` (`episode-agent`), then the rest. */
+/** A role word's front, `REACH-PART` (`episode-agent`), then the rest. */
 const ROLE_FRONT = new RegExp(
-  `^(${Object.keys(SCOPE_BY_LABEL).join("|")})-(${Object.keys(PART_BY_LABEL).join("|")})(.*)$`,
+  `^(${Object.keys(REACH_BY_LABEL).join("|")})-(${Object.keys(PART_BY_LABEL).join("|")})(.*)$`,
 );
 
 const POINTER_BY_LABEL: Record<string, string> = Object.fromEntries(
@@ -321,13 +321,13 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
     const pointer = front?.[3]!.match(/^\.([a-z]+)(?:\.(new|part))?$/);
     if (front && pointer && POINTER_BY_LABEL[pointer[1]!] !== undefined) {
       const ending = pointer[2] === "new" ? "l" : pointer[2] === "part" ? "m" : "r";
-      out.add(`${pos}w${SCOPE_BY_LABEL[front[1]!]}${PART_BY_LABEL[front[2]!]}${POINTER_BY_LABEL[pointer[1]!]}${ending}${suffix}`);
+      out.add(`${pos}w${REACH_BY_LABEL[front[1]!]}${PART_BY_LABEL[front[2]!]}${POINTER_BY_LABEL[pointer[1]!]}${ending}${suffix}`);
       return [...out];
     }
     // Role-compound resume: `←episode-agent-write` → `w` + `a` + `z` + resumed stem + **-r**.
     let roleFront = "";
     if (front?.[3]!.startsWith("-")) {
-      roleFront = `w${SCOPE_BY_LABEL[front[1]!]}${PART_BY_LABEL[front[2]!]}`;
+      roleFront = `w${REACH_BY_LABEL[front[1]!]}${PART_BY_LABEL[front[2]!]}`;
       body = front[3]!.slice(1);
     }
     const quoted = unquote(body);

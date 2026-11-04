@@ -863,31 +863,31 @@ function peg$parse(input, options) {
       family: { kind: "tag", vowels: vowels.split("") },
     };
   }
-  function peg$f104(scope, part, answer, ending, plural) {
+  function peg$f104(reach, part, answer, ending, plural) {
     return {
       ending,
       plural: !!plural,
-      family: { kind: "say", scope, part, answer },
+      family: { kind: "say", reach, part, answer },
     };
   }
-  function peg$f105(scope, part, pointerV, end, plural) {
+  function peg$f105(reach, part, pointerV, end, plural) {
     return {
       ending: end,
       plural: !!plural,
       family: xFamily("pointer", {
         leftRoots: [],
-        scopeVowel: scope,
+        reachVowel: reach,
         part,
         pointerVowel: pointerV,
       }),
     };
   }
-  function peg$f106(scope, part, root, r) {    return r;  }
-  function peg$f107(scope, part, root, rest, v) {    return v;  }
-  function peg$f108(scope, part, root, rest, ability, ending, plural) {
+  function peg$f106(reach, part, root, r) {    return r;  }
+  function peg$f107(reach, part, root, rest, v) {    return v;  }
+  function peg$f108(reach, part, root, rest, ability, ending, plural) {
     const fields = {
       leftRoots: [],
-      scopeVowel: scope,
+      reachVowel: reach,
       part,
       rightRoots: [root, ...rest],
     };
@@ -902,13 +902,13 @@ function peg$parse(input, options) {
   function peg$f110() {    return "th";  }
   function peg$f111(vowels, zone, root, r) {    return r;  }
   function peg$f112(vowels, zone, root, rest, v) {    return v;  }
-  function peg$f113(vowels, zone, root, rest, scope, ending, plural) {
+  function peg$f113(vowels, zone, root, rest, reach, ending, plural) {
     const fields = {
       leftRoots: [],
       hook: vowels + (zone ? "m" : "l"),
       rightRoots: [root, ...rest],
     };
-    if (scope) fields.scopeVowel = scope;
+    if (reach) fields.reachVowel = reach;
     return {
       ending,
       plural: !!plural,

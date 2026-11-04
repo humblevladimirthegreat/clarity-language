@@ -7,17 +7,17 @@ Wording policies for editors writing the **Claritish** track under **`docs/gramm
 ## Use the grammar's terms
 <a id="grammar-terms"></a>
 
-Name the feature the way the grammar names it. The reader is learning real Ageben words, so the English name they learn here must be the one they will meet again: **label scope** and **scope vowel**, **evidential channel**, **emotion locus** and **emotion motion**, **stance** word, **sake**, **tone mark**, **permission** / **requirement** / **consent**, **decision**, **try**. [terminology.md](../grammar/terminology.md) is the list; do not link to it from a lesson.
+Name the feature the way the grammar names it. The reader is learning real Ageben words, so the English name they learn here must be the one they will meet again: **label reach** and **reach vowel**, **evidential channel**, **emotion locus** and **emotion motion**, **stance** word, **sake**, **tone mark**, **permission** / **requirement** / **consent**, **decision**, **try**. [terminology.md](../grammar/terminology.md) is the list; do not link to it from a lesson.
 
 Do **not** coin a Claritish-only word for a feature that already has an English name. A track-local synonym costs the reader the term twice and makes the lesson stop transferring at the handoff.
 
 | Smell | Prefer |
 |-------|--------|
-| *reach*, for how far a label applies | *label scope*; the vowel is the *scope vowel* |
+| *scope*, for how far a label applies | *label reach*; the vowel is the *reach vowel* |
 | *channel*, introduced as if it were a Claritish word | *evidential channel* (*how you know*), then *channel* for short |
 | *place* and *motion*, for a composed feeling | *emotion locus* and *emotion motion* |
 
-Gloss the term in plain English in the **same sentence as first use**, exactly as [doc-style](doc-style.md#plain-language-no-assumed-linguistics) requires: *the scope vowel, which says how far the label reaches*. Using the grammar's name is not a licence to leave it unglossed.
+Gloss the term in plain English in the **same sentence as first use**, exactly as [doc-style](doc-style.md#plain-language-no-assumed-linguistics) requires: *the reach vowel, which says how far the label reaches*. Using the grammar's name is not a licence to leave it unglossed.
 
 Two terms the track owns, because the grammar has no name for them: **drop-in** (an Ageben word used inside an English sentence) and the **gap** section heading. Add no others.
 
@@ -43,7 +43,7 @@ The failure is psychological, not structural. A gap is a thinking trap the reade
 
 - **Give a default, and an escape.** Say which form to use when the reader cannot tell which fits ("when you are not sure which ending fits, use `thomam`").
 - **Long menus say they are menus.** A locus or channel inventory is followed by *you don't need to memorize it*.
-- **Say when to leave it out.** Every lesson marks at least one place the drop-in is unnecessary, and none of them implies that plain English is a mistake: *none of the three is the "right" one*; *leave the suffix off when the scope doesn't matter*.
+- **Say when to leave it out.** Every lesson marks at least one place the drop-in is unnecessary, and none of them implies that plain English is a mistake: *none of the three is the "right" one*; *leave the suffix off when the reach doesn't matter*.
 - **Rule out the near miss.** Where the obvious English reading is wrong, deny it in one short sentence (*motion is not strength*).
 - **Endings** are the settled-to-passing scale, with the cue **-l ≈ lasting, -r ≈ right now**, and each lesson notes when the scale comes back. Allowed and required grades the source instead, as do the prescription endings in Oughts and motives (invited / offered / trial). Labels and Can and can't teach hyphenated suffixes, which take no ending.
 - **Pronunciation** is taught once, in How sure are you?, in English keywords. Later lessons do not repeat it.
@@ -51,7 +51,7 @@ The failure is psychological, not structural. A gap is a thinking trap the reade
 ## The hyphenated English host
 <a id="hyphenated-host"></a>
 
-Claritish adds to an English word in two places: [label scope](/label-seams#label-scope), English word + `-th` + scope vowel (`lied-tha`), and [ability](/can-and-cant#ability-changeability), English verb + `-x` + vowel (`sing-xu`). The hyphen marks an English host and the letters after it are spelled exactly as Ageben spells them. Neither suffix takes an ending, because its vowel carries the meaning.
+Claritish adds to an English word in two places: [label reach](/label-seams#label-reach), English word + `-th` + reach vowel (`lied-tha`), and [ability](/can-and-cant#ability-changeability), English verb + `-x` + vowel (`sing-xu`). The hyphen marks an English host and the letters after it are spelled exactly as Ageben spells them. Neither suffix takes an ending, because its vowel carries the meaning.
 
 The hyphen belongs to Claritish only. Ageben writes these mid-word on an Ageben root with no hyphen (`vulamuthul`, `vozuyexal`; the ending is the one the Ageben word would take), so a lesson teaching a suffix never implies the hyphen survives into the full language.
 
@@ -62,7 +62,7 @@ The hyphen belongs to Claritish only. Ageben writes these mid-word on an Ageben 
 
 About five one-line examples in a single blockquote, two trailing spaces per line. They are ordinary adult situations (a shipped draft, a delayed flight, a rewritten memo, a sister laid off), not toy sentences, and they carry no Ageben beyond the drop-in. The [house cast](grammar-docs.md#house-cast) stays out of the lessons; names appear only in the full sentence on the closing page.
 
-After the block, one short paragraph unpacks two or three of the examples, not all five, and picks the ones where the ending or the scope does the work.
+After the block, one short paragraph unpacks two or three of the examples, not all five, and picks the ones where the ending or the reach does the work.
 
 Practice items give the English sentence in italics, then a parenthesized note saying **what the speaker means**, never which form to write ("(could be; you'll call and check)", not "(use `thomal`)"). A note may name the parts when the word is composed, as in Wants and plans. Answers go in `::: details Show answer`.
 

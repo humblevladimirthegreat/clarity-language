@@ -14,7 +14,7 @@ export type HashRedirect = {
 export const hashRedirects: HashRedirect[] = [
   { page: "causation.md", hash: "intermediate", to: "iff-fault.md" },
   { page: "causation.md", hash: "beginner", to: "causation.md" },
-  { page: "predication.md", hash: "intermediate", to: "label-scope.md" },
+  { page: "predication.md", hash: "intermediate", to: "label-reach.md" },
   { page: "predication.md", hash: "beginner", to: "predication.md" },
   { page: "restrictors.md", hash: "intermediate", to: "more-occasions.md" },
   { page: "restrictors.md", hash: "beginner", to: "restrictors.md" },

@@ -38,7 +38,7 @@ NOTIONAL takes a [holder](holder.md#holder) the same way a channel does: `theyum
 >
 > "Imagine it as Azozon sees it: Alazun left."
 
-**Compare with:** *walks like a duck* is a real walk; only its manner matches the model ([simile](/relations#similative) `hewem`). *Tells on behalf of Alazun* is a real telling, and Azozon is still the teller ([proxy](/relations#proxy) `hanem`).
+**Compare with:** *walks like a duck* is a real walk; only its manner matches the model ([likeness](/relations#likeness) `hewem`). *Tells on behalf of Alazun* is a real telling, and Azozon is still the teller ([proxy](/relations#proxy) `hanem`).
 
 ### Follow-up endings (NOTIONAL) {#follow-up-endings-notional}
 

@@ -10,7 +10,7 @@
  * - a bound pronoun names its referent: a resume, role pointer, tag or topic in **-r** reads as *the one
  *   first mentioned there*, so a pointer and a resume to the same one match, but a fresh noun does not.
  *   **-l** reads as the antecedent written out (pronouns.md#a-new-one); **-m** as a share of the referent;
- *   a role compound keeps its scope and part.
+ *   a role compound keeps its reach and part.
  * Positions (`at`) are dropped.
  */
 import type { ClassifyTables } from "../parse/classify.js";

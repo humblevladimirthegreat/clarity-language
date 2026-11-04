@@ -200,7 +200,7 @@ Motion is how the feeling moves, not how strong it is. For strength, put a [degr
 
 ## Allowed and required {#deontic}
 
-A [say word](/permission-consent#say-words) on `/h/`: **`h`** **`w`**, a scope vowel, whose say, the answer, and an ending. Whose say: **`v`** someone over the act (the speaker, or the `bl-` word after), **`z`** the doer, **`d`** the one it's done to, **`b`** the recipient. Answer: **`a`** allow, **`u`** forbid, **`e`** require, **`o`** their call. Ending: **-l** a rule or binding agreement, **-m** a person said so, **-r** nobody said. When unsure, use **-m**. All Intermediate.
+A [say word](/permission-consent#say-words) on `/h/`: **`h`** **`w`**, a reach vowel, whose say, the answer, and an ending. Whose say: **`v`** someone over the act (the speaker, or the `bl-` word after), **`z`** the doer, **`d`** the one it's done to, **`b`** the recipient. Answer: **`a`** allow, **`u`** forbid, **`e`** require, **`o`** their call. Ending: **-l** a rule or binding agreement, **-m** a person said so, **-r** nobody said. When unsure, use **-m**. All Intermediate.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -215,9 +215,9 @@ A [say word](/permission-consent#say-words) on `/h/`: **`h`** **`w`**, a scope v
 | [Assumed consent, several people](/permission-consent#consent) | `zazozon vezuyol bahelan balazun bal hwubar.` | *assuming Ahelan and Alazun are OK* | I |
 | [Letting yourself](/permission-consent#consent) | `zalazun vezuvel hwuzam.` | *Alazun lets themself sleep.* | I |
 | [A promise](/permission-consent#consent) | `zuwen vowurol hwuzal.` | *I promise to walk.* (to you) | I |
-| [Promise to someone else](/permission-consent#say-scope): pair scope **`o`** | `zuwen vowurol hwezal blahelan.` | *I promise Ahelan I'll walk.* | I |
+| [Promise to someone else](/permission-consent#say-reach): pair reach **`o`** | `zuwen vowurol hwezal blahelan.` | *I promise Ahelan I'll walk.* | I |
 | [Check in](/permission-consent#consent) | `yem zuwen vezuyol bawan hwubam.` | *Are you still OK with me telling you?* | I |
-| [Contrary to a stance](/permission-consent#say-scope): `uom` first | `zazozon vowurol uom hwuvul.` | *Azozon walks anyway.* | I |
+| [Contrary to a stance](/permission-consent#say-reach): `uom` first | `zazozon vowurol uom hwuvul.` | *Azozon walks anyway.* | I |
 
 <PageBreak />
 
@@ -228,7 +228,7 @@ A [say word](/permission-consent#say-words) on `/h/`: **`h`** **`w`**, a scope v
 | **`e`** | `hwuvom` *you have to* | `hwuzom` *makes themself* | `hwudom` *at their request* | `hwubom` *at the recipient's request* | I |
 | **`o`** | `hwuvem` *it's up to you* | `hwuzem` *their own choice* | `hwudem` *it's their call* | `hwubem` *the recipient's call* | I |
 
-| [Scope](/permission-consent#say-scope) | Example | English | Stage |
+| [Reach](/permission-consent#say-reach) | Example | English | Stage |
 |-------|---------|---------|-------|
 | **`a`** this act | `hwudam` | *they agreed to this* | I |
 | **`e`** standing | `hwodam` / `hwovam` | *they're generally fine with it* / *you may, any time* | I |

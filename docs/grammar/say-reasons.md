@@ -446,7 +446,7 @@ A one-off episode and a standing pattern use the same hinges. Add extra words fo
 
 ### Habit, triggered by {#habit}
 
-**Needs:** [CAUSE](/cause#cause) · [Because](/iff-fault#only-because) · [If](/causation#if) · [Always](/restrictors) · [Only when](/restrictors) · [How a kind holds](/label-scope#classification-packaging) · [Used to](say-tense.md#used-to) · [PLAN](/intention#plan-predict)
+**Needs:** [CAUSE](/cause#cause) · [Because](/iff-fault#only-because) · [If](/causation#if) · [Always](/restrictors) · [Only when](/restrictors) · [How a kind holds](/label-reach#classification-packaging) · [Used to](say-tense.md#used-to) · [PLAN](/intention#plan-predict)
 
 English *habit*, *I have a habit of*, and *triggered by* pack how often the act repeats, what cues it, and whether that is who you are. Name the job you mean. When a cue is how the act is produced, put **`thewom`** right before **`thahum`** (the cue is a fact) or **`thohem`** (you do not claim it holds), and the cue in that hinge's `/b/`.
 
@@ -457,7 +457,7 @@ English *habit*, *I have a habit of*, and *triggered by* pack how often the act 
 | *what makes* (*rain is what makes …*: the cause is how it comes about, and it holds) | **`thewom thahum`** + `/b/` the cause |
 | *always X* (how often; no cue) | **`hual`** / **`huam`** |
 | *only when Y* (when the claim counts, not that Y pulls the act) | occasion + **`hal`** |
-| *I'm an X type* (kind of person) | [label scope](/label-seams#label-scope) |
+| *I'm an X type* (kind of person) | [label reach](/label-seams#label-reach) |
 | *used to X* (pattern, no claim about now) | **`hual`** + FORMER **`helam`** |
 | *automatically* / *by itself* (no external cue) | **`thewom blanar`** |
 | *I plan to X when Y* (a chosen if-then) | PLAN **`thagom`** + **`thohem`** |
@@ -476,7 +476,7 @@ English *habit*, *I have a habit of*, and *triggered by* pack how often the act 
 
 **Compare with:** *always walks* (`vowurol hual`) names no cue. *Walks only when it rains* (`vowurol herulal hal`) says when the claim counts.
 
-**For *I'm an anxious type*, use:** a [scope](/label-seams#label-scope) vowel on the label, not CAUSE.
+**For *I'm an anxious type*, use:** a [reach](/label-seams#label-reach) vowel on the label, not CAUSE.
 
 ### Hoping something will happen {#hope-forecast}
 

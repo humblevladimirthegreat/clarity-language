@@ -70,7 +70,7 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 | Optional `l` after `/ɡ/` | [adjective before the noun](/left-bound-adjectives#left-bound-adjectives) | B |
 | Optional `l` after `/b/` | [`bl-`](/clause#extra-nouns): completes the word right before it | B |
 | Root(s) | vowel-first; a [dictionary compound](/phonotactics#phonotactics) is one long root (`oyaheha` *bedroom*); a root after a root is joined by mid-word `x` ([compounds](/compounds)) | I |
-| Mid-word `th` | the stance seam: [scope](/label-seams#label-scope), [sakes](/sakes), [viewpoint](/viewpoint#viewpoint-laterals) | I |
+| Mid-word `th` | the stance seam: [reach](/label-seams#label-reach), [sakes](/sakes), [viewpoint](/viewpoint#viewpoint-laterals) | I |
 | **-l** / **-m** / **-n** / **-r** | the [word ending](/word-endings) | B |
 | **-ln** | [one of a name](/proper-names#name-instance--ln) | I |
 | **-x** | [plural / associates](/plurality), after the ending | B |

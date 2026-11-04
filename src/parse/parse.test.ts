@@ -283,7 +283,7 @@ describe("parse — stand-in dependents", () => {
     assert.equal(valid.dependent?.orodo.raw, "blarl");
   });
 
-  it("parses like (hewem) hosting barl: the model of the simile is an event", () => {
+  it("parses like (hewem) hosting barl: the model of the likeness is an event", () => {
     const clause = parseText("zawulol vavobol hewem blarl zahebal vavobol.").utterances[0]!.bodies[0]!.clause;
     assert.equal(clause.dependent?.orodo.raw, "blarl");
     assert.throws(() => parseText("zawulol vavobol hewem blurl zahebal vavobol."));
@@ -392,7 +392,7 @@ describe("parse — SVO slots", () => {
 });
 
 describe("parse — hosted /w/ before /b/", () => {
-  it("parses simile with /w/ left of host, then /b/", () => {
+  it("parses likeness with /w/ left of host, then /b/", () => {
     const result = parseText("zazozon welazem hewem bladozal vowurol.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     const h = units.find((u) => u.kind === "h");

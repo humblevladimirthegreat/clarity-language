@@ -176,7 +176,7 @@ For *everyone, no exceptions*, use `zual geyel`. As a topic, `xeyen` (*now, abou
 
 ### Every and none, by set {#kind-domains}
 
-*Everyone hates me* and *nobody ever listens* hide how far they reach. To name the set a claim covers, put a SHARED word after the join that bounds it. *Everyone we know* is the undergoer role compound of *know* with [pair scope](/label-seams#scope-relative): `gwedanam blayan` is *known to the two of us*.
+*Everyone hates me* and *nobody ever listens* hide how far they reach. To name the set a claim covers, put a SHARED word after the join that bounds it. *Everyone we know* is the undergoer role compound of *know* with [pair reach](/label-seams#reach-relative): `gwedanam blayan` is *known to the two of us*.
 
 > `zual gwedanam blayan vezuvel.`
 >

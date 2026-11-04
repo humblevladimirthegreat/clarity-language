@@ -166,10 +166,10 @@ ohom,h,🌉,locative,across,locative across (edge to far edge of one landmark),b
 ohom,g,🌉,locative,across,locative across (edge to far edge of one landmark),bridge spans the gap; across is reaching from one side to the other,locative-relations.md#locative-relations
 evam,h,🎠,locative,around,locative around (figure on all sides of one landmark),carousel horses ride on all sides of the center pole; around is surrounding one landmark,locative-relations.md#locative-relations
 evam,g,🎠,locative,around,locative around (figure on all sides of one landmark),carousel horses ride on all sides of the center pole; around is surrounding one landmark,locative-relations.md#locative-relations
-ewem,h,🪞,similative,like,similative like (manner resemblance),mirror shows a reflection; like is resembling the model in /b/,clause.md#extra-nouns
-ewem,g,🪞,similative,like,similative like (type resemblance),mirror shows a reflection; like is a counterpart of the model in /b/,relations.md#like-resembles
-ewel,h,🪞,similative,exactly-like,similative exactly like (manner match),mirror shows a reflection; -l locks the match to the model in /b/,exactly-like.md#exactly-like
-ewel,g,🪞,similative,exactly-like,similative exactly like (type match),mirror shows a reflection; -l locks the match to the model in /b/,exactly-like.md#exactly-like
+ewem,h,🪞,likeness,like,likeness like (manner resemblance),mirror shows a reflection; like is resembling the model in /b/,clause.md#extra-nouns
+ewem,g,🪞,likeness,like,likeness like (type resemblance),mirror shows a reflection; like is a counterpart of the model in /b/,relations.md#likeness
+ewel,h,🪞,likeness,exactly-like,likeness exactly like (manner match),mirror shows a reflection; -l locks the match to the model in /b/,exactly-like.md#exactly-like
+ewel,g,🪞,likeness,exactly-like,likeness exactly like (type match),mirror shows a reflection; -l locks the match to the model in /b/,exactly-like.md#exactly-like
 eham,h,💱,exchange,in-exchange-for,exchange in-exchange-for (consideration / countervalue),currency arrows swap one for another; in-exchange-for is the other side of the swap in /b/,relations.md#exchange
 eham,g,💱,exchange,in-exchange-for,exchange in-exchange-for (consideration / countervalue),currency arrows swap one for another; in-exchange-for is the other side of the swap in /b/,relations.md#exchange
 anem,h,🪪,proxy,on-behalf-of,proxy on-behalf-of (authorized agency),id card stands as an authorized face; on-behalf-of is whose agency /b/ holds,relations.md#proxy

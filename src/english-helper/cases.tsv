@@ -27,7 +27,7 @@ Uzozen is glad that it rains.	that	first:feeling-that	*that* after a feeling wor
 My sister couldn't come yesterday.	sister	link:say-people-places.md#kin-words	a kin word goes to its table
 The teacher sings.	teacher	first:role	a doer noun with no root gets a role compound
 The teacher sings.	teacher	link:roles.md#one-time-or-a-practice	the practiced role comes with it
-Uzozen speaks as a teacher.	as a teacher	link:role-scope.md#capacity	*as a teacher* is the role the act is done in
+Uzozen speaks as a teacher.	as a teacher	link:role-parts.md#acting-as	*as a teacher* is the role the act is done in
 The flower sings.	flower	not:roles.md#role-compounds	a noun with a root of its own is no doer
 The flower sings.	flower	not:roles.md#one-time-or-a-practice	a noun with a root of its own is no doer
 # Clause openers
@@ -68,13 +68,13 @@ You have never listened since the storm.	since	has:hooked-join-time	*never … s
 Whose dog walks?	Whose	link:fill-ask-jobs.md#whose	*whose* is the used-by extra-noun hook
 Uzozen writes using a pen.	using	link:extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m	*using* is the extra-noun hook, not a tool case
 Where does Ahelan walk?	Where	link:fill-ask-jobs.md#where	*where?* is `el bar`
-# Label scope: the seam spelled on the word it scopes
-Uzozen lied this once.	this once	scope:thu:lie	the cue run leaves *lied* its own slot
+# Label reach: the seam spelled on the word it labels
+Uzozen lied this once.	this once	reach:thu:lie	the cue run leaves *lied* its own slot
 Uzozen lied this once.	lied	sense:lie	*lied* is not swallowed by the cue
-Olazun is an anxious type.	type	scope:tha:anxious	the scope goes on the word before the cue
-Olazun is angry, but it is the situation, not Olazun.	it is the situation	scope:thae:angry	a cue in a later clause reaches back
-Uzozen is a lying type, except this time.	except this time	scope:thua:lie	an *-ing* noun scopes its verb
-Olazun is becoming a liar.	becoming	scope:thoe:lie	no word before: the doer noun after, as its verb
+Olazun is an anxious type.	type	reach:tha:anxious	the reach goes on the word before the cue
+Olazun is angry, but it is the situation, not Olazun.	it is the situation	reach:thae:angry	a cue in a later clause reaches back
+Uzozen is a lying type, except this time.	except this time	reach:thua:lie	an *-ing* noun puts the reach on its verb
+Olazun is becoming a liar.	becoming	reach:thoe:lie	no word before: the doer noun after, as its verb
 Olazun is becoming a liar.	becoming	link:say-reasons.md#mind-verbs	*becoming* keeps the *become* row
 # Sake words: sake + stance + horizon, composed when the sentence names all three
 My book serves competence right now.	competence	sake:g-thar	*my*: on /ɡ/; *right now*: -r

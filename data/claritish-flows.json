@@ -56,13 +56,13 @@
       }
     ]
   },
-  "scope": {
+  "reach": {
     "lesson": "labels",
     "commands": { "label": {} },
     "questions": [
       {
-        "id": "scope",
-        "prompt": "Label scope: how far does the label reach?",
+        "id": "reach",
+        "prompt": "Label reach: how far does the label reach?",
         "choices": [
           { "value": "this episode" },
           { "value": "a practiced role" },
@@ -73,8 +73,8 @@
     ],
     "forms": [
       {
-        "parts": [{ "section": "suffixes", "cell": "{scope}" }],
-        "gloss": [{ "section": "suffixes", "cell": "{scope}", "take": "english" }]
+        "parts": [{ "section": "suffixes", "cell": "{reach}" }],
+        "gloss": [{ "section": "suffixes", "cell": "{reach}", "take": "english" }]
       }
     ]
   },

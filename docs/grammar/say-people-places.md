@@ -93,9 +93,9 @@ English *the day when* / *the place where* is two sentences. Name the time or pl
 
 ### Different from {#different}
 
-**Needs:** [Similative](/relations#similative) · [Negation `u`](/joins#negation-u)
+**Needs:** [Likeness](/relations#likeness) · [Negation `u`](/joins#negation-u)
 
-For *unlike* / *different from*, use the [similative](/relations#similative) **`gewem`** with the model in `/b/`, then close it with a negating join **`gul`**. The match to the model is denied.
+For *unlike* / *different from*, use [likeness](/relations#likeness) **`gewem`** with the model in `/b/`, then close it with a negating join **`gul`**. The match to the model is denied.
 
 > `zazozon gewem blalazun gul.`
 >
@@ -199,9 +199,9 @@ To keep *Sam* as English spelling, write the span. To see the Ageben sound-spell
 
 ### Who does it: *student*, *singer*, *manager* {#agent-nouns}
 
-**Needs:** [Role compounds (the doer)](/roles#role-compounds) · [One time or a practice](/roles#one-time-or-a-practice) · [Saying someone is a teacher](/roles#saying-someone-is-a-teacher) · [The role you act in](/role-scope#capacity)
+**Needs:** [Role compounds (the doer)](/roles#role-compounds) · [One time or a practice](/roles#one-time-or-a-practice) · [Saying someone is a teacher](/roles#saying-someone-is-a-teacher) · [Acting as](/role-parts#acting-as)
 
-English names a person by what they usually do (*a singer*, *a manager*). Ageben builds that noun from the event root: person letter, **`w`**, the practiced-role scope **`e`**, the doer **`z`**, the root, then the ending ([one time or a practice](/roles#one-time-or-a-practice)). `zwozozuyel` is *a singer* from `ozuyel` *sing*, and on `/ɡ/` (`gwozozuyel`) it says someone is one. With scope **`a`**, `zwuzozuyel` is only *someone who sings*. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
+English names a person by what they usually do (*a singer*, *a manager*). Ageben builds that noun from the event root: person letter, **`w`**, the practiced-role reach **`e`**, the doer **`z`**, the root, then the ending ([one time or a practice](/roles#one-time-or-a-practice)). `zwozozuyel` is *a singer* from `ozuyel` *sing*, and on `/ɡ/` (`gwozozuyel`) it says someone is one. With reach **`a`**, `zwuzozuyel` is only *someone who sings*. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
 
 > `zwozeluyol varuyol.`
 >
@@ -266,13 +266,13 @@ English names a person by what they usually do (*a singer*, *a manager*). Ageben
 | `zwubehal` | *customer* / *purchaser* (the other party of a trade) | `ehal` *currency-exchange* |
 | `zwubabulom` | *host* (the other party of a hospitality tie) | `abulom` *hospitality* |
 
-Rows with scope **`a`** name a part in one event (*winner*, *witness*, *passenger*), so that vowel is enough. The one acted on uses part **`d`**: `zwudenemul` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zwuzebalx`).
+Rows with reach **`a`** name a part in one event (*winner*, *witness*, *passenger*), so that vowel is enough. The one acted on uses part **`d`**: `zwudenemul` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zwuzebalx`).
 
 A noun that specifies the job goes in the stem: `zwozodozexowurol` is *a dog walker*. The noun's part in the job is as open as in English.
 
-English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwozeduyol` is *as a teacher* ([the role you act in](/role-scope#capacity)). `hwuozeduyol` is *not as a teacher*, speaking off duty.
+English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwozeduyol` is *as a teacher* ([acting as](/role-parts#acting-as)). `hwuozeduyol` is *not as a teacher*, speaking off duty.
 
-**Compare with:** *like a teacher* is the [similative](/relations#similative) (`hewem blwozeduyol`).
+**Compare with:** *like a teacher* is [likeness](/relations#likeness) (`hewem blwozeduyol`).
 
 *Shareholder* is *owner* of a part: `zwuzegunum gobom blohehal` (owner of a part of the house). *Colleague* is a worker tied to you: `zwozuzubal gohuyam bluwen`. *Relative* is a person who is part of the family: `zeyel gobom bluvayal`.
 
@@ -407,7 +407,7 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 
 ### Join, belong, comprise, replace, represent, prefer, involve, agree {#relating-verbs}
 
-**Needs:** [Rank joins](/rank-joins#rank-joins) · [List verbs](/list-verbs#list-verbs) · [Join-relations](/join-relations#join-relations) · [Of relations](/of-relations#of-relations) · [Whose](/extra-noun-hooks#genitive) · [Exchange](/relations#exchange) · [Proxy](/relations#proxy) · [Simile](/relations#similative)
+**Needs:** [Rank joins](/rank-joins#rank-joins) · [List verbs](/list-verbs#list-verbs) · [Join-relations](/join-relations#join-relations) · [Of relations](/of-relations#of-relations) · [Whose](/extra-noun-hooks#genitive) · [Exchange](/relations#exchange) · [Proxy](/relations#proxy) · [Likeness](/relations#likeness)
 
 Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer*) say how two things **stand to each other** more than what anyone does. Ageben writes that stance as a hosted relation word with the other thing in `/b/`, or as a list verb when someone really acts on a thing. Pick the relation, and keep the ordinary verb for the activity.
 
@@ -418,7 +418,7 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 | *belong to* | `zanal om balazun.` | in Alazun's use |
 | *consist of* / *made of* | `zohehal gulom blulol.` | material |
 | *comprise* / *constitute* / *is part of* | `zohowel gobom blohehal.` | a piece of the whole |
-| *match* / *correspond to* / *fit* (alike) | `zohehal hewem blodozel.` | like, as a simile |
+| *match* / *correspond to* / *fit* (alike) | `zohehal hewem blodozel.` | like (likeness) |
 | *replace* / *substitute* | `zazozon danal heham blohowel veham.` | swaps one for the other |
 | *represent* (act for) | `zazozon hanem blalazun vezuyol.` | tells on behalf of Alazun |
 | *prefer* | `zazozon danal von.` | ranks the object first |
@@ -607,7 +607,7 @@ An English noun like *case* or *board* covers several jobs, and Ageben has a dif
 
 ### Contribution, acquisition, murder, comparison and other act nouns {#act-nouns}
 
-**Needs:** [The event itself](/roles#the-event-itself) · [Role compounds](/roles#role-compounds) · [Someone's act](#someones-act) · [Fault](/fault#fault) · [Label scope](/label-seams#label-scope) · [Proxy](/relations#proxy) · [Exchange](/relations#exchange)
+**Needs:** [The event itself](/roles#the-event-itself) · [Role compounds](/roles#role-compounds) · [Someone's act](#someones-act) · [Fault](/fault#fault) · [Label reach](/label-seams#label-reach) · [Proxy](/relations#proxy) · [Exchange](/relations#exchange)
 
 English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *comparison*). Ageben has no separate noun for them. Put the verb stem on a thing letter with no **`w`** and part to name the act itself, write **`d`** as the part to name the thing the act happens to, or say the act as a sentence and resume it with **-r**. A wrongness or a pattern is the hinge or label on the act, not a different noun.
 
@@ -656,7 +656,7 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 >
 > "Azozon compares Alazun with Ahelan."
 
-**Compare with:** a ranking (*Azozon is more challenging than Alazun*) is the [rank join](/comparatives#comparatives), not **`vezem`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](/prescription#sake-preference); **`zolamalugulol`** names the one chosen. *Often* / *usually* is a [restrictor](/restrictors) (`huam`, `war`). A type across scenes is [label scope](/label-seams#scope-type) **`thu`**.
+**Compare with:** a ranking (*Azozon is more challenging than Alazun*) is the [rank join](/comparatives#comparatives), not **`vezem`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](/prescription#sake-preference); **`zolamalugulol`** names the one chosen. *Often* / *usually* is a [restrictor](/restrictors) (`huam`, `war`). A type across scenes is [label reach](/label-seams#reach-type) **`thu`**.
 
 ### Fair, keep, public, ride, admit and other leftover senses {#leftover-senses}
 
@@ -701,9 +701,9 @@ Some English words have a second or third sense that a published root already ca
 
 ### Other, another, different {#other-different}
 
-**Needs:** [Unspecified member](/joins#unspecified-member-r-phrase) · [Similative](/relations#similative) · [Different from](#different)
+**Needs:** [Unspecified member](/joins#unspecified-member-r-phrase) · [Likeness](/relations#likeness) · [Different from](#different)
 
-English *another dog* and *the other one* name something outside the ones already in play. Put **`zur`** (*something else*) after the kind: `zodozel zur` is *another dog*. Resemblance is the similative: `gewem` + `/b/` is *similar to*, and `hewem` is *similarly*. Denying it with **`gul`** (or **`hul`** on an adverb) gives *different* and *differently*.
+English *another dog* and *the other one* name something outside the ones already in play. Put **`zur`** (*something else*) after the kind: `zodozel zur` is *another dog*. Resemblance is likeness: `gewem` + `/b/` is *similar to*, and `hewem` is *similarly*. Denying it with **`gul`** (or **`hul`** on an adverb) gives *different* and *differently*.
 
 > `zazozon vayebel dodozel dur.`
 >

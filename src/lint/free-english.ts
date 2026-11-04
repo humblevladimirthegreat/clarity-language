@@ -366,7 +366,7 @@ export const NOTE_GRAMMAR_TERMS: readonly string[] = [
   "stance bar", "tone mark", "lateral", "viewpoint lateral", "gravity",
   // Number and comparison
   "plural", "associative", "clusivity", "inclusive we", "exclusive we", "collective",
-  "comparative", "superlative", "equative", "similative",
+  "comparative", "superlative", "equative", "likeness",
 ];
 
 const TERM_RES = NOTE_GRAMMAR_TERMS.map((term) => ({

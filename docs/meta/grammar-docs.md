@@ -307,14 +307,14 @@ Inline after the rule sentence: `(cue: …)`. Worked examples stay Ageben / morp
 
 A **scene** cue (`emoji *literal*: why`) is for remembering a published picture. State it only when that picture is doing **grammar** work, not when the page is merely using a dictionary metaphor.
 
-**State it** on a **closed overlay**: a fixed special reading under one part of speech (MAY, IDENTITY, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, clause-hinge **`ohe`**, locatives, means, simile *like*, exchange *for*, proxy *on behalf of*, of-relations, special pronouns, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column with **Same root as** naming the **-l** citation. One line that the same spelling is still ordinary content under other letters is fine.
+**State it** on a **closed overlay**: a fixed special reading under one part of speech (MAY, IDENTITY, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, clause-hinge **`ohe`**, locatives, means, likeness *like*, exchange *for*, proxy *on behalf of*, of-relations, special pronouns, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column with **Same root as** naming the **-l** citation. One line that the same spelling is still ordinary content under other letters is fine.
 
 **Do not state it** when the example is ordinary **lexicon abstract** (content **-m**): `welazem` *size* / *very*, `hadurom` *hastily*. Do **not** add a following sentence of the form “**`aduro`** here is the published abstract *haste*. (cue: 💨 *dash*: …).” The morph gloss and quoted English already give the sense. **-m** as a system is taught on [word-endings.md](/word-endings#abstract-m); that page (and drill **Cue** cells) may show `from *swan*: the glide of *grace*` because the lesson *is* the abstract ending.
 
 | Do | Don’t |
 |----|--------|
 | Overlay lead: **`oma`** as MAY, then `(cue: 💭 *thought*: a balloon over the scene)` | After `hadurom vowurol`, a sentence that names the lexicon row and restates the dash cue |
-| Overlay table **Cue** for IDENTITY, ABIL, CAUSE, locatives, means, simile *like*, exchange *for*, proxy *on behalf of*, of-relations, … | A post-example etymology footnote on ordinary *haste* / *size* |
+| Overlay table **Cue** for IDENTITY, ABIL, CAUSE, locatives, means, likeness *like*, exchange *for*, proxy *on behalf of*, of-relations, … | A post-example etymology footnote on ordinary *haste* / *size* |
 | Cue last on the **rule**, before the first example | Cue as the paragraph *after* the worked examples |
 
 Letter / series / ending cues (`**a** ≈ add`, **m** ≈ abstract) are the other kind; they follow [two kinds of cue](#cue-rubric) and are not this overlay-vs-lexicon split.
@@ -460,7 +460,7 @@ Wording and voice for the track: [claritish-style.md](claritish-style.md).
 **What a drop-in is:** a closed Ageben word spelled exactly as the owning page spells it: a tone mark, a stance word, a sake word (thanks, sorry, feelings), or the set phrase `blawan`. No Ageben syntax around it (role letters, hosted `/b/`, joins, spans, hooks, role compounds, numeric derivation), no numerals or stance numbers, no respelling for English readers.
 
 - **Placement** follows English: where an adverb or tag would sit (after the clause, before it, or beside the word it colors). A stance drop-in covers the English clause it sits in. A lone feeling word with no clause is how the speaker feels right now.
-- **Suffixes on English words** are [label scope](/label-seams#label-scope) and [ability](/can-and-cant#ability-changeability) (`-xa` / `-xe` / `-xo` / `-xu`), written with a hyphen on an English host. The rule and its marking live in [Claritish wording and voice](claritish-style.md#hyphenated-host).
+- **Suffixes on English words** are [label reach](/label-seams#label-reach) and [ability](/can-and-cant#ability-changeability) (`-xa` / `-xe` / `-xo` / `-xu`), written with a hyphen on an English host. The rule and its marking live in [Claritish wording and voice](claritish-style.md#hyphenated-host).
 - **Tone marks** go before what they color, as in Ageben. English punctuation stays English (a sentence-final `!` is English; sentences need no Ageben period).
 - **Endings:** on stance drop-ins, **-l / -m / -r** are taught as the settled-to-passing scale (*-l ≈ lasting, -r ≈ right now*), and each lesson points out when the scale comes back. Allowed and required (permission, requirement, consent) grades the source instead (*l ≈ law, m ≈ mouth, r ≈ read the room*), and the prescription endings in Oughts and motives grade why the move is welcome (**invited / offered / trial**); its motive endings are the usual scale. Never teach the concrete vs abstract citation split.
 

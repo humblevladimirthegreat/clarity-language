@@ -509,7 +509,7 @@ export const arrowRoots = closedDerived(
     ]),
 );
 
-/** `DIR th e` parses as a sake shape; on an arrow root it is the landmark's own facing (pair scope). */
+/** `DIR th e` parses as a sake shape; on an arrow root it is the landmark's own facing (pair reach). */
 function landmarkLateral(word: MorphWord): MorphWord | undefined {
   const family = word.family;
   if (family.kind !== "x" || family.xFamily !== "sake" || family.stanceVowel !== "e" || family.horizon) return undefined;
@@ -522,13 +522,13 @@ function landmarkLateral(word: MorphWord): MorphWord | undefined {
       leftRoots: family.leftRoots,
       rightRoots: [],
       landmark: true,
-      scopeVowel: family.stanceVowel,
+      reachVowel: family.stanceVowel,
     },
   };
 }
 
-/** `ROOT th V` on any root outside the eight sake roots is label scope (label-seams.md#label-scope). */
-function labelScope(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
+/** `ROOT th V` on any root outside the eight sake roots is label reach (label-seams.md#label-reach). */
+function labelReach(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
   const family = word.family;
   if (family.kind !== "x" || family.xFamily !== "sake") return undefined;
   if (family.leftRoots.every((root) => tables.sakeRoots.has(root))) return undefined;
@@ -588,7 +588,7 @@ export function isHolderSeamW(word: MorphWord, tables: ClassifyTables): boolean 
 }
 
 /**
- * The word shape `classify` reads, before lexicon lookup: a lateral, landmark lateral or label scope
+ * The word shape `classify` reads, before lexicon lookup: a lateral, landmark lateral or label reach
  * where the word grammar alone saw a sake shape (`gewezatheman` = *west* `th` *speaker*).
  */
 export function classifiedShape(word: MorphWord, tables: ClassifyTables): MorphWord {
@@ -601,7 +601,7 @@ export function classifiedShape(word: MorphWord, tables: ClassifyTables): MorphW
  */
 function hookPrefixOnHookCompound(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
   const family = word.family;
-  if (family.kind !== "x" || family.xFamily !== "hookPrefix" || family.scopeVowel || family.rightRoots?.length !== 1) return undefined;
+  if (family.kind !== "x" || family.xFamily !== "hookPrefix" || family.reachVowel || family.rightRoots?.length !== 1) return undefined;
   const stem: MorphWord = { ...word, family: { kind: "content", roots: family.rightRoots } };
   const parts = readHookCompound(stem, (root) => tables.published.has(root));
   if (!parts) return undefined;
@@ -610,7 +610,7 @@ function hookPrefixOnHookCompound(word: MorphWord, tables: ClassifyTables): Morp
 
 function classifiedShapeIn(word: MorphWord, tables: ClassifyTables): MorphWord {
   const shaped =
-    tailLateral(word, tables) ?? landmarkLateral(word) ?? labelScope(word, tables) ?? hookPrefixOnHookCompound(word, tables) ?? word;
+    tailLateral(word, tables) ?? landmarkLateral(word) ?? labelReach(word, tables) ?? hookPrefixOnHookCompound(word, tables) ?? word;
   return holderSeam(shaped, tables) ?? shaped;
 }
 

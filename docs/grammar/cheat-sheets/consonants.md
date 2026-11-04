@@ -138,7 +138,7 @@ Same letter, different **letter job** by **placement**: where the letter sits pi
 | [`l`](/left-bound-adjectives#left-bound-adjectives) after `/ɡ/` | `gl-` | adjective before the noun | B |
 | [`l`](/clause#extra-nouns) after `/b/` | `bl-` | completes the host right before it | B |
 | [`w`](/pronouns#role-pointers) | after the role letter | closed word: pointer, tag, role compound, say word | B–I |
-| [`th`](/label-seams#label-scope) mid-word | after the root | stance seam: [scope](/label-seams#label-scope), [sakes](/sakes#word-shape), [viewpoint](/viewpoint#viewpoint-laterals) | I |
+| [`th`](/label-seams#label-reach) mid-word | after the root | stance seam: [reach](/label-seams#label-reach), [sakes](/sakes#word-shape), [viewpoint](/viewpoint#viewpoint-laterals) | I |
 | [`x`](/compounds) mid-word | between roots | two roots, one word | B |
 | [`/x/`](/dependents#continue-x) first | | continue / sentence glue | B |
 | [**-x**](/plurality#associative) last | after the ending | associates or a group | B |

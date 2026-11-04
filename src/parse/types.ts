@@ -3,15 +3,15 @@ import type { OverlayKind } from "../lexicon-search.js";
 /**
  * Role word part consonant (roles.md#role-compounds): the slot the participant had in the event (`z` doer, `d`
  * undergoer, `b` the extra party), or a quality of the event (`h` manner, `g` state, `th` stance, `w` extent,
- * `y` speech move, `x` outcome, `v` the event itself; role-scope.md#content-of-the-event).
+ * `y` speech move, `x` outcome, `v` the event itself; role-parts.md#content-of-the-event).
  */
 export type RolePart = "z" | "d" | "b" | "h" | "g" | "th" | "w" | "y" | "x" | "v";
 
 /** Role pointer vowel: `e` same, `a` other, `o` self, `u` unsaid (pronouns.md#role-pointers). */
 export type PointerVowel = "a" | "e" | "o" | "u";
 
-/** Label-scope seam: simplex or the six stacks (label-seams.md#label-scope). */
-export type ScopeVowel = "a" | "e" | "o" | "u" | "ae" | "ao" | "oe" | "ua" | "ue" | "uo";
+/** Label-reach seam: simplex or the six stacks (label-seams.md#label-reach). */
+export type ReachVowel = "a" | "e" | "o" | "u" | "ae" | "ao" | "oe" | "ua" | "ue" | "uo";
 
 /** Part-of-speech prefix letters (role stamps). */
 export type Pos = "z" | "d" | "b" | "v" | "g" | "w" | "h" | "th" | "x" | "y";
@@ -86,10 +86,10 @@ export type MorphWordFamily =
       part?: RolePart;
       /** Role pointer: which event (`a` same, `o` other, `e` self, `u` unsaid; pronouns.md#role-pointers). */
       pointerVowel?: PointerVowel;
-      /** Values / label-scope / ability stance vowel (also role + ability on `/ɡ/`, `gwezuduyexal`). */
-      stanceVowel?: ScopeVowel;
-      /** Role compound or role pointer: the label scope vowel(s) after `w` (`zwozuduyel`; role-scope.md#scope). Hook prefix: scope after the stem's `th` seam (`zuexavuvuthol`). Landmark facing: pair scope after `th` (`gazuhothel`; viewpoint.md#landmark-facing). */
-      scopeVowel?: ScopeVowel;
+      /** Values / label-reach / ability stance vowel (also role + ability on `/ɡ/`, `gwezuduyexal`). */
+      stanceVowel?: ReachVowel;
+      /** Role compound or role pointer: the label reach vowel(s) after `w` (`zwozuduyel`; role-parts.md#reach). Hook prefix: reach after the stem's `th` seam (`zuexavuvuthol`). Landmark facing: pair reach after `th` (`gazuhothel`; viewpoint.md#landmark-facing). */
+      reachVowel?: ReachVowel;
       /** Emotion compose: sake horizon letter moved mid-word (feelings-permission.md#emotion-compose). */
       horizon?: "l" | "m" | "r";
       /** Emotion compose locus: hook vowel(s) for placement or direction (feelings-permission.md#emotion-compose). */
@@ -130,10 +130,10 @@ export type MorphWordFamily =
    */
   | { kind: "tag"; vowels: TagVowel[] }
   /**
-   * Say word: `h` + `w` + label scope + whose say + answer + ending (`hwuvam` *you may*, `hwudum` *they refused*;
+   * Say word: `h` + `w` + label reach + whose say + answer + ending (`hwuvam` *you may*, `hwudum` *they refused*;
    * permission-consent.md#say-words). The part is the doer `z`, the one it's done to `d`, the recipient `b`, or someone over the act `v`.
    */
-  | { kind: "say"; scope: ScopeVowel; part: SayPart; answer: SayAnswer };
+  | { kind: "say"; reach: ReachVowel; part: SayPart; answer: SayAnswer };
 
 /** Whose say a say word gives (permission-consent.md#say-words). */
 export type SayPart = "z" | "d" | "b" | "v";
@@ -342,7 +342,7 @@ export type VpCoord = {
     join?: LexWord;
     shared: CoordShared[];
     joinModifiers?: LexWord[];
-    /** Hosted `/b/` right after a label-scope `tho` verb (label-seams.md#label-scope). */
+    /** Hosted `/b/` right after a label-reach `tho` verb (label-seams.md#label-reach). */
     hostedVerbs?: { verb: LexWord; hosted: Hosted }[];
     /**
      * Words between two verbs of a joined list belong to the later verb's item (vp-clause-forms.md#vp-clause-forms):

@@ -53,7 +53,7 @@ In a sentence: **role letter + root + ending**. As a [citation](/word-endings#ci
 
 ## Reading mid-word `x` {#x}
 
-After the role letter, look at both sides of the **first** **`x`**. A role word is not one of these: it opens with **`w`**, a scope vowel, and a part consonant (`zwuzeduyol`, `zwuzer`).
+After the role letter, look at both sides of the **first** **`x`**. A role word is not one of these: it opens with **`w`**, a reach vowel, and a part consonant (`zwuzeduyol`, `zwuzer`).
 
 <!-- cheat-sheet: word-shape-clause -->
 | Left of **`x`** | Right of **`x`** | Reading | Example | Stage |
@@ -64,7 +64,7 @@ After the role letter, look at both sides of the **first** **`x`**. A role word 
 | [hook vowels](/hook-compounds#hook-prefixes), maybe **`m`** | a stem | hook prefix | `guoxuvuvul` *anti-fighting*; `gamxohalal` *mid-ocean* | A |
 | [hook vowels](/hooked-joins#hooked-joins), maybe **`m`** or **`r`** | a join: vowels and an ending | hooked join, landmark after it | `zexual blohehal` *everyone at the house* | A |
 
-Mid-word **`th`** is another family: a sake root and a vowel (`guwathal`), any other root and a vowel ([label scope](/label-seams#label-scope)), or a direction root and a facing person (`gewuhothazozon`). After a sake root, root-shaped letters are always the emotion tail.
+Mid-word **`th`** is another family: a sake root and a vowel (`guwathal`), any other root and a vowel ([label reach](/label-seams#label-reach)), or a direction root and a facing person (`gewuhothazozon`). After a sake root, root-shaped letters are always the emotion tail.
 
 ### One thing or two {#one-or-two}
 
@@ -197,9 +197,9 @@ Ageben has no word for *is*. The kind of claim comes from the pattern.
 | | a new noun + `/ɡ/` | `zodozel gelazem.` | *There is a big dog.* | B |
 | [Same person](/predication#identity) | `gorel` + `/b/`, side by side | `zalazun gorel blazozon.` | *Alazun is Azozon.* (one person, two names) | B |
 | [Same one again](/predication#identity) | `gorel`, no `/b/` | `zalazun danal gorel varuyol.` | *Alazun is writing the same book.* (the book already mentioned) | B |
-| [Basically the same](/label-scope#identity-endings) | **-m** | `zalazun gorem blazozon` | *Alazun is basically Azozon.* | I |
-| [Not the same](/label-scope#identity-endings) | `gul` after the pair | `zalazun gorel blazozon gul` | *Alazun is not Azozon.* | I |
-| [The one who is Azozon](/label-scope#identity-endings) | inside a noun phrase | `zeyel gorel blazozon` | *the person who is Azozon* | I |
+| [Basically the same](/label-reach#identity-endings) | **-m** | `zalazun gorem blazozon` | *Alazun is basically Azozon.* | I |
+| [Not the same](/label-reach#identity-endings) | `gul` after the pair | `zalazun gorel blazozon gul` | *Alazun is not Azozon.* | I |
+| [The one who is Azozon](/label-reach#identity-endings) | inside a noun phrase | `zeyel gorel blazozon` | *the person who is Azozon* | I |
 
 With a name or a resumed noun, the pair is a [property](/predication#existence), not a new thing: `zodozer gelazem.` is *The dog is big.*
 
@@ -209,24 +209,24 @@ With a name or a resumed noun, the pair is a [property](/predication#existence),
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Not](/label-scope#classification-packaging) | `zazozon godozel gul.` | *Azozon is not a dog.* | I |
-| [Always](/label-scope#classification-packaging) | `zazozon godozel hual` | *Azozon is always a dog.* | I |
-| [Sort of](/label-scope#classification-packaging) | `zazozon wayurom godozel.` | *Azozon is something of a dog.* | I |
-| [Be ADJ!](/label-scope#command-property) | `yol guyulom.` | *Be careful!* | I |
-| [Don't be ADJ](/label-scope#command-property) | `yul` + `/ɡ/` | | I |
+| [Not](/label-reach#classification-packaging) | `zazozon godozel gul.` | *Azozon is not a dog.* | I |
+| [Always](/label-reach#classification-packaging) | `zazozon godozel hual` | *Azozon is always a dog.* | I |
+| [Sort of](/label-reach#classification-packaging) | `zazozon wayurom godozel.` | *Azozon is something of a dog.* | I |
+| [Be ADJ!](/label-reach#command-property) | `yol guyulom.` | *Be careful!* | I |
+| [Don't be ADJ](/label-reach#command-property) | `yul` + `/ɡ/` | | I |
 
-### How far a label reaches {#label-scope}
+### How far a label reaches {#label-reach}
 
-Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`. A [role word](/label-seams#scope-role) writes the same vowels right after its **`w`**.
+Root, mid-word `th`, a reach vowel, then the ending. It goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`. A [role word](/label-seams#reach-role) writes the same vowels right after its **`w`**.
 
 | Vowel | Reach | Example | English | Stage |
 |-------|-------|---------|---------|-------|
-| [`thu`](/label-seams#scope-occasion) | this episode | `zazozon vulamuthul.` | *Azozon lied this once.* | I |
-| [`tho`](/label-seams#scope-occupation) | a practiced role | `zazozon vulamuthol.` | *Azozon lies as their craft.* | I |
-| [`the`](/label-seams#scope-relative) | this pair (`/b/` follows) | `zazozon gulayethem blalazun.` | *Azozon is a stranger to Alazun.* | I |
-| [`tha`](/label-seams#scope-type) | a type across scenes | `zalazun ganomuthal.` | *Alazun is an anxious type.* | I |
+| [`thu`](/label-seams#reach-occasion) | this episode | `zazozon vulamuthul.` | *Azozon lied this once.* | I |
+| [`tho`](/label-seams#reach-occupation) | a practiced role | `zazozon vulamuthol.` | *Azozon lies as their craft.* | I |
+| [`the`](/label-seams#reach-relative) | this pair (`/b/` follows) | `zazozon gulayethem blalazun.` | *Azozon is a stranger to Alazun.* | I |
+| [`tha`](/label-seams#reach-type) | a type across scenes | `zalazun ganomuthal.` | *Alazun is an anxious type.* | I |
 
-[Stacked scope](/label-seams#scope-stacks): pairs that start with **u** read like *everything but* (every scene, the second vowel set aside); the others read like hooks (*over*, *using*, *toward*).
+[Stacked reach](/label-seams#reach-stacks): pairs that start with **u** read like *everything but* (every scene, the second vowel set aside); the others read like hooks (*over*, *using*, *toward*).
 
 | Vowel | Reach | English | Stage |
 |-------|-------|---------|-------|

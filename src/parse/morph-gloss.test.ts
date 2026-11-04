@@ -532,7 +532,7 @@ describe("compareMorphGloss", () => {
     expectLine("zazozon balazun om buwen vezuyol", "z-Azozon | b-Alazun | rather.open | b-speaker | v-tell");
   });
 
-  it("label scope glosses its seam vowel", () => {
+  it("label reach glosses its seam vowel", () => {
     expectLine("zalazun gonumuthul", "z-Alazun | g-angry-th-episode");
     expectLine("zazozon vulamuthol", "z-Azozon | v-lie-th-role");
     expectLine("zalazun ganomuthal", "z-Alazun | g-anxious-th-type");
@@ -547,7 +547,7 @@ describe("compareMorphGloss", () => {
     expectLine("zazozon gonumuthuel blalazun", "z-Azozon | [g-angry-th-except-pair | bl-Alazun]");
   });
 
-  it("a pair-scope verb hosts the /b/ right after it", () => {
+  it("a pair-reach verb hosts the /b/ right after it", () => {
     expectLine("zazozon vulamuthel blalazun", "z-Azozon | [v-lie-th-pair | bl-Alazun]");
   });
 

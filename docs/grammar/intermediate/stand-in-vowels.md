@@ -109,7 +109,7 @@ The vowel still says what kind of content it is, and the word stands for the mos
 
 The content can be anything a sentence says: a verbless sentence, a denied event, or several sentences chained with `/x/`. A [resume](/pronouns#resume-r) **-r** picks up one word; **`-rth`** picks up what was said.
 
-Other role letters work the same way as the forward stand-in: **`blarth`** after a hinge (*because of that*) or after [*like*](/relations#similative) **`hewem`** (*like that*), **`zarth`** as the subject. Stand-ins fill `/z/` `/d/` `/b/` only; there is no stand-in on `/ɡ/` `/h/` `/w/` `/th/`. *Such* is [whole-stem **-r**](/pronouns#resume-r), and *then* or *so* is a hinge + **`blarth`**.
+Other role letters work the same way as the forward stand-in: **`blarth`** after a hinge (*because of that*) or after [*like*](/relations#likeness) **`hewem`** (*like that*), **`zarth`** as the subject. Stand-ins fill `/z/` `/d/` `/b/` only; there is no stand-in on `/ɡ/` `/h/` `/w/` `/th/`. *Such* is [whole-stem **-r**](/pronouns#resume-r), and *then* or *so* is a hinge + **`blarth`**.
 
 ### Practice {#intermediate-practice}
 

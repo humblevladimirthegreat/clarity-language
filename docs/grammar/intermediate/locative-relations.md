@@ -83,7 +83,7 @@ As a plain noun, `zeval` is *a carousel*. **`em`** *near* says only that the per
 | **`hohom` / `gohom`** | path from one edge of the landmark to the far edge | *across* | `ohol` *bridge* | 🌉: a bridge spans the gap |
 | **`hevam` / `gevam`** | on all sides of one landmark | *around* | `eval` *carousel* | 🎠: the horses ride on all sides of the pole |
 
-**Compare with:** a `/b/` word with no relation word before it is the recipient. *Like* is [simile](/relations#similative). *For a hammer* as a swap is [exchange](/relations#exchange). *On behalf of Alazun* is [proxy](/relations#proxy).
+**Compare with:** a `/b/` word with no relation word before it is the recipient. *Like* is [likeness](/relations#likeness). *For a hammer* as a swap is [exchange](/relations#exchange). *On behalf of Alazun* is [proxy](/relations#proxy).
 
 ### Practice {#intermediate-practice}
 

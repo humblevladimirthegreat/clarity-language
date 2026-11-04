@@ -58,7 +58,7 @@ export const OVERLAY_KINDS = [
   "identity",
   "locative",
   "pairing",
-  "similative",
+  "likeness",
   "of_relation",
   "exchange",
   "proxy",
@@ -463,7 +463,7 @@ export function validateOverlayPublishedHosts(
       continue;
     }
 
-    // A role-compound overlay (`waderenel`) spells the root after `w` + scope + part.
+    // A role-compound overlay (`waderenel`) spells the root after `w` + reach + part.
     if (!overlay.senseForm.replace(ROLE_PREFIX, "").startsWith(root)) {
       errors.push({
         row: rowNum,

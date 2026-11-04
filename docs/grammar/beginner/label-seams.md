@@ -4,9 +4,9 @@ band: beginner
 
 # Label seams {#how-far-a-label-reaches}
 
-### Label scope {#label-scope}
+### Label reach {#label-reach}
 
-English *Alazun is angry* can mean one outburst or the kind of person Alazun is. The same word does both jobs, and a single act easily turns into a claim about someone's nature. To say what kind of claim a label is, write the root, then mid-word **`th`**, then a scope vowel, then the ending. How far the label reaches is how much of the person's scenes it covers, biggest to smallest: a type across scenes, a practiced role, one relationship, or this episode. A type is a bigger claim, not an *and*, and not which person in a queue. The word keeps its usual slot, so a label on `/ɡ/` is still *is ADJ*, and a verb is still the verb.
+English *Alazun is angry* can mean one outburst or the kind of person Alazun is. The same word does both jobs, and a single act easily turns into a claim about someone's nature. To say what kind of claim a label is, write the root, then mid-word **`th`**, then a reach vowel, then the ending. How far the label reaches is how much of the person's scenes it covers, biggest to smallest: a type across scenes, a practiced role, one relationship, or this episode. A type is a bigger claim, not an *and*, and not which person in a queue. The word keeps its usual slot, so a label on `/ɡ/` is still *is ADJ*, and a verb is still the verb.
 
 > `zalazun gonumuthul.`
 >
@@ -14,7 +14,7 @@ English *Alazun is angry* can mean one outburst or the kind of person Alazun is.
 >
 > "Alazun is angry this time."
 
-A label with no scope vowel says nothing about how far it reaches. Use one when that reach matters, the way you would add *this time* or *a teacher* in English.
+A label with no reach vowel says nothing about how far it reaches. Use one when that reach matters, the way you would add *this time* or *a teacher* in English.
 
 <!-- cheat-sheet: word-shape-clause -->
 | Ageben | Use | English | Cue |
@@ -24,9 +24,9 @@ A label with no scope vowel says nothing about how far it reaches. Use one when 
 | **`the`** | this pair: true in one relationship | *a stranger to Azozon*, *lying, in dealings with Alazun* | **e** ≈ small (one person in reach) |
 | **`thu`** | this episode: this stretch of doing | *angry this time*, *lied (this once)* | **u** ≈ none (a speck of time) |
 
-Mid-word **`th`** with a scope vowel goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root. It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zuwethul` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead. A [role compound](roles.md#one-time-or-a-practice) writes the same vowels after **`w`**, not after **`th`**.
+Mid-word **`th`** with a reach vowel goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root. It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zuwethul` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead. A [role compound](roles.md#one-time-or-a-practice) writes the same vowels after **`w`**, not after **`th`**.
 
-To say **when** that claim counts (*only at school*, *always except when it rains*), put a [restrictor](restrictors.md) on `/w/` immediately before a scoped `/ɡ/` word, with the circumstance words on `/w/` too. The scope vowel says what kind of claim the label is; the restrictor says on which occasions it holds. A restrictor on **`/h/`** limits the whole sentence instead (*walks only when it rains*), not the label.
+To say **when** that claim counts (*only at school*, *always except when it rains*), put a [restrictor](restrictors.md) on `/w/` immediately before a `/ɡ/` word with a reach vowel, with the circumstance words on `/w/` too. The reach vowel says what kind of claim the label is; the restrictor says on which occasions it holds. A restrictor on **`/h/`** limits the whole sentence instead (*walks only when it rains*), not the label.
 
 > `zalazun wanurul wal gwozeduyol.`
 >
@@ -36,7 +36,7 @@ To say **when** that claim counts (*only at school*, *always except when it rain
 
 **Compare with:** **`hual`** / **`wual`** says the claim holds at every time. **`tha`** says you are treating them as that type across scenes, which can still have exceptions. **`wual gwozeduyol`** is the practiced role at every time, and **`ganomuthal`** is the type-claim. Using both together doubles down.
 
-#### This episode (`thu`) {#scope-occasion}
+#### This episode (`thu`) {#reach-occasion}
 
 > `zazozon vulamuthul.`
 >
@@ -44,7 +44,7 @@ To say **when** that claim counts (*only at school*, *always except when it rain
 >
 > "Azozon lied this once."
 
-#### Practiced role (`tho`) {#scope-occupation}
+#### Practiced role (`tho`) {#reach-occupation}
 
 > `zazozon vulamuthol.`
 >
@@ -56,7 +56,7 @@ On a verb, **`tho`** is that act as their practice, not one outing.
 
 **Compare with:** *usually* / *often* is a [restrictor](restrictors.md) (`huam`, `war`). **`tha`** is the type-claim (*a lying type*), which is not a practiced role.
 
-#### This pair (`the`) {#scope-relative}
+#### This pair (`the`) {#reach-relative}
 
 **`the`** says the label holds in one relationship: toward one other party. Put that party in a `bl-` word right after the word, on `/ɡ/`, `/h/`, and `/v/` alike. A verb's recipient stays a plain `/b/`. On a noun, **`the`** stands alone; to name the party, say the label on `/ɡ/` instead.
 
@@ -76,7 +76,7 @@ With no `/b/`, the party is unstated: *a stranger (to someone)*.
 
 On a [role compound](roles.md#one-time-or-a-practice) the same vowel sits after **`w`**: `gwezeduyol blalazun` is *is a teacher to Alazun*.
 
-#### Type across scenes (`tha`) {#scope-type}
+#### Type across scenes (`tha`) {#reach-type}
 
 > `zalazun ganomuthal.`
 >
@@ -86,9 +86,9 @@ On a [role compound](roles.md#one-time-or-a-practice) the same vowel sits after 
 
 On a [role compound](roles.md#one-time-or-a-practice) the same vowel sits after **`w`**: `zwazeduyol` is *a teacher type*.
 
-#### On a role compound {#scope-role}
+#### On a role compound {#reach-role}
 
-These are the same vowels, written right after **`w`** on a [role compound](roles.md#role-compounds): there they scope the role, not the act. `gwozeduyol` is *is a teacher*, `gwuzeduyol` *is one who teaches (this time)*, and `zwazeduyol` *a teacher type*.
+These are the same vowels, written right after **`w`** on a [role compound](roles.md#role-compounds): there they set the reach of the role, not the act. `gwozeduyol` is *is a teacher*, `gwuzeduyol` *is one who teaches (this time)*, and `zwazeduyol` *a teacher type*.
 
 > `zwazeduyol veruvol.`
 >
@@ -96,13 +96,13 @@ These are the same vowels, written right after **`w`** on a [role compound](role
 >
 > "A teacher type runs."
 
-A role word takes no **`th`** seam after its stem: its scope is written once, at the front. Scope on a plain verb stem (`veduyothul`) scopes the teaching.
+A role word takes no **`th`** seam after its stem: its reach is written once, at the front. Reach on a plain verb stem (`veduyothul`) labels the teaching.
 
-**Compare with:** the **`th`** seam scopes the word itself (the act on a verb, the quality on an adjective, the manner on an adverb), and the verb keeps the rest of its clause: `zazozon vulamuthul balazun.` is *Azozon lied to Alazun, this once*. A role compound names the person by their part: `zazozon gwozulamul.` is *Azozon is a liar*.
+**Compare with:** the **`th`** seam labels the word itself (the act on a verb, the quality on an adjective, the manner on an adverb), and the verb keeps the rest of its clause: `zazozon vulamuthul balazun.` is *Azozon lied to Alazun, this once*. A role compound names the person by their part: `zazozon gwozulamul.` is *Azozon is a liar*.
 
-#### Stacked scope {#scope-stacks}
+#### Stacked reach {#reach-stacks}
 
-The four scope vowels also combine in pairs, the same pairs that [joins](joins.md) and [hooks](hooks.md#extra-noun) use. A pair that starts with **`u`** reads like a join's *everything but*: **`u`** is every scene, and the second vowel is the one set aside (*every time but this one*, *with everyone but Alazun*, *as themselves, not in the role*). The other pairs read like the extra-noun hooks: **`ae`** *over*, **`ao`** *using*, **`oe`** *toward*. Do not read them as the first vowel's meaning followed by the second's. Do not read a stack as the new simplex letters glued together.
+The four reach vowels also combine in pairs, the same pairs that [joins](joins.md) and [hooks](hooks.md#extra-noun) use. A pair that starts with **`u`** reads like a join's *everything but*: **`u`** is every scene, and the second vowel is the one set aside (*every time but this one*, *with everyone but Alazun*, *as themselves, not in the role*). The other pairs read like the extra-noun hooks: **`ae`** *over*, **`ao`** *using*, **`oe`** *toward*. Do not read them as the first vowel's meaning followed by the second's. Do not read a stack as the new simplex letters glued together.
 
 <!-- cheat-sheet: word-shape-clause -->
 | Ageben | Use | English | Cue |

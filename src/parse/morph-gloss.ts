@@ -251,8 +251,8 @@ const ABILITY_STANCE: Record<string, string> = {
   u: "unable-irreversible",
 };
 
-/** Label scope seam vowels (label-seams.md#label-scope). */
-export const SCOPE_VOWEL: Record<string, string> = {
+/** Label reach seam vowels (label-seams.md#label-reach). */
+export const REACH_VOWEL: Record<string, string> = {
   a: "type",
   e: "pair",
   o: "role",
@@ -307,7 +307,7 @@ const GREETING_STANCE: Record<string, string> = {
   u: "passing",
 };
 
-/** Role word part consonants (roles.md#role-compounds, role-scope.md#content-of-the-event). */
+/** Role word part consonants (roles.md#role-compounds, role-parts.md#content-of-the-event). */
 export const ROLE_PART: Record<string, string> = {
   z: "agent",
   d: "patient",
@@ -321,13 +321,13 @@ export const ROLE_PART: Record<string, string> = {
   v: "event",
 };
 
-/** A role word's front: its label scope, then its part (`episode-agent`; glosses.md § Round trip). */
-export function roleFront(scope: string | undefined, part: string | undefined): string {
-  return `${SCOPE_VOWEL[scope ?? ""] ?? "scope"}-${ROLE_PART[part ?? ""] ?? "role"}`;
+/** A role word's front: its label reach, then its part (`episode-agent`; glosses.md § Round trip). */
+export function roleFront(reach: string | undefined, part: string | undefined): string {
+  return `${REACH_VOWEL[reach ?? ""] ?? "reach"}-${ROLE_PART[part ?? ""] ?? "role"}`;
 }
 
-function pointerFront(scope: string | undefined, part: string | undefined): string {
-  return `${SCOPE_VOWEL[scope ?? ""] ?? "scope"}-${ROLE_PART[part ?? ""] ?? "role"}`;
+function pointerFront(reach: string | undefined, part: string | undefined): string {
+  return `${REACH_VOWEL[reach ?? ""] ?? "reach"}-${ROLE_PART[part ?? ""] ?? "role"}`;
 }
 
 /** Role pointer vowel: which event the pointer reads (pronouns.md#role-pointers). */
@@ -1004,9 +1004,9 @@ function sensePieces(
     const name = `tag.${family.vowels.map((vowel) => vowel.toUpperCase()).join("+")}`;
     return [word.ending === "l" ? name : `←${name}${word.ending === "m" ? ".part" : word.ending === "n" ? ".name" : ""}`];
   }
-  // A say word: scope, whose say, the answer, and how it stands (`h-episode-patient-ALLOW-said`; glosses.md § Say words).
+  // A say word: reach, whose say, the answer, and how it stands (`h-episode-patient-ALLOW-said`; glosses.md § Say words).
   if (family.kind === "say") {
-    return [[SCOPE_VOWEL[family.scope] ?? "scope", SAY_PART[family.part], SAY_ANSWER[family.answer], SAY_ENDING[word.ending ?? ""] ?? "say"].join("-")];
+    return [[REACH_VOWEL[family.reach] ?? "reach", SAY_PART[family.part], SAY_ANSWER[family.answer], SAY_ENDING[word.ending ?? ""] ?? "say"].join("-")];
   }
   const resume =
     (word.ending === "r" || (family.kind === "x" && family.xFamily === "pointer")) &&
@@ -1016,12 +1016,12 @@ function sensePieces(
     word.reading !== "ability" &&
     family.kind !== "joinMarker";
   if (resume) {
-    // A role pointer glosses its scope, part, and which event, never the referent (glosses.md § Anaphors).
+    // A role pointer glosses its reach, part, and which event, never the referent (glosses.md § Anaphors).
     if (family.kind === "x" && family.xFamily === "pointer") {
-      return [`←${pointerFront(family.scopeVowel, family.part)}.${POINTER_VOWEL[family.pointerVowel ?? ""] ?? "pointer"}${POINTER_ENDING[word.ending ?? ""] ?? ""}`];
+      return [`←${pointerFront(family.reachVowel, family.part)}.${POINTER_VOWEL[family.pointerVowel ?? ""] ?? "pointer"}${POINTER_ENDING[word.ending ?? ""] ?? ""}`];
     }
     if (ctx.antecedent) {
-      // A role-compound resume keeps its scope and part, so the doer and undergoer of one event stay apart (glosses.md § Round trip).
+      // A role-compound resume keeps its reach and part, so the doer and undergoer of one event stay apart (glosses.md § Round trip).
       if (family.kind === "x" && family.xFamily === "role" && !word.overlay) {
         // After an earlier role compound of the same event, only its stem (`←episode-agent-walk`).
         const prior = ctx.antecedent.family;
@@ -1029,7 +1029,7 @@ function sensePieces(
           prior.kind === "x" && prior.xFamily === "role"
             ? (prior.rightRoots ?? []).map((root) => rootSense(root, ctx.antecedent!.ending, tables, { pos: ctx.antecedent!.pos })).join("-x-")
             : senseLabel(ctx.antecedent, tables, {});
-        return [`←${roleFront(family.scopeVowel, family.part)}-${stem}`];
+        return [`←${roleFront(family.reachVowel, family.part)}-${stem}`];
       }
       return [`←${senseLabel(ctx.antecedent, tables, {})}`];
     }
@@ -1418,7 +1418,7 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
   if (family.kind !== "x") return [];
 
   if (family.xFamily === "role") {
-    // Scope, part, then the stem; a stem compound keeps its `-x-` (`episode-agent-dog-x-walk`).
+    // Reach, part, then the stem; a stem compound keeps its `-x-` (`episode-agent-dog-x-walk`).
     const host = (family.rightRoots ?? []).map((root) =>
       rootSense(root, word.ending, tables, {
         named: isNameEnding(word.ending),
@@ -1426,11 +1426,11 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
       }),
     );
     const ability = family.stanceVowel ? `-${ABILITY_STANCE[family.stanceVowel] ?? family.stanceVowel}` : "";
-    return [`${roleFront(family.scopeVowel, family.part)}-${host.join("-x-")}${ability}`];
+    return [`${roleFront(family.reachVowel, family.part)}-${host.join("-x-")}${ability}`];
   }
 
   if (family.xFamily === "hookPrefix") {
-    // The hook, the seam, then the stem; a stem compound keeps its `-x-` (`against-x-house-x-walk`), and label scope
+    // The hook, the seam, then the stem; a stem compound keeps its `-x-` (`against-x-house-x-walk`), and label reach
     // keeps its `-th-` joiner (`against-x-fight-th-role`; hook-compounds.md#hook-prefixes).
     const roots = family.rightRoots ?? [];
     const stem = family.stemHook
@@ -1440,8 +1440,8 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
           tables,
         ).concrete ?? roots[0]!
       : roots.map((root) => rootSense(root, word.ending, tables, { named: isNameEnding(word.ending), pos: word.pos })).join("-x-");
-    const scope = family.scopeVowel ? `-th-${SCOPE_VOWEL[family.scopeVowel] ?? "scope"}` : "";
-    return [`${HOOK_EXTRA_NOUN[family.hook ?? ""] ?? "hook"}-x-${stem}${scope}`];
+    const reach = family.reachVowel ? `-th-${REACH_VOWEL[family.reachVowel] ?? "reach"}` : "";
+    return [`${HOOK_EXTRA_NOUN[family.hook ?? ""] ?? "hook"}-x-${stem}${reach}`];
   }
 
   if (family.xFamily === "sake" || family.xFamily === "ability") {
@@ -1489,7 +1489,7 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
 
   if (family.xFamily === "scope") {
     const host = family.leftRoots.map((root) => rootSense(root, word.ending, tables, { named: isNameEnding(word.ending), pos: word.pos }));
-    return [...host, SCOPE_VOWEL[family.stanceVowel ?? ""] ?? "scope"];
+    return [...host, REACH_VOWEL[family.stanceVowel ?? ""] ?? "reach"];
   }
 
   if (family.xFamily === "numeric") {

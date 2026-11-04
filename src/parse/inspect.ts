@@ -243,7 +243,7 @@ function familyChips(family: MorphWordFamily): string[] {
       const chips = [`x ${family.xFamily}`];
       if (family.leftRoots.length) chips.push(`host ${family.leftRoots.join("+")}`);
       if (family.rightRoots?.length) chips.push(`right ${family.rightRoots.join("+")}`);
-      if (family.scopeVowel) chips.push(`scope ${family.scopeVowel}`);
+      if (family.reachVowel) chips.push(`reach ${family.reachVowel}`);
       if (family.part) chips.push(`part ${family.part}`);
       if (family.hook) chips.push(`hook ${family.hook}`);
       if (family.stanceVowel) chips.push(`stance ${family.stanceVowel}`);
@@ -319,7 +319,7 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
     if (family.rightRoots?.length) {
       rows.push({ label: "right", value: family.rightRoots.join(" · ") });
     }
-    if (family.scopeVowel) rows.push({ label: "scope", value: family.scopeVowel });
+    if (family.reachVowel) rows.push({ label: "reach", value: family.reachVowel });
     if (family.part) rows.push({ label: "part", value: family.part });
     if (family.hook) rows.push({ label: "hook", value: family.hook });
     if (family.stanceVowel) rows.push({ label: "stance", value: family.stanceVowel });
@@ -427,7 +427,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     const kind = word.overlay?.kind;
     if (kind === "locative") return { line: "locative relation", href: "relations.html#locative-relations" };
     if (kind === "of_relation") return { line: "of relation", href: "relations.html#of-relations" };
-    if (kind === "similative") return { line: "simile", href: "relations.html#similative" };
+    if (kind === "likeness") return { line: "likeness", href: "relations.html#likeness" };
     if (kind === "exchange") return { line: "exchange", href: "relations.html#exchange" };
     if (kind === "proxy") return { line: "proxy", href: "relations.html#proxy" };
     if (kind === "stimulus") return { line: "sake stimulus", href: "sakes.html#stimulus" };

@@ -2,14 +2,13 @@
 band: intermediate
 ---
 
-# Role scope {#role-scope}
+# Role parts {#role-parts}
 
-English *a teacher*, *as a teacher*, *the way it was done*, and *that knife* mix a person's role, the capacity an act is done in, a quality of an event, and a landmark. Ageben keeps those apart: a **role word** names a participant or a quality of the event; a place, tool, or time is a landmark with a hook.
+English *a teacher*, *as a teacher*, *the way it was done*, and *that knife* mix a person's role, the role an act is done in, a quality of an event, and a landmark. Ageben keeps those apart: a **role word** names a participant or a quality of the event; a place, tool, or time is a landmark with a hook.
 
-### Scope across scenes (`e`, `a`, pairs) {#scope}
-<a id="scope-across-scenes"></a>
+### Reach across scenes (`e`, `a`, pairs) {#reach}
 
-The scope slot after **`w`** takes every [label scope](/label-seams#label-scope) vowel, not just **`u`** and **`o`**. They are the same vowels other labels write after mid-word **`th`**; on a role word they come first, and nowhere else. A **`th`** scope after a role word's stem (`zwuzuduyethel`) is not a word.
+The reach slot after **`w`** takes every [label reach](/label-seams#label-reach) vowel, not just **`u`** and **`o`**. They are the same vowels other labels write after mid-word **`th`**; on a role word they come first, and nowhere else. A **`th`** reach after a role word's stem (`zwuzuduyethel`) is not a word.
 
 | V1 | Reach | Example | English |
 |----|-------|---------|---------|
@@ -17,7 +16,7 @@ The scope slot after **`w`** takes every [label scope](/label-seams#label-scope)
 | **`o`** | practiced role | `zwozeduyol` | *a teacher* |
 | **`e`** | this pair: toward one party, named in a `bl-` word on `/ɡ/` | `gwezeduyol blalazun` | *is a teacher to Alazun* |
 | **`a`** | a type across scenes | `zwazeduyol` | *a teacher type* |
-| pairs | the scope stacks: **`ae`**, **`ao`**, **`oe`**, **`ua`**, **`ue`**, **`uo`** | `gwuozeduyol`, `gwaezeduyol` | *not in that capacity*, *a teacher by circumstance* |
+| pairs | the reach stacks: **`ae`**, **`ao`**, **`oe`**, **`ua`**, **`ue`**, **`uo`** | `gwuozeduyol`, `gwaezeduyol` | *not in that role*, *a teacher by circumstance* |
 
 > `zazozon gwezeduyol blalazun.`
 >
@@ -25,7 +24,7 @@ The scope slot after **`w`** takes every [label scope](/label-seams#label-scope)
 >
 > "Azozon is Alazun's teacher."
 
-On `/z/`, `/d/`, and `/b/`, pair scope **`e`** stands alone: the party is the one the clause already relates the person to. On `/ɡ/` it takes its `bl-` party, as on any [pair-scope label](/label-seams#scope-relative).
+On `/z/`, `/d/`, and `/b/`, pair reach **`e`** stands alone: the party is the one the clause already relates the person to. On `/ɡ/` it takes its `bl-` party, as on any [pair-reach label](/label-seams#reach-relative).
 
 > `zazozon gwuozeduyol.`
 >
@@ -33,11 +32,11 @@ On `/z/`, `/d/`, and `/b/`, pair scope **`e`** stands alone: the party is the on
 >
 > "Azozon is not acting as a teacher here."
 
-Scope works on [role pointers](/pronouns#role-pointers) too. `zwuzer` is *the latest doer*; `zwozer` is *the latest doer, in their practiced role*: after *Azozon teaches*, `zwozer` is Azozon as a teacher. With **-m** it gives a useful contrast: `dwuzem` is *what they did (this time)*, and `dwozem` is *their practice, their craft*.
+Reach works on [role pointers](/pronouns#role-pointers) too. `zwuzer` is *the latest doer*; `zwozer` is *the latest doer, in their practiced role*: after *Azozon teaches*, `zwozer` is Azozon as a teacher. With **-m** it gives a useful contrast: `dwuzem` is *what they did (this time)*, and `dwozem` is *their practice, their craft*.
 
-### The role you act in (`/h/`) {#capacity}
+### Acting as (`/h/`) {#acting-as}
 
-English *as a teacher, I …* names the role the act is done in, not a person standing in the clause. Write the same role compound, with a slot part (`z`, `d`, or `b`), on `/h/`: a person cannot be an adverb, so the word is the capacity the act is done in.
+English *as a teacher, I …* names the role the act is done in, not a person standing in the clause. Write the same role compound, with a slot part (`z`, `d`, or `b`), on `/h/`: a person cannot be an adverb, so the word is the role the act is done in.
 
 > `zazozon vezuyol hwozeduyol.`
 >
@@ -45,7 +44,7 @@ English *as a teacher, I …* names the role the act is done in, not a person st
 >
 > "Azozon speaks as a teacher."
 
-The scope vowel does its usual work. Pair scope **`e`** takes its `bl-` party, as on `/ɡ/`.
+The reach vowel does its usual work. Pair reach **`e`** takes its `bl-` party, as on `/ɡ/`.
 
 | Ageben | English |
 |--------|---------|
@@ -56,7 +55,7 @@ The scope vowel does its usual work. Pair scope **`e`** takes its `bl-` party, a
 | `hwodebebul` | *as a patient* (the one a doctor treats) |
 | `hwobezuyol` | *as a confidant* |
 
-**Compare with:** resemblance is the [similative](/relations#similative) (`hewem blwozeduyol` *like a teacher*). An ordinary `/h/` adverb is how the event goes (`hadurom` *hastily*).
+**Compare with:** resemblance is [likeness](/relations#likeness) (`hewem blwozeduyol` *like a teacher*). An ordinary `/h/` adverb is how the event goes (`hadurom` *hastily*).
 
 **Compare with:** `zazozon gwozeduyol.` says Azozon **is** a teacher. `zazozon vezuyol hwozeduyol.` says the telling is done in that role.
 
@@ -86,7 +85,7 @@ A role compound names a participant: the doer, what the event acts on or makes, 
 
 ### Content of the event {#content-of-the-event}
 
-English *the way it was done*, *what it left them*, *what came of it*, or *that remark* names a quality of an event, not a person in it. Write the same role-word shape, and put a part consonant for that quality after the scope vowel: the word is then a thing you can talk about, resume, or point to.
+English *the way it was done*, *what it left them*, *what came of it*, or *that remark* names a quality of an event, not a person in it. Write the same role-word shape, and put a part consonant for that quality after the reach vowel: the word is then a thing you can talk about, resume, or point to.
 
 > `dwuhowurol vayebel.`
 >
@@ -116,7 +115,7 @@ If that clause named no manner word, `dwuher` is the event's own manner: how wal
 | **`x`** | what followed from it | `dwuxowurol` *what comes of walking* | `dwuxer` *what came of it* |
 | **`v`** | the event itself | (no compound: the event noun is the stem, `dowurol`) | `dwuver` *that event* |
 
-Scope **`a`** / **`e`** / **`o`** / **`u`** still say how far the label reaches: `dwohowurol` is *someone's usual way of walking*, `dwahowurol` *a walking style*.
+Reach **`a`** / **`e`** / **`o`** / **`u`** still say how far the label reaches: `dwohowurol` is *someone's usual way of walking*, `dwahowurol` *a walking style*.
 
 A **`g`** pointer is the `/d/` participant's state when the event has one, and the `/z/` participant's otherwise. After *Azozon punches Alazun*, `dwuger` is Alazun's state; after *Azozon runs*, it is Azozon's. **`w`** always reads the event's own extent: a `/w/` word grades the next adjective, never the event, so `dwuwer` is *that much*. `dwugar` and `dwuwar` are not words: no clause names a resulting state or an amount for *the other* to differ from.
 

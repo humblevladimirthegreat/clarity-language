@@ -49,7 +49,7 @@ export const GLOSS_READER = {
     x: "links this sentence to the one before (`x-however`), or names the topic",
     "": "no prefix: a hook. Between two words of the same role it relates them, and the right one is what holds: `d-tea | instead | d-coffee` = coffee instead of tea. With a `b-` noun in its bracket it is a relation (`[from | b-dog]`)",
   } as Record<string, string>,
-  /** Part names in `SCOPE-PART-verb` and pointers (roles.md#role-compounds, role-scope.md#content-of-the-event). */
+  /** Part names in `REACH-PART-verb` and pointers (roles.md#role-compounds, role-parts.md#content-of-the-event). */
   roles: {
     agent: "the doer",
     patient: "the one it happens to, or what it makes",
@@ -64,11 +64,11 @@ export const GLOSS_READER = {
   } as Record<string, string>,
   pieces: [
     "`-x-` inside one word joins the pieces of a compound.",
-    "`SCOPE-PART-verb` names someone by their part in that kind of event, or a quality of the event itself (`d-episode-manner-walk` = a way of walking). On `/h/` it is the role the act is done in (`h-role-agent-teach` = as a teacher). The scope says how far the label reaches: `episode` this time (`z-episode-agent-teach` = someone who teaches, the one teaching), `role` their practiced role (`z-role-agent-teach` = a teacher), `pair` true in one relationship (with the `bl-` party), `type` the kind of person they are, `situation` the circumstances, not the person, `outside-role` as themselves, not in that role.",
+    "`REACH-PART-verb` names someone by their part in that kind of event, or a quality of the event itself (`d-episode-manner-walk` = a way of walking). On `/h/` it is the role the act is done in (`h-role-agent-teach` = as a teacher). The reach says how far the label reaches: `episode` this time (`z-episode-agent-teach` = someone who teaches, the one teaching), `role` their practiced role (`z-role-agent-teach` = a teacher), `pair` true in one relationship (with the `bl-` party), `type` the kind of person they are, `situation` the circumstances, not the person, `outside-role` as themselves, not in that role.",
     "A trailing `-x` adds associates: `z-Azozon-x` = Azozon and their people; `y-listener-x` = all of you. On a kind of thing, not a name, it is just several of that kind: `z-dog-x` = dogs (no others added). On a verb or adjective, they do it or are it as a group.",
     "`←X` refers back to X, mentioned earlier: `z-←Azozon` = Azozon again (he, she, they); `z-←episode-agent-teach` = the one who taught, in that earlier event.",
-    "`←SCOPE-PART.same` = whoever or whatever had that part in the latest sentence that had one (he, she, it, they; `←episode-manner.same` = the way it was done; `←episode-event.same` = that event). `.self` = this sentence's own PART (themself). `.other` = the other one, an earlier and different one. `.unsaid` = whoever it was, when that sentence left the part unsaid. The scope reads as on a role word: `←role-agent.same` = they, in their practiced role.",
-    "A say word reads `h-SCOPE-WHOSE-ANSWER-HOW`: whose say over the act (`event` = someone over it: the speaker, or the `bl-` person after it; `agent` = the doer's own; `patient` = the one it's done to; `recipient` = the one told or given to), the answer (`ALLOW`, `FORBID`, `REQUIRE`, `CHOICE` = up to them), and how it stands (`rule` = a rule or a binding agreement, `said` = someone said so, `tacit` = nobody said: tolerated, assumed, customary). `h-episode-event-ALLOW-said` = you may (I'm allowing it); `h-episode-patient-ALLOW-said` = they agreed; `h-episode-agent-REQUIRE-tacit` = feels they have to; `h-role-…` = standing, `h-pair-…` = toward the `bl-` party only.",
+    "`←REACH-PART.same` = whoever or whatever had that part in the latest sentence that had one (he, she, it, they; `←episode-manner.same` = the way it was done; `←episode-event.same` = that event). `.self` = this sentence's own PART (themself). `.other` = the other one, an earlier and different one. `.unsaid` = whoever it was, when that sentence left the part unsaid. The reach reads as on a role word: `←role-agent.same` = they, in their practiced role.",
+    "A say word reads `h-REACH-WHOSE-ANSWER-HOW`: whose say over the act (`event` = someone over it: the speaker, or the `bl-` person after it; `agent` = the doer's own; `patient` = the one it's done to; `recipient` = the one told or given to), the answer (`ALLOW`, `FORBID`, `REQUIRE`, `CHOICE` = up to them), and how it stands (`rule` = a rule or a binding agreement, `said` = someone said so, `tacit` = nobody said: tolerated, assumed, customary). `h-episode-event-ALLOW-said` = you may (I'm allowing it); `h-episode-patient-ALLOW-said` = they agreed; `h-episode-agent-REQUIRE-tacit` = feels they have to; `h-role-…` = standing, `h-pair-…` = toward the `bl-` party only.",
     "A dot joins the pieces of one label: words of one English phrase (`in.other.words`), or a variant of the word (`CLUES.strong`, `as-of.ledger`).",
     "A time amount in a bracket right after a stance word dates the event from now: `[th-REPORTED | [bl-hour | g-three]]` = in three hours, `g-minus-three` = three hours ago; `[bl-day | g-one]` = tomorrow. `bl-+-e-` = a moment from now (about to), `bl---e-` = a moment ago (just); with `.about`, soon / recently.",
     "`_` before digits (or a code's letters) marks a label, code, clock time, or date, not an amount (`h-_15,30` = at 15:30). `g-2nd` is an ordinal.",
@@ -130,7 +130,7 @@ export function renderCore(): string {
   for (const [prefix, text] of Object.entries(GLOSS_READER.prefixes)) {
     lines.push(prefix ? `- \`${prefix}-\` ${text}` : `- ${text}`);
   }
-  lines.push("", "Parts (in `SCOPE-PART-verb` and `←SCOPE-PART.same`):", "");
+  lines.push("", "Parts (in `REACH-PART-verb` and `←REACH-PART.same`):", "");
   lines.push(
     Object.entries(GLOSS_READER.roles)
       .map(([role, text]) => `${role} = ${text}`)
@@ -360,7 +360,7 @@ export function buildPrompt(
   for (const [tail, text] of Object.entries(GLOSS_READER.tails)) {
     if (new RegExp(`[A-Za-z]\\${tail}(?![A-Za-z-])`).test(shown)) legend.push(`- \`${tail}\` after a word: ${text}`);
   }
-  // Several constructions can share one note (the bar productions, the scope vowels).
+  // Several constructions can share one note (the bar productions, the reach vowels).
   const readers = new Set<string>();
   for (const id of [...new Set(constructions)].sort()) {
     const reader = context.readers.get(id);

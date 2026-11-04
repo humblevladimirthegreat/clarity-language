@@ -144,7 +144,7 @@ The stem may be an ordinary compound (`guoxohehaxowurol` *against walking in hou
 >
 > "Alazun is against leaving."
 
-[Label scope](/label-seams#label-scope) goes after the stem, as on any word, and **-r** resumes the whole word:
+[Label reach](/label-seams#label-reach) goes after the stem, as on any word, and **-r** resumes the whole word:
 
 > `zalazun guoxuvuvuthul.`
 >

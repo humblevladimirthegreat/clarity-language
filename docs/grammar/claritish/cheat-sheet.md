@@ -50,7 +50,7 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 
 ## Suffixes on English words {#suffixes}
 
-| [Label scope](labels.md) | | [Ability](can-and-cant.md) | |
+| [Label reach](labels.md) | | [Ability](can-and-cant.md) | |
 |--------------------------|-|----------------------------|-|
 | `-tha` | this episode | `-xa` | can |
 | `-the` | a practiced role | `-xo` | can't, just for now |

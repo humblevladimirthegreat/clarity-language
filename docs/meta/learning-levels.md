@@ -47,7 +47,7 @@ Rare in ordinary speech; stylistic / meter / singing / speech edges; overlay sen
 Typical shapes (evidence, not extra gates):
 
 - **Finish the series** — rest of a map Beginner already uses.
-- **New common job that is not first-corpus** — discourse machinery, identity/label scope, compose grids.
+- **New common job that is not first-corpus** — discourse machinery, identity/label reach, compose grids.
 - **Combination** — a job that is the product of two Beginner systems. Combination defaults to Intermediate; override to Beginner only if it still passes gate 2.
 
 **4. Dependency placement** (after the band is chosen)

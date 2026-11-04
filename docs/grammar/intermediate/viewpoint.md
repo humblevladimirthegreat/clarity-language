@@ -54,7 +54,7 @@ For *their left*, [resume](/pronouns#resume-r) the person on **-r** after **`th`
 | ANCHOR | what sets the facing: [special](/pronouns#special-pronouns) **`uwe`** / **`awa`** / **`aya`**, a person’s name, or a content **-r** of a person or oriented object | *Azozon’s left*, *your left*, *the car’s left*, *their left* |
 | Ending | ordinary ending is written at the end of the whole compound; its reference is the viewpoint anchor, not the direction | viewpoint kind / hedge / name / resume |
 
-**Compare with:** naming a doer from an event puts **`w`**, a scope vowel, and a part consonant before the stem ([role compounds](/roles#role-compounds): `zwuzuvuvul`). Viewpoint laterals put a **direction root** left of **`th`** and a facing person on the right.
+**Compare with:** naming a doer from an event puts **`w`**, a reach vowel, and a part consonant before the stem ([role compounds](/roles#role-compounds): `zwuzuvuvul`). Viewpoint laterals put a **direction root** left of **`th`** and a facing person on the right.
 
 ### Arrow rose (compass vs face)
 
@@ -135,7 +135,7 @@ Gravity works the same way: bare **`oduho`** + `/b/` is *under* the landmark, an
 
 ### The landmark's own front (DIR + `th` + `e`) {#landmark-facing}
 
-English *behind the house* means the house's own back, not a compass heading and not the speaker's back. Write the arrow root, then **`th`**, then **`e`** in place of a facing person, then the ending. Put the landmark in a `bl-` word right after it. **`e`** is the same vowel as pair scope on a label: here, the one `/b/` landmark is the one whose facing counts.
+English *behind the house* means the house's own back, not a compass heading and not the speaker's back. Write the arrow root, then **`th`**, then **`e`** in place of a facing person, then the ending. Put the landmark in a `bl-` word right after it. **`e`** is the same vowel as pair reach on a label: here, the one `/b/` landmark is the one whose facing counts.
 
 > `zodozel vehohel gazuhothel blohehal.`
 >
@@ -149,7 +149,7 @@ English *behind the house* means the house's own back, not a compass heading and
 >
 > "Azozon walks in front of the door."
 
-This is [label scope](/label-seams#label-scope) **`the`** on a direction: the direction relative to that landmark. Arrow roots take no other scope vowel.
+This is [label reach](/label-seams#label-reach) **`the`** on a direction: the direction relative to that landmark. Arrow roots take no other reach vowel.
 
 The landmark's front is where its design or current use faces (a house's front door, a car's windshield). A DIR + **`th`** + **`e`** word always takes a `/b/` landmark.
 

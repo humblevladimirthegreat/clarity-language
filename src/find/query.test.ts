@@ -155,7 +155,7 @@ describe("parse field keys", () => {
     assert.deepEqual(raws(text, "family=say,scope=u").sort(), ["hwuvam", "hwuvom"]);
   });
 
-  it("matches ability and sake stance, not th-scope", () => {
+  it("matches ability and sake stance, not th reach", () => {
     assert.deepEqual(raws("vuzunoxol.", "xFamily=ability,stance=o"), ["vuzunoxol"]);
     const sake = `g${CLOSED.ballot}thal`;
     assert.deepEqual(raws(sake, "xFamily=sake,stance=a"), [sake]);
@@ -166,13 +166,13 @@ describe("parse field keys", () => {
     assert.ok(!matchesTerm(scope, parseTerm("stance=a")));
   });
 
-  it("matches landmark facing as pair scope, not sake stance", () => {
+  it("matches landmark facing as pair reach, not sake stance", () => {
     const facing = { word: classify(parseWord("gazuhothel"), tables), unit: "", position: 0 };
     assert.ok(matchesTerm(facing, parseTerm("xFamily=lateral,scope=e")));
     assert.ok(!matchesTerm(facing, parseTerm("stance=o")));
   });
 
-  it("matches pointer vowel and role scope", () => {
+  it("matches pointer vowel and role reach", () => {
     const [pointer] = sentence("dwuher").words;
     assert.ok(pointer);
     assert.ok(matchesTerm(pointer, parseTerm("xFamily=pointer,pointer=e")));

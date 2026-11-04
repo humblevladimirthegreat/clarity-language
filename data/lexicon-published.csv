@@ -43,7 +43,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 😪,sleepy,uzeme,mind,one,,torpor,sleepy eye shows drowsiness; torpor is the unobservable low arousal,,,restrictors.md#beginner-practice
 🤤,drool,uduma,mind,holds,,craving,drool shows craving,,hunger,
 🫩,bleary,obeme,mind,one,,fatigue,bleary eyes show fatigue,,,
-😷,mask,amebu,body,takes-away,small,illness,a medical mask marks the sick; illness is being unwell,,,role-scope.md#intermediate-practice
+😷,mask,amebu,body,takes-away,small,illness,a medical mask marks the sick; illness is being unwell,,,role-parts.md#intermediate-practice
 🤒,sick,ezemu,mind,takes-away,,pathology,sick means illness; pathology is the unobservable condition-kind,,disease; ill; symptom,
 🤕,injured,enemu,mind,takes-away,,harm,injured means hurt; harm is the unobservable detriment,,damage; hurt; injury; wound; abuse; pain,
 🤢,nauseated,onomu,mind,takes-away,,contamination,nauseated shows disgust; contamination is the unobservable reading that something is tainted,,pollution; dirty,
@@ -270,7 +270,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🫂,hug,ahuya,person,holds,none,comfort,hug gives comfort,,comfortable; embrace,feelings-permission.md#intermediate-practice
 👪,family,uvaya,person,holds,big,kinship,a family is the people tied to you by blood,,household,hooks.md#beginner-practice
 🧑‍🧒,parent,abaya,person,holds,big,,an adult with a child is a parent,,,
-👣,footprints,avobo,body,order,medium,legacy,footprints leave legacy,v:go,trace,role-scope.md#intermediate-practice
+👣,footprints,avobo,body,order,medium,legacy,footprints leave legacy,v:go,trace,role-parts.md#intermediate-practice
 🫆,fingerprint,evebe,body,one,small,trace,a fingerprint is a unique mark left behind; a trace is that mark,,characteristic,
 🐒,monkey,amoza,creature,holds,medium,mimicry,monkey see monkey do,,copy,
 🦍,gorilla,egazo,creature,order,big,dominance,the silverback dominates the group,,dominate,
@@ -279,7 +279,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🦮,guide-dog,agozo,creature,order,medium,reliance,a guide dog is relied on to lead; reliance is depending on something,,,
 🐺,wolf,uwozu,creature,takes-away,medium,predation,wolf at the door,,,
 🦊,fox,avozu,creature,takes-away,medium,cunning,sly as a fox,,,
-🦝,raccoon,arozu,creature,takes-away,medium,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal,,role-scope.md#intermediate-practice
+🦝,raccoon,arozu,creature,takes-away,medium,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal,,role-parts.md#intermediate-practice
 🐈,cat,ogoze,creature,one,medium,curiosity,a cat pokes at whatever is new; curiosity is wanting to find out,,wonder; curious; interest,usually-vs-must.md#advanced-practice
 🐈‍⬛,black-cat,abozu,creature,takes-away,medium,omen,"a black cat crossing is read as a sign; an omen is a sign people take to predict, which need not mean it will",,,
 🦁,lion,alazu,creature,takes-away,big,courage,brave as a lion,,,

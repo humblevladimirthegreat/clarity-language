@@ -87,19 +87,19 @@ function featureConstructions(word: LexWord): string[] {
     }
     if (family.xFamily === "scope" && family.stanceVowel) ids.push(`scope.vowel.${family.stanceVowel}`);
     if (family.xFamily === "role") {
-      if (family.scopeVowel) ids.push(`role.scope.${family.scopeVowel}`);
+      if (family.reachVowel) ids.push(`role.scope.${family.reachVowel}`);
       if (family.part) ids.push(`role.part.${family.part}`);
       if (family.stanceVowel) ids.push("role.ability");
       if (word.ending === "r") ids.push("role.instance");
-      if (word.pos === "h") ids.push("role.capacity");
+      if (word.pos === "h") ids.push("role.actingAs");
     }
-    // A hook prefix teaches its hook, and any label scope after the stem (hook-compounds.md#hook-prefixes).
+    // A hook prefix teaches its hook, and any label reach after the stem (hook-compounds.md#hook-prefixes).
     if (family.xFamily === "hookPrefix") {
       if (family.hook) ids.push(`hook.${family.hook}`);
-      if (family.scopeVowel) ids.push(`scope.vowel.${family.scopeVowel}`);
+      if (family.reachVowel) ids.push(`scope.vowel.${family.reachVowel}`);
     }
     if (family.xFamily === "pointer") {
-      if (family.scopeVowel === "u") ids.push("pointer.scope.u");
+      if (family.reachVowel === "u") ids.push("pointer.scope.u");
       if (family.part) ids.push(`pointer.part.${family.part}`);
       if (family.pointerVowel) ids.push(`pointer.vowel.${family.pointerVowel}`);
       if (word.ending === "l") ids.push("pointer.new");

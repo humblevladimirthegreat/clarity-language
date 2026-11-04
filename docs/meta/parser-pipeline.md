@@ -84,7 +84,7 @@ Owns every **string-shaped** subsystem:
 - PoS prefix, left-bound **`gl-`**, reference ending, optional **-x**
 - Foreign `PoS<…>ENDING` / opaque `PoS<…>` (no phonology inside `<>`)
 - Free number words and writing shorthand ([numbers.md](/numbers))
-- Role compounds take an ordinary-compound stem and one tail: ability (`/ɡ/` only) or label scope; `enforce` limits them to `/z/` `/d/` `/b/` `/ɡ/`, `/x/` (a topic word) and `/y/` + **-n** / **-r**
+- Role compounds take an ordinary-compound stem and one tail: ability (`/ɡ/` only) or label reach; `enforce` limits them to `/z/` `/d/` `/b/` `/ɡ/`, `/x/` (a topic word) and `/y/` + **-n** / **-r**
 - Mid-word **`x`** families: rule alternation order = doc decision order (role → conversation length name+vowel+**-n` (citation or `/y/`) → hook prefix → value/ability → numeric prefix → ordinary compound)
 - Writing bracket atoms (`d@[…]`, `th(…)`, `d<…>`); a span has no spoken word shape
 - Prefix-less [hooks](/hooks)
@@ -105,7 +105,7 @@ This is where list verb vs soft clause **-n**, mood vs manner, value vs ability,
 ### Closed forms follow the lexicon
 <a id="closed-forms-follow-lexicon"></a>
 
-Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause hinges, locatives, means, similative *like*, exchange *for*, proxy *on behalf of*, of-relations, …) are **the published root** for that host (emoji / English literal) plus the overlay ending. When you **add** a closed overlay, pick an existing published row and spell that root plus ending (`ovu` + **-m** → **`ovum`**). Do **not** freeze a private spelling, do **not** coin a new lexicon word just to host the overlay, and do **not** put a productive stem (numeric derivation, role, values) in `sense_form`. If conversion reassigns *fishing*, witnessed **`thevom`** moves with **`evo`**. If conversion reassigns *attest*, live **`thodom`** moves with **`odo`**.
+Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause hinges, locatives, means, likeness *like*, exchange *for*, proxy *on behalf of*, of-relations, …) are **the published root** for that host (emoji / English literal) plus the overlay ending. When you **add** a closed overlay, pick an existing published row and spell that root plus ending (`ovu` + **-m** → **`ovum`**). Do **not** freeze a private spelling, do **not** coin a new lexicon word just to host the overlay, and do **not** put a productive stem (numeric derivation, role, values) in `sense_form`. If conversion reassigns *fishing*, witnessed **`thevom`** moves with **`evo`**. If conversion reassigns *attest*, live **`thodom`** moves with **`odo`**.
 
 **Exception:** list verb / join-relation sense-forms (`an` / `en` / `aen` / …) and other **vowel-series** morphology (join fences, restrictor cores) are keyed by **`a` / `o` / `e` / `u`**, not by a lexicon row — those spellings stay. Do **not** add a hosted overlay whose `sense_form` is a join stem (`uan`, `an`, …) unless it is this vowel-series family.
 
@@ -136,7 +136,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause hing
 | `identity` | `mood` | IDENTITY **`ugo`** |
 | `locative` | `locative` | *between* |
 | `means` | `means` | *using* **`ahada`** |
-| `similative` | `similative` | *like* **`umu`** |
+| `likeness` | `likeness` | *like* **`umu`** |
 | `of_relation` | `ofRelation` | *part of* / *contents* / *material* / *origin* |
 | `exchange` | `exchange` | *in-exchange-for* **`ehe`** |
 | `proxy` | `proxy` | *on-behalf-of* **`ade`** |

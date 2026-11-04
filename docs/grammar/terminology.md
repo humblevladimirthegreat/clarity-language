@@ -96,6 +96,14 @@ The written `/y/` word: **`yal` / `yel` / `yol` / `yul`** and soft **-m**.
 
 **Compare with:** [speech act](#speech-act) is the setting (statement / question / command / prohibition). A [polar particle](#polar-particle) is not an act word.
 
+### Acting as
+
+A slot-part role compound on `/h/` (`hwozeduyol`): the role the act is done in (*as a teacher*).
+
+[Role parts](/role-parts#acting-as)
+
+**Compare with:** resemblance is [likeness](/relations#likeness) (`hewem blwozeduyol` *like a teacher*). [Classification](#classification) on `/ɡ/` says someone **is** that role (`gwozeduyol`).
+
 ### Address set
 
 Listener special plus **-x**: the current addressees (no speaker).
@@ -186,14 +194,6 @@ Silence counted in beats at a sentence edge with no word: a **break** puts the n
 
 [Singing and speech edges](/singability#speech-edges)
 
-### Capacity
-
-A slot-part role compound on `/h/` (`hwozeduyol`): the role the act is done in (*as a teacher*).
-
-[Role scope](/role-scope#capacity)
-
-**Compare with:** resemblance is the [similative](/relations#similative) (`hewem blwozeduyol` *like a teacher*). [Classification](#classification) on `/ɡ/` says someone **is** that role (`gwozeduyol`).
-
 ### Changeability
 
 Endings on unmet **`thu`**, **DECISION**, and ability *can’t*.
@@ -266,7 +266,7 @@ Polar patterns that confirm a denied body.
 
 A role word whose part consonant names a quality of the event (`dwuhowurol` *a way of walking*, `dwuher` *the way it was done*), not a person in it.
 
-[Role scope](/role-scope#content-of-the-event)
+[Role parts](/role-parts#content-of-the-event)
 
 ### Continue (`/x/`)
 
@@ -402,13 +402,19 @@ Hosted: noun bolted onto a complex `/ɡ/`, `/h/`, or `/th/`. Unhosted: recipient
 
 [Clause](/clause#extra-nouns)
 
-### Label scope
+### Label reach
 
 Mid-word **`th`** plus a vowel on a content root, or the vowel right after **`w`** on a role word: this episode (**`thu`**), practiced role (**`tho`**), this pair (**`the`**), type across scenes (**`tha`**), or a stacked vowel.
 
-[Label seams](/label-seams#label-scope)
+[Label seams](/label-seams#label-reach)
 
 **Compare with:** [restrictor](#restrictor) names the occasions, not the kind of claim. [Practiced role](#practiced-role) is **`o`** on a role compound.
+
+### Likeness (*like*)
+
+Hosted **`hewem`** / **`gewem`** plus model `/b/` (*like* a duck / *like* Azozon’s); with **-l**, **`hewel`** / **`gewel`** is *exactly like*. Not **IDENTITY**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
+
+[Relations](/relations#likeness), [Exactly like](/exactly-like#exactly-like)
 
 ### Locative relation
 
@@ -418,15 +424,9 @@ Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; zone **-m** 
 
 ### Means
 
-Extra-noun [hook](/hooks#extra-noun) **`aol`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*. To name a kind of tool as its own noun, use a compound with a head root ([places, tools, and times](/role-scope#places-tools-times)).
+Extra-noun [hook](/hooks#extra-noun) **`aol`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*. To name a kind of tool as its own noun, use a compound with a head root ([places, tools, and times](/role-parts#places-tools-times)).
 
 [Extra nouns and whose](/extra-noun-hooks#extra-noun-intermediate)
-
-### Simile (*like*)
-
-Hosted **`hewem`** / **`gewem`** plus model `/b/` (*like* a duck / *like* Azozon’s); with **-l**, **`hewel`** / **`gewel`** is *exactly like*. Not **IDENTITY**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
-
-[Relations](/relations#similative), [Exactly like](/exactly-like#exactly-like)
 
 ### Exchange (*for*)
 
@@ -715,7 +715,7 @@ Closed `/y/` particles **`yaol` / `yuol` / …**.
 
 ### Practiced role
 
-A role compound with scope **`o`** after its **`w`** (`zwozeduyol`): the role as the office they inhabit (*a teacher*). With scope **`u`**, a role compound makes no claim about how often.
+A role compound with reach **`o`** after its **`w`** (`zwozeduyol`): the role as the office they inhabit (*a teacher*). With reach **`u`**, a role compound makes no claim about how often.
 
 [Role compounds](/roles#one-time-or-a-practice)
 
@@ -800,15 +800,15 @@ Role letter + extra-noun hook vowels (+ **`m`** for the zone or **`r`** to point
 ### Role compound / agent / patient / recipient
 <a id="role-compound--agent--place--patient--recipient"></a>
 
-Role letter + **`w`** + scope vowel + part consonant + stem (`zwuzeduyol`). The part consonant is the role letter the participant had in the event: **`z`** the doer (agent), **`d`** what it acts on or makes (patient), **`b`** the extra party (recipient, or the other party on a relation stem). On `/h/` a slot part is [capacity](#capacity). A [content](#content-of-the-event) part names a quality of the event.
+Role letter + **`w`** + reach vowel + part consonant + stem (`zwuzeduyol`). The part consonant is the role letter the participant had in the event: **`z`** the doer (agent), **`d`** what it acts on or makes (patient), **`b`** the extra party (recipient, or the other party on a relation stem). On `/h/` a slot part is [acting as](#acting-as). A [content](#content-of-the-event) part names a quality of the event.
 
 [Role compounds](/roles#role-compounds)
 
-**Compare with:** *a guard who sits* is this stem on `/ɡ/` with a non-resume ending, and *teacher* takes scope **`e`** for the practiced role ([which noun, with resume and kinds](say-people-places.md#which-noun-intermediate)). Resume **-r** is *the one teaching* (this instance), not the practiced role.
+**Compare with:** *a guard who sits* is this stem on `/ɡ/` with a non-resume ending, and *teacher* takes reach **`e`** for the practiced role ([which noun, with resume and kinds](say-people-places.md#which-noun-intermediate)). Resume **-r** is *the one teaching* (this instance), not the practiced role.
 
 ### Role pointer
 
-Role letter + **`w`** + scope vowel + part consonant + pointer vowel + ending (`zwuzer`): a participant of an earlier event (**`e`** the latest one with that role, **`a`** the other one, **`u`** the one the event left unsaid) or of this sentence (**`o`**, a reflexive). **-r** names the participant, **-l** a new one of the same kind (`zwuzel`), and **-m** the participant’s part in the event (`zwuzem`).
+Role letter + **`w`** + reach vowel + part consonant + pointer vowel + ending (`zwuzer`): a participant of an earlier event (**`e`** the latest one with that role, **`a`** the other one, **`u`** the one the event left unsaid) or of this sentence (**`o`**, a reflexive). **-r** names the participant, **-l** a new one of the same kind (`zwuzel`), and **-m** the participant’s part in the event (`zwuzem`).
 
 [Pronouns](/pronouns#role-pointers) · [Role compounds](/roles#role-pointers-family)
 

@@ -634,14 +634,14 @@ tagWord
 
 // ── Say words (feelings-permission.md#say-words) ───────────────────────────────────────────
 
-// `w` + label scope + whose say (`z` / `d` / `b` / `v`) + answer vowel + **-l** / **-m** / **-r** (`hwavam`, `hwadum`).
-// A consonant after the scope keeps it apart from a tag (`zwar`). Only on `/h/`: elsewhere the shape is a role pointer's.
+// `w` + label reach + whose say (`z` / `d` / `b` / `v`) + answer vowel + **-l** / **-m** / **-r** (`hwavam`, `hwadum`).
+// A consonant after the reach vowel keeps it apart from a tag (`zwar`). Only on `/h/`: elsewhere the shape is a role pointer's.
 sayWord
-  = "w" scope:SeamVowel part:[zdbv] answer:[aeou] ending:[lmr] plural:PluralSuffix? WordEnd {
+  = "w" reach:SeamVowel part:[zdbv] answer:[aeou] ending:[lmr] plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,
-        family: { kind: "say", scope, part, answer },
+        family: { kind: "say", reach, part, answer },
       };
     }
 
@@ -657,34 +657,34 @@ xWord
   / NumericPrefix
   / OrdinaryCompound
 
-// Role pointer: `w` + label scope + part consonant + pointer vowel + **-r** / **-l** / **-m** (`zwuzer`, `dwudel`,
+// Role pointer: `w` + label reach + part consonant + pointer vowel + **-r** / **-l** / **-m** (`zwuzer`, `dwudel`,
 // `dwuzem`; pronouns.md#role-pointers). The pointer vowel picks the event: `e` same, `a` other, `o` self, `u` unsaid.
 // **-r** names the participant or quality, **-l** a new one of its kind, **-m** its part in the event. Then the word
 // ends; a compound's stem goes on (`zwuzer` against `zwuzerayel`). Content parts (`h` `g` `th` `w` `y` `x` `v`)
 // follow the same shape (roles.md#content-of-the-event); `v` is pointers only.
 RolePointer
-  = "w" scope:SeamVowel part:RolePart pointerV:[aeou] end:[rlm] plural:PluralSuffix? WordEnd {
+  = "w" reach:SeamVowel part:RolePart pointerV:[aeou] end:[rlm] plural:PluralSuffix? WordEnd {
       return {
         ending: end,
         plural: !!plural,
         family: xFamily("pointer", {
           leftRoots: [],
-          scopeVowel: scope,
+          reachVowel: reach,
           part,
           pointerVowel: pointerV,
         }),
       };
     }
 
-// Role compound: `w` + label scope + part consonant + stem + ending (`zwazuduyel`, roles.md#role-compounds). The stem
+// Role compound: `w` + label reach + part consonant + stem + ending (`zwazuduyel`, roles.md#role-compounds). The stem
 // may itself be an ordinary compound (`zwazudozoxowurel` *someone who walks dogs*). Optional tail: ability (`x` +
-// stance vowel) on `/ɡ/` only (`gwezuduyexal` *can be a teacher*, intention.md#role-ability). Scope is written once,
+// stance vowel) on `/ɡ/` only (`gwezuduyexal` *can be a teacher*, intention.md#role-ability). Reach is written once,
 // at the front: no `th` seam after the stem. `v` forms no compounds (the event noun is the stem itself).
 RoleCompound
-  = "w" scope:SeamVowel part:RoleCompoundPart root:ContentRoot rest:("x" r:ContentRoot { return r; })* ability:("x" v:[aeou] { return v; })? ending:Ending plural:PluralSuffix? WordEnd {
+  = "w" reach:SeamVowel part:RoleCompoundPart root:ContentRoot rest:("x" r:ContentRoot { return r; })* ability:("x" v:[aeou] { return v; })? ending:Ending plural:PluralSuffix? WordEnd {
       const fields = {
         leftRoots: [],
-        scopeVowel: scope,
+        reachVowel: reach,
         part,
         rightRoots: [root, ...rest],
       };
@@ -709,16 +709,16 @@ RoleCompoundPart
 // Hook prefix: extra-noun hook vowel(s) + seam + stem + ending (`guexavuvul` *anti-fighting*, hooks.md#hook-prefixes).
 // Plain `x` is the hook's **-l** reading, `mx` its **-m** zone (`guemxewulel` *headwind*). No root has `x` and every
 // root starts with a vowel, so one or two vowels before the seam are never a root. The stem may be an ordinary
-// compound (`guexahehaxowurel`) and take label scope after it (`zuexavuvuthel`). A hook-compound citation as the
+// compound (`guexahehaxowurel`) and take label reach after it (`zuexavuvuthel`). A hook-compound citation as the
 // stem (`guexowurelul` *anti-leaving*) parses as one long root here, and classify.ts splits it, as on a plain word.
 HookPrefix
-  = vowels:HookPrefixVowels zone:"m"? "x" root:ContentRoot rest:("x" r:ContentRoot { return r; })* scope:("th" v:SeamVowel { return v; })? ending:Ending plural:PluralSuffix? WordEnd {
+  = vowels:HookPrefixVowels zone:"m"? "x" root:ContentRoot rest:("x" r:ContentRoot { return r; })* reach:("th" v:SeamVowel { return v; })? ending:Ending plural:PluralSuffix? WordEnd {
       const fields = {
         leftRoots: [],
         hook: vowels + (zone ? "m" : "l"),
         rightRoots: [root, ...rest],
       };
-      if (scope) fields.scopeVowel = scope;
+      if (reach) fields.reachVowel = reach;
       return {
         ending,
         plural: !!plural,
@@ -730,7 +730,7 @@ HookPrefix
 HookPrefixVowels
   = "ao" / "ae" / "oe" / "ua" / "ue" / "uo" / [aeou]
 
-// Simplex or stacked seam after mid-word `th` (sakes.md; predication.md#label-scope).
+// Simplex or stacked seam after mid-word `th` (sakes.md; label-seams.md#label-reach).
 SeamVowel
   = "ao" / "ae" / "oe" / "ua" / "ue" / "uo" / [aeou]
 

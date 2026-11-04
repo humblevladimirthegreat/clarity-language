@@ -21,7 +21,7 @@ The letter order **a o e u** has two sibling **scales**: size is amount (biggest
 | [Act](/speech-moves#speech-act-beginner) | join | what you do to the discourse list | statement | command | question | prohibition | B |
 | [Hook](/hooks#including) | join | how much of A is still in the slot | *including* | *rather* | *instead* | *except* | B |
 | [Extra-noun](/hooks#extra-noun) | hook (same spelling) | landmark as the hook job | *in* | *for* | *at* | *from* | B |
-| [Scope](/label-seams#label-scope) | size | how far the label reaches | type | practiced role | this pair | this episode | I |
+| [Reach](/label-seams#label-reach) | size | how far the label reaches | type | practiced role | this pair | this episode | I |
 | [Ability](/can-and-cant#ability) | size | how much can-do is in | can | can't right now | can't yet | never | B |
 | [Pointer](/pronouns#role-pointers) | size | how far the pointing reaches | the other one | this sentence | latest | unsaid | B |
 | [Sake](/sakes#word-shape) | size | how much of the sake is in | met | motive | prescription | unmet | B |
@@ -41,13 +41,13 @@ four vowels
 │     ├── pointer vowel — how far the pointing reaches
 │     ├── conversation length — how much talk is left
 │     ├── sake — how much of the sake is in
-│     ├── scope — how far the label reaches
-│     │     ├── label scope
+│     ├── reach — how far the label reaches
+│     │     ├── label reach
 │     │     ├── role compound
-│     │     ├── say-word scope
+│     │     ├── say-word reach
 │     │     ├── landmark facing
-│     │     ├── pointer scope slot
-│     │     └── stacked scope (writes scope, reads as join / hook)
+│     │     ├── pointer reach slot
+│     │     └── stacked reach (writes reach, reads as join / hook)
 │     └── join — how much list is left
 │           ├── stacked joins
 │           ├── unspecified member
@@ -87,7 +87,7 @@ four vowels
       └── finger-code vowel hand — pinky-first count; consonant hand does not
 ```
 
-A say word is scope then act (`hwuvom`: this-act **u**, require **o**). A role pointer is scope then pointer (`zwuzer`: episode **u**, latest **e**).
+A say word is reach then act (`hwuvom`: this-act **u**, require **o**). A role pointer is reach then pointer (`zwuzer`: episode **u**, latest **e**).
 
 ## Size {#size}
 
@@ -106,7 +106,7 @@ A say word is scope then act (`hwuvom`: this-act **u**, require **o**). A role p
 | [Pointer](/pronouns#role-pointers) | [the other one](/pronouns#the-other-one) (`zwuzar`) | [this sentence](/pronouns#themself) (`dwuzor`) | latest with that part (`zwuzer`) | [left unsaid](/pronouns#whoever-it-was) (`zwuzur`) | B |
 | [Conversation length](/conversation-length#conversation-length) | `SELFxan` open-ended | `SELFxon` a few minutes | `SELFxen` one slot | `SELFxun` passing | I |
 | [Sake stance](/prescription) | `tha` met / serves | `tho` motive | `the` prescription | `thu` unmet / detracts | B |
-| [Label scope](/label-seams#label-scope) | `tha` a type | `tho` practiced role | `the` this pair | `thu` this episode | I |
+| [Label reach](/label-seams#label-reach) | `tha` a type | `tho` practiced role | `the` this pair | `thu` this episode | I |
 | [Role compound](/roles#one-time-or-a-practice) | | `zwozeduyol` a teacher | | `zwuzeduyol` someone who teaches | B |
 
 <PageBreak />

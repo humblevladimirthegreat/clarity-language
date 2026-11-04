@@ -578,7 +578,7 @@ export type BareRootIssue = { text: string; index: number; root: string };
 /**
  * A code span naming a root with no ending (`eze`, or PoS + root `theha`) reads as English to
  * the span lint, so a respelled root would go stale unseen. The root must be published (or a
- * listed compound stem). Single vowels after `th` are the sake / scope seam, not roots.
+ * listed compound stem). Single vowels after `th` are the sake / reach seam, not roots.
  */
 export function lintBareRoots(text: string, tables: ClassifyTables): BareRootIssue[] {
   const issues: BareRootIssue[] = [];

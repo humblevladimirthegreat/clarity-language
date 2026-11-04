@@ -7,7 +7,7 @@ import { retieCore } from "./rebuild.js";
 
 /**
  * Respell an overlay sense form through the word grammar, the same way the docs are retied:
- * `waderenel` (`w` + scope + part + root) keeps its scope and part and moves only the root.
+ * `waderenel` (`w` + reach + part + root) keeps its reach and part and moves only the root.
  * `null` when the form does not spell `oldRoot` where the parser finds it.
  */
 export function retieSenseForm(senseForm: string, pos: string, oldRoot: string, newRoot: string): string | null {

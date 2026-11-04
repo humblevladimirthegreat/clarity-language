@@ -109,7 +109,7 @@ Ageben lets any label mark how essential we treat the behavior with an infix bef
 
 It's an optional efficient way to express a more charitable view of someone's trait.
 
-You can learn more here: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/predication.html#label-scope
+You can learn more here: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/label-seams.html#label-reach
 
 ### Collective Verbs and Adjectives Use Plural
 
@@ -211,7 +211,7 @@ Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/compounds.html#con
 
 English pronouns are often ambiguous as to what the antecedent is, especially *it*. Ageben pronouns point by the part someone played in a recent event, so the form itself tells you who or what you mean. There is no gender for pronouns, and not even animacy.
 
-The first letter is the part of speech in this sentence (`z-` subject, `d-` object, …). Then **`w`**, a scope vowel (`a` this episode), a part consonant (`z` the doer, `d` the one it happened to, `b` the extra party), a pointer vowel (`a` the latest, `o` the other one, `e` this same sentence), and -r.
+The first letter is the part of speech in this sentence (`z-` subject, `d-` object, …). Then **`w`**, a reach vowel (`a` this episode), a part consonant (`z` the doer, `d` the one it happened to, `b` the extra party), a pointer vowel (`a` the latest, `o` the other one, `e` this same sentence), and -r.
 
 > `zazawan dalahen vemedul. zwuder dwuzer vabahel.`
 

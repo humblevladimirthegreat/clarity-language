@@ -20,7 +20,7 @@ English *'s* also names a social tie (*Azozon's friend*, *Azozon's boss*). Put t
 >
 > "Azozon sees Alazun, Azozon's boss."
 
-With no `bl-` word after a joined subject, the tie points at the other members, as with `gewem` ([similative](relations.md#similative)). The other party is left out.
+With no `bl-` word after a joined subject, the tie points at the other members, as with `gewem` ([likeness](relations.md#likeness)). The other party is left out.
 
 > `zazozon zalazun zal gamayam.`
 >

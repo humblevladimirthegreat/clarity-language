@@ -12,7 +12,7 @@ const english = new Set(data.english);
 /** Real forms, read from the data rather than spelled here. */
 const could = outcomeFor(data.flows.guess!, { plan: "-m" })!.form;
 const sorry = outcomeFor(data.flows.sorry!, answerPaths(data.flows.sorry!.questions)[0]!)!.form;
-const episode = outcomeFor(data.flows.scope!, { scope: "this episode" })!.form;
+const episode = outcomeFor(data.flows.reach!, { reach: "this episode" })!.form;
 
 describe("drop-ins in the text", () => {
   it("finds words, suffixes, set phrases, and tone marks", () => {

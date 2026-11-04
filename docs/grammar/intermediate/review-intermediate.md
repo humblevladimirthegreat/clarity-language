@@ -82,7 +82,7 @@ z-Ahelan | v-climb . x-it-follows | z-Ahelan | [v-swim | v-not]
 
 z-Ahelan | [g-police | g-not]
 
-**Rule:** [Classification packaging](label-scope.md#classification-packaging)
+**Rule:** [Classification packaging](label-reach.md#classification-packaging)
 :::
 
 **3.** *Ahelan sees a hammer made of wood.*
@@ -468,7 +468,7 @@ z-Alazun | v-walk | h-role-agent-guard
 
 The role the act is done in sits on `/h/`; `/ɡ/` on Alazun would say Alazun **is** a guard who walks.
 
-**Rule:** [The role you act in](role-scope.md#capacity)
+**Rule:** [Acting as](role-parts.md#acting-as)
 :::
 
 **20.** *I have long wanted Azozon to walk.* `zazozon thalol vowurol.` or `zazozon thalom vowurol.`

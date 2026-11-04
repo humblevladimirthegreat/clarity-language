@@ -104,11 +104,11 @@ export class ConstructionError extends SentenceParseError {
 
 const NO_PLURAL_POS = new Set(["w", "h", "th", "x"]);
 const SAKE_POS = new Set(["g", "th", "w"]);
-/** Label scope goes on content slots (label-seams.md#label-scope). */
-const SCOPE_POS = new Set(["g", "z", "d", "b", "v", "h"]);
+/** Label reach goes on content slots (label-seams.md#label-reach). */
+const REACH_POS = new Set(["g", "z", "d", "b", "v", "h"]);
 /** Slot-rule parts: the participant that sat in that slot (roles.md#role-compounds). */
 const SLOT_PARTS = new Set(["z", "d", "b"]);
-/** A role compound names a participant or a quality of an event (roles.md#role-compounds); `/y/` takes it only as a call (-n / -r); `/h/` takes a slot part as capacity. */
+/** A role compound names a participant or a quality of an event (roles.md#role-compounds); `/y/` takes it only as a call (-n / -r); `/h/` takes a slot part for acting as (*as a teacher*). */
 const ROLE_COMPOUND_POS = new Set(["z", "d", "b", "g", "h", "x", "y"]);
 /** A hook prefix names a property, a participant, or how the clause stands to the stem (hook-compounds.md#hook-prefixes). */
 const HOOK_PREFIX_POS = new Set(["z", "d", "b", "g", "h"]);
@@ -455,16 +455,16 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
     throw new ConstructionError("sakeEnding", word.raw);
   }
   if (family.kind === "x" && family.xFamily === "scope") {
-    if (word.pos && !SCOPE_POS.has(word.pos)) throw new ConstructionError("labelScopeSlot", word.raw);
-    if (family.leftRoots.some((root) => arrowRoots().has(root))) throw new ConstructionError("labelScopeArrow", word.raw);
-    if (word.ending === "n" && family.leftRoots.some((root) => rolePronounRoots().has(root))) throw new ConstructionError("labelScopeStem", word.raw);
+    if (word.pos && !REACH_POS.has(word.pos)) throw new ConstructionError("labelReachSlot", word.raw);
+    if (family.leftRoots.some((root) => arrowRoots().has(root))) throw new ConstructionError("labelReachArrow", word.raw);
+    if (word.ending === "n" && family.leftRoots.some((root) => rolePronounRoots().has(root))) throw new ConstructionError("labelReachStem", word.raw);
   }
   if (family.kind === "x" && family.xFamily === "role" && !word.overlay) {
     const callEnding = word.ending === "n" || word.ending === "r";
-    const capacity = word.pos === "h" && !!family.part && SLOT_PARTS.has(family.part);
+    const actingAs = word.pos === "h" && !!family.part && SLOT_PARTS.has(family.part);
     if (
       word.pos &&
-      (!ROLE_COMPOUND_POS.has(word.pos) || (word.pos === "y" && !callEnding) || (word.pos === "h" && !capacity))
+      (!ROLE_COMPOUND_POS.has(word.pos) || (word.pos === "y" && !callEnding) || (word.pos === "h" && !actingAs))
     ) {
       throw new ConstructionError("roleCompoundSlot", word.raw);
     }
@@ -547,9 +547,9 @@ function enforceHostedStandIn(units: Unit[], index: number, unit: HUnit, tables:
     }
     return;
   }
-  // A simile's model may be an event: `humum blarl` + the next sentence (relations.md#similative). So may the time an
+  // A likeness's model may be an event: `humum blarl` + the next sentence (relations.md#likeness). So may the time an
   // `/h/` hooked join bounds (`huxal blarl`, hooked-joins.md#hooked-joins-clause).
-  if (!hosted.grounds && (host.overlay?.kind === "similative" || joinHook(host)) && bound.pos === "b" && s === "a") return;
+  if (!hosted.grounds && (host.overlay?.kind === "likeness" || joinHook(host)) && bound.pos === "b" && s === "a") return;
   if (hosted.grounds || !isHinge(host)) throw new ConstructionError("standInHost", `${host.raw} ${bound.raw}`);
   const undoHost = host.overlay!.gloss === "so-that" || host.overlay!.gloss === "if";
   if (bound.pos !== "b" || !(s === "a" || (s === "u" && undoHost))) {
@@ -680,12 +680,12 @@ function enforceFeelingLandmark(words: LexWord[], hosted: Hosted | undefined): v
   }
 }
 
-/** Whose say: a `bl-` word names someone over the act (`v`), or, under pair scope, the one party a participant's say is toward (permission-consent.md#say-words). */
+/** Whose say: a `bl-` word names someone over the act (`v`), or, under pair reach, the one party a participant's say is toward (permission-consent.md#say-words). */
 function enforceSayHost(unit: HUnit): void {
   const family = unit.word.family;
   if (family.kind !== "say") return;
   const bound = unit.hosted?.bound;
-  if (bound && family.part !== "v" && !family.scope.includes("e")) {
+  if (bound && family.part !== "v" && !family.reach.includes("e")) {
     throw new ConstructionError("sayHost", `${unit.word.raw} ${bound.raw}`);
   }
 }

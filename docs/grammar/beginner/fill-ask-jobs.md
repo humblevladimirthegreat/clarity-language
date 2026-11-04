@@ -25,7 +25,7 @@ To ask what something is **like** (*What color is it?*, *What kind of dog?*), pu
 | **`ger`** | *Like anything in particular?* |
 | **`gur`** | *What else is it like?* |
 
-**Compare with:** *like what?* is the similative blank, **`hewem blar`**: it asks for a model to resemble, not a property.
+**Compare with:** *like what?* is the likeness blank, **`hewem blar`**: it asks for a model to resemble, not a property.
 
 ### When? {#when}
 

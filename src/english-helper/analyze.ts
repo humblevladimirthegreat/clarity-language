@@ -536,13 +536,13 @@ function spellHookPhrases(slots: readonly Slot[]): void {
   });
 }
 
-/** A label-scope seam as a row's form names it (`tha`, `thao`; label-seams.md#label-scope). */
+/** A label-reach seam as a row's form names it (`tha`, `thao`; label-seams.md#label-reach). */
 const SCOPE_SEAM = /^th(ao|ae|oe|ua|uo|ue|a|e|o|u)$/;
-const SCOPE_SECTION = /^(?:predication|label-scope|label-seams)\.md#scope-/;
+const REACH_SECTION = /^(?:predication|label-reach|label-seams)\.md#reach-/;
 
-/** The seam a label-scope job or entry names, if it is one. */
-export function scopeSeam(s: Suggestion): string | undefined {
-  if ((s.kind !== "job" && s.kind !== "entry") || !SCOPE_SECTION.test(s.link)) return undefined;
+/** The seam a label-reach job or entry names, if it is one. */
+export function reachSeam(s: Suggestion): string | undefined {
+  if ((s.kind !== "job" && s.kind !== "entry") || !REACH_SECTION.test(s.link)) return undefined;
   return s.form
     .split(" / ")
     .map((p) => p.trim())
@@ -554,7 +554,7 @@ export function scopeSeam(s: Suggestion): string | undefined {
  * act on `/v/` for an *-ing* noun (*a lying type*) and a doer noun (*becoming a liar*), when the
  * word parser accepts it.
  */
-function scopedWord(data: HelperData, slot: Slot, seam: string): string | undefined {
+function reachWord(data: HelperData, slot: Slot, seam: string): string | undefined {
   for (const s of slot.suggestions) {
     const word =
       s.kind === "lexicon" && !s.name && s.word
@@ -565,16 +565,16 @@ function scopedWord(data: HelperData, slot: Slot, seam: string): string | undefi
           ? `v${s.root}${s.form.slice(-1)}`
           : undefined;
     if (!word) continue;
-    const scoped = `${word.slice(0, -1)}${seam}${word.slice(-1)}`;
-    if (!data.wordParses || data.wordParses(scoped)) return scoped;
+    const seamed = `${word.slice(0, -1)}${seam}${word.slice(-1)}`;
+    if (!data.wordParses || data.wordParses(seamed)) return seamed;
   }
   return undefined;
 }
 
-/** Seams whose party follows in a `bl-` word (label-seams.md#scope-relative): **`the`**, **`thue`**. */
+/** Seams whose party follows in a `bl-` word (label-seams.md#reach-relative): **`the`**, **`thue`**. */
 const PAIR_SEAMS = new Set(["the", "thue"]);
 
-/** The first noun after slot `n`, as a `bl-` word (`zolazun` → `blolazun`): a pair scope's party. */
+/** The first noun after slot `n`, as a `bl-` word (`zolazun` → `blolazun`): a pair reach's party. */
 function partyWord(slots: readonly Slot[], n: number): string | undefined {
   const next = slots.slice(n + 1).find((o) => !o.skipped && o.cls === "noun");
   const word = next?.suggestions.find((s): s is RootSuggestion => s.kind === "lexicon" && !!s.word)?.word;
@@ -582,19 +582,19 @@ function partyWord(slots: readonly Slot[], n: number): string | undefined {
 }
 
 /**
- * Spell each label-scope job on the content word it scopes: the nearest one before the cue in
+ * Spell each label-reach job on the content word it labels: the nearest one before the cue in
  * the sentence (*lied this once*, *angry, but it's the situation*), else the nearest after
  * (*becoming a liar*). `slots` are the whole sentence's, so a cue in a later clause reaches back.
- * A pair scope adds its party, the noun after the cue (*except with Olazun*).
+ * A pair reach adds its party, the noun after the cue (*except with Olazun*).
  */
 function spellScopes(data: HelperData, slots: readonly Slot[]): void {
   slots.forEach((slot, n) => {
     for (const s of slot.suggestions) {
-      const seam = scopeSeam(s);
+      const seam = reachSeam(s);
       if (!seam || (s.kind !== "job" && s.kind !== "entry")) continue;
       const order = [...slots.slice(0, n).reverse(), ...slots.slice(n + 1)].filter((o) => !o.skipped && CONTENT.has(o.cls));
       for (const other of order) {
-        const word = scopedWord(data, other, seam);
+        const word = reachWord(data, other, seam);
         if (word) {
           const party = PAIR_SEAMS.has(seam) ? partyWord(slots, n) : undefined;
           s.phrase = party ? `${word} ${party}` : word;

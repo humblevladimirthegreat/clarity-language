@@ -80,7 +80,7 @@ One **agent session per phase**. Do not start the next phase in the same session
 | 1 (done) | S2, S3 (scale half), M1 (prose half: superlative / facing / as-for), M3, M10, M11 | Prose and glossary only; no parser, gloss, or URL change. Warms up the grep-and-read routine. |
 | 2 (done) | S1, S4, S5, S6, S7, M7 | Morph-gloss labels and SMALLCAPS tags on knowing, feelings, and sakes. Same files: `morph-gloss.ts`, `constructions.ts`, `llm-prompt.ts`, overlays, their tests. |
 | 3 (done) | S3 (join-vowel half), M1 (hook **-m** zone), M4, M5, M6 | Joins, hooks, causation, and questions. Touches `series.ts`, the overlay kind `clause_pole`, and the `join-acts.md` page title and URL. |
-| 4 | M2, M8, M9 | Roles and relations. Renames the `role-scope.md` page and the `#similative` ids, and the role-compound gloss text. |
+| 4 (done) | M2, M8, M9 | Roles and relations. Renames the `role-scope.md` page and the `#similative` ids, and the role-compound gloss text. |
 | 5 | Sweep | Terminology page read-through, AGENTS.md rows, cheat sheets, LLM prompt, English-helper text, leftover grep across the whole repo. |
 
 The phases can run as five separate sessions (the [session prompt](#session-prompt-every-phase) below), or all in one session that hands each phase to a subagent ([orchestrated run](#orchestrated-run)).

@@ -43,7 +43,7 @@ For English *so can I* / *can too*, [resume](pronouns.md#resume-r) the verb and 
 #### Can be (role + ability)
 <a id="role-ability"></a>
 
-To say someone **can be** something (*can be the author*, *can be a teacher*) rather than that they can do the act, put the ability vowel on a [role compound](roles.md#role-compounds) on `/ɡ/`. Write the role compound, then **`x`** and the ability vowel, then the ending. This works only on `/ɡ/`, the same slot that says *is a teacher* ([classification](predication.md#classification)). The role compound keeps its [scope](roles.md#one-time-or-a-practice) at the front, so scope and ability combine: **`u`** is the role this once (*can be the author* of this), **`o`** the role as a practice (*can be a teacher*).
+To say someone **can be** something (*can be the author*, *can be a teacher*) rather than that they can do the act, put the ability vowel on a [role compound](roles.md#role-compounds) on `/ɡ/`. Write the role compound, then **`x`** and the ability vowel, then the ending. This works only on `/ɡ/`, the same slot that says *is a teacher* ([classification](predication.md#classification)). The role compound keeps its [reach](roles.md#one-time-or-a-practice) at the front, so reach and ability combine: **`u`** is the role this once (*can be the author* of this), **`o`** the role as a practice (*can be a teacher*).
 
 > `zalazun gwuzaruyoxam.`
 >

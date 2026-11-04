@@ -179,7 +179,7 @@ describe("resolve — role pointers (pronouns.md#role-pointers)", () => {
   });
 });
 
-describe("resolve — content-rule pointers (role-scope.md#content-of-the-event)", () => {
+describe("resolve — content-rule pointers (role-parts.md#content-of-the-event)", () => {
   function pointers(text: string): string[] {
     return resolveOf(text)
       .anaphors.filter((a) => a.kind === "pointer")

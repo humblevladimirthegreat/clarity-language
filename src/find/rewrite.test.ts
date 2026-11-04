@@ -72,17 +72,17 @@ describe("spliceWord", () => {
     assert.deepEqual(splice("al", "series=a:o"), { kind: "same", raw: "al" });
     assert.deepEqual(splice("zol", "form=ol:el"), { kind: "same", raw: "zol" });
   });
-  it("splices say scope and answer as two slots", () => {
+  it("splices say reach and answer as two slots", () => {
     assert.deepEqual(splice("hwuvem", "answer=e:o"), { kind: "changed", raw: "hwuvom" });
     assert.deepEqual(splice("hwuvam", maps("scope=u:a", "answer=a:e")), { kind: "changed", raw: "hwavem" });
   });
-  it("splices role scope, pointer vowels, and ability stance", () => {
+  it("splices role reach, pointer vowels, and ability stance", () => {
     assert.deepEqual(splice("zwozeduyol", "scope=o:e"), { kind: "changed", raw: "zwezeduyol" });
     const pointer = maps("scope=a:u", "pointer=a:e,e:o,o:a");
     assert.deepEqual(splice("dwahar", pointer), { kind: "changed", raw: "dwuher" });
     assert.deepEqual(splice("vuzunoxel", "stance=e:o"), { kind: "changed", raw: "vuzunoxol" });
   });
-  it("splices landmark facing pair scope", () => {
+  it("splices landmark facing pair reach", () => {
     assert.deepEqual(splice("gazuhothel", "scope=e:o"), { kind: "changed", raw: "gazuhothol" });
     assert.deepEqual(splice("gazuhothel", "stance=e:o"), { kind: "same", raw: "gazuhothel" });
   });

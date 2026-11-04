@@ -225,12 +225,12 @@ export function spliceWord(word: LexWord, maps: FieldMaps): SpliceOutcome {
     const at = prefix.length;
     if (raw[at] === "w") {
       const scopeAt = at + 1;
-      if (raw.slice(scopeAt, scopeAt + family.scope.length) === family.scope) {
-        need("scope", family.scope, scopeAt);
-      } else if (mapped(maps, "scope", family.scope) && mapped(maps, "scope", family.scope) !== family.scope) {
+      if (raw.slice(scopeAt, scopeAt + family.reach.length) === family.reach) {
+        need("scope", family.reach, scopeAt);
+      } else if (mapped(maps, "scope", family.reach) && mapped(maps, "scope", family.reach) !== family.reach) {
         failed = true;
       }
-      const answerAt = scopeAt + family.scope.length + 1;
+      const answerAt = scopeAt + family.reach.length + 1;
       if (raw.slice(answerAt, answerAt + family.answer.length) === family.answer) {
         need("answer", family.answer, answerAt);
       } else if (mapped(maps, "answer", family.answer) && mapped(maps, "answer", family.answer) !== family.answer) {
@@ -238,7 +238,7 @@ export function spliceWord(word: LexWord, maps: FieldMaps): SpliceOutcome {
       }
     } else {
       failed = Boolean(
-        (mapped(maps, "scope", family.scope) && mapped(maps, "scope", family.scope) !== family.scope) ||
+        (mapped(maps, "scope", family.reach) && mapped(maps, "scope", family.reach) !== family.reach) ||
           (mapped(maps, "answer", family.answer) && mapped(maps, "answer", family.answer) !== family.answer),
       );
     }

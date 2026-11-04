@@ -83,7 +83,7 @@ Source: [numeric-derivation.md](/numeric-derivation).
 - **closed (D-57):** `lx` after a number body (`zragelxezuyel`). Plain **`x`** already spells an exact number. Parser: no word.
 - **open:** `nx` / `rx` after a number body (`zragenxezuyel`, `zragerxezuyel`). A named or resumed number inside a kind has no job yet. Parser: no word.
 - **open:** a number body, **`x`** or **`mx`**, then one vowel and an ending (`zragexal`, `zragemxal`). A stem is at least three letters, so this is no numeric prefix, and no other reading is guessable. Parser: no word.
-- **open:** a numeric prefix with label scope after its stem (`zragexezuyethel`) or ability after it (`zragexezuyexal`), a numeric prefix inside a hook prefix or the other way round (`guexragexezuyel`, `zragexuexavuvul`), or as a role-compound stem (`zwazragexezuyel`). Not guessable which piece the number or the hook would cover; a separate word says it. Parser: no word.
+- **open:** a numeric prefix with label reach after its stem (`zragexezuyethel`) or ability after it (`zragexezuyexal`), a numeric prefix inside a hook prefix or the other way round (`guexragexezuyel`, `zragexuexavuvul`), or as a role-compound stem (`zwazragexezuyel`). Not guessable which piece the number or the hook would cover; a separate word says it. Parser: no word.
 
 The cells below are all **open**.
 
@@ -178,13 +178,13 @@ Source: [hooks.md](/hooked-joins#hooked-joins)
 
 Source: [roles.md](/roles), [compounds.md](/compounds)
 
-- **open:** a role compound on `/v/` / `/w/` / `/th/`. A role compound names a participant or a quality of an event, and these slots take none: it fills `/z/` `/d/` `/b/` `/ɡ/`, sets a topic under `/x/`, calls under `/y/`, and on `/h/` takes a slot part as [capacity](/role-scope#capacity). Parser: `roleCompoundSlot`.
-- **open:** a content-part compound on `/h/` (`hwuhowurol`). The manner of an event as an adverb is the ordinary `/h/` word (`howurol`); a person-as-adverb on `/h/` is capacity, which needs a slot part. Parser: `roleCompoundSlot`.
+- **open:** a role compound on `/v/` / `/w/` / `/th/`. A role compound names a participant or a quality of an event, and these slots take none: it fills `/z/` `/d/` `/b/` `/ɡ/`, sets a topic under `/x/`, calls under `/y/`, and on `/h/` takes a slot part for [acting as](/role-parts#acting-as). Parser: `roleCompoundSlot`.
+- **open:** a content-part compound on `/h/` (`hwuhowurol`). The manner of an event as an adverb is the ordinary `/h/` word (`howurol`); a person-as-adverb on `/h/` is acting as, which needs a slot part. Parser: `roleCompoundSlot`.
 - **closed:** **`v`** in a role compound (`zwavowurel`). The event noun is the stem itself (`dowurol`). Parser: no word.
 - **closed ([hooked parts](design-decisions.md#hooked-parts-and-the-result)):** a role word for a hooked part (scene, instrument, goal, source, path, bearer) or a separate result. No part consonant names one. Parser: no word.
-- **closed ([scope written once](design-decisions.md#role-scope-at-the-front)):** a **`th`** scope after a role word's stem (`zwazuduyethel`). Parser: no word.
+- **closed ([reach written once](design-decisions.md#role-reach-at-the-front)):** a **`th`** reach after a role word's stem (`zwazuduyethel`). Parser: no word.
 - **open:** a role compound as a piece of an ordinary compound, or two part consonants in a word. Not guessable: an inner `w` + vowel + part reads as part of the stem. *Noun + agent* is the role compound's own stem (`zwuzodozexowurol`).
-- **open:** a special pronoun (root + **-n**) as a role-compound stem or a label-scope host (`zwuzuwen`, `zuwethun`). It is neither an event nor a label. Parser: `roleCompoundStem`, `labelScopeStem`.
+- **open:** a special pronoun (root + **-n**) as a role-compound stem or a label-reach host (`zwuzuwen`, `zuwethun`). It is neither an event nor a label. Parser: `roleCompoundStem`, `labelReachStem`.
 - **open:** ability (`x` + vowel) on a `/z/` / `/d/` / `/b/` noun, a name, a pronoun, or `/h/` (`zodozexal`). *Can* belongs to an act or a quality, and a noun or an adverb is neither. Ability is on `/v/` and `/ɡ/` (plus hostless `oda`). Parser: `abilitySlot`.
 - **open:** name + `x` + vowel + **-n** in a clause body (`zalazun zazozoxon veruvol.`). A bid is said to someone when arriving or leaving; inside a clause it has no job. That shape is a conversation-length bid only as a citation or a `/y/` call.
 
@@ -214,9 +214,9 @@ Source: [pronouns.md](/tag-pronouns#tag-pronouns)
 
 ## Role letter + `w` + vowel + consonant
 
-Source: [roles.md](/role-scope#content-of-the-event)
+Source: [roles.md](/role-parts#content-of-the-event)
 
-- **open:** role letter + `w` + scope + a consonant that is not a part + vowel(s) + ending (`zweyual`, `hweral`). The part consonants are **`z`** **`d`** **`b`** **`h`** **`g`** **`th`** **`w`** **`y`** **`x`** **`v`**. Parser: no word.
+- **open:** role letter + `w` + reach + a consonant that is not a part + vowel(s) + ending (`zweyual`, `hweral`). The part consonants are **`z`** **`d`** **`b`** **`h`** **`g`** **`th`** **`w`** **`y`** **`x`** **`v`**. Parser: no word.
 
 ## Say words
 
@@ -226,7 +226,7 @@ Source: [feelings-permission.md](/permission-consent#say-words)
 - **closed (D-46):** a bare **`v`** say word on **-m** in a statement whose speaker is a participant (`zuwen vowurol hwuvam.`). It would be the speaker's say over their own act, which is their part (`hwuzom`). Parser: `saySpeaker`.
 - **open:** **-x** on a say word (`hwuvamx`). A group's say comes from a group in the clause, and no other reading is guessable. Parser: `pluralOnPos`.
 - **open:** **-n** on a say word (`hwuvan`), as on other closed families. Parser: no word.
-- **open:** a `bl-` word after a participant's say (`z` / `d` / `b`) without pair scope **`e`** (`hwudam blalazun`). The participant is already in the clause. Parser: `sayHost`.
+- **open:** a `bl-` word after a participant's say (`z` / `d` / `b`) without pair reach **`e`** (`hwudam blalazun`). The participant is already in the clause. Parser: `sayHost`.
 
 ## Pronouns and plurality
 
@@ -256,7 +256,7 @@ An **-r** grade on a closed root without its own **-r** would take away the live
 
 - **closed (closed-root -r):** clause-hinge **-r** as a grade on *iff* (`eho`), *although* (`eze`), *while* (`ero`), *before* (`aba`), *after* (`ala`), *until* / *by* (`aru`), and the result hinge (`aho`).
 - **closed (closed-root -r):** clause-hinge **-r** as *one of several* on *if* (`thoher`), *only if* (`theber`) and *so that* (`hovar`). The resume is the only route to *in that case* (`thoher`); *partly because* is `thahur`.
-- **closed (closed-root -r):** CAUSE **-r** as *one contributing push* (`thewor`); RESIDUE and FORMER **-r** as *for now* (`tharar`, `thelar`); similative **-r** as *a bit like* (`hewer`, `gewer`).
+- **closed (closed-root -r):** CAUSE **-r** as *one contributing push* (`thewor`); RESIDUE and FORMER **-r** as *for now* (`tharar`, `thelar`); likeness **-r** as *a bit like* (`hewer`, `gewer`).
 - **open:** clause-hinge **-l** beyond *because* (`thahul`) and *by* (`arul`). Neither guess fits these hinges. The nearest, *if* **-l** as *by rule* (`thohel`), is not a stronger *if* but a rule, which `thohem` plus a deontic says.
 - **open:** CAUSE **-l** as *compel* (`thewol`). **-l** is not guessable here, and refused consent plus CAUSE ([consent](/permission-consent#consent)) says more: it names whose will was overridden.
 - **open:** RESIDUE and FORMER **-l** (`tharal`, `thelal`). Two guesses compete: *for good*, as on the phasals (`havel`), and *strong*, as on the channels.
@@ -329,7 +329,7 @@ Source: [clause.md](/clause)
 
 Source: [speech-moves.md](/tone-marks#tone-marks), [intention.md](/can-and-cant#ability)
 
-- **open:** stacked vowels after ability **x** (`xua`, …) and after sake **th** as a second stance (`guwathaol`). Not guessable (*can again*? *it depends*?): *it depends* is MAY or a sentence (polar `oe` is *decline to answer*), and *can again* is `xa` plus a sentence. Label scope uses those stacks ([predication](/label-seams#scope-stacks)). Sake locus stacks still come after the horizon letter (`guwathamel`). The parser rejects a stacked sake stance and stacked ability.
+- **open:** stacked vowels after ability **x** (`xua`, …) and after sake **th** as a second stance (`guwathaol`). Not guessable (*can again*? *it depends*?): *it depends* is MAY or a sentence (polar `oe` is *decline to answer*), and *can again* is `xa` plus a sentence. Label reach uses those stacks ([predication](/label-seams#reach-stacks)). Sake locus stacks still come after the horizon letter (`guwathamel`). The parser rejects a stacked sake stance and stacked ability.
 - **open:** a new tone mark (whisper, sarcasm, …). No voice job is left: `;` `%` `?` already cover quiet, sarcasm and hesitation.
 - **closed (D-23):** `~` as a tone mark, and a third copy of a mark (`!!!`).
 

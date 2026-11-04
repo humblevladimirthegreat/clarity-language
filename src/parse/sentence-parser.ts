@@ -191,7 +191,7 @@ const NP_HEAD = {
   b: { noun: B, standIn: OdoB, standInList: OdoBList, standInLone: OdoBLone, span: WritingSpanB, tag: TagB },
 } as const;
 
-/** A label-scope verb that names a pair or a situation hosts the `/b/` right after it (label-seams.md#scope-relative). */
+/** A label-reach verb that names a pair or a situation hosts the `/b/` right after it (label-seams.md#reach-relative). */
 function isScopeThoVerb(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;
   const v = family?.kind === "x" && family.xFamily === "scope" ? family.stanceVowel : undefined;
@@ -1010,7 +1010,7 @@ class AgebenSentenceParser extends CstParser {
         alone.ALT();
         return;
       }
-      // A verb, and the `/b/` a pair-scope verb hosts.
+      // A verb, and the `/b/` a pair-reach verb hosts.
       const verb = (k: number, type: TokenType) => {
         this.consume(k, type, { LABEL: "V" });
         this.option(k, () => {
@@ -1046,7 +1046,7 @@ class AgebenSentenceParser extends CstParser {
   }
 
   /**
-   * A verb with no join: one verb, and the `/b/` a pair-scope verb hosts. A {@link VCont} is never a lone verb: a second
+   * A verb with no join: one verb, and the `/b/` a pair-reach verb hosts. A {@link VCont} is never a lone verb: a second
    * verb in the clause takes a join (joins.md#right-close).
    */
   public vpVerb = this.RULE("vpVerb", () => {
@@ -1896,8 +1896,8 @@ function isLabelMarker(marker: NumberMarker): boolean {
 
 /**
  * Give words the token their neighbors decide. A word that completes the word right before it (clause.md § extra
- * nouns): a `bl-` word after an `/h/`, `/th/` or `/ɡ/` word, a hooked join (hooked-joins.md#hooked-joins), or a label-scope
- * verb that names a pair (label-seams.md#scope-relative), becomes {@link HostedB}, and a `bl-` stand-in after an `/h/` or `/th/` word
+ * nouns): a `bl-` word after an `/h/`, `/th/` or `/ɡ/` word, a hooked join (hooked-joins.md#hooked-joins), or a label-reach
+ * verb that names a pair (label-seams.md#reach-relative), becomes {@link HostedB}, and a `bl-` stand-in after an `/h/` or `/th/` word
  * {@link HostedOdo}. A plain `/b/` there stays the verb's recipient.
  * A cardinal `/ɡ/` right after a hosted `/b/` is that unit's {@link Amount}, and a signed `/h/` number after an
  * equative's shared scale its {@link Factor}. An `/h/` or digitless `/b/` number right after a rank noun join is its

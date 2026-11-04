@@ -134,6 +134,16 @@
       "from": "/grammar/join-acts.html",
       "to": "/grammar/list-verbs.html",
       "note": "Public URL after renaming join-acts.md to list-verbs.md."
+    },
+    {
+      "from": "/grammar/label-scope.html",
+      "to": "/grammar/label-reach.html",
+      "note": "Public URL after renaming label-scope.md to label-reach.md."
+    },
+    {
+      "from": "/grammar/role-scope.html",
+      "to": "/grammar/role-parts.html",
+      "note": "Public URL after renaming role-scope.md to role-parts.md."
     }
   ]
 }

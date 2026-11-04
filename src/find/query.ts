@@ -175,10 +175,10 @@ export function locusValue(word: LexWord): string | undefined {
 
 export function scopeValue(word: LexWord): string | undefined {
   const { family } = word;
-  if (family.kind === "say") return family.scope;
+  if (family.kind === "say") return family.reach;
   if (family.kind !== "x") return undefined;
   if (family.xFamily === "scope") return family.stanceVowel;
-  return family.scopeVowel;
+  return family.reachVowel;
 }
 
 export function stanceValue(word: LexWord): string | undefined {

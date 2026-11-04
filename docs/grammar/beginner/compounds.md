@@ -31,7 +31,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 |--------|-----|---------|-----|
 | full root **`x`** full root | two roots, one word | `zuwedaxubudal` *peanut butter* | **x** ≈ plus |
 
-**Not the same job as:** a [role compound](roles.md#role-compounds) opens with **`w`**, a scope vowel, and a part consonant (`zwuzeduyol`). Only a noun inside its stem takes **`x`**.
+**Not the same job as:** a [role compound](roles.md#role-compounds) opens with **`w`**, a reach vowel, and a part consonant (`zwuzeduyol`). Only a noun inside its stem takes **`x`**.
 
 **Not the same job as:** a word that **starts** with **`x`** [keeps the same speech move going](dependents.md#continue-x). That **`x`** is not this glue in the middle.
 

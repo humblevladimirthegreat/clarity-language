@@ -39,7 +39,7 @@ For several members, put a [phrase join](/joins) **inside** the `/b/` phrase (`g
 
 *Anti-* vs *without*: `gun blumudel` vs `guan blumudel`. *Without X* vs *anything but X*: `guan bluwedal` vs `guen bluwedal`. Sole pick vs among options: `gen blazozon` vs `gaen blazozon`. Workaround as top priority vs workaround as first step: `gon blurewem` vs `gaon blurewem`.
 
-**Compare with:** *a house like Azozon’s* / *walks like a duck* is resemblance ([like](/relations#like-resembles) `gewem` / `hewem`), not **`goen` / `hoen`** *on a par with* / *equating*.
+**Compare with:** *a house like Azozon’s* / *walks like a duck* is resemblance ([like](/relations#likeness) `gewem` / `hewem`), not **`goen` / `hoen`** *on a par with* / *equating*.
 
 ### Practice {#intermediate-practice}
 

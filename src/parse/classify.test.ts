@@ -51,7 +51,7 @@ describe("classify", () => {
     assert.deepEqual(lateral.family, { kind: "x", xFamily: "lateral", leftRoots: ["eweze"], rightRoots: ["amo"] });
   });
 
-  it("reads DIR th e on an arrow root as landmark facing with pair scope", () => {
+  it("reads DIR th e on an arrow root as landmark facing with pair reach", () => {
     const word = classifyText("gazuhothel");
     assert.deepEqual(word.family, {
       kind: "x",
@@ -59,7 +59,7 @@ describe("classify", () => {
       leftRoots: ["azuho"],
       rightRoots: [],
       landmark: true,
-      scopeVowel: "e",
+      reachVowel: "e",
     });
   });
 
@@ -183,12 +183,12 @@ describe("classify", () => {
     assert.equal(bone.overlay, undefined);
   });
 
-  it("similative overlay on /h/ /ɡ/ and ordinary mirror on other letters", () => {
-    const like = expectOverlay("hewem", "similative");
+  it("likeness overlay on /h/ /ɡ/ and ordinary mirror on other letters", () => {
+    const like = expectOverlay("hewem", "likeness");
     assert.ok(like.overlay);
-    assert.equal(like.overlay!.kind, "similative");
+    assert.equal(like.overlay!.kind, "likeness");
     assert.equal(like.overlay!.gloss, "like");
-    const adj = expectOverlay("gewem", "similative");
+    const adj = expectOverlay("gewem", "likeness");
     assert.equal(adj.overlay!.gloss, "like");
     const mirror = expectReading("zewel", "ordinary");
     assert.equal(mirror.overlay, undefined);

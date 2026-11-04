@@ -56,7 +56,7 @@ A hard moment, a label, or a past pattern hardens into a fixed fact about a pers
 
 English *Alazun is angry* can mean one outburst or the kind of person Alazun is. One act slides into a verdict on someone's nature, and a name for a problem (*lazy*, *anxious*) starts to sound like its cause.
 
-[Label scope](/label-seams#label-scope) lets any label say what kind of claim it makes: about this stretch of doing, about a practiced role, about one relationship (*a stranger to Azozon*), or about a type that follows the person across scenes.
+[Label reach](/label-seams#label-reach) lets any label say what kind of claim it makes: about this stretch of doing, about a practiced role, about one relationship (*a stranger to Azozon*), or about a type that follows the person across scenes.
 
 Marking a label's reach helps you describe what happened without turning it into a verdict on who someone is, yourself included.
 

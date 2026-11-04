@@ -4,15 +4,15 @@ band: beginner
 
 # Role compounds {#roles}
 
-When English would name a person or thing from an event (*a teacher* from *teach*, *the one told*, *a building*), Ageben builds that name from the event’s stem. Write a person or thing letter, then **`w`**, then a scope vowel, then a part consonant, then the stem, then an ordinary [word ending](word-endings.md). The part consonant is the role letter the participant had in the event's clause: **`z`** the doer, **`d`** what the event acts on or brings into being, and **`b`** the extra `/b/` party (who is told, or the other party of a relation).
+When English would name a person or thing from an event (*a teacher* from *teach*, *the one told*, *a building*), Ageben builds that name from the event’s stem. Write a person or thing letter, then **`w`**, then a reach vowel, then a part consonant, then the stem, then an ordinary [word ending](word-endings.md). The part consonant is the role letter the participant had in the event's clause: **`z`** the doer, **`d`** what the event acts on or brings into being, and **`b`** the extra `/b/` party (who is told, or the other party of a relation).
 
-The scope vowel says how far the label reaches. **`u`** is this episode: one act is enough (*someone who teaches*). **`o`** is a practiced role, the kind English names as a job (*a teacher*). Every role word picks one, so calling someone *a fighter* after a single fight takes a separate, visible choice. The ending decides whether you mean anyone in that part or the one from a particular event: with **-r**, it is the participant of the latest matching event (*the one teaching*).
+The reach vowel says how far the label reaches. **`u`** is this episode: one act is enough (*someone who teaches*). **`o`** is a practiced role, the kind English names as a job (*a teacher*). Every role word picks one, so calling someone *a fighter* after a single fight takes a separate, visible choice. The ending decides whether you mean anyone in that part or the one from a particular event: with **-r**, it is the participant of the latest matching event (*the one teaching*).
 
 
 ### Role compounds: the doer (`z`) {#role-compounds}
 <a id="agent-place-patient-recipient"></a>
 
-English *someone who teaches* names a person from what they do, from the same idea as *teach*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`w`**, then the scope vowel **`u`**, then the part consonant **`z`**, then the event root, then an ordinary [word ending](word-endings.md). The result is one content word (a **role compound**) that you can use as a participant. The **`z`** is the doer's own role letter: the one who did it sat in `/z/`.
+English *someone who teaches* names a person from what they do, from the same idea as *teach*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`w`**, then the reach vowel **`u`**, then the part consonant **`z`**, then the event root, then an ordinary [word ending](word-endings.md). The result is one content word (a **role compound**) that you can use as a participant. The **`z`** is the doer's own role letter: the one who did it sat in `/z/`.
 
 > `zwuzeduyol veruvol.`
 >
@@ -32,11 +32,11 @@ A noun that specifies the event goes in the same stem, before the event and join
 >
 > "Someone who walks dogs runs."
 
-A role compound has one part consonant, right after its scope vowel. It is never one piece of another compound.
+A role compound has one part consonant, right after its reach vowel. It is never one piece of another compound.
 
 ### One time or a practice (`u` / `o`) {#one-time-or-a-practice}
 
-English *a teacher* says more than *someone who teaches*: teaching is that person's practiced role, often a job. Write **`o`** in the scope slot instead of **`u`**. (cue: **o** ≈ medium (a life they inhabit))
+English *a teacher* says more than *someone who teaches*: teaching is that person's practiced role, often a job. Write **`o`** in the reach slot instead of **`u`**. (cue: **o** ≈ medium (a life they inhabit))
 
 > `zwozeduyol veruvol.`
 >
@@ -46,7 +46,7 @@ English *a teacher* says more than *someone who teaches*: teaching is that perso
 
 `zwozuvuvul` is *a fighter*, and `zwozodozexowurol` is *a dog walker*. With **`u`**, a role compound never makes that claim, so one fight gives `zwuzuvuvul` (*someone who fought*), not a fighter.
 
-| Ageben | Scope | English | Cue |
+| Ageben | Reach | English | Cue |
 |--------|-------|---------|-----|
 | `zwuzeduyol` | **`u`** this episode | *someone who teaches* | **u** ≈ none (a speck of time) |
 | `zwozeduyol` | **`o`** practiced role | *a teacher* | **o** ≈ medium (a life they inhabit) |
@@ -71,7 +71,7 @@ To build the **-r** form, take the whole stem of the earlier verb. In `vehohel` 
 >
 > "Azozon sits. The one who sat walks."
 
-The scope vowel reads the same on **-r**: `zwozeduyor` is *the one teaching, in their practiced role*.
+The reach vowel reads the same on **-r**: `zwozeduyor` is *the one teaching, in their practiced role*.
 
 ### The undergoer (`d`) {#the-undergoer-d}
 <a id="the-undergoer-u"></a>
@@ -135,7 +135,7 @@ With **-l**, **-m**, or **-n**, the word is **any** such participant: someone wh
 
 ### Without the stem: role pointers {#role-pointers-family}
 
-A [role pointer](pronouns.md#role-pointers) is this same word with the event stem left out: **`w`**, the scope vowel, the part consonant, a pointer vowel, and an ending (**-r** the participant itself, **-l** a new one of its kind, **-m** its part in the event). Instead of naming the event, the pointer vowel picks it by position: **`e`** the latest one, **`a`** the other one, **`o`** this sentence’s own, **`u`** the one that left the part unsaid. `zwuzehoher` is *the one who sat*; `zwuzer` is *whoever did the latest thing*. After the pointer vowel and ending the word ends, while a compound's stem goes on (`zwuzer` against `zwuzaruyol`, *someone who writes*).
+A [role pointer](pronouns.md#role-pointers) is this same word with the event stem left out: **`w`**, the reach vowel, the part consonant, a pointer vowel, and an ending (**-r** the participant itself, **-l** a new one of its kind, **-m** its part in the event). Instead of naming the event, the pointer vowel picks it by position: **`e`** the latest one, **`a`** the other one, **`o`** this sentence’s own, **`u`** the one that left the part unsaid. `zwuzehoher` is *the one who sat*; `zwuzer` is *whoever did the latest thing*. After the pointer vowel and ending the word ends, while a compound's stem goes on (`zwuzer` against `zwuzaruyol`, *someone who writes*).
 
 A pointer looks back to whoever last had that part, skipping events without one ([role pointers](pronouns.md#role-pointers)).
 
