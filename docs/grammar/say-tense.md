@@ -340,13 +340,13 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 
 > `zazozon vezuyol thawethem blwuzor.`
 >
-> z-Azozon | v-tell | [th-relatedness-ought-offered | bl-←episode-agent.self]
+> z-Azozon | v-tell | [th-relatedness-ought-unasked | bl-←episode-agent.self]
 >
 > "Azozon should talk; it would help them feel connected." (unasked advice)
 
 > `zazozon thawethem blwuzor vezuyol vul.`
 >
-> z-Azozon | [th-relatedness-ought-offered | bl-←episode-agent.self] | [v-tell | v-not]
+> z-Azozon | [th-relatedness-ought-unasked | bl-←episode-agent.self] | [v-tell | v-not]
 >
 > "Azozon shouldn't talk; it would hurt their sense of connection." (unasked advice)
 
@@ -354,7 +354,7 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 
 > `zawan thenam blrul thudathem vezuyol. zawan vezuyol vul.`
 >
-> z-listener | [th-as-of.ledger | bl-earlier] | th-sake-ought-offered | v-tell . z-listener | [v-tell | v-not]
+> z-listener | [th-as-of.ledger | bl-earlier] | th-sake-ought-unasked | v-tell . z-listener | [v-tell | v-not]
 >
 > "You should have spoken. You didn't speak."
 

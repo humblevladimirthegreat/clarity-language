@@ -31,7 +31,7 @@ Pick a locus from this menu. (This is in a cheat sheet at the end)
 
 | Motion | Meaning |
 |--------|---------|
-| **-l** | still, muted, numb |
+| **-l** | static, muted, numb |
 | **-m** | flowing, steady |
 | **-r** | surging, in waves |
 

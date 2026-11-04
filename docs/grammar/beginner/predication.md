@@ -90,23 +90,21 @@ An object (`/d/`) needs a verb, so a noun plus a `/d/` word with no verb is not 
 
 **Compare with:** `zodozel vowurol.` says what the dog does. `zazozon godozel.` puts Azozon in a kind.
 
-### Identity (**SAME**)
-<a id="identity"></a>
-<a id="same"></a>
+### Identity {#identity}
 
 When two names pick out **the same person or thing** (*Alazun is Azozon*), you are not putting Alazun in a kind. You are saying the two labels match: they are one individual.
 
-Write the special adjective `gorel` after the first name, then an extra noun (`/b/`) for the other label. Keep `gorel` and that `/b/` word **next to each other**. This pair states **identity**. The adjective’s English name is **`SAME`**; its root is **`ore`**. (cue: 🪙 *coin*: two faces, one substance)
+Write the special adjective `gorel` after the first name, then an extra noun (`/b/`) for the other label. Keep `gorel` and that `/b/` word **next to each other**. This pair states **identity**. The adjective’s English name is **IDENTITY**; its root is **`ore`**. (cue: 🪙 *coin*: two faces, one substance)
 
 > `zalazun gorel blazozon.`
 >
-> z-Alazun | [g-SAME | bl-Azozon]
+> z-Alazun | [g-IDENTITY | bl-Azozon]
 >
 > "Alazun is Azozon." (one person, two names)
 
 > `zagayul gorel blazozon.`
 >
-> z-guard | [g-SAME | bl-Azozon]
+> z-guard | [g-IDENTITY | bl-Azozon]
 >
 > "The guard is Azozon."
 
@@ -114,13 +112,13 @@ The second label is a `/b/` whatever it is: a common noun or a pronoun works as 
 
 > `zagayul gorel blebayol.`
 >
-> z-guard | [g-SAME | bl-police]
+> z-guard | [g-IDENTITY | bl-police]
 >
 > "The guard is the police officer."
 
 > `zagayul gorel bluwen.`
 >
-> z-guard | [g-SAME | bl-speaker]
+> z-guard | [g-IDENTITY | bl-speaker]
 >
 > "The guard is me."
 
@@ -128,11 +126,11 @@ With **no** `/b/` after it, `gorel` points back to the one already mentioned: *t
 
 > `zalazun danal gorel varuyol.`
 >
-> z-Alazun | [d-book | g-SAME] | v-write
+> z-Alazun | [d-book | g-IDENTITY] | v-write
 >
 > "Alazun is writing the same book." (the book already mentioned)
 
-**Compare with:** *Azozon is a dog* uses [kind / role](#classification) (`godozel`). Use **`SAME`** when two labels name one person.
+**Compare with:** *Azozon is a dog* uses [kind / role](#classification) (`godozel`). Use **IDENTITY** when two labels name one person.
 
 ### Practice {#beginner-practice}
 
@@ -148,7 +146,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *page* | `obonol` | 📄 |
 | *Japanese* | `azabanam` | 🇯🇵 from *Japan flag*: belonging takes **-m** |
 | *challenge* | `amahum` | ⛰️ from *mountain* |
-| **SAME** | `orel` | 🪙 from *coin*: two faces, one substance |
+| **IDENTITY** | `orel` | 🪙 from *coin*: two faces, one substance |
 
 **Review:**
 
@@ -196,7 +194,7 @@ z-Alazun | [w-very | g-angry]
 ::: details Show answer
 `zebayol gorel blazozon.`
 
-z-police | [g-SAME | bl-Azozon]
+z-police | [g-IDENTITY | bl-Azozon]
 :::
 
 **5.** *There is a page.*
@@ -236,7 +234,7 @@ z-Alazun | g-challenge
 **3.** `zagayul gorel blalazun.`
 
 ::: details Show answer
-z-guard | [g-SAME | bl-Alazun]
+z-guard | [g-IDENTITY | bl-Alazun]
 
 *The guard is Alazun.*
 :::
@@ -252,7 +250,7 @@ z-police | g-run
 **5.** `zahelan dobonol gorel vayebel.`
 
 ::: details Show answer
-z-Ahelan | [d-page | g-SAME] | v-see
+z-Ahelan | [d-page | g-IDENTITY] | v-see
 
 *Ahelan sees the same page.* (the page already mentioned)
 :::
@@ -260,7 +258,7 @@ z-Ahelan | [d-page | g-SAME] | v-see
 **6.** `yel zalazun gorel blawan.`
 
 ::: details Show answer
-y-question | z-Alazun | [g-SAME | bl-listener]
+y-question | z-Alazun | [g-IDENTITY | bl-listener]
 
 *Are you Alazun?*
 :::
@@ -294,7 +292,7 @@ After a known guard, the `/ɡ/` word is a property; `zagayul gonumul.` introduce
 ::: details Show answer
 `zalazun gorel blazozon.`
 
-z-Alazun | [g-SAME | bl-Azozon]
+z-Alazun | [g-IDENTITY | bl-Azozon]
 
 A word on `/ɡ/` puts Alazun in a kind; two names for one person take **`gorel`** and the other name in `/b/`.
 :::

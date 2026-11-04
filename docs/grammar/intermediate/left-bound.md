@@ -10,13 +10,13 @@ A relation adjective and its `bl-` word (*the same as Azozon*: **`gorel`** + `bl
 
 > `zagayul welazem gorel blazozon.`
 >
-> z-guard | [[w-very | g-SAME] | bl-Azozon]
+> z-guard | [[w-very | g-IDENTITY] | bl-Azozon]
 >
 > "a guard who is the very same person as Azozon"
 
 > `zagayul gorel blazozon guzemel.`
 >
-> z-guard | [g-SAME | [bl-Azozon | g-sleepy]]
+> z-guard | [g-IDENTITY | [bl-Azozon | g-sleepy]]
 >
 > "a guard who is the same person as sleepy Azozon"
 
@@ -32,7 +32,7 @@ Because a second relation after the pair would attach to the extra noun, you can
 
 > `glorel blazozon zagayul gorel blebayol.`
 >
-> [[gl-SAME | bl-Azozon] | z-guard] | [g-SAME | bl-police]
+> [[gl-IDENTITY | bl-Azozon] | z-guard] | [g-IDENTITY | bl-police]
 >
 > "a guard who is both Azozon and the police officer"
 
@@ -131,7 +131,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *police* | `ebayol` |
 | *guard* | `agayul` |
-| **SAME** | `orel` |
+| **IDENTITY** | `orel` |
 | *sleepy* | `uzemel` |
 | *very* | `welazem` |
 | *ocean* | `wohalal` |
@@ -150,7 +150,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 ::: details Show answer
 `zebayol gorel blazozon guzemel vuzuvel.`
 
-[z-police | [g-SAME | [bl-Azozon | g-sleepy]]] | v-stand
+[z-police | [g-IDENTITY | [bl-Azozon | g-sleepy]]] | v-stand
 :::
 
 **2.** *Ahelan sees the train again.*
@@ -192,7 +192,7 @@ z-Alazun | [d-train | [w-very | g-blue]] | v-see
 **1.** `glorel blazozon zebayol gorel blagayul.`
 
 ::: details Show answer
-[[gl-SAME | bl-Azozon] | z-police] | [g-SAME | bl-guard]
+[[gl-IDENTITY | bl-Azozon] | z-police] | [g-IDENTITY | bl-guard]
 
 *A police officer who is both Azozon and the guard.*
 :::
@@ -224,7 +224,7 @@ z-train | h-again | v-stand
 **5.** `zahelan dodenol gorel vayebel.`
 
 ::: details Show answer
-z-Ahelan | [d-ticket | g-SAME] | v-see
+z-Ahelan | [d-ticket | g-IDENTITY] | v-see
 
 *Ahelan sees the same ticket.* (as before)
 :::
@@ -236,7 +236,7 @@ z-Ahelan | [d-ticket | g-SAME] | v-see
 ::: details Show answer
 `zazozon debayol gorel blahelan guzemel vayebel.`
 
-z-Azozon | [d-police | [g-SAME | [bl-Ahelan | g-sleepy]]] | v-see
+z-Azozon | [d-police | [g-IDENTITY | [bl-Ahelan | g-sleepy]]] | v-see
 
 After the **`gorel`** pair, a plain adjective describes the extra noun; before it, *sleepy* describes the police officer.
 :::

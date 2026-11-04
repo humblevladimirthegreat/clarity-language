@@ -73,7 +73,7 @@ l m r n
 │     ├── number -l / -m (exact / about)
 │     ├── span none / ~ (verbatim / gist)
 │     ├── stand-in -rl / -rm (the whole next sentence / the gist)
-│     ├── SAME (is / basically)
+│     ├── IDENTITY (is / basically)
 │     ├── exactly-like vs like
 │     ├── each-other (strictly pairwise / everyday both-ways)
 │     └── place hook contact vs frame (in / amid, at / near, for / used by)
@@ -107,9 +107,9 @@ l m r n
 │           └── topic return (xazozor)
 └── settled-to-passing — how lasting the hold is; no -n
       ├── sake time horizon · unmet changeability · motive (are the scale)
-      ├── prescription warrant (invited / offered / worth a try)
-      ├── feeling motion (still / flowing / surging)
-      ├── MAY hold · NOTIONAL hold · MIRATIVE
+      ├── prescription warrant (invited / unasked / tryout)
+      ├── feeling motion (static / flowing / surging)
+      ├── MAY follow-up · NOTIONAL follow-up · MIRATIVE
       ├── PLAN · WANT · DECISION · TRY
       ├── already / still / not yet / no longer
       ├── speech act / polar

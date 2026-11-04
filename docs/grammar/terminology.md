@@ -32,6 +32,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **FLOWING** | Emotion motion: steady, a current you can ride | `wawethumom` | [Feelings](/feelings-permission#emotion-compose) |
 | **FORBID** | Say word answer: no, forbid | `hwuvul` | [Permission and consent](/permission-consent#say-words) |
 | **FORMER** | Episode standing: not the climate claimed now | `helam` | [Residue and former](/notional-standing#residue) |
+| **IDENTITY** | Identity copula | `gorel` | [Predication](/predication#identity) |
 | **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Feelings](/feelings-permission#emotion-compose) |
 | **INTUITION** | Evidential: gut sense you cannot fully spell out | `thabem` | [How you know](/evidentiality#evidentiality) |
 | **LIVE** | Evidential: sensed now, by any sense | `thugem` | [Live and memory](/live-and-memory#live-vs-memory) |
@@ -41,7 +42,6 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themem` | [It turns out](/mirative#mirative) |
 | **NAME** | A package titled with **-n** | `zobodel zubudal zan.` | [Join limits](/join-limits#named-list) |
 | **NOTIONAL** | As-if / pretense mood | `theyum` | [As if](/notional#notional) |
-| **ON-BEHALF** | Emotion locus: felt for someone's sake | `wawethumom` | [Feelings](/feelings-permission#emotion-compose) |
 | **OPAQUE** | An opaque span: foreign or raw writing | <code>d&lt;kimchi&gt;</code> | [Spans](/spans#loans) |
 | **PATTERN** | Evidential: from regularity | `thubom` | [How you know](/evidentiality#evidentiality) |
 | **PLAN** | Intention-framing mood | `thagom` | [Intention](/intention#plan-predict) |
@@ -49,12 +49,12 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **REQUIRE** | Say word answer: require, ask for (*must*) | `hwuvol` | [Permission and consent](/permission-consent#say-words) |
 | **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Residue and former](/notional-standing#residue) |
 | **RESISTING** | Emotion locus: pushing against a target | `wawethumuor` | [Feelings](/feelings-permission#emotion-compose) |
-| **SAME** | Identity copula | `gorel` | [Predication](/predication#identity) |
 | **SCOPE** | Scope island `{ … }` | `{ hogugem zodozel gerulol }` | [Scope islands](/scope-islands#scope-islands) |
 | **SEEKING** | Emotion locus: turning to someone for comfort | `wawethumoem` | [Feelings](/feelings-permission#emotion-compose) |
-| **STILL** | Emotion motion: not moving (held, frozen, numb) | `wawethumel` | [Feelings](/feelings-permission#emotion-compose) |
+| **STATIC** | Emotion motion: not moving (held, frozen, numb) | `wawethumel` | [Feelings](/feelings-permission#emotion-compose) |
 | **SURGING** | Emotion motion: in waves or spikes | `wuwathuraer` | [Feelings](/feelings-permission#emotion-compose) |
 | **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruem` | [Feelings](/feelings-permission#emotion-compose) |
+| **VICARIOUS** | Emotion locus: felt for someone's sake | `wawethumom` | [Feelings](/feelings-permission#emotion-compose) |
 | **WANT** | Desire mood: lasting / unstated / passing | `thalom` | [Want](/want#want) |
 
 **Compare with:** [quasi](#quasi) (`-e-xROOT`) is not **NOTIONAL**.
@@ -194,15 +194,6 @@ A slot-part role compound on `/h/` (`hwozeduyol`): the role the act is done in (
 
 **Compare with:** resemblance is the [similative](/relations#similative) (`hewem blwozeduyol` *like a teacher*). [Classification](#classification) on `/ɡ/` says someone **is** that role (`gwozeduyol`).
 
-### Invited / offered / trial
-<a id="asked-typical-history"></a>
-<a id="wording-general-history"></a>
-<a id="bound-endorse-invite"></a>
-
-Prescription endings on sake **`the`**: why a move is welcome. **-l** invited, **-m** offered to serve the sake, **-r** a trial, worth trying to see whether it serves the sake.
-
-[Ought for a sake](/ought-for-a-sake#sake-force)
-
 ### Changeability
 
 Endings on unmet **`thu`**, **DECISION**, and ability *can’t*.
@@ -227,7 +218,7 @@ Kind / role as predicative `/ɡ/` (no *to-be* verb).
 
 [Predication](/predication#classification)
 
-**Compare with:** [identity](#identity) uses **SAME**. [Equative](#equative) is *as ADJ as*, not kind-ascription.
+**Compare with:** [identity](#identity) uses **IDENTITY**. [Equative](#equative) is *as ADJ as*, not kind-ascription.
 
 ### Clause pole / NP pole
 
@@ -433,7 +424,7 @@ Extra-noun [hook](/hooks#extra-noun) **`aol`** plus implement `/b/` (*using / wi
 
 ### Simile (*like*)
 
-Hosted **`hewem`** / **`gewem`** plus model `/b/` (*like* a duck / *like* Azozon’s); with **-l**, **`hewel`** / **`gewel`** is *exactly like*. Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
+Hosted **`hewem`** / **`gewem`** plus model `/b/` (*like* a duck / *like* Azozon’s); with **-l**, **`hewel`** / **`gewel`** is *exactly like*. Not **IDENTITY**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
 
 [Relations](/relations#similative), [Exactly like](/exactly-like#exactly-like)
 
@@ -479,6 +470,12 @@ Why a series reuses a parent scale’s leftover-logic or cell logic, in one affi
 
 [Vowels cheat sheet](/cheat-sheets/vowels), [consonants cheat sheet](/cheat-sheets/consonants)
 
+### Follow-up endings
+
+**MAY** find-out / who-knows endings / **NOTIONAL** play endings.
+
+[Knowing](/knowing#follow-up-endings-may), [As if](/notional#follow-up-endings-notional)
+
 ### Forecast
 <a id="forecast-source"></a>
 
@@ -492,19 +489,13 @@ A named citation is a hello (`azozon.`). Add mid-word **`x`** plus **`a`** / **`
 
 [Word endings](/word-endings#greeting) · [Conversation length](/conversation-length#conversation-length)
 
-### Hold
-
-**MAY** find-out / who-knows endings / **NOTIONAL** play endings.
-
-[Knowing](/knowing#may-hold)
-
 ### Holder
 
 Whose view a clause reports. The name is fused onto an evidential, **MAY**, or **NOTIONAL** after that word's own ending letter (`theyomazozon`). The fused word is the speaker's warrant; every other stance in the clause is the holder's.
 
 [Whose view](/holder#holder)
 
-**Compare with:** a person in hosted `/b/` after an evidential is the source you heard it from, not the holder. The ON-BEHALF locus is your own feeling about someone else's stake.
+**Compare with:** a person in hosted `/b/` after an evidential is the source you heard it from, not the holder. The VICARIOUS locus is your own feeling about someone else's stake.
 
 ### Hangs on
 
@@ -522,7 +513,7 @@ Content root a sake `th`-stance or an ability `x`-stance attaches to.
 
 ### Identity
 
-Closed **SAME** + `/b/`.
+Closed **IDENTITY** + `/b/`.
 
 [Predication](/predication#identity)
 
@@ -539,6 +530,12 @@ An event root on `/ɡ/`: the noun is in the middle of that event, as its doer (*
 Join stacks **`ua` / `uo` / `ue`**.
 
 [Rank joins](/rank-joins#invert-u-stacks)
+
+### Invited / unasked / tryout {#invited-unasked-tryout}
+
+Prescription endings on sake **`the`**: why a move is welcome. **-l** invited, **-m** unasked, meant to serve the sake, **-r** a tryout, worth trying to see whether it serves the sake.
+
+[Ought for a sake](/ought-for-a-sake#sake-force)
 
 ### Join / conjunct
 
@@ -602,7 +599,7 @@ Amount + lexicon unit noun (published abstract = unit name).
 
 ### Met / unmet / motive / prescription (sakes)
 
-Sake stances **`tha` / `thu`** (Beginner); **`the`** (Beginner ought); **`tho`** (Intermediate motive). Prescription **`the`** on the clause is deontic on the host act (*ought to … for this sake*), not a performance report with a separate norm tag. The ending marks whether the move is [invited, offered, or protective](#asked-typical-history), not how firmly you address them.
+Sake stances **`tha` / `thu`** (Beginner); **`the`** (Beginner ought); **`tho`** (Intermediate motive). Prescription **`the`** on the clause is deontic on the host act (*ought to … for this sake*), not a performance report with a separate norm tag. The ending marks whether the move is [invited, unasked, or a tryout](#invited-unasked-tryout), not how firmly you address them.
 
 [Sakes](/sakes)
 
@@ -907,7 +904,7 @@ Utterance setting: statement / question / command / prohibition.
 
 [Firm and soft](/firm-soft#speech-act)
 
-**Compare with:** sake **prescription warrant** is [invited / offered / trial](#asked-typical-history), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
+**Compare with:** sake **prescription warrant** is [invited / unasked / tryout](#invited-unasked-tryout), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
 
 ### Sufficient / necessary
 

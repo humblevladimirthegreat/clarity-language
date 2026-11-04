@@ -46,7 +46,7 @@ Beginner already used *serves* and *detracts from*. Intermediate adds *ought thi
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`tha`** | [time horizon](/sakes#time-horizon-endings-on-met) endings | *serves* / *met* | **a** ≈ the payoff is in |
-| **`the`** | [invited / offered / trial](/ought-for-a-sake#sake-force) endings | *ought this act for this sake* | **e** ≈ only the advice |
+| **`the`** | [invited / unasked / tryout](/ought-for-a-sake#sake-force) endings | *ought this act for this sake* | **e** ≈ only the advice |
 | **`tho`** | [time horizon](#sake-preference) endings | *doing for this sake* | **o** ≈ doing-for |
 | **`thu`** | [changeability](/sakes#sake-changeability) endings | *detracts from* / *unmet* | **u** ≈ none of the sake |
 
@@ -63,11 +63,11 @@ Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met a
 | `/w/` sake + another adjective | the stance on that one property | *pleasantly hot* (`wodetham gohamul`) |
 | `gl-` + sake word | the same adjective before the **belonging** | `glawethal zewal` |
 | `th…tha…` on the clause | the event serves the sake | *tells: competence is met* (`thuwatha…`) |
-| `th…the…` on the clause | prescription: the act ought to serve the sake | *ought … for this sake* (`thawethe…`); ending = [invited / offered / trial](/ought-for-a-sake#sake-force) |
+| `th…the…` on the clause | prescription: the act ought to serve the sake | *ought … for this sake* (`thawethe…`); ending = [invited / unasked / tryout](/ought-for-a-sake#sake-force) |
 | `th…tho…` on the clause | motive | *I talk (to feel connected)* (`thawetho…`) |
 | `/w/` before a sake `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
 
-Prescription **`the`** goes on `/th/` only: it is about an act, and a noun is not an act. For what a noun is **for**, use **`tho`**. On **`the`**, use **-l** for an invitation, **-m** for an offer, and **-r** for a trial. On **`thu`** and **`tho`**, prefer **-m** when you cannot tell which ending fits.
+Prescription **`the`** goes on `/th/` only: it is about an act, and a noun is not an act. For what a noun is **for**, use **`tho`**. On **`the`**, use **-l** for an invitation, **-m** for unasked advice, and **-r** for a tryout. On **`thu`** and **`tho`**, prefer **-m** when you cannot tell which ending fits.
 
 For several sakes, write several `/ɡ/` or `/th/` words (`guwathal gawethal`), one sake each. The noun or verb the sake word describes keeps its own ending, which says whether it is concrete or abstract.
 
@@ -93,7 +93,7 @@ This holds on someone else's act too. `zazozon vezuyol thawetham` is *Azozon tal
 
 > `zalazun vabuyol thawethem blazozon.`
 >
-> z-Alazun | v-bow | [th-relatedness-ought-offered | bl-Azozon]
+> z-Alazun | v-bow | [th-relatedness-ought-unasked | bl-Azozon]
 >
 > "Alazun ought to bow, for Azozon's relatedness." (unasked advice)
 

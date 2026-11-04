@@ -100,11 +100,11 @@ In the sentence after a [`blarl`](/dependents#poles) on a general claim, a resum
 
 With **`zul`** the two readings say the same thing: `zul godozel gubulel.` is both *no dog is black* and *there is no black dog*.
 
-When a joined subject shares one thing marked [**`SAME`**](/predication#identity) with no `/b/`, the members are compared with each other: they all have *the same one*.
+When a joined subject shares one thing marked [**IDENTITY**](/predication#identity) with no `/b/`, the members are compared with each other: they all have *the same one*.
 
 > `zazozon zalazun zal danal gorel varuyol.`
 >
-> [z-Azozon | z-Alazun | z-and] | [d-book | g-SAME] | v-write
+> [z-Azozon | z-Alazun | z-and] | [d-book | g-IDENTITY] | v-write
 >
 > "Azozon and Alazun write the same book."
 

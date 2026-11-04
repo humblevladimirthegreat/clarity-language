@@ -94,7 +94,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `gohem` | IF clause pole (one-way conditional) | [If](/causation#if) | B |
 | `gohom` | locative across (edge to far edge of one landmark) | [Locative relations](/locative-relations#locative-relations) | I |
 | `gon` | join-relation prioritizing (adjective) | [Join-relations](/join-relations#join-relations) | I |
-| `gorel` | SAME identity (identical-to / same-as) | [Identity (SAME)](/predication#identity-same) | B |
+| `gorel` | IDENTITY copula (identical-to / same-as) | [Identity](/predication#identity) | B |
 | `govam` | SO-THAT clause pole (intended outcome; NP for-goal) | [Because, if, although (poles)](/dependents#poles) | B |
 | `goyom` | stimulus (sake about a noun you do not possess) | [Personal possession](/sakes#personal-possession) | B |
 | `guan` | join-relation without or excluding (adjective) | [Join-relations](/join-relations#join-relations) | I |
@@ -128,9 +128,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `havel` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `havem` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `haver` | ALREADY phasal (the change has happened); -r for now: likely to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `hawul` | STILL phasal (the state continues); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `hawum` | STILL phasal (the state continues); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `hawur` | STILL phasal (the state continues); -r for now: about to end | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `hawul` | phasal still (the state continues); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `hawum` | phasal still (the state continues); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `hawur` | phasal still (the state continues); -r for now: about to end | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `hedam` | locative between (two landmarks) | [Locative relations](/locative-relations#locative-relations) | I |
 | `heham` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](/relations#exchange) | B |
 | `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](/notional-standing#residue-and-former-climate) | I |
@@ -233,16 +233,16 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `theyol` | clues evidential with strong evidence (strong clues) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `theyom` | clues evidential (reasoned from clues about this case) | [Evidentiality](/evidentiality#evidentiality) | I |
 | `theyor` | clues evidential with weak evidence (a weak clue) | [Evidence strength](/evidentiality#evidence-strength) | I |
-| `theyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Hold endings (NOTIONAL)](/notional#hold-endings-notional) | I |
-| `theyum` | notional mood default hold (imagining a scene without a further purpose) | [Notional (as-if framing)](/notional#notional-as-if-framing) | I |
-| `theyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Hold endings (NOTIONAL)](/notional#hold-endings-notional) | I |
+| `theyul` | notional mood rehearsal follow-up (practicing a possible scene to prepare for action) | [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) | I |
+| `theyum` | notional mood default follow-up (imagining a scene without a further purpose) | [Notional (as-if framing)](/notional#notional-as-if-framing) | I |
+| `theyur` | notional mood suppose follow-up (toying with a possibility or assumption for now) | [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) | I |
 | `thogel` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](/ability#decision-revisability) | I |
 | `thogem` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](/ability#decision-revisability) | I |
 | `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/ability#decision-revisability) | I |
 | `thohem` | IF clause pole (one-way conditional) | [Because, if, although (poles)](/dependents#poles) | B |
-| `thomal` | may mood find-out hold (I'll / let's find out) | [Hold endings (MAY)](/knowing#hold-endings-may) | B |
+| `thomal` | may mood find-out follow-up (I'll / let's find out) | [Follow-up endings (MAY)](/knowing#follow-up-endings-may) | B |
 | `thomam` | may mood (could be; default) | [MAY](/knowing#may) | B |
-| `thomar` | may mood who-knows hold (leave unsettled; may never know) | [Hold endings (MAY)](/knowing#hold-endings-may) | B |
+| `thomar` | may mood who-knows follow-up (leave unsettled; may never know) | [Follow-up endings (MAY)](/knowing#follow-up-endings-may) | B |
 | `thubol` | pattern evidential with strong evidence (well-established pattern) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thubom` | pattern evidential (from trail of cases) | [Evidentiality](/evidentiality#evidentiality) | I |
 <!-- /generated -->
@@ -296,9 +296,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `wavel` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `wavem` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `waver` | ALREADY phasal (the change has happened); -r for now: likely to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `wawul` | STILL phasal (the state continues); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `wawum` | STILL phasal (the state continues); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `wawur` | STILL phasal (the state continues); -r for now: about to end | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `wawul` | phasal still (the state continues); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `wawum` | phasal still (the state continues); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `wawur` | phasal still (the state continues); -r for now: about to end | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `webal` | reported evidential with strong evidence (reliable source) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `webam` | reported evidential (hearsay / said or written by someone else / reportative) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `webar` | reported evidential with weak evidence (rumor) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
@@ -324,13 +324,13 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `weyol` | clues evidential with strong evidence (strong clues) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `weyom` | clues evidential (reasoned from clues about this case) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `weyor` | clues evidential with weak evidence (a weak clue) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
-| `weyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
-| `weyum` | notional mood default hold (imagining a scene without a further purpose) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
-| `weyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
+| `weyul` | notional mood rehearsal follow-up (practicing a possible scene to prepare for action) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
+| `weyum` | notional mood default follow-up (imagining a scene without a further purpose) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
+| `weyur` | notional mood suppose follow-up (toying with a possibility or assumption for now) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `wodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](/can-and-cant#ability-fallback) | B |
-| `womal` | may mood find-out hold (I'll / let's find out) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
+| `womal` | may mood find-out follow-up (I'll / let's find out) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `womam` | may mood (could be; default) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
-| `womar` | may mood who-knows hold (leave unsettled; may never know) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
+| `womar` | may mood who-knows follow-up (leave unsettled; may never know) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `wubam` | respective pairing (item N of one list goes with item N of the other) | [Respectively (wubam)](/rank-joins#respectively) | I |
 | `wubol` | pattern evidential with strong evidence (well-established pattern) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `wubom` | pattern evidential (from trail of cases) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |

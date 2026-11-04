@@ -116,7 +116,7 @@ State the **positive** rule: which form to use for which English job. A “not Y
 
 Do not say a reading **stays on** another section, page, or subsystem — that is fencing for writers (“don’t reassign this”), not a cue for readers. Same family as ownership fences (“this page owns / does not own X”) — [teach now; don’t preview later](#teach-now-dont-preview-later). This meta page may still use *stay* in editor English (*inventory stays in unassigned-reserved.md*). Grammar-page prose should not.
 
-**A contrast earns a place only when all three hold:** the learner would use the wrong form for **this** English *now* (English false friend, or an Ageben sibling they already met — `-x` vs **`aya`**, classification vs **`SAME`**, free `g+e` vs `+exROOT`, join **-r** vs content **-r**); both forms appear with a real example; and the beat fits in one or two labeled sentences after this form’s example. Search, the sidebar, and **See also** already list related pages. Do **not** catalog siblings “in case they look them up,” expand a mix-up into a related-forms table, or restate the other doc.
+**A contrast earns a place only when all three hold:** the learner would use the wrong form for **this** English *now* (English false friend, or an Ageben sibling they already met — `-x` vs **`aya`**, classification vs **`IDENTITY`**, free `g+e` vs `+exROOT`, join **-r** vs content **-r**); both forms appear with a real example; and the beat fits in one or two labeled sentences after this form’s example. Search, the sidebar, and **See also** already list related pages. Do **not** catalog siblings “in case they look them up,” expand a mix-up into a related-forms table, or restate the other doc.
 
 **Skip the negative when:** they would not invent the wrong form (editor-hygiene pairs like hyphenated PoS, ~~`z-ugobo`~~); it only restates the positive (“write ono token” already implies no hyphen); or a section would get a ritual **Not this** column with nothing decisive to say. A strong positive example is enough when there is no sibling to compare.
 
@@ -307,14 +307,14 @@ Inline after the rule sentence: `(cue: …)`. Worked examples stay Ageben / morp
 
 A **scene** cue (`emoji *literal*: why`) is for remembering a published picture. State it only when that picture is doing **grammar** work, not when the page is merely using a dictionary metaphor.
 
-**State it** on a **closed overlay**: a fixed special reading under one part of speech (MAY, SAME, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, clause-pole **`ohe`**, locatives, means, simile *like*, exchange *for*, proxy *on behalf of*, of-relations, special pronouns, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column with **Same root as** naming the **-l** citation. One line that the same spelling is still ordinary content under other letters is fine.
+**State it** on a **closed overlay**: a fixed special reading under one part of speech (MAY, IDENTITY, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, clause-pole **`ohe`**, locatives, means, simile *like*, exchange *for*, proxy *on behalf of*, of-relations, special pronouns, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column with **Same root as** naming the **-l** citation. One line that the same spelling is still ordinary content under other letters is fine.
 
 **Do not state it** when the example is ordinary **lexicon abstract** (content **-m**): `welazem` *size* / *very*, `hadurom` *hastily*. Do **not** add a following sentence of the form “**`aduro`** here is the published abstract *haste*. (cue: 💨 *dash*: …).” The morph gloss and quoted English already give the sense. **-m** as a system is taught on [word-endings.md](/word-endings#abstract-m); that page (and drill **Cue** cells) may show `from *swan*: the glide of *grace*` because the lesson *is* the abstract ending.
 
 | Do | Don’t |
 |----|--------|
 | Overlay lead: **`oma`** as MAY, then `(cue: 💭 *thought*: a balloon over the scene)` | After `hadurom vowurol`, a sentence that names the lexicon row and restates the dash cue |
-| Overlay table **Cue** for SAME, ABIL, CAUSE, locatives, means, simile *like*, exchange *for*, proxy *on behalf of*, of-relations, … | A post-example etymology footnote on ordinary *haste* / *size* |
+| Overlay table **Cue** for IDENTITY, ABIL, CAUSE, locatives, means, simile *like*, exchange *for*, proxy *on behalf of*, of-relations, … | A post-example etymology footnote on ordinary *haste* / *size* |
 | Cue last on the **rule**, before the first example | Cue as the paragraph *after* the worked examples |
 
 Letter / series / ending cues (`**a** ≈ add`, **m** ≈ abstract) are the other kind; they follow [two kinds of cue](#cue-rubric) and are not this overlay-vs-lexicon split.
@@ -327,7 +327,7 @@ Usual sources (prefer one; reuse the language’s own systems):
 
 | Source | When |
 |--------|------|
-| **Concrete / abstract (lexicon)** | Closed roots and overlays (**`SAME`**, **`MAY`**, ➡️ *east*: the sun’s path, so the talk moves on) |
+| **Concrete / abstract (lexicon)** | Closed roots and overlays (**`IDENTITY`**, **`MAY`**, ➡️ *east*: the sun’s path, so the talk moves on) |
 | **Vowel series** | Join / speech act / polar stacks that share letter jobs |
 | **Ending letters** | **-l** / **-m** / **-n** / **-r** (and stance endings) when the ending *is* the lesson |
 
@@ -394,7 +394,7 @@ Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odoz
 | Inflected form the row teaches | `thomam`, `thagom`, `xahom`, `zwuzuvuvul`; drill-bank `vayebel` *see* |
 | Special with its default ending | citation `uwen` / `awan` / `ayan` / `umen`; in-clause `zuwen` when the slot is the point |
 
-Do **not** call `odoze` a citation. Overlay / need / linker / mood inventories use the citation or the floating `/th/` (or `/x/`) word, not the stem (`unal` or `thunam`, not `una`; `omal` or `thomam`, not `oma`). Combinability (`tha` / `the`, hold endings) belongs in a **pattern** column (`…thal`) or in extra inflected rows, not by stripping the ending.
+Do **not** call `odoze` a citation. Overlay / need / linker / mood inventories use the citation or the floating `/th/` (or `/x/`) word, not the stem (`unal` or `thunam`, not `una`; `omal` or `thomam`, not `oma`). Combinability (`tha` / `the`, follow-up endings) belongs in a **pattern** column (`…thal`) or in extra inflected rows, not by stripping the ending.
 
 **Exceptions** (a stem or non-word is the right **Ageben** cell):
 

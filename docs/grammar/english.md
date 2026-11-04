@@ -86,7 +86,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | kind / role (*Azozon as a dog*) | classification `/ɡ/` | [Kind / role](/predication#classification) |
-| same one (*Alazun as Azozon*) | **`SAME`** + `/b/` | [Identity](/predication#identity) |
+| same one (*Alazun as Azozon*) | **IDENTITY** + `/b/` | [Identity](/predication#identity) |
 | same time (*as Alazun walks*) | **`herom blarl`** | [Dependent clauses](/dependents#dependent-clauses) |
 | reason / since (*as Alazun walks*) | **`thahum blarl`** | [Because](/iff-fault#because) |
 | grounds (*as the sky is gray, it will rain*) | **`theyom blarl`** / **`thubom blarl`** | [Evidence clause](/evidentiality#evidence-clause) |

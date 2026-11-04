@@ -28,7 +28,7 @@ English *Azozon thinks…*, *she's upset*, and *he doubts it* report what is in 
 >
 > "Maybe Azozon thinks Alazun left."
 
-The seam letter keeps its meaning: [evidence strength](evidentiality.md#evidence-strength) on a channel, the [hold](/knowing#may-hold) on MAY. The name keeps its own **-n** at the end. **-n** is never a seam.
+The seam letter keeps its meaning: [evidence strength](evidentiality.md#evidence-strength) on a channel, the [follow-up ending](/knowing#follow-up-endings-may) on MAY. The name keeps its own **-n** at the end. **-n** is never a seam.
 
 > `zalazun theyolazozon vudurul.`
 >
@@ -134,7 +134,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 
 > `zonal wawethumel goyom blalazun theyomazozon.`
 >
-> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Alazun]] | th-CLUES-Azozon
+> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus] | bl-Alazun]] | th-CLUES-Azozon
 >
 > "I gather Azozon resents Alazun over the memo, holding it in."
 
@@ -176,7 +176,7 @@ The first sake word has no holder, so it is yours. The second is Azozon's.
 
 Only the seven channels and MAY take a holder: they are the ways you can have access to someone else's view. When they told you in their own words, a [cite](/spans#writing) keeps their wording instead.
 
-**Compare with:** being upset **for** Azozon is your own feeling about Azozon's stake (the ON-BEHALF locus in [emotion compose](feelings-permission.md#emotion-compose)); with a holder the feeling is Azozon's. *On behalf of* Azozon is [proxy](/relations#proxy) (`hanem`). A `/b/` on [permission](permission-consent.md#permission) or [consent](permission-consent.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](/compounds#dictionary-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
+**Compare with:** being upset **for** Azozon is your own feeling about Azozon's stake (the VICARIOUS locus in [emotion compose](feelings-permission.md#emotion-compose)); with a holder the feeling is Azozon's. *On behalf of* Azozon is [proxy](/relations#proxy) (`hanem`). A `/b/` on [permission](permission-consent.md#permission) or [consent](permission-consent.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](/compounds#dictionary-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
 
 ### Practice {#intermediate-practice}
 

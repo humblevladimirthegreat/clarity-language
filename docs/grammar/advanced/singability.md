@@ -69,7 +69,7 @@ English swallows small words that change the meaning: *can* and *can't* often di
 | Words | Why |
 |-------|-----|
 | Negation: the `u` joins ([negation](/joins#negation-u)) | Missing one flips the claim |
-| [MAY](/knowing#may) and its hold endings | Missing one makes a guess sound certain |
+| [MAY](/knowing#may) and its follow-up endings | Missing one makes a guess sound certain |
 | [How you know](/evidentiality#evidentiality) and [how strong the evidence is](/evidentiality#evidence-strength) | Missing one hides where the claim came from |
 | The kind of *can't* ([ability](/can-and-cant#ability)) | Missing one turns *not right now* into *not ever* |
 

@@ -35,12 +35,12 @@ A **direction** locus says what the charge points at:
 | **`e`** | *at* | AIMED | *the charge lands on a target* (*annoyed at*, *grateful to*, *pressing for*) | `wawethumel` |
 | **`oe`** | *toward* | SEEKING | *turning to someone for comfort or safety* | `wawethumoem` |
 | **`uo`** | *against* | RESISTING | *pushing back* (*objecting to*, fighting) | `wawethumuor` |
-| **`o`** | *for* | ON-BEHALF | *felt for someone's sake* (*upset for*) | `wawethumom` |
+| **`o`** | *for* | VICARIOUS | *felt for someone's sake* (*upset for*) | `wawethumom` |
 | **`u`** | *from* | AWAY | *moving off* (*avoiding*, fleeing, disengaging, hiding) | `wawethumum` |
 | **`ua`** | *out of* | COLLAPSE | *out of fight: giving up* (*defeated by*) | `wawethumual` |
 | **`ao`** | *using* | FAWN | *using yourself to placate* (*appeasing*) | `wawethumaom` |
 
-A direction names the **dominant** pull when feelings mix; use two feeling words for two pulls. AIMED lands on a party or a goal; RESISTING opposes an outcome or a demand. ON-BEHALF is your own feeling about someone else's stake; FAWN is placating someone for your own safety.
+A direction names the **dominant** pull when feelings mix; use two feeling words for two pulls. AIMED lands on a party or a goal; RESISTING opposes an outcome or a demand. VICARIOUS is your own feeling about someone else's stake; FAWN is placating someone for your own safety.
 
 Name the landmark with a `bl-` word right after the feeling (after **`goyom`** when the feeling is on `/w/`): the target of a direction, or the situation for CIRCUM. INTERNAL and UNPLACED take no `/b/`: they have no landmark. A direction with no `/b/` points at the stimulus noun when there is one, otherwise at someone unnamed.
 
@@ -48,7 +48,7 @@ A feeling word with a direction tail already uses its `/b/` for the landmark, so
 
 > `zonal wawethumel goyom blalazun.`
 >
-> z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Alazun]
+> z-memo | [[w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus] | bl-Alazun]
 >
 > "I resent Alazun over the memo, holding it in."
 
@@ -56,11 +56,11 @@ The motion ending says how the feeling moves, on the [settled-to-passing scale](
 
 | Motion ending | Use | English | Cue |
 |---------------|-----|---------|-----|
-| **-l** | STILL | not moving: held, frozen, numb | **-l** ≈ *lasting*: still water |
+| **-l** | STATIC | not moving: held, frozen, numb | **-l** ≈ *lasting*: still water |
 | **-m** | FLOWING | moving steadily, at a pace you can ride | **-m** ≈ the ordinary case: a current |
 | **-r** | SURGING | moving in waves or spikes: rising, falling, swinging | **-r** ≈ *right now*: a wave |
 
-Motion is how the feeling moves, not how strong it is. Strong but steady anger is flowing, and so is calm contentment. Fury held in check and a numb flatness are both still. Surging and still are information, not verdicts: surging can be a cue to ground; still can be a cue to rest, or to re-engage gently. Freezing is STILL: AWAY with **-l** is *frozen, wanting out*.
+Motion is how the feeling moves, not how strong it is. Strong but steady anger is flowing, and so is calm contentment. Fury held in check and a numb flatness are both static. Surging and static are information, not verdicts: surging can be a cue to ground; static can be a cue to rest, or to re-engage gently. Freezing is STATIC: AWAY with **-l** is *frozen, wanting out*.
 
 Say how **strong** the feeling is with a [degree word](left-bound.md#degree-w) on `/w/` right before the feeling word. Before a `/ɡ/` feeling it grades that adjective as usual. Before a `/w/` feeling, it grades the feeling, not the stimulus. With no degree word, strength is unstated.
 
@@ -195,7 +195,7 @@ th-competence-unmet-passing-UNPLACED-SURGING
 **1.** `zahuyal wawethumel goyom blalazun.`
 
 ::: details Show answer
-z-hug | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Alazun]
+z-hug | [[w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus] | bl-Alazun]
 
 *I resent Alazun over the hug, holding it in.*
 :::

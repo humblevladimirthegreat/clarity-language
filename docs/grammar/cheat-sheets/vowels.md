@@ -175,7 +175,7 @@ Polar answers stack two of these vowels. Beginner *yes* / *no* / *sure*: [polar 
 | Job | **a** | **o** | **e** | **u** | Stage |
 |-----|-------|-------|-------|-------|-------|
 | [Extra-noun](/hooks#extra-noun) | *in* | *for* | *at* | *from* | B |
-| [Feeling locus](/feelings-permission#emotion-compose) | *in* (inside) | *for* (on behalf) | *at* (aimed) | *from* (away) | I |
+| [Feeling locus](/feelings-permission#emotion-compose) | *in* (inside) | *for* (vicarious) | *at* (aimed) | *from* (away) | I |
 
 ### Stacked extra nouns {#extra-noun-stacks}
 

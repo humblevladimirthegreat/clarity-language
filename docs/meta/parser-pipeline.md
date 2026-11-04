@@ -124,8 +124,8 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause pole
 | `residue` | `mood` | RESIDUE **`amo`** |
 | `former_climate` | `mood` | FORMER **`eno`** |
 | `phasal` | `mood` | *already* **`oha`** / *still* **`age`** / *not yet* **`uze`** / *no longer* **`ewe`** |
-| `may` | `mood` | MAY hold map (find out / default / who knows) |
-| `notional` | `mood` | NOTIONAL hold map |
+| `may` | `mood` | MAY follow-up map (find out / default / who knows) |
+| `notional` | `mood` | NOTIONAL follow-up map |
 | `plan` | `mood` | map-resolution endings |
 | `predict` | `mood` | **`edazo`** |
 | `decision` | `mood` | DECISION changeability |
@@ -133,7 +133,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause pole
 | `want` | `mood` | WANT lastingness |
 | `cause` | `mood` | CAUSE **`ege`** |
 | `clause_pole` | `mood` | *if* / *only-if* / *iff* / *because* / *so-that* / *as-of* / … |
-| `identity` | `mood` | SAME **`ugo`** |
+| `identity` | `mood` | IDENTITY **`ugo`** |
 | `locative` | `locative` | *between* |
 | `means` | `means` | *using* **`ahada`** |
 | `similative` | `similative` | *like* **`umu`** |

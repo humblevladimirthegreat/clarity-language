@@ -90,15 +90,15 @@ A sake is a kind of payoff. A sake word is a sake root, mid-word `th`, a stance 
 |--------|-----|---------|-------------|-------|
 | [**`tha`**](/sakes#met) | the belonging or event pays off this sake | *serves* / *met* | [time horizon](/sakes#time-horizon-endings-on-met) | B |
 | [**`thu`**](/sakes#word-shape) | it subtracts from this sake | *detracts from* / *unmet* | [changeability](/sakes#sake-changeability) | B |
-| [**`the`**](/ought-for-a-sake#sake-force) | the act ought to serve this sake | *ought this act for* | [why it is offered](/ought-for-a-sake#sake-force) | I |
+| [**`the`**](/ought-for-a-sake#sake-force) | the act ought to serve this sake | *ought this act for* | [why it is welcome](/ought-for-a-sake#sake-force) | I |
 | [**`tho`**](/prescription#sake-preference) | the act is done for this sake | *doing for this sake* | [time horizon](/prescription#sake-preference) | I |
 
 <!-- cheat-sheet: why-allowed -->
 | Ending | Met **`tha`** | Unmet **`thu`** | Ought **`the`** | Motive **`tho`** | Stage |
 |--------|---------------|-----------------|-----------------|------------------|-------|
 | **-l** | [`…thal`](/sakes#time-horizon-endings-on-met) *lasting* | [`…thul`](/sakes#sake-changeability) *irreversible* | [`…thel`](/ought-for-a-sake#sake-force) *invited* | [`…thol`](/prescription#sake-preference) *lasting* | B / I |
-| **-m** | [`…tham`](/sakes#time-horizon-endings-on-met) *unstated* | [`…thum`](/sakes#sake-changeability) *modifiable* | [`…them`](/ought-for-a-sake#sake-force) *offered* | [`…thom`](/prescription#sake-preference) *unstated* | B / I |
-| **-r** | [`…thar`](/sakes#time-horizon-endings-on-met) *immediate* | [`…thur`](/sakes#sake-changeability) *passing* | [`…ther`](/ought-for-a-sake#sake-force) *worth a try* | [`…thor`](/prescription#sake-preference) *immediate* | B / I |
+| **-m** | [`…tham`](/sakes#time-horizon-endings-on-met) *unstated* | [`…thum`](/sakes#sake-changeability) *modifiable* | [`…them`](/ought-for-a-sake#sake-force) *unasked* | [`…thom`](/prescription#sake-preference) *unstated* | B / I |
+| **-r** | [`…thar`](/sakes#time-horizon-endings-on-met) *immediate* | [`…thur`](/sakes#sake-changeability) *passing* | [`…ther`](/ought-for-a-sake#sake-force) *tryout* | [`…thor`](/prescription#sake-preference) *immediate* | B / I |
 
 The scale runs **-l** most settled, **-m** the default, **-r** most passing. When unsure, use **-m**.
 
@@ -165,7 +165,7 @@ An [emotion](/feelings-permission#emotion-compose) is built on one word: the sak
 | [`o`](/feelings-permission#emotion-compose) | *at* | aimed | *annoyed at*, *grateful to* | I |
 | [`oe`](/feelings-permission#emotion-compose) | *toward* | seeking | *turning to someone for comfort* | I |
 | [`ue`](/feelings-permission#emotion-compose) | *against* | resisting | *objecting to* | I |
-| [`e`](/feelings-permission#emotion-compose) | *for* | on behalf | *upset for* | I |
+| [`e`](/feelings-permission#emotion-compose) | *for* | vicarious | *upset for* | I |
 | [`u`](/feelings-permission#emotion-compose) | *from* | away | *avoiding*, *fleeing* | I |
 | [`ua`](/feelings-permission#emotion-compose) | *out of* | collapse | *giving up* | I |
 | [`ae`](/feelings-permission#emotion-compose) | *using* | fawn | *placating* | I |
@@ -174,7 +174,7 @@ An [emotion](/feelings-permission#emotion-compose) is built on one word: the sak
 
 | Ending | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**-l**](/feelings-permission#emotion-compose) | still | *held, frozen, numb* | I |
+| [**-l**](/feelings-permission#emotion-compose) | static | *held, frozen, numb* | I |
 | [**-m**](/feelings-permission#emotion-compose) | flowing | *steady, a pace you can ride* | I |
 | [**-r**](/feelings-permission#emotion-compose) | surging | *waves or spikes* | I |
 

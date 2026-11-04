@@ -239,7 +239,7 @@ Source: [pronouns.md](/pronouns), [plurality.md](/plurality)
 - **open:** the nonspecific *someone* `umen` as a topic or with **-x** (`xumen`, `umenx`). `umen` names no particular person or group: a topic is someone in particular, and *some people* is `zeyelx`.
 - **open:** the topic pronoun as a topic word or a resume (`xalen`, `zaler`). The topic pronoun is the topic itself, so there is nothing to set or return to.
 
-## Identity (`SAME`)
+## Identity (`IDENTITY`)
 
 Source: [predication.md](/predication)
 
@@ -310,7 +310,7 @@ Source: [sakes.md](/sakes)
 - **open:** a sake word on `/z/` `/d/` `/b/` `/v/` `/h/` `/x/` `/y/` (`sakeSlot`). A sake word is a stance on a belonging, an unowned noun, or the clause, and these slots are none of those. *Walks healthily* is the clause stance (`thobatham`).
 - **open:** prescription **`the`** on a noun (`gawethel`, `wawethel goyom`). Its endings are the warrant for a move, and a noun is not a move; what a noun is for is **`tho`** (`gawethom`).
 - **closed (D-36):** **-n** on a sake word.
-- **open:** a `bl-` word after an INTERNAL or UNPLACED feeling (`wawethumal goyom blalazun`). A placement locus has no landmark; someone else's stake is ON-BEHALF (`e`) or a holder.
+- **open:** a `bl-` word after an INTERNAL or UNPLACED feeling (`wawethumal goyom blalazun`). A placement locus has no landmark; someone else's stake is VICARIOUS (`e`) or a holder.
 
 ## Role-letter structure
 

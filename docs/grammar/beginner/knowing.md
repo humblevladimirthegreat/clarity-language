@@ -21,8 +21,7 @@ Without the `/th/` word, you are reporting that it happens. As a plain noun the 
 
 **Compare with:** `zazozon vevemel.` is *Azozon thinks*, a report of the act of thinking; it does not mark anything as a guess.
 
-### Hold endings (MAY)
-<a id="may-hold"></a>
+### Follow-up endings (MAY) {#follow-up-endings-may}
 
 The ending on MAY says whether you mean to follow up on the *could be*: with **-l** you will find out, with **-m** you leave that unsaid (the default), and with **-r** it is a passing thought you are not pursuing. The three run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). No ending is better than the others: finding out, leaving it at *may*, and letting it go are all fine choices. With **-n**, the word is an ordinary name.
 

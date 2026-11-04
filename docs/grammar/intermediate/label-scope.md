@@ -43,7 +43,7 @@ A command can ask for a state as well as an act. Put the [command word](/speech-
 
 The `/ɡ/` word takes the verb's place in the [default order](/speech-moves#act-word-order), so it comes first. Name the listener after it to address one person (`yol guyulom zawan`), or use the verb root for the doing (`yol vuyulom`, *take care*). **`yul`** turns the same pair into *don’t be ADJ*.
 
-### **SAME** endings
+### **IDENTITY** endings
 
 Beginner already used **`gorel`** (*is the same as*). Its other ending finishes the map.
 
@@ -75,7 +75,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| **SAME** | `orel` |
+| **IDENTITY** | `orel` |
 | *guard* | `agayul` |
 | *quiet* | `ugowul` |
 | *angry* | `onumul` |
@@ -139,7 +139,7 @@ y-prohibition | g-angry
 ::: details Show answer
 `zazozon gorel blalazun gul.`
 
-z-Azozon | [[g-SAME | bl-Alazun] | g-not]
+z-Azozon | [[g-IDENTITY | bl-Alazun] | g-not]
 
 **`gul`** denies the match; **`gorem`** says they are basically the same.
 :::
@@ -149,7 +149,7 @@ z-Azozon | [[g-SAME | bl-Alazun] | g-not]
 **1.** `zalazun gorel blazozon.` / `zalazun gorem blazozon.`
 
 ::: details Show answer
-z-Alazun | [g-SAME | bl-Azozon]
+z-Alazun | [g-IDENTITY | bl-Azozon]
 
 z-Alazun | [g-same | bl-Azozon]
 

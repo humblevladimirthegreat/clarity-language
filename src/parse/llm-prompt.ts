@@ -155,9 +155,9 @@ export function renderCore(): string {
 const LABEL_RE = /(?<![A-Za-z])([A-Z]{2,}(?:-[A-Z]+)*)(?![a-z])/g;
 
 /**
- * SMALLCAPS labels in a gloss line (quoted payloads skipped). A hyphenated run is one label
- * (`ON-BEHALF`), several joined (`CLUES-TOPIC`, `AIMED-FLOWING`), or both (`ON-BEHALF-FLOWING`),
- * so every contiguous sub-run is listed; the legend keeps the ones it can explain.
+ * SMALLCAPS labels in a gloss line (quoted payloads skipped). A hyphenated run may be one label
+ * or several joined (`CLUES-TOPIC`, `VICARIOUS-FLOWING`), so every contiguous sub-run is listed;
+ * the legend keeps the ones it can explain.
  */
 export function glossLabels(gloss: string): string[] {
   const flat = gloss.replace(/"(?:[^"]|"")*"/g, '""');

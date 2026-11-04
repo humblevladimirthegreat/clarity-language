@@ -197,9 +197,9 @@ Ageben has no word for *is*. The kind of claim comes from the pattern.
 | | a new noun + `/ɡ/` | `zodozel gelazem.` | *There is a big dog.* | B |
 | [Same person](/predication#identity) | `gorel` + `/b/`, side by side | `zalazun gorel blazozon.` | *Alazun is Azozon.* (one person, two names) | B |
 | [Same one again](/predication#identity) | `gorel`, no `/b/` | `zalazun danal gorel varuyol.` | *Alazun is writing the same book.* (the book already mentioned) | B |
-| [Basically the same](/label-scope#same-endings) | **-m** | `zalazun gorem blazozon` | *Alazun is basically Azozon.* | I |
-| [Not the same](/label-scope#same-endings) | `gul` after the pair | `zalazun gorel blazozon gul` | *Alazun is not Azozon.* | I |
-| [The one who is Azozon](/label-scope#same-endings) | inside a noun phrase | `zeyel gorel blazozon` | *the person who is Azozon* | I |
+| [Basically the same](/label-scope#identity-endings) | **-m** | `zalazun gorem blazozon` | *Alazun is basically Azozon.* | I |
+| [Not the same](/label-scope#identity-endings) | `gul` after the pair | `zalazun gorel blazozon gul` | *Alazun is not Azozon.* | I |
+| [The one who is Azozon](/label-scope#identity-endings) | inside a noun phrase | `zeyel gorel blazozon` | *the person who is Azozon* | I |
 
 With a name or a resumed noun, the pair is a [property](/predication#existence), not a new thing: `zodozer gelazem.` is *The dog is big.*
 

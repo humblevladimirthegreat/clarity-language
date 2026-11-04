@@ -290,7 +290,7 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 | *…, okay?* / *…, deal?* (after a suggestion) | `yel yael.` | check-back: asks them to take it up |
 | *…, or would you rather not?* | `yel yuel.` | check-back: offers them the refusal |
 | *suggest* (a view) | `yam` | soft statement: *for what it's worth* |
-| *recommend* / *advise* (unasked) | `thawethem` | prescription, offered |
+| *recommend* / *advise* (unasked) | `thawethem` | prescription, unasked |
 | *recommend* (you asked for it) | `thawethel` | prescription, invited |
 | *advice* / *suggestion* / *proposal* | the suggestion as a sentence, then point back | [which noun](/dependents#which-noun) |
 | *invite* / *welcome* (someone) | `vabodum` | *hospitality* |
@@ -304,7 +304,7 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 
 > `zawan vowurol thawethem blawan.`
 >
-> z-listener | v-walk | [th-relatedness-ought-offered | bl-listener]
+> z-listener | v-walk | [th-relatedness-ought-unasked | bl-listener]
 >
 > "You should walk; it would help you feel connected." (unasked advice)
 

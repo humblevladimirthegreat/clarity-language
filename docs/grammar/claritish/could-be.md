@@ -50,4 +50,4 @@ He forgot `thomam`.
 Aliens built it `thomar`.
 :::
 
-<!-- Source (editors): knowing.md#may, knowing.md#may-hold; pronunciation from phonology.md. -->
+<!-- Source (editors): knowing.md#may, knowing.md#follow-up-endings-may; pronunciation from phonology.md. -->

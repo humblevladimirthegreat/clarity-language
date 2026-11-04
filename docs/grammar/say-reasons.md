@@ -36,7 +36,7 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}
 
-**Needs:** [Evidence strength](/evidentiality#evidence-strength) · [Deduction](/evidentiality#deduction) · [MAY](/knowing#may) · [Hold endings (NOTIONAL)](/notional#hold-endings-notional) · [Hopefully and other attitudes](/feelings-permission#speaker-attitude) · [Unmet](/sakes#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](/spans#asides) · [CAUSE](/cause#cause) · [Every bar](/stance-bars#stance-bars)
+**Needs:** [Evidence strength](/evidentiality#evidence-strength) · [Deduction](/evidentiality#deduction) · [MAY](/knowing#may) · [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) · [Hopefully and other attitudes](/feelings-permission#speaker-attitude) · [Unmet](/sakes#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](/spans#asides) · [CAUSE](/cause#cause) · [Every bar](/stance-bars#stance-bars)
 
 English adverbs like *obviously*, *apparently* and *presumably* say **how you know** a claim. Ageben has no word for each one. It puts a channel on the clause as a `/th/` word, and the ending grades the evidence: **-l** solid, **-m** ordinary, **-r** thin. *Guess* and *assume* are not channels: a guess is a *could be* (MAY), and an assumption is toying with a premise (NOTIONAL). *Unfortunately* says how **you** feel about the claim, so it is an attitude word.
 
@@ -386,7 +386,7 @@ Use **`thahum blarl`** only when Q is also asserted as a world-foundation, what 
 
 ### Arguments: premises, validity, contradiction {#arguments}
 
-**Needs:** [Deduction](/evidentiality#deduction) · [Evidence clause](/evidentiality#evidence-clause) · [If](/causation#if) · [Because, iff, and only because](/iff-fault#only-because) · [Clause joins](/joins#clause-joins) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Hold endings (NOTIONAL)](/notional#hold-endings-notional)
+**Needs:** [Deduction](/evidentiality#deduction) · [Evidence clause](/evidentiality#evidence-clause) · [If](/causation#if) · [Because, iff, and only because](/iff-fault#only-because) · [Clause joins](/joins#clause-joins) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional)
 
 An argument has three parts, and each has its own slot. The **link** between premises and conclusion is a pole (*if*, *if and only if*). **How you know** the link is the channel: DEDUCED (`thanam`) when the conclusion must hold. **Whether you grant the premises** depends on what sits before **`blarl`**: the channel alone asserts them, and a pole between the channel and **`blarl`** does not.
 
@@ -600,7 +600,7 @@ English *deserve* says something is owed without saying why. Name the ground. It
 
 > `zalazun demebol vewal bazozon hulurom thudathem.`
 >
-> z-Alazun | d-medal | v-present | b-Azozon | h-fairness | th-sake-ought-offered
+> z-Alazun | d-medal | v-present | b-Azozon | h-fairness | th-sake-ought-unasked
 >
 > "Azozon deserves the medal." (Alazun ought, in fairness, to give it to Azozon)
 
@@ -768,7 +768,7 @@ A feeling word is how you feel **now**. The stimulus can sit anywhere in time. T
 
 > `zezuyol wawethumel goyom thevum blrul.`
 >
-> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | [th-MEMORY | bl-earlier]
+> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus]] | [th-MEMORY | bl-earlier]
 >
 > "Stung by the dialogue, which is over; I was there."
 
@@ -801,13 +801,13 @@ To say you **felt** it at another time, date the feeling itself with [stance as-
 
 > `zezuyol wawethumel goyom thenam blezuyol.`
 >
-> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | [th-as-of.ledger | bl-speech]
+> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus]] | [th-as-of.ledger | bl-speech]
 >
 > "The dialogue stung me at the time." (nothing is said about now)
 
 > `zezuyol wawethumel goyom thevum thenam blezuyol.`
 >
-> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | th-MEMORY | [th-as-of.ledger | bl-speech]
+> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus]] | th-MEMORY | [th-as-of.ledger | bl-speech]
 >
 > "I remember the dialogue stinging at the time."
 
@@ -828,13 +828,13 @@ A direction locus says where the charge **goes**. It does not say who **caused**
 
 > `zonal wawethumel goyom blalazun thahum blarl zalazun vezuyol.`
 >
-> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Alazun]] | [th-because | bl-that-clause] | z-Alazun | v-tell
+> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus] | bl-Alazun]] | [th-because | bl-that-clause] | z-Alazun | v-tell
 >
 > "Resentful at Alazun about the memo, because Alazun spoke." (a cause, and no one is blamed)
 
 > `zonal wawethumel goyom blalazun thomam thahul blarl zalazun vezuyol.`
 >
-> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Alazun]] | th-MAY | [th-because.fault | bl-that-clause] | z-Alazun | v-tell
+> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus] | bl-Alazun]] | th-MAY | [th-because.fault | bl-that-clause] | z-Alazun | v-tell
 >
 > "Resentful at Alazun about the memo; maybe Alazun was wrong to speak."
 
@@ -862,7 +862,7 @@ Most of these feelings are about the **understanding** sake: whether something m
 
 > `zagalal wowethalael goyom.`
 >
-> z-galaxy | [w-understanding-met-lasting-CIRCUM-STILL | g-stimulus]
+> z-galaxy | [w-understanding-met-lasting-CIRCUM-STATIC | g-stimulus]
 >
 > "In awe of the galaxy."
 
@@ -1208,7 +1208,7 @@ Short drills for these recipes. A channel and offset after **`goyom`** date the 
 
 ::: details Show answer
 
-[z-memo | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | [th-as-of.ledger | b-speech]
+[z-memo | [w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus]] | [th-as-of.ledger | b-speech]
 
 *The memo stung me at the time of the dialogue.*
 :::
@@ -1217,7 +1217,7 @@ Short drills for these recipes. A channel and offset after **`goyom`** date the 
 
 ::: details Show answer
 
-[z-speech | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alazun]] | [th-because.fault | b-that-clause] | z-Alazun | v-tell
+[z-speech | [[w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus] | b-Alazun]] | [th-because.fault | b-that-clause] | z-Alazun | v-tell
 
 *Resentful at Alazun about the dialogue; Alazun was wrong to speak.*
 :::

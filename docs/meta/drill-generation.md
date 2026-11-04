@@ -324,7 +324,7 @@ Tokens here are **stems for matching** (path allowlist / leak checks). Learner b
 | `ahu` | *because* (**-m** on `/th/` `/ɡ/`) |
 | `ebe` | *only if* (**-m** on `/th/` `/ɡ/`) |
 
-A teach line may add roots that already appear in that stage’s worked examples (e.g. `alede` *apple*, `eduda` *tea*, `oguda` *coffee`, `amahu` *challenging*, `ugo` **SAME**). Checkpoint tables list **setting** roots instead, even when a teach line used *walk*.
+A teach line may add roots that already appear in that stage’s worked examples (e.g. `alede` *apple*, `eduda` *tea*, `oguda` *coffee`, `amahu` *challenging*, `ugo` **IDENTITY**). Checkpoint tables list **setting** roots instead, even when a teach line used *walk*.
 
 ## Allowlist
 <a id="allowlist"></a>
@@ -348,7 +348,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 13 | `relations.md` | **exists** | Hosted pair for simile **`hewem`**, exchange **`heham`**, proxy **`hanem`** | Recycle clause hosted `/b/` and hooks extra-noun. No *between*, no of-relations, no **`blarl`**. Not **`hahebam`** |
 | 8 | `pronouns.md` | **exists** | Whole-stem **-r**; role pointers (`zwuzer`, `dwuder`, `dwuzor`, `zwuzar`); specials **`uwe` / `awa` / `aya` / `ume`** (when the *role* is the point); inclusive *we* **`aya`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
 | 8 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aya`** as the *not this* for inclusive *we*. **`uwe`/`awa`** only on person-role items |
-| 9 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodozel`; identity **`gorel` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`azawdavraga` / `uzuda`) OK if already taught in this stage |
+| 9 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodozel`; identity **`gorel` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **IDENTITY**; page-example roots (`azawdavraga` / `uzuda`) OK if already taught in this stage |
 | 10 | `joins.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / single-item / standalone starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask), and **-rx** as *some of them* | No hooks, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
 | 11 | `questions.md` | **exists** | **`yel`/`yem`** yes/no vs fill-ask (join **-r**); fill-all; polar **`yaol` / `yuol` / `yael`** vs **`yul`** vs join **`zul`** | **`yem`** is taught here as soft *ask* — allowed on this page even though full speech-act twins live later on `firm-soft.md`. Circumstance *when?* **`har`** is later Beginner on fill-ask-jobs.md — do not use |
 | 12 | `hooks.md` | **exists** | Prefix-less **hooks** (**`al`/`am`/`el`/`ul`/`ol`**); in-clause `A HOOK B`; discourse **`al`** *additionally*; extra-noun **`al`/`el`/`ul`/`ol`** + `/b/` (**in** / **at** / **from** / **for**) | Not a join (`zam` vs `am`). Not stacked extra-noun (`ael` / `aol`). Not **`xrowul` / `xrowal`**
@@ -359,7 +359,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 15 | `causation.md` | **exists** | Two-place poles: outcome host + `/b/` condition; `/th/` event vs `/ɡ/` noun; *if* **`ohe`** vs *only if* **`ebe`**; no cause-arrow word | **Needs:** core extra nouns + dependents **`darl`**. *Because* / **`IFF`** / **CAUSE** are Intermediate — do not use |
 | 16 | `sakes.md` | **exists** | Six needs; `/ɡ/` on a belonging vs `/th/` on the clause; **`tha`** met + contact **-l / -m / -r**; **`thu`** unmet changeability; unowned **`goyom`** + `/w/` need | **Not** prescription **`the`** or motive **`tho`** (Intermediate). Not ability (non-sake + `x` vowel). Not MAY. Not bare need-as-topic |
 | 16 | `intention.md` | **exists** | PLAN **`thago`** | Not values (sake roots). Not role compounds (vowel *left* of `x`). Not conversation length (named citation or `/y/`). Ability **`xa`/`xe`/`xo`/`xu`** is later Beginner on `can-and-cant.md` |
-| 16 | `knowing.md` | **exists** | **MAY** **`oma`** + 2a holds (**`thomam`** default; **-l** find out; **-r** who knows) | LIVE/MEMORY is later Beginner on `live-and-memory.md`. Not other evidentiality / NOTIONAL (Intermediate). Not **`yem`** (core Intermediate) unless you only recycle **`yel`** from core/questions Beginner |
+| 16 | `knowing.md` | **exists** | **MAY** **`oma`** + 2a follow-up endings (**`thomam`** default; **-l** find out; **-r** who knows) | LIVE/MEMORY is later Beginner on `live-and-memory.md`. Not other evidentiality / NOTIONAL (Intermediate). Not **`yem`** (core Intermediate) unless you only recycle **`yel`** from core/questions Beginner |
 | 16 | `roles.md` | **exists** | Role compounds **`w` + scope `a`/`e` + part `z`/`d`/`b` + ROOT**; endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations. Not scope **`o`/`u`/pairs (`label-seams.md` Beginner) |
 | 16 | `compounds.md` | **exists** | Productive **`x`** vs two words vs dictionary compound; look up listed stems (`oyaheha` / `ohelebora`); do not coin them. Live **`x`** from parts (not a pre-joined bank row) | Not parser-family inventory as drills; not coining new dictionary compounds. Greeting bid is Intermediate |
 | 16 | `intention.md` | **exists** | **PLAN** **`ago`** map-resolution endings | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling MAY / values unused unless the page contrast needs them |
@@ -373,9 +373,9 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 16 | `digit-strings.md` | **exists** | Digit-string labels; clock / calendar time | Recycle = all earlier Beginner. Not letter codes, measures, ranges, or percent |
 | 16 | `can-and-cant.md` | **exists** | Ability **`xa`/`xe`/`xo`/`xu`** on a verb or adjective; hostless **`oda`**; role + ability | Recycle = all earlier Beginner. Not DECISION / try / want |
 | 16 | `live-and-memory.md` | **exists** | LIVE **`thugem`** / MEMORY **`thevum`** channel pick | Recycle = all earlier Beginner. Not strength, source, forecast, holder, or the other channels |
-| 16 | `label-seams.md` | **exists** | Label scope seams (`tha` / `the` / `tho` / `thu` and stacks) | Recycle = all earlier Beginner. Not packaging, commands to be ADJ, or SAME endings |
+| 16 | `label-seams.md` | **exists** | Label scope seams (`tha` / `the` / `tho` / `thu` and stacks) | Recycle = all earlier Beginner. Not packaging, commands to be ADJ, or IDENTITY endings |
 | 16 | `thanks-and-sorry.md` | **exists** | Thanks (lone `/th/` met) and sorry (`thu` + `bl-` whose) | Recycle = all earlier Beginner. Not emotion compose, speaker attitude, or say words |
-| 16 | `ought-for-a-sake.md` | **exists** | Prescription **`the`** + invited / offered / trial endings; `/b/` whose stake on advice | Recycle = all earlier Beginner. Not motive **`tho`**, attachment sites, contrary, or sake bars |
+| 16 | `ought-for-a-sake.md` | **exists** | Prescription **`the`** + invited / unasked / tryout endings; `/b/` whose stake on advice | Recycle = all earlier Beginner. Not motive **`tho`**, attachment sites, contrary, or sake bars |
 | 16 | `already-still-yet.md` | **exists** | already / still / not yet / no longer (`havem` / `hawum` / `helom` / `huvum`); ever / never with **`har`** / **`hal`** | Recycle = all earlier Beginner. Not MIRATIVE / RESIDUE / FORMER / NOTIONAL |
 | 16 | `fault.md` | **exists** | Fault endings on *because* (`thahul` / `thahum` / `thahur`); act in `bl-`, not the person | Recycle = all earlier Beginner. Not iff, only-because, following-sentence **`blarl`** inventory, or CAUSE |
 
@@ -408,7 +408,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 9 | `pronouns.md` | Advanced | — | no Advanced stage | |
 | 9 | `collectives.md` | Intermediate | **exists** | Associate resolution; verb collective; collective `/ɡ/`…**-x**; vocative **-x** | |
 | 9 | `plurality.md` | Advanced | — | no Advanced stage | |
-| 10 | `label-scope.md` | Intermediate | **exists** | Classification packaging; **SAME** endings / open **-m** | Label scope seams are Beginner on `label-seams.md` |
+| 10 | `label-scope.md` | Intermediate | **exists** | Classification packaging; **IDENTITY** endings / open **-m** | Label scope seams are Beginner on `label-seams.md` |
 | 10 | `predication.md` | Advanced | skip | boundaries | |
 | 11 | `joins.md` | Intermediate | skip | — | Rank joins, SHARED after the join, and fence nesting are Intermediate on `rank-joins.md`. Universals and kind-reference are Intermediate on `universals-domains.md` |
 | 11 | `rank-joins.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; SHARED after join; `{ }` islands; fence nesting | Universals/domains are Intermediate on `universals-domains.md`. Sample **decisions**, not every H3 |
@@ -471,7 +471,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 17 | `join-relations.md` | Intermediate | **exists** | Join-relations `gan` / `han` / … (unary `/b/`) | Stance joins are Intermediate on `join-across-roles.md`. Join-act verbs are Intermediate on `join-acts.md` |
 | 17 | `notional-standing.md` | Intermediate | **exists** | **RESIDUE** / **FORMER**; channels as bars; channels after `uom` | already / still / not yet / no longer are Beginner on `already-still-yet.md`. Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder). MIRATIVE is Intermediate on `mirative.md`. NOTIONAL is Intermediate on `notional.md` |
 | 17 | `mirative.md` | Intermediate | **exists** | **MIRATIVE** | Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
-| 17 | `notional.md` | Intermediate | **exists** | **NOTIONAL** **`eyu`** + play holds | Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
+| 17 | `notional.md` | Intermediate | **exists** | **NOTIONAL** **`eyu`** + play follow-up endings | Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
 | 17 | `ability.md` | Intermediate | **exists** | **DECISION** **`oge`** changeability; **ATTEMPT** **`owa`**; PLAN + DECISION stack; fallback **`xen`** | Ability **`xa`/`xe`/`xo`/`xu`** is Beginner on `can-and-cant.md`. Recycle Beginner PLAN. WANT is Intermediate on `want.md`. Join-act **`ven`** only if already taught in this stage |
 | 17 | `want.md` | Intermediate | **exists** | **WANT** **`alo`** lastingness; holder on WANT / PLAN / DECISION | DECISION and ATTEMPT are Intermediate on `ability.md`. Recycle Beginner PLAN and Intermediate holder |
 | 17 | `intention.md` | Advanced | — | no Advanced stage | |
@@ -500,7 +500,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | **-l** / **-m** / **-n** as a *choice* on a citation | `word-endings.md` Beginner |
 | Whole-stem **-r** and role pointers; **`uwe`/`awa`/`aya`/`ume`** | `pronouns.md` Beginner |
 | Associative **-x** | `plurality.md` Beginner |
-| **SAME** `gorel` | `predication.md` Beginner |
+| **IDENTITY** `gorel` | `predication.md` Beginner |
 | Phrase joins, **`zal`/`zam`/`zol`**, negation **`u`** | `joins.md` Beginner |
 | Fill-ask join **-r** (`zar` / `var` / `xar`); polar **`yuol`/`yael`** as the *system* | `questions.md` Beginner |
 | Fill-ask role blanks (`gar`, `har`, `el bar`, `om bar`, `hewem blar`, `thahum blar`) | `fill-ask-jobs.md` Beginner |

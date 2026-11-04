@@ -137,7 +137,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("yaboduxezalan", "y-Abodu-x-Ezalan");
     expectLine("zuzedexogudaxedudan", "z-Uzede-x-Oguda-x-Edudan");
     expectLine("vowuroxol", "v-walk-unable-temporary");
-    expectLine("thuwathem", "th-competence-ought-offered");
+    expectLine("thuwathem", "th-competence-ought-unasked");
     expectLine("zwuzezuyor", "z-episode-agent-speech");
     expectLine("zwuzuvuvul", "z-episode-agent-fight");
     expectLine("zwuzuvuvum", "z-episode-agent-struggle");
@@ -218,7 +218,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("haram", "h-RESIDUE");
     expectLine("helam", "h-FORMER");
     expectLine("thagor", "th-plan-sketch");
-    expectLine("gorel", "g-SAME");
+    expectLine("gorel", "g-IDENTITY");
   });
 
   it("fill-ask zar is z-wh", () => {

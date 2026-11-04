@@ -40,8 +40,7 @@ NOTIONAL takes a [holder](holder.md#holder) the same way a channel does: `theyum
 
 **Compare with:** *walks like a duck* is a real walk; only its manner matches the model ([simile](/relations#similative) `hewem`). *Tells on behalf of Alazun* is a real telling, and Azozon is still the teller ([proxy](/relations#proxy) `hanem`).
 
-### Hold endings (NOTIONAL) {#hold-endings-notional}
-<a id="notional-hold"></a>
+### Follow-up endings (NOTIONAL) {#follow-up-endings-notional}
 
 The ending on NOTIONAL says what the imagining is for: with **-l** you rehearse a scene to prepare for doing it, with **-m** you picture it with no further purpose (the default), and with **-r** you toy with a *what if* for the moment. The three run on the same settled-to-passing scale as [time horizon](/sakes#settled-to-passing), like the endings on [PLAN](/intention#plan-predict). With **-n**, the word is an ordinary [name](proper-names.md#proper-name--n).
 

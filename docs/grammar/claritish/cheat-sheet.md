@@ -86,7 +86,7 @@ Thanks for a thing you own: `g` for `th`, after the noun: *my coat* `gobathal`.
 |---------|-------|-----|------|-----|
 | competence | unmet | for now | over the room (locus) | surging (motion) |
 
-Motion ending: **-l** still, **-m** flowing, **-r** surging.
+Motion ending: **-l** static, **-m** flowing, **-r** surging.
 
 | Locus | Meaning | Locus | Meaning |
 |-------|---------|-------|---------|

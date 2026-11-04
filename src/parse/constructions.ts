@@ -203,7 +203,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "gPackage.asOfWPair": { anchor: "as-of.md#as-of", summary: "as-of pair before an adjective" },
   "gPackage.G": { anchor: "clause.md#adjectives-ɡ", summary: "/ɡ/ adjective" },
   "gPackage.gPackage": { anchor: "left-bound.md#complex-chaining", summary: "adjective on the landmark after a /ɡ/ host" },
-  "gPackage.B": { anchor: "predication.md#identity-same", summary: "hosted /b/ after /ɡ/" },
+  "gPackage.B": { anchor: "predication.md#identity", summary: "hosted /b/ after /ɡ/" },
 
   "sharedAfterJoin.gPackage": { anchor: "joins.md#right-close", summary: "shared /ɡ/ after a join" },
   "sharedAfterJoin.hUnitRule": { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "shared /h/ after a join" },
@@ -259,7 +259,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
     anchor: "sakes.md#met",
     summary: "sake word",
     reader:
-      "A sake word `SAKE-STANCE-ending` (competence, relatedness, pleasure, purpose, …) says how something stands toward that payoff, for the speaker unless a `b-` right after it or a holder says whose. `met` = it serves it, `unmet` = it costs it, `motive` = done for that payoff, `ought` = advice that the act would serve it (`-offered` unasked, `-invited` asked for, `-trial` worth a try); with `ought` the verb is what ought to happen, not what happens. On `g-` after a noun it is about that thing of mine; on `th-` it is about the whole event: `z-X | v-sing | th-pleasure-met-any-term` = X sings, and I enjoy it. With a capital tail (`-INTERNAL-SURGING`, `-AIMED-FLOWING`) it is one feeling: say it with the plain English emotion word (unmet competence = anxious or frustrated, unmet relatedness aimed at a `b-` person = irritated with them, met competence = proud or confident), not piece by piece. `[w-FEELING | g-stimulus]` after a noun = that feeling about the noun.",
+      "A sake word `SAKE-STANCE-ending` (competence, relatedness, pleasure, purpose, …) says how something stands toward that payoff, for the speaker unless a `b-` right after it or a holder says whose. `met` = it serves it, `unmet` = it costs it, `motive` = done for that payoff, `ought` = advice that the act would serve it (`-unasked` not asked for, `-invited` asked for, `-tryout` worth a try); with `ought` the verb is what ought to happen, not what happens. On `g-` after a noun it is about that thing of mine; on `th-` it is about the whole event: `z-X | v-sing | th-pleasure-met-any-term` = X sings, and I enjoy it. With a capital tail (`-INTERNAL-SURGING`, `-AIMED-FLOWING`) it is one feeling: say it with the plain English emotion word (unmet competence = anxious or frustrated, unmet relatedness aimed at a `b-` person = irritated with them, met competence = proud or confident), not piece by piece. `[w-FEELING | g-stimulus]` after a noun = that feeling about the noun.",
   },
   scope: { anchor: "label-seams.md#label-scope", summary: "label scope" },
   hookPrefix: {
@@ -470,8 +470,8 @@ export const SAKE_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vo
   "ending.u.m": { anchor: "sakes.md#unmet-thu-detracts-from-the-sake", summary: "unmet -m" },
   "ending.u.r": { anchor: "sakes.md#unmet-thu-detracts-from-the-sake", summary: "unmet -r" },
   "ending.e.l": { anchor: "ought-for-a-sake.md#prescription-the-ought-this-act-for-this-sake", summary: "invited prescription" },
-  "ending.e.m": { anchor: "ought-for-a-sake.md#prescription-the-ought-this-act-for-this-sake", summary: "offered prescription" },
-  "ending.e.r": { anchor: "ought-for-a-sake.md#prescription-the-ought-this-act-for-this-sake", summary: "trial prescription" },
+  "ending.e.m": { anchor: "ought-for-a-sake.md#prescription-the-ought-this-act-for-this-sake", summary: "unasked prescription" },
+  "ending.e.r": { anchor: "ought-for-a-sake.md#prescription-the-ought-this-act-for-this-sake", summary: "tryout prescription" },
   "ending.o.l": { anchor: "prescription.md#motive-tho-time-horizon", summary: "motive standing -l" },
   "ending.o.m": { anchor: "prescription.md#motive-tho-time-horizon", summary: "motive standing -m" },
   "ending.o.r": { anchor: "prescription.md#motive-tho-time-horizon", summary: "motive standing -r" },

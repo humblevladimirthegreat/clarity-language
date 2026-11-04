@@ -54,14 +54,14 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 | 25 | Slowly she looked around. | `huzezam zalazun thevum vezebem el bual.` | h-slow \| z-Alazun \| th-MEMORY \| v-look \| [at \| b-everything] | covered |
 | 26 | Go away! | `yol vavobolum.` | y-command \| v-go-recede | covered |
 | 27 | Let's go! | `yom zayan vavobol.` | y-request \| z-interlocutors \| v-go | covered |
-| 28 | You should go. | `zawan vavobol thudathem.` | z-listener \| v-go \| th-sake-ought-offered | covered |
+| 28 | You should go. | `zawan vavobol thudathem.` | z-listener \| v-go \| th-sake-ought-unasked | covered |
 | 29 | I will be happy to go. | `zuwen thagom vavobol thodethamam.` | z-speaker \| th-plan-itinerary \| v-go \| th-pleasure-met-any-term-INTERNAL-FLOWING | covered |
 | 30 | He will arrive soon. | `zazozon theyom blrawum vevorol.` | z-Azozon \| [th-CLUES \| b-+-e-.about] \| v-arrival | covered |
 | 31 | The baby's ball has rolled away. | `zobovel om beboyol haram vuwovolum.` | `[z-ball \| [used-by \| b-baby]] \| h-RESIDUE \| v-wheel-recede` | covered |
 | 32 | The two boys are working together. | `zoboyolx gradol thugem vuzubamx.` | [z-boy-x \| g-two] \| th-LIVE \| v-effort-x | covered |
 | 33 | This mist will probably clear away. | `zovulul em buwen thral theyom blral vememulum.` | `[z-fog \| [near \| b-speaker]] \| th-likely \| [th-CLUES \| bl-later] \| v-melt-recede` | covered |
 | 34 | Lovely flowers are growing everywhere. | `zevelalx gahelam thugem velom el bual.` | [z-flower-x \| g-beauty] \| th-LIVE \| v-growth \| [at \| b-everything] | covered |
-| 35 | We should eat more slowly. | `zayan thubom zol huzezam vagedal thudathem.` | [z-interlocutors \| th-PATTERN \| z-rank/more \| h-slow] \| v-eat \| th-sake-ought-offered | covered |
+| 35 | We should eat more slowly. | `zayan thubom zol huzezam vagedal thudathem.` | [z-interlocutors \| th-PATTERN \| z-rank/more \| h-slow] \| v-eat \| th-sake-ought-unasked | covered |
 | 36 | You have come too soon. | `zawan thudatham zuol bral vavobol oel buwen.` | [z-listener \| th-sake-met-any-term \| z-rank/less \| b-later] \| v-go \| [toward \| b-speaker] | covered |
 | 37 | You must write more neatly. | `zawan thubom zol hozebum varuyol hwuvom.` | [z-listener \| th-PATTERN \| z-rank/more \| h-cleanliness] \| v-write \| h-episode-event-REQUIRE-said | covered |
 | 38 | Directly opposite stands a wonderful palace. | `honuhothayan zugahul gemem vuzuvel.` | h-north-th-interlocutors \| [z-castle \| g-amazement] \| v-stand | covered |
@@ -171,7 +171,7 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 | 142 | Jack seized a handful of pebbles and threw them into the lake. | `zahelan thevum dahebal gadam blarolelx gamezem vovebel xan zahelar darolerx vobovol al begavom.` | [z-Ahelan \| th-MEMORY \| [d-hand \| [g-contents \| [b-rock-x \| g-small]]] \| v-fist \| x-and-then \| z-←Ahelan \| d-←rock-x-x \| v-throw \| [in \| b-lake]] | covered |
 | 143 | This cottage stood on a low hill, at some distance from the village. | `zegahar theyum vuzuvel ael bamahul gamezem um bahaham.` | z-←cottage \| th-NOTIONAL \| v-stand \| [on \| [b-mountain \| g-small]] \| [away-from \| b-locality] | covered |
 | 144 | On a fine summer evening, the two old people were sitting outside the door of their cottage. | `el badurul gahelam gerom blazedam zeyelx gradol galayom theyum vehohel el bohel gobom blegahal om beyerx.` | `[at \| [b-dusk \| g-beauty \| [g-while \| bl-summer]]] \| [z-person-x \| g-two \| g-elderhood] \| th-NOTIONAL \| v-sit \| [at \| [b-door \| [g-part-of \| bl-cottage] \| [used-by \| b-←person-x-x]]]` | covered |
-| 145 | Our bird's name is Jacko. | `zebezel om buwenx. zebezer gorel blahelan.` | `[z-bird \| [used-by \| b-speaker-x]] . z-←bird \| [g-SAME \| bl-Ahelan]` | covered |
+| 145 | Our bird's name is Jacko. | `zebezel om buwenx. zebezer gorel blahelan.` | `[z-bird \| [used-by \| b-speaker-x]] . z-←bird \| [g-IDENTITY \| bl-Ahelan]` | covered |
 | 146 | The river knows the way to the sea. | `zowular dorahol oel bohalal vanam.` | z-←drinking-water \| d-road \| [toward \| b-ocean] \| v-knowledge | covered |
 | 147 | The boat sails away, like a bird on the wing. | `zonavar thugem vonavalum hewem blebezel gwuzewobol.` | `z-←boat \| th-LIVE \| v-boat-recede \| [h-like \| [bl-bird \| g-episode-agent-wing]]` | covered |
 | 148 | They looked cautiously about, but saw nothing. | `zeyelx thevum huyulom vezebem el bual. xugohum zeyerx dal vayebel.` | z-person-x \| th-MEMORY \| h-caution \| v-look \| [at \| b-everything] . x-but \| z-←person-x-x \| d-none \| v-see | covered |

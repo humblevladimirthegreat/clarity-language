@@ -9,7 +9,7 @@ band: beginner
 
 When English puts *should* / *ought to* on **doing** something for a named sake (*Ahelan ought to sing; it's good for their health*), put a `/th/` word on the clause: sake root, mid-word **`th`**, **`e`**, then an ending. **`e`** is how much of the sake is in: you only have the advice, not the act yet. The clause's verb names the act that ought to count toward the sake. The sentence then says the act *ought* to happen; it does not report that the act is already happening.
 
-The ending says why you think the move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the sake. Use **-r** for a trial: the move is worth trying to see whether it serves the sake, not a settled recommendation. These endings describe why the move is offered and what it aims at, not whether it succeeds. How firmly you put the act on the listener is a separate choice, made by the speech-act word on `/y/` (**`yol`** / **`yom`**, **`yal`** / **`yam`**). If none of the three reasons applies, drop **`the`**.
+The ending says why you think the move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the sake. Use **-r** for a tryout: the move is worth trying to see whether it serves the sake, not a settled recommendation. These endings describe why you make the move and what it aims at, not whether it succeeds. How firmly you put the act on the listener is a separate choice, made by the speech-act word on `/y/` (**`yol`** / **`yom`**, **`yal`** / **`yam`**). If none of the three reasons applies, drop **`the`**.
 
 **Compare with:** a [command](speech-moves.md#speech-act-beginner) **`yol`** tells someone to act outright, without naming the sake or why the move is wanted. **`the`** is an *ought* tied to a sake (*ought to, to advance this sake*), with the reason on the ending.
 
@@ -17,14 +17,14 @@ The ending says why you think the move is welcome. Use **-l** when the person in
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…thel` | the person invited this kind of move | *invited* | **-l** ≈ lasting: their invitation stands |
-| `…them` | an unsolicited offer meant to serve the sake | *offered* | **-m** ≈ open offer |
-| `…ther` | a move worth trying, to see whether it serves the sake | *worth a try* | **-r** ≈ right now (a trial run) |
+| `…them` | an unsolicited offer meant to serve the sake | *unasked* | **-m** ≈ open offer |
+| `…ther` | a move worth trying, to see whether it serves the sake | *worth a try* | **-r** ≈ right now (a tryout) |
 
 A sake word with no `/b/` is about **your** sake, so advice for the other person's own good names them in a `bl-` word right after the sake word. In the same sentence, that is the [themself](pronouns.md#themself) pointer **`bwuzor`**. The `/b/` says whose stake the act serves, not why they would do it.
 
 > `zazozon vezuyol thawethem blwuzor.`
 >
-> z-Azozon | v-tell | [th-relatedness-ought-offered | bl-←episode-agent.self]
+> z-Azozon | v-tell | [th-relatedness-ought-unasked | bl-←episode-agent.self]
 >
 > "Azozon ought to talk; it would help them feel connected." (unasked advice)
 
@@ -36,7 +36,7 @@ A sake word with no `/b/` is about **your** sake, so advice for the other person
 
 > `zalazun vabuyol thawether blwuzor.`
 >
-> z-Alazun | v-bow | [th-relatedness-ought-trial | bl-←episode-agent.self]
+> z-Alazun | v-bow | [th-relatedness-ought-tryout | bl-←episode-agent.self]
 >
 > "Alazun could try bowing, to see whether it helps them feel connected."
 
@@ -72,7 +72,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 ::: details Show answer
 `zahelan vehohel thobathem blwuzor.`
 
-z-Ahelan | v-sit | [th-physical-ought-offered | bl-←episode-agent.self]
+z-Ahelan | v-sit | [th-physical-ought-unasked | bl-←episode-agent.self]
 :::
 
 **2.** *Ahelan ought to sing; it's good for their health.* (Ahelan asked for advice)
@@ -88,7 +88,7 @@ z-Ahelan | v-sing | [th-physical-ought-invited | bl-←episode-agent.self]
 ::: details Show answer
 `zalazun vuguyol thobather blwuzor.`
 
-z-Alazun | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
+z-Alazun | v-cook | [th-physical-ought-tryout | bl-←episode-agent.self]
 :::
 
 #### Ageben → English {#beginner-ageben-to-english}
@@ -96,7 +96,7 @@ z-Alazun | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
 **1.** `zazozon vezuyol thawethem blwuzor.`
 
 ::: details Show answer
-z-Azozon | v-tell | [th-relatedness-ought-offered | bl-←episode-agent.self]
+z-Azozon | v-tell | [th-relatedness-ought-unasked | bl-←episode-agent.self]
 
 *Azozon ought to talk; it would help them feel connected.* (unasked advice)
 :::
@@ -112,7 +112,7 @@ z-Alazun | v-sing | [th-physical-ought-invited | bl-←episode-agent.self]
 **3.** `zalazun vuguyol thobather blwuzor.`
 
 ::: details Show answer
-z-Alazun | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
+z-Alazun | v-cook | [th-physical-ought-tryout | bl-←episode-agent.self]
 
 *Alazun could try cooking, to see whether it's good for their health.*
 :::
@@ -124,7 +124,7 @@ z-Alazun | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
 ::: details Show answer
 `zahelan vehohel thobathem blwuzor.`
 
-z-Ahelan | v-sit | [th-physical-ought-offered | bl-←episode-agent.self]
+z-Ahelan | v-sit | [th-physical-ought-unasked | bl-←episode-agent.self]
 
 **-m** is an unasked offer; **-l** is for a move they invited.
 :::
@@ -136,7 +136,7 @@ z-Ahelan | v-sit | [th-physical-ought-offered | bl-←episode-agent.self]
 ::: details Show answer
 `zahelan vehohel thobathem blwuzor.`
 
-z-Ahelan | v-sit | [th-physical-ought-offered | bl-←episode-agent.self]
+z-Ahelan | v-sit | [th-physical-ought-unasked | bl-←episode-agent.self]
 
 A sake word with no `/b/` is about **your** sake; **`blwuzor`** names Ahelan's own.
 :::

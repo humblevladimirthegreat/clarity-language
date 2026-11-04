@@ -378,9 +378,9 @@ z-Alazun | g-angry-th-episode
 ::: details Show answer
 `zahelan vuguyol thobather blwuzor.`
 
-z-Ahelan | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
+z-Ahelan | v-cook | [th-physical-ought-tryout | bl-←episode-agent.self]
 
-**-r** is a trial; **`thobathem`** would be unasked advice, not a try.
+**-r** is a tryout; **`thobathem`** would be unasked advice, not a try.
 
 **Rule:** [Ought for a sake](ought-for-a-sake.md#sake-force)
 :::

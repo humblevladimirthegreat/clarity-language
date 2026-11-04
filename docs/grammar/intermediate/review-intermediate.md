@@ -348,7 +348,7 @@ z-Alazun | th-NOTIONAL | v-walk
 
 **-m** pictures the walking with no further purpose; **`theyul`** would be a rehearsal, to prepare for walking.
 
-**Rule:** [Hold endings (NOTIONAL)](notional.md#hold-endings-notional)
+**Rule:** [Follow-up endings (NOTIONAL)](notional.md#follow-up-endings-notional)
 :::
 
 **10.** *Anyway, Ahelan walks.* `er zahelan vowurol.` or `el zahelan vowurol.`

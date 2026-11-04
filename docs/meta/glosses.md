@@ -167,11 +167,11 @@ The sentence drops these. A [note](#note-required) carries one only when it is r
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
 | Join packaging (open `zam` vs closed `zal`, exclusive `del`, fence shape) | Plain *and / or*; no “exactly ono”, no open-list footnotes |
 | Sense-picking **-l / -m / -n** | Never (already omitted from morph when they only pick sense) |
-| Values **time horizon / standing / invitation / changeability** | Keep only what changes English (*can't* vs unmet sake as content); drop “(motive, soft standing)”, … Prescription **`the`**: loose free keeps the warrant when it is the point (*invited* / *offered* / *worth a try*) — not *must* / *should* / *could* as a force grade |
+| Values **time horizon / standing / invitation / changeability** | Keep only what changes English (*can't* vs unmet sake as content); drop “(motive, soft standing)”, … Prescription **`the`**: loose free keeps the warrant when it is the point (*invited* / *unasked* / *worth a try*) — not *must* / *should* / *could* as a force grade |
 | Emotion compose (locus / motion tail) | Ordinary emotion English (*we're glad*), not “pleasure met · internal” |
 | Evidential **tags** | Fold in only if English wants it (*I hear…*, *usually*); else omit, or [note](#note-required) when required |
 | Span fence labels | Quotes / parentheses; no “Cite:” / “aside:” |
-| Role / SAME scaffolding | *the speaker* / *is* — not “agent of speech” / “identical to” |
+| Role / IDENTITY scaffolding | *the speaker* / *is* — not “agent of speech” / “identical to” |
 | Associative **-x** spelled out | *you all* / *they* when English is enough |
 | Numbered-alternative pedagogy | *First, …* / *Finally, …* is fine; drop “problem #1” metalabel unless teaching numbering |
 
@@ -214,7 +214,7 @@ Published strings share one phonological root, but **concrete**, **abstract**, a
 
 Same English label for `zuwem` and `zuwen` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Ageben line and from [word-endings.md](/word-endings). The gloss’s job is the **sense**, not a second orthography.
 
-**Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Ageben letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `en` / …).
+**Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `IDENTITY`, `plan`, `DECISION`, …). The Ageben letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `en` / …).
 
 **Special pronouns** ([pronouns.md](/pronouns)): `zuwen` / `zawan` / `zayan` / `zumen` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. The topic pronoun and the generic pronoun gloss in capitals on `/z/` `/d/` `/b/` and as a holder (`zalen` → `z-TOPIC`, `zeyen` → `z-ONE`, `theyomalen` → `th-CLUES-TOPIC`); on any other slot they are ordinary names. A topic word glosses as its noun (`xazozon` → `x-Azozon`, `xazozor` → `x-←Azozon`), and `hehugom` as `h-as-for`. **Stand-ins** (`darl` / `derl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
 
@@ -283,9 +283,9 @@ A dependent sits next to the word it modifies, in Ageben order. Nesting shows at
 | Noun + trailing `/ɡ/` | `[z-dog \| g-blue]` |
 | `gl-` adjective + noun | `[gl-blue \| z-dog]` |
 | `/w/` + its host | `[w-loud \| g-blue]` |
-| Host + hosted `/b/` | `[g-SAME \| b-Alazun]` |
+| Host + hosted `/b/` | `[g-IDENTITY \| b-Alazun]` |
 | Hook + extra noun | `[in \| b-house]` |
-| Adjective on the extra noun | `[z-dog \| [g-SAME \| [b-Azozon \| g-tall]]]` |
+| Adjective on the extra noun | `[z-dog \| [g-IDENTITY \| [b-Azozon \| g-tall]]]` |
 | Join fence (join last) | `[d-tea \| d-coffee \| d-or]` |
 | Nested fences | `[[d-tea \| d-coffee \| d-or] \| d-water \| d-and]` |
 | Shared `/ɡ/` after a join | `[z-Azozon \| z-Alazun \| z-and \| g-sleepy]` |
@@ -339,7 +339,7 @@ Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **
 ### Sense labels
 
 - Prefer lexicon / overlay wording when short (`tea`, `speaker`, `witnessed`). Packed role English overrides that wording for the listed role only (`v-see` vs `z-eye`).
-- Prefer **stable tags** for closed inventory (uppercase OK when the docs already use them): `MAY`, `DECISION`, `SAME`, `MEMORY`, `LIVE`, `ABIL`.
+- Prefer **stable tags** for closed inventory (uppercase OK when the docs already use them): `MAY`, `DECISION`, `IDENTITY`, `MEMORY`, `LIVE`, `ABIL`.
 - Verb senses: [uninflected lemma](#english-lemma) (`walk`, not `walking`).
 - Do **not** use arrows (`→`) or etymology chains.
 - Do **not** put PoS names in the label (`noun`, `proper`). Named reference is the English name, not the word *proper*.
@@ -500,7 +500,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `thevum` | `th-MEMORY` | *per memory* |
 | `thugem` | `th-LIVE` | *from the scene* |
 | `thagor` | `th-plan-sketch` | *as a sketch plan* |
-| `gorel` | `g-SAME` | *identical to* (identity host) |
+| `gorel` | `g-IDENTITY` | *identical to* (identity host) |
 | `ven` | `v-choose` | *chooses (exactly one)* |
 
 ### Dialogue turn (morph + loose free)

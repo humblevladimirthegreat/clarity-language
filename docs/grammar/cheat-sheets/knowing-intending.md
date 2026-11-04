@@ -125,18 +125,18 @@ MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words
 | `themel` | mirative mood overturning a firm expectation | [Mirative (themem)](/mirative#mirative) | I |
 | `themem` | mirative mood (newly found out and not expected) | [Mirative (themem)](/mirative#mirative) | I |
 | `themer` | mirative mood against a loose expectation | [Mirative (themem)](/mirative#mirative) | I |
-| `theyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Hold endings (NOTIONAL)](/notional#hold-endings-notional) | I |
-| `theyum` | notional mood default hold (imagining a scene without a further purpose) | [Notional (as-if framing)](/notional#notional-as-if-framing) | I |
-| `theyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Hold endings (NOTIONAL)](/notional#hold-endings-notional) | I |
-| `thomal` | may mood find-out hold (I'll / let's find out) | [Hold endings (MAY)](/knowing#hold-endings-may) | B |
+| `theyul` | notional mood rehearsal follow-up (practicing a possible scene to prepare for action) | [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) | I |
+| `theyum` | notional mood default follow-up (imagining a scene without a further purpose) | [Notional (as-if framing)](/notional#notional-as-if-framing) | I |
+| `theyur` | notional mood suppose follow-up (toying with a possibility or assumption for now) | [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) | I |
+| `thomal` | may mood find-out follow-up (I'll / let's find out) | [Follow-up endings (MAY)](/knowing#follow-up-endings-may) | B |
 | `thomam` | may mood (could be; default) | [MAY](/knowing#may) | B |
-| `thomar` | may mood who-knows hold (leave unsettled; may never know) | [Hold endings (MAY)](/knowing#hold-endings-may) | B |
+| `thomar` | may mood who-knows follow-up (leave unsettled; may never know) | [Follow-up endings (MAY)](/knowing#follow-up-endings-may) | B |
 <!-- /generated -->
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [MAY](/knowing#may) | `zalazun thomam vudurul dahelan.` | *Alazun may be leaving Ahelan.* | B |
-| [MAY, ask to find out](/knowing#may-hold) | `yel zazozon vabuvul thomal dalazun.` | *Might Azozon be punching Alazun? let's find out.* | B |
+| [MAY, ask to find out](/knowing#follow-up-endings-may) | `yel zazozon vabuvul thomal dalazun.` | *Might Azozon be punching Alazun? let's find out.* | B |
 | [RESIDUE](/notional-standing#residue-and-former-climate) | `zalazun haram vudurul.` | *Alazun has left and is still gone.* | I |
 | [RESIDUE with a channel](/notional-standing#residue-and-former-climate) | `zalazun thevum haram vudurul.` | *I remember Alazun leaving, and Alazun is still gone.* | I |
 | [FORMER after the verb](/notional-standing#residue-and-former-climate) | `zazozon hual vozuyel helam.` | *Azozon always used to sing.* | I |
