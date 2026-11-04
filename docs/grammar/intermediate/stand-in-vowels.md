@@ -25,9 +25,9 @@ You may leave out the dependent clause's `/z/` only when all of these hold:
 2. It fills the outer sentence's `/d/` slot.
 3. The outer sentence has one plain `/b/` (the person told).
 
-The missing subject is then that `/b/`. It is never the listener and never the outer `/z/`. In every other case, write the inner `/z/`: after **`darl`** / **`derl`**, after any pole (**`blarl`** / **`blurl`**), and when the outer sentence has no plain `/b/` (*wants to sit*, *tries to sit*). When the doer is someone other than that `/b/`, write them too, using resume **-r** if the name would repeat.
+The missing subject is then that `/b/`. It is never the listener and never the outer `/z/`. In every other case, write the inner `/z/`: after **`darl`** / **`derl`**, after any hinge (**`blarl`** / **`blurl`**), and when the outer sentence has no plain `/b/` (*wants to sit*, *tries to sit*). When the doer is someone other than that `/b/`, write them too, using resume **-r** if the name would repeat.
 
-After a pole, the dependent is **`blarl`** (or **`blarm`** for gist): *because* / *if* / *although* / *so that* all use it. There are two exceptions, both with **`blurl`**: purpose-not **`hovam blurl`** (*so that … not*) and **`thohem blurl`** (*unless*). Stand-ins never take `/x/`; clause *and* is `xal` / `xan`.
+After a hinge, the dependent is **`blarl`** (or **`blarm`** for gist): *because* / *if* / *although* / *so that* all use it. There are two exceptions, both with **`blurl`**: purpose-not **`hovam blurl`** (*so that … not*) and **`thohem blurl`** (*unless*). Stand-ins never take `/x/`; clause *and* is `xal` / `xan`.
 
 > `zazozon vezuyol balazun dorl vehohel.`
 >
@@ -61,7 +61,7 @@ When *so that* aims at keeping an outcome off, keep **`hovam`** and type `/b/` w
 >
 > "Azozon walks so as not to sit."
 
-English *unless* is *if … not*: keep the *if* pole **`thohem`** and type `/b/` with **`blurl`**. The following sentence is the condition that must **not** hold.
+English *unless* is *if … not*: keep the *if* hinge **`thohem`** and type `/b/` with **`blurl`**. The following sentence is the condition that must **not** hold.
 
 > `zazozon vowurol thohem blurl zalazun vezuvel.`
 >
@@ -109,7 +109,7 @@ The vowel still says what kind of content it is, and the word stands for the mos
 
 The content can be anything a sentence says: a verbless sentence, a denied event, or several sentences chained with `/x/`. A [resume](/pronouns#resume-r) **-r** picks up one word; **`-rth`** picks up what was said.
 
-Other role letters work the same way as the forward stand-in: **`blarth`** after a pole (*because of that*) or after [*like*](/relations#similative) **`hewem`** (*like that*), **`zarth`** as the subject. Stand-ins fill `/z/` `/d/` `/b/` only; there is no stand-in on `/ɡ/` `/h/` `/w/` `/th/`. *Such* is [whole-stem **-r**](/pronouns#resume-r), and *then* or *so* is a pole + **`blarth`**.
+Other role letters work the same way as the forward stand-in: **`blarth`** after a hinge (*because of that*) or after [*like*](/relations#similative) **`hewem`** (*like that*), **`zarth`** as the subject. Stand-ins fill `/z/` `/d/` `/b/` only; there is no stand-in on `/ɡ/` `/h/` `/w/` `/th/`. *Such* is [whole-stem **-r**](/pronouns#resume-r), and *then* or *so* is a hinge + **`blarth`**.
 
 ### Practice {#intermediate-practice}
 

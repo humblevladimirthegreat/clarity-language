@@ -19,7 +19,7 @@ A hook + `/b/` right after a landmark (the `/b/` of another extra, or of a word 
 
 Several extra-noun hooks on one clause are several extras. To keep the second one on the clause, put a non-`/b/` word between the first landmark and the next hook. Extra-noun **-n** makes the hook and its landmark a name, as on same-role hooks; the landmark keeps its own ending.
 
-With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the general setting, not the exact contact, source, tool, or opponent. It is not a second copy of the same extra.
+With an extra-noun hook, **-m** makes a **zone extra**: the landmark is the general setting, not the exact contact, source, tool, or opponent. It is not a second copy of the same extra.
 
 <!-- cheat-sheet: joins-hooks -->
 | **-l** | English | **-m** | English | Cue |
@@ -33,7 +33,7 @@ With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the gen
 | **`uel`** | *through* | **`uem`** | *by way of* | except via one path; **-m** that path as the setting |
 | **`ol`** | *for* | **`om`** | *used by* (*B's*) | rather this aim; **-m** what was meant for B is now in B's use |
 | **`aol`** | *using* | **`aom`** | *by* | rather the means; **-m** the channel |
-| **`uol`** | *against* | **`uom`** | *contrary to* | instead none of the landmark as opponent; **-m** the opposing frame |
+| **`uol`** | *against* | **`uom`** | *contrary to* | instead none of the landmark as opponent; **-m** the opposing zone |
 
 > `zazozon vehohel ael behohel.`
 >

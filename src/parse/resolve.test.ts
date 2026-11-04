@@ -191,7 +191,7 @@ describe("resolve — content-rule pointers (role-scope.md#content-of-the-event)
     assert.deepEqual(pointers("zazozon vowurol. dwuher vayebel."), ["dwuher→vowurol"]);
   });
 
-  it("h skips restrictors, time poles, and say words", () => {
+  it("h skips restrictors, time hinges, and say words", () => {
     assert.deepEqual(pointers("zazozon vowurol hual. dwuher vayebel."), ["dwuher→vowurol"]);
     assert.deepEqual(pointers("zazozon vowurol hwuvam. dwuher vayebel."), ["dwuher→vowurol"]);
   });
@@ -504,7 +504,7 @@ describe("resolve — SHARED (comparatives.md / numbers.md)", () => {
     assert.equal(shared[0]!.role, "equative");
   });
 
-  it("reads sequence oe with two numbers + SHARED as a scale, not a range", () => {
+  it("reads route oe with two numbers + SHARED as a scale, not a range", () => {
     const { shared } = resolveOf("z+3 z+5 zaol gumedul.");
     assert.equal(shared[0]!.role, "scale");
     assert.equal(shared[0]!.shared.word.raw, "gumedul");

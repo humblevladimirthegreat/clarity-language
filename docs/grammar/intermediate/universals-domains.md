@@ -96,7 +96,7 @@ Open **`zuam`** makes the same claim but leaves the list of exceptions open, the
 >
 > "A cat walks. The cat is sleepy."
 
-In the sentence after a [`blarl`](/dependents#poles) on a general claim, a resume of the kind means **the same member**, one at a time: `zual gogozel vezuvel thohem blarl zogozer guzemel.` is *every cat sleeps if it is sleepy*, each cat with its own sleepiness.
+In the sentence after a [`blarl`](/dependents#hinges) on a general claim, a resume of the kind means **the same member**, one at a time: `zual gogozel vezuvel thohem blarl zogozer guzemel.` is *every cat sleeps if it is sleepy*, each cat with its own sleepiness.
 
 With **`zul`** the two readings say the same thing: `zul godozel gubulel.` is both *no dog is black* and *there is no black dog*.
 

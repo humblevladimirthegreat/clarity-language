@@ -12,7 +12,7 @@ You already pick [LIVE or MEMORY](/live-and-memory#live-vs-memory) when the clai
 
 The seven channels come in four kinds. Two are **direct** (already taught): you sensed it yourself, now (LIVE) or earlier (MEMORY). Three are **reasoned**: you worked it out from similar cases (PATTERN), from clues about this case (CLUES), or from premises it must follow from (DEDUCED). One is **received**: someone else said or wrote it (REPORTED). One is **internal**: a sense you cannot fully spell out (INTUITION).
 
-The other channels do not place the event in time. When a reasoned or reported event happened at another time, add a when-frame: [*before* / *after* / *while*](/dependents#time-poles), a clock or date, or a signed offset on the channel. A claim that something **will** happen is a forecast: a channel plus a later offset, so a forecast always says how you know.
+The other channels do not place the event in time. When a reasoned or reported event happened at another time, add a when-frame: [*before* / *after* / *while*](/dependents#time-hinges), a clock or date, or a signed offset on the channel. A claim that something **will** happen is a forecast: a channel plus a later offset, so a forecast always says how you know.
 
 **For *could be* with nothing behind it, use:** [MAY](/knowing#may). When English *I think* means you have reasons (you worked it out, you heard it, you sense it), pick the channel for those reasons instead.
 
@@ -279,7 +279,7 @@ English *it follows that*, *P, so Q* and *by deduction* claim more than good evi
 >
 > "Azozon teaches, since every teacher teaches and Azozon is a teacher."
 
-To claim only that the conclusion follows, put a [pole](iff-fault.md#only-because) between the channel and **`blarl`**. The pole is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
+To claim only that the conclusion follows, put a [hinge](iff-fault.md#only-because) between the channel and **`blarl`**. The hinge is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
 
 > `zazozon veduyol thanam thohem blarl zual gwozeduyol veduyol xam zazozon gwozeduyol.`
 >

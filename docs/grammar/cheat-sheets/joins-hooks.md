@@ -19,7 +19,7 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | **o** | rank: first matters most | [*or rather*](/hooks#rather) | *for* / *used by* |
 | **e** | *pick one* | [*instead*](/hooks#instead) | *at* / *near* |
 | **u** | *not* / *neither* / *none of* | [*except*](/hooks#except) | *from* / *away from* |
-| **ao** | [in order](/rank-joins#sequence-ao): *A, then B* | | [*using* / *by*](/extra-noun-hooks#extra-noun-intermediate) |
+| **ao** | [in order](/rank-joins#route-ao): *A, then B* | | [*using* / *by*](/extra-noun-hooks#extra-noun-intermediate) |
 | **ua** | [*everything but*](/joins#everything-ua); alone *everything* | [range](/ordered-ranges#ranges): strictly between | *out of* / *out from among* |
 | **uo** | [rank reversed](/rank-joins#invert-u-stacks): last first | [range](/ordered-ranges#ranges): outside *A–B* | *against* / *contrary to* |
 | **ae** | [*and/or*](/rank-joins#exclusivity-and-denying-a-whole-list) (at least one) | | *on* / *over* |
@@ -36,7 +36,7 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | **-m** | [open](/joins#and-lists-a): *(and possibly more)*; [alone](/joins#standalone-phrase), *as far as I know* | B |
 | **-r** | [one unnamed member](/joins#unspecified-member-r-phrase) (*something*, *someone*); one vowel only | B |
 | **-rx** | [an unnamed group](/joins#unspecified-member-r-phrase) (`zarx` *some ones*); `/z/` `/d/` `/b/` only | B |
-| **-n** | `/z/` `/d/` `/b/`: [a named list](/join-limits#named-list); `/x/`: [sequence](/clause-sequence#clause-sequence); `/v/`: [join-act verb](/join-acts#join-act-verbs); `/ɡ/` `/h/`: [join-relation](/join-relations#join-relations) | I–A |
+| **-n** | `/z/` `/d/` `/b/`: [a named list](/join-limits#named-list); `/x/`: [sequence](/clause-sequence#clause-sequence); `/v/`: [list verb](/list-verbs#list-verbs); `/ɡ/` `/h/`: [join-relation](/join-relations#join-relations) | I–A |
 
 <PageBreak />
 
@@ -99,7 +99,7 @@ A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `x
 
 ## Joins across roles {#across-roles}
 
-The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, they become [join-act verbs](/join-acts#join-act-verbs), [join-relations](/join-relations#join-relations) (always followed by one `/b/`), and [clause sequence](/clause-sequence#clause-sequence) words. Sequence is Beginner; join-act and join-relations are Intermediate.
+The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, they become [list verbs](/list-verbs#list-verbs), [join-relations](/join-relations#join-relations) (always followed by one `/b/`), and [clause sequence](/clause-sequence#clause-sequence) words. Sequence is Beginner; list verb and join-relations are Intermediate.
 
 | Vowel | Verb (`/v/` + object) | Relation (`/ɡ/` / `/h/` + `/b/`) | Between clauses (`/x/`) |
 |-------|------------------------|----------------------------------|--------------------------|
@@ -162,7 +162,7 @@ More: [parallel chains](/discourse-hooks#parallel-chains) `zuvayal am zazozon ul
 
 ### Extra nouns {#extra-nouns}
 
-Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting. **-r** drops the landmark and [points back](/discourse-hooks#hook-resume). Fused onto a citation, the hook makes a [verb](/hook-compounds#hook-compounds) (shown from *walk*). Its vowels before **`x`** (or **`mx`** for the **-m** frame) and a stem make a [hook prefix](/hook-compounds#hook-prefixes). With an [abstract landmark](/abstract-landmarks#abstract-landmarks) the hook keeps its picture: `al babowum` *in a crisis*, `ual baram` *out of debt*.
+Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting. **-r** drops the landmark and [points back](/discourse-hooks#hook-resume). Fused onto a citation, the hook makes a [verb](/hook-compounds#hook-compounds) (shown from *walk*). Its vowels before **`x`** (or **`mx`** for the **-m** zone) and a stem make a [hook prefix](/hook-compounds#hook-prefixes). With an [abstract landmark](/abstract-landmarks#abstract-landmarks) the hook keeps its picture: `al babowum` *in a crisis*, `ual baram` *out of debt*.
 
 | **-l** | **-m** | **-r** | Fused **-l** | Prefix **-l** | Prefix **-m** |
 |--------|--------|--------|--------------|---------------|---------------|
@@ -183,7 +183,7 @@ Stage: one-vowel extra-noun **-l** (`al` `el` `ul` `ol`) Beginner on [hooks](/ho
 
 ### Hooked joins {#hooked-joins}
 
-Role letter, the hook's vowels (**`m`** for its frame, **`r`** to point back), **`x`**, then a join; the landmark follows as a `bl-` word and bounds who counts. On `/h/` the join is a bare restrictor and the landmark a time. All Advanced.
+Role letter, the hook's vowels (**`m`** for its zone, **`r`** to point back), **`x`**, then a join; the landmark follows as a `bl-` word and bounds who counts. On `/h/` the join is a bare restrictor and the landmark a time. All Advanced.
 
 | Ageben | English |
 |--------|---------|
@@ -225,7 +225,7 @@ Role letter, the hook's vowels (**`m`** for its frame, **`r`** to point back), *
 | `zexual blohehal vezuvel` *everyone at the house sleeps* ([who counts](/hooked-joins#hooked-joins)) | | `zual vezuvel el bohehal` *everyone sleeps at the house* (where it happens) |
 | `zuhunam gan blazozon` *a team including Azozon* ([join-relation](/join-relations#join-relations)) | | `zuhunam al zazozon` *the team, including Azozon* (afterthought) |
 | `zazozon zahelan zal` *the two of them* ([vs a range](/ordered-ranges#ranges)) | | `zazozon oel zahelan` *Azozon through Ahelan*; `zazozon zahelan zaol` *Azozon, then Ahelan* |
-| hook `oel` *toward X* ([where a path ends](/extra-noun-hooks#extra-noun-intermediate)) | | `zaol` + X *start with X* ([where it starts](/rank-joins#sequence-ao)) |
+| hook `oel` *toward X* ([where a path ends](/extra-noun-hooks#extra-noun-intermediate)) | | `zaol` + X *start with X* ([where it starts](/rank-joins#route-ao)) |
 | `xan` *and then* ([what happened next](/clause-sequence#clause-sequence)) | | `xaol` ([the order is part of the claim](/vp-clause-forms#vp-clause-forms): a recipe) |
-| `vun` [*refuses*](/join-acts#join-act-verbs) | | `vuan` *excludes* |
+| `vun` [*refuses*](/list-verbs#list-verbs) | | `vuan` *excludes* |
 | `el …` *Instead, …* ([replaces the last claim](/hooks#discourse-hooks)) | | `er …` *Anyway, …* ([back to the main line](/discourse-hooks#hook-resume)) |

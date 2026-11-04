@@ -76,7 +76,7 @@ After a channel, a `bl-` person or thing is the [source](/evidentiality#source);
 
 ### Deduction {#deduction}
 
-What sits before `blarl` is what you assert: the channel alone asserts the premises; a pole between them asserts only the link. Join premises with `xam`.
+What sits before `blarl` is what you assert: the channel alone asserts the premises; a hinge between them asserts only the link. Join premises with `xam`.
 
 <!-- cheat-sheet: knowing-intending -->
 | You claim | Form | You assert | Stage |

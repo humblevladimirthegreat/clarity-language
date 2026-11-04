@@ -52,7 +52,7 @@ A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaini
 
 More items of the same role go *before* the join, not after it.
 
-SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a scale after rank **`o`** / **`uo`**, equative **`oe`**, or sequence **`ao`**. After a verb join, a `/d/` object, a recipient `/b/`, or an `/h/` adverb is SHARED: every verb takes it. Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item. Any other `/h/` after a join is an ordinary adverb on the verb:
+SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a scale after rank **`o`** / **`uo`**, equative **`oe`**, or route **`ao`**. After a verb join, a `/d/` object, a recipient `/b/`, or an `/h/` adverb is SHARED: every verb takes it. Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item. Any other `/h/` after a join is an ordinary adverb on the verb:
 
 > `zazozon zalazun zal hahunom vowurol.`
 >
@@ -99,7 +99,7 @@ What *everything* or *anything* ranges over comes from context, or from a [SHARE
 
 **Compare with:** plain **`u`** is *not* / *none of* the listed, not an invert stack. *Every cat* uses SHARED kind after **`zual`**: `zual gogozel`.
 
-### Sequence (**`ao`**) {#sequence-ao}
+### Route (**`ao`**) {#route-ao}
 
 Rank **`o`** puts the first item at the **top** (*A matters more than B*). When English would instead say *A, then B* (an itinerary, a turn order, *from 3 to 5*), the first item is the **start**, not the winner. Write the items in that order and close with **`ao`**.
 
@@ -116,7 +116,7 @@ Rank **`o`** puts the first item at the **top** (*A matters more than B*). When 
 | Single-item | `X zaol` *start with X* / *from X on* | `X zaom` *maybe start with X* |
 | Standalone | `zaol` *in no particular order* / *any order* | `zaom` *not sure where to start* |
 
-A sequence does not say which item is better. With a SHARED quality it sorts the list from low to high. Two numbers in a sequence are two values in order (`zragel zrazal zaol` = *3, then 5*). (cue: **a** ≈ add + **o** ≈ rank: *and then*)
+A route does not say which item is better. With a SHARED quality it sorts the list from low to high. Two numbers in a route are two values in order (`zragel zrazal zaol` = *3, then 5*). (cue: **a** ≈ add + **o** ≈ rank: *and then*)
 
 ### Respectively (`wubam`) {#respectively}
 
@@ -181,8 +181,8 @@ Beginner already used single-item *just X* and standalone *nothing* / *everythin
 | **…oel** (`zoel` / …) | closed tie of one | *X tied for* / equal priority to X |
 | **…oem** (`zoem` / …) | open tie of one | *X about tied for* / soft equal priority |
 | **…oen** (`zoen` / …) | stock tie of one | *X tied for* (stock / conventional draw label) |
-| **…aem** (`zaom` / …) | open sequence start | *maybe start with X* |
-| **…ael** (`zaol` / …) | closed sequence start | *start with X* / *from X on* |
+| **…aem** (`zaom` / …) | open route start | *maybe start with X* |
+| **…ael** (`zaol` / …) | closed route start | *start with X* / *from X on* |
 | **…uel** (`zuol` / …) | closed last place | *X last*; + SHARED scale → least |
 | **…uem** (`zuom` / …) | open last place | *mainly leave X for last* |
 | **…en** (`zon` / …) | stock first | *X first* (stock) / *X, as usual* |
@@ -199,8 +199,8 @@ Standalone **o** says nothing is on top (no favorite; with a SHARED scale, *ther
 | **…oel** (`zoel` / …) | closed empty tie | *it's a draw* / *tie* |
 | **…oem** (`zoem` / …) | open empty tie | *probably a tie* / *looks even* |
 | **…oen** (`zoen` / …) | stock empty tie | *it's a draw* (stock) |
-| **…aem** (`zaom` / …) | open empty sequence | *not sure where to start* |
-| **…ael** (`zaol` / …) | closed empty sequence | *in no particular order* / *any order* |
+| **…aem** (`zaom` / …) | open empty route | *not sure where to start* |
+| **…ael** (`zaol` / …) | closed empty route | *in no particular order* / *any order* |
 | **…uel** (`zuol` / …) | closed empty last | *no least-favorite* / *nobody's last*; + SHARED scale → *there is no smallest* |
 | **…uem** (`zuom` / …) | open empty last | *no objection* (not naming a veto) |
 | **…en** (`zon` / …) | stock empty rank | *no favorite* (stock) |
@@ -392,7 +392,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 [z-Ahelan | z-Alazun | z-Azozon | z-in-order]
 
-Sequence **`ae`** makes the first item the start; rank **`e`** would make it the most important.
+Route **`ae`** makes the first item the start; rank **`e`** would make it the most important.
 :::
 
 **2.** *neither kiss nor punch* `veguyal vabuvul vul.` or `veguyal vabuvul val vul.`

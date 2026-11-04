@@ -151,11 +151,11 @@ describe("sentence-parser synthetic", () => {
     assert.equal(units[1]!.kind, "hook");
   });
 
-  it("reads a signed measure on a time pole with no channel", () => {
+  it("reads a signed measure on a time hinge with no channel", () => {
     const units = parseSentenceTokens(tokens("yol zawan vuhamum harum blazurom grabal.")).utterances[0]!.bodies[0]!.clause.units;
-    const pole = units.at(-1)!;
-    assert.equal(pole.kind === "h" ? pole.unit.word.raw : undefined, "harum");
-    assert.equal(pole.kind === "h" ? pole.unit.hosted?.amount?.raw : undefined, "grabal");
+    const hinge = units.at(-1)!;
+    assert.equal(hinge.kind === "h" ? hinge.unit.word.raw : undefined, "harum");
+    assert.equal(hinge.kind === "h" ? hinge.unit.hosted?.amount?.raw : undefined, "grabal");
   });
 
   it("reads a command with only a /ɡ/ body", () => {

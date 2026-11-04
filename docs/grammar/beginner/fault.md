@@ -6,7 +6,7 @@ band: beginner
 
 ### Fault {#fault}
 
-*Because* names what made the outcome happen. It does not say anyone did wrong. When you mean *it was their fault*, change the ending on the because pole. **-m** is the plain cause. **-l** says the reason broke a rule: someone did wrong. **-r** says it was one cause among others.
+*Because* names what made the outcome happen. It does not say anyone did wrong. When you mean *it was their fault*, change the ending on the because hinge. **-m** is the plain cause. **-l** says the reason broke a rule: someone did wrong. **-r** says it was one cause among others.
 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Cue |
@@ -33,9 +33,9 @@ band: beginner
 >
 > "The rain is part of why Azozon left."
 
-The rule from [*because*](dependents.md#poles) matters most here: the act goes in the `bl-` word, not the person (`thahul blarl zalazun vezuyol` *Alazun's speaking is to blame*, never `thahul blalazun`). So fault lands on what someone did, which leaves room for *Alazun did a wrong thing* without *Alazun is bad*. A thing or circumstance (`blerulal`) is fine there, because there is no person to blame.
+The rule from [*because*](dependents.md#hinges) matters most here: the act goes in the `bl-` word, not the person (`thahul blarl zalazun vezuyol` *Alazun's speaking is to blame*, never `thahul blalazun`). So fault lands on what someone did, which leaves room for *Alazun did a wrong thing* without *Alazun is bad*. A thing or circumstance (`blerulal`) is fine there, because there is no person to blame.
 
-Fault is still a claim. You can hedge it with [MAY](knowing.md#may) right before the pole (`thomam thahul blarl …`).
+Fault is still a claim. You can hedge it with [MAY](knowing.md#may) right before the hinge (`thomam thahul blarl …`).
 
 ### Practice {#beginner-practice}
 

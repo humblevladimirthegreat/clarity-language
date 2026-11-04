@@ -35,7 +35,7 @@ On a noun, the same root is **`gewem`**:
 >
 > "A house like Azozon’s."
 
-When the model is an event (*walks the way a duck swims*), put [**`blarl`**](dependents.md#poles) after **`hewem`** and say that event as the next sentence. Keep the pair last, as with *because*. You are not claiming that the model event happened; it is only the comparison.
+When the model is an event (*walks the way a duck swims*), put [**`blarl`**](dependents.md#hinges) after **`hewem`** and say that event as the next sentence. Keep the pair last, as with *because*. You are not claiming that the model event happened; it is only the comparison.
 
 > `zazozon vowurol hewem blarl zadozal vazuvol.`
 >

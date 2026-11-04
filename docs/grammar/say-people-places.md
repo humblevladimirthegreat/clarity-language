@@ -67,9 +67,9 @@ English uses the same *who* clause for two jobs. When it picks out **which** one
 
 ### Stacked owners (*Azozon's dog's bone*) {#stacked-owners}
 
-**Needs:** [Whose (`om`)](/extra-noun-hooks#genitive) · [Sequence `ao`](/rank-joins#sequence-ao)
+**Needs:** [Whose (`om`)](/extra-noun-hooks#genitive) · [Route `ao`](/rank-joins#route-ao)
 
-When English stacks possessives, keep one **`om`** and list every owner in its `/b/`, closed by the sequence join **`baol`**. Put the **nearest** owner first: the first `/b/` uses the host, and each later `/b/` keeps the one before it.
+When English stacks possessives, keep one **`om`** and list every owner in its `/b/`, closed by the route join **`baol`**. Put the **nearest** owner first: the first `/b/` uses the host, and each later `/b/` keeps the one before it.
 
 > `zobol om bodozel bazozon baol.`
 >
@@ -77,7 +77,7 @@ When English stacks possessives, keep one **`om`** and list every owner in its `
 >
 > "Azozon's dog's bone."
 
-**Compare with:** a set join in the same slot (`bodozel bazozon bal`) says both use the bone directly. Only the sequence says *the dog's bone, and Azozon's dog*.
+**Compare with:** a set join in the same slot (`bodozel bazozon bal`) says both use the bone directly. Only the route says *the dog's bone, and Azozon's dog*.
 
 ### *The day when …* {#day-when}
 
@@ -407,9 +407,9 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 
 ### Join, belong, comprise, replace, represent, prefer, involve, agree {#relating-verbs}
 
-**Needs:** [Rank joins](/rank-joins#rank-joins) · [Join-act verbs](/join-acts#join-act-verbs) · [Join-relations](/join-relations#join-relations) · [Of relations](/of-relations#of-relations) · [Whose](/extra-noun-hooks#genitive) · [Exchange](/relations#exchange) · [Proxy](/relations#proxy) · [Simile](/relations#similative)
+**Needs:** [Rank joins](/rank-joins#rank-joins) · [List verbs](/list-verbs#list-verbs) · [Join-relations](/join-relations#join-relations) · [Of relations](/of-relations#of-relations) · [Whose](/extra-noun-hooks#genitive) · [Exchange](/relations#exchange) · [Proxy](/relations#proxy) · [Simile](/relations#similative)
 
-Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer*) say how two things **stand to each other** more than what anyone does. Ageben writes that stance as a hosted relation word with the other thing in `/b/`, or as a join-act verb when someone really acts on a thing. Pick the relation, and keep the ordinary verb for the activity.
+Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer*) say how two things **stand to each other** more than what anyone does. Ageben writes that stance as a hosted relation word with the other thing in `/b/`, or as a list verb when someone really acts on a thing. Pick the relation, and keep the ordinary verb for the activity.
 
 | English | Ageben | Reading |
 |---------|--------|---------|
@@ -609,7 +609,7 @@ An English noun like *case* or *board* covers several jobs, and Ageben has a dif
 
 **Needs:** [The event itself](/roles#the-event-itself) · [Role compounds](/roles#role-compounds) · [Someone's act](#someones-act) · [Fault](/fault#fault) · [Label scope](/label-seams#label-scope) · [Proxy](/relations#proxy) · [Exchange](/relations#exchange)
 
-English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *comparison*). Ageben has no separate noun for them. Put the verb stem on a thing letter with no **`w`** and part to name the act itself, write **`d`** as the part to name the thing the act happens to, or say the act as a sentence and resume it with **-r**. A wrongness or a pattern is the pole or label on the act, not a different noun.
+English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *comparison*). Ageben has no separate noun for them. Put the verb stem on a thing letter with no **`w`** and part to name the act itself, write **`d`** as the part to name the thing the act happens to, or say the act as a sentence and resume it with **-r**. A wrongness or a pattern is the hinge or label on the act, not a different noun.
 
 | English | Ageben | Reading |
 |---------|--------|---------|

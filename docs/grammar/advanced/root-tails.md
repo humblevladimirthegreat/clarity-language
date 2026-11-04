@@ -28,7 +28,7 @@ Each letter **echoes** a job it already has somewhere in the grammar: the letter
 | `r` | counting, time, money and rhythm | `ugoro` *clock* | `r` after a role letter starts a [number](/numbers#counts) |
 | `n` | titles: mail, paper, labels, and named sports | `unona` *newspaper*, `ezuna` *soccer* | [**-n**](/proper-names#proper-name--n) is the name ending |
 
-The last vowel is the job. It hangs on [joins](/joins): what the root **does to stuff** (gathers, travels the line, one piece, takes away). **a** holds (the list grows), **o** path or sequence (rank: the line stays), **e** one compact thing (choice: one piece), **u** takes away.
+The last vowel is the job. It hangs on [joins](/joins): what the root **does to stuff** (gathers, travels the line, one piece, takes away). **a** holds (the list grows), **o** path or route (rank: the line stays), **e** one compact thing (choice: one piece), **u** takes away.
 
 <!-- cheat-sheet: vowels -->
 | Last vowel | Job | Examples |

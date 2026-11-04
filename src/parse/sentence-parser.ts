@@ -45,8 +45,8 @@ import {
   Amount,
   Factor,
   HScale,
-  HFrame,
-  HFrameHeld,
+  HZone,
+  HZoneHeld,
   BScale,
   Bar,
   BarPlain,
@@ -238,8 +238,8 @@ function isIntentionStance(token: IToken): boolean {
   return tokenIs(token, HTh) && word?.pos === "th" && (kind === "want" || kind === "plan" || kind === "decision");
 }
 
-/** `uom` *contrary to*: a `/th/` stance right after it is its opposing frame (prescription.md#contrary-to-stance). */
-function isFrameHook(token: IToken): boolean {
+/** `uom` *contrary to*: a `/th/` stance right after it is its opposing zone (prescription.md#contrary-to-stance). */
+function isZoneHook(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;
   return tokenIs(token, Hook) && family?.kind === "hook" && family.form === "uom";
 }
@@ -720,7 +720,7 @@ class AgebenSentenceParser extends CstParser {
   }
 
   /**
-   * `hooks`: which hook units may start the chain (`hosting`: only one with a `/b/` or frame right after the hook;
+   * `hooks`: which hook units may start the chain (`hosting`: only one with a `/b/` or zone right after the hook;
    * `only`: the chain starts with a hook).
    */
   private unitChainRule(name: string, state: ChainState, end: UnitEnd, hooks: "all" | "none" | "hosting" | "only" = "all") {
@@ -1441,14 +1441,14 @@ class AgebenSentenceParser extends CstParser {
   });
 
   /**
-   * A hook, and the stance `uom` holds as its frame (prescription.md#contrary-to-stance): one whose hosted `/b/` the adjectives
-   * after it describe (`Open`), or any other (`Closed`). A `Plain` hook has no `/b/` or frame right after it ({@link HookPlain}).
+   * A hook, and the stance `uom` holds as its zone (prescription.md#contrary-to-stance): one whose hosted `/b/` the adjectives
+   * after it describe (`Open`), or any other (`Closed`). A `Plain` hook has no `/b/` or zone right after it ({@link HookPlain}).
    */
   public hookUnitPlain = this.hookUnitRule("hookUnitPlain", "plain");
   public hookUnitOpen = this.hookUnitRule("hookUnitOpen", "open");
   public hookUnitClosed = this.hookUnitRule("hookUnitClosed", "closed");
-  public frameUnitOpen = this.frameRule("frameUnitOpen", "open");
-  public frameUnitClosed = this.frameRule("frameUnitClosed", "closed");
+  public zoneUnitOpen = this.zoneRule("zoneUnitOpen", "open");
+  public zoneUnitClosed = this.zoneRule("zoneUnitClosed", "closed");
 
   private hookUnitRule(name: string, shape: "plain" | "open" | "closed") {
     return this.RULE(name, () => {
@@ -1460,17 +1460,17 @@ class AgebenSentenceParser extends CstParser {
         return;
       }
       this.CONSUME(HookHosting, { LABEL: "Hook" });
-      const frame = { open: this.frameUnitOpen, closed: this.frameUnitClosed }[shape];
-      if (shape === "open") this.SUBRULE(frame, { LABEL: "frame" });
-      else this.OPTION(() => this.SUBRULE2(frame, { LABEL: "frame" }));
+      const zone = { open: this.zoneUnitOpen, closed: this.zoneUnitClosed }[shape];
+      if (shape === "open") this.SUBRULE(zone, { LABEL: "zone" });
+      else this.OPTION(() => this.SUBRULE2(zone, { LABEL: "zone" }));
     });
   }
 
-  /** The frame stance, with what it hosts, as a `/th/` host takes it. */
-  private frameRule(name: string, shape: "any" | "open" | "closed") {
+  /** The zone stance, with what it hosts, as a `/th/` host takes it. */
+  private zoneRule(name: string, shape: "any" | "open" | "closed") {
     return this.RULE(name, () => {
-      this.CONSUME(HFrame, { LABEL: "H" });
-      this.OPTION9(() => this.CONSUME(HFrameHeld, { LABEL: "Held" }));
+      this.CONSUME(HZone, { LABEL: "H" });
+      this.OPTION9(() => this.CONSUME(HZoneHeld, { LABEL: "Held" }));
       this.hostedOrStandIn(shape, true);
     });
   }
@@ -1901,7 +1901,7 @@ function isLabelMarker(marker: NumberMarker): boolean {
  * {@link HostedOdo}. A plain `/b/` there stays the verb's recipient.
  * A cardinal `/ɡ/` right after a hosted `/b/` is that unit's {@link Amount}, and a signed `/h/` number after an
  * equative's shared scale its {@link Factor}. An `/h/` or digitless `/b/` number right after a rank noun join is its
- * shared scale ({@link HScale}, {@link BScale}), and a stance right after `uom` its frame ({@link HFrame}). Neither has a `/b/` slot, so a `/b/` after one fails to parse (`slotlessHost`).
+ * shared scale ({@link HScale}, {@link BScale}), and a stance right after `uom` its zone ({@link HZone}). Neither has a `/b/` slot, so a `/b/` after one fails to parse (`slotlessHost`).
  * A stance word that is a rank fence's bar becomes {@link Bar}, or {@link FenceBar} as the first bar after a closed `ua` fence.
  */
 export function markContext(tokens: IToken[]): IToken[] {
@@ -2127,8 +2127,8 @@ function hostedType(token: IToken, before: IToken[], after: IToken[]): TokenType
   if (tokenIs(token, Hook)) return hostsAhead(token, after) ? HookHosting : undefined;
   const host = before.at(-1);
   if (!host) return undefined;
-  if (isStanceWord(token) && isFrameHook(host)) return HFrame;
-  if (host.tokenType === HFrame && isHolderWord(host) && isIntentionStance(token)) return HFrameHeld;
+  if (isStanceWord(token) && isZoneHook(host)) return HZone;
+  if (host.tokenType === HZone && isHolderWord(host) && isIntentionStance(token)) return HZoneHeld;
   if (tokenIs(token, H) && isRankNounJoin(before[skipWBack(before, before.length - 1)])) return HScale;
   if (token.tokenType === HPlain && before[skipWBack(before, before.length - 1)]?.tokenType === JoinV) return HSharedV;
   if (tokenIs(token, B) && isRankNounJoin(host) && scaleNumberAhead(token)) return BScale;
@@ -2138,13 +2138,13 @@ function hostedType(token: IToken, before: IToken[], after: IToken[]): TokenType
     return (token.payload as LexWord | undefined)?.family.kind === "number" ? HostedBNumber : HostedBNoun;
   }
   // A `bl-` join blank (`hewom blar`, `thebam blar`) completes its host like a `bl-` noun.
-  if (locked && tokenIs(token, B, JoinB) && (tokenIs(host, H, G, Amount, Factor, HScale, HSharedV, HFrame) || isScopeThoVerb(host))) {
+  if (locked && tokenIs(token, B, JoinB) && (tokenIs(host, H, G, Amount, Factor, HScale, HSharedV, HZone) || isScopeThoVerb(host))) {
     if (!isScopeThoVerb(host) && joinClosesAhead(after)) return HostedBJoined;
     return (token.payload as LexWord | undefined)?.family.kind === "number" ? HostedBNumber : HostedBNoun;
   }
   // A `/z/` or `/d/` stand-in there is still read as hosted, so `standInHost` names the slip (`thahum blarl`).
   const lockable = locked || (token.payload as LexWord | undefined)?.pos !== "b";
-  if (lockable && tokenIs(token, Odo) && tokenIs(host, H, Factor, HScale, HSharedV, HFrame)) return HostedOdo;
+  if (lockable && tokenIs(token, Odo) && tokenIs(host, H, Factor, HScale, HSharedV, HZone)) return HostedOdo;
   if (locked && token.tokenType === OdoB && isLateOdoAt(before)) return LateOdo;
   if (isAmountAt(token, before)) return Amount;
   if (isFactorAt(token, before)) return Factor;
@@ -2180,11 +2180,11 @@ function verbTypeAt(tokens: IToken[], at: number): TokenType | undefined {
   return more ? VPlainMore : VPlainEnd;
 }
 
-/** A `/b/` word right after the hook (an extra noun, hooks.md#extra-noun), or the stance `uom` holds as its frame. */
+/** A `/b/` word right after the hook (an extra noun, hooks.md#extra-noun), or the stance `uom` holds as its zone. */
 function hostsAhead(hook: IToken, after: IToken[]): boolean {
   const next = after[0];
   if (!next) return false;
-  return tokenIs(next, B, JoinB, OdoB, TagB, WritingSpanB) || (isFrameHook(hook) && isStanceWord(next));
+  return tokenIs(next, B, JoinB, OdoB, TagB, WritingSpanB) || (isZoneHook(hook) && isStanceWord(next));
 }
 
 /** `/b/` words, then a `/b/` join: a list that takes the hosted `/b/` before it as its first item (joins.md#right-close). */
@@ -2195,7 +2195,7 @@ function joinClosesAhead(after: IToken[]): boolean {
 }
 
 /**
- * `blarl` that fills a `/th/` host from further right: after a stance join that closes a pole with no `/b/` yet
+ * `blarl` that fills a `/th/` host from further right: after a stance join that closes a hinge with no `/b/` yet
  * (join-across-roles.md#stance-join-before-barl), or after a channel's offset (evidentiality.md#evidence-clause).
  */
 function isLateOdoAt(before: IToken[]): boolean {
@@ -2208,7 +2208,7 @@ function isLateOdoAt(before: IToken[]): boolean {
   }
   const offset = before[i];
   const number = (offset?.payload as LexWord | undefined)?.family.kind === "number";
-  return !!offset && tokenIs(offset, HostedBNumber, HostedBJoined) && number && !!before[i - 1] && tokenIs(before[i - 1]!, HTh, HFrame);
+  return !!offset && tokenIs(offset, HostedBNumber, HostedBJoined) && number && !!before[i - 1] && tokenIs(before[i - 1]!, HTh, HZone);
 }
 
 /** A cardinal `/ɡ/` right after a hosted `/b/`, or after the join that fills that slot: the measure amount. */
@@ -2230,7 +2230,7 @@ function skipWBack(tokens: IToken[], i: number): number {
   return i;
 }
 
-/** A rank, equative or sequence join of a noun list: the word after it may be its shared scale (rank-joins.md#shared-after-the-join). */
+/** A rank, equative or route join of a noun list: the word after it may be its shared scale (rank-joins.md#shared-after-the-join). */
 /** A `/z/`, `/d/` or `/b/` hooked join, which hosts its landmark (hooked-joins.md#hooked-joins). */
 function isHookedNounJoin(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;
@@ -2536,13 +2536,13 @@ function buildHUnit(cst: CstNode): HUnit {
 }
 
 function buildHookUnit(cst: CstNode): Extract<Unit, { kind: "hook" }> {
-  const frame = childNodes(cst, "frame")[0];
+  const zone = childNodes(cst, "zone")[0];
   return {
     kind: "hook",
     word: lexWordFromToken(childToken(cst, "Hook")!),
     modifiers: childTokens(cst, "W").map(lexWordFromToken),
-    ...(frame ? { frame: buildHUnit(frame) } : {}),
-    ...(frame && childToken(frame, "Held") ? { heldIntention: lexWordFromToken(childToken(frame, "Held")!) } : {}),
+    ...(zone ? { zone: buildHUnit(zone) } : {}),
+    ...(zone && childToken(zone, "Held") ? { heldIntention: lexWordFromToken(childToken(zone, "Held")!) } : {}),
   };
 }
 

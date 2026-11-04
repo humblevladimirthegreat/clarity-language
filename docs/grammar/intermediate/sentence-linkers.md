@@ -90,9 +90,9 @@ In a new turn with its own act word, the act word comes first and the linker sta
 >
 > "By the way, did you hear?"
 
-### Result (*so … that*) {#result-pole}
+### Result (*so … that*) {#result-hinge}
 
-English *so … that* ties a result to how much of something there is (*so tired that they sleep*), all in one sentence. Put the pole **`hahom`** after the word that carries the degree, then **`blarl`**, then the result as the next sentence. **`hahom`** uses the same root as *therefore*, which needs two sentences. Unlike **`hovam`** *so that*, the result really happened.
+English *so … that* ties a result to how much of something there is (*so tired that they sleep*), all in one sentence. Put the hinge **`hahom`** after the word that carries the degree, then **`blarl`**, then the result as the next sentence. **`hahom`** uses the same root as *therefore*, which needs two sentences. Unlike **`hovam`** *so that*, the result really happened.
 
 > `zazozon welazem gadamul hahom blarl zazozor vezuvel.`
 >
@@ -106,11 +106,11 @@ English *so … that* ties a result to how much of something there is (*so tired
 >
 > "Azozon walks so hastily that Alazun runs."
 
-**Compare with:** *although* / *while* attach a dependent after **`blarl`** (`hezem blarl`, `herom blarl`; see [dependent clauses](/dependents#dependent-clauses)). *Despite Alazun* is the same pole with a `bl-` noun (`hezem blalazun`). *So that Alazun sits* is **`hovam blarl`**. Discourse **`xezem`** / **`xugorom`** / **`xahom`** glue a finished sentence to the next one.
+**Compare with:** *although* / *while* attach a dependent after **`blarl`** (`hezem blarl`, `herom blarl`; see [dependent clauses](/dependents#dependent-clauses)). *Despite Alazun* is the same hinge with a `bl-` noun (`hezem blalazun`). *So that Alazun sits* is **`hovam blarl`**. Discourse **`xezem`** / **`xugorom`** / **`xahom`** glue a finished sentence to the next one.
 
-### Time poles on a noun {#time-pole-on-noun}
+### Time hinges on a noun {#time-hinge-on-noun}
 
-To place a **thing** in time rather than the event (*the walk after the thunderstorm*), put the [time pole](/dependents#dependent-clauses) on `/ɡ/` right after that noun: **`gerom`** *during*, **`gabam`** *before*, **`galam`** *after*, **`garum`** *until*, **`guvahum`** *by*. The `/b/` after it is the event or period, as with the `/h/` pole.
+To place a **thing** in time rather than the event (*the walk after the thunderstorm*), put the [time hinge](/dependents#dependent-clauses) on `/ɡ/` right after that noun: **`gerom`** *during*, **`gabam`** *before*, **`galam`** *after*, **`garum`** *until*, **`guvahum`** *by*. The `/b/` after it is the event or period, as with the `/h/` hinge.
 
 > `zalazun dowurol galam blanulul vayebel.`
 >

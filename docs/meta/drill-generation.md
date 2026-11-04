@@ -285,7 +285,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `can-and-cant.md` | Beginner | a workshop |
 | `say-reasons.md` | Plans against a snapshot | a delayed departure board |
 | `join-across-roles.md` | Intermediate | a relay race |
-| `join-acts.md` | Intermediate | a roster desk |
+| `list-verbs.md` | Intermediate | a roster desk |
 | `join-relations.md` | Intermediate | a team bench |
 | `vp-clause-forms.md` | Intermediate | a baton pass |
 | `numeric-derivation.md` | Advanced | a foundry |
@@ -343,7 +343,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 3 | `phonology.md` | skip | — | not translation |
 | 4 | `word-endings.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor; **greeting** named citation with period (`azozon.`) | No sentences with role letters. No **-r**. Pointers to **-x** / **`gl-`**: do **not** make those the item. No vocative `/y/` |
 | 5 | `clause.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; hosted `/ɡ|h/`+`/b/` (*like*); unhosted `/b/` recipient/addressee; house names; **-l** / **-m** / **-n** as used in examples | Do not use **`gl-`**, **`darl`**, `/x/`, nested **`blarl`**, letter **-r** mechanism, **-x**, joins. Greeting citations are word-endings. No conversation-length **`x`** vowel |
-| 6 | `speech-moves.md` | **exists** | Turn start; call a person; conventional interjection; statement / question / command / prohibition; omit recoverable **`yal`** | Recycle clause bodies and house names; no hooks, polar stance, soft forms, or numbers |
+| 6 | `speech-moves.md` | **exists** | Turn start; call a person; conventional interjection; statement / question / command / prohibition; omit recoverable **`yal`** | Recycle clause bodies and house names; no hooks, polar particle, soft forms, or numbers |
 | 7 | `dependents.md` | **exists** | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`thahum` / `thohem` / `thehom` / `hezem` / `herom` / `harum` / `habam` / `halam` / `hovam` **`blarl`**; *despite* = **`hezem`** + `/b/` noun); `/x/` continue vs `/y/` turn; `/x/` linker may start the next written sentence after `.` | Do not use nested **`blarl`**, letter **-r** mechanism. Recycle speech-moves **`yel`/`yol`/`yul`** |
 | 13 | `relations.md` | **exists** | Hosted pair for simile **`hewem`**, exchange **`heham`**, proxy **`hanem`** | Recycle clause hosted `/b/` and hooks extra-noun. No *between*, no of-relations, no **`blarl`**. Not **`hahebam`** |
 | 8 | `pronouns.md` | **exists** | Whole-stem **-r**; role pointers (`zwuzer`, `dwuder`, `dwuzor`, `zwuzar`); specials **`uwe` / `awa` / `aya` / `ume`** (when the *role* is the point); inclusive *we* **`aya`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
@@ -356,7 +356,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 14 | `spans.md` | **exists** | Writing fences `[ ]` `( )` `< >`; **`~`/`@`**; PoS = outer slot; **aside** = `th(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this stage teaches them). Prefer one-token cites. The mention marker (`glegol`) is Intermediate |
 | 15 | `numbers.md` | **exists** | spelled counts (**`gragel`**) and ordinals (**`grodol`**) with the digit syllables; digitless **`gral`** (*more than one*); no shorthand (Intermediate) with **-x** on the noun | No `/v/` `/h/` `/y/` `/x/` number uses, exponents, ranges, percent, measures (later). **-x** from plurality is recycle |
 | 15 | `comparatives.md` | **exists** | Rank fence **`e`/`ae`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`oe`** | **Needs:** joins Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
-| 15 | `causation.md` | **exists** | Two-place poles: outcome host + `/b/` condition; `/th/` event vs `/ɡ/` noun; *if* **`ohe`** vs *only if* **`ebe`**; no cause-arrow word | **Needs:** core extra nouns + dependents **`darl`**. *Because* / **`IFF`** / **CAUSE** are Intermediate — do not use |
+| 15 | `causation.md` | **exists** | Two-place hinges: outcome host + `/b/` condition; `/th/` event vs `/ɡ/` noun; *if* **`ohe`** vs *only if* **`ebe`**; no cause-arrow word | **Needs:** core extra nouns + dependents **`darl`**. *Because* / **`IFF`** / **CAUSE** are Intermediate — do not use |
 | 16 | `sakes.md` | **exists** | Six needs; `/ɡ/` on a belonging vs `/th/` on the clause; **`tha`** met + contact **-l / -m / -r**; **`thu`** unmet changeability; unowned **`goyom`** + `/w/` need | **Not** prescription **`the`** or motive **`tho`** (Intermediate). Not ability (non-sake + `x` vowel). Not MAY. Not bare need-as-topic |
 | 16 | `intention.md` | **exists** | PLAN **`thago`** | Not values (sake roots). Not role compounds (vowel *left* of `x`). Not conversation length (named citation or `/y/`). Ability **`xa`/`xe`/`xo`/`xu`** is later Beginner on `can-and-cant.md` |
 | 16 | `knowing.md` | **exists** | **MAY** **`oma`** + 2a follow-up endings (**`thomam`** default; **-l** find out; **-r** who knows) | LIVE/MEMORY is later Beginner on `live-and-memory.md`. Not other evidentiality / NOTIONAL (Intermediate). Not **`yem`** (core Intermediate) unless you only recycle **`yel`** from core/questions Beginner |
@@ -369,7 +369,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 16 | `fill-ask-jobs.md` | **exists** | *what kind* / *when* / *where* / *whose* / *how* / *why* | Recycle = all earlier Beginner including extra-noun **`om`**. Not arity or blank-in-dependent |
 | 16 | `here-there.md` | **exists** | somewhere / nowhere / everywhere; here and there (`em buwen` / `em bawan` / `um bayan`) | Recycle = all earlier Beginner. Not stacked discourse, hook resume, or parallel chains |
 | 16 | `social-ties.md` | **exists** | Social ties (`gamayam`, `gegobom`, `gabolem`) | Recycle = all earlier Beginner. Not locative / of-relations |
-| 16 | `clause-sequence.md` | **exists** | Clause sequence **`xan`** / **`xen`** / **`xun`** | Recycle = all earlier Beginner. Not VP / stance / join-act; rank **`xuon`** stays Intermediate |
+| 16 | `clause-sequence.md` | **exists** | Clause sequence **`xan`** / **`xen`** / **`xun`** | Recycle = all earlier Beginner. Not VP / stance / list verb; rank **`xuon`** stays Intermediate |
 | 16 | `digit-strings.md` | **exists** | Digit-string labels; clock / calendar time | Recycle = all earlier Beginner. Not letter codes, measures, ranges, or percent |
 | 16 | `can-and-cant.md` | **exists** | Ability **`xa`/`xe`/`xo`/`xu`** on a verb or adjective; hostless **`oda`**; role + ability | Recycle = all earlier Beginner. Not DECISION / try / want |
 | 16 | `live-and-memory.md` | **exists** | LIVE **`thugem`** / MEMORY **`thevum`** channel pick | Recycle = all earlier Beginner. Not strength, source, forecast, holder, or the other channels |
@@ -391,7 +391,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 6 | `speech-acts.md` | Intermediate | **exists** | Doubled and stacked act words; describing a call or reaction (**`gl-`** before it) | Speech manner is Intermediate on `speech-manner.md`. Soft/firm twins and **-r** acts are Beginner on `firm-soft.md`. Tone marks are Intermediate on `tone-marks.md`. Do not require numbers Intermediate readings |
 | 6 | `speech-manner.md` | Intermediate | **exists** | Speech manner: stance **`thagebem`** *to be clear* / **`thavewom`** *frankly* vs `/h/` on the same root | Recycle doubled and stacked act words from `speech-acts.md` |
 | 6 | `tone-marks.md` | Intermediate | **exists** | Tone marks (`!` / `?` / `%` / `&` / `;`, stacks, word vs sentence scope) | Doubled / stacked act words and speech manner are Intermediate on `speech-acts.md` |
-| 7 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xahom`, `xezem`, …); result **`hahom blarl`**; time poles on a noun | Stand-in vowels and pointing back are Intermediate on `stand-in-vowels.md`. Recycle Beginner **`darl`/`barl`** |
+| 7 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xahom`, `xezem`, …); result **`hahom blarl`**; time hinges on a noun | Stand-in vowels and pointing back are Intermediate on `stand-in-vowels.md`. Recycle Beginner **`darl`/`barl`** |
 | 7 | `stand-in-vowels.md` | Intermediate | **exists** | Stand-in vowels (`dorl` / `durl` / `derl`, **-rl** vs **-rm**); pointing back **-rth** | Linkers are Intermediate on `sentence-linkers.md`. Recycle Beginner **`darl`/`barl`** |
 | 7 | `dependents.md` | Advanced | **exists** | Lexicalized stand-ins in other roles (`varn` / `vaen` / `vuon` / `darn` / …); nested **`blarl`** | Recycle Beginner **`darl`/`barl`** and Intermediate stand-ins |
 | 13 | `relations.md` | Intermediate | skip | — | Of-relations are Intermediate on `of-relations.md`. Exactly like is Intermediate on `exactly-like.md`. Locative relations are Intermediate on `locative-relations.md` |
@@ -444,7 +444,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `stance-bars.md` | Advanced | **exists** | Every bar (channels, FORMER, ABIL, REQUIRE, attitudes); bar inside vs stance after the fence | Vague amounts are Intermediate on `vague-amounts.md` |
 | 15 | `vague-amounts.md` | Intermediate | **exists** | Vague *many* / *few* / *often* / *late* with a named PATTERN bar | Recycle = all Beginner + comparative-arity + evidentiality. Not ABIL / FORMER as bars |
 | 15 | `iff-fault.md` | Intermediate | **exists** | **`ahu`** *because* / **`eho`** *iff*; asserted necessary **`thebem thahum`**; *unless* **`thohem blurl`**; *even if* | Fault endings are Beginner on `fault.md`. CAUSE is Intermediate on `cause.md`. Recycle Beginner *if* / *only if*, following-sentence **`blarl`**, and `/h/` vs `/ɡ/` |
-| 15 | `cause.md` | Intermediate | **exists** | **CAUSE** **`ewo`** **-m** before a pole; *make* (causer in `/b/` after **`thewom`**) | Recycle *because* / *if* poles from `iff-fault.md` |
+| 15 | `cause.md` | Intermediate | **exists** | **CAUSE** **`ewo`** **-m** before a hinge; *make* (causer in `/b/` after **`thewom`**) | Recycle *because* / *if* hinges from `iff-fault.md` |
 | 15 | `causation.md` | Advanced | — | no Advanced stage | |
 | 16 | `prescription.md` | Intermediate | **exists** | Motive **`tho`** + time horizon; which ending table; attachment sites; whose stake; contrary **`uom`** | Prescription **`the`** is Beginner on `ought-for-a-sake.md`. Sake bars are Intermediate on `sake-bars.md` |
 | 16 | `sake-bars.md` | Intermediate | **exists** | Met sake bar before a rank join: **`zoel`** *enough*, **`zol`** *too*, **`zuol`** *not enough*; bar ending **-l** / **-m** / **-r**; `bl-` whose stake | Recycle sakes Beginner and rank joins |
@@ -465,14 +465,14 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 16 | `conversation-length.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / minutes / one ask / passing) | Recycle [greeting](/word-endings#greeting) and [vocative](/speech-moves#vocative). Not ability (`vozuyexol`). Not values |
 | 16 | `compounds.md` | Advanced | skip | — | Root tails are a memory aid and tail-suffix words are dictionary entries: nothing to build or choose |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
-| 17 | `vp-clause-forms.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`) | Sequence `xan` is Beginner on `clause-sequence.md`. Stance joins are Intermediate on `join-across-roles.md`. Join-act verbs are Intermediate on `join-acts.md`. Join-relations are Intermediate on `join-relations.md`. Recycle = all Beginner + earlier Intermediate (path before 17) |
-| 17 | `join-across-roles.md` | Intermediate | **exists** | Stance joins | Join-act verbs are Intermediate on `join-acts.md`. Join-relations are Intermediate on `join-relations.md`. Verb-phrase and clause joins are Intermediate on `vp-clause-forms.md` |
-| 17 | `join-acts.md` | Intermediate | **exists** | Join-act verbs `van` / `ven` / … | Stance joins are Intermediate on `join-across-roles.md` |
-| 17 | `join-relations.md` | Intermediate | **exists** | Join-relations `gan` / `han` / … (unary `/b/`) | Stance joins are Intermediate on `join-across-roles.md`. Join-act verbs are Intermediate on `join-acts.md` |
+| 17 | `vp-clause-forms.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`) | Sequence `xan` is Beginner on `clause-sequence.md`. Stance joins are Intermediate on `join-across-roles.md`. List verbs are Intermediate on `list-verbs.md`. Join-relations are Intermediate on `join-relations.md`. Recycle = all Beginner + earlier Intermediate (path before 17) |
+| 17 | `join-across-roles.md` | Intermediate | **exists** | Stance joins | List verbs are Intermediate on `list-verbs.md`. Join-relations are Intermediate on `join-relations.md`. Verb-phrase and clause joins are Intermediate on `vp-clause-forms.md` |
+| 17 | `list-verbs.md` | Intermediate | **exists** | List verbs `van` / `ven` / … | Stance joins are Intermediate on `join-across-roles.md` |
+| 17 | `join-relations.md` | Intermediate | **exists** | Join-relations `gan` / `han` / … (unary `/b/`) | Stance joins are Intermediate on `join-across-roles.md`. List verbs are Intermediate on `list-verbs.md` |
 | 17 | `notional-standing.md` | Intermediate | **exists** | **RESIDUE** / **FORMER**; channels as bars; channels after `uom` | already / still / not yet / no longer are Beginner on `already-still-yet.md`. Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder). MIRATIVE is Intermediate on `mirative.md`. NOTIONAL is Intermediate on `notional.md` |
 | 17 | `mirative.md` | Intermediate | **exists** | **MIRATIVE** | Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
 | 17 | `notional.md` | Intermediate | **exists** | **NOTIONAL** **`eyu`** + play follow-up endings | Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
-| 17 | `ability.md` | Intermediate | **exists** | **DECISION** **`oge`** changeability; **ATTEMPT** **`owa`**; PLAN + DECISION stack; fallback **`xen`** | Ability **`xa`/`xe`/`xo`/`xu`** is Beginner on `can-and-cant.md`. Recycle Beginner PLAN. WANT is Intermediate on `want.md`. Join-act **`ven`** only if already taught in this stage |
+| 17 | `ability.md` | Intermediate | **exists** | **DECISION** **`oge`** changeability; **ATTEMPT** **`owa`**; PLAN + DECISION stack; fallback **`xen`** | Ability **`xa`/`xe`/`xo`/`xu`** is Beginner on `can-and-cant.md`. Recycle Beginner PLAN. WANT is Intermediate on `want.md`. List verb **`ven`** only if already taught in this stage |
 | 17 | `want.md` | Intermediate | **exists** | **WANT** **`alo`** lastingness; holder on WANT / PLAN / DECISION | DECISION and ATTEMPT are Intermediate on `ability.md`. Recycle Beginner PLAN and Intermediate holder |
 | 17 | `intention.md` | Advanced | — | no Advanced stage | |
 | 18 | `numeric-derivation.md` | Advanced | **exists** | `NUM x ROOT` as the stage teaches (essence / `+N` / `#N` / quasi / …; `mx` approximate) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) |
@@ -520,7 +520,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Digitless exponents / hyperbole / zero×exp | `digitless-exponents.md` Advanced |
 | From the end (`#-`); stacked markers | `numbers.md` Advanced |
 | SHARED scale comparatives | `comparatives.md` Beginner |
-| Causal poles *if* / *only if* (`thohem` / `thebem`) | `causation.md` Beginner |
+| Causal hinges *if* / *only if* (`thohem` / `thebem`) | `causation.md` Beginner |
 | Fault endings on *because* (`thahul` / `thahur`) | `fault.md` Beginner |
 | **CAUSE** **`ewo`** / **`thewom`** | `cause.md` Intermediate |
 | Value **`tha`/`thu`** on **sake** roots | `sakes.md` Beginner |
@@ -542,7 +542,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Digit-string labels / clock / calendar time | `digit-strings.md` Beginner |
 | Measure phrases / ranges / percent | `numbers-applied.md` Intermediate |
 | Clause sequence **`xan`** | `clause-sequence.md` Beginner |
-| Join-act **`van`** | `join-acts.md` Intermediate |
+| List verb **`van`** | `list-verbs.md` Intermediate |
 | Join-relation **`gan`** | `join-relations.md` Intermediate |
 | **PLAN** | `intention.md` Beginner |
 | **DECISION** | `ability.md` Intermediate |

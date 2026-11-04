@@ -166,7 +166,7 @@ For *the more …, the less …*, use **`xuol`**: when the first scale rises, th
 >
 > "The more Azozon walks, the less Alazun sleeps."
 
-**Compare with:** **`xoel`** / **`xuol`** state only that the two go together, not which one causes the other. To say the first causes the second, use a [causation](/causation) pole.
+**Compare with:** **`xoel`** / **`xuol`** state only that the two go together, not which one causes the other. To say the first causes the second, use a [causation](/causation) hinge.
 
 ### Factor (*twice as … as*) {#factor}
 

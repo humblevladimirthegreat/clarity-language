@@ -67,7 +67,7 @@ English names for set / rank join vowels ([joins](/joins)):
 |------|-------|--------|
 | additive | **a** | *and* (inventory) |
 | rank | **o** | earlier outranks later |
-| sequence | **ao** | ordered path: first item is the start, not the top |
+| route | **ao** | ordered path: first item is the start, not the top |
 | negation | **u** | *not* / *none of* / standalone *no* |
 | counteradditive | **ua** | *everything but* |
 | counterrank | **uo** | rank reversal |
@@ -94,7 +94,7 @@ The written `/y/` word: **`yal` / `yel` / `yol` / `yul`** and soft **-m**.
 
 [Firm and soft](/firm-soft#speech-act)
 
-**Compare with:** [speech act](#speech-act) is the setting (statement / question / command / prohibition). Polar [stance](#polar-stance) particles are not act words.
+**Compare with:** [speech act](#speech-act) is the setting (statement / question / command / prohibition). A [polar particle](#polar-particle) is not an act word.
 
 ### Address set
 
@@ -220,9 +220,9 @@ Kind / role as predicative `/ɡ/` (no *to-be* verb).
 
 **Compare with:** [identity](#identity) uses **IDENTITY**. [Equative](#equative) is *as ADJ as*, not kind-ascription.
 
-### Clause pole / NP pole
+### Clause hinge / NP hinge
 
-Condition vs outcome as NPs vs full sentences after **`blarl`**. **Clause pole** is the causation reading. Concession **`hezem`** uses the same NP vs clause split (*despite Alazun* vs *although Alazun walks*). Intended outcome **`hovam`** uses it too (*for a money-bag* vs *so that Alazun sits*).
+Condition vs outcome as NPs vs full sentences after **`blarl`**. **Clause hinge** is the causation reading. Concession **`hezem`** uses the same NP vs clause split (*despite Alazun* vs *although Alazun walks*). Intended outcome **`hovam`** uses it too (*for a money-bag* vs *so that Alazun sits*).
 
 [Causation](/causation), [dependents](/dependents#dependent-clauses)
 
@@ -412,7 +412,7 @@ Mid-word **`th`** plus a vowel on a content root, or the vowel right after **`w`
 
 ### Locative relation
 
-Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; frame **-m** *amid* / *near* / *over* / *away from* / *in the direction of* / *out from among* / *by way of*) as extra-noun [hooks](/hooks#extra-noun) plus landmark `/b/`. *Between* is hosted `/h/` or `/ɡ/` plus a `/b/` join. A *from A to B* path is two hook extras (source, then goal).
+Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; zone **-m** *amid* / *near* / *over* / *away from* / *in the direction of* / *out from among* / *by way of*) as extra-noun [hooks](/hooks#extra-noun) plus landmark `/b/`. *Between* is hosted `/h/` or `/ɡ/` plus a `/b/` join. A *from A to B* path is two hook extras (source, then goal).
 
 [Between, across, and around](/locative-relations#locative-relations)
 
@@ -543,12 +543,6 @@ Right-close list closer; **conjunct** = listed item.
 
 [Joins](/joins)
 
-### Join-act verb / join-relation
-
-Content `/v/` or `/ɡ/` `/h/` + join vowel + **-n**.
-
-[Join-act verbs](/join-acts), [With and without](/join-relations)
-
 ### Join series
 
 **`a`** *and* / **`o`** rank / **`e`** choice / **`u`** *not*; the prefix picks the table.
@@ -563,7 +557,7 @@ Content `/v/` or `/ɡ/` `/h/` + join vowel + **-n**.
 
 ### Left edge
 
-Vocative → polar stance → act word, then body.
+Vocative → polar particle → act word, then body.
 
 [Speech moves](/speech-moves#turn-y)
 
@@ -572,6 +566,12 @@ Vocative → polar stance → act word, then body.
 What a consonant does in a position: first letter is a [role letter](#role-letter), last letter is an ending cell, mid-word is a seam or compound.
 
 [Clause](/clause#role-letters), [consonants cheat sheet](/cheat-sheets/consonants)
+
+### List verb / join-relation
+
+Content `/v/` or `/ɡ/` `/h/` + join vowel + **-n**.
+
+[List verbs](/list-verbs), [With and without](/join-relations)
 
 ### Concrete / abstract / named / resume
 
@@ -707,11 +707,11 @@ Where a consonant sits picks its letter job: first, last, or mid-word. Same lett
 
 [Consonants cheat sheet](/cheat-sheets/consonants)
 
-### Polar stance
+### Polar particle
 
 Closed `/y/` particles **`yaol` / `yuol` / …**.
 
-[Questions](/questions#polar-stance)
+[Questions](/questions#polar-particle)
 
 ### Practiced role
 
@@ -779,7 +779,7 @@ Content / number **-r** pointing back. A content resume spells the earlier word�
 
 ### Hook
 
-Prefix-less *including / rather / instead / except*, discourse glue, extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (frame **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *used by* (whose) / *by* / *contrary to*; placement decides the job; **`uom`** before a `/th/` stance is *contrary to* that stance), and fused [Cite plus a hook](/hook-compounds#hook-compounds) (citation plus extra-noun hook). Optional `/w/` immediately before the free hook grades that hook (including restrictors); `/b/` sits immediately after the free hook. Stacked discourse, *somewhere* / *here* / *there*, resume **-r**, parallel chains, and extra placements are [discourse hooks](/discourse-hooks).
+Prefix-less *including / rather / instead / except*, discourse glue, extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (zone **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *used by* (whose) / *by* / *contrary to*; placement decides the job; **`uom`** before a `/th/` stance is *contrary to* that stance), and fused [Cite plus a hook](/hook-compounds#hook-compounds) (citation plus extra-noun hook). Optional `/w/` immediately before the free hook grades that hook (including restrictors); `/b/` sits immediately after the free hook. Stacked discourse, *somewhere* / *here* / *there*, resume **-r**, parallel chains, and extra placements are [discourse hooks](/discourse-hooks).
 
 [Hooks](/hooks)
 
@@ -787,13 +787,13 @@ Prefix-less *including / rather / instead / except*, discourse glue, extra-noun 
 
 ### Hook prefix
 
-Role letter + extra-noun hook vowels + **`x`** (or **`mx`** for the hook's **-m** frame) + stem: something in that hook's relation to the stem (`guoxuvuvul` *anti-fighting*, `gamxohalal` *mid-ocean*). Like English *anti-*, *in-*, *trans-*, *-ward*.
+Role letter + extra-noun hook vowels + **`x`** (or **`mx`** for the hook's **-m** zone) + stem: something in that hook's relation to the stem (`guoxuvuvul` *anti-fighting*, `gamxohalal` *mid-ocean*). Like English *anti-*, *in-*, *trans-*, *-ward*.
 
 [Cite plus a hook](/hook-compounds#hook-prefixes)
 
 ### Hooked join
 
-Role letter + extra-noun hook vowels (+ **`m`** for the frame or **`r`** to point back) + **`x`** + a join, with the hook's landmark as the `bl-` word after it: the join's set, bounded by that relation (`zexual blohehal` *everyone at the house*, `doxar bluwen` *something for me*). On `/h/` it bounds which times a restrictor covers (`huxal blanulul` *never since the thunderstorm*).
+Role letter + extra-noun hook vowels (+ **`m`** for the zone or **`r`** to point back) + **`x`** + a join, with the hook's landmark as the `bl-` word after it: the join's set, bounded by that relation (`zexual blohehal` *everyone at the house*, `doxar bluwen` *something for me*). On `/h/` it bounds which times a restrictor covers (`huxal blanulul` *never since the thunderstorm*).
 
 [Hook plus a join](/hooked-joins#hooked-joins)
 
@@ -844,7 +844,7 @@ A sibling parent map with no parent of its own. On **a o e u**, **size** is amou
 
 ### So that / event purpose
 
-Clause-pole **`hovam`**: intended outcome of the host (*so that Alazun sits*; NP *for a money-bag*). Not locative *toward*, not sake **`tho`**, not discourse *therefore*.
+Clause-hinge **`hovam`**: intended outcome of the host (*so that Alazun sits*; NP *for a money-bag*). Not locative *toward*, not sake **`tho`**, not discourse *therefore*.
 
 [Dependents](/dependents#so-that)
 
@@ -888,7 +888,7 @@ Short word in a role slot (`darl` / `barl` / `derl` / `dorl` / `durl`, open **`-
 
 [Stand-in vowels](/stand-in-vowels#stand-in)
 
-**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole-np-pole) (`thahum`, `thohem`) name the relation; the stand-in fills `/b/`.
+**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause hinges](#clause-hinge-np-hinge) (`thahum`, `thohem`) name the relation; the stand-in fills `/b/`.
 
 ### Special pronoun
 
@@ -904,7 +904,7 @@ Utterance setting: statement / question / command / prohibition.
 
 [Firm and soft](/firm-soft#speech-act)
 
-**Compare with:** sake **prescription warrant** is [invited / unasked / tryout](#invited-unasked-tryout), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
+**Compare with:** sake **prescription warrant** is [invited / unasked / tryout](#invited-unasked-tryout), not speech act. A [polar particle](#polar-particle) sits at the left edge.
 
 ### Sufficient / necessary
 
@@ -920,7 +920,7 @@ A dictionary word whose head is a bare root tail instead of a second root (`zahu
 
 ### Check-back
 
-**`yel`** plus a [polar stance](#polar-stance) word as its own turn after a sentence: asks the listener for that answer (`yel yaol.` *…, right?*, `yel yael.` *…, okay?*, `yel yuol.` *…, or am I wrong?*).
+**`yel`** plus a [polar particle](#polar-particle) as its own turn after a sentence: asks the listener for that answer (`yel yaol.` *…, right?*, `yel yael.` *…, okay?*, `yel yuol.` *…, or am I wrong?*).
 
 [Yes, no, and not that](/polar-inventory#check-backs)
 
@@ -1035,4 +1035,4 @@ Question type with no join **-r**.
 
 [Questions](/questions#question)
 
-**Compare with:** [polar stance](#polar-stance) is **`yaol` / `yuol` / …**, not the yes/no question type.
+**Compare with:** [polar particle](#polar-particle) is **`yaol` / `yuol` / …**, not the yes/no question type.

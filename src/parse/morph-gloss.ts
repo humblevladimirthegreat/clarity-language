@@ -112,7 +112,7 @@ const JOIN_JOB_STANDALONE: Record<string, string> = {
   ua: "everything",
 };
 
-const JOIN_ACT: Record<string, string> = {
+const LIST_VERB: Record<string, string> = {
   a: "includes",
   e: "choose",
   ae: "picks",
@@ -410,11 +410,11 @@ export function senseLabel(
     const body = sensePieces(word, tables, ctx).join("-");
     return word.plural ? `${body}-x` : body;
   }
-  const hinge =
+  const joiner =
     word.family.kind === "x" && (word.family.xFamily === "sake" || word.family.xFamily === "scope" || word.family.xFamily === "lateral")
       ? "-th-"
       : "-x-";
-  let body = sensePieces(word, tables, ctx).join(hinge);
+  let body = sensePieces(word, tables, ctx).join(joiner);
   // **-ln**: one thing the name applies to (proper-names.md#name-instance--ln).
   if (word.ending === "ln") body += ".instance";
   if (word.plural) return body ? `${body}-x` : "-x";
@@ -1106,7 +1106,7 @@ function hookLabel(form: string, ctx: MorphGlossContext): string {
     case "resume":
     case "extraNoun":
     case "genitive":
-    case "frame":
+    case "zone":
       return HOOK_EXTRA_NOUN[form] ?? form;
     case "discourse":
       return HOOK_JOB[form] ?? form;
@@ -1171,7 +1171,7 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
     return backContent[series] ?? "that-same-content";
   }
 
-  if (word.reading === "joinAct") return JOIN_ACT[series] ?? "join-act";
+  if (word.reading === "listVerb") return LIST_VERB[series] ?? "list-verb";
   if (word.reading === "joinRelation") {
     if (word.pos === "h" && series === "u") return "refusing";
     return JOIN_RELATION[series] ?? "join-relation";
@@ -1431,7 +1431,7 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
 
   if (family.xFamily === "hookPrefix") {
     // The hook, the seam, then the stem; a stem compound keeps its `-x-` (`against-x-house-x-walk`), and label scope
-    // keeps its `-th-` hinge (`against-x-fight-th-role`; hook-compounds.md#hook-prefixes).
+    // keeps its `-th-` joiner (`against-x-fight-th-role`; hook-compounds.md#hook-prefixes).
     const roots = family.rightRoots ?? [];
     const stem = family.stemHook
       ? hookCompoundGloss(
@@ -1455,7 +1455,7 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
             pos: word.pos,
           });
     // Ability / greeting bids: one hyphenated english slot (`walking-unable-temporary`,
-    // `Name-minutes`). Values keep a visible `-th-` hinge (`competence-th-motive`).
+    // `Name-minutes`). Values keep a visible `-th-` joiner (`competence-th-motive`).
     if (word.reading === "greeting") {
       const stance = GREETING_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "greeting";
       return [`${host}-${stance}`];

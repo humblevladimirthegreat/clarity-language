@@ -76,7 +76,7 @@ l m r n
 │     ├── IDENTITY (is / basically)
 │     ├── exactly-like vs like
 │     ├── each-other (strictly pairwise / everyday both-ways)
-│     └── place hook contact vs frame (in / amid, at / near, for / used by)
+│     └── place hook contact vs setting (in / amid, at / near, for / used by)
 ├── completeness — how fully the slot is specified
 │     ├── join closed / open / unnamed / named list
 │     ├── restrictor / more occasions / universals (are join)
@@ -88,7 +88,7 @@ l m r n
 │     ├── fault (broke a rule / plain cause / a share among others)
 │     ├── say-word (a rule / a person said so / nobody said)
 │     ├── clause-join -n (sequence)
-│     └── join-act / join-relation -n (the list-move as a verb or relation)
+│     └── list verb / join-relation -n (the list-move as a verb or relation)
 ```
 
 <PageBreak />
@@ -175,7 +175,7 @@ On a content word, **-n** marks a name ([word endings](/proper-names#proper-name
 |-------|------------------------|---------|-------|
 | [special pronouns](/pronouns#special-pronouns), the [generic pronoun](/pronouns#generic-pronoun), and the [topic pronoun](/topic#topic-pronoun) | the usual ending on these person words | `zuwen` *I*, `zeyen` *one*, `zalen` *the topic* | B |
 | [stand-ins](/stand-in-roles#stand-in-roles) | **-rn** (single vowel) or **-n** (stacked vowel) names a kind of sentence content (statement, question, command, prohibition); on `/v/`, the matching response verb | `darn` *a statement*, `varn` *state* | A |
-| [join words](/joins) with a `/v/`, `/x/`, `/ɡ/`, or `/h/` first letter | join content: a [join-act](/join-acts#join-act-verbs) verb, clause [sequence](/clause-sequence#clause-sequence), or a [join-relation](/join-relations#join-relations) | `van` *include*, `xan` *and then*, `gan` *including* | B / I |
+| [join words](/joins) with a `/v/`, `/x/`, `/ɡ/`, or `/h/` first letter | join content: a [list verb](/list-verbs#list-verbs), clause [sequence](/clause-sequence#clause-sequence), or a [join-relation](/join-relations#join-relations) | `van` *include*, `xan` *and then*, `gan` *including* | B / I |
 
 These still count as names:
 

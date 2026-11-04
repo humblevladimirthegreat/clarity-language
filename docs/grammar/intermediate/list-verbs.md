@@ -2,9 +2,9 @@
 band: intermediate
 ---
 
-# Join-act verbs {#join-act-verbs-sitting}
+# List verbs {#list-verbs-sitting}
 
-### Join-act verbs {#join-act-verbs}
+### List verbs {#list-verbs}
 
 When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the join vowel for that move, and ending **-n** (`van`, `ven`, …). The object is one `/d/` phrase: one thing, or a group joined with a [phrase join](/joins). You can now name the act itself instead of only joining a list. On these verbs, **-n** does not mark a [name](proper-names.md#proper-name--n).
 
@@ -21,7 +21,7 @@ For an associative group (*Alazun and company*), put noun **-x** on the object a
 **Compare with:** *and then* between sentences uses clause [sequence](/clause-sequence#sequence) (`xan`, …), not `van`.
 
 <!-- cheat-sheet: joins-hooks -->
-| Clause sequence | Join-act verb | Shared vowel move |
+| Clause sequence | List verb | Shared vowel move |
 |-------------|---------------|-------------------|
 | `xan` | `van` | add / include |
 | `xen` | `ven` | one / choose |
@@ -29,7 +29,7 @@ For an associative group (*Alazun and company*), put noun **-x** on the object a
 
 The `/x/` forms connect clauses and keep one speech act. Their `/v/` counterparts take an object and name an act on it. Prioritizing (`von`) has no clause sequence, and of the stacked vowels only `xaen` and `xuon` have one; the `/v/` forms follow the same series in the inventory below.
 
-These are ordinary content verbs. To refer back to a join-act you already named, use a whole-stem **-r** resume or say it again in full.
+These are ordinary content verbs. To refer back to one of these acts you already named, use a whole-stem **-r** resume or say it again in full.
 
 Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 
@@ -46,7 +46,7 @@ Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 | **`voen`** | put the objects at the same rank | *equates / ties* | **oe** ≈ rank then choice (same height) | `zazozon dalazun dahelan dal voen` |
 | **`vuon`** | rank the object lower | *deprioritizes* | **uo** ≈ undo + rank (drop this rank) | `zazozon dugedam vuon` |
 
-English *refuse* vs *leave out*: `zazozon dumudel vun` (*Azozon refuses meat*) vs `zazozon dumudel vuan` (*Azozon excludes meat*). One locked choice vs an open pick: `zazozon duwedal ven` vs `zazozon duwedal vaen`. Rank vs sequence: `zazozon durewem von` (*prioritizes the workaround*: first by importance) vs `zazozon durewem vaon` (*starts with the workaround*: first in order).
+English *refuse* vs *leave out*: `zazozon dumudel vun` (*Azozon refuses meat*) vs `zazozon dumudel vuan` (*Azozon excludes meat*). One locked choice vs an open pick: `zazozon duwedal ven` vs `zazozon duwedal vaen`. Rank vs route: `zazozon durewem von` (*prioritizes the workaround*: first by importance) vs `zazozon durewem vaon` (*starts with the workaround*: first in order).
 
 ### Practice {#intermediate-practice}
 

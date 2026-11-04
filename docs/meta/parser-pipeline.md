@@ -100,25 +100,25 @@ Semantic actions build a discriminated `MorphWord` only. **No lexicon calls insi
 3. Else value/ability vs [conversation length](/conversation-length#conversation-length) (named citation or `/y/` + **-n**) vs published root vs [hook compound](/hook-compounds#hook-compounds) (citation + extra-noun hook) vs dictionary-compound stem
 4. Else unknown / foreign payload
 
-This is where join-act vs soft clause **-n**, mood vs manner, value vs ability, etc. become **readings** without re-parsing spelling.
+This is where list verb vs soft clause **-n**, mood vs manner, value vs ability, etc. become **readings** without re-parsing spelling.
 
 ### Closed forms follow the lexicon
 <a id="closed-forms-follow-lexicon"></a>
 
-Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause poles, locatives, means, similative *like*, exchange *for*, proxy *on behalf of*, of-relations, …) are **the published root** for that host (emoji / English literal) plus the overlay ending. When you **add** a closed overlay, pick an existing published row and spell that root plus ending (`ovu` + **-m** → **`ovum`**). Do **not** freeze a private spelling, do **not** coin a new lexicon word just to host the overlay, and do **not** put a productive stem (numeric derivation, role, values) in `sense_form`. If conversion reassigns *fishing*, witnessed **`thevom`** moves with **`evo`**. If conversion reassigns *attest*, live **`thodom`** moves with **`odo`**.
+Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause hinges, locatives, means, similative *like*, exchange *for*, proxy *on behalf of*, of-relations, …) are **the published root** for that host (emoji / English literal) plus the overlay ending. When you **add** a closed overlay, pick an existing published row and spell that root plus ending (`ovu` + **-m** → **`ovum`**). Do **not** freeze a private spelling, do **not** coin a new lexicon word just to host the overlay, and do **not** put a productive stem (numeric derivation, role, values) in `sense_form`. If conversion reassigns *fishing*, witnessed **`thevom`** moves with **`evo`**. If conversion reassigns *attest*, live **`thodom`** moves with **`odo`**.
 
-**Exception:** join-act / join-relation sense-forms (`an` / `en` / `aen` / …) and other **vowel-series** morphology (join fences, restrictor cores) are keyed by **`a` / `o` / `e` / `u`**, not by a lexicon row — those spellings stay. Do **not** add a hosted overlay whose `sense_form` is a join stem (`uan`, `an`, …) unless it is this vowel-series family.
+**Exception:** list verb / join-relation sense-forms (`an` / `en` / `aen` / …) and other **vowel-series** morphology (join fences, restrictor cores) are keyed by **`a` / `o` / `e` / `u`**, not by a lexicon row — those spellings stay. Do **not** add a hosted overlay whose `sense_form` is a join stem (`uan`, `an`, …) unless it is this vowel-series family.
 
 ### Overlay kinds
 <a id="overlay-kinds"></a>
 
-[`lexicon-overlays.csv`](../../data/lexicon-overlays.csv) has **`kind`** (taxonomy) and **`gloss`** (stable English tag). Not on published or compounds CSVs. `classify` maps `kind` → `LexReading`; morph gloss uses `gloss`. Host validation skips `join_act` / `join_relation`.
+[`lexicon-overlays.csv`](../../data/lexicon-overlays.csv) has **`kind`** (taxonomy) and **`gloss`** (stable English tag). Not on published or compounds CSVs. `classify` maps `kind` → `LexReading`; morph gloss uses `gloss`. Host validation skips `list_verb` / `join_relation`.
 
 | `kind` | `LexReading` | Inventory |
 |--------|--------------------|-----------|
 | `sake` | `sake` (on `x`+vowel hosts only) | eight sakes + unspecified; bare spelling is ordinary content |
 | `ability` | `ability` | hostless **`ubo`** |
-| `join_act` | `joinAct` | vowel-series `/v/` **`an`** / **`en`** / … |
+| `list_verb` | `listVerb` | vowel-series `/v/` **`an`** / **`en`** / … |
 | `join_relation` | `joinRelation` | same stems on `/g/` `/h/` |
 | `evidential` | `mood` | LIVE / MEMORY / … |
 | `residue` | `mood` | RESIDUE **`amo`** |
@@ -132,7 +132,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause pole
 | `attempt` | `mood` | ATTEMPT commitment (**`udu`**) |
 | `want` | `mood` | WANT lastingness |
 | `cause` | `mood` | CAUSE **`ege`** |
-| `clause_pole` | `mood` | *if* / *only-if* / *iff* / *because* / *so-that* / *as-of* / … |
+| `clause_hinge` | `mood` | *if* / *only-if* / *iff* / *because* / *so-that* / *as-of* / … |
 | `identity` | `mood` | IDENTITY **`ugo`** |
 | `locative` | `locative` | *between* |
 | `means` | `means` | *using* **`ahada`** |
@@ -154,7 +154,7 @@ Owns:
 
 - Utterance framing ([speech-moves.md](/speech-moves) — `/y/` turns, including a written `/y/` span at the left edge ([spans.md](/spans#y-spans)), omissible default assertoric; [dependents.md](/dependents) — `/x/` continue)
 - Right-close joins at phrase / VP / clause level (illegal left fence); a `/th/` stance word right before a rank join (`e` / `ue` / `oe`, **-l** / **-m**) is that fence's bar, an `NpItem` of kind `bar` ([comparatives.md](/comparative-arity#bars))
-- `uom` right before a `/th/` stance word holds that stance (with its hosted `/b/`) as the hook unit's `frame`, job `frame`, at the left edge too: the stance the event goes against, not a stance on the claim ([sakes.md](/prescription#contrary-to-stance)). Enforce checks the frame kind (`frameKind`)
+- `uom` right before a `/th/` stance word holds that stance (with its hosted `/b/`) as the hook unit's `zone`, job `zone`, at the left edge too: the stance the event goes against, not a stance on the claim ([sakes.md](/prescription#contrary-to-stance)). Enforce checks the zone kind (`zoneKind`)
 - Adjunct islands **`{ … }`** (`IslandOpen` / `IslandClose` tokens); a mention marker before a topic span (`topicMarker`)
 - Complex `/ɡ|h/` + `/b/`; `/w/` + `/b/` only for *as-of* overlays; floating `/h/` as adjuncts
 - Matrix-final **stand-in** (`darl` / `barl`) + contiguous dependent

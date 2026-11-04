@@ -125,7 +125,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 | In the clause | With no holder | With a holder |
 |---------------|----------------|---------------|
 | The event | you assert it | what the holder takes to be so; you do not assert it |
-| MAY, CAUSE poles, PLAN, prescription | yours | the holder's |
+| MAY, CAUSE hinges, PLAN, prescription | yours | the holder's |
 | [Sake](/sakes) words and [emotion compose](feelings-permission.md#emotion-compose), with their endings | your stake and feeling | the holder's stake and feeling |
 | A `/ɡ/` sake's *my* reading ([personal possession](/sakes#personal-possession)) | your belonging | the holder's belonging |
 | Another evidential | how you know | how the holder knows |

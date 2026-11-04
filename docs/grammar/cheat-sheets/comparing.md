@@ -125,7 +125,7 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [consent `hwudam`](/stance-bars#stance-bars) | the agreed terms | *more than agreed* | A |
 | [speaker attitude `thuwuyom`, `thewemum`](/stance-bars#stance-bars) | the case you hoped for or feared | *than hoped* / *than feared* | A |
 
-The bar's ending keeps its own job: on a channel it is evidence strength (`thubol`, `thubor`). The bar's `/b/` is the source (REPORTED), the holder (WANT, a say word over the act), or whose cases set the pattern (PATTERN). Only stances that set a value are bars: a pole, MAY, MIRATIVE, DECISION, and ATTEMPT are not.
+The bar's ending keeps its own job: on a channel it is evidence strength (`thubol`, `thubor`). The bar's `/b/` is the source (REPORTED), the holder (WANT, a say word over the act), or whose cases set the pattern (PATTERN). Only stances that set a value are bars: a hinge, MAY, MIRATIVE, DECISION, and ATTEMPT are not.
 
 ### Vague amounts {#vague}
 

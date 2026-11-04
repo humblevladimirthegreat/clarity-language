@@ -104,7 +104,7 @@ The stem is still the event. The part says which quality of it you mean. Pointer
 >
 > "Azozon walks in haste. Ahelan sees the way it was done."
 
-If that clause named no manner word, `dwuher` is the event's own manner: how walking went, unnamed. A restrictor, a time pole, or a [say word](permission-consent.md#say-words) is already doing its own job on `/h/`, so the pointer skips it.
+If that clause named no manner word, `dwuher` is the event's own manner: how walking went, unnamed. A restrictor, a time hinge, or a [say word](permission-consent.md#say-words) is already doing its own job on `/h/`, so the pointer skips it.
 
 | Part | Names | Compound | Pointer |
 |------|-------|----------|---------|
@@ -120,7 +120,7 @@ Scope **`a`** / **`e`** / **`o`** / **`u`** still say how far the label reaches:
 
 A **`g`** pointer is the `/d/` participant's state when the event has one, and the `/z/` participant's otherwise. After *Azozon punches Alazun*, `dwuger` is Alazun's state; after *Azozon runs*, it is Azozon's. **`w`** always reads the event's own extent: a `/w/` word grades the next adjective, never the event, so `dwuwer` is *that much*. `dwugar` and `dwuwar` are not words: no clause names a resulting state or an amount for *the other* to differ from.
 
-A **`th`** pointer reads [sake](/sakes) words, feeling roots, and [causation poles](/causation) on `/th/`. A channel, MAY, the notional, or a holder is the speaker's stance on the *claim*, not a stance on the event, so the pointer skips those too. With no such word, `dwuther` is still *the reason for it*: the gap the spelling fills.
+A **`th`** pointer reads [sake](/sakes) words, feeling roots, and [causation hinges](/causation) on `/th/`. A channel, MAY, the notional, or a holder is the speaker's stance on the *claim*, not a stance on the event, so the pointer skips those too. With no such word, `dwuther` is still *the reason for it*: the gap the spelling fills.
 
 A **`y`** pointer reaches turns, not events: `dwuyer` the latest turn, `dwuyar` the one before it, `dwuyor` this very turn, `dwuyur` whatever was said. With **-m**, `dwuyem` is what the saying did, apart from what it said.
 

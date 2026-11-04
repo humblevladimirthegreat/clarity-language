@@ -528,7 +528,7 @@ z-Azozon | d-sandwich | v-includes
 
 **`van`** adds it to the set; **`ven`** would lock it as the one pick.
 
-**Rule:** [Join-act verbs](join-acts.md#join-act-verbs)
+**Rule:** [List verbs](list-verbs.md#list-verbs)
 :::
 
 **25.** *Alazun walks with Ahelan.* `zalazun han blahelan vowurol.` or `zalazun hun blahelan vowurol.`

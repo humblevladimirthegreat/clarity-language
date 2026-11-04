@@ -54,7 +54,7 @@ four vowels
 │           ├── restrictors / more occasions
 │           ├── comparatives / equative
 │           ├── number markers
-│           ├── join-act / join-relation
+│           ├── list verb / join-relation
 │           ├── root job — what the root does to stuff / tail suffixes
 │           └── hook — how much of A is still in the slot
 │                 ├── same-role
@@ -134,7 +134,7 @@ Two vowels keep the same pieces: **u** first inverts, the rest combine. Join sta
 
 | Vowels | [Join](/joins#join-type-vowel-series) | Stage |
 |--------|----------------------------------------|-------|
-| **ao** | [*A, then B*](/rank-joins#sequence-ao) | I |
+| **ao** | [*A, then B*](/rank-joins#route-ao) | I |
 | **ua** | [*everything but*](/joins#everything-ua) | B |
 | **uo** | [rank reversed](/rank-joins#invert-u-stacks) | I |
 | **ae** | [*and/or*](/rank-joins#exclusivity-and-denying-a-whole-list) | I |
@@ -155,7 +155,7 @@ Stand-ins and say-word answers use the same vowels as the [act words](/speech-mo
 
 #### Polar answers {#polar}
 
-Polar answers stack two of these vowels. Beginner *yes* / *no* / *sure*: [polar stance](/questions#polar-stance). The rest: [polar inventory](/polar-inventory).
+Polar answers stack two of these vowels. Beginner *yes* / *no* / *sure*: [polar particle](/questions#polar-particle). The rest: [polar inventory](/polar-inventory).
 
 | Vowels | Polar | Stage |
 |--------|-------|-------|

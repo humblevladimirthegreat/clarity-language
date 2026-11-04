@@ -189,7 +189,7 @@ const BOUNDED_JOIN: Readonly<Record<string, string>> = {
   anyone: "er", anybody: "er", anything: "er",
   nobody: "al", nothing: "al",
 };
-/** The extra-noun hook a preposition names, as written before the seam (`m` for a frame; extra-noun-hooks.md#extra-noun-intermediate). */
+/** The extra-noun hook a preposition names, as written before the seam (`m` for a zone; extra-noun-hooks.md#extra-noun-intermediate). */
 const SEAM_HOOK: Readonly<Record<string, string>> = {
   in: "a", inside: "a", amid: "am", among: "am", on: "ae", over: "aem", at: "e", near: "em", by: "aom",
   toward: "oe", towards: "oe", from: "u", "away from": "um", "out of": "ua", through: "ue",

@@ -24,7 +24,7 @@ function formalClassifyPair(a: ClassifyHit, b: ClassifyHit): boolean {
   if (sources.has("number") && sources.has("published")) return true;
   if (sources.has("overlay") && sources.has("join")) {
     const readings = new Set([a.reading, b.reading]);
-    if (readings.has("joinAct") || readings.has("joinRelation") || readings.has("overlay")) return true;
+    if (readings.has("listVerb") || readings.has("joinRelation") || readings.has("overlay")) return true;
   }
   return false;
 }

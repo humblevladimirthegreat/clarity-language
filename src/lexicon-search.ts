@@ -40,7 +40,7 @@ export type PublishedRow = {
 export const OVERLAY_KINDS = [
   "sake",
   "ability",
-  "join_act",
+  "list_verb",
   "join_relation",
   "evidential",
   "residue",
@@ -54,7 +54,7 @@ export const OVERLAY_KINDS = [
   "attempt",
   "want",
   "cause",
-  "clause_pole",
+  "clause_hinge",
   "identity",
   "locative",
   "pairing",
@@ -72,7 +72,7 @@ export type OverlayKind = (typeof OVERLAY_KINDS)[number];
 const OVERLAY_KIND_SET = new Set<string>(OVERLAY_KINDS);
 
 export function isJoinOverlayKind(kind: OverlayKind): boolean {
-  return kind === "join_act" || kind === "join_relation";
+  return kind === "list_verb" || kind === "join_relation";
 }
 
 export type OverlayRow = {

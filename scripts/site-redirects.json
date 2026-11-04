@@ -129,6 +129,11 @@
       "from": "/grammar/join-islands.html",
       "to": "/grammar/join-limits.html",
       "note": "Public URL after renaming join-islands.md to join-limits.md."
+    },
+    {
+      "from": "/grammar/join-acts.html",
+      "to": "/grammar/list-verbs.html",
+      "note": "Public URL after renaming join-acts.md to list-verbs.md."
     }
   ]
 }

@@ -87,77 +87,77 @@ eyul,w,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal follow-up (practi
 odam,h,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,can-and-cant.md#ability-fallback
 odam,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,can-and-cant.md#ability-fallback
 orel,g,🪙,identity,IDENTITY,IDENTITY copula (identical-to / same-as),coin has two faces one substance; identity is one referent two labels,predication.md#identity
-ohem,th,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,dependents.md#poles
-ohem,g,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if
-ehom,th,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,dependents.md#poles
-ehom,g,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,iff-fault.md#only-because
-ahum,th,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,dependents.md#poles
-ahul,th,🧱,clause_pole,because.fault,BECAUSE clause pole with fault (the reason broke a norm),a wall stands on its foundation; -l locks the blame on a broken norm,fault.md#fault
-ahur,th,🧱,clause_pole,because.share,BECAUSE clause pole with a share (the reason contributed among others),a wall stands on its foundation; -r is one wall among several holding it up,fault.md#fault
-ahum,g,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,iff-fault.md#only-because
-ebem,th,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,dependents.md#poles
-ebem,g,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
-ezem,h,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#poles
-ezem,g,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#poles
-erom,h,♊,clause_pole,while,WHILE clause pole (concurrent),gemini twins mirror two sides; duality is while both sides at once,dependents.md#poles
-erom,g,♊,clause_pole,while,WHILE clause pole (concurrent),gemini twins mirror two sides; duality is while both sides at once,sentence-linkers.md#time-pole-on-noun
-arum,h,⏲️,clause_pole,until,UNTIL clause pole (endpoint bound),timer counts down to zero; deadline is until the endpoint,dependents.md#poles
-arum,g,⏲️,clause_pole,until,UNTIL clause pole (endpoint bound),timer counts down to zero; deadline is until the endpoint,sentence-linkers.md#time-pole-on-noun
-uvahum,h,🏁,clause_pole,by,BY clause pole (deadline: done at or before the endpoint),the checkered flag marks the finish; the event is done by the time it is reached,dependents.md#poles
-uvahum,g,🏁,clause_pole,by,BY clause pole (deadline: done at or before the endpoint),the checkered flag marks the finish; the event is done by the time it is reached,sentence-linkers.md#time-pole-on-noun
-abam,h,🎒,clause_pole,before,BEFORE clause pole (ahead-of),backpack holds what you need ahead; preparation is before the event,dependents.md#poles
-abam,g,🎒,clause_pole,before,BEFORE clause pole (ahead-of),backpack holds what you need ahead; preparation is before the event,sentence-linkers.md#time-pole-on-noun
-alam,h,⌛,clause_pole,after,AFTER clause pole (just-after),the sand has just run through; recency is after the prior edge,dependents.md#poles
-alam,g,⌛,clause_pole,after,AFTER clause pole (just-after),the sand has just run through; recency is after the prior edge,sentence-linkers.md#time-pole-on-noun
-ovam,h,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#poles
-ovam,g,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#poles
-ahom,h,➡️,clause_pole,so-result,SO-THAT-RESULT clause pole (outcome that follows from the host),east is the way things move on; the dependent is what the host led to,sentence-linkers.md#result-pole
-enam,h,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,as-of.md#as-of
-enam,g,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,as-of.md#as-of
-enam,w,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,as-of.md#as-of
-enam,th,📒,clause_pole,as-of.ledger,AS-OF stance pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,as-of.md#stance-as-of
-enar,h,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,as-of.md#as-of
-enar,g,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,as-of.md#as-of
-enar,w,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,as-of.md#as-of
-enar,th,📒,clause_pole,as-of.ledger,AS-OF stance pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,as-of.md#stance-as-of
-unom,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,as-of.md#as-of
-unom,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,as-of.md#as-of
-unom,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,as-of.md#as-of
-unom,th,🔖,clause_pole,as-of.bookmark,AS-OF stance pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,as-of.md#stance-as-of
-unor,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,as-of.md#as-of
-unor,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,as-of.md#as-of
-unor,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,as-of.md#as-of
-unor,th,🔖,clause_pole,as-of.bookmark,AS-OF stance pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,as-of.md#stance-as-of
-ewom,th,⚙️,cause,CAUSE,CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make),a machine runs on mechanism; mechanism frames how the link works,cause.md#cause
+ohem,th,🚪,clause_hinge,if,IF clause hinge (one-way conditional),door opens one way; opportunity is if without iff force,dependents.md#hinges
+ohem,g,🚪,clause_hinge,if,IF clause hinge (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if
+ehom,th,↔️,clause_hinge,iff,IFF clause hinge (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,dependents.md#hinges
+ehom,g,↔️,clause_hinge,iff,IFF clause hinge (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,iff-fault.md#only-because
+ahum,th,🧱,clause_hinge,because,BECAUSE clause hinge (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,dependents.md#hinges
+ahul,th,🧱,clause_hinge,because.fault,BECAUSE clause hinge with fault (the reason broke a norm),a wall stands on its foundation; -l locks the blame on a broken norm,fault.md#fault
+ahur,th,🧱,clause_hinge,because.share,BECAUSE clause hinge with a share (the reason contributed among others),a wall stands on its foundation; -r is one wall among several holding it up,fault.md#fault
+ahum,g,🧱,clause_hinge,because,BECAUSE clause hinge (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,iff-fault.md#only-because
+ebem,th,🧻,clause_hinge,only-if,ONLY-IF clause hinge (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,dependents.md#hinges
+ebem,g,🧻,clause_hinge,only-if,ONLY-IF clause hinge (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
+ezem,h,🦓,clause_hinge,although,ALTHOUGH clause hinge (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#hinges
+ezem,g,🦓,clause_hinge,although,ALTHOUGH clause hinge (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#hinges
+erom,h,♊,clause_hinge,while,WHILE clause hinge (concurrent),gemini twins mirror two sides; duality is while both sides at once,dependents.md#hinges
+erom,g,♊,clause_hinge,while,WHILE clause hinge (concurrent),gemini twins mirror two sides; duality is while both sides at once,sentence-linkers.md#time-hinge-on-noun
+arum,h,⏲️,clause_hinge,until,UNTIL clause hinge (endpoint bound),timer counts down to zero; deadline is until the endpoint,dependents.md#hinges
+arum,g,⏲️,clause_hinge,until,UNTIL clause hinge (endpoint bound),timer counts down to zero; deadline is until the endpoint,sentence-linkers.md#time-hinge-on-noun
+uvahum,h,🏁,clause_hinge,by,BY clause hinge (deadline: done at or before the endpoint),the checkered flag marks the finish; the event is done by the time it is reached,dependents.md#hinges
+uvahum,g,🏁,clause_hinge,by,BY clause hinge (deadline: done at or before the endpoint),the checkered flag marks the finish; the event is done by the time it is reached,sentence-linkers.md#time-hinge-on-noun
+abam,h,🎒,clause_hinge,before,BEFORE clause hinge (ahead-of),backpack holds what you need ahead; preparation is before the event,dependents.md#hinges
+abam,g,🎒,clause_hinge,before,BEFORE clause hinge (ahead-of),backpack holds what you need ahead; preparation is before the event,sentence-linkers.md#time-hinge-on-noun
+alam,h,⌛,clause_hinge,after,AFTER clause hinge (just-after),the sand has just run through; recency is after the prior edge,dependents.md#hinges
+alam,g,⌛,clause_hinge,after,AFTER clause hinge (just-after),the sand has just run through; recency is after the prior edge,sentence-linkers.md#time-hinge-on-noun
+ovam,h,🥅,clause_hinge,so-that,SO-THAT clause hinge (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#hinges
+ovam,g,🥅,clause_hinge,so-that,SO-THAT clause hinge (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#hinges
+ahom,h,➡️,clause_hinge,so-result,SO-THAT-RESULT clause hinge (outcome that follows from the host),east is the way things move on; the dependent is what the host led to,sentence-linkers.md#result-hinge
+enam,h,📒,clause_hinge,as-of.ledger,AS-OF clause hinge (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,as-of.md#as-of
+enam,g,📒,clause_hinge,as-of.ledger,AS-OF clause hinge (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,as-of.md#as-of
+enam,w,📒,clause_hinge,as-of.ledger,AS-OF clause hinge (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,as-of.md#as-of
+enam,th,📒,clause_hinge,as-of.ledger,AS-OF stance hinge (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,as-of.md#stance-as-of
+enar,h,📒,clause_hinge,as-of.ledger,AS-OF clause hinge (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,as-of.md#as-of
+enar,g,📒,clause_hinge,as-of.ledger,AS-OF clause hinge (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,as-of.md#as-of
+enar,w,📒,clause_hinge,as-of.ledger,AS-OF clause hinge (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,as-of.md#as-of
+enar,th,📒,clause_hinge,as-of.ledger,AS-OF stance hinge (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,as-of.md#stance-as-of
+unom,h,🔖,clause_hinge,as-of.bookmark,AS-OF clause hinge (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,as-of.md#as-of
+unom,g,🔖,clause_hinge,as-of.bookmark,AS-OF clause hinge (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,as-of.md#as-of
+unom,w,🔖,clause_hinge,as-of.bookmark,AS-OF clause hinge (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,as-of.md#as-of
+unom,th,🔖,clause_hinge,as-of.bookmark,AS-OF stance hinge (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,as-of.md#stance-as-of
+unor,h,🔖,clause_hinge,as-of.bookmark,AS-OF clause hinge (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,as-of.md#as-of
+unor,g,🔖,clause_hinge,as-of.bookmark,AS-OF clause hinge (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,as-of.md#as-of
+unor,w,🔖,clause_hinge,as-of.bookmark,AS-OF clause hinge (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,as-of.md#as-of
+unor,th,🔖,clause_hinge,as-of.bookmark,AS-OF stance hinge (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,as-of.md#stance-as-of
+ewom,th,⚙️,cause,CAUSE,CAUSE mood (mechanism framing); a hosted /b/ with no hinge is the causer (make),a machine runs on mechanism; mechanism frames how the link works,cause.md#cause
 ewom,w,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),a machine runs on mechanism; mechanism frames how the link works,cause.md#cause
-an,v,,join_act,includes,join-act includes or adds object,set join a+n as verb; includes adds this object to the set,join-acts.md#join-act-verbs
+an,v,,list_verb,includes,list verb includes or adds object,set join a+n as verb; includes adds this object to the set,list-verbs.md#list-verbs
 an,g,,join_relation,including,join-relation including (adjective + argument),set join a+n on /g/; including frames host with argument,join-relations.md#join-relations
 an,h,,join_relation,including,join-relation with or including (adverb + argument),set join a+n on /h/; with frames event alongside argument,join-relations.md#join-relations
-on,v,,join_act,prioritizes,join-act prioritizes object,rank join o+n as verb; prioritizes puts this first,join-acts.md#join-act-verbs
+on,v,,list_verb,prioritizes,list verb prioritizes object,rank join o+n as verb; prioritizes puts this first,list-verbs.md#list-verbs
 on,g,,join_relation,prioritizing,join-relation prioritizing (adjective),rank join o+n on /g/; prioritizing heads by argument,join-relations.md#join-relations
 on,h,,join_relation,prioritizing,join-relation prioritizing (adverb),rank join o+n on /h/; prioritizing puts argument first,join-relations.md#join-relations
-aon,v,,join_act,starts-with,join-act starts with object,sequence ao+n as verb; starts with puts the object first in order,join-acts.md#join-act-verbs
-aon,g,,join_relation,starting-with,join-relation starting with (adjective),sequence ao+n on /g/; starting with puts argument first in order,join-relations.md#join-relations
-aon,h,,join_relation,starting-with,join-relation starting with (adverb),sequence ao+n on /h/; starting with puts argument first in order,join-relations.md#join-relations
-un,v,,join_act,denies,join-act denies or refuses object,negation u+n as verb; denies refuses the object,join-acts.md#join-act-verbs
+aon,v,,list_verb,starts-with,list verb starts with object,route ao+n as verb; starts with puts the object first in order,list-verbs.md#list-verbs
+aon,g,,join_relation,starting-with,join-relation starting with (adjective),route ao+n on /g/; starting with puts argument first in order,join-relations.md#join-relations
+aon,h,,join_relation,starting-with,join-relation starting with (adverb),route ao+n on /h/; starting with puts argument first in order,join-relations.md#join-relations
+un,v,,list_verb,denies,list verb denies or refuses object,negation u+n as verb; denies refuses the object,list-verbs.md#list-verbs
 un,g,,join_relation,against,join-relation against or anti- (adjective),negation u+n on /g/; against refuses the argument,join-relations.md#join-relations
 un,h,,join_relation,against,join-relation refusing (adverb),negation u+n on /h/; refusing blocks the argument,join-relations.md#join-relations
-uan,v,,join_act,excludes,join-act excludes object,counteradditive ua+n as verb; excludes bars from the set,join-acts.md#join-act-verbs
+uan,v,,list_verb,excludes,list verb excludes object,counteradditive ua+n as verb; excludes bars from the set,list-verbs.md#list-verbs
 uan,g,,join_relation,without,join-relation without or excluding (adjective),counteradditive ua+n on /g/; without excludes argument,join-relations.md#join-relations
 uan,h,,join_relation,without,join-relation excluding (adverb),counteradditive ua+n on /h/; excluding leaves argument out,join-relations.md#join-relations
-uon,v,,join_act,deprioritizes,join-act deprioritizes object,counterrank uo+n as verb; deprioritizes puts this last,join-acts.md#join-act-verbs
+uon,v,,list_verb,deprioritizes,list verb deprioritizes object,counterrank uo+n as verb; deprioritizes puts this last,list-verbs.md#list-verbs
 uon,g,,join_relation,deprioritizing,join-relation deprioritizing (adjective),counterrank uo+n on /g/; deprioritizing trails argument,join-relations.md#join-relations
 uon,h,,join_relation,deprioritizing,join-relation deprioritizing (adverb),counterrank uo+n on /h/; deprioritizing puts argument last,join-relations.md#join-relations
-en,v,,join_act,choose,join-act chooses sole object,choice join e+n as verb; chooses this as the one pick,join-acts.md#join-act-verbs
+en,v,,list_verb,choose,list verb chooses sole object,choice join e+n as verb; chooses this as the one pick,list-verbs.md#list-verbs
 en,g,,join_relation,exclusive-for,join-relation exclusive for (sole pick adjective),choice join e+n on /g/; exclusive for names the only pick,join-relations.md#join-relations
 en,h,,join_relation,exclusive-for,join-relation exclusively for (adverb),choice join e+n on /h/; exclusively for as the one choice,join-relations.md#join-relations
-aen,v,,join_act,picks,join-act picks with more picks open,set join ae+n as verb; picks one while more may follow,join-acts.md#join-act-verbs
+aen,v,,list_verb,picks,list verb picks with more picks open,set join ae+n as verb; picks one while more may follow,list-verbs.md#list-verbs
 aen,g,,join_relation,open-to,join-relation open to (adjective),set join ae+n on /g/; open to admits among options,join-relations.md#join-relations
 aen,h,,join_relation,open-to,join-relation among options (adverb),set join ae+n on /h/; among options keeps picks open,join-relations.md#join-relations
-oen,v,,join_act,equates,join-act equates or ties objects,equative oe+n as verb; equates ties candidates together,join-acts.md#join-act-verbs
+oen,v,,list_verb,equates,list verb equates or ties objects,equative oe+n as verb; equates ties candidates together,list-verbs.md#list-verbs
 oen,g,,join_relation,on-a-par,join-relation on a par with (adjective),equative oe+n on /g/; on a par equates with argument,join-relations.md#join-relations
 oen,h,,join_relation,on-a-par,join-relation equating or tying (adverb),equative oe+n on /h/; equating ties to argument,join-relations.md#join-relations
-uen,v,,join_act,bars,join-act bars anything but object,counterchoice ue+n as verb; anything but leaves the rest open,join-acts.md#join-act-verbs
+uen,v,,list_verb,bars,list verb bars anything but object,counterchoice ue+n as verb; anything but leaves the rest open,list-verbs.md#list-verbs
 uen,g,,join_relation,anything-but,join-relation open to anything but (adjective),counterchoice ue+n on /g/; anything but bars only this,join-relations.md#join-relations
 uen,h,,join_relation,anything-but,join-relation barring anything but (adverb),counterchoice ue+n on /h/; barring leaves rest free,join-relations.md#join-relations
 edam,h,🥪,locative,between,locative between (two landmarks),sandwich sits in the layer between sides; between takes a join of two landmarks,locative-relations.md#locative-relations

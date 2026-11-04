@@ -114,7 +114,7 @@ A rank join on verb phrases puts the acts in order of priority, so the earlier a
 
 Nothing is SHARED after a clause (`/x/`) join; each clause carries its own words.
 
-Sequence **`ao`** keeps its [phrase meaning](rank-joins.md#sequence-ao) in both roles: the first item is where you start. Under `/v/` it is one subject doing steps in order; under `/x/` it fences a list of steps whose order is part of the message (a recipe, directions). Standalone **`xaol`** says the steps can go in any order.
+Route **`ao`** keeps its [phrase meaning](rank-joins.md#route-ao) in both roles: the first item is where you start. Under `/v/` it is one subject doing steps in order; under `/x/` it fences a list of steps whose order is part of the message (a recipe, directions). Standalone **`xaol`** says the steps can go in any order.
 
 > `zazozon vowurol veruvol vaol.`
 >

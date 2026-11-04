@@ -54,7 +54,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "turnWord.gPackage": { anchor: "speech-moves.md#vocative", summary: "/ɡ/ after a call or reaction describes it (family name, *big surprise*)" },
   "turnWord.glAdj": { anchor: "left-bound-adjectives.md#left-bound-adjectives", summary: "gl- adjective before a call or reaction" },
   "turnWord.W": { anchor: "speech-acts.md#describe-turn-word", summary: "/w/ degree right before a reaction" },
-  "leftEdge.Polar": { anchor: "questions.md#polar-stance", summary: "polar stance turn" },
+  "leftEdge.Polar": { anchor: "questions.md#polar-particle", summary: "polar particle turn" },
   "leftEdge.W": { anchor: "ending-grids.md#hook-w", summary: "/w/ on a left-edge hook" },
   "leftEdge.Hook": { anchor: "hooks.md#discourse-hooks", summary: "discourse hook at the left edge" },
   "leftEdge.ForceEcho": {
@@ -167,19 +167,19 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "hCoordPart.hUnitRule": { anchor: "clause.md#adverbs-h", summary: "adverb or stance word" },
   "hCoordPart.hJoinClose": { anchor: "join-across-roles.md#stance-joins", summary: "/h/ join after its adverbs" },
   "hCoordPart.standaloneJoin": { anchor: "join-across-roles.md#standalone-stance-joins", summary: "standalone stance /th/ join" },
-  "hCoordPart.lateBound": { anchor: "join-across-roles.md#stance-join-before-barl", summary: "stance join between a pole and its blarl" },
+  "hCoordPart.lateBound": { anchor: "join-across-roles.md#stance-join-before-barl", summary: "stance join between a hinge and its blarl" },
   "hJoinClose.JoinH": { anchor: "join-across-roles.md#stance-joins", summary: "/h/ join fence" },
 
   "hUnitRule.W": { anchor: "clause.md#adjective-detail-w", summary: "/w/ detail on an adverb" },
   "hUnitRule.H": { anchor: "clause.md#adverbs-h", summary: "/h/ or /th/ word" },
-  "hUnitRule.Held": { anchor: "holder.md#holder", summary: "WANT, PLAN, or DECISION after a holder frame of uom: the holder's intention the event goes against" },
+  "hUnitRule.Held": { anchor: "holder.md#holder", summary: "WANT, PLAN, or DECISION after a holder zone of uom: the holder's intention the event goes against" },
   "hUnitRule.B": { anchor: "clause.md#extra-nouns", summary: "hosted /b/ after /h/" },
   "hUnitRule.G": { anchor: "dated-channel.md#dated-channel", summary: "amount on a hosted /b/ (signed offset)" },
   "hUnitRule.Odo": { anchor: "dependents.md#dependent-clauses", summary: "stand-in hosted on /h/, or the grounds after a channel's offset" },
   "hUnitRule.gPackage": { anchor: "left-bound.md#complex-chaining", summary: "adjective on the landmark after an /h/ host" },
   "hookUnit.W": { anchor: "ending-grids.md#hook-w", summary: "/w/ on an in-clause hook" },
   "hookUnit.Hook": { anchor: "hooks.md#including-am-al", summary: "in-clause hook" },
-  "hookUnit.frame": { anchor: "prescription.md#contrary-to-stance", summary: "uom + a /th/ stance: the frame the event goes contrary to" },
+  "hookUnit.zone": { anchor: "prescription.md#contrary-to-stance", summary: "uom + a /th/ stance: the zone the event goes contrary to" },
 
   "npPackage.gPackage": { anchor: "clause.md#adjectives-ɡ", summary: "adjective on a noun (gl- before, /ɡ/ after)" },
   "npPackage.Z": { anchor: "clause.md#who-acts-and-the-action", summary: "/z/ noun" },
@@ -217,11 +217,11 @@ export const TOKEN_CONSTRUCTIONS: Record<TokenBranch, ConstructionEntry> = {
   writingSpan: { anchor: "spans.md#writing", summary: "written span as a noun" },
   standIn: { anchor: "dependents.md#dependent-clauses", summary: "stand-in (darl / barl / …)" },
   join: { anchor: "joins.md#and-lists-a", summary: "join fence word" },
-  joinAct: { anchor: "join-acts.md#join-act-verbs", summary: "join-act verb" },
+  listVerb: { anchor: "list-verbs.md#list-verbs", summary: "list verb" },
   joinRelationG: { anchor: "join-relations.md#join-relations", summary: "join-relation on /ɡ/" },
   joinRelationH: { anchor: "join-relations.md#join-relations", summary: "join-relation on /h/ or /th/" },
   greeting: { anchor: "conversation-length.md#conversation-length", summary: "conversation-length bid (citation + x + vowel + -n)" },
-  polar: { anchor: "questions.md#polar-stance", summary: "polar stance particle" },
+  polar: { anchor: "questions.md#polar-particle", summary: "polar particle" },
   force: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "speech-act word" },
   yVocative: { anchor: "speech-moves.md#vocative", summary: "/y/ name (-n), named span, or resume (-r): a vocative" },
   yInterjection: { anchor: "speech-moves.md#interjections-reactions", summary: "/y/ word in -l / -m, or an unnamed span: an interjection" },
@@ -266,7 +266,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
     anchor: "hook-compounds.md#hook-prefixes",
     summary: "hook prefix",
     reader:
-      "`HOOK-x-STEM` is a hook prefix, one word like English *anti-*, *pro-*, *in-*, *trans-*, *-ward*: something that stands in that hook's relation to the stem. On `g-` it is a property, on `z-` `d-` `b-` someone or something with it, on `h-` how the clause stands to the stem. `g-against-x-fight` = anti-fighting; `z-against-x-fight` = an opponent of fighting; `g-in-x-house` = indoor; `g-through-x-ocean` = transoceanic; `g-using-x-water` = water-powered; `h-toward-x-house` = toward the house. A frame hook (`amid`, `near`, `contrary-to`, `over`, …) makes the stem the setting: `g-amid-x-catastrophe` = crisis-era; `g-contrary-to-x-memo` = off-policy. An abstract stem keeps the hook's picture: `in` a state, `on` a plan, `out-of` a condition (`g-out-of-x-debt` = debt-free).",
+      "`HOOK-x-STEM` is a hook prefix, one word like English *anti-*, *pro-*, *in-*, *trans-*, *-ward*: something that stands in that hook's relation to the stem. On `g-` it is a property, on `z-` `d-` `b-` someone or something with it, on `h-` how the clause stands to the stem. `g-against-x-fight` = anti-fighting; `z-against-x-fight` = an opponent of fighting; `g-in-x-house` = indoor; `g-through-x-ocean` = transoceanic; `g-using-x-water` = water-powered; `h-toward-x-house` = toward the house. A zone hook (`amid`, `near`, `contrary-to`, `over`, …) makes the stem the setting: `g-amid-x-catastrophe` = crisis-era; `g-contrary-to-x-memo` = off-policy. An abstract stem keeps the hook's picture: `in` a state, `on` a plan, `out-of` a condition (`g-out-of-x-debt` = debt-free).",
   },
   lateral: {
     anchor: "viewpoint.md#viewpoint-laterals",
@@ -294,7 +294,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
 type OverlayOnlyReading =
   | "overlay"
   | "mention"
-  | "joinAct"
+  | "listVerb"
   | "joinRelation";
 
 /** Non-overlay readings (an overlay word traces `overlay.*`, not `word.reading.*`). */
@@ -489,7 +489,7 @@ export const JOIN_SERIES_CONSTRUCTIONS: Record<JoinSeries, ConstructionEntry> = 
     reader:
       "`rank/more` closes a bracket that ranks its items on the word after it, earlier above later: `[z-X | z-Y | z-rank/more | g-tall]` = X is taller than Y. With one item, it is the top of all (the biggest).",
   },
-  ao: { anchor: "rank-joins.md#sequence-ao", summary: "sequence (first = start)" },
+  ao: { anchor: "rank-joins.md#route-ao", summary: "route (first = start)" },
   u: { anchor: "joins.md#negation-u", summary: "none of" },
   ua: { anchor: "joins.md#everything-ua", summary: "everything but" },
   uo: { anchor: "rank-joins.md#invert-u-stacks", summary: "rank reversal" },
@@ -513,10 +513,10 @@ export const FORCE_CONSTRUCTIONS: Record<Vowel | "soft", ConstructionEntry> = {
   soft: { anchor: "questions.md#question", summary: "soft speech act (-m)" },
 };
 
-/** Polar stance particles, grouped by the section that teaches them (questions.md). */
+/** Polar particles, grouped by the section that teaches them (questions.md). */
 export const POLAR_CONSTRUCTIONS = {
-  starter: { anchor: "questions.md#polar-stance", summary: "yaol yes / yuol no / yael sure" },
-  fuller: { anchor: "polar-inventory.md#polar-stance-fuller-inventory", summary: "yuel / yual / yoel" },
+  starter: { anchor: "questions.md#polar-particle", summary: "yaol yes / yuol no / yael sure" },
+  fuller: { anchor: "polar-inventory.md#polar-particle-fuller-inventory", summary: "yuel / yual / yoel" },
 } satisfies Record<string, ConstructionEntry>;
 
 /** Polar series → {@link POLAR_CONSTRUCTIONS} key. */
@@ -720,7 +720,7 @@ export const REJECTIONS = {
   verbSharedOwn: { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "a joined verb with its own object or recipient takes no shared one: say it in that verb's item, or share it and drop the item's own" },
   genitiveHost: { anchor: "extra-noun-hooks.md#genitive", summary: "`om` + `/b/` follows the noun B uses" },
   turnSeriesCall: { anchor: "speech-moves.md#vocative", summary: "an act or polar series word takes -l / -m / -r, never the call ending -n (`yan`, `yaen`)" },
-  polarOrder: { anchor: "questions.md#polar-stance", summary: "a polar word is one answer or one check-back: not two in a row, and not before an act word (an answer and then a question are two turns)" },
+  polarOrder: { anchor: "questions.md#polar-particle", summary: "a polar word is one answer or one check-back: not two in a row, and not before an act word (an answer and then a question are two turns)" },
   checkBackBody: { anchor: "polar-inventory.md#check-backs", summary: "a check-back (`yel` and a polar word) is a turn of its own: end it with a period (`zazozon vowurol. yol yael.`)" },
   sentenceEndMark: { anchor: "tone-marks.md#tone-marks", summary: "a sentence ends in `.`; `?` / `!` are tone-mark prefixes" },
   toneStack: { anchor: "tone-marks.md#tone-marks", summary: "a tone mark stack uses ! ? % & ; in any order, each at most twice; a space between marks is not a stack" },
@@ -746,7 +746,7 @@ export const REJECTIONS = {
   hookedJoinUnbound: { anchor: "hooked-joins.md#hooked-joins-point-back", summary: "a hooked join on hook -r needs a landmark in play (on /h/, a time landmark)" },
   hookedJoinClause: { anchor: "hooked-joins.md#hooked-joins-clause", summary: "only an /h/ hooked join takes blarl: the time the next sentence names" },
   hookedJoinRestrictor: { anchor: "hooked-joins.md#hooked-joins-time", summary: "an /h/ hooked join's join is a bare restrictor (`al` `am` `ual` `uam` `ar` `or` `ur` `er`)" },
-  hookedJoinTime: { anchor: "hooked-joins.md#hooked-joins-time", summary: "an /h/ hooked join takes a hook with a time reading: `a` `e` `u` `oe`, the frame `em`, or point-back `ar` `er` `ur`" },
+  hookedJoinTime: { anchor: "hooked-joins.md#hooked-joins-time", summary: "an /h/ hooked join takes a hook with a time reading: `a` `e` `u` `oe`, the zone `em`, or point-back `ar` `er` `ur`" },
   roleCompoundStem: { anchor: "roles.md#role-compounds", summary: "a role compound names a role of an event; a special pronoun is not an event" },
   abilitySlot: { anchor: "can-and-cant.md#ability", summary: "ability (x + vowel) goes on /v/ or /ɡ/ only; name + x + vowel + -n is a conversation-length bid only as a citation or a /y/ call" },
   labelScopeArrow: { anchor: "viewpoint.md#landmark-facing", summary: "on a direction root the th seam takes only e (the landmark's own facing)" },
@@ -767,7 +767,7 @@ export const REJECTIONS = {
   },
   barCount: { anchor: "comparative-arity.md#bars", summary: "a rank fence ranks one item against one bar; with a bar there is no second comparee, noun or bar" },
   rankJoinNumberManner: { anchor: "comparative-arity.md#manner-scale", summary: "the /h/ after a rank join is a manner word; the only number there is digitless h+ (how often)" },
-  frameKind: {
+  zoneKind: {
     anchor: "prescription.md#contrary-to-stance",
     summary: "the stance after uom says what the event goes against: a channel, PLAN, DECISION, WANT, a ban, a requirement, a refusal, or a speaker attitude",
   },
@@ -783,9 +783,9 @@ export const REJECTIONS = {
   glNoNoun: { anchor: "left-bound-adjectives.md#left-bound-adjectives", summary: "a gl- adjective describes the next noun, so a noun must follow it (`globulol zodozel`); with no noun after it, use a plain /ɡ/ word" },
   nameInstanceSlot: { anchor: "proper-names.md#name-instance--ln", summary: "-ln (span ^@) is one thing a name applies to: it fills /z/ /d/ /b/ or stands as a citation, never on /ɡ/ /v/ /h/ /w/ /th/ /x/ /y/, and never on a pronoun root" },
   standInRole: { anchor: "stand-in-vowels.md#stand-in", summary: "stand-ins (-rl -rm -rth -rn) fill /z/ /d/ /b/ only; there is no stand-in on /ɡ/ /h/ /w/ /th/ (such is whole-stem -r, like that is `hewem blarth`)" },
-  standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is `blarl` after a listed pole, a clues / pattern channel, like (`hewem`), or an /h/ hooked join" },
-  standInHostUndo: { anchor: "stand-in-vowels.md#stand-in", summary: "burl follows only the so-that pole holalam or the if pole thadoram" },
-  poleStack: { anchor: "iff-fault.md#only-because", summary: "pole stacks are `theboram thurugum` and `hezuvem thadoram`" },
+  standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is `blarl` after a listed hinge, a clues / pattern channel, like (`hewem`), or an /h/ hooked join" },
+  standInHostUndo: { anchor: "stand-in-vowels.md#stand-in", summary: "burl follows only the so-that hinge holalam or the if hinge thadoram" },
+  hingeStack: { anchor: "iff-fault.md#only-because", summary: "hinge stacks are `theboram thurugum` and `hezuvem thadoram`" },
   objectNeedsVerb: { anchor: "predication.md#existence", summary: "an object /d/ needs a verb" },
   stanceNumber: { anchor: "number-roles.md#number-as-stance-by-marker", summary: "a stance number takes + (likelihood), _ (source) or # (Nth-hand); th- with digits and th#- are not used" },
   handDepth: { anchor: "evidentiality.md#hand-depth", summary: "th#N counts the hands between the event and you, from 2 (th#2 second-hand, a secondary source); first-hand is a channel word" },
@@ -839,7 +839,7 @@ export const REJECTIONS = {
   retiredDeonticRoot: { anchor: "permission-consent.md#say-words", summary: "/th/ on the green, no-entry, or memo root is no stance: permission, a ban, and a requirement are say words on /h/ (`hwuvam`, `hwuvul`, `hwuvom`)" },
   sayHost: { anchor: "permission-consent.md#permission", summary: "a bl- word after a say word names someone over the act (v), or the one party under pair scope e; a participant's say needs no bl- word" },
   saySpeaker: { anchor: "permission-consent.md#permission", summary: "a bare v say word on -m is the speaker saying so, so in a statement where the speaker is a participant name whose say it is: the rules (hwuvol), a person (hwuvom bl-), custom (hwuvor), or the speaker's own part (hwuzom)" },
-  poleOffsetWarrant: { anchor: "dated-channel.md#dated-channel", summary: "a signed offset on a time pole needs a command, request, PLAN, or channel in its clause" },
+  hingeOffsetWarrant: { anchor: "dated-channel.md#dated-channel", summary: "a signed offset on a time hinge needs a command, request, PLAN, or channel in its clause" },
   joinDetail: { anchor: "rank-joins.md#respectively", summary: "the only /w/ before a join word is respectively (`wubam`), and it goes only there, on a closed (-l) or open (-m) and-list" },
   respectivePartner: { anchor: "rank-joins.md#respectively", summary: "a respectively list pairs with another and-list of the same length in its clause" },
   wNoHost: {

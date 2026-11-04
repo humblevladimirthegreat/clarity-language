@@ -198,8 +198,8 @@ Write `y`, two vowels, then an ending. A turn holds one polar word; an answer fo
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Answer with a sentence after](/questions#polar-stance): no `yal` | `yaol` + body | *yes, …* | B |
-| [Back up your own claim](/questions#polar-stance) | `zazozon vowurol. yaol.` | *Azozon walks. Yes.* | B |
+| [Answer with a sentence after](/questions#polar-particle): no `yal` | `yaol` + body | *yes, …* | B |
+| [Back up your own claim](/questions#polar-particle) | `zazozon vowurol. yaol.` | *Azozon walks. Yes.* | B |
 | [Answer a command or request](/polar-inventory#answer-command) | `yaol` / `yuol` | *will do* / *I won't* | I |
 
 ### Check-backs: asking for an answer {#check-backs}
@@ -223,6 +223,6 @@ After your sentence, write `yel` and a polar word as a turn of its own. It asks 
 | `yalazun` *Alazun!* ([a call, **-n**](/speech-moves#vocative)) | | `zalazun vowurol` *Alazun walks* ([a subject](/speech-moves#vocative)) |
 | `yagayun` *Guard!* ([call the guard](/speech-moves#interjections)) | | `yagayul` *Guard!* ([an alarm](/speech-moves#interjections)) |
 | `yel` *question* ([asks](/questions#question)) | | `?` *unsure voice* ([only sounds unsure](/tone-marks#tone-marks)) |
-| `yul` *don't* ([prohibition](/speech-moves#speech-act-beginner)) | | `yuol` *no, false* ([answers a claim](/questions#polar-stance)) |
-| `yel yaol.` *…, right?* ([a check-back asks](/polar-inventory#check-backs)) | | `yaol.` *yes* ([an answer gives](/questions#polar-stance)) |
+| `yul` *don't* ([prohibition](/speech-moves#speech-act-beginner)) | | `yuol` *no, false* ([answers a claim](/questions#polar-particle)) |
+| `yel yaol.` *…, right?* ([a check-back asks](/polar-inventory#check-backs)) | | `yaol.` *yes* ([an answer gives](/questions#polar-particle)) |
 | `thahum blar` *why?* ([the cause](/fill-ask-jobs#why)) | | `hewem blar` *like what?* ([a model to resemble](/fill-ask-jobs#how)) |

@@ -3,13 +3,13 @@
  *
  * The grammar productions already refuse shapes no rule licenses; these checks
  * narrow the productions that do license a shape, where the condition depends on
- * the lexicon (poles, needs), on the clause as a whole, or on resolve. Each one
+ * the lexicon (hinges, needs), on the clause as a whole, or on resolve. Each one
  * throws a {@link ConstructionError} that names the rule and the page teaching it.
  */
 import { tokenMatcher, type IToken, type TokenType } from "chevrotain";
 
 import type { ClassifyTables } from "./classify.js";
-import { arrowRoots, isAsOfOverlay, isBarStance, isFrameStance, isGroundsChannel, isHolderSeamW, isStandIn } from "./classify.js";
+import { arrowRoots, isAsOfOverlay, isBarStance, isZoneStance, isGroundsChannel, isHolderSeamW, isStandIn } from "./classify.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { isTopicCompound, isTopicSpan, linkerEnglish, topicEffect } from "./linkers.js";
 import { CLOSED } from "../closed-roots.js";
@@ -148,8 +148,8 @@ function series(word: LexWord | undefined): string | undefined {
   return word?.family.kind === "joinMarker" ? word.family.series : undefined;
 }
 
-function isPole(word: LexWord): boolean {
-  return word.overlay?.kind === "clause_pole";
+function isHinge(word: LexWord): boolean {
+  return word.overlay?.kind === "clause_hinge";
 }
 
 const TONE_MARKS: Record<string, string> = {
@@ -539,27 +539,27 @@ function enforceHostedStandIn(units: Unit[], index: number, unit: HUnit, tables:
   const bound = hosted.grounds ?? hosted.bound;
   const s = series(bound);
   if (isGroundsChannel(host, tables)) {
-    // Evidence clause (evidentiality.md#evidence-clause): `barl`, alone or after the offset; never a pole stack.
+    // Evidence clause (evidentiality.md#evidence-clause): `barl`, alone or after the offset; never a hinge stack.
     if (bound.pos !== "b" || s !== "a") throw new ConstructionError("standInHost", `${host.raw} ${bound.raw}`);
     const prev = units[index - 1];
-    if (prev?.kind === "h" && !prev.unit.hosted && isPole(prev.unit.word)) {
-      throw new ConstructionError("poleStack", `${prev.unit.word.raw} ${host.raw}`);
+    if (prev?.kind === "h" && !prev.unit.hosted && isHinge(prev.unit.word)) {
+      throw new ConstructionError("hingeStack", `${prev.unit.word.raw} ${host.raw}`);
     }
     return;
   }
   // A simile's model may be an event: `humum blarl` + the next sentence (relations.md#similative). So may the time an
   // `/h/` hooked join bounds (`huxal blarl`, hooked-joins.md#hooked-joins-clause).
   if (!hosted.grounds && (host.overlay?.kind === "similative" || joinHook(host)) && bound.pos === "b" && s === "a") return;
-  if (hosted.grounds || !isPole(host)) throw new ConstructionError("standInHost", `${host.raw} ${bound.raw}`);
+  if (hosted.grounds || !isHinge(host)) throw new ConstructionError("standInHost", `${host.raw} ${bound.raw}`);
   const undoHost = host.overlay!.gloss === "so-that" || host.overlay!.gloss === "if";
   if (bound.pos !== "b" || !(s === "a" || (s === "u" && undoHost))) {
     throw new ConstructionError(s === "u" ? "standInHostUndo" : "standInHost", `${host.raw} ${bound.raw}`);
   }
   const prev = units[index - 1];
-  if (prev?.kind === "h" && !prev.unit.hosted && isPole(prev.unit.word)) {
+  if (prev?.kind === "h" && !prev.unit.hosted && isHinge(prev.unit.word)) {
     const stack = `${prev.unit.word.overlay!.gloss} ${host.overlay!.gloss.replace(/^because\..*/, "because")}`;
     if (stack !== "only-if because" && stack !== "although if") {
-      throw new ConstructionError("poleStack", `${prev.unit.word.raw} ${host.raw}`);
+      throw new ConstructionError("hingeStack", `${prev.unit.word.raw} ${host.raw}`);
     }
   }
 }
@@ -585,10 +585,10 @@ function offsetSign(bound: LexWord | undefined, amount?: LexWord): "+" | "-" | u
   return undefined;
 }
 
-const TIME_POLES = new Set(["until", "by", "before", "after", "while"]);
+const TIME_HINGES = new Set(["until", "by", "before", "after", "while"]);
 
-function isTimePole(word: LexWord): boolean {
-  return word.pos === "h" && word.overlay?.kind === "clause_pole" && TIME_POLES.has(word.overlay.gloss);
+function isTimeHinge(word: LexWord): boolean {
+  return word.pos === "h" && word.overlay?.kind === "clause_hinge" && TIME_HINGES.has(word.overlay.gloss);
 }
 
 /** A `/th/` channel or PLAN: what licenses an offset from now (design-decisions D-10). */
@@ -630,10 +630,10 @@ function enforceHandDepthChannel(units: Unit[]): void {
   }
 }
 
-/** Offsets from now (D-10): channel sign, stance-only as-of offsets, and time poles that need a warrant. */
+/** Offsets from now (D-10): channel sign, stance-only as-of offsets, and time hinges that need a warrant. */
 function enforceOffsets(units: Unit[], directive: boolean): void {
   let warranted = directive;
-  const poles: HUnit[] = [];
+  const hinges: HUnit[] = [];
   for (const unit of units) {
     if (unit.kind !== "h") continue;
     const { word, hosted } = unit.unit;
@@ -643,11 +643,11 @@ function enforceOffsets(units: Unit[], directive: boolean): void {
     const detail = `${word.raw} ${hosted!.bound.raw}${hosted!.amount ? ` ${hosted!.amount.raw}` : ""}`;
     if (isAsOfOverlay(word) && word.pos !== "th") throw new ConstructionError("asOfOffset", detail);
     enforceChannelSign(word, hosted);
-    if (isTimePole(word)) poles.push(unit.unit);
+    if (isTimeHinge(word)) hinges.push(unit.unit);
   }
-  if (!warranted && poles.length > 0) {
-    const pole = poles[0]!;
-    throw new ConstructionError("poleOffsetWarrant", `${pole.word.raw} ${pole.hosted!.bound.raw}`);
+  if (!warranted && hinges.length > 0) {
+    const hinge = hinges[0]!;
+    throw new ConstructionError("hingeOffsetWarrant", `${hinge.word.raw} ${hinge.hosted!.bound.raw}`);
   }
 }
 
@@ -736,11 +736,11 @@ function enforceIntentionHost(unit: HUnit): void {
 }
 
 /** `uom` + a stance: the stance must say something the event can go against, and holds no stand-in (prescription.md#contrary-to-stance). */
-function enforceFrame(hook: LexWord, frame: HUnit, tables: ClassifyTables): void {
-  if (!isFrameStance(frame.word, tables)) throw new ConstructionError("frameKind", `${hook.raw} ${frame.word.raw}`);
-  enforceChannelSign(frame.word, frame.hosted);
-  const stand = frame.hosted && (frame.hosted.grounds ?? frame.hosted.bound);
-  if (stand && isStandIn(stand)) throw new ConstructionError("standInHost", `${frame.word.raw} ${stand.raw}`);
+function enforceZone(hook: LexWord, zone: HUnit, tables: ClassifyTables): void {
+  if (!isZoneStance(zone.word, tables)) throw new ConstructionError("zoneKind", `${hook.raw} ${zone.word.raw}`);
+  enforceChannelSign(zone.word, zone.hosted);
+  const stand = zone.hosted && (zone.hosted.grounds ?? zone.hosted.bound);
+  if (stand && isStandIn(stand)) throw new ConstructionError("standInHost", `${zone.word.raw} ${stand.raw}`);
 }
 
 /** The words on each side of a unit, skipping `/w/` detail. */
@@ -807,8 +807,8 @@ function enforceUnitList(units: Unit[], tables: ClassifyTables): void {
     }
     if (unit.kind === "hook" && unit.job === "stray") throw new ConstructionError("genitiveHost", unit.word.raw);
     if (unit.kind === "hook" && unit.job === "clause") enforceSameRole(unit.word, units[i - 1], units[i + 1]);
-    if (unit.kind === "hook" && unit.frame) enforceFrame(unit.word, unit.frame, tables);
-    if (unit.kind === "hook" && !unit.frame) enforceHookStandIn(unit.word, units[i + 1]);
+    if (unit.kind === "hook" && unit.zone) enforceZone(unit.word, unit.zone, tables);
+    if (unit.kind === "hook" && !unit.zone) enforceHookStandIn(unit.word, units[i + 1]);
     if (unit.kind === "hook") enforceHookSlot(unit.word, unit.job);
     if (unit.kind === "hook" && unit.word.ending === "r" && unit.job === "resume") {
       const next = units[i + 1];
@@ -894,7 +894,7 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
 }
 
 function enforceForcePair(left: LeftEdge): void {
-  // A polar word is one answer or one tag: not two in a row, and not before an act word (questions.md § polar stance).
+  // A polar word is one answer or one tag: not two in a row, and not before an act word (questions.md § polar particle).
   // An act or polar series with **-n** names no one to call (speech-moves.md#vocative).
   const seriesCall = left.vocatives.find((call) => call.family.kind === "joinMarker");
   if (seriesCall) throw new ConstructionError("turnSeriesCall", seriesCall.raw);

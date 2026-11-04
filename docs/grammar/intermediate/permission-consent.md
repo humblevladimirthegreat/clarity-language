@@ -58,7 +58,7 @@ If you do not know how it stands, use **-m**.
 
 When the speaker is in the clause, the speaker's own say is their part, not **`v`**, so a bare **`v`** on **-m** has no reading there. So *I have to walk* says who requires it: the rules (`zuwen vowurol hwuvol.`), a person (`zuwen vowurol hwuvom blalazun.`), custom (`zuwen vowurol hwuvor.`), or you yourself (`zuwen vowurol hwuzom.` *I'm making myself walk*). Telling an outside demand from one you put on yourself is the point of the split.
 
-To **ask** for permission, put the clause under [ask](/questions#question): `yem zuwen vehohel hwuvam.` (*May I sit?*). The question asks the listener, so the speaker may be in it. Grant it with [**`yael.`**](/questions#polar-stance) (*go ahead*).
+To **ask** for permission, put the clause under [ask](/questions#question): `yem zuwen vehohel hwuvam.` (*May I sit?*). The question asks the listener, so the speaker may be in it. Grant it with [**`yael.`**](/questions#polar-particle) (*go ahead*).
 
 **Compare with:** [prescription](/ought-for-a-sake#sake-force) **`the`** says the act *ought* to serve a named sake, a reason you can check; a say word says only who allows or demands it. A [command](/speech-moves#speech-act-beginner) **`yol`** is the speaker telling the listener now; **`hwuvom`** reports a demand, which may be someone else's.
 
@@ -286,4 +286,4 @@ When the speaker is in the clause, a bare **`v`** on **-m** has no reading; **`h
 ## See also
 
 - Intention adverbs: [clause.md](/clause#intention-adverbs)
-- Polar *go ahead*: [questions.md](/questions#polar-stance)
+- Polar *go ahead*: [questions.md](/questions#polar-particle)

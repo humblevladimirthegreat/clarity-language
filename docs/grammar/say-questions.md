@@ -24,7 +24,7 @@ An echo question repeats what someone just said, because you doubt it or did not
 
 ### *Really?*, *Is that so?* {#really}
 
-**Needs:** [Polar stance](/questions#polar-stance) · [tone marks](/tone-marks#tone-marks)
+**Needs:** [Polar particle](/questions#polar-particle) · [tone marks](/tone-marks#tone-marks)
 
 English *Really?* asks the speaker to confirm what they just said. Write the confirming check-back as your own turn: **`yel yaol.`** (*Is that so?*). Put the doubting mark **`?!`** on it for disbelief.
 
@@ -102,7 +102,7 @@ To say the feeling **makes sense**, put your own stance in the main sentence and
 
 ### *Admittedly*, *granted* before a *but* {#admittedly}
 
-**Needs:** [Polar stance](/questions#polar-stance) · [Linking sentences](/sentence-linkers#sentence-linkers)
+**Needs:** [Polar particle](/questions#polar-particle) · [Linking sentences](/sentence-linkers#sentence-linkers)
 
 English *admittedly*, *granted* and *that's true, but* concede a point before pushing back. Open with **`yaol`** (*true*): before a body it concedes that body, and alone it concedes what was just said. Then push back with **`xugohum`** (*but*).
 
@@ -316,7 +316,7 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 
 ### Hello, sir, yeah, quote, mention {#reply-words}
 
-**Needs:** [Greeting](/word-endings#greeting) · [Polar stance](/questions#polar-stance) · [Cite](/spans#writing) · [Mention](/span-mention#mention) · [Asides](/spans#asides)
+**Needs:** [Greeting](/word-endings#greeting) · [Polar particle](/questions#polar-particle) · [Cite](/spans#writing) · [Mention](/span-mention#mention) · [Asides](/spans#asides)
 
 | English | Ageben | Reading |
 |---------|--------|---------|

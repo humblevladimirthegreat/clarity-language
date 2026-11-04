@@ -65,7 +65,7 @@ export const intermediateLessons = [
   { text: 'Every and none', link: '/universals-domains' },
   { text: 'Joins on the verb', link: '/vp-clause-forms' },
   { text: 'Stance joins', link: '/join-across-roles' },
-  { text: 'Join-act verbs', link: '/join-acts' },
+  { text: 'List verbs', link: '/list-verbs' },
   { text: 'With and without', link: '/join-relations' },
   { text: 'Yes, no, and not that', link: '/polar-inventory' },
   { text: 'Rhetorical questions', link: '/rhetorical-questions' },

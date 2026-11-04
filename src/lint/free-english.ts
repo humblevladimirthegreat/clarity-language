@@ -351,7 +351,7 @@ export function extractFreeEnglish(markdown: string): FreeEnglishLine[] {
 export const NOTE_GRAMMAR_TERMS: readonly string[] = [
   // Word shape and gloss metalanguage
   "morph", "gloss", "prefix", "suffix", "ending", "root", "stem", "citation", "citation form",
-  "role letter", "PoS", "part of speech", "compound", "x-compound", "seam", "hinge", "overlay",
+  "role letter", "PoS", "part of speech", "compound", "x-compound", "seam", "hinge", "joiner", "overlay",
   "loan verb", "loan adjective", "loan noun",
   // Word classes and clause roles
   "noun", "verb", "adjective", "adverb", "particle", "pronoun", "clause", "subject", "object",

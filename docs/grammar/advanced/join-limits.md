@@ -48,7 +48,7 @@ A join has at most two vowels. Which endings it can take depends on its role let
 | `/z/` `/d/` `/b/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**), **-rx** | phrase lists; **-n** is a named package; **-rx** is an [unnamed group](/joins#unspecified-member-r-phrase) |
 | `/w/` | none | not a phrase list: the only `/w/` before a join word is [`wubam`](/rank-joins#respectively), with **-l** or **-m** |
 | `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](/more-occasions#defined-core-full); **-n** forms are [join-relations](/join-relations#join-relations) |
-| `/v/` | **-l** / **-m** / **-r**, each with **-x** | **-x** is one [shared act](/collectives#verbs-v); parallel **-n** forms are [join-act verbs](/join-acts#join-act-verbs) |
+| `/v/` | **-l** / **-m** / **-r**, each with **-x** | **-x** is one [shared act](/collectives#verbs-v); parallel **-n** forms are [list verbs](/list-verbs#list-verbs) |
 | `/th/` | **-l** / **-m** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | [stance joins](/join-across-roles#stance-joins) on stance words (*not because…*) |
 | `/x/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | between clauses, not after them ([clause joins](/joins#clause-joins)); forms: [Stance joins](/join-across-roles) |
 
@@ -72,7 +72,7 @@ These limits apply to every join.
 
 **Compare with:** prefix-less **`al`** / **`am`** / … are [hooks](/hooks). Under `/h/` `/w/`, the unit is a [restrictor](/restrictors), not sibling *and*.
 
-*Because* / *if* use `/th/` plus `/b/` [**`blarl`**](/dependents#poles). An `/h/` or `/th/` word between the items of a noun, adjective, or `/b/` list does not end the list. For how far an `/h/` reaches in a verb list, see [Joins on the verb](/vp-clause-forms#vp-clause-forms). Each item of a clause join is a full clause.
+*Because* / *if* use `/th/` plus `/b/` [**`blarl`**](/dependents#hinges). An `/h/` or `/th/` word between the items of a noun, adjective, or `/b/` list does not end the list. For how far an `/h/` reaches in a verb list, see [Joins on the verb](/vp-clause-forms#vp-clause-forms). Each item of a clause join is a full clause.
 
 ### Practice {#advanced-practice}
 
@@ -205,7 +205,7 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 | `zeyel` vs `zeyel zar` | content **-l** vs join **-r** | *a person* vs *some person, unknown who* |
 | `A B C zer` vs `… zor` | menu vs rank unspecified | any of them is fine vs pick by ranking |
 | `A B zar` / `zur` / `zual` | among / leftover / invert | some one among; some one other than; *everything but* |
-| `A B zol` vs `A B zaol` | rank vs [sequence](/rank-joins#sequence-ao) | A matters more than B vs A, then B |
+| `A B zol` vs `A B zaol` | rank vs [route](/rank-joins#route-ao) | A matters more than B vs A, then B |
 
 > `zedudal zogudal zowulal zer.`
 >

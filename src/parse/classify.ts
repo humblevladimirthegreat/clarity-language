@@ -131,7 +131,7 @@ export function hasClosedOverlay(word: MorphWord, tables: ClassifyTables): boole
 }
 
 function overlayReading(overlay: OverlayRow): LexReading {
-  if (overlay.kind === "join_act") return "joinAct";
+  if (overlay.kind === "list_verb") return "listVerb";
   if (overlay.kind === "join_relation") return "joinRelation";
   if (overlay.kind === "ability") return "ability";
   if (overlay.kind === "sake") return "sake";
@@ -139,7 +139,7 @@ function overlayReading(overlay: OverlayRow): LexReading {
 }
 
 export function isAsOfOverlay(word: { overlay?: { kind: string; gloss: string } }): boolean {
-  return word.overlay?.kind === "clause_pole" && word.overlay.gloss.startsWith("as-of.");
+  return word.overlay?.kind === "clause_hinge" && word.overlay.gloss.startsWith("as-of.");
 }
 
 function isRestrictor(word: MorphWord): boolean {
@@ -162,7 +162,7 @@ const JOIN_ENDING_GLOSS: Record<string, string> = {
 
 const NAMED_STAND_IN_SERIES = new Set(["a", "o", "e", "u", "ae", "ue", "ao", "uo", "ua"]);
 
-/** Fence-join gloss (not restrictors, join-acts, or `/y/` force/polar). */
+/** Fence-join gloss (not restrictors, list verbs, or `/y/` force/polar). */
 export function joinFenceGloss(series: string, ending: string | undefined): string {
   const job = JOIN_SERIES[series]?.english ?? `join ${series}`;
   const close = ending ? JOIN_ENDING_GLOSS[ending] : undefined;
@@ -451,7 +451,7 @@ const BAR_OVERLAY_KINDS = new Set(["evidential", "former_climate", "notional", "
 /**
  * A `/th/` word or clause adverb that can be a rank fence's bar: a met sake word, an ability word, a channel, FORMER,
  * NOTIONAL, PLAN, WANT, a say word that allows or requires, a holder on one of those, or a speaker attitude (an ordinary
- * content root on `/th/`). Poles, MAY, MIRATIVE, DECISION, ATTEMPT, and a say word's no or *their call* set no value.
+ * content root on `/th/`). Hinges, MAY, MIRATIVE, DECISION, ATTEMPT, and a say word's no or *their call* set no value.
  */
 export function isBarStance(word: LexWord, tables: ClassifyTables): boolean {
   if (word.pos !== "th" && !isClauseAdverb(word)) return false;
@@ -470,16 +470,16 @@ export function isBarStance(word: LexWord, tables: ClassifyTables): boolean {
   return word.reading === "ordinary" && family.kind === "content";
 }
 
-/** Closed `/th/` or clause-adverb kinds `uom` takes as its frame: each has content an event can go against (prescription.md#contrary-to-stance). */
-const FRAME_OVERLAY_KINDS = new Set(["evidential", "plan", "decision", "want"]);
+/** Closed `/th/` or clause-adverb kinds `uom` takes as its zone: each has content an event can go against (prescription.md#contrary-to-stance). */
+const ZONE_OVERLAY_KINDS = new Set(["evidential", "plan", "decision", "want"]);
 
 /**
- * A `/th/` word or clause adverb that can be the frame of `uom` *contrary to*: a channel (or a holder on one), PLAN,
+ * A `/th/` word or clause adverb that can be the zone of `uom` *contrary to*: a channel (or a holder on one), PLAN,
  * DECISION, WANT, a say word's no or requirement, or a speaker attitude (an ordinary content root on `/th/`). Sakes,
- * a say word's yes or *their call*, poles, MAY, NOTIONAL, MIRATIVE, RESIDUE, FORMER, CAUSE, ATTEMPT, and ability say
+ * a say word's yes or *their call*, hinges, MAY, NOTIONAL, MIRATIVE, RESIDUE, FORMER, CAUSE, ATTEMPT, and ability say
  * nothing an event can contradict.
  */
-export function isFrameStance(word: LexWord, tables: ClassifyTables): boolean {
+export function isZoneStance(word: LexWord, tables: ClassifyTables): boolean {
   if (word.pos !== "th" && !isClauseAdverb(word)) return false;
   const family = word.family;
   // A ban or a requirement can be gone against; a yes lifts a restriction, and *their call* sets none (D-49).
@@ -490,7 +490,7 @@ export function isFrameStance(word: LexWord, tables: ClassifyTables): boolean {
       : word.overlay
         ? tables.overlays.get(overlayKey(word.pos!, word.overlay.senseForm))
         : undefined;
-  if (row) return FRAME_OVERLAY_KINDS.has(row.kind);
+  if (row) return ZONE_OVERLAY_KINDS.has(row.kind);
   return word.reading === "ordinary" && family.kind === "content";
 }
 

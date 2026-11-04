@@ -40,7 +40,7 @@ Nothing is SHARED after an `/h/` or `/th/` join. To add a detail that covers the
 
 #### Stance join before `blarl` {#stance-join-before-barl}
 
-When the grounds are a whole clause (*not because Alazun runs*), the pole takes **`blarl`** and the next sentence is the grounds ([poles](/dependents#poles)). That sentence comes last, so the join cannot go after it. Put the join word **between the pole and `blarl`** instead. It closes the stance words before it as usual, and **`blarl`** still belongs to the pole.
+When the grounds are a whole clause (*not because Alazun runs*), the hinge takes **`blarl`** and the next sentence is the grounds ([hinges](/dependents#hinges)). That sentence comes last, so the join cannot go after it. Put the join word **between the hinge and `blarl`** instead. It closes the stance words before it as usual, and **`blarl`** still belongs to the hinge.
 
 > `zazozon vowurol thahum thul blarl zalazun veruvol.`
 >
@@ -48,7 +48,7 @@ When the grounds are a whole clause (*not because Alazun runs*), the pole takes 
 >
 > "Azozon walks, but not because Alazun runs."
 
-Only one join fits there, and only when the last stance word before it is a pole with no `/b/` yet. The same works for every join vowel and every pole.
+Only one join fits there, and only when the last stance word before it is a hinge with no `/b/` yet. The same works for every join vowel and every hinge.
 
 #### Standalone stance joins {#standalone-stance-joins}
 

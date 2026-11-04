@@ -333,7 +333,7 @@ describe("morphGlossLine — restrictor -r vs -l", () => {
 });
 
 describe("morphGlossLine — tags, xuen, hewel, pointer anchors", () => {
-  it("every polar stance keeps its reading (polar-inventory.md#polar-stance-fuller-inventory)", () => {
+  it("every polar particle keeps its reading (polar-inventory.md#polar-particle-fuller-inventory)", () => {
     expectLine("yaol", "y-yes");
     expectLine("yael", "y-sure");
     expectLine("yuol", "y-no");
@@ -589,7 +589,7 @@ describe("morphGlossLine — extra fixtures", () => {
 });
 
 describe("morphGlossLine — th stance letter", () => {
-  it("glosses stance moods, /w/ on th, and th poles with stand-ins", () => {
+  it("glosses stance moods, /w/ on th, and th hinges with stand-ins", () => {
     expectLine("thomam zazozon vehohel.", "th-MAY | z-Azozon | v-sit");
     expectLine("zazozon wuzemel thugem vayebel ayebelul.", "z-Azozon | [w-sleepy | th-LIVE] | v-see | eye-leave");
     expectLine("thahum blarl zazozon vehohel.", "[th-because | bl-that-clause] | z-Azozon | v-sit");
@@ -599,7 +599,7 @@ describe("morphGlossLine — th stance letter", () => {
     expectLine("zazozon vehohel th(zalazun vowurol).", "z-Azozon | v-sit | th-ASIDE[z-Alazun | v-walk]");
   });
 
-  it("keeps time poles and restrictors on /h/", () => {
+  it("keeps time hinges and restrictors on /h/", () => {
     assert.match(morphGlossLine("habam blarl zazozon vehohel.", tables), /^\[h-before/);
   });
 });

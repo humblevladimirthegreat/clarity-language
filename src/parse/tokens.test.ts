@@ -49,7 +49,7 @@ describe("segmentUtterance", () => {
 });
 
 describe("classifyToTokenType", () => {
-  it("maps join-act van to a plain verb", () => {
+  it("maps list verb van to a plain verb", () => {
     assert.equal(classifyToTokenType(lex("van")).name, VPlain.name);
   });
 

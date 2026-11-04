@@ -30,7 +30,7 @@ export type ExtraNounHook = (typeof EXTRA_NOUN_HOOKS)[number];
 
 const HOOK_SET = new Set<string>(EXTRA_NOUN_HOOKS);
 
-/** Derived event kind for a fused extra-noun hook (**-l** exact / **-m** frame). */
+/** Derived event kind for a fused extra-noun hook (**-l** exact / **-m** zone). */
 export const HOOK_DERIVED_GLOSS: Record<ExtraNounHook, string> = {
   al: "enter",
   am: "mill-amid",

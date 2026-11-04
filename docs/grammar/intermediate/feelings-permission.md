@@ -90,7 +90,7 @@ The locus plus the motion ending is the **emotion tail**. It goes on met **`tha`
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. To name a feeling without explaining it, its lexicon root works as an ordinary [property](/predication) word: `zuwen gonumul` (*I am angry*). Use the full compose when an emotion word would have done judgment work.
 
-**Compare with:** *could be* uses [MAY](/knowing#may) (`thomam`). *Because of* is a causal claim with the because pole. The stimulus says what the feeling is **about**; a direction `/b/` says what it is **aimed at**; the because pole says what **caused** it.
+**Compare with:** *could be* uses [MAY](/knowing#may) (`thomam`). *Because of* is a causal claim with the because hinge. The stimulus says what the feeling is **about**; a direction `/b/` says what it is **aimed at**; the because hinge says what **caused** it.
 
 ### Feeling with no object {#feeling-no-object}
 

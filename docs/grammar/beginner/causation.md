@@ -4,14 +4,14 @@ band: beginner
 
 # Causation {#causation}
 
-English *if*, *only if*, and *because* each tie a condition to an outcome. Ageben uses a pole word for each, and the poles keep three questions apart: whether the condition is **enough** for the outcome, whether the outcome **needs** it, and whether you claim the condition is a **fact**.
+English *if*, *only if*, and *because* each tie a condition to an outcome. Ageben uses a hinge word for each, and the hinges keep three questions apart: whether the condition is **enough** for the outcome, whether the outcome **needs** it, and whether you claim the condition is a **fact**.
 
 
 ### If {#if}
 
-English *if* says a condition is enough for an outcome: whenever the condition holds, the outcome holds too (*Azozon walks if it rains*). Write the **outcome** first, then the *if* pole (root **`ohe`**), then the condition as its `bl-` word. Saying *if* does not claim the condition is true, and other routes to the outcome may still work. It does not say how the condition leads there either: only that the link holds. (cue: 🚪 *door*: walk through only if it opens)
+English *if* says a condition is enough for an outcome: whenever the condition holds, the outcome holds too (*Azozon walks if it rains*). Write the **outcome** first, then the *if* hinge (root **`ohe`**), then the condition as its `bl-` word. Saying *if* does not claim the condition is true, and other routes to the outcome may still work. It does not say how the condition leads there either: only that the link holds. (cue: 🚪 *door*: walk through only if it opens)
 
-The pole's role letter follows the outcome. Use `/th/` (**`thohem`**) when the outcome is an **event** (the verb). Use `/ɡ/` (**`gohem`**) when the outcome is a **noun**. A common noun with a `/ɡ/` word after it says the thing exists ([*there is …*](predication.md#existence)), so a noun outcome says *there is X if there is Y*. Keep the pole and its `/b/` together.
+The hinge's role letter follows the outcome. Use `/th/` (**`thohem`**) when the outcome is an **event** (the verb). Use `/ɡ/` (**`gohem`**) when the outcome is a **noun**. A common noun with a `/ɡ/` word after it says the thing exists ([*there is …*](predication.md#existence)), so a noun outcome says *there is X if there is Y*. Keep the hinge and its `/b/` together.
 
 > `zazozon vowurol thohem blerulal.`
 >
@@ -27,11 +27,11 @@ The pole's role letter follows the outcome. Use `/th/` (**`thohem`**) when the o
 
 As a plain noun, the same root is `zohel` *a door*.
 
-**Compare with:** for *X is enough* about one item from a list of options (*a book will do*), use an inclusive [join](joins.md#single-item-phrase), not a pole.
+**Compare with:** for *X is enough* about one item from a list of options (*a book will do*), use an inclusive [join](joins.md#single-item-phrase), not a hinge.
 
 ### Only if {#only-if}
 
-English *only if* (or *needs*) says the outcome cannot hold without the condition. Use the same shape with the *only if* pole (root **`ebe`**): **`thebem`** after a verb, **`gebem`** after a noun. Other things may also be required, and again you do not claim the condition is true. (cue: 🧻 *paper-roll*: without it the situation does not run)
+English *only if* (or *needs*) says the outcome cannot hold without the condition. Use the same shape with the *only if* hinge (root **`ebe`**): **`thebem`** after a verb, **`gebem`** after a noun. Other things may also be required, and again you do not claim the condition is true. (cue: 🧻 *paper-roll*: without it the situation does not run)
 
 > `zazozon vowurol thebem blerulal.`
 >
@@ -180,7 +180,7 @@ z-Azozon | d-flower-x | v-see | [th-if | bl-night]
 
 z-flower | [g-if | bl-rain]
 
-The outcome is a noun (there is a flower), so the pole takes `/ɡ/`; `/th/` attaches it to an event.
+The outcome is a noun (there is a flower), so the hinge takes `/ɡ/`; `/th/` attaches it to an event.
 :::
 
 **2.** *Alazun sits if it is night.* `zalazun vehohel thohem blanurul.` or `zalazun vehohel thohem danurul.`
@@ -190,7 +190,7 @@ The outcome is a noun (there is a flower), so the pole takes `/ɡ/`; `/th/` atta
 
 z-Alazun | v-sit | [th-if | bl-night]
 
-The condition is the pole's extra noun, so it takes a `bl-` word right after **`thohem`**.
+The condition is the hinge's extra noun, so it takes a `bl-` word right after **`thohem`**.
 :::
 
 #### Fix it {#beginner-fix-it}
@@ -202,7 +202,7 @@ The condition is the pole's extra noun, so it takes a `bl-` word right after **`
 
 z-Ahelan | v-sing | [th-only-if | bl-sun]
 
-The outcome is the singing, an event, so the pole is **`thebem`**; **`gebem`** would hang it on a noun.
+The outcome is the singing, an event, so the hinge is **`thebem`**; **`gebem`** would hang it on a noun.
 :::
 ## See also
 

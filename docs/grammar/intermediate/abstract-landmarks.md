@@ -33,7 +33,7 @@ English uses the same prepositions for states, plans, and conditions as for plac
 | **`aol`** *using* | what you go by | `aol bogarem` | *by tradition* |
 | **`uol`** *against* | what you oppose | `uol bonam` | *against the policy* |
 
-The frames read the same way, with the landmark as the general setting: `am babowum` *amid the crisis*, `uom bonam` *contrary to the policy*. A reading that needs a different picture is not a hook reading; say it with its own word.
+The zones read the same way, with the landmark as the general setting: `am babowum` *amid the crisis*, `uom bonam` *contrary to the policy*. A reading that needs a different picture is not a hook reading; say it with its own word.
 
 **Compare with:** the landmark's **-m** picks its abstract sense (`babowum` *catastrophe*, where `babowul` is *bomb*); the hook's own **-m** (`am`, `uom`) makes the landmark the setting. The two choices are separate, and a word can take both.
 

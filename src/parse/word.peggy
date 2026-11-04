@@ -707,15 +707,15 @@ RoleCompoundPart
   / [zdbhgywx]
 
 // Hook prefix: extra-noun hook vowel(s) + seam + stem + ending (`guexavuvul` *anti-fighting*, hooks.md#hook-prefixes).
-// Plain `x` is the hook's **-l** reading, `mx` its **-m** frame (`guemxewulel` *headwind*). No root has `x` and every
+// Plain `x` is the hook's **-l** reading, `mx` its **-m** zone (`guemxewulel` *headwind*). No root has `x` and every
 // root starts with a vowel, so one or two vowels before the seam are never a root. The stem may be an ordinary
 // compound (`guexahehaxowurel`) and take label scope after it (`zuexavuvuthel`). A hook-compound citation as the
 // stem (`guexowurelul` *anti-leaving*) parses as one long root here, and classify.ts splits it, as on a plain word.
 HookPrefix
-  = vowels:HookPrefixVowels frame:"m"? "x" root:ContentRoot rest:("x" r:ContentRoot { return r; })* scope:("th" v:SeamVowel { return v; })? ending:Ending plural:PluralSuffix? WordEnd {
+  = vowels:HookPrefixVowels zone:"m"? "x" root:ContentRoot rest:("x" r:ContentRoot { return r; })* scope:("th" v:SeamVowel { return v; })? ending:Ending plural:PluralSuffix? WordEnd {
       const fields = {
         leftRoots: [],
-        hook: vowels + (frame ? "m" : "l"),
+        hook: vowels + (zone ? "m" : "l"),
         rightRoots: [root, ...rest],
       };
       if (scope) fields.scopeVowel = scope;
@@ -839,7 +839,7 @@ HookCompoundCite
 
 // ── Join markers ────────────────────────────────────────────────────────────
 
-// Hooked join: extra-noun hook vowel(s) + the hook's ending (`m` the frame, `r` point back; **-l** unwritten) + `x` +
+// Hooked join: extra-noun hook vowel(s) + the hook's ending (`m` the zone, `r` point back; **-l** unwritten) + `x` +
 // join vowel(s) + join ending (`zexual` *everyone at …*, `zemxuam`, `zerxarx`; hooks.md#hooked-joins). After the seam a
 // hook prefix has a root (vowel, consonant, vowel), and this has only vowels and an ending, so the two never meet.
 // The join's **-n** and stand-in codas have no reading here, nor `l` or `n` before the seam.

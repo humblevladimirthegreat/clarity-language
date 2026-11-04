@@ -117,13 +117,13 @@ Source: [joins.md](/joins), [join-across-roles.md](/join-across-roles#stance-joi
 - **closed (D-47):** a shared `/d/` or recipient `/b/` (before the subject or after the join) on a joined verb that has its own (`dabedal vugudol vagedal val daledel`).
 - **closed (D-39):** a single-item clause join (`A xul` *not the case that A*, `A xal` *only A happened*).
 - **open:** **-x** on a join **-l** / **-m** / **-n** off `/v/` (`zalx`, `zanx`). On an empty set it contradicts the **-l** (*several nobodies*), and on a universal it repeats it; a named package with associates has no job yet. Parser: `joinPlural`.
-- **open:** a rank or sequence join (`e` / `ue` / `ae`) with a number as a threshold, and a SHARED continuum word. In a rank or sequence fence a number is one of the items, so a threshold reading is not guessable. Ranges use hooks and [rays](/open-ranges#rays).
+- **open:** a rank or route join (`e` / `ue` / `ae`) with a number as a threshold, and a SHARED continuum word. In a rank or route fence a number is one of the items, so a threshold reading is not guessable. Ranges use hooks and [rays](/open-ranges#rays).
 
 ## Comparison bars
 
 Source: [comparatives.md](/comparative-arity#bars)
 
-- **open:** a stance that sets no value as a bar: clause poles, MAY, MIRATIVE, DECISION, ATTEMPT, RESIDUE, CAUSE, and a say word's no or *their call* (`hwuvul`, `hwudum`, `hwuvem`). None sets a level to rank against: a decision or an attempt commits to an act, a ban or a refusal only says no, and *their call* sets nothing. *Than decided* is PLAN. Parser: `barKind`.
+- **open:** a stance that sets no value as a bar: clause hinges, MAY, MIRATIVE, DECISION, ATTEMPT, RESIDUE, CAUSE, and a say word's no or *their call* (`hwuvul`, `hwudum`, `hwuvem`). None sets a level to rank against: a decision or an attempt commits to an act, a ban or a refusal only says no, and *their call* sets nothing. *Than decided* is PLAN. Parser: `barKind`.
 - **open:** a second comparee next to a bar (`barCount`). A bar fence ranks one item against one bar, so a second item has nothing to rank against.
 
 ## Hosted relations
@@ -141,8 +141,8 @@ Source: [hooks.md](/ordered-ranges#ranges), [sakes.md](/prescription#contrary-to
 - **open:** stacked **-r** at the front of a sentence (`aor …`, `aer …`, `uor …`). Extra-noun point-back is assigned; as sentence glue they have no guess (*For example, anyway?* *In fact, as I said?*). Parser: `hookDiscourseStack`.
 - **open:** discourse **`oel`** / **`ual`** / **`uel`** / **`uol`** (and **-m** / **-n**) at the front of a sentence. *Toward*, *out of*, *through* and *against* give no guessable sentence-to-sentence glue (guesses range from *Alternatively* to *Apart from that*). The parser rejects them.
 - **open:** a hook + `barl` other than `ul` (`hookStandIn`). Most have no guess (*in that…*, *at that…*). *Contrary to* an event is `hezem blarl`, and no job has turned up for `uom barl`.
-- **open:** `uom` before a stance with no content an event can contradict (`frameKind`): a say word's *their call* (`hwuvem`; it sets nothing), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Alazun's interest* is `thudathum blalazun`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
-- **closed (D-49):** `uom` before a say word's yes (`uom hwuvam`, `uom hwudam`, `uom hwuzal`) (`frameKind`).
+- **open:** `uom` before a stance with no content an event can contradict (`zoneKind`): a say word's *their call* (`hwuvem`; it sets nothing), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Alazun's interest* is `thudathum blalazun`), clause hinges, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
+- **closed (D-49):** `uom` before a say word's yes (`uom hwuvam`, `uom hwudam`, `uom hwuzal`) (`zoneKind`).
 
 ## Hook compounds
 
@@ -250,14 +250,14 @@ Source: [predication.md](/predication)
 
 ## Closed-root endings
 
-Source: [causation.md](/iff-fault#poles), [relations.md](/relations), [dependents.md](/dependents#dependent-clauses), [knowing.md](/notional-standing#residue)
+Source: [causation.md](/iff-fault#hinges), [relations.md](/relations), [dependents.md](/dependents#dependent-clauses), [knowing.md](/notional-standing#residue)
 
 An **-r** grade on a closed root without its own **-r** would take away the live whole-stem resume ([design-decisions § Closed-root endings](design-decisions.md#closed-root-endings)). **-l** has two competing guesses (strongest, as on *exactly like* `hewel`, or broke a norm, as on *because*), so a family where neither fits has no guessable **-l**.
 
-- **closed (closed-root -r):** clause-pole **-r** as a grade on *iff* (`eho`), *although* (`eze`), *while* (`ero`), *before* (`aba`), *after* (`ala`), *until* / *by* (`aru`), and the result pole (`aho`).
-- **closed (closed-root -r):** clause-pole **-r** as *one of several* on *if* (`thoher`), *only if* (`theber`) and *so that* (`hovar`). The resume is the only route to *in that case* (`thoher`); *partly because* is `thahur`.
+- **closed (closed-root -r):** clause-hinge **-r** as a grade on *iff* (`eho`), *although* (`eze`), *while* (`ero`), *before* (`aba`), *after* (`ala`), *until* / *by* (`aru`), and the result hinge (`aho`).
+- **closed (closed-root -r):** clause-hinge **-r** as *one of several* on *if* (`thoher`), *only if* (`theber`) and *so that* (`hovar`). The resume is the only route to *in that case* (`thoher`); *partly because* is `thahur`.
 - **closed (closed-root -r):** CAUSE **-r** as *one contributing push* (`thewor`); RESIDUE and FORMER **-r** as *for now* (`tharar`, `thelar`); similative **-r** as *a bit like* (`hewer`, `gewer`).
-- **open:** clause-pole **-l** beyond *because* (`thahul`) and *by* (`arul`). Neither guess fits these poles. The nearest, *if* **-l** as *by rule* (`thohel`), is not a stronger *if* but a rule, which `thohem` plus a deontic says.
+- **open:** clause-hinge **-l** beyond *because* (`thahul`) and *by* (`arul`). Neither guess fits these hinges. The nearest, *if* **-l** as *by rule* (`thohel`), is not a stronger *if* but a rule, which `thohem` plus a deontic says.
 - **open:** CAUSE **-l** as *compel* (`thewol`). **-l** is not guessable here, and refused consent plus CAUSE ([consent](/permission-consent#consent)) says more: it names whose will was overridden.
 - **open:** RESIDUE and FORMER **-l** (`tharal`, `thelal`). Two guesses compete: *for good*, as on the phasals (`havel`), and *strong*, as on the channels.
 - **open:** **-l** on exchange (`eha`), proxy (`ane`), the of-relations, the locatives, stimulus (`oyo`), and *respectively* (`uba`). *Strongest* is the only guess, and none of these has needed it (*exactly between*?).
@@ -290,7 +290,7 @@ Source: [speech-moves.md](/firm-soft#speech-act), [stacked act words](/speech-ac
 - **open:** a check-back with a body after it (`yol yael zazozon vowurol.`). The check-back asks about the sentence before it and is a turn of its own; a body after it would be a second move in the same turn, and no question has asked for one. Parser: `checkBackBody`.
 - **closed (D-43):** a `/b/` hosted by a call or reaction; `yahumal bazozon` is a reaction and then a body with a recipient.
 - **open:** `/w/` on a call (`welazem yalazun`). The person called is not more or less called. Parser: `turnWordModifier`.
-- **open:** `/w/` on an act word or a polar word (`welazem yel`). Firm / soft already grades the act, and the polar stance has its own strengths. The parser rejects them.
+- **open:** `/w/` on an act word or a polar word (`welazem yel`). Firm / soft already grades the act, and the polar particle has its own strengths. The parser rejects them.
 - **open:** `gl-`, `/ɡ/`, or `/w/` on a number cheer or a `/y/` span (`yrawagel gelazem`, `y<…> gelazem`). A number cheer already carries its own size, and a span's inside is not graded. Parser: `turnWordModifier`.
 - **open:** a mention or an aside under `/y/` (`ySpanType`). A mention talks about a word and an aside comments on the sentence, so neither calls nor reacts.
 

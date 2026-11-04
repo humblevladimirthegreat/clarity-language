@@ -152,7 +152,7 @@ A CLUES or PATTERN bar can also take [`blarl`](/evidentiality#evidence-clause): 
 >
 > "The book is even less clear than I feared."
 
-Only these stances set a value. A [cause or condition pole](/causation), [MAY](/knowing#may), [MIRATIVE](/mirative#mirative), [DECISION](/ability#decision), and [ATTEMPT](/ability#try) do not, so none of them is a bar. A want sets the level wanted; a decision or an attempt commits to an act and sets no level, so *more than decided* is the [plan](/intention#plan-predict) bar.
+Only these stances set a value. A [cause or condition hinge](/causation), [MAY](/knowing#may), [MIRATIVE](/mirative#mirative), [DECISION](/ability#decision), and [ATTEMPT](/ability#try) do not, so none of them is a bar. A want sets the level wanted; a decision or an attempt commits to an act and sets no level, so *more than decided* is the [plan](/intention#plan-predict) bar.
 
 ### Practice {#advanced-practice}
 

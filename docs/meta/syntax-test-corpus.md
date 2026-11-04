@@ -17,7 +17,7 @@ Translate with published grammar and lexicon. When a sentence cannot be said, so
 Before logging a grammar gap:
 
 1. Run `node scripts/find-english.mjs '<phrase>'` on the English and on one or two rewordings.
-2. Try the recurring fixes: a resume hook (`er` / `or` / `ar` / `ur`), counting from the end (`gruodol`), the discourse hooks (`aol` / `ael`), and a time pole plus PLAN.
+2. Try the recurring fixes: a resume hook (`er` / `or` / `ar` / `ur`), counting from the end (`gruodol`), the discourse hooks (`aol` / `ael`), and a time hinge plus PLAN.
 3. If the English puts a feeling, belief, want or other stance on **someone other than the speaker** (*she was hurt*, *he thinks*, *it makes sense that you feel*), it is almost never a gap. This has been logged as one several times. Name that person as the holder on the channel, MAY or NOTIONAL word that gives you access to their view (`theyomazozon`, `thebamawan`, `theyoleyer`: [whose view](/holder#holder)). For a stance **on** their stance, put your stance in the main sentence and theirs in a dependent with its own holder seam word, naming what their feeling is about (`wowetham goyom zarl zevur wawethumam goyom theyomawan`).
 4. Record the phrases you tried in the gap row.
 
@@ -280,7 +280,7 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 - **STC-63, 71, 74, 76:** fronted place phrases (`ael bamahul …`, `am bogelal …`) now parse as extra-noun hooks (parser fix; see results).
 - **STC-64, *the monkey's tricks*:** two sentences, then an event resume (`badayur`), the recipe for an act as someone's (say-people-places.md § someone's act).
 - **STC-66, *was hidden by*:** object first, then the hider as subject. *Boughs* is *tree* `x` *bone* (`zedaloxobolx`).
-- **STC-67, *spring sun*:** the time pole on the noun, `gerom blahelom` (*during spring*).
+- **STC-67, *spring sun*:** the time hinge on the noun, `gerom blahelom` (*during spring*).
 - **STC-68, *wreaths … on their heads*:** *wreath* is the compound `bevelalegobolx`. *On their heads* is dropped: a hook + `/b/` after the wreath (`ael behobelx`) would split the *many* rank from its noun. *Head* is `behobel`.
 - **STC-70, *in the line*:** dropped; the ordinal already says the order.
 - **STC-71, *lived*:** NOTIONAL `theyum`, since this is story narration; later sentences of the tale carry it forward.
@@ -300,7 +300,7 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 - **STC-100, *first of the litter*:** eldest sibling `g#1e0`.
 - **STC-101, 115, *these shoes* / *this tree*:** full-root resume only. `em buwen` before a rank join or a fill-ask list would make the next `/ɡ/` words describe the speaker (the landmark). *Too big for you* is the unspecified sake bar with the listener in its `/b/` as whose stake (`thudatham blawan`).
 - **STC-102, *how wide*:** `wrar` on *width* (`gagoram`, the *accordion* abstract).
-- **STC-103–108, commands:** *listen* is the *ear* abstract as a verb (`vebam`), not *hear* (`vebal`). *Keep this secret* is *keep confidential* (`vuhamum`, the *hush* abstract) with `darth` for *this*; *until tomorrow* is a signed day count in the pole's `/b/` (`harum blazurom grabal`), counted from now. *Be careful* is `yol guyulom`, a command with only a `/ɡ/` body. *Come* / *bring … with you* is `vavobol` + `han` (company); with a place, `oel buwen`.
+- **STC-103–108, commands:** *listen* is the *ear* abstract as a verb (`vebam`), not *hear* (`vebal`). *Keep this secret* is *keep confidential* (`vuhamum`, the *hush* abstract) with `darth` for *this*; *until tomorrow* is a signed day count in the hinge's `/b/` (`harum blazurom grabal`), counted from now. *Be careful* is `yol guyulom`, a command with only a `/ɡ/` body. *Come* / *bring … with you* is `vavobol` + `han` (company); with a place, `oel buwen`.
 - **STC-90, *blanket*:** the *yarn* abstract (`dayulam`). **STC-134, *too short*:** less *length* (`guravam`, the *railcar* abstract). **STC-142, *threw … lake*:** `vobovol` (role English on *boomerang*) and `begavom` (the *canoe* abstract).
 - **STC-109, *have some tea*:** an offer, so soft request `yom`; `gral` on a mass noun is *some*. The verb is `vuwudal` (*drink*).
 - **STC-110, 111, *friends* / *brother and sister*:** the tie or kin word is SHARED after the join with no `/b/`, so *of each other* is only implied (G-17). *His dog* is a hook + `/b/` right before the join word (`zodozel om bazozor zal`, G-18).
@@ -329,16 +329,16 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 - **STC-146, *the way to the sea*:** *road* with *toward the sea*.
 - **STC-147, *on the wing*:** *flier* (agent compound on *wing*).
 - **STC-149, *rooms*:** the dictionary words *living room*, *bedroom*, and *kitchen*. *Had three rooms* is an existence list SHARED as *part of the little house*; the count is the list.
-- **STC-151, 182, *each day* / *every spring and fall*:** a counted unit is a count per unit (`hrabal hrubal blazurom`, once per day); named seasons are a universal kind in the time pole (`herom blual gahelom`). *Something new* is `dar` (an unnamed new thing) plus *news* (`gunonam`).
+- **STC-151, 182, *each day* / *every spring and fall*:** a counted unit is a count per unit (`hrabal hrubal blazurom`, once per day); named seasons are a universal kind in the time hinge (`herom blual gahelom`). *Something new* is `dar` (an unnamed new thing) plus *news* (`gunonam`).
 - **STC-152, *market*, *minutes*, *this week*:** *market* is the new abstract on 🏬 (`zudaham`, L-09). *Minute* is the new stock unit `bumurom` (L-10). *This week* is the full-root resume `bagoror` plus `em buwen`, which describes the week ([hook + `/b/` on a landmark](/hooks)). *Earlier* is the `bral` scale against the *Usual* bar.
 - **STC-153, *find … too great*:** *distance* is *length* (`zuravam`). MEMORY under `yel` asks for the listener's own warrant, as in STC-97.
 - **STC-154, 155, 164, address:** *children* is a kind vocative with **-x** (`yohoyolx`). *Madam* and *my son* are the listener (`yawan`); the title and the kin word are dropped.
 - **STC-155, *obey*:** `vuhozam` (the *conformity* abstract). *Command* is dropped; `vern` states a command as content, but here the act is the obeying.
 - **STC-156, *here under this tree*:** `hoduhol` + landmark is *under* (roles.md § gravity). *Feast* is a wonderful *bento* (`denodal gemem`), *gave* is `vewal` (*present*), and *their guests* is the *hospitality* tie with a resume (`beyelx gabodum bleyerx`).
-- **STC-157, *in winter … at night*:** two `herom` poles, with COMMON for the routine. *Candlelight* is *using a yellow candle* (`guyulol`); *get up* is `vabuhol` (*up*), *dress* is `vedobal`.
+- **STC-157, *in winter … at night*:** two `herom` hinges, with COMMON for the routine. *Candlelight* is *using a yellow candle* (`guyulol`); *get up* is `vabuhol` (*up*), *dress* is `vedobal`.
 - **STC-158, *last part*:** *the end* (`duvahum`, the *finish-line* abstract) of the tale, as in STC-122.
 - **STC-159, 160, *or*:** `xel` between clauses. In 159 the second clause is the rank claim *later than needed* with the verb *arrive*, so the threat is the outcome, not a forecast.
-- **STC-161, *shabby*, *ragged*, *uncomfortable*:** three claims. *Shabby* and *ragged* are *breakdown* (`gelahum`, as *broken* in STC-41), with `welazem` on the second; *uncomfortable* is *not comfortable* (`gahuyam gul`) placed before the *cold days* pole so the `/w/` word stays on the adjective.
+- **STC-161, *shabby*, *ragged*, *uncomfortable*:** three claims. *Shabby* and *ragged* are *breakdown* (`gelahum`, as *broken* in STC-41), with `welazem` on the second; *uncomfortable* is *not comfortable* (`gahuyam gul`) placed before the *cold days* hinge so the `/w/` word stays on the adjective.
 - **STC-162, *think first and then act*:** verb join `xan` (*and then*). *Act* is *effort* (`vuzubam`).
 - **STC-163, *a little mite of a girl*:** an aside with a resume of the speaker (`th(zuwer goyoyol gamezem)`). *Falling* is the agent compound on *down* (`gwuzoduhol`).
 - **STC-164, *show … tell*:** *show* is CAUSE with the listener as causer (`thewom blawan`): the guests are the subject of *see*. *History* is *tale*, and *strange* is the *alien* abstract (`gulayem`).
@@ -362,7 +362,7 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 - **STC-193, 194, *early*, *Monday*:** *early* is the PATTERN bar, `thubom zuol bral` (G-03); the bar needs a ranked item, so the listener is named; *next Monday* is the weekday ordinal under `herom` (G-14). *Hall* is the dictionary word `begayahal`.
 - **STC-195, *name was Antonio*:** the name is a house-cast name (`zahelan`), not a foreign payload. *Younger* is the rank on *age*, said as its own sentence.
 - **STC-196, *gnomes*:** no gnome root; *little men* under `hoduhol blagulal` (*down* on the ground), with COMMON for the habitual claim. *Under* has no hosted relation of its own.
-- **STC-197, *loved by everybody*:** object first, then the lover as subject; *gentle* is *kindness* (`gegemam`) under the because pole.
+- **STC-197, *loved by everybody*:** object first, then the lover as subject; *gentle* is *kindness* (`gegemam`) under the because hinge.
 - **STC-198, 199, *hold*, *find*:** *hold* is *seize* (`vovebel`); *find* is role English on *magnify* (`vumewel`, L-12). *Run and get my cap* is a verb list closed by `val` (G-19).
 - **STC-201, *funniest*:** *hear* is the *listening* abstract; *story* is the *tale* abstract, and `zonor` is *that one* with the superlative bar.
 - **STC-202, 206, 216, comparatives:** the second name is a full noun phrase (`glemugel zeyel growamol blalazun`). *Enemies* is *people of struggle* (`guvuvum`). *Far more* is `wohalal` on the amount scale, as in comparatives.md.

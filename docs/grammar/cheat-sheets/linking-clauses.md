@@ -56,7 +56,7 @@ Drop the inner `/z/` only after `dorl` / `dorm` or `durl` / `durm` filling `/d/`
 |-----|---------|---------|-------|
 | [Say so](/stand-in-vowels#stand-in-back) | `zalazun vehohel. zazozon vezuyol darth.` | *Alazun sits. Azozon says so.* | I |
 
-Other role letters work the same: `blarth` after a pole, `zarth` as the subject. No stand-in on `/ɡ/`, `/h/`, `/w/`, or `/th/`.
+Other role letters work the same: `blarth` after a hinge, `zarth` as the subject. No stand-in on `/ɡ/`, `/h/`, `/w/`, or `/th/`.
 
 ### Verbs and subjects that take a sentence {#stand-in-roles}
 
@@ -84,49 +84,49 @@ Other role letters work the same: `blarth` after a pole, `zarth` as the subject.
 
 ### Times with a noun {#time-nouns}
 
-Put an event or period in a `bl-` word after the time pole. *Until*: lasts up to the endpoint; *by*: done at the endpoint or sooner. On a noun, swap `/h/` for `/ɡ/`.
+Put an event or period in a `bl-` word after the time hinge. *Until*: lasts up to the endpoint; *by*: done at the endpoint or sooner. On a noun, swap `/h/` for `/ɡ/`.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [During](/dependents#time-poles) | `zazozon vowurol herom blanulul.` | *Azozon walks during the thunderstorm.* | B |
-| [After](/dependents#time-poles) | `zazozon vehohel halam blanulul.` | *Azozon sits after the thunderstorm.* | B |
+| [During](/dependents#time-hinges) | `zazozon vowurol herom blanulul.` | *Azozon walks during the thunderstorm.* | B |
+| [After](/dependents#time-hinges) | `zazozon vehohel halam blanulul.` | *Azozon sits after the thunderstorm.* | B |
 | [By](/dependents#by-deadline) | `zazozon vowurol huvahum blanulul.` | *Azozon walks by the time of the thunderstorm.* (done no later than that) | B |
-| [A noun in time](/sentence-linkers#time-pole-on-noun) | `zalazun dowurol galam blanulul vayebel.` | *Alazun sees the walk after the thunderstorm.* (*after the thunderstorm* says which walk) | I |
+| [A noun in time](/sentence-linkers#time-hinge-on-noun) | `zalazun dowurol galam blanulul vayebel.` | *Alazun sees the walk after the thunderstorm.* (*after the thunderstorm* says which walk) | I |
 
 On a noun: `gerom` *during*, `gabam` *before*, `galam` *after*, `garum` *until*, `guvahum` *by*. *Since* is [*from* on a time](/hooks#since).
 
 <PageBreak />
 
-## Because, if, although {#poles}
+## Because, if, although {#hinges}
 
-A **pole** names the link and takes the stand-in `blarl` as its `/b/`. Keep the pair last, then the dependent sentence. Poles use the abstract **-m**. *Because* and *if* are stance, so `/th/`; the rest describe the event, so `/h/`. A noun in `/b/` in place of `blarl` works too (*despite Alazun*); on a noun, swap the letter to `/ɡ/`.
+A **hinge** names the link and takes the stand-in `blarl` as its `/b/`. Keep the pair last, then the dependent sentence. Hinges use the abstract **-m**. *Because* and *if* are stance, so `/th/`; the rest describe the event, so `/h/`. A noun in `/b/` in place of `blarl` works too (*despite Alazun*); on a noun, swap the letter to `/ɡ/`.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | English | Stage |
 |--------|---------|-------|
-| [**`thahum blarl`**](/dependents#poles) | *because* | B |
-| [**`thohem blarl`**](/dependents#poles) | *if* | B |
-| [**`thebem blarl`**](/dependents#poles) | *only if* | B |
-| [**`thehom blarl`**](/dependents#poles) | *if and only if* | B |
-| [**`hezem blarl`**](/dependents#poles) | *although* / *even though* | B |
-| [**`herom blarl`**](/dependents#poles) | *while* | B |
-| [**`harum blarl`**](/dependents#poles) | *until* | B |
-| [**`huvahum blarl`**](/dependents#poles) | *by the time* | B |
-| [**`habam blarl`**](/dependents#poles) | *before* | B |
-| [**`halam blarl`**](/dependents#poles) | *after* | B |
-| [**`hovam blarl`**](/dependents#poles) | *so that* / *in order to* | B |
+| [**`thahum blarl`**](/dependents#hinges) | *because* | B |
+| [**`thohem blarl`**](/dependents#hinges) | *if* | B |
+| [**`thebem blarl`**](/dependents#hinges) | *only if* | B |
+| [**`thehom blarl`**](/dependents#hinges) | *if and only if* | B |
+| [**`hezem blarl`**](/dependents#hinges) | *although* / *even though* | B |
+| [**`herom blarl`**](/dependents#hinges) | *while* | B |
+| [**`harum blarl`**](/dependents#hinges) | *until* | B |
+| [**`huvahum blarl`**](/dependents#hinges) | *by the time* | B |
+| [**`habam blarl`**](/dependents#hinges) | *before* | B |
+| [**`halam blarl`**](/dependents#hinges) | *after* | B |
+| [**`hovam blarl`**](/dependents#hinges) | *so that* / *in order to* | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Because](/dependents#poles) | `zazozon vozuyel thahum blarl zalazun vowurol.` | *Azozon sings because Alazun walks.* | B |
-| [If, on a command](/dependents#poles) | `yol vowurol thohem blarl zalazun vehohel.` | *If Alazun sits, walk.* | B |
-| [Despite, with a noun](/dependents#poles) | `zazozon vowurol hezem blalazun.` | *Azozon walks despite Alazun.* | B |
+| [Because](/dependents#hinges) | `zazozon vozuyel thahum blarl zalazun vowurol.` | *Azozon sings because Alazun walks.* | B |
+| [If, on a command](/dependents#hinges) | `yol vowurol thohem blarl zalazun vehohel.` | *If Alazun sits, walk.* | B |
+| [Despite, with a noun](/dependents#hinges) | `zazozon vowurol hezem blalazun.` | *Azozon walks despite Alazun.* | B |
 | [So that](/dependents#so-that) | `zazozon vowurol hovam blarl zalazun vehohel.` | *Azozon walks so that Alazun sits.* | B |
 | [In order to](/dependents#so-that): name the doer again | `zazozon vowurol hovam blarl zazozon vehohel.` | *Azozon walks in order to sit.* | B |
 | [So as not to](/stand-in-vowels#stand-in): `blurl` for `blarl` | `zazozon vowurol hovam blurl zazozon vehohel.` | *Azozon walks so as not to sit.* | I |
 | [Unless](/stand-in-vowels#stand-in): `blurl` for `blarl` | `zazozon vowurol thohem blurl zalazun vezuvel.` | *Azozon walks unless Alazun sleeps.* | I |
-| [So … that](/sentence-linkers#result-pole): the result happened | `zazozon welazem gadamul hahom blarl zazozor vezuvel.` | *Azozon is so tired that they sleep.* | I |
-| [As soon as](/dependents#time-poles) | `zazozon vowurol wadurom halam blarl zalazun vehohel.` | *Azozon walks as soon as Alazun sits.* | B |
+| [So … that](/sentence-linkers#result-hinge): the result happened | `zazozon welazem gadamul hahom blarl zazozor vezuvel.` | *Azozon is so tired that they sleep.* | I |
+| [As soon as](/dependents#time-hinges) | `zazozon vowurol wadurom halam blarl zalazun vehohel.` | *Azozon walks as soon as Alazun sits.* | B |
 
 <PageBreak />
 
@@ -277,13 +277,13 @@ Whose-now is speech-now unless you move it. `henam` claims the moment as real; `
 
 ## Same root as {#roots}
 
-Each pole, linker, and relation word is the abstract sense of an ordinary root. Use the picture to remember it.
+Each hinge, linker, and relation word is the abstract sense of an ordinary root. Use the picture to remember it.
 
 | Forms | Same root as | Stage |
 |-------|--------------|-------|
-| [`thahum`](/dependents#poles) *because*, [`thohem`](/dependents#poles) *if*, [`thebem`](/dependents#poles) *only if*, [`thehom`](/dependents#poles) *if and only if* | `ahul` 🧱, `ohel` 🚪, `ebel` 🧻, `ehol` ↔️ | B |
-| [`hezem`](/dependents#poles) *although*, [`herom`](/dependents#poles) *while*, [`harum`](/dependents#poles) *until*, [`huvahum`](/dependents#poles) *by the time* | `ezel` 🦓, `erol` ♊, `arul` ⏲️, `uvahul` 🏁 | B |
-| [`habam`](/dependents#poles) *before*, [`halam`](/dependents#poles) *after*, [`hovam`](/dependents#poles) *so that* | `abal` 🎒, `alal` ⌛, `oval` 🥅 | B |
+| [`thahum`](/dependents#hinges) *because*, [`thohem`](/dependents#hinges) *if*, [`thebem`](/dependents#hinges) *only if*, [`thehom`](/dependents#hinges) *if and only if* | `ahul` 🧱, `ohel` 🚪, `ebel` 🧻, `ehol` ↔️ | B |
+| [`hezem`](/dependents#hinges) *although*, [`herom`](/dependents#hinges) *while*, [`harum`](/dependents#hinges) *until*, [`huvahum`](/dependents#hinges) *by the time* | `ezel` 🦓, `erol` ♊, `arul` ⏲️, `uvahul` 🏁 | B |
+| [`habam`](/dependents#hinges) *before*, [`halam`](/dependents#hinges) *after*, [`hovam`](/dependents#hinges) *so that* | `abal` 🎒, `alal` ⌛, `oval` 🥅 | B |
 | [`xahom`](/sentence-linkers#sentence-linkers), [`xezem`](/sentence-linkers#sentence-linkers), [`xugorom`](/sentence-linkers#sentence-linkers) | `ahom` ➡️, `ezem` 🦓, `ugorom` 🕰️ | I |
 | [`xevewom`](/sentence-linkers#sentence-linkers), [`xugohum`](/sentence-linkers#sentence-linkers), [`xavedam`](/sentence-linkers#sentence-linkers) | `evewom` 🎞️, `ugohum` 🚧, `avedam` 🍟 | I |
 | [`hewem`](/relations#like-resembles) *like*, [`heham`](/relations#exchange) *in exchange for*, [`hanem`](/relations#proxy) *on behalf of* | `ewel` 🪞, `ehal` 💱, `anel` 🪪 | B |
@@ -300,10 +300,10 @@ Each pole, linker, and relation word is the abstract sense of an ordinary root. 
 | `darl` *that …* ([a statement as content](/dependents#dependent-clauses)) | | `derl` *whether …* ([a question as content](/dependents#dependent-clauses)) |
 | `dorl` *to …* ([an instruction](/stand-in-vowels#stand-in)) | | `durl` *not to …* ([something to avoid](/stand-in-vowels#stand-in)) |
 | `darl` *that …* ([points forward](/dependents#dependent-clauses)) | | `darth` *so* ([points back](/stand-in-vowels#stand-in-back)) |
-| `hovam blarl` *so that* ([an aim, not claimed](/dependents#so-that)) | | `hahom blarl` *so … that* ([the result happened](/sentence-linkers#result-pole)) |
-| `thohem blarl` *if* ([a condition](/dependents#poles)) | | `derl` *whether* ([an open question](/dependents#dependent-clauses)) |
-| `xahom` *therefore* ([starts a sentence](/dependents#continue-x)) | | `hezem blarl` *although* ([attaches a clause](/dependents#poles)) |
+| `hovam blarl` *so that* ([an aim, not claimed](/dependents#so-that)) | | `hahom blarl` *so … that* ([the result happened](/sentence-linkers#result-hinge)) |
+| `thohem blarl` *if* ([a condition](/dependents#hinges)) | | `derl` *whether* ([an open question](/dependents#dependent-clauses)) |
+| `xahom` *therefore* ([starts a sentence](/dependents#continue-x)) | | `hezem blarl` *although* ([attaches a clause](/dependents#hinges)) |
 | `hewem` *like* ([resembles, and is real](/relations#like-resembles)) | | `hewel` *exactly like* ([a perfect match](/exactly-like#exactly-like)) |
 | `gadam` *contents of* ([what a vessel holds](/of-relations#of-relations)) | | `al` *in* ([a place hook](/extra-noun-hooks#extra-noun-intermediate)) |
 | `hanem` *on behalf of* ([an agent](/relations#proxy)) | | `heham` *in exchange for* ([the other half of a swap](/relations#exchange)) |
-| `henam` *as of* ([a dated now](/as-of#as-of)) | | `halam` *after* ([a time for the event](/dependents#time-poles)) |
+| `henam` *as of* ([a dated now](/as-of#as-of)) | | `halam` *after* ([a time for the event](/dependents#time-hinges)) |

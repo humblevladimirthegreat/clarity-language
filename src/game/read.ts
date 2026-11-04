@@ -132,7 +132,7 @@ function readUnits(units: Unit[], act: Act, gaps: Set<LexWord>): void {
       }
       case "hook": {
         const next = units[i + 1];
-        if (unit.job !== "extraNoun" || next?.kind !== "np" || next.coord.level !== "b" || unit.modifiers.length || unit.frame || unit.heldIntention) {
+        if (unit.job !== "extraNoun" || next?.kind !== "np" || next.coord.level !== "b" || unit.modifiers.length || unit.zone || unit.heldIntention) {
           act.unsupported.push(`this hook (${unit.word.raw})`);
           break;
         }

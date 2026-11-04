@@ -102,8 +102,8 @@ describe("classify", () => {
     assert.equal(former.overlay?.gloss, "FORMER");
   });
 
-  it("join-act and join-relation overlays", () => {
-    expectReading("van", "joinAct");
+  it("list verb and join-relation overlays", () => {
+    expectReading("van", "listVerb");
     expectReading("gan", "joinRelation");
   });
 
@@ -353,17 +353,17 @@ describe("classify", () => {
   it("as-of ledger and bookmark overlays on /h/ /ɡ/ /w/ /th/, including resume", () => {
     for (const form of ["henam", "genam", "wenam", "thenam", "henar", "genar", "wenar", "thenar"]) {
       const word = expectOverlay(form);
-      assert.equal(word.overlay?.kind, "clause_pole");
+      assert.equal(word.overlay?.kind, "clause_hinge");
       assert.equal(word.overlay?.gloss, "as-of.ledger");
     }
     for (const form of ["hunom", "gunom", "wunom", "thunom", "hunor", "gunor", "wunor", "thunor"]) {
       const word = expectOverlay(form);
-      assert.equal(word.overlay?.kind, "clause_pole");
+      assert.equal(word.overlay?.kind, "clause_hinge");
       assert.equal(word.overlay?.gloss, "as-of.bookmark");
     }
   });
 
-  it("because pole fault scale on /th/", () => {
+  it("because hinge fault scale on /th/", () => {
     assert.equal(expectOverlay("thahul").overlay?.gloss, "because.fault");
     assert.equal(expectOverlay("thahum").overlay?.gloss, "because");
     assert.equal(expectOverlay("thahur").overlay?.gloss, "because.share");

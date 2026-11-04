@@ -10,13 +10,13 @@
  * - `stray`: `om` + `/b/` with no noun on its left; enforce rejects it.
  * - `span`: a hook between two same-kind endpoints.
  * - `resume`: a resume hook (`-r`) that points back.
- * - `frame`: `uom` + a `/th/` stance it holds as the opposing frame (prescription.md#contrary-to-stance).
+ * - `zone`: `uom` + a `/th/` stance it holds as the opposing zone (prescription.md#contrary-to-stance).
  */
 import { visitResult, visitUnit, vpUnitLists } from "./ast-walk.js";
 import { topicEffect } from "./linkers.js";
 import type { LexWord, ParseResult, Unit } from "./types.js";
 
-export type HookJob = "discourse" | "clause" | "extraNoun" | "genitive" | "stray" | "span" | "resume" | "frame";
+export type HookJob = "discourse" | "clause" | "extraNoun" | "genitive" | "stray" | "span" | "resume" | "zone";
 
 const SPAN_ENDPOINT_KIND: Record<string, string> = {
   "+": "scalar",
@@ -130,7 +130,7 @@ function closesFromTo(units: Unit[], index: number): boolean {
 function hookJob(units: Unit[], index: number, afterJoin: boolean, afterTopic: boolean): HookJob {
   const unit = units[index];
   if (unit?.kind !== "hook") return "clause";
-  if (unit.frame) return "frame";
+  if (unit.zone) return "zone";
   const { word } = unit;
   const prevWord = unitWords(units[index - 1]).filter((w) => w.pos !== "w").at(-1);
   const nextWord = unitWords(units[index + 1])[0];

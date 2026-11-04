@@ -7,7 +7,7 @@ band: intermediate
 ### CAUSE {#cause}
 <a id="cause-mood"></a>
 
-English *that is what makes it happen* points at **how** a result comes about (the mechanism), not only at a condition that holds. Add the stance word **`thewom`** (CAUSE, root **`ewo`**) right before a pole: the pole names the condition, and CAUSE says that condition is how the result is produced. CAUSE can also take its own `/b/` word for the one who makes it happen (below). (cue: ⚙️ *machine*: how the mechanism engages)
+English *that is what makes it happen* points at **how** a result comes about (the mechanism), not only at a condition that holds. Add the stance word **`thewom`** (CAUSE, root **`ewo`**) right before a hinge: the hinge names the condition, and CAUSE says that condition is how the result is produced. CAUSE can also take its own `/b/` word for the one who makes it happen (below). (cue: ⚙️ *machine*: how the mechanism engages)
 
 As plain words, the same root is `zewol` *a machine* and `vewol` *to operate / engage*.
 
@@ -33,7 +33,7 @@ On `/w/` (`wewom`), right before an adjective, CAUSE applies only to that adject
 
 **Compare with:** *because* / *if* name the condition (`thahum` / `thohem`). CAUSE says that the link is the mechanism.
 
-English *habit* / *triggered by*, when a cue is how the act is produced, uses this same stack: **`thewom`** right before the pole, and the cue in the pole's `/b/`. Use **`thahum`** when you claim the cue as a fact, **`thohem`** when you do not. The verb stays the ordinary act.
+English *habit* / *triggered by*, when a cue is how the act is produced, uses this same stack: **`thewom`** right before the hinge, and the cue in the hinge's `/b/`. Use **`thahum`** when you claim the cue as a fact, **`thohem`** when you do not. The verb stays the ordinary act.
 
 > `zazozon vowurol thewom thahum blerulal.`
 >
@@ -45,7 +45,7 @@ English *habit* / *triggered by*, when a cue is how the act is produced, uses th
 
 #### Make someone do it {#make}
 
-In English *Azozon makes Alazun speak*, Azozon makes it happen and Alazun does the speaking. Keep the one who does it (Alazun) as the subject of the verb. Put the one who makes it happen in a `bl-` word right after **`thewom`**, with no pole.
+In English *Azozon makes Alazun speak*, Azozon makes it happen and Alazun does the speaking. Keep the one who does it (Alazun) as the subject of the verb. Put the one who makes it happen in a `bl-` word right after **`thewom`**, with no hinge.
 
 > `zalazun vezuyol thewom blazozon.`
 >
@@ -53,7 +53,7 @@ In English *Azozon makes Alazun speak*, Azozon makes it happen and Alazun does t
 >
 > "Azozon makes Alazun speak."
 
-When a pole follows **`thewom`**, the `/b/` belongs to the pole, as above (`thewom thahum blavulul` *because of fire, as mechanism*).
+When a hinge follows **`thewom`**, the `/b/` belongs to the hinge, as above (`thewom thahum blavulul` *because of fire, as mechanism*).
 
 **Compare with:** *Get someone to* (ask, persuade) is tell + a *to* [stand-in](stand-in-vowels.md#stand-in).
 
@@ -163,5 +163,5 @@ The one who pours stays the subject; the one who makes it happen goes in the `bl
 
 z-wheel | v-stop | [th-CAUSE | bl-Alazun]
 
-For *make*, the causer comes right after **`thewom`** with no pole; a because pole takes an act or a thing, not a person.
+For *make*, the causer comes right after **`thewom`** with no hinge; a because hinge takes an act or a thing, not a person.
 :::

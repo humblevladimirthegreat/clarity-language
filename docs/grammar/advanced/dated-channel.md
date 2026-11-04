@@ -42,7 +42,7 @@ A [carried](/evidentiality#carry-forward) channel keeps its offset. Date the fir
 >
 > "I saw Azozon walk yesterday. Azozon sat down." (the sitting was yesterday too, as I remember)
 
-A signed measure in the `/b/` of a [time pole](/dependents#time-poles) (**`harum`** *until*, **`huvahum`** *by*, **`habam`** *before*, **`halam`** *after*, **`herom`** *during*) counts from now, the same way. The pole itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel of its own (a carried frame does not count). So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a pole to slip in a past or future with no warrant. An absolute date in the pole (`harum bl_#22,7`) needs none of this.
+A signed measure in the `/b/` of a [time hinge](/dependents#time-hinges) (**`harum`** *until*, **`huvahum`** *by*, **`habam`** *before*, **`halam`** *after*, **`herom`** *during*) counts from now, the same way. The hinge itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel of its own (a carried frame does not count). So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a hinge to slip in a past or future with no warrant. An absolute date in the hinge (`harum bl_#22,7`) needs none of this.
 
 > `yol vuhamum zawan harum blazurom grabal.`
 >

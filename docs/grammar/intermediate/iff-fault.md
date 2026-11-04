@@ -7,9 +7,9 @@ band: intermediate
 ### Because, iff, and only because {#only-because}
 <a id="because"></a>
 <a id="iff"></a>
-<a id="poles"></a>
+<a id="hinges"></a>
 
-Beginner's *if* and *only if* do not claim the condition is true. The table completes the set. Pick the pole by **which way the link runs** (the condition is enough, the outcome needs it, or both) and by whether you **claim** the condition is a fact. Poles take **-m**, on `/th/` after a verb and on `/ɡ/` after a noun. As plain words the roots take ordinary endings (`zahul` *a wall*; `zehom` *reciprocity*).
+Beginner's *if* and *only if* do not claim the condition is true. The table completes the set. Pick the hinge by **which way the link runs** (the condition is enough, the outcome needs it, or both) and by whether you **claim** the condition is a fact. Hinges take **-m**, on `/th/` after a verb and on `/ɡ/` after a noun. As plain words the roots take ordinary endings (`zahul` *a wall*; `zehom` *reciprocity*).
 
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -39,7 +39,7 @@ Several conditions can sit inside `/b/` as a [join](/joins) (`thohem blugalal bl
 >
 > "Azozon walks if and only if Alazun is asleep."
 
-*Only because* stacks two poles: **`thebem`** (the outcome needs it), then **`thahum`** with the condition (and it is a fact).
+*Only because* stacks two hinges: **`thebem`** (the outcome needs it), then **`thahum`** with the condition (and it is a fact).
 
 > `zazozon vowurol thebem thahum blerulal.`
 >
@@ -47,7 +47,7 @@ Several conditions can sit inside `/b/` as a [join](/joins) (`thohem blugalal bl
 >
 > "Azozon walks only because of the rain."
 
-A noun after a because pole names an **act or a thing**, not a person. For *because of Alazun*, say what Alazun did as a sentence after **`blarl`**. A name in that `/b/` slot is a named event or place (a storm, a city), never the person.
+A noun after a because hinge names an **act or a thing**, not a person. For *because of Alazun*, say what Alazun did as a sentence after **`blarl`**. A name in that `/b/` slot is a named event or place (a storm, a city), never the person.
 
 English *unless* means *if … not*. Keep **`thohem`**, but use the stand-in **`blurl`** instead of **`blarl`** ([stand-in vowels](stand-in-vowels.md#stand-in)): the outcome holds unless the next sentence is true.
 
@@ -57,7 +57,7 @@ English *unless* means *if … not*. Keep **`thohem`**, but use the stand-in **`
 >
 > "Azozon walks unless Alazun is asleep."
 
-For *even if*, put the *although* pole **`hezem`** right before **`thohem`**. You still do not claim the condition is true, and the outcome holds either way.
+For *even if*, put the *although* hinge **`hezem`** right before **`thohem`**. You still do not claim the condition is true, and the outcome holds either way.
 
 > `zazozon vowurol hezem thohem blarl zalazun vezuvel.`
 >
@@ -184,5 +184,5 @@ z-Alazun | v-run | [th-if | bl-lest-clause] | z-Ahelan | v-tell
 
 z-Azozon | v-departure | [th-because | bl-that-clause] | z-Alazun | v-tell
 
-A because pole takes the act, not the person: say what Alazun did after **`blarl`**.
+A because hinge takes the act, not the person: say what Alazun did after **`blarl`**.
 :::

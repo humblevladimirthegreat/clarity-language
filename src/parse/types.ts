@@ -176,7 +176,7 @@ export type LexReading =
   | "standIn"
   | "standInNamed"
   | "standInBack"
-  | "joinAct"
+  | "listVerb"
   | "joinRelation"
   | "number"
   | "unknown";
@@ -389,9 +389,9 @@ export type Unit =
       job?: HookJob;
       /** Its `/b/` pair describes the noun or landmark on its left, not the clause. */
       onLeft?: true;
-      /** `uom` + a `/th/` stance: the opposing frame the event goes contrary to (prescription.md#contrary-to-stance). */
-      frame?: HUnit;
-      /** WANT, PLAN or DECISION after a holder frame: the holder's wish, plan or choice the event goes against (want.md#whose-intention). */
+      /** `uom` + a `/th/` stance: the opposing zone the event goes contrary to (prescription.md#contrary-to-stance). */
+      zone?: HUnit;
+      /** WANT, PLAN or DECISION after a holder zone: the holder's wish, plan or choice the event goes against (want.md#whose-intention). */
       heldIntention?: LexWord;
       /** `oel` + `/b/` right after an `ul` extra noun: the end of one *from … to* unit (digit-strings.md#time). */
       fromTo?: true;

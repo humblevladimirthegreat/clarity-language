@@ -8,13 +8,13 @@ Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* do
 
 **Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Contrary to a stance](/prescription#contrary-to-stance) · [Continue](/dependents#continue-x) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse) · [Because](/iff-fault#only-because) · [Point back](/discourse-hooks#hook-resume) · [Clause sequence](/clause-sequence#clause-sequence)
 
-Time and discourse dependents use the same **`blarl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
+Time and discourse dependents use the same **`blarl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a hinge root.
 
 | English | Ageben |
 |---------|---------|
-| *although* / *while* / *whilst* / *until* / *till* / *before* / *after* | same pole + **`blarl`** shape on adverb `/h/`, **-m** ([dependent clauses](/dependents#dependent-clauses)): **`hezem`** / **`herom`** / **`harum`** / … |
+| *although* / *while* / *whilst* / *until* / *till* / *before* / *after* | same hinge + **`blarl`** shape on adverb `/h/`, **-m** ([dependent clauses](/dependents#dependent-clauses)): **`hezem`** / **`herom`** / **`harum`** / … |
 | *so that* / *in order to* | same shape: **`hovam`** ([so that](/dependents#so-that)); NP intended get = **`hovam`** + `/b/` **noun** |
-| *despite* (NP) | same **`hezem`** (or **`gezem`**) + `/b/` **noun**, not a second pole |
+| *despite* (NP) | same **`hezem`** (or **`gezem`**) + `/b/` **noun**, not a second hinge |
 | *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uom`** + the stance it goes against: `uom hwuvul` / `uom hwudum` / `uom thagom` / `uom thogel` / `uom thebam` ([contrary to a stance](/prescription#contrary-to-stance)) |
 | *though I promised* / *breaking my promise* | **`hezem blarl`** + the promise as its own sentence: `zuwen vezuvel hezem blarl zuwen vowurol hwuzal.` (*I sleep, although I promised to walk*) ([contrary to a stance](/prescription#contrary-to-stance)) |
 | *after they took back their yes* / *more than they agreed to* | a yes taken back is a no: **`uom hwudum`**; past the agreed terms is the consent bar **`hwudam`** ([every bar](/stance-bars#stance-bars)) |
@@ -94,18 +94,18 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 
 **Needs:** [Because](/iff-fault#only-because) · [Fault](/fault#fault) · [Motive](/prescription#sake-preference) · [Prescription](/ought-for-a-sake#sake-force) · [Attachment sites](/prescription#attachment-sites) · [So that](/dependents#so-that) · [Why?](/fill-ask-jobs#why) · [Emotion compose](/feelings-permission#emotion-compose) · [Feeling with no object](/feelings-permission#feeling-no-object)
 
-English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each split the same way. Name which one you mean: what **made it happen** (the because pole), what the speaker is **doing it for** (a motive, on a sake), or the **faculty** of thinking (the abstract sense of `ebobe`).
+English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each split the same way. Name which one you mean: what **made it happen** (the because hinge), what the speaker is **doing it for** (a motive, on a sake), or the **faculty** of thinking (the abstract sense of `ebobe`).
 
 | English | Ageben | Reading |
 |---------|--------|---------|
-| *the reason it happened* | `thahum` + `/b/` | the because pole |
+| *the reason it happened* | `thahum` + `/b/` | the because hinge |
 | *my reason* / *justify (give your reasons)* | `…thom` on a sake (`thawethom`) | motive: doing it for that sake |
 | *justified* (the act is warranted) | `…them` on a sake (`thawethem`) | prescription: the act ought to serve that sake |
 | *the faculty of reason* | `zebobem` | *intellect* |
 | *purpose* (the outcome aimed at) | `hovam` + `/b/` | *so that* |
 | *purpose* (what my noun is for) | `g…tho…` after the noun (`gawethom`) | the noun's purpose is this sake |
 | *What is the purpose?* | `hovam blar` | *What for?* |
-| *guilty* / *to blame* | `thahul` + `/b/` | the because pole, the reason broke a norm |
+| *guilty* / *to blame* | `thahul` + `/b/` | the because hinge, the reason broke a norm |
 | *guilty* (the feeling) | a feeling word + **`thahul blarl`** + your own act | the feeling, caused by your act, which broke a norm |
 | *hurt* / *upset* (no fault named) | a feeling word + **`thahum blarl`** + what happened | the feeling and its cause, with no one at fault |
 | *ashamed* / *embarrassed* | `gubamom` | the embarrassment root as a property |
@@ -140,7 +140,7 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 >
 > "I feel guilty for speaking." (a cost to a tie, held inside, and my speaking broke a norm)
 
-What makes the feeling guilt is the fault pole on **your own** act. The feeling word alone says only that a tie is under strain, the same word as *hurt*. With the because pole and someone else's act, the same feeling is *hurt*:
+What makes the feeling guilt is the fault hinge on **your own** act. The feeling word alone says only that a tie is under strain, the same word as *hurt*. With the because hinge and someone else's act, the same feeling is *hurt*:
 
 > `thawethumar thahum blarl zalazun vezuyol.`
 >
@@ -148,7 +148,7 @@ What makes the feeling guilt is the fault pole on **your own** act. The feeling 
 >
 > "I'm hurt that Alazun spoke."
 
-Put the **act** in a `bl-` word after a fault pole, not the person ([fault](/fault#fault)). *Guilty* is then *the wrong rests on that act*, and it leaves room for *Alazun did a wrong thing* without *Alazun is bad*.
+Put the **act** in a `bl-` word after a fault hinge, not the person ([fault](/fault#fault)). *Guilty* is then *the wrong rests on that act*, and it leaves room for *Alazun did a wrong thing* without *Alazun is bad*.
 
 **Compare with:** owning a harm to someone else (*I'm sorry*) is [thanks and sorry](/thanks-and-sorry#thanks-sorry), not a guilt feeling.
 
@@ -244,7 +244,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 
 **Needs:** [If](/causation#if) · [Only because](/iff-fault#only-because) · [Fault](/fault#fault) · [Requirement](/permission-consent#requirement) · [Motive](/prescription#sake-preference) · [Met](/sakes#time-horizon-endings-on-met) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Intention](/intention#plan-predict) · [Speech manner](/speech-manner#speech-manner) · [How you know](/evidentiality#evidentiality) · [Enough and too](/sake-bars#sake-bars)
 
-English turns reasons and feelings into nouns (*condition*, *motivation*, *satisfaction*, *truth*). Ageben has no noun for most of them. It keeps the stance word on the clause, so the noun becomes a short claim about how you stand: a condition is the pole word, a motive is a sake, a requirement is a demand, a truth is how you vouch for it.
+English turns reasons and feelings into nouns (*condition*, *motivation*, *satisfaction*, *truth*). Ageben has no noun for most of them. It keeps the stance word on the clause, so the noun becomes a short claim about how you stand: a condition is the hinge word, a motive is a sake, a requirement is a demand, a truth is how you vouch for it.
 
 | English | Ageben | Reading |
 |---------|--------|---------|
@@ -312,7 +312,7 @@ English *biased* says a view may be bent by what the holder wants from it. Agebe
 
 **Needs:** [If](/causation#if) · [Because](/iff-fault#only-because) · [MAY](/knowing#may) · [*as-of*](/as-of#as-of) · [RESIDUE](/notional-standing#residue) · [forecasts](/evidentiality#forecast)
 
-English *because* and *if* can hide whether you **assert the dependent as a world fact**. Ageben puts that choice on the pole: **`thahum`** asserts the condition as the reason the outcome rests on; **`thohem`** does not (the outcome is under that opportunity). *Only if* vs *only because* is the same factivity split on the necessary pole.
+English *because* and *if* can hide whether you **assert the dependent as a world fact**. Ageben puts that choice on the hinge: **`thahum`** asserts the condition as the reason the outcome rests on; **`thohem`** does not (the outcome is under that opportunity). *Only if* vs *only because* is the same factivity split on the necessary hinge.
 
 > `zazozon vowurol thahum blerulal.`
 >
@@ -326,7 +326,7 @@ English *because* and *if* can hide whether you **assert the dependent as a worl
 >
 > "Azozon walks if it rains." (whether it rains is left open)
 
-English *If he'd left, the door would still be locked* is not this pole. Write bookmark [*as-of*](/as-of#as-of) (`hunom`) plus [RESIDUE](/notional-standing#residue) / a [forecast](/evidentiality#forecast) (a channel such as CLUES plus `blral`) as needed, with **no** `thohem`. `thohem` stays speaker-now opportunity (*if it rains*). *If it rains, the Friday tab still stands* may stack both: `thohem` plus a **date** in *as-of* `/b/`.
+English *If he'd left, the door would still be locked* is not this hinge. Write bookmark [*as-of*](/as-of#as-of) (`hunom`) plus [RESIDUE](/notional-standing#residue) / a [forecast](/evidentiality#forecast) (a channel such as CLUES plus `blral`) as needed, with **no** `thohem`. `thohem` stays speaker-now opportunity (*if it rains*). *If it rains, the Friday tab still stands* may stack both: `thohem` plus a **date** in *as-of* `/b/`.
 
 > `zohel galewul haram theyom blral hunom blarl zalazun vudurul.`
 >
@@ -346,7 +346,7 @@ English *If he'd left, the door would still be locked* is not this pole. Write b
 
 **Needs:** [If](/causation#if) · [Dependent clauses](/dependents#dependent-clauses) · [stance numbers](/number-roles#number-as-stance-by-marker) · [NOTIONAL](/notional#notional)
 
-English *If Alazun swam, Azozon would walk* (past-tense *if*) says the condition is a long shot. Keep the open pole **`thohem blarl`** and put *unlikely* **`thrul`** inside the dependent clause.
+English *If Alazun swam, Azozon would walk* (past-tense *if*) says the condition is a long shot. Keep the open hinge **`thohem blarl`** and put *unlikely* **`thrul`** inside the dependent clause.
 
 > `zazozon vowurol thohem blarl zalazun thrul vazuvol.`
 >
@@ -388,7 +388,7 @@ Use **`thahum blarl`** only when Q is also asserted as a world-foundation, what 
 
 **Needs:** [Deduction](/evidentiality#deduction) · [Evidence clause](/evidentiality#evidence-clause) · [If](/causation#if) · [Because, iff, and only because](/iff-fault#only-because) · [Clause joins](/joins#clause-joins) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional)
 
-An argument has three parts, and each has its own slot. The **link** between premises and conclusion is a pole (*if*, *if and only if*). **How you know** the link is the channel: DEDUCED (`thanam`) when the conclusion must hold. **Whether you grant the premises** depends on what sits before **`blarl`**: the channel alone asserts them, and a pole between the channel and **`blarl`** does not.
+An argument has three parts, and each has its own slot. The **link** between premises and conclusion is a hinge (*if*, *if and only if*). **How you know** the link is the channel: DEDUCED (`thanam`) when the conclusion must hold. **Whether you grant the premises** depends on what sits before **`blarl`**: the channel alone asserts them, and a hinge between the channel and **`blarl`** does not.
 
 | English | Ageben | You assert |
 |---------|--------|------------|
@@ -434,7 +434,7 @@ A word about the argument does not make it. *The argument is valid* names the li
 
 **Needs:** [If](/causation#if) · [evidentiality](/evidentiality#evidentiality) · [restrictors](/restrictors) · [CAUSE](/cause#cause)
 
-A one-off episode and a standing pattern use the same poles. Add extra words for the extra jobs: evidential `/th/` for *how you know* ([evidentiality](/evidentiality#evidentiality)), **`hual` / `huam`** for how often ([restrictors](/restrictors)), **`thewom`** for mechanism ([CAUSE](/cause#cause)).
+A one-off episode and a standing pattern use the same hinges. Add extra words for the extra jobs: evidential `/th/` for *how you know* ([evidentiality](/evidentiality#evidentiality)), **`hual` / `huam`** for how often ([restrictors](/restrictors)), **`thewom`** for mechanism ([CAUSE](/cause#cause)).
 
 > `zerulal gohem blugalal hual.`
 >
@@ -448,7 +448,7 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 
 **Needs:** [CAUSE](/cause#cause) · [Because](/iff-fault#only-because) · [If](/causation#if) · [Always](/restrictors) · [Only when](/restrictors) · [How a kind holds](/label-scope#classification-packaging) · [Used to](say-tense.md#used-to) · [PLAN](/intention#plan-predict)
 
-English *habit*, *I have a habit of*, and *triggered by* pack how often the act repeats, what cues it, and whether that is who you are. Name the job you mean. When a cue is how the act is produced, put **`thewom`** right before **`thahum`** (the cue is a fact) or **`thohem`** (you do not claim it holds), and the cue in that pole's `/b/`.
+English *habit*, *I have a habit of*, and *triggered by* pack how often the act repeats, what cues it, and whether that is who you are. Name the job you mean. When a cue is how the act is produced, put **`thewom`** right before **`thahum`** (the cue is a fact) or **`thohem`** (you do not claim it holds), and the cue in that hinge's `/b/`.
 
 | English | Ageben |
 |---------|---------|
@@ -818,7 +818,7 @@ With no pair, the feeling is now. Keeping *it hurt then* apart from *it hurts no
 **Needs:** [Emotion compose](/feelings-permission#emotion-compose) · [Because](/iff-fault#only-because) · [Fault](/fault#fault) · [MAY](/knowing#may)
 
 
-A direction locus says where the charge **goes**. It does not say who **caused** it. Name the cause with the [because pole](/iff-fault#because) after the feeling, and name its [fault](/fault#fault) only when you mean it. The target and the cause may differ.
+A direction locus says where the charge **goes**. It does not say who **caused** it. Name the cause with the [because hinge](/iff-fault#because) after the feeling, and name its [fault](/fault#fault) only when you mean it. The target and the cause may differ.
 
 > `zezuyol wawethumem goyom blazozon thahum blerulal.`
 >
@@ -838,7 +838,7 @@ A direction locus says where the charge **goes**. It does not say who **caused**
 >
 > "Resentful at Alazun about the memo; maybe Alazun was wrong to speak."
 
-Put an **act** after the pole (`barl zalazun vezuyol`), not the person. A feeling can be aimed at Alazun; blame goes on what Alazun did.
+Put an **act** after the hinge (`barl zalazun vezuyol`), not the person. A feeling can be aimed at Alazun; blame goes on what Alazun did.
 
 ### Curious, confused, bored, awed, surprised {#understanding-feelings}
 
@@ -1163,7 +1163,7 @@ z-Alazun | th-MAY | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 
 ### Feelings: when and why {#reasons-feelings-practice}
 
-Short drills for these recipes. A channel and offset after **`goyom`** date the stimulus. **`thenam`** dates the feeling. The because pole names the cause; **`thahul`** says someone was wrong.
+Short drills for these recipes. A channel and offset after **`goyom`** date the stimulus. **`thenam`** dates the feeling. The because hinge names the cause; **`thahul`** says someone was wrong.
 
 **Setting:** a harbor office
 

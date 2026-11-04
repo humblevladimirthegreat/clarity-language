@@ -50,13 +50,13 @@ For English *whether*, change the vowel to **`e`**: **`derl`**. The inner senten
 >
 > "Azozon sees whether Alazun walks."
 
-**Compare with:** *the dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. *If Alazun walks* sets a condition rather than filling a role, so it takes a pole word instead of a stand-in on its own (next section).
+**Compare with:** *the dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. *If Alazun walks* sets a condition rather than filling a role, so it takes a hinge word instead of a stand-in on its own (next section).
 
-### Because, if, although (poles) {#poles}
+### Because, if, although (hinges) {#hinges}
 
-Words like *because*, *if*, and *although* attach a dependent clause as a reason, a condition, a contrast, or a time. Ageben uses a pair for this: a **pole** word that names the link, then the stand-in **`blarl`** right after it. The pole is a relation word, so **`blarl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`blarl`** at the very end.
+Words like *because*, *if*, and *although* attach a dependent clause as a reason, a condition, a contrast, or a time. Ageben uses a pair for this: a **hinge** word that names the link, then the stand-in **`blarl`** right after it. The hinge is a relation word, so **`blarl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`blarl`** at the very end.
 
-The pole's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, so they take `/th/`. *Although*, *while*, *until*, *before*, *after*, and *so that* describe the event itself, so they are adverbs on `/h/`.
+The hinge's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, so they take `/th/`. *Although*, *while*, *until*, *before*, *after*, and *so that* describe the event itself, so they are adverbs on `/h/`.
 
 > `zazozon vozuyel thahum blarl zalazun vowurol.`
 >
@@ -64,7 +64,7 @@ The pole's role letter follows the clause page. *Because*, *if*, *only if*, and 
 >
 > "Azozon sings because Alazun walks."
 
-A pole uses the abstract sense of its root, not the everyday object, so it ends in **-m**.
+A hinge uses the abstract sense of its root, not the everyday object, so it ends in **-m**.
 
 You can also say:
 
@@ -83,7 +83,7 @@ You can also say:
 | **`halam blarl`** | *after* | `alal` *sand* | ⌛: the sand has already run through |
 | **`hovam blarl`** | *so that* / *in order to* | `oval` *goal* | 🥅: you act so the shot counts |
 
-A command or request makes no claim, so an *if* pole on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Ageben keeps the default order, with **`blarl`** last.
+A command or request makes no claim, so an *if* hinge on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Ageben keeps the default order, with **`blarl`** last.
 
 > `yol vowurol thohem blarl zalazun vehohel.`
 >
@@ -91,7 +91,7 @@ A command or request makes no claim, so an *if* pole on it limits the instructio
 >
 > "If Alazun sits, walk."
 
-English *despite* takes a noun instead of a clause (*despite Alazun*). Use the same **`hezem`** pole and put that noun in a `bl-` word where **`blarl`** would go. As with *although*, the obstacle is taken as fact, and you add no second word for it. The pole is on `/h/` because it describes the event, never on `/th/`. To attach it to a noun instead, use `/ɡ/`: **`gezem`**. (cue: 🦓 *zebra*: two stripes, still one animal)
+English *despite* takes a noun instead of a clause (*despite Alazun*). Use the same **`hezem`** hinge and put that noun in a `bl-` word where **`blarl`** would go. As with *although*, the obstacle is taken as fact, and you add no second word for it. The hinge is on `/h/` because it describes the event, never on `/th/`. To attach it to a noun instead, use `/ɡ/`: **`gezem`**. (cue: 🦓 *zebra*: two stripes, still one animal)
 
 > `zazozon vowurol hezem blalazun.`
 >
@@ -105,9 +105,9 @@ The sentence after **`blarl`** has to name an event or a thing, so it needs a no
 
 **Compare with:** discourse *however* and *therefore* start a new sentence after a finished claim; they are not *although*. *Whether Alazun walks* is **`derl`**, not **`thohem`**: *if* sets a condition, and *whether* leaves a yes-or-no question open.
 
-### Times (*while*, *before*, *after*, *until*, *by*) {#time-poles}
+### Times (*while*, *before*, *after*, *until*, *by*) {#time-hinges}
 
-The time poles take a noun the same way. Put the event or period in a `bl-` word right after **`herom`** *during*, **`habam`** *before*, **`halam`** *after*, or **`harum`** *until*.
+The time hinges take a noun the same way. Put the event or period in a `bl-` word right after **`herom`** *during*, **`habam`** *before*, **`halam`** *after*, or **`harum`** *until*.
 
 > `zazozon vowurol herom blanulul.`
 >
@@ -149,7 +149,7 @@ Ageben verbs have no past or future form. *Before*, *after*, *while*, and *until
 
 <a id="event-purpose"></a>
 
-English *so that* names the outcome an event aims at (*walks so that Alazun sits*). Use the pole **`hovam`** with **`blarl`**, the same pair shape as *because*, and put the outcome in the sentence after **`blarl`**. Unlike *because*, this does **not** claim the outcome happened. To attach the pole to a noun, use **`govam`**. (cue: 🥅 *goal*: you act so the shot counts)
+English *so that* names the outcome an event aims at (*walks so that Alazun sits*). Use the hinge **`hovam`** with **`blarl`**, the same pair shape as *because*, and put the outcome in the sentence after **`blarl`**. Unlike *because*, this does **not** claim the outcome happened. To attach the hinge to a noun, use **`govam`**. (cue: 🥅 *goal*: you act so the shot counts)
 
 > `zazozon vowurol hovam blarl zalazun vehohel.`
 >

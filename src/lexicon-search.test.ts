@@ -183,7 +183,7 @@ describe("searchLexicon", () => {
     assert.ok(hit.overlays.some((o) => o.senseForm === witnessed.senseForm && o.pos === "th"));
   });
 
-  it("finds join-act overlay van without a published row", () => {
+  it("finds list verb overlay van without a published row", () => {
     const results = searchLexicon(index, rows, "van", { limit: 10, overlays, overlayIndex });
     const hit = results.find(
       (r) => r.overlayOnly && r.overlays[0]?.senseForm === "an" && r.overlays[0]?.pos === "v",

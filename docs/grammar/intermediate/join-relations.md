@@ -6,7 +6,7 @@ band: intermediate
 
 ### Join-relations {#join-relations}
 
-When English ties one extra thing to a noun or an action by a list move (*a cupcake with peanuts*, *walk without meat*, *work prioritizing the bug*), write the move as an adjective (first letter **`g`**) or an adverb (first letter **`h`**), with the same join vowel as [join-act verbs](join-acts.md#join-act-verbs) and ending **-n** (`gan` / `han`, …). Right after it comes one `/b/` word that names the extra thing. Keep that pair together: `gan` + `/b/` describes a noun, and `han` + `/b/` works as one adverb. You can now say *including*, *without*, or *prioritizing* without building a new list. Here too, **-n** does not mark a name, and an associative group on the `/b/` word takes noun **-x** as usual.
+When English ties one extra thing to a noun or an action by a list move (*a cupcake with peanuts*, *walk without meat*, *work prioritizing the bug*), write the move as an adjective (first letter **`g`**) or an adverb (first letter **`h`**), with the same join vowel as [list verbs](list-verbs.md#list-verbs) and ending **-n** (`gan` / `han`, …). Right after it comes one `/b/` word that names the extra thing. Keep that pair together: `gan` + `/b/` describes a noun, and `han` + `/b/` works as one adverb. You can now say *including*, *without*, or *prioritizing* without building a new list. Here too, **-n** does not mark a name, and an associative group on the `/b/` word takes noun **-x** as usual.
 
 > `zugedal gan bluwedal.`
 >
@@ -144,7 +144,7 @@ Before a `/b/` noun, the hook **`al`** means *in*; *including* an extra member i
 
 ## See also
 
-- Join-act verbs: [join-acts.md](/join-acts)
+- List verbs: [list-verbs.md](/list-verbs)
 - List joins (right-close fence): [joins.md](/joins)
 - Causal readings of open / without: [causation.md](/causation)
 - Prefix-less *including* / *instead*: [hooks.md](/hooks)

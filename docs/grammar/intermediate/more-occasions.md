@@ -6,7 +6,7 @@ band: intermediate
 
 ### Occasions vs a dependent *when*
 
-English *when* / *if* can introduce a whole **sentence** as the occasion (*if Azozon walks*). Write that with a pole word, `/h/` (*when*) or `/th/` (*if*), plus `/b/` [**`blarl`**](/dependents#poles). The main sentence stops after **`blarl`**; the next sentence is the occasion. Use a restrictor when each occasion is a word in the adverb slot; use **`blarl`** when the occasion is a full clause.
+English *when* / *if* can introduce a whole **sentence** as the occasion (*if Azozon walks*). Write that with a hinge word, `/h/` (*when*) or `/th/` (*if*), plus `/b/` [**`blarl`**](/dependents#hinges). The main sentence stops after **`blarl`**; the next sentence is the occasion. Use a restrictor when each occasion is a word in the adverb slot; use **`blarl`** when the occasion is a full clause.
 
 > `zahelan vozuyel thohem blarl zazozon vowurol.`
 >
@@ -263,5 +263,5 @@ Rank **`hol`** names the preferred time; **`hal`** would say *only* when foggy.
 
 z-Ahelan | v-sleep | [th-if | bl-that-clause] | z-Azozon | v-climb
 
-A restrictor lists occasion words; a whole sentence as the occasion takes a pole word and **`blarl`**.
+A restrictor lists occasion words; a whole sentence as the occasion takes a hinge word and **`blarl`**.
 :::

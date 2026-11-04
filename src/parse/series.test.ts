@@ -10,7 +10,7 @@ function act(raw: string): LexWord {
 }
 
 describe("join series membership", () => {
-  it("puts rank, sequence, invert-rank, and the equative on o / ao / uo / oe", () => {
+  it("puts rank, route, invert-rank, and the equative on o / ao / uo / oe", () => {
     assert.deepEqual([...RANK_SERIES].sort(), ["ao", "o", "oe", "uo"]);
     assert.deepEqual([...BAR_SERIES].sort(), ["o", "oe", "uo"]);
     assert.deepEqual([...SCALE_SERIES].sort(), ["ao", "o", "uo"]);

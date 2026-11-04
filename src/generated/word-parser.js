@@ -900,12 +900,12 @@ function peg$parse(input, options) {
   }
   function peg$f109() {    return "th";  }
   function peg$f110() {    return "th";  }
-  function peg$f111(vowels, frame, root, r) {    return r;  }
-  function peg$f112(vowels, frame, root, rest, v) {    return v;  }
-  function peg$f113(vowels, frame, root, rest, scope, ending, plural) {
+  function peg$f111(vowels, zone, root, r) {    return r;  }
+  function peg$f112(vowels, zone, root, rest, v) {    return v;  }
+  function peg$f113(vowels, zone, root, rest, scope, ending, plural) {
     const fields = {
       leftRoots: [],
-      hook: vowels + (frame ? "m" : "l"),
+      hook: vowels + (zone ? "m" : "l"),
       rightRoots: [root, ...rest],
     };
     if (scope) fields.scopeVowel = scope;

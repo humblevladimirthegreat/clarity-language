@@ -4,11 +4,11 @@ Recipes for English comparisons, percentages, units and dates. Every form here i
 
 ## Comparing {#comparing}
 
-### Sorted lists (`ae`) {#sequence-scale}
+### Sorted lists (`ae`) {#route-scale}
 
-**Needs:** [Sequence `ao`](/rank-joins#sequence-ao) · [Comparatives](/comparatives#comparatives)
+**Needs:** [Route `ao`](/rank-joins#route-ao) · [Comparatives](/comparatives#comparatives)
 
-When English would say *from least to most ADJ* (*easiest to hardest*, a syllabus order), you are not naming a winner. You are listing items along the scale from its low end. Use [sequence](/rank-joins#sequence-ao) **`ae`** before the shared adjective: the first name is the **start** of the scale, the last is the far end.
+When English would say *from least to most ADJ* (*easiest to hardest*, a syllabus order), you are not naming a winner. You are listing items along the scale from its low end. Use [route](/rank-joins#route-ao) **`ae`** before the shared adjective: the first name is the **start** of the scale, the last is the far end.
 
 > `zazozon zalazun zahelan zaol gamahum.`
 >
@@ -16,7 +16,7 @@ When English would say *from least to most ADJ* (*easiest to hardest*, a syllabu
 >
 > "Azozon, Alazun, Ahelan, from least to most challenging."
 
-**Compare with:** `zazozon zalazun zahelan zol gamahum` puts Azozon at the **top** (*most* challenging first). Rank **`e`** lists best-first; sequence **`ae`** lists start-first.
+**Compare with:** `zazozon zalazun zahelan zol gamahum` puts Azozon at the **top** (*most* challenging first). Rank **`e`** lists best-first; route **`ae`** lists start-first.
 
 ### Distributive *both are ADJ*
 <a id="distributive-both"></a>
@@ -483,12 +483,12 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bezerom g
 
 **Related form:** general **`+1xROOT`** (*primary / singleton of a kind*) is a [numeric prefix](/numeric-derivation#scalar-digit-morphs), not an SI alias.
 
-### *Until tomorrow*, *by tomorrow* {#pole-from-now}
+### *Until tomorrow*, *by tomorrow* {#hinge-from-now}
 <a id="until-tomorrow"></a>
 
-**Needs:** [Time poles](/dependents#dependent-clauses) · [Signed count from now](/dated-channel#dated-channel) · [Dated channel](/dated-channel#dated-channel)
+**Needs:** [Time hinges](/dependents#dependent-clauses) · [Signed count from now](/dated-channel#dated-channel) · [Dated channel](/dated-channel#dated-channel)
 
-English *until tomorrow* (also *till tomorrow*), *by tomorrow*, and *before next week* count from today. A command or a plan has no channel to count from, so the time pole takes the count itself: a signed measure in its `/b/` runs from now.
+English *until tomorrow* (also *till tomorrow*), *by tomorrow*, and *before next week* count from today. A command or a plan has no channel to count from, so the time hinge takes the count itself: a signed measure in its `/b/` runs from now.
 
 > `yol vuhamum zawan harum blazurom grabal.`
 >
@@ -503,7 +503,7 @@ Use **`harum`** for *until* / *till*, **`huvahum`** for *by*, **`habam`** for *b
 
 **Needs:** [Time](/digit-strings#time) · [*as-of*](/as-of#as-of)
 
-Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftover, climate, plan, and forecast score against is [*as-of*](/as-of#as-of) (`henam` / `hunom` plus `/b/`). Put the date on that pole (`henam bl_#22,7`); do not also write spare `h_#22,7` for the same snapshot. Clock / *before* / *after* may sit beside *as-of*: books vs event-when are different jobs.
+Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftover, climate, plan, and forecast score against is [*as-of*](/as-of#as-of) (`henam` / `hunom` plus `/b/`). Put the date on that hinge (`henam bl_#22,7`); do not also write spare `h_#22,7` for the same snapshot. Clock / *before* / *after* may sit beside *as-of*: books vs event-when are different jobs.
 
 ## Brainstorming {#brainstorming}
 

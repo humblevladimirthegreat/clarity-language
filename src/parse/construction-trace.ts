@@ -160,7 +160,7 @@ function traceRule(name: string): string {
   if (/^asOfWPair[A-Z]/.test(name)) return "asOfWPair";
   if (/^(g(Package|Lone|Shared)(Open|Closed)|gListItem|gRespItem|glPackage(Z|D|B|Turn|Citation))$/.test(name)) return "gPackage";
   if (/^hSingle(Open|Closed)?$/.test(name) || name === "hGrounds") return "hCoordPart";
-  if (/^hUnit(Open|Closed)$/.test(name) || /^(hStandIn|hScale(Open|Closed)?|frameUnit(Open|Closed)?|barUnit|fenceBarUnit|barStandIn|hSharedUnit)$/.test(name)) return "hUnitRule";
+  if (/^hUnit(Open|Closed)$/.test(name) || /^(hStandIn|hScale(Open|Closed)?|zoneUnit(Open|Closed)?|barUnit|fenceBarUnit|barStandIn|hSharedUnit)$/.test(name)) return "hUnitRule";
   if (/^(sharedAdj(Open|Closed)|sharedScale(Open)?|sharedAdverb)$/.test(name)) return "sharedAfterJoin";
   if (/^[zdb]Coord(Part)?(Rest|Free)?(Grounds)?(Open|Closed|Shared|Bare|Tagged)$/.test(name)) return name.replace(/(Rest|Free)?(Grounds)?(Open|Closed|Shared|Bare|Tagged)$/, "");
   if (/^[zdb]JoinClose(Open|Closed|Shared|Bare)$/.test(name)) return "npJoinClose";

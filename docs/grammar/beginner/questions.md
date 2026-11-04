@@ -6,7 +6,7 @@ band: beginner
 
 This page teaches how to ask a question and how to answer one.
 
-You can ask for *yes* or *no*, or you can leave a blank for *who* / *what* (a **fill-ask**). After a *yes* / *no* question, you can answer with a short *yes* / *no* / *sure* word (**polar stance**). The same words answer a command or a request.
+You can ask for *yes* or *no*, or you can leave a blank for *who* / *what* (a **fill-ask**). After a *yes* / *no* question, you can answer with a short *yes* / *no* / *sure* word (**polar particle**). The same words answer a command or a request.
 
 
 ### Ask (`yel` / `yem`) {#question}
@@ -164,10 +164,10 @@ If only one slot is unknown, put join **-r** only there. Write the known thing a
 >
 > "Azozon."
 
-### Polar stance (*yes* / *no* / *sure*) {#polar-stance}
+### Polar particle (*yes* / *no* / *sure*) {#polar-particle}
 <a id="answers"></a>
 
-After a *yes* / *no* question, you often answer with a short word that means *yes*, *no*, or *I’ll take that*. That answer is a **polar stance**. It can stand alone as a whole turn, or it can sit at the start of a turn before a sentence body.
+After a *yes* / *no* question, you often answer with a short word that means *yes*, *no*, or *I’ll take that*. That answer is a **polar particle**. It can stand alone as a whole turn, or it can sit at the start of a turn before a sentence body.
 
 Write **`y`**, then two vowels, then **-l** (firm) or **-m** (softer).
 

@@ -439,7 +439,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     }
     return { line: "closed mood", href: "knowing.html" };
   }
-  if (word.reading === "joinAct" || word.reading === "joinRelation") {
+  if (word.reading === "listVerb" || word.reading === "joinRelation") {
     return { line: "join-series form", href: "join-across-roles.html" };
   }
   if (word.ending === "r" && word.reading !== "sake" && word.reading !== "ability" && word.reading !== "greeting") {

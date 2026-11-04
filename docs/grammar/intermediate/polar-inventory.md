@@ -4,7 +4,7 @@ band: intermediate
 
 # Yes, no, and not that {#yes-no-and-not-that}
 
-### Polar stance: fuller inventory
+### Polar particle: fuller inventory
 
 Beginner already used *yes* / *true* (**`yaol`**), *no* / *false* (**`yuol`**), and *sure* (**`yael`**). The rest of the map is *reject this option*, *reject the question itself*, and *decline to answer*. The first vowel names the family: **`u`** not, **`a`** add, **`o`** pass. The second vowel says what you are answering: **`o`** the claim or the order, **`e`** this option, **`a`** the question's own premise. You can also hear the family: the three undo answers [fall](phonotactics.md#phonotactics) and the other three rise.
 

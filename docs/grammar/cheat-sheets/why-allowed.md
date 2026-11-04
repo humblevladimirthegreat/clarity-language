@@ -9,9 +9,9 @@ outline: false
 
 A quick look at [causation](/causation), [sakes](/sakes), and [feelings and permission](/feelings-permission) . Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
-## Because, if, only if {#poles}
+## Because, if, only if {#hinges}
 
-Write the outcome first, then the pole, then the condition as the pole's `/b/`. The pole is on `/th/` after a verb and on `/ɡ/` after a noun (*there is X if …*).
+Write the outcome first, then the hinge, then the condition as the hinge's `/b/`. The hinge is on `/th/` after a verb and on `/ɡ/` after a noun (*there is X if …*).
 
 <!-- cheat-sheet: why-allowed -->
 | After a verb / a noun | Link | Condition | English | Stage |
@@ -33,11 +33,11 @@ Write the outcome first, then the pole, then the condition as the pole's `/b/`. 
 | [Unless](/iff-fault#only-because): `blurl` for `blarl` | `zazozon vowurol thohem blurl zalazun vezuvel.` | *Azozon walks unless Alazun is asleep.* | I |
 | [Even if](/iff-fault#only-because) | `zazozon vowurol hezem thohem blarl zalazun vezuvel.` | *Azozon walks even if Alazun is asleep.* | I |
 
-A noun after a because pole names an act or a thing, never a person. For *because of Alazun*, give what Alazun did as a sentence after `blarl`.
+A noun after a because hinge names an act or a thing, never a person. For *because of Alazun*, give what Alazun did as a sentence after `blarl`.
 
 ### Fault and share {#fault}
 
-The ending on the because pole says whether anyone did wrong.
+The ending on the because hinge says whether anyone did wrong.
 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Stage |
@@ -55,12 +55,12 @@ The ending on the because pole says whether anyone did wrong.
 
 ### CAUSE: the mechanism {#cause}
 
-`thewom` before a pole says the condition is how the result is produced.
+`thewom` before a hinge says the condition is how the result is produced.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Mechanism](/cause#cause) | `zazozon vowurol thewom thohem blerulal.` | *Azozon walks if it rains.* (rain as the mechanism) | I |
-| [Make someone do it](/cause#make): causer in `/b/`, no pole | `zalazun vezuyol thewom blazozon.` | *Azozon makes Alazun speak.* | I |
+| [Make someone do it](/cause#make): causer in `/b/`, no hinge | `zalazun vezuyol thewom blazozon.` | *Azozon makes Alazun speak.* | I |
 | [One adjective only](/cause#cause): `wewom` | `zazozon wewom gelunem vowurol.` | *Azozon walks, straining.* (something is causing the strain) | I |
 
 ## The sakes {#sakes}

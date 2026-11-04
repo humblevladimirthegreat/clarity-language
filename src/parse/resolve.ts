@@ -391,7 +391,7 @@ function hostedFiller(hosted: Hosted | undefined): Filler | undefined {
   return { words: [hosted.bound, ...(hosted.boundJoin?.members ?? [])], join: hosted.boundJoin?.join };
 }
 
-const TIME_POLES = new Set(["until", "by", "before", "after", "while"]);
+const TIME_HINGES = new Set(["until", "by", "before", "after", "while"]);
 const STANCE_SKIP = new Set(["evidential", "may", "notional", "mirative"]);
 const SLOT_PARTS = new Set<RolePart>(["z", "d", "b"]);
 
@@ -402,7 +402,7 @@ function isMannerWord(word: LexWord): boolean {
   if (word.reading === "restrictor" || word.reading === "joinRelation") return false;
   if (word.family.kind === "number") return false;
   if (isClauseAdverb(word)) return false;
-  if (word.overlay?.kind === "clause_pole" && TIME_POLES.has(word.overlay.gloss)) return false;
+  if (word.overlay?.kind === "clause_hinge" && TIME_HINGES.has(word.overlay.gloss)) return false;
   return word.family.kind === "content" || word.family.kind === "x";
 }
 
@@ -411,7 +411,7 @@ function isStanceWord(word: LexWord): boolean {
   if (word.family.kind === "x" && word.family.xFamily === "holder") return false;
   if (word.overlay && STANCE_SKIP.has(word.overlay.kind)) return false;
   if (word.reading === "sake") return true;
-  if (word.overlay?.kind === "cause" || word.overlay?.kind === "clause_pole") return true;
+  if (word.overlay?.kind === "cause" || word.overlay?.kind === "clause_hinge") return true;
   if (word.overlay?.kind === "plan" || word.overlay?.kind === "want" || word.overlay?.kind === "decision") return true;
   return word.family.kind === "content";
 }
@@ -434,7 +434,7 @@ function collectHWords(units: Unit[], pred: (word: LexWord) => boolean, words: L
         for (const item of part.shared) if (isSharedHUnit(item)) takeHUnit(item, pred, words);
       }
     } else if (unit.kind === "island") collectHWords(unit.island.units, pred, words);
-    else if (unit.kind === "hook" && unit.frame) takeHUnit(unit.frame, pred, words);
+    else if (unit.kind === "hook" && unit.zone) takeHUnit(unit.zone, pred, words);
   }
 }
 
@@ -798,11 +798,11 @@ function harvest(ctx: Ctx, word: LexWord): void {
 
 // ── Hooked-join point-back (hooked-joins.md#hooked-joins-point-back) ──────────────
 
-/** A time pole (`halam`, `harum`, …) or an `/h/` hooked join: its landmark is a time. */
+/** A time hinge (`halam`, `harum`, …) or an `/h/` hooked join: its landmark is a time. */
 function hostsTime(host: LexWord | undefined): boolean {
   if (!host || host.pos !== "h") return false;
   if (joinHook(host)) return true;
-  return host.overlay?.kind === "clause_pole" && TIME_POLES.has(host.overlay.gloss);
+  return host.overlay?.kind === "clause_hinge" && TIME_HINGES.has(host.overlay.gloss);
 }
 
 /** The `/b/` heads right after extra-noun hooks in one unit list: those hooks' landmarks. */

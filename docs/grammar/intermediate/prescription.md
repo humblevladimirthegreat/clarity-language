@@ -36,7 +36,7 @@ A reason held **to keep a cost off** is a *so that … not* dependent ([so that]
 | `…thom` | does this for the sake; time horizon unstated (soft default if unknown) | *for* | **-m** ≈ open |
 | `…thor` | does this for the sake right away | *immediate* | **-r** ≈ right now |
 
-Neither end is better; a good day needs both, and doing something for a payoff right now is often exactly what is needed. When the **situation** is what pulls the reason, say so with the [because pole](/causation) and the situation as `/b/`.
+Neither end is better; a good day needs both, and doing something for a payoff right now is often exactly what is needed. When the **situation** is what pulls the reason, say so with the [because hinge](/causation) and the situation as `/b/`.
 
 ### Which ending table?
 
@@ -115,7 +115,7 @@ The `/b/` names whose **stake** it is, not who **owns** the noun. On `/ɡ/` the 
 
 ### Contrary to a stance (`uom`) {#contrary-to-stance}
 
-English *contrary to the plan* says that the event happens even though a plan says otherwise. Put the hook **`uom`** *contrary to* right before a `/th/` stance word or an [intention adverb](/clause#intention-adverbs). That word then says what the event goes against, and it no longer applies to the claim. `zazozon vowurol thagom.` says you plan for Azozon to walk; `zazozon vowurol uom thagom.` says Azozon walks anyway. (cue: **uo** ≈ contrary; **-m** the opposing frame, which the stance spells out)
+English *contrary to the plan* says that the event happens even though a plan says otherwise. Put the hook **`uom`** *contrary to* right before a `/th/` stance word or an [intention adverb](/clause#intention-adverbs). That word then says what the event goes against, and it no longer applies to the claim. `zazozon vowurol thagom.` says you plan for Azozon to walk; `zazozon vowurol uom thagom.` says Azozon walks anyway. (cue: **uo** ≈ contrary; **-m** the opposing zone, which the stance spells out)
 
 > `zazozon vowurol uom thagom.`
 >

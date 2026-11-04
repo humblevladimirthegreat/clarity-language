@@ -276,7 +276,7 @@ describe("parse — stand-in dependents", () => {
     }
   });
 
-  it("parses deduction: premises joined in the grounds, or under a pole (evidentiality.md#deduction)", () => {
+  it("parses deduction: premises joined in the grounds, or under a hinge (evidentiality.md#deduction)", () => {
     const asserted = parseText("zazozon vowurol thanal blarl zalazun vezuvel xam zalazun veruvol.").utterances[0]!.bodies[0]!.clause;
     assert.equal(asserted.dependent?.orodo.raw, "blarl");
     const valid = parseText("zazozon vowurol thanam thohem blarl zalazun vezuvel.").utterances[0]!.bodies[0]!.clause;
@@ -490,7 +490,7 @@ describe("parse — illegal fences", () => {
   });
 });
 
-describe("parse — as-of poles", () => {
+describe("parse — as-of hinges", () => {
   it("parses hosted ledger plus date /b/", () => {
     const result = parseText("zalazun haram henam bl_#22,7 vudurum.");
     const h = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "henam");
@@ -507,7 +507,7 @@ describe("parse — as-of poles", () => {
     assert.equal(th.unit.hosted?.bound.raw, "bl_#22,7");
   });
 
-  it("parses a fault pole hosting a stand-in, stacked after only-if", () => {
+  it("parses a fault hinge hosting a stand-in, stacked after only-if", () => {
     parseText("zazozon vowurol thebem thahul blarl zalazun vezuyol.");
     parseText("zonal wawethumel goyom blalazun thomam thahul blarl zalazun vezuyol.");
   });
@@ -791,14 +791,14 @@ describe("parse — spans.md mention marker", () => {
 });
 
 describe("parse — contrary to a stance (uom + /th/)", () => {
-  const frameOf = (text: string) => {
+  const zoneOf = (text: string) => {
     const units = parseText(text).utterances[0]!.bodies[0]!.clause.units;
     const hook = units.find((unit) => unit.kind === "hook");
     assert.ok(hook && hook.kind === "hook", text);
     return { hook, units };
   };
 
-  it("holds the stance as the hook's frame, not a stance on the claim", () => {
+  it("holds the stance as the hook's zone, not a stance on the claim", () => {
     for (const text of [
       "zazozon vowurol uom thagom.",
       "zazozon vowurol uom thogem.",
@@ -807,52 +807,52 @@ describe("parse — contrary to a stance (uom + /th/)", () => {
       "zazozon vowurol uom thuwuyom.",
       "zazozon vowurol uom thebamalazun.",
     ]) {
-      const { hook, units } = frameOf(text);
-      assert.equal(hook.job, "frame", text);
-      assert.equal(hook.frame?.word.pos, "th", text);
+      const { hook, units } = zoneOf(text);
+      assert.equal(hook.job, "zone", text);
+      assert.equal(hook.zone?.word.pos, "th", text);
       assert.ok(!units.some((unit) => unit.kind === "h"), text);
     }
     for (const text of ["zazozon vowurol uom hwuvul.", "zazozon vowurol uom hwuvol."]) {
-      const { hook, units } = frameOf(text);
-      assert.equal(hook.job, "frame", text);
-      assert.equal(hook.frame?.word.family.kind, "say", text);
+      const { hook, units } = zoneOf(text);
+      assert.equal(hook.job, "zone", text);
+      assert.equal(hook.zone?.word.family.kind, "say", text);
       assert.ok(!units.some((unit) => unit.kind === "h"), text);
     }
   });
 
-  it("holds WANT, PLAN or DECISION after a holder as part of the frame", () => {
+  it("holds WANT, PLAN or DECISION after a holder as part of the zone", () => {
     for (const held of ["thalom", "thagom", "thogem"]) {
-      const { hook, units } = frameOf(`zazozon vowurol uom theyomazozon ${held}.`);
-      assert.equal(hook.frame?.word.raw, "theyomazozon", held);
+      const { hook, units } = zoneOf(`zazozon vowurol uom theyomazozon ${held}.`);
+      assert.equal(hook.zone?.word.raw, "theyomazozon", held);
       assert.equal(hook.heldIntention?.raw, held);
       assert.ok(!units.some((unit) => unit.kind === "h"), held);
     }
   });
 
-  it("keeps the stance's hosted /b/ inside the frame", () => {
-    const { hook } = frameOf("zazozon vezuyol uom hwuvom blalazun.");
-    assert.equal(hook.frame?.word.raw, "hwuvom");
-    assert.equal(hook.frame?.hosted?.bound.raw, "blalazun");
+  it("keeps the stance's hosted /b/ inside the zone", () => {
+    const { hook } = zoneOf("zazozon vezuyol uom hwuvom blalazun.");
+    assert.equal(hook.zone?.word.raw, "hwuvom");
+    assert.equal(hook.zone?.hosted?.bound.raw, "blalazun");
   });
 
-  it("takes the frame at the left edge too", () => {
+  it("takes the zone at the left edge too", () => {
     const result = parseText("uom hwuvul zazozon vowurol.");
     assert.equal(result.utterances[0]!.left.hook, undefined);
-    const { hook } = frameOf("uom hwuvul zazozon vowurol.");
-    assert.equal(hook.frame?.word.raw, "hwuvul");
+    const { hook } = zoneOf("uom hwuvul zazozon vowurol.");
+    assert.equal(hook.zone?.word.raw, "hwuvul");
   });
 
   it("leaves a stance elsewhere in the clause on the claim", () => {
-    const { hook, units } = frameOf("zazozon vowurol uom hwuvul hwuvam.");
-    assert.equal(hook.frame?.word.raw, "hwuvul");
+    const { hook, units } = zoneOf("zazozon vowurol uom hwuvul hwuvam.");
+    assert.equal(hook.zone?.word.raw, "hwuvul");
     const claim = units.filter((unit) => unit.kind === "h");
     assert.deepEqual(claim.map((unit) => unit.kind === "h" && unit.unit.word.raw), ["hwuvam"]);
   });
 
   it("keeps uom + /b/ as an extra noun", () => {
-    const { hook } = frameOf("zazozon vowurol uom berulal.");
+    const { hook } = zoneOf("zazozon vowurol uom berulal.");
     assert.equal(hook.job, "extraNoun");
-    assert.equal(hook.frame, undefined);
+    assert.equal(hook.zone, undefined);
   });
 });
 
@@ -875,7 +875,7 @@ describe("parse — whose plan or decision (holder)", () => {
   });
 });
 
-describe("negation scope at a fence or a pole", () => {
+describe("negation scope at a fence or a hinge", () => {
   it("reads zual + kind + zul as not every K (universals-domains.md#not-every)", () => {
     const units = parseText("zual gogozel zul vezuvel.").utterances[0]!.bodies[0]!.clause.units;
     const np = units[0]!;
@@ -885,7 +885,7 @@ describe("negation scope at a fence or a pole", () => {
     assert.equal(np.coord.parts[0]!.shared[0]!.word.raw, "gogozel");
   });
 
-  it("keeps a stance join before barl in the main sentence and barl on the pole", () => {
+  it("keeps a stance join before barl in the main sentence and barl on the hinge", () => {
     const clause = parseText("zazozon veduyol thanam thohem thul blarl zazozon gwozeduyol.").utterances[0]!.bodies[0]!.clause;
     const hs = clause.units.flatMap((u) => (u.kind === "h" ? [u.unit] : []));
     assert.deepEqual(hs.map((h) => h.word.raw), ["thanam", "thohem", "thul"]);
@@ -894,10 +894,10 @@ describe("negation scope at a fence or a pole", () => {
     assert.equal(clause.dependent?.orodo.raw, "blarl");
   });
 
-  it("leaves barl off a pole that already has its /b/", () => {
+  it("leaves barl off a hinge that already has its /b/", () => {
     const clause = parseText("zazozon vowurol thahum blerulal thul barl zalazun veruvol.").utterances[0]!.bodies[0]!.clause;
-    const pole = clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "thahum");
-    assert.equal(pole?.kind === "h" && pole.unit.hosted?.bound.raw, "blerulal");
+    const hinge = clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "thahum");
+    assert.equal(hinge?.kind === "h" && hinge.unit.hosted?.bound.raw, "blerulal");
   });
 });
 
@@ -948,7 +948,7 @@ describe("parse — one tree per sentence (syntactic-unambiguity batch 5a)", () 
     assert.deepEqual(units("zalazun vudurul vul thewom blazozon.").map((u) => u.kind), ["np", "vp", "h"]);
   });
 
-  it("gives barl after a stance join to the pole", () => {
+  it("gives barl after a stance join to the hinge", () => {
     const clause = parseText("zazozon vowurol thahum thul blarl zalazun veruvol.").utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
     assert.ok(!clause.units.some((u) => u.kind === "np" && u.coord.level === "b"));

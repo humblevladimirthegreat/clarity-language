@@ -30,7 +30,7 @@ English bounds *everyone*, *someone*, and *nothing* with a preposition: *everyon
 |-------|--------------|-------------|
 | role letter | the slot, as on any join: `/z/`, `/d/`, `/b/`, or `/h/` | `z` |
 | hook vowels | an [extra-noun hook](/extra-noun-hooks#extra-noun-intermediate), with its **-l** left unwritten | `o` *at* |
-| `m` or `r` | the hook's **-m** frame, or its **-r** point back | none |
+| `m` or `r` | the hook's **-m** zone, or its **-r** point back | none |
 | **`x`** | the seam, as in a hook prefix | `x` |
 | join vowels + ending | any [standalone join](/joins#standalone-phrase), read as usual | `ual` *everyone* |
 
@@ -42,7 +42,7 @@ In speech **`x`** starts the join's syllable (*zo-xu-al*). With `m` or `r`, that
 
 ### Which hook {#hooked-joins-hooks}
 
-Every hook in the [extra-noun grid](/extra-noun-hooks#extra-noun-intermediate) works, with the reading it has there. The relation holds between each member and the landmark. **-l** (no letter before the seam) is the exact relation, and `m` before the seam is the frame, as on a free hook.
+Every hook in the [extra-noun grid](/extra-noun-hooks#extra-noun-intermediate) works, with the reading it has there. The relation holds between each member and the landmark. **-l** (no letter before the seam) is the exact relation, and `m` before the seam is the zone, as on a free hook.
 
 | Hook | **-l** | Example | **-m** | Example |
 |------|--------|---------|--------|---------|
@@ -137,7 +137,7 @@ English *never since …* and *always, until …* bound how often something happ
 | `o` | at that moment | `hexar blanulul` | *at some point at the thunderstorm* |
 | `u` | from that point on ([since](/hooks#since)) | `huxal blanulul` | *never since the thunderstorm* |
 | `oe` | up to that point | `hoexual blanulul` | *always, until the thunderstorm* |
-| `em` | around that moment (the frame of `o`) | `hemxual blanulul` | *always, around the time of the thunderstorm* |
+| `em` | around that moment (the zone of `o`) | `hemxual blanulul` | *always, around the time of the thunderstorm* |
 
 > `zazozon vowurol hoexual blanulul.`
 >
@@ -153,9 +153,9 @@ English *never since …* and *always, until …* bound how often something happ
 
 A loose bound is often the honest one: *you always get like this at the holidays* usually means *around* them (`hemxual`), and the listener can check that.
 
-**Compare with:** [`harum`](/dependents#time-poles) *until* places the event itself; `hoexual` bounds the *always*.
+**Compare with:** [`harum`](/dependents#time-hinges) *until* places the event itself; `hoexual` bounds the *always*.
 
-**Point back to a time.** With `r` before the seam, `ar`, `er`, and `ur` point back to the latest **time** landmark: the `bl-` word of a time pole (`herom`, `habam`, `halam`, `harum`, `huvahum`), the landmark of an earlier `/h/` hooked join, or a `blarl` in either. A place landmark does not count.
+**Point back to a time.** With `r` before the seam, `ar`, `er`, and `ur` point back to the latest **time** landmark: the `bl-` word of a time hinge (`herom`, `habam`, `halam`, `harum`, `huvahum`), the landmark of an earlier `/h/` hooked join, or a `blarl` in either. A place landmark does not count.
 
 > `zazozon vowurol halam blanulul. zawan vebal hurxal.`
 >
