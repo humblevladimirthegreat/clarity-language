@@ -63,12 +63,12 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
     reader: "The same `y-` act twice is one act said more insistently: `y-prohibition | y-prohibition` = *Don't. I mean it.*; `y-question | y-question` = *I really need to know: …?*",
   },
   "leftEdge.ForceAnswer": {
-    anchor: "polar-inventory.md#rhetorical",
+    anchor: "rhetorical-questions.md#rhetorical",
     summary: "yal yel rhetorical question",
     reader: "`y-statement | y-question` before a body is a rhetorical question: the speaker asserts the obvious answer and asks for no reply (`y-statement | y-question | z-wh | v-care` = *Who cares?*, nobody does).",
   },
   "leftEdge.ForceQuiz": {
-    anchor: "polar-inventory.md#quiz",
+    anchor: "rhetorical-questions.md#quiz",
     summary: "yel yal quiz",
     reader: "`y-question | y-statement` is a quiz: the asker already knows the answer and wants the listener to say it (*So who punched the box? You tell me.*).",
   },
@@ -312,7 +312,7 @@ export const WORD_READING_CONSTRUCTIONS: Record<Exclude<LexReading, OverlayOnlyR
   join: { anchor: "joins.md#and-lists-a", summary: "join" },
   standIn: { anchor: "dependents.md#dependent-clauses", summary: "stand-in" },
   standInNamed: { anchor: "stand-in-roles.md#stand-in-roles", summary: "named stand-in" },
-  standInBack: { anchor: "sentence-linkers.md#stand-in-back", summary: "backward stand-in" },
+  standInBack: { anchor: "stand-in-vowels.md#stand-in-back", summary: "backward stand-in" },
   number: { anchor: "numbers.md#counts", summary: "number" },
   unknown: { anchor: "spans.md#writing", summary: "unclassified root" },
 };
@@ -324,9 +324,9 @@ export const WORD_ENDING_CONSTRUCTIONS: Record<Ending, ConstructionEntry> = {
   ln: { anchor: "proper-names.md#name-instance--ln", summary: "-ln one thing the name applies to" },
   r: { anchor: "pronouns.md#resume-r", summary: "-r resume" },
   rl: { anchor: "dependents.md#dependent-clauses", summary: "-rl stand-in" },
-  rm: { anchor: "sentence-linkers.md#stand-in", summary: "-rm stand-in" },
+  rm: { anchor: "stand-in-vowels.md#stand-in", summary: "-rm stand-in" },
   rn: { anchor: "stand-in-roles.md#stand-in-roles", summary: "-rn named stand-in" },
-  rth: { anchor: "sentence-linkers.md#stand-in-back", summary: "-rth backward stand-in" },
+  rth: { anchor: "stand-in-vowels.md#stand-in-back", summary: "-rth backward stand-in" },
 };
 
 export const WORD_PLURAL_CONSTRUCTIONS: Record<Exclude<Pos, "w" | "h" | "th" | "x">, ConstructionEntry> = {
@@ -555,16 +555,16 @@ export const RESTRICTOR_GROUP: Record<JoinSeries, keyof typeof RESTRICTOR_CONSTR
 /** Stand-in vowels (dependents.md). */
 export const STAND_IN_CONSTRUCTIONS: Record<Vowel, ConstructionEntry> = {
   a: { anchor: "dependents.md#dependent-clauses", summary: "darl / barl that" },
-  o: { anchor: "sentence-linkers.md#stand-in", summary: "dorl to" },
+  o: { anchor: "stand-in-vowels.md#stand-in", summary: "dorl to" },
   e: { anchor: "dependents.md#dependent-clauses", summary: "derl whether" },
-  u: { anchor: "sentence-linkers.md#stand-in", summary: "durl lest" },
+  u: { anchor: "stand-in-vowels.md#stand-in", summary: "durl lest" },
 };
 
 export const STAND_IN_BACK_CONSTRUCTIONS: Record<Vowel, ConstructionEntry> = {
-  a: { anchor: "sentence-linkers.md#stand-in-back", summary: "darth that same claim" },
-  o: { anchor: "sentence-linkers.md#stand-in-back", summary: "dorth that same instruction" },
-  e: { anchor: "sentence-linkers.md#stand-in-back", summary: "derth that same question" },
-  u: { anchor: "sentence-linkers.md#stand-in-back", summary: "durth that same don't" },
+  a: { anchor: "stand-in-vowels.md#stand-in-back", summary: "darth that same claim" },
+  o: { anchor: "stand-in-vowels.md#stand-in-back", summary: "dorth that same instruction" },
+  e: { anchor: "stand-in-vowels.md#stand-in-back", summary: "derth that same question" },
+  u: { anchor: "stand-in-vowels.md#stand-in-back", summary: "durth that same don't" },
 };
 
 /** Hook forms (hooks.md, discourse-hooks.md). */
@@ -782,9 +782,9 @@ export const REJECTIONS = {
   blListItem: { anchor: "clause.md#extra-nouns", summary: "in a hosted list every /b/ item takes bl- (`hazam bludehal bluzedel bal`); the join word does not" },
   glNoNoun: { anchor: "left-bound-adjectives.md#left-bound-adjectives", summary: "a gl- adjective describes the next noun, so a noun must follow it (`globulol zodozel`); with no noun after it, use a plain /ɡ/ word" },
   nameInstanceSlot: { anchor: "proper-names.md#name-instance--ln", summary: "-ln (span ^@) is one thing a name applies to: it fills /z/ /d/ /b/ or stands as a citation, never on /ɡ/ /v/ /h/ /w/ /th/ /x/ /y/, and never on a pronoun root" },
-  standInRole: { anchor: "sentence-linkers.md#stand-in", summary: "stand-ins (-rl -rm -rth -rn) fill /z/ /d/ /b/ only; there is no stand-in on /ɡ/ /h/ /w/ /th/ (such is whole-stem -r, like that is `hewem blarth`)" },
+  standInRole: { anchor: "stand-in-vowels.md#stand-in", summary: "stand-ins (-rl -rm -rth -rn) fill /z/ /d/ /b/ only; there is no stand-in on /ɡ/ /h/ /w/ /th/ (such is whole-stem -r, like that is `hewem blarth`)" },
   standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is `blarl` after a listed pole, a clues / pattern channel, like (`hewem`), or an /h/ hooked join" },
-  standInHostUndo: { anchor: "sentence-linkers.md#stand-in", summary: "burl follows only the so-that pole holalam or the if pole thadoram" },
+  standInHostUndo: { anchor: "stand-in-vowels.md#stand-in", summary: "burl follows only the so-that pole holalam or the if pole thadoram" },
   poleStack: { anchor: "iff-fault.md#only-because", summary: "pole stacks are `theboram thurugum` and `hezuvem thadoram`" },
   objectNeedsVerb: { anchor: "predication.md#existence", summary: "an object /d/ needs a verb" },
   stanceNumber: { anchor: "number-markers.md#number-as-stance-by-marker", summary: "a stance number takes + (likelihood), _ (source) or # (Nth-hand); th- with digits and th#- are not used" },

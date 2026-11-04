@@ -75,7 +75,7 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 | **-ln** | [one of a name](/proper-names#name-instance--ln) | I |
 | **-x** | [plural / associates](/plurality), after the ending | B |
 | **-rl** / **-rm** | [stand-in or pinned resume](/dependents#dependent-clauses) | I |
-| **-rth** | [pointing back](/sentence-linkers#stand-in-back): the only word-final `th` | I |
+| **-rth** | [pointing back](/stand-in-vowels#stand-in-back): the only word-final `th` | I |
 
 Word-initial `x` is the [continue](/dependents#continue-x) prefix, not a compound seam.
 

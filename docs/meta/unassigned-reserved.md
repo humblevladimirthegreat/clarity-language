@@ -264,7 +264,7 @@ An **-r** grade on a closed root without its own **-r** would take away the live
 
 ## Stand-ins and dependents
 
-Source: [dependents.md](/sentence-linkers#stand-in)
+Source: [dependents.md](/stand-in-vowels#stand-in)
 
 - **closed (D-32):** a stand-in on `/ɡ/` (`garl`).
 - **open:** forward, back and named stand-ins (`-rl` `-rm` `-rth` `-rn`) on `/h/` `/w/` `/th/` (`harth`, `tharn`) and on `/x/` `/y/`. Not guessable: a sentence filling an adverb slot could be its manner, its time, or its condition, and `/x/` and `/y/` words already open sentences. *Such* is whole-stem **-r** and *like that* is `hewem blarth`. Parser: `standInRole`.

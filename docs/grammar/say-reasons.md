@@ -23,7 +23,7 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 | *it follows that* / *necessarily, then* (a deduction from the last sentence) | **`xahol`** ([sentence linkers](/sentence-linkers#sentence-linkers)) |
 | *that doesn't follow* / *non sequitur* | **`thanam thohem thul blarl`** ([arguments](#arguments)) |
 | *thus* (*in this way*) | the same adverb again: `/h/` with **-r** ([how English approximates -r](/tag-pronouns#how-english-approximates-r)) |
-| *the fact that* / *the idea that* / *it is a fact that* | a predicate with a `/z/` stand-in: `gunugem zarl zazozon vowurol.`; or two sentences, then `zarth` ([stand-in vowels](/sentence-linkers#stand-in)): `zazozon vowurol. zarth gunugem.` A clause never modifies a noun |
+| *the fact that* / *the idea that* / *it is a fact that* | a predicate with a `/z/` stand-in: `gunugem zarl zazozon vowurol.`; or two sentences, then `zarth` ([stand-in vowels](/stand-in-vowels#stand-in)): `zazozon vowurol. zarth gunugem.` A clause never modifies a noun |
 | *due to* / *owing to* / *because of* (NP) | **`thahum`** + `/b/` **noun** (`thahum blerulal`) |
 | *not because* (clause) | **`thahum thul blarl`** ([stance join before `blarl`](/join-across-roles#stance-join-before-barl)) |
 | *however* / *meanwhile* (discourse) | **`xezem`** / **`xugorom`** |
@@ -36,7 +36,7 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}
 
-**Needs:** [Evidence strength](/evidentiality#evidence-strength) · [Deduction](/evidentiality#deduction) · [MAY](/knowing#may) · [Hold endings (NOTIONAL)](/notional#hold-endings-notional) · [Hopefully and other attitudes](/feelings-permission#speaker-attitude) · [Unmet](/sakes#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](/spans#asides) · [CAUSE](/iff-fault#cause) · [Every bar](/stance-bars#stance-bars)
+**Needs:** [Evidence strength](/evidentiality#evidence-strength) · [Deduction](/evidentiality#deduction) · [MAY](/knowing#may) · [Hold endings (NOTIONAL)](/notional#hold-endings-notional) · [Hopefully and other attitudes](/feelings-permission#speaker-attitude) · [Unmet](/sakes#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](/spans#asides) · [CAUSE](/cause#cause) · [Every bar](/stance-bars#stance-bars)
 
 English adverbs like *obviously*, *apparently* and *presumably* say **how you know** a claim. Ageben has no word for each one. It puts a channel on the clause as a `/th/` word, and the ending grades the evidence: **-l** solid, **-m** ordinary, **-r** thin. *Guess* and *assume* are not channels: a guess is a *could be* (MAY), and an assumption is toying with a premise (NOTIONAL). *Unfortunately* says how **you** feel about the claim, so it is an attitude word.
 
@@ -154,9 +154,9 @@ Put the **act** in a `bl-` word after a fault pole, not the person ([fault](/fau
 
 ### Kill, feed, remove, prevent, persuade, introduce, show, create, excite {#cause-verbs}
 
-**Needs:** [Make someone do it](/iff-fault#make) · [Decision](/ability#decision) · [So that](/dependents#so-that) · [Extra nouns](/hooks#extra-noun)
+**Needs:** [Make someone do it](/cause#make) · [Decision](/ability#decision) · [So that](/dependents#so-that) · [Extra nouns](/hooks#extra-noun)
 
-English has a separate verb for *make someone do X* in many common cases: *kill* is *make die*, *feed* is *make eat*. Ageben has one way to say all of them. Keep the ordinary verb for what happens, let the one it happens to be the subject, and put the one who makes it happen in a `bl-` word right after **`thewom`** ([make](/iff-fault#make)). Change only the verb root.
+English has a separate verb for *make someone do X* in many common cases: *kill* is *make die*, *feed* is *make eat*. Ageben has one way to say all of them. Keep the ordinary verb for what happens, let the one it happens to be the subject, and put the one who makes it happen in a `bl-` word right after **`thewom`** ([make](/cause#make)). Change only the verb root.
 
 | English | Ageben | Reading |
 |---------|--------|---------|
@@ -197,7 +197,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 >
 > "Azozon walks so that Alazun does not leave."
 
-**Compare with:** *get someone to* by asking is tell plus a *to* [stand-in](/sentence-linkers#stand-in), not **`thewom`**. **`thewom`** says the causer made it happen. Persuading puts the decision on the one persuaded, so a later change of mind stays possible. Their decision is in their mind, so a [holder](/holder#holder) says how you know it.
+**Compare with:** *get someone to* by asking is tell plus a *to* [stand-in](/stand-in-vowels#stand-in), not **`thewom`**. **`thewom`** says the causer made it happen. Persuading puts the decision on the one persuaded, so a later change of mind stays possible. Their decision is in their mind, so a [holder](/holder#holder) says how you know it.
 
 ### Know, mean, explain, realize, forget, become {#mind-verbs}
 
@@ -432,9 +432,9 @@ A word about the argument does not make it. *The argument is valid* names the li
 ### Stacks (evidentiality, CAUSE, restrictors)
 <a id="stacks"></a>
 
-**Needs:** [If](/causation#if) · [evidentiality](/evidentiality#evidentiality) · [restrictors](/restrictors) · [CAUSE](/iff-fault#cause)
+**Needs:** [If](/causation#if) · [evidentiality](/evidentiality#evidentiality) · [restrictors](/restrictors) · [CAUSE](/cause#cause)
 
-A one-off episode and a standing pattern use the same poles. Add extra words for the extra jobs: evidential `/th/` for *how you know* ([evidentiality](/evidentiality#evidentiality)), **`hual` / `huam`** for how often ([restrictors](/restrictors)), **`thewom`** for mechanism ([CAUSE](/iff-fault#cause)).
+A one-off episode and a standing pattern use the same poles. Add extra words for the extra jobs: evidential `/th/` for *how you know* ([evidentiality](/evidentiality#evidentiality)), **`hual` / `huam`** for how often ([restrictors](/restrictors)), **`thewom`** for mechanism ([CAUSE](/cause#cause)).
 
 > `zerulal gohem blugalal hual.`
 >
@@ -446,7 +446,7 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 
 ### Habit, triggered by {#habit}
 
-**Needs:** [CAUSE](/iff-fault#cause) · [Because](/iff-fault#only-because) · [If](/causation#if) · [Always](/restrictors) · [Only when](/restrictors) · [How a kind holds](/label-scope#classification-packaging) · [Used to](say-tense.md#used-to) · [PLAN](/intention#plan-predict)
+**Needs:** [CAUSE](/cause#cause) · [Because](/iff-fault#only-because) · [If](/causation#if) · [Always](/restrictors) · [Only when](/restrictors) · [How a kind holds](/label-scope#classification-packaging) · [Used to](say-tense.md#used-to) · [PLAN](/intention#plan-predict)
 
 English *habit*, *I have a habit of*, and *triggered by* pack how often the act repeats, what cues it, and whether that is who you are. Name the job you mean. When a cue is how the act is produced, put **`thewom`** right before **`thahum`** (the cue is a fact) or **`thohem`** (you do not claim it holds), and the cue in that pole's `/b/`.
 

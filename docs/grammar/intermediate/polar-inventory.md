@@ -202,78 +202,6 @@ A *yes/no* question can also check a **named** item: put a single-item join afte
 
 **Compare with:** *who* / *which* still uses join **-r** ([fill-ask](/questions#fill-ask-r)).
 
-### Rhetorical question {#rhetorical}
-
-A **rhetorical question** sounds like a question, but you are not waiting for a reply: you think the answer is obvious. It [stacks two act words](speech-acts.md#stacked-acts): a statement word first, because a claim is what you really make, then a question word for how it sounds. The body is an ordinary yes/no question or fill-ask, in a statement's usual order.
-
-> `yal yel zar vegemal.`
->
-> y-statement | y-question | z-wh | v-care
->
-> "Who cares?" (nobody does)
-
-> `yal yel zazozon vowurol.`
->
-> y-statement | y-question | z-Azozon | v-walk
->
-> "Doesn't Azozon walk?" (of course Azozon does)
-
-Soft **`yam yel`** muses rather than insists: you lean toward an answer but put it forward lightly, as if thinking aloud.
-
-> `yam yel zar vegemal.`
->
-> y-soft-statement | y-question | z-wh | v-care
->
-> "Who really cares, though?"
-
-<!-- cheat-sheet: talking -->
-| Ageben | Use | English |
-|--------|-----|---------|
-| **`yal yel`** | rhetorical question | *Who cares?* (nobody) |
-| **`yam yel`** | musing | *Who really cares, though?* |
-| **`yar yel`** | rhetorical for now | *Surely, as things stand…?* |
-| **`yal yem`** | sounds like idle wondering | *I wonder who cares…* (nobody) |
-| **`yal yer`** | sounds like a check | *Just checking, it's Tuesday, right?* (you know it is) |
-
-The listener may still reply, but no reply is owed.
-
-**Compare with:** a [tag](#tags) after the sentence (`yel yaol.` after a claim) asks the listener to confirm. A rhetorical question asks for nothing.
-
-### Quiz {#quiz}
-
-A **quiz** asks something you already know, because you want the other person to say it. Put the question word first, because a question is what you really ask, then the statement word: you already hold the answer. The body is an ordinary yes/no question or fill-ask, in a question's usual order.
-
-> `yel yal ? zar vabuvul dubogal.`
->
-> y-question | y-statement | ? | z-wh | v-punch | d-box
->
-> "So who punched the box?" (I know who; you say it)
-
-The answer is the one the asker already holds. Soft **`yem yal`** is a gentle quiz: *I think you know this one…*
-
-**Compare with:** a [rhetorical question](#rhetorical) (`yal yel`) puts the statement first. You state the answer and ask for nothing. A quiz asks, and the other person gives the answer you already know.
-
-### Questions that sound like another act {#stacked-questions}
-
-A question can also sound like a command or a prohibition. It still asks, and the first word says so. Whenever either of two stacked act words is a question word, the [question tone](/questions#question-tone) `?` goes right after both of them.
-
-<!-- cheat-sheet: talking -->
-| Ageben | Use | English |
-|--------|-----|---------|
-| **`yel yal`** | quiz: you know the answer | *Seven times eight is…?* |
-| **`yel yol`** | question demanded as an order: an answer is required | *Tell me where you were.* |
-| **`yel yul`** | question that hopes for *no* | *You're not leaving, are you?* |
-
-> `yel yul ? zawan vudurul.`
->
-> y-question | y-prohibition | ? | z-listener | v-departure
->
-> "You're not leaving, are you?" (a real question; you hope not)
-
-**Compare with:** **`yul yel`** puts the prohibition first. It forbids and only sounds like a question (*Must you?*), so no answer is owed. **`yel yul`** really asks, and shows which answer you want. A [tag](#tags) asks the listener to confirm a claim you have already made.
-
-**`yel yol`** and the quiz both insist on an answer. In the quiz you know it already; here you do not.
-
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -315,15 +243,7 @@ y-question | z-Azozon | [v-tell | v-not] . y-yes
 y-request | v-attest | z-listener . y-question | y-sure
 :::
 
-**3.** *So who lies?* (you already know; they say it)
-
-::: details Show answer
-`yel yal ? zar vulamul.`
-
-y-question | y-statement | ? | z-wh | v-lie
-:::
-
-**4.** *Just Azozon?*
+**3.** *Just Azozon?*
 
 ::: details Show answer
 `yel zazozon zal.`
@@ -331,20 +251,12 @@ y-question | y-statement | ? | z-wh | v-lie
 y-question | [z-Azozon | z-and]
 :::
 
-**5.** *I'd rather not say.*
+**4.** *I'd rather not say.*
 
 ::: details Show answer
 `yoem.`
 
 y-decline-soft
-:::
-
-**6.** *You're not lying, are you?* (a real question; you hope not)
-
-::: details Show answer
-`yel yul ? zawan vulamul.`
-
-y-question | y-prohibition | ? | z-listener | v-lie
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
@@ -357,15 +269,7 @@ y-question | [d-phone | d-any]
 *Any phone?* (name one; any will do)
 :::
 
-**2.** `yal yel zar vugel.`
-
-::: details Show answer
-y-statement | y-question | z-wh | v-attest
-
-*Who attests?* (nobody does)
-:::
-
-**3.** `yoer.`
+**2.** `yoer.`
 
 ::: details Show answer
 y-decline-for-now
@@ -373,7 +277,7 @@ y-decline-for-now
 *I'll pass for now.*
 :::
 
-**4.** `zazozon vulamul. yel yuol.`
+**3.** `zazozon vulamul. yel yuol.`
 
 ::: details Show answer
 z-Azozon | v-lie . y-question | y-no
@@ -381,7 +285,7 @@ z-Azozon | v-lie . y-question | y-no
 *Azozon lied, or am I wrong?*
 :::
 
-**5.** `!!yuel.`
+**4.** `!!yuel.`
 
 ::: details Show answer
 !!y-refuse-option
@@ -389,7 +293,7 @@ z-Azozon | v-lie . y-question | y-no
 *Hell no!*
 :::
 
-**6.** `yaor zazozon vayebel.`
+**5.** `yaor zazozon vayebel.`
 
 ::: details Show answer
 y-yes-for-now | z-Azozon | v-see
@@ -421,12 +325,12 @@ y-reject-frame
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *So who attests?* (you already know; they say it) <!-- lint: error -->`yal yel ? zar vugel.`
+**1.** *Azozon saw the phone, right?* <!-- lint: error -->`zazozon dovewel vayebel. yaol.`
 
 ::: details Show answer
-`yel yal ? zar vugel.`
+`zazozon dovewel vayebel. yel yaol.`
 
-y-question | y-statement | ? | z-wh | v-attest
+z-Azozon | d-phone | v-see . y-question | y-yes
 
-A quiz puts the question word first; **`yal yel`** is a rhetorical question and asks for nothing.
+Alone, **`yaol`** gives the answer; the tag puts **`yel`** first to ask for it.
 :::

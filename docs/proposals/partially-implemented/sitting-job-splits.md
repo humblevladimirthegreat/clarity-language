@@ -1,6 +1,6 @@
 # Split later sittings onto job-titled pages
 
-**Status:** Phase 1 shipped. Not design authority; fold into grammar / meta, then drop.  
+**Status:** Phases 1–4 shipped. Not design authority; fold into grammar / meta, then drop.  
 **Related:** [learning levels](../meta/learning-levels.md#how-to-apply), [later-stage shape](../meta/grammar-docs.md#later-stage-shape), [peel headings](../../scripts/peel-headings.ts), [drill generation](../meta/drill-generation.md), [level reviews](../meta/translation-exercises.md#level-reviews).
 
 A title-and-organization pass already renamed leftover Intermediate / Advanced titles and promoted wrapper subsections. It did **not** split. This file is the worklist and the per-session prompt.
@@ -34,12 +34,12 @@ Ids below were current when this file was written. Re-read the parent before pee
 |-------|---------|-----------------|
 | 1 | `viewpoint.md`, `feelings-permission.md`, `notional-standing.md` | Strongest kitchen-sink titles. **Done.** |
 | 2 | `ability.md`, `span-mention.md`, `of-relations.md` | **Done.** |
-| 3 | `singability.md`, `join-across-roles.md`, `universality.md` | Place-name leftover; join leftovers; dated channel. **Peels and Practice/reviews applied; confirm `npm run build` in the Phase 3 session.** |
-| 4 | `polar-inventory.md`, `iff-fault.md`, `sentence-linkers.md` | Rest of the must-split list |
+| 3 | `singability.md`, `join-across-roles.md`, `universality.md` | Place-name leftover; join leftovers; dated channel. **Done.** |
+| 4 | `polar-inventory.md`, `iff-fault.md`, `sentence-linkers.md` | Rest of the must-split list. **Done.** |
 | 5 | Optional leftovers in [Phase 5](#phase-5) | Only if the parent title is still a list of unrelated jobs |
 | 6 | Sweep | Titles, sidebar order, AGENTS Owns, cheat sheets, reviews |
 
-When a phase finishes, mark its rows done in this file (or move the file to `partially-implemented/` once Phase 1 has shipped).
+When a phase finishes, mark its rows done in this file.
 
 ---
 
@@ -149,7 +149,7 @@ npm run peel-headings -- --parent of-relations.md --ids locative-relations --to 
 
 `singability.md`, `join-across-roles.md`, `universality.md`.
 
-Done. Peels, Practice, settings, review items, and allowlist rows are on disk. After re-read, run `npm run cheat-sheet-blocks -- --write` then `npm run build`.
+Done.
 
 - `singability.md` → `place-name-roots.md` (**Place-name roots**, Intermediate, beside Names and titles). Gates put it with names, not Advanced singing.
 - `join-across-roles.md` → `join-acts.md` (**Join-act verbs**) and `join-relations.md` (**With and without**). Parent Practice is stance-only; join-act / join-relation drills live on the new sittings.
@@ -186,6 +186,12 @@ npm run peel-headings -- --parent universality.md --ids dated-channel --to dated
 ## Phase 4
 
 `polar-inventory.md`, `iff-fault.md`, `sentence-linkers.md`.
+
+Done.
+
+- `polar-inventory.md` → `rhetorical-questions.md` (**Rhetorical questions**: rhetorical, quiz, stacked questions). Tags stayed on the parent: they are polar words used as a tag, one job with the inventory.
+- `iff-fault.md` → `cause.md` (**CAUSE**, with *make*). Parent retitled **Because and iff**. **A following sentence** was recap of Beginner dependents: dropped; its join-in-`/b/` line moved into *Because, iff, and only because*.
+- `sentence-linkers.md` → `stand-in-vowels.md` (**Stand-in vowels**: stand-in vowels, pointing back). Periods, result pole, and time poles on a noun stayed on the parent.
 
 ### `polar-inventory.md` (Yes, no, and not that)
 

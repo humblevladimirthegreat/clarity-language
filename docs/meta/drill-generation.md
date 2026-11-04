@@ -178,6 +178,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `clause.md` | Advanced | a circus |
 | `dependents.md` | Beginner | a guard post |
 | `dependents.md` | Intermediate | a departure board |
+| `stand-in-vowels.md` | Intermediate | a dance class |
 | `dependents.md` | Advanced | a complaint desk |
 | `relations.md` | Beginner | a tool crib |
 | `relations.md` | Intermediate | — |
@@ -213,6 +214,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `universals-domains.md` | Intermediate | a catalog counter |
 | `questions.md` | Beginner | a lost-and-found |
 | `polar-inventory.md` | Intermediate | a detective interview |
+| `rhetorical-questions.md` | Intermediate | a debate club |
 | `fill-ask-roles.md` | Intermediate | an information booth |
 | `say-questions.md` | Offers and confirmations | a quiz show |
 | `say-tense.md` | Tense and modals | a train station |
@@ -242,6 +244,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `vague-amounts.md` | Intermediate | an open mic |
 | `causation.md` | Beginner | a greenhouse |
 | `iff-fault.md` | Intermediate | a dam control room |
+| `cause.md` | Intermediate | a water mill |
 | `fault.md` | Beginner | a bike rack |
 | `say-reasons.md` | Reasons and conditions | a chemistry lab |
 | `sakes.md` | Beginner | a shelter tent |
@@ -381,7 +384,8 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 5 | `clause.md` | Advanced | **exists** | Leftmost content-word prominence; English cleft / *what*-cleft / fronted adverb | Weak-pause cues are recognition, not the drill |
 | 6 | `speech-acts.md` | Intermediate | **exists** | Doubled and stacked act words; speech manner; number-as-interjection pointer only if the stage’s examples already show it | Soft/firm twins and **-r** acts are Beginner on `firm-soft.md`. Tone marks are Intermediate on `tone-marks.md`. Do not require numbers Intermediate readings |
 | 6 | `tone-marks.md` | Intermediate | **exists** | Tone marks (`!` / `?` / `%` / `&` / `;`, stacks, word vs sentence scope) | Doubled / stacked act words and speech manner are Intermediate on `speech-acts.md` |
-| 7 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xahom`, `xezem`, …); nested **`barl`**; stand-in vowels | Recycle Beginner **`darl`/`barl`** |
+| 7 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xahom`, `xezem`, …); result **`hahom blarl`**; time poles on a noun | Stand-in vowels and pointing back are Intermediate on `stand-in-vowels.md`. Recycle Beginner **`darl`/`barl`** |
+| 7 | `stand-in-vowels.md` | Intermediate | **exists** | Stand-in vowels (`dorl` / `durl` / `derl`, **-rl** vs **-rm**); pointing back **-rth** | Linkers are Intermediate on `sentence-linkers.md`. Recycle Beginner **`darl`/`barl`** |
 | 7 | `dependents.md` | Advanced | **exists** | Lexicalized stand-ins in other roles (`varn` / `vaen` / `vuon` / `darn` / …); nested **`blarl`** | Recycle Beginner **`darl`/`barl`** and Intermediate stand-ins |
 | 13 | `relations.md` | Intermediate | skip | — | Of-relations are Intermediate on `of-relations.md`. Exactly like is Intermediate on `exactly-like.md`. Locative relations are Intermediate on `locative-relations.md` |
 | 13 | `of-relations.md` | Intermediate | **exists** | of-relations (`gobom`, `gadam`, `gulom`, `gaham`, `gozowum`) | *Between* / across / around are Intermediate on `locative-relations.md`. Exactly like is Intermediate on `exactly-like.md`. Recycle extra-noun hooks. Social ties are Beginner on `social-ties.md` |
@@ -403,7 +407,8 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 11 | `rank-joins.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; SHARED after join; `{ }` islands; fence nesting | Universals/domains are Intermediate on `universals-domains.md`. Sample **decisions**, not every H3 |
 | 11 | `universals-domains.md` | Intermediate | **exists** | Universals/domains (every and none, by set); kind-reference; not-every | Rank joins and SHARED after the join are Intermediate on `rank-joins.md` |
 | 11 | `joins.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from this stage | — |
-| 12 | `polar-inventory.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; yes/no with single-item/standalone; tags; rhetorical; quiz; stacked questions | |
+| 12 | `polar-inventory.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; yes/no with single-item/standalone; tags | Rhetorical questions, quizzes, and stacked questions are Intermediate on `rhetorical-questions.md` |
+| 12 | `rhetorical-questions.md` | Intermediate | **exists** | Rhetorical **`yal yel`**; quiz **`yel yal`**; stacked questions **`yel yol`** / **`yel yul`** | Recycle stacked act words from `speech-acts.md` and polar words from `polar-inventory.md` |
 | 12 | `questions.md` | Advanced | — | no Advanced stage | |
 | 12 | `fill-ask-roles.md` | Intermediate | **exists** | Fill-ask arity; a blank inside a dependent | Kind / when / where / whose / how / why are Beginner on `fill-ask-jobs.md`. Recycle = all Beginner + `polar-inventory.md` (polar, tags, `derl` / `darl`) |
 | 12 | `fill-ask-roles.md` | Advanced | — | no Advanced stage | |
@@ -428,7 +433,8 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `comparatives.md` | Advanced | **exists** | Stance bars (channels, FORMER, ABIL, REQUIRE, attitudes); bar inside vs stance after the fence | Vague *many* / *few* is Intermediate on `vague-amounts.md`. The Advanced sitting is `stance-bars.md` |
 | 15 | `stance-bars.md` | Advanced | **exists** | Every bar (channels, FORMER, ABIL, REQUIRE, attitudes); bar inside vs stance after the fence | Vague amounts are Intermediate on `vague-amounts.md` |
 | 15 | `vague-amounts.md` | Intermediate | **exists** | Vague *many* / *few* / *often* / *late* with a named PATTERN bar | Recycle = all Beginner + comparative-arity + evidentiality. Not ABIL / FORMER as bars |
-| 15 | `iff-fault.md` | Intermediate | **exists** | Following-sentence **`blarl`**; **`ahu`** *because* / **`eho`** *iff*; asserted necessary **`thebem thahum`**; **CAUSE** **`ewo`** **-m** | Fault endings are Beginner on `fault.md`. Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
+| 15 | `iff-fault.md` | Intermediate | **exists** | **`ahu`** *because* / **`eho`** *iff*; asserted necessary **`thebem thahum`**; *unless* **`thohem blurl`**; *even if* | Fault endings are Beginner on `fault.md`. CAUSE is Intermediate on `cause.md`. Recycle Beginner *if* / *only if*, following-sentence **`blarl`**, and `/h/` vs `/ɡ/` |
+| 15 | `cause.md` | Intermediate | **exists** | **CAUSE** **`ewo`** **-m** before a pole; *make* (causer in `/b/` after **`thewom`**) | Recycle *because* / *if* poles from `iff-fault.md` |
 | 15 | `causation.md` | Advanced | — | no Advanced stage | |
 | 16 | `prescription.md` | Intermediate | **exists** | Motive **`tho`** + time horizon; which ending table; attachment sites; whose stake; contrary **`uom`**; sake bars (*enough* / *too*) | Prescription **`the`** is Beginner on `ought-for-a-sake.md` |
 | 16 | `feelings-permission.md` | Intermediate | **exists** | Emotion compose; feeling with no object; speaker attitude | Thanks and sorry are Beginner on `thanks-and-sorry.md`. Recycle = all Beginner + `prescription.md` (whose stake, contrary **`uom`**, prescription contrast). Say words are Intermediate on `permission-consent.md` |
@@ -476,7 +482,8 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Locative relations | `locative-relations.md` Intermediate |
 | Of-relations (`gobom` / `gadam` / `gulom` / `gaham`) | `of-relations.md` Intermediate |
 | Hosted *as-of* (`henam` / `hunom`) | `relations.md` Advanced |
-| Remaining `/x/` linkers, nested **`blarl`**, stand-in vowels | `dependents.md` Intermediate |
+| Remaining `/x/` linkers, nested **`blarl`** | `dependents.md` Intermediate |
+| Stand-in vowels, pointing back **-rth** | `stand-in-vowels.md` Intermediate |
 | Lexicalized stand-ins (`varn` / `vaen`) and nested **`blarl`** | `dependents.md` Advanced |
 | **-l** / **-m** / **-n** as a *choice* on a citation | `word-endings.md` Beginner |
 | Whole-stem **-r** and role pointers; **`uwe`/`awa`/`aya`/`ume`** | `pronouns.md` Beginner |
@@ -503,7 +510,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | SHARED scale comparatives | `comparatives.md` Beginner |
 | Causal poles *if* / *only if* (`thohem` / `thebem`) | `causation.md` Beginner |
 | Fault endings on *because* (`thahul` / `thahur`) | `fault.md` Beginner |
-| **CAUSE** **`ewo`** / **`thewom`** | `iff-fault.md` Intermediate |
+| **CAUSE** **`ewo`** / **`thewom`** | `cause.md` Intermediate |
 | Value **`tha`/`thu`** on **sake** roots | `sakes.md` Beginner |
 | Ability **`xa`/`xe`/`xo`/`xu`** on **non-need** hosts | `can-and-cant.md` Beginner |
 | **MAY** **`thomam`** | `knowing.md` Beginner |

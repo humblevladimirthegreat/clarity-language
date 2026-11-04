@@ -27,7 +27,6 @@ Write the outcome first, then the pole, then the condition as the pole's `/b/`. 
 | [If, after a verb](/causation#if) | `zazozon vowurol thohem blerulal.` | *Azozon walks if it rains.* | B |
 | [If, after a noun](/causation#if) | `zerulal gohem blugalal.` | *There is rain if there are clouds.* | B |
 | [Only if](/causation#only-if) | `zazozon vowurol thebem blerulal.` | *Azozon walks only if it rains.* | B |
-| [Condition is a whole sentence](/iff-fault#dependent): `blarl`, then the sentence | `zazozon vowurol thohem blarl zalazun vezuvel.` | *Azozon walks if Alazun is asleep.* | I |
 | [Because](/iff-fault#only-because) | `zazozon vowurol thahum blarl zalazun vezuvel.` | *Azozon walks because Alazun is asleep.* | I |
 | [If and only if](/iff-fault#only-because) | `zazozon vowurol thehom blarl zalazun vezuvel.` | *Azozon walks if and only if Alazun is asleep.* | I |
 | [Only because](/iff-fault#only-because) | `zazozon vowurol thebem thahum blerulal.` | *Azozon walks only because of the rain.* | I |
@@ -60,9 +59,9 @@ The ending on the because pole says whether anyone did wrong.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Mechanism](/iff-fault#cause) | `zazozon vowurol thewom thohem blerulal.` | *Azozon walks if it rains.* (rain as the mechanism) | I |
-| [Make someone do it](/iff-fault#make): causer in `/b/`, no pole | `zalazun vezuyol thewom blazozon.` | *Azozon makes Alazun speak.* | I |
-| [One adjective only](/iff-fault#cause): `wewom` | `zazozon wewom gelunem vowurol.` | *Azozon walks, straining.* (something is causing the strain) | I |
+| [Mechanism](/cause#cause) | `zazozon vowurol thewom thohem blerulal.` | *Azozon walks if it rains.* (rain as the mechanism) | I |
+| [Make someone do it](/cause#make): causer in `/b/`, no pole | `zalazun vezuyol thewom blazozon.` | *Azozon makes Alazun speak.* | I |
+| [One adjective only](/cause#cause): `wewom` | `zazozon wewom gelunem vowurol.` | *Azozon walks, straining.* (something is causing the strain) | I |
 
 ## The sakes {#sakes}
 
@@ -243,7 +242,7 @@ A [say word](/permission-consent#say-words) on `/h/`: **`h`** **`w`**, a scope v
 | `thohem` *if* ([enough, not claimed](/causation#if)) | | `thahum` *because* ([enough, and a fact](/iff-fault#only-because)) |
 | `thohem` *if* ([other routes remain](/causation#only-if)) | | `thebem` *only if* ([the outcome needs it](/causation#only-if)) |
 | `thahum` *because* ([a cause, no blame](/fault#fault)) | | `thahul` *fault* ([someone did wrong](/fault#fault)) |
-| `thahum` *because* ([the condition](/iff-fault#cause)) | | `thewom` *mechanism* ([how it is produced](/iff-fault#cause)) |
+| `thahum` *because* ([the condition](/cause#cause)) | | `thewom` *mechanism* ([how it is produced](/cause#cause)) |
 | `hwuvam` *may* ([someone over the act allows it](/permission-consent#permission)) | | `hwudam` *they agreed* ([the yes of the one it's done to](/permission-consent#consent)) |
 | `hwuvam` *may* ([the act is allowed](/permission-consent#permission)) | | `hwuvom` *has to* ([the act is demanded](/permission-consent#permission)) |
 | `hwuvol` *the rules require it* ([an outside demand](/permission-consent#permission)) | | `hwuzor` *I feel I have to* ([an unspoken should](/permission-consent#consent)) |

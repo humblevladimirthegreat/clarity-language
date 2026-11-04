@@ -49,6 +49,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sleep* | `vezuvel` |
 | *CLUES* | `theyom` |
 | *sing* | `vozuyel` |
+| *tell* | `vezuyol` |
 | *NOTIONAL* | `theyum` |
 | *topic* | `alen` |
 | *kneel* | `vanuvel` |
@@ -550,6 +551,42 @@ z-Alazun | g-french
 Belonging takes **-m**; **-n** is the named country.
 
 **Rule:** [Place-name roots](place-name-roots.md#place-name-roots)
+:::
+
+**27.** *Who cooks?* (nobody does) `yal yel zar vuguyol.` or `yel yal ? zar vuguyol.`
+
+::: details Show answer
+`yal yel zar vuguyol.`
+
+y-statement | y-question | z-wh | v-cook
+
+The statement word first makes it rhetorical; **`yel yal`** is a quiz that wants the answer said.
+
+**Rule:** [Rhetorical question](rhetorical-questions.md#rhetorical)
+:::
+
+**28.** *Azozon makes Alazun sing.* `zalazun vozuyel thewom blazozon.` or `zazozon vozuyel thewom blalazun.`
+
+::: details Show answer
+`zalazun vozuyel thewom blazozon.`
+
+z-Alazun | v-sing | [th-CAUSE | bl-Azozon]
+
+The singer stays the subject; the one who makes it happen follows **`thewom`**.
+
+**Rule:** [CAUSE](cause.md#cause)
+:::
+
+**29.** *Ahelan tells Alazun not to climb.* `zahelan vezuyol balazun durl voguvol.` or `zahelan vezuyol balazun dorl voguvol.`
+
+::: details Show answer
+`zahelan vezuyol balazun durl voguvol.`
+
+z-Ahelan | v-tell | b-Alazun | d-lest-clause | v-climb
+
+*Not to* is avoidance, **`durl`**; **`dorl`** would tell Alazun *to* climb.
+
+**Rule:** [Stand-in vowels](stand-in-vowels.md#stand-in)
 :::
 
 #### What changes {#intermediate-what-changes}

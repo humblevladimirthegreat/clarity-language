@@ -140,7 +140,7 @@ export const WORD_DETECTORS: readonly WordDetector[] = [
   {
     id: "habit",
     label: (t) => `*${t.normal}* (cue then act)`,
-    links: ["say-reasons.md#habit", "iff-fault.md#cause"],
+    links: ["say-reasons.md#habit", "cause.md#cause"],
     test: (t) => t.normal === "habit" || t.normal === "habits" || t.normal === "trigger" || t.normal === "triggers" || t.normal === "triggered",
   },
 ];

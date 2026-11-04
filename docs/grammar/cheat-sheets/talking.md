@@ -171,14 +171,14 @@ The blank **-r** takes a vowel; the count is how many items you listed before it
 | [Report a question](/questions#embedded-whether) | `zazozon vayebel derl zalazun vowurol.` | *Azozon sees whether Alazun walks.* | B |
 | [Blank belongs to *whether*](/fill-ask-roles#blank-in-dependent) | `yel zawan vanam derl zar vowurol.` | *Do you know who walks?* | I |
 | [Blank belongs to the outer question](/fill-ask-roles#blank-in-dependent) | `yel zawan vevemel darl zar vowurol.` | *Who do you think walks?* | I |
-| [Question you don't want answered](/polar-inventory#rhetorical): `yal` before `yel` | `yal yel zar vegemal.` | *Who cares?* (nobody) | I |
-| [Musing](/polar-inventory#rhetorical) | `yam yel zar vegemal.` | *Who really cares, though?* | I |
-| [Rhetorical for now](/polar-inventory#rhetorical) | `yar yel` | *Surely, as things stand…?* | I |
-| [Sounds like idle wondering](/polar-inventory#rhetorical) | `yal yem` | *I wonder who cares…* | I |
-| [Sounds like a check](/polar-inventory#rhetorical) | `yal yer` | *Just checking, it's Tuesday, right?* | I |
-| [Quiz](/polar-inventory#quiz): `yel` before `yal`, you know the answer | `yel yal ? zar vabuvul dubogal.` | *So who punched the box?* | I |
-| [Question demanded as an order](/polar-inventory#stacked-questions) | `yel yol` | *Tell me where you were.* | I |
-| [Question that hopes for *no*](/polar-inventory#stacked-questions) | `yel yul ? zawan vudurul.` | *You're not leaving, are you?* | I |
+| [Question you don't want answered](/rhetorical-questions#rhetorical): `yal` before `yel` | `yal yel zar vegemal.` | *Who cares?* (nobody) | I |
+| [Musing](/rhetorical-questions#rhetorical) | `yam yel zar vegemal.` | *Who really cares, though?* | I |
+| [Rhetorical for now](/rhetorical-questions#rhetorical) | `yar yel` | *Surely, as things stand…?* | I |
+| [Sounds like idle wondering](/rhetorical-questions#rhetorical) | `yal yem` | *I wonder who cares…* | I |
+| [Sounds like a check](/rhetorical-questions#rhetorical) | `yal yer` | *Just checking, it's Tuesday, right?* | I |
+| [Quiz](/rhetorical-questions#quiz): `yel` before `yal`, you know the answer | `yel yal ? zar vabuvul dubogal.` | *So who punched the box?* | I |
+| [Question demanded as an order](/rhetorical-questions#stacked-questions) | `yel yol` | *Tell me where you were.* | I |
+| [Question that hopes for *no*](/rhetorical-questions#stacked-questions) | `yel yul ? zawan vudurul.` | *You're not leaving, are you?* | I |
 
 <PageBreak />
 

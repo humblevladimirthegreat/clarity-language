@@ -20,7 +20,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwuvam` | [Permission and consent](/permission-consent#say-words) |
 | **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Decision and try](/ability#try) |
 | **AWAY** | Emotion locus: moving off from a target | `wawethumum` | [Feelings](/feelings-permission#emotion-compose) |
-| **CAUSE** | Mechanism-framing mood (*make X do*) | `thewom` | [Because, iff, and make](/iff-fault#cause) |
+| **CAUSE** | Mechanism-framing mood (*make X do*) | `thewom` | [CAUSE](/cause#cause) |
 | **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraer` | [Feelings](/feelings-permission#emotion-compose) |
 | **CITE** | A cite span: quoted wording | `d[azozon]` | [Spans](/spans#writing) |
 | **CLUES** | Evidential: reasoned from clues about this case | `theyom` | [How you know](/evidentiality#evidentiality) |
@@ -877,7 +877,7 @@ Written cite `[…]`, aside `(…)` and opaque `<…>` fences, with a role lette
 
 Short word in a role slot (`darl` / `barl` / `derl` / `dorl` / `durl`, open **`-rm`**) that stands for the **following sentence**. Same vowels as speech acts; not a join (joins close a list already said).
 
-[Linking sentences](/sentence-linkers#stand-in)
+[Stand-in vowels](/stand-in-vowels#stand-in)
 
 **Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole-np-pole) (`thahum`, `thohem`) name the relation; the stand-in fills `/b/`.
 

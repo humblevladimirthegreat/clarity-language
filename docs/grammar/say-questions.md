@@ -118,7 +118,7 @@ English *admittedly*, *granted* and *that's true, but* concede a point before pu
 >
 > "Azozon walks." "That's true, but Alazun sits."
 
-**Compare with:** *even so* after the concession is *despite that*, **`hezem blarth`** ([pointing back](/sentence-linkers#stand-in-back)). **`yaom`** (*I think so*) agrees only softly.
+**Compare with:** *even so* after the concession is *despite that*, **`hezem blarth`** ([pointing back](/stand-in-vowels#stand-in-back)). **`yaom`** (*I think so*) agrees only softly.
 
 ## Exclamations and side remarks {#reactions}
 
@@ -249,7 +249,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 ### Ask, interview, conversation {#ask-words}
 
-**Needs:** [Ask](/questions#question) · [Reported questions](#reported-questions) · [Stand-in vowels](/sentence-linkers#stand-in) · [Firm and soft](/firm-soft#speech-act) · [Stacking two act words](/speech-acts#stacked-acts) · [Quiz](/polar-inventory#quiz) · [Conversation length](/compound-families#conversation-length) · [Call someone](/speech-moves#vocative)
+**Needs:** [Ask](/questions#question) · [Reported questions](#reported-questions) · [Stand-in vowels](/stand-in-vowels#stand-in) · [Firm and soft](/firm-soft#speech-act) · [Stacking two act words](/speech-acts#stacked-acts) · [Quiz](/rhetorical-questions#quiz) · [Conversation length](/compound-families#conversation-length) · [Call someone](/speech-moves#vocative)
 
 English *ask* is four jobs. You can put a question to someone, ask them for something, ask them to do something, or report that a question was asked. A question is the act word **`yel`**. A request is **`yom`**. A reported question hangs on the telling ([reported questions](#reported-questions)). *Ask* or *tell someone to do* something is a telling with the to-clause stand-in **`dorl`**, and the person told is plain `/b/`; *not to* is **`durl`**. English picks *ask* or *tell* for politeness, which Ageben carries on the act word, not the verb. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
 

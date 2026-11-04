@@ -22,10 +22,10 @@ Each row names what the file owns. The file is the authority; this table is only
 | `pronouns.md` | Whole-stem resume, role pointers, special, and generic pronouns; tag pronouns (`tag-pronouns.md`). |
 | `topic.md` | Discourse topic, topic pronoun. |
 | `plurality.md` | Plural, associative, address sets, clusivity; collectives (`collectives.md`). |
-| `questions.md` | Yes/no and fill questions, polar stance particles; polar inventory and rhetorical (`polar-inventory.md`). |
+| `questions.md` | Yes/no and fill questions, polar stance particles; polar inventory, tags (`polar-inventory.md`); rhetorical questions, quizzes (`rhetorical-questions.md`). |
 | `fill-ask-roles.md` | Fill-ask roles: arity, blank in a dependent; what kind / when / where / whose / how / why (`fill-ask-jobs.md`). |
 | `speech-moves.md` | Turns, vocatives, interjections, speech acts, the reusable vowel series; firm and soft (`firm-soft.md`); tone marks (`tone-marks.md`). |
-| `dependents.md` | Next-sentence grammar: continue, subordinators; sentence linkers, stand-ins (`sentence-linkers.md`); lexicalized stand-ins (`stand-in-roles.md`). |
+| `dependents.md` | Next-sentence grammar: continue, subordinators; sentence linkers (`sentence-linkers.md`); stand-in vowels, pointing back (`stand-in-vowels.md`); lexicalized stand-ins (`stand-in-roles.md`). |
 | `relations.md` | Hosted relation catalog: similative, exchange, proxy; of-relations (`of-relations.md`); exactly like (`exactly-like.md`); locative relations (`locative-relations.md`); social ties (`social-ties.md`); as-of (`as-of.md`). |
 | `hooks.md` | Prefix-less hooks: in-clause, discourse glue, extra-noun; stacked extra-noun and whose (`extra-noun-hooks.md`); ending grids, ranges (`ending-grids.md`); hook compounds, prefixes (`hook-compounds.md`); hooked joins (`hooked-joins.md`). |
 | `discourse-hooks.md` | Stacked discourse, hook resume, parallel chains, discourse placements; somewhere / here and there (`here-there.md`). |
@@ -34,7 +34,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `join-across-roles.md` | Stance joins; join-act verbs (`join-acts.md`); join-relations (`join-relations.md`); verb-phrase and clause forms (`vp-clause-forms.md`); clause sequence (`clause-sequence.md`). |
 | `comparatives.md` | Comparatives, superlatives, equatives; manner scale (`comparative-arity.md`); vague amounts (`vague-amounts.md`); stance bars (`stance-bars.md`). |
 | `predication.md` | Classification, identity; how far a label reaches (`label-seams.md`); packaging (`label-scope.md`). |
-| `causation.md` | Causation / condition poles; fault (`fault.md`); iff, CAUSE (`iff-fault.md`). |
+| `causation.md` | Causation / condition poles; fault (`fault.md`); because, iff (`iff-fault.md`); CAUSE, make (`cause.md`). |
 | `sakes.md` | Sakes, met / unmet; ought for a sake (`ought-for-a-sake.md`); motive, attachment, whose stake, contrary, sake bars (`prescription.md`). |
 | `feelings-permission.md` | Feelings, speaker attitude; permission, consent (`permission-consent.md`); thanks and sorry (`thanks-and-sorry.md`). |
 | `intention.md` | Plan; decision, try / fallback (`ability.md`); want (`want.md`); ability / incapability (`can-and-cant.md`). |

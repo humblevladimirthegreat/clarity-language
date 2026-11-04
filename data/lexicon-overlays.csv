@@ -128,8 +128,8 @@ unor,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now /
 unor,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,as-of.md#as-of
 unor,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,as-of.md#as-of
 unor,th,🔖,clause_pole,as-of.bookmark,AS-OF stance pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,as-of.md#stance-as-of
-ewom,th,⚙️,cause,CAUSE,CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make),a machine runs on mechanism; mechanism frames how the link works,iff-fault.md#cause
-ewom,w,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),a machine runs on mechanism; mechanism frames how the link works,iff-fault.md#cause
+ewom,th,⚙️,cause,CAUSE,CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make),a machine runs on mechanism; mechanism frames how the link works,cause.md#cause
+ewom,w,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),a machine runs on mechanism; mechanism frames how the link works,cause.md#cause
 an,v,,join_act,includes,join-act includes or adds object,set join a+n as verb; includes adds this object to the set,join-acts.md#join-act-verbs
 an,g,,join_relation,including,join-relation including (adjective + argument),set join a+n on /g/; including frames host with argument,join-relations.md#join-relations
 an,h,,join_relation,including,join-relation with or including (adverb + argument),set join a+n on /h/; with frames event alongside argument,join-relations.md#join-relations

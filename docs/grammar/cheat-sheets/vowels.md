@@ -150,7 +150,7 @@ Stand-ins and say-word answers use the same vowels as the [act words](/speech-mo
 | Job | **a** | **o** | **e** | **u** | Stage |
 |-----|-------|-------|-------|-------|-------|
 | [Speech act](/speech-moves#speech-act-beginner) | statement (`yal`) | command (`yol`) | question (`yel`) | prohibition (`yul`) | B |
-| [Stand-in](/sentence-linkers#stand-in) | `darl` *that …* | `dorl` *to …* | `derl` *whether …* | `durl` *lest / not to …* | B–I |
+| [Stand-in](/stand-in-vowels#stand-in) | `darl` *that …* | `dorl` *to …* | `derl` *whether …* | `durl` *lest / not to …* | B–I |
 | [Say-word answer](/permission-consent#say-words) | allow | require | their call | forbid | I |
 
 #### Polar answers {#polar}

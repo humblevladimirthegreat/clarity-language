@@ -58,7 +58,7 @@ Many roots carry both a concrete **-l** sense and an abstract **-m** sense (`odo
 
 Here plain `dodozer` would mean the loyalty, the most recent match. **-rl** reaches back past it to the dog.
 
-Pinning is optional. Write plain **-r** when only one sense has come up, or when the latest one is the one you mean. A pinned resume with no earlier word of that sense falls back the way plain **-r** does: it means the one you both already know (`zodozerm` alone is *the loyalty* you both know). A name has no sense to pin, and only a content word or a compound takes **-rl** / **-rm**. A [stand-in](sentence-linkers.md#stand-in) is a different word: it has a vowel and no root.
+Pinning is optional. Write plain **-r** when only one sense has come up, or when the latest one is the one you mean. A pinned resume with no earlier word of that sense falls back the way plain **-r** does: it means the one you both already know (`zodozerm` alone is *the loyalty* you both know). A name has no sense to pin, and only a content word or a compound takes **-rl** / **-rm**. A [stand-in](stand-in-vowels.md#stand-in) is a different word: it has a vowel and no root.
 
 ### Cross-role recast
 

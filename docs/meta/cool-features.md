@@ -35,7 +35,7 @@ The second vowel indicates how big the object is. The second consonant defines i
 
 `amahul` *mountain* is person-sized-or-bigger (`a`), a place (`h`) that works against you (`u`) and is concrete (`l`). Its abstract form `amahum` is *challenge*:  something hard to face.
 
-`agebel` *glasses* is hand-sized (`e`), something worn on the body (`b`) that is one compact thing (`e`) and is concrete (`l`). Its abstract form `agebem` is *clarity*, seeing clearly. The language's name comes from the proper form `ageben` *Clarity*/*Glasses*.
+`agebel` *glasses* is hand-sized (`e`), something worn on the body (`b`) that is one compact thing (`e`) and is concrete (`l`). Its abstract form `agebem` is *clarity*, seeing clearly. The language's name comes from the proper form `ageben` *Clarity* / *Glasses*.
 
 You can't tell what an uknown word is from these letter cues alone, but it should greatly aid in recognition especially in the context of a sentence.
 

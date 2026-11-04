@@ -229,7 +229,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `thevul` | memory evidential with strong evidence (vivid memory) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thevum` | memory evidential (remembered firsthand / reconstructive) | [Live vs memory](/live-and-memory#live-vs-memory) | B |
 | `thevur` | memory evidential with weak evidence (hazy memory) | [Evidence strength](/evidentiality#evidence-strength) | I |
-| `thewom` | CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make) | [CAUSE](/iff-fault#cause) | I |
+| `thewom` | CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make) | [CAUSE](/cause#cause) | I |
 | `theyol` | clues evidential with strong evidence (strong clues) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `theyom` | clues evidential (reasoned from clues about this case) | [Evidentiality](/evidentiality#evidentiality) | I |
 | `theyor` | clues evidential with weak evidence (a weak clue) | [Evidence strength](/evidentiality#evidence-strength) | I |
@@ -320,7 +320,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `wevul` | memory evidential with strong evidence (vivid memory) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `wevum` | memory evidential (remembered firsthand / reconstructive) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `wevur` | memory evidential with weak evidence (hazy memory) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
-| `wewom` | CAUSE mood (mechanism framing) | [CAUSE](/iff-fault#cause) | I |
+| `wewom` | CAUSE mood (mechanism framing) | [CAUSE](/cause#cause) | I |
 | `weyol` | clues evidential with strong evidence (strong clues) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `weyom` | clues evidential (reasoned from clues about this case) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `weyor` | clues evidential with weak evidence (a weak clue) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |

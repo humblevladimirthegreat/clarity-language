@@ -3,7 +3,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 😀,grin,ugoma,mind,holds,,delight,grin shows delight,,glad; pleasant; joy; happiness; enjoy,
 🙂,face,oveme,mind,one,,,,,,
 😅,phew,uvume,mind,one,,,,,,
-😂,laugh,alama,mind,holds,,amusement,laugh signals amusement,,laughter; humor,
+😂,laugh,alama,mind,holds,,amusement,laugh signals amusement,,laughter; humor,rhetorical-questions.md#intermediate-practice
 🙃,upside-down,abame,mind,one,,irony,upside-down face marks irony,,,
 🫠,melt,ememu,mind,takes-away,,,,,fade; disappear,
 😉,wink,ewema,mind,holds,,courtship,a wink is a flirt; courtship is the unobservable bid,,,
@@ -134,7 +134,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 👎,thumbs-down,avuyu,person,takes-away,none,disapproval,thumbs-down shows disapproval,,,
 ✊,fist,ovebe,body,one,small,defiance,fist shows defiance,,resistance,
 👊,punch,abuvu,doing,takes-away,none,force,punch delivers force,,hit; strike,pronouns.md#beginner-practice
-👏,clap,aguya,person,holds,none,acclaim,clap is audible; acclaim is the unobservable verdict,,applause,
+👏,clap,aguya,person,holds,none,acclaim,clap is audible; acclaim is the unobservable verdict,,applause,rhetorical-questions.md#intermediate-practice
 🙌,hooray,ahuma,mind,holds,,,,,,
 🫶,care,egema,mind,holds,,kindness,heart hands offer care; kindness is warmth shown to others,,tender,
 👐,open-hands,owoba,body,holds,medium,openness,open hands hide nothing; openness is having nothing to hide,,,
@@ -618,7 +618,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🛤️,railway,eraho,place,order,big,trajectory,a railway fixes where the train will go; a trajectory is the path something is set on,,,
 🛢️,barrel,ubowa,tool,holds,medium,reserve,a barrel stores bulk supply; reserve is stored supply,,oil; tank,
 ⛽,gas-pump,agahe,place,one,big,refuel,gas station fills the tank; refuel is restoring energy,,fuel; gas,
-🛞,wheel,uwovo,doing,order,medium,motion,wheel enables motion,,movement; roll; move,
+🛞,wheel,uwovo,doing,order,medium,motion,wheel enables motion,,movement; roll; move,cause.md#intermediate-practice
 🚨,siren,ozohu,place,takes-away,medium,disturbance,a siren breaks the calm; a disturbance is something that breaks the calm,,,
 🚦,traffic-light,udaho,place,order,big,directive,traffic light tells go or stop; signal is a clear instruction,,,
 🛑,stop,ezohu,place,takes-away,medium,cessation,stop sign means do not proceed; halt is bringing movement to stop,,cancel; eliminate,spans.md#beginner-practice
@@ -659,7 +659,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ☀️,sun,ezalo,nature,order,big,joule,sun radiates energy; joule is the SI energy unit,,,causation.md#beginner-practice
 🪐,saturn,ezale,nature,one,big,grandeur,ringed planet looms vast in space; grandeur is impressive scale,,grand; planet; impressive,
 ⭐,star,ale,nature,one,,visibility,a star is seen from far off; visibility is being there to be seen,,,
-🌠,shooting-star,alo,nature,order,,wish,shooting star grants a wish,,,
+🌠,shooting-star,alo,nature,order,,wish,shooting star grants a wish,,,stand-in-vowels.md#intermediate-practice
 🌌,galaxy,agala,nature,holds,big,vastness,a galaxy holds billions of stars,,vast; universe,
 ☁️,cloud,ugala,nature,holds,big,sky,clouds fill the sky,,atmosphere,evidentiality.md#intermediate-practice
 ⛅,cloudy,ogulu,nature,takes-away,none,weather,sun behind cloud is a partly-cloudy sky; weather is the usual climate,,,
