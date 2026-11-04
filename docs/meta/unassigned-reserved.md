@@ -287,7 +287,7 @@ Source: [speech-moves.md](/firm-soft#speech-act), [stacked act words](/speech-ac
 - **closed (D-59):** a third opening act word (`yul yul yul`), and anything between two [stacked act words](/speech-acts#stacked-acts) (`yel al yol`).
 - **closed (closed-root endings):** a fill-ask blank for the act itself (*are you asking or telling?*). `yar` / `yer` / `yor` / `yur` are the [for-now acts](/firm-soft#act-r).
 - **closed (D-31):** a polar word before an act word, or two polar words in a row; a topic-only question.
-- **open:** an asking tag with a body after it (`yol yael zazozon vowurol.`). The tag asks about the sentence before it and is a turn of its own; a body after it would be a second move in the same turn, and no question has asked for one. Parser: `tagBody`.
+- **open:** a check-back with a body after it (`yol yael zazozon vowurol.`). The check-back asks about the sentence before it and is a turn of its own; a body after it would be a second move in the same turn, and no question has asked for one. Parser: `checkBackBody`.
 - **closed (D-43):** a `/b/` hosted by a call or reaction; `yahumal bazozon` is a reaction and then a body with a recipient.
 - **open:** `/w/` on a call (`welazem yalazun`). The person called is not more or less called. Parser: `turnWordModifier`.
 - **open:** `/w/` on an act word or a polar word (`welazem yel`). Firm / soft already grades the act, and the polar stance has its own strengths. The parser rejects them.

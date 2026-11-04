@@ -105,7 +105,11 @@ function senseOf(word: WordNode, suggested: ReturnType<typeof suggestedRoots> | 
   const out: WordSense = { raw: word.raw, root, side, sense, ...(word.rootGloss?.[otherSide] ? { other: word.rootGloss[otherSide] } : {}) };
   if (!suggested) return out;
   const matches = suggested.roots.get(root) ?? [];
-  const same = matches.find((m) => !m.alias && (!m.side || m.side === side));
+  // A match with no side (a live compound's part, a role word) agrees with either ending, unless
+  // some English word named only the other side: then the ending is the thing to check.
+  const sided = matches.find((m) => !m.alias && m.side === side);
+  const otherOnly = !sided && matches.some((m) => !m.alias && m.side === otherSide);
+  const same = sided ?? (otherOnly ? undefined : matches.find((m) => !m.alias && !m.side));
   // A grammar row that spells the word (`bazazam grubal` for *yesterday*) suggested it too.
   const exact = suggested.forms.find((f) => f.words.includes(word.raw));
   const other = matches.find((m) => !m.alias && m.side === otherSide);

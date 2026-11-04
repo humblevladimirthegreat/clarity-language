@@ -108,7 +108,7 @@ z-wheel | v-stop | th-CAUSE | [th-because | bl-pressure]
 z-Alazun | d-water | v-pour | [th-CAUSE | bl-Azozon]
 :::
 
-**3.** *The wheel stops if it rains.* (rain as the mechanism)
+**3.** *If it rains, rain is what makes the wheel stop.* (rain is not claimed)
 
 ::: details Show answer
 `zuwovol vezohul thewom thohem blerulal.`

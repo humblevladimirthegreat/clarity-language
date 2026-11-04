@@ -52,6 +52,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | end of a number range (*from 3 to 5*) | **`al`** between the two numbers | [Ranges](/numbers-applied#ranges) |
 | end of a range on a line (*Azozon to Ahelan in the queue*) | **`oel`** between two words in one role | [Ranges](/ending-grids#ranges) |
 | purpose (*walks to sit*, *in order to sit*) | **`hovam blarl`** + the sentence, naming who sits | [So that](/dependents#so-that) |
+| an instruction or aim as content (*tells Alazun to sit*, *wishes to sit*) | stand-in **`dorl`** + the sentence; **`durl`** for *not to* | [Stand-in vowels](/stand-in-vowels#stand-in) |
 
 ### *'s* / *of* {#of}
 

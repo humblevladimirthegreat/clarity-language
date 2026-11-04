@@ -296,9 +296,9 @@ With a plain verb, each of them cooks three; **`vuguyolx`** would make three in 
 
 z-Alazun | v-cry . y-question | y-no
 
-The tag **`yel yuol`** invites a correction; **`yel yaol`** leans toward agreement (*…, right?*).
+The check-back **`yel yuol`** invites a correction; **`yel yaol`** leans toward agreement (*…, right?*).
 
-**Rule:** [Tags: asking for an answer](polar-inventory.md#tags)
+**Rule:** [Check-backs: asking for an answer](polar-inventory.md#check-backs)
 :::
 
 **6.** *Everyone from Azozon through Ahelan sits.* `zazozon oel zahelan vehohel.` or `zazozon zahelan zal vehohel.`

@@ -114,13 +114,13 @@ For a stronger stance, use the [tone mark](tone-marks.md#tone-marks) **`!!`**, n
 | Loaded question | **`yual`** | **`yuam`** |
 | Declined question | **`yoel`** | **`yoem`** |
 
-A stance word can stand alone (`yaol.`), sit before a body (`yaol zazozon vowurol.`), or come as a confirm tag in the next turn after `.`. After a stance word plus a body, continue with **`/x/`**; write a second polar word only in a new turn. When you think aloud on your own, **`yuol`** can mark a correction, **`yael`** the next step, and **`yaol`** a point you settle.
+A stance word can stand alone (`yaol.`), sit before a body (`yaol zazozon vowurol.`), or come as a confirming check-back in the next turn after `.`. After a stance word plus a body, continue with **`/x/`**; write a second polar word only in a new turn. When you think aloud on your own, **`yuol`** can mark a correction, **`yael`** the next step, and **`yaol`** a point you settle.
 
 **Compare with:** *not* inside the clause uses **`zul`** / **`vul`**. Polar **`yuol`** / **`yuel`** answer a *yes* / *no* or an offer.
 
-### Tags: asking for an answer {#tags}
+### Check-backs: asking for an answer {#check-backs}
 
-Beginner closed a claim with the tag **`yel yaol.`** (*…, right?*). Every polar word works as a tag the same way: after your sentence, write **`yel`** and the polar word as a turn of their own. The tag asks the listener for that answer. Naming an answer makes it easy to give, so pick the one you want to make easy.
+Beginner closed a claim with the check-back **`yel yaol.`** (*…, right?*). Every polar word works as a check-back the same way: after your sentence, write **`yel`** and the polar word as a turn of their own. The check-back asks the listener for that answer. Naming an answer makes it easy to give, so pick the one you want to make easy.
 
 After a request or a suggestion, **`yel yael.`** asks *okay?*: will they take it up? **`yel yuel.`** asks *or would you rather not?*, so they can turn it down without having to push back. After a claim, **`yel yuol.`** asks *or am I wrong?*: it invites a correction, where **`yel yaol.`** leans toward agreement.
 
@@ -152,9 +152,9 @@ After a request or a suggestion, **`yel yael.`** asks *okay?*: will they take it
 | `yel yaor.` | ask them to accept it for now | *…, can we go with that for now?* |
 | `yel yoem.` | after a question, offer them a pass | *…, or would you rather not say?* |
 
-Soft **`yem`** asks more gently (`yem yael.` *…, if that's okay?*), and the other polar words and endings make tags the same way.
+Soft **`yem`** asks more gently (`yem yael.` *…, if that's okay?*), and the other polar words and endings make check-backs the same way.
 
-After [two stacked act words](speech-acts.md#stacked-acts), a tag asks about the first one, the real act. So *okay?* after a command that sounds gentle shows that the gentle sound was only a surface:
+After [two stacked act words](speech-acts.md#stacked-acts), a check-back asks about the first one, the real act. So *okay?* after a command that sounds gentle shows that the gentle sound was only a surface:
 
 > `yol yem vowurol zawan. yel yael.`
 >
@@ -164,7 +164,7 @@ After [two stacked act words](speech-acts.md#stacked-acts), a tag asks about the
 
 **Compare with:** `yom vowurol zawan. yel yael.` is a real request, which the listener is free to turn down.
 
-**Compare with:** the answer itself is the polar word alone (`yael.` *sure*). The tag puts **`yel`** first, so it asks for that answer instead of giving it.
+**Compare with:** the answer itself is the polar word alone (`yael.` *sure*). The check-back puts **`yel`** first, so it asks for that answer instead of giving it.
 
 ### Confirming a negative {#confirming-a-negative}
 
@@ -332,5 +332,5 @@ y-reject-frame
 
 z-Azozon | d-phone | v-see . y-question | y-yes
 
-Alone, **`yaol`** gives the answer; the tag puts **`yel`** first to ask for it.
+Alone, **`yaol`** gives the answer; the check-back puts **`yel`** first to ask for it.
 :::

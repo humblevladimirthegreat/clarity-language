@@ -226,7 +226,7 @@ To back up your own statement with *yes*, give **`yaol`** a turn of its own: fin
 >
 > "Azozon walks. Yes."
 
-To ask the listener to confirm instead (*…, right?*), put the question word **`yel`** before it: **`yel yaol.`** A short question like this after a statement is a **tag**. Soft **`yem yaol.`** is *…, isn't it?*
+To ask the listener to confirm instead (*…, right?*), put the question word **`yel`** before it: **`yel yaol.`** A short question like this after a statement is a **check-back**. Soft **`yem yaol.`** is *…, isn't it?*
 
 > `zazozon vowurol. yel yaol.`
 >
@@ -415,7 +415,7 @@ y-no
 
 z-Azozon | d-coat | v-find . y-question | y-yes
 
-The statement stays a statement; the tag **`yel yaol.`** is its own short question after it.
+The statement stays a statement; the check-back **`yel yaol.`** is its own short question after it.
 :::
 ## See also
 

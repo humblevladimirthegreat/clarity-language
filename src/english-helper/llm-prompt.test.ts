@@ -148,4 +148,15 @@ describe("verifyDraft", () => {
     const alias = verifyDraft("I am lucky.", `g${lucky}l.`, tables, data);
     assert.equal(alias.words![0]!.check, "alias");
   });
+
+  it("checks the ending when a live compound's part agrees but the word's own English named the other side", () => {
+    // *stop* also suggests a live compound built on *wheel*, whose parts carry no side.
+    const english = "Pressure is what makes the wheel stop.";
+    const wheel = analyzeEnglish(data, english)
+      .clauses.flatMap((c) => c.slots)
+      .find((s) => s.text === "wheel")!
+      .suggestions.find((s): s is RootSuggestion => s.kind === "lexicon" && s.tier === "root")!.form;
+    assert.equal(verifyDraft(english, `z${wheel}l.`, tables, data).words![0]!.check, undefined);
+    assert.equal(verifyDraft(english, `z${wheel}m.`, tables, data).words![0]!.check, "other-side");
+  });
 });

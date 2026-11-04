@@ -909,11 +909,11 @@ A dictionary word whose head is a bare root tail instead of a second root (`zahu
 
 [Root tails](/root-tails#tail-suffixes)
 
-### Tag
+### Check-back
 
 **`yel`** plus a [polar stance](#polar-stance) word as its own turn after a sentence: asks the listener for that answer (`yel yaol.` *…, right?*, `yel yael.` *…, okay?*, `yel yuol.` *…, or am I wrong?*).
 
-[Yes, no, and not that](/polar-inventory#tags)
+[Yes, no, and not that](/polar-inventory#check-backs)
 
 ### Tag pronoun
 

@@ -26,7 +26,7 @@ An echo question repeats what someone just said, because you doubt it or did not
 
 **Needs:** [Polar stance](/questions#polar-stance) · [tone marks](/tone-marks#tone-marks)
 
-English *Really?* asks the speaker to confirm what they just said. Write the confirm tag as your own turn: **`yel yaol.`** (*Is that so?*). Put the doubting mark **`?!`** on it for disbelief.
+English *Really?* asks the speaker to confirm what they just said. Write the confirming check-back as your own turn: **`yel yaol.`** (*Is that so?*). Put the doubting mark **`?!`** on it for disbelief.
 
 > `zazozon vowurol. yel ?!yaol.`
 >
@@ -249,7 +249,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 ### Ask, interview, conversation {#ask-words}
 
-**Needs:** [Ask](/questions#question) · [Reported questions](#reported-questions) · [Stand-in vowels](/stand-in-vowels#stand-in) · [Firm and soft](/firm-soft#speech-act) · [Stacking two act words](/speech-acts#stacked-acts) · [Quiz](/rhetorical-questions#quiz) · [Conversation length](/compound-families#conversation-length) · [Call someone](/speech-moves#vocative)
+**Needs:** [Ask](/questions#question) · [Reported questions](#reported-questions) · [Stand-in vowels](/stand-in-vowels#stand-in) · [Firm and soft](/firm-soft#speech-act) · [Stacking two act words](/speech-acts#stacked-acts) · [Rhetorical question](/rhetorical-questions#rhetorical) · [Quiz](/rhetorical-questions#quiz) · [Questions that sound like another act](/rhetorical-questions#stacked-questions) · [Conversation length](/compound-families#conversation-length) · [Call someone](/speech-moves#vocative)
 
 English *ask* is four jobs. You can put a question to someone, ask them for something, ask them to do something, or report that a question was asked. A question is the act word **`yel`**. A request is **`yom`**. A reported question hangs on the telling ([reported questions](#reported-questions)). *Ask* or *tell someone to do* something is a telling with the to-clause stand-in **`dorl`**, and the person told is plain `/b/`; *not to* is **`durl`**. English picks *ask* or *tell* for politeness, which Ageben carries on the act word, not the verb. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
 
@@ -260,6 +260,9 @@ English *ask* is four jobs. You can put a question to someone, ask them for some
 | *could you…?* (a request phrased as a question) | `yom yel vowurol zawan.` | soft request that sounds like a question |
 | *would you maybe…?* (not really optional) | `yol yem vowurol zawan.` | command that sounds like a gentle ask |
 | *ask* (a question you know the answer to, as a test) | `yel yal zar vowurol.` | quiz |
+| *so who* (you know who; they say it) | `yel yal ? zar vowurol.` | quiz |
+| *who even* (nobody does; no answer is owed) | `yal yel zar vowurol.` | rhetorical question |
+| *tell me* (who, where: an answer is required) | `yel yol ? zar vowurol.` | question demanded as an order |
 | *ask* (report) | `zazozon vezuyol derl zar vowurol.` | telling + whether-clause |
 | *ask* / *tell someone to* | `zazozon vezuyol balazun dorl vehohel.` | telling + to-clause |
 | *ask* / *tell someone not to* | `zazozon vezuyol balazun durl veruvol.` | telling + lest-clause |
@@ -276,7 +279,7 @@ English *ask* is four jobs. You can put a question to someone, ask them for some
 
 ### Offer, suggest, recommend, invite {#offer-words}
 
-**Needs:** [Firm and soft](/firm-soft#speech-act) · [Tags](/polar-inventory#tags) · [Prescription](/ought-for-a-sake#sake-force) · [Permission](/permission-consent#permission) · [Which noun](/dependents#which-noun)
+**Needs:** [Firm and soft](/firm-soft#speech-act) · [Check-backs](/polar-inventory#check-backs) · [Prescription](/ought-for-a-sake#sake-force) · [Permission](/permission-consent#permission) · [Which noun](/dependents#which-noun)
 
 English *offer*, *suggest*, *propose*, *recommend* and *advise* all put something forward that the other person may take or leave. Ageben picks how firmly. A soft act word (**-m**) leaves the choice open. A soft request with *we* proposes a joint act, and a tag after it asks whether they take it up. A prescription **`the`** on a sake says the act ought to serve it, and its ending says whether the person invited it (**-l**) or you are offering it unasked (**-m**).
 
@@ -284,8 +287,8 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 |---------|--------|---------|
 | *offer* (a thing) | `yem` + a giving | soft question: *would you like…?* |
 | *suggest* / *propose* (a joint act) | `yom vowurol zayan.` | soft request with *we* |
-| *…, okay?* / *…, deal?* (after a suggestion) | `yel yael.` | tag: asks them to take it up |
-| *…, or would you rather not?* | `yel yuel.` | tag: offers them the refusal |
+| *…, okay?* / *…, deal?* (after a suggestion) | `yel yael.` | check-back: asks them to take it up |
+| *…, or would you rather not?* | `yel yuel.` | check-back: offers them the refusal |
 | *suggest* (a view) | `yam` | soft statement: *for what it's worth* |
 | *recommend* / *advise* (unasked) | `thawethem` | prescription, offered |
 | *recommend* (you asked for it) | `thawethel` | prescription, invited |

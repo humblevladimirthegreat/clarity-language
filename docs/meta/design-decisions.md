@@ -91,7 +91,7 @@ A dependent runs to the end of the written sentence, so `dorl P xol Q` is *wheth
 
 ### Channel frames
 
-- **No reset at every turn.** A bare answer, a tag, a call, an interjection, and a narrator's own question all sit inside a story. A question or command already keeps the frame off its own body (a channel in a question is the listener's grounds), so it needs no reset to stay clear of it.
+- **No reset at every turn.** A bare answer, a check-back, a call, an interjection, and a narrator's own question all sit inside a story. A question or command already keeps the frame off its own body (a channel in a question is the listener's grounds), so it needs no reset to stay clear of it.
 - **No reset at a topic change.** A story moves from one person to the next; topics keep no stack, so a return could not restore the frame; and `xevewom` *next* is how a narrative sequences. Only `xavedam` *by the way*, a digression, ends it.
 - **No frame shared across speakers.** A frame is one speaker's evidence. A reply that ended it would cut off a story the first speaker is still telling, and a reply that inherited it would claim evidence the replier does not have.
 - **No carried frame for a time pole's offset.** A signed offset on a pole still needs a channel in its own clause, so each clause shows its warrant to a reader who starts there.

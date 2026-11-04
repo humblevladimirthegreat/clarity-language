@@ -39,7 +39,7 @@ Soft **`yam yel`** muses rather than insists: you lean toward an answer but put 
 
 The listener may still reply, but no reply is owed.
 
-**Compare with:** a [tag](polar-inventory.md#tags) after the sentence (`yel yaol.` after a claim) asks the listener to confirm. A rhetorical question asks for nothing.
+**Compare with:** a [check-back](polar-inventory.md#check-backs) after the sentence (`yel yaol.` after a claim) asks the listener to confirm. A rhetorical question asks for nothing.
 
 ### Quiz {#quiz}
 
@@ -72,7 +72,7 @@ A question can also sound like a command or a prohibition. It still asks, and th
 >
 > "You're not leaving, are you?" (a real question; you hope not)
 
-**Compare with:** **`yul yel`** puts the prohibition first. It forbids and only sounds like a question (*Must you?*), so no answer is owed. **`yel yul`** really asks, and shows which answer you want. A [tag](polar-inventory.md#tags) asks the listener to confirm a claim you have already made.
+**Compare with:** **`yul yel`** puts the prohibition first. It forbids and only sounds like a question (*Must you?*), so no answer is owed. **`yel yul`** really asks, and shows which answer you want. A [check-back](polar-inventory.md#check-backs) asks the listener to confirm a claim you have already made.
 
 **`yel yol`** and the quiz both insist on an answer. In the quiz you know it already; here you do not.
 
@@ -103,7 +103,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
-**1.** *Who claps?* (nobody does)
+**1.** *Who even claps?* (nobody does)
 
 ::: details Show answer
 `yal yel zar vaguyal.`

@@ -96,7 +96,7 @@ describe("parse — clause.md beginner", () => {
     assert.equal(result.utterances[0]!.left.force!.raw, "yel");
   });
 
-  it("parses confirm tag as second utterance", () => {
+  it("parses a confirming check-back as second utterance", () => {
     const result = parseText("zazozon vowurol. yaol.");
     assert.equal(result.utterances.length, 2);
     assert.equal(result.utterances[1]!.left.polars[0]?.raw, "yaol");
@@ -988,7 +988,7 @@ describe("parse — one tree per sentence (syntactic-unambiguity batch 5b)", () 
     assert.ok(b?.kind === "np" && b.coord.level === "b");
   });
 
-  it("takes an asking tag as a turn with no body", () => {
+  it("takes a check-back as a turn with no body", () => {
     const tag = parseText("yel yaol.").utterances[0]!;
     assert.deepEqual(tag.left.polars.map((p) => p.raw), ["yaol"]);
     assert.equal(tag.bodies.length, 0);

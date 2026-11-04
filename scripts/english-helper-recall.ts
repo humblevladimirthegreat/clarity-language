@@ -240,6 +240,8 @@ type Row = {
   roots: number;
   found: number;
   missed: string;
+  /** Roots found, but not as the slot's first lexicon suggestion: `root:result` (`ahu:grammar`, `alo:top3`). */
+  not_top1: string;
   constructions: number;
   anchor_hits: number;
   page_hits: number;
@@ -422,7 +424,7 @@ for (const set of sets) {
     }
     const base = { set, source: sentence.source, group: [sentence.phenomenon, sentence.stage].filter(Boolean).join(" "), english: sentence.english, slots: slots.length, gaps: [...gapSlots].join(" "), prompt_chars: prompt.length };
     if (!best) {
-      rows.push({ ...base, ageben: "", roots: 0, found: 0, missed: "", constructions: 0, anchor_hits: 0, page_hits: 0, missed_constructions: "", words: 0, in_prompt: 0, pattern: 0, missing_words: "" });
+      rows.push({ ...base, ageben: "", roots: 0, found: 0, missed: "", not_top1: "", constructions: 0, anchor_hits: 0, page_hits: 0, missed_constructions: "", words: 0, in_prompt: 0, pattern: 0, missing_words: "" });
       continue;
     }
     const { tree } = best;
@@ -481,6 +483,7 @@ for (const set of sets) {
       roots: roots.length,
       found: results.filter((r) => r.result !== "missed" && r.result !== "tagging").length,
       missed: results.filter((r) => r.result === "missed" || r.result === "tagging").map((r) => `${r.root}${r.result === "tagging" ? "*" : ""}`).join(" "),
+      not_top1: results.filter((r) => r.result === "top3" || r.result === "lower" || r.result === "grammar").map((r) => `${r.root}:${r.result}`).join(" "),
       constructions: constructions.size,
       anchor_hits: anchorHits,
       page_hits: pageHits,

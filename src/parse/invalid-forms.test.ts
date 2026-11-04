@@ -179,7 +179,7 @@ const ROWS: Row[] = [
     rejection: "poleStack",
     valid: "zazozon vowurol hezem thohem blarl zalazun vezuvel.",
   },
-  { invalid: "yol yael zazozon vowurol.", rejection: "tagBody", valid: "zazozon vowurol. yel yaol." },
+  { invalid: "yol yael zazozon vowurol.", rejection: "checkBackBody", valid: "zazozon vowurol. yel yaol." },
   { invalid: "zazozon vowurol thugem blarl zalazun vezuvel.", rejection: "standInHost", valid: "zazozon vowurol theyom blarl zalazun vezuvel." },
   { invalid: "zazozon vowurol thebam blarl zalazun vezuvel.", rejection: "standInHost", valid: "zazozon vowurol thubom blarl zalazun vezuvel." },
   { invalid: "zazozon vowurol theyom blurl zalazun vezuvel.", rejection: "standInHost", valid: "zazozon vowurol theyol blarl zalazun vezuvel." },

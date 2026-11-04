@@ -341,7 +341,7 @@ describe("morphGlossLine — tags, xuen, hewel, pointer anchors", () => {
     expectLine("yual", "y-reject-frame");
     expectLine("yoel", "y-decline");
   });
-  it("any polar word makes a tag after yol (polar-inventory.md#tags)", () => {
+  it("any polar word makes a check-back after yel (polar-inventory.md#check-backs)", () => {
     expectLine("yom zayan vowurol. yel yael.", "y-request | z-interlocutors | v-walk . y-question | y-sure");
     expectLine("yom zawan vowurol. yel yuel.", "y-request | z-listener | v-walk . y-question | y-refuse-option");
     expectLine("zazozon vowurol. yel yuol.", "z-Azozon | v-walk . y-question | y-no");

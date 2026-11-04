@@ -450,7 +450,7 @@ class AgebenSentenceParser extends CstParser {
   }
 
   /**
-   * An asking tag (`yol yael.`, `yom yaol.`; polar-inventory.md#tags): an act word (or a force pair) and polar words, a turn
+   * A check-back (`yel yael.`, `yem yaol.`; polar-inventory.md#check-backs): an act word (or a force pair) and polar words, a turn
    * of its own with no body. Enforce allows one polar word.
    */
   public leftEdgeTag = this.RULE("leftEdgeTag", () => {

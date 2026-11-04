@@ -204,6 +204,27 @@ Every few rounds, or after a big grammar change, run the model eval on a sample 
 
    Outcomes: 5 exact, 1 same, 1 partly, 3 no parse. All three no-parse drafts were self-contained in the prompt: a comma inside a clause, a negation join with nothing to join, and a dropped verb (*contradicts*, which the prompt showed only as a pattern). The partial miss wrote *plan* as a second verb instead of the stance word the prompt showed only as a pattern. Ten items are too few to say whether *self-contained* tracks the model; the next step is a batch of 30–50.
 
+## Next round
+
+Notes from the Phase 4 sitting split ([`sitting-job-splits.md`](partially-implemented/sitting-job-splits.md)), 2026-11-04. That change moved checkpoint items between pages and added new ones, and `--check` failed on four metrics. Fixes already landed in it:
+
+- **Verify recall: 98.5 → 100.** `verify.ts` used to count a side-less match (a live compound's part, a role word) as agreeing with either ending, even when another English word named only the other sense. Now the ending gets a *check* in that case.
+- **New recipe cues:** *what makes* → `thewom thahum` (habit table in `say-reasons.md`); *who even*, *so who*, *tell me* → the stacked acts (ask table in `say-questions.md`); *to* + verb → stand-in `dorl` / `durl` (`english.md`). Each one is pinned in `cases.tsv`.
+
+What is still open:
+
+1. **The top-1 baseline is stale.** Checkpoint root recall top-1 was 84.9 at `c97fc288`, the commit that wrote the baseline. It was already 84.0 at `e594684e`, before the Phase 4 split, so `--check` was failing on top-1 by then. The 0.9-point drop happened somewhere in the 25 commits in between. Likely causes, none of them tested: the whole-lexicon respelling (`728c3230`), the retie (`f89a024b`), or the Phase 1–3 splits changing the item mix. Bisect it with the recall script from each commit (the current one may not run on old trees), then either fix the cause or write the baseline.
+2. **The item mix moves top-1.** The Phase 4 split itself cost 0.1 points (84.0 → 83.9) with no ranking change: it swapped items holding 3 roots found only through a grammar row for items holding 7 (CAUSE `ewo`, *because* `ahu`, *if* `ohe`, *listener* `awa`). Top-1 counts only a slot's first lexicon suggestion, so a closed-class or overlay root reached through a grammar row that spells it never counts. Options:
+   - score grammar-row hits as their own top-1 bucket;
+   - leave closed and overlay roots out of top-1 (they still count in *anywhere*);
+   - report top-1 for open-class roots only.
+
+   Any of these keeps a doc reshuffle from looking like a regression. The recall CSV's `not_top1` column (`root:result`, e.g. `ahu:grammar`, `alo:top3`) is what made this split visible.
+3. **The tagger reads *wishes to* + verb as a noun** (*Ahelan wishes to sing* → noun *wish*). The *to* job now offers `dorl`, but the verb reading is lost. This is a *tagger* fix in `tag.ts`: *wish / want / hope* + *to* + verb.
+4. **No cue for open `dorm`.** *…to dance, and maybe more* reaches only the hooks' open **-m** row. A cue for *and maybe more* / *among other things* after a *to*-clause could point at `stand-in-vowels.md#stand-in`.
+5. **CAUSE marked only by a note.** The doc example *Azozon walks if it rains.* (rain as the mechanism) can't reach `ewo`, because recall strips the note. Either the analyzer reads notes as cues on the doc set, or the doc wording carries the mechanism (*rain is what makes …*). A checkpoint item with the same problem was reworded.
+6. **Bare rhetorical questions have no cue.** *Who claps?* with *(nobody does)* reads as a real question. Cues now cover *who even* and *who cares*; a plain *Who V?* will always need the note. Decide whether the wild set should hold rhetorical items, and score them on gap rate only.
+
 ## Open questions
 
 - **Tolerance and noise.** Doc edits move the doc-set numbers for reasons unrelated to the helper. Should the baseline track only checkpoint and wild, with doc as a smoke test?

@@ -1167,11 +1167,11 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
   if (at > 0 && isAny(tokens[at]!, [HostedB, HostedOdo])) {
     throw new ConstructionError("slotlessHost", `${tokens[at - 1]!.image} ${tokens[at]!.image}`);
   }
-  // An asking tag (`yel yaol.`) is a turn of its own: nothing follows its polar word (polar-inventory.md#tags).
+  // A check-back (`yel yaol.`) is a turn of its own: nothing follows its polar word (polar-inventory.md#check-backs).
   let polar = at - 1;
   while (polar >= 0 && tokenMatcher(tokens[polar]!, Polar)) polar -= 1;
   if (at > 0 && polar < at - 1 && polar >= 0 && tokenMatcher(tokens[polar]!, Force)) {
-    throw new ConstructionError("tagBody", tokens.slice(polar, at).map((token) => token.image).join(" "));
+    throw new ConstructionError("checkBackBody", tokens.slice(polar, at).map((token) => token.image).join(" "));
   }
   // *Respectively* (`wazem`) sits only right before a join word (rank-joins.md#respectively).
   const pairing = tokens.findIndex((token, i) => tokenMatcher(token, WPairing) && !isAny(tokens[i + 1] ?? token, [JoinZ, JoinD, JoinB, JoinG, JoinV]));

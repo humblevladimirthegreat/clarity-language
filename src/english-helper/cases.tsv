@@ -86,3 +86,9 @@ I want competence.	competence	sake:none	a sake with no stance spells nothing
 Uzozen has a habit of walking in the rain.	habit	link:say-reasons.md#habit	*habit* when a cue produces the act
 Uzozen has a habit of walking in the rain.	habit	link:cause.md#cause	CAUSE is the mechanism word
 Rain triggers Uzozen's walk.	triggers	link:say-reasons.md#habit	*triggered by* is the same cue job
+# Recipe-track cues for stacked acts, CAUSE, and stand-ins
+Who even claps?	who even	link:say-questions.md#ask-words	*who even* is a rhetorical question
+So who laughed?	So who	link:say-questions.md#ask-words	*so who* is a quiz
+Tell me who saw the trophy.	Tell me	link:say-questions.md#ask-words	*tell me* demands an answer
+Pressure is what makes the wheel stop.	what makes	link:say-reasons.md#habit	*what makes* is CAUSE with a because pole, though *is* before it is an auxiliary
+Ahelan wishes to sing.	to	link:stand-in-vowels.md#stand-in	*to* before a verb can be a to-clause

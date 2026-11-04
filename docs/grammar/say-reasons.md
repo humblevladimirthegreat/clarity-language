@@ -454,6 +454,7 @@ English *habit*, *I have a habit of*, and *triggered by* pack how often the act 
 |---------|---------|
 | *habit of X triggered by Y* / *Y makes me X* | **`thewom thahum`** + `/b/` the cue |
 | *does X if Y* (Y as the mechanism; Y not asserted) | **`thewom thohem`** + `/b/` the cue |
+| *what makes* (*rain is what makes …*: the cause is how it comes about, and it holds) | **`thewom thahum`** + `/b/` the cause |
 | *always X* (how often; no cue) | **`hual`** / **`huam`** |
 | *only when Y* (when the claim counts, not that Y pulls the act) | occasion + **`hal`** |
 | *I'm an X type* (kind of person) | [label scope](/label-seams#label-scope) |

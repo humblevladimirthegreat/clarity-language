@@ -202,19 +202,19 @@ Write `y`, two vowels, then an ending. A turn holds one polar word; an answer fo
 | [Back up your own claim](/questions#polar-stance) | `zazozon vowurol. yaol.` | *Azozon walks. Yes.* | B |
 | [Answer a command or request](/polar-inventory#answer-command) | `yaol` / `yuol` | *will do* / *I won't* | I |
 
-### Tags: asking for an answer {#tags}
+### Check-backs: asking for an answer {#check-backs}
 
 After your sentence, write `yel` and a polar word as a turn of its own. It asks for that answer, so pick the one you want to make easy.
 
 <!-- cheat-sheet: talking -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`yel yaol.`](/polar-inventory#tags) | confirm a claim | *…, right?* | B |
-| [`yel yuol.`](/polar-inventory#tags) | invite a correction | *…, or am I wrong?* | I |
-| [`yel yael.`](/polar-inventory#tags) | take up a request or offer | *…, okay?* | I |
-| [`yel yuel.`](/polar-inventory#tags) | offer the refusal | *…, or would you rather not?* | I |
-| [`yel yaor.`](/polar-inventory#tags) | accept for now | *…, can we go with that for now?* | I |
-| [`yel yoem.`](/polar-inventory#tags) | after a question, offer a pass | *…, or would you rather not say?* | I |
+| [`yel yaol.`](/polar-inventory#check-backs) | confirm a claim | *…, right?* | B |
+| [`yel yuol.`](/polar-inventory#check-backs) | invite a correction | *…, or am I wrong?* | I |
+| [`yel yael.`](/polar-inventory#check-backs) | take up a request or offer | *…, okay?* | I |
+| [`yel yuel.`](/polar-inventory#check-backs) | offer the refusal | *…, or would you rather not?* | I |
+| [`yel yaor.`](/polar-inventory#check-backs) | accept for now | *…, can we go with that for now?* | I |
+| [`yel yoem.`](/polar-inventory#check-backs) | after a question, offer a pass | *…, or would you rather not say?* | I |
 
 ## Don't mix up {#dont-mix-up}
 
@@ -224,5 +224,5 @@ After your sentence, write `yel` and a polar word as a turn of its own. It asks 
 | `yagayun` *Guard!* ([call the guard](/speech-moves#interjections)) | | `yagayul` *Guard!* ([an alarm](/speech-moves#interjections)) |
 | `yel` *question* ([asks](/questions#question)) | | `?` *unsure voice* ([only sounds unsure](/tone-marks#tone-marks)) |
 | `yul` *don't* ([prohibition](/speech-moves#speech-act-beginner)) | | `yuol` *no, false* ([answers a claim](/questions#polar-stance)) |
-| `yel yaol.` *…, right?* ([a tag asks](/polar-inventory#tags)) | | `yaol.` *yes* ([an answer gives](/questions#polar-stance)) |
+| `yel yaol.` *…, right?* ([a check-back asks](/polar-inventory#check-backs)) | | `yaol.` *yes* ([an answer gives](/questions#polar-stance)) |
 | `thahum blar` *why?* ([the cause](/fill-ask-jobs#why)) | | `hewem blar` *like what?* ([a model to resemble](/fill-ask-jobs#how)) |
