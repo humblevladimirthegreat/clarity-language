@@ -25,7 +25,7 @@
  * Run: npm run lint:ageben
  *      npm run lint:ageben -- [paths...] [--check-ambiguity] [--order-report]
  */
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import { basename, dirname, join, relative, resolve } from "node:path";
 
 import { emptySpanStats, lintAgebenMarkdown, lintAgebenSpans, lintBareRoots, lintNativeOpaque } from "../src/lint/ageben-docs.js";
@@ -58,7 +58,9 @@ import {
 import {
   formatSection,
   learningOrder,
+  pageBand,
   pageSections,
+  sidebarPage,
   sectionAt,
   type LearningOrder,
   type PageSections,
@@ -76,8 +78,16 @@ import {
 } from "../src/lint/drill-coverage.js";
 import { CONSTRUCTIONS as STATIC_CONSTRUCTIONS, constructionRegistry } from "../src/parse/constructions.js";
 import { hashRedirects } from "../docs/grammar/.vitepress/lib/hash-redirect.js";
-import { isLevelReview, lessonPages, levelReviewPages, pageRelPath, pathPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import {
+  isLevelReview,
+  lessonPages,
+  levelReviewPages,
+  orientation,
+  pageRelPath,
+  pathPages,
+} from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { lintLevelReview } from "../src/lint/level-review.js";
+import { lintCheckpointInventory, practiceSettings, recipeBlocks } from "../src/lint/checkpoint-inventory.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
 import { fillSelf } from "../src/learner-name.js";
@@ -267,6 +277,34 @@ function reportDrillCoverage(order: LearningOrder, uses: readonly ConstructionUs
   return missing.length + uncovered.length + duplicates.length;
 }
 
+/**
+ * Checkpoint inventory: the allowlist in docs/meta/drill-generation.md names every sitting by
+ * file with its status and setting, and settings are unique. Returns the number of findings.
+ */
+function reportCheckpointInventory(orderPages: readonly string[]): number {
+  const orientationPages = [...orientation.map((o) => sidebarPage(o.link)), "purpose.md"];
+  const sittings = orderPages
+    .filter((page) => !isLevelReview(page) && !orientationPages.includes(page))
+    .map((page) => {
+      const markdown = pageMarkdown.get(page) ?? "";
+      return { page, band: pageBand(markdown), settings: practiceSettings(markdown) };
+    });
+  const recipes = readdirSync(grammarDir)
+    .filter((f) => /^say-.*\.md$/.test(f))
+    .flatMap((f) => recipeBlocks(f, readFileSync(join(grammarDir, f), "utf8")));
+  const findings = lintCheckpointInventory({
+    allowlist: readFileSync(join(metaDir, "drill-generation.md"), "utf8"),
+    pages: sittings,
+    orientation: orientationPages,
+    recipes,
+  });
+  for (const f of findings) {
+    const where = f.line ? `docs/meta/${f.file}:${f.line}` : `docs/grammar/${pageRelPath(f.file)}`;
+    console.error(`${where}  checkpoint-inventory  (${f.detail})`);
+  }
+  return findings.length;
+}
+
 const pageMarkdown = new Map<string, string>();
 
 function main(): void {
@@ -419,6 +457,7 @@ function main(): void {
   let coreCount = 0;
   let lookAlikeCount = 0;
   let reviewCount = 0;
+  let inventoryCount = 0;
   if (paths.length === 0) {
     // Each level review is last in its group, so it closes that level.
     const orderPages = pathPages();
@@ -426,6 +465,7 @@ function main(): void {
     coverageCount = checkConstructionCoverage(uses);
     orderCount = reportLearningOrder(order, uses, orderReport);
     drillCount = reportDrillCoverage(order, uses);
+    inventoryCount = reportCheckpointInventory(orderPages);
     const checkpoints = stageCheckpoints(orderPages, (page) => pageMarkdown.get(page), tables, levelReviewPages);
     const core = storedCore();
     for (const finding of lintCoreCounts(checkpoints, core)) {
@@ -498,6 +538,11 @@ function main(): void {
       `\n${lookAlikeCount} look-alike issue(s). Keep roots apart only in the middle vowel out of nearby checkpoints. A swapped word must still fit each item: reread them, and rewrite any that the new word makes false or odd (docs/meta/translation-exercises.md#look-alikes).`,
     );
   }
+  if (inventoryCount > 0) {
+    console.error(
+      `\n${inventoryCount} checkpoint-inventory issue(s). Give every sitting one allowlist row by file, with its status and setting, and keep settings unique (docs/meta/drill-generation.md#allowlist).`,
+    );
+  }
   if (reviewCount > 0) {
     console.error(
       `\n${reviewCount} level-review issue(s). One item per stage checkpoint, each ending with a **Rule:** link to its section (docs/meta/translation-exercises.md#level-reviews).`,
@@ -533,7 +578,8 @@ function main(): void {
     drillCount +
     coreCount +
     lookAlikeCount +
-    reviewCount;
+    reviewCount +
+    inventoryCount;
   if (fail > 0) {
     process.exit(1);
   }
@@ -551,6 +597,7 @@ function main(): void {
   console.log("OK: every heading and <a id> on a grammar page is unique.");
   console.log("OK: translation word-bank English matches the lexicon.");
   if (paths.length === 0) console.log("OK: converted checkpoint banks match the core vocabulary; level reviews cover their levels.");
+  if (paths.length === 0) console.log("OK: every sitting has one allowlist row; checkpoint settings match it and are unique.");
   console.log("OK: checkpoint items follow the template; decision items and Also correct variants check out.");
   console.log("OK: number pronunciation rows match their shorthand.");
   if (paths.length === 0) {

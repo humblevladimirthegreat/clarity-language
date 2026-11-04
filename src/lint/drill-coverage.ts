@@ -6,6 +6,7 @@
  * band pairs marked **skip** in the allowlist of docs/meta/drill-generation.md
  * are exempt.
  */
+import { allowlistRows } from "./checkpoint-inventory.js";
 import { PRACTICE_TITLE_RE } from "./practice-sections.js";
 import { BANDS, formatSection, withinSection, type Band, type LearningOrder, type Section } from "./learning-order.js";
 
@@ -39,27 +40,8 @@ export function constructionFamilies(homes: ReadonlyMap<string, Section | undefi
  */
 export function drillSkips(markdown: string): Set<string> {
   const skips = new Set<string>();
-  let header: string[] | undefined;
-  for (const line of markdown.split("\n")) {
-    if (!line.trimStart().startsWith("|")) {
-      header = undefined;
-      continue;
-    }
-    const cells = line.trim().replace(/^\||\|$/g, "").split("|").map((c) => c.trim());
-    if (!header) {
-      header = cells.map((c) => c.toLowerCase());
-      continue;
-    }
-    if (cells.every((c) => /^:?-+:?$/.test(c))) continue;
-    const at = (name: string) => {
-      const i = header!.indexOf(name);
-      return i < 0 ? undefined : cells[i]?.replace(/[`*]/g, "").trim();
-    };
-    const file = at("file");
-    const status = at("status")?.toLowerCase();
-    if (!file || status !== "skip") continue;
-    const band = (at("band")?.toLowerCase() ?? "beginner") as Band;
-    if (BANDS.includes(band)) skips.add(`${file}|${band}`);
+  for (const row of allowlistRows(markdown)) {
+    if (row.status === "skip" && BANDS.includes(row.band)) skips.add(`${row.file}|${row.band}`);
   }
   return skips;
 }

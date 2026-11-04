@@ -259,3 +259,45 @@ function pickH1Id(explicit: string | undefined, title: string, newPage: string, 
 function capitalize(band: Band): string {
   return band.charAt(0).toUpperCase() + band.slice(1);
 }
+
+const BAND_LABEL: Record<Band, string> = { beginner: "Beginner", intermediate: "Intermediate", advanced: "Advanced" };
+
+/**
+ * Add a **generate** row for a new sitting to the drill-generation allowlist
+ * (docs/meta/drill-generation.md#allowlist): right after the parent's row when it sits in the
+ * same table, else at the end of the table for the band (Beginner path, or the later table with
+ * a Band column). The build fails on **generate** until the checkpoint is written or the row
+ * is marked **skip** with a reason. Returns the markdown unchanged when the page has a row.
+ */
+export function addAllowlistRow(markdown: string, input: { page: string; parent: string; band: Band }): string {
+  const lines = markdown.split("\n");
+  if (lines.some((l) => l.startsWith("|") && l.includes(`\`${input.page}\``))) return markdown;
+  const cellsOf = (l: string) => l.trim().replace(/^\||\|$/g, "").split("|").map((c) => c.trim().toLowerCase());
+  for (let i = 0; i < lines.length; i++) {
+    if (!lines[i]!.startsWith("|")) continue;
+    if (i > 0 && lines[i - 1]!.startsWith("|")) continue;
+    const header = cellsOf(lines[i]!);
+    if (!header.includes("file") || !header.includes("status")) continue;
+    const hasBand = header.includes("band");
+    if (hasBand !== (input.band !== "beginner")) continue;
+    let end = i + 2;
+    while (end < lines.length && lines[end]!.startsWith("|")) end += 1;
+    let at = end;
+    for (let j = i + 2; j < end; j++) {
+      if (lines[j]!.includes(`\`${input.parent}\``)) at = j + 1;
+    }
+    const values: Record<string, string> = {
+      path: "—",
+      file: `\`${input.page}\``,
+      band: BAND_LABEL[input.band],
+      status: "**generate**",
+      setting: "—",
+    };
+    const row = header.map((h) =>
+      values[h] ?? (h.includes("notes") ? `Split off \`${input.parent}\`: fill in what to test, then write the checkpoint (or mark **skip** with a reason)` : "—"),
+    );
+    lines.splice(at, 0, `| ${row.join(" | ")} |`);
+    return lines.join("\n");
+  }
+  throw new Error(`no allowlist table for ${input.band}`);
+}

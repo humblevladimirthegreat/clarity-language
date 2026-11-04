@@ -76,7 +76,7 @@ After a join, `gobom` and `gaham` bound the set the join covers, as SHARED words
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
-**Setting:** a train platform
+**Setting:** a station café
 
 **New words:**
 

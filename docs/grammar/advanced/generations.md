@@ -86,3 +86,117 @@ For a side branch, nest a second anchor: first step to the relative, then from t
 > "Alazun, Azozon's aunt or uncle, walks." (a sibling of the first of Azozon's parents)
 
 **Compare with:** friends, bosses, and other non-kin relations are not generations, so these forms do not name them.
+
+### Practice {#advanced-practice}
+
+Short drills for Advanced. Try each item before opening **Show answer**.
+
+**Setting:** a family reunion
+
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *child* | `ohoyol` | 🧒 |
+| *parent* | `abayal` | 🧑‍🧒 |
+
+**Review:**
+
+| English | Ageben |
+|---------|--------|
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
+| *Ahelan* | `ahelan` |
+| *eat* | `vagedal` |
+| *person* | `eyel` |
+| *see* | `vayebel` |
+| *sit* | `vehohel` |
+| *walk* | `vowurol` |
+
+#### English → Ageben {#advanced-english-to-ageben}
+
+**1.** *Alazun, Azozon's youngest sibling, eats.*
+
+::: details Show answer
+`zalazun g#-1e0 blazozon vagedal.`
+
+🔊 `zalazun gruowamoyabal blazozon vagedal.`
+
+[z-Alazun | [g-#--1e0 | bl-Azozon]] | v-eat
+:::
+
+**2.** *Alazun's third child sits.*
+
+::: details Show answer
+`zohoyol g#3e1 blalazun vehohel.`
+
+🔊 `zohoyol growabayagel blalazun vehohel.`
+
+[z-child | [g-#-3e1 | bl-Alazun]] | v-sit
+:::
+
+**3.** *Alazun sees Ahelan's parents.*
+
+::: details Show answer
+`zalazun dabayalx growubal blahelan vayebel.`
+
+z-Alazun | [d-parent-x | [g-#-e-1 | bl-Ahelan]] | v-see
+:::
+
+#### Ageben → English {#advanced-ageben-to-english}
+
+**1.** `zazozon g#1e0 blalazun vehohel.`
+
+::: details Show answer
+🔊 `zazozon growamoyabal blalazun vehohel.`
+
+[z-Azozon | [g-#-1e0 | bl-Alazun]] | v-sit
+
+*Azozon, Alazun's eldest sibling, sits.*
+:::
+
+**2.** `zohoyolx growadol blazozon vagedal.`
+
+::: details Show answer
+[z-child-x | [g-#-e2 | bl-Azozon]] | v-eat
+
+*Azozon's grandchildren eat.*
+:::
+
+**3.** `zeyel growamol bleyel g#1e-1 blahelan vehohel.`
+
+::: details Show answer
+🔊 `zeyel growamol bleyel growubayabal blahelan vehohel.`
+
+[z-person | [g-#-e0 | [bl-person | [g-#-1e-1 | bl-Ahelan]]]] | v-sit
+
+*Ahelan's aunt or uncle sits.* (a sibling of Ahelan's first parent)
+:::
+
+#### Pick one {#advanced-pick-one}
+
+**1.** *Azozon's parents walk.* `zabayalx growubal blazozon vowurol.` or `zabayalx growabal blazozon vowurol.`
+
+::: details Show answer
+`zabayalx growubal blazozon vowurol.`
+
+[z-parent-x | [g-#-e-1 | bl-Azozon]] | v-walk
+
+**`e-1`** is one generation up (parents); **`e1`** would be one down, Azozon's children.
+:::
+
+#### What changes {#advanced-what-changes}
+
+**1.** `zalazun g#1e0 blazozon vowurol.` / `zalazun g#-1e0 blazozon vowurol.`
+
+::: details Show answer
+[z-Alazun | [g-#-1e0 | bl-Azozon]] | v-walk
+
+🔊 `zalazun growamoyabal blazozon vowurol.`
+
+[z-Alazun | [g-#--1e0 | bl-Azozon]] | v-walk
+
+🔊 `zalazun gruowamoyabal blazozon vowurol.`
+
+The first makes Alazun Azozon's eldest sibling; the second, the youngest.
+:::

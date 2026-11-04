@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
 import {
+  addAllowlistRow,
   appendObjectToExportedArray,
   peelBand,
   rewriteAnchorRefs,
@@ -169,5 +170,39 @@ describe("appendObjectToExportedArray", () => {
     assert.match(two, /join-limits.md/);
     assert.match(two, /Rank joins/);
     assert.match(two, /HoldingSitting\[\] = \[/);
+  });
+});
+
+describe("addAllowlistRow", () => {
+  const allowlist = `### Beginner path
+
+| Path | File | Status | Setting | Introduces (test these) | Sibling OK / notes |
+|------|------|--------|---------|-------------------------|--------------------|
+| 5 | \`clause.md\` | **exists** | a bank | x | y |
+| 6 | \`speech-moves.md\` | **exists** | a foyer | x | y |
+
+### Later
+
+| Path | File | Band | Status | Setting | Introduces (test these) | Notes |
+|------|------|------|--------|---------|-------------------------|-------|
+| 5 | \`left-bound.md\` | Intermediate | **exists** | a waiting room | x | y |
+`;
+
+  it("adds a generate row after the parent in the Beginner table", () => {
+    const out = addAllowlistRow(allowlist, { page: "new.md", parent: "clause.md", band: "beginner" }).split("\n");
+    const i = out.findIndex((l) => l.includes("`new.md`"));
+    assert.ok(out[i - 1]!.includes("`clause.md`"));
+    assert.match(out[i]!, /^\| — \| `new\.md` \| \*\*generate\*\* \| — \| — \| Split off `clause\.md`/);
+  });
+
+  it("adds a later-band row at the end of the later table when the parent is not there", () => {
+    const out = addAllowlistRow(allowlist, { page: "new.md", parent: "clause.md", band: "advanced" }).split("\n");
+    const i = out.findIndex((l) => l.includes("`new.md`"));
+    assert.ok(out[i - 1]!.includes("`left-bound.md`"));
+    assert.match(out[i]!, /^\| — \| `new\.md` \| Advanced \| \*\*generate\*\* \| — \| — \|/);
+  });
+
+  it("leaves a page that already has a row", () => {
+    assert.equal(addAllowlistRow(allowlist, { page: "left-bound.md", parent: "clause.md", band: "intermediate" }), allowlist);
   });
 });

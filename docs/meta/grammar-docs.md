@@ -12,7 +12,7 @@ Related meta:
 | [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** [gates](learning-levels.md#gates) and [cross-doc path](learning-levels.md#cross-doc-path) (for `docs/grammar/` only) |
 | [glosses.md](glosses.md) | Morph glosses and free English ([example blocks](glosses.md#example-block); [house-name glosses](glosses.md#house-cast)) |
 | [translation-exercises.md](translation-exercises.md) | Eng ↔ Ageben checkpoints (placement, principles including house-cast people, spoiler shape; vocab **Ageben** = citation or the inflected form the row teaches) |
-| [drill-generation.md](drill-generation.md) | Path allowlist, [settings](drill-generation.md#settings) inventory, and execute procedure (one file per agent) |
+| [drill-generation.md](drill-generation.md) | Path allowlist (one row per sitting, with its [setting](drill-generation.md#settings)) and execute procedure (one file per agent) |
 | [language-name.md](language-name.md) | English name **Ageben** = glasses root **`agebe`** + **-n** (editors only — not linked from grammar) |
 | [unassigned-reserved.md](unassigned-reserved.md) | Unused-slot / unassigned-form inventory (editors only — not linked from grammar) |
 | [grammar-gaps.md](grammar-gaps.md) | Missing English-helper jobs (thin lexicon vs large clause types — editors only; not linked from grammar) |
@@ -31,7 +31,7 @@ On this page:
 |-------|------|
 | Current language / leftover | [Present the current language only](#present-the-current-language-only), [no process leftover](#no-process-or-corrective-leftover) |
 | Mix-ups and negatives | [Which tool, not which owner](#which-tool-not-which-owner) |
-| Page architecture | [Page skeleton](#page-skeleton), [Beginner](#beginner-stage-shape), [later stages](#later-stage-shape) |
+| Page architecture | [What one sitting holds](#one-sitting), [page skeleton](#page-skeleton), [Beginner](#beginner-stage-shape), [later stages](#later-stage-shape) |
 | Memory aids | [Cues](#cues-columns), [when to state a scene cue](#when-to-state-a-scene-cue) |
 | Examples / tables | [House cast](#house-cast), [Tables](#tables) ([citation in tables](#citation-in-tables)) |
 | Scope | [Cross-links](#cross-links-and-scope), [what belongs where](#what-belongs-where) |
@@ -170,6 +170,35 @@ If a page has several such tables, give each its own **Cue** column; never summa
 Do **not** keep a heading whose only job is to say there is nothing here. Learners skip missing sittings on the [cross-doc path](learning-levels.md#cross-doc-path). Material that did not make a sitting belongs in [unassigned-reserved.md](unassigned-reserved.md) or [TODO.md](../../TODO.md), not in a stub appendix on the page.
 
 **Bounce notes are empty stages.** Do not open a sitting with only “nothing here / come back when you are ready for Intermediate / this page is Advanced.” Omit the unused sitting. A page with `band: intermediate` or `band: advanced` is fine; it lives in that sidebar group. Do not duplicate the same recap (“house rules,” writing-style bullets) in a later sitting just to fill Advanced. Do not leave a band H2 on a sitting.
+
+## What one sitting holds
+<a id="one-sitting"></a>
+
+A grammar file is one sitting. A heading may stay on the page only when it passes every **hard test**. **Signals** do not decide by themselves; they tell you which page to run the tests on first. Tests are per `###` (Practice and See also do not count).
+
+**Hard tests**
+
+| # | Test | Passes when | On failure |
+|---|------|-------------|------------|
+| 1 | **One band** | Every H3 passes the same [gate](learning-levels.md#gates) | Peel the slice that fails (`npm run peel-band` / `peel-headings`) |
+| 2 | **One axis** | The page is grouped by **one English job** (its H3s are forms a learner picks between for that job, e.g. *how you know*) **or** by **one form family** (one host slot or series and its readings, e.g. join vowels). Each H3 belongs on that axis | Move the off-axis H3 to the page that owns its job or its form family |
+| 3 | **Title covers it** | The one-line job under the title is true of every H3, with no *and also*. An *and* in the title joins a choice set or opposites (*thanks and sorry*, *can and can't*), never two jobs | Retitle to the narrower job and peel the rest |
+| 4 | **Connected** | Each H3 after the first uses, extends, or is chosen against an earlier H3 on the page | An H3 that neither uses nor is used by the rest is its own job: peel it |
+| 5 | **Choice sets stay together** | Two forms a learner must pick between for the same English, in the same band, sit on the same page | Move the later one beside the earlier, or (across bands) give it one [Compare with](#compare-with) line |
+| 6 | **One setting** | One everyday [setting](drill-generation.md#settings) can host a natural checkpoint item for every H3 | The H3 that needs a different scene is usually a different job: retest 2–4 |
+| 7 | **Room** | At most **10** H3s ([sitting length](drill-generation.md#sitting-length)) | Split by job onto a sibling, each a full sitting |
+| 8 | **Teaches** | Every H3 homes a form, reading, or rule the learner uses now | Recap, unused-slot inventory, bounce, design notes, and applications do not stay: [empty stages](#empty-stages), [what belongs where](#what-belongs-where), [recipe track](#recipe-track) |
+
+**Lower bound.** A single-H3 sitting is fine when it passes 8 and earns its own checkpoint. Do not merge two sittings to fill a page; merge only when both are the same job on the same axis, the merge passes 1–8, and neither URL is a Beginner parent.
+
+**Signals** (from `npm run page-lines -- --sittings --headings`)
+
+- Teach lines well past the band's other sittings, or one H3 carrying most of the page: check 2 and 4 before trimming prose.
+- A heading named after a different topic noun than the title (a page-within-a-page): check 2 and 3.
+- An H3 whose examples need no other H3 on the page: check 4.
+- Practice items that cluster on a few H3s while others get none: check 6.
+
+When a test fails, peel or move by heading ([how to apply](learning-levels.md#how-to-apply)); never fix a failure by renaming headings so they look like one job.
 
 ## Page skeleton
 <a id="page-skeleton"></a>

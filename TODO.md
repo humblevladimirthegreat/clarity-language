@@ -15,7 +15,6 @@ use [skip-cd] for amplify to not deploy.
 -cheat sheet for reading a word?
 -prioritize the size vowel over distinctness
 -should any other cheat sheets be added?
--come up with criteria for what should be allowed in a single sitting file. 
 -consider grouping lessons into categories/units
 -should vowel pitch be very forgiving at beginning (contour only)?
 -more stacked vowels (other series)

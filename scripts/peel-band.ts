@@ -14,6 +14,7 @@ import { dirname, join, relative } from "node:path";
 import { BANDS, type Band } from "../src/lint/learning-order.js";
 import { grammarFile, REPO_ROOT } from "../src/repo-paths.js";
 import {
+  addAllowlistRow,
   appendObjectToExportedArray,
   peelBand,
   rewriteAnchorRefs,
@@ -22,6 +23,7 @@ import {
 
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
 const readingOrderPath = join(grammarDir, ".vitepress", "lib", "reading-order.ts");
+const allowlistPath = join(REPO_ROOT, "docs", "meta", "drill-generation.md");
 const hashPath = join(grammarDir, ".vitepress", "lib", "hash-redirect.ts");
 
 const LESSON_EXPORT: Record<Band, string> = {
@@ -152,6 +154,7 @@ function main(): void {
   console.log("Construction homes on retired band fragments:");
   for (const [from, to] of result.homeMap) console.log(`  ${from} → ${to}`);
   console.log("Update the AGENTS.md Owns line if a job left the parent.");
+  console.log(`Allowlist: add ${options.to} as **generate** (docs/meta/drill-generation.md); the build fails until it has a checkpoint or a **skip** reason.`);
   console.log("Then: npm run cheat-sheet-blocks -- --write && npm run build");
 
   if (!options.write) {
@@ -174,6 +177,11 @@ function main(): void {
     hashSource = appendObjectToExportedArray(hashSource, "hashRedirects", row);
   }
   writeFileSync(hashPath, hashSource);
+
+  writeFileSync(
+    allowlistPath,
+    addAllowlistRow(readFileSync(allowlistPath, "utf8"), { page: options.to, parent: options.parent, band: options.band }),
+  );
 
   const skip = new Set([parentPath, sittingPath, readingOrderPath, hashPath]);
   for (const file of rewriteTargets()) {

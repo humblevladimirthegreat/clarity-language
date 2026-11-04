@@ -35,6 +35,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *sleepy* | `uzemel` |
 | *sleep* | `vezuvel` |
 | *see* | `vayebel` |
+| *child* | `ohoyol` |
 
 #### English → Ageben {#advanced-english-to-ageben}
 
@@ -68,6 +69,18 @@ z-Ahelan | [d-station | [w-MEMORY | g-quiet]] | v-see
 **Rule:** [Mood on one adjective](universality.md#mood-on-adjective)
 :::
 
+**4.** *Ahelan sees the ZW.* (the School-Station office)
+
+::: details Show answer
+`zahelan d@_zw vayebel.`
+
+🔊 `zahelan drezuwan vayebel.`
+
+z-Ahelan | d-_zw.named | v-see
+
+**Rule:** [Initials](initials.md#initials)
+:::
+
 #### Ageben → English {#advanced-ageben-to-english}
 
 **1.** `zexual blawahol vehohel.`
@@ -90,7 +103,19 @@ z-Ahelan | d-CITE[umbrella]# | v-write
 **Rule:** [Editorial close and close-all](span-nesting.md#close-forms-complete-editorial-close-all)
 :::
 
-**3.** `zazozon grawaxugowul.`
+**3.** `zohoyol g#2e1 blazozon vezuvel.`
+
+::: details Show answer
+🔊 `zohoyol growabayadol blazozon vezuvel.`
+
+[z-child | [g-#-2e1 | bl-Azozon]] | v-sleep
+
+*Azozon's second child sleeps.*
+
+**Rule:** [Ordinal generation](generations.md#ordinal-generation)
+:::
+
+**4.** `zazozon grawaxugowul.`
 
 ::: details Show answer
 z-Azozon | g-infinity-x-quiet
@@ -184,6 +209,18 @@ z-Azozon | h-always.open | v-sit
 Open **-m** leaves exceptions; closed **-l** allows none.
 
 **Rule:** [Channels on a generalization](usually-vs-must.md#universality)
+:::
+
+**8.** *Ahelan sees at most five baguettes.* `zahelan debodolx gruwal ul grazal vayebel.` or `zahelan debodolx gruwal al grazal vayebel.`
+
+::: details Show answer
+`zahelan debodolx gruwal al grazal vayebel.`
+
+z-Ahelan | [d-baguette-x | g-minus-infinity] | through | g-five | v-see
+
+**`al`** keeps the five in (*at most five*); **`ul`** would leave it out (*fewer than five*).
+
+**Rule:** [Rays](open-ranges.md#rays)
 :::
 
 #### Fix it {#advanced-fix-it}
