@@ -9,11 +9,11 @@ outline: false
 
 How the four vowels are reused. Sounds are on [Sounds and spelling](/cheat-sheets/sounds-spelling). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
-The letter order **a o e u** has two sibling **scales**: size is amount (biggest to smallest), order is sequence (first to fourth). Each **series** reuses one scale’s leftover-logic. A **hang cue** says why.
+The letter order **a o e u** has two sibling **scales**: size is amount (biggest to smallest), order is position (first to fourth). Each **series** reuses one scale’s leftover-logic. A **fit cue** says why.
 
 ## Scales and series {#scales}
 
-| Series | Parent | Hang cue | **a** | **o** | **e** | **u** | Stage |
+| Series | Parent | Fit cue | **a** | **o** | **e** | **u** | Stage |
 |--------|--------|----------|-------|-------|-------|-------|-------|
 | [Size](/root-tails#root-tails) (scale) | — | how much is there | big | medium | small | none | A |
 | [Order](/numbers#counts) (scale) | — | which slot in a count of four | first | second | third | fourth | B |
@@ -79,7 +79,7 @@ four vowels
 │                 ├── say-word answer
 │                 ├── polar / polar inventory
 │                 └── rhetorical / quiz stacks
-└── sequence — which slot in a count of four
+└── position — which slot in a count of four
       ├── digit names — next unused vowel
       │     └── letter names — opposite, so naming is not counting
       ├── tags — same assignment queue: A first, U last

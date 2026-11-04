@@ -38,7 +38,7 @@ People often do one act while sounding like another. *Could you pass the salt?* 
 >
 > "Could you punch the box?" (a request)
 
-The body takes the **first** word's [usual order](/speech-moves#act-word-order). The second word only says how the turn sounds and never moves the verb. So a prohibition that sounds like a command still keeps its verb late, and a missed **`yul`** never leaves an order to act.
+The body takes the **first** word's [default order](/speech-moves#act-word-order). The second word only says how the turn sounds and never moves the verb. So a prohibition that sounds like a command still keeps its verb late, and a missed **`yul`** never leaves an order to act.
 
 > `yul yol dubogal vabuvul.`
 >

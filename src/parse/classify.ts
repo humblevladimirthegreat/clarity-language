@@ -242,7 +242,7 @@ export function lexiconContentRoots(
 
 const knownRootsCache = new WeakMap<ClassifyTables, ReadonlySet<string>>();
 
-/** Published lemmas, lexical-compound stems, and overlay host roots. */
+/** Published lemmas, dictionary-compound stems, and overlay host roots. */
 export function knownLexiconRoots(tables: ClassifyTables): ReadonlySet<string> {
   let known = knownRootsCache.get(tables);
   if (!known) {
@@ -339,7 +339,7 @@ function classifyHookCompound(word: MorphWord, tables: ClassifyTables): LexWord 
     family: { kind: "content", roots: [parts.leftRoot] },
     rootGloss: gloss,
     reading: "ordinary",
-    lexicalCompound: Boolean(listed),
+    dictionaryCompound: Boolean(listed),
     hookCompound: parts,
   };
 }
@@ -686,12 +686,12 @@ const CLASSIFY_RULES: ClassifyRule[] = [
         ...word,
         rootGloss: compoundLemmaGloss(row),
         reading: missingAbstractSense(word, tables) ? "unknown" : "ordinary",
-        lexicalCompound: true,
+        dictionaryCompound: true,
       };
     },
   },
   {
-    source: (word) => (word.lexicalCompound ? "compoundLemma" : "published"),
+    source: (word) => (word.dictionaryCompound ? "compoundLemma" : "published"),
     match: (word, tables) => (hookCompoundCandidate(word) ? classifyHookCompound(word, tables) : undefined),
   },
   {
@@ -740,7 +740,7 @@ function classifyIn(word: MorphWord, tables: ClassifyTables): LexWord {
   return classifyUnlisted(shaped, tables);
 }
 
-/** Candidate lexical-compound splits for an unknown single content root. */
+/** Candidate dictionary-compound splits for an unknown single content root. */
 function potentialCompoundsFor(
   word: MorphWord,
   tables: ClassifyTables,

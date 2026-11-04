@@ -23,7 +23,7 @@ To count **from the last place** (*penultimate*, *starting with the last one*), 
 | **`g#-2`** | *2nd from the end* / *penultimate* |
 | **`g#-3`** | *3rd from the end* / *antepenultimate* |
 | **`g~#-2`** | *about 2nd from the end* |
-| **`g@#-2`** | conventional / titled *penultimate* (etc.) |
+| **`g@#-2`** | named / titled *penultimate* (etc.) |
 | **`g=#-2`** | resume that prior end-relative place |
 | **`g#-`** | unspecified end-relative rank ([zero groups](/digitless-exponents#digitless)) |
 

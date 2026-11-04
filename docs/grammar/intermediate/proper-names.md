@@ -148,7 +148,7 @@ A **hyphenated name** (*Mary-Kate*, *Coffee-Tea*) is one word: roots join left t
 
 A business or product name uses the same pieces. A compact label is one **`x`** word. A product under a maker’s name takes the maker as its `/ɡ/` name, as a person takes a family name (*a Mustang by Ford*). A name with grammar inside it, such as a verb or *instead of*, is a [titled phrase](#titled-phrases) or a [span](/spans#when-required), where any role letter can appear.
 
-A nativized loan (a foreign word adapted into an Ageben root, plus an ordinary ending) takes the same four endings as any content word. A **lexical compound** also fills one slot: it is one stem, written without mid-word **`x`** (`zoyahehal` *bedroom*).
+A nativized loan (a foreign word adapted into an Ageben root, plus an ordinary ending) takes the same four endings as any content word. A **dictionary compound** also fills one slot: it is one stem, written without mid-word **`x`** (`zoyahehal` *bedroom*).
 
 **Compare with:** `zalon golowon.` alone is a sentence: *Alon is an Olowon* ([classification](/predication#classification)). The citation `alon golowon` has no role letter, so it only names. Two people in one role take a [join](/joins#right-close) after them (`zalon zolowon zal`).
 

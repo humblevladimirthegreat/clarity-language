@@ -6,7 +6,7 @@ band: advanced
 
 ### English emphasis and clefts {#english-emphasis}
 
-English often moves or stresses a word to single it out: *It's a cat that Azozon sees*, *It was Azozon who saw the cat*, or a stressed *Azozon saw the cat*. Ageben word order carries no emphasis. A sentence's usual order is set by its [speech act](/speech-moves#act-word-order), and any other order means exactly the same (with joined verbs, a word's place says which verb it goes with, [verb-phrase forms](/vp-clause-forms#vp-clause-forms)). When you translate, ask what the English emphasis is doing.
+English often moves or stresses a word to single it out: *It's a cat that Azozon sees*, *It was Azozon who saw the cat*, or a stressed *Azozon saw the cat*. Ageben word order carries no emphasis. A sentence's default order is set by its [speech act](/speech-moves#act-word-order), and any other order means exactly the same (with joined verbs, a word's place says which verb it goes with, [verb-phrase forms](/vp-clause-forms#vp-clause-forms)). When you translate, ask what the English emphasis is doing.
 
 If the English sets one person or thing against others (*Azozon, not someone else*), put the [contrastive focus](/tone-marks#tone-marks) mark **`&`** on that word.
 

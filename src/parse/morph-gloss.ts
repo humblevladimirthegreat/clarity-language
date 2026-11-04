@@ -1565,7 +1565,7 @@ function writingSpanLabel(
 
 function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): string {
   if (word.overlay) return overlayLabel(word.overlay);
-  if (word.lexicalCompound) {
+  if (word.dictionaryCompound) {
     if (isNameEnding(word.ending)) return titleAgebenName(roots[0] ?? "compound", true);
     const lemma = word.ending === "m" ? word.rootGloss?.abstract : word.rootGloss?.concrete;
     return hyphenEnglish(lemma || word.rootGloss?.concrete || roots[0] || "compound");

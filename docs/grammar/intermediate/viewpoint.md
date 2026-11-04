@@ -51,7 +51,7 @@ For *their left*, [resume](/pronouns#resume-r) the person on **-r** after **`th`
 | PoS | slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region) | same slots as other content |
 | DIR | an arrow-rose root | *north* / *ahead*, … |
 | **`th`** | joins DIR to the viewpoint | viewpoint after **`th`** (cue: **th** ≈ *think*, whose point of view) |
-| ANCHOR | what sets the facing frame: [special](/pronouns#special-pronouns) **`uwe`** / **`awa`** / **`aya`**, a person’s name, or a content **-r** of a person or oriented object | *Azozon’s left*, *your left*, *the car’s left*, *their left* |
+| ANCHOR | what sets the facing: [special](/pronouns#special-pronouns) **`uwe`** / **`awa`** / **`aya`**, a person’s name, or a content **-r** of a person or oriented object | *Azozon’s left*, *your left*, *the car’s left*, *their left* |
 | Ending | ordinary ending is written at the end of the whole compound; its reference is the viewpoint anchor, not the direction | viewpoint kind / hedge / name / resume |
 
 **Compare with:** naming a doer from an event puts **`w`**, a scope vowel, and a part consonant before the stem ([role compounds](/roles#role-compounds): `zwuzuvuvul`). Viewpoint laterals put a **direction root** left of **`th`** and a facing person on the right.

@@ -90,7 +90,7 @@ export const SAKE_ENDINGS: Readonly<Record<string, { l: string[]; r: string[] }>
 };
 
 /** A listed compound reached from its parts, and a live `x` compound built from them. */
-export const COMPOUND_LINKS = { listed: "compounds.md#lexical-compounds", live: "compound-families.md#ordinary-compound-order" } as const;
+export const COMPOUND_LINKS = { listed: "compounds.md#dictionary-compounds", live: "compound-families.md#ordinary-compound-order" } as const;
 
 const THIRD_PERSON = new Set(["he", "she", "it", "they", "him", "hor", "thom", "his", "its", "their", "theirs", "hers"]);
 

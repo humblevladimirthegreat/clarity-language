@@ -169,7 +169,7 @@ To give a percent of a whole (*25% of the cats*), end a **count** number (`ra` /
 
 Digits follow the [normal digit rules](digitless-exponents.md#exponents) (including optional **`ye`** inside the percent/point reading). Say the digits you mean (`g+100%` → spoken `grabamomoyol`).
 
-Order: integer digits, optional **`ye`** + fractional digits, then **`yo`** or **`yu`**. **`yo`** / **`yu`** sit on **`ra`** / **`ru`** only. At most one **`yo`** or **`yu`** group in the number word; leave **`wa`** / **`wu`** off that word. Endings still apply (**-l** exact, **-m** about, **-n** conventional label, **-r** resume).
+Order: integer digits, optional **`ye`** + fractional digits, then **`yo`** or **`yu`**. **`yo`** / **`yu`** sit on **`ra`** / **`ru`** only. At most one **`yo`** or **`yu`** group in the number word; leave **`wa`** / **`wu`** off that word. Endings still apply (**-l** exact, **-m** about, **-n** named label, **-r** resume).
 
 In [preferred writing](number-markers.md#writing-preferred-shorthand): **`%`** → speech **`yo`**; **`%*`** → speech **`yu`** (sign still on **`ra`** / **`ru`**, written **`+`** / **`-`**).
 

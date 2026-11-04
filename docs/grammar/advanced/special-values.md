@@ -58,7 +58,7 @@ Same under `/z/` `/d/` `/b/` (`zrawal` = +∞ as subject; `drowul` = start-place
 | **-l** | Exact special value (default): +∞ / −∞ / last place / start place / arbitrarily small but finite / just short as in the form table |
 | **-m** on **`wa`∅** (`…em`) | **Arbitrarily large but finite** on scalars (`g~+e` / `g~-e`); on ordinals (`g~#e`) = **near last place** |
 | **-m** on **`wu`∅** (`…e-m`) | Soft / approximate small on scalars (`g~+e-`); *nearly* on **`ru`+`wu`∅** (`g~-e-`); on ordinals (`g~#e-`) = **near first place** |
-| **-n** | Conventional designation of that special (named ∞ symbol, official *last place* / *starting* title, …) |
+| **-n** | Named designation of that special (named ∞ symbol, official *last place* / *starting* title, …) |
 | **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that arbitrarily small amount again*; `g=-e-` = *that same hair-short amount again*) |
 
 #### Number as verb and adverb {#special-number-as-verb-and-adverb}

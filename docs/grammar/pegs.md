@@ -28,7 +28,7 @@ Vowels never count, so roots that differ only in their vowels spell the same num
 
 Longer words spell longer numbers:
 
-- A [dictionary word](/compounds#lexical-compounds) made of two roots counts its joining letter like any other consonant: `oheleboral` *doorbell* is 4817.
+- A [dictionary word](/compounds#dictionary-compounds) made of two roots counts its joining letter like any other consonant: `oheleboral` *doorbell* is 4817.
 - A word glued with a mid-word `x` reads each root in turn, and the `x` spells nothing: `zuwedaxubudal` *peanut butter* is 12, then 2.
 
 Number words (`gragel` *three*), pronouns and other grammar words are not pegs. Read them for what they say.
@@ -58,7 +58,7 @@ For a number with a decimal point, use two places: one for the whole part, one f
 
 ## Person, action, object {#person-action-object}
 
-To hold six digits in one picture, make a sentence with a subject, an object and a verb, each a two-digit root. Read the digits in the sentence's usual order: subject, object, verb.
+To hold six digits in one picture, make a sentence with a subject, an object and a verb, each a two-digit root. Read the digits in the sentence's default order: subject, object, verb.
 
 > `zodozel dubedel vabuvul.`
 > z-dog | d-pear | v-punch

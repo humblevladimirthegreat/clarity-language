@@ -90,7 +90,7 @@ The vowel picks the act. Its cues hang on the join leftover-list: **a** add a cl
 
 ### Word order for each act {#act-word-order}
 
-The first letter of each word already says its role, so any order of the body means the same thing. Each act still has a **usual order**. Use it: the act word is one short syllable, and if a listener misses it, the order still tells them which act you meant.
+The first letter of each word already says its role, so any order of the body means the same thing. Each act still has a **default order**. Use it: the act word is one short syllable, and if a listener misses it, the order still tells them which act you meant.
 
 > `zazozon dubogal vabuvul.`
 >
@@ -119,7 +119,7 @@ The first letter of each word already says its role, so any order of the body me
 Only a command starts with its verb. A question or prohibition whose act word gets lost sounds like a statement, never like an order to act.
 
 <!-- cheat-sheet: talking -->
-| Act | Usual order | Cue |
+| Act | Default order | Cue |
 |-----|-------------|-----|
 | statement | verb late: subject, object, verb | the claim builds up to the action |
 | question | verb second: one word, then the verb, then the rest | the verb steps forward to be checked |

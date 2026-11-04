@@ -35,7 +35,6 @@ A noun that specifies the event goes in the same stem, before the event and join
 A role compound has one part consonant, right after its scope vowel. It is never one piece of another compound.
 
 ### One time or a practice (`u` / `o`) {#one-time-or-a-practice}
-<a id="usual-role"></a>
 
 English *a teacher* says more than *someone who teaches*: teaching is that person's practiced role, often a job. Write **`o`** in the scope slot instead of **`u`**. (cue: **o** ≈ medium (a life they inhabit))
 

@@ -39,7 +39,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | someone's sake (*for Alazun's sake*, *good for Alazun*) | sake word + `/b/` | [Whose stake](/prescription#whose-stake) |
 | *my* belonging + sake (*my tent serves the physical sake*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](/sakes#personal-possession) |
 | duration (*for three hours*) | measure phrase | [Measure phrases](/numbers-applied#measure-phrases) |
-| frame one sentence (*as for Azozon*) | **`hehugom`** + `/b/` | [As-for](say-people-places.md#as-for) |
+| set the scene for one sentence (*as for Azozon*) | **`hehugom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 
 ### *to*
 
@@ -93,7 +93,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | equal degree (*as sleepy as*) | equative **`oe`** | [Equatives](/comparatives#equatives) |
 | falls short (*not as sleepy as*) | reverse rank **`ue`** | [Reverse rank](/comparative-arity#full-comparative-arity) |
 | most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`hodaxal`** + tie **`oe`** | [Every bar](/stance-bars#stance-bars) |
-| frame one sentence (*as for Azozon*) | **`hehugom`** + `/b/` | [As-for](say-people-places.md#as-for) |
+| set the scene for one sentence (*as for Azozon*) | **`hehugom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 | role one acts in (*as a teacher, I …*) | role compound on `/h/`: `hwozeduyol` | [The role you act in](/role-scope#capacity) |
 | not in that role (*not as a teacher*, off duty) | scope **`ue`** on `/h/`: `hwuozeduyol` | [The role you act in](/role-scope#capacity) |
 | resemblance (*walks as / like a duck*) | **`hewem`** + `/b/` | [Simile](/relations#similative) |
@@ -292,7 +292,7 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebe
 | *walking* (*a walking dog*, *Azozon is walking*) | the event root on `/ɡ/`: `dodozel gowurol` | [In progress](/predication#in-progress) |
 | *walking* after a thing root (*a sitting guard*) | a role compound with scope **`u`**: `dagayul gwuzehohel` (*a guard who sits*) | [Role compounds](/roles#role-compounds) |
 | *someone who teaches*, *whoever teaches* | a role compound with scope **`u`**: `zwuzeduyol` | [Role compounds](/roles#role-compounds) |
-| *a teacher*, *a fighter*, *a dog walker* (a usual role or job) | the role compound with scope **`o`**: `zwozeduyol` | [One time or a practice](/roles#one-time-or-a-practice) |
+| *a teacher*, *a fighter*, *a dog walker* (a practiced role or job) | the role compound with scope **`o`**: `zwozeduyol` | [One time or a practice](/roles#one-time-or-a-practice) |
 | *the one teaching* (this event) | the role compound on **-r**: `zwuzeduyor` | [This instance](/roles#this-instance-r) |
 | *often lies*, *usually walks* | a [restrictor](/restrictors): `huam`, `war` | [Always](/restrictors#always-hual) |
 | *this time*, *this once* (angry this time, lied this once) | **`thu`** on the root: `gonumuthul`, `vulamuthul` | [This episode](/label-seams#scope-occasion) |

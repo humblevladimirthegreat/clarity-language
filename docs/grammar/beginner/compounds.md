@@ -38,7 +38,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 **Not the same job as:** mid-word **`th`**. The [stance](clause.md#stance-th) letter joins pieces when the second piece is **your view** rather than more of the same thing, such as a sake and how it stands ([sakes](sakes.md): `guwathal`). **`x`** adds; **`th`** says from where you see it. (cue: **th** ≈ *think*)
 
 ### Words you look up, not build
-<a id="lexical-compounds"></a>
+<a id="dictionary-compounds"></a>
 
 English *bedroom*, *doorbell*, and *textbook* feel like one word. Ageben lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *door* and *bell*.
 

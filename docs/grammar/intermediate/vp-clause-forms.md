@@ -102,7 +102,7 @@ A verb that has its own object takes no shared object, and a verb that has its o
 
 A [stance](/clause#stance-th) `/th/` word and an [intention adverb](/clause#intention-adverbs) are never item words, wherever they sit: like any stance word, each is about the whole claim. A `bl-` word right after an `/h/`, `/ɡ/`, or `/th/` word still completes that word.
 
-With no subject, a statement with a shared object starts with its verbs (`vugudol vagedal val dabedal`), which is the usual order for a command. Name the subject when the act could be misheard.
+With no subject, a statement with a shared object starts with its verbs (`vugudol vagedal val dabedal`), which is the default order for a command. Name the subject when the act could be misheard.
 
 A rank join on verb phrases puts the acts in order of priority, so the earlier act is the one preferred: *would rather walk than run*.
 

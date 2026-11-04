@@ -16,7 +16,7 @@ English *as for X* or *regarding X* names who or what the sentence is about, eve
 >
 > "As for Azozon, Alazun sees a cat."
 
-**Compare with:** *as for* frames this one sentence and leaves the talk's topic alone. English *now, about Azozon* sets the [topic](/topic#topic) from here on (`xazozon`).
+**Compare with:** *as for* sets the scene for this one sentence and leaves the talk's topic alone. English *now, about Azozon* sets the [topic](/topic#topic) from here on (`xazozon`).
 
 ### Which noun, with resume and kinds
 <a id="which-noun-intermediate"></a>
@@ -37,7 +37,7 @@ Beginner already used two sentences for English *who / that / which*. Prefer [re
 >
 > "Azozon sees a dog in a bank. The dog runs."
 
-A place, tool, or *of*-relation on the noun is still an extra-noun [hook](/hooks#extra-noun) or hosted `/ɡ/` + `/b/` (*the guard [in](/hooks#extra-noun) a bank*, *a book written [with a hammer](/hooks#extra-noun)*). A one-place role (*a guard who sits*, *a place where someone sleeps*) is a [role compound](/roles#role-compounds) on `/ɡ/` with a non-resume ending; add **`the`** for a usual role (*a teacher*), the same pattern as *is a teacher*. Resume **-r** on that compound is **this instance** (*the one teaching*), not the occupation. A noun in the middle of an act (*a fighting guard*) is the plain event root on `/ɡ/` ([in progress](/predication#in-progress)).
+A place, tool, or *of*-relation on the noun is still an extra-noun [hook](/hooks#extra-noun) or hosted `/ɡ/` + `/b/` (*the guard [in](/hooks#extra-noun) a bank*, *a book written [with a hammer](/hooks#extra-noun)*). A one-place role (*a guard who sits*, *a place where someone sleeps*) is a [role compound](/roles#role-compounds) on `/ɡ/` with a non-resume ending; add **`the`** for a practiced role (*a teacher*), the same pattern as *is a teacher*. Resume **-r** on that compound is **this instance** (*the one teaching*), not the occupation. A noun in the middle of an act (*a fighting guard*) is the plain event root on `/ɡ/` ([in progress](/predication#in-progress)).
 
 > `zazozon dagayul gwuzehohel vayebel.`
 >
@@ -1117,7 +1117,7 @@ These three English nouns each hide two jobs. *Role* is the function someone pla
 
 | English | Ageben | Reading |
 |---------|--------|---------|
-| *role* (the function someone plays) | `zalazun gwozeduyol.` | the usual role: role compound with **`the`** on `/ɡ/` |
+| *role* (the function someone plays) | `zalazun gwozeduyol.` | the practiced role: role compound with **`the`** on `/ɡ/` |
 | *title* (the name of a work) | `d@[onuren alazun]` | cite with **`@`** |
 | *title* (a claim to own) | `zegunum` | *ownership*, the abstract sense of `egunu` |
 | *address* (speak to someone) | `yalazun.` | call them with `/y/` + their name |

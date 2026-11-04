@@ -80,9 +80,9 @@ A dictionary compound joins its two roots with the left root's ending (**-l** ev
 <!-- cheat-sheet: word-shape-clause -->
 | Ageben | English | Stage |
 |--------|---------|-------|
-| [`zoheleboral`](/compounds#lexical-compounds) | *doorbell* | B |
-| [`zuzahalanal`](/compounds#lexical-compounds) | *textbook* | B |
-| [`zerulalogobal`](/compounds#lexical-compounds) | *raincoat* | B |
+| [`zoheleboral`](/compounds#dictionary-compounds) | *doorbell* | B |
+| [`zuzahalanal`](/compounds#dictionary-compounds) | *textbook* | B |
+| [`zerulalogobal`](/compounds#dictionary-compounds) | *raincoat* | B |
 | [`zahuyayel`](/root-tails#tail-suffixes) | *friend* (*hug* + a person tail, no second root) | A |
 | [`zoyahehal`](/root-tails#tail-suffixes) | *bedroom* (*bed* + a place tail) | A |
 
@@ -139,7 +139,7 @@ Calls and sentence glue use [`/y/`](/speech-moves) and [`/x/`](/dependents).
 | [`/h/` and `/th/` go anywhere](/clause#adverbs-h) | `zodozel hadurom vowurol.` | *A dog walks hastily.* | B |
 | [Leave out the subject](/left-bound#no-subject): nobody is named as the doer | `dazozon vayebel.` | *Azozon was seen.* | I |
 | [Moving words changes nothing](/clause#direct-object-d) | `dogozel zodozel vayebel.` | *A dog sees a cat.* | B |
-| [Usual order by speech act](/speech-moves#act-word-order): question verb second, command verb first, prohibition verb late | `yel zazozon vabuvul dubogal.` · `yol vabuvul dubogal.` · `yul dubogal vabuvul.` | *Does Azozon punch the box?* · *Punch the box!* · *Don't punch the box.* | B |
+| [Default order by speech act](/speech-moves#act-word-order): question verb second, command verb first, prohibition verb late | `yel zazozon vabuvul dubogal.` · `yol vabuvul dubogal.` · `yul dubogal vabuvul.` | *Does Azozon punch the box?* · *Punch the box!* · *Don't punch the box.* | B |
 | [Fill-ask: blank first](/questions#fill-ask) | `yel dar zazozon vayebel.` | *What does Azozon see?* | B |
 | [Contrast one word with `&`](/emphasis#english-emphasis) | `&zazozon dogozel vayebel.` · `zazozon &dogozel vayebel.` · `zazozon dogozel &vayebel.` | *It was Azozon who saw the cat.* · *It's a cat that Azozon sees.* (not something else) · *Azozon sees the cat.* (rather than doing something else to it) | A |
 | [Cleft with no contrast: plain sentence](/emphasis#english-emphasis) | `zazozon dogozel vayebel.` | *It's a cat that Azozon sees.* (answering *what?*) | A |
@@ -247,4 +247,4 @@ Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 | `zazozon vowurol.` *Azozon walks* ([the verb](/clause#who-acts-and-the-action)) | | `zazozon gowurol.` *Azozon is walking* ([under way](/predication#in-progress)) |
 | `dazozon vayebel.` *Azozon was seen* ([no subject named](/left-bound#no-subject)) | | `zumen` *someone did it* ([an unnamed someone](/pronouns#special-pronouns)) |
 | `dazozol` *a swan* ([-l](/proper-names#proper-name--n)) | | `dazozoln` *an Azozon* ([-ln: one of the name](/proper-names#name-instance--ln)) |
-| `zoyahehal` *bedroom* ([a dictionary word](/compounds#lexical-compounds)) | | `zuwedaxubudal` *peanut butter* ([glued with `x`](/compounds#compound-vs-separate)) |
+| `zoyahehal` *bedroom* ([a dictionary word](/compounds#dictionary-compounds)) | | `zuwedaxubudal` *peanut butter* ([glued with `x`](/compounds#compound-vs-separate)) |

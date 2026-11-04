@@ -515,7 +515,7 @@ function enforceDegreeNumber(word: LexWord, stem: NumberStem): void {
   if (place === undefined || place < 2) throw new ConstructionError("degreeNumber", word.raw);
 }
 
-/** A `/w/` ordinal (`wrodol`) is a place on a scale: it needs a single-name `zol` / `zuol` frame (comparatives.md § superlatives). */
+/** A `/w/` ordinal (`wrodol`) is a place on a scale: it needs the superlative shape, a single name before `zol` / `zuol` (comparatives.md § superlatives). */
 function isRankPlace(word: LexWord): boolean {
   return word.pos === "w" && word.family.kind === "number" && isRankMarker(word.family.stem.marker);
 }
@@ -819,7 +819,7 @@ function enforceUnitList(units: Unit[], tables: ClassifyTables): void {
 }
 
 /** The AST checks as one handler set over the walk ([ast-walk.ts](./ast-walk.ts)). */
-function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; framed: Set<LexWord> }): Visitor {
+function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; shaped: Set<LexWord> }): Visitor {
   return {
     // *Respectively* (`wazem`) sits only right before a `/z/` `/d/` `/b/` join word (joins.md § Respectively).
     word(word, slot) {
@@ -837,7 +837,7 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
         const lone = part.items.length === 1 && (series(join) === "o" || series(join) === "uo");
         for (const item of part.shared) {
           if (isScaleShared(item)) continue;
-          if (lone) for (const mod of item.modifiers) places.framed.add(mod);
+          if (lone) for (const mod of item.modifiers) places.shaped.add(mod);
         }
       }
     },
@@ -972,12 +972,12 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
     enforceForcePair(left);
     enforceTurnWordMods(left);
   }
-  const places = { seen: new Set<LexWord>(), framed: new Set<LexWord>() };
+  const places = { seen: new Set<LexWord>(), shaped: new Set<LexWord>() };
   visitResult(result, structureVisitor(tables, places));
   visitResult(result, { enter: enforceTagHost });
   enforceSaySpeaker(result);
   enforceGlLeans(result);
-  for (const word of places.seen) if (!places.framed.has(word)) throw new ConstructionError("degreePlaceFrame", word.raw);
+  for (const word of places.seen) if (!places.shaped.has(word)) throw new ConstructionError("degreePlaceShape", word.raw);
   for (const { bodies } of result.utterances) for (const body of bodies) enforceVerbPredicate(body.clause.units);
   for (const bind of result.resolve?.anaphors ?? []) {
     if (bind.kind === "pointer") enforcePointer(bind);

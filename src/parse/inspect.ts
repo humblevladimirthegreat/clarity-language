@@ -399,11 +399,11 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   if (word.hookCompound) {
     return { line: "hook compound", href: "hooks.html#hook-compounds" };
   }
-  if (word.lexicalCompound) {
-    return { line: "lexical compound", href: "compounds.html#lexical-compounds" };
+  if (word.dictionaryCompound) {
+    return { line: "dictionary compound", href: "compounds.html#dictionary-compounds" };
   }
   if (word.potentialCompounds?.length) {
-    return { line: "lexical compound (unlisted)", href: "compounds.html#lexical-compounds" };
+    return { line: "dictionary compound (unlisted)", href: "compounds.html#dictionary-compounds" };
   }
   if (family.kind === "x" && family.xFamily === "compound") {
     return { line: "ordinary compound", href: "compounds.html#families-by-shape" };

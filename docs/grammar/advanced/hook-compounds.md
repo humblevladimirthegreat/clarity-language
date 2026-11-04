@@ -62,7 +62,7 @@ An abstract object keeps the hook's picture, as on the [free hook](/abstract-lan
 
 Other roots fuse the same way: `vezuyoluel` *contradict* is *tell* fused with *against*. The dictionary lists these words as citations (`owurolul`, not `vowurolul`).
 
-**Compare with:** `vowurol ul bawahol` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* never fuse; they are always separate hook words. A [lexical compound](/compounds#lexical-compounds) like *doorbell* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
+**Compare with:** `vowurol ul bawahol` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* never fuse; they are always separate hook words. A [dictionary compound](/compounds#dictionary-compounds) like *doorbell* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
 
 ### Hook prefixes (hook + `x` + stem) {#hook-prefixes}
 

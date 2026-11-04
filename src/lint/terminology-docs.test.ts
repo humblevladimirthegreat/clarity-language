@@ -16,7 +16,7 @@ const SAKES = [
 ].join("\n");
 
 function terminology(rows: string[], body = ""): string {
-  return ["# Terminology", "", "### Mood tags", "", "| Label | Gloss | Example | Teach |", "|---|---|---|---|", ...rows, "", body].join("\n");
+  return ["# Terminology", "", "### Mood labels", "", "| Label | Gloss | Example | Teach |", "|---|---|---|---|", ...rows, "", body].join("\n");
 }
 
 function lint(markdown: string, labels: string[]) {

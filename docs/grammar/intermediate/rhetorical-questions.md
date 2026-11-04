@@ -6,7 +6,7 @@ band: intermediate
 
 ### Rhetorical question {#rhetorical}
 
-A **rhetorical question** sounds like a question, but you are not waiting for a reply: you think the answer is obvious. It [stacks two act words](speech-acts.md#stacked-acts): a statement word first, because a claim is what you really make, then a question word for how it sounds. The body is an ordinary yes/no question or fill-ask, in a statement's usual order.
+A **rhetorical question** sounds like a question, but you are not waiting for a reply: you think the answer is obvious. It [stacks two act words](speech-acts.md#stacked-acts): a statement word first, because a claim is what you really make, then a question word for how it sounds. The body is an ordinary yes/no question or fill-ask, in a statement's default order.
 
 > `yal yel zar vegemal.`
 >
@@ -43,7 +43,7 @@ The listener may still reply, but no reply is owed.
 
 ### Quiz {#quiz}
 
-A **quiz** asks something you already know, because you want the other person to say it. Put the question word first, because a question is what you really ask, then the statement word: you already hold the answer. The body is an ordinary yes/no question or fill-ask, in a question's usual order.
+A **quiz** asks something you already know, because you want the other person to say it. Put the question word first, because a question is what you really ask, then the statement word: you already hold the answer. The body is an ordinary yes/no question or fill-ask, in a question's default order.
 
 > `yel yal ? zar vabuvul dubogal.`
 >

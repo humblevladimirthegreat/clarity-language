@@ -55,7 +55,7 @@ describe("inspectText", () => {
     assert.equal(token.gloss, "unknown root");
   });
 
-  it("shows potential lexical compounds for an unlisted stem", () => {
+  it("shows potential dictionary compounds for an unlisted stem", () => {
     const result = inspectText("zoyahelozezul.", tables);
     const token = result.tokens[0];
     assert.equal(token?.kind, "word");

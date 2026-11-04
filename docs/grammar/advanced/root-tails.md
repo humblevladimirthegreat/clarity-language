@@ -52,7 +52,7 @@ In every kind but feelings, the **middle vowel** usually says how big the thing 
 
 This is a hint, not a rule: a few roots take another vowel to stay apart from a neighbor. Feelings have no size, so a feeling's middle vowel carries no meaning.
 
-A [dictionary word](/compounds#lexical-compounds) made of two roots ends in its head root, so it keeps the head's tail. A few dictionary words end in a bare tail instead of a second root.
+A [dictionary word](/compounds#dictionary-compounds) made of two roots ends in its head root, so it keeps the head's tail. A few dictionary words end in a bare tail instead of a second root.
 
 ### Tail suffixes {#tail-suffixes}
 

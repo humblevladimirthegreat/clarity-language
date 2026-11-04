@@ -66,7 +66,7 @@ Clock and date together:
 | **Month or year alone** | A month is an ordinal on **`amalo`** *month*, counting from January, the same way as weekdays: *March* is the third month (`zamalom grogel`). A year is a label on **`ovuva`** *year* (`zovuvam g_1962`). To place an event in one, put that noun in `/b/` after **`herom`** *during*. |
 | **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, or a signed offset (*three hours ago* / *in three hours*). There is no past or future ending. An amount of time (*for 3 days*) is a relation word plus a measure phrase. |
 
-Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** with digits repeats a clock time or date already mentioned. Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
+Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** named schedule or date; **-r** with digits repeats a clock time or date already mentioned. Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 
 For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`oel`** *toward* ([extra nouns](extra-noun-hooks.md#extra-noun-intermediate)). Right after an `ul` extra noun, `oel` and its `/b/` close the pair: `ul X oel Y` is one unit, *from X to Y*. It works for any two endpoints, not only times.
 

@@ -410,4 +410,4 @@ The noun after a *for* hook is an extra noun, so it takes `/b/`, not `/d/`.
 - Stacked discourse, *here* / *there*, and resume hooks: [discourse-hooks.md](/discourse-hooks)
 - Prefix-less citation: [word-endings.md](word-endings.md#citation-forms)
 - Titled phrases: [word-endings.md](/proper-names#titled-phrases)
-- Dictionary compounds without **`x`**: [compounds.md](compounds.md#lexical-compounds)
+- Dictionary compounds without **`x`**: [compounds.md](compounds.md#dictionary-compounds)

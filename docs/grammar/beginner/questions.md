@@ -11,7 +11,7 @@ You can ask for *yes* or *no*, or you can leave a blank for *who* / *what* (a **
 
 ### Ask (`yel` / `yem`) {#question}
 
-A **question** asks for a reply instead of stating a fact. English marks it by moving words around (*Azozon walks* → *Does Azozon walk?*). Ageben marks it with the act word **`yel`** at the start of the turn, followed by the body (subject, verb, and so on). Every word keeps the form it would have in a statement. Only the usual order changes: the verb comes [second](speech-moves.md#act-word-order), right after the subject.
+A **question** asks for a reply instead of stating a fact. English marks it by moving words around (*Azozon walks* → *Does Azozon walk?*). Ageben marks it with the act word **`yel`** at the start of the turn, followed by the body (subject, verb, and so on). Every word keeps the form it would have in a statement. Only the default order changes: the verb comes [second](speech-moves.md#act-word-order), right after the subject.
 
 Soft **`yem`** asks the same question more gently (wondering rather than pressing). End a written question with a period, like any sentence.
 

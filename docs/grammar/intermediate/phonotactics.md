@@ -18,7 +18,7 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Root(s) **V(CV)+** | content | start with a vowel; each later consonant starts a new syllable |
 | Mid-word `x` | productive compound seam | joins two roots inside one word |
 | Mid-word `th` | stance seam | joins a sake to its stance vowel ([sakes](/sakes)) |
-| Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`oyaheha` *bedroom*) |
+| Dictionary stem (no `x`) | dictionary compound | one long simple-looking root (`oyaheha` *bedroom*) |
 | `-l` / `-m` / `-n` / `-r` | [word ending](/word-endings) | audible end of the content word |
 | Optional `-x` | [plural](/plurality) after the ending | word-final `-lx` / `-mx` / `-nx` / `-rx` / `-lnx` (letter `x`) |
 | Stand-in `-rl` / `-rm` | [dependent clauses](/dependents#dependent-clauses) | word-final `rl` / `rm` |

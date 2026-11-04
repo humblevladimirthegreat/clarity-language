@@ -68,7 +68,7 @@ export type DetectorSuggestion = DetectorHit & Exampled & { kind: "detector"; ti
 export type EntrySuggestion = HookPhrase & Exampled & { kind: "entry"; tier: "grammar"; form: string; english: string; link: string; band?: Band };
 /**
  * A role compound for a doer noun (*teacher*, *dog walker*): the `route` tier, since the lexicon
- * leaves doers out on purpose. `usual` adds **`tho`** (*a teacher*, the usual role); without it
+ * leaves doers out on purpose. `practiced` adds **`tho`** (*a teacher*, the practiced role); without it
  * the word is *someone who teaches*.
  */
 export type RoleSuggestion = {
@@ -76,7 +76,7 @@ export type RoleSuggestion = {
   tier: "route";
   /** The spelled role compound. */
   form: string;
-  usual: boolean;
+  practiced: boolean;
   /** The doer noun, singular (*teacher*). */
   noun: string;
   /** The English verb under the doer noun, and the event root it maps to. */
@@ -329,21 +329,21 @@ function roleSuggestions(data: HelperData, t: TaggedTerm, role: string | undefin
     if (!ending) continue;
     const stems = [...(modRoot ? [{ stem: `${modRoot.form}x${root.form}`, modifier: { english: modifier!.normal, root: modRoot.form } }] : []), { stem: root.form }];
     for (const { stem, modifier: mod } of stems) {
-      for (const usual of [true, false]) {
-        const form = `${role}w${usual ? "o" : "u"}z${stem}${ending}`;
+      for (const practiced of [true, false]) {
+        const form = `${role}w${practiced ? "o" : "u"}z${stem}${ending}`;
         if (data.wordParses && !data.wordParses(form)) continue;
         out.push({
           kind: "role",
           tier: "route",
           form,
-          usual,
+          practiced,
           noun: t.lemma,
           verb,
           root: root.form,
           emoji: root.emoji,
           sense: root.sense,
           ...(mod ? { modifier: mod } : {}),
-          link: usual ? "roles.md#one-time-or-a-practice" : "roles.md#role-compounds",
+          link: practiced ? "roles.md#one-time-or-a-practice" : "roles.md#role-compounds",
         });
       }
     }

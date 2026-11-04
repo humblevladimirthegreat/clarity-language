@@ -66,14 +66,14 @@ Each number word is one kind of number, set by its marker. In preferred writing,
 
 ### Number endings {#number-endings}
 
-Beginner already used exact **-l**. The other endings mark *about*, a conventional title, or a repeat of a number you already gave. Speech keeps the ending letter. Shorthand writing shows the ending as a mark right after the role letter (the same marks as on [spans](/spans)).
+Beginner already used exact **-l**. The other endings mark *about*, a named title, or a repeat of a number you already gave. Speech keeps the ending letter. Shorthand writing shows the ending as a mark right after the role letter (the same marks as on [spans](/spans)).
 
 <!-- cheat-sheet: numbers -->
 | Written | Spoken | Use | Cue |
 |---------|--------|-----|-----|
 | *(none)*: `g+3`, `g+` | **-l** | exact, newly stated (default) | **-l** stands behind the amount |
 | **`~`** after PoS: `g~+3`, `g~+` | **-m** | approximate / non-literal (“about N”) | **-m** leaves the hold open |
-| **`@`** after PoS: `g@#2` | **-n** | conventional designation (titles, official labels, *the Second…*) | **-n** names the number |
+| **`@`** after PoS: `g@#2` | **-n** | named designation (titles, official labels, *the Second…*) | **-n** names the number |
 | **`=`** after PoS: `g=+3`, `g=#2`, `d=_12` | **-r** | resume of a previously stated number, code, or rank (at least one digit) | **-r** points back |
 
 A resume needs **at least one digit**: `grager` = *that three again*; `grodor` = *that second one again*. Use the same marker as the number you repeat. Digitless **-r** (`grar`) is not a resume: like a standalone join **-r**, it is *some number* in a statement and *which number?* in a question. **`=`** is never combined with **`~`** or **`@`**.
@@ -100,10 +100,10 @@ These are the same marks, with the same meanings, as on [spans](/spans#writing):
 |------|---------------|-----|----------|
 | *(none)* | **-l** | exact (default) | `g+3`, `g+`, `g#2`, `d_12` |
 | **`~`** | **-m** | approximate / soft | `g~+3`, `g~+`, `g~+12`, `g~#2` |
-| **`@`** | **-n** | conventional | `g@#2`, `g@_12` |
+| **`@`** | **-n** | named | `g@#2`, `g@_12` |
 | **`=`** | **-r** | resume (digit) / blank | `g=+3`, `g=#2`, `g=+` |
 
-A hedged conventional number (both **`@`** and **`~`**) is written with **`@`** only, as on spans. **`=`** is never combined with another mark. A spelled word shows its ending as the last letter (`gragel`, `gram`) instead of a mark.
+A hedged named number (both **`@`** and **`~`**) is written with **`@`** only, as on spans. **`=`** is never combined with another mark. A spelled word shows its ending as the last letter (`gragel`, `gram`) instead of a mark.
 
 #### Marker (not written as `r`+V)
 

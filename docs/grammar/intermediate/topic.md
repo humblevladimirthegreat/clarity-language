@@ -63,7 +63,7 @@ The topic pronoun is the topic itself, so it is never a topic word or a resume: 
 
 A topic pronoun with no topic set is not a sentence. On **-l** and **-m** the star root keeps its ordinary senses: `zalel` *a star*, `zalem` *visibility*. **-x** adds associates: `zalenx` *the topic and associates*.
 
-*As for* frames one sentence and leaves the topic alone:
+*As for* sets the scene for one sentence and leaves the topic alone:
 
 > `xazozon zalen vowurol. hehugom blalazun zodozel veruvol. zalen vehohel.`
 >
@@ -133,7 +133,7 @@ A [dependent](/dependents#dependent-clauses) is the sentence after a stand-in (`
 
 | Want | Use |
 |------|-----|
-| Content about X, in one sentence | `hehugom` + `/b/` *as for* inside the dependent: a frame for that clause only, no reset |
+| Content about X, in one sentence | `hehugom` + `/b/` *as for* inside the dependent: sets the scene for that clause only, no reset |
 | Change the topic, then report | the `/x/` word first: `xalazun zazozon vezuyol darl zalen vowurol.` *Now, about Alazun: Azozon says that Alazun walks.* |
 | Report someone's own topic change | quote their wording |
 
@@ -151,7 +151,7 @@ To ask what the talk is about, ask *which topic?*: the fill-ask blank `zar`, the
 >
 > "Which topic?" / "What are we talking about?"
 
-**Compare with:** English *topic* covers several jobs, and Ageben keeps them apart. The discourse topic is `/x/`. A sentence frame is `hehugom` *as for*. `&` contrasts one phrase ([tone marks](tone-marks.md#tone-marks)). `zal` / `zom` / `zol` rank among others. Only `/x/` sets the topic.
+**Compare with:** English *topic* covers several jobs, and Ageben keeps them apart. The discourse topic is `/x/`. Setting the scene for one sentence is `hehugom` *as for*. `&` contrasts one phrase ([tone marks](tone-marks.md#tone-marks)). `zal` / `zom` / `zol` rank among others. Only `/x/` sets the topic.
 
 ### Practice {#intermediate-practice}
 

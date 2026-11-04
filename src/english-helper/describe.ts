@@ -18,9 +18,9 @@ function thirdPerson(verb: string): string {
   return `${verb}s`;
 }
 
-/** *usual role (a dog walker)* or *someone who walks dogs*. */
+/** *practiced role (a dog walker)* or *someone who walks dogs*. */
 export function roleReading(s: RoleSuggestion): string {
-  return s.usual ? `usual role (a ${s.modifier ? `${s.modifier.english} ` : ""}${s.noun})` : `someone who ${thirdPerson(s.verb)}${s.modifier ? ` ${s.modifier.english}s` : ""}`;
+  return s.practiced ? `practiced role (a ${s.modifier ? `${s.modifier.english} ` : ""}${s.noun})` : `someone who ${thirdPerson(s.verb)}${s.modifier ? ` ${s.modifier.english}s` : ""}`;
 }
 
 /** The clause features the detectors read, as short labels: `past · modal could · negated · statement`. */

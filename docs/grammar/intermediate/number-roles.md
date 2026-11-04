@@ -60,7 +60,7 @@ English *Three!* naming a score or count is **`yrel`**. *Three more!* (increment
 
 Worked examples: `y_3` *Three!*; `yragel` *Three more!*; `yrugel` *Three short!*; `yrobal` *First!*.
 
-Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call name, **-r** resume a prior shout’s value, with a digit).
+Endings still apply (**-m** fuzzy *about three more!*, **-n** named call, **-r** resume a prior shout’s value, with a digit).
 
 **Compare with:** statement / question / command words in the [speech-act section](/firm-soft#speech-act).
 
@@ -84,7 +84,7 @@ Endings still apply (**-l** newly stated item, **-r** *as in (N) above* (with a 
 #### Number as degree (by marker) {#number-as-degree}
 <a id="place-on-a-scale"></a>
 
-On `/w/`, a number sits in the degree slot right before an adjective or adverb ([clause](/clause#adjective-detail-w)). Only the ordinal marker gives a new reading: **`w#N`** (N from 2) is the **place on that scale**, in a superlative frame (`zazozon zol wrodol gelazem` *Azozon is the second biggest*). A count or a fraction on `/w/` (`w+3`) is not used: a factor goes on `/h/` (`hradol` *twice*, factor).
+On `/w/`, a number sits in the degree slot right before an adjective or adverb ([clause](/clause#adjective-detail-w)). Only the ordinal marker gives a new reading: **`w#N`** (N from 2) is the **place on that scale**, in superlative shape (`zazozon zol wrodol gelazem` *Azozon is the second biggest*). A count or a fraction on `/w/` (`w+3`) is not used: a factor goes on `/h/` (`hradol` *twice*, factor).
 
 #### Number as stance (by marker) {#number-as-stance-by-marker}
 <a id="likelihood"></a>
@@ -108,7 +108,7 @@ On `/w/`, a number sits in the degree slot right before an adjective or adverb (
 
 For *30% unlikely*, give the likelihood of the claim itself (`th+70`). A minus with digits (`th-N`) and an end-relative rank (`th#-N`) are not used, and neither is `th#1`: first-hand is a channel word.
 
-Endings still apply: **-m** *about* that likelihood (`th~+70` *roughly 70%*), **-n** a conventional level (`th@+95` *at the 95% confidence level*), **-r** *the same likelihood as before* (`th=+70`); digitless `thrar` asks *how likely?* under question, and `thror` asks *how many hands?*
+Endings still apply: **-m** *about* that likelihood (`th~+70` *roughly 70%*), **-n** a named level (`th@+95` *at the 95% confidence level*), **-r** *the same likelihood as before* (`th=+70`); digitless `thrar` asks *how likely?* under question, and `thror` asks *how many hands?*
 
 ### Practice {#intermediate-practice}
 

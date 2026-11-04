@@ -83,7 +83,7 @@ You can also say:
 | **`halam blarl`** | *after* | `alal` *sand* | ⌛: the sand has already run through |
 | **`hovam blarl`** | *so that* / *in order to* | `oval` *goal* | 🥅: you act so the shot counts |
 
-A command or request makes no claim, so an *if* pole on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Ageben keeps the usual order, with **`blarl`** last.
+A command or request makes no claim, so an *if* pole on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Ageben keeps the default order, with **`blarl`** last.
 
 > `yol vowurol thohem blarl zalazun vehohel.`
 >

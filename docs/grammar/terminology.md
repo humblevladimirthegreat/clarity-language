@@ -8,7 +8,7 @@ This is not a dictionary of roots. For word senses, use the [Lexicon](lexicon.md
 
 SMALLCAPS tags and series names as the lessons print them.
 
-### Mood tags
+### Mood labels
 
 SMALLCAPS labels as morph lines print them: psychological moods, evidentials, emotion-compose pieces, and span / island / name groups. Mood words are [stance](#stance) `/th/`, not ordinary [adverb](#adverb) `/h/`. Each example is a form from the teaching page.
 
@@ -116,7 +116,7 @@ Ordinary manner `/h/`.
 
 [Clause](/clause#adverbs-h)
 
-**Compare with:** [mood tags](#mood-tags) are closed psychological [stance](#stance) `/th/`, not `/h/`.
+**Compare with:** [mood labels](#mood-labels) are closed psychological [stance](#stance) `/th/`, not `/h/`.
 
 ### Ambient magnitude
 
@@ -138,7 +138,7 @@ How many items sit before a join: **list** (2+), **single-item** (1), **standalo
 
 ### As-for
 
-Complex `/h/` + `/b/` (**`hehugom`**) *as for X*: a frame for one sentence.
+Complex `/h/` + `/b/` (**`hehugom`**) *as for X*: sets the scene for one sentence.
 
 [People and places](say-people-places.md#as-for)
 
@@ -285,19 +285,17 @@ Same-speech-act forward motion.
 
 **Compare with:** a [sentence linker](#sentence-linker) is the *therefore / however* subclass of continue, and a [topic](#topic) word is the *now, about X* subclass.
 
-### Conventional (number **-n**)
-
-Number ending **-n**.
-
-[Number markers and endings](/number-markers#number-endings)
-
-**Compare with:** content **-n** is [named](#concrete-abstract-named-resume). Phrase join **-n** is a [named list](#named-list). Clause join **-n** is a [sequence](#sequence).
-
 ### Cross-role recast
 
 Resume with a different PoS letter than the antecedent.
 
 [Pronouns](/pronouns)
+
+### Default order
+
+The word order a body takes from its speech act: verb late in a statement or prohibition, verb second in a yes/no question, verb first in a command, blank first in a fill-ask. Any other order means the same.
+
+[Speech moves](/speech-moves#act-word-order), [Questions](/questions#fill-ask)
 
 ### Dependent clause
 
@@ -319,7 +317,7 @@ Advanced free-number specials (`+e`, `-e-`, `+0e`, …). **Just short** is free 
 
 [Infinity, zero, and hyperbole](/special-values#special-values), [just short](/special-values#just-short)
 
-**Compare with:** [quasi](#quasi) is the numeric prefix `-e-xROOT`. **NOTIONAL** is the as-if [mood](#mood-tags), not a number.
+**Compare with:** [quasi](#quasi) is the numeric prefix `-e-xROOT`. **NOTIONAL** is the as-if [mood](#mood-labels), not a number.
 
 ### Distributive
 
@@ -419,7 +417,7 @@ Mid-word **`th`** plus a vowel on a content root, or the vowel right after **`w`
 
 [Label seams](/label-seams#label-scope)
 
-**Compare with:** [restrictor](#restrictor) names the occasions, not the kind of claim. [Usual role](#usual-role) is practiced-role **`o`** on a role compound.
+**Compare with:** [restrictor](#restrictor) names the occasions, not the kind of claim. [Practiced role](#practiced-role) is **`o`** on a role compound.
 
 ### Locative relation
 
@@ -475,6 +473,12 @@ Speech-act ending **-l** vs **-m**.
 
 [Firm and soft](/firm-soft#speech-act)
 
+### Fit cue
+
+Why a series reuses a parent scale’s leftover-logic or cell logic, in one affirmative sentence. On a scale, the fit cue is that leftover-logic or cell logic itself. Cell cues stay in Cue columns.
+
+[Vowels cheat sheet](/cheat-sheets/vowels), [consonants cheat sheet](/cheat-sheets/consonants)
+
 ### Forecast
 <a id="forecast-source"></a>
 
@@ -493,12 +497,6 @@ A named citation is a hello (`azozon.`). Add mid-word **`x`** plus **`a`** / **`
 **MAY** find-out / who-knows endings / **NOTIONAL** play endings.
 
 [Knowing](/knowing#may-hold)
-
-### Hang cue
-
-Why a series reuses a parent scale’s leftover-logic or cell logic, in one affirmative sentence. On a scale, the hang cue is that leftover-logic or cell logic itself. Cell cues stay in Cue columns.
-
-[Vowels cheat sheet](/cheat-sheets/vowels), [consonants cheat sheet](/cheat-sheets/consonants)
 
 ### Holder
 
@@ -616,6 +614,14 @@ A lone `/th/` met word is thanks (*my sake is met*). *Sorry* is unmet plus a `bl
 
 [Thanks and sorry](/thanks-and-sorry#thanks-sorry)
 
+### Named (number **-n**)
+
+Number ending **-n**: the number as a name or title (*the Second*, an official label).
+
+[Number markers and endings](/number-markers#number-endings)
+
+**Compare with:** content **-n** is the same [named](#concrete-abstract-named-resume) cell on a content word. Phrase join **-n** is a [named list](#named-list). Clause join **-n** is a [sequence](#sequence).
+
 ### Named handle
 
 Short **-n** label for a long title.
@@ -682,7 +688,7 @@ Ending **-ln** (span mark **`^@`**): one thing a name applies to, such as one un
 
 [Names and titles](/proper-names#name-instance--ln)
 
-### Ordinary compound / lexical compound
+### Ordinary compound / dictionary compound
 
 FIELD × KIND with mid-word **`x`**; closed stem with join letter and no `x`.
 
@@ -709,6 +715,12 @@ Where a consonant sits picks its letter job: first, last, or mid-word. Same lett
 Closed `/y/` particles **`yaol` / `yuol` / …**.
 
 [Questions](/questions#polar-stance)
+
+### Practiced role
+
+A role compound with scope **`o`** after its **`w`** (`zwozeduyol`): the role as the office they inhabit (*a teacher*). With scope **`u`**, a role compound makes no claim about how often.
+
+[Role compounds](/roles#one-time-or-a-practice)
 
 ### Preference standing
 
@@ -795,7 +807,7 @@ Role letter + **`w`** + scope vowel + part consonant + stem (`zwuzeduyol`). The 
 
 [Role compounds](/roles#role-compounds)
 
-**Compare with:** *a guard who sits* is this stem on `/ɡ/` with a non-resume ending, and *teacher* takes scope **`e`** for the usual role ([which noun, with resume and kinds](say-people-places.md#which-noun-intermediate)). Resume **-r** is *the one teaching* (this instance), not the usual role.
+**Compare with:** *a guard who sits* is this stem on `/ɡ/` with a non-resume ending, and *teacher* takes scope **`e`** for the practiced role ([which noun, with resume and kinds](say-people-places.md#which-noun-intermediate)). Resume **-r** is *the one teaching* (this instance), not the practiced role.
 
 ### Role pointer
 
@@ -817,7 +829,7 @@ The last two letters of a root: a consonant for the kind of thing and a vowel fo
 
 ### Scale
 
-A sibling parent map with no parent of its own. On **a o e u**, **size** is amount (biggest to smallest) and **order** is sequence (first to fourth). On **-l -m -r -n**, the five are content, exactness, completeness, reference, and settled-to-passing. Series hang on a scale; sibling scales do not hang on each other.
+A sibling parent map with no parent of its own. On **a o e u**, **size** is amount (biggest to smallest) and **order** is position (first to fourth). On **-l -m -r -n**, the five are content, exactness, completeness, reference, and settled-to-passing. Series hang on a scale; sibling scales do not hang on each other.
 
 [Vowels cheat sheet](/cheat-sheets/vowels), [consonants cheat sheet](/cheat-sheets/consonants)
 
@@ -946,7 +958,7 @@ What the talk is about from here on, set only by an `/x/` word: introduce (`xazo
 
 [Topic](/topic#topic)
 
-**Compare with:** [as-for](#as-for) frames one sentence and sets no topic. A [topic stretch](#topic-stretch) restarts the role pointer anchors.
+**Compare with:** [as-for](#as-for) sets the scene for one sentence only and sets no topic. A [topic stretch](#topic-stretch) restarts the role pointer anchors.
 
 ### Topic pronoun
 
@@ -978,18 +990,6 @@ Join / restrictor **-r** (*something* / *sometimes*); fill-ask under question. W
 
 [Joins](/joins#unspecified-member-r-phrase)
 
-### Usual order
-
-The default word order of a body, set by its speech act: verb late in a statement or prohibition, verb second in a yes/no question, verb first in a command, blank first in a fill-ask. Any other order means the same.
-
-[Speech moves](/speech-moves#act-word-order), [Questions](/questions#fill-ask)
-
-### Usual role
-
-A role compound with practiced-role scope **`o`** after its **`w`** (`zwozeduyol`): the role as the office they inhabit (*a teacher*). With scope **`u`**, a role compound makes no claim about how often.
-
-[Role compounds](/roles#one-time-or-a-practice)
-
 ### Channel on a generalization
 
 A channel on a clause with a universal fence or restrictor: how you know the general claim.
@@ -1004,7 +1004,7 @@ Sake + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`goyom`** + `/w/
 
 ### Viewpoint laterals
 
-DIR × ANCHOR; the anchor sets the facing frame (person or oriented object, or a role pointer on **-r**); the ending refers to the anchor, not DIR.
+DIR × ANCHOR; the anchor sets the facing (person or oriented object, or a role pointer on **-r**); the ending refers to the anchor, not DIR.
 
 [Left, right, and facing](/viewpoint#viewpoint-laterals)
 

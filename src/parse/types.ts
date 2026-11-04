@@ -209,7 +209,7 @@ export type LexWord = MorphWord & {
   rootGloss?: RootGloss;
   reading: LexReading;
   /** Lexicon-only x-less compound lemma from lexicon-compounds.csv. */
-  lexicalCompound?: boolean;
+  dictionaryCompound?: boolean;
   /** Unlisted stem that splits into published `left + join + right` (display only). */
   potentialCompounds?: {
     left: string;

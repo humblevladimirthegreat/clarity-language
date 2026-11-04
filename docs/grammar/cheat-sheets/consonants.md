@@ -30,7 +30,7 @@ The same letters name a part in an earlier event on [role pointers](/pronouns#ro
 
 ## Endings {#endings}
 
-A content word's last letter is **-l**, **-m**, **-n**, or **-r**. Optional [**-x**](/plurality#associative) after that marks associates or a group. The letter order **l m r n** has five sibling **scales**: content, exactness, completeness, reference, settled-to-passing. Each **series** reuses one scale’s **cell logic**, the mapping of those letters. A **hang cue** says why. Unused cells are an em dash. A mixed host writes one ending letter and reads it by cell: a [number](/number-markers#number-endings) is exactness on **-l** / **-m**, content on **-n**, reference on **-r**.
+A content word's last letter is **-l**, **-m**, **-n**, or **-r**. Optional [**-x**](/plurality#associative) after that marks associates or a group. The letter order **l m r n** has five sibling **scales**: content, exactness, completeness, reference, settled-to-passing. Each **series** reuses one scale’s **cell logic**, the mapping of those letters. A **fit cue** says why. Unused cells are an em dash. A mixed host writes one ending letter and reads it by cell: a [number](/number-markers#number-endings) is exactness on **-l** / **-m**, content on **-n**, reference on **-r**.
 
 Shown on one root, `azozo`. From [word endings](/word-endings#concrete-l) and [resume](/pronouns#resume-r). Content is **-l** / **-m** / **-n**; **-r** is reference.
 
@@ -48,7 +48,7 @@ Shown on one root, `azozo`. From [word endings](/word-endings#concrete-l) and [r
 
 From [word endings](/word-endings), [number endings](/number-markers#number-endings), [spans](/spans#when-required), [joins](/joins#join-type-vowel-series), [hooks](/hooks), [role pointers](/pronouns#role-pointers), [tags](/tag-pronouns#tag-pronouns), and [settled-to-passing](/sakes#settled-to-passing).
 
-| Scale | Hang cue | **-l** | **-m** | **-r** | **-n** |
+| Scale | Fit cue | **-l** | **-m** | **-r** | **-n** |
 |-------|----------|--------|--------|--------|--------|
 | [Content](/word-endings) | which lexicon reading | concrete | published abstract | — | a name |
 | [Exactness](/number-markers#number-endings) | how tightly you mean the stated form | exact | approximate | — | — |
@@ -183,4 +183,4 @@ These still count as names:
 |-------|------------------------|-------|
 | a phrase join under `/z/`, `/d/`, or `/b/` | **-n** titles the bundle ([titled phrases](/proper-names#titled-phrases)) | I |
 | a hook | **-n** titles a proper-name phrase ([titled phrases](/proper-names#titled-phrases)) | I |
-| a number word | **-n** is a conventional designation, such as an official label or *the Second* ([number-word exception](/proper-names#number-word-exception)) | I |
+| a number word | **-n** is a named designation, such as an official label or *the Second* ([number-word exception](/proper-names#number-word-exception)) | I |

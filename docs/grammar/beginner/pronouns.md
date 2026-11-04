@@ -188,7 +188,7 @@ Each part consonant names a different part: `zwuzem` is the doing, `zwudem` what
 
 ### Special pronouns {#special-pronouns}
 
-Most of the time you name people with a proper name (`zazozon`, `zalazun`) and resume with **-r**. A few roots from a small fixed set (**closed roots**) instead name **roles in this conversation**: who is speaking, who is being spoken to, you-and-I together, or a nonspecific *someone*. They take the usual role letter for the slot they fill in the clause (subject, object, and so on), and in this use they end in **-n**, like a name.
+Most of the time you name people with a proper name (`zazozon`, `zalazun`) and resume with **-r**. A few roots from a small fixed set (**closed roots**) instead name **roles in this conversation**: who is speaking, who is being spoken to, you-and-I together, or a nonspecific *someone*. They take the ordinary role letter for the slot they fill in the clause (subject, object, and so on), and in this use they end in **-n**, like a name.
 
 Use **`uwe`** (*speaker*) and **`awa`** (*listener*) for *I* and *you*. **`awa`** is always the person actually listening, never *anyone at all*: English generic *you* has its own pronoun.
 

@@ -61,7 +61,7 @@ A sign applies once to the whole word; a label never takes one. In other slots t
 |---------|--------|-----|-------|
 | [*(none)*](/number-markers#number-endings): `g+3`, `g+`, [`d_12`](/number-markers#ending-marks-second-slot-after-pos) | **-l** | exact, newly stated | B |
 | [**`~`**](/number-markers#number-endings): `g~+3`, `g~+`, [`g~+12`, `g~#2`](/number-markers#ending-marks-second-slot-after-pos) | **-m** | approximate: *about N* | I |
-| [**`@`**](/number-markers#number-endings): `g@#2`, [`g@_12`](/number-markers#ending-marks-second-slot-after-pos) | **-n** | conventional title or label | I |
+| [**`@`**](/number-markers#number-endings): `g@#2`, [`g@_12`](/number-markers#ending-marks-second-slot-after-pos) | **-n** | named title or label | I |
 | [**`=`**](/number-markers#number-endings): `g=+3`, `g=#2`, `d=_12` | **-r** | resume a number already given (needs a digit) | I |
 
 Digitless **-r** is not a resume: `grar` is *some number* in a statement and *which number?* in a question.

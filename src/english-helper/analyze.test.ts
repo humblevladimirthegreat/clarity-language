@@ -44,10 +44,10 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
     assert.ok(name.suggestions.some((s) => s.kind === "detector" && s.id === "proper-name"));
   });
 
-  it("builds role compounds for a doer noun, usual role first", () => {
+  it("builds role compounds for a doer noun, practiced role first", () => {
     const teacher = slots("The teacher sings.").find((s) => s.text === "teacher")!;
     const roles = teacher.suggestions.filter((s): s is RoleSuggestion => s.kind === "role");
-    assert.deepEqual(roles.map((r) => [r.usual, r.link]), [[true, "roles.md#one-time-or-a-practice"], [false, "roles.md#role-compounds"]]);
+    assert.deepEqual(roles.map((r) => [r.practiced, r.link]), [[true, "roles.md#one-time-or-a-practice"], [false, "roles.md#role-compounds"]]);
     assert.equal(roles[0]!.form, `zwoz${roles[0]!.root}l`);
     assert.equal(roles[1]!.form, `zwuz${roles[0]!.root}l`);
     assert.equal(teacher.suggestions[0]!.kind, "role");

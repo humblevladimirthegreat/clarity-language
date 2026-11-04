@@ -258,17 +258,17 @@ describe("classify", () => {
     assert.ok(word.rootGloss);
   });
 
-  it("lexical compound lemma glosses as one kind", () => {
+  it("dictionary compound lemma glosses as one kind", () => {
     const word = expectReading("zoyahehal", "ordinary");
     assert.equal(word.family.kind, "content");
-    assert.equal(word.lexicalCompound, true);
+    assert.equal(word.dictionaryCompound, true);
     assert.equal(word.rootGloss?.concrete, "bedroom");
     assert.equal(word.rootGloss?.abstract, "sanctum");
   });
 
-  it("lexical compound beats accidental published substring match", () => {
+  it("dictionary compound beats accidental published substring match", () => {
     const word = expectReading("zahuyayen", "ordinary");
-    assert.equal(word.lexicalCompound, true);
+    assert.equal(word.dictionaryCompound, true);
     assert.equal(word.rootGloss?.concrete, "friend");
   });
 
@@ -282,7 +282,7 @@ describe("classify", () => {
     const word = expectReading("vowurolul", "ordinary");
     assert.equal(word.hookCompound?.stem, "owurolul");
     assert.equal(word.hookCompound?.hook, "ul");
-    assert.equal(word.lexicalCompound, true);
+    assert.equal(word.dictionaryCompound, true);
     assert.equal(word.rootGloss?.concrete, "leave");
     if (word.family.kind === "content") {
       assert.equal(word.family.roots[0], CLOSED.walk);
@@ -325,7 +325,7 @@ describe("classify", () => {
   it("unlisted left root still fuses a productive hook compound", () => {
     const word = expectReading("veruvolul", "ordinary");
     assert.equal(word.hookCompound?.stem, "eruvolul");
-    assert.equal(word.lexicalCompound, false);
+    assert.equal(word.dictionaryCompound, false);
     assert.match(word.rootGloss?.concrete ?? "", /leave/);
   });
 

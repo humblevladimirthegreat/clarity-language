@@ -9,7 +9,7 @@ outline: false
 
 Met a short word you can't place? Find its family by shape, then look it up in the tables below, sorted by spelling. Every table except the first is built from the dictionary, so it always matches the grammar, and each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
-Ordinary roots and [dictionary compounds](/compounds#lexical-compounds) are not here: look them up in the [lexicon](/lexicon). To build a sentence from an English job (*because*, *by Friday*, *walked*), use [Saying it in Ageben](/english).
+Ordinary roots and [dictionary compounds](/compounds#dictionary-compounds) are not here: look them up in the [lexicon](/lexicon). To build a sentence from an English job (*because*, *by Friday*, *walked*), use [Saying it in Ageben](/english).
 
 ## Find the family by shape {#by-shape}
 

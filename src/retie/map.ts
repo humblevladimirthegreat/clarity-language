@@ -9,7 +9,7 @@ export type RetiePair = {
   newRoot: string;
 };
 
-/** A lexical compound whose stem moved because a part root moved (`abedelohohu` → `abedelahaza`). */
+/** A dictionary compound whose stem moved because a part root moved (`abedelohohu` → `abedelahaza`). */
 export type CompoundStemPair = {
   /** Compound rows have no emoji; kept empty for the shared pair shape. */
   emoji?: string;
