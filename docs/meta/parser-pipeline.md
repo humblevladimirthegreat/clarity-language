@@ -136,7 +136,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause hing
 | `identity` | `mood` | IDENTITY **`ugo`** |
 | `locative` | `locative` | *between* |
 | `means` | `means` | *using* **`ahada`** |
-| `likeness` | `likeness` | *like* **`umu`** |
+| `likeness` | `likeness` | *like* **`ewe`** |
 | `of_relation` | `ofRelation` | *part of* / *contents* / *material* / *origin* |
 | `exchange` | `exchange` | *in-exchange-for* **`ehe`** |
 | `proxy` | `proxy` | *on-behalf-of* **`ade`** |

@@ -36,8 +36,6 @@ To call someone by what they are (*Waiter!*, *Doctor!*), use the kind as a title
 **Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Alazun uses `/y/`; saying Alazun walks uses `/z/` (`zalazun vowurol`).
 
 ### Interjections: reactions
-<a id="interjections"></a>
-<a id="interjections-conventional-calls"></a>
 
 An **interjection** is a short reaction or exclamation that stands on its own. Write the reaction under `/y/` with an ordinary ending: **-l** for the everyday sense, **-m** for the abstract sense, just as on any [first mention](word-endings.md).
 

@@ -219,7 +219,6 @@ You assert the grounds, the way you assert a cause. If you are not sure of them,
 **Compare with:** a `bl-` noun after any channel is its [source](#source) (`thebam blazozon` *according to Azozon*), and no other channel takes `blarl`. A cause or condition word may not come before the channel. Put the channel first (`theyom thahum blarl`) to say both that you inferred it and that it was caused. *Could be* with no grounds is [MAY](/knowing#may).
 
 ### Carrying a channel forward {#carry-forward}
-<a id="channel-frame-carry"></a>
 
 English tells a story with one *they say* or *I remember* at the start, and every sentence after it rests on the same ground. Ageben does the same. Once you put a channel on a claim, your later claims with no channel keep it: the channel is your **frame**. You name the channel once, then keep talking.
 

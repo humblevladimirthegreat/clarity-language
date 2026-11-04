@@ -310,7 +310,7 @@ Source: [sakes.md](/sakes)
 - **open:** a sake word on `/z/` `/d/` `/b/` `/v/` `/h/` `/x/` `/y/` (`sakeSlot`). A sake word is a stance on a belonging, an unowned noun, or the clause, and these slots are none of those. *Walks healthily* is the clause stance (`thobatham`).
 - **open:** prescription **`the`** on a noun (`gawethel`, `wawethel goyom`). Its endings are the warrant for a move, and a noun is not a move; what a noun is for is **`tho`** (`gawethom`).
 - **closed (D-36):** **-n** on a sake word.
-- **open:** a `bl-` word after an INTERNAL or UNPLACED feeling (`wawethumal goyom blalazun`). A placement locus has no landmark; someone else's stake is VICARIOUS (`e`) or a holder.
+- **open:** a `bl-` word after an INTERNAL or UNPLACED feeling (`wawethumal goyom blalazun`). A placement locus has no landmark; someone else's stake is VICARIOUS (`o`) or a holder.
 
 ## Role-letter structure
 

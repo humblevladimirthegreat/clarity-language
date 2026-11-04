@@ -37,7 +37,7 @@ Beginner already used two sentences for English *who / that / which*. Prefer [re
 >
 > "Azozon sees a dog in a bank. The dog runs."
 
-A place, tool, or *of*-relation on the noun is still an extra-noun [hook](/hooks#extra-noun) or hosted `/ɡ/` + `/b/` (*the guard [in](/hooks#extra-noun) a bank*, *a book written [with a hammer](/hooks#extra-noun)*). A one-place role (*a guard who sits*, *a place where someone sleeps*) is a [role compound](/roles#role-compounds) on `/ɡ/` with a non-resume ending; add **`the`** for a practiced role (*a teacher*), the same pattern as *is a teacher*. Resume **-r** on that compound is **this instance** (*the one teaching*), not the occupation. A noun in the middle of an act (*a fighting guard*) is the plain event root on `/ɡ/` ([in progress](/predication#in-progress)).
+A place, tool, or *of*-relation on the noun is still an extra-noun [hook](/hooks#extra-noun) or hosted `/ɡ/` + `/b/` (*the guard [in](/hooks#extra-noun) a bank*, *a book written [with a hammer](/hooks#extra-noun)*). A one-place role (*a guard who sits*, *a place where someone sleeps*) is a [role compound](/roles#role-compounds) on `/ɡ/` with a non-resume ending; use reach **`o`** for a practiced role (*a teacher*), the same pattern as *is a teacher*. Resume **-r** on that compound is **this instance** (*the one teaching*), not the occupation. A noun in the middle of an act (*a fighting guard*) is the plain event root on `/ɡ/` ([in progress](/predication#in-progress)).
 
 > `zazozon dagayul gwuzehohel vayebel.`
 >
@@ -201,7 +201,7 @@ To keep *Sam* as English spelling, write the span. To see the Ageben sound-spell
 
 **Needs:** [Role compounds (the doer)](/roles#role-compounds) · [One time or a practice](/roles#one-time-or-a-practice) · [Saying someone is a teacher](/roles#saying-someone-is-a-teacher) · [Acting as](/role-parts#acting-as)
 
-English names a person by what they usually do (*a singer*, *a manager*). Ageben builds that noun from the event root: person letter, **`w`**, the practiced-role reach **`e`**, the doer **`z`**, the root, then the ending ([one time or a practice](/roles#one-time-or-a-practice)). `zwozozuyel` is *a singer* from `ozuyel` *sing*, and on `/ɡ/` (`gwozozuyel`) it says someone is one. With reach **`a`**, `zwuzozuyel` is only *someone who sings*. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
+English names a person by what they usually do (*a singer*, *a manager*). Ageben builds that noun from the event root: person letter, **`w`**, the practiced-role reach **`o`**, the doer **`z`**, the root, then the ending ([one time or a practice](/roles#one-time-or-a-practice)). `zwozozuyel` is *a singer* from `ozuyel` *sing*, and on `/ɡ/` (`gwozozuyel`) it says someone is one. With reach **`u`**, `zwuzozuyel` is only *someone who sings*. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
 
 > `zwozeluyol varuyol.`
 >
@@ -656,7 +656,7 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 >
 > "Azozon compares Alazun with Ahelan."
 
-**Compare with:** a ranking (*Azozon is more challenging than Alazun*) is the [rank join](/comparatives#comparatives), not **`vezem`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](/prescription#sake-preference); **`zolamalugulol`** names the one chosen. *Often* / *usually* is a [restrictor](/restrictors) (`huam`, `war`). A type across scenes is [label reach](/label-seams#reach-type) **`thu`**.
+**Compare with:** a ranking (*Azozon is more challenging than Alazun*) is the [rank join](/comparatives#comparatives), not **`vezem`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](/prescription#sake-preference); **`zolamalugulol`** names the one chosen. *Often* / *usually* is a [restrictor](/restrictors) (`huam`, `war`). A type across scenes is [label reach](/label-seams#reach-type) **`tha`**.
 
 ### Fair, keep, public, ride, admit and other leftover senses {#leftover-senses}
 
@@ -1117,7 +1117,7 @@ These three English nouns each hide two jobs. *Role* is the function someone pla
 
 | English | Ageben | Reading |
 |---------|--------|---------|
-| *role* (the function someone plays) | `zalazun gwozeduyol.` | the practiced role: role compound with **`the`** on `/ɡ/` |
+| *role* (the function someone plays) | `zalazun gwozeduyol.` | the practiced role: role compound with reach **`o`** on `/ɡ/` |
 | *title* (the name of a work) | `d@[onuren alazun]` | cite with **`@`** |
 | *title* (a claim to own) | `zegunum` | *ownership*, the abstract sense of `egunu` |
 | *address* (speak to someone) | `yalazun.` | call them with `/y/` + their name |

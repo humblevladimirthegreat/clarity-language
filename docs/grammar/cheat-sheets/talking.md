@@ -17,8 +17,8 @@ A `/y/` word starts a new turn and goes before the body of the clause. A `/y/` w
 |-----|---------|---------|-------|
 | [Call someone](/speech-moves#vocative): `/y/` + name (**-n**) | `yalazun.` | *Alazun!* | B |
 | [Call a kind](/speech-moves#vocative): `/y/` + kind with **-n** | `yagayun` | *Guard!* (come here) | B |
-| [Reaction](/speech-moves#interjections): `/y/` + root with **-l** / **-m** | `yemel.` / `yemem.` | *What a surprise!* / *Amazing!* | B |
-| [Reaction, not a call](/speech-moves#interjections): **-l** vs **-n** | `yagayul` | *Guard!* (an alarm) | B |
+| [Reaction](/speech-moves#interjections-reactions): `/y/` + root with **-l** / **-m** | `yemel.` / `yemem.` | *What a surprise!* / *Amazing!* | B |
+| [Reaction, not a call](/speech-moves#interjections-reactions): **-l** vs **-n** | `yagayul` | *Guard!* (an alarm) | B |
 | [Call a group](/collectives#vocatives-y) | `yawanx` | *hey, you all* | I |
 
 ## Speech acts {#acts}
@@ -221,7 +221,7 @@ After your sentence, write `yel` and a polar word as a turn of its own. It asks 
 | This | vs | That |
 |------|----|------|
 | `yalazun` *Alazun!* ([a call, **-n**](/speech-moves#vocative)) | | `zalazun vowurol` *Alazun walks* ([a subject](/speech-moves#vocative)) |
-| `yagayun` *Guard!* ([call the guard](/speech-moves#interjections)) | | `yagayul` *Guard!* ([an alarm](/speech-moves#interjections)) |
+| `yagayun` *Guard!* ([call the guard](/speech-moves#interjections-reactions)) | | `yagayul` *Guard!* ([an alarm](/speech-moves#interjections-reactions)) |
 | `yel` *question* ([asks](/questions#question)) | | `?` *unsure voice* ([only sounds unsure](/tone-marks#tone-marks)) |
 | `yul` *don't* ([prohibition](/speech-moves#speech-act-beginner)) | | `yuol` *no, false* ([answers a claim](/questions#polar-particle)) |
 | `yel yaol.` *…, right?* ([a check-back asks](/polar-inventory#check-backs)) | | `yaol.` *yes* ([an answer gives](/questions#polar-particle)) |

@@ -808,7 +808,7 @@ Role letter + **`w`** + reach vowel + part consonant + stem (`zwuzeduyol`). The 
 
 [Role compounds](/roles#role-compounds)
 
-**Compare with:** *a guard who sits* is this stem on `/ɡ/` with a non-resume ending, and *teacher* takes reach **`e`** for the practiced role ([which noun, with resume and kinds](say-people-places.md#which-noun-intermediate)). Resume **-r** is *the one teaching* (this instance), not the practiced role.
+**Compare with:** *a guard who sits* is this stem on `/ɡ/` with a non-resume ending, and *teacher* takes reach **`o`** for the practiced role ([which noun, with resume and kinds](say-people-places.md#which-noun-intermediate)). Resume **-r** is *the one teaching* (this instance), not the practiced role.
 
 ### Role letter
 

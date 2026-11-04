@@ -215,7 +215,7 @@ A [say word](/permission-consent#say-words) on `/h/`: **`h`** **`w`**, a reach v
 | [Assumed consent, several people](/permission-consent#consent) | `zazozon vezuyol bahelan balazun bal hwubar.` | *assuming Ahelan and Alazun are OK* | I |
 | [Letting yourself](/permission-consent#consent) | `zalazun vezuvel hwuzam.` | *Alazun lets themself sleep.* | I |
 | [A promise](/permission-consent#consent) | `zuwen vowurol hwuzal.` | *I promise to walk.* (to you) | I |
-| [Promise to someone else](/permission-consent#say-reach): pair reach **`o`** | `zuwen vowurol hwezal blahelan.` | *I promise Ahelan I'll walk.* | I |
+| [Promise to someone else](/permission-consent#say-reach): pair reach **`e`** | `zuwen vowurol hwezal blahelan.` | *I promise Ahelan I'll walk.* | I |
 | [Check in](/permission-consent#consent) | `yem zuwen vezuyol bawan hwubam.` | *Are you still OK with me telling you?* | I |
 | [Contrary to a stance](/permission-consent#say-reach): `uom` first | `zazozon vowurol uom hwuvul.` | *Azozon walks anyway.* | I |
 
@@ -230,10 +230,10 @@ A [say word](/permission-consent#say-words) on `/h/`: **`h`** **`w`**, a reach v
 
 | [Reach](/permission-consent#say-reach) | Example | English | Stage |
 |-------|---------|---------|-------|
-| **`a`** this act | `hwudam` | *they agreed to this* | I |
-| **`e`** standing | `hwodam` / `hwovam` | *they're generally fine with it* / *you may, any time* | I |
-| **`o`** toward one party | `hwevam blalazun` | *fine as far as Alazun is concerned* | I |
-| **`u`** a type | `hwadam` | *they're the type who's fine with it* | I |
+| **`u`** this act | `hwudam` | *they agreed to this* | I |
+| **`o`** standing | `hwodam` / `hwovam` | *they're generally fine with it* / *you may, any time* | I |
+| **`e`** toward one party | `hwevam blalazun` | *fine as far as Alazun is concerned* | I |
+| **`a`** a type | `hwadam` | *they're the type who's fine with it* | I |
 
 ## Don't mix up {#dont-mix-up}
 

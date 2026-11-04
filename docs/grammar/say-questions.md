@@ -124,7 +124,7 @@ English *admittedly*, *granted* and *that's true, but* concede a point before pu
 
 ### *What a big dog!* {#exclamations}
 
-**Needs:** [tone marks](/tone-marks#tone-marks) · [extra detail on an adjective](/clause#adjective-detail-w) · [interjections](/speech-moves#interjections)
+**Needs:** [tone marks](/tone-marks#tone-marks) · [extra detail on an adjective](/clause#adjective-detail-w) · [interjections](/speech-moves#interjections-reactions)
 
 English *What a big dog!* and *How big the dog is!* say the dog is very big and that you feel strongly about it. Say the degree with *very* **`welazem`** and the feeling with the tone mark **`!`** before the sentence. Use **`!!`** for more.
 

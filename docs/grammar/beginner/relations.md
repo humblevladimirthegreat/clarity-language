@@ -85,7 +85,6 @@ On a noun, the same root is **`geham`** (`danal geham blohowel` *a book for a ha
 | **`heham` / `geham`** | consideration / countervalue | *in exchange for* | `ehal` *currency-exchange* | 💱: the arrows swap one side for the other |
 
 ### Proxy (*on behalf of*) {#proxy}
-<a id="on-behalf-of"></a>
 
 When English says someone **acts as another person’s agent** (*tells on behalf of Alazun*), use the same hosted pair as [*like*](#likeness). The relation word is **`hanem`**. Put that person in a `bl-` word right after it. The subject does the act; `/b/` is the person they act for, not who hears the telling. (cue: 🪪 *id*: the card stands as an authorized face; `/b/` is that person)
 
