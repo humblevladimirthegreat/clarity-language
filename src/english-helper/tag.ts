@@ -224,6 +224,26 @@ function verbBeforeTo(terms: TaggedTerm[]): void {
   });
 }
 
+/** Words that count the noun after them (*five or more cats*, *fewer dogs*). */
+const AMOUNT_WORDS = new Set(["more", "less", "fewer", "many", "several"]);
+
+/**
+ * A verb word after a count or an amount word, with a verb after it, is a plural noun
+ * (*seven or more birds sing*): the library reads some of them as verbs.
+ */
+function nounAfterAmount(terms: TaggedTerm[]): void {
+  terms.forEach((term, i) => {
+    const prev = terms[i - 1];
+    const next = terms[i + 1];
+    if (term.cls !== "verb" || term.forced || !prev || !next || !/s$/.test(term.normal)) return;
+    if (prev.cls !== "number" && !AMOUNT_WORDS.has(prev.normal)) return;
+    if (next.cls !== "verb" && next.cls !== "modal" && next.cls !== "auxiliary") return;
+    const lemma = taggedAs(term.normal, "Noun").nouns().toSingular().text().toLowerCase() || term.normal;
+    Object.assign(term, { cls: "noun", lemma, plural: true });
+    delete term.tense;
+  });
+}
+
 /** Sentences → clauses → tagged words, with forced readings applied. */
 export function tagEnglish(input: string): TaggedSentence[] {
   const forced: { word: string; kind: keyof typeof FORCE_TAG }[] = [];
@@ -267,6 +287,7 @@ export function tagEnglish(input: string): TaggedSentence[] {
         if (!term.normal && term.tags.includes("Negative")) Object.assign(term, { text: "not", normal: "not", lemma: "not", cls: "negative" });
       }
       verbBeforeTo(terms);
+      nounAfterAmount(terms);
       return { text: clause.text().trim(), terms, features: features(clause, terms, question) };
     }) as TaggedClause[];
     return { text: sentence.text().trim(), clauses };

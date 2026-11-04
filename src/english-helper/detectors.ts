@@ -120,6 +120,9 @@ function numberPrefixWord(normal: string): boolean {
   return NUMBER_PREFIX.test(word) || NUMBER_PART.test(word);
 }
 
+/** Capital initials whose letters are all Ageben consonants (*the NL*; initials.md#initials). */
+export const INITIALS = /^(?:[BDGHLMNRVWYZ]|TH){2,6}$/;
+
 export const WORD_DETECTORS: readonly WordDetector[] = [
   { id: "modal", label: (t) => `modal *${t.normal}*`, links: [], test: (t) => t.cls === "modal" && t.normal in MODAL_LINKS },
   { id: "wh", label: (t) => `question word *${t.normal}*`, links: [], test: (t) => t.cls === "question" && t.normal in WH_LINKS },
@@ -132,6 +135,12 @@ export const WORD_DETECTORS: readonly WordDetector[] = [
   { id: "third-person", label: (t) => `*${t.normal}* (point back)`, links: ["pronouns.md#resume-r"], test: (t) => THIRD_PERSON.has(t.normal) },
   { id: "possessive", label: () => "possessive *'s*", links: ["english.md#of"], test: (t) => !!t.possessive && t.cls !== "pronoun" },
   { id: "possessive-pronoun", label: (t) => `possessive *${t.normal}*`, links: ["english.md#of"], test: (t) => !!t.possessive && t.cls === "pronoun" },
+  {
+    id: "initials",
+    label: (t) => `initials *${t.text}*: each title root's first consonant as a letter code with \`@\` (spelled here from the English letters)`,
+    links: ["initials.md#initials", "numbers-applied.md#letter-codes"],
+    test: (t) => INITIALS.test(t.text),
+  },
   { id: "proper-name", label: () => "proper name", links: ["proper-names.md#proper-name--n"], test: (t) => !!t.proper },
   { id: "plural", label: () => "plural noun", links: ["plurality.md#associative"], test: (t) => t.cls === "noun" && !!t.plural && !t.proper },
   { id: "relation-prefix", label: (t) => `*${t.normal}*: a hook prefix (the hook's vowels, \`x\` or \`mx\`, then the noun's root)`, links: ["english.md#relation-prefixes", "hook-compounds.md#hook-prefixes"], test: (t) => relationWord(t.normal) },

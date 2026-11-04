@@ -195,6 +195,22 @@ function writingRules(inputs: readonly HelperInput[]): string[] {
     "- A grammar line gives an English cue, the form the teaching section writes for that job (in backticks), and the section. When the form is a pattern, or the line names no form, the `e.g.` line under it is a doc sentence that uses the job: copy its shape. The examples below show many more of these forms in sentences.",
     "- Default order: subject, direct object, verb, then the extra noun that receives (who is given or told). An adjective goes right after its noun; a `w` word goes right before the word it grades; `h` and `th` words may go anywhere. A relation's object takes `bl` and goes right after its `g`, `h` or `th` word (`hewem blazozon`, like Azozon); a plain `b` word is always the recipient.",
     "- End each statement with a period. Words the analysis marks as having no word of their own (articles, bare auxiliaries) are not written.",
+    "",
+    ...commonMistakes(),
+  ];
+}
+
+/**
+ * Syntax errors model drafts made with the form in the prompt (docs/meta/english-helper.md, model eval).
+ * Joins: joins.md#right-close. Punctuation: sentence-linkers.md#orthography-and-prosody-periods, digit-strings.md.
+ */
+function commonMistakes(): string[] {
+  return [
+    "### Common mistakes",
+    "",
+    "- A join is a whole word (role letter + vowel + ending) after its items, never its vowel on its own.",
+    "- `+` and slashes (`/b/`, `w+2`) are notation for a shape: build the word, never write the notation.",
+    "- No commas between words; a comma appears only inside a digit code.",
   ];
 }
 

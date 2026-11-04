@@ -28,6 +28,14 @@ describe("tagEnglish", () => {
     }
   });
 
+  it("reads a verb word after a count or amount word, before a verb, as a plural noun", () => {
+    for (const text of ["Seven or more birds sing.", "Uzozen sees that fewer dogs bark."]) {
+      const noun = terms(text).find((x) => x.normal === "birds" || x.normal === "dogs")!;
+      assert.deepEqual([noun.cls, noun.plural], ["noun", true], text);
+    }
+    assert.equal(terms("The cat sees two dogs.").find((x) => x.normal === "sees")!.cls, "verb");
+  });
+
   it("lemmatizes irregular forms", () => {
     const t = terms("The children went home.");
     assert.equal(t.find((x) => x.normal === "children")!.lemma, "child");

@@ -9,6 +9,7 @@
  *   has:<kind>          some suggestion is of this kind, tier, or detector id
  *   sense:<sense>       a root with this English sense is suggested
  *   form:<word>         this closed word (a number word, a pronoun) is spelled
+ *   shape:<form>        a grammar row's whole form, as the prompt shows it (`om + /b/`): closed words and notation only
  *   reach:<seam>:<sense> a label-reach job spells its seam (`thao`) on a root with this sense
  *   sake:<role>-<stance><ending> a sake row spells a word of this shape (`g-thar`, `w-thur`; `none` for no word)
  *   no-gap              the word gets a suggestion, or is skipped as clause grammar
@@ -20,7 +21,7 @@ import { reachSeam, suggestionLinks, type Analysis, type Suggestion } from "./an
 
 export type Case = { line: number; english: string; slot: string; expect: string; why: string };
 
-export const CASE_KINDS = ["link", "not", "first", "has", "sense", "form", "reach", "sake", "no-gap"] as const;
+export const CASE_KINDS = ["link", "not", "first", "has", "sense", "form", "shape", "reach", "sake", "no-gap"] as const;
 
 /** Lines of cases.tsv: a header, `#` comments, and `english \t slot \t expect \t why` rows. */
 export function parseCases(tsv: string): Case[] {
@@ -93,6 +94,10 @@ export function checkCase(analysis: Analysis, c: Case): string | undefined {
       return suggestions.some((s) => sensesOf(s).includes(value.toLowerCase())) ? undefined : `senses: ${[...new Set(suggestions.flatMap(sensesOf))].join(", ") || "none"}`;
     case "form":
       return suggestions.some((s) => wordsOf(s).includes(value)) ? undefined : `spells ${[...new Set(suggestions.flatMap(wordsOf))].join(" ") || "nothing"}`;
+    case "shape": {
+      const forms = suggestions.flatMap((s) => (s.kind === "job" || s.kind === "entry" ? [s.form] : []));
+      return forms.includes(value) ? undefined : `forms: ${forms.join(" | ") || "none"}`;
+    }
     case "sake": {
       const spelled = suggestions.flatMap((s) => (s.kind === "job" || s.kind === "entry") && s.link === "sakes.md#sake-inventory" && s.phrase ? [s.phrase] : []);
       if (value === "none") return spelled.length ? `spells ${spelled.join(" ")}` : undefined;

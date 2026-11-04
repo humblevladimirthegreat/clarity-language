@@ -298,6 +298,11 @@ English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family 
 | *sister* | `zeyel guvugel growamol blazozon` |
 | *aunt* (a sister of a parent) | `zeyel guvugel growamol bleyel growubal blazozon` |
 | *grandmother* (a parent of a parent) | `zeyel guvugel growubal bleyel growubal blazozon` |
+| *sibling* / *siblings* | `zalazun growamol blazozon` (*Alazun, Azozon's sibling*) |
+| *eldest sibling* / *youngest sibling* | `g#1e0 blazozon` / `g#-1e0 blazozon` (birth order among the siblings) |
+| *parents* | `zabayalx growubal blazozon` |
+| *2nd child* (birth order) | `zohoyol g#2e1 blazozon` |
+| *grandchildren* | `zohoyolx growadol blazozon` |
 | *generation* | the kin number itself: `growubal` parents, `growamol` siblings, `growabal` children |
 
 For *uncle* and *grandfather*, use `gemugel` for `guvugel`.

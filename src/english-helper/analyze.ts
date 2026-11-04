@@ -11,7 +11,7 @@ import { searchEnglish } from "../find/english.js";
 import type { Band } from "../lint/learning-order.js";
 import { BANDS } from "../lint/learning-order.js";
 import { markerToSpeech, digitsToSyllables } from "../tts/numbers.js";
-import { grammarPath, matchCues, resolveLink, type CueIndex, type GrammarJob } from "./cues.js";
+import { COUNT_SLOT, grammarPath, matchCues, RANK_SLOT, resolveLink, type CueIndex, type GrammarJob } from "./cues.js";
 import type { CompoundRow } from "../lexicon-compounds.js";
 import { BOUNDABLE_JOINS, BOUNDABLE_RESTRICTORS, COMPOUND_LINKS, detectClause, detectClauseOpener, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAKE_ENDINGS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
 import { lookupLexicon, rootsByForm, sideEnding, type LexiconIndex, type LexiconSuggestion } from "./lexicon.js";
@@ -192,6 +192,33 @@ function joinRole(terms: readonly TaggedTerm[], i: number): string {
     if (p.cls === "verb" || p.cls === "auxiliary" || p.cls === "modal") return "d";
   }
   return "z";
+}
+
+/** The vowels section, whose recap rows write a join as its vowel alone (`u` for *not*). */
+const JOIN_VOWELS_SECTION = "joins.md#join-type-vowel-series";
+/** A join's default ending by vowel: *and* is open (**-m**, joins.md: when unsure, prefer -m); the others are closed. */
+const JOIN_ENDING: Readonly<Record<string, string>> = { a: "m" };
+/** Words to skip when looking for a join's item after it (*not the cat*, *does not walk*). */
+const BEFORE_ITEM = new Set<WordClass>(["determiner", "auxiliary", "modal", "adverb", "number", "negative"]);
+
+/**
+ * A vowel-series row (*not* → `u`) as the join word it stands for: the role letter of the item
+ * after the English word (Ageben writes the join after its items), the vowel, and an ending
+ * (`vul` for *does not walk*, `zam` for *Azozon and Alazun*). The form becomes the pattern, so
+ * the bare vowel is never offered as a word.
+ */
+function spellJoinVowel(data: HelperData, job: JobSuggestion, terms: readonly TaggedTerm[], end: number, roleOf: (k: number) => string | undefined): void {
+  if (job.link !== JOIN_VOWELS_SECTION || !/^[aeiou]{1,2}$/.test(job.form)) return;
+  const vowel = job.form;
+  const ending = JOIN_ENDING[vowel] ?? "l";
+  job.form = `role letter + ${vowel} + -${ending}`;
+  let k = end;
+  while (k < terms.length && (ARTICLES.has(terms[k]!.normal) || BEFORE_ITEM.has(terms[k]!.cls))) k++;
+  if (k >= terms.length) return;
+  const role = spellRole(roleOf(k) ?? "");
+  if (!/^[zdbvg]$/.test(role)) return;
+  const word = `${role}${vowel}${ending}`;
+  if (!data.wordParses || data.wordParses(word)) job.phrase = word;
 }
 
 /** The ASCII role letter used in spelling (`ɡ` is written `g`). */
@@ -429,10 +456,15 @@ export function sectionExample(data: HelperData, links: readonly string[], words
   return undefined;
 }
 
+/** A form's pieces: its ` / ` alternatives and the parts each joins with ` + ` (`om + /b/` → `om`, `/b/`). */
+export function formPieces(form: string): string[] {
+  return form.split(/ [/+] /).map((p) => p.trim());
+}
+
 /** A form with no piece the word parser reads as words (`/ɡ/ / -r`, `one of six linkers + -m`): a pattern, not a spelling. */
 export function patternForm(data: HelperData, form: string): boolean {
   if (!data.wordParses) return false;
-  return !form.split(" / ").some((piece) => {
+  return !formPieces(form).some((piece) => {
     const words = piece.trim().replace(/[.?!]$/, "").split(/\s+/);
     return words.length > 0 && words.every((w) => /^[a-z]/.test(w) && data.wordParses!(w));
   });
@@ -445,7 +477,7 @@ function addExamples(data: HelperData, suggestions: Suggestion[], words: readonl
       if (s.form) continue;
       const example = sectionExample(data, s.links, words);
       if (example) s.example = example;
-    } else if ((s.kind === "job" || s.kind === "entry") && patternForm(data, s.form)) {
+    } else if ((s.kind === "job" || s.kind === "entry") && !s.phrase && patternForm(data, s.form)) {
       const example = sectionExample(data, [s.link], words);
       if (example) s.example = example;
     }
@@ -456,6 +488,52 @@ function addExamples(data: HelperData, suggestions: Suggestion[], words: readonl
 function numberWord(data: HelperData, t: TaggedTerm): string | undefined {
   if (t.value === undefined || !Number.isInteger(t.value) || t.value < 0) return undefined;
   const word = `g${markerToSpeech(t.ordinal ? "#" : "+")}${digitsToSyllables(String(t.value))}l`;
+  return !data.wordParses || data.wordParses(word) ? word : undefined;
+}
+
+const spelled = (form: string | undefined) => (form ? { form } : {});
+
+/** A number word as a row writes it: role, marker syllable, digit syllables, ending (`zrazal`, `zrawal`, `zrodol`). */
+const NUMBER_WORD = /^([zdbgɡ])(r(?:ua|uo|ue|[aeiou]))([a-z]+)([lmnr])$/;
+/** A number in digit notation: role, marker, mantissa, optional exponent (`g#2e1`, `g#-1e0`). */
+const DIGIT_WORD = /^([zdbgɡ])(#-|#|\+-|\+|-)(\d+)(e-?\d+)?$/;
+
+/**
+ * A row matched through a written number (*5 or more* for *five or more cars*), respelled with the
+ * input's numbers, and on `g` when a noun follows (`grazal al grawal`). Undefined when nothing changes
+ * or a respelled word does not parse.
+ */
+function numberCuePhrase(data: HelperData, job: GrammarJob, run: readonly TaggedTerm[], beforeNoun: boolean): string | undefined {
+  const written = job.cue.match(/\d+/g) ?? [];
+  const values = run.filter((t) => t.cls === "number");
+  if (!written.length || written.length !== values.length || values.some((t) => t.value === undefined || !Number.isInteger(t.value) || t.value < 0)) return undefined;
+  // Digit syllables (`za` → `ga`) for spoken words, digits (`2` → `3`) for written ones.
+  const swap = new Map<string, string>();
+  for (const [k, digits] of written.entries()) {
+    const value = String(values[k]!.value);
+    for (const [from, to] of [[digitsToSyllables(digits), digitsToSyllables(value)], [digits, value]] as const) {
+      if (swap.has(from) && swap.get(from) !== to) return undefined;
+      swap.set(from, to);
+    }
+  }
+  let changed = false;
+  const words = job.form.split(" ").map((w) => {
+    const spoken = NUMBER_WORD.exec(w);
+    const digits = spoken ? undefined : DIGIT_WORD.exec(w);
+    if (!spoken && !digits) return w;
+    const [, role, marker, body, tail] = (spoken ?? digits)!;
+    const out = `${beforeNoun ? "g" : role}${marker}${swap.get(body!) ?? body}${tail ?? ""}`;
+    if (out !== w) changed = true;
+    return out;
+  });
+  if (!changed || (data.wordParses && words.some((w, k) => w !== job.form.split(" ")[k] && !data.wordParses!(w)))) return undefined;
+  return words.join(" ");
+}
+
+/** Capital initials as a letter code with `@` on the slot's role (*the DH* → `z@_dh`; initials.md#initials). */
+function initialsWord(data: HelperData, t: TaggedTerm, role: string): string | undefined {
+  if (!/^[zdb]$/.test(role)) return undefined;
+  const word = `${role}@_${t.text.toLowerCase()}`;
   return !data.wordParses || data.wordParses(word) ? word : undefined;
 }
 
@@ -506,7 +584,7 @@ const EXTRA_NOUN_SECTION = /^(?:hooks|ending-grids|extra-noun-hooks)\.md#extra-n
  * in an extra-noun section (`al`), or a hosted relation with `/b/` (`hadahel / gadahel / /b/`).
  */
 function hookHead(form: string, link: string): string | undefined {
-  const parts = form.split(" / ").map((p) => p.trim());
+  const parts = formPieces(form);
   const head = parts[0]!;
   if (HOOK_FORM.test(head) && (parts.includes("/b/") || (parts.length === 1 && EXTRA_NOUN_SECTION.test(link)))) return head;
   if (HOSTED_FORM.test(head) && parts.includes("/b/")) return head;
@@ -543,10 +621,7 @@ const REACH_SECTION = /^(?:predication|label-reach|label-seams)\.md#reach-/;
 /** The seam a label-reach job or entry names, if it is one. */
 export function reachSeam(s: Suggestion): string | undefined {
   if ((s.kind !== "job" && s.kind !== "entry") || !REACH_SECTION.test(s.link)) return undefined;
-  return s.form
-    .split(" / ")
-    .map((p) => p.trim())
-    .find((p) => SCOPE_SEAM.test(p));
+  return formPieces(s.form).find((p) => SCOPE_SEAM.test(p));
 }
 
 /**
@@ -617,7 +692,7 @@ function sakeRoot(s: Suggestion): string | undefined {
 /** The stance vowel a sakes.md or prescription.md row names, when it names one (*serves* → `a`, *for* → `o`). */
 function sakeStance(s: Suggestion): string | undefined {
   if ((s.kind !== "job" && s.kind !== "entry") || !/^(?:sakes|prescription)\.md#/.test(s.link)) return undefined;
-  const vowels = new Set(s.form.split(" / ").flatMap((p) => SAKE_STANCE.exec(p.trim())?.[1] ?? []));
+  const vowels = new Set(formPieces(s.form).flatMap((p) => SAKE_STANCE.exec(p)?.[1] ?? []));
   return vowels.size === 1 ? [...vowels][0] : undefined;
 }
 
@@ -664,6 +739,7 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
         data.cues,
         terms.map((t) => t.normal),
         terms.map((t) => t.lemma),
+        terms.map((t) => (t.cls !== "number" ? undefined : t.ordinal ? RANK_SLOT : COUNT_SLOT)),
       );
       const slots: Slot[] = [];
       for (let i = 0; i < terms.length; ) {
@@ -684,12 +760,25 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
         const run = terms.slice(i, end);
         const t = run[run.length - 1]!;
         const one = run.length === 1;
-        const jobs: JobSuggestion[] = (match?.jobs ?? []).map((j) => ({ ...j, kind: "job", tier: "grammar" }));
-        const detectors = one ? detectWord(t, terms[end]).flatMap((d) => filterDetector(data, d, stage) ?? []) : [];
+        const jobs: JobSuggestion[] = (match?.jobs ?? []).map((j) => {
+          const phrase = run.some((r) => r.cls === "number") ? numberCuePhrase(data, j, run, nounFollows(terms, end)) : undefined;
+          const job: JobSuggestion = { ...j, kind: "job", tier: "grammar", ...(phrase ? { phrase } : {}) };
+          spellJoinVowel(data, job, terms, end, roleOf);
+          return job;
+        });
+        // A cue run through a number (*five or more*) still names the number's own section.
+        const runNumbers = one
+          ? []
+          : run.flatMap((r) => (r.cls === "number" ? detectWord(r).flatMap((d) => (d.id === "number" ? (filterDetector(data, d, stage) ?? []) : [])).map((d) => ({ ...d, ...spelled(numberWord(data, r)) })) : []));
+        const detectors = one ? detectWord(t, terms[end]).flatMap((d) => filterDetector(data, d, stage) ?? []) : runNumbers;
         // A number next to another (*twenty one*) is one amount the words alone do not spell.
         const count = one && t.cls === "number" && terms[i - 1]?.cls !== "number" && terms[end]?.cls !== "number" ? numberWord(data, t) : undefined;
         for (const d of detectors) if (d.id === "number" && count) d.form = count;
         const role = roleOf(i);
+        for (const d of detectors) {
+          const initials = d.id === "initials" && role ? initialsWord(data, t, role) : undefined;
+          if (initials) d.form = initials;
+        }
         const roots = useNgram ? ngram.hits.map((s) => asRootSuggestion(data, s, role)) : one && CONTENT.has(t.cls) ? rootSuggestions(data, t, role) : [];
         // A doer noun with a root of its own (*flower*) is not an *-er* participle or a role compound.
         const prev = terms[i - 1];

@@ -2,7 +2,8 @@
 
 **Status:** PROPOSED.
 **Related:** [what one sitting holds](../meta/grammar-docs.md#one-sitting) (the tests this proposal applies), [sitting length](../meta/drill-generation.md#sitting-length), [how to apply](../meta/learning-levels.md#how-to-apply), [gates](../meta/learning-levels.md#gates), [allowlist](../meta/drill-generation.md#allowlist), [site redirects](../meta/site-redirects.md).
-**Design authority:** none. This proposal moves, merges, peels, and retitles existing sections. It adds no form and changes no reading. Where a fix would need a grammar decision, it says so under [open decisions](#open-decisions) and waits.
+**Depends on:** `range-series.md`, implemented first (B6 assumes one range series).
+**Design authority:** none. This proposal moves, merges, peels, and retitles existing sections. It adds no form and changes no reading. Band changes for three sections are settled in [gate runs](#gate-runs). Any further grammar decision goes under [open decisions](#open-decisions) and waits.
 
 ## Problem
 
@@ -30,14 +31,14 @@ Each item has an ID used by the [plan](#phased-plan). **Move** means cutting an 
 ### A. Content bug
 
 **A1. [vp-clause-forms.md](../grammar/intermediate/vp-clause-forms.md): vowel rows mislabelled.** The **o** row lists `vel` / `xel` / `thel`, but the parser reads `vel` as *choice* and `vol` as *rank*. That matches [joins.md](../grammar/beginner/joins.md), where `zol` is rank and `zel` is choice. The **e**, **ao**, **ae**, **uo**, and **ue** rows look swapped the same way.
-*Recommendation:* fix every cell so that its row label matches what `node scripts/parse.mjs` reads it as, checking each spelling one at a time. Then grep the grammar, cheat sheets, and Claritish for any other table copied from this one.
+*Recommendation:* fix every cell so that its row label matches what `node scripts/parse.mjs` reads it as, checking each spelling one at a time. Then grep the grammar, cheat sheets, and Claritish for any other table copied from this one. (`range-series.md` fixes the same swap in unassigned-reserved's in-clause hooks entry.)
 
 ### B. Clear failures
 
 **B1. [left-bound.md](../grammar/intermediate/left-bound.md) "Longer chains": three unrelated jobs (tests 2, 3, 4).**
 - Keep *Complex chaining* here. The page passes as a single-H3 sitting.
 - Move *How much: degree words on `/w/`* to [vague-amounts.md](../grammar/intermediate/vague-amounts.md). *Very*, *slightly*, *many*, and *few* are one choice set: degree against an unstated baseline. If vague-amounts then fails test 4, peel the H3 onto its own sitting instead ("Very and slightly").
-- Peel *Leaving out who acts* onto a new sitting, `no-subject.md`, titled "Leaving out who acts". Run the gates: it may pass Beginner. If it does, put it in `beginner/` and place it after [clause.md](../grammar/beginner/clause.md).
+- Peel *Leaving out who acts* onto a new **Beginner** sitting, `no-subject.md`, titled "Leaving out who acts", placed right after [clause.md](../grammar/beginner/clause.md). See [gate runs](#gate-runs) G1.
 
 **B2. [tag-pronouns.md](../grammar/intermediate/tag-pronouns.md): the title covers 1 of 6 H3s (tests 3, 4).**
 - Peel *How English approximates -r*, *Resume one sense*, and *Cross-role recast* onto a new sitting, `resume-sense.md`, titled "Resume one sense". All three answer *how do I point back when plain whole-stem -r is not enough?*
@@ -56,61 +57,28 @@ Each item has an ID used by the [plan](#phased-plan). **Move** means cutting an 
 **B5. [collectives.md](../grammar/intermediate/collectives.md) and [topic.md](../grammar/intermediate/topic.md): duplicate *Groups as the topic* (test 8).**
 - Delete the collectives copy. topic.md owns `#topic-groups`. If collectives' readers need the pointer, it becomes one Compare-with line.
 
-**B6. Ranges: one English job, two intermediate homes (test 5).** See [ranges in detail](#ranges-in-detail) for the full analysis.
-- Merge the two range H3s into one sitting, `ranges.md`, titled "Ranges": first the general range hooks, then number ranges.
-- Place the merged sitting after [locative-relations.md](../grammar/intermediate/locative-relations.md) and [digitless-exponents.md](../grammar/intermediate/digitless-exponents.md) on the path.
-- Fix numbers-applied's lead, which still promises clock times and dates (now on [digit-strings.md](../grammar/beginner/digit-strings.md)).
+**B6. Ranges: one English job, two intermediate homes (test 5).** This assumes `range-series.md` is implemented. In that state:
+- [ordered-ranges.md](../grammar/intermediate/ordered-ranges.md) `#ranges` teaches the one range series (`oel` / `uel` / `ual` / `uol`, with -m / -r / -n) on any ordered line, plus the endpoint rule.
+- [numbers-applied.md](../grammar/intermediate/numbers-applied.md) `#number-ranges` teaches the same hooks with number ends: counted nouns, which end `uel` leaves out, and kinds of number.
+- `al` / `ul` between numbers keep their *including* / *except* readings.
 
-#### Ranges in detail
-<a id="ranges-in-detail"></a>
-
-**What each page teaches today.**
-
-| | [ordered-ranges.md](../grammar/intermediate/ordered-ranges.md) `#ranges` | [numbers-applied.md](../grammar/intermediate/numbers-applied.md) `#ranges` | [open-ranges.md](../grammar/advanced/open-ranges.md) (Advanced) |
-|---|---|---|---|
-| Path position | Intermediate, early in the group | Intermediate, 11 sittings later | Advanced |
-| Items | Any ordered line: people in a queue, days, chapters, *numbers* | Two numbers with digits, both the same kind (amounts, ranks, labels / times) | Numbers, with ±∞ or first / last place as one end |
-| Both ends in | `A oel B` | `A al B` (the include hook, read as *through* because a number has nothing to include into) | `al` to ±∞ (*5 or more*) |
-| One end out | none | `A ul B` excludes the end said second | `ul` to ±∞ (*more than 5*) |
-| Both ends out / outside | `ual` / `uol` | `ual` / `uol`, tabled again for numbers | none |
-| Soft ends | `oem` | `am`, `um` | `am` |
-| Some member (-r) | `oer` / `uar` / `uor` | none | `ar` / `ur`, plus `uar` / `uor` again |
-| Named band (-n) | `oen`, mentioned only | none | `an` (*the teens*) |
-| `/w/` detail | before the hook | before the hook | none |
-
-**What is wrong.**
-
-1. **One English job, two homes.** For *3 through 5*, a learner has met `zragel oel zrazal` early in the Intermediate group and is taught `zragel al zrazal` 11 sittings later. The parser and the translation prompt read both as *three through five*. Neither page tells the learner which one to reach for: ordered-ranges mentions `al` / `ul` for numbers in one sentence, and numbers-applied never mentions `oel`.
-2. **Same heading, same id.** Both H3s are titled *Ranges* with `{#ranges}`, so `/ordered-ranges#ranges` and `/numbers-applied#ranges` look like the same thing in links. open-ranges links to both.
-3. **Rows taught twice.** `ual` and `uol` are tabled on both pages (numbers-applied says they "are the range hooks" and links to ordered-ranges). open-ranges re-tables `uar` / `uor`.
-4. **An asymmetry nobody states.** Half-open ranges (`ul`) exist only between numbers. A learner who wants *from Monday up to but not including Friday* has no form, and neither page says so. This proposal does not add one; see open decision 1.
-5. **Silent alias anchors.** numbers-applied's H3 carries `<a id="number-ranges">`, `<a id="numeric-ranges">`, and `<a id="from-to">` under the heading, against [one current heading, one current id](../meta/grammar-docs.md#one-current-heading).
-
-**These are not in conflict.** Between numbers, `oel` and `al` say the same thing, and `ual` / `uol` mean the same on both pages. A second way to say the same thing is not a cost (`AGENTS.md`, evaluating ideas), so nothing has to be banned. The fix is about where things are taught and how a learner chooses between them.
-
-**Recommended shape of `ranges.md` "Ranges"** (Intermediate):
-
-1. **`### A through B (oel / ual / uol) {#ranges}`**: today's ordered-ranges H3, unchanged except that the one-sentence pointer to `al` / `ul` is cut (H3 2 now teaches them).
-2. **`### Between two numbers (al / ul) {#number-ranges}`**: today's numbers-applied H3. It opens with the choice: *between two numbers with digits, `oel` works as it does anywhere, and `al` says the same thing. Use `al` when you also need its partner `ul` to leave out one end, which only numbers allow.* Then:
-   - Drop the `ual` / `uol` rows from its table and point back to H3 1.
-   - Drop the three silent anchors, retargeting any links to `#number-ranges`.
-   - Keep its Compare-with line about `zaol`, `zal`, rank joins, and place paths. The place-path link is why the merged sitting must come after locative-relations.
-
-**Knock-on changes:**
-- [open-ranges.md](../grammar/advanced/open-ranges.md): retarget *range* to `/ranges#number-ranges` and the *range hooks* to `/ranges#ranges`. Cut the repeated `uar` / `uor` sentence down to a link, unless it carries the only example of those forms with numbers (it does: keep the example and drop the restatement).
-- The `<!-- cheat-sheet: numbers -->` and `<!-- cheat-sheet: joins-hooks -->` markers move with their tables, so check that both cheat sheets still list every row once.
+The job is unified, but it is still taught on two pages 11 sittings apart.
+- Merge the two H3s into one sitting, `ranges.md`, titled "Ranges", in this order: `### Ranges {#ranges}` (the series), then `### Ranges of numbers {#number-ranges}`.
+- Place the merged sitting after [locative-relations.md](../grammar/intermediate/locative-relations.md) (the number H3's Compare-with links to its place paths) and after [digitless-exponents.md](../grammar/intermediate/digitless-exponents.md) (±∞ ends).
+- Keep both `<!-- cheat-sheet: … -->` markers with their tables, and check that the numbers and joins-hooks cheat sheets list every row once.
+- Retarget [open-ranges.md](../grammar/advanced/open-ranges.md) links to `/ranges#ranges` and `/ranges#number-ranges`.
 - Practice: ordered-ranges' checkpoint stays with the merged sitting. Move numbers-applied's range items only if they fit that setting; otherwise mark the row **generate** (Phase 7).
-- The numbers-applied remainder (measures and percent) gets renamed and retitled under D3, and the old `/numbers-applied` URL redirects there. `/ordered-ranges` redirects to `/ranges`.
+- Fix numbers-applied's lead, which still promises clock times and dates (now on [digit-strings.md](../grammar/beginner/digit-strings.md)) and ranges. What remains of that page (measures and percent) is renamed and retitled under D3. `/ordered-ranges` and `/numbers-applied` both get redirects ([URLs](#urls)).
 
 **B7. [ability.md](../grammar/intermediate/ability.md) and [want.md](../grammar/intermediate/want.md): DECISION and WANT split (tests 3, 5).**
 - Move *Decision (revisability)* to want.md, before *Someone else's want, plan, or decision*, which already covers both. Retitle want.md "Want and decide" (a choice set of mind-states about an act).
 - ability.md keeps *Try* and is retitled "Try" (renamed `try.md`; see [URLs](#urls)).
 - Check that DECISION's examples do not depend on TRY, and that the path order still holds.
 
-**B8. [sentence-linkers.md](../grammar/intermediate/sentence-linkers.md): writing rules and hinges mixed in with linkers (tests 3, 4).**
-- Move *Writing and speech rhythm (periods)* to [speech-moves.md](../grammar/beginner/speech-moves.md) if it passes the Beginner gate (a period closes a body; a new `/y/` starts a turn). If it fails the gate, move it to [tone-marks.md](../grammar/intermediate/tone-marks.md) and retitle that page "Periods and tone marks".
+**B8. [sentence-linkers.md](../grammar/intermediate/sentence-linkers.md): hinges mixed in with linkers (tests 3, 4).**
+- Keep *Writing and speech rhythm (periods)* on sentence-linkers, and retitle the H3 "What carries past a period". Its table is mostly about what crosses a sentence edge: `/x/` continue, linkers, topic words, stand-in hangs. That is the linking job, so it passes test 4 after all. See [gate runs](#gate-runs) G2 for the Beginner slice and the topic row.
 - Peel *Result (so … that)* and *Time hinges on a noun* onto a new sitting, `more-hinges.md`, titled "Hinges on a degree or a noun". Both are hinge + stand-in uses beyond Beginner [dependents](../grammar/beginner/dependents.md).
-- sentence-linkers keeps *Sentence linkers* and gains *Continue overview* (B3). Title: "Linking sentences".
+- sentence-linkers keeps *Sentence linkers* and *What carries past a period*, and gains *Continue overview* (B3). Title: "Linking sentences".
 
 ### C. Title does not cover the page (test 3)
 
@@ -181,9 +149,7 @@ Each item has an ID used by the [plan](#phased-plan). **Move** means cutting an 
 
 **E5. [extra-noun-hooks.md](../grammar/beginner/extra-noun-hooks.md) "Extra nouns and whose":** `om` is itself an extra-noun hook, so the page passes as one form family. Retitle it "Extra-noun hooks" so the *and* goes.
 
-**E6. [singability.md](../grammar/advanced/singability.md) *Thinking sounds*:** this is a form, not a singing rule. Run the gates.
-- If it passes Beginner, move it to speech-moves beside *Interjections*. Watch speech-moves' H3 count, since B8 and C8 also add to it.
-- If it doesn't, keep it and retitle singability "Singing, speech edges, and pauses".
+**E6. [singability.md](../grammar/advanced/singability.md) *Thinking sounds*:** this is a form, not a singing rule. Move it to [speech-moves.md](../grammar/beginner/speech-moves.md) as a **Beginner** H3 after *Interjections* ([gate runs](#gate-runs) G3). singability keeps 7 H3s, and its title still covers them.
 
 **E7. [join-limits.md](../grammar/advanced/join-limits.md) *Named phrase -n*** echoes proper-names' *Titled phrases*. They are in different bands, so add one Compare-with line from join-limits to proper-names. Nothing moves.
 
@@ -193,7 +159,7 @@ Each item has an ID used by the [plan](#phased-plan). **Move** means cutting an 
 
 | New sitting | Band | From |
 |-------------|------|------|
-| `no-subject.md` "Leaving out who acts" | gate (Beginner or Intermediate) | B1 |
+| `no-subject.md` "Leaving out who acts" | Beginner | B1 |
 | `resume-sense.md` "Resume one sense" | Intermediate | B2 |
 | `contrary-to.md` "Contrary to" | Intermediate | B4 |
 | `more-hinges.md` "Hinges on a degree or a noun" | Intermediate | B8 |
@@ -229,7 +195,6 @@ Removed: `join-across-roles.md` (D1), which redirects to the merged joins page.
 | `sake-bars.md` | `bars.md` | Than planned, enough, too | D4 |
 | `extra-noun-hooks.md` | keep | Extra-noun hooks | E5 |
 | `stacked-markers.md` | keep | (E3 retitle) | E3 |
-| `tone-marks.md` | `periods-and-tone-marks.md`, only if B8's fallback applies | Periods and tone marks | B8 |
 
 If a final title comes out different from this table, the slug follows the final title: kebab-case, dropping punctuation and filler words.
 
@@ -276,7 +241,7 @@ Each prompt contains:
    - A source sitting keeps its own items.
    - A destination sitting may hold items for a moved H3 only if its setting fits. Otherwise drop the items and mark the destination row **generate** in the allowlist.
    - Never write a new checkpoint inside a move item; Phase 7 does that.
-5. **Gates.** For any item marked "run the gates", report the result of each [gate](../meta/learning-levels.md#gates) before placing the file.
+5. **Gates.** Bands for B1, B8, and E6 are settled in [gate runs](#gate-runs). Pass the matching G section into that subagent's prompt, including its thinning steps. If the subagent finds a dependency the G section missed, it reports it instead of changing the band.
 6. **Verify.** Run `npm run cheat-sheet-blocks -- --write`, then `npm run build` and `npm test`. Check every moved example with `node scripts/parse.mjs`.
 7. **Report:**
    - H3s moved, with ids
@@ -290,7 +255,7 @@ Each prompt contains:
 
 - Run `npm run build` and `npm test`, and record `npm run page-lines -- --sittings --headings`.
 - Re-check every finding in this proposal against the current tree. Drop any that no longer hold.
-- Ask the user open decision 1 (whether to teach a default between `oel` and `al` for numbers). It shapes 3.12's lead sentence, but not whether 3.12 runs.
+- Confirm that `range-series.md` is implemented: its proposal file is gone, a design-decisions entry exists, and `find.mjs --seq 'family=number' 'raw=(al|ul|am|um|ar|ur|an|un)' 'family=number'` finds no number-range uses. If it is not implemented, stop and tell the user; B6 depends on it.
 - Commit nothing; Phase 0 changes no files.
 
 ### Phase 1: Content bug (1 subagent)
@@ -307,7 +272,7 @@ Every item in this batch stays within its own page(s) plus link retargets.
 - **2.4** E2: joins.md, word-endings.md, stacked-markers.md, together with E3 (same file)
 - **2.5** E5 (extra-noun-hooks.md)
 - **2.6** E7 and E8 (join-limits.md, here-there.md)
-- **2.7** numbers-applied lead fix from B6 (lead only), plus dropping its three silent alias anchors (retarget links to `#ranges` for now; 3.12 renames the id)
+- **2.7** numbers-applied lead fix from B6 (lead only)
 
 Main agent: one build and test run after the batch, then send any fixes back to the subagent that owns the failing file. Then commit the phase.
 
@@ -318,7 +283,7 @@ Work outward from the clusters that other items depend on.
 - **3.1** Numbers cluster: B3 (number-word fold), D3, and C5's *Group separator*. Files: proper-names, number-markers, number-roles, numbers-applied, digitless-exponents.
 - **3.2** C5 *How big?* → fill-ask-roles, with its retitle.
 - **3.3** B3 *Continue overview* → sentence-linkers.
-- **3.4** C8 dependents *Continue* → speech-moves, and B8 *Periods* (gate first), then E6 (gate first). Watch speech-moves' H3 count.
+- **3.4** C8 dependents *Continue* → speech-moves; E6 *Thinking sounds* → speech-moves with G3's thinning; G2's Beginner sentence on the spoken rest; B8's period H3 retitle and topic-row move. speech-moves ends at 7 H3s.
 - **3.5** B7 Decision → want.md; retitle want.md and ability.md.
 - **3.6** C4 and D2: Commands to be ADJ and Questions that sound like another act → speech-acts; then C7's retitle.
 - **3.7** B2 (part 1): *Each other* and *Addressing several people* → collectives.
@@ -326,13 +291,13 @@ Work outward from the clusters that other items depend on.
 - **3.9** C6 hooks re-cut (discourse-hooks ↔ ending-grids).
 - **3.10** D4 bars merge into sake-bars, including the channel bar from notional-standing.
 - **3.11** D1 merge join-across-roles → vp-clause-forms, with its redirect row.
-- **3.12** B6 ranges: merge numbers-applied's *Ranges* into ordered-ranges as the second H3 `{#number-ranges}`, following [ranges in detail](#ranges-in-detail). This includes the opening choice sentence, dropping the duplicate `ual` / `uol` rows, retargeting open-ranges, and both cheat-sheet markers. Placement on the path waits for Phase 6, and the file rename for Phase 5.
+- **3.12** B6 ranges: merge numbers-applied's `#number-ranges` H3 into ordered-ranges as its second H3, with the B6 steps (cheat-sheet markers, open-ranges links, Practice). Placement on the path waits for Phase 6, and the file rename for Phase 5.
 
 ### Phase 4: Peels onto new sittings (sequential, 1 subagent each)
 
 Each peel uses `npm run peel-headings` (dry run first, then `--write`), splits Practice by hand, and leaves the new allowlist row as **generate**.
 
-- **4.1** B1 (part 2): `no-subject.md` (gate first).
+- **4.1** B1 (part 2): `no-subject.md` into `beginner/`, with G1's thinning. Place it after clause.md in `reading-order.ts`.
 - **4.2** B2 (part 2): `resume-sense.md`.
 - **4.3** B4: `contrary-to.md`, then the hand move from prescription; then C3's retitle.
 - **4.4** B8: `more-hinges.md`.
@@ -343,7 +308,7 @@ Each peel uses `npm run peel-headings` (dry run first, then `--write`), splits P
 ### Phase 5: Renames and redirects (sequential, 1 subagent per row)
 
 - One subagent per renamed row in the [URLs](#urls) table, following its six steps.
-- Rows whose new title is still unsettled (numbers-applied's title choice, `tone-marks.md`'s conditional) wait until Phases 3 and 4 have fixed the title.
+- Rows whose new title is still unsettled (numbers-applied's title choice) wait until Phases 3 and 4 have fixed the title.
 - Rename before Phase 6 places sittings, so the sidebar is edited once under its final names.
 - The main agent checks `dist/amplify-redirects.json` after the last rename: one 301 per old URL, no chains, all above `/<*>`.
 
@@ -351,7 +316,7 @@ Each peel uses `npm run peel-headings` (dry run first, then `--write`), splits P
 
 - Walk the three sidebar groups in `reading-order.ts` and apply [order inside a band](../meta/learning-levels.md#order-inside-a-band) to every sitting this proposal touched. Run `npm run lint:forward-links` (part of the build).
 - Every new sitting gets a review item in its band's level review, and the removed sitting's item goes.
-- Fixed placements: `ranges.md` after `locative-relations.md` and `digitless-exponents.md`. `contrary-to.md` after evidentiality and `doing-it-for-a-sake.md`. `bars.md` after evidentiality and comparative-arity. `more-turn-words.md` before rhetorical-questions.
+- Fixed placements: `no-subject.md` right after clause.md (Beginner), before pronouns.md. `ranges.md` after `locative-relations.md` and `digitless-exponents.md`. `contrary-to.md` after evidentiality and `doing-it-for-a-sake.md`. `bars.md` after evidentiality and comparative-arity. `more-turn-words.md` before rhetorical-questions.
 
 ### Phase 7: Checkpoints (parallel, 1 subagent per sitting)
 
@@ -368,12 +333,55 @@ Each peel uses `npm run peel-headings` (dry run first, then `--write`), splits P
 - Commit the phase.
 - Set this proposal's status, and move it to `partially-implemented/` or delete it per [proposals](../meta/proposals.md).
 
+## Gate runs
+<a id="gate-runs"></a>
+
+**Decided** (2026-11-04): G1, G2, and G3 below are adopted as written. Three items could move between bands, so the [gates](../meta/learning-levels.md#gates) were run on each, in order: gate 0 (is it a form?), gate 1 (Advanced, any one criterion), gate 2 (Beginner: corpus, usable, and slice, all three), then gate 4 (dependency placement). Path positions come from [`reading-order.ts`](../grammar/.vitepress/lib/reading-order.ts).
+
+### G1. Leaving out who acts (B1): Beginner
+
+| Gate | Result |
+|------|--------|
+| 0. Form | Yes: a role-letter rule (the `/z/` word may be left out, and then the sentence names no doer). |
+| 1. Advanced | Fails. The passive (*was seen*, *got stolen*, *mistakes were made*) is everyday English, not rare or stylistic. |
+| 2. Corpus | **Passes, twice over.** First-stretch dialogue hits the passive. And a Beginner sitting already needs it: [pronouns.md](../grammar/beginner/pronouns.md#whoever-it-was) *Whoever it was* opens with `dugedel vayebel.`, a sentence with no subject, while the rule's home sits in Intermediate. That is a live gate-4 violation today. |
+| 2. Usable | Passes: one sentence of explanation and one example. |
+| 2. Slice | Passes: the whole rule is the slice. |
+| 4. Dependencies | The H3 uses `/d/` and `/v/` (clause.md, position 11), so it goes right after clause.md and before pronouns.md (position 14). Its Compare-with line has two forward references to thin: **`zumen`** (pronouns, later) and **`zalen`** (topic, Intermediate). Move the `zumen` contrast onto pronouns' *Special pronouns* H3, pointing back to this one. Move the *a missing subject never means the topic* sentence to topic.md's *The topic pronoun*. |
+
+**Decision:** a new Beginner sitting, not an H3 on clause.md. clause.md has 9 H3s, and a 10th would put it at the cap with no room left. A one-H3 sitting passes the [lower bound](../meta/grammar-docs.md#one-sitting) if it earns a checkpoint, and a short "who did it?" setting can.
+
+### G2. Periods (B8): split, with the Beginner slice already in place
+
+| Gate | Result |
+|------|--------|
+| 0. Form | Yes: punctuation, and the rest that a period stands for in speech. |
+| 1. Advanced | Only the speech column touches "speech edges"; the table as a whole is about what a period does to the speech act. Not Advanced. |
+| 2. Corpus | The *core* passes: every Beginner example ends in a period. |
+| 2. Usable | **The whole table fails.** Its rows need `/x/` continue, linkers, topic words, soft **-m**, and stand-in hangs, most of them Intermediate. |
+| 2. Slice | **A slice exists and is mostly taught already.** clause.md says *a period ends the statement*, and speech-moves says *a period already marks a statement, so you usually leave `yal` out*. The only missing part is the spoken side: *in speech, a period is a rest of one silent beat*. |
+| 3. Otherwise | The rest is Intermediate, "finish the series". |
+| 4. Dependencies | sentence-linkers is position 58 and topic.md 61, so the table's topic-word row already points forward. |
+
+**Decision:**
+- Add one sentence on the spoken rest to speech-moves' *Turn* H3. That is a Beginner slice, not a moved H3.
+- Keep the table on sentence-linkers, retitled "What carries past a period".
+- Move its topic-word row to topic.md (*What a topic change resets*), which follows sentence-linkers on the path.
+- This replaces the earlier plan (move to speech-moves, falling back to tone-marks), so the conditional tone-marks rename is dropped.
+
+### G3. Thinking sounds (E6): Beginner
+
+| Gate | Result |
+|------|--------|
+| 0. Form | Yes: two conventional sounds with distinct, assigned meanings (*still thinking* / *the word is on its way*), plus a rule (never hold `u`). |
+| 1. Advanced | Fails. It is not rare: hesitation is constant in learner speech. It is not stylistic or singing. It is not a speech *edge* either: singability's *Speech edges* is about where a sentence starts and stops, and a thinking sound holds a gap in the middle. |
+| 2. Corpus | **Passes strongly.** A learner speaking at all needs a way to hold the floor, and Beginner is when they will pause most. |
+| 2. Usable | Passes: one table of two rows. |
+| 2. Slice | Passes: the whole H3. |
+| 4. Dependencies | It uses vowels and pitch (phonology, position 1). The `u` warning relies on `u` meaning *not*, which is in [joins.md](../grammar/beginner/joins.md#negation-u), Beginner, after speech-moves. Rephrase that warning as "a held `u` can sound like a denial" without the grammar-word claim, or place the H3 after joins. Two forward references to thin: **letter names** (Intermediate, position 51): move the *a thinking vowel is held well past one beat, unlike a letter name* contrast to letter-names.md. The **`ol` / `el`** Compare-with (hooks.md, position 19): keep it, but move it to hooks.md's *Rather* H3, pointing back. |
+
+**Decision:** an H3 on speech-moves after *Interjections*. Both are short sounds that stand outside the clause. That brings speech-moves to 7 H3s once C8's *Continue* lands too.
+
 ## Open decisions
 
-These wait for the user. The main agent adds anything a subagent reports.
-
-1. **Ranges, default for numbers** (does not block 3.12). Between two numbers, `oel` and `al` mean the same. The recommendation is to teach both and say: *use `al` when you also need `ul` to leave out one end*. Alternatives:
-   - Make `al` the only taught form for numbers, so `oel` between numbers is never shown (but stays grammatical).
-   - Make `oel` the default everywhere, and teach `al` / `ul` only for half-open ranges.
-2. **Half-open ranges on non-number lines** ([ranges in detail](#ranges-in-detail), problem 4). *From Monday up to but not including Friday* has no form. This proposal does not add one. If it is a gap, log it with the `find-english.mjs` phrases tried.
-3. **Gate results:** B1 `no-subject.md`, B8 *Periods*, and E6 *Thinking sounds* can each land in Beginner. The main agent reports each result, and asks only if the gates are unclear.
+None at present. The main agent adds anything a subagent reports, and skips the affected item until the user decides.

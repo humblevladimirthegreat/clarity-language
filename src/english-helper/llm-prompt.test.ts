@@ -36,6 +36,15 @@ describe("English helper prompt", () => {
     for (const ageben of examples) assert.ok(context.index.some((pair) => pair.ageben === ageben), ageben);
   });
 
+  it("warns about the syntax errors model drafts made", () => {
+    const prompt = promptForEnglish(["The dog and the cat sleep, then they eat."], data, context);
+    const rules = prompt.slice(prompt.indexOf("## How to write Ageben"), prompt.indexOf("## How to read the gloss"));
+    assert.ok(rules.includes("### Common mistakes"));
+    for (const phrase of ["never its vowel on its own", "never write the notation", "No commas between words"]) {
+      assert.ok(rules.includes(phrase), phrase);
+    }
+  });
+
   it("explains only the constructions its examples use", () => {
     const prompt = promptForEnglish(["The cat sleeps on the green book."], data, context);
     const shown = new Set(context.index.filter((pair) => examplesIn(prompt).includes(pair.ageben)).flatMap((pair) => pair.constructions));

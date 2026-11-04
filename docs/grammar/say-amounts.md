@@ -325,6 +325,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *twice* / *double* (two times) | `h+2` before the verb |
 | *ratio* (*three cats to one dog*) | `zogozelx zodozelx zoel gral hragel` ([factor](/comparative-arity#factor)) |
 | *at least 5* / *at most 5* (*minimum* / *maximum*) | `zrazal al zrawal` / `zruwal al zrazal` |
+| *2nd through last* (a rank up to the last place) | `zrodol al zrowal` |
 | *decade* / *century* | `bovuvam g+10` / `bovuvam g+100` |
 | *unit* | the measure phrase: `bezerom g+2` |
 | *estimate* (*I put it at 40*) | stance number `th+40` |

@@ -3,7 +3,7 @@ import { describe, it } from "node:test";
 
 import { collectEnglishEntries } from "../find/english.js";
 import { loadDefaultTables } from "../parse/index.js";
-import { buildCueIndex, matchCues } from "./cues.js";
+import { buildCueIndex, COUNT_SLOT, matchCues, RANK_SLOT, type CueIndex } from "./cues.js";
 import { cueWords } from "./tag.js";
 
 const page = `# Saying it
@@ -39,7 +39,7 @@ const index = buildCueIndex(entries, cueWords);
 describe("buildCueIndex", () => {
   it("lists a heading cue's jobs in table order, linked to Teach", () => {
     const by = index.get("by")!;
-    assert.deepEqual(by.map((j) => [j.form, j.link]), [["ael / /b/", "hooks.md#extra-noun"], ["om / /b/", "hooks.md#extra-noun"]]);
+    assert.deepEqual(by.map((j) => [j.form, j.link]), [["ael + /b/", "hooks.md#extra-noun"], ["om + /b/", "hooks.md#extra-noun"]]);
     assert.equal(by[0]!.itch, "tool (writes by a hammer)");
   });
 
@@ -87,5 +87,13 @@ describe("matchCues", () => {
     const normals = ["sits", "next", "to", "it", "by", "cars"];
     const lemmas = ["sit", "next", "to", "it", "by", "car"];
     assert.deepEqual(matchCues(index, normals, lemmas).map((m) => [m.start, m.end, m.key]), [[1, 3, "next to"], [4, 5, "by"]]);
+  });
+
+  it("matches a cue's written number against any number in its place", () => {
+    const numbered: CueIndex = new Map([["at least #n", []], ["#o through last", []]]);
+    const normals = ["sees", "at", "least", "seven", "and", "the", "3rd", "through", "last"];
+    const numbers = [undefined, undefined, undefined, COUNT_SLOT, undefined, undefined, RANK_SLOT, undefined, undefined];
+    assert.deepEqual(matchCues(numbered, normals, normals, numbers).map((m) => [m.start, m.end, m.key]), [[1, 4, "at least #n"], [6, 9, "#o through last"]]);
+    assert.deepEqual(matchCues(numbered, normals, normals), []);
   });
 });

@@ -45,7 +45,7 @@
  * row spells. The all-roots top-1 stays in the report.
  *
  * Checkpoint items are also scored on the prompt for their own band (`--stage`, from the page's
- * folder): staged self-contained. Report only, beside prompt characters per self-contained sentence.
+ * folder): staged self-contained, guarded on the checkpoint set beside the full-prompt score.
  *
  * Worklist classes found mechanically: missing cue, link without form, pattern read as spelling
  * (the linking row's form is only notation), joined prose cell (a table cell joins two code spans
@@ -329,8 +329,8 @@ function lemmaFor(word: TreeWord, sentenceWords: Set<string>): string {
 /** Every suggestion in an analysis's slots. */
 const rowsOf = (analysis: Analysis) => analysis.clauses.flatMap((c) => c.slots.flatMap((s) => s.suggestions));
 
-/** Prose between two code spans of a table cell (`a` and `b`, `a` + `b`): the helper reads the spans as alternatives. */
-const JOINED_PROSE = /`[^`|]+`\**\s+(?:and|then|plus|\+|with|before|after)\s+\**`/;
+/** Prose between two code spans of a table cell (`a` and `b`): the helper reads the spans as alternatives. A `+` keeps them one form. */
+const JOINED_PROSE = /`[^`|]+`\**\s+(?:and|then|plus|with|before|after)\s+\**`/;
 
 /** The source rows (`page.md:line`) whose form cell joins code spans with prose. */
 function joinedProseRow(source: string): boolean {
@@ -690,6 +690,7 @@ function summarize(set: SetName) {
   const v = t.verify;
   const flaggedWords = v ? sum(v.checks) : 0;
   const plants = v ? [...v.plants.values()].reduce((a, p) => ({ planted: a.planted + p.planted, flagged: a.flagged + p.flagged }), { planted: 0, flagged: 0 }) : undefined;
+  if (t.staged.sentences) Object.assign(headline, { stagedSelfContained: share(t.staged.selfContained, t.staged.sentences) });
   if (v && plants) Object.assign(headline, { verifyPrecision: share(v.words - flaggedWords, v.words), verifyRecall: share(plants.flagged, plants.planted) });
   const verify = v && plants && {
     answers: v.answers,
@@ -770,6 +771,7 @@ type Baseline = { sets: Partial<Record<SetName, { sentences: number } & Partial<
 const HELD_OUT: readonly SetName[] = ["checkpoint", "wild"];
 const HEADLINE = [
   { key: "selfContained", label: "self-contained", better: "higher", tolerance: 0.5, sets: HELD_OUT },
+  { key: "stagedSelfContained", label: "staged self-contained", better: "higher", tolerance: 0.5, sets: ["checkpoint"] },
   { key: "wordInPrompt", label: "word in prompt", better: "higher", tolerance: 0.5, sets: HELD_OUT },
   { key: "rootTop1Open", label: "open-class root top-1", better: "higher", tolerance: 0.5, sets: HELD_OUT },
   { key: "closedRowFirst", label: "closed root row first", better: "higher", tolerance: 0.5, sets: HELD_OUT },

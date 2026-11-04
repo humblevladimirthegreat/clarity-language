@@ -44,6 +44,8 @@ Five dollars per hour.	per	not:hooks.md#extra-noun	*per* is a rate, not an extra
 Uzozen walks from the house to the station.	to	has:from-to	*from … to* is noted
 The dog sleeps in the house near the station.	near	has:hook-on-landmark	a hook after a landmark is noted
 What does Uzozen write with?	with	has:hook-blank	a stranded question hook is noted
+Azozon walks to the station.	to	shape:el + /b/ / ul	a hook and its `/b/` joined by `+` are one form, not two alternatives
+Alazun sees the dog of Azozon.	of	shape:om + /b/	the *of* hook row keeps `om + /b/` as one form
 # Aliases and compounds
 He left hastily.	hastily	sense:haste	a word only an alias names finds its root
 He is asleep.	asleep	sense:sleep	a word only an alias names finds its root
@@ -99,3 +101,22 @@ The cat wishes to eat.	wishes	not:plurality.md#associative	the subject can open 
 Azozon asks Alazun to dance, and maybe more.	and maybe more	link:stand-in-vowels.md#stand-in	after a to-clause, the open stand-in
 Azozon asks Alazun to dance, and maybe more.	to	form:dorm	the *to* row spells the open stand-in
 We bought bread and milk, among other things.	among other things	link:joins.md#join-type-vowel-series	after a list, the open join
+# Number cues: a written number in a cue matches any number, and the row is respelled with it
+Seven or more birds sing.	Seven or more	link:open-ranges.md#rays	*5 or more* matches *seven or more*
+Seven or more birds sing.	Seven or more	form:grarel	the ray is respelled with the input's number, on `g` before its noun
+Uzozen reads less than four books.	less than four	form:gruwal	*less than* reaches the ray on −∞, on `g` before its noun
+Uzozen sees at least two cats.	at least two	link:say-amounts.md#quantity-words	*at least 5* matches *at least two*
+Uzozen sees the 3rd through last cars.	3rd through last	form:grogel	a rank cue matches another rank
+Uzozen's second child runs.	second child	form:g#2e1	a kin birth-order row keeps its generation and takes the input's rank
+Uzozen's fourth child runs.	fourth child	form:g#4e1	a kin birth-order row keeps its generation and takes the input's rank
+Uzozen is Ahelan's sibling.	sibling	link:say-people-places.md#kin-words	*sibling* has a kin row
+# Initials
+The BZ writes.	BZ	form:z@_bz	capital initials are spelled as a letter code with `@`
+Uzozen sees the NM.	NM	form:d@_nm	the code takes the slot's role
+The TV sings.	TV	not:initials.md#initials	letters that are not Ageben consonants are not initials
+# Join vowels: a vowel-series row is spelled as the join word, never the bare vowel
+Uzozen does not run.	not	form:vul	*not* before a verb is the verb join on **u**
+Uzozen and Ahelan run.	and	form:zam	*and* between subjects is the open subject join
+Uzozen eats bread or rice.	or	form:del	exclusive *or* between objects is the object join on **e**
+The soup is not cold.	not	form:gul	*not* before an adjective is the adjective join
+Uzozen does not run.	not	shape:role letter + u + -l	the row shows the join pattern, never the bare vowel

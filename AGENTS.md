@@ -84,6 +84,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `proposals.md` | Notes for `docs/proposals/`, never link to proposal pages (filenames in backticks only). |
 | `site-redirects.md` | Public URL remaps. |
 | `agents-md.md` | What belongs in this file. |
+| `english-helper.md` | English → Ageben helper quality: test sets, free metrics, worklist classes and where each fix goes, `cases.tsv` and the baseline, the paid eval, the loop, and the next round. |
 | `wizard-game.md` | Wizard sandbox engine (`src/game/`): what it reads from the docs, writing game content as morph gloss, and its checks. |
 | `TODO.md` (root) | Planned revisions; fold into grammar docs as work proceeds. |
 

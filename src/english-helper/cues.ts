@@ -104,7 +104,7 @@ export function buildCueIndex(entries: readonly EnglishEntry[], words: (cue: str
     const rowLink = entry.teach ? resolveLink(entry.page, entry.teach) : `${page}#${entry.slug}`;
     for (const [rank, cue] of entry.cues.entries()) {
       if (!usableCue(cue)) continue;
-      const key = words(cue).join(" ");
+      const key = numberKey(words(cue));
       if (!key || key.split(" ").length > MAX_CUE_WORDS) continue;
       const named = !entry.teach && sections ? namedSection(sections, page, cue) : undefined;
       const link = named?.link ?? rowLink;
@@ -123,20 +123,39 @@ export function buildCueIndex(entries: readonly EnglishEntry[], words: (cue: str
   return index;
 }
 
+/** Placeholders for a number in a cue: a written count (*5 or more*) matches any count, a written rank (*2nd*) any rank. */
+export const COUNT_SLOT = "#n";
+export const RANK_SLOT = "#o";
+
+function numberSlot(word: string): string | undefined {
+  return /^\d+$/.test(word) ? COUNT_SLOT : /^\d+(?:st|nd|rd|th)$/.test(word) ? RANK_SLOT : undefined;
+}
+
+/** A cue's words as a key, with each written number as its placeholder when the cue has other words (*at least 5* → `at least #n`). */
+function numberKey(words: readonly string[]): string {
+  const slots = words.map(numberSlot);
+  if (slots.every(Boolean)) return words.join(" ");
+  return words.map((w, k) => slots[k] ?? w).join(" ");
+}
+
 export type CueMatch = { start: number; end: number; key: string; jobs: GrammarJob[] };
 
 /**
  * Cue runs in a clause, longest first, without overlap. `normals` are the words as written;
+ * `numbers` holds each number word's placeholder ({@link COUNT_SLOT}, {@link RANK_SLOT}), so *at least five* matches *at least 5*;
  * `lemmas` let a one-word cue match an inflected form (*dogs* → *dog*). A word that is a cue of
  * its own and inflects one (*becoming*, *become*) gets both cues' jobs, its own first.
  */
-export function matchCues(index: CueIndex, normals: readonly string[], lemmas: readonly string[]): CueMatch[] {
+export function matchCues(index: CueIndex, normals: readonly string[], lemmas: readonly string[], numbers: readonly (string | undefined)[] = []): CueMatch[] {
   const taken = new Array<boolean>(normals.length).fill(false);
   const out: CueMatch[] = [];
   for (let len = Math.min(MAX_CUE_WORDS, normals.length); len >= 1; len--) {
     for (let i = 0; i + len <= normals.length; i++) {
       if (taken.slice(i, i + len).some(Boolean)) continue;
-      const keys = [...new Set([normals.slice(i, i + len).join(" "), ...(len === 1 ? [lemmas[i]!] : [])])].filter((k) => index.has(k));
+      const window = normals.slice(i, i + len);
+      const slotted = window.map((w, k) => numbers[i + k] ?? w);
+      const numbered = slotted.some((w, k) => w !== window[k]) && slotted.some((w) => w !== COUNT_SLOT && w !== RANK_SLOT) ? [slotted.join(" ")] : [];
+      const keys = [...new Set([window.join(" "), ...numbered, ...(len === 1 ? [lemmas[i]!] : [])])].filter((k) => index.has(k));
       const key = keys[0];
       if (!key) continue;
       out.push({ start: i, end: i + len, key, jobs: keys.flatMap((k) => index.get(k)!) });

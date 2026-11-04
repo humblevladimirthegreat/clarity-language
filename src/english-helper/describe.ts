@@ -125,7 +125,7 @@ export function suggestionLine(data: HelperData, s: Suggestion): string {
     case "job":
       return `${s.itch}  \`${s.form}\`${s.phrase ? `  say \`${s.phrase}\`` : ""}  → ${link(s.link)}`;
     case "detector":
-      return `${s.label}${s.form ? `  \`${s.form}\` after its noun` : ""}  → ${s.links.map(link).join(" · ")}`;
+      return `${s.label}${s.form ? `  \`${s.form}\`${s.id === "number" ? " after its noun" : ""}` : ""}  → ${s.links.map(link).join(" · ")}`;
     case "role": {
       const reading = roleReading(s);
       const parts = s.modifier ? `${s.modifier.root} + ${s.root}` : s.root;

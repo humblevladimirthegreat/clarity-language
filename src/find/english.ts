@@ -129,8 +129,18 @@ function splitRow(line: string): string[] {
 }
 
 function tableForm(cell: string): string {
-  const codes = [...cell.matchAll(/`([^`]+)`/g)].map((m) => m[1]!);
-  return codes.length ? codes.join(" / ") : plainText(cell);
+  const spans = [...cell.matchAll(/`([^`]+)`/g)];
+  if (!spans.length) return plainText(cell);
+  // Spans the cell joins with `+` are one form (`om` + `/b/` → `om + /b/`, past a gloss like `el` (*at*) + `/b/`);
+  // the rest are alternatives.
+  return spans
+    .map((m, k) => {
+      if (k === 0) return m[1]!;
+      const prev = spans[k - 1]!;
+      const between = cell.slice(prev.index! + prev[0].length, m.index!).replace(/\([^)]*\)/g, "").replace(/[()]/g, "");
+      return `${/^[\s*]*\+[\s*]*$/.test(between) ? " + " : " / "}${m[1]!}`;
+    })
+    .join("");
 }
 
 /**
