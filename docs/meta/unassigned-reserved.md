@@ -137,7 +137,9 @@ Source: [relations.md](/relations)
 
 Source: [hooks.md](/ordered-ranges#ranges), [sakes.md](/prescription#contrary-to-stance)
 
-- **open:** in-clause **`ao`** / **`ae`** / **`ue`** (`ael` / `aol` / `uol` and **-m** / **-n**) between same-role words. `ael` has two guesses (*for example*, from discourse `ael …`, or *namely*); `aol` *A, in fact B* (it escalates and keeps A, unlike `ol`) is a fair fill but rarely needed; `uol` has no guess. The parser rejects them; extra-noun and discourse uses are unaffected.
+- **open:** same-role **`ael`** (and **`aem`** / **`aen`** / **`aer`**) between two words. The candidates (*throughout*, *next to*, *wrapping*, *midway*, *for example*, *namely*) have no guessable cue, and *somewhere between* is already `oer` / `uor`. The parser rejects it (`hookSameRoleStack`); extra-noun and discourse uses are unaffected.
+- **open:** a range of landmarks (*walk in rooms 3 through 5*). A hook right after a landmark is an extra noun on it, so `al bX oel bY` is *in X toward Y*. For *from X to Y* use `ul bX oel bY`; otherwise state the range in its own role. A scope island cannot help: a hook is never a binder.
+- **closed (D-63):** a range between two numbers of different kinds (`zragel oel zrodol`, `zrodol oel zrawal`). Parser: `rangeEndpointKind`.
 - **open:** stacked **-r** at the front of a sentence (`aor …`, `aer …`, `uor …`). Extra-noun point-back is assigned; as sentence glue they have no guess (*For example, anyway?* *In fact, as I said?*). Parser: `hookDiscourseStack`.
 - **open:** discourse **`oel`** / **`ual`** / **`uel`** / **`uol`** (and **-m** / **-n**) at the front of a sentence. *Toward*, *out of*, *through* and *against* give no guessable sentence-to-sentence glue (guesses range from *Alternatively* to *Apart from that*). The parser rejects them.
 - **open:** a hook + `barl` other than `ul` (`hookStandIn`). Most have no guess (*in that…*, *at that…*). *Contrary to* an event is `hezem blarl`, and no job has turned up for `uom barl`.
