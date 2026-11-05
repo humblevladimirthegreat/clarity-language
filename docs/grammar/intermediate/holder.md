@@ -112,6 +112,8 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 >
 > "Azozon walks, against Alazun's plan, as far as I can tell."
 
+**Compare with:** someone else's aim takes a holder the same way. The [so that](/dependents#so-that) hinge alone is your aim; after a holder it is the holder's, so `zazozon thebamazozon vowurol thovam blarl zazozon vehohel.` is *I hear Azozon walks in order to sit*.
+
 **Someone else's motive** goes the same way. A [motive](prescription.md#sake-preference) word alone names what the act serves for you; it does not say why the actor does it. After a holder, the motive is the holder's, and the seam word says how you know their reason.
 
 > `zazozon vezuyol thawethom theyomazozon.`
@@ -125,7 +127,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 | In the clause | With no holder | With a holder |
 |---------------|----------------|---------------|
 | The event | you assert it | what the holder takes to be so; you do not assert it |
-| MAY, CAUSE hinges, PLAN, prescription | yours | the holder's |
+| MAY, CAUSE hinges, *so that*, PLAN, prescription | yours | the holder's |
 | [Sake](/sakes) words and [emotion compose](feelings-permission.md#emotion-compose), with their endings | your stake and feeling | the holder's stake and feeling |
 | A `/ɡ/` sake's *my* reading ([personal possession](/sakes#personal-possession)) | your belonging | the holder's belonging |
 | Another evidential | how you know | how the holder knows |

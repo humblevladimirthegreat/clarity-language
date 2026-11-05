@@ -423,6 +423,10 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (word.pos === "h" && (stemRoot === CLOSED.map || stemRoot === CLOSED.check) && word.ending !== "n") {
     throw new ConstructionError("retiredIntentionRoot", word.raw);
   }
+  // The purpose hinge is no `/h/` word: an aim is in a mind, a `/th/` stance (dependents.md#so-that).
+  if (word.pos === "h" && stemRoot === CLOSED.goal && word.ending === "m") {
+    throw new ConstructionError("retiredPurposeHinge", word.raw);
+  }
   if (word.pos === "th" && word.family.kind === "number") enforceStanceNumber(word, word.family.stem);
   if (word.pos === "w" && word.family.kind === "number") enforceDegreeNumber(word, word.family.stem);
   if (word.plural && isGenericPronoun(word)) throw new ConstructionError("genericPlural", word.raw);

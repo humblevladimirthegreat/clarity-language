@@ -312,8 +312,8 @@ describe("parse — stand-in dependents", () => {
     assert.equal(clause.dependent?.orodo.raw, "blarl");
   });
 
-  it("parses hanem barl purpose dependent", () => {
-    const result = parseText("zazozon vowurol hovam blarl zalazun vehohel.");
+  it("parses thovam blarl purpose dependent", () => {
+    const result = parseText("zuwen vowurol thovam blarl zalazun vehohel.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
     assert.equal(clause.dependent!.orodo.raw, "blarl");

@@ -109,8 +109,8 @@ abam,h,🎒,clause_hinge,before,BEFORE clause hinge (ahead-of),backpack holds wh
 abam,g,🎒,clause_hinge,before,BEFORE clause hinge (ahead-of),backpack holds what you need ahead; preparation is before the event,sentence-linkers.md#time-hinge-on-noun
 alam,h,⌛,clause_hinge,after,AFTER clause hinge (just-after),the sand has just run through; recency is after the prior edge,dependents.md#hinges
 alam,g,⌛,clause_hinge,after,AFTER clause hinge (just-after),the sand has just run through; recency is after the prior edge,sentence-linkers.md#time-hinge-on-noun
-ovam,h,🥅,clause_hinge,so-that,SO-THAT clause hinge (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#hinges
-ovam,g,🥅,clause_hinge,so-that,SO-THAT clause hinge (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#hinges
+ovam,th,🥅,clause_hinge,so-that,SO-THAT clause hinge (the speaker's aim; intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#hinges
+ovam,g,🥅,clause_hinge,so-that,SO-THAT clause hinge (the speaker's aim for the thing; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#hinges
 ahom,h,➡️,clause_hinge,so-result,SO-THAT-RESULT clause hinge (outcome that follows from the host),east is the way things move on; the dependent is what the host led to,sentence-linkers.md#result-hinge
 enam,h,📒,clause_hinge,as-of.ledger,AS-OF clause hinge (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,as-of.md#as-of
 enam,g,📒,clause_hinge,as-of.ledger,AS-OF clause hinge (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,as-of.md#as-of

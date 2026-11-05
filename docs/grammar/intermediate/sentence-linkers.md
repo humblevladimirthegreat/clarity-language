@@ -92,7 +92,7 @@ In a new turn with its own act word, the act word comes first and the linker sta
 
 ### Result (*so … that*) {#result-hinge}
 
-English *so … that* ties a result to how much of something there is (*so tired that they sleep*), all in one sentence. Put the hinge **`hahom`** after the word that carries the degree, then **`blarl`**, then the result as the next sentence. **`hahom`** uses the same root as *therefore*, which needs two sentences. Unlike **`hovam`** *so that*, the result really happened.
+English *so … that* ties a result to how much of something there is (*so tired that they sleep*), all in one sentence. Put the hinge **`hahom`** after the word that carries the degree, then **`blarl`**, then the result as the next sentence. **`hahom`** uses the same root as *therefore*, which needs two sentences. Unlike **`thovam`** *so that*, which names only your aim, the result really happened.
 
 > `zazozon welazem gadamul hahom blarl zazozor vezuvel.`
 >
@@ -106,7 +106,7 @@ English *so … that* ties a result to how much of something there is (*so tired
 >
 > "Azozon walks so hastily that Alazun runs."
 
-**Compare with:** *although* / *while* attach a dependent after **`blarl`** (`hezem blarl`, `herom blarl`; see [dependent clauses](/dependents#dependent-clauses)). *Despite Alazun* is the same hinge with a `bl-` noun (`hezem blalazun`). *So that Alazun sits* is **`hovam blarl`**. Discourse **`xezem`** / **`xugorom`** / **`xahom`** glue a finished sentence to the next one.
+**Compare with:** *although* / *while* attach a dependent after **`blarl`** (`hezem blarl`, `herom blarl`; see [dependent clauses](/dependents#dependent-clauses)). *Despite Alazun* is the same hinge with a `bl-` noun (`hezem blalazun`). *So that Alazun sits* is **`thovam blarl`**. Discourse **`xezem`** / **`xugorom`** / **`xahom`** glue a finished sentence to the next one.
 
 ### Time hinges on a noun {#time-hinge-on-noun}
 
@@ -223,12 +223,12 @@ Firm **-l** says the contrast holds no matter what; **`xezem`** is plain *howeve
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Azozon runs so hastily that Alazun finds the key.* (Alazun did find it) <!-- lint: error -->`zazozon welazem hadurom veruvol hovam blarl zalazun degewol vumewel.`
+**1.** *Azozon runs so hastily that Alazun finds the key.* (Alazun did find it) <!-- lint: error -->`zazozon welazem hadurom veruvol thovam blarl zalazun degewol vumewel.`
 
 ::: details Show answer
 `zazozon welazem hadurom veruvol hahom blarl zalazun degewol vumewel.`
 
 z-Azozon | [w-very | h-haste] | v-run | [h-so-result | bl-that-clause] | z-Alazun | d-key | v-find
 
-**`hovam`** is *so that*, an aim that may not happen; a result that really happened takes **`hahom`**.
+**`thovam`** is *so that*, your aim, which may not happen; a result that really happened takes **`hahom`**.
 :::

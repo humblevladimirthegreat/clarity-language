@@ -23,11 +23,11 @@ On `/ɡ/`, the same stance gives **your** noun’s purpose (*my gift for related
 
 **For other English *for*, use:**
 
-- an intended **event** (*walks so that Alazun sits*): [so that](/dependents#so-that) (**`hovam`**), not a sake
+- an **event** you aim at (*I walk so that Alazun sits*): [so that](/dependents#so-that) (**`thovam`**), not a sake; like motive, the aim is yours
 - the other side of a swap (*a book for a hammer*): [exchange](/relations#exchange) (`heham`)
 - acting for someone (*tells on behalf of Alazun*): [proxy](/relations#proxy) (`hanem`)
 
-A reason held **to keep a cost off** is a *so that … not* dependent ([so that](/dependents#so-that), **`hovam blurl`**), as with prescription.
+A reason held **to keep a cost off** is a *so that … not* dependent ([so that](/dependents#so-that), **`thovam blurl`**), as with prescription.
 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Cue |

@@ -326,6 +326,7 @@ Source: [clause.md](/clause)
 - **closed (D-22):** a `bl-` word after `/z/`, `/d/`, `/v/`, or `/w/`.
 - **closed (D-46):** a `bl-` person after WANT or PLAN (`thalom blalazun`, `thagom blalazun`), and any `bl-` word after DECISION (`thogem blalazun`, `thogem blral`). Someone else's want, plan or decision goes through a holder. Parser: `intentionHost`.
 - **closed (D-48):** `/h/` on the map or check root (`hagom`, `hogem`, any ending but **-n**). Parser: `retiredIntentionRoot`.
+- **closed (D-64):** `/h/` on the goal root with **-m** (`hovam`), as the purpose hinge or anything else, and a letterless same-role `ovam`. Purpose is `thovam`. Parser: `retiredPurposeHinge`.
 
 ## Vowel series and tone marks
 

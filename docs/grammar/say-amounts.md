@@ -533,7 +533,7 @@ When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*)
 
 Unnumbered `zobevam` is just *a problem*, not a candidate in a set, write **`g#N`** when brainstorming. `-l` on the first two roots is still the picture (`zobeval` *a puzzle piece*; `zegewol` *a key*; `vegewol` *to unlock*). Reframing the **same** situation is different wording of one frame, not a second digit.
 
-**Compare with:** discourse *point N:* uses free **`x#N`** ([number as discourse](/number-roles#number-as-discourse-marker-by-marker)), a continue. Numbered alternatives are problem / solution / goal nouns plus **`g#N`**. Clause *so that* is [**`hovam`**](/dependents#so-that), not **`oval`**.
+**Compare with:** discourse *point N:* uses free **`x#N`** ([number as discourse](/number-roles#number-as-discourse-marker-by-marker)), a continue. Numbered alternatives are problem / solution / goal nouns plus **`g#N`**. Clause *so that* is [**`thovam`**](/dependents#so-that), not **`oval`**.
 
 ## Practice {#practice}
 

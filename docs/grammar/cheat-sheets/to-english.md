@@ -95,7 +95,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `gohom` | locative across (edge to far edge of one landmark) | [Locative relations](/locative-relations#locative-relations) | I |
 | `gon` | join-relation prioritizing (adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `gorel` | IDENTITY copula (identical-to / same-as) | [Identity](/predication#identity) | B |
-| `govam` | SO-THAT clause hinge (intended outcome; NP for-goal) | [Because, if, although (hinges)](/dependents#hinges) | B |
+| `govam` | SO-THAT clause hinge (the speaker's aim for the thing; NP for-goal) | [Because, if, although (hinges)](/dependents#hinges) | B |
 | `goyom` | stimulus (sake about a noun you do not possess) | [Personal possession](/sakes#personal-possession) | B |
 | `guan` | join-relation without or excluding (adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `guen` | join-relation open to anything but (adjective) | [Join-relations](/join-relations#join-relations) | I |
@@ -159,7 +159,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `hoen` | join-relation equating or tying (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `hohom` | locative across (edge to far edge of one landmark) | [Locative relations](/locative-relations#locative-relations) | I |
 | `hon` | join-relation prioritizing (adverb) | [Join-relations](/join-relations#join-relations) | I |
-| `hovam` | SO-THAT clause hinge (intended outcome; NP for-goal) | [Because, if, although (hinges)](/dependents#hinges) | B |
 | `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](/ability#try) | I |
 | `howam` | attempt mood (commitment unstated) | [Try](/ability#try) | I |
 | `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](/ability#try) | I |
@@ -167,6 +166,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `huen` | join-relation barring anything but (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `hulom` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `hun` | join-relation refusing (adverb) | [Join-relations](/join-relations#join-relations) | I |
+| `hunom` | AS-OF clause hinge (unasserted whose-now / placeholder now) | [As-of (whose now)](/as-of#as-of) | A |
 <!-- /generated -->
 
 <PageBreak />
@@ -176,7 +176,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 <!-- generated: overlays pos=h skip=44 -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `hunom` | AS-OF clause hinge (unasserted whose-now / placeholder now) | [As-of (whose now)](/as-of#as-of) | A |
 | `hunor` | AS-OF clause hinge (unasserted whose-now / placeholder now) resume | [As-of (whose now)](/as-of#as-of) | A |
 | `huon` | join-relation deprioritizing (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `huvahum` | BY clause hinge (deadline: done at or before the endpoint) | [Because, if, although (hinges)](/dependents#hinges) | B |
@@ -243,8 +242,8 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `thomal` | may mood find-out follow-up (I'll / let's find out) | [Follow-up endings (MAY)](/knowing#follow-up-endings-may) | B |
 | `thomam` | may mood (could be; default) | [MAY](/knowing#may) | B |
 | `thomar` | may mood who-knows follow-up (leave unsettled; may never know) | [Follow-up endings (MAY)](/knowing#follow-up-endings-may) | B |
+| `thovam` | SO-THAT clause hinge (the speaker's aim; intended outcome; NP for-goal) | [Because, if, although (hinges)](/dependents#hinges) | B |
 | `thubol` | pattern evidential with strong evidence (well-established pattern) | [Evidence strength](/evidentiality#evidence-strength) | I |
-| `thubom` | pattern evidential (from trail of cases) | [Evidentiality](/evidentiality#evidentiality) | I |
 <!-- /generated -->
 
 <PageBreak />
@@ -254,6 +253,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 <!-- generated: overlays pos=th skip=44 -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
+| `thubom` | pattern evidential (from trail of cases) | [Evidentiality](/evidentiality#evidentiality) | I |
 | `thubor` | pattern evidential with weak evidence (a few cases) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thugel` | live evidential with strong evidence (clear full view) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thugem` | live evidential (sensed now: in view / in earshot / on the skin) | [Live vs memory](/live-and-memory#live-vs-memory) | B |

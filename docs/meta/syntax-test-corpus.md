@@ -71,7 +71,7 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 | 42 | I usually sleep soundly. | `zuwen huam vezuvel honedum.` | z-speaker \| h-always.open \| v-sleep \| h-depth | covered |
 | 43 | The children ran after Jack. | `zohoyolx thevum dahelan vohunom.` | z-child-x \| th-MEMORY \| d-Ahelan \| v-pursuit | covered |
 | 44 | I can play after school. | `zuwen vebohaxam halam bluzahal.` | z-speaker \| v-play-able \| [h-after \| b-school] | covered |
-| 45 | We went to the village for a visit. | `zayan thevum vavobol oel bahaham hovam blowurolol.` | z-interlocutors \| th-MEMORY \| v-go \| [toward \| b-locality] \| [h-so-that \| b-attend] | covered |
+| 45 | We went to the village for a visit. | `zayan thevum vavobol oel bahaham thovam blowurolol.` | z-interlocutors \| th-MEMORY \| v-go \| [toward \| b-locality] \| [th-so-that \| b-attend] | covered |
 | 46 | We arrived at the river. | `zayan thevum vevorol el bowulal.` | `z-interlocutors \| th-MEMORY \| v-arrival \| [at \| b-water]` | covered |
 | 47 | I have been waiting for you. | `zuwen thugem hawum dawan vabahom.` | z-speaker \| th-LIVE \| h-still \| d-listener \| v-wait | covered |
 | 48 | The campers sat around the fire. | `zwuzagahalx thevum vehohel hevam blavulul.` | `z-episode-agent-camp-x \| th-MEMORY \| v-sit \| [h-around \| bl-fire]` | covered |
@@ -263,7 +263,7 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 - **STC-29, *happy to*:** emotion compose on `/th/`: pleasure met, INTERNAL, FLOWING (`thodethamam`) — the speaker's own feeling, so no holder is needed.
 - **STC-33, *probably*:** stance number `thral` (*likely*, no figure).
 - **STC-38, *opposite*:** `honuhothayan` — in front, as the two of us face. *Directly* is dropped.
-- **STC-45, *village*:** *hut* in its abstract sense, `bahaham` (*locality*). *For a visit* is `hovam` + the *attend* compound as a noun.
+- **STC-45, *village*:** *hut* in its abstract sense, `bahaham` (*locality*). *For a visit* is `thovam` + the *attend* compound as a noun.
 - **STC-47, *wait for you*:** the awaited person is the object.
 - **STC-50, *her father*:** kin number `growubal` (the layer above) + `/b/` the child, with *male* before it. Long, but every piece is taught.
 - **STC-51, *oldest girl in the village*:** superlative `zoyoyol zol guburom`; the group in play is set by the clause-level *in the village* hook. *Yesterday* is the day offset −1 on MEMORY.

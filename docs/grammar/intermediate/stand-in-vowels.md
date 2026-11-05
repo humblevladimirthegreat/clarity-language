@@ -27,7 +27,7 @@ You may leave out the dependent clause's `/z/` only when all of these hold:
 
 The missing subject is then that `/b/`. It is never the listener and never the outer `/z/`. In every other case, write the inner `/z/`: after **`darl`** / **`derl`**, after any hinge (**`blarl`** / **`blurl`**), and when the outer sentence has no plain `/b/` (*wants to sit*, *tries to sit*). When the doer is someone other than that `/b/`, write them too, using resume **-r** if the name would repeat.
 
-After a hinge, the dependent is **`blarl`** (or **`blarm`** for gist): *because* / *if* / *although* / *so that* all use it. There are two exceptions, both with **`blurl`**: purpose-not **`hovam blurl`** (*so that … not*) and **`thohem blurl`** (*unless*). Stand-ins never take `/x/`; clause *and* is `xal` / `xan`.
+After a hinge, the dependent is **`blarl`** (or **`blarm`** for gist): *because* / *if* / *although* / *so that* all use it. There are two exceptions, both with **`blurl`**: purpose-not **`thovam blurl`** (*so that … not*) and **`thohem blurl`** (*unless*). Stand-ins never take `/x/`; clause *and* is `xal` / `xan`.
 
 > `zazozon vezuyol balazun dorl vehohel.`
 >
@@ -53,13 +53,13 @@ English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl
 >
 > "Azozon tells Alazun not to sit."
 
-When *so that* aims at keeping an outcome off, keep **`hovam`** and type `/b/` with **`blurl`**:
+When *so that* aims at keeping an outcome off, keep **`thovam`** and type `/b/` with **`blurl`**:
 
-> `zazozon vowurol hovam blurl zazozon vehohel.`
+> `zuwen vowurol thovam blurl zuwen vehohel.`
 >
-> z-Azozon | v-walk | [h-so-that | bl-lest-clause] | z-Azozon | v-sit
+> z-speaker | v-walk | [th-so-that | bl-lest-clause] | z-speaker | v-sit
 >
-> "Azozon walks so as not to sit."
+> "I walk so as not to sit."
 
 English *unless* is *if … not*: keep the *if* hinge **`thohem`** and type `/b/` with **`blurl`**. The following sentence is the condition that must **not** hold.
 
@@ -79,7 +79,7 @@ The sentence after a stand-in runs to the end of the written sentence, so a [cla
 
 To join another clause to the main sentence instead, end the sentence and start the next one with the join.
 
-**Compare with:** *tells that Alazun sits* is **`darl`**. *Tells Alazun to sit* is **`dorl`**. *Walks so that Azozon sits* is **`hovam blarl`**.
+**Compare with:** *tells that Alazun sits* is **`darl`**. *Tells Alazun to sit* is **`dorl`**. *So that Azozon sits* is **`thovam blarl`**.
 
 ### Pointing back (`-rth`) {#stand-in-back}
 
@@ -192,12 +192,12 @@ z-Alazun | v-see | d-whether-clause | [z-Azozon | v-dance | x-or-exactly-one | z
 *Alazun sees whether Azozon dances or Ahelan sings.*
 :::
 
-**3.** `zazozon vehohel hovam blurl zalazun vunurol.`
+**3.** `zazozon vehohel thovam blurl zalazun vunurol.`
 
 ::: details Show answer
-z-Azozon | v-sit | [h-so-that | bl-lest-clause] | z-Alazun | v-dance
+z-Azozon | v-sit | [th-so-that | bl-lest-clause] | z-Alazun | v-dance
 
-*Azozon sits so that Alazun does not dance.*
+*Azozon sits, and my aim is for Alazun not to dance.*
 :::
 
 **4.** `zazozon vezuyol balazun durl vunurol. zalazun valom durth.`

@@ -13,7 +13,7 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 | English | Ageben |
 |---------|---------|
 | *although* / *while* / *whilst* / *until* / *till* / *before* / *after* | same hinge + **`blarl`** shape on adverb `/h/`, **-m** ([dependent clauses](/dependents#dependent-clauses)): **`hezem`** / **`herom`** / **`harum`** / … |
-| *so that* / *in order to* | same shape: **`hovam`** ([so that](/dependents#so-that)); NP intended get = **`hovam`** + `/b/` **noun** |
+| *so that* / *in order to* / *my aim is for* | same shape: **`thovam`** ([so that](/dependents#so-that)), your own aim; NP intended get = **`thovam`** + `/b/` **noun**. Someone else's aim adds a [holder](/holder#holder) |
 | *despite* (NP) | same **`hezem`** (or **`gezem`**) + `/b/` **noun**, not a second hinge |
 | *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uom`** + the stance it goes against: `uom hwuvul` / `uom hwudum` / `uom thagom` / `uom thogel` / `uom thebam` ([contrary to a stance](/prescription#contrary-to-stance)) |
 | *though I promised* / *breaking my promise* | **`hezem blarl`** + the promise as its own sentence: `zuwen vezuvel hezem blarl zuwen vowurol hwuzal.` (*I sleep, although I promised to walk*) ([contrary to a stance](/prescription#contrary-to-stance)) |
@@ -102,9 +102,9 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 | *my reason* / *justify (give your reasons)* | `…thom` on a sake (`thawethom`) | motive: doing it for that sake |
 | *justified* (the act is warranted) | `…them` on a sake (`thawethem`) | prescription: the act ought to serve that sake |
 | *the faculty of reason* | `zebobem` | *intellect* |
-| *purpose* (the outcome aimed at) | `hovam` + `/b/` | *so that* |
+| *purpose* (the outcome aimed at) | `thovam` + `/b/` | *so that*: your own aim |
 | *purpose* (what my noun is for) | `g…tho…` after the noun (`gawethom`) | the noun's purpose is this sake |
-| *What is the purpose?* | `hovam blar` | *What for?* |
+| *What is the purpose?* | `thovam blar` | *What for?*: the listener's aim |
 | *guilty* / *to blame* | `thahul` + `/b/` | the because hinge, the reason broke a norm |
 | *guilty* (the feeling) | a feeling word + **`thahul blarl`** + your own act | the feeling, caused by your act, which broke a norm |
 | *hurt* / *upset* (no fault named) | a feeling word + **`thahum blarl`** + what happened | the feeling and its cause, with no one at fault |
@@ -122,11 +122,11 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 >
 > "I hear Azozon's reason for talking is feeling connected." (for someone else's reason, say [how you know it](/holder#holder))
 
-> `zazozon vowurol hovam blarl zalazun vehohel.`
+> `zuwen vowurol thovam blarl zalazun vehohel.`
 >
-> z-Azozon | v-walk | [h-so-that | bl-that-clause] | z-Alazun | v-sit
+> z-speaker | v-walk | [th-so-that | bl-that-clause] | z-Alazun | v-sit
 >
-> "Azozon walks so that Alazun sits."
+> "I walk so that Alazun sits."
 
 > `zazozon vudurul thahul blarl zalazun vezuyol.`
 >
@@ -169,7 +169,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 | *discard* | `zanal vululul thewom blazozon.` | the book is disposed of |
 | *ensure* / *make sure* (that it happens) | `zalazun vudurul thewom blazozon.` | Alazun leaves, Azozon makes it happen |
 | *prevent* (make it not happen) | `zalazun vudurul vul thewom blazozon.` | Alazun does not leave, Azozon makes that so |
-| *prevent* (act so that it will not) | `zazozon vowurol hovam blurl zalazun vudurul.` | Azozon walks so that Alazun does not leave |
+| *prevent* (act so that it will not) | `zuwen vowurol thovam blurl zalazun vudurul.` | I walk so that Alazun does not leave |
 | *persuade* | `zalazun theyomalazun thogem vowurol thewom blazozon.` | as I gather, Alazun has decided to walk, and Azozon made that happen |
 | *introduce* | `zalazun veluyol dazozon thewom blahelan.` | Alazun learns Azozon, Ahelan makes it happen: *make learned* |
 | *show* / *display* / *reveal* | `zalazun dodozel vayebel thewom blazozon.` | Alazun sees the dog, Azozon makes it happen |
@@ -191,11 +191,11 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 >
 > "I gather Azozon persuaded Alazun to walk." (Alazun has decided, and can still change that)
 
-> `zazozon vowurol hovam blurl zalazun vudurul.`
+> `zuwen vowurol thovam blurl zalazun vudurul.`
 >
-> z-Azozon | v-walk | [h-so-that | bl-lest-clause] | z-Alazun | v-departure
+> z-speaker | v-walk | [th-so-that | bl-lest-clause] | z-Alazun | v-departure
 >
-> "Azozon walks so that Alazun does not leave."
+> "I walk so that Alazun does not leave."
 
 **Compare with:** *get someone to* by asking is tell plus a *to* [stand-in](/stand-in-vowels#stand-in), not **`thewom`**. **`thewom`** says the causer made it happen. Persuading puts the decision on the one persuaded, so a later change of mind stays possible. Their decision is in their mind, so a [holder](/holder#holder) says how you know it.
 

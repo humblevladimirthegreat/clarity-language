@@ -238,6 +238,7 @@ const ROWS: Row[] = [
   { invalid: "zazozon thogem blral vowurol.", rejection: "intentionHost", valid: "zazozon thagom blazurom grabal vowurol." },
   { invalid: "zazozon hagom vowurol.", rejection: "retiredIntentionRoot", valid: "zazozon thagom vowurol." },
   { invalid: "zazozon hogem vowurol.", rejection: "retiredIntentionRoot", valid: "zazozon thogem vowurol." },
+  { invalid: "zuwen vowurol hovam blarl zuwen vehohel.", rejection: "retiredPurposeHinge", valid: "zuwen vowurol thovam blarl zuwen vehohel." },
   { invalid: "zazozon vowurol habam blazurom grugel.", rejection: "hingeOffsetWarrant", valid: "yol zawan vuhamum harum blazurom grabal." },
   { invalid: "zazozon vowurol harum blazurom grabal.", rejection: "hingeOffsetWarrant", valid: "zazozon thagom vowurol harum blazurom grabal." },
   {

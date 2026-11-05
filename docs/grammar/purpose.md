@@ -173,7 +173,7 @@ A link between events, a habit, or an ought gets treated as a law the world must
 
 Everyday English *because*, *leads to*, and *have to* blur three distinctions: a condition that is enough vs one that is required, a reason in the world vs your grounds for saying something, and a wish vs a law of nature.
 
-[Causation](/causation) gives each link its own word: *if*, *only if*, *because*, and *if and only if*. An intended result (*so that*) uses a separate word, `hovam` ([so that](/dependents#so-that)): the action is aimed at that outcome without claiming it happens, and it is not the same as acting for a sake ([motive](/prescription#sake-preference), `tho`). When the “rule” is really an ought (*hard work should earn promotion*), say it with a sakes [prescription](/ought-for-a-sake#sake-force) (`the`) on the act, not with a causation word.
+[Causation](/causation) gives each link its own word: *if*, *only if*, *because*, and *if and only if*. An intended result (*so that*) uses a separate word, `thovam` ([so that](/dependents#so-that)): it names your own aim for the action without claiming the outcome happens, so someone else's aim is never stated as if you could see it. It is also not the same as acting for a sake ([motive](/prescription#sake-preference), `tho`). When the “rule” is really an ought (*hard work should earn promotion*), say it with a sakes [prescription](/ought-for-a-sake#sake-force) (`the`) on the act, not with a causation word.
 
 Keeping these apart helps you stop treating wishes and habits as laws the world must obey.
 

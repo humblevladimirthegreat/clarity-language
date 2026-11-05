@@ -133,7 +133,7 @@ The reply to a fill-ask is the fill as a [citation](/word-endings#citation-forms
 | [Whose?](/fill-ask-jobs#whose) | `yel zodozel om bar vowurol.` | *Whose dog walks?* | B |
 | [How?](/fill-ask-jobs#how) | `yel hewem blar zazozon vowurol.` | *How does Azozon walk?* | B |
 | [Why?](/fill-ask-jobs#why) | `yel thahum blar zazozon vowurol.` | *Why does Azozon walk?* | B |
-| [What for?](/fill-ask-jobs#why) | `yel hovam blar zazozon vowurol.` | *What does Azozon walk for?* | B |
+| [What for?](/fill-ask-jobs#why) | `yel thovam blar zawan vowurol.` | *What do you walk for?* | B |
 
 <!-- cheat-sheet: talking -->
 | Blank | Means | Stage |
@@ -142,7 +142,7 @@ The reply to a fill-ask is the fill as a [citation](/word-endings#citation-forms
 | [`el bar`](/fill-ask-jobs#where) / `al bar` / `ul bar` / `ol bar` | *where (at)?* / *in what?* / *where from?* / *for what?* | B |
 | [`el ber`](/fill-ask-jobs#where) / `el bur` | *anywhere?* / *where else?* | B |
 | [`thahum blar`](/fill-ask-jobs#why) | *why?* | B |
-| [`hovam blar`](/fill-ask-jobs#why) | *what for?* | B |
+| [`thovam blar`](/fill-ask-jobs#why) | *what for?* | B |
 | [`thohem blar`](/fill-ask-jobs#why) | *under what condition?* | B |
 
 <PageBreak />

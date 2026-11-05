@@ -45,7 +45,7 @@ export const GLOSS_READER = {
     gl: "adjective written before the noun it describes",
     w: "detail (often degree) on the next `g-`, `h-`, or `th-` word",
     h: "adverb: how, when, where; with a `bl-` noun in its bracket, a relation (`[h-while | bl-month]`). A plan, decision, try, ability, say word, RESIDUE or FORMER on `h-` covers the whole sentence; a plan or decision does not say the act happens",
-    th: "what is in a mind: by default the speaker's stance on the claim (how they know it, how sure they are, why, as if, a want, a plan, a decision, a feeling), never the subject's: `z-X | th-WANT-unstated | v-sing` = I want X to sing, and `z-X | th-plan-itinerary | v-go` = I plan for X to go. With a person joined to a channel (`th-CLUES-Azozon`), that person's view",
+    th: "what is in a mind: by default the speaker's stance on the claim (how they know it, how sure they are, why, what for, as if, a want, a plan, a decision, a feeling), never the subject's: `z-X | th-WANT-unstated | v-sing` = I want X to sing, and `z-X | th-plan-itinerary | v-go` = I plan for X to go. With a person joined to a channel (`th-CLUES-Azozon`), that person's view",
     x: "links this sentence to the one before (`x-however`), or names the topic",
     "": "no prefix: a hook. Between two words of the same role it relates them, and the right one is what holds: `d-tea | instead | d-coffee` = coffee instead of tea. With a `b-` noun in its bracket it is a relation (`[from | b-dog]`)",
   } as Record<string, string>,

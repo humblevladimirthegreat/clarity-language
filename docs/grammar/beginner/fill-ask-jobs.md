@@ -105,17 +105,19 @@ To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in
 >
 > "Why does Azozon walk?" (*because of what?*)
 
-> `yel hovam blar zazozon vowurol.`
+*What for?* asks about an aim, and in a question the aim is the listener's. So ask the one who acts:
+
+> `yel thovam blar zawan vowurol.`
 >
-> y-question | [h-so-that | bl-wh] | z-Azozon | v-walk
+> y-question | [th-so-that | bl-wh] | z-listener | v-walk
 >
-> "What does Azozon walk for?"
+> "What do you walk for?"
 
 | Ageben | English |
 <!-- cheat-sheet: talking -->
 |--------|---------|
 | **`thahum blar`** | *Why?* (*because of what?*) |
-| **`hovam blar`** | *What for?* (*for what purpose?*) |
+| **`thovam blar`** | *What for?* (*what is your aim?*) |
 | **`thohem blar`** | *Under what condition?* / *In what case?* |
 
 ### Practice {#beginner-practice}

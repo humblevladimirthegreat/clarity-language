@@ -51,6 +51,8 @@ const CLOSED_ROWS = {
   // no intention on `/h/` (intention.md#plan): PLAN and DECISION are `/th/` stances
   map: { emoji: "🗺️", root: "ago" },
   check: { emoji: "✅", root: "oge" },
+  // no purpose on `/h/` (dependents.md#so-that): an aim is in a mind, so the purpose hinge is `/th/`
+  goal: { emoji: "🥅", root: "ova" },
   // no deontic on `/th/` (permission-consent.md#say-words): permission, a ban, and a requirement are say words on `/h/`
   green: { emoji: "🟢", root: "olo" },
   noEntry: { emoji: "⛔", root: "egu" },

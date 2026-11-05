@@ -246,7 +246,7 @@ Kind / role as predicative `/ɡ/` (no *to-be* verb).
 
 ### Clause hinge / NP hinge
 
-Condition vs outcome as NPs vs full sentences after **`blarl`**. **Clause hinge** is the causation reading. Concession **`hezem`** uses the same NP vs clause split (*despite Alazun* vs *although Alazun walks*). Intended outcome **`hovam`** uses it too (*for a money-bag* vs *so that Alazun sits*).
+Condition vs outcome as NPs vs full sentences after **`blarl`**. **Clause hinge** is the causation reading. Concession **`hezem`** uses the same NP vs clause split (*despite Alazun* vs *although Alazun walks*). Intended outcome **`thovam`** uses it too (*for a money-bag* vs *so that Alazun sits*).
 
 [Causation](/causation), [dependents](/dependents#dependent-clauses)
 
@@ -324,7 +324,7 @@ A full sentence that fills a [stand-in](#stand-in) slot (`darl` / `barl` / `derl
 
 [Dependents](/dependents#dependent-clauses)
 
-**Compare with:** English *the dog that runs* (which dog) is [which person or thing](/dependents#which-noun), not a stand-in. Intended outcome *so that* is [**`hovam`**](/dependents#so-that) plus **`blarl`** or a noun `/b/`.
+**Compare with:** English *the dog that runs* (which dog) is [which person or thing](/dependents#which-noun), not a stand-in. Intended outcome *so that* is [**`thovam`**](/dependents#so-that) plus **`blarl`** or a noun `/b/`.
 
 ### Digitless
 
@@ -398,7 +398,7 @@ Closed `/th/` how-you-know roots: seven channels, two direct (LIVE, MEMORY), thr
 
 ### Exchange (*for*)
 
-Hosted **`heham`** / **`geham`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not sakes motive **`tho`**, not intended-outcome [**`hovam`**](/dependents#so-that).
+Hosted **`heham`** / **`geham`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not sakes motive **`tho`**, not intended-outcome [**`thovam`**](/dependents#so-that).
 
 [Relations](/relations#exchange)
 
@@ -666,7 +666,7 @@ Number problem / solution / goal candidates with free ordinals.
 
 [Amounts, sizes and time](say-amounts.md#numbered-alternatives)
 
-**Compare with:** clause *so that* is [**`hovam`**](/dependents#so-that), not the goal noun **`oval`**.
+**Compare with:** clause *so that* is [**`thovam`**](/dependents#so-that), not the goal noun **`oval`**.
 
 ### Numeric prefix
 
@@ -878,9 +878,9 @@ After-join `/ɡ/` (quality) or manner `/h/` in comparatives.
 
 ### So that / event purpose
 
-Clause-hinge **`hovam`**: intended outcome of the host (*so that Alazun sits*; NP *for a money-bag*). Not locative *toward*, not sake **`tho`**, not discourse *therefore*.
+Clause-hinge **`thovam`**: the speaker's own aim for the host (*so that Alazun sits*; NP *for a money-bag*); in a question, the listener's aim. Someone else's aim takes a holder. Not locative *toward*, not sake **`tho`**, not discourse *therefore*.
 
-[Dependents](/dependents#so-that)
+[Dependents](/dependents#so-that), [Whose view](/holder#holder)
 
 ### Span / span open
 

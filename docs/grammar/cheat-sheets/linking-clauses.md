@@ -108,22 +108,22 @@ A **hinge** names the link and takes the stand-in `blarl` as its `/b/`. Keep the
 | [**`thohem blarl`**](/dependents#hinges) | *if* | B |
 | [**`thebem blarl`**](/dependents#hinges) | *only if* | B |
 | [**`thehom blarl`**](/dependents#hinges) | *if and only if* | B |
+| [**`thovam blarl`**](/dependents#hinges) | *so that* / *in order to* | B |
 | [**`hezem blarl`**](/dependents#hinges) | *although* / *even though* | B |
 | [**`herom blarl`**](/dependents#hinges) | *while* | B |
 | [**`harum blarl`**](/dependents#hinges) | *until* | B |
 | [**`huvahum blarl`**](/dependents#hinges) | *by the time* | B |
 | [**`habam blarl`**](/dependents#hinges) | *before* | B |
 | [**`halam blarl`**](/dependents#hinges) | *after* | B |
-| [**`hovam blarl`**](/dependents#hinges) | *so that* / *in order to* | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Because](/dependents#hinges) | `zazozon vozuyel thahum blarl zalazun vowurol.` | *Azozon sings because Alazun walks.* | B |
 | [If, on a command](/dependents#hinges) | `yol vowurol thohem blarl zalazun vehohel.` | *If Alazun sits, walk.* | B |
 | [Despite, with a noun](/dependents#hinges) | `zazozon vowurol hezem blalazun.` | *Azozon walks despite Alazun.* | B |
-| [So that](/dependents#so-that) | `zazozon vowurol hovam blarl zalazun vehohel.` | *Azozon walks so that Alazun sits.* | B |
-| [In order to](/dependents#so-that): name the doer again | `zazozon vowurol hovam blarl zazozon vehohel.` | *Azozon walks in order to sit.* | B |
-| [So as not to](/stand-in-vowels#stand-in): `blurl` for `blarl` | `zazozon vowurol hovam blurl zazozon vehohel.` | *Azozon walks so as not to sit.* | I |
+| [So that](/dependents#so-that) | `zuwen vowurol thovam blarl zalazun vehohel.` | *I walk so that Alazun sits.* | B |
+| [In order to](/dependents#so-that): name the doer again | `zuwen vowurol thovam blarl zuwen vehohel.` | *I walk in order to sit.* | B |
+| [So as not to](/stand-in-vowels#stand-in): `blurl` for `blarl` | `zuwen vowurol thovam blurl zuwen vehohel.` | *I walk so as not to sit.* | I |
 | [Unless](/stand-in-vowels#stand-in): `blurl` for `blarl` | `zazozon vowurol thohem blurl zalazun vezuvel.` | *Azozon walks unless Alazun sleeps.* | I |
 | [So … that](/sentence-linkers#result-hinge): the result happened | `zazozon welazem gadamul hahom blarl zazozor vezuvel.` | *Azozon is so tired that they sleep.* | I |
 | [As soon as](/dependents#time-hinges) | `zazozon vowurol wadurom halam blarl zalazun vehohel.` | *Azozon walks as soon as Alazun sits.* | B |
@@ -283,7 +283,7 @@ Each hinge, linker, and relation word is the abstract sense of an ordinary root.
 |-------|--------------|-------|
 | [`thahum`](/dependents#hinges) *because*, [`thohem`](/dependents#hinges) *if*, [`thebem`](/dependents#hinges) *only if*, [`thehom`](/dependents#hinges) *if and only if* | `ahul` 🧱, `ohel` 🚪, `ebel` 🧻, `ehol` ↔️ | B |
 | [`hezem`](/dependents#hinges) *although*, [`herom`](/dependents#hinges) *while*, [`harum`](/dependents#hinges) *until*, [`huvahum`](/dependents#hinges) *by the time* | `ezel` 🦓, `erol` ♊, `arul` ⏲️, `uvahul` 🏁 | B |
-| [`habam`](/dependents#hinges) *before*, [`halam`](/dependents#hinges) *after*, [`hovam`](/dependents#hinges) *so that* | `abal` 🎒, `alal` ⌛, `oval` 🥅 | B |
+| [`habam`](/dependents#hinges) *before*, [`halam`](/dependents#hinges) *after*, [`thovam`](/dependents#hinges) *so that* | `abal` 🎒, `alal` ⌛, `oval` 🥅 | B |
 | [`xahom`](/sentence-linkers#sentence-linkers), [`xezem`](/sentence-linkers#sentence-linkers), [`xugorom`](/sentence-linkers#sentence-linkers) | `ahom` ➡️, `ezem` 🦓, `ugorom` 🕰️ | I |
 | [`xevewom`](/sentence-linkers#sentence-linkers), [`xugohum`](/sentence-linkers#sentence-linkers), [`xavedam`](/sentence-linkers#sentence-linkers) | `evewom` 🎞️, `ugohum` 🚧, `avedam` 🍟 | I |
 | [`hewem`](/relations#likeness) *like*, [`heham`](/relations#exchange) *in exchange for*, [`hanem`](/relations#proxy) *on behalf of* | `ewel` 🪞, `ehal` 💱, `anel` 🪪 | B |
@@ -300,7 +300,7 @@ Each hinge, linker, and relation word is the abstract sense of an ordinary root.
 | `darl` *that …* ([a statement as content](/dependents#dependent-clauses)) | | `derl` *whether …* ([a question as content](/dependents#dependent-clauses)) |
 | `dorl` *to …* ([an instruction](/stand-in-vowels#stand-in)) | | `durl` *not to …* ([something to avoid](/stand-in-vowels#stand-in)) |
 | `darl` *that …* ([points forward](/dependents#dependent-clauses)) | | `darth` *so* ([points back](/stand-in-vowels#stand-in-back)) |
-| `hovam blarl` *so that* ([an aim, not claimed](/dependents#so-that)) | | `hahom blarl` *so … that* ([the result happened](/sentence-linkers#result-hinge)) |
+| `thovam blarl` *so that* ([your aim, not claimed](/dependents#so-that)) | | `hahom blarl` *so … that* ([the result happened](/sentence-linkers#result-hinge)) |
 | `thohem blarl` *if* ([a condition](/dependents#hinges)) | | `derl` *whether* ([an open question](/dependents#dependent-clauses)) |
 | `xahom` *therefore* ([starts a sentence](/dependents#continue-x)) | | `hezem blarl` *although* ([attaches a clause](/dependents#hinges)) |
 | `hewem` *like* ([resembles, and is real](/relations#likeness)) | | `hewel` *exactly like* ([a perfect match](/exactly-like#exactly-like)) |

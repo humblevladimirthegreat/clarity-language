@@ -33,7 +33,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | recipient / addressee (*tells Alazun*) | plain `/b/` | [Extra nouns](/clause#extra-nouns) |
 | swap (*a book for a hammer*) | **`heham`** + `/b/` | [Exchange](/relations#exchange) |
 | intended get (*works for a money-bag*) | hook **`ol`** + `/b/` | [Hooks](/hooks#extra-noun) |
-| intended outcome (*practices for a race*) | **`hovam`** + `/b/` | [So that](/dependents#so-that) |
+| intended outcome, your own aim (*I practice for a race*) | **`thovam`** + `/b/` | [So that](/dependents#so-that) |
 | sake as reason (*I walk to feel connected*) | sake **`tho`** on `/th/` | [Motive](/prescription#sake-preference) |
 | noun’s purpose (*my gift for relatedness*) | sake **`tho`** on `/ɡ/` | [Motive](/prescription#sake-preference) |
 | someone's sake (*for Alazun's sake*, *good for Alazun*) | sake word + `/b/` | [Whose stake](/prescription#whose-stake) |
@@ -51,7 +51,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | a stretch of time (*from the storm to the bell*) | one *from … to* unit: **`ul`** + start, **`oel`** + end | [Time](/digit-strings#time) |
 | end of a number range (*from 3 to 5*; *up to but not including 5*) | range hook **`oel`** between the two numbers (**`uel`** leaves the second out) | [Ranges of numbers](/numbers-applied#number-ranges) |
 | end of a range on a line (*Azozon to Ahelan in the queue*) | **`oel`** between two words in one role | [Ranges](/ordered-ranges#ranges) |
-| purpose (*walks to sit*, *in order to sit*) | **`hovam blarl`** + the sentence, naming who sits | [So that](/dependents#so-that) |
+| purpose, your own aim (*I walk to sit*, *in order to sit*, *my aim is for Alazun to sit*) | **`thovam blarl`** + the sentence, naming who sits; someone else's aim adds a holder | [So that](/dependents#so-that), [Whose view](/holder#holder) |
 | an instruction or aim as content (*tells Alazun to sit*, *wishes to sit*) | stand-in **`dorl`** + the sentence; **`durl`** for *not to*; open **`dorm`** / **`durm`** when it may not be the only one (*and maybe more*) | [Stand-in vowels](/stand-in-vowels#stand-in) |
 
 ### *'s* / *of* {#of}

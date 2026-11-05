@@ -56,7 +56,7 @@ For English *whether*, change the vowel to **`e`**: **`derl`**. The inner senten
 
 Words like *because*, *if*, and *although* attach a dependent clause as a reason, a condition, a contrast, or a time. Ageben uses a pair for this: a **hinge** word that names the link, then the stand-in **`blarl`** right after it. The hinge is a relation word, so **`blarl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`blarl`** at the very end.
 
-The hinge's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, so they take `/th/`. *Although*, *while*, *until*, *before*, *after*, and *so that* describe the event itself, so they are adverbs on `/h/`.
+The hinge's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, and *so that* is your own aim for the event, so they take `/th/`. *Although*, *while*, *until*, *before*, and *after* describe the event itself, so they are adverbs on `/h/`.
 
 > `zazozon vozuyel thahum blarl zalazun vowurol.`
 >
@@ -75,13 +75,13 @@ You can also say:
 | **`thohem blarl`** | *if* | `ohel` *door* | 🚪: walk through only if it opens |
 | **`thebem blarl`** | *only if* | `ebel` *paper-roll* | 🧻: without it the situation does not run |
 | **`thehom blarl`** | *if and only if* | `ehol` *east-west* | ↔️: each side only with the other |
+| **`thovam blarl`** | *so that* / *in order to* | `oval` *goal* | 🥅: you act so the shot counts |
 | **`hezem blarl`** | *although* / *even though* | `ezel` *zebra* | 🦓: two stripes, still one animal |
 | **`herom blarl`** | *while* (at the same time) | `erol` *gemini* | ♊: two things at once |
 | **`harum blarl`** | *until* | `arul` *timer* | ⏲️: stop when it rings |
 | **`huvahum blarl`** | *by the time* | `uvahul` *finish-line* | 🏁: done by the time you reach the flag |
 | **`habam blarl`** | *before* | `abal` *backpack* | 🎒: packed first |
 | **`halam blarl`** | *after* | `alal` *sand* | ⌛: the sand has already run through |
-| **`hovam blarl`** | *so that* / *in order to* | `oval` *goal* | 🥅: you act so the shot counts |
 
 A command or request makes no claim, so an *if* hinge on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Ageben keeps the default order, with **`blarl`** last.
 
@@ -149,21 +149,25 @@ Ageben verbs have no past or future form. *Before*, *after*, *while*, and *until
 
 <a id="event-purpose"></a>
 
-English *so that* names the outcome an event aims at (*walks so that Alazun sits*). Use the hinge **`hovam`** with **`blarl`**, the same pair shape as *because*, and put the outcome in the sentence after **`blarl`**. Unlike *because*, this does **not** claim the outcome happened. To attach the hinge to a noun, use **`govam`**. (cue: 🥅 *goal*: you act so the shot counts)
+English *so that* names the outcome an event aims at (*I walk so that Alazun sits*). Use the hinge **`thovam`** with **`blarl`**, the same pair shape as *because*, and put the outcome in the sentence after **`blarl`**. Unlike *because*, this does **not** claim the outcome happened. To attach the hinge to a noun, use **`govam`**. (cue: 🥅 *goal*: you act so the shot counts)
 
-> `zazozon vowurol hovam blarl zalazun vehohel.`
+<!-- Exception to house-cast: the aim this hinge names is the speaker's, so I is the point. -->
+
+> `zuwen vowurol thovam blarl zalazun vehohel.`
 >
-> z-Azozon | v-walk | [h-so-that | bl-that-clause] | z-Alazun | v-sit
+> z-speaker | v-walk | [th-so-that | bl-that-clause] | z-Alazun | v-sit
 >
-> "Azozon walks so that Alazun sits."
+> "I walk so that Alazun sits."
 
 English *in order to* drops the person who sits. Ageben still names them in the inner `/z/`:
 
-> `zazozon vowurol hovam blarl zazozon vehohel.`
+> `zuwen vowurol thovam blarl zuwen vehohel.`
 >
-> z-Azozon | v-walk | [h-so-that | bl-that-clause] | z-Azozon | v-sit
+> z-speaker | v-walk | [th-so-that | bl-that-clause] | z-speaker | v-sit
 >
-> "Azozon walks in order to sit."
+> "I walk in order to sit."
+
+An aim is in someone's mind, so the hinge is your stance, like *because*: the aim it names is yours, the speaker's. With someone else as the subject, it is your aim for their act, the way a coach has an aim for a player's practice. `zazozon vowurol thovam blarl zalazun vehohel.` is *Azozon walks, and my aim is for Alazun to sit*. It says nothing about what Azozon is aiming at, so never read it as *Azozon wants* or *Azozon intends*.
 
 Ordinary `zoval` is still *a goal* (the net).
 
@@ -203,7 +207,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *because* | `thahum` | 🧱 from *wall*: the cause is what the result sits on |
 | *if* | `thohem` | 🚪 from *door*: walk through only if it opens |
 | *although* | `hezem` | 🦓 from *zebra*: two stripes, still one animal |
-| *so-that* | `hovam` | 🥅 from *goal*: you act so the shot counts |
+| *so-that* | `thovam` | 🥅 from *goal*: you act so the shot counts |
 
 **Review:**
 
@@ -264,12 +268,12 @@ z-guard | v-see | d-whether-clause | z-Alazun | v-peek
 z-guard | v-scream . z-Azozon | v-tell | b-guard
 :::
 
-**6.** *Alazun screams so that a guard runs.*
+**6.** *Alazun screams, and my aim is for a guard to run.*
 
 ::: details Show answer
-`zalazun veyamul hovam blarl zagayul veruvol.`
+`zalazun veyamul thovam blarl zagayul veruvol.`
 
-z-Alazun | v-scream | [h-so-that | bl-that-clause] | z-guard | v-run
+z-Alazun | v-scream | [th-so-that | bl-that-clause] | z-guard | v-run
 :::
 
 #### Ageben → English {#beginner-ageben-to-english}

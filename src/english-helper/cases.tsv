@@ -30,6 +30,9 @@ The teacher sings.	teacher	link:roles.md#one-time-or-a-practice	the practiced ro
 Uzozen speaks as a teacher.	as a teacher	link:role-parts.md#acting-as	*as a teacher* is the role the act is done in
 The flower sings.	flower	not:roles.md#role-compounds	a noun with a root of its own is no doer
 The flower sings.	flower	not:roles.md#one-time-or-a-practice	a noun with a root of its own is no doer
+# Purpose: the speaker's own aim
+I walk in order to sit.	in order to	link:dependents.md#hinges	*in order to* is the purpose hinge
+Alazun walks, and my aim is for Azozon to sit.	my aim is for	link:say-reasons.md#english-cues	*my aim is for* is the purpose hinge, not the *aim* root
 # Clause openers
 Uzozen tells Olazun that the dog runs.	that	first:that-clause	*that* opening a content clause
 The dog that runs is big.	that	first:relative-that	*that* after a noun opens a relative clause

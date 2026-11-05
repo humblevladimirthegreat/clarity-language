@@ -747,11 +747,22 @@ export const CONSTRUCTIONS: ReadonlyMap<string, ConstructionEntry> = new Map([
 
 type OverlayEntrySource = { senseForm: string; pos: string; anchor: string; kind: string; gloss: string };
 
+const PURPOSE_READER =
+  "`th-so-that` is the speaker's own aim, never the subject's: `z-X | v-walk | [th-so-that | bl-that-clause] | z-Y | v-sit` = X walks, and my aim is for Y to sit (with *I* or *we* as subject, plain *so that* / *in order to*). In a question it is the listener's aim: `y-question | [th-so-that | bl-wh] | z-listener | v-walk` = What do you walk for? With another subject, *What is your aim for X's walk?* Never *X wants* or *X intends*.";
+
+/** Reader notes for overlay rows, keyed by `overlay.<sense_form>.<pos>`. */
+const OVERLAY_READERS: Readonly<Record<string, string>> = {
+  "overlay.ovam.th": PURPOSE_READER,
+  "overlay.ovam.g": PURPOSE_READER,
+};
+
 /** Every construction ID → entry, including one `overlay.*` entry per closed overlay row. */
 export function constructionRegistry(overlays: Iterable<OverlayEntrySource>): Map<string, ConstructionEntry> {
   const registry = new Map(CONSTRUCTIONS);
   for (const o of overlays) {
-    registry.set(overlayConstructionId(o), { anchor: o.anchor, summary: `${o.kind} overlay ${o.gloss}` });
+    const id = overlayConstructionId(o);
+    const reader = OVERLAY_READERS[id];
+    registry.set(id, { anchor: o.anchor, summary: `${o.kind} overlay ${o.gloss}`, ...(reader ? { reader } : {}) });
   }
   return registry;
 }
@@ -829,7 +840,7 @@ export const REJECTIONS = {
   nameInstanceSlot: { anchor: "proper-names.md#name-instance--ln", summary: "-ln (span ^@) is one thing a name applies to: it fills /z/ /d/ /b/ or stands as a citation, never on /ɡ/ /v/ /h/ /w/ /th/ /x/ /y/, and never on a pronoun root" },
   standInRole: { anchor: "stand-in-vowels.md#stand-in", summary: "stand-ins (-rl -rm -rth -rn) fill /z/ /d/ /b/ only; there is no stand-in on /ɡ/ /h/ /w/ /th/ (such is whole-stem -r, like that is `hewem blarth`)" },
   standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is `blarl` after a listed hinge, a clues / pattern channel, like (`hewem`), or an /h/ hooked join" },
-  standInHostUndo: { anchor: "stand-in-vowels.md#stand-in", summary: "burl follows only the so-that hinge holalam or the if hinge thadoram" },
+  standInHostUndo: { anchor: "stand-in-vowels.md#stand-in", summary: "burl follows only the so-that hinge thovam or the if hinge thohem" },
   hingeStack: { anchor: "iff-fault.md#only-because", summary: "hinge stacks are `theboram thurugum` and `hezuvem thadoram`" },
   objectNeedsVerb: { anchor: "predication.md#existence", summary: "an object /d/ needs a verb" },
   stanceNumber: { anchor: "number-roles.md#number-as-stance-by-marker", summary: "a stance number takes + (likelihood), _ (source) or # (Nth-hand); th- with digits and th#- are not used" },
@@ -880,6 +891,7 @@ export const REJECTIONS = {
   intentionHost: { anchor: "want.md#whose-intention", summary: "WANT and PLAN take no /b/ person and DECISION no /b/ at all: with no holder it is your own; someone else's goes through a holder seam (`theyomazozon thagom`)" },
   retiredIntentionRoot: { anchor: "intention.md#plan", summary: "/h/ on the map or check root is not an intention: PLAN and DECISION are /th/ stances (`thagom`, `thogem`), someone else's through a holder" },
   channelOffsetSign: { anchor: "dated-channel.md#dated-channel", summary: "MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one" },
+  retiredPurposeHinge: { anchor: "dependents.md#so-that", summary: "/h/ on the goal root is not the purpose hinge: an aim is in a mind, so so-that is `thovam`, the speaker's aim; someone else's aim goes through a holder" },
   retiredChannelRoot: { anchor: "evidentiality.md#evidentiality", summary: "/th/ on the record or scroll root is not a channel: a record or document is REPORTED with the source in /b/, footage is LIVE or MEMORY with the device in /b/, a schedule is PLAN, and a tale is NOTIONAL" },
   retiredDeonticRoot: { anchor: "permission-consent.md#say-words", summary: "/th/ on the green, no-entry, or memo root is no stance: permission, a ban, and a requirement are say words on /h/ (`hwuvam`, `hwuvul`, `hwuvom`)" },
   sayHost: { anchor: "permission-consent.md#permission", summary: "a bl- word after a say word names someone over the act (v), or the one party under pair reach e; a participant's say needs no bl- word" },

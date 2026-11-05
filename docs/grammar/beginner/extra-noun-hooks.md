@@ -67,7 +67,7 @@ With an extra-noun hook, **-m** makes a **zone extra**: the landmark is the gene
 >
 > "Azozon walks despite the rain."
 
-**Compare with:** some English prepositions use other forms. *So that Alazun sits* is **`hovam blarl`**.
+**Compare with:** some English prepositions use other forms. *So that Alazun sits* is **`thovam blarl`**.
 
 ### Whose (`om`) {#genitive}
 
