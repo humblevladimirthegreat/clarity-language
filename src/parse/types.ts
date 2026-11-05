@@ -155,7 +155,7 @@ export type MorphWord = {
   /** Hosted `/b/` only (`bl-`): the extra noun that completes the word before it (clause.md#extra-nouns). */
   bl?: boolean;
   ending?: Ending;
-  /** A content resume pinned to one sense of the stem: **-rl** concrete, **-rm** abstract (`ending` is then `r`; tag-pronouns.md#resume-sense). */
+  /** A content resume pinned to one sense of the stem: **-rl** concrete, **-rm** abstract (`ending` is then `r`; resume-sense.md#resume-sense). */
   resumeSense?: "l" | "m";
   plural?: boolean;
   family: MorphWordFamily;

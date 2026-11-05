@@ -20,7 +20,7 @@ A quick look at [pronouns](/pronouns), [topic](/topic), and [plurality](/plurali
 | [By the part they played](/pronouns#role-pointers) | role letter + `wu` + part consonant + pointer vowel + **-r** | `zwuzer` | *the latest doer* | B |
 | [A new one of that kind](/pronouns#a-new-one) | the same pointer with **-l** | `dwudel` | *another one* (as object) | B |
 | [Their part, not them](/pronouns#share) | the same pointer with **-m** | `zwuzem` | *what the doer did* | B |
-| [Pin one sense](/tag-pronouns#resume-sense) | **-rl** concrete, **-rm** abstract | `dodozerl` | *the dog* (not the loyalty) | I |
+| [Pin one sense](/resume-sense#resume-sense) | **-rl** concrete, **-rm** abstract | `dodozerl` | *the dog* (not the loyalty) | I |
 | [A label you chose](/tag-pronouns#tag-pronouns) | role letter + `w` + tag vowel | `zwar` | *A* | I |
 | [The talk's topic](/topic#topic-pronoun) | `ale` + **-n** | `zalen` | *the topic* | I |
 
@@ -49,9 +49,9 @@ Endings: **-r** the same one, **-l** [a new one](/pronouns#a-new-one) (not with 
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Same action again](/tag-pronouns#cross-role-recast): change only the role letter | `zalazun vazozor.` | *Alazun does the same with Azozon.* | I |
-| [Each other](/tag-pronouns#reciprocal) | `zazozon zalazun zal vayebel hehom.` | *Azozon and Alazun see each other.* | I |
-| [A new one with a new property](/tag-pronouns#cross-role-recast) | `zalazun dar godozer gubulel vayebel.` | *Alazun sees a black one.* | I |
+| [Same action again](/resume-sense#cross-role-recast): change only the role letter | `zalazun vazozor.` | *Alazun does the same with Azozon.* | I |
+| [Each other](/collectives#reciprocal) | `zazozon zalazun zal vayebel hehom.` | *Azozon and Alazun see each other.* | I |
+| [A new one with a new property](/resume-sense#cross-role-recast) | `zalazun dar godozer gubulel vayebel.` | *Alazun sees a black one.* | I |
 
 ### Tags {#tags}
 

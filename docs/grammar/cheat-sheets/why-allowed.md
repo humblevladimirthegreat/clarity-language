@@ -178,7 +178,7 @@ An [emotion](/feelings-permission#emotion-compose) is built on one word: the sak
 | [**-m**](/feelings-permission#emotion-compose) | flowing | *steady, a pace you can ride* | I |
 | [**-r**](/feelings-permission#emotion-compose) | surging | *waves or spikes* | I |
 
-Motion is how the feeling moves, not how strong it is. For strength, put a [degree word](/left-bound#degree-w) on `/w/` before it. A direction `/b/` names the landmark, so it cannot also name whose stake.
+Motion is how the feeling moves, not how strong it is. For strength, put a [degree word](/very-and-slightly#degree-w) on `/w/` before it. A direction `/b/` names the landmark, so it cannot also name whose stake.
 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | English | Stage |

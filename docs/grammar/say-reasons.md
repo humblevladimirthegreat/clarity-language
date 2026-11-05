@@ -22,7 +22,7 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 | *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xahom`** ([continue](/speech-moves#continue-x)) |
 | *it follows that* / *necessarily, then* (a deduction from the last sentence) | **`xahol`** ([sentence linkers](/sentence-linkers#sentence-linkers)) |
 | *that doesn't follow* / *non sequitur* | **`thanam thohem thul blarl`** ([arguments](#arguments)) |
-| *thus* (*in this way*) | the same adverb again: `/h/` with **-r** ([how English approximates -r](/tag-pronouns#how-english-approximates-r)) |
+| *thus* (*in this way*) | the same adverb again: `/h/` with **-r** ([how English approximates -r](/resume-sense#how-english-approximates-r)) |
 | *the fact that* / *the idea that* / *it is a fact that* | a predicate with a `/z/` stand-in: `gunugem zarl zazozon vowurol.`; or two sentences, then `zarth` ([stand-in vowels](/stand-in-vowels#stand-in)): `zazozon vowurol. zarth gunugem.` A clause never modifies a noun |
 | *due to* / *owing to* / *because of* (NP) | **`thahum`** + `/b/` **noun** (`thahum blerulal`) |
 | *not because* (clause) | **`thahum thul blarl`** ([stance join before `blarl`](/join-across-roles#stance-join-before-barl)) |

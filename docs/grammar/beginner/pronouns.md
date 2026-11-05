@@ -233,6 +233,8 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 
 **Compare with:** *I and my people* / *you all* / *Azozon and associates* use **-x**. Inclusive *you and I* is **`aya`**.
 
+**Compare with:** `zumen` says that somebody did it, without saying who. A sentence with [no subject](no-subject.md#no-subject) (`dazozon vayebel.`) does not mention a doer at all.
+
 ### Generic pronoun {#generic-pronoun}
 
 English *one* and generic *you* (*one never knows*, *you feel awful when that happens*) say something about people in general, not about the person listening. Ageben gives that its own pronoun: **`eye`** *person* with **-n**, in `/z/`, `/d/`, or `/b/`. It means any person, as a rule, with exceptions allowed. It claims nothing about a particular individual (that is **`ume`**) and nothing about the listener (that is **`awa`**), so a speaker has to choose between reporting their own experience and making a general claim. (cue: 🧑 is the emoji for a person in general)

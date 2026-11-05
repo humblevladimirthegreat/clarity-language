@@ -33,7 +33,7 @@ describe("resolve — content anaphors (pronouns.md#resume-r)", () => {
     assert.equal(anaphors[0]!.antecedent?.raw, "zululon");
   });
 
-  it("pins a resume to one sense with -rl / -rm (tag-pronouns.md#resume-sense)", () => {
+  it("pins a resume to one sense with -rl / -rm (resume-sense.md#resume-sense)", () => {
     const { anaphors } = resolveOf("zazozon dodozel vayebel. zalazun dodozem vayebel. zazozon dodozerl vayebel. zalazun dodozerm vayebel. zazozon dodozer vayebel.");
     assert.deepEqual(
       anaphors.map((bind) => bind.antecedent?.raw),

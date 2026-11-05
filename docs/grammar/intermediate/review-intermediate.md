@@ -196,7 +196,7 @@ z-Ahelan | d-tent | v-see . z-Ahelan | d-bucket | v-←see
 
 *Ahelan sees a tent. Ahelan sees a bucket too.*
 
-**Rule:** [How English approximates -r](tag-pronouns.md#how-english-approximates-r)
+**Rule:** [How English approximates -r](resume-sense.md#how-english-approximates-r)
 :::
 
 **2.** `zalazun zadozal om balazur zal vazuvol.`

@@ -177,7 +177,7 @@ Recovery is off. Illegal left fences and binderless islands throw `SentenceParse
 | Join **-r** under `yel` / `yem` | Fill-ask gaps in spoken order; none → yes/no ([questions.md](/questions)) |
 | SHARED `/ɡ/` or `/h/` after a join | `scale` / `equative` / `distribute` / `collective` / `kind` / `ordinary` from join series + conjunct kinds (`/h/` is manner scale under rank / `oe`) |
 
-Skipped as anaphors: join **-r** (ask / unspecified-member), restrictors, values / ability ending channels, and every overlay whose family defines its own **-r** (the settled-to-passing grades, `because` share). Other closed roots resume with **-r** like content ([pronouns.md](/tag-pronouns#how-english-approximates-r)). Dangling resumes are recorded with no `antecedent` — they do not fail the parse.
+Skipped as anaphors: join **-r** (ask / unspecified-member), restrictors, values / ability ending channels, and every overlay whose family defines its own **-r** (the settled-to-passing grades, `because` share). Other closed roots resume with **-r** like content ([pronouns.md](/resume-sense#how-english-approximates-r)). Dangling resumes are recorded with no `antecedent` — they do not fail the parse.
 
 SHARED classification is **structural** (join vowel + conjunct kinds). The lexicon CSV has no gradable column yet. Number ranges are hooks, not joins: the span reading (`isSpanHook`) is decided in the morph gloss from the endpoint number kinds.
 

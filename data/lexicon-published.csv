@@ -1016,7 +1016,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ⬅️,west,ewuho,place,order,none,return,map-left is west; return is going back again,,western; react; reply; respond; response; answer,viewpoint.md#intermediate-practice
 ↖️,northwest,anuho,place,order,none,,,,,
 ↕️,vertical,evuho,place,order,none,hierarchy,up and down; hierarchy ranks higher and lower,,,
-↔️,east-west,eho,place,order,,reciprocity,east-west arrow runs both ways; reciprocity is mutual give and take,,mutual,tag-pronouns.md#intermediate-practice
+↔️,east-west,eho,place,order,,reciprocity,east-west arrow runs both ways; reciprocity is mutual give and take,,mutual,collectives.md#intermediate-practice
 ↩️,back,eyuho,place,order,none,revert,return arrow curves back left; revert is going back to before,,rear,
 ↪️,forward,uvuho,place,order,none,redirect,return arrow curves forward right; redirect is sending another way,,proceed; forth,
 ⤴️,curve-up,ogugo,sign,order,none,improvement,the arrow turns upward; improvement is getting better,,improve; enhance; reform; slope,
@@ -1049,7 +1049,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ♓,pisces,aruro,counting,order,none,empathy,pisces flows with others feelings; empathy is feeling with another,,,
 ⛎,ophiuchus,ovuro,counting,order,none,,,,,
 🔀,shuffle,uhugo,sign,order,none,randomness,shuffle mixes order unpredictably; randomness is without fixed order,,random,
-🔁,repeat,erugo,sign,order,none,repetition,repeat plays the same again; repetition is doing again,m.h:again,,left-bound.md#intermediate-practice
+🔁,repeat,erugo,sign,order,none,repetition,repeat plays the same again; repetition is doing again,m.h:again,,
 🔂,repeat-one,orugo,sign,order,none,,,,,
 ▶️,play-button,ebego,sign,order,none,commencement,play button begins the action; start is setting in motion,,,
 ⏩,fast-forward,uvugo,sign,order,none,speed,fast-forward plays things faster; speed is how fast,m.h:quickly,quick; rapidly; rapid; fast; prompt; pace,

@@ -189,7 +189,7 @@ Under [question](/questions#fill-ask-r) force, these are fill-asks (*which value
 
 ### How much: *very*, *slightly*, *barely* {#degree-words}
 
-**Needs:** [Degree](/left-bound#degree-w) · [Number as verb and adverb](/special-values#special-number-as-verb-and-adverb) · [Number as stance](/special-values#special-number-as-stance)
+**Needs:** [Degree](/very-and-slightly#degree-w) · [Number as verb and adverb](/special-values#special-number-as-verb-and-adverb) · [Number as stance](/special-values#special-number-as-stance)
 
 English degree words (*really*, *quite*, *barely*) say how far a quality or an action goes. Ageben has stock degree words for the adjective or adverb that follows them, and a pair for *barely* and *almost*. A claim you are sure of takes the stance number `th+e`.
 

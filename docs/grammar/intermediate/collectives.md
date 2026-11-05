@@ -30,8 +30,6 @@ If the wrong reading would matter, say so. Use **`aya`** or a join for *you and 
 | Institutional frame | this meeting, this household | the scene’s default group |
 | Open | no further cue | the listener may or may not be in the set |
 
-For the **address set** (`awanx`), count everyone called by name at the start of this turn, plus anyone still being addressed from before.
-
 **Compare with:** a [topic word](topic.md#topic-groups) takes **-x** like any noun (`xazozonx`, *now, about Azozon and associates*). The published [linkers](sentence-linkers.md#sentence-linkers) take no **-x**.
 
 ### Verbs (`/v/`): collective {#verbs-v}
@@ -79,6 +77,20 @@ A `/v/` join word is a verb too, so it takes the same **-x**: `zayan varx.` is *
 
 **Related form:** *three times* uses a [number](/numbers) under `/h/`; *always* uses **`hual`**.
 
+### Each other {#reciprocal}
+
+For *each other*, join the people in `/z/` and add **`hehom`** after the verb. The root is **`eho`** *reciprocity*: each one does it to the others. Do not write a resume in `/d/` (`dazozor` would just mean Azozon again).
+
+> `zazozon zalazun zal vayebel hehom.`
+>
+> [z-Azozon | z-Alazun | z-and] | v-see | h-reciprocity
+>
+> "Azozon and Alazun see each other."
+
+With **-l**, **`hehol`** is strictly pairwise: every one of them does it to every other one. **-m** is the everyday *each other* / *one another*, where it only has to go both ways in general.
+
+**Compare with:** **`thehom blarl`** on `/th/` is *if and only if* ([dependents](/dependents#hinges)). On `/h/` with no `/b/`, the same root is *each other*.
+
 ### Adjectives (`/ɡ/`): collective {#adjectives-g}
 <a id="collective"></a>
 
@@ -113,6 +125,18 @@ For *red books*, put **-x** on the **noun** and leave the color word plain, sinc
 **Related form:** who is in the set uses **-x** on the noun.
 
 **Compare with:** a scale in [comparatives](/comparatives) is one line, so that adjective is singular.
+
+### Addressing several people
+
+English *you* does not say whether you are talking to one person or several. Ageben does: one addressee is **`awa`**, and the listener root plus associative **-x** (**`awanx`**) names everyone this turn addresses. That is everyone the turn’s calls named, plus anyone you were already addressing. Inclusive *shall we* is still **`aya`**, and soft **`zayam`** hedges whether you really share the act.
+
+> `zawanx vehohel.`
+>
+> z-listener-x | v-sit
+>
+> "You all sit."
+
+**Compare with:** *you and I* is **`aya`**. *Azozon and associates* is name…**-x** ([plurality](/plurality#associative)).
 
 ### Vocatives (`/y/`)
 
@@ -158,6 +182,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *sheet-music* | `ehorol` | 🎼 |
 | *heavy* | `arolem` | 🪨 from *rock* |
+| *reciprocity* | `hehom` | ↔️ from *east-west*: each one to the others |
 
 **Review:**
 
@@ -222,6 +247,14 @@ y-listener-x
 `zahelanx ul zawan vozuyel.`
 
 z-Ahelan-x | except | z-listener | v-sing
+:::
+
+**7.** *Azozon and Alazun see each other.*
+
+::: details Show answer
+`zazozon zalazun zal vayebel hehom.`
+
+[z-Azozon | z-Alazun | z-and] | v-see | h-reciprocity
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}

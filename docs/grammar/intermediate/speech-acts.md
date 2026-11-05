@@ -113,7 +113,7 @@ A call or a reaction can also take an adjective **before** it, with [**`gl-`**](
 >
 > "Happy birthday!"
 
-A reaction can also take a [degree word](left-bound.md#degree-w) right before it, to say how strongly it holds. A call takes none: the person you call is not more or less called.
+A reaction can also take a [degree word](very-and-slightly.md#degree-w) right before it, to say how strongly it holds. A call takes none: the person you call is not more or less called.
 
 > `welazem yemem.`
 >

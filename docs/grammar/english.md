@@ -97,7 +97,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | role one acts in (*as a teacher, I …*) | role compound on `/h/`: `hwozeduyol` | [Acting as](/role-parts#acting-as) |
 | not in that role (*not as a teacher*, off duty) | reach **`ue`** on `/h/`: `hwuozeduyol` | [Acting as](/role-parts#acting-as) |
 | resemblance (*walks as / like a duck*) | **`hewem`** + `/b/` | [Likeness](/relations#likeness) |
-| how close (*exactly like*, *a bit like*) | **`hewel`** for an exact match (`hewel bladozal`), or `/w/` before **`hewem`**: `wubugem hewem bladozal` (*precisely*), `wamezem hewem bladozal` (*a bit*) | [Exactly like](/exactly-like#exactly-like), [likeness](/relations#likeness), [degree words](/left-bound#degree-w) |
+| how close (*exactly like*, *a bit like*) | **`hewel`** for an exact match (`hewel bladozal`), or `/w/` before **`hewem`**: `wubugem hewem bladozal` (*precisely*), `wamezem hewem bladozal` (*a bit*) | [Exactly like](/exactly-like#exactly-like), [likeness](/relations#likeness), [degree words](/very-and-slightly#degree-w) |
 | resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`hewem blarl`** + the event | [Likeness](/relations#likeness) |
 | pretense (*as if they walk*) | **NOTIONAL** | [Notional](/notional#notional) |
 | dated books (*as of Friday*) | **`henam` / `hunom`** + `/b/` | [*As-of*](/as-of#as-of) |

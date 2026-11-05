@@ -137,7 +137,7 @@ Calls and sentence glue use [`/y/`](/speech-moves) and [`/x/`](/dependents).
 | [Subject, verb](/clause#who-acts-and-the-action) | `zodozel vowurol.` | *A dog walks.* | B |
 | [Subject, object, verb](/clause#direct-object-d) | `zodozel dogozel vayebel.` | *A dog sees a cat.* | B |
 | [`/h/` and `/th/` go anywhere](/clause#adverbs-h) | `zodozel hadurom vowurol.` | *A dog walks hastily.* | B |
-| [Leave out the subject](/left-bound#no-subject): nobody is named as the doer | `dazozon vayebel.` | *Azozon was seen.* | I |
+| [Leave out the subject](/no-subject#no-subject): nobody is named as the doer | `dazozon vayebel.` | *Azozon was seen.* | B |
 | [Moving words changes nothing](/clause#direct-object-d) | `dogozel zodozel vayebel.` | *A dog sees a cat.* | B |
 | [Default order by speech act](/speech-moves#act-word-order): question verb second, command verb first, prohibition verb late | `yel zazozon vabuvul dubogal.` · `yol vabuvul dubogal.` · `yul dubogal vabuvul.` | *Does Azozon punch the box?* · *Punch the box!* · *Don't punch the box.* | B |
 | [Fill-ask: blank first](/questions#fill-ask) | `yel dar zazozon vayebel.` | *What does Azozon see?* | B |
@@ -157,12 +157,12 @@ Calls and sentence glue use [`/y/`](/speech-moves) and [`/x/`](/dependents).
 
 | Slot | Words | English | Stage |
 |------|-------|---------|-------|
-| [`/w/`](/left-bound#degree-w), before an adjective or adverb | `welazem` | *very* | B |
+| [`/w/`](/very-and-slightly#degree-w), before an adjective or adverb | `welazem` | *very* | B |
 | | `wohalal` | *extremely* | I |
 | | `wamezem` | *slightly* | I |
 | | `wadowem` | *quite* | I |
 | | `wahuram` | *completely* | I |
-| [`/h/`](/left-bound#degree-w), on the verb | `hayurom` | *kind of* | I |
+| [`/h/`](/very-and-slightly#degree-w), on the verb | `hayurom` | *kind of* | I |
 | | `herugom` | *again* | I |
 
 <PageBreak />
@@ -245,6 +245,6 @@ Root, mid-word `th`, a reach vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 | `hewem blazozon` *like Azozon* ([`/b/` completes a host](/clause#extra-nouns)) | | `zazozon vezuyol balazun.` *Azozon tells Alazun* ([`/b/` receives](/clause#extra-nouns)) |
 | `zodozel gelazem.` *There is a big dog* ([new noun](/predication#existence)) | | `zodozer gelazem.` *The dog is big* ([resumed noun](/predication#existence)) |
 | `zazozon vowurol.` *Azozon walks* ([the verb](/clause#who-acts-and-the-action)) | | `zazozon gowurol.` *Azozon is walking* ([under way](/predication#in-progress)) |
-| `dazozon vayebel.` *Azozon was seen* ([no subject named](/left-bound#no-subject)) | | `zumen` *someone did it* ([an unnamed someone](/pronouns#special-pronouns)) |
+| `dazozon vayebel.` *Azozon was seen* ([no subject named](/no-subject#no-subject)) | | `zumen` *someone did it* ([an unnamed someone](/pronouns#special-pronouns)) |
 | `dazozol` *a swan* ([-l](/proper-names#proper-name--n)) | | `dazozoln` *an Azozon* ([-ln: one of the name](/proper-names#name-instance--ln)) |
 | `zoyahehal` *bedroom* ([a dictionary word](/compounds#dictionary-compounds)) | | `zuwedaxubudal` *peanut butter* ([glued with `x`](/compounds#compound-vs-separate)) |

@@ -769,7 +769,7 @@ function considerTag(ctx: Ctx, word: TagWord, slot: WordSlot | undefined): void 
   else recallTag(ctx, word);
 }
 
-/** Which sense of its stem a word carries: **-l** / **-m**, or a resume's own pin or its antecedent's (tag-pronouns.md#resume-sense). */
+/** Which sense of its stem a word carries: **-l** / **-m**, or a resume's own pin or its antecedent's (resume-sense.md#resume-sense). */
 function sensePinned(ctx: Ctx, word: LexWord): "l" | "m" | undefined {
   if (word.ending === "l" || word.ending === "m") return word.ending;
   if (word.ending !== "r") return undefined;

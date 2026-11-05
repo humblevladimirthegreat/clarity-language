@@ -756,7 +756,7 @@ English *himself*, *herself*, *itself* and *themself* say the object is the same
 
 ### Cross-role inventory {#cross-role-inventory}
 
-**Needs:** [Resume](/pronouns#resume-r) · [Cross-role recast](/tag-pronouns#cross-role-recast)
+**Needs:** [Resume](/pronouns#resume-r) · [Cross-role recast](/resume-sense#cross-role-recast)
 
 Intermediate already recast one referent into a new slot. Each table is an **antecedent** role; rows are the **pronoun** role. The mechanism is still one **-r**.
 

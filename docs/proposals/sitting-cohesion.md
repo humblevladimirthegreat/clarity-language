@@ -1,6 +1,6 @@
 # Proposal: Making every sitting pass "what one sitting holds"
 
-**Status:** in progress. Phase 0 done (2026-11-05, every finding held). Workstreams done: 1, 2a, 2b, 2c.
+**Status:** in progress. Phase 0 done (2026-11-05, every finding held). Workstreams done: 1, 2a, 2b, 2c, 2d.
 **Related:** [what one sitting holds](../meta/grammar-docs.md#one-sitting) (the tests this proposal applies), [sitting length](../meta/drill-generation.md#sitting-length), [how to apply](../meta/learning-levels.md#how-to-apply), [gates](../meta/learning-levels.md#gates), [allowlist](../meta/drill-generation.md#allowlist), [site redirects](../meta/site-redirects.md).
 **Depends on:** `range-series.md`, implemented first (B6 assumes one range series).
 **Design authority:** none. This proposal moves, merges, peels, and retitles existing sections. It adds no form and changes no reading. Band changes for three sections are settled in [gate runs](#gate-runs). Any further grammar decision goes under [open decisions](#open-decisions) and waits.
@@ -167,6 +167,7 @@ The job is unified, but it is still taught on two pages 11 sittings apart.
 | `set-joins.md` "And/or and the full set map" | Intermediate | C1 |
 | `quote-contents.md` "Inside a quote" | Intermediate | C2 |
 | `nested-dependents.md` "Nested dependents" (if E4 peels) | Advanced | E4 |
+| `very-and-slightly.md` "Very and slightly" (B1 fallback) | Intermediate | B1 |
 
 Removed: `join-across-roles.md` (D1), which redirects to the merged joins page.
 
@@ -422,6 +423,9 @@ Owns-line changes that subagents reported, for Phase 5 to apply to `AGENTS.md`:
 - 2c, `intention.md` row: "decision, try / fallback (`ability.md`); want (`want.md`)" → "try / fallback (`ability.md`); want, decision (`want.md`)" (filenames after Phase 3).
 - 2c, `sakes.md` row: "enough and too, sake bars (`sake-bars.md`)" → "bars: than planned, than usual, enough and too (`sake-bars.md`)" (filename after Phase 3).
 - 2c, `notional-standing.md` row: "Residue / former, channel bars" → "Residue / former, channels after `uom`".
+- 2d, `plurality.md` row: "collectives, each other, addressing several people (`collectives.md`)".
+- 2d, `pronouns.md` row: "…; resume one sense, cross-role recast (`resume-sense.md`); tag pronouns (`tag-pronouns.md`)".
+- 2d, `clause.md` row: add "leaving out who acts (`no-subject.md`)" and "degree words on `/w/` (`very-and-slightly.md`)"; chaining (`left-bound.md`, filename after Phase 3) covers chaining only.
 - 2a, `hooks.md` row: "ordered ranges (`ordered-ranges.md`)" → "ranges, including ranges of numbers" (and the filename after Phase 3).
 
 ## H3s that changed pages
@@ -432,7 +436,9 @@ For Phase 3's hash-redirect rows (`old.md#id` → new page):
 - 1: `roles.md#role-pointers-family` removed → `pronouns.md#role-pointers`; `stacked-markers.md#examples` removed; `proper-names.md#number-word-exception` folded → `number-markers.md#number-endings`.
 - 2a: `numbers-applied.md#letter-codes` → `number-markers.md`; `numbers-applied.md#number-ranges` → `ordered-ranges.md`.
 - 2b: `proper-names.md#continue-x` → `sentence-linkers.md`; `dependents.md#continue-x` → `speech-moves.md`; `singability.md#thinking-sounds` → `speech-moves.md`; `sentence-linkers.md#orthography-and-prosody-periods` → `sentence-linkers.md#past-a-period` (id renamed); `label-reach.md#command-property` → `speech-acts.md`; `sentence-linkers.md#result-hinge` and `#time-hinge-on-noun` → `more-hinges.md`; `stand-in-roles.md#nested-dependents` → `nested-dependents.md`.
-- 2c: `ability.md#decision-revisability` (also `#decision`, `#decision-mood`, `#decision-changeability`) → `want.md`; `comparative-arity.md#bars` → `sake-bars.md`; `notional-standing.md#channel-bars` → `sake-bars.md`. Also repoint `hash-redirect.ts`'s `intention.md#intermediate → ability.md` row (that page now holds only Try).
+- 2c: `ability.md#decision-revisability` (also `#decision`, `#decision-mood`, `#decision-changeability`) → `want.md`; `comparative-arity.md#bars` → `sake-bars.md`; `notional-standing.md#channel-bars` → `sake-bars.md`. 
+- 2d: `tag-pronouns.md#reciprocal` and `#addressing-several-people` → `collectives.md`; `tag-pronouns.md#how-english-approximates-r`, `#resume-sense`, `#cross-role-recast` → `resume-sense.md`; `left-bound.md#degree-w` → `very-and-slightly.md`; `left-bound.md#no-subject` → `beginner/no-subject.md`.
+- Also repoint `hash-redirect.ts`'s `intention.md#intermediate → ability.md` row (that page now holds only Try).
 
 ## Open decisions
 
@@ -446,5 +452,7 @@ The main agent adds anything a subagent reports, and skips the affected item unt
 - **Phase 3 addition: hash redirects for moved H3s.** Hand moves and `peel-headings` added no `hash-redirect.ts` rows, so old `page#id` URLs open the old page but not the section. Phase 3 adds a row for every H3 that moved pages (goal 3).
 - **OD6. B4 `contrary-to.md` peel and C3 retitle (2c.3), skipped.** Moving *Contrary to a stance (`uom`)* off prescription puts the `uom` home after holder (the channel H3 needs channels and a holder), but permission-consent (4 uses: `uom hwuvul` / `hwubum`) and holder (`uom theyomalazun thagom`) already use and link to it earlier on the path. Options: (a) contrary-to gathers every `uom` stance kind (plan, say words from permission-consent, holder's paragraph, channels), placed after holder; (b) peel only *Channels after `uom`*, leaving the base H3 on prescription (C3's retitle then fails test 3 and the `uom` set stays split); (c) move permission-consent after contrary-to and drop holder's `uom` paragraph. notional-standing's lead rewrite and C3 wait on this; prescription keeps "Motive" and its filename, so its URLs row is on hold.
 - **OD7. Level review for ability.md (2c.1).** With DECISION on want.md, review-intermediate has no item linking ability.md, and `lint ageben` reports a level-review error (not a generate-row error). Phase 3.3 or 4 adds an ATTEMPT review item.
+- **OD8. Level review for tag-pronouns.md (2d.2).** The review item *How English approximates -r* now links resume-sense.md, so tag-pronouns has none; same kind of error as OD7. Phase 3.3 or 4 adds a tags item.
+- **Follow-up from 2d.3.** B1's degree words went to the fallback peel `very-and-slightly.md`, not vague-amounts: speech-acts, exactly-like, and feelings-permission use or link `#degree-w` well before vague-amounts (gate 4). Its `/h/` words `hayurom` *kind of* and `herugom` *again* may not fit "Very and slightly" (test 3); the Phase 5 audit checks the title.
 - **Process note.** A **generate** allowlist row fails the build until Phase 4 writes its checkpoint, so from 2a.2 on, "green" means tests pass and every `lint ageben` error (checkpoint inventory, drill coverage, practice-item count, word bank, core cells) sits on a **generate** row that Phase 4 writes or tops up.
 - **Follow-up from A1.** Workstream 1 also fixed stale bold vowel labels (`**…el** (`zol`)`) on rank-joins, say-questions, join-limits, fill-ask-roles, causation, and the talking cheat sheet. Bare bold vowel labels in other prose were not audited.
