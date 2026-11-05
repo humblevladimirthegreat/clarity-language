@@ -173,3 +173,7 @@ Azozon doubts it.	doubts	link:holder.md#holder	someone else's doubt takes a hold
 Azozon expects rain.	expects	not:say-tense.md#ability-words	the bare forecast row is the holder row's twin
 Azozon is watching Alazun leave.	watching	link:holder.md#holder	someone else's watching is holder + LIVE
 His motive is money.	motive	link:holder.md#holder	a possessor's motive takes a holder
+# Someone else's feeling: a holder after the feeling word
+Alazun is upset.	upset	has:holder-feeling	someone else's feeling takes a holder
+Alazun seems upset.	upset	has:holder-feeling	the owner is found past a copula verb
+I am upset.	upset	not:holder.md#holder	the speaker's own feeling takes no holder

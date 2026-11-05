@@ -324,6 +324,22 @@ export function extraNounHook(word: string): DetectorHit {
 export const HOLDER_LINKS: readonly string[] = ["holder.md#holder", "want.md#whose-intention"];
 
 /**
+ * A slot whose suggestions link one of these names a feeling or a stake (*upset*, *glad*). When
+ * someone else owns it, the analyzer adds {@link HOLDER_FEELING}: the feeling takes a holder.
+ */
+export const FEELING_LINKS: readonly string[] = [
+  "feelings-permission.md#feeling-no-object",
+  "feelings-permission.md#emotion-compose",
+  "say-reasons.md#sake-words",
+  "sakes.md#sake-inventory",
+];
+export const HOLDER_FEELING: DetectorHit = {
+  id: "holder-feeling",
+  label: "someone else's feeling: a holder after the feeling word (`thuwathuruer theyomalazun`)",
+  links: ["holder.md#holder"],
+};
+
+/**
  * A holder word's host: a channel or MAY with a person noun joined on its seam (`theyom` + `azozon`),
  * else undefined. The person is at least four letters and ends as a noun does (holder.md#holder).
  */
@@ -347,6 +363,8 @@ export function stanceOwner(word: { normal: string; cls: string }): "speaker" | 
 export function detectorLinks(): string[] {
   return [
     ...HOLDER_LINKS,
+    ...FEELING_LINKS,
+    ...HOLDER_FEELING.links,
     ...Object.values(SAME_ROLE_HOOKS),
     ...Object.values(HOOK_LINKS).flat(),
     ...Object.values(OPENER_LINKS).flat(),

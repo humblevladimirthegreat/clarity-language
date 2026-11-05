@@ -13,7 +13,7 @@ import { BANDS } from "../lint/learning-order.js";
 import { markerToSpeech, digitsToSyllables } from "../tts/numbers.js";
 import { COUNT_SLOT, grammarPath, matchCues, RANK_SLOT, resolveLink, type CueIndex, type GrammarJob } from "./cues.js";
 import type { CompoundRow } from "../lexicon-compounds.js";
-import { BOUNDABLE_JOINS, BOUNDABLE_RESTRICTORS, COMPOUND_LINKS, HOLDER_LINKS, holderHost, stanceOwner, detectClause, detectClauseOpener, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAKE_ENDINGS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
+import { BOUNDABLE_JOINS, BOUNDABLE_RESTRICTORS, COMPOUND_LINKS, FEELING_LINKS, HOLDER_FEELING, HOLDER_LINKS, holderHost, stanceOwner, detectClause, detectClauseOpener, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAKE_ENDINGS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
 import { lookupLexicon, rootsByForm, sideEnding, type LexiconIndex, type LexiconSuggestion } from "./lexicon.js";
 import { doerVerb, tagEnglish, type ClauseFeatures, type TaggedTerm, type WordClass } from "./tag.js";
 import { lookupRoute, lookupWordnet, senseSuggestions, type RouteClass, type WordnetIndex, type WordnetPos } from "./wordnet-index.js";
@@ -186,6 +186,15 @@ function classRole(terms: readonly TaggedTerm[], i: number, outer: readonly Tagg
 
 /** Words between a stance's owner and the stance (*I really want*, *Azozon does not plan*). */
 const OWNER_SKIP = new Set<WordClass>(["adverb", "auxiliary", "modal", "negative"]);
+/** Copulas: an adjective's owner is the subject before them (*Alazun is anxious*, *Alazun seems upset*). */
+const COPULAS = new Set(["be", "seem", "look", "feel", "appear", "sound", "become", "get", "grow"]);
+
+/** Whose stance a word at `i` reports: the subject or possessor right before it, past {@link OWNER_SKIP} words and copulas. */
+function ownerAt(terms: readonly TaggedTerm[], i: number): "speaker" | "other" | undefined {
+  let j = i - 1;
+  while (j >= 0 && (OWNER_SKIP.has(terms[j]!.cls) || (terms[j]!.cls === "verb" && COPULAS.has(terms[j]!.lemma)))) j--;
+  return j >= 0 ? stanceOwner(terms[j]!) : undefined;
+}
 
 /**
  * Whose stance a cue run at `i` reports: the subject or possessor right before it, past adverbs,
@@ -196,9 +205,7 @@ const OWNER_SKIP = new Set<WordClass>(["adverb", "auxiliary", "modal", "negative
 function byStanceOwner(jobs: JobSuggestion[], terms: readonly TaggedTerm[], i: number): JobSuggestion[] {
   const holder = (j: JobSuggestion) => HOLDER_LINKS.includes(j.link);
   if (!jobs.some(holder)) return jobs;
-  let j = i - 1;
-  while (j >= 0 && OWNER_SKIP.has(terms[j]!.cls)) j--;
-  const owner = j >= 0 ? stanceOwner(terms[j]!) : undefined;
+  const owner = ownerAt(terms, i);
   if (owner === "speaker") return jobs.filter((x) => !holder(x));
   if (owner !== "other") return jobs;
   // The stance a holder row repeats: each word after the holder, or the host of a holder alone (`thomamazozon` → `thomam`).
@@ -855,6 +862,11 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
         // *that* / *whether* opening a clause: the opener's job replaces *that* as a pronoun or determiner.
         const opener = one ? detectClauseOpener(t.normal, terms[i - 1] ?? outer[outer.length - 1], terms[end]).flatMap((d) => filterDetector(data, d, stage) ?? []) : [];
         if (opener.length) suggestions = [...opener, ...suggestions.filter((s) => s.kind !== "job" && s.kind !== "entry")];
+        // Someone else's feeling or stake (*Alazun seems upset*) takes a holder.
+        if (suggestions.some((s) => suggestionLinks(s).some((l) => FEELING_LINKS.includes(l))) && ownerAt(terms, i) === "other") {
+          const hit = filterDetector(data, HOLDER_FEELING, stage);
+          if (hit) suggestions.push(hit);
+        }
         // WordNet leads and live compounds rank below every listed match and grammar row.
         suggestions.push(...[...leads, ...routes, ...live].filter((s) => withinStage(data, s, stage)));
         addExamples(data, suggestions, [...new Set(run.flatMap((r) => [r.normal, r.lemma]))]);
