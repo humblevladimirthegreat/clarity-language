@@ -500,7 +500,7 @@ const DIGIT_WORD = /^([zdbgɡ])(#-|#|\+-|\+|-)(\d+)(e-?\d+)?$/;
 
 /**
  * A row matched through a written number (*5 or more* for *five or more cars*), respelled with the
- * input's numbers, and on `g` when a noun follows (`grazal al grawal`). Undefined when nothing changes
+ * input's numbers, and on `g` when a noun follows (`grazal oel grawal`). Undefined when nothing changes
  * or a respelled word does not parse.
  */
 function numberCuePhrase(data: HelperData, job: GrammarJob, run: readonly TaggedTerm[], beforeNoun: boolean): string | undefined {
@@ -576,7 +576,7 @@ function nounFollows(terms: readonly TaggedTerm[], end: number): boolean {
 const HOOK_FORM = /^[aeiou]{1,2}[lmnr]$/;
 const HOSTED_FORM = /^[hɡg][a-z]+$/;
 
-/** Sections whose lone-hook rows are extra-noun hooks (a lone `al` elsewhere may be a range or *including*). */
+/** Sections whose lone-hook rows are extra-noun hooks (a lone `al` elsewhere is *including*). */
 const EXTRA_NOUN_SECTION = /^(?:hooks|ending-grids|extra-noun-hooks)\.md#extra-noun/;
 
 /**

@@ -107,6 +107,13 @@ Seven or more birds sing.	Seven or more	form:grarel	the ray is respelled with th
 Uzozen reads less than four books.	less than four	form:gruwal	*less than* reaches the ray on −∞, on `g` before its noun
 Uzozen sees at least two cats.	at least two	link:say-amounts.md#quantity-words	*at least 5* matches *at least two*
 Uzozen sees the 3rd through last cars.	3rd through last	form:grogel	a rank cue matches another rank
+Uzozen sees three to five cats.	three to five	link:numbers-applied.md#number-ranges	*3 to 5* is a range of numbers
+Uzozen sees three to five cats.	three to five	form:oel	a number range takes the range hook, never *including* `al`
+Uzozen sees three to five cats.	three to five	not:hooks.md#including	a number range is not *including*
+Uzozen sees cats up to but not including five.	to	shape:oel / uel	the number-range row offers the half-open hook
+Uzozen sees at most five cats.	at most five	form:gruwal	*at most* reaches the ray on −∞
+Uzozen sees at most five cats.	at most five	form:oel	*at most* keeps five in with `oel`
+Uzozen sees at least two cats.	at least two	form:oel	*at least* keeps two in with `oel`
 Uzozen's second child runs.	second child	form:g#2e1	a kin birth-order row keeps its generation and takes the input's rank
 Uzozen's fourth child runs.	fourth child	form:g#4e1	a kin birth-order row keeps its generation and takes the input's rank
 Uzozen is Ahelan's sibling.	sibling	link:say-people-places.md#kin-words	*sibling* has a kin row
