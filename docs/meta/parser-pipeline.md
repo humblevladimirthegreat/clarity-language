@@ -156,7 +156,7 @@ Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokeni
 Owns:
 
 - Utterance framing ([speech-moves.md](/speech-moves) — `/y/` turns, including a written `/y/` span at the left edge ([spans.md](/spans#y-spans)), omissible default assertoric; [dependents.md](/dependents) — `/x/` continue)
-- Right-close joins at phrase / VP / clause level (illegal left fence); a `/th/` stance word right before a rank join (`e` / `ue` / `oe`, **-l** / **-m**) is that fence's bar, an `NpItem` of kind `bar` ([comparatives.md](/comparative-arity#bars))
+- Right-close joins at phrase / VP / clause level (illegal left fence); a `/th/` stance word right before a rank join (`e` / `ue` / `oe`, **-l** / **-m**) is that fence's bar, an `NpItem` of kind `bar` ([sake-bars.md](/sake-bars#bars))
 - `uom` right before a `/th/` stance word holds that stance (with its hosted `/b/`) as the hook unit's `zone`, job `zone`, at the left edge too: the stance the event goes against, not a stance on the claim ([sakes.md](/prescription#contrary-to-stance)). Enforce checks the zone kind (`zoneKind`)
 - Adjunct islands **`{ … }`** (`IslandOpen` / `IslandClose` tokens); a mention marker before a topic span (`topicMarker`)
 - Complex `/ɡ|h/` + `/b/`; `/w/` + `/b/` only for *as-of* overlays; floating `/h/` as adjuncts

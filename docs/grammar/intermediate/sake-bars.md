@@ -2,11 +2,97 @@
 band: intermediate
 ---
 
-# Enough and too {#enough-and-too}
+# Than planned, enough, too {#than-planned-enough-too}
+
+### Comparing against a stance (bars) {#bars}
+
+English *more than planned* and *later than planned* rank one thing against a **value a stance sets**, not against another person: the plan sets how much and when. Write that `/th/` stance word, or that [intention adverb](/clause#intention-adverbs) on `/h/` (FORMER, ability, a say word), where the second name would go, right before the rank join. That word is the **bar**. The join closes everything before it, so the bar is part of the comparison: it says what you rank against. It is not your stance on the whole sentence.
+
+> `zazozon thagom zol bral vevorol.`
+>
+> [z-Azozon | th-plan-itinerary | z-rank/more | b-later] | v-arrival
+>
+> "Azozon arrives later than planned."
+
+The same stance word **after** the fence has its ordinary reading, a stance on the whole sentence. With one ranked name, the fence is then a [superlative](/comparatives#superlatives):
+
+> `zazozon zol bral vevorol thagom.`
+>
+> [z-Azozon | z-rank/more | b-later] | v-arrival | th-plan-itinerary
+>
+> "I plan for Azozon to arrive last."
+
+A bar fence ranks **one** item against **one** bar: with a bar, there is no second name and no second bar. Any of the rank joins works (**`zol`**, **`zuol`**, **`zoel`**, and their open **-m** forms), and the bar keeps its own ending. The fence can rank an object or a recipient the same way:
+
+> `zazozon dodelx thagom dol gral vagedal.`
+>
+> z-Azozon | [d-strawberry-x | th-plan-itinerary | d-rank/more | g-amount] | v-eat
+>
+> "Azozon eats more strawberries than planned."
+
+> `zazozon vezuyol balazun thagom bol hral.`
+>
+> z-Azozon | v-tell | [b-Alazun | th-plan-itinerary | b-rank/more | h-how-often]
+>
+> "Azozon tells Alazun more often than planned."
+
+A [hook](/hooks) and its `/b/` on the ranked item go right before the bar, the way they go right before a join word:
+
+> `zanal em buwen thagom zol garolem.`
+>
+> [[z-book | [near | b-speaker]] | th-plan-itinerary | z-rank/more | g-heavy]
+>
+> "This book is heavier than planned."
+
+<!-- cheat-sheet: comparing -->
+| Ageben | Use | English |
+|--------|-----|---------|
+| name + bar + **`zol`** | above the bar | *more than planned* / *later than planned* |
+| name + bar + **`zuol`** | below the bar | *less than planned* / *earlier than planned* |
+| name + bar + **`zoel`** | at the bar | *as planned* |
+| bar after the fence | a stance on the whole claim | *plans to be the most …* |
+
+**Compare with:** a name before the rank join is someone you rank against (`zazozon zalazun zol guzemel` *Azozon is sleepier than Alazun*). A stance word in that place is the value that stance sets.
+
+### Channels as comparison bars {#channel-bars}
+
+English *sleepier than usual* and *bigger than it looks* compare against an expectation. Put the channel right before the rank word (**`zol`** / **`zuol`** / **`zoel`**) as the comparison's [bar](#bars). The bar is then **what that channel led you to expect**, not how you know the claim. After the comparison, the same word is the claim's channel again.
+
+> `zazozon thubom zol guzemel.`
+>
+> [z-Azozon | th-PATTERN | z-rank/more | g-sleepy]
+>
+> "Azozon is sleepier than usual."
+
+> `zazozon zol guzemel thubom.`
+>
+> [z-Azozon | z-rank/more | g-sleepy] | th-PATTERN
+>
+> "Azozon is the sleepiest, going by the pattern."
+
+| Channel as the bar | Ranks against | English |
+|--------------------|---------------|---------|
+| LIVE `thugem` | how it looks | *than it looks* |
+| MEMORY `thevum` | how you remember it | *than I remember* |
+| PATTERN `thubom` | the trail of cases | *than usual* |
+| CLUES `theyom` | what was worked out | *than calculated* |
+| REPORTED `thebam` | what was said or written | *than advertised* / *than the stories say* |
+| INTUITION `thabem` | your gut expectation | *than I expected* |
+| FORMER `helam` | how it used to be | *than it used to be* |
+
+MAY gives no expected value to compare against, so it cannot be a bar. *Than scheduled* ranks against a plan: that is the [PLAN bar](#bars) (`thagom`).
+
+A [holder](holder.md#holder) on a comparison bar names **whose expectation** you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
+
+> `zazozon thabemalazun zol guzemel.`
+>
+> [z-Azozon | th-INTUITION-Alazun | z-rank/more | g-sleepy]
+>
+> "Azozon is sleepier than Alazun expected."
 
 ### Enough and too (sake bars) {#sake-bars}
 
-English *enough* and *too much* compare an amount with **what a need requires**. Write a met sake word on `/th/` as the [bar](comparative-arity.md#bars) right before a rank join: it stands for what that sake needs, and the rank join compares the amount with it. The equal-rank join **`zoel`** is *enough*. Rank **`zol`** is *too much*, and **`zuol`** is *not enough*. Use the unspecified sake **`uda`** when you do not name which sake.
+English *enough* and *too much* compare an amount with **what a need requires**. Write a met sake word on `/th/` as the [bar](#bars) right before a rank join: it stands for what that sake needs, and the rank join compares the amount with it. The equal-rank join **`zoel`** is *enough*. Rank **`zol`** is *too much*, and **`zuol`** is *not enough*. Use the unspecified sake **`uda`** when you do not name which sake.
 
 > `zedudal thudatham zoel gral.`
 >

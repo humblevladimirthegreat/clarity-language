@@ -18,7 +18,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **AIMED** | Emotion locus: aimed at a target | `wawethumel` | [Feelings](/feelings-permission#emotion-compose) |
 | **ASIDE** | An aside span | `th(hugowul)` | [Spans](/spans#asides) |
 | **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwuvam` | [Permission and consent](/permission-consent#say-words) |
-| **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Decision and try](/ability#try) |
+| **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Try](/ability#try) |
 | **AWAY** | Emotion locus: moving off from a target | `wawethumum` | [Feelings](/feelings-permission#emotion-compose) |
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thewom` | [CAUSE](/cause#cause) |
 | **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraer` | [Feelings](/feelings-permission#emotion-compose) |
@@ -26,7 +26,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **CLUES** | Evidential: reasoned from clues about this case | `theyom` | [How you know](/evidentiality#evidentiality) |
 | **CHOICE** | Say word answer: their call | `hwuvem` | [Permission and consent](/permission-consent#say-words) |
 | **COLLAPSE** | Emotion locus: out of fight, giving up | `wawethumual` | [Feelings](/feelings-permission#emotion-compose) |
-| **DECISION** | Pick-firmness mood | `thogem` | [Decision and try](/ability#decision) |
+| **DECISION** | Pick-firmness mood | `thogem` | [Want and decide](/want#decision) |
 | **DEDUCED** | Evidential: must hold if the premises hold | `thanam` | [How you know](/evidentiality#deduction) |
 | **FAWN** | Emotion locus: placating a target | `wawethumaom` | [Feelings](/feelings-permission#emotion-compose) |
 | **FLOWING** | Emotion motion: steady, a current you can ride | `wawethumom` | [Feelings](/feelings-permission#emotion-compose) |
@@ -55,7 +55,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **SURGING** | Emotion motion: in waves or spikes | `wuwathuraer` | [Feelings](/feelings-permission#emotion-compose) |
 | **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruem` | [Feelings](/feelings-permission#emotion-compose) |
 | **VICARIOUS** | Emotion locus: felt for someone's sake | `wawethumom` | [Feelings](/feelings-permission#emotion-compose) |
-| **WANT** | Desire mood: lasting / unstated / passing | `thalom` | [Want](/want#want) |
+| **WANT** | Desire mood: lasting / unstated / passing | `thalom` | [Want and decide](/want#want) |
 
 **Compare with:** [quasi](#quasi) (`-e-xROOT`) is not **NOTIONAL**.
 
@@ -180,7 +180,7 @@ Prefer an audible left `/y/` rather than implied **`yal`**.
 
 A `/th/` stance word in the comparee slot of a rank join: the value you rank against (*than planned*, *enough*, *than usual*).
 
-[Place on a scale](/comparative-arity#bars)
+[Than planned, enough, too](/sake-bars#bars)
 
 ### Bare OoM
 
@@ -216,7 +216,7 @@ The reusable mapping of ending letters **-l / -m / -r / -n** on a scale. Ending 
 
 Endings on unmet **`thu`**, **DECISION**, and ability *can’t*.
 
-[Sakes](/sakes#sake-changeability), [Decision and try](/ability#decision)
+[Sakes](/sakes#sake-changeability), [Want and decide](/want#decision)
 
 ### Channel on a generalization
 

@@ -300,7 +300,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 ### How many and how big {#quantity-words}
 
-**Needs:** [Many and few](/vague-amounts#vague-amounts) · [Bars](/comparative-arity#bars) · [Place on a scale](/comparative-arity#place-on-a-scale) · [Measure phrases](/numbers-applied#measure-phrases) · [Rays](/open-ranges#rays) · [Fractions](/numbers-applied#fractions)
+**Needs:** [Many and few](/vague-amounts#vague-amounts) · [Bars](/sake-bars#bars) · [Place on a scale](/comparative-arity#place-on-a-scale) · [Measure phrases](/numbers-applied#measure-phrases) · [Rays](/open-ranges#rays) · [Fractions](/numbers-applied#fractions)
 
 | English | Ageben |
 |---------|--------|

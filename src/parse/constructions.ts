@@ -25,7 +25,7 @@ import type { AnaphorKind, Ending, LexReading, MorphWordFamily, PointerVowel, Po
  */
 export type ConstructionEntry = { anchor: string; summary: string; reader?: string };
 
-/** Shared by the three rank-fence bar productions (comparative-arity.md#bars). */
+/** Shared by the three rank-fence bar productions (sake-bars.md#bars). */
 const BAR_READER =
   "A `th-` word (or an intention `h-` word) inside a ranking bracket, right before the rank word, is what the item is ranked against: `[z-X | th-plan-itinerary | z-rank/more | b-later] | v-departure` = X leaves later than planned; a pattern there = than usual (`rank/less | g-strength` = less strong than usual); a permission there = than allowed. The same word outside the bracket covers the whole sentence.";
 
@@ -123,7 +123,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "bCoord.bCoordPart": { anchor: "joins.md#right-close", summary: "/b/ phrase parts" },
   "zCoordPart.npConjunct": { anchor: "joins.md#and-lists-a", summary: "/z/ conjunct" },
   "zCoordPart.bar": {
-    anchor: "comparative-arity.md#bars",
+    anchor: "sake-bars.md#bars",
     summary: "/th/ stance word as a rank fence's bar",
     reader: BAR_READER,
   },
@@ -131,7 +131,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "zCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /z/ join" },
   "dCoordPart.npConjunct": { anchor: "joins.md#right-close", summary: "/d/ conjunct" },
   "dCoordPart.bar": {
-    anchor: "comparative-arity.md#bars",
+    anchor: "sake-bars.md#bars",
     summary: "/th/ stance word as a rank fence's bar",
     reader: BAR_READER,
   },
@@ -139,7 +139,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "dCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /d/ join" },
   "bCoordPart.npConjunct": { anchor: "joins.md#right-close", summary: "/b/ conjunct" },
   "bCoordPart.bar": {
-    anchor: "comparative-arity.md#bars",
+    anchor: "sake-bars.md#bars",
     summary: "/th/ stance word as a rank fence's bar",
     reader: BAR_READER,
   },
@@ -846,10 +846,10 @@ export const REJECTIONS = {
   },
   ySpanType: { anchor: "spans.md#y-spans", summary: "a span under /y/ is opaque <…> or a cite […]; a mention or an aside is not a call or a reaction" },
   barKind: {
-    anchor: "comparative-arity.md#bars",
+    anchor: "sake-bars.md#bars",
     summary: "a bar is a stance that sets a value: a met sake, a channel, FORMER, NOTIONAL, PLAN, WANT, ability, permission, requirement, consent, or a speaker attitude",
   },
-  barCount: { anchor: "comparative-arity.md#bars", summary: "a rank fence ranks one item against one bar; with a bar there is no second comparee, noun or bar" },
+  barCount: { anchor: "sake-bars.md#bars", summary: "a rank fence ranks one item against one bar; with a bar there is no second comparee, noun or bar" },
   rankJoinNumberManner: { anchor: "comparative-arity.md#manner-scale", summary: "the /h/ after a rank join is a manner word; the only number there is digitless h+ (how often)" },
   zoneKind: {
     anchor: "prescription.md#contrary-to-stance",

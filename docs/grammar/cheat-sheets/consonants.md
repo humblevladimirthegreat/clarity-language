@@ -125,7 +125,7 @@ l m r n
 | **is** | hook closed / open is [join](/joins#join-type-vowel-series) closed / open | B |
 | **is** | [fill-ask](/questions#fill-ask-r) is join **-r** under a question; digitless [`grar`](/number-markers#number-endings) is join **-r** | B / I |
 | **is** | [polar](/polar-inventory#polar-endings) is the [act ending](/firm-soft#speech-act) | B / I |
-| **is** | [decision](/ability#decision-changeability) is unmet [changeability](/sakes#sake-changeability) | I |
+| **is** | [decision](/want#decision-changeability) is unmet [changeability](/sakes#sake-changeability) | I |
 | **same spelling, not the same scale** | extra-noun [**-m**](/extra-noun-hooks#extra-noun-intermediate) (*amid*) is exactness; same-role [**-m**](/hooks) (*and maybe more*) is completeness | B |
 | **same spelling, not the same scale** | stand-in [**`-rm`**](/stand-in-vowels#stand-in) is exactness (gist); resume-sense [**`-rm`**](/tag-pronouns#resume-sense) is content (the abstract) | I |
 

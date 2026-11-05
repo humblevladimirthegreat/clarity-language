@@ -121,7 +121,7 @@ Source: [joins.md](/joins), [join-across-roles.md](/join-across-roles#stance-joi
 
 ## Comparison bars
 
-Source: [comparatives.md](/comparative-arity#bars)
+Source: [sake-bars.md](/sake-bars#bars)
 
 - **open:** a stance that sets no value as a bar: clause hinges, MAY, MIRATIVE, DECISION, ATTEMPT, RESIDUE, CAUSE, and a say word's no or *their call* (`hwuvul`, `hwudum`, `hwuvem`). None sets a level to rank against: a decision or an attempt commits to an act, a ban or a refusal only says no, and *their call* sets nothing. *Than decided* is PLAN. Parser: `barKind`.
 - **open:** a second comparee next to a bar (`barCount`). A bar fence ranks one item against one bar, so a second item has nothing to rank against.

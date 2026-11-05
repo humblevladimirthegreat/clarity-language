@@ -886,7 +886,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 📮,post-box,oboha,place,holds,medium,dispatch,postbox sends mail on its way; dispatch is sending outward,,send; mail; deliver; post,
 🗳️,ballot,una,title,holds,,choice,ballot records your vote; choice is selecting among options,,vote; election; elect; poll; voluntary,
 ✏️,pencil,obewo,tool,order,small,draft,pencil marks can be erased; draft is tentative first version,,outline,extra-noun-hooks.md#beginner-practice
-🖊️,pen,ebewo,tool,order,small,commitment,pen ink stays on the page; commitment is a binding promise,,dedicate,ability.md#intermediate-practice
+🖊️,pen,ebewo,tool,order,small,commitment,pen ink stays on the page; commitment is a binding promise,,dedicate,want.md#intermediate-practice
 🖌️,paintbrush,ubewo,tool,order,small,artistry,brush paints with flowing strokes; artistry is skilled creative work,,art; paint; illustration; brush; draw; illustrate; stroke,stance-bars.md#advanced-practice
 🖍️,crayon,ogewo,tool,order,small,boldness,crayon marks with thick color; boldness is strong visible stroke,,nerve,
 📝,memo,ona,title,holds,,policy,memo records a standing decision; policy is a standing rule,,regulation; guideline; law; legal,ending-grids.md#intermediate-practice

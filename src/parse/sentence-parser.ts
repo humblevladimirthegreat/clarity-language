@@ -787,7 +787,7 @@ class AgebenSentenceParser extends CstParser {
   /**
    * One slot's rules. A list is one or more parts, each closed by its join; it ends as its last part does (see the
    * `unit` rules), and in a `Grounds` list the last part's bar hosts `barl`, so the main clause ends with the list and the
-   * next sentence is the grounds (comparative-arity.md#bars). The parts after the first come as a right-recursive rest
+   * next sentence is the grounds (sake-bars.md#bars). The parts after the first come as a right-recursive rest
    * (read back by `npPartNodes`), so a part's end is known before deciding whether more follow:
    * - After a part a group tag closes (`Tagged`), the next part may open with a new tag (`zwal zodogal zam`); after any
    *   other part it may not: a tag right after a join names the whole list (tag-pronouns.md#tag-pronouns).
@@ -873,7 +873,7 @@ class AgebenSentenceParser extends CstParser {
           this.consume(k, B, { LABEL: "itemHookBound" });
         });
         // A stance word before a rank join is the comparee: the bar (comparatives.md § bars). A CLUES or PATTERN bar
-        // may host `barl`: the next sentence is the grounds (comparative-arity.md#bars).
+        // may host `barl`: the next sentence is the grounds (sake-bars.md#bars).
         if (grounds) this.subrule(k, this.barsGrounds, { LABEL: "bar" });
         else this.many(k + 1, () => this.subrule(k, this.barUnit, { LABEL: "bar" }));
         ending(k, "npJoinClose");
@@ -1356,7 +1356,7 @@ class AgebenSentenceParser extends CstParser {
     });
   }
 
-  /** A CLUES or PATTERN bar hosting `barl`: the next sentence is the grounds (comparative-arity.md#bars). */
+  /** A CLUES or PATTERN bar hosting `barl`: the next sentence is the grounds (sake-bars.md#bars). */
   public barStandIn = this.RULE("barStandIn", () => {
     this.MANY(() => {
       this.CONSUME(WBefore.Bar, { LABEL: "W" });

@@ -113,7 +113,7 @@ An *as-of* pair inside a finished inner clause cannot be resumed later in the ma
 
 ### Stance as-of {#stance-as-of}
 
-A stance is yours at speech-now: `thomam` is how unsure you are **as you speak**, and a sake or feeling word is how you stand **now**. English *I was sure then*, *back then it stung*, and *I'd be relieved* date the stance itself. Put the same *as-of* pair on `/th/`: **`thenam`** for a real now, **`thunom`** for a now you are not claiming, then the snapshot in `/b/`. Every stance word in the clause, including MAY, WANT, CAUSE, sakes, and feelings, then reads from that now. A [PLAN](/intention#plan-predict) is then planned **from** that now, and a [DECISION](/ability#decision) is held **at** it.
+A stance is yours at speech-now: `thomam` is how unsure you are **as you speak**, and a sake or feeling word is how you stand **now**. English *I was sure then*, *back then it stung*, and *I'd be relieved* date the stance itself. Put the same *as-of* pair on `/th/`: **`thenam`** for a real now, **`thunom`** for a now you are not claiming, then the snapshot in `/b/`. Every stance word in the clause, including MAY, WANT, CAUSE, sakes, and feelings, then reads from that now. A [PLAN](/intention#plan-predict) is then planned **from** that now, and a [DECISION](/want#decision) is held **at** it.
 
 > `zalazun thenam bl_#22,7 thomam vudurul.`
 >

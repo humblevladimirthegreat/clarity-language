@@ -370,7 +370,7 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 
 ### Will, want, try, let's {#will-want}
 
-**Needs:** [Plan](/intention#plan-predict) · [Want](/want#want) · [Decision](/ability#decision-revisability) · [Try](/ability#try) · [Hopefully](/feelings-permission#speaker-attitude) · [Speech act](/firm-soft#speech-act) · [Whose view](/holder#holder)
+**Needs:** [Plan](/intention#plan-predict) · [Want](/want#want) · [Decision](/want#decision-revisability) · [Try](/ability#try) · [Hopefully](/feelings-permission#speaker-attitude) · [Speech act](/firm-soft#speech-act) · [Whose view](/holder#holder)
 
 | English | Ageben |
 |---------|--------|

@@ -1,6 +1,6 @@
 # Proposal: Making every sitting pass "what one sitting holds"
 
-**Status:** in progress. Phase 0 done (2026-11-05, every finding held). Workstreams done: 1, 2a, 2b.
+**Status:** in progress. Phase 0 done (2026-11-05, every finding held). Workstreams done: 1, 2a, 2b, 2c.
 **Related:** [what one sitting holds](../meta/grammar-docs.md#one-sitting) (the tests this proposal applies), [sitting length](../meta/drill-generation.md#sitting-length), [how to apply](../meta/learning-levels.md#how-to-apply), [gates](../meta/learning-levels.md#gates), [allowlist](../meta/drill-generation.md#allowlist), [site redirects](../meta/site-redirects.md).
 **Depends on:** `range-series.md`, implemented first (B6 assumes one range series).
 **Design authority:** none. This proposal moves, merges, peels, and retitles existing sections. It adds no form and changes no reading. Band changes for three sections are settled in [gate runs](#gate-runs). Any further grammar decision goes under [open decisions](#open-decisions) and waits.
@@ -185,7 +185,7 @@ Removed: `join-across-roles.md` (D1), which redirects to the merged joins page.
 | `numbers-applied.md` | `measures-and-percent.md` | Measures and percent (settled in 2a: percent is a share of a whole, not a unit) | B6, D3 |
 | `rank-joins.md` | keep | Rank joins | C1 |
 | `span-mention.md` | `spans-as-words.md` | Spans as words | C2 |
-| `prescription.md` | `doing-it-for-a-sake.md` | Doing it for a sake | C3 |
+| `prescription.md` | on hold (OD6) | — | C3 |
 | ~~`fill-ask-roles.md`~~ | keep (OD2) | — | C5 |
 | `ending-grids.md` | `in-clause-hooks.md` | Hooks inside the clause | C6 |
 | `discourse-hooks.md` | keep | In fact and anyway | C6 |
@@ -419,7 +419,20 @@ Owns-line changes that subagents reported, for Phase 5 to apply to `AGENTS.md`:
 - 2a, `numbers-applied.md` row: "Ranges, measure phrases, percent; …" → "Measure phrases, percent, fractions; …" (and the filename after Phase 3).
 - 2b, `speech-moves.md` row: "Turns, vocatives, interjections, thinking sounds, continue (`/x/`), speech acts, …"; "doubled and stacked acts (`speech-acts.md`)" → "turn words, further: doubled and stacked acts, commands to be ADJ, describing a call (`speech-acts.md`)" (filename after Phase 3).
 - 2b, `dependents.md` row: "Next-sentence grammar: subordinators; continue overview, sentence linkers, what carries past a period (`sentence-linkers.md`); hinges on a degree or a noun (`more-hinges.md`)"; lexicalized stand-ins (`stand-in-roles.md`); nested dependents (`nested-dependents.md`).
+- 2c, `intention.md` row: "decision, try / fallback (`ability.md`); want (`want.md`)" → "try / fallback (`ability.md`); want, decision (`want.md`)" (filenames after Phase 3).
+- 2c, `sakes.md` row: "enough and too, sake bars (`sake-bars.md`)" → "bars: than planned, than usual, enough and too (`sake-bars.md`)" (filename after Phase 3).
+- 2c, `notional-standing.md` row: "Residue / former, channel bars" → "Residue / former, channels after `uom`".
 - 2a, `hooks.md` row: "ordered ranges (`ordered-ranges.md`)" → "ranges, including ranges of numbers" (and the filename after Phase 3).
+
+## H3s that changed pages
+<a id="moved-h3s"></a>
+
+For Phase 3's hash-redirect rows (`old.md#id` → new page):
+
+- 1: `roles.md#role-pointers-family` removed → `pronouns.md#role-pointers`; `stacked-markers.md#examples` removed; `proper-names.md#number-word-exception` folded → `number-markers.md#number-endings`.
+- 2a: `numbers-applied.md#letter-codes` → `number-markers.md`; `numbers-applied.md#number-ranges` → `ordered-ranges.md`.
+- 2b: `proper-names.md#continue-x` → `sentence-linkers.md`; `dependents.md#continue-x` → `speech-moves.md`; `singability.md#thinking-sounds` → `speech-moves.md`; `sentence-linkers.md#orthography-and-prosody-periods` → `sentence-linkers.md#past-a-period` (id renamed); `label-reach.md#command-property` → `speech-acts.md`; `sentence-linkers.md#result-hinge` and `#time-hinge-on-noun` → `more-hinges.md`; `stand-in-roles.md#nested-dependents` → `nested-dependents.md`.
+- 2c: `ability.md#decision-revisability` (also `#decision`, `#decision-mood`, `#decision-changeability`) → `want.md`; `comparative-arity.md#bars` → `sake-bars.md`; `notional-standing.md#channel-bars` → `sake-bars.md`. Also repoint `hash-redirect.ts`'s `intention.md#intermediate → ability.md` row (that page now holds only Try).
 
 ## Open decisions
 
@@ -431,5 +444,7 @@ The main agent adds anything a subagent reports, and skips the affected item unt
 - **OD4. C5 *Group separator* → number-markers (2a.2), skipped.** Its scalar examples need exponents (`wa` / `ya`), taught on digitless-exponents, after number-markers; without an exponent the examples have no documented reading. number-markers' Word shape already introduces the spoken comma.
 - **OD5. D2 *Questions that sound like another act* → speech-acts (2b.3), skipped.** Its table teaches `yel yal` as *quiz*, the home form of rhetorical-questions' *Quiz* H3, and ties `yel yol` to the quiz, so moving it makes a second home or splits a choice set (test 5). Its check-back Compare-with lines would also point forward from speech-acts to polar-inventory. Options: (a) leave it on rhetorical-questions (all three H3s are questions that are not plain asks); (b) move *Quiz* with it and move the check-back lines to polar-inventory; (c) move it, drop the `yel yal` row, and move the quiz and check-back sentences to their own pages. With D2 skipped, the "speech-acts before rhetorical-questions" placement no longer binds.
 - **Phase 3 addition: hash redirects for moved H3s.** Hand moves and `peel-headings` added no `hash-redirect.ts` rows, so old `page#id` URLs open the old page but not the section. Phase 3 adds a row for every H3 that moved pages (goal 3).
+- **OD6. B4 `contrary-to.md` peel and C3 retitle (2c.3), skipped.** Moving *Contrary to a stance (`uom`)* off prescription puts the `uom` home after holder (the channel H3 needs channels and a holder), but permission-consent (4 uses: `uom hwuvul` / `hwubum`) and holder (`uom theyomalazun thagom`) already use and link to it earlier on the path. Options: (a) contrary-to gathers every `uom` stance kind (plan, say words from permission-consent, holder's paragraph, channels), placed after holder; (b) peel only *Channels after `uom`*, leaving the base H3 on prescription (C3's retitle then fails test 3 and the `uom` set stays split); (c) move permission-consent after contrary-to and drop holder's `uom` paragraph. notional-standing's lead rewrite and C3 wait on this; prescription keeps "Motive" and its filename, so its URLs row is on hold.
+- **OD7. Level review for ability.md (2c.1).** With DECISION on want.md, review-intermediate has no item linking ability.md, and `lint ageben` reports a level-review error (not a generate-row error). Phase 3.3 or 4 adds an ATTEMPT review item.
 - **Process note.** A **generate** allowlist row fails the build until Phase 4 writes its checkpoint, so from 2a.2 on, "green" means tests pass and every `lint ageben` error (checkpoint inventory, drill coverage, practice-item count, word bank, core cells) sits on a **generate** row that Phase 4 writes or tops up.
 - **Follow-up from A1.** Workstream 1 also fixed stale bold vowel labels (`**…el** (`zol`)`) on rank-joins, say-questions, join-limits, fill-ask-roles, causation, and the talking cheat sheet. Bare bold vowel labels in other prose were not audited.

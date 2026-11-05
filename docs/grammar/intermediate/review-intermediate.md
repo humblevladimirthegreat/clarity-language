@@ -696,5 +696,5 @@ z-speaker | th-DECISION-temporary | v-pay
 
 With **`thogel`**, I have decided for good to pay. With **`thoger`**, I have decided to pay only for now.
 
-**Rule:** [Decision (revisability)](ability.md#decision)
+**Rule:** [Decision (revisability)](want.md#decision)
 :::

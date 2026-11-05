@@ -236,9 +236,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `theyul` | notional mood rehearsal follow-up (practicing a possible scene to prepare for action) | [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) | I |
 | `theyum` | notional mood default follow-up (imagining a scene without a further purpose) | [Notional (as-if framing)](/notional#notional-as-if-framing) | I |
 | `theyur` | notional mood suppose follow-up (toying with a possibility or assumption for now) | [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) | I |
-| `thogel` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](/ability#decision-revisability) | I |
-| `thogem` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](/ability#decision-revisability) | I |
-| `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/ability#decision-revisability) | I |
+| `thogel` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](/want#decision-revisability) | I |
+| `thogem` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](/want#decision-revisability) | I |
+| `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/want#decision-revisability) | I |
 | `thohem` | IF clause hinge (one-way conditional) | [Because, if, although (hinges)](/dependents#hinges) | B |
 | `thomal` | may mood find-out follow-up (I'll / let's find out) | [Follow-up endings (MAY)](/knowing#follow-up-endings-may) | B |
 | `thomam` | may mood (could be; default) | [MAY](/knowing#may) | B |

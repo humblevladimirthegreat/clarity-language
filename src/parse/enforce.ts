@@ -668,7 +668,7 @@ function enforceOffsets(units: Unit[], directive: boolean): void {
   }
 }
 
-/** A rank fence's bar: one value-setting stance, ranked against one item (comparative-arity.md#bars). */
+/** A rank fence's bar: one value-setting stance, ranked against one item (sake-bars.md#bars). */
 function enforceBars(coord: NpCoord, tables: ClassifyTables): void {
   for (const part of coord.parts) {
     const bars = part.items.flatMap((item) => (item.kind === "bar" ? [item.bar] : []));

@@ -140,9 +140,9 @@ MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words
 | [RESIDUE](/notional-standing#residue-and-former-climate) | `zalazun haram vudurul.` | *Alazun has left and is still gone.* | I |
 | [RESIDUE with a channel](/notional-standing#residue-and-former-climate) | `zalazun thevum haram vudurul.` | *I remember Alazun leaving, and Alazun is still gone.* | I |
 | [FORMER after the verb](/notional-standing#residue-and-former-climate) | `zazozon hual vozuyel helam.` | *Azozon always used to sing.* | I |
-| [A channel as the bar](/notional-standing#channel-bars) | `thugem` before `zol` | *than it looks* | I |
+| [A channel as the bar](/sake-bars#channel-bars) | `thugem` before `zol` | *than it looks* | I |
 
-Neither MAY nor MIRATIVE can be a [comparison bar](/notional-standing#channel-bars).
+Neither MAY nor MIRATIVE can be a [comparison bar](/sake-bars#channel-bars).
 
 <PageBreak />
 
@@ -176,9 +176,9 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 | `thalol` | want mood lasting (a wish that keeps returning) | [Want](/want#want) | I |
 | `thalom` | want mood (duration unstated) | [Want](/want#want) | I |
 | `thalor` | want mood passing (a whim that fades) | [Want](/want#want) | I |
-| `thogel` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](/ability#decision-revisability) | I |
-| `thogem` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](/ability#decision-revisability) | I |
-| `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/ability#decision-revisability) | I |
+| `thogel` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](/want#decision-revisability) | I |
+| `thogem` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](/want#decision-revisability) | I |
+| `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/want#decision-revisability) | I |
 <!-- /generated -->
 
 <PageBreak />
@@ -188,7 +188,7 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 | [Plan](/intention#plan-predict): yours | `zuwen thagom vowurol.` | *I plan to walk.* | B |
 | [Plan, sketch](/intention#plan-predict) | `zuwen thagor vowurol.` | *I intend to walk; the details are open.* | B |
 | [Plan, atlas](/intention#plan-predict) | `zuwen thagol vowurol.` | *I'm fully prepared to walk.* | B |
-| [Decision](/ability#decision): yours, no time | `zuwen thogem vozuyel.` | *I've decided to sing, and can still change that.* | I |
+| [Decision](/want#decision): yours, no time | `zuwen thogem vozuyel.` | *I've decided to sing, and can still change that.* | I |
 | [Try](/ability#try) | `zazozon howam varuyol.` | *Azozon tries to write.* | I |
 | [Trial run](/ability#try) | `zalazun howar vozuyel.` | *Alazun gives singing a try.* | I |
 | [Committed](/ability#try) | `zalazun howal vowurol.` | *Alazun keeps trying to walk.* | I |
@@ -238,6 +238,6 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | `theyol` *strong clues* ([how good your evidence is](/evidentiality#evidence-strength)) | | `throgel` *third-hand* ([how many hands](/evidentiality#hand-depth)) |
 | `thubom blral` *will, by the pattern* ([a forecast](/evidentiality#forecast)) | | `thagom` *I plan to* ([an intention](/intention#plan-predict)) |
 | `haram` *still in effect* ([the outcome stays](/notional-standing#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](/already-still-yet#phasal)) |
-| `thogem` *I've decided* ([how open the choice is, no time](/ability#decision)) | | `thagom` *I plan* ([how worked out, still ahead](/intention#plan-predict)) |
+| `thogem` *I've decided* ([how open the choice is, no time](/want#decision)) | | `thagom` *I plan* ([how worked out, still ahead](/intention#plan-predict)) |
 | `howam` *tries* ([acts, outcome open](/ability#try)) | | `vozuyexal` *can sing* ([a claim about ability](/can-and-cant#can)) |
 | `thalom` *I want* ([your own wanting](/want#want)) | | `thebamazozon thagom` *I hear Azozon plans* ([someone else's plan](/holder#holder)) |

@@ -132,7 +132,6 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 | A `/ɡ/` sake's *my* reading ([personal possession](/sakes#personal-possession)) | your belonging | the holder's belonging |
 | Another evidential | how you know | how the holder knows |
 | The grounds after an inferring or pattern host's [`blarl`](evidentiality.md#evidence-clause) | grounds you assert | the holder's grounds; you do not assert them |
-| A comparison [bar](comparative-arity.md#bars) | your expectation | the holder's expectation |
 
 > `zonal wawethumel goyom blalazun theyomazozon.`
 >

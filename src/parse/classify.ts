@@ -445,7 +445,7 @@ export function isClauseAdverb(word: LexWord): boolean {
   return !!word.overlay && CLAUSE_ADVERB_KINDS.has(word.overlay.kind);
 }
 
-/** Closed `/th/` or clause-adverb kinds a rank fence takes as its bar: each sets a value to rank against (comparative-arity.md#bars). */
+/** Closed `/th/` or clause-adverb kinds a rank fence takes as its bar: each sets a value to rank against (sake-bars.md#bars). */
 const BAR_OVERLAY_KINDS = new Set(["evidential", "former_climate", "notional", "plan", "want", "ability"]);
 
 /**

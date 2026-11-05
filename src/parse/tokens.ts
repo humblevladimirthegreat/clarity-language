@@ -201,7 +201,7 @@ export const HZone = wordToken("HZone");
 /** WANT, PLAN or DECISION right after a holder zone: whose wish, plan or choice the event goes against, with how you know it (want.md#whose-intention). Set by `markContext`. */
 export const HZoneHeld = wordToken("HZoneHeld");
 export const BScale = wordToken("BScale");
-/** A `/th/` stance word that is a rank fence's bar: it runs up to the list's rank join (comparative-arity.md#bars). Set by `markContext`. */
+/** A `/th/` stance word that is a rank fence's bar: it runs up to the list's rank join (sake-bars.md#bars). Set by `markContext`. */
 export const Bar = wordToken("Bar");
 export const BarPlain = wordToken("BarPlain", [Bar]);
 /** The first bar right after a closed `ua` fence: the whole fence is its ranked item (comparatives.md § every bar). Set by `markContext`. */

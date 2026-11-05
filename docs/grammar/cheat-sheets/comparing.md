@@ -79,17 +79,17 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 <!-- cheat-sheet: comparing -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [name + bar + **`zol`**](/comparative-arity#bars) | above the bar | *more than planned* / *later than planned* | I |
-| [name + bar + **`zuol`**](/comparative-arity#bars) | below the bar | *less than planned* / *earlier than planned* | I |
-| [name + bar + **`zoel`**](/comparative-arity#bars) | at the bar | *as planned* | I |
-| [bar after the fence](/comparative-arity#bars) | a stance on the whole claim | *plans to be the most …* | I |
+| [name + bar + **`zol`**](/sake-bars#bars) | above the bar | *more than planned* / *later than planned* | I |
+| [name + bar + **`zuol`**](/sake-bars#bars) | below the bar | *less than planned* / *earlier than planned* | I |
+| [name + bar + **`zoel`**](/sake-bars#bars) | at the bar | *as planned* | I |
+| [bar after the fence](/sake-bars#bars) | a stance on the whole claim | *plans to be the most …* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Later than planned](/comparative-arity#bars) | `zazozon thagom zol bral vevorol.` | *Azozon arrives later than planned.* | I |
-| [Stance after the fence](/comparative-arity#bars) | `zazozon zol bral vevorol thagom.` | *I plan for Azozon to arrive last.* | I |
-| [More than planned, on an object](/comparative-arity#bars) | `zazozon dodelx thagom dol gral vagedal.` | *Azozon eats more strawberries than planned.* | I |
-| [Often, on a recipient](/comparative-arity#bars) | `zazozon vezuyol balazun thagom bol hral.` | *Azozon tells Alazun more often than planned.* | I |
+| [Later than planned](/sake-bars#bars) | `zazozon thagom zol bral vevorol.` | *Azozon arrives later than planned.* | I |
+| [Stance after the fence](/sake-bars#bars) | `zazozon zol bral vevorol thagom.` | *I plan for Azozon to arrive last.* | I |
+| [More than planned, on an object](/sake-bars#bars) | `zazozon dodelx thagom dol gral vagedal.` | *Azozon eats more strawberries than planned.* | I |
+| [Often, on a recipient](/sake-bars#bars) | `zazozon vezuyol balazun thagom bol hral.` | *Azozon tells Alazun more often than planned.* | I |
 | [Than usual](/stance-bars#stance-bars) | `zazozon thubom zol guzemel.` | *Azozon is sleepier than usual.* | A |
 | [Than I remember](/stance-bars#stance-bars) | `zazozon thevum zol gelazem.` | *Azozon is bigger than I remember.* | A |
 | [Than advertised](/stance-bars#stance-bars) | `zanal thebam zuol gagebem.` | *The book is less clear than advertised.* | A |
@@ -156,4 +156,4 @@ English *many* and *often* rank against an unstated baseline. Ageben names the b
 | `zoel` *as … as* ([a tie](/comparatives#equatives)) | | `zazozon zalazun zuol gamahum` *not as … as* ([below](/comparative-arity#comparative-arity)) |
 | `zol gamahum` *no most* ([standalone](/comparative-arity#comparative-arity)) | | `zor gamahum` *whatever ranks highest* · `zazozon zalazun zor gamahum` *whichever of these* ([someone is on top](/comparative-arity#comparative-arity)) |
 | `zalazun zazozon zol hahunom vowurol` *more intensely than* ([ranks the manner](/comparative-arity#manner-scale)) | | `gahunom` *more intense* ([a quality of the people](/comparative-arity#manner-scale)) |
-| `zazozon thagom zol bral vevorol` *later than planned* ([a bar before the join](/comparative-arity#bars)) | | `zazozon zol bral vevorol thagom` *I plan for them to be last* ([a stance after](/comparative-arity#bars)) |
+| `zazozon thagom zol bral vevorol` *later than planned* ([a bar before the join](/sake-bars#bars)) | | `zazozon zol bral vevorol thagom` *I plan for them to be last* ([a stance after](/sake-bars#bars)) |

@@ -188,56 +188,6 @@ Inverse marker **`ru`** divides: `hrudol` is *half as*. The factor hosts nothing
 
 English *three times bigger* usually means the same ratio: use **`zoel`** with `hragel`, not rank **`zol`**. After **`zol`**, a number `/h/` is not a factor; it is an ordinary *N times* on the clause. For a gap in units (*two meters taller*), put a measure noun on the scale instead of a factor.
 
-### Comparing against a stance (bars) {#bars}
-
-English *more than planned* and *later than planned* rank one thing against a **value a stance sets**, not against another person: the plan sets how much and when. Write that `/th/` stance word, or that [intention adverb](/clause#intention-adverbs) on `/h/` (FORMER, ability, a say word), where the second name would go, right before the rank join. That word is the **bar**. The join closes everything before it, so the bar is part of the comparison: it says what you rank against. It is not your stance on the whole sentence.
-
-> `zazozon thagom zol bral vevorol.`
->
-> [z-Azozon | th-plan-itinerary | z-rank/more | b-later] | v-arrival
->
-> "Azozon arrives later than planned."
-
-The same stance word **after** the fence has its ordinary reading, a stance on the whole sentence. With one ranked name, the fence is then a [superlative](/comparatives#superlatives):
-
-> `zazozon zol bral vevorol thagom.`
->
-> [z-Azozon | z-rank/more | b-later] | v-arrival | th-plan-itinerary
->
-> "I plan for Azozon to arrive last."
-
-A bar fence ranks **one** item against **one** bar: with a bar, there is no second name and no second bar. Any of the rank joins works (**`zol`**, **`zuol`**, **`zoel`**, and their open **-m** forms), and the bar keeps its own ending. The fence can rank an object or a recipient the same way:
-
-> `zazozon dodelx thagom dol gral vagedal.`
->
-> z-Azozon | [d-strawberry-x | th-plan-itinerary | d-rank/more | g-amount] | v-eat
->
-> "Azozon eats more strawberries than planned."
-
-> `zazozon vezuyol balazun thagom bol hral.`
->
-> z-Azozon | v-tell | [b-Alazun | th-plan-itinerary | b-rank/more | h-how-often]
->
-> "Azozon tells Alazun more often than planned."
-
-A [hook](/hooks) and its `/b/` on the ranked item go right before the bar, the way they go right before a join word:
-
-> `zanal em buwen thagom zol garolem.`
->
-> [[z-book | [near | b-speaker]] | th-plan-itinerary | z-rank/more | g-heavy]
->
-> "This book is heavier than planned."
-
-<!-- cheat-sheet: comparing -->
-| Ageben | Use | English |
-|--------|-----|---------|
-| name + bar + **`zol`** | above the bar | *more than planned* / *later than planned* |
-| name + bar + **`zuol`** | below the bar | *less than planned* / *earlier than planned* |
-| name + bar + **`zoel`** | at the bar | *as planned* |
-| bar after the fence | a stance on the whole claim | *plans to be the most …* |
-
-**Compare with:** a name before the rank join is someone you rank against (`zazozon zalazun zol guzemel` *Azozon is sleepier than Alazun*). A stance word in that place is the value that stance sets.
-
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -259,7 +209,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *PLAN* | `thagom` |
 | *heavy* | `arolem` |
 | *intensity* | `ahunom` |
 | *mango* | `amedel` |
@@ -306,14 +255,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 `zabodal zamedel zoel garolem hradol.`
 
 [z-pie | z-mango | z-equal-rank | g-heavy | h-two]
-:::
-
-**6.** *Ahelan is heavier than planned.*
-
-::: details Show answer
-`zahelan thagom zol garolem.`
-
-[z-Ahelan | th-plan-itinerary | z-rank/more | g-heavy]
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}

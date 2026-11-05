@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Want {#want-sitting}
+# Want and decide {#want-and-decide}
 
 ### Want {#want}
 <a id="desire"></a>
@@ -41,7 +41,7 @@ On **`alo`**, **-l / -m / -r** say how long the wanting lasts. **-n** is ordinar
 >
 > "Right now I feel like having Alazun sing."
 
-A want, a [plan](/intention#plan-predict), and a [decision](ability.md#decision) are three different steps, so they stack in that order:
+A want and a [plan](/intention#plan-predict) are different steps, so they stack in that order:
 
 > `zuwen thalol thagom vowurol.`
 >
@@ -58,6 +58,67 @@ For *against my wishes*, put WANT after the hook **`uom`** ([contrary to a stanc
 > "Azozon walks, against my wishes."
 
 **Compare with:** [hopefully](feelings-permission.md#speaker-attitude) (`thuwuyom`) is your hope about whether a claim turns out true; **`thalom`** is wanting the act itself. [Motive](prescription.md#sake-preference) says which sake the act serves, not that it is wanted. In [emotion compose](feelings-permission.md#emotion-compose), SEEKING is a feeling turning toward someone for comfort, not a plain want.
+
+### Decision (revisability)
+<a id="decision"></a>
+<a id="decision-mood"></a>
+
+To say that you have decided on something, put **`thoge`** plus an ending on `/th/` before the ordinary verb. This word is called **DECISION**. Like PLAN, it is yours when nothing else is marked, and it does not say the act happens. Its ending says whether the decision is final, still open to change, or only for now, so you can say how open a choice is without changing the verb. (Cue: ✅ A checkmark confirms a choice.)
+
+As a plain noun or verb, the root keeps its own meaning (`zogel` *a checkmark*; `vogel` *to check / tick*).
+
+> `zuwen thogem vozuyel.`
+>
+> z-speaker | th-DECISION-modifiable | v-sing
+>
+> "I've decided to sing, and can still change that."
+
+Unlike PLAN, DECISION carries **no time**. It says what you chose, not that the act still lies ahead: the sentence above fits *I've decided to sing* before you start and *I'm singing by choice* while you sing. So DECISION takes no `/b/`, not even a time offset. To say the act is still ahead, add PLAN.
+
+**Compare with:** [PLAN](/intention#plan-predict) says how fully you have planned a later act. DECISION says how readily you may change a choice, whenever the act falls.
+
+**Compare with:** a [say word](permission-consent.md#say-words) on yourself is a yes you give openly. `zuwen vowurol hwuzal.` is *I promise to walk*, which others can hold you to; `zuwen thogel vowurol.` is *I've decided for good to walk*, a choice only you can see.
+
+#### Endings: changeability
+<a id="decision-changeability"></a>
+
+The endings on DECISION run on the same settled-to-passing scale as [changeability](/sakes#sake-changeability) on an unmet sake: **-l** irreversible, **-m** modifiable, **-r** temporary. With **-n**, the word is an ordinary [name](proper-names.md#proper-name--n). If you do not know how settled the decision is, use **-m**. How firm a choice will turn out is hard to know even for yourself, so **-m** claims nothing either way.
+
+| Ageben | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`thogel`** | **irreversible** | *have decided for good to …* | **-l** ≈ lasting (for good) |
+| **`thogem`** | **modifiable** (soft default if unknown) | *have decided to …, and can still change that* | **-m** ≈ open to change |
+| **`thoger`** | **temporary** | *have decided for now to …* | **-r** ≈ right now (for now only) |
+
+To say both how detailed a plan is and how firm the decision is, put DECISION after [PLAN](/intention#plan-predict). A want comes before both, so the three stack in the order want, plan, decision:
+
+> `zuwen thagom thogel vowurol.`
+>
+> z-speaker | th-plan-itinerary | th-DECISION-irreversible | v-walk
+>
+> "I plan to walk, and that choice is final."
+
+PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** the default, and **-r** the most passing.
+
+> `zuwen thagor thoger vowurol.`
+>
+> z-speaker | th-plan-sketch | th-DECISION-temporary | v-walk
+>
+> "I intend to walk, details open, and I've decided that for now."
+
+To say an event goes against a decision (*against my decision*), put DECISION after the hook **`uom`** ([contrary to a stance](prescription.md#contrary-to-stance)).
+
+> `zazozon vowurol uom thogem.`
+>
+> z-Azozon | v-walk | [contrary-to | th-DECISION-modifiable]
+>
+> "Azozon walks, against my decision."
+
+> `zuwen vowurol uom thogel.`
+>
+> z-speaker | v-walk | [contrary-to | th-DECISION-irreversible]
+>
+> "I walk, against my own final decision."
 
 ### Someone else's want, plan, or decision {#whose-intention}
 
@@ -130,6 +191,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *want-unstated* | `thalom` | 🌠 from *shooting star*: a wish |
+| *DECISION* | `thogem` | ✅ from *check*: the box is ticked |
+| *pen* | `ebewol` | 🖊️ |
 
 **Review:**
 
@@ -140,13 +203,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *I* | `uwen` |
 | *PLAN* | `thagom` |
-| *DECISION* | `thogem` |
 | *CLUES* | `theyom` |
 | *REPORTED* | `thebam` |
 | *cake* | `egodel` |
 | *present* | `ewal` |
 | *walk* | `vowurol` |
 | *sing* | `vozuyel` |
+| *sit* | `vehohel` |
+| *tell* | `vezuyol` |
 | *see* | `vayebel` |
 | *sleep* | `vezuvel` |
 | *find* | `vumewel` |
@@ -177,6 +241,22 @@ z-Azozon | th-REPORTED-Azozon | th-WANT-unstated | d-cake | v-see
 z-Azozon | v-walk | [contrary-to | th-WANT-unstated]
 :::
 
+**4.** *I've decided to sit down, and can still change that.*
+
+::: details Show answer
+`zuwen thogem vehohel.`
+
+z-speaker | th-DECISION-modifiable | v-sit
+:::
+
+**5.** *I've decided for now to talk to Alazun.*
+
+::: details Show answer
+`zuwen thoger vezuyol balazun.`
+
+z-speaker | th-DECISION-temporary | v-tell | b-Alazun
+:::
+
 #### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zazozon theyomazozon thogem vowurol.`
@@ -203,6 +283,22 @@ z-Ahelan | th-WANT-lasting | th-plan-itinerary | d-present | v-find
 *I have long wanted Ahelan to find a present, and I plan for that.*
 :::
 
+**4.** `zahelan thagom thogel debewol vumewel.`
+
+::: details Show answer
+z-Ahelan | th-plan-itinerary | th-DECISION-irreversible | d-pen | v-find
+
+*I plan for Ahelan to find a pen, and that choice is final.*
+:::
+
+**5.** `zazozon vezuyol uom thogem.`
+
+::: details Show answer
+z-Azozon | v-tell | [contrary-to | th-DECISION-modifiable]
+
+*Azozon speaks, against my decision.*
+:::
+
 #### Pick one {#intermediate-pick-one}
 
 **1.** *I have long wanted Alazun to sing.* `zalazun thalol vozuyel.` or `zalazun thalor vozuyel.`
@@ -227,3 +323,12 @@ z-speaker | th-WANT-lasting | v-walk
 With **`thalom`**, how long the wanting lasts is unstated. With **`thalol`**, it keeps coming back.
 :::
 
+**2.** `zuwen thogem vehohel.` / `zuwen thogel vehohel.`
+
+::: details Show answer
+z-speaker | th-DECISION-modifiable | v-sit
+
+z-speaker | th-DECISION-irreversible | v-sit
+
+With **`thogem`**, the choice can still change. With **`thogel`**, it is final.
+:::

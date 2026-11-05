@@ -193,7 +193,7 @@ Saying whether a list is open or closed helps you notice false dichotomies, and 
 
 Work talk often freezes on *the* problem or *the* solution, or ranks options against a standard nobody has said out loud.
 
-Prefer numbered alternatives (ordinary nouns plus an [ordinal](/numbers#ordinals), like *solution 2*) so candidates stay plural and revisable. Reframe the same situation with softer wording rather than inventing a second candidate. A comparison like *worse than…* names its [bar](/comparative-arity#bars), the standard it measures against (*than usual*, *than I expected*, *than you demand*), so the standard stays visible, including when it is only your own expectation.
+Prefer numbered alternatives (ordinary nouns plus an [ordinal](/numbers#ordinals), like *solution 2*) so candidates stay plural and revisable. Reframe the same situation with softer wording rather than inventing a second candidate. A comparison like *worse than…* names its [bar](/sake-bars#bars), the standard it measures against (*than usual*, *than I expected*, *than you demand*), so the standard stays visible, including when it is only your own expectation.
 
 Numbering candidates, rewording, and naming the bar help you keep choices and standards revisable instead of freezing on a single framing or a hidden standard.
 
@@ -221,7 +221,7 @@ In English: [Claritish: Allowed and required](claritish/allowed-required-agreed.
 
 English *will* mixes plan and prediction, and *I want to* can sound like a promise. It is easy to talk as if the future were already known, and a confident prediction can fuel anxiety or overconfidence. A pick, meanwhile, often sounds more locked than it is.
 
-Ageben splits them: [want](/want#want) for what you wish for, without meaning to do it yet; [PLAN](/intention#plan-predict) for what you mean to do; [DECISION](/ability#decision) for how revisable a pick is; and a [forecast](/evidentiality#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `blral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
+Ageben splits them: [want](/want#want) for what you wish for, without meaning to do it yet; [PLAN](/intention#plan-predict) for what you mean to do; [DECISION](/want#decision) for how revisable a pick is; and a [forecast](/evidentiality#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `blral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
 
 Wants, plans, and decisions all live in someone's mind, so with nothing else marked they are yours; someone else's want, plan, or decision takes a [holder](/holder#holder) that says how you know it.
 

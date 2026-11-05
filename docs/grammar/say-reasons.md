@@ -181,7 +181,7 @@ Put the **act** in a `bl-` word after a fault hinge, not the person ([fault](/fa
 
 ### Kill, feed, remove, prevent, persuade, introduce, show, create, excite {#cause-verbs}
 
-**Needs:** [Make someone do it](/cause#make) · [Decision](/ability#decision) · [So that](/dependents#so-that) · [Extra nouns](/hooks#extra-noun)
+**Needs:** [Make someone do it](/cause#make) · [Decision](/want#decision) · [So that](/dependents#so-that) · [Extra nouns](/hooks#extra-noun)
 
 English has a separate verb for *make someone do X* in many common cases: *kill* is *make die*, *feed* is *make eat*. Ageben has one way to say all of them. Keep the ordinary verb for what happens, let the one it happens to be the subject, and put the one who makes it happen in a `bl-` word right after **`thewom`** ([make](/cause#make)). Change only the verb root.
 
@@ -523,7 +523,7 @@ English *I hope X will happen* is two claims: you want it, and you expect it. **
 
 ### Important, useful, helpful, benefit, satisfy, upset {#sake-words}
 
-**Needs:** [Sake inventory](/sakes#sake-inventory) · [Met](/sakes#time-horizon-endings-on-met) · [Emotion compose](/feelings-permission#emotion-compose) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Bars](/comparative-arity#bars)
+**Needs:** [Sake inventory](/sakes#sake-inventory) · [Met](/sakes#time-horizon-endings-on-met) · [Emotion compose](/feelings-permission#emotion-compose) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Bars](/sake-bars#bars)
 
 English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Ageben names the someone's **sake** (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical). A met word says the thing serves that sake, and its ending says how long the payoff lasts. On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it on `/w/` before **`goyom`**. Put a person in `/b/` for whose sake it is.
 
@@ -580,7 +580,7 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 >
 > "Upset about the memo."
 
-**Compare with:** *too* and *enough* rank against a [sake bar](/comparative-arity#bars). Bare *good* and *nice* have no root; they go the same way, to a met sake.
+**Compare with:** *too* and *enough* rank against a [sake bar](/sake-bars#bars). Bare *good* and *nice* have no root; they go the same way, to a met sake.
 
 ### Wrong, ugly {#wrong-ugly}
 
@@ -750,9 +750,9 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 ### Plan and forecast against a snapshot
 <a id="as-of-intention"></a>
 
-**Needs:** [PLAN](/intention#plan-predict) · [forecasts](/evidentiality#forecast) · [DECISION](/ability#decision) · [*as-of*](/as-of#as-of)
+**Needs:** [PLAN](/intention#plan-predict) · [forecasts](/evidentiality#forecast) · [DECISION](/want#decision) · [*as-of*](/as-of#as-of)
 
-[PLAN](/intention#plan-predict), [DECISION](/ability#decision), and a [forecast](/evidentiality#forecast) (channel + `blral`) without a hosted pair score against **speech-now**. PLAN and DECISION are stances, so the stance pair **`thenam`** ([stance as-of](/as-of#stance-as-of)) dates them: the plan as it stood **at** that now, aimed later than it (*was going to*), and the pick as it stood then. With an event pair ([*as-of*](/as-of#as-of)), the forecast offset counts **after** that now (*would rain*). Repeat the channel and `blral` on the next clause; resume whose-now with `henar` / `hunor`.
+[PLAN](/intention#plan-predict), [DECISION](/want#decision), and a [forecast](/evidentiality#forecast) (channel + `blral`) without a hosted pair score against **speech-now**. PLAN and DECISION are stances, so the stance pair **`thenam`** ([stance as-of](/as-of#stance-as-of)) dates them: the plan as it stood **at** that now, aimed later than it (*was going to*), and the pick as it stood then. With an event pair ([*as-of*](/as-of#as-of)), the forecast offset counts **after** that now (*would rain*). Repeat the channel and `blral` on the next clause; resume whose-now with `henar` / `hunor`.
 
 > `zuwen thagor vowurol thenam bl_#22,7.`
 >

@@ -86,7 +86,7 @@ The mirror, **`blruwum`**, is *a short while before now*: *recently*.
 >
 > "Going by the pattern, Alazun slept three hours ago."
 
-A channel used as a comparison [bar](/comparative-arity#bars) takes the same offset, which dates the bar: MEMORY with a day before is *than yesterday*.
+A channel used as a comparison [bar](/sake-bars#bars) takes the same offset, which dates the bar: MEMORY with a day before is *than yesterday*.
 
 > `zazozon thevum blazurom grubal zol guzemel.`
 >

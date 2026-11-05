@@ -66,42 +66,6 @@ Do not write **`helam`** right before **`hual`**: that spot holds the restrictor
 
 Put RESIDUE and FORMER on `/h/`, anywhere in the sentence: like an [intention adverb](/clause#intention-adverbs), each covers the whole clause. Use `/w/` only when the word applies to the one `/ɡ/` adjective right after it. Both always end in **-m**.
 
-### Channels as comparison bars {#channel-bars}
-
-English *sleepier than usual* and *bigger than it looks* compare against an expectation. Put the channel right before the rank word (**`zol`** / **`zuol`** / **`zoel`**) as the comparison's [bar](comparative-arity.md#bars). The bar is then **what that channel led you to expect**, not how you know the claim. After the comparison, the same word is the claim's channel again.
-
-> `zazozon thubom zol guzemel.`
->
-> [z-Azozon | th-PATTERN | z-rank/more | g-sleepy]
->
-> "Azozon is sleepier than usual."
-
-> `zazozon zol guzemel thubom.`
->
-> [z-Azozon | z-rank/more | g-sleepy] | th-PATTERN
->
-> "Azozon is the sleepiest, going by the pattern."
-
-| Channel as the bar | Ranks against | English |
-|--------------------|---------------|---------|
-| LIVE `thugem` | how it looks | *than it looks* |
-| MEMORY `thevum` | how you remember it | *than I remember* |
-| PATTERN `thubom` | the trail of cases | *than usual* |
-| CLUES `theyom` | what was worked out | *than calculated* |
-| REPORTED `thebam` | what was said or written | *than advertised* / *than the stories say* |
-| INTUITION `thabem` | your gut expectation | *than I expected* |
-| FORMER `helam` | how it used to be | *than it used to be* |
-
-MAY gives no expected value to compare against, so it cannot be a bar. *Than scheduled* ranks against a plan: that is the [PLAN bar](comparative-arity.md#bars) (`thagom`).
-
-A [holder](holder.md#holder) on a comparison bar names **whose expectation** you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
-
-> `zazozon thabemalazun zol guzemel.`
->
-> [z-Azozon | th-INTUITION-Alazun | z-rank/more | g-sleepy]
->
-> "Azozon is sleepier than Alazun expected."
-
 ### Channels after `uom` {#channel-zone}
 
 English *contrary to what I was told* and *against my gut* say the event went against what a source led you to expect. Put the channel after the hook **`uom`** (*contrary to*), the same way as a ban or a plan ([contrary to a stance](prescription.md#contrary-to-stance)). The pair names what the event goes **against**; the channel then says nothing about how you know the claim.
@@ -154,13 +118,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
-| *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *departure* | `vudurul` |
 | *sing* | `vozuyel` |
 | *walk* | `vowurol` |
-| *gray* | `agulel` |
-| *sleepy* | `uzemel` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -172,15 +133,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-rabbit | th-LIVE | h-RESIDUE | v-departure
 :::
 
-**2.** *The rabbit is sleepier than usual.*
-
-::: details Show answer
-`zarozel thubom zol guzemel.`
-
-[z-rabbit | th-PATTERN | z-rank/more | g-sleepy]
-:::
-
-**3.** *Ahelan sings, contrary to what I was told.*
+**2.** *Ahelan sings, contrary to what I was told.*
 
 ::: details Show answer
 `zahelan vozuyel uom thebam.`
@@ -188,7 +141,7 @@ z-rabbit | th-LIVE | h-RESIDUE | v-departure
 z-Ahelan | v-sing | [contrary-to | th-REPORTED]
 :::
 
-**4.** *Azozon always used to sing.*
+**3.** *Azozon always used to sing.*
 
 ::: details Show answer
 `zazozon hual vozuyel helam.`
@@ -198,15 +151,7 @@ z-Azozon | h-always | v-sing | h-FORMER
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zalazun helam zol gagulel.`
-
-::: details Show answer
-[z-Alazun | h-FORMER | z-rank/more | g-gray]
-
-*Alazun is grayer than Alazun used to be.*
-:::
-
-**2.** `zazozon vowurol uom thabem.`
+**1.** `zazozon vowurol uom thabem.`
 
 ::: details Show answer
 z-Azozon | v-walk | [contrary-to | th-INTUITION]
@@ -214,24 +159,12 @@ z-Azozon | v-walk | [contrary-to | th-INTUITION]
 *Azozon walks, against my gut.*
 :::
 
-**3.** `zarozel thevum haram vudurul.`
+**2.** `zarozel thevum haram vudurul.`
 
 ::: details Show answer
 z-rabbit | th-MEMORY | h-RESIDUE | v-departure
 
 *I remember the rabbit leaving, and the rabbit is still gone.*
-:::
-
-#### Pick one {#intermediate-pick-one}
-
-**1.** *Alazun is grayer than usual.* `zalazun thubom zol gagulel.` or `zalazun zol gagulel thubom.`
-
-::: details Show answer
-`zalazun thubom zol gagulel.`
-
-[z-Alazun | th-PATTERN | z-rank/more | g-gray]
-
-Before the rank word, PATTERN is the bar (*than usual*); after the fence it is how you know the superlative.
 :::
 
 #### Fix it {#intermediate-fix-it}
@@ -249,5 +182,4 @@ Do not write **`helam`** right before **`hual`**: that spot holds the restrictor
 ## See also
 
 - How you know: [knowing.md](/knowing)
-- Rank bars: [comparatives.md](comparative-arity.md#bars)
 - Contrary to a stance: [sakes.md](prescription.md#contrary-to-stance)

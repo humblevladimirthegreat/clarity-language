@@ -72,7 +72,7 @@ To reason from a premise you do not grant, suppose it with **`theyur`**. The fra
 >
 > "Suppose Azozon is a teacher. Then Azozon teaches. So if Azozon is a teacher, it follows that Azozon teaches."
 
-NOTIONAL as a comparison [bar](comparative-arity.md#bars) ranks against the imagined case (`theyum zol` *than imagined*). It does not follow **`uom`**: an imagined scene is not something the event could go against.
+NOTIONAL as a comparison [bar](sake-bars.md#bars) ranks against the imagined case (`theyum zol` *than imagined*). It does not follow **`uom`**: an imagined scene is not something the event could go against.
 
 ### Practice {#intermediate-practice}
 
