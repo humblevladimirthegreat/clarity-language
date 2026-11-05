@@ -164,7 +164,15 @@ With the interlocutors as holder, the view is one you both share. On MEMORY this
 
 MEMORY says the claim rests on your memory, and the holder says the view is one you both share. You can't know the listener's memory, only claim the view is shared, and the listener can answer with a memory of their own. `ham thevumayan` adds *as far as I know*.
 
-Pronouns and speech moves stay yours: **`uwen`** is still you, and the sentence is still your turn. The holder's view is their view **now**. A channel with a holder still takes its own `/b/`, so `thebamazozon blral` is *I hear Azozon expects it*. A holder is not a [source](evidentiality.md#source): a source in `/b/` is where a claim came to you from, and the claim stays yours to pass on; a holder makes the claim the holder's view.
+The interlocutors work as holder on any host. With PLAN after it, the plan is one you claim you both have, and the seam word still says how you know:
+
+> `zayan theyomayan thagom vowurol.`
+>
+> z-interlocutors | th-CLUES-interlocutors | th-plan-itinerary | v-walk
+>
+> "I gather we both plan to walk."
+
+Pronouns, speech moves, and [speaker attitudes](feelings-permission.md#speaker-attitude) stay yours: **`uwen`** is still you, the sentence is still your turn, and *hopefully* is still your hope. You are never the holder: your own view needs no seam. Someone else's hope is their want, so *Azozon hopes Alazun walks* is the holder with WANT, never with **`thuwuyom`**. The holder's view is their view **now**. A channel with a holder still takes its own `/b/`, so `thebamazozon blral` is *I hear Azozon expects it*. A holder is not a [source](evidentiality.md#source): a source in `/b/` is where a claim came to you from, and the claim stays yours to pass on; a holder makes the claim the holder's view.
 
 **One clause, one holder.** The holder covers its clause and any dependent sentence inside it; a new `/x/` sentence is yours again unless it has its own seam word. A dependent with its own seam word switches holder for that sentence only. That is how you take a stance on someone else's stance: your stance in the main sentence, theirs in a dependent.
 

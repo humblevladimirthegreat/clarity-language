@@ -138,6 +138,8 @@ English *hopefully*, *luckily*, and *worryingly* say how **you**, the speaker, f
 
 Hope is not a way of **knowing**, so it cannot hold up a forecast by itself. To say *hopefully … will*, add a real evidence channel as well. Hope says how you feel about the claim; the channel says what backs it.
 
+**Compare with:** *Azozon hopes Alazun walks* is Azozon's hope, not yours, so **`thuwuyom`** cannot say it. Someone else's hope is their want, which you give with how you know it.
+
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.

@@ -1,6 +1,6 @@
 # Proposal: Someone else's stance in the English helper
 
-**Status:** Ready to implement. D1–D3 accepted as recommended (2026-11-05). Steps done: 1–4.
+**Status:** Ready to implement. D1–D3 accepted as recommended (2026-11-05). Steps done: 1–5. The closed `the…uwen` seam ships with a parser rejection, `holderSeamSpeaker` (D-68), user decision 2026-11-05.
 
 Already landed (2026-11-05), the base this builds on:
 - `2b9acf28`: holder rows for someone else's want and plan on [say-tense.md](../grammar/say-tense.md) (*Will, want, try, let's*).

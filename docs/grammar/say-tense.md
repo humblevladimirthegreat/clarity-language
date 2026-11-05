@@ -382,6 +382,7 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 | *hopefully* | **`thuwuyom`** |
 | *tries to* | **`howam`** |
 | *if only …*, *I wish …* | WANT alone, which is already your own: **`thalom`** |
+| *we want*, *we plan* (your own, for the group) | WANT or PLAN alone, with **`ayan`** as subject: **`zayan thalom`**, **`zayan thagom`** |
 | *let's* | request **`yom`** with **`aya`** as subject |
 
 WANT, PLAN and DECISION alone are yours. For someone else's, put a holder before the stance, which says how you know it.
@@ -391,6 +392,8 @@ WANT, PLAN and DECISION alone are yours. For someone else's, put a holder before
 | *want to*, *want* (someone else's want) | holder + WANT: **`thebamazozon thalom`** (*I hear*), **`theyomazozon thalom`** (*I gather*) | [Someone else's want](/want#whose-intention) |
 | *plan to*, *plan is to*, *intend to* (someone else's plan) | holder + PLAN: **`thebamazozon thagom`** (*I hear*), **`theyomazozon thagom`** (*I gather*) | [Whose view](/holder#holder) |
 | *decide to*, *decided to* (someone else's decision) | holder + DECISION: **`thebamazozon thogem`** (*I hear*), **`theyomazozon thogem`** (*I gather*) | [Someone else's decision](/want#whose-intention) |
+| *hopes*, *hope* (someone else's hope) | holder + WANT: **`theyomazozon thalom`** (*I gather*), **`thebamazozon thalom`** (*I hear*) | [Someone else's want](/want#whose-intention) |
+| *we want*, *we plan* (one you claim you both share) | the interlocutors as holder: **`theyomayan thalom`**, **`theyomayan thagom`** | [Someone else's want](/want#whose-intention) |
 
 > `zalazun thebamalazun thalom vowurol.`
 >

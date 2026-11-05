@@ -299,7 +299,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
     anchor: "holder.md#holder",
     summary: "holder seam",
     reader:
-      "`th-TAG-X` (a stance tag joined to a person X, or `←X`, one already named): the sentence gives that person's view, and the tag says how the speaker knows it. `th-CLUES-X` = I gather X thinks …; `th-MAY-X` = maybe X thinks …. Every other `th-` word in that sentence (a want, plan, decision, or feeling) is then X's, not the speaker's: `th-WANT-unstated | th-CLUES-X` = I gather X wants …; a feeling word with `th-CLUES-listener` = it sounds like you feel that.",
+      "`th-TAG-X` (a stance tag joined to a person X, or `←X`, one already named): the sentence gives that person's view, and the tag says how the speaker knows it. `th-CLUES-X` = I gather X thinks …; `th-MAY-X` = maybe X thinks …. Every other `th-` word in that sentence (a want, plan, decision, or feeling) is then X's, not the speaker's: `th-WANT-unstated | th-CLUES-X` = I gather X wants …; a feeling word with `th-CLUES-listener` = it sounds like you feel that. With `th-CLUES-interlocutors` the view is one the speaker claims you both share: `z-interlocutors | th-CLUES-interlocutors | th-WANT-unstated | v-walk` = I gather we both want to walk. In a question, the holder asks how the listener can tell: `y-question | z-X | v-walk | th-CLUES-X | th-WANT-unstated` = can you tell whether X wants to walk? A speaker attitude (`th-hope`) stays the speaker's after a holder.",
   },
   ability: { anchor: "can-and-cant.md#ability", summary: "ability (x + vowel); conversation-length bids reuse the same shape on a citation" },
   numeric: {
@@ -890,6 +890,7 @@ export const REJECTIONS = {
   tagPairAssign: { anchor: "tag-pronouns.md#tag-pairs", summary: "a tag pair (`zwaor`) recalls or shares two tags already assigned; assign each tag on its own (`zodozel zwal zogozel zwol zam`)" },
   tagPlural: { anchor: "tag-pronouns.md#tag-pronouns", summary: "a tag takes -x only on -r or -n (`zwarx`, `zwanx`, A and associates); to tag a group, tag its plural phrase (`zodozelx zwal`)" },
   joinPlural: { anchor: "joins.md#unspecified-member-r-phrase", summary: "a join takes -x after -r on /z/ /d/ /b/ (`zarx`, some ones), or on /v/ for one shared act (`varx`)" },
+  holderSeamSpeaker: { anchor: "holder.md#holder", summary: "the speaker is never a holder: your own view needs no seam (D-68); for exclusive *we*, make the group the subject (`zuwenx thalom`), and name others as holder (`theyomazozonx`)" },
   holderSeamW: { anchor: "holder.md#holder", summary: "a tag is never a holder: the seam letter before `w` would end a syllable mid-word (D-56); for a holder you don't name, name the kind of person (`theyomeyel`)" },
   numberPlural: { anchor: "digit-strings.md#plural-labels", summary: "a number takes -x only as a plural label (z_90x)" },
   resumeUnbound: { anchor: "pronouns.md#resume-r", summary: "an -r resume spells an earlier word's whole stem, or a lexicon stem" },

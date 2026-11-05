@@ -237,6 +237,7 @@ Source: [pronouns.md](/pronouns), [plurality.md](/plurality)
 - **open:** **-x** on `/h/` / `/w/` and the six linkers. An adverb, a degree word, or a linker names no group.
 - **closed (D-37):** **-x** on a `/th/` stance word.
 - **closed (D-42):** `/th/` on the record or scroll root (`thegem`, `thonom`, any ending but **-n**). Parser: `retiredChannelRoot`.
+- **closed (D-68):** the speaker in a holder seam (`theyomuwen`, `theyomuwenx`). Your own view needs no holder. Parser: `holderSeamSpeaker`.
 - **open:** **-x** on an interjection (`/y/` **-l** / **-m**). An interjection addresses no one.
 - **open:** the nonspecific *someone* `umen` as a topic or with **-x** (`xumen`, `umenx`). `umen` names no particular person or group: a topic is someone in particular, and *some people* is `zeyelx`.
 - **open:** the topic pronoun as a topic word or a resume (`xalen`, `zaler`). The topic pronoun is the topic itself, so there is nothing to set or return to.

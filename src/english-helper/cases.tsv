@@ -146,8 +146,8 @@ His plan is to walk.	plan is to	link:holder.md#holder	a possessor owns the plan
 Azozon wanted to walk.	wanted to	link:want.md#whose-intention	a past *wanted to* matches the *want to* cue
 I really want to walk.	want to	not:want.md#whose-intention	the speaker owns the want past an adverb
 I really want to walk.	want to	link:say-tense.md#will-want	the speaker's own want is WANT alone
-We want to walk.	want to	link:want.md#whose-intention	*we* keeps both rows
-We want to walk.	want to	link:say-tense.md#will-want	*we* keeps both rows
+We want to walk.	We want	link:want.md#whose-intention	*we want* has a row for the shared want
+We want to walk.	We want	link:say-tense.md#will-want	*we want* has a row for your own want for the group
 I think Azozon wants to walk.	wants to	link:want.md#whose-intention	the inner clause's subject owns the want
 Azozon intends to walk.	intends to	link:holder.md#holder	someone else's intention leads with the holder row
 I intend to walk.	intend to	not:holder.md#holder	the speaker's intention is the PLAN sketch

@@ -18,7 +18,7 @@ To say what you **mean to do** (*I plan to walk*), put **`thago`** plus an endin
 >
 > "I plan to walk."
 
-The plan stays yours when someone else does the act: `zazozon thagom vowurol` is *I plan for Azozon to walk*, not Azozon's own plan. A plan is in a mind, so someone else's plan is their view, and you need to say how you know it.
+The plan stays yours when someone else does the act: `zazozon thagom vowurol` is *I plan for Azozon to walk*, not Azozon's own plan. A plan is in a mind, so someone else's plan is their view, and you need to say how you know it. In a question, PLAN asks about the listener's plan: `yel zawan vowurol thagom.` is *Do you plan to walk?*
 
 As a plain noun or verb, the root keeps its own meaning (`zagol` *a map*; `vagol` *to plan*). Leave PLAN out when you are only saying what happens.
 

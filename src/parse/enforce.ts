@@ -431,6 +431,8 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   }
   if (word.family.kind === "tag") enforceTag(word);
   if (isHolderSeamW(word, tables)) throw new ConstructionError("holderSeamW", word.raw);
+  // The speaker is never a holder: your own view needs no seam (D-68, holder.md#holder).
+  if (holder && word.family.kind === "x" && word.family.rightRoots?.[0] === CLOSED.microphone) throw new ConstructionError("holderSeamSpeaker", word.raw);
   enforceJoinPlural(word);
   // The record and scroll roots are no channel: a record is REPORTED, a tale NOTIONAL (evidentiality.md#evidentiality).
   if (word.pos === "th" && (stemRoot === CLOSED.record || stemRoot === CLOSED.scroll) && word.ending !== "n") {

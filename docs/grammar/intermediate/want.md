@@ -83,6 +83,40 @@ After a holder, WANT and DECISION are the holder's, just as PLAN is. After **`uo
 >
 > "Alazun sleeps, against Azozon's wishes, as far as I can tell."
 
+**In a question**, a bare WANT, PLAN, or DECISION asks about the **listener's** mind, with no holder. You are asking, not claiming, just as a channel in a question asks about the listener's grounds ([forecasts](evidentiality.md#forecast-question)). A holder in a question asks how the listener can tell what that person has in mind. A rhetorical question is your own claim, so its stance stays yours.
+
+> `yel zawan vowurol thalom.`
+>
+> y-question | z-listener | v-walk | th-WANT-unstated
+>
+> "Do you want to walk?"
+
+> `yel zazozon vowurol theyomazozon thalom.`
+>
+> y-question | z-Azozon | v-walk | th-CLUES-Azozon | th-WANT-unstated
+>
+> "Can you tell whether Azozon wants to walk?"
+
+**With *we***, WANT, PLAN, or DECISION alone is still yours, with the group as the subject. To claim the listener shares it, make the interlocutors the holder, which still says how you know. For exclusive *we* (you and your people), the group **`uwenx`** is the subject; for the others' wants, name them as holder (`theyomazozonx`). You are never a holder yourself: your own view needs no seam.
+
+> `zayan thalom vowurol.`
+>
+> z-interlocutors | th-WANT-unstated | v-walk
+>
+> "I want us to walk."
+
+> `zayan theyomayan thalom vowurol.`
+>
+> z-interlocutors | th-CLUES-interlocutors | th-WANT-unstated | v-walk
+>
+> "I gather we both want to walk."
+
+> `zuwenx thalom vowurol.`
+>
+> z-speaker-x | th-WANT-unstated | v-walk
+>
+> "I want us to walk." (my people and me)
+
 **Compare with:** [requirement](permission-consent.md#requirement) `zazozon vowurol hwuvom blalazun.` (*Alazun makes Azozon walk*) puts a demand on Azozon, who now owes the walk. **`zazozon thogem vowurol.`** (*I've decided that Azozon walks*) says only that you chose how things go, the way a coach decides who plays, with nothing asked of Azozon.
 
 ### Practice {#intermediate-practice}
