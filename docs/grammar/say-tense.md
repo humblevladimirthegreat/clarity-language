@@ -370,25 +370,27 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 
 ### Will, want, try, let's {#will-want}
 
-**Needs:** [Plan](/intention#plan-predict) · [Want](/want#want) · [Try](/ability#try) · [Hopefully](/feelings-permission#speaker-attitude) · [Speech act](/firm-soft#speech-act) · [Whose view](/holder#holder)
+**Needs:** [Plan](/intention#plan-predict) · [Want](/want#want) · [Decision](/ability#decision-revisability) · [Try](/ability#try) · [Hopefully](/feelings-permission#speaker-attitude) · [Speech act](/firm-soft#speech-act) · [Whose view](/holder#holder)
 
 | English | Ageben |
 |---------|--------|
 | *will* (willing) | PLAN **`thagom`**, or **`hwuzam`** (*I'll do it*, you can back out) |
-| *I want*, *I want to*, *I feel like* | WANT **`thalom`** (**`thalol`** lasting, **`thalor`** passing) |
-| *I plan to*, *my plan is to* | PLAN **`thagom`** |
+| *I want*, *I want to*, *want to*, *want*, *I feel like* | WANT **`thalom`** (**`thalol`** lasting, **`thalor`** passing) |
+| *I plan to*, *my plan is to*, *plan to*, *plan is to* | PLAN **`thagom`** |
 | *intend to*, details open | PLAN sketch **`thagor`** |
+| *decide to*, *decided to* | DECISION **`thogem`** (**`thogel`** for good, **`thoger`** for now) |
 | *hopefully* | **`thuwuyom`** |
 | *tries to* | **`howam`** |
 | *if only …*, *I wish …* | WANT alone, which is already your own: **`thalom`** |
 | *let's* | request **`yom`** with **`aya`** as subject |
 
-WANT and PLAN alone are yours. For someone else's, put a holder before the stance, which says how you know it.
+WANT, PLAN and DECISION alone are yours. For someone else's, put a holder before the stance, which says how you know it.
 
 | English | Ageben | Teach |
 |---------|--------|-------|
-| *wants to*, *wants*, *want to* (someone else's want) | holder + WANT: **`thebamazozon thalom`** (*I hear*), **`theyomazozon thalom`** (*I gather*) | [Someone else's want](/want#whose-intention) |
-| *intends to*, *plans to*, *plan is to*, *plan to* (someone else's plan) | holder + PLAN: **`thebamazozon thagom`** (*I hear*), **`theyomazozon thagom`** (*I gather*) | [Whose view](/holder#holder) |
+| *want to*, *want* (someone else's want) | holder + WANT: **`thebamazozon thalom`** (*I hear*), **`theyomazozon thalom`** (*I gather*) | [Someone else's want](/want#whose-intention) |
+| *plan to*, *plan is to*, *intend to* (someone else's plan) | holder + PLAN: **`thebamazozon thagom`** (*I hear*), **`theyomazozon thagom`** (*I gather*) | [Whose view](/holder#holder) |
+| *decide to*, *decided to* (someone else's decision) | holder + DECISION: **`thebamazozon thogem`** (*I hear*), **`theyomazozon thogem`** (*I gather*) | [Someone else's decision](/want#whose-intention) |
 
 > `zalazun thebamalazun thalom vowurol.`
 >

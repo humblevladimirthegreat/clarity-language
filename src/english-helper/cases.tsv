@@ -144,3 +144,13 @@ Do you really want to sing?	want to	link:want.md#whose-intention	the owner is fo
 Azozon does not want to walk.	want to	link:want.md#whose-intention	the owner is found past *does not*
 His plan is to walk.	plan is to	link:holder.md#holder	a possessor owns the plan
 Azozon wanted to walk.	wanted to	link:want.md#whose-intention	a past *wanted to* matches the *want to* cue
+I really want to walk.	want to	not:want.md#whose-intention	the speaker owns the want past an adverb
+I really want to walk.	want to	link:say-tense.md#will-want	the speaker's own want is WANT alone
+We want to walk.	want to	link:want.md#whose-intention	*we* keeps both rows
+We want to walk.	want to	link:say-tense.md#will-want	*we* keeps both rows
+I think Azozon wants to walk.	wants to	link:want.md#whose-intention	the inner clause's subject owns the want
+Azozon intends to walk.	intends to	link:holder.md#holder	someone else's intention leads with the holder row
+I intend to walk.	intend to	not:holder.md#holder	the speaker's intention is the PLAN sketch
+I've decided to walk.	decided to	not:want.md#whose-intention	the speaker's decision is DECISION alone
+Azozon has decided to walk.	decided to	link:want.md#whose-intention	someone else's decision takes a holder
+Azozon has decided to walk.	decided to	not:say-tense.md#will-want	the bare DECISION row is the holder row's twin

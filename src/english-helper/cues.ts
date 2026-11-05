@@ -160,7 +160,9 @@ export function matchCues(index: CueIndex, normals: readonly string[], lemmas: r
       const keys = [...new Set([window.join(" "), ...numbered, ...lemmaLed])].filter((k) => index.has(k));
       const key = keys[0];
       if (!key) continue;
-      out.push({ start: i, end: i + len, key, jobs: keys.flatMap((k) => index.get(k)!) });
+      // A row listing both the written and the lemma cue (*decided to*, *decide to*) comes once.
+      const jobs = [...new Map(keys.flatMap((k) => index.get(k)!).map((j) => [j.source, j] as const)).values()];
+      out.push({ start: i, end: i + len, key, jobs });
       for (let j = i; j < i + len; j++) taken[j] = true;
     }
   }
