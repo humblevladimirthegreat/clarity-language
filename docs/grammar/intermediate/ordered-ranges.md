@@ -75,7 +75,7 @@ On **`aol`**, the one member **-r** stands in for is the one the walk is on now:
 >
 > "Whoever's turn it is, from Azozon through Ahelan, writes."
 
-Under a question, **-r** on **`oel`** asks only *which one?*:
+Under a question, **-r** on **`oel`** asks only *which one?*. The range is then the [fill-ask](/questions#fill-ask) blank, so it goes first, both ends included:
 
 > `yel zazozon oer zahelan varuyol.`
 >

@@ -102,7 +102,7 @@ z-Alazun | &d-drum | v-punch
 
 #### Ageben → English {#advanced-ageben-to-english}
 
-**1.** `dadorol zahelan vayebel.`
+**1.** <!-- lint: moved -->`dadorol zahelan vayebel.`
 
 ::: details Show answer
 d-trumpet | z-Ahelan | v-see
@@ -126,7 +126,7 @@ h-haste | z-Alazun | v-sneak
 *Hastily, Alazun sneaks.*
 :::
 
-**4.** `dubogal zahelan hadurom vabuvul.`
+**4.** <!-- lint: moved -->`dubogal zahelan hadurom vabuvul.`
 
 ::: details Show answer
 d-box | z-Ahelan | h-haste | v-punch

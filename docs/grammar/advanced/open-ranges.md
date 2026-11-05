@@ -67,6 +67,8 @@ With **-r**, the hook stands in for one value you are not naming. Under a [quest
 >
 > "Azozon sees some number of cats from 3 to 5."
 
+In a question the range is the [fill-ask](/questions#fill-ask) blank, so like any blank it goes first, together with the noun it counts.
+
 The [range hooks](/ordered-ranges#ranges) take **-r** the same way: `zragel uor zrazal` is *some value strictly between 3 and 5*, and `zragel uar zrazal` *some value outside 3–5*.
 
 ### Practice {#advanced-practice}
@@ -117,9 +119,9 @@ z-Azozon | [d-car-x | g-2nd] | through | g-last-place | v-see
 **4.** *How many coins, from 3 to 5, does Azozon pay?*
 
 ::: details Show answer
-`yel zazozon dorelx gragel oer grazal varal.`
+`yel dorelx gragel oer grazal zazozon varal.`
 
-y-question | z-Azozon | [d-coin-x | g-three] | some.through | g-five | v-pay
+y-question | [d-coin-x | g-three] | some.through | g-five | z-Azozon | v-pay
 :::
 
 #### Ageben → English {#advanced-ageben-to-english}

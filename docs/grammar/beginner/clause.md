@@ -137,7 +137,7 @@ A `/w/` word still goes before the host, so the host and its `bl-` word stay sid
 
 A `bl-` word needs its host right before it. Anywhere else it is not a sentence. A plain `/b/` word is never a host's partner, so the person who receives may stand next to any word.
 
-**Compare with:** in `zazozon hadurom balazun varal.` (*Azozon hastily pays Alazun*), `balazun` sits right after an `/h/` word and is still the one paid. `hewem blalazun` is *like Alazun*.
+**Compare with:** in <!-- lint: moved -->`zazozon hadurom balazun varal.` (*Azozon hastily pays Alazun*), `balazun` sits right after an `/h/` word and is still the one paid. `hewem blalazun` is *like Alazun*.
 
 ### Role letters {#role-letters}
 
@@ -240,7 +240,7 @@ z-Ahelan | d-Azozon | v-find
 
 #### Ageben → English {#beginner-ageben-to-english}
 
-**1.** `dalazun zahelan vumewel.`
+**1.** <!-- lint: moved -->`dalazun zahelan vumewel.`
 
 ::: details Show answer
 d-Alazun | z-Ahelan | v-find
@@ -272,10 +272,10 @@ z-Ahelan | th-doubt | d-book | v-find
 *I doubt that Ahelan finds a book.*
 :::
 
-**5.** `bazozon zalazun gonumul varal.`
+**5.** `zalazun gonumul varal bazozon.`
 
 ::: details Show answer
-b-Azozon | [z-Alazun | g-angry] | v-pay
+[z-Alazun | g-angry] | v-pay | b-Azozon
 
 *An angry Alazun pays Azozon.*
 :::
@@ -292,10 +292,10 @@ z-Azozon | d-Alazun | v-find
 The finder takes `/z/` and the one found takes `/d/`; the other form has Alazun finding Azozon.
 :::
 
-**2.** *Alazun pays Azozon hastily.* `zalazun hadurom blazozon varal.` or `zalazun hadurom bazozon varal.`
+**2.** *Alazun pays Azozon hastily.* `zalazun hadurom blazozon varal.` or <!-- lint: moved -->`zalazun hadurom bazozon varal.`
 
 ::: details Show answer
-`zalazun hadurom bazozon varal.`
+<!-- lint: moved -->`zalazun hadurom bazozon varal.`
 
 z-Alazun | h-haste | b-Azozon | v-pay
 

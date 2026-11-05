@@ -3,7 +3,7 @@ import { describe, it } from "node:test";
 
 import { loadDefaultTables } from "../parse/index.js";
 import { parseWithTables } from "../parse/parse-core.js";
-import { lintWordOrder, orderFindings } from "./word-order.js";
+import { lintWordOrder, orderFindings, staleMovedMarkers } from "./word-order.js";
 
 const tables = loadDefaultTables();
 const rules = (text: string) => orderFindings(parseWithTables(text, tables)).map((f) => f.rule);
@@ -53,6 +53,17 @@ describe("word order by speech act (speech-moves.md#act-word-order)", () => {
     assert.deepEqual(rules("zazozon vowurol el bohehal."), []);
   });
 
+  it("lets a measure /b/ go anywhere, like an /h/ word", () => {
+    assert.deepEqual(rules("zazozon bezerom gradol vowurol."), []);
+    assert.deepEqual(rules("zahelan bagorum gradom vezuvel."), []);
+    assert.deepEqual(rules("zalazun bazozon oel bahelan varal."), ["/b/ right after the verb"]);
+  });
+
+  it("reads a range hook in -r as a fill-ask blank, with the range it completes", () => {
+    assert.deepEqual(rules("yel dorelx gragel oer grazal zazozon varal."), []);
+    assert.deepEqual(rules("yel zazozon dorelx gragel oer grazal varal."), ["fill-ask: every blank first"]);
+  });
+
   it("leaves a stand-in and what follows it to the dependent", () => {
     assert.deepEqual(rules("zahelan vezuyol balazun dorm vunurol."), []);
   });
@@ -62,6 +73,16 @@ describe("word order by speech act (speech-moves.md#act-word-order)", () => {
     assert.deepEqual(
       lintWordOrder(page, tables).map((w) => w.text),
       ["dogozel zalazun vayebel."],
+    );
+  });
+
+  it("skips a sentence marked moved, and flags the marker on a sentence in default order", () => {
+    const page = "<!-- lint: moved -->`dogozel zodozel vayebel.` and <!-- lint: moved -->`zodozel dogozel vayebel.`\n";
+    assert.deepEqual(lintWordOrder(page, tables), []);
+    const marked = (text: string) => ({ text, index: 0, result: parseWithTables(text, tables), moved: true });
+    assert.deepEqual(
+      staleMovedMarkers([marked("dogozel zodozel vayebel."), marked("zodozel dogozel vayebel.")]).map((s) => s.text),
+      ["zodozel dogozel vayebel."],
     );
   });
 });

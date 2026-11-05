@@ -45,9 +45,9 @@ The listener may still reply, but no reply is owed.
 
 A **quiz** asks something you already know, because you want the other person to say it. Put the question word first, because a question is what you really ask, then the statement word: you already hold the answer. The body is an ordinary yes/no question or fill-ask, in a question's default order.
 
-> `yel yal ? zar vabuvul dubogal.`
+> `yel yal ? zar dubogal vabuvul.`
 >
-> y-question | y-statement | ? | z-wh | v-punch | d-box
+> y-question | y-statement | ? | z-wh | d-box | v-punch
 >
 > "So who punched the box?" (I know who; you say it)
 

@@ -112,6 +112,7 @@ const ITEM_START_RE = /^\*\*(\d+)\.\*\*(.*)$/;
 const H4_RE = /^#### (.+?)\s*(?:\{#[^}]*\})?\s*$/;
 const SPAN_RE = /(?:<!--\s*([\s\S]*?)\s*-->\s*)?`([^`]+)`/g;
 const ALSO_RE = /^\*\*Also correct:\*\*/;
+const MOVED_PREFIX_RE = /^<!--\s*lint:\s*moved\s*-->\s*/;
 export const RULE_RE = /^\*\*Rule:\*\*/;
 
 export function practiceItems(
@@ -236,9 +237,12 @@ function readItem(
     }
     if (/^:::$/.test(trimmed)) break;
     if (!trimmed) continue;
-    const index = starts[i]! + lines[i]!.indexOf(trimmed);
-    const kind = spoilerKind(trimmed);
-    spoiler.push({ text: kind === "ageben" ? trimmed.slice(1, -1) : trimmed, index, kind });
+    // A moved answer (`<!-- lint: moved -->`, docs/meta/grammar-docs.md#word-order-warnings) is still the Ageben line.
+    const moved = MOVED_PREFIX_RE.exec(trimmed)?.[0] ?? "";
+    const body = moved && /^`[^`]+`$/.test(trimmed.slice(moved.length)) ? trimmed.slice(moved.length) : trimmed;
+    const index = starts[i]! + lines[i]!.indexOf(trimmed) + trimmed.length - body.length;
+    const kind = spoilerKind(body);
+    spoiler.push({ text: kind === "ageben" ? body.slice(1, -1) : body, index, kind });
     if (kind === "also") alsoCorrect.push(...spans(trimmed, index));
   }
   return {

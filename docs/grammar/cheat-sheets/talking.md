@@ -115,7 +115,7 @@ A stance word says in words how you are speaking, where a tone mark only changes
 | [No body: ask about what was just said](/questions#question) | `yel.` | *Huh?* | B |
 | [Fill one blank](/questions#fill-ask-r): join **-r** in the slot | `yel zar vowurol.` | *Who walks?* | B |
 | [Fill every blank](/questions#fill-all) | `yel zar dar vayebel.` | *Who sees what?* | B |
-| [One blank, one known](/questions#fill-all) | `yel zar vayebel dodozel.` | *Who sees a dog?* | B |
+| [One blank, one known](/questions#fill-all) | `yel zar dodozel vayebel.` | *Who sees a dog?* | B |
 | [Rise on the blank](/questions#question-tone) | `yel ?zar vowurol.` | *Who walks?* | B |
 | [Rise on the whole question](/questions#question-tone) | `yel ? zazozon vowurol.` | *Does Azozon walk?* | B |
 | [Check one named item](/polar-inventory#yes-no-single-item-standalone) | `yel zazozon zal.` | *Just Azozon?* | I |
@@ -176,7 +176,7 @@ The blank **-r** takes a vowel; the count is how many items you listed before it
 | [Rhetorical for now](/rhetorical-questions#rhetorical) | `yar yel` | *Surely, as things stand…?* | I |
 | [Sounds like idle wondering](/rhetorical-questions#rhetorical) | `yal yem` | *I wonder who cares…* | I |
 | [Sounds like a check](/rhetorical-questions#rhetorical) | `yal yer` | *Just checking, it's Tuesday, right?* | I |
-| [Quiz](/rhetorical-questions#quiz): `yel` before `yal`, you know the answer | `yel yal ? zar vabuvul dubogal.` | *So who punched the box?* | I |
+| [Quiz](/rhetorical-questions#quiz): `yel` before `yal`, you know the answer | `yel yal ? zar dubogal vabuvul.` | *So who punched the box?* | I |
 | [Question demanded as an order](/rhetorical-questions#stacked-questions) | `yel yol` | *Tell me where you were.* | I |
 | [Question that hopes for *no*](/rhetorical-questions#stacked-questions) | `yel yul ? zawan vudurul.` | *You're not leaving, are you?* | I |
 

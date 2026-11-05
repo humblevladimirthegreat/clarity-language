@@ -216,10 +216,10 @@ z-ship | g-through-x-ocean
 
 #### Ageben → English {#advanced-ageben-to-english}
 
-**1.** `dovulul zalazun vowurolul.`
+**1.** `zalazun dovulul vowurolul.`
 
 ::: details Show answer
-d-fog | z-Alazun | v-leave
+z-Alazun | d-fog | v-leave
 
 *Alazun leaves the fog.*
 :::

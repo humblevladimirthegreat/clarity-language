@@ -245,6 +245,15 @@ describe("resolve — span and number anaphors", () => {
     assert.equal(question.asks[0]?.gaps[0]?.raw, "g=+");
   });
 
+  it("a range hook in -r under a question is a fill-ask blank (open-ranges.md#named-ranges)", () => {
+    const counted = resolveOf("yel dorelx gragel oer grazal zazozon varal.");
+    assert.equal(counted.asks[0]?.kind, "fillAsk");
+    assert.deepEqual(counted.asks[0]?.gaps.map((gap) => gap.raw), ["oer"]);
+    assert.deepEqual(resolveOf("yel zazozon aor zahelan varuyol.").asks[0]?.gaps.map((gap) => gap.raw), ["aor"]);
+    assert.equal(resolveOf("yel zazozon oel zahelan varuyol.").asks[0]?.kind, "yesNo");
+    assert.equal(resolveOf("zazozon oer zahelan vezuvel.").asks[0]?.kind, "none");
+  });
+
   it("asks by the outer of two stacked act words (speech-acts.md#stacked-acts)", () => {
     assert.equal(resolveOf("yel yal zar vabuvul dubogal.").asks[0]?.kind, "fillAsk");
     assert.equal(resolveOf("yal yel zar vegemal.").asks[0]?.kind, "rhetorical");

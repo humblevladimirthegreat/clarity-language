@@ -18,7 +18,8 @@
  * (src/lint/free-english.ts); so are table English cells that translate an Ageben phrase or
  * sentence, there and on cheat sheets, for shape and parentheses inside the sentence.
  * Sentences that leave their speech act's default word order print as warnings and never fail the run
- * (src/lint/word-order.ts).
+ * (src/lint/word-order.ts); one marked `<!-- lint: moved -->` prints nothing, and the marker fails on a sentence
+ * already in default order.
  * On the number pages, shorthand number examples need a
  * pronunciation row that matches the spoken form computed from the shorthand.
  * Mismatches, leftover ambiguity, and missing morph glosses fail the run.
@@ -71,7 +72,7 @@ import { constructionCoverageGaps, constructionHomes, learningOrderFindings } fr
 import { duplicateIds } from "../src/lint/grammar-anchors.js";
 import { glossLabels, lintTerminology, TERMINOLOGY_PAGE } from "../src/lint/terminology-docs.js";
 import { lintRetieFormat } from "../src/lint/retie-format.js";
-import { wordOrderWarnings, type ParsedSentence } from "../src/lint/word-order.js";
+import { staleMovedMarkers, wordOrderWarnings, type ParsedSentence } from "../src/lint/word-order.js";
 import {
   constructionFamilies,
   drillCoverage,
@@ -387,12 +388,16 @@ function main(): void {
       console.error(`${rel}:${lineNumberAt(original, issue.index)}  \`${issue.text}\`  native-opaque  (<${issue.payload}> reads as Ageben; an opaque span holds foreign text, so write a foreign word or put Ageben in a cite […])`);
     }
     const sentences: ParsedSentence[] = [];
-    const sentenceSink = (text: string, index: number, result: ParsedSentence["result"]) =>
-      sentences.push({ text, index, result });
+    const sentenceSink = (text: string, index: number, result: ParsedSentence["result"], moved?: boolean) =>
+      sentences.push({ text, index, result, moved });
     for (const issue of lintAgebenSpans(original, tables, spanStats, used, sentenceSink)) {
       spanCount += 1;
       const line = lineNumberAt(original, issue.index);
       console.error(`${rel}:${line}  \`${issue.text}\`  ${issue.kind}  (${issue.detail})`);
+    }
+    for (const stale of staleMovedMarkers(sentences)) {
+      spanCount += 1;
+      console.error(`${rel}:${lineNumberAt(original, stale.index)}  \`${stale.text}\`  bad-marker  (<!-- lint: moved --> on a sentence already in its act's default order; drop the marker)`);
     }
     for (const warning of wordOrderWarnings(sentences)) {
       wordOrderCount += 1;
@@ -607,7 +612,7 @@ function main(): void {
   console.log(
     `OK: code spans — ${spanStats.sentence} sentence(s) and ${spanStats.phrase} phrase(s) parsed; ` +
       `${spanStats.template} template(s) and ${spanStats["marked-fragment"]} fragment(s) traced; ` +
-      `${spanStats["marked-error"]} Fix it wrong form(s); ` +
+      `${spanStats["marked-error"]} Fix it wrong form(s), ${spanStats["marked-moved"]} moved on purpose; ` +
       `${spanStats.word} single word(s), ${spanStats.english} English, ${spanStats["text-fence"]} text fence(s); 0 unclassified.`,
   );
   console.log(

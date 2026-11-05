@@ -65,6 +65,8 @@ type Ctx = {
   host?: LexWord;
   /** The `/b/` heads that extra-noun hooks take as their landmarks. */
   hookLandmarks: Set<LexWord>;
+  /** Range hooks in **-r** (`oer`): one value in the band, which a question asks for (open-ranges.md#named-ranges). */
+  rangeBlanks: Set<LexWord>;
   /** Names said in this conversation; a greeting from one of them while closing is goodbye too. */
   named: Set<string>;
   /** Tags assigned in this conversation (tag-pronouns.md#tag-pronouns); a topic change leaves them alone. */
@@ -815,6 +817,17 @@ function noteHookLandmarks(ctx: Ctx, units: Unit[]): void {
   });
 }
 
+/** Range hooks in **-r** (`zazozon oer zahelan`, `dorelx gragel oer grazal`): under a question, each is a blank. */
+function noteRangeBlanks(ctx: Ctx, units: Unit[]): void {
+  for (const unit of units) if (unit.kind === "hook" && unit.job === "span" && unit.word.ending === "r") ctx.rangeBlanks.add(unit.word);
+}
+
+/** A blank under a question: the outer ask's, or in a `derl` (question-like) dependent its own (questions.md#embedded-whether). */
+function pushGap(ctx: Ctx, word: LexWord): void {
+  if (ctx.standIn?.raw[1] === "e") ctx.innerGaps.push(word);
+  else ctx.gaps.push(word);
+}
+
 /** Note a landmark this word puts in play, by the slot it fills. */
 function noteLandmark(ctx: Ctx, word: LexWord, slot: WordSlot | undefined): void {
   if (slot === "joinLandmark") ctx.landmarks.push({ word, time: false });
@@ -843,6 +856,7 @@ function considerWord(ctx: Ctx, word: LexWord, slot?: WordSlot): void {
   noteLandmark(ctx, word, slot);
 
   if (ctx.question && isJoinGap(word)) ctx.gaps.push(word);
+  if (ctx.question && slot === "hook" && ctx.rangeBlanks.has(word)) pushGap(ctx, word);
 
   const name = ctx.goodbye ? undefined : nameKey(word);
   if (name) ctx.named.add(name);
@@ -869,9 +883,7 @@ function resolveVisitor(ctx: Ctx): Visitor {
     join(join, site) {
       bindLandmark(ctx, join);
       if (!ctx.question || !isJoinGap(join)) return;
-      // In a `derl` (question-like) dependent the blank is the dependent's own; in `darl` it is the outer ask's (questions.md#embedded-whether).
-      if (ctx.standIn?.raw[1] === "e") ctx.innerGaps.push(join);
-      else ctx.gaps.push(join);
+      pushGap(ctx, join);
     },
     enter(node) {
       if (node.kind === "npPackage") ctx.packageHead = node.pkg.head;
@@ -886,6 +898,9 @@ function resolveVisitor(ctx: Ctx): Visitor {
       if (node.kind === "clause") noteHookLandmarks(ctx, node.clause.units);
       if (node.kind === "island") noteHookLandmarks(ctx, node.island.units);
       if (node.kind === "vp") for (const units of vpUnitLists(node.coord)) noteHookLandmarks(ctx, units);
+      if (node.kind === "clause") noteRangeBlanks(ctx, node.clause.units);
+      if (node.kind === "island") noteRangeBlanks(ctx, node.island.units);
+      if (node.kind === "vp") for (const units of vpUnitLists(node.coord)) noteRangeBlanks(ctx, units);
       if (node.kind === "clause") {
         const anchor = anchorOf(node.clause);
         if (anchor && ctx.pendingConsequence) {
@@ -932,6 +947,7 @@ function buildResolve(result: ParseResult): ResolveInfo {
     antecedents: [],
     landmarks: [],
     hookLandmarks: new Set(),
+    rangeBlanks: new Set(),
     named: new Set(),
     tags: new Map(),
     groupTags: new Map(),

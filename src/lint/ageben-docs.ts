@@ -260,6 +260,9 @@ function collectResumeStems(core: string, known: ReadonlySet<string>, into: Set<
  * - **marked-error**: `<!-- lint: error -->` right before the wrong form in a **Fix it** prompt
  *   ([practice-items.ts](practice-items.ts)) → need not parse, and its constructions are not used.
  *   Anywhere else the marker fails.
+ * - **marked-moved**: `<!-- lint: moved -->` right before a sentence that leaves its act's default order on purpose
+ *   → checked like any sentence, with no word-order warning ([word-order.ts](word-order.ts)). It fails on a span that is
+ *   not a sentence; the docs lint also fails it on a sentence already in default order.
  * Anything else (Ageben and non-Ageben words mixed, no final mark) is **unclassified** and fails.
  * Fenced blocks need an info string: `ageben` (each line is checked like a span) or `text` (notation,
  * not Ageben: a line that reads as an Ageben phrase or sentence fails).
@@ -272,6 +275,7 @@ export type AgebenSpanClass =
   | "english"
   | "marked-fragment"
   | "marked-error"
+  | "marked-moved"
   | "text-fence";
 
 export type AgebenSpanIssueKind =
@@ -303,6 +307,7 @@ export function emptySpanStats(): AgebenSpanStats {
     english: 0,
     "marked-fragment": 0,
     "marked-error": 0,
+    "marked-moved": 0,
     "text-fence": 0,
   };
 }
@@ -375,8 +380,8 @@ export function unhostedJoins(result: ParseResult): { host: LexWord; join: LexWo
   return out;
 }
 
-/** Receives each sentence span that parses, with its parse. */
-export type SentenceSink = (text: string, index: number, result: ParseResult) => void;
+/** Receives each sentence span that parses, with its parse; `moved` when it follows `<!-- lint: moved -->`. */
+export type SentenceSink = (text: string, index: number, result: ParseResult, moved?: boolean) => void;
 
 function lintSpanText(
   text: string,
@@ -470,6 +475,11 @@ export type AgebenSpanVisitor = {
   text: (text: string, index: number) => void;
   /** A span preceded by a `<!-- lint: … -->` marker (`marker` is the text after `lint:`, or undefined if malformed). */
   marked?: (span: MarkdownCodeSpan, marker: string | undefined) => void;
+  /**
+   * A span preceded by `<!-- lint: moved -->`: an ordinary example placed out of default order on purpose. Without
+   * this visitor it goes to `text` like any other span.
+   */
+  moved?: (text: string, index: number) => void;
   /** A fence with a non-`ageben` info string. */
   otherFence?: (span: MarkdownCodeSpan) => void;
   /** A fence with no info string. */
@@ -480,7 +490,9 @@ export type AgebenSpanVisitor = {
 export function walkAgebenSpans(text: string, visit: AgebenSpanVisitor): void {
   forEachMarkdownCodeSpan(text, (span) => {
     if (span.marker?.startsWith("lint:")) {
-      visit.marked?.(span, LINT_MARKER_RE.exec(span.marker)?.[1]);
+      const marker = LINT_MARKER_RE.exec(span.marker)?.[1];
+      if (marker === "moved" && span.kind !== "fence") (visit.moved ?? visit.text)(span.text, span.index);
+      else visit.marked?.(span, marker);
       return;
     }
     if (span.kind === "fence") {
@@ -524,6 +536,20 @@ export function lintAgebenSpans(
 
   walkAgebenSpans(text, {
     text: (body, index) => lintSpanText(body, index, tables, stats, issues, used, sentences),
+    moved: (body, index) => {
+      if (classifyAgebenSpan(body) === "sentence") {
+        stats["marked-moved"] += 1;
+        const sink: SentenceSink | undefined = sentences && ((t, i, r) => sentences(t, i, r, true));
+        lintSpanText(body, index, tables, stats, issues, used, sink);
+      } else {
+        issues.push({
+          text: body,
+          index,
+          kind: "bad-marker",
+          detail: "<!-- lint: moved --> is only for a sentence that leaves its act's default order on purpose",
+        });
+      }
+    },
     marked: (span, marker) => {
       if (marker === "fragment") {
         stats["marked-fragment"] += 1;

@@ -172,9 +172,9 @@ To ask only about people, put the kind before the blank: `yel zeyel zarx vowurol
 
 If only one slot is unknown, put join **-r** only there. Write the known thing as an ordinary word (`-l` / `-m`).
 
-> `yel zar vayebel dodozel.`
+> `yel zar dodozel vayebel.`
 >
-> y-question | z-wh | v-see | d-dog
+> y-question | z-wh | d-dog | v-see
 >
 > "Who sees a dog?"
 

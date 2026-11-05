@@ -12,8 +12,10 @@
  * - the recipient `/b/` right after the verb (clause.md#extra-nouns)
  *
  * Order is read in slots: `X HOOK Y` with one role on both sides (a same-role hook, range, or same-role word) is one
- * slot; a hook that describes the noun on its left (`zodozel om bar`) belongs to that noun; a hook's `/b/` landmark and
- * every `/h/` / `/th/` unit is an `h` slot, which goes anywhere. A stand-in (`darl`, `dorm`) sits where its dependent
+ * slot, and so is a range whose far end is a bare number (`dorelx gragel oer grazal`); a hook that describes the noun on
+ * its left (`zodozel om bar`) belongs to that noun; a hook's `/b/` landmark, a measure `/b/` (`bezerom gradol`,
+ * numbers-applied.md#measure-phrases), and every `/h/` / `/th/` unit is an `h` slot, which goes anywhere. A range hook
+ * in **-r** under a question is a fill-ask blank, as the resolver records it (open-ranges.md#named-ranges). A stand-in (`darl`, `dorm`) sits where its dependent
  * puts it and is not checked. Verbless clauses and dependents are not checked.
  */
 import { walkAgebenSpans, classifyAgebenSpan } from "./ageben-docs.js";
@@ -57,12 +59,24 @@ function isStandIn(unit: Unit): boolean {
   );
 }
 
+/** A unit noun with its amount (`bezerom gradol` *two meters*): says how much, like an `/h/` word. */
+function isMeasure(unit: Unit): boolean {
+  return unit.kind === "np" && unit.coord.level === "b" && unit.coord.parts.some((part) =>
+    part.items.some((item) =>
+      item.kind === "package" &&
+      item.package.head.ending === "m" &&
+      item.package.adjs.some((adj) => adj.word.reading === "number"),
+    ),
+  );
+}
+
 function role(unit: Unit | undefined): string | undefined {
   if (!unit) return undefined;
   if (unit.kind === "vp") return "v";
-  if (unit.kind === "np" && !isStandIn(unit)) return unit.coord.level;
+  if (unit.kind === "np" && !isStandIn(unit) && !isMeasure(unit)) return unit.coord.level;
   return undefined;
 }
+
 
 /** A clause's units as order slots. */
 export function orderSlots(clause: Clause): Slot[] {
@@ -80,6 +94,9 @@ export function orderSlots(clause: Clause): Slot[] {
         if (next?.kind === "np" && next.coord.level === "b") previous.units.push(units[++i]!);
       } else if (previous && nextRole && previous.role === nextRole) {
         // `X HOOK Y` in one role: one slot.
+        previous.units.push(unit, units[++i]!);
+      } else if (previous && next?.kind === "predicate") {
+        // A range whose far end is a bare number (`dorelx gragel oer grazal`): one slot.
         previous.units.push(unit, units[++i]!);
       } else if (next?.kind === "np" && next.coord.level === "b") {
         out.push({ role: "h", units: [unit, units[++i]!] });
@@ -173,36 +190,45 @@ function wordsKey(text: string): string {
   return text.replace(/[.?!;%&]/g, " ").split(/\s+/).filter(Boolean).sort().join(" ");
 }
 
-export type ParsedSentence = { text: string; index: number; result: ParseResult };
+export type ParsedSentence = { text: string; index: number; result: ParseResult; moved?: boolean };
 
 /**
  * A page's sentences that leave their act's default order. A moved sentence is not reported when the same page also
  * shows the same words in default order: that pair teaches that moving changes nothing (clause.md#direct-object-d).
+ * Nor is one marked `<!-- lint: moved -->`: the example is about where a word stands.
  */
 export function wordOrderWarnings(sentences: readonly ParsedSentence[]): WordOrderWarning[] {
   const moved: (WordOrderWarning & { key: string })[] = [];
   const inDefault = new Set<string>();
-  for (const { text, index, result } of sentences) {
+  for (const { text, index, result, moved: marked } of sentences) {
     const key = wordsKey(text);
     const findings = orderFindings(result);
     if (findings.length === 0) inDefault.add(key);
+    if (marked) continue;
     for (const f of findings) moved.push({ text, index, rule: f.rule, order: f.order, key });
   }
   return moved.filter((w) => !inDefault.has(w.key)).map(({ key: _key, ...w }) => w);
 }
 
+/** Sentences marked `<!-- lint: moved -->` that are already in their act's default order: the marker is stale. */
+export function staleMovedMarkers(sentences: readonly ParsedSentence[]): ParsedSentence[] {
+  return sentences.filter((s) => s.moved && orderFindings(s.result).length === 0);
+}
+
 /** {@link wordOrderWarnings} for one page's markdown, parsing its sentence spans. */
 export function lintWordOrder(markdown: string, tables: ClassifyTables): WordOrderWarning[] {
   const sentences: ParsedSentence[] = [];
+  const add = (span: string, index: number, moved: boolean) => {
+    if (classifyAgebenSpan(span) !== "sentence") return;
+    try {
+      sentences.push({ text: span.trim(), index, result: parseWithTables(span.trim(), tables), moved });
+    } catch {
+      // The span lint reports sentences that do not parse.
+    }
+  };
   walkAgebenSpans(markdown, {
-    text: (span, index) => {
-      if (classifyAgebenSpan(span) !== "sentence") return;
-      try {
-        sentences.push({ text: span.trim(), index, result: parseWithTables(span.trim(), tables) });
-      } catch {
-        // The span lint reports sentences that do not parse.
-      }
-    },
+    text: (span, index) => add(span, index, false),
+    moved: (span, index) => add(span, index, true),
   });
   return wordOrderWarnings(sentences);
 }
