@@ -370,17 +370,25 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 
 ### Will, want, try, let's {#will-want}
 
-**Needs:** [Plan](/intention#plan-predict) · [Want](/want#want) · [Try](/ability#try) · [Hopefully](/feelings-permission#speaker-attitude) · [Speech act](/firm-soft#speech-act)
+**Needs:** [Plan](/intention#plan-predict) · [Want](/want#want) · [Try](/ability#try) · [Hopefully](/feelings-permission#speaker-attitude) · [Speech act](/firm-soft#speech-act) · [Whose view](/holder#holder)
 
 | English | Ageben |
 |---------|--------|
 | *will* (willing) | PLAN **`thagom`**, or **`hwuzam`** (*I'll do it*, you can back out) |
-| *I want*, *I feel like* | WANT **`thalom`** (**`thalol`** lasting, **`thalor`** passing); someone else's want takes a [holder](/holder#holder): **`thebamazozon thalom`** |
+| *I want*, *I want to*, *I feel like* | WANT **`thalom`** (**`thalol`** lasting, **`thalor`** passing) |
+| *I plan to*, *my plan is to* | PLAN **`thagom`** |
 | *intend to*, details open | PLAN sketch **`thagor`** |
 | *hopefully* | **`thuwuyom`** |
 | *tries to* | **`howam`** |
 | *if only …*, *I wish …* | WANT alone, which is already your own: **`thalom`** |
 | *let's* | request **`yom`** with **`aya`** as subject |
+
+WANT and PLAN alone are yours. For someone else's, put a holder before the stance, which says how you know it.
+
+| English | Ageben | Teach |
+|---------|--------|-------|
+| *wants to*, *wants*, *want to* (someone else's want) | holder + WANT: **`thebamazozon thalom`** (*I hear*), **`theyomazozon thalom`** (*I gather*) | [Someone else's want](/want#whose-intention) |
+| *intends to*, *plans to*, *plan is to*, *plan to* (someone else's plan) | holder + PLAN: **`thebamazozon thagom`** (*I hear*), **`theyomazozon thagom`** (*I gather*) | [Whose view](/holder#holder) |
 
 > `zalazun thebamalazun thalom vowurol.`
 >

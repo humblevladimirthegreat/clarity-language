@@ -222,6 +222,15 @@ Follow [running with subagents](../meta/proposals.md#running-with-subagents). Fo
 - one subagent per workstream below, with later items sent as one line ("Do 2b.3")
 - renames done by one script in Phase 3, not one subagent per row
 - fresh subagents for Phase 4 checkpoints (read rules) and the Phase 5 audit (independence), and nowhere else
+- each subagent's model and reasoning effort set from the table below, through the Agent tool's `model` and `effort` fields
+
+| Workstream | Model | Effort | Why |
+|------------|-------|--------|-----|
+| 1 in-place fixes | main agent's model | medium | Local prose fixes and link retargets, but A1 is a content bug and needs care |
+| 2a–2e moves, merges, peels | main agent's model | high | Teaching prose, gate thinning, and Practice splits are grammar judgment |
+| 3 renames and placement | main agent's model | medium | The rename script is mechanical and build-gated, but placement applies [order inside a band](../meta/learning-levels.md#order-inside-a-band), which is judgment, so no smaller model |
+| 4 checkpoints (per band) | main agent's model | high | Checkpoints are never run on a smaller model or at low effort |
+| 5 re-audit | main agent's model | high | An audit against [what one sitting holds](../meta/grammar-docs.md#one-sitting) |
 
 ### Rules for the main agent
 

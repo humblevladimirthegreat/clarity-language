@@ -130,3 +130,13 @@ Uzozen and Ahelan run.	and	form:zam	*and* between subjects is the open subject j
 Uzozen eats bread or rice.	or	form:del	exclusive *or* between objects is the object join on **e**
 The soup is not cold.	not	form:gul	*not* before an adjective is the adjective join
 Uzozen does not run.	not	shape:role letter + u + -l	the row shows the join pattern, never the bare vowel
+# Someone else's want or plan: a holder
+Azozon intends to walk.	intends to	link:holder.md#holder	someone else's intention takes a holder + PLAN
+Azozon's plan is to walk.	plan is to	link:holder.md#holder	someone else's plan takes a holder + PLAN
+He plans to sing.	plans to	link:holder.md#holder	a pronoun subject's plan takes a holder
+Azozon wants to walk.	wants to	link:want.md#whose-intention	someone else's want takes a holder + WANT
+She wants a dog.	wants	link:want.md#whose-intention	*wants* with a noun is still someone else's want
+Do you want to sing?	want to	link:want.md#whose-intention	the listener's want is someone else's
+I want to walk.	I want to	not:want.md#whose-intention	the speaker's own want is WANT alone
+My plan is to walk.	My plan is to	not:holder.md#holder	the speaker's own plan is PLAN alone
+I plan to walk.	I plan to	not:holder.md#holder	the speaker's own plan is PLAN alone
