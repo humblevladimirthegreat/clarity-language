@@ -950,7 +950,7 @@ function resolveVisitor(ctx: Ctx): Visitor {
       if (node.kind === "utterance") {
         const { left } = node.utterance;
         let kind: AskKind = "none";
-        // A question word only as the inner of a stack sounds like a question but asks nothing (speech-acts.md#stacked-acts).
+        // A question word only as the inner of a stack sounds like a question but asks nothing (more-turn-words.md#stacked-acts).
         if (ctx.question) kind = !isQuestionForce(actWord(left)) ? "rhetorical" : ctx.gaps.length > 0 ? "fillAsk" : "yesNo";
         ctx.asks.push({ utteranceIndex: node.index, kind, gaps: ctx.gaps, ...(ctx.innerGaps.length > 0 ? { inner: ctx.innerGaps } : {}) });
         if (ctx.currentTurn?.head) ctx.turns.push({ head: ctx.currentTurn.head });

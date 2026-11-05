@@ -199,7 +199,7 @@ describe("parse — multipart names (proper-names.md#multipart-names)", () => {
   }
 });
 
-describe("parse — describing a call or reaction (speech-acts.md#describe-turn-word)", () => {
+describe("parse — describing a call or reaction (more-turn-words.md#describe-turn-word)", () => {
   const left = (text: string) => parseText(text).utterances[0]!.left;
 
   it("puts /ɡ/ after a reaction on the reaction", () => {
@@ -229,7 +229,7 @@ describe("parse — describing a call or reaction (speech-acts.md#describe-turn-
 
   it("rejects /w/ on a call and describing words on a number cheer or span", () => {
     for (const text of ["welazem yalazun.", "welazem yrawagel.", "yrawagel gelazem.", "y<Amen> gelazem."]) {
-      assert.throws(() => parseText(text), /speech-acts\.md#describe-turn-word/, text);
+      assert.throws(() => parseText(text), /more-turn-words\.md#describe-turn-word/, text);
     }
   });
 });
@@ -732,7 +732,7 @@ describe("parse — comparatives.md bars", () => {
     const bar = barOf("zazozon thubom blwozeluyolx guzemel zol gozuyel.");
     assert.equal(bar?.hosted?.bound.raw, "blwozeluyolx");
     assert.deepEqual(bar?.hosted?.adjs?.map((a) => a.word.raw), ["guzemel"]);
-    // On the clause too, an adjective after a `/th/` host's `/b/` describes that noun (left-bound.md#complex-chaining).
+    // On the clause too, an adjective after a `/th/` host's `/b/` describes that noun (longer-chains.md#complex-chaining).
     const units = parseText("zazozon thebam blalazun guzemel vowurol.").utterances[0]!.bodies[0]!.clause.units;
     assert.ok(units.some((u) => u.kind === "h" && u.unit.hosted?.adjs?.[0]?.word.raw === "guzemel"));
   });

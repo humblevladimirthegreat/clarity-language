@@ -47,7 +47,7 @@ export const V = wordToken("V");
 export const VPlain = wordToken("VPlain", [V]);
 /**
  * A verb right after another verb or a `/v/` join, past only the `/h/`, `/d/` and `/b/` words of its own item: it goes on
- * a verb list, so it never starts one (vp-clause-forms.md#vp-clause-forms). Set by `markContext`.
+ * a verb list, so it never starts one (verb-and-stance-joins.md#vp-clause-forms). Set by `markContext`.
  */
 export const VCont = wordToken("VCont", [V]);
 /**
@@ -152,7 +152,7 @@ export const WLeaf = Object.fromEntries(
     ),
   ]),
 ) as Record<WKind, Record<WTarget, AgebenTokenType>>;
-/** An `/h/` adverb or a `/th/` stance word. A plain adjective after either host's `/b/` describes that noun (left-bound.md#complex-chaining). */
+/** An `/h/` adverb or a `/th/` stance word. A plain adjective after either host's `/b/` describes that noun (longer-chains.md#complex-chaining). */
 export const H = wordToken("H");
 export const HPlain = wordToken("HPlain", [H]);
 export const HTh = wordToken("HTh", [H]);
@@ -178,15 +178,15 @@ export const HostedBNoun = wordToken("HostedBNoun", [HostedB]);
 /** A hosted `/b/` whose `/b/` words run on to a `/b/` join: the list fills the hosted slot (joins.md#right-close). */
 export const HostedBJoined = wordToken("HostedBJoined", [HostedB]);
 export const HostedOdo = wordToken("HostedOdo");
-/** An `/h/` adverb right after a `/v/` join (past any `/w/`): SHARED, it covers every verb (vp-clause-forms.md#vp-clause-forms). Set by `markContext`. */
+/** An `/h/` adverb right after a `/v/` join (past any `/w/`): SHARED, it covers every verb (verb-and-stance-joins.md#vp-clause-forms). Set by `markContext`. */
 export const HSharedV = wordToken("HSharedV");
 /**
  * `barl` that fills a `/th/` host from further right, so it is never a `/b/` stand-in of its own: after a stance join
- * that closes a hinge with no `/b/` (vp-clause-forms.md#stance-join-before-barl), or after a channel's offset
+ * that closes a hinge with no `/b/` (verb-and-stance-joins.md#stance-join-before-barl), or after a channel's offset
  * (evidentiality.md#evidence-clause). Set by `markContext`.
  */
 export const LateOdo = wordToken("LateOdo");
-/** A cardinal `/ɡ/` number right after a hosted `/b/`: that unit's amount (numbers-applied.md#measure-phrases). Set by `markContext`. */
+/** A cardinal `/ɡ/` number right after a hosted `/b/`: that unit's amount (measures-and-percent.md#measure-phrases). Set by `markContext`. */
 export const Amount = wordToken("Amount");
 /** A signed `/h/` number right after an equative's shared scale: the factor (comparative-arity.md#factor). Set by `markContext`. */
 export const Factor = wordToken("Factor");
@@ -198,10 +198,10 @@ export const Factor = wordToken("Factor");
 export const HScale = wordToken("HScale");
 /** A `/th/` stance right after *contrary to* `uom`: the hook's zone, not a stance on the claim (contrary-to.md#contrary-to-stance). Set by `markContext`. */
 export const HZone = wordToken("HZone");
-/** WANT, PLAN or DECISION right after a holder zone: whose wish, plan or choice the event goes against, with how you know it (want.md#whose-intention). Set by `markContext`. */
+/** WANT, PLAN or DECISION right after a holder zone: whose wish, plan or choice the event goes against, with how you know it (want-and-decide.md#whose-intention). Set by `markContext`. */
 export const HZoneHeld = wordToken("HZoneHeld");
 export const BScale = wordToken("BScale");
-/** A `/th/` stance word that is a rank fence's bar: it runs up to the list's rank join (sake-bars.md#bars). Set by `markContext`. */
+/** A `/th/` stance word that is a rank fence's bar: it runs up to the list's rank join (bars.md#bars). Set by `markContext`. */
 export const Bar = wordToken("Bar");
 export const BarPlain = wordToken("BarPlain", [Bar]);
 /** The first bar right after a closed `ua` fence: the whole fence is its ranked item (comparatives.md § every bar). Set by `markContext`. */

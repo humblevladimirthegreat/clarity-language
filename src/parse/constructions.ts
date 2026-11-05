@@ -25,7 +25,7 @@ import type { AnaphorKind, Ending, LexReading, MorphWordFamily, PointerVowel, Po
  */
 export type ConstructionEntry = { anchor: string; summary: string; reader?: string };
 
-/** Shared by the three rank-fence bar productions (sake-bars.md#bars). */
+/** Shared by the three rank-fence bar productions (bars.md#bars). */
 const BAR_READER =
   "A `th-` word (or an intention `h-` word) inside a ranking bracket, right before the rank word, is what the item is ranked against: `[z-X | th-plan-itinerary | z-rank/more | b-later] | v-departure` = X leaves later than planned; a pattern there = than usual (`rank/less | g-strength` = less strong than usual); a permission there = than allowed. The same word outside the bracket covers the whole sentence.";
 
@@ -62,12 +62,12 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "turnWord.Interjection": { anchor: "speech-moves.md#interjections-reactions", summary: "interjection at the left edge" },
   "turnWord.gPackage": { anchor: "speech-moves.md#vocative", summary: "/ɡ/ after a call or reaction describes it (family name, *big surprise*)" },
   "turnWord.glAdj": { anchor: "left-bound-adjectives.md#left-bound-adjectives", summary: "gl- adjective before a call or reaction" },
-  "turnWord.W": { anchor: "speech-acts.md#describe-turn-word", summary: "/w/ degree right before a reaction" },
+  "turnWord.W": { anchor: "more-turn-words.md#describe-turn-word", summary: "/w/ degree right before a reaction" },
   "leftEdge.Polar": { anchor: "questions.md#polar-particle", summary: "polar particle turn" },
-  "leftEdge.W": { anchor: "ending-grids.md#hook-w", summary: "/w/ on a left-edge hook" },
+  "leftEdge.W": { anchor: "in-clause-hooks.md#hook-w", summary: "/w/ on a left-edge hook" },
   "leftEdge.Hook": { anchor: "hooks.md#discourse-hooks", summary: "discourse hook at the left edge" },
   "leftEdge.ForceEcho": {
-    anchor: "speech-acts.md#doubled-act",
+    anchor: "more-turn-words.md#doubled-act",
     summary: "the same act word twice: emphasis (yul yul)",
     reader: "The same `y-` act twice is one act said more insistently: `y-prohibition | y-prohibition` = *Don't. I mean it.*; `y-question | y-question` = *I really need to know: …?*",
   },
@@ -82,14 +82,14 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
     reader: "`y-question | y-statement` is a quiz: the asker already knows the answer and wants the listener to say it (*So who punched the box? You tell me.*).",
   },
   "leftEdge.ForceStack": {
-    anchor: "speech-acts.md#stacked-acts",
+    anchor: "more-turn-words.md#stacked-acts",
     summary: "two different act words: the outer is the real act, the inner how it sounds",
     reader: "Two different `y-` acts in a row: the first is what the turn really does, the second only how it sounds. `y-command | y-question` = a request phrased as a question (*Could you…?*); `y-prohibition | y-command` = a sarcastic dare (*Go ahead, try it*, meaning don't); `y-command | y-soft-question` = an order dressed as a gentle ask.",
   },
   "leftEdge.Force": { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "speech-act word" },
 
   "bodyClause.Linker": { anchor: "speech-moves.md#continue-x", summary: "sentence linker before a clause" },
-  "bodyClause.topicMarker": { anchor: "span-mention.md#mention", summary: "mention marker before a topic span" },
+  "bodyClause.topicMarker": { anchor: "spans-as-words.md#mention", summary: "mention marker before a topic span" },
   "bodyClause.clause": { anchor: "word-endings.md#greeting", summary: "clause body" },
 
   "clause.clauseItem": { anchor: "word-endings.md#greeting", summary: "clause, or a stand-in clause join" },
@@ -123,7 +123,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "bCoord.bCoordPart": { anchor: "joins.md#right-close", summary: "/b/ phrase parts" },
   "zCoordPart.npConjunct": { anchor: "joins.md#and-lists-a", summary: "/z/ conjunct" },
   "zCoordPart.bar": {
-    anchor: "sake-bars.md#bars",
+    anchor: "bars.md#bars",
     summary: "/th/ stance word as a rank fence's bar",
     reader: BAR_READER,
   },
@@ -131,7 +131,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "zCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /z/ join" },
   "dCoordPart.npConjunct": { anchor: "joins.md#right-close", summary: "/d/ conjunct" },
   "dCoordPart.bar": {
-    anchor: "sake-bars.md#bars",
+    anchor: "bars.md#bars",
     summary: "/th/ stance word as a rank fence's bar",
     reader: BAR_READER,
   },
@@ -139,7 +139,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "dCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /d/ join" },
   "bCoordPart.npConjunct": { anchor: "joins.md#right-close", summary: "/b/ conjunct" },
   "bCoordPart.bar": {
-    anchor: "sake-bars.md#bars",
+    anchor: "bars.md#bars",
     summary: "/th/ stance word as a rank fence's bar",
     reader: BAR_READER,
   },
@@ -158,14 +158,14 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "vpCoordPart.B": { anchor: "label-seams.md#reach-relative", summary: "hosted /b/ after a pair-reach verb" },
   "vpCoordPart.vJoinClose": { anchor: "joins.md#and-lists-a", summary: "/v/ join after its verbs" },
   "vpCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /v/ join" },
-  "vpCoordPart.vpItemUnit": { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "words before a later verb of a /v/ list" },
-  "vpItemUnit.dCoord": { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "/d/ phrase inside a verb item" },
-  "vpItemUnit.bCoord": { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "/b/ phrase inside a verb item" },
-  "vpItemUnit.hCoord": { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "/h/ unit inside a verb item" },
-  "vpItemUnit.hookUnit": { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "extra-noun hook inside a verb item" },
+  "vpCoordPart.vpItemUnit": { anchor: "verb-and-stance-joins.md#vp-clause-forms", summary: "words before a later verb of a /v/ list" },
+  "vpItemUnit.dCoord": { anchor: "verb-and-stance-joins.md#vp-clause-forms", summary: "/d/ phrase inside a verb item" },
+  "vpItemUnit.bCoord": { anchor: "verb-and-stance-joins.md#vp-clause-forms", summary: "/b/ phrase inside a verb item" },
+  "vpItemUnit.hCoord": { anchor: "verb-and-stance-joins.md#vp-clause-forms", summary: "/h/ unit inside a verb item" },
+  "vpItemUnit.hookUnit": { anchor: "verb-and-stance-joins.md#vp-clause-forms", summary: "extra-noun hook inside a verb item" },
   "vJoinClose.W": { anchor: "list-structure.md#respectively", summary: "respectively /w/ before a verb join word" },
   "vJoinClose.JoinV": { anchor: "joins.md#and-lists-a", summary: "/v/ join fence" },
-  "vJoinClose.sharedAfterJoin": { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "shared /h/ after a verb join (covers every verb)" },
+  "vJoinClose.sharedAfterJoin": { anchor: "verb-and-stance-joins.md#vp-clause-forms", summary: "shared /h/ after a verb join (covers every verb)" },
 
   "gCoord.gCoordPart": { anchor: "joins.md#negation-u", summary: "/ɡ/ phrase parts" },
   "gCoordPart.gPackage": { anchor: "joins.md#negation-u", summary: "clause-level adjective" },
@@ -177,12 +177,12 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "gJoinClose.W": { anchor: "list-structure.md#respectively", summary: "respectively /w/ before an adjective join word" },
   "gJoinClose.JoinG": { anchor: "joins.md#and-lists-a", summary: "/ɡ/ join fence" },
 
-  "hCoord.hCoordPart": { anchor: "vp-clause-forms.md#stance-joins", summary: "/h/ phrase parts" },
+  "hCoord.hCoordPart": { anchor: "verb-and-stance-joins.md#stance-joins", summary: "/h/ phrase parts" },
   "hCoordPart.hUnitRule": { anchor: "clause.md#adverbs-h", summary: "adverb or stance word" },
-  "hCoordPart.hJoinClose": { anchor: "vp-clause-forms.md#stance-joins", summary: "/h/ join after its adverbs" },
-  "hCoordPart.standaloneJoin": { anchor: "vp-clause-forms.md#standalone-stance-joins", summary: "standalone stance /th/ join" },
-  "hCoordPart.lateBound": { anchor: "vp-clause-forms.md#stance-join-before-barl", summary: "stance join between a hinge and its blarl" },
-  "hJoinClose.JoinH": { anchor: "vp-clause-forms.md#stance-joins", summary: "/h/ join fence" },
+  "hCoordPart.hJoinClose": { anchor: "verb-and-stance-joins.md#stance-joins", summary: "/h/ join after its adverbs" },
+  "hCoordPart.standaloneJoin": { anchor: "verb-and-stance-joins.md#standalone-stance-joins", summary: "standalone stance /th/ join" },
+  "hCoordPart.lateBound": { anchor: "verb-and-stance-joins.md#stance-join-before-barl", summary: "stance join between a hinge and its blarl" },
+  "hJoinClose.JoinH": { anchor: "verb-and-stance-joins.md#stance-joins", summary: "/h/ join fence" },
 
   "hUnitRule.W": { anchor: "clause.md#adjective-detail-w", summary: "/w/ detail on an adverb" },
   "hUnitRule.H": { anchor: "clause.md#adverbs-h", summary: "/h/ or /th/ word" },
@@ -190,8 +190,8 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "hUnitRule.B": { anchor: "clause.md#extra-nouns", summary: "hosted /b/ after /h/" },
   "hUnitRule.G": { anchor: "dated-channel.md#dated-channel", summary: "amount on a hosted /b/ (signed offset)" },
   "hUnitRule.Odo": { anchor: "dependents.md#dependent-clauses", summary: "stand-in hosted on /h/, or the grounds after a channel's offset" },
-  "hUnitRule.gPackage": { anchor: "left-bound.md#complex-chaining", summary: "adjective on the landmark after an /h/ host" },
-  "hookUnit.W": { anchor: "ending-grids.md#hook-w", summary: "/w/ on an in-clause hook" },
+  "hUnitRule.gPackage": { anchor: "longer-chains.md#complex-chaining", summary: "adjective on the landmark after an /h/ host" },
+  "hookUnit.W": { anchor: "in-clause-hooks.md#hook-w", summary: "/w/ on an in-clause hook" },
   "hookUnit.Hook": { anchor: "hooks.md#including-am-al", summary: "in-clause hook" },
   "sameRolePair.Hook": { anchor: "same-role-words.md#before-and-after", summary: "the same-role word of a pair" },
   "sameRolePair.Blank": { anchor: "same-role-words.md#before-and-after", summary: "the fill-ask blank a same-role word relates" },
@@ -218,11 +218,11 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "gPackage.W": { anchor: "clause.md#adjective-detail-w", summary: "/w/ detail on an adjective" },
   "gPackage.asOfWPair": { anchor: "as-of.md#as-of", summary: "as-of pair before an adjective" },
   "gPackage.G": { anchor: "clause.md#adjectives-ɡ", summary: "/ɡ/ adjective" },
-  "gPackage.gPackage": { anchor: "left-bound.md#complex-chaining", summary: "adjective on the landmark after a /ɡ/ host" },
+  "gPackage.gPackage": { anchor: "longer-chains.md#complex-chaining", summary: "adjective on the landmark after a /ɡ/ host" },
   "gPackage.B": { anchor: "predication.md#identity", summary: "hosted /b/ after /ɡ/" },
 
   "sharedAfterJoin.gPackage": { anchor: "joins.md#right-close", summary: "shared /ɡ/ after a join" },
-  "sharedAfterJoin.hUnitRule": { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "shared /h/ after a join" },
+  "sharedAfterJoin.hUnitRule": { anchor: "verb-and-stance-joins.md#vp-clause-forms", summary: "shared /h/ after a join" },
   "sharedAfterJoin.scale": { anchor: "comparative-arity.md#time-scale", summary: "digitless bral after a rank join: how late" },
 };
 
@@ -400,8 +400,8 @@ export const READING_CONSTRUCTIONS = {
   frequencyScale: { anchor: "comparative-arity.md#frequency-scale", summary: "digitless hral after a rank join: how often" },
   bareQuestion: { anchor: "questions.md#question", summary: "yol. / yom. with no body: Huh? / Hm?" },
   greeting: { anchor: "word-endings.md#greeting", summary: "a named citation said alone: hello / goodbye" },
-  verbFirstItem: { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "words between the subject and the first joined verb: that verb's own" },
-  verbSharedNoun: { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "/d/ or /b/ right after a verb join: every verb's" },
+  verbFirstItem: { anchor: "verb-and-stance-joins.md#vp-clause-forms", summary: "words between the subject and the first joined verb: that verb's own" },
+  verbSharedNoun: { anchor: "verb-and-stance-joins.md#vp-clause-forms", summary: "/d/ or /b/ right after a verb join: every verb's" },
   fromTo: { anchor: "digit-strings.md#time", summary: "ul + /b/ + oel + /b/: one from … to unit" },
 } satisfies Record<string, ConstructionEntry>;
 
@@ -445,7 +445,7 @@ export const NUMBER_FEATURE_CONSTRUCTIONS = {
   "exp.zero": { anchor: "special-values.md#zero-exponent", summary: "zero × exponent 0e / ±0e-1" },
   "exp.hyperbole": { anchor: "special-values.md#hyperbole", summary: "mantissa + digitless exponent (1e)" },
   "exp.shortfall": { anchor: "special-values.md#special-referential", summary: "just-short -e-" },
-  percent: { anchor: "numbers-applied.md#percent-and-percentage-points", summary: "percent / percentage points" },
+  percent: { anchor: "measures-and-percent.md#percent-and-percentage-points", summary: "percent / percentage points" },
   decimal: { anchor: "digitless-exponents.md#exponents", summary: "decimal point" },
   groups: { anchor: "digit-strings.md#digit-strings", summary: "more than one digit group" },
   code: {
@@ -490,7 +490,7 @@ export const SAKE_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vo
   "stance.a": { anchor: "sakes.md#met", summary: "met tha" },
   "stance.u": { anchor: "sakes.md#unmet-thu-detracts-from-the-sake", summary: "unmet thu" },
   "stance.e": { anchor: "ought-for-a-sake.md#prescription-the-ought-this-act-for-this-sake", summary: "prescription the" },
-  "stance.o": { anchor: "prescription.md#motive-tho-time-horizon", summary: "motive tho" },
+  "stance.o": { anchor: "for-a-sake.md#motive-tho-time-horizon", summary: "motive tho" },
   "ending.a.l": { anchor: "sakes.md#time-horizon-endings-on-met", summary: "met time horizon -l" },
   "ending.a.m": { anchor: "sakes.md#met", summary: "met time horizon -m" },
   "ending.a.r": { anchor: "sakes.md#time-horizon-endings-on-met", summary: "met time horizon -r" },
@@ -500,9 +500,9 @@ export const SAKE_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vo
   "ending.e.l": { anchor: "ought-for-a-sake.md#prescription-the-ought-this-act-for-this-sake", summary: "invited prescription" },
   "ending.e.m": { anchor: "ought-for-a-sake.md#prescription-the-ought-this-act-for-this-sake", summary: "unasked prescription" },
   "ending.e.r": { anchor: "ought-for-a-sake.md#prescription-the-ought-this-act-for-this-sake", summary: "tryout prescription" },
-  "ending.o.l": { anchor: "prescription.md#motive-tho-time-horizon", summary: "motive standing -l" },
-  "ending.o.m": { anchor: "prescription.md#motive-tho-time-horizon", summary: "motive standing -m" },
-  "ending.o.r": { anchor: "prescription.md#motive-tho-time-horizon", summary: "motive standing -r" },
+  "ending.o.l": { anchor: "for-a-sake.md#motive-tho-time-horizon", summary: "motive standing -l" },
+  "ending.o.m": { anchor: "for-a-sake.md#motive-tho-time-horizon", summary: "motive standing -m" },
+  "ending.o.r": { anchor: "for-a-sake.md#motive-tho-time-horizon", summary: "motive standing -r" },
   "emotion": { anchor: "feelings-permission.md#emotion-compose", summary: "emotion tail (locus vowel + motion ending)" },
 };
 
@@ -597,13 +597,13 @@ export const STAND_IN_BACK_CONSTRUCTIONS: Record<Vowel, ConstructionEntry> = {
 
 /** Hook forms (hooks.md, discourse-hooks.md). */
 export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "or" | "er" | "ur" | "aor" | "aer" | "uer", ConstructionEntry> = {
-  ar: { anchor: "ending-grids.md#hook-resume", summary: "ar resume hook" },
-  er: { anchor: "ending-grids.md#hook-resume", summary: "er resume hook" },
-  or: { anchor: "ending-grids.md#hook-resume", summary: "or resume hook" },
-  ur: { anchor: "ending-grids.md#hook-resume", summary: "ur resume hook" },
-  aor: { anchor: "ending-grids.md#hook-resume", summary: "aor resume hook (with it)" },
-  aer: { anchor: "ending-grids.md#hook-resume", summary: "aer resume hook (on it)" },
-  uer: { anchor: "ending-grids.md#hook-resume", summary: "uer resume hook (through there)" },
+  ar: { anchor: "in-clause-hooks.md#hook-resume", summary: "ar resume hook" },
+  er: { anchor: "in-clause-hooks.md#hook-resume", summary: "er resume hook" },
+  or: { anchor: "in-clause-hooks.md#hook-resume", summary: "or resume hook" },
+  ur: { anchor: "in-clause-hooks.md#hook-resume", summary: "ur resume hook" },
+  aor: { anchor: "in-clause-hooks.md#hook-resume", summary: "aor resume hook (with it)" },
+  aer: { anchor: "in-clause-hooks.md#hook-resume", summary: "aer resume hook (on it)" },
+  uer: { anchor: "in-clause-hooks.md#hook-resume", summary: "uer resume hook (through there)" },
   al: {
     anchor: "hooks.md#including-am-al",
     summary: "al including",
@@ -661,18 +661,18 @@ export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "or" | "er" 
   uem: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "uem by-way-of" },
 };
 
-/** Range hooks on **-r** between two same-role words: one unnamed member of the range (ordered-ranges.md#ranges). */
+/** Range hooks on **-r** between two same-role words: one unnamed member of the range (ranges.md#ranges). */
 export const RANGE_MEMBER_CONSTRUCTIONS: Record<"oer" | "uer" | "uar" | "uor" | "aor", ConstructionEntry> = {
-  oer: { anchor: "ordered-ranges.md#ranges", summary: "oer some member, A through B" },
+  oer: { anchor: "ranges.md#ranges", summary: "oer some member, A through B" },
   uer: {
-    anchor: "ordered-ranges.md#ranges",
+    anchor: "ranges.md#ranges",
     summary: "uer some member, A up to B, B left out",
     reader: "`A | some.through-excluding | B` = some one member from A up to B, B left out.",
   },
-  uar: { anchor: "ordered-ranges.md#ranges", summary: "uar some member outside A–B" },
-  uor: { anchor: "ordered-ranges.md#ranges", summary: "uor some member strictly between A and B" },
+  uar: { anchor: "ranges.md#ranges", summary: "uar some member outside A–B" },
+  uor: { anchor: "ranges.md#ranges", summary: "uor some member strictly between A and B" },
   aor: {
-    anchor: "ordered-ranges.md#ranges",
+    anchor: "ranges.md#ranges",
     summary: "aor the current one, whose turn it is",
     reader:
       "`A | some.taking-turns | B` = the current one, whose turn it is, on the walk from A through B (the ones before it have had their turn); under a question it asks which one now (whose turn? which chapter are you on?).",
@@ -681,7 +681,7 @@ export const RANGE_MEMBER_CONSTRUCTIONS: Record<"oer" | "uer" | "uar" | "uor" | 
 
 /** Span features: the written fidelity marks (spans.md). */
 export const SPAN_FEATURE_CONSTRUCTIONS: Record<`mark.${"^@" | "@" | "~"}`, ConstructionEntry> = {
-  "mark.^@": { anchor: "span-mention.md#one-of-a-title", summary: "^@ one thing the span's name applies to" },
+  "mark.^@": { anchor: "spans-as-words.md#one-of-a-title", summary: "^@ one thing the span's name applies to" },
   "mark.@": { anchor: "spans.md#exact-paraphrase-proper", summary: "@ proper span" },
   "mark.~": { anchor: "spans.md#exact-paraphrase-proper", summary: "~ paraphrase span" },
 };
@@ -800,7 +800,7 @@ export function constructionRegistry(overlays: Iterable<OverlayEntrySource>): Ma
  * anchor is the section that states the rule, so an error sends the reader there.
  */
 export const REJECTIONS = {
-  verbSharedOwn: { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "a joined verb with its own object or recipient takes no shared one: say it in that verb's item, or share it and drop the item's own" },
+  verbSharedOwn: { anchor: "verb-and-stance-joins.md#vp-clause-forms", summary: "a joined verb with its own object or recipient takes no shared one: say it in that verb's item, or share it and drop the item's own" },
   genitiveHost: { anchor: "extra-noun-hooks.md#genitive", summary: "`om` + `/b/` follows the noun B uses" },
   turnSeriesCall: { anchor: "speech-moves.md#vocative", summary: "an act or polar series word takes -l / -m / -r, never the call ending -n (`yan`, `yaen`)" },
   polarOrder: { anchor: "questions.md#polar-particle", summary: "a polar word is one answer or one check-back: not two in a row, and not before an act word (an answer and then a question are two turns)" },
@@ -834,22 +834,22 @@ export const REJECTIONS = {
   abilitySlot: { anchor: "can-and-cant.md#ability", summary: "ability (x + vowel) goes on /v/ or /ɡ/ only; name + x + vowel + -n is a conversation-length bid only as a citation or a /y/ call" },
   labelReachArrow: { anchor: "viewpoint.md#landmark-facing", summary: "on a direction root the th seam takes only e (the landmark's own facing)" },
   pluralKindAfterUniversal: { anchor: "universals-domains.md#universals-domains-generics", summary: "the kind word after ua / uo takes no -x" },
-  stackedHookResume: { anchor: "ordered-ranges.md#ranges", summary: "stacked range hook -r (oer / uar / uor) needs same-role words on both sides" },
+  stackedHookResume: { anchor: "ranges.md#ranges", summary: "stacked range hook -r (oer / uar / uor) needs same-role words on both sides" },
   hookSameRoleStack: { anchor: "hooks.md#including-am-al", summary: "between same-role words only the plain hooks (al el ol ul) and the range hooks (oel uel ual uol aol) have a reading; for such as, use am" },
-  rangeEndpointKind: { anchor: "ordered-ranges.md#ranges", summary: "two number ends of a range share one line: amounts (and ±∞), ranks (and first / last place), or labels; an amount through a rank has no reading" },
+  rangeEndpointKind: { anchor: "ranges.md#ranges", summary: "two number ends of a range share one line: amounts (and ±∞), ranks (and first / last place), or labels; an amount through a rank has no reading" },
   hookDiscourseStack: { anchor: "hooks.md#discourse-hooks", summary: "at the front of a sentence only al el ol ul, aol and ael have a reading; for next, by the way, on the contrary use a linker" },
-  stackedJoinResume: { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "stacked join vowels take no -r on /z/ /d/ /b/ /v/ /x/ /ɡ/ (only a / o / e / u do); a stacked -r is the stance fill-ask under /th/" },
+  stackedJoinResume: { anchor: "verb-and-stance-joins.md#vp-clause-forms", summary: "stacked join vowels take no -r on /z/ /d/ /b/ /v/ /x/ /ɡ/ (only a / o / e / u do); a stacked -r is the stance fill-ask under /th/" },
   spanSlot: { anchor: "spans.md#pos", summary: "an aside goes only under /th/ /ɡ/ /w/ /h/; a cite, mention or opaque span fills a content slot (/z/ /d/ /b/ /v/ /ɡ/ /h/) or /w/, or sets the topic under /x/" },
   turnWordModifier: {
-    anchor: "speech-acts.md#describe-turn-word",
+    anchor: "more-turn-words.md#describe-turn-word",
     summary: "/w/ goes before a reaction, not a call; a number cheer or a span under /y/ takes no gl-, /ɡ/, or /w/",
   },
   ySpanType: { anchor: "spans.md#y-spans", summary: "a span under /y/ is opaque <…> or a cite […]; a mention or an aside is not a call or a reaction" },
   barKind: {
-    anchor: "sake-bars.md#bars",
+    anchor: "bars.md#bars",
     summary: "a bar is a stance that sets a value: a met sake, a channel, FORMER, NOTIONAL, PLAN, WANT, ability, permission, requirement, consent, or a speaker attitude",
   },
-  barCount: { anchor: "sake-bars.md#bars", summary: "a rank fence ranks one item against one bar; with a bar there is no second comparee, noun or bar" },
+  barCount: { anchor: "bars.md#bars", summary: "a rank fence ranks one item against one bar; with a bar there is no second comparee, noun or bar" },
   rankJoinNumberManner: { anchor: "comparative-arity.md#manner-scale", summary: "the /h/ after a rank join is a manner word; the only number there is digitless h+ (how often)" },
   zoneKind: {
     anchor: "contrary-to.md#contrary-to-stance",
@@ -910,7 +910,7 @@ export const REJECTIONS = {
   pointerOwnSlot: { anchor: "pronouns.md#themself", summary: "a self pointer (o) names another slot of its own clause, not the one it fills" },
   clauseSingleItem: { anchor: "joins.md#clause-joins", summary: "a clause join goes between two clauses; to deny or focus one clause, put the join on its verb or noun (vul, zal)" },
   leftFence: { anchor: "joins.md#right-close", summary: "a join word closes its conjuncts; it never comes before them" },
-  slotlessHost: { anchor: "numbers-applied.md#measure-phrases", summary: "a measure amount or an equative's factor takes no bl- word after it; a plain /b/ there is the recipient" },
+  slotlessHost: { anchor: "measures-and-percent.md#measure-phrases", summary: "a measure amount or an equative's factor takes no bl- word after it; a plain /b/ there is the recipient" },
   joinlessRun: { anchor: "joins.md#right-close", summary: "two nouns of one role side by side, or two verbs in one clause, close with a join word (`zazozon zalazun zal`)" },
   emptyIsland: { anchor: "scope-islands.md#scope-islands", summary: "a scope island needs words between its edges" },
   islandOneSlot: { anchor: "scope-islands.md#scope-islands", summary: "a scope island holds at most one phrase: /z/, /d/, /b/, /v/, or a /ɡ/ stack" },
@@ -919,10 +919,10 @@ export const REJECTIONS = {
   landmarkLateralBound: { anchor: "viewpoint.md#landmark-facing", summary: "a landmark lateral (DIR th e) needs its landmark in hosted /b/" },
   asOfIntroduceBound: { anchor: "as-of.md#as-of", summary: "an as-of word introduces its bound with a /b/ word" },
   asOfResumeBound: { anchor: "as-of.md#as-of", summary: "an as-of resume (-r) takes no /b/" },
-  hookResumeNoun: { anchor: "ending-grids.md#hook-resume", summary: "a resume hook (-r) points back and takes no noun on its right" },
+  hookResumeNoun: { anchor: "in-clause-hooks.md#hook-resume", summary: "a resume hook (-r) points back and takes no noun on its right" },
   asOfPerHost: { anchor: "as-of.md#as-of", summary: "a clause takes at most one /h/ and one /th/ as-of pair" },
   asOfOffset: { anchor: "as-of.md#as-of", summary: "a signed offset in as-of /b/ goes only on stance as-of (/th/); an event or adjective past needs a channel" },
-  intentionHost: { anchor: "want.md#whose-intention", summary: "WANT and PLAN take no /b/ person and DECISION no /b/ at all: with no holder it is your own; someone else's goes through a holder seam (`theyomazozon thagom`)" },
+  intentionHost: { anchor: "want-and-decide.md#whose-intention", summary: "WANT and PLAN take no /b/ person and DECISION no /b/ at all: with no holder it is your own; someone else's goes through a holder seam (`theyomazozon thagom`)" },
   retiredIntentionRoot: { anchor: "intention.md#plan", summary: "/h/ on the map or check root is not an intention: PLAN and DECISION are /th/ stances (`thagom`, `thogem`), someone else's through a holder" },
   channelOffsetSign: { anchor: "dated-channel.md#dated-channel", summary: "MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one" },
   retiredPurposeHinge: { anchor: "dependents.md#so-that", summary: "/h/ on the goal root is not the purpose hinge: an aim is in a mind, so so-that is `thovam`, the speaker's aim; someone else's aim goes through a holder" },

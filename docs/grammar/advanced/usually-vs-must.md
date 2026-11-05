@@ -65,7 +65,7 @@ A **definition** works both ways: whatever has the property is that kind, and ev
 
 The channel stays on the main sentence and covers the whole generalization. Put it before the hinge, as with the [evidence clause](/evidentiality#evidence-clause): `zual gogozel vezuvel thubol thohem blarl …` is *going by a well-established pattern, every cat sleeps when …*.
 
-**Compare with:** a general claim you are **not** giving as today's report is [FORMER](/notional-standing#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is a [requirement](/permission-consent#say-words) (`hwuvom`), not a law of how things work. *Maybe every cat sleeps* is [MAY](/knowing#may) on the same clause.
+**Compare with:** a general claim you are **not** giving as today's report is [FORMER](/residue-and-former#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is a [requirement](/permission-consent#say-words) (`hwuvom`), not a law of how things work. *Maybe every cat sleeps* is [MAY](/knowing#may) on the same clause.
 
 ### Practice {#advanced-practice}
 

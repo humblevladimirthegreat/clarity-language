@@ -49,7 +49,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🤢,nauseated,onomu,mind,takes-away,,contamination,nauseated shows disgust; contamination is the unobservable reading that something is tainted,,pollution; dirty,
 🤮,vomit,avamu,mind,takes-away,,revulsion,vomit shows revulsion,,,
 🤧,sneeze,uzemu,mind,takes-away,,infection,sneeze signals a cold; infection is the unobservable spread,,cough,
-🥵,hot,ohamu,mind,takes-away,,fever,a hot face is the body overheating from within,,,sake-bars.md#intermediate-practice
+🥵,hot,ohamu,mind,takes-away,,fever,a hot face is the body overheating from within,,,bars.md#intermediate-practice
 🥶,cold,ogomu,mind,takes-away,,,,,,
 🥴,woozy,awumu,mind,takes-away,,intoxication,woozy shows intoxication,,,
 🤯,mind-blown,amame,mind,one,,astonishment,a mindblown head bursts with astonishment,,,
@@ -140,7 +140,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 👐,open-hands,owoba,body,holds,medium,openness,open hands hide nothing; openness is having nothing to hide,,,
 🤲,cupped-hands,agoba,body,holds,medium,receptiveness,cupped hands wait to receive; receptiveness is being ready to take in,,,
 🤝,handshake,aya,person,holds,,co-participation,handshake seals shared presence; co-participation is sharing the floor,,participate; interaction; membership; participation; engage,
-🙏,pray,abuya,person,holds,none,petition,pray is asking; a petition is the ask,,,prescription.md#intermediate-practice
+🙏,pray,abuya,person,holds,none,petition,pray is asking; a petition is the ask,,,for-a-sake.md#intermediate-practice
 ✍️,write,aruyo,person,order,none,authorship,write puts words on the page; authorship is claiming those words,,author,questions.md#beginner-practice
 💅,nail-polish,eneba,body,holds,small,,,,,
 🤳,selfie,uzuye,person,one,none,posing,a selfie is a picture of yourself; posing is holding a look for the picture,,,
@@ -232,7 +232,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 💇,hair,ohuba,body,holds,none,self-presentation,hair is groomed and styled; self-presentation is the unobservable aim,,,
 🚶,walk,owuro,counting,order,none,,,,march; wander,relations.md#beginner-practice
 🧍,stand,uzuve,doing,one,none,presence,stand shows presence,,existence; attendance,left-bound-adjectives.md#beginner-practice
-🧎,kneel,anuve,doing,one,none,submission,kneel shows submission,,,prescription.md#intermediate-practice
+🧎,kneel,anuve,doing,one,none,submission,kneel shows submission,,,for-a-sake.md#intermediate-practice
 🧑‍🦼,power-chair,abavo,doing,order,big,,,,,
 🧑‍🦽,propel,oluvo,doing,order,none,independence,self-propelling a chair shows independence,,motivate,
 🏃,run,eruvo,doing,order,none,,,,,speech-moves.md#beginner-practice
@@ -308,7 +308,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐁,mouse,ameze,creature,one,small,small,a mouse is small beside larger animals; small is little size,,little; tiny; minor,universals-domains.md#intermediate-practice
 🐀,rat,erezu,creature,takes-away,small,,,,,
 🐹,hamster,aheza,creature,holds,small,routine,hamster on a wheel of routine,,process; procedure; everyday; familiar,
-🐇,rabbit,aroze,creature,one,medium,,,,,notional-standing.md#intermediate-practice
+🐇,rabbit,aroze,creature,one,medium,,,,,residue-and-former.md#intermediate-practice
 🐿️,squirrel,ezeza,creature,holds,small,hoarding,a squirrel hoards nuts for winter,,,
 🦫,beaver,ebozu,creature,takes-away,medium,industry,a beaver works nonstop building dams,,,
 🦔,hedgehog,ehezu,creature,takes-away,small,defensiveness,hedgehog curls in defense,,,
@@ -509,7 +509,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🍭,lollipop,olede,food,one,small,pacification,lollipop pacifies a child,,,
 🍮,custard,oyeda,food,holds,small,richness,custard is thick with cream and eggs,,,
 🍯,honey,ahuda,food,holds,none,endearment,honey is a sweet endearment,,,
-🍼,bottle,awoda,food,holds,medium,inhibition,a bottle holds liquid inside; inhibition is holding feeling in,,,numbers-applied.md#intermediate-practice
+🍼,bottle,awoda,food,holds,medium,inhibition,a bottle holds liquid inside; inhibition is holding feeling in,,,measures-and-percent.md#intermediate-practice
 🥛,milk,umuda,food,holds,none,,,,,
 ☕,coffee,oguda,food,holds,none,alertness,coffee fuels alertness,g:bitter,,
 🫖,teapot,edoda,food,holds,medium,ceremony,teapot pours with ceremony,,,hooks.md#beginner-practice
@@ -642,7 +642,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🛎️,bellhop,obaya,person,holds,big,,,,,
 🧳,luggage,eloba,body,holds,medium,encumbrance,luggage is what you carry; encumbrance is the unobservable drag,v:carry,suitcase,here-there.md#beginner-practice
 ⌛,sand,ala,nature,holds,,recency,the sand has just run through; recency is nearness in time,,newly,
-⏳,hourglass,agoru,counting,takes-away,medium,hour,hourglass sand marks civil duration; hour is the everyday duration unit,,,numbers-applied.md#intermediate-practice
+⏳,hourglass,agoru,counting,takes-away,medium,hour,hourglass sand marks civil duration; hour is the everyday duration unit,,,measures-and-percent.md#intermediate-practice
 ⌚,watch,awero,counting,order,small,punctuality,watch tracks the exact moment; punctuality is being on time,,,
 ⏰,alarm-clock,olero,counting,order,small,weekday,alarm clock starts each morning of the week; a weekday is a day of the week,,,
 ⏱️,stopwatch,azero,counting,order,small,second,stopwatch ticks off short intervals; second is the SI time unit,,moment,
@@ -695,7 +695,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🎁,present,ewa,tool,holds,,generosity,a present is given to another; generosity is giving freely,,gift; charity,
 🎗️,awareness,owema,mind,holds,,solidarity,the ribbon is worn for a cause; solidarity is standing with others,,aware,
 🎟️,admission-tickets,edena,title,holds,small,admission,ticket grants entry inside; admission is being let in,,entry,
-🎫,ticket,odeno,title,order,small,,,,,left-bound.md#intermediate-practice
+🎫,ticket,odeno,title,order,small,,,,,longer-chains.md#intermediate-practice
 🏆,trophy,odora,counting,holds,medium,score,trophy marks the final tally; score is the counted result,,grade; prize; champion; rating,list-verbs.md#intermediate-practice
 🏅,medal,emebo,body,order,small,achievement,medal marks accomplished feat; achievement is reaching a goal,,success; achieve; successful; award; fulfill; accomplish,
 🥇,gold,ugulo,nature,order,none,first,gold medal marks top place; first is leading all others,,primary; priority; prime,numeric-derivation.md#advanced-practice
@@ -808,14 +808,14 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🔔,bell,ebora,counting,holds,medium,alert,bell rings to warn or call; alert is warning attention,,,word-endings.md#beginner-practice
 🔕,bell-off,eburu,counting,takes-away,none,,,,,
 🎼,sheet-music,ehoro,counting,order,medium,composition,sheetmusic arranges notes on lines; composition is arranged creation,,music; compose,collectives.md#intermediate-practice
-🎵,note,onure,counting,one,none,melody,note carries a musical line; melody is tuneful line,,tone; pitch,span-mention.md#intermediate-practice
+🎵,note,onure,counting,one,none,melody,note carries a musical line; melody is tuneful line,,tone; pitch,spans-as-words.md#intermediate-practice
 🎶,tune,uduro,counting,order,none,,,,song,
 🎙️,studio-mic,uzewe,tool,one,small,,,,studio,
 🎚️,slider,ezewo,tool,order,small,adjustment,slider fine-tunes the level; adjustment is fine tuning,,adjust; amendment; revise,
 🎛️,knob,anewe,tool,one,small,control,knobs adjust the sound mix; control is directing settings,,operate; regulate; handle; conduct,
 🎤,microphone,uwe,tool,one,,performance,mic carries a live voice; performance is presenting to others,,perform,
 🎧,headphones,awa,tool,holds,,immersion,headphones seal you in sound; immersion is deep involvement,,concentration; involvement,
-📻,radio,arowe,tool,one,medium,broadcast,radio sends sound through air; broadcast is sending widely,,spread,ending-grids.md#intermediate-practice
+📻,radio,arowe,tool,one,medium,broadcast,radio sends sound through air; broadcast is sending widely,,spread,in-clause-hooks.md#intermediate-practice
 🎷,saxophone,azoro,counting,order,medium,,,,,
 🎺,trumpet,adoro,counting,order,medium,,,,,speech-manner.md#intermediate-practice
 🪊,trombone,edoro,counting,order,medium,fanfare,trombones blare to herald a grand arrival,,,
@@ -852,7 +852,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 📹,camcorder,ogewe,tool,one,small,recording,camcorder tapes moving scenes; recording is preserving over time,,,
 📼,videocassette,uvewa,tool,holds,small,,,,,
 🔍,magnify,umewe,tool,one,small,scrutiny,magnifier enlarges small detail; scrutiny is close examination,v:find,seek; examination; detect; notice,word-endings.md#beginner-practice
-🕯️,candle,agewo,tool,order,small,awash,candle light fills the room; awash is charge in the surrounding field,,wax,prescription.md#intermediate-practice
+🕯️,candle,agewo,tool,order,small,awash,candle light fills the room; awash is charge in the surrounding field,,wax,for-a-sake.md#intermediate-practice
 💡,lightbulb,owe,tool,one,,candela,lightbulb sets luminous intensity; candela is the SI luminous-intensity unit,,,
 🔦,flashlight,avewo,tool,order,small,revelation,flashlight reveals what was dark; revelation is making known,,expose; flash,speech-manner.md#intermediate-practice
 🏮,lantern,olowo,tool,order,medium,guidance,lantern lights the path ahead; guidance is showing the way,,counsel,
@@ -863,7 +863,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 📃,paper,ebona,title,holds,medium,,a curling sheet is paper,,,
 📜,scroll,ono,title,order,,tale,scroll records a tale; tale is a told story,,historical; narrative,
 📄,page,obono,title,order,medium,documentation,page is a sheet; record is the unobservable keeping,,sheet; document; text,predication.md#beginner-practice
-📰,newspaper,unona,title,holds,medium,news,a newspaper prints what happened today,,article; magazine; coverage; journal,ending-grids.md#intermediate-practice
+📰,newspaper,unona,title,holds,medium,news,a newspaper prints what happened today,,article; magazine; coverage; journal,in-clause-hooks.md#intermediate-practice
 📑,tab,adeno,title,order,small,organization,a tab sorts open pages into their own slots,,organize; arrangement; system; format,
 🔖,bookmark,uno,title,order,,reminder,a bookmark holds your place to come back to,,remind,
 🏷️,label,alene,title,one,small,classification,a label sorts things into named groups,,category; class; mark,
@@ -886,10 +886,10 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 📮,post-box,oboha,place,holds,medium,dispatch,postbox sends mail on its way; dispatch is sending outward,,send; mail; deliver; post,
 🗳️,ballot,una,title,holds,,choice,ballot records your vote; choice is selecting among options,,vote; election; elect; poll; voluntary,
 ✏️,pencil,obewo,tool,order,small,draft,pencil marks can be erased; draft is tentative first version,,outline,extra-noun-hooks.md#beginner-practice
-🖊️,pen,ebewo,tool,order,small,commitment,pen ink stays on the page; commitment is a binding promise,,dedicate,want.md#intermediate-practice
+🖊️,pen,ebewo,tool,order,small,commitment,pen ink stays on the page; commitment is a binding promise,,dedicate,want-and-decide.md#intermediate-practice
 🖌️,paintbrush,ubewo,tool,order,small,artistry,brush paints with flowing strokes; artistry is skilled creative work,,art; paint; illustration; brush; draw; illustrate; stroke,stance-bars.md#advanced-practice
 🖍️,crayon,ogewo,tool,order,small,boldness,crayon marks with thick color; boldness is strong visible stroke,,nerve,
-📝,memo,ona,title,holds,,policy,memo records a standing decision; policy is a standing rule,,regulation; guideline; law; legal,ending-grids.md#intermediate-practice
+📝,memo,ona,title,holds,,policy,memo records a standing decision; policy is a standing rule,,regulation; guideline; law; legal,in-clause-hooks.md#intermediate-practice
 🪌,eraser,erewu,tool,takes-away,small,correction,an eraser rubs out a mistake; correction is setting a mistake right,,,word-endings.md#beginner-practice
 💼,briefcase,uboba,body,holds,medium,business,briefcase carries work affairs; business is commercial affairs,z:job,task; affair; enterprise; profession; company,
 📁,folder,ovona,title,holds,medium,,,,,
@@ -905,7 +905,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 📎,paper-clip,ebewa,tool,holds,small,attachment,paperclip holds sheets together; attachment is joined addition,,attach,
 📏,ruler,uroro,counting,order,medium,measurement,ruler measures exact length; measurement is precise tracking,,measure; criteria; dimension,
 🚃,railcar,urava,doing,holds,big,length,a railcar runs long; length is how far along,,extend; long,
-📐,set-square,ezero,counting,order,small,meter,set square marks exact length; meter is the SI length unit,,,numbers-applied.md#intermediate-practice
+📐,set-square,ezero,counting,order,small,meter,set square marks exact length; meter is the SI length unit,,,measures-and-percent.md#intermediate-practice
 ✂️,scissors,ozewu,tool,takes-away,small,separation,scissors cut material apart; separation is dividing apart,,distinct; slice; apart; distinguish; distinction; separate,
 🗃️,file-box,avona,title,holds,medium,archive,file box stores old records; archive is stored past record,,file; database,
 🗄️,cabinet,ugaha,place,holds,big,,,,shelf,
@@ -1092,7 +1092,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🔰,begin,ebugo,sign,order,none,inception,shoshin mark means just starting; inception is the unobservable start-kind,,found; trigger,
 ⭕,correct,eguge,sign,one,none,inclusion,hollow circle marks round boundary; inclusion is being inside the boundary,,proper; right; incorporate,
 ✅,check,oge,sign,one,,decision,checkmark marks a confirmed pick; decision is a settled choice with revisability,,conclude; determine,
-❌,cross,uyugu,sign,takes-away,none,rejection,cross mark means no wrong; rejection is refused as wrong,,,span-mention.md#intermediate-practice
+❌,cross,uyugu,sign,takes-away,none,rejection,cross mark means no wrong; rejection is refused as wrong,,,spans-as-words.md#intermediate-practice
 ➰,loop,alugo,sign,order,none,recurrence,curly loop circles back; repetition is returning to the start,,,
 ©️,copyright,egunu,title,takes-away,none,ownership,copyright marks legal control; ownership is legal right to control,,possess; possession; own; property,
 ®️,registered,arunu,title,takes-away,none,,,,registration,
@@ -1104,7 +1104,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🔡,lower-case,olugo,sign,order,none,casualness,lowercase skips the formality of capitals,,,
 🔢,numbers,onuro,counting,order,none,quantification,numbers let you count and measure,,mathematics,
 🔣,symbols,ezuga,sign,holds,none,notation,symbols are written marks that stand for ideas,,code,
-🔤,letters,ego,sign,order,,literacy,letters let you read and write,,,span-mention.md#intermediate-practice
+🔤,letters,ego,sign,order,,literacy,letters let you read and write,,,spans-as-words.md#intermediate-practice
 ℹ️,information,unuge,sign,one,none,fact,the info sign gives facts; a fact is what is actually so,,data; inform,
 🅿️,parking,ebaha,place,holds,big,allotment,parking marks a stall; allotment is the unobservable assigned share,,assign,stacked-markers.md#advanced-practice
 🆘,sos,ozugu,sign,takes-away,none,distress,sos signals distress,,,

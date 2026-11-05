@@ -57,4 +57,4 @@ We're spending August in Lisbon `thagor`.
 I'm trading my shift away `thagom`.
 :::
 
-<!-- Source (editors): want.md#want, intention.md#plan-predict. -->
+<!-- Source (editors): want-and-decide.md#want, intention.md#plan-predict. -->

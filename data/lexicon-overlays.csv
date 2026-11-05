@@ -62,16 +62,16 @@ aber,w,❤️,evidential,INTUITION.weak,intuition evidential with weak evidence 
 emem,th,😮,mirative,MIRATIVE,mirative mood (newly found out and not expected),a surprised face meets what it did not expect; mirative marks news against expectation,mirative.md#mirative
 emel,th,😮,mirative,MIRATIVE.firm,mirative mood overturning a firm expectation,a surprised face meets what it did not expect; mirative marks news against expectation,mirative.md#mirative
 emer,th,😮,mirative,MIRATIVE.mild,mirative mood against a loose expectation,a surprised face meets what it did not expect; mirative marks news against expectation,mirative.md#mirative
-aram,h,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books,notional-standing.md#residue-and-former-climate
+aram,h,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books,residue-and-former.md#residue-and-former-climate
 aram,w,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books,universality.md#mood-on-one-adjective
-elam,h,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current,notional-standing.md#residue-and-former-climate
+elam,h,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current,residue-and-former.md#residue-and-former-climate
 elam,w,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current,universality.md#mood-on-one-adjective
 agor,th,🗺️,plan,plan-sketch,plan mood sketch map-resolution (direction only; details left open),map charts a route; sketch plan is intention without steps,intention.md#plan
 agom,th,🗺️,plan,plan-itinerary,plan mood itinerary map-resolution (steps on the map; detail unstated),map charts a route; itinerary plan fills in how,intention.md#plan
 agol,th,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups,intention.md#plan
-ogel,th,✅,decision,DECISION-irreversible,decision mood irreversible changeability (settled pick; no time),checkmark confirms a pick; irreversible decision is settled as final,want.md#decision-revisability
-ogem,th,✅,decision,DECISION-modifiable,decision mood modifiable changeability (open to revision; no time),checkmark confirms a pick; modifiable decision stays open to change,want.md#decision-revisability
-oger,th,✅,decision,DECISION-temporary,decision mood temporary changeability (pick for now; no time),checkmark confirms a pick; temporary decision holds only this moment,want.md#decision-revisability
+ogel,th,✅,decision,DECISION-irreversible,decision mood irreversible changeability (settled pick; no time),checkmark confirms a pick; irreversible decision is settled as final,want-and-decide.md#decision-revisability
+ogem,th,✅,decision,DECISION-modifiable,decision mood modifiable changeability (open to revision; no time),checkmark confirms a pick; modifiable decision stays open to change,want-and-decide.md#decision-revisability
+oger,th,✅,decision,DECISION-temporary,decision mood temporary changeability (pick for now; no time),checkmark confirms a pick; temporary decision holds only this moment,want-and-decide.md#decision-revisability
 omam,th,💭,may,MAY,may mood (could be; default),thought balloon: the scene may be so; -m does not find out and does not shrug it off,knowing.md#may
 omam,w,💭,may,MAY,may mood (could be; default),thought balloon: the scene may be so; -m does not find out and does not shrug it off,universality.md#mood-on-one-adjective
 omal,th,💭,may,MAY-find-out,may mood find-out follow-up (I'll / let's find out),"thought balloon plus looking: could be, and you are seeking",knowing.md#follow-up-endings-may
@@ -207,15 +207,15 @@ uvum,h,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could 
 uvum,w,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,already-still-yet.md#phasal
 uvur,h,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,already-still-yet.md#phasal
 uvur,w,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,already-still-yet.md#phasal
-owal,h,🧪,attempt,ATTEMPT-committed,attempt mood committed (keep going until it works or is ruled out),test tube runs the experiment; a committed attempt keeps testing until it settles,ability.md#try
-owam,h,🧪,attempt,ATTEMPT-unstated,attempt mood (commitment unstated),test tube tries a sample; an attempt is testing whether it works,ability.md#try
-owar,h,🧪,attempt,ATTEMPT-trial,attempt mood trial run (low-stakes probe; failing is useful data),test tube tries a small sample; a trial run is a probe whose failure still teaches,ability.md#try
-alol,th,🌠,want,WANT-lasting,want mood lasting (a wish that keeps returning),shooting star grants a wish; a lasting want is a wish that keeps coming back,want.md#want
-alom,th,🌠,want,WANT-unstated,want mood (duration unstated),wishing on a star; a want is wishing for a thing or an act,want.md#want
-alor,th,🌠,want,WANT-passing,want mood passing (a whim that fades),shooting star streaks past; a passing want fades quickly,want.md#want
+owal,h,🧪,attempt,ATTEMPT-committed,attempt mood committed (keep going until it works or is ruled out),test tube runs the experiment; a committed attempt keeps testing until it settles,try.md#try
+owam,h,🧪,attempt,ATTEMPT-unstated,attempt mood (commitment unstated),test tube tries a sample; an attempt is testing whether it works,try.md#try
+owar,h,🧪,attempt,ATTEMPT-trial,attempt mood trial run (low-stakes probe; failing is useful data),test tube tries a small sample; a trial run is a probe whose failure still teaches,try.md#try
+alol,th,🌠,want,WANT-lasting,want mood lasting (a wish that keeps returning),shooting star grants a wish; a lasting want is a wish that keeps coming back,want-and-decide.md#want
+alom,th,🌠,want,WANT-unstated,want mood (duration unstated),wishing on a star; a want is wishing for a thing or an act,want-and-decide.md#want
+alor,th,🌠,want,WANT-passing,want mood passing (a whim that fades),shooting star streaks past; a passing want fades quickly,want-and-decide.md#want
 ubam,w,🧦,pairing,respectively,respective pairing (item N of one list goes with item N of the other),socks sort into matched pairs; respectively matches each item to its partner,list-structure.md#respectively
-egol,g,🔤,mention,MENTION,mention marker (the span is a word or phrase as spelling),letters spell a word; a mention is a word as its letters,span-mention.md#mention
-egon,g,🔤,mention,NAME.MENTION,name-string mention marker (the span is a name as spelling),letters spell a name; the name-string is a name as its letters,span-mention.md#mention
+egol,g,🔤,mention,MENTION,mention marker (the span is a word or phrase as spelling),letters spell a word; a mention is a word as its letters,spans-as-words.md#mention
+egon,g,🔤,mention,NAME.MENTION,name-string mention marker (the span is a name as spelling),letters spell a name; the name-string is a name as its letters,spans-as-words.md#mention
 abam,cite,🎒,clause_hinge,before,same-role before (A ahead of B in time or in a moving line; B fills the same role; maybe others too),backpack holds what you need ahead; A goes ahead of B in the same role,same-role-words.md#before-and-after
 abal,cite,🎒,clause_hinge,before,same-role before (A ahead of B; B is the whole of it),backpack holds what you need ahead; -l closes the line at B,same-role-words.md#before-and-after
 alam,cite,⌛,clause_hinge,after,same-role after (A after or behind B in time or in a moving line; B fills the same role; maybe others too),the sand runs after the sand above it; A comes after B in the same role,same-role-words.md#before-and-after

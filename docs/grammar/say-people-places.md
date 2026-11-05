@@ -63,7 +63,7 @@ English uses the same *who* clause for two jobs. When it picks out **which** one
 >
 > "Azozon, who walks, sings."
 
-**Compare with:** ordinary `gehohel` is *chair* / *position* as a property, not *sitting*: the root's everyday sense is a chair, not an event, so it has no [in-progress](/predication#in-progress) reading. For *sitting*, use the role word `gwuzehohel`. [Restrictors](/restrictors) say when a **claim** counts (*never*, *only when it rains*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](/left-bound#complex-chaining)).
+**Compare with:** ordinary `gehohel` is *chair* / *position* as a property, not *sitting*: the root's everyday sense is a chair, not an event, so it has no [in-progress](/predication#in-progress) reading. For *sitting*, use the role word `gwuzehohel`. [Restrictors](/restrictors) say when a **claim** counts (*never*, *only when it rains*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](/longer-chains#complex-chaining)).
 
 ### Stacked owners (*Azozon's dog's bone*) {#stacked-owners}
 
@@ -173,7 +173,7 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 
 Resume the handle like any name: its whole stem + **-r** (`zanar`).
 
-**Compare with:** a [mention](/span-mention#mention) is the **word** (`glegol z[ana]` = *the word “ana”*). A foreign code whose letters all have Ageben letters is a native [letter code](/number-markers#letter-codes) (`z_v16` *F-16*); one with a letter Ageben lacks stays an opaque span (<code>z@&lt;FBI&gt;</code>).
+**Compare with:** a [mention](/spans-as-words#mention) is the **word** (`glegol z[ana]` = *the word “ana”*). A foreign code whose letters all have Ageben letters is a native [letter code](/number-markers#letter-codes) (`z_v16` *F-16*); one with a letter Ageben lacks stays an opaque span (<code>z@&lt;FBI&gt;</code>).
 
 ### An English name as Ageben {#english-name}
 
@@ -661,7 +661,7 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 >
 > "Azozon compares Alazun with Ahelan."
 
-**Compare with:** a ranking (*Azozon is more challenging than Alazun*) is the [rank join](/comparatives#comparatives), not **`vezem`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](/prescription#sake-preference); **`zolamalugulol`** names the one chosen. *Often* / *usually* is a [restrictor](/restrictors) (`huam`, `war`). A type across scenes is [label reach](/label-seams#reach-type) **`tha`**.
+**Compare with:** a ranking (*Azozon is more challenging than Alazun*) is the [rank join](/comparatives#comparatives), not **`vezem`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](/for-a-sake#sake-preference); **`zolamalugulol`** names the one chosen. *Often* / *usually* is a [restrictor](/restrictors) (`huam`, `war`). A type across scenes is [label reach](/label-seams#reach-type) **`tha`**.
 
 ### Fair, keep, public, ride, admit and other leftover senses {#leftover-senses}
 
@@ -1139,7 +1139,7 @@ These three English nouns each hide two jobs. *Role* is the function someone pla
 
 ### Sentence, phrase, word {#words-about-words}
 
-**Needs:** [Mention](/span-mention#mention)
+**Needs:** [Mention](/spans-as-words#mention)
 
 To talk about a word, a phrase or a whole sentence as a thing in itself, use a mention: the marker **`glegol`**, then the span. English *the word …*, *the phrase …* and *the sentence …* all use the same frame. The span is a cite of the Ageben, and its role letter still says what the mention does in the clause.
 

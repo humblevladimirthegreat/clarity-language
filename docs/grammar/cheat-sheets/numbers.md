@@ -7,7 +7,7 @@ outline: false
 
 # Numbers cheat sheet {#numbers-cheat-sheet}
 
-A quick look at [numbers](/numbers), [digit-strings and time](/digit-strings), [digitless and exponents](/digitless-exponents), and [numbers in use](/numbers-applied). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced. Written shorthand is used from two digits up; zero, one digit, or none stays spelled.
+A quick look at [numbers](/numbers), [digit-strings and time](/digit-strings), [digitless and exponents](/digitless-exponents), and [numbers in use](/measures-and-percent). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced. Written shorthand is used from two digits up; zero, one digit, or none stays spelled.
 
 ## Building a number word {#build}
 
@@ -253,37 +253,37 @@ Put the amount on the unit's noun as `/ɡ/`. Each unit is the abstract **-m** of
 <!-- cheat-sheet: numbers -->
 | Unit | Root | Example | Literal on same root | Stage |
 |------|------|---------|----------------------|-------|
-| [meter](/numbers-applied#stock-units) | `ezero` | `bezerom g+2` | `ezerol` *set-square* | I |
-| [gram](/numbers-applied#stock-units) | `ubere` | `buberem g+5` | `uberel` *pound* (banknote) | I |
-| [second](/numbers-applied#stock-units) | `azero` | `bazerom g+3` | `azerol` *stopwatch* | I |
-| [minute](/numbers-applied#stock-units) | `umuro` | `bumurom g+5` | `umurol` *three-o'clock* | I |
-| [liter](/numbers-applied#stock-units) | `ubuna` | `bubunam g+1` | `ubunal` *pool* | I |
-| [ampere](/numbers-applied#stock-units) | `ogava` | `bogavam g+2` | `ogaval` *cable-car* | I |
-| [kelvin](/numbers-applied#stock-units) | `uzule` | `buzulem g+300` | `uzulel` *ice* | I |
-| [mole](/numbers-applied#stock-units) | `omowe` | `bomowem g+1` | `omowel` *microscope* | I |
-| [candela](/numbers-applied#stock-units) | `owe` | `bowem g+100` | `owel` *lightbulb* | I |
-| [hour](/numbers-applied#stock-units) | `agoru` | `bagorum g+3` | `agorul` *hourglass* | I |
-| [day](/numbers-applied#stock-units) | `azuro` | `bazurom g+2` | `azurol` *sunrise* | I |
-| [week](/numbers-applied#stock-units) | `agoro` | `bagorom g+1` | `agorol` *calendar* | I |
-| [month](/numbers-applied#stock-units) | `amalo` | `bamalom g+6` | `amalol` *moon* | I |
-| [year](/numbers-applied#stock-units) | `ovuva` | `bovuvam g+10` | `ovuval` *fireworks* | I |
-| [inch](/numbers-applied#stock-units) | `ebuvu` | `bebuvum g+3` | `ebuvul` *pinch* | I |
-| [foot](/numbers-applied#stock-units) | `evobo` | `bevobom g+6` | `evobol` *foot* | I |
-| [mile](/numbers-applied#stock-units) | `unoba` | `bunobam g+2` | `unobal` *boot* | I |
-| [pound](/numbers-applied#stock-units) | `awoba` | `bawobam g+5` | `awobal` *shopping-bag* | I |
-| [heat grade (not kelvin)](/numbers-applied#stock-units) | `overo` | `boverom g+37` | `overol` *thermometer* | I |
+| [meter](/measures-and-percent#stock-units) | `ezero` | `bezerom g+2` | `ezerol` *set-square* | I |
+| [gram](/measures-and-percent#stock-units) | `ubere` | `buberem g+5` | `uberel` *pound* (banknote) | I |
+| [second](/measures-and-percent#stock-units) | `azero` | `bazerom g+3` | `azerol` *stopwatch* | I |
+| [minute](/measures-and-percent#stock-units) | `umuro` | `bumurom g+5` | `umurol` *three-o'clock* | I |
+| [liter](/measures-and-percent#stock-units) | `ubuna` | `bubunam g+1` | `ubunal` *pool* | I |
+| [ampere](/measures-and-percent#stock-units) | `ogava` | `bogavam g+2` | `ogaval` *cable-car* | I |
+| [kelvin](/measures-and-percent#stock-units) | `uzule` | `buzulem g+300` | `uzulel` *ice* | I |
+| [mole](/measures-and-percent#stock-units) | `omowe` | `bomowem g+1` | `omowel` *microscope* | I |
+| [candela](/measures-and-percent#stock-units) | `owe` | `bowem g+100` | `owel` *lightbulb* | I |
+| [hour](/measures-and-percent#stock-units) | `agoru` | `bagorum g+3` | `agorul` *hourglass* | I |
+| [day](/measures-and-percent#stock-units) | `azuro` | `bazurom g+2` | `azurol` *sunrise* | I |
+| [week](/measures-and-percent#stock-units) | `agoro` | `bagorom g+1` | `agorol` *calendar* | I |
+| [month](/measures-and-percent#stock-units) | `amalo` | `bamalom g+6` | `amalol` *moon* | I |
+| [year](/measures-and-percent#stock-units) | `ovuva` | `bovuvam g+10` | `ovuval` *fireworks* | I |
+| [inch](/measures-and-percent#stock-units) | `ebuvu` | `bebuvum g+3` | `ebuvul` *pinch* | I |
+| [foot](/measures-and-percent#stock-units) | `evobo` | `bevobom g+6` | `evobol` *foot* | I |
+| [mile](/measures-and-percent#stock-units) | `unoba` | `bunobam g+2` | `unobal` *boot* | I |
+| [pound](/measures-and-percent#stock-units) | `awoba` | `bawobam g+5` | `awobal` *shopping-bag* | I |
+| [heat grade (not kelvin)](/measures-and-percent#stock-units) | `overo` | `boverom g+37` | `overol` *thermometer* | I |
 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`bezerom g+2`](/numbers-applied#measure-phrases) | extra noun (`/b/`) | *two meters* | I |
-| [`zazerom g+3`; `duberem g+5`](/numbers-applied#measure-phrases) | subject / object / … | *three seconds*; *five grams* | I |
-| [`gezerom g+2`](/numbers-applied#measure-phrases) after a noun | modifier on a noun | rare | I |
+| [`bezerom g+2`](/measures-and-percent#measure-phrases) | extra noun (`/b/`) | *two meters* | I |
+| [`zazerom g+3`; `duberem g+5`](/measures-and-percent#measure-phrases) | subject / object / … | *three seconds*; *five grams* | I |
+| [`gezerom g+2`](/measures-and-percent#measure-phrases) after a noun | modifier on a noun | rare | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Two meters](/numbers-applied#measure-phrases) | `zazozon bezerom gradol vowurol.` | *Azozon walks two meters.* | I |
-| [A price](/numbers-applied#measure-phrases): after `heham` | `bagorum g+3` | *for three hours* | I |
+| [Two meters](/measures-and-percent#measure-phrases) | `zazozon bezerom gradol vowurol.` | *Azozon walks two meters.* | I |
+| [A price](/measures-and-percent#measure-phrases): after `heham` | `bagorum g+3` | *for three hours* | I |
 
 Quantities themselves (*heavy*, *duration*) are ordinary roots, not units.
 
@@ -291,21 +291,21 @@ Quantities themselves (*heavy*, *duration*) are ordinary roots, not units.
 
 ### Ranges {#ranges}
 
-Write both ends with a [range hook](/ordered-ranges#ranges): `A oel B`. `uel` leaves out the end said second. Both ends are the same kind of number (amounts, ordinals, or labels).
+Write both ends with a [range hook](/ranges#ranges): `A oel B`. `uel` leaves out the end said second. Both ends are the same kind of number (amounts, ordinals, or labels).
 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`zragel oel zrazal`](/ordered-ranges#number-ranges) | both ends in | *3 to 5* | I |
-| [`zragel uel zrazal`](/ordered-ranges#number-ranges) | 5 left out | *3 up to but not including 5* | I |
-| [`zrazal uel zragel`](/ordered-ranges#number-ranges) | 3 left out | *more than 3, up to 5* | I |
-| [`zragel oem zrazal`](/ordered-ranges#number-ranges) | soft ends | *roughly 3 to 5* | I |
-| [`zragel uem zrazal`](/ordered-ranges#number-ranges) | soft exclusion | *3 up to about 5, not quite 5* | I |
+| [`zragel oel zrazal`](/ranges#number-ranges) | both ends in | *3 to 5* | I |
+| [`zragel uel zrazal`](/ranges#number-ranges) | 5 left out | *3 up to but not including 5* | I |
+| [`zrazal uel zragel`](/ranges#number-ranges) | 3 left out | *more than 3, up to 5* | I |
+| [`zragel oem zrazal`](/ranges#number-ranges) | soft ends | *roughly 3 to 5* | I |
+| [`zragel uem zrazal`](/ranges#number-ranges) | soft exclusion | *3 up to about 5, not quite 5* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [3 to 5](/ordered-ranges#number-ranges) | `zragel oel zrazal.` | *From 3 to 5.* (both ends included) | I |
-| [Of a noun](/ordered-ranges#number-ranges) | `zodozel gragel oel grazal vowurol.` | *Three to five dogs walk.* | I |
+| [3 to 5](/ranges#number-ranges) | `zragel oel zrazal.` | *From 3 to 5.* (both ends included) | I |
+| [Of a noun](/ranges#number-ranges) | `zodozel gragel oel grazal vowurol.` | *Three to five dogs walk.* | I |
 
 To limit to one end, make the other end infinity:
 
@@ -336,16 +336,16 @@ End a count with **`yo`** for a percent, **`yu`** for percentage points. A minus
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`yo`**](/numbers-applied#percent-and-percentage-points) | percent of a whole | `25` in `25%`; those digits ÷ 100 | I |
-| [**`yu`**](/numbers-applied#percent-and-percentage-points) | percentage points | `2` in `+2%*`; those digits ÷ 100 | I |
+| [**`yo`**](/measures-and-percent#percent-and-percentage-points) | percent of a whole | `25` in `25%`; those digits ÷ 100 | I |
+| [**`yu`**](/measures-and-percent#percent-and-percentage-points) | percentage points | `2` in `+2%*`; those digits ÷ 100 | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [A percent](/numbers-applied#percent-and-percentage-points) | `zogozelx g+25%.` | *25% of the cats.* | I |
-| [Half of](/numbers-applied#fractions) | `zogozelx grudol vehohel.` | *Half of the cats sit.* | I |
-| [A third of](/numbers-applied#fractions) | `zedudal grugel vehohel.` | *A third of the tea sits there.* | I |
-| [Two thirds](/numbers-applied#fractions): the count, then the fraction | `zogozelx gradol grugel vehohel.` | *Two thirds of the cats sit.* | I |
-| [A third of an hour](/numbers-applied#fractions) | `zazozon vowurol bagorum grabal grugel.` | *Azozon walks for a third of an hour.* | I |
+| [A percent](/measures-and-percent#percent-and-percentage-points) | `zogozelx g+25%.` | *25% of the cats.* | I |
+| [Half of](/measures-and-percent#fractions) | `zogozelx grudol vehohel.` | *Half of the cats sit.* | I |
+| [A third of](/measures-and-percent#fractions) | `zedudal grugel vehohel.` | *A third of the tea sits there.* | I |
+| [Two thirds](/measures-and-percent#fractions): the count, then the fraction | `zogozelx gradol grugel vehohel.` | *Two thirds of the cats sit.* | I |
+| [A third of an hour](/measures-and-percent#fractions) | `zazozon vowurol bagorum grabal grugel.` | *Azozon walks for a third of an hour.* | I |
 
 After a measure unit a lone minus number is a negative amount (`bezerom grudol` *minus 2 meters*).
 
@@ -494,4 +494,4 @@ Only kin make generations: friends and bosses are [social relations](/social-tie
 | `xrodol` *point 2:* ([a numbered step](/number-roles#number-as-discourse-marker-by-marker)) | | `x#-2` *2nd from the end:* ([counting back](/stacked-markers#from-the-end)) |
 | `xrudol` *independent item 2:* ([a new line of support](/number-roles#number-as-discourse-marker-by-marker)) | | `x#-2` *2nd from the end:* ([counting back](/stacked-markers#from-the-end)) |
 | `th+70` *70% likely* ([a stance](/number-roles#number-as-stance-by-marker)) | | `thomam` *maybe* ([open, with no figure](/knowing#may)) |
-| `zragel oel zrazal` *3 to 5* ([a band](/ordered-ranges#number-ranges)) | | `zragel zrazal zaol` *3, then 5* ([two values in order](/ordered-ranges#number-ranges)) |
+| `zragel oel zrazal` *3 to 5* ([a band](/ranges#number-ranges)) | | `zragel zrazal zaol` *3, then 5* ([two values in order](/ranges#number-ranges)) |

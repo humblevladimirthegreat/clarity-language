@@ -170,7 +170,7 @@ export type LexReading =
   | "restrictor"
   /** Any closed overlay row that is not a join-series form, sake or ability; read `word.overlay.kind`. */
   | "overlay"
-  /** The mention marker: a `gl-` word right before a written span (span-mention.md#mention). */
+  /** The mention marker: a `gl-` word right before a written span (spans-as-words.md#mention). */
   | "mention"
   /** A same-role relation word: a listed citation between two phrases of one role, `A CITE B` (same-role-words.md). */
   | "sameRole"
@@ -244,7 +244,7 @@ export type LeftEdge = {
   vocativeAdjs?: TurnWordMods[];
   /** Reactions: `/y/` words in -l / -m (numbers included) and unnamed spans (`y<…>`). */
   interjections: LexWord[];
-  /** `gl-`, `/w/`, and `/ɡ/` words on each reaction, parallel to `interjections` (`yezul gelavam`, speech-acts.md#describe-turn-word); absent when none. */
+  /** `gl-`, `/w/`, and `/ɡ/` words on each reaction, parallel to `interjections` (`yezul gelavam`, more-turn-words.md#describe-turn-word); absent when none. */
   interjectionMods?: TurnWordMods[];
   polars: LexWord[];
   hook?: LexWord;
@@ -347,12 +347,12 @@ export type VpCoord = {
     /** Hosted `/b/` right after a label-reach `tho` verb (label-seams.md#label-reach). */
     hostedVerbs?: { verb: LexWord; hosted: Hosted }[];
     /**
-     * Words between two verbs of a joined list belong to the later verb's item (vp-clause-forms.md#vp-clause-forms):
+     * Words between two verbs of a joined list belong to the later verb's item (verb-and-stance-joins.md#vp-clause-forms):
      * `/h/` units and `/d/` `/b/` phrases, in spoken order before `verb`.
      */
     itemUnits?: { verb: LexWord; units: Unit[] }[];
     /**
-     * Words right after the list's last join that every verb shares (vp-clause-forms.md#vp-clause-forms): `/d/`
+     * Words right after the list's last join that every verb shares (verb-and-stance-joins.md#vp-clause-forms): `/d/`
      * and `/b/` phrases and `/h/` units, in spoken order after the join's own shared adverb.
      */
     sharedUnits?: Unit[];
@@ -393,7 +393,7 @@ export type Unit =
       onLeft?: true;
       /** `uom` + a `/th/` stance: the opposing zone the event goes contrary to (contrary-to.md#contrary-to-stance). */
       zone?: HUnit;
-      /** WANT, PLAN or DECISION after a holder zone: the holder's wish, plan or choice the event goes against (want.md#whose-intention). */
+      /** WANT, PLAN or DECISION after a holder zone: the holder's wish, plan or choice the event goes against (want-and-decide.md#whose-intention). */
       heldIntention?: LexWord;
       /** `oel` + `/b/` right after an `ul` extra noun: the end of one *from … to* unit (digit-strings.md#time). */
       fromTo?: true;
@@ -409,7 +409,7 @@ export type Clause = {
 };
 
 export type BodyClause = {
-  /** The mention marker before a topic span (`glelel x[udozo]`, span-mention.md#mention). */
+  /** The mention marker before a topic span (`glelel x[udozo]`, spans-as-words.md#mention). */
   topicMarker?: LexWord;
   linker?: LexWord;
   clause: Clause;

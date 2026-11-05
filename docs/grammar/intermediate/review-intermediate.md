@@ -144,7 +144,7 @@ z-Alazun | v-sit | h-west-th-Ahelan
 
 z-Azozon | [v-cook | v-fight | v-rank/more]
 
-**Rule:** [Verb-phrase and clause forms](vp-clause-forms.md#vp-clause-forms)
+**Rule:** [Verb-phrase and clause forms](verb-and-stance-joins.md#vp-clause-forms)
 :::
 
 **9.** *Ahelan sleeps about two hours.*
@@ -154,7 +154,7 @@ z-Azozon | [v-cook | v-fight | v-rank/more]
 
 z-Ahelan | [b-hour | g-two.about] | v-sleep
 
-**Rule:** [Measure phrases](numbers-applied.md#measure-phrases)
+**Rule:** [Measure phrases](measures-and-percent.md#measure-phrases)
 :::
 
 **10.** *I gather Ahelan thinks Alazun sings.*
@@ -184,7 +184,7 @@ x-Alazun | z-TOPIC | v-sit
 
 z-Alazun | h-RESIDUE | v-fight
 
-**Rule:** [Residue and former climate](notional-standing.md#residue-and-former-climate)
+**Rule:** [Residue and former climate](residue-and-former.md#residue-and-former-climate)
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
@@ -216,7 +216,7 @@ z-Ahelan | [gl-MENTION | d-CITE[Azozon]] | v-write
 
 *Ahelan writes the word “azozon.”*
 
-**Rule:** [Mention](span-mention.md#mention)
+**Rule:** [Mention](spans-as-words.md#mention)
 :::
 
 **4.** `zazozon danewulx gragel vayebel. zahelan dugedelx grager vayebel.`
@@ -274,7 +274,7 @@ z-Alazun | [h-like | [bl-guard | g-angry]] | v-walk
 
 After the `/b/` of a host, a plain adjective describes that extra noun; right after `zalazun`, *angry* describes Alazun.
 
-**Rule:** [Complex chaining](left-bound.md#complex-chaining)
+**Rule:** [Complex chaining](longer-chains.md#complex-chaining)
 :::
 
 **3.** *Alazun sees a sandwich!* (strong feeling about the whole sentence) `! zalazun dedal vayebel.` or `yol zalazun dedal vayebel.`
@@ -322,7 +322,7 @@ z-Azozon | through | z-Ahelan | v-sit
 
 **`oel`** names the range; **`zal`** is only the two ends.
 
-**Rule:** [Ranges](ordered-ranges.md#ranges)
+**Rule:** [Ranges](ranges.md#ranges)
 :::
 
 **7.** *Ahelan kneels, and to me it is about feeling connected.* `zahelan vanuvel thawethom.` or `zahelan vanuvel thawethem.`
@@ -334,7 +334,7 @@ z-Ahelan | v-kneel | th-relatedness-motive-any-term
 
 **`tho`** gives your reason; **`the`** would say Ahelan *ought* to kneel.
 
-**Rule:** [Motive](prescription.md#sake-preference)
+**Rule:** [Motive](for-a-sake.md#sake-preference)
 :::
 
 **8.** *It looks like Alazun fought.* (strong clues) `zalazun theyol vuvuvul.` or `zalazun theyom vuvuvul.`
@@ -418,7 +418,7 @@ y-prohibition | y-prohibition | v-fight
 
 Repeating the act word insists on that act; repeating **`yol`** would insist on a command.
 
-**Rule:** [Doubling an act word](speech-acts.md#doubled-act)
+**Rule:** [Doubling an act word](more-turn-words.md#doubled-act)
 :::
 
 **15.** *every cookie* `zual gugedel.` or `zugedel zual.`
@@ -442,7 +442,7 @@ z-Azozon | v-walk | [th-because | bl-night] | th-not
 
 The `/th/` join denies the ground; **`vul`** after the verb would deny the walking.
 
-**Rule:** [Stance joins](vp-clause-forms.md#stance-joins)
+**Rule:** [Stance joins](verb-and-stance-joins.md#stance-joins)
 :::
 
 **17.** *Hopefully Azozon walks.* `zazozon thuwuyom vowurol.` or `zazozon huwuyom vowurol.`
@@ -490,7 +490,7 @@ z-Azozon | th-WANT-lasting | v-walk
 
 **-l** keeps coming back; **-m** leaves duration unstated.
 
-**Rule:** [Want](want.md#want)
+**Rule:** [Want](want-and-decide.md#want)
 :::
 
 **21.** *Azozon saw what was possibly a sandwich.* `zazozon { hogugem dedal } vayebel.` or `zazozon hogugem dedal vayebel.`
@@ -670,7 +670,7 @@ th-revelation | z-Azozon | v-cook
 
 **`zoel`** reaches what the sake needs; **`zol`** goes past it (*too many*).
 
-**Rule:** [Enough and too](sake-bars.md#sake-bars)
+**Rule:** [Enough and too](bars.md#sake-bars)
 :::
 
 #### What changes {#intermediate-what-changes}
@@ -696,5 +696,5 @@ z-speaker | th-DECISION-temporary | v-pay
 
 With **`thogel`**, I have decided for good to pay. With **`thoger`**, I have decided to pay only for now.
 
-**Rule:** [Decision (revisability)](want.md#decision)
+**Rule:** [Decision (revisability)](want-and-decide.md#decision)
 :::

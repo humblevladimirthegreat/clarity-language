@@ -33,7 +33,7 @@ Only the item just before the join word takes a hook this way. A hook anywhere e
 >
 > "Azozon's dog and cat." (and possibly more)
 
-A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaining](left-bound.md#complex-chaining).
+A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaining](longer-chains.md#complex-chaining).
 
 > `zodozel zogozel zam gegunum blazozon guzemel.`
 >
@@ -110,7 +110,7 @@ Inside such a list, a plain `/ɡ/` after an item's hosted `/b/` is the next item
 >
 > "Azozon is like the guard, and Alazun is sleepy." (respectively)
 
-With no closing `gal`, the row is not a list. The `/ɡ/` after a noun join is SHARED, and the plain `/ɡ/` after its `/b/` describes that `/b/` ([complex chaining](left-bound.md#complex-chaining)): `zazozon zalazun zal gewem blagayul guzemel.` is *both are like the sleepy guard*.
+With no closing `gal`, the row is not a list. The `/ɡ/` after a noun join is SHARED, and the plain `/ɡ/` after its `/b/` describes that `/b/` ([complex chaining](longer-chains.md#complex-chaining)): `zazozon zalazun zal gewem blagayul guzemel.` is *both are like the sleepy guard*.
 
 ### Fence nesting {#fence-nesting}
 

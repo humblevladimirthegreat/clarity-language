@@ -8,7 +8,7 @@ band: advanced
 <a id="worse-than"></a>
 <a id="best-effort"></a>
 
-Intermediate ranked against a plan, and [sake bars](/sake-bars#sake-bars) rank against what a sake needs. Any stance that **sets a value** can be the [bar](/sake-bars#bars), and each keeps its own endings and meaning. A channel word (how you know something: you saw it, remember it, were told it, worked it out) sets **the level that source led you to expect**. So *than usual*, *than I remember*, and *than advertised* each put one channel word in the bar slot.
+Intermediate ranked against a plan, and [sake bars](/bars#sake-bars) rank against what a sake needs. Any stance that **sets a value** can be the [bar](/bars#bars), and each keeps its own endings and meaning. A channel word (how you know something: you saw it, remember it, were told it, worked it out) sets **the level that source led you to expect**. So *than usual*, *than I remember*, and *than advertised* each put one channel word in the bar slot.
 
 > `zazozon thubom zol guzemel.`
 >
@@ -25,7 +25,7 @@ Intermediate ranked against a plan, and [sake bars](/sake-bars#sake-bars) rank a
 <!-- cheat-sheet: comparing -->
 | Bar | Ranks against | English |
 |-----|---------------|---------|
-| met sake `thudatham`, `thobatham`, … ([sake bars](/sake-bars#sake-bars)) | what that sake needs | *enough* / *too much* / *not enough* |
+| met sake `thudatham`, `thobatham`, … ([sake bars](/bars#sake-bars)) | what that sake needs | *enough* / *too much* / *not enough* |
 | LIVE `thugem` | how it looks | *than it looks* |
 | MEMORY `thevum` | how you remember it | *than I remember* / *than last time* |
 | PATTERN `thubom` | the trail of cases | *than usual* / *normal* |
@@ -90,7 +90,7 @@ The bar's `/b/` works as it does on the clause. On REPORTED it is the source, an
 
 On a rank join, an event root on `/ɡ/` is the scale itself: how well the act goes (*sings well*), not an act [in progress](/predication#in-progress).
 
-An adjective after that `/b/` describes it, as after any [host](/left-bound#complex-chaining), so it narrows the population.
+An adjective after that `/b/` describes it, as after any [host](/longer-chains#complex-chaining), so it narrows the population.
 
 > `zazozon thubom blwozeluyolx guzemel zol gozuyel.`
 >
@@ -152,7 +152,7 @@ A CLUES or PATTERN bar can also take [`blarl`](/evidentiality#evidence-clause): 
 >
 > "The book is even less clear than I feared."
 
-Only these stances set a value. A [cause or condition hinge](/causation), [MAY](/knowing#may), [MIRATIVE](/mirative#mirative), [DECISION](/want#decision), and [ATTEMPT](/ability#try) do not, so none of them is a bar. A want sets the level wanted; a decision or an attempt commits to an act and sets no level, so *more than decided* is the [plan](/intention#plan-predict) bar.
+Only these stances set a value. A [cause or condition hinge](/causation), [MAY](/knowing#may), [MIRATIVE](/mirative#mirative), [DECISION](/want-and-decide#decision), and [ATTEMPT](/try#try) do not, so none of them is a bar. A want sets the level wanted; a decision or an attempt commits to an act and sets no level, so *more than decided* is the [plan](/intention#plan-predict) bar.
 
 ### Practice {#advanced-practice}
 

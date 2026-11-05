@@ -68,7 +68,7 @@ To ask for B, put the word and the [fill-ask](/questions#fill-ask) blank first, 
 
 When the blank is A, it already comes first, and nothing moves: `yel zar abam zazozon vowurol.` asks *Who walks ahead of Azozon?*
 
-**Compare with:** a [route join](/rank-joins#route-ao) and an [ordered range](/ordered-ranges#ranges) also put members in order. `zazozon zahelan zaol` lists every member in order (*Azozon, then Ahelan*). `zazozon aol zahelan` walks from one end to the other, taking in everyone between. `zazozon abam zahelan` relates just the two, with Ahelan as the background.
+**Compare with:** a [route join](/rank-joins#route-ao) and an [ordered range](/ranges#ranges) also put members in order. `zazozon zahelan zaol` lists every member in order (*Azozon, then Ahelan*). `zazozon aol zahelan` walks from one end to the other, taking in everyone between. `zazozon abam zahelan` relates just the two, with Ahelan as the background.
 
 **Compare with:** [the landmark's own front](/viewpoint#landmark-facing) places A against something that stays put: `gazuhothel blohehal` *behind the house*. Use `alam` for behind someone who is moving too.
 

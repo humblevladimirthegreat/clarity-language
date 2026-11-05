@@ -69,8 +69,8 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `garum` | UNTIL clause hinge (endpoint bound) | [Time hinges on a noun](/more-hinges#time-hinge-on-noun) | I |
 | `gebem` | ONLY-IF clause hinge (necessary condition) | [Only if](/causation#only-if) | B |
 | `gedam` | locative between (two landmarks) | [Locative relations](/locative-relations#locative-relations) | I |
-| `gegol` | mention marker (the span is a word or phrase as spelling) | [Mention](/span-mention#mention) | I |
-| `gegon` | name-string mention marker (the span is a name as spelling) | [Mention](/span-mention#mention) | I |
+| `gegol` | mention marker (the span is a word or phrase as spelling) | [Mention](/spans-as-words#mention) | I |
+| `gegon` | name-string mention marker (the span is a name as spelling) | [Mention](/spans-as-words#mention) | I |
 | `geham` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](/relations#exchange) | B |
 | `gehom` | IFF clause hinge (biconditional) | [Because, iff, and only because](/iff-fault#only-because) | I |
 | `gen` | join-relation exclusive for (sole pick adjective) | [Join-relations](/join-relations#join-relations) | I |
@@ -124,7 +124,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `han` | join-relation with or including (adverb + argument) | [Join-relations](/join-relations#join-relations) | I |
 | `hanem` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](/relations#proxy) | B |
 | `haon` | join-relation starting with (adverb) | [Join-relations](/join-relations#join-relations) | I |
-| `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](/notional-standing#residue-and-former-climate) | I |
+| `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](/residue-and-former#residue-and-former-climate) | I |
 | `harum` | UNTIL clause hinge (endpoint bound) | [Because, if, although (hinges)](/dependents#hinges) | B |
 | `havel` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `havem` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
@@ -134,7 +134,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `hawur` | phasal still (the state continues); -r for now: about to end | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `hedam` | locative between (two landmarks) | [Locative relations](/locative-relations#locative-relations) | I |
 | `heham` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](/relations#exchange) | B |
-| `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](/notional-standing#residue-and-former-climate) | I |
+| `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](/residue-and-former#residue-and-former-climate) | I |
 | `helol` | NOT-YET phasal (the change is expected but has not happened); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `helom` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 <!-- /generated -->
@@ -160,9 +160,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `hoen` | join-relation equating or tying (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `hohom` | locative across (edge to far edge of one landmark) | [Locative relations](/locative-relations#locative-relations) | I |
 | `hon` | join-relation prioritizing (adverb) | [Join-relations](/join-relations#join-relations) | I |
-| `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](/ability#try) | I |
-| `howam` | attempt mood (commitment unstated) | [Try](/ability#try) | I |
-| `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](/ability#try) | I |
+| `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](/try#try) | I |
+| `howam` | attempt mood (commitment unstated) | [Try](/try#try) | I |
+| `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](/try#try) | I |
 | `huan` | join-relation excluding (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `huen` | join-relation barring anything but (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `hulom` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
@@ -201,9 +201,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `thahul` | BECAUSE clause hinge with fault (the reason broke a norm) | [Fault](/fault#fault) | B |
 | `thahum` | BECAUSE clause hinge (explanatory reason) | [Because, if, although (hinges)](/dependents#hinges) | B |
 | `thahur` | BECAUSE clause hinge with a share (the reason contributed among others) | [Fault](/fault#fault) | B |
-| `thalol` | want mood lasting (a wish that keeps returning) | [Want](/want#want) | I |
-| `thalom` | want mood (duration unstated) | [Want](/want#want) | I |
-| `thalor` | want mood passing (a whim that fades) | [Want](/want#want) | I |
+| `thalol` | want mood lasting (a wish that keeps returning) | [Want](/want-and-decide#want) | I |
+| `thalom` | want mood (duration unstated) | [Want](/want-and-decide#want) | I |
+| `thalor` | want mood passing (a whim that fades) | [Want](/want-and-decide#want) | I |
 | `thanal` | deduced evidential with strong evidence (every step could be shown) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thanam` | deduced evidential (follows from the premises) | [Evidentiality](/evidentiality#evidentiality) | I |
 | `thanar` | deduced evidential with weak evidence (seems to follow; steps unchecked) | [Evidence strength](/evidentiality#evidence-strength) | I |
@@ -236,9 +236,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `theyul` | notional mood rehearsal follow-up (practicing a possible scene to prepare for action) | [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) | I |
 | `theyum` | notional mood default follow-up (imagining a scene without a further purpose) | [Notional (as-if framing)](/notional#notional-as-if-framing) | I |
 | `theyur` | notional mood suppose follow-up (toying with a possibility or assumption for now) | [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) | I |
-| `thogel` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](/want#decision-revisability) | I |
-| `thogem` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](/want#decision-revisability) | I |
-| `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/want#decision-revisability) | I |
+| `thogel` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
+| `thogem` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
+| `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
 | `thohem` | IF clause hinge (one-way conditional) | [Because, if, although (hinges)](/dependents#hinges) | B |
 | `thomal` | may mood find-out follow-up (I'll / let's find out) | [Follow-up endings (MAY)](/knowing#follow-up-endings-may) | B |
 | `thomam` | may mood (could be; default) | [MAY](/knowing#may) | B |

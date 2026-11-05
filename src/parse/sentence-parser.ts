@@ -232,7 +232,7 @@ function isHolderWord(token: IToken): boolean {
   return family?.kind === "x" && family.xFamily === "holder";
 }
 
-/** A `/th/` WANT, PLAN or DECISION word (want.md#whose-intention). */
+/** A `/th/` WANT, PLAN or DECISION word (want-and-decide.md#whose-intention). */
 function isIntentionStance(token: IToken): boolean {
   const word = token.payload as LexWord | undefined;
   const kind = word?.overlay?.kind;
@@ -403,7 +403,7 @@ class AgebenSentenceParser extends CstParser {
 
   /**
    * A call (or a greeting bid) or a reaction, with what describes it: a `gl-` adjective before it, `/w/` right before it,
-   * and plain `/ɡ/` words after it (`yohun galuden`, `glelavam yezul`, `welavam yezum`; speech-acts.md#describe-turn-word).
+   * and plain `/ɡ/` words after it (`yohun galuden`, `glelavam yezul`, `welavam yezum`; more-turn-words.md#describe-turn-word).
    */
   public turnWord = this.RULE("turnWord", () => {
     this.OPTION(() => this.SUBRULE(this.glPackageTurn, { LABEL: "glAdj" }));
@@ -445,7 +445,7 @@ class AgebenSentenceParser extends CstParser {
         other: {
           ALT: () => this.or(4, [{ ALT: () => this.consume(4, Polar) }, { ALT: () => glue(4) }]),
         },
-        // An act word, or two stacked act words (`yul yul`, `yel yol`): any pair; a third is a new turn (speech-acts.md#stacked-acts).
+        // An act word, or two stacked act words (`yul yul`, `yel yol`): any pair; a third is a new turn (more-turn-words.md#stacked-acts).
         force: {
           ALT: () => {
             this.option(5, () => this.consume(5, Force, { LABEL: "LeadForce" }));
@@ -494,7 +494,7 @@ class AgebenSentenceParser extends CstParser {
       this.OR([
         {
           ALT: () => {
-            // A mention marker before a topic span (`glelel x[udozo] …`, span-mention.md#mention).
+            // A mention marker before a topic span (`glelel x[udozo] …`, spans-as-words.md#mention).
             this.OPTION4(() => this.CONSUME(GGlBefore.Linker, { LABEL: "topicMarker" }));
             this.CONSUME(Linker);
             // A topic word, or a marked topic span, may be the whole sentence (`xazawan.`, `glelel x[udozo].`; topic.md#topic).
@@ -787,7 +787,7 @@ class AgebenSentenceParser extends CstParser {
   /**
    * One slot's rules. A list is one or more parts, each closed by its join; it ends as its last part does (see the
    * `unit` rules), and in a `Grounds` list the last part's bar hosts `barl`, so the main clause ends with the list and the
-   * next sentence is the grounds (sake-bars.md#bars). The parts after the first come as a right-recursive rest
+   * next sentence is the grounds (bars.md#bars). The parts after the first come as a right-recursive rest
    * (read back by `npPartNodes`), so a part's end is known before deciding whether more follow:
    * - After a part a group tag closes (`Tagged`), the next part may open with a new tag (`zwal zodogal zam`); after any
    *   other part it may not: a tag right after a join names the whole list (tag-pronouns.md#tag-pronouns).
@@ -873,7 +873,7 @@ class AgebenSentenceParser extends CstParser {
           this.consume(k, B, { LABEL: "itemHookBound" });
         });
         // A stance word before a rank join is the comparee: the bar (comparatives.md § bars). A CLUES or PATTERN bar
-        // may host `barl`: the next sentence is the grounds (sake-bars.md#bars).
+        // may host `barl`: the next sentence is the grounds (bars.md#bars).
         if (grounds) this.subrule(k, this.barsGrounds, { LABEL: "bar" });
         else this.many(k + 1, () => this.subrule(k, this.barUnit, { LABEL: "bar" }));
         ending(k, "npJoinClose");
@@ -948,7 +948,7 @@ class AgebenSentenceParser extends CstParser {
   /**
    * A verb list: parts, each closed by its `/v/` join. An item is a verb and the `/h/`, `/d/` and `/b/` words before it,
    * so an item ends at its verb; the first item is a bare verb, since words before every verb are the clause's own and
-   * cover every item (vp-clause-forms.md#vp-clause-forms). A verb or join marked `…More` has another verb after its
+   * cover every item (verb-and-stance-joins.md#vp-clause-forms). A verb or join marked `…More` has another verb after its
    * item words ({@link VPlainMore}), so the list goes on past it; one marked `…End` ends its part, or the list.
    *
    * The parts after the first come as a right-recursive tail (read back by `vpPartNodes`): after a join that another
@@ -1244,7 +1244,7 @@ class AgebenSentenceParser extends CstParser {
           this.AT_LEAST_ONE(() => this.SUBRULE(this.hUnitRule));
           this.SUBRULE2(this.hJoinClose);
           // `thugum thoyem thul barl …`: a stance join may sit between the last open host and its `barl`,
-          // so it closes the stance words while the next sentence still fills the host (vp-clause-forms.md#stance-join-before-barl).
+          // so it closes the stance words while the next sentence still fills the host (verb-and-stance-joins.md#stance-join-before-barl).
           this.OPTION2(() => this.CONSUME(LateOdo, { LABEL: "lateBound" }));
         },
       },
@@ -1356,7 +1356,7 @@ class AgebenSentenceParser extends CstParser {
     });
   }
 
-  /** A CLUES or PATTERN bar hosting `barl`: the next sentence is the grounds (sake-bars.md#bars). */
+  /** A CLUES or PATTERN bar hosting `barl`: the next sentence is the grounds (bars.md#bars). */
   public barStandIn = this.RULE("barStandIn", () => {
     this.MANY(() => {
       this.CONSUME(WBefore.Bar, { LABEL: "W" });
@@ -1430,7 +1430,7 @@ class AgebenSentenceParser extends CstParser {
 
   /**
    * Plain adjectives after a word, each describing it (clause.md#adjectives-ɡ). Only the last may end open (its hosted
-   * `/b/` takes the adjectives after it, left-bound.md#complex-chaining), so the run itself always ends open.
+   * `/b/` takes the adjectives after it, longer-chains.md#complex-chaining), so the run itself always ends open.
    */
   private trailingAdjs(k: number): void {
     this.option(k + 1, () => this.subrule(k, this.trailingAdjRun, { LABEL: "gPackage" }));
@@ -1977,7 +1977,7 @@ function hListTypeAt(tokens: IToken[], at: number): TokenType | undefined {
   if (token.tokenType !== HPlain && token.tokenType !== HTh) return undefined;
   let next = at;
   while (true) {
-    // A noun `/b/` takes the plain adjectives after it, each with its own hosted `/b/` (left-bound.md#complex-chaining).
+    // A noun `/b/` takes the plain adjectives after it, each with its own hosted `/b/` (longer-chains.md#complex-chaining).
     const landmark = tokens[next + 1]?.tokenType === HostedBNoun;
     next = skipHosted(tokens, next + 1);
     if (landmark) {
@@ -2190,7 +2190,7 @@ function hostedType(token: IToken, before: IToken[], after: IToken[]): TokenType
 }
 
 /**
- * The words a verb list's item may hold before its verb (vp-clause-forms.md#vp-clause-forms): its `/d/`, `/b/` and
+ * The words a verb list's item may hold before its verb (verb-and-stance-joins.md#vp-clause-forms): its `/d/`, `/b/` and
  * `/h/` phrases and lists, with what describes them. A shared adverb after a `/v/` join is crossed too. A stand-in is
  * not: it ends the main clause, so a verb after it starts the next sentence (dependents.md#dependent-clauses).
  */
@@ -2236,7 +2236,7 @@ function joinClosesAhead(after: IToken[]): boolean {
 
 /**
  * `blarl` that fills a `/th/` host from further right: after a stance join that closes a hinge with no `/b/` yet
- * (vp-clause-forms.md#stance-join-before-barl), or after a channel's offset (evidentiality.md#evidence-clause).
+ * (verb-and-stance-joins.md#stance-join-before-barl), or after a channel's offset (evidentiality.md#evidence-clause).
  */
 function isLateOdoAt(before: IToken[]): boolean {
   let i = before.length - 1;

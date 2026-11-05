@@ -109,7 +109,7 @@ Source: [restrictors.md](/restrictors)
 
 ## Joins
 
-Source: [joins.md](/joins), [vp-clause-forms.md](/vp-clause-forms#stance-joins)
+Source: [joins.md](/joins), [verb-and-stance-joins.md](/verb-and-stance-joins#stance-joins)
 
 - **open:** **`/th/`…-n**. Join-relations frame a noun or an event, and a stance is neither, so no reading composes.
 - **open:** stacked **-r** outside a question on `/th/` (`thaer` … `thuor` are fill-asks only), and on `/z/` `/d/` `/b/` `/v/` `/x/` `/ɡ/` joins (`zuar`, `vaer`, `xuar`, `gaer`). No statement wants a stacked blank, and no question has asked for one on these joins. Parser: `stackedJoinResume`.
@@ -121,7 +121,7 @@ Source: [joins.md](/joins), [vp-clause-forms.md](/vp-clause-forms#stance-joins)
 
 ## Comparison bars
 
-Source: [sake-bars.md](/sake-bars#bars)
+Source: [bars.md](/bars#bars)
 
 - **open:** a stance that sets no value as a bar: clause hinges, MAY, MIRATIVE, DECISION, ATTEMPT, RESIDUE, CAUSE, and a say word's no or *their call* (`hwuvul`, `hwudum`, `hwuvem`). None sets a level to rank against: a decision or an attempt commits to an act, a ban or a refusal only says no, and *their call* sets nothing. *Than decided* is PLAN. Parser: `barKind`.
 - **open:** a second comparee next to a bar (`barCount`). A bar fence ranks one item against one bar, so a second item has nothing to rank against.
@@ -135,7 +135,7 @@ Source: [relations.md](/relations)
 
 ## Hooks — in-clause
 
-Source: [hooks.md](/ordered-ranges#ranges), [sakes.md](/contrary-to#contrary-to-stance)
+Source: [hooks.md](/ranges#ranges), [sakes.md](/contrary-to#contrary-to-stance)
 
 - **open:** same-role **`ael`** (and **`aem`** / **`aen`** / **`aer`**) between two words. The candidates (*throughout*, *next to*, *wrapping*, *midway*, *for example*, *namely*) have no guessable cue, and *somewhere between* is already `oer` / `uor`. The parser rejects it (`hookSameRoleStack`); extra-noun and discourse uses are unaffected.
 - **open:** a range of landmarks (*walk in rooms 3 through 5*). A hook right after a landmark is an extra noun on it, so `al bX oel bY` is *in X toward Y*. For *from X to Y* use `ul bX oel bY`; otherwise state the range in its own role. A scope island cannot help: a hook is never a binder.
@@ -253,7 +253,7 @@ Source: [predication.md](/predication)
 
 ## Closed-root endings
 
-Source: [causation.md](/iff-fault#hinges), [relations.md](/relations), [dependents.md](/dependents#dependent-clauses), [knowing.md](/notional-standing#residue)
+Source: [causation.md](/iff-fault#hinges), [relations.md](/relations), [dependents.md](/dependents#dependent-clauses), [knowing.md](/residue-and-former#residue)
 
 An **-r** grade on a closed root without its own **-r** would take away the live whole-stem resume ([design-decisions § Closed-root endings](design-decisions.md#closed-root-endings)). **-l** has two competing guesses (strongest, as on *exactly like* `hewel`, or broke a norm, as on *because*), so a family where neither fits has no guessable **-l**.
 
@@ -284,10 +284,10 @@ Source: [dependents.md](/sentence-linkers#sentence-linkers)
 
 ## Turn words (`/y/`)
 
-Source: [speech-moves.md](/firm-soft#speech-act), [stacked act words](/speech-acts#stacked-acts), [describing a call or reaction](/speech-acts#describe-turn-word), [questions.md](/polar-inventory#polar-endings)
+Source: [speech-moves.md](/firm-soft#speech-act), [stacked act words](/more-turn-words#stacked-acts), [describing a call or reaction](/more-turn-words#describe-turn-word), [questions.md](/polar-inventory#polar-endings)
 
 - **closed (closed-root endings):** act and polar series with **-n** (`yan` / `yen` / `yon` / `yun`, `yaon` / …). On `/y/`, **-n** calls someone. Parser: `turnSeriesCall`.
-- **closed (D-59):** a third opening act word (`yul yul yul`), and anything between two [stacked act words](/speech-acts#stacked-acts) (`yel al yol`).
+- **closed (D-59):** a third opening act word (`yul yul yul`), and anything between two [stacked act words](/more-turn-words#stacked-acts) (`yel al yol`).
 - **closed (closed-root endings):** a fill-ask blank for the act itself (*are you asking or telling?*). `yar` / `yer` / `yor` / `yur` are the [for-now acts](/firm-soft#act-r).
 - **closed (D-31):** a polar word before an act word, or two polar words in a row; a topic-only question.
 - **open:** a check-back with a body after it (`yol yael zazozon vowurol.`). The check-back asks about the sentence before it and is a turn of its own; a body after it would be a second move in the same turn, and no question has asked for one. Parser: `checkBackBody`.

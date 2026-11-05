@@ -56,14 +56,14 @@ describe("sentence-parser synthetic", () => {
     assert.equal(parseSentenceTokens(tokens("yel. zazozon vowurol.")).utterances[0]!.bodies[0]!.punct, "period");
   });
 
-  it("reads a /w/ + hook after a period as discourse glue, as at the start (ending-grids.md#hook-w)", () => {
+  it("reads a /w/ + hook after a period as discourse glue, as at the start (in-clause-hooks.md#hook-w)", () => {
     const result = parseSentenceTokens(tokens("zazozon vowurol. wewom al zalazun vezuvel."));
     assert.equal(result.utterances.length, 2);
     assert.equal(result.utterances[1]!.left.hook?.raw, "al");
     assert.equal(result.utterances[1]!.left.hookModifiers?.[0]?.raw, "wewom");
   });
 
-  it("parses two stacked act words, outer first (speech-acts.md#stacked-acts)", () => {
+  it("parses two stacked act words, outer first (more-turn-words.md#stacked-acts)", () => {
     const left = parseSentenceTokens(tokens("yal yel zar vegemal.")).utterances[0]!.left;
     assert.equal(left.leadForce?.raw, "yal");
     assert.equal(left.force?.raw, "yel");

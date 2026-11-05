@@ -78,7 +78,7 @@ A command (**`yol`**) or request (**`yom`**) is not a claim, so *true* and *fals
 
 After a flat command, `yaol` / `yuol` are the plain comply / refuse. After a request (**`yom`**), the **e** words fit better, because you are choosing whether to take it on.
 
-After [two stacked act words](speech-acts.md#stacked-acts), answer the first one, the act the speaker really does. A request that sounds like a question (`yol yel …`) takes **`yael`** / **`yuel`**, not a *yes* or *no* about whether you could.
+After [two stacked act words](more-turn-words.md#stacked-acts), answer the first one, the act the speaker really does. A request that sounds like a question (`yol yel …`) takes **`yael`** / **`yuel`**, not a *yes* or *no* about whether you could.
 
 > `yol vowurol zawan. yaol.`
 >
@@ -154,7 +154,7 @@ After a request or a suggestion, **`yel yael.`** asks *okay?*: will they take it
 
 Soft **`yem`** asks more gently (`yem yael.` *…, if that's okay?*), and the other polar words and endings make check-backs the same way.
 
-After [two stacked act words](speech-acts.md#stacked-acts), a check-back asks about the first one, the real act. So *okay?* after a command that sounds gentle shows that the gentle sound was only a surface:
+After [two stacked act words](more-turn-words.md#stacked-acts), a check-back asks about the first one, the real act. So *okay?* after a command that sounds gentle shows that the gentle sound was only a surface:
 
 > `yol yem vowurol zawan. yel yael.`
 >

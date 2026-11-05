@@ -104,7 +104,7 @@ describe("peelBand, middle band on a three-band page", () => {
     parentPage: "clause.md",
     parentMarkdown: md,
     band: "intermediate",
-    newPage: "left-bound.md",
+    newPage: "longer-chains.md",
     title: "Left-bound adjectives",
   });
 
@@ -113,9 +113,9 @@ describe("peelBand, middle band on a three-band page", () => {
     assert.match(result.parent, /## Beginner \{#beginner\}/);
     assert.match(result.parent, /## Advanced \{#advanced\}/);
     assert.doesNotMatch(result.parent, /## Intermediate/);
-    assert.deepEqual(result.hashRedirects, [{ page: "clause.md", hash: "intermediate", to: "left-bound.md" }]);
+    assert.deepEqual(result.hashRedirects, [{ page: "clause.md", hash: "intermediate", to: "longer-chains.md" }]);
     assert.equal(result.linkMap.get("clause.md#beginner"), undefined);
-    assert.equal(result.homeMap.get("clause.md#intermediate"), "left-bound.md#left-bound-adjectives");
+    assert.equal(result.homeMap.get("clause.md#intermediate"), "longer-chains.md#left-bound-adjectives");
   });
 });
 
@@ -185,7 +185,7 @@ describe("addAllowlistRow", () => {
 
 | Path | File | Band | Status | Setting | Introduces (test these) | Notes |
 |------|------|------|--------|---------|-------------------------|-------|
-| 5 | \`left-bound.md\` | Intermediate | **exists** | a waiting room | x | y |
+| 5 | \`longer-chains.md\` | Intermediate | **exists** | a waiting room | x | y |
 `;
 
   it("adds a generate row after the parent in the Beginner table", () => {
@@ -198,11 +198,11 @@ describe("addAllowlistRow", () => {
   it("adds a later-band row at the end of the later table when the parent is not there", () => {
     const out = addAllowlistRow(allowlist, { page: "new.md", parent: "clause.md", band: "advanced" }).split("\n");
     const i = out.findIndex((l) => l.includes("`new.md`"));
-    assert.ok(out[i - 1]!.includes("`left-bound.md`"));
+    assert.ok(out[i - 1]!.includes("`longer-chains.md`"));
     assert.match(out[i]!, /^\| — \| `new\.md` \| Advanced \| \*\*generate\*\* \| — \| — \|/);
   });
 
   it("leaves a page that already has a row", () => {
-    assert.equal(addAllowlistRow(allowlist, { page: "left-bound.md", parent: "clause.md", band: "intermediate" }), allowlist);
+    assert.equal(addAllowlistRow(allowlist, { page: "longer-chains.md", parent: "clause.md", band: "intermediate" }), allowlist);
   });
 });

@@ -254,7 +254,7 @@ describe("resolve — span and number anaphors", () => {
     assert.equal(resolveOf("zazozon oer zahelan vezuvel.").asks[0]?.kind, "none");
   });
 
-  it("asks by the outer of two stacked act words (speech-acts.md#stacked-acts)", () => {
+  it("asks by the outer of two stacked act words (more-turn-words.md#stacked-acts)", () => {
     assert.equal(resolveOf("yel yal zar vabuvul dubogal.").asks[0]?.kind, "fillAsk");
     assert.equal(resolveOf("yal yel zar vegemal.").asks[0]?.kind, "rhetorical");
     assert.equal(resolveOf("yol yel vabuvul dubogal zawan.").asks[0]?.kind, "rhetorical");
@@ -573,7 +573,7 @@ describe("resolve — fill answers (questions.md#fill-ask)", () => {
     assert.deepEqual(answersOf("yel dar zazozon varal. yal ragel."), []);
   });
 
-  it("ties a reply to a range blank: the ends' role, or a number (ordered-ranges.md, open-ranges.md#named-ranges)", () => {
+  it("ties a reply to a range blank: the ends' role, or a number (ranges.md, open-ranges.md#named-ranges)", () => {
     assert.deepEqual(answersOf("yel zazozon aor zahelan varuyol. yal alazun."), ["citation:aor"]);
     assert.deepEqual(answersOf("yel zazozon aor zahelan varuyol. yal zalazun."), ["sameRole:aor"]);
     assert.deepEqual(answersOf("yel zazozon aor zahelan varuyol. yal dalazun."), []);

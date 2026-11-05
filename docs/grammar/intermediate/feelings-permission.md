@@ -44,7 +44,7 @@ A direction names the **dominant** pull when feelings mix; use two feeling words
 
 Name the landmark with a `bl-` word right after the feeling (after **`goyom`** when the feeling is on `/w/`): the target of a direction, or the situation for CIRCUM. INTERNAL and UNPLACED take no `/b/`: they have no landmark. A direction with no `/b/` points at the stimulus noun when there is one, otherwise at someone unnamed.
 
-A feeling word with a direction tail already uses its `/b/` for the landmark, so it cannot also name [whose stake](prescription.md#whose-stake).
+A feeling word with a direction tail already uses its `/b/` for the landmark, so it cannot also name [whose stake](for-a-sake.md#whose-stake).
 
 > `zonal wawethumel goyom blalazun.`
 >

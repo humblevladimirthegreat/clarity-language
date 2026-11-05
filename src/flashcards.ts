@@ -65,7 +65,7 @@ export function deckId(name: string): number {
   return (1 << 30) + (createHash("sha256").update(`ageben-deck/${name}`).digest().readUInt32BE(0) % (1 << 30));
 }
 
-/** `speech-acts.md#intermediate-practice` → `ageben::core::speech-moves::intermediate`. */
+/** `more-turn-words.md#intermediate-practice` → `ageben::core::speech-moves::intermediate`. */
 function coreTag(cell: string, band: Band): string {
   return `ageben::core::${cell.split("#")[0]!.replace(/\.md$/, "")}::${band}`;
 }

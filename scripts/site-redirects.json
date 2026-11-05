@@ -27,17 +27,17 @@
     },
     {
       "from": "/grammar/join-extras.html",
-      "to": "/grammar/vp-clause-forms.html",
+      "to": "/grammar/verb-and-stance-joins.html",
       "note": "Public URL after renaming join-extras.md to join-across-roles.md."
     },
     {
       "from": "/grammar/join-derived-forms.html",
-      "to": "/grammar/vp-clause-forms.html",
+      "to": "/grammar/verb-and-stance-joins.html",
       "note": "Public URL after renaming join-derived-forms.md to join-across-roles.md."
     },
     {
       "from": "/grammar/join-across-roles.html",
-      "to": "/grammar/vp-clause-forms.html",
+      "to": "/grammar/verb-and-stance-joins.html",
       "note": "Public URL after merging join-across-roles.md into vp-clause-forms.md."
     },
     {
@@ -149,6 +149,66 @@
       "from": "/grammar/role-scope.html",
       "to": "/grammar/role-parts.html",
       "note": "Public URL after renaming role-scope.md to role-parts.md."
+    },
+    {
+      "from": "/grammar/ability.html",
+      "to": "/grammar/try.html",
+      "note": "Public URL after renaming ability.md to try.md."
+    },
+    {
+      "from": "/grammar/want.html",
+      "to": "/grammar/want-and-decide.html",
+      "note": "Public URL after renaming want.md to want-and-decide.md."
+    },
+    {
+      "from": "/grammar/left-bound.html",
+      "to": "/grammar/longer-chains.html",
+      "note": "Public URL after renaming left-bound.md to longer-chains.md."
+    },
+    {
+      "from": "/grammar/notional-standing.html",
+      "to": "/grammar/residue-and-former.html",
+      "note": "Public URL after renaming notional-standing.md to residue-and-former.md."
+    },
+    {
+      "from": "/grammar/ordered-ranges.html",
+      "to": "/grammar/ranges.html",
+      "note": "Public URL after renaming ordered-ranges.md to ranges.md."
+    },
+    {
+      "from": "/grammar/numbers-applied.html",
+      "to": "/grammar/measures-and-percent.html",
+      "note": "Public URL after renaming numbers-applied.md to measures-and-percent.md."
+    },
+    {
+      "from": "/grammar/span-mention.html",
+      "to": "/grammar/spans-as-words.html",
+      "note": "Public URL after renaming span-mention.md to spans-as-words.md."
+    },
+    {
+      "from": "/grammar/ending-grids.html",
+      "to": "/grammar/in-clause-hooks.html",
+      "note": "Public URL after renaming ending-grids.md to in-clause-hooks.md."
+    },
+    {
+      "from": "/grammar/speech-acts.html",
+      "to": "/grammar/more-turn-words.html",
+      "note": "Public URL after renaming speech-acts.md to more-turn-words.md."
+    },
+    {
+      "from": "/grammar/vp-clause-forms.html",
+      "to": "/grammar/verb-and-stance-joins.html",
+      "note": "Public URL after renaming vp-clause-forms.md to verb-and-stance-joins.md."
+    },
+    {
+      "from": "/grammar/sake-bars.html",
+      "to": "/grammar/bars.html",
+      "note": "Public URL after renaming sake-bars.md to bars.md."
+    },
+    {
+      "from": "/grammar/prescription.html",
+      "to": "/grammar/for-a-sake.html",
+      "note": "Public URL after renaming prescription.md to for-a-sake.md."
     }
   ]
 }

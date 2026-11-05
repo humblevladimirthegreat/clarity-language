@@ -86,7 +86,7 @@ describe("word order by speech act (speech-moves.md#act-word-order)", () => {
     );
   });
 
-  it("reads a joined verb with its own object or recipient as one verb slot (vp-clause-forms.md#vp-clause-forms)", () => {
+  it("reads a joined verb with its own object or recipient as one verb slot (verb-and-stance-joins.md#vp-clause-forms)", () => {
     assert.deepEqual(rules("zahelan vowuyal davogel erom vowurol."), []);
     assert.deepEqual(rules("zalazun vezuyol bahelan abam vowurol."), []);
     assert.deepEqual(rules("zazozon dabedal vugudol daledel vagedal val."), []);

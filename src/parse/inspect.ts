@@ -435,7 +435,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
       return { line: "closed mood", href: "intention.html" };
     }
     if (kind === "mirative" || kind === "residue" || kind === "former_climate" || kind === "notional" || kind === "phasal") {
-      return { line: "closed mood", href: "notional-standing.html" };
+      return { line: "closed mood", href: "residue-and-former.html" };
     }
     return { line: "closed mood", href: "knowing.html" };
   }

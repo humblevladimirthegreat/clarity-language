@@ -18,7 +18,7 @@ At the front of a sentence, **-m** says this sentence is one of several you coul
 | **e** (*instead*) | `el`: *Instead, …* | `em`: *Instead, for instance, …* |
 | **u** (*except*) | `ul`: *Except, …* | `um`: *Except, among other exceptions, …* |
 
-With **-r**, a hook at the front points back to an earlier stretch of talk, not just the last sentence, the way [**-r**](ending-grids.md#hook-resume) on a hook inside the clause points back to a landmark.
+With **-r**, a hook at the front points back to an earlier stretch of talk, not just the last sentence, the way [**-r**](in-clause-hooks.md#hook-resume) on a hook inside the clause points back to a landmark.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -183,6 +183,6 @@ in.fact | z-Alazun | v-sit
 ## See also
 
 - Everyday hooks: [hooks.md](/hooks)
-- Hooks inside the clause: [ending-grids.md](/ending-grids)
+- Hooks inside the clause: [in-clause-hooks.md](/in-clause-hooks)
 - Sentence linkers: [dependents.md](sentence-linkers.md#sentence-linkers)
 - The topic pronoun: [topic.md](topic.md)

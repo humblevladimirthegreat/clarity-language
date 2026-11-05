@@ -30,12 +30,12 @@ Each item has an ID used by the [plan](#phased-plan). **Move** means cutting an 
 
 ### A. Content bug
 
-**A1. [vp-clause-forms.md](../grammar/intermediate/vp-clause-forms.md): vowel rows mislabelled.** The **o** row lists `vel` / `xel` / `thel`, but the parser reads `vel` as *choice* and `vol` as *rank*. That matches [joins.md](../grammar/beginner/joins.md), where `zol` is rank and `zel` is choice. The **e**, **ao**, **ae**, **uo**, and **ue** rows look swapped the same way.
+**A1. [vp-clause-forms.md](../grammar/intermediate/verb-and-stance-joins.md): vowel rows mislabelled.** The **o** row lists `vel` / `xel` / `thel`, but the parser reads `vel` as *choice* and `vol` as *rank*. That matches [joins.md](../grammar/beginner/joins.md), where `zol` is rank and `zel` is choice. The **e**, **ao**, **ae**, **uo**, and **ue** rows look swapped the same way.
 *Recommendation:* fix every cell so that its row label matches what `node scripts/parse.mjs` reads it as, checking each spelling one at a time. Then grep the grammar, cheat sheets, and Claritish for any other table copied from this one. (`range-series.md` fixes the same swap in unassigned-reserved's in-clause hooks entry.)
 
 ### B. Clear failures
 
-**B1. [left-bound.md](../grammar/intermediate/left-bound.md) "Longer chains": three unrelated jobs (tests 2, 3, 4).**
+**B1. [left-bound.md](../grammar/intermediate/longer-chains.md) "Longer chains": three unrelated jobs (tests 2, 3, 4).**
 - Keep *Complex chaining* here. The page passes as a single-H3 sitting.
 - Move *How much: degree words on `/w/`* to [vague-amounts.md](../grammar/intermediate/vague-amounts.md). *Very*, *slightly*, *many*, and *few* are one choice set: degree against an unstated baseline. If vague-amounts then fails test 4, peel the H3 onto its own sitting instead ("Very and slightly").
 - Peel *Leaving out who acts* onto a new **Beginner** sitting, `no-subject.md`, titled "Leaving out who acts", placed right after [clause.md](../grammar/beginner/clause.md). See [gate runs](#gate-runs) G1.
@@ -49,17 +49,17 @@ Each item has an ID used by the [plan](#phased-plan). **Move** means cutting an 
 - Move *Continue (`/x/`): overview* to [sentence-linkers.md](../grammar/intermediate/sentence-linkers.md). Linkers are `/x/` continue words, so the endings overview belongs beside them.
 - Fold *Number-word exception* (the endings on number words) into *Number endings* on [number-markers.md](../grammar/intermediate/number-markers.md). [phonotactics.md](../grammar/intermediate/phonotactics.md) also uses the id `#number-word-exception`, so give the folded content a distinct id and retarget its links.
 
-**B4. [notional-standing.md](../grammar/intermediate/notional-standing.md) "Residue and former": channel material, plus a split `uom` choice set (tests 2, 3, 5).**
+**B4. [notional-standing.md](../grammar/intermediate/residue-and-former.md) "Residue and former": channel material, plus a split `uom` choice set (tests 2, 3, 5).**
 - Move *Channels as comparison bars* into the bars sitting (see D4).
-- **Settled by OD6 (a).** A new sitting, `contrary-to.md`, titled "Contrary to", gathers every `uom` stance kind that comes before it on the path: *Contrary to a stance (`uom`)* from [prescription.md](../grammar/intermediate/prescription.md) (plan), the say-word paragraphs from [permission-consent.md](../grammar/intermediate/permission-consent.md) *How far the say reaches* (*against the rules*, *against their will*), *Channels after `uom`* from notional-standing, and the two holder paragraphs (holder.md's *against their plan* and the channel H3's *whose view*). It sits right after [holder.md](../grammar/intermediate/holder.md) and before notional-standing. [want.md](../grammar/intermediate/want.md) comes later and keeps its WANT and DECISION rows after `uom`, linking back; mirative's and notional's *does not follow `uom`* notes stay too. Unit [2g](#unit-2g) carries it out.
+- **Settled by OD6 (a).** A new sitting, `contrary-to.md`, titled "Contrary to", gathers every `uom` stance kind that comes before it on the path: *Contrary to a stance (`uom`)* from [prescription.md](../grammar/intermediate/for-a-sake.md) (plan), the say-word paragraphs from [permission-consent.md](../grammar/intermediate/permission-consent.md) *How far the say reaches* (*against the rules*, *against their will*), *Channels after `uom`* from notional-standing, and the two holder paragraphs (holder.md's *against their plan* and the channel H3's *whose view*). It sits right after [holder.md](../grammar/intermediate/holder.md) and before notional-standing. [want.md](../grammar/intermediate/want-and-decide.md) comes later and keeps its WANT and DECISION rows after `uom`, linking back; mirative's and notional's *does not follow `uom`* notes stay too. Unit [2g](#unit-2g) carries it out.
 - notional-standing keeps *Residue and former climate*. Rewrite its lead so it no longer promises channels.
 
 **B5. [collectives.md](../grammar/intermediate/collectives.md) and [topic.md](../grammar/intermediate/topic.md): duplicate *Groups as the topic* (test 8).**
 - Delete the collectives copy. topic.md owns `#topic-groups`. If collectives' readers need the pointer, it becomes one Compare-with line.
 
 **B6. Ranges: one English job, two intermediate homes (test 5).** This assumes `range-series.md` is implemented. In that state:
-- [ordered-ranges.md](../grammar/intermediate/ordered-ranges.md) `#ranges` teaches the one range series (`oel` / `uel` / `ual` / `uol`, with -m / -r / -n) on any ordered line, plus the endpoint rule.
-- [numbers-applied.md](../grammar/intermediate/numbers-applied.md) `#number-ranges` teaches the same hooks with number ends: counted nouns, which end `uel` leaves out, and kinds of number.
+- [ordered-ranges.md](../grammar/intermediate/ranges.md) `#ranges` teaches the one range series (`oel` / `uel` / `ual` / `uol`, with -m / -r / -n) on any ordered line, plus the endpoint rule.
+- [numbers-applied.md](../grammar/intermediate/measures-and-percent.md) `#number-ranges` teaches the same hooks with number ends: counted nouns, which end `uel` leaves out, and kinds of number.
 - `al` / `ul` between numbers keep their *including* / *except* readings.
 
 The job is unified, but it is still taught on two pages 11 sittings apart.
@@ -70,7 +70,7 @@ The job is unified, but it is still taught on two pages 11 sittings apart.
 - Practice: ordered-ranges' checkpoint stays with the merged sitting. Move numbers-applied's range items only if they fit that setting; otherwise mark the row **generate** (Phase 4).
 - Fix numbers-applied's lead, which still promises clock times and dates (now on [digit-strings.md](../grammar/beginner/digit-strings.md)) and ranges. What remains of that page (measures and percent) is renamed and retitled under D3. `/ordered-ranges` and `/numbers-applied` both get redirects ([URLs](#urls)).
 
-**B7. [ability.md](../grammar/intermediate/ability.md) and [want.md](../grammar/intermediate/want.md): DECISION and WANT split (tests 3, 5).**
+**B7. [ability.md](../grammar/intermediate/try.md) and [want.md](../grammar/intermediate/want-and-decide.md): DECISION and WANT split (tests 3, 5).**
 - Move *Decision (revisability)* to want.md, before *Someone else's want, plan, or decision*, which already covers both. Retitle want.md "Want and decide" (a choice set of mind-states about an act).
 - ability.md keeps *Try* and is retitled "Try" (renamed `try.md`; see [URLs](#urls)).
 - Check that DECISION's examples do not depend on TRY, and that the path order still holds.
@@ -87,31 +87,31 @@ The job is unified, but it is still taught on two pages 11 sittings apart.
 - Peel *SHARED after the join*, *Respectively*, and *Fence nesting* onto `list-structure.md`, titled "What a list word reaches". All three decide what a word inside or after a list attaches to.
 - Peel *Exclusivity and denying a whole list* and *Full single-item and standalone inventories* onto `set-joins.md`, titled "And/or and the full set map". If the inventory H3 turns out to be only a table that finishes a series, fold it under the exclusivity H3 and title the page "And/or".
 
-**C2. [span-mention.md](../grammar/intermediate/span-mention.md) "Mention":** the title covers 1 of 7 H3s.
+**C2. [span-mention.md](../grammar/intermediate/spans-as-words.md) "Mention":** the title covers 1 of 7 H3s.
 - Peel *Act words in a quote* and *Topics in a quote* onto `quote-contents.md`, titled "Inside a quote".
 - Retitle span-mention "Spans as words". The rest of the page is one form family: written only, mention, span as a noun, spans before the noun, and one of a title.
 
-**C3. [prescription.md](../grammar/intermediate/prescription.md) "Motive":** after B4 removes `uom`, retitle the page "Doing it for a sake" and rename it `for-a-sake.md` (OD6). Motive, the ending tables, attachment sites, and whose stake are all one job: saying an act is for a sake.
+**C3. [prescription.md](../grammar/intermediate/for-a-sake.md) "Motive":** after B4 removes `uom`, retitle the page "Doing it for a sake" and rename it `for-a-sake.md` (OD6). Motive, the ending tables, attachment sites, and whose stake are all one job: saying an act is for a sake.
 
-**C4. [label-reach.md](../grammar/intermediate/label-reach.md) "How a kind holds":** move *Commands to be ADJ* to [speech-acts.md](../grammar/intermediate/speech-acts.md) (see D2).
+**C4. [label-reach.md](../grammar/intermediate/label-reach.md) "How a kind holds":** move *Commands to be ADJ* to [speech-acts.md](../grammar/intermediate/more-turn-words.md) (see D2).
 
 **C5. [digitless-exponents.md](../grammar/intermediate/digitless-exponents.md):**
 - ~~Move *How big? How fast?* to fill-ask-roles~~: dropped (OD2). It stays on digitless-exponents.
 - ~~Move *Group separator* to number-markers~~: dropped (OD4). It stays on digitless-exponents.
 - digitless-exponents keeps *Digitless*, *How many?*, *How big? How fast?*, *Exponents*, *Bare OoM*, and *Group separator*. "How many and how big" fits: every H3 counts or sizes a number.
 
-**C6. [discourse-hooks.md](../grammar/intermediate/discourse-hooks.md) and [ending-grids.md](../grammar/intermediate/ending-grids.md):** these two hook sittings mix discourse and in-clause hooks. Re-cut them along that axis.
+**C6. [discourse-hooks.md](../grammar/intermediate/discourse-hooks.md) and [ending-grids.md](../grammar/intermediate/in-clause-hooks.md):** these two hook sittings mix discourse and in-clause hooks. Re-cut them along that axis.
 - discourse-hooks keeps *Stacked discourse* and *Discourse placements*, and gains ending-grids' *Discourse* endings H3. Title: "In fact and anyway".
 - ending-grids keeps *In-clause* and *Detail on the hook*, and gains *Parallel chains* and *Point back* from discourse-hooks. Title: "Hooks inside the clause".
 - Both stay intermediate. Check that their order on the path still holds.
 
-**C7. [speech-acts.md](../grammar/intermediate/speech-acts.md) "Doubling and stacking acts":** *Describing a call or reaction* is off the act-word job, but every H3 is a `/y/` turn word. With D2's additions, retitle the page "Turn words, further" (form family) and keep the call H3 there.
+**C7. [speech-acts.md](../grammar/intermediate/more-turn-words.md) "Doubling and stacking acts":** *Describing a call or reaction* is off the act-word job, but every H3 is a `/y/` turn word. With D2's additions, retitle the page "Turn words, further" (form family) and keep the call H3 there.
 
 **C8. [dependents.md](../grammar/beginner/dependents.md):** move *Continue (`/x/`)* to [speech-moves.md](../grammar/beginner/speech-moves.md). There it forms a choice set with *Turn*: start a new speech move, or continue the one you started. Check that speech-moves sits late enough on the path for continue's examples, or thin those examples.
 
 ### D. Split choice sets and overlaps (test 5)
 
-**D1. Joins outside nouns.** [vp-clause-forms.md](../grammar/intermediate/vp-clause-forms.md) already lists the `/th/` forms that [join-across-roles.md](../grammar/intermediate/join-across-roles.md) teaches as *Stance joins*.
+**D1. Joins outside nouns.** [vp-clause-forms.md](../grammar/intermediate/verb-and-stance-joins.md) already lists the `/th/` forms that [join-across-roles.md](../grammar/intermediate/join-across-roles.md) teaches as *Stance joins*.
 - Merge join-across-roles into vp-clause-forms. Retitle the result "Joins on verbs and stances".
 - join-across-roles.md goes away, so add a redirect (see [URLs](#urls)).
 - [list-verbs.md](../grammar/intermediate/list-verbs.md) stays separate (a list move as the action itself), with one Compare-with line each way.
@@ -124,7 +124,7 @@ The job is unified, but it is still taught on two pages 11 sittings apart.
 - number-markers receives *Letter codes* from numbers-applied (a `_` marker) and the folded number-word endings (B3).
 - After B6, numbers-applied keeps *Measure phrases* and *Percent*. Retitle it "Amount of a unit", if the percent prose supports reading percent as a per-hundred unit. If not, use "Measures and percent" and note why.
 
-**D4. Bars: three intermediate homes.** The plan bar (*Comparing against a stance (bars)*, [comparative-arity.md](../grammar/intermediate/comparative-arity.md)), the channel bar (B4), and [sake-bars.md](../grammar/intermediate/sake-bars.md) (*enough* / *too*) all rank against a value that a stance sets.
+**D4. Bars: three intermediate homes.** The plan bar (*Comparing against a stance (bars)*, [comparative-arity.md](../grammar/intermediate/comparative-arity.md)), the channel bar (B4), and [sake-bars.md](../grammar/intermediate/bars.md) (*enough* / *too*) all rank against a value that a stance sets.
 - Merge all three into sake-bars.md, in the order plan bar, channel bar, sake bar. Retitle it "Than planned, enough, too".
 - comparative-arity drops to 8 H3s.
 - The merged sitting must come after evidentiality and comparative-arity on the path. [stance-bars.md](../grammar/advanced/stance-bars.md) (Advanced) stays.

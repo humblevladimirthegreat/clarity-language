@@ -35,7 +35,7 @@ const SPAN_ENDPOINT_KIND: Record<string, string> = {
 };
 
 /**
- * Range end kind (ordered-ranges.md#ranges): an amount (scalar), a rank, or a label / time, from the number's
+ * Range end kind (ranges.md#ranges): an amount (scalar), a rank, or a label / time, from the number's
  * marker, with or without digits. ±∞ is an amount and first / last place a rank. A non-number has no kind.
  */
 export function spanEndpointKind(word: LexWord | undefined): string | undefined {
@@ -45,13 +45,13 @@ export function spanEndpointKind(word: LexWord | undefined): string | undefined 
 
 const SPAN_VOWELS = new Set(["oe", "ue", "ua", "uo", "ao"]);
 
-/** Range hook (ordered-ranges.md#ranges): a stacked `oe` / `ue` / `ua` / `uo` / `ao` hook between two same-role words. */
+/** Range hook (ranges.md#ranges): a stacked `oe` / `ue` / `ua` / `uo` / `ao` hook between two same-role words. */
 export function isSpanHook(word: LexWord, prev: LexWord | undefined, next: LexWord | undefined): boolean {
   if (word.family.kind !== "hook" || !prev || !next || prev.pos !== next.pos) return false;
   return SPAN_VOWELS.has(word.family.form.slice(0, -1));
 }
 
-/** Two number ends of a range on different lines (an amount and a rank): no reading (ordered-ranges.md#ranges). */
+/** Two number ends of a range on different lines (an amount and a rank): no reading (ranges.md#ranges). */
 export function mixedSpanEnds(prev: LexWord | undefined, next: LexWord | undefined): boolean {
   const a = spanEndpointKind(prev);
   const b = spanEndpointKind(next);

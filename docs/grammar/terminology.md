@@ -18,7 +18,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **AIMED** | Emotion locus: aimed at a target | `wawethumel` | [Feelings](/feelings-permission#emotion-compose) |
 | **ASIDE** | An aside span | `th(hugowul)` | [Spans](/spans#asides) |
 | **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwuvam` | [Permission and consent](/permission-consent#say-words) |
-| **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Try](/ability#try) |
+| **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Try](/try#try) |
 | **AWAY** | Emotion locus: moving off from a target | `wawethumum` | [Feelings](/feelings-permission#emotion-compose) |
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thewom` | [CAUSE](/cause#cause) |
 | **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraer` | [Feelings](/feelings-permission#emotion-compose) |
@@ -26,19 +26,19 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **CLUES** | Evidential: reasoned from clues about this case | `theyom` | [How you know](/evidentiality#evidentiality) |
 | **CHOICE** | Say word answer: their call | `hwuvem` | [Permission and consent](/permission-consent#say-words) |
 | **COLLAPSE** | Emotion locus: out of fight, giving up | `wawethumual` | [Feelings](/feelings-permission#emotion-compose) |
-| **DECISION** | Pick-firmness mood | `thogem` | [Want and decide](/want#decision) |
+| **DECISION** | Pick-firmness mood | `thogem` | [Want and decide](/want-and-decide#decision) |
 | **DEDUCED** | Evidential: must hold if the premises hold | `thanam` | [How you know](/evidentiality#deduction) |
 | **FAWN** | Emotion locus: placating a target | `wawethumaom` | [Feelings](/feelings-permission#emotion-compose) |
 | **FLOWING** | Emotion motion: steady, a current you can ride | `wawethumom` | [Feelings](/feelings-permission#emotion-compose) |
 | **FORBID** | Say word answer: no, forbid | `hwuvul` | [Contrary to](/contrary-to#contrary-to-say) |
-| **FORMER** | Episode standing: not the climate claimed now | `helam` | [Residue and former](/notional-standing#residue) |
+| **FORMER** | Episode standing: not the climate claimed now | `helam` | [Residue and former](/residue-and-former#residue) |
 | **IDENTITY** | Identity copula | `gorel` | [Predication](/predication#identity) |
 | **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Feelings](/feelings-permission#emotion-compose) |
 | **INTUITION** | Evidential: gut sense you cannot fully spell out | `thabem` | [How you know](/evidentiality#evidentiality) |
 | **LIVE** | Evidential: sensed now, by any sense | `thugem` | [Live and memory](/live-and-memory#live-vs-memory) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thomam` | [Knowing](/knowing#may) |
 | **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevum` | [Live and memory](/live-and-memory#live-vs-memory) |
-| **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegol z[odoze] gamezem.` | [Spans as words](/span-mention#mention) |
+| **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegol z[odoze] gamezem.` | [Spans as words](/spans-as-words#mention) |
 | **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themem` | [It turns out](/mirative#mirative) |
 | **NAME** | A package titled with **-n** | `zobodel zubudal zan.` | [Join limits](/join-limits#named-list) |
 | **NOTIONAL** | As-if / pretense mood | `theyum` | [As if](/notional#notional) |
@@ -47,7 +47,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **PLAN** | Intention-framing mood | `thagom` | [Intention](/intention#plan-predict) |
 | **REPORTED** | Evidential: said or written by someone else | `thebam` | [How you know](/evidentiality#evidentiality) |
 | **REQUIRE** | Say word answer: require, ask for (*must*) | `hwuvol` | [Permission and consent](/permission-consent#say-words) |
-| **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Residue and former](/notional-standing#residue) |
+| **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Residue and former](/residue-and-former#residue) |
 | **RESISTING** | Emotion locus: pushing against a target | `wawethumuor` | [Feelings](/feelings-permission#emotion-compose) |
 | **SCOPE** | Scope island `{ … }` | `{ hogugem zodozel gerulol }` | [Scope islands](/scope-islands#scope-islands) |
 | **SEEKING** | Emotion locus: turning to someone for comfort | `wawethumoem` | [Feelings](/feelings-permission#emotion-compose) |
@@ -55,7 +55,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **SURGING** | Emotion motion: in waves or spikes | `wuwathuraer` | [Feelings](/feelings-permission#emotion-compose) |
 | **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruem` | [Feelings](/feelings-permission#emotion-compose) |
 | **VICARIOUS** | Emotion locus: felt for someone's sake | `wawethumom` | [Feelings](/feelings-permission#emotion-compose) |
-| **WANT** | Desire mood: lasting / unstated / passing | `thalom` | [Want and decide](/want#want) |
+| **WANT** | Desire mood: lasting / unstated / passing | `thalom` | [Want and decide](/want-and-decide#want) |
 
 **Compare with:** [quasi](#quasi) (`-e-xROOT`) is not **NOTIONAL**.
 
@@ -180,7 +180,7 @@ Prefer an audible left `/y/` rather than implied **`yal`**.
 
 A `/th/` stance word in the comparee slot of a rank join: the value you rank against (*than planned*, *enough*, *than usual*).
 
-[Than planned, enough, too](/sake-bars#bars)
+[Than planned, enough, too](/bars#bars)
 
 ### Bare OoM
 
@@ -216,7 +216,7 @@ The reusable mapping of ending letters **-l / -m / -r / -n** on a scale. Ending 
 
 Endings on unmet **`thu`**, **DECISION**, and ability *can’t*.
 
-[Sakes](/sakes#sake-changeability), [Want and decide](/want#decision)
+[Sakes](/sakes#sake-changeability), [Want and decide](/want-and-decide#decision)
 
 ### Channel on a generalization
 
@@ -486,11 +486,11 @@ Whose view a clause reports. The name is fused onto an evidential, **MAY**, or *
 
 ### Hook
 
-Prefix-less *including / rather / instead / except*, discourse glue, extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (zone **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *used by* (whose) / *by* / *contrary to*; placement decides the job; **`uom`** before a `/th/` stance is *contrary to* that stance), and fused [Cite plus a hook](/hook-compounds#hook-compounds) (citation plus extra-noun hook). Optional `/w/` immediately before the free hook grades that hook (including restrictors); `/b/` sits immediately after the free hook. Parallel chains, detail on the hook, and **-r** pointing back to a landmark are [hooks inside the clause](/ending-grids). **-m** and **-r** at the front of a sentence, stacked discourse, and extra placements are [discourse hooks](/discourse-hooks).
+Prefix-less *including / rather / instead / except*, discourse glue, extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (zone **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *used by* (whose) / *by* / *contrary to*; placement decides the job; **`uom`** before a `/th/` stance is *contrary to* that stance), and fused [Cite plus a hook](/hook-compounds#hook-compounds) (citation plus extra-noun hook). Optional `/w/` immediately before the free hook grades that hook (including restrictors); `/b/` sits immediately after the free hook. Parallel chains, detail on the hook, and **-r** pointing back to a landmark are [hooks inside the clause](/in-clause-hooks). **-m** and **-r** at the front of a sentence, stacked discourse, and extra placements are [discourse hooks](/discourse-hooks).
 
 [Hooks](/hooks)
 
-[Hooks inside the clause](/ending-grids)
+[Hooks inside the clause](/in-clause-hooks)
 
 [In fact and anyway](/discourse-hooks)
 
@@ -624,7 +624,7 @@ Extra-noun [hook](/hooks#extra-noun) **`aol`** plus implement `/b/` (*using / wi
 
 Amount + lexicon unit noun (published abstract = unit name).
 
-[Measures and percent](/numbers-applied#measure-phrases)
+[Measures and percent](/measures-and-percent#measure-phrases)
 
 ### Met / unmet / motive / prescription (sakes)
 
@@ -738,7 +738,7 @@ A role compound with reach **`o`** after its **`w`** (`zwozeduyol`): the role as
 
 Motive **`tho`** endings.
 
-[Doing it for a sake](/prescription#sake-preference)
+[Doing it for a sake](/for-a-sake#sake-preference)
 
 ### Prominence
 
@@ -762,13 +762,13 @@ Numeric prefix `-e-xROOT` (and quasi-N): the shape of a kind, not the real thing
 
 Stacked hook between same-role words on an ordered line: `oel` *through*, `uel` *through, B left out*, `ual` *outside*, `uol` *strictly between*, `aol` *in turn*.
 
-[Ranges](/ordered-ranges#ranges)
+[Ranges](/ranges#ranges)
 
 ### Range / ray
 
 A [range hook](#range-hook) between two number ends of one kind (`oel` / `uel`); a ray has ±∞ as one end.
 
-[Ranges](/ordered-ranges#number-ranges), [Open and named ranges](/open-ranges#rays)
+[Ranges](/ranges#number-ranges), [Open and named ranges](/open-ranges#rays)
 
 ### Rank join / set join / SHARED
 
@@ -786,7 +786,7 @@ Identify a noun with two sentences (then [resume](#resume)), a hosted `/ɡ/` + `
 
 Closed `/th/` episode standing: leftover on the tally, or usual weather you are not claiming now. Not past tense.
 
-[Residue and former](/notional-standing#residue)
+[Residue and former](/residue-and-former#residue)
 
 ### Restrictor
 
@@ -952,7 +952,7 @@ A lone `/th/` met word is thanks (*my sake is met*). *Sorry* is unmet plus a `bl
 
 Single-item rank with a number = bound on a line.
 
-[Measures and percent](/numbers-applied)
+[Measures and percent](/measures-and-percent)
 
 ### Time horizon
 

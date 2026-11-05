@@ -108,7 +108,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 
 **Compare with:** someone else's aim takes a holder the same way. The [so that](/dependents#so-that) hinge alone is your aim; after a holder it is the holder's, so `zazozon thebamazozon vowurol thovam blarl zazozon vehohel.` is *I hear Azozon walks in order to sit*.
 
-**Someone else's motive** goes the same way. A [motive](prescription.md#sake-preference) word alone names what the act serves for you; it does not say why the actor does it. After a holder, the motive is the holder's, and the seam word says how you know their reason.
+**Someone else's motive** goes the same way. A [motive](for-a-sake.md#sake-preference) word alone names what the act serves for you; it does not say why the actor does it. After a holder, the motive is the holder's, and the seam word says how you know their reason.
 
 > `zazozon vezuyol thawethom theyomazozon.`
 >

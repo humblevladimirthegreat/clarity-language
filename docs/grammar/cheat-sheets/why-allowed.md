@@ -91,14 +91,14 @@ A sake is a kind of payoff. A sake word is a sake root, mid-word `th`, a stance 
 | [**`tha`**](/sakes#met) | the belonging or event pays off this sake | *serves* / *met* | [time horizon](/sakes#time-horizon-endings-on-met) | B |
 | [**`thu`**](/sakes#word-shape) | it subtracts from this sake | *detracts from* / *unmet* | [changeability](/sakes#sake-changeability) | B |
 | [**`the`**](/ought-for-a-sake#sake-force) | the act ought to serve this sake | *ought this act for* | [why it is welcome](/ought-for-a-sake#sake-force) | I |
-| [**`tho`**](/prescription#sake-preference) | the act is done for this sake | *doing for this sake* | [time horizon](/prescription#sake-preference) | I |
+| [**`tho`**](/for-a-sake#sake-preference) | the act is done for this sake | *doing for this sake* | [time horizon](/for-a-sake#sake-preference) | I |
 
 <!-- cheat-sheet: why-allowed -->
 | Ending | Met **`tha`** | Unmet **`thu`** | Ought **`the`** | Motive **`tho`** | Stage |
 |--------|---------------|-----------------|-----------------|------------------|-------|
-| **-l** | [`…thal`](/sakes#time-horizon-endings-on-met) *lasting* | [`…thul`](/sakes#sake-changeability) *irreversible* | [`…thel`](/ought-for-a-sake#sake-force) *invited* | [`…thol`](/prescription#sake-preference) *lasting* | B / I |
-| **-m** | [`…tham`](/sakes#time-horizon-endings-on-met) *unstated* | [`…thum`](/sakes#sake-changeability) *modifiable* | [`…them`](/ought-for-a-sake#sake-force) *unasked* | [`…thom`](/prescription#sake-preference) *unstated* | B / I |
-| **-r** | [`…thar`](/sakes#time-horizon-endings-on-met) *immediate* | [`…thur`](/sakes#sake-changeability) *passing* | [`…ther`](/ought-for-a-sake#sake-force) *tryout* | [`…thor`](/prescription#sake-preference) *immediate* | B / I |
+| **-l** | [`…thal`](/sakes#time-horizon-endings-on-met) *lasting* | [`…thul`](/sakes#sake-changeability) *irreversible* | [`…thel`](/ought-for-a-sake#sake-force) *invited* | [`…thol`](/for-a-sake#sake-preference) *lasting* | B / I |
+| **-m** | [`…tham`](/sakes#time-horizon-endings-on-met) *unstated* | [`…thum`](/sakes#sake-changeability) *modifiable* | [`…them`](/ought-for-a-sake#sake-force) *unasked* | [`…thom`](/for-a-sake#sake-preference) *unstated* | B / I |
+| **-r** | [`…thar`](/sakes#time-horizon-endings-on-met) *immediate* | [`…thur`](/sakes#sake-changeability) *passing* | [`…ther`](/ought-for-a-sake#sake-force) *tryout* | [`…thor`](/for-a-sake#sake-preference) *immediate* | B / I |
 
 The scale runs **-l** most settled, **-m** the default, **-r** most passing. When unsure, use **-m**.
 
@@ -113,9 +113,9 @@ The scale runs **-l** most settled, **-m** the default, **-r** most passing. Whe
 | [On the event](/sakes#word-shape) | `zazozon vezuyol thuwatham.` | *Azozon talks, and that boosts my confidence.* | B |
 | [Not your noun](/sakes#personal-possession): `goyom` | `zabowam wunathur goyom.` | *the gathering, passing harm to autonomy* | B |
 | [Ought](/ought-for-a-sake#sake-force) | `zazozon vezuyol thawethem blwuzor.` | *Azozon ought to talk; it would help them feel connected.* (unasked advice) | I |
-| [Motive](/prescription#sake-preference) | `zuwen vezuyol thawethom.` | *I talk to feel connected.* | I |
-| [Whose stake](/prescription#whose-stake): the person in `/b/` | `zazozon vezuyol thawethom blalazun.` | *Azozon talks for Alazun's sake.* | I |
-| [Not your noun, their stake](/prescription#whose-stake) | `zewal gawethal blalazun.` | *My gift serves Alazun's relatedness.* | I |
+| [Motive](/for-a-sake#sake-preference) | `zuwen vezuyol thawethom.` | *I talk to feel connected.* | I |
+| [Whose stake](/for-a-sake#whose-stake): the person in `/b/` | `zazozon vezuyol thawethom blalazun.` | *Azozon talks for Alazun's sake.* | I |
+| [Not your noun, their stake](/for-a-sake#whose-stake) | `zewal gawethal blalazun.` | *My gift serves Alazun's relatedness.* | I |
 
 ### Thanks and sorry {#thanks-sorry}
 
@@ -246,5 +246,5 @@ A [say word](/permission-consent#say-words) on `/h/`: **`h`** **`w`**, a reach v
 | `hwuvam` *may* ([someone over the act allows it](/permission-consent#permission)) | | `hwudam` *they agreed* ([the yes of the one it's done to](/permission-consent#consent)) |
 | `hwuvam` *may* ([the act is allowed](/permission-consent#permission)) | | `hwuvom` *has to* ([the act is demanded](/permission-consent#permission)) |
 | `hwuvol` *the rules require it* ([an outside demand](/permission-consent#permission)) | | `hwuzor` *I feel I have to* ([an unspoken should](/permission-consent#consent)) |
-| `thawethem` *ought to, for relatedness* ([advice for a sake](/ought-for-a-sake#sake-force)) | | `thawethom` *for relatedness* ([why it is done](/prescription#sake-preference)) |
+| `thawethem` *ought to, for relatedness* ([advice for a sake](/ought-for-a-sake#sake-force)) | | `thawethom` *for relatedness* ([why it is done](/for-a-sake#sake-preference)) |
 | `thawetham` *thank you* ([my sake is met](/thanks-and-sorry#thanks-sorry)) | | `thawethum blawan` *I'm sorry* ([your sake is hurt](/thanks-and-sorry#thanks-sorry)) |

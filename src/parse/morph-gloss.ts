@@ -591,7 +591,7 @@ const SCALE_GLOSS: Record<string, string> = { g: "amount", h: "how-often", b: "l
 
 const FRACTION_NAMES: Record<number, string> = { 2: "half", 3: "third", 4: "quarter" };
 
-/** `/ɡ/` `g-N` (whole N ≥ 2) right after a plain **-l** noun ([numbers-applied § Fractions](../../docs/grammar/numbers-applied.md#fractions)). */
+/** `/ɡ/` `g-N` (whole N ≥ 2) right after a plain **-l** noun ([numbers-applied § Fractions](../../docs/grammar/measures-and-percent.md#fractions)). */
 function isFraction(word: LexWord, prev: LexWord | undefined): boolean {
   const family = word.family;
   if (family.kind !== "number" || word.pos !== "g" || family.stem.marker !== "-" || family.stem.digitlessExp) return false;
@@ -1084,7 +1084,7 @@ function sensePieces(
   }
 }
 
-/** Range hooks between two same-role words (ordered-ranges.md#ranges): -m `.approx`, -n `.named`, -r `some.`. */
+/** Range hooks between two same-role words (ranges.md#ranges): -m `.approx`, -n `.named`, -r `some.`. */
 const HOOK_SPAN: Record<string, string> = {
   oel: "through",
   oem: "through.approx",

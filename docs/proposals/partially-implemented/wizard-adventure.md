@@ -72,13 +72,13 @@ A fully closed world runs out of practice and recycles badly; a fully generative
 
 ### Companions {#companions}
 
-A relationship subsystem, borrowed from dating and friendship sims, for the village's recurring characters. A few characters can become companions (a friendship, a partnership, or a romance, whichever the player and the character choose). It opens with [sakes](/prescription), when feelings, thanks and consent can be said.
+A relationship subsystem, borrowed from dating and friendship sims, for the village's recurring characters. A few characters can become companions (a friendship, a partnership, or a romance, whichever the player and the character choose). It opens with [sakes](/for-a-sake), when feelings, thanks and consent can be said.
 
 **Attunement, not winning someone over.** The usual genre loop (find the right line to unlock affection) would turn characters into puzzles to beat, which goes against the language's purpose. Here a relationship deepens when the player understands the character and is honest with them:
 
 | Player move | Grammar | Effect |
 |-------------|---------|--------|
-| Asks what the character feels or wants, instead of assuming | [Fill questions](/polar-inventory), [whose stake](/prescription#whose-stake) | Opens what the character is holding back, an information gap about a person |
+| Asks what the character feels or wants, instead of assuming | [Fill questions](/polar-inventory), [whose stake](/for-a-sake#whose-stake) | Opens what the character is holding back, an information gap about a person |
 | Says how they know something about the character (*I saw* vs. *I heard*) | [Evidentiality](/evidentiality#evidentiality) | Rumor stated as fact cools the character; marked hearsay invites a correction |
 | Asks before acting on or for the character | [Permission](/permission-consent#permission), [consent](/permission-consent#consent) | The next step happens only with consent; a *no* is final for that scene and costs the player nothing if it is accepted |
 | Thanks or apologizes specifically | [Thanks and sorry](/thanks-and-sorry#thanks-sorry) | Specific thanks for a named act counts; a bare greeting chunk does not |
@@ -96,7 +96,7 @@ A detective subsystem for the language's bias-awareness theme: the player works 
 
 - **Witnesses mark their source.** Every claim carries how the witness knows it ([evidentiality](/evidentiality#evidentiality), [evidence strength](/evidentiality#evidence-strength), [second-hand and further](/evidentiality#hand-depth)). A confident witness who only heard it is the classic trap.
 - **Interviews are information gaps.** The player asks [who, where, when and why](/polar-inventory), and can ask a witness for their [source](/evidentiality#source). Two witnesses may each hold half of a fact.
-- **Biased witnesses.** Some witnesses have a stake in the outcome (their [sakes](/prescription#whose-stake)), and the case gives the player a way to find that out. Learning that a witness has a reason to blame someone, without assuming they are lying, is the lesson.
+- **Biased witnesses.** Some witnesses have a stake in the outcome (their [sakes](/for-a-sake#whose-stake)), and the case gives the player a way to find that out. Learning that a witness has a reason to blame someone, without assuming they are lying, is the lesson.
 - **Accusations are sentences.** To close a case the player states what caused what, with [*because*](/iff-fault#only-because) and [fault](/fault#fault), and marks how they know it. The engine checks the claim against the case's hidden facts. A true claim stated with too much certainty from weak evidence is accepted, but a character points out the overreach.
 - **Wrong accusations cost story, not grammar.** An accused innocent is hurt and says so, and the case continues; the player apologizes and keeps going. This keeps the [no penalty for language errors](#learning-principles) rule: the cost is for a wrong judgment, not a wrong sentence.
 - **Generated cases.** A case is a small hidden event graph (who did what, who saw, heard or inferred which part), and witnesses' lines come from it through the same generator as narration. Authored cases carry the main thread; generated ones are errands that review what is due.

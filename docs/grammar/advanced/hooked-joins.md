@@ -109,7 +109,7 @@ A hooked join sits where any join of its role letter sits. A plain `/b/` one is 
 
 ### Point back (hook **-r**) {#hooked-joins-point-back}
 
-To bound a join by a place already named (*everyone there*), write `r` before the seam and no `bl-` word. The hook then points back to the landmark already in play, the way [`er`](/ending-grids#hook-resume) does on its own: `zerxual` is *everyone there* as `er` is *there*. The hooks that point back on their own take it here: `zarxual` *everyone in there*, `zerxual` *everyone there*, `zurxual` *everyone from there*, `zorxual` *everyone it was for*, `zaerxual` *everyone on it*, `zaorxual` *everyone using it*, `zuerxual` *everyone passing through there*.
+To bound a join by a place already named (*everyone there*), write `r` before the seam and no `bl-` word. The hook then points back to the landmark already in play, the way [`er`](/in-clause-hooks#hook-resume) does on its own: `zerxual` is *everyone there* as `er` is *there*. The hooks that point back on their own take it here: `zarxual` *everyone in there*, `zerxual` *everyone there*, `zurxual` *everyone from there*, `zorxual` *everyone it was for*, `zaerxual` *everyone on it*, `zaorxual` *everyone using it*, `zuerxual` *everyone passing through there*.
 
 > `zazozon vehohel el bohehal. zerxual vezuvel.`
 >

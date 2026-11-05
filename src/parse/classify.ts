@@ -445,7 +445,7 @@ export function isClauseAdverb(word: LexWord): boolean {
   return !!word.overlay && CLAUSE_ADVERB_KINDS.has(word.overlay.kind);
 }
 
-/** Closed `/th/` or clause-adverb kinds a rank fence takes as its bar: each sets a value to rank against (sake-bars.md#bars). */
+/** Closed `/th/` or clause-adverb kinds a rank fence takes as its bar: each sets a value to rank against (bars.md#bars). */
 const BAR_OVERLAY_KINDS = new Set(["evidential", "former_climate", "notional", "plan", "want", "ability"]);
 
 /**
@@ -786,7 +786,7 @@ export function missingAbstractSense(word: MorphWord, tables: ClassifyTables): s
 }
 
 /**
- * The mention marker (span-mention.md#mention): a `gl-` word right before a written span, spelled as the 🔤 root
+ * The mention marker (spans-as-words.md#mention): a `gl-` word right before a written span, spelled as the 🔤 root
  * on **-l** (a word or phrase) or **-n** (a name-string). Anywhere else the same spelling is the ordinary adjective.
  */
 export function markMentions(words: LexWord[], tables: ClassifyTables): LexWord[] {

@@ -32,7 +32,7 @@ Drill.
 
 describe("peelHeadings", () => {
   const result = peelHeadings({
-    parentPage: "speech-acts.md",
+    parentPage: "more-turn-words.md",
     parentMarkdown: PARENT,
     ids: ["speech-act"],
     newPage: "firm-soft.md",
@@ -59,17 +59,17 @@ describe("peelHeadings", () => {
   });
 
   it("rewrites same-page links that now cross files", () => {
-    assert.match(result.sitting, /Soft \[tone\]\(speech-acts.md#tone-marks\)/);
+    assert.match(result.sitting, /Soft \[tone\]\(more-turn-words.md#tone-marks\)/);
     assert.match(result.parent, /Marks on a \[request\]\(firm-soft.md#speech-act\)/);
   });
 
   it("maps every moved id, including nested H4s", () => {
-    assert.equal(result.linkMap.get("speech-acts.md#speech-act"), "firm-soft.md#speech-act");
-    assert.equal(result.linkMap.get("speech-acts.md#act-r"), "firm-soft.md#act-r");
-    assert.equal(result.linkMap.get("speech-acts.md#tone-marks"), undefined);
+    assert.equal(result.linkMap.get("more-turn-words.md#speech-act"), "firm-soft.md#speech-act");
+    assert.equal(result.linkMap.get("more-turn-words.md#act-r"), "firm-soft.md#act-r");
+    assert.equal(result.linkMap.get("more-turn-words.md#tone-marks"), undefined);
     assert.deepEqual(result.hashRedirects, [
-      { page: "speech-acts.md", hash: "speech-act", to: "firm-soft.md", toHash: "speech-act" },
-      { page: "speech-acts.md", hash: "act-r", to: "firm-soft.md", toHash: "act-r" },
+      { page: "more-turn-words.md", hash: "speech-act", to: "firm-soft.md", toHash: "speech-act" },
+      { page: "more-turn-words.md", hash: "act-r", to: "firm-soft.md", toHash: "act-r" },
     ]);
   });
 });
@@ -103,7 +103,7 @@ From-to.
 `;
 
   const result = peelHeadings({
-    parentPage: "numbers-applied.md",
+    parentPage: "measures-and-percent.md",
     parentMarkdown: md,
     ids: ["digit-strings", "time"],
     newPage: "digit-strings.md",

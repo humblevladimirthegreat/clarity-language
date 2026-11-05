@@ -47,4 +47,4 @@ We're selling the house `thogel`.
 I'm staying home tonight `thoger`.
 :::
 
-<!-- Source (editors): want.md#decision, ability.md#try. -->
+<!-- Source (editors): want-and-decide.md#decision, try.md#try. -->

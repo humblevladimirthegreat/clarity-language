@@ -1,8 +1,8 @@
 /**
  * Peel named H3 clusters off a one-sitting grammar page onto a new file.
  *
- * Run: npm run peel-headings -- --parent speech-acts.md --ids speech-act --to firm-soft.md --title "Firm and soft" --band beginner
- *      npm run peel-headings -- --parent speech-acts.md --ids speech-act --to firm-soft.md --title "Firm and soft" --band beginner --write
+ * Run: npm run peel-headings -- --parent more-turn-words.md --ids speech-act --to firm-soft.md --title "Firm and soft" --band beginner
+ *      npm run peel-headings -- --parent more-turn-words.md --ids speech-act --to firm-soft.md --title "Firm and soft" --band beginner --write
  *
  * Dry run prints the new sitting, moved ids, sidebar row, hash rows, and construction homes.
  * `--write` applies them. Split Practice by hand. Then:
@@ -69,7 +69,7 @@ function parseArgs(argv: string[]): Options {
   }
   if (!parent || ids.length === 0 || !band || !to || !title) {
     throw new Error(
-      'Usage: npm run peel-headings -- --parent speech-acts.md --ids speech-act --to firm-soft.md --title "Firm and soft" --band beginner [--h1-id id] [--write]',
+      'Usage: npm run peel-headings -- --parent more-turn-words.md --ids speech-act --to firm-soft.md --title "Firm and soft" --band beginner [--h1-id id] [--write]',
     );
   }
   return { parent, ids, band, to, title, h1Id, write };

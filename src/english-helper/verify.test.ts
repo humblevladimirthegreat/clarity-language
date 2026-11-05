@@ -19,7 +19,7 @@ const jobOf = (english: string, text: string, link: string) => slotOf(english, t
 
 describe("verifyDraft: someone else's stance", () => {
   const english = "Alazun wants to walk.";
-  const held = jobOf(english, "wants to", "want.md#whose-intention").phrase!.split(" / ")[0]!;
+  const held = jobOf(english, "wants to", "want-and-decide.md#whose-intention").phrase!.split(" / ")[0]!;
   const want = held.split(" ").pop()!;
   const subject = wordOf(english, "Alazun");
   const walk = wordOf(english, "walk");

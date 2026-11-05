@@ -112,8 +112,8 @@ When the lexicon has a matching root, write the ordinary word, not a span. An as
 | [**`~`**](/spans#exact-paraphrase-proper) | paraphrase | the gist | `d~[zazozon vozuyel]` | B |
 | [**`@`**](/spans#exact-paraphrase-proper) | proper | a work known by that title | `d@[onuren alazun]` | B |
 | [**`~@`**](/spans#exact-paraphrase-proper) | proper, loosely remembered | *something like that title* | `d~@[onuren alazun]` | B |
-| [**`^@`**](/span-mention#one-of-a-title) | one thing under the name | *an iPhone* / *a copy of* | `d^@[onuren alazun]` | I |
-| [**`~^@`**](/span-mention#one-of-a-title) | one copy, title roughly | *a copy of something like* | `d~^@[onuren alazun]` | I |
+| [**`^@`**](/spans-as-words#one-of-a-title) | one thing under the name | *an iPhone* / *a copy of* | `d^@[onuren alazun]` | I |
+| [**`~^@`**](/spans-as-words#one-of-a-title) | one copy, title roughly | *a copy of something like* | `d~^@[onuren alazun]` | I |
 
 A one-word name is an ordinary **-n** word (`donuren`), not a span.
 
@@ -141,13 +141,13 @@ A one-word name is an ordinary **-n** word (`donuren`), not a span.
 | [A loan verb](/spans#pos) | <code>zalazun dazozon v&lt;google&gt;.</code> | *Alazun googled Azozon.* | B |
 | [A loan adjective](/spans#pos) | <code>zodozel g&lt;rouge&gt; vowurol.</code> | *A rouge dog walks.* | B |
 | [A quoted question](/quote-contents#quote-acts) | `zazozon d[yel zalazun vowurol] vezuyol.` | *Azozon said, “Does Alazun walk?”* | I |
-| [Point back at a quote](/span-mention#span-noun) | `zalazun d[azozon] vezuyol. zahelan dwuder varuyol.` | *Alazun said “Azozon.” Ahelan wrote that down.* | I |
+| [Point back at a quote](/spans-as-words#span-noun) | `zalazun d[azozon] vezuyol. zahelan dwuder varuyol.` | *Alazun said “Azozon.” Ahelan wrote that down.* | I |
 | [Topic from a title](/quote-contents#topic-quotes) | `x@[onuren alazun] dalen vozuyel.` | *Now, about Onuren Alazun: it is sung.* | I |
 | [An aside as a clause](/spans#asides) | `zazozon vowurol th(zalazun vezuvel).` | *Azozon walks (Alazun is asleep).* | B |
 | [An aside on a noun](/spans#asides) | `zazozon g(zazozor vowurol) vozuyel.` | *Azozon, who walks, sings.* | B |
 | [An aside on one word](/spans#asides) | `zodozel w(zazozon vezuyol) gerulol vowurol.` | *A (so Azozon says) red dog walks.* | B |
-| [An aside before the noun](/span-mention#gl-spans) | `gl(gerulol) zodozel gamezem vowurol.` | *The small dog (it is red) walks.* | I |
-| [A loan adjective before the noun](/span-mention#gl-spans) | <code>gl&lt;rouge&gt; zodozel vowurol.</code> | *A rouge dog walks.* | I |
+| [An aside before the noun](/spans-as-words#gl-spans) | `gl(gerulol) zodozel gamezem vowurol.` | *The small dog (it is red) walks.* | I |
+| [A loan adjective before the noun](/spans-as-words#gl-spans) | <code>gl&lt;rouge&gt; zodozel vowurol.</code> | *A rouge dog walks.* | I |
 | [A loan degree word](/spans#pos) | <code>zodozel w&lt;molto&gt; gobulol vowurol.</code> | *A molto blue dog walks.* | B |
 | [Aside inside a cite](/span-nesting#nesting) | `zazozon d[ th(hugowul) azozon ] vezuyol.` | *Azozon said “(quietly) Azozon.”* | A |
 
@@ -158,8 +158,8 @@ A one-word name is an ordinary **-n** word (`donuren`), not a span.
 | [Call a foreign name](/spans#y-spans) | <code>y@&lt;Sam&gt;</code> | *Sam!* | B |
 | [Name of uncertain spelling](/spans#y-spans) | <code>y~@&lt;Sam&gt;</code> | *Sam?* (not sure of the name) | B |
 | [Foreign interjection](/spans#y-spans) | <code>y&lt;Wow&gt;</code> | *Wow!* | B |
-| [A word as spelling](/span-mention#mention): `glegol` | `glegol z[odoze] gamezem.` | *The word “odoze” is small.* | I |
-| [A name as spelling](/span-mention#mention): `glegon` | `zazozon glegon d[onuren] vuyugum.` | *Azozon dislikes the name “onuren.”* | I |
+| [A word as spelling](/spans-as-words#mention): `glegol` | `glegol z[odoze] gamezem.` | *The word “odoze” is small.* | I |
+| [A name as spelling](/spans-as-words#mention): `glegon` | `zazozon glegon d[onuren] vuyugum.` | *Azozon dislikes the name “onuren.”* | I |
 
 ### Writing the close {#close}
 
@@ -207,5 +207,5 @@ Braces `{ … }` group one chunk so a binder inside reaches only it. The edges a
 | `hur` *some other time* ([a leftover occasion](/more-occasions#more-occasions)) | | `huel` *anytime except when…* ([leftover times in general](/more-occasions#more-occasions)) |
 | `herulal hal` *only when it rains* ([a restrictor list](/more-occasions#occasions-vs-a-dependent-when)) | | `thohem blarl` *if a whole sentence* ([a dependent](/more-occasions#occasions-vs-a-dependent-when)) |
 | `d[azozon]` *what was said* ([a cite](/spans#writing)) | | `donuren` *the one-word name* ([an ordinary -n word](/spans#exact-paraphrase-proper)) |
-| `d@[onuren alazun]` *the work* ([a proper span](/spans#exact-paraphrase-proper)) | | `glegon` *the name as spelling* ([a mention](/span-mention#mention)) |
+| `d@[onuren alazun]` *the work* ([a proper span](/spans#exact-paraphrase-proper)) | | `glegon` *the name as spelling* ([a mention](/spans-as-words#mention)) |
 | `th(…)` *an aside* ([a comment](/spans#asides)) | | `{ … }` *a scope island* ([a chunk for a binder](/scope-islands#scope-islands)) |

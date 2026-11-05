@@ -4,10 +4,10 @@ import { describe, it } from "node:test";
 import { compare, jobKeys, onGenerateRow, splitJobs } from "./verify.ts";
 
 const BUILD = `✓ tsc (1.2s)
-docs/grammar/intermediate/ability.md: 12 checked, 0 redundant-omitted / 12 with loose English; 14 morph gloss(es) compared to parser
-docs/grammar/intermediate/ability.md:76  practice-item  (1 English → Ageben item(s); this band teaches 1 sections, use 3–6)
-docs/grammar/review-intermediate.md:9  level-review  (no item has a **Rule:** link to ability.md intermediate; give each intermediate page at least one item)
-docs/meta/drill-generation.md:360  checkpoint-inventory  (\`ability.md\` is **generate**: write its ### Practice checkpoint (then mark it **exists**), or mark it **skip** with a reason)
+docs/grammar/intermediate/try.md: 12 checked, 0 redundant-omitted / 12 with loose English; 14 morph gloss(es) compared to parser
+docs/grammar/intermediate/try.md:76  practice-item  (1 English → Ageben item(s); this band teaches 1 sections, use 3–6)
+docs/grammar/review-intermediate.md:9  level-review  (no item has a **Rule:** link to try.md intermediate; give each intermediate page at least one item)
+docs/meta/drill-generation.md:360  checkpoint-inventory  (\`try.md\` is **generate**: write its ### Practice checkpoint (then mark it **exists**), or mark it **skip** with a reason)
 
 3 construction(s) not exercised by their anchor page. Add a teach example on that page:
   sentence.npCoordPart.itemHook  →  joins.md#right-close  (used on list-structure.md)
@@ -48,7 +48,7 @@ describe("splitJobs and jobKeys", () => {
 
   it("keys lint lines without line numbers, progress lines, or header counts", () => {
     const keys = jobKeys(jobs[1]!);
-    assert.ok(keys.includes("lint ageben | docs/grammar/intermediate/ability.md | practice-item  (1 English → Ageben item(s); this band teaches 1 sections, use 3–6)"));
+    assert.ok(keys.includes("lint ageben | docs/grammar/intermediate/try.md | practice-item  (1 English → Ageben item(s); this band teaches 1 sections, use 3–6)"));
     assert.ok(keys.includes("lint ageben | N construction(s) not exercised by their anchor page"));
     assert.ok(
       keys.includes(
@@ -74,12 +74,12 @@ describe("splitJobs and jobKeys", () => {
 });
 
 describe("onGenerateRow", () => {
-  const generate = new Set(["ability.md", "set-joins.md"]);
+  const generate = new Set(["try.md", "set-joins.md"]);
   const keys = jobKeys(splitJobs(BUILD)[1]!);
   const on = keys.filter((k) => onGenerateRow(k, generate));
 
   it("counts checkpoint errors whose subject page is a generate row", () => {
-    assert.ok(on.some((k) => k.includes("ability.md | practice-item")));
+    assert.ok(on.some((k) => k.includes("try.md | practice-item")));
     assert.ok(on.some((k) => k.includes("checkpoint-inventory")));
     assert.ok(on.some((k) => k.includes("set-joins.md  intermediate")));
   });

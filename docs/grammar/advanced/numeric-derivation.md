@@ -115,7 +115,7 @@ English *a pair of…*, *three-part…*, *primary…* can say **how many parts t
 
 | Ageben | Use | English | `-N` | Privative English | Cue |
 |--------|-----|---------|------|-------------------|-----|
-| **`+1xROOT`** | unit / primary / singleton | `zrabaxadowem`: *a single / primary voice*; SI measure nouns use published unit metaphors instead ([measure phrases](/numbers-applied#measure-phrases)) | `zrubaxadowem` | *an indistinct / non-singular voice* | **1** = one piece |
+| **`+1xROOT`** | unit / primary / singleton | `zrabaxadowem`: *a single / primary voice*; SI measure nouns use published unit metaphors instead ([measure phrases](/measures-and-percent#measure-phrases)) | `zrubaxadowem` | *an indistinct / non-singular voice* | **1** = one piece |
 | **`+2xROOT`** | dual / mutual / reciprocal / pair | `gradoxebewom`: *mutual commitment* | `grudoxebewom` | *one-sided commitment* | **2** = two sides |
 | **`+3xROOT`** | triad / triplet / 3-part / ternary | `zragexezuyol`: *a three-part dialogue* | `zrugexogahom` | *non-tripartite institution* | **3** = three parts |
 | **`+4xROOT`** | quad / 4-part / square / frame | `zrahuxuhuyom`: *a four-part / framed judgment* | `zruhuxemunam` | *an unframed message* | **4** = four sides of a frame |
@@ -383,5 +383,5 @@ z-Ahelan | d-telos-x-fire | v-see
 ## See also
 
 - Free counts / ranks / number as verb / adverb / interjection / discourse: [numbers.md](/numbers)
-- Measures and percent: [numbers-applied.md](/numbers-applied)
+- Measures and percent: [measures-and-percent.md](/measures-and-percent)
 - The root last, as in every **`x`** compound: [compounds.md](/compound-families#ordinary-compound-order)

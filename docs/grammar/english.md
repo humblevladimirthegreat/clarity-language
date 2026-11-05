@@ -34,11 +34,11 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | swap (*a book for a hammer*) | **`heham`** + `/b/` | [Exchange](/relations#exchange) |
 | intended get (*works for a money-bag*) | hook **`ol`** + `/b/` | [Hooks](/hooks#extra-noun) |
 | intended outcome, your own aim (*I practice for a race*) | **`thovam`** + `/b/` | [So that](/dependents#so-that) |
-| sake as reason (*I walk to feel connected*) | sake **`tho`** on `/th/` | [Motive](/prescription#sake-preference) |
-| noun’s purpose (*my gift for relatedness*) | sake **`tho`** on `/ɡ/` | [Motive](/prescription#sake-preference) |
-| someone's sake (*for Alazun's sake*, *good for Alazun*) | sake word + `/b/` | [Whose stake](/prescription#whose-stake) |
+| sake as reason (*I walk to feel connected*) | sake **`tho`** on `/th/` | [Motive](/for-a-sake#sake-preference) |
+| noun’s purpose (*my gift for relatedness*) | sake **`tho`** on `/ɡ/` | [Motive](/for-a-sake#sake-preference) |
+| someone's sake (*for Alazun's sake*, *good for Alazun*) | sake word + `/b/` | [Whose stake](/for-a-sake#whose-stake) |
 | *my* belonging + sake (*my tent serves the physical sake*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](/sakes#personal-possession) |
-| duration (*for three hours*) | measure phrase | [Measure phrases](/numbers-applied#measure-phrases) |
+| duration (*for three hours*) | measure phrase | [Measure phrases](/measures-and-percent#measure-phrases) |
 | set the scene for one sentence (*as for Azozon*) | **`hehugom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 
 ### *to*
@@ -49,8 +49,8 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | goal reached (*walks to the station*, *from a house to a station*) | hook **`el`** (*at*) + `/b/`; for *from … to*, **`ul`** + the source first | [Locative relations](/locative-relations#locative-relations) |
 | heading for, not there yet (*on the way to the train*) | hook **`oel`** (*toward*) + `/b/` | [Hooks](/extra-noun-hooks#extra-noun-intermediate) |
 | a stretch of time (*from the storm to the bell*) | one *from … to* unit: **`ul`** + start, **`oel`** + end | [Time](/digit-strings#time) |
-| end of a number range (*from 3 to 5*; *up to but not including 5*) | range hook **`oel`** between the two numbers (**`uel`** leaves the second out) | [Ranges of numbers](/ordered-ranges#number-ranges) |
-| end of a range on a line (*Azozon to Ahelan in the queue*) | **`oel`** between two words in one role | [Ranges](/ordered-ranges#ranges) |
+| end of a number range (*from 3 to 5*; *up to but not including 5*) | range hook **`oel`** between the two numbers (**`uel`** leaves the second out) | [Ranges of numbers](/ranges#number-ranges) |
+| end of a range on a line (*Azozon to Ahelan in the queue*) | **`oel`** between two words in one role | [Ranges](/ranges#ranges) |
 | purpose, your own aim (*I walk to sit*, *in order to sit*, *my aim is for Alazun to sit*) | **`thovam blarl`** + the sentence, naming who sits; someone else's aim adds a holder | [So that](/dependents#so-that), [Whose view](/holder#holder) |
 | an instruction or aim as content (*tells Alazun to sit*, *wishes to sit*) | stand-in **`dorl`** + the sentence; **`durl`** for *not to*; open **`dorm`** / **`durm`** when it may not be the only one (*and maybe more*) | [Stand-in vowels](/stand-in-vowels#stand-in) |
 
@@ -133,7 +133,7 @@ One English word, one row: the form that says it and the section that teaches it
 |--------------|------------|-------|
 | *in* / *into* / *inside* / *within* / *aboard* (*runs into a train*, *sits inside the house*) | hook **`al`** + `/b/`; the verb says whether anything moves; leave out the `/b/` when the place is clear (*went aboard*) | [Locative relations](/locative-relations#locative-relations) |
 | *on* / *onto* / *upon* (*sits on a chair*, *climbs onto the table*) | hook **`ael`** + `/b/`; the verb says whether anything moves | [Hooks](/hooks#extra-noun) |
-| *on it* (*sits on it too*) | resume hook **`aer`** | [Point back](/ending-grids#hook-resume) |
+| *on it* (*sits on it too*) | resume hook **`aer`** | [Point back](/in-clause-hooks#hook-resume) |
 | *beside* / *next to* / *nearby* (*sleeps near me*) | hook **`em`** + `/b/` | [Hooks](/hooks#extra-noun), [here and there](/here-there#deixis) |
 | *among* / *amid* (*sits among the guards*) | hook **`am`** + `/b/` | [Hooks](/extra-noun-hooks#extra-noun-intermediate) |
 | *over* (*a cloth over the table*: the landmark's face as the setting) | hook **`aem`** + `/b/`; plain height (*above the table*) is gravity **`habuhol`** | [Hooks](/extra-noun-hooks#extra-noun-intermediate), [Gravity](/viewpoint#gravity) |
@@ -143,8 +143,8 @@ One English word, one row: the form that says it and the section that teaches it
 | *with* / *alongside* / *along with* (*runs with Alazun*) | **`han`** + `/b/` | [Join-relations](/join-relations#join-relations) |
 | *without* / *apart from* (*walks apart from the house*) | **`huan`** + `/b/` | [Join-relations](/join-relations#join-relations) |
 | *via* / *by way of* / *through* / *along* (*goes via the station*, *walks along the road*) | hook **`uel`** + `/b/` (**`uem`** for a setting) | [Hooks](/hooks#extra-noun) |
-| *through there* | resume hook **`uer`** | [Point back](/ending-grids#hook-resume) |
-| *with it* (the same tool) | resume hook **`aor`** | [Point back](/ending-grids#hook-resume) |
+| *through there* | resume hook **`uer`** | [Point back](/in-clause-hooks#hook-resume) |
+| *with it* (the same tool) | resume hook **`aor`** | [Point back](/in-clause-hooks#hook-resume) |
 | *off* / *away from* / *out of* (*walks off the road*) | hook **`ul`** + `/b/` | [Hooks](/hooks#extra-noun) |
 | *off* (switched off, disconnected) | `govugul` (*disconnection*, as an adjective) | [Adjectives](/clause#adjectives-ɡ) |
 | *outside* / *external* / *outdoors* (*sits outside the house*) | hook **`al`** + the landmark + the join **`bul`** (*in, not the house*): `al bohehal bul` | [Hooks](/hooks#extra-noun), [negation](/joins#negation-u) |
@@ -167,7 +167,7 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 | English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *including* (*the family, including Azozon*) | hook **`al`** (**`am`**: and maybe more) between the two | [Including](/hooks#including) |
-| *even* (*Alazun walks, and even Azozon does*) | surprise **`wemem`** before **`al`**: `zalazun wemem al zazozon vowurol` | [Detail on the hook](/ending-grids#hook-w) |
+| *even* (*Alazun walks, and even Azozon does*) | surprise **`wemem`** before **`al`**: `zalazun wemem al zazozon vowurol` | [Detail on the hook](/in-clause-hooks#hook-w) |
 | *except* / *excluding* / *other than* (*the family except Azozon*) | hook **`ul`** (**`um`**: and maybe others) between the two | [Except](/hooks#except) |
 | *instead of* / *rather than* (*coffee instead of tea*) | hook **`el`**, with what you expected first: `dedudal el dogudal` | [Instead](/hooks#instead) |
 | *or rather* (*tired, or rather, sleepy*) | hook **`ol`** between the two wordings | [Rather](/hooks#rather) |
@@ -346,7 +346,7 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebe
 |--------------|------------|-------|
 | *now, about Azozon*, *speaking of Azozon* | `/x/` + the noun: **`xazozon`** | [Topic](/topic#topic) |
 | *now, about Sam* (a foreign name) | <code>x@&lt;Sam&gt;</code> | [Topic](/topic#topic), [spans](/quote-contents#topic-quotes) |
-| *now, about the word “odoze”* | `glegol x[odoze]` | [Topic](/topic#topic), [mention](/span-mention#mention) |
+| *now, about the word “odoze”* | `glegol x[odoze]` | [Topic](/topic#topic), [mention](/spans-as-words#mention) |
 | *now, about Onuren Alazun* (the work) | `x@[onuren alazun]` | [Topic](/topic#topic), [cite](/spans#writing) |
 | *back to Azozon*, *as I was saying about Azozon* | `/x/` + whole stem + **-r**: **`xazozor`** | [Return](/topic#topic-return) |
 | *anyway, Azozon …* (after a side topic) | **`er xazozor …`** | [Return](/topic#topic-return), [resume hooks](/discourse-hooks#discourse) |

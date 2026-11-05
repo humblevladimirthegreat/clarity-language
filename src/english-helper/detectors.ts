@@ -80,7 +80,7 @@ export const ROUTE_QUALIFIERS: Readonly<Record<Exclude<RouteClass, "kin">, strin
 /**
  * English that picks a sake word's **-l** or **-r** ending, by stance vowel; none is **-m**
  * ([met](sakes.md#time-horizon-endings-on-met), [unmet](sakes.md#sake-changeability),
- * [ought](ought-for-a-sake.md#sake-force), [motive](prescription.md#sake-preference)).
+ * [ought](ought-for-a-sake.md#sake-force), [motive](for-a-sake.md#sake-preference)).
  */
 export const SAKE_ENDINGS: Readonly<Record<string, { l: string[]; r: string[] }>> = {
   a: { l: ["lasting", "in the long run", "in the long term", "over time"], r: ["immediate", "immediately", "right now", "right away", "quick"] },
@@ -192,7 +192,7 @@ export const HOOK_LINKS = {
   /** A hook right after a subject or object can describe that noun. */
   onNoun: ["locative-relations.md#locative-relations"],
   fromTo: ["digit-strings.md#time", "locative-relations.md#locative-relations"],
-  resume: ["ending-grids.md#hook-resume"],
+  resume: ["in-clause-hooks.md#hook-resume"],
   blank: ["fill-ask-jobs.md#where", "here-there.md#place-indefinites"],
   /** *everyone at the house*: the hook bounds the join's set. */
   hookedJoin: ["hooked-joins.md#hooked-joins"],
@@ -335,7 +335,7 @@ export function extraNounHook(word: string): DetectorHit {
  * stance then takes a holder. The analyzer drops it when the speaker owns the stance, and drops its
  * bare twin when someone else does.
  */
-export const HOLDER_LINKS: readonly string[] = ["holder.md#holder", "want.md#whose-intention"];
+export const HOLDER_LINKS: readonly string[] = ["holder.md#holder", "want-and-decide.md#whose-intention"];
 
 /**
  * A slot whose suggestions link one of these names a feeling or a stake (*upset*, *glad*). When
@@ -369,7 +369,7 @@ export const SPEAKER_ONLY_LINKS: readonly string[] = ["feelings-permission.md#sp
 
 /**
  * Whose stance a word before the stance names: the speaker, someone else, or *we* (your own
- * stance for the group, or a shared one with the interlocutors as holder: want.md#whose-intention).
+ * stance for the group, or a shared one with the interlocutors as holder: want-and-decide.md#whose-intention).
  */
 const SPEAKER_WORDS = new Set(["i", "me", "my", "mine", "myself"]);
 const GROUP_WORDS = new Set(["we", "us", "our", "ours", "ourselves"]);

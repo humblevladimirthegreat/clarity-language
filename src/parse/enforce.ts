@@ -336,7 +336,7 @@ function enforceNameInstance(word: LexWord): void {
   }
 }
 
-/** Stacked join **-r** (`zuar` / `vaor` / `xuar` / `gaor`) has no reading outside the `/th/` fill-ask (vp-clause-forms.md § Standalone stance joins). */
+/** Stacked join **-r** (`zuar` / `vaor` / `xuar` / `gaor`) has no reading outside the `/th/` fill-ask (verb-and-stance-joins.md § Standalone stance joins). */
 function enforceStackedJoinR(word: LexWord): void {
   const family = word.family;
   if (family.kind !== "joinMarker" || word.ending !== "r" || family.series.length < 2) return;
@@ -351,7 +351,7 @@ function enforceStandInRole(word: LexWord): void {
   if (["g", "h", "w", "th"].includes(word.pos ?? "")) throw new ConstructionError("standInRole", word.raw);
 }
 
-/** Stacked range hook **-r** (`oer` / `uar` / `uor`) is only a range member between same-role words (ordered-ranges.md#ranges). `aor` / `aer` / `uer` with nothing on the right point back (extra noun); between same-role words `aor` / `uer` are range members. */
+/** Stacked range hook **-r** (`oer` / `uar` / `uor`) is only a range member between same-role words (ranges.md#ranges). `aor` / `aer` / `uer` with nothing on the right point back (extra noun); between same-role words `aor` / `uer` are range members. */
 function enforceStackedHookR(word: LexWord, tokens: IToken[], i: number): void {
   if (word.family.kind !== "hook" || word.ending !== "r" || word.family.form.length < 3) return;
   if (["ao", "ae", "ue"].includes(word.family.form.slice(0, -1))) return;
@@ -668,7 +668,7 @@ function enforceOffsets(units: Unit[], directive: boolean): void {
   }
 }
 
-/** A rank fence's bar: one value-setting stance, ranked against one item (sake-bars.md#bars). */
+/** A rank fence's bar: one value-setting stance, ranked against one item (bars.md#bars). */
 function enforceBars(coord: NpCoord, tables: ClassifyTables): void {
   for (const part of coord.parts) {
     const bars = part.items.flatMap((item) => (item.kind === "bar" ? [item.bar] : []));
@@ -740,7 +740,7 @@ function isSpeakerParticipant(unit: Unit): boolean {
 
 /**
  * WANT, PLAN and DECISION host no person: with no holder they are the speaker's own, and someone else's goes through a
- * holder seam, so a `/b/` cannot slip in another person's wish, plan or choice with no grounds (want.md#whose-intention).
+ * holder seam, so a `/b/` cannot slip in another person's wish, plan or choice with no grounds (want-and-decide.md#whose-intention).
  * WANT and PLAN take a time offset; DECISION carries no time, so it takes no `/b/` at all.
  */
 function enforceIntentionHost(unit: HUnit): void {
@@ -810,7 +810,7 @@ function enforceSameRoleWord(units: Unit[], at: number): void {
   if (!before && !after) throw new ConstructionError("sameRoleSides", run);
 }
 
-/** Two number ends of a range share one line: an amount and a rank have no range (ordered-ranges.md#ranges). */
+/** Two number ends of a range share one line: an amount and a rank have no range (ranges.md#ranges). */
 function enforceSpanEnds(hook: LexWord, prev: Unit | undefined, next: Unit | undefined): void {
   const a = edgeWord(prev, "last");
   const b = edgeWord(next, "first");
@@ -1058,7 +1058,7 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
 
 /**
  * `/w/` grades a reaction, never a call; a number cheer or a `/y/` span takes no describing words at all
- * (speech-acts.md#describe-turn-word).
+ * (more-turn-words.md#describe-turn-word).
  */
 function enforceTurnWordMods(left: LeftEdge): void {
   left.vocativeAdjs?.forEach((mods, i) => {
@@ -1076,9 +1076,9 @@ function enforceTurnWordMods(left: LeftEdge): void {
 /** A `gl-` adjective leans on the next noun, call, or reaction (or a mention marker on its topic span); one with nothing after it is left over (left-bound-adjectives.md#left-bound-adjectives). */
 function enforceGlLeans(result: ParseResult): void {
   const leaning = new Set<LexWord>();
-  // The mention marker before a topic span leans on that span (span-mention.md#mention).
+  // The mention marker before a topic span leans on that span (spans-as-words.md#mention).
   for (const { bodies } of result.utterances) for (const { topicMarker } of bodies) if (topicMarker) leaning.add(topicMarker);
-  // A `gl-` adjective before a call or reaction leans on it (speech-acts.md#describe-turn-word).
+  // A `gl-` adjective before a call or reaction leans on it (more-turn-words.md#describe-turn-word).
   for (const { left } of result.utterances) {
     for (const mods of [...(left.vocativeAdjs ?? []), ...(left.interjectionMods ?? [])]) if (mods.glAdj) leaning.add(mods.glAdj.word);
   }
@@ -1207,7 +1207,7 @@ const isAny = (token: IToken, types: TokenType[]): boolean => types.some((type) 
 const DESCRIBING = [G, W, HostedB];
 
 /**
- * Name the rule behind a parse failure: a `/b/` after a word with no `/b/` slot (numbers-applied.md#measure-phrases), a
+ * Name the rule behind a parse failure: a `/b/` after a word with no `/b/` slot (measures-and-percent.md#measure-phrases), a
  * `gl-` adjective with nothing to lean on (left-bound-adjectives.md#left-bound-adjectives), respectively `wazem` away from a join word,
  * or
  * a noun or verb right after a phrase of the same slot (joins.md#right-close): a join word before its conjuncts, or

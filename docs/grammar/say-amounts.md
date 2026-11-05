@@ -45,9 +45,9 @@ Equality **`oe`** with a shared scale needs **two or more** names. **`oe`** with
 ### Measured differentials {#measured-differentials}
 <a id="measure-gap"></a>
 
-**Needs:** [Comparatives](/comparatives#comparatives) · [Measure phrases](/numbers-applied#measure-phrases)
+**Needs:** [Comparatives](/comparatives#comparatives) · [Measure phrases](/measures-and-percent#measure-phrases)
 
-English *two meters taller* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit** (published abstract = SI name), and `/ɡ/` on the unit is the **amount** ([measure phrases](/numbers-applied#measure-phrases)).
+English *two meters taller* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit** (published abstract = SI name), and `/ɡ/` on the unit is the **amount** ([measure phrases](/measures-and-percent#measure-phrases)).
 
 > `zazozon zalazun zol gadahom blezerom gradol.`
 >
@@ -76,7 +76,7 @@ To score the shared adjective as of a dated now, write [*as-of*](/as-of#as-of) o
 <a id="no-metric-prefixes"></a>
 <a id="metric-prefixes"></a>
 
-**Needs:** [Measure phrases](/numbers-applied#measure-phrases) · [Exponents](/digitless-exponents#exponents)
+**Needs:** [Measure phrases](/measures-and-percent#measure-phrases) · [Exponents](/digitless-exponents#exponents)
 
 Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / an exact count): `bezerom g+5400` or `bezerom g+5.4e3`; `buberem g+70e3`.
 
@@ -88,7 +88,7 @@ For *two meters taller*, see [measured differentials](#measured-differentials). 
 <a id="percent-denominators"></a>
 <a id="percent-of-what"></a>
 
-**Needs:** [Percent](/numbers-applied#percent-and-percentage-points) · [Associative `-x`](/plurality#associative) · [Resume](/pronouns#resume-r)
+**Needs:** [Percent](/measures-and-percent#percent-and-percentage-points) · [Associative `-x`](/plurality#associative) · [Resume](/pronouns#resume-r)
 
 | Ageben | Use | English |
 |--------|-----|---------|
@@ -109,7 +109,7 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 ### *Most* {#most}
 
-**Needs:** [Percent](/numbers-applied#percent-and-percentage-points) · [Ranges](/ordered-ranges#number-ranges)
+**Needs:** [Percent](/measures-and-percent#percent-and-percentage-points) · [Ranges](/ranges#number-ranges)
 
 *Most of the cats* means *more than half*: the band from all of them down to half, with half left out. Write **`g+100%`**, then **`uel`**, then **`g+50%`**. **`uel`** leaves out the end said second.
 
@@ -123,9 +123,9 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 ### *One in three* {#one-in-n}
 
-**Needs:** [Fractions](/numbers-applied#fractions)
+**Needs:** [Fractions](/measures-and-percent#fractions)
 
-*One in three cats* is the same share as *a third of the cats*. Write the [fraction](/numbers-applied#fractions) **`g-N`** right after the noun.
+*One in three cats* is the same share as *a third of the cats*. Write the [fraction](/measures-and-percent#fractions) **`g-N`** right after the noun.
 
 > `zogozelx grugel vehohel.`
 >
@@ -137,7 +137,7 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 ### *Per hour* and *3 to 1* {#per-unit}
 
-**Needs:** [Number as adverb](/number-roles#number-as-adverb-by-marker) · [Measure phrases](/numbers-applied#measure-phrases) · [Factor](/comparative-arity#factor)
+**Needs:** [Number as adverb](/number-roles#number-as-adverb-by-marker) · [Measure phrases](/measures-and-percent#measure-phrases) · [Factor](/comparative-arity#factor)
 
 *Three times an hour* is a count per unit. Write the count, then the divider **`hrubal`** (*÷1*), then the unit as a `bl-` word right after it. The divider hosts the unit, so the `bl-` word is structural, not a recipient.
 
@@ -155,9 +155,9 @@ A ratio (*three cats to one dog*) is a [factor](/comparative-arity#factor) on th
 
 ### Percent points, factors, and other wholes
 
-**Needs:** [Percent](/numbers-applied#percent-and-percentage-points) · [Number as adverb](/number-roles#number-as-adverb-by-marker) · [Of relations](/of-relations#of-relations)
+**Needs:** [Percent](/measures-and-percent#percent-and-percentage-points) · [Number as adverb](/number-roles#number-as-adverb-by-marker) · [Of relations](/of-relations#of-relations)
 
-**`yu`** is a point-scale amount or delta (`+2` percentage points; often `/v/` **`ra`** / **`ru`**: increase or decrease by that point amount). `from A% to B%` uses [ranges](/ordered-ranges#number-ranges).
+**`yu`** is a point-scale amount or delta (`+2` percentage points; often `/v/` **`ra`** / **`ru`**: increase or decrease by that point amount). `from A% to B%` uses [ranges](/ranges#number-ranges).
 
 **For *+50% relative to baseline*, use:** a multiplicative `/h/` factor (**`h+1.5`**, …) or ordinary *relative-to* wording.
 
@@ -170,7 +170,7 @@ A bare `/z/` (or other freestanding) **`…yo`** percent with no named whole is 
 ### Unspecified value in the range (**-r**)
 <a id="unspecified-value-in-the-range--r"></a>
 
-**Needs:** [Ranges](/ordered-ranges#number-ranges) · [Named and unknown ranges](/open-ranges#named-ranges)
+**Needs:** [Ranges](/ranges#number-ranges) · [Named and unknown ranges](/open-ranges#named-ranges)
 
 A range hook with **-r** names **one value in the band** without saying which.
 
@@ -300,7 +300,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 ### How many and how big {#quantity-words}
 
-**Needs:** [Many and few](/vague-amounts#vague-amounts) · [Bars](/sake-bars#bars) · [Place on a scale](/comparative-arity#place-on-a-scale) · [Measure phrases](/numbers-applied#measure-phrases) · [Rays](/open-ranges#rays) · [Fractions](/numbers-applied#fractions)
+**Needs:** [Many and few](/vague-amounts#vague-amounts) · [Bars](/bars#bars) · [Place on a scale](/comparative-arity#place-on-a-scale) · [Measure phrases](/measures-and-percent#measure-phrases) · [Rays](/open-ranges#rays) · [Fractions](/measures-and-percent#fractions)
 
 | English | Ageben |
 |---------|--------|
@@ -319,7 +319,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *literally* (*word for word*) | an exact quote: bare brackets, no `~` ([exact, paraphrase, proper](/spans#when-required)) |
 | *a dozen* | `zudalx g+12` |
 | *a quarter of the cats* | `zogozelx g-4` (or `g+25%`) |
-| *two thirds of the cats*, *three quarters* | `zogozelx gradol grugel` (count, then [fraction](/numbers-applied#fractions)) |
+| *two thirds of the cats*, *three quarters* | `zogozelx gradol grugel` (count, then [fraction](/measures-and-percent#fractions)) |
 | *a third of an hour* | `bagorum grabal grugel` |
 | *the second biggest*, *the third tallest* | `zazozon zol wrodol gelazem` ([place on a scale](/comparative-arity#place-on-a-scale)) |
 | *twice* / *double* (two times) | `h+2` before the verb |
@@ -347,7 +347,7 @@ With no `/b/`, **`thubom`** is the item's own usual level or the usual case in t
 | *strong* / *powerful* (than most people) | `thubom bleyelx zol gabobem` |
 | *weak* / *feeble* / *frail* (than most people) | `thubom bleyelx zuol gabobem` |
 | *weak today* / *not as strong as usual* | `thubom zuol gabobem` |
-| *not strong enough* (for what you need) | `thudatham zuol gabobem` ([sake bar](/sake-bars#sake-bars)) |
+| *not strong enough* (for what you need) | `thudatham zuol gabobem` ([sake bar](/bars#sake-bars)) |
 | *busy* / *hard-working* | `thubom zol guzubam` (more effort than usual) |
 | *far* / *far away* / *distant* / *remote* | `thubom zol guzavom` (farther than usual) |
 | *wide* / *broad* | `thubom zol gorahom` |
@@ -424,7 +424,7 @@ English *just*, *only*, *especially* and *also* point at one item and say how it
 
 ### Group, crowd, bunch, pair, list, range, member {#group-words}
 
-**Needs:** [Associative group](/plurality#associative) · [Many and few](/vague-amounts#vague-amounts) · [Unspecified member](/joins#unspecified-member-r) · [Ranges](/ordered-ranges#number-ranges) · [Of relations](/of-relations#of-relations)
+**Needs:** [Associative group](/plurality#associative) · [Many and few](/vague-amounts#vague-amounts) · [Unspecified member](/joins#unspecified-member-r) · [Ranges](/ranges#number-ranges) · [Of relations](/of-relations#of-relations)
 
 English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). Ageben has no noun for the set itself. It marks the kind as a **group in this situation** with **-x** after the ending (**-lx** for everyday things), and a number or a vague amount says how big. A set of people, flowers or cats is the kind plus **-x**, not a separate word.
 
@@ -465,7 +465,7 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 ### Named standards and derived units
 <a id="unit-short-form"></a>
 
-**Needs:** [Measure phrases](/numbers-applied#measure-phrases) · [Proper name `-n`](/proper-names#proper-name--n)
+**Needs:** [Measure phrases](/measures-and-percent#measure-phrases) · [Proper name `-n`](/proper-names#proper-name--n)
 
 Everyday measure uses the **unit metaphor** on the stock roots above (`bezerom gradol`). When you cite the **conventional SI name** as a titled standard (*the meter*, *the pascal*), use **-n** on that unit root ([named handles](/word-endings#named-n-beginner)). Resume a prior unit phrase with **-r** on the same root (`bezeror gradol` after `bezerom gradol` is on the table).
 

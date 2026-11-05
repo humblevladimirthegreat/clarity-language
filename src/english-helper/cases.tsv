@@ -110,7 +110,7 @@ Seven or more birds sing.	Seven or more	form:grarel	the ray is respelled with th
 Uzozen reads less than four books.	less than four	form:gruwal	*less than* reaches the ray on −∞, on `g` before its noun
 Uzozen sees at least two cats.	at least two	link:say-amounts.md#quantity-words	*at least 5* matches *at least two*
 Uzozen sees the 3rd through last cars.	3rd through last	form:grogel	a rank cue matches another rank
-Uzozen sees three to five cats.	three to five	link:ordered-ranges.md#number-ranges	*3 to 5* is a range of numbers
+Uzozen sees three to five cats.	three to five	link:ranges.md#number-ranges	*3 to 5* is a range of numbers
 Uzozen sees three to five cats.	three to five	form:oel	a number range takes the range hook, never *including* `al`
 Uzozen sees three to five cats.	three to five	not:hooks.md#including	a number range is not *including*
 Uzozen sees cats up to but not including five.	to	shape:oel / uel	the number-range row offers the half-open hook
@@ -134,25 +134,25 @@ Uzozen does not run.	not	shape:role letter + u + -l	the row shows the join patte
 Azozon intends to walk.	intends to	link:holder.md#holder	someone else's intention takes a holder + PLAN
 Azozon's plan is to walk.	plan is to	link:holder.md#holder	someone else's plan takes a holder + PLAN
 He plans to sing.	plans to	link:holder.md#holder	a pronoun subject's plan takes a holder
-Azozon wants to walk.	wants to	link:want.md#whose-intention	someone else's want takes a holder + WANT
-She wants a dog.	wants	link:want.md#whose-intention	*wants* with a noun is still someone else's want
-Do you want to sing?	want to	not:want.md#whose-intention	a bare WANT in a question asks the listener's want
-I want to walk.	I want to	not:want.md#whose-intention	the speaker's own want is WANT alone
+Azozon wants to walk.	wants to	link:want-and-decide.md#whose-intention	someone else's want takes a holder + WANT
+She wants a dog.	wants	link:want-and-decide.md#whose-intention	*wants* with a noun is still someone else's want
+Do you want to sing?	want to	not:want-and-decide.md#whose-intention	a bare WANT in a question asks the listener's want
+I want to walk.	I want to	not:want-and-decide.md#whose-intention	the speaker's own want is WANT alone
 My plan is to walk.	My plan is to	not:holder.md#holder	the speaker's own plan is PLAN alone
 I plan to walk.	I plan to	not:holder.md#holder	the speaker's own plan is PLAN alone
-Do you really want to sing?	want to	not:want.md#whose-intention	the listener owns the want past an adverb, in a question
-Azozon does not want to walk.	want to	link:want.md#whose-intention	the owner is found past *does not*
+Do you really want to sing?	want to	not:want-and-decide.md#whose-intention	the listener owns the want past an adverb, in a question
+Azozon does not want to walk.	want to	link:want-and-decide.md#whose-intention	the owner is found past *does not*
 His plan is to walk.	plan is to	link:holder.md#holder	a possessor owns the plan
-Azozon wanted to walk.	wanted to	link:want.md#whose-intention	a past *wanted to* matches the *want to* cue
-I really want to walk.	want to	not:want.md#whose-intention	the speaker owns the want past an adverb
+Azozon wanted to walk.	wanted to	link:want-and-decide.md#whose-intention	a past *wanted to* matches the *want to* cue
+I really want to walk.	want to	not:want-and-decide.md#whose-intention	the speaker owns the want past an adverb
 I really want to walk.	want to	link:say-tense.md#will-want	the speaker's own want is WANT alone
-We want to walk.	We want	link:want.md#whose-intention	*we want* has a row for the shared want
+We want to walk.	We want	link:want-and-decide.md#whose-intention	*we want* has a row for the shared want
 We want to walk.	We want	link:say-tense.md#will-want	*we want* has a row for your own want for the group
-I think Azozon wants to walk.	wants to	link:want.md#whose-intention	the inner clause's subject owns the want
+I think Azozon wants to walk.	wants to	link:want-and-decide.md#whose-intention	the inner clause's subject owns the want
 Azozon intends to walk.	intends to	link:holder.md#holder	someone else's intention leads with the holder row
 I intend to walk.	intend to	not:holder.md#holder	the speaker's intention is the PLAN sketch
-I've decided to walk.	decided to	not:want.md#whose-intention	the speaker's decision is DECISION alone
-Azozon has decided to walk.	decided to	link:want.md#whose-intention	someone else's decision takes a holder
+I've decided to walk.	decided to	not:want-and-decide.md#whose-intention	the speaker's decision is DECISION alone
+Azozon has decided to walk.	decided to	link:want-and-decide.md#whose-intention	someone else's decision takes a holder
 Azozon has decided to walk.	decided to	not:say-tense.md#will-want	the bare DECISION row is the holder row's twin
 # Same-role words: *before* / *after* / *while* / *like* when both share a role
 Azozon walks before Ahelan.	before	link:same-role-words.md#before-and-after	both walk: the same-role word
@@ -179,13 +179,13 @@ Alazun seems upset.	upset	has:holder-feeling	the owner is found past a copula ve
 I am upset.	upset	not:holder.md#holder	the speaker's own feeling takes no holder
 # The holder spelled with the owner
 You want to sing.	want to	form:theyomawan	the listener as holder is the listener special pronoun
-# Questions, *we*, and speaker-only attitudes (want.md#whose-intention)
+# Questions, *we*, and speaker-only attitudes (want-and-decide.md#whose-intention)
 Do you really want to sing?	want to	link:say-tense.md#will-want	a question asks with WANT alone
-Does Azozon want to sing?	want to	link:want.md#whose-intention	someone else's want in a question keeps the holder
-You want to sing.	want to	link:want.md#whose-intention	the listener's want in a statement takes a holder
+Does Azozon want to sing?	want to	link:want-and-decide.md#whose-intention	someone else's want in a question keeps the holder
+You want to sing.	want to	link:want-and-decide.md#whose-intention	the listener's want in a statement takes a holder
 We really want to walk.	want to	link:say-tense.md#will-want	*we*: your own want for the group
 We really want to walk.	want to	form:theyomayan	*we*: a shared want takes the interlocutors as holder
 I hope Alazun walks.	I hope	link:feelings-permission.md#speaker-attitude	your own hope is *hopefully*
 Azozon hopes Alazun walks.	hopes	not:feelings-permission.md#speaker-attitude	*hopefully* is never someone else's hope
-Azozon hopes Alazun walks.	hopes	link:want.md#whose-intention	someone else's hope is holder + WANT
-Azozon wishes Alazun would walk.	wishes	link:want.md#whose-intention	someone else's wish is holder + WANT
+Azozon hopes Alazun walks.	hopes	link:want-and-decide.md#whose-intention	someone else's hope is holder + WANT
+Azozon wishes Alazun would walk.	wishes	link:want-and-decide.md#whose-intention	someone else's wish is holder + WANT

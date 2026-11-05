@@ -250,7 +250,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.equal(merged.family.kind === "number" && merged.family.stem.groups.length, 1);
   });
 
-  it("parses letter codes on _ in writing and speech (numbers-applied.md § Letter codes)", () => {
+  it("parses letter codes on _ in writing and speech (measures-and-percent.md § Letter codes)", () => {
     for (const [writing, speech, fields] of [
       ["z_b12", "zrebubadol", [{ code: "b12" }]],
       ["z_4b", "zrehubul", [{ code: "4b" }]],

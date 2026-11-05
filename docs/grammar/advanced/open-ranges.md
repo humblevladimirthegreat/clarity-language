@@ -8,7 +8,7 @@ band: advanced
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-English *5 or more* / *less than 5* is a **ray**: a band with only one end. Write it as a [range](/ordered-ranges#number-ranges) whose other end is infinity: **`zrawal`** (+∞) or **`zruwal`** (−∞), the [digitless exponents](special-values.md#special-values). The same **`oel`** / **`uel`** rules apply, so **`uel`** leaves out the end said second.
+English *5 or more* / *less than 5* is a **ray**: a band with only one end. Write it as a [range](/ranges#number-ranges) whose other end is infinity: **`zrawal`** (+∞) or **`zruwal`** (−∞), the [digitless exponents](special-values.md#special-values). The same **`oel`** / **`uel`** rules apply, so **`uel`** leaves out the end said second.
 
 > `zrazal oel zrawal.`
 >
@@ -69,7 +69,7 @@ With **-r**, the hook stands in for one value you are not naming. Under a [quest
 
 In a question the range is the [fill-ask](/questions#fill-ask) blank, so like any blank it goes first, together with the noun it counts. The answer names the value: the number alone (`yal ragel.` *Three.*) or with the noun (`yal ogozelx gragel.` *Three cats.*).
 
-The [range hooks](/ordered-ranges#ranges) take **-r** the same way: `zragel uor zrazal` is *some value strictly between 3 and 5*, and `zragel uar zrazal` *some value outside 3–5*.
+The [range hooks](/ranges#ranges) take **-r** the same way: `zragel uor zrazal` is *some value strictly between 3 and 5*, and `zragel uar zrazal` *some value outside 3–5*.
 
 ### Practice {#advanced-practice}
 

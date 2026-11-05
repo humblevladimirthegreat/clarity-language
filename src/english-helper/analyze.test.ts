@@ -32,7 +32,7 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
   const holderPhrase = (text: string, slot: string) =>
     slots(text)
       .find((s) => s.text === slot)!
-      .suggestions.find((s): s is JobSuggestion => s.kind === "job" && s.link === "want.md#whose-intention")!.phrase!;
+      .suggestions.find((s): s is JobSuggestion => s.kind === "job" && s.link === "want-and-decide.md#whose-intention")!.phrase!;
   const hosts = (phrase: string) => phrase.split(" / ").map((p) => holderHost(p.split(" ")[0]!));
   const channel = (gloss: string) => `th${lookupLexicon(data.lexicon, [gloss]).find((s) => s.tier === "overlay" && s.pos === "th")!.form}`;
 

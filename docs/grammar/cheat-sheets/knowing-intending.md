@@ -7,7 +7,7 @@ outline: false
 
 # Knowing and intending cheat sheet {#knowing-intending-cheat-sheet}
 
-[Knowing](/knowing), [notional and standing](/notional-standing), and [intention](/intention). Stage: **B** Beginner, **I** Intermediate, **A** Advanced. Ending: **-l** firm, **-m** default, **-r** for now.
+[Knowing](/knowing), [notional and standing](/residue-and-former), and [intention](/intention). Stage: **B** Beginner, **I** Intermediate, **A** Advanced. Ending: **-l** firm, **-m** default, **-r** for now.
 
 ## How you know {#how-you-know}
 
@@ -120,8 +120,8 @@ MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words
 <!-- generated: overlays pos=th|h kind=may|notional|mirative|residue|former_climate -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](/notional-standing#residue-and-former-climate) | I |
-| `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](/notional-standing#residue-and-former-climate) | I |
+| `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](/residue-and-former#residue-and-former-climate) | I |
+| `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](/residue-and-former#residue-and-former-climate) | I |
 | `themel` | mirative mood overturning a firm expectation | [Mirative (themem)](/mirative#mirative) | I |
 | `themem` | mirative mood (newly found out and not expected) | [Mirative (themem)](/mirative#mirative) | I |
 | `themer` | mirative mood against a loose expectation | [Mirative (themem)](/mirative#mirative) | I |
@@ -137,12 +137,12 @@ MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words
 |-----|---------|---------|-------|
 | [MAY](/knowing#may) | `zalazun thomam dahelan vudurul.` | *Alazun may be leaving Ahelan.* | B |
 | [MAY, ask to find out](/knowing#follow-up-endings-may) | `yel zazozon vabuvul thomal dalazun.` | *Might Azozon be punching Alazun? let's find out.* | B |
-| [RESIDUE](/notional-standing#residue-and-former-climate) | `zalazun haram vudurul.` | *Alazun has left and is still gone.* | I |
-| [RESIDUE with a channel](/notional-standing#residue-and-former-climate) | `zalazun thevum haram vudurul.` | *I remember Alazun leaving, and Alazun is still gone.* | I |
-| [FORMER after the verb](/notional-standing#residue-and-former-climate) | `zazozon hual vozuyel helam.` | *Azozon always used to sing.* | I |
-| [A channel as the bar](/sake-bars#channel-bars) | `thugem` before `zol` | *than it looks* | I |
+| [RESIDUE](/residue-and-former#residue-and-former-climate) | `zalazun haram vudurul.` | *Alazun has left and is still gone.* | I |
+| [RESIDUE with a channel](/residue-and-former#residue-and-former-climate) | `zalazun thevum haram vudurul.` | *I remember Alazun leaving, and Alazun is still gone.* | I |
+| [FORMER after the verb](/residue-and-former#residue-and-former-climate) | `zazozon hual vozuyel helam.` | *Azozon always used to sing.* | I |
+| [A channel as the bar](/bars#channel-bars) | `thugem` before `zol` | *than it looks* | I |
 
-Neither MAY nor MIRATIVE can be a [comparison bar](/sake-bars#channel-bars).
+Neither MAY nor MIRATIVE can be a [comparison bar](/bars#channel-bars).
 
 <PageBreak />
 
@@ -167,18 +167,18 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 <!-- generated: overlays pos=th|h kind=want|plan|decision|attempt -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](/ability#try) | I |
-| `howam` | attempt mood (commitment unstated) | [Try](/ability#try) | I |
-| `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](/ability#try) | I |
+| `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](/try#try) | I |
+| `howam` | attempt mood (commitment unstated) | [Try](/try#try) | I |
+| `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](/try#try) | I |
 | `thagol` | plan mood atlas map-resolution (includes backups; fully prepared) | [Plan](/intention#plan) | B |
 | `thagom` | plan mood itinerary map-resolution (steps on the map; detail unstated) | [Plan](/intention#plan) | B |
 | `thagor` | plan mood sketch map-resolution (direction only; details left open) | [Plan](/intention#plan) | B |
-| `thalol` | want mood lasting (a wish that keeps returning) | [Want](/want#want) | I |
-| `thalom` | want mood (duration unstated) | [Want](/want#want) | I |
-| `thalor` | want mood passing (a whim that fades) | [Want](/want#want) | I |
-| `thogel` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](/want#decision-revisability) | I |
-| `thogem` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](/want#decision-revisability) | I |
-| `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/want#decision-revisability) | I |
+| `thalol` | want mood lasting (a wish that keeps returning) | [Want](/want-and-decide#want) | I |
+| `thalom` | want mood (duration unstated) | [Want](/want-and-decide#want) | I |
+| `thalor` | want mood passing (a whim that fades) | [Want](/want-and-decide#want) | I |
+| `thogel` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
+| `thogem` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
+| `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
 <!-- /generated -->
 
 <PageBreak />
@@ -188,21 +188,21 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 | [Plan](/intention#plan-predict): yours | `zuwen thagom vowurol.` | *I plan to walk.* | B |
 | [Plan, sketch](/intention#plan-predict) | `zuwen thagor vowurol.` | *I intend to walk; the details are open.* | B |
 | [Plan, atlas](/intention#plan-predict) | `zuwen thagol vowurol.` | *I'm fully prepared to walk.* | B |
-| [Decision](/want#decision): yours, no time | `zuwen thogem vozuyel.` | *I've decided to sing, and can still change that.* | I |
-| [Try](/ability#try) | `zazozon howam varuyol.` | *Azozon tries to write.* | I |
-| [Trial run](/ability#try) | `zalazun howar vozuyel.` | *Alazun gives singing a try.* | I |
-| [Committed](/ability#try) | `zalazun howal vowurol.` | *Alazun keeps trying to walk.* | I |
-| [Want](/want#want): yours | `zazozon thalom vowurol.` | *I want Azozon to walk.* | I |
-| [Someone else's want](/want#whose-intention): a holder | `zazozon thebamazozon thalom vowurol.` | *I hear Azozon wants to walk.* | I |
-| [Want, a whim](/want#want-endings) | `zalazun thalor vozuyel.` | *Right now I feel like having Alazun sing.* | I |
-| [Stacked: want, then plan](/want#want-endings) | `zuwen thalol thagom vowurol.` | *I have long wanted to walk, and I plan to.* | I |
-| [Against my wishes](/want#want-endings) | `zazozon vowurol uom thalom.` | *Azozon walks, against my wishes.* | I |
-| [Against someone's wishes](/want#whose-intention) | `zalazun vezuvel uom theyomazozon thalom.` | *Alazun sleeps, against Azozon's wishes, as far as I can tell.* | I |
+| [Decision](/want-and-decide#decision): yours, no time | `zuwen thogem vozuyel.` | *I've decided to sing, and can still change that.* | I |
+| [Try](/try#try) | `zazozon howam varuyol.` | *Azozon tries to write.* | I |
+| [Trial run](/try#try) | `zalazun howar vozuyel.` | *Alazun gives singing a try.* | I |
+| [Committed](/try#try) | `zalazun howal vowurol.` | *Alazun keeps trying to walk.* | I |
+| [Want](/want-and-decide#want): yours | `zazozon thalom vowurol.` | *I want Azozon to walk.* | I |
+| [Someone else's want](/want-and-decide#whose-intention): a holder | `zazozon thebamazozon thalom vowurol.` | *I hear Azozon wants to walk.* | I |
+| [Want, a whim](/want-and-decide#want-endings) | `zalazun thalor vozuyel.` | *Right now I feel like having Alazun sing.* | I |
+| [Stacked: want, then plan](/want-and-decide#want-endings) | `zuwen thalol thagom vowurol.` | *I have long wanted to walk, and I plan to.* | I |
+| [Against my wishes](/want-and-decide#want-endings) | `zazozon vowurol uom thalom.` | *Azozon walks, against my wishes.* | I |
+| [Against someone's wishes](/want-and-decide#whose-intention) | `zalazun vezuvel uom theyomazozon thalom.` | *Alazun sleeps, against Azozon's wishes, as far as I can tell.* | I |
 | [Someone else's plan](/holder#holder): a holder | `zazozon thebamazozon thagom vowurol.` | *I hear Azozon plans to walk.* | I |
-| [Someone else's decision](/want#whose-intention): a holder | `zazozon theyomazozon thogem vowurol.` | *I gather Azozon has decided to walk, and can still change that.* | I |
+| [Someone else's decision](/want-and-decide#whose-intention): a holder | `zazozon theyomazozon thogem vowurol.` | *I gather Azozon has decided to walk, and can still change that.* | I |
 | [Plan](/intention#plan-predict) | `zuwen thagom vowurol.` | *I plan to walk.* | I |
-| [Try, failing that](/ability#fallback): `xen` | `zazozon howar vowurol xen zazozor vozuyel.` | *Azozon gives walking a try; failing that, Azozon sings.* | I |
-| [A plan with backups](/ability#fallback) | `zuwen thagol vowurol xen zuwen thagol vozuyel xen zuwen thagol vezuvel.` | *walk; failing that, sing; failing that, sleep* | I |
+| [Try, failing that](/try#fallback): `xen` | `zazozon howar vowurol xen zazozor vozuyel.` | *Azozon gives walking a try; failing that, Azozon sings.* | I |
+| [A plan with backups](/try#fallback) | `zuwen thagol vowurol xen zuwen thagol vozuyel xen zuwen thagol vezuvel.` | *walk; failing that, sing; failing that, sleep* | I |
 
 The `bl-` word right after PLAN is only ever a time. WANT, PLAN, and DECISION take no `bl-` word for whose they are.
 
@@ -237,7 +237,7 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | `thebam` *so they say* ([someone said it](/evidentiality#evidentiality)) | | `theyum` *imagine* ([a scene you make up](/notional#notional-as-if-framing)) |
 | `theyol` *strong clues* ([how good your evidence is](/evidentiality#evidence-strength)) | | `throgel` *third-hand* ([how many hands](/evidentiality#hand-depth)) |
 | `thubom blral` *will, by the pattern* ([a forecast](/evidentiality#forecast)) | | `thagom` *I plan to* ([an intention](/intention#plan-predict)) |
-| `haram` *still in effect* ([the outcome stays](/notional-standing#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](/already-still-yet#phasal)) |
-| `thogem` *I've decided* ([how open the choice is, no time](/want#decision)) | | `thagom` *I plan* ([how worked out, still ahead](/intention#plan-predict)) |
-| `howam` *tries* ([acts, outcome open](/ability#try)) | | `vozuyexal` *can sing* ([a claim about ability](/can-and-cant#can)) |
-| `thalom` *I want* ([your own wanting](/want#want)) | | `thebamazozon thagom` *I hear Azozon plans* ([someone else's plan](/holder#holder)) |
+| `haram` *still in effect* ([the outcome stays](/residue-and-former#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](/already-still-yet#phasal)) |
+| `thogem` *I've decided* ([how open the choice is, no time](/want-and-decide#decision)) | | `thagom` *I plan* ([how worked out, still ahead](/intention#plan-predict)) |
+| `howam` *tries* ([acts, outcome open](/try#try)) | | `vozuyexal` *can sing* ([a claim about ability](/can-and-cant#can)) |
+| `thalom` *I want* ([your own wanting](/want-and-decide#want)) | | `thebamazozon thagom` *I hear Azozon plans* ([someone else's plan](/holder#holder)) |

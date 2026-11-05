@@ -6,7 +6,7 @@ Recipes for English *walked* / *has walked* / *will walk* / *used to walk*, and 
 
 ### One English tense, several jobs {#tense-jobs}
 
-**Needs:** [How you know](/evidentiality#evidentiality) · [Forecasts](/evidentiality#forecast) · [Dated channel](/dated-channel#dated-channel) · [RESIDUE and FORMER](/notional-standing#residue) · [Already, still, not yet](/already-still-yet#phasal) · [*as-of*](/as-of#as-of)
+**Needs:** [How you know](/evidentiality#evidentiality) · [Forecasts](/evidentiality#forecast) · [Dated channel](/dated-channel#dated-channel) · [RESIDUE and FORMER](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#phasal) · [*as-of*](/as-of#as-of)
 
 An English tense bundles up to three questions: **when** the event sits, **how you know** it, and whether it **still counts** now. Ageben asks them separately. Pick the row for the English form, then the job you mean.
 
@@ -70,7 +70,7 @@ Reports and reasoning need their own `-` amount, because those channels do not f
 
 ### Present perfect: leftover, done, or ever {#present-perfect}
 
-**Needs:** [RESIDUE](/notional-standing#residue) · [Already, still, not yet](/already-still-yet#phasal)
+**Needs:** [RESIDUE](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#phasal)
 
 English *has left* mixes three ideas. Choose the one you mean.
 
@@ -96,7 +96,7 @@ English *has left* mixes three ideas. Choose the one you mean.
 
 ### Past perfect: as of a past moment {#past-perfect}
 
-**Needs:** [*As-of*](/as-of#as-of) · [RESIDUE](/notional-standing#residue) · [Plan and forecast against a snapshot](say-reasons.md#as-of-intention)
+**Needs:** [*As-of*](/as-of#as-of) · [RESIDUE](/residue-and-former#residue) · [Plan and forecast against a snapshot](say-reasons.md#as-of-intention)
 
 English *had left* means the leaving counted **as of** an earlier moment. Write the same stance and add *as-of* with that moment in `/b/`.
 
@@ -180,7 +180,7 @@ English *will* is three different claims.
 
 ### Everyday time words {#time-words}
 
-**Needs:** [Dated channel](/dated-channel#dated-channel) · [Now and today](/dated-channel#now) · [RESIDUE and FORMER](/notional-standing#residue) · [Already, still, not yet](/already-still-yet#phasal) · [Forecasts](/evidentiality#forecast) · [Dependent clauses](/dependents#dependent-clauses)
+**Needs:** [Dated channel](/dated-channel#dated-channel) · [Now and today](/dated-channel#now) · [RESIDUE and FORMER](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#phasal) · [Forecasts](/evidentiality#forecast) · [Dependent clauses](/dependents#dependent-clauses)
 
 English time words (*today*, *previously*, *continue*) mostly ride on the same channels and offsets as tense. Each row says which one.
 
@@ -222,7 +222,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 
 ### Used to and would (habit) {#used-to}
 
-**Needs:** [FORMER](/notional-standing#former-climate) · [Always](/restrictors) · [If](/causation#if)
+**Needs:** [FORMER](/residue-and-former#former-climate) · [Always](/restrictors) · [If](/causation#if)
 
 English *used to walk* is a pattern that is no longer today's report: **`hual`** with FORMER after the verb.
 
@@ -238,7 +238,7 @@ For *would* in a condition (*if Alazun swam, Azozon would walk*), see [remote an
 
 ### Can, could, may, might {#can-may}
 
-**Needs:** [Ability](/can-and-cant#ability) · [MAY](/knowing#may) · [Permission](/permission-consent#permission) · [FORMER](/notional-standing#former-climate)
+**Needs:** [Ability](/can-and-cant#ability) · [MAY](/knowing#may) · [Permission](/permission-consent#permission) · [FORMER](/residue-and-former#former-climate)
 
 English *can* and *may* each carry several meanings. Pick the meaning.
 
@@ -248,7 +248,7 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 | *can't* | not now / not yet / never | **`xe`** / **`xo`** / **`xu`** |
 | *could* | used to be able | **`xa`** + FORMER **`helam`** |
 | *couldn't* | couldn't back then | **`xe`** / **`xo`** / **`xu`** + FORMER **`helam`** |
-| *couldn't* | tried, that one time | try **`howam`** ([try](/ability#try)) + the [simple past](#simple-past); the sentence leaves the outcome open |
+| *couldn't* | tried, that one time | try **`howam`** ([try](/try#try)) + the [simple past](#simple-past); the sentence leaves the outcome open |
 | *could*, *might*, *may* | it could be | MAY **`thomam`** |
 | *may*, *is allowed to* | a rule / a person / no objection | **`hwuval`** / **`hwuvam`** / **`hwuvar`** |
 | *may not* | forbidden | **`hwuvul`** / **`hwuvum`** / **`hwuvur`** |
@@ -314,7 +314,7 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 
 ### Must, have to, should {#must-should}
 
-**Needs:** [Requirement](/permission-consent#requirement) · [Prescription](/ought-for-a-sake#sake-force) · [Motive](/prescription#sake-preference) · [Permission](/permission-consent#permission) · [Speech act](/firm-soft#speech-act) · [Stance as-of](/as-of#stance-as-of)
+**Needs:** [Requirement](/permission-consent#requirement) · [Prescription](/ought-for-a-sake#sake-force) · [Motive](/for-a-sake#sake-preference) · [Permission](/permission-consent#permission) · [Speech act](/firm-soft#speech-act) · [Stance as-of](/as-of#stance-as-of)
 
 English *must* and *should* differ in what stands behind the demand. Choose the source.
 
@@ -370,7 +370,7 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 
 ### Will, want, try, let's {#will-want}
 
-**Needs:** [Plan](/intention#plan-predict) · [Want](/want#want) · [Decision](/want#decision-revisability) · [Try](/ability#try) · [Hopefully](/feelings-permission#speaker-attitude) · [Speech act](/firm-soft#speech-act) · [Whose view](/holder#holder)
+**Needs:** [Plan](/intention#plan-predict) · [Want](/want-and-decide#want) · [Decision](/want-and-decide#decision-revisability) · [Try](/try#try) · [Hopefully](/feelings-permission#speaker-attitude) · [Speech act](/firm-soft#speech-act) · [Whose view](/holder#holder)
 
 | English | Ageben |
 |---------|--------|
@@ -388,12 +388,12 @@ WANT, PLAN and DECISION alone are yours. For someone else's, put a holder before
 
 | English | Ageben | Teach |
 |---------|--------|-------|
-| *want to*, *want* (someone else's want) | holder + WANT: **`thebamazozon thalom`** (*I hear*), **`theyomazozon thalom`** (*I gather*) | [Someone else's want](/want#whose-intention) |
+| *want to*, *want* (someone else's want) | holder + WANT: **`thebamazozon thalom`** (*I hear*), **`theyomazozon thalom`** (*I gather*) | [Someone else's want](/want-and-decide#whose-intention) |
 | *plan to*, *plan is to*, *intend to* (someone else's plan) | holder + PLAN: **`thebamazozon thagom`** (*I hear*), **`theyomazozon thagom`** (*I gather*) | [Whose view](/holder#holder) |
-| *decide to*, *decided to* (someone else's decision) | holder + DECISION: **`thebamazozon thogem`** (*I hear*), **`theyomazozon thogem`** (*I gather*) | [Someone else's decision](/want#whose-intention) |
+| *decide to*, *decided to* (someone else's decision) | holder + DECISION: **`thebamazozon thogem`** (*I hear*), **`theyomazozon thogem`** (*I gather*) | [Someone else's decision](/want-and-decide#whose-intention) |
 | *hopefully*, *I hope*, *hope* (your own hope) | **`thuwuyom`**, which is always yours | [Hopefully](/feelings-permission#speaker-attitude) |
-| *hopes*, *hope*, *wishes*, *wish* (someone else's hope or wish) | holder + WANT: **`theyomazozon thalom`** (*I gather*), **`thebamazozon thalom`** (*I hear*) | [Someone else's want](/want#whose-intention) |
-| *we want*, *we plan* (one you claim you both share) | the interlocutors as holder: **`theyomayan thalom`**, **`theyomayan thagom`** | [Someone else's want](/want#whose-intention) |
+| *hopes*, *hope*, *wishes*, *wish* (someone else's hope or wish) | holder + WANT: **`theyomazozon thalom`** (*I gather*), **`thebamazozon thalom`** (*I hear*) | [Someone else's want](/want-and-decide#whose-intention) |
+| *we want*, *we plan* (one you claim you both share) | the interlocutors as holder: **`theyomayan thalom`**, **`theyomayan thagom`** | [Someone else's want](/want-and-decide#whose-intention) |
 
 > `zalazun thebamalazun thalom vowurol.`
 >

@@ -50,8 +50,8 @@ Do not put a bare person in `/b/` to mean “from Alazun’s now.” A person af
 Once whose-now is set, these count from it:
 
 - A [forecast](/evidentiality#forecast) offset (`blral`) counts forward **from** that now.
-- [RESIDUE](/notional-standing#residue) is what is still left over **at** that now.
-- [FORMER](/notional-standing#former-climate) means the pattern no longer held **at** that now.
+- [RESIDUE](/residue-and-former#residue) is what is still left over **at** that now.
+- [FORMER](/residue-and-former#former-climate) means the pattern no longer held **at** that now.
 - A bare verb happens **at** that now.
 
 [MAY](/knowing#may), [CAUSE](/cause#cause), and every other stance still count from speech-now. Evidentials, apart from LIVE at the snapshot, still say how *you* know at speech-now.
@@ -113,7 +113,7 @@ An *as-of* pair inside a finished inner clause cannot be resumed later in the ma
 
 ### Stance as-of {#stance-as-of}
 
-A stance is yours at speech-now: `thomam` is how unsure you are **as you speak**, and a sake or feeling word is how you stand **now**. English *I was sure then*, *back then it stung*, and *I'd be relieved* date the stance itself. Put the same *as-of* pair on `/th/`: **`thenam`** for a real now, **`thunom`** for a now you are not claiming, then the snapshot in `/b/`. Every stance word in the clause, including MAY, WANT, CAUSE, sakes, and feelings, then reads from that now. A [PLAN](/intention#plan-predict) is then planned **from** that now, and a [DECISION](/want#decision) is held **at** it.
+A stance is yours at speech-now: `thomam` is how unsure you are **as you speak**, and a sake or feeling word is how you stand **now**. English *I was sure then*, *back then it stung*, and *I'd be relieved* date the stance itself. Put the same *as-of* pair on `/th/`: **`thenam`** for a real now, **`thunom`** for a now you are not claiming, then the snapshot in `/b/`. Every stance word in the clause, including MAY, WANT, CAUSE, sakes, and feelings, then reads from that now. A [PLAN](/intention#plan-predict) is then planned **from** that now, and a [DECISION](/want-and-decide#decision) is held **at** it.
 
 > `zalazun thenam bl_#22,7 thomam vudurul.`
 >

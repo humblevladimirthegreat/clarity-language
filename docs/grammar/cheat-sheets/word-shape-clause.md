@@ -176,10 +176,10 @@ Tell the two jobs apart by the word right before the `/b/` word.
 | a `/ɡ/`, `/h/`, or `/th/` word | [completes that word](/clause#extra-nouns) (the host) | `hewem blazozon` | *like Azozon* | B |
 | anything else | [who receives](/clause#extra-nouns) (at most one) | `zazozon vezuyol balazun.` | *Azozon tells Alazun.* | B |
 | a host, with `/w/` first | [`/w/` stays before the host](/clause#extra-nouns) | `welazem hewem blazozon` | *very like Azozon* | B |
-| a host's `/b/`, then `/ɡ/` | [describes the extra noun](/left-bound#complex-chaining) | `zagayul gorel blazozon guzemel` | *a guard who is the same person as sleepy Azozon* | I |
-| two relations on one noun | [put one before with `gl-`](/left-bound#complex-chaining) | `glorel blazozon zagayul gorel blebayol` | *a guard who is both Azozon and the police officer* | I |
+| a host's `/b/`, then `/ɡ/` | [describes the extra noun](/longer-chains#complex-chaining) | `zagayul gorel blazozon guzemel` | *a guard who is the same person as sleepy Azozon* | I |
+| two relations on one noun | [put one before with `gl-`](/longer-chains#complex-chaining) | `glorel blazozon zagayul gorel blebayol` | *a guard who is both Azozon and the police officer* | I |
 
-A [hook](/left-bound#complex-chaining) followed by `/b/` means *in* / *at* / *for*, not the person who receives.
+A [hook](/longer-chains#complex-chaining) followed by `/b/` means *in* / *at* / *for*, not the person who receives.
 
 ## Predication {#predication}
 
@@ -212,8 +212,8 @@ With a name or a resumed noun, the pair is a [property](/predication#existence),
 | [Not](/label-reach#classification-packaging) | `zazozon godozel gul.` | *Azozon is not a dog.* | I |
 | [Always](/label-reach#classification-packaging) | `zazozon godozel hual` | *Azozon is always a dog.* | I |
 | [Sort of](/label-reach#classification-packaging) | `zazozon wayurom godozel.` | *Azozon is something of a dog.* | I |
-| [Be ADJ!](/speech-acts#command-property) | `yol guyulom.` | *Be careful!* | I |
-| [Don't be ADJ](/speech-acts#command-property) | `yul` + `/ɡ/` | | I |
+| [Be ADJ!](/more-turn-words#command-property) | `yol guyulom.` | *Be careful!* | I |
+| [Don't be ADJ](/more-turn-words#command-property) | `yul` + `/ɡ/` | | I |
 
 ### How far a label reaches {#label-reach}
 

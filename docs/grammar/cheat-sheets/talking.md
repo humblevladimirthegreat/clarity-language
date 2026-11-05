@@ -38,35 +38,35 @@ The vowel picks the act: **a** statement, **o** command, **e** question, **u** p
 | [Request with *let's*](/firm-soft#speech-act) | `yom vowurol zayan.` | *Let's walk.* | B |
 | [Soft prohibition with *let's not*](/firm-soft#speech-act) | `yum zayan vezuvel.` | *Let's not sleep.* | B |
 | [Provisional statement](/firm-soft#act-r) | `yar zazozon vowurol.` | *As things stand, Azozon walks.* | B |
-| [Doubled act word](/speech-acts#doubled-act): repeat only the opening act word | `yul yul vozuyul.` | *Don't sneak. I mean it.* | I |
-| [Insisted statement](/speech-acts#doubled-act) | `yal yal` | *I'm telling you, …* | I |
-| [Pressing question](/speech-acts#doubled-act) | `yel yel` | *I really need to know: …?* | I |
-| [Urgent command](/speech-acts#doubled-act) | `yol yol` | *Do it. Now.* | I |
-| [Insistent plea](/speech-acts#doubled-act) | `yom yom` | *please, please…* | I |
+| [Doubled act word](/more-turn-words#doubled-act): repeat only the opening act word | `yul yul vozuyul.` | *Don't sneak. I mean it.* | I |
+| [Insisted statement](/more-turn-words#doubled-act) | `yal yal` | *I'm telling you, …* | I |
+| [Pressing question](/more-turn-words#doubled-act) | `yel yel` | *I really need to know: …?* | I |
+| [Urgent command](/more-turn-words#doubled-act) | `yol yol` | *Do it. Now.* | I |
+| [Insistent plea](/more-turn-words#doubled-act) | `yom yom` | *please, please…* | I |
 
 <PageBreak />
 
 ### Stacked act words {#stacked}
 
-The [first act word](/speech-acts#stacked-acts) is what you really do, the second how it sounds. The body takes the first word's order.
+The [first act word](/more-turn-words#stacked-acts) is what you really do, the second how it sounds. The body takes the first word's order.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Request that sounds like a question](/speech-acts#stacked-acts) | `yol yel vabuvul dubogal zawan.` | *Could you punch the box?* | I |
-| [Directive that sounds like a description](/speech-acts#stacked-acts) | `yol yal` | *Passengers remain seated.* | I |
-| [Teasing: sounds like *don't*, means *do*](/speech-acts#stacked-acts) | `yol yul` | *Don't you dare finish those cookies.* | I |
-| [Prohibition that sounds like a norm](/speech-acts#stacked-acts) | `yul yal zayan dubogal vabuvul.` | *We don't punch the box.* | I |
-| [Discouraging question](/speech-acts#stacked-acts) | `yul yel` | *Must you?* | I |
-| [Sarcastic dare](/speech-acts#stacked-acts) | `yul yol dubogal vabuvul.` | *Go ahead, punch the box.* (don't) | I |
-| [Claim as an instruction to notice](/speech-acts#stacked-acts) | `yal yol` | *Mark my words.* | I |
-| [Saying it while claiming you won't](/speech-acts#stacked-acts) | `yal yul` | *I won't even mention that he lied.* | I |
-| [Soft request that sounds like a question](/speech-acts#stacked-acts) | `yom yel` | *Would you mind…?* | I |
-| [Firm command that sounds like a gentle ask](/speech-acts#stacked-acts) | `yol yem` | *Would you maybe…?* (not optional) | I |
-| [Command with a *please* that is not optional](/speech-acts#stacked-acts) | `yol yom` | *Please do it.* | I |
-| [Offer that sounds like a command](/speech-acts#stacked-acts) | `yom yol vehohel.` | *Sit, sit!* | I |
-| [Rule for now](/speech-acts#stacked-acts) | `yor yal` | *For now, everyone stays inside.* | I |
-| [Soft norm](/speech-acts#stacked-acts) | `yum yal` | *We'd rather people didn't…* | I |
-| [Firm *no* that sounds like *not yet*](/speech-acts#stacked-acts) | `yul yur` | *Let's hold off for now.* (never) | I |
+| [Request that sounds like a question](/more-turn-words#stacked-acts) | `yol yel vabuvul dubogal zawan.` | *Could you punch the box?* | I |
+| [Directive that sounds like a description](/more-turn-words#stacked-acts) | `yol yal` | *Passengers remain seated.* | I |
+| [Teasing: sounds like *don't*, means *do*](/more-turn-words#stacked-acts) | `yol yul` | *Don't you dare finish those cookies.* | I |
+| [Prohibition that sounds like a norm](/more-turn-words#stacked-acts) | `yul yal zayan dubogal vabuvul.` | *We don't punch the box.* | I |
+| [Discouraging question](/more-turn-words#stacked-acts) | `yul yel` | *Must you?* | I |
+| [Sarcastic dare](/more-turn-words#stacked-acts) | `yul yol dubogal vabuvul.` | *Go ahead, punch the box.* (don't) | I |
+| [Claim as an instruction to notice](/more-turn-words#stacked-acts) | `yal yol` | *Mark my words.* | I |
+| [Saying it while claiming you won't](/more-turn-words#stacked-acts) | `yal yul` | *I won't even mention that he lied.* | I |
+| [Soft request that sounds like a question](/more-turn-words#stacked-acts) | `yom yel` | *Would you mind…?* | I |
+| [Firm command that sounds like a gentle ask](/more-turn-words#stacked-acts) | `yol yem` | *Would you maybe…?* (not optional) | I |
+| [Command with a *please* that is not optional](/more-turn-words#stacked-acts) | `yol yom` | *Please do it.* | I |
+| [Offer that sounds like a command](/more-turn-words#stacked-acts) | `yom yol vehohel.` | *Sit, sit!* | I |
+| [Rule for now](/more-turn-words#stacked-acts) | `yor yal` | *For now, everyone stays inside.* | I |
+| [Soft norm](/more-turn-words#stacked-acts) | `yum yal` | *We'd rather people didn't…* | I |
+| [Firm *no* that sounds like *not yet*](/more-turn-words#stacked-acts) | `yul yur` | *Let's hold off for now.* (never) | I |
 
 <PageBreak />
 

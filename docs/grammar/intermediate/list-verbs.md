@@ -16,7 +16,7 @@ When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*)
 
 For an associative group (*Alazun and company*), put noun **-x** on the object as usual. **-x** on the verb itself is [collective](collectives.md#verbs-v).
 
-**Compare with:** joining two acts uses a [verb join](vp-clause-forms.md#vp-clause-forms): `zazozon vowurol veruvol val` is *Azozon walks and runs*. **`van`** is itself an act, done to its object.
+**Compare with:** joining two acts uses a [verb join](verb-and-stance-joins.md#vp-clause-forms): `zazozon vowurol veruvol val` is *Azozon walks and runs*. **`van`** is itself an act, done to its object.
 
 **Compare with:** *and then* between sentences uses clause [sequence](/clause-sequence#sequence) (`xan`, …), not `van`.
 

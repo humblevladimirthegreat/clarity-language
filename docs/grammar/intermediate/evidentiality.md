@@ -249,7 +249,7 @@ The frame is **yours**. It covers only your own claims, and someone else who rep
 **What ends it:**
 
 - **A new frame.** Any channel replaces it.
-- **The statement word, written out.** **`yal`** (or **`yam`** / **`yar`**) before a body says you are back in your own voice, with no frame. It is the one place where writing the usually silent [statement word](/firm-soft#speech-act) changes the meaning. In [two stacked act words](speech-acts.md#stacked-acts), it counts only as the first word, the act you really do: a rhetorical **`yal yel`** is your own claim and ends the frame, but a quiz **`yel yal`** does not.
+- **The statement word, written out.** **`yal`** (or **`yam`** / **`yar`**) before a body says you are back in your own voice, with no frame. It is the one place where writing the usually silent [statement word](/firm-soft#speech-act) changes the meaning. In [two stacked act words](more-turn-words.md#stacked-acts), it counts only as the first word, the act you really do: a rhetorical **`yal yel`** is your own claim and ends the frame, but a quiz **`yel yal`** does not.
 - **`xavedam`** *by the way*: a digression leaves what you were telling. To go back, name the channel again.
 - **A goodbye**, which ends the conversation.
 

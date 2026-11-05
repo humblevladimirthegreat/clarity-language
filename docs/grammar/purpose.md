@@ -74,7 +74,7 @@ Saying *can’t right now* or *may yet change* instead of *impossible* helps you
 
 English *has done* and *used to* mix two questions: **when** something happened, and whether it **still matters now**. *Used to* also leaves open whether a habit still describes you today.
 
-[RESIDUE](/notional-standing#residue) says the result of a past event still counts now (a debt still unpaid, a door still shut). [FORMER](/notional-standing#former-climate) says a pattern was usual but you are **not** claiming it as how things are now (cue: usual weather vs today’s report). Neither word is a past tense: each can combine with what you see now, what you remember, or a forecast.
+[RESIDUE](/residue-and-former#residue) says the result of a past event still counts now (a debt still unpaid, a door still shut). [FORMER](/residue-and-former#former-climate) says a pattern was usual but you are **not** claiming it as how things are now (cue: usual weather vs today’s report). Neither word is a past tense: each can combine with what you see now, what you remember, or a forecast.
 
 Because residue is marked, an event you mention without it counts as closed, so carrying a past event forward is a choice rather than a default, and rumination stays optional. Marking a former pattern lets *I was always this way* describe the past without claiming the present. [Whose now](/as-of#as-of) names the moment that leftovers and patterns are measured from (*as of Friday*), so you can weigh an old situation by its own date instead of against today. For English *if they had … they would*, the as-of moment is a placeholder you do not claim is real, which is not the same as pretending.
 
@@ -113,7 +113,7 @@ In English: [Claritish: Feelings in three parts](claritish/feelings.md).
 
 English *thank you* says you are grateful, but not for what.
 
-Ageben has no set phrase for [thanks](/thanks-and-sorry#thanks-sorry). Instead, you say which of your sakes was met; saying that to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](/prescription#whose-stake)). Put the sake word right after a thing you own and it appreciates that thing, with no separate word for *my*, so appreciating what you already have takes one word ([personal possession](/sakes#personal-possession)).
+Ageben has no set phrase for [thanks](/thanks-and-sorry#thanks-sorry). Instead, you say which of your sakes was met; saying that to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](/for-a-sake#whose-stake)). Put the sake word right after a thing you own and it appreciates that thing, with no separate word for *my*, so appreciating what you already have takes one word ([personal possession](/sakes#personal-possession)).
 
 Naming the need that was met makes thanks specific, which helps both of you notice what actually helped.
 
@@ -173,7 +173,7 @@ A link between events, a habit, or an ought gets treated as a law the world must
 
 Everyday English *because*, *leads to*, and *have to* blur three distinctions: a condition that is enough vs one that is required, a reason in the world vs your grounds for saying something, and a wish vs a law of nature.
 
-[Causation](/causation) gives each link its own word: *if*, *only if*, *because*, and *if and only if*. An intended result (*so that*) uses a separate word, `thovam` ([so that](/dependents#so-that)): it names your own aim for the action without claiming the outcome happens, so someone else's aim is never stated as if you could see it. It is also not the same as acting for a sake ([motive](/prescription#sake-preference), `tho`). When the “rule” is really an ought (*hard work should earn promotion*), say it with a sakes [prescription](/ought-for-a-sake#sake-force) (`the`) on the act, not with a causation word.
+[Causation](/causation) gives each link its own word: *if*, *only if*, *because*, and *if and only if*. An intended result (*so that*) uses a separate word, `thovam` ([so that](/dependents#so-that)): it names your own aim for the action without claiming the outcome happens, so someone else's aim is never stated as if you could see it. It is also not the same as acting for a sake ([motive](/for-a-sake#sake-preference), `tho`). When the “rule” is really an ought (*hard work should earn promotion*), say it with a sakes [prescription](/ought-for-a-sake#sake-force) (`the`) on the act, not with a causation word.
 
 Keeping these apart helps you stop treating wishes and habits as laws the world must obey.
 
@@ -193,7 +193,7 @@ Saying whether a list is open or closed helps you notice false dichotomies, and 
 
 Work talk often freezes on *the* problem or *the* solution, or ranks options against a standard nobody has said out loud.
 
-Prefer numbered alternatives (ordinary nouns plus an [ordinal](/numbers#ordinals), like *solution 2*) so candidates stay plural and revisable. Reframe the same situation with softer wording rather than inventing a second candidate. A comparison like *worse than…* names its [bar](/sake-bars#bars), the standard it measures against (*than usual*, *than I expected*, *than you demand*), so the standard stays visible, including when it is only your own expectation.
+Prefer numbered alternatives (ordinary nouns plus an [ordinal](/numbers#ordinals), like *solution 2*) so candidates stay plural and revisable. Reframe the same situation with softer wording rather than inventing a second candidate. A comparison like *worse than…* names its [bar](/bars#bars), the standard it measures against (*than usual*, *than I expected*, *than you demand*), so the standard stays visible, including when it is only your own expectation.
 
 Numbering candidates, rewording, and naming the bar help you keep choices and standards revisable instead of freezing on a single framing or a hidden standard.
 
@@ -221,7 +221,7 @@ In English: [Claritish: Allowed and required](claritish/allowed-required-agreed.
 
 English *will* mixes plan and prediction, and *I want to* can sound like a promise. It is easy to talk as if the future were already known, and a confident prediction can fuel anxiety or overconfidence. A pick, meanwhile, often sounds more locked than it is.
 
-Ageben splits them: [want](/want#want) for what you wish for, without meaning to do it yet; [PLAN](/intention#plan-predict) for what you mean to do; [DECISION](/want#decision) for how revisable a pick is; and a [forecast](/evidentiality#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `blral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
+Ageben splits them: [want](/want-and-decide#want) for what you wish for, without meaning to do it yet; [PLAN](/intention#plan-predict) for what you mean to do; [DECISION](/want-and-decide#decision) for how revisable a pick is; and a [forecast](/evidentiality#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `blral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
 
 Wants, plans, and decisions all live in someone's mind, so with nothing else marked they are yours; someone else's want, plan, or decision takes a [holder](/holder#holder) that says how you know it.
 
@@ -239,7 +239,7 @@ Every attempt can feel like a full commitment that either succeeds or fails, eve
 
 English *try* does not say whether you are committing to keep going or only testing whether something works, so every attempt can sound like it will end in success or failure.
 
-[Try](/ability#try) says that an attempt happens and leaves the outcome open. Its ending says how far the attempt will go: a committed attempt (`howal`) keeps going until it works or is ruled out, and a trial run (`howar`) is a low-stakes probe where failing is useful to know.
+[Try](/try#try) says that an attempt happens and leaves the outcome open. Its ending says how far the attempt will go: a committed attempt (`howal`) keeps going until it works or is ruled out, and a trial run (`howar`) is a low-stakes probe where failing is useful to know.
 
 Calling an attempt a trial run helps you start without betting everything on it: if it fails, finding that out was the point.
 
@@ -249,7 +249,7 @@ In English: [Claritish: Decisions and tries](claritish/decisions-and-tries.md).
 
 A plan made in English often names only the first choice, and it either stays vague or feels like it has to be complete before you act.
 
-A [fallback](/ability#fallback) joins an attempt to its backup with `xen`: *try A; failing that, B*. The backup counts only if the attempt before it fails. The [PLAN](/intention#plan-predict) ending says how much of the plan is drawn: backups included, steps filled in, or only a direction. No level is better, and a sketch is often all a small or early plan needs; for a plan that matters, the backups-included ending is a prompt to ask what could go wrong.
+A [fallback](/try#fallback) joins an attempt to its backup with `xen`: *try A; failing that, B*. The backup counts only if the attempt before it fails. The [PLAN](/intention#plan-predict) ending says how much of the plan is drawn: backups included, steps filled in, or only a direction. No level is better, and a sketch is often all a small or early plan needs; for a plan that matters, the backups-included ending is a prompt to ask what could go wrong.
 
 Naming the backup before you start helps a setback turn into the next step instead of a dead end, and matching plan detail to the task keeps planning from becoming a reason not to start.
 
@@ -257,7 +257,7 @@ Naming the backup before you start helps a setback turn into the next step inste
 
 English *enough* and *too much* often compare a result with an unstated ideal, so nothing ever counts as done.
 
-A [sake bar](/sake-bars#sake-bars) measures an amount against what a [sake](#sakes-gratitude-and-oughts) actually needs: *enough*, *too much*, or *not enough* for that need. When you do not name which sake, the unspecified sake stands in.
+A [sake bar](/bars#sake-bars) measures an amount against what a [sake](#sakes-gratitude-and-oughts) actually needs: *enough*, *too much*, or *not enough* for that need. When you do not name which sake, the unspecified sake stands in.
 
 Measuring against the need instead of against perfect helps you notice when a result is good enough to stop.
 
@@ -289,8 +289,8 @@ Many roots have an **abstract** sense beside a **concrete** one, so an idea you 
 
 - [Memory as fishing](/evidentiality#evidentiality) ([a guess as fact](#trap-certainty)): cast into opaque water; you may pull up a fish or a **boot** (the memory can be wrong).
 - [Live look as attesting](/live-and-memory#live-vs-memory) ([a guess as fact](#trap-certainty)): you report what you see while the scene is still in view.
-- [Residue as unpaid debt](/notional-standing#residue) ([a moment as identity](#trap-identity)): the result still counts, like a balance still owed; not a past tense.
-- [Former climate as an empty nest](/notional-standing#former-climate) ([a moment as identity](#trap-identity)): the nesting season is over; a pattern that has ended, not a past tense.
+- [Residue as unpaid debt](/residue-and-former#residue) ([a moment as identity](#trap-identity)): the result still counts, like a balance still owed; not a past tense.
+- [Former climate as an empty nest](/residue-and-former#former-climate) ([a moment as identity](#trap-identity)): the nesting season is over; a pattern that has ended, not a past tense.
 - [A pattern as paw-prints](/usually-vs-must#universality) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
 - [*As if* as theater](/notional#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene; what really happened stays **offstage**.
 - [Mechanism as gears](/cause#cause) ([a wish as a law](#trap-wish-as-law)): you say *how* a result comes about, like gears meshing, not only that it follows.

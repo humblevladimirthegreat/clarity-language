@@ -204,7 +204,7 @@ const LISTENER_WORDS = new Set(["you", "your", "yours"]);
 /**
  * Whose stance a word at `i` reports: the speaker, someone else, *we*, or unknown. In a question
  * the listener's own stance counts as the speaker's does: a bare stance asks for it, with no holder
- * (want.md#whose-intention).
+ * (want-and-decide.md#whose-intention).
  */
 function ownerAt(terms: readonly TaggedTerm[], i: number, question = false): "speaker" | "other" | "we" | undefined {
   const j = ownerIndex(terms, i);
@@ -808,9 +808,9 @@ function sakeRoot(s: Suggestion): string | undefined {
   return (s.kind === "job" || s.kind === "entry") && s.link === "sakes.md#sake-inventory" && SAKE_ROOT.test(s.form) ? s.form : undefined;
 }
 
-/** The stance vowel a sakes.md or prescription.md row names, when it names one (*serves* → `a`, *for* → `o`). */
+/** The stance vowel a sakes.md or for-a-sake.md row names, when it names one (*serves* → `a`, *for* → `o`). */
 function sakeStance(s: Suggestion): string | undefined {
-  if ((s.kind !== "job" && s.kind !== "entry") || !/^(?:sakes|prescription)\.md#/.test(s.link)) return undefined;
+  if ((s.kind !== "job" && s.kind !== "entry") || !/^(?:sakes|for-a-sake)\.md#/.test(s.link)) return undefined;
   const vowels = new Set(formPieces(s.form).flatMap((p) => SAKE_STANCE.exec(p)?.[1] ?? []));
   return vowels.size === 1 ? [...vowels][0] : undefined;
 }

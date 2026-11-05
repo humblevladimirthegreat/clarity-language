@@ -249,7 +249,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 ### Ask, interview, conversation {#ask-words}
 
-**Needs:** [Ask](/questions#question) · [Reported questions](#reported-questions) · [Stand-in vowels](/stand-in-vowels#stand-in) · [Firm and soft](/firm-soft#speech-act) · [Stacking two act words](/speech-acts#stacked-acts) · [Rhetorical question](/rhetorical-questions#rhetorical) · [Quiz](/rhetorical-questions#quiz) · [Questions that sound like another act](/rhetorical-questions#stacked-questions) · [Conversation length](/conversation-length#conversation-length) · [Call someone](/speech-moves#vocative) · [Someone else's want](/want#whose-intention)
+**Needs:** [Ask](/questions#question) · [Reported questions](#reported-questions) · [Stand-in vowels](/stand-in-vowels#stand-in) · [Firm and soft](/firm-soft#speech-act) · [Stacking two act words](/more-turn-words#stacked-acts) · [Rhetorical question](/rhetorical-questions#rhetorical) · [Quiz](/rhetorical-questions#quiz) · [Questions that sound like another act](/rhetorical-questions#stacked-questions) · [Conversation length](/conversation-length#conversation-length) · [Call someone](/speech-moves#vocative) · [Someone else's want](/want-and-decide#whose-intention)
 
 English *ask* is four jobs. You can put a question to someone, ask them for something, ask them to do something, or report that a question was asked. A question is the act word **`yel`**. A request is **`yom`**. A reported question hangs on the telling ([reported questions](#reported-questions)). *Ask* or *tell someone to do* something is a telling with the to-clause stand-in **`dorl`**, and the person told is plain `/b/`; *not to* is **`durl`**. English picks *ask* or *tell* for politeness, which Ageben carries on the act word, not the verb. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
 
@@ -318,7 +318,7 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 
 ### Hello, sir, yeah, quote, mention {#reply-words}
 
-**Needs:** [Greeting](/word-endings#greeting) · [Polar particle](/questions#polar-particle) · [Cite](/spans#writing) · [Mention](/span-mention#mention) · [Asides](/spans#asides)
+**Needs:** [Greeting](/word-endings#greeting) · [Polar particle](/questions#polar-particle) · [Cite](/spans#writing) · [Mention](/spans-as-words#mention) · [Asides](/spans#asides)
 
 | English | Ageben | Reading |
 |---------|--------|---------|

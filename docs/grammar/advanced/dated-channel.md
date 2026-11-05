@@ -8,7 +8,7 @@ band: advanced
 <a id="ago"></a>
 <a id="time-offset"></a>
 
-English *three hours ago* and *in three hours* count from now. Ageben counts from the channel instead: put a [measure phrase](/numbers-applied#measure-phrases) in `/b/` immediately after the evidential. Any other noun there is the [source](/evidentiality#source); a time measure is the offset. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
+English *three hours ago* and *in three hours* count from now. Ageben counts from the channel instead: put a [measure phrase](/measures-and-percent#measure-phrases) in `/b/` immediately after the evidential. Any other noun there is the [source](/evidentiality#source); a time measure is the offset. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
 
 > `zazozon thevum blagorum grugel vowurol.`
 >
@@ -86,7 +86,7 @@ The mirror, **`blruwum`**, is *a short while before now*: *recently*.
 >
 > "Going by the pattern, Alazun slept three hours ago."
 
-A channel used as a comparison [bar](/sake-bars#bars) takes the same offset, which dates the bar: MEMORY with a day before is *than yesterday*.
+A channel used as a comparison [bar](/bars#bars) takes the same offset, which dates the bar: MEMORY with a day before is *than yesterday*.
 
 > `zazozon thevum blazurom grubal zol guzemel.`
 >
@@ -96,7 +96,7 @@ A channel used as a comparison [bar](/sake-bars#bars) takes the same offset, whi
 
 With an [as-of](as-of.md#as-of) pair, the offset counts from the as-of moment instead of from the moment you speak.
 
-**Compare with:** an absolute clock or date (`h_#22,7`) dates the event without a channel. [RESIDUE](/notional-standing#residue) and [FORMER](/notional-standing#former-climate) do not locate time, so they take no offset.
+**Compare with:** an absolute clock or date (`h_#22,7`) dates the event without a channel. [RESIDUE](/residue-and-former#residue) and [FORMER](/residue-and-former#former-climate) do not locate time, so they take no offset.
 
 #### Now and today {#now}
 
@@ -108,7 +108,7 @@ Ageben has no short *now* word. Say *now* with an offset of **zero**: the event 
 >
 > "Alazun must be asleep right now."
 
-The unit sets how wide *now* is. Zero hours is *right now*; zero [days](/numbers-applied#stock-units) is *today*.
+The unit sets how wide *now* is. Zero hours is *right now*; zero [days](/measures-and-percent#stock-units) is *today*.
 
 > `zazozon thebam blazurom gramol vozuyel.`
 >

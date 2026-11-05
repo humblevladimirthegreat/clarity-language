@@ -48,7 +48,7 @@ With a [holder](holder.md#holder), the surprise is the holder's:
 >
 > "I gather Alazun's leaving surprised Azozon." (the surprise is Azozon's)
 
-**Compare with:** *even* on the including hook ([`wemem al`](ending-grids.md#hook-w)) singles out the one unexpected member of a set. **`themem`** says the whole claim was unexpected. For *surprisingly* on one adjective (*surprisingly tired*), put the ordinary word **`wemem`** (*amazement*) on `/w/` right before it, the same word that grades the hook in *even*:
+**Compare with:** *even* on the including hook ([`wemem al`](in-clause-hooks.md#hook-w)) singles out the one unexpected member of a set. **`themem`** says the whole claim was unexpected. For *surprisingly* on one adjective (*surprisingly tired*), put the ordinary word **`wemem`** (*amazement*) on `/w/` right before it, the same word that grades the hook in *even*:
 
 > `zazozon wemem gadamul vowurol.`
 >
@@ -56,7 +56,7 @@ With a [holder](holder.md#holder), the surprise is the holder's:
 >
 > "Azozon walks, surprisingly tired."
 
-MIRATIVE cannot be a comparison [bar](sake-bars.md#bars): it gives no expected value to rank against. It also does not follow **`uom`**: it already says the claim ran against what you expected.
+MIRATIVE cannot be a comparison [bar](bars.md#bars): it gives no expected value to rank against. It also does not follow **`uom`**: it already says the claim ran against what you expected.
 
 **Compare with:** `zazozon themem vowurol.` says the walking surprised you. `zazozon vowurol uom thabem.` says your gut expected otherwise, whether or not the news surprised you.
 

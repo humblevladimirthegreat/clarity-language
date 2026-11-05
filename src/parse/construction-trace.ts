@@ -336,7 +336,7 @@ export function addReadingConstructions(result: ParseResult, out: Set<string>): 
       if (node.item.word.pos === "h") out.add("reading.frequencyScale");
     },
   });
-  // A range hook on -r between same-role words is a range member (ordered-ranges.md#ranges), not the point-back the
+  // A range hook on -r between same-role words is a range member (ranges.md#ranges), not the point-back the
   // same spelling makes with nothing on its right; keep the form's own `hook.*` only when the sentence also uses it that way.
   for (const form of rangeMembers) {
     out.add(`rangeMember.${form}`);

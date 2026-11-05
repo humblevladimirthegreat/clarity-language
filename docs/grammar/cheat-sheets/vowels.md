@@ -105,7 +105,7 @@ A say word is reach then act (`hwuvom`: this-act **u**, require **o**). A role p
 | [Ability](/can-and-cant#ability) | `xa` can | `xo` can't right now | `xe` can't yet | `xu` never | B |
 | [Pointer](/pronouns#role-pointers) | [the other one](/pronouns#the-other-one) (`zwuzar`) | [this sentence](/pronouns#themself) (`dwuzor`) | latest with that part (`zwuzer`) | [left unsaid](/pronouns#whoever-it-was) (`zwuzur`) | B |
 | [Conversation length](/conversation-length#conversation-length) | `SELFxan` open-ended | `SELFxon` a few minutes | `SELFxen` one slot | `SELFxun` passing | I |
-| [Sake stance](/prescription) | `tha` met / serves | `tho` motive | `the` prescription | `thu` unmet / detracts | B |
+| [Sake stance](/for-a-sake) | `tha` met / serves | `tho` motive | `the` prescription | `thu` unmet / detracts | B |
 | [Label reach](/label-seams#label-reach) | `tha` a type | `tho` practiced role | `the` this pair | `thu` this episode | I |
 | [Role compound](/roles#one-time-or-a-practice) | | `zwozeduyol` a teacher | | `zwuzeduyol` someone who teaches | B |
 
