@@ -91,6 +91,8 @@ On **`aol`** it asks *which one now?*, *whose turn is it?*:
 >
 > "Whose turn is it to write, from Azozon through Ahelan?"
 
+Answer as for any blank in the ends' role: a citation (`yal alazun.` *Alazun.*), or the noun with its letter (`yal zalazun.`).
+
 A range **-r** always has a word on each side. With nothing on the right, extra-noun **-r** is not a range.
 
 The two ends are two points on one ordered line, in any same-role slot. Between two recipient `/b/` words:

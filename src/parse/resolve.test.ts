@@ -565,4 +565,20 @@ describe("resolve — fill answers (questions.md#fill-ask)", () => {
     assert.deepEqual(answersOf("yel dar zazozon vayebel. yal zodozel."), []);
     assert.deepEqual(answersOf("yel zar vowurol. yal zazozon vowurol."), []);
   });
+
+  it("ties a number, or a counted noun, to a number blank (digitless-exponents.md#how-many)", () => {
+    assert.deepEqual(answersOf("yel dogozelx grar zazozon vayebel. yal ragel."), ["citation:grar"]);
+    assert.deepEqual(answersOf("yel dogozelx grar zazozon vayebel. yal ogozelx gragel."), ["citation:grar"]);
+    assert.deepEqual(answersOf("yel dogozelx grar zazozon vayebel. yal alazun."), []);
+    assert.deepEqual(answersOf("yel dar zazozon varal. yal ragel."), []);
+  });
+
+  it("ties a reply to a range blank: the ends' role, or a number (ordered-ranges.md, open-ranges.md#named-ranges)", () => {
+    assert.deepEqual(answersOf("yel zazozon aor zahelan varuyol. yal alazun."), ["citation:aor"]);
+    assert.deepEqual(answersOf("yel zazozon aor zahelan varuyol. yal zalazun."), ["sameRole:aor"]);
+    assert.deepEqual(answersOf("yel zazozon aor zahelan varuyol. yal dalazun."), []);
+    assert.deepEqual(answersOf("yel dorelx gragel oer grazal zazozon varal. yal ragel."), ["citation:oer"]);
+    assert.deepEqual(answersOf("yel dorelx gragel oer grazal zazozon varal. yal orelx gragel."), ["citation:oer"]);
+    assert.deepEqual(answersOf("yel zragel oer zrazal vezuvel. yal ragel."), ["citation:oer"]);
+  });
 });

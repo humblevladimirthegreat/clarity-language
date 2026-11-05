@@ -905,6 +905,7 @@ citation
         family: body.family,
       });
     }
+  / numberCitation
   / marks:WritingMarks? "<" payload:ForeignPayload ">" WordEnd {
       const ending = spanEnding(marks);
       return makeWord(text(), {
@@ -924,6 +925,27 @@ citation
         ending: body.ending,
         plural: body.plural,
         family: body.family,
+      });
+    }
+
+// A number with no role letter (word-endings.md#citation-forms): `ragel` / `+3` *three*, `rodol` / `#2` *second*. Written,
+// it needs a digit or an exponent after the marker, so a bare `+` or an ending mentioned as `-l` is not a word, except
+// a blank, whose `=` mark shows it (`=+`). A resume (`=+3`, `rager`) and a blank (`=+`, `rar`) cite like any number.
+numberCitation
+  = mark:WritingEndingMark? stem:WritingNumberStem
+    &{ return stem.groups.length > 0 || !!stem.digitlessExp || mark === "="; }
+    ending:Ending? plural:PluralSuffix? WordEnd {
+      return makeWord(text(), {
+        ending: endingFromWritingMark(mark, ending || "l"),
+        plural: !!plural,
+        family: numberFamily(stem, mark || undefined),
+      });
+    }
+  / stem:SpeechNumberStem ending:Ending plural:PluralSuffix? WordEnd {
+      return makeWord(text(), {
+        ending,
+        plural: !!plural,
+        family: numberFamily(stem, undefined),
       });
     }
 

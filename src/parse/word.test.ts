@@ -59,6 +59,16 @@ describe("parseWord — content / gl- / citation", () => {
 });
 
 describe("parseWord — numbers (writing + speech)", () => {
+  it("parses a number with no role letter as a citation (numbers.md, number-markers.md#writing-preferred-shorthand)", () => {
+    for (const [input, ending] of [["ragel", "l"], ["+3", "l"], ["rodol", "l"], ["~+3", "m"], ["rar", "r"], ["=+", "r"], ["=+3", "r"], ["rager", "r"]] as const) {
+      const word = parseOk(input);
+      assert.equal(word.pos, undefined, input);
+      assert.equal(word.ending, ending, input);
+      assert.equal(word.family.kind, "number", input);
+    }
+    for (const input of ["+", "-l", "~+"]) assert.throws(() => parseWord(input), WordParseError, input);
+  });
+
   it("parses g+3 and speech twin gragel", () => {
     const writing = parseOk("g+3");
     assert.equal(writing.pos, "g");

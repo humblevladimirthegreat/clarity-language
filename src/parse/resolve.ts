@@ -65,8 +65,11 @@ type Ctx = {
   host?: LexWord;
   /** The `/b/` heads that extra-noun hooks take as their landmarks. */
   hookLandmarks: Set<LexWord>;
-  /** Range hooks in **-r** (`oer`): one value in the band, which a question asks for (open-ranges.md#named-ranges). */
-  rangeBlanks: Set<LexWord>;
+  /**
+   * Range hooks in **-r** (`oer`): one value in the band, which a question asks for (open-ranges.md#named-ranges), with
+   * what a reply names: a noun of the ends' role, or a number.
+   */
+  rangeBlanks: Map<LexWord, BlankRole | undefined>;
   /** Names said in this conversation; a greeting from one of them while closing is goodbye too. */
   named: Set<string>;
   /** Tags assigned in this conversation (tag-pronouns.md#tag-pronouns); a topic change leaves them alone. */
@@ -817,9 +820,24 @@ function noteHookLandmarks(ctx: Ctx, units: Unit[]): void {
   });
 }
 
-/** Range hooks in **-r** (`zazozon oer zahelan`, `dorelx gragel oer grazal`): under a question, each is a blank. */
+/** What a reply to a blank names: a noun of that role, or a number (questions.md#fill-ask). */
+type BlankRole = "z" | "d" | "b" | "number";
+
+/**
+ * Range hooks in **-r**: under a question, each is a blank. A range between two nouns (`zazozon aor zahelan`) is
+ * answered like a blank of their role; a range of numbers (`dorelx gragel oer grazal`, `zragel oer zrazal`) by a number.
+ */
 function noteRangeBlanks(ctx: Ctx, units: Unit[]): void {
-  for (const unit of units) if (unit.kind === "hook" && unit.job === "span" && unit.word.ending === "r") ctx.rangeBlanks.add(unit.word);
+  units.forEach((unit, i) => {
+    if (unit.kind !== "hook" || unit.job !== "span" || unit.word.ending !== "r") return;
+    const before = units[i - 1];
+    const head = before?.kind === "np" ? before.coord.parts[0]?.items[0] : undefined;
+    let role: BlankRole | undefined;
+    if (units[i + 1]?.kind === "predicate") role = "number";
+    else if (head?.kind === "package" && head.package.head.family.kind === "number") role = "number";
+    else if (before?.kind === "np") role = before.coord.level;
+    ctx.rangeBlanks.set(unit.word, role);
+  });
 }
 
 /** A blank under a question: the outer ask's, or in a `derl` (question-like) dependent its own (questions.md#embedded-whether). */
@@ -947,7 +965,7 @@ function buildResolve(result: ParseResult): ResolveInfo {
     antecedents: [],
     landmarks: [],
     hookLandmarks: new Set(),
-    rangeBlanks: new Set(),
+    rangeBlanks: new Map(),
     named: new Set(),
     tags: new Map(),
     groupTags: new Map(),
@@ -968,7 +986,7 @@ function buildResolve(result: ParseResult): ResolveInfo {
     question: false,
   };
   visitResult(result, resolveVisitor(ctx));
-  const answers = fillAnswers(result.utterances, ctx.asks);
+  const answers = fillAnswers(result.utterances, ctx.asks, ctx.rangeBlanks);
   return {
     anaphors: ctx.anaphors,
     asks: ctx.asks,
@@ -978,11 +996,17 @@ function buildResolve(result: ParseResult): ResolveInfo {
 }
 
 /**
- * Tie each reply to the fill-ask right before it (questions.md#fill-ask). A bare citation fills one noun blank. A
- * sentence with no verb fills the blanks when its nouns keep exactly the blanks' letters: existence for a `/z/` blank,
- * a lone `/d/` for a `/d/` blank (predication.md#unsaid-event), both for a fill-all.
+ * Tie each reply to the fill-ask right before it (questions.md#fill-ask). A bare citation fills one blank: a noun for
+ * a noun blank, a number (`ragel`) or a counted noun (`orelx gradol`) for a number blank (`grar`, a range of numbers).
+ * A sentence with no verb fills the blanks when its nouns keep exactly the blanks' letters: existence for a `/z/`
+ * blank, a lone `/d/` for a `/d/` blank (predication.md#unsaid-event), both for a fill-all. A range between two nouns
+ * is a blank of their role (`yel zazozon aor zahelan varuyol. yal alazun.`).
  */
-function fillAnswers(utterances: Utterance[], asks: AskRecord[]): AnswerRecord[] {
+function fillAnswers(
+  utterances: Utterance[],
+  asks: AskRecord[],
+  rangeBlanks: ReadonlyMap<LexWord, BlankRole | undefined>,
+): AnswerRecord[] {
   const answers: AnswerRecord[] = [];
   utterances.forEach((utterance, i) => {
     const ask = asks.find((record) => record.utteranceIndex === i - 1);
@@ -990,17 +1014,30 @@ function fillAnswers(utterances: Utterance[], asks: AskRecord[]): AnswerRecord[]
     const act = actWord(utterance.left);
     if (!ask || ask.kind !== "fillAsk" || !body || body.linker || (act && act.raw !== "yal")) return;
     const blanks = ask.gaps;
-    const nounBlank = (word: LexWord) => word.pos === "z" || word.pos === "d" || word.pos === "b";
+    const roleOf = (word: LexWord): BlankRole | undefined => {
+      if (rangeBlanks.has(word)) return rangeBlanks.get(word);
+      if (isDigitlessNumberBlank(word)) return "number";
+      return word.pos === "z" || word.pos === "d" || word.pos === "b" ? word.pos : undefined;
+    };
+    const roles = blanks.map(roleOf);
     if (body.fragment) {
-      if (blanks.length === 1 && nounBlank(blanks[0]!)) answers.push({ utteranceIndex: i, askIndex: i - 1, form: "citation", blanks });
+      const only = roles.length === 1 ? roles[0] : undefined;
+      const unit = body.clause.units[0];
+      const head = unit?.kind === "np" ? unit.coord.parts[0]?.items[0] : undefined;
+      if (!only || head?.kind !== "package") return;
+      const isNumber = head.package.head.family.kind === "number";
+      const counted = head.package.adjs.some((adj) => adj.word.family.kind === "number");
+      if (only === "number" ? isNumber || counted : !isNumber) {
+        answers.push({ utteranceIndex: i, askIndex: i - 1, form: "citation", blanks });
+      }
       return;
     }
     const units = body.clause.units;
-    if (units.some((unit) => unit.kind === "vp") || !blanks.every(nounBlank)) return;
+    if (units.some((unit) => unit.kind === "vp") || !roles.every((role) => role && role !== "number")) return;
     // A same-role word relates two phrases of the blank's role, so they fill it together (`zazozon ewem zahelan.`, same-role-words.md).
     if (units.some((unit) => unit.kind === "hook" && unit.word.reading !== "sameRole")) return;
     const levels = [...new Set(units.flatMap((unit) => (unit.kind === "np" ? [unit.coord.level] : [])))];
-    const wanted = blanks.map((blank) => blank.pos);
+    const wanted = roles;
     if (levels.length === wanted.length && wanted.every((pos) => levels.includes(pos as NpCoord["level"]))) {
       answers.push({ utteranceIndex: i, askIndex: i - 1, form: "sameRole", blanks });
     }

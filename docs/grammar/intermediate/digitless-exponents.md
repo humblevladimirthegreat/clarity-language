@@ -82,7 +82,7 @@ To ask for a **number**, write a [number word](/numbers) with no digits and the 
 >
 > "Which place does Alazun sit in?" (first, second, and so on)
 
-Answer with the number as a [citation](/word-endings#citation-forms) or a full sentence.
+Answer with the number as a [citation](/word-endings#citation-forms) (`yal ragel.` *Three.*), with the counted noun (`yal ogozelx gragel.` *Three cats.*), or with a full sentence.
 
 **Compare with:** outside a question, the same word is *some number* (`zazozon drar vayebel.` *Azozon sees some number of them*). To repeat a number already given, keep a digit: `drager` ([above](#digitless)).
 

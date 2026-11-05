@@ -67,7 +67,7 @@ With **-r**, the hook stands in for one value you are not naming. Under a [quest
 >
 > "Azozon sees some number of cats from 3 to 5."
 
-In a question the range is the [fill-ask](/questions#fill-ask) blank, so like any blank it goes first, together with the noun it counts.
+In a question the range is the [fill-ask](/questions#fill-ask) blank, so like any blank it goes first, together with the noun it counts. The answer names the value: the number alone (`yal ragel.` *Three.*) or with the noun (`yal ogozelx gragel.` *Three cats.*).
 
 The [range hooks](/ordered-ranges#ranges) take **-r** the same way: `zragel uor zrazal` is *some value strictly between 3 and 5*, and `zragel uar zrazal` *some value outside 3–5*.
 

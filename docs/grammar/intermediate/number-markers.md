@@ -116,6 +116,8 @@ A hedged named number (both **`@`** and **`~`**) is written with **`@`** only, a
 
 Put the marker symbol **right after** the ending mark (or right after the role letter when there is no mark), **before the digits** (or last, when there are no digits): `g+3`, `g~+3`, `g=+`, `d_12`, `d=_`, `g@#2`. A **`_`** label never takes a sign ([Sign](#sign)).
 
+A [citation](/word-endings#citation-forms) has no role letter, in shorthand as in speech, and takes any ending: `+12` (`rabadol`) *twelve*, `#2` (`rodol`) *second*, `=+3` (`rager`) *those three again*, `=+` (`rar`) *some number*. A written citation keeps a digit or the `=`, so a lone `+` stays a symbol.
+
 #### Body
 
 | Speech | Preferred writing |

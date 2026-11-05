@@ -45,6 +45,13 @@ So *three* is **g** + **ra** + **ge** + **l**: **`gragel`**.
 
 A number with more digits is still **one word**: one syllable per digit, left to right. *Twenty* is **g** + **ra** + **do** + **mo** + **l**: **`gradomol`**.
 
+On its own, outside a sentence (a list, a reply), a number drops its role letter like any [citation](word-endings.md#citation-forms): **`ragel`** is *three*.
+
+> `ragel.`
+> three
+>
+> "Three."
+
 ### Ordinals {#ordinals}
 
 To say **which place** a thing has in a series (*the first*, *the second*, …), swap the count marker **`ra`** for the rank marker **`ro`**. **`grodol`** is *the second*.
