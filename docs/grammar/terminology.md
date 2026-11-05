@@ -622,7 +622,7 @@ Extra-noun [hook](/hooks#extra-noun) **`aol`** plus implement `/b/` (*using / wi
 
 Amount + lexicon unit noun (published abstract = unit name).
 
-[Measures, ranges, and percent](/numbers-applied#measure-phrases)
+[Measures and percent](/numbers-applied#measure-phrases)
 
 ### Met / unmet / motive / prescription (sakes)
 
@@ -760,13 +760,13 @@ Numeric prefix `-e-xROOT` (and quasi-N): the shape of a kind, not the real thing
 
 Stacked hook between same-role words on an ordered line: `oel` *through*, `uel` *through, B left out*, `ual` *outside*, `uol` *strictly between*, `aol` *in turn*.
 
-[Ranges in order](/ordered-ranges#ranges)
+[Ranges](/ordered-ranges#ranges)
 
 ### Range / ray
 
 A [range hook](#range-hook) between two number ends of one kind (`oel` / `uel`); a ray has ±∞ as one end.
 
-[Measures, ranges, and percent](/numbers-applied#number-ranges), [Open and named ranges](/open-ranges#rays)
+[Ranges](/ordered-ranges#number-ranges), [Open and named ranges](/open-ranges#rays)
 
 ### Rank join / set join / SHARED
 
@@ -950,7 +950,7 @@ A lone `/th/` met word is thanks (*my sake is met*). *Sorry* is unmet plus a `bl
 
 Single-item rank with a number = bound on a line.
 
-[Measures, ranges, and percent](/numbers-applied)
+[Measures and percent](/numbers-applied)
 
 ### Time horizon
 

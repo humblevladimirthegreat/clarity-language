@@ -173,7 +173,7 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 
 Resume the handle like any name: its whole stem + **-r** (`zanar`).
 
-**Compare with:** a [mention](/span-mention#mention) is the **word** (`glegol z[ana]` = *the word “ana”*). A foreign code whose letters all have Ageben letters is a native [letter code](/numbers-applied#letter-codes) (`z_v16` *F-16*); one with a letter Ageben lacks stays an opaque span (<code>z@&lt;FBI&gt;</code>).
+**Compare with:** a [mention](/span-mention#mention) is the **word** (`glegol z[ana]` = *the word “ana”*). A foreign code whose letters all have Ageben letters is a native [letter code](/number-markers#letter-codes) (`z_v16` *F-16*); one with a letter Ageben lacks stays an opaque span (<code>z@&lt;FBI&gt;</code>).
 
 ### An English name as Ageben {#english-name}
 

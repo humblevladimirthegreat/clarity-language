@@ -20,8 +20,8 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | **e** | *pick one* | [*instead*](/hooks#instead) | *at* / *near* |
 | **u** | *not* / *neither* / *none of* | [*except*](/hooks#except) | *from* / *away from* |
 | **ao** | [in order](/rank-joins#route-ao): *A, then B* | | [*using* / *by*](/extra-noun-hooks#extra-noun-intermediate) |
-| **ua** | [*everything but*](/joins#everything-ua); alone *everything* | [range](/ordered-ranges#ranges): strictly between | *out of* / *out from among* |
-| **uo** | [rank reversed](/rank-joins#invert-u-stacks): last first | [range](/ordered-ranges#ranges): outside *A–B* | *against* / *contrary to* |
+| **ua** | [*everything but*](/joins#everything-ua); alone *everything* | [range](/ordered-ranges#ranges): outside *A–B* | *out of* / *out from among* |
+| **uo** | [rank reversed](/rank-joins#invert-u-stacks): last first | [range](/ordered-ranges#ranges): strictly between | *against* / *contrary to* |
 | **ae** | [*and/or*](/rank-joins#exclusivity-and-denying-a-whole-list) (at least one) | | *on* / *over* |
 | **oe** | [tie](/rank-joins#rank-joins): equal rank | [range](/ordered-ranges#ranges): *A through B* | *toward* / *in the direction of* |
 | **ue** | [*anything but*](/rank-joins#invert-u-stacks) | | *through* / *by way of* |

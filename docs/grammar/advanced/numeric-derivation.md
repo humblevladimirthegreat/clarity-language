@@ -383,5 +383,5 @@ z-Ahelan | d-telos-x-fire | v-see
 ## See also
 
 - Free counts / ranks / number as verb / adverb / interjection / discourse: [numbers.md](/numbers)
-- Labels, time, measure, ranges, percent: [numbers-applied.md](/numbers-applied)
+- Measures and percent: [numbers-applied.md](/numbers-applied)
 - The root last, as in every **`x`** compound: [compounds.md](/compound-families#ordinary-compound-order)

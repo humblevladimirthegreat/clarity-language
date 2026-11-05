@@ -66,7 +66,7 @@ Each number word is one kind of number, set by its marker. In preferred writing,
 
 ### Number endings {#number-endings}
 
-Beginner already used exact **-l**. The other endings mark *about*, a named title, or a repeat of a number you already gave. Speech keeps the ending letter. Shorthand writing shows the ending as a mark right after the role letter (the same marks as on [spans](/spans)).
+Beginner already used exact **-l**. A number word takes the same four ending letters as any other word, but they have **number-specific** meanings: the other endings mark *about*, a named title, or a repeat of a number you already gave. Speech keeps the ending letter. Shorthand writing shows the ending as a mark right after the role letter (the same marks as on [spans](/spans)).
 
 <!-- cheat-sheet: numbers -->
 | Written | Spoken | Use | Cue |
@@ -157,11 +157,49 @@ Both writings name the **same word**. Choose the surface by one test: **how many
 | Numeric prefix | **spelled** (required) | shorthand before **`x`** and a root does not form a word |
 | Inventory tables | **shorthand** | patterns are easy to scan |
 
-**Side by side:** number words next to each other (a range, a list of values) share one writing. If any of them needs shorthand, write them all in shorthand: `z+3 oel z+12`, not `zragel oel z+12`.
+**Side by side:** number words next to each other (a list of values) share one writing. If any of them needs shorthand, write them all in shorthand: `z+3 z+12 zal`, not `zragel z+12 zal`.
 
 Speech and writing drills that teach the shorthand itself still show one-digit shorthand.
 
 A free number in shorthand shows its ending as a mark after the role letter (`g~+3`); spelled out, it shows the ending as its last letter (`gragem`). A number built onto a content root is always spelled out (`NUM`) and never takes the marks **`~`** / **`@`** / **`=`**.
+
+### Letter codes {#letter-codes}
+
+English names many things with letters as well as digits: a vitamin (*B12*), a flat (*4B*), a jet (*F-16*). A **`_`** code may hold letters too. Write each letter in lowercase, in shorthand, just like the digits: `g_b12`.
+
+> `zazozon debebul g_b12 vagedal.`
+>
+> 🔊 `zazozon debebul grebubadol vagedal.`
+>
+> z-Azozon | [d-pill | g-_b12] | v-eat
+>
+> "Azozon takes a B12 pill."
+
+Say each character as one syllable, after the marker **`re`**:
+
+- A digit is its digit syllable (`ba` … `mo`).
+- A consonant is its [letter name](letter-names.md#letter-names) (`bu` … `me`, `tho`, `wa`, `yu`). A letter name never sounds like a digit, because it takes the [opposite vowel](/phonology#opposite-vowels): `bu` is *b*, `ba` is *1*.
+- A vowel is its own sound after a short break, the catch in English *uh-oh*. The spelled form writes the break as `'`. Without it, `bu` + `u` would run into one long vowel, and `re` + `o` would sound like another marker.
+
+<!-- cheat-sheet: numbers -->
+| Ageben | Use | English |
+|--------|-----|---------|
+| `z_b12` (🔊 `zrebubadol`) | letter, then digits | *B12* |
+| `z_4b` (🔊 `zrehubul`) | digit, then letter | *4B* |
+| `z_vba` (🔊 `zrevebu'al`) | vowel after a break | *VBA* |
+| `z_e1` (🔊 `zre'ebal`) | code that starts with a vowel | *E1* |
+| `z_thw` (🔊 `zrethowal`) | `th` is one letter | *THW* |
+| `z_2,1` (🔊 `zredothebal`) | two fields | *version 2.1* |
+
+Rules for letters in a code:
+
+- No comma between letters and digits: the switch is audible (`z_b12`, not `z_b,12`).
+- **`x`** is never a character, so a code before **`x`** is always a numeric prefix or plural **-x** (`z_b0x` covers B0 to B9, as in [plural labels](/digit-strings#plural-labels)).
+- Only the **`_`** marker takes letters: a count, a rank, a sign, or a date has none.
+- In a code, `e` is always the vowel letter, never an exponent.
+- A letter at the end of a code is a character, not the ending. A code with a letter always shows its ending by a mark: `z_nl` is **-l**, `z@_nl` is **-n**, `z=_nl` is **-r**.
+
+**A foreign code** keeps its letters when each one has an Ageben letter. English *p*, *t*, *k*, *s*, and *f* are the voiceless sounds of `b`, `d`, `g`, `z`, and `v`, so they take those letters: *F-16* is `z_v16`, and *P2* is `z_b2`. A code with a letter that has no Ageben sound (*c*, *i*, *j*, *q*, *x*) stays a [span](/spans#loans): *FBI* is <code>z@&lt;FBI&gt;</code>.
 
 ### Practice {#intermediate-practice}
 

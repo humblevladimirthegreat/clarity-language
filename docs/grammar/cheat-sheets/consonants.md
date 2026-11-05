@@ -183,4 +183,4 @@ These still count as names:
 |-------|------------------------|-------|
 | a phrase join under `/z/`, `/d/`, or `/b/` | **-n** titles the bundle ([titled phrases](/proper-names#titled-phrases)) | I |
 | a hook | **-n** titles a proper-name phrase ([titled phrases](/proper-names#titled-phrases)) | I |
-| a number word | **-n** is a named designation, such as an official label or *the Second* ([number-word exception](/proper-names#number-word-exception)) | I |
+| a number word | **-n** is a named designation, such as an official label or *the Second* ([number endings](/number-markers#number-endings)) | I |

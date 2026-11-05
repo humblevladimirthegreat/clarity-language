@@ -208,7 +208,7 @@ The digit-string marker `_` holds a phone, room, channel, or serial number, with
 | [A code as object](/digit-strings#digit-strings) | `zazozon d_555,123,4567 vayebel.` | *Azozon sees 555-123-4567.* | B |
 | [Fields](/digit-strings#code-fields) | `d_2,1,3` | *version 2.1.3* | B |
 | [Plural label](/digit-strings#plural-labels) | `zazozon vowurol herom bl_90x.` | *Azozon walked in the ’90s.* | B |
-| [Letter code](/numbers-applied#letter-codes) | `zazozon debebul g_b12 vagedal.` | *Azozon takes a B12 pill.* | I |
+| [Letter code](/number-markers#letter-codes) | `zazozon debebul g_b12 vagedal.` | *Azozon takes a B12 pill.* | I |
 | [Initials](/initials#initials) | `z@_nl` | *the NL* (for `zanaxalazun`) | A |
 
 Say a code one character per syllable: a digit by its digit syllable, a consonant by its letter name, and a vowel after a break `'`.
@@ -216,12 +216,12 @@ Say a code one character per syllable: a digit by its digit syllable, a consonan
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`z_b12` (🔊 `zrebubadol`)](/numbers-applied#letter-codes) | letter, then digits | *B12* | I |
-| [`z_4b` (🔊 `zrehubul`)](/numbers-applied#letter-codes) | digit, then letter | *4B* | I |
-| [`z_vba` (🔊 `zrevebu'al`)](/numbers-applied#letter-codes) | vowel after a break | *VBA* | I |
-| [`z_e1` (🔊 `zre'ebal`)](/numbers-applied#letter-codes) | code that starts with a vowel | *E1* | I |
-| [`z_thw` (🔊 `zrethowal`)](/numbers-applied#letter-codes) | `th` is one letter | *THW* | I |
-| [`z_2,1` (🔊 `zredothebal`)](/numbers-applied#letter-codes) | two fields | *version 2.1* | I |
+| [`z_b12` (🔊 `zrebubadol`)](/number-markers#letter-codes) | letter, then digits | *B12* | I |
+| [`z_4b` (🔊 `zrehubul`)](/number-markers#letter-codes) | digit, then letter | *4B* | I |
+| [`z_vba` (🔊 `zrevebu'al`)](/number-markers#letter-codes) | vowel after a break | *VBA* | I |
+| [`z_e1` (🔊 `zre'ebal`)](/number-markers#letter-codes) | code that starts with a vowel | *E1* | I |
+| [`z_thw` (🔊 `zrethowal`)](/number-markers#letter-codes) | `th` is one letter | *THW* | I |
+| [`z_2,1` (🔊 `zredothebal`)](/number-markers#letter-codes) | two fields | *version 2.1* | I |
 
 ### Time and date {#time}
 
@@ -296,17 +296,16 @@ Write both ends with a [range hook](/ordered-ranges#ranges): `A oel B`. `uel` le
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`zragel oel zrazal`](/numbers-applied#number-ranges) | both ends in | *3 to 5* | I |
-| [`zragel uel zrazal`](/numbers-applied#number-ranges) | 5 left out | *3 up to but not including 5* | I |
-| [`zrazal uel zragel`](/numbers-applied#number-ranges) | 3 left out | *more than 3, up to 5* | I |
-| [`zragel oem zrazal`](/numbers-applied#number-ranges) | soft ends | *roughly 3 to 5* | I |
-| [`zragel uem zrazal`](/numbers-applied#number-ranges) | soft exclusion | *3 up to about 5, not quite 5* | I |
+| [`zragel oel zrazal`](/ordered-ranges#number-ranges) | both ends in | *3 to 5* | I |
+| [`zragel uel zrazal`](/ordered-ranges#number-ranges) | 5 left out | *3 up to but not including 5* | I |
+| [`zrazal uel zragel`](/ordered-ranges#number-ranges) | 3 left out | *more than 3, up to 5* | I |
+| [`zragel oem zrazal`](/ordered-ranges#number-ranges) | soft ends | *roughly 3 to 5* | I |
+| [`zragel uem zrazal`](/ordered-ranges#number-ranges) | soft exclusion | *3 up to about 5, not quite 5* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [3 to 5](/numbers-applied#number-ranges) | `zragel oel zrazal.` | *From 3 to 5.* (both ends included) | I |
-| [Of a noun](/numbers-applied#number-ranges) | `zodozel gragel oel grazal vowurol.` | *Three to five dogs walk.* | I |
-| [Hours](/numbers-applied#number-ranges) | `zagorum gragel oel grazal.` | *Three to five hours.* | I |
+| [3 to 5](/ordered-ranges#number-ranges) | `zragel oel zrazal.` | *From 3 to 5.* (both ends included) | I |
+| [Of a noun](/ordered-ranges#number-ranges) | `zodozel gragel oel grazal vowurol.` | *Three to five dogs walk.* | I |
 
 To limit to one end, make the other end infinity:
 
@@ -495,4 +494,4 @@ Only kin make generations: friends and bosses are [social relations](/social-tie
 | `xrodol` *point 2:* ([a numbered step](/number-roles#number-as-discourse-marker-by-marker)) | | `x#-2` *2nd from the end:* ([counting back](/stacked-markers#from-the-end)) |
 | `xrudol` *independent item 2:* ([a new line of support](/number-roles#number-as-discourse-marker-by-marker)) | | `x#-2` *2nd from the end:* ([counting back](/stacked-markers#from-the-end)) |
 | `th+70` *70% likely* ([a stance](/number-roles#number-as-stance-by-marker)) | | `thomam` *maybe* ([open, with no figure](/knowing#may)) |
-| `zragel oel zrazal` *3 to 5* ([a band](/numbers-applied#number-ranges)) | | `zragel zrazal zaol` *3, then 5* ([two values in order](/numbers-applied#number-ranges)) |
+| `zragel oel zrazal` *3 to 5* ([a band](/ordered-ranges#number-ranges)) | | `zragel zrazal zaol` *3, then 5* ([two values in order](/ordered-ranges#number-ranges)) |

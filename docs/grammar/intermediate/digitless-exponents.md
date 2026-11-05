@@ -308,5 +308,5 @@ The blank for *how much* of a quality sits on `/w/` as **`wrar`**; **`har`** is 
 ## See also
 
 - Everyday number words: [numbers](/numbers)
-- Applied uses (labels, time, measure, ranges, percent): [numbers-applied.md](numbers-applied.md)
+- Measures and percent: [numbers-applied.md](numbers-applied.md)
 - Numeric prefixes (`NUMxROOT`): [numeric-derivation.md](/numeric-derivation)

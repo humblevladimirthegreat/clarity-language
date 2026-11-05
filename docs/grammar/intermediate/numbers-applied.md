@@ -2,48 +2,11 @@
 band: intermediate
 ---
 
-# Measures, ranges, and percent {#measures-ranges-and-percent}
+# Measures and percent {#measures-and-percent}
 <a id="numbers-applied"></a>
 
-A number word can do more than count. This page shows how to write a code or label (*room 12*), a clock time or date, an amount of a unit (*two meters*), a range (*3 to 5*), and a percent. How the number word itself is built (markers, endings, writing) is in [numbers](/numbers); unspecified amounts, exponents, and the spoken comma are in [digitless and exponents](digitless-exponents.md).
+A number word can do more than count. This page shows how to write an amount of a unit (*two meters*) and a percent or a fraction. How the number word itself is built (markers, endings, writing) is in [numbers](/numbers); unspecified amounts, exponents, and the spoken comma are in [digitless and exponents](digitless-exponents.md).
 
-### Letter codes {#letter-codes}
-
-English names many things with letters as well as digits: a vitamin (*B12*), a flat (*4B*), a jet (*F-16*). A **`_`** code may hold letters too. Write each letter in lowercase, in shorthand, just like the digits: `g_b12`.
-
-> `zazozon debebul g_b12 vagedal.`
->
-> 🔊 `zazozon debebul grebubadol vagedal.`
->
-> z-Azozon | [d-pill | g-_b12] | v-eat
->
-> "Azozon takes a B12 pill."
-
-Say each character as one syllable, after the marker **`re`**:
-
-- A digit is its digit syllable (`ba` … `mo`).
-- A consonant is its [letter name](letter-names.md#letter-names) (`bu` … `me`, `tho`, `wa`, `yu`). A letter name never sounds like a digit, because it takes the [opposite vowel](/phonology#opposite-vowels): `bu` is *b*, `ba` is *1*.
-- A vowel is its own sound after a short break, the catch in English *uh-oh*. The spelled form writes the break as `'`. Without it, `bu` + `u` would run into one long vowel, and `re` + `o` would sound like another marker.
-
-<!-- cheat-sheet: numbers -->
-| Ageben | Use | English |
-|--------|-----|---------|
-| `z_b12` (🔊 `zrebubadol`) | letter, then digits | *B12* |
-| `z_4b` (🔊 `zrehubul`) | digit, then letter | *4B* |
-| `z_vba` (🔊 `zrevebu'al`) | vowel after a break | *VBA* |
-| `z_e1` (🔊 `zre'ebal`) | code that starts with a vowel | *E1* |
-| `z_thw` (🔊 `zrethowal`) | `th` is one letter | *THW* |
-| `z_2,1` (🔊 `zredothebal`) | two fields | *version 2.1* |
-
-Rules for letters in a code:
-
-- No comma between letters and digits: the switch is audible (`z_b12`, not `z_b,12`).
-- **`x`** is never a character, so a code before **`x`** is always a numeric prefix or plural **-x** (`z_b0x` covers B0 to B9, as in [plural labels](/digit-strings#plural-labels)).
-- Only the **`_`** marker takes letters: a count, a rank, a sign, or a date has none.
-- In a code, `e` is always the vowel letter, never an exponent.
-- A letter at the end of a code is a character, not the ending. A code with a letter always shows its ending by a mark: `z_nl` is **-l**, `z@_nl` is **-n**, `z=_nl` is **-r**.
-
-**A foreign code** keeps its letters when each one has an Ageben letter. English *p*, *t*, *k*, *s*, and *f* are the voiceless sounds of `b`, `d`, `g`, `z`, and `v`, so they take those letters: *F-16* is `z_v16`, and *P2* is `z_b2`. A code with a letter that has no Ageben sound (*c*, *i*, *j*, *q*, *x*) stays a [span](/spans#loans): *FBI* is <code>z@&lt;FBI&gt;</code>.
 ### Measure phrases {#measure-phrases}
 <a id="units"></a>
 <a id="unit-amount"></a>
@@ -100,51 +63,6 @@ Each unit is a metaphor on a published root. The **Literal on same root** column
 Words for a quantity itself (*heavy*, *flow*, *time* as a continuum, …) are ordinary roots (`arolem` *heavy*, `godurom` *duration*, …), not units.
 
 Spelled out, `bagorum g+3` is `bagorum gragel` *three hours*.
-
-### Ranges of numbers {#number-ranges}
-
-To give a range of numbers (*from 3 to 5*, *3 through 5*), write the two ends with a [range hook](ordered-ranges.md#ranges) between them, the same hooks that range people or days: `A oel B`. No join word closes it, and no extra word names the scale.
-
-> `zragel oel zrazal.`
->
-> z-three | through | z-five
->
-> "From 3 to 5." (both ends included)
-
-To count a range of things, put the endpoints on the counted noun, the same way one count sits on it. The noun names the line:
-
-> `zodozel gragel oel grazal vowurol.`
->
-> [z-dog | g-three] | through | g-five | v-walk
->
-> "Three to five dogs walk."
-
-> `zagorum gragel oel grazal.`
->
-> [z-hour | g-three] | through | g-five
->
-> "Three to five hours."
-
-A word after **B** describes **B** alone, and a word on the counted noun describes the whole range. To add a detail to the range itself, put a `/w/` word right before the hook ([detail on the hook](ending-grids.md#hook-w)).
-
-**Leave an end out with `uel`.** **`uel`** leaves out the end you say second, so to leave out the low end, say it second.
-
-<!-- cheat-sheet: numbers -->
-| Ageben | Use | English |
-|--------|-----|---------|
-| `zragel oel zrazal` | both ends in | *3 to 5* (`[3, 5]`) |
-| `zragel uel zrazal` | 5 left out | *3 up to but not including 5* (`[3, 5)`) |
-| `zrazal uel zragel` | 3 left out | *more than 3, up to 5* (`(3, 5]`) |
-| `zragel oem zrazal` | soft ends | *roughly 3 to 5* |
-| `zragel uem zrazal` | soft exclusion | *3 up to about 5, not quite 5* |
-
-An endpoint can still be fuzzy on its own (`zragel oel zrazam` = *3 to about 5*).
-
-**Both ends are the same kind of number.** A range needs one ordered line, and each number's [marker](number-markers.md#marker-vowel-referential-identity) says which line it is on: amounts (**`+`** / **`-`**), ordinals (**`#`**), or labels and times (**`_`**). A number with no digits is an end too. An amount through an ordinal (*three through 2nd*) has no reading. A name pairs with any number: `zazozon oel zrogel` is *from Azozon through the 3rd in line*.
-
-**Compare with:** `zragel al zrazal` is *3, including 5*: an ordinary [hook](/hooks#including), not a range.
-
-**Compare with:** `zragel zrazal zaol` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zazozon zalazun zol gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](locative-relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
 
 ### Percent and percentage points {#percent-and-percentage-points}
 
@@ -225,7 +143,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *pill* | `ebebul` |
 | *walk* | `vowurol` |
-| *see* | `vayebel` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -263,15 +180,6 @@ z-Azozon | [b-meter | g-two] | v-walk
 [z-pill-x | g-two | g-third-of]
 :::
 
-**5.** *Azozon sees a B12 pill.*
-
-::: details Show answer
-`zazozon debebul g_b12 vayebel.`
-
-🔊 `zazozon debebul grebubadol vayebel.`
-
-z-Azozon | [d-pill | g-_b12] | v-see
-:::
 
 
 #### Ageben → English {#intermediate-ageben-to-english}
@@ -287,18 +195,7 @@ z-bottle-x | g-50yo
 *50% of the bottles.*
 :::
 
-**2.** `z+10 ual z+20.`
-
-::: details Show answer
-
-🔊 `zrabamol ual zradomol.`
-
-z-ten | outside | z-20
-
-*Below 10 or above 20.*
-:::
-
-**3.** `zawodalx gragel gruhul.`
+**2.** `zawodalx gragel gruhul.`
 
 ::: details Show answer
 
@@ -320,20 +217,8 @@ z-pill-x | g-third-of
 Marker **`ru`** divides: *a third of*; **`ra`** is three pills.
 :::
 
-#### Fix it {#intermediate-fix-it}
-
-**1.** *one through three* <!-- lint: error -->`zrabal zragel zal.`
-
-::: details Show answer
-`zrabal oel zragel.`
-
-z-one | through | z-three
-
-An *and*-join names only the two ends; a range of numbers puts **`oel`** between them.
-:::
 ## See also
 
 - Number-word anatomy (markers, endings, exponents): [numbers.md](/numbers)
 - Numeric prefixes (`NUMxROOT`): [numeric-derivation.md](/numeric-derivation)
-- Hooks behind ranges: [hooks.md](ordered-ranges.md#ranges)
 - Measured differentials on comparative scales: [comparatives.md](/comparatives)

@@ -371,7 +371,7 @@ WritingNumberStem
 WritingMarker
   = "#_" / "+-" / "#-" / "#" / "+" / "-"
 
-// A code (`_`, numbers-applied.md#letter-codes): fields of digits and letters, no exponent or percent. Letters are
+// A code (`_`, number-markers.md#letter-codes): fields of digits and letters, no exponent or percent. Letters are
 // always characters, so the ending comes from the mark (`z@_nl`), never a trailing letter.
 WritingCodeBody
   = head:WritingCodeField tail:("," f:WritingCodeField { return f; })* &(PluralSuffix EOF / WS / EOF) {

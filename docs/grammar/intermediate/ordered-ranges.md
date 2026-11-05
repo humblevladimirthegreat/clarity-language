@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Ranges in order {#ranges-in-order}
+# Ranges {#ranges-sitting}
 
 ### Ranges (`oel` / `uel` / `ual` / `uol` / `aol`) {#ranges}
 
@@ -103,8 +103,6 @@ The two ends are two points on one ordered line, in any same-role slot. Between 
 >
 > "Alazun pays everyone from Azozon through Ahelan."
 
-Numbers are ends too, with these same hooks: `zragel oel zrazal` is *3 through 5*. Two number ends must be the same kind of number, because a count and an ordinal are not one line: *three through 2nd* has no reading. A name and a number can share a line: `zazozon oel zrogel` is *from Azozon through the 3rd in line*.
-
 A word right after B describes B alone, not the range. To describe the range itself, put `/w/` right before the hook:
 
 > `zazozon wemem oel zahelan vowurol.`
@@ -118,6 +116,45 @@ A word right after B describes B alone, not the range. To describe the range its
 **Compare with:** for *through* in a range, use **`oel`**; **`uel`** leaves B out. As an extra noun, `uel` + `/b/` is *through* a place.
 
 **Compare with:** a hook right after a [landmark](/extra-noun-hooks#extra-noun-intermediate) describes that landmark, never a range: `al bohehal oel bobewol` is *in the house toward the pencil*. For *from X to Y*, use **`ul`** … **`oel`** with a `/b/` after each (`zazozon ul b_9 oel b_17 vowurol`, *Azozon walks from 9:00 to 17:00*).
+
+### Ranges of numbers {#number-ranges}
+
+To give a range of numbers (*from 3 to 5*, *3 through 5*), write the two ends with a [range hook](#ranges) between them, the same hooks that range people or days: `A oel B`. No join word closes it, and no extra word names the scale.
+
+> `zragel oel zrazal.`
+>
+> z-three | through | z-five
+>
+> "From 3 to 5." (both ends included)
+
+To count a range of things, put the endpoints on the counted noun, the same way one count sits on it. The noun names the line:
+
+> `zodozel gragel oel grazal vowurol.`
+>
+> [z-dog | g-three] | through | g-five | v-walk
+>
+> "Three to five dogs walk."
+
+A word on the counted noun describes the whole range. A word after **B** still describes **B** alone, as with any range.
+
+The other range hooks and endings work the same way. **`uel`** still leaves out the end you say second:
+
+<!-- cheat-sheet: numbers -->
+| Ageben | Use | English |
+|--------|-----|---------|
+| `zragel oel zrazal` | both ends in | *3 to 5* (`[3, 5]`) |
+| `zragel uel zrazal` | 5 left out | *3 up to but not including 5* (`[3, 5)`) |
+| `zrazal uel zragel` | 3 left out | *more than 3, up to 5* (`(3, 5]`) |
+| `zragel oem zrazal` | soft ends | *roughly 3 to 5* |
+| `zragel uem zrazal` | soft exclusion | *3 up to about 5, not quite 5* |
+
+An endpoint can still be fuzzy on its own (`zragel oel zrazam` = *3 to about 5*).
+
+**Both ends are the same kind of number.** A range needs one ordered line, and each number's [marker](number-markers.md#marker-vowel-referential-identity) says which line it is on: amounts (**`+`** / **`-`**), ordinals (**`#`**), or labels and times (**`_`**). A number with no digits is an end too. An amount through an ordinal (*three through 2nd*) has no reading. A name pairs with any number: `zazozon oel zrogel` is *from Azozon through the 3rd in line*.
+
+**Compare with:** `zragel al zrazal` is *3, including 5*: an ordinary [hook](/hooks#including), not a range.
+
+**Compare with:** `zragel zrazal zaol` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zazozon zalazun zol gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](locative-relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
 
 ### Practice {#intermediate-practice}
 
@@ -188,6 +225,17 @@ z-Azozon | through.approx | z-Ahelan | v-write
 *Roughly everyone from Azozon through Ahelan writes.*
 :::
 
+**4.** `z+10 ual z+20.`
+
+::: details Show answer
+
+🔊 `zrabamol ual zradomol.`
+
+z-ten | outside | z-20
+
+*Below 10 or above 20.*
+:::
+
 #### Pick one {#intermediate-pick-one}
 
 **1.** *Everyone between Azozon and Ahelan runs, but not those two.* `zazozon uol zahelan veruvol.` or `zazozon oel zahelan veruvol.`
@@ -210,4 +258,14 @@ z-Azozon | strictly-between | z-Ahelan | v-run
 z-Azozon | through | z-Ahelan | v-see
 
 An *and*-join names only the two ends; a range of people puts **`oel`** between them.
+:::
+
+**2.** *one through three* <!-- lint: error -->`zrabal zragel zal.`
+
+::: details Show answer
+`zrabal oel zragel.`
+
+z-one | through | z-three
+
+An *and*-join names only the two ends; a range of numbers puts **`oel`** between them.
 :::

@@ -449,7 +449,7 @@ export const NUMBER_FEATURE_CONSTRUCTIONS = {
   decimal: { anchor: "digitless-exponents.md#exponents", summary: "decimal point" },
   groups: { anchor: "digit-strings.md#digit-strings", summary: "more than one digit group" },
   code: {
-    anchor: "numbers-applied.md#letter-codes",
+    anchor: "number-markers.md#letter-codes",
     summary: "code with letters",
     reader:
       "A `_` code may hold letters as well as digits, read as the letters themselves: `_b12` = B12, `_4b` = 4B, `_v16` = F-16 (Ageben `v`, `b`, `d`, `g`, `z` stand for English f, p, t, k, s). With `@` (`.named`) and only letters it is usually a title's initials (`@_nl` = the NL, short for a long two-root title).",

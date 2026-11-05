@@ -166,10 +166,6 @@ Beginner used the ending to say how to take a content word’s meaning. On an `/
 
 [Discourse hooks](/hooks#discourse-hooks), which have no first letter, use hook endings. Hook **-n** titles a [proper-name phrase](#titled-phrases).
 
-### Number-word exception {#number-word-exception}
-
-Beginner used **-l** / **-m** / **-n** to say how to take a citation’s meaning. On [number words](/numbers), those same letters (and **-r**) have **number-specific** meanings. After a role letter, the number marker **r** may start a cluster that only number words use ([phonology.md](phonotactics.md#phonotactics)).
-
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.

@@ -30,7 +30,7 @@ const CODE_LETTER_NAMES: Record<string, string> = {
 
 /**
  * Speech for one code field (`b12` → `bubado`): digit syllables, letter names, and a break `'` before each vowel
- * ([letter codes](../../docs/grammar/numbers-applied.md#letter-codes)). Offsets are each character's vowel.
+ * ([letter codes](../../docs/grammar/number-markers.md#letter-codes)). Offsets are each character's vowel.
  */
 export function codeToSyllables(code: string, table = NUMBER_SYLLABLES): { text: string; vowels: number[] } {
   let text = "";

@@ -8,7 +8,7 @@ band: advanced
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-English *5 or more* / *less than 5* is a **ray**: a band with only one end. Write it as a [range](/numbers-applied#number-ranges) whose other end is infinity: **`zrawal`** (+∞) or **`zruwal`** (−∞), the [digitless exponents](special-values.md#special-values). The same **`oel`** / **`uel`** rules apply, so **`uel`** leaves out the end said second.
+English *5 or more* / *less than 5* is a **ray**: a band with only one end. Write it as a [range](/ordered-ranges#number-ranges) whose other end is infinity: **`zrawal`** (+∞) or **`zruwal`** (−∞), the [digitless exponents](special-values.md#special-values). The same **`oel`** / **`uel`** rules apply, so **`uel`** leaves out the end said second.
 
 > `zrazal oel zrawal.`
 >

@@ -152,7 +152,7 @@ export const WORD_DETECTORS: readonly WordDetector[] = [
   {
     id: "initials",
     label: (t) => `initials *${t.text}*: each title root's first consonant as a letter code with \`@\` (spelled here from the English letters)`,
-    links: ["initials.md#initials", "numbers-applied.md#letter-codes"],
+    links: ["initials.md#initials", "number-markers.md#letter-codes"],
     test: (t) => INITIALS.test(t.text),
   },
   { id: "proper-name", label: () => "proper name", links: ["proper-names.md#proper-name--n"], test: (t) => !!t.proper },

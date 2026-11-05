@@ -1,6 +1,6 @@
 # Proposal: Making every sitting pass "what one sitting holds"
 
-**Status:** in progress. Phase 0 done (2026-11-05, every finding held). Workstreams done: 1.
+**Status:** in progress. Phase 0 done (2026-11-05, every finding held). Workstreams done: 1, 2a.
 **Related:** [what one sitting holds](../meta/grammar-docs.md#one-sitting) (the tests this proposal applies), [sitting length](../meta/drill-generation.md#sitting-length), [how to apply](../meta/learning-levels.md#how-to-apply), [gates](../meta/learning-levels.md#gates), [allowlist](../meta/drill-generation.md#allowlist), [site redirects](../meta/site-redirects.md).
 **Depends on:** `range-series.md`, implemented first (B6 assumes one range series).
 **Design authority:** none. This proposal moves, merges, peels, and retitles existing sections. It adds no form and changes no reading. Band changes for three sections are settled in [gate runs](#gate-runs). Any further grammar decision goes under [open decisions](#open-decisions) and waits.
@@ -182,11 +182,11 @@ Removed: `join-across-roles.md` (D1), which redirects to the merged joins page.
 | `left-bound.md` | `longer-chains.md` | Longer chains | B1 |
 | `notional-standing.md` | `residue-and-former.md` | Residue and former | B4 |
 | `ordered-ranges.md` | `ranges.md` | Ranges | B6 |
-| `numbers-applied.md` | `measures.md` | Amount of a unit (or Measures and percent) | B6, D3 |
+| `numbers-applied.md` | `measures-and-percent.md` | Measures and percent (settled in 2a: percent is a share of a whole, not a unit) | B6, D3 |
 | `rank-joins.md` | keep | Rank joins | C1 |
 | `span-mention.md` | `spans-as-words.md` | Spans as words | C2 |
 | `prescription.md` | `doing-it-for-a-sake.md` | Doing it for a sake | C3 |
-| `fill-ask-roles.md` | `more-fill-asks.md` | More fill-asks | C5 |
+| ~~`fill-ask-roles.md`~~ | keep (OD2) | — | C5 |
 | `ending-grids.md` | `in-clause-hooks.md` | Hooks inside the clause | C6 |
 | `discourse-hooks.md` | keep | In fact and anyway | C6 |
 | `speech-acts.md` | `more-turn-words.md` | Turn words, further | C7 |
@@ -410,9 +410,22 @@ Renames come before placement, so the sidebar is edited once under its final nam
 
 **Decision:** an H3 on speech-moves after *Interjections*. Both are short sounds that stand outside the clause. That brings speech-moves to 7 H3s once C8's *Continue* lands too.
 
+## Reported Owns lines
+<a id="reported-owns-lines"></a>
+
+Owns-line changes that subagents reported, for Phase 5 to apply to `AGENTS.md`:
+
+- 2a, `numbers.md` row: number-markers also owns letter codes ("word shape, markers, endings, writing, letter codes (`number-markers.md`)").
+- 2a, `numbers-applied.md` row: "Ranges, measure phrases, percent; …" → "Measure phrases, percent, fractions; …" (and the filename after Phase 3).
+- 2a, `hooks.md` row: "ordered ranges (`ordered-ranges.md`)" → "ranges, including ranges of numbers" (and the filename after Phase 3).
+
 ## Open decisions
 
 The main agent adds anything a subagent reports, and skips the affected item until the user decides.
 
 - **OD1. joins.md *Vowels and endings* fold (E2), skipped in workstream 1.** Folding the H3 under another one and keeping an `<a id="join-type-vowel-series">` breaks the English helper: `JOIN_VOWELS_SECTION` in `src/english-helper/analyze.ts` keys on the section a table row sits in, and `sectionAt` (`src/lint/learning-order.ts`) ignores mid-section anchors, so vowel-only rows (*not* → `u`) stop spelling as join words (cases.tsv 128, 130–132). Options: (a) teach `sectionAt` to honour mid-section `<a id>`s, (b) re-key the helper on vowel-only joins.md rows wherever they sit, (c) leave the recap H3.
+- **OD2. C5 *How big? How fast?* → fill-ask-roles (2a.3), skipped.** `wrar` is a digitless number blank (`ra` + -r), taught on number-markers and digitless-exponents, both after fill-ask-roles on the path (gate 4). The move would also split *how much* (`grar` on *How many?* / `wrar` on *How big?*, test 5). digitless-exponents keeps the H3; fill-ask-roles keeps its title and filename, so its URLs row drops. Reopen only if fill-ask-roles moves after digitless-exponents.
+- **OD3. D3 *Parts of speech on numbers* → number-roles (2a.2), skipped.** number-markers comes before number-roles and uses numbers in other slots throughout (Number endings `dragel` / `drager`, marker-table cells, three Practice items), so the H3 stays where it is taught first. Options: keep it, or thin number-markers heavily, Practice included.
+- **OD4. C5 *Group separator* → number-markers (2a.2), skipped.** Its scalar examples need exponents (`wa` / `ya`), taught on digitless-exponents, after number-markers; without an exponent the examples have no documented reading. number-markers' Word shape already introduces the spoken comma.
+- **Process note.** A **generate** allowlist row fails the build until Phase 4 writes its checkpoint, so from 2a.2 on, "green" means the build fails only on generate-status or drill-coverage errors for **generate** rows, and tests pass.
 - **Follow-up from A1.** Workstream 1 also fixed stale bold vowel labels (`**…el** (`zol`)`) on rank-joins, say-questions, join-limits, fill-ask-roles, causation, and the talking cheat sheet. Bare bold vowel labels in other prose were not audited.
