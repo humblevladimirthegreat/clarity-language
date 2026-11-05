@@ -12,11 +12,12 @@ User decisions (2026-11-05):
 - An answer bigger than one noun phrase is a **sentence that keeps only the blank's role**, with every letter: existence for a `/z/` blank, the lone `/d/` for a `/d/` blank.
 - Every listed word takes both **-l** and **-m**, with no per-row exceptions.
 - The overlap with the order joins (`zaol`) is kept, with a Compare-with line.
+- No existing hook moves to the listed words. Each hook changes who is in a slot, spans a range, or takes a `/b/` landmark, and no listed word does any of those.
 - Part 2 is taught at **intermediate**, after the hinges. Part 1 is taught where fill answers are first taught.
 - The work runs in **two sessions**: Session 1 is Part 1, and Session 2 is Part 2 and closing.
 - **Four words ship:** `abam`, `alam`, `erom`, and `ewem`. `ovam`, `ahom`, `arum`, `anem`, and `ezem` are not shipped ([not shipped](#not-shipped)). `ovam` never ships: it would come from a `/th/` relation.
 
-**Related:** [hooks.md](../grammar/beginner/hooks.md) (same-role `A HOOK B`, [closed and open endings](../grammar/beginner/hooks.md#closed-and-open-endings)), [relations.md](../grammar/beginner/relations.md), [dependents.md](../grammar/beginner/dependents.md#hinges), [sentence-linkers.md](../grammar/intermediate/sentence-linkers.md#sentence-linkers), [rank-joins.md](../grammar/intermediate/rank-joins.md) (`zaol`), [word-endings.md](../grammar/beginner/word-endings.md#citation-forms), [questions.md](../grammar/beginner/questions.md) (fill answers), [fill-ask-jobs.md](../grammar/beginner/fill-ask-jobs.md), [predication.md](../grammar/beginner/predication.md#existence), [viewpoint.md](../grammar/intermediate/viewpoint.md#landmark-facing), [locative-relations.md](../grammar/intermediate/locative-relations.md), [english.md](../grammar/english.md#motion), [`data/lexicon-overlays.csv`](../../data/lexicon-overlays.csv), [`src/parse/sentence-parser.ts`](../../src/parse/sentence-parser.ts) (`citation` rule in clause units, ~line 702), [`src/parse/tokens.ts`](../../src/parse/tokens.ts) (`citationFallback`), [`src/parse/constructions.ts`](../../src/parse/constructions.ts), [unassigned-reserved.md](../meta/unassigned-reserved.md), [design-decisions.md](../meta/design-decisions.md), [proposals.md](../meta/proposals.md) (how this plan runs), [drill-generation.md](../meta/drill-generation.md).
+**Related:** [hooks.md](../grammar/beginner/hooks.md) (same-role `A HOOK B`, [closed and open endings](../grammar/beginner/hooks.md#closed-and-open-endings)), [relations.md](../grammar/beginner/relations.md), [dependents.md](../grammar/beginner/dependents.md#hinges), [sentence-linkers.md](../grammar/intermediate/sentence-linkers.md#sentence-linkers), [rank-joins.md](../grammar/intermediate/rank-joins.md) (`zaol`), [ordered-ranges.md](../grammar/intermediate/ordered-ranges.md#ranges) (`aol`), [discourse-hooks.md](../grammar/intermediate/discourse-hooks.md#stacked-discourse) (`am` *such as*), [word-endings.md](../grammar/beginner/word-endings.md#citation-forms), [questions.md](../grammar/beginner/questions.md) (fill answers), [fill-ask-jobs.md](../grammar/beginner/fill-ask-jobs.md), [predication.md](../grammar/beginner/predication.md#existence), [viewpoint.md](../grammar/intermediate/viewpoint.md#landmark-facing), [locative-relations.md](../grammar/intermediate/locative-relations.md), [english.md](../grammar/english.md#motion), [`data/lexicon-overlays.csv`](../../data/lexicon-overlays.csv), [`src/parse/sentence-parser.ts`](../../src/parse/sentence-parser.ts) (`citation` rule in clause units, ~line 702), [`src/parse/tokens.ts`](../../src/parse/tokens.ts) (`citationFallback`), [`src/parse/constructions.ts`](../../src/parse/constructions.ts), [unassigned-reserved.md](../meta/unassigned-reserved.md), [design-decisions.md](../meta/design-decisions.md), [proposals.md](../meta/proposals.md) (how this plan runs), [drill-generation.md](../meta/drill-generation.md).
 **Depends on:** none.
 **Design authority:** changes these forms and readings:
 - **Part 1:**
@@ -184,9 +185,20 @@ These four pass every test a same-role word must pass:
   - *In order to* restates the doer instead (`zuwen vowurol thovam blarl zuwen vezuvel.`), as [so that](../grammar/beginner/dependents.md#so-that) already teaches.
 - **Join-relations** (`han`, `huan`, …). Without its role letter, each one is already a vowel hook spelling.
 
-### Overlap with joins
+### Overlap with joins and ranges
 
-`abam` / `alam` say the same order as the `zaol` *then* join and the planned `aol` *in turn* (`range-series.md`). The second way is kept. The page needs one Compare-with line: the join lists members in order, while `abam` makes B the background.
+`abam` / `alam` say the same order as the `zaol` *then* join and the [`aol` *in turn* range](../grammar/intermediate/ordered-ranges.md#ranges). The second way is kept. The page needs one Compare-with line covering all three:
+- `zazozon zahelan zaol` lists every member in order;
+- `zazozon aol zahelan` walks from one end to the other, taking in everyone between;
+- `zazozon abam zahelan` relates just the two, with B as the background.
+
+### Overlap with *such as*
+
+English *like* has two jobs, and Ageben splits them:
+- **B is one example of A** (*animals like dogs*, *the family, such as Azozon*): the same-role hook `am` *including, and maybe more*, which [discourse-hooks.md](../grammar/intermediate/discourse-hooks.md#stacked-discourse) already gives as *such as* inside a clause.
+- **B is a separate member, in the background** (*Azozon, like Ahelan, walks*): `ewem`.
+
+The test is whether B is part of A or beside it. The sitting needs one Compare-with line, and the recipe row for *like* splits on this test.
 
 ### Teaching stage
 
@@ -324,7 +336,7 @@ The main agent runs it in its own context: a few pages and one cluster of change
 | 2.1 | **Overlay rows.** Add an **-l** and an **-m** row for each of the four shipped words, on the existing published row, with a new `pos` value for same-role citations. Each row needs a `gloss`, a `definition`, a `mnemonic`, and an `anchor` (the new sitting's ids; agree them with the main agent before workstream 3). Add the classify reading. |
 | 2.2 | **Same-role rule.** The listed word is valid only between two phrases with the same role letter, and A is the nearest same-role phrase before it. In a fill-ask, the fronted word + blank pair takes A from the nearest same-role phrase after it. Run `grammar-check` until clean. |
 | 2.3 | **Rejections.** A listed word without a same-role phrase on each side, a listed word followed by `/b/`, and **-n** / **-r** on a listed word are each rejected with a construction. Add unassigned-reserved rows: **closed** for the first two, **open** for **-n** / **-r**. A lone listed word as a fragment stays the ordinary citation (item 1.1). |
-| 2.4 | **Glosses and helper.** Add morph glosses on the vowel-hook pattern (`before.open`, `like.closed`). Add `reader` notes in `constructions.ts` so `--llm-prompt` explains the form. Add English-helper cases, one per shipped word (*before*, *after*, *while*, *like*). Run `english-helper-recall -- --check`. |
+| 2.4 | **Glosses and helper.** Add morph glosses on the vowel-hook pattern (`before.open`, `like.closed`). Add `reader` notes in `constructions.ts` so `--llm-prompt` explains the form. Add English-helper cases, one per shipped word (*before*, *after*, *while*, *like*), plus one *like* = *such as* case that must still suggest `am`. Run `english-helper-recall -- --check`. |
 
 **End:** run the gates and report. **No commit** (see [rules](#rules-for-the-main-agent)).
 
@@ -333,17 +345,16 @@ The main agent runs it in its own context: a few pages and one cluster of change
 **May edit:**
 - the new sitting `docs/grammar/intermediate/<file>.md` (suggested `same-role-words.md`; the title is the subagent's to choose under doc-style);
 - `reading-order.ts` and the [allowlist](../meta/drill-generation.md#allowlist) (a new **generate** row with a **Setting**);
-- Compare-with lines on `hooks.md`, `dependents.md`, `viewpoint.md`, `rank-joins.md`, and `relations.md` if needed;
 - `english.md` and `say-*.md`;
 - the cheat sheets (generator, plus a marker for the new rows);
 - `terminology.md`, if the build requires an entry for the new term.
 
 | Item | Work |
 |------|------|
-| 3.1 | **Placement.** Use `reading-order.ts` to find the latest page whose forms the sitting uses: every `/h/` relation it draws from, the hinges, `rank-joins.md` for the `zaol` contrast, and `viewpoint.md` for the *behind* contrast. Place the sitting at intermediate after all of them. Report the position. |
+| 3.1 | **Placement.** Use `reading-order.ts` to find the latest page whose forms the sitting uses: every `/h/` relation it draws from, the hinges, `rank-joins.md` for the `zaol` contrast, `ordered-ranges.md` for the `aol` contrast, `discourse-hooks.md` for the *such as* contrast, and `viewpoint.md` for the *behind* contrast. Place the sitting at intermediate after all of them. Report the position. |
 | 3.2 | **The sitting.** Teach `A CITE B` and the nearest-phrase rule, the endings (**-l** / **-m**, with `erol` *only while*), each shipped word with a worked example and morph gloss, the fill-ask with the fronted pair, the lone-role answer `zazozon ewem zahelan.`, and *ahead of* / *behind* for a moving B. Stay under the sitting cap; do not add `### Practice`. |
-| 3.3 | **Compare-with lines.** <ul><li>On hooks.md *Same role*: the vowel hooks, and the listed words that work the same way.</li><li>On dependents.md hinges: the clause form vs the same-role form.</li><li>On viewpoint.md *landmark facing*: behind the house vs behind someone who also walks.</li><li>On rank-joins.md `zaol`: the join lists members in order; `abam` makes B the background.</li></ul> Each line sits on the **later** page of its pair ([teach now](../meta/grammar-docs.md#teach-now-dont-preview-later)). |
-| 3.4 | **Recipes and cheat sheet.** Add recipe rows for *before / after / while / like* when the two share a role, and *follow* → `alam` on [english.md](../grammar/english.md#motion). Then `npm run cheat-sheet-blocks -- --write`. |
+| 3.3 | **Compare-with lines.** Each line sits on the **later** page of its pair ([teach now](../meta/grammar-docs.md#teach-now-dont-preview-later)). Item 3.1 places the new sitting after every page it contrasts with, so every line goes **on the new sitting** and links back to the earlier page, which stays unchanged: <ul><li>hooks.md [same-role hooks](../grammar/beginner/hooks.md#including): the vowel hooks, and the listed words that work the same way.</li><li>dependents.md [hinges](../grammar/beginner/dependents.md#hinges): the clause form vs the same-role form.</li><li>viewpoint.md [landmark facing](../grammar/intermediate/viewpoint.md#landmark-facing): behind the house vs behind someone who also walks.</li><li>rank-joins.md `zaol` and ordered-ranges.md `aol`: the join lists members in order, the range walks from end to end, and `abam` relates just the two with B as the background ([overlap](#overlap-with-joins-and-ranges)).</li><li>discourse-hooks.md `am` *such as* vs `ewem` *like*: B as an example of A vs B as a separate member ([overlap](#overlap-with-such-as)).</li><li>relations.md `/ɡ/` relations: limiting a set (`zual gewem blazozon`) vs relating a member ([non-goals](#non-goals)).</li></ul> If a line would push the sitting past its cap, fold related lines into one. |
+| 3.4 | **Recipes and cheat sheet.** Add recipe rows for *before / after / while / like* when the two share a role, and *follow* → `alam` on [english.md](../grammar/english.md#motion). The *like* row splits: B an example of A (*such as*) → `am`; B a separate member → `ewem`. Then `npm run cheat-sheet-blocks -- --write`. |
 
 **End:** run the gates (with the Practice exception) and report.
 

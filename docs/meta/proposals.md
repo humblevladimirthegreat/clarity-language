@@ -83,11 +83,13 @@ Subagents cost tokens, so the plan is shaped to need few of them, as below.
 
 A smaller model may run a workstream that is purely mechanical and gated by the build, such as a rename script. Never use one for grammar judgment, teaching prose, or checkpoints.
 
+Set each subagent's reasoning effort to what its workstream needs, through the Agent tool's `effort` field. Mechanical, build-gated work runs at low effort. Grammar judgment, teaching prose, checkpoints, and audits run higher. The proposal names the effort for each workstream, so the setting is not a judgment call at launch.
+
 ## The plan section
 
 A proposal that runs through subagents states, in its plan:
 
-- the workstreams, with IDs, their order, and their items
+- the workstreams, with IDs, their order, their items, and the model and reasoning effort for each
 - the files each workstream may edit
 - the brief every subagent gets, including the rules it follows and its report format
 - the gates between items and between workstreams
