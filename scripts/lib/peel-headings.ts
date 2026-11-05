@@ -1,14 +1,12 @@
 /**
  * Peel named H3 clusters off a one-sitting grammar page onto a new file.
- * Keeps `{#id}`s; rewrites same-page links that now cross files.
+ * Keeps `{#id}`s; rewrites same-page links that now cross files; one hash row per moved id.
  */
 import { pageBand, type Band } from "../../src/lint/learning-order.js";
-import { anchorTags, grammarHeadings, headingSlug, type Heading } from "../../src/lint/grammar-anchors.js";
+import { headingSlug } from "../../src/lint/grammar-anchors.js";
 import type { HashRedirect } from "../../docs/grammar/.vitepress/lib/hash-redirect.js";
-import type { HoldingSitting } from "../../docs/grammar/.vitepress/lib/holding-list.js";
+import { cutRanges, hasTaughtH3, idsIn, idsInRange, rewriteLocalLinks, selectedRanges } from "./heading-clusters.ts";
 import type { PeelResult } from "./peel-band.ts";
-
-const PRACTICE_TITLE = /^(?:translation )?practice$/i;
 
 export type PeelHeadingsInput = {
   parentPage: string;
@@ -55,7 +53,7 @@ export function peelHeadings(input: PeelHeadingsInput): PeelResult {
   parent = rewriteLocalLinks(parent, (id) => (movedIds.includes(id) ? `${newPage}#${id}` : undefined));
   const sittingOut = rewriteLocalLinks(sitting, (id) => (keptIds.has(id) ? `${parentPage}#${id}` : undefined));
 
-  const hashRedirects: HashRedirect[] = [];
+  const hashRedirects: HashRedirect[] = movedIds.map((id) => ({ page: parentPage, hash: id, to: newPage, toHash: id }));
   return {
     parent,
     sitting: sittingOut,
@@ -65,83 +63,6 @@ export function peelHeadings(input: PeelHeadingsInput): PeelResult {
     linkMap,
     homeMap,
   };
-}
-
-type Range = { start: number; end: number; heading: Heading };
-
-function selectedRanges(markdown: string, ids: readonly string[]): Range[] {
-  const headings = grammarHeadings(markdown);
-  const roots: Heading[] = [];
-  for (const id of ids) {
-    const heading = headingForId(markdown, headings, id);
-    if (PRACTICE_TITLE.test(heading.title)) {
-      throw new Error(`#${id} is a Practice heading; split drills by hand`);
-    }
-    if (heading.level < 3) {
-      throw new Error(`#${id} is H${heading.level}; peel H3 clusters (or nested H4s)`);
-    }
-    roots.push(heading);
-  }
-  const unique = [...new Map(roots.map((h) => [h.offset, h])).values()].sort((a, b) => a.offset - b.offset);
-  const top = unique.filter(
-    (h) => !unique.some((other) => other.offset < h.offset && subtreeEnd(headings, other, markdown.length) > h.offset),
-  );
-  return top.map((heading) => ({
-    start: heading.offset,
-    end: subtreeEnd(headings, heading, markdown.length),
-    heading,
-  }));
-}
-
-function headingForId(markdown: string, headings: readonly Heading[], id: string): Heading {
-  const heading = headings.find((h) => h.id === id);
-  if (heading) return heading;
-  const tag = anchorTags(markdown).find((a) => a.id === id);
-  if (!tag) throw new Error(`no heading or <a id> #${id}`);
-  const containing = [...headings].reverse().find((h) => h.offset <= tag.offset);
-  if (!containing) throw new Error(`#${id} sits before every heading`);
-  return containing;
-}
-
-function subtreeEnd(headings: readonly Heading[], heading: Heading, docEnd: number): number {
-  return headings.find((h) => h.offset > heading.offset && h.level <= heading.level)?.offset ?? docEnd;
-}
-
-function hasTaughtH3(markdown: string): boolean {
-  return grammarHeadings(markdown).some((h) => h.level === 3 && !PRACTICE_TITLE.test(h.title));
-}
-
-function idsIn(markdown: string): string[] {
-  return [...grammarHeadings(markdown).map((h) => h.id), ...anchorTags(markdown).map((a) => a.id)];
-}
-
-function idsInRange(markdown: string, start: number, end: number): string[] {
-  const headingIds = grammarHeadings(markdown)
-    .filter((h) => h.offset >= start && h.offset < end)
-    .map((h) => h.id);
-  const tagIds = anchorTags(markdown)
-    .filter((a) => a.offset >= start && a.offset < end)
-    .map((a) => a.id);
-  return [...new Set([...headingIds, ...tagIds])];
-}
-
-/** Drop ranges in one pass so later cuts do not see shifted offsets. */
-function cutRanges(markdown: string, ranges: readonly Range[]): string {
-  const sorted = [...ranges].sort((a, b) => a.start - b.start);
-  let out = markdown.slice(0, sorted[0]!.start);
-  for (let i = 0; i < sorted.length; i++) {
-    const end = sorted[i]!.end;
-    const next = sorted[i + 1]?.start ?? markdown.length;
-    out += markdown.slice(end, next);
-  }
-  return out.replace(/\n{3,}/g, "\n\n").replace(/^\n+/, "").replace(/\n+$/, "\n");
-}
-
-function rewriteLocalLinks(text: string, dest: (id: string) => string | undefined): string {
-  return text.replace(/\]\(#([^)\s]+)\)/g, (whole, id: string) => {
-    const to = dest(id);
-    return to ? `](${to})` : whole;
-  });
 }
 
 function pickH1Id(explicit: string | undefined, title: string, newPage: string, taken: readonly string[]): string {

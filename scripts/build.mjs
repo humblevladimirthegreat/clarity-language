@@ -62,7 +62,8 @@ await step("tsc", bin("tsc"), []);
 await step("pad spoiler blanks", bin("tsx"), ["scripts/pad-exercise-spoiler-blanks.ts"]);
 
 const jobs = [
-  run("test", "npm", ["test", "--silent"], { buffer: true }),
+  // BUILD_SKIP_TEST=1 drops the test job (npm run verify -- --fast).
+  ...(process.env.BUILD_SKIP_TEST ? [] : [run("test", "npm", ["test", "--silent"], { buffer: true })]),
   run("tsc vitepress", bin("tsc"), ["-p", "docs/grammar/.vitepress"], { buffer: true }),
   run("lint md balance", "node", ["scripts/lint-md-balance.mjs"], { buffer: true }),
   run("lint sidebar", bin("tsx"), ["scripts/lint-sidebar-pages.ts"], { buffer: true }),

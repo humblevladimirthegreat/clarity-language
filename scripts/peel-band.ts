@@ -8,7 +8,7 @@
  * construction homes on retired band fragments. `--write` applies them, then
  * run `npm run cheat-sheet-blocks -- --write` and `npm run build`.
  */
-import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
 
 import { BANDS, type Band } from "../src/lint/learning-order.js";
@@ -17,9 +17,8 @@ import {
   addAllowlistRow,
   appendObjectToExportedArray,
   peelBand,
-  rewriteAnchorRefs,
-  rewriteMarkdownLinks,
 } from "./lib/peel-band.ts";
+import { rewriteRepo } from "./lib/link-rewrite.ts";
 
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
 const readingOrderPath = join(grammarDir, ".vitepress", "lib", "reading-order.ts");
@@ -32,15 +31,6 @@ const LESSON_EXPORT: Record<Band, string> = {
   advanced: "advancedLessons",
 };
 
-const SCAN_DIRS = [
-  join(REPO_ROOT, "docs"),
-  join(REPO_ROOT, "src"),
-  join(REPO_ROOT, "scripts"),
-  join(REPO_ROOT, "data"),
-  join(grammarDir, ".vitepress"),
-];
-const SCAN_FILES = ["AGENTS.md", "README.md"].map((name) => join(REPO_ROOT, name));
-const SKIP_DIRS = new Set(["node_modules", "public", "dist", "generated", "rejected"]);
 
 type Options = {
   parent: string;
@@ -84,44 +74,6 @@ function parseArgs(argv: string[]): Options {
 
 function normalizePage(value: string): string {
   return `${value.replace(/^.*\//, "").replace(/\.(?:md|html)$/, "")}.md`;
-}
-
-function rewriteTargets(): string[] {
-  const out: string[] = [...SCAN_FILES];
-  const stack = [...SCAN_DIRS];
-  while (stack.length) {
-    const dir = stack.pop()!;
-    if (!existsSync(dir)) continue;
-    for (const name of readdirSync(dir)) {
-      if (name.startsWith(".") && name !== ".vitepress") continue;
-      const full = join(dir, name);
-      if (statSync(full).isDirectory()) {
-        if (SKIP_DIRS.has(name)) continue;
-        stack.push(full);
-      } else if (/\.(?:md|ts|vue|csv|tsv)$/.test(name) && !/^(?:peel-band|peel-headings)/.test(name)) {
-        out.push(full);
-      }
-    }
-  }
-  return out;
-}
-
-function applyMaps(
-  text: string,
-  file: string,
-  linkMap: Map<string, string>,
-  homeMap: Map<string, string>,
-): { text: string; changes: { from: string; to: string }[] } {
-  const currentPage = file.endsWith(".md") ? file.split(/[/\\]/).pop()! : "";
-  const code = /\.(?:ts|vue|csv|tsv)$/.test(file);
-  const map = code ? new Map([...linkMap, ...homeMap]) : linkMap;
-  let next = text;
-  const changes: { from: string; to: string }[] = [];
-  if (currentPage) next = rewriteMarkdownLinks(next, currentPage, map);
-  const refs = rewriteAnchorRefs(next, map);
-  next = refs.text;
-  changes.push(...refs.changes);
-  return { text: next, changes };
 }
 
 function main(): void {
@@ -184,15 +136,8 @@ function main(): void {
   );
 
   const skip = new Set([parentPath, sittingPath, readingOrderPath, hashPath]);
-  for (const file of rewriteTargets()) {
-    if (skip.has(file)) continue;
-    const original = readFileSync(file, "utf8");
-    const { text, changes } = applyMaps(original, file, result.linkMap, result.homeMap);
-    if (changes.length === 0 && text === original) continue;
-    if (text !== original) {
-      writeFileSync(file, text);
-      console.log(`Rewrote ${relative(REPO_ROOT, file)} (${changes.length || "links"})`);
-    }
+  for (const { file, changes } of rewriteRepo(result.linkMap, result.homeMap, { skip, write: true })) {
+    console.log(`Rewrote ${file} (${changes.length || "links"})`);
   }
   console.log(`Wrote ${relative(REPO_ROOT, sittingPath)} and updated ${options.parent}.`);
 }

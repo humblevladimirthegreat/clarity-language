@@ -1,14 +1,18 @@
 /**
- * Retired band fragments on a parent path (`joins.html#intermediate`).
+ * Retired fragments on a grammar path: band fragments (`joins.html#intermediate`)
+ * and H3s that moved to another page (`a.html#x` → `b.html#x`).
  * Amplify never sees hashes; the theme rewrites them in the browser.
+ * `npm run move-heading` and `npm run peel-headings` write the H3 rows.
  */
 export type HashRedirect = {
   /** Grammar page file (`joins.md`). */
   page: string
   /** Retired fragment without `#` (`intermediate`). */
   hash: string
-  /** Target grammar page file. Same as `page` means drop the hash and stay. */
+  /** Target grammar page file. Same as `page` with no `toHash` means drop the hash and stay. */
   to: string
+  /** Fragment to land on, without `#`. Omitted: the old fragment is dropped (page top). */
+  toHash?: string
 }
 
 export const hashRedirects: HashRedirect[] = [
@@ -119,8 +123,9 @@ export function pageToRoutePath(page: string): string {
 }
 
 /**
- * Where a retired band hash should go. `hash` may include `#`.
- * The replacement keeps `?query`; it never keeps the old fragment.
+ * Where a retired hash should go. `hash` may include `#`.
+ * The caller keeps `?query`. The result's `hash` is the row's `toHash`, or `''`
+ * (drop the fragment) for band rows.
  */
 export function applyHashRedirect(
   path: string | undefined,
@@ -132,5 +137,5 @@ export function applyHashRedirect(
   const page = routePathToPage(path)
   const row = map.find((item) => item.page === page && item.hash === fragment)
   if (!row) return
-  return { path: pageToRoutePath(row.to), hash: '' }
+  return { path: pageToRoutePath(row.to), hash: row.toHash ?? '' }
 }

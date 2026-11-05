@@ -53,54 +53,58 @@ Use subagents when any of these holds:
 - The main session would compact before the end, losing detail later items need.
 - A step needs a fresh context by rule: an independent audit, or a checkpoint writer that may not have read later pages ([what you may read](drill-generation.md#execute)).
 
-Subagents cost tokens, so the plan is shaped to need few of them, as below.
+Subagents cost tokens, and most of the cost is context carried from turn to turn, so the plan keeps each subagent short and its context small, as below.
 
 ## Where the tokens go
 
-- **A cold start is paid in full.** Each new subagent loads `AGENTS.md`, then reads the proposal, the rule sections, and its pages before its first edit. For a small item, that reading costs more than the edit.
-- **A continued subagent is cheap.** When it is sent its next item, its earlier turns are a cached prefix, billed at a small fraction of the price while the cache is warm. The cache lasts minutes to an hour, depending on the session.
-- **The main agent pays for everything it reads, every turn.** Each turn re-sends its whole context, so a diff it reads early is paid for again on every later turn.
+- **Every turn re-sends the whole context.** A subagent's earlier turns are a cached prefix, billed at a discount while the cache is warm, but they are still sent again on every turn. So a subagent's input grows with the square of its turn count: each turn costs its current context, and the context grows each turn. Rough arithmetic: one 80-turn subagent that grows from 30k to 180k tokens averages about 105k a turn, about 8M input in all. Four 20-turn subagents that each grow from 30k to 70k average about 50k a turn, about 1M each and 4M in all, for the same work.
+- **A cold start is paid in full, but once.** Each new subagent loads `AGENTS.md` and its brief before its first edit. That costs less than carrying a long context through dozens of later turns.
+- **Bulk output is the biggest waste.** Raw build output, whole-page reads, and per-link hand edits each add thousands of tokens that every later turn pays for again. The tools below keep them out of the context.
+- **The main agent pays for everything it reads, every turn.** A diff it reads early is paid for again on every later turn.
 - **A fork copies the main agent's whole conversation.** By mid-run that is larger than a fresh brief.
 - **Parallel subagents save time, not tokens.** Each one pays its own cold start.
 
 ## Running with subagents
 
-1. **Split by shared context, not by file.** A workstream is a group of items that read the same pages and rules. Size it to end before the subagent would compact, usually three to six moderate items. One subagent per item, or per file, pays the cold start again for context the last one already had.
-2. **One subagent per workstream.** Send its first item with the full brief. Send each later item with SendMessage as one line naming the item ID. Start a new subagent at each workstream boundary, or sooner if one compacts.
-3. **Write the brief into the proposal.** Then the first prompt can point to it rather than paste it, and every workstream gets the same rules.
-4. **Send items back to back.** Hand over the next item as soon as the last one is green, while the cache is warm.
-5. **Prefer fresh subagents over forks.** Fork only early, while the main context is still small and the fork needs most of it.
-6. **Run in sequence when files are shared.** Registry files (the sidebar, redirects, the allowlist, level reviews, cheat sheets, the lexicon `core` column, `AGENTS.md`) take one writer at a time. Run in parallel only when the file sets are disjoint and wall time matters.
-7. **Script bulk mechanical work.** Renames, link retargets, and the same edit across many files go in one script that a single subagent writes, runs, and checks with one build, not in one subagent per row.
-8. **Keep the main agent lean.**
-   - Read each report and `git diff --stat`, not whole diffs. Open a hunk only when a report flags it, a gate fails, or the stat shows a file outside the item's list.
-   - Trim command output (`2>&1 | tail -30`).
-   - Leave per-item build and test runs to the subagent; run them once per workstream, before the commit.
-   - Never repeat a green run. When the subagent's last act was a passing build or test run and nothing has changed since, the main agent commits on that result. It reruns only after its own edits (such as `AGENTS.md` Owns lines) or a later change to the tree.
-9. **Ask for short, fixed-field reports**: what moved (with ids), files touched as a count, registry edits, `AGENTS.md` Owns lines to change, gate results, and skips with reasons.
-10. **Pay for a fresh context only where it buys something**: an independent audit, or a rule about what a writer may have read. Scope an audit to what the proposal changed, plus close neighbors.
-11. **Send failures back to the owner.** When a gate fails, send it to the subagent that made the change, which already holds the context, not to a new one.
-12. **Keep one writer for `AGENTS.md`.** Subagents report the Owns-line changes; the main agent applies them at the end.
+1. **Short-lived subagents.** Give each subagent one or two items. Start a fresh one when the next item reads different pages, or once a context passes about 25 turns or about 80k tokens. Split by shared context, not by file: two items that read the same pages may share a subagent; an item that needs new pages gets a new one.
+2. **The item goes in the prompt.** A subagent's first prompt carries everything it needs to start:
+   - the item's own finding text, pasted from the proposal
+   - the gate run or open decision that settles it, if any
+   - the proposal's rule digest (at most about 40 lines), pasted
+   - links to the full rule sections it may open if the digest does not settle a question
 
-A smaller model may run a workstream that is purely mechanical and gated by the build, such as a rename script. Never use one for grammar judgment, teaching prose, or checkpoints.
-
-Set each subagent's reasoning effort to what its workstream needs, through the Agent tool's `effort` field. Mechanical, build-gated work runs at low effort. Grammar judgment, teaching prose, checkpoints, and audits run higher. The proposal names the effort for each workstream, so the setting is not a judgment call at launch.
+   It does not tell the subagent to read the whole proposal. Each proposal that runs through subagents holds one reusable digest, which the main agent pastes into every prompt.
+3. **Read slices.** A subagent lists headings first (`npm run page-lines -- --headings`, or `grep -n '^#'`), then reads only the line ranges it edits. It never opens a whole long page to move one H3.
+4. **Move with tools, not by hand.** Moves, peels, and hash rows go through `npm run move-heading` and `npm run peel-headings`, which cut the clusters, rewrite every `page.md#id` link, and write the hash rows. Never retarget links by hand. A subagent's hand work is what the tools leave: Practice, the allowlist, prose seams, and placement.
+5. **Quiet verification.** The main agent saves `npm run verify -- --baseline` at the start of each phase. Subagents run `npm run verify -- --allow-generate` at the end of each item (`--fast` for checks inside an item) instead of raw build and test runs, and never paste raw build output into their context. When verify reports a new error, read only that line of `tmp/verify-last.log`.
+6. **Smaller model for mechanical steps.** Rename scripts, hash-row backfills, redirect checks, and link retargets may run on a smaller model at low effort. Grammar judgment, teaching prose, Practice, placement, and audits stay on the main model. The proposal names the model and effort for each unit, through the Agent tool's `model` and `effort` fields, so the setting is not a judgment call at launch.
+7. **Prefer fresh subagents over forks.** Fork only early, while the main context is still small and the fork needs most of it.
+8. **Run in sequence when files are shared.** Registry files (the sidebar, redirects, the allowlist, level reviews, cheat sheets, the lexicon `core` column, `AGENTS.md`) take one writer at a time. Run in parallel only when the file sets are disjoint and wall time matters.
+9. **Script bulk mechanical work.** Renames and the same edit across many files go in one script that a single subagent writes, runs, and checks with one `verify`, not in one subagent per row.
+10. **Keep the main agent lean.**
+    - Read each report and `git diff --stat`, not whole diffs. Open a hunk only when a report flags it, a gate fails, or the stat shows a file outside the item's list.
+    - Trim command output (`2>&1 | tail -30`).
+    - Run `verify` once per unit, before the commit. Never repeat a green run: when the subagent's last act was a passing `verify` and nothing has changed since, commit on that result. Rerun only after the main agent's own edits (such as `AGENTS.md` Owns lines).
+11. **Ask for short, fixed-field reports**: what moved (with ids), files touched as a count, registry edits, `AGENTS.md` Owns lines to change, the `verify` line, and skips with reasons.
+12. **Pay for a fresh context where it buys something**: a new set of pages, an independent audit, or a rule about what a writer may have read. Scope an audit to what the proposal changed, plus close neighbors.
+13. **Send failures back to the owner.** When a gate fails, send it to the subagent that made the change, if it is still under the turn and token limits in step 1. Otherwise start a fresh subagent with the item, the failing `verify` lines, and the diff stat.
+14. **Keep one writer for `AGENTS.md`.** Subagents report the Owns-line changes; the main agent applies them at the end.
 
 ## The plan section
 
 A proposal that runs through subagents states, in its plan:
 
-- the workstreams, with IDs, their order, their items, and the model and reasoning effort for each
-- the files each workstream may edit
-- the brief every subagent gets, including the rules it follows and its report format
-- the gates between items and between workstreams
+- the units, with IDs, their order, their items, and the model and reasoning effort for each (one fresh subagent per unit; a unit is one or two items)
+- the files each unit may edit
+- the rule digest every subagent gets pasted, with its report format
+- the gates: `npm run verify -- --allow-generate` against the phase's baseline between items, and the final gate (a clean `npm run build` once nothing is left on a **generate** row)
 - the commit plan: how many commits, and their messages ([commits](#commits))
 
 ## Commits
 
 A proposal carried out with subagents is exempt from the usual rule that agents never commit. The main agent commits regularly, unless the proposal forbids it:
 
-- commit once per workstream, after its gate is green
+- commit once per workstream (or per unit, when the plan splits a phase into units), after its gate is green
 - start the message with the proposal's name and the workstream ID, then `[skip-cd]`, then the co-author line
 - stage only that workstream's files, and never amend or force-push
 - let only the main agent commit, never a subagent

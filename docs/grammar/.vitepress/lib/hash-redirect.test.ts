@@ -28,6 +28,21 @@ describe('applyHashRedirect', () => {
     })
   })
 
+  it('keeps the section when a row names toHash (an H3 that moved pages)', () => {
+    const moved: HashRedirect[] = [
+      { page: 'rank-joins.md', hash: 'respectively', to: 'list-structure.md', toHash: 'respectively' },
+      { page: 'sentence-linkers.md', hash: 'old-id', to: 'sentence-linkers.md', toHash: 'new-id' },
+    ]
+    assert.deepEqual(applyHashRedirect('/rank-joins.html', '#respectively', moved), {
+      path: '/list-structure.html',
+      hash: 'respectively',
+    })
+    assert.deepEqual(applyHashRedirect('/sentence-linkers.html', '#old-id', moved), {
+      path: '/sentence-linkers.html',
+      hash: 'new-id',
+    })
+  })
+
   it('leaves unknown hashes and empty hashes alone', () => {
     assert.equal(applyHashRedirect('/joins.html', '#clause-joins', map), undefined)
     assert.equal(applyHashRedirect('/joins.html', '', map), undefined)

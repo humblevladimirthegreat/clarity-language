@@ -27,10 +27,12 @@ watch(
     if (typeof location === 'undefined') return
     const next = applyHashRedirect(path, hash)
     if (!next) return
-    const dest = withBase(next.path) + location.search
+    const dest = withBase(next.path) + location.search + (next.hash ? `#${next.hash}` : '')
     if (next.path === path) {
       history.replaceState(history.state, '', dest)
-      window.scrollTo(0, 0)
+      const target = next.hash ? document.getElementById(next.hash) : null
+      if (target) target.scrollIntoView()
+      else window.scrollTo(0, 0)
       return
     }
     location.replace(dest)

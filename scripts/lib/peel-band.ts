@@ -125,6 +125,7 @@ export function rewriteMarkdownLinks(
   text: string,
   currentPage: string,
   map: Map<string, string>,
+  changes?: { from: string; to: string }[],
 ): string {
   return text.replace(/\]\(([^)\s]*)#([^)\s]+)\)/g, (whole, href: string, id: string) => {
     if (/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(href)) return whole;
@@ -134,7 +135,9 @@ export function rewriteMarkdownLinks(
     if (!to) return whole;
     const [toPage, toId] = splitAnchor(to);
     const nextHref = retargetHref(href, currentPage, toPage);
-    return toId ? `](${nextHref}#${toId})` : `](${nextHref})`;
+    const replaced = toId ? `](${nextHref}#${toId})` : `](${nextHref})`;
+    if (changes && replaced !== whole) changes.push({ from: `${page}#${id}`, to });
+    return replaced;
   });
 }
 

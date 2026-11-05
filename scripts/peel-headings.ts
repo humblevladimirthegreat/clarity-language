@@ -4,21 +4,25 @@
  * Run: npm run peel-headings -- --parent speech-acts.md --ids speech-act --to firm-soft.md --title "Firm and soft" --band beginner
  *      npm run peel-headings -- --parent speech-acts.md --ids speech-act --to firm-soft.md --title "Firm and soft" --band beginner --write
  *
- * Dry run prints the new sitting, moved ids, sidebar row, and construction homes.
+ * Dry run prints the new sitting, moved ids, sidebar row, hash rows, and construction homes.
  * `--write` applies them. Split Practice by hand. Then:
  * `npm run cheat-sheet-blocks -- --write` and `npm run build`.
  */
-import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
 
 import { BANDS, type Band } from "../src/lint/learning-order.js";
 import { grammarFile, REPO_ROOT } from "../src/repo-paths.js";
-import { addAllowlistRow, appendObjectToExportedArray, rewriteAnchorRefs, rewriteMarkdownLinks } from "./lib/peel-band.ts";
+import { hashRedirects } from "../docs/grammar/.vitepress/lib/hash-redirect.js";
+import { applyHashMoves, writeHashRedirects } from "./lib/hash-rows.ts";
+import { rewriteRepo } from "./lib/link-rewrite.ts";
+import { addAllowlistRow, appendObjectToExportedArray } from "./lib/peel-band.ts";
 import { peelHeadings } from "./lib/peel-headings.ts";
 
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
 const readingOrderPath = join(grammarDir, ".vitepress", "lib", "reading-order.ts");
 const allowlistPath = join(REPO_ROOT, "docs", "meta", "drill-generation.md");
+const hashPath = join(grammarDir, ".vitepress", "lib", "hash-redirect.ts");
 
 const LESSON_EXPORT: Record<Band, string> = {
   beginner: "beginnerLessons",
@@ -26,16 +30,6 @@ const LESSON_EXPORT: Record<Band, string> = {
   advanced: "advancedLessons",
 };
 
-const SCAN_DIRS = [
-  join(REPO_ROOT, "docs"),
-  join(REPO_ROOT, "src"),
-  join(REPO_ROOT, "scripts"),
-  join(REPO_ROOT, "data"),
-  join(grammarDir, ".vitepress"),
-];
-const SCAN_FILES = ["AGENTS.md", "README.md"].map((name) => join(REPO_ROOT, name));
-const SKIP_DIRS = new Set(["node_modules", "public", "dist", "generated", "rejected"]);
-const SKIP_PREFIX = /^(?:peel-band|peel-headings)/;
 
 type Options = {
   parent: string;
@@ -85,44 +79,6 @@ function normalizePage(value: string): string {
   return `${value.replace(/^.*\//, "").replace(/\.(?:md|html)$/, "")}.md`;
 }
 
-function rewriteTargets(): string[] {
-  const out: string[] = [...SCAN_FILES];
-  const stack = [...SCAN_DIRS];
-  while (stack.length) {
-    const dir = stack.pop()!;
-    if (!existsSync(dir)) continue;
-    for (const name of readdirSync(dir)) {
-      if (name.startsWith(".") && name !== ".vitepress") continue;
-      const full = join(dir, name);
-      if (statSync(full).isDirectory()) {
-        if (SKIP_DIRS.has(name)) continue;
-        stack.push(full);
-      } else if (/\.(?:md|ts|vue|csv|tsv)$/.test(name) && !SKIP_PREFIX.test(name)) {
-        out.push(full);
-      }
-    }
-  }
-  return out;
-}
-
-function applyMaps(
-  text: string,
-  file: string,
-  linkMap: Map<string, string>,
-  homeMap: Map<string, string>,
-): { text: string; changes: { from: string; to: string }[] } {
-  const currentPage = file.endsWith(".md") ? file.split(/[/\\]/).pop()! : "";
-  const code = /\.(?:ts|vue|csv|tsv)$/.test(file);
-  const map = code ? new Map([...linkMap, ...homeMap]) : linkMap;
-  let next = text;
-  const changes: { from: string; to: string }[] = [];
-  if (currentPage) next = rewriteMarkdownLinks(next, currentPage, map);
-  const refs = rewriteAnchorRefs(next, map);
-  next = refs.text;
-  changes.push(...refs.changes);
-  return { text: next, changes };
-}
-
 function main(): void {
   const options = parseArgs(process.argv.slice(2));
   const parentPath = grammarFile(options.parent);
@@ -144,6 +100,12 @@ function main(): void {
   console.log(`  H1 ${options.title}`);
   console.log(`  moved ids: ${result.movedIds.join(", ") || "(none)"}`);
   console.log(`Sidebar: append ${result.holding.page} to ${options.band} (${result.holding.title})`);
+  const hashRows = applyHashMoves(
+    hashRedirects,
+    result.movedIds.map((id) => ({ from: options.parent, id, into: options.to, toId: id })),
+  );
+  console.log("Hash rows (hash-redirect.ts):");
+  for (const note of hashRows.notes) console.log(`  ${note}`);
   console.log("Construction homes:");
   for (const [from, to] of result.homeMap) console.log(`  ${from} → ${to}`);
   console.log("Split Practice by hand. Update the AGENTS.md Owns line if a job left the parent.");
@@ -171,16 +133,11 @@ function main(): void {
     addAllowlistRow(readFileSync(allowlistPath, "utf8"), { page: options.to, parent: options.parent, band: options.band }),
   );
 
-  const skip = new Set([parentPath, sittingPath, readingOrderPath]);
-  for (const file of rewriteTargets()) {
-    if (skip.has(file)) continue;
-    const original = readFileSync(file, "utf8");
-    const { text, changes } = applyMaps(original, file, result.linkMap, result.homeMap);
-    if (changes.length === 0 && text === original) continue;
-    if (text !== original) {
-      writeFileSync(file, text);
-      console.log(`Rewrote ${relative(REPO_ROOT, file)} (${changes.length || "links"})`);
-    }
+  writeFileSync(hashPath, writeHashRedirects(readFileSync(hashPath, "utf8"), hashRows.rows));
+
+  const skip = new Set([parentPath, sittingPath, readingOrderPath, hashPath]);
+  for (const { file, changes } of rewriteRepo(result.linkMap, result.homeMap, { skip, write: true })) {
+    console.log(`Rewrote ${file} (${changes.length || "links"})`);
   }
   console.log(`Wrote ${relative(REPO_ROOT, sittingPath)} and updated ${options.parent}.`);
 }

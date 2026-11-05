@@ -67,7 +67,10 @@ describe("peelHeadings", () => {
     assert.equal(result.linkMap.get("speech-acts.md#speech-act"), "firm-soft.md#speech-act");
     assert.equal(result.linkMap.get("speech-acts.md#act-r"), "firm-soft.md#act-r");
     assert.equal(result.linkMap.get("speech-acts.md#tone-marks"), undefined);
-    assert.deepEqual(result.hashRedirects, []);
+    assert.deepEqual(result.hashRedirects, [
+      { page: "speech-acts.md", hash: "speech-act", to: "firm-soft.md", toHash: "speech-act" },
+      { page: "speech-acts.md", hash: "act-r", to: "firm-soft.md", toHash: "act-r" },
+    ]);
   });
 });
 

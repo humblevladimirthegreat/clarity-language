@@ -1,6 +1,6 @@
 # Proposal: Making every sitting pass "what one sitting holds"
 
-**Status:** in progress. Phase 0 done (2026-11-05, every finding held). Workstreams done: 1, 2a, 2b, 2c, 2d, 2e (Phase 2 complete; stopped before Phase 3 at the user's request). Next: Phase 3 with a fresh subagent.
+**Status:** in progress. Phase 0 done (2026-11-05, every finding held). Workstreams done: 1, 2a, 2b, 2c, 2d, 2e (Phase 2 complete; stopped before Phase 3 at the user's request). Plan for Phases 3–5 rewritten into units on 2026-11-05 (new tools: `move-heading`, `verify`). Next: run `verify --baseline`, then unit 3.1.
 **Related:** [what one sitting holds](../meta/grammar-docs.md#one-sitting) (the tests this proposal applies), [sitting length](../meta/drill-generation.md#sitting-length), [how to apply](../meta/learning-levels.md#how-to-apply), [gates](../meta/learning-levels.md#gates), [allowlist](../meta/drill-generation.md#allowlist), [site redirects](../meta/site-redirects.md).
 **Depends on:** `range-series.md`, implemented first (B6 assumes one range series).
 **Design authority:** none. This proposal moves, merges, peels, and retitles existing sections. It adds no form and changes no reading. Band changes for three sections are settled in [gate runs](#gate-runs). Any further grammar decision goes under [open decisions](#open-decisions) and waits.
@@ -214,72 +214,86 @@ Moved H3s keep their `{#id}`, so links into them only need the page part rewritt
 
 ## Phased plan
 
-A single **main agent** runs the plan. It does no page editing itself. It hands the work to a few long-lived **workstream subagents**, each owning a cluster of items that share pages, and keeps the tree green between workstreams.
+A single **main agent** runs the plan and does no page editing itself. Phases 0–2 ran with long-lived workstream subagents and are done. Phases 3–5 run as small **units**: one fresh subagent per unit, each with one or two items, the model and effort named below, and the [digest](#subagent-brief) pasted into its first prompt.
 
 ### Token budget
 
-Follow [running with subagents](../meta/proposals.md#running-with-subagents). For this proposal, that means:
+Follow [running with subagents](../meta/proposals.md#running-with-subagents). Phase 2's workstream subagents ran 45–100 tool calls each and ended at 140k–280k tokens of context, and since every turn re-sends the context, their spend grew with the square of their turns. Most of it was re-read build output, whole-page reads, and hand link-retargeting. For Phases 3–5 that means:
 
-- one subagent per workstream below, with later items sent as one line ("Do 2b.3")
-- renames done by one script in Phase 3, not one subagent per row
-- fresh subagents for Phase 4 checkpoints (read rules) and the Phase 5 audit (independence), and nowhere else
-- each subagent's model and reasoning effort set from the table below, through the Agent tool's `model` and `effort` fields
+- one fresh subagent per unit; never continue a subagent into the next unit
+- a fresh subagent when a unit passes about 25 turns or about 80k tokens, carrying only the item, the failing `verify` lines, and `git diff --stat`
+- moves, hash rows, and link retargets through `npm run move-heading` and `npm run peel-headings`, never by hand
+- `npm run verify -- --allow-generate` instead of raw build and test runs
+- slice reading: headings first, then only the line ranges a unit edits
+- each unit's model and effort set from the table below, through the Agent tool's `model` and `effort` fields
 
-| Workstream | Model | Effort | Why |
-|------------|-------|--------|-----|
-| 1 in-place fixes | main agent's model | medium | Local prose fixes and link retargets, but A1 is a content bug and needs care |
-| 2a–2e moves, merges, peels | main agent's model | high | Teaching prose, gate thinning, and Practice splits are grammar judgment |
-| 3 renames and placement | main agent's model | medium | The rename script is mechanical and build-gated, but placement applies [order inside a band](../meta/learning-levels.md#order-inside-a-band), which is judgment, so no smaller model |
-| 4 checkpoints (per band) | main agent's model | high | Checkpoints are never run on a smaller model or at low effort |
-| 5 re-audit | main agent's model | high | An audit against [what one sitting holds](../meta/grammar-docs.md#one-sitting) |
+| Unit | Model | Effort | Why |
+|------|-------|--------|-----|
+| 3.1 hash-row backfill | smaller (`sonnet`) | low | Runs 23 listed `move-heading --record-only` commands and one row edit; `verify` gates it |
+| 3.2 renames, 3.3 redirect check | smaller (`sonnet`) | low | One scratch script over settled slugs, then mechanical checks on `dist/`; `verify` gates it |
+| 3.4 placement and level reviews | main model | high | Applies [order inside a band](../meta/learning-levels.md#order-inside-a-band) and writes review items: judgment |
+| 4 checkpoint batches | main model | high | Checkpoints never run on a smaller model or at low effort |
+| 5 re-audit | main model | high | An audit against [what one sitting holds](../meta/grammar-docs.md#one-sitting) |
 
 ### Rules for the main agent
 
-- **Sequential.** Moves, peels, and merges touch shared registry files: the sidebar in [`reading-order.ts`](../grammar/.vitepress/lib/reading-order.ts), the hash map in [`hash-redirect.ts`](../grammar/.vitepress/lib/hash-redirect.ts), [`site-redirects.json`](../../scripts/site-redirects.json), the [allowlist](../meta/drill-generation.md#allowlist), level reviews, cheat sheets, `AGENTS.md`, `src/parse/constructions.ts`, the overlay CSV, the lexicon `core` column, game `source`, and Claritish `<!-- Source -->`. Only one subagent edits at a time.
-- **Green between items.** A subagent finishes an item only when build and tests pass. On a failure the main agent finds, it sends the failure back to the subagent that owns the item (SendMessage), not to a new one.
-- **No grammar decisions.** If a subagent reports that a move needs a new form, a changed reading, or a band the gates do not support, log it under [open decisions](#open-decisions) and skip the item. If the finding changes the plan beyond that item, [stop and alert](../meta/proposals.md#stop-and-alert) the user instead.
-- **Commit at the end of each workstream**, per [commits](../meta/proposals.md#commits).
-  - Commit once the workstream is green: build and tests pass, and every item in it is done or logged as skipped.
-  - One commit per workstream: `sitting cohesion: <workstream id>, <short summary>`, then `[skip-cd]`, then a blank line and `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. The id is the phase number, plus the letter in Phase 2 and the band in Phase 4: `1`, `2a`–`2e`, `3`, `4 beginner`, `5`.
-  - Stage only the files the workstream changed. Never amend or force-push.
-  - Subagents never commit, and items inside a workstream get no commits of their own. Build and tests are green after every item, so the workstream's single commit can be reviewed as one unit.
-  - A workstream whose items were all skipped makes no commit. A workstream that changed files but has a skipped item still commits, and the commit body names the skipped item and its [open decision](#open-decisions).
+- **Baseline per phase.** At the start of each phase, after the previous phase's last commit, run `npm run verify -- --baseline`. Every unit in the phase is gated against that baseline.
+- **Sequential.** Units touch shared registry files: the sidebar in [`reading-order.ts`](../grammar/.vitepress/lib/reading-order.ts), the hash map in [`hash-redirect.ts`](../grammar/.vitepress/lib/hash-redirect.ts), [`site-redirects.json`](../../scripts/site-redirects.json), the [allowlist](../meta/drill-generation.md#allowlist), level reviews, cheat sheets, `AGENTS.md`, `src/parse/constructions.ts`, the overlay CSV, the lexicon `core` column, game `source`, and Claritish `<!-- Source -->`. Only one subagent edits at a time.
+- **The first prompt carries the unit.** Paste the unit's text from this plan, each item's finding text, the gate run or open decision that settles it, and the [digest](#subagent-brief). Do not tell the subagent to read the whole proposal.
+- **Gate.** A unit is done when `npm run verify -- --allow-generate` passes against the phase's baseline. When the subagent's last act was a passing `verify` and nothing has changed since, commit on that result without rerunning it.
+- **Failures go back to the owner** (SendMessage), while it is under about 25 turns and 80k tokens. Past that, start a fresh subagent of the same model and effort with the item, the failing `verify` lines, and `git diff --stat`.
+- **No grammar decisions.** If a subagent reports that an item needs a new form, a changed reading, or a band the gates do not support, log it under [open decisions](#open-decisions) and skip the item. If the finding changes the plan beyond that item, [stop and alert](../meta/proposals.md#stop-and-alert) the user instead.
+- **Read lean.** Read each report and `git diff --stat`, not whole diffs. Open a hunk only when a report flags it, `verify` fails, or the stat shows a file outside the unit's list.
+- **Commit at the end of each unit**, per [commits](../meta/proposals.md#commits).
+  - One commit per unit: `sitting cohesion: <unit id>, <short summary> [skip-cd]`, then a blank line and `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. Unit ids: `3.1`, `3.2`, `3.4`, `4 B1`, `4 I1`–`4 I10`, `4 A1`, `5`.
+  - Stage only the files the unit changed. Never amend or force-push.
+  - 3.1 and 3.2 are tool output; their commits hold nothing else, per [fence automated rewrites](../meta/proposals.md#fence-automated-rewrites). Hand fixes after a script go in the next unit's commit.
+  - Subagents never commit. A unit whose items were all skipped makes no commit. A unit that changed files but skipped an item still commits, and the commit body names the skipped item and its [open decision](#open-decisions).
 
-  | Phase | Workstreams | Commits |
-  |-------|-------------|---------|
-  | 0 | main agent, no edits | 0 |
-  | 1 | in-place fixes | 1 |
-  | 2 | 2a numbers, 2b turns, 2c stances, 2d pronouns, 2e joins | 5 |
-  | 3 | renames and placement | 1 |
-  | 4 | one per band with **generate** rows (one in all if five rows or fewer) | 1–3 |
+  | Phase | Units | Commits |
+  |-------|-------|---------|
+  | 0 | main agent, no edits (done) | 0 |
+  | 1 | in-place fixes (done) | 1 |
+  | 2 | 2a numbers, 2b turns, 2c stances, 2d pronouns, 2e joins (done) | 5 |
+  | 3 | 3.1 backfill; 3.2 renames with 3.3 check; 3.4 placement and reviews | 3 |
+  | 4 | B1, I1–I10, A1 checkpoint batches | 12 |
   | 5 | bookkeeping (`AGENTS.md`, status, proposal move) | 1 |
-  | **Total** | | **9–11** |
+  | **Total** | | **22** (6 made, 16 to go) |
 
   The audit in Phase 5 edits nothing, so it adds no commit. Its follow-up list goes to the user.
-- **One writer for `AGENTS.md`.** Subagents report the Owns-line changes they need. The main agent applies them all in Phase 5.
+- **One writer for `AGENTS.md`.** Subagents report the Owns-line changes they need. The main agent applies them all in Phase 5, with the ones already under [reported Owns lines](#reported-owns-lines).
 
 ### Subagent brief
 <a id="subagent-brief"></a>
 
-The first prompt to each workstream subagent contains the brief below and the workstream's item list. Later prompts name one item.
+The main agent pastes the digest below into every subagent's first prompt, after the unit's text, each item's finding text, and the gate run or open decision that settles it. A checkpoint unit also gets the Phase 4 lines; the audit gets the Phase 5 lines.
 
-1. Read once, at the start: this proposal's [findings](#findings-and-recommendations), [URLs](#urls), and [gate runs](#gate-runs), plus the rule sections in step 3. Read each page when its first item needs it, not up front.
-2. The files the workstream may edit (its item list names them), plus the registry files above.
-3. The rules to follow: [what one sitting holds](../meta/grammar-docs.md#one-sitting), [how to apply](../meta/learning-levels.md#how-to-apply) (keep `{#id}`s; rewrite `parent.md#id` everywhere listed there), [present the current language only](../meta/grammar-docs.md#present-the-current-language-only), [teach now; don't preview later](../meta/grammar-docs.md#teach-now-dont-preview-later), and `AGENTS.md`.
-4. **Checkpoints.**
-   - Move Practice items whose target H3 moved along with it.
-   - A source sitting keeps its own items.
-   - A destination sitting may hold items for a moved H3 only if its setting fits. Otherwise drop the items and mark the destination row **generate** in the allowlist.
-   - Never write a new checkpoint inside a move item; Phase 4 does that.
-5. **Gates.** Bands for B1, B8, and E6 are settled in [gate runs](#gate-runs); follow the matching G section, including its thinning steps. If you find a dependency the G section missed, report it instead of changing the band.
-6. **Verify each item** before reporting it: `npm run cheat-sheet-blocks -- --write`, then `npm run build` and `npm test`. Check every moved example with `node scripts/parse.mjs` (several inputs in one call).
-7. **Report each item** in a few lines:
-   - H3s moved, with ids
-   - links retargeted, as a file count
-   - allowlist, review, and sidebar edits
-   - the `AGENTS.md` Owns lines to change
-   - build and test results
-   - anything skipped, and why
+> You are doing one unit (one or two items) of the sitting-cohesion proposal. This prompt holds what you need to start. Open a linked rule section only when the prompt does not settle a question; do not read the whole proposal.
+>
+> 1. **Scope.** Edit only the pages your items name, plus a registry file when the item needs it (`reading-order.ts`, `hash-redirect.ts`, `site-redirects.json`, the allowlist in `docs/meta/drill-generation.md`, level reviews, cheat sheets, `constructions.ts`). Never edit `AGENTS.md`; report Owns-line changes instead. Never commit.
+> 2. **Read slices.** List headings first (`npm run page-lines -- --headings`, or `grep -n '^#' <file>`), then read only the line ranges you edit. Never open a whole long page to move one H3. Trim command output (`2>&1 | tail -30`).
+> 3. **Move with tools.** An H3 into an existing sitting: `npm run move-heading -- --from a.md --ids x --into b.md (--after <id> | --before <id> | --end)`, dry run first, then `--write`. An H3 onto a new sitting: `npm run peel-headings`. Both rewrite every `page.md#id` link and write the hash rows. Never retarget links by hand. Your hand work is Practice, the allowlist, prose seams, and placement.
+> 4. **Rules.** Keep every `{#id}`. Present the current language only. Teach now; never link forward to a later sitting. Add no form and change no reading: if an item needs one, stop and report it.
+> 5. **Practice.** Move Practice items whose target H3 moved. A source sitting keeps its own items. A destination keeps moved items only if its setting fits; otherwise drop them and mark its allowlist row **generate**. Write no new checkpoint outside Phase 4.
+> 6. **Verify.** Run `npm run verify -- --allow-generate` at the end of each item, and `--fast` for checks partway through. Never run raw `npm run build` or `npm test`, and never paste build output into your context. On a FAIL, read only the new lines it prints, or grep `tmp/verify-last.log` for one file. Check Ageben you moved or wrote with `node scripts/parse.mjs` (several inputs in one call).
+> 7. **Report** in at most 8 lines, these fields only:
+>    - Moved: ids, from → to
+>    - Files touched: a count
+>    - Registry edits: sidebar, allowlist, reviews, redirects
+>    - Owns lines: exact text for `AGENTS.md`
+>    - Verify: the PASS/FAIL line
+>    - Skipped: item, reason, and the open decision it needs
+>
+> Full rules, if needed: [what one sitting holds](../meta/grammar-docs.md#one-sitting), [how to apply](../meta/learning-levels.md#how-to-apply), [order inside a band](../meta/learning-levels.md#order-inside-a-band), [present the current language only](../meta/grammar-docs.md#present-the-current-language-only), [teach now](../meta/grammar-docs.md#teach-now-dont-preview-later), [level reviews](../meta/translation-exercises.md#level-reviews), [drill-generation](../meta/drill-generation.md#execute).
+
+**Phase 4 lines** (checkpoint units only):
+
+> 8. **Read rules.** For each sitting, read only that sitting and earlier ones on the [path](../meta/learning-levels.md#cross-doc-path); never open a later path file or `docs/examples/` ([what you may read](../meta/drill-generation.md#execute)). Work in the order given.
+> 9. **Write.** Follow [drill-generation](../meta/drill-generation.md#execute): pick a setting not used by any other checkpoint, write the `### Practice`, then set the allowlist row's Setting cell and status **exists**. A top-up keeps the existing setting and adds only the items its notes cell asks for.
+
+**Phase 5 lines** (audit only):
+
+> 8. **Audit, don't edit.** Check each sitting in scope against [what one sitting holds](../meta/grammar-docs.md#one-sitting), tests 1–6, from headings and the slices a test needs. Report one line per finding: page, test, what fails, a suggested fix.
 
 ### Phase 0: Baseline and re-check (main agent)
 
@@ -334,29 +348,107 @@ Each workstream does its moves before its peels, so a peel cuts the page in its 
 - **2e.3** C1: peel `list-structure.md`, then `set-joins.md`.
 - **2e.4** C2: peel `quote-contents.md`, then retitle span-mention.
 
-### Phase 3: Renames, redirects, and placement (1 subagent, workstream 3)
+### Phase 3: Hash rows, renames, redirects, and placement (4 units)
 
-Renames come before placement, so the sidebar is edited once under its final names. One subagent does both, since both edit `reading-order.ts` and the redirect files.
+Run `npm run verify -- --baseline` first. Units run in order: hash rows before renames, so the rename script renames them along with everything else; renames before placement, so the sidebar is edited once under its final names.
 
-- **3.1 Renames, in one pass.** Settle every row of the [URLs](#urls) table first, including numbers-applied's title, which Phase 2 fixed. Then write a small script in the scratchpad that applies the six [rename steps](#urls) to every row: `git mv`, retarget the old slug across the listed folders, add each `pageMoves` row, repoint any older `pageMoves` or `hash-redirect.ts` row that names an old file, and change each H1 `{#id}`. Run it once, review `git diff --stat`, then run one build and test. Hand fixes stay for what the script can't place.
-- **3.2 Redirect check.** In `dist/amplify-redirects.json`: one 301 per old URL, no chains, all above `/<*>`; and every old `dist/grammar/<old>.html` is a stub. The subagent reports it; the main agent spot-checks two rows.
-- **3.3 Placement and order.**
-  - Walk the three sidebar groups in `reading-order.ts` and apply [order inside a band](../meta/learning-levels.md#order-inside-a-band) to every sitting this proposal touched. Run `npm run lint:forward-links` (part of the build).
-  - Every new sitting gets a review item in its band's level review, and the removed sitting's item goes.
-  - Fixed placements: `no-subject.md` right after clause.md (Beginner), before pronouns.md. `ranges.md` after `locative-relations.md` and `digitless-exponents.md`. `contrary-to.md` after evidentiality and `doing-it-for-a-sake.md`. `bars.md` after evidentiality and comparative-arity. `more-turn-words.md` before rhetorical-questions.
+**3.1 Hash-row backfill.** Smaller model (`sonnet`), low effort. One `move-heading --record-only --write` call per entry in [H3s that changed pages](#moved-h3s); each call was checked as a dry run on 2026-11-05. `roles.md#role-pointers-family` and `proper-names.md#number-word-exception` need their id renames. `stacked-markers.md#examples` was removed, so it gets no row. The `join-across-roles.md` stance-join ids get no row either: the page stub carries the fragment to `vp-clause-forms.html`, where those ids live.
 
-### Phase 4: Checkpoints (1 subagent per band, in order)
+```sh
+r() { npm run -s move-heading -- --record-only --write --from "$1" --ids "$2" --into "$3"; }
+r roles.md role-pointers-family:role-pointers pronouns.md
+r proper-names.md number-word-exception:number-endings number-markers.md
+r numbers-applied.md letter-codes number-markers.md
+r numbers-applied.md number-ranges ordered-ranges.md
+r proper-names.md continue-x sentence-linkers.md
+r dependents.md continue-x speech-moves.md
+r singability.md thinking-sounds speech-moves.md
+r sentence-linkers.md orthography-and-prosody-periods:past-a-period sentence-linkers.md
+r label-reach.md command-property speech-acts.md
+r sentence-linkers.md result-hinge,time-hinge-on-noun more-hinges.md
+r stand-in-roles.md nested-dependents nested-dependents.md
+r ability.md decision-revisability,decision,decision-mood,decision-changeability want.md
+r comparative-arity.md bars sake-bars.md
+r notional-standing.md channel-bars sake-bars.md
+r tag-pronouns.md reciprocal,addressing-several-people collectives.md
+r tag-pronouns.md how-english-approximates-r,resume-sense,cross-role-recast resume-sense.md
+r left-bound.md degree-w very-and-slightly.md
+r left-bound.md no-subject no-subject.md
+r ending-grids.md discourse discourse-hooks.md
+r discourse-hooks.md parallel-chains,hook-resume ending-grids.md
+r rank-joins.md shared-after-the-join,scope-fence-p-join,respectively,fence-nesting list-structure.md
+r rank-joins.md exclusivity-and-denying-a-whole-list,full-single-item-and-standalone-inventories set-joins.md
+r span-mention.md quote-acts,topic-quotes quote-contents.md
+```
 
-- The main agent lists every allowlist row now marked **generate**, grouped by band.
-- One fresh subagent per band, Beginner then Intermediate then Advanced, writes that band's checkpoints in [path](../meta/learning-levels.md#cross-doc-path) order, following [drill-generation](../meta/drill-generation.md#execute) for several files ("one file at a time"). If the whole list is five rows or fewer, one subagent does them all, still in path order.
-- Path order keeps the [read rules](../meta/drill-generation.md#execute) intact: when the subagent writes a sitting, it has read only that sitting and earlier ones. Running in sequence also means each checkpoint sees the `core` cells and settings the earlier ones wrote, so the subagent picks each setting itself and writes its own setting cell and status.
-- Fresh subagents here, not ones from Phase 2: those have read later pages, which the read rules forbid.
+Then edit one row by hand: `{ page: "intention.md", hash: "intermediate", to: "ability.md" }` becomes `to: "want.md"`. That band opened with Decision, and want.md now holds Decision, Want, and Someone else's want; ability.md holds only Try. Gate: `verify --allow-generate`.
+
+**3.2 Renames, in one pass.** Smaller model (`sonnet`), low effort. Every slug is settled: each page's H1 already matches its [URLs](#urls) title (checked 2026-11-05), so the H1 `{#id}`s need no change.
+
+| Now | Rename to |
+|-----|-----------|
+| `ability.md` | `try.md` |
+| `want.md` | `want-and-decide.md` |
+| `left-bound.md` | `longer-chains.md` |
+| `notional-standing.md` | `residue-and-former.md` |
+| `ordered-ranges.md` | `ranges.md` |
+| `numbers-applied.md` | `measures-and-percent.md` |
+| `span-mention.md` | `spans-as-words.md` |
+| `ending-grids.md` | `in-clause-hooks.md` |
+| `speech-acts.md` | `more-turn-words.md` |
+| `vp-clause-forms.md` | `verb-and-stance-joins.md` |
+| `sake-bars.md` | `bars.md` |
+
+Kept: `rank-joins.md`, `discourse-hooks.md`, `extra-noun-hooks.md`, `stacked-markers.md`, `fill-ask-roles.md` (OD2). On hold: `prescription.md` (OD6).
+
+Write one scratch script that applies the six [rename steps](#urls) to every row, then run it once:
+
+- `git mv` each file within its band folder.
+- Retarget each old slug across `docs/`, `src/`, `scripts/`, `data/`, `AGENTS.md`, and `TODO.md` (links in every form, the sidebar, the allowlist **file** cell, reviews, cheat sheets, `constructions.ts`, overlay CSV anchors, the `core` column, game `source`, Claritish `<!-- Source -->`). Under `docs/proposals/`, retarget Markdown link targets only; filenames in tables and history lists are records and stay.
+- Add one `pageMoves` row per old URL. Repoint every older `pageMoves` row whose target is an old name; the `join-across-roles.html` row then points straight at `verb-and-stance-joins.html`, with no chain.
+- In `hash-redirect.ts`, rename the old file in both `page` and `to`. The page stubs carry the fragment to the new URL, so a row must be keyed on the new page to fire. Re-key the `join-across-roles.md` rows onto `verb-and-stance-joins.md` the same way, and drop any row that then sends an id to the page where it already lives.
+
+Review `git diff --stat`, then gate with `verify --allow-generate`. Hand fixes the script can't place go in 3.4.
+
+**3.3 Redirect check.** Same subagent as 3.2. Its last `verify` already built `dist/`, so read the results there, with no further build: one 301 per old URL in `dist/amplify-redirects.json`, no chains, all above `/<*>`; every old `dist/grammar/<old>.html` is a stub; every `hash-redirect.ts` row's `page` is a live page (not a stub), and its `to` and `toHash` exist. The main agent spot-checks two rows. No commit of its own: it lands with 3.2.
+
+**3.4 Placement and level reviews.** Main model, high effort.
+
+- Walk the three sidebar groups in `reading-order.ts` and apply [order inside a band](../meta/learning-levels.md#order-inside-a-band) to every sitting this proposal touched. Fixed placements: `no-subject.md` right after clause.md (Beginner), before pronouns.md. `ranges.md` after `locative-relations.md` and `digitless-exponents.md`. `bars.md` after evidentiality and comparative-arity. (`contrary-to.md` waits on OD6; the `more-turn-words.md` placement no longer binds, per OD5.)
+- Give each new sitting one item in its band's [level review](../meta/translation-exercises.md#level-reviews): `no-subject.md` (Beginner); `very-and-slightly.md`, `resume-sense.md`, `more-hinges.md`, `list-structure.md`, `set-joins.md`, `quote-contents.md` (Intermediate); `nested-dependents.md` (Advanced).
+- Fill the review gaps in OD7–OD9: one item each for `try.md` (ATTEMPT), `tag-pronouns.md`, `in-clause-hooks.md`, and `rank-joins.md`. `verify` then shows the four level-review errors resolved.
+- Gate: `verify --allow-generate`, with every touched sitting's placement passing `lint:forward-links` (part of the build).
+
+### Phase 4: Checkpoints (12 units, in path order)
+
+Run `npm run verify -- --baseline` first. Then regenerate the list below from the allowlist itself (every row whose status is **generate**, by band, in path order), since 3.4 may have moved rows. The list as of 2026-11-05, under the Phase 3 filenames:
+
+| Unit | Band | Path | Sittings, in order |
+|------|------|------|--------------------|
+| B1 | Beginner | 5, 6 | `no-subject.md` (new), `speech-moves.md` (top up) |
+| I1 | Intermediate | 5 | `longer-chains.md` (top up), `very-and-slightly.md` (new) |
+| I2 | Intermediate | 7 | `sentence-linkers.md` (top up), `more-hinges.md` (new) |
+| I3 | Intermediate | 9 | `resume-sense.md` (new), `tag-pronouns.md` (top up), `collectives.md` (top up) |
+| I4 | Intermediate | 10, 11 | `label-reach.md` (top up), `list-structure.md` (new) |
+| I5 | Intermediate | 11 | `rank-joins.md` (top up), `set-joins.md` (new) |
+| I6 | Intermediate | 12 | `in-clause-hooks.md` (top up), `discourse-hooks.md` (top up) |
+| I7 | Intermediate | 14 | `spans-as-words.md` (top up), `quote-contents.md` (new) |
+| I8 | Intermediate | 15 | `number-markers.md` (top up), `measures-and-percent.md` (top up) |
+| I9 | Intermediate | 16, 17 | `bars.md` (top up), `verb-and-stance-joins.md` (top up) |
+| I10 | Intermediate | 17 | `residue-and-former.md` (top up), `try.md` (top up) |
+| A1 | Advanced | 7 | `stand-in-roles.md` (top up), `nested-dependents.md` (new) |
+
+- One fresh subagent per unit, main model, high effort, with the digest and its Phase 4 lines. Units run in table order; each writes its sittings in the order given, following [drill-generation](../meta/drill-generation.md#execute) ("one file at a time").
+- Each subagent has read only its own sittings and earlier ones, which keeps the [read rules](../meta/drill-generation.md#execute). Running in sequence also means each checkpoint sees the `core` cells and settings the earlier ones wrote, so the subagent picks each setting itself and writes its own Setting cell and status.
+- Each unit's prompt also carries its rows' allowlist notes cells (what to top up, what moved where). If the regenerated list differs from the table, keep batches of two or three in path order.
+- Gate per unit: `verify --allow-generate`, which shows that unit's generate-row errors gone and nothing new.
 
 ### Phase 5: Bookkeeping and re-audit (main agent, plus 1 fresh subagent)
 
-- Apply every reported `AGENTS.md` Owns-line change. Rows are added only for new topics, per [how to apply](../meta/learning-levels.md#how-to-apply).
-- Run `npm run build`, `npm test`, `npm run grammar-check` (only if any parser source changed, which this proposal should not cause), and `npm run lint:cheat-sheet-print`.
-- Spawn a fresh subagent with no context from earlier phases to re-audit against [what one sitting holds](../meta/grammar-docs.md#one-sitting), including tests 1 and 6. Scope: every sitting this proposal created, edited, or renamed (from `git diff --stat` since the Phase 0 baseline), plus any sitting that shares a choice set with one of them. The first audit already covered the rest. Leftover findings become a follow-up list for the user, not more edits.
+- Run `npm run verify -- --baseline` first, as in every phase.
+- Apply every [reported Owns line](#reported-owns-lines) to `AGENTS.md`, under the Phase 3 filenames, plus any reported since. Rows are added only for new topics, per [how to apply](../meta/learning-levels.md#how-to-apply).
+- Final gate: a clean `npm run build`. Phase 4 cleared every **generate** row, so nothing is expected to fail. If it does, `npm run verify` names what is new since the Phase 5 baseline. Then `npm run grammar-check` (only if any parser source changed, which this proposal should not cause) and `npm run lint:cheat-sheet-print`.
+- Spawn a fresh subagent (main model, high effort, the digest plus its Phase 5 lines, no context from earlier phases) to re-audit against [what one sitting holds](../meta/grammar-docs.md#one-sitting), including tests 1 and 6. Scope: every sitting this proposal created, edited, or renamed (from `git diff --stat` since the Phase 0 baseline), plus any sitting that shares a choice set with one of them. The audit also covers the follow-ups already logged: the very-and-slightly title (test 3, follow-up from 2d.3), OD10's `aer` / `aor` readings, the drill-generation `comparatives.md` row's vowel label, and the bare bold vowel labels left from A1. Leftover findings become a follow-up list for the user, not more edits.
 - Ask the user to paste `dist/amplify-redirects.json` into the Amplify console ([URLs](#urls)): every renamed page and `join-across-roles.html` needs it for real 301s.
 - List pages this proposal did not touch whose filename no longer names their title (for example `feelings-permission.md` "Feelings"), as a follow-up for the user.
 - Commit the phase.
