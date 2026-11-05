@@ -135,7 +135,7 @@ Source: [relations.md](/relations)
 
 ## Hooks — in-clause
 
-Source: [hooks.md](/ordered-ranges#ranges), [sakes.md](/prescription#contrary-to-stance)
+Source: [hooks.md](/ordered-ranges#ranges), [sakes.md](/contrary-to#contrary-to-stance)
 
 - **open:** same-role **`ael`** (and **`aem`** / **`aen`** / **`aer`**) between two words. The candidates (*throughout*, *next to*, *wrapping*, *midway*, *for example*, *namely*) have no guessable cue, and *somewhere between* is already `oer` / `uor`. The parser rejects it (`hookSameRoleStack`); extra-noun and discourse uses are unaffected.
 - **open:** a range of landmarks (*walk in rooms 3 through 5*). A hook right after a landmark is an extra noun on it, so `al bX oel bY` is *in X toward Y*. For *from X to Y* use `ul bX oel bY`; otherwise state the range in its own role. A scope island cannot help: a hook is never a binder.

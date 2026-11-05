@@ -117,8 +117,8 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 |--------------|------------|-------|
 | opponent (*fights against a guard*, *Azozon versus Alazun*) | hook **`uol`** + `/b/` | [Hooks](/extra-noun-hooks#extra-noun-intermediate) |
 | who is against (*everyone against me*, *someone against the policy*) | hooked join **`…uex…`**: `zuoxual bluwen`, `zuoxar blonam` | [Hook plus a join](/hooked-joins#hooked-joins-hooks) |
-| a rule, a person's no, or a plan (*against the rules*, *against their will*, *contrary to the plan*, *against my decision*) | hook **`uom`** + the `/th/` stance it goes against | [Contrary to a stance](/prescription#contrary-to-stance) |
-| what you were told or expected (*contrary to what I was told*, *against my gut*) | hook **`uom`** + a channel | [Channels after `uom`](/notional-standing#channel-zone) |
+| a rule, a person's no, or a plan (*against the rules*, *against their will*, *contrary to the plan*, *against my decision*) | hook **`uom`** + the `/th/` stance it goes against | [Contrary to a stance](/contrary-to#contrary-to-stance) |
+| what you were told or expected (*contrary to what I was told*, *against my gut*) | hook **`uom`** + a channel | [Channels after `uom`](/contrary-to#channel-zone) |
 | a noun in the way (*against the rain*, *despite the rain*) | hook **`uom`** or **`hezem`** + `/b/` | [Hooks](/extra-noun-hooks#extra-noun-intermediate), [dependent clauses](/dependents#dependent-clauses) |
 | an event in the way (*even though Alazun said no*) | **`hezem blarl`** + the sentence | [Dependent clauses](/dependents#dependent-clauses) |
 | someone's interest (*against Alazun's interest*) | unmet sake word + `/b/` | [Sakes](/sakes#sake-changeability) |

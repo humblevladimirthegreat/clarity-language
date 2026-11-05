@@ -30,7 +30,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **DEDUCED** | Evidential: must hold if the premises hold | `thanam` | [How you know](/evidentiality#deduction) |
 | **FAWN** | Emotion locus: placating a target | `wawethumaom` | [Feelings](/feelings-permission#emotion-compose) |
 | **FLOWING** | Emotion motion: steady, a current you can ride | `wawethumom` | [Feelings](/feelings-permission#emotion-compose) |
-| **FORBID** | Say word answer: no, forbid | `hwuvul` | [Permission and consent](/permission-consent#say-words) |
+| **FORBID** | Say word answer: no, forbid | `hwuvul` | [Contrary to](/contrary-to#contrary-to-say) |
 | **FORMER** | Episode standing: not the climate claimed now | `helam` | [Residue and former](/notional-standing#residue) |
 | **IDENTITY** | Identity copula | `gorel` | [Predication](/predication#identity) |
 | **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Feelings](/feelings-permission#emotion-compose) |
@@ -738,7 +738,7 @@ A role compound with reach **`o`** after its **`w`** (`zwozeduyol`): the role as
 
 Motive **`tho`** endings.
 
-[Motive](/prescription#sake-preference)
+[Doing it for a sake](/prescription#sake-preference)
 
 ### Prominence
 

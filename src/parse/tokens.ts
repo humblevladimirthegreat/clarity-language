@@ -196,7 +196,7 @@ export const Factor = wordToken("Factor");
  * adverb or a noun of its own there.
  */
 export const HScale = wordToken("HScale");
-/** A `/th/` stance right after *contrary to* `uom`: the hook's zone, not a stance on the claim (prescription.md#contrary-to-stance). Set by `markContext`. */
+/** A `/th/` stance right after *contrary to* `uom`: the hook's zone, not a stance on the claim (contrary-to.md#contrary-to-stance). Set by `markContext`. */
 export const HZone = wordToken("HZone");
 /** WANT, PLAN or DECISION right after a holder zone: whose wish, plan or choice the event goes against, with how you know it (want.md#whose-intention). Set by `markContext`. */
 export const HZoneHeld = wordToken("HZoneHeld");

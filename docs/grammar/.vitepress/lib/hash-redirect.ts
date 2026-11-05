@@ -105,6 +105,8 @@ export const hashRedirects: HashRedirect[] = [
   { page: "join-across-roles.md", hash: "ending-senses-clause-joins", to: "vp-clause-forms.md" },
   { page: "evidentiality.md", hash: "holder", to: "holder.md" },
   { page: "evidentiality.md", hash: "holder-seam", to: "holder.md" },
+  { page: "prescription.md", hash: "contrary-to-stance", to: "contrary-to.md", toHash: "contrary-to-stance" },
+  { page: "notional-standing.md", hash: "channel-zone", to: "contrary-to.md", toHash: "channel-zone" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */

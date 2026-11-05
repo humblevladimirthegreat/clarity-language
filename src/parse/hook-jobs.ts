@@ -10,7 +10,7 @@
  * - `stray`: `om` + `/b/` with no noun on its left; enforce rejects it.
  * - `span`: a hook between two same-kind endpoints.
  * - `resume`: a resume hook (`-r`) that points back.
- * - `zone`: `uom` + a `/th/` stance it holds as the opposing zone (prescription.md#contrary-to-stance).
+ * - `zone`: `uom` + a `/th/` stance it holds as the opposing zone (contrary-to.md#contrary-to-stance).
  */
 import { visitResult, visitUnit, vpUnitLists } from "./ast-walk.js";
 import { topicEffect } from "./linkers.js";

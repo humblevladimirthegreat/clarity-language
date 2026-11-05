@@ -140,22 +140,6 @@ The reach vowel is [label reach](/label-seams#label-reach), the same vowels as a
 
 Only **`v`** and pair reach **`e`** take a `bl-` word.
 
-English *against the rules* and *against their will* put [contrary to](prescription.md#contrary-to-stance) **`uom`** right before the say word. That word then names what the event goes against, and it no longer applies to the claim.
-
-> `zazozon vowurol uom hwuvul.`
->
-> z-Azozon | v-walk | [contrary-to | h-episode-event-FORBID-rule]
->
-> "Azozon walks against the rules."
-
-> `zazozon vezuyol balazun uom hwubum.`
->
-> z-Azozon | v-tell | b-Alazun | [contrary-to | h-episode-recipient-FORBID-said]
->
-> "Azozon tells Alazun, against Alazun's will." (Alazun said no)
-
-A yes only lifts a restriction, so no say word with answer **`a`** follows **`uom`**: not permission (`hwuvam`), and not consent (`hwudam`, `hwuzal`). *Their call* (**`o`**) sets nothing to go against either. A yes that was taken back is a no, so use the refusal: `zazozon vezuyol bahelan uom hwubum.` To say you broke a promise, give the promise its own sentence after **`hezem blarl`**: `zuwen vezuvel hezem blarl zuwen vowurol hwuzal.`
-
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -243,15 +227,7 @@ z-Alazun | v-hug | h-episode-event-ALLOW-rule
 *The rules allow Alazun to hug.*
 :::
 
-**3.** `zazozon vahuyal uom hwuvul.`
-
-::: details Show answer
-z-Azozon | v-hug | [contrary-to | h-episode-event-FORBID-rule]
-
-*Azozon hugs against the rules.*
-:::
-
-**4.** `zalazun vehohel al bahahel hwuzam.`
+**3.** `zalazun vehohel al bahahel hwuzam.`
 
 ::: details Show answer
 z-Alazun | v-sit | [in | b-shower] | h-episode-agent-ALLOW-said

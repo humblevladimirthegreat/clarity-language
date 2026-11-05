@@ -752,7 +752,7 @@ function enforceIntentionHost(unit: HUnit): void {
   throw new ConstructionError("intentionHost", `${unit.word.raw} ${bound.raw}`);
 }
 
-/** `uom` + a stance: the stance must say something the event can go against, and holds no stand-in (prescription.md#contrary-to-stance). */
+/** `uom` + a stance: the stance must say something the event can go against, and holds no stand-in (contrary-to.md#contrary-to-stance). */
 function enforceZone(hook: LexWord, zone: HUnit, tables: ClassifyTables): void {
   if (!isZoneStance(zone.word, tables)) throw new ConstructionError("zoneKind", `${hook.raw} ${zone.word.raw}`);
   enforceChannelSign(zone.word, zone.hosted);

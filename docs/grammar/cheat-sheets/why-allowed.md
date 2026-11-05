@@ -217,7 +217,7 @@ A [say word](/permission-consent#say-words) on `/h/`: **`h`** **`w`**, a reach v
 | [A promise](/permission-consent#consent) | `zuwen vowurol hwuzal.` | *I promise to walk.* (to you) | I |
 | [Promise to someone else](/permission-consent#say-reach): pair reach **`e`** | `zuwen vowurol hwezal blahelan.` | *I promise Ahelan I'll walk.* | I |
 | [Check in](/permission-consent#consent) | `yem zuwen vezuyol bawan hwubam.` | *Are you still OK with me telling you?* | I |
-| [Contrary to a stance](/permission-consent#say-reach): `uom` first | `zazozon vowurol uom hwuvul.` | *Azozon walks anyway.* | I |
+| [Against the rules](/contrary-to#contrary-to-say): `uom` first | `zazozon vowurol uom hwuvul.` | *Azozon walks against the rules.* | I |
 
 <PageBreak />
 

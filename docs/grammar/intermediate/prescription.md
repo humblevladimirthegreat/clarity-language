@@ -2,7 +2,9 @@
 band: intermediate
 ---
 
-# Motive {#motive}
+# Doing it for a sake {#doing-it-for-a-sake}
+
+English *for the sake of …* says what an act is for. Ageben says it with one sake word: the motive and its time horizon, the ending table it takes, where it attaches, and whose stake it is.
 
 ### Motive (`tho`): time horizon
 <a id="sake-preference"></a>
@@ -113,36 +115,6 @@ The `/b/` names whose **stake** it is, not who **owns** the noun. On `/ɡ/` the 
 
 **Compare with:** the *for* hook (`ol balazun`) names who the act is for without naming which sake.
 
-### Contrary to a stance (`uom`) {#contrary-to-stance}
-
-English *contrary to the plan* says that the event happens even though a plan says otherwise. Put the hook **`uom`** *contrary to* right before a `/th/` stance word or an [intention adverb](/clause#intention-adverbs). That word then says what the event goes against, and it no longer applies to the claim. `zazozon vowurol thagom.` says you plan for Azozon to walk; `zazozon vowurol uom thagom.` says Azozon walks anyway. (cue: **uo** ≈ contrary; **-m** the opposing zone, which the stance spells out)
-
-> `zazozon vowurol uom thagom.`
->
-> z-Azozon | v-walk | [contrary-to | th-plan-itinerary]
->
-> "Azozon walks, contrary to my plan."
-
-The stance keeps its endings. A [plan](/intention#plan) after **`uom`** is your own, like any stance.
-
-Only the stance right after **`uom`** is what the event goes against. A stance anywhere else in the clause still applies to the claim:
-
-> `zazozon vowurol uom thagom thomam.`
->
-> z-Azozon | v-walk | [contrary-to | th-plan-itinerary] | th-MAY
->
-> "Azozon may be walking, contrary to my plan."
-
-The word after **`uom`** has to say something the event can go against: a plan.
-
-| After **`uom`** | English |
-|-----------------|---------|
-| plan **`thagor`** / **`thagom`** / **`thagol`** | *contrary to my plan* |
-
-Sake words cannot follow **`uom`**: to say an act goes against someone's interest, put an [unmet](/sakes#sake-changeability) sake word on the clause (`zazozon vowurol thudathum blalazun.` *Azozon's walking harms Alazun's interests*).
-
-**Compare with:** *despite the rain* is **`uom`** or **`hezem`** with a noun in `/b/` (`zazozon vowurol uom berulal.`). *Although Alazun said no* as a full sentence is **`hezem blarl`** plus that sentence. The sentence after **`blarl`** needs an event or a thing, so a stance word alone cannot fill it; use **`uom`** with the stance instead.
-
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -168,9 +140,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *relatedness* | `awel` |
 | *speaker* | `uwen` |
 | *sit* | `vehohel` |
-| *sleep* | `vezuvel` |
 | *walk* | `vowurol` |
-| *PLAN* | `thagom` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -222,14 +192,6 @@ z-Azozon | v-pray | th-relatedness-motive-any-term
 z-candle | g-relatedness-motive-lasting
 
 *My candle is for relatedness in the long term.*
-:::
-
-**3.** `zalazun vezuvel uom thagom.`
-
-::: details Show answer
-z-Alazun | v-sleep | [contrary-to | th-plan-itinerary]
-
-*Alazun sleeps, contrary to my plan.*
 :::
 
 #### Pick one {#intermediate-pick-one}

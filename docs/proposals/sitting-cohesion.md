@@ -1,6 +1,6 @@
 # Proposal: Making every sitting pass "what one sitting holds"
 
-**Status:** in progress. Phase 0 done (2026-11-05, every finding held). Workstreams done: 1, 2a, 2b, 2c, 2d, 2e (Phase 2 complete; stopped before Phase 3 at the user's request). Plan for Phases 3–5 rewritten into units on 2026-11-05 (new tools: `move-heading`, `verify`). Every open decision settled on 2026-11-05 ([open decisions](#open-decisions)); OD1, OD6, and OD10 add units 2f and 2g. Unit 2f done. Next: unit 2g.
+**Status:** in progress. Phase 0 done (2026-11-05, every finding held). Workstreams done: 1, 2a, 2b, 2c, 2d, 2e (Phase 2 complete; stopped before Phase 3 at the user's request). Plan for Phases 3–5 rewritten into units on 2026-11-05 (new tools: `move-heading`, `verify`). Every open decision settled on 2026-11-05 ([open decisions](#open-decisions)); OD1, OD6, and OD10 add units 2f and 2g. Units 2f and 2g done (Phase 2 complete). Next: `verify --baseline`, then unit 3.1.
 **Related:** [what one sitting holds](../meta/grammar-docs.md#one-sitting) (the tests this proposal applies), [sitting length](../meta/drill-generation.md#sitting-length), [how to apply](../meta/learning-levels.md#how-to-apply), [gates](../meta/learning-levels.md#gates), [allowlist](../meta/drill-generation.md#allowlist), [site redirects](../meta/site-redirects.md).
 **Depends on:** `range-series.md`, implemented first (B6 assumes one range series).
 **Design authority:** none. This proposal moves, merges, peels, and retitles existing sections. It adds no form and changes no reading. Band changes for three sections are settled in [gate runs](#gate-runs). Any further grammar decision goes under [open decisions](#open-decisions) and waits.
@@ -459,7 +459,7 @@ Run `npm run verify -- --baseline` first. Then regenerate the list below from th
 | I6 | Intermediate | 12 | `verb-and-stance-joins.md` (top up), `in-clause-hooks.md` (top up), `discourse-hooks.md` (top up) |
 | I7 | Intermediate | 14 | `spans-as-words.md` (top up), `quote-contents.md` (new) |
 | I8 | Intermediate | 15 | `number-markers.md` (top up), `measures-and-percent.md` (top up) |
-| I9 | Intermediate | 16 | `for-a-sake.md`, `permission-consent.md` (top ups, only if 2g left them **generate**; otherwise skip the unit) |
+| I9 | Intermediate | 16 | `for-a-sake.md` (top up; 2g left permission-consent **exists**) |
 | I10 | Intermediate | 16, 17 | `contrary-to.md` (new), `residue-and-former.md` (top up), `bars.md` (top up) |
 | I11 | Intermediate | 17 | `try.md` (top up) |
 | A1 | Advanced | 7 | `stand-in-roles.md` (top up), `nested-dependents.md` (new) |
@@ -550,6 +550,8 @@ Owns-line changes that subagents reported, for Phase 5 to apply to `AGENTS.md`:
 - 2e, `join-across-roles.md` row becomes `vp-clause-forms.md`: "Joins on verbs and stances: verb-phrase, clause and stance joins; list verbs (`list-verbs.md`); join-relations (`join-relations.md`); clause sequence (`clause-sequence.md`)".
 - 2e, `joins.md` row: "what a list word reaches: SHARED, respectively, fence nesting (`list-structure.md`); rank joins, invert, route (`rank-joins.md`); and/or, whole-list denial, set inventories (`set-joins.md`)".
 - 2e, `spans.md` row: "spans as words: mention, span nouns, `gl` spans, one of a title (`span-mention.md`); inside a quote: act words, topics (`quote-contents.md`)".
+- 2g, `sakes.md` row: "doing it for a sake: motive, attachment, whose stake (`prescription.md`, filename after Phase 3)"; merge with 2c's bars wording.
+- 2g, `notional-standing.md` row: "Residue / former; contrary to: plan, say words, channels, whose (`contrary-to.md`); mirative (`mirative.md`); notional (`notional.md`); already / still / not yet / no longer (`already-still-yet.md`)" (supersedes 2c's line for this row).
 - 2a, `hooks.md` row: "ordered ranges (`ordered-ranges.md`)" → "ranges, including ranges of numbers" (and the filename after Phase 3).
 
 ## H3s that changed pages

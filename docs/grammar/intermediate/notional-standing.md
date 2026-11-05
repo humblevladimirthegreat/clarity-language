@@ -4,7 +4,7 @@ band: intermediate
 
 # Residue and former {#residue-and-former}
 
-English *has left* and *used to tell* mix when the event happened and how it stands now. Ageben keeps those apart: **RESIDUE** and **FORMER** for how an outcome or a usual pattern stands, and *already* / *still* / *not yet* / *no longer* for a change compared with now. How you know a world-claim is in [knowing](/knowing).
+English *has left* and *used to tell* mix when the event happened and how it stands now. Ageben keeps those apart: **RESIDUE** and **FORMER** for how an outcome or a usual pattern stands, and *already* / *still* / *not yet* / *no longer* for a change compared with now.
 
 ### Residue and former climate {#residue-and-former-climate}
 <a id="residue"></a>
@@ -64,42 +64,7 @@ Do not write **`helam`** right before **`hual`**: that spot holds the restrictor
 | **`haram`** | outcome still in effect | *still counts* / residue | `aram` *debt* | 💰: unpaid balance still on the books |
 | **`helam`** | usual pattern not claimed for now | *former climate* | `elam` *emptiness* | 🪹: the nesting season is over |
 
-Put RESIDUE and FORMER on `/h/`, anywhere in the sentence: like an [intention adverb](/clause#intention-adverbs), each covers the whole clause. Use `/w/` only when the word applies to the one `/ɡ/` adjective right after it. Both always end in **-m**.
-
-### Channels after `uom` {#channel-zone}
-
-English *contrary to what I was told* and *against my gut* say the event went against what a source led you to expect. Put the channel after the hook **`uom`** (*contrary to*), the same way as a ban or a plan ([contrary to a stance](prescription.md#contrary-to-stance)). The pair names what the event goes **against**; the channel then says nothing about how you know the claim.
-
-> `zazozon vowurol uom thebam.`
->
-> z-Azozon | v-walk | [contrary-to | th-REPORTED]
->
-> "Azozon walks, contrary to what I was told."
-
-> `zazozon vowurol uom thabem.`
->
-> z-Azozon | v-walk | [contrary-to | th-INTUITION]
->
-> "Azozon walks, against my gut."
-
-| After **`uom`** | Goes against | English |
-|-----------------|--------------|---------|
-| LIVE `thugem` | how it looks | *contrary to appearances* |
-| MEMORY `thevum` | how you remember it | *contrary to what I remember* |
-| PATTERN `thubom` | the trail of cases | *contrary to habit* / *unusually* |
-| CLUES `theyom` | what was worked out | *contrary to my calculations* |
-| REPORTED `thebam` | what was said or written | *contrary to what I was told* / *contrary to legend* |
-| INTUITION `thabem` | your gut expectation | *against my gut* |
-
-*Off schedule* goes against a plan: **`uom thagom`** ([contrary to a stance](prescription.md#contrary-to-stance)). MAY, RESIDUE, and FORMER do not follow **`uom`**: none of them is something the event could go against.
-
-A [holder](holder.md#holder) on a channel after **`uom`** names **whose view** the event goes against. The seam covers only that pair: the event is still your claim.
-
-> `zazozon vowurol uom thebamalazun.`
->
-> z-Azozon | v-walk | [contrary-to | th-REPORTED-Alazun]
->
-> "Azozon walks, contrary to what I hear Alazun thinks."
+Put RESIDUE and FORMER on `/h/`, anywhere in the sentence: like an [intention adverb](/clause#intention-adverbs), each covers the whole clause. Use `/w/` only when the word applies to the one `/ɡ/` adjective right after it. Both always end in **-m**. Neither follows **`uom`** ([contrary to](/contrary-to#channel-zone)): neither is something the event could go against.
 
 ### Practice {#intermediate-practice}
 
@@ -118,10 +83,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
-| *Ahelan* | `ahelan` |
 | *departure* | `vudurul` |
 | *sing* | `vozuyel` |
-| *walk* | `vowurol` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -133,15 +96,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-rabbit | th-LIVE | h-RESIDUE | v-departure
 :::
 
-**2.** *Ahelan sings, contrary to what I was told.*
-
-::: details Show answer
-`zahelan vozuyel uom thebam.`
-
-z-Ahelan | v-sing | [contrary-to | th-REPORTED]
-:::
-
-**3.** *Azozon always used to sing.*
+**2.** *Azozon always used to sing.*
 
 ::: details Show answer
 `zazozon hual vozuyel helam.`
@@ -151,15 +106,7 @@ z-Azozon | h-always | v-sing | h-FORMER
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zazozon vowurol uom thabem.`
-
-::: details Show answer
-z-Azozon | v-walk | [contrary-to | th-INTUITION]
-
-*Azozon walks, against my gut.*
-:::
-
-**2.** `zarozel thevum haram vudurul.`
+**1.** `zarozel thevum haram vudurul.`
 
 ::: details Show answer
 z-rabbit | th-MEMORY | h-RESIDUE | v-departure
@@ -182,4 +129,4 @@ Do not write **`helam`** right before **`hual`**: that spot holds the restrictor
 ## See also
 
 - How you know: [knowing.md](/knowing)
-- Contrary to a stance: [sakes.md](prescription.md#contrary-to-stance)
+- Contrary to: [contrary-to.md](/contrary-to#contrary-to-stance)

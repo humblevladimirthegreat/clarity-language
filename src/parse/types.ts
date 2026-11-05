@@ -391,7 +391,7 @@ export type Unit =
       job?: HookJob;
       /** Its `/b/` pair describes the noun or landmark on its left, not the clause. */
       onLeft?: true;
-      /** `uom` + a `/th/` stance: the opposing zone the event goes contrary to (prescription.md#contrary-to-stance). */
+      /** `uom` + a `/th/` stance: the opposing zone the event goes contrary to (contrary-to.md#contrary-to-stance). */
       zone?: HUnit;
       /** WANT, PLAN or DECISION after a holder zone: the holder's wish, plan or choice the event goes against (want.md#whose-intention). */
       heldIntention?: LexWord;

@@ -186,7 +186,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
 
   "hUnitRule.W": { anchor: "clause.md#adjective-detail-w", summary: "/w/ detail on an adverb" },
   "hUnitRule.H": { anchor: "clause.md#adverbs-h", summary: "/h/ or /th/ word" },
-  "hUnitRule.Held": { anchor: "holder.md#holder", summary: "WANT, PLAN, or DECISION after a holder zone of uom: the holder's intention the event goes against" },
+  "hUnitRule.Held": { anchor: "contrary-to.md#contrary-to-holder", summary: "WANT, PLAN, or DECISION after a holder zone of uom: the holder's intention the event goes against" },
   "hUnitRule.B": { anchor: "clause.md#extra-nouns", summary: "hosted /b/ after /h/" },
   "hUnitRule.G": { anchor: "dated-channel.md#dated-channel", summary: "amount on a hosted /b/ (signed offset)" },
   "hUnitRule.Odo": { anchor: "dependents.md#dependent-clauses", summary: "stand-in hosted on /h/, or the grounds after a channel's offset" },
@@ -195,7 +195,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "hookUnit.Hook": { anchor: "hooks.md#including-am-al", summary: "in-clause hook" },
   "sameRolePair.Hook": { anchor: "same-role-words.md#before-and-after", summary: "the same-role word of a pair" },
   "sameRolePair.Blank": { anchor: "same-role-words.md#before-and-after", summary: "the fill-ask blank a same-role word relates" },
-  "hookUnit.zone": { anchor: "prescription.md#contrary-to-stance", summary: "uom + a /th/ stance: the zone the event goes contrary to" },
+  "hookUnit.zone": { anchor: "contrary-to.md#contrary-to-stance", summary: "uom + a /th/ stance: the zone the event goes contrary to" },
 
   "npPackage.gPackage": { anchor: "clause.md#adjectives-ɡ", summary: "adjective on a noun (gl- before, /ɡ/ after)" },
   "npPackage.Z": { anchor: "clause.md#who-acts-and-the-action", summary: "/z/ noun" },
@@ -852,7 +852,7 @@ export const REJECTIONS = {
   barCount: { anchor: "sake-bars.md#bars", summary: "a rank fence ranks one item against one bar; with a bar there is no second comparee, noun or bar" },
   rankJoinNumberManner: { anchor: "comparative-arity.md#manner-scale", summary: "the /h/ after a rank join is a manner word; the only number there is digitless h+ (how often)" },
   zoneKind: {
-    anchor: "prescription.md#contrary-to-stance",
+    anchor: "contrary-to.md#contrary-to-stance",
     summary: "the stance after uom says what the event goes against: a channel, PLAN, DECISION, WANT, a ban, a requirement, a refusal, or a speaker attitude",
   },
   hookSameRole: { anchor: "hooks.md#including-am-al", summary: "an in-clause hook goes between two phrases in the same clause role (A HOOK B)" },

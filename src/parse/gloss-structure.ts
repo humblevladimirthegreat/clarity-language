@@ -172,7 +172,7 @@ function unitNodes(cur: Cursor, unit: Unit): GlossNode[] {
       return one(cur.take(unit.word));
     case "hook": {
       const hook = group([...unit.modifiers.map((m) => cur.take(m)), cur.take(unit.word)]);
-      // `uom` + its stance zone: `[contrary-to | th-WANT-unstated]` (prescription.md#contrary-to-stance).
+      // `uom` + its stance zone: `[contrary-to | th-WANT-unstated]` (contrary-to.md#contrary-to-stance).
       return one(unit.zone ? group([hook, hUnit(cur, unit.zone), cur.take(unit.heldIntention)]) : hook);
     }
     case "island":

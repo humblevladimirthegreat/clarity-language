@@ -239,7 +239,7 @@ function isIntentionStance(token: IToken): boolean {
   return tokenIs(token, HTh) && word?.pos === "th" && (kind === "want" || kind === "plan" || kind === "decision");
 }
 
-/** `uom` *contrary to*: a `/th/` stance right after it is its opposing zone (prescription.md#contrary-to-stance). */
+/** `uom` *contrary to*: a `/th/` stance right after it is its opposing zone (contrary-to.md#contrary-to-stance). */
 function isZoneHook(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;
   return tokenIs(token, Hook) && family?.kind === "hook" && family.form === "uom";
@@ -1453,7 +1453,7 @@ class AgebenSentenceParser extends CstParser {
   });
 
   /**
-   * A hook, and the stance `uom` holds as its zone (prescription.md#contrary-to-stance): one whose hosted `/b/` the adjectives
+   * A hook, and the stance `uom` holds as its zone (contrary-to.md#contrary-to-stance): one whose hosted `/b/` the adjectives
    * after it describe (`Open`), or any other (`Closed`). A `Plain` hook has no `/b/` or zone right after it ({@link HookPlain}).
    */
   public hookUnitPlain = this.hookUnitRule("hookUnitPlain", "plain");

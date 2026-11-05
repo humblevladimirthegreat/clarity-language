@@ -49,7 +49,7 @@ A want and a [plan](/intention#plan-predict) are different steps, so they stack 
 >
 > "I have long wanted to walk, and I plan to."
 
-For *against my wishes*, put WANT after the hook **`uom`** ([contrary to a stance](prescription.md#contrary-to-stance)): the event goes against that want. For someone else's wishes, a [holder](holder.md#holder) goes between **`uom`** and WANT.
+For *against my wishes*, put WANT after the hook **`uom`** ([contrary to a stance](contrary-to.md#contrary-to-stance)): the event goes against that want. For someone else's wishes, a [holder](holder.md#holder) goes between **`uom`** and WANT.
 
 > `zazozon vowurol uom thalom.`
 >
@@ -106,7 +106,7 @@ PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** t
 >
 > "I intend to walk, details open, and I've decided that for now."
 
-To say an event goes against a decision (*against my decision*), put DECISION after the hook **`uom`** ([contrary to a stance](prescription.md#contrary-to-stance)).
+To say an event goes against a decision (*against my decision*), put DECISION after the hook **`uom`** ([contrary to a stance](contrary-to.md#contrary-to-stance)).
 
 > `zazozon vowurol uom thogem.`
 >

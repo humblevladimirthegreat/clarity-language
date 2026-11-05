@@ -470,7 +470,7 @@ export function isBarStance(word: LexWord, tables: ClassifyTables): boolean {
   return word.reading === "ordinary" && family.kind === "content";
 }
 
-/** Closed `/th/` or clause-adverb kinds `uom` takes as its zone: each has content an event can go against (prescription.md#contrary-to-stance). */
+/** Closed `/th/` or clause-adverb kinds `uom` takes as its zone: each has content an event can go against (contrary-to.md#contrary-to-stance). */
 const ZONE_OVERLAY_KINDS = new Set(["evidential", "plan", "decision", "want"]);
 
 /**
