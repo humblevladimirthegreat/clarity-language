@@ -14,7 +14,7 @@ import { BANDS } from "../lint/learning-order.js";
 import { markerToSpeech, digitsToSyllables } from "../tts/numbers.js";
 import { COUNT_SLOT, grammarPath, matchCues, RANK_SLOT, resolveLink, type CueIndex, type GrammarJob } from "./cues.js";
 import type { CompoundRow } from "../lexicon-compounds.js";
-import { BOUNDABLE_JOINS, BOUNDABLE_RESTRICTORS, COMPOUND_LINKS, DEFAULT_HOLDER_CHANNEL, FEELING_LINKS, HOLDER_CHANNELS, HOLDER_FEELING, HOLDER_LINKS, holderHost, stanceOwner, detectClause, detectClauseOpener, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAKE_ENDINGS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
+import { BOUNDABLE_JOINS, BOUNDABLE_RESTRICTORS, COMPOUND_LINKS, DEFAULT_HOLDER_CHANNEL, FEELING_LINKS, HOLDER_CHANNELS, HOLDER_FEELING, HOLDER_LINKS, holderHost, stanceOwner, detectClause, detectClauseOpener, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAKE_ENDINGS, SPEAKER_ONLY_LINKS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
 import { lookupLexicon, rootsByForm, sideEnding, type LexiconIndex, type LexiconSuggestion } from "./lexicon.js";
 import { doerVerb, tagEnglish, type ClauseFeatures, type TaggedTerm, type WordClass } from "./tag.js";
 import { lookupRoute, lookupWordnet, senseSuggestions, type RouteClass, type WordnetIndex, type WordnetPos } from "./wordnet-index.js";
@@ -199,13 +199,19 @@ function ownerIndex(terms: readonly TaggedTerm[], i: number): number {
   return j;
 }
 
-/** Whose stance a word at `i` reports: the speaker, someone else, or unknown. */
-function ownerAt(terms: readonly TaggedTerm[], i: number): "speaker" | "other" | undefined {
-  const j = ownerIndex(terms, i);
-  return j >= 0 ? stanceOwner(terms[j]!) : undefined;
-}
-
 const LISTENER_WORDS = new Set(["you", "your", "yours"]);
+
+/**
+ * Whose stance a word at `i` reports: the speaker, someone else, *we*, or unknown. In a question
+ * the listener's own stance counts as the speaker's does: a bare stance asks for it, with no holder
+ * (want.md#whose-intention).
+ */
+function ownerAt(terms: readonly TaggedTerm[], i: number, question = false): "speaker" | "other" | "we" | undefined {
+  const j = ownerIndex(terms, i);
+  if (j < 0) return undefined;
+  if (question && LISTENER_WORDS.has(terms[j]!.normal)) return "speaker";
+  return stanceOwner(terms[j]!);
+}
 const RESUMED_WORDS = new Set(["he", "him", "his", "she", "her", "hers", "they", "them", "their", "theirs", "hor", "thom"]);
 
 /**
@@ -215,6 +221,7 @@ const RESUMED_WORDS = new Set(["he", "him", "his", "she", "her", "hers", "they",
  */
 function holderNoun(data: HelperData, owner: TaggedTerm, earlier: readonly TaggedTerm[]): string | undefined {
   if (LISTENER_WORDS.has(owner.normal)) return `${CLOSED.headphones}n`;
+  if (stanceOwner(owner) === "we") return `${CLOSED.handshake}n`;
   if (RESUMED_WORDS.has(owner.normal)) {
     const name = [...earlier].reverse().map((t) => (t.proper ? nameRoot(data, t) : undefined)).find(Boolean);
     return name && `${name.form}r`;
@@ -278,12 +285,17 @@ function spellHolder(data: HelperData, job: JobSuggestion, owner: TaggedTerm | u
  * speaker, a holder row goes; with someone else, the bare stance row the holder row repeats goes
  * (holder rows: {@link HOLDER_LINKS}). With no owner found, or *we*, both stay.
  */
-function byStanceOwner(jobs: JobSuggestion[], terms: readonly TaggedTerm[], i: number): JobSuggestion[] {
+function byStanceOwner(jobs: JobSuggestion[], terms: readonly TaggedTerm[], i: number, question = false): JobSuggestion[] {
   const holder = (j: JobSuggestion) => HOLDER_LINKS.includes(j.link);
+  const owner = ownerAt(terms, i, question);
+  // An attitude that is always yours (*hopefully*) never says someone else's hope.
+  if (owner === "other") jobs = jobs.filter((x) => !SPEAKER_ONLY_LINKS.includes(x.link));
   if (!jobs.some(holder)) return jobs;
-  const owner = ownerAt(terms, i);
   if (owner === "speaker") return jobs.filter((x) => !holder(x));
+  // *we*: your own stance for the group first; the interlocutors as holder when you claim it is shared.
+  if (owner === "we") return [...jobs.filter((x) => !holder(x)), ...jobs.filter(holder).map((x) => ({ ...x, itch: `${x.itch}; if you claim the listener shares it` }))];
   if (owner !== "other") return jobs;
+  if (question) jobs = jobs.map((x) => (holder(x) ? { ...x, itch: `${x.itch}; in a question, asks how the listener can tell` } : x));
   // The stance a holder row repeats: each word after the holder, or the host of a holder alone (`thomamazozon` → `thomam`).
   const words = (form: string) => formPieces(form).flatMap((p) => p.replace(/[.?!]$/, "").split(/\s+/));
   const stances = new Set(words(jobs.filter(holder).map((x) => x.form).join(" / ")).map((w) => holderHost(w) ?? w));
@@ -868,7 +880,7 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
         const run = terms.slice(i, end);
         const t = run[run.length - 1]!;
         const one = run.length === 1;
-        const jobs: JobSuggestion[] = byStanceOwner((match?.jobs ?? []).map((j) => ({ ...j, kind: "job" as const, tier: "grammar" as const })), terms, i).map((j) => {
+        const jobs: JobSuggestion[] = byStanceOwner((match?.jobs ?? []).map((j) => ({ ...j, kind: "job" as const, tier: "grammar" as const })), terms, i, clause.features.question).map((j) => {
           const phrase = run.some((r) => r.cls === "number") ? numberCuePhrase(data, j, run, nounFollows(terms, end)) : undefined;
           const job: JobSuggestion = { ...j, kind: "job", tier: "grammar", ...(phrase ? { phrase } : {}) };
           spellJoinVowel(data, job, terms, end, roleOf);
@@ -944,7 +956,7 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
         const opener = one ? detectClauseOpener(t.normal, terms[i - 1] ?? outer[outer.length - 1], terms[end]).flatMap((d) => filterDetector(data, d, stage) ?? []) : [];
         if (opener.length) suggestions = [...opener, ...suggestions.filter((s) => s.kind !== "job" && s.kind !== "entry")];
         // Someone else's feeling or stake (*Alazun seems upset*) takes a holder.
-        if (suggestions.some((s) => suggestionLinks(s).some((l) => FEELING_LINKS.includes(l))) && ownerAt(terms, i) === "other") {
+        if (suggestions.some((s) => suggestionLinks(s).some((l) => FEELING_LINKS.includes(l))) && ownerAt(terms, i, clause.features.question) === "other") {
           const hit = filterDetector(data, HOLDER_FEELING, stage);
           if (hit) suggestions.push(hit);
         }
@@ -952,7 +964,7 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
         suggestions.push(...[...leads, ...routes, ...live].filter((s) => withinStage(data, s, stage)));
         addExamples(data, suggestions, [...new Set(run.flatMap((r) => [r.normal, r.lemma]))]);
         const slot: Slot = { text: run.map((r) => r.text).join(" "), lemma: one ? t.lemma : run.map((r) => r.normal).join(" "), cls: one ? t.cls : useNgram ? "noun" : "other", suggestions };
-        if (ownerAt(terms, i) === "other" && suggestions.some((s) => (s.kind === "job" && HOLDER_LINKS.includes(s.link)) || (s.kind === "detector" && s.id === HOLDER_FEELING.id))) {
+        if (ownerAt(terms, i, clause.features.question) === "other" && suggestions.some((s) => (s.kind === "job" && HOLDER_LINKS.includes(s.link)) || (s.kind === "detector" && s.id === HOLDER_FEELING.id))) {
           slot.otherStance = true;
         }
         const reading = one ? readingOf(t) : undefined;

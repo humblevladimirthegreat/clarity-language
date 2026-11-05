@@ -361,14 +361,25 @@ export function holderHost(word: string): string | undefined {
   return /^(th[aeiou](?:th|[bdghlmnrvwyz])[aeiou][lmr])[aeiou][a-z]{2,}[nlrx]$/.exec(word)?.[1];
 }
 
-/** Whose stance a word before the stance names: the speaker, or someone else. *we* is neither, so both rows stay. */
+/**
+ * Rows for an attitude that is always the speaker's (*hopefully*, *I hope*): the analyzer drops
+ * them when someone else owns the stance, whose hope is a holder + WANT row instead.
+ */
+export const SPEAKER_ONLY_LINKS: readonly string[] = ["feelings-permission.md#speaker-attitude"];
+
+/**
+ * Whose stance a word before the stance names: the speaker, someone else, or *we* (your own
+ * stance for the group, or a shared one with the interlocutors as holder: want.md#whose-intention).
+ */
 const SPEAKER_WORDS = new Set(["i", "me", "my", "mine", "myself"]);
+const GROUP_WORDS = new Set(["we", "us", "our", "ours", "ourselves"]);
 const OTHER_PRONOUNS = new Set([
   "you", "your", "yours", "he", "him", "his", "she", "her", "hers", "hor", "it", "its", "they", "them", "their", "theirs", "thom",
   "someone", "somebody", "everyone", "everybody", "anyone", "anybody", "nobody", "who",
 ]);
-export function stanceOwner(word: { normal: string; cls: string }): "speaker" | "other" | undefined {
+export function stanceOwner(word: { normal: string; cls: string }): "speaker" | "other" | "we" | undefined {
   if (SPEAKER_WORDS.has(word.normal)) return "speaker";
+  if (GROUP_WORDS.has(word.normal)) return "we";
   if (word.cls === "noun" || OTHER_PRONOUNS.has(word.normal)) return "other";
   return undefined;
 }
@@ -377,6 +388,7 @@ export function stanceOwner(word: { normal: string; cls: string }): "speaker" | 
 export function detectorLinks(): string[] {
   return [
     ...HOLDER_LINKS,
+    ...SPEAKER_ONLY_LINKS,
     ...FEELING_LINKS,
     ...HOLDER_FEELING.links,
     ...Object.values(SAME_ROLE_HOOKS),
