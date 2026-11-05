@@ -211,10 +211,10 @@ Open **-m** leaves exceptions; closed **-l** allows none.
 **Rule:** [Channels on a generalization](usually-vs-must.md#universality)
 :::
 
-**8.** *Ahelan sees at most five baguettes.* `zahelan debodolx gruwal ul grazal vayebel.` or `zahelan debodolx gruwal al grazal vayebel.`
+**8.** *Ahelan sees at most five baguettes.* `zahelan debodolx gruwal uel grazal vayebel.` or `zahelan debodolx gruwal oel grazal vayebel.`
 
 ::: details Show answer
-`zahelan debodolx gruwal al grazal vayebel.`
+`zahelan debodolx gruwal oel grazal vayebel.`
 
 z-Ahelan | [d-baguette-x | g-minus-infinity] | through | g-five | v-see
 

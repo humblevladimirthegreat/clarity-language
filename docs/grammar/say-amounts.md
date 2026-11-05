@@ -113,9 +113,9 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 *Most of the cats* means *more than half*: the band from all of them down to half, with half left out. Write **`g+100%`**, then **`ul`**, then **`g+50%`**. The hook excludes the endpoint after it.
 
-> `zogozelx g+100% ul g+50% vehohel.`
+> `zogozelx g+100% uel g+50% vehohel.`
 >
-> 🔊 `zogozelx grabamomoyol ul grazamoyol vehohel.`
+> 🔊 `zogozelx grabamomoyol uel grazamoyol vehohel.`
 >
 > [z-cat-x | g-100yo] | through-excluding | g-50yo | v-sit
 >
@@ -176,12 +176,12 @@ A range hook with **-r** names **one value in the band** without saying which.
 
 | Ageben | Use | English |
 |--------|-----|---------|
-| `z+3 ar z+5` | some value in the inclusive band | *some value from 3 to 5* |
-| `z+3 ur z+5` | some value in the band, 5 left out | *some value from 3 up to 5* |
-| `zrazal ar zrawal` | some value on the ray | *some value of 5 or more* |
-| `z+3 uor z+5` | some value outside the band | *some value below 3 or above 5* |
+| `z+3 oer z+5` | some value in the inclusive band | *some value from 3 to 5* |
+| `z+3 uer z+5` | some value in the band, 5 left out | *some value from 3 up to 5* |
+| `zrazal oer zrawal` | some value on the ray | *some value of 5 or more* |
+| `z+3 uar z+5` | some value outside the band | *some value below 3 or above 5* |
 
-Under [question](/questions#fill-ask-r) force, these are fill-asks (*which value from 3 to 5?*). The same shape works under `/d/` `/b/` `/ɡ/` as the slot needs (`d+10 ur d+20` = object *some value from 10 up to 20*).
+Under [question](/questions#fill-ask-r) force, these are fill-asks (*which value from 3 to 5?*). The same shape works under `/d/` `/b/` `/ɡ/` as the slot needs (`d+10 uer d+20` = object *some value from 10 up to 20*).
 
 **Not the same job as:** the resume hooks `ar` / `ur` with nothing on the right (*in there* / *from there*), and discrete *something among two listed values* (`zragel zrazal zar`).
 
@@ -313,8 +313,8 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *secondary* / *second* | the rank `g#2` |
 | *whole* / *entire* / *complete* / *total* (nothing lacking) | `gahuram` (*completeness*) |
 | *several* | approximate number: `zogozelx gram` (*about five cats*) |
-| *multiple* (*more than one*) | a ray: `zogozelx g+2 al grawal` |
-| *minority* (*fewer than half*) | `zogozelx g+0% ul g+50%` |
+| *multiple* (*more than one*) | a ray: `zogozelx g+2 oel grawal` |
+| *minority* (*fewer than half*) | `zogozelx g+0% uel g+50%` |
 | *exactly* / *precisely* / *specific* (*exactly five*) | the plain number `g+5`; `gram` is *about five* |
 | *literally* (*word for word*) | an exact quote: bare brackets, no `~` ([exact, paraphrase, proper](/spans#when-required)) |
 | *a dozen* | `zudalx g+12` |
@@ -324,8 +324,8 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *the second biggest*, *the third tallest* | `zazozon zol wrodol gelazem` ([place on a scale](/comparative-arity#place-on-a-scale)) |
 | *twice* / *double* (two times) | `h+2` before the verb |
 | *ratio* (*three cats to one dog*) | `zogozelx zodozelx zoel gral hragel` ([factor](/comparative-arity#factor)) |
-| *at least 5* / *at most 5* (*minimum* / *maximum*) | `zrazal al zrawal` / `zruwal al zrazal` |
-| *2nd through last* (a rank up to the last place) | `zrodol al zrowal` |
+| *at least 5* / *at most 5* (*minimum* / *maximum*) | `zrazal oel zrawal` / `zruwal oel zrazal` |
+| *2nd through last* (a rank up to the last place) | `zrodol oel zrowal` |
 | *decade* / *century* | `bovuvam g+10` / `bovuvam g+100` |
 | *unit* | the measure phrase: `bezerom g+2` |
 | *estimate* (*I put it at 40*) | stance number `th+40` |
@@ -439,7 +439,7 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 | *member* (unspecified, of a menu or list) | `zer` | anything among the listed |
 | *list* (*a list of cats and dogs*) | `zogozel zodozel zal` | an and-list |
 | *list* (written) | `zegowal` | *clipboard* |
-| *range* (of numbers) | `zragel al zrazal` | the band from 3 to 5 |
+| *range* (of numbers) | `zragel oel zrazal` | the band from 3 to 5 |
 | *range* (of things: how far it reaches) | `zaham` | *scope*, the abstract sense of `aha` |
 
 > `zodozelx vowurol.`

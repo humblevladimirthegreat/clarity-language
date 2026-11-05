@@ -296,39 +296,39 @@ Write both ends with the hook `al`: `A al B`. It reads as *through* when both en
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`zragel al zrazal`](/numbers-applied#ranges) | both ends in | *3 to 5* | I |
-| [`zragel ul zrazal`](/numbers-applied#ranges) | 5 left out | *3 up to but not including 5* | I |
-| [`zrazal ul zragel`](/numbers-applied#ranges) | 3 left out | *more than 3, up to 5* | I |
-| [`zragel am zrazal`](/numbers-applied#ranges) | soft ends | *roughly 3 to 5* | I |
-| [`zragel um zrazal`](/numbers-applied#ranges) | soft exclusion | *3 up to about 5, not quite 5* | I |
-| [`zragel ual zrazal`](/numbers-applied#ranges) | both ends out | *strictly between 3 and 5* | I |
-| [`zragel uol zrazal`](/numbers-applied#ranges) | outside the band | *below 3 or above 5* | I |
+| [`zragel oel zrazal`](/numbers-applied#ranges) | both ends in | *3 to 5* | I |
+| [`zragel uel zrazal`](/numbers-applied#ranges) | 5 left out | *3 up to but not including 5* | I |
+| [`zrazal uel zragel`](/numbers-applied#ranges) | 3 left out | *more than 3, up to 5* | I |
+| [`zragel oem zrazal`](/numbers-applied#ranges) | soft ends | *roughly 3 to 5* | I |
+| [`zragel uem zrazal`](/numbers-applied#ranges) | soft exclusion | *3 up to about 5, not quite 5* | I |
+| [`zragel uol zrazal`](/numbers-applied#ranges) | both ends out | *strictly between 3 and 5* | I |
+| [`zragel ual zrazal`](/numbers-applied#ranges) | outside the band | *below 3 or above 5* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [3 to 5](/numbers-applied#ranges) | `zragel al zrazal.` | *From 3 to 5.* (both ends included) | I |
-| [Of a noun](/numbers-applied#ranges) | `zodozel gragel al grazal vowurol.` | *Three to five dogs walk.* | I |
-| [Hours](/numbers-applied#ranges) | `zagorum gragel al grazal.` | *Three to five hours.* | I |
+| [3 to 5](/numbers-applied#ranges) | `zragel oel zrazal.` | *From 3 to 5.* (both ends included) | I |
+| [Of a noun](/numbers-applied#ranges) | `zodozel gragel oel grazal vowurol.` | *Three to five dogs walk.* | I |
+| [Hours](/numbers-applied#ranges) | `zagorum gragel oel grazal.` | *Three to five hours.* | I |
 
 To limit to one end, make the other end infinity:
 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`zrazal al zrawal`](/open-ranges#rays) | 5 up to +∞ | *5 or more* | A |
-| [`zrawal ul zrazal`](/open-ranges#rays) | 5 left out | *more than 5* | A |
-| [`zruwal al zrazal`](/open-ranges#rays) | −∞ up to 5 | *5 or less* | A |
-| [`zruwal ul zrazal`](/open-ranges#rays) | 5 left out | *less than 5* | A |
-| [`zrazal am zrawal`](/open-ranges#rays) | soft | *about 5 or more* | A |
+| [`zrazal oel zrawal`](/open-ranges#rays) | 5 up to +∞ | *5 or more* | A |
+| [`zrawal uel zrazal`](/open-ranges#rays) | 5 left out | *more than 5* | A |
+| [`zruwal oel zrazal`](/open-ranges#rays) | −∞ up to 5 | *5 or less* | A |
+| [`zruwal uel zrazal`](/open-ranges#rays) | 5 left out | *less than 5* | A |
+| [`zrazal oem zrawal`](/open-ranges#rays) | soft | *about 5 or more* | A |
 
-Ranks take `growal` (last) and `growul` (first) as ends: `zrodol al zrowal` is *2nd through last*. A named band uses **-n**, and **-r** stands for a value in it.
+Ranks take `growal` (last) and `growul` (first) as ends: `zrodol oel zrowal` is *2nd through last*. A named band uses **-n**, and **-r** stands for a value in it.
 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`z+13 an z+19`](/open-ranges#named-ranges) | a named band | *the teens* | A |
-| [`zragel ar zrazal`](/open-ranges#named-ranges) | some value in the band | *some value from 3 to 5* | A |
-| [`zragel ur zrazal`](/open-ranges#named-ranges) | some value, 5 left out | *some value from 3 up to 5* | A |
+| [`z+13 oen z+19`](/open-ranges#named-ranges) | a named band | *the teens* | A |
+| [`zragel oer zrazal`](/open-ranges#named-ranges) | some value in the band | *some value from 3 to 5* | A |
+| [`zragel uer zrazal`](/open-ranges#named-ranges) | some value, 5 left out | *some value from 3 up to 5* | A |
 
 <PageBreak />
 
@@ -497,4 +497,4 @@ Only kin make generations: friends and bosses are [social relations](/social-tie
 | `x#2` *point 2:* ([a numbered step](/stacked-markers#examples)) | | `x#-2` *2nd from the end:* ([counting back](/stacked-markers#from-the-end)) |
 | `x-2` *independent item 2:* ([a new line of support](/stacked-markers#examples)) | | `x#-2` *2nd from the end:* ([counting back](/stacked-markers#from-the-end)) |
 | `th+70` *70% likely* ([a stance](/number-roles#number-as-stance-by-marker)) | | `thomam` *maybe* ([open, with no figure](/knowing#may)) |
-| `zragel al zrazal` *3 to 5* ([a band](/numbers-applied#ranges)) | | `zragel zrazal zaol` *3, then 5* ([two values in order](/numbers-applied#ranges)) |
+| `zragel oel zrazal` *3 to 5* ([a band](/numbers-applied#ranges)) | | `zragel zrazal zaol` *3, then 5* ([two values in order](/numbers-applied#ranges)) |

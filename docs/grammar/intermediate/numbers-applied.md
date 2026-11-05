@@ -108,23 +108,23 @@ Spelled out, `bagorum g+3` is `bagorum gragel` *three hours*.
 
 To give a range of numbers (*from 3 to 5*, *3 through 5*), write the two ends with the [hook](/hooks) **`al`** between them: `A al B`. No join word closes it, and no extra word names the scale.
 
-> `zragel al zrazal.`
+> `zragel oel zrazal.`
 >
 > z-three | through | z-five
 >
 > "From 3 to 5." (both ends included)
 
-Between two numbers, *3, including 5* has nothing to include into, so **`al`** reads as *through*: the band from A reaching and including B. This reading needs both endpoints to be the **same kind** of number (both amounts, both ranks, or both labels / times), each with digits. A number with no digits keeps the ordinary hook (`zral al zrazal` = *some number of them, including 5*), and so do mixed kinds.
+Between two numbers, *3, including 5* has nothing to include into, so **`al`** reads as *through*: the band from A reaching and including B. This reading needs both endpoints to be the **same kind** of number (both amounts, both ranks, or both labels / times), each with digits. A number with no digits keeps the ordinary hook (`zral oel zrazal` = *some number of them, including 5*), and so do mixed kinds.
 
 To count a range of things, put the endpoints on the counted noun, the same way one count sits on it. The noun names the line:
 
-> `zodozel gragel al grazal vowurol.`
+> `zodozel gragel oel grazal vowurol.`
 >
 > [z-dog | g-three] | through | g-five | v-walk
 >
 > "Three to five dogs walk."
 
-> `zagorum gragel al grazal.`
+> `zagorum gragel oel grazal.`
 >
 > [z-hour | g-three] | through | g-five
 >
@@ -137,15 +137,15 @@ A word after **B** describes **B** alone, and a word on the counted noun describ
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English |
 |--------|-----|---------|
-| `zragel al zrazal` | both ends in | *3 to 5* (`[3, 5]`) |
-| `zragel ul zrazal` | 5 left out | *3 up to but not including 5* (`[3, 5)`) |
-| `zrazal ul zragel` | 3 left out | *more than 3, up to 5* (`(3, 5]`) |
-| `zragel am zrazal` | soft ends | *roughly 3 to 5* |
-| `zragel um zrazal` | soft exclusion | *3 up to about 5, not quite 5* |
-| `zragel ual zrazal` | both ends out | *strictly between 3 and 5* (`(3, 5)`) |
-| `zragel uol zrazal` | outside the band | *below 3 or above 5* |
+| `zragel oel zrazal` | both ends in | *3 to 5* (`[3, 5]`) |
+| `zragel uel zrazal` | 5 left out | *3 up to but not including 5* (`[3, 5)`) |
+| `zrazal uel zragel` | 3 left out | *more than 3, up to 5* (`(3, 5]`) |
+| `zragel oem zrazal` | soft ends | *roughly 3 to 5* |
+| `zragel uem zrazal` | soft exclusion | *3 up to about 5, not quite 5* |
+| `zragel uol zrazal` | both ends out | *strictly between 3 and 5* (`(3, 5)`) |
+| `zragel ual zrazal` | outside the band | *below 3 or above 5* |
 
-**`ual`** and **`uol`** are the [range hooks](ordered-ranges.md#ranges), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zragel al zrazam` = *3 to about 5*).
+**`ual`** and **`uol`** are the [range hooks](ordered-ranges.md#ranges), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zragel oel zrazam` = *3 to about 5*).
 
 **Compare with:** `zragel zrazal zaol` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zazozon zalazun zol gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](locative-relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
 
@@ -253,7 +253,7 @@ z-Azozon | [b-meter | g-two] | v-walk
 **3.** *Three to five hours.*
 
 ::: details Show answer
-`zagorum gragel al grazal.`
+`zagorum gragel oel grazal.`
 
 [z-hour | g-three] | through | g-five
 :::
@@ -290,11 +290,11 @@ z-bottle-x | g-50yo
 *50% of the bottles.*
 :::
 
-**2.** `z+10 uol z+20.`
+**2.** `z+10 ual z+20.`
 
 ::: details Show answer
 
-🔊 `zrabamol uol zradomol.`
+🔊 `zrabamol ual zradomol.`
 
 z-ten | outside | z-20
 
@@ -328,7 +328,7 @@ Marker **`ru`** divides: *a third of*; **`ra`** is three pills.
 **1.** *one through three* <!-- lint: error -->`zrabal zragel zal.`
 
 ::: details Show answer
-`zrabal al zragel.`
+`zrabal oel zragel.`
 
 z-one | through | z-three
 

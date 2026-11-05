@@ -23,7 +23,7 @@ When the items sit on a line with an order (people in a queue, days, chapters, n
 
 The range runs from A to B, in the order you say them. Endings work as on other hooks: **-m** makes the ends soft (*roughly A through B*), and **-n** names the range as a whole. **-r** stands in for one member you are not naming, and under a [question](/questions#fill-ask-r) it asks which one:
 
-> `zazozon uar zahelan vezuvel.`
+> `zazozon uor zahelan vezuvel.`
 >
 > z-Azozon | some.strictly-between | z-Ahelan | v-sleep
 >
@@ -31,7 +31,7 @@ The range runs from A to B, in the order you say them. Endings work as on other 
 
 A range **-r** always has a word on each side (`oer` / `uar` / `uor`). With nothing on the right, extra-noun **-r** is not a range.
 
-> `zazozon ual zahelan vezuvel.`
+> `zazozon uol zahelan vezuvel.`
 >
 > z-Azozon | strictly-between | z-Ahelan | v-sleep
 >
@@ -79,7 +79,7 @@ z-Azozon | through | z-Ahelan | v-write
 **2.** *Everyone strictly between Azozon and Ahelan sees the newspaper.*
 
 ::: details Show answer
-`zazozon ual zahelan dunonal vayebel.`
+`zazozon uol zahelan dunonal vayebel.`
 
 z-Azozon | strictly-between | z-Ahelan | d-newspaper | v-see
 :::
@@ -87,14 +87,14 @@ z-Azozon | strictly-between | z-Ahelan | d-newspaper | v-see
 **3.** *Everyone outside Azozon–Ahelan writes a newspaper.*
 
 ::: details Show answer
-`zazozon uol zahelan dunonal varuyol.`
+`zazozon ual zahelan dunonal varuyol.`
 
 z-Azozon | outside | z-Ahelan | d-newspaper | v-write
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zazozon uor zahelan veruvol.`
+**1.** `zazozon uar zahelan veruvol.`
 
 ::: details Show answer
 z-Azozon | some.outside | z-Ahelan | v-run
@@ -102,7 +102,7 @@ z-Azozon | some.outside | z-Ahelan | v-run
 *Someone outside the Azozon–Ahelan band runs.*
 :::
 
-**2.** `zazozon uar zahelan dunonal vayebel.`
+**2.** `zazozon uor zahelan dunonal vayebel.`
 
 ::: details Show answer
 z-Azozon | some.strictly-between | z-Ahelan | d-newspaper | v-see
@@ -120,10 +120,10 @@ z-Azozon | through.approx | z-Ahelan | v-write
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Everyone between Azozon and Ahelan runs, but not those two.* `zazozon ual zahelan veruvol.` or `zazozon oel zahelan veruvol.`
+**1.** *Everyone between Azozon and Ahelan runs, but not those two.* `zazozon uol zahelan veruvol.` or `zazozon oel zahelan veruvol.`
 
 ::: details Show answer
-`zazozon ual zahelan veruvol.`
+`zazozon uol zahelan veruvol.`
 
 z-Azozon | strictly-between | z-Ahelan | v-run
 

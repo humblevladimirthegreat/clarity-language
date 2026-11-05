@@ -10,13 +10,13 @@ band: advanced
 
 English *5 or more* / *less than 5* is a **ray**: a band with only one end. Write it as a [range](/numbers-applied#ranges) whose other end is infinity: **`zrawal`** (+∞) or **`zruwal`** (−∞), the [digitless exponents](special-values.md#special-values). The same **`al`** / **`ul`** rules apply, so the hook excludes the endpoint after it.
 
-> `zrazal al zrawal.`
+> `zrazal oel zrawal.`
 >
 > z-five | through | z-plus-infinity
 >
 > "5 or more."
 
-> `zruwal ul zrazal.`
+> `zruwal uel zrazal.`
 >
 > z-minus-infinity | through-excluding | z-five
 >
@@ -25,15 +25,15 @@ English *5 or more* / *less than 5* is a **ray**: a band with only one end. Writ
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English |
 |--------|-----|---------|
-| **`zrazal al zrawal`** | 5 up to +∞ | *5 or more* (`≥ 5`) |
-| **`zrawal ul zrazal`** | +∞ down to 5, 5 left out | *more than 5* (`> 5`) |
-| **`zruwal al zrazal`** | −∞ up to 5 | *5 or less* / *at most 5* (`≤ 5`) |
-| **`zruwal ul zrazal`** | −∞ up to 5, 5 left out | *less than 5* (`< 5`) |
-| **`zrazal am zrawal`** | soft | *about 5 or more* |
+| **`zrazal oel zrawal`** | 5 up to +∞ | *5 or more* (`≥ 5`) |
+| **`zrawal uel zrazal`** | +∞ down to 5, 5 left out | *more than 5* (`> 5`) |
+| **`zruwal oel zrazal`** | −∞ up to 5 | *5 or less* / *at most 5* (`≤ 5`) |
+| **`zruwal uel zrazal`** | −∞ up to 5, 5 left out | *less than 5* (`< 5`) |
+| **`zrazal oem zrawal`** | soft | *about 5 or more* |
 
-For counts, −∞ reads as *no lower limit*: `zogozelx gruwal al grazal` is *up to five cats*.
+For counts, −∞ reads as *no lower limit*: `zogozelx gruwal oel grazal` is *up to five cats*.
 
-Ranks take the first and last place as ends. **`growal`** is the last place and **`growul`** the first, so `zrodol al zrowal` is *2nd through last*.
+Ranks take the first and last place as ends. **`growal`** is the last place and **`growul`** the first, so `zrodol oel zrowal` is *2nd through last*.
 
 **Compare with:** a rank join on one number is not a ray: `zrazal zol` is *only 5 matters*, and `zrazal zaol` is *start with 5*.
 
@@ -45,13 +45,13 @@ The range hook takes the other hook endings too.
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English |
 |--------|-----|---------|
-| `z+13 an z+19` | **-n**: a named band | *the teens* |
-| `zragel ar zrazal` | **-r**: some value in the band | *some value from 3 to 5* |
-| `zragel ur zrazal` | **-r**: some value in the band, 5 left out | *some value from 3 up to 5* |
+| `z+13 oen z+19` | **-n**: a named band | *the teens* |
+| `zragel oer zrazal` | **-r**: some value in the band | *some value from 3 to 5* |
+| `zragel uer zrazal` | **-r**: some value in the band, 5 left out | *some value from 3 up to 5* |
 
-> `z+13 an z+19.`
+> `z+13 oen z+19.`
 >
-> 🔊 `zrabagel an zrabanal.`
+> 🔊 `zrabagel oen zrabanal.`
 >
 > NAME[z-13 | through | z-19]
 >
@@ -59,13 +59,13 @@ The range hook takes the other hook endings too.
 
 With **-r**, the hook stands in for one value you are not naming. Under a [question](/questions#fill-ask-r) it asks for that value, as `zar` asks *who?*:
 
-> `zazozon dogozelx gragel ar grazal vayebel.`
+> `zazozon dogozelx gragel oer grazal vayebel.`
 >
 > z-Azozon | [d-cat-x | g-three] | some.through | g-five | v-see
 >
 > "Azozon sees some number of cats from 3 to 5."
 
-The [range hooks](/ordered-ranges#ranges) take **-r** the same way: `zragel uar zrazal` is *some value strictly between 3 and 5*, and `zragel uor zrazal` *some value outside 3–5*.
+The [range hooks](/ordered-ranges#ranges) take **-r** the same way: `zragel uor zrazal` is *some value strictly between 3 and 5*, and `zragel uar zrazal` *some value outside 3–5*.
 
 ### Practice {#advanced-practice}
 
@@ -91,7 +91,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **1.** *Five or more cars stand.*
 
 ::: details Show answer
-`zugavalx grazal al grawal vuzuvel.`
+`zugavalx grazal oel grawal vuzuvel.`
 
 [z-car-x | g-five] | through | g-plus-infinity | v-stand
 :::
@@ -99,7 +99,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **2.** *Alazun pays less than five coins.*
 
 ::: details Show answer
-`zalazun dorelx gruwal ul grazal varal.`
+`zalazun dorelx gruwal uel grazal varal.`
 
 z-Alazun | [d-coin-x | g-minus-infinity] | through-excluding | g-five | v-pay
 :::
@@ -107,7 +107,7 @@ z-Alazun | [d-coin-x | g-minus-infinity] | through-excluding | g-five | v-pay
 **3.** *Azozon sees the 2nd through last cars.*
 
 ::: details Show answer
-`zazozon dugavalx grodol al growal vayebel.`
+`zazozon dugavalx grodol oel growal vayebel.`
 
 z-Azozon | [d-car-x | g-2nd] | through | g-last-place | v-see
 :::
@@ -115,14 +115,14 @@ z-Azozon | [d-car-x | g-2nd] | through | g-last-place | v-see
 **4.** *How many coins, from 3 to 5, does Azozon pay?*
 
 ::: details Show answer
-`yel zazozon dorelx gragel ar grazal varal.`
+`yel zazozon dorelx gragel oer grazal varal.`
 
 y-question | z-Azozon | [d-coin-x | g-three] | some.through | g-five | v-pay
 :::
 
 #### Ageben → English {#advanced-ageben-to-english}
 
-**1.** `zahelan dugavalx gruwal al gragel vayebel.`
+**1.** `zahelan dugavalx gruwal oel gragel vayebel.`
 
 ::: details Show answer
 z-Ahelan | [d-car-x | g-minus-infinity] | through | g-three | v-see
@@ -130,7 +130,7 @@ z-Ahelan | [d-car-x | g-minus-infinity] | through | g-three | v-see
 *Ahelan sees up to three cars.*
 :::
 
-**2.** `zalazun dorelx grazal am grawal varal.`
+**2.** `zalazun dorelx grazal oem grawal varal.`
 
 ::: details Show answer
 z-Alazun | [d-coin-x | g-five] | through.approx | g-plus-infinity | v-pay
@@ -138,7 +138,7 @@ z-Alazun | [d-coin-x | g-five] | through.approx | g-plus-infinity | v-pay
 *Alazun pays about five coins or more.*
 :::
 
-**3.** `zalazun dorelx gragel ar grazal varal.`
+**3.** `zalazun dorelx gragel oer grazal varal.`
 
 ::: details Show answer
 z-Alazun | [d-coin-x | g-three] | some.through | g-five | v-pay
@@ -148,10 +148,10 @@ z-Alazun | [d-coin-x | g-three] | some.through | g-five | v-pay
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Ahelan sees more than five cars.* `zahelan dugavalx grawal ul grazal vayebel.` or `zahelan dugavalx grazal al grawal vayebel.`
+**1.** *Ahelan sees more than five cars.* `zahelan dugavalx grawal uel grazal vayebel.` or `zahelan dugavalx grazal oel grawal vayebel.`
 
 ::: details Show answer
-`zahelan dugavalx grawal ul grazal vayebel.`
+`zahelan dugavalx grawal uel grazal vayebel.`
 
 z-Ahelan | [d-car-x | g-plus-infinity] | through-excluding | g-five | v-see
 
@@ -160,7 +160,7 @@ z-Ahelan | [d-car-x | g-plus-infinity] | through-excluding | g-five | v-see
 
 #### What changes {#advanced-what-changes}
 
-**1.** `zalazun dorelx gruwal al grazal varal.` / `zalazun dorelx gruwal ul grazal varal.`
+**1.** `zalazun dorelx gruwal oel grazal varal.` / `zalazun dorelx gruwal uel grazal varal.`
 
 ::: details Show answer
 z-Alazun | [d-coin-x | g-minus-infinity] | through | g-five | v-pay
