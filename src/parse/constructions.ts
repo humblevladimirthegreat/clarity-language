@@ -47,6 +47,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "sentence.leftEdge": { anchor: "speech-moves.md#vocative", summary: "turn cluster before the body" },
   "sentence.edgeBody": { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "body after a turn cluster" },
   "sentence.bodyClause": { anchor: "word-endings.md#greeting", summary: "body with no turn cluster (implied yal, or the turn's earlier act)" },
+  "sentence.fragment": { anchor: "word-endings.md#greeting", summary: "one citation phrase as the whole body: a greeting, a name, a fill answer" },
 
   "leftEdge.turnWord": { anchor: "speech-moves.md#vocative", summary: "call, greeting, or reaction at the left edge" },
   "turnWord.Vocative": { anchor: "speech-moves.md#vocative", summary: "the call or greeting name" },
@@ -367,6 +368,12 @@ export const RESOLVE_CONSTRUCTIONS: Record<
 /** Readings of a whole utterance or clause shape, or of a shared scale (`reading.*`, [construction-trace.ts](./construction-trace.ts)). */
 export const READING_CONSTRUCTIONS = {
   existence: { anchor: "predication.md#existence", summary: "verbless /z/ clause: there is …" },
+  unsaidEvent: {
+    anchor: "predication.md#unsaid-event",
+    summary: "verbless clause with a /d/: something happened to it (with a /z/, the /z/ did it), the event unsaid",
+    reader:
+      "A sentence with a `d-` noun and no `v-` verb leaves the event unsaid: `d-dog` = *Something happened to a dog*; `z-X | d-Y` = *X did something to Y*. Right after a question with a `d-wh` blank, it simply names the answer.",
+  },
   kind: { anchor: "universals-domains.md#kind-reference", summary: "zuan + kind: the kind itself, not its members" },
   amountScale: { anchor: "comparative-arity.md#amount-scale", summary: "digitless gral after a rank join: how many" },
   frequencyScale: { anchor: "comparative-arity.md#frequency-scale", summary: "digitless hral after a rank join: how often" },
@@ -842,7 +849,9 @@ export const REJECTIONS = {
   standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is `blarl` after a listed hinge, a clues / pattern channel, like (`hewem`), or an /h/ hooked join" },
   standInHostUndo: { anchor: "stand-in-vowels.md#stand-in", summary: "burl follows only the so-that hinge thovam or the if hinge thohem" },
   hingeStack: { anchor: "iff-fault.md#only-because", summary: "hinge stacks are `theboram thurugum` and `hezuvem thadoram`" },
-  objectNeedsVerb: { anchor: "predication.md#existence", summary: "an object /d/ needs a verb" },
+  citationInClause: { anchor: "questions.md#fill-ask", summary: "a word with no role letter fills no slot, so it is never part of a clause; it stands only as a sentence of its own (`azozon.`)" },
+  citationTurn: { anchor: "questions.md#fill-ask", summary: "a reply turn of one citation opens with the statement act only (`yal azozon.`)" },
+  citationFragmentOnePhrase: { anchor: "questions.md#fill-ask", summary: "a bare answer or fragment is one noun phrase (`azozon.`, `alon golowon.`); for more, keep the letters (`zazozon zahelan zal.`)" },
   stanceNumber: { anchor: "number-roles.md#number-as-stance-by-marker", summary: "a stance number takes + (likelihood), _ (source) or # (Nth-hand); th- with digits and th#- are not used" },
   handDepth: { anchor: "evidentiality.md#hand-depth", summary: "th#N counts the hands between the event and you, from 2 (th#2 second-hand, a secondary source); first-hand is a channel word" },
   handDepthChannel: { anchor: "evidentiality.md#hand-depth", summary: "th#N counts hands between the event and you, so LIVE and MEMORY (first-hand channels) cannot take it" },

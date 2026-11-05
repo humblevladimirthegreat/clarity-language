@@ -86,9 +86,29 @@ The same holds with a `/ɡ/` word after the noun, when the noun is new: a common
 
 With a name or a resumed noun, the listener already knows the thing, so the `/ɡ/` word is a [property](#classification-property): `zazozon gamahum.` is *Azozon is challenging*, and `zodozer gelazem.` is *The dog is big*.
 
-An object (`/d/`) needs a verb, so a noun plus a `/d/` word with no verb is not a sentence.
-
 **Compare with:** `zodozel vowurol.` says what the dog does. `zazozon godozel.` puts Azozon in a kind.
+
+### Something happened (a lone object) {#unsaid-event}
+
+An object (`/d/`) with no verb says that **something happened** to it, without saying what. The event is left unsaid.
+
+> `dodozel.`
+>
+> d-dog
+>
+> "Something happened to a dog."
+
+Add a `/z/` noun to say who did it. The event is still unsaid.
+
+> `zazozon dalazun.`
+>
+> z-Azozon | d-Alazun
+>
+> "Azozon did something to Alazun."
+
+Use it when the listener already knows the event, or when what happened does not matter yet.
+
+**Compare with:** a lone `/z/` (`zodozel.`) says the thing is [there](#existence). A verb says what happened: `zazozon dalazun vayebel.` *Azozon sees Alazun.*
 
 ### Identity {#identity}
 
@@ -165,12 +185,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Ageben {#beginner-english-to-ageben}
 
-**1.** *Azozon is a guard.*
+**1.** *Something happened to a page.*
 
 ::: details Show answer
-`zazozon gagayul.`
+`dobonol.`
 
-z-Azozon | g-guard
+d-page
 :::
 
 **2.** *Ahelan is Japanese.*
@@ -231,12 +251,12 @@ z-Alazun | g-challenge
 *Alazun is challenging.*
 :::
 
-**3.** `zagayul gorel blalazun.`
+**3.** `zagayul dalazun.`
 
 ::: details Show answer
-z-guard | [g-IDENTITY | bl-Alazun]
+z-guard | d-Alazun
 
-*The guard is Alazun.*
+*The guard did something to Alazun.*
 :::
 
 **4.** `zebayol geruvol.`

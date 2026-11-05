@@ -411,6 +411,11 @@ export type BodyClause = {
   topicMarker?: LexWord;
   linker?: LexWord;
   clause: Clause;
+  /**
+   * A one-citation sentence (`azozon.`, `SELFn.`): its one unit is the citation phrase, which fills no slot, so its
+   * `/z/` level is only the list shape (questions.md#fill-ask).
+   */
+  fragment?: true;
   punct?: PunctKind;
 };
 
@@ -474,6 +479,19 @@ export type AskRecord = {
   inner?: LexWord[];
 };
 
+/**
+ * A reply that fills the fill-ask right before it (questions.md#fill-ask): a bare citation for one noun blank
+ * (`citation`), or a verbless sentence whose nouns keep the blanks' letters (`sameRole`: `zazozon zahelan zal.`,
+ * `dodozel.`, `zazozon dodozel.` for a fill-all).
+ */
+export type AnswerRecord = {
+  utteranceIndex: number;
+  askIndex: number;
+  form: "citation" | "sameRole";
+  /** The blanks it fills, in the question's order. */
+  blanks: LexWord[];
+};
+
 export type SharedRole =
   | "distribute"
   | "collective"
@@ -491,5 +509,7 @@ export type SharedRecord = {
 export type ResolveInfo = {
   anaphors: AnaphorBind[];
   asks: AskRecord[];
+  /** Present when a reply fills the fill-ask before it. */
+  answers?: AnswerRecord[];
   shared: SharedRecord[];
 };

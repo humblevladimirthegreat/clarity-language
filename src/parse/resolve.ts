@@ -1,5 +1,6 @@
 import type {
   AnaphorBind,
+  AnswerRecord,
   AskKind,
   AskRecord,
   BodyClause,
@@ -951,11 +952,42 @@ function buildResolve(result: ParseResult): ResolveInfo {
     question: false,
   };
   visitResult(result, resolveVisitor(ctx));
+  const answers = fillAnswers(result.utterances, ctx.asks);
   return {
     anaphors: ctx.anaphors,
     asks: ctx.asks,
+    ...(answers.length > 0 ? { answers } : {}),
     shared: ctx.shared,
   };
+}
+
+/**
+ * Tie each reply to the fill-ask right before it (questions.md#fill-ask). A bare citation fills one noun blank. A
+ * sentence with no verb fills the blanks when its nouns keep exactly the blanks' letters: existence for a `/z/` blank,
+ * a lone `/d/` for a `/d/` blank (predication.md#unsaid-event), both for a fill-all.
+ */
+function fillAnswers(utterances: Utterance[], asks: AskRecord[]): AnswerRecord[] {
+  const answers: AnswerRecord[] = [];
+  utterances.forEach((utterance, i) => {
+    const ask = asks.find((record) => record.utteranceIndex === i - 1);
+    const body = utterance.bodies[0];
+    const act = actWord(utterance.left);
+    if (!ask || ask.kind !== "fillAsk" || !body || body.linker || (act && act.raw !== "yal")) return;
+    const blanks = ask.gaps;
+    const nounBlank = (word: LexWord) => word.pos === "z" || word.pos === "d" || word.pos === "b";
+    if (body.fragment) {
+      if (blanks.length === 1 && nounBlank(blanks[0]!)) answers.push({ utteranceIndex: i, askIndex: i - 1, form: "citation", blanks });
+      return;
+    }
+    const units = body.clause.units;
+    if (units.some((unit) => unit.kind === "vp") || !blanks.every(nounBlank)) return;
+    const levels = units.flatMap((unit) => (unit.kind === "np" ? [unit.coord.level] : []));
+    const wanted = blanks.map((blank) => blank.pos);
+    if (levels.length === wanted.length && wanted.every((pos) => levels.includes(pos as NpCoord["level"]))) {
+      answers.push({ utteranceIndex: i, askIndex: i - 1, form: "sameRole", blanks });
+    }
+  });
+  return answers;
 }
 
 /** Stage 4: annotate anaphor binds, fill-ask vs yes/no, and SHARED `/ɡ/` readings. */

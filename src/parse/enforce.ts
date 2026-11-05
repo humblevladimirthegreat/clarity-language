@@ -568,16 +568,6 @@ function enforceHostedStandIn(units: Unit[], index: number, unit: HUnit, tables:
   }
 }
 
-function hasVerb(units: Unit[]): boolean {
-  return units.some((unit) => unit.kind === "vp" || (unit.kind === "island" && hasVerb(unit.island.units)));
-}
-
-/** `/z/` + `/d/` with no `/v/` (predication.md § existence); verbless fragments without a subject stay valid. */
-function enforceVerbless(units: Unit[]): void {
-  const has = (level: "z" | "d") => units.some((unit) => unit.kind === "np" && unit.coord.level === level);
-  if (has("z") && has("d") && !hasVerb(units)) throw new ConstructionError("objectNeedsVerb", "/z/ and /d/ with no /v/");
-}
-
 /** `+` / `-` of a signed offset in a hosted `/b/` (digitless `brul`, or a measure amount); zero has no sign. */
 function offsetSign(bound: LexWord | undefined, amount?: LexWord): "+" | "-" | undefined {
   const number = [bound, amount].find((w) => w?.family.kind === "number");
@@ -858,9 +848,6 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
         case "utterance":
           if (node.utterance.left.hook) enforceHookSlot(node.utterance.left.hook, "discourse");
           return;
-        case "body":
-          enforceVerbless(node.body.clause.units);
-          return;
         case "clause":
           enforceUnitList(node.clause.units, tables);
           enforceDependentContent(node.clause);
@@ -978,6 +965,9 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
       if (body.linker && body.clause.units.length === 0 && topicEffect(body.linker) === "none") {
         throw new ConstructionError("linkerAlone", body.linker.raw);
       }
+      // A reply turn of one citation opens with the statement act (`yal azozon.`, questions.md#fill-ask).
+      const act = actWord(left);
+      if (body.fragment && act && act.raw !== "yal") throw new ConstructionError("citationTurn", act.raw);
       enforceOffsets(body.clause.units, directive);
       enforceHandDepthChannel(body.clause.units);
     }
@@ -1175,6 +1165,7 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
     else if (isAny(token, [Period, QMark, Bang]) && depth > 0) throw new ConstructionError("islandUnclosed", "{");
   }
   if (depth > 0) throw new ConstructionError("islandUnclosed", "{");
+  enforceCitationSentences(tokens);
   // Every other host takes the `/b/` or stand-in right after it, so a failure there is an amount or a factor.
   if (at > 0 && isAny(tokens[at]!, [HostedB, HostedOdo])) {
     throw new ConstructionError("slotlessHost", `${tokens[at - 1]!.image} ${tokens[at]!.image}`);
@@ -1237,6 +1228,27 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
   const TURN_WORDS = [Force, Polar, Vocative, Interjection];
   if (at > 0 && isAny(tokens[at]!, TURN_WORDS) && !isAny(tokens[at - 1]!, TURN_WORDS)) {
     throw new ConstructionError("turnMidSentence", `${tokens[at - 1]!.image} ${tokens[at]!.image}`);
+  }
+}
+
+/**
+ * A word with no role letter fills no slot, so it stands only as a whole sentence of one phrase: the citation and what
+ * describes it (questions.md#fill-ask). More than one bare phrase, or a bare word among lettered ones, has no reading.
+ */
+function enforceCitationSentences(tokens: IToken[]): void {
+  const describing = [G, W, HostedB, Tone];
+  let start = 0;
+  for (let end = 0; end <= tokens.length; end += 1) {
+    if (end < tokens.length && !tokenMatcher(tokens[end]!, Period)) continue;
+    const sentence = tokens.slice(start, end);
+    start = end + 1;
+    const citations = sentence.filter((token) => tokenMatcher(token, Citation));
+    if (citations.length === 0) continue;
+    // An act word may open a reply turn of one citation (`yal azozon.`).
+    while (sentence[0] && isAny(sentence[0], [Force, Tone])) sentence.shift();
+    const run = sentence.map((token) => token.image).join(" ");
+    if (citations.length > 1) throw new ConstructionError("citationFragmentOnePhrase", run);
+    if (!sentence.every((token) => isAny(token, [Citation, ...describing]))) throw new ConstructionError("citationInClause", run);
   }
 }
 

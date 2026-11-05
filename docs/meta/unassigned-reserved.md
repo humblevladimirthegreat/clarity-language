@@ -278,7 +278,7 @@ Source: [dependents.md](/stand-in-vowels#stand-in)
 Source: [dependents.md](/sentence-linkers#sentence-linkers)
 
 - **closed (D-32):** a linker and a topic word in one sentence (`xezem xazozon …`).
-- **open:** a linker with no clause after it (`xezem.`). A linker joins the last sentence to the one it starts, so alone it links to nothing; *however* as a reply of its own has not come up. The clearing linkers `xevewom` and `xavedam` stand alone, since clearing the topic is a move of its own. Parser: `linkerAlone`.
+- **open:** a linker with no clause after it (`xezem.`, a numbered point `xrodol.`). A linker joins the last sentence to the one it starts, so alone it links to nothing; *however* as a reply of its own has not come up. The clearing linkers `xevewom` and `xavedam` stand alone, since clearing the topic is a move of its own. Parser: `linkerAlone`.
 - **open:** firm **-l** on *meanwhile* (`xugorol`), *next* (`xevewol`), and *by the way* (`xavedal`). Not guessable: firmness fits a link that can hold more or less surely (*it follows that*, *nevertheless*, *on the contrary*), and *meanwhile*, *next* and *by the way* claim no such link. The parser rejects them.
 
 ## Turn words (`/y/`)
@@ -327,6 +327,9 @@ Source: [clause.md](/clause)
 - **closed (D-46):** a `bl-` person after WANT or PLAN (`thalom blalazun`, `thagom blalazun`), and any `bl-` word after DECISION (`thogem blalazun`, `thogem blral`). Someone else's want, plan or decision goes through a holder. Parser: `intentionHost`.
 - **closed (D-48):** `/h/` on the map or check root (`hagom`, `hogem`, any ending but **-n**). Parser: `retiredIntentionRoot`.
 - **closed (D-64):** `/h/` on the goal root with **-m** (`hovam`), as the purpose hinge or anything else, and a letterless same-role `ovam`. Purpose is `thovam`. Parser: `retiredPurposeHinge`.
+- **closed (D-65):** a word with no role letter inside a clause (`zazozon vowurol azozol.`). A citation stands only as a sentence of its own, or as a reply turn after the statement act (`yal azozon.`). Parser: `citationInClause`.
+- **open:** a citation after any other act word (`yel azozon.` as an echo *Azozon?*, `yul azozon.`), or after a call (`yalazun azozon.`). No page teaches a reading, and a yes/no question or a command already keeps the letter (`yel zazozon.`). Parser: `citationTurn`, `citationInClause`.
+- **closed (D-65):** a bare fragment of more than one phrase (`azozon ewem ahelan.`, `azozon ahelan al.`, `azozon odozel.`). One citation with its adjectives, or a full name, is one phrase. Parser: `citationFragmentOnePhrase`.
 
 ## Vowel series and tone marks
 

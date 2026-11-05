@@ -60,8 +60,8 @@ describe("sameReading", () => {
   });
 
   it("reports which side does not parse", () => {
-    const compare = compareReadings("zahelan dazozon vayebel.", "zahelan dazozon.", tables);
+    const compare = compareReadings("zahelan dazozon vayebel.", "zahelan vayebel azozon.", tables);
     assert.equal(compare.same, false);
-    assert.match(compare.error ?? "", /^zahelan dazozon\.:/);
+    assert.match(compare.error ?? "", /^zahelan vayebel azozon\.:/);
   });
 });

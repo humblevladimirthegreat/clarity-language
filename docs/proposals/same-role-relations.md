@@ -1,6 +1,6 @@
 # Proposal: Same-role relation words (closed citation list)
 
-**Status:** PROPOSED, ready to implement. Session 1 can start now, and Session 2 follows it. Workstreams done: none.
+**Status:** PROPOSED, in progress. Session 1 done; Session 2 is next. Workstreams done: 0a, 1.
 
 User decisions (2026-11-05):
 - It is a **closed list**, never any lexicon word.
@@ -9,6 +9,7 @@ User decisions (2026-11-05):
 - A reaches the **nearest same-role phrase**.
 - B may be a **fill-ask blank**. The blank comes first, as with every fill-ask.
 - A lone `/d/` (`dodozel.`) means *something unspecified happened to the dog*. It is a valid answer when the blank was a `/d/`.
+- A verbless `/z/` + `/d/` (`zazozon dodozel.`) also leaves the event unsaid: *Azozon did something to the dog*. It answers a fill-all (`yel zar dar vayebel.`), replacing the bare `azozon odozel.` (decided after the 0a baseline found that example).
 - An answer bigger than one noun phrase is a **sentence that keeps only the blank's role**, with every letter: existence for a `/z/` blank, the lone `/d/` for a `/d/` blank.
 - Every listed word takes both **-l** and **-m**, with no per-row exceptions.
 - The overlap with the order joins (`zaol`) is kept, with a Compare-with line.
@@ -23,7 +24,7 @@ User decisions (2026-11-05):
 - **Part 1:**
   - A bare citation in a clause body loses its untaught reading.
   - A bare fill answer must be one noun phrase. Bare fragments of more than one phrase are rejected, except a full name.
-  - A lone `/d/` gains the reading *something happened to it*.
+  - A lone `/d/` gains the reading *something happened to it*, and a verbless `/z/` + `/d/` the reading *z did something to it*.
   - A sentence that keeps only the blank's role (existence, or the lone `/d/`) is taught as an answer.
 - **Part 2:**
   - 8 same-role citations (four words, each with **-l** and **-m**), including the fronted word + blank in a fill-ask.
@@ -83,7 +84,7 @@ A fill answer that drops its role letter is **one noun phrase**: one citation, w
     - For a `/d/` blank, use the lone `/d/`: `dodozel dalazun dal.` answers *Whom does Azozon see?*
     - A relation works the same way: `zazozon ewem zahelan.` answers *Who walks?* with *Azozon, like Ahelan.*
   - The answer section on [questions.md](../grammar/beginner/questions.md#fill-ask) gains one line: for one noun, use the bare citation; for more, keep the blank's letter.
-- **A lone `/d/` is a sentence: something happened to it.** `dodozel.` means *Something happened to the dog*, with the event left unsaid. It sits beside [existence](../grammar/beginner/predication.md#existence): a lone `/z/` says the thing is there, and a lone `/d/` says something befell it. A noun plus a `/d/` word with no verb (`zazozon dalazun.`) still has no reading.
+- **A lone `/d/` is a sentence: something happened to it.** `dodozel.` means *Something happened to the dog*, with the event left unsaid. It sits beside [existence](../grammar/beginner/predication.md#existence): a lone `/z/` says the thing is there, and a lone `/d/` says something befell it. A `/z/` added to it names who did it: `zazozon dalazun.` *Azozon did something to Alazun*, with the event unsaid again.
   - As a reply to a `/d/` blank, the lone `/d/` is a valid answer. The dog is what the event happened to, and the question already named the event.
 
     > `yel dar zazozon vayebel.`
@@ -95,6 +96,7 @@ A fill answer that drops its role letter is **one noun phrase**: one citation, w
     > "The dog."
 
   - The bare `odozel.` answers the same question.
+  - A [fill-all](../grammar/beginner/questions.md#fill-all) answer keeps every blank's letter: `zazozon dodozel.` answers `yel zar dar vayebel.` *Who sees what?*
 - **Why not drop letters more widely:** dropping the letter erases the lines the grammar draws.
   - The join `zal` becomes `al`, the vowel hook.
   - `hewem` becomes `ewem`, the same-role word in Part 2.
@@ -310,7 +312,7 @@ The main agent runs it in its own context: a few pages and one cluster of change
 |------|------|
 | 1.1 | **One-citation fragment.** Move `citation` out of the clause units into an utterance-level fragment rule: one citation phrase (with `/ɡ/` words, so a full name still parses), with no role level. The resolver ties it to the open blank. Keep greetings and conversation-length bids parsing as they do now. |
 | 1.2 | **Rejections.** Retire `citationFallback` in clause bodies, and reject bare fragments of more than one phrase. Each gets a new construction. A full name is not rejected. Add **closed** rows to unassigned-reserved.md, and a design-decisions entry whose reason is the [why not drop letters more widely](#part-1-a-citation-answer-is-one-noun-phrase) bullet. |
-| 1.3 | **Lone `/d/`.** Give a lone `/d/` the reading *something happened to it*. Let the resolver accept a lone-role sentence (existence for `/z/`, lone `/d/` for `/d/`) as the answer to a blank in the same role. Teach it as a new H3 after *Existence* on predication.md, with a Compare-with line to the rejected `zazozon dalazun.`. Check the [sitting length](../meta/drill-generation.md#sitting-length) cap. |
+| 1.3 | **Lone `/d/`.** Give a lone `/d/` the reading *something happened to it*. Let the resolver accept a lone-role sentence (existence for `/z/`, lone `/d/` for `/d/`) as the answer to a blank in the same role. Teach it as a new H3 after *Existence* on predication.md, with the verbless `/z/` + `/d/` (`zazozon dalazun.`) in the same H3; retire the `objectNeedsVerb` rejection. On questions.md, the fill-all answer becomes `zazozon dodozel.`. Check the [sitting length](../meta/drill-generation.md#sitting-length) cap. |
 | 1.4 | **Answer pages.** On questions.md, the fill-answer paragraph says: a bare citation for one noun phrase; for more, a sentence that keeps the blank's letter (`zazozon zahelan zal.`, `dodozel dalazun dal.`). On fill-ask-jobs.md, "as a citation" becomes "as a short answer" wherever the answer keeps a letter. Update any recipe row that shows a fill answer. |
 | 1.5 | **Coverage.** If the build's drill-coverage lint flags questions.md or predication.md, a **fresh** subagent adds 1–3 items to that page's existing checkpoint, under [drill-generation](../meta/drill-generation.md#execute). Otherwise skip this item. |
 

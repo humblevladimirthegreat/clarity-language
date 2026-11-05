@@ -5,7 +5,7 @@ import { POLAR_GROUP, RESTRICTOR_GROUP, type JoinSeries } from "./constructions.
 import { actWord, isDigitless, stackKind } from "./series.js";
 import { isGreeting, isKindReference, isScaleShared, visitResult, vpUnitLists } from "./ast-walk.js";
 import { numberMarkerIdentity } from "./resolve.js";
-import type { Clause, LexWord, NumberStem, ParseResult, ResolveInfo } from "./types.js";
+import type { Clause, LexWord, NumberStem, ParseResult, ResolveInfo, Unit } from "./types.js";
 
 /** `overlay.<sense_form>.<pos>` for one lexicon-overlays.csv row. */
 export function overlayConstructionId(overlay: { senseForm: string; pos: string }): string {
@@ -290,6 +290,12 @@ function isExistence(clause: Clause): boolean {
   );
 }
 
+/** A verbless clause with a `/d/`: something happened to it, and a `/z/` did it (predication.md#unsaid-event). */
+function isUnsaidEvent(clause: Clause): boolean {
+  const hasVerb = (units: Unit[]): boolean => units.some((unit) => unit.kind === "vp" || (unit.kind === "island" && hasVerb(unit.island.units)));
+  return !hasVerb(clause.units) && clause.units.some((unit) => unit.kind === "np" && unit.coord.level === "d");
+}
+
 /** Collect `reading.*` IDs from utterance and clause shapes and shared scales, and `rangeMember.*` from range hooks on -r. */
 export function addReadingConstructions(result: ParseResult, out: Set<string>): void {
   const rangeMembers = new Set<string>();
@@ -300,6 +306,7 @@ export function addReadingConstructions(result: ParseResult, out: Set<string>): 
     for (const body of utterance.bodies) {
       if (isGreeting(body.clause)) out.add("reading.greeting");
       else if (isExistence(body.clause)) out.add("reading.existence");
+      else if (isUnsaidEvent(body.clause)) out.add("reading.unsaidEvent");
     }
   }
   visitResult(result, {

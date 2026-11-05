@@ -210,7 +210,7 @@ export const FenceBar = wordToken("FenceBar", [Bar]);
 export const TagZ = wordToken("TagZ");
 export const TagD = wordToken("TagD");
 export const TagB = wordToken("TagB");
-/** A word with no role letter (a citation form, or a bare `/x/` number): it names, filling no slot (word-endings.md#citation-forms). */
+/** A word with no role letter (a citation form): it names, filling no slot, so it stands only as a sentence of its own (word-endings.md#citation-forms). */
 export const Citation = wordToken("Citation");
 /** A forward stand-in, by the slot it fills: a noun-phrase head (`zarl`, `darl`, `barl`) or another slot. */
 export const Odo = wordToken("Odo");
@@ -386,8 +386,9 @@ function isPolarWord(word: LexWord): boolean {
   return word.family.series.length > 1 && word.ending !== "n";
 }
 
+/** An `/x/` linker: a content root, a topic compound, or a numbered point (`xrodol` *point 2*, number-roles.md#number-as-discourse-marker-by-marker). */
 function isLinkerWord(word: LexWord): boolean {
-  return word.pos === "x" && (word.family.kind === "content" || isTopicCompound(word));
+  return word.pos === "x" && (word.family.kind === "content" || word.family.kind === "number" || isTopicCompound(word));
 }
 
 /** Which `classifyTokenBranch` rule assigned a word its token class (construction registry key). */

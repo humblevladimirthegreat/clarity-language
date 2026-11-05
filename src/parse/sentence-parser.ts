@@ -372,7 +372,13 @@ class AgebenSentenceParser extends CstParser {
       {
         ALT: () => {
           this.SUBRULE(this.leftEdgeForce, { LABEL: "leftEdge" });
-          this.OPTION(() => this.SUBRULE(this.bodyClause, { LABEL: "edgeBody" }));
+          // A reply turn may be one citation phrase (`yal azozon.`, questions.md#fill-ask).
+          this.OPTION(() =>
+            this.OR6([
+              { ALT: () => this.SUBRULE(this.bodyClause, { LABEL: "edgeBody" }) },
+              { ALT: () => this.SUBRULE2(this.citation, { LABEL: "fragment" }) },
+            ]),
+          );
         },
       },
       {
@@ -389,6 +395,8 @@ class AgebenSentenceParser extends CstParser {
       },
       { ALT: () => this.SUBRULE5(this.leftEdgeTag, { LABEL: "leftEdge" }) },
       { ALT: () => this.SUBRULE4(this.bodyClauseNoGlue, { LABEL: "bodyClause" }) },
+      // One citation phrase is a sentence of its own: a fill answer, a greeting, a name (questions.md#fill-ask).
+      { ALT: () => this.SUBRULE(this.citation, { LABEL: "fragment" }) },
     ]);
   });
 
@@ -699,7 +707,6 @@ class AgebenSentenceParser extends CstParser {
       ...np("z"),
       ...np("d"),
       ...np("b"),
-      { rule: this.citation, label: "zCoord", state: "start", end: "open", kind: "start" },
       { rule: this.vpCoord, label: "vpCoord", state: "v", end: "closed", kind: "v" },
       { rule: this.vpCoordOpen, label: "vpCoord", state: "v", end: "open", kind: "v" },
       { rule: this.vpVerb, label: "vpCoord", state: "v", end: "closed", kind: "v" },
@@ -757,7 +764,10 @@ class AgebenSentenceParser extends CstParser {
     this.CONSUME(IslandClose);
   });
 
-  /** A word with no role letter, with what describes it (`ohun galuden`, word-endings.md#citation-forms). */
+  /**
+   * A word with no role letter, with what describes it (`ohun galuden`, word-endings.md#citation-forms). It fills no
+   * slot, so it is never a clause unit: it stands as a whole sentence ({@link sentence}).
+   */
   public citation = this.RULE("citation", () => {
     this.npPackageBody([{ type: Citation, label: "Citation" }], { gl: this.glPackageCitation });
   });
@@ -2859,6 +2869,15 @@ function buildBodyClause(cst: CstNode, trailingPunct?: IToken): BodyClause {
   };
 }
 
+/** A one-citation sentence: its phrase is the body's only unit, a noun list with no join ({@link BodyClause.fragment}). */
+function buildFragment(cst: CstNode, trailingPunct?: IToken): BodyClause {
+  return {
+    fragment: true,
+    clause: { units: [{ kind: "np", coord: buildNpCoord(cst) }] },
+    punct: trailingPunct ? punctFromToken(trailingPunct) : undefined,
+  };
+}
+
 /** The tokens under a CST node, in no particular order. */
 function cstTokens(cst: CstNode): IToken[] {
   return Object.values(cst.children).flatMap((kids) => kids.flatMap((kid) => ("image" in kid ? [kid] : cstTokens(kid))));
@@ -2882,8 +2901,11 @@ function buildUtterances(cst: CstNode, tokens: IToken[]): Utterance[] {
       utterances.push({ left: buildLeftEdge(edge), bodies: [] });
     }
     const body = childNodes(sentence.cst, "edgeBody")[0] ?? childNodes(sentence.cst, "bodyClause")[0];
+    const fragment = childNodes(sentence.cst, "fragment")[0];
     const next = tokens[sentence.end + 1];
-    if (body) utterances.at(-1)!.bodies.push(buildBodyClause(body, next && tokenIs(next, Period) ? next : undefined));
+    const punct = next && tokenIs(next, Period) ? next : undefined;
+    if (body) utterances.at(-1)!.bodies.push(buildBodyClause(body, punct));
+    if (fragment) utterances.at(-1)!.bodies.push(buildFragment(fragment, punct));
   }
   return utterances;
 }

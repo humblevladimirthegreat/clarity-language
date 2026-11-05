@@ -535,7 +535,7 @@ No note: *as I remember* already says whose memory it is. Do not render the over
 
 > `xrowul zobevam grobal. zuwenx thodethur.`
 >
-> x-starting-with | [z-problem | g-1st] . z-speaker-x | th-pleasure-unmet-passing
+> x-starting-with | z-problem | g-1st . z-speaker-x | th-pleasure-unmet-passing
 >
 > "First problem: we're not enjoying this."
 

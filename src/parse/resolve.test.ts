@@ -535,3 +535,23 @@ describe("resolve — hooked-join point-back (hooked-joins.md#hooked-joins-point
     assert.equal(landmarkOf("zazozon vowurol huxal blovulul. zawan vebal hurxal."), "blovulul");
   });
 });
+
+describe("resolve — fill answers (questions.md#fill-ask)", () => {
+  const answersOf = (text: string) => (resolveOf(text).answers ?? []).map((a) => `${a.form}:${a.blanks.map((b) => b.raw).join(",")}`);
+
+  it("ties a bare citation to one noun blank", () => {
+    assert.deepEqual(answersOf("yel zar vowurol. yal azozon."), ["citation:zar"]);
+  });
+
+  it("ties a verbless sentence that keeps the blanks' letters (predication.md#unsaid-event)", () => {
+    assert.deepEqual(answersOf("yel zar vowurol. yal zazozon zahelan zal."), ["sameRole:zar"]);
+    assert.deepEqual(answersOf("yel dar zazozon vayebel. yal dodozel."), ["sameRole:dar"]);
+    assert.deepEqual(answersOf("yel zar dar vayebel. yal zazozon dodozel."), ["sameRole:zar,dar"]);
+  });
+
+  it("ties nothing when the letters do not match the blanks", () => {
+    assert.deepEqual(answersOf("yel zar dar vayebel. yal azozon."), []);
+    assert.deepEqual(answersOf("yel dar zazozon vayebel. yal zodozel."), []);
+    assert.deepEqual(answersOf("yel zar vowurol. yal zazozon vowurol."), []);
+  });
+});

@@ -76,11 +76,29 @@ A blank that completes another word comes first together with that word: *like w
 
 In the word-by-word line under an example, a fill-ask blank shows as *wh*, short for whichever question word fits the slot (*who*, *what*, *where*, and so on).
 
-If the reply is just the fill, not a full sentence, write it as a [citation](word-endings.md#citation-forms): root + ending, no role letter. Leave no join **-r** in the answer; that **-r** was the blank. A full-sentence answer uses ordinary role letters.
+If the reply is just one noun, not a full sentence, write it as a [citation](word-endings.md#citation-forms): root + ending, no role letter, with any adjectives that describe it. Leave no join **-r** in the answer; that **-r** was the blank. A full-sentence answer uses ordinary role letters.
 
 > `azozon.`
 >
 > "Azozon."
+
+Written after the question, the reply is a new [turn](speech-moves.md#turn-y), so it opens with `yal`: `yel zar vowurol. yal azozon.`
+
+A reply of more than one noun keeps its letters. It is a sentence with only the blank's role in it: [existence](predication.md#existence) for a `/z/` blank, a [lone object](predication.md#unsaid-event) for a `/d/` blank.
+
+> `zazozon zahelan zal.`
+>
+> [z-Azozon | z-Ahelan | z-and]
+>
+> "Azozon and Ahelan."
+
+> `dodozel dalazun dal.`
+>
+> [d-dog | d-Alazun | d-and]
+>
+> "A dog and Alazun."
+
+Without the letters, two bare words could be a list, a name, or two separate answers.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -122,7 +140,7 @@ The sentence still ends in a period.
 
 ### Fill-all {#fill-all}
 
-To ask *who sees what?*, put join **-r** in every slot you want filled, and put all the blanks first. Each of those **-r** words is a blank, and the answer is expected to **fill all** of them, in the order the question gave them.
+To ask *who sees what?*, put join **-r** in every slot you want filled, and put all the blanks first. Each of those **-r** words is a blank, and the answer is expected to **fill all** of them, in the order the question gave them. Each filler keeps its blank's letter, so the answer is a [lone object](predication.md#unsaid-event) with its doer.
 
 > `yel zar dar vayebel.`
 >
@@ -130,9 +148,9 @@ To ask *who sees what?*, put join **-r** in every slot you want filled, and put 
 >
 > "Who sees what?"
 
-> `azozon odozel.`
+> `zazozon dodozel.`
 >
-> Azozon | dog
+> z-Azozon | d-dog
 >
 > "Azozon, a dog."
 

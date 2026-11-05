@@ -6,7 +6,7 @@ band: beginner
 
 ### What kind? {#what-kind}
 
-To ask what something is **like** (*What color is it?*, *What kind of dog?*), put the blank on an adjective: **`gar`**. Answer with the adjective as a [citation](word-endings.md#citation-forms).
+To ask what something is **like** (*What color is it?*, *What kind of dog?*), put the blank on an adjective: **`gar`**. Answer with the adjective alone. It keeps its letter: only a [one-noun answer](questions.md#fill-ask) drops it.
 
 > `yel gar zodozel.`
 >
@@ -67,7 +67,7 @@ To ask *where?*, write an [extra-noun hook](hooks.md#extra-noun) (a short word l
 | **`el ber`** | *Anywhere?* |
 | **`el bur`** | *Where else?* |
 
-Answer with the hook and the landmark, as a [citation](word-endings.md#citation-forms): `el bohehal.` ("At the house.").
+Answer with the hook and the landmark, keeping the `/b/` letter: `el bohehal.` ("At the house.").
 
 **Compare with:** *when?* is **`har`** on `/h/`. Occasions are times or cases, so a place never goes there.
 
@@ -81,7 +81,7 @@ To ask *whose?*, write the hook **`om`** (*used by*) after the thing, then the b
 >
 > "Whose dog walks?"
 
-Answer with the hook and the user, as a [citation](word-endings.md#citation-forms): `om bazozon.` ("Azozon's.").
+Answer with the hook and the user, keeping the `/b/` letter: `om bazozon.` ("Azozon's.").
 
 ### How? {#how}
 

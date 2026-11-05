@@ -299,7 +299,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
   it("numbered alternative + unmet pleasure", () => {
     expectLine(
       "xrowul zobevam grobal. zuwenx thodethur.",
-      "x-starting-with | [z-problem | g-1st] . z-speaker-x | th-pleasure-unmet-passing",
+      "x-starting-with | z-problem | g-1st . z-speaker-x | th-pleasure-unmet-passing",
     );
   });
 
@@ -612,7 +612,7 @@ describe("morphGlossLine — extra fixtures", () => {
 describe("morphGlossLine — th stance letter", () => {
   it("glosses stance moods, /w/ on th, and th hinges with stand-ins", () => {
     expectLine("thomam zazozon vehohel.", "th-MAY | z-Azozon | v-sit");
-    expectLine("zazozon wuzemel thugem vayebel ayebelul.", "z-Azozon | [w-sleepy | th-LIVE] | v-see | eye-leave");
+    expectLine("zazozon wuzemel thugem vayebel.", "z-Azozon | [w-sleepy | th-LIVE] | v-see");
     expectLine("thahum blarl zazozon vehohel.", "[th-because | bl-that-clause] | z-Azozon | v-sit");
     expectLine("theyom blarl zazozon vehohel.", "[th-CLUES | bl-that-clause] | z-Azozon | v-sit");
     expectLine("thanal blarl zazozon vehohel.", "[th-DEDUCED.strong | bl-that-clause] | z-Azozon | v-sit");
