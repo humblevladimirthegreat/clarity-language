@@ -32,9 +32,58 @@ export type WordSense = {
   row?: true;
 };
 
-export type Verified = { english: string; ageben: string; gloss?: string; error?: string; unknown: UnknownWord[]; words?: WordSense[] };
+export type Verified = {
+  english: string;
+  ageben: string;
+  gloss?: string;
+  error?: string;
+  unknown: UnknownWord[];
+  words?: WordSense[];
+  /** The English gives someone else's stance or feeling, and a draft sentence says it with no holder. */
+  missingHolder?: string[];
+};
 
-type WordNode = { raw: string; ending?: string; family: { kind: string; roots?: string[] }; rootGloss?: { concrete?: string; abstract?: string } };
+type WordNode = { raw: string; ending?: string; family: { kind: string; roots?: string[]; xFamily?: string }; rootGloss?: { concrete?: string; abstract?: string } };
+
+/** Overlay kinds whose word alone is the speaker's own stance (holder.md#holder). */
+const OWN_STANCE_KINDS = new Set(["want", "plan", "decision"]);
+
+/** Roots of the WANT, PLAN and DECISION overlays, from the lexicon (`alom` → `alo`). */
+function ownStanceRoots(data: HelperData): Set<string> {
+  const out = new Set<string>();
+  for (const list of data.lexicon.values()) {
+    for (const s of list) if (s.tier === "overlay" && s.pos === "th" && s.overlayKind && OWN_STANCE_KINDS.has(s.overlayKind)) out.add(s.form.slice(0, -1));
+  }
+  return out;
+}
+
+/** Every word node under `node`. */
+function wordNodes(node: unknown, out: WordNode[] = []): WordNode[] {
+  if (Array.isArray(node)) node.forEach((n) => wordNodes(n, out));
+  else if (node && typeof node === "object") {
+    const word = node as Partial<WordNode>;
+    if (typeof word.raw === "string" && word.family) out.push(word as WordNode);
+    for (const value of Object.values(node)) if (value && typeof value === "object") wordNodes(value, out);
+  }
+  return out;
+}
+
+/**
+ * Draft sentences that say a stance with no holder, when the English gives someone else's
+ * ({@link Slot.otherStance}): a WANT, PLAN or DECISION word, or a sake (feeling) word, and no
+ * holder seam in that sentence. Each is named by its stance word.
+ */
+function missingHolders(tree: unknown, data: HelperData, analysis: Analysis): string[] {
+  if (!analysis.clauses.some((c) => c.slots.some((s) => s.otherStance))) return [];
+  const stances = ownStanceRoots(data);
+  const bodies = ((tree as { utterances?: { bodies?: unknown[] }[] }).utterances ?? []).flatMap((u) => u.bodies ?? []);
+  return bodies.flatMap((body) => {
+    const words = wordNodes(body);
+    if (words.some((w) => w.family.kind === "x" && w.family.xFamily === "holder")) return [];
+    const bare = words.find((w) => (w.family.kind === "content" && w.raw.startsWith("th") && w.family.roots?.length === 1 && stances.has(w.family.roots[0]!)) || (w.family.kind === "x" && w.family.xFamily === "sake"));
+    return bare ? [bare.raw] : [];
+  });
+}
 
 /** Every one-root content word in the parse tree, in sentence order. */
 function contentWords(tree: unknown, ageben: string): WordNode[] {
@@ -131,7 +180,8 @@ export function verifyDraft(english: string, ageben: string, tables: ClassifyTab
     const unknown = unknownWords(tree);
     const suggested = data ? suggestedRoots(data, english, analysis) : undefined;
     const words = contentWords(tree, ageben).flatMap((w) => senseOf(w, suggested) ?? []);
-    return { english, ageben, gloss: morphGlossLine(ageben, tables), unknown, ...(data ? { words } : {}) };
+    const missing = data ? missingHolders(tree, data, analysis ?? analyzeEnglish(data, english)) : [];
+    return { english, ageben, gloss: morphGlossLine(ageben, tables), unknown, ...(data ? { words } : {}), ...(missing.length ? { missingHolder: missing } : {}) };
   } catch (error) {
     return { english, ageben, error: error instanceof Error ? error.message : String(error), unknown: [] };
   }
@@ -170,9 +220,10 @@ export function verifiedLines(v: Verified): string[] {
     const width = Math.max(...v.words.map((w) => w.raw.length));
     out.push("senses:", ...v.words.map((w) => wordLine(w, width)));
   }
-  const checks = v.words?.filter((w) => w.check).length ?? 0;
+  for (const raw of v.missingHolder ?? []) out.push(`someone else's stance needs a holder: \`${raw}\` alone is yours (holder.md#holder)`);
+  const checks = (v.words?.filter((w) => w.check).length ?? 0) + (v.missingHolder?.length ?? 0);
   if (!v.error && v.unknown.length === 0) {
-    out.push(`ok: parses, every word is in the lexicon${checks ? `; ${checks} sense${checks === 1 ? "" : "s"} to check above` : ""}`);
+    out.push(`ok: parses, every word is in the lexicon${checks ? `; ${checks} thing${checks === 1 ? "" : "s"} to check above` : ""}`);
   }
   return out;
 }

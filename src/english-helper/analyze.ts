@@ -121,6 +121,8 @@ export type LiveSuggestion = {
 export type Suggestion = RootSuggestion | JobSuggestion | DetectorSuggestion | EntrySuggestion | RoleSuggestion | ClassSuggestion | LiveSuggestion;
 
 export type Slot = {
+  /** Someone else owns a stance or feeling here (*Azozon wants to*, *Alazun is upset*): it needs a holder. */
+  otherStance?: true;
   /** The English word or cue run, as written. */
   text: string;
   lemma: string;
@@ -950,6 +952,9 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
         suggestions.push(...[...leads, ...routes, ...live].filter((s) => withinStage(data, s, stage)));
         addExamples(data, suggestions, [...new Set(run.flatMap((r) => [r.normal, r.lemma]))]);
         const slot: Slot = { text: run.map((r) => r.text).join(" "), lemma: one ? t.lemma : run.map((r) => r.normal).join(" "), cls: one ? t.cls : useNgram ? "noun" : "other", suggestions };
+        if (ownerAt(terms, i) === "other" && suggestions.some((s) => (s.kind === "job" && HOLDER_LINKS.includes(s.link)) || (s.kind === "detector" && s.id === HOLDER_FEELING.id))) {
+          slot.otherStance = true;
+        }
         const reading = one ? readingOf(t) : undefined;
         if (reading) slot.reading = reading;
         if (skipped) slot.skipped = true;

@@ -28,6 +28,8 @@ export type LexiconSuggestion = {
   /** Overlays: the role letter the overlay lives on, and the section that teaches it. */
   pos?: string;
   anchor?: string;
+  /** Overlays: the overlay kind (`want`, `plan`, `evidential`, …). */
+  overlayKind?: string;
   /** WordNet leads: the lexicon sense word the lead points at, and how WordNet links them. */
   lead?: string;
   via?: string;
@@ -85,7 +87,7 @@ export function buildLexiconIndex(published: readonly PublishedRow[], compounds:
     if (r.concrete) add(index, r.concrete, { tier: "compound", form: r.stem, emoji: "", side: "concrete" });
     if (r.abstract) add(index, r.abstract, { tier: "compound", form: r.stem, emoji: "", side: "abstract" });
   }
-  for (const r of overlays) add(index, r.gloss, { tier: "overlay", form: r.senseForm, emoji: r.emoji, pos: r.pos, anchor: r.anchor });
+  for (const r of overlays) add(index, r.gloss, { tier: "overlay", form: r.senseForm, emoji: r.emoji, pos: r.pos, anchor: r.anchor, overlayKind: r.kind });
   const order = (s: LexiconSuggestion) => (LEXICON_TIERS as readonly string[]).indexOf(s.tier);
   for (const list of index.values()) list.sort((a, b) => order(a) - order(b));
   return index;
