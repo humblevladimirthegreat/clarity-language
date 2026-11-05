@@ -99,6 +99,7 @@ export const intermediateLessons = [
   { text: 'As if', link: '/notional' },
   { text: 'Left, right, and facing', link: '/viewpoint' },
   { text: 'Role parts', link: '/role-parts' },
+  { text: 'Before, after, while, and like', link: '/same-role-words' },
   { text: 'Conversation length', link: '/conversation-length' },
   { text: 'Which compound', link: '/compound-families' },
   { text: 'Decision and try', link: '/ability' },

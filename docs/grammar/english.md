@@ -172,6 +172,19 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 | *instead of* / *rather than* (*coffee instead of tea*) | hook **`el`**, with what you expected first: `dedudal el dogudal` | [Instead](/hooks#instead) |
 | *or rather* (*tired, or rather, sleepy*) | hook **`ol`** between the two wordings | [Rather](/hooks#rather) |
 
+### *before*, *after*, *while*, *like* in one role {#same-role}
+
+When both phrases play the same role (both walk, or one doer does both acts), a same-role word goes between them and the event is said once. When the two events have different doers and different verbs, use a hinge and a second sentence.
+
+| English itch | Ageben job | Teach |
+|--------------|------------|-------|
+| *before* / *ahead of* (*Azozon walks ahead of Ahelan*, *walks before swimming*) | same-role **`abam`** between the two: `zazozon abam zahelan vowurol` | [Before and after](/same-role-words#before-and-after) |
+| *after* / *behind* (*Azozon walks behind Ahelan*, *swims after walking*) | same-role **`alam`** between the two: `zazozon alam zahelan vowurol` | [Before and after](/same-role-words#before-and-after) |
+| *while* / *at the same time as* (*walks while singing*) | same-role **`erom`** between the two verbs: `zazozon vowurol erom vozuyel`; *only while* is **`erol`** | [While](/same-role-words#same-role-while) |
+| *like* with B a separate member (*Azozon, like Ahelan, walks*) | same-role **`ewem`** between the two: `zazozon ewem zahelan vowurol` | [Like](/same-role-words#same-role-like) |
+| *like* / *such as* with B one example of A (*animals like dogs*, *the family, such as Azozon*) | hook **`am`** between the two: `zuvayal am zazozon` | [Stacked discourse hooks](/discourse-hooks#stacked-discourse) |
+| *before* / *after* / *while* with a different doer and verb (*walks while Ahelan sings*) | the hinge + **`blarl`** + the second sentence: `zazozon vowurol herom blarl zahelan vozuyel` | [Hinges](/dependents#hinges) |
+
 ### *and maybe more* {#and-maybe-more}
 
 English adds *and maybe more* after whatever might not be complete. Ageben says it with the open **-m** ending on the word that closes that piece.
@@ -190,7 +203,8 @@ English adds *and maybe more* after whatever might not be complete. Ageben says 
 | *bring* / *take* (*brings me the package*) | `velobal` (*carry*) + object + **`oel`** (toward) or **`ul`** (away from) | [Here and there](/here-there#deixis) |
 | *arrive* / *reach* (*has arrived at the house*) | **`havem`** (*already*) + `vavobol` + **`oel`** + `/b/` | [Already, still, not yet](/already-still-yet#phasal) |
 | *approach* / *head for* | `vavobol` + **`oel`** + `/b/` (no **`havem`**: still on the way) | [Locative relations](/locative-relations#locative-relations) |
-| *follow* (*walks behind Alazun*) | manner direction **`hazuhothel`** + `/b/` for whoever leads | [Landmark's own front](/viewpoint#landmark-facing) |
+| *follow* someone who moves too (*walks behind Alazun*, who also walks) | same-role **`alam`** between the two walkers: `zazozon alam zalazun vowurol` | [Before and after](/same-role-words#before-and-after) |
+| *follow* the back of something that stays put (*walks behind the house*) | manner direction **`hazuhothel`** + `/b/` for the landmark | [Landmark's own front](/viewpoint#landmark-facing) |
 
 ### Matched lists and last resorts {#matched-lists}
 

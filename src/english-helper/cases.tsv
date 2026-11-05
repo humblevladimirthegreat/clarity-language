@@ -154,3 +154,9 @@ I intend to walk.	intend to	not:holder.md#holder	the speaker's intention is the 
 I've decided to walk.	decided to	not:want.md#whose-intention	the speaker's decision is DECISION alone
 Azozon has decided to walk.	decided to	link:want.md#whose-intention	someone else's decision takes a holder
 Azozon has decided to walk.	decided to	not:say-tense.md#will-want	the bare DECISION row is the holder row's twin
+# Same-role words: *before* / *after* / *while* / *like* when both share a role
+Azozon walks before Ahelan.	before	link:same-role-words.md#before-and-after	both walk: the same-role word
+Azozon walks after Ahelan.	after	link:same-role-words.md#before-and-after	both walk: the same-role word
+Azozon walks while swimming.	while	link:same-role-words.md#same-role-while	one doer, two verbs at once
+Azozon, like Ahelan, walks.	like	link:same-role-words.md#same-role-like	B a separate member
+Animals like dogs sleep.	like	link:discourse-hooks.md#stacked-discourse	B an example of A still suggests am

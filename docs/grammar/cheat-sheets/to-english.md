@@ -16,6 +16,7 @@ Ordinary roots and [dictionary compounds](/compounds#dictionary-compounds) are n
 | Shape | Family | Example | Stage |
 |-------|--------|---------|-------|
 | vowel(s) + ending, no role letter | [hook](/hooks) | `al`, `el` | B |
+| root + ending, no role letter, mid-clause | [same-role word](/same-role-words#same-role-words) | `abam` | I |
 | role letter + vowel(s) + ending, no root | [join](/joins) | `zal`, `vul` | B |
 | `y` + vowel + ending, no root | [speech act](/firm-soft#speech-act) | `yal` | B |
 | role letter + vowel + **-rn** | [stand-in word](/stand-in-roles#stand-in-roles) | `darn` *a statement* | I |
@@ -352,6 +353,23 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `wuvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `wuvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `wuvur` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+<!-- /generated -->
+
+## Same-role words {#same-role-words}
+
+A [same-role word](/same-role-words#same-role-words) has no role letter and sits between two phrases of one role. Alone, the same spelling is its root's citation.
+
+<!-- generated: overlays pos=cite -->
+| Ageben | English | Taught in | Stage |
+|--------|---------|-----------|-------|
+| `abal` | same-role before (A ahead of B; B is the whole of it) | [Before and after (abam / alam)](/same-role-words#before-and-after) | I |
+| `abam` | same-role before (A ahead of B in time or in a moving line; B fills the same role; maybe others too) | [Before and after (abam / alam)](/same-role-words#before-and-after) | I |
+| `alal` | same-role after (A after B; B is the whole of it) | [Before and after (abam / alam)](/same-role-words#before-and-after) | I |
+| `alam` | same-role after (A after or behind B in time or in a moving line; B fills the same role; maybe others too) | [Before and after (abam / alam)](/same-role-words#before-and-after) | I |
+| `erol` | same-role while closed (only while B) | [While (erom)](/same-role-words#same-role-while) | I |
+| `erom` | same-role while (A and B at the same time; both fill the role; maybe others too) | [While (erom)](/same-role-words#same-role-while) | I |
+| `ewel` | same-role like closed (like B and B alone; not exactly-like) | [Like (ewem)](/same-role-words#same-role-like) | I |
+| `ewem` | same-role like (A like B; B fills the same role too as background; maybe others too) | [Like (ewem)](/same-role-words#same-role-like) | I |
 <!-- /generated -->
 
 ## Sake words {#sakes}
