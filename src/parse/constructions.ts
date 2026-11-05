@@ -568,35 +568,68 @@ export const STAND_IN_BACK_CONSTRUCTIONS: Record<Vowel, ConstructionEntry> = {
 };
 
 /** Hook forms (hooks.md, discourse-hooks.md). */
-export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "or" | "er" | "ur" | "aor" | "aer" | "uer" | "uor", ConstructionEntry> = {
+export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "or" | "er" | "ur" | "aor" | "aer" | "uer" | "uor" | "uar" | "oer", ConstructionEntry> = {
   ar: { anchor: "discourse-hooks.md#hook-resume", summary: "ar resume hook" },
   er: { anchor: "discourse-hooks.md#hook-resume", summary: "er resume hook" },
   or: { anchor: "discourse-hooks.md#hook-resume", summary: "or resume hook" },
   ur: { anchor: "discourse-hooks.md#hook-resume", summary: "ur resume hook" },
-  aor: { anchor: "discourse-hooks.md#hook-resume", summary: "aor resume hook (with it)" },
+  aor: {
+    anchor: "discourse-hooks.md#hook-resume",
+    summary: "aor resume hook (with it) / some.in-turn range hook",
+    reader:
+      "`A | some.in-turn | B` = the current one, whose turn it is, on the walk from A through B (the ones before it have had their turn); under a question it asks which one now (whose turn? which chapter are you on?). With nothing on its right, `aor` points back (with it).",
+  },
   aer: { anchor: "discourse-hooks.md#hook-resume", summary: "aer resume hook (on it)" },
-  uor: { anchor: "ordered-ranges.md#ranges", summary: "uor some.outside range hook" },
-  uer: { anchor: "discourse-hooks.md#hook-resume", summary: "uer resume hook (through there)" },
-  al: { anchor: "hooks.md#including-am-al", summary: "al including" },
+  uor: { anchor: "ordered-ranges.md#ranges", summary: "uor some.strictly-between range hook" },
+  uar: { anchor: "ordered-ranges.md#ranges", summary: "uar some.outside range hook" },
+  oer: { anchor: "ordered-ranges.md#ranges", summary: "oer some.through range hook" },
+  uer: {
+    anchor: "discourse-hooks.md#hook-resume",
+    summary: "uer resume hook (through there) / some.through-excluding range hook",
+    reader: "`A | some.through-excluding | B` = some one member from A up to B, B left out. With nothing on its right, `uer` points back (through there).",
+  },
+  al: {
+    anchor: "hooks.md#including-am-al",
+    summary: "al including",
+    reader: "`A | including | B` keeps its reading between two numbers (`z-3 | including | z-5` = 3, including 5); a range of numbers uses the range hooks (through, through-excluding, outside, strictly-between, in-turn).",
+  },
   am: { anchor: "hooks.md#including-am-al", summary: "am including" },
   el: { anchor: "hooks.md#instead-el", summary: "el instead" },
   em: { anchor: "hooks.md#closed-and-open-endings", summary: "em instead" },
   ol: { anchor: "hooks.md#rather-ol", summary: "ol rather" },
   om: { anchor: "hooks.md#closed-and-open-endings", summary: "om rather" },
-  ul: { anchor: "hooks.md#except-ul", summary: "ul except" },
+  ul: {
+    anchor: "hooks.md#except-ul",
+    summary: "ul except",
+    reader: "`A | except | B` keeps its reading between two numbers (A, except B); it is never a range. *From X to Y* on the clause is `from | b-X | toward | b-Y`.",
+  },
   um: { anchor: "hooks.md#closed-and-open-endings", summary: "um except" },
-  aol: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "aol using" },
+  aol: {
+    anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m",
+    summary: "aol using / in-turn",
+    reader:
+      "`A | in-turn | B` between two same-role words = A through B, one after another, in the order said (a walk, not a set: `through` names the set).",
+  },
   aom: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "aom by" },
   ael: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "ael on" },
   aem: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "aem over" },
-  oel: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "oel" },
+  oel: {
+    anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m",
+    summary: "oel toward / through",
+    reader:
+      "Range hooks between two same-role words: `through` A, B and all between; `through-excluding` A up to B, B (the end said second) left out; `outside` only what lies beyond the A–B band; `strictly-between` only what lies between; `in-turn` A through B one after another. `.approx` softens the ends, `.named` names the band, `some.` is one unnamed member. A hook + `b-` right after a landmark always describes that landmark, never a range.",
+  },
   oem: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "oem" },
-  ual: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "ual" },
+  ual: {
+    anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m",
+    summary: "ual out of / outside",
+    reader: "`A | outside | B` between two values is everything beyond the band: `z-two | outside | z-nine` = below 2 or above 9.",
+  },
   uam: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "uam" },
   uol: {
     anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m",
-    summary: "uol against / outside",
-    reader: "`A | outside | B` between two values is a band and everything beyond it: `z-two | outside | z-nine` = below 2 or above 9.",
+    summary: "uol against / strictly-between",
+    reader: "`A | strictly-between | B` is only what lies between the ends, both ends left out: `z-two | strictly-between | z-nine` = above 2 and below 9.",
   },
   uom: {
     anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m",
@@ -604,7 +637,11 @@ export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "or" | "er" 
     reader:
       "`[contrary-to | th-…]` = against that one stance (my plan, my wishes). A holder first makes it that person's, as one stance: `[contrary-to | th-CLUES-X | th-plan-itinerary]` = against X's plan, as far as I can tell.",
   },
-  uel: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "uel through" },
+  uel: {
+    anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m",
+    summary: "uel through / through-excluding",
+    reader: "`A | through-excluding | B` = from A up to B, the end said second left out: `z-3 | through-excluding | z-5` = 3 up to but not including 5; `z-5 | through-excluding | z-3` leaves 3 out.",
+  },
   uem: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "uem by-way-of" },
 };
 
@@ -752,7 +789,8 @@ export const REJECTIONS = {
   labelReachArrow: { anchor: "viewpoint.md#landmark-facing", summary: "on a direction root the th seam takes only e (the landmark's own facing)" },
   pluralKindAfterUniversal: { anchor: "universals-domains.md#universals-domains-generics", summary: "the kind word after ua / uo takes no -x" },
   stackedHookResume: { anchor: "ordered-ranges.md#ranges", summary: "stacked range hook -r (oer / uar / uor) needs same-role words on both sides" },
-  hookSameRoleStack: { anchor: "hooks.md#including-am-al", summary: "between same-role words only the plain hooks (al el ol ul) and the range hooks (oel ual uol) have a reading; for such as, use am" },
+  hookSameRoleStack: { anchor: "hooks.md#including-am-al", summary: "between same-role words only the plain hooks (al el ol ul) and the range hooks (oel uel ual uol aol) have a reading; for such as, use am" },
+  rangeEndpointKind: { anchor: "ordered-ranges.md#ranges", summary: "two number ends of a range share one line: amounts (and ±∞), ranks (and first / last place), or labels; an amount through a rank has no reading" },
   hookDiscourseStack: { anchor: "hooks.md#discourse-hooks", summary: "at the front of a sentence only al el ol ul, aol and ael have a reading; for next, by the way, on the contrary use a linker" },
   stackedJoinResume: { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "stacked join vowels take no -r on /z/ /d/ /b/ /v/ /x/ /ɡ/ (only a / o / e / u do); a stacked -r is the stance fill-ask under /th/" },
   spanSlot: { anchor: "spans.md#pos", summary: "an aside goes only under /th/ /ɡ/ /w/ /h/; a cite, mention or opaque span fills a content slot (/z/ /d/ /b/ /v/ /ɡ/ /h/) or /w/, or sets the topic under /x/" },

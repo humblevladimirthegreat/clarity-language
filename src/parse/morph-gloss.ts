@@ -1076,27 +1076,28 @@ function sensePieces(
   }
 }
 
+/** Range hooks between two same-role words (ordered-ranges.md#ranges): -m `.approx`, -n `.named`, -r `some.`. */
 const HOOK_SPAN: Record<string, string> = {
-  al: "through",
-  am: "through.approx",
-  an: "through.named",
-  ar: "some.through",
-  ul: "through-excluding",
-  um: "through-excluding.approx",
-  un: "through-excluding.named",
-  ur: "some.through-excluding",
   oel: "through",
   oem: "through.approx",
   oen: "through.named",
-  ual: "strictly-between",
-  uam: "strictly-between.approx",
-  uan: "strictly-between.named",
-  uol: "outside",
-  uom: "outside.approx",
-  uon: "outside.named",
   oer: "some.through",
-  uar: "some.strictly-between",
-  uor: "some.outside",
+  uel: "through-excluding",
+  uem: "through-excluding.approx",
+  uen: "through-excluding.named",
+  uer: "some.through-excluding",
+  ual: "outside",
+  uam: "outside.approx",
+  uan: "outside.named",
+  uar: "some.outside",
+  uol: "strictly-between",
+  uom: "strictly-between.approx",
+  uon: "strictly-between.named",
+  uor: "some.strictly-between",
+  aol: "in-turn",
+  aom: "in-turn.approx",
+  aon: "in-turn.named",
+  aor: "some.in-turn",
 };
 
 function hookLabel(form: string, ctx: MorphGlossContext): string {

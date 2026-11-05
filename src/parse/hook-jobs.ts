@@ -34,29 +34,28 @@ const SPAN_ENDPOINT_KIND: Record<string, string> = {
   rue: "label",
 };
 
-/** Span endpoint kind: a number with digits, ±∞, or a first / last place (numbers-applied.md § Ranges). */
+/**
+ * Range end kind (ordered-ranges.md#ranges): an amount (scalar), a rank, or a label / time, from the number's
+ * marker, with or without digits. ±∞ is an amount and first / last place a rank. A non-number has no kind.
+ */
 export function spanEndpointKind(word: LexWord | undefined): string | undefined {
   if (word?.family.kind !== "number") return undefined;
-  const { stem } = word.family;
-  const kind = SPAN_ENDPOINT_KIND[stem.marker];
-  if (!kind) return undefined;
-  if (stem.groups.length > 0 && !stem.digitlessExp) return kind;
-  if (stem.groups.length === 0 && stem.digitlessExp === "e") return kind;
-  if (stem.groups.length === 0 && stem.digitlessExp === "e-" && kind === "rank") return kind;
-  return undefined;
+  return SPAN_ENDPOINT_KIND[word.family.stem.marker];
 }
 
-/**
- * Range hook (hooks.md § Ranges): `al` / `ul` between two same-kind number endpoints,
- * or a stacked `oe` / `ua` / `uo` hook between two same-role words.
- */
+const SPAN_VOWELS = new Set(["oe", "ue", "ua", "uo", "ao"]);
+
+/** Range hook (ordered-ranges.md#ranges): a stacked `oe` / `ue` / `ua` / `uo` / `ao` hook between two same-role words. */
 export function isSpanHook(word: LexWord, prev: LexWord | undefined, next: LexWord | undefined): boolean {
   if (word.family.kind !== "hook" || !prev || !next || prev.pos !== next.pos) return false;
-  const vowels = word.family.form.slice(0, -1);
-  if (vowels === "oe" || vowels === "ua" || vowels === "uo") return true;
-  if (vowels !== "a" && vowels !== "u") return false;
-  const kind = spanEndpointKind(prev);
-  return kind !== undefined && kind === spanEndpointKind(next);
+  return SPAN_VOWELS.has(word.family.form.slice(0, -1));
+}
+
+/** Two number ends of a range on different lines (an amount and a rank): no reading (ordered-ranges.md#ranges). */
+export function mixedSpanEnds(prev: LexWord | undefined, next: LexWord | undefined): boolean {
+  const a = spanEndpointKind(prev);
+  const b = spanEndpointKind(next);
+  return a !== undefined && b !== undefined && a !== b;
 }
 
 
@@ -136,7 +135,8 @@ function hookJob(units: Unit[], index: number, afterJoin: boolean, afterTopic: b
   const nextWord = unitWords(units[index + 1])[0];
   const nextIsB = isBNoun(units[index + 1]);
 
-  let extraNoun = nextIsB && (prevWord?.pos !== "b" || (endsInLandmark(units, index - 1) && !isSpanHook(word, prevWord, nextWord)));
+  // A hook + `/b/` right after a landmark always describes that landmark, never a range (extra-noun-hooks.md).
+  let extraNoun = nextIsB && (prevWord?.pos !== "b" || endsInLandmark(units, index - 1));
   if (nextIsB && word.family.kind === "hook" && word.family.form === "om") {
     const host = genitiveHost(units, index, afterTopic);
     if (host === "noun") return "genitive";

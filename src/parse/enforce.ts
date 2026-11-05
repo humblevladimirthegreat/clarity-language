@@ -15,7 +15,7 @@ import { isTopicCompound, isTopicSpan, linkerEnglish, topicEffect } from "./link
 import { CLOSED } from "../closed-roots.js";
 import { isGenericPronoun, isTopicPronoun, rolePronounRoots } from "./resolve.js";
 import { parseHookCompoundCite } from "./hook-compounds.js";
-import type { HookJob } from "./hook-jobs.js";
+import { mixedSpanEnds, type HookJob } from "./hook-jobs.js";
 import { markContext, SentenceParseError } from "./sentence-parser.js";
 import {
   B,
@@ -330,7 +330,7 @@ function enforceStandInRole(word: LexWord): void {
   if (["g", "h", "w", "th"].includes(word.pos ?? "")) throw new ConstructionError("standInRole", word.raw);
 }
 
-/** Stacked range hook **-r** (`oer` / `uar` / `uor`) is only a range member between same-role words (hooks.md § Ranges). Extra-noun `aor` / `aer` / `uer` point back. */
+/** Stacked range hook **-r** (`oer` / `uar` / `uor`) is only a range member between same-role words (ordered-ranges.md#ranges). `aor` / `aer` / `uer` with nothing on the right point back (extra noun); between same-role words `aor` / `uer` are range members. */
 function enforceStackedHookR(word: LexWord, tokens: IToken[], i: number): void {
   if (word.family.kind !== "hook" || word.ending !== "r" || word.family.form.length < 3) return;
   if (["ao", "ae", "ue"].includes(word.family.form.slice(0, -1))) return;
@@ -341,11 +341,11 @@ function enforceStackedHookR(word: LexWord, tokens: IToken[], i: number): void {
   if (!prev?.pos || prev.pos !== next?.pos) throw new ConstructionError("stackedHookResume", word.raw);
 }
 
-/** Hook vowels with no reading in a placement: same-role `ao` / `ae`, and discourse `oe` / `ua` / `uo` / `ue` (hooks.md). */
+/** Hook vowels with no reading in a placement: same-role `ae`, and discourse `oe` / `ua` / `uo` / `ue` (hooks.md). */
 function enforceHookSlot(word: LexWord, job: HookJob | undefined): void {
   if (word.family.kind !== "hook") return;
   const vowels = word.family.form.slice(0, -1);
-  if (job === "clause" && (vowels === "ao" || vowels === "ae" || vowels === "ue")) throw new ConstructionError("hookSameRoleStack", word.raw);
+  if (job === "clause" && vowels === "ae") throw new ConstructionError("hookSameRoleStack", word.raw);
   if (job === "discourse" && word.ending === "r" && vowels.length > 1) throw new ConstructionError("hookDiscourseStack", word.raw);
   if (job === "discourse" && ["oe", "ua", "uo", "ue"].includes(vowels)) throw new ConstructionError("hookDiscourseStack", word.raw);
 }
@@ -760,6 +760,13 @@ function enforceSameRole(hook: LexWord, prev: Unit | undefined, next: Unit | und
   if (a && b && a !== b) throw new ConstructionError("hookSameRole", `${edgeWord(prev, "last")!.raw} ${hook.raw} ${edgeWord(next, "first")!.raw}`);
 }
 
+/** Two number ends of a range share one line: an amount and a rank have no range (ordered-ranges.md#ranges). */
+function enforceSpanEnds(hook: LexWord, prev: Unit | undefined, next: Unit | undefined): void {
+  const a = edgeWord(prev, "last");
+  const b = edgeWord(next, "first");
+  if (mixedSpanEnds(a, b)) throw new ConstructionError("rangeEndpointKind", `${a!.raw} ${hook.raw} ${b!.raw}`);
+}
+
 /** A hook + stand-in `/b/`: only `ul barl`, *since* + the next sentence (hooks.md#since). */
 function enforceHookStandIn(hook: LexWord, next: Unit | undefined): void {
   if (next?.kind !== "np" || next.coord.level !== "b") return;
@@ -807,6 +814,7 @@ function enforceUnitList(units: Unit[], tables: ClassifyTables): void {
     }
     if (unit.kind === "hook" && unit.job === "stray") throw new ConstructionError("genitiveHost", unit.word.raw);
     if (unit.kind === "hook" && unit.job === "clause") enforceSameRole(unit.word, units[i - 1], units[i + 1]);
+    if (unit.kind === "hook" && unit.job === "span") enforceSpanEnds(unit.word, units[i - 1], units[i + 1]);
     if (unit.kind === "hook" && unit.zone) enforceZone(unit.word, unit.zone, tables);
     if (unit.kind === "hook" && !unit.zone) enforceHookStandIn(unit.word, units[i + 1]);
     if (unit.kind === "hook") enforceHookSlot(unit.word, unit.job);

@@ -94,20 +94,41 @@ describe("morphGlossLine — SHARED only where it can describe the join", () => 
   it("leaves an /h/ after a /ɡ/ join on the verb", () => {
     expectLine("zodozel gerulol gamezem gal hahunom vowurol.", "[z-dog | [g-red | g-small | g-and]] | h-intensity | v-walk");
   });
-  it("reads al / ul between number endpoints as a range", () => {
-    expectLine("zodozel gragel al grazal vowurol.", "[z-dog | g-three] | through | g-five | v-walk");
-    expectLine("zrawal ul zrazal.", "z-plus-infinity | through-excluding | z-five");
-    expectLine("zragel ar zrazal.", "z-three | some.through | z-five");
+  it("reads the range series between number ends, with or without digits", () => {
+    expectLine("zodozel gragel oel grazal vowurol.", "[z-dog | g-three] | through | g-five | v-walk");
+    expectLine("zrawal uel zrazal.", "z-plus-infinity | through-excluding | z-five");
+    expectLine("zragel oer zrazal.", "z-three | some.through | z-five");
+    expectLine("zral oel zrazal.", "z-more-than-one | through | z-five");
+    expectLine("zragel oem zrazal.", "z-three | through.approx | z-five");
+    expectLine("zragel uem zrazal.", "z-three | through-excluding.approx | z-five");
   });
-  it("keeps al literal when an endpoint has no digits or the kinds differ", () => {
+  it("keeps al / ul as including / except between numbers", () => {
     expectLine("zral al zrazal.", "z-more-than-one | including | z-five");
+    expectLine("zragel al zrazal.", "z-three | including | z-five");
     expectLine("zragel al zrodol.", "z-three | including | z-2nd");
+    expectLine("zragel ul zrazal.", "z-three | except | z-five");
   });
   it("reads stacked in-clause hooks as spans on any line", () => {
     expectLine("zoduhol oel zoduhol.", "z-down | through | z-down");
-    expectLine("zragel ual zrazal.", "z-three | strictly-between | z-five");
-    expectLine("zragel uol zrazal.", "z-three | outside | z-five");
-    expectLine("zazozon uar zahelan vezuvel.", "z-Azozon | some.strictly-between | z-Ahelan | v-sleep");
+    expectLine("zragel uol zrazal.", "z-three | strictly-between | z-five");
+    expectLine("zragel ual zrazal.", "z-three | outside | z-five");
+    expectLine("zazozon uor zahelan vezuvel.", "z-Azozon | some.strictly-between | z-Ahelan | v-sleep");
+    expectLine("zazozon uar zahelan vezuvel.", "z-Azozon | some.outside | z-Ahelan | v-sleep");
+    expectLine("zazozon uel zahelan.", "z-Azozon | through-excluding | z-Ahelan");
+    expectLine("zazozon uer zahelan vowurol.", "z-Azozon | some.through-excluding | z-Ahelan | v-walk");
+    expectLine("zazozon aol zahelan vowurol.", "z-Azozon | in-turn | z-Ahelan | v-walk");
+    expectLine("zazozon aor zahelan vowurol.", "z-Azozon | some.in-turn | z-Ahelan | v-walk");
+    expectLine("zragel aom zrazal.", "z-three | in-turn.approx | z-five");
+    expectLine("z+13 oen z+19.", "NAME[z-13 | through | z-19]");
+    expectLine("zazozon vowurol bohehal oel bobewol.", "z-Azozon | v-walk | b-house | through | b-pencil");
+  });
+  it("reads a hook right after a landmark as an extra noun on it, never a range", () => {
+    expectLine("zazozon vowurol al bohehal el bobewol.", "z-Azozon | v-walk | [in | [b-house | [at | b-pencil]]]");
+    expectLine("zazozon vowurol al bohehal aol bobewol.", "z-Azozon | v-walk | [in | [b-house | [using | b-pencil]]]");
+    expectLine("zazozon vowurol al bohehal uel bobewol.", "z-Azozon | v-walk | [in | [b-house | [through | b-pencil]]]");
+    expectLine("zazozon vowurol al bohehal oel bobewol.", "z-Azozon | v-walk | [in | [b-house | [toward | b-pencil]]]");
+    expectLine("zazozon vowurol al bohehal ual bobewol.", "z-Azozon | v-walk | [in | [b-house | [out-of | b-pencil]]]");
+    expectLine("zalazun dobonol aol bobewol varuyol.", "z-Alazun | d-page | [using | b-pencil] | v-write");
   });
 });
 
