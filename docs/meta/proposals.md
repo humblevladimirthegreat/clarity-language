@@ -76,6 +76,7 @@ Subagents cost tokens, so the plan is shaped to need few of them, as below.
    - Read each report and `git diff --stat`, not whole diffs. Open a hunk only when a report flags it, a gate fails, or the stat shows a file outside the item's list.
    - Trim command output (`2>&1 | tail -30`).
    - Leave per-item build and test runs to the subagent; run them once per workstream, before the commit.
+   - Never repeat a green run. When the subagent's last act was a passing build or test run and nothing has changed since, the main agent commits on that result. It reruns only after its own edits (such as `AGENTS.md` Owns lines) or a later change to the tree.
 9. **Ask for short, fixed-field reports**: what moved (with ids), files touched as a count, registry edits, `AGENTS.md` Owns lines to change, gate results, and skips with reasons.
 10. **Pay for a fresh context only where it buys something**: an independent audit, or a rule about what a writer may have read. Scope an audit to what the proposal changed, plus close neighbors.
 11. **Send failures back to the owner.** When a gate fails, send it to the subagent that made the change, which already holds the context, not to a new one.
