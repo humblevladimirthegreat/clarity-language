@@ -17,6 +17,8 @@
  * Free English lines on top-level grammar pages are checked for the sentence-and-note shape
  * (src/lint/free-english.ts); so are table English cells that translate an Ageben phrase or
  * sentence, there and on cheat sheets, for shape and parentheses inside the sentence.
+ * Sentences that leave their speech act's default word order print as warnings and never fail the run
+ * (src/lint/word-order.ts).
  * On the number pages, shorthand number examples need a
  * pronunciation row that matches the spoken form computed from the shorthand.
  * Mismatches, leftover ambiguity, and missing morph glosses fail the run.
@@ -69,6 +71,7 @@ import { constructionCoverageGaps, constructionHomes, learningOrderFindings } fr
 import { duplicateIds } from "../src/lint/grammar-anchors.js";
 import { glossLabels, lintTerminology, TERMINOLOGY_PAGE } from "../src/lint/terminology-docs.js";
 import { lintRetieFormat } from "../src/lint/retie-format.js";
+import { wordOrderWarnings, type ParsedSentence } from "../src/lint/word-order.js";
 import {
   constructionFamilies,
   drillCoverage,
@@ -325,6 +328,7 @@ function main(): void {
   let retieFormatCount = 0;
   let freeEnglishCount = 0;
   let staleNameCount = 0;
+  let wordOrderCount = 0;
   const reportStaleNames = (rel: string, text: string) => {
     for (const issue of lintStaleNames(text, tables)) {
       staleNameCount += 1;
@@ -382,10 +386,19 @@ function main(): void {
       spanCount += 1;
       console.error(`${rel}:${lineNumberAt(original, issue.index)}  \`${issue.text}\`  native-opaque  (<${issue.payload}> reads as Ageben; an opaque span holds foreign text, so write a foreign word or put Ageben in a cite […])`);
     }
-    for (const issue of lintAgebenSpans(original, tables, spanStats, used)) {
+    const sentences: ParsedSentence[] = [];
+    const sentenceSink = (text: string, index: number, result: ParsedSentence["result"]) =>
+      sentences.push({ text, index, result });
+    for (const issue of lintAgebenSpans(original, tables, spanStats, used, sentenceSink)) {
       spanCount += 1;
       const line = lineNumberAt(original, issue.index);
       console.error(`${rel}:${line}  \`${issue.text}\`  ${issue.kind}  (${issue.detail})`);
+    }
+    for (const warning of wordOrderWarnings(sentences)) {
+      wordOrderCount += 1;
+      console.log(
+        `warning: ${rel}:${lineNumberAt(original, warning.index)}  word-order  \`${warning.text}\`  ${warning.rule} (${warning.order})`,
+      );
     }
 
     const morphResult = lintMorphGlossMarkdown(original, tables);
@@ -557,6 +570,12 @@ function main(): void {
   if (drillCount > 0) {
     console.error(
       `\n${drillCount} drill-coverage issue(s). Add ### Practice {#<band>-practice}, or an item in it that uses the family, or merge duplicate sections (docs/meta/drill-generation.md), or mark the page + band skip in its allowlist.`,
+    );
+  }
+
+  if (wordOrderCount > 0) {
+    console.log(
+      `\nwarning: ${wordOrderCount} example(s) leave their speech act's default word order. Warnings only; use the default order unless the example shows a move (docs/grammar/beginner/speech-moves.md#act-word-order).`,
     );
   }
 

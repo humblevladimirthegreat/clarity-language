@@ -584,6 +584,8 @@ A morph line is compared only after the whole example parses. If it doesn't pars
 
 An example that parses also fails when a plain `/b/` join with no items sits right after a `/ɡ/`, `/h/`, or `/th/` word (`hewem bar`, `herom bual`). It parses as the recipient, but it is nearly always meant as the host's partner, which takes `bl-` (`hewem blar`, [standalone joins](/joins#standalone-phrase)). An example that does mean the recipient puts it elsewhere in the clause (`yel bar zazozon hadurom varal.`). Plain nouns there are not checked: `zazozon hadurom balazun varal.` is the recipient.
 
+A sentence that leaves its speech act's [default order](/speech-moves#act-word-order) prints a **warning** and never fails the build. The defaults: verb late in a statement or prohibition, verb second in a question, verb first in a command, a fill-ask's blanks first and then statement order ([fill-ask](/questions#fill-ask)), subject before object, and the recipient `/b/` right after the verb ([extra nouns](/clause#extra-nouns)). `X HOOK Y` in one role counts as one slot, `/h/` / `/th/` words and hook landmarks go anywhere, and a stand-in is placed by its dependent. Use the default order unless the example is about moving words. A moved sentence gets no warning when the same page also shows the same words in default order, as the *moving changes nothing* pair on [clause](/clause#direct-object-d) does. `npm run build` lists the first 20 warnings; `npm run lint:ageben` lists them all. Code: [`src/lint/word-order.ts`](../../src/lint/word-order.ts).
+
 ### HTML comments
 <a id="html-comments"></a>
 

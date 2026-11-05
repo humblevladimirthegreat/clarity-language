@@ -375,6 +375,9 @@ export function unhostedJoins(result: ParseResult): { host: LexWord; join: LexWo
   return out;
 }
 
+/** Receives each sentence span that parses, with its parse. */
+export type SentenceSink = (text: string, index: number, result: ParseResult) => void;
+
 function lintSpanText(
   text: string,
   index: number,
@@ -382,6 +385,7 @@ function lintSpanText(
   stats: AgebenSpanStats,
   issues: AgebenSpanIssue[],
   used?: ConstructionSink,
+  sentences?: SentenceSink,
 ): void {
   const cls = classifyAgebenSpan(text);
   if (cls === "unclassified") {
@@ -402,6 +406,7 @@ function lintSpanText(
   if (cls !== "sentence" && cls !== "phrase") return;
   const parsed = parseSpan(text, index, tables, used);
   if (typeof parsed !== "string") {
+    if (cls === "sentence") sentences?.(text.trim(), index, parsed);
     for (const { host, join } of unhostedJoins(parsed)) {
       issues.push({
         text,
@@ -504,19 +509,21 @@ export function walkAgebenSpans(text: string, visit: AgebenSpanVisitor): void {
 
 /**
  * Lint code spans. When `used` is given, it receives the construction IDs
- * ([constructions.ts](../parse/constructions.ts)) the page's examples exercise.
+ * ([constructions.ts](../parse/constructions.ts)) the page's examples exercise; `sentences` receives each sentence
+ * that parses.
  */
 export function lintAgebenSpans(
   text: string,
   tables: ClassifyTables,
   stats: AgebenSpanStats = emptySpanStats(),
   used?: ConstructionSink,
+  sentences?: SentenceSink,
 ): AgebenSpanIssue[] {
   const issues: AgebenSpanIssue[] = [];
   let fixPrompts: { start: number; end: number }[] | undefined;
 
   walkAgebenSpans(text, {
-    text: (body, index) => lintSpanText(body, index, tables, stats, issues, used),
+    text: (body, index) => lintSpanText(body, index, tables, stats, issues, used, sentences),
     marked: (span, marker) => {
       if (marker === "fragment") {
         stats["marked-fragment"] += 1;

@@ -12,6 +12,17 @@ import { mtime } from "./lib/run-bundled.mjs";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const bin = (name) => join(root, "node_modules", ".bin", name);
 
+const WARNING_LIMIT = 20;
+
+/** A passing job's `warning:` lines: the first few, then how many more and where to see them all. */
+function printWarnings(label, out) {
+  const warnings = out.split("\n").filter((line) => line.startsWith("warning: "));
+  for (const line of warnings.slice(0, WARNING_LIMIT)) console.log(line);
+  if (warnings.length > WARNING_LIMIT) {
+    console.log(`warning: … ${warnings.length - WARNING_LIMIT} more from ${label}; set BUILD_VERBOSE=1 or run that step alone to list them all`);
+  }
+}
+
 function run(label, cmd, args, { buffer = false } = {}) {
   const start = Date.now();
   return new Promise((resolve) => {
@@ -26,6 +37,7 @@ function run(label, cmd, args, { buffer = false } = {}) {
     child.on("close", (code) => {
       const secs = ((Date.now() - start) / 1000).toFixed(1);
       if (buffer && (code !== 0 || process.env.BUILD_VERBOSE)) process.stdout.write(out);
+      else if (buffer) printWarnings(label, out);
       console.log(`${code === 0 ? "✓" : "✗"} ${label} (${secs}s)`);
       resolve({ label, code, out });
     });
