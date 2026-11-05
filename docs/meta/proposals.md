@@ -107,6 +107,10 @@ A proposal carried out with subagents is exempt from the usual rule that agents 
 
 A workstream whose items were all skipped makes no commit.
 
+### Fence automated rewrites
+
+When a script or tool is about to make a large automated change (`retie-docs --write`, `rename-language --write`, `find.mjs --map … --write`, `convert-word --all`, `peel-band --write`, `cheat-sheet-blocks --write`, a codemod), commit the hand-made work first, then commit the tool's output on its own, then continue by hand. The tool's commit holds only what the tool wrote, so a reviewer can skim it as mechanical and anyone can revert or rerun it without losing hand edits. Name the command in that commit's message. Hand fixes the tool's review list asks for go in the next commit, not the tool's.
+
 ## Resuming
 
 A run that stops partway resumes from the git log and the Status line. After each workstream's commit, the main agent records the finished workstream IDs in Status. The next session reads them, re-runs build and tests, and starts the next workstream with a fresh subagent.
