@@ -26,14 +26,14 @@ Each row names what the file owns. The file is the authority; this table is only
 | `fill-ask-roles.md` | Fill-ask roles: arity, blank in a dependent; what kind / when / where / whose / how / why (`fill-ask-jobs.md`). |
 | `speech-moves.md` | Turns, vocatives, interjections, speech acts, the reusable vowel series; firm and soft (`firm-soft.md`); doubled and stacked acts (`speech-acts.md`); speech manner (`speech-manner.md`); tone marks (`tone-marks.md`). |
 | `dependents.md` | Next-sentence grammar: continue, subordinators; sentence linkers (`sentence-linkers.md`); stand-in vowels, pointing back (`stand-in-vowels.md`); lexicalized stand-ins (`stand-in-roles.md`). |
-| `relations.md` | Hosted relation catalog: likeness, exchange, proxy; of-relations (`of-relations.md`); exactly like (`exactly-like.md`); locative relations (`locative-relations.md`); social ties (`social-ties.md`); as-of (`as-of.md`). |
+| `relations.md` | Hosted relation catalog: likeness, exchange, proxy; of-relations (`of-relations.md`); exactly like (`exactly-like.md`); locative relations (`locative-relations.md`); social ties (`social-ties.md`); as-of (`as-of.md`); same-role words: before, after, while, like (`same-role-words.md`). |
 | `hooks.md` | Prefix-less hooks: in-clause, discourse glue, extra-noun; stacked extra-noun and whose (`extra-noun-hooks.md`); ending grids, hook detail (`ending-grids.md`); ordered ranges (`ordered-ranges.md`); abstract landmarks (`abstract-landmarks.md`); hook compounds, prefixes (`hook-compounds.md`); hooked joins (`hooked-joins.md`). |
 | `discourse-hooks.md` | Stacked discourse, hook resume, parallel chains, discourse placements; somewhere / here and there (`here-there.md`). |
 | `restrictors.md` | `/h/` / `/w/` restrictors, habitual; more occasions (`more-occasions.md`). |
 | `joins.md` | Phrase and clause joins, fences, set vs rank; rank joins (`rank-joins.md`); universals, domains (`universals-domains.md`); join limits, role grid (`join-limits.md`). |
 | `join-across-roles.md` | Stance joins; list verbs (`list-verbs.md`); join-relations (`join-relations.md`); verb-phrase and clause forms (`vp-clause-forms.md`); clause sequence (`clause-sequence.md`). |
 | `comparatives.md` | Comparatives, superlatives, equatives; manner scale (`comparative-arity.md`); vague amounts (`vague-amounts.md`); stance bars (`stance-bars.md`). |
-| `predication.md` | Classification, identity; how far a label reaches (`label-seams.md`); packaging (`label-reach.md`). |
+| `predication.md` | Classification, identity, lone object; how far a label reaches (`label-seams.md`); packaging (`label-reach.md`). |
 | `causation.md` | Causation / condition hinges; fault (`fault.md`); because, iff (`iff-fault.md`); CAUSE, make (`cause.md`). |
 | `sakes.md` | Sakes, met / unmet; ought for a sake (`ought-for-a-sake.md`); motive, attachment, whose stake, contrary (`prescription.md`); enough and too, sake bars (`sake-bars.md`). |
 | `feelings-permission.md` | Feelings, speaker attitude; permission, consent (`permission-consent.md`); thanks and sorry (`thanks-and-sorry.md`). |

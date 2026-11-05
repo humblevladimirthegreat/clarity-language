@@ -17,6 +17,7 @@ use [skip-cd] for amplify to not deploy.
 -should any other cheat sheets be added?
 -consider grouping lessons into categories/units
 -citation forms in sentences are hooks/prepositions (closed), includes hooked joins
+-landmark relations with no form yet: spatial *past* (walks past the house), *opposite* / *across from*, *beyond* (far side of); *along* and *up / down the hill* only approximate. New /h/ + bl- rows on locative-relations.md, not same-role words
 -should vowel pitch checker be very forgiving at beginning (check contour only rather than pitch matching)?
 -more stacked vowels (other series)
 -replace "one" special pronoun with unassigned tag, use tags in first order logic. zw*n for anonymous naming "Some person whom we will call zwan"
