@@ -1094,10 +1094,10 @@ const HOOK_SPAN: Record<string, string> = {
   uom: "strictly-between.approx",
   uon: "strictly-between.named",
   uor: "some.strictly-between",
-  aol: "in-turn",
-  aom: "in-turn.approx",
-  aon: "in-turn.named",
-  aor: "some.in-turn",
+  aol: "taking-turns",
+  aom: "taking-turns.approx",
+  aon: "taking-turns.named",
+  aor: "some.taking-turns",
 };
 
 function hookLabel(form: string, ctx: MorphGlossContext): string {

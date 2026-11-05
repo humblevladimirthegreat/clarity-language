@@ -758,15 +758,15 @@ Numeric prefix `-e-xROOT` (and quasi-N): the shape of a kind, not the real thing
 
 ### Range hook
 
-Stacked hook between same-role words on an ordered line: `oel` *through*, `ual` *strictly between*, `uol` *outside*.
+Stacked hook between same-role words on an ordered line: `oel` *through*, `uel` *through, B left out*, `ual` *outside*, `uol` *strictly between*, `aol` *in turn*.
 
 [Ranges in order](/ordered-ranges#ranges)
 
 ### Range / ray
 
-Numeric from–to with a hook between the ends (`al` / `ul`); a ray has ±∞ as one end. The same idea on any ordered line is the [range hook](#range-hook).
+A [range hook](#range-hook) between two number ends of one kind (`oel` / `uel`); a ray has ±∞ as one end.
 
-[Measures, ranges, and percent](/numbers-applied#ranges), [Open and named ranges](/open-ranges#rays)
+[Measures, ranges, and percent](/numbers-applied#number-ranges), [Open and named ranges](/open-ranges#rays)
 
 ### Rank join / set join / SHARED
 

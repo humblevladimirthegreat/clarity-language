@@ -291,24 +291,22 @@ Quantities themselves (*heavy*, *duration*) are ordinary roots, not units.
 
 ### Ranges {#ranges}
 
-Write both ends with the hook `al`: `A al B`. It reads as *through* when both ends are the same kind of number with digits. `ul` excludes the end after it.
+Write both ends with a [range hook](/ordered-ranges#ranges): `A oel B`. `uel` leaves out the end said second. Both ends are the same kind of number (amounts, ordinals, or labels).
 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`zragel oel zrazal`](/numbers-applied#ranges) | both ends in | *3 to 5* | I |
-| [`zragel uel zrazal`](/numbers-applied#ranges) | 5 left out | *3 up to but not including 5* | I |
-| [`zrazal uel zragel`](/numbers-applied#ranges) | 3 left out | *more than 3, up to 5* | I |
-| [`zragel oem zrazal`](/numbers-applied#ranges) | soft ends | *roughly 3 to 5* | I |
-| [`zragel uem zrazal`](/numbers-applied#ranges) | soft exclusion | *3 up to about 5, not quite 5* | I |
-| [`zragel uol zrazal`](/numbers-applied#ranges) | both ends out | *strictly between 3 and 5* | I |
-| [`zragel ual zrazal`](/numbers-applied#ranges) | outside the band | *below 3 or above 5* | I |
+| [`zragel oel zrazal`](/numbers-applied#number-ranges) | both ends in | *3 to 5* | I |
+| [`zragel uel zrazal`](/numbers-applied#number-ranges) | 5 left out | *3 up to but not including 5* | I |
+| [`zrazal uel zragel`](/numbers-applied#number-ranges) | 3 left out | *more than 3, up to 5* | I |
+| [`zragel oem zrazal`](/numbers-applied#number-ranges) | soft ends | *roughly 3 to 5* | I |
+| [`zragel uem zrazal`](/numbers-applied#number-ranges) | soft exclusion | *3 up to about 5, not quite 5* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [3 to 5](/numbers-applied#ranges) | `zragel oel zrazal.` | *From 3 to 5.* (both ends included) | I |
-| [Of a noun](/numbers-applied#ranges) | `zodozel gragel oel grazal vowurol.` | *Three to five dogs walk.* | I |
-| [Hours](/numbers-applied#ranges) | `zagorum gragel oel grazal.` | *Three to five hours.* | I |
+| [3 to 5](/numbers-applied#number-ranges) | `zragel oel zrazal.` | *From 3 to 5.* (both ends included) | I |
+| [Of a noun](/numbers-applied#number-ranges) | `zodozel gragel oel grazal vowurol.` | *Three to five dogs walk.* | I |
+| [Hours](/numbers-applied#number-ranges) | `zagorum gragel oel grazal.` | *Three to five hours.* | I |
 
 To limit to one end, make the other end infinity:
 
@@ -497,4 +495,4 @@ Only kin make generations: friends and bosses are [social relations](/social-tie
 | `x#2` *point 2:* ([a numbered step](/stacked-markers#examples)) | | `x#-2` *2nd from the end:* ([counting back](/stacked-markers#from-the-end)) |
 | `x-2` *independent item 2:* ([a new line of support](/stacked-markers#examples)) | | `x#-2` *2nd from the end:* ([counting back](/stacked-markers#from-the-end)) |
 | `th+70` *70% likely* ([a stance](/number-roles#number-as-stance-by-marker)) | | `thomam` *maybe* ([open, with no figure](/knowing#may)) |
-| `zragel oel zrazal` *3 to 5* ([a band](/numbers-applied#ranges)) | | `zragel zrazal zaol` *3, then 5* ([two values in order](/numbers-applied#ranges)) |
+| `zragel oel zrazal` *3 to 5* ([a band](/numbers-applied#number-ranges)) | | `zragel zrazal zaol` *3, then 5* ([two values in order](/numbers-applied#number-ranges)) |

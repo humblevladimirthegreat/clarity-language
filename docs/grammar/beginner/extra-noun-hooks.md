@@ -27,7 +27,7 @@ With an extra-noun hook, **-m** makes a **zone extra**: the landmark is the gene
 | **`al`** | *in* | **`am`** | *amid* | including a place; **-m** that volume as the setting |
 | **`ael`** | *on* | **`aem`** | *over* | including a face; **-m** that face as the setting |
 | **`el`** | *at* | **`em`** | *near* | instead a point; **-m** that point as the setting |
-| **`oel`** | *toward* | **`oem`** | *in the direction of* | *at* then *for*: aimed at one point; **-m** that aim as the setting |
+| **`oel`** | *toward* | **`oem`** | *in the direction of* | *for* then *at*: aimed for one point; **-m** that aim as the setting |
 | **`ul`** | *from* | **`um`** | *away from* | except that landmark; **-m** that origin as the setting |
 | **`ual`** | *out of* | **`uam`** | *out from among* | except a volume; **-m** that volume as the setting |
 | **`uel`** | *through* | **`uem`** | *by way of* | except via one path; **-m** that path as the setting |

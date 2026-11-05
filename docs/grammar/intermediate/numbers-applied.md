@@ -101,20 +101,15 @@ Words for a quantity itself (*heavy*, *flow*, *time* as a continuum, …) are or
 
 Spelled out, `bagorum g+3` is `bagorum gragel` *three hours*.
 
-### Ranges {#ranges}
-<a id="number-ranges"></a>
-<a id="numeric-ranges"></a>
-<a id="from-to"></a>
+### Ranges of numbers {#number-ranges}
 
-To give a range of numbers (*from 3 to 5*, *3 through 5*), write the two ends with the [hook](/hooks) **`al`** between them: `A al B`. No join word closes it, and no extra word names the scale.
+To give a range of numbers (*from 3 to 5*, *3 through 5*), write the two ends with a [range hook](ordered-ranges.md#ranges) between them, the same hooks that range people or days: `A oel B`. No join word closes it, and no extra word names the scale.
 
 > `zragel oel zrazal.`
 >
 > z-three | through | z-five
 >
 > "From 3 to 5." (both ends included)
-
-Between two numbers, *3, including 5* has nothing to include into, so **`al`** reads as *through*: the band from A reaching and including B. This reading needs both endpoints to be the **same kind** of number (both amounts, both ranks, or both labels / times), each with digits. A number with no digits keeps the ordinary hook (`zral oel zrazal` = *some number of them, including 5*), and so do mixed kinds.
 
 To count a range of things, put the endpoints on the counted noun, the same way one count sits on it. The noun names the line:
 
@@ -132,7 +127,7 @@ To count a range of things, put the endpoints on the counted noun, the same way 
 
 A word after **B** describes **B** alone, and a word on the counted noun describes the whole range. To add a detail to the range itself, put a `/w/` word right before the hook ([detail on the hook](ending-grids.md#hook-w)).
 
-**Exclude an end with `ul`.** *3, except 5* reads as the band that stops short of 5: the hook excludes the endpoint **after** it. The ends are read in the order you say them, so to exclude the low end, say it second.
+**Leave an end out with `uel`.** **`uel`** leaves out the end you say second, so to leave out the low end, say it second.
 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English |
@@ -142,10 +137,12 @@ A word after **B** describes **B** alone, and a word on the counted noun describ
 | `zrazal uel zragel` | 3 left out | *more than 3, up to 5* (`(3, 5]`) |
 | `zragel oem zrazal` | soft ends | *roughly 3 to 5* |
 | `zragel uem zrazal` | soft exclusion | *3 up to about 5, not quite 5* |
-| `zragel uol zrazal` | both ends out | *strictly between 3 and 5* (`(3, 5)`) |
-| `zragel ual zrazal` | outside the band | *below 3 or above 5* |
 
-**`ual`** and **`uol`** are the [range hooks](ordered-ranges.md#ranges), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zragel oel zrazam` = *3 to about 5*).
+An endpoint can still be fuzzy on its own (`zragel oel zrazam` = *3 to about 5*).
+
+**Both ends are the same kind of number.** A range needs one ordered line, and each number's [marker](number-markers.md#marker-vowel-referential-identity) says which line it is on: amounts (**`+`** / **`-`**), ordinals (**`#`**), or labels and times (**`_`**). A number with no digits is an end too. An amount through an ordinal (*three through 2nd*) has no reading. A name pairs with any number: `zazozon oel zrogel` is *from Azozon through the 3rd in line*.
+
+**Compare with:** `zragel al zrazal` is *3, including 5*: an ordinary [hook](/hooks#including), not a range.
 
 **Compare with:** `zragel zrazal zaol` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zazozon zalazun zol gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](locative-relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
 
@@ -332,7 +329,7 @@ Marker **`ru`** divides: *a third of*; **`ra`** is three pills.
 
 z-one | through | z-three
 
-An *and*-join names only the two ends; a range of numbers puts **`al`** between them.
+An *and*-join names only the two ends; a range of numbers puts **`oel`** between them.
 :::
 ## See also
 

@@ -49,7 +49,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | goal reached (*walks to the station*, *from a house to a station*) | hook **`el`** (*at*) + `/b/`; for *from … to*, **`ul`** + the source first | [Locative relations](/locative-relations#locative-relations) |
 | heading for, not there yet (*on the way to the train*) | hook **`oel`** (*toward*) + `/b/` | [Hooks](/extra-noun-hooks#extra-noun-intermediate) |
 | a stretch of time (*from the storm to the bell*) | one *from … to* unit: **`ul`** + start, **`oel`** + end | [Time](/digit-strings#time) |
-| end of a number range (*from 3 to 5*) | **`al`** between the two numbers | [Ranges](/numbers-applied#ranges) |
+| end of a number range (*from 3 to 5*; *up to but not including 5*) | range hook **`oel`** between the two numbers (**`uel`** leaves the second out) | [Ranges of numbers](/numbers-applied#number-ranges) |
 | end of a range on a line (*Azozon to Ahelan in the queue*) | **`oel`** between two words in one role | [Ranges](/ordered-ranges#ranges) |
 | purpose (*walks to sit*, *in order to sit*) | **`hovam blarl`** + the sentence, naming who sits | [So that](/dependents#so-that) |
 | an instruction or aim as content (*tells Alazun to sit*, *wishes to sit*) | stand-in **`dorl`** + the sentence; **`durl`** for *not to*; open **`dorm`** / **`durm`** when it may not be the only one (*and maybe more*) | [Stand-in vowels](/stand-in-vowels#stand-in) |

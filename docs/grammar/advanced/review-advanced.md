@@ -218,7 +218,7 @@ Open **-m** leaves exceptions; closed **-l** allows none.
 
 z-Ahelan | [d-baguette-x | g-minus-infinity] | through | g-five | v-see
 
-**`al`** keeps the five in (*at most five*); **`ul`** would leave it out (*fewer than five*).
+**`oel`** keeps the five in (*at most five*); **`uel`** would leave it out (*fewer than five*).
 
 **Rule:** [Rays](open-ranges.md#rays)
 :::

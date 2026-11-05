@@ -8,7 +8,7 @@ band: advanced
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-English *5 or more* / *less than 5* is a **ray**: a band with only one end. Write it as a [range](/numbers-applied#ranges) whose other end is infinity: **`zrawal`** (+∞) or **`zruwal`** (−∞), the [digitless exponents](special-values.md#special-values). The same **`al`** / **`ul`** rules apply, so the hook excludes the endpoint after it.
+English *5 or more* / *less than 5* is a **ray**: a band with only one end. Write it as a [range](/numbers-applied#number-ranges) whose other end is infinity: **`zrawal`** (+∞) or **`zruwal`** (−∞), the [digitless exponents](special-values.md#special-values). The same **`oel`** / **`uel`** rules apply, so **`uel`** leaves out the end said second.
 
 > `zrazal oel zrawal.`
 >
@@ -34,6 +34,8 @@ English *5 or more* / *less than 5* is a **ray**: a band with only one end. Writ
 For counts, −∞ reads as *no lower limit*: `zogozelx gruwal oel grazal` is *up to five cats*.
 
 Ranks take the first and last place as ends. **`growal`** is the last place and **`growul`** the first, so `zrodol oel zrowal` is *2nd through last*.
+
+**Both ends stay on one line.** ±∞ is an amount, and the first and last place are ranks, so a rank runs to the last place, not to infinity: *2nd through +∞* has no reading. An end with no digits is still an end (`zral oel zrazal`).
 
 **Compare with:** a rank join on one number is not a ray: `zrazal zol` is *only 5 matters*, and `zrazal zaol` is *start with 5*.
 
@@ -155,7 +157,7 @@ z-Alazun | [d-coin-x | g-three] | some.through | g-five | v-pay
 
 z-Ahelan | [d-car-x | g-plus-infinity] | through-excluding | g-five | v-see
 
-**`ul`** leaves out the 5 after it: *more than five*. With **`al`** the 5 is in: *five or more*.
+**`uel`** leaves out the 5 said second: *more than five*. With **`oel`** the 5 is in: *five or more*.
 :::
 
 #### What changes {#advanced-what-changes}

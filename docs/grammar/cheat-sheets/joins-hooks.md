@@ -156,7 +156,7 @@ A hook has no role letter: just a vowel (or two) and an ending. Tell the kinds a
 | `ar` | | [*Going back to that, …*](/discourse-hooks#hook-resume) | | I |
 | `ur` | | [*Never mind that, …*](/discourse-hooks#hook-resume) | | I |
 
-More: [parallel chains](/discourse-hooks#parallel-chains) `zuvayal am zazozon ul zalazun` (each hook applies to A); [detail on the hook](/ending-grids#hook-w) `wemem al` *even*; ranges `ual` *strictly between*, `uol` *outside*, `uar` *someone between*. All Intermediate.
+More: [parallel chains](/discourse-hooks#parallel-chains) `zuvayal am zazozon ul zalazun` (each hook applies to A); [detail on the hook](/ending-grids#hook-w) `wemem al` *even*; ranges `uel` *through, B left out*, `ual` *outside*, `uol` *strictly between*, `aol` *in turn*, `uor` *someone between*, `aor` *whoever's turn it is*. All Intermediate.
 
 <PageBreak />
 

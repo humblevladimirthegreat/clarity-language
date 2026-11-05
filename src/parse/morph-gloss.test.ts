@@ -116,9 +116,9 @@ describe("morphGlossLine — SHARED only where it can describe the join", () => 
     expectLine("zazozon uar zahelan vezuvel.", "z-Azozon | some.outside | z-Ahelan | v-sleep");
     expectLine("zazozon uel zahelan.", "z-Azozon | through-excluding | z-Ahelan");
     expectLine("zazozon uer zahelan vowurol.", "z-Azozon | some.through-excluding | z-Ahelan | v-walk");
-    expectLine("zazozon aol zahelan vowurol.", "z-Azozon | in-turn | z-Ahelan | v-walk");
-    expectLine("zazozon aor zahelan vowurol.", "z-Azozon | some.in-turn | z-Ahelan | v-walk");
-    expectLine("zragel aom zrazal.", "z-three | in-turn.approx | z-five");
+    expectLine("zazozon aol zahelan vowurol.", "z-Azozon | taking-turns | z-Ahelan | v-walk");
+    expectLine("zazozon aor zahelan vowurol.", "z-Azozon | some.taking-turns | z-Ahelan | v-walk");
+    expectLine("zragel aom zrazal.", "z-three | taking-turns.approx | z-five");
     expectLine("z+13 oen z+19.", "NAME[z-13 | through | z-19]");
     expectLine("zazozon vowurol bohehal oel bobewol.", "z-Azozon | v-walk | b-house | through | b-pencil");
   });

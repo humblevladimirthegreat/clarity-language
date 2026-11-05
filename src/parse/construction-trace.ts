@@ -290,8 +290,10 @@ function isExistence(clause: Clause): boolean {
   );
 }
 
-/** Collect `reading.*` IDs from utterance and clause shapes and shared scales. */
+/** Collect `reading.*` IDs from utterance and clause shapes and shared scales, and `rangeMember.*` from range hooks on -r. */
 export function addReadingConstructions(result: ParseResult, out: Set<string>): void {
+  const rangeMembers = new Set<string>();
+  const otherHookForms = new Set<string>();
   for (const utterance of result.utterances) {
     const force = actWord(utterance.left)?.raw;
     if (utterance.bodies.length === 0 && (force === "yel" || force === "yem")) out.add("reading.bareQuestion");
@@ -313,10 +315,24 @@ export function addReadingConstructions(result: ParseResult, out: Set<string>): 
       if (node.kind === "clause" || node.kind === "island" || node.kind === "vp") {
         const lists = node.kind === "clause" ? [node.clause.units] : node.kind === "island" ? [node.island.units] : vpUnitLists(node.coord);
         if (lists.some((units) => units.some((u) => u.kind === "hook" && u.fromTo))) out.add("reading.fromTo");
+        for (const units of lists) {
+          for (const u of units) {
+            if (u.kind !== "hook" || u.word.family.kind !== "hook") continue;
+            const form = u.word.family.form;
+            if (u.job === "span" && u.word.ending === "r") rangeMembers.add(form);
+            else otherHookForms.add(form);
+          }
+        }
       }
       if (node.kind !== "shared" || !isScaleShared(node.item)) return;
       if (node.item.word.pos === "g") out.add("reading.amountScale");
       if (node.item.word.pos === "h") out.add("reading.frequencyScale");
     },
   });
+  // A range hook on -r between same-role words is a range member (ordered-ranges.md#ranges), not the point-back the
+  // same spelling makes with nothing on its right; keep the form's own `hook.*` only when the sentence also uses it that way.
+  for (const form of rangeMembers) {
+    out.add(`rangeMember.${form}`);
+    if (!otherHookForms.has(form)) out.delete(`hook.${form}`);
+  }
 }

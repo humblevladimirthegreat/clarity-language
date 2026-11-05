@@ -109,9 +109,9 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 ### *Most* {#most}
 
-**Needs:** [Percent](/numbers-applied#percent-and-percentage-points) · [Ranges](/numbers-applied#ranges)
+**Needs:** [Percent](/numbers-applied#percent-and-percentage-points) · [Ranges](/numbers-applied#number-ranges)
 
-*Most of the cats* means *more than half*: the band from all of them down to half, with half left out. Write **`g+100%`**, then **`ul`**, then **`g+50%`**. The hook excludes the endpoint after it.
+*Most of the cats* means *more than half*: the band from all of them down to half, with half left out. Write **`g+100%`**, then **`uel`**, then **`g+50%`**. **`uel`** leaves out the end said second.
 
 > `zogozelx g+100% uel g+50% vehohel.`
 >
@@ -157,7 +157,7 @@ A ratio (*three cats to one dog*) is a [factor](/comparative-arity#factor) on th
 
 **Needs:** [Percent](/numbers-applied#percent-and-percentage-points) · [Number as adverb](/number-roles#number-as-adverb-by-marker) · [Of relations](/of-relations#of-relations)
 
-**`yu`** is a point-scale amount or delta (`+2` percentage points; often `/v/` **`ra`** / **`ru`**: increase or decrease by that point amount). `from A% to B%` uses [ranges](/numbers-applied#ranges).
+**`yu`** is a point-scale amount or delta (`+2` percentage points; often `/v/` **`ra`** / **`ru`**: increase or decrease by that point amount). `from A% to B%` uses [ranges](/numbers-applied#number-ranges).
 
 **For *+50% relative to baseline*, use:** a multiplicative `/h/` factor (**`h+1.5`**, …) or ordinary *relative-to* wording.
 
@@ -170,7 +170,7 @@ A bare `/z/` (or other freestanding) **`…yo`** percent with no named whole is 
 ### Unspecified value in the range (**-r**)
 <a id="unspecified-value-in-the-range--r"></a>
 
-**Needs:** [Ranges](/numbers-applied#ranges) · [Named and unknown ranges](/open-ranges#named-ranges)
+**Needs:** [Ranges](/numbers-applied#number-ranges) · [Named and unknown ranges](/open-ranges#named-ranges)
 
 A range hook with **-r** names **one value in the band** without saying which.
 
@@ -183,7 +183,7 @@ A range hook with **-r** names **one value in the band** without saying which.
 
 Under [question](/questions#fill-ask-r) force, these are fill-asks (*which value from 3 to 5?*). The same shape works under `/d/` `/b/` `/ɡ/` as the slot needs (`d+10 uer d+20` = object *some value from 10 up to 20*).
 
-**Not the same job as:** the resume hooks `ar` / `ur` with nothing on the right (*in there* / *from there*), and discrete *something among two listed values* (`zragel zrazal zar`).
+**Not the same job as:** a hook **-r** with nothing on the right, which points back (`uer` *through there*), and discrete *something among two listed values* (`zragel zrazal zar`).
 
 ## Degree, manner and frequency words {#degree-manner}
 
@@ -424,7 +424,7 @@ English *just*, *only*, *especially* and *also* point at one item and say how it
 
 ### Group, crowd, bunch, pair, list, range, member {#group-words}
 
-**Needs:** [Associative group](/plurality#associative) · [Many and few](/vague-amounts#vague-amounts) · [Unspecified member](/joins#unspecified-member-r) · [Ranges](/numbers-applied#ranges) · [Of relations](/of-relations#of-relations)
+**Needs:** [Associative group](/plurality#associative) · [Many and few](/vague-amounts#vague-amounts) · [Unspecified member](/joins#unspecified-member-r) · [Ranges](/numbers-applied#number-ranges) · [Of relations](/of-relations#of-relations)
 
 English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). Ageben has no noun for the set itself. It marks the kind as a **group in this situation** with **-x** after the ending (**-lx** for everyday things), and a number or a vague amount says how big. A set of people, flowers or cats is the kind plus **-x**, not a separate word.
 

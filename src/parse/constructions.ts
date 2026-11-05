@@ -568,30 +568,18 @@ export const STAND_IN_BACK_CONSTRUCTIONS: Record<Vowel, ConstructionEntry> = {
 };
 
 /** Hook forms (hooks.md, discourse-hooks.md). */
-export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "or" | "er" | "ur" | "aor" | "aer" | "uer" | "uor" | "uar" | "oer", ConstructionEntry> = {
+export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "or" | "er" | "ur" | "aor" | "aer" | "uer", ConstructionEntry> = {
   ar: { anchor: "discourse-hooks.md#hook-resume", summary: "ar resume hook" },
   er: { anchor: "discourse-hooks.md#hook-resume", summary: "er resume hook" },
   or: { anchor: "discourse-hooks.md#hook-resume", summary: "or resume hook" },
   ur: { anchor: "discourse-hooks.md#hook-resume", summary: "ur resume hook" },
-  aor: {
-    anchor: "discourse-hooks.md#hook-resume",
-    summary: "aor resume hook (with it) / some.in-turn range hook",
-    reader:
-      "`A | some.in-turn | B` = the current one, whose turn it is, on the walk from A through B (the ones before it have had their turn); under a question it asks which one now (whose turn? which chapter are you on?). With nothing on its right, `aor` points back (with it).",
-  },
+  aor: { anchor: "discourse-hooks.md#hook-resume", summary: "aor resume hook (with it)" },
   aer: { anchor: "discourse-hooks.md#hook-resume", summary: "aer resume hook (on it)" },
-  uor: { anchor: "ordered-ranges.md#ranges", summary: "uor some.strictly-between range hook" },
-  uar: { anchor: "ordered-ranges.md#ranges", summary: "uar some.outside range hook" },
-  oer: { anchor: "ordered-ranges.md#ranges", summary: "oer some.through range hook" },
-  uer: {
-    anchor: "discourse-hooks.md#hook-resume",
-    summary: "uer resume hook (through there) / some.through-excluding range hook",
-    reader: "`A | some.through-excluding | B` = some one member from A up to B, B left out. With nothing on its right, `uer` points back (through there).",
-  },
+  uer: { anchor: "discourse-hooks.md#hook-resume", summary: "uer resume hook (through there)" },
   al: {
     anchor: "hooks.md#including-am-al",
     summary: "al including",
-    reader: "`A | including | B` keeps its reading between two numbers (`z-3 | including | z-5` = 3, including 5); a range of numbers uses the range hooks (through, through-excluding, outside, strictly-between, in-turn).",
+    reader: "`A | including | B` keeps its reading between two numbers (`z-3 | including | z-5` = 3, including 5); a range of numbers uses the range hooks (through, through-excluding, outside, strictly-between, taking-turns).",
   },
   am: { anchor: "hooks.md#including-am-al", summary: "am including" },
   el: { anchor: "hooks.md#instead-el", summary: "el instead" },
@@ -606,9 +594,9 @@ export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "or" | "er" 
   um: { anchor: "hooks.md#closed-and-open-endings", summary: "um except" },
   aol: {
     anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m",
-    summary: "aol using / in-turn",
+    summary: "aol using / taking-turns",
     reader:
-      "`A | in-turn | B` between two same-role words = A through B, one after another, in the order said (a walk, not a set: `through` names the set).",
+      "`A | taking-turns | B` between two same-role words = A through B, one after another, in the order said (a walk, not a set: `through` names the set).",
   },
   aom: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "aom by" },
   ael: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "ael on" },
@@ -617,7 +605,7 @@ export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "or" | "er" 
     anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m",
     summary: "oel toward / through",
     reader:
-      "Range hooks between two same-role words: `through` A, B and all between; `through-excluding` A up to B, B (the end said second) left out; `outside` only what lies beyond the A–B band; `strictly-between` only what lies between; `in-turn` A through B one after another. `.approx` softens the ends, `.named` names the band, `some.` is one unnamed member. A hook + `b-` right after a landmark always describes that landmark, never a range.",
+      "Range hooks between two same-role words: `through` A, B and all between; `through-excluding` A up to B, B (the end said second) left out; `outside` only what lies beyond the A–B band; `strictly-between` only what lies between; `taking-turns` A through B one after another. `.approx` softens the ends, `.named` names the band, `some.` is one unnamed member. A hook + `b-` right after a landmark always describes that landmark, never a range.",
   },
   oem: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "oem" },
   ual: {
@@ -643,6 +631,24 @@ export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "or" | "er" 
     reader: "`A | through-excluding | B` = from A up to B, the end said second left out: `z-3 | through-excluding | z-5` = 3 up to but not including 5; `z-5 | through-excluding | z-3` leaves 3 out.",
   },
   uem: { anchor: "extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "uem by-way-of" },
+};
+
+/** Range hooks on **-r** between two same-role words: one unnamed member of the range (ordered-ranges.md#ranges). */
+export const RANGE_MEMBER_CONSTRUCTIONS: Record<"oer" | "uer" | "uar" | "uor" | "aor", ConstructionEntry> = {
+  oer: { anchor: "ordered-ranges.md#ranges", summary: "oer some member, A through B" },
+  uer: {
+    anchor: "ordered-ranges.md#ranges",
+    summary: "uer some member, A up to B, B left out",
+    reader: "`A | some.through-excluding | B` = some one member from A up to B, B left out.",
+  },
+  uar: { anchor: "ordered-ranges.md#ranges", summary: "uar some member outside A–B" },
+  uor: { anchor: "ordered-ranges.md#ranges", summary: "uor some member strictly between A and B" },
+  aor: {
+    anchor: "ordered-ranges.md#ranges",
+    summary: "aor the current one, whose turn it is",
+    reader:
+      "`A | some.taking-turns | B` = the current one, whose turn it is, on the walk from A through B (the ones before it have had their turn); under a question it asks which one now (whose turn? which chapter are you on?).",
+  },
 };
 
 /** Span features: the written fidelity marks (spans.md). */
@@ -733,6 +739,7 @@ export const CONSTRUCTIONS: ReadonlyMap<string, ConstructionEntry> = new Map([
   ...prefixed("standIn", STAND_IN_CONSTRUCTIONS),
   ...prefixed("standInBack", STAND_IN_BACK_CONSTRUCTIONS),
   ...prefixed("hook", HOOK_FORM_CONSTRUCTIONS),
+  ...prefixed("rangeMember", RANGE_MEMBER_CONSTRUCTIONS),
   ...prefixed("span", SPAN_FEATURE_CONSTRUCTIONS),
   ...prefixed("role", ROLE_FEATURE_CONSTRUCTIONS),
   ...prefixed("pointer", POINTER_FEATURE_CONSTRUCTIONS),
