@@ -24,6 +24,7 @@ A proposal is a plan for a change that is too large or too undecided to make in 
 **Body sections:** Problem, Goals, Non-goals, then the findings or the design, then the implementation plan, then **Open decisions**.
 
 - Grammar decisions belong to the user. An agent that meets one while carrying out a proposal logs it under Open decisions, skips the item, and carries on with the rest.
+- Each logged open decision states the problem, lists the options, and ends with a **Recommendation:** the option the agent would pick and why, in a sentence or two, weighed by its effect on the learner. The user still decides; the recommendation saves a round of analysis. When the agent has no basis to choose, it says so and names what would settle it.
 - A settled reading goes on its grammar page. A rejection with a reason beyond *no reading yet* also gets an entry in [design-decisions.md](design-decisions.md).
 
 ### Stop and alert
