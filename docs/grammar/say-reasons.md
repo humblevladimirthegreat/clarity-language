@@ -64,6 +64,33 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 | *unfortunately* | `thudathum` | unspecified sake, unmet, can be softened |
 | *unfortunately* (and it is final) | `thudathul` | unspecified sake, unmet, irreversible |
 
+*I think* needs no word: your bare claim is already your view. Add MAY when you are unsure.
+
+| English | Ageben | Reading |
+|---------|--------|---------|
+| *I think* / *I believe* / *think* / *believe* (your own view) | the bare claim, or `thomam` | yours; MAY if you are unsure |
+| *I suspect* / *suspect* | `thomam` | MAY, could be |
+| *I doubt* / *doubt* | `thevemem` | doubt |
+| *I'm watching* / *watching* | `thugem` | LIVE, you are watching it now |
+
+Someone else's view is never a bare claim. Put a holder on the clause, which says how you know their view.
+
+| English | Ageben | Teach |
+|---------|--------|-------|
+| *thinks* / *believes* / *think* / *believe* (someone else's view) | the holder alone: `theyomazozon` (*I gather*), `thebamazozon` (*I hear*), `thomamazozon` (*maybe*) | [Whose view](/holder#holder) |
+| *sure* / *confident* (someone else is) | holder + certainty: `theyomazozon thrawal` | [Whose view](/holder#holder) |
+| *suspects* / *suspect* (someone else's hunch) | holder + MAY: `theyomazozon thomam` | [Whose view](/holder#holder) |
+| *doubts* / *doubt* (someone else's doubt) | holder + doubt: `theyomazozon thevemem` | [Whose view](/holder#holder) |
+| *expects* / *expect* (someone else's forecast) | holder + forecast: `thebamazozon blral` | [Whose view](/holder#holder) |
+| *watching* / *watches* (someone else is) | holder + LIVE: `theyomazozon thugem` | [Whose view](/holder#holder) |
+| *motive* / *motivation* (someone else's) | motive + holder: `thawethom theyomazozon` | [Whose view](/holder#holder) |
+
+> `zalazun theyomazozon vudurul.`
+>
+> z-Alazun | th-CLUES-Azozon | v-departure
+>
+> "I gather Azozon thinks Alazun left."
+
 > `zazozon theyol vowurol.`
 >
 > z-Azozon | th-CLUES.strong | v-walk

@@ -1,34 +1,34 @@
 {
   "sets": {
     "doc": {
-      "sentences": 1249,
-      "selfContained": 57.2,
-      "wordInPrompt": 77.9,
-      "rootTop1Open": 83.7,
-      "closedRowFirst": 53.7,
-      "rootAnywhere": 91.2,
+      "sentences": 1262,
+      "selfContained": 58.2,
+      "wordInPrompt": 78.2,
+      "rootTop1Open": 83.8,
+      "closedRowFirst": 55.3,
+      "rootAnywhere": 91.4,
       "constructionPage": 42.7,
-      "gapRate": 3.5,
-      "promptChars": 14520
+      "gapRate": 3.4,
+      "promptChars": 14591
     },
     "checkpoint": {
-      "sentences": 437,
-      "selfContained": 62.5,
-      "wordInPrompt": 77.6,
-      "rootTop1Open": 91.8,
-      "closedRowFirst": 56.1,
-      "rootAnywhere": 94.2,
-      "constructionPage": 45.8,
+      "sentences": 444,
+      "selfContained": 64.2,
+      "wordInPrompt": 78.1,
+      "rootTop1Open": 91.9,
+      "closedRowFirst": 58.7,
+      "rootAnywhere": 94.3,
+      "constructionPage": 45.6,
       "gapRate": 2.9,
-      "promptChars": 14387,
-      "stagedSelfContained": 62.2,
-      "verifyPrecision": 90.8,
-      "verifyRecall": 100
+      "promptChars": 14493,
+      "stagedSelfContained": 63.7,
+      "verifyPrecision": 91,
+      "verifyRecall": 99.6
     },
     "wild": {
       "sentences": 231,
-      "gapRate": 5.1,
-      "promptChars": 14936
+      "gapRate": 5.2,
+      "promptChars": 15035
     }
   }
 }

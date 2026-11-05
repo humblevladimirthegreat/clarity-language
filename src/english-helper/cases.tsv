@@ -160,3 +160,16 @@ Azozon walks after Ahelan.	after	link:same-role-words.md#before-and-after	both w
 Azozon walks while swimming.	while	link:same-role-words.md#same-role-while	one doer, two verbs at once
 Azozon, like Ahelan, walks.	like	link:same-role-words.md#same-role-like	B a separate member
 Animals like dogs sleep.	like	link:discourse-hooks.md#stacked-discourse	B an example of A still suggests am
+# Someone else's view: belief, certainty, doubt, forecast, perception, motive
+Azozon thinks Alazun left.	thinks	link:holder.md#holder	someone else's view takes the holder alone
+Azozon thinks Alazun left.	thinks	not:say-reasons.md#stance-adverbs	the bare MAY row is the holder's host twin
+I think Alazun left.	I think	not:holder.md#holder	the speaker's own view is a bare claim or MAY
+I really think Alazun left.	think	link:say-reasons.md#stance-adverbs	the speaker owns *think* past an adverb
+I really think Alazun left.	think	not:holder.md#holder	the speaker's view takes no holder
+Azozon is sure Alazun left.	sure	link:holder.md#holder	someone else's certainty takes a holder
+Azozon is sure Alazun left.	sure	not:say-reasons.md#trait-words	the bare certainty row is the holder row's twin
+Azozon suspects Alazun left.	suspects	link:holder.md#holder	someone else's hunch is holder + MAY
+Azozon doubts it.	doubts	link:holder.md#holder	someone else's doubt takes a holder
+Azozon expects rain.	expects	not:say-tense.md#ability-words	the bare forecast row is the holder row's twin
+Azozon is watching Alazun leave.	watching	link:holder.md#holder	someone else's watching is holder + LIVE
+His motive is money.	motive	link:holder.md#holder	a possessor's motive takes a holder

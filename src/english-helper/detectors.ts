@@ -323,6 +323,14 @@ export function extraNounHook(word: string): DetectorHit {
  */
 export const HOLDER_LINKS: readonly string[] = ["holder.md#holder", "want.md#whose-intention"];
 
+/**
+ * A holder word's host: a channel or MAY with a person noun joined on its seam (`theyom` + `azozon`),
+ * else undefined. The person is at least four letters and ends as a noun does (holder.md#holder).
+ */
+export function holderHost(word: string): string | undefined {
+  return /^(th[aeiou](?:th|[bdghlmnrvwyz])[aeiou][lmr])[aeiou][a-z]{2,}[nlrx]$/.exec(word)?.[1];
+}
+
 /** Whose stance a word before the stance names: the speaker, or someone else. *we* is neither, so both rows stay. */
 const SPEAKER_WORDS = new Set(["i", "me", "my", "mine", "myself"]);
 const OTHER_PRONOUNS = new Set([

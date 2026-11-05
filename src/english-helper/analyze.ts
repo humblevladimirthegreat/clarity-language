@@ -13,7 +13,7 @@ import { BANDS } from "../lint/learning-order.js";
 import { markerToSpeech, digitsToSyllables } from "../tts/numbers.js";
 import { COUNT_SLOT, grammarPath, matchCues, RANK_SLOT, resolveLink, type CueIndex, type GrammarJob } from "./cues.js";
 import type { CompoundRow } from "../lexicon-compounds.js";
-import { BOUNDABLE_JOINS, BOUNDABLE_RESTRICTORS, COMPOUND_LINKS, HOLDER_LINKS, stanceOwner, detectClause, detectClauseOpener, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAKE_ENDINGS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
+import { BOUNDABLE_JOINS, BOUNDABLE_RESTRICTORS, COMPOUND_LINKS, HOLDER_LINKS, holderHost, stanceOwner, detectClause, detectClauseOpener, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAKE_ENDINGS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
 import { lookupLexicon, rootsByForm, sideEnding, type LexiconIndex, type LexiconSuggestion } from "./lexicon.js";
 import { doerVerb, tagEnglish, type ClauseFeatures, type TaggedTerm, type WordClass } from "./tag.js";
 import { lookupRoute, lookupWordnet, senseSuggestions, type RouteClass, type WordnetIndex, type WordnetPos } from "./wordnet-index.js";
@@ -201,8 +201,10 @@ function byStanceOwner(jobs: JobSuggestion[], terms: readonly TaggedTerm[], i: n
   const owner = j >= 0 ? stanceOwner(terms[j]!) : undefined;
   if (owner === "speaker") return jobs.filter((x) => !holder(x));
   if (owner !== "other") return jobs;
-  const stances = new Set(jobs.filter(holder).flatMap((x) => formPieces(x.form).map((p) => p.split(/\s+/).pop()!)));
-  const twin = (x: JobSuggestion) => !holder(x) && formPieces(x.form).some((p) => stances.has(p));
+  // The stance a holder row repeats: each word after the holder, or the host of a holder alone (`thomamazozon` → `thomam`).
+  const words = (form: string) => formPieces(form).flatMap((p) => p.replace(/[.?!]$/, "").split(/\s+/));
+  const stances = new Set(words(jobs.filter(holder).map((x) => x.form).join(" / ")).map((w) => holderHost(w) ?? w));
+  const twin = (x: JobSuggestion) => !holder(x) && words(x.form).some((w) => !holderHost(w) && stances.has(w));
   return [...jobs.filter(holder), ...jobs.filter((x) => !holder(x) && !twin(x))];
 }
 

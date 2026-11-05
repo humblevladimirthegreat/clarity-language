@@ -1,6 +1,6 @@
 # Proposal: Someone else's stance in the English helper
 
-**Status:** PROPOSED. Steps 1–4 can start now. Steps 5 and 6 wait on decisions D1–D3 ([open decisions](#open-decisions)). Steps done: none.
+**Status:** Ready to implement. D1–D3 accepted as recommended (2026-11-05). Steps done: 1.
 
 Already landed (2026-11-05), the base this builds on:
 - `2b9acf28`: holder rows for someone else's want and plan on [say-tense.md](../grammar/say-tense.md) (*Will, want, try, let's*).
