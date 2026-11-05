@@ -13,7 +13,7 @@ import { BANDS } from "../lint/learning-order.js";
 import { markerToSpeech, digitsToSyllables } from "../tts/numbers.js";
 import { COUNT_SLOT, grammarPath, matchCues, RANK_SLOT, resolveLink, type CueIndex, type GrammarJob } from "./cues.js";
 import type { CompoundRow } from "../lexicon-compounds.js";
-import { BOUNDABLE_JOINS, BOUNDABLE_RESTRICTORS, COMPOUND_LINKS, detectClause, detectClauseOpener, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAKE_ENDINGS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
+import { BOUNDABLE_JOINS, BOUNDABLE_RESTRICTORS, COMPOUND_LINKS, HOLDER_LINKS, stanceOwner, detectClause, detectClauseOpener, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAKE_ENDINGS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
 import { lookupLexicon, rootsByForm, sideEnding, type LexiconIndex, type LexiconSuggestion } from "./lexicon.js";
 import { doerVerb, tagEnglish, type ClauseFeatures, type TaggedTerm, type WordClass } from "./tag.js";
 import { lookupRoute, lookupWordnet, senseSuggestions, type RouteClass, type WordnetIndex, type WordnetPos } from "./wordnet-index.js";
@@ -182,6 +182,28 @@ function classRole(terms: readonly TaggedTerm[], i: number, outer: readonly Tagg
     if (p.cls === "verb" || p.cls === "auxiliary" || p.cls === "modal") return "d";
   }
   return "z";
+}
+
+/** Words between a stance's owner and the stance (*I really want*, *Azozon does not plan*). */
+const OWNER_SKIP = new Set<WordClass>(["adverb", "auxiliary", "modal", "negative"]);
+
+/**
+ * Whose stance a cue run at `i` reports: the subject or possessor right before it, past adverbs,
+ * auxiliaries and *not* (*I really want to*, *Azozon's plan is to*, *do you want to*). With the
+ * speaker, a holder row goes; with someone else, the bare stance row the holder row repeats goes
+ * (holder rows: {@link HOLDER_LINKS}). With no owner found, or *we*, both stay.
+ */
+function byStanceOwner(jobs: JobSuggestion[], terms: readonly TaggedTerm[], i: number): JobSuggestion[] {
+  const holder = (j: JobSuggestion) => HOLDER_LINKS.includes(j.link);
+  if (!jobs.some(holder)) return jobs;
+  let j = i - 1;
+  while (j >= 0 && OWNER_SKIP.has(terms[j]!.cls)) j--;
+  const owner = j >= 0 ? stanceOwner(terms[j]!) : undefined;
+  if (owner === "speaker") return jobs.filter((x) => !holder(x));
+  if (owner !== "other") return jobs;
+  const stances = new Set(jobs.filter(holder).flatMap((x) => formPieces(x.form).map((p) => p.split(/\s+/).pop()!)));
+  const twin = (x: JobSuggestion) => !holder(x) && formPieces(x.form).some((p) => stances.has(p));
+  return [...jobs.filter(holder), ...jobs.filter((x) => !holder(x) && !twin(x))];
 }
 
 /** A join word's role letter by what comes before it: after a preposition `/b/`, after a verb `/d/`, else `/z/`. */
@@ -760,7 +782,7 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
         const run = terms.slice(i, end);
         const t = run[run.length - 1]!;
         const one = run.length === 1;
-        const jobs: JobSuggestion[] = (match?.jobs ?? []).map((j) => {
+        const jobs: JobSuggestion[] = byStanceOwner((match?.jobs ?? []).map((j) => ({ ...j, kind: "job" as const, tier: "grammar" as const })), terms, i).map((j) => {
           const phrase = run.some((r) => r.cls === "number") ? numberCuePhrase(data, j, run, nounFollows(terms, end)) : undefined;
           const job: JobSuggestion = { ...j, kind: "job", tier: "grammar", ...(phrase ? { phrase } : {}) };
           spellJoinVowel(data, job, terms, end, roleOf);

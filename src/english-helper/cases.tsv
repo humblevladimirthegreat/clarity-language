@@ -140,3 +140,7 @@ Do you want to sing?	want to	link:want.md#whose-intention	the listener's want is
 I want to walk.	I want to	not:want.md#whose-intention	the speaker's own want is WANT alone
 My plan is to walk.	My plan is to	not:holder.md#holder	the speaker's own plan is PLAN alone
 I plan to walk.	I plan to	not:holder.md#holder	the speaker's own plan is PLAN alone
+Do you really want to sing?	want to	link:want.md#whose-intention	the owner is found past an adverb
+Azozon does not want to walk.	want to	link:want.md#whose-intention	the owner is found past *does not*
+His plan is to walk.	plan is to	link:holder.md#holder	a possessor owns the plan
+Azozon wanted to walk.	wanted to	link:want.md#whose-intention	a past *wanted to* matches the *want to* cue

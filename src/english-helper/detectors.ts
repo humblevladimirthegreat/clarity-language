@@ -316,9 +316,29 @@ export function extraNounHook(word: string): DetectorHit {
   return { id: "extra-noun-hook", label: `*${word}* + a noun: an extra-noun hook, then the noun in \`/b/\``, links: [...HOOK_LINKS.extraNoun] };
 }
 
+/**
+ * A row for someone else's stance (*Azozon wants to*, *Azozon's plan is to*) links one of these: the
+ * stance then takes a holder. The analyzer drops it when the speaker owns the stance, and drops its
+ * bare twin when someone else does.
+ */
+export const HOLDER_LINKS: readonly string[] = ["holder.md#holder", "want.md#whose-intention"];
+
+/** Whose stance a word before the stance names: the speaker, or someone else. *we* is neither, so both rows stay. */
+const SPEAKER_WORDS = new Set(["i", "me", "my", "mine", "myself"]);
+const OTHER_PRONOUNS = new Set([
+  "you", "your", "yours", "he", "him", "his", "she", "her", "hers", "hor", "it", "its", "they", "them", "their", "theirs", "thom",
+  "someone", "somebody", "everyone", "everybody", "anyone", "anybody", "nobody", "who",
+]);
+export function stanceOwner(word: { normal: string; cls: string }): "speaker" | "other" | undefined {
+  if (SPEAKER_WORDS.has(word.normal)) return "speaker";
+  if (word.cls === "noun" || OTHER_PRONOUNS.has(word.normal)) return "other";
+  return undefined;
+}
+
 /** Every link the detector table names, for the anchor test. */
 export function detectorLinks(): string[] {
   return [
+    ...HOLDER_LINKS,
     ...Object.values(SAME_ROLE_HOOKS),
     ...Object.values(HOOK_LINKS).flat(),
     ...Object.values(OPENER_LINKS).flat(),
