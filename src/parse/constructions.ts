@@ -148,7 +148,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "npJoinClose.JoinZ": { anchor: "joins.md#and-lists-a", summary: "/z/ join fence" },
   "npJoinClose.JoinD": { anchor: "joins.md#and-lists-a", summary: "/d/ join fence" },
   "npJoinClose.JoinB": { anchor: "joins.md#and-lists-a", summary: "/b/ join fence" },
-  "npJoinClose.W": { anchor: "rank-joins.md#respectively", summary: "respectively /w/ before a noun join word" },
+  "npJoinClose.W": { anchor: "list-structure.md#respectively", summary: "respectively /w/ before a noun join word" },
   "npJoinClose.factor": { anchor: "comparative-arity.md#factor", summary: "ratio number after an equative scale" },
   "npJoinClose.sharedAfterJoin": { anchor: "joins.md#right-close", summary: "shared word after a noun join" },
   "npJoinClose.joinLandmark": { anchor: "hooked-joins.md#hooked-joins", summary: "a hooked join's bl- landmark" },
@@ -163,7 +163,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "vpItemUnit.bCoord": { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "/b/ phrase inside a verb item" },
   "vpItemUnit.hCoord": { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "/h/ unit inside a verb item" },
   "vpItemUnit.hookUnit": { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "extra-noun hook inside a verb item" },
-  "vJoinClose.W": { anchor: "rank-joins.md#respectively", summary: "respectively /w/ before a verb join word" },
+  "vJoinClose.W": { anchor: "list-structure.md#respectively", summary: "respectively /w/ before a verb join word" },
   "vJoinClose.JoinV": { anchor: "joins.md#and-lists-a", summary: "/v/ join fence" },
   "vJoinClose.sharedAfterJoin": { anchor: "vp-clause-forms.md#vp-clause-forms", summary: "shared /h/ after a verb join (covers every verb)" },
 
@@ -174,15 +174,15 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
     anchor: "fill-ask-jobs.md#what-kind",
     summary: "/ɡ/ join closing the adjective on the noun before it",
   },
-  "gJoinClose.W": { anchor: "rank-joins.md#respectively", summary: "respectively /w/ before an adjective join word" },
+  "gJoinClose.W": { anchor: "list-structure.md#respectively", summary: "respectively /w/ before an adjective join word" },
   "gJoinClose.JoinG": { anchor: "joins.md#and-lists-a", summary: "/ɡ/ join fence" },
 
-  "hCoord.hCoordPart": { anchor: "join-across-roles.md#stance-joins", summary: "/h/ phrase parts" },
+  "hCoord.hCoordPart": { anchor: "vp-clause-forms.md#stance-joins", summary: "/h/ phrase parts" },
   "hCoordPart.hUnitRule": { anchor: "clause.md#adverbs-h", summary: "adverb or stance word" },
-  "hCoordPart.hJoinClose": { anchor: "join-across-roles.md#stance-joins", summary: "/h/ join after its adverbs" },
-  "hCoordPart.standaloneJoin": { anchor: "join-across-roles.md#standalone-stance-joins", summary: "standalone stance /th/ join" },
-  "hCoordPart.lateBound": { anchor: "join-across-roles.md#stance-join-before-barl", summary: "stance join between a hinge and its blarl" },
-  "hJoinClose.JoinH": { anchor: "join-across-roles.md#stance-joins", summary: "/h/ join fence" },
+  "hCoordPart.hJoinClose": { anchor: "vp-clause-forms.md#stance-joins", summary: "/h/ join after its adverbs" },
+  "hCoordPart.standaloneJoin": { anchor: "vp-clause-forms.md#standalone-stance-joins", summary: "standalone stance /th/ join" },
+  "hCoordPart.lateBound": { anchor: "vp-clause-forms.md#stance-join-before-barl", summary: "stance join between a hinge and its blarl" },
+  "hJoinClose.JoinH": { anchor: "vp-clause-forms.md#stance-joins", summary: "/h/ join fence" },
 
   "hUnitRule.W": { anchor: "clause.md#adjective-detail-w", summary: "/w/ detail on an adverb" },
   "hUnitRule.H": { anchor: "clause.md#adverbs-h", summary: "/h/ or /th/ word" },
@@ -522,9 +522,9 @@ export const JOIN_SERIES_CONSTRUCTIONS: Record<JoinSeries, ConstructionEntry> = 
   ua: { anchor: "joins.md#everything-ua", summary: "everything but" },
   uo: { anchor: "rank-joins.md#invert-u-stacks", summary: "rank reversal" },
   e: { anchor: "joins.md#choice-e", summary: "choice" },
-  ae: { anchor: "rank-joins.md#full-single-item-and-standalone-inventories", summary: "and/or" },
+  ae: { anchor: "set-joins.md#exclusivity-and-denying-a-whole-list", summary: "and/or" },
   oe: { anchor: "comparatives.md#equatives-oe-shared-scale", summary: "equal rank" },
-  ue: { anchor: "rank-joins.md#full-single-item-and-standalone-inventories", summary: "anything but" },
+  ue: { anchor: "rank-joins.md#invert-u-stacks", summary: "anything but" },
 };
 
 /** **-x** on a join **-r**: an unspecified group (`zarx`, joins.md#unspecified-member-r-phrase). */
@@ -597,13 +597,13 @@ export const STAND_IN_BACK_CONSTRUCTIONS: Record<Vowel, ConstructionEntry> = {
 
 /** Hook forms (hooks.md, discourse-hooks.md). */
 export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "or" | "er" | "ur" | "aor" | "aer" | "uer", ConstructionEntry> = {
-  ar: { anchor: "discourse-hooks.md#hook-resume", summary: "ar resume hook" },
-  er: { anchor: "discourse-hooks.md#hook-resume", summary: "er resume hook" },
-  or: { anchor: "discourse-hooks.md#hook-resume", summary: "or resume hook" },
-  ur: { anchor: "discourse-hooks.md#hook-resume", summary: "ur resume hook" },
-  aor: { anchor: "discourse-hooks.md#hook-resume", summary: "aor resume hook (with it)" },
-  aer: { anchor: "discourse-hooks.md#hook-resume", summary: "aer resume hook (on it)" },
-  uer: { anchor: "discourse-hooks.md#hook-resume", summary: "uer resume hook (through there)" },
+  ar: { anchor: "ending-grids.md#hook-resume", summary: "ar resume hook" },
+  er: { anchor: "ending-grids.md#hook-resume", summary: "er resume hook" },
+  or: { anchor: "ending-grids.md#hook-resume", summary: "or resume hook" },
+  ur: { anchor: "ending-grids.md#hook-resume", summary: "ur resume hook" },
+  aor: { anchor: "ending-grids.md#hook-resume", summary: "aor resume hook (with it)" },
+  aer: { anchor: "ending-grids.md#hook-resume", summary: "aer resume hook (on it)" },
+  uer: { anchor: "ending-grids.md#hook-resume", summary: "uer resume hook (through there)" },
   al: {
     anchor: "hooks.md#including-am-al",
     summary: "al including",
@@ -919,7 +919,7 @@ export const REJECTIONS = {
   landmarkLateralBound: { anchor: "viewpoint.md#landmark-facing", summary: "a landmark lateral (DIR th e) needs its landmark in hosted /b/" },
   asOfIntroduceBound: { anchor: "as-of.md#as-of", summary: "an as-of word introduces its bound with a /b/ word" },
   asOfResumeBound: { anchor: "as-of.md#as-of", summary: "an as-of resume (-r) takes no /b/" },
-  hookResumeNoun: { anchor: "discourse-hooks.md#hook-resume", summary: "a resume hook (-r) points back and takes no noun on its right" },
+  hookResumeNoun: { anchor: "ending-grids.md#hook-resume", summary: "a resume hook (-r) points back and takes no noun on its right" },
   asOfPerHost: { anchor: "as-of.md#as-of", summary: "a clause takes at most one /h/ and one /th/ as-of pair" },
   asOfOffset: { anchor: "as-of.md#as-of", summary: "a signed offset in as-of /b/ goes only on stance as-of (/th/); an event or adjective past needs a channel" },
   intentionHost: { anchor: "want.md#whose-intention", summary: "WANT and PLAN take no /b/ person and DECISION no /b/ at all: with no holder it is your own; someone else's goes through a holder seam (`theyomazozon thagom`)" },
@@ -931,8 +931,8 @@ export const REJECTIONS = {
   sayHost: { anchor: "permission-consent.md#permission", summary: "a bl- word after a say word names someone over the act (v), or the one party under pair reach e; a participant's say needs no bl- word" },
   saySpeaker: { anchor: "permission-consent.md#permission", summary: "a bare v say word on -m is the speaker saying so, so in a statement where the speaker is a participant name whose say it is: the rules (hwuvol), a person (hwuvom bl-), custom (hwuvor), or the speaker's own part (hwuzom)" },
   hingeOffsetWarrant: { anchor: "dated-channel.md#dated-channel", summary: "a signed offset on a time hinge needs a command, request, PLAN, or channel in its clause" },
-  joinDetail: { anchor: "rank-joins.md#respectively", summary: "the only /w/ before a join word is respectively (`wubam`), and it goes only there, on a closed (-l) or open (-m) and-list" },
-  respectivePartner: { anchor: "rank-joins.md#respectively", summary: "a respectively list pairs with another and-list of the same length in its clause" },
+  joinDetail: { anchor: "list-structure.md#respectively", summary: "the only /w/ before a join word is respectively (`wubam`), and it goes only there, on a closed (-l) or open (-m) and-list" },
+  respectivePartner: { anchor: "list-structure.md#respectively", summary: "a respectively list pairs with another and-list of the same length in its clause" },
   wNoHost: {
     anchor: "clause.md#adjective-detail-w",
     summary: "a /w/ word grades the word right after it, such as an adjective; a noun or a verb takes none: describe a noun with /ɡ/ and the action with /h/",

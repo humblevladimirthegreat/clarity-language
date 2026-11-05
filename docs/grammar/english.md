@@ -133,7 +133,7 @@ One English word, one row: the form that says it and the section that teaches it
 |--------------|------------|-------|
 | *in* / *into* / *inside* / *within* / *aboard* (*runs into a train*, *sits inside the house*) | hook **`al`** + `/b/`; the verb says whether anything moves; leave out the `/b/` when the place is clear (*went aboard*) | [Locative relations](/locative-relations#locative-relations) |
 | *on* / *onto* / *upon* (*sits on a chair*, *climbs onto the table*) | hook **`ael`** + `/b/`; the verb says whether anything moves | [Hooks](/hooks#extra-noun) |
-| *on it* (*sits on it too*) | resume hook **`aor`** | [Point back](/discourse-hooks#hook-resume) |
+| *on it* (*sits on it too*) | resume hook **`aer`** | [Point back](/ending-grids#hook-resume) |
 | *beside* / *next to* / *nearby* (*sleeps near me*) | hook **`em`** + `/b/` | [Hooks](/hooks#extra-noun), [here and there](/here-there#deixis) |
 | *among* / *amid* (*sits among the guards*) | hook **`am`** + `/b/` | [Hooks](/extra-noun-hooks#extra-noun-intermediate) |
 | *over* (*a cloth over the table*: the landmark's face as the setting) | hook **`aem`** + `/b/`; plain height (*above the table*) is gravity **`habuhol`** | [Hooks](/extra-noun-hooks#extra-noun-intermediate), [Gravity](/viewpoint#gravity) |
@@ -143,8 +143,8 @@ One English word, one row: the form that says it and the section that teaches it
 | *with* / *alongside* / *along with* (*runs with Alazun*) | **`han`** + `/b/` | [Join-relations](/join-relations#join-relations) |
 | *without* / *apart from* (*walks apart from the house*) | **`huan`** + `/b/` | [Join-relations](/join-relations#join-relations) |
 | *via* / *by way of* / *through* / *along* (*goes via the station*, *walks along the road*) | hook **`uel`** + `/b/` (**`uem`** for a setting) | [Hooks](/hooks#extra-noun) |
-| *through there* | resume hook **`uer`** | [Point back](/discourse-hooks#hook-resume) |
-| *with it* (the same tool) | resume hook **`aer`** | [Point back](/discourse-hooks#hook-resume) |
+| *through there* | resume hook **`uer`** | [Point back](/ending-grids#hook-resume) |
+| *with it* (the same tool) | resume hook **`aor`** | [Point back](/ending-grids#hook-resume) |
 | *off* / *away from* / *out of* (*walks off the road*) | hook **`ul`** + `/b/` | [Hooks](/hooks#extra-noun) |
 | *off* (switched off, disconnected) | `govugul` (*disconnection*, as an adjective) | [Adjectives](/clause#adjectives-ɡ) |
 | *outside* / *external* / *outdoors* (*sits outside the house*) | hook **`al`** + the landmark + the join **`bul`** (*in, not the house*): `al bohehal bul` | [Hooks](/hooks#extra-noun), [negation](/joins#negation-u) |
@@ -210,8 +210,8 @@ English adds *and maybe more* after whatever might not be complete. Ageben says 
 
 | English itch | Ageben job | Teach |
 |--------------|------------|-------|
-| *X and Y are A and B, respectively* | the subject list, the adjective list, then **`wubam`** before the second join: `zazozon zalazun zal gelazem gamezem wubam gal` | [Respectively](/rank-joins#respectively) |
-| *X and Y walk and run, respectively* | the same shape on verbs: `zazozon zalazun zal vowurol veruvol wubam val` | [Respectively](/rank-joins#respectively) |
+| *X and Y are A and B, respectively* | the subject list, the adjective list, then **`wubam`** before the second join: `zazozon zalazun zal gelazem gamezem wubam gal` | [Respectively](/list-structure#respectively) |
+| *X and Y walk and run, respectively* | the same shape on verbs: `zazozon zalazun zal vowurol veruvol wubam val` | [Respectively](/list-structure#respectively) |
 | *as a last resort* / *only if nothing else works* | the occasion + **`huol`** (`herulal huol`) | [Ranked occasions](/more-occasions#more-occasions) |
 
 ### *some-* and *any-* words {#some-any}
@@ -345,11 +345,11 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebe
 | English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *now, about Azozon*, *speaking of Azozon* | `/x/` + the noun: **`xazozon`** | [Topic](/topic#topic) |
-| *now, about Sam* (a foreign name) | <code>x@&lt;Sam&gt;</code> | [Topic](/topic#topic), [spans](/span-mention#topic-quotes) |
+| *now, about Sam* (a foreign name) | <code>x@&lt;Sam&gt;</code> | [Topic](/topic#topic), [spans](/quote-contents#topic-quotes) |
 | *now, about the word “odoze”* | `glegol x[odoze]` | [Topic](/topic#topic), [mention](/span-mention#mention) |
 | *now, about Onuren Alazun* (the work) | `x@[onuren alazun]` | [Topic](/topic#topic), [cite](/spans#writing) |
 | *back to Azozon*, *as I was saying about Azozon* | `/x/` + whole stem + **-r**: **`xazozor`** | [Return](/topic#topic-return) |
-| *anyway, Azozon …* (after a side topic) | **`er xazozor …`** | [Return](/topic#topic-return), [resume hooks](/discourse-hooks#hook-resume) |
+| *anyway, Azozon …* (after a side topic) | **`er xazozor …`** | [Return](/topic#topic-return), [resume hooks](/discourse-hooks#discourse) |
 | *what are we talking about?* | **`yel zar gehugom.`** | [Asking about the topic](/topic#topic-question) |
 | *one*, generic *you*, *people* (in general) | **`eyen`** | [Generic pronoun](/pronouns#generic-pronoun) |
 | *the latter* / *the former* (of two just named in the same role) | role pointer **`zwuzer`** (*the latter*) / **`zwuzar`** (*the other one*); to keep two apart for longer, tag them when you name them (`zodozel zwal`, then `zwar`) | [Role pointers](/pronouns#role-pointers), [tag pronouns](/tag-pronouns#tag-pronouns) |

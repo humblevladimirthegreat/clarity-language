@@ -38,7 +38,7 @@ export const CLEARING_LINKERS: ReadonlySet<string> = new Set([`${CLOSED.film}m`,
 /** What a `/x/` content word does to the topic (topic.md#topic); `none` for the other published linkers. */
 export type TopicEffect = "introduce" | "return" | "clear" | "none";
 
-/** An `/x/` cite or opaque span as a topic word (`x@<Sam>`, `x<odoga>`, span-mention.md#topic-quotes). */
+/** An `/x/` cite or opaque span as a topic word (`x@<Sam>`, `x<odoga>`, quote-contents.md#topic-quotes). */
 export function isTopicSpan(word: LexWord): boolean {
   if (word.pos !== "x") return false;
   const { family } = word;

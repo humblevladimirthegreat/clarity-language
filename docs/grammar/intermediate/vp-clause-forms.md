@@ -2,8 +2,9 @@
 band: intermediate
 ---
 
-# Joins on the verb {#joins-on-the-verb}
+# Joins on verbs and stances {#joins-on-verbs-and-stances}
 
+The join vowels and endings from [joins](/joins) also join verbs (`/v/`), whole clauses (`/x/`), and stance words (`/th/`).
 
 ### Verb-phrase and clause forms {#vp-clause-forms}
 <a id="vowels--endings"></a>
@@ -146,6 +147,98 @@ All the clauses in an `/x/` join share one speech act. Any `/y/` word goes befor
 >
 > "Either Azozon walks or Alazun runs, and Ahelan sleeps." (only one of the first two)
 
+### Stance joins {#stance-joins}
+
+When English would deny or weigh **how you stand** toward a claim (*not because…*), put a `/th/` join word after the [stance](/clause#stance-th) words. The claim itself is untouched; the join works only on the stance words before it. (cue: same vowels as every other join.)
+
+> `zazozon vowurol thahum blerulal thul.`
+>
+> z-Azozon | v-walk | [th-because | bl-rain] | th-not
+>
+> "Azozon walks, but not because of the rain."
+
+The other join vowels work on stance words the same way they work on a phrase list ([recap](/joins#join-type-vowel-series)). A rank join says which ground matters most: the first stance word is the main one.
+
+> `zazozon vowurol thahum blerulal thohem blalazun thol.`
+>
+> z-Azozon | v-walk | [th-because | bl-rain] | [th-if | bl-Alazun] | th-rank/more
+>
+> "Azozon walks mainly because of the rain, and also if Alazun is involved."
+
+| Vowel | After stance words | Example reading |
+|---|---|---|
+| **o** | `thol` ranked, first is the main ground | *mainly because of the rain, also if Alazun* |
+| **ao** | `thaol` in the order the grounds arose | *first because of the rain, then if Alazun* |
+| **ua** | `thual` every ground but these | *on every ground but these two* |
+| **uo** | `thuol` ranked, first is the weakest | *chiefly if Alazun, a little because of the rain* |
+| **ae** | `thael` open list of grounds | *because of the rain, if Alazun, and maybe more* |
+| **oe** | `thoel` equal weight | *the rain and the if-clause count the same* |
+| **ue** | `thuel` any ground but these | *any ground but these two will do* |
+
+Nothing is SHARED after an `/h/` or `/th/` join. To add a detail that covers the whole list, put a `/w/` word right before the join word.
+
+**Compare with:** *Azozon does not walk* denies the event, so the join goes on the verb (`vowurol vul`), not on `/th/`.
+
+#### Stance join before `blarl` {#stance-join-before-barl}
+
+When the grounds are a whole clause (*not because Alazun runs*), the hinge takes **`blarl`** and the next sentence is the grounds ([hinges](/dependents#hinges)). That sentence comes last, so the join cannot go after it. Put the join word **between the hinge and `blarl`** instead. It closes the stance words before it as usual, and **`blarl`** still belongs to the hinge.
+
+> `zazozon vowurol thahum thul blarl zalazun veruvol.`
+>
+> z-Azozon | v-walk | th-because | th-not | bl-that-clause | z-Alazun | v-run
+>
+> "Azozon walks, but not because Alazun runs."
+
+Only one join fits there, and only when the last stance word before it is a hinge with no `/b/` yet. The same works for every join vowel and every hinge.
+
+#### Standalone stance joins {#standalone-stance-joins}
+
+When English would say how to take a claim without naming any grounds (*at face value*, *no judgment*, *all things considered*), put a `/th/` join with no stance words before it. It works like standalone `zal` *nothing*: the list of stance words is empty, and the join says what that empty stance means. The claim itself is untouched. (cue: same vowels as every other join.)
+
+> `zazozon vowurol thul.`
+>
+> z-Azozon | v-walk | th-not
+>
+> "Azozon walks. No judgment."
+
+In the table, *reason* means any grounds a stance word can give: a cause, a source, a likelihood, or a value.
+
+| Vowel | **-l** | **-m** | **-r** |
+|---|---|---|---|
+| **a** | `thal` *at face value* | `tham` *I don't think there's more to it* | `thar` *for reasons I'm not stating* |
+| **o** | `thol` *impartially* / *no decisive grounds* | `thom` *I don't lean either way* | `thor` *for one main reason, not named* |
+| **u** | `thul` *no judgment* | `thum` *not weighing in* | `thur` *not for the reason you'd think* |
+| **ao** | `thaol` *in no particular order* | `thaom` *not sure where to start* | question only |
+| **ua** | `thual` *all things considered* | `thuam` *all known things considered* | question only |
+| **uo** | `thuol` *no reason to object* | `thuom` *no objection that I know of* | question only |
+| **e** | `thel` *no single reason to pick* | `them` *I'm not sure which reason it is* | `ther` *for some reason or other* |
+| **ae** | `thael` *take it however you like* | `thaem` *any framing is fine, I think* | question only |
+| **oe** | `thoel` *equally balanced* | `thoem` *equally balanced, I think* | question only |
+| **ue** | `thuel` *anything goes* | `thuem` *anything goes, I think* | question only |
+
+Outside a question, only the single-vowel **-r** cells are words. Under a question, a standalone **-r** stance join is a [fill-ask](/questions#fill-ask-r) for the grounds. Every vowel takes **-r** there.
+
+> `yel thar zazozon vowurol.`
+>
+> y-question | th-why | z-Azozon | v-walk
+>
+> "On what grounds do you say Azozon walks?"
+
+| Word | Question |
+|---|---|
+| `thar` | *Why do you say so?* / *On what grounds?* |
+| `ther` | *For any reason?* |
+| `thur` | *On what other grounds?* |
+| `thaer` | *How do you want me to take this?* |
+| `thuar` | *What's your overall take?* |
+| `thuer` | *What reasons would you rule out?* |
+| `thor` | *What's the main reason?* |
+| `thaor` | *What would settle it?* |
+| `thoer` | *What are you torn between?* |
+| `thuor` | *What's your objection?* |
+
+**Compare with:** `thul` *no judgment* withholds any stance; a *no chance* stance number is a stance that the claim is false. `thar` asks for the speaker's grounds, not what caused the event; for *Why does it happen?* use [`thahum blar`](/fill-ask-jobs#why).
+
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -164,6 +257,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *walk* | `vowurol` |
 | *sleep* | `vezuvel` |
 | *scream* | `veyamul` |
+| *because* | `thahum` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -189,6 +283,30 @@ z-Alazun | [v-run | [d-Ahelan | v-punch] | v-and]
 `zahelan vezuvel xam xar.`
 
 [z-Ahelan | v-sleep | x-and.open | x-something]
+:::
+
+**4.** *Alazun runs, but not because Azozon punches.*
+
+::: details Show answer
+`zalazun veruvol thahum thul blarl zazozon vabuvul.`
+
+z-Alazun | v-run | th-because | th-not | bl-that-clause | z-Azozon | v-punch
+:::
+
+**5.** *Azozon screams, but not because Ahelan punches.*
+
+::: details Show answer
+`zazozon veyamul thahum thul blarl zahelan vabuvul.`
+
+z-Azozon | v-scream | th-because | th-not | bl-that-clause | z-Ahelan | v-punch
+:::
+
+**6.** *Azozon runs. No judgment.*
+
+::: details Show answer
+`zazozon veruvol thul.`
+
+z-Azozon | v-run | th-not
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
@@ -217,6 +335,30 @@ x-and.open
 *Nothing happened, as far as I know.*
 :::
 
+**4.** `zahelan veruvol thahum thul blarl zalazun vabuvul.`
+
+::: details Show answer
+z-Ahelan | v-run | th-because | th-not | bl-that-clause | z-Alazun | v-punch
+
+*Ahelan runs, but not because Alazun punches.*
+:::
+
+**5.** `yel thar zazozon veruvol.`
+
+::: details Show answer
+y-question | th-why | z-Azozon | v-run
+
+*Why do you say Azozon runs?*
+:::
+
+**6.** `zazozon veruvol thahum blalazun thul.`
+
+::: details Show answer
+z-Azozon | v-run | [th-because | bl-Alazun] | th-not
+
+*Azozon runs, but not because of Alazun.*
+:::
+
 #### Pick one {#intermediate-pick-one}
 
 **1.** *Alazun walks and runs.* `zalazun vowurol veruvol val.` or `zalazun vowurol xam veruvol.`
@@ -227,6 +369,16 @@ x-and.open
 z-Alazun | [v-walk | v-run | v-and]
 
 Two verbs of one subject close with a `/v/` join; `/x/` would start a new clause.
+:::
+
+**2.** *Azozon runs, but not because of Alazun.* `zazozon veruvol thahum blalazun thul.` or `zazozon veruvol vul thahum blalazun.`
+
+::: details Show answer
+`zazozon veruvol thahum blalazun thul.`
+
+z-Azozon | v-run | [th-because | bl-Alazun] | th-not
+
+The `/th/` join denies the ground; **`vul`** after the verb would deny the running.
 :::
 
 #### Fix it {#intermediate-fix-it}
@@ -241,3 +393,18 @@ Two verbs of one subject close with a `/v/` join; `/x/` would start a new clause
 Two clauses take an `/x/` join between them.
 :::
 
+#### What changes {#intermediate-what-changes}
+
+**1.** `zazozon veruvol thul.` / `zazozon veruvol thol.`
+
+::: details Show answer
+z-Azozon | v-run | th-not
+
+z-Azozon | v-run | th-rank/more
+
+**`thul`** withholds any stance: no judgment. **`thol`** says there are no decisive grounds, or ranks an empty list.
+:::
+
+## See also
+
+- List joins (right-close fence): [joins.md](/joins)

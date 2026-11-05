@@ -31,7 +31,7 @@ export function joinHook(word: LexWord | undefined): string | undefined {
   return word?.family.kind === "joinMarker" ? word.family.hook : undefined;
 }
 
-/** Hooks whose free **-r** points back (discourse-hooks.md#hook-resume), so a hooked join may take `r` before its seam. */
+/** Hooks whose free **-r** points back (ending-grids.md#hook-resume), so a hooked join may take `r` before its seam. */
 export const POINT_BACK_HOOKS = new Set(["ar", "aor", "er", "ur", "uer", "or", "aer"]);
 
 /** The hooks an `/h/` hooked join takes: a time reading on the landmark, or a point-back to a time (hooked-joins.md#hooked-joins-time). */

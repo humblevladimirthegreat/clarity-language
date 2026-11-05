@@ -38,7 +38,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **LIVE** | Evidential: sensed now, by any sense | `thugem` | [Live and memory](/live-and-memory#live-vs-memory) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thomam` | [Knowing](/knowing#may) |
 | **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevum` | [Live and memory](/live-and-memory#live-vs-memory) |
-| **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegol z[odoze] gamezem.` | [Mention](/span-mention#mention) |
+| **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegol z[odoze] gamezem.` | [Spans as words](/span-mention#mention) |
 | **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themem` | [It turns out](/mirative#mirative) |
 | **NAME** | A package titled with **-n** | `zobodel zubudal zan.` | [Join limits](/join-limits#named-list) |
 | **NOTIONAL** | As-if / pretense mood | `theyum` | [As if](/notional#notional) |
@@ -486,11 +486,13 @@ Whose view a clause reports. The name is fused onto an evidential, **MAY**, or *
 
 ### Hook
 
-Prefix-less *including / rather / instead / except*, discourse glue, extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (zone **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *used by* (whose) / *by* / *contrary to*; placement decides the job; **`uom`** before a `/th/` stance is *contrary to* that stance), and fused [Cite plus a hook](/hook-compounds#hook-compounds) (citation plus extra-noun hook). Optional `/w/` immediately before the free hook grades that hook (including restrictors); `/b/` sits immediately after the free hook. Stacked discourse, *somewhere* / *here* / *there*, resume **-r**, parallel chains, and extra placements are [discourse hooks](/discourse-hooks).
+Prefix-less *including / rather / instead / except*, discourse glue, extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (zone **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *used by* (whose) / *by* / *contrary to*; placement decides the job; **`uom`** before a `/th/` stance is *contrary to* that stance), and fused [Cite plus a hook](/hook-compounds#hook-compounds) (citation plus extra-noun hook). Optional `/w/` immediately before the free hook grades that hook (including restrictors); `/b/` sits immediately after the free hook. Parallel chains, detail on the hook, and **-r** pointing back to a landmark are [hooks inside the clause](/ending-grids). **-m** and **-r** at the front of a sentence, stacked discourse, and extra placements are [discourse hooks](/discourse-hooks).
 
 [Hooks](/hooks)
 
-[In fact, here, and anyway](/discourse-hooks)
+[Hooks inside the clause](/ending-grids)
+
+[In fact and anyway](/discourse-hooks)
 
 ### Hook prefix
 

@@ -64,11 +64,11 @@ export const JoinVMore = wordToken("JoinVMore", [JoinV]);
 /** A `/ɡ/` word: a plain adjective describes what is before it; a `gl-` adjective leans on the noun or call after it (left-bound-adjectives.md#left-bound-adjectives). */
 export const G = wordToken("G");
 export const GPlain = wordToken("GPlain", [G]);
-/** A plain adjective a noun list's join may share (rank-joins.md#shared-after-the-join): not one that starts a respectively list. */
+/** A plain adjective a noun list's join may share (list-structure.md#shared-after-the-join): not one that starts a respectively list. */
 export const GShareable = wordToken("GShareable");
 /**
  * A plain adjective by the run it sits in (set by `markContext`): one that a `/ɡ/` join closes (`GInList`), one that
- * `wazem` and a `/ɡ/` join close (`GInRespList`, rank-joins.md#respectively), or any other (`GAdj`). Where a plain adjective
+ * `wazem` and a `/ɡ/` join close (`GInRespList`, list-structure.md#respectively), or any other (`GAdj`). Where a plain adjective
  * describes the word before it, it does so whatever its run.
  */
 export const GAdj = wordToken("GAdj", [GPlain, GShareable]);
@@ -86,7 +86,7 @@ export const GGlBefore = Object.fromEntries(GL_TARGETS.map((target) => [target, 
 export const W = wordToken("W");
 export const WPlain = wordToken("WPlain", [W]);
 export const WAsOf = wordToken("WAsOf", [W]);
-/** Respectively `wazem`: right before a join word, it pairs the list item by item with an earlier one (rank-joins.md#respectively). */
+/** Respectively `wazem`: right before a join word, it pairs the list item by item with an earlier one (list-structure.md#respectively). */
 export const WPairing = wordToken("WPairing", [W]);
 /**
  * What a `/w/` word grades: the word after its `/w/` run (past an as-of pair's `/b/`). Each `/w/` gets one leaf type
@@ -182,7 +182,7 @@ export const HostedOdo = wordToken("HostedOdo");
 export const HSharedV = wordToken("HSharedV");
 /**
  * `barl` that fills a `/th/` host from further right, so it is never a `/b/` stand-in of its own: after a stance join
- * that closes a hinge with no `/b/` (join-across-roles.md#stance-join-before-barl), or after a channel's offset
+ * that closes a hinge with no `/b/` (vp-clause-forms.md#stance-join-before-barl), or after a channel's offset
  * (evidentiality.md#evidence-clause). Set by `markContext`.
  */
 export const LateOdo = wordToken("LateOdo");
@@ -240,7 +240,7 @@ export const HookPlain = wordToken("HookPlain", [Hook]);
 export const HookHosting = wordToken("HookHosting", [Hook]);
 /**
  * A hook and its `/b/` right before a noun list's join word (or its bar), after a noun of that list's slot: it belongs
- * to that last item (rank-joins.md#shared-after-the-join), so no hook unit takes it. Set by `markContext`.
+ * to that last item (list-structure.md#shared-after-the-join), so no hook unit takes it. Set by `markContext`.
  */
 export const ItemHook = wordToken("ItemHook", [Hook]);
 /**

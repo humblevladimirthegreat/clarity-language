@@ -1,6 +1,6 @@
 # Proposal: Making every sitting pass "what one sitting holds"
 
-**Status:** in progress. Phase 0 done (2026-11-05, every finding held). Workstreams done: 1, 2a, 2b, 2c, 2d.
+**Status:** in progress. Phase 0 done (2026-11-05, every finding held). Workstreams done: 1, 2a, 2b, 2c, 2d, 2e (Phase 2 complete; stopped before Phase 3 at the user's request). Next: Phase 3 with a fresh subagent.
 **Related:** [what one sitting holds](../meta/grammar-docs.md#one-sitting) (the tests this proposal applies), [sitting length](../meta/drill-generation.md#sitting-length), [how to apply](../meta/learning-levels.md#how-to-apply), [gates](../meta/learning-levels.md#gates), [allowlist](../meta/drill-generation.md#allowlist), [site redirects](../meta/site-redirects.md).
 **Depends on:** `range-series.md`, implemented first (B6 assumes one range series).
 **Design authority:** none. This proposal moves, merges, peels, and retitles existing sections. It adds no form and changes no reading. Band changes for three sections are settled in [gate runs](#gate-runs). Any further grammar decision goes under [open decisions](#open-decisions) and waits.
@@ -426,6 +426,10 @@ Owns-line changes that subagents reported, for Phase 5 to apply to `AGENTS.md`:
 - 2d, `plurality.md` row: "collectives, each other, addressing several people (`collectives.md`)".
 - 2d, `pronouns.md` row: "…; resume one sense, cross-role recast (`resume-sense.md`); tag pronouns (`tag-pronouns.md`)".
 - 2d, `clause.md` row: add "leaving out who acts (`no-subject.md`)" and "degree words on `/w/` (`very-and-slightly.md`)"; chaining (`left-bound.md`, filename after Phase 3) covers chaining only.
+- 2e, `hooks.md` row: "in-clause hooks: parallel chains, hook detail, point back (`ending-grids.md`)"; `discourse-hooks.md` row: "Discourse endings at the front (-m, -r *anyway*), stacked discourse, discourse placements; somewhere / here and there (`here-there.md`)".
+- 2e, `join-across-roles.md` row becomes `vp-clause-forms.md`: "Joins on verbs and stances: verb-phrase, clause and stance joins; list verbs (`list-verbs.md`); join-relations (`join-relations.md`); clause sequence (`clause-sequence.md`)".
+- 2e, `joins.md` row: "what a list word reaches: SHARED, respectively, fence nesting (`list-structure.md`); rank joins, invert, route (`rank-joins.md`); and/or, whole-list denial, set inventories (`set-joins.md`)".
+- 2e, `spans.md` row: "spans as words: mention, span nouns, `gl` spans, one of a title (`span-mention.md`); inside a quote: act words, topics (`quote-contents.md`)".
 - 2a, `hooks.md` row: "ordered ranges (`ordered-ranges.md`)" → "ranges, including ranges of numbers" (and the filename after Phase 3).
 
 ## H3s that changed pages
@@ -438,6 +442,7 @@ For Phase 3's hash-redirect rows (`old.md#id` → new page):
 - 2b: `proper-names.md#continue-x` → `sentence-linkers.md`; `dependents.md#continue-x` → `speech-moves.md`; `singability.md#thinking-sounds` → `speech-moves.md`; `sentence-linkers.md#orthography-and-prosody-periods` → `sentence-linkers.md#past-a-period` (id renamed); `label-reach.md#command-property` → `speech-acts.md`; `sentence-linkers.md#result-hinge` and `#time-hinge-on-noun` → `more-hinges.md`; `stand-in-roles.md#nested-dependents` → `nested-dependents.md`.
 - 2c: `ability.md#decision-revisability` (also `#decision`, `#decision-mood`, `#decision-changeability`) → `want.md`; `comparative-arity.md#bars` → `sake-bars.md`; `notional-standing.md#channel-bars` → `sake-bars.md`. 
 - 2d: `tag-pronouns.md#reciprocal` and `#addressing-several-people` → `collectives.md`; `tag-pronouns.md#how-english-approximates-r`, `#resume-sense`, `#cross-role-recast` → `resume-sense.md`; `left-bound.md#degree-w` → `very-and-slightly.md`; `left-bound.md#no-subject` → `beginner/no-subject.md`.
+- 2e: `ending-grids.md#discourse` → `discourse-hooks.md`; `discourse-hooks.md#parallel-chains`, `#hook-resume` → `ending-grids.md`; `join-across-roles.md#stance-joins`, `#stance-join-before-barl`, `#standalone-stance-joins` → `vp-clause-forms.md`; `rank-joins.md#shared-after-the-join`, `#scope-fence-p-join`, `#respectively`, `#fence-nesting` → `list-structure.md`; `rank-joins.md#exclusivity-and-denying-a-whole-list`, `#full-single-item-and-standalone-inventories` → `set-joins.md`; `span-mention.md#quote-acts`, `#topic-quotes` → `quote-contents.md`.
 - Also repoint `hash-redirect.ts`'s `intention.md#intermediate → ability.md` row (that page now holds only Try).
 
 ## Open decisions
@@ -454,5 +459,8 @@ The main agent adds anything a subagent reports, and skips the affected item unt
 - **OD7. Level review for ability.md (2c.1).** With DECISION on want.md, review-intermediate has no item linking ability.md, and `lint ageben` reports a level-review error (not a generate-row error). Phase 3.3 or 4 adds an ATTEMPT review item.
 - **OD8. Level review for tag-pronouns.md (2d.2).** The review item *How English approximates -r* now links resume-sense.md, so tag-pronouns has none; same kind of error as OD7. Phase 3.3 or 4 adds a tags item.
 - **Follow-up from 2d.3.** B1's degree words went to the fallback peel `very-and-slightly.md`, not vague-amounts: speech-acts, exactly-like, and feelings-permission use or link `#degree-w` well before vague-amounts (gate 4). Its `/h/` words `hayurom` *kind of* and `herugom` *again* may not fit "Very and slightly" (test 3); the Phase 5 audit checks the title.
+- **OD9. Level reviews for ending-grids.md and rank-joins.md (2e).** Their review items now link discourse-hooks and list-structure; same kind as OD7/OD8. Phase 3.3 or 4 adds one item each.
+- **OD10. `aer` / `aor` readings (2e.1), user to confirm.** Workstream 2e swapped *on it* / *with it* on the Point back table, english.md, role-parts, hooked-joins, and the joins-hooks cheat sheet so the prose matches the parser (`aer` *on it*, `aor` *with it*). It looks like the same stale vowel relabel as A1 (as do the `aol` / `ael` cue labels it fixed), but it changes stated readings, so confirm the parser side is the intended one.
+- **Follow-up.** drill-generation's `comparatives.md` row says "Rank fence **`e`/`ae`/`ue`**", which looks like the old swap; unaudited.
 - **Process note.** A **generate** allowlist row fails the build until Phase 4 writes its checkpoint, so from 2a.2 on, "green" means tests pass and every `lint ageben` error (checkpoint inventory, drill coverage, practice-item count, word bank, core cells) sits on a **generate** row that Phase 4 writes or tops up.
 - **Follow-up from A1.** Workstream 1 also fixed stale bold vowel labels (`**…el** (`zol`)`) on rank-joins, say-questions, join-limits, fill-ask-roles, causation, and the talking cheat sheet. Bare bold vowel labels in other prose were not audited.

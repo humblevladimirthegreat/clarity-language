@@ -332,7 +332,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `womal` | may mood find-out follow-up (I'll / let's find out) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `womam` | may mood (could be; default) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `womar` | may mood who-knows follow-up (leave unsettled; may never know) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
-| `wubam` | respective pairing (item N of one list goes with item N of the other) | [Respectively (wubam)](/rank-joins#respectively) | I |
+| `wubam` | respective pairing (item N of one list goes with item N of the other) | [Respectively (wubam)](/list-structure#respectively) | I |
 | `wubol` | pattern evidential with strong evidence (well-established pattern) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `wubom` | pattern evidential (from trail of cases) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `wubor` | pattern evidential with weak evidence (a few cases) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |

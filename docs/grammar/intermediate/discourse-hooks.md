@@ -2,82 +2,23 @@
 band: intermediate
 ---
 
-# In fact, here, and anyway {#in-fact-here-and-anyway}
+# In fact and anyway {#in-fact-and-anyway}
 
-English *In fact*, *for example*, *here*, *somewhere*, and *anyway* attach this sentence to prior talk, or point at a place already in play. Ageben reuses the same hook spellings, stacked or with **-r**. Everyday *including*, *in*, and *Additionally* are in [hooks](/hooks).
+English *In fact*, *for example*, *among other things*, and *anyway* attach this sentence to prior talk. At the front of a sentence, Ageben uses the same hook spellings with **-m** or **-r**, or with two vowels. Everyday *Additionally* and *Instead* are in [hooks](/hooks).
 
-### Opening a sentence with stacked hooks {#stacked-discourse}
+### Discourse {#discourse}
 
-English *In fact, …* or *What's more, …* adds a point that goes further than what came before. At the front of a sentence, with no `/b/` right after it, the two-vowel hook **`aol`** does this job. (cue: **ae** ≈ add, ranked upward)
-
-> `aol zalazun vezuvel.`
->
-> in.fact | z-Alazun | v-sleep
->
-> "In fact, Alazun sleeps."
-
-Opening with **`ael …`** gives English *For example, …*: this sentence is one case of what you just said. (cue: **ao** ≈ add one sample) With **-m**, `aem …` adds *among others* and `aom …` adds *in fact, and maybe more*. No other two-vowel hook opens a sentence: for *next*, *by the way*, and *on the contrary*, use a [linker](sentence-linkers.md#sentence-linkers).
-
-> `zuvayal vowurol. ael zalazun vowurol.`
->
-> z-family | v-walk . for.example | z-Alazun | v-walk
->
-> "The family walks. For example, Alazun walks."
-
-**Compare with:** `al …` *Additionally* adds a separate point next to the last one; `ael …` gives an instance of it. Inside a clause, *such as* is `am` (*including, and maybe more*).
-
-### Point back (`er` / `ar` / `ur` / `or`) {#hook-resume}
-
-English *there*, *from there*, and *for it* point back to a place or thing already named. In Ageben, give the extra-noun hook **-r** and leave out the `/b/` word: after the verb, the hook points back to the landmark already in play, the way [resume **-r**](/pronouns#resume-r) does on a noun. A hook with **-r** has no noun on its right, and no phrase on its left to pair with (it is not a same-role hook).
+At the front of a sentence, **-m** says this sentence is one of several you could say there: one more point among others, one way to reword, one possible replacement, one exception among others.
 
 <!-- cheat-sheet: joins-hooks -->
-| Ageben | Points back to | English |
-|--------|----------------|---------|
-| `ar` | inside the place already named | *in there* / *in it* |
-| `er` | the place already named | *there* |
-| `ur` | the place already named, as a source | *from there* |
-| `or` | the one already named, as a goal | *for that* / *for it* |
+| | **-l** | **-m** |
+|--|--------|--------|
+| **a** (*additionally*) | `al`: *Additionally, …* | `am`: *Among other things, …* |
+| **o** (*in other words*) | `ol`: *In other words, …* | `om`: *To put it one way, …* |
+| **e** (*instead*) | `el`: *Instead, …* | `em`: *Instead, for instance, …* |
+| **u** (*except*) | `ul`: *Except, …* | `um`: *Except, among other exceptions, …* |
 
-> `zazozon vehohel el bohehal. zalazun vehohel er.`
->
-> z-Azozon | v-sit | [at | b-house] . z-Alazun | v-sit | there
->
-> "Azozon sits at the house. Alazun sits there too."
-
-> `zodozel vezuvel al bohehal. zodozer veruvol ur.`
->
-> z-dog | v-sleep | [in | b-house] . z-←dog | v-run | from.there
->
-> "The dog sleeps in the house. It runs from there."
-
-Stacked extra-noun vowels point back the same way: the vowels keep the extra they named (`ael` *on*, `aol` *using*, `uel` *through*), and **-r** drops the landmark.
-
-<!-- cheat-sheet: joins-hooks -->
-| Ageben | Points back to | English |
-|--------|----------------|---------|
-| `aor` | the face already named | *on it* |
-| `aer` | the means already named | *with it* |
-| `uer` | the path already named | *through there* |
-
-> `zazozon vehohel ael behohel. zalazun vehohel aor.`
->
-> z-Azozon | v-sit | [on | b-chair] . z-Alazun | v-sit | with.it
->
-> "Azozon sits on a chair. Alazun sits on it too."
-
-> `zazozon danal aol bebewol varuyol. zalazun varuyol aer.`
->
-> z-Azozon | d-book | [using | b-pen] | v-write . z-Alazun | v-write | on.it
->
-> "Azozon writes a book with a pen. Alazun writes with it too."
-
-> `zazozon vowurol uel bohehal. zalazun vowurol uer.`
->
-> z-Azozon | v-walk | [through | b-house] . z-Alazun | v-walk | through.there
->
-> "Azozon walks through the house. Alazun walks through there too."
-
-At the front of a sentence, a resume hook points back to an earlier stretch of talk, not just the last sentence.
+With **-r**, a hook at the front points back to an earlier stretch of talk, not just the last sentence, the way [**-r**](ending-grids.md#hook-resume) on a hook inside the clause points back to a landmark.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -100,24 +41,25 @@ At the front of a sentence, a resume hook points back to an earlier stretch of t
 
 **Compare with:** `el …` *Instead* replaces the last claim. `er …` *Anyway* leaves the side topic standing and returns to the main one; it leaves the [topic](topic.md#topic) alone too, so after a side topic the full return is `er xazozor …`. To go back to a **person or thing** rather than a line of talk, return to it as the [topic](topic.md#topic-return) (`xazozor`), which also makes it the topic again.
 
-### Parallel chains {#parallel-chains}
+### Opening a sentence with stacked hooks {#stacked-discourse}
 
-To say more than one thing about the **same** A (*including B but except C*, or two *including*s), keep adding hooks after B: `A HOOK₁ B HOOK₂ C`. Each hook applies to A, not to the B before it, and each has its own vowel and ending. So C is never tucked under B the way English *including (B except C)* can be.
+English *In fact, …* or *What's more, …* adds a point that goes further than what came before. At the front of a sentence, with no `/b/` right after it, the two-vowel hook **`aol`** does this job. (cue: **ao** ≈ add, ranked upward)
 
-> `zuvayal am zazozon ul zalazun.`
+> `aol zalazun vezuvel.`
 >
-> z-family | including.open | z-Azozon | except | z-Alazun
+> in.fact | z-Alazun | v-sleep
 >
-> "The family, including Azozon and maybe more, except Alazun."
+> "In fact, Alazun sleeps."
 
-| Chain | English |
-|-------|---------|
-| `A am B am C` | A including B and including C, and maybe more |
-| `A al B al C` | A including B and including C |
-| `A am B ul C` | A including B, and maybe more, except C |
-| `A ul B ul C` | A except B and except C |
+Opening with **`ael …`** gives English *For example, …*: this sentence is one case of what you just said. (cue: **ae** ≈ add one sample) With **-m**, `aem …` adds *among others* and `aom …` adds *in fact, and maybe more*. No other two-vowel hook opens a sentence: for *next*, *by the way*, and *on the contrary*, use a [linker](sentence-linkers.md#sentence-linkers).
 
-**Compare with:** a [list join](/joins) after the hook is finished first, and the whole list becomes B: `zodozel el zogozel zebezel zam` is *a cat and a bird (and possibly more) instead of a dog*.
+> `zuvayal vowurol. ael zalazun vowurol.`
+>
+> z-family | v-walk . for.example | z-Alazun | v-walk
+>
+> "The family walks. For example, Alazun walks."
+
+**Compare with:** `al …` *Additionally* adds a separate point next to the last one; `ael …` gives an instance of it. Inside a clause, *such as* is `am` (*including, and maybe more*).
 
 ### Discourse placements {#discourse-placements}
 
@@ -166,32 +108,16 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *key* | `egewol` |
 | *sit* | `vehohel` |
 | *find* | `vumewel` |
-| *family* | `uvayal` |
+| *write* | `varuyol` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
-**1.** *Azozon sits at the elevator. Alazun sits there too.*
-
-::: details Show answer
-`zazozon vehohel el bulahol. zalazun vehohel er.`
-
-z-Azozon | v-sit | [at | b-elevator] . z-Alazun | v-sit | there
-:::
-
-**2.** *In fact, Alazun finds the key.*
+**1.** *In fact, Alazun finds the key.*
 
 ::: details Show answer
 `aol zalazun degewol vumewel.`
 
 in.fact | z-Alazun | d-key | v-find
-:::
-
-**3.** *The family, including Azozon and maybe more, except Alazun, sits.*
-
-::: details Show answer
-`zuvayal am zazozon ul zalazun vehohel.`
-
-z-family | including.open | z-Azozon | except | z-Alazun | v-sit
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
@@ -212,12 +138,12 @@ for.example | z-Ahelan | v-sit
 *For example, Ahelan sits.*
 :::
 
-**3.** `zalazun vehohel er.`
+**3.** `el zalazun varuyol.`
 
 ::: details Show answer
-z-Alazun | v-sit | there
+instead | z-Alazun | v-write
 
-*Alazun sits there.*
+*Instead, Alazun writes.*
 :::
 
 #### Pick one {#intermediate-pick-one}
@@ -230,6 +156,16 @@ z-Alazun | v-sit | there
 anyway | z-Alazun | v-sit
 
 **`er`** goes back to the main line; **`el`** would replace the last claim (*Instead*).
+:::
+
+**2.** *Among other things, Alazun writes.* `am zalazun varuyol.` or `al zalazun varuyol.`
+
+::: details Show answer
+`am zalazun varuyol.`
+
+additionally.open | z-Alazun | v-write
+
+Open **-m** adds one of several points; **`al`** is a single extra point (*Additionally*).
 :::
 
 #### Fix it {#intermediate-fix-it}
@@ -247,5 +183,6 @@ in.fact | z-Alazun | v-sit
 ## See also
 
 - Everyday hooks: [hooks.md](/hooks)
+- Hooks inside the clause: [ending-grids.md](/ending-grids)
 - Sentence linkers: [dependents.md](sentence-linkers.md#sentence-linkers)
 - The topic pronoun: [topic.md](topic.md)

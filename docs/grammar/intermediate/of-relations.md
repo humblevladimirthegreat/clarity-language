@@ -66,7 +66,7 @@ After a join, `gobom` and `gaham` bound the set the join covers, as SHARED words
 
 **Compare with:**
 
-- Plain *Azozon's*, with no particular tie, is the hook [`om`](/extra-noun-hooks#genitive) (`zodozel om bazozon`). Ownership is `gegunum` + `/b/` ([joins](rank-joins.md#scope-fence-p-join)). A need from [sakes](/sakes) on `/ɡ/` also says the thing is the speaker's.
+- Plain *Azozon's*, with no particular tie, is the hook [`om`](/extra-noun-hooks#genitive) (`zodozel om bazozon`). Ownership is `gegunum` + `/b/` ([joins](list-structure.md#scope-fence-p-join)). A need from [sakes](/sakes) on `/ɡ/` also says the thing is the speaker's.
 - Place *in* is the hook `al`; path *from* is the hook `ul` ([extra nouns](/extra-noun-hooks#extra-noun-intermediate)).
 - *A house like Azozon’s* is [likeness](/relations#likeness) (`gewem`), not *made of*. *A book for a hammer* as a swap is [exchange](/relations#exchange) (`geham`).
 - `gobom` is a part that belongs to the thing's structure (a bone of the body); `gozowum` is a piece taken off it (a slice of bread).

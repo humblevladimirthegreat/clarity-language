@@ -6,7 +6,7 @@ Status: idea. Not design authority; fold into grammar / meta docs, then drop.
 
 Role letters are visible in the spelling, so colouring by role adds little. What a skimmer cannot see in a flat string is structure the spelling does not show:
 
-- **Join fences.** A join is right-close: the items come first and the join word closes them ([joins](/joins#right-close)). Nothing marks where a list began until its closer arrives, and nested fences ([fence nesting](/rank-joins#fence-nesting)) stack closers with no visual cue.
+- **Join fences.** A join is right-close: the items come first and the join word closes them ([joins](/joins#right-close)). Nothing marks where a list began until its closer arrives, and nested fences ([fence nesting](/list-structure#fence-nesting)) stack closers with no visual cue.
 - **Topic.** A topic is set only by an `/x/` word at the start of a sentence ([topic](/topic#topic)). Which stretch of text a topic governs, and where it resets, is not visible.
 - **Pronoun antecedents.** Resumes, role pointers, tags and the topic pronoun can reach across sentences and turns ([role pointers](/pronouns#role-pointers)).
 

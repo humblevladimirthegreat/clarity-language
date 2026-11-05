@@ -365,7 +365,7 @@ English *buy* and *sell* are two views of one swap. Ageben has one trading verb,
 
 ### Give, get, lend, earn, owe {#give-get}
 
-**Needs:** [The extra `/b/` party (`o`)](/roles#role-compounds) · [Extra noun (`ol`, `om`)](/hooks#extra-noun) · [Exchange](/relations#exchange) · [Coordinated lists](/rank-joins#respectively) · [Fault](/fault#fault)
+**Needs:** [The extra `/b/` party (`o`)](/roles#role-compounds) · [Extra noun (`ol`, `om`)](/hooks#extra-noun) · [Exchange](/relations#exchange) · [Coordinated lists](/list-structure#respectively) · [Fault](/fault#fault)
 
 English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Ageben keeps the giving verb `vewal` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in plain `/b/` after the verb ([recipient](/clause#extra-nouns)). To name the parties from the verb itself, use the [role compounds](/roles#role-compounds): **`zwuzewal`** is the giver (*supplier*, *provider*) and **`zwubewal`** is the recipient (*receiver*). **-r** (`zwubewar`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vogeral` (*credit*, with the *lend* sense): the borrower is the recipient.
 

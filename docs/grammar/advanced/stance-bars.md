@@ -98,7 +98,7 @@ An adjective after that `/b/` describes it, as after any [host](/left-bound#comp
 >
 > "Azozon sings well for a sleepy learner."
 
-The ranked item can be a whole kind. Write the [universal fence](/universals-domains#universals-domains-generics) first, then the bar: the whole closed fence counts as the one ranked item, the way an inner list sits inside an outer one ([fence nesting](/rank-joins#fence-nesting)). Open **`zuam`** is *people of that kind, as a rule*.
+The ranked item can be a whole kind. Write the [universal fence](/universals-domains#universals-domains-generics) first, then the bar: the whole closed fence counts as the one ranked item, the way an inner list sits inside an outer one ([fence nesting](/list-structure#fence-nesting)). Open **`zuam`** is *people of that kind, as a rule*.
 
 > `zuam gwuzadamul thubom zol hral vabezum.`
 >

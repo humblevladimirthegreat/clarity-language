@@ -107,7 +107,7 @@ describe("searchEnglish", () => {
 describe("taught cues in docs/grammar", () => {
   const all = listMarkdown("docs/grammar").flatMap((file) => collectEnglishEntries(readFileSync(file, "utf8"), file, tables));
   const cases: { phrase: string; page: string; slug?: string; forms: string[] }[] = [
-    { phrase: "anyway", page: "discourse-hooks.md", slug: "hook-resume", forms: ["er"] },
+    { phrase: "anyway", page: "discourse-hooks.md", slug: "discourse", forms: ["er"] },
     { phrase: "late", page: "vague-amounts.md", slug: "vague-amounts", forms: ["thubom / zol / zuol / bral"] },
     { phrase: "last time", page: "stacked-markers.md", forms: ["gruodol", "g#-2", "h#-2"] },
   ];

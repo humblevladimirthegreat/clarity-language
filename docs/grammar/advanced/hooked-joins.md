@@ -34,7 +34,7 @@ English bounds *everyone*, *someone*, and *nothing* with a preposition: *everyon
 | **`x`** | the seam, as in a hook prefix | `x` |
 | join vowels + ending | any [standalone join](/joins#standalone-phrase), read as usual | `ual` *everyone* |
 
-The landmark takes `bl-` because it completes the word before it, as after an `/h/` word. Any word that can be a `bl-` word works: a name (`blazozon`), a content word (`blohehal`), a [special pronoun](/pronouns#special-pronouns) (`bluwen`), a resume (`blohehar`), or a standalone join. A [SHARED](/rank-joins#shared-after-the-join) `/ɡ/` comes after the landmark: `zexual blohehal gogozel` is *every cat at the house*.
+The landmark takes `bl-` because it completes the word before it, as after an `/h/` word. Any word that can be a `bl-` word works: a name (`blazozon`), a content word (`blohehal`), a [special pronoun](/pronouns#special-pronouns) (`bluwen`), a resume (`blohehar`), or a standalone join. A [SHARED](/list-structure#shared-after-the-join) `/ɡ/` comes after the landmark: `zexual blohehal gogozel` is *every cat at the house*.
 
 This lets a sweeping claim show how far it reaches. *Everyone's against me* names its bound (`zuoxual bluwen`), and the join ending says whether exceptions are ruled out: closed `zuoxual` is *every one of them*, open `zuoxuam` is *as far as I know*. A listener can then check the bound, or ask for the exception.
 
@@ -109,7 +109,7 @@ A hooked join sits where any join of its role letter sits. A plain `/b/` one is 
 
 ### Point back (hook **-r**) {#hooked-joins-point-back}
 
-To bound a join by a place already named (*everyone there*), write `r` before the seam and no `bl-` word. The hook then points back to the landmark already in play, the way [`er`](/discourse-hooks#hook-resume) does on its own: `zerxual` is *everyone there* as `er` is *there*. The hooks that point back on their own take it here: `zarxual` *everyone in there*, `zerxual` *everyone there*, `zurxual` *everyone from there*, `zorxual` *everyone it was for*, `zaorxual` *everyone on it*, `zaerxual` *everyone using it*, `zuerxual` *everyone passing through there*.
+To bound a join by a place already named (*everyone there*), write `r` before the seam and no `bl-` word. The hook then points back to the landmark already in play, the way [`er`](/ending-grids#hook-resume) does on its own: `zerxual` is *everyone there* as `er` is *there*. The hooks that point back on their own take it here: `zarxual` *everyone in there*, `zerxual` *everyone there*, `zurxual` *everyone from there*, `zorxual` *everyone it was for*, `zaerxual` *everyone on it*, `zaorxual` *everyone using it*, `zuerxual` *everyone passing through there*.
 
 > `zazozon vehohel el bohehal. zerxual vezuvel.`
 >

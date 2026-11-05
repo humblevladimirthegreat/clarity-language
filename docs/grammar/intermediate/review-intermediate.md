@@ -206,7 +206,7 @@ z-Ahelan | d-tent | v-see . z-Ahelan | d-bucket | v-←see
 
 *Alazun and their duck swim.*
 
-**Rule:** [SHARED after the join](rank-joins.md#shared-after-the-join)
+**Rule:** [SHARED after the join](list-structure.md#shared-after-the-join)
 :::
 
 **3.** `zahelan glegol d[azozon] varuyol.`
@@ -370,7 +370,7 @@ anyway | z-Ahelan | v-walk
 
 **`er`** goes back to the main line; **`el`** would replace the last claim (*Instead*).
 
-**Rule:** [Point back](discourse-hooks.md#hook-resume)
+**Rule:** [Discourse](discourse-hooks.md#discourse)
 :::
 
 **11.** *How many cookies does Azozon see?* `yel dugedelx grar zazozon vayebel.` or `yel dugedelx gror zazozon vayebel.`
@@ -442,7 +442,7 @@ z-Azozon | v-walk | [th-because | bl-night] | th-not
 
 The `/th/` join denies the ground; **`vul`** after the verb would deny the walking.
 
-**Rule:** [Stance joins](join-across-roles.md#stance-joins)
+**Rule:** [Stance joins](vp-clause-forms.md#stance-joins)
 :::
 
 **17.** *Hopefully Azozon walks.* `zazozon thuwuyom vowurol.` or `zazozon huwuyom vowurol.`
@@ -610,7 +610,7 @@ in.other.words.open | z-Alazun | v-cry
 
 Open **-m** offers one of several ways to say it; **`ol`** is *in other words*, the one rewording.
 
-**Rule:** [Discourse](ending-grids.md#discourse)
+**Rule:** [Discourse](discourse-hooks.md#discourse)
 :::
 
 **31.** *a cookie bucket* (one bucket) `zugedexobowal.` or `zobowaxugedel.`

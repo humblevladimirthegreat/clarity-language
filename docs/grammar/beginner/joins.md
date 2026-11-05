@@ -492,5 +492,5 @@ The join closes the list after **both** items, not between them as English *and*
 - Prefix-less revision (*including* / *rather*): [hooks.md](hooks.md)
 - Applicability *when* under `/h/` `/w/`: [restrictors.md](restrictors.md)
 - Fill-ask and yes/no on single-item/standalone joins: [questions.md](questions.md)
-- Join series across roles: [join-across-roles.md](/join-across-roles)
+- Join series across roles: [joins on verbs and stances](/vp-clause-forms)
 - Titled phrases: [word-endings.md](/proper-names#titled-phrases)

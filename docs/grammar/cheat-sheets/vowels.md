@@ -120,7 +120,7 @@ A say word is reach then act (`hwuvom`: this-act **u**, require **o**). A role p
 | [Join](/joins#join-type-vowel-series) | *and* | rank: first matters most | pick one | *not* / *none of* | B |
 | [Same-role hook](/hooks#including) | [*including*](/hooks#including) | [*or rather*](/hooks#rather) | [*instead*](/hooks#instead) | [*except*](/hooks#except) | B |
 | [Discourse glue](/hooks#discourse-hooks) | `al` *Additionally* | `ol` *In other words* | `el` *Instead* | `ul` *Except* | B |
-| [Hook resume, front](/discourse-hooks#hook-resume) | `ar` *Going back to that* | `or` *As I said* | `er` *Anyway* | `ur` *Never mind that* | I |
+| [Hook resume, front](/discourse-hooks#discourse) | `ar` *Going back to that* | `or` *As I said* | `er` *Anyway* | `ur` *Never mind that* | I |
 | [Number marker](/number-markers#marker-vowel-referential-identity) | `+` count | `#` ordinal | `_` digit string | `-` negative | I |
 | [Restrictor](/restrictors) | `hal` *only when* / *never* | | `her` *anytime* | `hur` *some other time*; `hual` *always* | B |
 | [Comparative](/comparatives#comparatives) / [equative](/comparatives#equatives) | | `zol` *more … than* | | | B |
@@ -137,7 +137,7 @@ Two vowels keep the same pieces: **u** first inverts, the rest combine. Join sta
 | **ao** | [*A, then B*](/rank-joins#route-ao) | I |
 | **ua** | [*everything but*](/joins#everything-ua) | B |
 | **uo** | [rank reversed](/rank-joins#invert-u-stacks) | I |
-| **ae** | [*and/or*](/rank-joins#exclusivity-and-denying-a-whole-list) | I |
+| **ae** | [*and/or*](/set-joins#exclusivity-and-denying-a-whole-list) | I |
 | **oe** | [tie](/rank-joins#rank-joins) | I |
 | **ue** | [*anything but*](/rank-joins#invert-u-stacks) | I |
 

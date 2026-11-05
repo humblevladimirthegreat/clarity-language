@@ -34,7 +34,7 @@ A standalone ladder says only that nothing is on top. It does not say why (a tie
 
 English *not as challenging as* says the first name is below the second, so it is **`zuol`**: `zalazun zazozon zuol gamahum` is *Alazun is not as challenging as Azozon*. For a firm tie, use [`zoel`](/comparatives#equatives).
 
-English *no more challenging than* says less: the first name is below the second or tied with them. Write the whole comparison as usual, then deny it with **`zul`**, the way you [deny a whole list](rank-joins.md#exclusivity-and-denying-a-whole-list). What English often only hints (that neither is very challenging) is not said.
+English *no more challenging than* says less: the first name is below the second or tied with them. Write the whole comparison as usual, then deny it with **`zul`**, the way you [deny a whole list](set-joins.md#exclusivity-and-denying-a-whole-list). What English often only hints (that neither is very challenging) is not said.
 
 > `zalazun zazozon zol gamahum zul.`
 >

@@ -6,7 +6,7 @@ Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* do
 
 ### English → Ageben {#english-cues}
 
-**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Contrary to a stance](/prescription#contrary-to-stance) · [Continue](/speech-moves#continue-x) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse) · [Because](/iff-fault#only-because) · [Point back](/discourse-hooks#hook-resume) · [Clause sequence](/clause-sequence#clause-sequence)
+**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Contrary to a stance](/prescription#contrary-to-stance) · [Continue](/speech-moves#continue-x) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse) · [Because](/iff-fault#only-because) · [Discourse hooks with -r](/discourse-hooks#discourse) · [Clause sequence](/clause-sequence#clause-sequence)
 
 Time and discourse dependents use the same **`blarl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a hinge root.
 
@@ -25,10 +25,10 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 | *thus* (*in this way*) | the same adverb again: `/h/` with **-r** ([how English approximates -r](/resume-sense#how-english-approximates-r)) |
 | *the fact that* / *the idea that* / *it is a fact that* | a predicate with a `/z/` stand-in: `gunugem zarl zazozon vowurol.`; or two sentences, then `zarth` ([stand-in vowels](/stand-in-vowels#stand-in)): `zazozon vowurol. zarth gunugem.` A clause never modifies a noun |
 | *due to* / *owing to* / *because of* (NP) | **`thahum`** + `/b/` **noun** (`thahum blerulal`) |
-| *not because* (clause) | **`thahum thul blarl`** ([stance join before `blarl`](/join-across-roles#stance-join-before-barl)) |
+| *not because* (clause) | **`thahum thul blarl`** ([stance join before `blarl`](/vp-clause-forms#stance-join-before-barl)) |
 | *however* / *meanwhile* (discourse) | **`xezem`** / **`xugorom`** |
 | *regardless of* (NP) | same **`hezem`** + `/b/` **noun** as *despite* |
-| *anyway* / *anyhow* (back to the main line) | the resume hook **`er …`** ([point back](/discourse-hooks#hook-resume)) |
+| *anyway* / *anyhow* (back to the main line) | the resume hook **`er …`** ([back to the main line](/discourse-hooks#discourse)) |
 | *otherwise* / *or else* (failing that) | **`xen`** between the clauses ([clause sequence](/clause-sequence#clause-sequence)) |
 | *nevertheless* / *nonetheless* (discourse) | **`xezem`** after the finished claim; inside one sentence, **`hezem blarl`** |
 | *whereas* (two claims set against each other) | **`xezem`** before the second claim, or **`hezem blarl`** inside one sentence |

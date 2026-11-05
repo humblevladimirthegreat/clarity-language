@@ -45,11 +45,11 @@ A join has at most two vowels. Which endings it can take depends on its role let
 | Role | Join endings | Notes |
 |-------|----------------|-------|
 | `/z/` `/d/` `/b/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**), **-rx** | phrase lists; **-n** is a named package; **-rx** is an [unnamed group](/joins#unspecified-member-r-phrase) |
-| `/w/` | none | not a phrase list: the only `/w/` before a join word is [`wubam`](/rank-joins#respectively), with **-l** or **-m** |
+| `/w/` | none | not a phrase list: the only `/w/` before a join word is [`wubam`](/list-structure#respectively), with **-l** or **-m** |
 | `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](/more-occasions#defined-core-full); **-n** forms are [join-relations](/join-relations#join-relations) |
 | `/v/` | **-l** / **-m** / **-r**, each with **-x** | **-x** is one [shared act](/collectives#verbs-v); parallel **-n** forms are [list verbs](/list-verbs#list-verbs) |
-| `/th/` | **-l** / **-m** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | [stance joins](/join-across-roles#stance-joins) on stance words (*not because…*) |
-| `/x/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | between clauses, not after them ([clause joins](/joins#clause-joins)); forms: [Stance joins](/join-across-roles) |
+| `/th/` | **-l** / **-m** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | [stance joins](/vp-clause-forms#stance-joins) on stance words (*not because…*) |
+| `/x/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | between clauses, not after them ([clause joins](/joins#clause-joins)); forms: [Joins on verbs and stances](/vp-clause-forms#vp-clause-forms) |
 
 Word shape: [phonology](/phonotactics#phonotactics).
 
@@ -61,17 +61,17 @@ These limits apply to every join.
 |-------|---------|
 | One slot per chain | one subject, object, plain `/b/` recipient, `/ɡ/` stack, or `/w/` / `/h/` / `/th/` unit; hosted `/b/` stays on its `/ɡ/`, `/h/`, or `/th/` |
 | Matching role letter | every item head and the join share the first letter |
-| One right-close per flat list | nest as [fence nesting](/rank-joins#fence-nesting) |
+| One right-close per flat list | nest as [fence nesting](/list-structure#fence-nesting) |
 | Shared modifiers | only immediately after each join |
 | Phrase **-r** | only **…ar** / **…er** / **…or** / **…ur**, plus **-x** for a group on `/z/` `/d/` `/b/` |
 | Join **-x** | after **-r** on `/z/` `/d/` `/b/` (a group); after any ending on `/v/` (one shared act) |
-| Verb+object packages | verb-phrase `/v/`; full sentences use `/x/` ([forms](/join-across-roles)) |
+| Verb+object packages | verb-phrase `/v/`; full sentences use `/x/` ([forms](/vp-clause-forms#vp-clause-forms)) |
 | Revising one item | in-clause *including* / *rather* / *instead* / *except* are [hooks](/hooks) |
 | Several manners on `/h/` `/w/` | juxtaposition (`hadurol halozul`) |
 
 **Compare with:** prefix-less **`al`** / **`am`** / … are [hooks](/hooks). Under `/h/` `/w/`, the unit is a [restrictor](/restrictors), not sibling *and*.
 
-*Because* / *if* use `/th/` plus `/b/` [**`blarl`**](/dependents#hinges). An `/h/` or `/th/` word between the items of a noun, adjective, or `/b/` list does not end the list. For how far an `/h/` reaches in a verb list, see [Joins on the verb](/vp-clause-forms#vp-clause-forms). Each item of a clause join is a full clause.
+*Because* / *if* use `/th/` plus `/b/` [**`blarl`**](/dependents#hinges). An `/h/` or `/th/` word between the items of a noun, adjective, or `/b/` list does not end the list. For how far an `/h/` reaches in a verb list, see [Verb-phrase and clause forms](/vp-clause-forms#vp-clause-forms). Each item of a clause join is a full clause.
 
 ### Practice {#advanced-practice}
 

@@ -67,7 +67,7 @@ A role compound names a participant: the doer, what the event acts on or makes, 
 |-----|--------|---------|
 | a kind of tool, place, or time | an ordinary [compound](/compounds#two-roots-one-word) with a head root: `daruyoxuwal` (write + tool), `dezuvexodurol` (sleep + time) | *a writing tool*, *bedtime* |
 | the landmark a clause named | resume its noun: after `aol banewul`, `danewur` | *that knife* |
-| that landmark as a place or means | the hook's own [pointer](discourse-hooks.md#hook-resume): `ar` *in there*, `er` *there*, `ur` *from there*, `aer` *with it* | *there*, *with it* |
+| that landmark as a place or means | the hook's own [pointer](ending-grids.md#hook-resume): `ar` *in there*, `er` *there*, `ur` *from there*, `aor` *with it* | *there*, *with it* |
 | a landmark nobody named | two sentences: a place exists, and the event happened there | *wherever it happened* |
 | who pays, who it is for | the hook in a clause (`uol` *against*, `ol` *for* plus `/b/`), then a resume | *the one it was stolen from* |
 
@@ -131,7 +131,7 @@ If the next sentence after an event opened with a [consequence linker](sentence-
 >
 > "Azozon punches. Therefore Alazun screams. Ahelan sees what came of it."
 
-**Compare with:** a landmark is a thing (*the house*, *the knife*), reached by resuming its noun or with a hook pointer (`aer` *with it*). An **`h`** part is a quality of the event (*the haste*): *how* is `dwuher`. **`g`** is the state the event leaves its participant in; **`x`** is what happens next because of it.
+**Compare with:** a landmark is a thing (*the house*, *the knife*), reached by resuming its noun or with a hook pointer (`aor` *with it*). An **`h`** part is a quality of the event (*the haste*): *how* is `dwuher`. **`g`** is the state the event leaves its participant in; **`x`** is what happens next because of it.
 
 ### Practice {#intermediate-practice}
 

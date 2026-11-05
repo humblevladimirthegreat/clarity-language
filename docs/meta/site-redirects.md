@@ -84,8 +84,9 @@ Put **every retired public path** in `pageMoves`, not only the latest rename. To
 | `/grammar/commentary.html` | `/grammar/knowing.html` |
 | `/grammar/plan-decision.html` | `/grammar/intention.html` |
 | `/grammar/revisers.html` | `/grammar/hooks.html` |
-| `/grammar/join-extras.html` | `/grammar/join-across-roles.html` |
-| `/grammar/join-derived-forms.html` | `/grammar/join-across-roles.html` |
+| `/grammar/join-extras.html` | `/grammar/vp-clause-forms.html` |
+| `/grammar/join-derived-forms.html` | `/grammar/vp-clause-forms.html` |
+| `/grammar/join-across-roles.html` | `/grammar/vp-clause-forms.html` |
 | `/grammar/values.html` | `/grammar/sakes.html` |
 | `/grammar/interests.html` | `/grammar/sakes.html` |
 | `/grammar/why-agelan.html` | `/grammar/purpose.html` |

@@ -109,7 +109,7 @@ Source: [restrictors.md](/restrictors)
 
 ## Joins
 
-Source: [joins.md](/joins), [join-across-roles.md](/join-across-roles#stance-joins)
+Source: [joins.md](/joins), [vp-clause-forms.md](/vp-clause-forms#stance-joins)
 
 - **open:** **`/th/`…-n**. Join-relations frame a noun or an event, and a stance is neither, so no reading composes.
 - **open:** stacked **-r** outside a question on `/th/` (`thaer` … `thuor` are fill-asks only), and on `/z/` `/d/` `/b/` `/v/` `/x/` `/ɡ/` joins (`zuar`, `vaer`, `xuar`, `gaer`). No statement wants a stacked blank, and no question has asked for one on these joins. Parser: `stackedJoinResume`.

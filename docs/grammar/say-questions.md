@@ -40,7 +40,7 @@ English *Really?* asks the speaker to confirm what they just said. Write the con
 
 **Needs:** [Fill-ask](/questions#fill-ask-r) · [whether](/questions#embedded-whether)
 
-To report a *who* / *what* question inside a claim (*Azozon asks who walks*), put the same blank you would use in a direct question inside [**`derl`**](/questions#embedded-whether). To quote the question as wording, keep `yel` inside a [cite](/span-mention#quote-acts). To ask someone else whether they know such an answer (*Do you know who walks?*), see [a blank inside a dependent](/fill-ask-roles#blank-in-dependent).
+To report a *who* / *what* question inside a claim (*Azozon asks who walks*), put the same blank you would use in a direct question inside [**`derl`**](/questions#embedded-whether). To quote the question as wording, keep `yel` inside a [cite](/quote-contents#quote-acts). To ask someone else whether they know such an answer (*Do you know who walks?*), see [a blank inside a dependent](/fill-ask-roles#blank-in-dependent).
 
 > `zazozon vezuyol derl zar vowurol.`
 >

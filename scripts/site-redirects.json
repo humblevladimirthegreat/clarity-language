@@ -27,13 +27,18 @@
     },
     {
       "from": "/grammar/join-extras.html",
-      "to": "/grammar/join-across-roles.html",
+      "to": "/grammar/vp-clause-forms.html",
       "note": "Public URL after renaming join-extras.md to join-across-roles.md."
     },
     {
       "from": "/grammar/join-derived-forms.html",
-      "to": "/grammar/join-across-roles.html",
+      "to": "/grammar/vp-clause-forms.html",
       "note": "Public URL after renaming join-derived-forms.md to join-across-roles.md."
+    },
+    {
+      "from": "/grammar/join-across-roles.html",
+      "to": "/grammar/vp-clause-forms.html",
+      "note": "Public URL after merging join-across-roles.md into vp-clause-forms.md."
     },
     {
       "from": "/grammar/values.html",

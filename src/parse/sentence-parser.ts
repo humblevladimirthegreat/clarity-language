@@ -578,7 +578,7 @@ class AgebenSentenceParser extends CstParser {
    *   adjective: that adjective would describe the unit. Only a `/ɡ/` list that opens with its join word, or a
    *   respectively list, follows there (`*Open` rules).
    * - After a list whose join shares an adjective (`*Shared` rules), a respectively `/ɡ/` list does not follow: its
-   *   adjectives start right at the join, so the first one is not shared (rank-joins.md#respectively).
+   *   adjectives start right at the join, so the first one is not shared (list-structure.md#respectively).
    */
   public unit = this.unitChainRule("unit", "start", "closed");
   /** The first clause item after a cross-period join: a unit chain that does not open with a hook. */
@@ -903,7 +903,7 @@ class AgebenSentenceParser extends CstParser {
   }
 
   /**
-   * A list's join word, and what the join shares (rank-joins.md#shared-after-the-join): an adjective after any join, a
+   * A list's join word, and what the join shares (list-structure.md#shared-after-the-join): an adjective after any join, a
    * scale after a rank join ({@link HScale}, {@link BScale}), then the factor after an equative's scale. `Bare`: nothing
    * shared; `Open`: an adjective or scale whose hosted `/b/` the adjectives after it describe; `Shared`: any other
    * adjective; `Closed`: a scale, or a factor.
@@ -1157,7 +1157,7 @@ class AgebenSentenceParser extends CstParser {
 
   /**
    * A `/ɡ/` list right after a noun join that shares nothing: its first part is a lone join word, or a respectively
-   * list (`zalahen zal gelavam gamazam wazem gal`, rank-joins.md#respectively). Any other first adjective would be shared.
+   * list (`zalahen zal gelavam gamazam wazem gal`, list-structure.md#respectively). Any other first adjective would be shared.
    */
   public gCoordLead = this.RULE("gCoordLead", () => {
     this.SUBRULE(this.gCoordPartLead, { LABEL: "gCoordPart" });
@@ -1172,7 +1172,7 @@ class AgebenSentenceParser extends CstParser {
 
   /**
    * A `/ɡ/` list after a list that shares an adjective: its first part is not a respectively list, whose first
-   * adjective would sit right after the noun join (rank-joins.md#respectively).
+   * adjective would sit right after the noun join (list-structure.md#respectively).
    */
   public gCoordPlainLead = this.RULE("gCoordPlainLead", () => {
     this.SUBRULE(this.gCoordPartPlain, { LABEL: "gCoordPart" });
@@ -1244,7 +1244,7 @@ class AgebenSentenceParser extends CstParser {
           this.AT_LEAST_ONE(() => this.SUBRULE(this.hUnitRule));
           this.SUBRULE2(this.hJoinClose);
           // `thugum thoyem thul barl …`: a stance join may sit between the last open host and its `barl`,
-          // so it closes the stance words while the next sentence still fills the host (join-across-roles.md#stance-join-before-barl).
+          // so it closes the stance words while the next sentence still fills the host (vp-clause-forms.md#stance-join-before-barl).
           this.OPTION2(() => this.CONSUME(LateOdo, { LABEL: "lateBound" }));
         },
       },
@@ -2147,7 +2147,7 @@ function isSameRolePairAt(tokens: IToken[], at: number): boolean {
 
 /**
  * A hook and its `/b/` right before a noun list's join word, or before its bar, after a noun of that slot and what
- * describes it: the hook belongs to that last item (rank-joins.md#shared-after-the-join), not to the clause.
+ * describes it: the hook belongs to that last item (list-structure.md#shared-after-the-join), not to the clause.
  */
 function isItemHookAt(tokens: IToken[], at: number): boolean {
   if (!tokenIs(tokens[at]!, Hook) || tokens[at + 1]?.tokenType !== B) return false;
@@ -2236,7 +2236,7 @@ function joinClosesAhead(after: IToken[]): boolean {
 
 /**
  * `blarl` that fills a `/th/` host from further right: after a stance join that closes a hinge with no `/b/` yet
- * (join-across-roles.md#stance-join-before-barl), or after a channel's offset (evidentiality.md#evidence-clause).
+ * (vp-clause-forms.md#stance-join-before-barl), or after a channel's offset (evidentiality.md#evidence-clause).
  */
 function isLateOdoAt(before: IToken[]): boolean {
   let i = before.length - 1;
@@ -2270,7 +2270,7 @@ function skipWBack(tokens: IToken[], i: number): number {
   return i;
 }
 
-/** A rank, equative or route join of a noun list: the word after it may be its shared scale (rank-joins.md#shared-after-the-join). */
+/** A rank, equative or route join of a noun list: the word after it may be its shared scale (list-structure.md#shared-after-the-join). */
 /** A `/z/`, `/d/` or `/b/` hooked join, which hosts its landmark (hooked-joins.md#hooked-joins). */
 function isHookedNounJoin(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;

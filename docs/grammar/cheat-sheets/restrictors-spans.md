@@ -140,9 +140,9 @@ A one-word name is an ordinary **-n** word (`donuren`), not a span.
 | [A cite as the verb](/spans#pos) | `yul zalazun v[vezohul].` | *Don't say “stop,” Alazun.* | B |
 | [A loan verb](/spans#pos) | <code>zalazun dazozon v&lt;google&gt;.</code> | *Alazun googled Azozon.* | B |
 | [A loan adjective](/spans#pos) | <code>zodozel g&lt;rouge&gt; vowurol.</code> | *A rouge dog walks.* | B |
-| [A quoted question](/span-mention#quote-acts) | `zazozon d[yel zalazun vowurol] vezuyol.` | *Azozon said, “Does Alazun walk?”* | I |
+| [A quoted question](/quote-contents#quote-acts) | `zazozon d[yel zalazun vowurol] vezuyol.` | *Azozon said, “Does Alazun walk?”* | I |
 | [Point back at a quote](/span-mention#span-noun) | `zalazun d[azozon] vezuyol. zahelan dwuder varuyol.` | *Alazun said “Azozon.” Ahelan wrote that down.* | I |
-| [Topic from a title](/span-mention#topic-quotes) | `x@[onuren alazun] dalen vozuyel.` | *Now, about Onuren Alazun: it is sung.* | I |
+| [Topic from a title](/quote-contents#topic-quotes) | `x@[onuren alazun] dalen vozuyel.` | *Now, about Onuren Alazun: it is sung.* | I |
 | [An aside as a clause](/spans#asides) | `zazozon vowurol th(zalazun vezuvel).` | *Azozon walks (Alazun is asleep).* | B |
 | [An aside on a noun](/spans#asides) | `zazozon g(zazozor vowurol) vozuyel.` | *Azozon, who walks, sings.* | B |
 | [An aside on one word](/spans#asides) | `zodozel w(zazozon vezuyol) gerulol vowurol.` | *A (so Azozon says) red dog walks.* | B |

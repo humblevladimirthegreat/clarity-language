@@ -77,7 +77,7 @@ export const hashRedirects: HashRedirect[] = [
   { page: "topic.md", hash: "intermediate", to: "topic.md" },
   { page: "fill-ask-roles.md", hash: "intermediate", to: "fill-ask-roles.md" },
   { page: "discourse-hooks.md", hash: "intermediate", to: "discourse-hooks.md" },
-  { page: "join-across-roles.md", hash: "intermediate", to: "join-across-roles.md" },
+  { page: "join-across-roles.md", hash: "intermediate", to: "vp-clause-forms.md" },
   { page: "notional-standing.md", hash: "intermediate", to: "notional-standing.md" },
   { page: "feelings-permission.md", hash: "intermediate", to: "feelings-permission.md" },
   { page: "numeric-derivation.md", hash: "advanced", to: "numeric-derivation.md" },

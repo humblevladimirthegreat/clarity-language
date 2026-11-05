@@ -336,7 +336,7 @@ function enforceNameInstance(word: LexWord): void {
   }
 }
 
-/** Stacked join **-r** (`zuar` / `vaor` / `xuar` / `gaor`) has no reading outside the `/th/` fill-ask (join-across-roles.md § Standalone stance joins). */
+/** Stacked join **-r** (`zuar` / `vaor` / `xuar` / `gaor`) has no reading outside the `/th/` fill-ask (vp-clause-forms.md § Standalone stance joins). */
 function enforceStackedJoinR(word: LexWord): void {
   const family = word.family;
   if (family.kind !== "joinMarker" || word.ending !== "r" || family.series.length < 2) return;
@@ -1242,7 +1242,7 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
   if (at > 0 && polar < at - 1 && polar >= 0 && tokenMatcher(tokens[polar]!, Force)) {
     throw new ConstructionError("checkBackBody", tokens.slice(polar, at).map((token) => token.image).join(" "));
   }
-  // *Respectively* (`wazem`) sits only right before a join word (rank-joins.md#respectively).
+  // *Respectively* (`wazem`) sits only right before a join word (list-structure.md#respectively).
   const pairing = tokens.findIndex((token, i) => tokenMatcher(token, WPairing) && !isAny(tokens[i + 1] ?? token, [JoinZ, JoinD, JoinB, JoinG, JoinV]));
   if (pairing >= 0) throw new ConstructionError("joinDetail", tokens[pairing]!.image);
   // A `gl-` adjective leans on the noun or call after its hosted `/b/` (left-bound-adjectives.md#left-bound-adjectives). The parser

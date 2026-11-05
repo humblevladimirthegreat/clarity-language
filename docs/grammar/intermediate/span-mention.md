@@ -2,7 +2,9 @@
 band: intermediate
 ---
 
-# Mention {#mention-sitting}
+# Spans as words {#spans-as-words}
+
+A written span can stand in a sentence like a word: a word as spelling, a noun, an adjective before the noun, or one thing a title names.
 
 ### Written only {#written-only}
 
@@ -121,41 +123,6 @@ A span with **`@`** names the work or product itself: <code>d@&lt;iPhone&gt;</co
 | `d^@[onuren alazun]` | one copy or performance of it | *a copy of Onuren Alazun* |
 | `d~^@[onuren alazun]` | one copy of a work titled roughly that | *a copy of something like Onuren Alazun* |
 
-### Act words in a quote {#quote-acts}
-
-A quoted question or command keeps its own [act word](/speech-moves#speech-act-statement-question-command) inside the cite, the same way it keeps a tone mark. The outer sentence is still your claim (*said*), and `yel` or `yol` belongs to the quoted talk.
-
-> `zazozon d[yel zalazun vowurol] vezuyol.`
->
-> z-Azozon | d-CITE[y-question | z-Alazun | v-walk] | v-tell
->
-> "Azozon said, “Does Alazun walk?”"
-
-### Topics in a quote {#topic-quotes}
-
-A cite holds someone else's words, so a [topic](topic.md#topic) never carries into it or out of it. The inside of a cite starts with no topic, no [tags](tag-pronouns.md#tag-pronouns), and its own targets for [role pointers](/pronouns#role-pointers), and may open with a topic word of its own. When the cite ends, your own topic and tags are as they were.
-
-A cite or opaque span can also be a topic word itself, under `/x/`: a titled work, a word as spelling (with the mention marker before it), or a foreign name.
-
-> `x@[onuren alazun] dalen vozuyel.`
->
-> x-NAME.CITE[Onuren | Alazun] | d-TOPIC | v-sing
->
-> "Now, about Onuren Alazun: it is sung."
-
-> <code>x@&lt;Sam&gt; zalen vowurol.</code>
->
-> x-NAME.OPAQUE["Sam"] | z-TOPIC | v-walk
->
-> "Now, about Sam: Sam walks."
-
-| Span | Topic at the start | Topic words inside | Leaks out? |
-|------|--------------------|--------------------|------------|
-| Cite | none | allowed; the cite's own `/x/` word sets its topic | no |
-| Aside | yours | not allowed | n/a |
-
-A **-r** inside a cite cannot find a word outside it: the quoted words were said before the surrounding sentence existed.
-
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -205,23 +172,7 @@ z-Alazun | d-CITE[z-Azozon | v-attest] | v-tell
 z-Alazun | d-CITE[Azozon] | v-tell . z-Ahelan | d-←episode-patient.same | v-write
 :::
 
-**3.** *Now, about the word “alede”: it is small.*
-
-::: details Show answer
-`glegol x[alede] zalen gamezem.`
-
-[gl-MENTION | x-CITE["alede"]] | z-TOPIC | g-small
-:::
-
-**4.** *Azozon said, “Does Alazun lie?”*
-
-::: details Show answer
-`zazozon d[yel zalazun vulamul] vezuyol.`
-
-z-Azozon | d-CITE[y-question | z-Alazun | v-lie] | v-tell
-:::
-
-**5.** *Ahelan sees a copy of Onuren Alazun.*
+**3.** *Ahelan sees a copy of Onuren Alazun.*
 
 ::: details Show answer
 `zahelan d^@[onuren alazun] vayebel.`
@@ -239,15 +190,7 @@ z-Azozon | [gl-NAME.MENTION | d-CITE[Onuren]] | v-rejection
 *Azozon dislikes the name “onuren.”* (not the work)
 :::
 
-**2.** `x@[onuren alazun] zalazun dalen vuyugum.`
-
-::: details Show answer
-x-NAME.CITE[Onuren | Alazun] | z-Alazun | d-TOPIC | v-rejection
-
-*Now, about Onuren Alazun: Alazun dislikes it.*
-:::
-
-**3.** `zahelan d~[zazozon vugel] vezuyol.`
+**2.** `zahelan d~[zazozon vugel] vezuyol.`
 
 ::: details Show answer
 z-Ahelan | d-CITE.about[z-Azozon | v-attest] | v-tell
@@ -255,7 +198,7 @@ z-Ahelan | d-CITE.about[z-Azozon | v-attest] | v-tell
 *Ahelan said something like “Azozon attests.”*
 :::
 
-**4.** `gl(gamezem) zalazun dazozon vabuvul.`
+**3.** `gl(gamezem) zalazun dazozon vabuvul.`
 
 ::: details Show answer
 [gl-ASIDE[g-small] | z-Alazun] | d-Azozon | v-punch
@@ -273,16 +216,4 @@ z-Ahelan | d-CITE.about[z-Azozon | v-attest] | v-tell
 z-Azozon | d-NAME.CITE[Onuren | Alazun] | v-rejection
 
 **`@`** makes the span the work; bare brackets quote the words.
-:::
-
-#### Fix it {#intermediate-fix-it}
-
-**1.** *Azozon said, “Does Alazun walk?”* <!-- lint: error -->`yel zazozon d[zalazun vowurol] vezuyol.`
-
-::: details Show answer
-`zazozon d[yel zalazun vowurol] vezuyol.`
-
-z-Azozon | d-CITE[y-question | z-Alazun | v-walk] | v-tell
-
-The quoted question keeps its act word inside the cite; **`yel`** outside asks whether Azozon said it.
 :::
