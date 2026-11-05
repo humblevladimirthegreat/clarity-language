@@ -19,9 +19,9 @@ A want is in someone's mind, so someone else's want (*Azozon wants to walk*) is 
 
 To want a person or thing (*want Azozon*), name the act that would get it (*see*, *take*) and put the person or thing in `/d/` as usual.
 
-> `zalazun thalom vayebel dazozon.`
+> `zalazun thalom dazozon vayebel.`
 >
-> z-Alazun | th-WANT-unstated | v-see | d-Azozon
+> z-Alazun | th-WANT-unstated | d-Azozon | v-see
 >
 > "I want Alazun to see Azozon."
 

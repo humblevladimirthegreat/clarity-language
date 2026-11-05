@@ -244,14 +244,14 @@ z-Azozon | [h-on-behalf-of | bl-Alazun] | v-tell | b-Ahelan
 The `bl-` word right after **`hanem`** is the one acted for; the plain `/b/` is who hears it.
 :::
 
-**2.** *Ahelan walks like a duck.* `zahelan hewem bladozal vowurol.` or `zahelan badozal hewem vowurol.`
+**2.** *Ahelan walks like a duck.* `zahelan hewem bladozal vowurol.` or `zahelan hewem badozal vowurol.`
 
 ::: details Show answer
 `zahelan hewem bladozal vowurol.`
 
 z-Ahelan | [h-like | bl-duck] | v-walk
 
-The model goes in `/b/` right **after** **`hewem`**; before it, `badozal` is a recipient.
+The model is the hook's extra noun, so it takes a `bl-` word right after **`hewem`**; a plain `badozal` is a recipient.
 :::
 
 #### Fix it {#beginner-fix-it}

@@ -135,7 +135,7 @@ MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [MAY](/knowing#may) | `zalazun thomam vudurul dahelan.` | *Alazun may be leaving Ahelan.* | B |
+| [MAY](/knowing#may) | `zalazun thomam dahelan vudurul.` | *Alazun may be leaving Ahelan.* | B |
 | [MAY, ask to find out](/knowing#follow-up-endings-may) | `yel zazozon vabuvul thomal dalazun.` | *Might Azozon be punching Alazun? let's find out.* | B |
 | [RESIDUE](/notional-standing#residue-and-former-climate) | `zalazun haram vudurul.` | *Alazun has left and is still gone.* | I |
 | [RESIDUE with a channel](/notional-standing#residue-and-former-climate) | `zalazun thevum haram vudurul.` | *I remember Alazun leaving, and Alazun is still gone.* | I |

@@ -92,7 +92,7 @@ A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `x
 | [No K](/universals-domains#universals-domains-generics) | `zul gogozel` | *no cat* | I |
 | [Not every K](/universals-domains#not-every) | `zual gogozel zul` | *not every cat* | I |
 | [Every, by set](/universals-domains#kind-domains) | `zual gwedanam blayan` | *everyone we know* | I |
-| [Respectively](/rank-joins#respectively) | `zazozon zalazun zal vayebel dogozel dodozel wubam dal` | *saw a cat and a dog, respectively* | I |
+| [Respectively](/rank-joins#respectively) | `zazozon zalazun zal dogozel dodozel wubam dal vayebel` | *saw a cat and a dog, respectively* | I |
 | [Deny the whole list](/rank-joins#exclusivity-and-denying-a-whole-list) | `vowurol veruvol val vul` | *not both walk and run* | I |
 | [Deny each item](/rank-joins#exclusivity-and-denying-a-whole-list) | `vowurol veruvol vul` | *neither walk nor run* | B |
 | [Named list](/join-limits#named-list) | `zobodel zubudal zan` | *bread and butter* (the set phrase) | A |
@@ -214,7 +214,7 @@ Role letter, the hook's vowels (**`m`** for its zone, **`r`** to point back), **
 | `em buwen` / `em bawan` | [*here*, *this*](/here-there#deixis) / *there by you*, *that* | B |
 | `em bayan` / `um bayan` | [*here with us*](/here-there#deixis) / *over there* | B |
 | `vavobol oel buwen` | [*comes to me*](/here-there#deixis) | B |
-| `velobal dubogal oel buwen` | [*brings me the package*](/here-there#deixis) | B |
+| `dubogal velobal oel buwen` | [*brings me the package*](/here-there#deixis) | B |
 | `zodozel om buwen` | [*my dog*](/extra-noun-hooks#genitive) (in my use) | B |
 
 ## Don't mix up {#dont-mix-up}

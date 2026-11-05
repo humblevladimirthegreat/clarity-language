@@ -98,9 +98,9 @@ A pointer takes associative **-x** like a name. If no earlier sentence has someo
 
 English *herself* / *himself* / *themself* (a reflexive) point back to someone in the same sentence. Pointer vowel **`o`** does that: it picks **this** sentence’s own event, so a pointer in the object slot can name this sentence’s doer. (cue: **o** ≈ this same sentence)
 
-> `zazozon vayebel dwuzor.`
+> `zazozon dwuzor vayebel.`
 >
-> z-Azozon | v-see | d-←episode-agent.self
+> z-Azozon | d-←episode-agent.self | v-see
 >
 > "Azozon sees themself."
 
@@ -368,10 +368,10 @@ z-ONE | v-scream
 *One screams.* / *People scream.*
 :::
 
-**5.** `zazozon vayebel dwuzor.`
+**5.** `zazozon dwuzor vayebel.`
 
 ::: details Show answer
-z-Azozon | v-see | d-←episode-agent.self
+z-Azozon | d-←episode-agent.self | v-see
 
 *Azozon sees themself.*
 :::

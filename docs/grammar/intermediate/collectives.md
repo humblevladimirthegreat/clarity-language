@@ -65,15 +65,15 @@ A `/v/` join word is a verb too, so it takes the same **-x**: `zayan varx.` is *
 
 **Counts with a set subject:** when a set subject has a counted object, a singular verb gives the count to **each member** (*apiece*). Verb **-x** makes the count the **total** for the shared act.
 
-> `zazozon zalazun zal vayebel dogozelx gragel.`
+> `zazozon zalazun zal dogozelx gragel vayebel.`
 >
-> [z-Azozon | z-Alazun | z-and] | v-see | [d-cat-x | g-three]
+> [z-Azozon | z-Alazun | z-and] | [d-cat-x | g-three] | v-see
 >
 > "Azozon and Alazun each see three cats."
 
-> `zazozon zalazun zal vayebelx dogozelx gragel.`
+> `zazozon zalazun zal dogozelx gragel vayebelx.`
 >
-> [z-Azozon | z-Alazun | z-and] | v-see-x | [d-cat-x | g-three]
+> [z-Azozon | z-Alazun | z-and] | [d-cat-x | g-three] | v-see-x
 >
 > "Azozon and Alazun see three cats between them."
 
@@ -213,9 +213,9 @@ y-listener-x
 **5.** *Azozon and Alazun see three pages between them.*
 
 ::: details Show answer
-`zazozon zalazun zal vayebelx dobonolx gragel.`
+`zazozon zalazun zal dobonolx gragel vayebelx.`
 
-[z-Azozon | z-Alazun | z-and] | v-see-x | [d-page-x | g-three]
+[z-Azozon | z-Alazun | z-and] | [d-page-x | g-three] | v-see-x
 :::
 
 **6.** *Ahelan and associates, not counting you, sing.*
@@ -236,10 +236,10 @@ z-family | v-sing-x
 *The family sings as one unit.*
 :::
 
-**2.** `zalazun zahelan zal vayebel dehorolx gradol.`
+**2.** `zalazun zahelan zal dehorolx gradol vayebel.`
 
 ::: details Show answer
-[z-Alazun | z-Ahelan | z-and] | v-see | [d-sheet-music-x | g-two]
+[z-Alazun | z-Ahelan | z-and] | [d-sheet-music-x | g-two] | v-see
 
 *Alazun and Ahelan each see two sheets of music.*
 :::

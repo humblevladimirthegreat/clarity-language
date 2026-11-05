@@ -55,7 +55,7 @@ A thing works as a topic the same way:
 >
 > "Now, about a dog: Azozon sees it. It runs. Azozon sits."
 
-With Azozon as the topic, *Azozon sees themself* is `xazozon zalen vayebel dalen.` (`dwuzor` still works), and *Azozon's dog walks* is `xazozon zodozel om balen vowurol.`: *the topic's* is the same in every role.
+With Azozon as the topic, *Azozon sees themself* is `xazozon zalen dalen vayebel.` (`dwuzor` still works), and *Azozon's dog walks* is `xazozon zodozel om balen vowurol.`: *the topic's* is the same in every role.
 
 A dropped subject is never read as the topic. `xazozon dalazun vayebel.` leaves out who sees; it does not say Azozon sees. Write `zalen` whenever the topic is the doer (and `dalen` or `balen` in the other roles).
 

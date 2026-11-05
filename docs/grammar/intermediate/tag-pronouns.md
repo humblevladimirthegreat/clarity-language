@@ -38,9 +38,9 @@ For English *too* / *also*, resume the action. `/v/` **-r** is *the same action 
 >
 > "Alazun walks. Azozon does too."
 
-> `zazozon vayebel dogozel. zazozon vayeber dodozel.`
+> `zazozon dogozel vayebel. zazozon dodozel vayeber.`
 >
-> z-Azozon | v-see | d-cat . z-Azozon | v-←see | d-dog
+> z-Azozon | d-cat | v-see . z-Azozon | d-dog | v-←see
 >
 > "Azozon sees a cat. Azozon sees a dog too."
 

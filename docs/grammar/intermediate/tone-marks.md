@@ -30,9 +30,9 @@ Write the mark **before** what it colors, so you see the tone before you say the
 | Attached to a [span](/spans): `!d[ … ]` | the span |
 | Standing alone, then a space: `! zazozon …` | the rest of the sentence, up to the period |
 
-> `zazozon vayebel ?dodozel.`
+> `zazozon ?dodozel vayebel.`
 >
-> z-Azozon | v-see | ?d-dog
+> z-Azozon | ?d-dog | v-see
 >
 > "Azozon saw a dog, I think." (unsure about just the dog)
 
@@ -42,9 +42,9 @@ Write the mark **before** what it colors, so you see the tone before you say the
 >
 > "Azozon walks!"
 
-> `zazozon vayebel &dodozel.`
+> `zazozon &dodozel vayebel.`
 >
-> z-Azozon | v-see | &d-dog
+> z-Azozon | &d-dog | v-see
 >
 > "Azozon saw a *dog*." (a dog, not something else)
 
@@ -56,9 +56,9 @@ The other marks work the same way:
 >
 > "Azozon *walks*!!"
 
-> `?! zalazun vayebel dodozel.`
+> `?! zalazun dodozel vayebel.`
 >
-> ?! | z-Alazun | v-see | d-dog
+> ?! | z-Alazun | d-dog | v-see
 >
 > "Alazun saw a dog?!"
 
@@ -68,9 +68,9 @@ The other marks work the same way:
 >
 > "Good old Alazun walks." (teasing, but fond)
 
-> `zazozon vayebel ??dodozel.`
+> `zazozon ??dodozel vayebel.`
 >
-> z-Azozon | v-see | ??d-dog
+> z-Azozon | ??d-dog | v-see
 >
 > "Azozon saw a dog, I think, but I'm really not sure." (unsure about just the dog)
 
@@ -80,15 +80,15 @@ The other marks work the same way:
 >
 > "Azozon walks." (broad teasing)
 
-> `zazozon vayebel &&dodozel.`
+> `zazozon &&dodozel vayebel.`
 >
-> z-Azozon | v-see | &&d-dog
+> z-Azozon | &&d-dog | v-see
 >
 > "Azozon saw a *dog*." (a dog, and definitely not something else)
 
-> `;;zalazun vayebel dodozel.`
+> `;;zalazun dodozel vayebel.`
 >
-> ;;z-Alazun | v-see | d-dog
+> ;;z-Alazun | d-dog | v-see
 >
 > "Dearest Alazun saw a dog."
 
@@ -98,9 +98,9 @@ The other marks work the same way:
 >
 > "Azozon walks." (joking)
 
-> `;zalazun vayebel dodozel.`
+> `;zalazun dodozel vayebel.`
 >
-> ;z-Alazun | v-see | d-dog
+> ;z-Alazun | d-dog | v-see
 >
 > "Dear Alazun saw a dog."
 
@@ -150,9 +150,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **2.** *Alazun sees a trumpet, not something else.*
 
 ::: details Show answer
-`zalazun vayebel &dadorol.`
+`zalazun &dadorol vayebel.`
 
-z-Alazun | v-see | &d-trumpet
+z-Alazun | &d-trumpet | v-see
 :::
 
 **3.** *Alazun finds the trumpet, I think.* (unsure about the trumpet)

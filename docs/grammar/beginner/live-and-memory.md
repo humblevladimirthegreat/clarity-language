@@ -40,9 +40,9 @@ LIVE covers every sense, not only sight: a sound in earshot, cold on your skin, 
 
 English *I see it* and *I saw it* both report watching; they differ in when you watched. LIVE **`thugem`** is for a scene still in your senses as you speak. MEMORY **`thevum`** is for a scene you remember sensing, so the event is past. Do not put both on one claim. English *I witnessed it* is MEMORY, not LIVE. (cue: memory is fishing: you pull the episode back, and it may not be what you hoped, the way a line can come up with a boot)
 
-> `zazozon thevum vayebel dunobal.`
+> `zazozon thevum dunobal vayebel.`
 >
-> z-Azozon | th-MEMORY | v-see | d-boot
+> z-Azozon | th-MEMORY | d-boot | v-see
 >
 > "Azozon saw a boot, as I remember it."
 
@@ -120,10 +120,10 @@ z-Alazun | [th-MEMORY | bl-camera] | v-sing
 *Alazun sang, as I remember from the camera.*
 :::
 
-**2.** `zahelan thugem vayebel dugewel.`
+**2.** `zahelan thugem dugewel vayebel.`
 
 ::: details Show answer
-z-Ahelan | th-LIVE | v-see | d-camera
+z-Ahelan | th-LIVE | d-camera | v-see
 
 *Ahelan sees a camera, I can see it.*
 :::

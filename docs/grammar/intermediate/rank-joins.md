@@ -120,19 +120,19 @@ A route does not say which item is better. With a SHARED quality it sorts the li
 
 ### Respectively (`wubam`) {#respectively}
 
-Two *and*-lists in one clause do not say who goes with what. `zazozon zalazun zal vayebel dogozel dodozel dal.` could mean each of them saw both animals. When English says *respectively* (the first item goes with the first, the second with the second), put **`wubam`** right before the join word of the second list.
+Two *and*-lists in one clause do not say who goes with what. `zazozon zalazun zal dogozel dodozel dal vayebel.` could mean each of them saw both animals. When English says *respectively* (the first item goes with the first, the second with the second), put **`wubam`** right before the join word of the second list.
 
-> `zazozon zalazun zal vayebel dogozel dodozel wubam dal.`
+> `zazozon zalazun zal dogozel dodozel wubam dal vayebel.`
 >
-> [z-Azozon | z-Alazun | z-and] | v-see | [d-cat | d-dog | w-respectively | d-and]
+> [z-Azozon | z-Alazun | z-and] | [d-cat | d-dog | w-respectively | d-and] | v-see
 >
 > "Azozon and Alazun saw a cat and a dog, respectively."
 
 Azozon saw the cat, and Alazun saw the dog. The lists pair up by position, so they must have the same number of items:
 
-> `zazozon zalazun zahelan zal vayebel dogozel dodozel debezel wubam dal.`
+> `zazozon zalazun zahelan zal dogozel dodozel debezel wubam dal vayebel.`
 >
-> [z-Azozon | z-Alazun | z-Ahelan | z-and] | v-see | [d-cat | d-dog | d-bird | w-respectively | d-and]
+> [z-Azozon | z-Alazun | z-Ahelan | z-and] | [d-cat | d-dog | d-bird | w-respectively | d-and] | v-see
 >
 > "Azozon, Alazun, and Ahelan saw a cat, a dog, and a bird, respectively."
 
@@ -367,10 +367,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *at least Ahelan*
 :::
 
-**3.** `zazozon zalazun zal vayebel dorebel dovobul wubam dal.`
+**3.** `zazozon zalazun zal dorebel dovobul wubam dal vayebel.`
 
 ::: details Show answer
-[z-Azozon | z-Alazun | z-and] | v-see | [d-ring | d-veil | w-respectively | d-and]
+[z-Azozon | z-Alazun | z-and] | [d-ring | d-veil | w-respectively | d-and] | v-see
 
 *Azozon and Alazun see the ring and the veil, respectively.*
 :::
@@ -407,12 +407,12 @@ Items straight before **`vul`** are each denied; `veguyal vabuvul val vul` only 
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Azozon and Alazun see the ring and the veil, respectively* <!-- lint: error -->`zazozon zalazun zal wubam vayebel dorebel dovobul dal.`
+**1.** *Azozon and Alazun see the ring and the veil, respectively* <!-- lint: error -->`zazozon zalazun zal dorebel dovobul dal wubam vayebel.`
 
 ::: details Show answer
-`zazozon zalazun zal vayebel dorebel dovobul wubam dal.`
+`zazozon zalazun zal dorebel dovobul wubam dal vayebel.`
 
-[z-Azozon | z-Alazun | z-and] | v-see | [d-ring | d-veil | w-respectively | d-and]
+[z-Azozon | z-Alazun | z-and] | [d-ring | d-veil | w-respectively | d-and] | v-see
 
 **`wubam`** sits immediately before the join word it pairs, not before the verb.
 :::

@@ -85,11 +85,11 @@ A [tone mark](/tone-marks#tone-marks) changes your voice only, never the speech 
 
 | Where you write it | Colors | Example | Stage |
 |--------------------|--------|---------|-------|
-| [Attached to a word](/tone-marks#tone-marks) | that word | `zazozon vayebel ?dodozel.` | I |
+| [Attached to a word](/tone-marks#tone-marks) | that word | `zazozon ?dodozel vayebel.` | I |
 | [Attached to a span](/tone-marks#tone-marks) | the span | `!d[ … ]` | I |
 | [Alone, then a space](/tone-marks#tone-marks) | the rest, to the period | `! zazozon vowurol.` | I |
 | [Doubled](/tone-marks#tone-marks) | stronger | `zazozon !!vowurol.` | I |
-| [Stacked](/tone-marks#tone-marks) | mixed | `?! zalazun vayebel dodozel.` | I |
+| [Stacked](/tone-marks#tone-marks) | mixed | `?! zalazun dodozel vayebel.` | I |
 
 `yel` asks; `?` only sounds unsure: it raises the whole word, and the word's vowel pitches keep their order inside it. A third copy (`!!!`) is not a mark.
 

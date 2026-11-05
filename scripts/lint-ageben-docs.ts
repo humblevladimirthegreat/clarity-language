@@ -72,7 +72,7 @@ import { constructionCoverageGaps, constructionHomes, learningOrderFindings } fr
 import { duplicateIds } from "../src/lint/grammar-anchors.js";
 import { glossLabels, lintTerminology, TERMINOLOGY_PAGE } from "../src/lint/terminology-docs.js";
 import { lintRetieFormat } from "../src/lint/retie-format.js";
-import { staleMovedMarkers, wordOrderWarnings, type ParsedSentence } from "../src/lint/word-order.js";
+import { staleMovedMarkers, withoutDrillWrongForms, wordOrderWarnings, type ParsedSentence } from "../src/lint/word-order.js";
 import {
   constructionFamilies,
   drillCoverage,
@@ -399,11 +399,9 @@ function main(): void {
       spanCount += 1;
       console.error(`${rel}:${lineNumberAt(original, stale.index)}  \`${stale.text}\`  bad-marker  (<!-- lint: moved --> on a sentence already in its act's default order; drop the marker)`);
     }
-    for (const warning of wordOrderWarnings(sentences)) {
+    for (const warning of wordOrderWarnings(withoutDrillWrongForms(original, sentences))) {
       wordOrderCount += 1;
-      console.log(
-        `warning: ${rel}:${lineNumberAt(original, warning.index)}  word-order  \`${warning.text}\`  ${warning.rule} (${warning.order})`,
-      );
+      console.log(`warning: ${rel}:${lineNumberAt(original, warning.index)}  word-order  \`${warning.text}\`  ${warning.detail}`);
     }
 
     const morphResult = lintMorphGlossMarkdown(original, tables);

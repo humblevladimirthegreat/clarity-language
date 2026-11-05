@@ -308,9 +308,9 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 >
 > "You should walk; it would help you feel connected." (unasked advice)
 
-> `zazozon vabodum dalazun.`
+> `zazozon dalazun vabodum.`
 >
-> z-Azozon | v-hospitality | d-Alazun
+> z-Azozon | d-Alazun | v-hospitality
 >
 > "Azozon invites Alazun."
 

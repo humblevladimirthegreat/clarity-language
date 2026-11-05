@@ -138,7 +138,7 @@ A one-word name is an ordinary **-n** word (`donuren`), not a span.
 | [Quote a sentence](/spans#exact-paraphrase-proper) | `zalazun d~[zazozon vozuyel] varuyol.` | *Alazun wrote something like “Azozon sings.”* | B |
 | [A title of several words](/spans#exact-paraphrase-proper) | `zahelan d@[onuren alazun] vozuyel.` | *Ahelan sang Onuren Alazun.* | B |
 | [A cite as the verb](/spans#pos) | `yul zalazun v[vezohul].` | *Don't say “stop,” Alazun.* | B |
-| [A loan verb](/spans#pos) | <code>zalazun v&lt;google&gt; dazozon.</code> | *Alazun googled Azozon.* | B |
+| [A loan verb](/spans#pos) | <code>zalazun dazozon v&lt;google&gt;.</code> | *Alazun googled Azozon.* | B |
 | [A loan adjective](/spans#pos) | <code>zodozel g&lt;rouge&gt; vowurol.</code> | *A rouge dog walks.* | B |
 | [A quoted question](/span-mention#quote-acts) | `zazozon d[yel zalazun vowurol] vezuyol.` | *Azozon said, “Does Alazun walk?”* | I |
 | [Point back at a quote](/span-mention#span-noun) | `zalazun d[azozon] vezuyol. zahelan dwuder varuyol.` | *Alazun said “Azozon.” Ahelan wrote that down.* | I |

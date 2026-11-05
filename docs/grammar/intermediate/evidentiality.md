@@ -362,17 +362,17 @@ z-Azozon | [th-PATTERN.strong | bl-later] | v-tell | b-Ahelan
 **3.** *I remember Azozon saw rain.*
 
 ::: details Show answer
-`zazozon thevum vayebel derulal.`
+`zazozon thevum derulal vayebel.`
 
-z-Azozon | th-MEMORY | v-see | d-rain
+z-Azozon | th-MEMORY | d-rain | v-see
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zalazun thevum vayebel darowel. yal zalazun vezuvel.`
+**1.** `zalazun thevum darowel vayebel. yal zalazun vezuvel.`
 
 ::: details Show answer
-z-Alazun | th-MEMORY | v-see | d-radio . y-statement | z-Alazun | v-sleep
+z-Alazun | th-MEMORY | d-radio | v-see . y-statement | z-Alazun | v-sleep
 
 *Alazun saw a radio, as I remember. Alazun is asleep.* (the second claim does not rest on memory)
 :::

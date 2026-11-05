@@ -164,20 +164,20 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 | *feed* | `zalazun vogazul thewom blazozon.` | Alazun eats, Azozon makes it happen |
 | *make X angry* / *paint it red* (a result) | `zazozon vonumul thewom blalazun.` | the adjective's verb root, Azozon becomes angry, Alazun makes it happen |
 | *arrived tired* / *left angry* (a state during) | `zalazun vudurul herom blarl zulamur gadamul.` or `zalazun gadamul. zulamur vudurul.` | a `/ɡ/` word right after the verb has no reading, so the state is its own clause |
-| *feed* (a child, nurture) | `zalazun vevuyal dazozon.` | the nurturing root, no `thewom` |
+| *feed* (a child, nurture) | `zalazun dazozon vevuyal.` | the nurturing root, no `thewom` |
 | *remove* | `zanal vudurul ual bedohel thewom blazozon.` | the book leaves the table, Azozon makes it happen |
 | *discard* | `zanal vululul thewom blazozon.` | the book is disposed of |
 | *ensure* / *make sure* (that it happens) | `zalazun vudurul thewom blazozon.` | Alazun leaves, Azozon makes it happen |
 | *prevent* (make it not happen) | `zalazun vudurul vul thewom blazozon.` | Alazun does not leave, Azozon makes that so |
 | *prevent* (act so that it will not) | `zuwen vowurol thovam blurl zalazun vudurul.` | I walk so that Alazun does not leave |
 | *persuade* | `zalazun theyomalazun thogem vowurol thewom blazozon.` | as I gather, Alazun has decided to walk, and Azozon made that happen |
-| *introduce* | `zalazun veluyol dazozon thewom blahelan.` | Alazun learns Azozon, Ahelan makes it happen: *make learned* |
+| *introduce* | `zalazun dazozon veluyol thewom blahelan.` | Alazun learns Azozon, Ahelan makes it happen: *make learned* |
 | *show* / *display* / *reveal* | `zalazun dodozel vayebel thewom blazozon.` | Alazun sees the dog, Azozon makes it happen |
 | *create* (bring into being) | `zodozel thewom blazozon.` | the dog exists, Azozon makes it happen |
 | *create* (make by work) | `zazozon dodozel vomodal.` | the production root |
 | *excite* / *thrill* | `zalazun vugomal thewom blazozon.` | Alazun is delighted, Azozon makes it happen |
 | *encourage* / *inspire* / *motivate* | `zalazun theyomalazun thagor vowurol thewom blazozon.` | as I gather, Alazun intends to walk, and Azozon made that happen |
-| *convince* (of a claim) | `zalazun vegowol dazozon thewom blahelan.` | Alazun trusts Azozon, Ahelan makes it happen |
+| *convince* (of a claim) | `zalazun dazozon vegowol thewom blahelan.` | Alazun trusts Azozon, Ahelan makes it happen |
 
 > `zalazun vuzobul thewom blazozon.`
 >
@@ -219,7 +219,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | *know how to* | `zazozon vozuyexal.` | can sing ([can](/can-and-cant#can)) |
 | *realize* / *notice* | `zazozon havem vanam darl zodozel veruvol.` | already knows that the dog runs |
 | *forget* | `zazozon dalazun vevum huvum.` | no longer remembers Alazun |
-| *become* | `zazozon vebegom duzemel.` | starts being sleepy |
+| *become* | `zazozon duzemel vebegom.` | starts being sleepy |
 | *exist* | `zodozel.` | a lone noun: *there is a dog* |
 | *happen* / *occur* | the event's own verb: `verulal.` | no helper word |
 | *depend on* | `zazozon vowurol thebem thahum blerulal.` | only because of rain |
@@ -374,9 +374,9 @@ English often uses *because* for **speaker grounds** (*it rained, because the st
 
 Use **`thahum blarl`** only when Q is also asserted as a world-foundation, what made P happen. For a soft *could be* with no grounds stated, put [MAY](/knowing#may) (`thomam`, …) on the main sentence.
 
-> `zalazun thomam vudurul dahelan.`
+> `zalazun thomam dahelan vudurul.`
 >
-> z-Alazun | th-MAY | v-departure | d-Ahelan
+> z-Alazun | th-MAY | d-Ahelan | v-departure
 >
 > "Alazun may be leaving Ahelan."
 
@@ -663,15 +663,15 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 | *stop* | `vezohul` | 🛑 `ezohul` *stop sign* |
 | *finish* | `vuvahul` | 🏁 `uvahul` *finish line* |
 
-> `zazozon vebegom dowurol.`
+> `zazozon dowurol vebegom.`
 >
-> z-Azozon | v-commencement | d-walk
+> z-Azozon | d-walk | v-commencement
 >
 > "Azozon starts walking."
 
-> `zazozon vuvahul dowurol.`
+> `zazozon dowurol vuvahul.`
 >
-> z-Azozon | v-finish-line | d-walk
+> z-Azozon | d-walk | v-finish-line
 >
 > "Azozon finishes walking."
 

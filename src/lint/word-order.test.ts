@@ -3,7 +3,7 @@ import { describe, it } from "node:test";
 
 import { loadDefaultTables } from "../parse/index.js";
 import { parseWithTables } from "../parse/parse-core.js";
-import { lintWordOrder, orderFindings, staleMovedMarkers } from "./word-order.js";
+import { drillWrongForms, lintWordOrder, orderFindings, staleMovedMarkers } from "./word-order.js";
 
 const tables = loadDefaultTables();
 const rules = (text: string) => orderFindings(parseWithTables(text, tables)).map((f) => f.rule);
@@ -84,5 +84,51 @@ describe("word order by speech act (speech-moves.md#act-word-order)", () => {
       staleMovedMarkers([marked("dogozel zodozel vayebel."), marked("zodozel dogozel vayebel.")]).map((s) => s.text),
       ["zodozel dogozel vayebel."],
     );
+  });
+
+  it("reads a joined verb with its own object or recipient as one verb slot (vp-clause-forms.md#vp-clause-forms)", () => {
+    assert.deepEqual(rules("zahelan vowuyal davogel erom vowurol."), []);
+    assert.deepEqual(rules("zalazun vezuyol bahelan abam vowurol."), []);
+    assert.deepEqual(rules("zazozon dabedal vugudol daledel vagedal val."), []);
+    // A word after the last verb is not that verb's own: it still leaves statement order.
+    assert.deepEqual(rules("zahelan vowurol abam vowuyal davogel."), ["statement: verb late"]);
+  });
+
+  it("skips a drill's wrong forms: the Pick one option that is not the answer, and a Fix it error form", () => {
+    const page = [
+      "### Practice {#practice}",
+      "",
+      "#### English → Ageben {#e}",
+      "",
+      "#### Ageben → English {#a}",
+      "",
+      "#### Pick one {#p}",
+      "",
+      "**1.** *Azozon sees a stick.* `zazozon vayebel dodozel.` or `zazozon dodozel vayebel.`",
+      "",
+      "::: details Show answer",
+      "`zazozon dodozel vayebel.`",
+      ":::",
+      "",
+      "#### Fix it {#f}",
+      "",
+      "**1.** *Azozon sees a stick.* <!-- lint: error -->`zazozon vayebel dodozel.`",
+      "",
+      "::: details Show answer",
+      "`zazozon dodozel vayebel.`",
+      ":::",
+      "",
+      "Elsewhere `zalazun vayebel dodozel.`",
+      "",
+    ].join("\n");
+    assert.deepEqual(drillWrongForms(page).map((w) => w.text), ["zazozon vayebel dodozel.", "zazozon vayebel dodozel."]);
+    assert.deepEqual(lintWordOrder(page, tables).map((w) => w.text), ["zalazun vayebel dodozel."]);
+  });
+
+  it("gives one warning per span, naming the sentence when the span has several", () => {
+    assert.deepEqual(lintWordOrder("`zazozon vayebel dogozel. zazozon vayeber dodozel.`\n", tables).map((w) => w.detail), [
+      "sentence 1: statement: verb late (z v d); sentence 2: statement: verb late (z v d)",
+    ]);
+    assert.deepEqual(lintWordOrder("`zazozon vayebel dogozel.`\n", tables).map((w) => w.detail), ["statement: verb late (z v d)"]);
   });
 });

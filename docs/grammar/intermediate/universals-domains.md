@@ -235,9 +235,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **2.** *Azozon sees every dress.*
 
 ::: details Show answer
-`zazozon vayebel dual gedobal.`
+`zazozon dual gedobal vayebel.`
 
-z-Azozon | v-see | [d-everything | g-dress]
+z-Azozon | [d-everything | g-dress] | v-see
 :::
 
 **3.** *There is such a thing as the veil.*

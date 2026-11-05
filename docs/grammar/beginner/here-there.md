@@ -81,17 +81,17 @@ English *come* and *go* also point from a person, but they hide which one: *I'm 
 >
 > "Azozon goes away from me."
 
-With an object, `vavobol` moves something else: `zazozon vavobol dehohel.` *Azozon moves the chair.* When the mover goes along with the thing, use **`velobal`** (*carry*). The same hooks then give English *bring* and *take*:
+With an object, `vavobol` moves something else: `zazozon dehohel vavobol.` *Azozon moves the chair.* When the mover goes along with the thing, use **`velobal`** (*carry*). The same hooks then give English *bring* and *take*:
 
-> `zazozon velobal dubogal oel buwen.`
+> `zazozon dubogal velobal oel buwen.`
 >
-> z-Azozon | v-carry | d-box | [toward | b-speaker]
+> z-Azozon | d-box | v-carry | [toward | b-speaker]
 >
 > "Azozon brings me the box."
 
-> `zazozon velobal dubogal ul buwen.`
+> `zazozon dubogal velobal ul buwen.`
 >
-> z-Azozon | v-carry | d-box | [from | b-speaker]
+> z-Azozon | d-box | v-carry | [from | b-speaker]
 >
 > "Azozon takes the box away." (away from where I am)
 

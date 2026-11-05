@@ -97,9 +97,9 @@ A range **-r** always has a word on each side. With nothing on the right, extra-
 
 The two ends are two points on one ordered line, in any same-role slot. Between two recipient `/b/` words:
 
-> `zalazun bazozon oel bahelan varal.`
+> `zalazun varal bazozon oel bahelan.`
 >
-> z-Alazun | b-Azozon | through | b-Ahelan | v-pay
+> z-Alazun | v-pay | b-Azozon | through | b-Ahelan
 >
 > "Alazun pays everyone from Azozon through Ahelan."
 

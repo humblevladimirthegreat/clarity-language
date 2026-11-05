@@ -85,9 +85,9 @@ When English stacks possessives, keep one **`om`** and list every owner in its `
 
 English *the day when* / *the place where* is two sentences. Name the time or place first, then resume it with **-r** in `/h/` in the next sentence: *on that day*.
 
-> `zalazun vayebel dazurom. zazozon vowurol hazuror.`
+> `zalazun dazurom vayebel. zazozon vowurol hazuror.`
 >
-> z-Alazun | v-see | d-day . z-Azozon | v-walk | h-←day
+> z-Alazun | d-day | v-see . z-Azozon | v-walk | h-←day
 >
 > "Alazun sees the day when Azozon walks."
 
@@ -109,9 +109,9 @@ For *unlike* / *different from*, use [likeness](/relations#likeness) **`gewem`**
 
 English *what* in *Alazun sees what Azozon writes* names the thing an event happened to, with no noun for it. State that event first, then point back at its undergoer with the **`u`** role compound in **-r**: *the thing written*.
 
-> `zazozon varuyol. zalazun vayebel dwudaruyor.`
+> `zazozon varuyol. zalazun dwudaruyor vayebel.`
 >
-> z-Azozon | v-write . z-Alazun | v-see | d-←episode-patient-write
+> z-Azozon | v-write . z-Alazun | d-←episode-patient-write | v-see
 >
 > "Alazun sees what Azozon writes."
 
@@ -434,8 +434,8 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 | *distinguish* / *classify* | `zazozon dalazun valenem.` | sorts Alazun by kind |
 | *cope* / *survive* | `zazozon vagezum.` | is resilient |
 | *enable* | `zalazun vowuroxal thewom blazozon.` | Alazun can walk, Azozon makes that happen |
-| *assist* / *help* (as a servant) | `zazozon vuyodal dalazun.` | serves Alazun |
-| *consult* | `zazozon vezuyolalobal dalazun.` | talks with the expert |
+| *assist* / *help* (as a servant) | `zazozon dalazun vuyodal.` | serves Alazun |
+| *consult* | `zazozon dalazun vezuyolalobal.` | talks with the expert |
 | *shoot* | `zazozon vagevul.` | uses the gun root |
 | *involve* / *include* (among others) | `zazozon vowurol am balazun.` | walks, Alazun among those involved |
 | *apply* / *use* (a tool) | `zazozon vowurol aol bohowel.` | walks using the hammer |
@@ -633,7 +633,7 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 | *a liar type* (the person) | `zwazulamul` | someone who lies, as a type |
 | *tends to* / *often lies* | `zazozon vulamul huam.` | usually lies |
 | *a lying type* | `zazozon vulamuthal.` | the type-claim |
-| *introduction* (the act) | `zalazun veluyol dazozon thewom blahelan.` | Alazun learns Azozon, Ahelan makes it happen |
+| *introduction* (the act) | `zalazun dazozon veluyol thewom blahelan.` | Alazun learns Azozon, Ahelan makes it happen |
 | *introduction* (opening of a text) | `zugulol gobom blanal` | the first part of a book |
 | *unemployment* | `zazozon garalomuyal gul.` | not in paid production |
 
@@ -710,9 +710,9 @@ Some English words have a second or third sense that a published root already ca
 
 English *another dog* and *the other one* name something outside the ones already in play. Put **`zur`** (*something else*) after the kind: `zodozel zur` is *another dog*. Resemblance is likeness: `gewem` + `/b/` is *similar to*, and `hewem` is *similarly*. Denying it with **`gul`** (or **`hul`** on an adverb) gives *different* and *differently*.
 
-> `zazozon vayebel dodozel dur.`
+> `zazozon dodozel dur vayebel.`
 >
-> z-Azozon | v-see | [d-dog | d-something-else]
+> z-Azozon | [d-dog | d-something-else] | v-see
 >
 > "Azozon sees another dog."
 
@@ -734,21 +734,21 @@ For *how much* they differ, use a [measured differential](say-amounts.md#measure
 
 English *himself*, *herself*, *itself* and *themself* say the object is the same one as the subject. Put the subject's resume (**-r**) in `/d/`. Ageben does not mark sex or number in the resume, so one form covers all of them. With plural **-x** on the subject and the resume it is *themselves*, and with the inclusive *we* (`zayan`) it is *ourselves*.
 
-> `zazozon vayebel dazozor.`
+> `zazozon dazozor vayebel.`
 >
-> z-Azozon | v-see | d-←Azozon
+> z-Azozon | d-←Azozon | v-see
 >
 > "Azozon sees themself."
 
-> `zodozelx vayebel dodozerx.`
+> `zodozelx dodozerx vayebel.`
 >
-> z-dog-x | v-see | d-←dog-x-x
+> z-dog-x | d-←dog-x-x | v-see
 >
 > "The dogs see themselves."
 
-> `zayan vebal dayar.`
+> `zayan dayar vebal.`
 >
-> z-interlocutors | v-hear | d-←interlocutors
+> z-interlocutors | d-←interlocutors | v-hear
 >
 > "We hear ourselves." (you and I)
 
@@ -1328,14 +1328,14 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 **1.** *Emobon sees Ahelan.* (Emobon is an office, named here for the first time)
 
 ::: details Show answer
-`zemobon vayebel dahelan.`
+`zemobon dahelan vayebel.`
 
 z-Emobon | v-see | d-Ahelan
 :::
 
 #### Ageben → English {#people-handles-ageben-to-english}
 
-**1.** `zemoboxuhahan vayebel dazozon.`
+**1.** `zemoboxuhahan dazozon vayebel.`
 
 ::: details Show answer
 

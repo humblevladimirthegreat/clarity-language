@@ -91,10 +91,10 @@ z-Azozon | [h-exactly-like | bl-Ahelan] | v-run
 *Azozon runs exactly like Ahelan.*
 :::
 
-**3.** `zahelan gewel blazozon vayebel dewel.`
+**3.** `zahelan gewel blazozon dewel vayebel.`
 
 ::: details Show answer
-[z-Ahelan | [g-exactly-like | bl-Azozon]] | v-see | d-mirror
+[z-Ahelan | [g-exactly-like | bl-Azozon]] | d-mirror | v-see
 
 *Ahelan, just like Azozon, sees a mirror.*
 :::

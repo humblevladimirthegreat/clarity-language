@@ -170,9 +170,9 @@ Only an aside goes under `/th/`. An aside also goes under `/ɡ/`, `/w/`, or `/h/
 
 To use a foreign verb, adjective, adverb, or degree word (*googled*, *rouge*, *molto*), put an opaque span in that slot. That is a **loan word**: the role letter says how the foreign word is used, and the inside keeps its own spelling.
 
-> <code>zalazun v&lt;google&gt; dazozon.</code>
+> <code>zalazun dazozon v&lt;google&gt;.</code>
 >
-> z-Alazun | v-OPAQUE["google"] | d-Azozon
+> z-Alazun | d-Azozon | v-OPAQUE["google"]
 >
 > "Alazun googled Azozon." (a borrowed word)
 
@@ -280,7 +280,7 @@ z-Alazun | d-NAME.CITE[Egoren | Alazun] | v-see
 *Alazun saw Egoren Alazun.* (the work)
 :::
 
-**2.** <code>zalazun v&lt;google&gt; degoren.</code>
+**2.** <code>zalazun degoren v&lt;google&gt;.</code>
 
 ::: details Show answer
 z-Alazun | v-OPAQUE["google"] | d-Egoren

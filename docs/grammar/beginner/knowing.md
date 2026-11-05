@@ -13,9 +13,9 @@ To say something **could be** so without claiming that it is (*Alazun may be lea
 
 Without the `/th/` word, you are reporting that it happens. As a plain noun the root keeps its own meaning (`zomal` *a thought*); the verb *think* is a different root, `vevemel`.
 
-> `zalazun thomam vudurul dahelan.`
+> `zalazun thomam dahelan vudurul.`
 >
-> z-Alazun | th-MAY | v-departure | d-Ahelan
+> z-Alazun | th-MAY | d-Ahelan | v-departure
 >
 > "Alazun may be leaving Ahelan."
 
@@ -33,9 +33,9 @@ The ending on MAY says whether you mean to follow up on the *could be*: with **-
 
 When you are not sure, use **`thomam`**: it says *could be* and nothing about following up.
 
-> `zalazun thomal vabuvul dazozon.`
+> `zalazun thomal dazozon vabuvul.`
 >
-> z-Alazun | th-MAY-find-out | v-punch | d-Azozon
+> z-Alazun | th-MAY-find-out | d-Azozon | v-punch
 >
 > "Alazun may be punching Azozon, I'll find out."
 
@@ -90,17 +90,17 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Ahelan may be leaving Azozon.*
 
 ::: details Show answer
-`zahelan thomam vudurul dazozon.`
+`zahelan thomam dazozon vudurul.`
 
-z-Ahelan | th-MAY | v-departure | d-Azozon
+z-Ahelan | th-MAY | d-Azozon | v-departure
 :::
 
 **2.** *Azozon may be fighting Alazun, I'll find out.*
 
 ::: details Show answer
-`zazozon thomal vuvuvul dalazun.`
+`zazozon thomal dalazun vuvuvul.`
 
-z-Azozon | th-MAY-find-out | v-fight | d-Alazun
+z-Azozon | th-MAY-find-out | d-Alazun | v-fight
 :::
 
 **3.** *Alazun may be crying, who knows.*
@@ -169,10 +169,10 @@ z-Azozon | th-MAY-who-knows | d-sandwich | v-eat
 *Azozon may be eating a sandwich, who knows.*
 :::
 
-**5.** `zahelan thomam vabuvul dalazun.`
+**5.** `zahelan thomam dalazun vabuvul.`
 
 ::: details Show answer
-z-Ahelan | th-MAY | v-punch | d-Alazun
+z-Ahelan | th-MAY | d-Alazun | v-punch
 
 *Ahelan may be punching Alazun.*
 :::

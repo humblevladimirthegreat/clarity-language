@@ -189,10 +189,10 @@ z-Alazun | h-RESIDUE | v-fight
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zahelan dudehal vayebel. zahelan vayeber dobowal.`
+**1.** `zahelan dudehal vayebel. zahelan dobowal vayeber.`
 
 ::: details Show answer
-z-Ahelan | d-tent | v-see . z-Ahelan | v-←see | d-bucket
+z-Ahelan | d-tent | v-see . z-Ahelan | d-bucket | v-←see
 
 *Ahelan sees a tent. Ahelan sees a bucket too.*
 
@@ -289,12 +289,12 @@ After the `/b/` of a host, a plain adjective describes that extra noun; right af
 **Rule:** [Tone marks](tone-marks.md#tone-marks)
 :::
 
-**4.** *Alazun and Ahelan each cook three cookies.* `zalazun zahelan zal vuguyol dugedelx gragel.` or `zalazun zahelan zal vuguyolx dugedelx gragel.`
+**4.** *Alazun and Ahelan each cook three cookies.* `zalazun zahelan zal dugedelx gragel vuguyol.` or `zalazun zahelan zal dugedelx gragel vuguyolx.`
 
 ::: details Show answer
-`zalazun zahelan zal vuguyol dugedelx gragel.`
+`zalazun zahelan zal dugedelx gragel vuguyol.`
 
-[z-Alazun | z-Ahelan | z-and] | v-cook | [d-cookie-x | g-three]
+[z-Alazun | z-Ahelan | z-and] | [d-cookie-x | g-three] | v-cook
 
 With a plain verb, each of them cooks three; **`vuguyolx`** would make three in all, between them.
 

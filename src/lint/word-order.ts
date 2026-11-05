@@ -17,8 +17,17 @@
  * numbers-applied.md#measure-phrases), and every `/h/` / `/th/` unit is an `h` slot, which goes anywhere. A range hook
  * in **-r** under a question is a fill-ask blank, as the resolver records it (open-ranges.md#named-ranges). A stand-in (`darl`, `dorm`) sits where its dependent
  * puts it and is not checked. Verbless clauses and dependents are not checked.
+ *
+ * Between two joined verbs (`zahelan vowuyal davogel erom vowurol`), a word's place says which verb takes it
+ * (vp-clause-forms.md#vp-clause-forms): a word before the subject or after the last verb is shared, and a `/d/` or `/b/`
+ * right after an earlier verb is that verb's own. So a verb with its own words up to the same-role word is one `v` slot.
+ * A `/v/` join (`dabedal vugudol daledel vagedal val`) is one verb unit already.
+ *
+ * A drill's wrong form is not checked: the option of a **Pick one** item that is not the answer, and the
+ * `<!-- lint: error -->` form of a **Fix it** item ({@link drillWrongForms}).
  */
 import { walkAgebenSpans, classifyAgebenSpan } from "./ageben-docs.js";
+import { ERROR_MARKER, practiceItems } from "./practice-items.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import type { ClassifyTables } from "../parse/classify.js";
 import type { BodyClause, Clause, ParseResult, Unit, Utterance } from "../parse/types.js";
@@ -30,6 +39,8 @@ export type OrderFinding = {
   /** The clause's slots in spoken order (`z d v`), with `h` for a slot that goes anywhere. */
   order: string;
   rule: string;
+  /** Which sentence of the span (0-based, counting each body of each utterance). */
+  sentence: number;
 };
 
 const ACTS: Record<string, ActKind> = { yal: "statement", yel: "question", yol: "command", yul: "prohibition" };
@@ -84,20 +95,29 @@ export function orderSlots(clause: Clause): Slot[] {
   const units = clause.units;
   for (let i = 0; i < units.length; i++) {
     const unit = units[i]!;
-    const previous = out.at(-1);
     if (unit.kind === "hook") {
       const next = units[i + 1];
       const nextRole = role(next);
-      if (unit.onLeft && previous) {
+      if (!unit.onLeft && nextRole === "v") {
+        // Joined verbs: the earlier verb and its own `/d/` / `/b/` (and any `/h/`) are one verb slot.
+        let verb = out.length - 1;
+        while (verb >= 0 && out[verb]!.role !== "v") verb -= 1;
+        if (verb >= 0 && verb < out.length - 1 && out.slice(verb + 1).every((s) => ["d", "b", "h"].includes(s.role))) {
+          const own = out.splice(verb + 1).flatMap((s) => s.units);
+          out[verb]!.units.push(...own);
+        }
+      }
+      const merged = out.at(-1);
+      if (unit.onLeft && merged) {
         // Describes the noun on its left, landmark included.
-        previous.units.push(unit);
-        if (next?.kind === "np" && next.coord.level === "b") previous.units.push(units[++i]!);
-      } else if (previous && nextRole && previous.role === nextRole) {
+        merged.units.push(unit);
+        if (next?.kind === "np" && next.coord.level === "b") merged.units.push(units[++i]!);
+      } else if (merged && nextRole && merged.role === nextRole) {
         // `X HOOK Y` in one role: one slot.
-        previous.units.push(unit, units[++i]!);
-      } else if (previous && next?.kind === "predicate") {
+        merged.units.push(unit, units[++i]!);
+      } else if (merged && next?.kind === "predicate") {
         // A range whose far end is a bare number (`dorelx gragel oer grazal`): one slot.
-        previous.units.push(unit, units[++i]!);
+        merged.units.push(unit, units[++i]!);
       } else if (next?.kind === "np" && next.coord.level === "b") {
         out.push({ role: "h", units: [unit, units[++i]!] });
       } else {
@@ -166,6 +186,7 @@ function bodyClauses(body: BodyClause): Clause[] {
 /** Where a parsed sentence leaves its act's default order. */
 export function orderFindings(result: ParseResult): OrderFinding[] {
   const out: OrderFinding[] = [];
+  let sentence = -1;
   result.utterances.forEach((utterance, index) => {
     const act = utteranceAct(utterance);
     if (!act) return;
@@ -174,16 +195,18 @@ export function orderFindings(result: ParseResult): OrderFinding[] {
       if (ask.utteranceIndex === index && ask.kind === "fillAsk") for (const gap of ask.gaps) if (gap.at !== undefined) blanks.add(gap.at);
     }
     for (const body of utterance.bodies) {
+      sentence += 1;
       for (const clause of bodyClauses(body)) {
         const order = orderSlots(clause).map((s) => s.role).join(" ");
-        for (const rule of clauseFindings(clause, act, blanks)) out.push({ act, order, rule });
+        for (const rule of clauseFindings(clause, act, blanks)) out.push({ act, order, rule, sentence });
       }
     }
   });
   return out;
 }
 
-export type WordOrderWarning = { text: string; index: number; rule: string; order: string };
+/** One warning per span: `detail` lists each rule it breaks, naming the sentence when the span has several. */
+export type WordOrderWarning = { text: string; index: number; detail: string };
 
 /** The same words in any order (a demonstration pair shows one sentence both ways). */
 function wordsKey(text: string): string {
@@ -204,10 +227,41 @@ export function wordOrderWarnings(sentences: readonly ParsedSentence[]): WordOrd
     const key = wordsKey(text);
     const findings = orderFindings(result);
     if (findings.length === 0) inDefault.add(key);
-    if (marked) continue;
-    for (const f of findings) moved.push({ text, index, rule: f.rule, order: f.order, key });
+    if (marked || findings.length === 0) continue;
+    const several = result.utterances.reduce((n, u) => n + u.bodies.length, 0) > 1;
+    const parts = findings.map((f) => `${several ? `sentence ${f.sentence + 1}: ` : ""}${f.rule} (${f.order})`);
+    moved.push({ text, index, detail: [...new Set(parts)].join("; "), key });
   }
   return moved.filter((w) => !inDefault.has(w.key)).map(({ key: _key, ...w }) => w);
+}
+
+/**
+ * A page's drill wrong forms, as `{ prompt, text }`: the option of a **Pick one** item that is not its answer, and the
+ * `<!-- lint: error -->` form of a **Fix it** item ([practice-items.ts](practice-items.ts)). They are wrong on purpose,
+ * so their order is not checked.
+ */
+export function drillWrongForms(markdown: string): { start: number; end: number; text: string }[] {
+  const out: { start: number; end: number; text: string }[] = [];
+  for (const item of practiceItems(markdown).items) {
+    if (item.type === "pick") {
+      const right = new Set([
+        ...item.spoiler.filter((line) => line.kind === "ageben").slice(0, 1).map((line) => line.text.trim()),
+        ...item.alsoCorrect.map((span) => span.text.trim()),
+      ]);
+      for (const span of item.promptSpans) if (!right.has(span.text.trim())) out.push({ ...item.prompt, text: span.text.trim() });
+    } else if (item.type === "fix") {
+      for (const span of item.promptSpans) {
+        if (span.marker && span.marker.replace(/\s+/g, " ") === ERROR_MARKER) out.push({ ...item.prompt, text: span.text.trim() });
+      }
+    }
+  }
+  return out;
+}
+
+/** `sentences` without the page's drill wrong forms ({@link drillWrongForms}). */
+export function withoutDrillWrongForms<T extends { text: string; index: number }>(markdown: string, sentences: readonly T[]): T[] {
+  const wrong = drillWrongForms(markdown);
+  return sentences.filter((s) => !wrong.some((w) => s.index >= w.start && s.index < w.end && s.text === w.text));
 }
 
 /** Sentences marked `<!-- lint: moved -->` that are already in their act's default order: the marker is stale. */
@@ -230,5 +284,5 @@ export function lintWordOrder(markdown: string, tables: ClassifyTables): WordOrd
     text: (span, index) => add(span, index, false),
     moved: (span, index) => add(span, index, true),
   });
-  return wordOrderWarnings(sentences);
+  return wordOrderWarnings(withoutDrillWrongForms(markdown, sentences));
 }
