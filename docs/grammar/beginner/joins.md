@@ -232,7 +232,7 @@ When English says *some of them* or *some people*, more than one, add [**-x**](p
 
 **Compare with:** on a content word, **-r** [resumes](pronouns.md) the last match. On a join, **-r** is an unspecified member. Standalone **`-rl` / `-rm`** (`darl`, `barl`) is a stand-in for the next sentence, not a join and not *something*.
 
-### Vowels and endings {#join-type-vowel-series}
+<a id="join-type-vowel-series"></a>
 
 <!-- cheat-sheet: vowels -->
 | Ageben | Use | English | Cue |

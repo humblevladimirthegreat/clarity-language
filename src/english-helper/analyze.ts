@@ -313,21 +313,21 @@ function joinRole(terms: readonly TaggedTerm[], i: number): string {
   return "z";
 }
 
-/** The vowels section, whose recap rows write a join as its vowel alone (`u` for *not*). */
-const JOIN_VOWELS_SECTION = "joins.md#join-type-vowel-series";
+/** The joins page, whose vowel table writes a join as its vowel alone (`u` for *not*). */
+const JOINS_PAGE = "joins.md#";
 /** A join's default ending by vowel: *and* is open (**-m**, joins.md: when unsure, prefer -m); the others are closed. */
 const JOIN_ENDING: Readonly<Record<string, string>> = { a: "m" };
 /** Words to skip when looking for a join's item after it (*not the cat*, *does not walk*). */
 const BEFORE_ITEM = new Set<WordClass>(["determiner", "auxiliary", "modal", "adverb", "number", "negative"]);
 
 /**
- * A vowel-series row (*not* → `u`) as the join word it stands for: the role letter of the item
+ * A joins.md row written as vowels only (*not* → `u`) as the join word it stands for: the role letter of the item
  * after the English word (Ageben writes the join after its items), the vowel, and an ending
  * (`vul` for *does not walk*, `zam` for *Azozon and Alazun*). The form becomes the pattern, so
  * the bare vowel is never offered as a word.
  */
 function spellJoinVowel(data: HelperData, job: JobSuggestion, terms: readonly TaggedTerm[], end: number, roleOf: (k: number) => string | undefined): void {
-  if (job.link !== JOIN_VOWELS_SECTION || !/^[aeiou]{1,2}$/.test(job.form)) return;
+  if (!job.link.startsWith(JOINS_PAGE) || !/^[aeiou]{1,2}$/.test(job.form)) return;
   const vowel = job.form;
   const ending = JOIN_ENDING[vowel] ?? "l";
   job.form = `role letter + ${vowel} + -${ending}`;

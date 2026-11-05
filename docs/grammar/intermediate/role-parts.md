@@ -77,9 +77,9 @@ A role compound names a participant: the doer, what the event acts on or makes, 
 >
 > "Azozon cooks with a knife. Ahelan sees the knife."
 
-> `zazozon vuguyol aol banewul. zahelan vuguyol aer.`
+> `zazozon vuguyol aol banewul. zahelan vuguyol aor.`
 >
-> z-Azozon | v-cook | [using | b-knife] . z-Ahelan | v-cook | on.it
+> z-Azozon | v-cook | [using | b-knife] . z-Ahelan | v-cook | with.it
 >
 > "Azozon cooks with a knife. Ahelan cooks with it too."
 

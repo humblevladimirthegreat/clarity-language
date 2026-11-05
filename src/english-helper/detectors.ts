@@ -143,7 +143,7 @@ export const WORD_DETECTORS: readonly WordDetector[] = [
   { id: "copula", label: (t) => `*${t.normal}* (is a / is the same as)`, links: ["predication.md#classification", "predication.md#identity"], test: (t, next) => t.tags.includes("Copula") && next?.cls !== "verb" },
   { id: "existence", label: () => "*there is* (a lone noun)", links: ["predication.md#existence"], test: (t, next) => t.normal === "there" && !!next?.tags.includes("Copula") },
   { id: "number", label: (t) => `number *${t.normal}*`, links: ["numbers.md#counts"], test: (t) => t.cls === "number" },
-  { id: "and-or", label: (t) => `*${t.normal}* (a list)`, links: ["joins.md#and-lists-a", "joins.md#join-type-vowel-series"], test: (t) => t.cls === "conjunction" && (t.normal === "and" || t.normal === "er") },
+  { id: "and-or", label: (t) => `*${t.normal}* (a list)`, links: ["joins.md#and-lists-a", "joins.md#unspecified-member-r-phrase"], test: (t) => t.cls === "conjunction" && (t.normal === "and" || t.normal === "er") },
   { id: "negation", label: (t) => `negation *${t.normal}*`, links: ["joins.md#negation-u"], test: (t) => t.cls === "negative" },
   { id: "we", label: () => "*we* (who is in the group?)", links: ["pronouns.md#special-pronouns", "plurality.md#person-role-x"], test: (t) => t.normal === "we" || t.normal === "us" || t.normal === "our" },
   { id: "third-person", label: (t) => `*${t.normal}* (point back)`, links: ["pronouns.md#resume-r"], test: (t) => THIRD_PERSON.has(t.normal) },

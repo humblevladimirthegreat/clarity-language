@@ -64,7 +64,7 @@ A role pointer drops the stem. The pointer vowel picks the event by position: **
 |-----|---------|---------|-------|
 | [Whoever did the latest thing](/pronouns#role-pointers) | `zwuzer` | *they* | B |
 | [The landmark a clause named](/role-parts#places-tools-times): resume its noun | `zazozon vuguyol aol banewul. zahelan danewur vayebel.` | *Azozon cooks with a knife. Ahelan sees the knife.* | I |
-| [That landmark as a means](/role-parts#places-tools-times): the hook's pointer | `zazozon vuguyol aol banewul. zahelan vuguyol aer.` | *Azozon cooks with a knife. Ahelan cooks with it too.* | I |
+| [That landmark as a means](/role-parts#places-tools-times): the hook's pointer | `zazozon vuguyol aol banewul. zahelan vuguyol aor.` | *Azozon cooks with a knife. Ahelan cooks with it too.* | I |
 
 ## Left, right, up, down {#directions}
 
