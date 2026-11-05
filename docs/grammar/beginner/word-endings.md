@@ -58,9 +58,12 @@ The greeting names **you**, not the person you greet, so it works the same for a
 
 **Compare with:** the same citation in a list or heading has no period and is not a greeting or goodbye.
 
-### The three endings
+### Writing {#citation-forms}
+<a id="prefix-less-citation"></a>
 
-The last letters you just used, on the same root `azozo`:
+A citation is **lowercase** root + ending (`azozol`, `azozom`, `azozon`). English for a citation is the bare sense (*swan*, *grace*, *Azozon*), with no article. In a sentence you add a first letter for the word’s role. A [greeting](#greeting) is the named citation as a whole opening (`SELFn.`).
+
+The three endings on the same root `azozo`:
 
 <!-- cheat-sheet: word-shape-clause -->
 | Ageben | Use | English | Cue |
@@ -68,11 +71,6 @@ The last letters you just used, on the same root `azozo`:
 | `azozol` | first mention, everyday kind | *swan* | **l** ≈ concrete |
 | `azozom` | first mention, published abstract | *grace* | **m** ≈ abstract |
 | `azozon` | this person or place as a name | *Azozon* | **n** ≈ name |
-
-### Writing {#citation-forms}
-<a id="prefix-less-citation"></a>
-
-A citation is **lowercase** root + ending (`azozol`, `azozom`, `azozon`). English for a citation is the bare sense (*swan*, *grace*, *Azozon*), with no article. In a sentence you add a first letter for the word’s role. A [greeting](#greeting) is the named citation as a whole opening (`SELFn.`).
 
 ### Practice {#beginner-practice}
 

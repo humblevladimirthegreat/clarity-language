@@ -32,9 +32,7 @@ If the wrong reading would matter, say so. Use **`aya`** or a join for *you and 
 
 For the **address set** (`awanx`), count everyone called by name at the start of this turn, plus anyone still being addressed from before.
 
-### Groups as the topic
-
-A [topic word](topic.md#topic-groups) takes **-x** like any noun: `xazozonx` makes *Azozon and associates* the topic, `xodozelx` makes *some dogs* the topic, and `xazozorx` returns to the group. The published [linkers](sentence-linkers.md#sentence-linkers) take no **-x**.
+**Compare with:** a [topic word](topic.md#topic-groups) takes **-x** like any noun (`xazozonx`, *now, about Azozon and associates*). The published [linkers](sentence-linkers.md#sentence-linkers) take no **-x**.
 
 ### Verbs (`/v/`): collective {#verbs-v}
 

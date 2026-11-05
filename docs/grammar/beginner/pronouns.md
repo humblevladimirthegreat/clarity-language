@@ -4,7 +4,7 @@ band: beginner
 
 # Pronouns
 
-English *he*, *she*, *it*, and *they* point back to someone or something already named. You already write the endings **-l** / **-m** / **-n** on a [citation](word-endings.md) and on content words. Ageben points back with the fourth ending, **-r**: write the role letter for the slot the word fills in this sentence (subject, object, and so on), then the earlier word’s whole stem, then **-r**. For someone in a recent sentence, a shorter **role pointer** names them by the part they played instead.
+A pronoun stands in for a noun. English *he*, *she*, *it*, and *they* point back to someone or something already named, while *I*, *you*, and *one* stand in for a person without naming anyone. You already write the endings **-l** / **-m** / **-n** on a [citation](word-endings.md) and on content words. Ageben points back with the fourth ending, **-r**: write the role letter for the slot the word fills in this sentence (subject, object, and so on), then the earlier word’s whole stem, then **-r**. For someone in a recent sentence, a shorter **role pointer** names them by the part they played instead.
 
 
 ### Resume with **-r** {#resume-r}

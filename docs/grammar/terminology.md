@@ -136,7 +136,7 @@ Four `/h/` words for how a change stands now, not when it happened.
 
 Casual claim that an omitted exponent inherits a discourse order of magnitude; **`Ne0`** asserts OoM 0.
 
-[From the end, and stacked marks](/stacked-markers#ambient-magnitude)
+[Stacked markers, from the end first](/stacked-markers#ambient-magnitude)
 
 ### Antecedent
 
@@ -616,7 +616,7 @@ Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; zone **-m** 
 
 Extra-noun [hook](/hooks#extra-noun) **`aol`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*. To name a kind of tool as its own noun, use a compound with a head root ([places, tools, and times](/role-parts#places-tools-times)).
 
-[Extra nouns and whose](/extra-noun-hooks#extra-noun-intermediate)
+[Extra-noun hooks](/extra-noun-hooks#extra-noun-intermediate)
 
 ### Measure phrase / unit
 
@@ -820,7 +820,7 @@ Word-initial job letter.
 
 Role letter + **`w`** + reach vowel + part consonant + pointer vowel + ending (`zwuzer`): a participant of an earlier event (**`e`** the latest one with that role, **`a`** the other one, **`u`** the one the event left unsaid) or of this sentence (**`o`**, a reflexive). **-r** names the participant, **-l** a new one of the same kind (`zwuzel`), and **-m** the participant’s part in the event (`zwuzem`).
 
-[Pronouns](/pronouns#role-pointers) · [Role compounds](/roles#role-pointers-family)
+[Pronouns](/pronouns#role-pointers)
 
 ### Root tail
 

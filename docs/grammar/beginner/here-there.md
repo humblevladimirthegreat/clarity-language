@@ -43,6 +43,8 @@ Names come first. When you know who is talking or listening, use their name as t
 
 Use `el` in place of `em` for the exact spot (`el buwen` *right where I am*).
 
+**Compare with:** `el bar` *somewhere* also names a place without naming it, but leaves the place unsaid. `el buwen` says where: by the speaker.
+
 > `zodozel em buwen vehohel.`
 >
 > z-dog | [near | b-speaker] | v-sit

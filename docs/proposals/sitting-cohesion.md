@@ -1,6 +1,6 @@
 # Proposal: Making every sitting pass "what one sitting holds"
 
-**Status:** PROPOSED.
+**Status:** in progress. Phase 0 done (2026-11-05, every finding held). Workstreams done: 1.
 **Related:** [what one sitting holds](../meta/grammar-docs.md#one-sitting) (the tests this proposal applies), [sitting length](../meta/drill-generation.md#sitting-length), [how to apply](../meta/learning-levels.md#how-to-apply), [gates](../meta/learning-levels.md#gates), [allowlist](../meta/drill-generation.md#allowlist), [site redirects](../meta/site-redirects.md).
 **Depends on:** `range-series.md`, implemented first (B6 assumes one range series).
 **Design authority:** none. This proposal moves, merges, peels, and retitles existing sections. It adds no form and changes no reading. Band changes for three sections are settled in [gate runs](#gate-runs). Any further grammar decision goes under [open decisions](#open-decisions) and waits.
@@ -412,4 +412,7 @@ Renames come before placement, so the sidebar is edited once under its final nam
 
 ## Open decisions
 
-None at present. The main agent adds anything a subagent reports, and skips the affected item until the user decides.
+The main agent adds anything a subagent reports, and skips the affected item until the user decides.
+
+- **OD1. joins.md *Vowels and endings* fold (E2), skipped in workstream 1.** Folding the H3 under another one and keeping an `<a id="join-type-vowel-series">` breaks the English helper: `JOIN_VOWELS_SECTION` in `src/english-helper/analyze.ts` keys on the section a table row sits in, and `sectionAt` (`src/lint/learning-order.ts`) ignores mid-section anchors, so vowel-only rows (*not* → `u`) stop spelling as join words (cases.tsv 128, 130–132). Options: (a) teach `sectionAt` to honour mid-section `<a id>`s, (b) re-key the helper on vowel-only joins.md rows wherever they sit, (c) leave the recap H3.
+- **Follow-up from A1.** Workstream 1 also fixed stale bold vowel labels (`**…el** (`zol`)`) on rank-joins, say-questions, join-limits, fill-ask-roles, causation, and the talking cheat sheet. Bare bold vowel labels in other prose were not audited.

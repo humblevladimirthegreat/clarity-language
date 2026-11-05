@@ -8,10 +8,10 @@ The fill-ask vowels and how many items you list before the blank complete the *w
 
 ### Fill-ask arity {#fill-ask-arity}
 
-Beginner already used *who/what* (**…ar**) and *what else* (**…ur**). Two more vowels (**…or**, **…er**) and the number of items listed before the blank (none, one, or several) complete the map, which matches [single-item / standalone](/joins#single-item-phrase).
+Beginner already used *who/what* (**…ar**) and *what else* (**…ur**). Two more vowels (**…er**, **…or**) and the number of items listed before the blank (none, one, or several) complete the map, which matches [single-item / standalone](/joins#single-item-phrase).
 
 <!-- cheat-sheet: talking -->
-| Items listed | **…ar** | **…or** | **…er** | **…ur** |
+| Items listed | **…ar** | **…er** | **…or** | **…ur** |
 |--------|---------|---------|---------|---------|
 | **0** | *Who/what?* | *Anything?* | *What’s the priority?* | *What else?* |
 | **1** | *What/which (unknown) X?* | *Any X?* | *Which X is first?* | *What else (besides X)?* |

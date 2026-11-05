@@ -14,15 +14,15 @@ band: intermediate
 | | **-l** | **-m** | **-r** |
 |---|--------|--------|--------|
 | **a** | `val` / `xal` / `thal` | `vam` / `xam` / `tham` | `var` / `xar` / `thar` |
-| **o** | `vel` / `xel` / `thel` | `vem` / `xem` / `them` | `ver` / `xer` / `ther` |
+| **o** | `vol` / `xol` / `thol` | `vom` / `xom` / `thom` | `vor` / `xor` / `thor` |
 | **u** | `vul` / `xul` / `thul` | `vum` / `xum` / `thum` | `vur` / `xur` / `thur` |
-| **ao** | `vael` / `xael` / `thael` | `vaem` / `xaem` / `thaem` | none |
+| **ao** | `vaol` / `xaol` / `thaol` | `vaom` / `xaom` / `thaom` | none |
 | **ua** | `vual` / `xual` / `thual` | `vuam` / `xuam` / `thuam` | none |
-| **uo** | `vuel` / `xuel` / `thuel` | `vuem` / `xuem` / `thuem` | none |
-| **e** | `vol` / `xol` / `thol` | `vom` / `xom` / `thom` | `vor` / `xor` / `thor` |
-| **ae** | `vaol` / `xaol` / `thaol` | `vaom` / `xaom` / `thaom` | none |
+| **uo** | `vuol` / `xuol` / `thuol` | `vuom` / `xuom` / `thuom` | none |
+| **e** | `vel` / `xel` / `thel` | `vem` / `xem` / `them` | `ver` / `xer` / `ther` |
+| **ae** | `vael` / `xael` / `thael` | `vaem` / `xaem` / `thaem` | none |
 | **oe** | `voel` / `xoel` / `thoel` | `voem` / `xoem` / `thoem` | none |
-| **ue** | `vuol` / `xuol` / `thuol` | `vuom` / `xuom` / `thuom` | none |
+| **ue** | `vuel` / `xuel` / `thuel` | `vuem` / `xuem` / `thuem` | none |
 
 Stacked vowels take no **-r** under `/v/` or `/x/` (the *none* cells); only a stance join has stacked **-r**, as a fill-ask.
 

@@ -26,13 +26,13 @@ The other join vowels work on stance words the same way they work on a phrase li
 
 | Vowel | After stance words | Example reading |
 |---|---|---|
-| **ao** | `thael` open list of grounds | *because of the rain, if Alazun, and maybe more* |
+| **o** | `thol` ranked, first is the main ground | *mainly because of the rain, also if Alazun* |
+| **ao** | `thaol` in the order the grounds arose | *first because of the rain, then if Alazun* |
 | **ua** | `thual` every ground but these | *on every ground but these two* |
-| **uo** | `thuel` any ground but these | *any ground but these two will do* |
-| **e** | `thol` ranked, first is the main ground | *mainly because of the rain, also if Alazun* |
-| **ae** | `thaol` in the order the grounds arose | *first because of the rain, then if Alazun* |
+| **uo** | `thuol` ranked, first is the weakest | *chiefly if Alazun, a little because of the rain* |
+| **ae** | `thael` open list of grounds | *because of the rain, if Alazun, and maybe more* |
 | **oe** | `thoel` equal weight | *the rain and the if-clause count the same* |
-| **ue** | `thuol` ranked, first is the weakest | *chiefly if Alazun, a little because of the rain* |
+| **ue** | `thuel` any ground but these | *any ground but these two will do* |
 
 Nothing is SHARED after an `/h/` or `/th/` join. To add a detail that covers the whole list, put a `/w/` word right before the join word.
 
@@ -65,15 +65,15 @@ In the table, *reason* means any grounds a stance word can give: a cause, a sour
 | Vowel | **-l** | **-m** | **-r** |
 |---|---|---|---|
 | **a** | `thal` *at face value* | `tham` *I don't think there's more to it* | `thar` *for reasons I'm not stating* |
-| **o** | `thel` *no single reason to pick* | `them` *I'm not sure which reason it is* | `ther` *for some reason or other* |
+| **o** | `thol` *impartially* / *no decisive grounds* | `thom` *I don't lean either way* | `thor` *for one main reason, not named* |
 | **u** | `thul` *no judgment* | `thum` *not weighing in* | `thur` *not for the reason you'd think* |
-| **ao** | `thael` *take it however you like* | `thaem` *any framing is fine, I think* | question only |
+| **ao** | `thaol` *in no particular order* | `thaom` *not sure where to start* | question only |
 | **ua** | `thual` *all things considered* | `thuam` *all known things considered* | question only |
-| **uo** | `thuel` *anything goes* | `thuem` *anything goes, I think* | question only |
-| **e** | `thol` *impartially* / *no decisive grounds* | `thom` *I don't lean either way* | `thor` *for one main reason, not named* |
-| **ae** | `thaol` *in no particular order* | `thaom` *not sure where to start* | question only |
+| **uo** | `thuol` *no reason to object* | `thuom` *no objection that I know of* | question only |
+| **e** | `thel` *no single reason to pick* | `them` *I'm not sure which reason it is* | `ther` *for some reason or other* |
+| **ae** | `thael` *take it however you like* | `thaem` *any framing is fine, I think* | question only |
 | **oe** | `thoel` *equally balanced* | `thoem` *equally balanced, I think* | question only |
-| **ue** | `thuol` *no reason to object* | `thuom` *no objection that I know of* | question only |
+| **ue** | `thuel` *anything goes* | `thuem` *anything goes, I think* | question only |
 
 Outside a question, only the single-vowel **-r** cells are words. Under a question, a standalone **-r** stance join is a [fill-ask](/questions#fill-ask-r) for the grounds. Every vowel takes **-r** there.
 

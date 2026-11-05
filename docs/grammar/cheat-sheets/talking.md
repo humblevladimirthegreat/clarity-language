@@ -152,7 +152,7 @@ The reply to a fill-ask is the fill as a [citation](/word-endings#citation-forms
 The blank **-r** takes a vowel; the count is how many items you listed before it ([fill-ask arity](/fill-ask-roles#fill-ask-arity)).
 
 <!-- cheat-sheet: talking -->
-| Items listed | **…ar** | **…or** | **…er** | **…ur** | Stage |
+| Items listed | **…ar** | **…er** | **…or** | **…ur** | Stage |
 |--------------|---------|---------|---------|---------|-------|
 | **0** | *who/what?* | *anything?* | *what's the priority?* | *what else?* | I |
 | **1** | *which X?* | *any X?* | *which X is first?* | *what else besides X?* | I |

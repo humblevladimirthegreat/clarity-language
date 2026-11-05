@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# From the end, and stacked marks {#from-the-end-and-stacked-marks}
+# Stacked markers, from the end first {#stacked-markers-from-the-end-first}
 
 ### From the end: end-relative ordinal marker **`#-`** / **`uo`** {#from-the-end-end-relative-ordinal-marker-uo}
 <a id="from-the-end"></a>
@@ -178,76 +178,3 @@ z-car-x | g-3e0
 
 The first is three at ones unless an ambient thousands stretch is in play; **`e0`** insists on ones.
 :::
-
-## Reference tables {#reference-tables}
-
-Lookup grids that restate forms taught above; nothing here is new.
-
-### Examples inventory
-<a id="examples"></a>
-
-Preferred writing first; the spoken form follows, often with its syllables in parentheses (exact **-l** unless noted).
-
-| Value | Preferred writing | Spoken |
-|-------|-------------------|---------------|
-| plural / more than one | `g+` | `gral` (`g` + `ra` + `l`; see [digitless](/digitless-exponents#digitless)) |
-| about several (`>1`) | `g~+` | `gram` |
-| ones band (1–9) | `g+e0` | `grawamol` (`ra` + `wa` + mo + `l`; see [bare OoM](/digitless-exponents#bare-oom-bands)) |
-| three at asserted OoM 0 | `g+3e0` | `grawamoyagel` (`ra` + `wa` + mo + `ya` + ge + `l`) |
-| thousands band (1000–9999) | `g+e3` | `grawagel` (`ra` + `wa` + ge + `l`) |
-| 2nd from the end / penultimate | `g#-2` | `gruodol` (ruo + do + `l`) |
-| 1st from the end / *Starting with the last one* | `g#-1` | `gruobal` (ruo + ba + `l`) |
-| for the penultimate time | `h#-2` | `hruodol` |
-| *Penultimate!* | `y#-2` | `yruodol` |
-| 2nd-from-end point: | `x#-2` | `xruodol` |
-| *Starting with the last one:* | `x#-1` | `xruobal` |
-| take 2nd from the end | `v#-2` | `vruodol` |
-| some end-relative rank | `g#-` | `gruol` |
-| some negative amount | `z-` | `zrul` |
-| some rank | `g#` | `grol` |
-| some code (object) | `d_` | `drel` |
-| how many? / some amount | `g=+` | `grar` (digitless **-r**) |
-| which place? / some place | `g=#` | `gror` |
-| what code? / some code | `d=_` | `drer` |
-| increase (unspecified) | `v+` | `vral` |
-| increase a bit | `v~+` | `vram` |
-| multiple times | `h+` | `hral` |
-| a few times | `h~+` | `hram` |
-| at some clock/date | `h_` | `hrel`: unspecified when under bare `hro`; ≠ `har` |
-| More! | `y+` | `yral` |
-| 3 | `g+3` | `gragel` (`g` + `ra` + ge + `l`) |
-| −3 | `g-3` | `grugel` (`g` + `ru` + ge + `l`) |
-| 3 (as subject) | `z+3` | `zragel` |
-| −3 (as object) | `d-3` | `drugel` |
-| of size 12 | `b+12` | `brabadol` (`b` + `ra` + ba do) |
-| room 12 (modifier) | `g_12` | `grebadol` (`g` + `ro` + ba do) |
-| 139 | `g+139` | `grabagenal` (`ra` + ba ge na) |
-| 27e12 | `g+27e12` | `grawabadoyadorel` (`ra` + wa ba do **ya** + do re) |
-| e9 (bare) | `g+e9` | `grawanal` (`ra` + wa na; **no** `ya`) |
-| 50e-6 | `g+50e-6` | `grawuvoyazamol` (`ra` + wu vo **ya** + za mo) |
-| −1e9 −265e3 −4 | `g-1e9,265e3,4` | `gruwanayabathewageyadovozathehul`: **`ru`**; groups: wa na **ya** ba · **the** · wa ge **ya** do vo za · **the** · hu |
-| $5860.04 → 5e3 + 860 + 4e-2 | `g+5e3,860,4e-2` | `grawageyazatheluvomothewudoyahul`: wa ge **ya** za · **the** · lu vo mo · **the** · wu do **ya** hu |
-| 2nd | `g#2` | `grodol`; title-like *the Second…* may take **-n** (`g@#2` / `grodon`) |
-| penultimate | `g#-2` | `gruodol` |
-| about 27e6 | `g~+27e6` | `grawavoyadorem` (wa vo **ya** do re, ending **-m**) |
-| phone 555-123-4567 | `d_555,123,4567` | `drezazazathebadogethehuzavorel` (`d` + `ro` + za×3 · **the** · ba do ge · **the** · hu za vo re + `l`) |
-| scientific 5.2487083e-4 | `g+5.2487083e-4` | `grawuhuyazayedohuluremolugel` (`ra` + wu hu **ya** + za **ye** + do hu lu · re mo lu · ge) |
-| 25% | `g+25%` | `gradozayol` (`g` + `ra` + do za **yo** + `l`) |
-| +2 pp | `g+2%*` | `gradoyul` (`ra` + do **yu**) |
-| neutral point 1 / 2 | `x#1`, `x#2` | `xrobal`, *xredol* (`x` + `re` + …) |
-| end-relative point 2 | `x#-2` | `xruodol` (x + rue + do) |
-| corroborating item 3 | `x+3` | `xragel` (`x` + `ra` + ge) |
-| independent item 2 | `x-2` | `xrudol` (`x` + `ru` + do); ≠ **`x#-2`** |
-| regarding agenda 12 | `x_12` | `xrebadol` (`x` + `ro` + ba do) |
-| as in (2) above (neutral) | `x=#2` | `xrodor` (ending **-r**) |
-| three times / ×3 | `h+3` | `hragel` (`h` + `ra` + ge) |
-| ÷3 / every third | `h-3` | `hrugel` (`h` + `ru` + ge) |
-| at 15:30 | `h_15,30` | `hrebazathegemol` (`h` + `ro` + ba za · **the** · ge mo); bare `hro` = time |
-| for the third time | `h#3` | `hrogel` (`h` + `re` + ge) |
-| Three! (label / score) | `y_3` | `yregel` (`y` + `ro` + ge) |
-| Three more! | `y+3` | `yragel` (`y` + `ra` + ge) |
-| Three short! / Three fewer! / −3! | `y-3` | `yrugel` (`y` + `ru` + ge) |
-| twenty-seven! (label) | `y_27` | `yredorel` (`y` + `ro` + do re) |
-| First! (place cheer) | `y#1` | `yrobal` (`y` + `re` + ba) |
-
-In a sentence, the role letter attaches to that single number word (see [Parts of speech on numbers](/number-markers#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…`).

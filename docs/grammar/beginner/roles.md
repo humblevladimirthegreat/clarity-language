@@ -133,11 +133,7 @@ Its stem is an event or a state: `zwuzonumul` is *someone who is angry*. A [spec
 
 With **-l**, **-m**, or **-n**, the word is **any** such participant: someone who does it, something it acts on or makes, someone told. **-r** looks back to the latest verb, event noun, or relation with that whole stem (including a stem already inside a role compound) and names **this instance**. The part consonant still picks which part you mean: doer, undergoer, or extra `/b/` party.
 
-### Without the stem: role pointers {#role-pointers-family}
-
-A [role pointer](pronouns.md#role-pointers) is this same word with the event stem left out: **`w`**, the reach vowel, the part consonant, a pointer vowel, and an ending (**-r** the participant itself, **-l** a new one of its kind, **-m** its part in the event). Instead of naming the event, the pointer vowel picks it by position: **`e`** the latest one, **`a`** the other one, **`o`** this sentence’s own, **`u`** the one that left the part unsaid. `zwuzehoher` is *the one who sat*; `zwuzer` is *whoever did the latest thing*. After the pointer vowel and ending the word ends, while a compound's stem goes on (`zwuzer` against `zwuzaruyol`, *someone who writes*).
-
-A pointer looks back to whoever last had that part, skipping events without one ([role pointers](pronouns.md#role-pointers)).
+**Compare with:** a [role pointer](pronouns.md#role-pointers) is this same word with the event stem left out. After its pointer vowel and ending the word ends (`zwuzer`, *whoever did the latest thing*), while a compound's stem goes on (`zwuzaruyol`, *someone who writes*).
 
 ### The event itself
 

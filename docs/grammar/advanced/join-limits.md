@@ -25,7 +25,7 @@ A join takes every same-role item before it. When English groups a small list in
 ### Named phrase **`-n`**
 <a id="named-list"></a>
 
-When a list is a familiar set phrase (*Stop–Drop–Roll*), end its join with **-n** (under `/z/`, `/d/`, or `/b/`). The **-n** names the whole list as one title, the way it names a person ([titled phrases](/proper-names#titled-phrases)). Members keep their usual endings unless a member is itself a name.
+When a list is a familiar set phrase (*Stop–Drop–Roll*), end its join with **-n** (under `/z/`, `/d/`, or `/b/`). The **-n** names the whole list as one title, the way it names a person. Members keep their usual endings unless a member is itself a name.
 
 > `zobodel zubudal zan.`
 >
@@ -35,7 +35,7 @@ When a list is a familiar set phrase (*Stop–Drop–Roll*), end its join with *
 
 Standalone **…an** (no items) is *null* / *void*. Under `/ɡ/` `/h/`, **-n** forms join-derived relations; see [Stance joins](/join-relations#join-relations).
 
-**Compare with:** clause **`xan`** is *and then*, not a named list.
+**Compare with:** a [titled phrase](/proper-names#titled-phrases) puts the same **-n** on a hook, join, or span to make a proper name (a store, a title); a named phrase is a familiar set phrase. Clause **`xan`** is *and then*, not a named list.
 
 ### Allowed joins by role letter {#allowed-joins-by-pos}
 <a id="phrase-reserved-forms"></a>
@@ -63,7 +63,7 @@ These limits apply to every join.
 | Matching role letter | every item head and the join share the first letter |
 | One right-close per flat list | nest as [fence nesting](/rank-joins#fence-nesting) |
 | Shared modifiers | only immediately after each join |
-| Phrase **-r** | only **…ar** / **…or** / **…er** / **…ur**, plus **-x** for a group on `/z/` `/d/` `/b/` |
+| Phrase **-r** | only **…ar** / **…er** / **…or** / **…ur**, plus **-x** for a group on `/z/` `/d/` `/b/` |
 | Join **-x** | after **-r** on `/z/` `/d/` `/b/` (a group); after any ending on `/v/` (one shared act) |
 | Verb+object packages | verb-phrase `/v/`; full sentences use `/x/` ([forms](/join-across-roles)) |
 | Revising one item | in-clause *including* / *rather* / *instead* / *except* are [hooks](/hooks) |
@@ -198,9 +198,9 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 | Ageben | Use | English |
 |--------|-----|---------|
 | **…ul** / **…um** / **…un** | deny at every arity | standalone *no*; one item *not X*; multi *none of* |
-| **…ar** / **…or** / **…er** / **…ur** | unspecified member at every arity | [unspecified **-r**](/joins#unspecified-member-r-phrase) |
-| **…oen** / **…en** / **…an** standalone | stock empty rank / named empty | *it's a draw*; *no favorite* (stock); *null* / *void* |
-| **…ual** / **…uol** standalone | empty invert | *everything*; *anything (goes)* |
+| **…ar** / **…er** / **…or** / **…ur** | unspecified member at every arity | [unspecified **-r**](/joins#unspecified-member-r-phrase) |
+| **…oen** / **…on** / **…an** standalone | stock empty rank / named empty | *it's a draw*; *no favorite* (stock); *null* / *void* |
+| **…ual** / **…uel** standalone | empty invert | *everything*; *anything (goes)* |
 | `zeyel` vs `zeyel zar` | content **-l** vs join **-r** | *a person* vs *some person, unknown who* |
 | `A B C zer` vs `… zor` | menu vs rank unspecified | any of them is fine vs pick by ranking |
 | `A B zar` / `zur` / `zual` | among / leftover / invert | some one among; some one other than; *everything but* |

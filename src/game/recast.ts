@@ -29,7 +29,7 @@ export const SEED_RULES: RecastRule[] = [
   ...(["l", "m", "n", "r"] as const).flatMap((from) =>
     (["l", "m", "n", "r"] as const)
       .filter((to) => to !== from)
-      .map((to): RecastRule => ({ kind: "ending", from, to, errorKind: "*", source: "word-endings.md#the-three-endings" })),
+      .map((to): RecastRule => ({ kind: "ending", from, to, errorKind: "*", source: "word-endings.md#citation-forms" })),
   ),
   { kind: "prefix", from: "b", to: "d", errorKind: "*", source: "clause.md#role-letters" },
   { kind: "prefix", from: "d", to: "b", errorKind: "*", source: "clause.md#role-letters" },

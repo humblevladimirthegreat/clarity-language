@@ -492,7 +492,7 @@ Only kin make generations: friends and bosses are [social relations](/social-tie
 | `growul` *the start landmark* ([the onset](/special-values#special-referential)) | | `grobal` *1st* ([a counted first](/special-values#special-referential)) |
 | `grawamol` *the ones band* ([bare OoM](/digitless-exponents#bare-oom)) | | `gramowal` *absolute zero* ([a strong zero](/special-values#zero-exponent-referential)) |
 | `gruwul` *just short* ([a hair under](/special-values#special-referential)) | | `grawul` *a hair over* ([a hair above zero](/special-values#special-referential)) |
-| `x#2` *point 2:* ([a numbered step](/stacked-markers#examples)) | | `x#-2` *2nd from the end:* ([counting back](/stacked-markers#from-the-end)) |
-| `x-2` *independent item 2:* ([a new line of support](/stacked-markers#examples)) | | `x#-2` *2nd from the end:* ([counting back](/stacked-markers#from-the-end)) |
+| `xrodol` *point 2:* ([a numbered step](/number-roles#number-as-discourse-marker-by-marker)) | | `x#-2` *2nd from the end:* ([counting back](/stacked-markers#from-the-end)) |
+| `xrudol` *independent item 2:* ([a new line of support](/number-roles#number-as-discourse-marker-by-marker)) | | `x#-2` *2nd from the end:* ([counting back](/stacked-markers#from-the-end)) |
 | `th+70` *70% likely* ([a stance](/number-roles#number-as-stance-by-marker)) | | `thomam` *maybe* ([open, with no figure](/knowing#may)) |
 | `zragel oel zrazal` *3 to 5* ([a band](/numbers-applied#number-ranges)) | | `zragel zrazal zaol` *3, then 5* ([two values in order](/numbers-applied#number-ranges)) |

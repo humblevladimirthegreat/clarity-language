@@ -83,7 +83,7 @@ Beginner already used *everything but* (**`ua`**). A leading **u** inverts **o**
 | **uo** | invert rank | *A after B after C* (last first) | **u** ≈ undo + **o** ≈ rank |
 | **ue** | invert menu | *anything but* the listed (free choice outside) | **u** ≈ undo + **e** ≈ choice |
 
-What *everything* or *anything* ranges over comes from context, or from a [SHARED](#shared-after-the-join) `/ɡ/` that names the kind. Only plain **`…om`** means *optional*; on **ue**, **-m** leaves the list open as usual. **-r** still attaches only to one-vowel **a** / **o** / **e** / **u**.
+What *everything* or *anything* ranges over comes from context, or from a [SHARED](#shared-after-the-join) `/ɡ/` that names the kind. Only plain **`…em`** means *optional*; on **ue**, **-m** leaves the list open as usual. **-r** still attaches only to one-vowel **a** / **o** / **e** / **u**.
 
 > `zedudal zogudal zual.`
 >
@@ -176,17 +176,17 @@ Beginner already used single-item *just X* and standalone *nothing* / *everythin
 
 | Ageben | Use | English |
 |--------|-----|---------|
-| **…el** (`zol` / …) | closed rank of one | *only X matters* / *X, period*; + SHARED scale → superlative ([comparatives](/comparatives)) |
-| **…em** (`zom` / …) | open rank of one | *X first* / *mainly X*; + SHARED scale → open superlative |
+| **…ol** (`zol` / …) | closed rank of one | *only X matters* / *X, period*; + SHARED scale → superlative ([comparatives](/comparatives)) |
+| **…om** (`zom` / …) | open rank of one | *X first* / *mainly X*; + SHARED scale → open superlative |
 | **…oel** (`zoel` / …) | closed tie of one | *X tied for* / equal priority to X |
 | **…oem** (`zoem` / …) | open tie of one | *X about tied for* / soft equal priority |
 | **…oen** (`zoen` / …) | stock tie of one | *X tied for* (stock / conventional draw label) |
-| **…aem** (`zaom` / …) | open route start | *maybe start with X* |
-| **…ael** (`zaol` / …) | closed route start | *start with X* / *from X on* |
-| **…uel** (`zuol` / …) | closed last place | *X last*; + SHARED scale → least |
-| **…uem** (`zuom` / …) | open last place | *mainly leave X for last* |
-| **…en** (`zon` / …) | stock first | *X first* (stock) / *X, as usual* |
-| **…er** (`zor` / …) | unspecified ranked member | *preferably some X* / *X as a priority* |
+| **…aom** (`zaom` / …) | open route start | *maybe start with X* |
+| **…aol** (`zaol` / …) | closed route start | *start with X* / *from X on* |
+| **…uol** (`zuol` / …) | closed last place | *X last*; + SHARED scale → least |
+| **…uom** (`zuom` / …) | open last place | *mainly leave X for last* |
+| **…on** (`zon` / …) | stock first | *X first* (stock) / *X, as usual* |
+| **…or** (`zor` / …) | unspecified ranked member | *preferably some X* / *X as a priority* |
 
 **Rank: standalone**
 
@@ -194,17 +194,17 @@ Standalone **o** says nothing is on top (no favorite; with a SHARED scale, *ther
 
 | Ageben | Use | English |
 |--------|-----|---------|
-| **…el** (`zol` / …) | closed empty rank | *no favorite* / *nobody's first*; + SHARED scale → *there is no biggest* |
-| **…em** (`zom` / …) | open empty rank | *no favorite, as far as I know*; + SHARED scale → *no biggest comes to mind* |
+| **…ol** (`zol` / …) | closed empty rank | *no favorite* / *nobody's first*; + SHARED scale → *there is no biggest* |
+| **…om** (`zom` / …) | open empty rank | *no favorite, as far as I know*; + SHARED scale → *no biggest comes to mind* |
 | **…oel** (`zoel` / …) | closed empty tie | *it's a draw* / *tie* |
 | **…oem** (`zoem` / …) | open empty tie | *probably a tie* / *looks even* |
 | **…oen** (`zoen` / …) | stock empty tie | *it's a draw* (stock) |
-| **…aem** (`zaom` / …) | open empty route | *not sure where to start* |
-| **…ael** (`zaol` / …) | closed empty route | *in no particular order* / *any order* |
-| **…uel** (`zuol` / …) | closed empty last | *no least-favorite* / *nobody's last*; + SHARED scale → *there is no smallest* |
-| **…uem** (`zuom` / …) | open empty last | *no objection* (not naming a veto) |
-| **…en** (`zon` / …) | stock empty rank | *no favorite* (stock) |
-| **…er** (`zor` / …) | unspecified empty rank | *whatever's most important* |
+| **…aom** (`zaom` / …) | open empty route | *not sure where to start* |
+| **…aol** (`zaol` / …) | closed empty route | *in no particular order* / *any order* |
+| **…uol** (`zuol` / …) | closed empty last | *no least-favorite* / *nobody's last*; + SHARED scale → *there is no smallest* |
+| **…uom** (`zuom` / …) | open empty last | *no objection* (not naming a veto) |
+| **…on** (`zon` / …) | stock empty rank | *no favorite* (stock) |
+| **…or** (`zor` / …) | unspecified empty rank | *whatever's most important* |
 
 **Set: single-item**
 
@@ -212,16 +212,16 @@ Standalone **o** says nothing is on top (no favorite; with a SHARED scale, *ther
 |--------|-----|---------|
 | **…al** (`zal` / …) | closed add of one | *just X* / *only X* |
 | **…am** (`zam` / …) | open add of one | *X, for one* / *X (and possibly more)* |
-| **…ol** (`zel` / …) | closed menu of one | *the only option is X* |
-| **…om** (`zem` / …) | open menu of one | *X (optional)* |
+| **…el** (`zel` / …) | closed menu of one | *the only option is X* |
+| **…em** (`zem` / …) | open menu of one | *X (optional)* |
 | **…ual** (`zual` / …) | closed invert-add of one | *everything but X* |
 | **…uam** (`zuam` / …) | open invert-add of one | *everything but X (and possibly more)* |
-| **…uol** (`zuel` / …) | closed invert-menu of one | *anything but X* |
-| **…uom** (`zuem` / …) | open invert-menu of one | *anything but X (and possibly more)* |
-| **…aol** (`zael` / …) | closed inclusive of one | *X is enough* / *X'll do* |
-| **…aom** (`zaem` / …) | open inclusive of one | *at least X* / *X would work* |
+| **…uel** (`zuel` / …) | closed invert-menu of one | *anything but X* |
+| **…uem** (`zuem` / …) | open invert-menu of one | *anything but X (and possibly more)* |
+| **…ael** (`zael` / …) | closed inclusive of one | *X is enough* / *X'll do* |
+| **…aem** (`zaem` / …) | open inclusive of one | *at least X* / *X would work* |
 | **…ar** (`zar` / …) | unspecified add | *some (unknown) X* |
-| **…or** (`zer` / …) | unspecified menu | *any X* |
+| **…er** (`zer` / …) | unspecified menu | *any X* |
 | **…ul** (`zul` / …) | closed deny of one | *not X* |
 | **…um** (`zum` / …) | open deny of one | *not X (and possibly more)* |
 | **…un** (`zun` / …) | stock denial of one | *not X* (stock / conventional) |
@@ -236,20 +236,20 @@ Standalone **o** says nothing is on top (no favorite; with a SHARED scale, *ther
 | **…al** (`zal` / …) | closed empty add | *nothing* / *nobody* |
 | **…am** (`zam` / …) | open empty add | *nothing, as far as I know* |
 | **…an** (`zan` / …) | named empty add | *null* / *void* (with items, **-n** instead names the bundle) |
-| **…ol** (`zel` / …) | closed empty menu | *no options* / *we're stuck* |
-| **…om** (`zem` / …) | open empty menu | *no pick, as far as I know* |
+| **…el** (`zel` / …) | closed empty menu | *no options* / *we're stuck* |
+| **…em** (`zem` / …) | open empty menu | *no pick, as far as I know* |
 | **…ual** (`zual` / …) | closed empty invert-add | *everything* / *everyone* |
 | **…uam** (`zuam` / …) | open empty invert-add | *everything, as far as I know* |
 | **…uan** (`zuan` / …) | stock empty invert-add | *everyone* / *everything* (stock); + SHARED kind → the kind itself |
-| **…uol** (`zuel` / …) | closed empty invert-menu | *anything (goes)* |
-| **…uom** (`zuem` / …) | open empty invert-menu | *anything offered* |
-| **…aol** (`zael` / …) | closed empty inclusive | *all set* / *nothing more needed* |
-| **…aom** (`zaem` / …) | open empty inclusive | *nothing needed, as far as I know* |
+| **…uel** (`zuel` / …) | closed empty invert-menu | *anything (goes)* |
+| **…uem** (`zuem` / …) | open empty invert-menu | *anything offered* |
+| **…ael** (`zael` / …) | closed empty inclusive | *all set* / *nothing more needed* |
+| **…aem** (`zaem` / …) | open empty inclusive | *nothing needed, as far as I know* |
 | **…ul** (`zul` / …) | closed empty deny | *no* |
 | **…um** (`zum` / …) | open empty deny | *no, as far as I know* |
 | **…un** (`zun` / …) | stock empty deny | *No* (stock) |
 | **…ar** (`zar` / …) | unspecified empty add | *something* / *someone* |
-| **…or** (`zer` / …) | unspecified empty menu | *anything* / *anyone* |
+| **…er** (`zer` / …) | unspecified empty menu | *anything* / *anyone* |
 | **…ur** (`zur` / …) | unspecified empty leftover | *something else* / *someone else* |
 
 ### Exclusivity and denying a whole list

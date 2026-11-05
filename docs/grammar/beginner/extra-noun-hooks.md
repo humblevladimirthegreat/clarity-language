@@ -2,7 +2,7 @@
 band: beginner
 ---
 
-# Extra nouns and whose {#extra-nouns-and-whose}
+# Extra-noun hooks {#extra-noun-hooks}
 
 ### Extra noun: stacked vowels and loose **-m**
 <a id="extra-noun-intermediate"></a>

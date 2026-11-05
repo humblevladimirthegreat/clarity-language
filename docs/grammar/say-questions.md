@@ -161,7 +161,7 @@ English *by the way* adds a side remark, then goes back to the main point. Put a
 
 **Needs:** [Ask](/questions#question) · [Fill-ask](/questions#fill-ask-r) · [How many items](/joins#standalone-phrase)
 
-Under question, the rest of the single-item and standalone join map is confirm / offer (and fill-ask **-r**). On a list of two or more (no **-r**): **-l** picks from that closed menu; **-m** allows another name (and for **o**, *or none*); **u** is *none of* the listed; **ua** / **uo** is the complement of the listed; **ue** reverse-ranks among the listed. Join **-n** here is stock/usual.
+Under question, the rest of the single-item and standalone join map is confirm / offer (and fill-ask **-r**). On a list of two or more (no **-r**): **-l** picks from that closed menu; **-m** allows another name (and for **e**, *or none*); **u** is *none of* the listed; **ua** / **ue** is the complement of the listed; **uo** reverse-ranks among the listed. Join **-n** here is stock/usual.
 
 > `yel zazozon zol.`
 >
@@ -177,30 +177,30 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 | Ageben | English |
 |--------|---------|
-| **…em** | *Is X the top priority?* / *Prefer X?* (offer) |
-| **…el** | *Is X the only priority?* |
-| **…aem** | *Maybe start with X?* (offer) |
-| **…ael** | *Start with X?* |
-| **…uem** | *X last?* (offer) |
-| **…uel** | *X last only?* |
-| **…en** | *X first, as usual?* |
-| **…er** | *Which X is first?* (fill-ask) |
+| **…om** | *Is X the top priority?* / *Prefer X?* (offer) |
+| **…ol** | *Is X the only priority?* |
+| **…aom** | *Maybe start with X?* (offer) |
+| **…aol** | *Start with X?* |
+| **…uom** | *X last?* (offer) |
+| **…uol** | *X last only?* |
+| **…on** | *X first, as usual?* |
+| **…or** | *Which X is first?* (fill-ask) |
 
 #### Rank: standalone (under question)
 
 | Ageben | English |
 |--------|---------|
-| **…el** | *No favorite?* |
-| **…em** | *Easy-going?* / *Whichever?* |
+| **…ol** | *No favorite?* |
+| **…om** | *Easy-going?* / *Whichever?* |
 | **…oel** | *Tie?* |
 | **…oem** | *Probably a tie?* |
 | **…oen** | *Draw?* (stock) |
-| **…aem** | *Not sure where to start?* |
-| **…ael** | *Any order?* |
-| **…uem** | *Don't mind?* / *No objection?* |
-| **…uel** | *No least-favorite?* / *No one last?* |
-| **…en** | *No favorite?* (stock) |
-| **…er** | *What’s the priority?* (fill-ask) |
+| **…aom** | *Not sure where to start?* |
+| **…aol** | *Any order?* |
+| **…uom** | *Don't mind?* / *No objection?* |
+| **…uol** | *No least-favorite?* / *No one last?* |
+| **…on** | *No favorite?* (stock) |
+| **…or** | *What’s the priority?* (fill-ask) |
 
 #### Set: single-item (under question)
 
@@ -208,16 +208,16 @@ Under question, the rest of the single-item and standalone join map is confirm /
 |--------|---------|
 | **…al** | *Just X?* / *Only X?* |
 | **…am** | *How about X?* / *Want X?* (offer) |
-| **…ol** | *Has to be X?* |
-| **…om** | *How about X?* / *X, or skip?* (offer; empty-allowed) |
+| **…el** | *Has to be X?* |
+| **…em** | *How about X?* / *X, or skip?* (offer; empty-allowed) |
 | **…ual** | *Everything but X?* |
 | **…uam** | *Everything but X (at least)?* (offer) |
-| **…uol** | *Anything but X?* |
-| **…uom** | *Anything but X?* (offer) |
-| **…aol** | *Is X enough?* |
-| **…aom** | *Would X do?* (offer) |
+| **…uel** | *Anything but X?* |
+| **…uem** | *Anything but X?* (offer) |
+| **…ael** | *Is X enough?* |
+| **…aem** | *Would X do?* (offer) |
 | **…ar** | *What/which (unknown) X?* (fill-ask) |
-| **…or** | *Any X?* (fill-ask) |
+| **…er** | *Any X?* (fill-ask) |
 | **…ul** | *Not X?* |
 | **…um** | *Not X (at least)?* (offer) |
 | **…un** | *Not X, as usual?* |
@@ -230,19 +230,19 @@ Under question, the rest of the single-item and standalone join map is confirm /
 | **…al** | *Nothing?* / *Nobody?* |
 | **…am** | *Got nothing?* |
 | **…an** | *Null?* / *Void?* |
-| **…ol** | *No options?* |
-| **…om** | *No pick?* / *Skip OK?* |
+| **…el** | *No options?* |
+| **…em** | *No pick?* / *Skip OK?* |
 | **…ual** | *Everything?* / *Everyone?* |
 | **…uam** | *Everything you can think of?* |
-| **…uol** | *Anything?* |
-| **…uom** | *Anything?* (offer) |
-| **…aol** | *All set?* |
-| **…aom** | *Nothing you need?* |
+| **…uel** | *Anything?* |
+| **…uem** | *Anything?* (offer) |
+| **…ael** | *All set?* |
+| **…aem** | *Nothing you need?* |
 | **…ul** | *No?* |
 | **…um** | *Soft no?* |
 | **…un** | *No?* (stock) |
 | **…ar** | *Who/what?* (fill-ask) |
-| **…or** | *Anything?* (fill-ask) |
+| **…er** | *Anything?* (fill-ask) |
 | **…ur** | *What else?* (fill-ask) |
 
 ## Speech acts in everyday talk {#speech-acts}

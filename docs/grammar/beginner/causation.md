@@ -206,6 +206,6 @@ The outcome is the singing, an event, so the hinge is **`thebem`**; **`gebem`** 
 :::
 ## See also
 
-- Inclusive single-item **`…aom` / `…aol`** (*at least X* / *X is enough*): [joins.md](joins.md#single-item-phrase)
+- Inclusive single-item **`…aem` / `…ael`** (*at least X* / *X is enough*): [joins.md](joins.md#single-item-phrase)
 - Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
 - Dependent clauses / **`blarl`**: [dependents.md](dependents.md#dependent-clauses)
