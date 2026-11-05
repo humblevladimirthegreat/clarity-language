@@ -81,7 +81,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `unassigned-reserved.md` | Every spelling with no reading, marked open (no natural reading yet) or closed (by a design decision). Never linked from grammar pages. |
 | `feature-criteria.md` | The test a psychological feature must pass to enter the language. |
 | `language-name.md` | Why the name is Ageben. |
-| `proposals.md` | Notes for `docs/proposals/`, never link to proposal pages (filenames in backticks only). |
+| `proposals.md` | Notes for `docs/proposals/`, never link to proposal pages (filenames in backticks only); what a proposal holds; carrying one out with subagent workstreams and low token spend; commits; resuming. |
 | `site-redirects.md` | Public URL remaps. |
 | `agents-md.md` | What belongs in this file. |
 | `english-helper.md` | English → Ageben helper quality: test sets, free metrics, worklist classes and where each fix goes, `cases.tsv` and the baseline, the paid eval, the loop, and the next round. |
