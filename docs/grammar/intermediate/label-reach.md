@@ -31,18 +31,6 @@ You already put a kind on `/ɡ/` after the name (*Azozon is a dog*). The extra c
 
 **Related form:** *not a dog* uses [negation **u**](/joins#negation-u) (`gul`).
 
-### Commands to be ADJ {#command-property}
-
-A command can ask for a state as well as an act. Put the [command word](/speech-moves#speech-act-beginner) **`yol`** before a `/ɡ/` word with no verb: the listener is the unstated subject, and the pair reads *be ADJ!*, as a [verbless statement](/predication#classification-property) does.
-
-> `yol guyulom.`
->
-> y-command | g-caution
->
-> "Be careful!"
-
-The `/ɡ/` word takes the verb's place in the [default order](/speech-moves#act-word-order), so it comes first. Name the listener after it to address one person (`yol guyulom zawan`), or use the verb root for the doing (`yol vuyulom`, *take care*). **`yul`** turns the same pair into *don’t be ADJ*.
-
 ### **IDENTITY** endings
 
 Beginner already used **`gorel`** (*is the same as*). Its other ending finishes the map.
@@ -78,7 +66,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | **IDENTITY** | `orel` |
 | *guard* | `agayul` |
 | *quiet* | `ugowul` |
-| *angry* | `onumul` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -90,15 +77,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Azozon | [g-guard | g-not]
 :::
 
-**2.** *Be quiet!*
-
-::: details Show answer
-`yol gugowul.`
-
-y-command | g-quiet
-:::
-
-**3.** *Alazun is basically Azozon.*
+**2.** *Alazun is basically Azozon.*
 
 ::: details Show answer
 `zalazun gorem blazozon.`
@@ -116,15 +95,7 @@ z-Alazun | [g-same | bl-Azozon]
 *Alazun is always a guard.*
 :::
 
-**2.** `yul gonumul.`
-
-::: details Show answer
-y-prohibition | g-angry
-
-*Don't be angry!*
-:::
-
-**3.** `zahelan gugowul hual.`
+**2.** `zahelan gugowul hual.`
 
 ::: details Show answer
 [z-Ahelan | g-quiet] | h-always

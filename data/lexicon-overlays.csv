@@ -100,18 +100,18 @@ ebem,g,🧻,clause_hinge,only-if,ONLY-IF clause hinge (necessary condition),toil
 ezem,h,🦓,clause_hinge,although,ALTHOUGH clause hinge (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#hinges
 ezem,g,🦓,clause_hinge,although,ALTHOUGH clause hinge (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#hinges
 erom,h,♊,clause_hinge,while,WHILE clause hinge (concurrent),gemini twins mirror two sides; duality is while both sides at once,dependents.md#hinges
-erom,g,♊,clause_hinge,while,WHILE clause hinge (concurrent),gemini twins mirror two sides; duality is while both sides at once,sentence-linkers.md#time-hinge-on-noun
+erom,g,♊,clause_hinge,while,WHILE clause hinge (concurrent),gemini twins mirror two sides; duality is while both sides at once,more-hinges.md#time-hinge-on-noun
 arum,h,⏲️,clause_hinge,until,UNTIL clause hinge (endpoint bound),timer counts down to zero; deadline is until the endpoint,dependents.md#hinges
-arum,g,⏲️,clause_hinge,until,UNTIL clause hinge (endpoint bound),timer counts down to zero; deadline is until the endpoint,sentence-linkers.md#time-hinge-on-noun
+arum,g,⏲️,clause_hinge,until,UNTIL clause hinge (endpoint bound),timer counts down to zero; deadline is until the endpoint,more-hinges.md#time-hinge-on-noun
 uvahum,h,🏁,clause_hinge,by,BY clause hinge (deadline: done at or before the endpoint),the checkered flag marks the finish; the event is done by the time it is reached,dependents.md#hinges
-uvahum,g,🏁,clause_hinge,by,BY clause hinge (deadline: done at or before the endpoint),the checkered flag marks the finish; the event is done by the time it is reached,sentence-linkers.md#time-hinge-on-noun
+uvahum,g,🏁,clause_hinge,by,BY clause hinge (deadline: done at or before the endpoint),the checkered flag marks the finish; the event is done by the time it is reached,more-hinges.md#time-hinge-on-noun
 abam,h,🎒,clause_hinge,before,BEFORE clause hinge (ahead-of),backpack holds what you need ahead; preparation is before the event,dependents.md#hinges
-abam,g,🎒,clause_hinge,before,BEFORE clause hinge (ahead-of),backpack holds what you need ahead; preparation is before the event,sentence-linkers.md#time-hinge-on-noun
+abam,g,🎒,clause_hinge,before,BEFORE clause hinge (ahead-of),backpack holds what you need ahead; preparation is before the event,more-hinges.md#time-hinge-on-noun
 alam,h,⌛,clause_hinge,after,AFTER clause hinge (just-after),the sand has just run through; recency is after the prior edge,dependents.md#hinges
-alam,g,⌛,clause_hinge,after,AFTER clause hinge (just-after),the sand has just run through; recency is after the prior edge,sentence-linkers.md#time-hinge-on-noun
+alam,g,⌛,clause_hinge,after,AFTER clause hinge (just-after),the sand has just run through; recency is after the prior edge,more-hinges.md#time-hinge-on-noun
 ovam,th,🥅,clause_hinge,so-that,SO-THAT clause hinge (the speaker's aim; intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#hinges
 ovam,g,🥅,clause_hinge,so-that,SO-THAT clause hinge (the speaker's aim for the thing; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#hinges
-ahom,h,➡️,clause_hinge,so-result,SO-THAT-RESULT clause hinge (outcome that follows from the host),east is the way things move on; the dependent is what the host led to,sentence-linkers.md#result-hinge
+ahom,h,➡️,clause_hinge,so-result,SO-THAT-RESULT clause hinge (outcome that follows from the host),east is the way things move on; the dependent is what the host led to,more-hinges.md#result-hinge
 enam,h,📒,clause_hinge,as-of.ledger,AS-OF clause hinge (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,as-of.md#as-of
 enam,g,📒,clause_hinge,as-of.ledger,AS-OF clause hinge (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,as-of.md#as-of
 enam,w,📒,clause_hinge,as-of.ledger,AS-OF clause hinge (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,as-of.md#as-of

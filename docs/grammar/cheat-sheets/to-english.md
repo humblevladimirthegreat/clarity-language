@@ -57,16 +57,16 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 <!-- generated: overlays pos=g take=22 -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `gabam` | BEFORE clause hinge (ahead-of) | [Time hinges on a noun](/sentence-linkers#time-hinge-on-noun) | I |
+| `gabam` | BEFORE clause hinge (ahead-of) | [Time hinges on a noun](/more-hinges#time-hinge-on-noun) | I |
 | `gadam` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `gaen` | join-relation open to (adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `gaham` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `gahum` | BECAUSE clause hinge (explanatory reason) | [Because, iff, and only because](/iff-fault#only-because) | I |
-| `galam` | AFTER clause hinge (just-after) | [Time hinges on a noun](/sentence-linkers#time-hinge-on-noun) | I |
+| `galam` | AFTER clause hinge (just-after) | [Time hinges on a noun](/more-hinges#time-hinge-on-noun) | I |
 | `gan` | join-relation including (adjective + argument) | [Join-relations](/join-relations#join-relations) | I |
 | `ganem` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](/relations#proxy) | B |
 | `gaon` | join-relation starting with (adjective) | [Join-relations](/join-relations#join-relations) | I |
-| `garum` | UNTIL clause hinge (endpoint bound) | [Time hinges on a noun](/sentence-linkers#time-hinge-on-noun) | I |
+| `garum` | UNTIL clause hinge (endpoint bound) | [Time hinges on a noun](/more-hinges#time-hinge-on-noun) | I |
 | `gebem` | ONLY-IF clause hinge (necessary condition) | [Only if](/causation#only-if) | B |
 | `gedam` | locative between (two landmarks) | [Locative relations](/locative-relations#locative-relations) | I |
 | `gegol` | mention marker (the span is a word or phrase as spelling) | [Mention](/span-mention#mention) | I |
@@ -76,7 +76,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `gen` | join-relation exclusive for (sole pick adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `genam` | AS-OF clause hinge (asserted whose-now / dated ledger) | [As-of (whose now)](/as-of#as-of) | A |
 | `genar` | AS-OF clause hinge (asserted whose-now / dated ledger) resume | [As-of (whose now)](/as-of#as-of) | A |
-| `gerom` | WHILE clause hinge (concurrent) | [Time hinges on a noun](/sentence-linkers#time-hinge-on-noun) | I |
+| `gerom` | WHILE clause hinge (concurrent) | [Time hinges on a noun](/more-hinges#time-hinge-on-noun) | I |
 | `gevam` | locative around (figure on all sides of one landmark) | [Locative relations](/locative-relations#locative-relations) | I |
 | `gewel` | likeness exactly like (type match) | [Exactly like (hewel / gewel)](/exactly-like#exactly-like) | I |
 <!-- /generated -->
@@ -105,7 +105,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `gunom` | AS-OF clause hinge (unasserted whose-now / placeholder now) | [As-of (whose now)](/as-of#as-of) | A |
 | `gunor` | AS-OF clause hinge (unasserted whose-now / placeholder now) resume | [As-of (whose now)](/as-of#as-of) | A |
 | `guon` | join-relation deprioritizing (adjective) | [Join-relations](/join-relations#join-relations) | I |
-| `guvahum` | BY clause hinge (deadline: done at or before the endpoint) | [Time hinges on a noun](/sentence-linkers#time-hinge-on-noun) | I |
+| `guvahum` | BY clause hinge (deadline: done at or before the endpoint) | [Time hinges on a noun](/more-hinges#time-hinge-on-noun) | I |
 <!-- /generated -->
 
 <PageBreak />
@@ -119,7 +119,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `hadam` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `haen` | join-relation among options (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `haham` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
-| `hahom` | SO-THAT-RESULT clause hinge (outcome that follows from the host) | [Result (so … that)](/sentence-linkers#result-hinge) | I |
+| `hahom` | SO-THAT-RESULT clause hinge (outcome that follows from the host) | [Result (so … that)](/more-hinges#result-hinge) | I |
 | `halam` | AFTER clause hinge (just-after) | [Because, if, although (hinges)](/dependents#hinges) | B |
 | `han` | join-relation with or including (adverb + argument) | [Join-relations](/join-relations#join-relations) | I |
 | `hanem` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](/relations#proxy) | B |

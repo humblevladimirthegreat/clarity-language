@@ -77,7 +77,7 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 | **-rl** / **-rm** | [stand-in or pinned resume](/dependents#dependent-clauses) | I |
 | **-rth** | [pointing back](/stand-in-vowels#stand-in-back): the only word-final `th` | I |
 
-Word-initial `x` is the [continue](/dependents#continue-x) prefix, not a compound seam.
+Word-initial `x` is the [continue](/speech-moves#continue-x) prefix, not a compound seam.
 
 ### Number words {#number-words}
 

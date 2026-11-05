@@ -4,7 +4,7 @@ band: beginner
 
 # Speech moves {#speech-moves}
 
-How to start a new speech move with `/y/`: call someone, react, or say whether you are stating, asking, commanding, or forbidding. An act word is leftover-list work on claims: add a claim, rank an instruction, collapse to an answer, or take the act away. How much talk remains is a different job.
+How to start a new speech move with `/y/`: call someone, react, or say whether you are stating, asking, commanding, or forbidding. An act word is leftover-list work on claims: add a claim, rank an instruction, collapse to an answer, or take the act away. You can also hold a pause while you think, or keep the move you started going with `/x/`. How much talk remains is a different job.
 
 
 ### Turn (`/y/`): start a new speech move {#turn-y}
@@ -12,6 +12,8 @@ How to start a new speech move with `/y/`: call someone, react, or say whether y
 A **turn** is one speech move: a statement, question, command, or other act, including talking only to yourself. A `/y/` word starts a new turn.
 
 The `/y/` words go at the start of the turn, before its **body** (the subject, object, verb, and the rest of the clause). So a `/y/` word after a finished body never belongs to that body: it starts the next turn.
+
+A period closes the body. Spoken, a period is a **rest**: one silent beat.
 
 ### Call someone (`/y/` + name) {#vocative}
 
@@ -62,6 +64,17 @@ A `/ɡ/` word right after a reaction describes it, as one after a call describes
 > "What a big surprise!"
 
 **Compare with:** to react and then say that something is big, end the reaction with a period and start a new sentence.
+
+### Thinking sounds {#thinking-sounds}
+
+When you need a moment in the middle of speaking, English fills the gap with *um* or *uh*. Ageben has two sounds for that gap, and each tells the listener what would help. Neither is a word, and neither is written.
+
+| Sound | Means | The listener | Cue |
+|-------|-------|--------------|-----|
+| *mmm*, lips closed | I am thinking it over | waits and leaves the silence | Lips closed: not ready to speak |
+| A held `a`, `e` or `o` (any of them), at its own pitch | I know what I mean but cannot find the word | may offer a word | Mouth open: the word is on its way |
+
+Do not hold `u`: a held `u` can sound like a denial.
 
 ### Speech act: statement, question, command
 <a id="speech-act-beginner"></a>
@@ -125,6 +138,22 @@ Only a command starts with its verb. A question or prohibition whose act word ge
 | prohibition | verb late, as in a statement | the action is held back |
 
 The person who receives (`/b/`) stays right after the verb, wherever the verb goes: `yol varal bazozon.` *Pay Azozon!* A question with no subject puts another word before its verb, so that it still does not start with the verb.
+
+### Continue (`/x/`): keep the same speech move {#continue-x}
+
+Often you want to add another sentence to the same statement, question, or command, such as *therefore …* after a claim. An `/x/` word does that: the new stretch **continues** the speech move you already started, instead of starting a new one. It is still a statement if you were stating, still a question if you were asking, and so on.
+
+Only the first turn (or a default statement body) chooses the speech act. So the continued stretch needs no act word of its own, not even **`yal`**.
+
+A **linker** is an `/x/` word that connects one sentence to the next, like English *therefore* or *however*. The first sentence may end with a period; the linker then **starts the next written sentence**, still under the same speech act:
+
+> `zodozel vowurol. xahom zogozel veruvol.`
+>
+> z-dog | v-walk . x-therefore | z-cat | v-run
+>
+> "A dog walks. Therefore a cat runs."
+
+**Compare with:** [`/y/`](#turn-y) starts a **new** speech move (a new statement, question, or command). `/x/` keeps the move you already started.
 
 ### Practice {#beginner-practice}
 

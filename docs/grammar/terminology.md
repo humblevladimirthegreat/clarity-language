@@ -302,7 +302,7 @@ A role word whose part consonant names a quality of the event (`dwuhowurol` *a w
 
 Same-speech-act forward motion.
 
-[Dependents](/dependents#continue-x)
+[Speech moves](/speech-moves#continue-x)
 
 **Compare with:** a [sentence linker](#sentence-linker) is the *therefore / however* subclass of continue, and a [topic](#topic) word is the *now, about X* subclass.
 

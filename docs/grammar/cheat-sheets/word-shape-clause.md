@@ -212,8 +212,8 @@ With a name or a resumed noun, the pair is a [property](/predication#existence),
 | [Not](/label-reach#classification-packaging) | `zazozon godozel gul.` | *Azozon is not a dog.* | I |
 | [Always](/label-reach#classification-packaging) | `zazozon godozel hual` | *Azozon is always a dog.* | I |
 | [Sort of](/label-reach#classification-packaging) | `zazozon wayurom godozel.` | *Azozon is something of a dog.* | I |
-| [Be ADJ!](/label-reach#command-property) | `yol guyulom.` | *Be careful!* | I |
-| [Don't be ADJ](/label-reach#command-property) | `yul` + `/ɡ/` | | I |
+| [Be ADJ!](/speech-acts#command-property) | `yol guyulom.` | *Be careful!* | I |
+| [Don't be ADJ](/speech-acts#command-property) | `yul` + `/ɡ/` | | I |
 
 ### How far a label reaches {#label-reach}
 

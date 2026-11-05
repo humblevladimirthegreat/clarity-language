@@ -1,6 +1,6 @@
 # Proposal: Making every sitting pass "what one sitting holds"
 
-**Status:** in progress. Phase 0 done (2026-11-05, every finding held). Workstreams done: 1, 2a.
+**Status:** in progress. Phase 0 done (2026-11-05, every finding held). Workstreams done: 1, 2a, 2b.
 **Related:** [what one sitting holds](../meta/grammar-docs.md#one-sitting) (the tests this proposal applies), [sitting length](../meta/drill-generation.md#sitting-length), [how to apply](../meta/learning-levels.md#how-to-apply), [gates](../meta/learning-levels.md#gates), [allowlist](../meta/drill-generation.md#allowlist), [site redirects](../meta/site-redirects.md).
 **Depends on:** `range-series.md`, implemented first (B6 assumes one range series).
 **Design authority:** none. This proposal moves, merges, peels, and retitles existing sections. It adds no form and changes no reading. Band changes for three sections are settled in [gate runs](#gate-runs). Any further grammar decision goes under [open decisions](#open-decisions) and waits.
@@ -417,6 +417,8 @@ Owns-line changes that subagents reported, for Phase 5 to apply to `AGENTS.md`:
 
 - 2a, `numbers.md` row: number-markers also owns letter codes ("word shape, markers, endings, writing, letter codes (`number-markers.md`)").
 - 2a, `numbers-applied.md` row: "Ranges, measure phrases, percent; …" → "Measure phrases, percent, fractions; …" (and the filename after Phase 3).
+- 2b, `speech-moves.md` row: "Turns, vocatives, interjections, thinking sounds, continue (`/x/`), speech acts, …"; "doubled and stacked acts (`speech-acts.md`)" → "turn words, further: doubled and stacked acts, commands to be ADJ, describing a call (`speech-acts.md`)" (filename after Phase 3).
+- 2b, `dependents.md` row: "Next-sentence grammar: subordinators; continue overview, sentence linkers, what carries past a period (`sentence-linkers.md`); hinges on a degree or a noun (`more-hinges.md`)"; lexicalized stand-ins (`stand-in-roles.md`); nested dependents (`nested-dependents.md`).
 - 2a, `hooks.md` row: "ordered ranges (`ordered-ranges.md`)" → "ranges, including ranges of numbers" (and the filename after Phase 3).
 
 ## Open decisions
@@ -427,5 +429,7 @@ The main agent adds anything a subagent reports, and skips the affected item unt
 - **OD2. C5 *How big? How fast?* → fill-ask-roles (2a.3), skipped.** `wrar` is a digitless number blank (`ra` + -r), taught on number-markers and digitless-exponents, both after fill-ask-roles on the path (gate 4). The move would also split *how much* (`grar` on *How many?* / `wrar` on *How big?*, test 5). digitless-exponents keeps the H3; fill-ask-roles keeps its title and filename, so its URLs row drops. Reopen only if fill-ask-roles moves after digitless-exponents.
 - **OD3. D3 *Parts of speech on numbers* → number-roles (2a.2), skipped.** number-markers comes before number-roles and uses numbers in other slots throughout (Number endings `dragel` / `drager`, marker-table cells, three Practice items), so the H3 stays where it is taught first. Options: keep it, or thin number-markers heavily, Practice included.
 - **OD4. C5 *Group separator* → number-markers (2a.2), skipped.** Its scalar examples need exponents (`wa` / `ya`), taught on digitless-exponents, after number-markers; without an exponent the examples have no documented reading. number-markers' Word shape already introduces the spoken comma.
-- **Process note.** A **generate** allowlist row fails the build until Phase 4 writes its checkpoint, so from 2a.2 on, "green" means the build fails only on generate-status or drill-coverage errors for **generate** rows, and tests pass.
+- **OD5. D2 *Questions that sound like another act* → speech-acts (2b.3), skipped.** Its table teaches `yel yal` as *quiz*, the home form of rhetorical-questions' *Quiz* H3, and ties `yel yol` to the quiz, so moving it makes a second home or splits a choice set (test 5). Its check-back Compare-with lines would also point forward from speech-acts to polar-inventory. Options: (a) leave it on rhetorical-questions (all three H3s are questions that are not plain asks); (b) move *Quiz* with it and move the check-back lines to polar-inventory; (c) move it, drop the `yel yal` row, and move the quiz and check-back sentences to their own pages. With D2 skipped, the "speech-acts before rhetorical-questions" placement no longer binds.
+- **Phase 3 addition: hash redirects for moved H3s.** Hand moves and `peel-headings` added no `hash-redirect.ts` rows, so old `page#id` URLs open the old page but not the section. Phase 3 adds a row for every H3 that moved pages (goal 3).
+- **Process note.** A **generate** allowlist row fails the build until Phase 4 writes its checkpoint, so from 2a.2 on, "green" means tests pass and every `lint ageben` error (checkpoint inventory, drill coverage, practice-item count, word bank, core cells) sits on a **generate** row that Phase 4 writes or tops up.
 - **Follow-up from A1.** Workstream 1 also fixed stale bold vowel labels (`**…el** (`zol`)`) on rank-joins, say-questions, join-limits, fill-ask-roles, causation, and the talking cheat sheet. Bare bold vowel labels in other prose were not audited.

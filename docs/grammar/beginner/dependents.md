@@ -4,10 +4,10 @@ band: beginner
 
 # Dependents
 
-How a **next sentence** fills a slot in the sentence before it, how English *who / that / which* is two sentences, and how to keep the same speech move going.
+How a **next sentence** fills a slot in the sentence before it, and how English *who / that / which* is two sentences.
 
 
-You already write one clause with [role letters](clause.md#role-letters) and start a new speech move with [`/y/`](speech-moves.md#turn-y). This page attaches another sentence, or keeps going without a new act.
+You already write one clause with [role letters](clause.md#role-letters) and start a new speech move with [`/y/`](speech-moves.md#turn-y). This page attaches another sentence.
 
 ### Which person or thing (*who / that / which*)
 <a id="which-noun"></a>
@@ -171,22 +171,6 @@ An aim is in someone's mind, so the hinge is your stance, like *because*: the ai
 
 Ordinary `zoval` is still *a goal* (the net).
 
-### Continue (`/x/`): keep the same speech move {#continue-x}
-
-Often you want to add another sentence to the same statement, question, or command, such as *therefore …* after a claim. An `/x/` word does that: the new stretch **continues** the speech move you already started, instead of starting a new one. It is still a statement if you were stating, still a question if you were asking, and so on.
-
-Only the first turn (or a default statement body) chooses the speech act. So the continued stretch needs no act word of its own, not even **`yal`**.
-
-A **linker** is an `/x/` word that connects one sentence to the next, like English *therefore* or *however*. The first sentence may end with a period; the linker then **starts the next written sentence**, still under the same speech act:
-
-> `zodozel vowurol. xahom zogozel veruvol.`
->
-> z-dog | v-walk . x-therefore | z-cat | v-run
->
-> "A dog walks. Therefore a cat runs."
-
-**Compare with:** [`/y/`](speech-moves.md#turn-y) starts a **new** speech move (a new statement, question, or command). `/x/` keeps the move you already started.
-
 ### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
@@ -201,7 +185,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vayebel` | 👁️ from *eye* |
 | *tell* | `vezuyol` | 💬 from *speech* |
 | *scream* | `veyamul` | 😱 |
-| *therefore* | `xahom` | ➡️ from *east*: the sun's path, so the talk moves on |
 | *that-clause* | `darl` | **a** ≈ add: the content that follows |
 | *whether-clause* | `derl` | **e** ≈ choice: pick yes or no |
 | *because* | `thahum` | 🧱 from *wall*: the cause is what the result sits on |
@@ -278,15 +261,7 @@ z-Alazun | v-scream | [th-so-that | bl-that-clause] | z-guard | v-run
 
 #### Ageben → English {#beginner-ageben-to-english}
 
-**1.** `zahelan veyamul. xahom zagayul veruvol.`
-
-::: details Show answer
-z-Ahelan | v-scream . x-therefore | z-guard | v-run
-
-*Ahelan screams. Therefore a guard runs.*
-:::
-
-**2.** `zalazun vehohel hezem blarl zagayul veyamul.`
+**1.** `zalazun vehohel hezem blarl zagayul veyamul.`
 
 ::: details Show answer
 z-Alazun | v-sit | [h-although | bl-that-clause] | z-guard | v-scream
@@ -294,7 +269,7 @@ z-Alazun | v-sit | [h-although | bl-that-clause] | z-guard | v-scream
 *Alazun sits although a guard screams.*
 :::
 
-**3.** `zahelan vayebel derl zagayul vehohel.`
+**2.** `zahelan vayebel derl zagayul vehohel.`
 
 ::: details Show answer
 z-Ahelan | v-see | d-whether-clause | z-guard | v-sit
@@ -302,7 +277,7 @@ z-Ahelan | v-see | d-whether-clause | z-guard | v-sit
 *Ahelan sees whether the guard sits.*
 :::
 
-**4.** `zagayul hadurom veruvol thohem blarl zalazun veyamul.`
+**3.** `zagayul hadurom veruvol thohem blarl zalazun veyamul.`
 
 ::: details Show answer
 z-guard | h-haste | v-run | [th-if | bl-that-clause] | z-Alazun | v-scream
@@ -310,7 +285,7 @@ z-guard | h-haste | v-run | [th-if | bl-that-clause] | z-Alazun | v-scream
 *A guard runs hastily if Alazun screams.*
 :::
 
-**5.** `zalazun vebemol. zagayul dalazun vayebel.`
+**4.** `zalazun vebemol. zagayul dalazun vayebel.`
 
 ::: details Show answer
 z-Alazun | v-peek . z-guard | d-Alazun | v-see
@@ -318,7 +293,7 @@ z-Alazun | v-peek . z-guard | d-Alazun | v-see
 *The guard sees Alazun, who peeks.*
 :::
 
-**6.** `zahelan vezuyol bagayul darl zazozon gonumul vehohel.`
+**5.** `zahelan vezuyol bagayul darl zazozon gonumul vehohel.`
 
 ::: details Show answer
 z-Ahelan | v-tell | b-guard | d-that-clause | [z-Azozon | g-angry] | v-sit

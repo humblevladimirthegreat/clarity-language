@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Doubling and stacking acts {#doubling-and-stacking-acts}
+# Turn words, further {#turn-words-further}
 
 ### Doubling an act word {#doubled-act}
 
@@ -85,6 +85,18 @@ Each word's ending describes its own act. The first ending says how firmly you r
 
 A stack has two act words at most, with nothing between them. A call, a reaction, or a hook goes before the first act word. The first word is always written, even **`yal`**: without it, the second word would be the act.
 
+### Commands to be ADJ {#command-property}
+
+A command can ask for a state as well as an act. Put the [command word](/speech-moves#speech-act-beginner) **`yol`** before a `/ɡ/` word with no verb: the listener is the unstated subject, and the pair reads *be ADJ!*, as a [verbless statement](/predication#classification-property) does.
+
+> `yol guyulom.`
+>
+> y-command | g-caution
+>
+> "Be careful!"
+
+The `/ɡ/` word takes the verb's place in the [default order](/speech-moves#act-word-order), so it comes first. Name the listener after it to address one person (`yol guyulom zawan`), or use the verb root for the doing (`yol vuyulom`, *take care*). **`yul`** turns the same pair into *don’t be ADJ*.
+
 ### Describing a call or reaction {#describe-turn-word}
 
 A call or a reaction can also take an adjective **before** it, with [**`gl-`**](/left-bound-adjectives#left-bound-adjectives), the way a noun does. Its `/w/` and its `/b/` come along as usual.
@@ -127,6 +139,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *run* | `veruvol` |
 | *very* | `welazem` |
 | *surprise* | `emel` |
+| *quiet* | `ugowul` |
+| *angry* | `onumul` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -154,6 +168,14 @@ y-request | y-request | v-stop
 y-command | y-command | v-stop
 :::
 
+**4.** *Be quiet!*
+
+::: details Show answer
+`yol gugowul.`
+
+y-command | g-quiet
+:::
+
 #### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `welazem yemem.`
@@ -178,6 +200,14 @@ y-prohibition | y-command | v-stop
 y-request | y-request | v-run
 
 *Please, please run.*
+:::
+
+**4.** `yul gonumul.`
+
+::: details Show answer
+y-prohibition | g-angry
+
+*Don't be angry!*
 :::
 
 #### Pick one {#intermediate-pick-one}

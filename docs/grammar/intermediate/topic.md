@@ -35,7 +35,7 @@ A topic is set only by an `/x/` word at the start of a sentence: `/x/`, then the
 
 **Every return is explicit.** There is one topic, not a stack. Coming back from a side topic, or from a new frame, means naming the old topic again with `xazozor`.
 
-A topic-setting `/x/` word needs no voice of its own: the `/x/` word itself tells the listener that the subject changed. The speech move is unchanged, so the listener hears a new subject, not a new act ([periods](sentence-linkers.md#orthography-and-prosody-periods)).
+A topic-setting `/x/` word needs no voice of its own: the `/x/` word itself tells the listener that the subject changed. The speech move is unchanged, so the listener hears a new subject, not a new act ([what carries past a period](sentence-linkers.md#past-a-period)).
 
 ### The topic pronoun {#topic-pronoun}
 
@@ -91,7 +91,7 @@ Introduce, return, and clear each start a new **topic stretch**.
 | Whole-stem **-r** | no | It is the explicit way back (`xazozor`), so it reaches across stretches. |
 | [Tags](tag-pronouns.md#tag-pronouns) | no | A tag is assigned on purpose, so distance does not blur it, and placeholder reasoning often runs through a side topic. |
 | Agenda numbering (`x#N`, outline depth) | no | Agenda items sit above topics; one item may hold several. |
-| Speech move, line of talk | no | They track the move and the line of talk, not people. |
+| Speech move, line of talk | no | They track the move and the line of talk, not people. A topic word after a period (`xazozon …`) follows the period's rest and keeps the prior speech act. |
 
 `xazozor` while Azozon is already the topic is still a topic change: it starts a new stretch with the same topic. That lets you clear the role pointers' anchors (*so, Azozon again*) without leaving the topic.
 

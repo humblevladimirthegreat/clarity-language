@@ -47,16 +47,6 @@ A `/z/` stand-in puts the whole following sentence in the subject slot. With a `
 
 The sentence after one of these verbs has its own subject when the chosen content type requires one, just as it does after **`darl`** / **`derl`**. Changing the role letter lets the same kind of content serve as an object, a described property, or another role the clause allows.
 
-### Nested dependents {#nested-dependents}
-
-A clause has at most one **stand-in**, at its end. But the dependent clause is a clause too, so it may end in its own **`blarl`**, and a further sentence follows it on the **right**.
-
-> `zazozon guzemel thahum blarl zalazun vowurol thahum blarl zahelan vezuvel.`
->
-> [z-Azozon | g-sleepy] | [th-because | bl-that-clause] | z-Alazun | v-walk | [th-because | bl-that-clause] | z-Ahelan | v-sleep
->
-> "Azozon is sleepy because Alazun walks because Ahelan sleeps." (Ahelan's sleep is why Alazun walks)
-
 ### Practice {#advanced-practice}
 
 Short drills for Advanced. Try each item before opening **Show answer**.
@@ -79,10 +69,6 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *because* | `thahum` |
-| *angry* | `onumul` |
-| *scream* | `veyamul` |
-| *tell* | `vezuyol` |
 | *sit* | `vehohel` |
 | *see* | `vayebel` |
 
@@ -96,15 +82,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 z-Azozon | v-command | z-Alazun | v-sit
 :::
 
-**2.** *Azozon is angry because Alazun screams because Ahelan sits.*
-
-::: details Show answer
-`zazozon gonumul thahum blarl zalazun veyamul thahum blarl zahelan vehohel.`
-
-[z-Azozon | g-angry] | [th-because | bl-that-clause] | z-Alazun | v-scream | [th-because | bl-that-clause] | z-Ahelan | v-sit
-:::
-
-**3.** *Azozon sees the statement that Ahelan sits.*
+**2.** *Azozon sees the statement that Ahelan sits.*
 
 ::: details Show answer
 `zazozon vayebel darn zahelan vehohel.`
@@ -130,14 +108,6 @@ z-Azozon | v-prohibit | z-Alazun | v-sit
 *Azozon prohibits Alazun from sitting.*
 :::
 
-**3.** `zahelan vezuyol thahum blarl zalazun vehohel thahum blarl zazozon veyamul.`
-
-::: details Show answer
-z-Ahelan | v-tell | [th-because | bl-that-clause] | z-Alazun | v-sit | [th-because | bl-that-clause] | z-Azozon | v-scream
-
-*Ahelan talks because Alazun sits because Azozon screams.*
-:::
-
 #### Pick one {#advanced-pick-one}
 
 **1.** *Azozon commands that Alazun sit.* `zazozon vorn zalazun vehohel.` or `zazozon varn zalazun vehohel.`
@@ -148,16 +118,4 @@ z-Ahelan | v-tell | [th-because | bl-that-clause] | z-Alazun | v-sit | [th-becau
 z-Azozon | v-command | z-Alazun | v-sit
 
 **`vorn`** takes the next sentence as an instruction; **`varn`** only states that Alazun sits.
-:::
-
-#### Fix it {#advanced-fix-it}
-
-**1.** *Azozon is angry because Alazun screams because Ahelan sits.* <!-- lint: error -->`zazozon gonumul thahum blarl zalazun veyamul zahelan vehohel.`
-
-::: details Show answer
-`zazozon gonumul thahum blarl zalazun veyamul thahum blarl zahelan vehohel.`
-
-[z-Azozon | g-angry] | [th-because | bl-that-clause] | z-Alazun | v-scream | [th-because | bl-that-clause] | z-Ahelan | v-sit
-
-Each further *because* needs its own **`thahum blarl`**; without the second pair, Ahelan sitting is not a nested grounds clause.
 :::

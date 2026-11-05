@@ -80,7 +80,7 @@ Other role letters work the same: `blarth` after a hinge, `zarth` as the subject
 | [Confirm](/stand-in-roles#stand-in-roles) | `zazozon vaon zalazun vehohel.` | *Azozon confirms that Alazun sits.* | A |
 | [Decline](/stand-in-roles#stand-in-roles) | `zazozon vuen zazozon vehohel.` | *Azozon declines to sit.* | A |
 | [It is … that](/stand-in-roles#stand-in-roles) | `gamahum zarl zazozon vowurol.` | *It is hard for Azozon to walk.* | A |
-| [Nested](/stand-in-roles#nested-dependents) | `zazozon guzemel thahum blarl zalazun vowurol thahum blarl zahelan vezuvel.` | *Azozon is sleepy because Alazun walks because Ahelan sleeps.* (Ahelan's sleep is why Alazun walks) | A |
+| [Nested](/nested-dependents#nested-dependents) | `zazozon guzemel thahum blarl zalazun vowurol thahum blarl zahelan vezuvel.` | *Azozon is sleepy because Alazun walks because Ahelan sleeps.* (Ahelan's sleep is why Alazun walks) | A |
 
 ### Times with a noun {#time-nouns}
 
@@ -91,7 +91,7 @@ Put an event or period in a `bl-` word after the time hinge. *Until*: lasts up t
 | [During](/dependents#time-hinges) | `zazozon vowurol herom blanulul.` | *Azozon walks during the thunderstorm.* | B |
 | [After](/dependents#time-hinges) | `zazozon vehohel halam blanulul.` | *Azozon sits after the thunderstorm.* | B |
 | [By](/dependents#by-deadline) | `zazozon vowurol huvahum blanulul.` | *Azozon walks by the time of the thunderstorm.* (done no later than that) | B |
-| [A noun in time](/sentence-linkers#time-hinge-on-noun) | `zalazun dowurol galam blanulul vayebel.` | *Alazun sees the walk after the thunderstorm.* (*after the thunderstorm* says which walk) | I |
+| [A noun in time](/more-hinges#time-hinge-on-noun) | `zalazun dowurol galam blanulul vayebel.` | *Alazun sees the walk after the thunderstorm.* (*after the thunderstorm* says which walk) | I |
 
 On a noun: `gerom` *during*, `gabam` *before*, `galam` *after*, `garum` *until*, `guvahum` *by*. *Since* is [*from* on a time](/hooks#since).
 
@@ -125,7 +125,7 @@ A **hinge** names the link and takes the stand-in `blarl` as its `/b/`. Keep the
 | [In order to](/dependents#so-that): name the doer again | `zuwen vowurol thovam blarl zuwen vehohel.` | *I walk in order to sit.* | B |
 | [So as not to](/stand-in-vowels#stand-in): `blurl` for `blarl` | `zuwen vowurol thovam blurl zuwen vehohel.` | *I walk so as not to sit.* | I |
 | [Unless](/stand-in-vowels#stand-in): `blurl` for `blarl` | `zazozon vowurol thohem blurl zalazun vezuvel.` | *Azozon walks unless Alazun sleeps.* | I |
-| [So … that](/sentence-linkers#result-hinge): the result happened | `zazozon welazem gadamul hahom blarl zazozor vezuvel.` | *Azozon is so tired that they sleep.* | I |
+| [So … that](/more-hinges#result-hinge): the result happened | `zazozon welazem gadamul hahom blarl zazozor vezuvel.` | *Azozon is so tired that they sleep.* | I |
 | [As soon as](/dependents#time-hinges) | `zazozon vowurol wadurom halam blarl zalazun vehohel.` | *Azozon walks as soon as Alazun sits.* | B |
 
 <PageBreak />
@@ -137,7 +137,7 @@ A **linker** is an `/x/` word that opens the next sentence under the same speech
 <!-- cheat-sheet: linking-clauses -->
 | English | Ageben | Stage |
 |---------|--------|-------|
-| [*therefore*](/dependents#continue-x) | **`xahom`** | B |
+| [*therefore*](/speech-moves#continue-x) | **`xahom`** | B |
 | [*however*](/sentence-linkers#sentence-linkers) | **`xezem`** | I |
 | [*meanwhile*](/sentence-linkers#sentence-linkers) | **`xugorom`** | I |
 | [*next*](/sentence-linkers#sentence-linkers): clears the topic | **`xevewom`** | I |
@@ -155,12 +155,12 @@ Three take **-l** for a firm link.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Therefore](/dependents#continue-x) | `zodozel vowurol. xahom zogozel veruvol.` | *A dog walks. Therefore a cat runs.* | B |
+| [Therefore](/speech-moves#continue-x) | `zodozel vowurol. xahom zogozel veruvol.` | *A dog walks. Therefore a cat runs.* | B |
 | [On the contrary](/sentence-linkers#sentence-linkers) | `zalazun vezuvel vul. xugohul zalazun veruvol.` | *Alazun isn't sleeping. On the contrary, Alazun is running.* | I |
 | [Topic, then linker](/sentence-linkers#sentence-linkers) | `xazozon. xezem zalazun veruvol.` | *Now, about Azozon. However, Alazun runs.* | I |
 | [Linker in a new turn](/sentence-linkers#sentence-linkers) | `yem xevewom zawan vowurol.` | *So, do you want to walk?* | I |
 
-Linkers come only at the start of a sentence. They never follow a [clause join](/joins#clause-joins) and never open the sentence after a stand-in. Writing and speech rhythm for all of these is [one table](/sentence-linkers#orthography-and-prosody-periods).
+Linkers come only at the start of a sentence. They never follow a [clause join](/joins#clause-joins) and never open the sentence after a stand-in. Writing and speech rhythm for all of these is [one table](/sentence-linkers#past-a-period).
 
 ## Hosted relations {#relations}
 
@@ -300,9 +300,9 @@ Each hinge, linker, and relation word is the abstract sense of an ordinary root.
 | `darl` *that …* ([a statement as content](/dependents#dependent-clauses)) | | `derl` *whether …* ([a question as content](/dependents#dependent-clauses)) |
 | `dorl` *to …* ([an instruction](/stand-in-vowels#stand-in)) | | `durl` *not to …* ([something to avoid](/stand-in-vowels#stand-in)) |
 | `darl` *that …* ([points forward](/dependents#dependent-clauses)) | | `darth` *so* ([points back](/stand-in-vowels#stand-in-back)) |
-| `thovam blarl` *so that* ([your aim, not claimed](/dependents#so-that)) | | `hahom blarl` *so … that* ([the result happened](/sentence-linkers#result-hinge)) |
+| `thovam blarl` *so that* ([your aim, not claimed](/dependents#so-that)) | | `hahom blarl` *so … that* ([the result happened](/more-hinges#result-hinge)) |
 | `thohem blarl` *if* ([a condition](/dependents#hinges)) | | `derl` *whether* ([an open question](/dependents#dependent-clauses)) |
-| `xahom` *therefore* ([starts a sentence](/dependents#continue-x)) | | `hezem blarl` *although* ([attaches a clause](/dependents#hinges)) |
+| `xahom` *therefore* ([starts a sentence](/speech-moves#continue-x)) | | `hezem blarl` *although* ([attaches a clause](/dependents#hinges)) |
 | `hewem` *like* ([resembles, and is real](/relations#likeness)) | | `hewel` *exactly like* ([a perfect match](/exactly-like#exactly-like)) |
 | `gadam` *contents of* ([what a vessel holds](/of-relations#of-relations)) | | `al` *in* ([a place hook](/extra-noun-hooks#extra-noun-intermediate)) |
 | `hanem` *on behalf of* ([an agent](/relations#proxy)) | | `heham` *in exchange for* ([the other half of a swap](/relations#exchange)) |

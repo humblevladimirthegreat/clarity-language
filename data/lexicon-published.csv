@@ -1009,7 +1009,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ☣️,biohazard,abugu,sign,takes-away,none,,,,,
 ⬆️,north,onuho,place,order,none,,,,northern,
 ↗️,northeast,unuho,place,order,none,,,,,
-➡️,east,aho,place,order,,progress,map-right is east; progress is moving ahead,,eastern,dependents.md#beginner-practice
+➡️,east,aho,place,order,,progress,map-right is east; progress is moving ahead,,eastern,speech-moves.md#beginner-practice
 ↘️,southeast,ozuho,place,order,none,,,,,
 ⬇️,south,azuho,place,order,none,,,,southern,
 ↙️,southwest,azoho,place,order,none,retreat,map down-left is southwest; retreat is moving away back,,withdraw; retire,

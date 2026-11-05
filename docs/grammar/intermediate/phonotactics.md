@@ -40,7 +40,7 @@ Each vowel keeps its [pitch](/phonology#vowel-pitch) in a stack, so every stack 
 
 **A fall means `u`.** Every stack that starts with `u` falls, and every other stack rises. In grammar words a `u` stack is usually the *undo* or *set aside* member of its family, so you can hear which side a stack is on from its direction alone, before the second vowel is clear. The direction backs up the vowels; when the two disagree, trust the vowels.
 
-**Related form:** word-initial `x` is the [continue](/dependents#continue-x) prefix (discourse), not a compound seam.
+**Related form:** word-initial `x` is the [continue](/speech-moves#continue-x) prefix (discourse), not a compound seam.
 
 ### Number-word exception {#number-word-exception}
 

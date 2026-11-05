@@ -152,20 +152,6 @@ A nativized loan (a foreign word adapted into an Ageben root, plus an ordinary e
 
 **Compare with:** `zalon golowon.` alone is a sentence: *Alon is an Olowon* ([classification](/predication#classification)). The citation `alon golowon` has no role letter, so it only names. Two people in one role take a [join](/joins#right-close) after them (`zalon zolowon zal`).
 
-### Continue (`/x/`): overview
-<a id="continue-x"></a>
-
-Beginner used the ending to say how to take a content word’s meaning. On an `/x/` continue word, the ending instead picks what the word does:
-
-| Ageben | Use | English |
-|--------|-----|---------|
-| one of six linkers + **-m** (firm **-l** on three) | glue one finished sentence to the next | *but*, *therefore*, … |
-| other `/x/` root + **-l** / **-m** / **-n** | introduce a topic | *now, about X*; *let’s now talk about X* |
-| `/x/` root + **-r** | return to a topic | *back to X* |
-| clause join + **-n** | **sequence** | *and then* **`xan`**, … ([joins](/joins)) |
-
-[Discourse hooks](/hooks#discourse-hooks), which have no first letter, use hook endings. Hook **-n** titles a [proper-name phrase](#titled-phrases).
-
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.

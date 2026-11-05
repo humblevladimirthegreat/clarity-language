@@ -6,7 +6,7 @@ Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* do
 
 ### English → Ageben {#english-cues}
 
-**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Contrary to a stance](/prescription#contrary-to-stance) · [Continue](/dependents#continue-x) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse) · [Because](/iff-fault#only-because) · [Point back](/discourse-hooks#hook-resume) · [Clause sequence](/clause-sequence#clause-sequence)
+**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Contrary to a stance](/prescription#contrary-to-stance) · [Continue](/speech-moves#continue-x) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse) · [Because](/iff-fault#only-because) · [Point back](/discourse-hooks#hook-resume) · [Clause sequence](/clause-sequence#clause-sequence)
 
 Time and discourse dependents use the same **`blarl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a hinge root.
 
@@ -19,7 +19,7 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 | *though I promised* / *breaking my promise* | **`hezem blarl`** + the promise as its own sentence: `zuwen vezuvel hezem blarl zuwen vowurol hwuzal.` (*I sleep, although I promised to walk*) ([contrary to a stance](/prescription#contrary-to-stance)) |
 | *after they took back their yes* / *more than they agreed to* | a yes taken back is a no: **`uom hwudum`**; past the agreed terms is the consent bar **`hwudam`** ([every bar](/stance-bars#stance-bars)) |
 | *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`blarl`**: **`theyom blarl`** / **`thubom blarl`** ([evidence clause](/evidentiality#evidence-clause)) |
-| *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xahom`** ([continue](/dependents#continue-x)) |
+| *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xahom`** ([continue](/speech-moves#continue-x)) |
 | *it follows that* / *necessarily, then* (a deduction from the last sentence) | **`xahol`** ([sentence linkers](/sentence-linkers#sentence-linkers)) |
 | *that doesn't follow* / *non sequitur* | **`thanam thohem thul blarl`** ([arguments](#arguments)) |
 | *thus* (*in this way*) | the same adverb again: `/h/` with **-r** ([how English approximates -r](/tag-pronouns#how-english-approximates-r)) |

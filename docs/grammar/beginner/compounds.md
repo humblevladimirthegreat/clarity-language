@@ -33,7 +33,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 
 **Not the same job as:** a [role compound](roles.md#role-compounds) opens with **`w`**, a reach vowel, and a part consonant (`zwuzeduyol`). Only a noun inside its stem takes **`x`**.
 
-**Not the same job as:** a word that **starts** with **`x`** [keeps the same speech move going](dependents.md#continue-x). That **`x`** is not this glue in the middle.
+**Not the same job as:** a word that **starts** with **`x`** [keeps the same speech move going](speech-moves.md#continue-x). That **`x`** is not this glue in the middle.
 
 **Not the same job as:** mid-word **`th`**. The [stance](clause.md#stance-th) letter joins pieces when the second piece is **your view** rather than more of the same thing, such as a sake and how it stands ([sakes](sakes.md): `guwathal`). **`x`** adds; **`th`** says from where you see it. (cue: **th** ≈ *think*)
 
@@ -229,7 +229,7 @@ z-doorbell
 :::
 ## See also
 
-- **`x`** at the start of a word (keep going): [dependents.md](dependents.md#continue-x)
+- **`x`** at the start of a word (keep going): [speech-moves.md](speech-moves.md#continue-x)
 - How **`x`** sits in the word shape: [phonology.md](/phonotactics#phonotactics)
 - [can-and-cant.md#ability](can-and-cant.md#ability) / [sakes.md](sakes.md) / [roles.md](roles.md) / [numeric-derivation.md](/numeric-derivation)
 - Conversation length: [name **`x`** vowel](/conversation-length#conversation-length); bare hello: [word-endings.md](word-endings.md#greeting)

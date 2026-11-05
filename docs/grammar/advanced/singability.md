@@ -93,12 +93,12 @@ From smallest to largest:
 | Word | Louder first syllable, ending held | [rhythm and stress](#rhythm-and-stress) |
 | Item in a list, before the join word | Nothing extra | [right-close fence](/joins#right-close) |
 | Join word that ends a list | Nothing extra: the join word is heard | [right-close fence](/joins#right-close) |
-| Soft `-m` statement or answer | Nothing extra: the `-m` is heard | [periods](/sentence-linkers#orthography-and-prosody-periods) |
+| Soft `-m` statement or answer | Nothing extra: the `-m` is heard | [periods](/sentence-linkers#past-a-period) |
 | Scope island | Break before, one tight phrase, break after | [scope islands](/scope-islands#scope-islands) |
-| `/x/` continue, stand-in hang | No rest: the sentence goes on | [periods](/sentence-linkers#orthography-and-prosody-periods) |
-| Period | Rest | [periods](/sentence-linkers#orthography-and-prosody-periods) |
-| Linker or topic word after a period | The period's rest; the `/x/` word says which | [periods](/sentence-linkers#orthography-and-prosody-periods), [topic](/topic#topic) |
-| New `/y/` turn | The period's rest; the `/y/` word is heard | [periods](/sentence-linkers#orthography-and-prosody-periods) |
+| `/x/` continue, stand-in hang | No rest: the sentence goes on | [periods](/sentence-linkers#past-a-period) |
+| Period | Rest | [periods](/sentence-linkers#past-a-period) |
+| Linker or topic word after a period | The period's rest; the `/x/` word says which | [periods](/sentence-linkers#past-a-period), [topic](/topic#topic) |
+| New `/y/` turn | The period's rest; the `/y/` word is heard | [periods](/sentence-linkers#past-a-period) |
 
 A list needs no voice of its own, even though the join word comes last: a second word with the same role letter already tells a listener that a list is under way before the join arrives.
 
@@ -119,16 +119,3 @@ Every distinction Ageben makes is spelled in its letters, so a line sung on a si
 | `%` | Light, smiling | Short and detached |
 | `&` | Stressed and slowed | Held for its full length |
 | `;` | Soft, gentle | Smooth and connected, softer |
-
-### Thinking sounds {#thinking-sounds}
-
-When you need a moment in the middle of speaking, English fills the gap with *um* or *uh*. Ageben has two sounds for that gap, and each tells the listener what would help. Neither is a word, and neither is written.
-
-| Sound | Means | The listener | Cue |
-|-------|-------|--------------|-----|
-| *mmm*, lips closed | I am thinking it over | waits and leaves the silence | Lips closed: not ready to speak |
-| A held `a`, `e` or `o` (any of them), at its own pitch | I know what I mean but cannot find the word | may offer a word | Mouth open: the word is on its way |
-
-Do not hold `u`: in grammar words `u` usually means *undo* or *not*, so a held `u` can sound like a denial. A thinking vowel is held well past one beat, so it does not sound like a [letter name](/letter-names#letter-names), which is short and followed by a pause.
-
-**Compare with:** a thinking sound only holds the gap. To fix a word you already said, use a hook: [`ol`](/hooks#rather) for a better wording of the same thing, [`el`](/hooks#instead) for the thing you meant instead.

@@ -88,7 +88,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   },
   "leftEdge.Force": { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "speech-act word" },
 
-  "bodyClause.Linker": { anchor: "dependents.md#continue-x", summary: "sentence linker before a clause" },
+  "bodyClause.Linker": { anchor: "speech-moves.md#continue-x", summary: "sentence linker before a clause" },
   "bodyClause.topicMarker": { anchor: "span-mention.md#mention", summary: "mention marker before a topic span" },
   "bodyClause.clause": { anchor: "word-endings.md#greeting", summary: "clause body" },
 
@@ -241,7 +241,7 @@ export const TOKEN_CONSTRUCTIONS: Record<TokenBranch, ConstructionEntry> = {
   force: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "speech-act word" },
   yVocative: { anchor: "speech-moves.md#vocative", summary: "/y/ name (-n), named span, or resume (-r): a vocative" },
   yInterjection: { anchor: "speech-moves.md#interjections-reactions", summary: "/y/ word in -l / -m, or an unnamed span: an interjection" },
-  linker: { anchor: "dependents.md#continue-x", summary: "/x/ content word: a sentence linker, or a topic word" },
+  linker: { anchor: "speech-moves.md#continue-x", summary: "/x/ content word: a sentence linker, or a topic word" },
   clauseAdverb: { anchor: "can-and-cant.md#ability-fallback", summary: "intention adverb on /h/ (hostless ability, try, a say word, RESIDUE, FORMER): covers the whole clause like a /th/ word" },
   tagAssign: { anchor: "tag-pronouns.md#tag-pronouns", summary: "bare tag -l: names the phrase before it, or a new referent" },
   content: { anchor: "phonology.md#word-edges", summary: "content word in its role slot" },

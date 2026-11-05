@@ -310,7 +310,7 @@ A join word with no clause before it stands for a clause of its own: `xal.` *not
 | `zazozon vowurol xel xal.` | *Azozon may walk* (Azozon walks, or nothing happens) |
 | `zazozon vowurol xol xur.` | *mainly, Azozon walks* (that outranks anything else) |
 
-**Compare with:** a sentence linker (*therefore*, *however*) also starts the next sentence, but it is a content word with its own meaning ([continue](dependents.md#continue-x)).
+**Compare with:** a sentence linker (*therefore*, *however*) also starts the next sentence, but it is a content word with its own meaning ([continue](speech-moves.md#continue-x)).
 
 ### Practice {#beginner-practice}
 

@@ -164,7 +164,7 @@ function clauseFindings(clause: Clause, act: ActKind, blanks: Set<number>): stri
   const roles = rest.map((s) => s.role);
   const z = roles.indexOf("z");
   const d = roles.indexOf("d");
-  // A command names its listener after the verb (`yol guyulom zawan`, label-reach.md#label-reach).
+  // A command names its listener after the verb (`yol guyulom zawan`, speech-acts.md#command-property).
   if (act !== "command" && z >= 0 && d >= 0 && d < z) rules.push("subject before object");
   if (act !== "command" && before.includes("b")) rules.push("/b/ right after the verb");
   return rules;

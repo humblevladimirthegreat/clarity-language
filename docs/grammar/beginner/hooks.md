@@ -41,6 +41,8 @@ To correct your own wording, English says *A, or rather B*. Use the same `A HOOK
 >
 > "Azozon is tired, or rather, sleepy."
 
+**Compare with:** a [thinking sound](speech-moves.md#thinking-sounds) holds the gap before you find a word; **`ol`** fixes a word you already said.
+
 ### Instead (`el`)
 <a id="instead"></a>
 
@@ -144,7 +146,7 @@ Use the same **`el …`** for *actually* when you correct what someone expected:
 
 The hook is glue only when the next word is not a `/b/` word. With a `/b/` word right after it, even the stand-in **`barl`**, it is an extra-noun hook instead.
 
-**Compare with:** *however* / *therefore* use [continue](dependents.md#continue-x) linkers. A hook at the front only adds, rephrases, replaces, or takes out.
+**Compare with:** *however* / *therefore* use [continue](speech-moves.md#continue-x) linkers. A hook at the front only adds, rephrases, replaces, or takes out.
 
 ### Extra noun (`/b/` after the hook) {#extra-noun}
 

@@ -52,7 +52,7 @@ export const intermediateLessons = [
   { text: 'Names and titles', link: '/proper-names' },
   { text: 'Place-name roots', link: '/place-name-roots' },
   { text: 'Longer chains', link: '/left-bound' },
-  { text: 'Doubling and stacking acts', link: '/speech-acts' },
+  { text: 'Turn words, further', link: '/speech-acts' },
   { text: 'Frankly and to be clear', link: '/speech-manner' },
   { text: 'Tone marks', link: '/tone-marks' },
   { text: 'Linking sentences', link: '/sentence-linkers' },
@@ -104,6 +104,7 @@ export const intermediateLessons = [
   { text: 'Which compound', link: '/compound-families' },
   { text: 'Decision and try', link: '/ability' },
   { text: 'Want', link: '/want' },
+  { text: "Hinges on a degree or a noun", link: "/more-hinges" },
 ]
 
 /** Advanced sittings, in the same topic order as the earlier groups. */
@@ -127,6 +128,7 @@ export const advancedLessons = [
   { text: 'Open and named ranges', link: '/open-ranges' },
   { text: 'Generations', link: '/generations' },
   { text: 'Numeric prefixes', link: '/numeric-derivation' },
+  { text: "Nested dependents", link: "/nested-dependents" },
 ]
 
 export const levelReviews = [

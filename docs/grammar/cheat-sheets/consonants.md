@@ -24,7 +24,7 @@ From the [role letters](/clause#role-letters) table. `/y/` and `/x/` start a tur
 | `/h/` | adverb: how, when, where | B |
 | `/th/` | stance: how sure, how known, why, as if | B |
 | [`/y/`](/speech-moves#turn-y) | turn: call, reaction, or speech act | B |
-| [`/x/`](/dependents#continue-x) | continue: glue this sentence to the last one | B |
+| [`/x/`](/speech-moves#continue-x) | continue: glue this sentence to the last one | B |
 
 The same letters name a part in an earlier event on [role pointers](/pronouns#role-pointers) and [role compounds](/roles#role-compounds): **z** the doer, **d** the one it happens to, **b** the extra party.
 
@@ -140,7 +140,7 @@ Same letter, different **letter job** by **placement**: where the letter sits pi
 | [`w`](/pronouns#role-pointers) | after the role letter | closed word: pointer, tag, role compound, say word | B–I |
 | [`th`](/label-seams#label-reach) mid-word | after the root | stance seam: [reach](/label-seams#label-reach), [sakes](/sakes#word-shape), [viewpoint](/viewpoint#viewpoint-laterals) | I |
 | [`x`](/compounds) mid-word | between roots | two roots, one word | B |
-| [`/x/`](/dependents#continue-x) first | | continue / sentence glue | B |
+| [`/x/`](/speech-moves#continue-x) first | | continue / sentence glue | B |
 | [**-x**](/plurality#associative) last | after the ending | associates or a group | B |
 | [`r`](/phonotactics#number-word-exception) after a role letter | `gragel` | starts a number word | I |
 

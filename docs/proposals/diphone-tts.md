@@ -83,7 +83,7 @@ Public helpers: `previewSpeech(text)`, `previewPhonemes(text)`, `skipLabel(reaso
 | Span brackets (`d[…]`, `d@[Hamlet]`, `th(…)`, …) | Open word + interior tokens + close when required | [spans.md](/spans#writing-vs-speech) |
 | Span anaphor / empty (`d[=]`, `d[]`) | Spoken open only | same |
 | Orthographic digit-group commas | Spoken separator per numbers.md | [digitless-exponents.md](/digitless-exponents#group-separator) |
-| `.` / `?` / `!`, soft **-m** body | Boundary tags `period` / `qmark` / `bang` / `softM` | [dependents.md](/sentence-linkers#orthography-and-prosody-periods) |
+| `.` / `?` / `!`, soft **-m** body | Boundary tags `period` / `qmark` / `bang` / `softM` | [dependents.md](/sentence-linkers#past-a-period) |
 | `/x/` continue vs new `/y/` turn | `xContinue` / `yTurn` | same |
 | Scope island `^ … ^` | `islandEnter` / `islandExit`; no spoken words | [spans.md](/scope-islands#scope-islands) |
 
