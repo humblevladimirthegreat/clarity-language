@@ -41,6 +41,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *write* | `varuyol` |
 | *knife* | `anewul` |
 | *slow* | `uzezam` |
+| *very* | `welazem` |
 | *wind* | `awulol` |
 | *sit* | `vehohel` |
 | *west* | `ewuhol` |
@@ -187,6 +188,46 @@ z-Alazun | h-RESIDUE | v-fight
 **Rule:** [Residue and former climate](residue-and-former.md#residue-and-former-climate)
 :::
 
+**13.** *Ahelan is so angry that Alazun cries.*
+
+::: details Show answer
+`zahelan welazem gonumul hahom blarl zalazun vagamul.`
+
+[z-Ahelan | [w-very | g-angry]] | [h-so-result | bl-that-clause] | z-Alazun | v-cry
+
+**Rule:** [Result (*so … that*)](more-hinges.md#result-hinge)
+:::
+
+**14.** *Alazun sleeps in a tent. Ahelan cooks in there.*
+
+::: details Show answer
+`zalazun vezuvel al budehal. zahelan vuguyol ar.`
+
+z-Alazun | v-sleep | [in | b-tent] . z-Ahelan | v-cook | in.there
+
+**Rule:** [Point back](in-clause-hooks.md#hook-resume)
+:::
+
+**15.** *Alazun sings, contrary to habit.*
+
+::: details Show answer
+`zalazun vozuyel uom thubom.`
+
+z-Alazun | v-sing | [contrary-to | th-PATTERN]
+
+**Rule:** [Channels after `uom`](contrary-to.md#channel-zone)
+:::
+
+**16.** *Ahelan gives climbing a try.*
+
+::: details Show answer
+`zahelan howar voguvol.`
+
+z-Ahelan | h-ATTEMPT-trial | v-climb
+
+**Rule:** [Endings: commitment](try.md#attempt-commitment)
+:::
+
 #### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zahelan dudehal vayebel. zahelan dobowal vayeber.`
@@ -199,7 +240,17 @@ z-Ahelan | d-tent | v-see . z-Ahelan | d-bucket | v-←see
 **Rule:** [How English approximates -r](resume-sense.md#how-english-approximates-r)
 :::
 
-**2.** `zalazun zadozal om balazur zal vazuvol.`
+**2.** `zagayul zwal dobowal vayebel. zahelan vowurol. zwar vagamul.`
+
+::: details Show answer
+[z-guard | z-tag.A] | d-bucket | v-see . z-Ahelan | v-walk . z-←tag.A | v-cry
+
+*A guard (A) sees a bucket. Ahelan walks. A cries.* (A is still the guard)
+
+**Rule:** [Tag pronouns](tag-pronouns.md#tag-pronouns)
+:::
+
+**3.** `zalazun zadozal om balazur zal vazuvol.`
 
 ::: details Show answer
 [z-Alazun | [z-duck | [used-by | b-←Alazun]] | z-and] | v-swim
@@ -209,7 +260,17 @@ z-Ahelan | d-tent | v-see . z-Ahelan | d-bucket | v-←see
 **Rule:** [SHARED after the join](list-structure.md#shared-after-the-join)
 :::
 
-**3.** `zahelan glegol d[azozon] varuyol.`
+**4.** `zalazun vazuvol voguvol val vul.`
+
+::: details Show answer
+z-Alazun | [[v-swim | v-climb | v-and] | v-not]
+
+*Alazun doesn't both swim and climb.* (one of them, or neither)
+
+**Rule:** [Exclusivity and denying a whole list](set-joins.md#exclusivity-and-denying-a-whole-list)
+:::
+
+**5.** `zahelan glegol d[azozon] varuyol.`
 
 ::: details Show answer
 z-Ahelan | [gl-MENTION | d-CITE[Azozon]] | v-write
@@ -219,7 +280,7 @@ z-Ahelan | [gl-MENTION | d-CITE[Azozon]] | v-write
 **Rule:** [Mention](spans-as-words.md#mention)
 :::
 
-**4.** `zazozon danewulx gragel vayebel. zahelan dugedelx grager vayebel.`
+**6.** `zazozon danewulx gragel vayebel. zahelan dugedelx grager vayebel.`
 
 ::: details Show answer
 z-Azozon | [d-knife-x | g-three] | v-see . z-Ahelan | [d-cookie-x | g-←three] | v-see
@@ -229,7 +290,7 @@ z-Azozon | [d-knife-x | g-three] | v-see . z-Ahelan | [d-cookie-x | g-←three] 
 **Rule:** [Number endings](number-markers.md#number-endings)
 :::
 
-**5.** `SELFxon. alazuxan.`
+**7.** `SELFxon. alazuxan.`
 
 ::: details Show answer
 SELF-minutes . Alazun-presence
@@ -241,7 +302,7 @@ The lesser bid sets the limit, so the talk lasts a few minutes.
 **Rule:** [Conversation length](conversation-length.md#conversation-length)
 :::
 
-**6.** `yel dugedel dar.`
+**8.** `yel dugedel dar.`
 
 ::: details Show answer
 y-question | [d-cookie | d-wh]
@@ -671,6 +732,42 @@ th-revelation | z-Azozon | v-cook
 **`zoel`** reaches what the sake needs; **`zol`** goes past it (*too many*).
 
 **Rule:** [Enough and too](bars.md#sake-bars)
+:::
+
+**36.** *Ahelan swims very slowly.* `zahelan welazem huzezam vazuvol.` or `zahelan welazem guzezam vazuvol.`
+
+::: details Show answer
+`zahelan welazem huzezam vazuvol.`
+
+z-Ahelan | [w-very | h-slow] | v-swim
+
+A degree word works before an adverb too, so `welazem` grades `huzezam`; with `guzezam` it would be *a very slow Ahelan swims*.
+
+**Rule:** [How much: degree words on `/w/`](very-and-slightly.md#degree-w)
+:::
+
+**37.** *Azozon said, “Don't climb.”* `zazozon d[yul voguvol] vezuyol.` or `yul zazozon d[voguvol] vezuyol.`
+
+::: details Show answer
+`zazozon d[yul voguvol] vezuyol.`
+
+z-Azozon | d-CITE[y-prohibition | v-climb] | v-tell
+
+The ban belongs to the quoted words, so `yul` goes inside the cite; in front, it would ban your own sentence.
+
+**Rule:** [Act words in a quote](quote-contents.md#quote-acts)
+:::
+
+**38.** *Azozon climbs first, then Ahelan.* (a turn order) `zazozon zahelan zaol voguvol.` or `zazozon zahelan zol voguvol.`
+
+::: details Show answer
+`zazozon zahelan zaol voguvol.`
+
+[z-Azozon | z-Ahelan | z-in-order] | v-climb
+
+**`zaol`** is a route: the first item is where the order starts. **`zol`** would rank Azozon above Ahelan.
+
+**Rule:** [Route (**`ao`**)](rank-joins.md#route-ao)
 :::
 
 #### What changes {#intermediate-what-changes}

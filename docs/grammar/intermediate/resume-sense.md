@@ -4,7 +4,7 @@ band: intermediate
 
 # Resume one sense {#resume-one-sense}
 
-### How English approximates **-r**
+### How English approximates **-r** {#how-english-approximates-r}
 
 Beginner used whole-stem **-r** in the same slot as the earlier word (*he sits*). The resume keeps the earlier word’s role letter, and the English for it depends on that slot:
 

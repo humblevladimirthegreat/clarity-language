@@ -212,6 +212,14 @@ When English says *something* or *someone*, or *one of these* without saying whi
 >
 > "one of tea and coffee."
 
+In the verb slot, **`var`** is an act you are not naming.
+
+> `zazozon var.`
+>
+> z-Azozon | v-something
+>
+> "Azozon does something."
+
 Write A and B, then `zar`: the join still closes the list, and **-r** means some member of that pair (you are not saying which).
 
 When English says *some of them* or *some people*, more than one, add [**-x**](plurality.md#associative) after the **-r**. The join then stands for a group of members you are not naming.

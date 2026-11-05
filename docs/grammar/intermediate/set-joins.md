@@ -10,6 +10,12 @@ A set join says which listed items count: *and/or*, a denial of the whole list, 
 
 When English would allow several listed items at once (*and/or*), stack **a** then **e** (**`ae`**). **`e`** alone is still at most one: closed **-l** is pick one; open **-m** is *(optional)*. On **`ae`**, even **-m** still needs at least one of the listed items.
 
+> `zazozon vowurol veruvol vael.`
+>
+> z-Azozon | [v-walk | v-run | v-and/or]
+>
+> "Azozon walks and/or runs."
+
 When English would deny a list as a whole (*not both*), close the list with its own join, then add a **u** join after it. The inner list is the one item before the **u** join, so this is single-item *not X* with the whole list as X. To deny each item instead (*neither A nor B*), put the items straight before the **u** join, as in Beginner [negation](/joins#negation-u).
 
 > `vowurol veruvol val vul.`

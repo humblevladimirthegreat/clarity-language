@@ -191,7 +191,7 @@ English adds *and maybe more* after whatever might not be complete. Ageben says 
 
 | English itch | Ageben job | Teach |
 |--------------|------------|-------|
-| *and maybe more* / *and possibly more* / *among other things* after a list (*a dog and a cat, and maybe more*) | the list's join on **-m**: `zodozel zogozel zam` | [Vowels and endings](/joins#join-type-vowel-series) |
+| *and maybe more* / *and possibly more* / *among other things* after a list (*a dog and a cat, and maybe more*) | the list's join on **-m**: `zodozel zogozel zam` | [Join vowels and endings](/joins#join-type-vowel-series) |
 | *and maybe more* / *and maybe others* after an including or except hook (*the family, including Azozon and maybe more*) | the hook on **-m**: **`am`** / **`um`** | [Closed and open endings](/hooks#closed-and-open-endings) |
 | *and maybe more* / *among other things* after a to-clause, that-clause or whether-clause (*tells Alazun to dance, and maybe more*) | the stand-in on **-rm**: **`dorm`**, **`darm`**, **`derm`**, **`durm`** | [Stand-in vowels](/stand-in-vowels#stand-in) |
 

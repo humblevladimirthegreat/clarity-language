@@ -241,7 +241,19 @@ education
 **Rule:** [First mention, abstract](word-endings.md#abstract-m)
 :::
 
-**2.** *Azozon sees a mango or a watermelon: exactly one of the two.* `zazozon damedel dowodel del vayebel.` or `zazozon damedel dowodel dal vayebel.`
+**2.** *The cookie was cooked.* `zugedel vuguyol.` or `dugedel vuguyol.`
+
+::: details Show answer
+`dugedel vuguyol.`
+
+d-cookie | v-cook
+
+The cookie is still what gets cooked, so it stays `/d/`; leaving out the `/z/` word leaves the cook unsaid. `zugedel vuguyol.` would make the cookie the one cooking.
+
+**Rule:** [Leaving out who acts](no-subject.md#no-subject)
+:::
+
+**3.** *Azozon sees a mango or a watermelon: exactly one of the two.* `zazozon damedel dowodel del vayebel.` or `zazozon damedel dowodel dal vayebel.`
 
 ::: details Show answer
 `zazozon damedel dowodel del vayebel.`
@@ -253,7 +265,7 @@ z-Azozon | [d-mango | d-watermelon | d-or-exactly-one] | v-see
 **Rule:** [Choice (e)](joins.md#choice-e)
 :::
 
-**3.** *What does Alazun write?* `yel ?dar zalazun varuyol.` or `yel ?dur zalazun varuyol.`
+**4.** *What does Alazun write?* `yel ?dar zalazun varuyol.` or `yel ?dur zalazun varuyol.`
 
 ::: details Show answer
 `yel ?dar zalazun varuyol.`
@@ -265,7 +277,7 @@ y-question | ?d-wh | z-Alazun | v-write
 **Rule:** [Fill-ask](questions.md#fill-ask)
 :::
 
-**4.** *Ahelan swims only at night.* `zahelan vazuvol hanurul hal.` or `zahelan vazuvol hanurul ham.`
+**5.** *Ahelan swims only at night.* `zahelan vazuvol hanurul hal.` or `zahelan vazuvol hanurul ham.`
 
 ::: details Show answer
 `zahelan vazuvol hanurul hal.`
@@ -277,7 +289,7 @@ Closed **`hal`** says night is the only time; open **`ham`** leaves room for oth
 **Rule:** [Only when / never](restrictors.md#only-when-never-hal)
 :::
 
-**5.** *Azozon is more intense than Alazun.* `zazozon zalazun zol gahunom.` or `zalazun zazozon zol gahunom.`
+**6.** *Azozon is more intense than Alazun.* `zazozon zalazun zol gahunom.` or `zalazun zazozon zol gahunom.`
 
 ::: details Show answer
 `zazozon zalazun zol gahunom.`
@@ -289,7 +301,7 @@ The first name before **`zol`** ranks higher.
 **Rule:** [Comparatives](comparatives.md#comparatives)
 :::
 
-**6.** *My helmet serves the physical sake in the long term.* `zumobul gobathal.` or `zumobul gobathul.`
+**7.** *My helmet serves the physical sake in the long term.* `zumobul gobathal.` or `zumobul gobathul.`
 
 ::: details Show answer
 `zumobul gobathal.`
@@ -301,7 +313,7 @@ z-helmet | g-physical-met-lasting
 **Rule:** [Met](sakes.md#met)
 :::
 
-**7.** *Azozon sees someone who was punched.* `zazozon dwudabuvul vayebel.` or `zazozon dwuzabuvul vayebel.`
+**8.** *Azozon sees someone who was punched.* `zazozon dwudabuvul vayebel.` or `zazozon dwuzabuvul vayebel.`
 
 ::: details Show answer
 `zazozon dwudabuvul vayebel.`
@@ -313,7 +325,7 @@ Part **`d`** names who the punch happens to; **`z`** is who punches.
 **Rule:** [The undergoer](roles.md#the-undergoer-d)
 :::
 
-**8.** *a wood basket* `zuloxabowal.` or `zabowaxulol.`
+**9.** *a wood basket* `zuloxabowal.` or `zabowaxulol.`
 
 ::: details Show answer
 `zuloxabowal.`
@@ -325,7 +337,7 @@ A wood basket is a kind of basket, so *basket* comes last; `zabowaxulol` would b
 **Rule:** [Two roots, one word](compounds.md#two-roots-one-word)
 :::
 
-**9.** *Ahelan, please don't run.* `yahelan yum veruvol.` or `yahelan yul veruvol.`
+**10.** *Ahelan, please don't run.* `yahelan yum veruvol.` or `yahelan yul veruvol.`
 
 ::: details Show answer
 `yahelan yum veruvol.`
@@ -337,7 +349,7 @@ y-Ahelan | y-soft-prohibition | v-run
 **Rule:** [Speech act: firm and soft](firm-soft.md#speech-act)
 :::
 
-**10.** *Alazun fights against a guard.* `zalazun vuvuvul uol bagayul.` or `zalazun vuvuvul ual bagayul.`
+**11.** *Alazun fights against a guard.* `zalazun vuvuvul uol bagayul.` or `zalazun vuvuvul ual bagayul.`
 
 ::: details Show answer
 `zalazun vuvuvul uol bagayul.`
@@ -349,7 +361,7 @@ z-Alazun | v-fight | [against | b-guard]
 **Rule:** [Extra noun: stacked vowels](extra-noun-hooks.md#extra-noun-intermediate)
 :::
 
-**11.** *Alazun can't sing yet.* `zalazun vozuyexel.` or `zalazun vozuyexol.`
+**12.** *Alazun can't sing yet.* `zalazun vozuyexel.` or `zalazun vozuyexol.`
 
 ::: details Show answer
 `zalazun vozuyexel.`
@@ -361,7 +373,7 @@ z-Alazun | v-sing-unable-modifiable
 **Rule:** [Ability and incapability](can-and-cant.md#ability)
 :::
 
-**12.** *Alazun is angry this time.* `zalazun gonumuthul.` or `zalazun gonumuthal.`
+**13.** *Alazun is angry this time.* `zalazun gonumuthul.` or `zalazun gonumuthal.`
 
 ::: details Show answer
 `zalazun gonumuthul.`
@@ -373,7 +385,7 @@ z-Alazun | g-angry-th-episode
 **Rule:** [Label reach](label-seams.md#label-reach)
 :::
 
-**13.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyol thobather blwuzor.` or `zahelan vuguyol thobathem blwuzor.`
+**14.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyol thobather blwuzor.` or `zahelan vuguyol thobathem blwuzor.`
 
 ::: details Show answer
 `zahelan vuguyol thobather blwuzor.`
@@ -385,7 +397,7 @@ z-Ahelan | v-cook | [th-physical-ought-tryout | bl-←episode-agent.self]
 **Rule:** [Ought for a sake](ought-for-a-sake.md#sake-force)
 :::
 
-**14.** *Azozon is still walking.* `zazozon hawum vowurol.` or `zazozon hawur vowurol.`
+**15.** *Azozon is still walking.* `zazozon hawum vowurol.` or `zazozon hawur vowurol.`
 
 ::: details Show answer
 `zazozon hawum vowurol.`
@@ -397,7 +409,7 @@ z-Azozon | h-still | v-walk
 **Rule:** [Already, still, not yet, no longer](already-still-yet.md#phasal)
 :::
 
-**15.** *Azozon left because Alazun spoke, and Alazun was wrong to.* `zazozon vudurul thahul blarl zalazun vezuyol.` or `zazozon vudurul thahum blarl zalazun vezuyol.`
+**16.** *Azozon left because Alazun spoke, and Alazun was wrong to.* `zazozon vudurul thahul blarl zalazun vezuyol.` or `zazozon vudurul thahum blarl zalazun vezuyol.`
 
 ::: details Show answer
 `zazozon vudurul thahul blarl zalazun vezuyol.`

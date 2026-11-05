@@ -83,7 +83,17 @@ z-Ahelan | d-_zw.named | v-see
 
 #### Ageben → English {#advanced-ageben-to-english}
 
-**1.** `zexual blawahol vehohel.`
+**1.** `zazozon vehohel thahum blarl zalazun vowurol halam blarl zahelan vezuvel.`
+
+::: details Show answer
+z-Azozon | v-sit | [th-because | bl-that-clause] | z-Alazun | v-walk | [h-after | bl-that-clause] | z-Ahelan | v-sleep
+
+*Azozon sits because Alazun walks after Ahelan sleeps.* (the walk comes after Ahelan's sleep)
+
+**Rule:** [Nested dependents](nested-dependents.md#nested-dependents)
+:::
+
+**2.** `zexual blawahol vehohel.`
 
 ::: details Show answer
 [z-at-x-everything | bl-station] | v-sit
@@ -93,7 +103,7 @@ z-Ahelan | d-_zw.named | v-see
 **Rule:** [Hook plus a join](hooked-joins.md#hooked-joins)
 :::
 
-**2.** `zahelan d[omobul#] varuyol.`
+**3.** `zahelan d[omobul#] varuyol.`
 
 ::: details Show answer
 z-Ahelan | d-CITE[umbrella]# | v-write
@@ -103,7 +113,7 @@ z-Ahelan | d-CITE[umbrella]# | v-write
 **Rule:** [Editorial close and close-all](span-nesting.md#close-forms-complete-editorial-close-all)
 :::
 
-**3.** `zohoyol g#2e1 blazozon vezuvel.`
+**4.** `zohoyol g#2e1 blazozon vezuvel.`
 
 ::: details Show answer
 🔊 `zohoyol growabayadol blazozon vezuvel.`
@@ -115,7 +125,7 @@ z-Ahelan | d-CITE[umbrella]# | v-write
 **Rule:** [Ordinal generation](generations.md#ordinal-generation)
 :::
 
-**4.** `zazozon grawaxugowul.`
+**5.** `zazozon grawaxugowul.`
 
 ::: details Show answer
 z-Azozon | g-infinity-x-quiet

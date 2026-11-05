@@ -58,6 +58,7 @@ export const intermediateLessons = [
   { text: 'Frankly and to be clear', link: '/speech-manner' },
   { text: 'Tone marks', link: '/tone-marks' },
   { text: 'Linking sentences', link: '/sentence-linkers' },
+  { text: 'Hinges on a degree or a noun', link: '/more-hinges' },
   { text: 'Stand-in vowels', link: '/stand-in-vowels' },
   { text: 'Resume one sense', link: '/resume-sense' },
   { text: 'Tag pronouns', link: '/tag-pronouns' },
@@ -110,7 +111,6 @@ export const intermediateLessons = [
   { text: 'Which compound', link: '/compound-families' },
   { text: 'Try', link: '/try' },
   { text: 'Want and decide', link: '/want-and-decide' },
-  { text: "Hinges on a degree or a noun", link: "/more-hinges" },
 ]
 
 /** Advanced sittings, in the same topic order as the earlier groups. */
@@ -118,6 +118,7 @@ export const advancedLessons = [
   { text: 'Singing and speech edges', link: '/singability' },
   { text: 'Emphasis and clefts', link: '/emphasis' },
   { text: 'Stand-in words', link: '/stand-in-roles' },
+  { text: 'Nested dependents', link: '/nested-dependents' },
   { text: 'Join limits', link: '/join-limits' },
   { text: 'Cite plus a hook', link: '/hook-compounds' },
   { text: 'Hook plus a join', link: '/hooked-joins' },
@@ -134,7 +135,6 @@ export const advancedLessons = [
   { text: 'Open and named ranges', link: '/open-ranges' },
   { text: 'Generations', link: '/generations' },
   { text: 'Numeric prefixes', link: '/numeric-derivation' },
-  { text: "Nested dependents", link: "/nested-dependents" },
 ]
 
 export const levelReviews = [
