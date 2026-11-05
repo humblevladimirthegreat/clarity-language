@@ -129,3 +129,157 @@ A reply to a fill-ask may use the word too. As in any [reply of more than one no
 **Compare with:** when B is one example of A (*animals like dogs*, *the family, such as Azozon*), B is part of A, so use the hook `am` [inside a clause](/discourse-hooks#stacked-discourse): `zuvayal am zazozon vowurol.` *The family, such as Azozon, walks.* Use `ewem` when B stands beside A.
 
 **Not the same job as:** a `/ɡ/` [likeness](/relations#likeness) word, which limits who counts: `zual gewem blazozon vowurol.` *Everyone like Azozon walks.* `ewem` limits nothing; it relates two members.
+
+### Practice {#intermediate-practice}
+
+Short drills for Intermediate. Try each item before opening **Show answer**.
+
+**Setting:** a parade
+
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *horse* | `ohazol` | 🐎 |
+| *wave* | `vowuyal` | 👋 |
+| *flag* | `avogel` | 🏴 |
+
+**Review:**
+
+| English | Ageben |
+|---------|--------|
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
+| *Ahelan* | `ahelan` |
+| *walk* | `vowurol` |
+| *sing* | `vozuyel` |
+| *dance* | `vunurol` |
+| *clap* | `vaguyal` |
+
+#### English → Ageben {#intermediate-english-to-ageben}
+
+**1.** *The horse walks behind Alazun.*
+
+::: details Show answer
+`zohazol alam zalazun vowurol.`
+
+z-horse | after.open | z-Alazun | v-walk
+:::
+
+**2.** *Ahelan waves the flag while walking.*
+
+::: details Show answer
+`zahelan vowuyal davogel erom vowurol.`
+
+z-Ahelan | v-wave | d-flag | while.open | v-walk
+:::
+
+**3.** *Alazun, like Azozon, claps.*
+
+::: details Show answer
+`zalazun ewem zazozon vaguyal.`
+
+z-Alazun | like.open | z-Azozon | v-clap
+:::
+
+**4.** *Alazun claps only while walking.*
+
+::: details Show answer
+`zalazun vaguyal erol vowurol.`
+
+z-Alazun | v-clap | while.closed | v-walk
+:::
+
+**5.** *Who does the horse walk behind?*
+
+::: details Show answer
+`yel alam zar zohazol vowurol.`
+
+y-question | after.open | z-wh | z-horse | v-walk
+:::
+
+**6.** *Azozon waves before dancing.*
+
+::: details Show answer
+`zazozon vowuyal abam vunurol.`
+
+z-Azozon | v-wave | before.open | v-dance
+:::
+
+#### Ageben → English {#intermediate-ageben-to-english}
+
+**1.** `zazozon abal zalazun vowurol.`
+
+::: details Show answer
+z-Azozon | before.closed | z-Alazun | v-walk
+
+*Azozon walks ahead of Alazun.* (Alazun alone, no others)
+:::
+
+**2.** `yel zar abam zohazol vowurol.`
+
+::: details Show answer
+y-question | z-wh | before.open | z-horse | v-walk
+
+*Who walks ahead of the horse?*
+:::
+
+**3.** `zahelan vozuyel erom vunurol.`
+
+::: details Show answer
+z-Ahelan | v-sing | while.open | v-dance
+
+*Ahelan sings while dancing.*
+:::
+
+**4.** `zahelan erom zalazun vaguyal.`
+
+::: details Show answer
+z-Ahelan | while.open | z-Alazun | v-clap
+
+*Ahelan claps at the same time as Alazun.*
+:::
+
+**5.** `zalazun ewem zahelan.` (a reply to *Who waves?*)
+
+::: details Show answer
+z-Alazun | like.open | z-Ahelan
+
+*Alazun, like Ahelan.*
+:::
+
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Azozon sings only while dancing.* `zazozon vozuyel erom vunurol.` or `zazozon vozuyel erol vunurol.`
+
+::: details Show answer
+`zazozon vozuyel erol vunurol.`
+
+z-Azozon | v-sing | while.closed | v-dance
+
+*Only while* says dancing is the whole of it, so the word takes **-l**; with **-m**, Azozon might also sing at other times.
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Azozon waves while singing.* <!-- lint: error -->`zazozon vowuyal herom vozuyel.`
+
+::: details Show answer
+`zazozon vowuyal erom vozuyel.`
+
+z-Azozon | v-wave | while.open | v-sing
+
+The hinge keeps its role letter and relates two whole sentences; between two verbs of one doer, drop the role letter.
+:::
+
+#### What changes {#intermediate-what-changes}
+
+**1.** `zahelan ewem zazozon vowuyal.` / `zahelan ewel zazozon vowuyal.`
+
+::: details Show answer
+z-Ahelan | like.open | z-Azozon | v-wave
+
+z-Ahelan | like.closed | z-Azozon | v-wave
+
+Both say Ahelan, like Azozon, waves. The **-m** form leaves room for others besides Azozon; the **-l** form says Azozon is the only one.
+:::

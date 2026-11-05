@@ -117,7 +117,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🗯️,rant,orayu,person,takes-away,none,outrage,rant shows outrage,,complain; complaint,
 💭,thought,oma,mind,holds,,commentary,thought balloon floats a take over the scene; commentary is mind storying instead of bare contact,,idea; concept; notion; remark; theoretical; comment,
 💤,sleep,ezuve,doing,one,none,restoration,sleep means rest; restoration is the unobservable replenishing,,asleep,roles.md#beginner-practice
-👋,wave,owuya,person,holds,none,acknowledgment,a wave acknowledges someone; acknowledgment is the unobservable uptake,,acknowledge; recognition; greet; gesture,
+👋,wave,owuya,person,holds,none,acknowledgment,a wave acknowledges someone; acknowledgment is the unobservable uptake,,acknowledge; recognition; greet; gesture,same-role-words.md#intermediate-practice
 ✋,hand,aheba,body,holds,small,,,,,of-relations.md#intermediate-practice
 🫴,palm-up,aweba,body,holds,small,offering,a palm held up holds something out to take; an offering is what you hold out,,offer,
 🫷,pushing-hand,ubebu,body,takes-away,small,pushback,a hand pushing back says not so fast; pushback is resisting a demand,,push,
@@ -287,7 +287,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐆,leopard,ulazu,creature,takes-away,big,nature,a leopard lives in the wild; nature is the living world apart from people,,environmental; wild; organic; natural,
 🫎,moose,umazu,creature,takes-away,big,,,,,
 🫏,donkey,odazo,creature,order,big,,,,,
-🐎,horse,ohazo,creature,order,big,,,,,
+🐎,horse,ohazo,creature,order,big,,,,,same-role-words.md#intermediate-practice
 🦄,unicorn,uyazu,creature,takes-away,big,rarity,unicorn is rare magic,,unique; rare; extraordinary,
 🦓,zebra,eze,creature,one,,contrast,zebra stripes show contrast,,,sentence-linkers.md#intermediate-practice
 🦌,deer,edaza,creature,holds,big,timidity,deer in headlights is timid,,,
@@ -1127,7 +1127,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🔘,option,oyuge,sign,one,none,selection,radio button marks one chosen; selection is picking one option,,button; select; filter,
 🏁,finish-line,uvahu,place,takes-away,big,terminus,checkered flag marks finish,,,join-relations.md#intermediate-practice
 🚩,sport,ozuva,doing,holds,none,alarm,red flag raises warning,,,
-🏴,flag,avoge,sign,one,medium,anarchy,black flag suggests anarchy,,,
+🏴,flag,avoge,sign,one,medium,anarchy,black flag suggests anarchy,,,same-role-words.md#intermediate-practice
 🏳️,parley,obogu,sign,takes-away,medium,surrender,waving a white flag gives up the fight,,submit,
 🏳️‍🌈,homosexual,ohaye,person,one,big,pride,rainbow flag shows pride,,gay,
 🏳️‍⚧️,transgender-flag,udoge,sign,one,medium,,,,,

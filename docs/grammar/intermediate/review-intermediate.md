@@ -97,7 +97,17 @@ z-Ahelan | [d-hammer | [g-material | bl-wood]] | v-see
 **Rule:** [Of relations](of-relations.md#of-relations)
 :::
 
-**4.** *Ahelan swims as slowly as Alazun.*
+**4.** *Alazun swims after cooking.*
+
+::: details Show answer
+`zalazun vazuvol alam vuguyol.`
+
+z-Alazun | v-swim | after.open | v-cook
+
+**Rule:** [Same-role words](same-role-words.md#same-role-words)
+:::
+
+**5.** *Ahelan swims as slowly as Alazun.*
 
 ::: details Show answer
 `zahelan zalazun zoel huzezam vazuvol.`
@@ -107,7 +117,7 @@ z-Ahelan | [d-hammer | [g-material | bl-wood]] | v-see
 **Rule:** [Manner scale](comparative-arity.md#manner-scale)
 :::
 
-**5.** *Alazun cries because of the wind.*
+**6.** *Alazun cries because of the wind.*
 
 ::: details Show answer
 `zalazun vagamul thahum blawulol.`
@@ -117,7 +127,7 @@ z-Alazun | v-cry | [th-because | bl-wind]
 **Rule:** [Because, iff, and only because](iff-fault.md#only-because)
 :::
 
-**6.** *Alazun sits on Ahelan's left.*
+**7.** *Alazun sits on Ahelan's left.*
 
 ::: details Show answer
 `zalazun vehohel hewuhothahelan.`
@@ -127,7 +137,7 @@ z-Alazun | v-sit | h-west-th-Ahelan
 **Rule:** [Viewpoint laterals](viewpoint.md#viewpoint-laterals)
 :::
 
-**7.** *Azozon would rather cook than fight.*
+**8.** *Azozon would rather cook than fight.*
 
 ::: details Show answer
 `zazozon vuguyol vuvuvul vol.`
@@ -137,7 +147,7 @@ z-Azozon | [v-cook | v-fight | v-rank/more]
 **Rule:** [Verb-phrase and clause forms](vp-clause-forms.md#vp-clause-forms)
 :::
 
-**8.** *Ahelan sleeps about two hours.*
+**9.** *Ahelan sleeps about two hours.*
 
 ::: details Show answer
 `zahelan bagorum gradom vezuvel.`
@@ -147,7 +157,7 @@ z-Ahelan | [b-hour | g-two.about] | v-sleep
 **Rule:** [Measure phrases](numbers-applied.md#measure-phrases)
 :::
 
-**9.** *I gather Ahelan thinks Alazun sings.*
+**10.** *I gather Ahelan thinks Alazun sings.*
 
 ::: details Show answer
 `zalazun theyomahelan vozuyel.`
@@ -157,7 +167,7 @@ z-Alazun | th-CLUES-Ahelan | v-sing
 **Rule:** [Whose view (holder)](holder.md#holder)
 :::
 
-**10.** *Now, about Alazun: Alazun sits.*
+**11.** *Now, about Alazun: Alazun sits.*
 
 ::: details Show answer
 `xalazun zalen vehohel.`
@@ -167,7 +177,7 @@ x-Alazun | z-TOPIC | v-sit
 **Rule:** [The topic pronoun](topic.md#topic-pronoun)
 :::
 
-**11.** *Alazun has fought, and that still counts.*
+**12.** *Alazun has fought, and that still counts.*
 
 ::: details Show answer
 `zalazun haram vuvuvul.`
