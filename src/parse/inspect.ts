@@ -442,6 +442,9 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   if (word.reading === "listVerb" || word.reading === "joinRelation") {
     return { line: "join-series form", href: "join-across-roles.html" };
   }
+  if (word.reading === "sameRole") {
+    return { line: "same-role word", href: "same-role-words.html" };
+  }
   if (word.ending === "r" && word.reading !== "sake" && word.reading !== "ability" && word.reading !== "greeting") {
     return { line: "anaphor", href: "pronouns.html" };
   }

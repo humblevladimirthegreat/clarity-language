@@ -120,6 +120,32 @@ describe("parse — clause.md beginner", () => {
   });
 });
 
+describe("parse — same-role words (same-role-words.md)", () => {
+  const unitsOf = (text: string) => parseText(text).utterances[0]!.bodies[0]!.clause.units;
+  const shape = (text: string) =>
+    unitsOf(text).map((unit) => (unit.kind === "hook" ? `hook:${unit.word.reading}` : unit.kind === "np" ? `np:${unit.coord.level}` : unit.kind));
+
+  it("reads a listed citation between two phrases of one role as a same-role hook", () => {
+    assert.deepEqual(shape("zazozon abam zahelan vowurol."), ["np:z", "hook:sameRole", "np:z", "vp"]);
+    assert.deepEqual(shape("zazozon vowurol erom vazuvol."), ["np:z", "vp", "hook:sameRole", "vp"]);
+  });
+
+  it("reads a fronted pair as the word and its blank, with A after it", () => {
+    assert.deepEqual(shape("yel abam zar zazozon vowurol."), ["hook:sameRole", "np:z", "np:z", "vp"]);
+    assert.deepEqual(shape("yel zar abam zazozon vowurol."), ["np:z", "hook:sameRole", "np:z", "vp"]);
+  });
+
+  it("keeps a lone listed citation a fragment with its ordinary reading", () => {
+    const body = parseText("abal.").utterances[0]!.bodies[0]!;
+    assert.equal(body.fragment, true);
+    const unit = body.clause.units[0]!;
+    assert.ok(unit.kind === "np");
+    const item = unit.coord.parts[0]!.items[0]!;
+    assert.ok(item.kind === "package");
+    assert.equal(item.package.head.reading, "ordinary");
+  });
+});
+
 describe("parse — multipart names (proper-names.md#multipart-names)", () => {
   const onlyPackage = (text: string) => {
     const unit = parseText(text).utterances[0]!.bodies[0]!.clause.units;

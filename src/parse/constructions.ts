@@ -38,6 +38,14 @@ const REACH_READER = `\`-th-\` plus a reach word after a label says how far the 
 const ROLE_READER =
   `A role word \`REACH-PART-verb\` names one part of the verb's event: \`agent\` the one who does it, \`patient\` what it acts on or makes, \`recipient\` the one it is given or told to, or the other party of a relation; or a quality of that event: \`manner\` how, \`state\` what it left, \`stance\` the reason or feeling, \`extent\` how much, \`move\` the remark, \`outcome\` what followed. The reach word first says how far the label reaches: ${REACH_WORDS}. \`z-episode-agent-teach\` = someone who teaches (this time), \`z-role-agent-teach\` = a teacher, \`g-role-agent-teach\` = is a teacher, \`h-role-agent-teach\` = as a teacher (the role the act is done in), \`d-episode-manner-walk\` = a way of walking.`;
 
+/** A same-role relation word (same-role-words.md): the gloss names the relation, `.open` / `.closed` the ending. */
+const SAME_ROLE_READER =
+  "A word with no prefix glossed `before`, `after`, `while` or `like` (`.open` or `.closed`) between two phrases of the same prefix relates them: both fill that role in the same event, and the right one is the background. `z-X | before.open | z-Y | v-walk` = X walks before (ahead of) Y, and Y walks too; `z-X | v-walk | before.open | v-swim` = X walks before swimming; `after` = after or behind; `while` = at the same time; `z-X | like.open | z-Y | v-walk` = X, like Y, walks. The left phrase is the nearest one with the same prefix. `.open` leaves room for others (*and maybe others*); `.closed` says the right one is the whole of it: `while.closed` = only while, `like.closed` = like that one alone (not *exactly like*).";
+
+/** The fronted pair: the blank comes first, and A is the same-role phrase after it. */
+const SAME_ROLE_PAIR_READER =
+  "A prefix-less `before`, `after`, `while` or `like` word right before a blank (`before.open | z-wh`) at the start of a question asks for the right-hand member, and the left one is the phrase with the blank's prefix after the pair: `y-question | before.open | z-wh | z-X | v-walk` = Before whom does X walk? (X walks ahead of someone, who walks too).";
+
 /** Sentence grammar: `rule.childKey` (sub-rule, token type, or LABEL). */
 export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "document.sentence": { anchor: "word-endings.md#greeting", summary: "a text is one or more sentences" },
@@ -99,6 +107,11 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "unit.gCoord": { anchor: "joins.md#negation-u", summary: "clause-level /ɡ/ (predicate adjective)" },
   "unit.hCoord": { anchor: "clause.md#adverbs-h", summary: "/h/ or stance /th/ unit" },
   "unit.hookUnit": { anchor: "hooks.md#including-am-al", summary: "in-clause hook" },
+  "unit.sameRolePair": {
+    anchor: "same-role-words.md#before-and-after",
+    summary: "same-role word + fill-ask blank as one unit (`abam zar`); fronted, it takes A from the same-role phrase after it",
+    reader: SAME_ROLE_PAIR_READER,
+  },
 
   "islandUnit.IslandOpen": { anchor: "scope-islands.md#scope-islands", summary: "{ island open" },
   "islandUnit.IslandClose": { anchor: "scope-islands.md#scope-islands", summary: "} island close" },
@@ -180,6 +193,8 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "hUnitRule.gPackage": { anchor: "left-bound.md#complex-chaining", summary: "adjective on the landmark after an /h/ host" },
   "hookUnit.W": { anchor: "ending-grids.md#hook-w", summary: "/w/ on an in-clause hook" },
   "hookUnit.Hook": { anchor: "hooks.md#including-am-al", summary: "in-clause hook" },
+  "sameRolePair.Hook": { anchor: "same-role-words.md#before-and-after", summary: "the same-role word of a pair" },
+  "sameRolePair.Blank": { anchor: "same-role-words.md#before-and-after", summary: "the fill-ask blank a same-role word relates" },
   "hookUnit.zone": { anchor: "prescription.md#contrary-to-stance", summary: "uom + a /th/ stance: the zone the event goes contrary to" },
 
   "npPackage.gPackage": { anchor: "clause.md#adjectives-ɡ", summary: "adjective on a noun (gl- before, /ɡ/ after)" },
@@ -230,6 +245,11 @@ export const TOKEN_CONSTRUCTIONS: Record<TokenBranch, ConstructionEntry> = {
   clauseAdverb: { anchor: "can-and-cant.md#ability-fallback", summary: "intention adverb on /h/ (hostless ability, try, a say word, RESIDUE, FORMER): covers the whole clause like a /th/ word" },
   tagAssign: { anchor: "tag-pronouns.md#tag-pronouns", summary: "bare tag -l: names the phrase before it, or a new referent" },
   content: { anchor: "phonology.md#word-edges", summary: "content word in its role slot" },
+  sameRole: {
+    anchor: "same-role-words.md#before-and-after",
+    summary: "listed citation between two phrases of one role (`zazozon abam zahelan vowurol.`): a same-role relation word",
+    reader: SAME_ROLE_READER,
+  },
   citationFallback: { anchor: "phonology.md#word-edges", summary: "word with no role letter: names, filling no slot" },
 };
 
@@ -295,6 +315,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
 type OverlayOnlyReading =
   | "overlay"
   | "mention"
+  | "sameRole"
   | "listVerb"
   | "joinRelation";
 
@@ -851,6 +872,9 @@ export const REJECTIONS = {
   hingeStack: { anchor: "iff-fault.md#only-because", summary: "hinge stacks are `theboram thurugum` and `hezuvem thadoram`" },
   citationInClause: { anchor: "questions.md#fill-ask", summary: "a word with no role letter fills no slot, so it is never part of a clause; it stands only as a sentence of its own (`azozon.`)" },
   citationTurn: { anchor: "questions.md#fill-ask", summary: "a reply turn of one citation opens with the statement act only (`yal azozon.`)" },
+  sameRoleSides: { anchor: "same-role-words.md#before-and-after", summary: "a same-role word goes between two phrases of one role (`zazozon abam zahelan vowurol.`); at the start of a body only with the blank it asks for (`yel abam zar zazozon vowurol.`), and never as glue" },
+  sameRoleExtraNoun: { anchor: "same-role-words.md#before-and-after", summary: "a same-role word takes no /b/ after it: B keeps A's /z/, /d/ or /v/; a landmark goes on the /h/ relation with bl- (`habam blohehal`)" },
+  sameRoleEnding: { anchor: "same-role-words.md#before-and-after", summary: "a same-role word ends in -m (open) or -l (closed); -n and -r have no reading" },
   citationFragmentOnePhrase: { anchor: "questions.md#fill-ask", summary: "a bare answer or fragment is one noun phrase (`azozon.`, `alon golowon.`); for more, keep the letters (`zazozon zahelan zal.`)" },
   stanceNumber: { anchor: "number-roles.md#number-as-stance-by-marker", summary: "a stance number takes + (likelihood), _ (source) or # (Nth-hand); th- with digits and th#- are not used" },
   handDepth: { anchor: "evidentiality.md#hand-depth", summary: "th#N counts the hands between the event and you, from 2 (th#2 second-hand, a secondary source); first-hand is a channel word" },

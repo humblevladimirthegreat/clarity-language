@@ -216,3 +216,11 @@ alor,th,🌠,want,WANT-passing,want mood passing (a whim that fades),shooting st
 ubam,w,🧦,pairing,respectively,respective pairing (item N of one list goes with item N of the other),socks sort into matched pairs; respectively matches each item to its partner,rank-joins.md#respectively
 egol,g,🔤,mention,MENTION,mention marker (the span is a word or phrase as spelling),letters spell a word; a mention is a word as its letters,span-mention.md#mention
 egon,g,🔤,mention,NAME.MENTION,name-string mention marker (the span is a name as spelling),letters spell a name; the name-string is a name as its letters,span-mention.md#mention
+abam,cite,🎒,clause_hinge,before,same-role before (A ahead of B in time or in a moving line; B fills the same role; maybe others too),backpack holds what you need ahead; A goes ahead of B in the same role,same-role-words.md#before-and-after
+abal,cite,🎒,clause_hinge,before,same-role before (A ahead of B; B is the whole of it),backpack holds what you need ahead; -l closes the line at B,same-role-words.md#before-and-after
+alam,cite,⌛,clause_hinge,after,same-role after (A after or behind B in time or in a moving line; B fills the same role; maybe others too),the sand runs after the sand above it; A comes after B in the same role,same-role-words.md#before-and-after
+alal,cite,⌛,clause_hinge,after,same-role after (A after B; B is the whole of it),the sand runs after the sand above it; -l closes the line at B,same-role-words.md#before-and-after
+erom,cite,♊,clause_hinge,while,same-role while (A and B at the same time; both fill the role; maybe others too),gemini twins side by side; A and B at once in the same role,same-role-words.md#same-role-while
+erol,cite,♊,clause_hinge,while,same-role while closed (only while B),gemini twins side by side; -l keeps A to the time of B alone,same-role-words.md#same-role-while
+ewem,cite,🪞,likeness,like,same-role like (A like B; B fills the same role too as background; maybe others too),mirror shows a second one; B does the same as A,same-role-words.md#same-role-like
+ewel,cite,🪞,likeness,like,same-role like closed (like B and B alone; not exactly-like),mirror shows a second one; -l keeps the likeness to B alone,same-role-words.md#same-role-like

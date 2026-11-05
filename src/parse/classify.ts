@@ -802,6 +802,53 @@ export function classifyAll(words: MorphWord[], tables: ClassifyTables): LexWord
   return markMentions(words.map((word, at) => ({ ...classify(word, tables), at })), tables);
 }
 
+/**
+ * Overlay `pos` of a same-role relation word (same-role-words.md): a closed list of relation roots that stand in a
+ * clause as a citation, with no role letter, between two phrases of one role.
+ */
+export const SAME_ROLE_POS = "cite";
+
+/** The letters an overlay row is written with before its sense form: its role letter (`h` + `abam`), none for a same-role word. */
+export function overlayPrefix(pos: string): string {
+  return pos === SAME_ROLE_POS ? "" : pos;
+}
+
+/** An overlay row as it is written: `habam`, or the bare `abam` for a same-role word. */
+export function overlaySpelling(row: { pos: string; senseForm: string }): string {
+  return `${overlayPrefix(row.pos)}${row.senseForm}`;
+}
+
+/** Role letters that make a sentence a clause: a listed citation there is a same-role word, not a one-phrase fragment. */
+const CLAUSE_ROLE_POS = new Set(["z", "d", "b", "v", "h", "th"]);
+
+/** The same-role row a bare word spells with `ending` (its own by default): `abam` on 🎒, whatever ending it was written with. */
+export function sameRoleRow(word: MorphWord, tables: ClassifyTables, ending: string | undefined = word.ending): OverlayRow | undefined {
+  if (word.pos || word.plural || word.family.kind !== "content" || word.family.roots.length !== 1 || !ending) return undefined;
+  return tables.overlays.get(overlayKey(SAME_ROLE_POS, `${word.family.roots[0]}${ending}`));
+}
+
+/** A bare word on a same-role root with any ending: the ending decides whether it has a reading. */
+export function isSameRoleRoot(word: MorphWord, tables: ClassifyTables): boolean {
+  return !!(sameRoleRow(word, tables, "m") ?? sameRoleRow(word, tables, "l"));
+}
+
+/** Sentences (`sentenceOf[i]` is word `i`'s) with a word of a clause role: a listed citation there is a same-role word. */
+export function clauseSentences(words: readonly LexWord[], sentenceOf: readonly number[]): Set<number> {
+  return new Set(words.flatMap((word, i) => (word.pos && CLAUSE_ROLE_POS.has(word.pos) ? [sentenceOf[i]!] : [])));
+}
+
+/**
+ * A listed citation on **-l** / **-m** in a sentence that is a clause is a same-role word (`zazozon abam zahelan
+ * vowurol.`); alone, or with only what describes it, it stays the root's ordinary citation (`abam.`, questions.md#fill-ask).
+ */
+export function markSameRoleWords(words: LexWord[], sentenceOf: readonly number[], tables: ClassifyTables): LexWord[] {
+  const clauses = clauseSentences(words, sentenceOf);
+  return words.map((word, i) => {
+    const row = clauses.has(sentenceOf[i]!) ? sameRoleRow(word, tables) : undefined;
+    return row ? { ...word, overlay: overlayFromRow(row), reading: "sameRole" } : word;
+  });
+}
+
 /** Independent classify sources that apply (ignores first-match short-circuit). */
 export type ClassifyHit = {
   source:

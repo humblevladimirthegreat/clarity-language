@@ -18,6 +18,11 @@ describe("retieSenseForm", () => {
     assert.equal(retieSenseForm("egega", "th", "", "ababa"), "egega");
   });
 
+  it("moves a same-role word, written bare with no role letter", () => {
+    assert.equal(retieSenseForm("egegam", "cite", "egega", "ababa"), "ababam");
+    assert.equal(retieSenseForm("egegal", "cite", "egega", "ababa"), "ababal");
+  });
+
   it("returns null when the form does not spell the old root", () => {
     assert.equal(retieSenseForm("egega", "th", "ozozo", "ababa"), null);
   });

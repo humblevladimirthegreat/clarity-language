@@ -9,7 +9,7 @@
 import { tokenMatcher, type IToken, type TokenType } from "chevrotain";
 
 import type { ClassifyTables } from "./classify.js";
-import { arrowRoots, isAsOfOverlay, isBarStance, isZoneStance, isGroundsChannel, isHolderSeamW, isStandIn } from "./classify.js";
+import { arrowRoots, clauseSentences, isAsOfOverlay, isBarStance, isSameRoleRoot, isZoneStance, isGroundsChannel, isHolderSeamW, isStandIn } from "./classify.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { isTopicCompound, isTopicSpan, linkerEnglish, topicEffect } from "./linkers.js";
 import { CLOSED } from "../closed-roots.js";
@@ -48,6 +48,7 @@ import {
   OdoZ,
   Period,
   Polar,
+  SameRolePair,
   QMark,
   TagB,
   TagD,
@@ -248,7 +249,27 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
     enforceWord(payload, tables);
     enforceStackedHookR(payload, tokens, i);
   });
+  enforceSameRoleEndings(tokens, tables);
   enforceLocks(markContext(tokens));
+}
+
+/** In a clause, a bare word on a same-role root ends in **-m** or **-l**; **-n** and **-r** have no reading (same-role-words.md). */
+function enforceSameRoleEndings(tokens: IToken[], tables: ClassifyTables): void {
+  const words: LexWord[] = [];
+  const sentenceOf: number[] = [];
+  let sentence = 0;
+  for (const token of tokens) {
+    if (isAny(token, [Period, QMark, Bang])) sentence += 1;
+    const payload = token.payload as TokenPayload | undefined;
+    if (!payload || !isLexWordPayload(payload)) continue;
+    words.push(payload);
+    sentenceOf.push(sentence);
+  }
+  const clauses = clauseSentences(words, sentenceOf);
+  words.forEach((word, i) => {
+    if (!clauses.has(sentenceOf[i]!) || word.reading === "sameRole" || (word.ending !== "n" && word.ending !== "r")) return;
+    if (isSameRoleRoot(word, tables)) throw new ConstructionError("sameRoleEnding", word.raw);
+  });
 }
 
 /**
@@ -754,6 +775,39 @@ function enforceSameRole(hook: LexWord, prev: Unit | undefined, next: Unit | und
   if (a && b && a !== b) throw new ConstructionError("hookSameRole", `${edgeWord(prev, "last")!.raw} ${hook.raw} ${edgeWord(next, "first")!.raw}`);
 }
 
+/** The role a clause unit fills: a noun phrase's slot, a verb phrase, or its first word's letter; none for a hook or a clause. */
+function unitRole(unit: Unit | undefined): string | undefined {
+  if (!unit || unit.kind === "hook" || unit.kind === "clauseCoord" || unit.kind === "island" || unit.kind === "linker") return undefined;
+  if (unit.kind === "np") return unit.coord.level;
+  if (unit.kind === "vp") return "v";
+  return edgeWord(unit, "first")?.pos;
+}
+
+/** A fill-ask blank as a whole phrase: one join word on **-r** with no items (`zar`, `dar`, `var`). */
+function isBlankUnit(unit: Unit | undefined): boolean {
+  const parts = unit?.kind === "np" || unit?.kind === "vp" ? unit.coord.parts : undefined;
+  return parts?.length === 1 && parts[0]!.items.length === 0 && parts[0]!.join?.ending === "r";
+}
+
+/**
+ * A same-role word relates B, the phrase right after it, to A, the nearest phrase of B's role before it (same-role-words.md):
+ * `zazozon abam zahelan vowurol.` B keeps A's letter, and a `/b/` after the word is no extra noun. With no A before it, a
+ * blank B (`yel abam zar zazozon vowurol.`) takes A from the nearest phrase of its role after the pair.
+ */
+function enforceSameRoleWord(units: Unit[], at: number): void {
+  const unit = units[at] as Extract<Unit, { kind: "hook" }>;
+  const next = units[at + 1];
+  const role = unitRole(next);
+  const run = [unit.word.raw, edgeWord(next, "first")?.raw].filter(Boolean).join(" ");
+  if (unit.job === "extraNoun" || unit.job === "genitive" || unit.job === "stray" || role === "b") {
+    throw new ConstructionError("sameRoleExtraNoun", run);
+  }
+  if (unit.job === "discourse" || !role) throw new ConstructionError("sameRoleSides", run);
+  const before = units.slice(0, at).reverse().find((u) => unitRole(u) === role);
+  const after = isBlankUnit(next) ? units.slice(at + 2).find((u) => unitRole(u) === role) : undefined;
+  if (!before && !after) throw new ConstructionError("sameRoleSides", run);
+}
+
 /** Two number ends of a range share one line: an amount and a rank have no range (ordered-ranges.md#ranges). */
 function enforceSpanEnds(hook: LexWord, prev: Unit | undefined, next: Unit | undefined): void {
   const a = edgeWord(prev, "last");
@@ -806,6 +860,10 @@ function enforceUnitList(units: Unit[], tables: ClassifyTables): void {
       if (unit.unit.word.pos === "th") thAsOf += 1;
       else hAsOf += 1;
     }
+    if (unit.kind === "hook" && unit.word.reading === "sameRole") {
+      enforceSameRoleWord(units, i);
+      return;
+    }
     if (unit.kind === "hook" && unit.job === "stray") throw new ConstructionError("genitiveHost", unit.word.raw);
     if (unit.kind === "hook" && unit.job === "clause") enforceSameRole(unit.word, units[i - 1], units[i + 1]);
     if (unit.kind === "hook" && unit.job === "span") enforceSpanEnds(unit.word, units[i - 1], units[i + 1]);
@@ -846,6 +904,7 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
     enter(node) {
       switch (node.kind) {
         case "utterance":
+          if (node.utterance.left.hook?.reading === "sameRole") throw new ConstructionError("sameRoleSides", node.utterance.left.hook.raw);
           if (node.utterance.left.hook) enforceHookSlot(node.utterance.left.hook, "discourse");
           return;
         case "clause":
@@ -1166,6 +1225,11 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
   }
   if (depth > 0) throw new ConstructionError("islandUnclosed", "{");
   enforceCitationSentences(tokens);
+  // A same-role word opens a body only with the blank it asks for (`yel abam zar …`), so no A comes before it.
+  const opening = tokens.findIndex(
+    (token, i) => (token.payload as LexWord | undefined)?.reading === "sameRole" && !tokenMatcher(token, SameRolePair) && (i === 0 || isAny(tokens[i - 1]!, [Period, Force, Polar, Vocative, Interjection])),
+  );
+  if (opening >= 0) throw new ConstructionError("sameRoleSides", tokens.slice(opening, opening + 2).map((token) => token.image).join(" "));
   // Every other host takes the `/b/` or stand-in right after it, so a failure there is an amount or a factor.
   if (at > 0 && isAny(tokens[at]!, [HostedB, HostedOdo])) {
     throw new ConstructionError("slotlessHost", `${tokens[at - 1]!.image} ${tokens[at]!.image}`);

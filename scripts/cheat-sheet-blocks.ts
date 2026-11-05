@@ -25,6 +25,7 @@ import { join } from "node:path";
 
 import { CLOSED, type ClosedName } from "../src/closed-roots.js";
 import { parseOverlayCsv, type OverlayRow } from "../src/lexicon-search.js";
+import { overlaySpelling } from "../src/parse/classify.js";
 import { pageSections, type Band, type PageSections } from "../src/lint/learning-order.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
 import { pageRelPath } from "../docs/grammar/.vitepress/lib/reading-order.js";
@@ -87,7 +88,7 @@ function overlayRows(params: Params): string {
   if (take != null && (!Number.isInteger(take) || take < 0)) throw new Error(`take= needs a non-negative integer`);
   const rows = overlays()
     .filter((o) => (!pos || pos.includes(o.pos)) && (kind ? kind.includes(o.kind) : o.kind !== "sake"))
-    .map((o) => ({ form: o.pos + o.senseForm, o }))
+    .map((o) => ({ form: overlaySpelling(o), o }))
     .sort((a, b) => a.form.localeCompare(b.form))
     .slice(skip, take == null ? undefined : skip + take);
   return table(

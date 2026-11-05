@@ -3,6 +3,7 @@
  */
 import type { Analysis, HelperData, RoleSuggestion, RootSuggestion, SectionExample, Slot, Suggestion, Tier } from "./analyze.js";
 import { COMPOUND_LINKS } from "./detectors.js";
+import { SAME_ROLE_POS } from "../parse/classify.js";
 import type { ClauseFeatures } from "./tag.js";
 
 /** How a WordNet lead relates to its sense: *similar to glad*, *a kind of sibling*. */
@@ -101,9 +102,12 @@ export function suggestionLine(data: HelperData, s: Suggestion): string {
   const link = (target: string) => linkText(data, target);
   switch (s.kind) {
     case "lexicon": {
-      const role = s.role ? `/${s.role}/ ` : "";
+      // A same-role word has no role letter: it stands between two phrases of one role (same-role-words.md).
+      const sameRole = s.pos === SAME_ROLE_POS;
+      const role = s.role && !sameRole ? `/${s.role}/ ` : "";
       const word = s.word ? `  → \`${s.word}\`` : "";
-      const where = s.anchor ? `  ${s.pos ? `on /${s.pos}/ ` : ""}→ ${link(s.anchor)}` : "";
+      const on = sameRole ? "as a same-role word, no role letter " : s.pos ? `on /${s.pos}/ ` : "";
+      const where = s.anchor ? `  ${on}→ ${link(s.anchor)}` : "";
       const byPos = s.roles?.length ? `  [english_by_pos: ${s.roles.join(", ")}]` : "";
       const sides = sideWordsNote(s);
       const sense = s.name ? `name on "${s.sense}" + -n` : `"${s.sense}"${s.side ? ` (${s.side})` : ""}${sides ? `  (${sides})` : ""}`;

@@ -1,5 +1,5 @@
 import type { MorphWord } from "./types.js";
-import { classifyAll, type ClassifyTables } from "./classify.js";
+import { classifyAll, markSameRoleWords, type ClassifyTables } from "./classify.js";
 import { lowerNative, toneRunLength, writingSpanEnd } from "./span-scan.js";
 import {
   lexWordToToken,
@@ -88,10 +88,21 @@ function parseMorphWords(segments: TokenizeSegment[]): MorphWord[] {
   return parseWordStream(wordTexts);
 }
 
+/** Each word segment's sentence, counted by the end marks before it. */
+export function sentenceIndexes(segments: TokenizeSegment[]): number[] {
+  const out: number[] = [];
+  let sentence = 0;
+  for (const segment of segments) {
+    if (segment.kind === "word") out.push(sentence);
+    else if (segment.kind === "punct") sentence += 1;
+  }
+  return out;
+}
+
 export function tokenizeUtterance(text: string, tables: ClassifyTables): IToken[] {
   const segments = segmentUtterance(text);
   const morphWords = parseMorphWords(segments);
-  const classified = classifyAll(morphWords, tables);
+  const classified = markSameRoleWords(classifyAll(morphWords, tables), sentenceIndexes(segments), tables);
 
   const tokens: IToken[] = [];
   let morphIndex = 0;

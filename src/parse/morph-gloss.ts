@@ -31,7 +31,7 @@
 import { isKindReference, isScaleShared, visitResult } from "./ast-walk.js";
 import { hookJobsByPosition, type HookJob } from "./hook-jobs.js";
 import { JOIN_SERIES } from "./series.js";
-import { classifyAll, hookCompoundGloss, overlayKey, type ClassifyTables } from "./classify.js";
+import { classifyAll, hookCompoundGloss, overlayKey, SAME_ROLE_POS, type ClassifyTables } from "./classify.js";
 import type { ExtraNounHook } from "./hook-compounds.js";
 import type { PublishedRow } from "../lexicon-search.js";
 import { CLOSED, closedDerived, namedEnglish, withLexiconClosedRoots } from "../closed-roots.js";
@@ -875,6 +875,14 @@ function analyzeLine(
     if (options.strict) throw error;
     parsed = undefined;
   }
+  // A listed citation is a same-role word only in a clause, which the parse knows (same-role-words.md).
+  if (parsed) {
+    visitResult(parsed, {
+      word(word) {
+        if (word.reading === "sameRole" && word.at !== undefined && words[word.at]) words[word.at] = word;
+      },
+    });
+  }
 
   const dependentVerbIndexes = new Set<number>();
   const collectClause = (clause: ParseResult["utterances"][number]["bodies"][number]["clause"]): void => {
@@ -1598,7 +1606,12 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
 }
 
 function overlayLabel(overlay: LexOverlay): string {
-  return overlay.gloss;
+  return overlay.pos === SAME_ROLE_POS ? sameRoleLabel(overlay) : overlay.gloss;
+}
+
+/** A same-role word glosses its ending like a hook's: open on **-m**, closed on **-l** (`before.open`, `like.closed`). */
+export function sameRoleLabel(row: { gloss: string; senseForm: string }): string {
+  return `${row.gloss}.${row.senseForm.endsWith("l") ? "closed" : "open"}`;
 }
 
 function packedRoleLemma(

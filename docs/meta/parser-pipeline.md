@@ -143,6 +143,9 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause hing
 | `stimulus` | `stimulus` | need about an unowned noun **`obu`** |
 | `mirative` | `mood` | MIRATIVE expectation map (firm / default / loose) on **`ezu`** |
 | `mention` | `mention` (a `gl-` word right before a written span only) | the mention marker, the *letters* root on **-l** (a word or phrase) and **-n** (a name-string); the bare spelling is the ordinary adjective |
+| `clause_hinge` / `likeness` on `pos` **`cite`** | `sameRole` (inside a clause only) | same-role words *before* **`abam`**, *after* **`alam`**, *while* **`erom`**, *like* **`ewem`**, each on **-m** and **-l**: a citation with no role letter, written bare (no `cite` prefix) |
+
+**`pos` `cite`** marks a same-role word (`same-role-words.md`): the overlay is written as its bare sense form, which every tool spells through `overlaySpelling` / `overlayPrefix` in [`classify.ts`](../../src/parse/classify.ts) (the retie, the cheat sheets, the English helper). A listed word is a same-role word only inside a clause, a sentence with a `/z/` `/d/` `/b/` `/v/` `/h/` or `/th/` word (`markSameRoleWords`, run by the tokenizer; the morph gloss takes it from the parse). Alone, or with only what describes it, it stays the root's ordinary citation (`abam.` *preparation*). The token class is `HookPlain` (branch `sameRole`); right before a `/z/` `/d/` `/v/` blank it is the `SameRolePair` unit, so the pair may come first.
 
 Later splits of `mood` (token class, gloss tag) can follow this column without new English regexes. Special pronouns stay published + gloss, not this table, until they need a parse fork.
 

@@ -10,8 +10,8 @@
  */
 
 import type { ClassifyTables } from "./classify.js";
-import { classify } from "./classify.js";
-import { POINTER_VOWEL, ROLE_PART, REACH_VOWEL, morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine } from "./morph-gloss.js";
+import { classify, SAME_ROLE_POS } from "./classify.js";
+import { POINTER_VOWEL, ROLE_PART, REACH_VOWEL, sameRoleLabel, morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine } from "./morph-gloss.js";
 import type { MorphGlossContext } from "./morph-gloss.js";
 import { parseWords } from "./word.js";
 import { POINT_BACK_HOOKS, TIME_HOOKS, TIME_JOINS } from "./series.js";
@@ -72,6 +72,7 @@ export function buildGlossIndex(tables: ClassifyTables, extraLines: string[] = [
   indexSeriesForms(index, tables);
   indexHookedJoinForms(index, tables);
   indexSayForms(index, tables);
+  indexSameRoleForms(index, tables);
   indexLineForms(index, extraLines, tables);
   return index;
 }
@@ -82,7 +83,13 @@ export function seriesGlossIndex(tables: ClassifyTables): GlossIndex {
   indexSeriesForms(index, tables);
   indexHookedJoinForms(index, tables);
   indexSayForms(index, tables);
+  indexSameRoleForms(index, tables);
   return index;
+}
+
+/** The same-role words (same-role-words.md): a listed citation glosses as its relation only inside a clause. */
+function indexSameRoleForms(index: GlossIndex, tables: ClassifyTables): void {
+  for (const row of tables.overlays.values()) if (row.pos === SAME_ROLE_POS) add(index.forms, sameRoleLabel(row), row.senseForm);
 }
 
 function indexSeriesForms(index: GlossIndex, tables: ClassifyTables): void {

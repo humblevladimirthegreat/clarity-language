@@ -32,6 +32,20 @@ describe("morphGlossLine — join blanks", () => {
   });
 });
 
+describe("morphGlossLine — same-role words (same-role-words.md)", () => {
+  it("glosses a listed citation in a clause like a hook, open on -m and closed on -l", () => {
+    expectLine("zazozon abam zahelan vowurol.", "z-Azozon | before.open | z-Ahelan | v-walk");
+    expectLine("zazozon vowurol erol vazuvol.", "z-Azozon | v-walk | while.closed | v-swim");
+    expectLine("zazozon ewel zahelan vowurol.", "z-Azozon | like.closed | z-Ahelan | v-walk");
+    expectLine("yel abam zar zazozon vowurol.", "y-question | before.open | z-wh | z-Azozon | v-walk");
+  });
+
+  it("keeps a lone listed citation the root's own word", () => {
+    expectLine("abal.", "backpack");
+    expectLine("yal abam.", "y-statement | preparation");
+  });
+});
+
 describe("morphGlossLine — hooked joins (hooked-joins.md#hooked-joins)", () => {
   it("glosses the hook, -x-, the join, and brackets the landmark with it", () => {
     expectLine("zexual blohehal vezuvel.", "[z-at-x-everything | bl-house] | v-sleep");

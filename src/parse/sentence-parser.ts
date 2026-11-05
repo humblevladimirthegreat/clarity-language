@@ -84,6 +84,7 @@ import {
   HookHosting,
   HookPlain,
   ItemHook,
+  SameRolePair,
   V,
   VCont,
   VPlainEnd,
@@ -723,6 +724,7 @@ class AgebenSentenceParser extends CstParser {
       { rule: this.hookUnitPlain, label: "hookUnit", state: "start", end: "closed", kind: "start" },
       { rule: this.hookUnitClosed, label: "hookUnit", state: "start", end: "closed", kind: "start" },
       { rule: this.hookUnitOpen, label: "hookUnit", state: "start", end: "open", kind: "start" },
+      { rule: this.sameRolePair, label: "sameRolePair", state: "start", end: "closed", kind: "start" },
     ];
   }
 
@@ -1476,6 +1478,19 @@ class AgebenSentenceParser extends CstParser {
     });
   }
 
+  /**
+   * A same-role word and the fill-ask blank it relates (`abam zar`, same-role-words.md): one unit, so a phrase of the
+   * blank's role may follow it. Fronted, the pair takes its A from that phrase.
+   */
+  public sameRolePair = this.RULE("sameRolePair", () => {
+    this.CONSUME(SameRolePair, { LABEL: "Hook" });
+    this.OR([
+      { ALT: () => this.CONSUME(JoinZ, { LABEL: "Blank" }) },
+      { ALT: () => this.CONSUME(JoinD, { LABEL: "Blank" }) },
+      { ALT: () => this.CONSUME(JoinV, { LABEL: "Blank" }) },
+    ]);
+  });
+
   /** The zone stance, with what it hosts, as a `/th/` host takes it. */
   private zoneRule(name: string, shape: "any" | "open" | "closed") {
     return this.RULE(name, () => {
@@ -1917,8 +1932,9 @@ function isLabelMarker(marker: NumberMarker): boolean {
 export function markContext(tokens: IToken[]): IToken[] {
   const retype = (token: IToken, type: TokenType | undefined): IToken =>
     type ? { ...token, tokenType: type, tokenTypeIdx: type.tokenTypeIdx! } : token;
+  const paired = tokens.map((token, i) => retype(token, isSameRolePairAt(tokens, i) ? SameRolePair : undefined));
   const out: IToken[] = [];
-  for (const [i, token] of tokens.entries()) out.push(retype(token, hostedType(token, out, tokens.slice(i + 1))));
+  for (const [i, token] of paired.entries()) out.push(retype(token, hostedType(token, out, paired.slice(i + 1))));
   const barred = out.map((token, i) => retype(token, barTypeAt(out, i)));
   const hooked = barred.map((token, i) => retype(token, isItemHookAt(barred, i) ? ItemHook : undefined));
   const continued = hooked.map((token, i) => retype(token, tokenIs(token, V) && isVerbListAt(hooked.slice(0, i)) ? VCont : undefined));
@@ -2117,6 +2133,18 @@ function wTypeAt(tokens: IToken[], at: number): TokenType | undefined {
   return WLeaf[kind][target];
 }
 
+/** A fill-ask blank of a noun or verb: a `/z/`, `/d/` or `/v/` join word on **-r** (questions.md#fill-ask). */
+const PAIR_BLANKS = [JoinZ, JoinD, JoinV];
+
+/** A same-role word right before a blank ({@link SameRolePair}): `abam zar`. */
+function isSameRolePairAt(tokens: IToken[], at: number): boolean {
+  const word = tokens[at]?.payload as LexWord | undefined;
+  if (word?.reading !== "sameRole" || !tokenIs(tokens[at]!, HookPlain)) return false;
+  const next = tokens[at + 1];
+  const blank = next?.payload as LexWord | undefined;
+  return !!next && tokenIs(next, ...PAIR_BLANKS) && blank?.ending === "r";
+}
+
 /**
  * A hook and its `/b/` right before a noun list's join word, or before its bar, after a noun of that slot and what
  * describes it: the hook belongs to that last item (rank-joins.md#shared-after-the-join), not to the clause.
@@ -2175,6 +2203,8 @@ const VP_ITEM_MATERIAL = [
 function isVerbListAt(before: IToken[]): boolean {
   let i = before.length - 1;
   while (before[i] && tokenIs(before[i]!, ...VP_ITEM_MATERIAL)) i -= 1;
+  // A verb blank in a same-role pair (`abam var`) is a unit of its own, not a list's join.
+  if (before[i - 1]?.tokenType === SameRolePair) return false;
   return !!before[i] && tokenIs(before[i]!, V, JoinV);
 }
 
@@ -2556,6 +2586,14 @@ function buildHookUnit(cst: CstNode): Extract<Unit, { kind: "hook" }> {
   };
 }
 
+/** A same-role pair as the two units it stands for: the word, as an in-clause hook, then its blank's phrase. */
+function buildSameRolePair(cst: CstNode): Unit[] {
+  const hook: Unit = { kind: "hook", word: lexWordFromToken(childToken(cst, "Hook")!), modifiers: [] };
+  const blank = lexWordFromToken(childToken(cst, "Blank")!);
+  if (blank.pos === "v") return [hook, { kind: "vp", coord: { parts: [{ items: [], join: blank, shared: [] }] } }];
+  return [hook, { kind: "np", coord: { level: blank.pos === "d" ? "d" : "z", parts: [{ items: [], join: blank, shared: [] }] } }];
+}
+
 function flattenHUnits(cst: CstNode): Unit[] {
   const parts = coordParts(cst, "hCoord", "hCoordPart");
   const units: Unit[] = [];
@@ -2727,6 +2765,8 @@ function buildUnit(cst: CstNode): Unit {
   }
   const hook = childNodes(cst, "hookUnit")[0];
   if (hook) return buildHookUnit(hook);
+  const pair = childNodes(cst, "sameRolePair")[0];
+  if (pair) return buildSameRolePair(pair)[0]!;
   throw new SentenceParseError(`Unhandled unit: ${Object.keys(cst.children).join(",")}`);
 }
 
@@ -2746,6 +2786,8 @@ function expandUnits(cst: CstNode): Unit[] {
   if (h) return flattenHUnits(h);
   const hook = childNodes(cst, "hookUnit")[0];
   if (hook) return [buildHookUnit(hook)];
+  const pair = childNodes(cst, "sameRolePair")[0];
+  if (pair) return buildSameRolePair(pair);
   return [buildUnit(cst)];
 }
 

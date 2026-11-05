@@ -547,6 +547,8 @@ describe("resolve — fill answers (questions.md#fill-ask)", () => {
     assert.deepEqual(answersOf("yel zar vowurol. yal zazozon zahelan zal."), ["sameRole:zar"]);
     assert.deepEqual(answersOf("yel dar zazozon vayebel. yal dodozel."), ["sameRole:dar"]);
     assert.deepEqual(answersOf("yel zar dar vayebel. yal zazozon dodozel."), ["sameRole:zar,dar"]);
+    // Two phrases a same-role word relates fill the blank's role together (same-role-words.md).
+    assert.deepEqual(answersOf("yel zar vowurol. yal zazozon ewem zahelan."), ["sameRole:zar"]);
   });
 
   it("ties nothing when the letters do not match the blanks", () => {

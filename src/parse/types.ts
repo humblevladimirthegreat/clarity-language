@@ -172,6 +172,8 @@ export type LexReading =
   | "overlay"
   /** The mention marker: a `gl-` word right before a written span (span-mention.md#mention). */
   | "mention"
+  /** A same-role relation word: a listed citation between two phrases of one role, `A CITE B` (same-role-words.md). */
+  | "sameRole"
   | "join"
   | "standIn"
   | "standInNamed"

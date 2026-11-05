@@ -243,6 +243,11 @@ export const HookHosting = wordToken("HookHosting", [Hook]);
  * to that last item (rank-joins.md#shared-after-the-join), so no hook unit takes it. Set by `markContext`.
  */
 export const ItemHook = wordToken("ItemHook", [Hook]);
+/**
+ * A same-role word right before a fill-ask blank (`abam zar`): the pair is one unit, so it may come first in the body and
+ * take its A from the same-role phrase after it (same-role-words.md). Not a hook token, so it is never glue. Set by `markContext`.
+ */
+export const SameRolePair = wordToken("SameRolePair");
 /** A written span as a noun-phrase head, by slot. A span with no slot letter keeps the bare category, which no rule takes. */
 export const WritingSpan = wordToken("WritingSpan");
 export const WritingSpanZ = wordToken("WritingSpanZ", [WritingSpan]);
@@ -342,6 +347,7 @@ export const allTokens = [
   HookPlain,
   HookHosting,
   ItemHook,
+  SameRolePair,
   WritingSpan,
   WritingSpanZ,
   WritingSpanD,
@@ -410,12 +416,15 @@ export type TokenBranch =
   | "tagAssign"
   | "clauseAdverb"
   | "content"
+  | "sameRole"
   | "citationFallback";
 
 export function classifyTokenBranch(word: LexWord): { type: AgebenTokenType; branch: TokenBranch } {
   const { family, pos, reading } = word;
 
   if (family.kind === "hook") return { type: HookPlain, branch: "hook" };
+  // A listed citation in a clause stands where a same-role hook does (`zazozon abam zahelan vowurol.`).
+  if (reading === "sameRole") return { type: HookPlain, branch: "sameRole" };
   // A written span fills its PoS slot: `d[…]` / `z[…]` / `b[…]` are NP heads; `v[…]`, `th(…)`, … take the V / H / … slot.
   if (family.kind === "writingSpan") {
     // Under `/y/`: a named span (`y@<Sam>`) calls someone; any other span is the reaction itself.

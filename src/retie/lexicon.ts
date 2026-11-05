@@ -3,6 +3,7 @@
  * choosing `--only` rows, and checking compound parts still name their rows.
  */
 import type { CompoundRow, CompoundValidationError } from "../lexicon-compounds.js";
+import { overlayPrefix } from "../parse/classify.js";
 import { retieCore } from "./rebuild.js";
 
 /**
@@ -14,9 +15,17 @@ export function retieSenseForm(senseForm: string, pos: string, oldRoot: string, 
   if (!oldRoot || oldRoot === newRoot) {
     return senseForm;
   }
-  // Parsed with its PoS, as it is written in a sentence (a bare `waderenel` is not a word).
-  const next = retieCore(`${pos}${senseForm}`, new Map([[oldRoot, newRoot]]));
-  return next?.startsWith(pos) ? next.slice(pos.length) : null;
+  return retieOverlayForm(senseForm, pos, new Map([[oldRoot, newRoot]]));
+}
+
+/**
+ * An overlay sense form respelled through `map`, parsed as it is written in a sentence: with its PoS letter (a bare
+ * `waderenel` is not a word), or bare for a same-role word (`abam`). `null` when nothing in it moves.
+ */
+export function retieOverlayForm(senseForm: string, pos: string, map: ReadonlyMap<string, string>): string | null {
+  const prefix = overlayPrefix(pos);
+  const next = retieCore(`${prefix}${senseForm}`, map);
+  return next?.startsWith(prefix) ? next.slice(prefix.length) : null;
 }
 
 /** Whether a lexicon CSV row is one `--only` names (by concrete label, emoji or root); every row when none are given. */

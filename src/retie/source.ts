@@ -14,7 +14,7 @@ import type { ClassifyTables } from "../parse/classify.js";
 import { parseWord } from "../parse/word.js";
 
 import { followPairs, type FollowPairs } from "./follow.js";
-import { retieCore } from "./rebuild.js";
+import { retieOverlayForm } from "./lexicon.js";
 import { contentStemRoots } from "./resume.js";
 import { rewriteMarkdown, type RetieReview } from "./markdown.js";
 import { resumeRewrite, rewritePlainTokens, type RetieChange } from "./tokens.js";
@@ -269,9 +269,9 @@ function rewriteLiteral(literal: SourceLiteral, isTest: boolean, realLexicon: bo
   const overlayId = OVERLAY_ID_RE.exec(decoded.value);
   if (overlayId) {
     const [, senseForm, pos] = overlayId;
-    const next = retieCore(`${pos}${senseForm}`, ctx.map);
-    if (next?.startsWith(pos!) && next !== `${pos}${senseForm}`) {
-      result.value = `overlay.${next.slice(pos!.length)}.${pos}`;
+    const next = retieOverlayForm(senseForm!, pos!, ctx.map);
+    if (next && next !== senseForm) {
+      result.value = `overlay.${next}.${pos}`;
       result.changes.push({ from: decoded.value, to: result.value, index });
     }
     return result;

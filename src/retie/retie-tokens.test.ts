@@ -579,6 +579,8 @@ describe("source literals (2026-09-28 fixes)", () => {
   it("moves an overlay construction id with its sense form", () => {
     const { text } = rewriteSourceLiterals('expect("overlay.emam.th");\n', "x.test.ts", ctx);
     assert.equal(text, 'expect("overlay.ibibim.th");\n');
+    // A same-role word's id (`cite`) spells its sense form bare, with no role letter.
+    assert.equal(rewriteSourceLiterals('expect("overlay.emam.cite");\n', "x.test.ts", ctx).text, 'expect("overlay.ibibim.cite");\n');
   });
 
   it("reties an escaped literal around its escapes, and reports a word the tokenizer could not reach", () => {

@@ -17,7 +17,7 @@ import { parseOverlayCsv, parsePublishedCsv, type OverlayRow, type PublishedRow 
 import { createClassifyTablesFromRows, type ClassifyTables } from "../parse/classify.js";
 import { REPO_ROOT } from "../repo-paths.js";
 
-import { retieCore } from "./rebuild.js";
+import { retieOverlayForm } from "./lexicon.js";
 
 export type RetieTables = { old: ClassifyTables; current: ClassifyTables };
 
@@ -67,8 +67,7 @@ function shiftSenseForm(row: OverlayRow, rootByEmoji: ReadonlyMap<string, string
   const from = row.emoji ? rootByEmoji.get(row.emoji) : undefined;
   const to = from === undefined ? undefined : map.get(from);
   if (from === undefined || to === undefined) return row.senseForm;
-  const next = retieCore(`${row.pos}${row.senseForm}`, new Map([[from, to]]));
-  return next?.startsWith(row.pos) ? next.slice(row.pos.length) : row.senseForm;
+  return retieOverlayForm(row.senseForm, row.pos, new Map([[from, to]])) ?? row.senseForm;
 }
 
 function tablesOf(rows: Rows): ClassifyTables {

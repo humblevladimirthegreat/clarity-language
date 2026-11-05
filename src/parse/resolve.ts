@@ -981,7 +981,9 @@ function fillAnswers(utterances: Utterance[], asks: AskRecord[]): AnswerRecord[]
     }
     const units = body.clause.units;
     if (units.some((unit) => unit.kind === "vp") || !blanks.every(nounBlank)) return;
-    const levels = units.flatMap((unit) => (unit.kind === "np" ? [unit.coord.level] : []));
+    // A same-role word relates two phrases of the blank's role, so they fill it together (`zazozon ewem zahelan.`, same-role-words.md).
+    if (units.some((unit) => unit.kind === "hook" && unit.word.reading !== "sameRole")) return;
+    const levels = [...new Set(units.flatMap((unit) => (unit.kind === "np" ? [unit.coord.level] : [])))];
     const wanted = blanks.map((blank) => blank.pos);
     if (levels.length === wanted.length && wanted.every((pos) => levels.includes(pos as NpCoord["level"]))) {
       answers.push({ utteranceIndex: i, askIndex: i - 1, form: "sameRole", blanks });
