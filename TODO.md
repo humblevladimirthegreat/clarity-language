@@ -16,7 +16,8 @@ use [skip-cd] for amplify to not deploy.
 -prioritize the size vowel over distinctness
 -should any other cheat sheets be added?
 -consider grouping lessons into categories/units
--should vowel pitch be very forgiving at beginning (contour only)?
+-citation forms in sentences are hooks/prepositions (closed), includes hooked joins
+-should vowel pitch checker be very forgiving at beginning (check contour only rather than pitch matching)?
 -more stacked vowels (other series)
 -replace "one" special pronoun with unassigned tag, use tags in first order logic. zw*n for anonymous naming "Some person whom we will call zwan"
 -programming language
