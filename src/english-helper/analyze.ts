@@ -8,12 +8,13 @@
  */
 import type { EnglishEntry } from "../find/english.js";
 import { searchEnglish } from "../find/english.js";
+import { CLOSED } from "../closed-roots.js";
 import type { Band } from "../lint/learning-order.js";
 import { BANDS } from "../lint/learning-order.js";
 import { markerToSpeech, digitsToSyllables } from "../tts/numbers.js";
 import { COUNT_SLOT, grammarPath, matchCues, RANK_SLOT, resolveLink, type CueIndex, type GrammarJob } from "./cues.js";
 import type { CompoundRow } from "../lexicon-compounds.js";
-import { BOUNDABLE_JOINS, BOUNDABLE_RESTRICTORS, COMPOUND_LINKS, FEELING_LINKS, HOLDER_FEELING, HOLDER_LINKS, holderHost, stanceOwner, detectClause, detectClauseOpener, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAKE_ENDINGS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
+import { BOUNDABLE_JOINS, BOUNDABLE_RESTRICTORS, COMPOUND_LINKS, DEFAULT_HOLDER_CHANNEL, FEELING_LINKS, HOLDER_CHANNELS, HOLDER_FEELING, HOLDER_LINKS, holderHost, stanceOwner, detectClause, detectClauseOpener, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAKE_ENDINGS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
 import { lookupLexicon, rootsByForm, sideEnding, type LexiconIndex, type LexiconSuggestion } from "./lexicon.js";
 import { doerVerb, tagEnglish, type ClauseFeatures, type TaggedTerm, type WordClass } from "./tag.js";
 import { lookupRoute, lookupWordnet, senseSuggestions, type RouteClass, type WordnetIndex, type WordnetPos } from "./wordnet-index.js";
@@ -189,11 +190,84 @@ const OWNER_SKIP = new Set<WordClass>(["adverb", "auxiliary", "modal", "negative
 /** Copulas: an adjective's owner is the subject before them (*Alazun is anxious*, *Alazun seems upset*). */
 const COPULAS = new Set(["be", "seem", "look", "feel", "appear", "sound", "become", "get", "grow"]);
 
-/** Whose stance a word at `i` reports: the subject or possessor right before it, past {@link OWNER_SKIP} words and copulas. */
-function ownerAt(terms: readonly TaggedTerm[], i: number): "speaker" | "other" | undefined {
+/** The word a stance at `i` belongs to: the subject or possessor right before it, past {@link OWNER_SKIP} words and copulas; -1 for none. */
+function ownerIndex(terms: readonly TaggedTerm[], i: number): number {
   let j = i - 1;
   while (j >= 0 && (OWNER_SKIP.has(terms[j]!.cls) || (terms[j]!.cls === "verb" && COPULAS.has(terms[j]!.lemma)))) j--;
+  return j;
+}
+
+/** Whose stance a word at `i` reports: the speaker, someone else, or unknown. */
+function ownerAt(terms: readonly TaggedTerm[], i: number): "speaker" | "other" | undefined {
+  const j = ownerIndex(terms, i);
   return j >= 0 ? stanceOwner(terms[j]!) : undefined;
+}
+
+const LISTENER_WORDS = new Set(["you", "your", "yours"]);
+const RESUMED_WORDS = new Set(["he", "him", "his", "she", "her", "hers", "they", "them", "their", "theirs", "hor", "thom"]);
+
+/**
+ * The person a holder word names, as the noun after its seam ([holder](holder.md#holder)): a name
+ * on **-n**, *you* as the listener, *he* / *she* / *they* as **-r** on the last name before it, a
+ * common noun's root on **-l**. Undefined when none applies, so the row keeps its pattern.
+ */
+function holderNoun(data: HelperData, owner: TaggedTerm, earlier: readonly TaggedTerm[]): string | undefined {
+  if (LISTENER_WORDS.has(owner.normal)) return `${CLOSED.headphones}n`;
+  if (RESUMED_WORDS.has(owner.normal)) {
+    const name = [...earlier].reverse().map((t) => (t.proper ? nameRoot(data, t) : undefined)).find(Boolean);
+    return name && `${name.form}r`;
+  }
+  if (owner.cls !== "noun") return undefined;
+  if (owner.proper) {
+    const name = nameRoot(data, owner);
+    return name && `${name.form}n`;
+  }
+  const root = lookupLexicon(data.lexicon, [owner.lemma, owner.normal]).find((s) => s.tier === "root" && s.side !== "abstract");
+  return root && `${root.form}l`;
+}
+
+/** The `/th/` word a channel or MAY gloss names (`CLUES` → its overlay row on `/th/`). */
+function channelHost(data: HelperData, gloss: string): string | undefined {
+  const row = lookupLexicon(data.lexicon, [gloss]).find((s) => s.tier === "overlay" && s.pos === "th");
+  return row && `th${row.form}`;
+}
+
+/** The channel the sentence's English names for someone else's mind ({@link HOLDER_CHANNELS}), else the default. */
+function holderChannel(text: string): { gloss: string; named: boolean } {
+  const lower = ` ${text.toLowerCase().replace(/[^a-z' ]+/g, " ")} `;
+  for (const [gloss, cues] of HOLDER_CHANNELS) if (cues.some((c) => lower.includes(` ${c} `))) return { gloss, named: true };
+  return { gloss: DEFAULT_HOLDER_CHANNEL, named: false };
+}
+
+/**
+ * Spell a holder row with the sentence's own owner and way of knowing: each holder word takes the
+ * owner's noun after its seam, and the alternative on the channel the English names leads (one
+ * is built on that channel when the row has none). With no owner noun, the pattern stays.
+ */
+function spellHolder(data: HelperData, job: JobSuggestion, owner: TaggedTerm | undefined, earlier: readonly TaggedTerm[], text: string): void {
+  const noun = owner ? holderNoun(data, owner, earlier) : undefined;
+  const { gloss, named } = holderChannel(text);
+  const lead = channelHost(data, gloss);
+  const respell = (piece: string, host?: string) =>
+    piece
+      .split(/\s+/)
+      .map((w) => {
+        const h = holderHost(w);
+        return h ? `${host ?? h}${noun ?? w.slice(h.length)}` : w;
+      })
+      .join(" ");
+  let pieces = job.form.split(" / ").map((p) => respell(p));
+  const hosted = (p: string) => p.split(/\s+/).some((w) => holderHost(w) === lead);
+  if (lead && named && !pieces.some(hosted)) {
+    const template = job.form.split(" / ").find((p) => p.split(/\s+/).some((w) => holderHost(w)));
+    if (template) pieces = [respell(template, lead), ...pieces];
+  }
+  pieces = [...pieces.filter(hosted), ...pieces.filter((p) => !hosted(p))];
+  const phrase = pieces.join(" / ");
+  if (phrase === job.form) return;
+  const words = phrase.split(/ \/ |\s+/);
+  if (data.wordParses && !words.every((w) => data.wordParses!(w))) return;
+  job.phrase = phrase;
 }
 
 /**
@@ -763,6 +837,7 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
   for (const sentence of tagEnglish(text)) {
     const outer: TaggedTerm[] = [];
     const sentenceStart = clauses.length;
+    const sentenceText = sentence.clauses.map((c) => c.text).join(" ");
     for (const clause of sentence.clauses) {
       const terms = clause.terms;
       const roleOf = (k: number) => classRole(terms, k, outer);
@@ -795,6 +870,10 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
           const phrase = run.some((r) => r.cls === "number") ? numberCuePhrase(data, j, run, nounFollows(terms, end)) : undefined;
           const job: JobSuggestion = { ...j, kind: "job", tier: "grammar", ...(phrase ? { phrase } : {}) };
           spellJoinVowel(data, job, terms, end, roleOf);
+          if (HOLDER_LINKS.includes(job.link)) {
+            const j = ownerIndex(terms, i);
+            spellHolder(data, job, j >= 0 ? terms[j] : undefined, [...outer, ...terms.slice(0, Math.max(j, 0))], sentenceText);
+          }
           return job;
         });
         // A cue run through a number (*five or more*) still names the number's own section.

@@ -2,26 +2,26 @@
   "sets": {
     "doc": {
       "sentences": 1262,
-      "selfContained": 58.2,
+      "selfContained": 58.4,
       "wordInPrompt": 78.2,
       "rootTop1Open": 83.8,
       "closedRowFirst": 55.3,
       "rootAnywhere": 91.4,
       "constructionPage": 42.7,
       "gapRate": 3.4,
-      "promptChars": 14591
+      "promptChars": 14597
     },
     "checkpoint": {
       "sentences": 444,
-      "selfContained": 64.2,
-      "wordInPrompt": 78.1,
+      "selfContained": 64.6,
+      "wordInPrompt": 78.2,
       "rootTop1Open": 91.9,
       "closedRowFirst": 58.7,
       "rootAnywhere": 94.3,
       "constructionPage": 45.6,
       "gapRate": 2.9,
       "promptChars": 14493,
-      "stagedSelfContained": 63.7,
+      "stagedSelfContained": 64.2,
       "verifyPrecision": 91,
       "verifyRecall": 99.6
     },

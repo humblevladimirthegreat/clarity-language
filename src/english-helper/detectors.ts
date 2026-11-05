@@ -89,6 +89,20 @@ export const SAKE_ENDINGS: Readonly<Record<string, { l: string[]; r: string[] }>
   e: { l: ["invited", "asked for"], r: ["worth a try", "try", "to see whether"] },
 };
 
+/**
+ * English that says how you know someone else's mind, by the channel or MAY gloss
+ * (lexicon-overlays.csv) the holder word leads with ([holder](holder.md#holder)). Checked in this
+ * order, so *rumor has it* beats a plain report. With no cue, {@link DEFAULT_HOLDER_CHANNEL} leads:
+ * *I gather* claims less than hearsay.
+ */
+export const HOLDER_CHANNELS: ReadonlyArray<readonly [gloss: string, cues: readonly string[]]> = [
+  ["REPORTED.weak", ["rumor has it", "rumour has it"]],
+  ["REPORTED", ["apparently", "they say", "i hear", "i heard", "reportedly"]],
+  ["CLUES", ["seems", "seem", "seemed", "looks like", "i gather", "it sounds like", "must be"]],
+  ["MAY", ["maybe", "perhaps", "might"]],
+];
+export const DEFAULT_HOLDER_CHANNEL = "CLUES";
+
 /** A listed compound reached from its parts, and a live `x` compound built from them. */
 export const COMPOUND_LINKS = { listed: "compounds.md#dictionary-compounds", live: "compound-families.md#ordinary-compound-order" } as const;
 

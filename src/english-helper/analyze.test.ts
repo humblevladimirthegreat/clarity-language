@@ -4,6 +4,8 @@ import { describe, it } from "node:test";
 
 import { analyzeEnglish, slotTier, type ClassSuggestion, type JobSuggestion, type LiveSuggestion, type RoleSuggestion, type RootSuggestion, type Slot } from "./analyze.js";
 import { checkCase, parseCases } from "./cases.js";
+import { CLOSED } from "../closed-roots.js";
+import { holderHost } from "./detectors.js";
 import { lookupLexicon } from "./lexicon.js";
 import { loadHelperData } from "./load.js";
 import { WORDNET_INDEX_VERSION, type WordnetIndex } from "./wordnet-index.js";
@@ -27,6 +29,24 @@ describe("cases.tsv", () => {
 });
 
 describe("analyzeEnglish on the real docs and lexicon", () => {
+  const holderPhrase = (text: string, slot: string) =>
+    slots(text)
+      .find((s) => s.text === slot)!
+      .suggestions.find((s): s is JobSuggestion => s.kind === "job" && s.link === "want.md#whose-intention")!.phrase!;
+  const hosts = (phrase: string) => phrase.split(" / ").map((p) => holderHost(p.split(" ")[0]!));
+  const channel = (gloss: string) => `th${lookupLexicon(data.lexicon, [gloss]).find((s) => s.tier === "overlay" && s.pos === "th")!.form}`;
+
+  it("spells a holder with the sentence's own owner", () => {
+    assert.ok(holderPhrase("Alazun wants to walk.", "wants to").split(" / ").every((p) => p.split(" ")[0]!.endsWith(`${CLOSED.lion}n`)));
+    assert.ok(holderPhrase("Azozon says that he wants to sing.", "wants to").split(" / ").every((p) => p.split(" ")[0]!.endsWith(`${CLOSED.swan}r`)));
+  });
+
+  it("leads a holder with the way of knowing the English names, else CLUES", () => {
+    assert.equal(hosts(holderPhrase("Alazun wants to walk.", "wants to"))[0], channel("CLUES"));
+    assert.equal(hosts(holderPhrase("Apparently Alazun wants to walk.", "wants to"))[0], channel("REPORTED"));
+    assert.equal(hosts(holderPhrase("Rumor has it Alazun wants to walk.", "wants to"))[0], channel("REPORTED.weak"));
+  });
+
   it("suggests a root with the word its role spells", () => {
     const dog = slots("Azozon sees a dog.").find((s) => s.text === "dog")!;
     const root = dog.suggestions.find((s): s is RootSuggestion => s.kind === "lexicon")!;

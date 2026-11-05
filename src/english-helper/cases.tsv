@@ -177,3 +177,5 @@ His motive is money.	motive	link:holder.md#holder	a possessor's motive takes a h
 Alazun is upset.	upset	has:holder-feeling	someone else's feeling takes a holder
 Alazun seems upset.	upset	has:holder-feeling	the owner is found past a copula verb
 I am upset.	upset	not:holder.md#holder	the speaker's own feeling takes no holder
+# The holder spelled with the owner
+You want to sing.	want to	form:theyomawan	the listener as holder is the listener special pronoun
