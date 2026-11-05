@@ -96,4 +96,10 @@ describe("matchCues", () => {
     assert.deepEqual(matchCues(numbered, normals, normals, numbers).map((m) => [m.start, m.end, m.key]), [[1, 4, "at least #n"], [6, 9, "#o through last"]]);
     assert.deepEqual(matchCues(numbered, normals, normals), []);
   });
+
+  it("lets a longer cue match on its first word's lemma", () => {
+    const led: CueIndex = new Map([["want to", []]]);
+    assert.deepEqual(matchCues(led, ["azozon", "wanted", "to", "walk"], ["azozon", "want", "to", "walk"]).map((m) => [m.start, m.end, m.key]), [[1, 3, "want to"]]);
+    assert.deepEqual(matchCues(led, ["to", "wanted"], ["to", "want"]), []);
+  });
 });

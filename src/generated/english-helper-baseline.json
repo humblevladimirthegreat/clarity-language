@@ -2,14 +2,14 @@
   "sets": {
     "doc": {
       "sentences": 1249,
-      "selfContained": 56.7,
+      "selfContained": 56.9,
       "wordInPrompt": 77.8,
       "rootTop1Open": 83.7,
-      "closedRowFirst": 52.7,
+      "closedRowFirst": 53,
       "rootAnywhere": 91.1,
-      "constructionPage": 42.8,
+      "constructionPage": 42.7,
       "gapRate": 3.5,
-      "promptChars": 14540
+      "promptChars": 14534
     },
     "checkpoint": {
       "sentences": 437,
@@ -18,7 +18,7 @@
       "rootTop1Open": 91.8,
       "closedRowFirst": 55.3,
       "rootAnywhere": 94.1,
-      "constructionPage": 45.9,
+      "constructionPage": 45.8,
       "gapRate": 2.9,
       "promptChars": 14403,
       "stagedSelfContained": 62,

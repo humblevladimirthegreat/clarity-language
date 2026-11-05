@@ -143,7 +143,8 @@ export type CueMatch = { start: number; end: number; key: string; jobs: GrammarJ
 /**
  * Cue runs in a clause, longest first, without overlap. `normals` are the words as written;
  * `numbers` holds each number word's placeholder ({@link COUNT_SLOT}, {@link RANK_SLOT}), so *at least five* matches *at least 5*;
- * `lemmas` let a one-word cue match an inflected form (*dogs* → *dog*). A word that is a cue of
+ * `lemmas` let a cue match an inflected form: a one-word cue the whole word (*dogs* → *dog*), a longer
+ * cue its first word (*wanted to* → *want to*). A word that is a cue of
  * its own and inflects one (*becoming*, *become*) gets both cues' jobs, its own first.
  */
 export function matchCues(index: CueIndex, normals: readonly string[], lemmas: readonly string[], numbers: readonly (string | undefined)[] = []): CueMatch[] {
@@ -155,7 +156,8 @@ export function matchCues(index: CueIndex, normals: readonly string[], lemmas: r
       const window = normals.slice(i, i + len);
       const slotted = window.map((w, k) => numbers[i + k] ?? w);
       const numbered = slotted.some((w, k) => w !== window[k]) && slotted.some((w) => w !== COUNT_SLOT && w !== RANK_SLOT) ? [slotted.join(" ")] : [];
-      const keys = [...new Set([window.join(" "), ...numbered, ...(len === 1 ? [lemmas[i]!] : [])])].filter((k) => index.has(k));
+      const lemmaLed = len === 1 ? [lemmas[i]!] : lemmas[i] && lemmas[i] !== window[0] ? [[lemmas[i]!, ...window.slice(1)].join(" ")] : [];
+      const keys = [...new Set([window.join(" "), ...numbered, ...lemmaLed])].filter((k) => index.has(k));
       const key = keys[0];
       if (!key) continue;
       out.push({ start: i, end: i + len, key, jobs: keys.flatMap((k) => index.get(k)!) });
