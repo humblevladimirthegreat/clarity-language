@@ -85,3 +85,117 @@ Beginner already used single-item *just X* and standalone *nothing* / *everythin
 | **…ar** (`zar` / …) | unspecified empty add | *something* / *someone* |
 | **…er** (`zer` / …) | unspecified empty menu | *anything* / *anyone* |
 | **…ur** (`zur` / …) | unspecified empty leftover | *something else* / *someone else* |
+
+### Practice {#intermediate-practice}
+
+Short drills for Intermediate. Try each item before opening **Show answer**.
+
+**Setting:** a garden party
+
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *cheese* | `ehedel` | 🧀 |
+| *bee* | `ubezal` | 🐝 |
+
+**Review:**
+
+| English | Ageben |
+|---------|--------|
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
+| *Ahelan* | `ahelan` |
+| *bread* | `obodel` |
+| *sandwich* | `edal` |
+| *eat* | `vagedal` |
+
+#### English → Ageben {#intermediate-english-to-ageben}
+
+**1.** *Azozon eats cheese and/or bread.*
+
+::: details Show answer
+`zazozon dehedel dobodel dael vagedal.`
+
+z-Azozon | [d-cheese | d-bread | d-and/or] | v-eat
+:::
+
+**2.** *Alazun doesn't eat both the sandwich and the cheese.*
+
+::: details Show answer
+`zalazun dedal dehedel dal dul vagedal.`
+
+z-Alazun | [[d-sandwich | d-cheese | d-and] | d-not] | v-eat
+:::
+
+**3.** *A sandwich is enough.*
+
+::: details Show answer
+`zedal zael.`
+
+[z-sandwich | z-and/or]
+:::
+
+**4.** *Something other than a bee is eating the cheese.*
+
+::: details Show answer
+`zubezal zur dehedel vagedal.`
+
+[z-bee | z-something-else] | d-cheese | v-eat
+:::
+
+#### Ageben → English {#intermediate-ageben-to-english}
+
+**1.** `zazozon dedal dobodel dul vagedal.`
+
+::: details Show answer
+z-Azozon | [d-sandwich | d-bread | d-not] | v-eat
+
+*Azozon eats neither the sandwich nor the bread.*
+:::
+
+**2.** `zobodel zehedel zel zul.`
+
+::: details Show answer
+[[z-bread | z-cheese | z-or-exactly-one] | z-not]
+
+*not exactly one of the bread and the cheese* (both, or neither)
+:::
+
+**3.** `zahelan der vagedal.`
+
+::: details Show answer
+z-Ahelan | d-anything | v-eat
+
+*Ahelan eats anything.*
+:::
+
+**4.** `zalazun dobodel duel vagedal.`
+
+::: details Show answer
+z-Alazun | [d-bread | d-anything-but] | v-eat
+
+*Alazun eats anything but the bread.*
+:::
+
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Not both the cheese and the bread.* (one of them is fine) `zehedel zobodel zal zul.` or `zehedel zobodel zul.`
+
+::: details Show answer
+`zehedel zobodel zal zul.`
+
+[[z-cheese | z-bread | z-and] | z-not]
+
+The inner **`zal`** closes the list first, so **`zul`** denies the pair as a whole. Without it, **`zul`** denies each item: *neither cheese nor bread*.
+:::
+
+**2.** *At least a sandwich.* (more would be welcome) `zedal zaem.` or `zedal zael.`
+
+::: details Show answer
+`zedal zaem.`
+
+[z-sandwich | z-and/or.open]
+
+Open **`zaem`** sets a floor; closed **`zael`** says the sandwich is enough.
+:::

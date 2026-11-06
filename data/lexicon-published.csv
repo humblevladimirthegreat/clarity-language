@@ -370,7 +370,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🦋,butterfly,avezo,creature,order,small,,,,,
 🐛,bug,abezu,creature,takes-away,small,flaw,a computer bug makes a program go wrong,,error; insect,span-nesting.md#advanced-practice
 🐜,ant,eneza,creature,holds,small,diligence,ants work with diligence,,,plurality.md#beginner-practice
-🐝,bee,ubeza,creature,holds,small,,,,,
+🐝,bee,ubeza,creature,holds,small,,,,,set-joins.md#intermediate-practice
 🪲,beetle,obeze,creature,one,small,hardiness,a beetle's hard shell shrugs off hits,,solid; hard; firm; firmly,
 🐞,ladybug,oleze,creature,one,small,luck,"a ladybug landing is taken as a good chance; luck is when it went well by chance, not a charm you have",,lucky; fortune; fortunate,
 🦗,grasshopper,ageze,creature,one,small,,,,,
@@ -456,7 +456,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🥯,bagel,emede,food,one,small,,,,,
 🥞,pancake,abede,food,one,small,flattening,pancake flattens under pressure,,flat; thin; smooth,
 🧇,waffle,awede,food,one,small,indecision,a waffle is cooked by turning; indecision is turning from one side to the other,,,
-🧀,cheese,ehede,food,one,small,,,,,
+🧀,cheese,ehede,food,one,small,,,,,set-joins.md#intermediate-practice
 🍖,meat,umude,food,one,none,substance,meat of the matter is substance,,protein; flesh,
 🍗,drumstick,odedo,food,order,small,,,,,
 🥩,steak,ezede,food,one,small,seriousness,steak dinner is serious business,,serious,
@@ -1116,7 +1116,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🟣,purple,abulo,nature,order,none,royalty,purple circle marks regal hue; royalty is high noble rank,,,
 🟤,brown,abule,nature,one,none,earthiness,brown circle is soil and wood; earthiness is plain grounded quality,,,
 ⚫,black,ubule,nature,one,none,,,,,resume-sense.md#intermediate-practice
-⚪,white,ewule,nature,one,none,,,,pale,
+⚪,white,ewule,nature,one,none,,,,pale,rank-joins.md#intermediate-practice
 🟫,ground,agula,nature,holds,none,,,,soil; land,
 🟩,field,evaha,place,holds,big,,,,,
 🩶,gray,agule,nature,one,none,,,,,evidentiality.md#intermediate-practice

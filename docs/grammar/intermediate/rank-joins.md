@@ -116,6 +116,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *veil* | `ovobul` | 👰 |
 | *dress* | `edobal` | 👗 |
 | *kiss* | `veguyal` | 💏 |
+| *white* | `ewulel` | ⚪ |
 
 **Review:**
 
@@ -127,7 +128,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *wine* | `owudal` |
 | *beer* | `urudal` |
 | *walk* | `vowurol` |
-| *punch* | `vabuvul` |
 | *see* | `vayebel` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
@@ -138,6 +138,22 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 `zazozon zalazun zaol veguyal.`
 
 [z-Azozon | z-Alazun | z-in-order] | v-kiss
+:::
+
+**2.** *Ahelan sees everything but the ring and the dress.*
+
+::: details Show answer
+`zahelan dorebel dedobal dual vayebel.`
+
+z-Ahelan | [d-ring | d-dress | d-everything-but] | v-see
+:::
+
+**3.** *Azozon, Ahelan, and Alazun walk, from last to first.*
+
+::: details Show answer
+`zazozon zahelan zalazun zuol vowurol.`
+
+[z-Azozon | z-Ahelan | z-Alazun | z-rank/less] | v-walk
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
@@ -158,6 +174,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Ahelan last*
 :::
 
+**3.** `zowudal zor.`
+
+::: details Show answer
+[z-wine | z-whatever-ranks]
+
+*preferably some wine*
+:::
+
 #### Pick one {#intermediate-pick-one}
 
 **1.** *Ahelan, then Alazun, then Azozon.* (a turn order) `zahelan zalazun zazozon zaol.` or `zahelan zalazun zazozon zol.`
@@ -168,4 +192,24 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-Ahelan | z-Alazun | z-Azozon | z-in-order]
 
 Route **`ao`** makes the first item the start; rank **`o`** would make it the most important.
+:::
+
+**2.** *The dress is as white as the veil.* `zedobal zovobul zoel gewulel.` or `zedobal zovobul zol gewulel.`
+
+::: details Show answer
+`zedobal zovobul zoel gewulel.`
+
+[z-dress | z-veil | z-equal-rank | g-white]
+
+The tie **`oe`** puts the two on a par; rank **`o`** would make the dress the whiter one.
+:::
+
+**3.** *Anything but beer.* (any other drink is fine) `zurudal zuel.` or `zurudal zul.`
+
+::: details Show answer
+`zurudal zuel.`
+
+[z-beer | z-anything-but]
+
+The invert **`ue`** offers a free choice outside the list; plain **`u`** only says *not beer*.
 :::
