@@ -17,7 +17,7 @@ Not yet posted. Read the owning grammar page before drafting.
 * **Residue and former** (`residue-and-former.md`): marks what is left over from an earlier state.
 * **Enough and too** (`bars.md`): the standard for "enough" and "too" is tied to a sake and made explicit.
 * **Ability and incapability, try and fallback** (`can-and-cant.md`, `try.md`): "can't" and "won't" can't blur together. Follow-up to Revamped Intentions.
-* **Rhetorical questions and quizzes** (`rhetorical-questions.md`): a question that doesn't ask for information is marked as such.
+* **Rhetorical questions and quizzes** (`more-turn-words.md`): a question that doesn't ask for information is marked as such.
 * **Tone marks and speech manner** (`tone-marks.md`, `speech-manner.md`): sarcasm or gentleness built into the grammar.
 * **Firm and soft** (`firm-soft.md`): commands, requests and statements softened or hardened by a grammatical marker.
 * **Wizard sandbox game** (`wizard-game.md`): a game whose content is written as morph gloss. About the project, not one feature.

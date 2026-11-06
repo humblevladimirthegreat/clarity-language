@@ -120,7 +120,7 @@ Soft **`yam yel`** muses rather than insists: you lean toward an answer but put 
 
 The listener may still reply, but no reply is owed.
 
-**Compare with:** a [check-back](polar-inventory.md#check-backs) after the sentence (`yel yaol.` after a claim) asks the listener to confirm. A rhetorical question asks for nothing.
+**Compare with:** a [check-back](/questions#polar-particle) after the sentence (`yel yaol.` after a claim) asks the listener to confirm. A rhetorical question asks for nothing.
 
 ### Quiz {#quiz}
 
@@ -153,7 +153,7 @@ A question can also sound like a command or a prohibition. It still asks, and th
 >
 > "You're not leaving, are you?" (a real question; you hope not)
 
-**Compare with:** **`yul yel`** puts the prohibition first. It forbids and only sounds like a question (*Must you?*), so no answer is owed. **`yel yul`** really asks, and shows which answer you want. A [check-back](polar-inventory.md#check-backs) asks the listener to confirm a claim you have already made.
+**Compare with:** **`yul yel`** puts the prohibition first. It forbids and only sounds like a question (*Must you?*), so no answer is owed. **`yel yul`** really asks, and shows which answer you want. A [check-back](/questions#polar-particle) asks the listener to confirm a claim you have already made.
 
 **`yel yol`** and the quiz both insist on an answer. In the quiz you know it already; here you do not.
 
@@ -203,6 +203,13 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a music rehearsal
 
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *clap* | `vaguyal` | 👏 |
+| *laugh* | `valamal` | 😂 |
+
 **Review:**
 
 | English | Ageben |
@@ -213,6 +220,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *surprise* | `emel` |
 | *quiet* | `ugowul` |
 | *angry* | `onumul` |
+| *listener* | `awan` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -246,6 +254,22 @@ y-command | y-command | v-stop
 `yol gugowul.`
 
 y-command | g-quiet
+:::
+
+**5.** *Who even claps?* (nobody does)
+
+::: details Show answer
+`yal yel zar vaguyal.`
+
+y-statement | y-question | z-wh | v-clap
+:::
+
+**6.** *Tell me who stopped.* (an answer is required)
+
+::: details Show answer
+`yel yol ? zar vezohul.`
+
+y-question | y-command | ? | z-wh | v-stop
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
@@ -282,6 +306,22 @@ y-prohibition | g-angry
 *Don't be angry!*
 :::
 
+**5.** `yel yal ? zar valamal.`
+
+::: details Show answer
+y-question | y-statement | ? | z-wh | v-laugh
+
+*So who laughed?* (I know who; you say it)
+:::
+
+**6.** `yel yul ? zawan vaguyal.`
+
+::: details Show answer
+y-question | y-prohibition | ? | z-listener | v-clap
+
+*You're not clapping, are you?* (a real question; you hope not)
+:::
+
 #### Pick one {#intermediate-pick-one}
 
 **1.** *Go ahead, stop.* (sarcastic) `yul yol vezohul.` or `yol yol vezohul.`
@@ -292,6 +332,16 @@ y-prohibition | g-angry
 y-prohibition | y-command | v-stop
 
 Two different act words stack as one sarcastic turn; repeating **`yol`** only insists on the command.
+:::
+
+**2.** *Who laughs?* (nobody does; no reply is owed) `yal yel zar valamal.` or `yel yal ? zar valamal.`
+
+::: details Show answer
+`yal yel zar valamal.`
+
+y-statement | y-question | z-wh | v-laugh
+
+A rhetorical question puts the statement word first; **`yel yal`** is a quiz and wants the answer said.
 :::
 
 #### Fix it {#intermediate-fix-it}

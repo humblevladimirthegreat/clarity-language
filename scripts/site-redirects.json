@@ -209,6 +209,11 @@
       "from": "/grammar/prescription.html",
       "to": "/grammar/for-a-sake.html",
       "note": "Public URL after renaming prescription.md to for-a-sake.md."
+    },
+    {
+      "from": "/grammar/rhetorical-questions.html",
+      "to": "/grammar/more-turn-words.html",
+      "note": "Public URL after merging rhetorical-questions.md into more-turn-words.md."
     }
   ]
 }

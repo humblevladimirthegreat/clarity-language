@@ -73,7 +73,6 @@ export const intermediateLessons = [
   { text: 'List verbs', link: '/list-verbs' },
   { text: 'With and without', link: '/join-relations' },
   { text: 'Yes, no, and not that', link: '/polar-inventory' },
-  { text: 'Rhetorical questions', link: '/rhetorical-questions' },
   { text: 'Who, which, and any', link: '/fill-ask-roles' },
   { text: 'Hooks inside the clause', link: '/in-clause-hooks' },
   { text: 'In a crisis, out of debt', link: '/abstract-landmarks' },

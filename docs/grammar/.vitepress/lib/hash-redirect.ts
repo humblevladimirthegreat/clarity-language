@@ -155,6 +155,7 @@ export const hashRedirects: HashRedirect[] = [
   { page: "rhetorical-questions.md", hash: "rhetorical", to: "more-turn-words.md", toHash: "rhetorical" },
   { page: "rhetorical-questions.md", hash: "quiz", to: "more-turn-words.md", toHash: "quiz" },
   { page: "rhetorical-questions.md", hash: "stacked-questions", to: "more-turn-words.md", toHash: "stacked-questions" },
+  { page: "rhetorical-questions.md", hash: "rhetorical-questions", to: "more-turn-words.md", toHash: "rhetorical" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */
