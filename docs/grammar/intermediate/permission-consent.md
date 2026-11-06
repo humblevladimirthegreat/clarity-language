@@ -60,7 +60,7 @@ When the speaker is in the clause, the speaker's own say is their part, not **`v
 
 To **ask** for permission, put the clause under [ask](/questions#question): `yem zuwen vehohel hwuvam.` (*May I sit?*). The question asks the listener, so the speaker may be in it. Grant it with [**`yael.`**](/questions#polar-particle) (*go ahead*).
 
-**Compare with:** [prescription](/ought-for-a-sake#sake-force) **`the`** says the act *ought* to serve a named sake, a reason you can check; a say word says only who allows or demands it. A [command](/speech-moves#speech-act-beginner) **`yol`** is the speaker telling the listener now; **`hwuvom`** reports a demand, which may be someone else's.
+**Compare with:** [prescription](/ought-for-a-sake#sake-force) **`the`** says the act *ought* to serve a named sake, a reason you can check; a say word says only who allows or demands it. A [command](/speech-moves#speech-act-beginner) **`yol`** is the speaker telling the listener now; **`hwuvom`** reports a demand, which may be someone else's. [Ability](/can-and-cant#ability) says what someone is able to do; English *Can I sit?* asking leave is a say word under ask, not ability.
 
 ### Someone in the act: consent (`z` / `d` / `b`) {#consent}
 

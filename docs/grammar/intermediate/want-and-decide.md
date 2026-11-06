@@ -122,11 +122,11 @@ To say an event goes against a decision (*against my decision*), put DECISION af
 >
 > "I walk, against my own final decision."
 
-### Someone else's want, plan, or decision {#whose-intention}
+### Someone else's want or decision {#whose-intention}
 
-WANT, PLAN, and DECISION are all in a mind, and with nothing else marked that mind is yours. English *Alazun plans for Azozon to walk* and *Azozon has decided to walk* report what is in someone else's mind as if you could see it. None of the three takes a `/b/` for whose it is. Someone else's want, plan, or decision is their view: you give it with a [holder](holder.md#holder), which says how you know it. That keeps a guess about someone's intentions from sounding like a fact.
+WANT and DECISION are both in a mind, and with nothing else marked that mind is yours. English *Azozon wants to walk* and *Azozon has decided to walk* report what is in someone else's mind as if you could see it. Neither takes a `/b/` for whose it is. Someone else's want or decision is their view: you give it with a [holder](/holder#holder), which says how you know it. That keeps a guess about someone's intentions from sounding like a fact.
 
-After a holder, WANT and DECISION are the holder's, just as PLAN is. After **`uom`**, write the holder word, then the stance, for *against their wishes*.
+After a holder, WANT and DECISION are the holder's, just as PLAN is for [someone else's plan](/holder#holder). After **`uom`**, write the holder word, then the stance, for *against their wishes*.
 
 > `zazozon thebamazozon thalom vowurol.`
 >
