@@ -145,6 +145,22 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Azozon | d-train | v-see . x-however | z-Alazun | v-run
 :::
 
+**2.** *Ahelan sits. Meanwhile, Alazun sneaks.*
+
+::: details Show answer
+`zahelan vehohel. xugorom zalazun vozuyul.`
+
+z-Ahelan | v-sit . x-meanwhile | z-Alazun | v-sneak
+:::
+
+**3.** *Now, about Ahelan. Azozon finds the luggage.*
+
+::: details Show answer
+`xahelan. zazozon delobal vumewel.`
+
+x-Ahelan . z-Azozon | d-luggage | v-find
+:::
+
 #### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zalazun vezuyol. xugorom zahelan dogobal vumewel.`
@@ -181,4 +197,16 @@ z-Azozon | d-luggage | v-see . x-next | z-Alazun | v-run
 z-Ahelan | v-run . x-nevertheless | z-Alazun | v-sit
 
 Firm **-l** says the contrast holds no matter what; **`xezem`** is plain *however*.
+:::
+
+#### What changes {#intermediate-what-changes}
+
+**1.** `xedavol. zahelan vehohel.` / `xedavor. zahelan vehohel.`
+
+::: details Show answer
+x-train . z-Ahelan | v-sit
+
+x-←train . z-Ahelan | v-sit
+
+The first brings up the train as a new topic (*Now, about the train*); the second goes back to it after the talk moved on (*Back to the train*). Either way, Ahelan sits.
 :::

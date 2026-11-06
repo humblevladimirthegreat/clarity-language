@@ -517,7 +517,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🍶,sake,ezuda,food,holds,none,ritual,sake toast is ritual,,,
 🍾,champagne,ehuda,food,holds,none,,,,,
 🍷,wine,owuda,food,holds,none,refinement,wine signals refinement,,,plurality.md#beginner-practice
-🍸,cocktail,aguda,food,holds,none,blend,cocktail blends many flavors,,combine; mixture; stir; mix; compound; combination,
+🍸,cocktail,aguda,food,holds,none,blend,cocktail blends many flavors,,combine; mixture; stir; mix; compound; combination,more-hinges.md#intermediate-practice
 🍹,mock-tail,amuda,food,holds,none,escapism,tropical drink is vacation escapism,,,
 🍺,beer,uruda,food,holds,none,,,,,hooks.md#beginner-practice
 🥂,cheers,aheya,person,holds,none,,,,,
