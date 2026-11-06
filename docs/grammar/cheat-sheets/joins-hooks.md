@@ -36,7 +36,7 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | **-m** | [open](/joins#and-lists-a): *(and possibly more)*; [alone](/joins#standalone-phrase), *as far as I know* | B |
 | **-r** | [one unnamed member](/joins#unspecified-member-r-phrase) (*something*, *someone*); one vowel only | B |
 | **-rx** | [an unnamed group](/joins#unspecified-member-r-phrase) (`zarx` *some ones*); `/z/` `/d/` `/b/` only | B |
-| **-n** | `/z/` `/d/` `/b/`: [a named list](/join-limits#named-list); `/x/`: [sequence](/clause-sequence#clause-sequence); `/v/`: [list verb](/list-verbs#list-verbs); `/ɡ/` `/h/`: [join-relation](/join-relations#join-relations) | I–A |
+| **-n** | `/z/` `/d/` `/b/`: [a named list](/named-phrases#named-list); `/x/`: [sequence](/clause-sequence#clause-sequence); `/v/`: [list verb](/list-verbs#list-verbs); `/ɡ/` `/h/`: [join-relation](/join-relations#join-relations) | I–A |
 
 <PageBreak />
 
@@ -95,7 +95,7 @@ A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `x
 | [Respectively](/list-structure#respectively) | `zazozon zalazun zal dogozel dodozel wubam dal vayebel` | *saw a cat and a dog, respectively* | I |
 | [Deny the whole list](/set-joins#exclusivity-and-denying-a-whole-list) | `vowurol veruvol val vul` | *not both walk and run* | I |
 | [Deny each item](/set-joins#exclusivity-and-denying-a-whole-list) | `vowurol veruvol vul` | *neither walk nor run* | B |
-| [Named list](/join-limits#named-list) | `zobodel zubudal zan` | *bread and butter* (the set phrase) | A |
+| [Named list](/named-phrases#named-list) | `zobodel zubudal zan` | *bread and butter* (the set phrase) | A |
 
 ## Joins across roles {#across-roles}
 

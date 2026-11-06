@@ -146,7 +146,7 @@ z-Alazun | NAME[d-tomato | d-watermelon | d-and] | v-cook
 
 **-n** on the join names the list as one set phrase; **`dal`** is just *a tomato and a watermelon*.
 
-**Rule:** [Named phrase](join-limits.md#named-list)
+**Rule:** [Named phrase](named-phrases.md#named-list)
 :::
 
 **2.** *Alazun is sleepier than Ahelan said.* `zalazun thebam blahelan zol guzemel.` or `zalazun zol guzemel thebam blahelan.`

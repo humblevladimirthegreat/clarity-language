@@ -132,6 +132,7 @@ export const advancedLessons = [
   { text: 'Open and named ranges', link: '/open-ranges' },
   { text: 'Generations', link: '/generations' },
   { text: 'Numeric prefixes', link: '/numeric-derivation' },
+  { text: "Named phrases", link: "/named-phrases" },
 ]
 
 export const levelReviews = [
