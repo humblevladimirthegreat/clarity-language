@@ -1,6 +1,6 @@
 ---
 name: checkpoint-writer
-description: Writes or tops up the `### Practice` checkpoint on one to three grammar sittings, given a unit and a checkpoint pack. Used by proposal orchestrators (Phase 4 of sitting-cohesion); not for general work.
+description: Writes or tops up the `### Practice` checkpoint on one to three grammar sittings, given a unit and a checkpoint pack. Used by proposal orchestrators; not for general work.
 tools: Bash, Read, Edit, Write
 model: opus
 effort: high
