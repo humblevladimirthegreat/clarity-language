@@ -16,36 +16,36 @@ Each row names what the file owns. The file is the authority; this table is only
 |--------|------|
 | `purpose.md` | Psychological purpose, limits, learner tour. Site home. |
 | `introduction.md` | Name, design goals, learning path. |
-| `clause.md` | **Source of truth** for one-clause grammar: role letters, default order, hosting; adjectives before the noun (`left-bound-adjectives.md`); chaining (`longer-chains.md`); emphasis, clefts (`emphasis.md`). Other docs own their subsystems. |
+| `clause.md` | **Source of truth** for one-clause grammar: role letters, default order, hosting; adjectives before the noun (`left-bound-adjectives.md`); leaving out who acts (`no-subject.md`); degree words on `/w/` (`very-and-slightly.md`); chaining (`longer-chains.md`); emphasis, clefts (`emphasis.md`). Other docs own their subsystems. |
 | `phonology.md` | Phonology; phonotactics, syllabic `l` (`phonotactics.md`); letter names (`letter-names.md`); singability, speech edges, audible start (`singability.md`). |
 | `word-endings.md` | Word endings, citation forms, greetings; proper names and titled phrases (`proper-names.md`); place-name roots (`place-name-roots.md`). |
-| `pronouns.md` | Whole-stem resume, role pointers, special, and generic pronouns; tag pronouns (`tag-pronouns.md`). |
+| `pronouns.md` | Whole-stem resume, role pointers, special, and generic pronouns; resume one sense, cross-role recast (`resume-sense.md`); tag pronouns (`tag-pronouns.md`). |
 | `topic.md` | Discourse topic, topic pronoun. |
-| `plurality.md` | Plural, associative, address sets, clusivity; collectives (`collectives.md`). |
+| `plurality.md` | Plural, associative, address sets, clusivity; collectives, each other, addressing several people (`collectives.md`). |
 | `questions.md` | Yes/no and fill questions, polar particles; polar inventory, tags (`polar-inventory.md`); rhetorical questions, quizzes (`rhetorical-questions.md`). |
 | `fill-ask-roles.md` | Fill-ask roles: arity, blank in a dependent; what kind / when / where / whose / how / why (`fill-ask-jobs.md`). |
-| `speech-moves.md` | Turns, vocatives, interjections, speech acts, the reusable vowel series; firm and soft (`firm-soft.md`); doubled and stacked acts (`more-turn-words.md`); speech manner (`speech-manner.md`); tone marks (`tone-marks.md`). |
-| `dependents.md` | Next-sentence grammar: continue, subordinators; sentence linkers (`sentence-linkers.md`); stand-in vowels, pointing back (`stand-in-vowels.md`); lexicalized stand-ins (`stand-in-roles.md`). |
+| `speech-moves.md` | Turns, vocatives, interjections, thinking sounds, continue, speech acts, the reusable vowel series; firm and soft (`firm-soft.md`); turn words, further: doubled and stacked acts, commands to be ADJ, describing a call (`more-turn-words.md`); speech manner (`speech-manner.md`); tone marks (`tone-marks.md`). |
+| `dependents.md` | Next-sentence grammar: subordinators; continue overview, sentence linkers, what carries past a period (`sentence-linkers.md`); hinges on a degree or a noun (`more-hinges.md`); stand-in vowels, pointing back (`stand-in-vowels.md`); lexicalized stand-ins (`stand-in-roles.md`); nested dependents (`nested-dependents.md`). |
 | `relations.md` | Hosted relation catalog: likeness, exchange, proxy; of-relations (`of-relations.md`); exactly like (`exactly-like.md`); locative relations (`locative-relations.md`); social ties (`social-ties.md`); as-of (`as-of.md`); same-role words: before, after, while, like (`same-role-words.md`). |
-| `hooks.md` | Prefix-less hooks: in-clause, discourse glue, extra-noun; stacked extra-noun and whose (`extra-noun-hooks.md`); ending grids, hook detail (`in-clause-hooks.md`); ordered ranges (`ranges.md`); abstract landmarks (`abstract-landmarks.md`); hook compounds, prefixes (`hook-compounds.md`); hooked joins (`hooked-joins.md`). |
-| `discourse-hooks.md` | Stacked discourse, hook resume, parallel chains, discourse placements; somewhere / here and there (`here-there.md`). |
+| `hooks.md` | Prefix-less hooks: in-clause, discourse glue, extra-noun; stacked extra-noun and whose (`extra-noun-hooks.md`); in-clause hooks: parallel chains, hook detail, point back (`in-clause-hooks.md`); ranges, including ranges of numbers (`ranges.md`); abstract landmarks (`abstract-landmarks.md`); hook compounds, prefixes (`hook-compounds.md`); hooked joins (`hooked-joins.md`). |
+| `discourse-hooks.md` | Discourse endings at the front (in fact, anyway), stacked discourse, discourse placements; somewhere / here and there (`here-there.md`). |
 | `restrictors.md` | `/h/` / `/w/` restrictors, habitual; more occasions (`more-occasions.md`). |
-| `joins.md` | Phrase and clause joins, fences, set vs rank; rank joins (`rank-joins.md`); universals, domains (`universals-domains.md`); join limits, role grid (`join-limits.md`). |
-| `join-across-roles.md` | Stance joins; list verbs (`list-verbs.md`); join-relations (`join-relations.md`); verb-phrase and clause forms (`verb-and-stance-joins.md`); clause sequence (`clause-sequence.md`). |
+| `joins.md` | Phrase and clause joins, fences, set vs rank; what a list word reaches: SHARED, respectively, fence nesting (`list-structure.md`); rank joins, invert, route (`rank-joins.md`); and/or, whole-list denial, set inventories (`set-joins.md`); universals, domains (`universals-domains.md`); join limits, role grid (`join-limits.md`). |
+| `verb-and-stance-joins.md` | Joins on verbs and stances: verb-phrase, clause and stance joins; list verbs (`list-verbs.md`); join-relations (`join-relations.md`); clause sequence (`clause-sequence.md`). |
 | `comparatives.md` | Comparatives, superlatives, equatives; manner scale (`comparative-arity.md`); vague amounts (`vague-amounts.md`); stance bars (`stance-bars.md`). |
 | `predication.md` | Classification, identity, lone object; how far a label reaches (`label-seams.md`); packaging (`label-reach.md`). |
 | `causation.md` | Causation / condition hinges; fault (`fault.md`); because, iff (`iff-fault.md`); CAUSE, make (`cause.md`). |
-| `sakes.md` | Sakes, met / unmet; ought for a sake (`ought-for-a-sake.md`); motive, attachment, whose stake, contrary (`for-a-sake.md`); enough and too, sake bars (`bars.md`). |
+| `sakes.md` | Sakes, met / unmet; ought for a sake (`ought-for-a-sake.md`); doing it for a sake: motive, attachment, whose stake (`for-a-sake.md`); bars: than planned, than usual, enough and too (`bars.md`). |
 | `feelings-permission.md` | Feelings, speaker attitude; permission, consent (`permission-consent.md`); thanks and sorry (`thanks-and-sorry.md`). |
-| `intention.md` | Plan; decision, try / fallback (`try.md`); want (`want-and-decide.md`); ability / incapability (`can-and-cant.md`). |
+| `intention.md` | Plan; try / fallback (`try.md`); want, decision (`want-and-decide.md`); ability / incapability (`can-and-cant.md`). |
 | `knowing.md` | MAY; live / memory (`live-and-memory.md`); evidentiality (`evidentiality.md`); holder (`holder.md`); mood on one adjective (`universality.md`); dated channel (`dated-channel.md`); usually vs must (`usually-vs-must.md`). |
-| `residue-and-former.md` | Residue / former, channel bars; mirative (`mirative.md`); notional (`notional.md`); already / still / not yet / no longer (`already-still-yet.md`). |
+| `residue-and-former.md` | Residue / former; contrary to: plan, say words, channels, whose (`contrary-to.md`); mirative (`mirative.md`); notional (`notional.md`); already / still / not yet / no longer (`already-still-yet.md`). |
 | `roles.md` | Role compounds; viewpoint laterals, landmark facing, gravity (`viewpoint.md`); role parts (`role-parts.md`). |
 | `compounds.md` | Mid-word `x`, dictionary compounds; compound families (`compound-families.md`); conversation length (`conversation-length.md`); root tails, tail suffixes (`root-tails.md`). |
-| `spans.md` | Span fences, asides; mention (`spans-as-words.md`); scope islands (`scope-islands.md`); editorial close, nesting (`span-nesting.md`). |
-| `numbers.md` | Numerals; word shape, markers, endings, writing (`number-markers.md`); number as verb, adverb, interjection, discourse, degree, stance (`number-roles.md`); end-relative, stacked markers (`stacked-markers.md`). |
+| `spans.md` | Span fences, asides; spans as words: mention, span nouns, `gl` spans, one of a title (`spans-as-words.md`); inside a quote: act words, topics (`quote-contents.md`); scope islands (`scope-islands.md`); editorial close, nesting (`span-nesting.md`). |
+| `numbers.md` | Numerals; word shape, markers, endings, writing, letter codes (`number-markers.md`); number as verb, adverb, interjection, discourse, degree, stance (`number-roles.md`); end-relative, stacked markers (`stacked-markers.md`). |
 | `digitless-exponents.md` | Digitless forms, exponents, bare OoM, group separator; special values, hyperbole, number as stance (`special-values.md`). |
-| `measures-and-percent.md` | Ranges, measure phrases, percent; digit strings and time (`digit-strings.md`); initials (`initials.md`); rays, named ranges (`open-ranges.md`); ordinal generations, kin (`generations.md`). |
+| `measures-and-percent.md` | Measure phrases, percent, fractions; digit strings and time (`digit-strings.md`); initials (`initials.md`); rays, named ranges (`open-ranges.md`); ordinal generations, kin (`generations.md`). |
 | `numeric-derivation.md` | Numeric prefixes: number + `x` + root (advanced only). |
 | `review.md` | **Level reviews**: one `### Practice` per band (`review.md`, `review-intermediate.md`, `review-advanced.md`), last in each sidebar group; adds no forms and no words, [level reviews](docs/meta/translation-exercises.md#level-reviews). |
 | `english.md` + `say-*.md` | **Saying it in Ageben** recipe track, keyed by English job. Outside stage order; stage pages never link to it, [recipe track](docs/meta/grammar-docs.md#recipe-track). New gap resolutions that add no form go here. |
