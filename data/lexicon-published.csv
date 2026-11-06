@@ -497,16 +497,16 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🥟,dumpling,adedu,food,takes-away,small,stomach,a dumpling is a stuffed pouch; the stomach is the body's food pouch,,,
 🥠,fortune-cookie,ovedu,food,takes-away,small,written-fortune,the cookie hides a slip of paper; a written-fortune is the claim on that slip,,,
 🥡,takeout,udoda,food,holds,medium,,,,,
-🍦,ice-cream,azeda,food,holds,small,summer,ice cream is a summer treat; summer is the hot season,,,
+🍦,ice-cream,azeda,food,holds,small,summer,ice cream is a summer treat; summer is the hot season,,,list-structure.md#intermediate-practice
 🍩,doughnut,udode,food,one,small,reward,donut is a sweet reward,,profit,numbers.md#beginner-practice
 🍪,cookie,ugede,food,one,small,compliance,browser cookie tracks compliance,,,pronouns.md#beginner-practice
 🎂,birthday,uburo,counting,order,none,age,a birthday marks years lived; age is how old on the continuum,,,
 🍰,cake,egode,food,one,medium,,a slice of cake is the sweet baked treat,,,numbers.md#beginner-practice
 🧁,cupcake,ugeda,food,holds,small,coda,cupcake is a sweet course; coda is the unobservable closing role,,,
 🥧,pie,aboda,food,holds,medium,,,,,comparative-arity.md#intermediate-practice
-🍫,chocolate,ohede,food,one,small,,,,,
+🍫,chocolate,ohede,food,one,small,,,,,list-structure.md#intermediate-practice
 🍬,candy,uneda,food,holds,small,sugar,candy is sweetened; sugar is what sweetens,,,no-subject.md#beginner-practice
-🍭,lollipop,olede,food,one,small,pacification,lollipop pacifies a child,,,
+🍭,lollipop,olede,food,one,small,pacification,lollipop pacifies a child,,,list-structure.md#intermediate-practice
 🍮,custard,oyeda,food,holds,small,richness,custard is thick with cream and eggs,,,
 🍯,honey,ahuda,food,holds,none,endearment,honey is a sweet endearment,,,
 🍼,bottle,awoda,food,holds,medium,inhibition,a bottle holds liquid inside; inhibition is holding feeling in,,,measures-and-percent.md#intermediate-practice
@@ -571,7 +571,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🏰,castle,ugahu,place,takes-away,big,impregnability,castle walls defend within; fortress is defended stronghold,,,
 💒,wedding,uwura,counting,holds,none,union,wedding chapel joins two people; union is joining together,,marry; federal,
 🗼,tower,adaho,place,order,big,height,tower rises high; height is vertical extent,,high; tall; peak; top,
-🗽,statue,ezahe,place,one,big,liberty,statue of liberty,,liberal,
+🗽,statue,ezahe,place,one,big,liberty,statue of liberty,,liberal,label-reach.md#intermediate-practice
 ⛪,church,ehaha,place,holds,big,faith,church gathers believers; faith is trust in what is unseen,,religious; religion,
 🕌,mosque,umaha,place,holds,big,,,,,
 🛕,temple,odaha,place,holds,big,,,,,
@@ -1094,7 +1094,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ✅,check,oge,sign,one,,decision,checkmark marks a confirmed pick; decision is a settled choice with revisability,,conclude; determine,
 ❌,cross,uyugu,sign,takes-away,none,rejection,cross mark means no wrong; rejection is refused as wrong,,,spans-as-words.md#intermediate-practice
 ➰,loop,alugo,sign,order,none,recurrence,curly loop circles back; repetition is returning to the start,,,
-©️,copyright,egunu,title,takes-away,none,ownership,copyright marks legal control; ownership is legal right to control,,possess; possession; own; property,
+©️,copyright,egunu,title,takes-away,none,ownership,copyright marks legal control; ownership is legal right to control,,possess; possession; own; property,list-structure.md#intermediate-practice
 ®️,registered,arunu,title,takes-away,none,,,,registration,
 ™️,trademark,edunu,title,takes-away,none,claim,trademark claims brand identity; claim is asserting as yours,,brand,
 🫟,splatter,azula,nature,holds,none,disorder,splatter makes a mess; disorder is the unobservable lack of order,,mess; stain,

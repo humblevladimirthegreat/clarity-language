@@ -56,6 +56,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a museum gallery
 
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *statue* | `ezahel` | 🗽 |
+
 **Review:**
 
 | English | Ageben |
@@ -66,6 +72,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | **IDENTITY** | `orel` |
 | *guard* | `agayul` |
 | *quiet* | `ugowul` |
+| *kind of* | `wayurom` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -85,6 +92,22 @@ z-Azozon | [g-guard | g-not]
 z-Alazun | [g-same | bl-Azozon]
 :::
 
+**3.** *Ahelan is kind of a statue.*
+
+::: details Show answer
+`zahelan wayurom gezahel.`
+
+z-Ahelan | [w-degree | g-statue]
+:::
+
+**4.** *The guard is not Alazun.* (not the same person)
+
+::: details Show answer
+`zagayul gorel blalazun gul.`
+
+z-guard | [[g-IDENTITY | bl-Alazun] | g-not]
+:::
+
 #### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zalazun gagayul hual.`
@@ -101,6 +124,22 @@ z-Alazun | [g-same | bl-Azozon]
 [z-Ahelan | g-quiet] | h-always
 
 *Ahelan is always quiet.*
+:::
+
+**3.** `zezahel wayurom gagayul.`
+
+::: details Show answer
+z-statue | [w-degree | g-guard]
+
+*The statue is kind of a guard.*
+:::
+
+**4.** `zahelan gorel blagayul.`
+
+::: details Show answer
+z-Ahelan | [g-IDENTITY | bl-guard]
+
+*Ahelan is the guard.* (the same person)
 :::
 
 #### Pick one {#intermediate-pick-one}

@@ -121,3 +121,145 @@ When one list sits inside another (*(tea or coffee) and water*), write the inner
 | flat | `zedudal zogudal zowulal zel` | *tea or coffee or water* |
 | nested | `zedudal zogudal zel zowulal zal` | *either tea or coffee, and water* |
 | nested adjectives | `gerulol gamezem gul gelazem gal` | *big, and neither red nor small* |
+
+### Practice {#intermediate-practice}
+
+Short drills for Intermediate. Try each item before opening **Show answer**.
+
+**Setting:** a sweet shop
+
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *lollipop* | `oledel` | 🍭 |
+| *ice-cream* | `azedal` | 🍦 |
+| *chocolate* | `ohedel` | 🍫 |
+| *ownership* | `egunum` | ©️ from *copyright* |
+| *respectively* | `wubam` | 🧦 from *socks*: each item goes with its partner |
+
+**Review:**
+
+| English | Ageben |
+|---------|--------|
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
+| *Ahelan* | `ahelan` |
+| *candy* | `unedal` |
+| *cake* | `egodel` |
+| *doughnut* | `udodel` |
+| *eat* | `vagedal` |
+| *red* | `erulol` |
+| *small* | `amezem` |
+| *big* | `elazem` |
+| *sleepy* | `uzemel` |
+
+#### English → Ageben {#intermediate-english-to-ageben}
+
+**1.** *The lollipop and the candy are both red.*
+
+::: details Show answer
+`zoledel zunedal zal gerulol.`
+
+[z-lollipop | z-candy | z-and | g-red]
+:::
+
+**2.** *Alazun eats the cake and her lollipop.* (only the lollipop is hers)
+
+::: details Show answer
+`zalazun degodel doledel om balazur dal vagedal.`
+
+z-Alazun | [d-cake | [d-lollipop | [used-by | b-←Alazun]] | d-and] | v-eat
+:::
+
+**3.** *Alazun eats Ahelan's cake and doughnut.*
+
+::: details Show answer
+`zalazun degodel dudodel dal gegunum blahelan vagedal.`
+
+z-Alazun | [d-cake | d-doughnut | d-and | [g-ownership | bl-Ahelan]] | v-eat
+:::
+
+**4.** *Azozon and Alazun eat a lollipop and an ice cream, respectively.*
+
+::: details Show answer
+`zazozon zalazun zal doledel dazedal wubam dal vagedal.`
+
+[z-Azozon | z-Alazun | z-and] | [d-lollipop | d-ice-cream | w-respectively | d-and] | v-eat
+:::
+
+**5.** *Alazun eats either candy or chocolate, and an ice cream.*
+
+::: details Show answer
+`zalazun dunedal dohedel del dazedal dal vagedal.`
+
+z-Alazun | [[d-candy | d-chocolate | d-or-exactly-one] | d-ice-cream | d-and] | v-eat
+:::
+
+#### Ageben → English {#intermediate-ageben-to-english}
+
+**1.** `zunedal zohedel zam gegunum blahelan guzemel.`
+
+::: details Show answer
+[z-candy | z-chocolate | z-and.open | [g-ownership | [bl-Ahelan | g-sleepy]]]
+
+*Sleepy Ahelan's candy and chocolate.* (and possibly more)
+:::
+
+**2.** `zoledel zazedal zal gerulol gamezem wubam gal.`
+
+::: details Show answer
+[z-lollipop | z-ice-cream | z-and] | [g-red | g-small | w-respectively | g-and]
+
+*The lollipop and the ice cream are red and small, respectively.*
+:::
+
+**3.** `zegodel zudodel zoel gelazem.`
+
+::: details Show answer
+[z-cake | z-doughnut | z-equal-rank | g-big]
+
+*The cake is as big as the doughnut.*
+:::
+
+**4.** `zazedal gerulol gamezem gul gelazem gal.`
+
+::: details Show answer
+z-ice-cream | [[g-red | g-small | g-not] | g-big | g-and]
+
+*The ice cream is big, and neither red nor small.*
+:::
+
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Alazun eats the red lollipop and the candy.* `zalazun doledel gerulol dunedal dal vagedal.` or `zalazun doledel dunedal dal gerulol vagedal.`
+
+::: details Show answer
+`zalazun doledel gerulol dunedal dal vagedal.`
+
+z-Alazun | [[d-lollipop | g-red] | d-candy | d-and] | v-eat
+
+A modifier for one item stays on that item. `gerulol` right after the join word is SHARED: both sweets would be red.
+:::
+
+**2.** *Ahelan eats the cake and her doughnut.* (only the doughnut is hers) `zahelan degodel dudodel om bahelar dal vagedal.` or `zahelan degodel om bahelar dudodel dal vagedal.`
+
+::: details Show answer
+`zahelan degodel dudodel om bahelar dal vagedal.`
+
+z-Ahelan | [d-cake | [d-doughnut | [used-by | b-←Ahelan]] | d-and] | v-eat
+
+Only the item just before the join word takes a hook this way. In the other form the hook follows `degodel`, so it is an extra noun of the clause, not *her doughnut*.
+:::
+
+#### What changes {#intermediate-what-changes}
+
+**1.** `zalazun dunedal dohedel del dazedal dal vagedal.` / `zalazun dunedal dohedel del dazedal del vagedal.`
+
+::: details Show answer
+z-Alazun | [[d-candy | d-chocolate | d-or-exactly-one] | d-ice-cream | d-and] | v-eat
+
+z-Alazun | [[d-candy | d-chocolate | d-or-exactly-one] | d-ice-cream | d-or-exactly-one] | v-eat
+
+Each join closes only its own stretch. The inner `del` picks candy or chocolate in both. The outer join decides the rest: `dal` adds the ice cream too; `del` makes it one of the two, either that choice or the ice cream.
+:::
