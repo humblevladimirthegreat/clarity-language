@@ -121,6 +121,23 @@ A mark on a span colors all of it:
 - Before a span fence, the mark is **your** tone about the quote. Inside the fence, it is part of what is quoted (the original speaker's tone).
 - Speech adds no syllables: you voice the mark over its words.
 
+#### Emphasis and clefts {#emphasis-and-clefts}
+
+English moves or stresses a word to single it out: *It's a cat that Azozon sees*, *It was Azozon who saw the cat*, or a stressed *Azozon saw the cat*. Ageben word order carries no emphasis: the default order is set by the [speech act](/speech-moves#act-word-order), and any other order means the same. So ask what the English emphasis is doing:
+
+- If it sets one person or thing against others (*Azozon, not someone else*), put `&` on that word.
+- If it only puts the new part first, with nothing to set it against (answering *What does Azozon see?* with *It's a cat that Azozon sees*), write the plain sentence. What came before already shows which part is new.
+
+Going the other way, an Ageben sentence in an unusual order (a line fitted to a tune, say) becomes a plain English sentence.
+
+<!-- cheat-sheet: word-shape-clause -->
+| Ageben | Use | English |
+|--------|-----|---------|
+| `zazozon dogozel vayebel.` | plain | *Azozon sees a cat.* / *It's a cat that Azozon sees.* (answering *what?*) |
+| `&zazozon dogozel vayebel.` | subject contrasted | *It was Azozon who saw the cat.* |
+| `zazozon &dogozel vayebel.` | object contrasted | *It's a cat that Azozon sees.* (not something else) |
+| `zazozon dogozel &vayebel.` | act contrasted | *Azozon sees the cat.* (rather than doing something else to it) |
+
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.

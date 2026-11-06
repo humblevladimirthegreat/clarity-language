@@ -42,7 +42,7 @@ export const hashRedirects: HashRedirect[] = [
   { page: "phonology.md", hash: "advanced", to: "singability.md" },
   { page: "phonology.md", hash: "beginner", to: "phonology.md" },
   { page: "clause.md", hash: "intermediate", to: "longer-chains.md" },
-  { page: "clause.md", hash: "advanced", to: "emphasis.md" },
+  { page: "clause.md", hash: "advanced", to: "tone-marks.md", toHash: "emphasis-and-clefts" },
   { page: "clause.md", hash: "beginner", to: "clause.md" },
   { page: "spans.md", hash: "intermediate", to: "spans-as-words.md" },
   { page: "spans.md", hash: "advanced", to: "span-nesting.md" },
@@ -164,6 +164,8 @@ export const hashRedirects: HashRedirect[] = [
   { page: "live-and-memory.md", hash: "reconstructive-catch", to: "knowing.md", toHash: "reconstructive-catch" },
   { page: "live-and-memory.md", hash: "live-and-memory", to: "knowing.md", toHash: "live-vs-memory" },
   { page: "extra-noun-hooks.md", hash: "genitive", to: "social-ties.md", toHash: "genitive" },
+  { page: "emphasis.md", hash: "emphasis-and-clefts", to: "tone-marks.md", toHash: "emphasis-and-clefts" },
+  { page: "emphasis.md", hash: "english-emphasis", to: "tone-marks.md", toHash: "emphasis-and-clefts" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */

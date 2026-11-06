@@ -141,8 +141,8 @@ Calls and sentence glue use [`/y/`](/speech-moves) and [`/x/`](/dependents).
 | [Moving words changes nothing](/clause#direct-object-d) | `dogozel zodozel vayebel.` | *A dog sees a cat.* | B |
 | [Default order by speech act](/speech-moves#act-word-order): question verb second, command verb first, prohibition verb late | `yel zazozon vabuvul dubogal.` · `yol vabuvul dubogal.` · `yul dubogal vabuvul.` | *Does Azozon punch the box?* · *Punch the box!* · *Don't punch the box.* | B |
 | [Fill-ask: blank first](/questions#fill-ask) | `yel dar zazozon vayebel.` | *What does Azozon see?* | B |
-| [Contrast one word with `&`](/emphasis#english-emphasis) | `&zazozon dogozel vayebel.` · `zazozon &dogozel vayebel.` · `zazozon dogozel &vayebel.` | *It was Azozon who saw the cat.* · *It's a cat that Azozon sees.* (not something else) · *Azozon sees the cat.* (rather than doing something else to it) | A |
-| [Cleft with no contrast: plain sentence](/emphasis#english-emphasis) | `zazozon dogozel vayebel.` | *It's a cat that Azozon sees.* (answering *what?*) | A |
+| [Contrast one word with `&`](/tone-marks#emphasis-and-clefts) | `&zazozon dogozel vayebel.` · `zazozon &dogozel vayebel.` · `zazozon dogozel &vayebel.` | *It was Azozon who saw the cat.* · *It's a cat that Azozon sees.* (not something else) · *Azozon sees the cat.* (rather than doing something else to it) | I |
+| [Cleft with no contrast: plain sentence](/tone-marks#emphasis-and-clefts) | `zazozon dogozel vayebel.` | *It's a cat that Azozon sees.* (answering *what?*) | I |
 
 ### Describing words {#describing}
 

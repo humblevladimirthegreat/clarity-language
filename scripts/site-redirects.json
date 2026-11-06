@@ -219,6 +219,11 @@
       "from": "/grammar/live-and-memory.html",
       "to": "/grammar/knowing.html",
       "note": "Public URL after merging live-and-memory.md into knowing.md."
+    },
+    {
+      "from": "/grammar/emphasis.html",
+      "to": "/grammar/tone-marks.html",
+      "note": "Public URL after folding emphasis.md into tone-marks.md."
     }
   ]
 }

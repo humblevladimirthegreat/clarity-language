@@ -744,7 +744,7 @@ Motive **`tho`** endings.
 
 Singling out one word against others: the contrast mark `&`. Word order adds no prominence.
 
-[Emphasis and clefts](/emphasis#english-emphasis), [Tone marks](/tone-marks#tone-marks)
+[Tone marks](/tone-marks#emphasis-and-clefts)
 
 ### Proxy (*on behalf of*)
 

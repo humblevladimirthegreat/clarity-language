@@ -4,7 +4,7 @@ band: advanced
 
 # Advanced review {#advanced-review}
 
-The Advanced review covers every Advanced section, from English emphasis to numeric prefixes.
+The Advanced review covers every Advanced section, from stand-in words to numeric prefixes.
 
 ### Practice {#advanced-practice}
 
@@ -39,14 +39,14 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 #### English → Ageben {#advanced-english-to-ageben}
 
-**1.** *It was Alazun, not someone else, who cooked a tomato.*
+**1.** *Alazun denies that the child is sleepy.*
 
 ::: details Show answer
-`&zalazun dodedel vuguyol.`
+`zalazun vuon zohoyol guzemel.`
 
-&z-Alazun | d-tomato | v-cook
+z-Alazun | v-deny | [z-child | g-sleepy]
 
-**Rule:** [English emphasis and clefts](emphasis.md#english-emphasis)
+**Rule:** [Lexicalized stand-ins in other roles](stand-in-roles.md#stand-in-roles)
 :::
 
 **2.** *As of 3 May, Azozon is sitting in a school.*

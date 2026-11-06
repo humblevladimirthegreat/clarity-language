@@ -686,7 +686,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🎇,sparkle,uzeve,doing,one,small,coulomb,a sparkler holds electric charge in the hand; coulomb is the SI charge unit,,,
 🧨,firecracker,avevu,doing,takes-away,small,,,,,
 ✨,sparkles,uzula,nature,holds,none,hertz,sparkles flicker in fast repeats; hertz is the SI frequency unit,,frequency,
-🎈,balloon,ebova,doing,holds,medium,,,,rubber,emphasis.md#advanced-practice
+🎈,balloon,ebova,doing,holds,medium,,,,rubber,
 🎉,popper,ameva,doing,holds,small,celebration,a party popper bursts at a party; celebration marks a joyful occasion,,occasion,
 🎊,confetti,ugeva,doing,holds,small,jubilation,confetti rains on victory; jubilation is winning celebration,,,
 🎐,chime,uhore,counting,one,medium,,,,,
@@ -824,7 +824,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🎹,piano,ubaro,counting,order,big,,,,,
 🎻,violin,avore,counting,one,medium,,,,,
 🪕,banjo,abore,counting,one,medium,folksy,banjo plucks rustic melody; folksy is plain homely character,,,
-🥁,drum,adora,counting,holds,medium,rhythm,drum sets the beat for all; rhythm is steady repeating pulse,,beat,emphasis.md#advanced-practice
+🥁,drum,adora,counting,holds,medium,rhythm,drum sets the beat for all; rhythm is steady repeating pulse,,beat,
 🪘,tom-tom,omora,counting,holds,medium,,,,,
 🪇,maracas,amera,counting,holds,small,,,,,
 🪈,flute,uvoro,counting,order,medium,lightness,a flute's thin airy notes feel weightless,,,
@@ -881,7 +881,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 📧,email,emuna,title,holds,none,message,email sends words instantly; message is communicated content,,,
 📤,out-box,adonu,title,takes-away,medium,outgoing,outbox holds mail to send; outgoing is leaving your hands,,,
 📥,inbox,anona,title,holds,medium,incoming,inbox holds mail received; incoming is arriving to you,,,
-📦,box,uboga,sign,holds,medium,aggregation,a box wraps items together; aggregation is the unobservable grouping,,module; package; parcel,emphasis.md#advanced-practice
+📦,box,uboga,sign,holds,medium,aggregation,a box wraps items together; aggregation is the unobservable grouping,,module; package; parcel,
 📫,mailbox,emoha,place,holds,medium,reception,closed mailbox holds delivered mail; reception is receiving inward,,,
 📮,post-box,oboha,place,holds,medium,dispatch,postbox sends mail on its way; dispatch is sending outward,,send; mail; deliver; post,
 🗳️,ballot,una,title,holds,,choice,ballot records your vote; choice is selecting among options,,vote; election; elect; poll; voluntary,

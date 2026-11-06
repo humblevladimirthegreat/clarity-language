@@ -114,7 +114,6 @@ export const intermediateLessons = [
 /** Advanced sittings, in the same topic order as the earlier groups. */
 export const advancedLessons = [
   { text: 'Singing and speech edges', link: '/singability' },
-  { text: 'Emphasis and clefts', link: '/emphasis' },
   { text: 'Stand-in words', link: '/stand-in-roles' },
   { text: 'Nested dependents', link: '/nested-dependents' },
   { text: 'Join limits', link: '/join-limits' },
