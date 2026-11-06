@@ -2,7 +2,7 @@
 band: beginner
 ---
 
-# Social relations {#social-ties}
+# Whose: *Azozon's* {#social-ties}
 
 ### Whose (`om`) {#genitive}
 
@@ -69,7 +69,7 @@ Other kinds of *'s* each have their own word:
 
 ### Social relations (*Azozon's friend*, *boss*) {#social-relations}
 
-English *'s* also names a social tie (*Azozon's friend*, *Azozon's boss*). Put the root for the tie on `/ɡ/` with **-m** (the abstract sense), and put the other person in a `bl-` word right after it, as with the *of* relations. `/b/` is the person the tie points to.
+English *'s* also names a social tie (*Azozon's friend*, *Azozon's boss*), where **`om`** cannot go: a person is not something someone uses. Put the root for the tie on `/ɡ/` with **-m** (the abstract sense), and put the other person in a `bl-` word right after it, as with the *of* relations. `/b/` is the person the tie points to.
 
 > `zalazun gamayam blazozon.`
 >
@@ -135,6 +135,9 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vayebel` |
 | *sit* | `vehohel` |
 | *run* | `veruvol` |
+| *umbrella* | `omobul` |
+| *coat* | `ogobal` |
+| *big* | `gelazem` |
 
 #### English → Ageben {#beginner-english-to-ageben}
 
@@ -160,6 +163,14 @@ z-Azozon | [d-Alazun | [g-leadership | bl-Azozon]] | v-see
 `zalazun gabolem blazozon.`
 
 z-Alazun | [g-tending | bl-Azozon]
+:::
+
+**4.** *There's Azozon's umbrella.*
+
+::: details Show answer
+`zomobul om bazozon.`
+
+[z-umbrella | [used-by | b-Azozon]]
 :::
 
 #### Ageben → English {#beginner-ageben-to-english}
@@ -188,6 +199,14 @@ z-Alazun | [g-tending | bl-Azozon]
 *Ahelan, in Alazun's care, sits.*
 :::
 
+**4.** `zahelan dogobal om balazun vayebel.`
+
+::: details Show answer
+z-Ahelan | [d-coat | [used-by | b-Alazun]] | v-see
+
+*Ahelan sees Alazun's coat.*
+:::
+
 #### Pick one {#beginner-pick-one}
 
 **1.** *Alazun and Ahelan are friends.* `zalazun zahelan zal gamayam.` or `zalazun gamayam blahelan.`
@@ -202,7 +221,7 @@ With no `bl-` word, the tie points at the other members of the join; **`gamayam 
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Alazun is Azozon's friend.* <!-- lint: error -->`zalazun em bazozon.`
+**1.** *Alazun is Azozon's friend.* <!-- lint: error -->`zalazun om bazozon.`
 
 ::: details Show answer
 `zalazun gamayam blazozon.`
@@ -210,5 +229,15 @@ With no `bl-` word, the tie points at the other members of the join; **`gamayam 
 z-Alazun | [g-companionship | bl-Azozon]
 
 A social tie takes the tie root on `/ɡ/` with **/b/**; **`om`** is *in Azozon's use*.
+:::
+
+**2.** *Azozon's umbrella is big.* <!-- lint: error -->`zomobul om bazozon gelazem.`
+
+::: details Show answer
+`zomobul gelazem om bazozon.`
+
+[z-umbrella | g-big | [used-by | b-Azozon]]
+
+Put the umbrella's `/ɡ/` word before **`om`**; after the `/b/` it describes Azozon.
 :::
 

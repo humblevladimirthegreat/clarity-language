@@ -4,6 +4,8 @@ band: beginner
 
 # Extra-noun hooks {#extra-noun-hooks}
 
+Two-vowel hooks name the rest of the everyday extras (*on*, *toward*, *through*, *using*), and **-m** on a hook makes the landmark the setting (*amid*, *near*, *despite*).
+
 ### Extra noun: stacked vowels and loose **-m**
 <a id="extra-noun-intermediate"></a>
 
@@ -90,10 +92,13 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *page* | `obonol` |
-| *big* | `gelazem` |
 | *write* | `varuyol` |
 | *run* | `veruvol` |
-| *see* | `vayebel` |
+| *sit* | `vehohel` |
+| *peek* | `vebemol` |
+| *window* | `uwohel` |
+| *jar* | `adal` |
+| *throw* | `vobovol` |
 
 #### English → Ageben {#beginner-english-to-ageben}
 
@@ -113,25 +118,17 @@ z-Azozon | v-write | [on | b-page]
 z-Alazun | d-page | [using | b-pencil] | v-write
 :::
 
-**3.** *There's Azozon's camera.*
+**3.** *Azozon peeks through the window.*
 
 ::: details Show answer
-`zugewel om bazozon.`
+`zazozon vebemol uel buwohel.`
 
-[z-camera | [used-by | b-Azozon]]
+z-Azozon | v-peek | [through | b-window]
 :::
 
 #### Ageben → English {#beginner-ageben-to-english}
 
-**1.** `zahelan dugewel om balazun vayebel.`
-
-::: details Show answer
-z-Ahelan | [d-camera | [used-by | b-Alazun]] | v-see
-
-*Ahelan sees Alazun's camera.*
-:::
-
-**2.** `zazozon varuyol aol bobewol.`
+**1.** `zazozon varuyol aol bobewol.`
 
 ::: details Show answer
 z-Azozon | v-write | [using | b-pencil]
@@ -139,12 +136,20 @@ z-Azozon | v-write | [using | b-pencil]
 *Azozon writes using a pencil.*
 :::
 
-**3.** `zahelan veruvol oel bugewel.`
+**2.** `zahelan veruvol oel bugewel.`
 
 ::: details Show answer
 z-Ahelan | v-run | [toward | b-camera]
 
 *Ahelan runs toward the camera.*
+:::
+
+**3.** `zahelan dobewol ual badal vobovol.`
+
+::: details Show answer
+z-Ahelan | d-pencil | [out-of | b-jar] | v-throw
+
+*Ahelan throws a pencil out of the jar.*
 :::
 
 #### Pick one {#beginner-pick-one}
@@ -159,14 +164,12 @@ z-Alazun | v-run | [toward | b-pencil]
 **`oel`** names where the path ends; **`ul`** is *from* the pencil.
 :::
 
-#### Fix it {#beginner-fix-it}
-
-**1.** *Azozon's camera is big.* <!-- lint: error -->`zugewel em bazozon gelazem.`
+**2.** *Azozon sits near the camera.* `zazozon vehohel em bugewel.` or `zazozon vehohel el bugewel.`
 
 ::: details Show answer
-`zugewel gelazem om bazozon.`
+`zazozon vehohel em bugewel.`
 
-[z-camera | g-big | [used-by | b-Azozon]]
+z-Azozon | v-sit | [near | b-camera]
 
-Put the camera's `/ɡ/` word before **`om`**; after the `/b/` it describes Azozon.
+**`em`** makes the camera the setting Azozon sits in; **`el`** puts Azozon at the camera's exact point.
 :::
