@@ -171,14 +171,14 @@ The blank **-r** takes a vowel; the count is how many items you listed before it
 | [Report a question](/questions#embedded-whether) | `zazozon vayebel derl zalazun vowurol.` | *Azozon sees whether Alazun walks.* | B |
 | [Blank belongs to *whether*](/fill-ask-roles#blank-in-dependent) | `yel zawan vanam derl zar vowurol.` | *Do you know who walks?* | I |
 | [Blank belongs to the outer question](/fill-ask-roles#blank-in-dependent) | `yel zawan vevemel darl zar vowurol.` | *Who do you think walks?* | I |
-| [Question you don't want answered](/rhetorical-questions#rhetorical): `yal` before `yel` | `yal yel zar vegemal.` | *Who cares?* (nobody) | I |
-| [Musing](/rhetorical-questions#rhetorical) | `yam yel zar vegemal.` | *Who really cares, though?* | I |
-| [Rhetorical for now](/rhetorical-questions#rhetorical) | `yar yel` | *Surely, as things stand…?* | I |
-| [Sounds like idle wondering](/rhetorical-questions#rhetorical) | `yal yem` | *I wonder who cares…* | I |
-| [Sounds like a check](/rhetorical-questions#rhetorical) | `yal yer` | *Just checking, it's Tuesday, right?* | I |
-| [Quiz](/rhetorical-questions#quiz): `yel` before `yal`, you know the answer | `yel yal ? zar dubogal vabuvul.` | *So who punched the box?* | I |
-| [Question demanded as an order](/rhetorical-questions#stacked-questions) | `yel yol` | *Tell me where you were.* | I |
-| [Question that hopes for *no*](/rhetorical-questions#stacked-questions) | `yel yul ? zawan vudurul.` | *You're not leaving, are you?* | I |
+| [Question you don't want answered](/more-turn-words#rhetorical): `yal` before `yel` | `yal yel zar vegemal.` | *Who cares?* (nobody) | I |
+| [Musing](/more-turn-words#rhetorical) | `yam yel zar vegemal.` | *Who really cares, though?* | I |
+| [Rhetorical for now](/more-turn-words#rhetorical) | `yar yel` | *Surely, as things stand…?* | I |
+| [Sounds like idle wondering](/more-turn-words#rhetorical) | `yal yem` | *I wonder who cares…* | I |
+| [Sounds like a check](/more-turn-words#rhetorical) | `yal yer` | *Just checking, it's Tuesday, right?* | I |
+| [Quiz](/more-turn-words#quiz): `yel` before `yal`, you know the answer | `yel yal ? zar dubogal vabuvul.` | *So who punched the box?* | I |
+| [Question demanded as an order](/more-turn-words#stacked-questions) | `yel yol` | *Tell me where you were.* | I |
+| [Question that hopes for *no*](/more-turn-words#stacked-questions) | `yel yul ? zawan vudurul.` | *You're not leaving, are you?* | I |
 
 <PageBreak />
 

@@ -152,6 +152,9 @@ export const hashRedirects: HashRedirect[] = [
   { page: "set-joins.md", hash: "and-or-and-the-full-set-map", to: "set-joins.md", toHash: "set-joins" },
   { page: "comparative-arity.md", hash: "place-on-a-scale-sitting", to: "comparative-arity.md", toHash: "ranking-on-any-scale" },
   { page: "speech-moves.md", hash: "thinking-sounds", to: "phonology.md", toHash: "thinking-sounds" },
+  { page: "rhetorical-questions.md", hash: "rhetorical", to: "more-turn-words.md", toHash: "rhetorical" },
+  { page: "rhetorical-questions.md", hash: "quiz", to: "more-turn-words.md", toHash: "quiz" },
+  { page: "rhetorical-questions.md", hash: "stacked-questions", to: "more-turn-words.md", toHash: "stacked-questions" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */

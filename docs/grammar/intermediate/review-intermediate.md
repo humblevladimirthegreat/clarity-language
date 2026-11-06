@@ -635,7 +635,7 @@ y-statement | y-question | z-wh | v-cook
 
 The statement word first makes it rhetorical; **`yel yal`** is a quiz that wants the answer said.
 
-**Rule:** [Rhetorical question](rhetorical-questions.md#rhetorical)
+**Rule:** [Rhetorical question](more-turn-words.md#rhetorical)
 :::
 
 **28.** *Azozon makes Alazun sing.* `zalazun vozuyel thewom blazozon.` or `zazozon vozuyel thewom blalazun.`

@@ -72,12 +72,12 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
     reader: "The same `y-` act twice is one act said more insistently: `y-prohibition | y-prohibition` = *Don't. I mean it.*; `y-question | y-question` = *I really need to know: …?*",
   },
   "leftEdge.ForceAnswer": {
-    anchor: "rhetorical-questions.md#rhetorical",
+    anchor: "more-turn-words.md#rhetorical",
     summary: "yal yel rhetorical question",
     reader: "`y-statement | y-question` before a body is a rhetorical question: the speaker asserts the obvious answer and asks for no reply (`y-statement | y-question | z-wh | v-care` = *Who cares?*, nobody does).",
   },
   "leftEdge.ForceQuiz": {
-    anchor: "rhetorical-questions.md#quiz",
+    anchor: "more-turn-words.md#quiz",
     summary: "yel yal quiz",
     reader: "`y-question | y-statement` is a quiz: the asker already knows the answer and wants the listener to say it (*So who punched the box? You tell me.*).",
   },
