@@ -143,6 +143,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *pill* | `ebebul` |
 | *walk* | `vowurol` |
+| *see* | `vayebel` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -204,6 +205,24 @@ z-bottle-x | g-50yo
 *Three quarters of the bottles.*
 :::
 
+**3.** `zazozon vowurol bagorum gradom.`
+
+::: details Show answer
+z-Azozon | v-walk | [b-hour | g-two.about]
+
+*Azozon walks for about two hours.*
+:::
+
+**4.** `zazozon dawodalx g+25% vayebel.`
+
+::: details Show answer
+🔊 `zazozon dawodalx gradozayol vayebel.`
+
+z-Azozon | [d-bottle-x | g-25yo] | v-see
+
+*Azozon sees 25% of the bottles.*
+:::
+
 
 #### Pick one {#intermediate-pick-one}
 
@@ -215,6 +234,18 @@ z-bottle-x | g-50yo
 z-pill-x | g-third-of
 
 Marker **`ru`** divides: *a third of*; **`ra`** is three pills.
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Azozon walks for half an hour.* <!-- lint: error -->`zazozon vowurol bagorum grudol.`
+
+::: details Show answer
+`zazozon vowurol bagorum grabal grudol.`
+
+z-Azozon | v-walk | [b-hour | g-one | g-half-of]
+
+After a unit, a minus number alone is a negative amount (*minus two hours*). Put the count first: *one*, then *half of*.
 :::
 
 ## See also

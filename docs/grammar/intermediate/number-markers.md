@@ -250,6 +250,16 @@ z-Alazun | [d-seat-x | g-twelve] | v-see
 [z-Alazun | [d-seat-x | g-three] | v-see | x-and | z-Azozon | d-←three | v-see]
 :::
 
+**4.** *Ahelan sees seat 4B.*
+
+::: details Show answer
+`zahelan duzohel g_4b vayebel.`
+
+🔊 `zahelan duzohel grehubul vayebel.`
+
+z-Ahelan | [d-seat | g-_4b] | v-see
+:::
+
 #### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zrodol dodoral vayebel.`
@@ -292,6 +302,16 @@ z-Alazun | d-minus-three | v-see
 z-Ahelan | [d-croissant-x | g-twelve] | v-see
 
 *Ahelan sees twelve croissants.* (at the snack stand)
+:::
+
+**6.** `zalazun duzohel g_e1 vayebel.`
+
+::: details Show answer
+🔊 `zalazun duzohel gre'ebal vayebel.`
+
+z-Alazun | [d-seat | g-_e1] | v-see
+
+*Alazun sees seat E1.*
 :::
 
 #### Pick one {#intermediate-pick-one}
