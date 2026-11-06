@@ -47,7 +47,7 @@ Stress is **loudness** only: say the first syllable a little louder, with a cris
 
 **Hold the ending.** Let the final `-l`, `-m`, `-n` or `-r` sound for a moment instead of clipping it. It is often the only difference between two words (`vul`, `vum`, `vur`), and all four are sounds you can hold. In singing, put the cutoff on it.
 
-#### Vowel pitch values {#vowel-pitch-values}
+### Vowel pitch values {#vowel-pitch-values}
 
 A vowel's pitch is an interval above your [home note](/phonology#vowel-pitch), not a fixed note, since voices differ by an octave or more:
 
