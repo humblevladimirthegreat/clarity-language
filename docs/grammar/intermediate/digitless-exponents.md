@@ -4,7 +4,7 @@ band: intermediate
 
 # How many and how big {#how-many-and-how-big}
 
-English *how many*, *thousands*, *27 million*, and *infinitely many* name an amount without listing every unit, or they name how big a number is. Everyday *three cats* and *the second book* stay in [numbers](/numbers).
+English *how many*, *thousands*, *27 million*, and *infinitely many* name an amount without listing every unit, or they name how big a number is. A long number is then said group by group. Everyday *three cats* and *the second book* stay in [numbers](/numbers).
 
 
 ### Digitless {#digitless}

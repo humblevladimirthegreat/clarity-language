@@ -743,7 +743,7 @@ z-Ahelan | [w-very | h-slow] | v-swim
 
 A degree word works before an adverb too, so `welazem` grades `huzezam`; with `guzezam` it would be *a very slow Ahelan swims*.
 
-**Rule:** [How much: degree words on `/w/`](very-and-slightly.md#degree-w)
+**Rule:** [How much: degree words](very-and-slightly.md#degree-w)
 :::
 
 **37.** *Azozon said, “Don't climb.”* `zazozon d[yul voguvol] vezuyol.` or `yul zazozon d[voguvol] vezuyol.`

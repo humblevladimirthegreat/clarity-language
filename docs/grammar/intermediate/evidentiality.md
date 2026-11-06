@@ -4,6 +4,8 @@ band: intermediate
 
 # How you know {#how-you-know}
 
+English *apparently*, *I hear*, *according to Azozon*, *judging by*, and *it will rain* each rest a claim on some kind of evidence. Ageben names that evidence on one channel word: how you know, how strong the evidence is, who or what it came from, and what grounds it.
+
 ### Evidentiality {#evidentiality}
 <a id="evidential"></a>
 <a id="content-readings"></a>

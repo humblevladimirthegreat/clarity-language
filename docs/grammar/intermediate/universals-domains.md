@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# Every and none {#every-and-none}
+# Talking about a whole kind {#talking-about-a-whole-kind}
 
 ### Every kind {#universals-domains-generics}
 <a id="generics"></a>

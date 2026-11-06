@@ -4,6 +4,8 @@ band: intermediate
 
 # Try {#try-sitting}
 
+English *try to*, how hard someone tries, and *failing that* say that someone attempts an act, how far they will go, and what comes next if it fails.
+
 ### Try {#try}
 <a id="attempt"></a>
 

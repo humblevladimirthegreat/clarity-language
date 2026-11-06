@@ -4,6 +4,8 @@ band: intermediate
 
 # Want and decide {#want-and-decide}
 
+English *I want to*, *I've decided to*, and *Alazun wants to* say what a mind holds about an act, not whether it happens. Ageben says each with a `/th/` stance word, and its ending says how long a want lasts or whether a decision can change.
+
 ### Want {#want}
 <a id="desire"></a>
 

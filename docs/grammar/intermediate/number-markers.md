@@ -4,6 +4,8 @@ band: intermediate
 
 # Number markers and endings {#number-markers-and-endings}
 
+English numbers do more than count a noun: *three* on its own, *minus three*, *about twenty*, *the Second …* in a title, a code such as *room 12* or *B12*, and a short way to write them. Ageben keeps the same one-word number and changes its role letter, marker vowel, or ending.
+
 ### Word shape
 
 Beginner already built one word: role letter, marker, digit syllables, ending. The same four slots hold every **free number** you meet next (a number word on its own, not built onto a content root).

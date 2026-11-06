@@ -2,7 +2,9 @@
 band: intermediate
 ---
 
-# Place on a scale {#place-on-a-scale-sitting}
+# Ranking on any scale {#ranking-on-any-scale}
+
+English *less than*, *more often than*, *earlier than*, *the more … the more*, and *twice as … as* rank things on more kinds of scale than a plain quality: how, how much, how often, when, and by how many times.
 
 ### Full comparative arity
 <a id="comparative-arity"></a>

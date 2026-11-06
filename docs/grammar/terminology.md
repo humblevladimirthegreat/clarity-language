@@ -260,7 +260,7 @@ Who counts as *we* / *you* when names are unavailable.
 
 **-x** on `/v/` (one shared act) vs on `/ɡ/` (property of the group as a unit).
 
-[The group as one](/collectives#verbs-v), [plurality](/collectives#adjectives-g)
+[Groups, further](/collectives#verbs-v), [plurality](/collectives#adjectives-g)
 
 ### Command / request / prohibition
 
@@ -350,7 +350,7 @@ Set **`a`** + singular SHARED = *both/each are ADJ*.
 
 SHARED kind plus invert / standalone joins; a SHARED word after the join can bound the set (`zual gwedanam blayan` *everyone we know*).
 
-[Every and none](/universals-domains#universals-domains-generics)
+[Talking about a whole kind](/universals-domains#universals-domains-generics)
 
 Closed **-l** allows no exceptions; open **-m** leaves the exceptions open (*as far as I know*, *as a rule*). A channel on the clause says how you know the general claim.
 
@@ -556,7 +556,7 @@ Right-close list closer; **conjunct** = listed item.
 
 `zuan` plus a SHARED kind: the kind itself as one individual, not its members (*the dodo is extinct*).
 
-[Every and none](/universals-domains#kind-reference)
+[Talking about a whole kind](/universals-domains#kind-reference)
 
 ### Label reach
 

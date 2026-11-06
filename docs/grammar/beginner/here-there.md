@@ -2,7 +2,9 @@
 band: beginner
 ---
 
-# Here and there {#here-there-and-somewhere}
+# Here, there, and somewhere {#here-there-and-somewhere}
+
+English *somewhere*, *nowhere*, *here*, *there*, *this*, and *that* point to a place or a thing without naming it.
 
 ### Somewhere, nowhere, everywhere {#place-indefinites}
 

@@ -4,6 +4,8 @@ band: intermediate
 
 # Ranges {#ranges-sitting}
 
+English *A through B*, *up to but not including B*, *strictly between*, *outside A–B*, and *from 3 to 5* name a stretch along an ordered line. Ageben writes each with one hook between the two ends.
+
 ### Ranges (`oel` / `uel` / `ual` / `uol` / `aol`) {#ranges}
 
 When the items sit on a line with an order (people in a queue, days, chapters, numbers), English *A through B* names a **range**: A, B, and everything between. Put a stacked hook between two words in the same role: `A HOOK B`. Between same-role words these hooks name only ranges; with `/b/` on the right and no `/b/` on the left, they are [extra-noun hooks](/hooks#extra-noun) (*toward*, *through*, *out of*, *against*, *using*).

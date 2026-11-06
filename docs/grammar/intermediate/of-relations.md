@@ -4,6 +4,8 @@ band: intermediate
 
 # Part of, made of, from {#part-of-made-of-from}
 
+English *part of*, *a cup of*, *made of*, and *from* each say how one noun sits toward another. Ageben names which with a relation word, the same way it writes *like*.
+
 ### Of relations (*part of*, *cup of*, *made of*, *from*) {#of-relations}
 <a id="noun-relations"></a>
 

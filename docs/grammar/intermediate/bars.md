@@ -4,6 +4,8 @@ band: intermediate
 
 # Than planned, enough, too {#than-planned-enough-too}
 
+English *more than planned*, *sleepier than usual*, *enough*, and *too much* compare against what a plan, an expectation, or a need sets, not against another thing. Ageben writes that stance word as the bar of a rank join.
+
 ### Comparing against a stance (bars) {#bars}
 
 English *more than planned* and *later than planned* rank one thing against a **value a stance sets**, not against another person: the plan sets how much and when. Write that `/th/` stance word, or that [intention adverb](/clause#intention-adverbs) on `/h/` (FORMER, ability, a say word), where the second name would go, right before the rank join. That word is the **bar**. The join closes everything before it, so the bar is part of the comparison: it says what you rank against. It is not your stance on the whole sentence.

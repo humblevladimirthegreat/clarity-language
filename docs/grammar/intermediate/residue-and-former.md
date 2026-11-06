@@ -4,7 +4,7 @@ band: intermediate
 
 # Residue and former {#residue-and-former}
 
-English *has left* and *used to tell* mix when the event happened and how it stands now. Ageben keeps those apart: **RESIDUE** and **FORMER** for how an outcome or a usual pattern stands, and *already* / *still* / *not yet* / *no longer* for a change compared with now.
+English *has left* and *used to tell* mix when the event happened and how it stands now. Ageben keeps those apart: **RESIDUE** and **FORMER** say only how an outcome or a usual pattern stands.
 
 ### Residue and former climate {#residue-and-former-climate}
 <a id="residue"></a>

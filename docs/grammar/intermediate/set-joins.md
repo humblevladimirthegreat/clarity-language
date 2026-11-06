@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# And/or and the full set map {#and-or-and-the-full-set-map}
+# Set joins {#set-joins}
 
 A set join says which listed items count: *and/or*, a denial of the whole list, and the set readings with one item or none.
 

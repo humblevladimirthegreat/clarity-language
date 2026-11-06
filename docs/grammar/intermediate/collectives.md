@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# The group as one {#the-group-as-one}
+# Groups, further {#groups-further}
 
 ### Associate-set resolution
 <a id="associate-resolution"></a>

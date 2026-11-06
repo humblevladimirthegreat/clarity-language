@@ -4,6 +4,7 @@ band: intermediate
 
 # Whose view {#whose-view}
 
+English *Azozon thinks*, *she's upset*, and *he doubts it* report someone else's view. Ageben names whose view a sentence gives by joining their name onto how they know it.
 
 ### Whose view (holder) {#holder}
 <a id="holder-seam"></a>

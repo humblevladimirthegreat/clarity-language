@@ -4,7 +4,7 @@ band: intermediate
 
 # Very and slightly {#very-and-slightly}
 
-### How much: degree words on `/w/` {#degree-w}
+### How much: degree words {#degree-w}
 
 Beginner used **`welazem`** *very* before an adjective. The same `/w/` slot takes a few stock degree words, and each one works before an adverb as well as an adjective.
 

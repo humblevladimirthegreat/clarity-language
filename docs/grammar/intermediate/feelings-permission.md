@@ -4,7 +4,7 @@ band: intermediate
 
 # Feelings {#feelings}
 
-English *anxious*, *thank you*, and *hopefully* mix a feeling, a thanks, and how you feel about a claim. Ageben keeps those apart: a **feeling** names the sake at stake, where it sits or points, and how it moves; **thanks** and **sorry** are a met or unmet sake said as a whole sentence; a **speaker attitude** such as *hopefully* is how you feel about the claim. The sake lattice (which payoff, whether it is met, and whose) is in [sakes](/sakes).
+English *anxious* and *hopefully* mix a feeling and how you feel about a claim. Ageben keeps those apart: a **feeling** names the sake at stake, where it sits or points, and how it moves; a **speaker attitude** such as *hopefully* is how you feel about the claim. The sake lattice (which payoff, whether it is met, and whose) is in [sakes](/sakes).
 
 ### Emotion compose {#emotion-compose}
 

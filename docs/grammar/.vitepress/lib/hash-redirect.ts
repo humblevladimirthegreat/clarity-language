@@ -145,6 +145,12 @@ export const hashRedirects: HashRedirect[] = [
   { page: "spans-as-words.md", hash: "topic-quotes", to: "quote-contents.md", toHash: "topic-quotes" },
   { page: "usually-vs-must.md", hash: "universality", to: "usually-vs-must.md", toHash: "generalization" },
   { page: "join-limits.md", hash: "scope-islands-join", to: "scope-islands.md", toHash: "scope-islands" },
+  { page: "resume-sense.md", hash: "resume-one-sense", to: "resume-sense.md", toHash: "resume-further" },
+  { page: "collectives.md", hash: "the-group-as-one", to: "collectives.md", toHash: "groups-further" },
+  { page: "label-reach.md", hash: "how-a-kind-holds", to: "label-reach.md", toHash: "how-a-label-holds" },
+  { page: "universals-domains.md", hash: "every-and-none", to: "universals-domains.md", toHash: "talking-about-a-whole-kind" },
+  { page: "set-joins.md", hash: "and-or-and-the-full-set-map", to: "set-joins.md", toHash: "set-joins" },
+  { page: "comparative-arity.md", hash: "place-on-a-scale-sitting", to: "comparative-arity.md", toHash: "ranking-on-any-scale" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */

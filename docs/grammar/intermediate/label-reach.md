@@ -2,7 +2,7 @@
 band: intermediate
 ---
 
-# How a kind holds {#how-a-kind-holds}
+# How a label holds {#how-a-label-holds}
 
 ### Classification packaging {#classification-packaging}
 
