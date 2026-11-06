@@ -4,7 +4,7 @@ band: beginner
 
 # Phonology {#phonology}
 
-How to **sound out** Ageben. Each letter has one pronunciation. Syllables end with a consonant only at the end of the word, so you know when words stop.
+How to **sound out** Ageben. Each letter has one pronunciation. Syllables end with a consonant only at the end of the word, so you know when words stop. When you need a moment to think, a held sound fills the pause.
 
 Pronounce each letter the same way every time. A **syllable** is one beat with one vowel. Spell the beats you actually say: a consonant starts a beat, and the last consonant of a content word (a word built on a root, such as a noun or verb) is where that word ends.
 
@@ -83,14 +83,6 @@ Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org
 A content word ends in one of four consonants: `-l`, `-m`, `-n`, or `-r`. That last consonant is the audible end of the word. Inside the word, consonants start syllables. They do not close a syllable in the middle.
 
 `azozon` = *a-zo-zon*. `odozel` = *o-do-zel*.
-## See also
-
-- Citation (root + ending, no sentence): [word-endings.md](word-endings.md)
-- Role letters in a clause: [clause.md](clause.md#role-letters)
-- Respelling an English name: [lexicon](lexicon.md#respell)
-- Numbers (role letter + `r` exception and [digit syllables](numbers.md#counts)): [numbers.md](numbers.md)
-- Mention spans (letter as form in a clause): [spans.md](spans.md)
-- Mid-word `x` and `th`: [compounds.md](compounds.md)
 
 ### Thinking sounds {#thinking-sounds}
 
@@ -102,3 +94,12 @@ When you need a moment in the middle of speaking, English fills the gap with *um
 | A held `a`, `e` or `o` (any of them), at its own pitch | I know what I mean but cannot find the word | may offer a word | Mouth open: the word is on its way |
 
 Do not hold `u`: a held `u` can sound like a denial.
+
+## See also
+
+- Citation (root + ending, no sentence): [word-endings.md](word-endings.md)
+- Role letters in a clause: [clause.md](clause.md#role-letters)
+- Respelling an English name: [lexicon](lexicon.md#respell)
+- Numbers (role letter + `r` exception and [digit syllables](numbers.md#counts)): [numbers.md](numbers.md)
+- Mention spans (letter as form in a clause): [spans.md](spans.md)
+- Mid-word `x` and `th`: [compounds.md](compounds.md)

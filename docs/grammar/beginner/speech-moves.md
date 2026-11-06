@@ -4,7 +4,7 @@ band: beginner
 
 # Speech moves {#speech-moves}
 
-How to start a new speech move with `/y/`: call someone, react, or say whether you are stating, asking, commanding, or forbidding. An act word is leftover-list work on claims: add a claim, rank an instruction, collapse to an answer, or take the act away. You can also hold a pause while you think, or keep the move you started going with `/x/`. How much talk remains is a different job.
+How to start a new speech move with `/y/`: call someone, react, or say whether you are stating, asking, commanding, or forbidding. An act word is leftover-list work on claims: add a claim, rank an instruction, collapse to an answer, or take the act away. You can also keep the move you started going with `/x/`. How much talk remains is a different job.
 
 ### Turn (`/y/`): start a new speech move {#turn-y}
 
