@@ -4,7 +4,7 @@ band: beginner
 
 # Causation {#causation}
 
-English *if*, *only if*, and *because* each tie a condition to an outcome. Ageben uses a hinge word for each, and the hinges keep three questions apart: whether the condition is **enough** for the outcome, whether the outcome **needs** it, and whether you claim the condition is a **fact**.
+English *if*, *only if*, and *if and only if* each tie a condition to an outcome. Ageben uses a hinge word for each, and the hinges keep two questions apart: whether the condition is **enough** for the outcome, and whether the outcome **needs** it. With all three, you do not claim the condition is a **fact**.
 
 
 ### If {#if}
@@ -25,9 +25,19 @@ The hinge's role letter follows the outcome. Use `/th/` (**`thohem`**) when the 
 >
 > "There is rain if there are clouds."
 
+When the condition is a whole sentence, put **`blarl`** in the `bl-` slot, as with [*because*](dependents.md#hinges), and say the condition as the next sentence.
+
+A command or request makes no claim, so an *if* hinge on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Ageben keeps the default order, with **`blarl`** last.
+
+> `yol vowurol thohem blarl zalazun vehohel.`
+>
+> y-command | v-walk | [th-if | bl-that-clause] | z-Alazun | v-sit
+>
+> "If Alazun sits, walk."
+
 As a plain noun, the same root is `zohel` *a door*.
 
-**Compare with:** for *X is enough* about one item from a list of options (*a book will do*), use an inclusive [join](joins.md#single-item-phrase), not a hinge.
+**Compare with:** for *X is enough* about one item from a list of options (*a book will do*), use an inclusive [join](joins.md#single-item-phrase), not a hinge. *Whether Alazun walks* is [**`derl`**](dependents.md#dependent-clauses), not **`thohem`**: *if* sets a condition, and *whether* leaves a yes-or-no question open.
 
 ### Only if {#only-if}
 
@@ -45,14 +55,17 @@ English *only if* (or *needs*) says the outcome cannot hold without the conditio
 >
 > "There is rain only if there are clouds."
 
-As a plain noun, the same root is `zebel` *a paper-roll*.
+As a plain noun, the same root is `zebel` *a paper-roll*. With a whole sentence as the condition, write **`thebem blarl`**.
 
-**Compare with:** *if* (`thohem` / `gohem`) leaves other routes possible. *Only if* says the outcome needs this.
+English *if and only if* says both at once: the condition is enough, and the outcome needs it. Use the hinge **`thehom`** (root **`eho`**), as in **`thehom blarl`** with the condition as the next sentence. Again you do not claim the condition is true. (cue: ↔️ *east-west*: each side only with the other)
+
+**Compare with:** *if* (`thohem` / `gohem`) leaves other routes possible. *Only if* says the outcome needs this, and *if and only if* says both.
 
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thohem` / `gohem`** | enough for the outcome; condition not asserted | *if* | `ohel` *door* | 🚪: walk through only if it opens |
 | **`thebem` / `gebem`** | the outcome needs this; condition not asserted | *only if* / *needs* | `ebel` *paper-roll* | 🧻: without it the situation does not run |
+| **`thehom`** | both ways; condition not asserted | *if and only if* | `ehol` *east-west* | ↔️: each side only with the other |
 
 `/th/` attaches to the event. `/ɡ/` attaches to the noun.
 
@@ -71,7 +84,9 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *flower* | `evelal` | 💮 |
 | *sun* | `ezalol` | ☀️ |
 | *bucket* | `obowal` | 🪣 |
+| *if* | `thohem` | 🚪 from *door*: walk through only if it opens |
 | *only if* | `thebem` | 🧻 from *paper-roll*: without it the situation does not run |
+| *iff* | `thehom` | ↔️ from *east-west*: each side only with the other |
 
 **Review:**
 
@@ -80,12 +95,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *if* | `thohem` |
+| *whether-clause* | `derl` |
+| *haste* | `hadurom` |
 | *rain* | `erulal` |
 | *night* | `anurul` |
 | *see* | `vayebel` |
 | *find* | `vumewel` |
-| *sit* | `vehohel` |
 
 #### English → Ageben {#beginner-english-to-ageben}
 
@@ -127,6 +142,14 @@ z-seedling-x | [g-if | bl-rain]
 `zalazun dobowal vumewel thohem blarl zazozon vozuyel.`
 
 z-Alazun | d-bucket | v-find | [th-if | bl-that-clause] | z-Azozon | v-sing
+:::
+
+**6.** *Azozon sings if and only if Ahelan sees a flower.*
+
+::: details Show answer
+`zazozon vozuyel thehom blarl zahelan develal vayebel.`
+
+z-Azozon | v-sing | [th-iff | bl-that-clause] | z-Ahelan | d-flower | v-see
 :::
 
 #### Ageben → English {#beginner-ageben-to-english}
@@ -171,6 +194,14 @@ z-Azozon | d-flower-x | v-see | [th-if | bl-night]
 *Azozon sees some flowers if it is night.*
 :::
 
+**6.** `yol dobowal hadurom vumewel thohem blerulal.`
+
+::: details Show answer
+y-command | d-bucket | h-haste | v-find | [th-if | bl-rain]
+
+*If it rains, find a bucket hastily.*
+:::
+
 #### Pick one {#beginner-pick-one}
 
 **1.** *There is a flower if there is rain.* `zevelal gohem blerulal.` or `zevelal thohem blerulal.`
@@ -181,16 +212,6 @@ z-Azozon | d-flower-x | v-see | [th-if | bl-night]
 z-flower | [g-if | bl-rain]
 
 The outcome is a noun (there is a flower), so the hinge takes `/ɡ/`; `/th/` attaches it to an event.
-:::
-
-**2.** *Alazun sits if it is night.* `zalazun vehohel thohem blanurul.` or `zalazun vehohel thohem danurul.`
-
-::: details Show answer
-`zalazun vehohel thohem blanurul.`
-
-z-Alazun | v-sit | [th-if | bl-night]
-
-The condition is the hinge's extra noun, so it takes a `bl-` word right after **`thohem`**.
 :::
 
 #### Fix it {#beginner-fix-it}
@@ -204,6 +225,17 @@ z-Ahelan | v-sing | [th-only-if | bl-sun]
 
 The outcome is the singing, an event, so the hinge is **`thebem`**; **`gebem`** would hang it on a noun.
 :::
+
+**2.** *Alazun sees whether Azozon sings.* <!-- lint: error -->`zalazun vayebel thohem blarl zazozon vozuyel.`
+
+::: details Show answer
+`zalazun vayebel derl zazozon vozuyel.`
+
+z-Alazun | v-see | d-whether-clause | z-Azozon | v-sing
+
+*Whether* leaves a yes-or-no open as what Alazun sees, so it is **`derl`**. **`thohem blarl`** sets a condition instead: *Alazun sees, in the case that Azozon sings*.
+:::
+
 ## See also
 
 - Inclusive single-item **`…aem` / `…ael`** (*at least X* / *X is enough*): [joins.md](joins.md#single-item-phrase)

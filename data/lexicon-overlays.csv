@@ -87,15 +87,15 @@ eyul,w,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal follow-up (practi
 odam,h,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,can-and-cant.md#ability-fallback
 odam,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,can-and-cant.md#ability-fallback
 orel,g,🪙,identity,IDENTITY,IDENTITY copula (identical-to / same-as),coin has two faces one substance; identity is one referent two labels,predication.md#identity
-ohem,th,🚪,clause_hinge,if,IF clause hinge (one-way conditional),door opens one way; opportunity is if without iff force,dependents.md#hinges
+ohem,th,🚪,clause_hinge,if,IF clause hinge (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if
 ohem,g,🚪,clause_hinge,if,IF clause hinge (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if
-ehom,th,↔️,clause_hinge,iff,IFF clause hinge (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,dependents.md#hinges
+ehom,th,↔️,clause_hinge,iff,IFF clause hinge (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,causation.md#only-if
 ehom,g,↔️,clause_hinge,iff,IFF clause hinge (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,iff-fault.md#only-because
 ahum,th,🧱,clause_hinge,because,BECAUSE clause hinge (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,dependents.md#hinges
 ahul,th,🧱,clause_hinge,because.fault,BECAUSE clause hinge with fault (the reason broke a norm),a wall stands on its foundation; -l locks the blame on a broken norm,fault.md#fault
 ahur,th,🧱,clause_hinge,because.share,BECAUSE clause hinge with a share (the reason contributed among others),a wall stands on its foundation; -r is one wall among several holding it up,fault.md#fault
 ahum,g,🧱,clause_hinge,because,BECAUSE clause hinge (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,iff-fault.md#only-because
-ebem,th,🧻,clause_hinge,only-if,ONLY-IF clause hinge (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,dependents.md#hinges
+ebem,th,🧻,clause_hinge,only-if,ONLY-IF clause hinge (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
 ebem,g,🧻,clause_hinge,only-if,ONLY-IF clause hinge (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
 ezem,h,🦓,clause_hinge,although,ALTHOUGH clause hinge (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#hinges
 ezem,g,🦓,clause_hinge,although,ALTHOUGH clause hinge (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#hinges

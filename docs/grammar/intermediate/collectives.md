@@ -89,7 +89,7 @@ For *each other*, join the people in `/z/` and add **`hehom`** after the verb. T
 
 With **-l**, **`hehol`** is strictly pairwise: every one of them does it to every other one. **-m** is the everyday *each other* / *one another*, where it only has to go both ways in general.
 
-**Compare with:** **`thehom blarl`** on `/th/` is *if and only if* ([dependents](/dependents#hinges)). On `/h/` with no `/b/`, the same root is *each other*.
+**Compare with:** **`thehom blarl`** on `/th/` is *if and only if* ([causation](/causation#only-if)). On `/h/` with no `/b/`, the same root is *each other*.
 
 ### Adjectives (`/ɡ/`): collective {#adjectives-g}
 <a id="collective"></a>

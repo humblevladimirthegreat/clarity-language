@@ -50,13 +50,13 @@ For English *whether*, change the vowel to **`e`**: **`derl`**. The inner senten
 >
 > "Azozon sees whether Alazun walks."
 
-**Compare with:** *the dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. *If Alazun walks* sets a condition rather than filling a role, so it takes a hinge word instead of a stand-in on its own (next section).
+**Compare with:** *the dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. *Because Alazun walks* gives a reason rather than filling a role, so it takes a hinge word instead of a stand-in on its own (next section).
 
-### Because, if, although (hinges) {#hinges}
+### Because, although (hinges) {#hinges}
 
-Words like *because*, *if*, and *although* attach a dependent clause as a reason, a condition, a contrast, or a time. Ageben uses a pair for this: a **hinge** word that names the link, then the stand-in **`blarl`** right after it. The hinge is a relation word, so **`blarl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`blarl`** at the very end.
+Words like *because* and *although* attach a dependent clause as a reason, a contrast, or a time. Ageben uses a pair for this: a **hinge** word that names the link, then the stand-in **`blarl`** right after it. The hinge is a relation word, so **`blarl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`blarl`** at the very end.
 
-The hinge's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, and *so that* is your own aim for the event, so they take `/th/`. *Although*, *while*, *until*, *before*, and *after* describe the event itself, so they are adverbs on `/h/`.
+The hinge's role letter follows the clause page. *Because* is your [stance](clause.md#stance-th) on why the claim holds, and *so that* is your own aim for the event, so they take `/th/`. *Although*, *while*, *until*, *before*, and *after* describe the event itself, so they are adverbs on `/h/`.
 
 > `zazozon vozuyel thahum blarl zalazun vowurol.`
 >
@@ -72,9 +72,6 @@ You can also say:
 | Ageben | English | Same root as | Cue |
 |--------|---------|--------------|-----|
 | **`thahum blarl`** | *because* | `ahul` *wall* | 🧱: the cause is what the result sits on |
-| **`thohem blarl`** | *if* | `ohel` *door* | 🚪: walk through only if it opens |
-| **`thebem blarl`** | *only if* | `ebel` *paper-roll* | 🧻: without it the situation does not run |
-| **`thehom blarl`** | *if and only if* | `ehol` *east-west* | ↔️: each side only with the other |
 | **`thovam blarl`** | *so that* / *in order to* | `oval` *goal* | 🥅: you act so the shot counts |
 | **`hezem blarl`** | *although* / *even though* | `ezel` *zebra* | 🦓: two stripes, still one animal |
 | **`herom blarl`** | *while* (at the same time) | `erol` *gemini* | ♊: two things at once |
@@ -82,14 +79,6 @@ You can also say:
 | **`huvahum blarl`** | *by the time* | `uvahul` *finish-line* | 🏁: done by the time you reach the flag |
 | **`habam blarl`** | *before* | `abal` *backpack* | 🎒: packed first |
 | **`halam blarl`** | *after* | `alal` *sand* | ⌛: the sand has already run through |
-
-A command or request makes no claim, so an *if* hinge on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Ageben keeps the default order, with **`blarl`** last.
-
-> `yol vowurol thohem blarl zalazun vehohel.`
->
-> y-command | v-walk | [th-if | bl-that-clause] | z-Alazun | v-sit
->
-> "If Alazun sits, walk."
 
 English *despite* takes a noun instead of a clause (*despite Alazun*). Use the same **`hezem`** hinge and put that noun in a `bl-` word where **`blarl`** would go. As with *although*, the obstacle is taken as fact, and you add no second word for it. The hinge is on `/h/` because it describes the event, never on `/th/`. To attach it to a noun instead, use `/ɡ/`: **`gezem`**. (cue: 🦓 *zebra*: two stripes, still one animal)
 
@@ -103,7 +92,7 @@ Ordinary `zezel` is still *a zebra*.
 
 The sentence after **`blarl`** has to name an event or a thing, so it needs a noun or a verb. A stance word by itself does not fill it.
 
-**Compare with:** discourse *however* and *therefore* start a new sentence after a finished claim; they are not *although*. *Whether Alazun walks* is **`derl`**, not **`thohem`**: *if* sets a condition, and *whether* leaves a yes-or-no question open.
+**Compare with:** discourse *however* and *therefore* start a new sentence after a finished claim; they are not *although*.
 
 ### Times (*while*, *before*, *after*, *until*, *by*) {#time-hinges}
 
@@ -188,7 +177,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *that-clause* | `darl` | **a** ≈ add: the content that follows |
 | *whether-clause* | `derl` | **e** ≈ choice: pick yes or no |
 | *because* | `thahum` | 🧱 from *wall*: the cause is what the result sits on |
-| *if* | `thohem` | 🚪 from *door*: walk through only if it opens |
 | *although* | `hezem` | 🦓 from *zebra*: two stripes, still one animal |
 | *so-that* | `thovam` | 🥅 from *goal*: you act so the shot counts |
 
@@ -277,15 +265,7 @@ z-Ahelan | v-see | d-whether-clause | z-guard | v-sit
 *Ahelan sees whether the guard sits.*
 :::
 
-**3.** `zagayul hadurom veruvol thohem blarl zalazun veyamul.`
-
-::: details Show answer
-z-guard | h-haste | v-run | [th-if | bl-that-clause] | z-Alazun | v-scream
-
-*A guard runs hastily if Alazun screams.*
-:::
-
-**4.** `zalazun vebemol. zagayul dalazun vayebel.`
+**3.** `zalazun vebemol. zagayul dalazun vayebel.`
 
 ::: details Show answer
 z-Alazun | v-peek . z-guard | d-Alazun | v-see
@@ -293,12 +273,20 @@ z-Alazun | v-peek . z-guard | d-Alazun | v-see
 *The guard sees Alazun, who peeks.*
 :::
 
-**5.** `zahelan vezuyol bagayul darl zazozon gonumul vehohel.`
+**4.** `zahelan vezuyol bagayul darl zazozon gonumul vehohel.`
 
 ::: details Show answer
 z-Ahelan | v-tell | b-guard | d-that-clause | [z-Azozon | g-angry] | v-sit
 
 *Ahelan tells the guard that an angry Azozon sits.*
+:::
+
+**5.** `zagayul veruvol wadurom halam blarl zalazun veyamul.`
+
+::: details Show answer
+z-guard | v-run | [[w-haste | h-after] | bl-that-clause] | z-Alazun | v-scream
+
+*A guard runs as soon as Alazun screams.*
 :::
 
 #### Pick one {#beginner-pick-one}

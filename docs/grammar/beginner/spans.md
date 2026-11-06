@@ -140,7 +140,7 @@ An `/h/` aside is a side detail about the action itself, not about your claim:
 
 A one-word comment with nothing to package is a plain word in that slot: `zazozon vowurol hugowul.`
 
-**For *because* / *if*, use:** [**`blarl`**](dependents.md#hinges) dependents, not an aside.
+**For *because*, use:** [**`blarl`**](dependents.md#hinges) dependents, not an aside.
 
 **Compare with:** a second name for the same person uses [identity](predication.md#identity) (`gore` + `/b/`). To pick out **which** noun (*the guard who sits*), use a plain adjective or [another sentence](dependents.md#which-noun), not a noun aside.
 
