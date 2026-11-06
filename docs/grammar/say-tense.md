@@ -42,7 +42,7 @@ Every offset counts from now, or from the *as-of* now when one is set. No row ne
 
 ### Simple past: pick how you know {#simple-past}
 
-**Needs:** [Live vs memory](/live-and-memory#live-vs-memory) · [Dated channel](/dated-channel#dated-channel)
+**Needs:** [Live vs memory](/knowing#live-vs-memory) · [Dated channel](/dated-channel#dated-channel)
 
 English *Azozon walked* hides whether you saw it, read it, or were told. Choose the channel. A remembered sighting is MEMORY. Add a `-` amount to say how long ago.
 
@@ -116,7 +116,7 @@ English *had left* means the leaving counted **as of** an earlier moment. Write 
 
 ### Progressive: mid-way, in view, or still {#progressive}
 
-**Needs:** [In progress](/predication#in-progress) · [Live vs memory](/live-and-memory#live-vs-memory) · [Already, still, not yet](/already-still-yet#phasal)
+**Needs:** [In progress](/predication#in-progress) · [Live vs memory](/knowing#live-vs-memory) · [Already, still, not yet](/already-still-yet#phasal)
 
 English *is walking* usually means one of three things. Put the event root on `/ɡ/` when you say they are in the middle of it. Say **`thugem`** when the walking is in view now. Say **`hawum`** when you stress that it goes on.
 

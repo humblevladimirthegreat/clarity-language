@@ -227,7 +227,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `thenam` | AS-OF stance hinge (asserted whose-now / dated ledger) | [Stance as-of](/as-of#stance-as-of) | A |
 | `thenar` | AS-OF stance hinge (asserted whose-now / dated ledger) resume | [Stance as-of](/as-of#stance-as-of) | A |
 | `thevul` | memory evidential with strong evidence (vivid memory) | [Evidence strength](/evidentiality#evidence-strength) | I |
-| `thevum` | memory evidential (remembered firsthand / reconstructive) | [Live vs memory](/live-and-memory#live-vs-memory) | B |
+| `thevum` | memory evidential (remembered firsthand / reconstructive) | [Live vs memory](/knowing#live-vs-memory) | B |
 | `thevur` | memory evidential with weak evidence (hazy memory) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thewom` | CAUSE mood (mechanism framing); a hosted /b/ with no hinge is the causer (make) | [CAUSE](/cause#cause) | I |
 | `theyol` | clues evidential with strong evidence (strong clues) | [Evidence strength](/evidentiality#evidence-strength) | I |
@@ -257,7 +257,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `thubom` | pattern evidential (from trail of cases) | [Evidentiality](/evidentiality#evidentiality) | I |
 | `thubor` | pattern evidential with weak evidence (a few cases) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thugel` | live evidential with strong evidence (clear full view) | [Evidence strength](/evidentiality#evidence-strength) | I |
-| `thugem` | live evidential (sensed now: in view / in earshot / on the skin) | [Live vs memory](/live-and-memory#live-vs-memory) | B |
+| `thugem` | live evidential (sensed now: in view / in earshot / on the skin) | [Live vs memory](/knowing#live-vs-memory) | B |
 | `thuger` | live evidential with weak evidence (a glimpse) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thunom` | AS-OF stance hinge (unasserted whose-now / placeholder now) | [Stance as-of](/as-of#stance-as-of) | A |
 | `thunor` | AS-OF stance hinge (unasserted whose-now / placeholder now) resume | [Stance as-of](/as-of#stance-as-of) | A |

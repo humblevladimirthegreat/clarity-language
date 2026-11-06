@@ -484,5 +484,5 @@ z-Alazun | th-MEMORY | v-fight
 
 **LIVE** is now; **MEMORY** is a scene you remember sensing.
 
-**Rule:** [Live vs memory](live-and-memory.md#live-vs-memory)
+**Rule:** [Live vs memory](knowing.md#live-vs-memory)
 :::

@@ -288,7 +288,7 @@ Abstract ideas are hard to hold onto; without a concrete picture, the psychologi
 Many roots have an **abstract** sense beside a **concrete** one, so an idea you cannot see is tied to a familiar scene that already carries the caution. For example:
 
 - [Memory as fishing](/evidentiality#evidentiality) ([a guess as fact](#trap-certainty)): cast into opaque water; you may pull up a fish or a **boot** (the memory can be wrong).
-- [Live look as attesting](/live-and-memory#live-vs-memory) ([a guess as fact](#trap-certainty)): you report what you see while the scene is still in view.
+- [Live look as attesting](/knowing#live-vs-memory) ([a guess as fact](#trap-certainty)): you report what you see while the scene is still in view.
 - [Residue as unpaid debt](/residue-and-former#residue) ([a moment as identity](#trap-identity)): the result still counts, like a balance still owed; not a past tense.
 - [Former climate as an empty nest](/residue-and-former#former-climate) ([a moment as identity](#trap-identity)): the nesting season is over; a pattern that has ended, not a past tense.
 - [A pattern as paw-prints](/usually-vs-must#generalization) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.

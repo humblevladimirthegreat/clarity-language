@@ -18,8 +18,8 @@ Pick one channel. LIVE and MEMORY place the event in time; the others do not.
 <!-- cheat-sheet: knowing-intending -->
 | Channel | Kind | Ageben | English | Stage |
 |---------|------|--------|---------|-------|
-| LIVE | direct | [`thugem`](/live-and-memory#live-vs-memory) | *live* / *from the scene* | B |
-| MEMORY | direct | [`thevum`](/live-and-memory#live-vs-memory) | *from memory* | B |
+| LIVE | direct | [`thugem`](/knowing#live-vs-memory) | *live* / *from the scene* | B |
+| MEMORY | direct | [`thevum`](/knowing#live-vs-memory) | *from memory* | B |
 | PATTERN | reasoned | [`thubom`](/evidentiality#evidentiality) | *from the pattern* | I |
 | CLUES | reasoned | [`theyom`](/evidentiality#evidentiality) | *from the clues* / *apparently* | I |
 | DEDUCED | reasoned | [`thanam`](/evidentiality#evidentiality) | *it follows* / *by deduction* | I |

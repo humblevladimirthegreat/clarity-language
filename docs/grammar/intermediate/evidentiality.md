@@ -10,7 +10,7 @@ English *apparently*, *I hear*, *according to Azozon*, *judging by*, and *it wil
 <a id="evidential"></a>
 <a id="content-readings"></a>
 
-You already pick [LIVE or MEMORY](/live-and-memory#live-vs-memory) when the claim is in your senses now, or you remember sensing it. Five more channels finish the map: similar cases, clues about this case, a proof from premises, a report, or a gut sense. The same walk can then be reported seven ways, and the listener always knows what your claim rests on. Under other role letters the channel roots are ordinary words (`vugel` *to attest*, `debal` *an ear`).
+You already pick [LIVE or MEMORY](/knowing#live-vs-memory) when the claim is in your senses now, or you remember sensing it. Five more channels finish the map: similar cases, clues about this case, a proof from premises, a report, or a gut sense. The same walk can then be reported seven ways, and the listener always knows what your claim rests on. Under other role letters the channel roots are ordinary words (`vugel` *to attest*, `debal` *an ear`).
 
 The seven channels come in four kinds. Two are **direct** (already taught): you sensed it yourself, now (LIVE) or earlier (MEMORY). Three are **reasoned**: you worked it out from similar cases (PATTERN), from clues about this case (CLUES), or from premises it must follow from (DEDUCED). One is **received**: someone else said or wrote it (REPORTED). One is **internal**: a sense you cannot fully spell out (INTUITION).
 

@@ -235,7 +235,7 @@ English adds *and maybe more* after whatever might not be complete. Ageben says 
 | *according to someone* (a source you won't name / don't know) | **`thebam blumen`**, then `zuwen vanam derl zar.` / `zuwen vanam vul derl zar.` | [Source](/evidentiality#source) |
 | *never* / *always*, in the times we both know | **`hal thevumayan`** / **`hual thevumayan`** | [Holder](/holder#holder) |
 | *never since …* / *always, until …* / *always around …* (a stretch you name) | **`huxal`** / **`hoexual`** / **`hemxual`** + the time: `hoexual blanulul` | [Bounding a time](/hooked-joins#hooked-joins-time) |
-| *where was it again?* (remind me) | MEMORY on the question: `yel el bar zayan thevum vagedal.` | [Live vs memory](/live-and-memory#live-vs-memory) |
+| *where was it again?* (remind me) | MEMORY on the question: `yel el bar zayan thevum vagedal.` | [Live vs memory](/knowing#live-vs-memory) |
 | *where shall we …?* / *what shall we do?* (a choice) | PLAN on the question: `yel el bar zayan thagom vagedal.`, `yel var zayan thagom.` | [Plan](/intention#plan) |
 
 ### Adjectives made from a noun (*golden*, *royal*, *solar*) {#noun-adjectives}

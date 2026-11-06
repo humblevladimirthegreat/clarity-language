@@ -156,6 +156,12 @@ export const hashRedirects: HashRedirect[] = [
   { page: "rhetorical-questions.md", hash: "quiz", to: "more-turn-words.md", toHash: "quiz" },
   { page: "rhetorical-questions.md", hash: "stacked-questions", to: "more-turn-words.md", toHash: "stacked-questions" },
   { page: "rhetorical-questions.md", hash: "rhetorical-questions", to: "more-turn-words.md", toHash: "rhetorical" },
+  { page: "live-and-memory.md", hash: "live-vs-memory", to: "knowing.md", toHash: "live-vs-memory" },
+  { page: "live-and-memory.md", hash: "memory-record", to: "knowing.md", toHash: "memory-record" },
+  { page: "live-and-memory.md", hash: "memory", to: "knowing.md", toHash: "memory" },
+  { page: "live-and-memory.md", hash: "record-past", to: "knowing.md", toHash: "record-past" },
+  { page: "live-and-memory.md", hash: "live", to: "knowing.md", toHash: "live" },
+  { page: "live-and-memory.md", hash: "reconstructive-catch", to: "knowing.md", toHash: "reconstructive-catch" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */
