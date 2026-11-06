@@ -1,9 +1,9 @@
 # Proposal: Fixing what the sitting re-audit found
 
-**Status:** ready to implement. Decided 2026-11-06: every recommendation accepted (edits E1–E13, changes D1–D14, and the pass rulings); the *someone* overlap between `pronouns.md` and `joins.md` is dropped, because that special pronoun leaves in a future update. **Workstream 1 done** 2026-11-06 (units 1a–1e); workstream 2 not started. One new open decision from E11. `AGENTS.md` Owns lines for the final step, from 1b: `very-and-slightly.md` → "degree words"; `resume-sense.md` → "resume, further: one sense, cross-role recast"; `collectives.md` → "groups, further: collectives, each other, addressing several people"; `label-reach.md` → "how a label holds: packaging, IDENTITY endings"; `universals-domains.md` → "a whole kind: universals, domains"; `comparative-arity.md` → "ranking on any scale"; `here-there.md` → "here, there, and somewhere". Carried over from the closed sitting-cohesion run: the user still has to paste `dist/amplify-redirects.json` into the Amplify console ([steps](../meta/site-redirects.md#add-a-remap-page-rename)).
+**Status:** partially implemented. Decided 2026-11-06: every audit recommendation accepted (changes D1–D15 and the pass rulings); the *someone* overlap between `pronouns.md` and `joins.md` is dropped, because that special pronoun leaves in a future update. Workstream 1 (the edits that needed no moves) is done, commits `c371aa93`–`4d250b42`, 2026-11-06. Decided 2026-11-06: percentage points get a unit noun, so a rise in points takes the measure `/b/` pattern (D16). **Next:** workstream 2, unit 2a, in a new session. `AGENTS.md` Owns lines to apply at the final step, from workstream 1: `very-and-slightly.md` → "degree words"; `resume-sense.md` → "resume, further: one sense, cross-role recast"; `collectives.md` → "groups, further: collectives, each other, addressing several people"; `label-reach.md` → "how a label holds: packaging, IDENTITY endings"; `universals-domains.md` → "a whole kind: universals, domains"; `comparative-arity.md` → "ranking on any scale"; `here-there.md` → "here, there, and somewhere". Carried over from the closed sitting-cohesion run: the user still has to paste `dist/amplify-redirects.json` into the Amplify console ([steps](../meta/site-redirects.md#add-a-remap-page-rename)).
 **Related:** [what one sitting holds](../meta/grammar-docs.md#one-sitting), [page skeleton](../meta/grammar-docs.md#page-skeleton), [recipe track](../meta/grammar-docs.md#recipe-track), [gates](../meta/learning-levels.md#gates), [restructuring sittings](../meta/procedures/restructure-sittings.md), [drill allowlist](../meta/procedures/drill-generation.md#allowlist), [site redirects](../meta/site-redirects.md).
 **Depends on:** none. The findings come from the sitting-cohesion re-audit (commit `04668ade`).
-**Design authority:** none for forms or readings. It moves H3s between pages and bands, retitles pages, renames two files, retires four, and fixes prose, practice items, and allowlist rows.
+**Design authority:** one form: D16's unit noun for percentage points, as a measure on `/b/`. Otherwise none; it moves H3s between pages and bands, retitles pages, renames two files, retires four, and fixes prose, practice items, and allowlist rows.
 
 ## Problem
 
@@ -12,74 +12,20 @@ After sitting-cohesion, a read-only audit checked 77 sittings against [what one 
 - forms a learner must pick between that sit on different pages
 - titles and lead lines that do not cover their page
 - a few H3s in the wrong band
-- content slips
-- stale allowlist rows
 - filenames that no longer name their page
 
 The user accepted the auditors' recommendation for each finding; this proposal carries them out.
 
 ## Goals
 
-1. Every edit and change below lands.
+1. Every change below lands.
 2. Every sitting touched still passes tests 1–8.
 3. No learner-facing URL breaks without a redirect.
 
 ## Non-goals
 
-- New forms or readings, and audits of pages outside the findings.
+- New forms or readings other than D16, and audits of pages outside the findings.
 - The two Beginner words for *someone* (`pronouns.md` special pronoun, `joins.md` #unspecified-member-r-phrase): the special pronoun is to be dropped, so leave both as they are.
-
-## Edits (workstream 1)
-
-These need no page moves.
-
-**Content slips**
-
-- **E1** `dependents.md:313` (Pick one answer) says *whether* takes stand-in **`o`**. The page (line 45) and the parser give `derl`, vowel **`e`**. Fix the label.
-- **E2** `tag-pronouns.md:168` (Fix it answer): cut ", whoever acted last". A tag stays on its referent whoever acts later.
-- **E3** `stance-bars.md:11`: the lead sentence has no subject. Replace it with: "A plan bar ranks against what a plan set, a channel bar against what a source led you to expect, and a sake bar against what a sake needs. Any other stance that sets a value can be the bar too, and each keeps its own endings and meaning." Keep its links to `bars#bars`, `bars#channel-bars`, `bars#sake-bars`. D12 later cuts the page's channel-bar teaching; this sentence still fits.
-- **E4** `usually-vs-must.md`: its H3 id is `#universality`, while `universality.md` teaches mood on one adjective. Make the id `generalization`, keep `universality` as an alias anchor, and retarget inbound links.
-- **E5** `join-limits.md` Scope islands re-teaches `scope-islands.md` (Intermediate). Cut it to a Compare-with line to `/scope-islands#scope-islands`, and retarget `as-of.md:105`.
-
-**Lead lines and titles** ([page skeleton](../meta/grammar-docs.md#page-skeleton) item 1 requires a title and a one-line job on every page)
-
-- **E6** Lead lines that promise jobs the page doesn't teach:
-  - `residue-and-former.md`: drop the *already / still / not yet / no longer* clause; that job is on `already-still-yet.md`.
-  - `feelings-permission.md`: drop *thank you* and the thanks / sorry clause; that job is on `thanks-and-sorry.md`.
-- **E7** Add a one-line English-job lead under the title of `of-relations`, `number-markers`, `ranges`, `evidentiality`, `holder`, `bars`, `try`, and `want-and-decide`. The extra-noun-hooks lead goes with D4, and `no-subject` stays as is (its one H3 has the page's title).
-- **E8** Retitles with no move. Each title then covers every H3 on its page. Keep each H1 id, or record a renamed id per [one current heading, one current id](../meta/grammar-docs.md#one-current-heading-one-current-id).
-  - `resume-sense.md` → "Resume, further" (all three readings of whole-stem `-r`, not only `-rl` / `-rm`).
-  - `collectives.md` → "Groups, further" (the rest of the `-x` family after Beginner plurality).
-  - `label-reach.md` → "How a label holds" (covers the IDENTITY endings too).
-  - `universals-domains.md` → "Talking about a whole kind" (covers `zuan` and `eyen`).
-  - `set-joins.md` → "Set joins", to match "Rank joins".
-  - `comparative-arity.md` → "Ranking on any scale", with a lead naming *less than*, *more often than*, *earlier than*, *the more … the more*, *twice as … as*. Today the page title equals one of its 8 H3s.
-  - `here-there.md` → "Here, there, and somewhere", plus a lead line. Its id already says here-there-and-somewhere.
-  - `digitless-exponents.md`: add "and how a long number is said group by group" to the lead, and keep Group separator on the page. Its examples need exponents, which number-markers comes before.
-  - `very-and-slightly.md` H3 "How much: degree words on `/w/`" → "How much: degree words", since `hayurom` is on `/h/`. D6 moves `herugom` off the page.
-
-**Small cross-page edits**
-
-- **E9** `permission-consent.md`, under "Someone over the act": add a Compare-with line to `/can-and-cant`. *Can I …?* asking leave is a say word, not ability.
-- **E10** `want-and-decide.md`: `holder.md` homes *someone else's plan*. Retitle the H3 to "Someone else's want or decision", and replace its PLAN example with a link to `holder.md#holder`.
-
-**Practice**
-
-- **E11** `measures-and-percent.md` English → Ageben item 3 (*Three to five hours*) drills a range, and ranges moved to `ranges.md`. Replace it with *The price of the pills went up two percentage points.*, which drills percent vs points; that H3 has no item today.
-- **E12** `nested-dependents.md`: the nesting does not need the late verb. A default-order version of E→A 2 parses with the same structure. Use subject, object, verb in every clause with an object: E→A 1–3, A→E 1–3, Fix it, What changes. This clears the build's three word-order warnings.
-
-**Allowlist rows** (`docs/meta/procedures/drill-generation.md`)
-
-- **E13** Rows that no longer match their pages:
-  - `comparatives.md`: "Rank fence **`e`/`ae`/`ue`**" → rank **`o`** (`zol`) + SHARED scale; single-item superlative; equative **`oe`**.
-  - `roles.md`: "reach `a`/`e`" → reach `u` / `o`.
-  - `proper-names.md`: add one of a name `-ln`, and countries and traditions.
-  - `evidentiality.md`: list the page's H3s. Those are channels after LIVE / MEMORY, evidence strength, hand depth, source `bl-`, forecasts, the evidence clause, carry forward, and deduction. Drop "MAY vs nearby jobs" and `blweyer` / `blwayer`, which no grammar page teaches.
-  - `comparative-arity.md`: list all 8 H3s.
-  - `number-markers.md`: ranges are on `ranges.md` and clock / calendar time on Beginner `digit-strings.md`, not `measures-and-percent.md`.
-  - `stand-in-roles.md` and `nested-dependents.md`: Notes still give finished instructions. Keep only the standing notes.
-
-  Rows for pages that D1–D14 retire, move, or rename are fixed in those units, not here.
 
 ## Changes (workstream 2)
 
@@ -97,7 +43,7 @@ Each change moves an H3 or a page. The guard in a change is a stop condition. If
   - Move `extra-noun-hooks.md#genitive` onto `social-ties.md`, before #social-relations.
   - Retitle social-ties "Whose: *Azozon's*", and place it right after extra-noun-hooks in the Beginner sidebar, before fill-ask-jobs, which reuses `om`.
   - Leave a link to the moved H3 in the extra-noun `-m` table.
-  - Add the extra-noun-hooks lead (E7): two-vowel hooks and the `-m` setting hooks.
+  - Add a one-line English-job lead under the extra-noun-hooks title: two-vowel hooks and the `-m` setting hooks.
 - **D5** Evidentiality vs holder: keep the pages apart. Add a Compare-with line in `holder.md` "Whose view (holder)" back to `evidentiality.md#source`: passing on a claim you got from Azozon, vs giving Azozon's view. They are two jobs that share an English cue, and a merge would make a 490-line sitting.
 
 **Off-axis H3s and band (tests 1–4)**
@@ -109,7 +55,7 @@ Each change moves an H3 or a page. The guard in a change is a stop condition. If
   - Retitle singability "Voicing Ageben", and promote its H4 "Vowel pitch values" to an H3.
   - Voice and certainty and Singability constraints stay.
 - **D9** Emphasis. Fold `emphasis.md` into `tone-marks.md` "Tone marks" as a short recipe, about 10 lines plus the four-row table. Delete the Advanced sitting and its allowlist row, with a redirect. Clefts are everyday talk, and `&` is homed on tone-marks ([recipe track](../meta/grammar-docs.md#recipe-track): nothing new, but needed early, goes on the stage page).
-- **D10** Named phrases. Peel `join-limits.md` "Named phrase `-n`" to a new Advanced sitting "Named phrases", with its checkpoint (setting: a treaty table). Join-limits gets a new checkpoint or a **skip** row with its reason. E5 cut its Scope islands H3 to a Compare-with line, but three Practice items still drill it (E→A 2, A→E 2, Pick one 1); the new checkpoint replaces them.
+- **D10** Named phrases. Peel `join-limits.md` "Named phrase `-n`" to a new Advanced sitting "Named phrases", with its checkpoint (setting: a treaty table). Join-limits gets a new checkpoint or a **skip** row with its reason. Its Scope islands H3 is now only a Compare-with line to `scope-islands.md`, but three Practice items still drill it (E→A 2, A→E 2, Pick one 1); the new checkpoint replaces them.
 - **D11** Ambient magnitude. Move `stacked-markers.md` "Ambient magnitude (casual)" to Intermediate `digitless-exponents.md`, after "Bare OoM", with its practice items. That page goes from 6 to 7 H3s. **Guard (gate 4):** nothing in it depends on Advanced.
 - **D12** Stance bars:
   - Cut the channel part of `stance-bars.md` "Every bar" to a link to `bars#channel-bars`.
@@ -136,6 +82,15 @@ Each change moves an H3 or a page. The guard in a change is a stop condition. If
 
   Leave `social-ties`, `speech-manner`, `join-relations`, `abstract-landmarks`, `hook-compounds`, `compound-families`, `left-bound-adjectives`, and `more-occasions`: their filenames name the topic noun the H3 teaches, which is the house pattern.
 
+**New form (decided 2026-11-06)**
+
+- **D16** Percentage points in a clause. `measures-and-percent.md` teaches percent vs points (`yo` / `yu`) only as a noun phrase: *a growth of two percentage points* is `zelom gradoyul.` A measure on `/b/` needs a unit noun, and points have none, so `zuderem bradoyul velol` (*the cost rose two points*) parses but the word-order lint reads `bradoyul` as a recipient. Then:
+  - Add a unit noun for percentage points through the [lexicon procedure](../meta/procedures/lexicon.md) (`npm run convert-word`, never by hand), so a rise in points takes the same measure `/b/` pattern as a rise in dollars or hours.
+  - Teach it in the percent vs points H3 of `measures-and-percent.md`, with a clause example. If the parser or the word-order lint needs a change to read it, that change ships in this unit with the grammar edit.
+  - A `checkpoint-writer` top-up then changes Practice English → Ageben item 3 to a full clause, as first planned: *The price of the pills went up two percentage points.*, or the nearest wording the lexicon allows, since *price* and *rise* have no root (*cost* `uderem`, *growth* `elom`).
+
+  **Guard:** if the lexicon procedure leaves a choice the user must make (a new root vs a compound, or which seed), stop and report the options with a recommendation.
+
 ## Pass rulings (no work)
 
 The auditors ruled these doubtful findings pass, and the user accepted:
@@ -160,16 +115,6 @@ If the user says to stop partway, the orchestrator [consolidates this proposal](
 
 Units run in sequence, one fresh subagent each, because most share the sidebar, the allowlist, or the cheat sheets. Every `proposal-worker` brief names its items and pastes their text from this file and the rule digest. A unit adds a remap for every retired or renamed file ([site redirects](../meta/site-redirects.md#add-a-remap-page-rename)), and fixes the allowlist rows of the pages it touches.
 
-**Workstream 1, edits**
-
-| Unit | Items | Agent | Model / effort | May edit |
-|------|-------|-------|----------------|----------|
-| 1a | E1–E5 | `proposal-worker` | opus / medium | dependents, tag-pronouns, stance-bars, usually-vs-must, join-limits, as-of |
-| 1b | E6–E8 | `proposal-worker` | opus / high | the pages named, cheat-sheet sources |
-| 1c | E9, E10 | `proposal-worker` | opus / medium | permission-consent, want-and-decide |
-| 1d | E11, E12 | `checkpoint-writer` | opus / high | measures-and-percent and nested-dependents Practice |
-| 1e | E13 | `proposal-worker` | sonnet / medium | drill-generation.md allowlist |
-
 **Workstream 2, changes**
 
 Each unit is one change, run on `proposal-worker` at opus / high. Moves go through `npm run move-heading` / `peel-headings` per [restructuring sittings](../meta/procedures/restructure-sittings.md). After each unit, if a page gained or lost an H3, a `checkpoint-writer` unit (opus / high) splits or tops up the Practice on that page. The units run in this order, so every receiving page is settled before its next move:
@@ -190,6 +135,7 @@ Each unit is one change, run on `proposal-worker` at opus / high. Moves go throu
 | 2l | D13 | dated-channel, as-of, say-tense, the sidebar |
 | 2m | D5, D14 | holder, stand-in-roles |
 | 2n | D15 | `git mv` of the two files, every link to them |
+| 2o | D16 | `data/lexicon-published.csv` or `data/lexicon-compounds.csv`, measures-and-percent, parser and lint code if needed; then a `checkpoint-writer` top-up of measures-and-percent Practice |
 
 Every unit may also edit the allowlist, hash redirects, site redirects, and level-review links for its pages. Unit 2i's new sitting is `named-phrases.md`.
 
@@ -215,15 +161,8 @@ Every unit may also edit the allowlist, hash redirects, site redirects, and leve
   3. `npm run lint:cheat-sheet-print`
 - The orchestrator then applies the reported Owns lines to `AGENTS.md`, and asks the user to paste the new `dist/amplify-redirects.json` into Amplify.
 
-**Commits.** One per unit, `sitting audit followups: <unit> [skip-cd]`, then the co-author line. Each `--write` from a move tool is fenced in its own commit ([fence automated rewrites](../meta/procedures/proposals.md#fence-automated-rewrites)). There are also one cheat-sheet-blocks commit and one last `AGENTS.md` commit. Expect about 5 commits for workstream 1, and 30–40 for workstream 2, counting checkpoint units and fenced tool writes.
+**Commits.** One per unit, `sitting audit followups: <unit> [skip-cd]`, then the co-author line. Each `--write` from a move tool is fenced in its own commit ([fence automated rewrites](../meta/procedures/proposals.md#fence-automated-rewrites)). There are also one cheat-sheet-blocks commit and one last `AGENTS.md` commit. Expect 30–40 commits for workstream 2, counting checkpoint units and fenced tool writes.
 
 ## Open decisions
 
-A guard that fails in D3, D6, D11, D12, D13, or D14 comes back here as a decision.
-
-- **A rise of N percentage points in a full clause** (found in E11, 2026-11-06). E11 asked for *The price of the pills went up two percentage points.* No grammar page gives a clause form for it. A measure on `/b/` needs a unit noun, and points have none, so `zuderem bradoyul velol` parses but the word-order lint reads `bradoyul` as a recipient. The Practice item is now a noun phrase, *A growth of two percentage points* (`zelom gradoyul.`). Options:
-  - (a) a unit noun for points, so the rise fits the measure `/b/` pattern
-  - (b) teach the change amount on `/h/` or `/d/`
-  - (c) leave the gap; the noun phrase is enough
-
-  **Recommendation:** (a). It reuses the measure-phrase rule learners already have, so a rise in points reads like a rise in dollars or hours.
+None open. A guard that fails in D3, D6, D11, D12, D13, D14, or D16 comes back here as a decision.
