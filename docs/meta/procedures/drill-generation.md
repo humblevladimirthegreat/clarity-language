@@ -322,13 +322,13 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 14 | `scope-islands.md` | Intermediate | **exists** | a news ticker | **`{ … }`** scope islands | Mention is Intermediate on `spans-as-words.md` |
 | 14 | `span-nesting.md` | Advanced | **exists** | a code review | Close forms (editorial `#]` / close-all `\|]`); nesting | ]`) |
 | 15 | `number-markers.md` | Intermediate | **exists** | a sports stadium | PoS on numbers; markers; endings; letter codes (`_` with letters); **one of** measure / range / percent / time if you can keep the item to that decision (ranges live on **`ranges.md`**, clock / calendar time on Beginner **`digit-strings.md`**, measures and percent on **`measures-and-percent.md`**) | Do not dump the whole Intermediate. Digitless, exponents, bare OoM, and the spoken comma live on **`digitless-exponents.md`** |
-| 15 | `digitless-exponents.md` | Intermediate | **exists** | a grain elevator | Digitless amounts (`gram` / `gral` / `grar`); *how many?* / *how big?*; exponents; bare OoM; group separator | No Beginner slot. Recycle = all Beginner + numbers Intermediate (markers, endings, PoS, number as verb) |
+| 15 | `digitless-exponents.md` | Intermediate | **exists** | a grain elevator | Digitless amounts (`gram` / `gral` / `grar`); *how many?* / *how big?*; exponents; bare OoM; ambient magnitude (`Ne0`); group separator | No Beginner slot. Recycle = all Beginner + numbers Intermediate (markers, endings, PoS, number as verb) |
 | 15 | `measures-and-percent.md` | Intermediate | **exists** | a pharmacy | Percent vs points; fractions; measure phrases — as taught in this stage | Top up the existing checkpoint: its letter-code and range items moved off, so it is short of Ageben → English and decision items and of review roots. Digit-string labels and clock / calendar time are Beginner on `digit-strings.md`. One topic per item |
 | 15 | `number-roles.md` | Intermediate | **exists** | a boxing gym | Number on `/v/` / `/h/` / `/y/` / `/x/` / `/w/` / `/th/` by marker (add / remove, *N times*, *Nth time*, shouts, list points, likelihood) | Recycle markers and endings from `number-markers.md` |
 | 15 | `initials.md` | Advanced | **exists** | a city hall | Initials: first consonant of each root of a hyphenated title as a **`@_`** code; spoken letter names; resume **`=_`** | Recycle letter codes from `number-markers.md` and hyphenated names from `proper-names.md` |
 | 15 | `open-ranges.md` | Advanced | **exists** | a toll booth | Rays with **`zrawal`** / **`zruwal`** (**`oel`** vs **`uel`**, soft **`oem`**); rank ends **`growal`** / **`growul`**; named **-n** and some-value **-r** range hooks, including a fill-ask | Recycle ranges from `ranges.md` and ±∞ from `special-values.md` |
 | 15 | `generations.md` | Advanced | **exists** | a family reunion | Ordinal generations: digitful exponent **`eK`** / **`e-K`** on **`#`** / **`#-`**; kin cohorts (parents, siblings, children) with a `bl-` anchor; nested anchor for a side branch | Recycle end-relative **`#-`** from `stacked-markers.md` |
-| 15 | `stacked-markers.md` | Advanced | **exists** | a parking garage | From the end (`#-` / `uo`); stacked markers (`#_` / `+-`); ambient magnitude **as used in the stage’s teach examples** | — |
+| 15 | `stacked-markers.md` | Advanced | **exists** | a parking garage | From the end (`#-` / `uo`); stacked markers (`#_` / `+-`) | — |
 | 15 | `special-values.md` | Advanced | **exists** | an observatory | Digitless exponents / hyperbole / zero×exp / special stance **as used in the stage’s teach examples** — not unassigned cells | Recycle sibling Intermediate |
 | 15 | `comparative-arity.md` | Intermediate | **exists** | a weighing room | Ranking on any scale: full comparative arity; place (`w#N`), manner `/h/`, amount `gral`, frequency `hral`, and time `bral` scales; covarying clauses; factor (*twice as … as*) | The PLAN bar is Intermediate on `bars.md` |
 | 15 | `stance-bars.md` | Advanced | **exists** | a talent contest | Every bar (channels, FORMER, ABIL, REQUIRE, attitudes); bar inside vs stance after the fence | Vague amounts are Intermediate on `vague-amounts.md` |
@@ -404,7 +404,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | **`hal`/`hual`/`har`** | `restrictors.md` Beginner |
 | Span brackets / `<>` | `spans.md` Beginner |
 | spelled counts / ordinals / `gral` (no shorthand) | `numbers.md` Beginner |
-| Digitless blanks (`grar`); exponents; bare OoM; group separator | `digitless-exponents.md` Intermediate |
+| Digitless blanks (`grar`); exponents; bare OoM; ambient magnitude (`Ne0`); group separator | `digitless-exponents.md` Intermediate |
 | Digitless exponents / hyperbole / zero×exp | `special-values.md` Advanced |
 | From the end (`#-`); stacked markers | `stacked-markers.md` Advanced |
 | SHARED scale comparatives | `comparatives.md` Beginner |

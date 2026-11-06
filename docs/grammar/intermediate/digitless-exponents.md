@@ -159,7 +159,7 @@ These work the same way on `/z/`, `/d/`, and `/b/`. Soft **`grawagem`** ≈ *abo
 ### Ambient magnitude (casual) {#ambient-magnitude-casual}
 <a id="ambient-magnitude"></a>
 
-In careful writing, an omitted exponent means ones-place (`gragel` = 3). Prefer writing the exponent when the magnitude matters.
+In careful writing, an omitted exponent means ones-place (`gragel` = 3), as [exponents](#exponents) say. Prefer writing the exponent when the magnitude matters.
 
 In casual measure-heavy talk, a stretch of conversation may set an **ambient** order of magnitude (often an engineering `e3` / `e6` / …). Numbers written without an exponent are then heard at that magnitude until you cancel it. A [topic change](/topic#topic-resets) starts a new stretch, so bare numbers go back to ones until an ambient decade is set again.
 
@@ -299,6 +299,16 @@ z-Ahelan | [d-grain-x | g-some-amount] | v-see
 *Ahelan sees some number of grains.*
 :::
 
+**4.** `zudavalx g+3e0.` (in talk that counts grain in thousands)
+
+::: details Show answer
+🔊 `zudavalx grawamoyagel.`
+
+z-truck-x | g-3e0
+
+*There are three trucks.* (exactly three, not ambient thousands)
+:::
+
 #### Pick one {#intermediate-pick-one}
 
 **1.** *How many trucks does Alazun see?* `yel dudavalx grar zalazun vayebel.` or `yel dudavalx gror zalazun vayebel.`
@@ -322,6 +332,21 @@ y-question | [w-how-many | h-slow] | z-truck
 
 The blank for *how much* of a quality sits on `/w/` as **`wrar`**; **`har`** is *sometimes*, or *when?* in a question.
 :::
+
+#### What changes {#intermediate-what-changes}
+
+**1.** `zudavalx gragel.` / `zudavalx g+3e0.`
+
+::: details Show answer
+z-truck-x | g-three
+
+🔊 `zudavalx grawamoyagel.`
+
+z-truck-x | g-3e0
+
+The first is three trucks unless an ambient thousands stretch is in play; **`e0`** insists on ones.
+:::
+
 ## See also
 
 - Everyday number words: [numbers](/numbers)

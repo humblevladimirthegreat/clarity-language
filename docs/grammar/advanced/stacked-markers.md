@@ -115,17 +115,7 @@ z-parking | g-2nd-from-end
 *There is a second-to-last parking stall.*
 :::
 
-**2.** `zugavalx g+3e0.`
-
-::: details Show answer
-🔊 `zugavalx grawamoyagel.`
-
-z-car-x | g-3e0
-
-*Three cars sit at ones.* (not ambient thousands)
-:::
-
-**3.** `x#-2 zazozon vehohel.`
+**2.** `x#-2 zazozon vehohel.`
 
 ::: details Show answer
 🔊 `xruodol zazozon vehohel.`
@@ -133,6 +123,14 @@ z-car-x | g-3e0
 x-2nd-from-end.short | z-Azozon | v-sit
 
 *Penultimate item: Azozon sits.*
+:::
+
+**3.** `zugaval hruodol vehohel.`
+
+::: details Show answer
+z-car | h-2nd-from-end | v-sit
+
+*The car sits here for the second-to-last time.*
 :::
 
 #### Pick one {#advanced-pick-one}
@@ -147,16 +145,12 @@ z-car | g-2nd
 **`ro`** counts from the start; **`ruo`** would be second from the end.
 :::
 
-#### What changes {#advanced-what-changes}
-
-**1.** `zugavalx gragel.` / `zugavalx g+3e0.`
+**2.** *Azozon sees parking −1.* (a floor label below zero) `zazozon debahal gruebal vayebel.` or `zazozon debahal gruobal vayebel.`
 
 ::: details Show answer
-z-car-x | g-three
+`zazozon debahal gruebal vayebel.`
 
-🔊 `zugavalx grawamoyagel.`
+z-Azozon | [d-parking | g-negative-label-1] | v-see
 
-z-car-x | g-3e0
-
-The first is three at ones unless an ambient thousands stretch is in play; **`e0`** insists on ones.
+**`rue`** (`#_`) labels a value below zero; **`ruo`** (`#-`) would count from the end: the last stall.
 :::
