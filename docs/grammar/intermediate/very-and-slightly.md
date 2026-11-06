@@ -41,25 +41,18 @@ Beginner used **`welazem`** *very* before an adjective. The same `/w/` slot take
 >
 > "A fairly angry dog walks."
 
-Two stock words go in `/h/` and describe the verb itself. Use **`hayurom`** *kind of* / *sort of* to hedge the action, and **`herugom`** for *again*.
+One stock word goes in `/h/` and describes the verb itself: **`hayurom`** *kind of* / *sort of* hedges the action.
 
 <!-- cheat-sheet: word-shape-clause -->
 | Ageben | English | Cue |
 |--------|---------|-----|
 | `hayurom` | *kind of* / *sort of* | 📈: some degree, not a full one |
-| `herugom` | *again* | 🔁: the same thing once more |
 
 > `zazozon hayurom vowurol.`
 >
 > z-Azozon | h-kind-of | v-walk
 >
 > "Azozon kind of walks."
-
-> `zodozel herugom veruvol.`
->
-> z-dog | h-again | v-run
->
-> "The dog runs again."
 
 ### Practice {#intermediate-practice}
 
@@ -75,7 +68,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *quite* | `wadowem` | 🔉 from *audio* |
 | *completely* | `wahuram` | 💯 from *hundred* |
 | *kind of* | `hayurom` | 📈 from *uptrend* |
-| *again* | `herugom` | 🔁 from *repeat* |
 
 **Review:**
 
@@ -85,6 +77,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *very* | `welazem` |
+| *again* | `herugom` |
 | *ocean* | `wohalal` |
 | *wine* | `owudal` |
 | *drink* | `vuwudal` |
@@ -99,15 +92,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
-**1.** *Azozon smells the wine again.*
-
-::: details Show answer
-`zazozon dowudal herugom vonebel.`
-
-z-Azozon | d-wine | h-again | v-smell
-:::
-
-**2.** *A slightly sleepy Ahelan drinks the wine.*
+**1.** *A slightly sleepy Ahelan drinks the wine.*
 
 ::: details Show answer
 `zahelan wamezem guzemel dowudal vuwudal.`
@@ -115,7 +100,7 @@ z-Azozon | d-wine | h-again | v-smell
 [z-Ahelan | [w-small | g-sleepy]] | d-wine | v-drink
 :::
 
-**3.** *Alazun pours the wine fairly hastily.*
+**2.** *Alazun pours the wine fairly hastily.*
 
 ::: details Show answer
 `zalazun dowudal wadowem hadurom vowuvul.`
@@ -123,12 +108,20 @@ z-Azozon | d-wine | h-again | v-smell
 z-Alazun | d-wine | [w-quite | h-haste] | v-pour
 :::
 
-**4.** *Azozon kind of drinks the wine.*
+**3.** *Azozon kind of drinks the wine.*
 
 ::: details Show answer
 `zazozon dowudal hayurom vuwudal.`
 
 z-Azozon | d-wine | h-kind-of | v-drink
+:::
+
+**4.** *A fairly sleepy Azozon pours the wine again.*
+
+::: details Show answer
+`zazozon wadowem guzemel dowudal herugom vowuvul.`
+
+[z-Azozon | [w-quite | g-sleepy]] | d-wine | h-again | v-pour
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
@@ -149,20 +142,20 @@ z-Alazun | d-wine | [w-ocean | h-haste] | v-drink
 *Alazun drinks the wine extremely hastily.*
 :::
 
-**3.** `zalazun wamezem gonumul dowudal herugom vowuvul.`
-
-::: details Show answer
-[z-Alazun | [w-small | g-angry]] | d-wine | h-again | v-pour
-
-*A slightly angry Alazun pours the wine again.*
-:::
-
-**4.** `zazozon welazem ganomul dowudal hayurom vonebel.`
+**3.** `zazozon welazem ganomul dowudal hayurom vonebel.`
 
 ::: details Show answer
 [z-Azozon | [w-very | g-anxious]] | d-wine | h-kind-of | v-smell
 
 *A very anxious Azozon sort of smells the wine.*
+:::
+
+**4.** `zahelan dowudal wamezem hadurom vonebel.`
+
+::: details Show answer
+z-Ahelan | d-wine | [w-small | h-haste] | v-smell
+
+*Ahelan smells the wine a bit hastily.*
 :::
 
 #### Pick one {#intermediate-pick-one}
@@ -179,17 +172,7 @@ A `/w/` word grades the word right after it: before *angry* it says how angry, b
 
 #### What changes {#intermediate-what-changes}
 
-**1.** `zazozon dowudal herugom vowuvul.` / `zazozon dowudal hayurom vowuvul.`
-
-::: details Show answer
-z-Azozon | d-wine | h-again | v-pour
-
-z-Azozon | d-wine | h-kind-of | v-pour
-
-The first pours the wine once more; the second only sort of pours it, a hedged pour.
-:::
-
-**2.** `zalazun wamezem guzemel vehohel.` / `zalazun wohalal guzemel vehohel.`
+**1.** `zalazun wamezem guzemel vehohel.` / `zalazun wohalal guzemel vehohel.`
 
 ::: details Show answer
 [z-Alazun | [w-small | g-sleepy]] | v-sit
@@ -197,4 +180,14 @@ The first pours the wine once more; the second only sort of pours it, a hedged p
 [z-Alazun | [w-ocean | g-sleepy]] | v-sit
 
 A slightly sleepy Alazun sits in the first; an extremely sleepy Alazun sits in the second.
+:::
+
+**2.** `zazozon dowudal herugom vowuvul.` / `zazozon dowudal hayurom vowuvul.`
+
+::: details Show answer
+z-Azozon | d-wine | h-again | v-pour
+
+z-Azozon | d-wine | h-kind-of | v-pour
+
+The first pours the wine once more; the second only sort of pours it, a hedged pour.
 :::

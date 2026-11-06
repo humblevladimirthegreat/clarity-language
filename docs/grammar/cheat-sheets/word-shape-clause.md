@@ -163,7 +163,7 @@ Calls and sentence glue use [`/y/`](/speech-moves) and [`/x/`](/dependents).
 | | `wadowem` | *quite* | I |
 | | `wahuram` | *completely* | I |
 | [`/h/`](/very-and-slightly#degree-w), on the verb | `hayurom` | *kind of* | I |
-| | `herugom` | *again* | I |
+| [`/h/`](/restrictors#again), on the verb | `herugom` | *again* | B |
 
 <PageBreak />
 

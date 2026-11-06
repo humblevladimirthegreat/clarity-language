@@ -663,7 +663,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🌌,galaxy,agala,nature,holds,big,vastness,a galaxy holds billions of stars,,vast; universe,
 ☁️,cloud,ugala,nature,holds,big,sky,clouds fill the sky,,atmosphere,evidentiality.md#intermediate-practice
 ⛅,cloudy,ogulu,nature,takes-away,none,weather,sun behind cloud is a partly-cloudy sky; weather is the usual climate,,,
-⛈️,thunderstorm,anulu,nature,takes-away,none,,,,storm,restrictors.md#beginner-practice
+⛈️,thunderstorm,anulu,nature,takes-away,none,,,,storm,sakes.md#beginner-practice
 🌦️,showers,uhula,nature,holds,none,,,,,
 🌧️,rain,erula,nature,holds,none,letdown,rain washes out what you hoped to do; a letdown is a hope that fell through,,,restrictors.md#beginner-practice
 🌨️,snow,ozula,nature,holds,none,stillness,snow quiets the landscape; stillness is calm / slack water,,,more-occasions.md#intermediate-practice
@@ -1049,7 +1049,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ♓,pisces,aruro,counting,order,none,empathy,pisces flows with others feelings; empathy is feeling with another,,,
 ⛎,ophiuchus,ovuro,counting,order,none,,,,,
 🔀,shuffle,uhugo,sign,order,none,randomness,shuffle mixes order unpredictably; randomness is without fixed order,,random,
-🔁,repeat,erugo,sign,order,none,repetition,repeat plays the same again; repetition is doing again,m.h:again,,very-and-slightly.md#intermediate-practice
+🔁,repeat,erugo,sign,order,none,repetition,repeat plays the same again; repetition is doing again,m.h:again,,restrictors.md#beginner-practice
 🔂,repeat-one,orugo,sign,order,none,,,,,
 ▶️,play-button,ebego,sign,order,none,commencement,play button begins the action; start is setting in motion,,,
 ⏩,fast-forward,uvugo,sign,order,none,speed,fast-forward plays things faster; speed is how fast,m.h:quickly,quick; rapidly; rapid; fast; prompt; pace,

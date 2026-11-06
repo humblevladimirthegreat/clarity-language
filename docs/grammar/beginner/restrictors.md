@@ -94,6 +94,23 @@ To say *sometimes*, *anytime*, or *some other time* without naming the occasion 
 >
 > "No. Ahelan walks at some other time."
 
+### Again {#again}
+
+To say the same thing happens once more, put the stock word **`herugom`** *again* in the adverb slot (`/h/`). It describes the verb itself, so no occasion words come before it.
+
+<!-- cheat-sheet: word-shape-clause -->
+| Ageben | English | Cue |
+|--------|---------|-----|
+| `herugom` | *again* | 🔁: the same thing once more |
+
+> `zodozel herugom veruvol.`
+>
+> z-dog | h-again | v-run
+>
+> "The dog runs again."
+
+**Compare with:** **`hur`** *some other time* points at an occasion outside the times already in play. **`herugom`** *again* says the same thing happens once more.
+
 ### On the following adjective (`/w/`)
 
 To say *never sleepy* or *sometimes sleepy*, limit only the adjective, not the whole sentence. Use the same restrictor vowels and endings with letter **`w`** instead of **`h`**, right before the adjective. Occasion words for that adjective also take **`w`** and sit immediately before the restrictor. An `/h/` restrictor, by contrast, limits the whole clause.
@@ -171,7 +188,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sleepy* | `uzemel` | 😪 |
 | *rain* | `erulal` | 🌧️ |
 | *night* | `anurul` | 🌃 |
-| *thunderstorm* | `anulul` | ⛈️ |
+| *again* | `herugom` | 🔁 |
 
 **Review:**
 
@@ -219,12 +236,12 @@ z-Ahelan | v-swim | h-night | h-always-except
 z-Alazun | v-scream | h-sometimes
 :::
 
-**5.** *Ahelan is never sleepy.*
+**5.** *Azozon screams again.*
 
 ::: details Show answer
-`zahelan wal guzemel.`
+`zazozon herugom veyamul.`
 
-z-Ahelan | [w-never | g-sleepy]
+z-Azozon | h-again | v-scream
 :::
 
 **6.** *Azozon swims at night, among other times.*
@@ -261,12 +278,12 @@ z-Azozon | v-swim | h-anytime
 *Azozon swims anytime.*
 :::
 
-**4.** `zalazun veruvol hanulul hal.`
+**4.** `zalazun gonumul herugom vazuvol.`
 
 ::: details Show answer
-z-Alazun | v-run | h-thunderstorm | h-only-when
+[z-Alazun | g-angry] | h-again | v-swim
 
-*Alazun runs only when there is a thunderstorm.*
+*An angry Alazun swims again.*
 :::
 
 **5.** `zazozon vazuvol hur.`
@@ -297,16 +314,6 @@ z-Alazun | v-run | h-always
 Bare **`hual`** is *always*; bare **`hal`**, an empty list of times, is *never*.
 :::
 
-**2.** *Azozon is sometimes sleepy.* `zazozon war guzemel.` or `zazozon har guzemel.`
-
-::: details Show answer
-`zazozon war guzemel.`
-
-z-Azozon | [w-sometimes | g-sleepy]
-
-To limit only the adjective, the restrictor takes **`w`** right before it; **`har`** limits the whole clause.
-:::
-
 #### Fix it {#beginner-fix-it}
 
 **1.** *Alazun sits when it rains, among other times.* <!-- lint: error -->`zalazun vehohel herulal hal.`
@@ -318,6 +325,19 @@ z-Alazun | v-sit | h-rain | h-when.open
 
 Closed **`hal`** says *only* when it rains; open **`ham`** leaves room for other times.
 :::
+
+#### What changes {#beginner-what-changes}
+
+**1.** `zahelan vazuvol herugom.` / `zahelan vazuvol hur.`
+
+::: details Show answer
+z-Ahelan | v-swim | h-again
+
+z-Ahelan | v-swim | h-some-other-time
+
+In the first, Ahelan swims once more; in the second, Ahelan swims at a time other than the ones already in play.
+:::
+
 ## See also
 
 - Phrase lists (right-close fence): [joins.md](joins.md)
