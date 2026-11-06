@@ -218,7 +218,7 @@ z-Azozon | h-always.open | v-sit
 
 Open **-m** leaves exceptions; closed **-l** allows none.
 
-**Rule:** [Channels on a generalization](usually-vs-must.md#universality)
+**Rule:** [Channels on a generalization](usually-vs-must.md#generalization)
 :::
 
 **8.** *Ahelan sees at most five baguettes.* `zahelan debodolx gruwal uel grazal vayebel.` or `zahelan debodolx gruwal oel grazal vayebel.`

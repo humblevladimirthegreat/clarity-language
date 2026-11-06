@@ -222,7 +222,7 @@ Endings on unmet **`thu`**, **DECISION**, and ability *can’t*.
 
 A channel on a clause with a universal fence or restrictor: how you know the general claim.
 
-[Usually vs must](/usually-vs-must#universality)
+[Usually vs must](/usually-vs-must#generalization)
 
 ### Check-back
 
@@ -852,7 +852,7 @@ A sibling parent map with no parent of its own. On **a o e u**, **size** is amou
 
 `{ … }` with binder inside.
 
-[Scope islands](/scope-islands#scope-islands), [Join limits](/join-limits#scope-islands-join)
+[Scope islands](/scope-islands#scope-islands)
 
 ### Sentence linker
 

@@ -4,9 +4,8 @@ band: advanced
 
 # Usually vs must {#usually-vs-must}
 
-### Channels on a generalization {#universality}
+### Channels on a generalization {#generalization}
 <a id="universality-mood"></a>
-<a id="generalization"></a>
 
 English *always*, *usually*, *every*, and *never* make a general claim. The [universal fences](/universals-domains#universals-domains-generics) (`zual` / `zuam`) and the [restrictors](/restrictors) (`hual` / `huam` / `hal`) already say **who** or **when** the claim covers, and their ending says how many exceptions it allows: closed **-l** allows none, and open **-m** leaves them open, as on any list (*usually*, *as a rule*). No other word is needed for the claim itself.
 

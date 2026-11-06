@@ -469,7 +469,7 @@ A one-off episode and a standing pattern use the same hinges. Add extra words fo
 >
 > "It always rains if there are clouds."
 
-**Compare with:** to say how you know a general claim, put a channel on it ([channels on a generalization](/usually-vs-must#universality)). **CAUSE** is **`thewom`**. English *habit* when a cue produces the act is [habit](#habit).
+**Compare with:** to say how you know a general claim, put a channel on it ([channels on a generalization](/usually-vs-must#generalization)). **CAUSE** is **`thewom`**. English *habit* when a cue produces the act is [habit](#habit).
 
 ### Habit, triggered by {#habit}
 

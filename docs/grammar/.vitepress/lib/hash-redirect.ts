@@ -143,6 +143,8 @@ export const hashRedirects: HashRedirect[] = [
   { page: "rank-joins.md", hash: "full-single-item-and-standalone-inventories", to: "set-joins.md", toHash: "full-single-item-and-standalone-inventories" },
   { page: "spans-as-words.md", hash: "quote-acts", to: "quote-contents.md", toHash: "quote-acts" },
   { page: "spans-as-words.md", hash: "topic-quotes", to: "quote-contents.md", toHash: "topic-quotes" },
+  { page: "usually-vs-must.md", hash: "universality", to: "usually-vs-must.md", toHash: "generalization" },
+  { page: "join-limits.md", hash: "scope-islands-join", to: "scope-islands.md", toHash: "scope-islands" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */

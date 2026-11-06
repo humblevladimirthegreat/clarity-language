@@ -8,7 +8,7 @@ band: advanced
 <a id="worse-than"></a>
 <a id="best-effort"></a>
 
-Intermediate ranked against a plan, and [sake bars](/bars#sake-bars) rank against what a sake needs. Any stance that **sets a value** can be the [bar](/bars#bars), and each keeps its own endings and meaning. A channel word (how you know something: you saw it, remember it, were told it, worked it out) sets **the level that source led you to expect**. So *than usual*, *than I remember*, and *than advertised* each put one channel word in the bar slot.
+A [plan bar](/bars#bars) ranks against what a plan set, a [channel bar](/bars#channel-bars) against what a source led you to expect, and a [sake bar](/bars#sake-bars) against what a sake needs. Any other stance that sets a value can be the bar too, and each keeps its own endings and meaning. A channel word (how you know something: you saw it, remember it, were told it, worked it out) sets **the level that source led you to expect**. So *than usual*, *than I remember*, and *than advertised* each put one channel word in the bar slot.
 
 > `zazozon thubom zol guzemel.`
 >

@@ -49,7 +49,7 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | [Clause joins](/joins#clause-joins) (`/x/`) go **between** clauses | `zazozon vowurol xam zalazun veruvol` | *Azozon walks and Alazun runs* | B |
 | A [different clause join](/joins#clause-joins) closes everything before it | `A xel B xal C` | *(A or B) and C* | B |
 | [Nest](/list-structure#fence-nesting) by stacking joins | `zedudal zogudal zel zowulal zal` | *either tea or coffee, and water* | I |
-| [Scope island](/join-limits#scope-islands-join) keeps a small list inside a bigger one of the same role | `zazozon { zowulal zal } zam` | *Azozon and (just water)* | A |
+| [Scope island](/scope-islands#scope-islands) keeps a small list inside a bigger one of the same role | `zazozon { zalazun zal } zam` | *Azozon and (just Alazun)* | A |
 
 ### How many items {#arity}
 

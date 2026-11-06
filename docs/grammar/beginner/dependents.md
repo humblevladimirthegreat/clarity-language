@@ -310,7 +310,7 @@ z-Ahelan | v-tell | b-guard | d-that-clause | [z-Azozon | g-angry] | v-sit
 
 z-Alazun | v-see | d-whether-clause | z-Azozon | v-run
 
-*Whether* leaves a yes-or-no open, so the stand-in takes **`o`**; `darl` would be *sees that Azozon runs*.
+*Whether* leaves a yes-or-no open, so the stand-in takes **`e`**; `darl` would be *sees that Azozon runs*.
 :::
 
 #### Fix it {#beginner-fix-it}

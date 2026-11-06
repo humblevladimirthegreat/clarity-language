@@ -4,24 +4,6 @@ band: advanced
 
 # Join limits {#join-limits}
 
-### Scope islands {#scope-islands-join}
-
-A join takes every same-role item before it. When English groups a small list inside a bigger one of the same role (*Azozon and (just water)*), wrap the small list and its join in **`{ … }`**, called a scope island. The join inside the island takes members only from between those marks. One island per clause; material outside needs its own outer join. An island holds at most one phrase and may close partway through it ([scope islands](/scope-islands#scope-islands)).
-
-| Ageben | English |
-|--------|---------|
-| `zazozon { zowulal zal } zam` | *Azozon and (just water)* |
-| `zazozon { zal } zam` | *Azozon and nothing* |
-| `{ zowulal zal }` | *just water* (alone in the slot) |
-
-> `zazozon { zowulal zal } zam.`
->
-> [z-Azozon | SCOPE[z-water | z-and] | z-and.open]
->
-> "Azozon and (just water)."
-
-**Compare with:** an island limits only what a join or an `/h/` word covers.
-
 ### Named phrase **`-n`**
 <a id="named-list"></a>
 
@@ -69,7 +51,7 @@ These limits apply to every join.
 | Revising one item | in-clause *including* / *rather* / *instead* / *except* are [hooks](/hooks) |
 | Several manners on `/h/` `/w/` | juxtaposition (`hadurol halozul`) |
 
-**Compare with:** prefix-less **`al`** / **`am`** / … are [hooks](/hooks). Under `/h/` `/w/`, the unit is a [restrictor](/restrictors), not sibling *and*.
+**Compare with:** prefix-less **`al`** / **`am`** / … are [hooks](/hooks). Under `/h/` `/w/`, the unit is a [restrictor](/restrictors), not sibling *and*. To keep a small list inside a bigger one of the same role, wrap it in a [scope island](/scope-islands#scope-islands).
 
 *Because* / *if* use `/th/` plus `/b/` [**`blarl`**](/dependents#hinges). An `/h/` or `/th/` word between the items of a noun, adjective, or `/b/` list does not end the list. For how far an `/h/` reaches in a verb list, see [Verb-phrase and clause forms](/verb-and-stance-joins#vp-clause-forms). Each item of a clause join is a full clause.
 

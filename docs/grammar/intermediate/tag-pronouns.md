@@ -165,7 +165,7 @@ z-tag.A | v-scream . z-←tag.A | [d-tomato | g-red] | v-see
 
 [z-Azozon | z-tag.A] | v-pour . [z-Alazun | z-tag.O] | v-harvest . z-←tag.O | v-scream
 
-The tag vowel picks the referent: **`o`** is Alazun, whoever acted last.
+The tag vowel picks the referent: **`o`** is Alazun.
 :::
 
 #### Fix it {#intermediate-fix-it}
