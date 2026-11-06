@@ -63,7 +63,7 @@ The consonant hand counts from the index and the vowel hand from the pinky, so i
 
 ## One beat per syllable {#beats}
 
-Ageben syllables have a fixed shape, so the code times them the same way every time. Each syllable takes one beat, and every beat is the same length, as in [speech](/singability#rhythm-and-stress):
+Ageben syllables have a fixed shape, so the code times them the same way every time. Each syllable takes one beat, and every beat is the same length, as in [speech](/phonology#rhythm-and-stress):
 
 | In speech | In the finger code |
 |-----------|--------------------|

@@ -31,22 +31,6 @@ Compare a line, not Ageben, that piles up vowels side by side, clusters, and con
 
 / seiɹ ˈʈʂuɹt tis ˈheb.ɡiɹn fuofts /
 
-### Rhythm and stress {#rhythm-and-stress}
-
-Give every syllable about the same length, and keep its vowel full however fast you talk. English weakens unstressed vowels to *uh* (the second *a* in *banana*). Ageben never does, because many words differ by one vowel (`val`, `vel`, `vul`), and weak vowels would make them sound alike.
-
-Each word takes a light stress on its **first syllable**. Since the rule never changes, spelling does not mark it. The ending consonant already tells a listener where a word stops; the stressed first beat tells them where the next one starts, so fast speech still splits into words. A [number word](/numbers) stresses the last digit of each group instead.
-
-`zazozon gamahum.`
-
-/ ˈzä.zo̞.zo̞n ˈɡä.mä.ɦʉm /
-
-The first beat also keeps apart two lines that differ only by a word break: a word that starts mid-line takes a fresh stressed beat, where the same letters inside one word do not. A hooked join (*someone in there*, as one word) and a join followed by a hook (*some people*, then *in there*) can be spelled with the same letters, and this beat tells them apart.
-
-Stress is **loudness** only: say the first syllable a little louder, with a crisp start. Its vowel keeps its own pitch, and the syllable keeps its one beat, so a stressed `a` is loud and still low. English raises and lengthens a stressed syllable, so practice stress as a drum accent: say the word on its vowel pitches, then say it again and tap the first beat louder.
-
-**Hold the ending.** Let the final `-l`, `-m`, `-n` or `-r` sound for a moment instead of clipping it. It is often the only difference between two words (`vul`, `vum`, `vur`), and all four are sounds you can hold. In singing, put the cutoff on it.
-
 ### Vowel pitch values {#vowel-pitch-values}
 
 A vowel's pitch is an interval above your [home note](/phonology#vowel-pitch), not a fixed note, since voices differ by an octave or more:
@@ -90,7 +74,7 @@ From smallest to largest:
 
 | Edge | Voice | Taught in |
 |------|-------|-----------|
-| Word | Louder first syllable, ending held | [rhythm and stress](#rhythm-and-stress) |
+| Word | Louder first syllable, ending held | [rhythm and stress](phonology.md#rhythm-and-stress) |
 | Item in a list, before the join word | Nothing extra | [right-close fence](/joins#right-close) |
 | Join word that ends a list | Nothing extra: the join word is heard | [right-close fence](/joins#right-close) |
 | Soft `-m` statement or answer | Nothing extra: the `-m` is heard | [periods](/sentence-linkers#past-a-period) |

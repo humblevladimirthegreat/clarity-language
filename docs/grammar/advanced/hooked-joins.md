@@ -38,7 +38,7 @@ The landmark takes `bl-` because it completes the word before it, as after an `/
 
 This lets a sweeping claim show how far it reaches. *Everyone's against me* names its bound (`zuoxual bluwen`), and the join ending says whether exceptions are ruled out: closed `zuoxual` is *every one of them*, open `zuoxuam` is *as far as I know*. A listener can then check the bound, or ask for the exception.
 
-In speech **`x`** starts the join's syllable (*zo-xu-al*). With `m` or `r`, that letter closes the hook's syllable (*zom-xu-al*, *zor-xu-al*). The [first-syllable stress](singability.md#rhythm-and-stress) keeps a hooked join apart from a join followed by a hook: `zarxar` (*someone in there*) is one word with one stressed beat, and in `zarx ar` (*some people, in there*) `ar` takes a fresh beat.
+In speech **`x`** starts the join's syllable (*zo-xu-al*). With `m` or `r`, that letter closes the hook's syllable (*zom-xu-al*, *zor-xu-al*). The [first-syllable stress](phonology.md#rhythm-and-stress) keeps a hooked join apart from a join followed by a hook: `zarxar` (*someone in there*) is one word with one stressed beat, and in `zarx ar` (*some people, in there*) `ar` takes a fresh beat.
 
 ### Which hook {#hooked-joins-hooks}
 

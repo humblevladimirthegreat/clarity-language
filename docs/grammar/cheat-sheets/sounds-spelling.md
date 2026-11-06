@@ -22,7 +22,7 @@ Each letter has one sound, and native text is lowercase. Two vowels in a row are
 | [`o`](/phonology#vowels) | /o̞/ | *Cambodia* (no glide) | mid-low | B |
 | [`e`](/phonology#vowels) | /e̞/ | *bet* | mid-high | B |
 
-Vowel pitch is optional and adds no meaning; when sound and pitch disagree, the sound wins. [Stress](/singability#rhythm-and-stress) is loudness, never pitch. Exact pitches: `a` 0, `o` +3, `e` +5, `u` +7 semitones ([vowel pitch values](/singability#vowel-pitch-values), A).
+Vowel pitch is optional and adds no meaning; when sound and pitch disagree, the sound wins. [Stress](/phonology#rhythm-and-stress) is loudness, never pitch. Exact pitches: `a` 0, `o` +3, `e` +5, `u` +7 semitones ([vowel pitch values](/singability#vowel-pitch-values), A).
 
 ### Consonants and their names {#consonants}
 

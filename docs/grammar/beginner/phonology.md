@@ -84,6 +84,22 @@ A content word ends in one of four consonants: `-l`, `-m`, `-n`, or `-r`. That l
 
 `azozon` = *a-zo-zon*. `odozel` = *o-do-zel*.
 
+### Rhythm and stress {#rhythm-and-stress}
+
+Give every syllable about the same length, and keep its vowel full however fast you talk. English weakens unstressed vowels to *uh* (the second *a* in *banana*). Ageben never does, because many words differ by one vowel (`val`, `vel`, `vul`), and weak vowels would make them sound alike.
+
+Each word takes a light stress on its **first syllable**. Since the rule never changes, spelling does not mark it. The ending consonant already tells a listener where a word stops; the stressed first beat tells them where the next one starts, so fast speech still splits into words. A [number word](/numbers) stresses the last digit of each group instead.
+
+`zazozon gamahum.`
+
+/ ˈzä.zo̞.zo̞n ˈɡä.mä.ɦʉm /
+
+The first beat also keeps apart two lines that differ only by a word break: a word that starts mid-line takes a fresh stressed beat, where the same letters inside one word do not. A hooked join (*someone in there*, as one word) and a join followed by a hook (*some people*, then *in there*) can be spelled with the same letters, and this beat tells them apart.
+
+Stress is **loudness** only: say the first syllable a little louder, with a crisp start. Its vowel keeps its own pitch, and the syllable keeps its one beat, so a stressed `a` is loud and still low. English raises and lengthens a stressed syllable, so practice stress as a drum accent: say the word on its vowel pitches, then say it again and tap the first beat louder.
+
+**Hold the ending.** Let the final `-l`, `-m`, `-n` or `-r` sound for a moment instead of clipping it. It is often the only difference between two words (`vul`, `vum`, `vur`), and all four are sounds you can hold. In singing, put the cutoff on it.
+
 ### Thinking sounds {#thinking-sounds}
 
 When you need a moment in the middle of speaking, English fills the gap with *um* or *uh*. Ageben has two sounds for that gap, and each tells the listener what would help. Neither is a word, and neither is written.
