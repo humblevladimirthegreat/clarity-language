@@ -141,6 +141,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *speaker* | `uwen` |
 | *sit* | `vehohel` |
 | *walk* | `vowurol` |
+| *flower* | `evelal` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -192,6 +193,30 @@ z-Azozon | v-pray | th-relatedness-motive-any-term
 z-candle | g-relatedness-motive-lasting
 
 *My candle is for relatedness in the long term.*
+:::
+
+**3.** `zalazun vabuyal thawetham.`
+
+::: details Show answer
+z-Alazun | v-pray | th-relatedness-met-any-term
+
+*Alazun prays, and that helps me feel connected.*
+:::
+
+**4.** `zevelal wawethom goyom blahelan.`
+
+::: details Show answer
+z-flower | [[w-relatedness-motive-any-term | g-stimulus] | bl-Ahelan]
+
+*The flower is for Ahelan's relatedness.* (not my flower)
+:::
+
+**5.** `zevelal gawethol blazozon.`
+
+::: details Show answer
+z-flower | [g-relatedness-motive-lasting | bl-Azozon]
+
+*My flower is for Azozon's relatedness in the long term.*
 :::
 
 #### Pick one {#intermediate-pick-one}
