@@ -760,12 +760,12 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🥼,lab-coat,aloba,body,holds,medium,expertise,lab coat marks scientific work; expertise is specialized knowledge,,technical; master; specialist; specialize; pro; qualification; expert; professional,
 🦺,vest,uvoba,body,holds,medium,safety,the vest keeps workers safe; safety is freedom from harm,,safe; secure; insurance; insure,
 👔,necktie,enobo,body,order,medium,neck,a necktie hangs at the neck; the neck joins head and body,,,
-👕,shirt,ehoba,body,holds,medium,casual,a shirt is everyday wear; casual is relaxed informal,,t-shirt,
+👕,shirt,ehoba,body,holds,medium,casual,a shirt is everyday wear; casual is relaxed informal,,t-shirt,nested-dependents.md#advanced-practice
 👖,trousers,udaba,body,holds,medium,,,,pants,
 🧣,scarf,ozoba,body,holds,medium,,,,,
 🧤,gloves,ugeba,body,holds,small,winter,gloves come out in winter; winter is the cold season,,,
 🧥,coat,ogoba,body,holds,medium,shelter,coat wraps against the weather; shelter is cover from elements,,jacket,questions.md#beginner-practice
-🧦,socks,uba,body,holds,,,,,,
+🧦,socks,uba,body,holds,,,,,,nested-dependents.md#advanced-practice
 👗,dress,edoba,body,holds,medium,clothing,a dress is one garment; clothing is garments worn together,,wear; clothes,rank-joins.md#intermediate-practice
 👘,kimono,egoba,body,holds,medium,,,,,
 🥻,sari,uzoba,body,holds,medium,heritage,sari carries traditional form; heritage is passed-down culture,,culture; cultural,

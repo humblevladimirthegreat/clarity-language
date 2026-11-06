@@ -71,6 +71,11 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *sit* | `vehohel` |
 | *see* | `vayebel` |
+| *ticket* | `odenol` |
+| *pay* | `varal` |
+| *luggage* | `elobal` |
+| *challenge* | `amahum` |
+| *lift* | `velunel` |
 
 #### English → Ageben {#advanced-english-to-ageben}
 
@@ -88,6 +93,22 @@ z-Azozon | v-command | z-Alazun | v-sit
 `zazozon vayebel darn zahelan vehohel.`
 
 z-Azozon | v-see | d-statement | z-Ahelan | v-sit
+:::
+
+**3.** *Alazun confirms that Azozon sees the ticket.*
+
+::: details Show answer
+`zalazun vaon zazozon vayebel dodenol.`
+
+z-Alazun | v-confirm | z-Azozon | v-see | d-ticket
+:::
+
+**4.** *Ahelan declines to pay.*
+
+::: details Show answer
+`zahelan vuen zahelan varal.`
+
+z-Ahelan | v-decline-to | z-Ahelan | v-pay
 :::
 
 #### Ageben → English {#advanced-ageben-to-english}
@@ -108,6 +129,22 @@ z-Azozon | v-prohibit | z-Alazun | v-sit
 *Azozon prohibits Alazun from sitting.*
 :::
 
+**3.** `zahelan vuon zazozon varal.`
+
+::: details Show answer
+z-Ahelan | v-deny | z-Azozon | v-pay
+
+*Ahelan denies that Azozon pays.*
+:::
+
+**4.** `gamahum zarl zazozon velunel delobal.`
+
+::: details Show answer
+g-challenge | z-that-clause | z-Azozon | v-lift | d-luggage
+
+*It is hard for Azozon to lift the luggage.*
+:::
+
 #### Pick one {#advanced-pick-one}
 
 **1.** *Azozon commands that Alazun sit.* `zazozon vorn zalazun vehohel.` or `zazozon varn zalazun vehohel.`
@@ -118,4 +155,16 @@ z-Azozon | v-prohibit | z-Alazun | v-sit
 z-Azozon | v-command | z-Alazun | v-sit
 
 **`vorn`** takes the next sentence as an instruction; **`varn`** only states that Alazun sits.
+:::
+
+#### What changes {#advanced-what-changes}
+
+**1.** `zalazun vaen zalazun varal.` / `zalazun vuen zalazun varal.`
+
+::: details Show answer
+z-Alazun | v-agree | z-Alazun | v-pay
+
+z-Alazun | v-decline-to | z-Alazun | v-pay
+
+The first: Alazun agrees to pay. The second: Alazun declines to pay.
 :::

@@ -1,6 +1,6 @@
 # Proposal: Making every sitting pass "what one sitting holds"
 
-**Status:** in progress. Phases 0–3 done (2026-11-05). Phase 4 (2026-11-06): units B1 and I1–I5 done; next is I6. Level reviews may now hold checkpoints + 5 items (was + 3). Decided ODs, the original findings, URL table, gate runs, and moved-H3 list are in git history (this file at `89c0b5a2`).
+**Status:** in progress. Phases 0–3 done (2026-11-05). Phase 4 done (2026-11-06): units B1, I1–I11, A1; every allowlist row is **exists**. Next is Phase 5. Level reviews may now hold checkpoints + 5 items (was + 3). Decided ODs, the original findings, URL table, gate runs, and moved-H3 list are in git history (this file at `89c0b5a2`).
 **Related:** [what one sitting holds](../meta/grammar-docs.md#one-sitting), [drill-generation](../meta/procedures/drill-generation.md#execute), [allowlist](../meta/procedures/drill-generation.md#allowlist), [level reviews](../meta/translation-exercises.md#level-reviews), [site redirects](../meta/site-redirects.md).
 **Depends on:** none left (`range-series.md` landed).
 **Design authority:** none. This proposal moves, merges, peels, and retitles existing sections. It adds no form and changes no reading.
@@ -95,3 +95,4 @@ For the Phase 5 audit:
 - `rhetorical-questions.md`: does the title cover its three H3s (test 3)?
 - drill-generation's `comparatives.md` row says "Rank fence **`e`/`ae`/`ue`**", which looks like a stale vowel label.
 - Bare bold vowel labels in prose outside the pages workstream 1 fixed were not audited.
+- `measures-and-percent.md` Practice: E→A item 3 (*Three to five hours*, `oel`) is still a range item, though ranges moved off the page; replace it with a single-topic measure or percent item.
