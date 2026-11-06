@@ -136,7 +136,7 @@ Four `/h/` words for how a change stands now, not when it happened.
 
 Casual claim that an omitted exponent inherits a discourse order of magnitude; **`Ne0`** asserts OoM 0.
 
-[Stacked markers, from the end first](/stacked-markers#ambient-magnitude)
+[Stacked markers, from the end first](/digitless-exponents#ambient-magnitude)
 
 ### Antecedent
 

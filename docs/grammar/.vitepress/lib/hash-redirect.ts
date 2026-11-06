@@ -168,6 +168,8 @@ export const hashRedirects: HashRedirect[] = [
   { page: "emphasis.md", hash: "english-emphasis", to: "tone-marks.md", toHash: "emphasis-and-clefts" },
   { page: "join-limits.md", hash: "named-phrase-n", to: "named-phrases.md", toHash: "named-phrase-n" },
   { page: "join-limits.md", hash: "named-list", to: "named-phrases.md", toHash: "named-list" },
+  { page: "stacked-markers.md", hash: "ambient-magnitude-casual", to: "digitless-exponents.md", toHash: "ambient-magnitude-casual" },
+  { page: "stacked-markers.md", hash: "ambient-magnitude", to: "digitless-exponents.md", toHash: "ambient-magnitude" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */

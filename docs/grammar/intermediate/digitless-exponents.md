@@ -6,7 +6,6 @@ band: intermediate
 
 English *how many*, *thousands*, *27 million*, and *infinitely many* name an amount without listing every unit, or they name how big a number is. A long number is then said group by group. Everyday *three cats* and *the second book* stay in [numbers](/numbers).
 
-
 ### Digitless {#digitless}
 <a id="digitless-numbers"></a>
 <a id="bare-marker"></a>
@@ -156,6 +155,24 @@ English *hundreds* or *thousands* names a range of sizes without a count. To say
 | **`g-e3`** | `(−10⁴, −10³]` polarity with **`ru`** | negative thousands band |
 
 These work the same way on `/z/`, `/d/`, and `/b/`. Soft **`grawagem`** ≈ *about in the thousands band*. Exact count inside a band uses a mantissa (`g+4e3` = 4000), not bare OoM.
+
+### Ambient magnitude (casual) {#ambient-magnitude-casual}
+<a id="ambient-magnitude"></a>
+
+In careful writing, an omitted exponent means ones-place (`gragel` = 3). Prefer writing the exponent when the magnitude matters.
+
+In casual measure-heavy talk, a stretch of conversation may set an **ambient** order of magnitude (often an engineering `e3` / `e6` / …). Numbers written without an exponent are then heard at that magnitude until you cancel it. A [topic change](/topic#topic-resets) starts a new stretch, so bare numbers go back to ones until an ambient decade is set again.
+
+**Writing `e0`** says *ones* outright and cancels the ambient magnitude:
+
+| In a stretch where ambient OoM = 3 | Reading |
+|------------------------------------|---------|
+| **`g+3`** (casual ambient) | *three at ambient* → often 3×10³ |
+| **`g+3e3`** | *three at 10³* (exp explicit) |
+| **`g+3e0`** | *three at OoM 0* → 3×10⁰ = **3** (break out of ambient) |
+| **`g+e0`** | *ones-band amount* (bare OoM), not ambient thousands |
+
+Write **`Ne0`** (any nonzero mantissa **N**) to insist on ones. Formal prose that never sets an ambient magnitude rarely needs **`e0`**: leave it out when ones are already clear.
 
 ### Group separator {#group-separator}
 

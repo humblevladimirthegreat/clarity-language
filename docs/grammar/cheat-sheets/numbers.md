@@ -164,7 +164,7 @@ Each comma is spoken as the separator **`the`**, on every marker.
 
 On a rank, each comma opens a place within the one before. A large ordinal is one group (`g#1005`).
 
-In casual talk a stretch may set an ambient order of magnitude, so bare numbers are heard at that size until cancelled. Write `Ne0` to insist on ones ([ambient](/stacked-markers#ambient-magnitude)).
+In casual talk a stretch may set an ambient order of magnitude, so bare numbers are heard at that size until cancelled. Write `Ne0` to insist on ones ([ambient](/digitless-exponents#ambient-magnitude)).
 
 <PageBreak />
 

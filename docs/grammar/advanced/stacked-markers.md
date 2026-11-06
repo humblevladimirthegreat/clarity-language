@@ -55,24 +55,6 @@ Write the role letter, symbol stack, then digits: `gruebal` labels a floor numbe
 
 These four are the whole set. The other two standard stacks, **r-a-o** and **r-a-e**, are not used. Labels carry no sign (a dialing code `+44` is written `_44`), and a count and a rank are separate markers on separate words.
 
-### Ambient magnitude (casual)
-<a id="ambient-magnitude"></a>
-
-In careful writing, an omitted exponent means ones-place (`gragel` = 3). Prefer writing the exponent when the magnitude matters.
-
-In casual measure-heavy talk, a stretch of conversation may set an **ambient** order of magnitude (often an engineering `e3` / `e6` / …). Numbers written without an exponent are then heard at that magnitude until you cancel it. A [topic change](/topic#topic-resets) starts a new stretch, so bare numbers go back to ones until an ambient decade is set again.
-
-**Writing `e0`** says *ones* outright and cancels the ambient magnitude:
-
-| In a stretch where ambient OoM = 3 | Reading |
-|------------------------------------|---------|
-| **`g+3`** (casual ambient) | *three at ambient* → often 3×10³ |
-| **`g+3e3`** | *three at 10³* (exp explicit) |
-| **`g+3e0`** | *three at OoM 0* → 3×10⁰ = **3** (break out of ambient) |
-| **`g+e0`** | *ones-band amount* (bare OoM), not ambient thousands |
-
-Write **`Ne0`** (any nonzero mantissa **N**) to insist on ones. Formal prose that never sets an ambient magnitude rarely needs **`e0`**: leave it out when ones are already clear.
-
 ### Practice {#advanced-practice}
 
 Short drills for Advanced. Try each item before opening **Show answer**.
