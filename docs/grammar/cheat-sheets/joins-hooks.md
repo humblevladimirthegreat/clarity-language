@@ -173,7 +173,7 @@ Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting.
 | `ul` *from*, [*since*](/hooks#since) | `um` *away from* | `ur` *from there* | `owurolul` *leave* | `guxohehal` *from the house* | `gumxohehal` *away from the house* |
 | `ual` *out of* | `uam` *out from among* | | `owurolual` *exit* | `guaxowulal` *out of the water* | `guamxegayal` *picked from the group* |
 | `uel` *through* | `uem` *by way of* | `uer` *through there* | `owuroluol` *traverse* | `guexohalal` *transoceanic* | `guemxohol` *bridge-routed* |
-| `ol` *for* | `om` [*used by*](/extra-noun-hooks#genitive) (*B's*) | `or` *for it* | `owurolel` *serve* | `goxohehal` *household* | `gomxegayal` *group-owned* |
+| `ol` *for* | `om` [*used by*](/social-ties#genitive) (*B's*) | `or` *for it* | `owurolel` *serve* | `goxohehal` *household* | `gomxegayal` *group-owned* |
 | `aol` *using* | `aom` *by* | `aor` *with it* | `owurolael` *wield* | `gaoxowulal` *water-powered* | `gaomxorahol` *road-borne* |
 | `uol` *against* | `uom` *contrary to* | | `owuroluel` *oppose* | `guoxohalal` *sea-facing* | `guomxawulol` *headwind* |
 
@@ -215,7 +215,7 @@ Role letter, the hook's vowels (**`m`** for its zone, **`r`** to point back), **
 | `em bayan` / `um bayan` | [*here with us*](/here-there#deixis) / *over there* | B |
 | `vavobol oel buwen` | [*comes to me*](/here-there#deixis) | B |
 | `dubogal velobal oel buwen` | [*brings me the package*](/here-there#deixis) | B |
-| `zodozel om buwen` | [*my dog*](/extra-noun-hooks#genitive) (in my use) | B |
+| `zodozel om buwen` | [*my dog*](/social-ties#genitive) (in my use) | B |
 
 ## Don't mix up {#dont-mix-up}
 

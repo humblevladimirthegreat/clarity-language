@@ -69,69 +69,6 @@ With an extra-noun hook, **-m** makes a **zone extra**: the landmark is the gene
 
 **Compare with:** some English prepositions use other forms. *So that Alazun sits* is **`thovam blarl`**.
 
-### Whose (`om`) {#genitive}
-
-English *Azozon's dog* often means the dog is in Azozon's **use**: Azozon keeps it, walks it, feeds it. Put **`om`** right after the noun, then the user in `/b/`. `om` says B uses the thing or has access to it. It does not say who owns it. (cue: **`ol`** is *for B*, a get meant to reach B; **`om`** says it already reached B and is in B's use)
-
-> `zodozel om bazozon veruvol.`
->
-> [z-dog | [used-by | b-Azozon]] | v-run
->
-> "Azozon's dog runs." (the dog Azozon keeps)
-
-> `zazozon dohehal om balazun vayebel.`
->
-> z-Azozon | [d-house | [used-by | b-Alazun]] | v-see
->
-> "Azozon sees Alazun's house." (the house Alazun lives in)
-
-For *my* and *your*, put the [speaker or listener](pronouns.md#special-pronouns) in `/b/`: `om buwen` is *my*, `om bawan` is *your*.
-
-> `zodozel om buwen vezuvel.`
->
-> [z-dog | [used-by | b-speaker]] | v-sleep
->
-> "My dog sleeps."
-
-To describe the thing, put its `/ɡ/` word **between** the noun and **`om`**. The adjective stays on the noun, and `om` still attaches to the noun. A `/ɡ/` word **after** the `/b/` describes B instead.
-
-> `zodozel gelazem om buwen vezuvel.`
->
-> [z-dog | g-big | [used-by | b-speaker]] | v-sleep
->
-> "My big dog sleeps."
-
-With no verb, the same order is a sentence. A noun marked with `om` is one the listener can pick out, so the `/ɡ/` word is a [property](predication.md#classification-property), not *there is …*.
-
-> `zodozel gelazem om buwen.`
->
-> [z-dog | g-big | [used-by | b-speaker]]
->
-> "My dog is big."
-
-**Compare with:** `zodozel gelazem.` is *There is a big dog* ([existence](predication.md#existence)): a new noun with no `om` introduces the thing. `zodozel om buwen gelazem` puts *big* on the speaker, not the dog. `zodozel om buwen.` alone says your dog is here (*there's my dog*).
-
-Things B uses include places B lives or sits, tools and rides B uses, ideas B works with, and B's turn, time, or occasion: *Azozon's birthday* is the day that is Azozon's to have.
-
-> `zuburol om bazozon.`
->
-> [z-birthday | [used-by | b-Azozon]]
->
-> "It's Azozon's birthday."
-
-Other kinds of *'s* each have their own word:
-
-| English *'s* | Use |
-|--------------|-----|
-| legal ownership (*the dog Azozon owns*) | `gegunum` + `/b/` |
-| something B made (*the book Azozon wrote*) | a [role compound](roles.md#role-compounds) |
-
-**`om`** always needs a noun on its left: it belongs to the nearest noun before it (after that noun's `/ɡ/` words). After a verb or at the start of a sentence there is no thing for B to use, so `om` + `/b/` is not a sentence there. For someone's act (*Azozon's walk*), say the act as its own sentence, then [point back to it](dependents.md#which-noun).
-
-**`om`** never takes a person on the left: a person is not something someone uses. **`gegunum`** never does either, because no one owns a person. **`om`** never names a feeling or trait either: a feeling or trait stays something B has, not something B uses. A trait is a `/ɡ/` word on B.
-
-**Compare with:** *for Azozon* is `ol`. A [sake](sakes.md) on `/ɡ/` also marks the noun as yours, together with how it serves you.
-
 ### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
@@ -233,4 +170,3 @@ z-Alazun | v-run | [toward | b-pencil]
 
 Put the camera's `/ɡ/` word before **`om`**; after the `/b/` it describes Azozon.
 :::
-

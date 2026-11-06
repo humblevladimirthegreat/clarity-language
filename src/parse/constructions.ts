@@ -801,7 +801,7 @@ export function constructionRegistry(overlays: Iterable<OverlayEntrySource>): Ma
  */
 export const REJECTIONS = {
   verbSharedOwn: { anchor: "verb-and-stance-joins.md#vp-clause-forms", summary: "a joined verb with its own object or recipient takes no shared one: say it in that verb's item, or share it and drop the item's own" },
-  genitiveHost: { anchor: "extra-noun-hooks.md#genitive", summary: "`om` + `/b/` follows the noun B uses" },
+  genitiveHost: { anchor: "social-ties.md#genitive", summary: "`om` + `/b/` follows the noun B uses" },
   turnSeriesCall: { anchor: "speech-moves.md#vocative", summary: "an act or polar series word takes -l / -m / -r, never the call ending -n (`yan`, `yaen`)" },
   polarOrder: { anchor: "questions.md#polar-particle", summary: "a polar word is one answer or one check-back: not two in a row, and not before an act word (an answer and then a question are two turns)" },
   checkBackBody: { anchor: "polar-inventory.md#check-backs", summary: "a check-back (`yel` and a polar word) is a turn of its own: end it with a period (`zazozon vowurol. yol yael.`)" },

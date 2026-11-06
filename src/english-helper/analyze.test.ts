@@ -129,7 +129,7 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
     const my = slots("My cat runs.").find((s) => s.text === "My")!;
     const possessive = my.suggestions.find((s) => s.kind === "detector" && s.id === "possessive-pronoun");
     assert.ok(possessive?.kind === "detector" && possessive.example);
-    assert.equal(possessive.example.link, "extra-noun-hooks.md#genitive");
+    assert.equal(possessive.example.link, "social-ties.md#genitive");
     assert.match(possessive.example.english, /\bmy\b/i);
   });
 

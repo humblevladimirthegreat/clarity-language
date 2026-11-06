@@ -45,7 +45,7 @@ A place, tool, or *of*-relation on the noun is still an extra-noun [hook](/hooks
 >
 > "Azozon sees a guard who sits."
 
-For English *whose*, resume the person after the [whose hook **`om`**](/extra-noun-hooks#genitive) in the second sentence. Use **`gegunum`** instead when the point is that the guard legally owns it.
+For English *whose*, resume the person after the [whose hook **`om`**](/social-ties#genitive) in the second sentence. Use **`gegunum`** instead when the point is that the guard legally owns it.
 
 > `zagayul vehohel. zodozel om bagayur veruvol.`
 >
@@ -67,7 +67,7 @@ English uses the same *who* clause for two jobs. When it picks out **which** one
 
 ### Stacked owners (*Azozon's dog's bone*) {#stacked-owners}
 
-**Needs:** [Whose (`om`)](/extra-noun-hooks#genitive) · [Route `ao`](/rank-joins#route-ao)
+**Needs:** [Whose (`om`)](/social-ties#genitive) · [Route `ao`](/rank-joins#route-ao)
 
 When English stacks possessives, keep one **`om`** and list every owner in its `/b/`, closed by the route join **`baol`**. Put the **nearest** owner first: the first `/b/` uses the host, and each later `/b/` keeps the one before it.
 
@@ -412,7 +412,7 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 
 ### Join, belong, comprise, replace, represent, prefer, involve, agree {#relating-verbs}
 
-**Needs:** [Rank joins](/rank-joins#rank-joins) · [List verbs](/list-verbs#list-verbs) · [Join-relations](/join-relations#join-relations) · [Of relations](/of-relations#of-relations) · [Whose](/extra-noun-hooks#genitive) · [Exchange](/relations#exchange) · [Proxy](/relations#proxy) · [Likeness](/relations#likeness)
+**Needs:** [Rank joins](/rank-joins#rank-joins) · [List verbs](/list-verbs#list-verbs) · [Join-relations](/join-relations#join-relations) · [Of relations](/of-relations#of-relations) · [Whose](/social-ties#genitive) · [Exchange](/relations#exchange) · [Proxy](/relations#proxy) · [Likeness](/relations#likeness)
 
 Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer*) say how two things **stand to each other** more than what anyone does. Ageben writes that stance as a hosted relation word with the other thing in `/b/`, or as a list verb when someone really acts on a thing. Pick the relation, and keep the ordinary verb for the activity.
 

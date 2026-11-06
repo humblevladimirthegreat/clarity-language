@@ -58,15 +58,15 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 | English itch | Ageben job | Teach |
 |--------------|------------|-------|
-| in B's use (*Azozon's dog*, *my house*, *my seat*), B's turn or occasion (*Azozon's birthday*) | hook **`om`** + `/b/` | [Whose](/extra-noun-hooks#genitive) |
+| in B's use (*Azozon's dog*, *my house*, *my seat*), B's turn or occasion (*Azozon's birthday*) | hook **`om`** + `/b/` | [Whose](/social-ties#genitive) |
 | care of a person (*Azozon's patient*) | **`gabolem`** + `/b/` | [Social relations](/social-ties#social-relations) |
 | legal ownership (*the dog Azozon owns*) | **`gegunum`** + `/b/` | [Of relations](/of-relations#of-relations) |
 | social tie (*Azozon's friend*) | tie root on `/ɡ/` **-m** + `/b/` | [Social relations](/social-ties#social-relations) |
 | part / contents / material (*a hand of Alazun*, *a teapot of tea*) | **`gobom`** / **`gadam`** / **`gulom`** + `/b/` | [Of relations](/of-relations#of-relations) |
 | origin (*Alazun of the city*, *the sound of the drums*) | **`gaham`** + `/b/` | [Of relations](/of-relations#of-relations) |
 | someone's act (*Azozon's walk*, *the monkey's tricks*) | the act as a sentence, then its verb root in **-r** | [Someone's act](say-people-places.md#someones-act) |
-| a family's (*the Olowon family's house*) | hook **`om`** + the family with its name: `om buvayal golowon` | [Whose](/extra-noun-hooks#genitive), [multipart names](/proper-names#multipart-names) |
-| *personal* / *private* (*a personal matter*) | hook **`om`** + the owner: `om buwen` | [Whose](/extra-noun-hooks#genitive) |
+| a family's (*the Olowon family's house*) | hook **`om`** + the family with its name: `om buvayal golowon` | [Whose](/social-ties#genitive), [multipart names](/proper-names#multipart-names) |
+| *personal* / *private* (*a personal matter*) | hook **`om`** + the owner: `om buwen` | [Whose](/social-ties#genitive) |
 | *my* belonging + sake (*my tent serves the physical sake*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](/sakes#personal-possession) |
 
 ### *about*
