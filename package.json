@@ -20,6 +20,7 @@
     "retie-docs": "tsx scripts/retie-docs.ts",
     "rename-language": "tsx scripts/rename-language.ts",
     "cheat-sheet-blocks": "tsx scripts/cheat-sheet-blocks.ts",
+    "grammar-map": "tsx scripts/grammar-map.ts",
     "core-vocabulary": "tsx scripts/core-vocabulary.ts",
     "regloss-docs": "tsx scripts/regloss-docs.ts",
     "metaphor-assign": "tsx scripts/phase5-metaphor-assign.ts",
