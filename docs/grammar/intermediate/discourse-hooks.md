@@ -120,6 +120,30 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 in.fact | z-Alazun | d-key | v-find
 :::
 
+**2.** *Anyway, Ahelan finds the elevator.*
+
+::: details Show answer
+`er zahelan dulahol vumewel.`
+
+anyway | z-Ahelan | d-elevator | v-find
+:::
+
+**3.** *Azozon writes, and additionally Alazun sits.*
+
+::: details Show answer
+`zazozon varuyol xam al zalazun vehohel.`
+
+[z-Azozon | v-write | x-and.open | additionally | z-Alazun | v-sit]
+:::
+
+**4.** *Never mind that: Azozon finds the key.*
+
+::: details Show answer
+`ur zazozon degewol vumewel.`
+
+never.mind.that | z-Azozon | d-key | v-find
+:::
+
 #### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `yazozon al zalazun vehohel.`

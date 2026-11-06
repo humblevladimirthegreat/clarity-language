@@ -201,6 +201,14 @@ z-Ahelan | d-newspaper | rather | d-policy | v-see
 z-family | including.open | z-Azozon | except | z-Alazun | v-sit
 :::
 
+**5.** *Azozon writes on the newspaper. Ahelan writes on it too.*
+
+::: details Show answer
+`zazozon varuyol ael bunonal. zahelan varuyol aer.`
+
+z-Azozon | v-write | [on | b-newspaper] . z-Ahelan | v-write | on.it
+:::
+
 #### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zahelan dunonal em darowel vayebel.`
@@ -237,4 +245,16 @@ z-Alazun | v-sit | there
 z-family | except.open | z-Azozon | v-write
 
 Open **-m** leaves room for more exceptions; **`ul`** excepts Azozon alone.
+:::
+
+#### What changes {#intermediate-what-changes}
+
+**1.** `zuvayal varuyol al bunonal. zalazun varuyol ar.` / `zuvayal varuyol al bunonal. zalazun varuyol ur.`
+
+::: details Show answer
+z-family | v-write | [in | b-newspaper] . z-Alazun | v-write | in.there
+
+z-family | v-write | [in | b-newspaper] . z-Alazun | v-write | from.there
+
+**`ar`** points back into the newspaper: Alazun writes in it too. **`ur`** points back to it as a source: Alazun writes from it.
 :::

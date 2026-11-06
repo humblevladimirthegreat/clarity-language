@@ -381,18 +381,6 @@ z-Azozon | v-run | [th-because | bl-Alazun] | th-not
 The `/th/` join denies the ground; **`vul`** after the verb would deny the running.
 :::
 
-#### Fix it {#intermediate-fix-it}
-
-**1.** *Azozon walks and Ahelan sleeps.* <!-- lint: error -->`zazozon vowurol zahelan vezuvel.`
-
-::: details Show answer
-`zazozon vowurol xam zahelan vezuvel.`
-
-[z-Azozon | v-walk | x-and.open | z-Ahelan | v-sleep]
-
-Two clauses take an `/x/` join between them.
-:::
-
 #### What changes {#intermediate-what-changes}
 
 **1.** `zazozon veruvol thul.` / `zazozon veruvol thol.`
