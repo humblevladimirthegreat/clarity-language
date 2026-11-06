@@ -89,14 +89,14 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `gewem` | likeness like (type resemblance) | [Likeness (like)](/relations#likeness) | B |
-| `gezem` | ALTHOUGH clause hinge (concession; NP despite) | [Because, if, although (hinges)](/dependents#hinges) | B |
+| `gezem` | ALTHOUGH clause hinge (concession; NP despite) | [Because, although (hinges)](/dependents#hinges) | B |
 | `gobom` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `goen` | join-relation on a par with (adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `gohem` | IF clause hinge (one-way conditional) | [If](/causation#if) | B |
 | `gohom` | locative across (edge to far edge of one landmark) | [Locative relations](/locative-relations#locative-relations) | I |
 | `gon` | join-relation prioritizing (adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `gorel` | IDENTITY copula (identical-to / same-as) | [Identity](/predication#identity) | B |
-| `govam` | SO-THAT clause hinge (the speaker's aim for the thing; NP for-goal) | [Because, if, although (hinges)](/dependents#hinges) | B |
+| `govam` | SO-THAT clause hinge (the speaker's aim for the thing; NP for-goal) | [Because, although (hinges)](/dependents#hinges) | B |
 | `goyom` | stimulus (sake about a noun you do not possess) | [Personal possession](/sakes#personal-possession) | B |
 | `guan` | join-relation without or excluding (adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `guen` | join-relation open to anything but (adjective) | [Join-relations](/join-relations#join-relations) | I |
@@ -115,17 +115,17 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 <!-- generated: overlays pos=h take=22 -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `habam` | BEFORE clause hinge (ahead-of) | [Because, if, although (hinges)](/dependents#hinges) | B |
+| `habam` | BEFORE clause hinge (ahead-of) | [Because, although (hinges)](/dependents#hinges) | B |
 | `hadam` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `haen` | join-relation among options (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `haham` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `hahom` | SO-THAT-RESULT clause hinge (outcome that follows from the host) | [Result (so … that)](/more-hinges#result-hinge) | I |
-| `halam` | AFTER clause hinge (just-after) | [Because, if, although (hinges)](/dependents#hinges) | B |
+| `halam` | AFTER clause hinge (just-after) | [Because, although (hinges)](/dependents#hinges) | B |
 | `han` | join-relation with or including (adverb + argument) | [Join-relations](/join-relations#join-relations) | I |
 | `hanem` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](/relations#proxy) | B |
 | `haon` | join-relation starting with (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](/residue-and-former#residue-and-former-climate) | I |
-| `harum` | UNTIL clause hinge (endpoint bound) | [Because, if, although (hinges)](/dependents#hinges) | B |
+| `harum` | UNTIL clause hinge (endpoint bound) | [Because, although (hinges)](/dependents#hinges) | B |
 | `havel` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `havem` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `haver` | ALREADY phasal (the change has happened); -r for now: likely to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
@@ -150,11 +150,11 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `hen` | join-relation exclusively for (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `henam` | AS-OF clause hinge (asserted whose-now / dated ledger) | [As-of (whose now)](/as-of#as-of) | A |
 | `henar` | AS-OF clause hinge (asserted whose-now / dated ledger) resume | [As-of (whose now)](/as-of#as-of) | A |
-| `herom` | WHILE clause hinge (concurrent) | [Because, if, although (hinges)](/dependents#hinges) | B |
+| `herom` | WHILE clause hinge (concurrent) | [Because, although (hinges)](/dependents#hinges) | B |
 | `hevam` | locative around (figure on all sides of one landmark) | [Locative relations](/locative-relations#locative-relations) | I |
 | `hewel` | likeness exactly like (manner match) | [Exactly like (hewel / gewel)](/exactly-like#exactly-like) | I |
 | `hewem` | likeness like (manner resemblance) | [Extra nouns (/b/)](/clause#extra-nouns) | B |
-| `hezem` | ALTHOUGH clause hinge (concession; NP despite) | [Because, if, although (hinges)](/dependents#hinges) | B |
+| `hezem` | ALTHOUGH clause hinge (concession; NP despite) | [Because, although (hinges)](/dependents#hinges) | B |
 | `hobom` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `hodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](/can-and-cant#ability-fallback) | B |
 | `hoen` | join-relation equating or tying (adverb) | [Join-relations](/join-relations#join-relations) | I |
@@ -179,7 +179,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 |--------|---------|-----------|-------|
 | `hunor` | AS-OF clause hinge (unasserted whose-now / placeholder now) resume | [As-of (whose now)](/as-of#as-of) | A |
 | `huon` | join-relation deprioritizing (adverb) | [Join-relations](/join-relations#join-relations) | I |
-| `huvahum` | BY clause hinge (deadline: done at or before the endpoint) | [Because, if, although (hinges)](/dependents#hinges) | B |
+| `huvahum` | BY clause hinge (deadline: done at or before the endpoint) | [Because, although (hinges)](/dependents#hinges) | B |
 | `huvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `huvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `huvur` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
@@ -199,7 +199,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `thagom` | plan mood itinerary map-resolution (steps on the map; detail unstated) | [Plan](/intention#plan) | B |
 | `thagor` | plan mood sketch map-resolution (direction only; details left open) | [Plan](/intention#plan) | B |
 | `thahul` | BECAUSE clause hinge with fault (the reason broke a norm) | [Fault](/fault#fault) | B |
-| `thahum` | BECAUSE clause hinge (explanatory reason) | [Because, if, although (hinges)](/dependents#hinges) | B |
+| `thahum` | BECAUSE clause hinge (explanatory reason) | [Because, although (hinges)](/dependents#hinges) | B |
 | `thahur` | BECAUSE clause hinge with a share (the reason contributed among others) | [Fault](/fault#fault) | B |
 | `thalol` | want mood lasting (a wish that keeps returning) | [Want](/want-and-decide#want) | I |
 | `thalom` | want mood (duration unstated) | [Want](/want-and-decide#want) | I |
@@ -210,8 +210,8 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `thebal` | reported evidential with strong evidence (reliable source) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thebam` | reported evidential (hearsay / said or written by someone else / reportative) | [Evidentiality](/evidentiality#evidentiality) | I |
 | `thebar` | reported evidential with weak evidence (rumor) | [Evidence strength](/evidentiality#evidence-strength) | I |
-| `thebem` | ONLY-IF clause hinge (necessary condition) | [Because, if, although (hinges)](/dependents#hinges) | B |
-| `thehom` | IFF clause hinge (biconditional) | [Because, if, although (hinges)](/dependents#hinges) | B |
+| `thebem` | ONLY-IF clause hinge (necessary condition) | [Only if](/causation#only-if) | B |
+| `thehom` | IFF clause hinge (biconditional) | [Only if](/causation#only-if) | B |
 | `themel` | mirative mood overturning a firm expectation | [Mirative (themem)](/mirative#mirative) | I |
 | `themem` | mirative mood (newly found out and not expected) | [Mirative (themem)](/mirative#mirative) | I |
 <!-- /generated -->
@@ -239,11 +239,11 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `thogel` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
 | `thogem` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
 | `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
-| `thohem` | IF clause hinge (one-way conditional) | [Because, if, although (hinges)](/dependents#hinges) | B |
+| `thohem` | IF clause hinge (one-way conditional) | [If](/causation#if) | B |
 | `thomal` | may mood find-out follow-up (I'll / let's find out) | [Follow-up endings (MAY)](/knowing#follow-up-endings-may) | B |
 | `thomam` | may mood (could be; default) | [MAY](/knowing#may) | B |
 | `thomar` | may mood who-knows follow-up (leave unsettled; may never know) | [Follow-up endings (MAY)](/knowing#follow-up-endings-may) | B |
-| `thovam` | SO-THAT clause hinge (the speaker's aim; intended outcome; NP for-goal) | [Because, if, although (hinges)](/dependents#hinges) | B |
+| `thovam` | SO-THAT clause hinge (the speaker's aim; intended outcome; NP for-goal) | [Because, although (hinges)](/dependents#hinges) | B |
 | `thubol` | pattern evidential with strong evidence (well-established pattern) | [Evidence strength](/evidentiality#evidence-strength) | I |
 <!-- /generated -->
 
