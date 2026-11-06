@@ -144,6 +144,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *pill* | `ebebul` |
 | *walk* | `vowurol` |
 | *see* | `vayebel` |
+| *growth* | `elom` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -165,12 +166,14 @@ z-pill-x | g-25yo
 z-Azozon | [b-meter | g-two] | v-walk
 :::
 
-**3.** *Three to five hours.*
+**3.** *A growth of two percentage points.*
 
 ::: details Show answer
-`zagorum gragel oel grazal.`
+`zelom gradoyul.`
 
-[z-hour | g-three] | through | g-five
+z-growth | g-2yu
+
+**`yu`** counts points on the scale (written short, `g+2%*`); **`yo`** (`gradoyol`) would be two percent of the growth.
 :::
 
 **4.** *Two thirds of the pills.*

@@ -50,73 +50,73 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **1.** *Azozon waits if Alazun pours the water if Ahelan finds the soap.*
 
 ::: details Show answer
-`zazozon vabahom thohem blarl zalazun vowuvul dowulal thohem blarl zahelan vumewel dozebul.`
+`zazozon vabahom thohem blarl zalazun dowulal vowuvul thohem blarl zahelan dozebul vumewel.`
 
-z-Azozon | v-wait | [th-if | bl-that-clause] | z-Alazun | v-pour | d-water | [th-if | bl-that-clause] | z-Ahelan | v-find | d-soap
+z-Azozon | v-wait | [th-if | bl-that-clause] | z-Alazun | d-water | v-pour | [th-if | bl-that-clause] | z-Ahelan | d-soap | v-find
 :::
 
 **2.** *Ahelan pours the water because Alazun finds the soap because Azozon lifts the basket.*
 
 ::: details Show answer
-`zahelan vowuvul dowulal thahum blarl zalazun vumewel dozebul thahum blarl zazozon velunel dabowal.`
+`zahelan dowulal vowuvul thahum blarl zalazun dozebul vumewel thahum blarl zazozon dabowal velunel.`
 
-z-Ahelan | v-pour | d-water | [th-because | bl-that-clause] | z-Alazun | v-find | d-soap | [th-because | bl-that-clause] | z-Azozon | v-lift | d-basket
+z-Ahelan | d-water | v-pour | [th-because | bl-that-clause] | z-Alazun | d-soap | v-find | [th-because | bl-that-clause] | z-Azozon | d-basket | v-lift
 :::
 
 **3.** *Ahelan sits only if Azozon finds the coat because Alazun sees the shirt.*
 
 ::: details Show answer
-`zahelan vehohel thebem blarl zazozon vumewel dogobal thahum blarl zalazun vayebel dehobal.`
+`zahelan vehohel thebem blarl zazozon dogobal vumewel thahum blarl zalazun dehobal vayebel.`
 
-z-Ahelan | v-sit | [th-only-if | bl-that-clause] | z-Azozon | v-find | d-coat | [th-because | bl-that-clause] | z-Alazun | v-see | d-shirt
+z-Ahelan | v-sit | [th-only-if | bl-that-clause] | z-Azozon | d-coat | v-find | [th-because | bl-that-clause] | z-Alazun | d-shirt | v-see
 :::
 
 #### Ageben → English {#advanced-ageben-to-english}
 
-**1.** `zahelan vayebel dogobal thahum blarl zazozon velunel dabowal thahum blarl zalazun vumewel dubal.`
+**1.** `zahelan dogobal vayebel thahum blarl zazozon dabowal velunel thahum blarl zalazun dubal vumewel.`
 
 ::: details Show answer
-z-Ahelan | v-see | d-coat | [th-because | bl-that-clause] | z-Azozon | v-lift | d-basket | [th-because | bl-that-clause] | z-Alazun | v-find | d-socks
+z-Ahelan | d-coat | v-see | [th-because | bl-that-clause] | z-Azozon | d-basket | v-lift | [th-because | bl-that-clause] | z-Alazun | d-socks | v-find
 
 *Ahelan sees the coat because Azozon lifts the basket because Alazun finds the socks.* (Alazun's find is why Azozon lifts the basket.)
 :::
 
-**2.** `zazozon vehohel thahum blarl zalazun vabahom thahum blarl zahelan vowuvul dowulal.`
+**2.** `zazozon vehohel thahum blarl zalazun vabahom thahum blarl zahelan dowulal vowuvul.`
 
 ::: details Show answer
-z-Azozon | v-sit | [th-because | bl-that-clause] | z-Alazun | v-wait | [th-because | bl-that-clause] | z-Ahelan | v-pour | d-water
+z-Azozon | v-sit | [th-because | bl-that-clause] | z-Alazun | v-wait | [th-because | bl-that-clause] | z-Ahelan | d-water | v-pour
 
 *Azozon sits because Alazun waits because Ahelan pours the water.*
 :::
 
-**3.** `zazozon vumewel dubal thohem blarl zalazun velunel dabowal thahum blarl zahelan vabahom.`
+**3.** `zazozon dubal vumewel thohem blarl zalazun dabowal velunel thahum blarl zahelan vabahom.`
 
 ::: details Show answer
-z-Azozon | v-find | d-socks | [th-if | bl-that-clause] | z-Alazun | v-lift | d-basket | [th-because | bl-that-clause] | z-Ahelan | v-wait
+z-Azozon | d-socks | v-find | [th-if | bl-that-clause] | z-Alazun | d-basket | v-lift | [th-because | bl-that-clause] | z-Ahelan | v-wait
 
 *Azozon finds the socks if Alazun lifts the basket, which Alazun does because Ahelan waits.*
 :::
 
 #### Fix it {#advanced-fix-it}
 
-**1.** *Azozon waits because Alazun finds the socks because Ahelan lifts the basket.* <!-- lint: error -->`zazozon vabahom thahum blarl zalazun vumewel dubal thahum zahelan velunel dabowal.`
+**1.** *Azozon waits because Alazun finds the socks because Ahelan lifts the basket.* <!-- lint: error -->`zazozon vabahom thahum blarl zalazun dubal vumewel thahum zahelan dabowal velunel.`
 
 ::: details Show answer
-`zazozon vabahom thahum blarl zalazun vumewel dubal thahum blarl zahelan velunel dabowal.`
+`zazozon vabahom thahum blarl zalazun dubal vumewel thahum blarl zahelan dabowal velunel.`
 
-z-Azozon | v-wait | [th-because | bl-that-clause] | z-Alazun | v-find | d-socks | [th-because | bl-that-clause] | z-Ahelan | v-lift | d-basket
+z-Azozon | v-wait | [th-because | bl-that-clause] | z-Alazun | d-socks | v-find | [th-because | bl-that-clause] | z-Ahelan | d-basket | v-lift
 
 The inner *because* needs its own **`blarl`** too: the dependent clause ends in its own stand-in before Ahelan's sentence.
 :::
 
 #### What changes {#advanced-what-changes}
 
-**1.** `zazozon vabahom thahum blarl zalazun vumewel dehobal thahum blarl zahelan velunel dabowal.` / `zazozon vabahom thahum blarl zalazun vumewel dehobal thebem blarl zahelan velunel dabowal.`
+**1.** `zazozon vabahom thahum blarl zalazun dehobal vumewel thahum blarl zahelan dabowal velunel.` / `zazozon vabahom thahum blarl zalazun dehobal vumewel thebem blarl zahelan dabowal velunel.`
 
 ::: details Show answer
-z-Azozon | v-wait | [th-because | bl-that-clause] | z-Alazun | v-find | d-shirt | [th-because | bl-that-clause] | z-Ahelan | v-lift | d-basket
+z-Azozon | v-wait | [th-because | bl-that-clause] | z-Alazun | d-shirt | v-find | [th-because | bl-that-clause] | z-Ahelan | d-basket | v-lift
 
-z-Azozon | v-wait | [th-because | bl-that-clause] | z-Alazun | v-find | d-shirt | [th-only-if | bl-that-clause] | z-Ahelan | v-lift | d-basket
+z-Azozon | v-wait | [th-because | bl-that-clause] | z-Alazun | d-shirt | v-find | [th-only-if | bl-that-clause] | z-Ahelan | d-basket | v-lift
 
 The first: Alazun finds the shirt because Ahelan lifts the basket. The second: Alazun finds the shirt only if Ahelan lifts the basket, with no claim that Ahelan does.
 :::
