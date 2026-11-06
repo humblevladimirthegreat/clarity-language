@@ -243,7 +243,7 @@ Each level ends with a review: [review.md](/review) for Beginner, [review-interm
 
 | Rule | Detail |
 |------|--------|
-| **Coverage** | One item per stage checkpoint of the level, aimed at that page's main decision (its allowlist **Introduces** cell). Up to 3 extra items may revisit a page |
+| **Coverage** | One item per stage checkpoint of the level, aimed at that page's main decision (its allowlist **Introduces** cell). Up to 5 extra items may revisit a page |
 | **Mix** | Mostly **Pick one** and short translation: **Pick one** at least a third of the items, at least 3 items per translation direction, **Fix it** + **What changes** at most a quarter |
 | **Rule link** | Every answer ends with `**Rule:** [Section title](page.md#id)` after **Also correct:**, linking the stage section that teaches the decision (not its checkpoint), in the same level |
 | **Vocabulary** | **Review** only (English · Ageben): no **New words**, house names and `SELF` included. Prefer roots unused longest (`npm run core-vocabulary -- --for review.md:beginner`) |

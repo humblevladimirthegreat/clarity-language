@@ -9,7 +9,7 @@ import { BANDS, resolveAnchor, withinSection, type LearningOrder, type Section }
 import { practiceItems, type PracticeItem } from "./practice-items.js";
 
 /** Items per review: one per stage checkpoint of the band, plus up to `extra`. */
-export const REVIEW_EXTRA_ITEMS = 3;
+export const REVIEW_EXTRA_ITEMS = 5;
 /** Fewest items per translation direction. */
 export const REVIEW_TRANSLATION_MIN = 3;
 /** **Pick one** is at least this share of the items; **Fix it** + **What changes** at most `otherShare`. */
