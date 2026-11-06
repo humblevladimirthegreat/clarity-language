@@ -94,7 +94,7 @@ Before doing one of these tasks, read its file in full and follow it. Each file 
 | Add, retitle, or respell a root or compound, move an overlay, edit `core`, number pegs | `lexicon.md`; when anything is respelled, also `retie.md` |
 | Measure, peel, or move sittings and H3s | `restructure-sittings.md` |
 | Write or top up a checkpoint or level review, edit the drill allowlist | `drill-generation.md` |
-| Write, carry out, or resume a proposal; subagent workstreams; commits | `proposals.md` |
+| Write a proposal, or orchestrate one as the session the user talks to: subagents, gates, commits, resuming. A subagent running one unit skips it; its brief is complete | `proposals.md` |
 
 ## Tooling notes
 

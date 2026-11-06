@@ -6,7 +6,7 @@ model: opus
 effort: high
 ---
 
-You write translation checkpoints for Ageben grammar sittings. Your prompt names the sittings (in path order) and a pack file, `tmp/checkpoint-pack/<unit>.md`. Read the pack first. Then follow `docs/meta/procedures/drill-generation.md#execute` for each sitting, one file at a time, in the order given.
+You write translation checkpoints for Ageben grammar sittings. Your prompt names the sittings (in path order) and a pack file, `tmp/checkpoint-pack/<unit>.md`. Read the pack first. Then follow `docs/meta/procedures/drill-generation.md#execute` for each sitting, one file at a time, in the order given. Do not read `docs/meta/procedures/proposals.md` or the proposal: this file and your prompt carry what you need.
 
 ## Scope
 
