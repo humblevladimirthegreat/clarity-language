@@ -180,6 +180,14 @@ z-Alazun | d-CITE[Azozon] | v-tell . z-Ahelan | d-←episode-patient.same | v-wr
 z-Ahelan | d-NAME.CITE.instance[Onuren | Alazun] | v-see
 :::
 
+**4.** *About the word “vowurol”: Ahelan writes it down.*
+
+::: details Show answer
+`glegol x[vowurol] zahelan dalen varuyol.`
+
+[gl-MENTION | x-CITE[v-walk]] | z-Ahelan | d-TOPIC | v-write
+:::
+
 #### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zazozon glegon d[onuren] vuyugum.`
@@ -206,6 +214,14 @@ z-Ahelan | d-CITE.about[z-Azozon | v-attest] | v-tell
 *Alazun, who is small, punches Azozon.*
 :::
 
+**4.** `zazozon d[zalazun vulamul] vugel.`
+
+::: details Show answer
+z-Azozon | d-CITE[z-Alazun | v-lie] | v-attest
+
+*Azozon attests, “Alazun lies.”*
+:::
+
 #### Pick one {#intermediate-pick-one}
 
 **1.** *Azozon dislikes Onuren Alazun.* (the work) `zazozon d@[onuren alazun] vuyugum.` or `zazozon d[onuren alazun] vuyugum.`
@@ -216,4 +232,16 @@ z-Ahelan | d-CITE.about[z-Azozon | v-attest] | v-tell
 z-Azozon | d-NAME.CITE[Onuren | Alazun] | v-rejection
 
 **`@`** makes the span the work; bare brackets quote the words.
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Ahelan dislikes the name “alazun.”* <!-- lint: error -->`zahelan glegol d[alazun] vuyugum.`
+
+::: details Show answer
+`zahelan glegon d[alazun] vuyugum.`
+
+z-Ahelan | [gl-NAME.MENTION | d-CITE[Alazun]] | v-rejection
+
+A name as spelling takes the **-n** marker `glegon`; `glegol` is a word as spelling.
 :::

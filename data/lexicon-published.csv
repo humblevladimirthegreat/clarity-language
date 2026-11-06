@@ -787,7 +787,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🥿,loafer,uloba,body,holds,medium,,,,,
 👠,high-heel,ahoba,body,holds,medium,,,,,
 🩰,ballet-shoe,uyoba,body,holds,medium,,,,,
-🪮,comb,ogebo,body,order,small,,,,,
+🪮,comb,ogebo,body,order,small,,,,,quote-contents.md#intermediate-practice
 👑,crown,egobo,body,order,medium,leadership,crown marks who rules; leadership is being the one others answer to,,lead,social-ties.md#beginner-practice
 👒,sun-hat,azobu,body,takes-away,medium,shade,a sunhat shields from sun above; shade is shelter from harshness,,shadow,
 🎩,top-hat,udoba,body,holds,medium,trick,a magician pulls a trick from a top hat,,,
@@ -906,7 +906,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 📏,ruler,uroro,counting,order,medium,measurement,ruler measures exact length; measurement is precise tracking,,measure; criteria; dimension,
 🚃,railcar,urava,doing,holds,big,length,a railcar runs long; length is how far along,,extend; long,
 📐,set-square,ezero,counting,order,small,meter,set square marks exact length; meter is the SI length unit,,,measures-and-percent.md#intermediate-practice
-✂️,scissors,ozewu,tool,takes-away,small,separation,scissors cut material apart; separation is dividing apart,,distinct; slice; apart; distinguish; distinction; separate,
+✂️,scissors,ozewu,tool,takes-away,small,separation,scissors cut material apart; separation is dividing apart,,distinct; slice; apart; distinguish; distinction; separate,quote-contents.md#intermediate-practice
 🗃️,file-box,avona,title,holds,medium,archive,file box stores old records; archive is stored past record,,file; database,
 🗄️,cabinet,ugaha,place,holds,big,,,,shelf,
 🗑️,wastebasket,owowu,tool,takes-away,medium,discard,trash bin holds what is thrown; discard is getting rid of,,rid; bin,
