@@ -41,7 +41,7 @@ To correct your own wording, English says *A, or rather B*. Use the same `A HOOK
 >
 > "Azozon is tired, or rather, sleepy."
 
-**Compare with:** a [thinking sound](speech-moves.md#thinking-sounds) holds the gap before you find a word; **`ol`** fixes a word you already said.
+**Compare with:** a [thinking sound](phonology.md#thinking-sounds) holds the gap before you find a word; **`ol`** fixes a word you already said.
 
 ### Instead (`el`)
 <a id="instead"></a>

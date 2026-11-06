@@ -113,7 +113,7 @@ export const hashRedirects: HashRedirect[] = [
   { page: "measures-and-percent.md", hash: "number-ranges", to: "ranges.md", toHash: "number-ranges" },
   { page: "proper-names.md", hash: "continue-x", to: "sentence-linkers.md", toHash: "continue-x" },
   { page: "dependents.md", hash: "continue-x", to: "speech-moves.md", toHash: "continue-x" },
-  { page: "singability.md", hash: "thinking-sounds", to: "speech-moves.md", toHash: "thinking-sounds" },
+  { page: "singability.md", hash: "thinking-sounds", to: "phonology.md", toHash: "thinking-sounds" },
   { page: "label-reach.md", hash: "command-property", to: "more-turn-words.md", toHash: "command-property" },
   { page: "sentence-linkers.md", hash: "orthography-and-prosody-periods", to: "sentence-linkers.md", toHash: "past-a-period" },
   { page: "sentence-linkers.md", hash: "result-hinge", to: "more-hinges.md", toHash: "result-hinge" },
@@ -151,6 +151,7 @@ export const hashRedirects: HashRedirect[] = [
   { page: "universals-domains.md", hash: "every-and-none", to: "universals-domains.md", toHash: "talking-about-a-whole-kind" },
   { page: "set-joins.md", hash: "and-or-and-the-full-set-map", to: "set-joins.md", toHash: "set-joins" },
   { page: "comparative-arity.md", hash: "place-on-a-scale-sitting", to: "comparative-arity.md", toHash: "ranking-on-any-scale" },
+  { page: "speech-moves.md", hash: "thinking-sounds", to: "phonology.md", toHash: "thinking-sounds" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */

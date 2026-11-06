@@ -6,7 +6,6 @@ band: beginner
 
 How to start a new speech move with `/y/`: call someone, react, or say whether you are stating, asking, commanding, or forbidding. An act word is leftover-list work on claims: add a claim, rank an instruction, collapse to an answer, or take the act away. You can also hold a pause while you think, or keep the move you started going with `/x/`. How much talk remains is a different job.
 
-
 ### Turn (`/y/`): start a new speech move {#turn-y}
 
 A **turn** is one speech move: a statement, question, command, or other act, including talking only to yourself. A `/y/` word starts a new turn.
@@ -64,17 +63,6 @@ A `/ɡ/` word right after a reaction describes it, as one after a call describes
 > "What a big surprise!"
 
 **Compare with:** to react and then say that something is big, end the reaction with a period and start a new sentence.
-
-### Thinking sounds {#thinking-sounds}
-
-When you need a moment in the middle of speaking, English fills the gap with *um* or *uh*. Ageben has two sounds for that gap, and each tells the listener what would help. Neither is a word, and neither is written.
-
-| Sound | Means | The listener | Cue |
-|-------|-------|--------------|-----|
-| *mmm*, lips closed | I am thinking it over | waits and leaves the silence | Lips closed: not ready to speak |
-| A held `a`, `e` or `o` (any of them), at its own pitch | I know what I mean but cannot find the word | may offer a word | Mouth open: the word is on its way |
-
-Do not hold `u`: a held `u` can sound like a denial.
 
 ### Speech act: statement, question, command
 <a id="speech-act-beginner"></a>

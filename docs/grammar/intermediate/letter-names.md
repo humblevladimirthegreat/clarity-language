@@ -7,7 +7,7 @@ band: intermediate
 ### Letter names {#letter-names}
 <a id="letter-names-and-digits"></a>
 
-When you **spell a word aloud** or **name a letter**, say the Ageben name for it. Pause between names so two names do not run into one syllable. A letter name is short and followed by a pause, so it does not sound like a [thinking sound](/speech-moves#thinking-sounds), which holds a vowel well past one beat. A code inside a number word spells its letters with these names too, and makes the pause required before a vowel (`zro'ebal`).
+When you **spell a word aloud** or **name a letter**, say the Ageben name for it. Pause between names so two names do not run into one syllable. A letter name is short and followed by a pause, so it does not sound like a [thinking sound](/phonology#thinking-sounds), which holds a vowel well past one beat. A code inside a number word spells its letters with these names too, and makes the pause required before a vowel (`zro'ebal`).
 
 Each digit letter keeps its consonant and takes the [opposite vowel](phonology.md#opposite-vowels) of the digit (`a`↔`u`, `o`↔`e`), so naming a letter never sounds like counting. Reciting those ten names walks **u e o a** (`bu` `de` `go` `ha` …) as a consequence, not as a series. The rest of the alphabet continues that walk.
 

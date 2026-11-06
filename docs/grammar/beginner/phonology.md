@@ -6,7 +6,6 @@ band: beginner
 
 How to **sound out** Ageben. Each letter has one pronunciation. Syllables end with a consonant only at the end of the word, so you know when words stop.
 
-
 Pronounce each letter the same way every time. A **syllable** is one beat with one vowel. Spell the beats you actually say: a consonant starts a beat, and the last consonant of a content word (a word built on a root, such as a noun or verb) is where that word ends.
 
 Write native Ageben in **lowercase**. A capital means nothing extra: read it as the same letter in lowercase. Two vowel letters in a row are two syllables. Say each vowel as its own beat.
@@ -92,3 +91,14 @@ A content word ends in one of four consonants: `-l`, `-m`, `-n`, or `-r`. That l
 - Numbers (role letter + `r` exception and [digit syllables](numbers.md#counts)): [numbers.md](numbers.md)
 - Mention spans (letter as form in a clause): [spans.md](spans.md)
 - Mid-word `x` and `th`: [compounds.md](compounds.md)
+
+### Thinking sounds {#thinking-sounds}
+
+When you need a moment in the middle of speaking, English fills the gap with *um* or *uh*. Ageben has two sounds for that gap, and each tells the listener what would help. Neither is a word, and neither is written.
+
+| Sound | Means | The listener | Cue |
+|-------|-------|--------------|-----|
+| *mmm*, lips closed | I am thinking it over | waits and leaves the silence | Lips closed: not ready to speak |
+| A held `a`, `e` or `o` (any of them), at its own pitch | I know what I mean but cannot find the word | may offer a word | Mouth open: the word is on its way |
+
+Do not hold `u`: a held `u` can sound like a denial.
