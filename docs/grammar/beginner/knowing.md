@@ -122,6 +122,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *fight* | `vuvuvul` | 🫯 |
 | *eat* | `vagedal` | 🍴 from *cutlery* |
 | *MAY* | `thomam` | 💭 from *thought*: a balloon over the scene |
+| *LIVE* | `thugem` | 👁️‍🗨️ from *attest*: seen at the scene |
+| *MEMORY* | `thevum` | 🎣 from *fishing*: pulled up from memory |
 
 **Review:**
 
@@ -130,9 +132,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *think* | `vevemel` |
 | *pay* | `varal` |
-| *tell* | `vezuyol` |
 | *wine* | `owudal` |
 | *pour* | `vowuvul` |
 | *scream* | `veyamul` |
@@ -165,12 +165,12 @@ z-Azozon | th-MAY-find-out | d-Alazun | v-fight
 z-Alazun | th-MAY-who-knows | v-cry
 :::
 
-**4.** *Azozon thinks.* (an act of thinking)
+**4.** *Alazun is pouring wine, I can see it.*
 
 ::: details Show answer
-`zazozon vevemel.`
+`zalazun thugem dowudal vowuvul.`
 
-z-Azozon | v-think
+z-Alazun | th-LIVE | d-wine | v-pour
 :::
 
 **5.** *Could Ahelan be paying?*
@@ -181,12 +181,12 @@ z-Azozon | v-think
 y-question | z-Ahelan | v-pay | th-MAY
 :::
 
-**6.** *Alazun may be telling Azozon.*
+**6.** *Azozon paid, I remember it.*
 
 ::: details Show answer
-`zalazun thomam vezuyol bazozon.`
+`zazozon thevum varal.`
 
-z-Alazun | th-MAY | v-tell | b-Azozon
+z-Azozon | th-MEMORY | v-pay
 :::
 
 #### Ageben → English {#beginner-ageben-to-english}
@@ -231,6 +231,14 @@ z-Ahelan | th-MAY | d-Alazun | v-punch
 *Ahelan may be punching Alazun.*
 :::
 
+**6.** `zahelan thevum dedal vagedal.`
+
+::: details Show answer
+z-Ahelan | th-MEMORY | d-sandwich | v-eat
+
+*Ahelan ate a sandwich, I remember it.*
+:::
+
 #### Pick one {#beginner-pick-one}
 
 **1.** *Azozon may be crying, I'll find out.* `zazozon thomal vagamul.` or `zazozon thomar vagamul.`
@@ -254,6 +262,19 @@ z-Ahelan | th-MAY | v-departure
 
 Without **`thomam`**, the sentence reports that Ahelan is leaving.
 :::
+
+#### What changes {#beginner-what-changes}
+
+**1.** `zahelan thugem varal.` / `zahelan thevum varal.`
+
+::: details Show answer
+z-Ahelan | th-LIVE | v-pay
+
+z-Ahelan | th-MEMORY | v-pay
+
+**LIVE** says Ahelan is paying while you watch. **MEMORY** says Ahelan paid and you remember seeing it.
+:::
+
 ## See also
 
 - Sake ascription: [sakes.md](sakes.md)

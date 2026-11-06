@@ -35,9 +35,9 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **IDENTITY** | Identity copula | `gorel` | [Predication](/predication#identity) |
 | **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Feelings](/feelings-permission#emotion-compose) |
 | **INTUITION** | Evidential: gut sense you cannot fully spell out | `thabem` | [How you know](/evidentiality#evidentiality) |
-| **LIVE** | Evidential: sensed now, by any sense | `thugem` | [Live and memory](/knowing#live-vs-memory) |
+| **LIVE** | Evidential: sensed now, by any sense | `thugem` | [Knowing](/knowing#live-vs-memory) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thomam` | [Knowing](/knowing#may) |
-| **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevum` | [Live and memory](/knowing#live-vs-memory) |
+| **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevum` | [Knowing](/knowing#live-vs-memory) |
 | **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegol z[odoze] gamezem.` | [Spans as words](/spans-as-words#mention) |
 | **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themem` | [It turns out](/mirative#mirative) |
 | **NAME** | A package titled with **-n** | `zobodel zubudal zan.` | [Join limits](/join-limits#named-list) |

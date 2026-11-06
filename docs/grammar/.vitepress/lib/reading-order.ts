@@ -41,7 +41,6 @@ export const beginnerLessons = [
   { text: 'Fault', link: '/fault' },
   { text: 'Ought for a sake', link: '/ought-for-a-sake' },
   { text: 'Thanks and sorry', link: '/thanks-and-sorry' },
-  { text: 'Live and memory', link: '/live-and-memory' },
   { text: 'Already and still', link: '/already-still-yet' },
   { text: "Can and can't", link: '/can-and-cant' },
 ]

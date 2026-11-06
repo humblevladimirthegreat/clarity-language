@@ -214,6 +214,11 @@
       "from": "/grammar/rhetorical-questions.html",
       "to": "/grammar/more-turn-words.html",
       "note": "Public URL after merging rhetorical-questions.md into more-turn-words.md."
+    },
+    {
+      "from": "/grammar/live-and-memory.html",
+      "to": "/grammar/knowing.html",
+      "note": "Public URL after merging live-and-memory.md into knowing.md."
     }
   ]
 }
