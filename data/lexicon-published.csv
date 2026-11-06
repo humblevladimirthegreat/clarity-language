@@ -104,7 +104,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ❤️,heart,abe,body,one,,compassion,the heart feels for others; compassion is caring about their suffering,,center; middle; central,
 🩷,pink,ebule,nature,one,none,,the pink heart is pink,,,
 💋,lips,elebe,body,one,small,,,,,
-💯,hundred,ahura,counting,holds,none,completeness,a hundred out of a hundred is the whole mark,m.w:completely,totally; entirely; fully; altogether,
+💯,hundred,ahura,counting,holds,none,completeness,a hundred out of a hundred is the whole mark,m.w:completely,totally; entirely; fully; altogether,very-and-slightly.md#intermediate-practice
 💢,anger,anemu,mind,takes-away,,offense,anger symbol shows rage; offense is the unobservable reading that a wrong was done,,crime,
 🫯,fight,uvuvu,doing,takes-away,none,struggle,fighting stance pushes through opposition; struggle is pushing through what holds you back,,battle; tackle,knowing.md#beginner-practice
 💥,boom,ubuvu,doing,takes-away,none,consequence,collision bursts; consequence is the unobservable follow-on,,outcome; result; effect,
@@ -305,7 +305,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🦣,mammoth,omazu,creature,takes-away,big,enormity,mammoth is enormous in scale,,enormous; massive,
 🦏,rhinoceros,erazu,creature,takes-away,big,charge,rhino charges headlong,,,
 🦛,hippopotamus,uhaze,creature,one,big,bulk,hippo is sheer bulk,,majority; mass; fat,
-🐁,mouse,ameze,creature,one,small,small,a mouse is small beside larger animals; small is little size,,little; tiny; minor,universals-domains.md#intermediate-practice
+🐁,mouse,ameze,creature,one,small,small,a mouse is small beside larger animals; small is little size,,little; tiny; minor,very-and-slightly.md#intermediate-practice
 🐀,rat,erezu,creature,takes-away,small,,,,,
 🐹,hamster,aheza,creature,holds,small,routine,hamster on a wheel of routine,,process; procedure; everyday; familiar,
 🐇,rabbit,aroze,creature,one,medium,,,,,residue-and-former.md#intermediate-practice
@@ -614,7 +614,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🛴,scooter,azovo,doing,order,medium,,,,,
 🛹,skateboard,ezovo,doing,order,medium,daring,skateboard rides the edge; daring is bold risk-taking,,,
 🛼,roller-skate,orovo,doing,order,medium,ease,rollerskates glide; ease is the unobservable effortlessness,,,
-🚏,bus-stop,abaho,place,order,big,waiting,bus stop is where you wait; waiting is holding for what comes,m.v:wait,delay,
+🚏,bus-stop,abaho,place,order,big,waiting,bus stop is where you wait; waiting is holding for what comes,m.v:wait,delay,longer-chains.md#intermediate-practice
 🛤️,railway,eraho,place,order,big,trajectory,a railway fixes where the train will go; a trajectory is the path something is set on,,,
 🛢️,barrel,ubowa,tool,holds,medium,reserve,a barrel stores bulk supply; reserve is stored supply,,oil; tank,
 ⛽,gas-pump,agahe,place,one,big,refuel,gas station fills the tank; refuel is restoring energy,,fuel; gas,
@@ -801,7 +801,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 💎,gemstone,ohele,nature,one,small,preciousness,a gem is rare and held dear; preciousness is that quality of the stone,,jewel; gem,
 🔇,mute,emowu,tool,takes-away,medium,suppression,mute silences all sound; suppression is holding back expression,,,
 🔈,quiet,ugowu,tool,takes-away,medium,volume,quiet is sound turned low; volume is level of sound,,,spans.md#beginner-practice
-🔉,audio,adowe,tool,one,medium,voice,audio carries a speaking voice; voice is audible expression,m.w:quite,representative,
+🔉,audio,adowe,tool,one,medium,voice,audio carries a speaking voice; voice is audible expression,m.w:quite,representative,very-and-slightly.md#intermediate-practice
 🔊,sound,ezuwa,tool,holds,none,amplification,a loudspeaker sends out sound; amplification is making louder,v:shout,noise; loud,
 📣,megaphone,amowo,tool,order,medium,announcement,megaphone broadcasts to the crowd; announcement is public declaration,,announce; advertise; ad,
 📯,post-horn,oboro,counting,order,medium,summons,a posthorn calls people to gather; summons is calling to come,,,
@@ -897,7 +897,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 📅,calendar,agoro,counting,order,medium,week,a calendar page reads a week across each row; week is the seven-day unit,,date; schedule,sakes.md#beginner-practice
 🗒️,notepad,unena,title,holds,small,,,,,
 📇,index-card,eneno,title,order,small,lookup,card index sorts; lookup is the unobservable find-operation,,search; index,
-📈,uptrend,ayuro,counting,order,none,degree,an uptrend marks more on the scale; degree is vague how-much,m.h:kind-of,level; step,
+📈,uptrend,ayuro,counting,order,none,degree,an uptrend marks more on the scale; degree is vague how-much,m.h:kind-of,level; step,very-and-slightly.md#intermediate-practice
 📉,downtrend,aluru,counting,takes-away,none,loss,the chart falls; loss is having less than before,,deficit,
 📊,bar-chart,ahuro,counting,order,none,analysis,bar chart compares quantities; analysis is examining data,,analyze; chart; statistic,
 📋,clipboard,egowa,tool,holds,medium,accountability,clipboard tracks tasks to do; accountability is answerable tracking,,account,can-and-cant.md#beginner-practice
@@ -1049,7 +1049,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ♓,pisces,aruro,counting,order,none,empathy,pisces flows with others feelings; empathy is feeling with another,,,
 ⛎,ophiuchus,ovuro,counting,order,none,,,,,
 🔀,shuffle,uhugo,sign,order,none,randomness,shuffle mixes order unpredictably; randomness is without fixed order,,random,
-🔁,repeat,erugo,sign,order,none,repetition,repeat plays the same again; repetition is doing again,m.h:again,,
+🔁,repeat,erugo,sign,order,none,repetition,repeat plays the same again; repetition is doing again,m.h:again,,very-and-slightly.md#intermediate-practice
 🔂,repeat-one,orugo,sign,order,none,,,,,
 ▶️,play-button,ebego,sign,order,none,commencement,play button begins the action; start is setting in motion,,,
 ⏩,fast-forward,uvugo,sign,order,none,speed,fast-forward plays things faster; speed is how fast,m.h:quickly,quick; rapidly; rapid; fast; prompt; pace,

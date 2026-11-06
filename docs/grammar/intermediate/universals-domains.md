@@ -204,17 +204,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a catalog counter
 
-**New words:**
-
-| English | Ageben | Cue |
-|---------|--------|-----|
-| *small* | `amezem` | 🐁 from *mouse* |
-
 **Review:**
 
 | English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
+| *small* | `amezem` |
 | *veil* | `ovobul` |
 | *dress* | `edobal` |
 | *ring* | `orebel` |

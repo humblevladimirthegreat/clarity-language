@@ -51,6 +51,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *ticket* | `odenol` | 🎫 |
+| *wait* | `vabahom` | 🚏 from *bus stop* |
 
 **Review:**
 
@@ -58,12 +59,17 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Ahelan* | `ahelan` |
+| *Alazun* | `alazun` |
 | *police* | `ebayol` |
 | *guard* | `agayul` |
 | **IDENTITY** | `orel` |
 | *sleepy* | `uzemel` |
 | *stand* | `vuzuvel` |
 | *see* | `vayebel` |
+| *sit* | `vehohel` |
+| *very* | `welazem` |
+| *haste* | `hadurom` |
+| *angry* | `onumul` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -73,6 +79,22 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 `zebayol gorel blazozon guzemel vuzuvel.`
 
 [z-police | [g-IDENTITY | [bl-Azozon | g-sleepy]]] | v-stand
+:::
+
+**2.** *Ahelan waits like a sleepy guard.*
+
+::: details Show answer
+`zahelan vabahom hewem blagayul guzemel.`
+
+z-Ahelan | v-wait | [h-like | [bl-guard | g-sleepy]]
+:::
+
+**3.** *A guard who is the very same person as the police officer sits down.*
+
+::: details Show answer
+`zagayul welazem gorel blebayol vehohel.`
+
+[z-guard | [[w-very | g-IDENTITY] | bl-police]] | v-sit
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
@@ -93,6 +115,14 @@ z-Ahelan | [d-ticket | g-IDENTITY] | v-see
 *Ahelan sees the same ticket.* (as before)
 :::
 
+**3.** `zalazun hadurom hewem blebayol gonumul vuzuvel.`
+
+::: details Show answer
+z-Alazun | h-haste | [h-like | [bl-police | g-angry]] | v-stand
+
+*Alazun hastily stands up like an angry police officer.*
+:::
+
 #### Pick one {#intermediate-pick-one}
 
 **1.** *Azozon sees a police officer who is the same person as sleepy Ahelan.* `zazozon debayol gorel blahelan guzemel vayebel.` or `zazozon debayol guzemel gorel blahelan vayebel.`
@@ -103,4 +133,14 @@ z-Ahelan | [d-ticket | g-IDENTITY] | v-see
 z-Azozon | [d-police | [g-IDENTITY | [bl-Ahelan | g-sleepy]]] | v-see
 
 After the **`gorel`** pair, a plain adjective describes the extra noun; before it, *sleepy* describes the police officer.
+:::
+
+**2.** *Azozon sits like an angry guard.* `zazozon vehohel hewem blagayul gonumul.` or `zazozon gonumul vehohel hewem blagayul.`
+
+::: details Show answer
+`zazozon vehohel hewem blagayul gonumul.`
+
+z-Azozon | v-sit | [h-like | [bl-guard | g-angry]]
+
+After the **`hewem`** pair, a plain adjective describes the extra noun; after **`zazozon`**, *angry* describes Azozon.
 :::
