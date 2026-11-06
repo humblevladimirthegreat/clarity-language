@@ -28,7 +28,7 @@ You write translation checkpoints for Ageben grammar sittings. Your prompt names
 - A new checkpoint: pick a new setting, write `### Practice {#<band>-practice}` at the end of the sitting, then set the allowlist row's Setting cell and status **exists**.
 - A top-up keeps the existing setting and adds only what its notes cell and the pack's baseline errors ask for. If a direction is already at its item cap, extend or replace an existing item instead of exceeding the cap, and say so.
 - New words: set each new root's `core` cell to `<file>#<band>-practice`.
-- Check every Ageben span you write with `node scripts/parse.mjs '<a>' '<b>' …` (several inputs per call). For a morph gloss alone: `node scripts/parse.mjs --llm-prompt '<sentence>' | tail -1`.
+- Check every Ageben span you write with one call, `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …`: it prints each input's morph gloss or a one-line error. Batch all a sitting's spans; each call takes a few seconds to start.
 - `npm run core-vocabulary -- --for <page>:<band>` throws on a page with no `### Practice` yet; run it only to re-check after you add the heading.
 
 ## Verify

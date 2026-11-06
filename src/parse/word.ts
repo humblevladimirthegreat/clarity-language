@@ -5,11 +5,14 @@ import type { MorphWord } from "./types.js";
 
 export class WordParseError extends Error {
   readonly peggyError: PeggySyntaxError;
+  /** The surface word that failed, when known. */
+  readonly word: string | undefined;
 
-  constructor(peggyError: PeggySyntaxError) {
+  constructor(peggyError: PeggySyntaxError, word?: string) {
     super(peggyError.message);
     this.name = "WordParseError";
     this.peggyError = peggyError;
+    this.word = word;
   }
 }
 
@@ -30,7 +33,7 @@ export function parseWord(input: string): MorphWord {
     return readResumeSense(peggyParse(lowerNative(input.trim())) as MorphWord);
   } catch (error) {
     if (error instanceof PeggySyntaxError) {
-      throw new WordParseError(error);
+      throw new WordParseError(error, input.trim());
     }
     throw error;
   }

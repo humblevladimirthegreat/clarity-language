@@ -2,26 +2,26 @@
 import { readFileSync } from "node:fs";
 
 import { parseCliArgs } from "./cli-args.js";
-import { loadDefaultTables, parse, SentenceParseError } from "./index.js";
+import { describeError, describeUnknown, reportInput } from "./cli-report.js";
+import { loadDefaultTables, parse } from "./index.js";
 import { unknownWords } from "./lexicon-check.js";
 import { loadPromptContext } from "./llm-examples.js";
 import { promptForPassage } from "./llm-passage.js";
 
 const USAGE = [
-  "Usage: node scripts/parse.mjs [--check-ambiguity] [--check-lexicon] [--constructions] '<Ageben text>' ['<Ageben text>' ...]",
-  "       node scripts/parse.mjs [--check-ambiguity] [--check-lexicon] [--constructions] - < inputs.txt   (one input per line)",
+  "Usage: node scripts/parse.mjs [--check-ambiguity] [--check-lexicon] [--constructions] [--json] '<Ageben text>' ['<Ageben text>' ...]",
+  "       node scripts/parse.mjs [same flags] - < inputs.txt   (one input per line)",
   "       node scripts/parse.mjs --llm-prompt [--loose] [--examples N] '<Ageben text>' ['<Ageben text>' ...]",
-  "  Several quoted inputs print a JSON array. There is no --json flag.",
-  "  --check-lexicon  exit 1 and list words the lexicon does not know (a stem that only parses is not a lexicon word)",
-  "  --llm-prompt     print a translation prompt for an LLM with no Ageben context (several inputs make one passage)",
-  "  --loose          with --llm-prompt: ask for the sentence only, no note",
-  "  --examples N     with --llm-prompt: how many doc examples to show (default 4; 0 for none)",
+  "  Prints each input, then its morph gloss or a one-line error, then words the lexicon does not know.",
+  "  Exits 1 when any input does not parse.",
+  "  --json             print the parse tree instead (one input: an object; several: an array)",
+  "  --check-ambiguity  also report readings no grammar rule picks between",
+  "  --check-lexicon    also exit 1 when a word is not in the lexicon (a stem that only parses is not a lexicon word)",
+  "  --constructions    also list the construction IDs each parse used",
+  "  --llm-prompt       print a translation prompt for an LLM with no Ageben context (several inputs make one passage)",
+  "  --loose            with --llm-prompt: ask for the sentence only, no note",
+  "  --examples N       with --llm-prompt: how many doc examples to show (default 4; 0 for none)",
 ].join("\n");
-
-function reportUnknown(word: { raw: string; maybeCompound: string[] }): string {
-  const hint = word.maybeCompound.length > 0 ? ` (unlisted compound? ${word.maybeCompound.join(" / ")})` : "";
-  return `not in the lexicon: ${word.raw}${hint}`;
-}
 
 function usage(message: string): never {
   console.error(`${message}\n${USAGE}`);
@@ -34,7 +34,7 @@ try {
 } catch (error) {
   usage(error instanceof Error ? error.message : String(error));
 }
-const { checkAmbiguity, constructions, checkLexicon, llmPrompt, loose, examples, args } = parsed;
+const { checkAmbiguity, constructions, checkLexicon, llmPrompt, loose, examples, json, args } = parsed;
 
 // Each argument is one input; `-` (or no arguments with piped stdin) reads one input per line.
 const readStdin = args.includes("-") || (args.length === 0 && !process.stdin.isTTY);
@@ -59,21 +59,27 @@ if (llmPrompt) {
     console.error(error instanceof Error ? error.message : String(error));
     process.exit(1);
   }
+} else if (!json) {
+  const tables = loadDefaultTables();
+  let failed = false;
+  for (const input of inputs) {
+    const report = reportInput(input, tables, { checkAmbiguity, constructions, checkLexicon });
+    console.log(report.lines.join("\n"));
+    if (report.failed) failed = true;
+  }
+  if (failed) process.exit(1);
 } else if (inputs.length === 1) {
   try {
     const result = parse(inputs[0]!, undefined, { checkAmbiguity, constructions });
     console.log(JSON.stringify(result, null, 2));
     if (checkLexicon) {
       const unknown = unknownWords(result);
-      for (const word of unknown) console.error(reportUnknown(word));
+      for (const word of unknown) console.error(describeUnknown(word));
       if (unknown.length > 0) process.exit(1);
     }
   } catch (error) {
-    if (error instanceof SentenceParseError) {
-      console.error(error.message);
-      process.exit(1);
-    }
-    throw error;
+    console.error(describeError(error));
+    process.exit(1);
   }
 } else {
   let failed = false;

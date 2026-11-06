@@ -4,7 +4,7 @@ Editors only. How to parse an Ageben sentence, work out what it means, search th
 
 ## Parsing {#parsing}
 
-Run **`node scripts/parse.mjs '<sentence>'`** directly (not `npm run parse` or `tsx src/parse/cli.ts`). It rebuilds automatically when `src/` changes. Pass several quoted inputs in one call (JSON array out), or `-` for one input per line on stdin. There is no `--json` flag; unknown flags are rejected so they are not parsed as Ageben. Add `--check-ambiguity` as needed, and `--check-lexicon` to list words the lexicon does not know (a stem that only parses is not a lexicon word, and an unlisted compound shows its possible split).
+Run **`node scripts/parse.mjs '<sentence>'`** directly (not `npm run parse` or `tsx src/parse/cli.ts`). It rebuilds automatically when `src/` changes, and each call takes a few seconds to start, so put every sentence in one call: several quoted inputs, or `-` for one input per line on stdin. For each input it prints the input, then its morph gloss or a one-line `ERROR`, then any word the lexicon does not know (a stem that only parses is not a lexicon word, and an unlisted compound shows its possible split). It exits 1 when any input does not parse. Add `--check-lexicon` to exit 1 on unknown words too, `--check-ambiguity` to report readings no grammar rule picks between, and `--constructions` to list the construction IDs. `--json` prints the parse tree instead, for debugging the parser. Unknown flags are rejected so they are not parsed as Ageben.
 
 ## Translating to English {#translating}
 

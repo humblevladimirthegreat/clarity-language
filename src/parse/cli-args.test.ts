@@ -10,8 +10,10 @@ describe("parseCliArgs", () => {
     assert.deepEqual(parsed.args, ["zazozon vowurol.", "zalazun veruvol."]);
   });
 
-  it("rejects --json: several inputs already print a JSON array", () => {
-    assert.throws(() => parseCliArgs(["--json", "zazozon vowurol."]), /unknown flag --json/);
+  it("reads --json, which does not combine with --llm-prompt", () => {
+    assert.equal(parseCliArgs(["--json", "zazozon vowurol."]).json, true);
+    assert.equal(parseCliArgs(["zazozon vowurol."]).json, false);
+    assert.throws(() => parseCliArgs(["--json", "--llm-prompt", "zal."]), /does not combine/);
   });
 
   it("rejects any other unknown flag", () => {

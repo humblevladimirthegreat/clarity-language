@@ -7,6 +7,7 @@ export const PARSE_FLAGS = [
   "--llm-prompt",
   "--loose",
   "--examples",
+  "--json",
 ] as const;
 
 export type ParseCliOptions = {
@@ -16,6 +17,8 @@ export type ParseCliOptions = {
   llmPrompt: boolean;
   loose: boolean;
   examples: number | undefined;
+  /** Print the parse tree instead of the gloss report. */
+  json: boolean;
   args: string[];
 };
 
@@ -29,6 +32,7 @@ export function parseCliArgs(raw: string[]): ParseCliOptions {
     llmPrompt: false,
     loose: false,
     examples: undefined,
+    json: false,
     args: [],
   };
   for (let i = 0; i < raw.length; i++) {
@@ -44,12 +48,13 @@ export function parseCliArgs(raw: string[]): ParseCliOptions {
       else if (arg === "--check-lexicon") options.checkLexicon = true;
       else if (arg === "--llm-prompt") options.llmPrompt = true;
       else if (arg === "--loose") options.loose = true;
+      else if (arg === "--json") options.json = true;
     } else {
       options.args.push(arg);
     }
   }
-  if (options.llmPrompt && (options.constructions || options.checkAmbiguity)) {
-    throw new Error("--llm-prompt prints text; it does not combine with --constructions or --check-ambiguity");
+  if (options.llmPrompt && (options.constructions || options.checkAmbiguity || options.json)) {
+    throw new Error("--llm-prompt prints text; it does not combine with --constructions, --check-ambiguity, or --json");
   }
   if (!options.llmPrompt && (options.loose || options.examples !== undefined)) {
     throw new Error("--loose and --examples go with --llm-prompt");
