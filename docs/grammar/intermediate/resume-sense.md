@@ -85,3 +85,142 @@ For English *one* (*a black one*, *the red one*) of a noun a [role pointer](/pro
 > z-Azozon | [d-dog | g-red] | v-see . z-Alazun | [d-something | g-←dog] | g-black | v-see
 >
 > "Azozon sees a red dog. Alazun sees a black one."
+
+### Practice {#intermediate-practice}
+
+Short drills for Intermediate. Try each item before opening **Show answer**.
+
+**Setting:** a tea ceremony
+
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *tea* | `edudal` | 🍵 |
+| *bow* | `abuyol` | 🙇 |
+| *black* | `ubulel` | ⚫ |
+
+**Review:**
+
+| English | Ageben |
+|---------|--------|
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
+| *Ahelan* | `ahelan` |
+| *teapot* | `edodal` |
+| *pour* | `vowuvul` |
+| *drink* | `vuwudal` |
+| *carry* | `velobal` |
+| *quiet* | `ugowul` |
+| *see* | `vayebel` |
+| *blue* | `obulol` |
+
+#### English → Ageben {#intermediate-english-to-ageben}
+
+**1.** *Ahelan bows. Azozon does too.*
+
+::: details Show answer
+`zahelan vabuyol. zazozon vabuyor.`
+
+z-Ahelan | v-bow . z-Azozon | v-←bow
+:::
+
+**2.** *Azozon is quiet. So is Ahelan.*
+
+::: details Show answer
+`zazozon gugowul. zahelan gugowur.`
+
+z-Azozon | g-quiet . z-Ahelan | g-←quiet
+:::
+
+**3.** *Ahelan pours the tea quietly. Azozon drinks the tea that way.*
+
+::: details Show answer
+`zahelan dedudal vowuvul hugowul. zazozon dedudar vuwudal hugowur.`
+
+z-Ahelan | d-tea | v-pour | h-quiet . z-Azozon | d-←tea | v-drink | h-←quiet
+:::
+
+**4.** *Alazun carries a teapot. Ahelan sees the ceremony. Azozon sees the teapot.*
+
+::: details Show answer
+`zalazun dedodal velobal. zahelan dedodam vayebel. zazozon dedodarl vayebel.`
+
+z-Alazun | d-teapot | v-carry . z-Ahelan | d-ceremony | v-see . z-Azozon | d-←teapot | v-see
+:::
+
+**5.** *Ahelan pours tea. Alazun does the same with Ahelan.*
+
+::: details Show answer
+`zahelan dedudal vowuvul. zalazun vahelar.`
+
+z-Ahelan | d-tea | v-pour . z-Alazun | v-←Ahelan
+:::
+
+#### Ageben → English {#intermediate-ageben-to-english}
+
+**1.** `zalazun dedudal vuwudal. zahelan vuwudar.`
+
+::: details Show answer
+z-Alazun | d-tea | v-drink . z-Ahelan | v-←drink
+
+*Alazun drinks tea. Ahelan does too.*
+:::
+
+**2.** `zazozon dedudal vowuvul hugowul. zahelan vabuyol hugowur.`
+
+::: details Show answer
+z-Azozon | d-tea | v-pour | h-quiet . z-Ahelan | v-bow | h-←quiet
+
+*Azozon pours tea quietly. Ahelan bows that way too.*
+:::
+
+**3.** `zazozon dedodal velobal. zahelan dedodam vayebel. zalazun dedodar vayebel.`
+
+::: details Show answer
+z-Azozon | d-teapot | v-carry . z-Ahelan | d-ceremony | v-see . z-Alazun | d-←ceremony | v-see
+
+*Azozon carries a teapot. Ahelan sees the ceremony. Alazun sees the ceremony too.*
+:::
+
+**4.** `zalazun vabuyol. zahelan dabuyor vayebel.`
+
+::: details Show answer
+z-Alazun | v-bow . z-Ahelan | d-←bow | v-see
+
+*Alazun bows. Ahelan sees that bow.*
+:::
+
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Alazun sees the ceremony. Azozon carries a teapot. Ahelan sees the ceremony.* `zalazun dedodam vayebel. zazozon dedodal velobal. zahelan dedodarm vayebel.` or `zalazun dedodam vayebel. zazozon dedodal velobal. zahelan dedodarl vayebel.`
+
+::: details Show answer
+`zalazun dedodam vayebel. zazozon dedodal velobal. zahelan dedodarm vayebel.`
+
+z-Alazun | d-ceremony | v-see . z-Azozon | d-teapot | v-carry . z-Ahelan | d-←ceremony | v-see
+
+The teapot came up last, so **-rm** reaches back past it to the ceremony; **-rl** would be the teapot.
+:::
+
+**2.** *Alazun carries a blue teapot. Azozon carries a black one.* `zalazun dedodal gobulol velobal. zazozon dar gedodar gubulel velobal.` or `zalazun dedodal gobulol velobal. zazozon dedodar gubulel velobal.`
+
+::: details Show answer
+`zalazun dedodal gobulol velobal. zazozon dar gedodar gubulel velobal.`
+
+z-Alazun | [d-teapot | g-blue] | v-carry . z-Azozon | [d-something | g-←teapot] | g-black | v-carry
+
+*One* is another teapot: **`dar`** with the teapot as a kind on `/ɡ/`. `dedodar` is the same teapot, now black.
+:::
+
+#### What changes {#intermediate-what-changes}
+
+**1.** `zazozon vabuyol. zalazun vabuyor.` / `zazozon vabuyol. zalazun vazozor.`
+
+::: details Show answer
+z-Azozon | v-bow . z-Alazun | v-←bow
+
+z-Azozon | v-bow . z-Alazun | v-←Azozon
+
+The first: Alazun bows too. The second: Alazun does the same with Azozon.
+:::

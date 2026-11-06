@@ -177,7 +177,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 💁,sass,azamu,mind,takes-away,,attitude,tipping hand shows attitude,,,
 🙋,raise-hand,eruyo,person,order,none,initiative,raised hand volunteers; initiative is the unobservable willingness,,volunteer; undertake; keen; eager,
 🧏,deaf,edaye,person,one,big,,,,,
-🙇,bow,abuyo,person,order,none,apology,a bow of regret; an apology owns a wrong,,excuse; apologize,
+🙇,bow,abuyo,person,order,none,apology,a bow of regret; an apology owns a wrong,,excuse; apologize,resume-sense.md#intermediate-practice
 🤦,face-palm,avemu,mind,takes-away,,exasperation,facepalm shows exasperation,,,
 🤷,shrug,uhame,mind,one,,uncertainty,a shrug says who knows; uncertainty is not knowing,,,
 🧑‍⚕️,heal,ehuyu,person,takes-away,none,recovery,the healer restores health; recovery is getting well again,,recover; therapy,
@@ -513,7 +513,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🥛,milk,umuda,food,holds,none,,,,,
 ☕,coffee,oguda,food,holds,none,alertness,coffee fuels alertness,g:bitter,,
 🫖,teapot,edoda,food,holds,medium,ceremony,teapot pours with ceremony,,,hooks.md#beginner-practice
-🍵,tea,eduda,food,holds,none,,,,,
+🍵,tea,eduda,food,holds,none,,,,,resume-sense.md#intermediate-practice
 🍶,sake,ezuda,food,holds,none,ritual,sake toast is ritual,,,
 🍾,champagne,ehuda,food,holds,none,,,,,
 🍷,wine,owuda,food,holds,none,refinement,wine signals refinement,,,plurality.md#beginner-practice
@@ -1115,7 +1115,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🔵,blue,obulo,nature,order,none,,,,,left-bound-adjectives.md#beginner-practice
 🟣,purple,abulo,nature,order,none,royalty,purple circle marks regal hue; royalty is high noble rank,,,
 🟤,brown,abule,nature,one,none,earthiness,brown circle is soil and wood; earthiness is plain grounded quality,,,
-⚫,black,ubule,nature,one,none,,,,,
+⚫,black,ubule,nature,one,none,,,,,resume-sense.md#intermediate-practice
 ⚪,white,ewule,nature,one,none,,,,pale,
 🟫,ground,agula,nature,holds,none,,,,soil; land,
 🟩,field,evaha,place,holds,big,,,,,

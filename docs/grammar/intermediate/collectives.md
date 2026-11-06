@@ -209,15 +209,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Azozon-x | v-sing-x
 :::
 
-**2.** *Alazun sings jointly.* (not a solo)
-
-::: details Show answer
-`zalazun vozuyelx.`
-
-z-Alazun | v-sing-x
-:::
-
-**3.** *The sheets of music are heavy as a pile.*
+**2.** *The sheets of music are heavy as a pile.*
 
 ::: details Show answer
 `zehorolx garolemx.`
@@ -225,15 +217,15 @@ z-Alazun | v-sing-x
 z-sheet-music-x | g-heavy-x
 :::
 
-**4.** *Hey, you all!*
+**3.** *You all see the sheet music.*
 
 ::: details Show answer
-`yawanx.`
+`zawanx dehorol vayebel.`
 
-y-listener-x
+z-listener-x | d-sheet-music | v-see
 :::
 
-**5.** *Azozon and Alazun see three pages between them.*
+**4.** *Azozon and Alazun see three pages between them.*
 
 ::: details Show answer
 `zazozon zalazun zal dobonolx gragel vayebelx.`
@@ -241,7 +233,7 @@ y-listener-x
 [z-Azozon | z-Alazun | z-and] | [d-page-x | g-three] | v-see-x
 :::
 
-**6.** *Ahelan and associates, not counting you, sing.*
+**5.** *Ahelan and associates, not counting you, sing.*
 
 ::: details Show answer
 `zahelanx ul zawan vozuyel.`
@@ -249,7 +241,7 @@ y-listener-x
 z-Ahelan-x | except | z-listener | v-sing
 :::
 
-**7.** *Azozon and Alazun see each other.*
+**6.** *Azozon and Alazun see each other.*
 
 ::: details Show answer
 `zazozon zalazun zal vayebel hehom.`

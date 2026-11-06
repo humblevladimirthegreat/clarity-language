@@ -102,6 +102,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *pour* | `vowuvul` |
 | *see* | `vayebel` |
 | *scream* | `veyamul` |
+| *tomato* | `odedel` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -119,6 +120,40 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 `zazozon zwal zalazun zwol zam vogelam. zwaor veyamul.`
 
 [[z-Azozon | z-tag.A] | [z-Alazun | z-tag.O] | z-and.open] | v-harvest . z-←tag.A+O | v-scream
+:::
+
+**3.** *Azozon (A) harvests a red tomato. Ahelan sees what A did.*
+
+::: details Show answer
+`zazozon zwal dodedel gerulol vogelam. zahelan dwam vayebel.`
+
+[z-Azozon | z-tag.A] | [d-tomato | g-red] | v-harvest . z-Ahelan | d-←tag.A.part | v-see
+:::
+
+#### Ageben → English {#intermediate-ageben-to-english}
+
+**1.** `zalazun zwal vowuvul. zahelan dwan vayebel.`
+
+::: details Show answer
+[z-Alazun | z-tag.A] | v-pour . z-Ahelan | d-←tag.A.name | v-see
+
+*Alazun (A) pours. Ahelan sees A.*
+:::
+
+**2.** `zwal veyamul. zwar dodedel gerulol vayebel.`
+
+::: details Show answer
+z-tag.A | v-scream . z-←tag.A | [d-tomato | g-red] | v-see
+
+*Someone (A) screams. A sees a red tomato.*
+:::
+
+**3.** `zazozon zwal zahelan zwol zam vowuvul. zalazun dwaom vayebel.`
+
+::: details Show answer
+[[z-Azozon | z-tag.A] | [z-Ahelan | z-tag.O] | z-and.open] | v-pour . z-Alazun | d-←tag.A+O.part | v-see
+
+*Azozon (A) and Ahelan (O) pour. Alazun sees what A and O did.*
 :::
 
 #### Pick one {#intermediate-pick-one}
