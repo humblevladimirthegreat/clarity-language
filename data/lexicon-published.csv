@@ -272,7 +272,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🧑‍🧒,parent,abaya,person,holds,big,,an adult with a child is a parent,,,generations.md#advanced-practice
 👣,footprints,avobo,body,order,medium,legacy,footprints leave legacy,v:go,trace,role-parts.md#intermediate-practice
 🫆,fingerprint,evebe,body,one,small,trace,a fingerprint is a unique mark left behind; a trace is that mark,,characteristic,
-🐒,monkey,amoza,creature,holds,medium,mimicry,monkey see monkey do,,copy,
+🐒,monkey,amoza,creature,holds,medium,mimicry,monkey see monkey do,,copy,contrary-to.md#intermediate-practice
 🦍,gorilla,egazo,creature,order,big,dominance,the silverback dominates the group,,dominate,
 🦧,orangutan,oroze,creature,one,medium,,,,,
 🐕,dog,odoze,creature,one,medium,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,here-there.md#beginner-practice
@@ -300,7 +300,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐐,goat,ugozu,creature,takes-away,medium,scapegoat,the goat was sent off carrying the community's blame,,,
 🐪,camel,egaza,creature,holds,big,endurance,camel endures the desert,,,
 🦙,llama,alaza,creature,holds,big,composure,no drama llama stays composed,,,
-🦒,giraffe,ohezo,creature,order,big,overview,giraffe sees the overview,,,
+🦒,giraffe,ohezo,creature,order,big,overview,giraffe sees the overview,,,contrary-to.md#intermediate-practice
 🐘,elephant,elaze,creature,one,big,big,elephant is large in size,m.w:very,large; substantial,clause.md#beginner-practice
 🦣,mammoth,omazu,creature,takes-away,big,enormity,mammoth is enormous in scale,,enormous; massive,
 🦏,rhinoceros,erazu,creature,takes-away,big,charge,rhino charges headlong,,,
@@ -328,7 +328,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐣,hatch,ave,doing,one,,emergence,a chick breaks out of its shell,,emerge; birth,
 🐤,chick,ehezo,creature,order,small,newcomer,a chick has just arrived in the world; a newcomer has just arrived,,novice,
 🐦,bird,ebeze,creature,one,small,freedom,free as a bird,,free,
-🐧,penguin,awoza,creature,holds,medium,,,,,
+🐧,penguin,awoza,creature,holds,medium,,,,,contrary-to.md#intermediate-practice
 🕊️,dove,udoze,creature,one,medium,tranquility,dove is a sign of peace,,,join-limits.md#advanced-practice
 🦅,eagle,egozu,creature,takes-away,medium,vision,eagle eye sees far,,sight,
 🦆,duck,adoza,creature,holds,medium,,,,,relations.md#beginner-practice
@@ -416,7 +416,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🍊,tangerine,adede,food,one,small,skin,a tangerine peel is its outer covering; skin is the outer covering of a body,,orange-fruit; surface,
 🍋,lemon,eledu,food,takes-away,small,sourness,a lemon tastes sharply sour; sourness is that taste,,,
 🍋‍🟩,lime,aledu,food,takes-away,small,zest,lime adds zest and tang,g:sour,tart; tangy,
-🍌,banana,anedo,food,order,small,bunch,bananas grow together on one stem; a bunch is several held as one,,,
+🍌,banana,anedo,food,order,small,bunch,bananas grow together on one stem; a bunch is several held as one,,,contrary-to.md#intermediate-practice
 🍍,pineapple,abodu,food,takes-away,medium,hospitality,pineapple welcomes with hospitality,,invitation; invite,
 🥭,mango,amede,food,one,small,exoticism,mango tastes of the exotic,,,joins.md#beginner-practice
 🍎,apple,alede,food,one,small,temptation,forbidden apple is temptation,,,

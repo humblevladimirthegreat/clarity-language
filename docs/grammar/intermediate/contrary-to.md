@@ -98,3 +98,112 @@ A holder on a channel after **`uom`** names **whose view** the event goes agains
 > z-Azozon | v-walk | [contrary-to | th-REPORTED-Alazun]
 >
 > "Azozon walks, contrary to what I hear Alazun thinks."
+
+### Practice {#intermediate-practice}
+
+Short drills for Intermediate. Try each item before opening **Show answer**.
+
+**Setting:** a zoo
+
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *monkey* | `amozal` | 🐒 |
+| *penguin* | `awozal` | 🐧 |
+| *giraffe* | `ohezol` | 🦒 |
+| *banana* | `anedol` | 🍌 |
+
+**Review:**
+
+| English | Ageben |
+|---------|--------|
+| *CLUES* | `theyom` |
+| *REPORTED* | `thebam` |
+| *eat* | `vagedal` |
+| *sleep* | `vezuvel` |
+| *walk* | `vowurol` |
+
+#### English → Ageben {#intermediate-english-to-ageben}
+
+**1.** *The monkey eats a banana against the rules.*
+
+::: details Show answer
+`zamozal danedol vagedal uom hwuvul.`
+
+z-monkey | d-banana | v-eat | [contrary-to | h-episode-event-FORBID-rule]
+:::
+
+**2.** *The penguin sleeps, contrary to my plan.*
+
+::: details Show answer
+`zawozal vezuvel uom thagom.`
+
+z-penguin | v-sleep | [contrary-to | th-plan-itinerary]
+:::
+
+**3.** *The giraffe walks, contrary to what I was told.*
+
+::: details Show answer
+`zohezol vowurol uom thebam.`
+
+z-giraffe | v-walk | [contrary-to | th-REPORTED]
+:::
+
+**4.** *The monkey eats, against Ahelan's plan, as far as I can tell.*
+
+::: details Show answer
+`zamozal vagedal uom theyomahelan thagom.`
+
+z-monkey | v-eat | [contrary-to | th-CLUES-Ahelan | th-plan-itinerary]
+:::
+
+#### Ageben → English {#intermediate-ageben-to-english}
+
+**1.** `zawozal vowurol uom thubom.`
+
+::: details Show answer
+z-penguin | v-walk | [contrary-to | th-PATTERN]
+
+*The penguin walks, contrary to habit.*
+:::
+
+**2.** `zamozal danedol vagedal uom thebamahelan.`
+
+::: details Show answer
+z-monkey | d-banana | v-eat | [contrary-to | th-REPORTED-Ahelan]
+
+*The monkey eats a banana, contrary to what I hear Ahelan thinks.*
+:::
+
+**3.** `zawozal danedol vagedal uom thabem.`
+
+::: details Show answer
+z-penguin | d-banana | v-eat | [contrary-to | th-INTUITION]
+
+*The penguin eats a banana, against my gut.*
+:::
+
+#### Pick one {#intermediate-pick-one}
+
+**1.** *The penguin sleeps, contrary to my plan.* `zawozal vezuvel uom thagom.` or `zawozal vezuvel thagom.`
+
+::: details Show answer
+`zawozal vezuvel uom thagom.`
+
+z-penguin | v-sleep | [contrary-to | th-plan-itinerary]
+
+Without **`uom`**, `thagom` is your stance on the claim: *I plan for the penguin to sleep*.
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *The monkey eats a banana against the rules.* <!-- lint: error -->`zamozal danedol vagedal uom hwuvam.`
+
+::: details Show answer
+`zamozal danedol vagedal uom hwuvul.`
+
+z-monkey | d-banana | v-eat | [contrary-to | h-episode-event-FORBID-rule]
+
+A yes only lifts a restriction, so permission (`hwuvam`) sets nothing to go against. Put the ban **`hwuvul`** after **`uom`**.
+:::

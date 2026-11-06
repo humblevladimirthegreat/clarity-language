@@ -169,6 +169,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben |
 |---------|--------|
 | *Ahelan* | `ahelan` |
+| *INTUITION* | `thabem` |
 | *candle* | `agewol` |
 | *heavy* | `arolem` |
 | *croissant* | `agedel` |
@@ -198,6 +199,22 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 `zagewolx thudathar zuol gral.`
 
 [z-candle-x | th-sake-met-immediate | z-rank/less | g-amount]
+:::
+
+**4.** *The candle is heavier than planned.*
+
+::: details Show answer
+`zagewol thagom zol garolem.`
+
+[z-candle | th-plan-itinerary | z-rank/more | g-heavy]
+:::
+
+**5.** *There are more candles than usual.*
+
+::: details Show answer
+`zagewolx thubom zol gral.`
+
+[z-candle-x | th-PATTERN | z-rank/more | g-amount]
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
@@ -234,6 +251,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *The candle is hot enough.*
 :::
 
+**5.** `zagewol thabemahelan zol gohamul.`
+
+::: details Show answer
+[z-candle | th-INTUITION-Ahelan | z-rank/more | g-hot]
+
+*The candle is hotter than Ahelan expected.*
+:::
+
 #### Pick one {#intermediate-pick-one}
 
 **1.** *There are not enough candles.* `zagewolx thudatham zuol gral.` or `zagewolx thudatham zol gral.`
@@ -254,4 +279,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-candle | th-physical-met-any-term | z-rank/more | g-heavy]
 
 The bar goes right before the rank join. After the fence, `thobatham` is about the whole claim: *the candle is the heaviest, and that serves my health*.
+:::
+
+**3.** *The candle is hotter than it looks.* `zagewol thugem zol gohamul.` or `zagewol zol gohamul thugem.`
+
+::: details Show answer
+`zagewol thugem zol gohamul.`
+
+[z-candle | th-LIVE | z-rank/more | g-hot]
+
+The channel right before the rank join is the bar: what LIVE led you to expect. After the fence, `thugem` is how you know the claim: *the candle is the hottest, I can see it*.
 :::

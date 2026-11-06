@@ -83,8 +83,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
+| *Ahelan* | `ahelan` |
 | *departure* | `vudurul` |
 | *sing* | `vozuyel` |
+| *walk* | `vowurol` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -104,6 +106,14 @@ z-rabbit | th-LIVE | h-RESIDUE | v-departure
 z-Azozon | h-always | v-sing | h-FORMER
 :::
 
+**3.** *The rabbit always used to walk, as I remember.*
+
+::: details Show answer
+`zarozel hual vowurol helam thevum.`
+
+z-rabbit | h-always | v-walk | h-FORMER | th-MEMORY
+:::
+
 #### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zarozel thevum haram vudurul.`
@@ -112,6 +122,22 @@ z-Azozon | h-always | v-sing | h-FORMER
 z-rabbit | th-MEMORY | h-RESIDUE | v-departure
 
 *I remember the rabbit leaving, and the rabbit is still gone.*
+:::
+
+**2.** `zahelan hual vozuyel helam.`
+
+::: details Show answer
+z-Ahelan | h-always | v-sing | h-FORMER
+
+*Ahelan always used to sing.* (no claim about now)
+:::
+
+**3.** `zarozel haram vudurul.`
+
+::: details Show answer
+z-rabbit | h-RESIDUE | v-departure
+
+*The rabbit has left and is still gone.*
 :::
 
 #### Fix it {#intermediate-fix-it}
@@ -124,6 +150,16 @@ z-rabbit | th-MEMORY | h-RESIDUE | v-departure
 z-Azozon | h-always | v-sing | h-FORMER
 
 Do not write **`helam`** right before **`hual`**: that spot holds the restrictor's list of occasions. Put **`hual`** first and FORMER after the verb.
+:::
+
+**2.** *Ahelan has left and is still gone.* <!-- lint: error -->`zahelan waram vudurul.`
+
+::: details Show answer
+`zahelan haram vudurul.`
+
+z-Ahelan | h-RESIDUE | v-departure
+
+RESIDUE covers the whole clause, so it goes on `/h/`. A `/w/` word applies only to the `/ɡ/` adjective right after it.
 :::
 
 ## See also
