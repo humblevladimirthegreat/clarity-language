@@ -169,6 +169,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sit* | `vehohel` | 🪑 from *chair* |
 | *peek* | `vebemol` | 🫣 |
 | *run* | `veruvol` | 🏃 |
+| *therefore* | `xahom` | ➡️ from *east* |
 
 **Review:**
 
@@ -282,12 +283,12 @@ y-Alazun | y-prohibition | v-run
 *Alazun, don’t run!*
 :::
 
-**6.** `zahelan welazem gonumul vebemol.`
+**6.** `zahelan welazem gonumul vebemol. xahom zalazun veruvol.`
 
 ::: details Show answer
-[z-Ahelan | [w-very | g-angry]] | v-peek
+[z-Ahelan | [w-very | g-angry]] | v-peek . x-therefore | z-Alazun | v-run
 
-*A very angry Ahelan peeks.*
+*A very angry Ahelan peeks. Therefore Alazun runs.*
 :::
 
 #### Pick one {#beginner-pick-one}
@@ -323,6 +324,7 @@ y-question | z-Azozon | v-pay
 
 The act word goes before the body; a `/y/` word after a finished body starts the next turn.
 :::
+
 ## See also
 
 - [Clause](clause.md)

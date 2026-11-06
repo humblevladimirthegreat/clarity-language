@@ -505,7 +505,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🧁,cupcake,ugeda,food,holds,small,coda,cupcake is a sweet course; coda is the unobservable closing role,,,
 🥧,pie,aboda,food,holds,medium,,,,,comparative-arity.md#intermediate-practice
 🍫,chocolate,ohede,food,one,small,,,,,
-🍬,candy,uneda,food,holds,small,sugar,candy is sweetened; sugar is what sweetens,,,
+🍬,candy,uneda,food,holds,small,sugar,candy is sweetened; sugar is what sweetens,,,no-subject.md#beginner-practice
 🍭,lollipop,olede,food,one,small,pacification,lollipop pacifies a child,,,
 🍮,custard,oyeda,food,holds,small,richness,custard is thick with cream and eggs,,,
 🍯,honey,ahuda,food,holds,none,endearment,honey is a sweet endearment,,,
@@ -533,7 +533,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🍴,cutlery,ageda,food,holds,small,provision,cutlery enables provision,v:eat,supply; resource; meal; food; diet,knowing.md#beginner-practice
 🥄,spoon,uzeda,food,holds,small,portion,spoon measures a portion,,component; segment,
 🔪,knife,anewu,tool,takes-away,small,severity,a knife cuts deep and hard,,sharp; severe,pronouns.md#beginner-practice
-🫙,jar,ada,food,holds,,storage,jar stores what is kept,,vessel; stock,
+🫙,jar,ada,food,holds,,storage,jar stores what is kept,,vessel; stock,no-subject.md#beginner-practice
 🏺,amphora,omoda,food,holds,medium,,,,,
 🌍,earth,evala,nature,holds,big,world,the earth is the whole world we share,,,
 🌐,globe,oguga,sign,holds,none,connected,a globe links every place; connected means linked together,,global,
@@ -920,7 +920,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🗡️,weapon,ewowu,tool,takes-away,medium,,a blade stands for any weapon,,,
 ⚔️,duel,oduvu,doing,takes-away,none,conflict,two fighters face off to settle a quarrel,,attack; opposition; dispute; war,
 💣,bomb,abowu,tool,takes-away,medium,catastrophe,a bomb wrecks everything; catastrophe is disaster,,disaster; crisis,abstract-landmarks.md#intermediate-practice
-🪃,boomerang,obovo,doing,order,medium,,,v:throw,,
+🪃,boomerang,obovo,doing,order,medium,,,v:throw,,no-subject.md#beginner-practice
 🏹,archery,aruno,title,order,none,aim,archery sends an arrow to a target; aim is directing toward target,v:hunt,focus,
 🛡️,shield,ehowu,tool,takes-away,medium,defense,shield blocks incoming blows; defense is guarding against harm,,defend,
 🪚,saw,ozowu,tool,takes-away,medium,division,saw cuts material apart; division is splitting into parts,,section; sector; chapter; department; district,compounds.md#beginner-practice
@@ -953,10 +953,10 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🩼,crutch,agobo,body,order,medium,support,a crutch takes weight off an injured leg,,advocate,
 🩺,stethoscope,emobo,body,order,medium,diagnosis,stethoscope listens to the body; diagnosis is finding what is wrong,,,
 🩻,x-ray,ogobe,body,one,medium,body,an x-ray shows a person inside; the body is the physical frame of a person,,,
-🚪,door,ohe,place,one,,opportunity,door opens to what is beyond; opportunity is an opening ahead,v:open,,
+🚪,door,ohe,place,one,,opportunity,door opens to what is beyond; opportunity is an opening ahead,v:open,,no-subject.md#beginner-practice
 🛗,elevator,ulaho,place,order,big,ascent,an elevator lifts you up through the floors,,,discourse-hooks.md#intermediate-practice
 🪞,mirror,ewe,tool,one,,reflection,a mirror throws your own image back at you,,reflect,exactly-like.md#intermediate-practice
-🪟,window,uwohe,place,one,medium,transparency,you can see through a window's clear glass,,clear; glass,
+🪟,window,uwohe,place,one,medium,transparency,you can see through a window's clear glass,,clear; glass,no-subject.md#beginner-practice
 🛏️,bed,oyahe,place,one,big,,,,,proper-names.md#intermediate-practice
 🛋️,furniture,ovahe,place,one,big,leisure,furniture is where you sit back; leisure is free time,,,
 🪑,chair,ehohe,place,one,medium,position,chair is where you take a seat; position is your assigned place,v:sit,place; situation; lay; status; location; locate; pose; situate; put; occupy,speech-moves.md#beginner-practice
