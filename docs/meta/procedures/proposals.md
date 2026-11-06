@@ -23,6 +23,8 @@ A proposal is a plan for a change that is too large or too undecided to make in 
 
 **Body sections:** Problem, Goals, Non-goals, then the findings or the design, then the implementation plan, then **Open decisions**.
 
+Every proposal states, in its plan, that if the user says to stop partway, the agent [consolidates the proposal](#consolidate-on-stop) before the session ends.
+
 - Grammar decisions belong to the user. An agent that meets one while carrying out a proposal logs it under Open decisions, skips the item, and carries on with the rest.
 - Each logged open decision states the problem, lists the options, and ends with a **Recommendation:** the option the agent would pick and why, in a sentence or two, weighed by its effect on the learner. The user still decides; the recommendation saves a round of analysis. When the agent has no basis to choose, it says so and names what would settle it.
 - A settled reading goes on its grammar page. A rejection with a reason beyond *no reading yet* also gets an entry in [design-decisions.md](../design-decisions.md).
@@ -86,24 +88,25 @@ Subagents cost tokens, and most of the cost is context carried from turn to turn
 3. **Read slices.** A subagent lists headings first (`npm run page-lines -- --headings`, or `grep -n '^#'`), then reads only the line ranges it edits. It never opens a whole long page to move one H3.
 4. **Move with tools, not by hand.** Moves, peels, and hash rows go through `npm run move-heading` and `npm run peel-headings`, which cut the clusters, rewrite every `page.md#id` link, and write the hash rows. Never retarget links by hand. A subagent's hand work is what the tools leave: Practice, the allowlist, prose seams, and placement.
 5. **Quiet verification.** The orchestrator saves `npm run verify -- --baseline` at the start of each phase. Subagents run `npm run verify -- --allow-generate` at the end of each item (`--fast` for checks inside an item) instead of raw build and test runs, and never paste raw build output into their context. When verify reports a new error, read only that line of `tmp/verify-last.log`. A raw `npm run build` or `npm test` ends with a failure footer (each issue with `file:line`, then the summaries that name the fix); read that, not the full log in `tmp/build-last.log` / `tmp/test-last.log`, and never rerun a failed check before editing.
-6. **Smaller model for mechanical steps.** Rename scripts, hash-row backfills, redirect checks, and link retargets may run on a smaller model at low effort. Grammar judgment, teaching prose, Practice, placement, and audits stay on the strongest model. The proposal names each unit's Agent tool `model` value (`opus`, `sonnet`, `haiku`) and `effort`, so the setting is not a judgment call at launch. Never write "main model" and never leave `model` out: an omitted `model` uses the configured default subagent model, which may not be the orchestrator's.
-7. **Prefer fresh subagents over forks.** Fork only early, while the orchestrator's context is still small and the fork needs most of it.
-8. **Run in sequence when files are shared.** Registry files (the sidebar, redirects, the allowlist, level reviews, cheat sheets, the lexicon `core` column, `AGENTS.md`) take one writer at a time. Run in parallel only when the file sets are disjoint and wall time matters.
-9. **Script bulk mechanical work.** Renames and the same edit across many files go in one script that a single subagent writes, runs, and checks with one `verify`, not in one subagent per row.
-10. **Keep the orchestrator lean.**
+6. **Use `proposal-worker` unless a specific agent fits.** Launch each subagent with `subagent_type: "proposal-worker"` (`.claude/agents/proposal-worker.md`). It has only Bash, Read, Edit, and Write and a short standing brief, while the general-purpose agent carries every tool the session has, including web and MCP tools a unit never uses, and pays for them on every turn. Use a more specific agent when one exists for the unit's task, such as `checkpoint-writer` for Practice checkpoints. Add a new agent under `.claude/agents/` only when several units share a standing brief the generic one lacks.
+7. **Smaller model for mechanical steps.** Rename scripts, hash-row backfills, redirect checks, and link retargets may run on a smaller model at low effort. Grammar judgment, teaching prose, Practice, placement, and audits stay on the strongest model. The proposal names each unit's Agent tool `model` value (`opus`, `sonnet`, `haiku`) and `effort`, so the setting is not a judgment call at launch. Never write "main model" and never leave `model` out: an omitted `model` uses the configured default subagent model, which may not be the orchestrator's.
+8. **Prefer fresh subagents over forks.** Fork only early, while the orchestrator's context is still small and the fork needs most of it.
+9. **Run in sequence when files are shared.** Registry files (the sidebar, redirects, the allowlist, level reviews, cheat sheets, the lexicon `core` column, `AGENTS.md`) take one writer at a time. Run in parallel only when the file sets are disjoint and wall time matters.
+10. **Script bulk mechanical work.** Renames and the same edit across many files go in one script that a single subagent writes, runs, and checks with one `verify`, not in one subagent per row.
+11. **Keep the orchestrator lean.**
     - Read each report and `git diff --stat`, not whole diffs. Open a hunk only when a report flags it, a gate fails, or the stat shows a file outside the item's list.
     - Trim command output (`2>&1 | tail -30`).
     - Run `verify` once per unit, before the commit. Never repeat a green run: when the subagent's last act was a passing `verify` and nothing has changed since, commit on that result. Rerun only after the orchestrator's own edits (such as `AGENTS.md` Owns lines).
-11. **Ask for short, fixed-field reports**: what moved (with ids), files touched as a count, registry edits, `AGENTS.md` Owns lines to change, the `verify` line, skips with reasons, **left:** the steps not done when the subagent stopped at its turn cap, and **inefficient:** anything about the run that looked wasteful ([AGENTS.md](../../../AGENTS.md), end of run).
-12. **Pay for a fresh context where it buys something**: a new set of pages, an independent audit, or a rule about what a writer may have read. Scope an audit to what the proposal changed, plus close neighbors.
-13. **Send failures back to the owner.** When a gate fails, send it to the subagent that made the change, if it is still under the turn and token limits in step 1. Otherwise start a fresh subagent with the item, the failing `verify` lines, and the diff stat.
-14. **Keep one writer for `AGENTS.md`.** Subagents report the Owns-line changes; the orchestrator applies them at the end.
+12. **Ask for short, fixed-field reports**: what moved (with ids), files touched as a count, registry edits, `AGENTS.md` Owns lines to change, the `verify` line, skips with reasons, **left:** the steps not done when the subagent stopped at its turn cap, and **inefficient:** anything about the run that looked wasteful ([AGENTS.md](../../../AGENTS.md), end of run).
+13. **Pay for a fresh context where it buys something**: a new set of pages, an independent audit, or a rule about what a writer may have read. Scope an audit to what the proposal changed, plus close neighbors.
+14. **Send failures back to the owner.** When a gate fails, send it to the subagent that made the change, if it is still under the turn and token limits in step 1. Otherwise start a fresh subagent with the item, the failing `verify` lines, and the diff stat.
+15. **Keep one writer for `AGENTS.md`.** Subagents report the Owns-line changes; the orchestrator applies them at the end.
 
 ## The plan section
 
 A proposal that runs through subagents states, in its plan:
 
-- the units, with IDs, their order, their items, and for each the Agent tool `model` value (`opus`, `sonnet`, `haiku`) and reasoning effort (one fresh subagent per unit; a unit is one or two items)
+- the units, with IDs, their order, their items, and for each the agent type (`proposal-worker` unless a more specific agent fits, [step 6](#running-with-subagents)), the Agent tool `model` value (`opus`, `sonnet`, `haiku`) and reasoning effort (one fresh subagent per unit; a unit is one or two items)
 - the files each unit may edit
 - the rule digest every subagent gets pasted, with its report format and the standing stop line from [step 2](#running-with-subagents)
 - the gates: `npm run verify -- --allow-generate` against the phase's baseline between items, and the final gate (a clean `npm run build` once nothing is left on a **generate** row)
@@ -128,3 +131,15 @@ When a script or tool is about to make a large automated change (`retie-docs --w
 ## Resuming
 
 A run that stops partway resumes from the git log and the Status line. After each workstream's commit, the orchestrator records the finished workstream IDs in Status. The next session reads them, re-runs build and tests, and starts the next workstream with a fresh subagent.
+
+### Consolidate on stop
+<a id="consolidate-on-stop"></a>
+
+When the user says to stop partway, the agent rewrites the proposal before the session ends, so the next session reads only what it still needs:
+
+- delete finished items, their findings, and finished workstreams; the git log holds them
+- drop background, digest lines, and gate notes that only finished work needed
+- move each settled decision to its grammar page or meta note, or to the Status line with its date
+- keep the remaining plan, open decisions, and the point reached on the Status line
+
+Commit the consolidated proposal with the run's last work when the run commits ([commits](#commits)); otherwise leave it in the tree.

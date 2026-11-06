@@ -16,7 +16,7 @@ use [skip-cd] for amplify to not deploy.
 -cheat sheet for reading a word?
 -prioritize the size vowel over distinctness
 -should any other cheat sheets be added?
--consider grouping lessons into categories/units
+-consider grouping lessons into categories/units - also update grammar table in AGENTS.md to match
 -profile build
 -landmark relations with no form yet: spatial *past* (walks past the house), *opposite* / *across from*, *beyond* (far side of); *along* and *up / down the hill* only approximate. New /h/ + bl- rows on locative-relations.md, not same-role words
 -should vowel pitch checker be very forgiving at beginning (check contour only rather than pitch matching)?
