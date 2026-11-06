@@ -109,7 +109,7 @@ Each change moves an H3 or a page. The guard in a change is a stop condition. If
   - Retitle singability "Voicing Ageben", and promote its H4 "Vowel pitch values" to an H3.
   - Voice and certainty and Singability constraints stay.
 - **D9** Emphasis. Fold `emphasis.md` into `tone-marks.md` "Tone marks" as a short recipe, about 10 lines plus the four-row table. Delete the Advanced sitting and its allowlist row, with a redirect. Clefts are everyday talk, and `&` is homed on tone-marks ([recipe track](../meta/grammar-docs.md#recipe-track): nothing new, but needed early, goes on the stage page).
-- **D10** Named phrases. Peel `join-limits.md` "Named phrase `-n`" to a new Advanced sitting "Named phrases", with its checkpoint (setting: a treaty table). Join-limits gets a new checkpoint or a **skip** row with its reason.
+- **D10** Named phrases. Peel `join-limits.md` "Named phrase `-n`" to a new Advanced sitting "Named phrases", with its checkpoint (setting: a treaty table). Join-limits gets a new checkpoint or a **skip** row with its reason. E5 cut its Scope islands H3 to a Compare-with line, but three Practice items still drill it (E→A 2, A→E 2, Pick one 1); the new checkpoint replaces them.
 - **D11** Ambient magnitude. Move `stacked-markers.md` "Ambient magnitude (casual)" to Intermediate `digitless-exponents.md`, after "Bare OoM", with its practice items. That page goes from 6 to 7 H3s. **Guard (gate 4):** nothing in it depends on Advanced.
 - **D12** Stance bars:
   - Cut the channel part of `stance-bars.md` "Every bar" to a link to `bars#channel-bars`.
@@ -219,4 +219,11 @@ Every unit may also edit the allowlist, hash redirects, site redirects, and leve
 
 ## Open decisions
 
-None open. A guard that fails in D3, D6, D11, D12, D13, or D14 comes back here as a decision.
+A guard that fails in D3, D6, D11, D12, D13, or D14 comes back here as a decision.
+
+- **A rise of N percentage points in a full clause** (found in E11, 2026-11-06). E11 asked for *The price of the pills went up two percentage points.* No grammar page gives a clause form for it. A measure on `/b/` needs a unit noun, and points have none, so `zuderem bradoyul velol` parses but the word-order lint reads `bradoyul` as a recipient. The Practice item is now a noun phrase, *A growth of two percentage points* (`zelom gradoyul.`). Options:
+  - (a) a unit noun for points, so the rise fits the measure `/b/` pattern
+  - (b) teach the change amount on `/h/` or `/d/`
+  - (c) leave the gap; the noun phrase is enough
+
+  **Recommendation:** (a). It reuses the measure-phrase rule learners already have, so a rise in points reads like a rise in dollars or hours.
