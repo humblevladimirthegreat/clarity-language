@@ -43,7 +43,7 @@ So *three* is **g** + **ra** + **ge** + **l**: **`gragel`**.
 >
 > "Azozon sees three books."
 
-A number with more digits is still **one word**: one syllable per digit, left to right. *Twenty* is **g** + **ra** + **do** + **mo** + **l**: **`gradomol`**.
+A number with more digits is still **one word**: one syllable per digit, left to right. *Twenty* is **g** + **ra** + **do** + **mo** + **l**: **`gradomol`**. Other words stress their first syllable ([rhythm and stress](/phonology#rhythm-and-stress)); a number word stresses its last digit instead, so `gradomol` takes its stress on *mo*.
 
 On its own, outside a sentence (a list, a reply), a number drops its role letter like any [citation](word-endings.md#citation-forms): **`ragel`** is *three*.
 

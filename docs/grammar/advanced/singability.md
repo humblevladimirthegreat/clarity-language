@@ -2,7 +2,7 @@
 band: advanced
 ---
 
-# Singing and speech edges {#singing-and-speech-edges}
+# Voicing Ageben {#singing-and-speech-edges}
 
 ### Singability constraints {#singability-constraints}
 

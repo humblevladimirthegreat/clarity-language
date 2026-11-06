@@ -174,7 +174,7 @@ A parenthetical comment span (`th(…)` on the sentence; `g(…)`, `w(…)`, or 
 
 Prefer an audible left `/y/` rather than implied **`yal`**.
 
-[Singing and speech edges](/singability#audible-start)
+[Voicing Ageben](/singability#audible-start)
 
 ### Bar
 
@@ -204,7 +204,7 @@ Clause content after the left-edge `/y/` cluster.
 
 Silence counted in beats at a sentence edge with no word: a **break** puts the next beat half a beat late (around a scope island), a **rest** is one silent beat (a period).
 
-[Singing and speech edges](/singability#speech-edges)
+[Voicing Ageben](/singability#speech-edges)
 
 ### Cell logic
 
@@ -1020,7 +1020,7 @@ Left-edge `/y/` addressing.
 
 The fixed, optional pitch of each vowel: `u` high, `e` mid-high, `o` mid-low, `a` low. It backs up the vowel's sound and adds no meaning.
 
-[Phonology](/phonology#vowel-pitch), [Singing and speech edges](/singability#vowel-pitch-values)
+[Phonology](/phonology#vowel-pitch), [Voicing Ageben](/singability#vowel-pitch-values)
 
 ### Vowel series
 

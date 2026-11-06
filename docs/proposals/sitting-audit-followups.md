@@ -7,10 +7,10 @@
   - Percentage points get a unit noun (D16).
   - Each unit's model and effort are set by difficulty (see the plan).
   - A worker may place moved Practice items itself under the exception in the plan.
+  - D8 takes option A (split the H3): the number-word sentence goes to `numbers.md`, and the word-break paragraph to `hooked-joins.md`.
 - **Done:**
   - Workstream 1, commits `c371aa93`–`4d250b42`.
-  - Workstream 2, units 2a and 2c–2j (D7, D1, D2, D3, D4, D6, D9, D10, D11), commits `d8bab329` through the 2j commit (the one that also consolidated this file), 2026-11-06.
-  - Unit 2b (D8) was skipped because its guard failed. It is waiting on the open decision below.
+  - Workstream 2, units 2a–2j (D1–D4, D6–D11), commits `d8bab329` through the 2b commit, 2026-11-06. Unit 2b (D8, option A) also put per-group number stress on `number-markers.md`, where digit groups are taught.
 - **Next:** unit 2k, in a new session. Save a fresh `npm run verify -- --baseline` first.
 - **`AGENTS.md` Owns lines to apply at the final step:**
   - From workstream 1:
@@ -22,7 +22,7 @@
     - `comparative-arity.md` → "ranking on any scale"
     - `here-there.md` → "here, there, and somewhere"
   - From workstream 2:
-    - `phonology.md` row: add "thinking sounds".
+    - `phonology.md` row: "Phonology; …" → "Phonology, rhythm and stress, thinking sounds; …", and "singability, speech edges, audible start (`singability.md`)" → "voicing: singability, vowel pitch, speech edges, audible start (`singability.md`)".
     - `speech-moves.md` row: drop "thinking sounds"; the `more-turn-words.md` list gains "rhetorical questions, quizzes"; "tone marks (`tone-marks.md`)" → "tone marks, emphasis and clefts (`tone-marks.md`)".
     - `questions.md` row: drop "rhetorical questions, quizzes (`rhetorical-questions.md`)".
     - `clause.md` row: drop "; emphasis, clefts (`emphasis.md`)".
@@ -64,10 +64,6 @@ The user accepted every recommendation, and the changes below are the ones still
 
 Each change moves an H3, a page, or a sentence. The guard in a change is a stop condition. If it fails, the unit skips the change and reports back.
 
-- **D8** Singability. Blocked on the [open decision](#open-decisions).
-  - Move "Rhythm and stress" from `singability.md` to `phonology.md`, after "Word edges" and before Thinking sounds.
-  - Retitle singability "Voicing Ageben", and promote its H4 "Vowel pitch values" to an H3.
-  - Voice and certainty and Singability constraints stay.
 - **D12** Stance bars:
   - Cut the channel part of `stance-bars.md` "Every bar" to a link to `bars#channel-bars`.
   - Keep FORMER, ability, rules and permission, and hopes and fears.
@@ -117,7 +113,6 @@ Units run in sequence, one fresh subagent each, because most share the sidebar, 
 | 2m | D5, D14 | holder, stand-in-roles | opus / medium | two Compare-with lines; D14's guard is a read, not a rewrite |
 | 2n | D15 | `git mv` of the two files, every link to them | sonnet / medium | mechanical: `git mv`, link retargets, redirects |
 | 2o | D16 | `data/lexicon-published.csv` or `data/lexicon-compounds.csv`, measures-and-percent, parser and lint code if needed; then a `checkpoint-writer` top-up of measures-and-percent Practice | opus / xhigh | a new root, and possibly parser and word-order lint code |
-| 2b | D8, once decided | singability, phonology, `reading-order.ts`, and the pages option A names | opus / high | a split H3 with a gate-4 rewrite |
 
 **Run notes** (learned in 2a–2j; put each in the brief that needs it):
 - **Fencing a tool's `--write`.** Subagents cannot commit, so a worker writes `git diff -- . ':!docs/proposals' > <scratchpad>/<unit>-tool.diff` right after the tool's `--write` and before any hand edit, plus `git status --short` when the tool creates files. The orchestrator commits that output with `git apply --cached <file>` (after `git reset` if a `git rm` is already staged), then commits the hand work. Do not restore from a stash: `git checkout stash -- .` does not restore deletions.
@@ -152,20 +147,4 @@ Units run in sequence, one fresh subagent each, because most share the sidebar, 
 
 ## Open decisions
 
-A guard that fails in D12, D13, D14, or D16 comes back here as a decision.
-
-- **D8 fails gate 4 (unit 2b, skipped).** "Rhythm and stress" on `singability.md` cannot go onto `phonology.md` whole, for three reasons:
-  - It says a number word stresses the last digit of each group, and numbers come later.
-  - Its word-break paragraph uses a hooked join and a join followed by a hook, and hooks and hooked joins come later.
-  - Its example `zazozon gamahum.` is a full clause.
-
-  Two more facts matter whichever option is chosen:
-  - Its H4 "Vowel pitch values" `{#vowel-pitch-values}` sits inside it and would travel with it. It must be promoted to an H3 first, keeping its id, which `finger-code.md`, `cheat-sheets/sounds-spelling.md`, `terminology.md` and `src/vowel-pitch.ts` link to.
-  - The sidebar label is hard-coded in `reading-order.ts` ("Singing and speech edges").
-
-  Options:
-  - **A. Split the H3.** Promote the H4, then move rhythm and stress to phonology. Take the number-word sentence and the word-break paragraph out, either to `numbers.md` and `hooked-joins.md` (which already links `#rhythm-and-stress`), or back onto Voicing Ageben. Swap the clause example for cited words, as "Word edges" uses.
-  - **B. Move it whole and rewrite** the two sentences in Beginner terms. The dropped facts still need a home on later pages.
-  - **C. Drop the move.** Only retitle singability "Voicing Ageben" and promote the H4.
-
-  **Recommendation:** A, with the number-word sentence going to `numbers.md` and the word-break paragraph to `hooked-joins.md`. A Beginner learner then gets stress where they learn sounds, and each later fact sits where its grammar is taught.
+None open. A guard that fails in D12, D13, D14, or D16 comes back here as a decision.

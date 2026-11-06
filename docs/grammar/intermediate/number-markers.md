@@ -127,7 +127,7 @@ A [citation](/word-endings#citation-forms) has no role letter, in shorthand as i
 | *(no digit groups)* | *(empty after marker)* `g+`, `g~-`, `g=#`, `d_` |
 | Digit syllables (`ba`…`mo`) | Arabic **`0`–`9`** |
 
-For long values, break into digit groups of at most three mantissa digits; all groups still sit in **one** word after a single marker.
+For long values, break into digit groups of at most three mantissa digits; all groups still sit in **one** word after a single marker. In speech, a number word stresses the last digit of each group, as a one-group number does ([counts](/numbers#counts)).
 
 #### Starter examples {#starter-examples}
 
