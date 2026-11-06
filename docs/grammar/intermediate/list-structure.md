@@ -25,7 +25,15 @@ A hook belongs to one item the same way. Put the hook and its `/b/` right after 
 >
 > "Azozon and his dog walk."
 
-Only the item just before the join word takes a hook this way. A hook anywhere else in the clause is an extra noun of the clause.
+Only the item just before the join word takes a hook this way. A hook **right after** the join word is SHARED, like an adjective there: it belongs to every item. A hook anywhere else in the clause is an extra noun of the clause.
+
+> `zodozel zogozel zal om bahelan vowurol.`
+>
+> [z-dog | z-cat | z-and | [used-by | b-Ahelan]] | v-walk
+>
+> "Ahelan's dog and cat walk."
+
+**`gegunum`** + `/b/` does the same job as a `/ɡ/` word:
 
 > `zodozel zogozel zam gegunum blazozon.`
 >

@@ -51,8 +51,6 @@ Each unit, in table order:
 | I11 | Intermediate | `try.md` (top up) | The review item for try exists; no review edits |
 | A1 | Advanced | `stand-in-roles.md` (top up), `nested-dependents.md` (new) | |
 
-Every unit: avoid a hook right after a join word ([OD11](#open-decisions)).
-
 ### Phase 5: Bookkeeping and re-audit
 
 - `npm run verify -- --baseline`.
@@ -86,8 +84,7 @@ For Phase 5 to apply to `AGENTS.md` (current filenames):
 
 ## Open decisions
 
-- **OD11. A hook right after a join word (4 I4), open.** The parser reads `… dal om bahelar …` (hook right after the join word) as SHARED, inside the list bracket. list-structure *SHARED after the join* opens with "write it **immediately after** the join" for an adjective or extra noun meant for the whole list, which matches, but then says "A hook anywhere else in the clause is an extra noun of the clause", which a reader can take to include this spot. Options: (a) keep the parser reading and tighten that sentence to "anywhere else, other than right after the join word"; (b) make the parser read the spot as an extra noun of the clause.
-  **Recommendation: (a).** It is the reading the section's first paragraph already teaches, needs no parser change, and gives the learner one rule for everything right after the join word.
+None open. OD11 (a hook right after a join word) was decided on 2026-11-06: it is SHARED, taught on list-structure *SHARED after the join*.
 
 ## Follow-ups
 <a id="follow-ups"></a>
