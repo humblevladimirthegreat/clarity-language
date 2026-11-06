@@ -329,7 +329,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐤,chick,ehezo,creature,order,small,newcomer,a chick has just arrived in the world; a newcomer has just arrived,,novice,
 🐦,bird,ebeze,creature,one,small,freedom,free as a bird,,free,
 🐧,penguin,awoza,creature,holds,medium,,,,,contrary-to.md#intermediate-practice
-🕊️,dove,udoze,creature,one,medium,tranquility,dove is a sign of peace,,,join-limits.md#advanced-practice
+🕊️,dove,udoze,creature,one,medium,tranquility,dove is a sign of peace,,,named-phrases.md#advanced-practice
 🦅,eagle,egozu,creature,takes-away,medium,vision,eagle eye sees far,,sight,
 🦆,duck,adoza,creature,holds,medium,,,,,relations.md#beginner-practice
 🦢,swan,azozo,creature,order,medium,grace,swan glides with grace,,,
@@ -353,7 +353,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐋,whale,ewaza,creature,holds,big,magnitude,whale-sized magnitude,,,
 🐬,dolphin,odaza,creature,holds,big,,,,,
 🫍,orca,orazu,creature,takes-away,big,,,,,
-🦭,seal,ezaze,creature,one,big,imprimatur,seal stamps a document as sanctioned; imprimatur is official backing,,sanction; stamp,join-limits.md#advanced-practice
+🦭,seal,ezaze,creature,one,big,imprimatur,seal stamps a document as sanctioned; imprimatur is official backing,,sanction; stamp,named-phrases.md#advanced-practice
 🐟,fish,eveza,creature,holds,small,abundance,plenty of fish in the sea,,plenty,
 🐡,blowfish,owezu,creature,takes-away,small,bluster,a blowfish puffs up to look bigger; bluster is puffed-up talk,,,
 🦈,shark,uhazu,creature,takes-away,big,ruthlessness,shark is ruthless predator,,,
@@ -877,11 +877,11 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 💸,spend,ezuru,counting,takes-away,none,waste,money flies away with wings; waste is losing what you had,,expenditure,
 💳,credit-card,ogera,counting,holds,small,credit,card borrows now and pays later; credit is trust to pay later,v:lend,loan,
 🧾,receipt,ereno,title,order,small,proof,receipt proves the transaction; proof is evidence of fact,,bill,
-✉️,envelope,enona,title,holds,medium,,,,,
+✉️,envelope,enona,title,holds,medium,,,,,join-limits.md#advanced-practice
 📧,email,emuna,title,holds,none,message,email sends words instantly; message is communicated content,,,
 📤,out-box,adonu,title,takes-away,medium,outgoing,outbox holds mail to send; outgoing is leaving your hands,,,
 📥,inbox,anona,title,holds,medium,incoming,inbox holds mail received; incoming is arriving to you,,,
-📦,box,uboga,sign,holds,medium,aggregation,a box wraps items together; aggregation is the unobservable grouping,,module; package; parcel,
+📦,box,uboga,sign,holds,medium,aggregation,a box wraps items together; aggregation is the unobservable grouping,,module; package; parcel,join-limits.md#advanced-practice
 📫,mailbox,emoha,place,holds,medium,reception,closed mailbox holds delivered mail; reception is receiving inward,,,
 📮,post-box,oboha,place,holds,medium,dispatch,postbox sends mail on its way; dispatch is sending outward,,send; mail; deliver; post,
 🗳️,ballot,una,title,holds,,choice,ballot records your vote; choice is selecting among options,,vote; election; elect; poll; voluntary,

@@ -49,7 +49,19 @@ z-Alazun | v-deny | [z-child | g-sleepy]
 **Rule:** [Lexicalized stand-ins in other roles](stand-in-roles.md#stand-in-roles)
 :::
 
-**2.** *As of 3 May, Azozon is sitting in a school.*
+**2.** *Alazun and Ahelan cook something other than a tomato and a watermelon.*
+
+::: details Show answer
+`zalazun zahelan zal dodedel dowodel dur vuguyol.`
+
+[z-Alazun | z-Ahelan | z-and] | [d-tomato | d-watermelon | d-something-else] | v-cook
+
+Each list takes its own join with its items' role letter: **`zal`** for the cooks, **`dur`** for what they cook.
+
+**Rule:** [Constraints](join-limits.md#constraints)
+:::
+
+**3.** *As of 3 May, Azozon is sitting in a school.*
 
 ::: details Show answer
 `zazozon henam bl_#3,5 vehohel al buzahal.`
@@ -59,7 +71,7 @@ z-Azozon | [h-as-of.ledger | bl-_3,5] | v-sit | [in | b-school]
 **Rule:** [As-of (whose now)](as-of.md#as-of)
 :::
 
-**3.** *Ahelan sees a station that I remember as quiet.*
+**4.** *Ahelan sees a station that I remember as quiet.*
 
 ::: details Show answer
 `zahelan dawahol wevum gugowul vayebel.`
@@ -69,7 +81,7 @@ z-Ahelan | [d-station | [w-MEMORY | g-quiet]] | v-see
 **Rule:** [Mood on one adjective](universality.md#mood-on-adjective)
 :::
 
-**4.** *Ahelan sees the ZW.* (the School-Station office)
+**5.** *Ahelan sees the ZW.* (the School-Station office)
 
 ::: details Show answer
 `zahelan d@_zw vayebel.`

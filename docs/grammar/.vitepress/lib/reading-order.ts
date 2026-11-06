@@ -117,6 +117,7 @@ export const advancedLessons = [
   { text: 'Stand-in words', link: '/stand-in-roles' },
   { text: 'Nested dependents', link: '/nested-dependents' },
   { text: 'Join limits', link: '/join-limits' },
+  { text: 'Named phrases', link: '/named-phrases' },
   { text: 'Cite plus a hook', link: '/hook-compounds' },
   { text: 'Hook plus a join', link: '/hooked-joins' },
   { text: 'Whose now', link: '/as-of' },
@@ -132,7 +133,6 @@ export const advancedLessons = [
   { text: 'Open and named ranges', link: '/open-ranges' },
   { text: 'Generations', link: '/generations' },
   { text: 'Numeric prefixes', link: '/numeric-derivation' },
-  { text: "Named phrases", link: "/named-phrases" },
 ]
 
 export const levelReviews = [

@@ -40,7 +40,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevum` | [Knowing](/knowing#live-vs-memory) |
 | **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegol z[odoze] gamezem.` | [Spans as words](/spans-as-words#mention) |
 | **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themem` | [It turns out](/mirative#mirative) |
-| **NAME** | A package titled with **-n** | `zobodel zubudal zan.` | [Join limits](/named-phrases#named-list) |
+| **NAME** | A package titled with **-n** | `zobodel zubudal zan.` | [Named phrases](/named-phrases#named-list) |
 | **NOTIONAL** | As-if / pretense mood | `theyum` | [As if](/notional#notional) |
 | **OPAQUE** | An opaque span: foreign or raw writing | <code>d&lt;kimchi&gt;</code> | [Spans](/spans#loans) |
 | **PATTERN** | Evidential: from regularity | `thubom` | [How you know](/evidentiality#evidentiality) |
@@ -644,7 +644,7 @@ Short **-n** label for a long title.
 
 Phrase join **-n**.
 
-[Join limits](/named-phrases#named-list)
+[Named phrases](/named-phrases#named-list)
 
 **Compare with:** a [titled phrase](#titled-phrase) can use that join **-n** while members keep ordinary endings.
 

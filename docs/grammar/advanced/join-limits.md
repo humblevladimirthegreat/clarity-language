@@ -44,14 +44,14 @@ These limits apply to every join.
 
 Short drills for Advanced. Try each item before opening **Show answer**.
 
-**Setting:** a treaty table
+**Setting:** a post office
 
 **New words:**
 
 | English | Ageben | Cue |
 |---------|--------|-----|
-| *dove* | `udozel` | 🕊️ |
-| *imprimatur* | `ezazem` | 🦭 from *seal*: the stamp of approval |
+| *envelope* | `enonal` | ✉️ |
+| *box* | `ubogal` | 📦 |
 
 **Review:**
 
@@ -61,97 +61,88 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *page* | `obonol` |
-| *pen* | `ebewol` |
+| *write* | `varuyol` |
 | *see* | `vayebel` |
+| *umbrella* | `omobul` |
+| *clipboard* | `egowal` |
+| *calendar* | `agorol` |
 
 #### English → Ageben {#advanced-english-to-ageben}
 
-**1.** *a page or a pen* (the familiar set phrase)
+**1.** *Alazun writes something other than a page.*
 
 ::: details Show answer
-`zobonol zebewol zen.`
+`zalazun dobonol dur varuyol.`
 
-NAME[z-page | z-pen | z-or-exactly-one]
+z-Alazun | [d-page | d-something-else] | v-write
 :::
 
-**2.** *Azozon and (just Ahelan)*
+**2.** *Ahelan sees one of the box and the envelope.* (which one is not said)
 
 ::: details Show answer
-`zazozon { zahelan zal } zam.`
+`zahelan dubogal denonal dar vayebel.`
 
-[z-Azozon | SCOPE[z-Ahelan | z-and] | z-and.open]
+z-Ahelan | [d-box | d-envelope | d-something] | v-see
 :::
 
-**3.** *null* / *void*
+**3.** *Azozon and Alazun see the umbrella and the box.*
 
 ::: details Show answer
-`zan.`
+`zazozon zalazun zal domobul dubogal dal vayebel.`
 
-NAME[z-and]
-:::
+[z-Azozon | z-Alazun | z-and] | [d-umbrella | d-box | d-and] | v-see
 
-**4.** *Alazun sees something other than the dove.*
-
-::: details Show answer
-`zalazun dudozel dur vayebel.`
-
-z-Alazun | [d-dove | d-something-else] | v-see
+Each list takes its own join, with the role letter of its items.
 :::
 
 #### Ageben → English {#advanced-ageben-to-english}
 
-**1.** `zoen.`
+**1.** `zenonal zubogal zur.`
 
 ::: details Show answer
-NAME[z-equal-rank]
+[z-envelope | z-box | z-something-else]
 
-*It's a draw.* (the stock phrase)
+*something other than the envelope and the box*
 :::
 
-**2.** `zazozon { zal } zam.`
+**2.** `zalazun zahelan zar domobul vayebel.`
 
 ::: details Show answer
-[z-Azozon | SCOPE[z-none] | z-and.open]
+[z-Alazun | z-Ahelan | z-something] | d-umbrella | v-see
 
-*Azozon and nothing*
+*Alazun or Ahelan sees the umbrella* (one of them; which is not said)
 :::
 
-**3.** `zezazem zobonol zur.`
+**3.** `zegowal zagorol zomobul zer.`
 
 ::: details Show answer
-[z-imprimatur | z-page | z-something-else]
+[z-clipboard | z-calendar | z-umbrella | z-anything]
 
-*something other than the seal and the page*
-:::
-
-**4.** `zalazun dobonol debewol dan vayebel.`
-
-::: details Show answer
-z-Alazun | NAME[d-page | d-pen | d-and] | v-see
-
-*Alazun sees “Page-and-Pen”.* (the familiar pair)
+*any of the clipboard, the calendar, or the umbrella is fine*
 :::
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Azozon and (just the dove)* `zazozon { zudozel zal } zam.` or `zazozon zudozel zal zam.`
+**1.** *Azozon sees something other than the box.* `zazozon dubogal dur vayebel.` or `zazozon dubogal dul vayebel.`
 
 ::: details Show answer
-`zazozon { zudozel zal } zam.`
+`zazozon dubogal dur vayebel.`
 
-[z-Azozon | SCOPE[z-dove | z-and] | z-and.open]
+z-Azozon | [d-box | d-something-else] | v-see
 
-The island keeps **`zal`** on the dove alone; without braces it closes Azozon and the dove together.
+**-r** on **u** is *something other than*; **…ul** denies the box.
 :::
 
-**2.** *“Page and Pen”* (the familiar set phrase) `zobonol zebewol zan.` or `zobonol zebewol zal.`
+#### Fix it {#advanced-fix-it}
+
+**1.** *Alazun sees the envelope and the box.* <!-- lint: error -->`zalazun denonal zubogal dal vayebel.`
 
 ::: details Show answer
-`zobonol zebewol zan.`
+`zalazun denonal dubogal dal vayebel.`
 
-NAME[z-page | z-pen | z-and]
+z-Alazun | [d-envelope | d-box | d-and] | v-see
 
-**-n** names the list as one set phrase; **-l** is an ordinary *a page and a pen*.
+Every item shares the join's role letter: the box is an object, so `dubogal`, not `zubogal`.
 :::
 
 ## Reference tables {#reference-tables}
