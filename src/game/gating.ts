@@ -1,7 +1,7 @@
 /**
  * Gating from the docs: a line the game shows is within the player's reach when every construction it
  * uses is taught at or before the player's place on the cross-doc path, and every root it uses has been
- * introduced (docs/meta/learning-levels.md#cross-doc-path, docs/meta/lexicon.md#core-vocabulary-column).
+ * introduced (docs/meta/learning-levels.md#cross-doc-path, docs/meta/procedures/lexicon.md#core-vocabulary-column).
  * The data comes from the grammar pages at build time ([build.ts](./build.ts)); this file stays browser-safe.
  */
 

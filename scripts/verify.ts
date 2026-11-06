@@ -23,7 +23,7 @@ const TMP = join(REPO_ROOT, "tmp");
 const BASELINE = join(TMP, "verify-baseline.json");
 const LAST_LOG = join(TMP, "verify-last.log");
 const BUILD_LOG = join(TMP, "build-last.log");
-const ALLOWLIST = join(REPO_ROOT, "docs", "meta", "drill-generation.md");
+const ALLOWLIST = join(REPO_ROOT, "docs", "meta", "procedures", "drill-generation.md");
 const SHOW = 22;
 
 type Baseline = { saved: string; fast: boolean; keys: ErrorKey[] };

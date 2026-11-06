@@ -1,7 +1,7 @@
 # Proposal: Making every sitting pass "what one sitting holds"
 
 **Status:** in progress. Phases 0–3 done (2026-11-05). Phase 4 (2026-11-06): units B1 and I1–I5 done; next is I6. Level reviews may now hold checkpoints + 5 items (was + 3). Decided ODs, the original findings, URL table, gate runs, and moved-H3 list are in git history (this file at `89c0b5a2`).
-**Related:** [what one sitting holds](../meta/grammar-docs.md#one-sitting), [drill-generation](../meta/drill-generation.md#execute), [allowlist](../meta/drill-generation.md#allowlist), [level reviews](../meta/translation-exercises.md#level-reviews), [site redirects](../meta/site-redirects.md).
+**Related:** [what one sitting holds](../meta/grammar-docs.md#one-sitting), [drill-generation](../meta/procedures/drill-generation.md#execute), [allowlist](../meta/procedures/drill-generation.md#allowlist), [level reviews](../meta/translation-exercises.md#level-reviews), [site redirects](../meta/site-redirects.md).
 **Depends on:** none left (`range-series.md` landed).
 **Design authority:** none. This proposal moves, merges, peels, and retitles existing sections. It adds no form and changes no reading.
 
@@ -29,7 +29,7 @@ The orchestrator (the session the user talks to) runs the units in order, does n
 - **Sequential.** One subagent at a time: units share the allowlist, the lexicon `core` column, and level reviews.
 - **Gate.** A unit is done when `npm run verify -- --allow-generate` passes against the phase baseline (`tmp/verify-baseline.json`, saved at the start of Phase 4; reuse it, and re-save only if it is missing). When the subagent's last act was a passing `verify`, commit on that result.
 - **Read lean.** Read the report and `git diff --stat`, not whole diffs. Open a hunk only when the report flags it or the stat shows a file outside the unit.
-- **Commit** per [commits](../meta/proposals.md#commits): `sitting cohesion: 4 <unit>, <short summary> [skip-cd]`, a blank line, then `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. Stage only the unit's files. A unit that skipped an item still commits and names the skip and its open decision in the body.
+- **Commit** per [commits](../meta/procedures/proposals.md#commits): `sitting cohesion: 4 <unit>, <short summary> [skip-cd]`, a blank line, then `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. Stage only the unit's files. A unit that skipped an item still commits and names the skip and its open decision in the body.
 - **No grammar decisions.** A reported form or reading question goes under [open decisions](#open-decisions) with options and a recommendation; the item is skipped.
 - **One writer for `AGENTS.md`**: the orchestrator, in Phase 5.
 
@@ -59,7 +59,7 @@ Each unit, in table order:
 - Re-audit with one fresh subagent (`general-purpose`, opus, high effort): check each sitting against [what one sitting holds](../meta/grammar-docs.md#one-sitting), tests 1–6, from headings and the slices a test needs; audit, don't edit; one line per finding (page, test, what fails, suggested fix). Scope: every sitting changed since `2274a6e8~1` (`git diff --stat`), plus any sitting sharing a choice set with one, plus the [follow-ups](#follow-ups). Its findings go to the user as a list.
 - Ask the user to paste `dist/amplify-redirects.json` into the Amplify console (**Hosting → Rewrites and redirects**, [steps](../meta/site-redirects.md#add-a-remap-page-rename)); the renamed pages and `join-across-roles.html` need it for real 301s.
 - List untouched pages whose filename no longer names their title (for example `feelings-permission.md` "Feelings") for the user.
-- Commit, then delete this proposal or move it to `partially-implemented/` per [proposals](../meta/proposals.md).
+- Commit, then delete this proposal or move it to `partially-implemented/` per [proposals](../meta/procedures/proposals.md).
 
 ## Reported Owns lines
 <a id="reported-owns-lines"></a>

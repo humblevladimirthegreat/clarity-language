@@ -8,7 +8,7 @@ The sandbox page is [`wizard.md`](../grammar/wizard.md), outside the sidebar and
 
 Built in Node by [`src/game/build.ts`](../../src/game/build.ts), for the page's data loader, the content lint, and the tests:
 
-- **Gate data**: every banded section of the learning order ([cross-doc path](learning-levels.md#cross-doc-path)), each construction's home section from the registry ([`constructions.ts`](../../src/parse/constructions.ts)), and each core root's checkpoint ([core vocabulary](lexicon.md#core-vocabulary-column)). A line the game shows is within reach when all its constructions and roots are at or before the player's position.
+- **Gate data**: every banded section of the learning order ([cross-doc path](learning-levels.md#cross-doc-path)), each construction's home section from the registry ([`constructions.ts`](../../src/parse/constructions.ts)), and each core root's checkpoint ([core vocabulary](procedures/lexicon.md#core-vocabulary-column)). A line the game shows is within reach when all its constructions and roots are at or before the player's position.
 - **Error table**: one row per **Fix it** drill whose slip reduces to a role-letter swap, an ending swap, one word for another, or a turn word moved to the front, keyed by the parser's error for the wrong form. The seed rows (orthography, typed glosses, endings, `/b/` and `/d/`) are in [`recast.ts`](../../src/game/recast.ts).
 - **Fixed lines**: the glosses in `FIXED` ([`generate.ts`](../../src/game/generate.ts)), spelled with the full gloss index, including the docs' own mid-word `x` words.
 

@@ -1,6 +1,6 @@
 /**
  * Objects from root tails: every published root's `kind`, `shape` and `size` columns
- * (docs/meta/lexicon.md#root-tails) give it default behavior, so any root can appear in the world and act
+ * (docs/meta/procedures/lexicon.md#root-tails) give it default behavior, so any root can appear in the world and act
  * sensibly. The engine reads the columns, not the spelling. {@link OVERRIDES} adds the interactions that
  * make play fun and fixes rows whose category is right for spelling but odd in play; it never edits the lexicon.
  */

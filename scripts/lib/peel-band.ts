@@ -267,7 +267,7 @@ const BAND_LABEL: Record<Band, string> = { beginner: "Beginner", intermediate: "
 
 /**
  * Add a **generate** row for a new sitting to the drill-generation allowlist
- * (docs/meta/drill-generation.md#allowlist): right after the parent's row when it sits in the
+ * (docs/meta/procedures/drill-generation.md#allowlist): right after the parent's row when it sits in the
  * same table, else at the end of the table for the band (Beginner path, or the later table with
  * a Band column). The build fails on **generate** until the checkpoint is written or the row
  * is marked **skip** with a reason. Returns the markdown unchanged when the page has a row.

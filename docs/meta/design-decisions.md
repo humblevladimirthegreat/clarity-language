@@ -275,7 +275,7 @@ No adjective for someone else's feeling: it would bypass the holder warrant. A n
 *Puppy*, *mare* and *ewe* are the animal's root plus a `/ɡ/` adjective (`zodozel gohoyol`, `zohazol guvugel`), taught in [young, male and female animals](../grammar/say-people-places.md#young-animals). Two alternatives were rejected:
 
 - **A live `x` compound** (`zohoyoxodozel`, *child* + *dog*). A compound's left root narrows the head without saying how. The dictionary's *baby* + *room* is a room **for** a baby, so *child* + *dog* reads as *a dog for children* just as easily as *a young dog*. The adjective says the dog **is** young. The compound stays legal, but it is not what the recipe teaches.
-- **A dictionary row per English word** (*puppy*, *mare*, *gelding*, *cygnet*). Age and sex are properties of one animal, not kinds of it: a puppy becomes a dog. Rule 1 of [when a compound earns a row](lexicon.md#when-a-compound-earns-a-row) keeps out a thing plus a property. Rows would also add hundreds of English-specific words that one pattern already covers, and the [kin words](../grammar/say-people-places.md#kin-words) say sex with the same adjectives.
+- **A dictionary row per English word** (*puppy*, *mare*, *gelding*, *cygnet*). Age and sex are properties of one animal, not kinds of it: a puppy becomes a dog. Rule 1 of [when a compound earns a row](procedures/lexicon.md#when-a-compound-earns-a-row) keeps out a thing plus a property. Rows would also add hundreds of English-specific words that one pattern already covers, and the [kin words](../grammar/say-people-places.md#kin-words) say sex with the same adjectives.
 
 ### Denying a list
 

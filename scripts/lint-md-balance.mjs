@@ -344,7 +344,7 @@ function findProposalLinks(file, text) {
           line: i + 1,
           col: (m.index ?? 0) + 1,
           url,
-          reason: "do not link to proposal pages (see docs/meta/proposals.md)",
+          reason: "do not link to proposal pages (see docs/meta/procedures/proposals.md)",
         });
       }
     }

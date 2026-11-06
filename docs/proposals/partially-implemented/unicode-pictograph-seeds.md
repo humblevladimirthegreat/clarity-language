@@ -1,6 +1,6 @@
 # Proposal: non-emoji Unicode pictographs as extra lexicon seeds
 
-**Status:** PARTLY ADOPTED (music, Linear B and object-shaped alchemical seeds are published; Phaistos dropped). Policy: `docs/meta/lexicon.md`, seeds.  
+**Status:** PARTLY ADOPTED (music, Linear B and object-shaped alchemical seeds are published; Phaistos dropped). Policy: `docs/meta/procedures/lexicon.md`, seeds.  
 **Related:** `speed-reading-view.md`, `speed-reading-icons.md`; published seeds in [`data/lexicon-published.csv`](../../data/lexicon-published.csv)  
 **Design authority:** roots stay assigned in the published CSV; grammar is unchanged. This note only covers **optional extra pictograph inventories** (plain-text Unicode, not a third morphology).
 

@@ -201,7 +201,7 @@ function writingRules(inputs: readonly HelperInput[]): string[] {
 }
 
 /**
- * Syntax errors model drafts made with the form in the prompt (docs/meta/english-helper.md, model eval).
+ * Syntax errors model drafts made with the form in the prompt (docs/meta/procedures/english-helper.md, model eval).
  * Joins: joins.md#right-close. Punctuation: sentence-linkers.md#past-a-period, digit-strings.md.
  */
 function commonMistakes(): string[] {

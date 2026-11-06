@@ -1,5 +1,5 @@
 /**
- * Core vocabulary seed (docs/meta/lexicon.md#core-vocabulary-column).
+ * Core vocabulary seed (docs/meta/procedures/lexicon.md#core-vocabulary-column).
  *
  * Run: npm run core-vocabulary                 report against the `core` column (or the seed when it is empty)
  *      npm run core-vocabulary -- --write      fill the empty `core` column from first appearance in stage banks

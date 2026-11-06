@@ -12,11 +12,11 @@ Related meta:
 | [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** [gates](learning-levels.md#gates) and [cross-doc path](learning-levels.md#cross-doc-path) (for `docs/grammar/` only) |
 | [glosses.md](glosses.md) | Morph glosses and free English ([example blocks](glosses.md#example-block); [house-name glosses](glosses.md#house-cast)) |
 | [translation-exercises.md](translation-exercises.md) | Eng ↔ Ageben checkpoints (placement, principles including house-cast people, spoiler shape; vocab **Ageben** = citation or the inflected form the row teaches) |
-| [drill-generation.md](drill-generation.md) | Path allowlist (one row per sitting, with its [setting](drill-generation.md#settings)) and execute procedure (one file per agent) |
+| [drill-generation.md](procedures/drill-generation.md) | Path allowlist (one row per sitting, with its [setting](procedures/drill-generation.md#settings)) and execute procedure (one file per agent) |
 | [language-name.md](language-name.md) | English name **Ageben** = glasses root **`agebe`** + **-n** (editors only — not linked from grammar) |
 | [unassigned-reserved.md](unassigned-reserved.md) | Unused-slot / unassigned-form inventory (editors only — not linked from grammar) |
 | [grammar-gaps.md](grammar-gaps.md) | Missing English-helper jobs (thin lexicon vs large clause types — editors only; not linked from grammar) |
-| [proposals.md](proposals.md) | `docs/proposals/` layout; **do not link to** proposal pages (editors only — not linked from grammar) |
+| [proposals.md](procedures/proposals.md) | `docs/proposals/` layout; **do not link to** proposal pages (editors only — not linked from grammar) |
 | [site-redirects.md](site-redirects.md) | Public URL remaps (`coordination.html` → `joins.html`) and Amplify 404 (editors only — not linked from grammar) |
 
 Learner English names for constructions live on [terminology.md](../grammar/terminology.md) (Tools). Teaching pages use those names in place; they do **not** link to terminology entries (How to learn may point at the page).
@@ -185,8 +185,8 @@ A grammar file is one sitting. A heading may stay on the page only when it passe
 | 3 | **Title covers it** | The one-line job under the title is true of every H3, with no *and also*. An *and* in the title joins a choice set or opposites (*thanks and sorry*, *can and can't*), never two jobs | Retitle to the narrower job and peel the rest |
 | 4 | **Connected** | Each H3 after the first uses, extends, or is chosen against an earlier H3 on the page | An H3 that neither uses nor is used by the rest is its own job: peel it |
 | 5 | **Choice sets stay together** | Two forms a learner must pick between for the same English, in the same band, sit on the same page | Move the later one beside the earlier, or (across bands) give it one [Compare with](#compare-with) line |
-| 6 | **One setting** | One everyday [setting](drill-generation.md#settings) can host a natural checkpoint item for every H3 | The H3 that needs a different scene is usually a different job: retest 2–4 |
-| 7 | **Room** | At most **10** H3s ([sitting length](drill-generation.md#sitting-length)) | Split by job onto a sibling, each a full sitting |
+| 6 | **One setting** | One everyday [setting](procedures/drill-generation.md#settings) can host a natural checkpoint item for every H3 | The H3 that needs a different scene is usually a different job: retest 2–4 |
+| 7 | **Room** | At most **10** H3s ([sitting length](procedures/drill-generation.md#sitting-length)) | Split by job onto a sibling, each a full sitting |
 | 8 | **Teaches** | Every H3 homes a form, reading, or rule the learner uses now | Recap, unused-slot inventory, bounce, design notes, and applications do not stay: [empty stages](#empty-stages), [what belongs where](#what-belongs-where), [recipe track](#recipe-track) |
 
 **Lower bound.** A single-H3 sitting is fine when it passes 8 and earns its own checkpoint. Do not merge two sittings to fill a page; merge only when both are the same job on the same axis, the merge passes 1–8, and neither URL is a Beginner parent.
@@ -365,7 +365,7 @@ Usual sources (prefer one; reuse the language’s own systems):
 | Do | Don’t |
 |----|--------|
 | Minimal clause that shows *only* the new point | Kitchen-sink showcases in Beginner |
-| Everyday [example root bank](drill-generation.md#root-bank) verbs (*walk*, *sleep*, *see*) in **teach** lines | Using that same walk/sleep palette as the default **checkpoint** plot ([checkpoint setting](translation-exercises.md#checkpoint-setting) owns drills) |
+| Everyday [example root bank](procedures/drill-generation.md#root-bank) verbs (*walk*, *sleep*, *see*) in **teach** lines | Using that same walk/sleep palette as the default **checkpoint** plot ([checkpoint setting](translation-exercises.md#checkpoint-setting) owns drills) |
 | Published roots when the gloss matches; `PoS` + **`~`/`@`** + `<…>` for donor spelling | Invented “lexicon-shaped” stems, a closed overlay with its own frozen spelling, or split/hyphenated PoS tokens in learner text |
 | Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zuwen` / `zawan`) as dummy subjects |
 | Omit default **`yal`** when the page is not teaching the speech act | Leading every example with **`yal`** by habit |
@@ -432,7 +432,7 @@ Do **not** call `odoze` a citation. Overlay / need / linker / mood inventories u
 | Not a content root | Letters, IPA, role letters, vowel-series cells, ending / stance slots, number formulas, shape templates | `/z/`; **`a`**; **`xa`**; `…xal`; `g+e`; `+1xROOT`; “full root **`x`** full root” |
 | Inner piece of an **`x`** word | That piece has **no ending of its own**; a citation there invites a stranded inner suffix | Bank `uvuvu` only if the cell is the event after **`ax`**; prefer the whole word `zwuzuvuvul` |
 | Naming the constant while endings are the lesson | Prose may say “the same root `azozo`”; the **table** still lists citations | `azozol` / `azozom` / `azozon` in the ending table |
-| Editor matching keys | Lexicon CSVs, this page’s house-cast **Root** column, [example root bank](drill-generation.md#root-bank) token lists — not learner grammar tables | `data/lexicon-published.csv` stems |
+| Editor matching keys | Lexicon CSVs, this page’s house-cast **Root** column, [example root bank](procedures/drill-generation.md#root-bank) token lists — not learner grammar tables | `data/lexicon-published.csv` stems |
 | Language-name composition | Showing **`agebe`** + proper **-n** once, not as a vocab row | [introduction.md](../grammar/introduction.md) name gloss |
 
 Resume teaching may talk about a “whole stem” in running prose; the Ageben column is still `zazozor` / `zodozer`, not `azozo` / `odoze`.
@@ -545,7 +545,7 @@ Grammar cheat sheets live in `docs/grammar/cheat-sheets/`, one lookup page per l
 | Parser / CLI / site implementation notes | Code and `docs/meta/` — not titles, leads, or “house rules” on grammar pages |
 | Why a form or reading is deliberately absent | [design-decisions.md](design-decisions.md) |
 | Speculative features | [TODO.md](../../TODO.md) |
-| Short Eng ↔ Ageben checkpoint | End of a page stage — [translation-exercises.md](translation-exercises.md); generate via [drill-generation.md](drill-generation.md) |
+| Short Eng ↔ Ageben checkpoint | End of a page stage — [translation-exercises.md](translation-exercises.md); generate via [drill-generation.md](procedures/drill-generation.md) |
 | Multi-turn practice | [examples/](../examples/) (not linked from grammar pages) |
 | Editor pedagogy / migration notes | `docs/meta/` only — never from grammar pages |
 | Why this file breaks a house style rule | [HTML comment](#html-comments) beside that spot (VitePress does not show it) |

@@ -22,7 +22,7 @@ import { rewriteRepo } from "./lib/link-rewrite.ts";
 
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
 const readingOrderPath = join(grammarDir, ".vitepress", "lib", "reading-order.ts");
-const allowlistPath = join(REPO_ROOT, "docs", "meta", "drill-generation.md");
+const allowlistPath = join(REPO_ROOT, "docs", "meta", "procedures", "drill-generation.md");
 const hashPath = join(grammarDir, ".vitepress", "lib", "hash-redirect.ts");
 
 const LESSON_EXPORT: Record<Band, string> = {
@@ -106,7 +106,7 @@ function main(): void {
   console.log("Construction homes on retired band fragments:");
   for (const [from, to] of result.homeMap) console.log(`  ${from} → ${to}`);
   console.log("Update the AGENTS.md Owns line if a job left the parent.");
-  console.log(`Allowlist: add ${options.to} as **generate** (docs/meta/drill-generation.md); the build fails until it has a checkpoint or a **skip** reason.`);
+  console.log(`Allowlist: add ${options.to} as **generate** (docs/meta/procedures/drill-generation.md); the build fails until it has a checkpoint or a **skip** reason.`);
   console.log("Then: npm run cheat-sheet-blocks -- --write && npm run build");
 
   if (!options.write) {

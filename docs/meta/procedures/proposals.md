@@ -25,7 +25,7 @@ A proposal is a plan for a change that is too large or too undecided to make in 
 
 - Grammar decisions belong to the user. An agent that meets one while carrying out a proposal logs it under Open decisions, skips the item, and carries on with the rest.
 - Each logged open decision states the problem, lists the options, and ends with a **Recommendation:** the option the agent would pick and why, in a sentence or two, weighed by its effect on the learner. The user still decides; the recommendation saves a round of analysis. When the agent has no basis to choose, it says so and names what would settle it.
-- A settled reading goes on its grammar page. A rejection with a reason beyond *no reading yet* also gets an entry in [design-decisions.md](design-decisions.md).
+- A settled reading goes on its grammar page. A rejection with a reason beyond *no reading yet* also gets an entry in [design-decisions.md](../design-decisions.md).
 
 ### Stop and alert
 <a id="stop-and-alert"></a>
@@ -61,7 +61,7 @@ Subagents cost tokens, and most of the cost is context carried from turn to turn
 ## Where the tokens go
 
 - **Every turn re-sends the whole context.** A subagent's earlier turns are a cached prefix, billed at a discount while the cache is warm, but they are still sent again on every turn. So a subagent's input grows with the square of its turn count: each turn costs its current context, and the context grows each turn. Rough arithmetic: one 80-turn subagent that grows from 30k to 180k tokens averages about 105k a turn, about 8M input in all. Four 20-turn subagents that each grow from 30k to 70k average about 50k a turn, about 1M each and 4M in all, for the same work.
-- **A cold start is paid in full, but once.** Each new subagent loads `AGENTS.md` and its brief before its first edit. That costs less than carrying a long context through dozens of later turns.
+- **A cold start is paid in full, but once.** Each new subagent loads `AGENTS.md`, its brief, and the [procedure](../agents-md.md#procedures) files its task names before its first edit. That costs less than carrying a long context through dozens of later turns.
 - **Bulk output is the biggest waste.** Raw build output, whole-page reads, and per-link hand edits each add thousands of tokens that every later turn pays for again. The tools below keep them out of the context.
 - **The orchestrator pays for everything it reads, every turn.** A diff it reads early is paid for again on every later turn.
 - **A fork copies the orchestrator's whole conversation.** By mid-run that is larger than a fresh brief.
@@ -94,7 +94,7 @@ Subagents cost tokens, and most of the cost is context carried from turn to turn
     - Read each report and `git diff --stat`, not whole diffs. Open a hunk only when a report flags it, a gate fails, or the stat shows a file outside the item's list.
     - Trim command output (`2>&1 | tail -30`).
     - Run `verify` once per unit, before the commit. Never repeat a green run: when the subagent's last act was a passing `verify` and nothing has changed since, commit on that result. Rerun only after the orchestrator's own edits (such as `AGENTS.md` Owns lines).
-11. **Ask for short, fixed-field reports**: what moved (with ids), files touched as a count, registry edits, `AGENTS.md` Owns lines to change, the `verify` line, skips with reasons, **left:** the steps not done when the subagent stopped at its turn cap, and **inefficient:** anything about the run that looked wasteful ([AGENTS.md](../../AGENTS.md), end of run).
+11. **Ask for short, fixed-field reports**: what moved (with ids), files touched as a count, registry edits, `AGENTS.md` Owns lines to change, the `verify` line, skips with reasons, **left:** the steps not done when the subagent stopped at its turn cap, and **inefficient:** anything about the run that looked wasteful ([AGENTS.md](../../../AGENTS.md), end of run).
 12. **Pay for a fresh context where it buys something**: a new set of pages, an independent audit, or a rule about what a writer may have read. Scope an audit to what the proposal changed, plus close neighbors.
 13. **Send failures back to the owner.** When a gate fails, send it to the subagent that made the change, if it is still under the turn and token limits in step 1. Otherwise start a fresh subagent with the item, the failing `verify` lines, and the diff stat.
 14. **Keep one writer for `AGENTS.md`.** Subagents report the Owns-line changes; the orchestrator applies them at the end.

@@ -3,7 +3,7 @@
  * (docs/meta/translation-exercises.md#template), plus the section-shape findings:
  * known H4s in template order, both translation directions, items numbered from 1 under
  * each H4, item counts scaled by band and taught-section count *S*
- * (docs/meta/drill-generation.md#execute), and a spoiler on every item.
+ * (docs/meta/procedures/drill-generation.md#execute), and a spoiler on every item.
  * A level review ([level-review.ts](level-review.ts)) has its own counts, so `review` skips them.
  */
 import { SPEECH_MARK } from "./number-speech-docs.js";
@@ -28,7 +28,7 @@ export type ItemLimits = {
 };
 
 /**
- * Item caps for a converted checkpoint (docs/meta/drill-generation.md#execute).
+ * Item caps for a converted checkpoint (docs/meta/procedures/drill-generation.md#execute).
  * *S* is the number of `###` headings in the band above the checkpoint, not counting Practice.
  * Beginner / Intermediate stay at 3–6 / 2–3 until *S* is large; Advanced uses a tighter floor.
  */

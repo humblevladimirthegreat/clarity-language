@@ -2,7 +2,7 @@
 
 <!-- retie: skip -->
 
-Editors only. What a lexicon retie still leaves to a person, and how to find each case. The procedure itself is in [lexicon editing § respelling a row](lexicon.md#respelling-a-row) and `AGENTS.md`; this page lists its limits.
+Editors only. What a lexicon retie still leaves to a person, and how to find each case. The procedure itself is in [lexicon editing § respelling a row](lexicon.md#respelling-a-row); this page lists its limits.
 
 The root-tails retie (2026-10-20: 1345 respelled roots, 17 of them closed roots) wrote without `--force`: 0 blocking, 1 warning (a proposal's coined form), 7 review items. Every build check on the docs and `grammar-check` passed afterwards; 17 tests failed, all of the kinds under [tests](#tests). IPA lines, syllable hints and words inside multi-sentence cites were fixed by hand; the retie now does all three ([docs](#docs)).
 
@@ -19,8 +19,8 @@ The root-tails retie (2026-10-20: 1345 respelled roots, 17 of them closed roots)
 The name is the 👓 root + **-n**. `retie-docs` never respells it: not `ageben`, not *Ageben*, not the `ageben` fence tag, `lint:ageben`, file names or URLs. When 👓 moves, the dry run prints `language name 👓 old → new`. Then run **`npm run rename-language`** (dry run), then **`npm run rename-language -- --write`**, in the same change as the retie: `introduction.md` names the root beside the name, so until then it shows the new root beside the old name. The script reads the old name from the `package.json` name and the new one from 👓 + **-n** (`--from` / `--to` override), and:
 
 - Respells the name in every tracked text file in its own casing (`Ageben`, `ageben`, `AGEBEN`): English prose, headings, word-bank headers (`| English | Ageben | Cue |`), the fence info string, lint kinds (`ageben-in-text-fence`), identifiers, the package name. Any other casing is listed for review.
-- Respells the old root only in [language-name.md](language-name.md); elsewhere that spelling may now be another row's root.
-- Moves every tracked path that carries the name **except published grammar pages** (Markdown under `docs/grammar/` outside `.vitepress/`). Those slugs stay name-stable (`purpose.md`, `claritish/learn.md`, `cheat-sheets/to-english.md`); a grammar page whose path still carries the name is a block. Other paths (`lint-ageben-docs.ts`, `AgebenInspect.vue`) still move. Adds a `pageMoves` row to `scripts/site-redirects.json` for each moved grammar page, retargeting older rows so redirects never chain (`from` URLs and existing notes stay as written). Paste the new Amplify JSON afterward ([site redirects](site-redirects.md)).
+- Respells the old root only in [language-name.md](../language-name.md); elsewhere that spelling may now be another row's root.
+- Moves every tracked path that carries the name **except published grammar pages** (Markdown under `docs/grammar/` outside `.vitepress/`). Those slugs stay name-stable (`purpose.md`, `claritish/learn.md`, `cheat-sheets/to-english.md`); a grammar page whose path still carries the name is a block. Other paths (`lint-ageben-docs.ts`, `AgebenInspect.vue`) still move. Adds a `pageMoves` row to `scripts/site-redirects.json` for each moved grammar page, retargeting older rows so redirects never chain (`from` URLs and existing notes stay as written). Paste the new Amplify JSON afterward ([site redirects](../site-redirects.md)).
 - Refuses `--write` on a dirty tree, or when the new name already occurs, unless `--force`. After the rename, `npm run rename-language -- --from <old> --force` catches stragglers (edits merged later).
 
 ## Pages the retie skips {#skipped}
@@ -30,13 +30,13 @@ These keep their spellings on purpose and go stale after every retie. Never copy
 | Page | Why |
 |------|-----|
 | `docs/proposals/rejected/` | a past design, spelled as it was |
-| [parser-pipeline.md](parser-pipeline.md) | tooling notes; its Ageben only illustrates a CLI call |
+| [parser-pipeline.md](../parser-pipeline.md) | tooling notes; its Ageben only illustrates a CLI call |
 | this page | its examples name old and new spellings |
 | `TODO.md` | planning notes (never retied) |
-| [cool-features.md](cool-features.md) | a record of posts as they were made |
-| [syntax-test-results.md](syntax-test-results.md) | a dated log of test runs, spelled as they ran |
+| [cool-features.md](../cool-features.md) | a record of posts as they were made |
+| [syntax-test-results.md](../syntax-test-results.md) | a dated log of test runs, spelled as they ran |
 
-A page opts out with `<!-- retie: skip -->` on a line of its own ([retie-safe writing](grammar-docs.md#retie-safe-writing)). Active proposals are retied.
+A page opts out with `<!-- retie: skip -->` on a line of its own ([retie-safe writing](../grammar-docs.md#retie-safe-writing)). Active proposals are retied.
 
 ## Docs: what to read after `--write` {#docs}
 

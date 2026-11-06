@@ -1,6 +1,6 @@
 /**
  * Line counts per grammar page: total, teaching body, Practice, See also, and
- * taught H3 count *S* (docs/meta/drill-generation.md).
+ * taught H3 count *S* (docs/meta/procedures/drill-generation.md).
  */
 import { grammarHeadings, type Heading } from "./grammar-anchors.js";
 import { pageBand, type Band } from "./learning-order.js";

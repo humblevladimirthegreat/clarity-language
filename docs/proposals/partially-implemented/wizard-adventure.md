@@ -144,7 +144,7 @@ By the end of the Beginner band nearly every generated line passes the gate, so 
 
 ### Objects from root tails {#objects-from-root-tails}
 
-Every published root records a `kind`, `shape` and `size` ([root tails](../../meta/lexicon.md#root-tails)), and its spelling encodes them. The engine reads the columns (not the spelling, since size is only a placement preference) and gives every object default behavior:
+Every published root records a `kind`, `shape` and `size` ([root tails](../../meta/procedures/lexicon.md#root-tails)), and its spelling encodes them. The engine reads the columns (not the spelling, since size is only a placement preference) and gives every object default behavior:
 
 | Column | Values | Game default |
 |--------|--------|--------------|
@@ -192,7 +192,7 @@ The engine must decide *which* dog a noun means. Start simple: the only visible 
 
 ### Spellbook
 
-The spellbook is the vocabulary list and, from the first area on, the progression (the sandbox opens every page). Words are learned mostly by hearing them in use; scrolls and characters' teaching unlock roots (in `core` order, [core vocabulary](../../meta/lexicon.md#core-vocabulary-column)) or a grammar feature. Each root's page shows its emoji, concrete and abstract senses, and mnemonic from [`lexicon-published.csv`](../../../data/lexicon-published.csv), plus the player's own repetition history. Inscriptions and overheard speech may carry the scene's one new root, so the player can guess its meaning from context before it is confirmed.
+The spellbook is the vocabulary list and, from the first area on, the progression (the sandbox opens every page). Words are learned mostly by hearing them in use; scrolls and characters' teaching unlock roots (in `core` order, [core vocabulary](../../meta/procedures/lexicon.md#core-vocabulary-column)) or a grammar feature. Each root's page shows its emoji, concrete and abstract senses, and mnemonic from [`lexicon-published.csv`](../../../data/lexicon-published.csv), plus the player's own repetition history. Inscriptions and overheard speech may carry the scene's one new root, so the player can guess its meaning from context before it is confirmed.
 
 A long construction the player has used correctly once (a trap, a lasting enchantment) becomes a **mastered spell** they can recall by name. Advanced grammar is rewarded without forcing the player to type it out every time.
 
@@ -220,7 +220,7 @@ The grammar docs and lexicon stay the only source for what the game teaches. Whe
 |-----------|--------|
 | Area order | [`learning-order.ts`](../../../src/lint/learning-order.ts): global section order from the sidebar and stage headings |
 | Grammar a sentence uses | The construction registry ([`constructions.ts`](../../../src/parse/constructions.ts)) maps every parser production to the section that teaches it |
-| When each root is introduced | The `core` column ([core vocabulary](../../meta/lexicon.md#core-vocabulary-column), [`core-vocabulary.ts`](../../../src/core-vocabulary.ts)) |
+| When each root is introduced | The `core` column ([core vocabulary](../../meta/procedures/lexicon.md#core-vocabulary-column), [`core-vocabulary.ts`](../../../src/core-vocabulary.ts)) |
 | Object defaults | The `kind` / `shape` / `size` tail columns |
 | Sentences with English | The doc example index ([`llm-examples.ts`](../../../src/parse/llm-examples.ts)) |
 | Spelling from meaning | Gloss → Ageben round trip ([`gloss-inverse.ts`](../../../src/parse/gloss-inverse.ts), [glosses](../../meta/glosses.md#round-trip)) |
@@ -277,7 +277,7 @@ The sandbox keeps a **turn log** the player can export: each line typed, its par
 
 The game lives on the grammar site, as an entry in the **Tools** sidebar group of [`config.ts`](../../grammar/.vitepress/config.ts) beside Lexicon and Inspect, at its own route. It stays out of the top nav until it ships.
 
-Once it ships, it is linked from the Tools sidebar and from one line on [How to learn](../../grammar/introduction.md#how-to-learn), the same exception the terminology page has. Stage pages and level reviews never link to it, as with the recipe track. While it is a proposal, nothing links to it ([proposals](../../meta/proposals.md)).
+Once it ships, it is linked from the Tools sidebar and from one line on [How to learn](../../grammar/introduction.md#how-to-learn), the same exception the terminology page has. Stage pages and level reviews never link to it, as with the recipe track. While it is a proposal, nothing links to it ([proposals](../../meta/procedures/proposals.md)).
 
 ### Milestone 1 as built {#milestone-1}
 

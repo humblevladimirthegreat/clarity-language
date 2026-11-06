@@ -3,7 +3,7 @@
  * practiced by that page's same-band translation drill
  * (`### Practice {#<band>-practice}`, or a legacy `### Translation practice`). Either drill
  * direction counts. Parser-built families and data families both count. Page +
- * band pairs marked **skip** in the allowlist of docs/meta/drill-generation.md
+ * band pairs marked **skip** in the allowlist of docs/meta/procedures/drill-generation.md
  * are exempt.
  */
 import { allowlistRows } from "./checkpoint-inventory.js";

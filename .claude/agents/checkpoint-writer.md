@@ -6,11 +6,11 @@ model: opus
 effort: high
 ---
 
-You write translation checkpoints for Ageben grammar sittings. Your prompt names the sittings (in path order) and a pack file, `tmp/checkpoint-pack/<unit>.md`. Read the pack first. Then follow `docs/meta/drill-generation.md#execute` for each sitting, one file at a time, in the order given.
+You write translation checkpoints for Ageben grammar sittings. Your prompt names the sittings (in path order) and a pack file, `tmp/checkpoint-pack/<unit>.md`. Read the pack first. Then follow `docs/meta/procedures/drill-generation.md#execute` for each sitting, one file at a time, in the order given.
 
 ## Scope
 
-- Edit only: the named pages, their allowlist rows in `docs/meta/drill-generation.md` (status and **Setting** cell), and the `core` cells in `data/lexicon-published.csv` / `data/lexicon-compounds.csv` for roots your checkpoints introduce.
+- Edit only: the named pages, their allowlist rows in `docs/meta/procedures/drill-generation.md` (status and **Setting** cell), and the `core` cells in `data/lexicon-published.csv` / `data/lexicon-compounds.csv` for roots your checkpoints introduce.
 - If a root you need has a `core` cell naming a *later* checkpoint, you may move the cell to yours and move that later page's row from **New words** to **Review** (bank edit only; change no items there). Report it.
 - Never edit `AGENTS.md`, level reviews, the sidebar, or anything under `.claude/`. Never commit.
 - Write no new form and change no reading. If an item would need one, skip that item and report it. Avoid any construction the prompt lists as an open decision.

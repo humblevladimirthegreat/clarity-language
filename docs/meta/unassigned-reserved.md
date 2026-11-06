@@ -19,7 +19,7 @@ Grammar docs under `docs/grammar/` teach **defined** readings only. A spelling t
 | Close a cell for a reason | Add the reason to [design-decisions.md](design-decisions.md); mark the entry **closed** with the D-id |
 | Reopen a **closed** cell | Retire or narrow the D-row first |
 | Defer a speculative feature | [TODO.md](../../TODO.md) |
-| Parser / drill guard | [drill-generation.md](drill-generation.md): do not drill cells listed here |
+| Parser / drill guard | [drill-generation.md](procedures/drill-generation.md): do not drill cells listed here |
 
 Number cells are **open** unless marked **closed**. Most extend advanced forms, and no learner job has asked for them.
 
@@ -356,5 +356,5 @@ Source: [phonology.md](/phonology)
 |------|------|
 | [design-decisions.md](design-decisions.md) | Why a cell is closed; rejected alternatives |
 | [grammar-docs.md](grammar-docs.md) | Grammar prose: unused slots do not earn a stage |
-| [drill-generation.md](drill-generation.md) | Do not drill cells listed here |
+| [drill-generation.md](procedures/drill-generation.md) | Do not drill cells listed here |
 | [TODO.md](../../TODO.md) | Speculative features, open lexicon |

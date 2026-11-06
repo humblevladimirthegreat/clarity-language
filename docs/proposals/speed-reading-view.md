@@ -46,7 +46,7 @@ Muting grammar words (hooks, linkers, subordinators) against content roots. It i
 
 ## Lexicon impact
 
-Only roots likely to be a topic need a picture. Those are mostly concrete nouns and the roots used for names. A root with no picture (an abstract word like *wait* or *enough*) still works here, because it falls back to text. So this view does not need every published row to have an emoji. The `emoji` column can become optional without losing anything this view needs. That change is a lexicon policy decision ([lexicon editing](../meta/lexicon.md)), separate from this proposal.
+Only roots likely to be a topic need a picture. Those are mostly concrete nouns and the roots used for names. A root with no picture (an abstract word like *wait* or *enough*) still works here, because it falls back to text. So this view does not need every published row to have an emoji. The `emoji` column can become optional without losing anything this view needs. That change is a lexicon policy decision ([lexicon editing](../meta/procedures/lexicon.md)), separate from this proposal.
 
 ## Data source
 

@@ -1,7 +1,7 @@
 phenomenon	stage	english
 # Wild set for scripts/english-helper-recall.ts: plain English with no reference Ageben, drafted from the
 # phenomenon list alone, never from cue rows. Never copy these into cue rows or examples; grow it only
-# through the triage loop (docs/meta/english-helper.md).
+# through the triage loop (docs/meta/procedures/english-helper.md).
 pronouns	beginner	I am tired.
 pronouns	beginner	She likes him.
 pronouns	beginner	We eat together.

@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * The paid model eval of the English helper's quality loop ([english-helper.md](../docs/meta/english-helper.md#model-eval-paid)):
+ * The paid model eval of the English helper's quality loop ([english-helper.md](../docs/meta/procedures/english-helper.md#model-eval-paid)):
  * the model eval. For each sampled English → Ageben checkpoint item, build the helper's
  * `--llm-prompt` with the item's own answers held out of the examples, have a small model write
  * the Ageben, check the draft for free (exact match with an accepted answer, parse, unknown

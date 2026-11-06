@@ -1,6 +1,6 @@
 # Lexicon editing
 
-Editors only. How root spellings are made and changed in the lexicon CSVs. What each CSV owns is in the `AGENTS.md` routing table; overlay kinds are in [parser pipeline](parser-pipeline.md#overlay-kinds).
+Editors only. How root spellings are made and changed in the lexicon CSVs. What each CSV owns is in the `AGENTS.md` routing table; overlay kinds are in [parser pipeline](../parser-pipeline.md#overlay-kinds).
 
 ## Root spellings come from `convert-word`
 
@@ -18,7 +18,7 @@ A hand-picked spelling bypasses the checks that placement runs. Placement:
 
 - keeps a row's root length, and gives a new row three letters only when it is overlay-backed ([root length](#root-length))
 - builds a root's last two letters from the row's `kind` and `shape` ([root tails](#root-tails)); a five-letter root's first three letters keep same-kind roots apart ([onset](#onset)), and a three-letter root's first vowel is chosen so overlay-group members never share their first two letters ([root length](#root-length)). `--all` keeps that first vowel and only rewrites the last.
-- skips roots already held by other rows and stems used in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv), and any root that would give a listed or hook compound a second split ([seams](#seams)). A new three-letter root also clears the holder check against the five-letter roots that stay put; five-letter rows placed in the same run are checked against the new three-letter spellings.
+- skips roots already held by other rows and stems used in [`lexicon-compounds.csv`](../../../data/lexicon-compounds.csv), and any root that would give a listed or hook compound a second split ([seams](#seams)). A new three-letter root also clears the holder check against the five-letter roots that stay put; five-letter rows placed in the same run are checked against the new three-letter spellings.
 - never spells a root with an English word the doc lint reads as English in code (*are*), since the retie refuses one
 - rewrites the overlay and compound rows that spell the old root, and writes `tmp/lexicon-retie-map.json` for `retie-docs`
 - prints the root-tails report (`npm run convert-word -- --report` prints it alone)
@@ -27,7 +27,7 @@ A hand-picked spelling bypasses the checks that placement runs. Placement:
 
 ## Seeds: concrete senses and pictographs
 
-Every published row needs a **concrete** sense: a thing you can picture, from which the abstract sense is reached. The `emoji` column holds the row's **seed** pictograph, which is optional. A row may have none, but overlays name their host row by its seed, and [`src/closed-roots.ts`](../../src/closed-roots.ts) names rows by seed too. So a row without a seed cannot host an overlay or be a closed root until that tooling keys rows another way.
+Every published row needs a **concrete** sense: a thing you can picture, from which the abstract sense is reached. The `emoji` column holds the row's **seed** pictograph, which is optional. A row may have none, but overlays name their host row by its seed, and [`src/closed-roots.ts`](../../../src/closed-roots.ts) names rows by seed too. So a row without a seed cannot host an overlay or be a closed root until that tooling keys rows another way.
 
 Prefer an emoji seed, and prefer emoji-seeded roots as the head and left root of a compound. When a needed concrete sense has no free seed and no existing row can take it as an alias without strain, add a row with a non-emoji pictograph seed or, failing that, no seed (*oven*, *vinegar*, *whistle*). Seedless rows go at the end of the CSV, after the non-emoji seeds, and tooling names them by their concrete label.
 
@@ -52,7 +52,7 @@ Never a seed:
 
 ### Labels and senses
 
-- **Concrete label:** the English word people use for the thing, not the Unicode name (*cupid*, not *heart with arrow*; *villain*, not *angry face with horns*). Flag rows follow [flag rows](#flag-rows). `convert-word` needs a CMU pronunciation for the label. Add a missing one to `CMU_OVERRIDES` in [`src/cmu-dict.ts`](../../src/cmu-dict.ts) rather than bending the label.
+- **Concrete label:** the English word people use for the thing, not the Unicode name (*cupid*, not *heart with arrow*; *villain*, not *angry face with horns*). Flag rows follow [flag rows](#flag-rows). `convert-word` needs a CMU pronunciation for the label. Add a missing one to `CMU_OVERRIDES` in [`src/cmu-dict.ts`](../../../src/cmu-dict.ts) rather than bending the label.
 - **Multiword labels and glosses:** join the words with hyphens, never spaces: *gas-pump*, *black-pepper*, *wedding-dress*. This holds for concrete labels, compound glosses and aliases alike.
 - **Units:** a unit (*mile*, *foot*, *pound*), imperial ones included, is an abstract sense on an existing root (*mile* on `unoba`), not a new row.
 - **Kin pairs:** a gendered kin pair (*mother* / *father*) is allowed, unlike gendered profession variants.
@@ -69,7 +69,7 @@ Rows follow Unicode emoji order (the `emoji-test.txt` / CLDR order), with 👓 p
 
 ## Flag rows
 
-A row whose emoji is a country or territory flag labels its concrete sense `<place>-flag` (`japan-flag`): **-l** is the flag, **-n** names the place, and the abstract is the demonym ([countries and traditions](/proper-names#countries-traditions)). Placement ignores the `-flag` suffix when it looks up the pronunciation, so a root is spelled from the place name. Use `stripFlagSuffix` from [`src/flag-label.ts`](../../src/flag-label.ts) rather than matching the suffix by hand.
+A row whose emoji is a country or territory flag labels its concrete sense `<place>-flag` (`japan-flag`): **-l** is the flag, **-n** names the place, and the abstract is the demonym ([countries and traditions](/proper-names#countries-traditions)). Placement ignores the `-flag` suffix when it looks up the pronunciation, so a root is spelled from the place name. Use `stripFlagSuffix` from [`src/flag-label.ts`](../../../src/flag-label.ts) rather than matching the suffix by hand.
 
 Tradition and religion rows follow the same split (**-n** the tradition, **-m** an adherent or quality, **-l** the symbol), so each needs an abstract column that names the adherent.
 
@@ -90,7 +90,7 @@ A placed row keeps its length. So a row that gains its first overlay keeps its f
 
 A root ends in a **tail**: its last consonant names the **kind** of thing its concrete sense is, and its final vowel the thing's **job**. A five-letter root is `V C V | C V`; a three-letter root is `V | C V`. The learner-facing letter map, with each letter's anchor in the grammar, is in [compounds.md § root tails](/root-tails#root-tails).
 
-The `kind` and `shape` columns of [`lexicon-published.csv`](../../data/lexicon-published.csv) record the call for each three- or five-letter row, as a word (`creature`, `takes-away`), never as a letter; the letter map lives once in [`src/root-tails.ts`](../../src/root-tails.ts). `shape` is empty on a `named` row, whose final vowel is free. The `size` column steers a five-letter row's middle vowel ([size](#size)) and stays empty on a three-letter row. `npm test` fails on a row with no kind or shape, a missing or misplaced size, or a root that doesn't end in its tail. **Changing a row's kind, shape or size is a respelling:** rerun `convert-word --lexicon --only` on it, then the retie.
+The `kind` and `shape` columns of [`lexicon-published.csv`](../../../data/lexicon-published.csv) record the call for each three- or five-letter row, as a word (`creature`, `takes-away`), never as a letter; the letter map lives once in [`src/root-tails.ts`](../../../src/root-tails.ts). `shape` is empty on a `named` row, whose final vowel is free. The `size` column steers a five-letter row's middle vowel ([size](#size)) and stays empty on a three-letter row. `npm test` fails on a row with no kind or shape, a missing or misplaced size, or a root that doesn't end in its tail. **Changing a row's kind, shape or size is a respelling:** rerun `convert-word --lexicon --only` on it, then the retie.
 
 ### Kind {#kind}
 
@@ -139,13 +139,24 @@ Hook compounds are not a seam: only a five-letter root fuses with a hook (D-50),
 
 ## Respelling a row
 
-After `convert-word`, run the retie procedure in `AGENTS.md` (`retie-docs` dry run, then `--write`, then build and test). A retie changes the spelling of the same sense everywhere, and code never spells a root as a string literal; use [`src/closed-roots.ts`](../../src/closed-roots.ts). What the retie still leaves to a person (the language name, skipped pages, tests it cannot follow): [retie known issues](retie.md).
+A retie changes the spelling of the same sense everywhere. Never bulk-replace old roots across Markdown, and code never spells a root as a string literal; use [`src/closed-roots.ts`](../../../src/closed-roots.ts).
+
+1. `npm run convert-word -- --lexicon --only LITERAL` (matching rows only) or `--all` (the whole lexicon); `--lexicon` requires one of them.
+2. `npm run retie-docs` (dry run). When it prints `language name 👓 old → new`, also run `npm run rename-language` (dry run), then `-- --write`, in the same change.
+3. Commit, then `npm run retie-docs -- --write`, then commit again, so the rewrite's diff stands alone ([fence automated rewrites](proposals.md#fence-automated-rewrites)).
+4. `npm run build` and `npm test`, and read the review list and warnings.
+
+What the retie still leaves to a person (the language name, skipped pages, tests it cannot follow): [retie known issues](retie.md). Writing rules that keep pages retie-safe: [retie-safe writing](../grammar-docs.md#retie-safe-writing).
+
+## Number pegs {#number-pegs}
+
+Run **`node scripts/pegs.mjs '<digits>'`** for the roots whose consonants spell each chunk, or `'<ageben>'` for the digits a word spells; `--check` lists any empty 0–9 / 00–99 cell. The method is taught on [pegs.md](../../grammar/pegs.md); `npm test` fails if a respelling empties a cell, so check it after any respelling.
 
 ## Moving an overlay to another row
 
 Moving a sense (an overlay) from one published row to another is a **replacement**, not a retie. `retie-docs` follows a row's own respelling, so it never moves forms from the old row's root to the new one.
 
-1. In [`lexicon-overlays.csv`](../../data/lexicon-overlays.csv), change each moved row's `emoji` to the target row and its `sense_form` to spell the target row's **current** root. Update `gloss`, `definition` and `mnemonic` to match.
+1. In [`lexicon-overlays.csv`](../../../data/lexicon-overlays.csv), change each moved row's `emoji` to the target row and its `sense_form` to spell the target row's **current** root. Update `gloss`, `definition` and `mnemonic` to match.
 2. Run `npm run convert-word -- --lexicon --only <target>`. If the target now needs a three-letter root, this respells it and rewrites the overlay `sense_form`s to match.
 3. Run `retie-docs` for the target's respelling, as for any respelling.
 4. By hand, replace every doc use of the **old** root in the moved sense with the new root, and fix the morph glosses and English wording. Leave uses of the old row's ordinary sense alone. Check with `node scripts/find.mjs` or grep for the old sense forms.
@@ -153,7 +164,7 @@ Moving a sense (an overlay) from one published row to another is a **replacement
 
 ## Dictionary compounds
 
-A row in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv) is one stem: **left root + boundary letter + head root** ([dictionary compounds](/compounds#dictionary-compounds)). The `join` column is the boundary letter, and it picks the sense of the **left** root only: **-l** when its concrete sense narrows the head (*door* **-l** *bell* = *doorbell*), **-m** when its abstract sense does (*formality* **-m** *shoe* = *dress shoe*), **-n** / **-r** for a name or a resume. The whole-word ending added at use picks the sense of the entry: **-l** reads the row's `concrete`, **-m** its `abstract`. Fill `abstract` only when the head's abstract sense really carries over (*bedroom* **-m** = *sanctum*), never because the left root has one.
+A row in [`lexicon-compounds.csv`](../../../data/lexicon-compounds.csv) is one stem: **left root + boundary letter + head root** ([dictionary compounds](/compounds#dictionary-compounds)). The `join` column is the boundary letter, and it picks the sense of the **left** root only: **-l** when its concrete sense narrows the head (*door* **-l** *bell* = *doorbell*), **-m** when its abstract sense does (*formality* **-m** *shoe* = *dress shoe*), **-n** / **-r** for a name or a resume. The whole-word ending added at use picks the sense of the entry: **-l** reads the row's `concrete`, **-m** its `abstract`. Fill `abstract` only when the head's abstract sense really carries over (*bedroom* **-m** = *sanctum*), never because the left root has one.
 
 A **tail-suffix** row has an empty `join` and a two-letter `right`: a five-letter left root + a kind consonant + a job vowel ([tail suffixes](/root-tails#tail-suffixes)). The consonant is one of `z y b v h d w g n`, never `l` / `m` (a five-letter root + `lV` / `mV` + **-l** / **-m** spells a hook compound) or `r` (counting wants a specific head). The vowel follows the same job rules and tie order as a root's [shape](#shape). Use a suffix when the head **is** the kind (*friend* = *hug* + person `ye`); when the head is a more specific kind than its tail, list two full roots (*doorbell* ends in *bell*).
 
@@ -169,7 +180,7 @@ Add a row only when all of these hold:
 4. **The head is the most specific root that fits**, and the entry is a *kind of* the head's concrete.
 5. **The left root narrows the head in a way a learner can guess**, or the mnemonic makes the link easy to remember, never through an English pun ([no English puns](#no-english-puns)).
 
-Some English words stay out by design: kin terms are [kin generations](/generations#kin-generations), doers are [role compounds](/roles#role-compounds), and a tie between people is a [social relation](/social-ties#social-relations) unless English has a fixed noun for the person (*friend*). Young and sexed animals are the animal's root plus a `/ɡ/` adjective: `gohoyol` *young*, `geboyol` *newborn*, `guvugel` *female*, `gemugel` *male* ([young, male and female animals](../grammar/say-people-places.md#young-animals)). There are two exceptions. A seed that already pictures one stays a root (🐤 *chick*, 🐓 *rooster*). A young animal that looks like a different creature gets its own row (*caterpillar*, *tadpole*), because a learner can't picture it from *young* plus the adult animal. Why not compounds: [design decisions](design-decisions.md#young-and-sexed-animals).
+Some English words stay out by design: kin terms are [kin generations](/generations#kin-generations), doers are [role compounds](/roles#role-compounds), and a tie between people is a [social relation](/social-ties#social-relations) unless English has a fixed noun for the person (*friend*). Young and sexed animals are the animal's root plus a `/ɡ/` adjective: `gohoyol` *young*, `geboyol` *newborn*, `guvugel` *female*, `gemugel` *male* ([young, male and female animals](../../grammar/say-people-places.md#young-animals)). There are two exceptions. A seed that already pictures one stays a root (🐤 *chick*, 🐓 *rooster*). A young animal that looks like a different creature gets its own row (*caterpillar*, *tadpole*), because a learner can't picture it from *young* plus the adult animal. Why not compounds: [design decisions](../design-decisions.md#young-and-sexed-animals).
 
 ### Compound heads
 
@@ -193,10 +204,10 @@ When a needed head is missing, add it before writing its compounds, since moving
 
 ## Core vocabulary column
 
-The `core` column in [`lexicon-published.csv`](../../data/lexicon-published.csv) and [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv) names the stage checkpoint that introduces a core learner root, as `page.md#id` of its checkpoint heading: `### Practice` (`clause.md#beginner-practice`), or a legacy `### Translation practice` (`clause.md#beginner-translation-practice`). Replacing a legacy checkpoint retargets its cells by hand; `retie-docs` does not see a hand-renamed heading. An empty cell means the root is not core. The order of the core list is the path order of those checkpoints. House names, the `SELF` root, discourse-role specials, topic and generic pronouns, the nine [sake](/sakes#sake-inventory) roots, and closed overlay words are never core.
+The `core` column in [`lexicon-published.csv`](../../../data/lexicon-published.csv) and [`lexicon-compounds.csv`](../../../data/lexicon-compounds.csv) names the stage checkpoint that introduces a core learner root, as `page.md#id` of its checkpoint heading: `### Practice` (`clause.md#beginner-practice`), or a legacy `### Translation practice` (`clause.md#beginner-translation-practice`). Replacing a legacy checkpoint retargets its cells by hand; `retie-docs` does not see a hand-renamed heading. An empty cell means the root is not core. The order of the core list is the path order of those checkpoints. House names, the `SELF` root, discourse-role specials, topic and generic pronouns, the nine [sake](/sakes#sake-inventory) roots, and closed overlay words are never core.
 
 - `npm run core-vocabulary` prints, for each checkpoint, the roots it introduces and how many bank roots are review, and flags checkpoints over the cap of 5 new roots.
 - `npm run core-vocabulary -- --for <page>.md:<band>` (or `--for page.md#id`) lists, for one checkpoint, the roots whose cell names it, the next later core roots, and the earlier core roots ranked by checkpoints since a bank last used them (`--limit` sets how many).
-- `npm run core-vocabulary -- --look-alikes` lists core roots that differ only in the middle vowel and are introduced too close together, with fix options ([look-alikes](translation-exercises.md#look-alikes)).
+- `npm run core-vocabulary -- --look-alikes` lists core roots that differ only in the middle vowel and are introduced too close together, with fix options ([look-alikes](../translation-exercises.md#look-alikes)).
 - `npm run core-vocabulary -- --write` seeded the column once from the stage banks: each root got the first checkpoint whose **Roots used here** table uses it. After that the column is edited by hand, and `--write` refuses to overwrite it unless `--force` is passed.
 - `retie-docs` retargets `core` anchors when a heading id changes, as it does for overlay `anchor` cells. `npm test` fails when a `core` cell names no stage checkpoint.

@@ -431,7 +431,7 @@ async function main(): Promise<void> {
 
   if (oldLanguageRoot !== newLanguageRoot) {
     console.log(
-      `language name  👓 ${oldLanguageRoot} → ${newLanguageRoot}: ${[...keep].join(" / ")} left as is; run npm run rename-language (docs/meta/retie.md#language-name)`,
+      `language name  👓 ${oldLanguageRoot} → ${newLanguageRoot}: ${[...keep].join(" / ")} left as is; run npm run rename-language (docs/meta/procedures/retie.md#language-name)`,
     );
   }
 

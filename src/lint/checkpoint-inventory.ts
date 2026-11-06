@@ -1,5 +1,5 @@
 /**
- * Checkpoint inventory (docs/meta/drill-generation.md#allowlist and #settings): the allowlist
+ * Checkpoint inventory (docs/meta/procedures/drill-generation.md#allowlist and #settings): the allowlist
  * names every sidebar sitting once, by file, and says whether it has a checkpoint.
  *
  * - Every sitting has exactly one allowlist row, and every row names a sitting or an

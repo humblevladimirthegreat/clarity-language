@@ -4,7 +4,7 @@ Applies **only** to learner grammar pages under **`docs/grammar/`** (not to `met
 
 **Bands are milestones** (“what can you do when this group is done?”). **Dependency only places** sittings on the path. Assign a sitting with the [gates](#gates) — enough consistency for a cross-doc path, not a score for every morph.
 
-This page is pedagogy, not language design. Design authority stays in the `docs/grammar/` pages. Prose and example style for those pages: [grammar-docs.md](grammar-docs.md). Translation checkpoints at stage ends: [translation-exercises.md](translation-exercises.md). Generating missing checkpoints: [drill-generation.md](drill-generation.md).
+This page is pedagogy, not language design. Design authority stays in the `docs/grammar/` pages. Prose and example style for those pages: [grammar-docs.md](grammar-docs.md). Translation checkpoints at stage ends: [translation-exercises.md](translation-exercises.md). Generating missing checkpoints: [drill-generation.md](procedures/drill-generation.md).
 
 Grammar pages must not link here or mention `meta/` — editors use these gates privately.
 
@@ -91,7 +91,7 @@ Soft dependency (“easier after fluent X”) may swap two sittings that are alr
 
 - One sitting per file, marked with front matter `band: beginner | intermediate | advanced`. The sidebar groups sittings by band, and the files live on disk as `docs/grammar/{beginner,intermediate,advanced}/`. Public URLs stay flat (`/grammar/clause.html`). Peel a later band off a parent with `npm run peel-band`, or named H3s onto a job-named file with `npm run peel-headings`, rather than tagging several bands with H2s on a new page. Omit a later sitting when it would only recap or list unused slots ([empty or pointless stages](grammar-docs.md#empty-stages)).
 - Dispatch: whole-sitting `band:` flip (move the sidebar row and that sitting’s review item; do not demote a Beginner parent slug — peel instead); heading peel onto a job-named file; in-band cluster reorder of the three sidebar lists (no scoring, no solver).
-- Sibling splits by **job** when *S* > 10 still apply ([drill-generation](drill-generation.md#sitting-length)), and when a heading fails [what one sitting holds](grammar-docs.md#one-sitting); this split is by **sitting**. Later sittings of the same topic use a job title, not the topic name again.
+- Sibling splits by **job** when *S* > 10 still apply ([drill-generation](procedures/drill-generation.md#sitting-length)), and when a heading fails [what one sitting holds](grammar-docs.md#one-sitting); this split is by **sitting**. Later sittings of the same topic use a job title, not the topic name again.
 - Do **not** score every morph. For each sitting, run the [gates](#gates), pick a band, then place it with gate 4 and the [within-band order](#order-inside-a-band). Do not teach a new form while moving bands; do not refill a checkpoint except to drop a leak.
 - Stacked → later **in the same band**, unless it fails corpus or usable. Dense but freestanding stays Beginner when it is usable and first-corpus. Easy + not first-corpus is Intermediate, not Advanced.
 - When examples need a later home, first try **thinning examples** or **a smaller slice**, not a silent band shift.

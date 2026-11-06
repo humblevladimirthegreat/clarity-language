@@ -116,7 +116,7 @@ const grammarDir = join(REPO_ROOT, "docs", "grammar");
 const cheatSheetsDir = join(grammarDir, "cheat-sheets");
 const isSittingFile = (file: string) => relative(grammarDir, file).replaceAll("\\", "/") === pageRelPath(basename(file));
 const metaDir = join(REPO_ROOT, "docs", "meta");
-/** A record of past spellings (docs/meta/retie.md#skipped) keeps its old names. */
+/** A record of past spellings (docs/meta/procedures/retie.md#skipped) keeps its old names. */
 const RETIE_SKIP_RE = /^<!--\s*retie:\s*skip\s*-->\s*$/m;
 
 function parseCli(argv: string[]): { paths: string[]; orderReport: boolean } {
@@ -266,7 +266,7 @@ function reportLearningOrder(order: LearningOrder, uses: readonly ConstructionUs
  */
 function reportDrillCoverage(order: LearningOrder, uses: readonly ConstructionUse[]): number {
   const homes = constructionHomes(order, CONSTRUCTIONS);
-  const skips = drillSkips(readFileSync(join(REPO_ROOT, "docs", "meta", "drill-generation.md"), "utf8"));
+  const skips = drillSkips(readFileSync(join(REPO_ROOT, "docs", "meta", "procedures", "drill-generation.md"), "utf8"));
   const checked = uses.filter((u) => !u.section.ignored);
   const { missing, uncovered, covered } = drillCoverage(order, constructionFamilies(homes), checked, skips);
   console.log(
@@ -295,7 +295,7 @@ function reportDrillCoverage(order: LearningOrder, uses: readonly ConstructionUs
 }
 
 /**
- * Checkpoint inventory: the allowlist in docs/meta/drill-generation.md names every sitting by
+ * Checkpoint inventory: the allowlist in docs/meta/procedures/drill-generation.md names every sitting by
  * file with its status and setting, and settings are unique. Returns the number of findings.
  */
 function reportCheckpointInventory(orderPages: readonly string[]): number {
@@ -310,13 +310,13 @@ function reportCheckpointInventory(orderPages: readonly string[]): number {
     .filter((f) => /^say-.*\.md$/.test(f))
     .flatMap((f) => recipeBlocks(f, readFileSync(join(grammarDir, f), "utf8")));
   const findings = lintCheckpointInventory({
-    allowlist: readFileSync(join(metaDir, "drill-generation.md"), "utf8"),
+    allowlist: readFileSync(join(metaDir, "procedures", "drill-generation.md"), "utf8"),
     pages: sittings,
     orientation: orientationPages,
     recipes,
   });
   for (const f of findings) {
-    const where = f.line ? `docs/meta/${f.file}:${f.line}` : `docs/grammar/${pageRelPath(f.file)}`;
+    const where = f.line ? `docs/meta/procedures/${f.file}:${f.line}` : `docs/grammar/${pageRelPath(f.file)}`;
     console.error(`${where}  checkpoint-inventory  (${f.detail})`);
   }
   return findings.length;

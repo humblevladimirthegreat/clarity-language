@@ -61,7 +61,7 @@ writeFileSync(
 );
 
 // Allowlist rows and settings in use.
-const allowlist = readFileSync(join(ROOT, "docs", "meta", "drill-generation.md"), "utf8").split("\n");
+const allowlist = readFileSync(join(ROOT, "docs", "meta", "procedures", "drill-generation.md"), "utf8").split("\n");
 const rowFor = (page) => allowlist.find((l) => l.includes(`| \`${page}\` |`) && l.includes(`| ${band} |`)) ?? allowlist.find((l) => l.includes(`| \`${page}\` |`));
 const settings = new Set();
 function walk(dir) {

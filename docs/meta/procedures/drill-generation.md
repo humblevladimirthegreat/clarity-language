@@ -1,6 +1,6 @@
 # Generate translation drills
 
-Executable editor policy: add or replace end-of-stage checkpoints on learner grammar pages without using **morphology** the learner has not been taught. Checkpoint **content** roots follow the [core vocabulary](translation-exercises.md#core-vocabulary) and the [setting](translation-exercises.md#checkpoint-setting).
+Executable editor policy: add or replace end-of-stage checkpoints on learner grammar pages without using **morphology** the learner has not been taught. Checkpoint **content** roots follow the [core vocabulary](../translation-exercises.md#core-vocabulary) and the [setting](../translation-exercises.md#checkpoint-setting).
 
 **How to invoke.** Point here and name a grammar file (or one stage). No extra prompt is required:
 
@@ -8,7 +8,7 @@ Executable editor policy: add or replace end-of-stage checkpoints on learner gra
 - *… for `docs/grammar/questions.md` Intermediate.*
 - *… for core Beginner* (already exists — skip unless asked to replace).
 
-This page owns **path allowlist** (with each checkpoint's [setting](#settings)), **example root bank**, item counts, **generation procedure**, and the [level review](#level-review) procedure. Drill *shape* (spoiler template, decision items, bank, house names, [checkpoint setting](translation-exercises.md#checkpoint-setting)) stays in [translation-exercises.md](translation-exercises.md). Stages: [learning-levels.md](learning-levels.md#cross-doc-path). Example prose: [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link here.
+This page owns **path allowlist** (with each checkpoint's [setting](#settings)), **example root bank**, item counts, **generation procedure**, and the [level review](#level-review) procedure. Drill *shape* (spoiler template, decision items, bank, house names, [checkpoint setting](../translation-exercises.md#checkpoint-setting)) stays in [translation-exercises.md](../translation-exercises.md). Stages: [learning-levels.md](../learning-levels.md#cross-doc-path). Example prose: [grammar-docs.md](../grammar-docs.md). Grammar pages must **not** link here.
 
 ## Execute
 <a id="execute"></a>
@@ -23,10 +23,10 @@ Parse the user’s file/stage from their message. Accept `joins`, `joins.md`, `d
 |--------|--------|
 | One grammar file, no stage | Generate **every missing** checkpoint for that file (table below), **Beginner then Intermediate then Advanced** |
 | One file + one stage | Generate **only** that stage’s checkpoint |
-| Several files or “all pages” | Work through them in [path](learning-levels.md#cross-doc-path) order, one file at a time |
+| Several files or “all pages” | Work through them in [path](../learning-levels.md#cross-doc-path) order, one file at a time |
 | No file | List the [generate](#allowlist) files that still lack a checkpoint, and the drill-coverage findings from the lint. Stop |
-| Drill-coverage lint findings | Add 1–3 items to the existing checkpoint that use the named family; keep its setting and bank. On a [legacy](translation-exercises.md#legacy-checkpoints) checkpoint, add translation items in its existing format |
-| **Replace** a checkpoint | Convert it whole to the current [template](translation-exercises.md#template) (`### Practice`), following steps 3–6 |
+| Drill-coverage lint findings | Add 1–3 items to the existing checkpoint that use the named family; keep its setting and bank. On a [legacy](../translation-exercises.md#legacy-checkpoints) checkpoint, add translation items in its existing format |
+| **Replace** a checkpoint | Convert it whole to the current [template](../translation-exercises.md#template) (`### Practice`), following steps 3–6 |
 | A file whose [allowlist](#allowlist) rows are all **skip** | Say it is skipped and why. Stop |
 
 Edit **only** the target `docs/grammar/<file>.md` page(s), their allowlist row(s) (status and **Setting** cell, [settings](#settings)), the `core` cells of the lexicon CSVs for roots this checkpoint introduces, and links to a renamed checkpoint anchor. Do not edit other policy, other grammar pages, `AGENTS.md`, or other meta unless the user asked to change the policy.
@@ -46,9 +46,9 @@ Find the row(s) in the [allowlist](#allowlist).
 **Allowed**
 
 - This file (procedure, allowlist row and its [setting](#settings), example root bank, leak index)
-- [translation-exercises.md](translation-exercises.md) (principles, [checkpoint setting](translation-exercises.md#checkpoint-setting), template)
-- [grammar-docs.md](grammar-docs.md#house-cast) (house people)
-- [glosses.md](glosses.md#house-cast) (name glosses — not needed inside spoilers)
+- [translation-exercises.md](../translation-exercises.md) (principles, [checkpoint setting](../translation-exercises.md#checkpoint-setting), template)
+- [grammar-docs.md](../grammar-docs.md#house-cast) (house people)
+- [glosses.md](../glosses.md#house-cast) (name glosses — not needed inside spoilers)
 - **This sitting only** of the target file (`band:` on the file) plus the page title / **Needs:** line
 - Worked examples **inside that stage** (gold corpus for **morph** packaging, not for checkpoint verbs)
 - `data/lexicon-published.csv` (and overlays / compounds CSVs) to certify a setting English gloss has a published stem
@@ -68,7 +68,7 @@ Every **morph** (role letter, ending, closed special, join vowel, speech act, �
 
 Every **content** root (published lexicon or compound lemma, house names included) must be a row in this checkpoint’s **New words** or **Review**, and its English in the item must match that row. A root in this stage’s worked examples still needs a row. Overlay words need a row only when the drill English is that word.
 
-Count content roots against the [core vocabulary](translation-exercises.md#core-vocabulary): at most **5** whose `core` cell names this checkpoint (**New words**), at least **3** introduced earlier (**Review**). House names, `SELF`, specials, the nine sake roots, and overlay words do not count. Take new roots from the core list in order. To pull a later core root forward, or to bring in a root with an empty `core` cell, set its `core` cell to this checkpoint's anchor; it then counts as new. A core root that this checkpoint no longer uses but still names in `core` moves to the next checkpoint that uses it. A new root must also be at least 3 checkpoints of its level from any core root that differs from it only in the middle vowel ([look-alikes](translation-exercises.md#look-alikes)); `npm run core-vocabulary -- --look-alikes` suggests fixes. A swapped word must still make sense in each item, so rewrite any item it turns false or odd.
+Count content roots against the [core vocabulary](../translation-exercises.md#core-vocabulary): at most **5** whose `core` cell names this checkpoint (**New words**), at least **3** introduced earlier (**Review**). House names, `SELF`, specials, the nine sake roots, and overlay words do not count. Take new roots from the core list in order. To pull a later core root forward, or to bring in a root with an empty `core` cell, set its `core` cell to this checkpoint's anchor; it then counts as new. A core root that this checkpoint no longer uses but still names in `core` moves to the next checkpoint that uses it. A new root must also be at least 3 checkpoints of its level from any core root that differs from it only in the middle vowel ([look-alikes](../translation-exercises.md#look-alikes)); `npm run core-vocabulary -- --look-alikes` suggests fixes. A swapped word must still make sense in each item, so rewrite any item it turns false or odd.
 
 Every bank row must be used by at least one item. `build` checks both directions by root, not spelling: a row covers other roles, full-root resumes, role compounds, and viewpoint-lateral anchors on the same root, and a short resume counts through its antecedent.
 
@@ -78,7 +78,7 @@ If you cannot certify a token, drop the item. Do not guess from English. Do not 
 
 - Any **morph** whose [first-taught](#leak-index) checkpoint is **later** than this one
 - Same-slot **sibling** Introduces ([slots](#slots))
-- *I* / *you* (`zuwen` / `zawan`) before pronouns.md Beginner. From there on they are fine. Before it, *I* only as a greeting with the **`SELF`** name slot ([first person](grammar-docs.md#house-cast))
+- *I* / *you* (`zuwen` / `zawan`) before pronouns.md Beginner. From there on they are fine. Before it, *I* only as a greeting with the **`SELF`** name slot ([first person](../grammar-docs.md#house-cast))
 - Foreign `PoS<…>ENDING` unless this stage is teaching loans / spans
 - Intermediate / Advanced speech-act twins (`yam` / `yem` / `yom` / `yum`), **`gl-`**, sentence linkers, nested **`blarl`**, unless recycle includes **core Intermediate**
 
@@ -86,12 +86,12 @@ If you cannot certify a token, drop the item. Do not guess from English. Do not 
 
 Place **`### Practice {#<band>-practice}`** at the **end of the sitting**, immediately before `## See also` / end of file. Do not insert after every H3. Do not add a second checkpoint in the same sitting unless the allowlist row says **split**.
 
-Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Then the **New words** and **Review** tables ([vocab table](translation-exercises.md#vocab-table)): house names and `SELF` sit in New words on their first checkpoint and in Review after. House-person **English** is *Azozon* / *Alazun* / *Ahelan*, not `*grace* (name **Azozon**)`. Pick a setting **not already named** in a **Setting** cell ([settings](#settings), [unique globally](translation-exercises.md#checkpoint-setting)); write the same phrase into this page's allowlist row when you replace, and mark the row **exists**. At least half the items in each translation direction use a root or situation of the setting. Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill.
+Follow the [template](../translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Then the **New words** and **Review** tables ([vocab table](../translation-exercises.md#vocab-table)): house names and `SELF` sit in New words on their first checkpoint and in Review after. House-person **English** is *Azozon* / *Alazun* / *Ahelan*, not `*grace* (name **Azozon**)`. Pick a setting **not already named** in a **Setting** cell ([settings](#settings), [unique globally](../translation-exercises.md#checkpoint-setting)); write the same phrase into this page's allowlist row when you replace, and mark the row **exists**. At least half the items in each translation direction use a root or situation of the setting. Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill.
 
-*S* is the number of `###` headings in the band above the checkpoint, not counting Practice. Count every such heading, including a short recap, a Compare-with, and a section that only adds overlay or vocabulary rows. Do not count only sections that home a construction. Sitting length is headings: a new `###` is a new bite, whether it is a large table or a recap. The cap is **room**, not a target ([principle 6](translation-exercises.md#principles)): write only as many items as the band needs. Coverage already requires each family once; extra headings do not require extra items.
+*S* is the number of `###` headings in the band above the checkpoint, not counting Practice. Count every such heading, including a short recap, a Compare-with, and a section that only adds overlay or vocabulary rows. Do not count only sections that home a construction. Sitting length is headings: a new `###` is a new bite, whether it is a large table or a recap. The cap is **room**, not a target ([principle 6](../translation-exercises.md#principles)): write only as many items as the band needs. Coverage already requires each family once; extra headings do not require extra items.
 
 <a id="sitting-length"></a>
-A sitting past **10** taught sections is too long. Split that **job** onto a sibling grammar page, each a full sitting with its own checkpoint. One band per file (peel with `npm run peel-band`); sibling splits by job when *S* > 10 still apply. Do not add an allowlist **split** row (a second checkpoint on the same sitting) unless one page must stay together. Do not add an H3 to a sitting already at 10 without splitting first. Which headings may share a sitting at all: [what one sitting holds](grammar-docs.md#one-sitting). Count lines and each H3’s span with `npm run page-lines` (`--sittings`, `--headings`): headings are the split rule; line counts show whether a few long H3s are carrying the sitting.
+A sitting past **10** taught sections is too long. Split that **job** onto a sibling grammar page, each a full sitting with its own checkpoint. One band per file (peel with `npm run peel-band`); sibling splits by job when *S* > 10 still apply. Do not add an allowlist **split** row (a second checkpoint on the same sitting) unless one page must stay together. Do not add an H3 to a sitting already at 10 without splitting first. Which headings may share a sitting at all: [what one sitting holds](../grammar-docs.md#one-sitting). Count lines and each H3’s span with `npm run page-lines` (`--sittings`, `--headings`): headings are the split rule; line counts show whether a few long H3s are carrying the sitting.
 
 | Band kind | Per translation direction | Decision items |
 |-----------|---------------------------|----------------|
@@ -100,9 +100,9 @@ A sitting past **10** taught sections is too long. Split that **job** onto a sib
 
 Small and median bands stay at 3–6 / 2–3. Level reviews keep their own rule.
 
-Both directions. Spoilers = Ageben or **loose** free English plus a visible morph line in the spoiler ([translation-exercises.md](translation-exercises.md#template)). Add **Also correct:** where a learner is likely to write a legal variant. Omit recoverable **`yal`**. House names in English prompts (*Azozon waits*). Test the decision this stage taught; package it in the setting, not as a clone of the walk/sleep teach line ([principles](translation-exercises.md#principles)). Aim the [decision items](translation-exercises.md#item-types) at the stage's main decision. Every construction family taught in the band, parser-built or data, needs at least one item in this checkpoint (either direction), unless the allowlist row is **skip**.
+Both directions. Spoilers = Ageben or **loose** free English plus a visible morph line in the spoiler ([translation-exercises.md](../translation-exercises.md#template)). Add **Also correct:** where a learner is likely to write a legal variant. Omit recoverable **`yal`**. House names in English prompts (*Azozon waits*). Test the decision this stage taught; package it in the setting, not as a clone of the walk/sleep teach line ([principles](../translation-exercises.md#principles)). Aim the [decision items](../translation-exercises.md#item-types) at the stage's main decision. Every construction family taught in the band, parser-built or data, needs at least one item in this checkpoint (either direction), unless the allowlist row is **skip**.
 
-When replacing a legacy checkpoint, retarget its `core` cells and any links to `#<band>-translation-practice` (such as the ones on [translation-exercises.md](translation-exercises.md)) to `#<band>-practice`.
+When replacing a legacy checkpoint, retarget its `core` cells and any links to `#<band>-translation-practice` (such as the ones on [translation-exercises.md](../translation-exercises.md)) to `#<band>-practice`.
 
 ### 6. Self-check, then lint
 
@@ -113,9 +113,9 @@ Reply with: which checkpoints you added, replaced, or skipped, the new and revie
 ## Level review
 <a id="level-review"></a>
 
-One level per agent, once every stage checkpoint of that level is a `### Practice`. Shape and rules: [level reviews](translation-exercises.md#level-reviews).
+One level per agent, once every stage checkpoint of that level is a `### Practice`. Shape and rules: [level reviews](../translation-exercises.md#level-reviews).
 
-1. **Target.** The level's review file ([review.md](/review), `review-intermediate.md`, `review-advanced.md`): `### Practice {#<band>-practice}`, last in that sidebar group. Add the file to that group in `docs/grammar/.vitepress/lib/reading-order.ts`, and to the review sentence in [introduction.md How to learn](../grammar/introduction.md#how-to-learn).
+1. **Target.** The level's review file ([review.md](/review), `review-intermediate.md`, `review-advanced.md`): `### Practice {#<band>-practice}`, last in that sidebar group. Add the file to that group in `docs/grammar/.vitepress/lib/reading-order.ts`, and to the review sentence in [introduction.md How to learn](../../grammar/introduction.md#how-to-learn).
 2. **Read.** Each stage checkpoint of the level in path order (`npm run core-vocabulary` lists them), its allowlist **Introduces** cell, and the teaching section that owns its main decision. Do not open later levels.
 3. **Vocabulary.** `npm run core-vocabulary -- --for review.md:beginner` (or `review-intermediate.md:intermediate` / `review-advanced.md:advanced`); prefer the roots unused longest. Every root goes under **Review**.
 4. **Write.** One item per checkpoint, in path order within each H4, aimed at the page's main decision with words and packaging its checkpoint did not use. Choose the item type per page to meet the mix; end every answer with its **Rule:** link.
@@ -134,7 +134,7 @@ Drills depend on **what has been taught**, not on other files’ drill text.
 
 **Needs:** lines on the grammar page always add those forms to Recycle (comparatives Beginner → joins Beginner rank joins; causation Beginner → core extra nouns + **`darl`**).
 
-Honor [teach now; don’t preview later](grammar-docs.md#teach-now-dont-preview-later) inside Beginner: a Beginner checkpoint must not use that file’s Intermediate / Advanced, or a later peer’s Beginner.
+Honor [teach now; don’t preview later](../grammar-docs.md#teach-now-dont-preview-later) inside Beginner: a Beginner checkpoint must not use that file’s Intermediate / Advanced, or a later peer’s Beginner.
 
 ### Same-slot siblings
 <a id="slots"></a>
@@ -158,7 +158,7 @@ Every stage checkpoint's **Setting:** phrase is the **Setting** cell of its [all
 
 When you **replace** a checkpoint, pick a phrase no Setting cell uses, put it on the grammar page, and update that row's cell. House names are not a setting.
 
-[Level reviews](translation-exercises.md#level-reviews) have no setting and no row.
+[Level reviews](../translation-exercises.md#level-reviews) have no setting and no row.
 
 The build checks this (`checkpoint-inventory` in `npm run lint:ageben`): every sidebar sitting has exactly one allowlist row, by file, whose **Band** matches the page; an **exists** row's Setting cell matches the page; **skip** has no `### Practice` and gives a reason in the notes cell; **generate** fails until the checkpoint is written; and no two checkpoints share a setting (a leading *a* / *an* / *the* and case do not count; synonyms are yours to catch).
 
@@ -185,11 +185,11 @@ Practice blocks on `say-*.md` pages are recipe-track blocks, not stage checkpoin
 ## Example root bank
 <a id="root-bank"></a>
 
-Default people: [house cast](grammar-docs.md#house-cast) — `zazozon` / `zalazun` / `zahelan` (`azozo` / `alazu` / `ahela` + **-n**). Morph: `z-Azozon` / `z-Alazun` / `z-Ahelan`.
+Default people: [house cast](../grammar-docs.md#house-cast) — `zazozon` / `zalazun` / `zahelan` (`azozo` / `alazu` / `ahela` + **-n**). Morph: `z-Azozon` / `z-Alazun` / `z-Ahelan`.
 
-**This table is for worked examples** on grammar pages (and for morph leak checks when a teach line uses these stems). **Checkpoints do not default to it.** Checkpoint content comes from the [setting](translation-exercises.md#checkpoint-setting) plus house names.
+**This table is for worked examples** on grammar pages (and for morph leak checks when a teach line uses these stems). **Checkpoints do not default to it.** Checkpoint content comes from the [setting](../translation-exercises.md#checkpoint-setting) plus house names.
 
-Tokens here are **stems for matching** (path allowlist / leak checks). Learner bank cells on a checkpoint use [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables). Do not copy `(**-m**)` from this **Sense** column into learner **English**. Checkpoint **English** is the uninflected published lemma for that cell (literal, metaphor, or packed role English); inflected drill prompts (*running*) are fine. When English is not the citation kind, the Ageben cell is the in-clause word and the **New words** cue names the citation sense: *see* → `vayebel` / `` `ayebel` *eye* ``; *sit* → `vehohel` / `` `ehohel` *chair* ``; *tell* → `vezuyol` / `` `ezuyol` *speech* ``; *therefore* → `xahom` / `` `ahol` *east* ``; *however* → `xezem`; *although* → `hezem` (NP *despite* is the same `/h/` word + `/b/` noun); *so-that* → `thovam` (NP intended *for* is the same `/th/` word + `/b/` noun); *meanwhile* → `xugorom`; *haste* → `hadurom` / `` `adurol` *dash* ``; *quietude* → `halozum`; *volume* → `wugowum`; *topic* → `hehugol`. *because* / *inside* already list the `/h/` word (`thahum`, `hegugem`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odozel`; *next clause* stays `ohel`).
+Tokens here are **stems for matching** (path allowlist / leak checks). Learner bank cells on a checkpoint use [citations or the inflected form the row teaches](../grammar-docs.md#citation-in-tables). Do not copy `(**-m**)` from this **Sense** column into learner **English**. Checkpoint **English** is the uninflected published lemma for that cell (literal, metaphor, or packed role English); inflected drill prompts (*running*) are fine. When English is not the citation kind, the Ageben cell is the in-clause word and the **New words** cue names the citation sense: *see* → `vayebel` / `` `ayebel` *eye* ``; *sit* → `vehohel` / `` `ehohel` *chair* ``; *tell* → `vezuyol` / `` `ezuyol` *speech* ``; *therefore* → `xahom` / `` `ahol` *east* ``; *however* → `xezem`; *although* → `hezem` (NP *despite* is the same `/h/` word + `/b/` noun); *so-that* → `thovam` (NP intended *for* is the same `/th/` word + `/b/` noun); *meanwhile* → `xugorom`; *haste* → `hadurom` / `` `adurol` *dash* ``; *quietude* → `halozum`; *volume* → `wugowum`; *topic* → `hehugol`. *because* / *inside* already list the `/h/` word (`thahum`, `hegugem`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odozel`; *next clause* stays `ohel`).
 
 | Root | Sense in examples |
 |------|-------------------|
@@ -221,7 +221,7 @@ A teach line may add roots that already appear in that stage’s worked examples
 ## Allowlist
 <a id="allowlist"></a>
 
-Path numbers match [learning-levels.md](learning-levels.md#cross-doc-path). **Introduces** = what this checkpoint may *test*. Recycle is computed from path + slots, plus **Sibling OK**.
+Path numbers match [learning-levels.md](../learning-levels.md#cross-doc-path). **Introduces** = what this checkpoint may *test*. Recycle is computed from path + slots, plus **Sibling OK**.
 
 Status: **exists** = do not overwrite; **generate** = to write (the build fails until it exists); **skip** = no checkpoint, with the reason in the notes cell. **Setting** is the checkpoint's [setting](#settings). One row per sidebar sitting, by file.
 
@@ -274,7 +274,7 @@ Status: **exists** = do not overwrite; **generate** = to write (the build fails 
 ### Intermediate then Advanced
 <a id="allowlist-later"></a>
 
-Read **all** Beginner first, then Intermediate in the same file order, then Advanced ([path](learning-levels.md#cross-doc-path)). Pages with **no Beginner** slot start here.
+Read **all** Beginner first, then Intermediate in the same file order, then Advanced ([path](../learning-levels.md#cross-doc-path)). Pages with **no Beginner** slot start here.
 
 | Path | File | Band | Status | Setting | Introduces (test these) | Notes |
 |------|------|------|--------|---------|-------------------------|-------|
@@ -360,12 +360,12 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 17 | `notional.md` | Intermediate | **exists** | an acting class | **NOTIONAL** **`eyu`** + play follow-up endings | Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
 | 17 | `try.md` | Intermediate | **generate** | a board meeting | **ATTEMPT** **`owa`** commitment; fallback **`xen`** | Top up the existing checkpoint: its DECISION items moved with the H3 to `want-and-decide.md`, so it is short of English → Ageben, Ageben → English, and decision items, and `review-intermediate.md` has no item for this page (its DECISION item now links `want-and-decide.md`): add one for ATTEMPT. Ability **`xa`/`xe`/`xo`/`xu`** is Beginner on `can-and-cant.md`. Recycle Beginner PLAN. WANT and DECISION are Intermediate on `want-and-decide.md`, after this sitting. List verb **`ven`** only if already taught in this stage |
 | 17 | `want-and-decide.md` | Intermediate | **exists** | a birthday party | **WANT** **`alo`** lastingness; **DECISION** **`oge`** changeability; WANT + PLAN + DECISION stack; holder on WANT / PLAN / DECISION | ATTEMPT is Intermediate on `try.md`. Recycle Beginner PLAN and Intermediate holder |
-| 18 | `numeric-derivation.md` | Advanced | **exists** | a foundry | `NUM x ROOT` as the stage teaches (essence / `+N` / `#N` / quasi / …; `mx` approximate) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) |
+| 18 | `numeric-derivation.md` | Advanced | **exists** | a foundry | `NUM x ROOT` as the stage teaches (essence / `+N` / `#N` / quasi / …; `mx` approximate) — only assigned readings | No unassigned cells from [unassigned-reserved.md](../unassigned-reserved.md) |
 
 ## Leak index
 <a id="leak-index"></a>
 
-First-taught checkpoint for **morphology** agents leak most often. If this checkpoint’s path/stage is **earlier**, the form is illegal. Content roots for a [setting](translation-exercises.md#checkpoint-setting) are not in this table.
+First-taught checkpoint for **morphology** agents leak most often. If this checkpoint’s path/stage is **earlier**, the form is illegal. Content roots for a [setting](../translation-exercises.md#checkpoint-setting) are not in this table.
 
 | Form | First taught |
 |------|----------------|
@@ -462,7 +462,7 @@ For each spoiler token family:
 4. English *I* / *you* (`uwen` / `awan`) on a page earlier in the path than pronouns.md → **fail**. A greeting or bid with the **`SELF`** slot is fine anywhere from word-endings Beginner on.
 5. Most items test **this** stage’s decision, not a prior quiz → else rewrite.
 6. Missing morph in a translation item, or morph that only repeats loose English when it should have been omitted → **fail**.
-7. Unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) → **fail**.
+7. Unassigned cells from [unassigned-reserved.md](../unassigned-reserved.md) → **fail**.
 8. No **Setting** line, the phrase matches any **other** **Setting** cell ([settings](#settings), including synonym / article variants), or the allowlist row's cell was not updated → **fail** (when replacing or generating; do not fail a pre-policy checkpoint until replace).
 
 Converted (`### Practice`) checkpoints only:
@@ -470,11 +470,11 @@ Converted (`### Practice`) checkpoints only:
 9. More than **5** new core roots, or fewer than **3** review roots, or a new root out of core order without its `core` cell moved → **fail**.
 10. A **New words** row with no **Cue**, a **Review** row with one, a **Same root as** column, or a non-citation **Ageben** cell whose cue does not name the citation sense → **fail**.
 11. Fewer than half the items in a translation direction use a root or situation of the setting → **fail**.
-12. A **Pick one** form or **Fix it** correction that does not parse, a **Pick one** pair that differs in more than this stage's decision, a **Fix it** error no learner would make (or a rejected spelling with a reading in [unassigned-reserved.md](unassigned-reserved.md)), or a **What changes** pair with an untaught morph → **fail**.
+12. A **Pick one** form or **Fix it** correction that does not parse, a **Pick one** pair that differs in more than this stage's decision, a **Fix it** error no learner would make (or a rejected spelling with a reading in [unassigned-reserved.md](../unassigned-reserved.md)), or a **What changes** pair with an untaught morph → **fail**.
 13. An **Also correct:** variant whose morph reading differs from the main answer → **fail**. A likely variant (reordering, omitted recoverable word, resume form) that is missing → rewrite.
 14. A decision item with the same proposition as a translation item → **fail**.
 
-[Level reviews](translation-exercises.md#level-reviews) only:
+[Level reviews](../translation-exercises.md#level-reviews) only:
 
 15. An item that misses its page's main decision, or repeats a proposition from that page's checkpoint → rewrite.
 16. A **Rule:** link to a section that does not teach the decision the item tests → **fail**.
@@ -483,9 +483,9 @@ Converted (`### Practice`) checkpoints only:
 
 | Page | Owns |
 |------|------|
-| [translation-exercises.md](translation-exercises.md) | Placement, principles, decision items, [core vocabulary](translation-exercises.md#core-vocabulary) rules, [checkpoint setting](translation-exercises.md#checkpoint-setting) (global unique setting), template and bank |
-| [learning-levels.md](learning-levels.md) | Bands and cross-doc path |
-| [grammar-docs.md](grammar-docs.md) | Learner prose, house cast |
-| [glosses.md](glosses.md) | Morph / free English (teaching lines, not spoilers) |
-| [unassigned-reserved.md](unassigned-reserved.md) | Unused-slot inventory — do not drill |
-| [grammar-gaps.md](grammar-gaps.md) | Untaught helper jobs — do not drill open rows as if taught |
+| [translation-exercises.md](../translation-exercises.md) | Placement, principles, decision items, [core vocabulary](../translation-exercises.md#core-vocabulary) rules, [checkpoint setting](../translation-exercises.md#checkpoint-setting) (global unique setting), template and bank |
+| [learning-levels.md](../learning-levels.md) | Bands and cross-doc path |
+| [grammar-docs.md](../grammar-docs.md) | Learner prose, house cast |
+| [glosses.md](../glosses.md) | Morph / free English (teaching lines, not spoilers) |
+| [unassigned-reserved.md](../unassigned-reserved.md) | Unused-slot inventory — do not drill |
+| [grammar-gaps.md](../grammar-gaps.md) | Untaught helper jobs — do not drill open rows as if taught |

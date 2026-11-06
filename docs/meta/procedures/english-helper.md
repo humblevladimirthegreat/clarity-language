@@ -1,8 +1,18 @@
 # English helper quality
 
-Editors only. Not linked from grammar pages. This note explains how the English → Ageben helper (`node scripts/english-helper.mjs`, [`src/english-helper/`](../../src/english-helper/)) is measured and improved: the test sets, the free metrics, the worklist and where each fix goes, the regression net, the paid model eval, and the loop that ties them together.
+Editors only. Not linked from grammar pages. This note explains how the English → Ageben helper (`node scripts/english-helper.mjs`, [`src/english-helper/`](../../../src/english-helper/)) is measured and improved: the test sets, the free metrics, the worklist and where each fix goes, the regression net, the paid model eval, and the loop that ties them together.
 
 **Design authority:** none. Every fix is either tool code or a doc row that restates a form a grammar page already teaches. A missing form is a grammar gap: log it with the `find-english.mjs` phrases you tried, and leave the decision to the editor. Never invent the form here.
+
+## Running the helper {#running}
+
+Run **`node scripts/english-helper.mjs '<english>'`** for per-clause root and grammar-section suggestions. It only suggests and never writes the sentence. Add `--stage`, `--json`, or force a reading with `saw/n` (`/v`, `/adj`, `/adv`). `--llm-prompt` wraps the suggestions in a prompt for an LLM to write the sentence; `--verify '<draft>'` (one per English input) parses a draft beside its English.
+
+When changing the helper:
+
+- `npm run english-helper-recall` scores it on doc pairs, English → Ageben checkpoint items, and the held-out wild set (`src/english-helper/wild.tsv`; never copy its sentences into cue rows or examples), including whether each reference word is in the prompt (free; report and worklist in `tmp/`). Run it with `-- --check` before committing a change to `src/english-helper/` or a recipe table, and `-- --write-baseline` to keep improved numbers.
+- Pin each fixed behavior with a line in `src/english-helper/cases.tsv`.
+- After a lexicon CSV change, run `npm run english-helper-wordnet` to regenerate its WordNet index (`npm test` fails when it is stale).
 
 ## Goal
 
@@ -13,8 +23,8 @@ Editors only. Not linked from grammar pages. This note explains how the English 
 | Set | Source | Role |
 |-----|--------|------|
 | **doc** | doc example pairs | In-sample: the cue rows were written against this English. Catches breakage, but overstates quality. |
-| **checkpoint** | English → Ageben practice items with their **Also correct** answers ([`src/lint/practice-items.ts`](../../src/lint/practice-items.ts)) | Held out from the example pool, with several right answers each. The main quality set. |
-| **wild** | [`src/english-helper/wild.tsv`](../../src/english-helper/wild.tsv): plain English grouped by phenomenon and stage | No reference Ageben. Scored on gaps, noise and size. |
+| **checkpoint** | English → Ageben practice items with their **Also correct** answers ([`src/lint/practice-items.ts`](../../../src/lint/practice-items.ts)) | Held out from the example pool, with several right answers each. The main quality set. |
+| **wild** | [`src/english-helper/wild.tsv`](../../../src/english-helper/wild.tsv): plain English grouped by phenomenon and stage | No reference Ageben. Scored on gaps, noise and size. |
 
 The wild set grows only through the loop below, and new items are drafted from the phenomenon alone. Never copy a wild or checkpoint sentence into a cue row, an example, or `cases.tsv`. A fix has to work for the class of word, not for one sentence.
 
@@ -69,8 +79,8 @@ The analyzer never reads example notes as cues. Checkpoint and wild English carr
 
 ## Regression net
 
-- **[`src/english-helper/cases.tsv`](../../src/english-helper/cases.tsv)** has one line per pinned behavior: English, the slot word, an expectation, and why. `analyze.test.ts` runs it, and the expectation kinds are listed in [`cases.ts`](../../src/english-helper/cases.ts) (`link:`, `not:`, `first:`, `has:`, `sense:`, `form:`, `shape:`, `reach:`, `sake:`, `no-gap`). An empty slot names the sentence's clause detectors. Expectations name senses, sections and closed words, never root spellings, so a retie never breaks them. Each fixed behavior adds a line.
-- **Baseline.** [`src/generated/english-helper-baseline.json`](../../src/generated/english-helper-baseline.json) holds the headline metrics per set. `english-helper-recall -- --check` fails when one drops past its tolerance: 0.5 points, or 500 characters for prompt size. `-- --write-baseline` updates it. Each metric names the sets it guards:
+- **[`src/english-helper/cases.tsv`](../../../src/english-helper/cases.tsv)** has one line per pinned behavior: English, the slot word, an expectation, and why. `analyze.test.ts` runs it, and the expectation kinds are listed in [`cases.ts`](../../../src/english-helper/cases.ts) (`link:`, `not:`, `first:`, `has:`, `sense:`, `form:`, `shape:`, `reach:`, `sake:`, `no-gap`). An empty slot names the sentence's clause detectors. Expectations name senses, sections and closed words, never root spellings, so a retie never breaks them. Each fixed behavior adds a line.
+- **Baseline.** [`src/generated/english-helper-baseline.json`](../../../src/generated/english-helper-baseline.json) holds the headline metrics per set. `english-helper-recall -- --check` fails when one drops past its tolerance: 0.5 points, or 500 characters for prompt size. `-- --write-baseline` updates it. Each metric names the sets it guards:
   - Checkpoint guards all of them, *staged self-contained* included.
   - Wild has no reference, so it guards gap rate and prompt size.
   - Doc is in-sample, and doc edits move its scores for reasons unrelated to the helper. It guards only breakage: root recall anywhere, gap rate and prompt size.
