@@ -6,8 +6,6 @@ my name: obuyen (innovation) gageben (clarity)
 discord invite:
 https://discord.gg/CAMGw2Akhc
 
-use [skip-cd] for amplify to not deploy. 
-
 # TODO
 -vocab flashcards generator
 -contact form / about me
