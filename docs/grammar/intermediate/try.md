@@ -94,6 +94,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *write* | `varuyol` |
 | *tell* | `vezuyol` |
 | *sing* | `vozuyel` |
+| *pencil* | `obewol` |
+| *pay* | `varal` |
+| *wait* | `vabahom` |
+| *stand* | `vuzuvel` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -103,6 +107,30 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 `zahelan howar vezuyol.`
 
 z-Ahelan | h-ATTEMPT-trial | v-tell
+:::
+
+**2.** *Ahelan commits to trying to pay.*
+
+::: details Show answer
+`zahelan howal varal.`
+
+z-Ahelan | h-ATTEMPT-committed | v-pay
+:::
+
+**3.** *Alazun tries out writing with a pencil.*
+
+::: details Show answer
+`zalazun howar varuyol aol bobewol.`
+
+z-Alazun | h-ATTEMPT-trial | v-write | [using | b-pencil]
+:::
+
+**4.** *Alazun tries to wait; failing that, Alazun stands.*
+
+::: details Show answer
+`zalazun howam vabahom xen zalazur vuzuvel.`
+
+[z-Alazun | h-ATTEMPT-unstated | v-wait | x-or-else | z-←Alazun | v-stand]
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
@@ -115,6 +143,22 @@ z-Ahelan | h-ATTEMPT-trial | v-tell
 *Alazun gives singing a try; failing that, Alazun writes.*
 :::
 
+**2.** `zahelan howal varuyol xen zahelar varal.`
+
+::: details Show answer
+[z-Ahelan | h-ATTEMPT-committed | v-write | x-or-else | z-←Ahelan | v-pay]
+
+*Ahelan keeps trying to write; failing that, Ahelan pays.*
+:::
+
+**3.** `zahelan thagol varal xen zahelan thagol vabahom.`
+
+::: details Show answer
+[z-Ahelan | th-plan-atlas | v-pay | x-or-else | z-Ahelan | th-plan-atlas | v-wait]
+
+*Ahelan's plan is to pay; failing that, to wait.*
+:::
+
 #### Pick one {#intermediate-pick-one}
 
 **1.** *Alazun keeps trying to write.* `zalazun howal varuyol.` or `zalazun howar varuyol.`
@@ -125,4 +169,16 @@ z-Ahelan | h-ATTEMPT-trial | v-tell
 z-Alazun | h-ATTEMPT-committed | v-write
 
 **-l** commits to the attempt; **-r** is only a trial run.
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Ahelan gives paying a shot.* <!-- lint: error -->`zahelan howal varal.`
+
+::: details Show answer
+`zahelan howar varal.`
+
+z-Ahelan | h-ATTEMPT-trial | v-pay
+
+*Gives … a shot* is a trial run, **-r**; **-l** would commit to the attempt.
 :::
