@@ -31,13 +31,21 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { basename, dirname, join, relative, resolve } from "node:path";
 
-import { emptySpanStats, lintAgebenMarkdown, lintAgebenSpans, lintBareRoots, lintNativeOpaque } from "../src/lint/ageben-docs.js";
+import {
+  emptySpanStats,
+  lintAgebenMarkdown,
+  lintAgebenSpans,
+  lintBareRoots,
+  lintNativeOpaque,
+  type ConstructionSink,
+} from "../src/lint/ageben-docs.js";
 import { lintStaleNames } from "../src/lint/stale-names.js";
 import {
   formatMorphGlossFinding,
   lintMorphGlossMarkdown,
 } from "../src/lint/morph-gloss-docs.js";
 import { lintFreeEnglish, lintTableEnglish } from "../src/lint/free-english.js";
+import { LINT_HINTS } from "../src/lint/hints.js";
 import { lintPracticeItems } from "../src/lint/practice-item-rules.js";
 import {
   formatPracticeBankFinding,
@@ -213,30 +221,35 @@ function reportLearningOrder(order: LearningOrder, uses: readonly ConstructionUs
       (full ? "" : " Forward links are report-only; run with --order-report to list them."),
   );
   if (unresolved.length > 0) {
-    console.log("\nHome anchors that do not resolve:");
+    console.log("\nHome anchors that do not resolve (point each at its teaching heading):");
     for (const line of unresolved) console.log(`  ${line}`);
   }
   if (unbandedHomes.length > 0) {
-    console.log("\nHome anchors outside every band:");
+    console.log("\nHome anchors outside every band (point each at a banded heading):");
     for (const line of unbandedHomes) console.log(`  ${line}`);
   }
   if (notAtHome.length > 0) {
-    console.log("\nConstruction families not taught in their home section (no member traced there):");
+    console.log("\nConstruction families not taught in their home section (add a teach example there):");
     for (const { ids, home, usedIn } of notAtHome) {
       const where = usedIn.length > 0 ? `used in ${usedIn.slice(0, 3).join(", ")}${usedIn.length > 3 ? ", …" : ""}` : "used nowhere";
       console.log(`  ${ids.join(", ")}  →  ${formatSection(home)}  (${where})`);
     }
   }
   if (unbandedUses.size > 0) {
-    console.log("\nUses outside every band (section: construction uses):");
+    console.log("\nUses outside every band (section: construction uses; give the page a band: or mark the section ignored):");
     for (const [key, n] of unbandedUses) console.log(`  ${key}: ${n}`);
   }
   if (forward.size > 0) {
-    console.log("\nConstructions used before their home section (home, then earlier sections that use it):");
+    // One line per example: where it is, the span, the construction, and the later home it needs.
     const rows = [...forward].sort(([, a], [, b]) => a.home.position! - b.home.position!);
     for (const [id, f] of rows) {
-      console.log(`  ${id}  →  ${formatSection(f.home)}`);
-      for (const s of f.sections) console.log(`      ${s}`);
+      for (const e of f.examples) {
+        const where = `docs/grammar/${pageRelPath(e.page)}${e.line ? `:${e.line}` : ""}`;
+        const span = e.text ? `  \`${e.text}\`` : "";
+        console.log(
+          `${where}${span}  learning-order  ${id}  →  ${formatSection(f.home)}  (taught later: rewrite with forms taught by here, or move that home earlier)`,
+        );
+      }
     }
   }
   if (full && links.length > 0) {
@@ -264,7 +277,7 @@ function reportDrillCoverage(order: LearningOrder, uses: readonly ConstructionUs
     console.log("\nPage bands with taught families but no translation practice:");
     for (const key of missing) {
       const [page, band] = key.split("|");
-      console.log(`  ${page}  ${band}  (expected ### Practice {#${band}-practice})`);
+      console.log(`  ${page}  ${band}  (add ### Practice {#${band}-practice}, or mark the allowlist row skip with a reason)`);
     }
   }
   const duplicates = duplicateDrills(order);
@@ -273,7 +286,7 @@ function reportDrillCoverage(order: LearningOrder, uses: readonly ConstructionUs
     for (const { key, drills } of duplicates) console.log(`  ${key.replace("|", "  ")}  (${drills.map(formatSection).join(", ")})`);
   }
   if (uncovered.length > 0) {
-    console.log("\nFamilies not practiced in their band's drill:");
+    console.log("\nFamilies not practiced in their band's drill (add an item that uses each):");
     for (const { family, drills } of uncovered) {
       console.log(`  ${family.ids.join(", ")}  →  ${drills.map(formatSection).join(", ")}  (taught at ${formatSection(family.home)})`);
     }
@@ -353,7 +366,7 @@ function main(): void {
       console.error(`${rel}:${line}  \`${issue.token}\`  ${label}  (${issue.detail})`);
     }
 
-    let used: ((id: string, index: number) => void) | undefined;
+    let used: ConstructionSink | undefined;
     if (isSittingFile(file)) {
       for (const id of duplicateIds(original)) {
         duplicateIdCount += 1;
@@ -370,7 +383,8 @@ function main(): void {
       const ps = pageSections(basename(file), original);
       pages.set(ps.page, ps);
       pageMarkdown.set(ps.page, original);
-      used = (id, index) => uses.push({ id, section: sectionAt(ps.sections, index) });
+      used = (id, index, text) =>
+        uses.push({ id, section: sectionAt(ps.sections, index), line: lineNumberAt(original, index), text });
     }
     if (isSittingFile(file) || dirname(file) === cheatSheetsDir) {
       for (const finding of lintTableEnglish(original, tables)) {
@@ -518,7 +532,7 @@ function main(): void {
   }
   if (retieFormatCount > 0) {
     console.error(
-      `\n${retieFormatCount} retie-format issue(s). Pin an English heading id, put Ageben in backticks, or fix the shared-prefix mark (docs/meta/grammar-docs.md).`,
+      `\n${retieFormatCount} retie-format issue(s). ${LINT_HINTS.retieFormat}`,
     );
   }
   if (terminologyCount > 0) {
@@ -526,18 +540,18 @@ function main(): void {
   }
   if (freeEnglishCount > 0) {
     console.error(
-      `\n${freeEnglishCount} free English issue(s). Write "sentence" (note) with a plain-English note (docs/meta/glosses.md#free-english-sentence-and-note).`,
+      `\n${freeEnglishCount} free English issue(s). ${LINT_HINTS.freeEnglish}`,
     );
   }
   if (morphCount > 0) {
     console.log(`\n${morphCount} morph-gloss issue(s).`);
   }
   if (bankCount > 0) {
-    console.log(`\n${bankCount} translation word-bank issue(s).`);
+    console.log(`\n${bankCount} translation word-bank issue(s). ${LINT_HINTS.wordBank}`);
   }
   if (practiceCount > 0) {
     console.error(
-      `\n${practiceCount} checkpoint item issue(s). Follow the template and decision-item rules (docs/meta/translation-exercises.md#template, #item-types).`,
+      `\n${practiceCount} checkpoint item issue(s). ${LINT_HINTS.practiceItem}`,
     );
   }
 
@@ -546,33 +560,33 @@ function main(): void {
   }
   if (coreCount > 0) {
     console.error(
-      `\n${coreCount} core-vocabulary issue(s). Match **New words** / **Review** to the core column, or retarget the cells (docs/meta/translation-exercises.md#core-vocabulary).`,
+      `\n${coreCount} core-vocabulary issue(s). ${LINT_HINTS.coreVocabulary}`,
     );
   }
   if (lookAlikeCount > 0) {
     console.error(
-      `\n${lookAlikeCount} look-alike issue(s). Keep roots apart only in the middle vowel out of nearby checkpoints. A swapped word must still fit each item: reread them, and rewrite any that the new word makes false or odd (docs/meta/translation-exercises.md#look-alikes).`,
+      `\n${lookAlikeCount} look-alike issue(s). ${LINT_HINTS.lookAlike}`,
     );
   }
   if (inventoryCount > 0) {
     console.error(
-      `\n${inventoryCount} checkpoint-inventory issue(s). Give every sitting one allowlist row by file, with its status and setting, and keep settings unique (docs/meta/drill-generation.md#allowlist).`,
+      `\n${inventoryCount} checkpoint-inventory issue(s). ${LINT_HINTS.checkpointInventory}`,
     );
   }
   if (reviewCount > 0) {
     console.error(
-      `\n${reviewCount} level-review issue(s). One item per stage checkpoint, each ending with a **Rule:** link to its section (docs/meta/translation-exercises.md#level-reviews).`,
+      `\n${reviewCount} level-review issue(s). ${LINT_HINTS.levelReview}`,
     );
   }
   if (orderCount > 0) {
     console.error(
-      `\n${orderCount} learning-order issue(s). Rewrite the example with forms already taught, or move the home section earlier (docs/proposals/learning-order-check.md, No previews).`,
+      `\n${orderCount} learning-order issue(s). ${LINT_HINTS.learningOrder}`,
     );
   }
 
   if (drillCount > 0) {
     console.error(
-      `\n${drillCount} drill-coverage issue(s). Add ### Practice {#<band>-practice}, or an item in it that uses the family, or merge duplicate sections (docs/meta/drill-generation.md), or mark the page + band skip in its allowlist.`,
+      `\n${drillCount} drill-coverage issue(s). ${LINT_HINTS.drillCoverage}`,
     );
   }
 

@@ -44,6 +44,7 @@
     "peel-headings": "tsx scripts/peel-headings.ts",
     "move-heading": "tsx scripts/move-heading.ts",
     "verify": "tsx scripts/verify.ts",
+    "token-report": "node scripts/token-report.mjs",
     "page-lines": "tsx scripts/page-lines.ts",
     "lint:cheat-sheet-print": "tsx scripts/lint-cheat-sheet-print.ts"
   },

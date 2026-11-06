@@ -3,7 +3,7 @@ import type { ClassifyTables } from "../parse/classify.js";
 import { parseWithTables } from "../parse/parse-core.js";
 
 /**
- * Trace a template or fragment span ([learning-order-check](../../docs/meta/proposals.md)):
+ * Trace a template or fragment span ([learning-order check](../../docs/meta/learning-levels.md#learning-order-check)):
  * fill each slot with sample Ageben, parse, and keep only the constructions
  * every successful filling shares. What varies between fillings came from a filler,
  * so the intersection is what the template's own words exercise.

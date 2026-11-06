@@ -78,7 +78,7 @@ function lintPickOne(item: PracticeItem, tables: ClassifyTables, push: Push): vo
   if (compare.error) push(`both forms must parse (${compare.error})`);
   else if (compare.same) push("the two forms have the same reading, so neither is wrong");
   else if (!sameMultiset(contentRoots(a.text, tables), contentRoots(b.text, tables))) {
-    push("the two forms use different content roots; they should differ only in this stage's decision");
+    push("the two forms use different content roots; use the same content words in both, so they differ only in this stage's decision");
   }
   const { answer, morphs, prose } = answerParts(item.spoiler);
   if (!answer) push("answer needs the right form as an Ageben line");

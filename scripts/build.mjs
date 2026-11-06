@@ -2,17 +2,26 @@
 // Full build: generate the word parser (only when word.peggy changed), typecheck,
 // pad exercise spoilers (rewrites docs, so it runs before anything reads them),
 // then run tests, doc lints, eslint and the VitePress build in parallel.
-// Each parallel job's output is buffered and printed when it finishes.
+// Every job's output is buffered and saved to tmp/build-last.log, in the order jobs finish,
+// each followed by its `✓` / `✗ label (12.3s)` line (`npm run verify` reads that log).
+// stdout carries only the status lines, warnings, `build ok` / `build FAILED`, and on failure
+// a Failures footer: each failing job's issue lines with file:line, last. BUILD_VERBOSE=1 also
+// prints every job's full output.
 import { spawn } from "node:child_process";
+import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { buildFooter } from "./lib/build-output.ts";
 import { mtime } from "./lib/run-bundled.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const bin = (name) => join(root, "node_modules", ".bin", name);
 
 const WARNING_LIMIT = 20;
+const LOG = "tmp/build-last.log";
+const verbose = Boolean(process.env.BUILD_VERBOSE);
+const log = [];
 
 /** A passing job's `warning:` lines: the first few, then how many more and where to see them all. */
 function printWarnings(label, out) {
@@ -23,30 +32,47 @@ function printWarnings(label, out) {
   }
 }
 
-function run(label, cmd, args, { buffer = false } = {}) {
+function run(label, cmd, args, env = {}) {
   const start = Date.now();
   return new Promise((resolve) => {
     const child = spawn(cmd, args, {
       cwd: root,
-      stdio: buffer ? ["ignore", "pipe", "pipe"] : "inherit",
-      env: { ...process.env, FORCE_COLOR: process.stdout.isTTY ? "1" : "0" },
+      stdio: ["ignore", "pipe", "pipe"],
+      env: { ...process.env, FORCE_COLOR: "0", ...env },
     });
     let out = "";
-    child.stdout?.on("data", (d) => (out += d));
-    child.stderr?.on("data", (d) => (out += d));
+    child.stdout.on("data", (d) => (out += d));
+    child.stderr.on("data", (d) => (out += d));
     child.on("close", (code) => {
       const secs = ((Date.now() - start) / 1000).toFixed(1);
-      if (buffer && (code !== 0 || process.env.BUILD_VERBOSE)) process.stdout.write(out);
-      else if (buffer) printWarnings(label, out);
-      console.log(`${code === 0 ? "✓" : "✗"} ${label} (${secs}s)`);
+      const status = `${code === 0 ? "✓" : "✗"} ${label} (${secs}s)`;
+      if (verbose) process.stdout.write(out);
+      else printWarnings(label, out);
+      console.log(status);
+      log.push(out, status);
       resolve({ label, code, out });
     });
   });
 }
 
+/** Write the full log, then end stdout with the footer for every failed job. */
+function finish(failed) {
+  const summary = `build ${failed.length ? "FAILED" : "ok"} in ${((Date.now() - t0) / 1000).toFixed(1)}s`;
+  log.push(`\n${summary}`);
+  if (failed.length) log.push(`failed: ${failed.map((r) => r.label).join(", ")}`);
+  mkdirSync(join(root, "tmp"), { recursive: true });
+  writeFileSync(join(root, LOG), `${log.join("\n")}\n`);
+  console.log(`\n${summary}`);
+  if (failed.length) {
+    console.log("");
+    for (const line of buildFooter(failed, LOG)) console.log(line);
+  }
+  process.exit(failed.length ? 1 : 0);
+}
+
 async function step(label, cmd, args) {
-  const { code } = await run(label, cmd, args);
-  if (code !== 0) process.exit(code);
+  const result = await run(label, cmd, args);
+  if (result.code !== 0) finish([result]);
 }
 
 const t0 = Date.now();
@@ -63,24 +89,18 @@ await step("pad spoiler blanks", bin("tsx"), ["scripts/pad-exercise-spoiler-blan
 
 const jobs = [
   // BUILD_SKIP_TEST=1 drops the test job (npm run verify -- --fast).
-  ...(process.env.BUILD_SKIP_TEST ? [] : [run("test", "npm", ["test", "--silent"], { buffer: true })]),
-  run("tsc vitepress", bin("tsc"), ["-p", "docs/grammar/.vitepress"], { buffer: true }),
-  run("lint md balance", "node", ["scripts/lint-md-balance.mjs"], { buffer: true }),
-  run("lint sidebar", bin("tsx"), ["scripts/lint-sidebar-pages.ts"], { buffer: true }),
-  run("lint forward links", bin("tsx"), ["scripts/lint-forward-links.ts"], { buffer: true }),
-  run("lint cheat sheets", bin("tsx"), ["scripts/lint-cheat-sheets.ts"], { buffer: true }),
-  run("lint claritish editor", bin("tsx"), ["scripts/lint-claritish-editor.ts"], { buffer: true }),
-  run("lint game", bin("tsx"), ["scripts/lint-game.ts"], { buffer: true }),
-  run("cheat sheet blocks", bin("tsx"), ["scripts/cheat-sheet-blocks.ts"], { buffer: true }),
-  run("lint ageben", bin("tsx"), ["scripts/lint-ageben-docs.ts"], { buffer: true }),
-  run("eslint", bin("eslint"), ["--cache", "--cache-location", "node_modules/.cache/eslint", "docs/grammar/.vitepress/components"], { buffer: true }),
-  run("docs:publish", "npm", ["run", "-s", "docs:publish"], { buffer: true }),
-  run("flashcards", "npm", ["run", "-s", "flashcards"], { buffer: true }),
+  ...(process.env.BUILD_SKIP_TEST ? [] : [run("test", "npm", ["test", "--silent"], { TEST_REPORT: "raw" })]),
+  run("tsc vitepress", bin("tsc"), ["-p", "docs/grammar/.vitepress"]),
+  run("lint md balance", "node", ["scripts/lint-md-balance.mjs"]),
+  run("lint sidebar", bin("tsx"), ["scripts/lint-sidebar-pages.ts"]),
+  run("lint forward links", bin("tsx"), ["scripts/lint-forward-links.ts"]),
+  run("lint cheat sheets", bin("tsx"), ["scripts/lint-cheat-sheets.ts"]),
+  run("lint claritish editor", bin("tsx"), ["scripts/lint-claritish-editor.ts"]),
+  run("lint game", bin("tsx"), ["scripts/lint-game.ts"]),
+  run("cheat sheet blocks", bin("tsx"), ["scripts/cheat-sheet-blocks.ts"]),
+  run("lint ageben", bin("tsx"), ["scripts/lint-ageben-docs.ts"]),
+  run("eslint", bin("eslint"), ["--cache", "--cache-location", "node_modules/.cache/eslint", "docs/grammar/.vitepress/components"]),
+  run("docs:publish", "npm", ["run", "-s", "docs:publish"]),
+  run("flashcards", "npm", ["run", "-s", "flashcards"]),
 ];
-const failed = (await Promise.all(jobs)).filter((r) => r.code !== 0);
-
-console.log(`\nbuild ${failed.length ? "FAILED" : "ok"} in ${((Date.now() - t0) / 1000).toFixed(1)}s`);
-if (failed.length) {
-  console.log(`failed: ${failed.map((r) => r.label).join(", ")}`);
-  process.exit(1);
-}
+finish((await Promise.all(jobs)).filter((r) => r.code !== 0));

@@ -191,17 +191,17 @@ export function lintCheckpointInventory(input: {
       meta(row.line, `\`${file}\` is not a sidebar sitting: drop the row, or rename it to the file that now holds this checkpoint`);
       continue;
     }
-    if (page.band && row.band !== page.band) meta(row.line, `\`${file}\` is ${page.band} (front matter) but the row says ${row.band}`);
+    if (page.band && row.band !== page.band) meta(row.line, `\`${file}\` is ${page.band} (front matter) but the row says ${row.band}: move the row to its band's table`);
     const practices = page.settings.length;
     if (row.status === "exists") {
       if (practices !== 1) {
-        meta(row.line, `\`${file}\` is **exists** but has ${practices} ### Practice section(s); expected one`);
+        meta(row.line, `\`${file}\` is **exists** but has ${practices} ### Practice section(s); expected one: merge them, or mark the row **generate**`);
         continue;
       }
       const actual = page.settings[0];
-      if (actual === undefined) findings.push({ file, detail: "### Practice has no **Setting:** line" });
-      else if (!row.setting) meta(row.line, `\`${file}\` Setting cell is empty; the page says "${actual}"`);
-      else if (row.setting !== actual) meta(row.line, `\`${file}\` Setting cell "${row.setting}" does not match the page's "${actual}"`);
+      if (actual === undefined) findings.push({ file, detail: "### Practice has no **Setting:** line; add one under the heading" });
+      else if (!row.setting) meta(row.line, `\`${file}\` Setting cell is empty; the page says "${actual}": copy it into the cell`);
+      else if (row.setting !== actual) meta(row.line, `\`${file}\` Setting cell "${row.setting}" does not match the page's "${actual}": make the cell match the page`);
     } else if (row.status === "skip") {
       if (practices > 0) meta(row.line, `\`${file}\` is **skip** but has a ### Practice section; mark it **exists** with its setting`);
       if (row.setting) meta(row.line, `\`${file}\` is **skip**: its Setting cell must be —`);

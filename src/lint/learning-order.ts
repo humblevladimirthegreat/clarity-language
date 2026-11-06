@@ -1,5 +1,5 @@
 /**
- * Learning order of grammar-page sections (docs/proposals/learning-order-check.md).
+ * Learning order of grammar-page sections (docs/meta/learning-levels.md#learning-order-check).
  *
  * Global order: every Beginner sitting in sidebar order, then Intermediate,
  * then Advanced; within a sitting, heading order. A page with front matter

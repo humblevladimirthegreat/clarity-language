@@ -26,7 +26,7 @@ describe("construction registry", () => {
   });
 
   // A registry anchor names its home section, so it must be that heading's own id
-  // (docs/proposals/learning-order-check.md), not an <a id> inside the section.
+  // (docs/meta/learning-levels.md#learning-order-check), not an <a id> inside the section.
   it("anchors resolve to a grammar page heading id", () => {
     const anchorsByPage = new Map<string, Set<string>>();
     const broken: string[] = [];

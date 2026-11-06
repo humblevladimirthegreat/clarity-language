@@ -95,7 +95,17 @@ function countFindings(items: readonly PracticeItem[], checkpoints: number, inde
   const out: LevelReviewFinding[] = [];
   const total = items.length;
   const max = checkpoints + REVIEW_EXTRA_ITEMS;
-  if (total < checkpoints || total > max) out.push({ index, detail: `${total} item(s); a review has one per stage checkpoint of its level (${checkpoints}), at most ${max}` });
+  if (total > max) {
+    out.push({
+      index,
+      detail: `${total} item(s); a review has one per stage checkpoint of its level (${checkpoints}), at most ${max}: drop ${total - max}, starting with items whose **Rule:** sitting has no checkpoint or already has an item`,
+    });
+  } else if (total < checkpoints) {
+    out.push({
+      index,
+      detail: `${total} item(s); a review has one per stage checkpoint of its level (${checkpoints}), at most ${max}: add ${checkpoints - total}, one for each checkpoint with no item`,
+    });
+  }
   for (const type of ["en-ag", "ag-en"] as const) {
     const n = items.filter((item) => item.type === type).length;
     if (n < REVIEW_TRANSLATION_MIN) out.push({ index, detail: `${n} ${LABEL[type]} item(s); use at least ${REVIEW_TRANSLATION_MIN}` });

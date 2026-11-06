@@ -64,7 +64,8 @@ export function duplicateDrills(order: LearningOrder): { key: string; drills: Se
   return out;
 }
 
-export type ConstructionUse = { id: string; section: Section };
+/** One construction an example uses; `line` and `text` locate the example span when known. */
+export type ConstructionUse = { id: string; section: Section; line?: number; text?: string };
 
 export type DrillCoverage = {
   /** `page|band` pairs that home a family but have no drill section. */

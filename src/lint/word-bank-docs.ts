@@ -579,13 +579,13 @@ export function bankUses(ageben: string, tables: ClassifyTables): { root: string
 export function formatWordBankUsageFinding(relpath: string, finding: WordBankUsageFinding): string {
   switch (finding.kind) {
     case "missing":
-      return `${relpath}:${finding.line}  word-bank missing root  \`${finding.surface}\` uses ${finding.roots.join(", ")}, which has no bank row`;
+      return `${relpath}:${finding.line}  word-bank missing root  \`${finding.surface}\` uses ${finding.roots.join(", ")}, which has no bank row; add it to **New words** (first use) or **Review**`;
     case "unused":
-      return `${relpath}:${finding.line}  word-bank unused row  \`${finding.surface}\` (${finding.roots.join(", ")}) is not used in the drills`;
+      return `${relpath}:${finding.line}  word-bank unused row  \`${finding.surface}\` (${finding.roots.join(", ")}) is not used in the drills; use it in an item or drop the row`;
     case "no-bank":
       return finding.converted
-        ? `${relpath}:${finding.line}  word-bank missing  practice uses content roots but has no **New words** / **Review** table`
-        : `${relpath}:${finding.line}  word-bank missing  translation practice uses content roots but has no **Roots used here** table`;
+        ? `${relpath}:${finding.line}  word-bank missing  practice uses content roots but has no **New words** / **Review** table; add one`
+        : `${relpath}:${finding.line}  word-bank missing  translation practice uses content roots but has no **Roots used here** table; add one`;
   }
 }
 

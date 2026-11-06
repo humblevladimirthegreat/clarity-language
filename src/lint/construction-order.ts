@@ -56,8 +56,8 @@ export type LearningOrderFindings = {
   notAtHome: { ids: string[]; home: Section; usedIn: string[] }[];
   /** Uses outside every band, counted per section. */
   unbandedUses: Map<string, number>;
-  /** Constructions used in a section before their home, with those sections. */
-  forward: Map<string, { home: Section; sections: Set<string> }>;
+  /** Constructions used in a section before their home, with those sections and each example (page, line, span). */
+  forward: Map<string, { home: Section; sections: Set<string>; examples: { page: string; line?: number; text?: string }[] }>;
   /** `page:line  from  →  to` for links that point later in the reading order (report only). */
   links: string[];
   /** Everything except `links`: the findings that fail the run. */
@@ -111,8 +111,11 @@ export function learningOrderFindings(
     }
     if (home.position <= u.section.position) continue;
     let f = forward.get(u.id);
-    if (!f) forward.set(u.id, (f = { home, sections: new Set() }));
+    if (!f) forward.set(u.id, (f = { home, sections: new Set(), examples: [] }));
     f.sections.add(formatSection(u.section));
+    if (!f.examples.some((e) => e.page === u.section.page && e.line === u.line && e.text === u.text)) {
+      f.examples.push({ page: u.section.page, line: u.line, text: u.text });
+    }
   }
 
   const links: string[] = [];

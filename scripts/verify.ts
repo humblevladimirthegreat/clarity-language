@@ -7,11 +7,12 @@
  *      npm run verify -- --fast              skip tests (cheat-sheet blocks and build only)
  *
  * Steps: `cheat-sheet-blocks --write`, then `node scripts/build.mjs` (which runs `npm test` as one
- * of its jobs, so tests run once). Output stays under about 30 lines; the full log is in
- * tmp/verify-last.log. Exit code 0 means no new errors.
+ * of its jobs, so tests run once). Keys come from the build's full log, tmp/build-last.log, not
+ * its stdout. Output stays under about 30 lines; the full log is in tmp/verify-last.log. Exit
+ * code 0 means no new errors.
  */
 import { spawnSync } from "node:child_process";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 import { allowlistRows } from "../src/lint/checkpoint-inventory.js";
@@ -21,6 +22,7 @@ import { compare, jobKeys, jobOf, splitJobs, stripAnsi, type ErrorKey } from "./
 const TMP = join(REPO_ROOT, "tmp");
 const BASELINE = join(TMP, "verify-baseline.json");
 const LAST_LOG = join(TMP, "verify-last.log");
+const BUILD_LOG = join(TMP, "build-last.log");
 const ALLOWLIST = join(REPO_ROOT, "docs", "meta", "drill-generation.md");
 const SHOW = 22;
 
@@ -56,11 +58,14 @@ function generatePages(): Set<string> {
 
 function run(fast: boolean): { keys: ErrorKey[]; ran: Set<string>; failedJobs: string[] } {
   const blocks = sh("node_modules/.bin/tsx scripts/cheat-sheet-blocks.ts --write");
-  const build = sh("node scripts/build.mjs", fast ? { BUILD_SKIP_TEST: "1" } : {});
+  rmSync(BUILD_LOG, { force: true });
+  const build = sh("node scripts/build.mjs", fast ? { BUILD_SKIP_TEST: "1", BUILD_VERBOSE: "" } : { BUILD_VERBOSE: "" });
+  // build.mjs saves every job's full output; its stdout is only a footer. Fall back to stdout if it died before writing the log.
+  const buildOut = existsSync(BUILD_LOG) ? stripAnsi(readFileSync(BUILD_LOG, "utf8")) : build.out;
   mkdirSync(TMP, { recursive: true });
-  writeFileSync(LAST_LOG, `$ cheat-sheet-blocks --write (exit ${blocks.code})\n${blocks.out}\n$ build (exit ${build.code})\n${build.out}`);
+  writeFileSync(LAST_LOG, `$ cheat-sheet-blocks --write (exit ${blocks.code})\n${blocks.out}\n$ build (exit ${build.code})\n${buildOut}`);
 
-  const jobs = splitJobs(build.out);
+  const jobs = splitJobs(buildOut);
   const label = "cheat-sheet-blocks --write";
   jobs.unshift({ label, ok: blocks.code === 0, lines: blocks.out.split("\n") });
   const keys = jobs.flatMap(jobKeys);

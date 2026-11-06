@@ -343,13 +343,13 @@ export function classifyAgebenSpan(text: string): AgebenSpanClass | "unclassifie
   return "unclassified";
 }
 
-/** Receives each construction ID a span exercises, with the span's offset in the page. */
-export type ConstructionSink = (id: string, index: number) => void;
+/** Receives each construction ID a span exercises, with the span's offset in the page and its text. */
+export type ConstructionSink = (id: string, index: number, text?: string) => void;
 
 function parseSpan(text: string, index: number, tables: ClassifyTables, used?: ConstructionSink): ParseResult | string {
   try {
     const result = parseWithTables(text.trim(), tables, { constructions: used !== undefined });
-    for (const id of result.constructions ?? []) used!(id, index);
+    for (const id of result.constructions ?? []) used!(id, index, text.trim());
     return result;
   } catch (error) {
     return (error instanceof Error ? error.message : String(error)).split("\n")[0]!;
@@ -444,7 +444,7 @@ function lintTraced(
   used?: ConstructionSink,
 ): void {
   try {
-    for (const id of trace()) used?.(id, index);
+    for (const id of trace()) used?.(id, index, text.trim());
   } catch (error) {
     issues.push({ text, index, kind, detail: error instanceof Error ? error.message : String(error) });
   }
@@ -462,8 +462,8 @@ function addWordSpanConstructions(text: string, index: number, tables: ClassifyT
   if (!isAgebenLintCandidate(core)) return;
   try {
     const word = classify(parseWord(core), tables);
-    used(`token.${classifyTokenBranch(word).branch}`, index);
-    for (const id of wordConstructions(word)) used(id, index);
+    used(`token.${classifyTokenBranch(word).branch}`, index, text.trim());
+    for (const id of wordConstructions(word)) used(id, index, text.trim());
   } catch {
     // The per-word lint reports words that do not parse.
   }

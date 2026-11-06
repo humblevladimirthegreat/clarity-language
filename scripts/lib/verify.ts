@@ -57,27 +57,47 @@ function testKeys(lines: readonly string[]): ErrorKey[] {
   return out;
 }
 
-function lintKeys(label: string, lines: readonly string[]): ErrorKey[] {
-  const out: ErrorKey[] = [];
-  let header = "";
+/**
+ * One classified line of a job's output, line numbers kept. `path`: starts with a file path
+ * (`file.md:12  …`, `src/a.ts(12,5): …`); `detail`: indented, under the last path or header;
+ * `header`: any other line. `context` is the path or header the line sits under, as a key part.
+ */
+export type IssueLine = { kind: "path" | "detail" | "header"; text: string; context: string };
+
+/** Classify a job's lines, dropping blanks and progress / count noise. Shared by verify keys and the build footer. */
+export function issueLines(lines: readonly string[]): IssueLine[] {
+  const out: IssueLine[] = [];
+  let context = "";
   for (const line of lines) {
     if (!line.trim() || NOISE.some((re) => re.test(line))) continue;
     if (/^\s/.test(line)) {
-      const body = line.trim().replace(/^\d+:\d+\s+/, "");
-      out.push(`${label} | ${header} | ${stripLineNumbers(body)}`);
+      out.push({ kind: "detail", text: line.replace(/\s+$/, ""), context });
       continue;
     }
     const path = PATH_LINE.exec(line);
     if (path) {
-      header = path[1]!;
-      const rest = line.slice(path[0].length).trim();
-      out.push(`${label} | ${path[1]} | ${stripLineNumbers(rest)}`);
+      context = path[1]!;
+      out.push({ kind: "path", text: line, context });
       continue;
     }
-    header = shortHeader(digitsToN(line.trim()));
-    out.push(`${label} | ${header}`);
+    context = shortHeader(digitsToN(line.trim()));
+    out.push({ kind: "header", text: line, context });
   }
   return out;
+}
+
+function lintKeys(label: string, lines: readonly string[]): ErrorKey[] {
+  return issueLines(lines).map((issue) => {
+    if (issue.kind === "detail") {
+      const body = issue.text.trim().replace(/^\d+:\d+\s+/, "");
+      return `${label} | ${issue.context} | ${stripLineNumbers(body)}`;
+    }
+    if (issue.kind === "path") {
+      const rest = issue.text.slice(PATH_LINE.exec(issue.text)![0].length).trim();
+      return `${label} | ${issue.context} | ${stripLineNumbers(rest)}`;
+    }
+    return `${label} | ${issue.context}`;
+  });
 }
 
 /** `file.md:12` → `file.md`; `(12,3)` → ``. */

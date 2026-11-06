@@ -74,6 +74,18 @@ Dependency is the only hard rule. Tie-breaks, in this order:
 
 Soft dependency (“easier after fluent X”) may swap two sittings that are already legal; it must not cross a band.
 
+### Learning-order check
+<a id="learning-order-check"></a>
+
+`lint:ageben` enforces the hard dependency on examples. Each construction in [constructions.ts](../../src/parse/constructions.ts) names one **home** section (a heading id, never an `<a id>`), and the banded sections of the sidebar, Beginner then Intermediate then Advanced, give every section a position. The check fails when:
+
+- an example in a stage page uses a construction whose home comes later on the path. Fix it by rewriting the example with forms already taught by that point, or, when the form belongs earlier, by moving the home section earlier (a sitting move or a registry anchor change, per [how to apply](#how-to-apply))
+- no example in the home section (or its subsections) uses any construction of its family. Add a teach example there.
+- a home anchor resolves to no heading, or to one outside every band. Point it at the teaching heading.
+- a use sits outside every band. Give the page a `band:` or mark the section ignored.
+
+`## See also` sections and pages off the sidebar are not checked. Links to later sections are reported only with `--order-report`; prose rules for them are under [teach now](grammar-docs.md#teach-now-dont-preview-later).
+
 ## How to apply
 <a id="how-to-apply"></a>
 
