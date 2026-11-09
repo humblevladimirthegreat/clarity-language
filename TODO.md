@@ -24,6 +24,8 @@ https://discord.gg/CAMGw2Akhc
 -should vowel pitch checker be very forgiving at beginning (check contour only rather than pitch matching)?
 -more stacked vowels (other series)
 -replace "one" special pronoun with unassigned tag, use tags in first order logic. zw*n for anonymous naming "Some person whom we will call zwan"
+-clarify singleton proper with associative
+-does th reliably mean an interpretation of the event?
 -programming language
 Align emotional locus with normal emotions 
 Emotion requires stimulus 

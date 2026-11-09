@@ -7,7 +7,7 @@
     "generate:word": "peggy --format es --dts --allowed-start-rules start,words,probe_writingSpan,probe_freeNumber,probe_hook,probe_prefixedWord,probe_citation,probe_prefixedX,probe_prefixedPlain,probe_prefixedJoin -o src/generated/word-parser.js src/parse/word.peggy",
     "build": "node scripts/build.mjs",
     "dev": "vitepress dev docs/grammar",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p docs/grammar/.vitepress",
     "grammar-check": "tsx scripts/grammar-check.ts",
     "parse-snapshot": "tsx scripts/parse-snapshot.ts",
     "lint:ageben": "tsx scripts/lint-ageben-docs.ts",
@@ -58,6 +58,7 @@
     "chevrotain": "^13.2.0",
     "chevrotain-allstar": "^0.5.0",
     "compromise": "^14.18.0",
+    "klatt-syn": "1.0.9",
     "minisearch": "^7.2.0"
   },
   "devDependencies": {

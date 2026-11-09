@@ -2,8 +2,8 @@
 import { ref } from 'vue'
 import { PITCH_BASE } from '@vowel-pitch'
 
-const STORAGE_KEY = 'ageben.pitchBase'
-/** The home note (the note `a` is said on), shared by every drill on the page and kept in the browser. */
+const STORAGE_KEY = 'ageben.pitchHome'
+/** The home note (the note `a` is said on), shared by every drill on the page and kept in the browser; Mid until chosen. */
 const sharedBase = ref(PITCH_BASE)
 </script>
 
@@ -17,25 +17,32 @@ import {
   drillPhrases,
   nearestHome,
   pitchOf,
+  savedHome,
   type DrillMode,
   type DrillPhrase,
   type DrillStep,
   type DrillTempo,
 } from '@vowel-pitch'
 import { openMic, type Mic } from '../lib/mic-pitch'
-import { heldNote, judgePitch, type Heard, type Verdict } from '../lib/pitch-detect'
-import { noteName, pianoBus, pianoContext, pianoVoice } from '../lib/piano-voice'
+import { heldNote, judgeMove, judgePitch, median, type Heard, type Verdict } from '../lib/pitch-detect'
+import { noteName, pianoBus, pianoContext } from '../lib/piano-voice'
+import { vowelVoice, warmVowel } from '../lib/vowel-voice'
 
-// Plays vowel-pitch patterns on the finger code's piano voice and lights each vowel as its note sounds;
-// the learner says the vowels back on their notes. Tempo sets the beat. `level` intermediate swaps pairs for the contour
-// mode and runs the scales through the consonants in alphabet order, with no rest between runs.
+// Plays vowel-pitch patterns, each vowel sung on its note by a plain synthesized voice, and lights each vowel as its
+// note sounds; the learner says the vowels back on their notes. Tempo sets the beat. `level` intermediate
+// swaps pairs for the contour mode and runs the scales through the consonants in alphabet order, with no rest between
+// runs; the voice sings only the vowels, and the learner adds the consonants.
 // The microphone is optional: *Find my home note* sets the home note from a held `a` (the nearest listed home), and *Check me* leaves a
 // silent turn after each note and marks the note with what the learner said in it; a clicked step does the same for one note.
 // With *From memory*, the vowel notes do not sound, so the learner says each unprompted; an opening `a` still sounds.
-// *Strict* (only while checking) halves the match window. Without the microphone, the home-note buttons set the home.
+// A beginner run is judged by moves: each note only has to go up or down from the one the learner said before it, so a
+// home note that is a little off costs nothing. *Strict* judges each note against its own note instead, within a
+// semitone; past beginner, notes are always judged so, and *Strict* halves the window. A clicked step is always judged
+// against its note. Without the microphone, the home-note buttons set the home.
 
 const props = defineProps<{ level?: 'intermediate' }>()
 const homeSelectId = `pd-home-${props.level ?? 'beginner'}`
+const strictId = `pd-strict-${props.level ?? 'beginner'}`
 
 const modes = computed(() => DRILL_MODES.filter((m) => (props.level ? m.intermediate : m.beginner)))
 
@@ -66,6 +73,10 @@ const finding = ref(false)
 const hearing = ref<number | null>(null)
 const micNote = ref('')
 const results = ref<Record<string, Verdict>>({})
+/** A run judged by moves rather than notes: the beginner drill, unless *Strict*. */
+const byMoves = computed(() => !props.level && !strict.value)
+/** The match window, in semitones, for a note judged against its own note. */
+const tolerance = computed(() => (props.level && strict.value ? 0.5 : 1))
 
 /** `turn`: a silent stretch for the learner to say the step's vowel. */
 type Timed = { phrase: number; step: number; at: number; dur: number; turn: boolean }
@@ -113,18 +124,55 @@ const VERDICT_LABELS: Record<Verdict['verdict'], string> = {
   sharp: 'a bit high',
   flat: 'a bit low',
   silent: "didn't hear",
+  heard: '✓ heard',
 }
 const resultOf = (pi: number, si: number): Verdict | undefined => results.value[`${pi}:${si}`]
+
+/** A move judgment says which way to go; a note judgment, how far off the note was. */
+function verdictLabel(r: Verdict): string {
+  const aim = r.aim
+  if (aim !== undefined && aim !== 0) {
+    if (r.verdict === 'ok') return aim > 0 ? '✓ went up' : '✓ went down'
+    if (r.verdict === 'close') return 'go further'
+    return aim > 0 ? 'go up' : 'go down'
+  }
+  return VERDICT_LABELS[r.verdict]
+}
 
 function stepLabel(s: DrillStep, pi: number, si: number): string {
   if ((manual.value?.key === `${pi}:${si}` && manual.value.saying) || (active.value?.turn && isOn(pi, si))) return 'your turn'
   const result = resultOf(pi, si)
-  if (result) return VERDICT_LABELS[result.verdict]
+  if (result) return verdictLabel(result)
   return s.kind === 'ref' ? 'home' : ''
 }
 
-const offTitle = (r: Verdict | undefined) =>
-  r && r.verdict !== 'silent' ? `${r.off > 0 ? '+' : '−'}${Math.abs(r.off).toFixed(1)} semitones` : undefined
+const way = (n: number) => (n > 0 ? 'up' : n < 0 ? 'down' : 'level')
+function offTitle(r: Verdict | undefined): string | undefined {
+  if (!r || r.verdict === 'silent' || r.verdict === 'heard') return undefined
+  if (r.moved !== undefined && r.aim !== undefined) {
+    return `went ${way(r.moved)} ${Math.abs(r.moved).toFixed(1)} semitones (aim: ${way(r.aim)} ${Math.abs(r.aim)})`
+  }
+  return `${r.off > 0 ? '+' : '−'}${Math.abs(r.off).toFixed(1)} semitones`
+}
+
+/** The step before this one in the run, across a phrase break: the note a move is measured from. */
+function stepBefore(pi: number, si: number): { pi: number; si: number } | null {
+  if (si > 0) return { pi, si: si - 1 }
+  if (pi > 0) return { pi: pi - 1, si: phrases.value[pi - 1]!.steps.length - 1 }
+  return null
+}
+
+/** Judges a step of a run from the pitches heard in its turn. */
+function judgeStep(pi: number, si: number, heard: readonly number[]): Verdict {
+  const s = phrases.value[pi]!.steps[si]!
+  if (!byMoves.value) return judgePitch(heard, pitchOf(s.vowel, base.value), tolerance.value)
+  const prev = stepBefore(pi, si)
+  if (!prev) return judgeMove(heard, null, 0)
+  const before = heardIn.get(`${prev.pi}:${prev.si}`) ?? []
+  const from = before.length >= 5 ? median(before) : null
+  const aim = pitchOf(s.vowel) - pitchOf(phrases.value[prev.pi]!.steps[prev.si]!.vowel)
+  return judgeMove(heard, from, aim)
+}
 
 let mic: Mic | null = null
 /** Pitches heard in each say turn, by `phrase:step`. */
@@ -161,8 +209,7 @@ function listen(): void {
   for (const t of timeline.value) {
     const key = `${t.phrase}:${t.step}`
     if (!t.turn || now.value < t.at + t.dur || results.value[key]) continue
-    const s = phrases.value[t.phrase]!.steps[t.step]!
-    results.value[key] = judgePitch(heardIn.get(key) ?? [], pitchOf(s.vowel, base.value), strict.value ? 0.5 : 1)
+    results.value[key] = judgeStep(t.phrase, t.step, heardIn.get(key) ?? [])
   }
 }
 
@@ -197,14 +244,18 @@ function play(): void {
   heardIn.clear()
   const a = pianoContext()
   bus = pianoBus(a)
+  const notes = timeline.value.filter((e) => !e.turn).map((e) => ({ e, s: phrases.value[e.phrase]!.steps[e.step]! }))
+  // Render every sung vowel before the clock starts, so the first notes are not late.
+  for (const { s } of notes) warmVowel(a, s.vowel, pitchOf(s.vowel, base.value))
   t0 = a.currentTime + 0.1
-  for (const e of timeline.value) {
-    if (e.turn) continue
-    const s = phrases.value[e.phrase]!.steps[e.step]!
-    pianoVoice(a, bus, pitchOf(s.vowel, base.value), t0 + e.at, e.dur * 0.9, s.kind === 'ref' ? 0.6 : 0.9, 0.4)
-  }
+  for (const { e, s } of notes) sing(a, bus, s.vowel, t0 + e.at, e.dur * 0.9, s.kind === 'ref' ? 0.6 : 0.9)
   playing.value = true
   raf = requestAnimationFrame(frame)
+}
+
+/** One vowel sung on its note. */
+function sing(a: AudioContext, out: AudioNode, vowel: string, when: number, dur: number, vel: number): void {
+  vowelVoice(a, out, vowel, pitchOf(vowel, base.value), when, dur, vel)
 }
 
 let previewBus: GainNode | null = null
@@ -224,7 +275,8 @@ function preview(vowel: string): void {
   previewBus = pianoBus(a)
   const midi = pitchOf(vowel, base.value)
   const dur = BEAT * 0.9
-  pianoVoice(a, previewBus, midi, a.currentTime + 0.02, dur, 0.9, 0.4)
+  warmVowel(a, vowel, midi)
+  sing(a, previewBus, vowel, a.currentTime + 0.02, dur, 0.9)
   previewMidi.value = midi
   if (previewClear) clearTimeout(previewClear)
   previewClear = window.setTimeout(() => {
@@ -233,7 +285,7 @@ function preview(vowel: string): void {
   }, (dur + 0.05) * 1000)
 }
 
-/** The piano note sounding now, or null while nothing plays. */
+/** The note sounding now, or null while nothing plays. */
 const playedMidi = computed(() => {
   if (previewMidi.value !== null) return previewMidi.value
   const e = active.value
@@ -274,7 +326,7 @@ function clickStep(pi: number, si: number, vowel: string): void {
       if (m !== null) heard.push(m)
     }
     if (t >= lead + SAY_BACK) {
-      results.value[key] = judgePitch(heard, target, strict.value ? 0.5 : 1)
+      results.value[key] = judgePitch(heard, target, tolerance.value)
       endManual()
     } else manualRaf = requestAnimationFrame(tick)
   }
@@ -352,8 +404,8 @@ watch([base, tempo, check, hearFirst, strict], () => {
 
 onMounted(() => {
   try {
-    const saved = Number(window.localStorage.getItem(STORAGE_KEY))
-    if (Number.isFinite(saved)) base.value = nearestHome(saved)
+    const saved = savedHome(window.localStorage.getItem(STORAGE_KEY))
+    if (saved !== null) base.value = saved
   } catch {
     // Storage blocked: start from the default note.
   }
@@ -428,8 +480,8 @@ onBeforeUnmount(() => {
         <div v-if="check" class="pd-group" role="group" aria-label="Check">
           <button type="button" class="btn" :class="{ on: hearFirst }" :aria-pressed="hearFirst" @click="hearFirst = true">Hear first</button>
           <button type="button" class="btn" :class="{ on: !hearFirst }" :aria-pressed="!hearFirst" @click="hearFirst = false">From memory</button>
-          <button type="button" class="btn" :class="{ on: strict }" :aria-pressed="strict" @click="strict = !strict">Strict</button>
         </div>
+        <label v-if="check" class="pd-toggle" :for="strictId"><input :id="strictId" v-model="strict" type="checkbox" role="switch" /> Strict</label>
       </div>
     </div>
     <p v-if="finding" class="pd-mic-note">Say a long <code>a</code> on a comfortable low note, and hold it.</p>
@@ -510,6 +562,20 @@ onBeforeUnmount(() => {
   font-size: 0.8rem;
   color: var(--vp-c-text-2);
   margin-inline-end: 0.15rem;
+}
+
+.pd-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--vp-c-text-2);
+  cursor: pointer;
+}
+
+.pd-toggle input {
+  accent-color: var(--vp-c-brand-1);
+  cursor: pointer;
 }
 
 .pd-home {
@@ -645,7 +711,8 @@ onBeforeUnmount(() => {
   border-style: dashed;
 }
 
-.pd-step.ok {
+.pd-step.ok,
+.pd-step.heard {
   border-color: var(--vp-c-green-1);
 }
 

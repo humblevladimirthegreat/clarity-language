@@ -1,4 +1,4 @@
-// The finger code's piano voice, shared by the Finger Code page and the pitch drill so both use one sound.
+// The finger code's piano voice, and the audio context and output the pitch drill's sung vowels share with it.
 // Browser only: create the context from a click.
 
 let ctx: AudioContext | null = null

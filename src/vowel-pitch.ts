@@ -36,6 +36,16 @@ export const PITCH_HOMES: readonly { midi: number; label: string }[] = [
 export const nearestHome = (midi: number): number =>
   PITCH_HOMES.reduce((best, h) => (Math.abs(h.midi - midi) < Math.abs(best - midi) ? h.midi : best), PITCH_HOMES[0]!.midi);
 
+/**
+ * The home note saved in the browser, snapped to a listed home; null when nothing usable is saved, so the drill
+ * keeps the default. (A missing value must not read as note 0, which snaps to the lowest home.)
+ */
+export function savedHome(raw: string | null): number | null {
+  if (raw === null || raw.trim() === "") return null;
+  const midi = Number(raw);
+  return Number.isFinite(midi) ? nearestHome(midi) : null;
+}
+
 /** A vowel's pitch as a MIDI note, from the home note. */
 export const pitchOf = (vowel: string, base = PITCH_BASE): number => base + VOWEL_PITCH[vowel]!;
 

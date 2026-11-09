@@ -122,6 +122,7 @@ export default defineConfig({
           { text: 'Inspect', link: '/inspect' },
           { text: 'Number Pegs', link: '/pegs' },
           { text: 'Finger Code', link: '/finger-code' },
+          { text: 'Pitch Practice', link: '/pitch-practice' },
           { text: 'Terminology', link: '/terminology' },
         ],
       },

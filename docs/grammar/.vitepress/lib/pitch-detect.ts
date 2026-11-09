@@ -82,7 +82,44 @@ export function heldNote(heard: readonly Heard[], now: number, hold = 0.8): numb
   return pitched.every((m) => Math.abs(m - mid) <= 0.5) ? mid : null
 }
 
-export type Verdict = { verdict: 'ok' | 'close' | 'sharp' | 'flat' | 'silent'; off: number }
+/**
+ * A judged note. `off` is in semitones from the target. A move judgment also keeps `aim`, the semitones the
+ * note should move from the one before, and `moved`, how far it did; `heard` marks a note with none before it.
+ */
+export type Verdict = {
+  verdict: 'ok' | 'close' | 'sharp' | 'flat' | 'silent' | 'heard'
+  off: number
+  aim?: number
+  moved?: number
+}
+
+/** The smallest move, in semitones, that counts as going up or down. */
+export const MIN_MOVE = 1
+
+/**
+ * A voiced note judged only by its move from the note before (`from`, the median the learner said there),
+ * so a learner off their home note still passes when the shape is right. Moving the way `aim` points by at least
+ * `MIN_MOVE` is ok, any smaller move that way is close, and no move or the wrong way is flat (should rise) or
+ * sharp (should fall). A level `aim` is ok within `MIN_MOVE`. Unlike `judgePitch`, octaves do not fold: going down
+ * a fourth for an aimed fifth up lands an octave from the aim, and is still wrong. A tracker that hears one voice an
+ * octave off tends to hear both notes so, and the move survives.
+ */
+export function judgeMove(heard: readonly number[], from: number | null, aim: number): Verdict {
+  if (heard.length < 5) return { verdict: 'silent', off: 0 }
+  if (from === null) return { verdict: 'heard', off: 0 }
+  const moved = median(heard) - from
+  const off = moved - aim
+  const result = (verdict: Verdict['verdict']): Verdict => ({ verdict, off, aim, moved })
+  if (aim === 0) {
+    if (Math.abs(moved) <= MIN_MOVE) return result('ok')
+    if (Math.abs(moved) <= 2 * MIN_MOVE) return result('close')
+    return result(moved > 0 ? 'sharp' : 'flat')
+  }
+  const along = Math.sign(aim) * moved
+  if (along >= MIN_MOVE) return result('ok')
+  if (along > 0) return result('close')
+  return result(aim > 0 ? 'flat' : 'sharp')
+}
 
 /**
  * A voiced note against its target, in any octave, since a voice may sit an octave from the piano: within

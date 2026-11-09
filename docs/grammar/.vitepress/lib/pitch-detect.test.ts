@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { describe, it } from 'node:test'
 
-import { detectPitch, freqMidi, heldNote, judgePitch, type Heard } from './pitch-detect.js'
+import { detectPitch, freqMidi, heldNote, judgeMove, judgePitch, type Heard } from './pitch-detect.js'
 
 const RATE = 48000
 
@@ -55,5 +55,33 @@ describe('pitch detect', () => {
     assert.equal(judgePitch([55, 55], 55).verdict, 'silent')
     assert.equal(judgePitch([55.6, 55.6, 55.6, 55.6, 55.6], 55, 0.5).verdict, 'close')
     assert.equal(judgePitch([55.4, 55.4, 55.4, 55.4, 55.4], 55, 0.5).verdict, 'ok')
+  })
+
+  it('judges a move by its direction only, from wherever the last note was', () => {
+    const at = (m: number) => [m, m, m, m, m]
+    // A rise of 3 aimed: any rise of a semitone or more passes, wherever it starts.
+    assert.deepEqual(judgeMove(at(55), 52, 3), { verdict: 'ok', off: 0, aim: 3, moved: 3 })
+    assert.equal(judgeMove(at(50.5), 49, 3).verdict, 'ok')
+    assert.equal(judgeMove(at(60), 52, 3).verdict, 'ok')
+    assert.equal(judgeMove(at(52.5), 52, 3).verdict, 'close')
+    assert.equal(judgeMove(at(52), 52, 3).verdict, 'flat')
+    assert.equal(judgeMove(at(50), 52, 3).verdict, 'flat')
+    // A fall: the mirror image.
+    assert.equal(judgeMove(at(48), 52, -4).verdict, 'ok')
+    assert.equal(judgeMove(at(51.6), 52, -4).verdict, 'close')
+    assert.equal(judgeMove(at(53), 52, -4).verdict, 'sharp')
+    // A level move: within a semitone.
+    assert.equal(judgeMove(at(52.8), 52, 0).verdict, 'ok')
+    assert.equal(judgeMove(at(53.5), 52, 0).verdict, 'close')
+    assert.equal(judgeMove(at(49), 52, 0).verdict, 'flat')
+  })
+
+  it('keeps octaves in a move, and needs a note before to judge one', () => {
+    const at = (m: number) => [m, m, m, m, m]
+    // Down a fourth for a fifth up lands an octave from the aim: still the wrong way.
+    assert.equal(judgeMove(at(47), 52, 7).verdict, 'flat')
+    assert.equal(judgeMove(at(64), 52, 7).verdict, 'ok')
+    assert.deepEqual(judgeMove(at(55), null, 3), { verdict: 'heard', off: 0 })
+    assert.equal(judgeMove([55, 55], 52, 3).verdict, 'silent')
   })
 })

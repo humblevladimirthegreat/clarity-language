@@ -5,7 +5,7 @@ import { readFileSync } from "node:fs";
 
 import { CONSONANT_LETTERS, vowelKey } from "./finger-code.ts";
 import { letterNameTable } from "./retie/letter-names.ts";
-import { drillPhrases, nearestHome, PITCH_BASE, PITCH_HOMES, PITCH_ORDER, STACKS, VOWEL_PITCH, type DrillMode } from "./vowel-pitch.ts";
+import { drillPhrases, nearestHome, PITCH_BASE, savedHome, PITCH_HOMES, PITCH_ORDER, STACKS, VOWEL_PITCH, type DrillMode } from "./vowel-pitch.ts";
 import { grammarFile } from "./repo-paths.js";
 
 describe("vowel pitch", () => {
@@ -16,6 +16,15 @@ describe("vowel pitch", () => {
     assert.equal(nearestHome(51), PITCH_BASE);
     assert.equal(nearestHome(50.9), PITCH_BASE);
     assert.equal(nearestHome(43), 43);
+  });
+
+  it("reads a saved home note, and keeps the default when none is saved", () => {
+    assert.equal(savedHome(null), null);
+    assert.equal(savedHome(""), null);
+    assert.equal(savedHome("not a note"), null);
+    assert.equal(savedHome("55"), 55);
+    assert.equal(savedHome("54.6"), 55);
+    assert.equal(savedHome(String(PITCH_BASE)), PITCH_BASE);
     assert.equal(nearestHome(61), 60);
     assert.equal(nearestHome(44), 43);
   });

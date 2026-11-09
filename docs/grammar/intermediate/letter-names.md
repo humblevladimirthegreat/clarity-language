@@ -59,6 +59,8 @@ The ten digit letters are the consonants of the [digit syllables](/numbers#count
 | `n` | `na` (9) | `nu` | `a` ↔ `u` |
 | `m` | `mo` (0) | `me` | `o` ↔ `e` |
 
-Choose **Stacks** to hear each stack against your home note and say it back. **Digits** counts the ten digits in digit order (`ba` `do` `ge` `hu` …), climbing the vowel pitches, and **Alphabet** says every letter name in alphabet order (`bu` `de` `go` `ha` …), walking back down.
+### Vowel pitch practice {#vowel-pitch-practice}
+
+Choose **Stacks** to hear each stack against your home note and say it back. **Digits** counts the ten digits in digit order (`ba` `do` `ge` `hu` …), climbing the vowel pitches, and **Alphabet** says every letter name in alphabet order (`bu` `de` `go` `ha` …), walking back down. The voice sings only the vowels, and you add the consonants. Here **Check me** matches each note itself, within about a semitone, and **Strict** within about half a semitone.
 
 <PitchDrill level="intermediate" />
