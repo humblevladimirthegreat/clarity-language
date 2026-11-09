@@ -2,11 +2,12 @@ import { copyFileSync, mkdirSync } from 'node:fs'
 import { dirname } from 'node:path'
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
+import { llmsDevPlugin } from '../../../scripts/lib/llms-txt.ts'
 import { ensureCmuDict } from '../../../src/echo-pronunciation.ts'
 import { buildStampIso, formatBuildStampEt } from './lib/build-stamp.ts'
 import { injectInArticleToc } from './lib/inject-in-article-toc.ts'
 import { learnerNameSlots } from './lib/learner-name-md.ts'
-import { cheatSheetSidebar, orientation, sidebarGroups } from './lib/reading-order.ts'
+import { cheatSheetSidebar, claritishLessons, orientation, recipePages, sidebarGroups } from './lib/reading-order.ts'
 
 const buildAt = new Date()
 
@@ -25,6 +26,8 @@ export default defineConfig({
   description:
     'Learner grammar for Ageben — compassion, rationality, and empowerment encoded in vocabulary and grammar.',
   base: '/grammar/',
+  // Plain-Markdown copies for AI agents, written by scripts/publish-docs-extras.mjs (served live by llmsDevPlugin in dev)
+  head: [['link', { rel: 'alternate', type: 'text/markdown', href: '/llms.txt', title: 'llms.txt' }]],
   rewrites: {
     'beginner/:page': ':page',
     'intermediate/:page': ':page',
@@ -36,6 +39,8 @@ export default defineConfig({
   cleanUrls: false,
   ignoreDeadLinks: false,
   vite: {
+    // Serves /llms.txt and the other agent files under `npm run dev`
+    plugins: [llmsDevPlugin()],
     define: {
       __SITE_BUILD_ISO__: JSON.stringify(buildStampIso(buildAt)),
       __SITE_BUILD_ET__: JSON.stringify(formatBuildStampEt(buildAt)),
@@ -80,41 +85,10 @@ export default defineConfig({
       { icon: 'discord', link: 'https://discord.gg/CAMGw2Akhc', ariaLabel: 'Ageben on Discord' },
     ],
     sidebar: [
-      {
-        text: 'Claritish: Ageben in English',
-        collapsed: true,
-        items: [
-          { text: 'Claritish Introduction', link: '/claritish/' },
-          { text: 'How sure are you?', link: '/claritish/could-be' },
-          { text: 'How do you know?', link: '/claritish/how-you-know' },
-          { text: 'Labels', link: '/claritish/labels' },
-          { text: 'Can and can\'t', link: '/claritish/can-and-cant' },
-          { text: 'Thanks and sorry', link: '/claritish/thanks-and-sorry' },
-          { text: 'Allowed and required', link: '/claritish/allowed-required-agreed' },
-          { text: 'Oughts and motives', link: '/claritish/oughts-and-motives' },
-          { text: 'Wants and plans', link: '/claritish/wants-and-plans' },
-          { text: 'Decisions and tries', link: '/claritish/decisions-and-tries' },
-          { text: 'Feelings in three parts', link: '/claritish/feelings' },
-          { text: 'Bonus: Tone marks', link: '/claritish/tone-marks' },
-          { text: 'Learn the full language', link: '/claritish/learn' },
-          { text: 'Cheat sheet', link: '/claritish/cheat-sheet' },
-          { text: 'Journal editor', link: '/claritish/editor' },
-        ],
-      },
+      { text: 'Claritish: Ageben in English', collapsed: true, items: claritishLessons },
       ...orientation,
       ...sidebarGroups,
-      {
-        text: 'Saying it in Ageben',
-        collapsed: true,
-        items: [
-          { text: 'Overview', link: '/english' },
-          { text: 'People and places', link: '/say-people-places' },
-          { text: 'Amounts, sizes and time', link: '/say-amounts' },
-          { text: 'Reasons and plans', link: '/say-reasons' },
-          { text: 'Asking and answering', link: '/say-questions' },
-          { text: 'Tense and modals', link: '/say-tense' },
-        ],
-      },
+      { text: 'Saying it in Ageben', collapsed: true, items: recipePages },
       {
         text: 'Tools',
         items: [

@@ -232,3 +232,32 @@ export function lessonPages(
 export function pathPages(lessons: readonly LessonLink[] = readingOrder): string[] {
   return lessonPages(lessons).map((item) => item.page)
 }
+
+/** Claritish track, in sidebar order. */
+export const claritishLessons: LessonLink[] = [
+  { text: 'Claritish Introduction', link: '/claritish/' },
+  { text: 'How sure are you?', link: '/claritish/could-be' },
+  { text: 'How do you know?', link: '/claritish/how-you-know' },
+  { text: 'Labels', link: '/claritish/labels' },
+  { text: "Can and can't", link: '/claritish/can-and-cant' },
+  { text: 'Thanks and sorry', link: '/claritish/thanks-and-sorry' },
+  { text: 'Allowed and required', link: '/claritish/allowed-required-agreed' },
+  { text: 'Oughts and motives', link: '/claritish/oughts-and-motives' },
+  { text: 'Wants and plans', link: '/claritish/wants-and-plans' },
+  { text: 'Decisions and tries', link: '/claritish/decisions-and-tries' },
+  { text: 'Feelings in three parts', link: '/claritish/feelings' },
+  { text: 'Bonus: Tone marks', link: '/claritish/tone-marks' },
+  { text: 'Learn the full language', link: '/claritish/learn' },
+  { text: 'Cheat sheet', link: '/claritish/cheat-sheet' },
+  { text: 'Journal editor', link: '/claritish/editor' },
+]
+
+/** Saying it in Ageben recipe track, in sidebar order. */
+export const recipePages: LessonLink[] = [
+  { text: 'Overview', link: '/english' },
+  { text: 'People and places', link: '/say-people-places' },
+  { text: 'Amounts, sizes and time', link: '/say-amounts' },
+  { text: 'Reasons and plans', link: '/say-reasons' },
+  { text: 'Asking and answering', link: '/say-questions' },
+  { text: 'Tense and modals', link: '/say-tense' },
+]
