@@ -150,7 +150,7 @@ To call a group at the start of a turn, put **-x** on the call word (the vocativ
 
 | Ageben | Use | English |
 |--------|-----|---------|
-| **-nx** | a kind or a title as the group | *hey, kids*; *Team Alpha* |
+| **-nx** | a name, or a kind as a title, and associates | *hey, kids*; *hey, Ahelan and associates* |
 | **-rx** | prior addressee and associates | *hey, you (that one) and associates* |
 | **`yawanx`** | current addressees, no name | *hey, you all* |
 
@@ -161,7 +161,7 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 | Word | Use | English |
 |------|-----|---------|
 | nouns `/z/` `/d/` `/b/` | associative group (name / resume); indefinite group (kind **-lx** / **-mx**) | *Azozon and associates*; *some dogs* |
-| vocatives `/y/` | group address | *hey, cats*; *Team Alpha* |
+| vocatives `/y/` | group address | *hey, cats*; *hey, Ahelan and associates* |
 | person-role specials | speaker’s people / address set | *I and my people*; *you all* |
 | join **-rx** (`zarx`) | [unnamed group](/joins#unspecified-member-r-phrase) of members | *some ones* / *some of them* |
 | `/v/`…**-x** | collective event | one shared act |

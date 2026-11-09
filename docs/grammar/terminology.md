@@ -166,7 +166,7 @@ A parenthetical comment span (`th(…)` on the sentence; `g(…)`, `w(…)`, or 
 
 ### Associative
 
-**-x** = named **anchor plus associates**. On a kind word (**-lx**) or a resume (**-rx**), an indefinite group.
+**-x** after an ending. On a name (**-nx**), a resume (**-rx**), or a person pointer: an **anchor plus associates**. On a first mention (**-lx**, **-mx**, **-lnx**): an indefinite group of that kind in this situation.
 
 [Plurality](/plurality#associative)
 

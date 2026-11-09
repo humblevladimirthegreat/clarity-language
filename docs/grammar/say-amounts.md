@@ -434,7 +434,7 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 | *crowd* | `zeyelx thubom zol gral` | people, more than usual |
 | *pair* (two of a kind) | `zodozelx g+2` | two dogs |
 | *couple* (two people who are together) | `zagayal` | the everyday sense of `agaya` |
-| *titled group* (the group named Uhunan) | `zuhunanx` | named, **-nx** |
+| *titled group* (the group named Uhunan) | `zuhunan` | one named thing, **-n** |
 | *member* (of a group) | `gobom` + `/b/` group | part of the group |
 | *member* (unspecified, of a menu or list) | `zer` | anything among the listed |
 | *list* (*a list of cats and dogs*) | `zogozel zodozel zal` | an and-list |
@@ -454,13 +454,13 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 >
 > "There is a crowd." (more people than usual)
 
-> `zazozon gobom bluhunanx vowurol.`
+> `zazozon gobom bluhunan vowurol.`
 >
-> [z-Azozon | [g-part-of | bl-Uhunan-x]] | v-walk
+> [z-Azozon | [g-part-of | bl-Uhunan]] | v-walk
 >
 > "Azozon, a member of the group Uhunan, walks."
 
-**Compare with:** a named group needs its own name (**-nx**). *A few* or *several* is an approximate number ([how many](#quantity-words)).
+**Compare with:** a named group is one named thing, so it takes plain **-n**; **-nx** would add the people around it. *A few* or *several* is an approximate number ([how many](#quantity-words)).
 
 ### Named standards and derived units
 <a id="unit-short-form"></a>

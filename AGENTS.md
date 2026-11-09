@@ -12,6 +12,8 @@ Each row names what the file owns. The file is the authority; this table is only
 
 ### Grammar (learner-facing, `docs/grammar/`)
 
+Stage pages sit in `beginner/`, `intermediate/`, or `advanced/` under `docs/grammar/`; locate one with `ls docs/grammar/*/NAME.md`.
+
 | Source | Owns |
 |--------|------|
 | `purpose.md` | Psychological purpose, limits, learner tour. Site home. |

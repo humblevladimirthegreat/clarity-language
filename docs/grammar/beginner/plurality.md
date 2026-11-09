@@ -17,7 +17,7 @@ Without **-x**, the word picks **one** person or thing. With **-x** after the en
 >
 > "Azozon and associates walk."
 
-A name already ends in **-n**, so a name plus associates is **-nx** (`zazozonx`). The same **-nx** also marks a group that has its own name or title (*Team Alpha*).
+A name already ends in **-n**, so a name plus associates is **-nx** (`zazozonx`). A group with its own name or title (*Team Alpha*) is one named thing, so it takes plain **-n**; **-nx** on it adds the people around the group.
 
 To point back to that group (or to a prior person **and** their associates), add **-x** after resume **-r**:
 
@@ -63,7 +63,7 @@ An extra noun takes **-x** the same way. Here the recipient is Alazun and associ
 |--------|-----|---------|
 | **-lx** | indefinite group (a set in this situation), concrete | *some cats* (a set in this situation) |
 | **-mx** | indefinite group (a set in this situation), abstract | same grouping on a **-m** root |
-| **-nx** | named / titled group | *Team Alpha*; *Azozon and associates* as a title |
+| **-nx** | a named one and associates | *Azozon and associates*; *Team Alpha and associates* |
 | **-lnx** | indefinite group of things a name applies to | *some Azozons* (beds of that brand) |
 | **-rx** | resume someone already mentioned and associates, or a prior group | *they* (that one and associates) |
 
