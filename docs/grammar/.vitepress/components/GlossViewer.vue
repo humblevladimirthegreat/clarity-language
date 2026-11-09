@@ -117,6 +117,9 @@ watch(text, () => {
 })
 
 onMounted(() => {
+  // `inspect.html?text=…` opens with that input, so links (and browsing agents) can skip typing.
+  const fromUrl = new URLSearchParams(window.location.search).get('text')
+  if (fromUrl?.trim()) text.value = fromUrl
   scheduleParseError()
   loadPromptContext().catch((err) => {
     promptError.value = `Could not load the prompt examples. ${err instanceof Error ? err.message : String(err)}`

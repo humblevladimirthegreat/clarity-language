@@ -15,6 +15,7 @@ import {
   recipePages,
   sidebarGroups,
 } from '../../docs/grammar/.vitepress/lib/reading-order.ts'
+import { AGENT_BUNDLE_PATH } from './agent-bundle.ts'
 import { parseCompoundCsv } from '../../src/lexicon-compounds.ts'
 import { parsePublishedCsv } from '../../src/lexicon-search.ts'
 import { GRAMMAR_DIR, readData } from '../../src/repo-paths.ts'
@@ -174,7 +175,9 @@ const NOTES = [
   '- Ageben examples are in backticks. Each page is plain Markdown; the HTML site adds audio, search, and interactive tools.',
   '- `SELF` in an example stands for the reader’s own name.',
   '- Stage pages are in learning order: Beginner, then Intermediate, then Advanced. A page uses only forms taught earlier in that order.',
-  `- To work out what an Ageben sentence means, use the Inspect tool (${GRAMMAR_URL}inspect.html) rather than guessing from the prose.`,
+  '- Ageben has a parser. To work out what an Ageben sentence means, or whether it is well formed, run it through the parser rather than guessing from the prose. There is no server API; run it one of these ways:',
+  `  - If you can run code: download ${SITE_ORIGIN}/${AGENT_BUNDLE_PATH}, one file with the lexicon built in and no dependencies (Node 18+, Deno, Bun, or a browser). \`node ageben.mjs 'zoguvom thaber guwathum.'\` prints each input's word-by-word gloss, or its parse error and words the lexicon does not know, and exits 1 if any input fails. \`--prompt\` prints a prompt that explains the gloss notation and asks for an English translation (give it to yourself or another model); \`--json\` prints structured results; \`-\` reads one input per line from stdin; \`--help\` lists the rest. Imported as a module it exports \`check\`, \`report\`, \`inspect\`, \`parseTree\`, and \`translationPrompt\`.`,
+  `  - If you can use a browser: open ${GRAMMAR_URL}inspect.html?text= followed by the URL-encoded Ageben. Click a word for its part of speech, reference ending, and gloss; **Copy Translation Prompt** copies the same prompt as \`--prompt\`.`,
 ]
 
 /** `/llms.txt`: title, summary, and one link per page's Markdown copy. */

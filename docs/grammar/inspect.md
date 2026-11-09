@@ -5,7 +5,7 @@ outline: false
 
 # Inspect
 
-Paste Ageben and click or highlight a word for a floating inspect card with part of speech, reference ending, lexicon or overlay gloss, and morph chips. Failed words stay in the stream with an error card. Highlight a join, span fence, or island brace (`{` / `}`) to inspect the construction.
+Paste Ageben and click or highlight a word for a floating inspect card with part of speech, reference ending, lexicon or overlay gloss, and morph chips. Failed words stay in the stream with an error card. Highlight a join, span fence, or island brace (`{` / `}`) to inspect the construction. To link to a sentence, end this page's address with ?text= followed by the URL-encoded Ageben.
 
 **IPA:** below the input transcribes the spoken forms (phonology letter table, with syllable dots). Writing shorthand and span brackets expand to their spoken forms first; foreign `<>` interiors and compact loan words are skipped (not Ageben phonology).
 

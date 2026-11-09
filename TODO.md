@@ -19,7 +19,6 @@ https://discord.gg/CAMGw2Akhc
 -tmp purging?
 -blog posts about using AI; public repo containing tips and tricks that can serve as a template
 -landmark relations with no form yet: spatial *past* (walks past the house), *opposite* / *across from*, *beyond* (far side of); *along* and *up / down the hill* only approximate. New /h/ + bl- rows on locative-relations.md, not same-role words
--should vowel pitch checker be very forgiving at beginning (check contour only rather than pitch matching)?
 -more stacked vowels (other series)
 -replace "one" special pronoun with unassigned tag, use tags in first order logic. zw*n for anonymous naming "Some person whom we will call zwan"
 -does th reliably mean an interpretation of the event?

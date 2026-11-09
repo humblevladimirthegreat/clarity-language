@@ -2,7 +2,8 @@
 /**
  * After VitePress writes dist/grammar/, add Amplify publish extras:
  * root index (home vs 404), copy of 404.html, stubs for pageMoves, and the
- * plain-Markdown copies for AI agents (llms.txt, llms-full.txt, per-page .md).
+ * plain-Markdown copies for AI agents (llms.txt, llms-full.txt, per-page .md), and the
+ * parser bundle agents can run (tools/ageben.mjs).
  */
 import { copyFileSync, mkdirSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
@@ -14,6 +15,7 @@ import {
   rootIndexHtml,
   stubHtml,
 } from './lib/site-redirects.ts'
+import { agentBundle, AGENT_BUNDLE_PATH } from './lib/agent-bundle.ts'
 import { llmsFiles } from './lib/llms-txt.ts'
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url))
@@ -42,3 +44,7 @@ for (const [path, body] of llmsFiles()) {
   mkdirSync(dirname(dest), { recursive: true })
   writeFileSync(dest, body)
 }
+
+const bundleDest = join(DIST, AGENT_BUNDLE_PATH)
+mkdirSync(dirname(bundleDest), { recursive: true })
+writeFileSync(bundleDest, await agentBundle())

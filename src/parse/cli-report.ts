@@ -3,9 +3,9 @@
  * a one-line error, then any unknown words), instead of the parse tree. `--json` prints the tree.
  */
 import type { ClassifyTables } from "./classify.js";
-import { parse } from "./index.js";
-import { unknownWords, type UnknownWord } from "./lexicon-check.js";
 import { morphGlossLine } from "./morph-gloss.js";
+import { parseWithTables } from "./parse-core.js";
+import { unknownWordsWith, type UnknownWord } from "./unknown-words.js";
 import { WordParseError } from "./word.js";
 
 export type ReportOptions = {
@@ -37,12 +37,12 @@ export function reportInput(input: string, tables: ClassifyTables, options: Repo
   const lines = [input];
   let result;
   try {
-    result = parse(input, tables, { checkAmbiguity: options.checkAmbiguity, constructions: options.constructions });
+    result = parseWithTables(input, tables, { checkAmbiguity: options.checkAmbiguity, constructions: options.constructions });
   } catch (error) {
     lines.push(`  ${describeError(error)}`);
     return { lines, failed: true };
   }
-  const unknown = unknownWords(result);
+  const unknown = unknownWordsWith(result, tables);
   try {
     lines.push(`  ${morphGlossLine(input, tables, { strict: true })}`);
   } catch (error) {
