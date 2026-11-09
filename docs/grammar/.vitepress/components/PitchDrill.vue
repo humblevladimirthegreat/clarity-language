@@ -23,7 +23,7 @@ import {
   type DrillStep,
   type DrillTempo,
 } from '@vowel-pitch'
-import { openMic, type Mic } from '../lib/mic-pitch'
+import { useMic } from '../composables/useMic'
 import { heldNote, judgeMove, judgePitch, median, type Heard, type Verdict } from '../lib/pitch-detect'
 import { noteName, pianoBus, pianoContext } from '../lib/piano-voice'
 import { vowelVoice, warmVowel } from '../lib/vowel-voice'
@@ -174,32 +174,21 @@ function judgeStep(pi: number, si: number, heard: readonly number[]): Verdict {
   return judgeMove(heard, from, aim)
 }
 
-let mic: Mic | null = null
+/** The microphone: closed once neither the check nor a find listens, and always when the drill goes away. */
+const mic = useMic(pianoContext, () => check.value || finding.value)
 /** Pitches heard in each say turn, by `phrase:step`. */
 const heardIn = new Map<string, number[]>()
 
+/** Opens the microphone, or says why it cannot. A caller that gets true must use it or call `mic.release()`. */
 async function ensureMic(): Promise<boolean> {
-  if (mic) return true
-  const a = pianoContext()
-  try {
-    mic = await openMic(a)
-    micNote.value = ''
-    return true
-  } catch {
-    micNote.value = 'No microphone available. Choose a home note instead.'
-    return false
-  }
-}
-
-function releaseMic(): void {
-  if (check.value || finding.value) return
-  mic?.close()
-  mic = null
+  const ok = await mic.open()
+  micNote.value = ok ? '' : 'No microphone available. Choose a home note instead.'
+  return ok
 }
 
 /** Listens while a turn to say is open, and marks its step once the turn ends. */
 function listen(): void {
-  if (!mic || !check.value) return
+  if (!mic.ready || !check.value) return
   const e = active.value
   if (e?.turn && now.value >= e.at + GRACE) {
     const m = mic.read()
@@ -306,7 +295,7 @@ function endManual(): void {
 
 /** Sounds a clicked step; while the microphone checks, also judges the learner saying it (back). */
 function clickStep(pi: number, si: number, vowel: string): void {
-  if (!check.value || !mic) return preview(vowel)
+  if (!check.value || !mic.ready) return preview(vowel)
   stop()
   const key = `${pi}:${si}`
   delete results.value[key]
@@ -322,7 +311,7 @@ function clickStep(pi: number, si: number, vowel: string): void {
     const t = a.currentTime - start
     if (t >= lead) manual.value!.saying = true
     if (t >= lead + GRACE) {
-      const m = mic?.read() ?? null
+      const m = mic.read()
       if (m !== null) heard.push(m)
     }
     if (t >= lead + SAY_BACK) {
@@ -353,7 +342,7 @@ function endFind(): void {
   findRaf = 0
   finding.value = false
   hearing.value = null
-  releaseMic()
+  mic.release()
 }
 
 /** Listens for a held note and makes it the home note. */
@@ -361,13 +350,15 @@ async function findA(): Promise<void> {
   if (finding.value) return endFind()
   stop()
   if (!(await ensureMic())) return
+  // A second click already started a find while the browser asked.
+  if (finding.value) return
   finding.value = true
   micNote.value = ''
   const a = pianoContext()
   const start = a.currentTime
   const heard: Heard[] = []
   const tick = () => {
-    if (!mic) return endFind()
+    if (!mic.ready) return endFind()
     const t = a.currentTime - start
     const midi = mic.read()
     hearing.value = midi
@@ -388,7 +379,7 @@ async function findA(): Promise<void> {
 async function toggleCheck(): Promise<void> {
   if (check.value) {
     check.value = false
-    releaseMic()
+    mic.release()
   } else if (await ensureMic()) check.value = true
 }
 
