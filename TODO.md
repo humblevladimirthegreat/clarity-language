@@ -21,6 +21,7 @@ https://discord.gg/CAMGw2Akhc
 -more stacked vowels (other series)
 -does th reliably mean an interpretation of the event?
 -programming language
+-consider conceptual metaphor of past is in front of us (because we can see it)
 Align emotional locus with normal emotions 
 Emotion requires stimulus 
 Cheat sheet distinguish cue vs exact match

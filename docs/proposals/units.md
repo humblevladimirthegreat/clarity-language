@@ -246,7 +246,7 @@ Order: U3a, U3b, U4, U5, U6, then the orchestrator's closing steps. U3b to U5 ar
 > - Don't edit `AGENTS.md` or `docs/proposals/units.md`; report the change needed. Don't commit.
 > - Other work in the tree is not yours: don't edit `src/parse/*`, the tag pages beyond a link this unit names, or any file outside your unit's list. If a fix needs one, report it.
 > - Read slices: list headings first (`grep -n '^#'`), read only the ranges you edit.
-> - Edit with the Edit tool. When an edit needs a script, write it to a file under `tmp/` and run the file; never pass a script inline (`node -e`, `python -c`, a heredoc).
+> - Use the Edit tool when the text being replaced is short (a line, a sentence, a table row). Use a script when whole sections are cut or replaced, or the same change repeats in many places: find sections by their headings, and assert each anchor matches once. Write the script to a file under `tmp/` and run the file; never pass a script inline (`node -e`, `python -c`, a heredoc).
 > - Stop and alert (report and stop; do not work around): a premise no longer holds; later units would need a different design, order, or pages; skipping would leave later work on a broken state; enough is skipped that the goals cannot be met.
 > - Verify with `npm run verify -- --allow-generate` at the end of each item (`--fast` inside an item). Never paste raw build output; read only the new error's line in `tmp/verify-last.log`. Never rerun a failed check before editing.
 > - At about 25 tool calls, check what is left. If it is small, finish the item, even past 25 calls. If a significant amount is left (more than a few edits, or pages you have not read yet), stop at a clean point, leave the tree green, and report: done, left (as steps), files touched.

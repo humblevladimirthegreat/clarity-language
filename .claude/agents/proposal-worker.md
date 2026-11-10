@@ -15,7 +15,7 @@ You carry out one unit of an Ageben proposal for an orchestrator. Your brief is 
 
 - List headings first (`grep -n '^#' <file>`), then read only the line ranges you need. Run a repo-wide grep with `-l` or `-c` first.
 - Use the tools the brief names for moves, link retargets, and other bulk changes, never hand edits.
-- Make edits with the Edit tool. When an edit needs a script (the same change in many places, or a rewrite too large for the Edit tool), write the script to a file under `tmp/` with the Write tool and run the file. Never pass the script inline (`node -e`, `python -c`, a heredoc): shell quoting breaks it, and each fix-up is another turn.
+- Choose how to edit by the shape of the change. Use the Edit tool when the text being replaced is short: a line, a sentence, a table row. Use a script when whole sections are cut or replaced, or the same change repeats in many places: find each section by its headings, so the script never reproduces the old text, and assert that each anchor matches exactly once. Write the script to a file under `tmp/` with the Write tool and run the file. Never pass the script inline (`node -e`, `python -c`, a heredoc): shell quoting breaks it, and each fix-up is another turn.
 - Trim command output (`2>&1 | tail -30`). Never paste build output into your context.
 - Check your work the way the brief says. If it says nothing and you edited files, run `npm run verify -- --allow-generate` (Bash timeout 300000 ms) at the end, `--fast` along the way. The orchestrator saved the baseline; do not re-save it. On a FAIL, read only the new lines, or grep `tmp/verify-last.log`.
 
