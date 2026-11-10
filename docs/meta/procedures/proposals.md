@@ -73,7 +73,7 @@ Subagents cost tokens, and most of the cost is context carried from turn to turn
 
 ## Running with subagents
 
-The agent files under `.claude/agents/` (`proposal-worker`, `checkpoint-writer`) restate parts of this page so that subagents never read it: the [stop-and-alert](#stop-and-alert) findings, the stop line, reading slices, quiet verification, and the report fields. When you change one of those rules here, make the same change in every agent file that restates it.
+The agent files under `.claude/agents/` (`proposal-worker`, `checkpoint-writer`) restate parts of this page so that subagents never read it: the [stop-and-alert](#stop-and-alert) findings, the stop line, reading slices, script files for scripted edits, quiet verification, and the report fields. When you change one of those rules here, make the same change in every agent file that restates it.
 
 1. **Short-lived subagents.** Give each subagent one or two items, and size a unit by the pages it reads, not by its item count: a unit that walks more than about eight pages, or a whole sidebar group, splits (for example by band). Start a fresh one when the next item reads different pages, or once a context passes about 25 turns or about 80k tokens. Split by shared context, not by file: two items that read the same pages may share a subagent; an item that needs new pages gets a new one.
 2. **The item goes in the prompt.** A subagent's first prompt carries everything it needs to start:
@@ -94,7 +94,7 @@ The agent files under `.claude/agents/` (`proposal-worker`, `checkpoint-writer`)
 7. **Smaller model for mechanical steps.** Rename scripts, hash-row backfills, redirect checks, and link retargets may run on a smaller model at low effort. Grammar judgment, teaching prose, Practice, placement, and audits stay on the strongest model. The proposal names each unit's Agent tool `model` value (`opus`, `sonnet`, `haiku`) and `effort` (`low` to `max`), so the setting is not a judgment call at launch, and the orchestrator passes both on every launch. `proposal-worker` sets neither: an omitted `model` uses the configured default subagent model, which may not be the orchestrator's, and an omitted `effort` uses the default. Never write "main model", and never leave either out.
 8. **Prefer fresh subagents over forks.** Fork only early, while the orchestrator's context is still small and the fork needs most of it.
 9. **Run in sequence when files are shared.** Registry files (the sidebar, redirects, the allowlist, level reviews, cheat sheets, the lexicon `core` column, `AGENTS.md`) take one writer at a time. Run in parallel only when the file sets are disjoint and wall time matters.
-10. **Script bulk mechanical work.** Renames and the same edit across many files go in one script that a single subagent writes, runs, and checks with one `verify`, not in one subagent per row.
+10. **Script bulk mechanical work.** Renames and the same edit across many files go in one script that a single subagent writes, runs, and checks with one `verify`, not in one subagent per row. A script that edits files is written to a file under `tmp/` and run from there, never passed inline (`node -e`, `python -c`, a heredoc): shell quoting breaks an inline script, and each fix-up is another turn. Small changes use the Edit tool.
 11. **Keep the orchestrator lean.**
     - Read each report and `git diff --stat`, not whole diffs. Open a hunk only when a report flags it, a gate fails, or the stat shows a file outside the item's list.
     - Trim command output (`2>&1 | tail -30`).

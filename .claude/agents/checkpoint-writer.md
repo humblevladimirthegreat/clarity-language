@@ -30,6 +30,7 @@ You write translation checkpoints for Ageben grammar sittings. Your prompt names
 - New words: set each new root's `core` cell to `<file>#<band>-practice`.
 - Check every Ageben span you write with one call, `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …`: it prints each input's morph gloss or a one-line error. Batch all a sitting's spans; each call takes a few seconds to start.
 - `npm run core-vocabulary -- --for <page>:<band>` throws on a page with no `### Practice` yet; run it only to re-check after you add the heading.
+- Make edits with the Edit tool. If an edit ever needs a script, write it to a file under `tmp/` with the Write tool and run the file; never pass a script inline (`node -e`, `python -c`, a heredoc).
 
 ## Verify
 
