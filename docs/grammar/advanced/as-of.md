@@ -50,6 +50,7 @@ Do not put a bare person in `/b/` to mean “from Alazun’s now.” A person af
 Once whose-now is set, these count from it:
 
 - A [forecast](/evidentiality#forecast) offset (`blral`) counts forward **from** that now.
+- A [signed offset](/dated-channel#dated-channel) counts **from** that now, not from the moment you speak.
 - [RESIDUE](/residue-and-former#residue) is what is still left over **at** that now.
 - [FORMER](/residue-and-former#former-climate) means the pattern no longer held **at** that now.
 - A bare verb happens **at** that now.

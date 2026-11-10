@@ -6,7 +6,7 @@ Recipes for English *walked* / *has walked* / *will walk* / *used to walk*, and 
 
 ### One English tense, several jobs {#tense-jobs}
 
-**Needs:** [How you know](/evidentiality#evidentiality) · [Forecasts](/evidentiality#forecast) · [Dated channel](/dated-channel#dated-channel) · [RESIDUE and FORMER](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#phasal) · [*as-of*](/as-of#as-of)
+**Needs:** [How you know](/evidentiality#evidentiality) · [Forecasts](/evidentiality#forecast) · [Dated channel](/dated-channel#dated-channel) · [Just and soon](/special-values#just-short) · [RESIDUE and FORMER](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#phasal) · [*as-of*](/as-of#as-of)
 
 An English tense bundles up to three questions: **when** the event sits, **how you know** it, and whether it **still counts** now. Ageben asks them separately. Pick the row for the English form, then the job you mean.
 
@@ -180,7 +180,7 @@ English *will* is three different claims.
 
 ### Everyday time words {#time-words}
 
-**Needs:** [Dated channel](/dated-channel#dated-channel) · [Now and today](/dated-channel#now) · [RESIDUE and FORMER](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#phasal) · [Forecasts](/evidentiality#forecast) · [Dependent clauses](/dependents#dependent-clauses)
+**Needs:** [Dated channel](/dated-channel#dated-channel) · [Just and soon](/special-values#just-short) · [Now and today](/dated-channel#now) · [RESIDUE and FORMER](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#phasal) · [Forecasts](/evidentiality#forecast) · [Dependent clauses](/dependents#dependent-clauses)
 
 English time words (*today*, *previously*, *continue*) mostly ride on the same channels and offsets as tense. Each row says which one.
 

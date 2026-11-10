@@ -48,6 +48,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *pay* | `varal` |
 | *hour* | `agorum` |
 | *sleep* | `vezuvel` |
+| *MEMORY* | `thevum` |
 | *CLUES* | `theyom` |
 | *sing* | `vozuyel` |
 | *tell* | `vezuyol` |
@@ -768,6 +769,20 @@ The ban belongs to the quoted words, so `yul` goes inside the cite; in front, it
 **`zaol`** is a route: the first item is where the order starts. **`zol`** would rank Azozon above Ahelan.
 
 **Rule:** [Route (**`ao`**)](rank-joins.md#route-ao)
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *I saw Ahelan sleep two hours ago.* <!-- lint: error -->`zahelan thevum bagorum gradol vezuvel.`
+
+::: details Show answer
+`zahelan thevum blagorum grudol vezuvel.`
+
+z-Ahelan | [th-MEMORY | [bl-hour | g-minus-two]] | v-sleep
+
+The offset is signed and counts from now, so *ago* needs **`ru`** (minus); MEMORY with a later offset is not a sentence.
+
+**Rule:** [Dated channel (signed offset)](dated-channel.md#dated-channel)
 :::
 
 #### What changes {#intermediate-what-changes}

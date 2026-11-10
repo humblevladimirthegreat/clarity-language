@@ -387,7 +387,7 @@ With no `/b/`, **`thubom`** is the item's own usual level or the usual case in t
 
 ### Just, only, also, especially {#focus-words}
 
-**Needs:** [One item or none](/joins#standalone-phrase) · [Join vowels and endings](/joins#join-type-vowel-series) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse) · [Dated channel](/dated-channel#now)
+**Needs:** [One item or none](/joins#standalone-phrase) · [Join vowels and endings](/joins#join-type-vowel-series) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse) · [Dated channel](/dated-channel#now) · [Just and soon](/special-values#just-short)
 
 English *just*, *only*, *especially* and *also* point at one item and say how it stands among the others. Ageben does that with a [join](/joins) that has one item in front of it. The vowel says what the item is worth among the rest: **`zal`** (the closed ending) says it is the whole story, **`zom`** (the open ending) says it comes first and others may follow, and **`zol`** says it is the only one that matters. For *also*, there is no word to hang on the item: open the next sentence with the discourse hook **`al`**, which adds a separate point.
 

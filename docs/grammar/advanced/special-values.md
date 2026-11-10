@@ -61,6 +61,36 @@ Same under `/z/` `/d/` `/b/` (`zrawal` = +∞ as subject; `drowul` = start-place
 | **-n** | Named designation of that special (named ∞ symbol, official *last place* / *starting* title, …) |
 | **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that arbitrarily small amount again*; `g=-e-` = *that same hair-short amount again*) |
 
+These hair amounts also date an event: with no unit, they fill the [signed time offset](/dated-channel#dated-channel) right after an evidential. For *just* and *about to*, **`blruwul`** is *a hair before now*, **`blrawul`** is *a hair after now*.
+
+> `zazozon thevum blruwul vowurol.`
+>
+> z-Azozon | [th-MEMORY | bl---e-] | v-walk
+>
+> "I just saw Azozon walk."
+
+> `theyom blrawul verulal.`
+>
+> [th-CLUES | bl-+-e-] | v-rain
+>
+> "It looks like it's about to rain."
+
+For *soon*, soften that hair with open **-m**: **`blrawum`** is *a short while after now*. It is later than *about to* (`blrawul`) but still close, unlike open-ended *later* (`blral`).
+
+> `theyom blrawum verulal.`
+>
+> [th-CLUES | bl-+-e-.about] | v-rain
+>
+> "It looks like it will rain soon."
+
+The mirror, **`blruwum`**, is *a short while before now*: *recently*.
+
+> `zazozon thevum blruwum vowurol.`
+>
+> z-Azozon | [th-MEMORY | bl---e-.about] | v-walk
+>
+> "I saw Azozon walk recently."
+
 #### Number as verb and adverb {#special-number-as-verb-and-adverb}
 
 On `/v/` and `/h/`, these special values (∞, last, start, a tiny amount) become actions and adverbs. Soft **-m** softens them the same way it does on `/ɡ/` (*a lot but finite*, *near last*, …).

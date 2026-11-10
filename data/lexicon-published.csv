@@ -585,7 +585,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🏙️,skyline,azaho,place,order,big,urban,towers and lights fill the skyline; urban is city life,,city,
 🏡,cottage,egaha,place,holds,big,rural,a cottage with a garden sits out of town; rural is country life,,,
 🌄,daybreak,anuro,counting,order,none,dawn,sun rises over peaks; dawn is a new beginning,,morning,
-🌅,sunrise,azuro,counting,order,none,day,sunrise opens each new day; day is the sunrise-to-sunrise unit,,,
+🌅,sunrise,azuro,counting,order,none,day,sunrise opens each new day; day is the sunrise-to-sunrise unit,,,dated-channel.md#intermediate-practice
 🌆,dusk,aduru,counting,takes-away,none,closure,dusk ends the day; closure is bringing something to an end,,,
 🌇,sunset,uzuru,counting,takes-away,none,,,,,
 🌉,bridge,oho,place,order,,span,a bridge spans the gap; span is reaching across,,,locative-relations.md#intermediate-practice

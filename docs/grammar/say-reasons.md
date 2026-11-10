@@ -507,7 +507,7 @@ English *habit*, *I have a habit of*, and *triggered by* pack how often the act 
 
 ### Hoping something will happen {#hope-forecast}
 
-**Needs:** [Hopefully](/feelings#speaker-attitude) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [soon](/dated-channel#dated-channel)
+**Needs:** [Hopefully](/feelings#speaker-attitude) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [soon](/special-values#just-short)
 
 English *I hope X will happen* is two claims: you want it, and you expect it. **`thuwuyom`** gives the wanting. The *will* is a [forecast](/evidentiality#forecast), so it needs a channel plus **`blral`** (or **`blrawum`** for *soon*). If nothing backs it but your gut, the honest channel is INTUITION: faint **`thaber`** for a slim hope, **`thabem`** for an ordinary one.
 

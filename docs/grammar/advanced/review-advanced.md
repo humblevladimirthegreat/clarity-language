@@ -29,7 +29,6 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *as-of.ledger* | `henam` |
 | *REPORTED* | `thebam` |
 | *MEMORY* | `thevum` |
-| *hour* | `agorum` |
 | *walk* | `vowurol` |
 | *write* | `varuyol` |
 | *sleepy* | `uzemel` |
@@ -243,20 +242,6 @@ z-Ahelan | [d-baguette-x | g-minus-infinity] | through | g-five | v-see
 **`oel`** keeps the five in (*at most five*); **`uel`** would leave it out (*fewer than five*).
 
 **Rule:** [Rays](open-ranges.md#rays)
-:::
-
-#### Fix it {#advanced-fix-it}
-
-**1.** *I saw Ahelan sleep two hours ago.* <!-- lint: error -->`zahelan thevum bagorum gradol vezuvel.`
-
-::: details Show answer
-`zahelan thevum blagorum grudol vezuvel.`
-
-z-Ahelan | [th-MEMORY | [bl-hour | g-minus-two]] | v-sleep
-
-The offset is signed and counts from now, so *ago* needs **`ru`** (minus); MEMORY with a later offset is not a sentence.
-
-**Rule:** [Dated channel (signed offset)](dated-channel.md#dated-channel)
 :::
 
 #### What changes {#advanced-what-changes}

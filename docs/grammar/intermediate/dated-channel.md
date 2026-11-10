@@ -1,5 +1,5 @@
 ---
-band: advanced
+band: intermediate
 ---
 
 # Dated channel {#dated-channel-sitting}
@@ -50,35 +50,7 @@ A signed measure in the `/b/` of a [time hinge](/dependents#time-hinges) (**`har
 >
 > "Keep the secret until tomorrow."
 
-For *just* and *about to*, use the [just-short](special-values.md#just-short) amount with no unit: **`blruwul`** is *a hair before now*, **`blrawul`** is *a hair after now*.
-
-> `zazozon thevum blruwul vowurol.`
->
-> z-Azozon | [th-MEMORY | bl---e-] | v-walk
->
-> "I just saw Azozon walk."
-
-> `theyom blrawul verulal.`
->
-> [th-CLUES | bl-+-e-] | v-rain
->
-> "It looks like it's about to rain."
-
-For *soon*, soften that hair with open **-m**: **`blrawum`** is *a short while after now*. It is later than *about to* (`blrawul`) but still close, unlike open-ended *later* (`blral`).
-
-> `theyom blrawum verulal.`
->
-> [th-CLUES | bl-+-e-.about] | v-rain
->
-> "It looks like it will rain soon."
-
-The mirror, **`blruwum`**, is *a short while before now*: *recently*.
-
-> `zazozon thevum blruwum vowurol.`
->
-> z-Azozon | [th-MEMORY | bl---e-.about] | v-walk
->
-> "I saw Azozon walk recently."
+With **`thubom`** PATTERN, a past offset says it happened then, if the pattern held.
 
 > `zalazun thubom blagorum grugel vezuvel.`
 >
@@ -93,8 +65,6 @@ A channel used as a comparison [bar](/bars#bars) takes the same offset, which da
 > [z-Azozon | [th-MEMORY | [bl-day | g-minus-one]] | z-rank/more | g-sleepy]
 >
 > "Azozon is sleepier than yesterday."
-
-With an [as-of](as-of.md#as-of) pair, the offset counts from the as-of moment instead of from the moment you speak.
 
 **Compare with:** an absolute clock or date (`h_#22,7`) dates the event without a channel. [RESIDUE](/residue-and-former#residue) and [FORMER](/residue-and-former#former-climate) do not locate time, so they take no offset.
 
@@ -118,11 +88,17 @@ The unit sets how wide *now* is. Zero hours is *right now*; zero [days](/measure
 
 Use zero on a channel that takes either sign. **LIVE** `thugem` already means *now in view*, so it needs no offset. **MEMORY** takes **`-`** only and PLAN takes **`+`** only, so zero is not a sentence on them.
 
-### Practice {#advanced-practice}
+### Practice {#intermediate-practice}
 
-Short drills for Advanced. Try each item before opening **Show answer**.
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a night desk
+
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *day* | `azurom` | 🌅 |
 
 **Review:**
 
@@ -132,6 +108,8 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *MEMORY* | `thevum` |
 | *PATTERN* | `thubom` |
+| *CLUES* | `theyom` |
+| *REPORTED* | `thebam` |
 | *hour* | `agorum` |
 | *walk* | `vowurol` |
 | *write* | `varuyol` |
@@ -141,7 +119,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *command* | `yol` |
 | *until* | `harum` |
 
-#### English → Ageben {#advanced-english-to-ageben}
+#### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *I saw Azozon write three hours ago.*
 
@@ -151,23 +129,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 z-Azozon | [th-MEMORY | [bl-hour | g-minus-three]] | v-write
 :::
 
-**2.** *I saw Azozon walk recently.*
-
-::: details Show answer
-`zazozon thevum blruwum vowurol.`
-
-z-Azozon | [th-MEMORY | bl---e-.about] | v-walk
-:::
-
-**3.** *I just saw Azozon look at the camera.*
-
-::: details Show answer
-`zazozon thevum blruwul dugewel vayebel.`
-
-z-Azozon | [th-MEMORY | bl---e-] | d-camera | v-see
-:::
-
-**4.** *Walk until an hour from now.* (command)
+**2.** *Walk until an hour from now.* (command)
 
 ::: details Show answer
 `yol vowurol harum blagorum grabal.`
@@ -175,7 +137,23 @@ z-Azozon | [th-MEMORY | bl---e-] | d-camera | v-see
 y-command | v-walk | [h-until | [bl-hour | g-one]]
 :::
 
-#### Ageben → English {#advanced-ageben-to-english}
+**3.** *I saw Alazun look at the camera yesterday.*
+
+::: details Show answer
+`zalazun thevum blazurom grubal dugewel vayebel.`
+
+z-Alazun | [th-MEMORY | [bl-day | g-minus-one]] | d-camera | v-see
+:::
+
+**4.** *Going by the clues, Azozon is writing right now.*
+
+::: details Show answer
+`zazozon theyom blagorum gramol varuyol.`
+
+z-Azozon | [th-CLUES | [bl-hour | g-zero]] | v-write
+:::
+
+#### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zalazun thubom blagorum grugel vezuvel.`
 
@@ -193,27 +171,23 @@ z-Azozon | [th-MEMORY | [bl-hour | g-minus-two]] | v-write
 *I saw Azozon write two hours ago.*
 :::
 
-**3.** `zazozon thevum blruwum dugewel vayebel.`
+**3.** `zazozon thebam blazurom gramol dugewel vayebel.`
 
 ::: details Show answer
-z-Azozon | [th-MEMORY | bl---e-.about] | d-camera | v-see
+z-Azozon | [th-REPORTED | [bl-day | g-zero]] | d-camera | v-see
 
-*I recently saw Azozon look at the camera.*
+*I hear Azozon looks at the camera today.*
 :::
 
-#### Pick one {#advanced-pick-one}
-
-**1.** *I just saw Azozon walk.* `zazozon thevum blruwul vowurol.` or `zazozon thevum blruwum vowurol.`
+**4.** `zalazun thubom blazurom grabal varuyol.`
 
 ::: details Show answer
-`zazozon thevum blruwul vowurol.`
+z-Alazun | [th-PATTERN | [bl-day | g-one]] | v-write
 
-z-Azozon | [th-MEMORY | bl---e-] | v-walk
-
-**-l** is *just now*; open **-m** is *recently*.
+*Going by the pattern, Alazun writes tomorrow.*
 :::
 
-#### What changes {#advanced-what-changes}
+#### What changes {#intermediate-what-changes}
 
 **1.** `zalazun thevum blagorum grugel vezuvel.` / `zalazun thevum blagorum grudol vezuvel.`
 
@@ -225,3 +199,22 @@ z-Alazun | [th-MEMORY | [bl-hour | g-minus-two]] | v-sleep
 The signed amount is **three** hours back, then **two**.
 :::
 
+**2.** `zazozon theyom blagorum gramol vezuvel.` / `zazozon theyom blazurom gramol vezuvel.`
+
+::: details Show answer
+z-Azozon | [th-CLUES | [bl-hour | g-zero]] | v-sleep
+
+z-Azozon | [th-CLUES | [bl-day | g-zero]] | v-sleep
+
+Zero **hours** is *right now*: Azozon must be asleep right now. Zero **days** is *today*: it looks like Azozon sleeps sometime today.
+:::
+
+**3.** `zalazun thebam blagorum grugel varuyol.` / `zalazun thebam blagorum gragel varuyol.`
+
+::: details Show answer
+z-Alazun | [th-REPORTED | [bl-hour | g-minus-three]] | v-write
+
+z-Alazun | [th-REPORTED | [bl-hour | g-three]] | v-write
+
+The sign flips the time: **minus** three hours is *I hear Alazun wrote three hours ago*; **plus** three is *I hear Alazun writes in three hours*.
+:::
