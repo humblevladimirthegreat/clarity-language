@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
 import type { ConstructionEntry } from "../parse/constructions.js";
-import { constructionCoverageGaps, constructionHomes, learningOrderFindings } from "./construction-order.js";
+import { constructionCoverageGaps, constructionHomes, learningOrderFindings, pageDependencies } from "./construction-order.js";
 import type { ConstructionUse } from "./drill-coverage.js";
 import { learningOrder, pageSections, resolveAnchor } from "./learning-order.js";
 
@@ -114,5 +114,29 @@ describe("learningOrderFindings", () => {
     // value.y's family is also never taught at its (resolved) home.
     assert.equal(found.notAtHome.length, 1);
     assert.equal(found.failures, 3);
+  });
+});
+
+describe("pageDependencies", () => {
+  it("collects cross-page construction uses and links in both directions, skipping same-page ones", () => {
+    const md = new Map([...pageMarkdown, ["b.md", B.replace("### Second\n", "### Second\n\nBack to [a](/a) and `[code](a.md)`.\n")]]);
+    const ord = learningOrder(["a.md", "b.md"], new Map([...md].map(([page, m]) => [page, pageSections(page, m)])));
+    const at2 = (anchor: string) => resolveAnchor(ord, anchor)!;
+    const deps = pageDependencies(
+      ord,
+      registry({ "value.x": "a.md#basics", "value.y": "b.md#second" }),
+      [
+        { id: "value.x", section: at2("b.md#first") },
+        { id: "value.x", section: at2("b.md#second") },
+        { id: "value.x", section: at2("a.md#more") },
+        { id: "value.y", section: at2("a.md#basics") },
+      ],
+      md,
+    );
+    const rows = deps.map((d) => [d.from, d.to, [...d.constructions], d.links]);
+    assert.deepEqual(rows, [
+      ["b.md", "a.md", [["value.x", 2]], ["b.md:11"]],
+      ["a.md", "b.md", [["value.y", 1]], ["a.md:7"]],
+    ]);
   });
 });
