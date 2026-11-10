@@ -29,6 +29,8 @@ English *Azozon thinks…*, *she's upset*, and *he doubts it* report what is in 
 >
 > "Maybe Azozon thinks Alazun left."
 
+**Compare with:** `zalazun thebam blazozon vudurul.` is *Alazun left, according to Azozon*. There Azozon is the [source](evidentiality.md#source), where the claim came to you from, and the claim stays yours to pass on. `zalazun thebamazozon vudurul.` gives Azozon's view instead, and you do not claim it yourself. English *Azozon says Alazun left* can mean either.
+
 The seam letter keeps its meaning: [evidence strength](evidentiality.md#evidence-strength) on a channel, the [follow-up ending](/knowing#follow-up-endings-may) on MAY. The name keeps its own **-n** at the end. **-n** is never a seam.
 
 > `zalazun theyolazozon vudurul.`
@@ -166,7 +168,7 @@ The interlocutors work as holder on any host. With PLAN after it, the plan is on
 >
 > "I gather we both plan to walk."
 
-Pronouns, speech moves, and [speaker attitudes](feelings-permission.md#speaker-attitude) stay yours: **`uwen`** is still you, the sentence is still your turn, and *hopefully* is still your hope. You are never the holder: your own view needs no seam. Someone else's hope is their want, so *Azozon hopes Alazun walks* is the holder with WANT, never with **`thuwuyom`**. The holder's view is their view **now**. A channel with a holder still takes its own `/b/`, so `thebamazozon blral` is *I hear Azozon expects it*. A holder is not a [source](evidentiality.md#source): a source in `/b/` is where a claim came to you from, and the claim stays yours to pass on; a holder makes the claim the holder's view.
+Pronouns, speech moves, and [speaker attitudes](feelings-permission.md#speaker-attitude) stay yours: **`uwen`** is still you, the sentence is still your turn, and *hopefully* is still your hope. You are never the holder: your own view needs no seam. Someone else's hope is their want, so *Azozon hopes Alazun walks* is the holder with WANT, never with **`thuwuyom`**. The holder's view is their view **now**. A channel with a holder still takes its own `/b/`, so `thebamazozon blral` is *I hear Azozon expects it*.
 
 **One clause, one holder.** The holder covers its clause and any dependent sentence inside it; a new `/x/` sentence is yours again unless it has its own seam word. A dependent with its own seam word switches holder for that sentence only. That is how you take a stance on someone else's stance: your stance in the main sentence, theirs in a dependent.
 

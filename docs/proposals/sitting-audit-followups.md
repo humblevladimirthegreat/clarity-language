@@ -147,4 +147,14 @@ Units run in sequence, one fresh subagent each, because most share the sidebar, 
 
 ## Open decisions
 
-None open. A guard that fails in D12, D13, D14, or D16 comes back here as a decision.
+A guard that fails in D12, D13, D14, or D16 comes back here as a decision.
+
+- **D13 guard failed (unit 2l, 2026-11-10).** `dated-channel.md` "just / about to / soon / recently" (`blruwul`, `blrawul`, `blrawum`, `blruwum`) uses the hair amounts from `special-values.md#just-short`, which is Advanced. No Beginner or Intermediate page teaches them. Four Practice items use them: English → Ageben items 2 and 3, Ageben → English item 3, and Pick one item 1. The rest of the page passes gate 4 in a slot right after `bars.md`. The as-of premise also fails: `as-of.md` is Advanced and sits earlier than dated-channel, so the sentence at line 97 can't move there. Its link back from dated-channel is fine where it is. `say-tense.md` names no band. The public URL stays `/dated-channel` in either band.
+  - (a) Keep dated-channel Advanced, and drop D13.
+  - (b) Peel the just-short section and its four items to an Advanced page (under `special-values.md#just-short`, or a new sitting). Then move the rest of dated-channel to Intermediate after `bars.md`. The as-of sentence stays where it is.
+  - **Recommendation:** (b). The signed offset (*three days ago*, *in two hours*) is an everyday job and needs nothing Advanced. Only the hair-amount shorthands need the Advanced page they build on.
+- **D14 guard failed (unit 2m, 2026-11-10).** No page says what a lexicalized stand-in verb (`varn` *state*, `vaon`, and the rest of the table on `stand-in-roles.md#stand-in-roles`) adds over a speaking verb + `darl`. The page only says the endings "make verbs that take the following sentence as their content". The item's anchor was also wrong: verb + `darl` (*tells … that*) is taught at `dependents.md#dependent-clauses`, not `#hinges`.
+  - (a) The fixed word names the speech act itself as the event (stating, confirming, denying). A speaking verb + `darl` reports the act of speaking, and the content is its object. State this on stand-in-roles, then add the Compare-with line to `/dependents#dependent-clauses`.
+  - (b) The two are synonyms. State that, and drop the Compare-with line.
+  - (c) Drop D14.
+  - **Recommendation:** (a), if that is the intended reading. The table glosses (confirm, deny, agree, decline, dispute the premise) all name acts, not manners of speaking. A learner choosing between `varn` and a verb + `darl` needs one sentence that tells them which to pick. Only the user can settle the reading.
