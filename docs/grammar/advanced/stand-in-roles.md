@@ -6,7 +6,7 @@ band: advanced
 
 ### Lexicalized stand-ins in other roles {#stand-in-roles}
 
-A stand-in's vowel says what kind of content follows, and its first letter says which role that content fills. With **-rn** (or **-n** after two vowels, as in **`vaen`**), the stand-in becomes a fixed word for that kind of content: **`darn`** *a statement*, **`dern`** *a question*, **`dorn`** *a command*, **`durn`** *a prohibition*. Use the same vowels with another role letter when the following sentence fills that role. On `/v/`, the same **-rn** / **-n** endings make verbs that take the following sentence as their content.
+A stand-in's vowel says what kind of content follows, and its first letter says which role that content fills. With **-rn** (or **-n** after two vowels, as in **`vaen`**), the stand-in becomes a fixed word for that kind of content: **`darn`** *a statement*, **`dern`** *a question*, **`dorn`** *a command*, **`durn`** *a prohibition*. Use the same vowels with another role letter when the following sentence fills that role. On `/v/`, the same **-rn** / **-n** endings make verbs that take the following sentence as their content. Such a verb names the speech act itself as the event: stating, confirming, denying, agreeing. Use one to make that act or to report it, as in *Azozon confirms it* or *I deny that …*.
 
 Each content type has one lexicalized form; there is no closed / open pair here.
 
@@ -36,6 +36,14 @@ For example, the `/v/` word takes the following sentence as its content:
 > z-Azozon | v-decline-to | z-Azozon | v-sit
 >
 > "Azozon declines to sit."
+
+**Compare with:** a speaking verb + [**`darl`**](/dependents#dependent-clauses) reports the act of speaking, and the content is its object, what was said. Pick it when the speaking is the event, as in *Azozon tells Alazun that …*; pick the fixed word when the act (confirming, denying) is the event.
+
+> `zazozon vezuyol balazun darl zalazun vehohel.`
+>
+> z-Azozon | v-tell | b-Alazun | d-that-clause | z-Alazun | v-sit
+>
+> "Azozon tells Alazun that Alazun sits."
 
 A `/z/` stand-in puts the whole following sentence in the subject slot. With a `/ɡ/` word describing that sentence, that is English *it is … that* / *it is … to*.
 
