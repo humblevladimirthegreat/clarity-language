@@ -170,6 +170,22 @@ When English would say *everything* / *everyone*, write a standalone join with t
 >
 > "everything" / "everyone."
 
+Put a kind after it for *every* member of that kind: `zual godozel` is *every dog*. A phrase like this, and a phrase that brings in a new member (*a cat*), reaches from where it stands to the end of its sentence. Whatever comes later is inside it. So when a clause has two of them, the earlier one covers the later one, and moving a phrase to the front chooses which.
+
+> `zual godozel dogozel vayebel.`
+>
+> [z-everything | g-dog] | d-cat | v-see
+>
+> "Every dog sees a cat." (each dog may see a different cat)
+
+> `dogozel zual godozel vayebel.`
+>
+> d-cat | [z-everything | g-dog] | v-see
+>
+> "There is a cat that every dog sees." (one cat)
+
+Who did what never changes: in both, the dogs see and the cat is seen. What changes is whether one cat serves for every dog. With just one such phrase, the order changes nothing. The reach also runs on into a later sentence that points back to the phrase.
+
 ### Rank (`o`) {#rank-o}
 <a id="set-joins-and-rank-joins"></a>
 

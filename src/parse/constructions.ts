@@ -519,7 +519,12 @@ export const JOIN_SERIES_CONSTRUCTIONS: Record<JoinSeries, ConstructionEntry> = 
   },
   ao: { anchor: "rank-joins.md#route-ao", summary: "route (first = start)" },
   u: { anchor: "joins.md#negation-u", summary: "none of" },
-  ua: { anchor: "joins.md#everything-ua", summary: "everything but" },
+  ua: {
+    anchor: "joins.md#everything-ua",
+    summary: "everything but",
+    reader:
+      "Word order sets which of two quantities covers the other: a bracket closed by `everything` or `not`, or a noun that brings in a new one (*a cat*), covers whatever comes after it in its sentence, and any later sentence that points back into it. `[z-everything | g-dog] | d-cat | v-see` = every dog sees a cat (each may see a different cat); `d-cat | [z-everything | g-dog] | v-see` = there is one cat that every dog sees. `v-not` after the verb is inside them: `[z-everything | g-cat] | [v-sleep | v-not]` = each cat does not sleep. Who does what never changes.",
+  },
   uo: { anchor: "rank-joins.md#invert-u-stacks", summary: "rank reversal" },
   e: { anchor: "joins.md#choice-e", summary: "choice" },
   ae: { anchor: "set-joins.md#exclusivity-and-denying-a-whole-list", summary: "and/or" },

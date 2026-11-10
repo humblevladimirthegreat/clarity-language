@@ -33,7 +33,7 @@ A name you already cite with **-n** (`azozon`) keeps **-n** in the sentence:
 
 The **direct object** is who or what the action is done to. Mark it with `/d/`. The default order is **Subject – Direct Object – Verb**.
 
-Because the first letter already says each word’s role, you may move those three words without changing who did what or what the sentence means. Moving a word does not stress it either. The default order is still the one to use, because listeners expect it.
+Because the first letter already says each word’s role, you may move those three words without changing who did what. Moving a word does not stress it either. The default order is still the one to use, because listeners expect it.
 
 > `zodozel dogozel vayebel.`
 >
