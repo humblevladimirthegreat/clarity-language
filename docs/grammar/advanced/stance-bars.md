@@ -8,30 +8,13 @@ band: advanced
 <a id="worse-than"></a>
 <a id="best-effort"></a>
 
-A [plan bar](/bars#bars) ranks against what a plan set, a [channel bar](/bars#channel-bars) against what a source led you to expect, and a [sake bar](/bars#sake-bars) against what a sake needs. Any other stance that sets a value can be the bar too, and each keeps its own endings and meaning. A channel word (how you know something: you saw it, remember it, were told it, worked it out) sets **the level that source led you to expect**. So *than usual*, *than I remember*, and *than advertised* each put one channel word in the bar slot.
-
-> `zazozon thubom zol guzemel.`
->
-> [z-Azozon | th-PATTERN | z-rank/more | g-sleepy]
->
-> "Azozon is sleepier than usual."
-
-> `zazozon zol guzemel thubom.`
->
-> [z-Azozon | z-rank/more | g-sleepy] | th-PATTERN
->
-> "Azozon is the sleepiest, going by the pattern."
+A [plan bar](/bars#bars) ranks against what a plan set, a [channel bar](/bars#channel-bars) against what a source led you to expect, and a [sake bar](/bars#sake-bars) against what a sake needs. Any other stance that sets a value can be the bar too, and each keeps its own endings and meaning.
 
 <!-- cheat-sheet: comparing -->
 | Bar | Ranks against | English |
 |-----|---------------|---------|
 | met sake `thudatham`, `thobatham`, … ([sake bars](/bars#sake-bars)) | what that sake needs | *enough* / *too much* / *not enough* |
-| LIVE `thugem` | how it looks | *than it looks* |
-| MEMORY `thevum` | how you remember it | *than I remember* / *than last time* |
-| PATTERN `thubom` | the trail of cases | *than usual* / *normal* |
-| CLUES `theyom` | what was worked out | *than calculated* / *than it should be* |
-| REPORTED `thebam` | what was said or written | *than advertised* / *than they said* / *than the stories say* |
-| INTUITION `thabem` | your gut expectation | *than I expected* |
+| a channel: LIVE `thugem`, MEMORY `thevum`, PATTERN `thubom`, CLUES `theyom`, REPORTED `thebam`, INTUITION `thabem` ([channel bars](/bars#channel-bars)) | what that source led you to expect | *than usual* / *normal* / *than I remember* / *than last time* / *than it should be* / *than they said* |
 | FORMER `helam` | how it used to be | *than it used to be* / *increasingly* |
 | NOTIONAL `theyum` | the imagined case | *than imagined* / *than in theory* |
 | PLAN `thagom` | the plan or the schedule | *than planned* / *than scheduled* |
@@ -166,7 +149,6 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *artistry* | `ubewom` | 🖌️ from *paintbrush* |
 | *showmanship* | `ohedam` | 🌭 from *hotdog* |
-| *INTUITION* | `thabem` | ❤️ from *heart*: your gut expectation |
 
 **Review:**
 
@@ -176,8 +158,6 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *hope* | `thuwuyom` |
-| *PATTERN* | `thubom` |
-| *MEMORY* | `thevum` |
 | *REPORTED* | `thebam` |
 | *FORMER* | `helam` |
 | *agility* | `evunom` |
@@ -186,54 +166,54 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 #### English → Ageben {#advanced-english-to-ageben}
 
-**1.** *Azozon sings better than usual.*
+**1.** *Azozon is as agile as possible.*
 
 ::: details Show answer
-`zazozon thubom zol gozuyel.`
+`zazozon hodaxal zoel gevunom.`
 
-[z-Azozon | th-PATTERN | z-rank/more | g-sing]
+[z-Azozon | h-ABIL-able | z-equal-rank | g-agility]
 :::
 
-**2.** *Alazun is less artistic than I remember.*
+**2.** *There are more trumpets than the rules allow.*
 
 ::: details Show answer
-`zalazun thevum zuol gubewom.`
+`zadorolx hwuval zol gral.`
 
-[z-Alazun | th-MEMORY | z-rank/less | g-artistry]
+[z-trumpet-x | h-episode-event-ALLOW-rule | z-rank/more | g-amount]
 :::
 
-**3.** *Azozon is more agile than advertised.*
+**3.** *Ahelan is more artistic than I hoped.*
 
 ::: details Show answer
-`zazozon thebam zol gevunom.`
+`zahelan thuwuyom zol gubewom.`
 
-[z-Azozon | th-REPORTED | z-rank/more | g-agility]
+[z-Ahelan | th-hope | z-rank/more | g-artistry]
 :::
 
-**4.** *There are more trumpets than advertised.*
+**4.** *Alazun is less showy than they used to be.*
 
 ::: details Show answer
-`zadorolx thebam zol gral.`
+`zalazun helam zuol gohedam.`
 
-[z-trumpet-x | th-REPORTED | z-rank/more | g-amount]
+[z-Alazun | h-FORMER | z-rank/less | g-showmanship]
 :::
 
 #### Ageben → English {#advanced-ageben-to-english}
 
-**1.** `zalazun thabem zol gozuyel.`
+**1.** `zazozon hwuvol zoel gohedam.`
 
 ::: details Show answer
-[z-Alazun | th-INTUITION | z-rank/more | g-sing]
+[z-Azozon | h-episode-event-REQUIRE-rule | z-equal-rank | g-showmanship]
 
-*Alazun sings better than I expected.*
+*Azozon is as showy as the rules require.*
 :::
 
-**2.** `zazozon thuwuyom zuol gubewom.`
+**2.** `zazozon thuwuyom zuol gozuyel.`
 
 ::: details Show answer
-[z-Azozon | th-hope | z-rank/less | g-artistry]
+[z-Azozon | th-hope | z-rank/less | g-sing]
 
-*Azozon is less artistic than I hoped.*
+*Azozon sings less well than I hoped.*
 :::
 
 **3.** `zalazun thebam blahelan zol gevunom.`
@@ -246,24 +226,24 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Azozon is the showiest, going by the pattern.* `zazozon zol gohedam thubom.` or `zazozon thubom zol gohedam.`
+**1.** *Ahelan is more agile than I hoped.* `zahelan zol gevunom thuwuyom.` or `zahelan thuwuyom zol gevunom.`
 
 ::: details Show answer
-`zazozon zol gohedam thubom.`
+`zahelan thuwuyom zol gevunom.`
 
-[z-Azozon | z-rank/more | g-showmanship] | th-PATTERN
+[z-Ahelan | th-hope | z-rank/more | g-agility]
 
-After the fence, PATTERN is a stance on the whole superlative; before the rank join it is the bar, *showier than usual*.
+Before the rank join, hope is the bar: the case you hoped for. After the fence it is a stance on the whole superlative, *I hope Ahelan is the most agile*.
 :::
 
 #### What changes {#advanced-what-changes}
 
-**1.** `zahelan helam zol gubewom.` / `zahelan thevum zol gubewom.`
+**1.** `zalazun hodaxal zoel gozuyel.` / `zalazun hwuvol zoel gozuyel.`
 
 ::: details Show answer
-[z-Ahelan | h-FORMER | z-rank/more | g-artistry]
+[z-Alazun | h-ABIL-able | z-equal-rank | g-sing]
 
-[z-Ahelan | th-MEMORY | z-rank/more | g-artistry]
+[z-Alazun | h-episode-event-REQUIRE-rule | z-equal-rank | g-sing]
 
-The bar changes: *more artistic than Ahelan used to be* (FORMER) versus *more artistic than I remember* (MEMORY).
+The bar changes: *Alazun sings as well as possible* (the limit of what can be done) versus *Alazun sings as well as the rules require* (the demand).
 :::

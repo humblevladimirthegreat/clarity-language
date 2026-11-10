@@ -331,7 +331,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `stacked-markers.md` | Advanced | **exists** | a parking garage | From the end (`#-` / `uo`); stacked markers (`#_` / `+-`) | — |
 | 15 | `special-values.md` | Advanced | **exists** | an observatory | Digitless exponents / hyperbole / zero×exp / special stance **as used in the stage’s teach examples** — not unassigned cells | Recycle sibling Intermediate |
 | 15 | `comparative-arity.md` | Intermediate | **exists** | a weighing room | Ranking on any scale: full comparative arity; place (`w#N`), manner `/h/`, amount `gral`, frequency `hral`, and time `bral` scales; covarying clauses; factor (*twice as … as*) | The PLAN bar is Intermediate on `bars.md` |
-| 15 | `stance-bars.md` | Advanced | **exists** | a talent contest | Every bar (channels, FORMER, ABIL, REQUIRE, attitudes); bar inside vs stance after the fence | Vague amounts are Intermediate on `vague-amounts.md` |
+| 15 | `stance-bars.md` | Advanced | **exists** | a talent contest | Every bar (FORMER, ABIL, REQUIRE, attitudes; a channel bar's ending, `/b/`, and PATTERN populations); bar inside vs stance after the fence | Vague amounts are Intermediate on `vague-amounts.md`. Channel bars are Intermediate on `bars.md` |
 | 15 | `vague-amounts.md` | Intermediate | **exists** | an open mic | Vague *many* / *few* / *often* / *late* with a named PATTERN bar | Recycle = all Beginner + comparative-arity + evidentiality + sake-bars (PLAN, channel, and sake bars). Not ABIL / FORMER as bars |
 | 15 | `iff-fault.md` | Intermediate | **exists** | a dam control room | **`ahu`** *because* / **`eho`** *iff*; asserted necessary **`thebem thahum`**; *unless* **`thohem blurl`**; *even if* | Fault endings are Beginner on `fault.md`. CAUSE is Intermediate on `cause.md`. Recycle Beginner *if* / *only if*, following-sentence **`blarl`**, and `/h/` vs `/ɡ/` |
 | 15 | `cause.md` | Intermediate | **exists** | a water mill | **CAUSE** **`ewo`** **-m** before a hinge; *make* (causer in `/b/` after **`thewom`**) | Recycle *because* / *if* hinges from `iff-fault.md` |
@@ -442,7 +442,8 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Numbered alternatives | `measures-and-percent.md` Intermediate |
 | PLAN bar (`thagom zol`) | `bars.md` Intermediate |
 | Sake bars (`thudatham zoel`) | `bars.md` Intermediate |
-| Channel, FORMER, ABIL, REQUIRE, attitude bars | `stance-bars.md` Advanced |
+| Channel bars (`thubom zol`) | `bars.md` Intermediate |
+| FORMER, ABIL, REQUIRE, attitude bars; a channel bar's `/b/` | `stance-bars.md` Advanced |
 | `NUM x ROOT` numeric prefix (`zrawaxolamal`, `zragexezuyol`) | `numeric-derivation.md` Advanced |
 | Channels on a generalization | `usually-vs-must.md` Advanced |
 

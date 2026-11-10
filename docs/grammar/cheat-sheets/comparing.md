@@ -90,7 +90,7 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [Stance after the fence](/bars#bars) | `zazozon zol bral vevorol thagom.` | *I plan for Azozon to arrive last.* | I |
 | [More than planned, on an object](/bars#bars) | `zazozon dodelx thagom dol gral vagedal.` | *Azozon eats more strawberries than planned.* | I |
 | [Often, on a recipient](/bars#bars) | `zazozon vezuyol balazun thagom bol hral.` | *Azozon tells Alazun more often than planned.* | I |
-| [Than usual](/stance-bars#stance-bars) | `zazozon thubom zol guzemel.` | *Azozon is sleepier than usual.* | A |
+| [Than usual](/bars#channel-bars) | `zazozon thubom zol guzemel.` | *Azozon is sleepier than usual.* | I |
 | [Than I remember](/stance-bars#stance-bars) | `zazozon thevum zol gelazem.` | *Azozon is bigger than I remember.* | A |
 | [Than advertised](/stance-bars#stance-bars) | `zanal thebam zuol gagebem.` | *The book is less clear than advertised.* | A |
 | [Than I expected](/stance-bars#stance-bars) | `zazozon thabem zol guzemel.` | *Azozon is sleepier than I expected.* | A |
@@ -109,12 +109,7 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | Bar | Ranks against | English | Stage |
 |-----|---------------|---------|-------|
 | [met sake `thudatham`, `thobatham`, …](/stance-bars#stance-bars) | what that sake needs | *enough* / *too much* / *not enough* | A |
-| [LIVE `thugem`](/stance-bars#stance-bars) | how it looks | *than it looks* | A |
-| [MEMORY `thevum`](/stance-bars#stance-bars) | how you remember it | *than I remember* / *than last time* | A |
-| [PATTERN `thubom`](/stance-bars#stance-bars) | the trail of cases | *than usual* / *normal* | A |
-| [CLUES `theyom`](/stance-bars#stance-bars) | what was worked out | *than calculated* / *than it should be* | A |
-| [REPORTED `thebam`](/stance-bars#stance-bars) | what was said or written | *than advertised* / *than they said* | A |
-| [INTUITION `thabem`](/stance-bars#stance-bars) | your gut expectation | *than I expected* | A |
+| [a channel: LIVE `thugem`, MEMORY `thevum`, PATTERN `thubom`, CLUES `theyom`, REPORTED `thebam`, INTUITION `thabem`](/bars#channel-bars) | what that source led you to expect | *than usual* / *normal* / *than I remember* / *than last time* / *than it should be* / *than they said* | I |
 | [FORMER `helam`](/stance-bars#stance-bars) | how it used to be | *than it used to be* / *increasingly* | A |
 | [NOTIONAL `theyum`](/stance-bars#stance-bars) | the imagined case | *than imagined* / *than in theory* | A |
 | [PLAN `thagom`](/stance-bars#stance-bars) | the plan or the schedule | *than planned* / *than scheduled* | A |
@@ -125,7 +120,7 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [consent `hwudam`](/stance-bars#stance-bars) | the agreed terms | *more than agreed* | A |
 | [speaker attitude `thuwuyom`, `thewemum`](/stance-bars#stance-bars) | the case you hoped for or feared | *than hoped* / *than feared* | A |
 
-The bar's ending keeps its own job: on a channel it is evidence strength (`thubol`, `thubor`). The bar's `/b/` is the source (REPORTED), the holder (WANT, a say word over the act), or whose cases set the pattern (PATTERN). Only stances that set a value are bars: a hinge, MAY, MIRATIVE, DECISION, and ATTEMPT are not.
+The bar's ending keeps its own job: on a channel it is evidence strength (`thubol`, `thubor`). The bar's `/b/` is the source (REPORTED), the one who demands or grants (a say word over the act), or whose cases set the pattern (PATTERN). Only stances that set a value are bars: a hinge, MAY, MIRATIVE, DECISION, and ATTEMPT are not.
 
 ### Vague amounts {#vague}
 
