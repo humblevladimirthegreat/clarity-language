@@ -1,12 +1,12 @@
 # Tags for someone, pseudonyms, and logic
 
-**Status:** PROPOSED. User decisions, 2026-11-10: keep `eyen`; retire `umen`; tag **-n** becomes a pseudonym (a real, specific referent whose name is withheld), replacing named recall; `zwan` and `zwal` share the four tag letters and overwrite each other, except that a bound tag shadows (below); a tag on an every / no fence is a bound variable; pair forms bind; a quantified phrase never takes `zwan`; open every-kind `zuam` + tag is allowed (a default rule with exceptions). Workstreams done: none.
+**Status:** PROPOSED. User decisions, 2026-11-10: keep `eyen`; retire `umen`; tag **-n** becomes a pseudonym (a real, specific referent whose name is withheld), replacing named recall; `zwan` and `zwal` share the four tag letters and overwrite each other, except that a bound tag shadows (below); a tag on an every / no fence is a bound variable; pair forms bind; a quantified phrase never takes `zwan`; open every-kind `zuam` + tag is allowed (a default rule with exceptions); a pseudonym names a person only; `zwaon` recalls two pseudonyms; bare `zwan` never overwrites an **-l** holder, even one restored after a bound A expires; scope is reach, which starts at the quantified phrase, tagged or not, so reordering roles chooses scope; a tag on a not-every fence is rejected. Workstreams done: none.
 
 **Related:** [pronouns.md](../grammar/beginner/pronouns.md#special-pronouns), [tag-pronouns.md](../grammar/intermediate/tag-pronouns.md), [universals-domains.md](../grammar/intermediate/universals-domains.md), [joins.md](../grammar/beginner/joins.md#unspecified-member-r-phrase), [causation.md](../grammar/beginner/causation.md#if), [predication.md](../grammar/beginner/predication.md#identity), [unassigned-reserved.md](../meta/unassigned-reserved.md), [design-decisions.md](../meta/design-decisions.md), [glosses.md](../meta/glosses.md), [grammar-docs.md](../meta/grammar-docs.md), [`src/parse/constructions.ts`](../../src/parse/constructions.ts), [`src/parse/enforce.ts`](../../src/parse/enforce.ts), [`src/parse/invalid-forms.test.ts`](../../src/parse/invalid-forms.test.ts), [`src/closed-roots.ts`](../../src/closed-roots.ts).
 
 **Depends on:** none.
 
-**Design authority:** retires the special pronoun `umen`; changes the reading of tag **-n** (`zwan`) from named recall to pseudonym; adds phrase + tag **-n** as an assignment; gives a tag on a `zual` / `zuam` / `zul` fence a bound, one-at-a-time reading with its own reach; adds the rejections listed under [Rejections](#rejections).
+**Design authority:** retires the special pronoun `umen`; changes the reading of tag **-n** (`zwan`) from named recall to pseudonym; adds phrase + tag **-n** as an assignment; makes the relative order of quantified phrases in a sentence set their scope (an exception to *moving a word does not change the meaning*); gives a tag on a `zual` / `zuam` / `zul` fence a bound, one-at-a-time reading with its own reach; adds the rejections listed under [Rejections](#rejections).
 
 ## Problem
 
@@ -17,7 +17,8 @@
 ## Goals
 
 - Retire `umen`; *someone* is `zeyel zar` (no return planned) or `zwal` (you will return).
-- `zwan` names a real, specific referent whose name is withheld, and acts like a name from then on.
+- `zwan` names a real, specific person whose name is withheld, and acts like a name from then on.
+- Scope is visible: a quantified phrase covers what comes after it, and moving role-marked phrases chooses which covers which.
 - A tag on an every / no fence is a bound variable with a clear reach, so first-order claims (∀, ∃, ¬, →, =) can be said with tags and existing joins, hinges, and identity.
 - Every new rejection has a parser rule, a test, an unassigned-reserved row, and a design-decisions entry when the reason is more than *no reading yet*.
 
@@ -37,18 +38,20 @@
 | *someone*, no return planned | `zeyel zar` | some person, unknown or unsaid who |
 | *something / someone* | `zar` | some member, unsaid |
 | *someone; call them A* | `zwal` | a new referent, may be hypothetical |
-| *a real person; call them A* | `zeyel zwan` / `zwan` | a specific referent, name withheld ([pseudonym](#pseudonym-zwan)) |
+| *a real person; call them A* | `zeyel zwan` / `zwan` | a specific person, name withheld ([pseudonym](#pseudonym-zwan)) |
 
 `ume` stays a closed root for `umel` *neutral*. Its **-n** form becomes unassigned, closed by this decision. Every doc use of `umen` / `zumen` moves to `zeyel zar` (or `zwal` where the example resumes the person with a tag). Beginner Practice that drills `umen` is rewritten in W4.
 
 ### Pseudonym (`zwan`)
 
-Tag **-n** is a name for a specific referent whose real name is not said. A name means the same one every time, so `zwan` needs no separate assign and recall steps:
+Tag **-n** is a name for a specific person whose real name is not said. A name means the same one every time, so `zwan` needs no separate assign and recall steps:
 
-- **Bare, A free.** `zwan` with A unassigned (or after a bound A has expired with nothing under it) introduces a specific referent and calls it A.
-- **After a phrase.** Phrase + `zwan` in the same role assigns A to a specific referent of that phrase: `zeyel zwan` *a person, call her A (a real one)*. This overwrites any holder of A, as `zwal` does.
-- **Recall.** While A is held by a `zwan`, a later `zwan` recalls it. `zwar` recalls it too (whole-stem resume); `zwan` restates that the referent is specific.
-- **Overwrite.** `zwal` and phrase + `zwan` both take A over from anyone. Only the bare forms differ: bare `zwal` brings in someone new and takes A; bare `zwan` while A is held by a **-l** assignment is not a sentence ([Rejections](#rejections)), so a listener never mistakes it for a recall.
+- **People only.** A pseudonym names a person. For a company, a town, or a dog, assign with `zwal`. Phrase + `zwan` takes a person phrase (`zeyel`, a kin or role noun). W2 checks whether the parser has a person class it can test. If it does not, this is a teaching rule with no parser rejection, and W2 logs that in its report.
+- **Bare, A free.** `zwan` with A unassigned (or after a bound A has expired with nothing under it) introduces a specific person and calls them A.
+- **After a phrase.** Phrase + `zwan` in the same role assigns A to a specific person that phrase names: `zeyel zwan` *a person, call her A (a real one)*. This overwrites any holder of A, as `zwal` does.
+- **Recall.** While A is held by a `zwan`, a later `zwan` recalls it. `zwar` recalls it too (whole-stem resume); `zwan` restates that the person is specific.
+- **Overwrite.** `zwal` and phrase + `zwan` both take A over from anyone. Only the bare forms differ: bare `zwal` brings in someone new and takes A; bare `zwan` while A is held by a **-l** assignment is not a sentence ([Rejections](#rejections)), so a listener never mistakes it for a recall. This includes an **-l** holder that A has gone back to after a bound A expired: bare `zwan` never overwrites, whatever the history.
+- **Pairs.** `zwaon` recalls A and O together when both are held by `zwan`, as any pair form recalls its two tags.
 - **Placeholder vs pseudonym.** Bare `zwal` claims no specific referent (*suppose A tells O*). `zwan` claims one (*a friend, call her A*). That is the logic split between a variable and a constant.
 - **-x and -m.** `zwanx` is *A and associates*. A share on a pseudonym is `zwam`, as now.
 
@@ -59,6 +62,32 @@ Tag **-n** is a name for a specific referent whose real name is not said. A name
 > "A person (call her A) walks. A sees a dog."
 
 The gloss label (`tag.A.name` above) is settled in W2 against [glosses.md](../meta/glosses.md).
+
+### Scope by order
+
+A quantified phrase reaches from where it stands to the end of its sentence, plus every sentence a stand-in in that stretch points to. Anything later in that stretch is inside it. The quantified phrases are a `zual` / `zuam` / `zul` fence and a plain phrase that brings in a new member (*a cat*, the ∃ of logic). This holds whether or not the phrase carries a tag. A tag only lets you point back.
+
+Role letters let phrases move, so **reordering roles is how you choose scope**. The default order puts the subject's phrase widest, which is the everyday English reading.
+
+> `zual godozel dogozel vayebel.`
+>
+> [z-everything | g-dog] | d-cat | v-see
+>
+> "Every dog sees a cat." (∀x ∃y; each dog may see a different cat)
+
+> `dogozel zual godozel vayebel.`
+>
+> d-cat | [z-everything | g-dog] | v-see
+>
+> "There is a cat that every dog sees." (∃y ∀x; one cat)
+
+- **Who did what never changes.** Moving a word still keeps every role. What changes is only which of two quantified phrases covers the other. A clause with at most one quantified phrase reads the same in any order.
+- **Across a period.** A phrase in an earlier sentence covers the later one. That is the same rule.
+- **Negation already fits.** `vul` after the verb sits inside every quantified phrase before it: `zual gogozel vezuvel vul.` is *each cat, one by one, does not sleep* (the existing [not every](../grammar/intermediate/universals-domains.md#not-every) table). A `zul` that closes a fence denies only that fence.
+- **Why earlier is wider.** A join's reach runs back from the join, so a later join is the outer one. A quantifier's reach runs forward, as a span's opener holds what follows it, because a tag must be assigned before it is recalled.
+- **Why not islands.** A [scope island](../grammar/intermediate/scope-islands.md#scope-islands) narrows a binder to one chunk and never nests. Quantifier scope needs a reach over the rest of the sentence, nested to any depth. Islands stay as they are.
+
+**Placement.** The rule is taught where `zual` is: beginner [joins](../grammar/beginner/joins.md), in `### Everything (ua)`, with the example pair above. [clause.md](../grammar/beginner/clause.md) (under *Direct object*) says that moving a word changes nothing. That sentence narrows to *who did what*, with no forward link: a beginner reading that page has not met quantifiers yet. The bound-tag H3 links back to the joins section.
 
 ### Bound tags
 
@@ -75,11 +104,11 @@ A tag right after a `zual` / `zuam` / `zul` fence (with or without the shared ki
 
 Ordinary list joins keep the group reading (`zodozel zogozel zam zwal`). *All of them together* stays verb **-x**.
 
-**Reach.** A bound tag holds through the sentence that assigns it and every sentence a stand-in in it points to (a `blarl` condition, a `darl` content, and so on, recursively). At the end of that sentence, it expires. A tag assigned inside that reach expires with it, even an existential one: under *every dog*, *a cat O* is a different cat for each dog. A tag on a plain phrase outside any bound reach lasts as now. This follows English: *A farmer owns a donkey. He is happy.* works; *Every farmer owns a donkey. He is happy.* does not.
+**Reach.** A bound tag holds from the phrase that assigns it to the end of its sentence, and through every sentence a stand-in in that stretch points to (a `blarl` condition, a `darl` content, and so on, recursively). At the end of that sentence, it expires. A tag assigned inside that reach expires with it, even an existential one: under *every dog*, *a cat O* is a different cat for each dog. A tag on a plain phrase outside any bound reach lasts as now. This follows English: *A farmer owns a donkey. He is happy.* works; *Every farmer owns a donkey. He is happy.* does not.
 
 **Shadowing.** While a bound A is live, any earlier A is hidden. When the bound A expires, A refers to its earlier holder again. With no earlier holder, A is free.
 
-**Order.** Quantifiers take scope in the order their tags are assigned. To give a later phrase wider scope, assign its tag in an earlier sentence:
+**Order.** Tags follow [scope by order](#scope-by-order): a tag assigned later is inside the reach of every bound tag before it. To give a phrase wider scope, move it earlier in the clause or into an earlier sentence:
 
 > `zual godozel zwal dogozel dwol vayebel.`
 >
@@ -92,6 +121,12 @@ Ordinary list joins keep the group reading (`zodozel zogozel zam zwal`). *All of
 > [z-cat | z-tag.O] . [[z-everything | g-dog] | z-tag.A] | d-←tag.O | v-see
 >
 > "There is a cat O. Every dog A sees O." (∃y ∀x; one cat)
+
+> `dogozel dwol zual godozel zwal vayebel.`
+>
+> [d-cat | d-tag.O] | [[z-everything | g-dog] | z-tag.A] | v-see
+>
+> "A cat O, every dog A sees." (∃y ∀x in one sentence)
 
 **Connectives** are the existing ones: *and* / *or* from [set joins](../grammar/intermediate/set-joins.md), *not* (`vul`, and `zul` on a fence), *if* (`thohem blarl` + condition sentence, which falls inside the bound reach), *iff* ([because and iff](../grammar/intermediate/because-and-iff.md)), and x = y through [identity](../grammar/beginner/predication.md#identity).
 
@@ -113,13 +148,14 @@ Ordinary list joins keep the group reading (`zodozel zogozel zam zwal`). *All of
 
 ### Rejections
 
-| Form | Reason | Parser id (W2/W3 picks the final name) |
+| Form | Reason | Parser id (W2/W4 picks the final name) |
 |------|--------|----------------------------------------|
 | `umen` as a pronoun (`zumen`) | retired; `zeyel zar` / `zwal` | `retiredSomeone` |
 | bare `zwan` while A is held by a **-l** assignment (`zazozon zwal … zwan`) | would read as a recall of a different referent; assign with phrase + `zwan` to move A | `tagNameHeld` |
 | a quantified phrase + `zwan` (`zual gogozel zwan`) | a constant cannot be bound | `tagConstantBound` |
 | a recall of a bound tag after its reach, with no earlier holder (`zual gogozel zwal vezuvel. zwar guzemel.`) | the variable is out of scope; tags never fall back | `tagBoundExpired` |
 | assigning a tag that is bound and still live (`zual gogozel zwal … zodozel zwal` inside the reach) | would end the variable early; use another tag | `tagBoundRebind` |
+| a tag on a not-every fence (`zual gogozel zul zwal`) | the denial leaves no member for A to name; *some cat A doesn't …* is `zogozel zwal … vul` | `tagNegatedEvery` |
 
 `tagNameUnbound` (named recall with no name) is retired with named recall. `nonspecificPlural` and `topicNonspecific` are retired with `umen`.
 
@@ -133,16 +169,18 @@ If the user says to stop partway, the orchestrator [consolidates this proposal](
 |----|-------|-------|----------------|----------|
 | W1 | Retire `umen`: grammar prose and tables, meta notes, parser, tests. Not Practice. | `proposal-worker` | `opus` / `high` | `docs/grammar/beginner/pronouns.md` (not `### Practice`), `docs/grammar/intermediate/universals-domains.md` (row only), `docs/grammar/terminology.md`, `docs/grammar/intermediate/topic.md`, `docs/grammar/advanced/hook-compounds.md`, `docs/grammar/intermediate/resume-sense.md`, `docs/grammar/beginner/sakes.md`, `docs/grammar/english.md`, `docs/grammar/say-*.md`, `docs/grammar/finger-code.md`, hand-written rows in `docs/grammar/cheat-sheets/`, `docs/meta/glosses.md`, `docs/meta/grammar-docs.md`, `docs/meta/unassigned-reserved.md`, `docs/meta/design-decisions.md`, `src/parse/*`, `src/closed-roots.ts` (only if a special-pronoun list lives there) |
 | W2 | Pseudonym `zwan`: tag page prose and table, parser (phrase + tag **-n** assigns; bare `zwan` rules; `tagNameHeld`), tests, glosses, reserved rows, design decisions. Not Practice. | `proposal-worker` | `opus` / `high` | `docs/grammar/intermediate/tag-pronouns.md` (not `### Practice`), hand rows in `docs/grammar/cheat-sheets/people-pointing.md`, `docs/meta/glosses.md`, `docs/meta/unassigned-reserved.md`, `docs/meta/design-decisions.md`, `src/parse/*` |
-| W3 | Bound tags: new H3, Lists bullet and *a tag lasts* paragraph on the tag page, one-line cross-reference on the universals page, parser (bound reading, reach, shadowing, `tagConstantBound`, `tagBoundExpired`, `tagBoundRebind`), reader notes and LLM prompt, tests, `npm run grammar-check` if `sentence-parser.ts` changes. | `proposal-worker` | `opus` / `high` | `docs/grammar/intermediate/tag-pronouns.md`, `docs/grammar/intermediate/universals-domains.md` (not `### Practice`), `docs/meta/unassigned-reserved.md`, `docs/meta/design-decisions.md`, `docs/meta/glosses.md`, `src/parse/*` |
-| W4 | Practice: rewrite beginner pronoun items that drill `umen` (`zumen dahelan vabuvul …`, the *someone* row); rewrite the tag-page item that drills named recall (`zahelan dwan vayebel`); top up one bound-tag item and one pseudonym item where the new H3 lands. | `checkpoint-writer` | `opus` / `high` | `### Practice` of the three pages; drill allowlist |
-| W5 | Audit: read the changed sections and close neighbors; check that *someone* reads the same everywhere, that no page still teaches named recall, that every example parses, and that `find-english.mjs 'someone'` points at the new forms. Fix small slips; report anything larger. | `proposal-worker` (fresh) | `opus` / `high` | any file W1–W4 touched |
+| W3 | Scope by order: the rule and example pair in beginner `### Everything (ua)`, the narrowed move-a-word sentence in `clause.md`, existing examples with two quantified phrases in one clause re-glossed to the rule, reader notes and LLM prompt (scope by order), tests if the parser marks scope, `npm run grammar-check` if `sentence-parser.ts` changes. | `proposal-worker` | `opus` / `high` | `docs/grammar/beginner/joins.md` (`### Everything (ua)` only), `docs/grammar/beginner/clause.md` (the move-a-word sentence only), any grammar page whose example W3's premise check flags (that example's gloss only), `src/parse/*` |
+| W4 | Bound tags: new H3, Lists bullet and *a tag lasts* paragraph on the tag page, one-line cross-reference on the universals page, parser (bound reading, reach, shadowing, `tagConstantBound`, `tagBoundExpired`, `tagBoundRebind`, `tagNegatedEvery`), reader notes and LLM prompt, tests, `npm run grammar-check` if `sentence-parser.ts` changes. | `proposal-worker` | `opus` / `high` | `docs/grammar/intermediate/tag-pronouns.md`, `docs/grammar/intermediate/universals-domains.md` (not `### Practice`), `docs/meta/unassigned-reserved.md`, `docs/meta/design-decisions.md`, `docs/meta/glosses.md`, `src/parse/*` |
+| W5 | Practice: rewrite beginner pronoun items that drill `umen` (`zumen dahelan vabuvul …`, the *someone* row); rewrite the tag-page item that drills named recall (`zahelan dwan vayebel`); top up one scope-by-order item on beginner joins, and one bound-tag item and one pseudonym item where the new H3 lands. | `checkpoint-writer` | `opus` / `high` | `### Practice` of the four pages; drill allowlist |
+| W6 | Audit: read the changed sections and close neighbors; check that *someone* reads the same everywhere, that no page still teaches named recall or calls a pseudonym anything but a person, that no page still says moving a word never changes the meaning, that every example parses, and that `find-english.mjs 'someone'` points at the new forms. Fix small slips; report anything larger. | `proposal-worker` (fresh) | `opus` / `high` | any file W1–W5 touched |
 
-Order: W1, W2, W3, W4, W5, in sequence (W2 and W3 share the tag page and the parser).
+Order: W1, W2, W3, W4, W5, W6, in sequence (W2 and W4 share the tag page and the parser; W4 links back to W3's section).
 
-**Placement in W3.** The bound-tag H3 goes on whichever of `tag-pronouns.md` and `universals-domains.md` comes later in the intermediate path ([learning levels](../meta/learning-levels.md)), so it can link back to both without a forward link. The other page gets a one-line pointer only if it comes later. If the H3 would push its sitting past the size limit, stop and alert ([restructure sittings](../meta/procedures/restructure-sittings.md)).
+**Placement in W4.** The bound-tag H3 goes on whichever of `tag-pronouns.md` and `universals-domains.md` comes later in the intermediate path ([learning levels](../meta/learning-levels.md)), so it can link back to both without a forward link. The other page gets a one-line pointer only if it comes later. If the H3 would push its sitting past the size limit, stop and alert ([restructure sittings](../meta/procedures/restructure-sittings.md)).
 
 **Premise checks** (stop and alert if one fails):
-- W3 first checks whether the clause grammar already fixes scope for two quantified phrases in one clause. If it does and it disagrees with assignment order, stop: [Open decision 4](#open-decisions).
+- W3 first lists existing examples (grammar pages, `say-*.md`, Practice) with two quantified phrases in one clause, and any prose that states a scope rule. It re-glosses examples outside Practice to [scope by order](#scope-by-order) and reports Practice items for W5. If a page states a different scope rule as a design point (not just an example gloss), stop and alert.
+- W3 checks that the sitting holding beginner `### Everything (ua)` stays under the size limit after the addition. If it would not, stop and alert ([restructure sittings](../meta/procedures/restructure-sittings.md)).
 - W1 checks that `umel` *neutral* has no other dependency on `umen`'s pronoun status (cheat-sheet seeds, Claritish lists, the English helper's data).
 
 ### Rule digest (pasted into every brief)
@@ -151,10 +189,10 @@ Order: W1, W2, W3, W4, W5, in sequence (W2 and W3 share the tag page and the par
 > - Parser changes ship with the grammar edit that teaches them, plus an `unassigned-reserved.md` row for each newly rejected spelling and a `design-decisions.md` entry when the reason is more than *no reading yet*.
 > - Work out what a sentence means with `node scripts/parse.mjs --llm-prompt`; check that a form parses with `node scripts/parse.mjs` (all sentences in one call).
 > - `umen` is retired. *Someone* is `zeyel zar` (no return planned) or `zwal` (you will return).
-> - `zwan`: a real, specific referent whose name is withheld. Bare `zwan` introduces when A is free and recalls when A is held by `zwan`; phrase + `zwan` assigns and overwrites; bare `zwan` while A is held by **-l** is not a sentence.
-> - A tag after a `zual` / `zuam` / `zul` fence binds (each member in turn). It holds through its sentence and the sentences that sentence's stand-ins point to, then expires; tags assigned inside expire with it; an earlier holder of A is hidden while it is live and comes back after.
-> - Quantifier scope follows tag assignment order.
-> - Rejections and their reasons: see the proposal's Rejections table, pasted below the digest for W2 and W3.
+> - `zwan`: a real, specific person (people only) whose name is withheld. Bare `zwan` introduces when A is free and recalls when A is held by `zwan`; phrase + `zwan` assigns and overwrites; bare `zwan` while A is held by **-l** (even a restored one) is not a sentence; `zwaon` recalls two pseudonyms.
+> - Scope by order: a quantified phrase (a `zual` / `zuam` / `zul` fence, or a phrase bringing in a new member) reaches from where it stands to the end of its sentence, plus the sentences its stand-ins point to; whatever comes later is inside it. Tagged or not. Reordering roles chooses scope; who did what never changes. Verb `vul` sits inside every quantified phrase before it.
+> - A tag after a `zual` / `zuam` / `zul` fence binds (each member in turn). It holds from its phrase to the end of its sentence and through the sentences its stand-ins point to, then expires; tags assigned inside expire with it; an earlier holder of A is hidden while it is live and comes back after. A tag on a not-every fence (`zual` … `zul`) is not a sentence.
+> - Rejections and their reasons: see the proposal's Rejections table, pasted below the digest for W2 and W4.
 > - Do not link to any file under `docs/proposals/`.
 > - Read slices: list headings first, read only the ranges you edit.
 > - Cheat-sheet tables between `<!-- generated -->` markers are never edited by hand; report that a regeneration is needed and stop there.
@@ -168,21 +206,18 @@ Order: W1, W2, W3, W4, W5, in sequence (W2 and W3 share the tag page and the par
 
 - Orchestrator saves `npm run verify -- --baseline` before W1.
 - Each unit ends with a green `npm run verify -- --allow-generate` against that baseline.
-- After W1 and after W2: `npm run cheat-sheet-blocks -- --write`, committed on its own ([fence automated rewrites](../meta/procedures/proposals.md#fence-automated-rewrites)), then verify.
-- After W3: `npm run grammar-check` if `src/parse/sentence-parser.ts` changed.
-- Final gate after W5: clean `npm run build` and `npm test`, with nothing left on a **generate** row.
+- After W1, W2, and W4: `npm run cheat-sheet-blocks -- --write`, committed on its own ([fence automated rewrites](../meta/procedures/proposals.md#fence-automated-rewrites)) when it changes anything, then verify.
+- After W3 and after W4: `npm run grammar-check` if `src/parse/sentence-parser.ts` changed.
+- Final gate after W6: clean `npm run build` and `npm test`, with nothing left on a **generate** row.
 
 ### AGENTS.md
 
-Orchestrator applies Owns-line changes at the end. Expected: the `joins.md` row's *a whole kind: universals, domains (`universals-domains.md`)* or the `pronouns.md` row's *tag pronouns (`tag-pronouns.md`)* gains *bound tags*, whichever page holds the new H3.
+Orchestrator applies Owns-line changes at the end. Expected: the `joins.md` row's *a whole kind: universals, domains (`universals-domains.md`)* or the `pronouns.md` row's *tag pronouns (`tag-pronouns.md`)* gains *bound tags*, whichever page holds the new H3. The `clause.md` row's *default order* becomes *default order and scope by order* only if W3 puts the rule on `clause.md`; it stays as is when the rule lives in beginner joins.
 
 ### Commits
 
-Six to eight commits, each `tags-and-logic WN: <what> [skip-cd]` plus the co-author line, staging only that unit's files: W1, W1 cheat-sheet regeneration, W2, W2 cheat-sheet regeneration (if any table changed), W3, W4, W5 (if it fixed anything), and the AGENTS.md Owns lines with the proposal's removal.
+Seven to ten commits, each `tags-and-logic WN: <what> [skip-cd]` plus the co-author line, staging only that unit's files: W1, W1 cheat-sheet regeneration, W2, W2 cheat-sheet regeneration (if any table changed), W3, W4, W4 cheat-sheet regeneration (if any table changed), W5, W6 (if it fixed anything), and the AGENTS.md Owns lines with the proposal's removal.
 
 ## Open decisions
 
-1. **What a pseudonym can name.** Options: people only; any specific referent (a company, a town, a dog). **Recommendation:** any specific referent. **-n** already names places and kinds, and *a company, call it A* has the same privacy use.
-2. **Pair forms on pseudonyms (`zwaon`).** Options: no pair **-n**; `zwaon` recalls A and O when both are held by `zwan`. **Recommendation:** allow it. It follows from pairs and pseudonyms without a new rule, and a story about two anonymous people needs it.
-3. **Bare `zwan` when A is held by an expired-then-restored `zwal`.** After a bound A expires and A goes back to an earlier `zwal` holder, bare `zwan` is not a sentence by the same rule as any held A. Options: keep that; let `zwan` introduce whenever no `zwan` holds A. **Recommendation:** keep it. One rule (bare `zwan` never overwrites) is easier to learn than one that looks at history.
-4. **Scope when the clause grammar already decides it.** Only if W3's premise check finds an existing rule for two quantified phrases in one clause that disagrees with assignment order. Options: assignment order wins for tagged phrases only; the existing rule wins and the earlier-sentence trick is the only way to widen scope. **Recommendation:** assignment order for tagged phrases. The tag is the speaker's explicit choice, and logic needs scope to be visible.
+None. All were settled on 2026-11-10 (Status line).

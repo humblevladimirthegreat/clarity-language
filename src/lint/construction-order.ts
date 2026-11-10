@@ -134,3 +134,69 @@ export function learningOrderFindings(
   const failures = forward.size + notAtHome.length + unresolved.length + unbandedHomes.length + unbandedCount;
   return { unresolved, unbandedHomes, notAtHome, unbandedUses, forward, links, failures };
 }
+
+/** One page-to-page dependency: `from` uses constructions homed on, or links to, `to`. */
+export type PageDep = {
+  from: string;
+  to: string;
+  /** Construction ID → number of uses on `from` whose home is on `to`. */
+  constructions: Map<string, number>;
+  /** `from:line` for each stage-page link from `from` to `to`. */
+  links: string[];
+};
+
+/** Links to another page with no `#anchor` (`[x](/joins)`, `[x](joins.md)`), outside code. */
+function pageOnlyLinks(markdown: string): { index: number; page: string }[] {
+  const blanked = markdown
+    .replace(/^\s*```[\s\S]*?^\s*```/gm, (m) => " ".repeat(m.length))
+    .replace(/`[^`\n]*`/g, (m) => " ".repeat(m.length));
+  const out: { index: number; page: string }[] = [];
+  for (const m of blanked.matchAll(/\]\(([^)\s#]+)\)/g)) {
+    const target = m[1]!;
+    if (/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(target)) continue;
+    const leaf = target.replace(/^\.\//, "").replace(/^\//, "").split("/").pop()!;
+    if (!leaf || leaf === "..") continue;
+    out.push({ index: m.index!, page: leaf.endsWith(".md") ? leaf : `${leaf.replace(/\.html$/, "")}.md` });
+  }
+  return out;
+}
+
+/**
+ * Every page-to-page dependency in the reading order, in either direction: a
+ * construction used on one page and homed on another, or a link between two
+ * stage pages. `## See also` sections are skipped. Feeds `lint:ageben --deps`,
+ * which plans reorders (docs/meta/learning-levels.md#order-inside-a-band).
+ */
+export function pageDependencies(
+  order: LearningOrder,
+  registry: Registry,
+  allUses: readonly ConstructionUse[],
+  pageMarkdown: ReadonlyMap<string, string>,
+): PageDep[] {
+  const onPath = (page: string) => order.readingOrder.includes(page);
+  const homes = constructionHomes(order, registry);
+  const deps = new Map<string, PageDep>();
+  const dep = (from: string, to: string) => {
+    const key = `${from}|${to}`;
+    let d = deps.get(key);
+    if (!d) deps.set(key, (d = { from, to, constructions: new Map(), links: [] }));
+    return d;
+  };
+  for (const u of allUses) {
+    const home = homes.get(u.id);
+    if (!home || u.section.ignored || home.page === u.section.page) continue;
+    if (!onPath(u.section.page) || !onPath(home.page)) continue;
+    const d = dep(u.section.page, home.page);
+    d.constructions.set(u.id, (d.constructions.get(u.id) ?? 0) + 1);
+  }
+  for (const ps of order.pages.values()) {
+    if (!onPath(ps.page)) continue;
+    const markdown = pageMarkdown.get(ps.page)!;
+    const targets = [...anchorLinks(ps.page, markdown), ...pageOnlyLinks(markdown)];
+    for (const link of targets) {
+      if (link.page === ps.page || !onPath(link.page) || sectionAt(ps.sections, link.index).ignored) continue;
+      dep(ps.page, link.page).links.push(`${ps.page}:${lineNumberAt(markdown, link.index)}`);
+    }
+  }
+  return [...deps.values()];
+}

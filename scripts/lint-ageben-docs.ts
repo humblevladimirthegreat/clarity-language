@@ -76,7 +76,12 @@ import {
   type LearningOrder,
   type PageSections,
 } from "../src/lint/learning-order.js";
-import { constructionCoverageGaps, constructionHomes, learningOrderFindings } from "../src/lint/construction-order.js";
+import {
+  constructionCoverageGaps,
+  constructionHomes,
+  learningOrderFindings,
+  pageDependencies,
+} from "../src/lint/construction-order.js";
 import { duplicateIds } from "../src/lint/grammar-anchors.js";
 import { glossLabels, lintTerminology, TERMINOLOGY_PAGE } from "../src/lint/terminology-docs.js";
 import { lintRetieFormat } from "../src/lint/retie-format.js";
@@ -119,9 +124,10 @@ const metaDir = join(REPO_ROOT, "docs", "meta");
 /** A record of past spellings (docs/meta/procedures/retie.md#skipped) keeps its old names. */
 const RETIE_SKIP_RE = /^<!--\s*retie:\s*skip\s*-->\s*$/m;
 
-function parseCli(argv: string[]): { paths: string[]; orderReport: boolean } {
+function parseCli(argv: string[]): { paths: string[]; orderReport: boolean; deps: boolean } {
   const paths: string[] = [];
   let orderReport = false;
+  let deps = false;
   for (const arg of argv) {
     if (arg === "--help" || arg === "-h") {
       console.error(`Usage: npm run lint:ageben -- [paths...] [--check-ambiguity]
@@ -132,6 +138,10 @@ gaps, and translation word-bank English/lexicon mismatches fail. Word banks
 must list every drill content root, and every row must be used.
 --check-ambiguity is always on for the corpus (flag kept for callers).
 --order-report lists every learning-order finding (the default prints counts).
+--deps prints only the page-to-page dependency report, one tab-separated row
+per pair: user page, home page, construction uses, links, construction IDs
+with counts, link lines. Rows point both ways in the current order; a row whose
+home comes later is also a learning-order finding.
 Families not practiced in their page band's translation drill fail.`);
       process.exit(0);
     }
@@ -142,13 +152,21 @@ Families not practiced in their page band's translation drill fail.`);
       orderReport = true;
       continue;
     }
+    if (arg === "--deps") {
+      deps = true;
+      continue;
+    }
     if (arg.startsWith("-")) {
       console.error(`Unknown flag: ${arg}`);
       process.exit(2);
     }
     paths.push(arg);
   }
-  return { paths, orderReport };
+  if (deps && paths.length > 0) {
+    console.error("--deps reads the whole corpus; drop the paths.");
+    process.exit(2);
+  }
+  return { paths, orderReport, deps };
 }
 
 function resolveTargets(paths: string[]): string[] {
@@ -322,10 +340,31 @@ function reportCheckpointInventory(orderPages: readonly string[]): number {
   return findings.length;
 }
 
+/**
+ * `--deps`: one tab-separated row per page pair, in reading order of the user
+ * page. Columns: user page, home page, construction uses, links, `id×n` list,
+ * link lines.
+ */
+function printDependencies(order: LearningOrder, uses: readonly ConstructionUse[]): void {
+  const at = (page: string) => order.readingOrder.indexOf(page);
+  const rows = pageDependencies(order, CONSTRUCTIONS, uses, pageMarkdown).sort(
+    (a, b) => at(a.from) - at(b.from) || at(a.to) - at(b.to),
+  );
+  console.log(["from", "to", "uses", "links", "constructions", "link_lines"].join("\t"));
+  for (const d of rows) {
+    const ids = [...d.constructions].sort(([, a], [, b]) => b - a).map(([id, n]) => `${id}×${n}`);
+    const total = [...d.constructions.values()].reduce((n, c) => n + c, 0);
+    console.log([d.from, d.to, total, d.links.length, ids.join(" "), d.links.join(" ")].join("\t"));
+  }
+}
+
 const pageMarkdown = new Map<string, string>();
 
 function main(): void {
-  const { paths, orderReport } = parseCli(process.argv.slice(2));
+  const { paths, orderReport, deps } = parseCli(process.argv.slice(2));
+  // `--deps` prints only its report: the lint findings are silenced while the corpus is read.
+  const quiet = { log: console.log, error: console.error };
+  if (deps) Object.assign(console, { log: () => {}, error: () => {} });
   const hostIssues = lintOverlayHosts();
   const files = resolveTargets(paths);
   const tables = loadDefaultTables();
@@ -457,6 +496,12 @@ function main(): void {
         console.log(formatNumberSpeechFinding(rel, finding));
       }
     }
+  }
+
+  if (deps) {
+    Object.assign(console, quiet);
+    printDependencies(learningOrder(pathPages(), pages), uses);
+    return;
   }
 
   let terminologyCount = 0;
