@@ -871,7 +871,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 💰,money,ara,counting,holds,,debt,money bag holds what is owed; debt is an unpaid balance,v:pay,finance; cash; currency; fund; capital; payment,clause.md#beginner-practice
 🪎,treasure,edora,counting,holds,medium,riches,a treasure chest is piled with gold and jewels,,,
 💴,yen,eyere,counting,one,small,,,,,
-💵,dollar,udere,counting,one,small,cost,a dollar pays the price; cost is what something takes from you,,price; fee; expense,
+💵,dollar,udere,counting,one,small,cost,a dollar pays the price; cost is what something takes from you,,price; fee; expense,measures-and-percent.md#intermediate-practice
 💶,euro,uyere,counting,one,small,,,,,
 💷,pound,ubere,counting,one,small,gram,banknote stands for a standard mass chunk; gram is the SI mass unit,,,
 💸,spend,ezuru,counting,takes-away,none,waste,money flies away with wings; waste is losing what you had,,expenditure,
@@ -1075,7 +1075,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ✖️,multiply,emura,counting,holds,none,negation,multiply sign marks crossing out; negation is saying not so,,,
 ➕,plus,ebura,counting,holds,none,addition,plus adds one thing to another; addition is joining more in,,add; positive; sum; gain; total,
 ➖,minus,amuru,counting,takes-away,none,subtraction,minus takes one thing away; subtraction is taking away from,,negative; reduction,
-➗,divide,oduru,counting,takes-away,none,percentage-point,divide splits a whole into a hundred parts; a percentage point is one step on that hundred-part scale,,split,
+➗,divide,oduru,counting,takes-away,none,percentage-point,divide splits a whole into a hundred parts; a percentage point is one step on that hundred-part scale,,split,measures-and-percent.md#intermediate-practice
 🟰,equals,egure,counting,one,none,equality,both sides equal; equality is equal standing,,peer; equivalent; equation,
 ♾️,infinity,enuro,counting,order,none,boundlessness,infinity loop never closes; boundlessness is the unobservable without-limit,,,
 ‼️,bang,abugo,sign,order,none,,,,knock; snap; pop; tap,

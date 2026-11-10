@@ -144,6 +144,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *bottle* | `awodal` | 🍼 |
 | *meter* | `ezerom` | 📐 from *set square* |
 | *hour* | `agorum` | ⏳ from *hourglass* |
+| *cost* | `uderem` | 💵 from *dollar* |
+| *percentage point* | `odurum` | ➗ from *divide* |
 
 **Review:**
 
@@ -175,14 +177,14 @@ z-pill-x | g-25yo
 z-Azozon | [b-meter | g-two] | v-walk
 :::
 
-**3.** *A growth of two percentage points.*
+**3.** *The cost grew two percentage points.*
 
 ::: details Show answer
-`zelom gradoyul.`
+`zuderem bodurum gradol velom.`
 
-z-growth | g-2yu
+z-cost | [b-percentage-point | g-two] | v-growth
 
-**`yu`** counts points on the scale (written short, `g+2%*`); **`yo`** (`gradoyol`) would be two percent of the growth.
+A change in points is a measure phrase on `oduru`, like *two hours*. **`yo`** (`zuderem gradoyol`) would be two percent of the cost.
 :::
 
 **4.** *Two thirds of the pills.*
