@@ -272,6 +272,7 @@ Put the amount on the unit's noun as `/ɡ/`. Each unit is the abstract **-m** of
 | [mile](/measures-and-percent#stock-units) | `unoba` | `bunobam g+2` | `unobal` *boot* | I |
 | [pound](/measures-and-percent#stock-units) | `awoba` | `bawobam g+5` | `awobal` *shopping-bag* | I |
 | [heat grade (not kelvin)](/measures-and-percent#stock-units) | `overo` | `boverom g+37` | `overol` *thermometer* | I |
+| [percentage point](/measures-and-percent#stock-units) | `oduru` | `bodurum g+2` | `odurul` *divide* | I |
 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Stage |

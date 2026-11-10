@@ -59,6 +59,7 @@ Each unit is a metaphor on a published root. The **Literal on same root** column
 | mile | `unoba` *mile* | `bunobam g+2` | `unobal` *boot* | 🥾: a long walk |
 | pound | `awoba` *pound-mass* | `bawobam g+5` | `awobal` *shopping-bag* | 🛍️: sold by the pound |
 | heat grade (not kelvin) | `overo` *temperature* | `boverom g+37` | `overol` *thermometer* | 🌡️: how hot or cold |
+| percentage point | `oduru` *percentage point* | `bodurum g+2` | `odurul` *divide* | ➗: a whole divided into a hundred steps |
 
 Words for a quantity itself (*heavy*, *flow*, *time* as a continuum, …) are ordinary roots (`arolem` *heavy*, `godurom` *duration*, …), not units.
 
@@ -87,6 +88,14 @@ Digits follow the [normal digit rules](digitless-exponents.md#exponents) (includ
 Order: integer digits, optional **`ye`** + fractional digits, then **`yo`** or **`yu`**. **`yo`** / **`yu`** sit on **`ra`** / **`ru`** only. At most one **`yo`** or **`yu`** group in the number word; leave **`wa`** / **`wu`** off that word. Endings still apply (**-l** exact, **-m** about, **-n** named label, **-r** resume).
 
 In [preferred writing](number-markers.md#writing-preferred-shorthand): **`%`** → speech **`yo`**; **`%*`** → speech **`yu`** (sign still on **`ra`** / **`ru`**, written **`+`** / **`-`**).
+
+To say **by how many points** something changed in a clause (*the cost rose two points*), use a [measure phrase](#measure-phrases) on the unit root `oduru` *percentage point*, the same way as *two hours*.
+
+> `zuderem bodurum gradol vabuhom.`
+>
+> z-cost | [b-percentage-point | g-two] | v-rise
+>
+> "The cost rose two percentage points."
 
 #### Fractions (*half of*) {#fractions}
 

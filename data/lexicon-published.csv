@@ -1075,7 +1075,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ✖️,multiply,emura,counting,holds,none,negation,multiply sign marks crossing out; negation is saying not so,,,
 ➕,plus,ebura,counting,holds,none,addition,plus adds one thing to another; addition is joining more in,,add; positive; sum; gain; total,
 ➖,minus,amuru,counting,takes-away,none,subtraction,minus takes one thing away; subtraction is taking away from,,negative; reduction,
-➗,divide,oduru,counting,takes-away,none,,,,split,
+➗,divide,oduru,counting,takes-away,none,percentage-point,divide splits a whole into a hundred parts; a percentage point is one step on that hundred-part scale,,split,
 🟰,equals,egure,counting,one,none,equality,both sides equal; equality is equal standing,,peer; equivalent; equation,
 ♾️,infinity,enuro,counting,order,none,boundlessness,infinity loop never closes; boundlessness is the unobservable without-limit,,,
 ‼️,bang,abugo,sign,order,none,,,,knock; snap; pop; tap,
