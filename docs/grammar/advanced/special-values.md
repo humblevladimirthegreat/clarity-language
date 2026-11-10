@@ -355,20 +355,20 @@ z-star-x | g-plus-infinity
 z-telescope-x | g-+-1e
 :::
 
-**3.** *Finally: Azozon sees the clouds.*
+**3.** *I saw Alazun look at the clouds recently.*
 
 ::: details Show answer
-`xrowal zazozon dugalalx vayebel.`
+`zalazun thevum blruwum dugalalx vayebel.`
 
-x-finally | z-Azozon | d-cloud-x | v-see
+z-Alazun | [th-MEMORY | bl---e-.about] | d-cloud-x | v-see
 :::
 
-**4.** *Alazun almost sees the sun.*
+**4.** *I just saw Azozon look at the telescope.*
 
 ::: details Show answer
-`zalazun hruwul dezalol vayebel.`
+`zazozon thevum blruwul dudowol vayebel.`
 
-z-Alazun | h---e- | d-sun | v-see
+z-Azozon | [th-MEMORY | bl---e-] | d-telescope | v-see
 :::
 
 #### Ageben → English {#advanced-ageben-to-english}
@@ -397,6 +397,14 @@ x-starting-with | z-Ahelan | d-star | v-see
 *Starting with: Ahelan sees the star.*
 :::
 
+**4.** `zahelan thevum blruwum dezalol vayebel.`
+
+::: details Show answer
+z-Ahelan | [th-MEMORY | bl---e-.about] | d-sun | v-see
+
+*I recently saw Ahelan look at the sun.*
+:::
+
 #### Pick one {#advanced-pick-one}
 
 **1.** *Azozon barely sees the star.* `zazozon hrawul dalel vayebel.` or `zazozon hruwul dalel vayebel.`
@@ -409,14 +417,12 @@ z-Azozon | h-+-e- | d-star | v-see
 **`ra`** clears one full time by a hair (*barely*); **`ru`** falls a hair short (*almost*).
 :::
 
-#### What changes {#advanced-what-changes}
-
-**1.** `zalelx gramol.` / `zalelx gramowal.`
+**2.** *I just saw Alazun look at the star.* `zalazun thevum blruwul dalel vayebel.` or `zalazun thevum blruwum dalel vayebel.`
 
 ::: details Show answer
-z-star-x | g-zero
+`zalazun thevum blruwul dalel vayebel.`
 
-z-star-x | g-+-0e
+z-Alazun | [th-MEMORY | bl---e-] | d-star | v-see
 
-The first is plain zero stars; mantissa **`0`** plus digitless **`wa`** is absolute zero: none at all, stronger than **`gramol`**.
+**-l** is *just now*; open **-m** is *recently*.
 :::
