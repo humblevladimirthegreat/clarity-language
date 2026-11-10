@@ -1,12 +1,12 @@
 # Units
 
-**Status:** PROPOSED, 2026-11-10. User decisions, 2026-11-10: units are cut by file size, not by taught-line counts; phase 1 is the sidebar grouping only and ships alone; later phases are not scheduled; units are collapsible; units are not numbered for now. Revised 2026-11-10 after a dependency analysis (`lint:ageben -- --deps`): the unit table below replaces the first draft, and its order is the one the analysis supports.
+**Status:** PROPOSED, 2026-11-10. User decisions, 2026-11-10: units are cut by file size, not by taught-line counts; phase 1 is the sidebar grouping only and ships alone; later phases are not scheduled; units are collapsible; units are not numbered for now. Revised 2026-11-10 after a dependency analysis (`lint:ageben -- --deps`): the unit table below replaces the first draft, and its order is the one the analysis supports. User decisions on the revision, 2026-11-10: `questions` moves up into *Linking and asking*; *Sounds and words* merges into *First words and sentences*; the small Intermediate units (*Fuller sentences*, *How you know*) stay as they are. Second revision 2026-11-10, after a review: vocabulary dependencies are measured ([vocabulary](#vocabulary)), `llms-txt.ts` joins step 1, and the planner gains a review-word count (step 2). User decisions on the second revision, 2026-11-10: `dependents` stays 6th and closes *First words and sentences*; `knowing` moves into *Pointing and describing*, leaving *Wanting and being able* as a two-sitting unit; *Counting and comparing* follows *Where, when, how often*; the FORMER row on `bars` moves to `residue-and-former.md`.
 
-**Related:** [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts), [reading-order.test.ts](../grammar/.vitepress/lib/reading-order.test.ts), [config.ts](../grammar/.vitepress/config.ts), [learning-levels.md](../meta/learning-levels.md), [restructure-sittings.md](../meta/procedures/restructure-sittings.md), [grammar-docs.md](../meta/grammar-docs.md), [lint-ageben-docs.ts](../../scripts/lint-ageben-docs.ts), [construction-order.ts](../../src/lint/construction-order.ts), [lint-forward-links.ts](../../scripts/lint-forward-links.ts), [lint-sidebar-pages.ts](../../scripts/lint-sidebar-pages.ts), [peel-band.ts](../../scripts/peel-band.ts), [peel-headings.ts](../../scripts/peel-headings.ts), [constructions.ts](../../src/parse/constructions.ts)
+**Related:** [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts), [llms-txt.ts](../../scripts/lib/llms-txt.ts), [core-vocabulary.ts](../../src/core-vocabulary.ts), [lexicon.md](../meta/procedures/lexicon.md), [reading-order.test.ts](../grammar/.vitepress/lib/reading-order.test.ts), [config.ts](../grammar/.vitepress/config.ts), [learning-levels.md](../meta/learning-levels.md), [restructure-sittings.md](../meta/procedures/restructure-sittings.md), [grammar-docs.md](../meta/grammar-docs.md), [lint-ageben-docs.ts](../../scripts/lint-ageben-docs.ts), [construction-order.ts](../../src/lint/construction-order.ts), [plan-units.ts](../../scripts/plan-units.ts), [unit-plan.ts](../../src/lint/unit-plan.ts), [lint-forward-links.ts](../../scripts/lint-forward-links.ts), [lint-sidebar-pages.ts](../../scripts/lint-sidebar-pages.ts), [peel-band.ts](../../scripts/peel-band.ts), [peel-headings.ts](../../scripts/peel-headings.ts), [constructions.ts](../../src/parse/constructions.ts)
 
 **Depends on:** none.
 
-**Design authority:** *none*. Phase 1 groups and reorders sittings; it adds, removes, and changes no form or reading.
+**Design authority:** *none*. Phase 1 groups and reorders sittings and moves one table row between two pages; it adds, removes, and changes no form or reading.
 
 ## Problem
 
@@ -22,14 +22,15 @@ Each band is one long flat list in the sidebar: 37 Beginner sittings, 63 Interme
 ## Non-goals (phase 1)
 
 - Unit intro pages or blocks, unit summaries, unit capstone practice.
-- Vocabulary slices or any change to the `core` column.
-- Changes to checkpoints, beyond dropping an item that the reorder makes leak.
+- Vocabulary slices. The `core` column changes only where the reorder makes a Review word leak ([order](#order), rule 4).
+- Changes to checkpoints, beyond dropping an item that the reorder makes leak and moving a bank row for a moved `core` cell.
+- An optimizer that assigns sittings to units ([why not a solver](#why-not-a-solver)).
 - New sittings, splits, or band moves. A sitting that is too heavy (for example `evidentiality.md`) is a separate restructure.
 - Units for the Claritish track, the recipe track, or the cheat sheets.
 
 ## What a unit is
 
-These principles go into [learning-levels.md](../meta/learning-levels.md) in phase 1 (step 5), so they outlive this proposal.
+These principles go into [learning-levels.md](../meta/learning-levels.md) in phase 1 (step 6), so they outlive this proposal.
 
 1. **Within one band, consecutive.** A unit never crosses a band boundary, and its sittings are adjacent in the reading order. The level review stays last in its band, outside every unit.
 2. **Named for what the learner can do.** The title is a plain-English capability or theme (*Asking*, *Where and when*), not a subsystem name or a term from [terminology.md](../grammar/terminology.md).
@@ -41,11 +42,11 @@ These principles go into [learning-levels.md](../meta/learning-levels.md) in pha
 
 `npm run lint:ageben -- --deps` prints every page-to-page dependency in the reading order, one tab-separated row per pair: a page that uses constructions homed on another page (with counts per construction ID), or links to it (with line numbers). A use whose home comes later fails `lint:ageben`. A link that points later fails `lint:forward-links`, but a link can be fixed by a prose edit, while a use needs an example rewritten.
 
-For a candidate unit table, the check is: order the units, keep each unit's sittings in their current relative order (the current order satisfies every dependency, so this is always valid inside a unit), and count the dependencies that now point to a later sitting. The first draft of the table broke these:
+`npm run plan-units -- --units <table> --suggest` checks a unit table against that report ([plan-units.ts](../../scripts/plan-units.ts)). It keeps each unit's sittings in their current relative order (the current order satisfies every use, so this is always valid inside a unit), finds the unit order that breaks the fewest dependencies by exact search (uses count before links; ties keep the table order), lists what still breaks, flags unit sizes outside 20k–50k, and suggests single sitting moves that break fewer. The first draft of the table broke these:
 
 | Band | First-draft table, its own order | First draft, best unit order | Revised table below |
 |------|-----|-----|-----|
-| Beginner | 1,410 | 717 | 6 uses, 3 links |
+| Beginner | 1,410 | 717 | 0 uses, 3 links |
 | Intermediate | 171 | 61 | 1 use, 2 links |
 | Advanced | 4 | 0 | 0 |
 
@@ -55,11 +56,14 @@ Counts are uses plus links. No reorder of the first-draft Beginner units could w
 
 **Beginner**
 
-- `speech-moves` is a hub. The vowel-series join and turn words (`word.family.joinMarker`) are homed there and used by 13 sittings in 7 units: `joins` 126 uses, `dependents` 50, `spans` 30, `causation` 24, `clause-sequence` 18, `ought-for-a-sake` 15, `fault` 13, and others. It moves into *First sentences*.
+- `speech-moves` is a hub. The vowel-series join and turn words (`word.family.joinMarker`) are homed there and used by 13 sittings in 7 units: `joins` 126 uses, `dependents` 50, `spans` 30, `causation` 24, `clause-sequence` 18, `ought-for-a-sake` 15, `fault` 13, and others. It moves into the first unit, which merges *Sounds and words* with *First sentences* as *First words and sentences* (after `compounds` left, *Sounds and words* was two sittings, 17k).
 - `compounds` can't open the band. It uses `clause` (58), `joins` (44), `sakes` (19: mid-word `x` is homed at `sakes.md#met`), `predication` (13), and `roles` (3). It moves to *Who does what to whom*, next to role compounds.
-- `label-seams` can't be in *First sentences*. It uses `sakes` (43), `roles` (41), `restrictors` (12), and `joins` (7). It moves to *Who does what to whom*.
+- `label-seams` can't be in the first unit. It uses `sakes` (43), `roles` (41), `restrictors` (12), and `joins` (7). It moves to *Who does what to whom*.
 - `predication` uses `pronouns` (8), and `left-bound-adjectives` uses `predication` (3). Both move after `pronouns` and `plurality`, which ends the old two-sitting *Pointing at people* unit. It is renamed *Pointing and describing*.
-- *Talking together* has to come late. `questions` uses `joins` (198: and-lists and `u` negation), `fill-ask-jobs` uses `joins` (164) and `hooks` (95), and `thanks-and-sorry` uses `sakes` (102). See [open decisions](#open-decisions).
+- *Talking together* has to come late: `fill-ask-jobs` uses `joins` (164) and `hooks` (95), and `thanks-and-sorry` uses `sakes` (102). `questions` needs only earlier material (`joins` 198 uses: and-lists and `u` negation; `pronouns` 30; `dependents` 14), and `restrictors` and `ought-for-a-sake` use question forms. So `questions` leaves *Talking together* and joins *Linking and asking*, near its current place (11th of 37 sittings), since yes/no questions are core conversation. To keep that unit's size, `spans` (14k; it needs only earlier units, and `roles` needs it) opens *Why and what for*.
+- `dependents` stays 6th, closing the first unit, instead of opening *Linking and asking* (second revision). Four checkpoints in *Pointing and describing* review words that its checkpoint introduces, and `pronouns` links to it.
+- `knowing` moves from the old *Wanting, being able, knowing* into *Pointing and describing*, 10th instead of 29th (second revision). It uses nothing later than that unit, `fault` uses MAY, which is homed on it (`fault.md#fault` hedges a fault claim with it), and it is the band's main rationality payoff, which tie-break 4 in [order inside a band](../meta/learning-levels.md#order-inside-a-band) wants early. `intention` and `can-and-cant` stay behind as *Wanting and being able*.
+- *Counting and comparing* doesn't have to close the band (second revision). Its uses reach only units 1 to 3 and *Where, when, how often*, so it follows that unit, and `numbers` is 25th instead of 35th (it is 16th today).
 
 **Intermediate**
 
@@ -73,37 +77,55 @@ Counts are uses plus links. No reorder of the first-draft Beginner units could w
 
 - `hooked-joins` (in *Deep structure*) uses `hook-compounds` (2 uses, 2 links). Putting *Deep structure* last clears it. *Number values* and *Number-built words* depend on each other heavily (`special-values` alone has 104 uses and links with unit 4), so they stay adjacent.
 
+### Vocabulary
+
+The report misses one kind of dependency. A checkpoint's **Review** bank may list only roots that the `core` column introduces at an earlier checkpoint, and `lint:ageben` fails otherwise (`core-vocabulary`, from `lintCoreCounts` in [core-vocabulary.ts](../../src/core-vocabulary.ts)). A reorder can put the introducing checkpoint later. Running that check on the unit table's order (a one-off script on the 2026-11-10 tree; the current order has no findings) gives 16 leaking Review words, on 10 roots:
+
+| Band | Review words that leak | Where they come from |
+|------|-----|-----|
+| Beginner | 12 | 6: `left-bound-adjectives`, `causation`, `sakes`, and `fault` review words that `restrictors` introduces (*rain*, *night*, *sleepy*). 3: `spans`, `already-still-yet`, and `digit-strings` review *walk*, introduced at `relations`. 2: `knowing` and `fault` review *pour*, introduced at `hooks`. 1: `here-there` reviews *sleep*, introduced at `roles`. |
+| Intermediate | 4 | One each on `cause`, `scope-islands`, `evidentiality`, and `locative-relations`. |
+| Advanced | 0 | |
+
+Each one is fixed by moving the root's `core` cell to the earliest checkpoint that reviews it ([order](#order), rule 4): ten cells in all, so none of them blocks the table. The first revision's table leaked 20 in Beginner; seven of those went when `dependents` stayed in the first unit. Step 2 of the plan adds the count to `plan-units` so that a later reorder sees it.
+
+### Why not a solver
+
+A mixed-integer solver (HiGHS, for example) that also chose each sitting's unit would not help. The current reading order breaks nothing, so the solver's best answer is that order cut into runs by size. Every break in the unit table is the price of a thematic grouping, and theme is not in the data. The part that is combinatorial, the unit order, `plan-units` already solves exactly. What the first analysis lacked was data (review words), not search.
+
 ### Limits
 
-The report sees only dependencies that show up as a traced construction or a link. A page that relies on an earlier page's idea in prose, with no Ageben example and no link, is invisible to it. Edges into `phonology` and `word-endings` come from parser productions that nearly every example uses; they are real but never constrain order, since those sittings come first. Homes are registry choices (`constructions.ts`): a family's home is where it is first taught today, so moving a sitting earlier than a family's home can need the anchor moved too (for example mid-word `x` if `compounds` ever came before `sakes`).
+The report sees only dependencies that show up as a traced construction or a link (and, after step 2, a Review word). A page that relies on an earlier page's idea in prose, with no Ageben example and no link, is invisible to it. Edges into `phonology` and `word-endings` come from parser productions that nearly every example uses; they are real but never constrain order, since those sittings come first. Homes are registry choices (`constructions.ts`): a family's home is where it is first taught today, so moving a sitting earlier than a family's home can need the anchor moved too (for example mid-word `x` if `compounds` ever came before `sakes`).
 
 ## Unit table
 
-Sizes are combined file sizes on 2026-11-10. Unit order and sitting order inside each unit are the analysed order. Sittings inside a unit keep their current relative order.
+Sizes are combined file sizes on 2026-11-10. Unit order and sitting order inside each unit are the analysed order, except for one Beginner unit placed by decision (noted under its table). Sittings inside a unit keep their current relative order.
 
 ### Beginner
 
 | # | Unit | Sittings | Size |
 |---|------|----------|------|
-| 1 | Sounds and words | phonology, word-endings | 17k |
-| 2 | First sentences | clause, no-subject, speech-moves | 22k |
-| 3 | Pointing and describing | pronouns, plurality, predication, left-bound-adjectives | 40k |
-| 4 | Linking ideas | dependents, joins, spans, clause-sequence | 49k |
+| 1 | First words and sentences | phonology, word-endings, clause, no-subject, speech-moves, dependents | 52k |
+| 2 | Pointing and describing | pronouns, plurality, predication, knowing, left-bound-adjectives | 50k |
+| 3 | Linking and asking | joins, questions, clause-sequence | 35k |
+| 4 | Why and what for | spans, causation, sakes, fault, ought-for-a-sake | 48k |
 | 5 | Where, when, how often | hooks, restrictors, extra-noun-hooks, here-there, already-still-yet | 43k |
-| 6 | Why and what for | causation, sakes, fault, ought-for-a-sake | 34k |
+| 6 | Counting and comparing | numbers, comparatives, digit-strings | 23k |
 | 7 | Who does what to whom | relations, roles, compounds, social-ties, label-seams | 51k |
-| 8 | Wanting, being able, knowing | knowing, intention, can-and-cant | 24k |
-| 9 | Talking together | questions, firm-soft, fill-ask-jobs, thanks-and-sorry | 29k |
-| 10 | Counting and comparing | numbers, comparatives, digit-strings | 23k |
+| 8 | Wanting and being able | intention, can-and-cant | 14k |
+| 9 | Talking together | firm-soft, fill-ask-jobs, thanks-and-sorry | 15k |
 
 Still broken in this order:
 
-- `restrictors` uses a polar starter from `questions` (3 uses).
-- `ought-for-a-sake` uses soft force from `questions` (2 uses).
-- `fault` uses an overlay homed on `knowing` (1 use, 1 link).
-- `pronouns` links to `dependents`, and `already-still-yet` links to `sakes`.
+- No use.
+- `sakes` links to `restrictors`, `knowing` links to `sakes`, and `comparatives` links to `relations`.
+- 12 Review words leak ([vocabulary](#vocabulary)).
 
-Unit 1 is two sittings, unit 7 is just over 50k, and Talking together comes late: see [open decisions](#open-decisions).
+By the counts alone, units 1 to 5 are pinned to their slots, *Who does what to whom* comes sixth, and the other three can trade places after it. The table departs from that in one place, by decision: *Counting and comparing* sits ahead of *Who does what to whom*, so that counting doesn't close the band. That costs one link (`comparatives` to `relations`) and one Review word, and `plan-units` will name the other order as best.
+
+*Why and what for* comes before *Where, when, how often* because that order breaks one link fewer and keeps the purpose-bearing unit (`sakes`, `fault`) early. It leaks five more Review words than the other order, which are `core` cell moves a learner never sees.
+
+Units 1 and 7 are just over 50k. *Wanting and being able* (14k, two sittings) and *Talking together* (15k) are below the size floor. Each was kept as one coherent theme rather than merged or scattered.
 
 ### Intermediate
 
@@ -129,20 +151,23 @@ Unit 1 is two sittings, unit 7 is just over 50k, and Talking together comes late
 
 Still broken in this order:
 
-- `bars` uses an overlay homed on `residue-and-former` (1 use).
+- `bars` uses an overlay homed on `residue-and-former` (1 use). Step 4 clears it by moving one table row ([order](#order)).
 - `topic` links to `tag-pronouns`, and `ranges` links to `locative-relations`.
+- 4 Review words leak ([vocabulary](#vocabulary)).
 
-Unit 2 is small and unit 12 is two sittings: see [open decisions](#open-decisions).
+*Conversation craft*, *Across sentences*, and *Keeping track of who* are pinned to slots 3 to 5. Past them the order is loose: 3,264 unit orders tie for the fewest broken uses and links, and the planner keeps the table's order among ties. So the order of units 6 to 17 is largely an editorial choice.
+
+Unit 2 (14k) is small, and unit 12 is two sittings. Both stay: each is a coherent theme with no neighbour it fits by theme. Splitting `evidentiality` (a non-goal here) would fix unit 12 properly later.
 
 ### Advanced
 
 | # | Unit | Sittings | Size |
 |---|------|----------|------|
-| 1 | Fine shades of knowing | universality, usually-vs-must, as-of, stance-bars | 32k |
+| 1 | Fine shades of knowing | as-of, stance-bars, universality, usually-vs-must | 32k |
 | 2 | Number values | stacked-markers, special-values | 25k |
-| 3 | Number-built words | open-ranges, initials, generations, numeric-derivation | 39k |
-| 4 | Building words and voice | root-tails, hook-compounds, singability | 26k |
-| 5 | Deep structure | nested-dependents, stand-in-roles, span-nesting, hooked-joins, join-limits, named-phrases | 39k |
+| 3 | Number-built words | initials, open-ranges, generations, numeric-derivation | 39k |
+| 4 | Building words and voice | singability, hook-compounds, root-tails | 26k |
+| 5 | Deep structure | stand-in-roles, nested-dependents, join-limits, named-phrases, hooked-joins, span-nesting | 39k |
 
 Nothing is broken in this order. Unit 2 is two sittings: `special-values.md` (20k) carries it, and folding it into unit 3 would make a 64k unit.
 
@@ -154,13 +179,13 @@ Nothing is broken in this order. Unit 2 is two sittings: `special-values.md` (20
 
 ```ts
 type Unit = { text: string; items: LessonLink[] }
-export const beginnerUnits: Unit[] = [ { text: 'Sounds and words', items: [...] }, ... ]
+export const beginnerUnits: Unit[] = [ { text: 'First words and sentences', items: [...] }, ... ]
 export const beginnerLessons = beginnerUnits.flatMap((u) => u.items)
 ```
 
-`beginnerLessons`, `intermediateLessons`, `advancedLessons`, `readingOrder`, `lessonPages`, `pathPages`, and `pageRelPath` keep their current shapes and meaning: flat, in reading order. Everything that reads them (lints, flashcards, checkpoint packs, the grammar map, `llms.txt`, the game build) keeps working unchanged and simply sees the new order.
+`beginnerLessons`, `intermediateLessons`, `advancedLessons`, `readingOrder`, `lessonPages`, `pathPages`, and `pageRelPath` keep their current shapes and meaning: flat, in reading order. Everything that reads them (lints, flashcards, checkpoint packs, the grammar map, the game build) keeps working unchanged and simply sees the new order.
 
-`sidebarGroups` nests the units: each band group's `items` is its units as VitePress sub-groups, followed by the level review as a plain link. `readingOrder` must flatten from the unit arrays, not from `sidebarGroups[n].items`, which now holds groups.
+`sidebarGroups` nests the units: each band group's `items` is its units as VitePress sub-groups, followed by the level review as a plain link. Two readers take `sidebarGroups[n].items` today and would be handed groups: `readingOrder` in the same file, and `llmsSections` in [llms-txt.ts](../../scripts/lib/llms-txt.ts). Both switch to a new flat export, `bandLessons`: one `{ text, items }` per band, holding its sittings in reading order and then its review. `llms.txt` keeps one section per band and changes only in page order.
 
 ### Sidebar
 
@@ -168,19 +193,23 @@ Each band stays a collapsed group. Inside it, each unit is a collapsed sub-group
 
 ### Order
 
-Two lints check the result:
+Three checks decide whether an order holds:
 
-- `lint:ageben`: no example uses a construction whose home section comes later ([learning-order check](../meta/learning-levels.md#learning-order-check)).
+- `lint:ageben`, learning order: no example uses a construction whose home section comes later ([learning-order check](../meta/learning-levels.md#learning-order-check)).
+- `lint:ageben`, `core-vocabulary`: no checkpoint reviews a root that the `core` column introduces later ([vocabulary](#vocabulary)).
 - `lint:forward-links`: no stage-page link points later on the path.
 
-The [unit table](#unit-table) was planned from `lint:ageben -- --deps` ([dependency analysis](#dependency-analysis)), and each band lists what it still breaks. Those items, and anything new from changes made since 2026-11-10, are fixed in this order:
+The [unit table](#unit-table) was planned with `plan-units` ([dependency analysis](#dependency-analysis)), and each band lists what it still breaks. Those items, and anything new from changes made since 2026-11-10, are fixed in this order:
 
 1. Reorder within the unit, or reorder units within the band.
 2. Move the blocking sitting to the neighbouring unit it depends on or feeds, and record the change in this proposal's unit table.
 3. For a **forward link** only: rewrite or drop the link per [teach now](../meta/grammar-docs.md#teach-now-dont-preview-later). That's a prose edit, not a form change.
-4. Anything else, such as an example that needs rewriting with earlier forms, or a section that would have to move, is logged under [open decisions](#open-decisions). The sitting stays where the lints allow, and the run continues.
+4. For a **Review word** only: move the root's `core` cell to the earliest checkpoint that reviews it, per [core vocabulary column](../meta/procedures/lexicon.md#core-vocabulary-column), and move its bank rows to match (**New words** there, **Review** at its old home). No item changes. When that would put more than five New words on the earlier checkpoint, or trips the look-alike check, drop the item and its bank row instead, as long as the checkpoint keeps three Review roots.
+5. Anything else, such as an example that needs rewriting with earlier forms, or a section that would have to move, is logged under [open decisions](#open-decisions). The sitting stays where the lints allow, and the run continues.
 
-A checkpoint item that leaks after the reorder (it uses a word or form now taught later) is dropped, not rewritten, per [how to apply](../meta/learning-levels.md#how-to-apply).
+One use break is left, in Intermediate, and its fix is settled. The table under [channels as comparison bars](../grammar/intermediate/bars.md#channel-bars) has a FORMER row (`helam`, *than it used to be*), and FORMER is homed on `residue-and-former`, one unit later. `vague-amounts` uses `bars`, so `bars` can't move back. The row moves to [residue-and-former.md](../grammar/intermediate/residue-and-former.md), as a line saying FORMER also works as a comparison bar, with a link back to `bars.md#channel-bars`. No form changes.
+
+A checkpoint item that uses a form now taught later is dropped, not rewritten, per [how to apply](../meta/learning-levels.md#how-to-apply).
 
 ### Tools that append sidebar rows
 
@@ -188,19 +217,20 @@ A checkpoint item that leaks after the reorder (it uses a word or form now taugh
 
 ## Implementation plan
 
-Phase 1 runs in one session with no subagents. It touches one data file, two scripts, a test, and two meta notes, plus whatever small prose fixes the reorder needs. If the user says to stop partway, the agent [consolidates the proposal](../meta/procedures/proposals.md#consolidate-on-stop) before the session ends. Findings that change the plan [stop and alert](../meta/procedures/proposals.md#stop-and-alert).
+Phase 1 runs in one session with no subagents. It touches `reading-order.ts` and its test, the two peel scripts, `llms-txt.ts`, the planner and its test, and the meta notes in step 6, plus whatever small prose and `core` fixes the reorder needs. If the user says to stop partway, the agent [consolidates the proposal](../meta/procedures/proposals.md#consolidate-on-stop) before the session ends. Findings that change the plan [stop and alert](../meta/procedures/proposals.md#stop-and-alert).
 
 ### Phase 1: units in the sidebar
 
 0. **Baseline.** `npm run verify -- --baseline`.
-1. **Structure, no reorder.** Add the `Unit` type and unit arrays to `reading-order.ts`, derive the flat lists, and nest `sidebarGroups`. In this step, each band temporarily holds one unit containing its current list, so the reading order is unchanged. Update `reading-order.test.ts`: units are non-empty, every sitting appears in exactly one unit, flat lists equal the flattened units, and the review is last and outside every unit. Update `peel-band` and `peel-headings` per [tools](#tools-that-append-sidebar-rows). Gate: `npm run verify` shows no new errors. Commit.
-2. **Recheck the dependency map.** Run `npm run lint:ageben -- --deps > <scratchpad>/deps.tsv` on the current tree and compare it against the [unit table](#unit-table): every row whose two pages sit in one band, with the home page in a later unit (or later in the same unit), is a break. The breaks should be the ones the table lists. A new break means a sitting was added, moved, or edited since 2026-11-10; fit it in with the [fix order](#order). A sitting not in the table (a new peel, a band move) goes in the unit of its parent or neighbour. Keep the output in the scratchpad, not the repo.
-3. **Order and fill units.** Write the unit table into `reading-order.ts`, in its order, with the open decisions applied as the user settled them. Fix the listed breaks with the [fix order](#order), and update the unit table in this proposal so it matches what shipped.
-4. **Lints green.** `npm run build` and `npm test`. Fix forward links and checkpoint leaks as the [order](#order) section allows; log the rest. Gate: `npm run verify` shows no new errors.
-5. **Meta notes.** In [learning-levels.md](../meta/learning-levels.md), add a `## Units` section with the five [principles](#what-a-unit-is), and a line saying a reorder is planned with `lint:ageben -- --deps`. In [order inside a band](../meta/learning-levels.md#order-inside-a-band), change tie-break 3 to say units are kept contiguous and ordered by dependency. Add the peel-tool line to [restructure-sittings.md](../meta/procedures/restructure-sittings.md). Group the generated heading map (`docs/meta/grammar-map.md`, from `npm run grammar-map -- --write`) by unit within each band. In `AGENTS.md`, extend the one sentence under **Grammar** that says where stage pages sit, so it also says they are grouped into units in `reading-order.ts`. Leave the topic-family table unchanged, and don't list units in `AGENTS.md` ([agents-md](../meta/agents-md.md): no duplicate indexes, nothing a restructure would force you to edit). Commit.
-6. **Check the site.** Run the dev server and confirm the nested sidebar, prev/next across unit boundaries, and that the active page's unit opens.
+1. **Structure, no reorder.** Add the `Unit` type and unit arrays to `reading-order.ts`, derive the flat lists and `bandLessons`, and nest `sidebarGroups`. In this step, each band temporarily holds one unit containing its current list, so the reading order is unchanged. Point `readingOrder` and `llmsSections` at `bandLessons` ([data](#data)). Update `reading-order.test.ts`: units are non-empty, every sitting appears in exactly one unit, flat lists equal the flattened units, and the review is last and outside every unit. Update `peel-band` and `peel-headings` per [tools](#tools-that-append-sidebar-rows). Gate: `npm run verify` shows no new errors, and `llms.txt` is byte-identical to the baseline build's. Commit.
+2. **Vocabulary in the planner.** Extend `plan-units` ([unit-plan.ts](../../src/lint/unit-plan.ts), its test, and the script). It reads the checkpoints (`stageCheckpoints`) and the `core` column (`storedCore`) and adds one edge per Review root, from the checkpoint's page to the page of the root's `core` cell. Review words are a third count, ranked between uses and links, and `--suggest` uses it. When the table's order is not the best order, the script prints the table order's counts and breaks as well, since the table may keep an order for a reason the counts don't see. Gate: tests pass, and on the unit table the script reports the [vocabulary](#vocabulary) counts for the table's order (12, 4, 0), give or take pages edited since. Commit.
+3. **Recheck the dependency map.** Run `npm run plan-units -- --units docs/proposals/units.md --suggest` on the current tree. The table order's breaks should be the ones the table lists. For Beginner the script names a different best order, with *Counting and comparing* after *Who does what to whom*; that is expected, and the table's order stands. It stops on a sitting missing from the table or in two units. A new break means a sitting was added, moved, or edited since 2026-11-10; fit it in with the [fix order](#order). A sitting not in the table (a new peel, a band move) goes in the unit of its parent or neighbour.
+4. **Order and fill units.** Write the unit table into `reading-order.ts`, in its order. Move the FORMER row from `bars.md` to `residue-and-former.md` ([order](#order)). Fix the other listed breaks with the [fix order](#order), and update the unit table in this proposal so it matches what shipped.
+5. **Lints green.** `npm run build` and `npm test`. Fix forward links, Review words, and checkpoint leaks as the [order](#order) section allows; log the rest. Gate: `npm run verify` shows no new errors.
+6. **Meta notes.** In [learning-levels.md](../meta/learning-levels.md), add a `## Units` section with the five [principles](#what-a-unit-is), and a line saying a reorder or a new unit table is checked with `npm run plan-units`. In [order inside a band](../meta/learning-levels.md#order-inside-a-band), change tie-break 3 to say units are kept contiguous and ordered by dependency. In [how to apply](../meta/learning-levels.md#how-to-apply), the dispatch line says an in-band reorder edits *the three sidebar lists (no scoring, no solver)*: change it to name the unit arrays and say the planner checks a table but does not choose units. Add the peel-tool line to [restructure-sittings.md](../meta/procedures/restructure-sittings.md). Group the generated heading map (`docs/meta/grammar-map.md`, from `npm run grammar-map -- --write`) by unit within each band. In `AGENTS.md`, extend the one sentence under **Grammar** that says where stage pages sit, so it also says they are grouped into units in `reading-order.ts`. Leave the topic-family table unchanged, and don't list units in `AGENTS.md` ([agents-md](../meta/agents-md.md): no duplicate indexes, nothing a restructure would force you to edit). Commit.
+7. **Check the site.** Run the dev server and confirm the nested sidebar, prev/next across unit boundaries, and that the active page's unit opens.
 
-Commits are made per [commits](../meta/procedures/proposals.md#commits), each with `[skip-cd]`: one after step 1, and one after steps 3 to 5.
+Commits are made per [commits](../meta/procedures/proposals.md#commits), each with `[skip-cd]`: one after step 1, one after step 2, and one after steps 4 to 6.
 
 ### Later phases (not scheduled)
 
@@ -209,35 +239,9 @@ Recorded so phase 1 doesn't block them. Each needs its own go-ahead.
 - **Unit intro block.** A short generated block at the top of a unit's first sitting, or a sidebar tooltip, giving the unit's title, what it lets the learner do, and which units it assumes. No unit summary page.
 - **Unit capstone practice.** One `### Practice` per unit, on its last sitting, that combines the unit's sittings. Policy goes in [translation-exercises.md](../meta/translation-exercises.md).
 - **Vocabulary slices.** Each unit introduces a themed slice of `core` vocabulary that its sittings and checkpoints use. Checkpoint word banks draw on the current unit and the units before it.
-- **Purpose thread.** Check that each band's units carry its purpose-bearing sittings early, per tie-break 4. This is not a per-unit requirement.
+
+The purpose check (purpose-bearing sittings early, per tie-break 4) is no longer a later phase. The second revision made it for Beginner: `knowing` moved up, and *Why and what for* stayed ahead of *Where, when, how often*.
 
 ## Open decisions
 
-Collapsing and numbering were settled on 2026-11-10 (see **Status**).
-
-### Asking comes ninth in Beginner
-
-In the current flat order `questions` is the 11th of 37 sittings. In the table it is in unit 9 of 10, because its unit-mates need much later material (`fill-ask-jobs` needs `hooks`, `thanks-and-sorry` needs `sakes`). `questions` itself needs only units 1 to 4 (`joins` 198 uses, `pronouns` 30, `dependents` 14). Two of the remaining breaks (`restrictors` and `ought-for-a-sake` using question forms) exist only because it is late.
-
-- **A.** Keep *Talking together* whole at unit 9, and rewrite the 5 examples in `restrictors` and `ought-for-a-sake` that use question forms.
-- **B.** Move `questions` to the end of *Linking ideas*, renamed *Linking and asking*, and move `spans` (14k; it needs only units 1 to 4, and `roles` needs it) to the start of *Why and what for*. That makes *Linking and asking* 48k and *Why and what for* 48k, and leaves *Talking together* as `firm-soft`, `fill-ask-jobs`, `thanks-and-sorry` at 14k. The 5 question-form breaks go away; `here-there` gains a forward link to `spans`. Checked with `--deps`: the band is left with 1 use and 4 links broken, against 6 uses and 3 links for A.
-
-**Recommendation:** B. Yes/no questions are core conversation, and keeping them near their current place is better for the learner than a theme-tidy unit. The small *Talking together* that is left is still a coherent "asking for details, thanking and apologizing" unit, and it is close to the size floor, not far below it.
-
-### Sounds and words is two sittings
-
-After `compounds` leaves, unit 1 is `phonology` and `word-endings`, 17k.
-
-- **A.** Keep it as a short opening unit.
-- **B.** Merge it with *First sentences* as *First words and sentences* (39k, five sittings).
-
-**Recommendation:** B. It follows principle 3 without strain, and the merged unit is an ordinary size. A could be justified as a gentle opener, but nothing in the content needs the break.
-
-### Small Intermediate units
-
-*Fuller sentences* is three short sittings (14k), and *How you know* is two sittings (37k, with `evidentiality` at 25k). Neither has a neighbour it fits with by theme: merging *Fuller sentences* into *Names and spelling* (43k) mixes spelling with degree words and chains, and *How you know* lost `dated-channel` to a dependency on `bars`.
-
-- **A.** Keep both as they are.
-- **B.** Merge *Fuller sentences* into *Names and spelling* under a broader title, and keep *How you know*.
-
-**Recommendation:** A. Both are coherent themes, and the exceptions are small. Splitting `evidentiality` (already a non-goal here) would fix *How you know* properly later.
+None. Collapsing and numbering, the Beginner moves, keeping the small units, where `dependents`, `knowing`, and *Counting and comparing* sit, and the FORMER row were settled on 2026-11-10 (see **Status**).
