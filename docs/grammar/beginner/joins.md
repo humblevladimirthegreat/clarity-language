@@ -364,6 +364,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vayebel` |
 | *scream* | `veyamul` |
 | *big* | `gelazem` |
+| *ant* | `enezal` |
 
 #### English → Ageben {#beginner-english-to-ageben}
 
@@ -475,6 +476,16 @@ z-Azozon | d-none | v-see
 [z-Alazun | v-scream | x-or-exactly-one | z-Ahelan | v-pay]
 
 *Alazun screams or Ahelan pays: exactly one of the two.*
+:::
+
+**7.** `damedel zual genezal vayebel.`
+
+::: details Show answer
+d-mango | [z-everything | g-ant] | v-see
+
+*There is a mango that every ant sees.* (one mango)
+
+The mango stands first, so it covers *every ant*: one mango serves for all of them. `zual genezal damedel vayebel.` lets each ant see a different mango. In both, the ants see and the mango is seen.
 :::
 
 #### Pick one {#beginner-pick-one}
