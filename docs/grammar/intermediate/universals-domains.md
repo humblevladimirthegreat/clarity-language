@@ -166,7 +166,7 @@ English *one*, generic *you*, and *people* make a claim about people as a rule. 
 | Form | Picks | English |
 |------|-------|---------|
 | `awan` | the person actually listening | *you* |
-| `umen` | one unidentified individual who exists | *someone* |
+| `zeyel zar` | some person who exists, unknown or unsaid who | *someone* |
 | `eyen` | nobody in particular; true of people as a rule, with exceptions | *one*, generic *you* |
 | `zuam geyel` | people in general, as far as I know | *people in general* |
 | `zual geyel` | every person, no exceptions | *everyone* |

@@ -422,10 +422,8 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   }
   const stemRoot = word.family.kind === "content" && word.family.roots.length === 1 ? word.family.roots[0] : undefined;
   const nounish = word.pos === "z" || word.pos === "d" || word.pos === "b" || word.pos === "x";
-  if (nounish && stemRoot === CLOSED.neutral && word.ending === "n") {
-    if (word.plural) throw new ConstructionError("nonspecificPlural", word.raw);
-    if (word.pos === "x") throw new ConstructionError("topicNonspecific", word.raw);
-  }
+  // **-n** on the neutral root is unassigned: *someone* is `zeyel zar` or a tag (D-69, joins.md#unspecified-member-r-phrase).
+  if (stemRoot === CLOSED.neutral && word.ending === "n") throw new ConstructionError("retiredSomeone", word.raw);
   if (nounish && stemRoot === CLOSED.star && (word.ending === "r" || (word.ending === "n" && word.pos === "x"))) {
     throw new ConstructionError("topicOfTopic", word.raw);
   }

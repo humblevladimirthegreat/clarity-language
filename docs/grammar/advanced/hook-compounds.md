@@ -160,7 +160,7 @@ The stem may be an ordinary compound (`guoxohehaxowurol` *against walking in hou
 
 A common hook prefix can enter the dictionary as a citation, with no role letter (`uoxuvuvul`). In speech **`x`** starts the stem's first syllable (*gue-xa-vu-vul*); with **`mx`**, the **`m`** closes the hook's syllable (*guem-xe-wu-lel*).
 
-**Compare with:** the free hook keeps the landmark as its own word: `zumen uol boduvul vowurol.` is *someone against the duel walks*, and a later `boduvur` points back to that duel. The prefix makes one word for a kind: `zuoxoduvul vowurol.` is *an opponent of dueling walks*, with no landmark to point back to.
+**Compare with:** the free hook keeps the landmark as its own word: `zeyel zar uol boduvul vowurol.` is *someone against the duel walks*, and a later `boduvur` points back to that duel. The prefix makes one word for a kind: `zuoxoduvul vowurol.` is *an opponent of dueling walks*, with no landmark to point back to.
 
 ### Practice {#advanced-practice}
 

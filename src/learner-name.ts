@@ -17,7 +17,6 @@ const ROLE_WORDS: Record<string, string> = {
   [CLOSED.microphone]: "whoever is speaking",
   [CLOSED.headphones]: "whoever is listening",
   [CLOSED.handshake]: "inclusive we",
-  [CLOSED.neutral]: "someone",
 };
 /** House-cast people: a learner of the same name would collide with them in examples. */
 const HOUSE_CAST: Record<string, string> = Object.fromEntries(
@@ -62,6 +61,7 @@ const FLAG_RE = /[\u{1F1E6}-\u{1F1FF}]/u;
 export function nameBanReason(row: PublishedRow, overlays: OverlayRow[] = []): string | null {
   const root = row.root;
   const name = `${root}n`;
+  if (root === CLOSED.neutral) return `${name} is left unused in Ageben; it is not a word.`;
   if (ROLE_WORDS[root]) return `${name} already means ${ROLE_WORDS[root]}, not a person.`;
   if (HOUSE_CAST[root]) return `${HOUSE_CAST[root]} is a character in the examples; your name would clash with theirs.`;
   if (root === LANGUAGE_ROOT) return `${name} is the name of the language.`;

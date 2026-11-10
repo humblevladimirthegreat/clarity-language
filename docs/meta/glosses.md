@@ -216,7 +216,7 @@ Same English label for `zuwem` and `zuwen` is fine: both are the *speaker* sense
 
 **Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `IDENTITY`, `plan`, `DECISION`, …). The Ageben letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `en` / …).
 
-**Special pronouns** ([pronouns.md](/pronouns)): `zuwen` / `zawan` / `zayan` / `zumen` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. The topic pronoun and the generic pronoun gloss in capitals on `/z/` `/d/` `/b/` and as a holder (`zalen` → `z-TOPIC`, `zeyen` → `z-ONE`, `theyomalen` → `th-CLUES-TOPIC`); on any other slot they are ordinary names. A topic word glosses as its noun (`xazozon` → `x-Azozon`, `xazozor` → `x-←Azozon`), and `hehugom` as `h-as-for`. **Stand-ins** (`darl` / `derl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
+**Special pronouns** ([pronouns.md](/pronouns)): `zuwen` / `zawan` / `zayan` → `z-speaker` / `z-listener` / `z-interlocutors` — never emoji etymology. The topic pronoun and the generic pronoun gloss in capitals on `/z/` `/d/` `/b/` and as a holder (`zalen` → `z-TOPIC`, `zeyen` → `z-ONE`, `theyomalen` → `th-CLUES-TOPIC`); on any other slot they are ordinary names. A topic word glosses as its noun (`xazozon` → `x-Azozon`, `xazozor` → `x-←Azozon`), and `hehugom` as `h-as-for`. **Stand-ins** (`darl` / `derl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
 
 ### Ordinary lexicon plus packed role English
 <a id="no-lexicon-pos-specials"></a>

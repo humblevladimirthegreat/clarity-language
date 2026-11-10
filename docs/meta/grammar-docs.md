@@ -421,7 +421,7 @@ Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odoz
 |---------|---------|
 | Citation of this row’s sense | `odozel` *dog*; `ugowum` *volume*; `azozon` *Azozon*; `ahol` *therefore* |
 | Inflected form the row teaches | `thomam`, `thagom`, `xahom`, `zwuzuvuvul`; drill-bank `vayebel` *see* |
-| Special with its default ending | citation `uwen` / `awan` / `ayan` / `umen`; in-clause `zuwen` when the slot is the point |
+| Special with its default ending | citation `uwen` / `awan` / `ayan`; in-clause `zuwen` when the slot is the point |
 
 Do **not** call `odoze` a citation. Overlay / need / linker / mood inventories use the citation or the floating `/th/` (or `/x/`) word, not the stem (`unal` or `thunam`, not `una`; `omal` or `thomam`, not `oma`). Combinability (`tha` / `the`, follow-up endings) belongs in a **pattern** column (`…thal`) or in extra inflected rows, not by stripping the ending.
 

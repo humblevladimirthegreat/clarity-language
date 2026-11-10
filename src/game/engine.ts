@@ -86,7 +86,7 @@ export function createEngine(tables: ClassifyTables, data: EngineData, options: 
   const playerRoot = options.playerRoot ?? CLOSED.microphone;
   const rules = [...SEED_RULES, ...data.rules];
   // The discourse specials gloss by role (*speaker*, *listener*), not by their row's sense, so a typed gloss finds them here.
-  for (const root of [CLOSED.microphone, CLOSED.headphones, CLOSED.handshake, CLOSED.neutral, CLOSED.person]) voice.learn(root);
+  for (const root of [CLOSED.microphone, CLOSED.headphones, CLOSED.handshake, CLOSED.person]) voice.learn(root);
 
   const engine: Engine = {
     world: buildWorld(scene, lex, playerRoot),

@@ -49,7 +49,7 @@ The ending grades evidence, not how sure you feel or how likely the event is: **
 |-----|---------|---------|-------|
 | [Name the source](/evidentiality#source): a noun in a `bl-` word right after | `zalazun thebam blazozon vudurul.` | *Alazun left, according to Azozon.* | I |
 | [A device as the source](/evidentiality#source) | `zalazun thugem blugewel vezuvel.` | *Alazun is asleep, going by the camera.* | I |
-| [A source you don't name](/evidentiality#source): `blumen`, then say whether you know who | `zalazun thebam blumen vudurul. zuwen vanam derl zar.` | *Alazun left, according to someone. I know who.* | I |
+| [A source you don't name](/evidentiality#source): `thebam bleyel blar`, then say whether you know who | `zalazun thebam bleyel blar vudurul. zuwen vanam derl zar.` | *Alazun left, according to someone. I know who.* | I |
 | [How many hands](/evidentiality#hand-depth): `th#N` after a channel | `zalazun thebam throgel vudurul.` | *Alazun left, so they say, third-hand.* | I |
 | [A forecast](/evidentiality#forecast): channel + `blral` | `thubom blral verulal.` | *It will rain, going by the pattern.* | I |
 | [A hunch about later](/evidentiality#forecast) | `zalazun thaber blral vudurul.` | *Alazun will leave, a faint hunch.* | I |

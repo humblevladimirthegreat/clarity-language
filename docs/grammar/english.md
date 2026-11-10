@@ -232,7 +232,7 @@ English adds *and maybe more* after whatever might not be complete. Ageben says 
 | *everyone we know* / *nobody we know* | **`zual gwedanam blayan`** / **`zal gwedanam blayan`** | [Every and none, by set](/universals-domains#kind-domains) |
 | *everyone in the family* / *everyone from the town* | **`zual gobom bluvayal`** / **`zual gaham bluhuham`** | [Of relations](/of-relations#of-relations) |
 | *people in general* | **`zuam geyel`**, or **`eyen`** | [People in general](/universals-domains#generic-neighbors) |
-| *according to someone* (a source you won't name / don't know) | **`thebam blumen`**, then `zuwen vanam derl zar.` / `zuwen vanam vul derl zar.` | [Source](/evidentiality#source) |
+| *according to someone* (a source you won't name / don't know) | **`thebam bleyel blar`**, then `zuwen vanam derl zar.` / `zuwen vanam vul derl zar.` | [Source](/evidentiality#source) |
 | *never* / *always*, in the times we both know | **`hal thevumayan`** / **`hual thevumayan`** | [Holder](/holder#holder) |
 | *never since …* / *always, until …* / *always around …* (a stretch you name) | **`huxal`** / **`hoexual`** / **`hemxual`** + the time: `hoexual blanulul` | [Bounding a time](/hooked-joins#hooked-joins-time) |
 | *where was it again?* (remind me) | MEMORY on the question: `yel el bar zayan thevum vagedal.` | [Live vs memory](/knowing#live-vs-memory) |

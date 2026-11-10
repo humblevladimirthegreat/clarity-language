@@ -245,6 +245,6 @@ Root, mid-word `th`, a reach vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 | `hewem blazozon` *like Azozon* ([`/b/` completes a host](/clause#extra-nouns)) | | `zazozon vezuyol balazun.` *Azozon tells Alazun* ([`/b/` receives](/clause#extra-nouns)) |
 | `zodozel gelazem.` *There is a big dog* ([new noun](/predication#existence)) | | `zodozer gelazem.` *The dog is big* ([resumed noun](/predication#existence)) |
 | `zazozon vowurol.` *Azozon walks* ([the verb](/clause#who-acts-and-the-action)) | | `zazozon gowurol.` *Azozon is walking* ([under way](/predication#in-progress)) |
-| `dazozon vayebel.` *Azozon was seen* ([no subject named](/no-subject#no-subject)) | | `zumen` *someone did it* ([an unnamed someone](/pronouns#special-pronouns)) |
+| `dazozon vayebel.` *Azozon was seen* ([no subject named](/no-subject#no-subject)) | | `zeyel zar` *someone did it* ([an unnamed someone](/joins#unspecified-member-r-phrase)) |
 | `dazozol` *a swan* ([-l](/proper-names#proper-name--n)) | | `dazozoln` *an Azozon* ([-ln: one of the name](/proper-names#name-instance--ln)) |
 | `zoyahehal` *bedroom* ([a dictionary word](/compounds#dictionary-compounds)) | | `zuwedaxubudal` *peanut butter* ([glued with `x`](/compounds#compound-vs-separate)) |

@@ -125,17 +125,17 @@ What you put in that `/b/` decides what it does. A person or other noun is the s
 
 **Compare with:** the source is where the claim came to you from; the claim is still yours to pass on. A numbered footnote source is `th_N`.
 
-When you don't name the source, `blumen` (*someone*) leaves it open. Whether you are holding back who said it or have lost track changes how far to trust the report, and the channel alone does not say it. Say which in a sentence of its own:
+When you don't name the source, `thebam bleyel blar` (*according to some person*) leaves it open. Whether you are holding back who said it or have lost track changes how far to trust the report, and the channel alone does not say it. Say which in a sentence of its own:
 
 | Ageben | English |
 |--------|---------|
-| `zalazun thebam blumen vudurul.` | *Alazun left, according to someone.* (says neither) |
-| `zalazun thebam blumen vudurul. zuwen vanam derl zar.` | *Alazun left, according to someone. I know who.* |
-| `zalazun thebam blumen vudurul. zuwen vanam vul derl zar.` | *Alazun left, according to someone. I don't know who.* (a rumor) |
+| `zalazun thebam bleyel blar vudurul.` | *Alazun left, according to someone.* (says neither) |
+| `zalazun thebam bleyel blar vudurul. zuwen vanam derl zar.` | *Alazun left, according to someone. I know who.* |
+| `zalazun thebam bleyel blar vudurul. zuwen vanam vul derl zar.` | *Alazun left, according to someone. I don't know who.* (a rumor) |
 
-> `zalazun thebam blumen vudurul. zuwen vanam derl zar.`
+> `zalazun thebam bleyel blar vudurul. zuwen vanam derl zar.`
 >
-> z-Alazun | [th-REPORTED | bl-someone] | v-departure . z-speaker | v-knowledge | d-whether-clause | z-something
+> z-Alazun | [th-REPORTED | [bl-person | bl-something]] | v-departure . z-speaker | v-knowledge | d-whether-clause | z-something
 >
 > "Alazun left, according to someone. I know who."
 

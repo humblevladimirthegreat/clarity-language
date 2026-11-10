@@ -31,7 +31,7 @@ A topic is set only by an `/x/` word at the start of a sentence: `/x/`, then the
 >
 > "Now, about Azozon."
 
-`/x/` takes the speaker, listener, interlocutors, or people in general like any noun: `xuwen` *now, about me*, `xawan` *now, about you*, `xayan` *now, about the two of us*, `xeyen` *now, about people in general*. A nonspecific `umen` cannot be a topic, because a topic is someone in particular. The topic is fixed to that person (or the address set) at the moment it is set, so after `xawan`, both speakers say `zalen` for the same person.
+`/x/` takes the speaker, listener, interlocutors, or people in general like any noun: `xuwen` *now, about me*, `xawan` *now, about you*, `xayan` *now, about the two of us*, `xeyen` *now, about people in general*. The topic is fixed to that person (or the address set) at the moment it is set, so after `xawan`, both speakers say `zalen` for the same person.
 
 **Every return is explicit.** There is one topic, not a stack. Coming back from a side topic, or from a new frame, means naming the old topic again with `xazozor`.
 

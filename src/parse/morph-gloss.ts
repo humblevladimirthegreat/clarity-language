@@ -24,7 +24,7 @@
  * | mid-word `x` | always `-x-` segments | never a fused English name |
  * | named `-n` (house cast included) | the root capitalised + `n` | |
  * | mention `{…}` / spoken TYPE **o** interior | pass through the surface (`z-odogo`, `odogol`) | not the English lemma |
- * | `zeman` / `zehan` / `zohan` / `zanun` | `speaker` / `listener` / `interlocutors` / `someone` | |
+ * | `zeman` / `zehan` / `zohan` | `speaker` / `listener` / `interlocutors` | |
  * | ordinary lexicon (`vejel`, `vajul`, …) | packed `english_by_pos` when present for this role + sense, else literal / metaphor | [glosses.md](../../docs/meta/glosses.md#role-english) |
  */
 
@@ -92,7 +92,6 @@ const specialPronoun = closedDerived(
     [CLOSED.microphone]: "speaker",
     [CLOSED.headphones]: "listener",
     [CLOSED.handshake]: "interlocutors",
-    [CLOSED.neutral]: "someone",
   }),
 );
 

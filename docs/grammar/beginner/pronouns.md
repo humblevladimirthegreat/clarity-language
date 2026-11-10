@@ -134,8 +134,6 @@ This is the **`e`** rule turned around: **`e`** skips a sentence with nobody in 
 
 Once used, `zwuzur` fills the subject like any noun, so a later `zwuzer` reaches it (*they*, still unnamed). **`u`** goes with the same three part consonants: `zwudur` is *whatever it happened to*, when no sentence said what.
 
-**Compare with:** `umen` *someone* is tied to no event. `zwuzur` is tied to one known event, *whoever did that*.
-
 ### A new one (-l) {#a-new-one}
 
 A pointer with **-r** is the same one again. To say a **new** one of the same kind, English uses *one* (*Azozon sees a cookie. Alazun sees **one** too.*), and the second cookie is a different cookie. Write the same pointer with **-l**, the ending of a first mention: a new thing, of the kind the pointer reaches.
@@ -188,7 +186,7 @@ Each part consonant names a different part: `zwuzem` is the doing, `zwudem` what
 
 ### Special pronouns {#special-pronouns}
 
-Most of the time you name people with a proper name (`zazozon`, `zalazun`) and resume with **-r**. A few roots from a small fixed set (**closed roots**) instead name **roles in this conversation**: who is speaking, who is being spoken to, you-and-I together, or a nonspecific *someone*. They take the ordinary role letter for the slot they fill in the clause (subject, object, and so on), and in this use they end in **-n**, like a name.
+Most of the time you name people with a proper name (`zazozon`, `zalazun`) and resume with **-r**. A few roots from a small fixed set (**closed roots**) instead name **roles in this conversation**: who is speaking, who is being spoken to, or you-and-I together. They take the ordinary role letter for the slot they fill in the clause (subject, object, and so on), and in this use they end in **-n**, like a name.
 
 Use **`uwe`** (*speaker*) and **`awa`** (*listener*) for *I* and *you*. **`awa`** is always the person actually listening, never *anyone at all*: English generic *you* has its own pronoun.
 
@@ -214,30 +212,19 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 >
 > "We walk." (you and I)
 
-**`ume`** names a nonspecific **individual** (*someone*), not a particular person you have already named. Once that person is in the conversation, resume them with whole-stem **-r**.
-
-> `zumen vezuvel.`
->
-> z-someone | v-sleep
->
-> "Someone sleeps."
-
 <!-- cheat-sheet: people-pointing -->
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`uwen`** | speaker in this conversation (`zuwen` in subject slot) | *I*, *me* | `uwel` *microphone* | 🎤: the live voice of the person talking |
 | **`awan`** | listener in this conversation (`zawan` / `dawan` in clause) | *you* | `awal` *headphones* | 🎧: the one receiving the sound |
 | **`ayan`** | speaker and addressees together (`zayan` in subject slot) | *we* (you and I) | `ayal` *handshake* | 🤝: sharing the floor together |
-| **`umen`** | nonspecific individual (`zumen` in subject slot) | *someone* | `umel` *neutral* | 😐: not a particular person |
 | **`eyen`** | any person, as a rule (`zeyen` in subject slot) | *one*, generic *you*, *people* | `eyel` *person* | 🧑: a person in general |
 
 **Compare with:** *I and my people* / *you all* / *Azozon and associates* use **-x**. Inclusive *you and I* is **`aya`**.
 
-**Compare with:** `zumen` says that somebody did it, without saying who. A sentence with [no subject](no-subject.md#no-subject) (`dazozon vayebel.`) does not mention a doer at all.
-
 ### Generic pronoun {#generic-pronoun}
 
-English *one* and generic *you* (*one never knows*, *you feel awful when that happens*) say something about people in general, not about the person listening. Ageben gives that its own pronoun: **`eye`** *person* with **-n**, in `/z/`, `/d/`, or `/b/`. It means any person, as a rule, with exceptions allowed. It claims nothing about a particular individual (that is **`ume`**) and nothing about the listener (that is **`awa`**), so a speaker has to choose between reporting their own experience and making a general claim. (cue: 🧑 is the emoji for a person in general)
+English *one* and generic *you* (*one never knows*, *you feel awful when that happens*) say something about people in general, not about the person listening. Ageben gives that its own pronoun: **`eye`** *person* with **-n**, in `/z/`, `/d/`, or `/b/`. It means any person, as a rule, with exceptions allowed. It claims nothing about a particular individual and nothing about the listener (that is **`awa`**), so a speaker has to choose between reporting their own experience and making a general claim. (cue: 🧑 is the emoji for a person in general)
 
 > `zeyen vezuvel.`
 >
@@ -264,7 +251,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *punch* | `vabuvul` | 👊 |
 | *listener* | `awan` | 🎧 from *headphones*: the one receiving the sound |
 | *interlocutors* | `ayan` | 🤝 from *handshake*: sharing the floor together |
-| *someone* | `umen` | 😐 from *neutral*: not a particular person |
 | *one* | `eyen` | 🧑 from *person*: a person in general |
 
 **Review:**
@@ -310,14 +296,14 @@ z-Alazun | d-knife | v-find . z-Ahelan | d-←knife | v-see
 z-speaker | d-listener | v-see
 :::
 
-**4.** *Someone punches Ahelan. They scream.* (Ahelan)
+**4.** *Alazun punches Ahelan. They scream.* (Ahelan)
 
 ::: details Show answer
-`zumen dahelan vabuvul. zwuder veyamul.`
+`zalazun dahelan vabuvul. zwuder veyamul.`
 
-z-someone | d-Ahelan | v-punch . z-←episode-patient.same | v-scream
+z-Alazun | d-Ahelan | v-punch . z-←episode-patient.same | v-scream
 
-**Also correct:** `zumen dahelan vabuvul. zahelar veyamul.`
+**Also correct:** `zalazun dahelan vabuvul. zahelar veyamul.`
 :::
 
 **5.** *Azozon sees a cookie. Alazun finds one.*

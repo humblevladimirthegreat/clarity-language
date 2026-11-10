@@ -121,7 +121,6 @@ const CLOSED_WORDS: ReadonlyArray<{ name: ClosedName; form: (root: string) => st
   { name: "microphone", form: (r) => `${r}n`, english: "*I* (the speaker)", anchor: "pronouns.md#special-pronouns" },
   { name: "headphones", form: (r) => `${r}n`, english: "*you* (the listener)", anchor: "pronouns.md#special-pronouns" },
   { name: "handshake", form: (r) => `${r}n`, english: "*we* (you and I)", anchor: "pronouns.md#special-pronouns" },
-  { name: "neutral", form: (r) => `${r}n`, english: "*someone*", anchor: "pronouns.md#special-pronouns" },
   { name: "person", form: (r) => `${r}n`, english: "*one*, generic *you*, *people*", anchor: "pronouns.md#generic-pronoun" },
   { name: "star", form: (r) => `${r}n`, english: "*the topic*", anchor: "topic.md#topic-pronoun" },
   { name: "east", form: (r) => `x${r}m`, english: "*therefore*", anchor: "sentence-linkers.md#sentence-linkers" },

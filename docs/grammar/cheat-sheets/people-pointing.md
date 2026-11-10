@@ -97,7 +97,6 @@ Role letter + the root + **-n**. Prefer a proper name when you have one. See [sp
 | [`uwen`](/pronouns#special-pronouns) | the speaker | `zuwen` | *I* | `uwel` *microphone* | B |
 | `awan` | the one listening | `zawan` / `dawan` | *you* | `awal` *headphones* | B |
 | `ayan` | speaker and addressees together | `zayan` | *we* (you and I) | `ayal` *handshake* | B |
-| `umen` | a nonspecific individual | `zumen` | *someone* | `umel` *neutral* | B |
 | [`eyen`](/pronouns#generic-pronoun) | any person, as a rule | `zeyen` | *one*, generic *you* | `eyel` *person* | B |
 
 As an object, *we* is `dayan`. `awan` is the person actually listening. `eyen` takes no **-x**.
@@ -114,7 +113,7 @@ As an object, *we* is `dayan`. `awan` is the person actually listening. `eyen` t
 | [listener **-x**](/plurality#person-role-x) | the address set, speaker not included | `awanx` (`zawanx`, `dawanx`) | *you all* | B |
 | [interlocutors **-x**](/plurality#person-role-x) | everyone here, and their people | `ayanx` | *we all* | B |
 
-Who counts as an associate is [open unless you say](/collectives#associate-resolution). `umen` takes no **-x**; *some people* is `zeyelx`.
+Who counts as an associate is [open unless you say](/collectives#associate-resolution).
 
 <PageBreak />
 
@@ -144,6 +143,6 @@ Who counts as an associate is [open unless you say](/collectives#associate-resol
 | `zwuzer` *the person* ([-r](/pronouns#share)) | | `zwuzem` *what they did* ([-m](/pronouns#share)) |
 | `zayan` *you and I* ([`aya`](/pronouns#special-pronouns)) | | `zuwenx` *I and my people*, not you ([speaker -x](/plurality#person-role-x)) |
 | `zawan` *you* ([one listener](/pronouns#special-pronouns)) | | `zawanx` *you all* ([the address set](/plurality#person-role-x)) |
-| `zumen` *someone* ([tied to no event](/pronouns#special-pronouns)) | | `zwuzur` *whoever did that* ([tied to one known event](/pronouns#whoever-it-was)) |
+| `zeyel zar` *someone* ([tied to no event](/joins#unspecified-member-r-phrase)) | | `zwuzur` *whoever did that* ([tied to one known event](/pronouns#whoever-it-was)) |
 | `zeyen` *one*, people at large ([generic](/pronouns#generic-pronoun)) | | `zawan` *you*, the listener ([just them](/pronouns#special-pronouns)) |
 | `xazozon` *now, about Azozon* ([sets the topic](/topic#topic)) | | `zalen` *the topic* ([refers to it](/topic#topic-pronoun)) |

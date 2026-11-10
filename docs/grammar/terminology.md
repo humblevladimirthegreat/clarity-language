@@ -462,7 +462,7 @@ A channel, NOTIONAL, or holder that keeps covering your later claims with no cha
 
 [Pronouns](/pronouns#generic-pronoun)
 
-**Compare with:** `awan` is always the person actually listening; `umen` is one unidentified individual.
+**Compare with:** `awan` is always the person actually listening.
 
 ### Greeting / conversation length
 
@@ -894,7 +894,7 @@ Written cite `[…]`, aside `(…)` and opaque `<…>` fences, with a role lette
 
 ### Special pronoun
 
-**`uwe` / `awa` / `aya` / `ume`**.
+**`uwe` / `awa` / `aya`**.
 
 [Pronouns](/pronouns#special-pronouns)
 
