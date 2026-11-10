@@ -994,6 +994,26 @@ function enforceJoinPlural(word: LexWord): void {
 }
 
 /**
+ * A tag right after a `zual` / `zuam` / `zul` fence binds each member in turn (universals-domains.md#bound-tags): a
+ * pseudonym (**-n**) is a constant, so it cannot be bound; and on the `zul` that denies a `zual` fence (not every) the
+ * denial leaves no member for the tag to name.
+ */
+function enforceFenceTag(node: AstNode): void {
+  if (node.kind !== "np") return;
+  node.coord.parts.forEach((part, i) => {
+    const join = part.join;
+    if (!part.tag || join?.family.kind !== "joinMarker") return;
+    const series = join.family.series;
+    if (!((series === "ua" && join.ending !== "n") || series === "u")) return;
+    if (part.tag.ending === "n") throw new ConstructionError("tagConstantBound", `${join.raw} ${part.tag.raw}`);
+    const before = node.coord.parts[i - 1]?.join;
+    if (series === "u" && part.items.length === 0 && before?.family.kind === "joinMarker" && before.family.series === "ua") {
+      throw new ConstructionError("tagNegatedEvery", `${before.raw} ${join.raw} ${part.tag.raw}`);
+    }
+  });
+}
+
+/**
  * A tag names a phrase that is not already a pronoun with one fixed form (tag-pronouns.md#tag-pronouns): never a special,
  * generic, or topic pronoun, or another tag. A resume or role pointer may take one.
  */
@@ -1035,14 +1055,21 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
   }
   const places = { seen: new Set<LexWord>(), shaped: new Set<LexWord>() };
   visitResult(result, structureVisitor(tables, places));
-  visitResult(result, { enter: enforceTagHost });
+  visitResult(result, {
+    enter(node) {
+      enforceTagHost(node);
+      enforceFenceTag(node);
+    },
+  });
   enforceSaySpeaker(result);
   enforceGlLeans(result);
   for (const word of places.seen) if (!places.shaped.has(word)) throw new ConstructionError("degreePlaceShape", word.raw);
   for (const { bodies } of result.utterances) for (const body of bodies) enforceVerbPredicate(body.clause.units);
   for (const bind of result.resolve?.anaphors ?? []) {
     if (bind.kind === "pointer") enforcePointer(bind);
+    if (bind.kind === "tag" && bind.boundRebind) throw new ConstructionError("tagBoundRebind", bind.pronoun.raw);
     if (bind.antecedent) continue;
+    if (bind.kind === "tag" && bind.boundExpired) throw new ConstructionError("tagBoundExpired", bind.pronoun.raw);
     if (bind.kind === "number") throw new ConstructionError("numberResumeUnbound", bind.pronoun.raw);
     if (bind.kind === "tag" && bind.placeholderHeld) throw new ConstructionError("tagNameHeld", bind.pronoun.raw);
     if (bind.kind === "tag" && bind.pronoun.ending !== "l") throw new ConstructionError("tagUnbound", bind.pronoun.raw);

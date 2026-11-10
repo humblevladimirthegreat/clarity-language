@@ -33,7 +33,7 @@ The last `zwar` is still the dog, though the cat is the newer doer. `zwuzer` wou
 - **Pseudonym.** A tag with **-n** names a real, specific person whose name you keep back. It names people only: for a company, a town, or a dog, use `zwal`. Alone, `zwan` brings that person in and calls them A while A is free, and recalls them while a `zwan` holds A. After a person phrase in the same role (`zeyel`, a kin or role noun), it assigns: `zeyel zwan` is *a person, call her A*. While a **-l** holds A, bare `zwan` is not a sentence, so it never reads as a recall of someone else; to move A to a real person, put a phrase before it. `zwar` recalls a pseudonym too. `zwan` is always the tag and never a name, as no root begins with `w`.
 - **Reassign.** A newer `zwal`, or a phrase with `zwan`, takes A over from anyone.
 - **Tag later.** A tag can go on a resume: `dodozer dwol` is *the dog, call it O*.
-- **Lists.** Inside a [join fence](/joins#right-close), each tag names the item right before it: `zodozel zwal zogozel zwol zam` is *a dog (A) and a cat (O)*. After the join word, a tag names the whole group: `zodozel zogozel zam zwal` is *a dog and a cat, call them A*. A new tag listed with something else goes first: `zwal zodozel zam` is *A and a dog*.
+- **Lists.** Inside a [join fence](/joins#right-close), each tag names the item right before it: `zodozel zwal zogozel zwol zam` is *a dog (A) and a cat (O)*. After an ordinary list's join word, a tag names the whole group: `zodozel zogozel zam zwal` is *a dog and a cat, call them A*. A tag after a `zual`, `zuam`, or `zul` fence is different: it names each member in turn, and lasts only to the end of its sentence. A new tag listed with something else goes first: `zwal zodozel zam` is *A and a dog*.
 - **No fallback.** An ordinary **-r** can mean the one you both know. A tag **-r** or **-m** with no assignment earlier in the conversation is not a sentence.
 
 With no phrase to tag, a tag holds a placeholder, as in *suppose A tells O*:
@@ -62,7 +62,7 @@ A tag with **-m** is a [share](/pronouns#share): A's part in the latest earlier 
 
 Tags fill `/z/`, `/d/`, and `/b/` only. To call someone, use their name (`yalazun`). A word that is already a pronoun with one fixed form takes no tag: the [special pronouns](/pronouns#special-pronouns), the generic pronoun, a topic pronoun, and a tag itself. A resume and a role pointer do take one, because a tag keeps them fixed while they would otherwise follow the latest match. **-x** goes only on **-r** and **-n**: a share is a part, not a group of people, and to tag a group, tag its phrase (`zodozelx zwal`).
 
-A tag lasts until it is assigned again or the conversation ends with a [goodbye](/word-endings#greeting). Distance does not blur it, so placeholder reasoning can run through other sentences and back. A tag assigned inside a [dependent](/dependents#dependent-clauses) holds after it, because the dependent is the same talk. A quote keeps its own tags.
+A tag on a phrase, a list, or nothing lasts until it is assigned again or the conversation ends with a [goodbye](/word-endings#greeting). Distance does not blur it, so placeholder reasoning can run through other sentences and back. A tag assigned inside a [dependent](/dependents#dependent-clauses) holds after it, because the dependent is the same talk. A quote keeps its own tags.
 
 #### Two tags at once {#tag-pairs}
 

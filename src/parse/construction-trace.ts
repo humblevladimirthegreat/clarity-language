@@ -224,6 +224,7 @@ export function addCstConstructions(node: CstNode, out: Set<string>, rule = node
 export function addResolveConstructions(info: ResolveInfo | undefined, out: Set<string>): void {
   for (const bind of info?.anaphors ?? []) {
     out.add(`resolve.${bind.kind}.${bind.antecedent ? "bound" : "unbound"}`);
+    if (bind.each) out.add("resolve.tag.each");
   }
 }
 

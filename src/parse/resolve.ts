@@ -52,6 +52,12 @@ type OpenClause = { anchor?: Anchor; before: number };
 /** A tag's holder; `pseudonym` when a `zwan` assigned it (tag-pronouns.md#tag-pronouns). */
 type TagBinding = { word: LexWord; key: string; pseudonym: boolean };
 
+/**
+ * A bound-tag reach (universals-domains.md#bound-tags): open while a tag bound by a `zual` / `zuam` / `zul` fence is live.
+ * `shadowed` keeps what each tag assigned inside it held before (restored when it ends); `bound` is the tags a fence bound.
+ */
+type BoundReach = { shadowed: Map<TagVowel, TagBinding | undefined>; bound: Set<TagVowel> };
+
 /** What the talk is about now: the `/x/` word that set it, and the referent it names (topic.md#topic). */
 type Topic = { word: LexWord; key: string };
 
@@ -79,6 +85,12 @@ type Ctx = {
   packageHead?: LexWord;
   /** A tag after a closed fence, and the group it names. */
   groupTags: Map<LexWord, GroupTag>;
+  /** The live bound-tag reach, if any (universals-domains.md#bound-tags). */
+  reach?: BoundReach;
+  /** Tags that expired with a bound reach and have no holder: a recall is out of scope, not a fallback. */
+  expired: Set<TagVowel>;
+  /** The last word of the sentence the walk is in, by position: a forward stand-in there carries a bound reach into the next sentence. */
+  lastWord?: LexWord;
   /** The current topic: set only by an `/x/` topic word, cleared by *next*, *by the way*, and goodbye. */
   topic?: Topic;
   /** Names that have greeted; the same greeting again is goodbye. */
@@ -362,6 +374,8 @@ function enterMove(ctx: Ctx, greetings: string[]): void {
     ctx.topic = undefined;
     ctx.named.clear();
     ctx.tags.clear();
+    ctx.reach = undefined;
+    ctx.expired.clear();
     ctx.greeted.clear();
     ctx.closing = false;
   }
@@ -710,11 +724,46 @@ function assignTag(ctx: Ctx, word: TagWord, slot: WordSlot | undefined): void {
   const vowel = word.family.vowels[0]!;
   const group = slot === "groupTag" ? ctx.groupTags.get(word) : undefined;
   const named = slot === "tag" ? ctx.packageHead : group?.join;
+  // A tag that a fence bound and that is still live is not assigned again (enforce rejects it).
+  if (ctx.reach?.bound.has(vowel)) {
+    ctx.anaphors.push({ pronoun: word, kind: "tag", boundRebind: true, ...(named ? { antecedent: named } : {}) });
+    return;
+  }
+  const each = word.ending === "l" && group !== undefined && isQuantifierFence(group.join);
+  if (each) ctx.reach ??= { shadowed: new Map(), bound: new Set() };
+  if (ctx.reach && !ctx.reach.shadowed.has(vowel)) ctx.reach.shadowed.set(vowel, ctx.tags.get(vowel));
+  if (each) ctx.reach!.bound.add(vowel);
+  ctx.expired.delete(vowel);
   const key = group ? fillerKey(ctx, { words: group.words }) : referentKey(ctx, named ?? word);
   ctx.referents.set(word, key);
   if (named) ctx.referents.set(named, key);
   ctx.tags.set(vowel, { word: named ?? word, key, pseudonym: word.ending === "n" });
-  if (named) ctx.anaphors.push({ pronoun: word, kind: "tag", antecedent: named });
+  if (named) ctx.anaphors.push({ pronoun: word, kind: "tag", antecedent: named, ...(each ? { each: true } : {}) });
+}
+
+/** A `zual` / `zuam` / `zul` fence (not the kind itself, `zuan`): a tag right after it binds each member in turn (universals-domains.md#bound-tags). */
+function isQuantifierFence(join: LexWord): boolean {
+  if (join.family.kind !== "joinMarker") return false;
+  const series = join.family.series;
+  return (series === "ua" && join.ending !== "n") || series === "u";
+}
+
+/**
+ * A bound reach ends with its sentence, unless the sentence ends on a forward stand-in, whose sentence is still inside it
+ * (universals-domains.md#bound-tags). Every tag assigned inside it goes back to its earlier holder; one with none is free.
+ */
+function closeSentence(ctx: Ctx): void {
+  const carries = ctx.lastWord?.reading === "standIn";
+  ctx.lastWord = undefined;
+  if (!ctx.reach || carries) return;
+  for (const [vowel, previous] of ctx.reach.shadowed) {
+    if (previous) ctx.tags.set(vowel, previous);
+    else {
+      ctx.tags.delete(vowel);
+      ctx.expired.add(vowel);
+    }
+  }
+  ctx.reach = undefined;
 }
 
 /** Whether a slot's filler is that referent: one of its words, or the whole joined group. */
@@ -733,7 +782,10 @@ function recallTag(ctx: Ctx, word: TagWord): void {
   const bind: AnaphorBind = { pronoun: word, kind: "tag" };
   ctx.anaphors.push(bind);
   const bindings = word.family.vowels.map((vowel) => ctx.tags.get(vowel));
-  if (bindings.some((binding) => !binding)) return;
+  if (bindings.some((binding) => !binding)) {
+    if (word.family.vowels.some((vowel) => ctx.expired.has(vowel))) bind.boundExpired = true;
+    return;
+  }
   const tagged = bindings as TagBinding[];
   const pair = tagged.length > 1;
   if (word.ending === "n" && tagged.some((binding) => !binding.pseudonym)) {
@@ -893,6 +945,7 @@ function considerWord(ctx: Ctx, word: LexWord, slot?: WordSlot): void {
 function resolveVisitor(ctx: Ctx): Visitor {
   return {
     word(word, slot) {
+      if ((word.at ?? -1) >= (ctx.lastWord?.at ?? -1)) ctx.lastWord = word;
       if (slot === "boundJoinClose" || slot === "joinModifier" || slot === "factor") return;
       if (slot === "orodo") ctx.standIn = word;
       if (slot === "linker") {
@@ -952,6 +1005,7 @@ function resolveVisitor(ctx: Ctx): Visitor {
     },
     exit(node) {
       if (node.kind === "clause") ctx.clauses.pop();
+      if (node.kind === "body") closeSentence(ctx);
       if (node.kind === "shared" && node.join) {
         ctx.shared.push({ join: node.join, role: classifySharedRole(node.join, node.item), shared: node.item });
       }
@@ -977,6 +1031,7 @@ function buildResolve(result: ParseResult): ResolveInfo {
     named: new Set(),
     tags: new Map(),
     groupTags: new Map(),
+    expired: new Set(),
     greeted: new Set(),
     closing: false,
     goodbye: false,

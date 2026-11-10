@@ -198,6 +198,75 @@ The join does the rest, as on any SHARED word:
 
 With `blayan`, the other party is the two of you together: people both of you know. The listener can name someone in that set, which an unbounded *everyone* never allows.
 
+### Bound tags {#bound-tags}
+
+A [tag](/tag-pronouns#tag-pronouns) right after a `zual`, `zuam`, or `zul` fence, with or without the shared kind, **binds**: it names each member in turn, not the group. `zual gogozel zwal` is *every cat, each one A*, and a `zwar` after it is whichever cat is up. After an ordinary list, a tag still names the whole group (`zodozel zogozel zam zwal` is *a dog and a cat, call them A*), and *all of them together* stays [collective **-x**](/plurality) on the verb.
+
+| Logic | Ageben | English |
+|-------|--------|---------|
+| there is an x, a cat | `zogozel zwal` | *a cat, A* |
+| every x that is a cat | `zual gogozel zwal` | *every cat, each one A* |
+| no x is a cat | `zul gogozel zwal` | *no cat A* |
+| every x | `zual zwal` | *everything, each one A* |
+| x is a cat, exceptions open | `zuam gogozel zwal` | *cats in general, each one A* |
+| one fixed x | `zwan`, or a name | *A*, one real one |
+
+A constant cannot be bound: `zwan` after `zual gogozel` is not a sentence. Nor can a tag sit on the `zul` that denies a `zual` fence: in `zual gogozel zul` (*not every cat*) the denial leaves no member for A to name; *some cat A does not sleep* is `zogozel zwal vezuvel vul.`
+
+**Reach.** A bound tag holds from the phrase that assigns it to the end of its sentence, and through every sentence a [stand-in](/dependents#hinges) in that stretch points to (a `blarl` condition, a `darl` content, and so on, as deep as they nest). At the end of that sentence it expires, and a recall after that is not a sentence: after `zual gogozel zwal vezuvel.`, a `zwar` in the next sentence fails the way English *Every farmer owns a donkey. He is happy.* fails, while *A farmer owns a donkey. He is happy.* works, as does `zogozel zwal vezuvel. zwar guzemel.` A tag assigned inside that reach expires with it, even one on a plain phrase: under *every dog*, *a cat O* is a different cat for each dog. A tag on a plain phrase outside any bound reach lasts as the [tag page](/tag-pronouns#tag-pronouns) says.
+
+> `zual gogozel zwal vezuvel thohem blarl zwar guzemel.`
+>
+> [[z-everything | g-cat] | z-tag.A] | v-sleep | [th-if | bl-that-clause] | [z-←tag.A | g-sleepy]
+>
+> "Every cat A sleeps if A is sleepy."
+
+**Shadowing.** While a bound A is live, an earlier A is hidden. When the bound A expires, A is its earlier holder again; with no earlier holder, A is free. Assigning A again while it is bound and live is not a sentence either, since that would end the variable early: use another tag.
+
+> `zodozel zwal vowurol. zual gogozel zwal vezuvel. zwar guzemel.`
+>
+> [z-dog | z-tag.A] | v-walk . [[z-everything | g-cat] | z-tag.A] | v-sleep . z-←tag.A | g-sleepy
+>
+> "A dog (A) walks. Every cat, each one A, sleeps. A is sleepy." (the dog)
+
+**Order.** Tags follow [scope by order](/joins#everything-ua): a tag assigned later is inside the reach of every bound tag before it. To give a phrase wider scope, move it earlier in the clause or into an earlier sentence.
+
+> `zual godozel zwal dogozel dwol vayebel.`
+>
+> [[z-everything | g-dog] | z-tag.A] | [d-cat | d-tag.O] | v-see
+>
+> "Every dog A sees a cat O." (each dog may see a different cat)
+
+> `zogozel zwol. zual godozel zwal dwor vayebel.`
+>
+> [z-cat | z-tag.O] . [[z-everything | g-dog] | z-tag.A] | d-←tag.O | v-see
+>
+> "There is a cat O. Every dog A sees O." (one cat)
+
+> `dogozel dwol zual godozel zwal vayebel.`
+>
+> [d-cat | d-tag.O] | [[z-everything | g-dog] | z-tag.A] | v-see
+>
+> "A cat O, every dog A sees." (one cat, in one sentence)
+
+**Connectives** are the ones you have: *and* / *or* from [set joins](/set-joins), *not* (`vul` on the verb, `zul` on a fence), *if*, *only if*, and *iff* as [condition hinges](/causation) (`thohem blarl` plus its condition sentence, which falls inside the reach), and *x is y* through [identity](/predication#identity). Two variables of one kind take two tags, where a plain resume could not tell them apart:
+
+> `zual gogozel zwal dual gogozel dwol vayebel.`
+>
+> [[z-everything | g-cat] | z-tag.A] | [[d-everything | g-cat] | d-tag.O] | v-see
+>
+> "Every cat A sees every cat O." (two tags keep the two cats apart)
+
+**Pairs.** A [pair](/tag-pronouns#tag-pairs) recalls two bound tags together inside their reach, as for any tags:
+
+> `zual godozel zwal dual gogozel dwol vayebel thohem blarl zwaor vowurol.`
+>
+> [[z-everything | g-dog] | z-tag.A] | [[d-everything | g-cat] | d-tag.O] | v-see | [th-if | bl-that-clause] | z-←tag.A+O | v-walk
+>
+> "Every dog A sees every cat O if A and O walk."
+
+**Compare with:** the [resume rule](#not-every) after `blarl` on a general claim, where a resume of the kind means the same member. A bound tag is the explicit form of that rule: reach for it with two variables of one kind, or when the resume would pick the wrong phrase.
+
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -209,6 +278,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben |
 |---------|--------|
 | *Azozon* | `azozon` |
+| *person* | `eyel` |
 | *small* | `amezem` |
 | *veil* | `ovobul` |
 | *dress* | `edobal` |
@@ -267,6 +337,14 @@ z-Azozon | [d-everything | g-dress] | v-see
 [[z-everything | g-veil] | z-not]
 
 *not every veil*
+:::
+
+**4.** `zual geyel zwal dedobal dwol vayebel.`
+
+::: details Show answer
+[[z-everything | g-person] | z-tag.A] | [d-dress | d-tag.O] | v-see
+
+*Every person A sees a dress O.* (each person may see a different dress)
 :::
 
 #### Pick one {#intermediate-pick-one}

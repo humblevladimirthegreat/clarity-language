@@ -212,6 +212,9 @@ Source: [pronouns.md](/tag-pronouns#tag-pronouns)
 - **open:** a tag on a word that is already a fixed pronoun: a special pronoun, the generic or topic pronoun, or another tag (`zuwen zwal`, `zalen zwal`, `zwar zwel`). It already has one short form, and a second label for the same pronoun would only rename it. Parser: `tagPronoun`.
 - **open:** a tag pair with **-l** (`zwael`). After a two-item list it could tag the items in order or the group as one, so neither reading is guessable; each tag is assigned on its own. Parser: `tagPairAssign`.
 - **open:** **-x** on a tag pair **-m** (`zwaemx`), as on any share.
+- **closed (D-71):** a tag **-n** right after a `zual` / `zuam` / `zul` fence (`zual gogozel zwan`). A pseudonym is a constant, and a tag on such a fence binds each member in turn; use **-l**. Parser: `tagConstantBound`.
+- **closed (D-72):** a recall of a tag after its bound reach ended, with no earlier holder (`zual gogozel zwal vezuvel. zwar guzemel.`), and assigning a tag a fence bound while it is live (`zual gogozel zwal … zodozel zwal` inside the reach). The variable is out of scope, or would end early; keep the recall inside the reach, or use another tag. Parser: `tagBoundExpired`, `tagBoundRebind`.
+- **closed (D-73):** a tag on the `zul` that denies a `zual` fence (`zual gogozel zul zwal`). The denial leaves no member to name; *some cat A does not …* is `zogozel zwal … vul`. Parser: `tagNegatedEvery`.
 - **closed (D-70):** a bare tag **-n** while a **-l** assignment holds that tag (`zodozel zwal vowurol. zwan vayebel.`), and a pair or **-x** on **-n** over such a tag (`zwaon`, `zwanx`). Parser: `tagNameHeld`.
 - **closed (D-56):** a tag in a holder seam (`theyemwar`). Parser: `holderSeamW`.
 

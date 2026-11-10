@@ -372,13 +372,19 @@ export const WORD_MISC_CONSTRUCTIONS = {
 } satisfies Record<string, ConstructionEntry>;
 
 export const RESOLVE_CONSTRUCTIONS: Record<
-  Exclude<`${AnaphorKind}.${"bound" | "unbound"}`, "number.unbound" | "tag.unbound" | "pointer.unbound" | "topic.unbound" | "landmark.unbound">,
+  Exclude<`${AnaphorKind}.${"bound" | "unbound"}`, "number.unbound" | "tag.unbound" | "pointer.unbound" | "topic.unbound" | "landmark.unbound"> | "tag.each",
   ConstructionEntry
 > = {
   "content.bound": { anchor: "pronouns.md#resume-r", summary: "-r binds an earlier content word" },
   "content.unbound": { anchor: "pronouns.md#resume-r", summary: "-r with no earlier match (the one you both know)" },
   "number.bound": { anchor: "number-markers.md#number-endings", summary: "number -r binds an earlier number" },
   "tag.bound": { anchor: "tag-pronouns.md#tag-pronouns", summary: "tag pronoun: assigned to a phrase, or recalling or sharing an assigned one" },
+  "tag.each": {
+    anchor: "universals-domains.md#bound-tags",
+    summary: "a tag right after a `zual` / `zuam` / `zul` fence binds: each member in turn, to the end of its sentence and the sentences its stand-ins point to",
+    reader:
+      "A tag letter right after a bracket closed by `everything` or `not` (`[[z-everything | g-cat] | z-tag.A]`) is a variable over the members, each one in turn, not a name for the group: *every cat, each one A*; `[[z-no | g-cat] | z-tag.A]` = *no cat A*. It lasts to the end of its sentence, plus any sentence a `bl-that-clause` / `d-that-clause` in that stretch points to; a tag set later in that stretch is inside it (`[[z-everything | g-dog] | z-tag.A] | [d-cat | d-tag.O]` = each dog may see a different cat). After that, the letter means what it meant before, or nothing.",
+  },
   "role.bound": { anchor: "roles.md#role-compounds", summary: "role -r binds an earlier role compound" },
   "role.unbound": { anchor: "roles.md#role-compounds", summary: "role -r with no earlier match" },
   "topic.bound": { anchor: "topic.md#topic-pronoun", summary: "topic pronoun: the one the talk is about now" },
@@ -888,6 +894,10 @@ export const REJECTIONS = {
   degreePlaceShape: { anchor: "comparative-arity.md#place-on-a-scale", summary: "a place on a scale (w#N) needs one name before zol or zuol, then the shared adjective" },
   numberResumeUnbound: { anchor: "number-markers.md#number-endings", summary: "a number -r needs an earlier number to match" },
   tagUnbound: { anchor: "tag-pronouns.md#tag-pronouns", summary: "a tag -r or -m, or a pair or -x on -n, needs that tag assigned earlier in the conversation (`zodozel zwal`, or `zwal` alone); -m also needs an earlier event it took part in (for a pair, one event both took part in)" },
+  tagConstantBound: { anchor: "universals-domains.md#bound-tags", summary: "a tag -n after a `zual` / `zuam` / `zul` fence (`zual gogozel zwan`) has no reading: a pseudonym is one real person, a constant, and a tag on such a fence binds each member in turn; use -l (`zual gogozel zwal`)" },
+  tagBoundExpired: { anchor: "universals-domains.md#bound-tags", summary: "a tag bound by a `zual` / `zuam` / `zul` fence, or assigned inside its reach, expires at the end of that sentence (plus the sentences its stand-ins point to); a recall after that with no earlier holder is out of scope (`zual gogozel zwal vezuvel. zwar guzemel.`), tags never fall back; keep the recall inside the reach (`… thohem blarl zwar guzemel.`) or tag a plain phrase" },
+  tagBoundRebind: { anchor: "universals-domains.md#bound-tags", summary: "a tag bound by a `zual` / `zuam` / `zul` fence is not assigned again while it is live, which would end the variable early; use another tag (`zwol`)" },
+  tagNegatedEvery: { anchor: "universals-domains.md#bound-tags", summary: "a tag on the `zul` that denies a `zual` fence (`zual gogozel zul zwal`, not every cat) has no member to name; *some cat A does not …* is `zogozel zwal … vul`" },
   tagNameHeld: { anchor: "tag-pronouns.md#tag-pronouns", summary: "a bare tag -n (`zwan`, and `zwaon`, `zwanx`) recalls a pseudonym, so it cannot stand where a -l assignment holds the tag; to move the tag to a real person, assign with a phrase (`zeyel zwan`), or recall with -r" },
   tagSlot: { anchor: "tag-pronouns.md#tag-pronouns", summary: "a tag pronoun fills /z/, /d/, or /b/; to call someone or return to them as the topic, use their name" },
   tagEnding: { anchor: "tag-pronouns.md#tag-pronouns", summary: "a tag pronoun takes -l (assign), -r (recall), -m (share), or -n (a pseudonym)" },

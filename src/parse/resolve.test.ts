@@ -297,6 +297,24 @@ describe("resolve — tag pronouns (tag-pronouns.md#tag-pronouns)", () => {
     assert.deepEqual(tags("zwal zodozel zam vowurol. zwar veruvol."), ["zwar→zwal"]);
   });
 
+  it("binds each member after a `zual` / `zuam` / `zul` fence, to the end of the sentence and through its stand-ins (universals-domains.md#bound-tags)", () => {
+    const bound = resolveOf("zual gogozel zwal vezuvel thohem blarl zwar guzemel.").anaphors.filter((a) => a.kind === "tag");
+    assert.deepEqual(bound.map((a) => `${a.pronoun.raw}→${a.antecedent?.raw}${a.each ? " each" : ""}`), ["zwal→zual each", "zwar→zual"]);
+    assert.deepEqual(tags("zul gogozel zwal vezuvel thohem blarl zwar guzemel."), ["zwal→zul", "zwar→zul"]);
+    // A sentence-final stand-in points to the next sentence, which is still inside the reach.
+    assert.deepEqual(tags("zual gogozel zwal vezuvel thohem blarl. zwar guzemel."), ["zwal→zual", "zwar→zual"]);
+    assert.deepEqual(tags("zual gogozel zwal vezuvel thohem blarl. zwar guzemel darl. zwar vowurol."), ["zwal→zual", "zwar→zual", "zwar→zual"]);
+    // After an ordinary list, a tag still names the group and lasts.
+    assert.deepEqual(resolveOf("zodozel zogozel zam zwal vowurol. zwar veruvol.").anaphors.filter((a) => a.kind === "tag").map((a) => a.each), [undefined, undefined]);
+  });
+
+  it("restores the earlier holder when a bound reach ends, and expires tags assigned inside it", () => {
+    assert.deepEqual(tags("zodozel zwal vowurol. zual gogozel zwal vezuvel. zwar guzemel."), ["zwal→zodozel", "zwal→zual", "zwar→zodozel"]);
+    assert.deepEqual(tags("zazozon dodozel dwol vayebel. zual gogozel zwal dogozel dwol vayebel. dwor vezuvel."), ["dwol→dodozel", "zwal→zual", "dwol→dogozel", "dwor→dodozel"]);
+    // With no earlier holder the tag is free again: a bare `zwan` introduces.
+    assert.doesNotThrow(() => parseText("zual gogozel zwal vezuvel. zwan vowurol."));
+  });
+
   it("tags a whole group after a closed fence", () => {
     assert.deepEqual(tags("zodozel zogozel zam zwal vowurol. zwar veruvol."), ["zwal→zam", "zwar→zam"]);
     const share = resolveOf("zodozel zogozel zam zwal vowurol. zazozon dwam vayebel.").anaphors.find((a) => a.pronoun.raw === "dwam");
