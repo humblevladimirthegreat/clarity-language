@@ -8,12 +8,12 @@ import { existsSync, readFileSync } from 'node:fs'
 import { dirname, join, posix } from 'node:path'
 
 import {
+  bandLessons,
   cheatSheetSidebar,
   claritishLessons,
   type LessonLink,
   orientation,
   recipePages,
-  sidebarGroups,
 } from '../../docs/grammar/.vitepress/lib/reading-order.ts'
 import { AGENT_BUNDLE_PATH } from './agent-bundle.ts'
 import { parseCompoundCsv } from '../../src/lexicon-compounds.ts'
@@ -149,7 +149,7 @@ export function llmsSections(): LlmsSection[] {
   const load = (items: readonly LessonLink[]) => items.map(loadPage)
   return [
     { title: 'Start here', slug: 'start-here', pages: load(orientation) },
-    ...sidebarGroups.map((group) => ({ title: group.text, slug: group.text.toLowerCase(), pages: load(group.items) })),
+    ...bandLessons.map((group) => ({ title: group.text, slug: group.text.toLowerCase(), pages: load(group.items) })),
     { title: 'Saying it in Ageben (recipes keyed by English)', slug: 'recipes', pages: load(recipePages) },
     { title: 'Cheat sheets', slug: 'cheat-sheets', pages: load(cheatSheetSidebar) },
     {

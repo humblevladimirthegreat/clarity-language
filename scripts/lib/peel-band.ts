@@ -176,6 +176,97 @@ export function appendObjectToExportedArray(
   return `${source.slice(0, open + 1)}${nextInner}${source.slice(close)}`;
 }
 
+/** Index of the `]` that closes the `[` at `open`. */
+function closingBracket(source: string, open: number, what: string): number {
+  let depth = 0;
+  for (let i = open; i < source.length; i++) {
+    const c = source[i];
+    if (c === "[") depth += 1;
+    else if (c === "]") {
+      depth -= 1;
+      if (depth === 0) return i;
+    }
+  }
+  throw new Error(`unclosed ${what}`);
+}
+
+const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+/** A string as it may be spelled in a TypeScript literal, in either quote style. */
+function literalPattern(value: string): string {
+  const single = escapeRegExp(value.replace(/\\/g, "\\\\").replace(/'/g, "\\'"));
+  const double = escapeRegExp(JSON.stringify(value).slice(1, -1));
+  return `(?:'${single}'|"${double}")`;
+}
+
+export const UNIT_EXPORT: Record<Band, string> = {
+  beginner: "beginnerUnits",
+  intermediate: "intermediateUnits",
+  advanced: "advancedUnits",
+};
+
+export type UnitPlacement = {
+  /** The band's unit array in `reading-order.ts`, e.g. `beginnerUnits`. */
+  exportName: string;
+  /** The new sidebar row. */
+  item: { text: string; link: string };
+  /** Link of the parent sitting (`/joins`); the row lands directly after it, in its unit. */
+  parentLink?: string;
+  /** Unit title; when given, the row lands at the end of that unit instead. */
+  unit?: string;
+};
+
+/**
+ * Add a sitting's sidebar row to a unit of a band's unit array.
+ *
+ * Default: directly after the parent sitting, in the parent's unit. With
+ * `unit`, at the end of the unit of that title. A parent in another band has
+ * no unit here, so that case needs `unit`.
+ */
+export function addSittingToUnit(source: string, placement: UnitPlacement): string {
+  const { exportName, item, parentLink, unit } = placement;
+  const marker = `export const ${exportName}`;
+  const start = source.indexOf(marker);
+  if (start < 0) throw new Error(`missing ${marker}`);
+  const assign = source.indexOf("=", start);
+  const open = assign < 0 ? -1 : source.indexOf("[", assign);
+  if (open < 0) throw new Error(`${exportName} is not an array`);
+  const close = closingBracket(source, open, exportName);
+  const body = source.slice(open, close);
+  const literal = `{ text: ${JSON.stringify(item.text)}, link: ${JSON.stringify(item.link)} },`;
+
+  if (new RegExp(`link:\\s*${literalPattern(item.link)}`).test(body)) {
+    throw new Error(`${item.link} is already in ${exportName}`);
+  }
+
+  if (unit !== undefined) {
+    const head = new RegExp(`text:\\s*${literalPattern(unit)}\\s*,\\s*items:\\s*\\[`).exec(body);
+    if (!head) throw new Error(`no unit titled "${unit}" in ${exportName}`);
+    const itemsOpen = open + head.index + head[0].length - 1;
+    const itemsClose = closingBracket(source, itemsOpen, `unit "${unit}"`);
+    const inner = source.slice(itemsOpen + 1, itemsClose);
+    const lastLine = /(?:^|\n)([ \t]*)\S[^\n]*\s*$/.exec(inner);
+    const closeLine = source.slice(source.lastIndexOf("\n", itemsClose) + 1, itemsClose);
+    const closeIndent = /^[ \t]*/.exec(closeLine)![0];
+    const indent = lastLine ? lastLine[1]! : `${closeIndent}  `;
+    const kept = inner.replace(/\s*$/, "");
+    const comma = kept.trim() === "" || kept.endsWith(",") ? "" : ",";
+    return `${source.slice(0, itemsOpen + 1)}${kept}${comma}\n${indent}${literal}\n${closeIndent}${source.slice(itemsClose)}`;
+  }
+
+  if (!parentLink) throw new Error("addSittingToUnit needs a parent link or a unit title");
+  const row = new RegExp(`(^|\\n)([ \\t]*)(\\{[^{}\\n]*link:\\s*${literalPattern(parentLink)}[^{}\\n]*\\})(,?)([^\\n]*)`).exec(body);
+  if (!row) {
+    throw new Error(
+      `${parentLink} is not in ${exportName}, so the new sitting has no parent unit there; pass --unit "<title>"`,
+    );
+  }
+  const rowStart = open + row.index;
+  const rowEnd = rowStart + row[0].length;
+  const parentRow = `${row[1]}${row[2]}${row[3]},${row[5]}`;
+  return `${source.slice(0, rowStart)}${parentRow}\n${row[2]}${literal}${source.slice(rowEnd)}`;
+}
+
 const FRONT_MATTER_START = /^---\s*$/m;
 
 function remainingBands(markdown: string): Band[] {

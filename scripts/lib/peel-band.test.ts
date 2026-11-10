@@ -1,13 +1,19 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+
+import { REPO_ROOT } from "../../src/repo-paths.js";
 import {
   addAllowlistRow,
+  addSittingToUnit,
   appendObjectToExportedArray,
   peelBand,
   rewriteAnchorRefs,
   rewriteMarkdownLinks,
   setBandFrontMatter,
+  UNIT_EXPORT,
 } from "./peel-band.ts";
 
 const PARENT = `# Word endings
@@ -170,6 +176,106 @@ describe("appendObjectToExportedArray", () => {
     assert.match(two, /join-limits.md/);
     assert.match(two, /Rank joins/);
     assert.match(two, /HoldingSitting\[\] = \[/);
+  });
+});
+
+describe("addSittingToUnit", () => {
+  const source = `export const beginnerUnits: Unit[] = [
+  {
+    text: 'Sounds',
+    items: [
+      { text: 'Phonology', link: '/phonology' },
+      { text: 'Word endings', link: '/word-endings' },
+    ],
+  },
+  {
+    text: "Speaker's view",
+    items: [
+      { text: 'Clause', link: '/clause' },
+      { text: 'Joins', link: '/joins' }
+    ],
+  },
+]
+
+export const beginnerLessons = beginnerUnits.flatMap((u) => u.items)
+
+export const intermediateUnits: Unit[] = [
+  {
+    text: 'Sounds',
+    items: [
+      { text: 'Word shape', link: '/phonotactics' },
+    ],
+  },
+  { text: 'Empty', items: [] },
+]
+`;
+  const item = { text: "Names and titles", link: "/proper-names" };
+  const row = '      { text: "Names and titles", link: "/proper-names" },';
+
+  it("puts the row directly after the parent, in the parent's unit", () => {
+    const next = addSittingToUnit(source, { exportName: "beginnerUnits", item, parentLink: "/phonology" });
+    assert.ok(
+      next.includes(`      { text: 'Phonology', link: '/phonology' },\n${row}\n      { text: 'Word endings', link: '/word-endings' },\n    ],`),
+    );
+    assert.equal(next.length, source.length + row.length + 1);
+  });
+
+  it("adds the missing comma when the parent is an unterminated last row", () => {
+    const next = addSittingToUnit(source, { exportName: "beginnerUnits", item, parentLink: "/joins" });
+    assert.ok(next.includes(`      { text: 'Joins', link: '/joins' },\n${row}\n    ],\n  },\n]`));
+  });
+
+  it("with a unit title, puts the row at the end of that unit of the band", () => {
+    const next = addSittingToUnit(source, {
+      exportName: "intermediateUnits",
+      item,
+      parentLink: "/word-endings",
+      unit: "Sounds",
+    });
+    assert.ok(next.includes(`      { text: 'Word shape', link: '/phonotactics' },\n${row}\n    ],`));
+    assert.ok(next.includes("{ text: 'Word endings', link: '/word-endings' },\n    ],"));
+  });
+
+  it("finds a unit title spelled with either quote style, and fills an empty unit", () => {
+    const quoted = addSittingToUnit(source, { exportName: "beginnerUnits", item, unit: "Speaker's view" });
+    assert.ok(
+      quoted.includes(`{ text: 'Joins', link: '/joins' },\n${row}\n    ],\n  },\n]\n\nexport const beginnerLessons`),
+    );
+    const empty = addSittingToUnit(source, { exportName: "intermediateUnits", item, unit: "Empty" });
+    assert.ok(empty.includes('items: [\n    { text: "Names and titles", link: "/proper-names" },\n  ] },'));
+  });
+
+  it("rejects a parent in another band, an unknown unit, and a repeated sitting", () => {
+    assert.throws(
+      () => addSittingToUnit(source, { exportName: "intermediateUnits", item, parentLink: "/word-endings" }),
+      /pass --unit/,
+    );
+    assert.throws(
+      () => addSittingToUnit(source, { exportName: "beginnerUnits", item, parentLink: "/clause", unit: "Nope" }),
+      /no unit titled "Nope"/,
+    );
+    assert.throws(
+      () =>
+        addSittingToUnit(source, {
+          exportName: "beginnerUnits",
+          item: { text: "Clause", link: "/clause" },
+          parentLink: "/phonology",
+        }),
+      /already in beginnerUnits/,
+    );
+    assert.throws(() => addSittingToUnit(source, { exportName: "advancedUnits", item, unit: "Sounds" }), /missing/);
+  });
+
+  it("edits the real reading-order.ts in place", () => {
+    const real = readFileSync(join(REPO_ROOT, "docs", "grammar", ".vitepress", "lib", "reading-order.ts"), "utf8");
+    const fresh = { text: "A new sitting", link: "/a-new-sitting-for-the-test" };
+    const next = addSittingToUnit(real, { exportName: UNIT_EXPORT.beginner, item: fresh, parentLink: "/joins" });
+    const lines = next.split("\n");
+    const at = lines.findIndex((line) => line.includes(fresh.link));
+    assert.match(lines[at - 1]!, /link: '\/joins'/);
+    assert.equal(/^\s*/.exec(lines[at]!)![0], /^\s*/.exec(lines[at - 1]!)![0]);
+    assert.equal(lines.length, real.split("\n").length + 1);
+    for (const exportName of Object.values(UNIT_EXPORT)) assert.ok(real.includes(`export const ${exportName}`));
   });
 });
 

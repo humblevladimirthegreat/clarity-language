@@ -4,6 +4,10 @@
  * Run: npm run peel-band -- --parent word-endings.md --band intermediate --to proper-names.md --title "Names and titles"
  *      npm run peel-band -- --parent word-endings.md --band intermediate --to proper-names.md --title "Names and titles" --write
  *
+ * The sidebar row goes directly after the parent sitting, in the parent's unit.
+ * `--unit "<title>"` puts it at the end of that unit of the band instead; it is
+ * required when the parent sits in another band.
+ *
  * Dry run prints the new sitting, parent, hash-map rows, sidebar row, and
  * construction homes on retired band fragments. `--write` applies them, then
  * run `npm run cheat-sheet-blocks -- --write` and `npm run build`.
@@ -15,8 +19,10 @@ import { BANDS, type Band } from "../src/lint/learning-order.js";
 import { grammarFile, REPO_ROOT } from "../src/repo-paths.js";
 import {
   addAllowlistRow,
+  addSittingToUnit,
   appendObjectToExportedArray,
   peelBand,
+  UNIT_EXPORT,
 } from "./lib/peel-band.ts";
 import { rewriteRepo } from "./lib/link-rewrite.ts";
 
@@ -25,12 +31,6 @@ const readingOrderPath = join(grammarDir, ".vitepress", "lib", "reading-order.ts
 const allowlistPath = join(REPO_ROOT, "docs", "meta", "procedures", "drill-generation.md");
 const hashPath = join(grammarDir, ".vitepress", "lib", "hash-redirect.ts");
 
-const LESSON_EXPORT: Record<Band, string> = {
-  beginner: "beginnerLessons",
-  intermediate: "intermediateLessons",
-  advanced: "advancedLessons",
-};
-
 
 type Options = {
   parent: string;
@@ -38,6 +38,7 @@ type Options = {
   to: string;
   title: string;
   h1Id?: string;
+  unit?: string;
   write: boolean;
 };
 
@@ -47,6 +48,7 @@ function parseArgs(argv: string[]): Options {
   let to = "";
   let title = "";
   let h1Id: string | undefined;
+  let unit: string | undefined;
   let write = false;
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i]!;
@@ -62,14 +64,15 @@ function parseArgs(argv: string[]): Options {
     } else if (arg === "--to" && argv[i + 1]) to = normalizePage(argv[++i]!);
     else if (arg === "--title" && argv[i + 1]) title = argv[++i]!;
     else if (arg === "--h1-id" && argv[i + 1]) h1Id = argv[++i]!;
+    else if (arg === "--unit" && argv[i + 1]) unit = argv[++i]!;
     else throw new Error(`Unknown argument: ${arg}`);
   }
   if (!parent || !band || !to || !title) {
     throw new Error(
-      'Usage: npm run peel-band -- --parent word-endings.md --band intermediate --to proper-names.md --title "Names and titles" [--h1-id id] [--write]',
+      'Usage: npm run peel-band -- --parent word-endings.md --band intermediate --to proper-names.md --title "Names and titles" [--unit "<title>"] [--h1-id id] [--write]',
     );
   }
-  return { parent, band, to, title, h1Id, write };
+  return { parent, band, to, title, h1Id, unit, write };
 }
 
 function normalizePage(value: string): string {
@@ -100,9 +103,14 @@ function main(): void {
     const dest = row.to === row.page ? `${row.page} (top)` : row.to;
     console.log(`  ${row.page}#${row.hash} → ${dest}`);
   }
-  console.log(
-    `Sidebar: append ${result.holding.page} to ${options.band} (${result.holding.title})`,
-  );
+  const nextReadingOrder = addSittingToUnit(readFileSync(readingOrderPath, "utf8"), {
+    exportName: UNIT_EXPORT[options.band],
+    item: { text: options.title, link: `/${options.to.replace(/\.md$/, "")}` },
+    parentLink: `/${options.parent.replace(/\.md$/, "")}`,
+    unit: options.unit,
+  });
+  const where = options.unit ? `at the end of unit "${options.unit}"` : `after ${options.parent}, in its unit`;
+  console.log(`Sidebar: add ${result.holding.page} to ${options.band} ${where} (${result.holding.title})`);
   console.log("Construction homes on retired band fragments:");
   for (const [from, to] of result.homeMap) console.log(`  ${from} → ${to}`);
   console.log("Update the AGENTS.md Owns line if a job left the parent.");
@@ -117,13 +125,7 @@ function main(): void {
   mkdirSync(dirname(sittingPath), { recursive: true });
   writeFileSync(sittingPath, result.sitting);
   writeFileSync(parentPath, result.parent);
-  writeFileSync(
-    readingOrderPath,
-    appendObjectToExportedArray(readFileSync(readingOrderPath, "utf8"), LESSON_EXPORT[options.band], {
-      text: options.title,
-      link: `/${options.to.replace(/\.md$/, "")}`,
-    }),
-  );
+  writeFileSync(readingOrderPath, nextReadingOrder);
   let hashSource = readFileSync(hashPath, "utf8");
   for (const row of result.hashRedirects) {
     hashSource = appendObjectToExportedArray(hashSource, "hashRedirects", row);

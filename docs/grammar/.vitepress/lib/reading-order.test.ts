@@ -6,12 +6,17 @@ import { describe, it } from 'node:test'
 
 import {
   advancedLessons,
+  advancedUnits,
+  bandLessons,
   beginnerLessons,
+  beginnerUnits,
   cheatSheetSidebar,
   cheatSheetSlug,
   intermediateLessons,
+  intermediateUnits,
   lessonPages,
   levelReviewPages,
+  levelReviews,
   orientation,
   pathPages,
   readingOrder,
@@ -19,6 +24,12 @@ import {
 } from './reading-order.js'
 
 const cheatSheetsDir = join(dirname(fileURLToPath(import.meta.url)), '../../cheat-sheets')
+
+const bands = [
+  { text: 'Beginner', units: beginnerUnits, lessons: beginnerLessons },
+  { text: 'Intermediate', units: intermediateUnits, lessons: intermediateLessons },
+  { text: 'Advanced', units: advancedUnits, lessons: advancedLessons },
+]
 
 describe('pathPages', () => {
   it('is orientation, then each group with its review last', () => {
@@ -35,13 +46,18 @@ describe('pathPages', () => {
     )
   })
 
-  it('keeps each review last in its sidebar group', () => {
-    assert.equal(sidebarGroups[0]!.items.at(-1)?.link, '/review')
-    assert.equal(sidebarGroups[1]!.items.at(-1)?.link, '/review-intermediate')
-    assert.equal(sidebarGroups[2]!.items.at(-1)?.link, '/review-advanced')
-    assert.equal(sidebarGroups[0]!.collapsed, true)
-    assert.equal(sidebarGroups[1]!.collapsed, true)
-    assert.equal(sidebarGroups[2]!.collapsed, true)
+  it('keeps each review last in its sidebar group, outside every unit', () => {
+    for (const [index, group] of sidebarGroups.entries()) {
+      const review = levelReviews[index]!
+      assert.equal(group.collapsed, true)
+      assert.deepEqual(group.items.at(-1), review)
+      const subGroups = group.items.slice(0, -1)
+      assert.ok(subGroups.every((item) => 'items' in item))
+      for (const unit of bands[index]!.units) {
+        assert.ok(!unit.items.some((item) => item.link === review.link), `${review.link} sits in unit ${unit.text}`)
+      }
+      assert.deepEqual(bandLessons[index]!.items.at(-1), review)
+    }
   })
 
   it('walks Beginner sittings, then Intermediate, then Advanced', () => {
@@ -56,6 +72,53 @@ describe('pathPages', () => {
     assert.equal(pages.slice(intermediateEnd + 1, advancedEnd).length, advancedLessons.length)
     assert.ok(intermediateEnd > beginnerEnd)
     assert.ok(advancedEnd > intermediateEnd)
+  })
+})
+
+describe('units', () => {
+  it('has at least one unit per band, each titled and non-empty', () => {
+    for (const band of bands) {
+      assert.ok(band.units.length > 0, `${band.text} has no units`)
+      for (const unit of band.units) {
+        assert.ok(unit.text.trim() !== '', `${band.text} has an untitled unit`)
+        assert.ok(unit.items.length > 0, `unit ${unit.text} is empty`)
+      }
+      const titles = band.units.map((unit) => unit.text)
+      assert.equal(new Set(titles).size, titles.length, `${band.text} repeats a unit title`)
+    }
+  })
+
+  it('puts every sitting in exactly one unit', () => {
+    const links = bands.flatMap((band) => band.units.flatMap((unit) => unit.items.map((item) => item.link)))
+    const repeated = links.filter((link, index) => links.indexOf(link) !== index)
+    assert.deepEqual(repeated, [])
+    const sittings = readingOrder
+      .map((item) => item.link)
+      .filter((link) => !orientation.some((item) => item.link === link))
+      .filter((link) => !levelReviews.some((item) => item.link === link))
+    assert.deepEqual(links, sittings)
+  })
+
+  it('keeps the flat lists equal to the flattened units', () => {
+    for (const [index, band] of bands.entries()) {
+      const flat = band.units.flatMap((unit) => unit.items)
+      assert.deepEqual(band.lessons, flat)
+      assert.deepEqual(bandLessons[index]!.text, band.text)
+      assert.deepEqual(bandLessons[index]!.items, [...flat, levelReviews[index]!])
+    }
+    assert.deepEqual(readingOrder, [...orientation, ...bandLessons.flatMap((band) => band.items)])
+  })
+
+  it('nests each unit in the sidebar as a collapsed sub-group with no number', () => {
+    for (const [index, band] of bands.entries()) {
+      const group = sidebarGroups[index]!
+      assert.equal(group.text, band.text)
+      assert.deepEqual(
+        group.items.slice(0, -1),
+        band.units.map((unit) => ({ text: unit.text, collapsed: true, items: unit.items })),
+      )
+      for (const unit of band.units) assert.doesNotMatch(unit.text, /\d/)
+    }
   })
 })
 
