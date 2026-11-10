@@ -37,7 +37,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `awan` | *you* (the listener) | [Special pronouns](/pronouns#special-pronouns) | B |
 | `ayan` | *we* (you and I) | [Special pronouns](/pronouns#special-pronouns) | B |
 | `eyen` | *one*, generic *you*, *people* | [Generic pronoun](/pronouns#generic-pronoun) | B |
-| `umen` | *someone* | [Special pronouns](/pronouns#special-pronouns) | B |
 | `uwen` | *I* (the speaker) | [Special pronouns](/pronouns#special-pronouns) | B |
 | `xahol` | *it follows that* | [Sentence linkers](/sentence-linkers#sentence-linkers) | I |
 | `xahom` | *therefore* | [Sentence linkers](/sentence-linkers#sentence-linkers) | I |
