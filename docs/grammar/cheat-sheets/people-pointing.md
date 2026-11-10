@@ -61,7 +61,7 @@ A [tag](/tag-pronouns#tag-pronouns) is a label you choose (role letter, `w`, vow
 |-----|---------|---------|-------|
 | Assign: tag **-l** after a phrase | `zodozel zwal` | *a dog, call it A* | I |
 | A placeholder, no one in particular | `zwal` | *suppose A* | I |
-| [Bound](/universals-domains#bound-tags): tag **-l** after a `zual` / `zuam` / `zul` fence, each member in turn, to the end of its sentence | `zual gogozel zwal` | *every cat, each one A* | I |
+| [Bound](/universals-domains#bound-tags): tag **-l** after a `zual` / `zuam` / `zul` fence, each member in turn, to the end of its sentence and the sentences its stand-ins point to | `zual gogozel zwal` | *every cat, each one A* | I |
 | Recall | `zwar` / `dwar` / `bwar` | *A* | I |
 | A pseudonym: a real person, name kept back (alone, or after a person phrase) | `zwan` / `dwan` / `bwan` | *a friend, call her A* | I |
 | A's part in the latest event | `zwam` / `dwam` / `bwam` | *what A did* | I |

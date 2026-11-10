@@ -97,7 +97,7 @@ l m r n
 l m r n
 ├── reference — which referent relative to what is already in play
 │     ├── role pointer          -l a new person · -m the part · -r the same person
-│     ├── tag                   -l assign / someone A · -m what A did · -r recall · -n recall of a name
+│     ├── tag                   -l assign / someone A · -m what A did · -r recall · -n a pseudonym
 │     └── -r only
 │           ├── whole-stem resume
 │           ├── hook resume (there / as I said)

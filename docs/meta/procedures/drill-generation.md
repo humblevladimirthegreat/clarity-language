@@ -239,7 +239,7 @@ Status: **exists** = do not overwrite; **generate** = to write (the build fails 
 | 6 | `speech-moves.md` | **exists** | a theater foyer | Turn start; call a person; conventional interjection; statement / question / command / prohibition; omit recoverable **`yal`**; `/x/` continue vs `/y/` turn; `/x/` linker may start the next written sentence after `.` | Top up the existing checkpoint with a `/x/` continue item: it moved here from `dependents.md`, and `xahom`'s core cell now names this checkpoint, so list it under **New words**. Recycle clause bodies and house names; no hooks, polar particle, soft forms, or numbers |
 | 7 | `dependents.md` | **exists** | a guard post | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`thahum` / `hezem` / `herom` / `harum` / `habam` / `halam` / `thovam` **`blarl`**; *despite* = **`hezem`** + `/b/` noun) | Do not use nested **`blarl`**, letter **-r** mechanism. Recycle speech-moves **`yel`/`yol`/`yul`** and `/x/` linkers |
 | 13 | `relations.md` | **exists** | a tool crib | Hosted pair for likeness **`hewem`**, exchange **`heham`**, proxy **`hanem`** | Recycle clause hosted `/b/` and hooks extra-noun. No *between*, no of-relations, no **`blarl`**. Not **`hahebam`** |
-| 8 | `pronouns.md` | **exists** | a kitchen | Whole-stem **-r**; role pointers (`zwuzer`, `dwuder`, `dwuzor`, `zwuzar`); specials **`uwe` / `awa` / `aya` / `ume`** (when the *role* is the point); inclusive *we* **`aya`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
+| 8 | `pronouns.md` | **exists** | a kitchen | Whole-stem **-r**; role pointers (`zwuzer`, `dwuder`, `dwuzor`, `zwuzar`); specials **`uwe` / `awa` / `aya`** (when the *role* is the point); inclusive *we* **`aya`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
 | 8 | `plurality.md` | **exists** | a picnic | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aya`** as the *not this* for inclusive *we*. **`uwe`/`awa`** only on person-role items |
 | 9 | `predication.md` | **exists** | a passport office | Classification `z… g…` vs kind *noun* `zodozel`; identity **`gorel` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **IDENTITY**; page-example roots (`azawdavraga` / `uzuda`) OK if already taught in this stage |
 | 10 | `joins.md` | **exists** | a market stall | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / single-item / standalone starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask), and **-rx** as *some of them* | No hooks, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
@@ -384,7 +384,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Lexicalized stand-ins (`varn` / `vaen`) | `stand-in-roles.md` Advanced |
 | Nested **`blarl`** | `nested-dependents.md` Advanced |
 | **-l** / **-m** / **-n** as a *choice* on a citation | `word-endings.md` Beginner |
-| Whole-stem **-r** and role pointers; **`uwe`/`awa`/`aya`/`ume`** | `pronouns.md` Beginner |
+| Whole-stem **-r** and role pointers; **`uwe`/`awa`/`aya`** | `pronouns.md` Beginner |
 | Associative **-x** | `plurality.md` Beginner |
 | **IDENTITY** `gorel` | `predication.md` Beginner |
 | Phrase joins, **`zal`/`zam`/`zol`**, negation **`u`** | `joins.md` Beginner |

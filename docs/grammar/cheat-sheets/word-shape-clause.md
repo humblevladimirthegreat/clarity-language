@@ -138,7 +138,7 @@ Calls and sentence glue use [`/y/`](/speech-moves) and [`/x/`](/dependents).
 | [Subject, object, verb](/clause#direct-object-d) | `zodozel dogozel vayebel.` | *A dog sees a cat.* | B |
 | [`/h/` and `/th/` go anywhere](/clause#adverbs-h) | `zodozel hadurom vowurol.` | *A dog walks hastily.* | B |
 | [Leave out the subject](/no-subject#no-subject): nobody is named as the doer | `dazozon vayebel.` | *Azozon was seen.* | B |
-| [Moving words changes nothing](/clause#direct-object-d) | `dogozel zodozel vayebel.` | *A dog sees a cat.* | B |
+| [Moving words keeps who did what](/clause#direct-object-d) | `dogozel zodozel vayebel.` | *A dog sees a cat.* | B |
 | [Default order by speech act](/speech-moves#act-word-order): question verb second, command verb first, prohibition verb late | `yel zazozon vabuvul dubogal.` · `yol vabuvul dubogal.` · `yul dubogal vabuvul.` | *Does Azozon punch the box?* · *Punch the box!* · *Don't punch the box.* | B |
 | [Fill-ask: blank first](/questions#fill-ask) | `yel dar zazozon vayebel.` | *What does Azozon see?* | B |
 | [Contrast one word with `&`](/tone-marks#emphasis-and-clefts) | `&zazozon dogozel vayebel.` · `zazozon &dogozel vayebel.` · `zazozon dogozel &vayebel.` | *It was Azozon who saw the cat.* · *It's a cat that Azozon sees.* (not something else) · *Azozon sees the cat.* (rather than doing something else to it) | I |

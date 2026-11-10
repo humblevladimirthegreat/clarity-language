@@ -1,10 +1,10 @@
 # Units
 
-**Status:** PROPOSED, 2026-11-10. User decisions, 2026-11-10: units are cut by file size, not by taught-line counts; phase 1 is the sidebar grouping only and ships alone; later phases are not scheduled; units are collapsible; units are not numbered for now. Revised 2026-11-10 after a dependency analysis (`lint:ageben -- --deps`): the unit table below replaces the first draft, and its order is the one the analysis supports. User decisions on the revision, 2026-11-10: `questions` moves up into *Linking and asking*; *Sounds and words* merges into *First words and sentences*; the small Intermediate units (*Fuller sentences*, *How you know*) stay as they are. Second revision 2026-11-10, after a review: vocabulary dependencies are measured ([vocabulary](#vocabulary)), `llms-txt.ts` joins step 1, and the planner gains a review-word count (step 2). User decisions on the second revision, 2026-11-10: `dependents` stays 6th and closes *First words and sentences*; `knowing` moves into *Pointing and describing*, leaving *Wanting and being able* as a two-sitting unit; *Counting and comparing* follows *Where, when, how often*; the FORMER row on `bars` moves to `residue-and-former.md`.
+**Status:** PROPOSED, 2026-11-10. User decisions, 2026-11-10: units are cut by file size, not by taught-line counts; phase 1 is the sidebar grouping only and ships alone; later phases are not scheduled; units are collapsible; units are not numbered for now. Revised 2026-11-10 after a dependency analysis (`lint:ageben -- --deps`): the unit table below replaces the first draft, and its order is the one the analysis supports. User decisions on the revision, 2026-11-10: `questions` moves up into *Linking and asking*; *Sounds and words* merges into *First words and sentences*; the small Intermediate units (*Fuller sentences*, *How you know*) stay as they are. Second revision 2026-11-10, after a review: vocabulary dependencies are measured ([vocabulary](#vocabulary)), `llms-txt.ts` joins unit U1, and the planner gains a review-word count (U2). User decisions on the second revision, 2026-11-10: `dependents` stays 6th and closes *First words and sentences*; `knowing` moves into *Pointing and describing*, leaving *Wanting and being able* as a two-sitting unit; *Counting and comparing* follows *Where, when, how often*; the FORMER row on `bars` moves to `residue-and-former.md`. Third revision 2026-11-10: the plan runs through subagents ([implementation plan](#implementation-plan)), and the table was rechecked with `plan-units` on the tree after `tags-and-logic` W1 to W6. The breaks are unchanged, sizes are updated, and *Lists of things* is now pinned after *Keeping track of who* ([what forced the changes](#what-forced-the-changes)). Ready to implement; no unit has run.
 
 **Related:** [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts), [llms-txt.ts](../../scripts/lib/llms-txt.ts), [core-vocabulary.ts](../../src/core-vocabulary.ts), [lexicon.md](../meta/procedures/lexicon.md), [reading-order.test.ts](../grammar/.vitepress/lib/reading-order.test.ts), [config.ts](../grammar/.vitepress/config.ts), [learning-levels.md](../meta/learning-levels.md), [restructure-sittings.md](../meta/procedures/restructure-sittings.md), [grammar-docs.md](../meta/grammar-docs.md), [lint-ageben-docs.ts](../../scripts/lint-ageben-docs.ts), [construction-order.ts](../../src/lint/construction-order.ts), [plan-units.ts](../../scripts/plan-units.ts), [unit-plan.ts](../../src/lint/unit-plan.ts), [lint-forward-links.ts](../../scripts/lint-forward-links.ts), [lint-sidebar-pages.ts](../../scripts/lint-sidebar-pages.ts), [peel-band.ts](../../scripts/peel-band.ts), [peel-headings.ts](../../scripts/peel-headings.ts), [constructions.ts](../../src/parse/constructions.ts)
 
-**Depends on:** none.
+**Depends on:** none. **Order:** independent of `tags-and-logic.md`, but the two never run at the same time: both take a `verify` baseline and both edit checkpoints. Take this run's baseline on a tree where that proposal's work is committed.
 
 **Design authority:** *none*. Phase 1 groups and reorders sittings and moves one table row between two pages; it adds, removes, and changes no form or reading.
 
@@ -30,7 +30,7 @@ Each band is one long flat list in the sidebar: 37 Beginner sittings, 63 Interme
 
 ## What a unit is
 
-These principles go into [learning-levels.md](../meta/learning-levels.md) in phase 1 (step 6), so they outlive this proposal.
+These principles go into [learning-levels.md](../meta/learning-levels.md) in phase 1 (unit U6), so they outlive this proposal.
 
 1. **Within one band, consecutive.** A unit never crosses a band boundary, and its sittings are adjacent in the reading order. The level review stays last in its band, outside every unit.
 2. **Named for what the learner can do.** The title is a plain-English capability or theme (*Asking*, *Where and when*), not a subsystem name or a term from [terminology.md](../grammar/terminology.md).
@@ -73,6 +73,8 @@ Counts are uses plus links. No reorder of the first-draft Beginner units could w
 - `dated-channel` uses `bars` (1) and links to `measures-and-percent` and `residue-and-former`. It moves from *How you know* to *Surprise and what's not so*.
 - `topic` sits inside a loop: it uses `stand-in-vowels` (2) and links to `sentence-linkers`, while `quote-contents` (5), `spans-as-words` (2), and `collectives` (1) use `topic`. It moves into *Across sentences*. At 59k that unit was too big, so it splits: *Across sentences* keeps the linkers, hinges, stand-ins, and `topic`; `scope-islands`, `spans-as-words`, and `quote-contents` become *Quoting and mentioning*.
 
+- `universals-domains` uses `tag-pronouns` (83 uses, 3 links), since `tags-and-logic` W4 put [bound tags](../grammar/intermediate/universals-domains.md#bound-tags) on it: a tag after an *every* or *no* fence. So *Lists of things* has to follow *Keeping track of who*. The table already had it there, so nothing moves, but the pair is no longer free to trade places. Six more sittings link to `tag-pronouns` (`topic`, `spans-as-words`, `quote-contents`, `permission-consent`, `holder`, `singability`); only the `topic` link points later.
+
 **Advanced**
 
 - `hooked-joins` (in *Deep structure*) uses `hook-compounds` (2 uses, 2 links). Putting *Deep structure* last clears it. *Number values* and *Number-built words* depend on each other heavily (`special-values` alone has 104 uses and links with unit 4), so they stay adjacent.
@@ -87,7 +89,9 @@ The report misses one kind of dependency. A checkpoint's **Review** bank may lis
 | Intermediate | 4 | One each on `cause`, `scope-islands`, `evidentiality`, and `locative-relations`. |
 | Advanced | 0 | |
 
-Each one is fixed by moving the root's `core` cell to the earliest checkpoint that reviews it ([order](#order), rule 4): ten cells in all, so none of them blocks the table. The first revision's table leaked 20 in Beginner; seven of those went when `dependents` stayed in the first unit. Step 2 of the plan adds the count to `plan-units` so that a later reorder sees it.
+Each one is fixed by moving the root's `core` cell to the earliest checkpoint that reviews it ([order](#order), rule 4): ten cells in all, so none of them blocks the table. The first revision's table leaked 20 in Beginner; seven of those went when `dependents` stayed in the first unit. Unit U2 of the plan adds the count to `plan-units` so that a later reorder sees it.
+
+These counts were taken before `tags-and-logic` W5 and W6, which rewrote or added Practice items on `joins`, `tag-pronouns`, and `universals-domains`. The counts may be off by a word or two on those three checkpoints. U2's gate measures them again, and U4 and U5 work from that measurement, not from this table.
 
 ### Why not a solver
 
@@ -95,11 +99,11 @@ A mixed-integer solver (HiGHS, for example) that also chose each sitting's unit 
 
 ### Limits
 
-The report sees only dependencies that show up as a traced construction or a link (and, after step 2, a Review word). A page that relies on an earlier page's idea in prose, with no Ageben example and no link, is invisible to it. Edges into `phonology` and `word-endings` come from parser productions that nearly every example uses; they are real but never constrain order, since those sittings come first. Homes are registry choices (`constructions.ts`): a family's home is where it is first taught today, so moving a sitting earlier than a family's home can need the anchor moved too (for example mid-word `x` if `compounds` ever came before `sakes`).
+The report sees only dependencies that show up as a traced construction or a link (and, after U2, a Review word). A page that relies on an earlier page's idea in prose, with no Ageben example and no link, is invisible to it. Edges into `phonology` and `word-endings` come from parser productions that nearly every example uses; they are real but never constrain order, since those sittings come first. Homes are registry choices (`constructions.ts`): a family's home is where it is first taught today, so moving a sitting earlier than a family's home can need the anchor moved too (for example mid-word `x` if `compounds` ever came before `sakes`).
 
 ## Unit table
 
-Sizes are combined file sizes on 2026-11-10. Unit order and sitting order inside each unit are the analysed order, except for one Beginner unit placed by decision (noted under its table). Sittings inside a unit keep their current relative order.
+Sizes are combined file sizes on 2026-11-10, after `tags-and-logic` W6. Unit order and sitting order inside each unit are the analysed order, except for one Beginner unit placed by decision (noted under its table). Sittings inside a unit keep their current relative order.
 
 ### Beginner
 
@@ -107,7 +111,7 @@ Sizes are combined file sizes on 2026-11-10. Unit order and sitting order inside
 |---|------|----------|------|
 | 1 | First words and sentences | phonology, word-endings, clause, no-subject, speech-moves, dependents | 52k |
 | 2 | Pointing and describing | pronouns, plurality, predication, knowing, left-bound-adjectives | 50k |
-| 3 | Linking and asking | joins, questions, clause-sequence | 35k |
+| 3 | Linking and asking | joins, questions, clause-sequence | 36k |
 | 4 | Why and what for | spans, causation, sakes, fault, ought-for-a-sake | 48k |
 | 5 | Where, when, how often | hooks, restrictors, extra-noun-hooks, here-there, already-still-yet | 43k |
 | 6 | Counting and comparing | numbers, comparatives, digit-strings | 23k |
@@ -135,8 +139,8 @@ Units 1 and 7 are just over 50k. *Wanting and being able* (14k, two sittings) an
 | 2 | Fuller sentences | longer-chains, very-and-slightly, label-reach | 14k |
 | 3 | Conversation craft | more-turn-words, speech-manner, tone-marks, polar-inventory, fill-ask-roles | 42k |
 | 4 | Across sentences | sentence-linkers, more-hinges, stand-in-vowels, topic | 39k |
-| 5 | Keeping track of who | resume-sense, tag-pronouns, collectives | 32k |
-| 6 | Lists of things | list-structure, rank-joins, set-joins, universals-domains | 38k |
+| 5 | Keeping track of who | resume-sense, tag-pronouns, collectives | 34k |
+| 6 | Lists of things | list-structure, rank-joins, set-joins, universals-domains | 43k |
 | 7 | Joining actions | verb-and-stance-joins, list-verbs, join-relations | 29k |
 | 8 | Causes and stakes | because-and-iff, cause, for-a-sake | 22k |
 | 9 | Feelings and choices | feelings, permission-consent, try | 30k |
@@ -151,11 +155,11 @@ Units 1 and 7 are just over 50k. *Wanting and being able* (14k, two sittings) an
 
 Still broken in this order:
 
-- `bars` uses an overlay homed on `residue-and-former` (1 use). Step 4 clears it by moving one table row ([order](#order)).
+- `bars` uses an overlay homed on `residue-and-former` (1 use). U3 clears it by moving one table row ([order](#order)).
 - `topic` links to `tag-pronouns`, and `ranges` links to `locative-relations`.
 - 4 Review words leak ([vocabulary](#vocabulary)).
 
-*Conversation craft*, *Across sentences*, and *Keeping track of who* are pinned to slots 3 to 5. Past them the order is loose: 3,264 unit orders tie for the fewest broken uses and links, and the planner keeps the table's order among ties. So the order of units 6 to 17 is largely an editorial choice.
+*Conversation craft*, *Across sentences*, and *Keeping track of who* are pinned to slots 3 to 5, and *Lists of things* has to come after *Keeping track of who* (bound tags). Past that the order is loose: many unit orders tie for the fewest broken uses and links, and the planner keeps the table's order among ties. So the order of units 7 to 17 is largely an editorial choice.
 
 Unit 2 (14k) is small, and unit 12 is two sittings. Both stay: each is a coherent theme with no neighbour it fits by theme. Splitting `evidentiality` (a non-goal here) would fix unit 12 properly later.
 
@@ -163,10 +167,10 @@ Unit 2 (14k) is small, and unit 12 is two sittings. Both stay: each is a coheren
 
 | # | Unit | Sittings | Size |
 |---|------|----------|------|
-| 1 | Fine shades of knowing | as-of, stance-bars, universality, usually-vs-must | 32k |
-| 2 | Number values | stacked-markers, special-values | 25k |
-| 3 | Number-built words | initials, open-ranges, generations, numeric-derivation | 39k |
-| 4 | Building words and voice | singability, hook-compounds, root-tails | 26k |
+| 1 | Fine shades of knowing | as-of, stance-bars, universality, usually-vs-must | 33k |
+| 2 | Number values | stacked-markers, special-values | 26k |
+| 3 | Number-built words | initials, open-ranges, generations, numeric-derivation | 41k |
+| 4 | Building words and voice | singability, hook-compounds, root-tails | 27k |
 | 5 | Deep structure | stand-in-roles, nested-dependents, join-limits, named-phrases, hooked-joins, span-nesting | 39k |
 
 Nothing is broken in this order. Unit 2 is two sittings: `special-values.md` (20k) carries it, and folding it into unit 3 would make a 64k unit.
@@ -217,20 +221,79 @@ A checkpoint item that uses a form now taught later is dropped, not rewritten, p
 
 ## Implementation plan
 
-Phase 1 runs in one session with no subagents. It touches `reading-order.ts` and its test, the two peel scripts, `llms-txt.ts`, the planner and its test, and the meta notes in step 6, plus whatever small prose and `core` fixes the reorder needs. If the user says to stop partway, the agent [consolidates the proposal](../meta/procedures/proposals.md#consolidate-on-stop) before the session ends. Findings that change the plan [stop and alert](../meta/procedures/proposals.md#stop-and-alert).
+Phase 1 runs through subagents, per [running with subagents](../meta/procedures/proposals.md#running-with-subagents): one fresh subagent per unit, in sequence. The orchestrator writes each brief, runs the gates, and commits. If the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate-on-stop) before the session ends. Findings that change the plan [stop and alert](../meta/procedures/proposals.md#stop-and-alert).
+
+**Every subagent runs on `fable`.** The orchestrator passes `model: "fable"` and the unit's effort on every launch, including the mechanical units and any fresh subagent started for what a stopped one left. A promotion makes `fable` cheap for now, so there is no saving in a smaller model.
 
 ### Phase 1: units in the sidebar
 
-0. **Baseline.** `npm run verify -- --baseline`.
-1. **Structure, no reorder.** Add the `Unit` type and unit arrays to `reading-order.ts`, derive the flat lists and `bandLessons`, and nest `sidebarGroups`. In this step, each band temporarily holds one unit containing its current list, so the reading order is unchanged. Point `readingOrder` and `llmsSections` at `bandLessons` ([data](#data)). Update `reading-order.test.ts`: units are non-empty, every sitting appears in exactly one unit, flat lists equal the flattened units, and the review is last and outside every unit. Update `peel-band` and `peel-headings` per [tools](#tools-that-append-sidebar-rows). Gate: `npm run verify` shows no new errors, and `llms.txt` is byte-identical to the baseline build's. Commit.
-2. **Vocabulary in the planner.** Extend `plan-units` ([unit-plan.ts](../../src/lint/unit-plan.ts), its test, and the script). It reads the checkpoints (`stageCheckpoints`) and the `core` column (`storedCore`) and adds one edge per Review root, from the checkpoint's page to the page of the root's `core` cell. Review words are a third count, ranked between uses and links, and `--suggest` uses it. When the table's order is not the best order, the script prints the table order's counts and breaks as well, since the table may keep an order for a reason the counts don't see. Gate: tests pass, and on the unit table the script reports the [vocabulary](#vocabulary) counts for the table's order (12, 4, 0), give or take pages edited since. Commit.
-3. **Recheck the dependency map.** Run `npm run plan-units -- --units docs/proposals/units.md --suggest` on the current tree. The table order's breaks should be the ones the table lists. For Beginner the script names a different best order, with *Counting and comparing* after *Who does what to whom*; that is expected, and the table's order stands. It stops on a sitting missing from the table or in two units. A new break means a sitting was added, moved, or edited since 2026-11-10; fit it in with the [fix order](#order). A sitting not in the table (a new peel, a band move) goes in the unit of its parent or neighbour.
-4. **Order and fill units.** Write the unit table into `reading-order.ts`, in its order. Move the FORMER row from `bars.md` to `residue-and-former.md` ([order](#order)). Fix the other listed breaks with the [fix order](#order), and update the unit table in this proposal so it matches what shipped.
-5. **Lints green.** `npm run build` and `npm test`. Fix forward links, Review words, and checkpoint leaks as the [order](#order) section allows; log the rest. Gate: `npm run verify` shows no new errors.
-6. **Meta notes.** In [learning-levels.md](../meta/learning-levels.md), add a `## Units` section with the five [principles](#what-a-unit-is), and a line saying a reorder or a new unit table is checked with `npm run plan-units`. In [order inside a band](../meta/learning-levels.md#order-inside-a-band), change tie-break 3 to say units are kept contiguous and ordered by dependency. In [how to apply](../meta/learning-levels.md#how-to-apply), the dispatch line says an in-band reorder edits *the three sidebar lists (no scoring, no solver)*: change it to name the unit arrays and say the planner checks a table but does not choose units. Add the peel-tool line to [restructure-sittings.md](../meta/procedures/restructure-sittings.md). Group the generated heading map (`docs/meta/grammar-map.md`, from `npm run grammar-map -- --write`) by unit within each band. In `AGENTS.md`, extend the one sentence under **Grammar** that says where stage pages sit, so it also says they are grouped into units in `reading-order.ts`. Leave the topic-family table unchanged, and don't list units in `AGENTS.md` ([agents-md](../meta/agents-md.md): no duplicate indexes, nothing a restructure would force you to edit). Commit.
-7. **Check the site.** Run the dev server and confirm the nested sidebar, prev/next across unit boundaries, and that the active page's unit opens.
+| ID | Items | Agent | Model / effort | May edit |
+|----|-------|-------|----------------|----------|
+| U1 | **Structure, no reorder.** Add the `Unit` type and unit arrays to `reading-order.ts`, derive the flat lists and `bandLessons`, and nest `sidebarGroups` ([data](#data), [sidebar](#sidebar)). Each band temporarily holds one unit containing its current list, so the reading order is unchanged. Point `readingOrder` and `llmsSections` at `bandLessons`. Update `reading-order.test.ts`: units are non-empty, every sitting appears in exactly one unit, flat lists equal the flattened units, and the review is last and outside every unit. Update `peel-band` and `peel-headings` per [tools](#tools-that-append-sidebar-rows). | `proposal-worker` | `fable` / `medium` | `docs/grammar/.vitepress/lib/reading-order.ts` and its test, `docs/grammar/.vitepress/config.ts`, `scripts/lib/llms-txt.ts`, `scripts/peel-band.ts`, `scripts/peel-headings.ts`, and their tests |
+| U2 | **Vocabulary in the planner.** Extend `plan-units`. It reads the checkpoints (`stageCheckpoints`) and the `core` column (`storedCore`) and adds one edge per Review root, from the checkpoint's page to the page of the root's `core` cell. Review words are a third count, ranked between uses and links, and `--suggest` uses it. When the table's order is not the best order, the script prints the table order's counts and breaks as well, since the table may keep an order for a reason the counts don't see. Report the Review-word counts and the leaking words per band for the table's order. | `proposal-worker` | `fable` / `medium` | `src/lint/unit-plan.ts`, `src/lint/unit-plan.test.ts`, `scripts/plan-units.ts` |
+| U3 | **Order and fill units.** Write the [unit table](#unit-table) into `reading-order.ts`, in its order. Move the FORMER row from `bars.md` to `residue-and-former.md` ([order](#order)). Rewrite or drop the five forward links the table lists, per fix 3 in [order](#order): `sakes` to `restrictors`, `knowing` to `sakes`, `comparatives` to `relations`, `topic` to `tag-pronouns`, `ranges` to `locative-relations`. This unit ends red by design ([gates](#gates)): report every error `verify` still shows, grouped as Review-word leaks, checkpoint items that use a later form, and anything else. | `proposal-worker` | `fable` / `high` | `reading-order.ts` and its test; `bars.md`, `residue-and-former.md`, `sakes.md`, `knowing.md`, `comparatives.md`, `topic.md`, `ranges.md` (the row and the links only) |
+| U4 | **Beginner vocabulary.** Clear each Beginner Review-word leak and checkpoint leak from U3's report with fixes 4 and 5 in [order](#order): move the root's `core` cell, move its bank rows to match, or drop the item. Read [core vocabulary column](../meta/procedures/lexicon.md#core-vocabulary-column) first. | `proposal-worker` | `fable` / `medium` | the `core` column of `data/lexicon-published.csv` and `data/lexicon-compounds.csv`; `### Practice` word banks and dropped items on the Beginner pages U3's report names; their drill allowlist rows |
+| U5 | **Intermediate and Advanced vocabulary.** The same as U4, for the other two bands. Ends green. | `proposal-worker` | `fable` / `medium` | as U4, on the Intermediate and Advanced pages U3's report names |
+| U6 | **Meta notes.** In [learning-levels.md](../meta/learning-levels.md), add a `## Units` section with the five [principles](#what-a-unit-is), and a line saying a reorder or a new unit table is checked with `npm run plan-units`. In [order inside a band](../meta/learning-levels.md#order-inside-a-band), change tie-break 3 to say units are kept contiguous and ordered by dependency. In [how to apply](../meta/learning-levels.md#how-to-apply), the dispatch line says an in-band reorder edits *the three sidebar lists (no scoring, no solver)*: change it to name the unit arrays and say the planner checks a table but does not choose units. Add the peel-tool line to [restructure-sittings.md](../meta/procedures/restructure-sittings.md). Change the heading-map generator so the map is grouped by unit within each band, but do not run it with `--write`. | `proposal-worker` | `fable` / `medium` | `docs/meta/learning-levels.md`, `docs/meta/procedures/restructure-sittings.md`, `scripts/grammar-map.ts` and its test |
 
-Commits are made per [commits](../meta/procedures/proposals.md#commits), each with `[skip-cd]`: one after step 1, one after step 2, and one after steps 4 to 6.
+Order: U1, U2, the orchestrator's recheck, U3, U4, U5, U6, then the orchestrator's closing steps. U3 to U5 are one workstream, **W3**, with one commit: the reorder and the `core` moves it forces are only green together.
+
+**Orchestrator's own steps** (no subagent):
+
+- **Recheck, after U2.** Run `npm run plan-units -- --units docs/proposals/units.md --suggest 2>&1 | tail -80`. The table order's breaks should be the ones the table lists, plus U2's Review-word counts. For Beginner the script names a different best order, with *Counting and comparing* after *Who does what to whom*; that is expected, and the table's order stands. It stops on a sitting missing from the table or in two units. A sitting not in the table (a new peel, a band move) goes in the unit of its parent or neighbour. A new use break is fitted in with fixes 1 and 2 in [order](#order) and recorded in the unit table before U3 starts; if that would move more than one sitting, or change a unit's theme, [stop and alert](../meta/procedures/proposals.md#stop-and-alert).
+- **After U5.** Update the unit table here so it matches what shipped.
+- **After U6.** In `AGENTS.md`, extend the one sentence under **Grammar** that says where stage pages sit, so it also says they are grouped into units in `reading-order.ts`. Leave the topic-family table unchanged, and don't list units in `AGENTS.md` ([agents-md](../meta/agents-md.md): no duplicate indexes, nothing a restructure would force you to edit). Commit, then run `npm run grammar-map -- --write` and commit its output alone.
+- **Check the site.** Run the dev server and confirm the nested sidebar, prev/next across unit boundaries, and that the active page's unit opens. If the session can't drive a browser, ask the user to look.
+- **Close.** Phase 1 is the whole scheduled plan. Cut this proposal down to [later phases](#later-phases-not-scheduled), set Status to partially implemented, and `git mv` it to `partially-implemented/`.
+
+### Rule digest (pasted into every brief)
+
+> - Ageben only; current forms only; no former-name or *used to be* notes ([present the current language only](../meta/grammar-docs.md#present-the-current-language-only)).
+> - This proposal adds, removes, and changes no form or reading. If a fix seems to need an example rewritten with other forms, a section moved, or a parser change, don't make it: log it in your report with options and a recommendation, skip the item, and carry on.
+> - A unit is a named run of consecutive sittings inside one band. The level review stays last in its band, outside every unit. Units have no numbers in the sidebar.
+> - The flat exports of `reading-order.ts` (`beginnerLessons`, `intermediateLessons`, `advancedLessons`, `readingOrder`, `lessonPages`, `pathPages`, `pageRelPath`) keep their shapes and meaning. Don't edit their readers to suit a new shape; only `readingOrder` and `llmsSections` move to `bandLessons`.
+> - Page titles, URLs, file paths, and `band:` front matter don't change. No sitting changes band.
+> - A forward link is fixed in prose: rewrite or drop it per [teach now](../meta/grammar-docs.md#teach-now-dont-preview-later). Never retarget links by hand after a move; nothing in this proposal moves a heading.
+> - A leaking Review word: move the root's `core` cell to the earliest checkpoint that reviews it, and move its bank rows to match (**New words** there, **Review** at its old home). No item changes. If that puts more than five New words on the earlier checkpoint, or trips the look-alike check, drop the item and its bank row instead, as long as the checkpoint keeps three Review roots.
+> - A checkpoint item that uses a form now taught later is dropped, not rewritten ([how to apply](../meta/learning-levels.md#how-to-apply)).
+> - Stage pages never link to `say-*.md` recipes, and nothing links to a file under `docs/proposals/`.
+> - Cheat-sheet tables between `<!-- generated -->` markers and `docs/meta/grammar-map.md` are never edited by hand; report that a regeneration is needed and stop there.
+> - Don't edit `AGENTS.md` or `docs/proposals/units.md`; report the change needed. Don't commit.
+> - Other work in the tree is not yours: don't edit `src/parse/*`, the tag pages beyond a link this unit names, or any file outside your unit's list. If a fix needs one, report it.
+> - Read slices: list headings first (`grep -n '^#'`), read only the ranges you edit.
+> - Stop and alert (report and stop; do not work around): a premise no longer holds; later units would need a different design, order, or pages; skipping would leave later work on a broken state; enough is skipped that the goals cannot be met.
+> - Verify with `npm run verify -- --allow-generate` at the end of each item (`--fast` inside an item). Never paste raw build output; read only the new error's line in `tmp/verify-last.log`. Never rerun a failed check before editing.
+> - At about 25 tool calls, check what is left. If it is small, finish the item, even past 25 calls. If a significant amount is left (more than a few edits, or pages you have not read yet), stop at a clean point, leave the tree green, and report: done, left (as steps), files touched.
+> - Report, fixed fields: **done**; **files touched** (count); **registry edits** (sidebar, `core` cells, allowlist rows); **AGENTS.md Owns lines** to change; **verify** line; **skips** with reasons; **left**; **inefficient**.
+
+Each brief holds the unit's row from the table above, the sections of this proposal it links to (pasted, not linked), this digest, and for U3 to U5 the unit table and the report of the unit before. No brief tells a subagent to read this proposal.
+
+### Gates
+
+- The orchestrator saves `npm run verify -- --baseline` before U1, on a tree where other work is committed.
+- **U1:** `verify` shows no new errors, and the built `llms.txt` is byte-identical to the baseline build's (the orchestrator copies it aside when it takes the baseline).
+- **U2:** `verify` shows no new errors, and on the unit table the script reports about the [vocabulary](#vocabulary) counts for the table's order (12, 4, 0), give or take the checkpoints edited since.
+- **U3:** the one gate that is red by design. Every new error must be a `core-vocabulary` Review-word leak or a checkpoint item using a later form. A learning-order *use* error other than those, or a forward link left over, goes back to U3's subagent. For U3 the standing stop line's *leave the tree green* means *leave no error outside those two kinds*.
+- **U4:** no new error is left on a Beginner page.
+- **U5:** `verify -- --allow-generate` shows no new errors. Then the orchestrator runs `npm run cheat-sheet-blocks -- --write`, since the sheets may follow the reading order or the `core` order.
+- **U6:** `verify` shows no new errors (`docs/meta/` alone needs no build, but the generator change does).
+- **Final gate:** a clean `npm run build` and `npm test`, with nothing left on a **generate** row, then the site check.
+
+A failed gate goes back to the subagent that made the change while it is under about 25 turns; otherwise to a fresh one with the item, the failing `verify` lines, and the diff stat.
+
+### Commits
+
+Five to seven commits, each `units <ID>: <what> [skip-cd]` plus the co-author line, staging only that unit's files, made by the orchestrator only:
+
+1. `units U1`: structure, no reorder.
+2. `units U2`: Review words in the planner.
+3. `units W3`: the reorder, the FORMER row, the link fixes, the `core` moves (U3 to U5), and this proposal's updated unit table.
+4. `units W3: npm run cheat-sheet-blocks -- --write`, only if a table changed ([fence automated rewrites](../meta/procedures/proposals.md#fence-automated-rewrites)).
+5. `units U6`: meta notes, the generator change, and the `AGENTS.md` sentence.
+6. `units U6: npm run grammar-map -- --write`, on its own.
+7. `units`: the consolidated proposal, moved to `partially-implemented/`.
+
+After each commit the orchestrator records the finished IDs on the Status line ([resuming](../meta/procedures/proposals.md#resuming)).
 
 ### Later phases (not scheduled)
 

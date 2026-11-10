@@ -932,9 +932,9 @@ Short word in a role slot (`darl` / `barl` / `derl` / `dorl` / `durl`, open **`-
 
 ### Tag pronoun
 
-Role letter + **`w`** + a tag vowel (A, E, O, U) + ending: a label the speaker assigns to a phrase (`zodozel zwal` *a dog, call it A*) and recalls in any role (`zwar`), or shares with **-m** (`zwam` *what A did*).
+Role letter + **`w`** + a tag vowel (A, E, O, U) + ending: a label the speaker assigns to a phrase (`zodozel zwal` *a dog, call it A*) and recalls in any role (`zwar`), or shares with **-m** (`zwam` *what A did*). With **-n** it is a pseudonym: a real person whose name is kept back (`zwan`). Right after a `zual` / `zuam` / `zul` fence it is a bound tag, naming each member in turn (`zual gogozel zwal` *every cat, each one A*).
 
-[Tag pronouns](/tag-pronouns#tag-pronouns)
+[Tag pronouns](/tag-pronouns#tag-pronouns), [Talking about a whole kind](/universals-domains#bound-tags)
 
 ### Tail suffix
 

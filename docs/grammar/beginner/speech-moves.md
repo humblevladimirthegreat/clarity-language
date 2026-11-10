@@ -89,7 +89,7 @@ The vowel picks the act. Its cues hang on the join leftover-list: **a** add a cl
 
 ### Word order for each act {#act-word-order}
 
-The first letter of each word already says its role, so any order of the body means the same thing. Each act still has a **default order**. Use it: the act word is one short syllable, and if a listener misses it, the order still tells them which act you meant.
+The first letter of each word already says its role, so the body can come in any order and who did what stays the same. Each act still has a **default order**. Use it: the act word is one short syllable, and if a listener misses it, the order still tells them which act you meant.
 
 > `zazozon dubogal vabuvul.`
 >

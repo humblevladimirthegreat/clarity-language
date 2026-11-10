@@ -207,7 +207,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "npCoordPart.itemHookBound": { anchor: "list-structure.md#shared-after-the-join", summary: "/b/ of a hook on the last join item" },
   "npCoordPart.groupTag": { anchor: "tag-pronouns.md#tag-pronouns", summary: "tag -l naming a closed list" },
   "npPackage.Citation": { anchor: "word-endings.md#greeting", summary: "word with no role letter, with what describes it" },
-  "npPackage.tag": { anchor: "tag-pronouns.md#tag-pronouns", summary: "tag -l naming the noun before it" },
+  "npPackage.tag": { anchor: "tag-pronouns.md#tag-pronouns", summary: "tag -l, or a pseudonym -n, naming the noun before it" },
 
   "hUnitRule.boundJoinTail": { anchor: "join-relations.md#join-relations", summary: "hosted /b/ slot filled by a join" },
   "gPackage.boundJoinTail": { anchor: "join-relations.md#join-relations", summary: "hosted /b/ slot on /ɡ/ filled by a join" },
@@ -903,7 +903,7 @@ export const REJECTIONS = {
   tagSlot: { anchor: "tag-pronouns.md#tag-pronouns", summary: "a tag pronoun fills /z/, /d/, or /b/; to call someone or return to them as the topic, use their name" },
   tagEnding: { anchor: "tag-pronouns.md#tag-pronouns", summary: "a tag pronoun takes -l (assign), -r (recall), -m (share), or -n (a pseudonym)" },
   tagPronoun: { anchor: "tag-pronouns.md#tag-pronouns", summary: "a tag names a phrase that is not already a fixed pronoun: never a special (uwen, awan, ayan), generic, or topic pronoun, or another tag; a resume or role pointer takes one" },
-  tagPairAssign: { anchor: "tag-pronouns.md#tag-pairs", summary: "a tag pair (`zwaor`) recalls or shares two tags already assigned; assign each tag on its own (`zodozel zwal zogozel zwol zam`)" },
+  tagPairAssign: { anchor: "tag-pronouns.md#tag-pairs", summary: "a tag pair never names a phrase: on -r or -m it recalls or shares two tags already assigned (`zwaor`), and on -n it brings in or recalls two pseudonyms (`zwaon`); assign each tag on its own (`zodozel zwal zogozel zwol zam`)" },
   tagPlural: { anchor: "tag-pronouns.md#tag-pronouns", summary: "a tag takes -x only on -r or -n (`zwarx`, `zwanx`, A and associates); to tag a group, tag its plural phrase (`zodozelx zwal`)" },
   joinPlural: { anchor: "joins.md#unspecified-member-r-phrase", summary: "a join takes -x after -r on /z/ /d/ /b/ (`zarx`, some ones), or on /v/ for one shared act (`varx`)" },
   holderSeamSpeaker: { anchor: "holder.md#holder", summary: "the speaker is never a holder: your own view needs no seam (D-68); for exclusive *we*, make the group the subject (`zuwenx thalom`), and name others as holder (`theyomazozonx`)" },

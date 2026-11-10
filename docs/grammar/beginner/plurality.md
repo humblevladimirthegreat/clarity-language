@@ -133,7 +133,7 @@ The same roots take the role letter of the slot they fill. As a direct object th
 >
 > "We all walk." (you, I and our people)
 
-**Compare with:** inclusive *we* uses **`aya`** (`zayan`), not **`uwenx`**. **`uwenx`** leaves you out, **`awanx`** leaves the speaker out, and **`ayanx`** takes in both and the people around you. Nonspecific *someone* (**`ume`**) names no group, so it takes no **-x**: *some people* is `zeyelx`.
+**Compare with:** inclusive *we* uses **`aya`** (`zayan`), not **`uwenx`**. **`uwenx`** leaves you out, **`awanx`** leaves the speaker out, and **`ayanx`** takes in both and the people around you.
 
 For *you and yours* (one listener plus that person's people), put **-x** on the listener's name (`zalazunx`). **`awanx`** means only the address set.
 

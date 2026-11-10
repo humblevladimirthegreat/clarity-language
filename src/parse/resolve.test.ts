@@ -304,6 +304,12 @@ describe("resolve — tag pronouns (tag-pronouns.md#tag-pronouns)", () => {
     // A sentence-final stand-in points to the next sentence, which is still inside the reach.
     assert.deepEqual(tags("zual gogozel zwal vezuvel thohem blarl. zwar guzemel."), ["zwal→zual", "zwar→zual"]);
     assert.deepEqual(tags("zual gogozel zwal vezuvel thohem blarl. zwar guzemel darl. zwar vowurol."), ["zwal→zual", "zwar→zual", "zwar→zual"]);
+    // A stand-in earlier in the written sentence takes the rest of that sentence as its content, so the reach covers it and stops there.
+    assert.deepEqual(tags("zual gogozel zwal thohem blarl vezuvel zwar guzemel."), ["zwal→zual", "zwar→zual"]);
+    assert.throws(() => parseText("zual gogozel zwal thohem blarl vezuvel. zwar guzemel."), /expires at the end of that sentence/);
+    // A stand-in that ends the dependent carries the reach one sentence further; one that points back (-rth) carries nothing.
+    assert.deepEqual(tags("zual gogozel zwal vezuvel thohem blarl zwar vanam darl. zwar guzemel."), ["zwal→zual", "zwar→zual", "zwar→zual"]);
+    assert.throws(() => parseText("zual gogozel zwal vanam darth. zwar guzemel."), /expires at the end of that sentence/);
     // After an ordinary list, a tag still names the group and lasts.
     assert.deepEqual(resolveOf("zodozel zogozel zam zwal vowurol. zwar veruvol.").anaphors.filter((a) => a.kind === "tag").map((a) => a.each), [undefined, undefined]);
   });
