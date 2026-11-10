@@ -2,13 +2,18 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
 import {
+  better,
+  breakLines,
   describePlan,
   membershipProblems,
   pageName,
   parseDeps,
   parseUnitTables,
+  planReport,
   planUnits,
   suggestMoves,
+  tableOrderPlan,
+  withReviewWords,
   type DepRow,
   type Unit,
 } from "./unit-plan.js";
@@ -21,6 +26,8 @@ const dep = (from: string, to: string, uses: number, links = 0): DepRow => ({
   constructions: "",
   linkLines: "",
 });
+/** A dependency of `from` on `to` by Review words alone. */
+const review = (from: string, to: string, ...words: string[]): DepRow => ({ ...dep(from, to, 0), reviewWords: words });
 const unit = (name: string, ...pages: string[]): Unit => ({ name, pages: pages.map((p) => `${p}.md`) });
 const current = ["a", "b", "c", "d", "e", "f"].map((p) => `${p}.md`);
 
@@ -132,5 +139,103 @@ describe("suggestMoves", () => {
     const deps = [dep("c", "b", 3), dep("b", "a", 3)];
     const plan = planUnits(units, deps, current);
     assert.deepEqual(suggestMoves(units, deps, current, plan, (moved) => moved[1]!.pages.length < 2), []);
+  });
+});
+
+describe("withReviewWords", () => {
+  const core = new Map([
+    ["ball", "a.md#practice"],
+    ["tree", "intermediate/b.md#practice"],
+    ["home", "c.md#practice"],
+  ]);
+
+  it("adds one edge per Review root, from the checkpoint's page to the page of its core cell", () => {
+    const rows = withReviewWords([], [{ page: "c.md", words: [{ root: "ball", english: "ball" }, { root: "tree" }] }], core);
+    assert.deepEqual(rows, [review("c", "a", "ball (ball)"), review("c", "b", "tree")]);
+  });
+
+  it("joins the row of the same page pair and leaves the input rows alone", () => {
+    const deps = [dep("c", "a", 2, 1)];
+    const rows = withReviewWords(deps, [{ page: "c.md", words: [{ root: "ball", english: "ball" }] }], core);
+    assert.deepEqual(rows, [{ ...dep("c", "a", 2, 1), reviewWords: ["ball (ball)"] }]);
+    assert.equal(deps[0]!.reviewWords, undefined);
+  });
+
+  it("skips a root with no core cell, a root introduced on the same page, and a repeat", () => {
+    const banks = [
+      { page: "c.md", words: [{ root: "moon" }, { root: "home" }, { root: "ball" }] },
+      { page: "c.md", words: [{ root: "ball" }] },
+    ];
+    assert.deepEqual(withReviewWords([], banks, core), [review("c", "a", "ball")]);
+  });
+
+  it("breaks when the introducing checkpoint comes later", () => {
+    const units = [unit("U", "c"), unit("V", "a")];
+    const deps = withReviewWords([], [{ page: "c.md", words: [{ root: "ball", english: "ball" }] }], core);
+    const table = tableOrderPlan(units, deps, current);
+    assert.equal(table.reviewWords, 1);
+    assert.deepEqual(breakLines(table), ["c → a: 0 uses, 1 Review word, 0 links  Review ball (ball)"]);
+    const best = planUnits(units, deps, current);
+    assert.deepEqual(best.order, [1, 0]);
+    assert.equal(best.reviewWords, 0);
+  });
+});
+
+describe("three-way ranking", () => {
+  it("breaks any number of Review words before one use", () => {
+    const plan = planUnits([unit("U", "a"), unit("V", "b")], [dep("a", "b", 1), review("b", "a", "w1", "w2", "w3")], current);
+    assert.deepEqual(plan.order, [1, 0]);
+    assert.deepEqual([plan.uses, plan.reviewWords, plan.links], [0, 3, 0]);
+  });
+
+  it("breaks any number of links before one Review word", () => {
+    const plan = planUnits([unit("U", "a"), unit("V", "b")], [review("a", "b", "w1"), dep("b", "a", 0, 7)], current);
+    assert.deepEqual(plan.order, [1, 0]);
+    assert.deepEqual([plan.uses, plan.reviewWords, plan.links], [0, 0, 7]);
+  });
+
+  it("ranks plans by uses, then Review words, then links", () => {
+    const counts = (uses: number, reviewWords: number, links: number) => ({ uses, reviewWords, links });
+    assert.ok(better(counts(0, 9, 9), counts(1, 0, 0)));
+    assert.ok(better(counts(1, 0, 9), counts(1, 1, 0)));
+    assert.ok(better(counts(1, 1, 0), counts(1, 1, 1)));
+    assert.ok(!better(counts(1, 1, 1), counts(1, 1, 1)));
+  });
+
+  it("suggests a move that saves only a Review word", () => {
+    // U = {a, c}, V = {b}: c reviews a word b introduces, and b reviews one a introduces.
+    const units = [unit("U", "a", "c"), unit("V", "b")];
+    const deps = [review("c", "b", "w1"), review("b", "a", "w2")];
+    const plan = planUnits(units, deps, current);
+    assert.equal(plan.reviewWords, 1);
+    const moves = suggestMoves(units, deps, current, plan);
+    assert.deepEqual(moves.map((m) => [m.page, m.toUnit, m.plan.reviewWords]), [["c.md", 1, 0]]);
+  });
+});
+
+describe("planReport", () => {
+  it("prints only the best order when the table already keeps it", () => {
+    const units = [unit("U", "a"), unit("V", "b")];
+    const deps = [dep("b", "a", 1)];
+    const lines = planReport(units, planUnits(units, deps, current), tableOrderPlan(units, deps, current));
+    assert.deepEqual(lines, ["Best order breaks 0 uses, 0 Review words, and 0 links (the table order):", "  1. U: a", "  2. V: b"]);
+  });
+
+  it("prints the table order's counts and breaks as well when another order is best", () => {
+    const units = [unit("U", "b"), unit("V", "a")];
+    const deps = [review("b", "a", "ball (ball)"), dep("a", "b", 0, 2)];
+    const lines = planReport(units, planUnits(units, deps, current), tableOrderPlan(units, deps, current));
+    assert.deepEqual(lines, [
+      "Table order breaks 0 uses, 1 Review word, and 0 links:",
+      "  1. U: b",
+      "  2. V: a",
+      "  Still broken (page → page it needs, later in this order):",
+      "    b → a: 0 uses, 1 Review word, 0 links  Review ball (ball)",
+      "Best order breaks 0 uses, 0 Review words, and 2 links (differs from the table):",
+      "  1. V: a",
+      "  2. U: b",
+      "  Still broken (page → page it needs, later in this order):",
+      "    a → b: 0 uses, 0 Review words, 2 links",
+    ]);
   });
 });

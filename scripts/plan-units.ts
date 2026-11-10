@@ -5,12 +5,20 @@
  *   npm run plan-units -- --units <table.md|table.json> [--deps <deps.tsv>] [--band <name>] [--suggest] [--max-size <k>]
  *
  * For each band, prints the unit order that breaks the fewest dependencies
- * (exact search; uses outweigh links; ties keep the table order), the pages in
- * that order (inside a unit, in their current relative order), every
- * dependency still broken, and unit sizes outside 20k–50k. `--suggest` also
- * lists, per sitting on a broken dependency, the best single move to another
- * unit when it breaks fewer; `--max-size` (default 55) caps the unit a sitting
- * moves into. Moves are hints: a unit's theme is the editor's call.
+ * (exact search; uses outweigh Review words, which outweigh links; ties keep
+ * the table order), the pages in that order (inside a unit, in their current
+ * relative order), every dependency still broken, and unit sizes outside
+ * 20k–50k. When the table keeps another order, the table order's counts and
+ * breaks are printed first: the table may keep it for a reason the counts do
+ * not see. `--suggest` also lists, per sitting on a broken dependency of the
+ * best order, the best single move to another unit when it breaks fewer;
+ * `--max-size` (default 55) caps the unit a sitting moves into. Moves are
+ * hints: a unit's theme is the editor's call.
+ *
+ * A Review word is a root in a checkpoint's **Review** bank; it breaks when the
+ * checkpoint its `core` cell names comes later (`lint:ageben` then fails with
+ * `core-vocabulary`). Each is listed by root and gloss, and is fixed by moving
+ * the cell. Checkpoints and the `core` column are read from the tree.
  *
  * Units come from `--units`: Markdown tables under band headings with `Unit` and
  * `Sittings` columns, or JSON `{ "beginner": [{ "name": …, "pages": [...] }] }`.
@@ -19,25 +27,32 @@
  * script runs that report itself (about 20 s).
  */
 import { spawnSync } from "node:child_process";
-import { readFileSync, statSync } from "node:fs";
+import { existsSync, readFileSync, statSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import * as readingOrder from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { stageCheckpoints, storedCore } from "../src/core-vocabulary.js";
 import {
+  countsText,
   membershipProblems,
   pageName,
   parseDeps,
   parseUnitTables,
+  planReport,
   planUnits,
   suggestMoves,
-  type Plan,
+  tableOrderPlan,
+  withReviewWords,
+  type ReviewBank,
   type Unit,
 } from "../src/lint/unit-plan.js";
+import { loadDefaultTables } from "../src/parse/index.js";
+import { grammarFile } from "../src/repo-paths.js";
 
 const REPO_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
-const { advancedLessons, beginnerLessons, intermediateLessons, pageRelPath, pathPages } = readingOrder;
+const { advancedLessons, beginnerLessons, intermediateLessons, levelReviewPages, pageRelPath, pathPages } = readingOrder;
 
 const BANDS = {
   beginner: beginnerLessons,
@@ -113,6 +128,22 @@ function loadDeps(file: string | undefined): string {
   return run.stdout;
 }
 
+/** Each converted checkpoint's Review bank, read as `lint:ageben` reads it. */
+function loadReviewBanks(): ReviewBank[] {
+  const checkpoints = stageCheckpoints(
+    pathPages(),
+    (page) => {
+      const path = grammarFile(page);
+      return existsSync(path) ? readFileSync(path, "utf8") : undefined;
+    },
+    loadDefaultTables(),
+    levelReviewPages,
+  );
+  return checkpoints
+    .filter((c) => c.converted)
+    .map((c) => ({ page: c.page, words: c.entries.filter((e) => e.group === "review") }));
+}
+
 const sizes = new Map<string, number>();
 const sizeK = (page: string) => {
   let k = sizes.get(page);
@@ -120,21 +151,12 @@ const sizeK = (page: string) => {
   return k;
 };
 const unitSize = (u: Unit) => u.pages.reduce((s, p) => s + sizeK(p), 0);
-const count = (n: number, word: string) => `${n} ${word}${n === 1 ? "" : "s"}`;
 const short = (p: string) => p.replace(/\.md$/, "");
-
-function printPlan(units: readonly Unit[], plan: Plan, indent = "  "): void {
-  plan.order.forEach((u, i) => {
-    const unit = units[u]!;
-    const pages = plan.pages.filter((p) => unit.pages.includes(p)).map(short);
-    console.log(`${indent}${i + 1}. ${unit.name} (${Math.round(unitSize(unit))}k): ${pages.join(", ")}`);
-  });
-}
 
 function main(): void {
   const cli = parseCli(process.argv.slice(2));
   const tables = loadUnits(cli.units);
-  const deps = parseDeps(loadDeps(cli.deps));
+  const deps = withReviewWords(parseDeps(loadDeps(cli.deps)), loadReviewBanks(), storedCore());
   const currentOrder = pathPages();
   let problems = 0;
 
@@ -151,17 +173,9 @@ function main(): void {
     }
 
     const plan = planUnits(units, deps, currentOrder);
-    const inTable = units.map((_, i) => i).join() === plan.order.join();
-    console.log(`Best order breaks ${count(plan.uses, "use")} and ${count(plan.links, "link")}${inTable ? " (the table order)" : ""}:`);
-    printPlan(units, plan);
-    if (plan.breaks.length > 0) {
-      console.log("Still broken (page → page it needs, later in this order):");
-      for (const b of plan.breaks) {
-        const ids = b.constructions ? `  ${b.constructions}` : "";
-        const lines = b.linkLines ? `  links ${b.linkLines}` : "";
-        console.log(`  ${short(b.from)} → ${short(b.to)}: ${count(b.uses, "use")}, ${count(b.links, "link")}${ids}${lines}`);
-      }
-    }
+    const table = tableOrderPlan(units, deps, currentOrder);
+    const unitLine = (u: Unit, pages: string[]) => `${u.name} (${Math.round(unitSize(u))}k): ${pages.map(short).join(", ")}`;
+    for (const line of planReport(units, plan, table, unitLine)) console.log(line);
     const sizeNotes = units.flatMap((u) => {
       const k = Math.round(unitSize(u));
       const notes = [];
@@ -179,11 +193,11 @@ function main(): void {
       const moves = suggestMoves(units, deps, currentOrder, plan, fits).filter(
         (m, i, all) => all.findIndex((o) => o.page === m.page) === i,
       );
-      console.log(moves.length ? "Single moves that break fewer (best target per sitting):" : "No single move breaks fewer.");
+      console.log(moves.length ? "Single moves that break fewer than the best order (best target per sitting):" : "No single move breaks fewer than the best order.");
       for (const m of moves) {
         console.log(
           `  ${short(m.page)}: ${units[m.fromUnit]!.name} → ${units[m.toUnit]!.name}  ` +
-            `(${count(m.plan.uses, "use")}, ${count(m.plan.links, "link")})`,
+            `(${countsText(m.plan)})`,
         );
       }
     }

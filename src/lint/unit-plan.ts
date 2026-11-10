@@ -5,10 +5,15 @@
  * moves that break fewer. Used by `npm run plan-units`.
  *
  * A dependency "breaks" when the page it needs comes later in the planned
- * order. Uses (an example needs a construction homed later) count before
- * links (a link points later): one use outweighs any number of links, since a
- * use needs an example rewritten and a link only a prose edit. Ties go to the
- * order with the fewest unit swaps from the table order.
+ * order. Three kinds, each outweighing any number of the next: uses (an
+ * example needs a construction homed later, so an example is rewritten),
+ * Review words (a checkpoint's Review bank lists a root whose `core` cell
+ * names a later checkpoint, so a cell and two banks move), and links (a link
+ * points later, a prose edit). Ties go to the order with the fewest unit swaps
+ * from the table order.
+ *
+ * This module reads no files: the script passes in the dependency rows and
+ * the checkpoints' Review banks.
  */
 
 /** One row of `lint:ageben --deps`: `from` uses constructions homed on, or links to, `to`. */
@@ -21,7 +26,12 @@ export type DepRow = {
   constructions: string;
   /** `page:line` list, space-separated. */
   linkLines: string;
+  /** Review roots on `from` that a checkpoint on `to` introduces, each as `root (gloss)`. */
+  reviewWords?: string[];
 };
+
+/** One checkpoint's Review bank: the page it is on and the roots it reviews. */
+export type ReviewBank = { page: string; words: readonly { root: string; english?: string }[] };
 
 export type Unit = { name: string; pages: string[] };
 
@@ -34,8 +44,13 @@ export type Plan = {
   pages: string[];
   breaks: Break[];
   uses: number;
+  /** Review words whose introducing checkpoint comes later. */
+  reviewWords: number;
   links: number;
 };
+
+/** The three break counts, in ranking order. */
+export type Counts = Pick<Plan, "uses" | "reviewWords" | "links">;
 
 export type Move = { page: string; fromUnit: number; toUnit: number; plan: Plan };
 
@@ -56,6 +71,44 @@ export function parseDeps(tsv: string): DepRow[] {
     const [from = "", to = "", uses = "0", links = "0", constructions = "", linkLines = ""] = line.split("\t");
     return { from: pageName(from), to: pageName(to), uses: Number(uses), links: Number(links), constructions, linkLines };
   });
+}
+
+const reviewCount = (d: DepRow): number => d.reviewWords?.length ?? 0;
+
+/**
+ * Adds the vocabulary dependencies to `deps`: one Review word per root a
+ * checkpoint reviews, from the checkpoint's page to the page of the root's
+ * `core` cell (`page.md#id`, the checkpoint that introduces it). A root with
+ * no cell, or one introduced on the same page, adds nothing. Words join the
+ * row of their page pair, or a new row with no uses and no links.
+ */
+export function withReviewWords(
+  deps: readonly DepRow[],
+  banks: readonly ReviewBank[],
+  core: ReadonlyMap<string, string>,
+): DepRow[] {
+  const out = deps.map((d) => ({ ...d, ...(d.reviewWords ? { reviewWords: [...d.reviewWords] } : {}) }));
+  const rows = new Map(out.map((d) => [`${d.from}\t${d.to}`, d]));
+  for (const bank of banks) {
+    const from = pageName(bank.page);
+    for (const { root, english } of bank.words) {
+      const cell = core.get(root);
+      if (!cell) continue;
+      const to = pageName(cell.replace(/#.*$/, ""));
+      if (to === from) continue;
+      const key = `${from}\t${to}`;
+      let row = rows.get(key);
+      if (!row) {
+        row = { from, to, uses: 0, links: 0, constructions: "", linkLines: "" };
+        rows.set(key, row);
+        out.push(row);
+      }
+      const label = english ? `${root} (${english})` : root;
+      row.reviewWords ??= [];
+      if (!row.reviewWords.includes(label)) row.reviewWords.push(label);
+    }
+  }
+  return out;
 }
 
 /**
@@ -132,19 +185,23 @@ export function planUnits(units: readonly Unit[], deps: readonly DepRow[], curre
   units.forEach((u, i) => u.pages.forEach((p) => unitOf.set(p, i)));
   const inBand = deps.filter((d) => unitOf.has(d.from) && unitOf.has(d.to));
 
-  // Weights: uses ≫ links ≫ unit swaps from the table order. Each tier's
-  // scale exceeds the largest possible total of the tier below, so the sum
-  // compares lexicographically and stays an exact integer.
+  // Weights: uses ≫ Review words ≫ links ≫ unit swaps from the table order.
+  // Each tier's scale exceeds the largest possible total of the tier below, so
+  // the sum compares lexicographically and stays an exact integer.
   const swapScale = 1;
-  const linkScale = (n * n) / 2 + 1;
+  const linkScale = Math.floor((n * n) / 2) + 1;
   const totalLinks = inBand.reduce((s, d) => s + d.links, 0);
-  const useScale = linkScale * (totalLinks + 1);
+  const reviewScale = linkScale * (totalLinks + 1);
+  const totalReview = inBand.reduce((s, d) => s + reviewCount(d), 0);
+  const useScale = reviewScale * (totalReview + 1);
+  const totalUses = inBand.reduce((s, d) => s + d.uses, 0);
+  if (!Number.isSafeInteger(useScale * (totalUses + 1))) throw new Error(`dependency counts too large for an exact search`);
   // need[v][u]: cost of placing unit v before unit u.
   const need = Array.from({ length: n }, () => new Float64Array(n));
   for (const d of inBand) {
     const v = unitOf.get(d.from)!;
     const u = unitOf.get(d.to)!;
-    if (u !== v) need[v]![u]! += d.uses * useScale + d.links * linkScale;
+    if (u !== v) need[v]![u]! += d.uses * useScale + reviewCount(d) * reviewScale + d.links * linkScale;
   }
   for (let v = 0; v < n; v++) for (let u = 0; u < v; u++) need[v]![u]! += swapScale;
 
@@ -193,19 +250,94 @@ export function describePlan(
   const breaks: Break[] = deps
     .filter((d) => pos.has(d.from) && pos.has(d.to) && pos.get(d.to)! > pos.get(d.from)!)
     .map((d) => ({ ...d, fromUnit: unitOf.get(d.from)!, toUnit: unitOf.get(d.to)! }))
-    .sort((a, b) => b.uses - a.uses || b.links - a.links);
+    .sort((a, b) => b.uses - a.uses || reviewCount(b) - reviewCount(a) || b.links - a.links);
   return {
     order: [...order],
     pages,
     breaks,
     uses: breaks.reduce((s, b) => s + b.uses, 0),
+    reviewWords: breaks.reduce((s, b) => s + reviewCount(b), 0),
     links: breaks.reduce((s, b) => s + b.links, 0),
   };
 }
 
-/** Whether plan `a` breaks fewer dependencies than `b` (uses first, then links). */
-export function better(a: Pick<Plan, "uses" | "links">, b: Pick<Plan, "uses" | "links">): boolean {
-  return a.uses < b.uses || (a.uses === b.uses && a.links < b.links);
+/** The table's own unit order, described: what it breaks even when another order breaks fewer. */
+export function tableOrderPlan(units: readonly Unit[], deps: readonly DepRow[], currentOrder: readonly string[]): Plan {
+  return describePlan(units, units.map((_, i) => i), deps, currentOrder);
+}
+
+/** Whether `plan` keeps the units in table order. */
+export function isTableOrder(plan: Pick<Plan, "order">): boolean {
+  return plan.order.every((u, i) => u === i);
+}
+
+/** Negative when `a` breaks fewer than `b`: uses first, then Review words, then links. */
+export function compareCounts(a: Counts, b: Counts): number {
+  return a.uses - b.uses || a.reviewWords - b.reviewWords || a.links - b.links;
+}
+
+/** Whether plan `a` breaks fewer dependencies than `b` (uses, then Review words, then links). */
+export function better(a: Counts, b: Counts): boolean {
+  return compareCounts(a, b) < 0;
+}
+
+const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? "" : "s"}`;
+const short = (p: string) => p.replace(/\.md$/, "");
+
+/** `3 uses, 2 Review words, and 1 link`. */
+export function countsText(c: Counts): string {
+  return `${plural(c.uses, "use")}, ${plural(c.reviewWords, "Review word")}, and ${plural(c.links, "link")}`;
+}
+
+/**
+ * One line per broken page pair, worst first: the counts, the construction
+ * ids, the link lines, and the leaking Review words by name (each is fixed by
+ * moving the root's `core` cell).
+ */
+export function breakLines(plan: Pick<Plan, "breaks">): string[] {
+  return plan.breaks.map((b) => {
+    const words = b.reviewWords ?? [];
+    const ids = b.constructions ? `  ${b.constructions}` : "";
+    const lines = b.linkLines ? `  links ${b.linkLines}` : "";
+    const review = words.length ? `  Review ${words.join(", ")}` : "";
+    const counts = [plural(b.uses, "use"), plural(words.length, "Review word"), plural(b.links, "link")].join(", ");
+    return `${short(b.from)} → ${short(b.to)}: ${counts}${ids}${lines}${review}`;
+  });
+}
+
+/**
+ * The report for one band's plan: the best order's counts, and, when the table
+ * keeps another order, the table order's counts and breaks as well, since the
+ * table may keep its order for a reason the counts do not see. `unitLine`
+ * formats one unit of an order (the script adds sizes).
+ */
+export function planReport(
+  units: readonly Unit[],
+  best: Plan,
+  table: Plan,
+  unitLine: (unit: Unit, pages: string[]) => string = (unit, pages) => `${unit.name}: ${pages.map(short).join(", ")}`,
+): string[] {
+  const out: string[] = [];
+  const section = (plan: Plan) => {
+    plan.order.forEach((u, i) => {
+      const unit = units[u]!;
+      out.push(`  ${i + 1}. ${unitLine(unit, plan.pages.filter((p) => unit.pages.includes(p)))}`);
+    });
+    if (plan.breaks.length > 0) {
+      out.push("  Still broken (page → page it needs, later in this order):");
+      for (const line of breakLines(plan)) out.push(`    ${line}`);
+    }
+  };
+  if (isTableOrder(best)) {
+    out.push(`Best order breaks ${countsText(best)} (the table order):`);
+    section(best);
+    return out;
+  }
+  out.push(`Table order breaks ${countsText(table)}:`);
+  section(table);
+  out.push(`Best order breaks ${countsText(best)} (differs from the table):`);
+  section(best);
+  return out;
 }
 
 /**
@@ -236,5 +368,5 @@ export function suggestMoves(
       if (better(next, plan)) moves.push({ page, fromUnit, toUnit, plan: next });
     }
   }
-  return moves.sort((a, b) => a.plan.uses - b.plan.uses || a.plan.links - b.plan.links);
+  return moves.sort((a, b) => compareCounts(a.plan, b.plan));
 }
