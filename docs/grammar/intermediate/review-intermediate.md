@@ -125,7 +125,7 @@ z-Alazun | v-swim | after.open | v-cook
 
 z-Alazun | v-cry | [th-because | bl-wind]
 
-**Rule:** [Because, iff, and only because](iff-fault.md#only-because)
+**Rule:** [Because, iff, and only because](because-and-iff.md#only-because)
 :::
 
 **7.** *Alazun sits on Ahelan's left.*
@@ -515,7 +515,7 @@ z-Azozon | th-hope | v-walk
 
 `/th/` is how **you** feel about the claim; `/h/` would be Azozon walking hopefully.
 
-**Rule:** [Hopefully and other attitudes](feelings-permission.md#speaker-attitude)
+**Rule:** [Hopefully and other attitudes](feelings.md#speaker-attitude)
 :::
 
 **18.** *Alazun fought, it turns out.* `zalazun themem vuvuvul.` or `zalazun themel vuvuvul.`

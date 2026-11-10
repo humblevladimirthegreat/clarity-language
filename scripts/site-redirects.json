@@ -224,6 +224,16 @@
       "from": "/grammar/emphasis.html",
       "to": "/grammar/tone-marks.html",
       "note": "Public URL after folding emphasis.md into tone-marks.md."
+    },
+    {
+      "from": "/grammar/iff-fault.html",
+      "to": "/grammar/because-and-iff.html",
+      "note": "Public URL after renaming iff-fault.md to because-and-iff.md."
+    },
+    {
+      "from": "/grammar/feelings-permission.html",
+      "to": "/grammar/feelings.html",
+      "note": "Public URL after renaming feelings-permission.md to feelings.md."
     }
   ]
 }

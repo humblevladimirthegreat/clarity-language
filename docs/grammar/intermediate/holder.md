@@ -125,7 +125,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 |---------------|----------------|---------------|
 | The event | you assert it | what the holder takes to be so; you do not assert it |
 | MAY, CAUSE hinges, *so that*, PLAN, prescription | yours | the holder's |
-| [Sake](/sakes) words and [emotion compose](feelings-permission.md#emotion-compose), with their endings | your stake and feeling | the holder's stake and feeling |
+| [Sake](/sakes) words and [emotion compose](feelings.md#emotion-compose), with their endings | your stake and feeling | the holder's stake and feeling |
 | A `/ɡ/` sake's *my* reading ([personal possession](/sakes#personal-possession)) | your belonging | the holder's belonging |
 | Another evidential | how you know | how the holder knows |
 | The grounds after an inferring or pattern host's [`blarl`](evidentiality.md#evidence-clause) | grounds you assert | the holder's grounds; you do not assert them |
@@ -142,7 +142,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 >
 > "I gather Azozon is watching Alazun leave."
 
-A [feeling with no object](feelings-permission.md#feeling-no-object) works the same way: the holder makes it someone else's feeling.
+A [feeling with no object](feelings.md#feeling-no-object) works the same way: the holder makes it someone else's feeling.
 
 > `thuwathuruer theyomalazun.`
 >
@@ -168,7 +168,7 @@ The interlocutors work as holder on any host. With PLAN after it, the plan is on
 >
 > "I gather we both plan to walk."
 
-Pronouns, speech moves, and [speaker attitudes](feelings-permission.md#speaker-attitude) stay yours: **`uwen`** is still you, the sentence is still your turn, and *hopefully* is still your hope. You are never the holder: your own view needs no seam. Someone else's hope is their want, so *Azozon hopes Alazun walks* is the holder with WANT, never with **`thuwuyom`**. The holder's view is their view **now**. A channel with a holder still takes its own `/b/`, so `thebamazozon blral` is *I hear Azozon expects it*.
+Pronouns, speech moves, and [speaker attitudes](feelings.md#speaker-attitude) stay yours: **`uwen`** is still you, the sentence is still your turn, and *hopefully* is still your hope. You are never the holder: your own view needs no seam. Someone else's hope is their want, so *Azozon hopes Alazun walks* is the holder with WANT, never with **`thuwuyom`**. The holder's view is their view **now**. A channel with a holder still takes its own `/b/`, so `thebamazozon blral` is *I hear Azozon expects it*.
 
 **One clause, one holder.** The holder covers its clause and any dependent sentence inside it; a new `/x/` sentence is yours again unless it has its own seam word. A dependent with its own seam word switches holder for that sentence only. That is how you take a stance on someone else's stance: your stance in the main sentence, theirs in a dependent.
 
@@ -182,7 +182,7 @@ The first sake word has no holder, so it is yours. The second is Azozon's.
 
 Only the seven channels and MAY take a holder: they are the ways you can have access to someone else's view. When they told you in their own words, a [cite](/spans#writing) keeps their wording instead.
 
-**Compare with:** being upset **for** Azozon is your own feeling about Azozon's stake (the VICARIOUS locus in [emotion compose](feelings-permission.md#emotion-compose)); with a holder the feeling is Azozon's. *On behalf of* Azozon is [proxy](/relations#proxy) (`hanem`). A `/b/` on [permission](permission-consent.md#permission) or [consent](permission-consent.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](/compounds#dictionary-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
+**Compare with:** being upset **for** Azozon is your own feeling about Azozon's stake (the VICARIOUS locus in [emotion compose](feelings.md#emotion-compose)); with a holder the feeling is Azozon's. *On behalf of* Azozon is [proxy](/relations#proxy) (`hanem`). A `/b/` on [permission](permission-consent.md#permission) or [consent](permission-consent.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](/compounds#dictionary-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
 
 ### Practice {#intermediate-practice}
 

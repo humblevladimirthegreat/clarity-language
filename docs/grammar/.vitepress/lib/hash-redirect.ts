@@ -16,7 +16,7 @@ export type HashRedirect = {
 }
 
 export const hashRedirects: HashRedirect[] = [
-  { page: "causation.md", hash: "intermediate", to: "iff-fault.md" },
+  { page: "causation.md", hash: "intermediate", to: "because-and-iff.md" },
   { page: "causation.md", hash: "beginner", to: "causation.md" },
   { page: "predication.md", hash: "intermediate", to: "label-reach.md" },
   { page: "predication.md", hash: "beginner", to: "predication.md" },
@@ -83,7 +83,7 @@ export const hashRedirects: HashRedirect[] = [
   { page: "discourse-hooks.md", hash: "intermediate", to: "discourse-hooks.md" },
   { page: "verb-and-stance-joins.md", hash: "intermediate", to: "verb-and-stance-joins.md" },
   { page: "residue-and-former.md", hash: "intermediate", to: "residue-and-former.md" },
-  { page: "feelings-permission.md", hash: "intermediate", to: "feelings-permission.md" },
+  { page: "feelings.md", hash: "intermediate", to: "feelings.md" },
   { page: "numeric-derivation.md", hash: "advanced", to: "numeric-derivation.md" },
   { page: "more-turn-words.md", hash: "tone-marks", to: "tone-marks.md" },
   { page: "more-turn-words.md", hash: "speech-acts-and-tone-marks", to: "more-turn-words.md" },

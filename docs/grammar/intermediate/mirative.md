@@ -32,7 +32,7 @@ The ending says how firm the expectation was that the news overturned. If you do
 
 MIRATIVE does not end a [channel frame](evidentiality.md#carry-forward): a surprise inside a report is still part of the report.
 
-The mirative says only that the news was unexpected, not whether it is good or bad. To say how it lands, add a [feeling](feelings-permission.md#emotion-compose): the mirative after **`goyom`** says the stimulus was unexpected.
+The mirative says only that the news was unexpected, not whether it is good or bad. To say how it lands, add a [feeling](feelings.md#emotion-compose): the mirative after **`goyom`** says the stimulus was unexpected.
 
 > `zewal wawethamar goyom themem.`
 >

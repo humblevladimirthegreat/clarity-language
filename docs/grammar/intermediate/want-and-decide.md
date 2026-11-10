@@ -59,7 +59,7 @@ For *against my wishes*, put WANT after the hook **`uom`** ([contrary to a stanc
 >
 > "Azozon walks, against my wishes."
 
-**Compare with:** [hopefully](feelings-permission.md#speaker-attitude) (`thuwuyom`) is your hope about whether a claim turns out true; **`thalom`** is wanting the act itself. [Motive](for-a-sake.md#sake-preference) says which sake the act serves, not that it is wanted. In [emotion compose](feelings-permission.md#emotion-compose), SEEKING is a feeling turning toward someone for comfort, not a plain want.
+**Compare with:** [hopefully](feelings.md#speaker-attitude) (`thuwuyom`) is your hope about whether a claim turns out true; **`thalom`** is wanting the act itself. [Motive](for-a-sake.md#sake-preference) says which sake the act serves, not that it is wanted. In [emotion compose](feelings.md#emotion-compose), SEEKING is a feeling turning toward someone for comfort, not a plain want.
 
 ### Decision (revisability)
 <a id="decision"></a>

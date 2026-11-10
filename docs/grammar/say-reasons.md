@@ -6,7 +6,7 @@ Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* do
 
 ### English → Ageben {#english-cues}
 
-**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Contrary to a stance](/contrary-to#contrary-to-stance) · [Continue](/speech-moves#continue-x) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse) · [Because](/iff-fault#only-because) · [Discourse hooks with -r](/discourse-hooks#discourse) · [Clause sequence](/clause-sequence#clause-sequence)
+**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Contrary to a stance](/contrary-to#contrary-to-stance) · [Continue](/speech-moves#continue-x) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse) · [Because](/because-and-iff#only-because) · [Discourse hooks with -r](/discourse-hooks#discourse) · [Clause sequence](/clause-sequence#clause-sequence)
 
 Time and discourse dependents use the same **`blarl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a hinge root.
 
@@ -36,7 +36,7 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}
 
-**Needs:** [Evidence strength](/evidentiality#evidence-strength) · [Deduction](/evidentiality#deduction) · [MAY](/knowing#may) · [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) · [Hopefully and other attitudes](/feelings-permission#speaker-attitude) · [Unmet](/sakes#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](/spans#asides) · [CAUSE](/cause#cause) · [Every bar](/stance-bars#stance-bars)
+**Needs:** [Evidence strength](/evidentiality#evidence-strength) · [Deduction](/evidentiality#deduction) · [MAY](/knowing#may) · [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) · [Hopefully and other attitudes](/feelings#speaker-attitude) · [Unmet](/sakes#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](/spans#asides) · [CAUSE](/cause#cause) · [Every bar](/stance-bars#stance-bars)
 
 English adverbs like *obviously*, *apparently* and *presumably* say **how you know** a claim. Ageben has no word for each one. It puts a channel on the clause as a `/th/` word, and the ending grades the evidence: **-l** solid, **-m** ordinary, **-r** thin. *Guess* and *assume* are not channels: a guess is a *could be* (MAY), and an assumption is toying with a premise (NOTIONAL). *Unfortunately* says how **you** feel about the claim, so it is an attitude word.
 
@@ -115,11 +115,11 @@ Someone else's view is never a bare claim. Put a holder on the clause, which say
 >
 > "Unfortunately, Azozon is leaving."
 
-**Compare with:** *hopefully* and *worryingly* are the other speaker attitudes ([hopefully](/feelings-permission#speaker-attitude)). *Assuming that Q, P* keeps the condition open: P with **`thohem blarl`** ([if](/causation#if)).
+**Compare with:** *hopefully* and *worryingly* are the other speaker attitudes ([hopefully](/feelings#speaker-attitude)). *Assuming that Q, P* keeps the condition open: P with **`thohem blarl`** ([if](/causation#if)).
 
 ### Reason, purpose, guilty {#reason-purpose-guilty}
 
-**Needs:** [Because](/iff-fault#only-because) · [Fault](/fault#fault) · [Motive](/for-a-sake#sake-preference) · [Prescription](/ought-for-a-sake#sake-force) · [Attachment sites](/for-a-sake#attachment-sites) · [So that](/dependents#so-that) · [Why?](/fill-ask-jobs#why) · [Emotion compose](/feelings-permission#emotion-compose) · [Feeling with no object](/feelings-permission#feeling-no-object)
+**Needs:** [Because](/because-and-iff#only-because) · [Fault](/fault#fault) · [Motive](/for-a-sake#sake-preference) · [Prescription](/ought-for-a-sake#sake-force) · [Attachment sites](/for-a-sake#attachment-sites) · [So that](/dependents#so-that) · [Why?](/fill-ask-jobs#why) · [Emotion compose](/feelings#emotion-compose) · [Feeling with no object](/feelings#feeling-no-object)
 
 English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each split the same way. Name which one you mean: what **made it happen** (the because hinge), what the speaker is **doing it for** (a motive, on a sake), or the **faculty** of thinking (the abstract sense of `ebobe`).
 
@@ -228,7 +228,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 
 ### Know, mean, explain, realize, forget, become {#mind-verbs}
 
-**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Embedded whether](/questions#embedded-whether) · [Because](/iff-fault#only-because) · [Already, still, not yet](/already-still-yet#phasal) · [Can](/can-and-cant#can) · [Existence](/predication#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](/comparatives#comparatives)
+**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Embedded whether](/questions#embedded-whether) · [Because](/because-and-iff#only-because) · [Already, still, not yet](/already-still-yet#phasal) · [Can](/can-and-cant#can) · [Existence](/predication#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](/comparatives#comparatives)
 
 English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mostly sit on a few plain moves: tell, know, remember, and whether the change has come. Ageben keeps those roots and adds the phasal word for the change, so *realize* is *already know* and *forget* is *no longer remember*. *Mean* in the sense of *signify* is the compound `ezuyoloma` (*meaning*, speech that carries a thought).
 
@@ -269,7 +269,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 
 ### Condition, factor, requirement, motivation, satisfaction, truth {#reason-nouns}
 
-**Needs:** [If](/causation#if) · [Only because](/iff-fault#only-because) · [Fault](/fault#fault) · [Requirement](/permission-consent#requirement) · [Motive](/for-a-sake#sake-preference) · [Met](/sakes#time-horizon-endings-on-met) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Intention](/intention#plan-predict) · [Speech manner](/speech-manner#speech-manner) · [How you know](/evidentiality#evidentiality) · [Enough and too](/bars#sake-bars)
+**Needs:** [If](/causation#if) · [Only because](/because-and-iff#only-because) · [Fault](/fault#fault) · [Requirement](/permission-consent#requirement) · [Motive](/for-a-sake#sake-preference) · [Met](/sakes#time-horizon-endings-on-met) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Intention](/intention#plan-predict) · [Speech manner](/speech-manner#speech-manner) · [How you know](/evidentiality#evidentiality) · [Enough and too](/bars#sake-bars)
 
 English turns reasons and feelings into nouns (*condition*, *motivation*, *satisfaction*, *truth*). Ageben has no noun for most of them. It keeps the stance word on the clause, so the noun becomes a short claim about how you stand: a condition is the hinge word, a motive is a sake, a requirement is a demand, a truth is how you vouch for it.
 
@@ -337,7 +337,7 @@ English *biased* says a view may be bent by what the holder wants from it. Agebe
 ### Factivity (`if` vs `because`)
 <a id="factivity"></a>
 
-**Needs:** [If](/causation#if) · [Because](/iff-fault#only-because) · [MAY](/knowing#may) · [*as-of*](/as-of#as-of) · [RESIDUE](/residue-and-former#residue) · [forecasts](/evidentiality#forecast)
+**Needs:** [If](/causation#if) · [Because](/because-and-iff#only-because) · [MAY](/knowing#may) · [*as-of*](/as-of#as-of) · [RESIDUE](/residue-and-former#residue) · [forecasts](/evidentiality#forecast)
 
 English *because* and *if* can hide whether you **assert the dependent as a world fact**. Ageben puts that choice on the hinge: **`thahum`** asserts the condition as the reason the outcome rests on; **`thohem`** does not (the outcome is under that opportunity). *Only if* vs *only because* is the same factivity split on the necessary hinge.
 
@@ -413,7 +413,7 @@ Use **`thahum blarl`** only when Q is also asserted as a world-foundation, what 
 
 ### Arguments: premises, validity, contradiction {#arguments}
 
-**Needs:** [Deduction](/evidentiality#deduction) · [Evidence clause](/evidentiality#evidence-clause) · [If](/causation#if) · [Because, iff, and only because](/iff-fault#only-because) · [Clause joins](/joins#clause-joins) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional)
+**Needs:** [Deduction](/evidentiality#deduction) · [Evidence clause](/evidentiality#evidence-clause) · [If](/causation#if) · [Because, iff, and only because](/because-and-iff#only-because) · [Clause joins](/joins#clause-joins) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional)
 
 An argument has three parts, and each has its own slot. The **link** between premises and conclusion is a hinge (*if*, *if and only if*). **How you know** the link is the channel: DEDUCED (`thanam`) when the conclusion must hold. **Whether you grant the premises** depends on what sits before **`blarl`**: the channel alone asserts them, and a hinge between the channel and **`blarl`** does not.
 
@@ -473,7 +473,7 @@ A one-off episode and a standing pattern use the same hinges. Add extra words fo
 
 ### Habit, triggered by {#habit}
 
-**Needs:** [CAUSE](/cause#cause) · [Because](/iff-fault#only-because) · [If](/causation#if) · [Always](/restrictors) · [Only when](/restrictors) · [How a label holds](/label-reach#classification-packaging) · [Used to](say-tense.md#used-to) · [PLAN](/intention#plan-predict)
+**Needs:** [CAUSE](/cause#cause) · [Because](/because-and-iff#only-because) · [If](/causation#if) · [Always](/restrictors) · [Only when](/restrictors) · [How a label holds](/label-reach#classification-packaging) · [Used to](say-tense.md#used-to) · [PLAN](/intention#plan-predict)
 
 English *habit*, *I have a habit of*, and *triggered by* pack how often the act repeats, what cues it, and whether that is who you are. Name the job you mean. When a cue is how the act is produced, put **`thewom`** right before **`thahum`** (the cue is a fact) or **`thohem`** (you do not claim it holds), and the cue in that hinge's `/b/`.
 
@@ -507,7 +507,7 @@ English *habit*, *I have a habit of*, and *triggered by* pack how often the act 
 
 ### Hoping something will happen {#hope-forecast}
 
-**Needs:** [Hopefully](/feelings-permission#speaker-attitude) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [soon](/dated-channel#dated-channel)
+**Needs:** [Hopefully](/feelings#speaker-attitude) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [soon](/dated-channel#dated-channel)
 
 English *I hope X will happen* is two claims: you want it, and you expect it. **`thuwuyom`** gives the wanting. The *will* is a [forecast](/evidentiality#forecast), so it needs a channel plus **`blral`** (or **`blrawum`** for *soon*). If nothing backs it but your gut, the honest channel is INTUITION: faint **`thaber`** for a slim hope, **`thabem`** for an ordinary one.
 
@@ -523,7 +523,7 @@ English *I hope X will happen* is two claims: you want it, and you expect it. **
 
 ### Important, useful, helpful, benefit, satisfy, upset {#sake-words}
 
-**Needs:** [Sake inventory](/sakes#sake-inventory) · [Met](/sakes#time-horizon-endings-on-met) · [Emotion compose](/feelings-permission#emotion-compose) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Bars](/bars#bars)
+**Needs:** [Sake inventory](/sakes#sake-inventory) · [Met](/sakes#time-horizon-endings-on-met) · [Emotion compose](/feelings#emotion-compose) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Bars](/bars#bars)
 
 English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Ageben names the someone's **sake** (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical). A met word says the thing serves that sake, and its ending says how long the payoff lasts. On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it on `/w/` before **`goyom`**. Put a person in `/b/` for whose sake it is.
 
@@ -641,7 +641,7 @@ English *deserve* says something is owed without saying why. Name the ground. It
 
 ### Clear, honest, false, general, proud {#trait-words}
 
-**Needs:** [Negation](/joins#negation-u) · [Talking about a whole kind](/universals-domains#universals-domains-generics) · [Fault](/fault#fault) · [Emotion compose](/feelings-permission#emotion-compose) · [Number as stance](/special-values#special-number-as-stance)
+**Needs:** [Negation](/joins#negation-u) · [Talking about a whole kind](/universals-domains#universals-domains-generics) · [Fault](/fault#fault) · [Emotion compose](/feelings#emotion-compose) · [Number as stance](/special-values#special-number-as-stance)
 
 Many English adjectives are the plain opposite of something that has a root (*unclear*, *honest*, *false*). Ageben says the positive root and closes it with **`gul`** (*not*). Others claim how far something holds (*general*, *universal*, *absolute*). That is the universal fence: closed for no exceptions, open for *as a rule*. A few are a feeling (*proud*), which is an emotion compose, so the sake and the stimulus are named.
 
@@ -776,7 +776,7 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 ### When the stimulus happens {#emotion-stimulus-time}
 
-**Needs:** [Emotion compose](/feelings-permission#emotion-compose) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [evidence strength](/evidentiality#evidence-strength) · [RESIDUE](/residue-and-former#residue) · [NOTIONAL](/notional#notional)
+**Needs:** [Emotion compose](/feelings#emotion-compose) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [evidence strength](/evidentiality#evidence-strength) · [RESIDUE](/residue-and-former#residue) · [NOTIONAL](/notional#notional)
 
 
 A feeling word is how you feel **now**. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`goyom`**, as for any [forecast](/evidentiality#forecast) or [dated claim](/dated-channel#dated-channel): the offset dates the stimulus, and the channel says how you know it.
@@ -809,7 +809,7 @@ Other shapes use forms you already have:
 | recurring | [always](/restrictors) `hual` | *dreading every dialogue* |
 | did not happen | [NOTIONAL](/notional#notional) | *relieved about what didn't happen* |
 
-A [feeling with no object](/feelings-permission#feeling-no-object) can take a channel and offset too. Then the stimulus is real but unnamed: you know when it is, not what it is.
+A [feeling with no object](/feelings#feeling-no-object) can take a channel and offset too. Then the stimulus is real but unnamed: you know when it is, not what it is.
 
 > `thuwathuruer thaber blral.`
 >
@@ -821,7 +821,7 @@ How the stimulus is known matters. A dialogue a reliable source announced (`theb
 
 ### Feeling then {#emotion-feeling-time}
 
-**Needs:** [Emotion compose](/feelings-permission#emotion-compose) · [stance as-of](/as-of#stance-as-of) · [evidentiality](/evidentiality#evidentiality)
+**Needs:** [Emotion compose](/feelings#emotion-compose) · [stance as-of](/as-of#stance-as-of) · [evidentiality](/evidentiality#evidentiality)
 
 
 To say you **felt** it at another time, date the feeling itself with [stance as-of](/as-of#stance-as-of): **`thenam`** plus the time or event in `/b/`, after the stimulus. Add a remembering channel for *I remember feeling it*.
@@ -842,10 +842,10 @@ With no pair, the feeling is now. Keeping *it hurt then* apart from *it hurts no
 
 ### Cause is not target {#emotion-blame}
 
-**Needs:** [Emotion compose](/feelings-permission#emotion-compose) · [Because](/iff-fault#only-because) · [Fault](/fault#fault) · [MAY](/knowing#may)
+**Needs:** [Emotion compose](/feelings#emotion-compose) · [Because](/because-and-iff#only-because) · [Fault](/fault#fault) · [MAY](/knowing#may)
 
 
-A direction locus says where the charge **goes**. It does not say who **caused** it. Name the cause with the [because hinge](/iff-fault#because) after the feeling, and name its [fault](/fault#fault) only when you mean it. The target and the cause may differ.
+A direction locus says where the charge **goes**. It does not say who **caused** it. Name the cause with the [because hinge](/because-and-iff#because) after the feeling, and name its [fault](/fault#fault) only when you mean it. The target and the cause may differ.
 
 > `zezuyol wawethumem goyom blazozon thahum blerulal.`
 >
@@ -869,7 +869,7 @@ Put an **act** after the hinge (`barl zalazun vezuyol`), not the person. A feeli
 
 ### Curious, confused, bored, awed, surprised {#understanding-feelings}
 
-**Needs:** [Sake inventory](/sakes#sake-inventory) · [Emotion compose](/feelings-permission#emotion-compose) · [Feeling with no object](/feelings-permission#feeling-no-object) · [Mirative](/mirative#mirative)
+**Needs:** [Sake inventory](/sakes#sake-inventory) · [Emotion compose](/feelings#emotion-compose) · [Feeling with no object](/feelings#feeling-no-object) · [Mirative](/mirative#mirative)
 
 Most of these feelings are about the **understanding** sake: whether something makes sense. Surprise is different. It says the news ran against what you expected, so it is the [mirative](/mirative#mirative), and a sake word says how the news lands.
 

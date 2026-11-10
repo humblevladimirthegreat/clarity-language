@@ -285,7 +285,7 @@ const SAKE_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
   u: { l: "irreversible", m: "modifiable", r: "passing" },
 };
 
-/** Emotion tail (feelings-permission.md#emotion-compose): locus hook vowel(s), then motion ending. */
+/** Emotion tail (feelings.md#emotion-compose): locus hook vowel(s), then motion ending. */
 const EMOTION_LOCUS: Record<string, string> = {
   a: "INTERNAL",
   ae: "CIRCUM",

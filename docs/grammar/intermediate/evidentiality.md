@@ -44,7 +44,7 @@ Pick one channel for how you know.
 
 A document is REPORTED: someone wrote it, so it reached you from someone else.
 
-**Compare with:** hearing a door is an ordinary `/v/` verb, not REPORTED. A feeling such as fear or hope is an [emotion compose](feelings-permission.md#emotion-compose); INTUITION is a way of knowing, not a feeling about the event. Something a schedule says will happen is someone's [PLAN](/intention#plan-predict). A tale you tell for its own sake is an imagined scene, not a report of fact.
+**Compare with:** hearing a door is an ordinary `/v/` verb, not REPORTED. A feeling such as fear or hope is an [emotion compose](feelings.md#emotion-compose); INTUITION is a way of knowing, not a feeling about the event. Something a schedule says will happen is someone's [PLAN](/intention#plan-predict). A tale you tell for its own sake is an imagined scene, not a report of fact.
 
 ### Evidence strength {#evidence-strength}
 
@@ -165,7 +165,7 @@ In a [question](/questions#question), the channel asks what the **listener's** a
 >
 > "Will it rain, going by the pattern you see?"
 
-On a [feeling](feelings-permission.md#emotion-compose) (a sake word with a locus and a motion ending, before **`goyom`**), the channel and offset date the **stimulus**. On a [feeling with no object](feelings-permission.md#feeling-no-object), they date a stimulus you leave unnamed. The feeling itself stays now.
+On a [feeling](feelings.md#emotion-compose) (a sake word with a locus and a motion ending, before **`goyom`**), the channel and offset date the **stimulus**. On a [feeling with no object](feelings.md#feeling-no-object), they date a stimulus you leave unnamed. The feeling itself stays now.
 
 **Compare with:** [PLAN](/intention#plan-predict) (`thagom`) says what you **intend** to do. Your own intention needs no channel. A forecast is a claim about the world. *Could be* with nothing behind it is [MAY](/knowing#may), not a forecast.
 
@@ -179,7 +179,7 @@ English *judging by*, *going by*, and *given that* name the **grounds** for a cl
 >
 > "Alazun punched, judging by the fact that Azozon is screaming."
 
-Grounds are not a cause. With [`thahum blarl`](iff-fault.md#only-because), the clause after `blarl` is what made the event happen. With a reasoned channel, it is only how you know the event happened: the screaming did not make Alazun punch.
+Grounds are not a cause. With [`thahum blarl`](because-and-iff.md#only-because), the clause after `blarl` is what made the event happen. With a reasoned channel, it is only how you know the event happened: the screaming did not make Alazun punch.
 
 > `zazozon veyamul thahum blarl zalazun vabuvul.`
 >
@@ -280,7 +280,7 @@ English *it follows that*, *P, so Q* and *by deduction* claim more than good evi
 >
 > "Azozon teaches, since every teacher teaches and Azozon is a teacher."
 
-To claim only that the conclusion follows, put a [hinge](iff-fault.md#only-because) between the channel and **`blarl`**. The hinge is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
+To claim only that the conclusion follows, put a [hinge](because-and-iff.md#only-because) between the channel and **`blarl`**. The hinge is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
 
 > `zazozon veduyol thanam thohem blarl zual gwozeduyol veduyol xam zazozon gwozeduyol.`
 >

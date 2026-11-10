@@ -88,7 +88,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | kind / role (*Azozon as a dog*) | classification `/ɡ/` | [Kind / role](/predication#classification) |
 | same one (*Alazun as Azozon*) | **IDENTITY** + `/b/` | [Identity](/predication#identity) |
 | same time (*as Alazun walks*) | **`herom blarl`** | [Dependent clauses](/dependents#dependent-clauses) |
-| reason / since (*as Alazun walks*) | **`thahum blarl`** | [Because](/iff-fault#because) |
+| reason / since (*as Alazun walks*) | **`thahum blarl`** | [Because](/because-and-iff#because) |
 | grounds (*as the sky is gray, it will rain*) | **`theyom blarl`** / **`thubom blarl`** | [Evidence clause](/evidentiality#evidence-clause) |
 | equal degree (*as sleepy as*) | equative **`oe`** | [Equatives](/comparatives#equatives) |
 | falls short (*not as sleepy as*) | reverse rank **`ue`** | [Reverse rank](/comparative-arity#full-comparative-arity) |
@@ -108,7 +108,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 |--------------|------------|-------|
 | from a time on (*has sat since the storm*) | hook **`ul`** (*from*) + the time in `/b/` | [Since](/hooks#since) |
 | from an event on (*since Alazun fell asleep*) | **`ul barl`** + the sentence | [Since](/hooks#since) |
-| reason (*since Alazun walks*) | **`thahum blarl`** | [Because](/iff-fault#because) |
+| reason (*since Alazun walks*) | **`thahum blarl`** | [Because](/because-and-iff#because) |
 | *never since …* / *not once since …* (over the stretch since then) | **`huxal`** + the time: `huxal blanulul`; **`huxal blarl`** + the sentence | [Bounding a time](/hooked-joins#hooked-joins-time), [bounded by a clause](/hooked-joins#hooked-joins-clause) |
 
 ### *against*

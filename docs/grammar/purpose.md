@@ -103,7 +103,7 @@ In English: [Claritish: Oughts and motives](claritish/oughts-and-motives.md).
 
 Opaque labels (*angry*, *anxious*, *proud*) hide which sake is in play and what to ask for.
 
-Ageben [builds an emotion](/feelings-permission#emotion-compose) from three parts: a [sake](/sakes) and how it stands (usually met or unmet), where the feeling sits or what it points at, and its motion (surging, flowing, or static).
+Ageben [builds an emotion](/feelings#emotion-compose) from three parts: a [sake](/sakes) and how it stands (usually met or unmet), where the feeling sits or what it points at, and its motion (surging, flowing, or static).
 
 Building the feeling from those parts shows you what to ask for, instead of leaving you stuck at the label.
 
@@ -294,7 +294,7 @@ Many roots have an **abstract** sense beside a **concrete** one, so an idea you 
 - [A pattern as paw-prints](/usually-vs-must#generalization) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
 - [*As if* as theater](/notional#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene; what really happened stays **offstage**.
 - [Mechanism as gears](/cause#cause) ([a wish as a law](#trap-wish-as-law)): you say *how* a result comes about, like gears meshing, not only that it follows.
-- [Affect as water](/feelings-permission#emotion-compose) ([a feeling as a label](#trap-feeling)): water that surges, flows, or stands still (motion) plus where the feeling sits or points, instead of an opaque emotion label that hides the sake.
+- [Affect as water](/feelings#emotion-compose) ([a feeling as a label](#trap-feeling)): water that surges, flows, or stands still (motion) plus where the feeling sits or points, instead of an opaque emotion label that hides the sake.
 
 Because each picture already carries a warning against the trap, it helps you reach for the healthier frame in the moment and remember it later.
 

@@ -80,7 +80,7 @@ English *well…* warns that the answer is not the plain *yes* the question hope
 
 ### *It sounds like…*, *I hear that you…* {#reflecting}
 
-**Needs:** [Whose view](/holder#holder) · [How you know](/evidentiality#evidentiality) · [Feeling with no object](/feelings-permission#feeling-no-object) · [Emotion compose](/feelings-permission#emotion-compose)
+**Needs:** [Whose view](/holder#holder) · [How you know](/evidentiality#evidentiality) · [Feeling with no object](/feelings#feeling-no-object) · [Emotion compose](/feelings#emotion-compose)
 
 English *it sounds like you're anxious* and *I hear that you're upset* give the speaker's feeling back to them. You cannot state someone else's feeling outright, so name the listener as the holder on CLUES (**`theyom`**): you worked it out from what they said.
 

@@ -370,7 +370,7 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 
 ### Will, want, try, let's {#will-want}
 
-**Needs:** [Plan](/intention#plan-predict) · [Want](/want-and-decide#want) · [Decision](/want-and-decide#decision-revisability) · [Try](/try#try) · [Hopefully](/feelings-permission#speaker-attitude) · [Speech act](/firm-soft#speech-act) · [Whose view](/holder#holder)
+**Needs:** [Plan](/intention#plan-predict) · [Want](/want-and-decide#want) · [Decision](/want-and-decide#decision-revisability) · [Try](/try#try) · [Hopefully](/feelings#speaker-attitude) · [Speech act](/firm-soft#speech-act) · [Whose view](/holder#holder)
 
 | English | Ageben |
 |---------|--------|
@@ -391,7 +391,7 @@ WANT, PLAN and DECISION alone are yours. For someone else's, put a holder before
 | *want to*, *want* (someone else's want) | holder + WANT: **`thebamazozon thalom`** (*I hear*), **`theyomazozon thalom`** (*I gather*) | [Someone else's want](/want-and-decide#whose-intention) |
 | *plan to*, *plan is to*, *intend to* (someone else's plan) | holder + PLAN: **`thebamazozon thagom`** (*I hear*), **`theyomazozon thagom`** (*I gather*) | [Whose view](/holder#holder) |
 | *decide to*, *decided to* (someone else's decision) | holder + DECISION: **`thebamazozon thogem`** (*I hear*), **`theyomazozon thogem`** (*I gather*) | [Someone else's decision](/want-and-decide#whose-intention) |
-| *hopefully*, *I hope*, *hope* (your own hope) | **`thuwuyom`**, which is always yours | [Hopefully](/feelings-permission#speaker-attitude) |
+| *hopefully*, *I hope*, *hope* (your own hope) | **`thuwuyom`**, which is always yours | [Hopefully](/feelings#speaker-attitude) |
 | *hopes*, *hope*, *wishes*, *wish* (someone else's hope or wish) | holder + WANT: **`theyomazozon thalom`** (*I gather*), **`thebamazozon thalom`** (*I hear*) | [Someone else's want](/want-and-decide#whose-intention) |
 | *we want*, *we plan* (one you claim you both share) | the interlocutors as holder: **`theyomayan thalom`**, **`theyomayan thagom`** | [Someone else's want](/want-and-decide#whose-intention) |
 

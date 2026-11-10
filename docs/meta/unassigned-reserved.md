@@ -222,7 +222,7 @@ Source: [roles.md](/role-parts#content-of-the-event)
 
 ## Say words
 
-Source: [feelings-permission.md](/permission-consent#say-words)
+Source: [feelings.md](/permission-consent#say-words)
 
 - **closed ([D-46](design-decisions.md)):** `/th/` on the green, no-entry, or memo root, any ending but **-n** (`tholom`, `thegul`, `thonam`). Parser: `retiredDeonticRoot`.
 - **closed (D-46):** a bare **`v`** say word on **-m** in a statement whose speaker is a participant (`zuwen vowurol hwuvam.`). It would be the speaker's say over their own act, which is their part (`hwuzom`). Parser: `saySpeaker`.
@@ -253,7 +253,7 @@ Source: [predication.md](/predication)
 
 ## Closed-root endings
 
-Source: [causation.md](/iff-fault#hinges), [relations.md](/relations), [dependents.md](/dependents#dependent-clauses), [knowing.md](/residue-and-former#residue)
+Source: [causation.md](/because-and-iff#hinges), [relations.md](/relations), [dependents.md](/dependents#dependent-clauses), [knowing.md](/residue-and-former#residue)
 
 An **-r** grade on a closed root without its own **-r** would take away the live whole-stem resume ([design-decisions § Closed-root endings](design-decisions.md#closed-root-endings)). **-l** has two competing guesses (strongest, as on *exactly like* `hewel`, or broke a norm, as on *because*), so a family where neither fits has no guessable **-l**.
 

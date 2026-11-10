@@ -357,4 +357,4 @@ A sake word alone on `/ɡ/` says the rain is yours; for a thing you do not keep,
 
 - Applicability *when*: [restrictors.md](restrictors.md)
 - DECISION reuses unmet changeability endings: [intention.md](intention.md)
-- Feelings, thanks, permission: [feelings-permission.md](/feelings-permission)
+- Feelings, thanks, permission: [feelings.md](/feelings)

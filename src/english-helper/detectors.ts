@@ -298,7 +298,7 @@ export const OPENER_LINKS = {
   /** *tells someone that the dog runs*: a stand-in, then the clause as the next sentence. */
   content: ["dependents.md#dependent-clauses"],
   /** *glad that it rains*: the feeling word goes on the clause it is about. */
-  feeling: ["feelings-permission.md#feeling-no-object"],
+  feeling: ["feelings.md#feeling-no-object"],
   /** *the dog that runs*: two sentences. */
   relative: ["dependents.md#which-noun"],
 } as const;
@@ -342,8 +342,8 @@ export const HOLDER_LINKS: readonly string[] = ["holder.md#holder", "want-and-de
  * someone else owns it, the analyzer adds {@link HOLDER_FEELING}: the feeling takes a holder.
  */
 export const FEELING_LINKS: readonly string[] = [
-  "feelings-permission.md#feeling-no-object",
-  "feelings-permission.md#emotion-compose",
+  "feelings.md#feeling-no-object",
+  "feelings.md#emotion-compose",
   "say-reasons.md#sake-words",
   "sakes.md#sake-inventory",
 ];
@@ -365,7 +365,7 @@ export function holderHost(word: string): string | undefined {
  * Rows for an attitude that is always the speaker's (*hopefully*, *I hope*): the analyzer drops
  * them when someone else owns the stance, whose hope is a holder + WANT row instead.
  */
-export const SPEAKER_ONLY_LINKS: readonly string[] = ["feelings-permission.md#speaker-attitude"];
+export const SPEAKER_ONLY_LINKS: readonly string[] = ["feelings.md#speaker-attitude"];
 
 /**
  * Whose stance a word before the stance names: the speaker, someone else, or *we* (your own

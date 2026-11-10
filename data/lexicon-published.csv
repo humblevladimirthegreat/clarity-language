@@ -124,7 +124,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 👌,ok,oguye,person,one,none,acceptance,the ok sign says it is fine as it is; acceptance is letting it be,,accept; alright; adopt; fine,
 🤏,pinch,ebuvu,doing,takes-away,none,inch,a pinch of fingers spans about an inch; an inch is a small unit of length,,,
 ✌️,victory,evero,counting,order,none,triumph,peace sign shows triumph,,succeed; defeat; overcome,
-🤞,crossed-fingers,uwuyo,person,order,none,hope,crossed fingers bring hope,,,feelings-permission.md#intermediate-practice
+🤞,crossed-fingers,uwuyo,person,order,none,hope,crossed fingers bring hope,,,feelings.md#intermediate-practice
 🤘,horns,ohobu,body,takes-away,medium,,,,,
 🤙,shaka,uhuya,person,holds,none,contact,shaka invites contact,,,
 🖕,middle-finger,umuyu,person,takes-away,none,contempt,middle finger shows contempt,,,
@@ -267,7 +267,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 👤,silhouette,ezaye,person,one,big,,,,profile,
 🧑‍🦲,head,ehobe,body,one,medium,,,,principal,
 👥,group,egaya,person,holds,big,community,busts stand for any group; community is the shared life a group builds,,society; club; association; folk; ethnic; racial,join-relations.md#intermediate-practice
-🫂,hug,ahuya,person,holds,none,comfort,hug gives comfort,,comfortable; embrace,feelings-permission.md#intermediate-practice
+🫂,hug,ahuya,person,holds,none,comfort,hug gives comfort,,comfortable; embrace,feelings.md#intermediate-practice
 👪,family,uvaya,person,holds,big,kinship,a family is the people tied to you by blood,,household,hooks.md#beginner-practice
 🧑‍🧒,parent,abaya,person,holds,big,,an adult with a child is a parent,,,generations.md#advanced-practice
 👣,footprints,avobo,body,order,medium,legacy,footprints leave legacy,v:go,trace,role-parts.md#intermediate-practice
@@ -928,7 +928,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🪛,screwdriver,uzewo,tool,order,small,assembly,screwdriver joins parts together; assembly is putting together,,,
 🔩,bolt,obewe,tool,one,small,ohm,a bolt limits current through the joint; ohm is the SI resistance unit,,,
 ⚙️,machine,ewo,tool,order,,mechanism,a machine runs on mechanism,,device; instrument; engine; motor; functional; gear; cog,
-🗜️,clamp,ayewa,tool,holds,small,pressure,clamp squeezes with steady force; pressure is squeezing force,,impose; tight; press,iff-fault.md#intermediate-practice
+🗜️,clamp,ayewa,tool,holds,small,pressure,clamp squeezes with steady force; pressure is squeezing force,,impose; tight; press,because-and-iff.md#intermediate-practice
 ⚖️,scale,ezoro,counting,order,medium,adjudication,scales weigh both sides; adjudication is weighing a case,,weigh,
 🦯,cane,egowo,tool,order,medium,trust,you lean your weight on a cane; trust is relying on someone,,confidence; rely; reliable,
 🔗,link,ulewo,tool,order,small,,,,unite; relate,

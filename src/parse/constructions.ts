@@ -503,7 +503,7 @@ export const SAKE_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vo
   "ending.o.l": { anchor: "for-a-sake.md#motive-tho-time-horizon", summary: "motive standing -l" },
   "ending.o.m": { anchor: "for-a-sake.md#motive-tho-time-horizon", summary: "motive standing -m" },
   "ending.o.r": { anchor: "for-a-sake.md#motive-tho-time-horizon", summary: "motive standing -r" },
-  "emotion": { anchor: "feelings-permission.md#emotion-compose", summary: "emotion tail (locus vowel + motion ending)" },
+  "emotion": { anchor: "feelings.md#emotion-compose", summary: "emotion tail (locus vowel + motion ending)" },
 };
 
 /** Join fence series vowel (joins.md, comparatives.md). */
@@ -813,11 +813,11 @@ export const REJECTIONS = {
   pluralOnPos: { anchor: "plurality.md#associative", summary: "-x is unused on /w/, /h/, /th/, and the published /x/ linkers" },
   pluralInterjection: { anchor: "collectives.md#vocatives-y", summary: "-x on /y/ goes on a vocative (-n / -r), not an interjection" },
   sakeSlot: { anchor: "sakes.md#sake-inventory", summary: "a sake form goes on /ɡ/, /th/, or /w/ only" },
-  emotionTail: { anchor: "feelings-permission.md#emotion-compose", summary: "the emotion tail goes on tha / tho / thu and ends in -r / -m / -l" },
+  emotionTail: { anchor: "feelings.md#emotion-compose", summary: "the emotion tail goes on tha / tho / thu and ends in -r / -m / -l" },
   sakeEnding: { anchor: "sakes.md#word-shape", summary: "a sake word ends in -l / -m / -r (its stance's ending table), with or without an emotion tail" },
   sakeStackedVowel: { anchor: "sakes.md#word-shape", summary: "a sake stance is one vowel; stacked vowels after th are the emotion locus after the horizon letter" },
   prescriptionSlot: { anchor: "ought-for-a-sake.md#prescription-the-ought-this-act-for-this-sake", summary: "prescription (the) goes on /th/ only: it is about an act, not a noun" },
-  feelingLandmark: { anchor: "feelings-permission.md#emotion-compose", summary: "an INTERNAL (a) or UNPLACED (ue) feeling takes no /b/; a landmark goes with a direction or CIRCUM locus" },
+  feelingLandmark: { anchor: "feelings.md#emotion-compose", summary: "an INTERNAL (a) or UNPLACED (ue) feeling takes no /b/; a landmark goes with a direction or CIRCUM locus" },
   labelReachSlot: { anchor: "label-seams.md#label-reach", summary: "label reach goes on /ɡ/, /z/, /d/, /b/, /v/, or /h/ only" },
   labelReachStem: { anchor: "label-seams.md#label-reach", summary: "a reach seam labels a content root, not a special pronoun" },
   roleCompoundSlot: { anchor: "roles.md#role-compounds", summary: "a role compound goes on /z/, /d/, /b/, /ɡ/, as a topic under /x/, as a call under /y/ (-n / -r), or under /h/ with a slot part (acting as); not on /v/, /w/, or /th/, and not a content part on /h/" },
@@ -869,7 +869,7 @@ export const REJECTIONS = {
   standInRole: { anchor: "stand-in-vowels.md#stand-in", summary: "stand-ins (-rl -rm -rth -rn) fill /z/ /d/ /b/ only; there is no stand-in on /ɡ/ /h/ /w/ /th/ (such is whole-stem -r, like that is `hewem blarth`)" },
   standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is `blarl` after a listed hinge, a clues / pattern channel, like (`hewem`), or an /h/ hooked join" },
   standInHostUndo: { anchor: "stand-in-vowels.md#stand-in", summary: "burl follows only the so-that hinge thovam or the if hinge thohem" },
-  hingeStack: { anchor: "iff-fault.md#only-because", summary: "hinge stacks are `theboram thurugum` and `hezuvem thadoram`" },
+  hingeStack: { anchor: "because-and-iff.md#only-because", summary: "hinge stacks are `theboram thurugum` and `hezuvem thadoram`" },
   citationInClause: { anchor: "questions.md#fill-ask", summary: "a word with no role letter fills no slot, so it is never part of a clause; it stands only as a sentence of its own (`azozon.`)" },
   citationTurn: { anchor: "questions.md#fill-ask", summary: "a reply turn of one citation opens with the statement act only (`yal azozon.`)" },
   sameRoleSides: { anchor: "same-role-words.md#before-and-after", summary: "a same-role word goes between two phrases of one role (`zazozon abam zahelan vowurol.`); at the start of a body only with the blank it asks for (`yel abam zar zazozon vowurol.`), and never as glue" },

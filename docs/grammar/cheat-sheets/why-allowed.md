@@ -7,7 +7,7 @@ outline: false
 
 # Why and allowed cheat sheet {#why-allowed-cheat-sheet}
 
-A quick look at [causation](/causation), [sakes](/sakes), and [feelings and permission](/feelings-permission) . Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [causation](/causation), [sakes](/sakes), and [feelings and permission](/feelings) . Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## Because, if, only if {#hinges}
 
@@ -18,20 +18,20 @@ Write the outcome first, then the hinge, then the condition as the hinge's `/b/`
 |-----------------------|------|-----------|---------|-------|
 | [`thohem` / `gohem`](/causation#if) | enough | not asserted | *if* | B |
 | [`thebem` / `gebem`](/causation#only-if) | needed | not asserted | *only if* / *needs* | B |
-| [`thahum` / `gahum`](/iff-fault#only-because) | enough | asserted as the reason | *because* | I |
-| [`thebem thahum` / `gebem gahum`](/iff-fault#only-because) | needed | asserted | *only because* / *depends on* | I |
-| [`thehom` / `gehom`](/iff-fault#only-because) | both ways | not asserted | *if and only if* | I |
+| [`thahum` / `gahum`](/because-and-iff#only-because) | enough | asserted as the reason | *because* | I |
+| [`thebem thahum` / `gebem gahum`](/because-and-iff#only-because) | needed | asserted | *only because* / *depends on* | I |
+| [`thehom` / `gehom`](/because-and-iff#only-because) | both ways | not asserted | *if and only if* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [If, after a verb](/causation#if) | `zazozon vowurol thohem blerulal.` | *Azozon walks if it rains.* | B |
 | [If, after a noun](/causation#if) | `zerulal gohem blugalal.` | *There is rain if there are clouds.* | B |
 | [Only if](/causation#only-if) | `zazozon vowurol thebem blerulal.` | *Azozon walks only if it rains.* | B |
-| [Because](/iff-fault#only-because) | `zazozon vowurol thahum blarl zalazun vezuvel.` | *Azozon walks because Alazun is asleep.* | I |
-| [If and only if](/iff-fault#only-because) | `zazozon vowurol thehom blarl zalazun vezuvel.` | *Azozon walks if and only if Alazun is asleep.* | I |
-| [Only because](/iff-fault#only-because) | `zazozon vowurol thebem thahum blerulal.` | *Azozon walks only because of the rain.* | I |
-| [Unless](/iff-fault#only-because): `blurl` for `blarl` | `zazozon vowurol thohem blurl zalazun vezuvel.` | *Azozon walks unless Alazun is asleep.* | I |
-| [Even if](/iff-fault#only-because) | `zazozon vowurol hezem thohem blarl zalazun vezuvel.` | *Azozon walks even if Alazun is asleep.* | I |
+| [Because](/because-and-iff#only-because) | `zazozon vowurol thahum blarl zalazun vezuvel.` | *Azozon walks because Alazun is asleep.* | I |
+| [If and only if](/because-and-iff#only-because) | `zazozon vowurol thehom blarl zalazun vezuvel.` | *Azozon walks if and only if Alazun is asleep.* | I |
+| [Only because](/because-and-iff#only-because) | `zazozon vowurol thebem thahum blerulal.` | *Azozon walks only because of the rain.* | I |
+| [Unless](/because-and-iff#only-because): `blurl` for `blarl` | `zazozon vowurol thohem blurl zalazun vezuvel.` | *Azozon walks unless Alazun is asleep.* | I |
+| [Even if](/because-and-iff#only-because) | `zazozon vowurol hezem thohem blarl zalazun vezuvel.` | *Azozon walks even if Alazun is asleep.* | I |
 
 A noun after a because hinge names an act or a thing, never a person. For *because of Alazun*, give what Alazun did as a sentence after `blarl`.
 
@@ -145,56 +145,56 @@ Your feeling about the whole claim, on `/th/` with **-m**. It is never the subje
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`thuwuyom`](/feelings-permission#speaker-attitude) | you want it, and it is still open | *hopefully* | I |
-| [`tholezem`](/feelings-permission#speaker-attitude) | it went well by chance | *luckily* | I |
-| [`thewemum`](/feelings-permission#speaker-attitude) | it concerns you | *worryingly* | I |
+| [`thuwuyom`](/feelings#speaker-attitude) | you want it, and it is still open | *hopefully* | I |
+| [`tholezem`](/feelings#speaker-attitude) | it went well by chance | *luckily* | I |
+| [`thewemum`](/feelings#speaker-attitude) | it concerns you | *worryingly* | I |
 
 <PageBreak />
 
 ## Feelings {#feelings}
 
-An [emotion](/feelings-permission#emotion-compose) is built on one word: the sake word, a **locus**, then a **motion ending**. Example: `wuwathur` + `ao` + **-r** is `wuwathuraer`.
+An [emotion](/feelings#emotion-compose) is built on one word: the sake word, a **locus**, then a **motion ending**. Example: `wuwathur` + `ao` + **-r** is `wuwathuraer`.
 
 ### Locus: where it sits or points {#locus}
 
 | Locus | Hook | Use | English | Stage |
 |-------|------|-----|---------|-------|
-| [`a`](/feelings-permission#emotion-compose) | *in* | internal | *mine, held inside* | I |
-| [`ao`](/feelings-permission#emotion-compose) | *over* | the atmosphere | *hangs over the room* | I |
-| [`uo`](/feelings-permission#emotion-compose) | *through* | unplaced | *I can't place it* | I |
-| [`o`](/feelings-permission#emotion-compose) | *at* | aimed | *annoyed at*, *grateful to* | I |
-| [`oe`](/feelings-permission#emotion-compose) | *toward* | seeking | *turning to someone for comfort* | I |
-| [`ue`](/feelings-permission#emotion-compose) | *against* | resisting | *objecting to* | I |
-| [`e`](/feelings-permission#emotion-compose) | *for* | vicarious | *upset for* | I |
-| [`u`](/feelings-permission#emotion-compose) | *from* | away | *avoiding*, *fleeing* | I |
-| [`ua`](/feelings-permission#emotion-compose) | *out of* | collapse | *giving up* | I |
-| [`ae`](/feelings-permission#emotion-compose) | *using* | fawn | *placating* | I |
+| [`a`](/feelings#emotion-compose) | *in* | internal | *mine, held inside* | I |
+| [`ao`](/feelings#emotion-compose) | *over* | the atmosphere | *hangs over the room* | I |
+| [`uo`](/feelings#emotion-compose) | *through* | unplaced | *I can't place it* | I |
+| [`o`](/feelings#emotion-compose) | *at* | aimed | *annoyed at*, *grateful to* | I |
+| [`oe`](/feelings#emotion-compose) | *toward* | seeking | *turning to someone for comfort* | I |
+| [`ue`](/feelings#emotion-compose) | *against* | resisting | *objecting to* | I |
+| [`e`](/feelings#emotion-compose) | *for* | vicarious | *upset for* | I |
+| [`u`](/feelings#emotion-compose) | *from* | away | *avoiding*, *fleeing* | I |
+| [`ua`](/feelings#emotion-compose) | *out of* | collapse | *giving up* | I |
+| [`ae`](/feelings#emotion-compose) | *using* | fawn | *placating* | I |
 
 ### Motion: how it moves {#motion}
 
 | Ending | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**-l**](/feelings-permission#emotion-compose) | static | *held, frozen, numb* | I |
-| [**-m**](/feelings-permission#emotion-compose) | flowing | *steady, a pace you can ride* | I |
-| [**-r**](/feelings-permission#emotion-compose) | surging | *waves or spikes* | I |
+| [**-l**](/feelings#emotion-compose) | static | *held, frozen, numb* | I |
+| [**-m**](/feelings#emotion-compose) | flowing | *steady, a pace you can ride* | I |
+| [**-r**](/feelings#emotion-compose) | surging | *waves or spikes* | I |
 
 Motion is how the feeling moves, not how strong it is. For strength, put a [degree word](/very-and-slightly#degree-w) on `/w/` before it. A direction `/b/` names the landmark, so it cannot also name whose stake.
 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | English | Stage |
 |--------|---------|-------|
-| [`zezuyol wuwathuraer goyom`](/feelings-permission#emotion-compose) | *anxious about the dialogue* | I |
-| [`zozowum wawethumual goyom`](/feelings-permission#emotion-compose) | *given up over the division* | I |
-| [`zobewom guwathamar`](/feelings-permission#emotion-compose) | *proud of the draft* | I |
-| [`zonal wawethumom goyom blazozon`](/feelings-permission#emotion-compose) | *upset for Azozon about the memo* | I |
-| [`zezuyol wamezem wuwathuruem goyom`](/feelings-permission#emotion-compose) | *a little uneasy, and I can't say why* | I |
-| [`zezuyol wuwathumuor guzezam`](/feelings-permission#emotion-compose) | *the dialogue is frustratingly slow* | I |
+| [`zezuyol wuwathuraer goyom`](/feelings#emotion-compose) | *anxious about the dialogue* | I |
+| [`zozowum wawethumual goyom`](/feelings#emotion-compose) | *given up over the division* | I |
+| [`zobewom guwathamar`](/feelings#emotion-compose) | *proud of the draft* | I |
+| [`zonal wawethumom goyom blazozon`](/feelings#emotion-compose) | *upset for Azozon about the memo* | I |
+| [`zezuyol wamezem wuwathuruem goyom`](/feelings#emotion-compose) | *a little uneasy, and I can't say why* | I |
+| [`zezuyol wuwathumuor guzezam`](/feelings#emotion-compose) | *the dialogue is frustratingly slow* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [A feeling with no object](/feelings-permission#feeling-no-object) | `thuwathuruer.` | *I'm anxious.* | I |
-| [Name its cause](/feelings-permission#feeling-no-object) | `thuwathuruer thahum blerulal.` | *I'm anxious, and the rain caused it.* | I |
-| [A feeling about an event](/feelings-permission#feeling-no-object) | `zalazun vowurol thawethamar` | *moved that Alazun walks* | I |
+| [A feeling with no object](/feelings#feeling-no-object) | `thuwathuruer.` | *I'm anxious.* | I |
+| [Name its cause](/feelings#feeling-no-object) | `thuwathuruer thahum blerulal.` | *I'm anxious, and the rain caused it.* | I |
+| [A feeling about an event](/feelings#feeling-no-object) | `zalazun vowurol thawethamar` | *moved that Alazun walks* | I |
 
 <PageBreak />
 
@@ -239,7 +239,7 @@ A [say word](/permission-consent#say-words) on `/h/`: **`h`** **`w`**, a reach v
 
 | This | vs | That |
 |------|----|------|
-| `thohem` *if* ([enough, not claimed](/causation#if)) | | `thahum` *because* ([enough, and a fact](/iff-fault#only-because)) |
+| `thohem` *if* ([enough, not claimed](/causation#if)) | | `thahum` *because* ([enough, and a fact](/because-and-iff#only-because)) |
 | `thohem` *if* ([other routes remain](/causation#only-if)) | | `thebem` *only if* ([the outcome needs it](/causation#only-if)) |
 | `thahum` *because* ([a cause, no blame](/fault#fault)) | | `thahul` *fault* ([someone did wrong](/fault#fault)) |
 | `thahum` *because* ([the condition](/cause#cause)) | | `thewom` *mechanism* ([how it is produced](/cause#cause)) |

@@ -15,25 +15,25 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | Label | Gloss | Example | Teach |
 |-------|-------|---------|-------|
 | **ABIL** | Hostless *can* / *can’t* (no single verb) | `hodaxol` | [Can and can't](/can-and-cant#ability-fallback) |
-| **AIMED** | Emotion locus: aimed at a target | `wawethumel` | [Feelings](/feelings-permission#emotion-compose) |
+| **AIMED** | Emotion locus: aimed at a target | `wawethumel` | [Feelings](/feelings#emotion-compose) |
 | **ASIDE** | An aside span | `th(hugowul)` | [Spans](/spans#asides) |
 | **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwuvam` | [Permission and consent](/permission-consent#say-words) |
 | **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Try](/try#try) |
-| **AWAY** | Emotion locus: moving off from a target | `wawethumum` | [Feelings](/feelings-permission#emotion-compose) |
+| **AWAY** | Emotion locus: moving off from a target | `wawethumum` | [Feelings](/feelings#emotion-compose) |
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thewom` | [CAUSE](/cause#cause) |
-| **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraer` | [Feelings](/feelings-permission#emotion-compose) |
+| **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraer` | [Feelings](/feelings#emotion-compose) |
 | **CITE** | A cite span: quoted wording | `d[azozon]` | [Spans](/spans#writing) |
 | **CLUES** | Evidential: reasoned from clues about this case | `theyom` | [How you know](/evidentiality#evidentiality) |
 | **CHOICE** | Say word answer: their call | `hwuvem` | [Permission and consent](/permission-consent#say-words) |
-| **COLLAPSE** | Emotion locus: out of fight, giving up | `wawethumual` | [Feelings](/feelings-permission#emotion-compose) |
+| **COLLAPSE** | Emotion locus: out of fight, giving up | `wawethumual` | [Feelings](/feelings#emotion-compose) |
 | **DECISION** | Pick-firmness mood | `thogem` | [Want and decide](/want-and-decide#decision) |
 | **DEDUCED** | Evidential: must hold if the premises hold | `thanam` | [How you know](/evidentiality#deduction) |
-| **FAWN** | Emotion locus: placating a target | `wawethumaom` | [Feelings](/feelings-permission#emotion-compose) |
-| **FLOWING** | Emotion motion: steady, a current you can ride | `wawethumom` | [Feelings](/feelings-permission#emotion-compose) |
+| **FAWN** | Emotion locus: placating a target | `wawethumaom` | [Feelings](/feelings#emotion-compose) |
+| **FLOWING** | Emotion motion: steady, a current you can ride | `wawethumom` | [Feelings](/feelings#emotion-compose) |
 | **FORBID** | Say word answer: no, forbid | `hwuvul` | [Contrary to](/contrary-to#contrary-to-say) |
 | **FORMER** | Episode standing: not the climate claimed now | `helam` | [Residue and former](/residue-and-former#residue) |
 | **IDENTITY** | Identity copula | `gorel` | [Predication](/predication#identity) |
-| **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Feelings](/feelings-permission#emotion-compose) |
+| **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Feelings](/feelings#emotion-compose) |
 | **INTUITION** | Evidential: gut sense you cannot fully spell out | `thabem` | [How you know](/evidentiality#evidentiality) |
 | **LIVE** | Evidential: sensed now, by any sense | `thugem` | [Knowing](/knowing#live-vs-memory) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thomam` | [Knowing](/knowing#may) |
@@ -48,13 +48,13 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **REPORTED** | Evidential: said or written by someone else | `thebam` | [How you know](/evidentiality#evidentiality) |
 | **REQUIRE** | Say word answer: require, ask for (*must*) | `hwuvol` | [Permission and consent](/permission-consent#say-words) |
 | **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Residue and former](/residue-and-former#residue) |
-| **RESISTING** | Emotion locus: pushing against a target | `wawethumuor` | [Feelings](/feelings-permission#emotion-compose) |
+| **RESISTING** | Emotion locus: pushing against a target | `wawethumuor` | [Feelings](/feelings#emotion-compose) |
 | **SCOPE** | Scope island `{ … }` | `{ hogugem zodozel gerulol }` | [Scope islands](/scope-islands#scope-islands) |
-| **SEEKING** | Emotion locus: turning to someone for comfort | `wawethumoem` | [Feelings](/feelings-permission#emotion-compose) |
-| **STATIC** | Emotion motion: not moving (held, frozen, numb) | `wawethumel` | [Feelings](/feelings-permission#emotion-compose) |
-| **SURGING** | Emotion motion: in waves or spikes | `wuwathuraer` | [Feelings](/feelings-permission#emotion-compose) |
-| **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruem` | [Feelings](/feelings-permission#emotion-compose) |
-| **VICARIOUS** | Emotion locus: felt for someone's sake | `wawethumom` | [Feelings](/feelings-permission#emotion-compose) |
+| **SEEKING** | Emotion locus: turning to someone for comfort | `wawethumoem` | [Feelings](/feelings#emotion-compose) |
+| **STATIC** | Emotion motion: not moving (held, frozen, numb) | `wawethumel` | [Feelings](/feelings#emotion-compose) |
+| **SURGING** | Emotion motion: in waves or spikes | `wuwathuraer` | [Feelings](/feelings#emotion-compose) |
+| **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruem` | [Feelings](/feelings#emotion-compose) |
+| **VICARIOUS** | Emotion locus: felt for someone's sake | `wawethumom` | [Feelings](/feelings#emotion-compose) |
 | **WANT** | Desire mood: lasting / unstated / passing | `thalom` | [Want and decide](/want-and-decide#want) |
 
 **Compare with:** [quasi](#quasi) (`-e-xROOT`) is not **NOTIONAL**.

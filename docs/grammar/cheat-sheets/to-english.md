@@ -61,7 +61,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `gadam` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `gaen` | join-relation open to (adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `gaham` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
-| `gahum` | BECAUSE clause hinge (explanatory reason) | [Because, iff, and only because](/iff-fault#only-because) | I |
+| `gahum` | BECAUSE clause hinge (explanatory reason) | [Because, iff, and only because](/because-and-iff#only-because) | I |
 | `galam` | AFTER clause hinge (just-after) | [Time hinges on a noun](/more-hinges#time-hinge-on-noun) | I |
 | `gan` | join-relation including (adjective + argument) | [Join-relations](/join-relations#join-relations) | I |
 | `ganem` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](/relations#proxy) | B |
@@ -72,7 +72,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `gegol` | mention marker (the span is a word or phrase as spelling) | [Mention](/spans-as-words#mention) | I |
 | `gegon` | name-string mention marker (the span is a name as spelling) | [Mention](/spans-as-words#mention) | I |
 | `geham` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](/relations#exchange) | B |
-| `gehom` | IFF clause hinge (biconditional) | [Because, iff, and only because](/iff-fault#only-because) | I |
+| `gehom` | IFF clause hinge (biconditional) | [Because, iff, and only because](/because-and-iff#only-because) | I |
 | `gen` | join-relation exclusive for (sole pick adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `genam` | AS-OF clause hinge (asserted whose-now / dated ledger) | [As-of (whose now)](/as-of#as-of) | A |
 | `genar` | AS-OF clause hinge (asserted whose-now / dated ledger) resume | [As-of (whose now)](/as-of#as-of) | A |

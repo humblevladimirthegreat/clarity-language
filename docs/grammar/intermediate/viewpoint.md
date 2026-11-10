@@ -14,7 +14,7 @@ English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) 
 
 A person’s front is the direction they face. For an object, use the front its design or current use makes forward; if that does not settle a front, make the frame clear from context.
 
-The [sake](/sakes#sake-inventory) roots are never a direction: after one of them, **`th`** starts a sake word, even when a root-shaped piece follows ([emotion compose](feelings-permission.md#emotion-compose)).
+The [sake](/sakes#sake-inventory) roots are never a direction: after one of them, **`th`** starts a sake word, even when a root-shaped piece follows ([emotion compose](feelings.md#emotion-compose)).
 
 > `yol vowurol hewuhothazozon.`
 >
