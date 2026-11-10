@@ -466,6 +466,8 @@ export type AnaphorBind = {
   ownSlot?: true;
   /** A tag **-n** whose tag an **-l** assignment holds (`zwal … zwan`): never a sentence (tag-pronouns.md#tag-pronouns). */
   placeholderHeld?: true;
+  /** A pair tag **-n** with one tag free and one a `zwan` holds (`zwan … zwaon`): never a sentence (tag-pronouns.md#tag-pairs). */
+  pairMixed?: true;
   /** A tag assigned after a `zual` / `zuam` / `zul` fence: bound, naming each member in turn (universals-domains.md#bound-tags). */
   each?: true;
   /** A recall of a tag that expired with a bound reach and has no earlier holder: never a sentence (universals-domains.md#bound-tags). */

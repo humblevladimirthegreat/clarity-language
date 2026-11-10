@@ -741,6 +741,24 @@ function assignTag(ctx: Ctx, word: TagWord, slot: WordSlot | undefined): void {
   if (named) ctx.anaphors.push({ pronoun: word, kind: "tag", antecedent: named, ...(each ? { each: true } : {}) });
 }
 
+/**
+ * First use of a bare tag **-n** over free tags: `zwanx` brings in one real person, calls them A, and adds their
+ * associates; a pair (`zwaon`) brings in two real people, one per letter. Inside a bound reach each tag is scoped like any
+ * other and expires with the reach.
+ */
+function introduceNames(ctx: Ctx, word: TagWord): void {
+  const vowels = word.family.vowels;
+  const base = referentKey(ctx, word);
+  const keys = vowels.map((vowel) => {
+    if (ctx.reach && !ctx.reach.shadowed.has(vowel)) ctx.reach.shadowed.set(vowel, undefined);
+    ctx.expired.delete(vowel);
+    const key = vowels.length > 1 ? `${base}:${vowel}` : base;
+    ctx.tags.set(vowel, { word, key, pseudonym: true });
+    return key;
+  });
+  ctx.referents.set(word, keys.sort().join("&"));
+}
+
 /** A `zual` / `zuam` / `zul` fence (not the kind itself, `zuan`): a tag right after it binds each member in turn (universals-domains.md#bound-tags). */
 function isQuantifierFence(join: LexWord): boolean {
   if (join.family.kind !== "joinMarker") return false;
@@ -776,14 +794,18 @@ function fillerHas(ctx: Ctx, filler: Filler, key: string): LexWord | undefined {
  * **-r** is the tagged referent, and **-n** the same when a `zwan` holds the tag; **-m** its part in the latest earlier event it filled a part of. A pair (`zwaor`) is
  * both at once: together on **-r** / **-n**, and their parts in the latest earlier event both took part in on **-m**.
  * A recall or share with a tag not assigned stays unbound (enforce rejects it); so does **-n** over a tag an **-l** holds,
- * marked `placeholderHeld`.
+ * marked `placeholderHeld`, and a pair **-n** with one tag free and one a `zwan` holds, marked `pairMixed`.
  */
 function recallTag(ctx: Ctx, word: TagWord): void {
   const bind: AnaphorBind = { pronoun: word, kind: "tag" };
   ctx.anaphors.push(bind);
   const bindings = word.family.vowels.map((vowel) => ctx.tags.get(vowel));
   if (bindings.some((binding) => !binding)) {
-    if (word.family.vowels.some((vowel) => ctx.expired.has(vowel))) bind.boundExpired = true;
+    if (word.ending === "n") {
+      // A free tag is new to **-n**, so the pair's other tag, already held, puts its two tags in different states.
+      if (bindings.some((binding) => binding && !binding.pseudonym)) bind.placeholderHeld = true;
+      else bind.pairMixed = true;
+    } else if (word.family.vowels.some((vowel) => ctx.expired.has(vowel))) bind.boundExpired = true;
     return;
   }
   const tagged = bindings as TagBinding[];
@@ -805,7 +827,8 @@ function recallTag(ctx: Ctx, word: TagWord): void {
     const fillers = Object.entries(anchor.fillers) as [RolePart, Filler][];
     const found = tagged.map((binding) => {
       for (const [role, filler] of fillers) {
-        const hit = fillerHas(ctx, filler, binding.key);
+        // The pair that brought two people in (`zwaon`) is each of them in its own event.
+        const hit = fillerHas(ctx, filler, binding.key) ?? (filler.words.includes(binding.word) ? binding.word : undefined);
         if (hit) return { role, word: hit };
       }
       return undefined;
@@ -826,6 +849,10 @@ function considerTag(ctx: Ctx, word: TagWord, slot: WordSlot | undefined): void 
   // `zwan` after a phrase assigns; alone it introduces while the tag is free, and otherwise recalls.
   else if (word.ending === "n" && !word.plural && word.family.vowels.length === 1 && (slot === "tag" || slot === "groupTag" || !ctx.tags.has(word.family.vowels[0]!))) {
     assignTag(ctx, word, slot);
+  }
+  // `zwanx` and a pair (`zwaon`) introduce the same way while every tag they name is free.
+  else if (word.ending === "n" && slot !== "tag" && slot !== "groupTag" && word.family.vowels.every((vowel) => !ctx.tags.has(vowel))) {
+    introduceNames(ctx, word);
   } else recallTag(ctx, word);
 }
 

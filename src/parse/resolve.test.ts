@@ -315,6 +315,29 @@ describe("resolve — tag pronouns (tag-pronouns.md#tag-pronouns)", () => {
     assert.doesNotThrow(() => parseText("zual gogozel zwal vezuvel. zwan vowurol."));
   });
 
+  it("introduces on first use: `zwanx` one person with associates, a pair on -n two people (tag-pronouns.md#tag-pairs)", () => {
+    // `zwanx` with A free brings in one person, called A; a later `zwan`, `zwar`, or `zwanx` is that person.
+    assert.deepEqual(tags("zwanx vowurol. zwan dodozel vayebel. zwar veruvol. zwanx vehohel."), ["zwan→zwanx", "zwar→zwanx", "zwanx→zwanx"]);
+    // A pair with both tags free brings in two people, one per letter.
+    assert.deepEqual(tags("zwaon vowurol. zwan dwon vayebel. zwaon veruvol."), ["zwan→zwaon", "dwon→zwaon", "zwaon→zwaon"]);
+    // The two are different people: O's later part is not A's.
+    assert.deepEqual(tags("zwaon vowurol. zalazun dwon vayebel. zazozon dwam vayebel. zazozon dwom vayebel."), ["dwon→zwaon", "dwam→zwaon", "dwom→dwon"]);
+    assert.deepEqual(tags("zwuen vowurol. zwur dwen vayebel."), ["zwur→zwuen", "dwen→zwuen"]);
+    assert.deepEqual(tags("zwaonx vowurol. zwor veruvol."), ["zwor→zwaonx"]);
+    // Each has a part in the event the pair entered with.
+    assert.deepEqual(tags("zwaon vowurol. zazozon dwam vayebel."), ["dwam→zwaon"]);
+    // Held by `zwan`, both forms recall, as before.
+    assert.deepEqual(tags("zeyel zwan deyel dwon vezuyol. zwaon vowurol. zwanx veruvol."), ["zwan→zeyel", "dwon→deyel", "zwaon→zeyel", "zwanx→zeyel"]);
+  });
+
+  it("scopes a first-use `zwanx` or pair inside a bound reach like any tag (universals-domains.md#bound-tags)", () => {
+    assert.deepEqual(tags("zual gogozel zwal vezuvel thohem blarl zwoen dwar vayebel. zwoen vowurol. zwon veruvol."), ["zwal→zual", "dwar→zual", "zwon→zwoen"]);
+    assert.throws(() => parseText("zual gogozel zwal vezuvel thohem blarl zwoen dwar vayebel. zwor vowurol."), /expires at the end of that sentence/);
+    assert.throws(() => parseText("zual gogozel zwal vezuvel thohem blarl zwonx dwar vayebel. zwor vowurol."), /expires at the end of that sentence/);
+    // The tag the fence bound is held by -l, so a pair over it is not a sentence.
+    assert.throws(() => parseText("zual gogozel zwal vezuvel thohem blarl zwaon vayebel."), /cannot stand where a -l assignment holds/);
+  });
+
   it("tags a whole group after a closed fence", () => {
     assert.deepEqual(tags("zodozel zogozel zam zwal vowurol. zwar veruvol."), ["zwal→zam", "zwar→zam"]);
     const share = resolveOf("zodozel zogozel zam zwal vowurol. zazozon dwam vayebel.").anaphors.find((a) => a.pronoun.raw === "dwam");

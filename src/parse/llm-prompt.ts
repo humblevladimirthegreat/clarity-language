@@ -88,7 +88,7 @@ export const GLOSS_READER = {
     ".about": "approximately; on a quoted span, a paraphrase",
     ".named": "used as a fixed name or title",
     ".again": "the same number as before",
-    ".name": "the name tagged earlier",
+    ".name": "a real person called by that letter, whose name is kept back: new the first time, the same one after (`tag.A+O.name`: two such people)",
     ".spelled": "a writing choice only; ignore",
     ".short": "a writing choice only; ignore",
   } as Record<string, string>,

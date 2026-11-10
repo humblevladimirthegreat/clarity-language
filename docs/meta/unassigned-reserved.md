@@ -215,7 +215,8 @@ Source: [pronouns.md](/tag-pronouns#tag-pronouns)
 - **closed (D-71):** a tag **-n** right after a `zual` / `zuam` / `zul` fence (`zual gogozel zwan`). A pseudonym is a constant, and a tag on such a fence binds each member in turn; use **-l**. Parser: `tagConstantBound`.
 - **closed (D-72):** a recall of a tag after its bound reach ended, with no earlier holder (`zual gogozel zwal vezuvel. zwar guzemel.`), and assigning a tag a fence bound while it is live (`zual gogozel zwal … zodozel zwal` inside the reach). The variable is out of scope, or would end early; keep the recall inside the reach, or use another tag. Parser: `tagBoundExpired`, `tagBoundRebind`.
 - **closed (D-73):** a tag on the `zul` that denies a `zual` fence (`zual gogozel zul zwal`). The denial leaves no member to name; *some cat A does not …* is `zogozel zwal … vul`. Parser: `tagNegatedEvery`.
-- **closed (D-70):** a bare tag **-n** while a **-l** assignment holds that tag (`zodozel zwal vowurol. zwan vayebel.`), and a pair or **-x** on **-n** over such a tag (`zwaon`, `zwanx`). Parser: `tagNameHeld`.
+- **closed (D-70):** a bare tag **-n** while a **-l** assignment holds that tag (`zodozel zwal vowurol. zwan vayebel.`), and a pair or **-x** on **-n** over such a tag (`zwaon`, `zwanx`), also when the pair's other tag is free. Parser: `tagNameHeld`.
+- **closed (D-74):** a pair on **-n** with one tag free and one held by a `zwan` (`zeyel zwan vowurol. zwaon veruvol.`). A pair's two tags are in the same state: both free (it brings two people in) or both held by a `zwan` (it recalls them); *A and a new person O* is `zwan zeyel zwon zam`. Parser: `tagPairMixed`.
 - **closed (D-56):** a tag in a holder seam (`theyemwar`). Parser: `holderSeamW`.
 
 ## Role letter + `w` + vowel + consonant
