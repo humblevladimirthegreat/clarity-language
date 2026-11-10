@@ -380,7 +380,7 @@ A [resume](/pronouns#resume-r) spells its antecedent's whole stem, so the antece
 | Resume of a prior content word | | `z-←someone` / `d-←tea` |
 | No antecedent, stem not in the lexicon | | `z-←"…"` (the stem itself) |
 | Fill-ask / unspecified member | `zar` | `z-wh` / `z-something` (as the docs require for that form) |
-| [Tag pronoun](/tag-pronouns#tag-pronouns) | `zwal` / `zwar` / `dwam` | `z-tag.A` (assign) / `z-←tag.A` (recall) / `d-←tag.A.part` (share) / `z-←tag.A.name` (**-n** recall of a name): the letter name, never the referent. An assigning tag rides in its phrase's bracket: `[z-dog \| z-tag.A]`, or after a fence's bracket for the whole group. A pair joins the letters with `+`: `z-←tag.A+O` |
+| [Tag pronoun](/tag-pronouns#tag-pronouns) | `zwal` / `zwar` / `dwam` | `z-tag.A` (assign) / `z-←tag.A` (recall) / `d-←tag.A.part` (share) / `z-tag.A.name` (**-n**, a pseudonym: a name, so no arrow, whether it assigns or recalls; a pair is `z-tag.A+O.name`): the letter name, never the referent. An assigning tag rides in its phrase's bracket: `[z-dog \| z-tag.A]`, or after a fence's bracket for the whole group. A pair joins the letters with `+`: `z-←tag.A+O` |
 | [Role pointer](/pronouns#role-pointers) | `zwuzer` / `zwuzar` / `dwuzor` | `z-←episode-agent.same` / `z-←episode-agent.other` / `d-←episode-agent.self` / `z-←episode-agent.unsaid` (reach, part, and event, never the person's name); `d-←episode-patient.same.new` (**-l**), `z-←episode-agent.same.part` (**-m**) |
 
 Do not write `z-←microphone` for a speaker antecedent.

@@ -1044,7 +1044,7 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
     if (bind.kind === "pointer") enforcePointer(bind);
     if (bind.antecedent) continue;
     if (bind.kind === "number") throw new ConstructionError("numberResumeUnbound", bind.pronoun.raw);
-    if (bind.kind === "tag" && bind.pronoun.ending === "n") throw new ConstructionError("tagNameUnbound", bind.pronoun.raw);
+    if (bind.kind === "tag" && bind.placeholderHeld) throw new ConstructionError("tagNameHeld", bind.pronoun.raw);
     if (bind.kind === "tag" && bind.pronoun.ending !== "l") throw new ConstructionError("tagUnbound", bind.pronoun.raw);
     if (bind.kind === "topic") throw new ConstructionError("topicUnbound", bind.pronoun.raw);
     if (bind.kind === "landmark") throw new ConstructionError("hookedJoinUnbound", bind.pronoun.raw);

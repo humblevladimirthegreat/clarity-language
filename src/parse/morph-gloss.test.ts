@@ -233,6 +233,12 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zwal bwol vezuyol. zwaor vowurol.", "z-tag.A | b-tag.O | v-tell . z-←tag.A+O | v-walk");
   });
 
+  it("glosses a pseudonym (tag -n) as a name, with no arrow, whether it assigns or recalls (glosses.md § Anaphors)", () => {
+    expectLine("zeyel zwan vowurol. zwan dodozel vayebel.", "[z-person | z-tag.A.name] | v-walk . z-tag.A.name | d-dog | v-see");
+    expectLine("zwan dwon vezuyol. zwaon vowurol. zwanx vezuvel.", "z-tag.A.name | d-tag.O.name | v-tell . z-tag.A+O.name | v-walk . z-tag.A.name-x | v-sleep");
+    expectLine("zodozel zwal vowurol. zeyel zwan vezuvel. zwan vayebel.", "[z-dog | z-tag.A] | v-walk . [z-person | z-tag.A.name] | v-sleep . z-tag.A.name | v-see");
+  });
+
   it("scientific and percent number writing", () => {
     expectLine("g+27e12", "g-27e12");
     expectLine("g+25%", "g-25yo");

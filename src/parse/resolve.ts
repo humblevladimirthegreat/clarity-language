@@ -49,7 +49,8 @@ type Anchor = { predicate: LexWord; fillers: Partial<Record<RolePart, Filler>> }
 type OpenClause = { anchor?: Anchor; before: number };
 
 /** What a tag names: the phrase it was assigned to (or the tag word itself for a new referent), its referent key, and whether the phrase is a name (**-n**), which a tag **-n** needs. */
-type TagBinding = { word: LexWord; key: string; named: boolean };
+/** A tag's holder; `pseudonym` when a `zwan` assigned it (tag-pronouns.md#tag-pronouns). */
+type TagBinding = { word: LexWord; key: string; pseudonym: boolean };
 
 /** What the talk is about now: the `/x/` word that set it, and the referent it names (topic.md#topic). */
 type Topic = { word: LexWord; key: string };
@@ -702,7 +703,8 @@ type GroupTag = { join: LexWord; words: LexWord[] };
 
 /**
  * Assign: on a package (`zodogal zwal`) a tag names that phrase, after a fence (`… zam zwal`) the whole group, and
- * alone (`zwal`) a new referent; a newer assignment takes the tag over.
+ * alone (`zwal`) a new referent; a newer assignment takes the tag over. Tag **-n** assigns a pseudonym the same way
+ * (`zeyel zwan`), and alone introduces one when the tag is free.
  */
 function assignTag(ctx: Ctx, word: TagWord, slot: WordSlot | undefined): void {
   const vowel = word.family.vowels[0]!;
@@ -711,8 +713,7 @@ function assignTag(ctx: Ctx, word: TagWord, slot: WordSlot | undefined): void {
   const key = group ? fillerKey(ctx, { words: group.words }) : referentKey(ctx, named ?? word);
   ctx.referents.set(word, key);
   if (named) ctx.referents.set(named, key);
-  const isName = group ? group.words.every((item) => item.ending === "n") : named?.ending === "n";
-  ctx.tags.set(vowel, { word: named ?? word, key, named: isName });
+  ctx.tags.set(vowel, { word: named ?? word, key, pseudonym: word.ending === "n" });
   if (named) ctx.anaphors.push({ pronoun: word, kind: "tag", antecedent: named });
 }
 
@@ -723,9 +724,10 @@ function fillerHas(ctx: Ctx, filler: Filler, key: string): LexWord | undefined {
 }
 
 /**
- * **-r** is the tagged referent, and **-n** the same when it was assigned to a name; **-m** its part in the latest earlier event it filled a part of. A pair (`zwaor`) is
- * both at once: together on **-r**, and their parts in the latest earlier event both took part in on **-m**.
- * A recall or share with a tag not assigned (or, for **-n**, not assigned to a name) stays unbound (enforce rejects it).
+ * **-r** is the tagged referent, and **-n** the same when a `zwan` holds the tag; **-m** its part in the latest earlier event it filled a part of. A pair (`zwaor`) is
+ * both at once: together on **-r** / **-n**, and their parts in the latest earlier event both took part in on **-m**.
+ * A recall or share with a tag not assigned stays unbound (enforce rejects it); so does **-n** over a tag an **-l** holds,
+ * marked `placeholderHeld`.
  */
 function recallTag(ctx: Ctx, word: TagWord): void {
   const bind: AnaphorBind = { pronoun: word, kind: "tag" };
@@ -734,7 +736,10 @@ function recallTag(ctx: Ctx, word: TagWord): void {
   if (bindings.some((binding) => !binding)) return;
   const tagged = bindings as TagBinding[];
   const pair = tagged.length > 1;
-  if (word.ending === "n" && tagged.some((binding) => !binding.named)) return;
+  if (word.ending === "n" && tagged.some((binding) => !binding.pseudonym)) {
+    bind.placeholderHeld = true;
+    return;
+  }
   if (word.ending === "r" || word.ending === "n") {
     bind.antecedent = tagged[0]!.word;
     if (pair) bind.antecedents = tagged.map((binding) => binding.word);
@@ -766,7 +771,10 @@ function recallTag(ctx: Ctx, word: TagWord): void {
 
 function considerTag(ctx: Ctx, word: TagWord, slot: WordSlot | undefined): void {
   if (word.ending === "l") assignTag(ctx, word, slot);
-  else recallTag(ctx, word);
+  // `zwan` after a phrase assigns; alone it introduces while the tag is free, and otherwise recalls.
+  else if (word.ending === "n" && !word.plural && word.family.vowels.length === 1 && (slot === "tag" || slot === "groupTag" || !ctx.tags.has(word.family.vowels[0]!))) {
+    assignTag(ctx, word, slot);
+  } else recallTag(ctx, word);
 }
 
 /** Which sense of its stem a word carries: **-l** / **-m**, or a resume's own pin or its antecedent's (resume-sense.md#resume-sense). */

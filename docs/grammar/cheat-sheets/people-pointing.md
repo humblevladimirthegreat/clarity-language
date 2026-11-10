@@ -60,14 +60,15 @@ A [tag](/tag-pronouns#tag-pronouns) is a label you choose (role letter, `w`, vow
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | Assign: tag **-l** after a phrase | `zodozel zwal` | *a dog, call it A* | I |
-| A new referent with no name | `zwal` | *someone A* | I |
+| A placeholder, no one in particular | `zwal` | *suppose A* | I |
 | Recall | `zwar` / `dwar` / `bwar` | *A* | I |
-| Recall a tag assigned to a name | `zwan` / `dwan` / `bwan` | *A* (a named one) | I |
+| A pseudonym: a real person, name kept back (alone, or after a person phrase) | `zwan` / `dwan` / `bwan` | *a friend, call her A* | I |
 | A's part in the latest event | `zwam` / `dwam` / `bwam` | *what A did* | I |
 | A and associates | `zwarx` / `zwanx` | *A and associates* | I |
 | Two tags (six stacks: `zwaor` `zwaer` `zwoer` `zwuar` `zwuor` `zwuer`) | `zwaor` | *A and O* | I |
 | Two tags, their parts | `zwaom` | *what A and O did* | I |
 | Two tags and associates | `zwaorx` | *A, O, and associates* | I |
+| Two pseudonyms | `zwaon` | *A and O*, two real people | I |
 
 ## The topic {#topic}
 

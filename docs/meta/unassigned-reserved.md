@@ -212,6 +212,7 @@ Source: [pronouns.md](/tag-pronouns#tag-pronouns)
 - **open:** a tag on a word that is already a fixed pronoun: a special pronoun, the generic or topic pronoun, or another tag (`zuwen zwal`, `zalen zwal`, `zwar zwel`). It already has one short form, and a second label for the same pronoun would only rename it. Parser: `tagPronoun`.
 - **open:** a tag pair with **-l** (`zwael`). After a two-item list it could tag the items in order or the group as one, so neither reading is guessable; each tag is assigned on its own. Parser: `tagPairAssign`.
 - **open:** **-x** on a tag pair **-m** (`zwaemx`), as on any share.
+- **closed (D-70):** a bare tag **-n** while a **-l** assignment holds that tag (`zodozel zwal vowurol. zwan vayebel.`), and a pair or **-x** on **-n** over such a tag (`zwaon`, `zwanx`). Parser: `tagNameHeld`.
 - **closed (D-56):** a tag in a holder seam (`theyemwar`). Parser: `holderSeamW`.
 
 ## Role letter + `w` + vowel + consonant

@@ -464,6 +464,8 @@ export type AnaphorBind = {
   pointerVowel?: PointerVowel;
   /** A self pointer (`o`) that would name its own slot (`zwuzor` in `/z/`): never a sentence. */
   ownSlot?: true;
+  /** A tag **-n** whose tag an **-l** assignment holds (`zwal … zwan`): never a sentence (tag-pronouns.md#tag-pronouns). */
+  placeholderHeld?: true;
   /** Absent when no prior match. */
   antecedent?: LexWord;
   /** A tag pair (`zwaor`): each tag's antecedent, in written order; `antecedent` is the first. */

@@ -206,7 +206,7 @@ export const Bar = wordToken("Bar");
 export const BarPlain = wordToken("BarPlain", [Bar]);
 /** The first bar right after a closed `ua` fence: the whole fence is its ranked item (comparatives.md § every bar). Set by `markContext`. */
 export const FenceBar = wordToken("FenceBar", [Bar]);
-/** A bare tag **-l** (`zwal`): it names the phrase right before it, or a new referent (tag-pronouns.md#tag-pronouns). */
+/** A bare tag **-l** (`zwal`) or single **-n** (`zwan`): it names the phrase right before it, or a new referent (tag-pronouns.md#tag-pronouns). */
 export const TagZ = wordToken("TagZ");
 export const TagD = wordToken("TagD");
 export const TagB = wordToken("TagB");
@@ -465,7 +465,9 @@ export function classifyTokenBranch(word: LexWord): { type: AgebenTokenType; bra
 
   if (pos === "w" && isAsOfOverlay(word)) return { type: WAsOf, branch: "content" };
   if (pos === "w" && word.overlay?.kind === "pairing") return { type: WPairing, branch: "content" };
-  const tag = family.kind === "tag" && word.ending === "l" && !word.plural && pos ? TAG_BY_POS[pos] : undefined;
+  // Tag **-l**, or a single tag **-n** (a pseudonym), can name the phrase before it (tag-pronouns.md#tag-pronouns).
+  const assigns = word.ending === "l" || (word.ending === "n" && family.kind === "tag" && family.vowels.length === 1);
+  const tag = family.kind === "tag" && assigns && !word.plural && pos ? TAG_BY_POS[pos] : undefined;
   if (tag) return { type: tag, branch: "tagAssign" };
   if (pos === "g" && word.gl) return { type: GGl, branch: "content" };
   // An intention adverb covers the whole clause like a `/th/` word: it can be a bar or a `uom` zone (clause.md#intention-adverbs).

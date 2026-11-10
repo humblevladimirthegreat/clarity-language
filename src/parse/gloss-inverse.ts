@@ -311,10 +311,10 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
   // A form indexed with its -x already on (a holder from a doc line, `thevemebezalx`).
   if (plural) for (const form of index.forms.get(text) ?? []) out.add(form);
 
-  // Tag pronoun: `tag.A` → `wa` + **-l**; `←tag.A` is **-r**, `←tag.A.part` is **-m**, `←tag.A.name` is **-n**; a pair `←tag.A+E` is `wae`.
+  // Tag pronoun: `tag.A` → `wa` + **-l**; `←tag.A` is **-r**, `←tag.A.part` is **-m**, `tag.A.name` (a pseudonym) is **-n**; a pair `←tag.A+E` is `wae`.
   const tag = core.match(/^((?:th|gl|bl|[zdbvgwhxy])-)?(←)?tag\.([AEOU](?:\+[AEOU])?)(\.part|\.name)?$/);
   if (tag) {
-    const ending = !tag[2] ? "l" : tag[4] === ".part" ? "m" : tag[4] === ".name" ? "n" : "r";
+    const ending = tag[4] === ".name" ? "n" : !tag[2] ? "l" : tag[4] === ".part" ? "m" : "r";
     out.add(`${(tag[1] ?? "").replace(/-$/, "")}w${tag[3]!.replace("+", "").toLowerCase()}${ending}${suffix}`);
     return [...out];
   }

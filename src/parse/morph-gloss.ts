@@ -1006,10 +1006,11 @@ function sensePieces(
 ): string[] {
   const family = word.family;
   // A tag glosses its letter name, never the referent: `tag.A` assigns, `←tag.A` recalls, `←tag.A.part` shares;
-  // a pair is `←tag.A+E` (glosses.md § Anaphors).
+  // a pseudonym is a name, so `tag.A.name` takes no arrow whether it assigns or recalls; a pair is `←tag.A+E` (glosses.md § Anaphors).
   if (family.kind === "tag") {
     const name = `tag.${family.vowels.map((vowel) => vowel.toUpperCase()).join("+")}`;
-    return [word.ending === "l" ? name : `←${name}${word.ending === "m" ? ".part" : word.ending === "n" ? ".name" : ""}`];
+    if (word.ending === "n") return [`${name}.name`];
+    return [word.ending === "l" ? name : `←${name}${word.ending === "m" ? ".part" : ""}`];
   }
   // A say word: reach, whose say, the answer, and how it stands (`h-episode-patient-ALLOW-said`; glosses.md § Say words).
   if (family.kind === "say") {
