@@ -12,7 +12,7 @@ English sometimes labels people to keep them apart: *call the first one A*, *sup
 | Ageben | Use | English |
 |--------|-----|---------|
 | `zodozel zwal` | a phrase, then tag + **-l** in the same role: assign | *a dog, call it A* |
-| `zwal` | tag + **-l** with no phrase before it | *suppose A*: a placeholder, no one in particular |
+| `zwal` | tag + **-l** with no phrase before it | *someone, call them A*; *suppose A*: a placeholder, no one in particular |
 | `zwar` / `dwar` / `bwar` | tag + **-r**: the one tagged A, in that role | *A* |
 | `zwan` / `dwan` / `bwan` | tag + **-n**: a pseudonym, a real person whose name you keep back | *a friend, call her A* |
 | `zwam` / `dwam` / `bwam` | tag + **-m**: A's part in the latest event A took part in | *what A did* |

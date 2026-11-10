@@ -184,7 +184,7 @@ Put a kind after it for *every* member of that kind: `zual godozel` is *every do
 >
 > "There is a cat that every dog sees." (one cat)
 
-Who did what never changes: in both, the dogs see and the cat is seen. What changes is whether one cat serves for every dog. With just one such phrase, the order changes nothing. The reach also runs on into a later sentence that points back to the phrase.
+Who did what never changes: in both, the dogs see and the cat is seen. What changes is whether one cat serves for every dog. With just one such phrase, the order changes nothing. The reach also runs on into the sentence a [stand-in](/dependents#dependent-clauses) in it points to.
 
 ### Rank (`o`) {#rank-o}
 <a id="set-joins-and-rank-joins"></a>

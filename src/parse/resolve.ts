@@ -827,8 +827,10 @@ function recallTag(ctx: Ctx, word: TagWord): void {
     const fillers = Object.entries(anchor.fillers) as [RolePart, Filler][];
     const found = tagged.map((binding) => {
       for (const [role, filler] of fillers) {
-        // The pair that brought two people in (`zwaon`) is each of them in its own event.
-        const hit = fillerHas(ctx, filler, binding.key) ?? (filler.words.includes(binding.word) ? binding.word : undefined);
+        // A pair word (`zwaon` bringing two people in, `zwaor` recalling them) is each of them in its own event.
+        const hit =
+          fillerHas(ctx, filler, binding.key) ??
+          filler.words.find((item) => item === binding.word || (item.family.kind === "tag" && referentKey(ctx, item).split("&").includes(binding.key)));
         if (hit) return { role, word: hit };
       }
       return undefined;

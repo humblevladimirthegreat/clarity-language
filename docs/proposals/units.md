@@ -223,7 +223,7 @@ A checkpoint item that uses a form now taught later is dropped, not rewritten, p
 
 Phase 1 runs through subagents, per [running with subagents](../meta/procedures/proposals.md#running-with-subagents): one fresh subagent per unit, in sequence. The orchestrator writes each brief, runs the gates, and commits. If the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate-on-stop) before the session ends. Findings that change the plan [stop and alert](../meta/procedures/proposals.md#stop-and-alert).
 
-**Every subagent runs on `fable`.** The orchestrator passes `model: "fable"` and the unit's effort on every launch, including the mechanical units and any fresh subagent started for what a stopped one left. A promotion makes `fable` cheap for now, so there is no saving in a smaller model.
+**Use `fable` wherever a unit would otherwise name `opus`.** A promotion makes `fable` cheap for now. A unit that would normally run on `sonnet` (a mechanical step, per [step 7](../meta/procedures/proposals.md#running-with-subagents)) still names `sonnet`. No unit in phase 1 is mechanical in that sense: each one writes code, teaching prose, or checkpoint word banks, so all six name `fable`. The orchestrator passes the unit's `model` and effort on every launch, including a fresh subagent started for what a stopped one left.
 
 ### Phase 1: units in the sidebar
 
