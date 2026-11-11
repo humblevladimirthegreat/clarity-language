@@ -80,6 +80,8 @@ export type EditorOutcome = {
 export type EditorFlow = {
   id: string;
   lesson: string;
+  /** Later lessons whose cues also open this flow. */
+  alsoFor?: string[];
   questions: EditorQuestion[];
   forms: EditorForm[];
 };
@@ -162,6 +164,12 @@ export function outcomeFor(flow: EditorFlow, answers: Readonly<Record<string, st
     const parts: BreakdownPart[] = [];
     let lead = "";
     form.pieces.forEach((piece, i) => {
+      // A space ends a word: what came before it is a part of its own (`thomam` before a feeling word).
+      if (!piece.reads.length && texts[i] === " ") {
+        if (lead) parts.push({ text: lead });
+        lead = "";
+        return;
+      }
       if (!piece.reads.length) {
         lead += texts[i];
         return;

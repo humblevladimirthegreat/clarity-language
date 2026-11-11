@@ -427,6 +427,7 @@
   },
   "feeling": {
     "lesson": "what-a-feeling-wants",
+    "alsoFor": ["feelings"],
     "commands": { "feel": {} },
     "questions": [
       {
@@ -456,6 +457,14 @@
         "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
       },
       {
+        "id": "cause",
+        "prompt": "Has it happened?",
+        "choices": [
+          { "value": "it has", "label": "yes, or it's happening now" },
+          { "value": "it may", "label": "not yet: it may come" }
+        ]
+      },
+      {
         "id": "sake",
         "prompt": "Which need?",
         "choices": [
@@ -477,6 +486,32 @@
       }
     ],
     "forms": [
+      {
+        "when": { "cause": "it may" },
+        "lead": { "section": "settled", "row": "could be", "col": "-m" },
+        "oneWord": true,
+        "breakdown": true,
+        "parts": [
+          {
+            "formula": { "section": "sakes", "line": "Sake word" },
+            "slots": {
+              "sake": { "section": "sakes", "table": 1, "cell": "{sake}" },
+              "stance": { "section": "sakes", "table": 2, "row": "{stance}", "col": "Stance" },
+              "ending": { "section": "sakes", "table": 2, "col": "{ending}", "take": "ending" }
+            }
+          },
+          { "section": "feelings", "table": 2, "cell": "{urge}" },
+          { "section": "feelings", "line": "How long it lasts", "item": "{duration}", "take": "ending" }
+        ],
+        "gloss": [
+          { "section": "settled", "row": "could be", "take": "row" },
+          { "section": "sakes", "table": 1, "cell": "{sake}", "take": "english" },
+          { "section": "sakes", "table": 2, "row": "{stance}", "col": "Stance", "take": "english" },
+          { "section": "settled", "col": "{ending}", "take": "col" },
+          { "section": "feelings", "table": 2, "cell": "{urge}", "take": "english" },
+          { "section": "feelings", "line": "How long it lasts", "item": "{duration}", "take": "english" }
+        ]
+      },
       {
         "oneWord": true,
         "breakdown": true,

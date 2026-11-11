@@ -543,7 +543,7 @@ Grammar cheat sheets live in `docs/grammar/cheat-sheets/`, one lookup page per l
 | Gloss format | [glosses.md](glosses.md) |
 | Band gates / reading order | [learning-levels.md](learning-levels.md) ([gates](learning-levels.md#gates), [cross-doc path](learning-levels.md#cross-doc-path)) |
 | Doc content / teaching order | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns), [Compare with](#compare-with)); wording and voice: [doc-style.md](doc-style.md), [claritish-style.md](claritish-style.md) |
-| Goals / feature criteria | [purpose.md](../grammar/purpose.md) (psych aims); [feature-criteria.md](feature-criteria.md) (test for a new psych feature); [introduction.md](../grammar/introduction.md) (grammar design, [cue tables](../grammar/introduction.md#cues)) |
+| Goals / feature criteria | [purpose.md](../grammar/purpose.md) (psych aims); [feature-criteria.md](feature-criteria.md) (test for a new psych feature); [introduction.md](../grammar/introduction.md) (grammar design, structural feature menu, [cue tables](../grammar/introduction.md#cues)) |
 | Clause grammar (one clause) | [clause.md](/clause) |
 | Hosted relation catalog | [relations.md](/relations) |
 | Dependents / continue (`/x/`, stand-ins) | [dependents.md](/dependents) |

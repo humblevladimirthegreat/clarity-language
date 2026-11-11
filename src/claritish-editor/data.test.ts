@@ -109,6 +109,7 @@ describe("editor data", () => {
       "wants-and-plans",
       "decisions-and-tries",
       "what-a-feeling-wants",
+      "feelings",
       "tone-marks",
     ]);
   });
@@ -192,10 +193,18 @@ describe("editor data", () => {
 
   it("gives a feeling word from the first two answers and the defaults", () => {
     const flow = data.flows.feeling!;
-    assert.deepEqual(flow.questions.map((q) => q.id), ["stance", "urge", "duration", "sake", "ending"]);
+    assert.deepEqual(flow.questions.map((q) => q.id), ["stance", "urge", "duration", "cause", "sake", "ending"]);
     const defaults = Object.fromEntries(flow.questions.map((q) => [q.id, q.choices[0]!.value]));
     const outcome = outcomeFor(flow, { ...defaults, stance: "unmet", urge: "move off" })!;
     assert.equal(outcome.form, "thudathumum");
+  });
+
+  it("puts `thomam` before the feeling word for a cost that may come", () => {
+    const flow = data.flows.feeling!;
+    const outcome = outcomeFor(flow, { stance: "unmet", urge: "move off", duration: "-r", cause: "it may", sake: "competence", ending: "-m" })!;
+    assert.equal(outcome.form, "thomam thuwathumur");
+    assert.equal(outcome.breakdown![0]!.text, "thomam");
+    assert.ok(outcome.gloss.includes("could be"), outcome.gloss.join(", "));
   });
 
   it("can insert every cheat sheet form from a card or a command", () => {

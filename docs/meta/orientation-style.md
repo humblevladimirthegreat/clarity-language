@@ -16,6 +16,7 @@ These are the rules this page adds. All of them are judgment rules: only a reade
 | Nothing assumes the reader has opened another page | [The reader](#reader) |
 | No benefit sentence claims more than Limits does | [Calibrated claims](#calibrated-claims) |
 | A tour entry says what English blurs, what Ageben marks, and what that helps you do, and stops | [The feature entry](#feature-entry) |
+| A menu row names what English leaves open and what Ageben does, and stops | [The feature menu](#feature-menu) |
 | A spelled form appears only where it is fully glossed | [Forms and notation](#forms-notation) |
 | No capitalized gloss labels and no cue notation | [Forms and notation](#forms-notation) |
 | Each topic has one owning page, and the other page gives it one sentence | [One owner per topic](#one-owner) |
@@ -98,6 +99,21 @@ An entry is about something the grammar or vocabulary does. A good practice that
 
 The groups above the entries (an aim, then a thinking trap) each get a short opener. An aim's opener says what the aim is, in a full sentence about the language. A trap's opener says what goes wrong in thinking. Neither previews the entries one by one ([one owner per topic](#one-owner)).
 
+## The feature menu
+<a id="feature-menu"></a>
+
+The introduction's [features that show the design](../grammar/introduction.md#worth-a-look) is a menu of structural features for a visitor who wants to see the structural goals at work. It is not a tour: it shows the grammar, not what the grammar does for a person, so psychological features stay on Why Ageben.
+
+- **Groups.** One H3 per structural goal, each with a one-sentence opener about the language, then a table.
+- **Columns.** **Feature** (a plain English name, linked to the anchor that teaches it), **What English leaves open**, and **Level**.
+- **A row.** One or two sentences: the English case first, then what Ageben does. The grammar fact is stated plainly ([calibrated claims](#calibrated-claims)).
+- **No forms.** No Ageben spelling, placement rule, inventory, or term the row does not gloss.
+- **Level in words.** Beginner, Intermediate, or Advanced. The **B** / **I** / **A** tags are defined under How to learn, which this reader has not read.
+- **Link target.** An anchor whose first paragraph a newcomer can follow without having read anything else. When a page's opening leans on earlier pages, link a later H3 that does not, or pick another feature.
+- **Scope.** Structural features only. A feature the tour or [Ageben at a glance](../grammar/purpose.md#at-a-glance) already shows gets no row.
+
+The opening paragraph says once that the sidebar order is still the way to learn the language, and links How to learn.
+
 ## Forms and notation
 <a id="forms-notation"></a>
 
@@ -124,6 +140,7 @@ The two pages overlap by nature, so each topic has one owner. The other page giv
 | Limits, criticisms | Why Ageben |
 | The name | Introduction |
 | Structural goals, and the tools they make possible | Introduction |
+| Structural feature menu | Introduction |
 | Reading order, sidebar groups, table columns | Introduction, under How to learn |
 | License, acknowledgments | Introduction |
 | What Claritish is | The Claritish track. Each page mentions it once in the body, and Why Ageben may repeat it in Next |
@@ -159,7 +176,7 @@ The introduction does three jobs, and each has its own register. Keep them from 
 
 | Part | Register | Rules |
 |------|----------|-------|
-| The name, purpose, structural goals, tools | Overview | Everything on this page. Headings are plain claims a visitor can read alone (a specialist adjective such as *referential* is not one). One new term per sentence, as in [plain language](doc-style.md#plain-language-no-assumed-linguistics) |
+| The name, purpose, structural goals, tools, the feature menu | Overview | Everything on this page. Headings are plain claims a visitor can read alone (a specialist adjective such as *referential* is not one). One new term per sentence, as in [plain language](doc-style.md#plain-language-no-assumed-linguistics) |
 | How to learn, table columns | Site manual | [Interface instructions](doc-style.md#interface-instructions): the steps in order in one short paragraph, then the sidebar groups and tools in a table, each with what it is for and when to open it. Say each instruction once. This section defines the column names for every other page, so each definition must read alone |
 | License, acknowledgments | Terms and thanks | License wording is precise before it is friendly, and may be third person. It still follows punctuation and plain-language rules where precision allows. Acknowledgments are author *I*, and vary their sentence openings |
 

@@ -114,7 +114,7 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 | 85 | The streets are full of people. | `zeyelx thubom zol gral al boraholx.` | [z-person-x \| th-PATTERN \| z-rank/more \| g-amount] \| [in \| b-road-x] | covered |
 | 86 | Sugar tastes sweet. | `zual gunedam godem thubom.` | [z-everything \| g-sugar] \| g-sweetness \| th-PATTERN | covered |
 | 87 | The fire feels hot. | `zavulur gohamul thugem.` | [z-←fire \| g-hot] \| th-LIVE | covered |
-| 88 | The little girl seemed lonely. | `thawethumam theyomoyoyor.` | th-relatedness-unmet-modifiable-STAYING-OPEN \| th-CLUES-←girl | by design (G-01) |
+| 88 | The little girl seemed lonely. | `thawethumoem theyomoyoyor.` | th-relatedness-unmet-modifiable-TOWARD-OPEN \| th-CLUES-←girl | by design (G-01) |
 | 89 | The little boy's father had once been a sailor. | `glemugel zeyel gwozahaval growubal bloboyol gamezem helam.` | `[gl-male \| z-person \| g-role-agent-ship \| [g-#-e-1 \| [bl-boy \| g-small]]] \| h-FORMER` | covered |
 | 90 | I have lost my blanket. | `zuwen haram dayulam om buwen valurum.` | `z-speaker \| h-RESIDUE \| [d-blanket \| [used-by \| b-speaker]] \| v-loss` | covered |
 | 91 | A robin has built his nest in the apple tree. | `zeruloxebezel haram dunolal voguyol al baledexedalol.` | z-red-x-bird \| h-RESIDUE \| d-nest \| v-construct \| [in \| b-apple-x-tree] | covered |
@@ -201,7 +201,7 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 | 172 | He proved himself trustworthy. | `zazozon thevum dazozor gegowom verenom.` | z-Azozon \| th-MEMORY \| [d-←Azozon \| g-trust] \| v-proof | covered |
 | 173 | We could see ourselves in the water. | `zuwenx thevum duwerx vayebel al bowulal.` | z-speaker-x \| th-MEMORY \| d-←speaker-x-x \| v-see \| [in \| b-drinking-water] | covered |
 | 174 | Do it yourself. | `yol zawan zal vuzubam.` | y-command \| [z-listener \| z-and] \| v-effort | covered |
-| 175 | I feel ashamed of myself. | `zuwen thawethumem bluwer.` | `z-speaker \| [th-relatedness-unmet-modifiable-AIMED-OPEN \| bl-←speaker]` | covered |
+| 175 | I feel ashamed of myself. | `zuwen thawethumum.` | `z-speaker \| th-relatedness-unmet-modifiable-AWAY-OPEN` | covered |
 | 176 | Sit here by yourself. | `yol zawan zal vehohel om buwen.` | y-command \| [z-listener \| z-and] \| v-sit \| [near \| b-speaker] | covered |
 | 177 | The dress of the little princess was embroidered with roses, the national flower of the Country. | `dedobal om boyoyol gamezem gegobom venewul aol barelalx. zarelarx gevelal gobom blahal.` | `[d-dress \| [used-by \| [b-girl \| g-small \| g-leadership]]] \| v-needle \| [using \| b-rose-x] . [z-←rose-x-x \| g-flower \| [g-part-of \| bl-country]]` | covered |
 | 178 | They wore red caps, the symbol of liberty. | `zeyelx thevum danobalx gerulol vedobal. zanobarx gezugal gehugom blezahem.` | z-person-x \| th-MEMORY \| [d-hat-x \| g-red] \| v-dress . [z-←hat-x-x \| g-symbols \| [g-topic \| b-liberty]] | covered |

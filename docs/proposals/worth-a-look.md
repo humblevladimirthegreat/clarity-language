@@ -1,6 +1,6 @@
 # Worth a look: structural highlights on introduction.md
 
-**Status:** PROPOSED. 2026-11-11: user decided no emoji or other marker anywhere (heading, sidebar, entries).
+**Status:** Ready to implement. 2026-11-11 user decisions: no emoji or other marker anywhere (heading, sidebar, entries); the heading is *Features that show the design* (not *Worth a look*, which fails the plain-claim heading rule); Built to be sung keeps one row (vowel pitch stays in reserve, since it is a speech feature song drops and shows singability less directly than word shape).
 **Related:** [introduction.md](../grammar/introduction.md), [purpose.md](../grammar/purpose.md), [orientation-style.md](../meta/orientation-style.md), [grammar-docs.md](../meta/grammar-docs.md#what-belongs-where), [lint-forward-links.ts](../../scripts/lint-forward-links.ts)
 **Depends on:** none
 **Design authority:** *none*. It adds an orientation section and editor notes. No form or reading changes.
@@ -119,7 +119,7 @@ Dropped from the earlier draft: `locative-relations` (giving source and goal the
 
 ## Plan
 
-One session, no subagents: one page and two editor notes, small enough to hold in context.
+One session, no subagents: one page and two editor notes, small enough to hold in context. Suggested session: Opus at medium reasoning effort.
 
 1. **Editor notes.** Make the `orientation-style.md` and `grammar-docs.md` edits above, so the section is written to a stated rule.
 2. **Cold start.** For each target, read only the target H3's first paragraph or two. Can someone who has read nothing else follow it? If not, move the link to a better anchor on the same page, or swap in a reserve row.
@@ -149,5 +149,4 @@ If the user says to stop partway, [consolidate the proposal](../meta/procedures/
 
 ## Open decisions
 
-1. **Heading wording.** Options: *Features that show the design*; *Where the design shows*; *Worth a look* (fails the plain-claim heading rule). **Recommendation:** *Features that show the design*. It reads alone and says what the rows are.
-2. **One row under Built to be sung.** Options: keep one row; add vowel pitch from the reserve list. **Recommendation:** keep one row. Vowel pitch is a speech feature that song drops, so it shows singability less directly than word shape does.
+None. Log any that arise during the run here, with a **Recommendation:**.

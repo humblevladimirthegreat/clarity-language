@@ -45,6 +45,8 @@ type FormulaPart = { formula: SheetRef; swap?: SheetRef; slots: Record<string, S
 type Part = SheetRef | FormulaPart;
 type FlowSpec = {
   lesson: string;
+  /** Later lessons whose cues also open this flow; its forms stay credited to `lesson`. */
+  alsoFor?: string[];
   /** Slash command name → answers it preselects. */
   commands?: Record<string, Record<string, string>>;
   questions: {
@@ -59,6 +61,8 @@ type FlowSpec = {
     placement?: Placement;
     /** Join the parts with nothing, as one word (a feeling), not with a space (`thanathum blehon`). */
     oneWord?: boolean;
+    /** A word of its own before the parts, then a space (`thomam` before a feeling word). */
+    lead?: SheetRef;
     breakdown?: boolean;
     parts: Part[];
     gloss: SheetRef[];
@@ -298,7 +302,7 @@ function buildFlow(sheet: Sheet, id: string, spec: FlowSpec, problems: string[])
   const forms: EditorForm[] = spec.forms.map((f) => {
     if (f.placement && !PLACEMENTS.includes(f.placement)) problems.push(`${where}: unknown placement \`${f.placement}\``);
     const piece = (ref: SheetRef) => refPiece(sheet, ref, spec.questions, f.when ?? {}, (path, message) => problems.push(`${where}: ${path}: ${message}`));
-    const pieces: EditorPiece[] = [];
+    const pieces: EditorPiece[] = f.lead ? [piece(f.lead), literal(" ")] : [];
     f.parts.forEach((part, i) => {
       if (i && !f.oneWord) pieces.push(literal(" "));
       try {
@@ -318,7 +322,7 @@ function buildFlow(sheet: Sheet, id: string, spec: FlowSpec, problems: string[])
   for (const answers of answerPaths(spec.questions)) {
     if (!forms.some((f) => Object.entries(f.when ?? {}).every(([q, v]) => answers[q] === v))) problems.push(`${where}: no form for ${pathName(answers)}`);
   }
-  return { id, lesson: spec.lesson, questions, forms };
+  return { id, lesson: spec.lesson, ...(spec.alsoFor ? { alsoFor: spec.alsoFor } : {}), questions, forms };
 }
 
 export function buildEditorData(sources: EditorSources = readSources()): { data: EditorData; problems: string[] } {
@@ -379,7 +383,7 @@ export function buildEditorData(sources: EditorSources = readSources()): { data:
     }
     const flow = flows[row.flow ?? ""];
     if (!flow) problems.push(`${where}: unknown flow \`${row.flow}\``);
-    else if (flow.lesson !== lesson) problems.push(`${where}: flow ${flow.id} belongs to ${flow.lesson}, not ${lesson}`);
+    else if (flow.lesson !== lesson && !flow.alsoFor?.includes(lesson)) problems.push(`${where}: flow ${flow.id} belongs to ${flow.lesson}, not ${lesson}`);
     const defaults: Record<string, string> = {};
     for (const pair of splitList(row.defaults?.replace(/;/g, "|"))) {
       const [q, v] = pair.split("=").map((s) => s.trim());

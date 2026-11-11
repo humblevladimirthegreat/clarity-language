@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-*I'm anxious* does not say whether the feeling is a wave that will pass or a mood that has settled in. *I'm scared* sounds as if the danger is already here, when it may never come. Ageben says how long the feeling lasts and whether its cause is real or only predicted, and adds six more pulls, such as freezing or keeping the peace.
+*I'm always anxious* makes a mood that has settled in sound like who you are, and *for a second I was furious* is soon remembered as plain fury. *I'm scared it'll go wrong* sounds as if the danger is already here, when it may never come. Ageben says how long the feeling lasts and whether its cause is real or only predicted, and adds six more pulls, such as freezing or keeping the peace.
 
 ## The forms {#forms}
 
