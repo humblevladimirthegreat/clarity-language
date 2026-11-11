@@ -155,6 +155,14 @@ Marking how you know helps you catch overconfidence and hearsay before a claim h
 
 In English: [Claritish: How sure are you?](claritish/could-be.md) and [How do you know?](claritish/how-you-know.md).
 
+##### What someone else knew or meant {#what-they-knew-or-meant}
+
+English *you lied*, *you ignored me*, and *you're mocking me* each name an act and, in the same word, what the other person knew, meant, or felt while doing it. The act is something others could check; the mind behind it is something you infer.
+
+Ageben's words for these acts name only the act, such as *said something untrue*. What the other person knew or meant is said in its own words, which name [whose view](/holder#holder) it is and how you know it, or say that it [could be](/knowing#may).
+
+This helps you notice, in the middle of an argument, which part you saw and which part you are guessing, and it still lets you say both.
+
 ##### Always, usually, and how many cases {#always-usually-how-many-cases}
 
 English *always* and *never* sound absolute even when you mean *usually*, and they do not say how many cases they rest on.
