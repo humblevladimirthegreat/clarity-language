@@ -17,8 +17,6 @@ https://discord.gg/CAMGw2Akhc
 -profile build
 -tmp purging?
 -blog posts about using AI; public repo containing tips and tricks that can serve as a template
--more stacked vowels (other series)
--does th reliably mean an interpretation of the event?
 -programming language
 -consider conceptual metaphor of past is in front of us (because we can see it)
 Cheat sheet distinguish cue vs exact match

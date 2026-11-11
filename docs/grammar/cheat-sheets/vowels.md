@@ -181,14 +181,14 @@ Polar answers stack two of these vowels. Beginner *yes* / *no* / *sure*: [polar 
 
 Full extra-noun grid: [extra nouns](/extra-noun-hooks#extra-noun-intermediate). The [six more feeling urges](/feelings#emotion-compose) reuse the same stacks. English stays; letters follow join stacks.
 
-| Vowels | Extra-noun (**-l** / **-m**) | Feeling urge | Stage |
+| Vowels | Extra-noun (**-l** / **-m**) | Feeling urge (I) | Stage |
 |--------|------------------------------|--------------|-------|
-| **ao** | [*using* / *by*](/extra-noun-hooks#extra-noun-intermediate) | PLACATING (*keep the peace*) | I |
+| **ao** | [*using* / *by*](/extra-noun-hooks#extra-noun-intermediate) | PLACATING (*keep the peace*) | B |
 | **ua** | *out of* / *out from among* | RELEASING (*let go*) | B |
-| **uo** | *against* / *contrary to* | RESISTING (*push back*) | I |
-| **ae** | *on* / *over* | HELD (*frozen*, *a lid on it*) | I |
-| **oe** | *toward* / *in the direction of* | TOWARD (*turn to someone*) | I |
-| **ue** | *through* / *by way of* | UNPLACED (*which way is unclear*) | I |
+| **uo** | *against* / *contrary to* | RESISTING (*push back*) | B |
+| **ae** | *on* / *over* | HELD (*frozen*, *a lid on it*) | B |
+| **oe** | *toward* / *in the direction of* | TOWARD (*turn to someone*) | B |
+| **ue** | *through* / *by way of* | UNPLACED (*which way is unclear*) | B |
 
 ## Root job {#root-vowels}
 
