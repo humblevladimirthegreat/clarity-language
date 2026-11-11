@@ -57,12 +57,12 @@ describe("near misses", () => {
   });
 
   it("suggests the feeling word two letters away", () => {
-    const feeling = outcomeFor(data.flows.feeling!, { sake: "competence", stance: "unmet", ending: "-r", locus: "the atmosphere", motion: "-r" })!.form;
+    const feeling = outcomeFor(data.flows.feeling!, { stance: "unmet", urge: "move off", duration: "-r", sake: "competence", ending: "-m" })!.form;
     const typo = `${feeling.slice(0, -3)}x${feeling.slice(-2)}`;
     const [miss] = findNearMisses(`The review is tomorrow ${typo}.`, known, { english });
     assert.ok(miss?.suggestions.includes(feeling), miss?.suggestions.join() ?? "no near miss");
     assert.deepEqual(findDropIns(`The review is tomorrow ${feeling}.`, known).map((d) => d.form), [feeling]);
-    assert.deepEqual(glossary[feeling]?.lesson, "feelings");
+    assert.deepEqual(glossary[feeling]?.lesson, "what-a-feeling-wants");
   });
 
   it("offers every suffix one letter away", () => {

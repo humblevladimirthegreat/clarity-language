@@ -22,7 +22,7 @@ What counts as a cue and how a card is worded: [editor cues and cards](claritish
 | `mirror` | The mirror panel's name for the habit, one and many, split by `/` (`unmarked guess/unmarked guesses`). Rows for the same habit share it. Wording: [mirror names](claritish-style.md#editor-cards) |
 | `exempt` | A reason, for an italic gap phrase that is not a cue (the drop-in's own meaning). Such a row raises nothing |
 
-Every italic phrase in a cued lesson's gap must raise one of that lesson's cues or match an exempt row; the build checks it.
+Every italic phrase in a cued lesson's gap must raise one of that lesson's cues or match an exempt row; the build checks it. A lesson with no rows is uncued: its gap is not checked, and the editor's lesson list leaves it out. *Feelings in full* is uncued, because its gap phrases are the first feelings lesson's cues and its forms come from the same flow.
 
 ### Pattern syntax
 <a id="pattern-syntax"></a>
@@ -80,9 +80,9 @@ In `data/claritish-flows.json`, each question's answers name a place on the chea
 | Key | Does |
 |-----|------|
 | `commands` | The slash commands that open the flow with no English cue (`/sure`), each with any answers it presets (`"plan": { "kind": "planned" }`). A command puts its drop-in where it was typed: a suffix joins the word before it, a tone mark the word after it |
-| `"oneWord": true` on a form | Joins its parts with nothing (a feeling: sake word + locus + motion), not a space (`thawethum blawan`) |
+| `"oneWord": true` on a form | Joins its parts with nothing (a feeling: sake word + urge + how long it lasts), not a space (`thawethum blawan`) |
 | `"breakdown": true` on a form | Shows the word part by part, each part over the answer that chose it, as the cheat sheet's feelings table does |
-| `item` on a reference | Reads a prose line that lists endings (`Motion ending: **-l** still, …`) one entry at a time (`"item": "{motion}"`) |
+| `item` on a reference | Reads a prose line that lists endings (`How long it lasts: **-l** settled in, …`) one entry at a time (`"item": "{duration}"`) |
 | `"requires": "command"` on a choice | Offers the choice only from a command (*can*, which no English cue asks for) |
 | `none` on a choice | Ends in no drop-in: the card shows its line and offers only *Leave it in English*, for a lesson that says when to leave the word off |
 

@@ -10,7 +10,7 @@ With a handful of drop-ins, your English now says:
 - which need a thank-you or an apology is about
 - who allowed something, who required it, and whether the person it affects agreed
 - how settled a decision or a try is
-- a feeling as a need, a place, and a motion, instead of one opaque label
+- a feeling as a need and a pull, instead of one opaque label, and whether it will pass
 - how you mean it (tone marks)
 
 ## These were never add-ons {#never-add-ons}

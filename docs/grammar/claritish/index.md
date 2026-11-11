@@ -27,7 +27,8 @@ Each lesson is short, with a few examples and a practice set. They build on each
 - [Oughts and motives](oughts-and-motives.md): the need a *should* appeals to, and the need behind what you did.
 - [Wants and plans](wants-and-plans.md): a wish you owe no one, and how much of a plan is drawn.
 - [Decisions and tries](decisions-and-tries.md): how settled a decision is, and a try that is only a trial.
-- [Feelings in three parts](feelings.md): a feeling as a need, a place, and a motion.
+- [What a feeling wants](what-a-feeling-wants.md): the need behind a feeling, and what it pulls you to do.
+- [Feelings in full](feelings.md): six more pulls, whether a feeling will pass, and a fear of what has not happened.
 
 [Bonus: tone marks](tone-marks.md) adds seven marks that say how you mean a sentence, the [Learn the full language](learn.md) page shows where the words go in the full language, the [cheat sheet](cheat-sheet.md) puts every drop-in in one place, and the [journal editor](editor.md) marks the habits in your own writing as you type.
 

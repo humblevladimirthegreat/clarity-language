@@ -78,23 +78,26 @@ Sake word: `th` + sake + stance + ending.
 
 Thanks for a thing you own: `g` for `th`, after the noun: *my coat* `gobathal`.
 
-## [Feelings](feelings.md) {#feelings}
+## Feelings {#feelings}
 
-`thuwathuraer` *can I measure up?* hanging over everything, in waves:
+Feeling word: a thanks or sorry word + urge + how long it lasts. The first four urges are from [What a feeling wants](what-a-feeling-wants.md); the other six, the last ending, and `thomam` are from [Feelings in full](feelings.md).
 
-| `thuwa` | `thu` | `r` | `ae` | `r` |
+| `thuna` | `thu` | `m` | `uo` | `l` |
 |---------|-------|-----|------|-----|
-| competence | unmet | for now | over the room (locus) | surging (motion) |
+| autonomy | unmet | default ending | push back (urge) | settled in (how long) |
 
-Motion ending: **-l** static, **-m** flowing, **-r** surging.
+| Urge | Pulls you to | Urge | Pulls you to |
+|------|--------------|------|--------------|
+| `a` | stay in it | `oe` | turn to someone |
+| `e` | act on someone | `uo` | push back |
+| `o` | do something for someone | `ua` | let go |
+| `u` | move off | `ao` | keep the peace |
+| | | `ae` | stay on the spot |
+| | | `ue` | can't tell which way |
 
-| Locus | Meaning | Locus | Meaning |
-|-------|---------|-------|---------|
-| `a` | mine, held inside | `uo` | pushing back |
-| `ae` | the atmosphere of the situation | `o` | felt on someone's behalf |
-| `ue` | can't place where it comes from | `u` | moving off: avoiding, hiding |
-| `e` | aimed at someone | `ua` | out of fight: giving up |
-| `oe` | turning to someone for comfort | `ao` | using yourself to placate |
+How long it lasts: **-l** settled in, **-m** open, **-r** a wave that will pass.
+
+A cost or payoff that may come: `thomam` right before the feeling word.
 
 ## [Tone marks](tone-marks.md) {#tone-marks}
 

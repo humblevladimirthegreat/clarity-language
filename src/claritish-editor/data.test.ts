@@ -108,7 +108,7 @@ describe("editor data", () => {
       "oughts-and-motives",
       "wants-and-plans",
       "decisions-and-tries",
-      "feelings",
+      "what-a-feeling-wants",
       "tone-marks",
     ]);
   });
@@ -182,12 +182,20 @@ describe("editor data", () => {
 
   it("breaks a feeling into the parts the cheat sheet shows", () => {
     const flow = data.flows.feeling!;
-    const outcome = outcomeFor(flow, { sake: "competence", stance: "unmet", ending: "-r", locus: "the atmosphere", motion: "-r" })!;
-    const sheetLine = /^`([^`]+)` \*can I measure up/m.exec(sources.sheet)!;
-    assert.equal(outcome.form, sheetLine[1]);
+    const outcome = outcomeFor(flow, { stance: "unmet", urge: "push back", duration: "-l", sake: "autonomy", ending: "-m" })!;
     const header = tables(sources.sheet).find((t) => t.section === "feelings")!.header;
-    assert.deepEqual(outcome.breakdown!.map((p) => p.text), cells(header).flatMap((c) => spans(c)));
-    assert.deepEqual(outcome.breakdown!.map((p) => p.question), ["sake", "stance", "ending", "locus", "motion"]);
+    const parts = cells(header).flatMap((c) => spans(c));
+    assert.equal(outcome.form, parts.join(""));
+    assert.deepEqual(outcome.breakdown!.map((p) => p.text), parts);
+    assert.deepEqual(outcome.breakdown!.map((p) => p.question), ["sake", "stance", "ending", "urge", "duration"]);
+  });
+
+  it("gives a feeling word from the first two answers and the defaults", () => {
+    const flow = data.flows.feeling!;
+    assert.deepEqual(flow.questions.map((q) => q.id), ["stance", "urge", "duration", "sake", "ending"]);
+    const defaults = Object.fromEntries(flow.questions.map((q) => [q.id, q.choices[0]!.value]));
+    const outcome = outcomeFor(flow, { ...defaults, stance: "unmet", urge: "move off" })!;
+    assert.equal(outcome.form, "thudathumum");
   });
 
   it("can insert every cheat sheet form from a card or a command", () => {
@@ -196,7 +204,7 @@ describe("editor data", () => {
     for (const table of tables(sources.sheet)) {
       const index = counts.get(table.section ?? "") ?? 0;
       counts.set(table.section ?? "", index + 1);
-      // Feelings tables list parts (a locus), not drop-ins: the whole word is checked below.
+      // Feelings tables list parts (an urge), not drop-ins: the whole word is checked below.
       if (table.section === "sounds" || table.section === "feelings") continue;
       for (const row of table.rows) {
         cells(row.text).forEach((cell, col) => {
@@ -272,7 +280,7 @@ describe("lesson round-trip", () => {
   }
 
   /** Lessons whose examples each say one drop-in per sentence, with the English cue left in. */
-  for (const id of ["labels", "feelings"]) {
+  for (const id of ["labels", "what-a-feeling-wants"]) {
     it(`${id}: each example sentence's cue, or a command, places its drop-in as the lesson does`, () => {
       for (const line of examples(sources.lessons.get(id)!)) {
         for (const sentence of line.split(/(?<=[.!?])\s+/)) {
@@ -286,6 +294,12 @@ describe("lesson round-trip", () => {
       }
     });
   }
+
+  it("feelings: every example drop-in, `thomam` included, comes from a card or a command", () => {
+    const forms = examples(sources.lessons.get("feelings")!).flatMap((line) => dropIns(line)).flatMap((span) => span.split(" "));
+    assert.ok(forms.length > 0);
+    for (const form of forms) assert.ok(insertable.has(form), form);
+  });
 
   it("thanks-and-sorry: the kept-cue thanks example places as the lesson writes it", () => {
     const line = examples(sources.lessons.get("thanks-and-sorry")!).find((l) => /^Thanks\b/.test(l))!;

@@ -13,9 +13,9 @@
 //
 // Claritish sheet: every drop-in in a lesson table appears on the sheet, and
 // every drop-in on the sheet comes from a lesson (verbatim, or with its ending
-// swapped). The feelings lesson is exempt from the first check: the sheet
-// teaches the feeling-word pattern with one worked example, not the lesson's
-// vocabulary.
+// swapped). The two feelings lessons are exempt from the first check: the
+// sheet teaches the feeling-word pattern with one worked example, not the
+// lessons' vocabulary.
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { basename, join, posix, relative } from "node:path";
 
@@ -52,7 +52,7 @@ const SHEETS: Record<string, string> = {
 
 const CLARITISH_SHEET = "cheat-sheet.md";
 const CLARITISH_NOT_LESSONS = new Set(["index.md", "learn.md", CLARITISH_SHEET, "editor.md"]);
-const CLARITISH_PATTERN_ONLY = new Set(["feelings.md"]);
+const CLARITISH_PATTERN_ONLY = new Set(["what-a-feeling-wants.md", "feelings.md"]);
 
 const MARKER_RE = /<!--\s*cheat-sheet:\s*(\S+)\s*-->/g;
 

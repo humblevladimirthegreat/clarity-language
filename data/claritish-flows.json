@@ -426,13 +426,40 @@
     ]
   },
   "feeling": {
-    "lesson": "feelings",
+    "lesson": "what-a-feeling-wants",
     "commands": { "feel": {} },
     "questions": [
       {
-        "id": "sake",
-        "prompt": "Which need is at stake?",
+        "id": "stance",
+        "prompt": "Is something met, or unmet?",
+        "choices": [{ "value": "met" }, { "value": "unmet" }]
+      },
+      {
+        "id": "urge",
+        "prompt": "What does the feeling pull you to do?",
         "choices": [
+          { "value": "stay in it" },
+          { "value": "act on someone" },
+          { "value": "do something for someone" },
+          { "value": "move off" },
+          { "value": "turn to someone" },
+          { "value": "push back" },
+          { "value": "let go" },
+          { "value": "keep the peace" },
+          { "value": "stay on the spot" },
+          { "value": "can't tell which way" }
+        ]
+      },
+      {
+        "id": "duration",
+        "prompt": "How long does it last?",
+        "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
+      },
+      {
+        "id": "sake",
+        "prompt": "Which need?",
+        "choices": [
+          { "value": "a sake, unspecified", "label": "not sure" },
           { "value": "autonomy" },
           { "value": "competence" },
           { "value": "understanding" },
@@ -440,39 +467,12 @@
           { "value": "relatedness" },
           { "value": "beneficence" },
           { "value": "pleasure" },
-          { "value": "physical" },
-          { "value": "a sake, unspecified" }
+          { "value": "physical" }
         ]
-      },
-      {
-        "id": "stance",
-        "prompt": "Is the need met, or unmet?",
-        "choices": [{ "value": "met" }, { "value": "unmet" }]
       },
       {
         "id": "ending",
-        "prompt": "How lasting is it?",
-        "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
-      },
-      {
-        "id": "locus",
-        "prompt": "Emotion locus: where does the feeling sit, or what does it point at?",
-        "choices": [
-          { "value": "mine" },
-          { "value": "the atmosphere" },
-          { "value": "can't place" },
-          { "value": "aimed at someone" },
-          { "value": "turning to someone" },
-          { "value": "pushing back" },
-          { "value": "felt on someone's behalf" },
-          { "value": "moving off" },
-          { "value": "out of fight" },
-          { "value": "using yourself" }
-        ]
-      },
-      {
-        "id": "motion",
-        "prompt": "Emotion motion: how does it move?",
+        "prompt": "How lasting is the payoff or the cost?",
         "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
       }
     ],
@@ -489,15 +489,15 @@
               "ending": { "section": "sakes", "table": 2, "col": "{ending}", "take": "ending" }
             }
           },
-          { "section": "feelings", "table": 2, "cell": "{locus}" },
-          { "section": "feelings", "line": "Motion ending", "item": "{motion}", "take": "ending" }
+          { "section": "feelings", "table": 2, "cell": "{urge}" },
+          { "section": "feelings", "line": "How long it lasts", "item": "{duration}", "take": "ending" }
         ],
         "gloss": [
           { "section": "sakes", "table": 1, "cell": "{sake}", "take": "english" },
           { "section": "sakes", "table": 2, "row": "{stance}", "col": "Stance", "take": "english" },
           { "section": "settled", "col": "{ending}", "take": "col" },
-          { "section": "feelings", "table": 2, "cell": "{locus}", "take": "english" },
-          { "section": "feelings", "line": "Motion ending", "item": "{motion}", "take": "english" }
+          { "section": "feelings", "table": 2, "cell": "{urge}", "take": "english" },
+          { "section": "feelings", "line": "How long it lasts", "item": "{duration}", "take": "english" }
         ]
       }
     ]
