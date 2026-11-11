@@ -10,6 +10,8 @@ docs/grammar/.vitepress/dist
 tmp/
 docs/grammar/public/cmudict.dict
 docs/grammar/.vitepress/.temp/
+# Vite / VitePress write these next to a config or data loader while bundling it
+*.timestamp-*.mjs
 *.tsbuildinfo
 .eslintcache
 __pycache__/
