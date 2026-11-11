@@ -659,10 +659,10 @@ English *lie*, *ignore*, and *mock* each name an act and also what the other per
 | *mock* | `zazozon dalazun vadomum.` + `zalazun theyomazozon thagom genemum.` | ridicule; I gather Azozon means it to hurt |
 | *scorn* / *mock* (with contempt) | `zazozon dalazun vadomum.` + `theyomazozon thawethumul blalazun.` | ridicule; I gather Azozon wants to keep away from Alazun, and it has settled in ([contempt](#emotion-lookup)) |
 | *exploit* | `zalazun demebol vewal bazozon heham blodel thudathum blalazun.` | an exchange that costs Alazun |
-| *break the law* / *commit a crime* | `zazozon vuzuyum.` | lawbreaking |
+| *break the law* / *commit a crime* | `zazozon vudayum.` | lawbreaking |
 | *crime* (which rule) | `zazozon dalazun voruyul uom hwuvul.` | robs Alazun against the rules |
 | *crime* (to blame) | `thahul blarl` + the act | fault on the act ([fault](/fault#fault)) |
-| *criminal* | `zazozon guzuyul.` / `zazozon vuzuyutham.` | an outlaw / breaks the law, as a type |
+| *criminal* | `zazozon gudayul.` / `zazozon vudayutham.` | an outlaw / breaks the law, as a type |
 | *abuse* | `zalazun genemum huam thahul blarl zazozon vezuyol.` | Alazun is harmed, as a rule, and Azozon's talk is to blame |
 | *villain* / *evil person* | `zazozon venemutham.` | harms, as a type |
 | *aggressive* | `zazozon vuvuvuthal.` | fights, as a type |
