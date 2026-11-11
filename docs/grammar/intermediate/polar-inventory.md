@@ -17,7 +17,7 @@ Beginner already used *yes* / *true* (**`yaol`**), *no* / *false* (**`yuol`**), 
 | **`ua`** (`yual`) | reject the question's premise | *neither: the question doesn't apply* | **u** ≈ not + **a** ≈ add (undo what the question added) |
 | **`oe`** (`yoel`) | decline to answer | *I won't answer* | **o** ≈ rank + **e** ≈ choice (pass to the next one in line) |
 
-**`yual`** answers a question that assumes something false. *Have you stopped lying?* has no honest *yes* or *no* if you never lied. **`yual.`** says so in one word, without accepting the frame. It judges the question, not the speaker's willingness: for a refusal to answer, use **`yoel`** (below).
+**`yual`** answers a question that assumes something false. *Have you stopped saying untrue things?* has no honest *yes* or *no* if you never did. **`yual.`** says so in one word, without accepting the frame. It judges the question, not the speaker's willingness: for a refusal to answer, use **`yoel`** (below).
 
 > `yel zazozon vowurol ul bohehal. yual.`
 >
@@ -222,7 +222,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *listener* | `awan` |
 | *tell* | `vezuyol` |
-| *lie* | `vulamul` |
+| *misstate* | `vulamul` |
 | *see* | `vayebel` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
@@ -282,7 +282,7 @@ y-decline-for-now
 ::: details Show answer
 z-Azozon | v-misstate . y-question | y-no
 
-*Azozon lied, or am I wrong?*
+*Azozon said something untrue, or am I wrong?*
 :::
 
 **4.** `!!yuel.`
@@ -303,24 +303,24 @@ y-yes-for-now | z-Azozon | v-see
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *False, Alazun did lie.* (answering *Didn’t Alazun lie?*) `yuol.` or `yaol.`
+**1.** *False, Alazun did say something untrue.* (answering *Didn’t Alazun say something untrue?*) `yuol.` or `yaol.`
 
 ::: details Show answer
 `yuol.`
 
 y-no
 
-The answer says whether the denial matches: **`yuol`** says it does not, so Alazun lied.
+The answer says whether the denial matches: **`yuol`** says it does not, so Alazun did say something untrue.
 :::
 
-**2.** *Did you stop lying?* (you never lied) `yual.` or `yuol.`
+**2.** *Did you stop saying untrue things?* (you never did) `yual.` or `yuol.`
 
 ::: details Show answer
 `yual.`
 
 y-reject-frame
 
-**`yual`** rejects the question's premise; **`yuol`** would accept it and say you still lie.
+**`yual`** rejects the question's premise; **`yuol`** would accept it and say you still do.
 :::
 
 #### Fix it {#intermediate-fix-it}

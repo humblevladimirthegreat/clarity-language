@@ -146,7 +146,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *topic* | `alen` |
 | *attest* | `vugel` |
-| *lie* | `vulamul` |
+| *misstate* | `vulamul` |
 | *small* | `gamezem` |
 | *tell* | `vezuyol` |
 | *write* | `varuyol` |
@@ -219,7 +219,7 @@ z-Ahelan | d-CITE.about[z-Azozon | v-attest] | v-tell
 ::: details Show answer
 z-Azozon | d-CITE[z-Alazun | v-misstate] | v-attest
 
-*Azozon attests, “Alazun lies.”*
+*Azozon attests, “Alazun says something untrue.”*
 :::
 
 #### Pick one {#intermediate-pick-one}

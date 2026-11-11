@@ -87,7 +87,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *lie* | `vulamul` |
+| *untruth* | `dulamul` |
 | *small* | `gamezem` |
 | *tell* | `vezuyol` |
 | *see* | `vayebel` |
@@ -126,7 +126,7 @@ z-Azozon | SCOPE[h-possibility | d-newspaper] | v-see
 ::: details Show answer
 z-Ahelan | !SCOPE[h-possibility | d-untruth] | v-see
 
-*Ahelan saw what was possibly a lie!*
+*Ahelan saw what was possibly an untruth!*
 :::
 
 **2.** `zazozon { hogugem zunonal gerulol } vayebel.`
@@ -147,7 +147,7 @@ z-Ahelan | [d-newspaper | [g-red | SCOPE[g-small | g-not] | g-and]] | v-see
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azozon saw what was possibly a lie.* `zazozon { hogugem dulamul } vayebel.` or `zazozon hogugem dulamul vayebel.`
+**1.** *Azozon saw what was possibly an untruth.* `zazozon { hogugem dulamul } vayebel.` or `zazozon hogugem dulamul vayebel.`
 
 ::: details Show answer
 `zazozon { hogugem dulamul } vayebel.`

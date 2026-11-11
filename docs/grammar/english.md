@@ -324,20 +324,20 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebe
 | *someone who teaches*, *whoever teaches* | a role compound with reach **`u`**: `zwuzeduyol` | [Role compounds](/roles#role-compounds) |
 | *a teacher*, *a fighter*, *a dog walker* (a practiced role or job) | the role compound with reach **`o`**: `zwozeduyol` | [One time or a practice](/roles#one-time-or-a-practice) |
 | *the one teaching* (this event) | the role compound on **-r**: `zwuzeduyor` | [This instance](/roles#this-instance-r) |
-| *often lies*, *usually walks* | a [restrictor](/restrictors): `huam`, `war` | [Always](/restrictors#always-hual) |
-| *this time*, *this once* (angry this time, lied this once) | **`thu`** on the root: `gonumuthul`, `vulamuthul` | [This episode](/label-seams#reach-occasion) |
+| *often says untrue things*, *usually walks* | a [restrictor](/restrictors): `huam`, `war` | [Always](/restrictors#always-hual) |
+| *this time*, *this once* (angry this time, said something untrue this once) | **`thu`** on the root: `gonumuthul`, `vulamuthul` | [This episode](/label-seams#reach-occasion) |
 | *as their craft*, *as a practice* | **`tho`** on the root: `vulamuthol` | [Practiced role](/label-seams#reach-occupation) |
 | *in dealings with*, *a stranger to Alazun* | **`the`** plus `/b/`: `gulayethem blalazun` | [This pair](/label-seams#reach-relative) |
-| *type*, *kind of person* (a lying type, an anxious type) | **`tha`** on the root: `zazozon vulamuthal` | [Type across scenes](/label-seams#reach-type) |
-| *lied to Alazun, this once* | **`thu`** on the verb, recipient as usual: `vulamuthul balazun` | [This episode](/label-seams#reach-occasion) |
+| *type*, *kind of person* (a type who says untrue things, an anxious type) | **`tha`** on the root: `zazozon vulamuthal` | [Type across scenes](/label-seams#reach-type) |
+| *said something untrue to Alazun, this once* | **`thu`** on the verb, recipient as usual: `vulamuthul balazun` | [This episode](/label-seams#reach-occasion) |
 | *it's the situation*, *it was the situation*, *by circumstance* | **`thae`**: `gonumuthael`, `gwaezeduyol` | [Stacked reach](/label-seams#reach-stacks) |
 | *becoming a teacher* | reach **`oe`**: `gwoezeduyol` | [Reach across scenes](/role-parts#reach) |
-| *becoming* (becoming a liar) | **`thoe`** on the root: `vulamuthoel` | [Stacked reach](/label-seams#reach-stacks) |
+| *becoming* (becoming one who misstates) | **`thoe`** on the root: `vulamuthoel` | [Stacked reach](/label-seams#reach-stacks) |
 | *as a teacher, I …* | role compound on `/h/`: `hwozeduyol` | [Acting as](/role-parts#acting-as) |
 | *not as a teacher* (off duty) | reach **`uo`** on `/h/`: `hwuozeduyol` | [Acting as](/role-parts#acting-as) |
 | *not as a teacher* (the label) | reach **`uo`**: `gwuozeduyol` | [Reach across scenes](/role-parts#reach) |
 | *playing the teacher* (for a purpose) | reach **`ao`**: `gwaozeduyol` | [Reach across scenes](/role-parts#reach) |
-| *as a tool*, *for a purpose* (using lying as a tool) | **`thao`** on the root: `vulamuthaol` | [Stacked reach](/label-seams#reach-stacks) |
+| *as a tool*, *for a purpose* (using misstatement as a tool) | **`thao`** on the root: `vulamuthaol` | [Stacked reach](/label-seams#reach-stacks) |
 | *as myself*, *not in my role*, *off duty* | **`thue`** on the verb: `vezuyothuol` | [Stacked reach](/label-seams#reach-stacks) |
 | *except this time*, *except this once* | **`thua`**: `vulamuthual` | [Stacked reach](/label-seams#reach-stacks) |
 | *except with* (angry as a type, except with Alazun) | **`thue`** plus `/b/`: `gonumuthuel blalazun` | [Stacked reach](/label-seams#reach-stacks) |
