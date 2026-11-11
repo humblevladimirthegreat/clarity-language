@@ -1,6 +1,6 @@
 # Feeling urges
 
-**Status:** partially implemented. The parser's gloss labels, the regenerated glosses, and the Beginner page `how-you-feel.md` are done and committed (2026-11-11). Three phases remain, each run in a new main session; **Phase 1 is next**. `how-you-feel.md` has no Practice yet, so its drill allowlist row is **generate** until Phase 2. The plan's `model` values are `opus`; the user substituted `fable` for the first session. User decisions, all 2026-11-11:
+**Status:** partially implemented. Done and committed: the parser's gloss labels, the regenerated glosses, and the Beginner page `how-you-feel.md` (2026-11-11); **Phase 1** (2026-11-11): the parser reads a `bl-` after `a`, `ae`, or `ue` as whose stake, and `feelings.md`, `say-reasons.md`, `terminology.md`, and the feeling examples on four more pages teach the new readings. Two phases remain, each run in a new main session; **Phase 2 is next**. `how-you-feel.md` has no Practice yet, so its drill allowlist row is **generate** until Phase 2. The second `bl-` after a feeling word is a **closed** row in `unassigned-reserved.md`, citing the *Feeling words* entry in `design-decisions.md` (orchestrator, 2026-11-11: the decision has a reason, so the row cannot be open). User decisions, all 2026-11-11:
 
 - `o` is GIVING; VICARIOUS is dropped, and someone else's stake is said with whose stake.
 - `ae` is one HELD urge, covering frozen and held in.
@@ -23,7 +23,7 @@
 
 - The ten feeling loci keep their vowels. `a`, `ae`, `ue`, and `o` get new readings; `oe`, `ua`, and `ao` are widened or renamed.
 - The last ending of a feeling word changes from how the feeling moves to how long the feeling lasts.
-- A `bl-` word after an `a`, `ae`, or `ue` feeling becomes whose stake. Today it is rejected after `a` and `ue` and is the landmark after `ae`.
+- A `bl-` word after an `a`, `ae`, or `ue` feeling becomes whose stake.
 - The existing MAY word next to a feeling word gets a taught reading (the cost or payoff is predicted, not actual). It already parses.
 
 ## Problem
@@ -157,8 +157,6 @@ A feeling word takes **one** `bl-`. When the urge takes a landmark and the stake
 > "Azozon has lost their say for good. Something in me is off, and I want to go to them."
 
 Two sentences keep what happened to them apart from what you feel.
-
-The parser rejects `thunathulam blazozon` today (`feelingLandmark`), and the same rule rejects `zonal wawethumam goyom blazozon` in the table of current examples below. Every other spelling in this proposal parses today, under the old labels.
 
 ### Predicted, not actual
 
@@ -332,24 +330,16 @@ No spelling changes, so this is not a retie. A locus vowel in an example changes
 
 **Parser**
 
-- [enforce.ts](../../../src/parse/enforce.ts) `feelingLandmark`: a `bl-` after `a`, `ae`, or `ue` is accepted and read as whose stake. This is the one behavior change, and it lands in the same commit as the Intermediate page that teaches it. Its test row is in `invalid-forms.test.ts`.
-- [constructions.ts](../../../src/parse/constructions.ts) and [llm-prompt.ts](../../../src/parse/llm-prompt.ts):
-  - The `feelingLandmark` summary, and the comment above the rule in `enforce.ts`, still name INTERNAL and CIRCUM.
-  - The reader notes still call AIMED and AWAY an *emotion locus*, and tell the reader to render a feeling tail as one English emotion word, not piece by piece. The pages now gloss it piece by piece.
-  - The sake reader note's lines on a `b-` word after a sake word need a re-read against whose stake.
-  - The feeling-word construction's home is now `how-you-feel.md#feeling-word`. The rule anchors `emotionTail` and `feelingLandmark` still point at `feelings.md#emotion-compose`.
 - The parsed-word field and the `find.mjs --map` key keep the name `locus`. Comments in `src/parse/word.peggy` and `src/retie/rebuild.ts` still say *locus* and *motion*; change the first only when the parser is next regenerated.
 
 **Stage pages**
 
 - `beginner/how-you-feel.md`: Practice, then its drill allowlist row confirmed (Setting, Introduces, notes) and set to **exists**; an item in the Beginner level review. Two allowlist notes are stale: *Not emotion compose* on the `thanks-and-sorry.md` row, and *feeling with no object* under Introduces on the `feelings.md` row.
-- [feelings.md](../../grammar/intermediate/feelings.md): rewrite `#emotion-compose` as the rest of the series; new Practice. Measure the sitting and peel if it runs over ([restructure sittings](../../meta/procedures/restructure-sittings.md)).
-- Examples elsewhere: 100 feeling words on ten pages. All need the last ending re-read. The 62 with `a` (24), `ae` (16), `ue` (14), or `o` (8) need new English or a new vowel. By page: `say-reasons.md` 30, `feelings.md` 27, `terminology.md` 13, `claritish/feelings.md` 13, `cheat-sheets/why-allowed.md` 10 (hand rows), `say-questions.md` 2, `holder.md` 2, `mirative.md` 1, `compound-families.md` 1, `claritish/cheat-sheet.md` 1.
-- [say-reasons.md](../../grammar/say-reasons.md#feelings): gains the [English lookup](#from-an-english-emotion-word) and a recipe for mixed pulls.
+- [feelings.md](../../grammar/intermediate/feelings.md): new Practice. It must exercise whose stake (`reading.feelingStake`, `#feeling-whose-stake`). Stale items in the old Practice: E→A 1 (*waves of resentment*, `zahuyal wawethumer goyom`), E→A 3 (*I'm anxious* = `thuwathuruer.`, which now needs MAY), A→E 1 (`zahuyal wawethumel goyom blalazun.` as *holding it in*; it is SETTLED), A→E 2 and Fix it 1 (`thawethamar` as *moved*, missing STAYING and FLEETING).
+- Examples still on the old readings: `claritish/feelings.md` 13, `cheat-sheets/why-allowed.md` 10 (hand rows), `claritish/cheat-sheet.md` 1.
 - [purpose.md](../../grammar/purpose.md#emotions-as-composition): the three parts become need, urge, and duration; the Claritish link names the first lesson.
 - [cheat-sheets/vowels.md](../../grammar/cheat-sheets/vowels.md): the feeling rows in `#place` (now stage B) and `#extra-noun-stacks`, and *feeling loci* in the vowel tree. Generated blocks through `npm run cheat-sheet-blocks -- --write`.
-- `cheat-sheets/why-allowed.md`: its `## Feelings` section (`#locus`, `#motion`, and the example rows) is hand-written, not generated, and still teaches the old readings. Its three *feeling with no object* rows already point at the Beginner page.
-- [terminology.md](../../grammar/terminology.md): urge and duration replace locus and motion; the ten names.
+- `cheat-sheets/why-allowed.md`: its `## Feelings` section (`#locus`, `#motion`, and the example rows) is hand-written, not generated, and still teaches the old readings. Its example rows no longer match `feelings.md#emotion-compose`, and five forms in the opted-in table under `feelings.md#feeling-suggests` are missing from it: `zezuyol thomam wuwathurur goyom`, `thomam thuwathuruer`, `zobewom guwathamoer`, `zonal wawethumel goyom blalazun`, `zonal wawethumam goyom blazozon`. Its three *feeling with no object* rows already point at the Beginner page.
 
 **Claritish**
 
@@ -360,16 +350,14 @@ No spelling changes, so this is not a retie. A locus vowel in an example changes
 
 **Editor notes**
 
-- [unassigned-reserved.md](../../meta/unassigned-reserved.md): drop the open row for `bl-` after an INTERNAL or UNPLACED feeling; add an open row for a second `bl-` after a feeling word.
-- [design-decisions.md](../../meta/design-decisions.md): why there is no placement locus, no motion ending, no arousal slot, no vicarious urge, and one `bl-` per feeling word.
-- `AGENTS.md`: the `feelings.md` Owns line gains `how-you-feel.md` (for example *saying how you feel: body, label, feeling word, four urges*); the Claritish row says eleven lessons.
+- `AGENTS.md`: the Claritish row says eleven lessons.
 - `TODO.md`: remove the *reconsider emotions* lines.
 
 ## Implementation plan
 
-Three phases. Each phase is one new main session, which is that phase's orchestrator: it runs the phase's units through subagents, one fresh subagent per unit, in the order given, and stops when the phase ends. It does not start the next phase.
+Two phases remain. Each phase is one new main session, which is that phase's orchestrator: it runs the phase's units through subagents, one fresh subagent per unit, in the order given, and stops when the phase ends. It does not start the next phase.
 
-The parser's gloss labels, the regenerated glosses, and the Beginner page are done and are not in this plan.
+The parser's gloss labels, the regenerated glosses, the Beginner page, and Phase 1 are done and are not in this plan.
 
 **Every phase starts** the same way:
 
@@ -389,25 +377,6 @@ If the user says to stop partway through a phase, the orchestrator consolidates 
 
 **Commits**, in every phase: each message starts `feeling-urges <unit>` and ends `[skip-cd]` and the co-author line. A tool's output is committed alone, naming the command.
 
-### Phase 1: Intermediate grammar
-
-**Ends with** the Intermediate page, the recipe pages, and the terminology page teaching the new readings, and the parser reading a `bl-` after `a`, `ae`, or `ue` as whose stake.
-
-| Unit | Items | Agent | `model` | `effort` | May edit |
-|------|-------|-------|---------|----------|----------|
-| 1A | `feelingLandmark` in the parser; the reader notes and rule summaries in the **Parser** list of [what changes, by file](#what-changes-by-file); their tests; `unassigned-reserved.md`; `design-decisions.md` | `proposal-worker` | `opus` | `high` | `src/parse/`, the two meta notes |
-| 1B | Rewrite the teaching sections of `feelings.md` against `how-you-feel.md`, per [where it is taught](#where-it-is-taught) | `proposal-worker` | `opus` | `high` | `feelings.md`, not its Practice |
-| 1C | Measure `feelings.md` ([restructure sittings](../../meta/procedures/restructure-sittings.md)); peel only if it runs over | orchestrator measures; `proposal-worker` for a peel | `opus` | `medium` | any page a peel creates, `reading-order.ts`, the drill allowlist |
-| 1D | `say-reasons.md`: its 30 feeling examples, the [English lookup](#from-an-english-emotion-word), and a recipe for mixed pulls | `proposal-worker` | `opus` | `high` | `say-reasons.md` |
-| 1E | Feeling examples on `say-questions.md`, `holder.md`, `mirative.md`, `compound-families.md`; `terminology.md`: the label table, urge and duration in place of locus and motion, and its 13 examples | `proposal-worker` | `opus` | `high` | those five pages |
-
-- **1A then 1B, in one commit.** The page's whose-stake examples do not parse until 1A lands, and a parser change ships with the page that teaches it. 1A's gate is the parser tests; a page that still documents the old rejection is expected until 1B.
-- **1B leaves Practice and the cheat sheets alone.** It reports each cheat sheet row and each Practice item its rewrite makes stale, and Phase 2 fixes them.
-- **Open at the start:** the label table in `terminology.md` (nine labels to add, three rows to drop, and the `llm-prompt.test.ts` legend test that reads it), which 1E clears; the missing Practice on `how-you-feel.md`, which stays open.
-- **End gate:** `npm run verify -- --allow-generate` with the terminology errors resolved. The only errors left are the missing Practice, cheat sheet rows whose forms have left `feelings.md#emotion-compose`, and checkpoint errors on the old `feelings.md` Practice.
-- **Orchestrator's edit:** the `feelings.md` Owns line in `AGENTS.md` gains `how-you-feel.md` and any page a peel created.
-- **Commits:** four or five. 1A with 1B; 1C only if it peeled; 1D; 1E with the `AGENTS.md` line and the consolidated proposal.
-
 ### Phase 2: Cheat sheets and practice
 
 **Ends with** a clean build and test: the cheat sheets, the Practice sections, and the level reviews match the two stage pages.
@@ -421,7 +390,7 @@ If the user says to stop partway through a phase, the orchestrator consolidates 
 | 2E | Level reviews: one new item in `review.md`; re-check the feelings items in `review-intermediate.md` | `checkpoint-writer` | `opus` | `high` | the two review pages |
 
 - **2C before 2D, each with a fresh writer.** The writer for `how-you-feel.md` must not have read the new sections of `feelings.md`. The orchestrator's pack (`tmp/checkpoint-pack/feeling-urges.md`) names the sittings in path order. The allowlist takes one writer at a time.
-- **Open at the start:** the three kinds of error Phase 1's end gate left.
+- **Open at the start:** the errors Phase 1's end gate left: the missing Practice on `how-you-feel.md` (a **generate** row); cheat sheet errors in `cheat-sheets/why-allowed.md` (rows no longer in `#emotion-compose`, five forms from `feelings.md#feeling-suggests` missing); drill coverage of `reading.feelingStake` in `feelings.md#intermediate-practice`.
 - **End gate:** a clean `npm run build` and `npm test`, with nothing left on a **generate** row.
 - **Commits:** five. 2A; 2B (tool output alone); 2C; 2D; 2E with the consolidated proposal.
 

@@ -125,7 +125,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 |---------------|----------------|---------------|
 | The event | you assert it | what the holder takes to be so; you do not assert it |
 | MAY, CAUSE hinges, *so that*, PLAN, prescription | yours | the holder's |
-| [Sake](/sakes) words and [emotion compose](feelings.md#emotion-compose), with their endings | your stake and feeling | the holder's stake and feeling |
+| [Sake](/sakes) words and [feeling words](how-you-feel.md#feeling-word), with their endings | your stake and feeling | the holder's stake and feeling |
 | A `/ɡ/` sake's *my* reading ([personal possession](/sakes#personal-possession)) | your belonging | the holder's belonging |
 | Another evidential | how you know | how the holder knows |
 | The grounds after an inferring or pattern host's [`blarl`](evidentiality.md#evidence-clause) | grounds you assert | the holder's grounds; you do not assert them |
@@ -134,7 +134,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 >
 > [z-memo | [[w-relatedness-unmet-modifiable-AIMED-SETTLED | g-stimulus] | bl-Alazun]] | th-CLUES-Azozon
 >
-> "I gather Azozon resents Alazun over the memo, holding it in."
+> "I gather Azozon resents Alazun over the memo, and it has settled in."
 
 > `zalazun theyomazozon thugem vudurul.`
 >
@@ -144,9 +144,9 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 
 A [feeling with no object](how-you-feel.md#feeling-no-object) works the same way: the holder makes it someone else's feeling.
 
-> `thuwathuruer theyomalazun.`
+> `thomam thuwathumuem theyomalazun.`
 >
-> th-competence-unmet-passing-UNPLACED-FLEETING | th-CLUES-Alazun
+> th-MAY | th-competence-unmet-modifiable-UNPLACED-OPEN | th-CLUES-Alazun
 >
 > "I gather Alazun is anxious."
 
@@ -182,7 +182,7 @@ The first sake word has no holder, so it is yours. The second is Azozon's.
 
 Only the seven channels and MAY take a holder: they are the ways you can have access to someone else's view. When they told you in their own words, a [cite](/spans#writing) keeps their wording instead.
 
-**Compare with:** being upset **for** Azozon is your own feeling about Azozon's stake (the VICARIOUS locus in [emotion compose](feelings.md#emotion-compose)); with a holder the feeling is Azozon's. *On behalf of* Azozon is [proxy](/relations#proxy) (`hanem`). A `/b/` on [permission](permission-consent.md#permission) or [consent](permission-consent.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](/compounds#dictionary-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
+**Compare with:** being upset **for** Azozon is your own feeling about Azozon's stake ([whose stake](feelings.md#feeling-whose-stake) after a feeling word); with a holder the feeling is Azozon's. *On behalf of* Azozon is [proxy](/relations#proxy) (`hanem`). A `/b/` on [permission](permission-consent.md#permission) or [consent](permission-consent.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](/compounds#dictionary-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
 
 ### Practice {#intermediate-practice}
 

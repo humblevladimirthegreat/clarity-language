@@ -80,13 +80,13 @@ English *well…* warns that the answer is not the plain *yes* the question hope
 
 ### *It sounds like…*, *I hear that you…* {#reflecting}
 
-**Needs:** [Whose view](/holder#holder) · [How you know](/evidentiality#evidentiality) · [Feeling with no object](/how-you-feel#feeling-no-object) · [Emotion compose](/feelings#emotion-compose)
+**Needs:** [Whose view](/holder#holder) · [How you know](/evidentiality#evidentiality) · [Feeling with no object](/how-you-feel#feeling-no-object) · [A feeling about what may happen](/how-you-feel#predicted-feeling)
 
 English *it sounds like you're anxious* and *I hear that you're upset* give the speaker's feeling back to them. You cannot state someone else's feeling outright, so name the listener as the holder on CLUES (**`theyom`**): you worked it out from what they said.
 
-> `thuwathuruer theyomawan.`
+> `thomam thuwathumuem theyomawan.`
 >
-> th-competence-unmet-passing-UNPLACED-FLEETING | th-CLUES-listener
+> th-MAY | th-competence-unmet-modifiable-UNPLACED-OPEN | th-CLUES-listener
 >
 > "It sounds like you're anxious."
 

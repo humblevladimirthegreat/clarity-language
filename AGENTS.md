@@ -38,7 +38,7 @@ Stage pages sit in `beginner/`, `intermediate/`, or `advanced/` under `docs/gram
 | `predication.md` | Classification, identity, lone object; how far a label reaches (`label-seams.md`); how a label holds: packaging, IDENTITY endings (`label-reach.md`). |
 | `causation.md` | if, only if, iff (condition hinges); fault (`fault.md`); because (`because-and-iff.md`); CAUSE, make (`cause.md`). |
 | `sakes.md` | Sakes, met / unmet; ought for a sake (`ought-for-a-sake.md`); doing it for a sake: motive, attachment, whose stake (`for-a-sake.md`); bars: than planned, than usual, enough and too (`bars.md`). |
-| `feelings.md` | Feelings, speaker attitude; permission, consent (`permission-consent.md`); thanks and sorry (`thanks-and-sorry.md`). |
+| `feelings.md` | Feelings: the six stacked urges, duration, whose stake, strength; speaker attitude; saying how you feel: body, label, feeling word, four urges (`how-you-feel.md`); permission, consent (`permission-consent.md`); thanks and sorry (`thanks-and-sorry.md`). |
 | `intention.md` | Plan; try / fallback (`try.md`); want, decision (`want-and-decide.md`); ability / incapability (`can-and-cant.md`). |
 | `knowing.md` | MAY, live / memory; evidentiality (`evidentiality.md`); holder (`holder.md`); mood on one adjective (`universality.md`); dated channel (`dated-channel.md`); usually vs must (`usually-vs-must.md`). |
 | `residue-and-former.md` | Residue / former; contrary to: plan, say words, channels, whose (`contrary-to.md`); mirative (`mirative.md`); notional (`notional.md`); already / still / not yet / no longer (`already-still-yet.md`). |

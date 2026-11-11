@@ -10,30 +10,28 @@ SMALLCAPS labels and series names as the lessons print them.
 
 ### Mood labels
 
-SMALLCAPS labels as morph lines print them: psychological moods, evidentials, emotion-compose pieces, and span / island / name groups. Mood words are [stance](#stance) `/th/`, not ordinary [adverb](#adverb) `/h/`. Each example is a form from the teaching page.
+SMALLCAPS labels as morph lines print them: psychological moods, evidentials, feeling urges and durations, and span / island / name groups. Mood words are [stance](#stance) `/th/`, not ordinary [adverb](#adverb) `/h/`. Each example is a form from the teaching page.
 
 | Label | Gloss | Example | Teach |
 |-------|-------|---------|-------|
 | **ABIL** | Hostless *can* / *can’t* (no single verb) | `hodaxol` | [Can and can't](/can-and-cant#ability-fallback) |
-| **AIMED** | Emotion locus: aimed at a target | `wawethumel` | [Feelings](/feelings#emotion-compose) |
+| **AIMED** | Feeling urge: act on a target | `thunathumem` | [How you feel](/how-you-feel#urges) |
 | **ASIDE** | An aside span | `th(hugowul)` | [Spans](/spans#asides) |
 | **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwuvam` | [Permission and consent](/permission-consent#say-words) |
 | **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Try](/try#try) |
-| **AWAY** | Emotion locus: moving off from a target | `wawethumum` | [Feelings](/feelings#emotion-compose) |
+| **AWAY** | Feeling urge: move off from a target | `thudathumum` | [How you feel](/how-you-feel#urges) |
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thewom` | [CAUSE](/cause#cause) |
-| **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraer` | [Feelings](/feelings#emotion-compose) |
 | **CITE** | A cite span: quoted wording | `d[azozon]` | [Spans](/spans#writing) |
 | **CLUES** | Evidential: reasoned from clues about this case | `theyom` | [How you know](/evidentiality#evidentiality) |
 | **CHOICE** | Say word answer: their call | `hwuvem` | [Permission and consent](/permission-consent#say-words) |
-| **COLLAPSE** | Emotion locus: out of fight, giving up | `wawethumual` | [Feelings](/feelings#emotion-compose) |
 | **DECISION** | Pick-firmness mood | `thogem` | [Want and decide](/want-and-decide#decision) |
 | **DEDUCED** | Evidential: must hold if the premises hold | `thanam` | [How you know](/evidentiality#deduction) |
-| **FAWN** | Emotion locus: placating a target | `wawethumaom` | [Feelings](/feelings#emotion-compose) |
-| **FLOWING** | Emotion motion: steady, a current you can ride | `wawethumom` | [Feelings](/feelings#emotion-compose) |
+| **FLEETING** | Feeling duration: a flash or a wave that will pass | `thawethuluar` | [Feelings](/feelings#feeling-duration) |
 | **FORBID** | Say word answer: no, forbid | `hwuvul` | [Contrary to](/contrary-to#contrary-to-say) |
 | **FORMER** | Episode standing: not the climate claimed now | `helam` | [Residue and former](/residue-and-former#residue) |
+| **GIVING** | Feeling urge: do something for someone | `thewathumom` | [How you feel](/how-you-feel#urges) |
+| **HELD** | Feeling urge: stuck on the spot, frozen or keeping a lid on it | `wawethumaem` | [Feelings](/feelings#emotion-compose) |
 | **IDENTITY** | Identity copula | `gorel` | [Predication](/predication#identity) |
-| **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Feelings](/feelings#emotion-compose) |
 | **INTUITION** | Evidential: gut sense you cannot fully spell out | `thabem` | [How you know](/evidentiality#evidentiality) |
 | **LIVE** | Evidential: sensed now, by any sense | `thugem` | [Knowing](/knowing#live-vs-memory) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thomam` | [Knowing](/knowing#may) |
@@ -43,18 +41,20 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **NAME** | A package titled with **-n** | `zobodel zubudal zan.` | [Named phrases](/named-phrases#named-list) |
 | **NOTIONAL** | As-if / pretense mood | `theyum` | [As if](/notional#notional) |
 | **OPAQUE** | An opaque span: foreign or raw writing | <code>d&lt;kimchi&gt;</code> | [Spans](/spans#loans) |
+| **OPEN** | Feeling duration: how long is not said | `thudathumum` | [How you feel](/how-you-feel#feeling-word) |
 | **PATTERN** | Evidential: from regularity | `thubom` | [How you know](/evidentiality#evidentiality) |
+| **PLACATING** | Feeling urge: use yourself to keep the peace | `thobathumaom` | [Feelings](/feelings#emotion-compose) |
 | **PLAN** | Intention-framing mood | `thagom` | [Intention](/intention#plan-predict) |
+| **RELEASING** | Feeling urge: step out of the fight, let go | `thawethulual` | [Feelings](/feelings#emotion-compose) |
 | **REPORTED** | Evidential: said or written by someone else | `thebam` | [How you know](/evidentiality#evidentiality) |
 | **REQUIRE** | Say word answer: require, ask for (*must*) | `hwuvol` | [Permission and consent](/permission-consent#say-words) |
 | **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Residue and former](/residue-and-former#residue) |
-| **RESISTING** | Emotion locus: pushing against a target | `wawethumuor` | [Feelings](/feelings#emotion-compose) |
+| **RESISTING** | Feeling urge: push back against a target | `thunathumuom` | [Feelings](/feelings#emotion-compose) |
 | **SCOPE** | Scope island `{ … }` | `{ hogugem zodozel gerulol }` | [Scope islands](/scope-islands#scope-islands) |
-| **SEEKING** | Emotion locus: turning to someone for comfort | `wawethumoem` | [Feelings](/feelings#emotion-compose) |
-| **STATIC** | Emotion motion: not moving (held, frozen, numb) | `wawethumel` | [Feelings](/feelings#emotion-compose) |
-| **SURGING** | Emotion motion: in waves or spikes | `wuwathuraer` | [Feelings](/feelings#emotion-compose) |
-| **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruem` | [Feelings](/feelings#emotion-compose) |
-| **VICARIOUS** | Emotion locus: felt for someone's sake | `wawethumom` | [Feelings](/feelings#emotion-compose) |
+| **SETTLED** | Feeling duration: it has settled in | `wawethumel` | [Feelings](/feelings#feeling-duration) |
+| **STAYING** | Feeling urge: stay in it, no pull to move | `thawethamam` | [How you feel](/how-you-feel#urges) |
+| **TOWARD** | Feeling urge: turn to someone, for comfort or to share | `thawethumoem` | [Feelings](/feelings#emotion-compose) |
+| **UNPLACED** | Feeling urge: can't tell which way it pulls | `thuwathumuem` | [Feelings](/feelings#emotion-compose) |
 | **WANT** | Desire mood: lasting / unstated / passing | `thalom` | [Want and decide](/want-and-decide#want) |
 
 **Compare with:** [quasi](#quasi) (`-e-xROOT`) is not **NOTIONAL**.
@@ -482,7 +482,7 @@ Whose view a clause reports. The name is fused onto an evidential, **MAY**, or *
 
 [Whose view](/holder#holder)
 
-**Compare with:** a person in hosted `/b/` after an evidential is the source you heard it from, not the holder. The VICARIOUS locus is your own feeling about someone else's stake.
+**Compare with:** a person in hosted `/b/` after an evidential is the source you heard it from, not the holder. After a feeling word whose urge stays put, a `bl-` word names whose stake it is: the need is theirs and the feeling is yours.
 
 ### Hook
 
