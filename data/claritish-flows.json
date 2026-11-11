@@ -1,294 +1,669 @@
 {
   "guess": {
     "lesson": "could-be",
-    "commands": { "sure": {} },
+    "commands": {
+      "sure": {}
+    },
     "questions": [
       {
         "id": "plan",
         "prompt": "What will you do about the guess?",
         "choices": [
-          { "value": "-m", "label": "Leave it at could be" },
-          { "value": "-l", "label": "Find out" },
-          { "value": "-r", "label": "Nothing: it's a passing thought" }
+          {
+            "value": "-m",
+            "label": "Leave it at could be"
+          },
+          {
+            "value": "-l",
+            "label": "Find out"
+          },
+          {
+            "value": "-r",
+            "label": "Nothing: it's a passing thought"
+          }
         ]
       }
     ],
     "forms": [
       {
-        "parts": [{ "section": "settled", "row": "could be", "col": "{plan}" }],
+        "parts": [
+          {
+            "section": "settled",
+            "row": "could be",
+            "col": "{plan}"
+          }
+        ],
         "gloss": [
-          { "section": "settled", "row": "could be", "take": "row" },
-          { "section": "settled", "row": "could be", "col": "{plan}", "take": "english" }
+          {
+            "section": "settled",
+            "row": "could be",
+            "take": "row"
+          },
+          {
+            "section": "settled",
+            "row": "could be",
+            "col": "{plan}",
+            "take": "english"
+          }
         ]
       }
     ]
   },
   "evidence": {
     "lesson": "how-you-know",
-    "commands": { "know": {} },
+    "commands": {
+      "know": {}
+    },
     "questions": [
       {
         "id": "channel",
         "prompt": "How do you know?",
         "choices": [
-          { "value": "live" },
-          { "value": "from memory" },
-          { "value": "from the pattern" },
-          { "value": "worked out" },
-          { "value": "deduced" },
-          { "value": "reported" },
-          { "value": "intuition" }
+          {
+            "value": "live"
+          },
+          {
+            "value": "from memory"
+          },
+          {
+            "value": "from the pattern"
+          },
+          {
+            "value": "worked out"
+          },
+          {
+            "value": "deduced"
+          },
+          {
+            "value": "reported"
+          },
+          {
+            "value": "intuition"
+          }
         ]
       },
       {
         "id": "strength",
         "prompt": "How strong is the evidence?",
-        "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
+        "choices": [
+          {
+            "value": "-m"
+          },
+          {
+            "value": "-l"
+          },
+          {
+            "value": "-r"
+          }
+        ]
       }
     ],
     "forms": [
       {
-        "parts": [{ "section": "how-you-know", "row": "{channel}", "col": "{strength}" }],
+        "parts": [
+          {
+            "section": "how-you-know",
+            "row": "{channel}",
+            "col": "{strength}"
+          }
+        ],
         "gloss": [
-          { "section": "how-you-know", "row": "{channel}", "take": "row" },
-          { "section": "how-you-know", "col": "{strength}", "take": "col" }
+          {
+            "section": "how-you-know",
+            "row": "{channel}",
+            "take": "row"
+          },
+          {
+            "section": "how-you-know",
+            "col": "{strength}",
+            "take": "col"
+          }
         ]
       }
     ]
   },
   "reach": {
     "lesson": "labels",
-    "commands": { "label": {} },
+    "commands": {
+      "label": {}
+    },
     "questions": [
       {
         "id": "reach",
         "prompt": "Label reach: how far does the label reach?",
         "choices": [
-          { "value": "this episode" },
-          { "value": "a practiced role" },
-          { "value": "this pair" },
-          { "value": "a type across scenes" }
+          {
+            "value": "this episode"
+          },
+          {
+            "value": "a practiced role"
+          },
+          {
+            "value": "this pair"
+          },
+          {
+            "value": "a type across scenes"
+          }
         ]
       }
     ],
     "forms": [
       {
-        "parts": [{ "section": "suffixes", "cell": "{reach}" }],
-        "gloss": [{ "section": "suffixes", "cell": "{reach}", "take": "english" }]
+        "parts": [
+          {
+            "section": "suffixes",
+            "cell": "{reach}"
+          }
+        ],
+        "gloss": [
+          {
+            "section": "suffixes",
+            "cell": "{reach}",
+            "take": "english"
+          }
+        ]
       }
     ]
   },
   "thanks": {
     "lesson": "thanks-and-sorry",
-    "commands": { "thanks": {} },
+    "commands": {
+      "thanks": {}
+    },
     "questions": [
       {
         "id": "what",
         "prompt": "What are you thanking?",
         "choices": [
-          { "value": "act", "label": "What someone did" },
-          { "value": "owned", "label": "The thing itself", "requires": "owned-noun" }
+          {
+            "value": "act",
+            "label": "What someone did"
+          },
+          {
+            "value": "owned",
+            "label": "The thing itself",
+            "requires": "owned-noun"
+          }
         ]
       },
       {
         "id": "sake",
         "prompt": "Which of your needs did it meet?",
         "choices": [
-          { "value": "autonomy" },
-          { "value": "competence" },
-          { "value": "understanding" },
-          { "value": "purpose" },
-          { "value": "relatedness" },
-          { "value": "beneficence" },
-          { "value": "pleasure" },
-          { "value": "physical" },
-          { "value": "a sake, unspecified" }
+          {
+            "value": "autonomy"
+          },
+          {
+            "value": "competence"
+          },
+          {
+            "value": "understanding"
+          },
+          {
+            "value": "purpose"
+          },
+          {
+            "value": "relatedness"
+          },
+          {
+            "value": "beneficence"
+          },
+          {
+            "value": "pleasure"
+          },
+          {
+            "value": "physical"
+          },
+          {
+            "value": "a sake, unspecified"
+          }
         ]
       },
       {
         "id": "ending",
         "prompt": "How long will it stay with you?",
-        "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
+        "choices": [
+          {
+            "value": "-m"
+          },
+          {
+            "value": "-l"
+          },
+          {
+            "value": "-r"
+          }
+        ]
       }
     ],
     "forms": [
       {
-        "when": { "what": "owned" },
+        "when": {
+          "what": "owned"
+        },
         "placement": "after-noun",
         "parts": [
           {
-            "formula": { "section": "sakes", "line": "Sake word" },
-            "swap": { "section": "sakes", "line": "Thanks for a thing you own" },
+            "formula": {
+              "section": "sakes",
+              "line": "Sake word"
+            },
+            "swap": {
+              "section": "sakes",
+              "line": "Thanks for a thing you own"
+            },
             "slots": {
-              "sake": { "section": "sakes", "table": 1, "cell": "{sake}" },
-              "stance": { "section": "sakes", "table": 2, "row": "met", "col": "Stance" },
-              "ending": { "section": "sakes", "table": 2, "col": "{ending}", "take": "ending" }
+              "sake": {
+                "section": "sakes",
+                "table": 1,
+                "cell": "{sake}"
+              },
+              "stance": {
+                "section": "sakes",
+                "table": 2,
+                "row": "met",
+                "col": "Stance"
+              },
+              "ending": {
+                "section": "sakes",
+                "table": 2,
+                "col": "{ending}",
+                "take": "ending"
+              }
             }
           }
         ],
         "gloss": [
-          { "section": "sakes", "table": 1, "cell": "{sake}", "take": "english" },
-          { "section": "sakes", "table": 2, "row": "met", "col": "{ending}", "take": "english" }
+          {
+            "section": "sakes",
+            "table": 1,
+            "cell": "{sake}",
+            "take": "english"
+          },
+          {
+            "section": "sakes",
+            "table": 2,
+            "row": "met",
+            "col": "{ending}",
+            "take": "english"
+          }
         ]
       },
       {
         "parts": [
           {
-            "formula": { "section": "sakes", "line": "Sake word" },
+            "formula": {
+              "section": "sakes",
+              "line": "Sake word"
+            },
             "slots": {
-              "sake": { "section": "sakes", "table": 1, "cell": "{sake}" },
-              "stance": { "section": "sakes", "table": 2, "row": "met", "col": "Stance" },
-              "ending": { "section": "sakes", "table": 2, "col": "{ending}", "take": "ending" }
+              "sake": {
+                "section": "sakes",
+                "table": 1,
+                "cell": "{sake}"
+              },
+              "stance": {
+                "section": "sakes",
+                "table": 2,
+                "row": "met",
+                "col": "Stance"
+              },
+              "ending": {
+                "section": "sakes",
+                "table": 2,
+                "col": "{ending}",
+                "take": "ending"
+              }
             }
           }
         ],
         "gloss": [
-          { "section": "sakes", "table": 1, "cell": "{sake}", "take": "english" },
-          { "section": "sakes", "table": 2, "row": "met", "col": "{ending}", "take": "english" }
+          {
+            "section": "sakes",
+            "table": 1,
+            "cell": "{sake}",
+            "take": "english"
+          },
+          {
+            "section": "sakes",
+            "table": 2,
+            "row": "met",
+            "col": "{ending}",
+            "take": "english"
+          }
         ]
       }
     ]
   },
   "sorry": {
     "lesson": "thanks-and-sorry",
-    "commands": { "sorry": {} },
+    "commands": {
+      "sorry": {}
+    },
     "questions": [
       {
         "id": "sake",
         "prompt": "Which of their needs went unmet?",
         "choices": [
-          { "value": "autonomy" },
-          { "value": "competence" },
-          { "value": "understanding" },
-          { "value": "purpose" },
-          { "value": "relatedness" },
-          { "value": "beneficence" },
-          { "value": "pleasure" },
-          { "value": "physical" },
-          { "value": "a sake, unspecified" }
+          {
+            "value": "autonomy"
+          },
+          {
+            "value": "competence"
+          },
+          {
+            "value": "understanding"
+          },
+          {
+            "value": "purpose"
+          },
+          {
+            "value": "relatedness"
+          },
+          {
+            "value": "beneficence"
+          },
+          {
+            "value": "pleasure"
+          },
+          {
+            "value": "physical"
+          },
+          {
+            "value": "a sake, unspecified"
+          }
         ]
       },
       {
         "id": "ending",
         "prompt": "How lasting is the harm?",
-        "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
+        "choices": [
+          {
+            "value": "-m"
+          },
+          {
+            "value": "-l"
+          },
+          {
+            "value": "-r"
+          }
+        ]
       }
     ],
     "forms": [
       {
         "parts": [
           {
-            "formula": { "section": "sakes", "line": "Sake word" },
+            "formula": {
+              "section": "sakes",
+              "line": "Sake word"
+            },
             "slots": {
-              "sake": { "section": "sakes", "table": 1, "cell": "{sake}" },
-              "stance": { "section": "sakes", "table": 2, "row": "unmet", "col": "Stance" },
-              "ending": { "section": "sakes", "table": 2, "col": "{ending}", "take": "ending" }
+              "sake": {
+                "section": "sakes",
+                "table": 1,
+                "cell": "{sake}"
+              },
+              "stance": {
+                "section": "sakes",
+                "table": 2,
+                "row": "unmet",
+                "col": "Stance"
+              },
+              "ending": {
+                "section": "sakes",
+                "table": 2,
+                "col": "{ending}",
+                "take": "ending"
+              }
             }
           },
-          { "section": "sakes", "table": 2, "row": "unmet", "col": "Says" }
+          {
+            "section": "sakes",
+            "table": 2,
+            "row": "unmet",
+            "col": "Says"
+          }
         ],
         "gloss": [
-          { "section": "sakes", "table": 1, "cell": "{sake}", "take": "english" },
-          { "section": "sakes", "table": 2, "row": "unmet", "col": "{ending}", "take": "english" }
+          {
+            "section": "sakes",
+            "table": 1,
+            "cell": "{sake}",
+            "take": "english"
+          },
+          {
+            "section": "sakes",
+            "table": 2,
+            "row": "unmet",
+            "col": "{ending}",
+            "take": "english"
+          }
         ]
       }
     ]
   },
   "ability": {
     "lesson": "can-and-cant",
-    "commands": { "can": {} },
+    "commands": {
+      "can": {}
+    },
     "questions": [
       {
         "id": "when",
         "prompt": "Not right now, not yet, or never?",
         "choices": [
-          { "value": "can't yet" },
-          { "value": "can't, just for now" },
-          { "value": "can never" },
-          { "value": "can", "requires": "command" }
+          {
+            "value": "can't yet"
+          },
+          {
+            "value": "can't, just for now"
+          },
+          {
+            "value": "can never"
+          },
+          {
+            "value": "can",
+            "requires": "command"
+          }
         ]
       }
     ],
     "forms": [
       {
-        "parts": [{ "section": "suffixes", "cell": "{when}" }],
-        "gloss": [{ "section": "suffixes", "cell": "{when}", "take": "english" }]
+        "parts": [
+          {
+            "section": "suffixes",
+            "cell": "{when}"
+          }
+        ],
+        "gloss": [
+          {
+            "section": "suffixes",
+            "cell": "{when}",
+            "take": "english"
+          }
+        ]
       }
     ]
   },
   "rule": {
     "lesson": "allowed-required-agreed",
-    "commands": { "allowed": {}, "forbidden": { "kind": "forbidden" }, "required": { "kind": "required" } },
+    "commands": {
+      "allowed": {},
+      "forbidden": {
+        "kind": "forbidden"
+      },
+      "required": {
+        "kind": "required"
+      }
+    },
     "questions": [
       {
         "id": "kind",
         "prompt": "Which is it?",
-        "choices": [{ "value": "allowed" }, { "value": "forbidden" }, { "value": "required" }]
+        "choices": [
+          {
+            "value": "allowed"
+          },
+          {
+            "value": "forbidden"
+          },
+          {
+            "value": "required"
+          }
+        ]
       },
       {
         "id": "source",
         "prompt": "Where does it come from?",
-        "labelFrom": { "section": "allowed", "row": "{kind}", "col": "{source}", "take": "english" },
-        "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
+        "labelFrom": {
+          "section": "allowed",
+          "row": "{kind}",
+          "col": "{source}",
+          "take": "english"
+        },
+        "choices": [
+          {
+            "value": "-m"
+          },
+          {
+            "value": "-l"
+          },
+          {
+            "value": "-r"
+          }
+        ]
       }
     ],
     "forms": [
       {
-        "parts": [{ "section": "allowed", "row": "{kind}", "col": "{source}" }],
+        "parts": [
+          {
+            "section": "allowed",
+            "row": "{kind}",
+            "col": "{source}"
+          }
+        ],
         "gloss": [
-          { "section": "allowed", "row": "{kind}", "take": "row" },
-          { "section": "allowed", "col": "{source}", "take": "col" },
-          { "section": "allowed", "row": "{kind}", "col": "{source}", "take": "english" }
+          {
+            "section": "allowed",
+            "row": "{kind}",
+            "take": "row"
+          },
+          {
+            "section": "allowed",
+            "col": "{source}",
+            "take": "col"
+          },
+          {
+            "section": "allowed",
+            "row": "{kind}",
+            "col": "{source}",
+            "take": "english"
+          }
         ]
       }
     ]
   },
   "consent": {
     "lesson": "allowed-required-agreed",
-    "commands": { "agreed": {} },
+    "commands": {
+      "agreed": {}
+    },
     "questions": [
       {
         "id": "consent",
         "prompt": "Did the person it affects agree?",
-        "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
+        "choices": [
+          {
+            "value": "-m"
+          },
+          {
+            "value": "-l"
+          },
+          {
+            "value": "-r"
+          }
+        ]
       }
     ],
     "forms": [
       {
-        "parts": [{ "section": "allowed", "row": "agreed", "col": "{consent}" }],
+        "parts": [
+          {
+            "section": "allowed",
+            "row": "agreed",
+            "col": "{consent}"
+          }
+        ],
         "gloss": [
-          { "section": "allowed", "row": "agreed", "take": "row" },
-          { "section": "allowed", "row": "agreed", "col": "{consent}", "take": "english" }
+          {
+            "section": "allowed",
+            "row": "agreed",
+            "take": "row"
+          },
+          {
+            "section": "allowed",
+            "row": "agreed",
+            "col": "{consent}",
+            "take": "english"
+          }
         ]
       }
     ]
   },
   "ought": {
     "lesson": "oughts-and-motives",
-    "commands": { "ought": {} },
+    "commands": {
+      "ought": {}
+    },
     "questions": [
       {
         "id": "sake",
         "prompt": "Which need of yours would it serve?",
         "choices": [
-          { "value": "autonomy" },
-          { "value": "competence" },
-          { "value": "understanding" },
-          { "value": "purpose" },
-          { "value": "relatedness" },
-          { "value": "beneficence" },
-          { "value": "pleasure" },
-          { "value": "physical" },
-          { "value": "a sake, unspecified" }
+          {
+            "value": "autonomy"
+          },
+          {
+            "value": "competence"
+          },
+          {
+            "value": "understanding"
+          },
+          {
+            "value": "purpose"
+          },
+          {
+            "value": "relatedness"
+          },
+          {
+            "value": "beneficence"
+          },
+          {
+            "value": "pleasure"
+          },
+          {
+            "value": "physical"
+          },
+          {
+            "value": "a sake, unspecified"
+          }
         ]
       },
       {
         "id": "ending",
         "prompt": "Why is the advice welcome?",
         "choices": [
-          { "value": "-m" },
-          { "value": "-l" },
-          { "value": "-r" },
+          {
+            "value": "-m"
+          },
+          {
+            "value": "-l"
+          },
+          {
+            "value": "-r"
+          },
           {
             "value": "none",
             "label": "None of these",
@@ -301,215 +676,546 @@
       {
         "parts": [
           {
-            "formula": { "section": "sakes", "line": "Sake word" },
+            "formula": {
+              "section": "sakes",
+              "line": "Sake word"
+            },
             "slots": {
-              "sake": { "section": "sakes", "table": 1, "cell": "{sake}" },
-              "stance": { "section": "sakes", "table": 2, "row": "prescription", "col": "Stance" },
-              "ending": { "section": "sakes", "table": 2, "col": "{ending}", "take": "ending" }
+              "sake": {
+                "section": "sakes",
+                "table": 1,
+                "cell": "{sake}"
+              },
+              "stance": {
+                "section": "sakes",
+                "table": 2,
+                "row": "prescription",
+                "col": "Stance"
+              },
+              "ending": {
+                "section": "sakes",
+                "table": 2,
+                "col": "{ending}",
+                "take": "ending"
+              }
             }
           }
         ],
         "gloss": [
-          { "section": "sakes", "table": 1, "cell": "{sake}", "take": "english" },
-          { "section": "sakes", "table": 2, "row": "prescription", "col": "Says", "take": "english" },
-          { "section": "sakes", "table": 2, "row": "prescription", "col": "{ending}", "take": "english" }
+          {
+            "section": "sakes",
+            "table": 1,
+            "cell": "{sake}",
+            "take": "english"
+          },
+          {
+            "section": "sakes",
+            "table": 2,
+            "row": "prescription",
+            "col": "Says",
+            "take": "english"
+          },
+          {
+            "section": "sakes",
+            "table": 2,
+            "row": "prescription",
+            "col": "{ending}",
+            "take": "english"
+          }
         ]
       }
     ]
   },
   "motive": {
     "lesson": "oughts-and-motives",
-    "commands": { "motive": {} },
+    "commands": {
+      "motive": {}
+    },
     "questions": [
       {
         "id": "sake",
         "prompt": "Which need of yours did it serve?",
         "choices": [
-          { "value": "autonomy" },
-          { "value": "competence" },
-          { "value": "understanding" },
-          { "value": "purpose" },
-          { "value": "relatedness" },
-          { "value": "beneficence" },
-          { "value": "pleasure" },
-          { "value": "physical" },
-          { "value": "a sake, unspecified" }
+          {
+            "value": "autonomy"
+          },
+          {
+            "value": "competence"
+          },
+          {
+            "value": "understanding"
+          },
+          {
+            "value": "purpose"
+          },
+          {
+            "value": "relatedness"
+          },
+          {
+            "value": "beneficence"
+          },
+          {
+            "value": "pleasure"
+          },
+          {
+            "value": "physical"
+          },
+          {
+            "value": "a sake, unspecified"
+          }
         ]
       },
       {
         "id": "ending",
         "prompt": "When does the payoff land?",
-        "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
+        "choices": [
+          {
+            "value": "-m"
+          },
+          {
+            "value": "-l"
+          },
+          {
+            "value": "-r"
+          }
+        ]
       }
     ],
     "forms": [
       {
         "parts": [
           {
-            "formula": { "section": "sakes", "line": "Sake word" },
+            "formula": {
+              "section": "sakes",
+              "line": "Sake word"
+            },
             "slots": {
-              "sake": { "section": "sakes", "table": 1, "cell": "{sake}" },
-              "stance": { "section": "sakes", "table": 2, "row": "motive", "col": "Stance" },
-              "ending": { "section": "sakes", "table": 2, "col": "{ending}", "take": "ending" }
+              "sake": {
+                "section": "sakes",
+                "table": 1,
+                "cell": "{sake}"
+              },
+              "stance": {
+                "section": "sakes",
+                "table": 2,
+                "row": "motive",
+                "col": "Stance"
+              },
+              "ending": {
+                "section": "sakes",
+                "table": 2,
+                "col": "{ending}",
+                "take": "ending"
+              }
             }
           }
         ],
         "gloss": [
-          { "section": "sakes", "table": 1, "cell": "{sake}", "take": "english" },
-          { "section": "sakes", "table": 2, "row": "motive", "col": "Says", "take": "english" },
-          { "section": "sakes", "table": 2, "row": "motive", "col": "{ending}", "take": "english" }
+          {
+            "section": "sakes",
+            "table": 1,
+            "cell": "{sake}",
+            "take": "english"
+          },
+          {
+            "section": "sakes",
+            "table": 2,
+            "row": "motive",
+            "col": "Says",
+            "take": "english"
+          },
+          {
+            "section": "sakes",
+            "table": 2,
+            "row": "motive",
+            "col": "{ending}",
+            "take": "english"
+          }
         ]
       }
     ]
   },
   "intent": {
     "lesson": "wants-and-plans",
-    "commands": { "want": {}, "plan": { "kind": "planned" } },
+    "commands": {
+      "want": {},
+      "plan": {
+        "kind": "planned"
+      }
+    },
     "questions": [
       {
         "id": "kind",
         "prompt": "A wish, or something you mean to do?",
-        "choices": [{ "value": "wants", "label": "A wish" }, { "value": "planned", "label": "Something I mean to do" }]
+        "choices": [
+          {
+            "value": "wants",
+            "label": "A wish"
+          },
+          {
+            "value": "planned",
+            "label": "Something I mean to do"
+          }
+        ]
       },
       {
         "id": "ending",
         "prompt": "How much weight does it carry?",
-        "labelFrom": { "section": "settled", "row": "{kind}", "col": "{ending}", "take": "english" },
-        "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
+        "labelFrom": {
+          "section": "settled",
+          "row": "{kind}",
+          "col": "{ending}",
+          "take": "english"
+        },
+        "choices": [
+          {
+            "value": "-m"
+          },
+          {
+            "value": "-l"
+          },
+          {
+            "value": "-r"
+          }
+        ]
       }
     ],
     "forms": [
       {
-        "parts": [{ "section": "settled", "row": "{kind}", "col": "{ending}" }],
+        "parts": [
+          {
+            "section": "settled",
+            "row": "{kind}",
+            "col": "{ending}"
+          }
+        ],
         "gloss": [
-          { "section": "settled", "row": "{kind}", "take": "row" },
-          { "section": "settled", "row": "{kind}", "col": "{ending}", "take": "english" }
+          {
+            "section": "settled",
+            "row": "{kind}",
+            "take": "row"
+          },
+          {
+            "section": "settled",
+            "row": "{kind}",
+            "col": "{ending}",
+            "take": "english"
+          }
         ]
       }
     ]
   },
   "decision": {
     "lesson": "decisions-and-tries",
-    "commands": { "decide": {} },
+    "commands": {
+      "decide": {}
+    },
     "questions": [
       {
         "id": "ending",
         "prompt": "How settled is it?",
-        "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
+        "choices": [
+          {
+            "value": "-m"
+          },
+          {
+            "value": "-l"
+          },
+          {
+            "value": "-r"
+          }
+        ]
       }
     ],
     "forms": [
       {
-        "parts": [{ "section": "settled", "row": "decided", "col": "{ending}" }],
+        "parts": [
+          {
+            "section": "settled",
+            "row": "decided",
+            "col": "{ending}"
+          }
+        ],
         "gloss": [
-          { "section": "settled", "row": "decided", "take": "row" },
-          { "section": "settled", "row": "decided", "col": "{ending}", "take": "english" }
+          {
+            "section": "settled",
+            "row": "decided",
+            "take": "row"
+          },
+          {
+            "section": "settled",
+            "row": "decided",
+            "col": "{ending}",
+            "take": "english"
+          }
         ]
       }
     ]
   },
   "try": {
     "lesson": "decisions-and-tries",
-    "commands": { "try": {} },
+    "commands": {
+      "try": {}
+    },
     "questions": [
       {
         "id": "ending",
         "prompt": "What kind of try is it?",
-        "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
+        "choices": [
+          {
+            "value": "-m"
+          },
+          {
+            "value": "-l"
+          },
+          {
+            "value": "-r"
+          }
+        ]
       }
     ],
     "forms": [
       {
-        "parts": [{ "section": "settled", "row": "tries", "col": "{ending}" }],
-        "gloss": [{ "section": "settled", "row": "tries", "col": "{ending}", "take": "english" }]
+        "parts": [
+          {
+            "section": "settled",
+            "row": "tries",
+            "col": "{ending}"
+          }
+        ],
+        "gloss": [
+          {
+            "section": "settled",
+            "row": "tries",
+            "col": "{ending}",
+            "take": "english"
+          }
+        ]
       }
     ]
   },
   "feeling": {
     "lesson": "what-a-feeling-wants",
-    "alsoFor": ["feelings"],
-    "commands": { "feel": {} },
+    "alsoFor": [
+      "feelings"
+    ],
+    "commands": {
+      "feel": {}
+    },
     "questions": [
       {
         "id": "stance",
         "prompt": "Is something met, or unmet?",
-        "choices": [{ "value": "met" }, { "value": "unmet" }]
+        "choices": [
+          {
+            "value": "met"
+          },
+          {
+            "value": "unmet"
+          }
+        ]
       },
       {
         "id": "urge",
         "prompt": "What does the feeling pull you to do?",
         "choices": [
-          { "value": "stay in it" },
-          { "value": "act on someone" },
-          { "value": "do something for someone" },
-          { "value": "move off" },
-          { "value": "turn to someone" },
-          { "value": "push back" },
-          { "value": "let go" },
-          { "value": "keep the peace" },
-          { "value": "stay on the spot" },
-          { "value": "can't tell which way" }
+          {
+            "value": "stay in it"
+          },
+          {
+            "value": "act on someone"
+          },
+          {
+            "value": "do something for someone"
+          },
+          {
+            "value": "move off"
+          },
+          {
+            "value": "turn to someone"
+          },
+          {
+            "value": "push back"
+          },
+          {
+            "value": "let go"
+          },
+          {
+            "value": "keep the peace"
+          },
+          {
+            "value": "stay on the spot"
+          },
+          {
+            "value": "can't tell which way"
+          }
         ]
       },
       {
         "id": "duration",
         "prompt": "How long does it last?",
-        "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
+        "choices": [
+          {
+            "value": "-m"
+          },
+          {
+            "value": "-l"
+          },
+          {
+            "value": "-r"
+          }
+        ]
       },
       {
         "id": "cause",
         "prompt": "Has it happened?",
         "choices": [
-          { "value": "it has", "label": "yes, or it's happening now" },
-          { "value": "it may", "label": "not yet: it may come" }
+          {
+            "value": "it has",
+            "label": "yes, or it's happening now"
+          },
+          {
+            "value": "it may",
+            "label": "not yet: it may come"
+          }
         ]
       },
       {
         "id": "sake",
         "prompt": "Which need?",
         "choices": [
-          { "value": "a sake, unspecified", "label": "not sure" },
-          { "value": "autonomy" },
-          { "value": "competence" },
-          { "value": "understanding" },
-          { "value": "purpose" },
-          { "value": "relatedness" },
-          { "value": "beneficence" },
-          { "value": "pleasure" },
-          { "value": "physical" }
+          {
+            "value": "a sake, unspecified",
+            "label": "not sure"
+          },
+          {
+            "value": "autonomy"
+          },
+          {
+            "value": "competence"
+          },
+          {
+            "value": "understanding"
+          },
+          {
+            "value": "purpose"
+          },
+          {
+            "value": "relatedness"
+          },
+          {
+            "value": "beneficence"
+          },
+          {
+            "value": "pleasure"
+          },
+          {
+            "value": "physical"
+          }
         ]
       },
       {
         "id": "ending",
         "prompt": "How lasting is the payoff or the cost?",
-        "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
+        "choices": [
+          {
+            "value": "-m"
+          },
+          {
+            "value": "-l"
+          },
+          {
+            "value": "-r"
+          }
+        ]
       }
     ],
     "forms": [
       {
-        "when": { "cause": "it may" },
-        "lead": { "section": "settled", "row": "could be", "col": "-m" },
+        "when": {
+          "cause": "it may"
+        },
+        "lead": {
+          "section": "settled",
+          "row": "could be",
+          "col": "-m"
+        },
         "oneWord": true,
         "breakdown": true,
         "parts": [
           {
-            "formula": { "section": "sakes", "line": "Sake word" },
+            "formula": {
+              "section": "sakes",
+              "line": "Sake word"
+            },
             "slots": {
-              "sake": { "section": "sakes", "table": 1, "cell": "{sake}" },
-              "stance": { "section": "sakes", "table": 2, "row": "{stance}", "col": "Stance" },
-              "ending": { "section": "sakes", "table": 2, "col": "{ending}", "take": "ending" }
+              "sake": {
+                "section": "sakes",
+                "table": 1,
+                "cell": "{sake}"
+              },
+              "stance": {
+                "section": "sakes",
+                "table": 2,
+                "row": "{stance}",
+                "col": "Stance"
+              },
+              "ending": {
+                "section": "sakes",
+                "table": 2,
+                "col": "{ending}",
+                "take": "ending"
+              }
             }
           },
-          { "section": "feelings", "table": 2, "cell": "{urge}" },
-          { "section": "feelings", "line": "How long it lasts", "item": "{duration}", "take": "ending" }
+          {
+            "section": "feelings",
+            "table": 2,
+            "cell": "{urge}"
+          },
+          {
+            "section": "feelings",
+            "line": "How long it lasts",
+            "item": "{duration}",
+            "take": "ending"
+          }
         ],
         "gloss": [
-          { "section": "settled", "row": "could be", "take": "row" },
-          { "section": "sakes", "table": 1, "cell": "{sake}", "take": "english" },
-          { "section": "sakes", "table": 2, "row": "{stance}", "col": "Stance", "take": "english" },
-          { "section": "settled", "col": "{ending}", "take": "col" },
-          { "section": "feelings", "table": 2, "cell": "{urge}", "take": "english" },
-          { "section": "feelings", "line": "How long it lasts", "item": "{duration}", "take": "english" }
+          {
+            "section": "settled",
+            "row": "could be",
+            "take": "row"
+          },
+          {
+            "section": "sakes",
+            "table": 1,
+            "cell": "{sake}",
+            "take": "english"
+          },
+          {
+            "section": "sakes",
+            "table": 2,
+            "row": "{stance}",
+            "col": "Stance",
+            "take": "english"
+          },
+          {
+            "section": "settled",
+            "col": "{ending}",
+            "take": "col"
+          },
+          {
+            "section": "feelings",
+            "table": 2,
+            "cell": "{urge}",
+            "take": "english"
+          },
+          {
+            "section": "feelings",
+            "line": "How long it lasts",
+            "item": "{duration}",
+            "take": "english"
+          }
         ]
       },
       {
@@ -517,46 +1223,120 @@
         "breakdown": true,
         "parts": [
           {
-            "formula": { "section": "sakes", "line": "Sake word" },
+            "formula": {
+              "section": "sakes",
+              "line": "Sake word"
+            },
             "slots": {
-              "sake": { "section": "sakes", "table": 1, "cell": "{sake}" },
-              "stance": { "section": "sakes", "table": 2, "row": "{stance}", "col": "Stance" },
-              "ending": { "section": "sakes", "table": 2, "col": "{ending}", "take": "ending" }
+              "sake": {
+                "section": "sakes",
+                "table": 1,
+                "cell": "{sake}"
+              },
+              "stance": {
+                "section": "sakes",
+                "table": 2,
+                "row": "{stance}",
+                "col": "Stance"
+              },
+              "ending": {
+                "section": "sakes",
+                "table": 2,
+                "col": "{ending}",
+                "take": "ending"
+              }
             }
           },
-          { "section": "feelings", "table": 2, "cell": "{urge}" },
-          { "section": "feelings", "line": "How long it lasts", "item": "{duration}", "take": "ending" }
+          {
+            "section": "feelings",
+            "table": 2,
+            "cell": "{urge}"
+          },
+          {
+            "section": "feelings",
+            "line": "How long it lasts",
+            "item": "{duration}",
+            "take": "ending"
+          }
         ],
         "gloss": [
-          { "section": "sakes", "table": 1, "cell": "{sake}", "take": "english" },
-          { "section": "sakes", "table": 2, "row": "{stance}", "col": "Stance", "take": "english" },
-          { "section": "settled", "col": "{ending}", "take": "col" },
-          { "section": "feelings", "table": 2, "cell": "{urge}", "take": "english" },
-          { "section": "feelings", "line": "How long it lasts", "item": "{duration}", "take": "english" }
+          {
+            "section": "sakes",
+            "table": 1,
+            "cell": "{sake}",
+            "take": "english"
+          },
+          {
+            "section": "sakes",
+            "table": 2,
+            "row": "{stance}",
+            "col": "Stance",
+            "take": "english"
+          },
+          {
+            "section": "settled",
+            "col": "{ending}",
+            "take": "col"
+          },
+          {
+            "section": "feelings",
+            "table": 2,
+            "cell": "{urge}",
+            "take": "english"
+          },
+          {
+            "section": "feelings",
+            "line": "How long it lasts",
+            "item": "{duration}",
+            "take": "english"
+          }
         ]
       }
     ]
   },
   "tone": {
     "lesson": "tone-marks",
-    "commands": { "tone": {} },
+    "commands": {
+      "tone": {}
+    },
     "questions": [
       {
         "id": "mark",
         "prompt": "How do you mean it?",
         "choices": [
-          { "value": "joking" },
-          { "value": "warm" },
-          { "value": "strong feeling" },
-          { "value": "contrast" },
-          { "value": "unsure about this word" }
+          {
+            "value": "joking"
+          },
+          {
+            "value": "warm"
+          },
+          {
+            "value": "strong feeling"
+          },
+          {
+            "value": "contrast"
+          },
+          {
+            "value": "unsure about this word"
+          }
         ]
       }
     ],
     "forms": [
       {
-        "parts": [{ "section": "tone-marks", "cell": "{mark}" }],
-        "gloss": [{ "section": "tone-marks", "cell": "{mark}", "take": "english" }]
+        "parts": [
+          {
+            "section": "tone-marks",
+            "cell": "{mark}"
+          }
+        ],
+        "gloss": [
+          {
+            "section": "tone-marks",
+            "cell": "{mark}",
+            "take": "english"
+          }
+        ]
       }
     ]
   }
