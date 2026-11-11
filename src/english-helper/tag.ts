@@ -95,7 +95,7 @@ function isVerb(word: string): boolean {
 }
 
 /** Doer nouns with no *-er* / *-or* under them. */
-const IRREGULAR_DOERS: Readonly<Record<string, string>> = { liar: "lie", beggar: "beg" };
+const IRREGULAR_DOERS: Readonly<Record<string, string>> = { liar: "misstate", beggar: "beg" };
 
 /** *lying* → *lie*, *walking* → *walk*; undefined when no known verb is under the *-ing*. */
 function ingVerb(word: string): string | undefined {

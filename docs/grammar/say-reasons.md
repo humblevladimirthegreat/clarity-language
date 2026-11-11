@@ -643,7 +643,7 @@ English *deserve* says something is owed without saying why. Name the ground. It
 
 ### Lie, ignore, mock, exploit, crime {#accusation-words}
 
-**Needs:** [Whose view (holder)](/holder#holder) · [Plan](/intention#plan-predict) · [Negation](/joins#negation-u) · [Say words after `uom`](/contrary-to#contrary-to-say) · [Exchange](/relations#exchange) · [Unmet](/sakes#sake-changeability) · [Fault](/fault#fault) · [Always](/restrictors#always-hual) · [Label reach](/label-seams#label-reach) · [Enough and too](/bars#sake-bars)
+**Needs:** [Whose view (holder)](/holder#holder) · [Plan](/intention#plan-predict) · [Negation](/joins#negation-u) · [Say words after `uom`](/contrary-to#contrary-to-say) · [Exchange](/relations#exchange) · [Unmet](/sakes#sake-changeability) · [Fault](/fault#fault) · [Always](/restrictors#always-hual) · [Label reach](/label-seams#label-reach) · [Enough and too](/bars#sake-bars) · [Who the urge points at](/how-you-feel#urge-landmark)
 
 English *lie*, *ignore*, and *mock* each name an act and also what the other person knew or meant. *Crime* and *villain* add a verdict. The bare Ageben word names only the act, the part anyone could check. Say what the other person knew or meant through a [holder](/holder#holder), which says how you know it. Put a verdict on the act with fault, a say word, or an unmet sake, and on a person with label reach.
 
@@ -657,6 +657,7 @@ English *lie*, *ignore*, and *mock* each name an act and also what the other per
 | *go unnoticed* / *be ignored* (no one's aim claimed) | `zalazun gunemum.` | left unseen and unanswered |
 | *neglect* | `zazozon dalazun vegewom vul uom hwuvol.` | no answer, against what the rules require |
 | *mock* | `zazozon dalazun vadomum.` + `zalazun theyomazozon thagom genemum.` | ridicule; I gather Azozon means it to hurt |
+| *scorn* / *mock* (with contempt) | `zazozon dalazun vadomum.` + `theyomazozon thawethumul blalazun.` | ridicule; I gather Azozon wants to keep away from Alazun, and it has settled in ([contempt](#emotion-lookup)) |
 | *exploit* | `zalazun demebol vewal bazozon heham blodel thudathum blalazun.` | an exchange that costs Alazun |
 | *break the law* / *commit a crime* | `zazozon vuzuyum.` | lawbreaking |
 | *crime* (which rule) | `zazozon dalazun voruyul uom hwuvul.` | robs Alazun against the rules |
@@ -837,6 +838,7 @@ English names a feeling with one word. Ageben builds it from the need, whether i
 |---------|---------------|--------|
 | *angry* | autonomy unmet, can be changed; push back | `thunathumuom` |
 | *resentful* | relatedness unmet; aimed at someone; settled in | `thawethumel` + `bl-` |
+| *contempt*, *scornful* | relatedness unmet; move away from someone; settled in | `thawethumul` + `bl-` |
 | *afraid* | MAY + physical unmet; move away | `thomam thobathumum` |
 | *anxious* | MAY + competence unmet, passing; move away; a wave | `thomam thuwathurur` |
 | *frozen* | physical unmet; held on the spot; a wave | `thobathumaer` |
