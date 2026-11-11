@@ -1,6 +1,6 @@
 # Feeling urges
 
-**Status:** partially implemented. U1, U2, and U3 are done and committed (2026-11-11); U4 is next. U1 and U3 ran on `fable` in place of `opus`, at the user's direction for those units. `how-you-feel.md` has no Practice yet, so its drill allowlist row is **generate** until U6. One decision is open ([open decisions](#open-decisions)). User decisions, all 2026-11-11:
+**Status:** partially implemented. The parser's gloss labels, the regenerated glosses, and the Beginner page `how-you-feel.md` are done and committed (2026-11-11). Three phases remain, each run in a new main session; **Phase 1 is next**. `how-you-feel.md` has no Practice yet, so its drill allowlist row is **generate** until Phase 2. The plan's `model` values are `opus`; the user substituted `fable` for the first session. User decisions, all 2026-11-11:
 
 - `o` is GIVING; VICARIOUS is dropped, and someone else's stake is said with whose stake.
 - `ae` is one HELD urge, covering frozen and held in.
@@ -13,6 +13,7 @@
 - Gloss labels: STAYING, AIMED, TOWARD, GIVING, RESISTING, AWAY, RELEASING, PLACATING, HELD, UNPLACED; SETTLED, OPEN, FLEETING.
 - Two stage pages, a new late-Beginner sitting and the Intermediate page, and no Advanced page.
 - Two Claritish lessons.
+- Rung 2 has no label for *bored*. The root `oyome` is *yawn* / *monotony* and describes the situation, not the person, and `goyomel` is one letter from `goyom`. *Bored* is said by calling the situation monotonous, or with a feeling word.
 
 **Related:** [feelings.md](../../grammar/intermediate/feelings.md), [sakes.md](../../grammar/beginner/sakes.md), [for-a-sake.md](../../grammar/intermediate/for-a-sake.md), [knowing.md](../../grammar/beginner/knowing.md), [extra-noun-hooks.md](../../grammar/beginner/extra-noun-hooks.md), [purpose.md](../../grammar/purpose.md), [claritish/feelings.md](../../grammar/claritish/feelings.md), [cheat-sheets/vowels.md](../../grammar/cheat-sheets/vowels.md), [say-reasons.md](../../grammar/say-reasons.md), [learning-levels.md](../../meta/learning-levels.md), [reading-order.ts](../../grammar/.vitepress/lib/reading-order.ts), [claritish-triggers.csv](../../../data/claritish-triggers.csv), [terminology.md](../../grammar/terminology.md), [feature-criteria.md](../../meta/feature-criteria.md), [unassigned-reserved.md](../../meta/unassigned-reserved.md), [design-decisions.md](../../meta/design-decisions.md), [claritish-flows.json](../../../data/claritish-flows.json), [morph-gloss.ts](../../../src/parse/morph-gloss.ts), [enforce.ts](../../../src/parse/enforce.ts), [constructions.ts](../../../src/parse/constructions.ts).
 
@@ -366,26 +367,81 @@ No spelling changes, so this is not a retie. A locus vowel in an example changes
 
 ## Implementation plan
 
-Runs through subagents: the work spans the parser, two teaching pages, example judgment on ten pages, and the Claritish track, which share little. One fresh subagent per unit, in this order. If the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate-on-stop) before the session ends.
+Three phases. Each phase is one new main session, which is that phase's orchestrator: it runs the phase's units through subagents, one fresh subagent per unit, in the order given, and stops when the phase ends. It does not start the next phase.
+
+The parser's gloss labels, the regenerated glosses, and the Beginner page are done and are not in this plan.
+
+**Every phase starts** the same way:
+
+1. Read the Status line and that phase's section below. Do not read the design sections whole; open the one a brief quotes.
+2. Run `npm run verify -- --baseline` and compare its errors with the phase's *Open at the start* list. An error that is not on the list means the tree has changed since the last phase: settle it before the first unit.
+
+**Every phase ends** the same way:
+
+1. Run the phase's end gate.
+2. Make the orchestrator's own edits (the `AGENTS.md` lines), then commit.
+3. [Consolidate this proposal](../../meta/procedures/proposals.md#consolidate-on-stop): delete the finished phase from this plan and the bullets it finished under [what changes, by file](#what-changes-by-file), and record the phase and its date on the Status line. Commit that with the phase's last work.
+4. Tell the user what the next phase starts with.
+
+If the user says to stop partway through a phase, the orchestrator consolidates the same way before the session ends, and Status names the units done.
+
+**Between units**, in every phase: each unit ends on `npm run verify -- --allow-generate`, which prints only errors new since the phase's baseline. Run `npm run grammar-check` only if `sentence-parser.ts` changed.
+
+**Commits**, in every phase: each message starts `feeling-urges <unit>` and ends `[skip-cd]` and the co-author line. A tool's output is committed alone, naming the command.
+
+### Phase 1: Intermediate grammar
+
+**Ends with** the Intermediate page, the recipe pages, and the terminology page teaching the new readings, and the parser reading a `bl-` after `a`, `ae`, or `ue` as whose stake.
 
 | Unit | Items | Agent | `model` | `effort` | May edit |
 |------|-------|-------|---------|----------|----------|
-| U4 | Rewrite `feelings.md` teaching sections; `feelingLandmark` and the reader notes in the parser, with their tests; `unassigned-reserved.md`; `design-decisions.md`; measure and peel | `proposal-worker` | `opus` | `high` | `feelings.md`, `src/parse/enforce.ts`, `constructions.ts`, `llm-prompt.ts`, their tests, the two meta notes, any page a peel creates |
-| U5 | Feeling examples on `say-reasons.md`, `say-questions.md`, `holder.md`, `mirative.md`, `compound-families.md`, `terminology.md`; the English lookup and mixed-pulls recipe on `say-reasons.md` | `proposal-worker` | `opus` | `high` | those six pages |
-| U6 | Practice on `how-you-feel.md`, then on `feelings.md`; allowlist rows | `checkpoint-writer` | `opus` | `high` | the two Practice sections, the drill allowlist |
-| U7 | Level review items: one new in `review.md`; re-check the feelings items in `review-intermediate.md` | `checkpoint-writer` | `opus` | `high` | the two review pages |
-| U8 | Claritish: the new lesson, the rewritten lesson, the cheat sheet, lesson lists and counts | `proposal-worker` | `opus` | `high` | `docs/grammar/claritish/`, `reading-order.ts` (`claritishLessons`) |
-| U9 | Journal editor: cue rows, the `feeling` flow, editor tests, the editor data note | `proposal-worker` | `opus` | `medium` | `data/claritish-triggers.csv`, `data/claritish-flows.json`, `src/claritish-editor/*.test.ts`, `claritish-editor-data.md` |
-| U10 | `purpose.md`, `cheat-sheets/vowels.md` hand rows, the `## Feelings` section of `cheat-sheets/why-allowed.md`, `TODO.md` | `proposal-worker` | `opus` | `high` | those four files |
-| U11 | `npm run cheat-sheet-blocks -- --write` | orchestrator | — | — | generated blocks only |
-| U12 | Audit: old labels left anywhere, English that no longer matches its gloss, a Beginner example that uses an Intermediate urge or ending | `proposal-worker` | `opus` | `high` | none; reports only |
+| 1A | `feelingLandmark` in the parser; the reader notes and rule summaries in the **Parser** list of [what changes, by file](#what-changes-by-file); their tests; `unassigned-reserved.md`; `design-decisions.md` | `proposal-worker` | `opus` | `high` | `src/parse/`, the two meta notes |
+| 1B | Rewrite the teaching sections of `feelings.md` against `how-you-feel.md`, per [where it is taught](#where-it-is-taught) | `proposal-worker` | `opus` | `high` | `feelings.md`, not its Practice |
+| 1C | Measure `feelings.md` ([restructure sittings](../../meta/procedures/restructure-sittings.md)); peel only if it runs over | orchestrator measures; `proposal-worker` for a peel | `opus` | `medium` | any page a peel creates, `reading-order.ts`, the drill allowlist |
+| 1D | `say-reasons.md`: its 30 feeling examples, the [English lookup](#from-an-english-emotion-word), and a recipe for mixed pulls | `proposal-worker` | `opus` | `high` | `say-reasons.md` |
+| 1E | Feeling examples on `say-questions.md`, `holder.md`, `mirative.md`, `compound-families.md`; `terminology.md`: the label table, urge and duration in place of locus and motion, and its 13 examples | `proposal-worker` | `opus` | `high` | those five pages |
 
-Notes on order:
+- **1A then 1B, in one commit.** The page's whose-stake examples do not parse until 1A lands, and a parser change ships with the page that teaches it. 1A's gate is the parser tests; a page that still documents the old rejection is expected until 1B.
+- **1B leaves Practice and the cheat sheets alone.** It reports each cheat sheet row and each Practice item its rewrite makes stale, and Phase 2 fixes them.
+- **Open at the start:** the label table in `terminology.md` (nine labels to add, three rows to drop, and the `llm-prompt.test.ts` legend test that reads it), which 1E clears; the missing Practice on `how-you-feel.md`, which stays open.
+- **End gate:** `npm run verify -- --allow-generate` with the terminology errors resolved. The only errors left are the missing Practice, cheat sheet rows whose forms have left `feelings.md#emotion-compose`, and checkpoint errors on the old `feelings.md` Practice.
+- **Orchestrator's edit:** the `feelings.md` Owns line in `AGENTS.md` gains `how-you-feel.md` and any page a peel created.
+- **Commits:** four or five. 1A with 1B; 1C only if it peeled; 1D; 1E with the `AGENTS.md` line and the consolidated proposal.
 
-- `reading-order.ts` takes one writer at a time; U8 is its next writer.
-- **U4 carries the one behavior change** with the page that teaches it.
-- **U6 before U7**: the checkpoint writer for `how-you-feel.md` must not have read `feelings.md`'s new sections, so the orchestrator's pack (`tmp/checkpoint-pack/feeling-urges.md`) names the sittings in path order.
-- The orchestrator applies the `AGENTS.md` lines after U10.
+### Phase 2: Cheat sheets and practice
+
+**Ends with** a clean build and test: the cheat sheets, the Practice sections, and the level reviews match the two stage pages.
+
+| Unit | Items | Agent | `model` | `effort` | May edit |
+|------|-------|-------|---------|----------|----------|
+| 2A | Cheat sheet hand rows: in `cheat-sheets/vowels.md`, the feeling rows in `#place` (now stage B) and `#extra-noun-stacks`, and *feeling loci* in the vowel tree; the `## Feelings` section of `cheat-sheets/why-allowed.md` | `proposal-worker` | `opus` | `high` | those two pages |
+| 2B | `npm run cheat-sheet-blocks -- --write` | orchestrator | — | — | generated blocks only |
+| 2C | Practice on `how-you-feel.md`; its allowlist row | `checkpoint-writer` | `opus` | `high` | that Practice section, the drill allowlist |
+| 2D | Practice on `feelings.md` and on any page Phase 1 peeled from it; their allowlist rows and the two stale notes | `checkpoint-writer` | `opus` | `high` | those Practice sections, the drill allowlist |
+| 2E | Level reviews: one new item in `review.md`; re-check the feelings items in `review-intermediate.md` | `checkpoint-writer` | `opus` | `high` | the two review pages |
+
+- **2C before 2D, each with a fresh writer.** The writer for `how-you-feel.md` must not have read the new sections of `feelings.md`. The orchestrator's pack (`tmp/checkpoint-pack/feeling-urges.md`) names the sittings in path order. The allowlist takes one writer at a time.
+- **Open at the start:** the three kinds of error Phase 1's end gate left.
+- **End gate:** a clean `npm run build` and `npm test`, with nothing left on a **generate** row.
+- **Commits:** five. 2A; 2B (tool output alone); 2C; 2D; 2E with the consolidated proposal.
+
+### Phase 3: Claritish, journal editor, and audit
+
+**Ends with** the Claritish track and the journal editor on the new system, an audit of everything the proposal changed, and this proposal deleted.
+
+| Unit | Items | Agent | `model` | `effort` | May edit |
+|------|-------|-------|---------|----------|----------|
+| 3A | Claritish: the new lesson, the rewritten lesson, the cheat sheet, lesson lists and counts | `proposal-worker` | `opus` | `high` | `docs/grammar/claritish/`, `reading-order.ts` (`claritishLessons`) |
+| 3B | Journal editor: cue rows, the `feeling` flow, editor tests, the editor data note | `proposal-worker` | `opus` | `medium` | `data/claritish-triggers.csv`, `data/claritish-flows.json`, `src/claritish-editor/*.test.ts`, `claritish-editor-data.md` |
+| 3C | `purpose.md`, `TODO.md` | `proposal-worker` | `opus` | `medium` | those two files |
+| 3D | `npm run cheat-sheet-blocks` as a dry run; `--write` only if it reports a change | orchestrator | — | — | generated blocks only |
+| 3E | Audit: old labels left anywhere, English that no longer matches its gloss, a Beginner example that uses an Intermediate urge or ending | `proposal-worker` | `opus` | `high` | none; reports only |
+
+- **3A first.** The cue rows in 3B and the Claritish link in `purpose.md` both name the first lesson.
+- **Open at the start:** nothing. The baseline is clean.
+- **End gate:** a clean `npm run build` and `npm test`.
+- **Orchestrator's edits:** the Claritish row in `AGENTS.md` says eleven lessons. After the audit, delete this proposal; an open decision that is still open moves to `TODO.md` first.
+- **Commits:** two to four. 3A with 3B; 3C with the `AGENTS.md` line; 3D only if it wrote; audit fixes, if any, with the deleted proposal.
 
 **Rule digest** (paste into every prompt):
 
@@ -409,16 +465,6 @@ Notes on order:
 
 Full rules a subagent may open when the digest does not settle a question: [where it is taught](#where-it-is-taught), [urge](#urge), [landmark and whose stake](#landmark-and-whose-stake), [learning-levels.md](../../meta/learning-levels.md#gates), [claritish-style.md](../../meta/claritish-style.md), [restructure-sittings.md](../../meta/procedures/restructure-sittings.md).
 
-**Gates.** The next session starts with `npm run verify -- --baseline`. That baseline holds the expected errors U1 to U3 left: the label table in `terminology.md` (nine labels to add, three rows to drop, and the `llm-prompt.test.ts` legend test that reads it), which U5 clears, and the missing Practice on `how-you-feel.md`, which U6 clears. The orchestrator checks each off as its unit lands. Each unit ends on `npm run verify -- --allow-generate`. Run `npm run grammar-check` only if `sentence-parser.ts` changed. Final gate: a clean `npm run build` and `npm test` after U11, with nothing left on a **generate** row.
-
-**Commits.** Seven more, each starting `feeling-urges <unit>` and ending `[skip-cd]` and the co-author line: U4; U5; U6; U7; U8 with U9; U10 with the `AGENTS.md` lines; U11 (tool output alone, naming the command). U12 makes none unless it finds fixes, which go in an eighth.
-
 ## Open decisions
 
-**A rung 2 label for *bored*.** The proposal listed `goyomel` for *bored*. The root `oyome` is *yawn* / *monotony*: it describes the situation, not the person, so neither ending says *bored*. It is also one letter from `goyom`, *as stimulus*, which the same page teaches. U3 left the row out of `how-you-feel.md#feeling-label`.
-
-- **Omit it** (as the page stands). *Bored* is said by calling the situation monotonous, or with a feeling word.
-- **Accept `goyomel`** as *bored*, on the looser match *disgusted* and *excited* already take.
-- **Add a root** for the feeling itself, through the [lexicon procedure](../../meta/procedures/lexicon.md).
-
-**Recommendation:** omit it. A learner who reads `zuwen goyomel` as *I am monotonous* has been told the wrong thing about themselves, and the near-collision with `goyom` falls on the page where both are new.
+None. The twelve decisions on the Status line were settled on 2026-11-11.
