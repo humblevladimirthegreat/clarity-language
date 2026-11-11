@@ -119,7 +119,7 @@ Someone else's view is never a bare claim. Put a holder on the clause, which say
 
 ### Reason, purpose, guilty {#reason-purpose-guilty}
 
-**Needs:** [Because](/because-and-iff#only-because) · [Fault](/fault#fault) · [Motive](/for-a-sake#sake-preference) · [Prescription](/ought-for-a-sake#sake-force) · [Attachment sites](/for-a-sake#attachment-sites) · [So that](/dependents#so-that) · [Why?](/fill-ask-jobs#why) · [Emotion compose](/feelings#emotion-compose) · [Feeling with no object](/how-you-feel#feeling-no-object)
+**Needs:** [Because](/because-and-iff#only-because) · [Fault](/fault#fault) · [Motive](/for-a-sake#sake-preference) · [Prescription](/ought-for-a-sake#sake-force) · [Attachment sites](/for-a-sake#attachment-sites) · [So that](/dependents#so-that) · [Why?](/fill-ask-jobs#why) · [A feeling word](/how-you-feel#feeling-word) · [The four urges](/how-you-feel#urges) · [How long the feeling lasts](/feelings#feeling-duration) · [Feeling with no object](/how-you-feel#feeling-no-object)
 
 English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each split the same way. Name which one you mean: what **made it happen** (the because hinge), what the speaker is **doing it for** (a motive, on a sake), or the **faculty** of thinking (the abstract sense of `ebobe`).
 
@@ -165,7 +165,7 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 >
 > th-relatedness-unmet-modifiable-STAYING-OPEN | [th-because.fault | bl-that-clause] | z-speaker | v-tell
 >
-> "I feel guilty for speaking." (a cost to a tie, held inside, and my speaking broke a norm)
+> "I feel guilty for speaking, and I'm sitting with it." (a cost to a tie, and my speaking broke a norm)
 
 What makes the feeling guilt is the fault hinge on **your own** act. The feeling word alone says only that a tie is under strain, the same word as *hurt*. With the because hinge and someone else's act, the same feeling is *hurt*:
 
@@ -173,7 +173,7 @@ What makes the feeling guilt is the fault hinge on **your own** act. The feeling
 >
 > th-relatedness-unmet-modifiable-STAYING-FLEETING | [th-because | bl-that-clause] | z-Alazun | v-tell
 >
-> "I'm hurt that Alazun spoke."
+> "A pang of hurt that Alazun spoke; it will pass."
 
 Put the **act** in a `bl-` word after a fault hinge, not the person ([fault](/fault#fault)). *Guilty* is then *the wrong rests on that act*, and it leaves room for *Alazun did a wrong thing* without *Alazun is bad*.
 
@@ -523,7 +523,7 @@ English *I hope X will happen* is two claims: you want it, and you expect it. **
 
 ### Important, useful, helpful, benefit, satisfy, upset {#sake-words}
 
-**Needs:** [Sake inventory](/sakes#sake-inventory) · [Met](/sakes#time-horizon-endings-on-met) · [Emotion compose](/feelings#emotion-compose) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Bars](/bars#bars)
+**Needs:** [Sake inventory](/sakes#sake-inventory) · [Met](/sakes#time-horizon-endings-on-met) · [A feeling about a thing](/how-you-feel#feeling-about-a-thing) · [How long the feeling lasts](/feelings#feeling-duration) · [Whose stake](/feelings#feeling-whose-stake) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Bars](/bars#bars)
 
 English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Ageben names the someone's **sake** (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical). A met word says the thing serves that sake, and its ending says how long the payoff lasts. On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it on `/w/` before **`goyom`**. Put a person in `/b/` for whose sake it is.
 
@@ -541,8 +541,8 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 | *satisfy* (a requirement) | `hwuvol zoel` + scale | tie against the rule: it meets the requirement |
 | *suitable* / *appropriate* (for a need) | `guwatham` or `thudatham zoel` | met, or enough for the need |
 | *more important than* | `zol` between the nouns, then `gurothal` | rank on the lasting met sake |
-| *upset* | `wawethumar goyom` | relatedness, unmet, held inside, surging |
-| *upset for someone* | `wawethumom goyom` + `/b/` | unmet relatedness on their behalf |
+| *upset* | `wawethumar goyom` | relatedness, unmet; you stay with it; a wave that will pass |
+| *upset for someone* | `wawethumam goyom` + `/b/` | their relatedness, unmet; you stay with it ([whose stake](/feelings#feeling-whose-stake)) |
 
 > `zanal guwatham.`
 >
@@ -578,7 +578,7 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 >
 > z-memo | [w-relatedness-unmet-modifiable-STAYING-FLEETING | g-stimulus]
 >
-> "Upset about the memo."
+> "Upset about the memo, a wave that will pass."
 
 **Compare with:** *too* and *enough* rank against a [sake bar](/bars#bars). Bare *good* and *nice* have no root; they go the same way, to a met sake.
 
@@ -641,7 +641,7 @@ English *deserve* says something is owed without saying why. Name the ground. It
 
 ### Clear, honest, false, general, proud {#trait-words}
 
-**Needs:** [Negation](/joins#negation-u) · [Talking about a whole kind](/universals-domains#universals-domains-generics) · [Fault](/fault#fault) · [Emotion compose](/feelings#emotion-compose) · [Number as stance](/special-values#special-number-as-stance)
+**Needs:** [Negation](/joins#negation-u) · [Talking about a whole kind](/universals-domains#universals-domains-generics) · [Fault](/fault#fault) · [A feeling about a thing](/how-you-feel#feeling-about-a-thing) · [Number as stance](/special-values#special-number-as-stance)
 
 Many English adjectives are the plain opposite of something that has a root (*unclear*, *honest*, *false*). Ageben says the positive root and closes it with **`gul`** (*not*). Others claim how far something holds (*general*, *universal*, *absolute*). That is the universal fence: closed for no exceptions, open for *as a rule*. A few are a feeling (*proud*), which is an emotion compose, so the sake and the stimulus are named.
 
@@ -656,7 +656,7 @@ Many English adjectives are the plain opposite of something that has a root (*un
 | *universal* / *absolute* / *without exception* | `zual` with the kind | every member, no exceptions |
 | *comprehensive* / *covers everything* | `zual` with the scope | every member, nothing left out |
 | *sure* / *confident* (I am) | stance number `thrawal` (`th+e`) | certain, no exceptions |
-| *proud* (of something) | `wuwathamam goyom` after the thing | competence met, held inside, flowing |
+| *proud* (of something) | `wuwathamam goyom` after the thing | competence met; you stay in it |
 
 > `zanal gagebem gul.`
 >
@@ -774,30 +774,99 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 ## Feelings: when and why {#feelings}
 
+### From an English emotion word {#emotion-lookup}
+
+**Needs:** [A feeling word](/how-you-feel#feeling-word) · [The four urges](/how-you-feel#urges) · [Who the urge points at](/how-you-feel#urge-landmark) · [A feeling about what may happen](/how-you-feel#predicted-feeling) · [Six more urges](/feelings#emotion-compose) · [How long the feeling lasts](/feelings#feeling-duration)
+
+English names a feeling with one word. Ageben builds it from the need, whether it is met, and the pull. Each row below is a **typical** build, not a definition: the same English word can take another sake or another urge, so pick the one that fits. Forms have no object and leave the duration at **-m** unless the duration is part of the point. A row marked `+ bl-` usually names someone in a `bl-` word after it.
+
+| English | Typical build | Ageben |
+|---------|---------------|--------|
+| *angry* | autonomy unmet, can be changed; push back | `thunathumuom` |
+| *resentful* | relatedness unmet; aimed at someone; settled in | `thawethumel` + `bl-` |
+| *afraid* | MAY + physical unmet; move away | `thomam thobathumum` |
+| *anxious* | MAY + competence unmet, passing; move away; a wave | `thomam thuwathurur` |
+| *frozen* | physical unmet; held on the spot; a wave | `thobathumaer` |
+| *sad*, *grieving* | relatedness unmet for good; let go; settled in | `thawethulual` |
+| *lonely* | relatedness unmet, can be changed; turn to someone | `thawethumoem` |
+| *ashamed* | relatedness unmet; move away | `thawethumum` |
+| *guilty* | beneficence unmet, can be changed; make it right | `thewathumom` + `bl-` |
+| *appeasing* | relatedness unmet; keep the peace | `thawethumaom` + `bl-` |
+| *uneasy* | a sake unmet; cannot tell which way it pulls | `thudathumuem` |
+| *proud* | competence met; turn to someone to show it, or stay in it | `thuwathamoem`, `thuwathamam` |
+| *grateful* | relatedness met; thank someone, or give back | `thawethamem`, `thawethamom` + `bl-` |
+| *content* | pleasure met; stay in it; settled in | `thodethamal` |
+| *moved* | relatedness met; stay in it; a wave | `thawethamar` |
+| *hopeful* | MAY + purpose met; go after it | `thomam thurothamem` |
+
+With the `bl-` word, a row becomes a sentence:
+
+> `thawethumel blazozon.`
+>
+> [th-relatedness-unmet-modifiable-AIMED-SETTLED | bl-Azozon]
+>
+> "I resent Azozon, and it has settled in."
+
+> `thewathumom blazozon.`
+>
+> [th-beneficence-unmet-modifiable-GIVING-OPEN | bl-Azozon]
+>
+> "I cost Azozon something, and I want to make it right." (guilty)
+
+> `thawethumaom blazozon.`
+>
+> [th-relatedness-unmet-modifiable-PLACATING-OPEN | bl-Azozon]
+>
+> "Things with Azozon are strained, and I want to smooth them over." (appeasing)
+
+> `thawethamom blazozon.`
+>
+> [th-relatedness-met-any-term-GIVING-OPEN | bl-Azozon]
+>
+> "I feel connected, and I want to give back to Azozon." (grateful)
+
+**Compare with:** when the need is someone else's, the `bl-` word after `a`, `ae`, or `ue` names [whose stake](/feelings#feeling-whose-stake) it is, not a landmark.
+
+### Mixed feelings {#mixed-feelings}
+
+**Needs:** [The four urges](/how-you-feel#urges) · [Who the urge points at](/how-you-feel#urge-landmark)
+
+An urge names the stronger pull. When two pulls are both strong, as in *torn* or *mixed feelings*, use two feeling words, one per urge. Each takes its own `bl-` word.
+
+> `thawethumem blazozon thawethumum blazozon.`
+>
+> [th-relatedness-unmet-modifiable-AIMED-OPEN | bl-Azozon] | [th-relatedness-unmet-modifiable-AWAY-OPEN | bl-Azozon]
+>
+> "Things with Azozon are strained. I want to have it out with them, and I want to get away from them."
+
+Saying both pulls keeps one from hiding the other.
+
+**Compare with:** one feeling word with `ue` says you cannot tell which way it pulls ([six more urges](/feelings#emotion-compose)).
+
 ### When the stimulus happens {#emotion-stimulus-time}
 
-**Needs:** [Emotion compose](/feelings#emotion-compose) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [evidence strength](/evidentiality#evidence-strength) · [RESIDUE](/residue-and-former#residue) · [NOTIONAL](/notional#notional)
+**Needs:** [A feeling about a thing](/how-you-feel#feeling-about-a-thing) · [A feeling about what may happen](/how-you-feel#predicted-feeling) · [How long the feeling lasts](/feelings#feeling-duration) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [evidence strength](/evidentiality#evidence-strength) · [RESIDUE](/residue-and-former#residue) · [NOTIONAL](/notional#notional)
 
 
-A feeling word is how you feel **now**. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`goyom`**, as for any [forecast](/evidentiality#forecast) or [dated claim](/dated-channel#dated-channel): the offset dates the stimulus, and the channel says how you know it.
+A feeling word is how you feel **now**. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`goyom`**, as for any [forecast](/evidentiality#forecast) or [dated claim](/dated-channel#dated-channel): the offset dates the stimulus, and the channel says how you know it. When the cost or payoff has not happened yet, put MAY, `thomam`, before the feeling word, so the sake word says what the stimulus **may** cost.
 
-> `zezuyol wuwathuraer goyom thebal blral.`
+> `zezuyol thomam wuwathurur goyom thebal blral.`
 >
-> [z-speech | [w-competence-unmet-passing-HELD-FLEETING | g-stimulus]] | [th-REPORTED.strong | bl-later]
+> z-speech | th-MAY | [w-competence-unmet-passing-AWAY-FLEETING | g-stimulus] | [th-REPORTED.strong | bl-later]
 >
-> "Anxious about the dialogue that's coming, as a reliable source says."
+> "A reliable source says the dialogue is coming, and it may cost me competence: a wave of wanting out." (anxious)
 
-> `zezuyol wuwathuraer goyom thaber blral.`
+> `zezuyol thomam wuwathurur goyom thaber blral.`
 >
-> [z-speech | [w-competence-unmet-passing-HELD-FLEETING | g-stimulus]] | [th-INTUITION.weak | bl-later]
+> z-speech | th-MAY | [w-competence-unmet-passing-AWAY-FLEETING | g-stimulus] | [th-INTUITION.weak | bl-later]
 >
-> "Anxious about a dialogue I only have a hunch is coming."
+> "I only have a hunch the dialogue is coming, and it may cost me competence: a wave of wanting out."
 
 > `zezuyol wawethumel goyom thevum blrul.`
 >
 > [z-speech | [w-relatedness-unmet-modifiable-AIMED-SETTLED | g-stimulus]] | [th-MEMORY | bl-earlier]
 >
-> "Stung by the dialogue, which is over; I was there."
+> "I resent the dialogue, which is over, and the feeling has settled in; I was there."
 
 Other shapes use forms you already have:
 
@@ -811,17 +880,17 @@ Other shapes use forms you already have:
 
 A [feeling with no object](/how-you-feel#feeling-no-object) can take a channel and offset too. Then the stimulus is real but unnamed: you know when it is, not what it is.
 
-> `thuwathuruer thaber blral.`
+> `thomam thuwathurur thaber blral.`
 >
-> th-competence-unmet-passing-UNPLACED-FLEETING | [th-INTUITION.weak | bl-later]
+> th-MAY | th-competence-unmet-passing-AWAY-FLEETING | [th-INTUITION.weak | bl-later]
 >
-> "Anxious about something I sense is coming."
+> "I sense something coming that may cost me competence, and for a moment I want out."
 
 How the stimulus is known matters. A dialogue a reliable source announced (`thebal`) and a hunch (`thaber`) can feel the same; the grammar asks which one it is.
 
 ### Feeling then {#emotion-feeling-time}
 
-**Needs:** [Emotion compose](/feelings#emotion-compose) · [stance as-of](/as-of#stance-as-of) · [evidentiality](/evidentiality#evidentiality)
+**Needs:** [A feeling about a thing](/how-you-feel#feeling-about-a-thing) · [How long the feeling lasts](/feelings#feeling-duration) · [stance as-of](/as-of#stance-as-of) · [evidentiality](/evidentiality#evidentiality)
 
 
 To say you **felt** it at another time, date the feeling itself with [stance as-of](/as-of#stance-as-of): **`thenam`** plus the time or event in `/b/`, after the stimulus. Add a remembering channel for *I remember feeling it*.
@@ -830,22 +899,22 @@ To say you **felt** it at another time, date the feeling itself with [stance as-
 >
 > [z-speech | [w-relatedness-unmet-modifiable-AIMED-SETTLED | g-stimulus]] | [th-as-of.ledger | bl-speech]
 >
-> "The dialogue stung me at the time." (nothing is said about now)
+> "I resented the dialogue at the time." (nothing is said about now)
 
 > `zezuyol wawethumel goyom thevum thenam blezuyol.`
 >
 > [z-speech | [w-relatedness-unmet-modifiable-AIMED-SETTLED | g-stimulus]] | th-MEMORY | [th-as-of.ledger | bl-speech]
 >
-> "I remember the dialogue stinging at the time."
+> "I remember resenting the dialogue at the time."
 
 With no pair, the feeling is now. Keeping *it hurt then* apart from *it hurts now* lets you say that a feeling has passed.
 
 ### Cause is not target {#emotion-blame}
 
-**Needs:** [Emotion compose](/feelings#emotion-compose) · [Because](/because-and-iff#only-because) · [Fault](/fault#fault) · [MAY](/knowing#may)
+**Needs:** [A feeling about a thing](/how-you-feel#feeling-about-a-thing) · [Who the urge points at](/how-you-feel#urge-landmark) · [How long the feeling lasts](/feelings#feeling-duration) · [Because](/because-and-iff#only-because) · [Fault](/fault#fault) · [MAY](/knowing#may)
 
 
-A direction locus says where the charge **goes**. It does not say who **caused** it. Name the cause with the [because hinge](/because-and-iff#because) after the feeling, and name its [fault](/fault#fault) only when you mean it. The target and the cause may differ.
+An urge says where the feeling **pulls** you. It does not say who **caused** it. Name the cause with the [because hinge](/because-and-iff#because) after the feeling, and name its [fault](/fault#fault) only when you mean it. The target and the cause may differ.
 
 > `zezuyol wawethumem goyom blazozon thahum blerulal.`
 >
@@ -869,20 +938,20 @@ Put an **act** after the hinge (`barl zalazun vezuyol`), not the person. A feeli
 
 ### Curious, confused, bored, awed, surprised {#understanding-feelings}
 
-**Needs:** [Sake inventory](/sakes#sake-inventory) · [Emotion compose](/feelings#emotion-compose) · [Feeling with no object](/how-you-feel#feeling-no-object) · [Mirative](/mirative#mirative)
+**Needs:** [Sake inventory](/sakes#sake-inventory) · [A feeling about a thing](/how-you-feel#feeling-about-a-thing) · [Six more urges](/feelings#emotion-compose) · [How long the feeling lasts](/feelings#feeling-duration) · [Feeling with no object](/how-you-feel#feeling-no-object) · [Mirative](/mirative#mirative)
 
 Most of these feelings are about the **understanding** sake: whether something makes sense. Surprise is different. It says the news ran against what you expected, so it is the [mirative](/mirative#mirative), and a sake word says how the news lands.
 
 | English | Ageben | Reading |
 |---------|--------|---------|
-| *curious about* | `wowethomem goyom` | understanding as the motive, aimed at it, flowing |
-| *interested in* | `wowethamam goyom` | understanding met, held inside, flowing |
-| *fascinated by* | `wowethamer goyom` | understanding met, aimed at it, surging |
-| *it clicked* / *aha* | `thowetharar.` | understanding met right away, held inside, surging |
-| *confused by* | `wowethumaem goyom` | understanding unmet, can be softened, over the situation, flowing |
-| *bored by* | `wowethurul goyom` | understanding unmet for now, moving off, still |
-| *bored* (no object) | `thowethural.` | understanding unmet for now, held inside, still |
-| *in awe of* | `wowethalael goyom` | understanding met for good, over the situation, still |
+| *curious about* | `wowethomem goyom` | understanding as the motive, aimed at it |
+| *interested in* | `wowethamam goyom` | understanding met, staying with it |
+| *fascinated by* | `wowethamer goyom` | understanding met, aimed at it, a wave |
+| *it clicked* / *aha* | `thowetharar.` | understanding met right away, staying with it, a flash |
+| *confused by* | `wowethumaem goyom` | understanding unmet, can be changed, stuck on the spot |
+| *bored by* | `wowethurul goyom` | understanding unmet for now, wanting away, settled in |
+| *bored* (no object) | `thowethural.` | understanding unmet for now, no pull to move, settled in |
+| *in awe of* | `wowethalael goyom` | understanding met for good, held on the spot, settled in |
 | *it turns out* / *surprisingly* | `themem` | mirative on the clause |
 | *amazed* / *astonished* | `themel` | mirative: a firm expectation overturned |
 | *pleasantly surprised by* | a met feeling + `themem` | how it lands, plus the mirative |
@@ -891,13 +960,13 @@ Most of these feelings are about the **understanding** sake: whether something m
 >
 > z-galaxy | [w-understanding-met-lasting-HELD-SETTLED | g-stimulus]
 >
-> "In awe of the galaxy."
+> "In awe of the galaxy, held still by it, and the feeling has settled in."
 
 > `zewal wodethamar goyom themem.`
 >
 > [z-present | [w-pleasure-met-any-term-STAYING-FLEETING | g-stimulus]] | th-MIRATIVE
 >
-> "Pleasantly surprised by the present."
+> "Pleasantly surprised by the present, and savoring the moment."
 
 Something new for its own sake (new sights, variety) is the pleasure sake, not understanding. *Bored* can be either: nothing new to enjoy is unmet pleasure; nothing new to learn is unmet understanding.
 
@@ -1213,20 +1282,20 @@ Short drills for these recipes. A channel and offset after **`goyom`** date the 
 
 #### English → Ageben {#reasons-feelings-english-to-ageben}
 
-**1.** *Anxious about the dialogue that's coming, as a reliable source says.* (competence at stake for now; hangs over the room; surging)
+**1.** *Anxious about the dialogue that's coming, as a reliable source says.* (MAY; competence unmet, passing; wanting away; fleeting)
 
 ::: details Show answer
-`zezuyol wuwathuraer goyom thebal blral.`
+`zezuyol thomam wuwathurur goyom thebal blral.`
 
-[z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-REPORTED.strong | b-later]
+z-speech | th-MAY | [w-competence-unmet-passing-AWAY-FLEETING | g-stimulus] | [th-REPORTED.strong | bl-later]
 :::
 
-**2.** *Irritated at Azozon about the memo, but the rain caused it.* (unmet relatedness, modifiable; aimed; flowing)
+**2.** *Irritated at Azozon about the memo, but the rain caused it.* (unmet relatedness, can be changed; aimed; open)
 
 ::: details Show answer
 `zonal wawethumem goyom blazozon thahum blerulal.`
 
-[z-memo | [[w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | b-Azozon]] | [th-because | b-rain]
+[z-memo | [[w-relatedness-unmet-modifiable-AIMED-OPEN | g-stimulus] | bl-Azozon]] | [th-because | bl-rain]
 :::
 
 #### Ageben → English {#reasons-feelings-ageben-to-english}
@@ -1235,16 +1304,16 @@ Short drills for these recipes. A channel and offset after **`goyom`** date the 
 
 ::: details Show answer
 
-[z-memo | [w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus]] | [th-as-of.ledger | b-speech]
+[z-memo | [w-relatedness-unmet-modifiable-AIMED-SETTLED | g-stimulus]] | [th-as-of.ledger | bl-speech]
 
-*The memo stung me at the time of the dialogue.*
+*I resented the memo at the time of the dialogue.*
 :::
 
 **2.** `zezuyol wawethumel goyom blalazun thahul blarl zalazun vezuyol.`
 
 ::: details Show answer
 
-[z-speech | [[w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus] | b-Alazun]] | [th-because.fault | b-that-clause] | z-Alazun | v-tell
+[z-speech | [[w-relatedness-unmet-modifiable-AIMED-SETTLED | g-stimulus] | bl-Alazun]] | [th-because.fault | bl-that-clause] | z-Alazun | v-tell
 
 *Resentful at Alazun about the dialogue; Alazun was wrong to speak.*
 :::
