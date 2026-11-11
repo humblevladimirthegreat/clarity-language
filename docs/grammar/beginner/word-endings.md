@@ -6,13 +6,13 @@ band: beginner
 
 A content word’s last letter tells the listener how to take its meaning: a new ordinary kind, the root’s abstract sense, or a name. That last letter is the **word ending**.
 
-Outside a sentence (a list, a heading, a dictionary line) you write **root + ending**, with no first letter for the word’s role in a sentence. That spelling is a **citation**.
+Outside a sentence (a list, a heading, a dictionary line) you write root + ending, with no first letter for the word’s role in a sentence. That spelling is a **citation**.
 
 
 ### First mention, concrete (`-l`) {#concrete-l}
 <a id="literal-l"></a>
 
-When you mention a kind of thing for the first time, in its everyday **concrete** meaning (a scene you could point at), end the citation with **-l**. The listener treats it as a new, ordinary instance of that kind. English for the citation is the bare kind, with no article. (cue: **l** ≈ look / concrete)
+When you mention a kind of thing for the first time, in its everyday **concrete** meaning (a scene you could point at), end the citation with `-l`. The listener treats it as a new, ordinary instance of that kind. (cue: `l` ≈ look / concrete)
 
 > `azozol`
 >
@@ -21,24 +21,24 @@ When you mention a kind of thing for the first time, in its everyday **concrete*
 ### First mention, abstract (`-m`) {#abstract-m}
 <a id="metaphor-m"></a>
 
-Many roots also have one **abstract** sense listed in the lexicon (its **published** abstract): an idea you cannot point at, which grows out of the concrete picture. When you introduce that sense for the first time, end the citation with **-m**. (cue: **m** ≈ meaning / abstract)
+Many roots also have one **abstract** sense: an idea you cannot point at, which grows out of the concrete picture. The lexicon lists it as the root's **published** abstract. When you introduce that sense for the first time, end the citation with `-m`, and the listener takes the root's abstract sense instead of the picture. (cue: `m` ≈ meaning / abstract)
 
 > `azozom`
 >
 > "grace"
 
-**Compare with:** the everyday picture of the same root uses **-l** (`azozol` *swan*). *Grace* is the published abstract of `azozo`, so the citation is **-m**. (cue: from *swan*: the glide of *grace*)
+**Compare with:** the everyday picture of the same root uses `-l` (`azozol` *swan*). *Grace* is the published abstract of `azozo`, so the citation is `-m`. (cue: from *swan*: the glide of *grace*)
 
 ### Named (`-n`)
 <a id="named-n-beginner"></a>
 
-When the word is a **name** for one particular person or place, not a kind of thing, end the citation with **-n**. (cue: **n** ≈ name)
+When the word is a **name** for one particular person or place, not a kind of thing, end the citation with `-n`. The listener takes the word as that one person or place, not as an instance of a kind. (cue: `n` ≈ name)
 
 > `azozon`
 >
 > "Azozon"
 
-**Compare with:** the same root as a kind is `azozol` *swan*; as the published abstract, `azozom` *grace*. **-n** names the person.
+**Compare with:** the same root as a kind is `azozol` *swan*; as the published abstract, `azozom` *grace*. `-n` names the person.
 
 Most roots can be your own name this way. Pick one here or from the [lexicon](./lexicon.md), and examples where you are the speaker will show it.
 
@@ -54,23 +54,23 @@ To say hello or a simple goodbye, say your own name: the named citation, followe
 >
 > "Hello." / "Goodbye." (said by you)
 
-The greeting names **you**, not the person you greet, so it works the same for a stranger whose name you don't know and for a whole room: `SELFn.` said to a group is *hi, all*.
+The greeting names *you*, not the person you greet, so it works the same for a stranger whose name you don't know and for a whole room: `SELFn.` said to a group is *hi, all*.
 
 **Compare with:** the same citation in a list or heading has no period and is not a greeting or goodbye.
 
 ### Writing {#citation-forms}
 <a id="prefix-less-citation"></a>
 
-A citation is **lowercase** root + ending (`azozol`, `azozom`, `azozon`). English for a citation is the bare sense (*swan*, *grace*, *Azozon*), with no article. In a sentence you add a first letter for the word’s role. A [greeting](#greeting) is the named citation as a whole opening (`SELFn.`).
+A citation is lowercase root + ending (`azozol`, `azozom`, `azozon`). English for a citation is the bare sense (*swan*, *grace*, *Azozon*), with no article. In a sentence you add a first letter for the word’s role. A [greeting](#greeting) is the named citation followed by a period (`SELFn.`).
 
 The three endings on the same root `azozo`:
 
 <!-- cheat-sheet: word-shape-clause -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| `azozol` | first mention, everyday kind | *swan* | **l** ≈ concrete |
-| `azozom` | first mention, published abstract | *grace* | **m** ≈ abstract |
-| `azozon` | this person or place as a name | *Azozon* | **n** ≈ name |
+| `azozol` | first mention, everyday kind | *swan* | `l` ≈ concrete |
+| `azozom` | first mention, published abstract | *grace* | `m` ≈ abstract |
+| `azozon` | this person or place as a name | *Azozon* | `n` ≈ name |
 
 ### Practice {#beginner-practice}
 
@@ -235,8 +235,8 @@ correction
 :::
 ## See also
 
-- [Pronouns](pronouns.md): resume **-r**; special **`uwe`** / **`awa`** / **`aya`**
-- [Plurality](plurality.md): **-x** after the ending
+- [Pronouns](pronouns.md): resume `-r`; special `uwe` / `awa` / `aya`
+- [Plurality](plurality.md): `-x` after the ending
 - [The clause](clause.md): role letters; adding a first letter to a citation
-- [Opaque and loan words](spans.md#loans): mention / opaque when the **form** or a foreign acronym is the point
+- [Opaque and loan words](spans.md#loans): mention / opaque when the form or a foreign acronym is the point
 - Titled phrases: [Exact, paraphrase, proper](spans.md#when-required)

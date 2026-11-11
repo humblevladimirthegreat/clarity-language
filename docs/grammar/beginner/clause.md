@@ -7,13 +7,11 @@ band: beginner
 How to read and write one Ageben **clause** (roughly, one simple sentence): who does what, how each word is shaped, and the default order.
 
 
-You already write a [citation](word-endings.md): root + ending (`odozel`, `owurol`, `azozon`). In a **sentence**, put a **role letter** in front. That first letter says what the word is doing (who acts, the action, and so on). The root and ending stay the ones you already chose; only the first letter changes.
+You already write a [citation](word-endings.md): root + ending (`odozel`, `owurol`, `azozon`). In a sentence, put a **role letter** in front. That first letter says what the word is doing (who acts, the action, and so on). The root and ending stay the ones you already chose; only the first letter changes.
 
 ### Who acts and the action
 
-`/z/` marks the **subject** (who acts). `/v/` marks the **verb** (the action). Write **role letter + root + ending** as one word (`zodozel` from the citation `odozel`).
-
-A period ends the statement. With only a subject and a verb, the order is **Subject – Verb**.
+To say who does something and what they do, mark the **subject** (who acts) with `/z/` (a `z` as the word's first letter) and the **verb** (the action) with `/v/`. Write role letter + root + ending as one word (`zodozel` from the citation `odozel`). With only a subject and a verb, the order is Subject – Verb. A period ends the statement, so those two words already make a whole sentence.
 
 > `zodozel vowurol.`
 >
@@ -21,7 +19,7 @@ A period ends the statement. With only a subject and a verb, the order is **Subj
 >
 > "A dog walks."
 
-A name you already cite with **-n** (`azozon`) keeps **-n** in the sentence:
+A name you already cite with `-n` (`azozon`) keeps `-n` in the sentence:
 
 > `zazozon vowurol.`
 >
@@ -31,9 +29,7 @@ A name you already cite with **-n** (`azozon`) keeps **-n** in the sentence:
 
 ### Direct object (`/d/`)
 
-The **direct object** is who or what the action is done to. Mark it with `/d/`. The default order is **Subject – Direct Object – Verb**.
-
-Because the first letter already says each word’s role, you may move those three words without changing who did what. Moving a word does not stress it either. The default order is still the one to use, because listeners expect it.
+To say who or what the action is done to, add a **direct object** and mark it with `/d/`. The default order is Subject – Direct Object – Verb. Because the first letter already says each word’s role, you may move those three words without changing who did what, and moving a word does not stress it. Keep the default order anyway, because listeners expect it.
 
 > `zodozel dogozel vayebel.`
 >
@@ -83,7 +79,7 @@ An **adverb** says how, when, or where an action happens. Mark it with `/h/`. Yo
 
 ### Stance (`/th/`) {#stance-th}
 
-An adverb describes the action. A **stance** word describes how **you**, the speaker, stand toward the whole claim: how sure you are, how you know it, why it holds, or whether it is only imagined. Mark it with `/th/`. Like `/h/`, it may sit anywhere in the sentence. `th` counts as one letter ([phonology](phonology.md#consonants)).
+An adverb describes the action. A **stance** word describes how you, the speaker, stand toward the whole claim: how sure you are, how you know it, why it holds, or whether it is only imagined. Mark it with `/th/` (`th` counts as one letter, [phonology](phonology.md#consonants)) and, as with `/h/`, place it anywhere in the sentence. One sentence then carries both the claim and your stance on it.
 
 > `zodozel thevemem vowurol.`
 >
@@ -93,9 +89,7 @@ An adverb describes the action. A **stance** word describes how **you**, the spe
 
 The adverb describes the walking. The stance word describes your claim about it.
 
-A stance is yours **now**, as you speak.
-
-`/th/` is for what is in a mind. With nothing else marked, that mind is yours.
+A stance is yours now, as you speak. `/th/` is for what is in a mind, and with nothing else marked, that mind is yours.
 
 ### Intention adverbs {#intention-adverbs}
 
@@ -103,9 +97,9 @@ Some `/h/` words cover the whole claim the way a [stance](#stance-th) does, not 
 
 ### Extra nouns (`/b/`) {#extra-nouns}
 
-`/b/` marks an **extra noun**: a person or thing beyond the subject and direct object. It has two jobs, and the letter after the `b` tells them apart.
+Some sentences name a person or thing beyond the subject and direct object: who receives what is given, or whom something is like. Mark that **extra noun** with `/b/`; the letter after the `b` tells these two jobs apart.
 
-**Who receives: plain `/b/`.** A plain `/b/` word is the person who receives what the verb passes on: who gets the thing given, or who hears what is told. What is given or said is still `/d/`. Each verb has at most one of these. Its usual place is right after the verb: **Subject – Direct Object – Verb – Extra noun**.
+A plain `/b/` word is the person who receives what the verb passes on: who gets the thing given, or who hears what is told. What is given or said is still `/d/`, and each verb has at most one receiver, usually right after the verb (Subject – Direct Object – Verb – Extra noun).
 
 > `zazozon vezuyol balazun.`
 >
@@ -113,7 +107,7 @@ Some `/h/` words cover the whole claim the way a [stance](#stance-th) does, not 
 >
 > "Azozon tells Alazun."
 
-**Completing a relation: `bl-`.** Some words name a relation that needs a second person or thing (*like …*: like whom?). Put the relation word in `/ɡ/`, `/h/`, or `/th/`, then put the other noun right after it, with **`l`** after the `b`. The relation word is then the `bl-` word's **host**. (cue: **l** ≈ lock: locked to the host right before it)
+Some words name a relation that needs a second person or thing (*like …*: like whom?). Put the relation word in `/ɡ/`, `/h/`, or `/th/`, then put the other noun right after it, with `l` after the `b`. The relation word is then the `bl-` word's **host**, and the `bl-` word completes the relation. (cue: `l` ≈ lock: locked to the host right before it)
 
 > `hewem blazozon`
 >
@@ -146,14 +140,14 @@ The role letters you have used so far:
 <!-- cheat-sheet: consonants -->
 | Ageben | Use | Cue |
 |--------|-----|-----|
-| `/z/` | subject (who acts) | **z** ≈ star (who the sentence is about) |
-| `/d/` | direct object (who is acted on) | **d** ≈ done to (sound of *acted on*) |
-| `/b/` | extra noun: recipient of the verb; with `bl-`, the piece after a relation word | **b** ≈ bolted on (the extra piece) |
-| `/v/` | verb (the action) | **v** ≈ *verb* (the English name for the job starts with it) |
-| `/ɡ/` | adjective (a property of the noun) | **ɡ** ≈ grade (a rating of the noun) |
-| `/w/` | extra detail on the next `/ɡ/`, `/h/`, or `/th/` word | **w** ≈ with (stuck to that host) |
-| `/h/` | adverb (how / when / where) | **h** starts *how* / *when* / *where* |
-| `/th/` | stance (how sure, how known, why, as if): what is in a mind | **th** ≈ *think* (your stance on the claim) |
+| `/z/` | subject (who acts) | `z` ≈ star (who the sentence is about) |
+| `/d/` | direct object (who is acted on) | `d` ≈ done to (sound of *acted on*) |
+| `/b/` | extra noun: recipient of the verb; with `bl-`, the piece after a relation word | `b` ≈ bolted on (the extra piece) |
+| `/v/` | verb (the action) | `v` ≈ *verb* (the English name for the job starts with it) |
+| `/ɡ/` | adjective (a property of the noun) | `ɡ` ≈ grade (a rating of the noun) |
+| `/w/` | extra detail on the next `/ɡ/`, `/h/`, or `/th/` word | `w` ≈ with (stuck to that host) |
+| `/h/` | adverb (how / when / where) | `h` starts *how* / *when* / *where* |
+| `/th/` | stance (how sure, how known, why, as if): what is in a mind | `th` ≈ *think* (your stance on the claim) |
 
 ### Practice {#beginner-practice}
 

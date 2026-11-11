@@ -44,7 +44,7 @@
     "beginner-lead": 1
   },
   "beginner/clause.md": {
-    "beginner-lead": 5,
+    "beginner-lead": 1,
     "bold-density": 1
   },
   "beginner/comparatives.md": {
@@ -54,10 +54,6 @@
   "beginner/compounds.md": {
     "beginner-lead": 1,
     "bold-density": 3
-  },
-  "beginner/dependents.md": {
-    "beginner-lead": 2,
-    "bold-density": 1
   },
   "beginner/extra-noun-hooks.md": {
     "beginner-lead": 1
@@ -139,12 +135,7 @@
     "beginner-lead": 1,
     "bold-density": 2
   },
-  "beginner/speech-moves.md": {
-    "beginner-lead": 1,
-    "bold-density": 1
-  },
   "beginner/word-endings.md": {
-    "beginner-lead": 1,
     "bold-density": 1
   },
   "cheat-sheets/comparing.md": {

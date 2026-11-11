@@ -4,15 +4,15 @@ band: beginner
 
 # Phonology {#phonology}
 
-Phonology is how a language sounds: this page teaches you to **sound out** Ageben. Each letter has one pronunciation, the same every time. A **syllable** is one beat with one vowel, and it ends with a consonant only at the end of a word, so you can hear where words stop. Every syllable takes an even beat, and a word is stressed on its first one. When you need a moment to think, a held sound fills the pause.
+Phonology is how a language sounds: this page teaches you to sound out Ageben. Each letter has one pronunciation, the same every time. A **syllable** is one beat with one vowel, and it ends with a consonant only at the end of a word, so you can hear where words stop. Every syllable takes an even beat, and a word is stressed on its first one. When you need a moment to think, a held sound fills the pause.
 
-Write native Ageben in **lowercase**. A capital means nothing extra: read it as the same letter in lowercase. Two vowel letters in a row are two syllables. Say each vowel as its own beat.
+Write native Ageben in lowercase. A capital means nothing extra: read it as the same letter in lowercase. Two vowel letters in a row are two syllables. Say each vowel as its own beat.
 
 <!-- Sync: the IPA in the vowel and consonant tables must match LETTER_IPA in src/tts/phonemes.ts. Change both together. -->
 
 ### Vowels
 
-Ageben has four vowel letters. In English, a vowel letter’s sound depends on the letters around it; each Ageben vowel always has the same sound.
+In English, a vowel letter’s sound depends on the letters around it. Each of Ageben’s four vowel letters always has the same sound, so say it the same way in every word and you can read it aloud from its spelling.
 
 The **IPA** column spells each sound in the International Phonetic Alphabet, and its button plays a recording. The cue words are pronounced as in Standard American English.
 
@@ -38,9 +38,9 @@ To find `u`, start from `a`: keep the tongue centered, close the jaw, and round 
 
 #### Vowel pitch {#vowel-pitch}
 
-Vowel pitch is optional and adds no meaning of its own. Each vowel has its own **pitch**, always the same one: `a` is low, `o` mid-low, `e` mid-high, and `u` high. That is the vowels' usual order, so the first is lowest and the fourth is highest. The opposite vowels `a` and `u` are also the furthest apart in pitch.
+Say each vowel on its own **pitch** (how high or low the note is), always the same one: `a` is low, `o` mid-low, `e` mid-high, and `u` high. Pitch repeats what the vowel's sound already says, so a listener who half-hears a vowel can still tell which one it was. Vowel pitch is optional and adds no meaning of its own.
 
-Pitch repeats what the vowel's sound already says, so a listener who half-hears a vowel can still tell which one it was. When a vowel's sound and its pitch disagree, trust the sound. Keep each vowel's pitch when you say a word with feeling: make it louder, not higher.
+In the order `a`, `o`, `e`, `u`, the pitch climbs, and the opposite vowels `a` and `u` are the furthest apart. When a vowel's sound and its pitch disagree, trust the sound. Keep each vowel's pitch when you say a word with feeling: make it louder, not higher.
 
 Voices differ, so a vowel's pitch is not a fixed note. It is how far the vowel sits above your **home note**, the note you say `a` on. Any comfortable note works.
 
@@ -52,7 +52,7 @@ Matching a note takes practice at first, and it improves quickly. Each vowel's s
 
 ### Consonants
 
-A consonant starts a syllable. Many consonants have a **voiced** sound (vocal cords buzzing, as in *zoo*) and an unvoiced one (as in *sea*), and Ageben treats the two as the same letter. Prefer the voiced sound, because you can hold a sung note on it. The unvoiced sound means the same, so use it whenever you like its sound better.
+Many consonants have a **voiced** sound (vocal cords buzzing, as in *zoo*) and an unvoiced one (as in *sea*), and Ageben treats the two as the same letter. Prefer the voiced sound, because you can hold a sung note on it. The unvoiced sound means the same, so use it whenever you like its sound better.
 <!-- Consonant order is alphabet order: the ten digit letters in digit order (b d g h z v r l n m = 1–9, 0), then th w y x. The alphabet / letter-name recitation ends with the vowels u a o e, the same order as vowel stacks. -->
 
 | Ageben | IPA | Cue | Unvoiced variant |
@@ -76,13 +76,13 @@ A consonant starts a syllable. Many consonants have a **voiced** sound (vocal co
 `x` sounds different from English *x*. The rest are familiar. `y` is always a consonant, never a vowel.
 :::
 
-`th` is **one letter** written with two characters. Ageben has no `t`, so `th` never means `t` followed by `h`.
+`th` is one letter written with two characters. Ageben has no `t`, so `th` never means `t` followed by `h`.
 
 Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) by [Peter Isotalo](https://commons.wikimedia.org/wiki/User:Peter_Isotalo), except /ɹ/ by [Erutuon](https://commons.wikimedia.org/wiki/File:Alveolar_approximant.ogg).
 
 ### Word edges
 
-A content word (a word built on a root, such as a noun or verb) ends in one of four consonants: `-l`, `-m`, `-n`, or `-r`. That last consonant is the audible end of the word. Inside the word, a consonant only starts a syllable and never closes one.
+A content word (a word built on a root, the part that carries its meaning, such as a noun or verb) ends in one of four consonants: `-l`, `-m`, `-n`, or `-r`. Inside the word, a consonant only starts a syllable and never closes one, so split the word into beats just before each consonant. That last consonant is the audible end of the word, so a listener hears where the word stops.
 
 `azozon` = *a-zo-zon*. `odozel` = *o-do-zel*.
 
@@ -90,13 +90,13 @@ A content word (a word built on a root, such as a noun or verb) ends in one of f
 
 Give every syllable about the same length, and keep its vowel full however fast you talk. English weakens unstressed vowels to *uh* (the second *a* in *banana*). Ageben never does, because many words differ by one vowel (`agorol` *calendar*, `ugorol` *clock*), and weak vowels would make them sound alike.
 
-Each word takes a light stress on its **first syllable**. Since the rule never changes, spelling does not mark it. The ending consonant already tells a listener where a word stops; the stressed first beat tells them where the next one starts, so fast speech still splits into words.
+Each word takes a light stress on its first syllable. Since the rule never changes, spelling does not mark it. The ending consonant already tells a listener where a word stops; the stressed first beat tells them where the next one starts, so fast speech still splits into words.
 
 `azozon` / ˈä.zo̞.zo̞n /, `odozel` / ˈo̞.do̞.ze̞l / (the mark ˈ sits before the stressed syllable, and a dot separates syllables)
 
-Stress is **loudness** only: say the first syllable a little louder, with a crisp start. Its vowel keeps its own pitch, and the syllable keeps its one beat, so a stressed `a` is loud and still low. English raises and lengthens a stressed syllable, so practice stress as a drum accent: say the word on its vowel pitches, then say it again and tap the first beat louder.
+Stress is loudness only: say the first syllable a little louder, with a crisp start. Its vowel keeps its own pitch, and the syllable keeps its one beat, so a stressed `a` is loud and still low. English raises and lengthens a stressed syllable, so practice stress as a drum accent: say the word on its vowel pitches, then say it again and tap the first beat louder.
 
-**Hold the ending.** Let the final `-l`, `-m`, `-n` or `-r` sound for a moment instead of clipping it. It is often the only difference between two words, and all four are sounds you can hold. In singing, end the note on that consonant.
+Hold the ending: let the final `-l`, `-m`, `-n` or `-r` sound for a moment instead of clipping it. It is often the only difference between two words, and all four are sounds you can hold. In singing, end the note on that consonant.
 
 ### Thinking sounds {#thinking-sounds}
 

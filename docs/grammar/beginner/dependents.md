@@ -4,7 +4,7 @@ band: beginner
 
 # Dependents
 
-How a **next sentence** fills a slot in the sentence before it, and how English *who / that / which* is two sentences.
+How a next sentence can fill a role (subject, object, and so on) in the sentence before it, and how English *who / that / which* is two sentences.
 
 
 You already write one clause with [role letters](clause.md#role-letters) and start a new speech move with [`/y/`](speech-moves.md#turn-y). This page attaches another sentence.
@@ -12,7 +12,7 @@ You already write one clause with [role letters](clause.md#role-letters) and sta
 ### Which person or thing (*who / that / which*)
 <a id="which-noun"></a>
 
-English can describe a noun with a whole clause that starts with *who*, *that*, or *which* (*the guard who sits*). Ageben has no such word. Write **two sentences** instead: first say the inner clause as an ordinary sentence, then use the same person or thing in the next sentence.
+English can describe a noun with a whole clause that starts with *who*, *that*, or *which* (*the guard who sits*). Ageben has no such word. Write two sentences instead: first say the inner clause as an ordinary sentence, then use the same person or thing in the next sentence.
 
 > `zagayul vehohel. zazozon vezuyol bagayul.`
 >
@@ -22,19 +22,11 @@ English can describe a noun with a whole clause that starts with *who*, *that*, 
 
 That pair is English *Azozon talks to the guard who sits.* Repeat the full word when you need the same person again in the next sentence.
 
-**Compare with:** *a blue dog* is still one [adjective](clause.md#adjectives-ɡ) (`gobulol`). *Azozon tells Alazun **that** a dog runs* is a dependent clause: *that* packages the next sentence as content, not as a tag on *dog*.
+**Compare with:** *a blue dog* is still one [adjective](clause.md#adjectives-ɡ) (`gobulol`). *Azozon tells Alazun **that** a dog runs* is a dependent clause (next section): the part after *that* is what Azozon tells, not a description of *dog*.
 
 ### Dependent clauses {#dependent-clauses}
 
-Sometimes a whole sentence fills one role in another sentence. In *Azozon tells Alazun **that the dog runs***, the part after *that* is what Azozon tells: the direct object. (Alazun, the person told, is plain `/b/`.) That inner sentence is a **dependent clause**.
-
-In the main sentence, a **stand-in** holds the dependent clause's place: **`darl`**, which is the role letter + **`a`** + **-rl**. It stands for the sentence that comes right after it, so the main sentence never has to wrap around the inner one.
-
-Put **`darl`** last in the main sentence, and start the dependent clause immediately after it. Word order is free, so you can always arrange the other words to leave **`darl`** at the end.
-
-The main sentence stops after **`darl`**, and the next full sentence is the content that **`darl`** stands for. Do not open that inner sentence with `/y/`: it is not a new turn, and the stand-in's vowel already says what kind of content it is (**`a`** for *that …*). The inner sentence names who does its verb (`/z/`), even where English drops that person (*wants to walk*): write the name again.
-
-Here the dependent clause is the direct object, so the stand-in is **`darl`**:
+Sometimes a whole sentence fills one role in another sentence. In *Azozon tells Alazun **that the dog runs***, the part after *that* is what Azozon tells (the direct object), and that inner sentence is a **dependent clause**. In the main sentence, a **stand-in** holds its place: here **`darl`**, the direct-object letter `d`, then `a`, then `-rl`. Put `darl` last and start the dependent clause right after it: the main sentence stops after `darl`, and the next full sentence is the content that `darl` stands for, so the inner sentence never sits in the middle of the main one.
 
 > `zazozon vezuyol balazun darl zodozel veruvol.`
 >
@@ -42,7 +34,9 @@ Here the dependent clause is the direct object, so the stand-in is **`darl`**:
 >
 > "Azozon tells Alazun that the dog runs."
 
-For English *whether*, change the vowel to **`e`**: **`derl`**. The inner sentence is question-like, but the outer sentence is still a statement, so the whole stretch ends with a period.
+Alazun, the person told, is plain `/b/`. Word order is free, so you can always arrange the other words to leave `darl` at the end. Do not open the inner sentence with `/y/`: it is not a new turn, and the stand-in's vowel already says what kind of content it is (`a` for *that …*). The inner sentence names who does its verb (`/z/`), even where English drops that person (*wants to walk*): write the name again.
+
+For English *whether*, change the vowel to `e`: **`derl`**. The inner sentence is question-like, but the outer sentence is still a statement, so the whole stretch ends with a period.
 
 > `zazozon vayebel derl zalazun vowurol.`
 >
@@ -50,13 +44,13 @@ For English *whether*, change the vowel to **`e`**: **`derl`**. The inner senten
 >
 > "Azozon sees whether Alazun walks."
 
-**Compare with:** *the dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. *Because Alazun walks* gives a reason rather than filling a role, so it takes a hinge word instead of a stand-in on its own (next section).
+**Compare with:** *the dog that runs* (which dog) is [two sentences](#which-noun), not `darl` on the noun. *Because Alazun walks* gives a reason rather than filling a role, so it takes a hinge word instead of a stand-in on its own (next section).
 
 ### Because, although (hinges) {#hinges}
 
-Words like *because* and *although* attach a dependent clause as a reason, a contrast, or a time. Ageben uses a pair for this: a **hinge** word that names the link, then the stand-in **`blarl`** right after it. The hinge is a relation word, so **`blarl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`blarl`** at the very end.
+Words like *because* and *although* attach a dependent clause as a reason, a contrast, or a time. Ageben uses a pair for this, kept together last in the main sentence: a **hinge** word that names the link, then the stand-in **`blarl`** at the very end, which is the hinge's hosted [extra noun](clause.md#extra-nouns) in `/b/`, since the hinge is a relation word.
 
-The hinge's role letter follows the clause page. *Because* is your [stance](clause.md#stance-th) on why the claim holds, *so that* is your own aim for the event, and *although* is your expectation that the first event would normally have stopped the second, so they take `/th/`. *While*, *until*, *before*, and *after* describe the event itself, so they are adverbs on `/h/`.
+*Because* is your [stance](clause.md#stance-th) on why the claim holds, *so that* is your own aim for the event, and *although* is your expectation that the first event would normally have stopped the second, so they take `/th/`. *While*, *until*, *before*, and *after* describe the event itself, so they are adverbs on `/h/`.
 
 > `zazozon vozuyel thahum blarl zalazun vowurol.`
 >
@@ -64,7 +58,7 @@ The hinge's role letter follows the clause page. *Because* is your [stance](clau
 >
 > "Azozon sings because Alazun walks."
 
-A hinge uses the abstract sense of its root, not the everyday object, so it ends in **-m**.
+A hinge uses the abstract sense of its root, not the everyday object, so it ends in `-m`.
 
 You can also say:
 
@@ -80,7 +74,7 @@ You can also say:
 | **`habam blarl`** | *before* | `abal` *backpack* | 🎒: packed first |
 | **`halam blarl`** | *after* | `alal` *sand* | ⌛: the sand has already run through |
 
-English *despite* takes a noun instead of a clause (*despite Alazun*). Use the same **`thezem`** hinge and put that noun in a `bl-` word where **`blarl`** would go. As with *although*, the obstacle is taken as fact, and you add no second word for it. All the hinge adds is your expectation that the obstacle would normally have stopped the event. To attach it to a noun instead, use `/ɡ/`: **`gezem`**. (cue: 🦓 *zebra*: two stripes, still one animal)
+English *despite* takes a noun instead of a clause (*despite Alazun*). Use the same `thezem` hinge and put that noun in a `bl-` word where `blarl` would go. As with *although*, the obstacle is taken as fact, and you add no second word for it. All the hinge adds is your expectation that the obstacle would normally have stopped the event. To attach it to a noun instead, use `/ɡ/`: **`gezem`**. (cue: 🦓 *zebra*: two stripes, still one animal)
 
 > `zazozon vowurol thezem blalazun.`
 >
@@ -98,13 +92,13 @@ Ordinary `zezel` is still *a zebra*.
 >
 > "Alazun sits, whereas a guard runs."
 
-The sentence after **`blarl`** has to name an event or a thing, so it needs a noun or a verb. A stance word by itself does not fill it.
+The sentence after `blarl` has to name an event or a thing, so it needs a noun or a verb. A stance word by itself does not fill it.
 
 **Compare with:** discourse *however* and *therefore* start a new sentence after a finished claim; they are not *although*.
 
 ### Times (*while*, *before*, *after*, *until*, *by*) {#time-hinges}
 
-The time hinges take a noun the same way. Put the event or period in a `bl-` word right after **`herom`** *during*, **`habam`** *before*, **`halam`** *after*, or **`harum`** *until*.
+English *during*, *before*, *after*, and *until* can take a noun instead of a clause (*after the thunderstorm*). The time hinges take a noun the same way as *despite*: put the event or period in a `bl-` word right after `herom` *during*, `habam` *before*, `halam` *after*, or `harum` *until*. You can then place an event in time without writing a second sentence.
 
 > `zazozon vowurol herom blanulul.`
 >
@@ -120,7 +114,7 @@ The time hinges take a noun the same way. Put the event or period in a `bl-` wor
 
 <a id="by-deadline"></a>
 
-*Until* and *by* both name an endpoint. **`harum`** *until* says this event lasts up to the endpoint. **`huvahum`** *by* says this event is done at the endpoint or sooner. (cue: 🏁 *finish line*: done by the time you reach the flag)
+*Until* and *by* both name an endpoint. `harum` *until* says this event lasts up to the endpoint. `huvahum` *by* says this event is done at the endpoint or sooner. (cue: 🏁 *finish line*: done by the time you reach the flag)
 
 > `zazozon vowurol huvahum blanulul.`
 >
@@ -130,7 +124,7 @@ The time hinges take a noun the same way. Put the event or period in a `bl-` wor
 
 <a id="as-soon-as"></a>
 
-For *as soon as* / *once*, keep **`halam`** *after* and put the haste word **`wadurom`** in front of it. The gap between the two events is as short as it can be.
+For *as soon as* / *once*, keep `halam` *after* and put the haste word **`wadurom`** in front of it. The gap between the two events is as short as it can be.
 
 > `zazozon vowurol wadurom halam blarl zalazun vehohel.`
 >
@@ -138,7 +132,7 @@ For *as soon as* / *once*, keep **`halam`** *after* and put the haste word **`wa
 >
 > "Azozon walks as soon as Alazun sits."
 
-*Since* meaning *because* is **`thahum blarl`**.
+*Since* meaning *because* is `thahum blarl`.
 
 Ageben verbs have no past or future form. *Before*, *after*, *while*, and *until* place this event in time relative to the next sentence.
 
@@ -146,7 +140,7 @@ Ageben verbs have no past or future form. *Before*, *after*, *while*, and *until
 
 <a id="event-purpose"></a>
 
-English *so that* names the outcome an event aims at (*I walk so that Alazun sits*). Use the hinge **`thovam`** with **`blarl`**, the same pair shape as *because*, and put the outcome in the sentence after **`blarl`**. Unlike *because*, this does **not** claim the outcome happened. To attach the hinge to a noun, use **`govam`**. (cue: 🥅 *goal*: you act so the shot counts)
+English *so that* names the outcome an event aims at (*I walk so that Alazun sits*). Use the hinge `thovam` with `blarl`, the same pair shape as *because*, and put the outcome in the sentence after `blarl`. Unlike *because*, this does not claim the outcome happened. To attach the hinge to a noun, use **`govam`**. (cue: 🥅 *goal*: you act so the shot counts)
 
 <!-- Exception to house-cast: the aim this hinge names is the speaker's, so I is the point. -->
 

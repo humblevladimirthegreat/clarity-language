@@ -4,7 +4,7 @@ band: beginner
 
 # Speech moves {#speech-moves}
 
-How to start a new speech move with `/y/`: call someone, react, or say whether you are stating, asking, commanding, or forbidding. An act word is leftover-list work on claims: add a claim, rank an instruction, collapse to an answer, or take the act away. You can also keep the move you started going with `/x/`. How much talk remains is a different job.
+How to start a new speech move (one statement, question, command, or other act) with `/y/`: call someone, react, or say whether you are stating, asking, commanding, or forbidding. You can also keep the move you started going with `/x/`.
 
 ### Turn (`/y/`): start a new speech move {#turn-y}
 
@@ -16,7 +16,7 @@ A period closes the body. Spoken, a period is a **rest**: one silent beat.
 
 ### Call someone (`/y/` + name) {#vocative}
 
-To call someone into the turn, put `/y/` before their name, which ends in **-n**. The call can be the whole turn or come before a clause. A `/y/` word that ends in **-n** is always a call.
+To call someone into the turn, put `/y/` before their name, which ends in `-n`. The call can be the whole turn or come before a clause. A `/y/` word that ends in `-n` is always a call.
 
 > `yalazun.`
 >
@@ -32,13 +32,13 @@ A `/ɡ/` word right after the call describes the person you call, as it would af
 >
 > "Alon Olowon!" (calling Alon Olowon)
 
-To call someone by what they are (*Waiter!*, *Doctor!*), use the kind as a title: it still ends in **-n**, so `yagayun` calls the guard.
+To call someone by what they are (*Waiter!*, *Doctor!*), use the kind as a title: it still ends in `-n`, so `yagayun` calls the guard.
 
 **Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Alazun uses `/y/`; saying Alazun walks uses `/z/` (`zalazun vowurol`).
 
 ### Interjections: reactions
 
-An **interjection** is a short reaction or exclamation that stands on its own. Write the reaction under `/y/` with an ordinary ending: **-l** for the everyday sense, **-m** for the abstract sense, just as on any [first mention](word-endings.md).
+An **interjection** is a short reaction or exclamation that stands on its own. Write the reaction under `/y/` with an ordinary ending: `-l` for the everyday sense, `-m` for the abstract sense, just as on any [first mention](word-endings.md).
 
 > `yemel.`
 >
@@ -52,7 +52,7 @@ An **interjection** is a short reaction or exclamation that stands on its own. W
 >
 > "Amazing!"
 
-The ending tells a reaction from a call: **-n** calls someone (`yalazun`, `yagayun`), and **-l** / **-m** give the reaction itself. So `yagayul` is *Guard!* shouted as an alarm, and `yagayun` calls the guard over.
+The ending tells a reaction from a call: `-n` calls someone (`yalazun`, `yagayun`), and `-l` / `-m` give the reaction itself. So `yagayul` is *Guard!* shouted as an alarm, and `yagayun` calls the guard over.
 
 A `/ɡ/` word right after a reaction describes it, as one after a call describes the person called.
 
@@ -67,7 +67,7 @@ A `/ɡ/` word right after a reaction describes it, as one after a call describes
 ### Speech act: statement, question, command
 <a id="speech-act-beginner"></a>
 
-Each turn does one thing: it states, asks, commands, or forbids. That is its **speech act**. An **act word** names it: `y`, a vowel, and **-l**. The statement word is **`yal`**, but a period already marks a statement, so you usually leave **`yal`** out.
+Each turn does one thing: it states, asks, commands, or forbids. That is its **speech act**. An **act word** names it (`y`, a vowel, and `-l`), so the listener hears which act you mean. The statement word is **`yal`**, but a period already marks a statement, so you usually leave `yal` out.
 
 When the turn is not a statement, put its act word immediately before the body:
 
@@ -77,15 +77,15 @@ When the turn is not a statement, put its act word immediately before the body:
 >
 > "Walk!"
 
-The vowel picks the act. Its cues hang on the join leftover-list: **a** add a claim, **o** rank an instruction, **e** collapse to an answer, **u** take the act away.
+The vowel picks the act:
 
 <!-- cheat-sheet: talking -->
 | Ageben | Use | Cue |
 |--------|-----|-----|
-| **`yal`** | statement (often omitted) | **a** ≈ add (hold the claim) |
-| **`yel`** | question: yes/no and fill-in ask | **e** ≈ choice (collapse to an answer) |
-| **`yol`** | command / instruction | **o** ≈ rank (this is what to do) |
-| **`yul`** | prohibition: *don’t…* | **u** ≈ not (take the act away) |
+| `yal` | statement (often omitted) | `a` ≈ add (hold the claim) |
+| **`yel`** | question: yes/no and fill-in ask | `e` ≈ choice (collapse to an answer) |
+| **`yol`** | command / instruction | `o` ≈ rank (this is what to do) |
+| **`yul`** | prohibition: *don’t…* | `u` ≈ not (take the act away) |
 
 ### Word order for each act {#act-word-order}
 
@@ -129,11 +129,9 @@ The person who receives (`/b/`) stays right after the verb, wherever the verb go
 
 ### Continue (`/x/`): keep the same speech move {#continue-x}
 
-Often you want to add another sentence to the same statement, question, or command, such as *therefore …* after a claim. An `/x/` word does that: the new stretch **continues** the speech move you already started, instead of starting a new one. It is still a statement if you were stating, still a question if you were asking, and so on.
+Often you want to add another sentence to the same statement, question, or command, such as *therefore …* after a claim. An `/x/` word **continues** the speech move you already started instead of starting a new one, so the new sentence keeps that move's speech act and needs no act word of its own, not even `yal`.
 
-Only the first turn (or a default statement body) chooses the speech act. So the continued stretch needs no act word of its own, not even **`yal`**.
-
-A **linker** is an `/x/` word that connects one sentence to the next, like English *therefore* or *however*. The first sentence may end with a period; the linker then **starts the next written sentence**, still under the same speech act:
+A **linker** is an `/x/` word that connects one sentence to the next, like English *therefore* or *however*. The first sentence may end with a period, and the linker then starts the next written sentence, still under the same speech act:
 
 > `zodozel vowurol. xahom zogozel veruvol.`
 >
@@ -141,7 +139,7 @@ A **linker** is an `/x/` word that connects one sentence to the next, like Engli
 >
 > "A dog walks. Therefore a cat runs."
 
-**Compare with:** [`/y/`](#turn-y) starts a **new** speech move (a new statement, question, or command). `/x/` keeps the move you already started.
+**Compare with:** [`/y/`](#turn-y) starts a new speech move (a new statement, question, or command). `/x/` keeps the move you already started.
 
 ### Practice {#beginner-practice}
 
