@@ -328,6 +328,7 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebe
 | *this time*, *this once* (angry this time, said something untrue this once) | **`thu`** on the root: `gonumuthul`, `vulamuthul` | [This episode](/label-seams#reach-occasion) |
 | *as their craft*, *as a practice* | **`tho`** on the root: `vulamuthol` | [Practiced role](/label-seams#reach-occupation) |
 | *in dealings with*, *a stranger to Alazun* | **`the`** plus `/b/`: `gulayethem blalazun` | [This pair](/label-seams#reach-relative) |
+| *lie*, *liar*, *deceive*, *ignore*, *mock*, *exploit*, *crime*, *criminal*, *abuse*, *villain*, *aggressive*, *scheme*, *plot* | the act root; what they knew or meant through a holder; a verdict as fault, a say word, or label reach: `vulamul` | [Lie, ignore, mock, exploit, crime](say-reasons.md#accusation-words) |
 | *type*, *kind of person* (a type who says untrue things, an anxious type) | **`tha`** on the root: `zazozon vulamuthal` | [Type across scenes](/label-seams#reach-type) |
 | *said something untrue to Alazun, this once* | **`thu`** on the verb, recipient as usual: `vulamuthul balazun` | [This episode](/label-seams#reach-occasion) |
 | *it's the situation*, *it was the situation*, *by circumstance* | **`thae`**: `gonumuthael`, `gwaezeduyol` | [Stacked reach](/label-seams#reach-stacks) |

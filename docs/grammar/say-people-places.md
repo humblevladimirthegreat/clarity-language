@@ -629,10 +629,10 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 | *comparison* / *contrast* (setting two against each other) | `zezem` | contrast |
 | *compare A with B* | `zazozon dalazun vezem bahelan.` | sets Alazun against Ahelan |
 | *preference* (the one preferred) | `zolamalugulol` | the one loved first |
-| *tendency* (a type across scenes) | `zulamuthal` | lying as a type: a tendency to lie |
-| *a liar type* (the person) | `zwazulamul` | someone who lies, as a type |
-| *tends to* / *often lies* | `zazozon vulamul huam.` | usually lies |
-| *a lying type* | `zazozon vulamuthal.` | the type-claim |
+| *tendency* (a type across scenes) | `zulamuthal` | misstating as a type: a tendency to say untrue things |
+| *liar* (the person) | `zwazulamul` | someone who says untrue things, as a type; whether they knew takes a holder ([lie](say-reasons.md#accusation-words)) |
+| *tends to* / *often says untrue things* | `zazozon vulamul huam.` | usually misstates |
+| *a liar type* | `zazozon vulamuthal.` | the type-claim |
 | *introduction* (the act) | `zalazun dazozon veluyol thewom blahelan.` | Alazun learns Azozon, Ahelan makes it happen |
 | *introduction* (opening of a text) | `zugulol gobom blanal` | the first part of a book |
 | *unemployment* | `zazozon garalomuyal gul.` | not in paid production |

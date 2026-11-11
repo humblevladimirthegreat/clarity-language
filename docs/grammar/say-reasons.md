@@ -190,7 +190,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 | *kill* | `zalazun vuzobul thewom blazozon.` | Alazun dies, Azozon makes it happen |
 | *feed* | `zalazun vogazul thewom blazozon.` | Alazun eats, Azozon makes it happen |
 | *make X angry* / *paint it red* (a result) | `zazozon vonumul thewom blalazun.` | the adjective's verb root, Azozon becomes angry, Alazun makes it happen |
-| *arrived tired* / *left angry* (a state during) | `zalazun vudurul herom blarl zulamur gadamul.` or `zalazun gadamul. zulamur vudurul.` | a `/ɡ/` word right after the verb has no reading, so the state is its own clause |
+| *arrived tired* / *left angry* (a state during) | `zalazun vudurul herom blarl zalazur gadamul.` or `zalazun gadamul. zalazur vudurul.` | a `/ɡ/` word right after the verb has no reading, so the state is its own clause |
 | *feed* (a child, nurture) | `zalazun dazozon vevuyal.` | the nurturing root, no `thewom` |
 | *remove* | `zanal vudurul ual bedohel thewom blazozon.` | the book leaves the table, Azozon makes it happen |
 | *discard* | `zanal vululul thewom blazozon.` | the book is disposed of |
@@ -639,6 +639,57 @@ English *deserve* says something is owed without saying why. Name the ground. It
 
 **Compare with:** *deserving* with no ground has no word, like the bare evaluatives above. *Fair* on its own (*a fair judge*) is `gulurom` ([leftover senses](say-people-places.md#leftover-senses)).
 
+### Lie, ignore, mock, exploit, crime {#accusation-words}
+
+**Needs:** [Whose view (holder)](/holder#holder) · [Plan](/intention#plan-predict) · [Negation](/joins#negation-u) · [Say words after `uom`](/contrary-to#contrary-to-say) · [Exchange](/relations#exchange) · [Unmet](/sakes#sake-changeability) · [Fault](/fault#fault) · [Always](/restrictors#always-hual) · [Label reach](/label-seams#label-reach) · [Enough and too](/bars#sake-bars)
+
+English *lie*, *ignore*, and *mock* each name an act and also what the other person knew or meant. *Crime* and *villain* add a verdict. The bare Ageben word names only the act, the part anyone could check. Say what the other person knew or meant through a [holder](/holder#holder), which says how you know it. Put a verdict on the act with fault, a say word, or an unmet sake, and on a person with label reach.
+
+| English | Ageben | Reading |
+|---------|--------|---------|
+| *lie* / *deceive* | `zalazun vulamul.` + `zalazun dulamur vanam theyomalazun.` | said something untrue; I gather Alazun knew it (`thomamalazun`: maybe) |
+| *truthful* (what was said) | `zezuyol gulamul gul.` | no untruth |
+| *truthful* / *honest* (a person) | `zazozon vulamul hal.` | never says anything untrue |
+| *sincere* | `zazozon vezuyol. zezuyor gegugel theyomazozon.` | I gather Azozon thinks what they said is correct |
+| *ignore* | `zazozon dalazun vegewom vul.` + `zazozon theyomazozon thagom dalazun vegewom vul.` | no answer; I gather Azozon planned not to answer |
+| *go unnoticed* / *be ignored* (no one's aim claimed) | `zalazun gunemum.` | left unseen and unanswered |
+| *neglect* | `zazozon dalazun vegewom vul uom hwuvol.` | no answer, against what the rules require |
+| *mock* | `zazozon dalazun vadomum.` + `zalazun theyomazozon thagom genemum.` | ridicule; I gather Azozon means it to hurt |
+| *exploit* | `zalazun demebol vewal bazozon heham blodel thudathum blalazun.` | an exchange that costs Alazun |
+| *break the law* / *commit a crime* | `zazozon vuzuyum.` | lawbreaking |
+| *crime* (which rule) | `zazozon dalazun voruyul uom hwuvul.` | robs Alazun against the rules |
+| *crime* (to blame) | `thahul blarl` + the act | fault on the act ([fault](/fault#fault)) |
+| *criminal* | `zazozon guzuyul.` / `zazozon vuzuyutham.` | an outlaw / breaks the law, as a type |
+| *abuse* | `zalazun genemum huam thahul blarl zazozon vezuyol.` | Alazun is harmed, as a rule, and Azozon's talk is to blame |
+| *villain* / *evil person* | `zazozon venemutham.` | harms, as a type |
+| *aggressive* | `zazozon vuvuvuthal.` | fights, as a type |
+| *scheme* / *plot* | `zazozon theyomazozon thagom dalazun voruyul.` | I gather Azozon plans to rob Alazun |
+| *betray* | `zazozon vozezum balazun.` | breaks a promise to Alazun |
+| *flatter* | `zazozon vubudam balazun. zubudar gegugel gul theyomazozon.` | compliments Alazun; I gather Azozon thinks it isn't correct |
+| *greedy* | `zazozon thudatham zol gegumal.` | more money-hungry than a need calls for |
+| *fool* | `zazozon gehuyetham.` | plays the fool, as a type |
+| *sly* / *cunning* | `zazozon gavozutham.` | resourceful, as a type |
+
+> `zalazun vulamul. zalazun dulamur vanam theyomalazun.`
+>
+> z-Alazun | v-misstate . z-Alazun | d-←misstate | v-knowledge | th-CLUES-Alazun
+>
+> "Alazun lied." (Alazun said something untrue, and I gather Alazun knew it)
+
+> `zazozon dalazun vegewom vul. zazozon theyomazozon thagom dalazun vegewom vul.`
+>
+> z-Azozon | d-Alazun | [v-solution | v-not] . z-Azozon | th-CLUES-Azozon | th-plan-itinerary | d-Alazun | [v-solution | v-not]
+>
+> "Azozon ignored Alazun." (no answer, and I gather Azozon planned it)
+
+> `zalazun demebol vewal bazozon heham blodel thudathum blalazun.`
+>
+> z-Alazun | d-medal | v-present | b-Azozon | [h-in-exchange-for | bl-strawberry] | [th-sake-unmet-modifiable | bl-Alazun]
+>
+> "Azozon exploited Alazun." (Alazun gave Azozon the medal for a strawberry, at a cost to Alazun)
+
+**Compare with:** *liar* is the same split on a person: the untruth verb with label reach ([act nouns](say-people-places.md#act-nouns)). A verdict with no rule named is [Wrong, ugly](#wrong-ugly).
+
 ### Clear, honest, false, general, proud {#trait-words}
 
 **Needs:** [Negation](/joins#negation-u) · [Talking about a whole kind](/universals-domains#universals-domains-generics) · [Fault](/fault#fault) · [A feeling about a thing](/how-you-feel#feeling-about-a-thing) · [Number as stance](/special-values#special-number-as-stance)
@@ -648,7 +699,7 @@ Many English adjectives are the plain opposite of something that has a root (*un
 | English | Ageben | Reading |
 |---------|--------|---------|
 | *unclear* / *obscure* | `gagebem gul` | not clear |
-| *honest* / *truthful* / *sincere* | `gulamum gul` | not deceiving |
+| *honest* / *truthful* / *sincere* | `zezuyol gulamul gul` | no untruth; *sincere* takes a holder ([lie, honest](#accusation-words)) |
 | *false* / *untrue* | `gegugel gul` | not correct |
 | *responsible* (to blame) | `thahul blarl` + the act | fault on the act ([fault](/fault#fault)) |
 | *responsible* (in charge) | `gebayom` | of authority |

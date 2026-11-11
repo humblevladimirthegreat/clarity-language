@@ -263,4 +263,6 @@ residue-and-former.md gains a **Compare with**: residue is the outcome still in 
 
 ## Open decisions
 
-None open. Agents log new ones here during the run, per [proposals.md](../meta/procedures/proposals.md#what-a-proposal-is).
+Agents log new ones here during the run, per [proposals.md](../meta/procedures/proposals.md#what-a-proposal-is).
+
+- **Contempt has no build (Unit D, *mock*).** The *mock* row was to pair ridicule with contempt through a holder, but no page builds *contempt* (`find-english` on *contempt*, *scorn*: no entry; the [emotion lookup](../grammar/say-reasons.md#emotion-lookup) has no row). The row ships as ridicule plus the holder's aim to hurt (`zalazun theyomazozon thagom genemum.`). Options: (a) leave it so; (b) add a *contempt* row to the emotion lookup (a typical build, e.g. relatedness unmet, aimed at someone, pushing away), then add it to the *mock* row with a holder; (c) treat contempt as a comparison (the holder ranks the person below a bar). **Recommendation:** (b), since *contempt* is a common emotion word learners will look up, and the lookup is where its build belongs.
