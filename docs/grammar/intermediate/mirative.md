@@ -36,7 +36,7 @@ The mirative says only that the news was unexpected, not whether it is good or b
 
 > `zewal wawethamar goyom themem.`
 >
-> [z-present | [w-relatedness-met-any-term-INTERNAL-SURGING | g-stimulus]] | th-MIRATIVE
+> [z-present | [w-relatedness-met-any-term-STAYING-FLEETING | g-stimulus]] | th-MIRATIVE
 >
 > "I'm pleasantly surprised by the present."
 

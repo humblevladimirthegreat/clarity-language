@@ -163,7 +163,7 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 
 > `thawethumam thahul blarl zuwen vezuyol.`
 >
-> th-relatedness-unmet-modifiable-INTERNAL-FLOWING | [th-because.fault | bl-that-clause] | z-speaker | v-tell
+> th-relatedness-unmet-modifiable-STAYING-OPEN | [th-because.fault | bl-that-clause] | z-speaker | v-tell
 >
 > "I feel guilty for speaking." (a cost to a tie, held inside, and my speaking broke a norm)
 
@@ -171,7 +171,7 @@ What makes the feeling guilt is the fault hinge on **your own** act. The feeling
 
 > `thawethumar thahum blarl zalazun vezuyol.`
 >
-> th-relatedness-unmet-modifiable-INTERNAL-SURGING | [th-because | bl-that-clause] | z-Alazun | v-tell
+> th-relatedness-unmet-modifiable-STAYING-FLEETING | [th-because | bl-that-clause] | z-Alazun | v-tell
 >
 > "I'm hurt that Alazun spoke."
 
@@ -576,7 +576,7 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 
 > `zonal wawethumar goyom.`
 >
-> z-memo | [w-relatedness-unmet-modifiable-INTERNAL-SURGING | g-stimulus]
+> z-memo | [w-relatedness-unmet-modifiable-STAYING-FLEETING | g-stimulus]
 >
 > "Upset about the memo."
 
@@ -672,7 +672,7 @@ Many English adjectives are the plain opposite of something that has a root (*un
 
 > `zonal wuwathamam goyom.`
 >
-> z-memo | [w-competence-met-any-term-INTERNAL-FLOWING | g-stimulus]
+> z-memo | [w-competence-met-any-term-STAYING-OPEN | g-stimulus]
 >
 > "Proud of the memo."
 
@@ -783,19 +783,19 @@ A feeling word is how you feel **now**. The stimulus can sit anywhere in time. T
 
 > `zezuyol wuwathuraer goyom thebal blral.`
 >
-> [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-REPORTED.strong | bl-later]
+> [z-speech | [w-competence-unmet-passing-HELD-FLEETING | g-stimulus]] | [th-REPORTED.strong | bl-later]
 >
 > "Anxious about the dialogue that's coming, as a reliable source says."
 
 > `zezuyol wuwathuraer goyom thaber blral.`
 >
-> [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-INTUITION.weak | bl-later]
+> [z-speech | [w-competence-unmet-passing-HELD-FLEETING | g-stimulus]] | [th-INTUITION.weak | bl-later]
 >
 > "Anxious about a dialogue I only have a hunch is coming."
 
 > `zezuyol wawethumel goyom thevum blrul.`
 >
-> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus]] | [th-MEMORY | bl-earlier]
+> [z-speech | [w-relatedness-unmet-modifiable-AIMED-SETTLED | g-stimulus]] | [th-MEMORY | bl-earlier]
 >
 > "Stung by the dialogue, which is over; I was there."
 
@@ -813,7 +813,7 @@ A [feeling with no object](/feelings#feeling-no-object) can take a channel and o
 
 > `thuwathuruer thaber blral.`
 >
-> th-competence-unmet-passing-UNPLACED-SURGING | [th-INTUITION.weak | bl-later]
+> th-competence-unmet-passing-UNPLACED-FLEETING | [th-INTUITION.weak | bl-later]
 >
 > "Anxious about something I sense is coming."
 
@@ -828,13 +828,13 @@ To say you **felt** it at another time, date the feeling itself with [stance as-
 
 > `zezuyol wawethumel goyom thenam blezuyol.`
 >
-> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus]] | [th-as-of.ledger | bl-speech]
+> [z-speech | [w-relatedness-unmet-modifiable-AIMED-SETTLED | g-stimulus]] | [th-as-of.ledger | bl-speech]
 >
 > "The dialogue stung me at the time." (nothing is said about now)
 
 > `zezuyol wawethumel goyom thevum thenam blezuyol.`
 >
-> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus]] | th-MEMORY | [th-as-of.ledger | bl-speech]
+> [z-speech | [w-relatedness-unmet-modifiable-AIMED-SETTLED | g-stimulus]] | th-MEMORY | [th-as-of.ledger | bl-speech]
 >
 > "I remember the dialogue stinging at the time."
 
@@ -849,19 +849,19 @@ A direction locus says where the charge **goes**. It does not say who **caused**
 
 > `zezuyol wawethumem goyom blazozon thahum blerulal.`
 >
-> [z-speech | [[w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | bl-Azozon]] | [th-because | bl-rain]
+> [z-speech | [[w-relatedness-unmet-modifiable-AIMED-OPEN | g-stimulus] | bl-Azozon]] | [th-because | bl-rain]
 >
 > "Irritated at Azozon about the dialogue, but the rain caused it."
 
 > `zonal wawethumel goyom blalazun thahum blarl zalazun vezuyol.`
 >
-> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus] | bl-Alazun]] | [th-because | bl-that-clause] | z-Alazun | v-tell
+> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-SETTLED | g-stimulus] | bl-Alazun]] | [th-because | bl-that-clause] | z-Alazun | v-tell
 >
 > "Resentful at Alazun about the memo, because Alazun spoke." (a cause, and no one is blamed)
 
 > `zonal wawethumel goyom blalazun thomam thahul blarl zalazun vezuyol.`
 >
-> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus] | bl-Alazun]] | th-MAY | [th-because.fault | bl-that-clause] | z-Alazun | v-tell
+> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-SETTLED | g-stimulus] | bl-Alazun]] | th-MAY | [th-because.fault | bl-that-clause] | z-Alazun | v-tell
 >
 > "Resentful at Alazun about the memo; maybe Alazun was wrong to speak."
 
@@ -889,13 +889,13 @@ Most of these feelings are about the **understanding** sake: whether something m
 
 > `zagalal wowethalael goyom.`
 >
-> z-galaxy | [w-understanding-met-lasting-CIRCUM-STATIC | g-stimulus]
+> z-galaxy | [w-understanding-met-lasting-HELD-SETTLED | g-stimulus]
 >
 > "In awe of the galaxy."
 
 > `zewal wodethamar goyom themem.`
 >
-> [z-present | [w-pleasure-met-any-term-INTERNAL-SURGING | g-stimulus]] | th-MIRATIVE
+> [z-present | [w-pleasure-met-any-term-STAYING-FLEETING | g-stimulus]] | th-MIRATIVE
 >
 > "Pleasantly surprised by the present."
 

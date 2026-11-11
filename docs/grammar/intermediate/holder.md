@@ -132,7 +132,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 
 > `zonal wawethumel goyom blalazun theyomazozon.`
 >
-> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus] | bl-Alazun]] | th-CLUES-Azozon
+> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-SETTLED | g-stimulus] | bl-Alazun]] | th-CLUES-Azozon
 >
 > "I gather Azozon resents Alazun over the memo, holding it in."
 
@@ -146,7 +146,7 @@ A [feeling with no object](feelings.md#feeling-no-object) works the same way: th
 
 > `thuwathuruer theyomalazun.`
 >
-> th-competence-unmet-passing-UNPLACED-SURGING | th-CLUES-Alazun
+> th-competence-unmet-passing-UNPLACED-FLEETING | th-CLUES-Alazun
 >
 > "I gather Alazun is anxious."
 

@@ -86,7 +86,7 @@ English *it sounds like you're anxious* and *I hear that you're upset* give the 
 
 > `thuwathuruer theyomawan.`
 >
-> th-competence-unmet-passing-UNPLACED-SURGING | th-CLUES-listener
+> th-competence-unmet-passing-UNPLACED-FLEETING | th-CLUES-listener
 >
 > "It sounds like you're anxious."
 
@@ -94,7 +94,7 @@ To say the feeling **makes sense**, put your own stance in the main sentence and
 
 > `wowetham goyom zarl zezuyol wawethumam goyom theyomawan.`
 >
-> [w-understanding-met-any-term | g-stimulus] | z-that-clause | [z-speech | [w-relatedness-unmet-modifiable-INTERNAL-FLOWING | g-stimulus]] | th-CLUES-listener
+> [w-understanding-met-any-term | g-stimulus] | z-that-clause | [z-speech | [w-relatedness-unmet-modifiable-STAYING-OPEN | g-stimulus]] | th-CLUES-listener
 >
 > "It makes sense to me that the talk weighs on you."
 

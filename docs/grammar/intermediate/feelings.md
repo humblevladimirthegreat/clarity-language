@@ -14,7 +14,7 @@ Put that word where any sake word goes: on `/ɡ/` after a belonging, on `/w/` im
 
 > `zezuyol wuwathuraer goyom.`
 >
-> z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]
+> z-speech | [w-competence-unmet-passing-HELD-FLEETING | g-stimulus]
 >
 > "I'm anxious about the dialogue." (my competence is at stake for now, the feeling hangs over the room, and it comes in waves)
 
@@ -48,7 +48,7 @@ A feeling word with a direction tail already uses its `/b/` for the landmark, so
 
 > `zonal wawethumel goyom blalazun.`
 >
-> z-memo | [[w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus] | bl-Alazun]
+> z-memo | [[w-relatedness-unmet-modifiable-AIMED-SETTLED | g-stimulus] | bl-Alazun]
 >
 > "I resent Alazun over the memo, holding it in."
 
@@ -66,13 +66,13 @@ Say how **strong** the feeling is with a [degree word](very-and-slightly.md#degr
 
 > `zobewom wohalal guwathamar.`
 >
-> z-draft | [w-ocean | g-competence-met-any-term-INTERNAL-SURGING]
+> z-draft | [w-ocean | g-competence-met-any-term-STAYING-FLEETING]
 >
 > "I'm overwhelmingly proud of my draft."
 
 > `zonal wamezem wawethumem goyom blalazun.`
 >
-> z-memo | [[w-small | w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | bl-Alazun]
+> z-memo | [[w-small | w-relatedness-unmet-modifiable-AIMED-OPEN | g-stimulus] | bl-Alazun]
 >
 > "I feel a mild, steady irritation at Alazun over the memo."
 
@@ -98,7 +98,7 @@ On the clause, a feeling word is about the clause's event, so English *moved tha
 
 > `zalazun vowurol thawethamar.`
 >
-> z-Alazun | v-walk | th-relatedness-met-any-term-INTERNAL-SURGING
+> z-Alazun | v-walk | th-relatedness-met-any-term-STAYING-FLEETING
 >
 > "I'm moved that Alazun walks."
 
@@ -106,7 +106,7 @@ With no event at all, a feeling word on `/th/` is a whole sentence about **you**
 
 > `thuwathuruer.`
 >
-> th-competence-unmet-passing-UNPLACED-SURGING
+> th-competence-unmet-passing-UNPLACED-FLEETING
 >
 > "I'm anxious."
 
@@ -114,7 +114,7 @@ A lone feeling can still name what caused it. The cause is not the object: the f
 
 > `thuwathuruer thahum blerulal.`
 >
-> th-competence-unmet-passing-UNPLACED-SURGING | [th-because | bl-rain]
+> th-competence-unmet-passing-UNPLACED-FLEETING | [th-because | bl-rain]
 >
 > "I'm anxious, and the rain caused it."
 
@@ -173,7 +173,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 ::: details Show answer
 `zahuyal wawethumer goyom.`
 
-z-hug | [w-relatedness-unmet-modifiable-AIMED-SURGING | g-stimulus]
+z-hug | [w-relatedness-unmet-modifiable-AIMED-FLEETING | g-stimulus]
 :::
 
 **2.** *Hopefully Azozon walks.*
@@ -189,7 +189,7 @@ z-Azozon | th-hope | v-walk
 ::: details Show answer
 `thuwathuruer.`
 
-th-competence-unmet-passing-UNPLACED-SURGING
+th-competence-unmet-passing-UNPLACED-FLEETING
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
@@ -197,7 +197,7 @@ th-competence-unmet-passing-UNPLACED-SURGING
 **1.** `zahuyal wawethumel goyom blalazun.`
 
 ::: details Show answer
-z-hug | [[w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus] | bl-Alazun]
+z-hug | [[w-relatedness-unmet-modifiable-AIMED-SETTLED | g-stimulus] | bl-Alazun]
 
 *I resent Alazun over the hug, holding it in.*
 :::
@@ -205,7 +205,7 @@ z-hug | [[w-relatedness-unmet-modifiable-AIMED-STATIC | g-stimulus] | bl-Alazun]
 **2.** `zalazun vehohel thawethamar.`
 
 ::: details Show answer
-z-Alazun | v-sit | th-relatedness-met-any-term-INTERNAL-SURGING
+z-Alazun | v-sit | th-relatedness-met-any-term-STAYING-FLEETING
 
 *I'm moved that Alazun sits.*
 :::
@@ -237,7 +237,7 @@ z-Azozon | th-hope | v-sit
 ::: details Show answer
 `thawethamar.`
 
-th-relatedness-met-any-term-INTERNAL-SURGING
+th-relatedness-met-any-term-STAYING-FLEETING
 
 A noun before the feeling is an existence clause, so that would be *moved that Alazun is here*.
 :::
