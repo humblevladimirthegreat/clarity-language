@@ -59,6 +59,8 @@ English *has left* and *used to tell* mix two things: when the event happened, a
 
 Do not write **`helam`** right before **`hual`**: that spot holds the restrictor's list of occasions (*always except when …*). Put **`hual`** first (bare *always*) and FORMER after the verb, where a channel goes on a general claim.
 
+FORMER also works as a [comparison bar](bars.md#channel-bars): **`helam`** right before the rank word ranks against how it used to be, *than it used to be*.
+
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`haram`** | outcome still in effect | *still counts* / residue | `aram` *debt* | 💰: unpaid balance still on the books |

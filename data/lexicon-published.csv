@@ -40,7 +40,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🙂‍↕️,nod,enamo,mind,order,,agreement,a nod says yes to what was said,,,
 😌,relief,ureme,mind,one,,calm,relief brings calm,,,
 😔,pensive,ubemu,mind,takes-away,,melancholy,pensive face shows melancholy,,depression; depress,
-😪,sleepy,uzeme,mind,one,,torpor,sleepy eye shows drowsiness; torpor is the unobservable low arousal,,,restrictors.md#beginner-practice
+😪,sleepy,uzeme,mind,one,,torpor,sleepy eye shows drowsiness; torpor is the unobservable low arousal,,,left-bound-adjectives.md#beginner-practice
 🤤,drool,uduma,mind,holds,,craving,drool shows craving,,hunger,
 🫩,bleary,obeme,mind,one,,fatigue,bleary eyes show fatigue,,,
 😷,mask,amebu,body,takes-away,small,illness,a medical mask marks the sick; illness is being unwell,,,role-parts.md#intermediate-practice
@@ -116,7 +116,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 👁️‍🗨️,attest,uge,sign,one,,testimony,eye-in-speech attests; testimony is the claim that seeing warrants saying,,swear; demonstrate,polar-inventory.md#intermediate-practice
 🗯️,rant,orayu,person,takes-away,none,outrage,rant shows outrage,,complain; complaint,
 💭,thought,oma,mind,holds,,commentary,thought balloon floats a take over the scene; commentary is mind storying instead of bare contact,,idea; concept; notion; remark; theoretical; comment,
-💤,sleep,ezuve,doing,one,none,restoration,sleep means rest; restoration is the unobservable replenishing,,asleep,roles.md#beginner-practice
+💤,sleep,ezuve,doing,one,none,restoration,sleep means rest; restoration is the unobservable replenishing,,asleep,here-there.md#beginner-practice
 👋,wave,owuya,person,holds,none,acknowledgment,a wave acknowledges someone; acknowledgment is the unobservable uptake,,acknowledge; recognition; greet; gesture,same-role-words.md#intermediate-practice
 ✋,hand,aheba,body,holds,small,,,,,of-relations.md#intermediate-practice
 🫴,palm-up,aweba,body,holds,small,offering,a palm held up holds something out to take; an offering is what you hold out,,offer,
@@ -230,7 +230,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🫈,bigfoot,ubaye,person,one,big,elusiveness,bigfoot stays elusive,,,
 💆,massage,emuya,person,holds,none,soothing,massage brings relief,,,
 💇,hair,ohuba,body,holds,none,self-presentation,hair is groomed and styled; self-presentation is the unobservable aim,,,
-🚶,walk,owuro,counting,order,none,,,,march; wander,relations.md#beginner-practice
+🚶,walk,owuro,counting,order,none,,,,march; wander,spans.md#beginner-practice
 🧍,stand,uzuve,doing,one,none,presence,stand shows presence,,existence; attendance,left-bound-adjectives.md#beginner-practice
 🧎,kneel,anuve,doing,one,none,submission,kneel shows submission,,,for-a-sake.md#intermediate-practice
 🧑‍🦼,power-chair,abavo,doing,order,big,,,,,
@@ -522,7 +522,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🍺,beer,uruda,food,holds,none,,,,,hooks.md#beginner-practice
 🥂,cheers,aheya,person,holds,none,,,,,
 🥃,liquor,eluda,food,holds,none,fortitude,strong liquor warms with fortitude,,,
-🫗,pour,owuvu,doing,takes-away,none,loss-of-control,pour directs liquid; loss-of-control is the unobservable slip,,slip,hooks.md#beginner-practice
+🫗,pour,owuvu,doing,takes-away,none,loss-of-control,pour directs liquid; loss-of-control is the unobservable slip,,slip,knowing.md#beginner-practice
 🥤,drink,uwuda,food,holds,none,plastic,a takeaway drink cup is molded plastic; plastic is a moldable synthetic material,,beverage,pronouns.md#beginner-practice
 🧋,bubble-tea,eruda,food,holds,none,trendiness,bubble tea is trendy now,,trend; fashion,
 🧃,juice,uhuda,food,holds,none,vigor,juice box fuels vigor,,,
@@ -557,7 +557,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🛖,hut,ahaha,place,holds,big,locality,hut sits in a small settlement; locality is the near neighborhood,,local; neighborhood,
 🏘️,houses,uhuha,place,holds,big,town,houses in a cluster form a town; a town is a small settled place,,settlement,
 🏚️,derelict-house,edahu,place,takes-away,big,ruin,a derelict house shows decay; ruin is lasting damage,,,
-🏠,house,oheha,place,holds,big,home,a house is walls and roof; home is where you belong,,domestic; accommodation,of-relations.md#intermediate-practice
+🏠,house,oheha,place,holds,big,home,a house is walls and roof; home is where you belong,,domestic; accommodation,locative-relations.md#intermediate-practice
 🏢,office,ovaha,place,holds,big,corporate,tall offices for business; corporate is organized commerce,,facility; corporation; agency,
 🏤,post-office,uboha,place,holds,big,conveyance,post office sends mail; conveyance is the unobservable transfer-as-kind,,delivery; transportation; transfer; transport,
 🏥,hospital,uhaha,place,holds,big,,,,,proper-names.md#intermediate-practice
@@ -581,7 +581,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ⛲,fountain,avaha,place,holds,big,,,,,
 ⛺,tent,udeha,place,holds,big,,,,,sakes.md#beginner-practice
 🌁,foggy,uvulu,nature,takes-away,none,purport,foggy skyline leaves outlines unclear; purport is claimed but unsettled,,imply,
-🌃,night,anuru,counting,takes-away,none,unknown,night hides what day shows; unknown is what is hidden,,darkness; dark,restrictors.md#beginner-practice
+🌃,night,anuru,counting,takes-away,none,unknown,night hides what day shows; unknown is what is hidden,,darkness; dark,sakes.md#beginner-practice
 🏙️,skyline,azaho,place,order,big,urban,towers and lights fill the skyline; urban is city life,,city,
 🏡,cottage,egaha,place,holds,big,rural,a cottage with a garden sits out of town; rural is country life,,,
 🌄,daybreak,anuro,counting,order,none,dawn,sun rises over peaks; dawn is a new beginning,,morning,
@@ -665,7 +665,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ⛅,cloudy,ogulu,nature,takes-away,none,weather,sun behind cloud is a partly-cloudy sky; weather is the usual climate,,,
 ⛈️,thunderstorm,anulu,nature,takes-away,none,,,,storm,sakes.md#beginner-practice
 🌦️,showers,uhula,nature,holds,none,,,,,
-🌧️,rain,erula,nature,holds,none,letdown,rain washes out what you hoped to do; a letdown is a hope that fell through,,,restrictors.md#beginner-practice
+🌧️,rain,erula,nature,holds,none,letdown,rain washes out what you hoped to do; a letdown is a hope that fell through,,,clause-sequence.md#beginner-practice
 🌨️,snow,ozula,nature,holds,none,stillness,snow quiets the landscape; stillness is calm / slack water,,,more-occasions.md#intermediate-practice
 🌪️,tornado,adulu,nature,takes-away,none,turmoil,tornado tears through order; turmoil is violent disorder,,,
 🌫️,fog,ovulu,nature,takes-away,none,confusion,fog blurs what is near; confusion blurs what is clear,,,more-occasions.md#intermediate-practice
@@ -815,7 +815,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🎛️,knob,anewe,tool,one,small,control,knobs adjust the sound mix; control is directing settings,,operate; regulate; handle; conduct,
 🎤,microphone,uwe,tool,one,,performance,mic carries a live voice; performance is presenting to others,,perform,
 🎧,headphones,awa,tool,holds,,immersion,headphones seal you in sound; immersion is deep involvement,,concentration; involvement,
-📻,radio,arowe,tool,one,medium,broadcast,radio sends sound through air; broadcast is sending widely,,spread,in-clause-hooks.md#intermediate-practice
+📻,radio,arowe,tool,one,medium,broadcast,radio sends sound through air; broadcast is sending widely,,spread,evidentiality.md#intermediate-practice
 🎷,saxophone,azoro,counting,order,medium,,,,,
 🎺,trumpet,adoro,counting,order,medium,,,,,speech-manner.md#intermediate-practice
 🪊,trombone,edoro,counting,order,medium,fanfare,trombones blare to herald a grand arrival,,,
@@ -863,7 +863,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 📃,paper,ebona,title,holds,medium,,a curling sheet is paper,,,
 📜,scroll,ono,title,order,,tale,scroll records a tale; tale is a told story,,historical; narrative,
 📄,page,obono,title,order,medium,documentation,page is a sheet; record is the unobservable keeping,,sheet; document; text,predication.md#beginner-practice
-📰,newspaper,unona,title,holds,medium,news,a newspaper prints what happened today,,article; magazine; coverage; journal,in-clause-hooks.md#intermediate-practice
+📰,newspaper,unona,title,holds,medium,news,a newspaper prints what happened today,,article; magazine; coverage; journal,scope-islands.md#intermediate-practice
 📑,tab,adeno,title,order,small,organization,a tab sorts open pages into their own slots,,organize; arrangement; system; format,
 🔖,bookmark,uno,title,order,,reminder,a bookmark holds your place to come back to,,remind,
 🏷️,label,alene,title,one,small,classification,a label sorts things into named groups,,category; class; mark,
@@ -989,7 +989,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🪪,id,ane,title,one,,verification,an id card lets others check who you are,,genuine,
 🏧,atm,edaha,place,holds,big,withdrawal,atm gives cash on demand; withdrawal is taking out stored value,,,
 🚮,litter,ululu,nature,takes-away,none,disposal,litter bin marks where trash goes; disposal is getting rid of,,,
-🚰,water,owula,nature,holds,none,,,,,locative-relations.md#intermediate-practice
+🚰,water,owula,nature,holds,none,,,,,cause.md#intermediate-practice
 ♿,accessible,oguhe,place,one,none,,,,,
 🚻,restroom,eraha,place,holds,big,designation,restroom sign marks facility type; designation is marked category,,appoint,
 🚼,baby-changing,obohe,place,one,medium,,,,,

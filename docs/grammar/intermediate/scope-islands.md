@@ -78,6 +78,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *possibility* | `hogugem` | ❓ from *question mark* |
+| *newspaper* | `unonal` | 📰 |
 
 **Review:**
 
@@ -86,7 +87,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *newspaper* | `unonal` |
 | *lie* | `vulamul` |
 | *small* | `gamezem` |
 | *tell* | `vezuyol` |

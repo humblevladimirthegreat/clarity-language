@@ -121,6 +121,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *cry* | `vagamul` | 😭 |
 | *fight* | `vuvuvul` | 🫯 |
 | *eat* | `vagedal` | 🍴 from *cutlery* |
+| *pour* | `vowuvul` | 🫗 |
 | *MAY* | `thomam` | 💭 from *thought*: a balloon over the scene |
 | *LIVE* | `thugem` | 👁️‍🗨️ from *attest*: seen at the scene |
 | *MEMORY* | `thevum` | 🎣 from *fishing*: pulled up from memory |
@@ -134,7 +135,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *pay* | `varal` |
 | *wine* | `owudal` |
-| *pour* | `vowuvul` |
 | *scream* | `veyamul` |
 | *sandwich* | `edal` |
 | *punch* | `vabuvul` |

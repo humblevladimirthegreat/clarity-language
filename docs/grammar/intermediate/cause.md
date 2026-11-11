@@ -72,6 +72,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *wheel* | `uwovol` | 🛞 |
+| *water* | `owulal` | 🚰 |
 | *CAUSE* | `thewom` | ⚙️ from *machine*: how the result comes about |
 
 **Review:**
@@ -85,7 +86,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *because* | `thahum` |
 | *pressure* | `ayewam` |
 | *rain* | `erulal` |
-| *water* | `owulal` |
 | *stop* | `vezohul` |
 | *pour* | `vowuvul` |
 | *scream* | `veyamul` |

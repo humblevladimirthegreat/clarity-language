@@ -98,7 +98,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *whether-clause* | `derl` |
 | *haste* | `hadurom` |
 | *rain* | `erulal` |
-| *night* | `anurul` |
 | *see* | `vayebel` |
 | *find* | `vumewel` |
 
@@ -186,15 +185,7 @@ z-Alazun | v-sing | [th-only-if | bl-that-clause] | z-Ahelan | d-flower | v-see
 *Alazun sings only if Ahelan sees a flower.*
 :::
 
-**5.** `zazozon develalx vayebel thohem blanurul.`
-
-::: details Show answer
-z-Azozon | d-flower-x | v-see | [th-if | bl-night]
-
-*Azozon sees some flowers if it is night.*
-:::
-
-**6.** `yol dobowal hadurom vumewel thohem blerulal.`
+**5.** `yol dobowal hadurom vumewel thohem blerulal.`
 
 ::: details Show answer
 y-command | d-bucket | h-haste | v-find | [th-if | bl-rain]

@@ -80,7 +80,6 @@ English *sleepier than usual* and *bigger than it looks* compare against an expe
 | CLUES `theyom` | what was worked out | *than calculated* |
 | REPORTED `thebam` | what was said or written | *than advertised* / *than the stories say* |
 | INTUITION `thabem` | your gut expectation | *than I expected* |
-| FORMER `helam` | how it used to be | *than it used to be* |
 
 MAY gives no expected value to compare against, so it cannot be a bar. *Than scheduled* ranks against a plan: that is the [PLAN bar](#bars) (`thagom`).
 

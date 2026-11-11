@@ -150,8 +150,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Ageben | Cue |
 |---------|--------|-----|
-| *newspaper* | `unonal` | 📰 |
-| *radio* | `arowel` | 📻 |
 | *policy* | `onam` | 📝 from *memo* |
 
 **Review:**
@@ -162,6 +160,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *family* | `uvayal` |
+| *newspaper* | `unonal` |
+| *radio* | `arowel` |
 | *surprise* | `emel` |
 | *write* | `varuyol` |
 | *see* | `vayebel` |

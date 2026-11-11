@@ -115,6 +115,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *luggage* | `elobal` | 🧳 |
 | *dog* | `odozel` | 🐕 |
+| *sleep* | `vezuvel` | 💤 from *sleep* |
 
 **Review:**
 
@@ -130,7 +131,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sit* | `vehohel` |
 | *find* | `vumewel` |
 | *see* | `vayebel` |
-| *sleep* | `vezuvel` |
 
 #### English → Ageben {#beginner-english-to-ageben}
 

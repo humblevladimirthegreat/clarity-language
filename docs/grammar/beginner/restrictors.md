@@ -185,9 +185,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *swim* | `vazuvol` | 🏊 |
-| *sleepy* | `uzemel` | 😪 |
-| *rain* | `erulal` | 🌧️ |
-| *night* | `anurul` | 🌃 |
 | *again* | `herugom` | 🔁 |
 
 **Review:**
@@ -201,6 +198,9 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sit* | `vehohel` |
 | *run* | `veruvol` |
 | *angry* | `onumul` |
+| *sleepy* | `uzemel` |
+| *night* | `anurul` |
+| *rain* | `erulal` |
 
 #### English → Ageben {#beginner-english-to-ageben}
 

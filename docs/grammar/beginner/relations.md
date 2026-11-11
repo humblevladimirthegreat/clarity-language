@@ -115,7 +115,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *hammer* | `ohowel` | 🔨 |
 | *duck* | `adozal` | 🦆 |
-| *walk* | `vowurol` | 🚶 |
 | *like* | `hewem` | 🪞 from *mirror*: the image is of the model |
 | *in-exchange-for* | `heham` | 💱 from *currency-exchange*: the arrows swap one side for the other |
 | *on-behalf-of* | `hanem` | 🪪 from *id*: the card stands as their face |
@@ -137,6 +136,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *haste* | `hadurom` |
 | *run* | `veruvol` |
 | *tell* | `vezuyol` |
+| *walk* | `vowurol` |
 
 #### English → Ageben {#beginner-english-to-ageben}
 

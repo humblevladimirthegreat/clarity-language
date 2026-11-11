@@ -203,6 +203,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *dance* | `vunurol` | 🕺 |
 | *stop* | `vezohul` | 🛑 |
 | *quiet* | `ugowul` | 🔈 |
+| *walk* | `vowurol` | 🚶 |
 | *Egoren* | `egoren` | 🎸 from *guitar*: a dance's name |
 | *Sam* | <code>@&lt;Sam&gt;</code> | a foreign name |
 | *google* | <code>v&lt;google&gt;</code> | a loan verb |
@@ -217,7 +218,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *tell* | `vezuyol` |
 | *write* | `varuyol` |
-| *walk* | `vowurol` |
 | *see* | `vayebel` |
 
 #### English → Ageben {#beginner-english-to-ageben}

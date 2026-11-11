@@ -35,6 +35,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *train* | `edavol` | 🚆 |
 | *blue* | `obulol` | 🔵 |
 | *stand* | `vuzuvel` | 🧍 |
+| *sleepy* | `uzemel` | 😪 |
 
 **Review:**
 
@@ -44,7 +45,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *police* | `ebayol` |
-| *sleepy* | `uzemel` |
 | *very* | `welazem` |
 | *sit* | `vehohel` |
 | *see* | `vayebel` |

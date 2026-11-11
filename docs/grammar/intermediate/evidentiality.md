@@ -322,6 +322,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *cloud* | `ugalal` | ☁️ |
 | *gray* | `agulel` | 🩶 |
+| *radio* | `arowel` | 📻 |
 | *PATTERN* | `thubom` | 🐾 from *paw-prints*: a trail of cases |
 | *CLUES* | `theyom` | 🕵️ from *investigate*: worked out from clues |
 | *DEDUCED* | `thanam` | 📖 from *book*: read out of the premises |
@@ -335,7 +336,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *MEMORY* | `thevum` |
-| *radio* | `arowel` |
 | *rain* | `erulal` |
 | *tell* | `vezuyol` |
 | *see* | `vayebel` |

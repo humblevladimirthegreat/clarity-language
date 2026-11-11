@@ -15,7 +15,7 @@ export const orientation = [
 /** Beginner sittings, grouped into units; the group’s Review is appended in `withReview`. */
 export const beginnerUnits: Unit[] = [
   {
-    text: 'Beginner',
+    text: 'First words and sentences',
     items: [
       { text: 'Phonology', link: '/phonology' },
       { text: 'Word endings', link: '/word-endings' },
@@ -23,37 +23,77 @@ export const beginnerUnits: Unit[] = [
       { text: 'Leaving out who acts', link: '/no-subject' },
       { text: 'Speech moves', link: '/speech-moves' },
       { text: 'Dependents', link: '/dependents' },
+    ],
+  },
+  {
+    text: 'Pointing and describing',
+    items: [
       { text: 'Pronouns', link: '/pronouns' },
       { text: 'Plurality', link: '/plurality' },
       { text: 'Predication', link: '/predication' },
+      { text: 'Knowing', link: '/knowing' },
+      { text: 'Adjectives first', link: '/left-bound-adjectives' },
+    ],
+  },
+  {
+    text: 'Linking and asking',
+    items: [
       { text: 'Joins', link: '/joins' },
       { text: 'Questions', link: '/questions' },
-      { text: 'Hooks', link: '/hooks' },
-      { text: 'Restrictors', link: '/restrictors' },
-      { text: 'Relations', link: '/relations' },
+      { text: 'Clause sequence', link: '/clause-sequence' },
+    ],
+  },
+  {
+    text: 'Why and what for',
+    items: [
       { text: 'Spans', link: '/spans' },
-      { text: 'Numbers', link: '/numbers' },
-      { text: 'Comparatives', link: '/comparatives' },
       { text: 'Causation', link: '/causation' },
       { text: 'Sakes', link: '/sakes' },
-      { text: 'Knowing', link: '/knowing' },
-      { text: 'Role compounds', link: '/roles' },
-      { text: 'Compounds', link: '/compounds' },
-      { text: 'Intention', link: '/intention' },
-      { text: 'Adjectives first', link: '/left-bound-adjectives' },
-      { text: 'Firm and soft', link: '/firm-soft' },
-      { text: 'Extra-noun hooks', link: '/extra-noun-hooks' },
-      { text: "Whose: Azozon's", link: '/social-ties' },
-      { text: 'Here, there, and somewhere', link: '/here-there' },
-      { text: 'Fill-ask jobs', link: '/fill-ask-jobs' },
-      { text: 'Clause sequence', link: '/clause-sequence' },
-      { text: 'Digits and time', link: '/digit-strings' },
-      { text: 'Label seams', link: '/label-seams' },
       { text: 'Fault', link: '/fault' },
       { text: 'Ought for a sake', link: '/ought-for-a-sake' },
-      { text: 'Thanks and sorry', link: '/thanks-and-sorry' },
+    ],
+  },
+  {
+    text: 'Where, when, how often',
+    items: [
+      { text: 'Hooks', link: '/hooks' },
+      { text: 'Restrictors', link: '/restrictors' },
+      { text: 'Extra-noun hooks', link: '/extra-noun-hooks' },
+      { text: 'Here, there, and somewhere', link: '/here-there' },
       { text: 'Already and still', link: '/already-still-yet' },
+    ],
+  },
+  {
+    text: 'Counting and comparing',
+    items: [
+      { text: 'Numbers', link: '/numbers' },
+      { text: 'Comparatives', link: '/comparatives' },
+      { text: 'Digits and time', link: '/digit-strings' },
+    ],
+  },
+  {
+    text: 'Who does what to whom',
+    items: [
+      { text: 'Relations', link: '/relations' },
+      { text: 'Role compounds', link: '/roles' },
+      { text: 'Compounds', link: '/compounds' },
+      { text: "Whose: Azozon's", link: '/social-ties' },
+      { text: 'Label seams', link: '/label-seams' },
+    ],
+  },
+  {
+    text: 'Wanting and being able',
+    items: [
+      { text: 'Intention', link: '/intention' },
       { text: "Can and can't", link: '/can-and-cant' },
+    ],
+  },
+  {
+    text: 'Talking together',
+    items: [
+      { text: 'Firm and soft', link: '/firm-soft' },
+      { text: 'Fill-ask jobs', link: '/fill-ask-jobs' },
+      { text: 'Thanks and sorry', link: '/thanks-and-sorry' },
     ],
   },
 ]
@@ -61,73 +101,153 @@ export const beginnerUnits: Unit[] = [
 /** Beginner sittings, flat, in reading order. */
 export const beginnerLessons: LessonLink[] = beginnerUnits.flatMap((unit) => unit.items)
 
-/** Intermediate sittings, grouped into units, in the same topic order as the Beginner group. */
+/** Intermediate sittings, grouped into units. */
 export const intermediateUnits: Unit[] = [
   {
-    text: 'Intermediate',
+    text: 'Names and spelling',
     items: [
       { text: 'Word shape', link: '/phonotactics' },
       { text: 'Letter names', link: '/letter-names' },
       { text: 'Names and titles', link: '/proper-names' },
       { text: 'Place-name roots', link: '/place-name-roots' },
+      { text: 'Conversation length', link: '/conversation-length' },
+    ],
+  },
+  {
+    text: 'Fuller sentences',
+    items: [
       { text: 'Longer chains', link: '/longer-chains' },
       { text: 'Very and slightly', link: '/very-and-slightly' },
+      { text: 'How a label holds', link: '/label-reach' },
+    ],
+  },
+  {
+    text: 'Conversation craft',
+    items: [
       { text: 'Turn words, further', link: '/more-turn-words' },
       { text: 'Frankly and to be clear', link: '/speech-manner' },
       { text: 'Tone marks', link: '/tone-marks' },
+      { text: 'Yes, no, and not that', link: '/polar-inventory' },
+      { text: 'Who, which, and any', link: '/fill-ask-roles' },
+    ],
+  },
+  {
+    text: 'Across sentences',
+    items: [
       { text: 'Linking sentences', link: '/sentence-linkers' },
       { text: 'Hinges on a degree or a noun', link: '/more-hinges' },
       { text: 'Stand-in vowels', link: '/stand-in-vowels' },
+      { text: 'Topic', link: '/topic' },
+    ],
+  },
+  {
+    text: 'Keeping track of who',
+    items: [
       { text: 'Resume, further', link: '/resume-sense' },
       { text: 'Tag pronouns', link: '/tag-pronouns' },
-      { text: 'Topic', link: '/topic' },
       { text: 'Groups, further', link: '/collectives' },
-      { text: 'How a label holds', link: '/label-reach' },
+    ],
+  },
+  {
+    text: 'Lists of things',
+    items: [
       { text: 'What a list word reaches', link: '/list-structure' },
       { text: 'Rank joins', link: '/rank-joins' },
       { text: 'Set joins', link: '/set-joins' },
       { text: 'Talking about a whole kind', link: '/universals-domains' },
+    ],
+  },
+  {
+    text: 'Joining actions',
+    items: [
       { text: 'Joins on verbs and stances', link: '/verb-and-stance-joins' },
       { text: 'List verbs', link: '/list-verbs' },
       { text: 'With and without', link: '/join-relations' },
-      { text: 'Yes, no, and not that', link: '/polar-inventory' },
-      { text: 'Who, which, and any', link: '/fill-ask-roles' },
-      { text: 'Hooks inside the clause', link: '/in-clause-hooks' },
-      { text: 'In a crisis, out of debt', link: '/abstract-landmarks' },
-      { text: 'In fact and anyway', link: '/discourse-hooks' },
-      { text: 'Exclusive and ranked times', link: '/more-occasions' },
-      { text: 'Part of, made of, from', link: '/of-relations' },
-      { text: 'Exactly like', link: '/exactly-like' },
-      { text: 'Between, across, and around', link: '/locative-relations' },
-      { text: 'Spans as words', link: '/spans-as-words' },
-      { text: 'Inside a quote', link: '/quote-contents' },
-      { text: 'Scope islands', link: '/scope-islands' },
-      { text: 'Number markers and endings', link: '/number-markers' },
-      { text: 'A number in other roles', link: '/number-roles' },
-      { text: 'How many and how big', link: '/digitless-exponents' },
-      { text: 'Ranges', link: '/ranges' },
-      { text: 'Measures and percent', link: '/measures-and-percent' },
-      { text: 'Ranking on any scale', link: '/comparative-arity' },
+    ],
+  },
+  {
+    text: 'Causes and stakes',
+    items: [
       { text: 'Because and iff', link: '/because-and-iff' },
       { text: 'CAUSE', link: '/cause' },
       { text: 'Doing it for a sake', link: '/for-a-sake' },
+    ],
+  },
+  {
+    text: 'Feelings and choices',
+    items: [
       { text: 'Feelings', link: '/feelings' },
       { text: 'Permission and consent', link: '/permission-consent' },
+      { text: 'Try', link: '/try' },
+    ],
+  },
+  {
+    text: 'Quoting and mentioning',
+    items: [
+      { text: 'Spans as words', link: '/spans-as-words' },
+      { text: 'Inside a quote', link: '/quote-contents' },
+      { text: 'Scope islands', link: '/scope-islands' },
+    ],
+  },
+  {
+    text: 'Number forms',
+    items: [
+      { text: 'Number markers and endings', link: '/number-markers' },
+      { text: 'A number in other roles', link: '/number-roles' },
+      { text: 'How many and how big', link: '/digitless-exponents' },
+    ],
+  },
+  {
+    text: 'How you know',
+    items: [
       { text: 'How you know', link: '/evidentiality' },
       { text: 'Whose view', link: '/holder' },
-      { text: 'Contrary to', link: '/contrary-to' },
-      { text: 'Residue and former', link: '/residue-and-former' },
-      { text: 'Than planned, enough, too', link: '/bars' },
-      { text: 'Dated channel', link: '/dated-channel' },
-      { text: 'Many and few', link: '/vague-amounts' },
-      { text: 'It turns out', link: '/mirative' },
-      { text: 'As if', link: '/notional' },
+    ],
+  },
+  {
+    text: 'Setting the scene',
+    items: [
+      { text: 'Hooks inside the clause', link: '/in-clause-hooks' },
+      { text: 'In fact and anyway', link: '/discourse-hooks' },
+      { text: 'Exclusive and ranked times', link: '/more-occasions' },
+      { text: 'Ranges', link: '/ranges' },
+    ],
+  },
+  {
+    text: 'Places and viewpoint',
+    items: [
+      { text: 'In a crisis, out of debt', link: '/abstract-landmarks' },
+      { text: 'Between, across, and around', link: '/locative-relations' },
       { text: 'Left, right, and facing', link: '/viewpoint' },
       { text: 'Role parts', link: '/role-parts' },
-      { text: 'Before, after, while, and like', link: '/same-role-words' },
-      { text: 'Conversation length', link: '/conversation-length' },
       { text: 'Which compound', link: '/compound-families' },
-      { text: 'Try', link: '/try' },
+    ],
+  },
+  {
+    text: 'Likeness and connection',
+    items: [
+      { text: 'Part of, made of, from', link: '/of-relations' },
+      { text: 'Exactly like', link: '/exactly-like' },
+      { text: 'Before, after, while, and like', link: '/same-role-words' },
+    ],
+  },
+  {
+    text: 'Measuring and ranking',
+    items: [
+      { text: 'Measures and percent', link: '/measures-and-percent' },
+      { text: 'Ranking on any scale', link: '/comparative-arity' },
+      { text: 'Than planned, enough, too', link: '/bars' },
+      { text: 'Many and few', link: '/vague-amounts' },
+    ],
+  },
+  {
+    text: "Surprise and what's not so",
+    items: [
+      { text: 'Contrary to', link: '/contrary-to' },
+      { text: 'Residue and former', link: '/residue-and-former' },
+      { text: 'Dated channel', link: '/dated-channel' },
+      { text: 'It turns out', link: '/mirative' },
+      { text: 'As if', link: '/notional' },
       { text: 'Want and decide', link: '/want-and-decide' },
     ],
   },
@@ -136,30 +256,50 @@ export const intermediateUnits: Unit[] = [
 /** Intermediate sittings, flat, in reading order. */
 export const intermediateLessons: LessonLink[] = intermediateUnits.flatMap((unit) => unit.items)
 
-/** Advanced sittings, grouped into units, in the same topic order as the earlier groups. */
+/** Advanced sittings, grouped into units. */
 export const advancedUnits: Unit[] = [
   {
-    text: 'Advanced',
+    text: 'Fine shades of knowing',
     items: [
-      { text: 'Voicing Ageben', link: '/singability' },
-      { text: 'Stand-in words', link: '/stand-in-roles' },
-      { text: 'Nested dependents', link: '/nested-dependents' },
-      { text: 'Join limits', link: '/join-limits' },
-      { text: 'Named phrases', link: '/named-phrases' },
-      { text: 'Cite plus a hook', link: '/hook-compounds' },
-      { text: 'Hook plus a join', link: '/hooked-joins' },
       { text: 'Whose now', link: '/as-of' },
-      { text: 'Closing and nesting spans', link: '/span-nesting' },
-      { text: 'Stacked markers, from the end first', link: '/stacked-markers' },
-      { text: 'Infinity, zero, and hyperbole', link: '/special-values' },
       { text: 'Every bar', link: '/stance-bars' },
       { text: 'Mood on one adjective', link: '/universality' },
       { text: 'Usually vs must', link: '/usually-vs-must' },
-      { text: 'Root tails', link: '/root-tails' },
+    ],
+  },
+  {
+    text: 'Number values',
+    items: [
+      { text: 'Stacked markers, from the end first', link: '/stacked-markers' },
+      { text: 'Infinity, zero, and hyperbole', link: '/special-values' },
+    ],
+  },
+  {
+    text: 'Number-built words',
+    items: [
       { text: 'Initials', link: '/initials' },
       { text: 'Open and named ranges', link: '/open-ranges' },
       { text: 'Generations', link: '/generations' },
       { text: 'Numeric prefixes', link: '/numeric-derivation' },
+    ],
+  },
+  {
+    text: 'Building words and voice',
+    items: [
+      { text: 'Voicing Ageben', link: '/singability' },
+      { text: 'Cite plus a hook', link: '/hook-compounds' },
+      { text: 'Root tails', link: '/root-tails' },
+    ],
+  },
+  {
+    text: 'Deep structure',
+    items: [
+      { text: 'Stand-in words', link: '/stand-in-roles' },
+      { text: 'Nested dependents', link: '/nested-dependents' },
+      { text: 'Join limits', link: '/join-limits' },
+      { text: 'Named phrases', link: '/named-phrases' },
+      { text: 'Hook plus a join', link: '/hooked-joins' },
+      { text: 'Closing and nesting spans', link: '/span-nesting' },
     ],
   },
 ]

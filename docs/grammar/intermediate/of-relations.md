@@ -85,7 +85,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *station* | `awahol` | 🚉 |
-| *house* | `ohehal` | 🏠 |
 | *hand* | `ahebal` | ✋ |
 | *contents* | `gadam` | 🫙 from *jar*: the vessel named by what it stores |
 | *origin* | `gaham` | 🗾 from *country*: where it comes from |
@@ -99,6 +98,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *ticket* | `odenol` |
 | *luggage* | `elobal` |
+| *house* | `ohehal` |
 | *teapot* | `edodal` |
 | *wine* | `owudal` |
 | *bread* | `obodel` |

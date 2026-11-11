@@ -195,7 +195,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *construct* | `voguyol` | 👷 from *construct* |
 | *construction* | `ugohul` | 🚧 |
 | *helmet* | `umobul` | 🪖 |
-| *sleep* | `vezuvel` | 💤 from *sleep* |
 
 **Review:**
 
@@ -211,6 +210,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *scream* | `veyamul` |
 | *see* | `vayebel` |
 | *run* | `veruvol` |
+| *sleep* | `vezuvel` |
 
 #### English → Ageben {#beginner-english-to-ageben}
 

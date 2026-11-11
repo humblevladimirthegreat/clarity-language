@@ -250,7 +250,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Ageben | Cue |
 |---------|--------|-----|
-| *pour* | `vowuvul` | 🫗 |
 | *table* | `edohel` | 𓊲 |
 | *family* | `uvayal` | 👪 |
 | *teapot* | `edodal` | 🫖 |
@@ -268,6 +267,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *wine* | `owudal` |
 | *sandwich* | `edal` |
 | *sit* | `vehohel` |
+| *pour* | `vowuvul` |
 
 #### English → Ageben {#beginner-english-to-ageben}
 

@@ -195,6 +195,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *wind* | `awulol` | 🌬️ |
 | *calendar* | `agorol` | 📅 |
 | *thunderstorm* | `anulul` | ⛈️ |
+| *night* | `anurul` | 🌃 |
 | *autonomy* | `unal` | 🗳️ from *ballot*: voting is choosing for yourself |
 | *competence* | `uwal` | 🧰 from *tool*: the kit that gets things working |
 | *understanding* | `owel` | 💡 from *lightbulb*: the light goes on when it makes sense |
@@ -214,7 +215,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *bucket* | `obowal` |
 | *cookie* | `ugedel` |
 | *rain* | `erulal` |
-| *night* | `anurul` |
 | *cook* | `vuguyol` |
 | *sing* | `vozuyel` |
 

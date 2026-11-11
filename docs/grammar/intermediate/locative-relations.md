@@ -96,7 +96,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *bridge* | `ohol` | 🌉 |
-| *water* | `owulal` | 🚰 |
+| *house* | `ohehal` | 🏠 |
 
 **Review:**
 
@@ -106,7 +106,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *train* | `edavol` |
-| *house* | `ohehal` |
+| *water* | `owulal` |
 | *walk* | `vowurol` |
 | *run* | `veruvol` |
 | *sit* | `vehohel` |

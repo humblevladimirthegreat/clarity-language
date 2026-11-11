@@ -30,6 +30,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a stairwell
 
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *rain* | `erulal` | 🌧️ |
+
 **Review:**
 
 | English | Ageben |
@@ -41,6 +47,9 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sit* | `vehohel` |
 | *punch* | `vabuvul` |
 | *scream* | `veyamul` |
+| *window* | `uwohel` |
+| *open* | `vohel` |
+| *see* | `vayebel` |
 
 #### English → Ageben {#beginner-english-to-ageben}
 
@@ -66,6 +75,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 `zazozon vabuvul xan zalazun veyamul.`
 
 [z-Azozon | v-punch | x-and-then | z-Alazun | v-scream]
+:::
+
+**4.** *Ahelan opens the window, then Azozon sees the rain.*
+
+::: details Show answer
+`zahelan duwohel vohel xan zazozon derulal vayebel.`
+
+[z-Ahelan | d-window | v-open | x-and-then | z-Azozon | d-rain | v-see]
 :::
 
 #### Ageben → English {#beginner-ageben-to-english}
