@@ -203,68 +203,113 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
-| *competence* | `uwal` |
+| *sake* | `udal` |
 | *relatedness* | `awel` |
+| *physical* | `obal` |
+| *autonomy* | `unal` |
 | *stimulus* | `goyom` |
+| *ocean* | `wohalal` |
 | *sit* | `vehohel` |
 | *sleep* | `vezuvel` |
 | *walk* | `vowurol` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
-**1.** *I feel waves of resentment at the hug.*
+**1.** *Azozon sits down, and I feel connected and want to tell someone.*
 
 ::: details Show answer
-`zahuyal wawethumer goyom.`
+`zazozon vehohel thawethamoem.`
 
-z-hug | [w-relatedness-unmet-modifiable-AIMED-FLEETING | g-stimulus]
+z-Azozon | v-sit | th-relatedness-met-any-term-TOWARD-OPEN
 :::
 
-**2.** *Hopefully Azozon walks.*
+**2.** *The hug took away my say, and I want to push back against Alazun.*
 
 ::: details Show answer
-`zazozon thuwuyom vowurol.`
+`zahuyal wunathumuom goyom blalazun.`
 
-z-Azozon | th-hope | v-walk
+z-hug | [[w-autonomy-unmet-modifiable-RESISTING-OPEN | g-stimulus] | bl-Alazun]
 :::
 
-**3.** *I'm anxious.*
+**3.** *For a moment the hug fills me completely with connection, and I want to stay in it.*
 
 ::: details Show answer
-`thuwathuruer.`
+`zahuyal wohalal wawethamar goyom.`
 
-th-competence-unmet-passing-UNPLACED-FLEETING
+z-hug | [w-ocean | w-relatedness-met-any-term-STAYING-FLEETING | g-stimulus]
+:::
+
+**4.** *Azozon has lost someone for good, and I'm sitting with that.*
+
+::: details Show answer
+`thawethulam blazozon.`
+
+[th-relatedness-unmet-irreversible-STAYING-OPEN | bl-Azozon]
+:::
+
+**5.** *I may lose connection, and I want to keep Alazun calm.*
+
+::: details Show answer
+`thomam thawethumaom blalazun.`
+
+th-MAY | [th-relatedness-unmet-modifiable-PLACATING-OPEN | bl-Alazun]
+:::
+
+**6.** *Hopefully Alazun sleeps.*
+
+::: details Show answer
+`zalazun thuwuyom vezuvel.`
+
+z-Alazun | th-hope | v-sleep
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zahuyal wawethumel goyom blalazun.`
+**1.** `zahuyal wawethumael goyom.`
 
 ::: details Show answer
-z-hug | [[w-relatedness-unmet-modifiable-AIMED-SETTLED | g-stimulus] | bl-Alazun]
+z-hug | [w-relatedness-unmet-modifiable-HELD-SETTLED | g-stimulus]
 
-*I resent Alazun over the hug, holding it in.*
+*The hug leaves me feeling cut off, and I've been keeping a lid on it for a while.*
 :::
 
-**2.** `zalazun vehohel thawethamar.`
+**2.** `thobathumuer blazozon.`
 
 ::: details Show answer
-z-Alazun | v-sit | th-relatedness-met-any-term-STAYING-FLEETING
+[th-physical-unmet-modifiable-UNPLACED-FLEETING | bl-Azozon]
 
-*I'm moved that Alazun sits.*
+*Azozon is hurting, and for a moment I can't tell what I want to do.* (the hurt is Azozon's; the feeling is mine)
 :::
 
-**3.** `zazozon thuwuyom vezuvel.`
+**3.** `zalazun vowurol thawethumuar.`
 
 ::: details Show answer
-z-Azozon | th-hope | v-sleep
+z-Alazun | v-walk | th-relatedness-unmet-modifiable-RELEASING-FLEETING
 
-*Hopefully Azozon is asleep.*
+*Alazun walks, and for a moment I miss the connection and want to let it go.*
+:::
+
+**4.** `thudathumoel.`
+
+::: details Show answer
+th-sake-unmet-modifiable-TOWARD-SETTLED
+
+*Something is off, and I've wanted someone with me for a while.*
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Hopefully Azozon sits.* `zazozon thuwuyom vehohel.` or `zazozon huwuyom vehohel.`
+**1.** *Alazun is lonely, and I'm frozen.* `thawethumaem blalazun.` or `thawethumem blalazun.`
+
+::: details Show answer
+`thawethumaem blalazun.`
+
+[th-relatedness-unmet-modifiable-HELD-OPEN | bl-Alazun]
+
+After `ae` the `bl-` word says whose stake it is, so the missing connection is Alazun's. After `e` it is the landmark: your own connection is missing, and you want to take it up with Alazun.
+:::
+
+**2.** *Hopefully Azozon sits.* `zazozon thuwuyom vehohel.` or `zazozon huwuyom vehohel.`
 
 ::: details Show answer
 `zazozon thuwuyom vehohel.`
@@ -276,14 +321,14 @@ z-Azozon | th-hope | v-sit
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *I'm moved.* <!-- lint: error -->`zalazun thawethamar.`
+**1.** *Azozon is lonely, and I want to go to them.* <!-- lint: error -->`thawethumoem blazozon.`
 
 ::: details Show answer
-`thawethamar.`
+`thawethum blazozon. thudathumoem blazozon.`
 
-th-relatedness-met-any-term-STAYING-FLEETING
+[th-relatedness-unmet-modifiable | bl-Azozon] . [th-sake-unmet-modifiable-TOWARD-OPEN | bl-Azozon]
 
-A noun before the feeling is an existence clause, so that would be *moved that Alazun is here*.
+After `oe` the `bl-` word is the landmark, so one word says your own connection is missing. Say Azozon's stake first with a plain sake word, then your own feeling.
 :::
 
 ## See also
