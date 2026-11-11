@@ -149,9 +149,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 <!-- generated: overlays pos=h skip=22 take=22 -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `helol` | NOT-YET phasal (the change is expected but has not happened); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `helom` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `helor` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `hen` | join-relation exclusively for (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `henam` | AS-OF clause hinge (asserted whose-now / dated ledger) | [As-of (whose now)](/as-of#as-of) | A |
 | `henar` | AS-OF clause hinge (asserted whose-now / dated ledger) resume | [As-of (whose now)](/as-of#as-of) | A |
@@ -171,6 +168,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](/try#try) | I |
 | `huan` | join-relation excluding (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `huen` | join-relation barring anything but (adverb) | [Join-relations](/join-relations#join-relations) | I |
+| `hulom` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
+| `hun` | join-relation refusing (adverb) | [Join-relations](/join-relations#join-relations) | I |
+| `hunom` | AS-OF clause hinge (unasserted whose-now / placeholder now) | [As-of (whose now)](/as-of#as-of) | A |
 <!-- /generated -->
 
 <PageBreak />
@@ -180,9 +180,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 <!-- generated: overlays pos=h skip=44 -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `hulom` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
-| `hun` | join-relation refusing (adverb) | [Join-relations](/join-relations#join-relations) | I |
-| `hunom` | AS-OF clause hinge (unasserted whose-now / placeholder now) | [As-of (whose now)](/as-of#as-of) | A |
 | `hunor` | AS-OF clause hinge (unasserted whose-now / placeholder now) resume | [As-of (whose now)](/as-of#as-of) | A |
 | `huon` | join-relation deprioritizing (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `huvahum` | BY clause hinge (deadline: done at or before the endpoint) | [Because, although (hinges)](/dependents#hinges) | B |
@@ -219,8 +216,8 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `thebar` | reported evidential with weak evidence (rumor) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thebem` | ONLY-IF clause hinge (necessary condition) | [Only if](/causation#only-if) | B |
 | `thehom` | IFF clause hinge (biconditional) | [Only if](/causation#only-if) | B |
-| `themel` | mirative mood overturning a firm expectation | [Mirative (themem)](/mirative#mirative) | I |
-| `themem` | mirative mood (newly found out and not expected) | [Mirative (themem)](/mirative#mirative) | I |
+| `thelol` | NOT-YET phasal (the change has not happened; the speaker expects it); -l firmly expected: but it will | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `thelom` | NOT-YET phasal (the change has not happened; the speaker expects it); -m expected | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 <!-- /generated -->
 
 <PageBreak />
@@ -230,6 +227,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 <!-- generated: overlays pos=th skip=22 take=22 -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
+| `thelor` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `themel` | mirative mood overturning a firm expectation | [Mirative (themem)](/mirative#mirative) | I |
+| `themem` | mirative mood (newly found out and not expected) | [Mirative (themem)](/mirative#mirative) | I |
 | `themer` | mirative mood against a loose expectation | [Mirative (themem)](/mirative#mirative) | I |
 | `thenam` | AS-OF stance hinge (asserted whose-now / dated ledger) | [Stance as-of](/as-of#stance-as-of) | A |
 | `thenar` | AS-OF stance hinge (asserted whose-now / dated ledger) resume | [Stance as-of](/as-of#stance-as-of) | A |
@@ -249,9 +249,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
 | `thohem` | IF clause hinge (one-way conditional) | [If](/causation#if) | B |
 | `thomal` | may mood find-out follow-up (I'll / let's find out) | [Follow-up endings (MAY)](/knowing#follow-up-endings-may) | B |
-| `thomam` | may mood (could be; default) | [MAY](/knowing#may) | B |
-| `thomar` | may mood who-knows follow-up (leave unsettled; may never know) | [Follow-up endings (MAY)](/knowing#follow-up-endings-may) | B |
-| `thovam` | SO-THAT clause hinge (the speaker's aim; intended outcome; NP for-goal) | [Because, although (hinges)](/dependents#hinges) | B |
 <!-- /generated -->
 
 <PageBreak />
@@ -261,6 +258,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 <!-- generated: overlays pos=th skip=44 -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
+| `thomam` | may mood (could be; default) | [MAY](/knowing#may) | B |
+| `thomar` | may mood who-knows follow-up (leave unsettled; may never know) | [Follow-up endings (MAY)](/knowing#follow-up-endings-may) | B |
+| `thovam` | SO-THAT clause hinge (the speaker's aim; intended outcome; NP for-goal) | [Because, although (hinges)](/dependents#hinges) | B |
 | `thubol` | pattern evidential with strong evidence (well-established pattern) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thubom` | pattern evidential (from trail of cases) | [Evidentiality](/evidentiality#evidentiality) | I |
 | `thubor` | pattern evidential with weak evidence (a few cases) | [Evidence strength](/evidentiality#evidence-strength) | I |
@@ -312,8 +312,8 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `webam` | reported evidential (hearsay / said or written by someone else / reportative) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `webar` | reported evidential with weak evidence (rumor) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `welam` | former-climate mood (not the climate claimed now) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
-| `welol` | NOT-YET phasal (the change is expected but has not happened); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `welom` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `welol` | NOT-YET phasal (the change has not happened; the speaker expects it); -l firmly expected: but it will | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `welom` | NOT-YET phasal (the change has not happened; the speaker expects it); -m expected | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `welor` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `wenam` | AS-OF clause hinge (asserted whose-now / dated ledger) | [As-of (whose now)](/as-of#as-of) | A |
 | `wenar` | AS-OF clause hinge (asserted whose-now / dated ledger) resume | [As-of (whose now)](/as-of#as-of) | A |
