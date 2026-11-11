@@ -52,6 +52,8 @@ The **orchestrator** is the Claude Code session the user talks to. It reads the 
 
 Carry out a proposal in the orchestrator's session when it fits there: a few pages, one cluster of related changes, and enough room to hold the rules, the pages, and the diffs without the context being compacted.
 
+Within a subagent run, the orchestrator also does a small unit itself: a few edits on one page it can read in one slice. A subagent's cold start (about 20k tokens) costs more than that slice carried for the rest of the phase. A unit that needs a fresh context by rule (an audit, a checkpoint writer) still gets a subagent. The plan marks such units *orchestrator*.
+
 Use subagents when any of these holds:
 
 - The work spans many pages in clusters that share little.
@@ -106,7 +108,7 @@ The agent files under `.claude/agents/` (`proposal-worker`, `checkpoint-writer`)
    - the proposal's rule digest (at most about 40 lines), pasted
    - links to the full rule sections it may open if the digest does not settle a question
 
-   It does not tell the subagent to read the whole proposal. Each proposal that runs through subagents holds one reusable digest, which the orchestrator pastes into every prompt. The digest always carries this standing line, because nothing else makes a running subagent stop:
+   It does not tell the subagent to read the whole proposal. Each proposal that runs through subagents holds one reusable digest, which the orchestrator pastes into every prompt. When the digest says how to check forms, it names `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …` (one batched call, a gloss or an error per input), and keeps `--llm-prompt` for working out what a sentence means: that prompt runs to pages per call ([reading Ageben](read-ageben.md#parsing)). The digest always carries this standing line, because nothing else makes a running subagent stop:
 
    > At about 25 tool calls, check what is left. If it is small, finish the item, even past 25 calls. If a significant amount is left (more than a few edits, or pages you have not read yet), stop at a clean point, leave the tree green, and report: done, left (as steps), files touched.
 
@@ -125,7 +127,7 @@ The agent files under `.claude/agents/` (`proposal-worker`, `checkpoint-writer`)
     - Read each report and `git diff --stat`, not whole diffs. Open a hunk only when a report flags it, a gate fails, or the stat shows a file outside the item's list.
     - Trim command output (`2>&1 | tail -30`).
     - Run `verify` once per unit, before the commit. Never repeat a green run: when the subagent's last act was a passing `verify` and nothing has changed since, commit on that result. Rerun only after the orchestrator's own edits (such as `AGENTS.md` Owns lines).
-12. **Ask for short, fixed-field reports**: what moved (with ids), files touched as a count, registry edits, `AGENTS.md` Owns lines to change, the `verify` line, skips with reasons, **left:** the steps not done when the subagent stopped at its turn cap, and **inefficient:** anything about the run that looked wasteful ([AGENTS.md](../../../AGENTS.md), end of run).
+12. **Ask for short, fixed-field reports** that hold only what the orchestrator acts on: what moved (with ids), files touched as a count, registry edits, `AGENTS.md` Owns lines to change, the `verify` line, skips with reasons, lexicon choices, anything the orchestrator must run or fix, **left:** the steps not done when the subagent stopped at its turn cap, and **inefficient:** anything about the run that looked wasteful ([AGENTS.md](../../../AGENTS.md), end of run). *Done* is one line. The report never narrates edits page by page, restates the brief, or lists file names: the diff and `git status` hold those. Keep it to about 150 words, plus any forms, ids or worklist a later unit is briefed from. Every later orchestrator turn pays for the report again.
 13. **Pay for a fresh context where it buys something**: a new set of pages, an independent audit, or a rule about what a writer may have read. Scope an audit to what the proposal changed, plus close neighbors.
 14. **Send failures back to the owner.** When a gate fails, send it to the subagent that made the change, if it is still under the turn and token limits in step 1. Otherwise start a fresh subagent with the item, the failing `verify` lines, and the diff stat.
 15. **Keep one writer for `AGENTS.md`.** Subagents report the Owns-line changes; the orchestrator applies them at the end.
@@ -139,7 +141,8 @@ A proposal that runs through subagents also states, in its plan:
 - the units, with IDs, their order, their items, and for each the agent type (`proposal-worker` unless a more specific agent fits, [step 6](#running-with-subagents)), the Agent tool `model` value (`opus`, `sonnet`, `haiku`) and reasoning effort (one fresh subagent per unit; a unit is one or two items)
 - the files each unit may edit
 - the rule digest every subagent gets pasted, with its report format and the standing stop line from [step 2](#running-with-subagents)
-- the gates: `npm run verify -- --allow-generate` against the phase's baseline between items, and the final gate (a clean `npm run build` once nothing is left on a **generate** row)
+- the gates: `npm run verify -- --allow-generate` against the phase's baseline between items, and the final gate (a clean `npm run build` once nothing is left on a **generate** row). A full `npm run verify` that passes against an empty baseline runs the build and the tests, so it is the final gate; don't run `npm run build` or `npm test` again after it.
+- the recall gate, for a phase that edits `say-*.md`, `english.md` or `src/english-helper/`: `npm run english-helper-recall -- --check` at the phase's end, with its result on the Status line. A drop is then owned by the phase that caused it ([English helper](english-helper.md#regression-net)).
 - the commit plan: how many commits, and their messages ([commits](#commits))
 
 ## Commits

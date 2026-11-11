@@ -17,6 +17,7 @@ You carry out one unit of an Ageben proposal for an orchestrator. Your brief is 
 - Use the tools the brief names for moves, link retargets, and other bulk changes, never hand edits.
 - Choose how to edit by the shape of the change. Use the Edit tool when the text being replaced is short: a line, a sentence, a table row. Use a script when whole sections are cut or replaced, or the same change repeats in many places: find each section by its headings, so the script never reproduces the old text, and assert that each anchor matches exactly once. Write the script to a file under `tmp/` with the Write tool and run the file. Never pass the script inline (`node -e`, `python -c`, a heredoc): shell quoting breaks it, and each fix-up is another turn.
 - Trim command output (`2>&1 | tail -30`). Never paste build output into your context.
+- Check that Ageben forms parse with one batched call, `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …`: it prints a gloss or a one-line error per input. Use `--llm-prompt` only to work out what a sentence means; it prints a long prompt.
 - Check your work the way the brief says. If it says nothing and you edited files, run `npm run verify -- --allow-generate` (Bash timeout 300000 ms) at the end, `--fast` along the way. The orchestrator saved the baseline; do not re-save it. On a FAIL, read only the new lines, or grep `tmp/verify-last.log`.
 
 ## Stop
@@ -25,9 +26,10 @@ At about 25 tool calls, check what is left. If it is small, finish. If a lot is 
 
 ## Report
 
-Use the format the brief asks for. If it gives none, report in at most 10 lines:
+Use the format the brief asks for. If it gives none, report in at most 10 lines. Either way, report only what the orchestrator acts on, in about 150 words: never narrate edits page by page, restate the brief, or list file names, since the diff holds those. Forms, ids or a worklist that a later unit needs may go past the limit.
 
-- Done: what you did, with any moved ids
+- Done: one line, with any moved ids
+- Lexicon choices, and anything the orchestrator must run or fix (such as regenerating blocks)
 - Files touched: a count
 - Registry edits and `AGENTS.md` lines to change
 - Check: the verify line, or what you checked instead
