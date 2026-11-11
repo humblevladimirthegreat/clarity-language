@@ -52,11 +52,12 @@ Never a seed:
 
 ### Labels and senses
 
-- **Concrete label:** the English word people use for the thing, not the Unicode name (*cupid*, not *heart with arrow*; *villain*, not *angry face with horns*). Flag rows follow [flag rows](#flag-rows). `convert-word` needs a CMU pronunciation for the label. Add a missing one to `CMU_OVERRIDES` in [`src/cmu-dict.ts`](../../../src/cmu-dict.ts) rather than bending the label.
+- **Concrete label:** the English word people use for the thing, not the Unicode name (*cupid*, not *heart with arrow*; *tongue-out*, not *face with tongue*). Flag rows follow [flag rows](#flag-rows). `convert-word` needs a CMU pronunciation for the label. Add a missing one to `CMU_OVERRIDES` in [`src/cmu-dict.ts`](../../../src/cmu-dict.ts) rather than bending the label.
 - **Multiword labels and glosses:** join the words with hyphens, never spaces: *gas-pump*, *black-pepper*, *wedding-dress*. This holds for concrete labels, compound glosses and aliases alike.
 - **Units:** a unit (*mile*, *foot*, *pound*), imperial ones included, is an abstract sense on an existing root (*mile* on `unoba`), not a new row.
 - **Kin pairs:** a gendered kin pair (*mother* / *father*) is allowed, unlike gendered profession variants.
 - **Abstract senses:** never repeat another row's concrete or abstract. When a new row takes over a sense, move it off the old row.
+- **No unstated mind, no bare verdict:** no sense, lemma or alias states someone else's unstated mind or adds only a verdict to a describable act or kind ([D-75](../design-decisions.md#by-design)).
 - **Aliases may repeat:** an `english_aliases` cue may also be another row's alias or sense. A cue that fits several roots lists all of them, so lexicon search finds each one. Within a row, an alias still never repeats that row's own concrete or abstract.
 
 ### No English puns

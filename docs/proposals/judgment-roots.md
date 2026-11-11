@@ -1,6 +1,6 @@
 # Judgment roots
 
-**Status:** ready to implement. Nothing implemented yet. All seven [decisions](#decisions) settled by the user on 2026-11-11, each taking the recommended option. Two independent phases, **Phase 1** (lexicon) and **Phase 2** (expectation words, a grammar change); either may run first.
+**Status:** Phase 1 in progress: Unit A done (2026-11-11). The user approved all seven Unit A Findings rows and settled `eguma` as *money-hunger* (option b) on 2026-11-11. All seven [decisions](#decisions) settled by the user on 2026-11-11, each taking the recommended option. Two independent phases, **Phase 1** (lexicon) and **Phase 2** (expectation words, a grammar change); either may run first.
 
 **Related:** [lexicon-published.csv](../../data/lexicon-published.csv), [lexicon-compounds.csv](../../data/lexicon-compounds.csv), [design-decisions.md](../meta/design-decisions.md) (D-16, D-40, D-46), [lexicon.md](../meta/procedures/lexicon.md), [glosses.md](../meta/glosses.md), [label-seams.md](../grammar/beginner/label-seams.md), [say-reasons.md](../grammar/say-reasons.md), [say-people-places.md](../grammar/say-people-places.md), [english.md](../grammar/english.md), [purpose.md](../grammar/purpose.md), [feature-criteria.md](../meta/feature-criteria.md), [`scripts/regloss-docs.ts`](../../scripts/regloss-docs.ts). Phase 2: [lexicon-overlays.csv](../../data/lexicon-overlays.csv), [dependents.md](../grammar/beginner/dependents.md), [already-still-yet.md](../grammar/beginner/already-still-yet.md), [because-and-iff.md](../grammar/intermediate/because-and-iff.md), [contrary-to.md](../grammar/intermediate/contrary-to.md), [residue-and-former.md](../grammar/intermediate/residue-and-former.md), [universality.md](../grammar/advanced/universality.md), [unassigned-reserved.md](../meta/unassigned-reserved.md), [`src/parse/enforce.ts`](../../src/parse/enforce.ts), [`src/parse/constructions.ts`](../../src/parse/constructions.ts), [`src/parse/invalid-forms.test.ts`](../../src/parse/invalid-forms.test.ts).
 
@@ -69,13 +69,14 @@ From a keyword sweep of the `mind`, `person` and `doing` rows. Unit A completes 
 | `anemu` | 💢 | anger / offense; *crime* | T2 (*crime*) | Drop *crime*. Restate *offense* as the offended person's sense of being wronged, a feeling owned like any other. |
 | `enemu` | 🤕 | injured / harm; … *abuse* … | T2 (*abuse*) | Drop *abuse*. |
 | `onumu` | 😠 | angry / hostility; *hate*, *aggressive* | T2 (*aggressive* is a trait label) | Drop *aggressive*. |
-| `umuyu` | 🖕 | middle-finger / contempt | T1 (*contempt*: someone else's stance) | Abstract *defiance* (an open refusal others see); contempt is a holder claim. |
+| `umuyu` | 🖕 | middle-finger / contempt | T1 (*contempt*: someone else's stance) | Abstract *defiance* (an open refusal others see); contempt is a holder claim. ✊ `ovebe` *fist* moves from *defiance* to *resistance*. |
 | `ezozu` | 🐍 | snake / treachery ("snake in the grass") | T1 (*treachery*: a hidden plan to betray), T2 | Abstract *ambush* (an attack from hiding), the observable core of the idiom. |
 | `ozezu` | 🦂 | scorpion / betrayal ("stings the hand that feeds") | T2 (*betrayal*: a trust broken, bar unnamed) | Abstract *broken promise* (a said promise not kept, as in the scorpion and the frog); the bar is the promise. |
-| `ubuda` | 🧈 | butter / flattery ("butter someone up") | T1 (*flattery*: praise not meant, or aimed at a favor) | Abstract *praise* (warm words said about someone); whether meant is a holder claim. |
+| `ubuda` | 🧈 | butter / flattery ("butter someone up") | T1 (*flattery*: praise not meant, or aimed at a favor) | Abstract *compliment* (warm words said to or about someone); whether meant is a holder claim. |
 | `avozu` | 🦊 | fox / cunning ("sly as a fox") | T1 (*cunning*: hidden deceit and plans) | Abstract *resourcefulness* (finding a way round an obstacle). |
 | `ehuye` | 🤡 | jest / foolishness; *joke*, *fool* | T2 (*foolishness*, *fool*: a verdict on someone's sense) | Abstract *clowning* (playing the fool for a laugh, as the mnemonic says); drop *fool*; a person-verdict goes through label reach. |
 | `umuyumezuyo` (compound) | 🖕 | insult; mnemonic *speech meant to put someone down* | T1 (*meant*: the speaker's intent) | Keep the spelling and *insult*; mnemonic *middle-finger specifying speech is words that, by convention, put someone down*. Follows `umuyu`. |
+| `eguma` | 🤑 | greed / wealth; *asset*, *wealthy*, *rich* | T2 (*greed*: the want is too much, bar unnamed) | Concrete *money-hunger* (wanting money); excess goes through the *too* bar ([bars](../grammar/intermediate/bars.md)), a person-verdict through label reach. |
 
 Kept, both tests pass: `arozu` 🦝 *theft* (consent is a say word others witness), `ebemo` 🫣 *surveillance*, `edema` 😜 *banter*, `ozuyu` 🥷 *stealth*, `ogayu` 👹 *menace* / *threat* (a threat is said), `adayu` 😈 *mischief*.
 
@@ -262,12 +263,4 @@ residue-and-former.md gains a **Compare with**: residue is the outcome still in 
 
 ## Open decisions
 
-Agents log new ones here during the run, per [proposals.md](../meta/procedures/proposals.md#what-a-proposal-is).
-
-### `eguma` 🤑 *greed* (Unit A)
-
-**Problem:** `eguma`'s concrete sense is *greed* (abstract *wealth*; aliases *asset*, *wealthy*, *rich*). Greed is a want, and a want felt by the speaker is a feeling, which T1 lets through. But English *greed* also says the want is too much, with no bar named (T2), and said of someone else it is close to a trait label.
-
-**Options:** (a) keep *greed* as a feeling, owned like any other; (b) re-sense the concrete to *money-hunger* (wanting money), so excess goes through the *too* bar ([bars](../grammar/intermediate/bars.md)) and a person-verdict through label reach; (c) re-sense the concrete to *riches*, folding it into *wealth*, and route *greed* to a recipe.
-
-**Recommendation:** (b). It keeps the 🤑 face as a feeling root and moves the verdict to the bar, as T2 asks.
+None open. Agents log new ones here during the run, per [proposals.md](../meta/procedures/proposals.md#what-a-proposal-is).

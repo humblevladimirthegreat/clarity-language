@@ -15,10 +15,10 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 😘,air-kiss,erema,mind,holds,,,,,,
 🥲,tear-smile,odema,mind,holds,,,,,,
 😋,yummy,uyama,mind,holds,,tempting,yummy looks tempting,,,
-😛,tongue-out,adomu,mind,takes-away,,mockery,"a stuck-out tongue teases; mockery is the stance, not the gesture",,,
+😛,tongue-out,adomu,mind,takes-away,,ridicule,a stuck-out tongue teases; ridicule is the teasing others see or hear,,,
 😜,tease,edema,mind,holds,,banter,a playful tease; banter is friendly mockery,,,
 🤪,zany,ezeme,mind,one,,zaniness,"zany antics are unreasoned play; zaniness is that play, not a kind of person",,silly,
-🤑,greed,eguma,mind,holds,,wealth,greed hungers for wealth,,asset; wealthy; rich,
+🤑,money-hunger,eguma,mind,holds,,wealth,the money-eyed face wants money; wealth is what it hungers for,,asset; wealthy; rich,
 🤭,gasp,agame,mind,one,,shock,gasp at a shock,,,
 🫣,peek,ebemo,mind,order,,surveillance,peek to spy; surveillance is watching without being the seen act,,monitor; glance,speech-moves.md#beginner-practice
 🤫,hush,uhamu,mind,takes-away,,confidentiality,a hushed whisper keeps the matter private,,,
@@ -29,13 +29,13 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 😐,neutral,ume,mind,one,,impartiality,a neutral face takes no side; impartiality is judging without favor,,,
 😑,deadpan,edeme,mind,one,,apathy,a deadpan face shows apathy,,,
 😶,speechless,ozeme,mind,one,,silence,a speechless mouth makes no sound,,silent,
-🫥,invisible,unemu,mind,takes-away,,neglect,the faded face goes unseen; neglect is being left unattended,,ignore,
+🫥,invisible,unemu,mind,takes-away,,going-unnoticed,the faded face goes unseen; going-unnoticed is being left unseen and unanswered,,,
 😏,smirk,ezemo,mind,order,,smugness,smirk shows smugness,,,
 😒,unimpressed,unomu,mind,takes-away,,disdain,unimpressed shows disdain,,,
 🙄,eye-roll,ayomu,mind,takes-away,,dismiss,eyeroll dismisses an idea,,,
 😬,grimace,egemu,mind,takes-away,,awkwardness,grimace shows awkwardness,,,
 😮‍💨,sigh,azame,mind,one,,,,,,
-🤥,lie,ulamu,mind,takes-away,,deception,a lie leads others into false belief,,,questions.md#beginner-practice
+🤥,untruth,ulamu,mind,takes-away,,misinformation,"an untruth says what isn't so; misinformation is untruth passed on, whatever the speaker believed",v:misstate,,questions.md#beginner-practice
 🙂‍↔️,head-shake,ehemu,mind,takes-away,,refusal,a headshake says no to the request,,reject,
 🙂‍↕️,nod,enamo,mind,order,,agreement,a nod says yes to what was said,,,
 😌,relief,ureme,mind,one,,calm,relief brings calm,,,
@@ -45,7 +45,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🫩,bleary,obeme,mind,one,,fatigue,bleary eyes show fatigue,,,
 😷,mask,amebu,body,takes-away,small,illness,a medical mask marks the sick; illness is being unwell,,,role-parts.md#intermediate-practice
 🤒,sick,ezemu,mind,takes-away,,pathology,sick means illness; pathology is the unobservable condition-kind,,disease; ill; symptom,
-🤕,injured,enemu,mind,takes-away,,harm,injured means hurt; harm is the unobservable detriment,,damage; hurt; injury; wound; abuse; pain,
+🤕,injured,enemu,mind,takes-away,,harm,injured means hurt; harm is the unobservable detriment,,damage; hurt; injury; wound; pain,
 🤢,nauseated,onomu,mind,takes-away,,contamination,nauseated shows disgust; contamination is the unobservable reading that something is tainted,,pollution; dirty,
 🤮,vomit,avamu,mind,takes-away,,revulsion,vomit shows revulsion,,,
 🤧,sneeze,uzemu,mind,takes-away,,infection,sneeze signals a cold; infection is the unobservable spread,,cough,
@@ -78,14 +78,13 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🥱,yawn,oyome,mind,one,,monotony,yawn shows boredom; monotony is the situation offering nothing new,,bore,
 😤,huff,ahamu,mind,takes-away,,,,,,
 😡,rage,aremu,mind,takes-away,,destructiveness,rage means fury; destructiveness is the unobservable will to wreck,,destroy; destruction,
-😠,angry,onumu,mind,takes-away,,hostility,angry means anger; hostility is the unobservable stance toward another,,hate; aggressive,clause.md#beginner-practice
+😠,angry,onumu,mind,takes-away,,hostility,angry means anger; hostility is the unobservable stance toward another,,hate,clause.md#beginner-practice
 🤬,curse,uguyu,person,takes-away,none,profanity,cursing shows profanity,,damn,
 😈,devil,adayu,person,takes-away,big,mischief,devil shows mischief,,,
-👿,villain,ovayu,person,takes-away,big,malice,a villain means harm; malice is wanting harm,,,
 💀,skull,uzobu,body,takes-away,medium,death,a skull is what remains after death,v:die,dead,
 ☠️,crossbones,ugobu,body,takes-away,medium,danger,skull warns danger,,dangerous; poison; toxic,
 💩,poop,obebe,body,one,small,vulgarity,poop is the crude waste polite company avoids,,,
-🤡,jest,ehuye,person,one,none,foolishness,clowning is jest; foolishness is playing the fool,,joke; fool,
+🤡,jest,ehuye,person,one,none,clowning,a jest is a clown's joke; clowning is playing the fool for a laugh,,joke,
 👹,ogre,ogayu,person,takes-away,big,menace,ogre shows menace,,threat; threaten,
 👺,goblin,ayoyu,person,takes-away,medium,,,,,
 👻,ghost,uyayu,person,takes-away,big,spookiness,a haunting ghost makes a place feel eerie,,,
@@ -105,7 +104,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🩷,pink,ebule,nature,one,none,,the pink heart is pink,,,
 💋,lips,elebe,body,one,small,,,,,
 💯,hundred,ahura,counting,holds,none,completeness,a hundred out of a hundred is the whole mark,m.w:completely,totally; entirely; fully; altogether,very-and-slightly.md#intermediate-practice
-💢,anger,anemu,mind,takes-away,,offense,anger symbol shows rage; offense is the unobservable reading that a wrong was done,,crime,
+💢,anger,anemu,mind,takes-away,,offense,anger symbol shows rage; offense is the offended person's sense of being wronged,,,
 🫯,fight,uvuvu,doing,takes-away,none,struggle,fighting stance pushes through opposition; struggle is pushing through what holds you back,,battle; tackle,knowing.md#beginner-practice
 💥,boom,ubuvu,doing,takes-away,none,consequence,collision bursts; consequence is the unobservable follow-on,,outcome; result; effect,
 💫,dizzy,edemu,mind,takes-away,,dazzle,dizzy stars swirl until the eyes are overwhelmed,,,
@@ -127,12 +126,12 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🤞,crossed-fingers,uwuyo,person,order,none,hope,crossed fingers bring hope,,,feelings.md#intermediate-practice
 🤘,horns,ohobu,body,takes-away,medium,,,,,
 🤙,shaka,uhuya,person,holds,none,contact,shaka invites contact,,,
-🖕,middle-finger,umuyu,person,takes-away,none,contempt,middle finger shows contempt,,,
+🖕,middle-finger,umuyu,person,takes-away,none,defiance,a raised middle finger is an open refusal; defiance is the refusal others see,,,
 ☝️,point,oyo,person,order,,emphasis,point adds emphasis,,item; finger; insist; emphasize; specify; detail; spot; specifically,
 🫵,point-at-you,ubuyo,person,order,none,accusation,a finger pointed at you names a charge; an accusation is that charge,,accuse,
 👍,thumbs-up,ovuye,person,one,none,approval,thumbs-up shows approval,,approve; recommendation,
 👎,thumbs-down,avuyu,person,takes-away,none,disapproval,thumbs-down shows disapproval,,,
-✊,fist,ovebe,body,one,small,defiance,fist shows defiance,,resistance,
+✊,fist,ovebe,body,one,small,resistance,a raised fist shows resistance,,,
 👊,punch,abuvu,doing,takes-away,none,force,punch delivers force,,hit; strike,pronouns.md#beginner-practice
 👏,clap,aguya,person,holds,none,acclaim,clap is audible; acclaim is the unobservable verdict,,applause,more-turn-words.md#intermediate-practice
 🙌,hooray,ahuma,mind,holds,,,,,,
@@ -216,7 +215,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🎅,santa,azaya,person,holds,big,,,,,
 🤶,mrs-claus,amaya,person,holds,big,companionship,mrs claus offers companionship,,accompany; ally,social-ties.md#beginner-practice
 🦸,save,ezuyu,person,takes-away,none,heroism,saving shows heroism,,hero; spare,
-🦹,scheme,uzuyu,person,takes-away,none,villainy,scheming embodies villainy,,criminal; plot,
+🦹,outlaw,uzuyu,person,takes-away,none,lawbreaking,an outlaw lives outside the law; lawbreaking is breaking it,,criminal; crime,
 🧙,conjure,eguye,person,one,none,magic,conjuring wields magic,,,
 🧚,fairy,eveye,person,one,small,whimsy,fairy brings whimsy,,,
 🧛,vampire,avayu,person,takes-away,big,parasitism,vampire practices parasitism,,,
@@ -278,7 +277,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐕,dog,odoze,creature,one,medium,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,here-there.md#beginner-practice
 🦮,guide-dog,agozo,creature,order,medium,reliance,a guide dog is relied on to lead; reliance is depending on something,,,
 🐺,wolf,uwozu,creature,takes-away,medium,predation,wolf at the door,,,
-🦊,fox,avozu,creature,takes-away,medium,cunning,sly as a fox,,,
+🦊,fox,avozu,creature,takes-away,medium,resourcefulness,a fox finds its way round fences and traps,,,
 🦝,raccoon,arozu,creature,takes-away,medium,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal,,role-parts.md#intermediate-practice
 🐈,cat,ogoze,creature,one,medium,curiosity,a cat pokes at whatever is new; curiosity is wanting to find out,,wonder; curious; interest,usually-vs-must.md#advanced-practice
 🐈‍⬛,black-cat,abozu,creature,takes-away,medium,omen,"a black cat crossing is read as a sign; an omen is a sign people take to predict, which need not mean it will",,,
@@ -346,7 +345,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐊,crocodile,ogazu,creature,takes-away,big,deceit,crocodile tears are deceit,,,
 🐢,turtle,udoza,creature,holds,medium,,,,,
 🦎,lizard,elezo,creature,order,small,tail,a lizard can drop its tail; a tail is the rear extension of a body,,,
-🐍,snake,ezozu,creature,takes-away,medium,treachery,snake in the grass,,,
+🐍,snake,ezozu,creature,takes-away,medium,ambush,a snake in the grass strikes from hiding,,,
 🐉,dragon,udazu,creature,takes-away,big,legend,dragon lives in legend; legend is an inherited mythic tale,,,
 🦕,brontosaurus,obazo,creature,order,big,antiquity,a brontosaurus lived ages before us,,ancient,
 🦖,dinosaur,adazu,creature,takes-away,big,,,,,
@@ -377,7 +376,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🪳,cockroach,agezu,creature,takes-away,small,resilience,cockroach survives anything,,survival; survive,
 🕷️,spider,azezu,creature,takes-away,small,entrapment,spider traps its prey,,,
 🕸️,cobweb,ugola,nature,holds,medium,network,a cobweb connects everything,,net; web,
-🦂,scorpion,ozezu,creature,takes-away,small,betrayal,scorpion stings the hand that feeds,,,
+🦂,scorpion,ozezu,creature,takes-away,small,broken-promise,"the scorpion promised the frog a safe crossing, then stung it",,,
 🦟,mosquito,omezu,creature,takes-away,small,irritation,a mosquito's whine and itchy bite nag you,,,
 🪰,fly,uvezu,creature,takes-away,small,annoyance,a fly keeps buzzing in your face,,bother,
 🪱,worm,ewezo,creature,order,small,complication,open a can of worms,,,
@@ -478,7 +477,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🥣,bowl,oda,food,holds,,capacity,a bowl holds what it can; capacity is how much fits,,,can-and-cant.md#beginner-practice
 🥗,salad,azuda,food,holds,none,,,,,compound-families.md#intermediate-practice
 🍿,popcorn,abeda,food,holds,small,entertainment,popcorn at the show is entertainment,,entertain,
-🧈,butter,ubuda,food,holds,none,flattery,butter someone up with flattery,,,
+🧈,butter,ubuda,food,holds,none,compliment,"butter spreads warm and smooth, like a compliment",,,
 🧂,salt,ozuda,food,holds,none,skepticism,take it with a grain of salt,,,
 🥫,metal,umule,nature,one,none,,a can stands for metal: the hard shiny material,,,
 🍱,bento,enoda,food,holds,medium,order,a bento box keeps each food in its own tidy slot,,line; rank; arrange; lunchbox,
@@ -1131,7 +1130,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🏳️,parley,obogu,sign,takes-away,medium,surrender,waving a white flag gives up the fight,,submit,
 🏳️‍🌈,homosexual,ohaye,person,one,big,pride,rainbow flag shows pride,,gay,
 🏳️‍⚧️,transgender-flag,udoge,sign,one,medium,,,,,
-🏴‍☠️,robbery,oruyu,person,takes-away,none,exploitation,the pirate flag signals open robbery; exploitation is taking through power without visible force,v:rob; m.v:exploit,,
+🏴‍☠️,robbery,oruyu,person,takes-away,none,coercion,the pirate flag signals open robbery; coercion is getting compliance by a threat,v:rob,,
 🇦🇨,ascension-island-flag,azenzanaylanda,named,,,,,,,
 🇦🇩,andorra-flag,andora,named,,,andorran,andorra people are andorran,,,
 🇦🇪,uae-flag,uyuweyene,named,,,emirati,uae people are emirati,,,

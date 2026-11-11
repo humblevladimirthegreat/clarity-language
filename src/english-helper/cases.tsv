@@ -74,12 +74,12 @@ Whose dog walks?	Whose	link:fill-ask-jobs.md#whose	*whose* is the used-by extra-
 Uzozen writes using a pen.	using	link:extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m	*using* is the extra-noun hook, not a tool case
 Where does Ahelan walk?	Where	link:fill-ask-jobs.md#where	*where?* is `el bar`
 # Label reach: the seam spelled on the word it labels
-Uzozen lied this once.	this once	reach:thu:lie	the cue run leaves *lied* its own slot
-Uzozen lied this once.	lied	sense:lie	*lied* is not swallowed by the cue
+Uzozen sang this once.	this once	reach:thu:sing	the cue run leaves *sang* its own slot
+Uzozen sang this once.	sang	sense:sing	*sang* is not swallowed by the cue
 Olazun is an anxious type.	type	reach:tha:anxious	the reach goes on the word before the cue
 Olazun is angry, but it is the situation, not Olazun.	it is the situation	reach:thae:angry	a cue in a later clause reaches back
-Uzozen is a lying type, except this time.	except this time	reach:thua:lie	an *-ing* noun puts the reach on its verb
-Olazun is becoming a liar.	becoming	reach:thoe:lie	no word before: the doer noun after, as its verb
+Uzozen is a singing type, except this time.	except this time	reach:thua:sing	an *-ing* noun puts the reach on its verb
+Olazun is becoming a singer.	becoming	reach:thoe:sing	no word before: the doer noun after, as its verb
 Olazun is becoming a liar.	becoming	link:say-reasons.md#mind-verbs	*becoming* keeps the *become* row
 # Sake words: sake + stance + horizon, composed when the sentence names all three
 My book serves competence right now.	competence	sake:g-thar	*my*: on /ɡ/; *right now*: -r

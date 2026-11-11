@@ -575,13 +575,13 @@ describe("compareMorphGloss", () => {
 
   it("label reach glosses its seam vowel", () => {
     expectLine("zalazun gonumuthul", "z-Alazun | g-angry-th-episode");
-    expectLine("zazozon vulamuthol", "z-Azozon | v-lie-th-role");
+    expectLine("zazozon vulamuthol", "z-Azozon | v-misstate-th-role");
     expectLine("zalazun ganomuthal", "z-Alazun | g-anxious-th-type");
     expectLine("zalazun gwozeduyol", "z-Alazun | g-role-agent-teach");
-    expectLine("zazozon vulamuthel blalazun", "z-Azozon | [v-lie-th-pair | bl-Alazun]");
-    expectLine("zazozon vulamuthael", "z-Azozon | v-lie-th-situation");
+    expectLine("zazozon vulamuthel blalazun", "z-Azozon | [v-misstate-th-pair | bl-Alazun]");
+    expectLine("zazozon vulamuthael", "z-Azozon | v-misstate-th-situation");
     expectLine("zalazun gonumuthael blerulal", "z-Alazun | [g-angry-th-situation | bl-rain]");
-    expectLine("zazozon vulamuthual", "z-Azozon | v-lie-th-except-episode");
+    expectLine("zazozon vulamuthual", "z-Azozon | v-misstate-th-except-episode");
     expectLine("zalazun gwaozeduyol", "z-Alazun | g-using-agent-teach");
     expectLine("zalazun gwoezeduyol", "z-Alazun | g-toward-role-agent-teach");
     expectLine("zalazun gwuozeduyol", "z-Alazun | g-outside-role-agent-teach");
@@ -589,7 +589,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("a pair-reach verb hosts the /b/ right after it", () => {
-    expectLine("zazozon vulamuthel blalazun", "z-Azozon | [v-lie-th-pair | bl-Alazun]");
+    expectLine("zazozon vulamuthel blalazun", "z-Azozon | [v-misstate-th-pair | bl-Alazun]");
   });
 
   it("house-cast resume without a same-line antecedent", () => {
