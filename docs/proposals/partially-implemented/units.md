@@ -32,7 +32,7 @@ Units group each band's sittings in the sidebar, but a unit is only a title so f
 
 ## Implementation plan
 
-None yet; a phase gets its plan when it is scheduled. If the user says to stop partway through a phase, the agent [consolidates this proposal](../../meta/procedures/proposals.md#consolidate-on-stop) before the session ends.
+None yet; a phase gets its plan when it is scheduled. If the user says to stop partway through a phase, the agent [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends.
 
 A reorder or a new unit table is checked with `npm run plan-units -- --units <table> --suggest`.
 

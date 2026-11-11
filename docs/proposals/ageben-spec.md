@@ -188,7 +188,7 @@ Each is a guess, to confirm or rule out. None is a decision yet.
 
 ## Implementation plan
 
-If the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate-on-stop) before the session ends.
+If the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate) before the session ends.
 
 Run with subagents: the pilot needs a fresh audit context, and the tooling units share little with the pilot.
 

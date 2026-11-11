@@ -17,7 +17,7 @@ https://discord.gg/CAMGw2Akhc
 -profile build
 -tmp purging?
 -blog posts about using AI; public repo containing tips and tricks that can serve as a template
--programming language
+-speed reading view becomes outline mode?
 -consider conceptual metaphor of past is in front of us (because we can see it)
 Cheat sheet distinguish cue vs exact match
 

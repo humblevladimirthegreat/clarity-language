@@ -141,7 +141,7 @@ New row **D-75** in [design-decisions.md](../meta/design-decisions.md) under *By
 
 ## Implementation plan
 
-Orchestrated per [proposals.md](../meta/procedures/proposals.md), with subagents. If the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate-on-stop) before the session ends. The phases share no files except `design-decisions.md`, so they run in either order, never at the same time.
+Orchestrated per [proposals.md](../meta/procedures/proposals.md), with subagents. If the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate) before the session ends. The phases share no files except `design-decisions.md`, so they run in either order, never at the same time.
 
 ### Phase 1: lexicon
 

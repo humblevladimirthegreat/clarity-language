@@ -78,7 +78,7 @@ A lint for first-use glossing of house shorthand was considered and dropped. The
 
 ## Implementation plan
 
-If the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate-on-stop) before the session ends.
+If the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate) before the session ends.
 
 Every unit is one fresh subagent. Prose units run on `model: opus`, `effort: high`. They run in sequence in reading order, because each one receives the glossed-label list from the one before.
 

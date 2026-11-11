@@ -16,14 +16,14 @@ A proposal is a plan for a change that is too large or too undecided to make in 
 
 | Line | Holds |
 |------|-------|
-| **Status:** | PROPOSED, ready to implement, partially implemented, and each user decision with its date. While a run is in progress, also which workstreams are done ([resuming](#resuming)). |
+| **Status:** | PROPOSED, ready to implement, partially implemented, and each user decision with its date. While a run is in progress, also which phases and workstreams are done ([resuming](#resuming)). |
 | **Related:** | Links out to the grammar pages, meta notes, data, and code it touches. |
 | **Depends on:** / **Order:** | Other proposals that must land first, as backtick filenames. |
 | **Design authority:** | *none* (moves, retitles, tooling), or exactly which forms and readings it changes. |
 
 **Body sections:** Problem, Goals, Non-goals, then the findings or the design, then the implementation plan, then **Open decisions**.
 
-Every proposal states, in its plan, that if the user says to stop partway, the agent [consolidates the proposal](#consolidate-on-stop) before the session ends.
+Every proposal states, in its plan, that at the end of each [phase](#phases), and if the user says to stop partway, the agent [consolidates the proposal](#consolidate) before the session ends.
 
 - Grammar decisions belong to the user. An agent that meets one while carrying out a proposal logs it under Open decisions, skips the item, and carries on with the rest.
 - Each logged open decision states the problem, lists the options, and ends with a **Recommendation:** the option the agent would pick and why, in a sentence or two, weighed by its effect on the learner. The user still decides; the recommendation saves a round of analysis. When the agent has no basis to choose, it says so and names what would settle it.
@@ -58,14 +58,38 @@ Use subagents when any of these holds:
 - The orchestrator's session would compact before the end, losing detail later items need.
 - A step needs a fresh context by rule: an independent audit, or a checkpoint writer that may not have read later pages ([what you may read](drill-generation.md#execute)).
 
-Subagents cost tokens, and most of the cost is context carried from turn to turn, so the plan keeps each subagent short and its context small, as below.
+Subagents cost tokens, and most of the cost is context carried from turn to turn, so the plan keeps each subagent short and its context small, as below. Either way, a run too long for one orchestrator session splits into [phases](#phases).
+
+## Phases
+
+A **phase** is the part of a proposal that one orchestrator session carries out. Subagents keep each unit's context small, but the orchestrator's own context still grows with every brief, report, diff stat, gate, and exchange with the user, and every later turn pays for all of it again ([where the tokens go](#where-the-tokens-go)). Phases reset it: each phase starts in a fresh session that reads only the consolidated proposal.
+
+Split a proposal into phases when one orchestrator session would carry it past about six units or about 60 orchestrator turns. A proposal that fits in one session has one phase and names none.
+
+Cut between phases where:
+
+- the tree is green and every unit before the cut is committed
+- the next phase needs this phase's outcome (what moved, the new ids, the decisions), not its reports or diffs
+- a user decision is due, or later units depend on what earlier ones find (an audit, a measurement, a tool's review list)
+- the next units read a different set of rules or pages, so the digest changes
+- a [fenced automated rewrite](#fence-automated-rewrites) and its hand fixes have just landed
+
+Never cut inside a unit or where the tree is not green.
+
+At the end of each phase the orchestrator:
+
+1. Runs the phase's gate and commits its last unit ([commits](#commits)).
+2. [Consolidates the proposal](#consolidate), records the finished phase on the Status line, and commits the proposal.
+3. Stops. It tells the user what the phase settled, which open decisions wait on them, and the prompt that starts the next phase in a fresh session, such as *Carry out phase 2 of `name.md`*. It does not start the next phase in the same session, even when its context seems to have room.
+
+When a phase runs over its budget and there is more than one unit left to do, the orchestrator ends it early at the next unit boundary, the same way, and the Status line says where the split fell. The next session starts the next phase as in [resuming](#resuming).
 
 ## Where the tokens go
 
 - **Every turn re-sends the whole context.** A subagent's earlier turns are a cached prefix, billed at a discount while the cache is warm, but they are still sent again on every turn. So a subagent's input grows with the square of its turn count: each turn costs its current context, and the context grows each turn. Rough arithmetic: one 80-turn subagent that grows from 30k to 180k tokens averages about 105k a turn, about 8M input in all. Four 20-turn subagents that each grow from 30k to 70k average about 50k a turn, about 1M each and 4M in all, for the same work.
 - **A cold start is paid in full, but once.** Each new subagent loads `AGENTS.md`, its brief, and the [procedure](../agents-md.md#procedures) files its task names before its first edit. That costs less than carrying a long context through dozens of later turns.
 - **Bulk output is the biggest waste.** Raw build output, whole-page reads, and per-link hand edits each add thousands of tokens that every later turn pays for again. The tools below keep them out of the context.
-- **The orchestrator pays for everything it reads, every turn.** A diff it reads early is paid for again on every later turn.
+- **The orchestrator pays for everything it reads, every turn.** A diff it reads early is paid for again on every later turn, until the phase ends ([phases](#phases)).
 - **A fork copies the orchestrator's whole conversation.** By mid-run that is larger than a fresh brief.
 - **Parallel subagents save time, not tokens.** Each one pays its own cold start.
 - **Break-even for delegating a read.** T tokens read in a context that runs about 70 more calls cost about 9×T over the rest of the session (cache reads at 0.1× each call, plus the write). The short subagents measured cost 21k–120k weighted tokens, so a search that would read more than about 15k tokens, when only its conclusion is needed, is cheaper in an `Explore` subagent.
@@ -108,7 +132,9 @@ The agent files under `.claude/agents/` (`proposal-worker`, `checkpoint-writer`)
 
 ## The plan section
 
-A proposal that runs through subagents states, in its plan:
+A proposal that runs in more than one session states its phases in the plan: each phase's ID, its units, its gate, and its commits, and the cut points chosen per [phases](#phases).
+
+A proposal that runs through subagents also states, in its plan:
 
 - the units, with IDs, their order, their items, and for each the agent type (`proposal-worker` unless a more specific agent fits, [step 6](#running-with-subagents)), the Agent tool `model` value (`opus`, `sonnet`, `haiku`) and reasoning effort (one fresh subagent per unit; a unit is one or two items)
 - the files each unit may edit
@@ -125,6 +151,7 @@ A proposal carried out with subagents is exempt from the usual rule that agents 
 - stage only that workstream's files, and never amend or force-push
 - let only the orchestrator commit, never a subagent
 - give the expected commit count in the plan
+- end each phase with a commit of the consolidated proposal ([phases](#phases))
 
 A workstream whose items were all skipped makes no commit.
 
@@ -134,16 +161,17 @@ When a script or tool is about to make a large automated change (`retie-docs --w
 
 ## Resuming
 
-A run that stops partway resumes from the git log and the Status line. After each workstream's commit, the orchestrator records the finished workstream IDs in Status. The next session reads them, re-runs build and tests, and starts the next workstream with a fresh subagent.
+A run resumes from the git log and the Status line, either at the next phase or at the point where a stop left it. After each workstream's commit, the orchestrator records the finished workstream IDs in Status, and after each phase, the finished phase. The next session reads the consolidated proposal, saves a fresh `npm run verify -- --baseline`, and starts the next workstream with a fresh subagent.
 
-### Consolidate on stop
-<a id="consolidate-on-stop"></a>
+### Consolidate
+<a id="consolidate"></a>
 
-When the user says to stop partway, the agent rewrites the proposal before the session ends, so the next session reads only what it still needs:
+At the end of each [phase](#phases), and when the user says to stop partway, the agent rewrites the proposal before the session ends, so the next session reads only what it still needs:
 
 - delete finished items, their findings, and finished workstreams; the git log holds them
 - drop background, digest lines, and gate notes that only finished work needed
 - move each settled decision to its grammar page or meta note, or to the Status line with its date
+- write into the remaining items what they build on from finished work: new ids and page names, audit findings still to act on, changed digest lines; this is input for later items, not a history
 - keep the remaining plan, open decisions, and the point reached on the Status line
 
-Commit the consolidated proposal with the run's last work when the run commits ([commits](#commits)); otherwise leave it in the tree.
+Commit the consolidated proposal as the phase's last commit when the run commits ([commits](#commits)); otherwise leave it in the tree.

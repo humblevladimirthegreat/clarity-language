@@ -109,7 +109,7 @@ Checked 2026-11-11: `d3-hierarchy` 3.1.3 is a repackaging of 3.1.2. Its bundled 
 
 ## Implementation plan
 
-The work runs through subagents: the classification reads many grammar pages that the code units don't need. If the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate-on-stop) before the session ends.
+The work runs through subagents: the classification reads many grammar pages that the code units don't need. If the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate) before the session ends.
 
 ### Units
 
