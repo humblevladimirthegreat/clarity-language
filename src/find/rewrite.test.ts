@@ -103,7 +103,7 @@ describe("spliceWord", () => {
     assert.deepEqual(splice("zemxuam", "form=em:om"), { kind: "changed", raw: "zomxuam" });
     assert.deepEqual(splice("doxar", "form=ol:el"), { kind: "changed", raw: "dexar" });
   });
-  it("splices a feeling locus and leaves sake stance", () => {
+  it("splices a feeling urge and leaves sake stance", () => {
     assert.deepEqual(splice("wuwathuraer", "locus=ae:ao"), { kind: "changed", raw: "wuwathuraor" });
     assert.deepEqual(splice("wuwathuraer", "stance=u:a"), { kind: "changed", raw: "wuwatharaer" });
   });

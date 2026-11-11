@@ -24,27 +24,27 @@ function lint(markdown: string, labels: string[]) {
   return lintTerminology(markdown, pages, tables, new Set(labels), new Map([["sakes.md", "Sakes"]])).map((f) => f.detail);
 }
 
-const INTERNAL = "| **INTERNAL** | held inside | `guwathamar` | [Sakes](sakes.md#emotion-compose) |";
+const STAYING = "| **STAYING** | stay in it | `guwathamar` | [Sakes](sakes.md#emotion-compose) |";
 
 describe("lintTerminology", () => {
   it("passes a current row", () => {
-    assert.deepEqual(lint(terminology([INTERNAL]), ["INTERNAL"]), []);
+    assert.deepEqual(lint(terminology([STAYING]), ["STAYING"]), []);
   });
 
   it("collects overlay and glosser labels", () => {
     const labels = glossLabels(tables.overlays.values());
-    for (const label of ["MEMORY", "INTERNAL", "SURGING", "CITE"]) assert.ok(labels.has(label), label);
+    for (const label of ["MEMORY", "STAYING", "FLEETING", "CITE"]) assert.ok(labels.has(label), label);
   });
 
   it("flags a printed label with no row", () => {
-    assert.match(lint(terminology([INTERNAL]), ["INTERNAL", "CIRCUM"]).join("\n"), /print CIRCUM/);
+    assert.match(lint(terminology([STAYING]), ["STAYING", "HELD"]).join("\n"), /print HELD/);
   });
 
   it("flags a row whose example lacks the label or is not on the page", () => {
-    const wrong = "| **CIRCUM** | atmosphere | `guwathamar` | [Sakes](sakes.md#emotion-compose) |";
-    assert.match(lint(terminology([wrong]), ["CIRCUM"]).join("\n"), /without CIRCUM/);
-    const missing = "| **CIRCUM** | atmosphere | `wuwathuraol` | [Sakes](sakes.md#emotion-compose) |";
-    assert.match(lint(terminology([missing]), ["CIRCUM"]).join("\n"), /does not appear on sakes\.md/);
+    const wrong = "| **HELD** | stuck on the spot | `guwathamar` | [Sakes](sakes.md#emotion-compose) |";
+    assert.match(lint(terminology([wrong]), ["HELD"]).join("\n"), /without HELD/);
+    const missing = "| **HELD** | stuck on the spot | `wuwathuraol` | [Sakes](sakes.md#emotion-compose) |";
+    assert.match(lint(terminology([missing]), ["HELD"]).join("\n"), /does not appear on sakes\.md/);
   });
 
   it("flags a row no morph line prints and the page never uses", () => {
@@ -60,7 +60,7 @@ describe("lintTerminology", () => {
       "",
       "[Feelings](sakes.md#nowhere)",
     ].join("\n");
-    const out = lint(terminology([INTERNAL], body), ["INTERNAL"]).join("\n");
+    const out = lint(terminology([STAYING], body), ["STAYING"]).join("\n");
     assert.match(out, /`wonathonar` does not appear/);
     assert.match(out, /\*\*ACT\*\*/);
     assert.match(out, /bare root `ezuyo`/);

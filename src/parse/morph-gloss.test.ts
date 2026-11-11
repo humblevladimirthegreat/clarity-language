@@ -518,10 +518,10 @@ describe("compareMorphGloss", () => {
   it("values bake stance and ending grain", () => {
     expectLine("zewal gawethal", "z-present | g-relatedness-met-lasting");
     expectLine("zabowam wunathur goyom", "z-gathering | [w-autonomy-unmet-passing | g-stimulus]");
-    expectLine("zezuyol wuwathuraer goyom", "z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]");
-    expectLine("zobewom guwathamar", "z-draft | g-competence-met-any-term-INTERNAL-SURGING");
-    expectLine("zonal wawethumuor goyom", "z-memo | [w-relatedness-unmet-modifiable-RESISTING-SURGING | g-stimulus]");
-    expectLine("gawethaluem", "g-relatedness-met-lasting-UNPLACED-FLOWING");
+    expectLine("zezuyol wuwathuraer goyom", "z-speech | [w-competence-unmet-passing-HELD-FLEETING | g-stimulus]");
+    expectLine("zobewom guwathamar", "z-draft | g-competence-met-any-term-STAYING-FLEETING");
+    expectLine("zonal wawethumuor goyom", "z-memo | [w-relatedness-unmet-modifiable-RESISTING-FLEETING | g-stimulus]");
+    expectLine("gawethaluem", "g-relatedness-met-lasting-UNPLACED-OPEN");
   });
 
   it("span interiors: cite and aside gloss English; an opaque interior passes through", () => {

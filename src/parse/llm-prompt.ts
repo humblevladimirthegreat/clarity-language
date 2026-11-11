@@ -156,7 +156,7 @@ const LABEL_RE = /(?<![A-Za-z])([A-Z]{2,}(?:-[A-Z]+)*)(?![a-z])/g;
 
 /**
  * SMALLCAPS labels in a gloss line (quoted payloads skipped). A hyphenated run may be one label
- * or several joined (`CLUES-TOPIC`, `VICARIOUS-FLOWING`), so every contiguous sub-run is listed;
+ * or several joined (`CLUES-TOPIC`, `GIVING-OPEN`), so every contiguous sub-run is listed;
  * the legend keeps the ones it can explain.
  */
 export function glossLabels(gloss: string): string[] {

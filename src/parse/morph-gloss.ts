@@ -284,20 +284,20 @@ const SAKE_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
   u: { l: "irreversible", m: "modifiable", r: "passing" },
 };
 
-/** Emotion tail (feelings.md#emotion-compose): locus hook vowel(s), then motion ending. */
-const EMOTION_LOCUS: Record<string, string> = {
-  a: "INTERNAL",
-  ae: "CIRCUM",
+/** Emotion tail (feelings.md#emotion-compose): urge hook vowel(s), then duration ending. */
+const EMOTION_URGE: Record<string, string> = {
+  a: "STAYING",
+  ae: "HELD",
   ue: "UNPLACED",
   e: "AIMED",
-  oe: "SEEKING",
+  oe: "TOWARD",
   uo: "RESISTING",
-  o: "VICARIOUS",
+  o: "GIVING",
   u: "AWAY",
-  ua: "COLLAPSE",
-  ao: "FAWN",
+  ua: "RELEASING",
+  ao: "PLACATING",
 };
-const EMOTION_MOTION: Record<string, string> = { r: "SURGING", m: "FLOWING", l: "STATIC" };
+const EMOTION_DURATION: Record<string, string> = { r: "FLEETING", m: "OPEN", l: "SETTLED" };
 
 const GREETING_STANCE: Record<string, string> = {
   a: "presence",
@@ -1477,9 +1477,9 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
           ? SAKE_GRAIN[family.stanceVowel]?.[horizon]
           : undefined;
       if (family.horizon) {
-        const locus = EMOTION_LOCUS[family.locus ?? ""];
-        const motion = EMOTION_MOTION[word.ending ?? ""] ?? word.ending;
-        return [[host, stance, grain, locus, motion].filter(Boolean).join("-")];
+        const urge = EMOTION_URGE[family.locus ?? ""];
+        const duration = EMOTION_DURATION[word.ending ?? ""] ?? word.ending;
+        return [[host, stance, grain, urge, duration].filter(Boolean).join("-")];
       }
       return grain ? [`${host}-${stance}-${grain}`] : [host, stance];
     }
@@ -1735,8 +1735,8 @@ function numberSurfaceSuffix(raw: string, stem: NumberStem, ctx: MorphGlossConte
  */
 export const MORPH_GLOSS_LABELS: readonly string[] = [
   ...new Set([
-    ...Object.values(EMOTION_LOCUS),
-    ...Object.values(EMOTION_MOTION),
+    ...Object.values(EMOTION_URGE),
+    ...Object.values(EMOTION_DURATION),
     ...Object.values(WRITTEN_SPAN),
     "MENTION",
     "ABIL",

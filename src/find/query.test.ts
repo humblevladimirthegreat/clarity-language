@@ -204,7 +204,7 @@ describe("parse field keys", () => {
     });
   });
 
-  it("matches hooked-join form and a feeling locus", () => {
+  it("matches hooked-join form and a feeling urge", () => {
     assert.deepEqual(raws("zexual blohehal.", "family=joinMarker,form=el"), ["zexual"]);
     const locus = { word: classify(parseWord("wuwathuraer"), tables), unit: "", position: 0 };
     assert.ok(matchesTerm(locus, parseTerm("xFamily=sake,locus=ae")));

@@ -69,7 +69,7 @@ describe("translation prompt core", () => {
     );
     const labels = new Set([...printableLabels(tables.overlays.values()), ...runs]);
     const known = (label: string) => terminology.has(label) || !!GLOSS_READER.labels[label];
-    // A joined run (`CLUES-TOPIC`, `VICARIOUS-FLOWING`) is covered when it splits into known labels.
+    // A joined run (`CLUES-TOPIC`, `GIVING-OPEN`) is covered when it splits into known labels.
     const covered = (pieces: string[]): boolean =>
       pieces.length === 0 || pieces.some((_, k) => known(pieces.slice(0, k + 1).join("-")) && covered(pieces.slice(k + 1)));
     const missing = [...labels].filter((label) => !covered(label.split("-")));

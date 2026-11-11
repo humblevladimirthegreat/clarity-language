@@ -92,7 +92,7 @@ export type MorphWordFamily =
       reachVowel?: ReachVowel;
       /** Emotion compose: sake horizon letter moved mid-word (feelings.md#emotion-compose). */
       horizon?: "l" | "m" | "r";
-      /** Emotion compose locus: hook vowel(s) for placement or direction (feelings.md#emotion-compose). */
+      /** Emotion compose urge: hook vowel(s) for what the feeling pulls toward (feelings.md#emotion-compose). */
       locus?: "a" | "e" | "o" | "u" | "ao" | "ae" | "oe" | "ua" | "uo" | "ue";
       /** Numeric prefix: the number body left of the seam (numeric-derivation.md). */
       numberStem?: NumberStem;

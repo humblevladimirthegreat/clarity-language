@@ -280,7 +280,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
     anchor: "sakes.md#met",
     summary: "sake word",
     reader:
-      "A sake word `SAKE-STANCE-ending` (competence, relatedness, pleasure, purpose, …) says how something stands toward that payoff, for the speaker unless a `b-` right after it or a holder says whose. `met` = it serves it, `unmet` = it costs it, `motive` = done for that payoff, `ought` = advice that the act would serve it (`-unasked` not asked for, `-invited` asked for, `-tryout` worth a try); with `ought` the verb is what ought to happen, not what happens. On `g-` after a noun it is about that thing of mine; on `th-` it is about the whole event: `z-X | v-sing | th-pleasure-met-any-term` = X sings, and I enjoy it. With a capital tail (`-INTERNAL-SURGING`, `-AIMED-FLOWING`) it is one feeling: say it with the plain English emotion word (unmet competence = anxious or frustrated, unmet relatedness aimed at a `b-` person = irritated with them, met competence = proud or confident), not piece by piece. `[w-FEELING | g-stimulus]` after a noun = that feeling about the noun.",
+      "A sake word `SAKE-STANCE-ending` (competence, relatedness, pleasure, purpose, …) says how something stands toward that payoff, for the speaker unless a `b-` right after it or a holder says whose. `met` = it serves it, `unmet` = it costs it, `motive` = done for that payoff, `ought` = advice that the act would serve it (`-unasked` not asked for, `-invited` asked for, `-tryout` worth a try); with `ought` the verb is what ought to happen, not what happens. On `g-` after a noun it is about that thing of mine; on `th-` it is about the whole event: `z-X | v-sing | th-pleasure-met-any-term` = X sings, and I enjoy it. With a capital tail (`-STAYING-FLEETING`, `-AIMED-OPEN`) it is one feeling: say it with the plain English emotion word (unmet competence = anxious or frustrated, unmet relatedness aimed at a `b-` person = irritated with them, met competence = proud or confident), not piece by piece. `[w-FEELING | g-stimulus]` after a noun = that feeling about the noun.",
   },
   scope: { anchor: "label-seams.md#label-reach", summary: "label reach" },
   hookPrefix: {
@@ -509,7 +509,7 @@ export const SAKE_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vo
   "ending.o.l": { anchor: "for-a-sake.md#motive-tho-time-horizon", summary: "motive standing -l" },
   "ending.o.m": { anchor: "for-a-sake.md#motive-tho-time-horizon", summary: "motive standing -m" },
   "ending.o.r": { anchor: "for-a-sake.md#motive-tho-time-horizon", summary: "motive standing -r" },
-  "emotion": { anchor: "feelings.md#emotion-compose", summary: "emotion tail (locus vowel + motion ending)" },
+  "emotion": { anchor: "feelings.md#emotion-compose", summary: "emotion tail (urge vowel + duration ending)" },
 };
 
 /** Join fence series vowel (joins.md, comparatives.md). */
@@ -826,7 +826,7 @@ export const REJECTIONS = {
   sakeSlot: { anchor: "sakes.md#sake-inventory", summary: "a sake form goes on /ɡ/, /th/, or /w/ only" },
   emotionTail: { anchor: "feelings.md#emotion-compose", summary: "the emotion tail goes on tha / tho / thu and ends in -r / -m / -l" },
   sakeEnding: { anchor: "sakes.md#word-shape", summary: "a sake word ends in -l / -m / -r (its stance's ending table), with or without an emotion tail" },
-  sakeStackedVowel: { anchor: "sakes.md#word-shape", summary: "a sake stance is one vowel; stacked vowels after th are the emotion locus after the horizon letter" },
+  sakeStackedVowel: { anchor: "sakes.md#word-shape", summary: "a sake stance is one vowel; stacked vowels after th are the emotion urge after the horizon letter" },
   prescriptionSlot: { anchor: "ought-for-a-sake.md#prescription-the-ought-this-act-for-this-sake", summary: "prescription (the) goes on /th/ only: it is about an act, not a noun" },
   feelingLandmark: { anchor: "feelings.md#emotion-compose", summary: "an INTERNAL (a) or UNPLACED (ue) feeling takes no /b/; a landmark goes with a direction or CIRCUM locus" },
   labelReachSlot: { anchor: "label-seams.md#label-reach", summary: "label reach goes on /ɡ/, /z/, /d/, /b/, /v/, or /h/ only" },
