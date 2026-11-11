@@ -61,7 +61,7 @@ const BANDS = {
 } as const;
 type BandName = keyof typeof BANDS;
 
-/** Unit size bounds, from the unit principles (`units.md` proposal, principle 3). */
+/** Unit size bounds, from the unit principles (docs/meta/learning-levels.md#units, principle 3). */
 const MIN_SIZE_K = 20;
 const MAX_SIZE_K = 50;
 

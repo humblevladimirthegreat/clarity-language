@@ -278,7 +278,7 @@ z-Ahelan | th-MEMORY | v-pay
 ## See also
 
 - Sake ascription: [sakes.md](sakes.md)
-- Emotion compose: [sakes.md](/feelings#emotion-compose)
+- Emotion compose: [feelings.md](/feelings#emotion-compose)
 - Plan vs forecast: [intention.md](intention.md#plan-predict)
 - Clock / date / when-frames: [measures-and-percent.md](digit-strings.md#time)
 - Habitual *always*: [restrictors.md](restrictors.md)

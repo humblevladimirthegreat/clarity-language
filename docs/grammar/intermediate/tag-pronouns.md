@@ -70,7 +70,7 @@ A tag with **-m** is a [share](/pronouns#share): A's part in the latest earlier 
 
 Tags fill `/z/`, `/d/`, and `/b/` only. To call someone, use their name (`yalazun`). A word that is already a pronoun with one fixed form takes no tag: the [special pronouns](/pronouns#special-pronouns), the generic pronoun, a topic pronoun, and a tag itself. A resume and a role pointer do take one, because a tag keeps them fixed while they would otherwise follow the latest match. **-x** goes only on **-r** and **-n**: a share is a part, not a group of people, and to tag a group, tag its phrase (`zodozelx zwal`).
 
-A tag on a phrase, a list, or nothing lasts until it is assigned again or the conversation ends with a [goodbye](/word-endings#greeting). Distance does not blur it, so placeholder reasoning can run through other sentences and back. A tag assigned inside a [dependent](/dependents#dependent-clauses) holds after it, because the dependent is the same talk. A quote keeps its own tags.
+A tag on a phrase, a list, or nothing lasts until it is assigned again or the conversation ends with a [goodbye](/word-endings#greeting). Distance does not blur it, and a [topic change](topic.md#topic-resets) does not reset it, so placeholder reasoning can run through other sentences, or a side topic, and back. A tag assigned inside a [dependent](/dependents#dependent-clauses) holds after it, because the dependent is the same talk. A quote keeps its own tags.
 
 #### Two tags at once {#tag-pairs}
 

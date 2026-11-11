@@ -7,6 +7,8 @@ band: beginner
 
 Use these words when you want to say **when** a claim counts: *only when it rains*, *never*, *always*. They take the adverb letter **`h`** (or **`w`** immediately before the adjective they limit) plus the same vowels and endings you already use on [joins](joins.md). Time or case words sit **before** the restrictor. Together they limit when the verb's claim (or that adjective) holds; they do not describe how it happens.
 
+**Compare with:** a [sake](sakes.md) names what a claim is **for**. A restrictor on `/h/` says **when** it counts.
+
 ### Only when / never (`hal`)
 
 To say *only when it rains*, list the **occasions** (times or cases) when the verb's claim is true, then end the list with the restrictor **`hal`**. Everything goes in the adverb slot (`/h/`): occasion words first, the restrictor last, the way a join word ends a list. Closed **-l** means these are all the times you stand behind. (cue: **a** ≈ add, adding up the times.)

@@ -136,9 +136,9 @@ A [dependent](/dependents#dependent-clauses) is the sentence after a stand-in (`
 | Change the topic, then report | the `/x/` word first: `xalazun zazozon vezuyol darl zalen vowurol.` *Now, about Alazun: Azozon says that Alazun walks.* |
 | Report someone's own topic change | quote their wording |
 
-A quote is someone else's talk, so it keeps its own topic and its own tags, and neither carries over into yours. An aside uses your stretch and never changes the topic. For a real side topic, end the sentence and use `xavedam`.
+A quote is someone else's talk, so it keeps its own topic, which does not carry over into yours. An aside uses your stretch and never changes the topic. For a real side topic, end the sentence and use `xavedam`.
 
-Reading the topic from inside a dependent is fine: `zalen`, tags, and role pointers inside the content resolve to your current stretch. *Azozon says that the main one runs* means your topic, not Azozon's. A clause join is not a dependent, but it keeps the clauses in one written sentence, so a topic word cannot follow one either: change the topic after a period.
+Reading the topic from inside a dependent is fine: `zalen` and role pointers inside the content resolve to your current stretch. *Azozon says that the main one runs* means your topic, not Azozon's. A clause join is not a dependent, but it keeps the clauses in one written sentence, so a topic word cannot follow one either: change the topic after a period.
 
 ### Asking about the topic {#topic-question}
 

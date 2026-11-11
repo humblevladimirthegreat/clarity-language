@@ -185,10 +185,10 @@ z-Alazun | v-sing | [th-only-if | bl-that-clause] | z-Ahelan | d-flower | v-see
 *Alazun sings only if Ahelan sees a flower.*
 :::
 
-**5.** `yol dobowal hadurom vumewel thohem blerulal.`
+**5.** `yol vumewel dobowal hadurom thohem blerulal.`
 
 ::: details Show answer
-y-command | d-bucket | h-haste | v-find | [th-if | bl-rain]
+y-command | v-find | d-bucket | h-haste | [th-if | bl-rain]
 
 *If it rains, find a bucket hastily.*
 :::
