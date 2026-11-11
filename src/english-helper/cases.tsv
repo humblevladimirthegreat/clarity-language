@@ -191,3 +191,6 @@ Azozon hopes Alazun walks.	hopes	link:want-and-decide.md#whose-intention	someone
 Azozon wishes Alazun would walk.	wishes	link:want-and-decide.md#whose-intention	someone else's wish is holder + WANT
 Olazun is a liar.	liar	sense:misstate	*liar* reaches the untruth root through its doer verb *misstate*
 The beggar waits.	beggar	no-gap	*beggar* keeps its irregular doer verb
+Ahelan sings if Alazun sits.	if	form:blarl	the *if* row spells the whole-sentence condition
+Ahelan sings only if Alazun sits.	only if	form:blarl	the *only if* row spells the whole-sentence condition
+Ahelan sings if and only if Alazun sits.	if and only if	form:blarl	the *iff* row spells the whole-sentence condition

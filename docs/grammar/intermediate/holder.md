@@ -130,6 +130,8 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 | Another evidential | how you know | how the holder knows |
 | The grounds after an inferring or pattern host's [`blarl`](evidentiality.md#evidence-clause) | grounds you assert | the holder's grounds; you do not assert them |
 
+**Except right before `thezem`.** A holder right before the [*although* hinge](/dependents#hinges) **`thezem`** gives the holder only the hinge's expectation, that the obstacle would have stopped the event. The event and the obstacle are still your claim.
+
 > `zonal wawethumel goyom blalazun theyomazozon.`
 >
 > [z-memo | [[w-relatedness-unmet-modifiable-AIMED-SETTLED | g-stimulus] | bl-Alazun]] | th-CLUES-Azozon

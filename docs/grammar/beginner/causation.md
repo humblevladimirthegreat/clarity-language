@@ -63,9 +63,9 @@ English *if and only if* says both at once: the condition is enough, and the out
 
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thohem` / `gohem`** | enough for the outcome; condition not asserted | *if* | `ohel` *door* | 🚪: walk through only if it opens |
-| **`thebem` / `gebem`** | the outcome needs this; condition not asserted | *only if* / *needs* | `ebel` *paper-roll* | 🧻: without it the situation does not run |
-| **`thehom`** | both ways; condition not asserted | *if and only if* | `ehol` *east-west* | ↔️: each side only with the other |
+| **`thohem` / `gohem` / `thohem blarl`** | enough for the outcome; condition not asserted | *if* | `ohel` *door* | 🚪: walk through only if it opens |
+| **`thebem` / `gebem` / `thebem blarl`** | the outcome needs this; condition not asserted | *only if* / *needs* | `ebel` *paper-roll* | 🧻: without it the situation does not run |
+| **`thehom` / `thehom blarl`** | both ways; condition not asserted | *if and only if* | `ehol` *east-west* | ↔️: each side only with the other |
 
 `/th/` attaches to the event. `/ɡ/` attaches to the noun.
 

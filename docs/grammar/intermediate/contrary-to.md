@@ -107,6 +107,14 @@ The hinge **`thezem`** *although* / *despite* overturns an expectation too, and 
 >
 > "Azozon walks despite the rain, which as far as I can tell Alazun expected to stop them."
 
+[MAY](/knowing#may) right before **`thezem`** hedges only the expectation in the same way. Azozon still walks and the rain is still a fact; only *the rain would stop them* is a guess.
+
+> `zazozon vowurol thomam thezem blerulal.`
+>
+> z-Azozon | v-walk | th-MAY | [th-although | bl-rain]
+>
+> "Azozon walks despite the rain, which might have stopped them."
+
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
