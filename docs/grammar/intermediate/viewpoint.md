@@ -123,6 +123,16 @@ Gravity works the same way: bare **`oduho`** + `/b/` is *under* the landmark, an
 >
 > "A bird sits above the dog."
 
+*Up the hill* is a path on the slope, not the space above it. Use [*along*](locative-relations.md#path-and-far-side) with the hill as its landmark, then a bare gravity word with no `/b/`:
+
+> `zazozon vowurol herahom blamahul habuhol.`
+>
+> z-Azozon | v-walk | [h-along | bl-mountain] | h-up
+>
+> "Azozon walks up the mountain."
+
+*Down the hill* swaps in **`hoduhol`**.
+
 **Compare with:** locative *at* / *on* / *inside* name how the figure sits relative to the landmark ([locative relations](locative-relations.md#locative-relations)), not a compass heading.
 
 <!-- cheat-sheet: roles -->

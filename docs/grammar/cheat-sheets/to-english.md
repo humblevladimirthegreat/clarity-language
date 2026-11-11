@@ -66,8 +66,10 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `ganem` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](/relations#proxy) | B |
 | `gaon` | join-relation starting with (adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `garum` | UNTIL clause hinge (endpoint bound) | [Time hinges on a noun](/more-hinges#time-hinge-on-noun) | I |
+| `gavunam` | locative opposite (facing one landmark over a gap) | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) | I |
 | `gebem` | ONLY-IF clause hinge (necessary condition) | [Only if](/causation#only-if) | B |
-| `gedam` | locative between (two landmarks) | [Locative relations](/locative-relations#locative-relations) | I |
+| `gedam` | locative between (two landmarks) | [Between, across, around](/locative-relations#locative-relations) | I |
+| `gegalom` | locative past (comes near one landmark and goes on) | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) | I |
 | `gegol` | mention marker (the span is a word or phrase as spelling) | [Mention](/spans-as-words#mention) | I |
 | `gegon` | name-string mention marker (the span is a name as spelling) | [Mention](/spans-as-words#mention) | I |
 | `geham` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](/relations#exchange) | B |
@@ -75,9 +77,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `gen` | join-relation exclusive for (sole pick adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `genam` | AS-OF clause hinge (asserted whose-now / dated ledger) | [As-of (whose now)](/as-of#as-of) | A |
 | `genar` | AS-OF clause hinge (asserted whose-now / dated ledger) resume | [As-of (whose now)](/as-of#as-of) | A |
-| `gerom` | WHILE clause hinge (concurrent) | [Time hinges on a noun](/more-hinges#time-hinge-on-noun) | I |
-| `gevam` | locative around (figure on all sides of one landmark) | [Locative relations](/locative-relations#locative-relations) | I |
-| `gewel` | likeness exactly like (type match) | [Exactly like (hewel / gewel)](/exactly-like#exactly-like) | I |
+| `gerahom` | locative along (following the long side of one landmark) | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) | I |
 <!-- /generated -->
 
 <PageBreak />
@@ -87,12 +87,15 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 <!-- generated: overlays pos=g skip=22 -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
+| `gerom` | WHILE clause hinge (concurrent) | [Time hinges on a noun](/more-hinges#time-hinge-on-noun) | I |
+| `gevam` | locative around (figure on all sides of one landmark) | [Between, across, around](/locative-relations#locative-relations) | I |
+| `gewel` | likeness exactly like (type match) | [Exactly like (hewel / gewel)](/exactly-like#exactly-like) | I |
 | `gewem` | likeness like (type resemblance) | [Likeness (like)](/relations#likeness) | B |
 | `gezem` | ALTHOUGH clause hinge (concession; NP despite) | [Because, although (hinges)](/dependents#hinges) | B |
 | `gobom` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `goen` | join-relation on a par with (adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `gohem` | IF clause hinge (one-way conditional) | [If](/causation#if) | B |
-| `gohom` | locative across (edge to far edge of one landmark) | [Locative relations](/locative-relations#locative-relations) | I |
+| `gohom` | locative across (edge to far edge of one landmark) | [Between, across, around](/locative-relations#locative-relations) | I |
 | `gon` | join-relation prioritizing (adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `gorel` | IDENTITY copula (identical-to / same-as) | [Identity](/predication#identity) | B |
 | `govam` | SO-THAT clause hinge (the speaker's aim for the thing; NP for-goal) | [Because, although (hinges)](/dependents#hinges) | B |
@@ -105,6 +108,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `gunor` | AS-OF clause hinge (unasserted whose-now / placeholder now) resume | [As-of (whose now)](/as-of#as-of) | A |
 | `guon` | join-relation deprioritizing (adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `guvahum` | BY clause hinge (deadline: done at or before the endpoint) | [Time hinges on a noun](/more-hinges#time-hinge-on-noun) | I |
+| `guzurum` | locative beyond (on the far side of one landmark from the speaker) | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) | I |
 <!-- /generated -->
 
 <PageBreak />
@@ -128,14 +132,14 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `havel` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `havem` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `haver` | ALREADY phasal (the change has happened); -r for now: likely to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `havunam` | locative opposite (facing one landmark over a gap) | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) | I |
 | `hawul` | phasal still (the state continues); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `hawum` | phasal still (the state continues); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `hawur` | phasal still (the state continues); -r for now: about to end | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `hedam` | locative between (two landmarks) | [Locative relations](/locative-relations#locative-relations) | I |
+| `hedam` | locative between (two landmarks) | [Between, across, around](/locative-relations#locative-relations) | I |
+| `hegalom` | locative past (comes near one landmark and goes on) | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) | I |
 | `heham` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](/relations#exchange) | B |
 | `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](/residue-and-former#residue-and-former-climate) | I |
-| `helol` | NOT-YET phasal (the change is expected but has not happened); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `helom` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 <!-- /generated -->
 
 <PageBreak />
@@ -145,28 +149,28 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 <!-- generated: overlays pos=h skip=22 take=22 -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
+| `helol` | NOT-YET phasal (the change is expected but has not happened); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `helom` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `helor` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `hen` | join-relation exclusively for (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `henam` | AS-OF clause hinge (asserted whose-now / dated ledger) | [As-of (whose now)](/as-of#as-of) | A |
 | `henar` | AS-OF clause hinge (asserted whose-now / dated ledger) resume | [As-of (whose now)](/as-of#as-of) | A |
+| `herahom` | locative along (following the long side of one landmark) | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) | I |
 | `herom` | WHILE clause hinge (concurrent) | [Because, although (hinges)](/dependents#hinges) | B |
-| `hevam` | locative around (figure on all sides of one landmark) | [Locative relations](/locative-relations#locative-relations) | I |
+| `hevam` | locative around (figure on all sides of one landmark) | [Between, across, around](/locative-relations#locative-relations) | I |
 | `hewel` | likeness exactly like (manner match) | [Exactly like (hewel / gewel)](/exactly-like#exactly-like) | I |
 | `hewem` | likeness like (manner resemblance) | [Extra nouns (/b/)](/clause#extra-nouns) | B |
 | `hezem` | ALTHOUGH clause hinge (concession; NP despite) | [Because, although (hinges)](/dependents#hinges) | B |
 | `hobom` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `hodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](/can-and-cant#ability-fallback) | B |
 | `hoen` | join-relation equating or tying (adverb) | [Join-relations](/join-relations#join-relations) | I |
-| `hohom` | locative across (edge to far edge of one landmark) | [Locative relations](/locative-relations#locative-relations) | I |
+| `hohom` | locative across (edge to far edge of one landmark) | [Between, across, around](/locative-relations#locative-relations) | I |
 | `hon` | join-relation prioritizing (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](/try#try) | I |
 | `howam` | attempt mood (commitment unstated) | [Try](/try#try) | I |
 | `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](/try#try) | I |
 | `huan` | join-relation excluding (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `huen` | join-relation barring anything but (adverb) | [Join-relations](/join-relations#join-relations) | I |
-| `hulom` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
-| `hun` | join-relation refusing (adverb) | [Join-relations](/join-relations#join-relations) | I |
-| `hunom` | AS-OF clause hinge (unasserted whose-now / placeholder now) | [As-of (whose now)](/as-of#as-of) | A |
 <!-- /generated -->
 
 <PageBreak />
@@ -176,12 +180,16 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 <!-- generated: overlays pos=h skip=44 -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
+| `hulom` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
+| `hun` | join-relation refusing (adverb) | [Join-relations](/join-relations#join-relations) | I |
+| `hunom` | AS-OF clause hinge (unasserted whose-now / placeholder now) | [As-of (whose now)](/as-of#as-of) | A |
 | `hunor` | AS-OF clause hinge (unasserted whose-now / placeholder now) resume | [As-of (whose now)](/as-of#as-of) | A |
 | `huon` | join-relation deprioritizing (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `huvahum` | BY clause hinge (deadline: done at or before the endpoint) | [Because, although (hinges)](/dependents#hinges) | B |
 | `huvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `huvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `huvur` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `huzurum` | locative beyond (on the far side of one landmark from the speaker) | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) | I |
 <!-- /generated -->
 
 <PageBreak />

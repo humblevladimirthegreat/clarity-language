@@ -190,7 +190,7 @@ The relation word takes the other noun as a `bl-` word right after it. Use `/h/`
 
 ### Where, around, between {#locative}
 
-Plain *in*, *on*, *at*, *from*, *toward* are [hooks](/extra-noun-hooks#extra-noun-intermediate); write the source before the goal. *Between*, *across*, and *around* need a root.
+Plain *in*, *on*, *at*, *from*, *toward* are [hooks](/extra-noun-hooks#extra-noun-intermediate); write the source before the goal. *Between*, *across*, *around*, *past*, *along*, *opposite*, and *beyond* need a root.
 
 <!-- cheat-sheet: linking-clauses -->
 | Event / noun | Use | English | Stage |
@@ -198,12 +198,22 @@ Plain *in*, *on*, *at*, *from*, *toward* are [hooks](/extra-noun-hooks#extra-nou
 | [**`hedam` / `gedam`**](/locative-relations#locative-relations) | between two landmarks (one joined `/b/`) | *between* | I |
 | [**`hohom` / `gohom`**](/locative-relations#locative-relations) | from one edge to the far edge | *across* | I |
 | [**`hevam` / `gevam`**](/locative-relations#locative-relations) | on all sides of one landmark | *around* | I |
+| [**`hegalom` / `gegalom`**](/locative-relations#path-and-far-side) | comes near the landmark and goes on | *past* | I |
+| [**`herahom` / `gerahom`**](/locative-relations#path-and-far-side) | following the long side of the landmark | *along* | I |
+| [**`havunam` / `gavunam`**](/locative-relations#path-and-far-side) | facing the landmark with a gap between | *opposite* | I |
+| [**`huzurum` / `guzurum`**](/locative-relations#path-and-far-side) | on the far side from the speaker | *beyond* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Between](/locative-relations#locative-relations) | `zalazun vehohel hedam bledavol blawahol bal.` | *Alazun sits between a train and a station.* | I |
 | [Across](/locative-relations#locative-relations) | `zazozon vowurol hohom blawahol.` | *Azozon walks across the station.* | I |
 | [Around](/locative-relations#locative-relations) | `zogozelx vehohel hevam bledavol.` | *Cats sit around a train.* | I |
+| [Past](/locative-relations#path-and-far-side) | `zazozon vowurol hegalom blohehal.` | *Azozon walks past a house.* | I |
+| [Along](/locative-relations#path-and-far-side) | `zalazun veruvol herahom bledavol.` | *Alazun runs along a train.* | I |
+| [Opposite](/locative-relations#path-and-far-side) | `zahelan vehohel havunam blazozon.` | *Ahelan sits opposite Azozon.* | I |
+| [Across from](/locative-relations#path-and-far-side) | `zahelan vehohel havunam blazozon hohom blawahol.` | *Ahelan sits across the station from Azozon.* | I |
+| [Beyond](/locative-relations#path-and-far-side) | `zalazun vehohel huzurum blawahol.` | *Alazun sits beyond the station.* | I |
+| [Up the hill](/viewpoint#viewpoint-vs-landmark) | `zazozon vowurol herahom blamahul habuhol.` | *Azozon walks up the mountain.* | I |
 | [From, toward](/locative-relations#locative-relations) | `zazozon ul bawahol vowurol oel bedavol.` | *Azozon walks from a station toward a train.* | I |
 | [Out of, in](/locative-relations#locative-relations) | `zalazun ual bohehal veruvol al bedavol.` | *Alazun runs out of a house into a train.* | I |
 
@@ -288,6 +298,8 @@ Each hinge, linker, and relation word is the abstract sense of an ordinary root.
 | [`xevewom`](/sentence-linkers#sentence-linkers), [`xugohum`](/sentence-linkers#sentence-linkers), [`xavedam`](/sentence-linkers#sentence-linkers) | `evewom` 🎞️, `ugohum` 🚧, `avedam` 🍟 | I |
 | [`hewem`](/relations#likeness) *like*, [`heham`](/relations#exchange) *in exchange for*, [`hanem`](/relations#proxy) *on behalf of* | `ewel` 🪞, `ehal` 💱, `anel` 🪪 | B |
 | [`hedam`](/locative-relations#locative-relations) *between*, [`hohom`](/locative-relations#locative-relations) *across*, [`hevam`](/locative-relations#locative-relations) *around* | `edal` 🥪, `ohol` 🌉, `eval` 🎠 | I |
+| [`hegalom`](/locative-relations#path-and-far-side) *past*, [`herahom`](/locative-relations#path-and-far-side) *along* | `egalol` ☄️, `erahol` 🛤️ | I |
+| [`havunam`](/locative-relations#path-and-far-side) *opposite*, [`huzurum`](/locative-relations#path-and-far-side) *beyond* | `avunal` 🏐, `uzurul` 🌇 | I |
 | [`hobom`](/of-relations#of-relations) *part of*, [`hadam`](/of-relations#of-relations) *contents of*, [`hulom`](/of-relations#of-relations) *made of* | `obol` 🦴, `adal` 🫙, `ulol` 🪵 | I |
 | [`haham`](/of-relations#of-relations) *from*, [`hozowum`](/of-relations#of-relations) *a piece of* | `ahal` 🗾, `ozowul` 🪚 | I |
 | [`gamayam`](/social-ties#social-relations) *friend*, [`gegobom`](/social-ties#social-relations) *boss*, [`gohuyam`](/social-ties#social-relations) *partner*, [`gabolem`](/social-ties#social-relations) *care* | `amayal` *Mrs Claus*, `egobol` *crown*, `ohuyal` *holding hands*, `abolel` *house plant* | B |

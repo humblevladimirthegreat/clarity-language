@@ -587,12 +587,12 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🌄,daybreak,anuro,counting,order,none,dawn,sun rises over peaks; dawn is a new beginning,,morning,
 🌅,sunrise,azuro,counting,order,none,day,sunrise opens each new day; day is the sunrise-to-sunrise unit,,,dated-channel.md#intermediate-practice
 🌆,dusk,aduru,counting,takes-away,none,closure,dusk ends the day; closure is bringing something to an end,,,
-🌇,sunset,uzuru,counting,takes-away,none,,,,,
+🌇,sunset,uzuru,counting,takes-away,none,far-side,the sun sets on the far side of the horizon; the far side is the side away from where you stand,,,
 🌉,bridge,oho,place,order,,span,a bridge spans the gap; span is reaching across,,,locative-relations.md#intermediate-practice
 🚐,van,uvava,doing,holds,big,,a minibus is a van,,,
 🛣️,road,oraho,place,order,big,wide,a road is made broad enough for many; wide is broad across,,broad; extensive,
 ♨️,springs,owaha,place,holds,big,rejuvenation,hot springs restore the body; rejuvenation restores energy,,,
-🎠,carousel,eva,doing,holds,,,,,,
+🎠,carousel,eva,doing,holds,,surroundings,carousel horses ride on all sides of the pole; surroundings are what lies on all sides,,,
 🛝,playground,eboha,place,holds,big,recreation,playground invites play; recreation is the unobservable leisure-kind,m.v:play,slide,
 🎡,ferris-wheel,evava,doing,holds,big,perspective,ferris wheel rises for a wider view; perspective sees the bigger picture,,view,
 🎢,rollercoaster,oravo,doing,order,big,volatility,a rollercoaster rises and drops; volatility swings up and down,,,
@@ -676,7 +676,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ⚡,lightning,alulu,nature,takes-away,none,insight,lightning flashes in an instant; insight is a sudden flash,,,
 ❄️,snowflake,ozelu,nature,takes-away,small,coldness,a snowflake melts cold on your skin,,,
 ☃️,snowman,ozale,nature,one,big,temporary,snowman melts when warmth returns; temporary does not last,,,
-☄️,comet,egalo,nature,order,big,,,,,
+☄️,comet,egalo,nature,order,big,passing,a comet swings by the sun and keeps going; passing is coming near and going on,,,
 🔥,fire,avulu,nature,takes-away,none,,,,burn,numeric-derivation.md#advanced-practice
 💧,droplet,odele,nature,one,small,beginning,one droplet starts the flow; beginning is a small start,,source; original; initial; wet; liquid,
 🌊,ocean,ohala,nature,holds,big,overwhelm,ocean is vast surging water; flood is high-arousal surge,,sea; flood,comparatives.md#beginner-practice
@@ -705,7 +705,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ⚾,baseball,obuna,title,holds,none,,,,,
 🥎,softball,ozuna,title,holds,none,adaptation,softball is baseball made gentler; adaptation is adjusting the form,,version; adapt; flexible,
 🏀,ball,obove,doing,one,medium,,,,,
-🏐,volleyball,avuna,title,holds,none,,,,,
+🏐,volleyball,avuna,title,holds,none,facing,two volleyball sides face each other over the net; facing is being turned toward one another,,,
 🏈,football,uvuna,title,holds,none,strategy,football plans each play; strategy is planned action,,,
 🏉,rugby,oruna,title,holds,none,perseverance,rugby pushes through contact; perseverance is pushing through,,,
 🎾,tennis,oduna,title,holds,none,reciprocation,tennis exchanges shots; reciprocation is the unobservable give-and-take,,,

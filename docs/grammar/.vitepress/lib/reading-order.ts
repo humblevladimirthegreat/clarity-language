@@ -217,7 +217,7 @@ export const intermediateUnits: Unit[] = [
     text: 'Places and viewpoint',
     items: [
       { text: 'In a crisis, out of debt', link: '/abstract-landmarks' },
-      { text: 'Between, across, and around', link: '/locative-relations' },
+      { text: 'Landmark relations', link: '/locative-relations' },
       { text: 'Left, right, and facing', link: '/viewpoint' },
       { text: 'Role parts', link: '/role-parts' },
       { text: 'Which compound', link: '/compound-families' },

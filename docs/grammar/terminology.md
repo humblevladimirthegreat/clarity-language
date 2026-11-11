@@ -604,9 +604,9 @@ Content `/v/` or `/ɡ/` `/h/` + join vowel + **-n**.
 
 ### Locative relation
 
-Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; zone **-m** *amid* / *near* / *over* / *away from* / *in the direction of* / *out from among* / *by way of*) as extra-noun [hooks](/hooks#extra-noun) plus landmark `/b/`. *Between* is hosted `/h/` or `/ɡ/` plus a `/b/` join. A *from A to B* path is two hook extras (source, then goal).
+Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; zone **-m** *amid* / *near* / *over* / *away from* / *in the direction of* / *out from among* / *by way of*) as extra-noun [hooks](/hooks#extra-noun) plus landmark `/b/`. *Between* is hosted `/h/` or `/ɡ/` plus a `/b/` join. *Across*, *around*, *past*, *along*, *opposite*, and *beyond* are hosted the same way with one `bl-` landmark. A *from A to B* path is two hook extras (source, then goal).
 
-[Between, across, and around](/locative-relations#locative-relations)
+[Landmark relations](/locative-relations#locative-relations)
 
 ### Map resolution
 

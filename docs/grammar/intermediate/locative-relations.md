@@ -2,9 +2,9 @@
 band: intermediate
 ---
 
-# Between, across, and around {#between-across-and-around}
+# Landmark relations {#landmark-relations}
 
-### Locative relations {#locative-relations}
+### Between, across, around {#locative-relations}
 
 Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extra-noun hooks](/extra-noun-hooks#extra-noun-intermediate). To say where someone moves from and to, use one hook for each landmark (*from* one, *toward* another), and write the **source** before the **goal**.
 
@@ -85,6 +85,66 @@ As a plain noun, `zeval` is *a carousel*. **`em`** *near* says only that the per
 
 **Compare with:** a `/b/` word with no relation word before it is the recipient. *Like* is [likeness](/relations#likeness). *For a hammer* as a swap is [exchange](/relations#exchange). *On behalf of Alazun* is [proxy](/relations#proxy).
 
+### Past, along, opposite, beyond {#path-and-far-side}
+
+Four more relations take one landmark in a `bl-` word, the same way *across* and *around* do.
+
+*Past* is **`hegalom`**: the path comes near the landmark and goes on, without stopping there and without going in. (cue: ☄️ *comet*: a comet swings by the sun and keeps going)
+
+> `zazozon vowurol hegalom blohehal.`
+>
+> z-Azozon | v-walk | [h-past | bl-house]
+>
+> "Azozon walks past a house."
+
+**`em`** *near* says only that the person is close, and **`hohom`** *across* reaches both edges. On a noun, **`gegalom`** names what you reach by going past the landmark: `zohehal gegalom blawahol` *a house past the station*. As a plain noun, `zegalol` is *a comet*.
+
+*Along* is **`herahom`**: the path, or a row of things, follows the long side of the landmark (a road, a river, a train). It covers both walking on a road and walking beside it. (cue: 🛤️ *railway*: two rails run side by side the whole way)
+
+> `zalazun veruvol herahom bledavol.`
+>
+> z-Alazun | v-run | [h-along | bl-train]
+>
+> "Alazun runs along a train."
+
+On a noun it is **`gerahom`**: `zohehalx gerahom bledavol` *houses along the train*. As a plain noun, `zerahol` is *a railway*.
+
+*Opposite* is **`havunam`**: the person faces the landmark with a gap between them. (cue: 🏐 *volleyball*: the two sides face each other over the net)
+
+> `zahelan vehohel havunam blazozon.`
+>
+> z-Ahelan | v-sit | [h-opposite | bl-Azozon]
+>
+> "Ahelan sits opposite Azozon."
+
+To name the gap (*across the station from Azozon*), add **`hohom`** with the gap as its landmark:
+
+> `zahelan vehohel havunam blazozon hohom blawahol.`
+>
+> z-Ahelan | v-sit | [h-opposite | bl-Azozon] | [h-across | bl-station]
+>
+> "Ahelan sits across the station from Azozon."
+
+On a noun it is **`gavunam`**. As a plain noun, `zavunal` is *a volleyball*.
+
+*Beyond* is **`huzurum`**: the person or thing is on the far side of the landmark from where the speaker stands. (cue: 🌇 *sunset*: the sun goes down on the far side of the horizon)
+
+> `zalazun vehohel huzurum blawahol.`
+>
+> z-Alazun | v-sit | [h-beyond | bl-station]
+>
+> "Alazun sits beyond the station."
+
+*Past* names a route that goes by the landmark. *Beyond* names only the far side, with no route. On a noun it is **`guzurum`**. As a plain noun, `zuzurul` is *a sunset*.
+
+<!-- cheat-sheet: linking-clauses -->
+| Ageben | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hegalom` / `gegalom`** | path that comes near the landmark and goes on | *past* | `egalol` *comet* | ☄️: a comet swings by the sun and keeps going |
+| **`herahom` / `gerahom`** | following the long side of the landmark | *along* | `erahol` *railway* | 🛤️: two rails run side by side the whole way |
+| **`havunam` / `gavunam`** | facing the landmark with a gap between | *opposite* | `avunal` *volleyball* | 🏐: the two sides face each other over the net |
+| **`huzurum` / `guzurum`** | on the far side of the landmark from the speaker | *beyond* | `uzurul` *sunset* | 🌇: the sun goes down on the far side of the horizon |
+
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -137,6 +197,22 @@ z-Azozon | v-sit | [h-between | [bl-train | bl-bridge | b-and]]
 z-Alazun | v-run | [h-across | bl-water]
 :::
 
+**4.** *Azozon walks past the house.*
+
+::: details Show answer
+`zazozon vowurol hegalom blohehal.`
+
+z-Azozon | v-walk | [h-past | bl-house]
+:::
+
+**5.** *Ahelan sits across the water from Alazun.*
+
+::: details Show answer
+`zahelan vehohel havunam blalazun hohom blowulal.`
+
+z-Ahelan | v-sit | [h-opposite | bl-Alazun] | [h-across | bl-water]
+:::
+
 #### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zahelan ual bedavol vowurol el bohol.`
@@ -163,6 +239,22 @@ z-Alazun | v-walk | [h-across | bl-bridge]
 *Alazun walks across the bridge.*
 :::
 
+**4.** `zalazun veruvol herahom blowulal.`
+
+::: details Show answer
+z-Alazun | v-run | [h-along | bl-water]
+
+*Alazun runs along the water.*
+:::
+
+**5.** `zazozon vehohel huzurum blohol.`
+
+::: details Show answer
+z-Azozon | v-sit | [h-beyond | bl-bridge]
+
+*Azozon sits beyond the bridge.*
+:::
+
 #### Pick one {#intermediate-pick-one}
 
 **1.** *Alazun walks across the water.* `zalazun vowurol hohom blowulal.` or `zalazun gohom blowulal vowurol.`
@@ -173,6 +265,16 @@ z-Alazun | v-walk | [h-across | bl-bridge]
 z-Alazun | v-walk | [h-across | bl-water]
 
 The path is an **/h/** relation on the walk; **`gohom`** would label Alazun as the thing that is across.
+:::
+
+**2.** *Ahelan walks past the bridge.* `zahelan vowurol hegalom blohol.` or `zahelan gegalom blohol vowurol.`
+
+::: details Show answer
+`zahelan vowurol hegalom blohol.`
+
+z-Ahelan | v-walk | [h-past | bl-bridge]
+
+The route is an **/h/** relation on the walk; **`gegalom`** would say where Ahelan is, and leave the walk with no route.
 :::
 
 #### Fix it {#intermediate-fix-it}

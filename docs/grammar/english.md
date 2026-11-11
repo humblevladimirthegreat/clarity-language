@@ -21,6 +21,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | who does the action (*seen by Azozon*) | subject `/z/` | [Who acts](/clause#who-acts-and-the-action) |
 | tool (*writes by / with a hammer*) | hook **`aol`** (*using*) + `/b/` | [Hooks](/hooks#extra-noun) |
 | place (*by the station*) | hook **`em`** (*near*) + `/b/` (or **`el`** *at*) | [Hooks](/hooks#extra-noun) |
+| passing (*walks by the station*) | **`hegalom`** (*past*) + the landmark | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) |
 | deadline (*by 15:30*, *by the storm*) | **`huvahum`** + `/b/` (or **`huvahum blarl`** + sentence) | [By a deadline](/dependents#by-deadline) |
 | deadline a day away (*by tomorrow*) | **`huvahum`** + a signed count in `/b/` | [Count from now](/dated-channel#dated-channel) |
 | manner (*by walking hastily*) | ordinary adverb `/h/`, no `/b/` | [Adverbs](/clause#adverbs-h) |
@@ -142,7 +143,11 @@ One English word, one row: the form that says it and the section that teaches it
 | *left side* / *right side* / *behind* / *in front of* (*behind the house*) | a direction with **`th`** + **`o`** + `/b/` landmark, such as `gazuhothel blohehal` | [Landmark's own front](/viewpoint#landmark-facing) |
 | *with* / *alongside* / *along with* (*runs with Alazun*) | **`han`** + `/b/` | [Join-relations](/join-relations#join-relations) |
 | *without* / *apart from* (*walks apart from the house*) | **`huan`** + `/b/` | [Join-relations](/join-relations#join-relations) |
-| *via* / *by way of* / *through* / *along* (*goes via the station*, *walks along the road*) | hook **`uel`** + `/b/` (**`uem`** for a setting) | [Hooks](/hooks#extra-noun) |
+| *via* / *by way of* / *through* (*goes via the station*) | hook **`uel`** + `/b/` (**`uem`** for a setting) | [Hooks](/hooks#extra-noun) |
+| *along* / *alongside* a line (*walks along the road*, *houses along the river*) | **`herahom`** (on a noun, **`gerahom`**) + the landmark: `herahom blorahol` | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) |
+| *past* (*walks past the house*) | **`hegalom`** (on a noun, **`gegalom`**) + the landmark: `hegalom blohehal` | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) |
+| *opposite* / *facing* / *across from* (*sits opposite Alazun*, *across the water from Alazun*) | **`havunam`** + the landmark; name the gap with **`hohom`**: `havunam blalazun hohom blowulal` | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) |
+| *up the hill* / *down the hill* / *uphill* / *downhill* | **`herahom`** + the hill, then bare **`habuhol`** / **`hoduhol`**: `herahom blamahul habuhol` | [Viewpoint vs landmark](/viewpoint#viewpoint-vs-landmark) |
 | *through there* | resume hook **`uer`** | [Point back](/in-clause-hooks#hook-resume) |
 | *with it* (the same tool) | resume hook **`aor`** | [Point back](/in-clause-hooks#hook-resume) |
 | *off* / *away from* / *out of* (*walks off the road*) | hook **`ul`** + `/b/` | [Hooks](/hooks#extra-noun) |
@@ -155,7 +160,8 @@ One English word, one row: the form that says it and the section that teaches it
 | *parallel* (*parallel to Alazun*) | the direction, then *like*: `gurom gewem blalazun` | [Likeness](/relations#likeness) |
 | *lean* / *tilt* | `voduhol hruwul` (*almost falls*) | [Already, still, not yet](/already-still-yet#phasal) |
 | *corner* / *around the corner* | `zadugul` (the corner); `el badugul` *at the corner*; `hevam bladugul` *around the corner* | [Locative relations](/locative-relations#locative-relations) |
-| *beyond* / *farther than* | rank on distance: `zohehal zol guzavom` (farther than the house) | [Bar words](say-amounts.md#bar-words) |
+| *beyond* / *on the far side of* / *the other side of* (*sits beyond the station*) | **`huzurum`** (on a noun, **`guzurum`**) + the landmark: `huzurum blawahol` | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) |
+| *farther than* | rank on distance: `zohehal zol guzavom` (farther than the house) | [Bar words](say-amounts.md#bar-words) |
 | *versus* / *against* (*Azozon versus Alazun*) | hook **`uol`** + `/b/` | [Hooks](/hooks#extra-noun) |
 | *somewhere* / *nowhere* / *everywhere* / *elsewhere* | **`el bar`** / **`el bal`** / **`el bual`** / **`el bur`** | [Somewhere, nowhere, everywhere](/here-there#place-indefinites) |
 | *anywhere* (any place will do) / *not … anywhere* | **`el ber`** (*at any one*); with a denial, **`el bal`** (*nowhere*) | [Somewhere, nowhere, everywhere](/here-there#place-indefinites), [unspecified member](/joins#unspecified-member-r-phrase) |

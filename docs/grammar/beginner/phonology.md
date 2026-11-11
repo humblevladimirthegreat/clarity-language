@@ -4,9 +4,9 @@ band: beginner
 
 # Phonology {#phonology}
 
-How to **sound out** Ageben. Each letter has one pronunciation. Syllables end with a consonant only at the end of the word, so you know when words stop. Every syllable takes an even beat, and a word is stressed on its first one. When you need a moment to think, a held sound fills the pause.
+Phonology is how a language sounds. This page teaches you to **sound out** Ageben. Each letter has one pronunciation, the same every time. A **syllable** is one beat with one vowel, and it ends with a consonant only at the end of a word, so you can hear where words stop. Every syllable takes an even beat, and a word is stressed on its first one. When you need a moment to think, a held sound fills the pause.
 
-Pronounce each letter the same way every time. A **syllable** is one beat with one vowel. Spell the beats you actually say: a consonant starts a beat, and the last consonant of a content word (a word built on a root, such as a noun or verb) is where that word ends.
+Spelling follows the beats you say. A consonant starts a beat, and the last consonant of a content word (a word built on a root, such as a noun or verb) is where that word ends.
 
 Write native Ageben in **lowercase**. A capital means nothing extra: read it as the same letter in lowercase. Two vowel letters in a row are two syllables. Say each vowel as its own beat.
 
@@ -40,11 +40,25 @@ To find `u`, start from `a`: keep the tongue centered, close the jaw, and round 
 
 #### Vowel pitch {#vowel-pitch}
 
-Each vowel also has its own **pitch**, always the same one: `a` is low, `o` mid-low, `e` mid-high, and `u` high. That climb hangs on letter order (first is low, fourth is high). Vowel pitch is optional and adds no meaning of its own. It backs up the vowel's sound, so a listener who half-hears a vowel can still tell which one it was. When a vowel's sound and its pitch disagree, trust the sound. The opposite vowels `a` and `u` are also the furthest apart in pitch. Keep each vowel's pitch when you say a word with feeling: make it louder, not higher.
+Each vowel also has its own **pitch**, always the same one: `a` is low, `o` mid-low, `e` mid-high, and `u` high. That is the vowels' usual order, so the first is lowest and the fourth is highest. The opposite vowels `a` and `u` are also the furthest apart in pitch.
 
-Voices differ, so a vowel's pitch is not a fixed note but how far it sits above your **home note**, the note you say `a` on. Any comfortable note works. To practice, pick a pattern and a tempo below, choose a home note that sits easily low in your speaking voice, press **Play**, and say each vowel on its note as a voice sings it and it lights up. The voice is plain on purpose, so copy its vowel and its pitch. The corner shows the note's name while it sounds. Matching a note is a skill like any other, and it improves quickly with practice. Each vowel's sound already tells it apart, so your Ageben is clear while you learn.
+Vowel pitch is optional and adds no meaning of its own. It repeats what the vowel's sound already says, so a listener who half-hears a vowel can still tell which one it was. When a vowel's sound and its pitch disagree, trust the sound. Keep each vowel's pitch when you say a word with feeling: make it louder, not higher.
 
-With a microphone, **Find my home note** listens while you hold a long `a` on a comfortable low note and picks the nearest home. **Check me** leaves a pause after each note for you to say it back, then marks whether each vowel went up or down from the one you said before it. Only the direction counts, so a home note that is a little off costs nothing. Switch on **Strict** to match each note itself, within about a semitone. Choose **From memory** to skip the notes and say each vowel unprompted. Click any note to check just that one against its note. All listening happens in your browser: nothing you say is recorded or sent anywhere, and your home note is saved only on this device.
+Voices differ, so a vowel's pitch is not a fixed note. It is how far the vowel sits above your **home note**, the note you say `a` on. Any comfortable note works.
+
+To practice, pick a pattern and a tempo below, and choose a home note that sits easily low in your speaking voice. Press **Play**. A voice sings each vowel and the vowel lights up: say it on the same note. The voice is plain on purpose, so copy its vowel and its pitch. The corner shows the note's name while it sounds. Matching a note improves quickly with practice, and each vowel's sound already tells it apart, so your Ageben is clear while you learn.
+
+With a microphone, the drill can also listen:
+
+| Control | What it does |
+|---------|--------------|
+| **Find my home note** | Listens while you hold a long `a` on a comfortable low note, and picks the nearest home note. |
+| **Check me** | Leaves a pause after each note for you to say it back, then marks whether each vowel went up or down from the one you said before it. Only the direction counts, so a home note that is a little off does no harm. |
+| **Strict** | Checks each note itself, within about a semitone (one piano key). |
+| **From memory** | Skips the notes, so you say each vowel unprompted. |
+| Click a note | Checks just that vowel against its note. |
+
+All listening happens in your browser. Nothing you say is recorded or sent anywhere, and your home note is saved only on this device.
 
 <PitchDrill />
 
@@ -90,11 +104,11 @@ Give every syllable about the same length, and keep its vowel full however fast 
 
 Each word takes a light stress on its **first syllable**. Since the rule never changes, spelling does not mark it. The ending consonant already tells a listener where a word stops; the stressed first beat tells them where the next one starts, so fast speech still splits into words.
 
-`azozon` / ˈä.zo̞.zo̞n /, `odozel` / ˈo̞.do̞.ze̞l /
+`azozon` / ˈä.zo̞.zo̞n /, `odozel` / ˈo̞.do̞.ze̞l / (the mark ˈ sits before the stressed syllable, and a dot separates syllables)
 
 Stress is **loudness** only: say the first syllable a little louder, with a crisp start. Its vowel keeps its own pitch, and the syllable keeps its one beat, so a stressed `a` is loud and still low. English raises and lengthens a stressed syllable, so practice stress as a drum accent: say the word on its vowel pitches, then say it again and tap the first beat louder.
 
-**Hold the ending.** Let the final `-l`, `-m`, `-n` or `-r` sound for a moment instead of clipping it. It is often the only difference between two words, and all four are sounds you can hold. In singing, put the cutoff on it.
+**Hold the ending.** Let the final `-l`, `-m`, `-n` or `-r` sound for a moment instead of clipping it. It is often the only difference between two words, and all four are sounds you can hold. In singing, end the note on that consonant.
 
 ### Thinking sounds {#thinking-sounds}
 
@@ -109,9 +123,9 @@ Do not hold `u`: a held `u` can sound like a denial.
 
 ## See also
 
-- Citation (root + ending, no sentence): [word-endings.md](word-endings.md)
-- Role letters in a clause: [clause.md](clause.md#role-letters)
+- Saying a word on its own, as a root plus an ending outside any sentence: [word-endings.md](word-endings.md)
+- Role letters, the first letter that tells a word's role in the sentence: [clause.md](clause.md#role-letters)
 - Respelling an English name: [lexicon](lexicon.md#respell)
-- Numbers (role letter + `r` exception and [digit syllables](numbers.md#counts)): [numbers.md](numbers.md)
-- Mention spans (letter as form in a clause): [spans.md](spans.md)
+- Numbers, with their own word shape and [digit syllables](numbers.md#counts): [numbers.md](numbers.md)
+- Talking about a letter itself inside a sentence: [spans.md](spans.md)
 - Mid-word `x` and `th`: [compounds.md](compounds.md)
