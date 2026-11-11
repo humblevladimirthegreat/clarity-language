@@ -1,6 +1,6 @@
 # Style pass
 
-**Status:** partially implemented. Decided 2026-11-11: a rising warning count fails the build on every page (the ratchet); recipe pages, cheat sheets, and level reviews get which-page rows; headings that need a retitle are logged and retitled together in H1; the user reviews each phase before the next starts; forms take bold only where introduced. **Phase 1 done 2026-11-11** (T1, T2, T3, C1). Next: the user reviews the C1 diff (commit `d09d8f42`) and the [open decisions](#open-decisions), then Phase 2.
+**Status:** partially implemented. Decided 2026-11-11: a rising warning count fails the build on every page (the ratchet); recipe pages, cheat sheets, and level reviews get which-page rows; headings that need a retitle are logged and retitled together in H1; the user reviews each phase before the next starts; forms take bold only where introduced. **Phase 1 done 2026-11-11** (T1, T2, T3, C1). Decided 2026-11-11 after Phase 1, now in [doc-style.md](../meta/doc-style.md) and the agent file: a recipe lead keeps its consequence; a recipe section's answer form may be bold once; cheat-sheet prose puts bare letters and endings in backticks; a choice whose reason a later page teaches (object-first order, used mostly by other speech acts) needs no *when* yet. `purpose.md` and `introduction.md` were already rewritten to [orientation-style.md](../meta/orientation-style.md), so the pass skips them. Next: the user reviews the C1 diff (commit `d09d8f42`) and settles [open decision](#open-decisions) 1, then Phase 2.
 
 **Related:** [doc-style.md](../meta/doc-style.md), [claritish-style.md](../meta/claritish-style.md), [orientation-style.md](../meta/orientation-style.md), [grammar-docs.md](../meta/grammar-docs.md), [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts), [prose-style.ts](../../src/lint/prose-style.ts), [prose-style-baseline.json](../../src/lint/prose-style-baseline.json), [sections.ts](../../src/lint/sections.ts), [style-editor.md](../../.claude/agents/style-editor.md)
 
@@ -42,7 +42,7 @@ Each phase ends with the phase gate, the last unit's commit, consolidation, the 
 
 ### Phase 2: Beginner, first half
 
-1. Fold the user's corrections from the C1 review, and the answers to the [open decisions](#open-decisions) that change the digest, into `.claude/agents/style-editor.md` and, where they are rules, `doc-style.md`. This is an orchestrator edit with its own commit.
+1. Fold the user's corrections from the C1 review into `.claude/agents/style-editor.md` and, where they are rules, `doc-style.md`. This is an orchestrator edit with its own commit.
 2. B2 to B5: Beginner units 2 to 5 in `reading-order.ts`, starting with "Pointing and describing" (`pronouns.md`, `plurality.md`, `predication.md`, `knowing.md`, `left-bound-adjectives.md`).
 
 **Cut:** the six-unit budget.
@@ -57,7 +57,6 @@ B6 to B9, one per remaining Beginner unit.
 
 | Unit | Pages | Added to the prompt |
 |------|-------|--------------------|
-| O1 | `purpose.md`, `introduction.md` | Read [orientation-style.md](../meta/orientation-style.md) |
 | O2 | `english.md` and the five `say-*.md` recipes | The recipe row of the which-page table |
 | O3, O4 | The Claritish track in two halves | Read [claritish-style.md](../meta/claritish-style.md) |
 
@@ -109,12 +108,11 @@ Headings that prose units reported under rule 7 of the digest, each with its pag
 
 ### Sections missing a fact
 
-Sections that prose units reported under rule 6: the section needs a consequence or a *when* that no page states. Each needs a user decision or an owner-page edit; the pass does not fill them. See [open decisions](#open-decisions) 1 and 2.
+Sections that prose units reported under rule 6: the section needs a consequence or a *when* that no page states. Each needs a user decision or an owner-page edit; the pass does not fill them.
 
 | Section | Missing |
 |---------|---------|
-| `clause.md#intention-adverbs` | No example, no list of the words, no consequence; *intention* is not glossed. It links only to a section on its own page |
-| `clause.md`, direct object section | Allows putting the object first, but no page says when you would choose that order |
+| `clause.md#intention-adverbs` | No example, no list of the words, no consequence; *intention* is not glossed. See [open decision](#open-decisions) 1 |
 
 ### Gates
 
@@ -129,12 +127,8 @@ One commit per unit after its gate is green, by the orchestrator only, with the 
 
 | Phase | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | All |
 |-------|---|---|---|---|---|---|---|---|-----|
-| Commits | 6 | 5 | 5 | 7 | 7 | 6 | 6 | 4 | 46 |
+| Commits | 6 | 5 | 4 | 7 | 7 | 6 | 6 | 4 | 45 |
 
 ## Open decisions
 
-1. **`clause.md#intention-adverbs` has nothing to teach from.** The section has no example, never names the words, and gives no consequence. Options: (a) the owning page for intention adverbs supplies an example and a consequence, and the section points to it; (b) the section becomes a one-sentence pointer to where intention words are taught; (c) cut it from the Beginner clause page. **Recommendation:** (b), unless the owner page is Beginner too, then (a). A learner gains nothing from an exampleless mention on the first clause page, and a pointer keeps the role-letter overview complete.
-2. **When to put the direct object first** (`clause.md`). The page allows object-first order but no page says when you would choose it. This is a grammar question. Options: (a) state that the order is free and changes nothing; (b) name the use it serves (for example contrast, or what the sentence is about) if the grammar already assigns one, such as on `topic.md`; (c) cut the mention from the Beginner page. **Recommendation:** check `topic.md` first. If it gives object-first a use, (b). Otherwise (a), so the learner knows it is a free choice.
-3. **Recipe leads without a consequence.** The which-page row says a recipe lead "still ends with the consequence", but the echo-question recipe has none. Options: keep the row, so O2 adds a consequence where the owning page states one and reports the rest; or drop the consequence clause for recipe pages. **Recommendation:** keep the row. The consequence is why a learner picks this recipe over the English habit.
-4. **Bold on forms on recipe pages.** Recipe pages bold forms that are taught elsewhere (**`yel`**). Options: (a) the general rule, with no bold, since the recipe does not introduce the form; (b) treat each recipe section's answer form as introduced there, bold once per section. **Recommendation:** (b). A recipe is looked up, not read in order, so the bold answer form is what the reader scans for.
-5. **Bold endings on cheat sheets.** Cheat-sheet prose bolds bare endings (**-l**), and the cheat-sheet row exempts sheets from the bold rule. Options: keep the exemption; or extend the row so bare letters and endings go in backticks on sheets too, with form bold left alone. **Recommendation:** extend it. Backticks on letters are a marking rule rather than emphasis, and a sheet that marks `-l` the way the lesson does is easier to match.
+1. **`clause.md#intention-adverbs` cannot get an example where it is.** Every intention adverb is taught after `clause.md` (the first is `oda` on `/h/`, at `can-and-cant.md#ability-fallback`), so the learning-order lint rejects an example there, and the forward-link lint rejects a pointer. Several Intermediate pages link to the section as the definition of the class. Options: (a) leave the section as a definition with no example, and accept the gap; (b) move the H3 to `can-and-cant.md`, right after `#ability-fallback`, with `npm run move-heading` (it keeps the id and rewrites every link), and give it `hodaxol` as its example and the consequence that it covers the whole claim wherever it sits; (c) cut the section and retarget the links to each word's own page. **Recommendation:** (b). The class is then defined where the learner meets its first member, with an example, and every later link still lands on the definition. It is a move, which this pass otherwise does not make, so it needs your go-ahead.

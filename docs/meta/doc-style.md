@@ -50,8 +50,8 @@ The lead rules were written for a section that teaches a grammar feature. Other 
 | Tables | May stay telegraphic. Running prose may not |
 | An orientation page (`purpose.md`, `introduction.md`) | [orientation-style.md](orientation-style.md). The lead rules and the slogan test do not apply; the rest of this page does, as that page lists |
 | The glossary (`terminology.md`) | Exempt from the specialist-term check, since defining those terms is its job |
-| A recipe page (`english.md`, `say-*.md`) | The heading already names the English job, and a **Needs:** line comes first. The lead restates the job in a clause at most, often as the English example, then gives the Ageben shape, and still ends with the consequence. Everything else applies |
-| A cheat sheet (`cheat-sheets/`) or level review (`review*.md`) | Lookup and practice. Only [punctuation](#punctuation), [link text](#link-text), [plain language](#plain-language-no-assumed-linguistics), and voice apply to their prose. Generated tables and Practice are not edited for style |
+| A recipe page (`english.md`, `say-*.md`) | The heading already names the English job, and a **Needs:** line comes first. The lead restates the job in a clause at most, often as the English example, then gives the Ageben shape, and still ends with the consequence. A recipe is looked up, not read in order, so each section treats its answer form as introduced there: that form may be bold once in the section. Everything else applies |
+| A cheat sheet (`cheat-sheets/`) or level review (`review*.md`) | Lookup and practice. Only [punctuation](#punctuation), [link text](#link-text), [plain language](#plain-language-no-assumed-linguistics), and voice apply to their prose, and bare letters and endings go in backticks, not bold, as on the lesson pages ([voice and length](#voice-and-length)). Generated tables and Practice are not edited for style |
 
 ## What the build checks
 <a id="what-the-build-checks"></a>
@@ -193,6 +193,8 @@ When you find the same explanation a third time, keep the one in the owning sect
 <a id="a-choice-says-when"></a>
 
 When a page offers two ways to do something, it says when to pick each. "The unvoiced sound is fine for style" leaves the reader guessing. "The unvoiced sound means the same, so use it whenever you like its sound better" does not.
+
+When the reason for a choice belongs to a later page, the earlier page states the default and leaves the reason out. For example, a non-default word order mostly serves another speech act, such as a question, so the clause page keeps to the default order and gives no reason to change it until those orders are taught.
 
 A mention of something the section does not explain is a related fault. Either explain it in a clause or cut it ([teach now; don't preview later](grammar-docs.md#teach-now-dont-preview-later)).
 
