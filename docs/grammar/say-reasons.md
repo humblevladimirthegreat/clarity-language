@@ -12,11 +12,13 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 
 | English | Ageben |
 |---------|---------|
-| *although* / *while* / *whilst* / *until* / *till* / *before* / *after* | same hinge + **`blarl`** shape on adverb `/h/`, **-m** ([dependent clauses](/dependents#dependent-clauses)): **`hezem`** / **`herom`** / **`harum`** / … |
+| *while* / *whilst* / *until* / *till* / *before* / *after* (time) | same hinge + **`blarl`** shape on adverb `/h/`, **-m** ([dependent clauses](/dependents#dependent-clauses)): **`herom`** / **`harum`** / **`habam`** / **`halam`** |
+| *although* / *even though* / *though* | **`thezem blarl`** + the sentence, on adverb `/th/`: the speaker expected otherwise ([hinges](/dependents#hinges)). Someone else's expectation adds a [holder](/holder#holder) on a channel before it: **`theyomalazun thezem blarl`** (*although, as Alazun saw it*) |
+| *even if* | **`thezem thohem blarl`** ([even if](/because-and-iff#only-because)) |
 | *so that* / *in order to* / *my aim is for* | same shape: **`thovam`** ([so that](/dependents#so-that)), your own aim; NP intended get = **`thovam`** + `/b/` **noun**. Someone else's aim adds a [holder](/holder#holder) |
-| *despite* (NP) | same **`hezem`** (or **`gezem`**) + `/b/` **noun**, not a second hinge |
+| *despite* (NP) | same **`thezem`** (or **`gezem`**) + `/b/` **noun**, not a second hinge: `zazozon vowurol thezem blalazun.` |
 | *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uom`** + the stance it goes against: `uom hwuvul` / `uom hwudum` / `uom thagom` / `uom thogel` / `uom thebam` ([contrary to a stance](/contrary-to#contrary-to-stance)) |
-| *though I promised* / *breaking my promise* | **`hezem blarl`** + the promise as its own sentence: `zuwen vezuvel hezem blarl zuwen vowurol hwuzal.` (*I sleep, although I promised to walk*) ([contrary to a stance](/contrary-to#contrary-to-stance)) |
+| *though I promised* / *breaking my promise* | **`thezem blarl`** + the promise as its own sentence: `zuwen vezuvel thezem blarl zuwen vowurol hwuzal.` (*I sleep, although I promised to walk*) ([contrary to a stance](/contrary-to#contrary-to-stance)) |
 | *after they took back their yes* / *more than they agreed to* | a yes taken back is a no: **`uom hwudum`**; past the agreed terms is the consent bar **`hwudam`** ([every bar](/stance-bars#stance-bars)) |
 | *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`blarl`**: **`theyom blarl`** / **`thubom blarl`** ([evidence clause](/evidentiality#evidence-clause)) |
 | *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xahom`** ([continue](/speech-moves#continue-x)) |
@@ -27,11 +29,11 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 | *due to* / *owing to* / *because of* (NP) | **`thahum`** + `/b/` **noun** (`thahum blerulal`) |
 | *not because* (clause) | **`thahum thul blarl`** ([stance join before `blarl`](/verb-and-stance-joins#stance-join-before-barl)) |
 | *however* / *meanwhile* (discourse) | **`xezem`** / **`xugorom`** |
-| *regardless of* (NP) | same **`hezem`** + `/b/` **noun** as *despite* |
+| *regardless of* (NP) | same **`thezem`** + `/b/` **noun** as *despite* |
 | *anyway* / *anyhow* (back to the main line) | the resume hook **`er …`** ([back to the main line](/discourse-hooks#discourse)) |
 | *otherwise* / *or else* (failing that) | **`xen`** between the clauses ([clause sequence](/clause-sequence#clause-sequence)) |
-| *nevertheless* / *nonetheless* (discourse) | **`xezem`** after the finished claim; inside one sentence, **`hezem blarl`** |
-| *whereas* (two claims set against each other) | **`xezem`** before the second claim, or **`hezem blarl`** inside one sentence |
+| *nevertheless* / *nonetheless* (discourse) | **`xezem`** after the finished claim; inside one sentence, **`thezem blarl`** |
+| *whereas* / *while* (contrast: two facts side by side, no expectation) | **`xezem`** before the second claim, or **`hezem blarl`** inside one sentence: `zazozon vowurol hezem blarl zalazun vezuvel.` ([hinges](/dependents#hinges)) |
 | *moreover* / *furthermore* (discourse) | **`aol …`** opens the sentence that goes further; **`al …`** adds a separate point ([stacked discourse hooks](/discourse-hooks#stacked-discourse)) |
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}

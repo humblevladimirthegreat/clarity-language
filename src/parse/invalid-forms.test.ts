@@ -172,12 +172,7 @@ const ROWS: Row[] = [
   {
     invalid: "zazozon vowurol hodogonom blarl zalazun vezuvel.",
     rejection: "standInHost",
-    valid: "zazozon vowurol hezem blarl zalazun vezuvel.",
-  },
-  {
-    invalid: "zazozon vowurol thezem blarl zalazun vezuvel.",
-    rejection: "standInHost",
-    valid: "zazozon vowurol hezem blarl zalazun vezuvel.",
+    valid: "zazozon vowurol thezem blarl zalazun vezuvel.",
   },
   {
     invalid: "thahum darl zazozon vehohel.",
@@ -190,9 +185,9 @@ const ROWS: Row[] = [
     valid: "zazozon vowurol thohem blurl zalazun vezuvel.",
   },
   {
-    invalid: "zazozon vowurol thohem hezem blarl zalazun vezuvel.",
+    invalid: "zazozon vowurol thohem thezem blarl zalazun vezuvel.",
     rejection: "hingeStack",
-    valid: "zazozon vowurol hezem thohem blarl zalazun vezuvel.",
+    valid: "zazozon vowurol thezem thohem blarl zalazun vezuvel.",
   },
   { invalid: "yol yael zazozon vowurol.", rejection: "checkBackBody", valid: "zazozon vowurol. yel yaol." },
   { invalid: "zazozon vowurol thugem blarl zalazun vezuvel.", rejection: "standInHost", valid: "zazozon vowurol theyom blarl zalazun vezuvel." },
@@ -201,7 +196,7 @@ const ROWS: Row[] = [
   { invalid: "zazozon vowurol thahum theyom blarl zalazun vezuvel.", rejection: "hingeStack", valid: "zazozon vowurol theyom thahum blarl zalazun vezuvel." },
   { invalid: "zazozon vowurol thevum blrul blarl zalazun vezuvel.", rejection: "standInHost", valid: "zazozon vowurol thubol blral blarl zalazun vezuvel." },
   {
-    invalid: "zazozon vowurol thahum hezem blarl zalazun vezuvel.",
+    invalid: "zazozon vowurol thahum thezem blarl zalazun vezuvel.",
     rejection: "hingeStack",
     valid: "zazozon vowurol thebem thahum blarl zalazun vezuvel.",
   },
@@ -264,6 +259,7 @@ const ROWS: Row[] = [
   { invalid: "zazozon hagom vowurol.", rejection: "retiredIntentionRoot", valid: "zazozon thagom vowurol." },
   { invalid: "zazozon hogem vowurol.", rejection: "retiredIntentionRoot", valid: "zazozon thogem vowurol." },
   { invalid: "zuwen vowurol hovam blarl zuwen vehohel.", rejection: "retiredPurposeHinge", valid: "zuwen vowurol thovam blarl zuwen vehohel." },
+  { invalid: "zazozon vowurol hezem blalazun.", rejection: "retiredDespiteHinge", valid: "zazozon vowurol thezem blalazun." },
   { invalid: "zazozon vowurol habam blazurom grugel.", rejection: "hingeOffsetWarrant", valid: "yol zawan vuhamum harum blazurom grabal." },
   { invalid: "zazozon vowurol harum blazurom grabal.", rejection: "hingeOffsetWarrant", valid: "zazozon thagom vowurol harum blazurom grabal." },
   {
@@ -335,15 +331,15 @@ const ROWS: Row[] = [
   { invalid: "zazozon al vowurol.", rejection: "hookSameRole", valid: "zuvayal al zazozon vowurol." },
   { invalid: "zazozon vowurol al huwuyom.", rejection: "hookSameRole", valid: "zazozon vowurol uom thuwuyom." },
   // Only `ul` takes `barl` (hooks.md#since); *contrary to* an event is `hezom barl`.
-  { invalid: "zazozon vowurol uom barl zalazun vezuvel.", rejection: "hookStandIn", valid: "zazozon vowurol hezem blarl zalazun vezuvel." },
+  { invalid: "zazozon vowurol uom barl zalazun vezuvel.", rejection: "hookStandIn", valid: "zazozon vowurol thezem blarl zalazun vezuvel." },
   { invalid: "zazozon vowurol el barl zalazun vezuvel.", rejection: "hookStandIn", valid: "zazozon vowurol ul barl zalazun vezuvel." },
   // Two verbs in one clause take a join, even with other words between them (joins.md#right-close).
   { invalid: "zazozon vowurol hadurom veruvol.", rejection: "joinlessRun", valid: "zazozon vowurol hadurom veruvol val." },
   // At the front too: `barl` right after the hook makes it an extra-noun hook, not glue (hooks.md#discourse-hooks).
   { invalid: "al barl zalazun vezuvel.", rejection: "hookStandIn", valid: "ul barl zalazun vezuvel." },
   // The sentence after `barl` needs more than a stance word (dependents.md#dependent-clauses).
-  { invalid: "zazozon vowurol hezem blarl hwavul.", rejection: "dependentStanceOnly", valid: "zazozon vowurol uom hwuvul." },
-  { invalid: "zazozon vowurol hezem blarl hwavul thebam.", rejection: "dependentStanceOnly", valid: "zazozon vowurol hezem blarl thuwathuruer." },
+  { invalid: "zazozon vowurol thezem blarl hwavul.", rejection: "dependentStanceOnly", valid: "zazozon vowurol uom hwuvul." },
+  { invalid: "zazozon vowurol thezem blarl hwavul thebam.", rejection: "dependentStanceOnly", valid: "zazozon vowurol thezem blarl thuwathuruer." },
   // A second turn starts only after a period; only the legal force pairs stack.
   { invalid: "zalx vowurol.", rejection: "joinPlural", valid: "zarx vowurol." },
   // Hooked joins (hooked-joins.md#hooked-joins): a landmark after hook -l / -m, none after point-back -r.

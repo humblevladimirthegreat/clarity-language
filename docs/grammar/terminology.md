@@ -246,7 +246,7 @@ Kind / role as predicative `/ɡ/` (no *to-be* verb).
 
 ### Clause hinge / NP hinge
 
-Condition vs outcome as NPs vs full sentences after **`blarl`**. **Clause hinge** is the causation reading. Concession **`hezem`** uses the same NP vs clause split (*despite Alazun* vs *although Alazun walks*). Intended outcome **`thovam`** uses it too (*for a money-bag* vs *so that Alazun sits*).
+Condition vs outcome as NPs vs full sentences after **`blarl`**. **Clause hinge** is the causation reading. Concession **`thezem`** uses the same NP vs clause split (*despite Alazun* vs *although Alazun walks*). Intended outcome **`thovam`** uses it too (*for a money-bag* vs *so that Alazun sits*).
 
 [Causation](/causation), [dependents](/dependents#dependent-clauses)
 

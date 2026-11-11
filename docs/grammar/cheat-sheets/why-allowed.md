@@ -31,7 +31,7 @@ Write the outcome first, then the hinge, then the condition as the hinge's `/b/`
 | [If and only if](/because-and-iff#only-because) | `zazozon vowurol thehom blarl zalazun vezuvel.` | *Azozon walks if and only if Alazun is asleep.* | I |
 | [Only because](/because-and-iff#only-because) | `zazozon vowurol thebem thahum blerulal.` | *Azozon walks only because of the rain.* | I |
 | [Unless](/because-and-iff#only-because): `blurl` for `blarl` | `zazozon vowurol thohem blurl zalazun vezuvel.` | *Azozon walks unless Alazun is asleep.* | I |
-| [Even if](/because-and-iff#only-because) | `zazozon vowurol hezem thohem blarl zalazun vezuvel.` | *Azozon walks even if Alazun is asleep.* | I |
+| [Even if](/because-and-iff#only-because) | `zazozon vowurol thezem thohem blarl zalazun vezuvel.` | *Azozon walks even if Alazun is asleep.* | I |
 
 A noun after a because hinge names an act or a thing, never a person. For *because of Alazun*, give what Alazun did as a sentence after `blarl`.
 

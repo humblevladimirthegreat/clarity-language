@@ -109,7 +109,8 @@ A **hinge** names the link and takes the stand-in `blarl` as its `/b/`. Keep the
 | [**`thebem blarl`**](/causation#only-if) | *only if* | B |
 | [**`thehom blarl`**](/causation#only-if) | *if and only if* | B |
 | [**`thovam blarl`**](/dependents#hinges) | *so that* / *in order to* | B |
-| [**`hezem blarl`**](/dependents#hinges) | *although* / *even though* | B |
+| [**`thezem blarl`**](/dependents#hinges) | *although* / *even though* | B |
+| [**`hezem blarl`**](/dependents#hinges) | *whereas* | B |
 | [**`herom blarl`**](/dependents#hinges) | *while* | B |
 | [**`harum blarl`**](/dependents#hinges) | *until* | B |
 | [**`huvahum blarl`**](/dependents#hinges) | *by the time* | B |
@@ -120,7 +121,7 @@ A **hinge** names the link and takes the stand-in `blarl` as its `/b/`. Keep the
 |-----|---------|---------|-------|
 | [Because](/dependents#hinges) | `zazozon vozuyel thahum blarl zalazun vowurol.` | *Azozon sings because Alazun walks.* | B |
 | [If, on a command](/causation#if) | `yol vowurol thohem blarl zalazun vehohel.` | *If Alazun sits, walk.* | B |
-| [Despite, with a noun](/dependents#hinges) | `zazozon vowurol hezem blalazun.` | *Azozon walks despite Alazun.* | B |
+| [Despite, with a noun](/dependents#hinges) | `zazozon vowurol thezem blalazun.` | *Azozon walks despite Alazun.* | B |
 | [So that](/dependents#so-that) | `zuwen vowurol thovam blarl zalazun vehohel.` | *I walk so that Alazun sits.* | B |
 | [In order to](/dependents#so-that): name the doer again | `zuwen vowurol thovam blarl zuwen vehohel.` | *I walk in order to sit.* | B |
 | [So as not to](/stand-in-vowels#stand-in): `blurl` for `blarl` | `zuwen vowurol thovam blurl zuwen vehohel.` | *I walk so as not to sit.* | I |
@@ -292,7 +293,8 @@ Each hinge, linker, and relation word is the abstract sense of an ordinary root.
 | Forms | Same root as | Stage |
 |-------|--------------|-------|
 | [`thahum`](/dependents#hinges) *because*, [`thohem`](/causation#if) *if*, [`thebem`](/causation#only-if) *only if*, [`thehom`](/causation#only-if) *if and only if* | `ahul` 🧱, `ohel` 🚪, `ebel` 🧻, `ehol` ↔️ | B |
-| [`hezem`](/dependents#hinges) *although*, [`herom`](/dependents#hinges) *while*, [`harum`](/dependents#hinges) *until*, [`huvahum`](/dependents#hinges) *by the time* | `ezel` 🦓, `erol` ♊, `arul` ⏲️, `uvahul` 🏁 | B |
+| [`thezem`](/dependents#hinges) *although*, [`hezem`](/dependents#hinges) *whereas* | `ezel` 🦓 | B |
+| [`herom`](/dependents#hinges) *while*, [`harum`](/dependents#hinges) *until*, [`huvahum`](/dependents#hinges) *by the time* | `erol` ♊, `arul` ⏲️, `uvahul` 🏁 | B |
 | [`habam`](/dependents#hinges) *before*, [`halam`](/dependents#hinges) *after*, [`thovam`](/dependents#hinges) *so that* | `abal` 🎒, `alal` ⌛, `oval` 🥅 | B |
 | [`xahom`](/sentence-linkers#sentence-linkers), [`xezem`](/sentence-linkers#sentence-linkers), [`xugorom`](/sentence-linkers#sentence-linkers) | `ahom` ➡️, `ezem` 🦓, `ugorom` 🕰️ | I |
 | [`xevewom`](/sentence-linkers#sentence-linkers), [`xugohum`](/sentence-linkers#sentence-linkers), [`xavedam`](/sentence-linkers#sentence-linkers) | `evewom` 🎞️, `ugohum` 🚧, `avedam` 🍟 | I |
@@ -314,7 +316,7 @@ Each hinge, linker, and relation word is the abstract sense of an ordinary root.
 | `darl` *that …* ([points forward](/dependents#dependent-clauses)) | | `darth` *so* ([points back](/stand-in-vowels#stand-in-back)) |
 | `thovam blarl` *so that* ([your aim, not claimed](/dependents#so-that)) | | `hahom blarl` *so … that* ([the result happened](/more-hinges#result-hinge)) |
 | `thohem blarl` *if* ([a condition](/causation#if)) | | `derl` *whether* ([an open question](/dependents#dependent-clauses)) |
-| `xahom` *therefore* ([starts a sentence](/speech-moves#continue-x)) | | `hezem blarl` *although* ([attaches a clause](/dependents#hinges)) |
+| `xahom` *therefore* ([starts a sentence](/speech-moves#continue-x)) | | `thezem blarl` *although* ([attaches a clause](/dependents#hinges)) |
 | `hewem` *like* ([resembles, and is real](/relations#likeness)) | | `hewel` *exactly like* ([a perfect match](/exactly-like#exactly-like)) |
 | `gadam` *contents of* ([what a vessel holds](/of-relations#of-relations)) | | `al` *in* ([a place hook](/extra-noun-hooks#extra-noun-intermediate)) |
 | `hanem` *on behalf of* ([an agent](/relations#proxy)) | | `heham` *in exchange for* ([the other half of a swap](/relations#exchange)) |

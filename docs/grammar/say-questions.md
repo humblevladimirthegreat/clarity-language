@@ -118,7 +118,7 @@ English *admittedly*, *granted* and *that's true, but* concede a point before pu
 >
 > "Azozon walks." "That's true, but Alazun sits."
 
-**Compare with:** *even so* after the concession is *despite that*, **`hezem blarth`** ([pointing back](/stand-in-vowels#stand-in-back)). **`yaom`** (*I think so*) agrees only softly.
+**Compare with:** *even so* after the concession is *despite that*, **`thezem blarth`** ([pointing back](/stand-in-vowels#stand-in-back)). **`yaom`** (*I think so*) agrees only softly.
 
 ## Exclamations and side remarks {#reactions}
 

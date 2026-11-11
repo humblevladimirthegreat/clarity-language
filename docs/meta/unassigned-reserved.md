@@ -142,7 +142,7 @@ Source: [hooks.md](/ranges#ranges), [sakes.md](/contrary-to#contrary-to-stance)
 - **closed (D-63):** a range between two numbers of different kinds (`zragel oel zrodol`, `zrodol oel zrawal`). Parser: `rangeEndpointKind`.
 - **open:** stacked **-r** at the front of a sentence (`aor …`, `aer …`, `uor …`). Extra-noun point-back is assigned; as sentence glue they have no guess (*For example, anyway?* *In fact, as I said?*). Parser: `hookDiscourseStack`.
 - **open:** discourse **`oel`** / **`ual`** / **`uel`** / **`uol`** (and **-m** / **-n**) at the front of a sentence. *Toward*, *out of*, *through* and *against* give no guessable sentence-to-sentence glue (guesses range from *Alternatively* to *Apart from that*). The parser rejects them.
-- **open:** a hook + `barl` other than `ul` (`hookStandIn`). Most have no guess (*in that…*, *at that…*). *Contrary to* an event is `hezem blarl`, and no job has turned up for `uom barl`.
+- **open:** a hook + `barl` other than `ul` (`hookStandIn`). Most have no guess (*in that…*, *at that…*). *Contrary to* an event is `thezem blarl`, and no job has turned up for `uom barl`.
 - **open:** `uom` before a stance with no content an event can contradict (`zoneKind`): a say word's *their call* (`hwuvem`; it sets nothing), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Alazun's interest* is `thudathum blalazun`), clause hinges, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
 - **closed (D-49):** `uom` before a say word's yes (`uom hwuvam`, `uom hwudam`, `uom hwuzal`) (`zoneKind`).
 
@@ -277,7 +277,7 @@ Source: [dependents.md](/stand-in-vowels#stand-in)
 - **closed (D-32):** a stand-in on `/ɡ/` (`garl`).
 - **open:** forward, back and named stand-ins (`-rl` `-rm` `-rth` `-rn`) on `/h/` `/w/` `/th/` (`harth`, `tharn`) and on `/x/` `/y/`. Not guessable: a sentence filling an adverb slot could be its manner, its time, or its condition, and `/x/` and `/y/` words already open sentences. *Such* is whole-stem **-r** and *like that* is `hewem blarth`. Parser: `standInRole`.
 - **open:** **-x** on a stand-in. A stand-in stands for what a sentence says, which is not a group.
-- **open:** a stance-only dependent (`dependentStanceOnly`): the sentence after a stand-in needs a noun or a verb, except a lone sake word. A lone stance there adds nothing: `hezem blarl hwavul` says what `uom hwuvul` says.
+- **open:** a stance-only dependent (`dependentStanceOnly`): the sentence after a stand-in needs a noun or a verb, except a lone sake word. A lone stance there adds nothing: `thezem blarl hwavul` says what `uom hwuvul` says.
 
 ## Sentence linkers (`/x/`)
 
@@ -333,6 +333,7 @@ Source: [clause.md](/clause)
 - **closed (D-46):** a `bl-` person after WANT or PLAN (`thalom blalazun`, `thagom blalazun`), and any `bl-` word after DECISION (`thogem blalazun`, `thogem blral`). Someone else's want, plan or decision goes through a holder. Parser: `intentionHost`.
 - **closed (D-48):** `/h/` on the map or check root (`hagom`, `hogem`, any ending but **-n**). Parser: `retiredIntentionRoot`.
 - **closed (D-64):** `/h/` on the goal root with **-m** (`hovam`), as the purpose hinge or anything else, and a letterless same-role `ovam`. Purpose is `thovam`. Parser: `retiredPurposeHinge`.
+- **closed (D-76):** `/h/` `hezem` + a `bl-` noun (`zazozon vowurol hezem blalazun.`). `hezem blarl` is *whereas*, and *despite* is `thezem` + a `bl-` noun. Parser: `retiredDespiteHinge`.
 - **closed (D-65):** a word with no role letter inside a clause (`zazozon vowurol azozol.`), other than a listed same-role word. A citation stands only as a sentence of its own, or as a reply turn after the statement act (`yal azozon.`). Parser: `citationInClause`.
 - **closed (D-66):** a same-role word without a phrase of B's role on each side (`zazozon abam vowurol.`, `zazozon abam.`), at the front of a body before anything but the blank it asks for (`abam zahelan zazozon vowurol.`, `yel abam zahelan zazozon vowurol.`), or as glue after a clause join (`zazozon vowurol xal abam zahelan vowurol.`). A lone listed word is the root's own citation (`abam.`). Parser: `sameRoleSides`.
 - **closed (D-66):** a same-role word followed by `/b/` (`zazozon vowurol abam bahelan.`, `bazozon abam bahelan.`). A landmark goes on the `/h/` relation (`habam blahelan`). Parser: `sameRoleExtraNoun`.

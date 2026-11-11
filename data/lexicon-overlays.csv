@@ -97,7 +97,8 @@ ahur,th,🧱,clause_hinge,because.share,BECAUSE clause hinge with a share (the r
 ahum,g,🧱,clause_hinge,because,BECAUSE clause hinge (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,because-and-iff.md#only-because
 ebem,th,🧻,clause_hinge,only-if,ONLY-IF clause hinge (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
 ebem,g,🧻,clause_hinge,only-if,ONLY-IF clause hinge (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
-ezem,h,🦓,clause_hinge,although,ALTHOUGH clause hinge (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#hinges
+ezem,h,🦓,clause_hinge,whereas,WHEREAS clause hinge (contrast; no expectation),zebra stripes show contrast; whereas sets two facts side by side,dependents.md#hinges
+ezem,th,🦓,clause_hinge,although,ALTHOUGH clause hinge (concession; the speaker's expectation; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#hinges
 ezem,g,🦓,clause_hinge,although,ALTHOUGH clause hinge (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#hinges
 erom,h,♊,clause_hinge,while,WHILE clause hinge (concurrent),gemini twins mirror two sides; duality is while both sides at once,dependents.md#hinges
 erom,g,♊,clause_hinge,while,WHILE clause hinge (concurrent),gemini twins mirror two sides; duality is while both sides at once,more-hinges.md#time-hinge-on-noun

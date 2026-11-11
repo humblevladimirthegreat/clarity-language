@@ -57,18 +57,18 @@ English *unless* means *if … not*. Keep **`thohem`**, but use the stand-in **`
 >
 > "Azozon walks unless Alazun is asleep."
 
-For *even if*, put the *although* hinge **`hezem`** right before **`thohem`**. You still do not claim the condition is true, and the outcome holds either way.
+For *even if*, put the *although* hinge **`thezem`** right before **`thohem`**. You still do not claim the condition is true, and the outcome holds either way.
 
-> `zazozon vowurol hezem thohem blarl zalazun vezuvel.`
+> `zazozon vowurol thezem thohem blarl zalazun vezuvel.`
 >
-> z-Azozon | v-walk | h-although | [th-if | bl-that-clause] | z-Alazun | v-sleep
+> z-Azozon | v-walk | th-although | [th-if | bl-that-clause] | z-Alazun | v-sleep
 >
 > "Azozon walks even if Alazun is asleep."
 
 | Ageben | English |
 |--------|---------|
 | **`thohem blurl`** | *unless* |
-| **`hezem thohem blarl`** | *even if* |
+| **`thezem thohem blarl`** | *even if* |
 
 ### Practice {#intermediate-practice}
 
@@ -93,7 +93,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *if* | `thohem` |
 | *only if* | `thebem` |
 | *because* | `thahum` |
-| *although* | `hezem` |
+| *although* | `thezem` |
 | *rain* | `erulal` |
 | *bell* | `eboral` |
 | *departure* | `vudurul` |
@@ -147,10 +147,10 @@ z-Azozon | v-sit | [th-iff | bl-that-clause] | z-Alazun | v-pour
 *Azozon sits if and only if Alazun pours.*
 :::
 
-**2.** `zahelan veruvol hezem thohem blarl zazozon vezuyol.`
+**2.** `zahelan veruvol thezem thohem blarl zazozon vezuyol.`
 
 ::: details Show answer
-z-Ahelan | v-run | h-although | [th-if | bl-that-clause] | z-Azozon | v-tell
+z-Ahelan | v-run | th-although | [th-if | bl-that-clause] | z-Azozon | v-tell
 
 *Ahelan runs even if Azozon speaks.*
 :::

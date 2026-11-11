@@ -34,7 +34,7 @@ The word after **`uom`** has to say something the event can go against, such as 
 
 Sake words cannot follow **`uom`**: to say an act goes against someone's interest, put an [unmet](/sakes#sake-changeability) sake word on the clause (`zazozon vowurol thudathum blalazun.` *Azozon's walking harms Alazun's interests*).
 
-**Compare with:** *despite the rain* is **`uom`** or **`hezem`** with a [noun](/extra-noun-hooks#extra-noun-intermediate) in `/b/` (`zazozon vowurol uom berulal.`). *Although Alazun said no* as a full sentence is **`hezem blarl`** plus that sentence. The sentence after **`blarl`** needs an event or a thing, so a stance word alone cannot fill it; use **`uom`** with the stance instead.
+**Compare with:** *despite the rain* is **`uom`** or **`thezem`** with a [noun](/extra-noun-hooks#extra-noun-intermediate) in `/b/` (`zazozon vowurol uom berulal.`). *Although Alazun said no* goes against an event, so it is **`thezem blarl`** plus that sentence. **`uom`** goes against a stance; the hinge goes against an event. The sentence after **`blarl`** needs an event or a thing, so a stance word alone cannot fill it; use **`uom`** with the stance instead.
 
 ### Say words after `uom` {#contrary-to-say}
 
@@ -98,6 +98,14 @@ A holder on a channel after **`uom`** names **whose view** the event goes agains
 > z-Azozon | v-walk | [contrary-to | th-REPORTED-Alazun]
 >
 > "Azozon walks, contrary to what I hear Alazun thinks."
+
+The hinge **`thezem`** *although* / *despite* overturns an expectation too, and by default it is yours. To make it someone else's, put a holder word right before it:
+
+> `zazozon vowurol theyomalazun thezem blerulal.`
+>
+> z-Azozon | v-walk | th-CLUES-Alazun | [th-although | bl-rain]
+>
+> "Azozon walks despite the rain, which as far as I can tell Alazun expected to stop them."
 
 ### Practice {#intermediate-practice}
 

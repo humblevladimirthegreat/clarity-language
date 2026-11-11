@@ -20,7 +20,7 @@ English *so … that* ties a result to how much of something there is (*so tired
 >
 > "Azozon walks so hastily that Alazun runs."
 
-**Compare with:** *although* / *while* attach a dependent after **`blarl`** (`hezem blarl`, `herom blarl`; see [dependent clauses](/dependents#dependent-clauses)). *Despite Alazun* is the same hinge with a `bl-` noun (`hezem blalazun`). *So that Alazun sits* is **`thovam blarl`**. Discourse **`xezem`** / **`xugorom`** / **`xahom`** glue a finished sentence to the next one.
+**Compare with:** *although* / *while* attach a dependent after **`blarl`** (`thezem blarl`, `herom blarl`; see [dependent clauses](/dependents#dependent-clauses)). *Despite Alazun* is the same hinge with a `bl-` noun (`thezem blalazun`). *So that Alazun sits* is **`thovam blarl`**. Discourse **`xezem`** / **`xugorom`** / **`xahom`** glue a finished sentence to the next one.
 
 ### Time hinges on a noun {#time-hinge-on-noun}
 

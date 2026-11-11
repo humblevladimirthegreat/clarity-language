@@ -120,8 +120,8 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | who is against (*everyone against me*, *someone against the policy*) | hooked join **`…uex…`**: `zuoxual bluwen`, `zuoxar blonam` | [Hook plus a join](/hooked-joins#hooked-joins-hooks) |
 | a rule, a person's no, or a plan (*against the rules*, *against their will*, *contrary to the plan*, *against my decision*) | hook **`uom`** + the `/th/` stance it goes against | [Contrary to a stance](/contrary-to#contrary-to-stance) |
 | what you were told or expected (*contrary to what I was told*, *against my gut*) | hook **`uom`** + a channel | [Channels after `uom`](/contrary-to#channel-zone) |
-| a noun in the way (*against the rain*, *despite the rain*) | hook **`uom`** or **`hezem`** + `/b/` | [Hooks](/extra-noun-hooks#extra-noun-intermediate), [dependent clauses](/dependents#dependent-clauses) |
-| an event in the way (*even though Alazun said no*) | **`hezem blarl`** + the sentence | [Dependent clauses](/dependents#dependent-clauses) |
+| a noun in the way (*against the rain*, *despite the rain*) | hook **`uom`** or **`thezem`** + `/b/` | [Hooks](/extra-noun-hooks#extra-noun-intermediate), [hinges](/dependents#hinges) |
+| an event in the way (*even though Alazun said no*, *contrary to what happened*) | **`thezem blarl`** + the sentence | [Hinges](/dependents#hinges) |
 | someone's interest (*against Alazun's interest*) | unmet sake word + `/b/` | [Sakes](/sakes#sake-changeability) |
 
 ## Everyday words {#everyday-words}
@@ -190,6 +190,7 @@ When both phrases play the same role (both walk, or one doer does both acts), a 
 | *like* with B a separate member (*Azozon, like Ahelan, walks*) | same-role **`ewem`** between the two: `zazozon ewem zahelan vowurol` | [Like](/same-role-words#same-role-like) |
 | *like* / *such as* with B one example of A (*animals like dogs*, *the family, such as Azozon*) | hook **`am`** between the two: `zuvayal am zazozon` | [Stacked discourse hooks](/discourse-hooks#stacked-discourse) |
 | *before* / *after* / *while* with a different doer and verb (*walks while Ahelan sings*) | the hinge + **`blarl`** + the second sentence: `zazozon vowurol herom blarl zahelan vozuyel` | [Hinges](/dependents#hinges) |
+| *while* / *whereas* as contrast, not time (*Azozon walks, whereas Alazun sleeps*) | **`hezem blarl`** + the second sentence: `zazozon vowurol hezem blarl zalazun vezuvel` | [Hinges](/dependents#hinges) |
 
 ### *and maybe more* {#and-maybe-more}
 

@@ -9,7 +9,7 @@
 import { tokenMatcher, type IToken, type TokenType } from "chevrotain";
 
 import type { ClassifyTables } from "./classify.js";
-import { arrowRoots, clauseSentences, isAsOfOverlay, isBarStance, isSameRoleRoot, isZoneStance, isGroundsChannel, isHolderSeamW, isStandIn } from "./classify.js";
+import { arrowRoots, clauseSentences, isAsOfOverlay, isBarStance, isSameRoleRoot, isZoneStance, isGroundsChannel, isHolderSeamW, isStandIn, standInKind } from "./classify.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { isTopicCompound, isTopicSpan, linkerEnglish, topicEffect } from "./linkers.js";
 import { CLOSED } from "../closed-roots.js";
@@ -725,6 +725,17 @@ function isSpeakerParticipant(unit: Unit): boolean {
 }
 
 /**
+ * WHEREAS hosts no noun: *despite* weighs a thing against an expectation, and an expectation is in a mind, so it is
+ * `thezem` + a `bl-` noun only (D-76, dependents.md#hinges). `hezem` takes a stand-in.
+ */
+function enforceWhereasHost(unit: HUnit): void {
+  const bound = unit.hosted?.bound;
+  if (unit.word.pos !== "h" || unit.word.overlay?.gloss !== "whereas" || !bound) return;
+  if (unit.hosted?.grounds || standInKind(bound) || bound.family.kind === "number") return;
+  throw new ConstructionError("retiredDespiteHinge", `${unit.word.raw} ${bound.raw}`);
+}
+
+/**
  * WANT, PLAN and DECISION host no person: with no holder they are the speaker's own, and someone else's goes through a
  * holder seam, so a `/b/` cannot slip in another person's wish, plan or choice with no grounds (want-and-decide.md#whose-intention).
  * WANT and PLAN take a time offset; DECISION carries no time, so it takes no `/b/` at all.
@@ -926,6 +937,7 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
           enforceHookedJoinLandmark(node.unit.word, node.unit.hosted?.bound);
           enforceAsOfWord(node.unit.word, node.unit.hosted?.bound);
           enforceIntentionHost(node.unit);
+          enforceWhereasHost(node.unit);
           return;
         case "clauseCoord": {
           const last = node.coord.links.at(-1);

@@ -56,7 +56,7 @@ For English *whether*, change the vowel to **`e`**: **`derl`**. The inner senten
 
 Words like *because* and *although* attach a dependent clause as a reason, a contrast, or a time. Ageben uses a pair for this: a **hinge** word that names the link, then the stand-in **`blarl`** right after it. The hinge is a relation word, so **`blarl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`blarl`** at the very end.
 
-The hinge's role letter follows the clause page. *Because* is your [stance](clause.md#stance-th) on why the claim holds, and *so that* is your own aim for the event, so they take `/th/`. *Although*, *while*, *until*, *before*, and *after* describe the event itself, so they are adverbs on `/h/`.
+The hinge's role letter follows the clause page. *Because* is your [stance](clause.md#stance-th) on why the claim holds, *so that* is your own aim for the event, and *although* is your expectation that the first event would normally have stopped the second, so they take `/th/`. *While*, *until*, *before*, and *after* describe the event itself, so they are adverbs on `/h/`.
 
 > `zazozon vozuyel thahum blarl zalazun vowurol.`
 >
@@ -73,22 +73,30 @@ You can also say:
 |--------|---------|--------------|-----|
 | **`thahum blarl`** | *because* | `ahul` *wall* | 🧱: the cause is what the result sits on |
 | **`thovam blarl`** | *so that* / *in order to* | `oval` *goal* | 🥅: you act so the shot counts |
-| **`hezem blarl`** | *although* / *even though* | `ezel` *zebra* | 🦓: two stripes, still one animal |
+| **`thezem blarl`** | *although* / *even though* | `ezel` *zebra* | 🦓: two stripes, still one animal |
 | **`herom blarl`** | *while* (at the same time) | `erol` *gemini* | ♊: two things at once |
 | **`harum blarl`** | *until* | `arul` *timer* | ⏲️: stop when it rings |
 | **`huvahum blarl`** | *by the time* | `uvahul` *finish-line* | 🏁: done by the time you reach the flag |
 | **`habam blarl`** | *before* | `abal` *backpack* | 🎒: packed first |
 | **`halam blarl`** | *after* | `alal` *sand* | ⌛: the sand has already run through |
 
-English *despite* takes a noun instead of a clause (*despite Alazun*). Use the same **`hezem`** hinge and put that noun in a `bl-` word where **`blarl`** would go. As with *although*, the obstacle is taken as fact, and you add no second word for it. The hinge is on `/h/` because it describes the event, never on `/th/`. To attach it to a noun instead, use `/ɡ/`: **`gezem`**. (cue: 🦓 *zebra*: two stripes, still one animal)
+English *despite* takes a noun instead of a clause (*despite Alazun*). Use the same **`thezem`** hinge and put that noun in a `bl-` word where **`blarl`** would go. As with *although*, the obstacle is taken as fact, and you add no second word for it. All the hinge adds is your expectation that the obstacle would normally have stopped the event. To attach it to a noun instead, use `/ɡ/`: **`gezem`**. (cue: 🦓 *zebra*: two stripes, still one animal)
 
-> `zazozon vowurol hezem blalazun.`
+> `zazozon vowurol thezem blalazun.`
 >
-> z-Azozon | v-walk | [h-although | bl-Alazun]
+> z-Azozon | v-walk | [th-although | bl-Alazun]
 >
 > "Azozon walks despite Alazun."
 
 Ordinary `zezel` is still *a zebra*.
+
+**Compare with:** *whereas* sets two facts side by side and expects nothing either way. It describes the events themselves, so it is the same root on `/h/`: **`hezem blarl`**, always with a sentence after it.
+
+> `zalazun vehohel hezem blarl zagayul veruvol.`
+>
+> z-Alazun | v-sit | [h-whereas | bl-that-clause] | z-guard | v-run
+>
+> "Alazun sits, whereas a guard runs."
 
 The sentence after **`blarl`** has to name an event or a thing, so it needs a noun or a verb. A stance word by itself does not fill it.
 
@@ -177,7 +185,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *that-clause* | `darl` | **a** ≈ add: the content that follows |
 | *whether-clause* | `derl` | **e** ≈ choice: pick yes or no |
 | *because* | `thahum` | 🧱 from *wall*: the cause is what the result sits on |
-| *although* | `hezem` | 🦓 from *zebra*: two stripes, still one animal |
+| *although* | `thezem` | 🦓 from *zebra*: two stripes, still one animal |
 | *so-that* | `thovam` | 🥅 from *goal*: you act so the shot counts |
 
 **Review:**
@@ -218,9 +226,9 @@ z-Alazun | v-run | [th-because | bl-that-clause] | z-guard | d-Ahelan | v-see
 **3.** *Azozon sits despite a guard.*
 
 ::: details Show answer
-`zazozon vehohel hezem blagayul.`
+`zazozon vehohel thezem blagayul.`
 
-z-Azozon | v-sit | [h-although | bl-guard]
+z-Azozon | v-sit | [th-although | bl-guard]
 :::
 
 **4.** *A guard sees whether Alazun peeks.*
@@ -249,10 +257,10 @@ z-Alazun | v-scream | [th-so-that | bl-that-clause] | z-guard | v-run
 
 #### Ageben → English {#beginner-ageben-to-english}
 
-**1.** `zalazun vehohel hezem blarl zagayul veyamul.`
+**1.** `zalazun vehohel thezem blarl zagayul veyamul.`
 
 ::: details Show answer
-z-Alazun | v-sit | [h-although | bl-that-clause] | z-guard | v-scream
+z-Alazun | v-sit | [th-although | bl-that-clause] | z-guard | v-scream
 
 *Alazun sits although a guard screams.*
 :::
@@ -303,14 +311,14 @@ z-Alazun | v-see | d-whether-clause | z-Azozon | v-run
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Alazun peeks despite a guard.* <!-- lint: error -->`zalazun vebemol hezem barl zagayul.`
+**1.** *Alazun peeks despite a guard.* <!-- lint: error -->`zalazun vebemol thezem barl zagayul.`
 
 ::: details Show answer
-`zalazun vebemol hezem blagayul.`
+`zalazun vebemol thezem blagayul.`
 
-z-Alazun | v-peek | [h-although | bl-guard]
+z-Alazun | v-peek | [th-although | bl-guard]
 
-*Despite* takes a noun: put the guard in a `bl-` word right after **`hezem`**. With **`blarl`**, `zagayul` becomes a whole sentence of its own.
+*Despite* takes a noun: put the guard in a `bl-` word right after **`thezem`**. With **`blarl`**, `zagayul` becomes a whole sentence of its own.
 :::
 
 **2.** *Azozon tells Alazun that a guard runs.* <!-- lint: error -->`zazozon balazun darl vezuyol zagayul veruvol.`
