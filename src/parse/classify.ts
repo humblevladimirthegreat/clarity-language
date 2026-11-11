@@ -431,12 +431,12 @@ export function isGroundsChannel(word: LexWord, tables: ClassifyTables): boolean
   return row?.kind === "evidential" && GROUNDS_CHANNELS.has(row.gloss.split(".")[0]!);
 }
 
-/** Closed `/h/` kinds that cover the whole clause: tries, ability, the books (clause.md#intention-adverbs). A say word does too. */
+/** Closed `/h/` kinds that cover the whole clause: tries, ability, the books (can-and-cant.md#intention-adverbs). A say word does too. */
 const CLAUSE_ADVERB_KINDS = new Set(["attempt", "ability", "residue", "former_climate"]);
 
 /**
  * An `/h/` intention adverb (ATTEMPT, hostless ability, a say word) or a books word (RESIDUE, FORMER):
- * it covers the whole clause wherever it sits, and the grammar treats it like a `/th/` word (clause.md#intention-adverbs).
+ * it covers the whole clause wherever it sits, and the grammar treats it like a `/th/` word (can-and-cant.md#intention-adverbs).
  */
 export function isClauseAdverb(word: LexWord): boolean {
   if (word.pos !== "h") return false;

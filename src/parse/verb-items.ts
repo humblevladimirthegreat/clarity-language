@@ -39,7 +39,7 @@ function itemWord(units: Unit[], index: number): boolean {
   return false;
 }
 
-/** A `/th/` stance word or an intention adverb: on the whole claim wherever it sits (clause.md#intention-adverbs). */
+/** A `/th/` stance word or an intention adverb: on the whole claim wherever it sits (can-and-cant.md#intention-adverbs). */
 function onClaim(unit: Unit): boolean {
   return unit.kind === "h" && (unit.unit.word.pos === "th" || isClauseAdverb(unit.unit.word));
 }

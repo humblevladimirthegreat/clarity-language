@@ -9,7 +9,7 @@ English *try to*, how hard someone tries, and *failing that* say that someone at
 ### Try {#try}
 <a id="attempt"></a>
 
-To say that someone is trying to do something, put **`howa`** plus an ending on `/h/` before the ordinary verb. It is an [intention adverb](/clause#intention-adverbs): it covers the whole clause wherever it sits. Unlike PLAN, an attempt is something others can watch, so it is not a stance and needs no holder. The sentence says the attempt happens, not whether it works. The ending says how committed the attempt is. (Cue: 🧪 A test tube tries a sample to see what happens.)
+To say that someone is trying to do something, put **`howa`** plus an ending on `/h/` before the ordinary verb. It is an [intention adverb](/can-and-cant#intention-adverbs): it covers the whole clause wherever it sits. Unlike PLAN, an attempt is something others can watch, so it is not a stance and needs no holder. The sentence says the attempt happens, not whether it works. The ending says how committed the attempt is. (Cue: 🧪 A test tube tries a sample to see what happens.)
 
 As a plain noun, the root keeps its own meaning (`zowal` *a test tube*).
 

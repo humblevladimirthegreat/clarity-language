@@ -8,7 +8,7 @@ English *contrary to the plan*, *against the rules*, and *contrary to what I was
 
 ### Contrary to a stance (`uom`) {#contrary-to-stance}
 
-English *contrary to the plan* says that the event happens even though a plan says otherwise. Put the hook **`uom`** *contrary to* right before a `/th/` stance word or an [intention adverb](/clause#intention-adverbs). That word then says what the event goes against, and it no longer applies to the claim. `zazozon vowurol thagom.` says you plan for Azozon to walk; `zazozon vowurol uom thagom.` says Azozon walks anyway. (cue: **uo** ≈ contrary; **-m** the opposing zone, which the stance spells out)
+English *contrary to the plan* says that the event happens even though a plan says otherwise. Put the hook **`uom`** *contrary to* right before a `/th/` stance word or an [intention adverb](/can-and-cant#intention-adverbs). That word then says what the event goes against, and it no longer applies to the claim. `zazozon vowurol thagom.` says you plan for Azozon to walk; `zazozon vowurol uom thagom.` says Azozon walks anyway. (cue: **uo** ≈ contrary; **-m** the opposing zone, which the stance spells out)
 
 > `zazozon vowurol uom thagom.`
 >

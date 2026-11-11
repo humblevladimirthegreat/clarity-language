@@ -101,7 +101,7 @@ Words that every verb shares go in one of two places. **After the join**, a `/d/
 
 A verb that has its own object takes no shared object, and a verb that has its own recipient takes no shared recipient. After `dabedal vugudol vagedal val`, a shared object would give *cook* two objects, so it is not a sentence. Put the second object in its own verb's item instead (`dabedal vugudol daledel vagedal val`).
 
-A [stance](/clause#stance-th) `/th/` word and an [intention adverb](/clause#intention-adverbs) are never item words, wherever they sit: like any stance word, each is about the whole claim. A `bl-` word right after an `/h/`, `/ɡ/`, or `/th/` word still completes that word.
+A [stance](/clause#stance-th) `/th/` word and an [intention adverb](/can-and-cant#intention-adverbs) are never item words, wherever they sit: like any stance word, each is about the whole claim. A `bl-` word right after an `/h/`, `/ɡ/`, or `/th/` word still completes that word.
 
 With no subject, a statement with a shared object starts with its verbs (`vugudol vagedal val dabedal`), which is the default order for a command. Name the subject when the act could be misheard.
 

@@ -103,6 +103,10 @@ Sometimes English *can* / *can't* is not about one named verb or quality: the ac
 >
 > "Azozon can't right now."
 
+### Intention adverbs {#intention-adverbs}
+
+Some `/h/` words cover the whole claim the way a [stance](clause.md#stance-th) does, not only the action. They may sit anywhere in the sentence.
+
 ### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.

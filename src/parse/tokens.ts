@@ -470,7 +470,7 @@ export function classifyTokenBranch(word: LexWord): { type: AgebenTokenType; bra
   const tag = family.kind === "tag" && assigns && !word.plural && pos ? TAG_BY_POS[pos] : undefined;
   if (tag) return { type: tag, branch: "tagAssign" };
   if (pos === "g" && word.gl) return { type: GGl, branch: "content" };
-  // An intention adverb covers the whole clause like a `/th/` word: it can be a bar or a `uom` zone (clause.md#intention-adverbs).
+  // An intention adverb covers the whole clause like a `/th/` word: it can be a bar or a `uom` zone (can-and-cant.md#intention-adverbs).
   if (isClauseAdverb(word)) return { type: HTh, branch: "clauseAdverb" };
   if (pos && pos in CONTENT_BY_POS) {
     return { type: CONTENT_BY_POS[pos as keyof typeof CONTENT_BY_POS], branch: "content" };

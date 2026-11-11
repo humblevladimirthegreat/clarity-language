@@ -68,7 +68,7 @@ FORMER also works as a [comparison bar](bars.md#channel-bars): **`helam`** right
 | **`haram`** | outcome still in effect | *still counts* / residue | `aram` *debt* | 💰: unpaid balance still on the books |
 | **`helam`** | usual pattern not claimed for now | *former climate* | `elam` *emptiness* | 🪹: the nesting season is over |
 
-Put RESIDUE and FORMER on `/h/`, anywhere in the sentence: like an [intention adverb](/clause#intention-adverbs), each covers the whole clause. Use `/w/` only when the word applies to the one `/ɡ/` adjective right after it. Both always end in **-m**. Neither follows **`uom`** ([contrary to](/contrary-to#channel-zone)): neither is something the event could go against.
+Put RESIDUE and FORMER on `/h/`, anywhere in the sentence: like an [intention adverb](/can-and-cant#intention-adverbs), each covers the whole clause. Use `/w/` only when the word applies to the one `/ɡ/` adjective right after it. Both always end in **-m**. Neither follows **`uom`** ([contrary to](/contrary-to#channel-zone)): neither is something the event could go against.
 
 ### Practice {#intermediate-practice}
 

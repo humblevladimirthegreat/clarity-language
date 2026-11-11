@@ -8,7 +8,7 @@ English *may*, *must*, *may not*, and *they agreed* each say that someone has a 
 
 ### Say words: permission, requirement, consent {#say-words}
 
-English *may*, *must*, *may not*, and *they agreed* each say that someone has a say over an act. Ageben puts that in one **say word** on `/h/`. A grant, a ban, a demand, or a yes is said openly, so a say word needs no channel; like an [intention adverb](/clause#intention-adverbs), it covers the whole clause. Write **`h`**, **`w`**, a reach vowel, whose say it is, the answer, and an ending.
+English *may*, *must*, *may not*, and *they agreed* each say that someone has a say over an act. Ageben puts that in one **say word** on `/h/`. A grant, a ban, a demand, or a yes is said openly, so a say word needs no channel; like an [intention adverb](/can-and-cant#intention-adverbs), it covers the whole clause. Write **`h`**, **`w`**, a reach vowel, whose say it is, the answer, and an ending.
 
 > `zazozon vowurol hwuvam.`
 >
@@ -261,5 +261,5 @@ When the speaker is in the clause, a bare **`v`** on **-m** has no reading; **`h
 
 ## See also
 
-- Intention adverbs: [Intention adverbs](/clause#intention-adverbs)
+- Intention adverbs: [Intention adverbs](/can-and-cant#intention-adverbs)
 - Polar *go ahead*: [Polar particle (*yes* / *no* / *sure*)](/questions#polar-particle)

@@ -172,6 +172,7 @@ export const hashRedirects: HashRedirect[] = [
   { page: "stacked-markers.md", hash: "ambient-magnitude", to: "digitless-exponents.md", toHash: "ambient-magnitude" },
   { page: "singability.md", hash: "rhythm-and-stress", to: "phonology.md", toHash: "rhythm-and-stress" },
   { page: "feelings.md", hash: "feeling-no-object", to: "how-you-feel.md", toHash: "feeling-no-object" },
+  { page: "clause.md", hash: "intention-adverbs", to: "can-and-cant.md", toHash: "intention-adverbs" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */

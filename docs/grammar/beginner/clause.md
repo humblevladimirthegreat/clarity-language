@@ -6,7 +6,6 @@ band: beginner
 
 How to read and write one Ageben **clause** (roughly, one simple sentence): who does what, how each word is shaped, and the default order.
 
-
 You already write a [citation](word-endings.md): root + ending (`odozel`, `owurol`, `azozon`). In a sentence, put a **role letter** in front. That first letter says what the word is doing (who acts, the action, and so on). The root and ending stay the ones you already chose; only the first letter changes.
 
 ### Who acts and the action
@@ -90,10 +89,6 @@ An adverb describes the action. A **stance** word describes how you, the speaker
 The adverb describes the walking. The stance word describes your claim about it.
 
 A stance is yours now, as you speak. `/th/` is for what is in a mind, and with nothing else marked, that mind is yours.
-
-### Intention adverbs {#intention-adverbs}
-
-Some `/h/` words cover the whole claim the way a [stance](#stance-th) does, not only the action. They may sit anywhere in the sentence.
 
 ### Extra nouns (`/b/`) {#extra-nouns}
 
