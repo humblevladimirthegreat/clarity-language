@@ -20,6 +20,7 @@ Each line is one rule. *Build* means `npm run build` checks it, so you do not ne
 | Specialist terms are glossed where they first appear | Build, warns | [Plain language](#plain-language-no-assumed-linguistics) |
 | A paragraph has at most five sentences | Build, warns | [Voice and length](#voice-and-length) |
 | Bold is rare | Build, warns | [Voice and length](#voice-and-length) |
+| A form is bold only where the page introduces it; letters and endings go in backticks, never bold | Judgment | [Voice and length](#voice-and-length) |
 | A Beginner lead has two to four sentences before its example | Build, warns | [Explain before you slogan](#explain-before-you-slogan) |
 | Second person; no maintainer *we*, no author *I* | Judgment | [Voice and length](#voice-and-length) |
 | The lead says the English job, the Ageben shape, and the consequence | Judgment | [Explain before you slogan](#explain-before-you-slogan) |
@@ -49,6 +50,8 @@ The lead rules were written for a section that teaches a grammar feature. Other 
 | Tables | May stay telegraphic. Running prose may not |
 | An orientation page (`purpose.md`, `introduction.md`) | [orientation-style.md](orientation-style.md). The lead rules and the slogan test do not apply; the rest of this page does, as that page lists |
 | The glossary (`terminology.md`) | Exempt from the specialist-term check, since defining those terms is its job |
+| A recipe page (`english.md`, `say-*.md`) | The heading already names the English job, and a **Needs:** line comes first. The lead restates the job in a clause at most, often as the English example, then gives the Ageben shape, and still ends with the consequence. Everything else applies |
+| A cheat sheet (`cheat-sheets/`) or level review (`review*.md`) | Lookup and practice. Only [punctuation](#punctuation), [link text](#link-text), [plain language](#plain-language-no-assumed-linguistics), and voice apply to their prose. Generated tables and Practice are not edited for style |
 
 ## What the build checks
 <a id="what-the-build-checks"></a>
@@ -85,6 +88,13 @@ Warnings are ratcheted. `src/lint/prose-style-baseline.json` holds each page's c
 
 To add a phrase or a term, edit the list in `src/lint/prose-style.ts` and add a case to its test.
 
+Two commands support a style review. Neither runs in the build.
+
+| Command | Use it to |
+|---------|-----------|
+| `npm run changed-sections -- <rev> [paths…]` | Find the sections to review: each H2 or H3 under `docs/grammar/` whose text changed since `<rev>`, is new or moved, or follows one that changed, plus a changed page lead |
+| `npm run wording-only -- [--since <rev>] [paths…]` | Prove an edit changed wording only. It fails when headings, anchor ids, fenced blocks, Practice, generated blocks, the forms in code spans, link targets, or example glosses differ from `<rev>` (default `HEAD`) |
+
 ## Punctuation
 <a id="punctuation"></a>
 
@@ -102,7 +112,8 @@ Em dashes are banned in published and root Markdown, and the build fails on them
 - One idea per H2 or H3.
 - Keep a paragraph to five sentences or fewer. When a paragraph lists parallel items (controls, cases, options), use a table.
 - Do not clear your throat ("In this section…", "It is important to note…"). An extra sentence must add mechanism or consequence.
-- Bold sparingly: a term at the point it is defined, and a control's label. Put Ageben forms in backticks, not italics. A heading that spells a content root pins an English `{#id}` ([retie-safe writing](grammar-docs.md#retie-safe-writing)).
+- Bold sparingly: a term at the point it is defined, and a control's label. Put Ageben forms in backticks, not italics.
+- Treat a form like a term. An Ageben form may be bold where the page introduces it, and is plain backticks after that, so bold tells the learner *this is where it is taught*. Bare letters and endings always go in backticks (`` `-l` ``, never **-l**). A paragraph that introduces more than four forms still trips `bold-density`; the fix is usually a table. A heading that spells a content root pins an English `{#id}` ([retie-safe writing](grammar-docs.md#retie-safe-writing)).
 
 ### Warmth
 <a id="warmth"></a>
