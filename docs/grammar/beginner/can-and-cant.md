@@ -105,7 +105,13 @@ Sometimes English *can* / *can't* is not about one named verb or quality: the ac
 
 ### Intention adverbs {#intention-adverbs}
 
-Some `/h/` words cover the whole claim the way a [stance](clause.md#stance-th) does, not only the action. They may sit anywhere in the sentence.
+Some `/h/` words cover the whole claim the way a [stance](clause.md#stance-th) does, not only the action. These are **intention adverbs**, and `hodaxol` above is one: it says Azozon can't, without naming any verb. Because an intention adverb covers the whole claim wherever it sits, you may put it anywhere in the sentence, and moving it changes nothing.
+
+> `hodaxol zazozon.`
+>
+> h-ABIL-unable-temporary | z-Azozon
+>
+> "Azozon can't right now."
 
 ### Practice {#beginner-practice}
 
