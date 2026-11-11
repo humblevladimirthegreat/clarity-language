@@ -18,7 +18,7 @@ You already write a property on `/ɡ/` after the noun (*a blue dog*). When you s
 >
 > "Azozon is challenging."
 
-A `/ɡ/` word after the verb does not describe the subject the way *tired* does in English *arrived tired*. Give the state its own sentence instead (`zalazun gadamul. zulamur vudurul.`).
+A `/ɡ/` word after the verb does not describe the subject the way *tired* does in English *arrived tired*. Give the state its own sentence instead (`zalazun gadamul. zalazur vudurul.`).
 
 The same string is also the noun plus its adjective: `zazozon gamahum` is both the full sentence *Azozon is challenging* and the phrase *challenging Azozon*.
 
