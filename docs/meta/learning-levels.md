@@ -68,7 +68,7 @@ Dependency is the only hard rule. Tie-breaks, in this order:
 
 1. **Hard dependency** — B’s definition or examples use a form whose home is A → A before B.
 2. **Spine** — phonology → citation endings → a working clause → turns. Everything else hangs off that.
-3. **Topic cluster** — keep one job family together when neither depends on the other. Do not interleave unrelated sittings just because both are free in the graph.
+3. **Units** — the sittings of one [unit](#units) stay contiguous, and units are ordered by the dependencies between their sittings. Do not interleave sittings of different units just because both are free in the graph.
 4. **Purpose payoff** — among legal orders, put earlier the Beginner slices that unlock compassion / rationality / empowerment *and already passed the Beginner gate*. This does not pull a form into Beginner by itself. Claritish is the on-ramp when you want the idea before the clause machinery.
 5. **Reuse** — a pattern that will be reused across later sittings before a one-off cell of the same difficulty.
 
@@ -86,11 +86,24 @@ Soft dependency (“easier after fluent X”) may swap two sittings that are alr
 
 `## See also` sections and pages off the sidebar are not checked. Links to later sections are reported only with `--order-report`; prose rules for them are under [teach now](grammar-docs.md#teach-now-dont-preview-later).
 
+## Units
+<a id="units"></a>
+
+A **unit** is a named run of consecutive sittings inside one band. The sidebar shows each unit as a collapsed sub-group of its band. The unit arrays in [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts) own the list of units and their sittings.
+
+1. **Within one band, consecutive** — a unit never crosses a band boundary, and its sittings are adjacent in the reading order. The level review stays last in its band, outside every unit.
+2. **Named for what the learner can do** — the title is a plain-English capability or theme (*Asking*, *Where and when*), not a subsystem name and not a term from `docs/grammar/terminology.md`.
+3. **Comparable size** — measured by combined file size, a unit holds about 20k to 50k of Markdown, normally 3 to 6 sittings. A unit far above its neighbours is two units; one far below joins a neighbour. Avoid two-sitting units.
+4. **Dependency first** — the rules for [order inside a band](#order-inside-a-band) still decide order. Units are the tie-break after the spine: the sittings of one unit sit together, and units are ordered by the dependencies between their sittings.
+5. **Adds no forms** — a unit is an organizing layer. Everything taught stays on the sittings.
+
+Check a reorder or a new unit table with `npm run plan-units -- --units <table> --suggest`. It tests the table against page-to-page dependencies and Review words, orders the units, and suggests single moves. It does not choose the units, because theme is not in the data.
+
 ## How to apply
 <a id="how-to-apply"></a>
 
 - One sitting per file, marked with front matter `band: beginner | intermediate | advanced`. The sidebar groups sittings by band, and the files live on disk as `docs/grammar/{beginner,intermediate,advanced}/`. Public URLs stay flat (`/grammar/clause.html`). Peel a later band off a parent with `npm run peel-band`, or named H3s onto a job-named file with `npm run peel-headings`, rather than tagging several bands with H2s on a new page. Omit a later sitting when it would only recap or list unused slots ([empty or pointless stages](grammar-docs.md#empty-stages)).
-- Dispatch: whole-sitting `band:` flip (move the sidebar row and that sitting’s review item; do not demote a Beginner parent slug — peel instead); heading peel onto a job-named file; in-band cluster reorder of the three sidebar lists (no scoring, no solver).
+- Dispatch: whole-sitting `band:` flip (move the sidebar row and that sitting’s review item; do not demote a Beginner parent slug — peel instead); heading peel onto a job-named file; in-band reorder of the unit arrays in [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts) (`beginnerUnits`, `intermediateUnits`, `advancedUnits`), by moving a sitting inside its unit or to another, or moving a whole unit. `npm run plan-units` checks a unit table; it does not choose the units ([units](#units)).
 - Sibling splits by **job** when *S* > 10 still apply ([drill-generation](procedures/drill-generation.md#sitting-length)), and when a heading fails [what one sitting holds](grammar-docs.md#one-sitting); this split is by **sitting**. Later sittings of the same topic use a job title, not the topic name again.
 - Do **not** score every morph. For each sitting, run the [gates](#gates), pick a band, then place it with gate 4 and the [within-band order](#order-inside-a-band). Do not teach a new form while moving bands; do not refill a checkpoint except to drop a leak.
 - Stacked → later **in the same band**, unless it fails corpus or usable. Dense but freestanding stays Beginner when it is usable and first-corpus. Easy + not first-corpus is Intermediate, not Advanced.

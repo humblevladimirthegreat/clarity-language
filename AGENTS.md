@@ -12,7 +12,7 @@ Each row names what the file owns. The file is the authority; this table is only
 
 ### Grammar (learner-facing, `docs/grammar/`)
 
-Stage pages sit in `beginner/`, `intermediate/`, or `advanced/` under `docs/grammar/`; locate one with `ls docs/grammar/*/NAME.md`.
+Stage pages sit in `beginner/`, `intermediate/`, or `advanced/` under `docs/grammar/`; locate one with `ls docs/grammar/*/NAME.md`. Within a band they are grouped into units, in `docs/grammar/.vitepress/lib/reading-order.ts`.
 
 | Source | Owns |
 |--------|------|

@@ -14,6 +14,8 @@ Editors only. How to measure a sitting, split one off a page, and move H3s betwe
 
 To peel named H3s onto a new sitting of another band: `npm run peel-headings -- --parent more-turn-words.md --ids speech-act --to firm-soft.md --title "Firm and soft" --band beginner` (dry run); `--write` copies those clusters, rewrites anchors, and appends the sidebar row and the allowlist row. Split Practice by hand.
 
+`peel-band` and `peel-headings` put the new sidebar row directly after its parent, in the parent's [unit](../learning-levels.md#units). `--unit "<title>"` puts it at the end of that unit instead. A peel into a different band from its parent has no parent unit there, so the tool stops and asks for `--unit`.
+
 ## Move an H3 between sittings {#move-heading}
 
 `npm run move-heading -- --from a.md --ids x,y --into b.md (--after id | --before id | --end)` (dry run); `--write` moves the clusters, rewrites `a.md#x` links everywhere `peel-headings` does, and adds `hash-redirect.ts` rows so `a.html#x` lands on `b.html#x`. `--record-only` writes only the hash rows for a move already made by hand (`--ids old:new` for a renamed id). Practice, the allowlist, the sidebar and reviews stay hand work.
