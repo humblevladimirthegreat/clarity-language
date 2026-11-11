@@ -153,42 +153,44 @@ Your feeling about the whole claim, on `/th/` with **-m**. It is never the subje
 
 ## Feelings {#feelings}
 
-An [emotion](/feelings#emotion-compose) is built on one word: the sake word, a **locus**, then a **motion ending**. Example: `wuwathur` + `ao` + **-r** is `wuwathuraer`.
+A [feeling word](/how-you-feel#feeling-word) is one word: the sake word, an **urge** vowel, then a **duration ending**. Example: `guwatham` + `oe` + **-r** is `guwathamoer`.
 
-### Locus: where it sits or points {#locus}
+### Urge: what it pulls you to do {#urge}
 
-| Locus | Hook | Use | English | Stage |
-|-------|------|-----|---------|-------|
-| [`a`](/feelings#emotion-compose) | *in* | internal | *mine, held inside* | I |
-| [`ao`](/feelings#emotion-compose) | *over* | the atmosphere | *hangs over the room* | I |
-| [`uo`](/feelings#emotion-compose) | *through* | unplaced | *I can't place it* | I |
-| [`o`](/feelings#emotion-compose) | *at* | aimed | *annoyed at*, *grateful to* | I |
-| [`oe`](/feelings#emotion-compose) | *toward* | seeking | *turning to someone for comfort* | I |
-| [`ue`](/feelings#emotion-compose) | *against* | resisting | *objecting to* | I |
-| [`e`](/feelings#emotion-compose) | *for* | vicarious | *upset for* | I |
-| [`u`](/feelings#emotion-compose) | *from* | away | *avoiding*, *fleeing* | I |
-| [`ua`](/feelings#emotion-compose) | *out of* | collapse | *giving up* | I |
-| [`ae`](/feelings#emotion-compose) | *using* | fawn | *placating* | I |
+| Urge | Hook | Use | English | Stage |
+|------|------|-----|---------|-------|
+| [`a`](/how-you-feel#urges) | *in* | STAYING | *stay in it*: savor it, sit with it | B |
+| [`e`](/how-you-feel#urges) | *at* | AIMED | *act on a target*: confront, thank | B |
+| [`o`](/how-you-feel#urges) | *for* | GIVING | *do something for someone*: give back, make amends | B |
+| [`u`](/how-you-feel#urges) | *from* | AWAY | *move off*: avoid, leave, hide | B |
+| [`oe`](/feelings#emotion-compose) | *toward* | TOWARD | *turn to someone*: for comfort, or to share it | I |
+| [`uo`](/feelings#emotion-compose) | *against* | RESISTING | *push back* on an outcome or a demand | I |
+| [`ua`](/feelings#emotion-compose) | *out of* | RELEASING | *step out of the fight*: let go, yield | I |
+| [`ao`](/feelings#emotion-compose) | *using* | PLACATING | *use yourself to keep the peace* | I |
+| [`ae`](/feelings#emotion-compose) | *on* | HELD | *stuck on the spot*: frozen, or keeping a lid on it | I |
+| [`ue`](/feelings#emotion-compose) | *through* | UNPLACED | *you cannot tell which way it pulls* | I |
 
-### Motion: how it moves {#motion}
+### Duration: how long it lasts {#duration}
 
 | Ending | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**-l**](/feelings#emotion-compose) | static | *held, frozen, numb* | I |
-| [**-m**](/feelings#emotion-compose) | flowing | *steady, a pace you can ride* | I |
-| [**-r**](/feelings#emotion-compose) | surging | *waves or spikes* | I |
+| [**-l**](/feelings#feeling-duration) | SETTLED | *it has settled in*: hours, days, a mood | I |
+| [**-m**](/how-you-feel#feeling-word) | OPEN | how long is not said | B |
+| [**-r**](/feelings#feeling-duration) | FLEETING | *a flash or a wave*: it will pass | I |
 
-Motion is how the feeling moves, not how strong it is. For strength, put a [degree word](/very-and-slightly#degree-w) on `/w/` before it. A direction `/b/` names the landmark, so it cannot also name whose stake.
+Duration is how long the feeling lasts, not how strong it is. For strength, put a [degree word](/feelings#feeling-strength) on `/w/` before it. A feeling word takes one `bl-` word: after `e`, `oe`, `o`, `uo`, `u`, `ua`, or `ao` it names the [landmark](/how-you-feel#urge-landmark); after `a`, `ae`, or `ue` it names [whose stake](/feelings#feeling-whose-stake).
 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | English | Stage |
 |--------|---------|-------|
-| [`zezuyol wuwathuraer goyom`](/feelings#emotion-compose) | *anxious about the dialogue* | I |
-| [`zozowum wawethumual goyom`](/feelings#emotion-compose) | *given up over the division* | I |
-| [`zobewom guwathamar`](/feelings#emotion-compose) | *proud of the draft* | I |
-| [`zonal wawethumom goyom blazozon`](/feelings#emotion-compose) | *upset for Azozon about the memo* | I |
-| [`zezuyol wamezem wuwathuruem goyom`](/feelings#emotion-compose) | *a little uneasy, and I can't say why* | I |
-| [`zezuyol wuwathumuor guzezam`](/feelings#emotion-compose) | *the dialogue is frustratingly slow* | I |
+| [`zezuyol thomam wuwathurur goyom`](/feelings#feeling-suggests) | *anxious about the dialogue* | I |
+| [`thomam thuwathuruer`](/feelings#feeling-suggests) | *anxious, and I can't say why* | I |
+| [`zobewom guwathamoer`](/feelings#feeling-suggests) | *proud of my draft* | I |
+| [`zonal wawethumel goyom blalazun`](/feelings#feeling-suggests) | *a standing resentment at Alazun over the memo* | I |
+| [`zozowum wawethumual goyom`](/feelings#feeling-suggests) | *given up over the division* | I |
+| [`zonal wawethumam goyom blazozon`](/feelings#feeling-suggests) | *upset for Azozon about the memo* | I |
+| [`zezuyol wamezem wuwathuruem goyom`](/feelings#feeling-suggests) | *a little uneasy about the dialogue* | I |
+| [`zezuyol wuwathumuor guzezam`](/feelings#feeling-suggests) | *the dialogue is frustratingly slow* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|

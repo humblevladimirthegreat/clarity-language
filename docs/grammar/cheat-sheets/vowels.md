@@ -64,7 +64,7 @@ four vowels
 │                 ├── ranges
 │                 └── place hook (same spelling; landmark as hook job)
 │                       ├── stacked place hook (writes hook, reads as join stacks)
-│                       └── feeling loci
+│                       └── feeling urges
 ```
 
 <PageBreak />
@@ -170,25 +170,25 @@ Polar answers stack two of these vowels. Beginner *yes* / *no* / *sure*: [polar 
 
 ## Extra nouns {#place}
 
-[Extra-noun hooks](/hooks#extra-noun) are the hook spelling after `/b/`. [Feeling loci](/feelings#emotion-compose) reuse them: **a** *in*, **o** *for*, **e** *at*, **u** *from*.
+[Extra-noun hooks](/hooks#extra-noun) are the hook spelling after `/b/`. [Feeling urges](/how-you-feel#urges) reuse them: **a** *in*, **o** *for*, **e** *at*, **u** *from*.
 
 | Job | **a** | **o** | **e** | **u** | Stage |
 |-----|-------|-------|-------|-------|-------|
 | [Extra-noun](/hooks#extra-noun) | *in* | *for* | *at* | *from* | B |
-| [Feeling locus](/feelings#emotion-compose) | *in* (inside) | *for* (vicarious) | *at* (aimed) | *from* (away) | I |
+| [Feeling urge](/how-you-feel#urges) | STAYING (*stay in it*) | GIVING (*do something for someone*) | AIMED (*act on a target*) | AWAY (*move off*) | B |
 
 ### Stacked extra nouns {#extra-noun-stacks}
 
-Full extra-noun grid: [extra nouns](/extra-noun-hooks#extra-noun-intermediate). Feeling loci reuse the same stacks. English stays; letters follow join stacks.
+Full extra-noun grid: [extra nouns](/extra-noun-hooks#extra-noun-intermediate). The [six more feeling urges](/feelings#emotion-compose) reuse the same stacks. English stays; letters follow join stacks.
 
-| Vowels | Extra-noun (**-l** / **-m**) | Feeling locus | Stage |
-|--------|------------------------------|---------------|-------|
-| **ao** | [*using* / *by*](/extra-noun-hooks#extra-noun-intermediate) | placating | I |
-| **ua** | *out of* / *out from among* | *out of* fight, giving up | B |
-| **uo** | *against* / *contrary to* | *against* | I |
-| **ae** | *on* / *over* | *over* the situation | I |
-| **oe** | *toward* / *in the direction of* | seeking | I |
-| **ue** | *through* / *by way of* | unplaced | I |
+| Vowels | Extra-noun (**-l** / **-m**) | Feeling urge | Stage |
+|--------|------------------------------|--------------|-------|
+| **ao** | [*using* / *by*](/extra-noun-hooks#extra-noun-intermediate) | PLACATING (*keep the peace*) | I |
+| **ua** | *out of* / *out from among* | RELEASING (*let go*) | B |
+| **uo** | *against* / *contrary to* | RESISTING (*push back*) | I |
+| **ae** | *on* / *over* | HELD (*frozen*, *a lid on it*) | I |
+| **oe** | *toward* / *in the direction of* | TOWARD (*turn to someone*) | I |
+| **ue** | *through* / *by way of* | UNPLACED (*which way is unclear*) | I |
 
 ## Root job {#root-vowels}
 
