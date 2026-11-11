@@ -51,6 +51,8 @@
     "verify": "tsx scripts/verify.ts",
     "token-report": "node scripts/token-report.mjs",
     "page-lines": "tsx scripts/page-lines.ts",
+    "changed-sections": "tsx scripts/changed-sections.ts",
+    "wording-only": "tsx scripts/wording-only.ts",
     "lint:cheat-sheet-print": "tsx scripts/lint-cheat-sheet-print.ts"
   },
   "engines": {
