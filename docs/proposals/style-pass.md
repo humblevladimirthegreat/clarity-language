@@ -1,6 +1,6 @@
 # Style pass
 
-**Status:** partially implemented. Decided 2026-11-11: a rising warning count fails the build on every page (the ratchet); recipe pages, cheat sheets, and level reviews get which-page rows; headings that need a retitle are logged and retitled together in H1; the user reviews each phase before the next starts; forms take bold only where introduced. **Phase 1 done 2026-11-11** (T1, T2, T3, C1). Decided 2026-11-11 after Phase 1, now in [doc-style.md](../meta/doc-style.md) and the agent file: a recipe lead keeps its consequence; a recipe section's answer form may be bold once; cheat-sheet prose puts bare letters and endings in backticks; a choice whose reason a later page teaches (object-first order, used mostly by other speech acts) needs no *when* yet. `purpose.md` and `introduction.md` were already rewritten to [orientation-style.md](../meta/orientation-style.md), so the pass skips them. Next: the user reviews the C1 diff (commit `d09d8f42`) and settles [open decision](#open-decisions) 1, then Phase 2.
+**Status:** partially implemented. Decided 2026-11-11: a rising warning count fails the build on every page (the ratchet); recipe pages, cheat sheets, and level reviews get which-page rows; headings that need a retitle are logged and retitled together in H1; the user reviews each phase before the next starts; forms take bold only where introduced. **Phase 1 done 2026-11-11** (T1, T2, T3, C1). Decided 2026-11-11 after Phase 1, now in [doc-style.md](../meta/doc-style.md) and the agent file: a recipe lead keeps its consequence; a recipe section's answer form may be bold once; cheat-sheet prose puts bare letters and endings in backticks; a choice whose reason a later page teaches (object-first order, used mostly by other speech acts) needs no *when* yet. The intention adverbs H3 moved from `clause.md` to `can-and-cant.md`, after `#ability-fallback`, with an example and its consequence (same id; links and hash row rewritten). `purpose.md` and `introduction.md` were already rewritten to [orientation-style.md](../meta/orientation-style.md), so the pass skips them. Next: the user reviews the C1 diff (commit `d09d8f42`), then Phase 2.
 
 **Related:** [doc-style.md](../meta/doc-style.md), [claritish-style.md](../meta/claritish-style.md), [orientation-style.md](../meta/orientation-style.md), [grammar-docs.md](../meta/grammar-docs.md), [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts), [prose-style.ts](../../src/lint/prose-style.ts), [prose-style-baseline.json](../../src/lint/prose-style-baseline.json), [sections.ts](../../src/lint/sections.ts), [style-editor.md](../../.claude/agents/style-editor.md)
 
@@ -110,9 +110,7 @@ Headings that prose units reported under rule 7 of the digest, each with its pag
 
 Sections that prose units reported under rule 6: the section needs a consequence or a *when* that no page states. Each needs a user decision or an owner-page edit; the pass does not fill them.
 
-| Section | Missing |
-|---------|---------|
-| `clause.md#intention-adverbs` | No example, no list of the words, no consequence; *intention* is not glossed. See [open decision](#open-decisions) 1 |
+*None open.*
 
 ### Gates
 
@@ -131,4 +129,4 @@ One commit per unit after its gate is green, by the orchestrator only, with the 
 
 ## Open decisions
 
-1. **`clause.md#intention-adverbs` cannot get an example where it is.** Every intention adverb is taught after `clause.md` (the first is `oda` on `/h/`, at `can-and-cant.md#ability-fallback`), so the learning-order lint rejects an example there, and the forward-link lint rejects a pointer. Several Intermediate pages link to the section as the definition of the class. Options: (a) leave the section as a definition with no example, and accept the gap; (b) move the H3 to `can-and-cant.md`, right after `#ability-fallback`, with `npm run move-heading` (it keeps the id and rewrites every link), and give it `hodaxol` as its example and the consequence that it covers the whole claim wherever it sits; (c) cut the section and retarget the links to each word's own page. **Recommendation:** (b). The class is then defined where the learner meets its first member, with an example, and every later link still lands on the definition. It is a move, which this pass otherwise does not make, so it needs your go-ahead.
+None.
