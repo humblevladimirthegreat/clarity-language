@@ -1,6 +1,6 @@
 # Feeling urges
 
-**Status:** ready to implement. Nothing has run. User decisions, all 2026-11-11:
+**Status:** partially implemented. U1, U2, and U3 are done and committed (2026-11-11); U4 is next. U1 and U3 ran on `fable` in place of `opus`, at the user's direction for those units. `how-you-feel.md` has no Practice yet, so its drill allowlist row is **generate** until U6. One decision is open ([open decisions](#open-decisions)). User decisions, all 2026-11-11:
 
 - `o` is GIVING; VICARIOUS is dropped, and someone else's stake is said with whose stake.
 - `ae` is one HELD urge, covering frozen and held in.
@@ -14,7 +14,7 @@
 - Two stage pages, a new late-Beginner sitting and the Intermediate page, and no Advanced page.
 - Two Claritish lessons.
 
-**Related:** [feelings.md](../grammar/intermediate/feelings.md), [sakes.md](../grammar/beginner/sakes.md), [for-a-sake.md](../grammar/intermediate/for-a-sake.md), [knowing.md](../grammar/beginner/knowing.md), [extra-noun-hooks.md](../grammar/beginner/extra-noun-hooks.md), [purpose.md](../grammar/purpose.md), [claritish/feelings.md](../grammar/claritish/feelings.md), [cheat-sheets/vowels.md](../grammar/cheat-sheets/vowels.md), [say-reasons.md](../grammar/say-reasons.md), [learning-levels.md](../meta/learning-levels.md), [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts), [claritish-triggers.csv](../../data/claritish-triggers.csv), [terminology.md](../grammar/terminology.md), [feature-criteria.md](../meta/feature-criteria.md), [unassigned-reserved.md](../meta/unassigned-reserved.md), [design-decisions.md](../meta/design-decisions.md), [claritish-flows.json](../../data/claritish-flows.json), [morph-gloss.ts](../../src/parse/morph-gloss.ts), [enforce.ts](../../src/parse/enforce.ts), [constructions.ts](../../src/parse/constructions.ts).
+**Related:** [feelings.md](../../grammar/intermediate/feelings.md), [sakes.md](../../grammar/beginner/sakes.md), [for-a-sake.md](../../grammar/intermediate/for-a-sake.md), [knowing.md](../../grammar/beginner/knowing.md), [extra-noun-hooks.md](../../grammar/beginner/extra-noun-hooks.md), [purpose.md](../../grammar/purpose.md), [claritish/feelings.md](../../grammar/claritish/feelings.md), [cheat-sheets/vowels.md](../../grammar/cheat-sheets/vowels.md), [say-reasons.md](../../grammar/say-reasons.md), [learning-levels.md](../../meta/learning-levels.md), [reading-order.ts](../../grammar/.vitepress/lib/reading-order.ts), [claritish-triggers.csv](../../../data/claritish-triggers.csv), [terminology.md](../../grammar/terminology.md), [feature-criteria.md](../../meta/feature-criteria.md), [unassigned-reserved.md](../../meta/unassigned-reserved.md), [design-decisions.md](../../meta/design-decisions.md), [claritish-flows.json](../../../data/claritish-flows.json), [morph-gloss.ts](../../../src/parse/morph-gloss.ts), [enforce.ts](../../../src/parse/enforce.ts), [constructions.ts](../../../src/parse/constructions.ts).
 
 **Depends on:** none. **Order:** `style-pass.md` rewrites teaching English on the same pages; run this one first so the style pass sees the new wording.
 
@@ -32,7 +32,7 @@ The feeling system has two aims: help people who have trouble labeling an emotio
 **Recognition**
 
 1. **It asks the hardest question first.** A feeling word cannot be built without a sake, a stance, and a changeability ending. Someone who struggles to label a feeling can usually report a body sensation, an urge, and how strong it is. *Which need is at stake?* is where they end up, not where they start.
-2. **Five choices sit in one word.** 9 sakes × 2 stances × 3 endings × 10 loci × 3 motions is 1,620 forms, chosen while upset. [Feature criteria](../meta/feature-criteria.md#easy-to-use) allow about one extra second of thought.
+2. **Five choices sit in one word.** 9 sakes × 2 stances × 3 endings × 10 loci × 3 motions is 1,620 forms, chosen while upset. [Feature criteria](../../meta/feature-criteria.md#easy-to-use) allow about one extra second of thought.
 3. **The locus slot mixes three things**: where the feeling sits (`a`, `ae`, `ue`), what it pulls you to do (`e`, `oe`, `uo`, `u`, `ua`, `ao`), and whose stake it is (`o`). One vowel fits, so *anxious* (`wuwathuraer`) says *over the room* and cannot also say *wanting out*.
 4. **Threat and loss are one stance.** `wuwathuraer` is spelled unmet-passing and glossed *at stake*. A predicted cost and an actual cost are different facts, and the difference between fear and sadness.
 5. **Ordinary emotion words have no bridge in.** Plain roots (`gonumul`, *angry*) are mentioned once as a way out. No table says how *angry*, *ashamed*, or *lonely* usually compose.
@@ -42,8 +42,8 @@ The feeling system has two aims: help people who have trouble labeling an emotio
 1. **Motion's advice is prose.** The page says surging can be a cue to ground. The form says only how the feeling moves.
 2. **STATIC lumps opposites.** Fury held in check and numb flatness share **-l** and call for different responses.
 3. **The pulls are mostly threat responses.** Seven directions, of which five are fight, flight, freeze, fawn, and collapse. Met feelings nearly all take `a` (INTERNAL), with nothing for savoring, sharing, or giving back. Guilt's pull to repair has no vowel.
-4. **Two names read as verdicts.** FAWN and COLLAPSE name trauma responses, against [avoids shame](../meta/feature-criteria.md). COLLAPSE also merges defeat with letting go, which is what grief is for.
-5. **VICARIOUS duplicates [whose stake](../grammar/intermediate/for-a-sake.md#whose-stake)**, and a direction tail blocks whose stake, because both want the `/b/`.
+4. **Two names read as verdicts.** FAWN and COLLAPSE name trauma responses, against [avoids shame](../../meta/feature-criteria.md). COLLAPSE also merges defeat with letting go, which is what grief is for.
+5. **VICARIOUS duplicates [whose stake](../../grammar/intermediate/for-a-sake.md#whose-stake)**, and a direction tail blocks whose stake, because both want the `/b/`.
 
 ## Goals
 
@@ -57,7 +57,7 @@ The feeling system has two aims: help people who have trouble labeling an emotio
 
 - The sake inventory, the stance vowels, and the sake word's own ending stay as they are.
 - Speaker attitudes (`thuwuyom`, `tholezem`, `thewemum`) stay as they are.
-- Someone else's feeling still goes through a [holder](../grammar/intermediate/holder.md).
+- Someone else's feeling still goes through a [holder](../../grammar/intermediate/holder.md).
 - No slot for body sensation or for arousal. Sensation is ordinary noun and adjective grammar; strength stays on the degree word.
 - Fault and cause stay outside the feeling word.
 
@@ -87,7 +87,7 @@ Morph glosses below use the proposed labels.
 
 ### Urge
 
-The urge is the vowels of an [extra-noun hook](../grammar/beginner/extra-noun-hooks.md), read as the direction the feeling moves you. All ten hooks are used, as now.
+The urge is the vowels of an [extra-noun hook](../../grammar/beginner/extra-noun-hooks.md), read as the direction the feeling moves you. All ten hooks are used, as now.
 
 | Urge | Hook | Gloss | The pull | Belongs when | Was |
 |------|------|-------|----------|--------------|-----|
@@ -116,7 +116,7 @@ An urge names the **dominant** pull. Two pulls take two feeling words, as now.
 
 ### Duration
 
-The last ending says how long the feeling itself lasts, on the [settled-to-passing scale](../grammar/beginner/sakes.md#settled-to-passing) every other sake ending uses.
+The last ending says how long the feeling itself lasts, on the [settled-to-passing scale](../../grammar/beginner/sakes.md#settled-to-passing) every other sake ending uses.
 
 | Ending | Gloss | Meaning | Was |
 |--------|-------|---------|-----|
@@ -139,7 +139,7 @@ The water cue (still, current, wave) goes away with motion.
 
 Seven urges move you relative to something, and take that landmark in a `bl-` word right after the feeling (after **`goyom`** when the feeling is on `/w/`): `e`, `oe`, `o`, `uo`, `u`, `ua`, `ao`. With no `/b/` the urge points at the stimulus noun when there is one, otherwise at someone unnamed. This is today's rule.
 
-Three urges have no landmark: `a`, `ae`, `ue`. After one of these, a `bl-` word is [whose stake](../grammar/intermediate/for-a-sake.md#whose-stake), as on any sake word.
+Three urges have no landmark: `a`, `ae`, `ue`. After one of these, a `bl-` word is [whose stake](../../grammar/intermediate/for-a-sake.md#whose-stake), as on any sake word.
 
 > `thunathulam blazozon.`
 >
@@ -161,7 +161,7 @@ The parser rejects `thunathulam blazozon` today (`feelingLandmark`), and the sam
 
 ### Predicted, not actual
 
-A feeling about something that has not happened puts [MAY](../grammar/beginner/knowing.md#may) next to the feeling word. The sake word then says what the event **may** cost or pay off, not what it has. No new form: MAY is already a `/th/` stance, and these parse today.
+A feeling about something that has not happened puts [MAY](../../grammar/beginner/knowing.md#may) next to the feeling word. The sake word then says what the event **may** cost or pay off, not what it has. No new form: MAY is already a `/th/` stance, and these parse today.
 
 > `zezuyol thomam wuwathurur goyom.`
 >
@@ -169,7 +169,7 @@ A feeling about something that has not happened puts [MAY](../grammar/beginner/k
 >
 > "The dialogue may cost me competence for now. I want out, and the feeling will pass."
 
-MAY's [follow-up endings](../grammar/beginner/knowing.md#follow-up-endings-may) carry over, so the anxious sentence can say what the speaker will do about the prediction:
+MAY's [follow-up endings](../../grammar/beginner/knowing.md#follow-up-endings-may) carry over, so the anxious sentence can say what the speaker will do about the prediction:
 
 | Ageben | English |
 |--------|---------|
@@ -182,7 +182,7 @@ Without MAY, the cost or payoff is reported as real. This replaces glossing unme
 
 ### Strength
 
-Unchanged: a [degree word](../grammar/intermediate/very-and-slightly.md#degree-w) on `/w/` right before the feeling word (`wamezem` *slightly*, `wohalal` *overwhelmingly*). With none, strength is unstated.
+Unchanged: a [degree word](../../grammar/intermediate/very-and-slightly.md#degree-w) on `/w/` right before the feeling word (`wamezem` *slightly*, `wohalal` *overwhelmingly*). With none, strength is unstated.
 
 > `zezuyol wohalal wuwathumael goyom.`
 >
@@ -197,28 +197,28 @@ The page teaches four rungs. Each is a complete sentence, so a learner stops whe
 | Rung | What you can report | Ageben | English |
 |------|---------------------|--------|---------|
 | 1 | a body sensation | `zobal gayewal` | *chest, tight* (lungs; clamp-like) |
-| | | `zadedul garolel` | *stomach, heavy* (rock-like) |
+| | | `zadedum garolem` | *stomach, heavy* |
 | 2 | a plain label | `zuwen gonumul` | *I am angry* |
 | 3 | stance, urge, duration; sake unnamed | `thudathumuor` | *something is off, I want to push back, it will pass* |
 | 4 | the named sake | `thunathumuor` | *my say was taken; it can change; I want to push back; it will pass* |
 
 Rung 1 names no owner: in a sentence about how you feel, the body is the speaker's. Rung 3 uses the unspecified sake `uda`. Rung 3 with `ue` is the least a feeling word can say: `thudathumuem`, *something is off and I can't tell what it wants*.
 
-Published roots for rung 2, as `/ɡ/` property words:
+Published roots for rung 2, as `/ɡ/` property words, as `how-you-feel.md#feeling-label` has them. The ending matters: on `odebe`, `ugoma`, and `ubamo` the **-l** form is the physical picture (teardrop, grin, blush) and the **-m** form is the emotion. *Disgusted* and *excited* sit on looser matches (the lemmas are *nauseated* and *passion*).
 
-| Ageben | English | Root | Ageben | English | Root |
-|--------|---------|------|--------|---------|------|
-| `gonumul` | *angry* | `onumu` | `gugomal` | *glad* | `ugoma` |
-| `gevemul` | *afraid* | `evemu` | `guremel` | *calm, relieved* | `ureme` |
-| `godebel` | *sad* | `odebe` | `gebumal` | *excited* | `ebuma` |
-| `gewemul` | *worried* | `ewemu` | `gemel` | *surprised* | `eme` |
-| `gubamol` | *embarrassed* | `ubamo` | `gonomul` | *disgusted* | `onomu` |
-| `gehamul` | *heartbroken* | `ehamu` | `goyomel` | *bored* | `oyome` |
-| `gadamul` | *worn out* | `adamu` | | | |
+| Ageben | English | Ageben | English |
+|--------|---------|--------|---------|
+| `gonumul` | *angry* | `gugomam` | *glad* |
+| `gevemul` | *afraid* | `guremel` | *relieved* |
+| `godebem` | *sad* | `guremem` | *calm* |
+| `gewemul` | *worried* | `gebumal` | *excited* |
+| `gubamom` | *embarrassed* | `gemel` | *surprised* |
+| `gehamul` | *heartbroken* | `gonomul` | *disgusted* |
+| `gadamul` | *tired* | | |
 
 ### From an English emotion word
 
-A lookup keyed by English, so it lives on the recipe track ([say-reasons.md](../grammar/say-reasons.md#feelings)) and not on a stage page. The Intermediate page keeps a short example table, which feeds the cheat sheet. Each row is a **typical** build, not a definition: the same English word can take another sake or urge. Forms are shown on `/th/` with no object and **-m** duration unless a part is the point.
+A lookup keyed by English, so it lives on the recipe track ([say-reasons.md](../../grammar/say-reasons.md#feelings)) and not on a stage page. The Intermediate page keeps a short example table, which feeds the cheat sheet. Each row is a **typical** build, not a definition: the same English word can take another sake or urge. Forms are shown on `/th/` with no object and **-m** duration unless a part is the point.
 
 | English | Typical build | Ageben |
 |---------|---------------|--------|
@@ -269,7 +269,7 @@ Each part of the word points at one thing to do. This is what the page teaches i
 
 Two stage pages, split by form and not by rung. Rungs 1 and 2 add no form, and rung 4 differs from rung 3 only by a sake root the learner already has, so the whole ladder is Beginner. What Intermediate adds is the rest of the urge series and the duration endings.
 
-| | Beginner: `beginner/how-you-feel.md` (new) | Intermediate: [feelings.md](../grammar/intermediate/feelings.md) (same URL) |
+| | Beginner: `beginner/how-you-feel.md` (new) | Intermediate: [feelings.md](../../grammar/intermediate/feelings.md) (same URL) |
 |---|---|---|
 | Ladder | all four rungs | — |
 | Urges | `a` STAYING, `e` AIMED, `o` GIVING, `u` AWAY | `oe` TOWARD, `uo` RESISTING, `ua` RELEASING, `ao` PLACATING, `ae` HELD, `ue` UNPLACED |
@@ -277,21 +277,13 @@ Two stage pages, split by form and not by rung. Rungs 1 and 2 add no form, and r
 | `bl-` after the feeling | the landmark of `e`, `o`, `u` | whose stake after `a`, `ae`, `ue`; the two-sentence pattern |
 | Other | a feeling with no object; MAY beside a feeling | strength; what the form suggests, in full; the attitude words |
 
-- **Beginner placement.** Last in the *Talking together* unit, after *Thanks and sorry*. Every home it uses is earlier in the band: [sakes](../grammar/beginner/sakes.md), [predication](../grammar/beginner/predication.md), [knowing](../grammar/beginner/knowing.md), [extra-noun hooks](../grammar/beginner/extra-noun-hooks.md). The four Beginner urges are the single-vowel hooks that band already teaches.
-- **Why the split.** The [Beginner gate](../meta/learning-levels.md#gates): saying how you feel is a first-stretch job, the full map fails *usable*, and this slice passes it.
-- **`#feeling-no-object`** moves to the Beginner page with `npm run move-heading`, so its links follow it. **`#emotion-compose`** and **`#speaker-attitude`** stay on the Intermediate page.
+The Beginner page is written, without Practice. Its sections: `#body-sensation`, `#feeling-label`, `#feeling-word`, `#urges`, `#urge-landmark`, `#feeling-about-a-thing`, `#feeling-no-object` (moved from `feelings.md`), and `#predicted-feeling`.
+
+- It also teaches a feeling word on a noun (`/ɡ/` after a belonging, `/w/` before **`goyom`**), because [sakes.md](../../grammar/beginner/sakes.md#word-shape) already teaches both placements for a plain sake word.
+- It says `a` has no landmark and shows no `bl-` after an `a` feeling, so the Intermediate page is free to teach whose stake there.
+- Its rungs 3 and 4 are `thudathumum` and `thunathumum`: one word with only the sake root swapped.
+- **`#emotion-compose`** and **`#speaker-attitude`** stay on the Intermediate page.
 - **No Advanced page.** The named sake tells the learner what to ask for, so it cannot wait. What adds no form (two feeling words for mixed pulls, the English lookup) goes on the recipe track.
-- With duration left at **-m**, a Beginner feeling word is four choices, and the unspecified sake and `a` make two of them optional in practice.
-
-Beginner examples, all with **-m** duration:
-
-| Ageben | English |
-|--------|---------|
-| `thudathumum` | *something is off, and I want to get away* |
-| `thunathumem blalazun` | *my say was taken, and I want to take it up with Alazun* |
-| `thewathumom blalazun` | *I cost Alazun something, and I want to make it right* |
-| `thawethamam` | *I feel connected, and I want to stay in it* |
-| `thomam thobathumum` | *I may be in danger, and I want to get away* |
 
 ### Claritish
 
@@ -300,13 +292,13 @@ Two lessons in place of *Feelings in three parts*, mirroring the stage split. Ru
 | Lesson | File | Gap | Forms |
 |--------|------|-----|-------|
 | What a feeling wants | `claritish/what-a-feeling-wants.md` (new) | an emotion word hides the need and the pull | a thanks or sorry word + one of `a` `e` `o` `u` + **-m** |
-| Feelings in full | [claritish/feelings.md](../grammar/claritish/feelings.md) (same URL, retitled) | an emotion word hides whether the feeling will pass, and whether its cause has happened | the six stacked urges; **-l** / **-r** duration; MAY beside a feeling |
+| Feelings in full | [claritish/feelings.md](../../grammar/claritish/feelings.md) (same URL, retitled) | an emotion word hides whether the feeling will pass, and whether its cause has happened | the six stacked urges; **-l** / **-r** duration; MAY beside a feeling |
 
 The track then has eleven lessons and the bonus. First-person cues (*I'm anxious*, *makes me feel…*) point at the first lesson.
 
 ### Journal editor flow
 
-The `feeling` flow in [claritish-flows.json](../../data/claritish-flows.json) asks the checkable questions first:
+The `feeling` flow in [claritish-flows.json](../../../data/claritish-flows.json) asks the checkable questions first:
 
 1. *Is something met, or unmet?* (stance)
 2. *What does the feeling pull you to do?* (urge; the four single-vowel urges first, then the six stacked)
@@ -335,63 +327,62 @@ A writer who answers only the first two and takes the defaults gets a rung 3 wor
 
 ## What changes, by file
 
-No spelling changes, so this is not a retie. A locus vowel in an example changes through `node scripts/find.mjs … --map locus=from:to` ([searching by construction](../meta/procedures/read-ageben.md#find)). Glosses regenerate through `npm run regloss-docs -- --write`.
+No spelling changes, so this is not a retie. A locus vowel in an example changes through `node scripts/find.mjs … --map locus=from:to` ([searching by construction](../../meta/procedures/read-ageben.md#find)). Glosses regenerate through `npm run regloss-docs -- --write`.
 
 **Parser**
 
-- [morph-gloss.ts](../../src/parse/morph-gloss.ts): the locus labels and `EMOTION_MOTION`, to the names on the Status line.
-- [enforce.ts](../../src/parse/enforce.ts) `feelingLandmark`: a `bl-` after `a`, `ae`, or `ue` is accepted and read as whose stake. This is the one behavior change, and it lands in the same commit as the Intermediate page that teaches it.
-- [constructions.ts](../../src/parse/constructions.ts) and [llm-prompt.ts](../../src/parse/llm-prompt.ts): reader notes and the `feelingLandmark` summary.
-- Tests that name the old labels: `morph-gloss.test.ts`, `llm-prompt.test.ts`, `invalid-forms.test.ts`, `terminology-docs.test.ts`, `find/query.test.ts`.
-- `src/english-helper/detectors.ts`: any cue keyed to a locus name.
+- [enforce.ts](../../../src/parse/enforce.ts) `feelingLandmark`: a `bl-` after `a`, `ae`, or `ue` is accepted and read as whose stake. This is the one behavior change, and it lands in the same commit as the Intermediate page that teaches it. Its test row is in `invalid-forms.test.ts`.
+- [constructions.ts](../../../src/parse/constructions.ts) and [llm-prompt.ts](../../../src/parse/llm-prompt.ts):
+  - The `feelingLandmark` summary, and the comment above the rule in `enforce.ts`, still name INTERNAL and CIRCUM.
+  - The reader notes still call AIMED and AWAY an *emotion locus*, and tell the reader to render a feeling tail as one English emotion word, not piece by piece. The pages now gloss it piece by piece.
+  - The sake reader note's lines on a `b-` word after a sake word need a re-read against whose stake.
+  - The feeling-word construction's home is now `how-you-feel.md#feeling-word`. The rule anchors `emotionTail` and `feelingLandmark` still point at `feelings.md#emotion-compose`.
+- The parsed-word field and the `find.mjs --map` key keep the name `locus`. Comments in `src/parse/word.peggy` and `src/retie/rebuild.ts` still say *locus* and *motion*; change the first only when the parser is next regenerated.
 
 **Stage pages**
 
-- `beginner/how-you-feel.md`: new sitting, as in [where it is taught](#where-it-is-taught), with Practice. A row in the *Talking together* unit of [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts), a drill allowlist row, and an item in the Beginner level review.
-- [feelings.md](../grammar/intermediate/feelings.md): rewrite `#emotion-compose` as the rest of the series; `#feeling-no-object` leaves; new Practice. Measure the sitting and peel if it runs over ([restructure sittings](../meta/procedures/restructure-sittings.md)).
-- Examples elsewhere: 100 feeling words on ten pages. All need the last ending re-read. The 62 with `a` (24), `ae` (16), `ue` (14), or `o` (8) need new English or a new vowel. By page: `say-reasons.md` 30, `feelings.md` 27, `terminology.md` 13, `claritish/feelings.md` 13, `cheat-sheets/why-allowed.md` 10 (generated), `say-questions.md` 2, `holder.md` 2, `mirative.md` 1, `compound-families.md` 1, `claritish/cheat-sheet.md` 1.
-- [say-reasons.md](../grammar/say-reasons.md#feelings): gains the [English lookup](#from-an-english-emotion-word) and a recipe for mixed pulls.
-- [purpose.md](../grammar/purpose.md#emotions-as-composition): the three parts become need, urge, and duration; the Claritish link names the first lesson.
-- [cheat-sheets/vowels.md](../grammar/cheat-sheets/vowels.md): the feeling rows in `#place` (now stage B) and `#extra-noun-stacks`, and *feeling loci* in the vowel tree. Generated blocks through `npm run cheat-sheet-blocks -- --write`.
-- [terminology.md](../grammar/terminology.md): urge and duration replace locus and motion; the ten names.
+- `beginner/how-you-feel.md`: Practice, then its drill allowlist row confirmed (Setting, Introduces, notes) and set to **exists**; an item in the Beginner level review. Two allowlist notes are stale: *Not emotion compose* on the `thanks-and-sorry.md` row, and *feeling with no object* under Introduces on the `feelings.md` row.
+- [feelings.md](../../grammar/intermediate/feelings.md): rewrite `#emotion-compose` as the rest of the series; new Practice. Measure the sitting and peel if it runs over ([restructure sittings](../../meta/procedures/restructure-sittings.md)).
+- Examples elsewhere: 100 feeling words on ten pages. All need the last ending re-read. The 62 with `a` (24), `ae` (16), `ue` (14), or `o` (8) need new English or a new vowel. By page: `say-reasons.md` 30, `feelings.md` 27, `terminology.md` 13, `claritish/feelings.md` 13, `cheat-sheets/why-allowed.md` 10 (hand rows), `say-questions.md` 2, `holder.md` 2, `mirative.md` 1, `compound-families.md` 1, `claritish/cheat-sheet.md` 1.
+- [say-reasons.md](../../grammar/say-reasons.md#feelings): gains the [English lookup](#from-an-english-emotion-word) and a recipe for mixed pulls.
+- [purpose.md](../../grammar/purpose.md#emotions-as-composition): the three parts become need, urge, and duration; the Claritish link names the first lesson.
+- [cheat-sheets/vowels.md](../../grammar/cheat-sheets/vowels.md): the feeling rows in `#place` (now stage B) and `#extra-noun-stacks`, and *feeling loci* in the vowel tree. Generated blocks through `npm run cheat-sheet-blocks -- --write`.
+- `cheat-sheets/why-allowed.md`: its `## Feelings` section (`#locus`, `#motion`, and the example rows) is hand-written, not generated, and still teaches the old readings. Its three *feeling with no object* rows already point at the Beginner page.
+- [terminology.md](../../grammar/terminology.md): urge and duration replace locus and motion; the ten names.
 
 **Claritish**
 
-- `claritish/what-a-feeling-wants.md`: new lesson. [claritish/feelings.md](../grammar/claritish/feelings.md): rewritten as *Feelings in full*. Its breakdown table shows `ao` for *over the room* where the word has `ae`; the rewrite removes it.
-- `claritishLessons` in [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts); `claritish/index.md`, `claritish/learn.md`, and `claritish/cheat-sheet.md` wherever they count or list lessons.
-- [claritish-triggers.csv](../../data/claritish-triggers.csv): the `feeling-unmet`, `feeling-met`, and `emotion-words` rows name the first lesson.
-- [claritish-flows.json](../../data/claritish-flows.json): the `feeling` flow, as in [journal editor flow](#journal-editor-flow). `src/claritish-editor/data.test.ts`, `read-back.test.ts`, and [claritish-editor-data.md](../meta/claritish-editor-data.md) follow.
+- `claritish/what-a-feeling-wants.md`: new lesson. [claritish/feelings.md](../../grammar/claritish/feelings.md): rewritten as *Feelings in full*. Its breakdown table shows `ao` for *over the room* where the word has `ae`; the rewrite removes it.
+- `claritishLessons` in [reading-order.ts](../../grammar/.vitepress/lib/reading-order.ts); `claritish/index.md`, `claritish/learn.md`, and `claritish/cheat-sheet.md` wherever they count or list lessons.
+- [claritish-triggers.csv](../../../data/claritish-triggers.csv): the `feeling-unmet`, `feeling-met`, and `emotion-words` rows name the first lesson.
+- [claritish-flows.json](../../../data/claritish-flows.json): the `feeling` flow, as in [journal editor flow](#journal-editor-flow). `src/claritish-editor/data.test.ts`, `read-back.test.ts`, and [claritish-editor-data.md](../../meta/claritish-editor-data.md) follow.
 
 **Editor notes**
 
-- [unassigned-reserved.md](../meta/unassigned-reserved.md): drop the open row for `bl-` after an INTERNAL or UNPLACED feeling; add an open row for a second `bl-` after a feeling word.
-- [design-decisions.md](../meta/design-decisions.md): why there is no placement locus, no motion ending, no arousal slot, no vicarious urge, and one `bl-` per feeling word.
-- `AGENTS.md`: the `feelings.md` Owns line gains `how-you-feel.md`; the Claritish row says eleven lessons.
+- [unassigned-reserved.md](../../meta/unassigned-reserved.md): drop the open row for `bl-` after an INTERNAL or UNPLACED feeling; add an open row for a second `bl-` after a feeling word.
+- [design-decisions.md](../../meta/design-decisions.md): why there is no placement locus, no motion ending, no arousal slot, no vicarious urge, and one `bl-` per feeling word.
+- `AGENTS.md`: the `feelings.md` Owns line gains `how-you-feel.md` (for example *saying how you feel: body, label, feeling word, four urges*); the Claritish row says eleven lessons.
 - `TODO.md`: remove the *reconsider emotions* lines.
 
 ## Implementation plan
 
-Runs through subagents: the work spans the parser, two teaching pages, example judgment on ten pages, and the Claritish track, which share little. One fresh subagent per unit, in this order. If the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate-on-stop) before the session ends.
+Runs through subagents: the work spans the parser, two teaching pages, example judgment on ten pages, and the Claritish track, which share little. One fresh subagent per unit, in this order. If the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate-on-stop) before the session ends.
 
 | Unit | Items | Agent | `model` | `effort` | May edit |
 |------|-------|-------|---------|----------|----------|
-| U1 | Gloss labels in the parser and its tests | `proposal-worker` | `opus` | `medium` | `src/parse/`, `src/find/*.test.ts`, `src/lint/terminology-docs.test.ts`, `src/english-helper/detectors.ts` |
-| U2 | `npm run regloss-docs -- --write` | orchestrator | — | — | regenerated glosses only |
-| U3 | Write `beginner/how-you-feel.md` teaching sections; move `#feeling-no-object` to it; reading-order row | `proposal-worker` | `opus` | `high` | the new page, `feelings.md` (the moved H3 only), `reading-order.ts` |
-| U4 | Rewrite `feelings.md` teaching sections; `feelingLandmark` in the parser with its tests; `unassigned-reserved.md`; `design-decisions.md`; measure and peel | `proposal-worker` | `opus` | `high` | `feelings.md`, `src/parse/enforce.ts`, `constructions.ts`, `llm-prompt.ts`, their tests, the two meta notes, any page a peel creates |
+| U4 | Rewrite `feelings.md` teaching sections; `feelingLandmark` and the reader notes in the parser, with their tests; `unassigned-reserved.md`; `design-decisions.md`; measure and peel | `proposal-worker` | `opus` | `high` | `feelings.md`, `src/parse/enforce.ts`, `constructions.ts`, `llm-prompt.ts`, their tests, the two meta notes, any page a peel creates |
 | U5 | Feeling examples on `say-reasons.md`, `say-questions.md`, `holder.md`, `mirative.md`, `compound-families.md`, `terminology.md`; the English lookup and mixed-pulls recipe on `say-reasons.md` | `proposal-worker` | `opus` | `high` | those six pages |
 | U6 | Practice on `how-you-feel.md`, then on `feelings.md`; allowlist rows | `checkpoint-writer` | `opus` | `high` | the two Practice sections, the drill allowlist |
 | U7 | Level review items: one new in `review.md`; re-check the feelings items in `review-intermediate.md` | `checkpoint-writer` | `opus` | `high` | the two review pages |
 | U8 | Claritish: the new lesson, the rewritten lesson, the cheat sheet, lesson lists and counts | `proposal-worker` | `opus` | `high` | `docs/grammar/claritish/`, `reading-order.ts` (`claritishLessons`) |
 | U9 | Journal editor: cue rows, the `feeling` flow, editor tests, the editor data note | `proposal-worker` | `opus` | `medium` | `data/claritish-triggers.csv`, `data/claritish-flows.json`, `src/claritish-editor/*.test.ts`, `claritish-editor-data.md` |
-| U10 | `purpose.md`, `cheat-sheets/vowels.md` hand rows, `TODO.md` | `proposal-worker` | `opus` | `medium` | those three files |
+| U10 | `purpose.md`, `cheat-sheets/vowels.md` hand rows, the `## Feelings` section of `cheat-sheets/why-allowed.md`, `TODO.md` | `proposal-worker` | `opus` | `high` | those four files |
 | U11 | `npm run cheat-sheet-blocks -- --write` | orchestrator | — | — | generated blocks only |
 | U12 | Audit: old labels left anywhere, English that no longer matches its gloss, a Beginner example that uses an Intermediate urge or ending | `proposal-worker` | `opus` | `high` | none; reports only |
 
 Notes on order:
 
-- **U1 then U2.** Renaming labels changes no behavior, but it leaves every documented feeling gloss stale until U2 regenerates them. U1 is gated on the parser tests alone.
-- **U3 before U4**, so the Intermediate page is written against a Beginner page that exists. `reading-order.ts` takes one writer at a time: U3, then U8.
+- `reading-order.ts` takes one writer at a time; U8 is its next writer.
 - **U4 carries the one behavior change** with the page that teaches it.
 - **U6 before U7**: the checkpoint writer for `how-you-feel.md` must not have read `feelings.md`'s new sections, so the orchestrator's pack (`tmp/checkpoint-pack/feeling-urges.md`) names the sittings in path order.
 - The orchestrator applies the `AGENTS.md` lines after U10.
@@ -416,12 +407,18 @@ Notes on order:
 > - Report, in fixed fields: what changed (with ids), files touched (count), registry edits, `AGENTS.md` Owns lines to change, the `verify` line, skips with reasons, **left:**, **inefficient:**.
 > - At about 25 tool calls, check what is left. If it is small, finish the item, even past 25 calls. If a significant amount is left (more than a few edits, or pages you have not read yet), stop at a clean point, leave the tree green, and report: done, left (as steps), files touched.
 
-Full rules a subagent may open when the digest does not settle a question: [where it is taught](#where-it-is-taught), [urge](#urge), [landmark and whose stake](#landmark-and-whose-stake), [learning-levels.md](../meta/learning-levels.md#gates), [claritish-style.md](../meta/claritish-style.md), [restructure-sittings.md](../meta/procedures/restructure-sittings.md).
+Full rules a subagent may open when the digest does not settle a question: [where it is taught](#where-it-is-taught), [urge](#urge), [landmark and whose stake](#landmark-and-whose-stake), [learning-levels.md](../../meta/learning-levels.md#gates), [claritish-style.md](../../meta/claritish-style.md), [restructure-sittings.md](../../meta/procedures/restructure-sittings.md).
 
-**Gates.** The orchestrator saves `npm run verify -- --baseline` before U1 and again after U2. Each later unit ends on `npm run verify -- --allow-generate`. Between U2 and U5, prose and terminology errors on pages a later unit rewrites are expected; the orchestrator lists them after U2 and checks each off as its unit lands. Run `npm run grammar-check` only if `sentence-parser.ts` changed. Final gate: a clean `npm run build` and `npm test` after U11, with nothing left on a **generate** row.
+**Gates.** The next session starts with `npm run verify -- --baseline`. That baseline holds the expected errors U1 to U3 left: the label table in `terminology.md` (nine labels to add, three rows to drop, and the `llm-prompt.test.ts` legend test that reads it), which U5 clears, and the missing Practice on `how-you-feel.md`, which U6 clears. The orchestrator checks each off as its unit lands. Each unit ends on `npm run verify -- --allow-generate`. Run `npm run grammar-check` only if `sentence-parser.ts` changed. Final gate: a clean `npm run build` and `npm test` after U11, with nothing left on a **generate** row.
 
-**Commits.** Ten, each starting `feeling-urges <unit>` and ending `[skip-cd]` and the co-author line: U1; U2 (tool output alone, naming the command); U3; U4; U5; U6; U7; U8 with U9; U10 with the `AGENTS.md` lines; U11 (tool output alone). U12 makes none unless it finds fixes, which go in an eleventh.
+**Commits.** Seven more, each starting `feeling-urges <unit>` and ending `[skip-cd]` and the co-author line: U4; U5; U6; U7; U8 with U9; U10 with the `AGENTS.md` lines; U11 (tool output alone, naming the command). U12 makes none unless it finds fixes, which go in an eighth.
 
 ## Open decisions
 
-None. The eleven decisions on the Status line were settled on 2026-11-11.
+**A rung 2 label for *bored*.** The proposal listed `goyomel` for *bored*. The root `oyome` is *yawn* / *monotony*: it describes the situation, not the person, so neither ending says *bored*. It is also one letter from `goyom`, *as stimulus*, which the same page teaches. U3 left the row out of `how-you-feel.md#feeling-label`.
+
+- **Omit it** (as the page stands). *Bored* is said by calling the situation monotonous, or with a feeling word.
+- **Accept `goyomel`** as *bored*, on the looser match *disgusted* and *excited* already take.
+- **Add a root** for the feeling itself, through the [lexicon procedure](../../meta/procedures/lexicon.md).
+
+**Recommendation:** omit it. A learner who reads `zuwen goyomel` as *I am monotonous* has been told the wrong thing about themselves, and the near-collision with `goyom` falls on the page where both are new.
