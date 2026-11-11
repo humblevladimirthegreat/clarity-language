@@ -10,6 +10,8 @@
     "typecheck": "tsc --noEmit && tsc --noEmit -p docs/grammar/.vitepress",
     "grammar-check": "tsx scripts/grammar-check.ts",
     "parse-snapshot": "tsx scripts/parse-snapshot.ts",
+    "format-json": "tsx scripts/format-json.ts",
+    "lint:json-format": "tsx scripts/format-json.ts --check",
     "lint:ageben": "tsx scripts/lint-ageben-docs.ts",
     "lint:forward-links": "tsx scripts/lint-forward-links.ts",
     "lint:prose": "tsx scripts/lint-prose-style.ts",

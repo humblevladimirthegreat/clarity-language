@@ -97,6 +97,7 @@ const jobs = [
   run("lint prose style", bin("tsx"), ["scripts/lint-prose-style.ts"]),
   run("lint cheat sheets", bin("tsx"), ["scripts/lint-cheat-sheets.ts"]),
   run("lint claritish editor", bin("tsx"), ["scripts/lint-claritish-editor.ts"]),
+  run("lint json format", bin("tsx"), ["scripts/format-json.ts", "--check"]),
   run("lint game", bin("tsx"), ["scripts/lint-game.ts"]),
   run("cheat sheet blocks", bin("tsx"), ["scripts/cheat-sheet-blocks.ts"]),
   run("lint ageben", bin("tsx"), ["scripts/lint-ageben-docs.ts"]),

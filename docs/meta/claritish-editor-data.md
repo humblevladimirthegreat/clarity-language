@@ -88,6 +88,13 @@ In `data/claritish-flows.json`, each question's answers name a place on the chea
 | `"requires": "command"` on a choice | Offers the choice only from a command (*can*, which no English cue asks for) |
 | `none` on a choice | Ends in no drop-in: the card shows its line and offers only *Leave it in English*, for a lesson that says when to leave the word off |
 
+## JSON format
+<a id="json-format"></a>
+
+Every `data/*.json` file is kept in one canonical form: `JSON.stringify(data, null, 2)` plus a final newline, UTF-8, with no escaping beyond what JSON requires (a Python `json.dumps` without `ensure_ascii=False` is not canonical). The data is read by tools, so there is no width-based or compact layout. That way any tool that loads and re-saves a file produces a minimal diff.
+
+`npm run format-json` rewrites every `data/*.json` into that form. `npm run lint:json-format` (`--check`) runs in the build and lists each file that is not canonical. Edit these files by loading and saving, not by splicing lines, then run `npm run format-json`. Files outside `data/` (including `src/generated/`) are not covered.
+
 ## Reading back
 <a id="reading-back"></a>
 
