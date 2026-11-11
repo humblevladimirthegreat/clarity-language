@@ -94,6 +94,7 @@ export const beginnerUnits: Unit[] = [
       { text: 'Firm and soft', link: '/firm-soft' },
       { text: 'Fill-ask jobs', link: '/fill-ask-jobs' },
       { text: 'Thanks and sorry', link: '/thanks-and-sorry' },
+      { text: 'How you feel', link: '/how-you-feel' },
     ],
   },
 ]

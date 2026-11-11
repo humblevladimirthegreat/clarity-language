@@ -165,7 +165,7 @@ In a [question](/questions#question), the channel asks what the **listener's** a
 >
 > "Will it rain, going by the pattern you see?"
 
-On a [feeling](feelings.md#emotion-compose) (a sake word with a locus and a motion ending, before **`goyom`**), the channel and offset date the **stimulus**. On a [feeling with no object](feelings.md#feeling-no-object), they date a stimulus you leave unnamed. The feeling itself stays now.
+On a [feeling](feelings.md#emotion-compose) (a sake word with a locus and a motion ending, before **`goyom`**), the channel and offset date the **stimulus**. On a [feeling with no object](how-you-feel.md#feeling-no-object), they date a stimulus you leave unnamed. The feeling itself stays now.
 
 **Compare with:** [PLAN](/intention#plan-predict) (`thagom`) says what you **intend** to do. Your own intention needs no channel. A forecast is a claim about the world. *Could be* with nothing behind it is [MAY](/knowing#may), not a forecast.
 

@@ -192,9 +192,9 @@ Motion is how the feeling moves, not how strong it is. For strength, put a [degr
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [A feeling with no object](/feelings#feeling-no-object) | `thuwathuruer.` | *I'm anxious.* | I |
-| [Name its cause](/feelings#feeling-no-object) | `thuwathuruer thahum blerulal.` | *I'm anxious, and the rain caused it.* | I |
-| [A feeling about an event](/feelings#feeling-no-object) | `zalazun vowurol thawethamar` | *moved that Alazun walks* | I |
+| [A feeling with no object](/how-you-feel#feeling-no-object) | `thawethumum.` | *Connection is missing, and I want to hide.* | B |
+| [Name its cause](/how-you-feel#feeling-no-object) | `thudathumum thahum blerulal.` | *Something is off, and I want to get away. The rain caused it.* | B |
+| [A feeling about an event](/how-you-feel#feeling-no-object) | `zalazun vowurol thawethamam.` | *moved that Alazun walks, and I want to stay in it* | B |
 
 <PageBreak />
 

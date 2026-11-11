@@ -75,4 +75,4 @@ The meeting ran two hours over `thunathumuom`.
 `thurothumal`.
 :::
 
-<!-- Source (editors): feelings.md#emotion-compose, feelings.md#feeling-no-object. -->
+<!-- Source (editors): feelings.md#emotion-compose, how-you-feel.md#feeling-no-object. -->

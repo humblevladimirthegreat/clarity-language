@@ -509,7 +509,7 @@ export const SAKE_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vo
   "ending.o.l": { anchor: "for-a-sake.md#motive-tho-time-horizon", summary: "motive standing -l" },
   "ending.o.m": { anchor: "for-a-sake.md#motive-tho-time-horizon", summary: "motive standing -m" },
   "ending.o.r": { anchor: "for-a-sake.md#motive-tho-time-horizon", summary: "motive standing -r" },
-  "emotion": { anchor: "feelings.md#emotion-compose", summary: "emotion tail (urge vowel + duration ending)" },
+  "emotion": { anchor: "how-you-feel.md#feeling-word", summary: "emotion tail (urge vowel + duration ending)" },
 };
 
 /** Join fence series vowel (joins.md, comparatives.md). */

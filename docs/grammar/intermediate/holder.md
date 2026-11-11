@@ -142,7 +142,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 >
 > "I gather Azozon is watching Alazun leave."
 
-A [feeling with no object](feelings.md#feeling-no-object) works the same way: the holder makes it someone else's feeling.
+A [feeling with no object](how-you-feel.md#feeling-no-object) works the same way: the holder makes it someone else's feeling.
 
 > `thuwathuruer theyomalazun.`
 >

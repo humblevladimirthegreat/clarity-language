@@ -298,7 +298,7 @@ export const OPENER_LINKS = {
   /** *tells someone that the dog runs*: a stand-in, then the clause as the next sentence. */
   content: ["dependents.md#dependent-clauses"],
   /** *glad that it rains*: the feeling word goes on the clause it is about. */
-  feeling: ["feelings.md#feeling-no-object"],
+  feeling: ["how-you-feel.md#feeling-no-object"],
   /** *the dog that runs*: two sentences. */
   relative: ["dependents.md#which-noun"],
 } as const;
@@ -342,7 +342,7 @@ export const HOLDER_LINKS: readonly string[] = ["holder.md#holder", "want-and-de
  * someone else owns it, the analyzer adds {@link HOLDER_FEELING}: the feeling takes a holder.
  */
 export const FEELING_LINKS: readonly string[] = [
-  "feelings.md#feeling-no-object",
+  "how-you-feel.md#feeling-no-object",
   "feelings.md#emotion-compose",
   "say-reasons.md#sake-words",
   "sakes.md#sake-inventory",

@@ -119,7 +119,7 @@ Someone else's view is never a bare claim. Put a holder on the clause, which say
 
 ### Reason, purpose, guilty {#reason-purpose-guilty}
 
-**Needs:** [Because](/because-and-iff#only-because) · [Fault](/fault#fault) · [Motive](/for-a-sake#sake-preference) · [Prescription](/ought-for-a-sake#sake-force) · [Attachment sites](/for-a-sake#attachment-sites) · [So that](/dependents#so-that) · [Why?](/fill-ask-jobs#why) · [Emotion compose](/feelings#emotion-compose) · [Feeling with no object](/feelings#feeling-no-object)
+**Needs:** [Because](/because-and-iff#only-because) · [Fault](/fault#fault) · [Motive](/for-a-sake#sake-preference) · [Prescription](/ought-for-a-sake#sake-force) · [Attachment sites](/for-a-sake#attachment-sites) · [So that](/dependents#so-that) · [Why?](/fill-ask-jobs#why) · [Emotion compose](/feelings#emotion-compose) · [Feeling with no object](/how-you-feel#feeling-no-object)
 
 English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each split the same way. Name which one you mean: what **made it happen** (the because hinge), what the speaker is **doing it for** (a motive, on a sake), or the **faculty** of thinking (the abstract sense of `ebobe`).
 
@@ -809,7 +809,7 @@ Other shapes use forms you already have:
 | recurring | [always](/restrictors) `hual` | *dreading every dialogue* |
 | did not happen | [NOTIONAL](/notional#notional) | *relieved about what didn't happen* |
 
-A [feeling with no object](/feelings#feeling-no-object) can take a channel and offset too. Then the stimulus is real but unnamed: you know when it is, not what it is.
+A [feeling with no object](/how-you-feel#feeling-no-object) can take a channel and offset too. Then the stimulus is real but unnamed: you know when it is, not what it is.
 
 > `thuwathuruer thaber blral.`
 >
@@ -869,7 +869,7 @@ Put an **act** after the hinge (`barl zalazun vezuyol`), not the person. A feeli
 
 ### Curious, confused, bored, awed, surprised {#understanding-feelings}
 
-**Needs:** [Sake inventory](/sakes#sake-inventory) · [Emotion compose](/feelings#emotion-compose) · [Feeling with no object](/feelings#feeling-no-object) · [Mirative](/mirative#mirative)
+**Needs:** [Sake inventory](/sakes#sake-inventory) · [Emotion compose](/feelings#emotion-compose) · [Feeling with no object](/how-you-feel#feeling-no-object) · [Mirative](/mirative#mirative)
 
 Most of these feelings are about the **understanding** sake: whether something makes sense. Surprise is different. It says the news ran against what you expected, so it is the [mirative](/mirative#mirative), and a sake word says how the news lands.
 

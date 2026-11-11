@@ -827,7 +827,7 @@ function enforceHookStandIn(hook: LexWord, next: Unit | undefined): void {
 
 /**
  * The sentence after a stand-in names an event or a thing: stance words alone fill no slot, except a lone
- * sake word, which is a whole sentence about the speaker (dependents.md#dependent-clauses, feelings.md#feeling-no-object).
+ * sake word, which is a whole sentence about the speaker (dependents.md#dependent-clauses, how-you-feel.md#feeling-no-object).
  */
 function enforceDependentContent(clause: Clause): void {
   const dependent = clause.dependent;

@@ -92,34 +92,6 @@ Raw feeling (contacting a sensation without judgment) may go unlabeled. To name 
 
 **Compare with:** *could be* uses [MAY](/knowing#may) (`thomam`). *Because of* is a causal claim with the because hinge. The stimulus says what the feeling is **about**; a direction `/b/` says what it is **aimed at**; the because hinge says what **caused** it.
 
-### Feeling with no object {#feeling-no-object}
-
-On the clause, a feeling word is about the clause's event, so English *moved that …* or *glad that …* puts the feeling on the clause it names:
-
-> `zalazun vowurol thawethamar.`
->
-> z-Alazun | v-walk | th-relatedness-met-any-term-STAYING-FLEETING
->
-> "I'm moved that Alazun walks."
-
-With no event at all, a feeling word on `/th/` is a whole sentence about **you**: how you feel right now, with nothing as its object.
-
-> `thuwathuruer.`
->
-> th-competence-unmet-passing-UNPLACED-FLEETING
->
-> "I'm anxious."
-
-A lone feeling can still name what caused it. The cause is not the object: the feeling is not *about* the rain.
-
-> `thuwathuruer thahum blerulal.`
->
-> th-competence-unmet-passing-UNPLACED-FLEETING | [th-because | bl-rain]
->
-> "I'm anxious, and the rain caused it."
-
-**Compare with:** a lone noun before the feeling is an [existence](/predication#existence) clause, so the noun's being there is the stimulus: `zalazun thuwathuruer.` is *anxious that Alazun is here*, not *Alazun is anxious*.
-
 ### Hopefully and other attitudes {#speaker-attitude}
 
 English *hopefully*, *luckily*, and *worryingly* say how **you**, the speaker, feel about the whole claim. In Ageben, put the content root for that feeling on `/th/` with **-m**. It is always the speaker's attitude, never the subject's. For the subject's manner (*Azozon walks hopefully*), use `/h/` (`huwuyom`).
