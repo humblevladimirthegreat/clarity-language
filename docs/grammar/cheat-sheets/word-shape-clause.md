@@ -221,8 +221,8 @@ Root, mid-word `th`, a reach vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 
 | Vowel | Reach | Example | English | Stage |
 |-------|-------|---------|---------|-------|
-| [`thu`](/label-seams#reach-occasion) | this episode | `zazozon vulamuthul.` | *Azozon lied this once.* | I |
-| [`tho`](/label-seams#reach-occupation) | a practiced role | `zazozon vulamuthol.` | *Azozon lies as their craft.* | I |
+| [`thu`](/label-seams#reach-occasion) | this episode | `zazozon vulamuthul.` | *Azozon said something untrue this once.* | I |
+| [`tho`](/label-seams#reach-occupation) | a practiced role | `zazozon vulamuthol.` | *Azozon says untrue things as their craft.* | I |
 | [`the`](/label-seams#reach-relative) | this pair (`/b/` follows) | `zazozon gulayethem blalazun.` | *Azozon is a stranger to Alazun.* | I |
 | [`tha`](/label-seams#reach-type) | a type across scenes | `zalazun ganomuthal.` | *Alazun is an anxious type.* | I |
 

@@ -282,7 +282,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *coat* | `ogobal` | 🧥 |
 | *key* | `egewol` | 🔑 |
 | *write* | `varuyol` | ✍️ |
-| *lie* | `vulamul` | 🤥 |
+| *misstate* | `vulamul` | 🤥 |
 
 **Review:**
 
@@ -318,7 +318,7 @@ y-question | ?z-wh | d-umbrella | v-see
 **Also correct:** `yel ?zar vayebel domobul.`
 :::
 
-**3.** *Is Alazun lying, I wonder?*
+**3.** *Is Alazun saying something untrue, I wonder?*
 
 ::: details Show answer
 `yem zalazun vulamul.`
@@ -414,7 +414,7 @@ y-question | ?z-wh | v-write
 **`zar`** asks *who*; **`zur`** asks *who else*.
 :::
 
-**2.** *No.* (answering *Does Alazun lie?*) `yuol.` or `yul.`
+**2.** *No.* (answering *Does Alazun misstate things?*) `yuol.` or `yul.`
 
 ::: details Show answer
 `yuol.`

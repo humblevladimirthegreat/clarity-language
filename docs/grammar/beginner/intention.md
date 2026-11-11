@@ -73,7 +73,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sit* | `vehohel` |
 | *find* | `vumewel` |
 | *tell* | `vezuyol` |
-| *lie* | `vulamul` |
+| *misstate* | `vulamul` |
 | *write* | `varuyol` |
 | *fight* | `vuvuvul` |
 | *book* | `anal` |
@@ -109,7 +109,7 @@ z-Alazun | th-plan-itinerary | d-pawn | v-find
 z-speaker | th-plan-atlas | v-tell | b-Alazun
 :::
 
-**4.** *I intend to lie.* (just the direction)
+**4.** *I intend to say something untrue.* (just the direction)
 
 ::: details Show answer
 `zuwen thagor vulamul.`

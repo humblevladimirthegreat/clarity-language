@@ -20,9 +20,9 @@ A label with no reach vowel says nothing about how far it reaches. Use one when 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`tha`** | a type across scenes: the quality follows them | *an anxious type*, *a teacher type* | **a** ≈ biggest (the claim covers scenes) |
-| **`tho`** | a practiced role: the office they inhabit | *a teacher*, *lying as their craft* | **o** ≈ medium (a life they inhabit) |
-| **`the`** | this pair: true in one relationship | *a stranger to Azozon*, *lying, in dealings with Alazun* | **e** ≈ small (one person in reach) |
-| **`thu`** | this episode: this stretch of doing | *angry this time*, *lied (this once)* | **u** ≈ none (a speck of time) |
+| **`tho`** | a practiced role: the office they inhabit | *a teacher*, *misstating as their craft* | **o** ≈ medium (a life they inhabit) |
+| **`the`** | this pair: true in one relationship | *a stranger to Azozon*, *misstating, in dealings with Alazun* | **e** ≈ small (one person in reach) |
+| **`thu`** | this episode: this stretch of doing | *angry this time*, *misstated (this once)* | **u** ≈ none (a speck of time) |
 
 Mid-word **`th`** with a reach vowel goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root. It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zuwethul` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead. A [role compound](roles.md#one-time-or-a-practice) writes the same vowels after **`w`**, not after **`th`**.
 
@@ -42,7 +42,7 @@ To say **when** that claim counts (*only at school*, *always except when it rain
 >
 > z-Azozon | v-misstate-th-episode
 >
-> "Azozon lied this once."
+> "Azozon said something untrue this once."
 
 #### Practiced role (`tho`) {#reach-occupation}
 
@@ -50,11 +50,11 @@ To say **when** that claim counts (*only at school*, *always except when it rain
 >
 > z-Azozon | v-misstate-th-role
 >
-> "Azozon lies as their craft."
+> "Azozon says untrue things as their craft."
 
 On a verb, **`tho`** is that act as their practice, not one outing.
 
-**Compare with:** *usually* / *often* is a [restrictor](restrictors.md) (`huam`, `war`). **`tha`** is the type-claim (*a lying type*), which is not a practiced role.
+**Compare with:** *usually* / *often* is a [restrictor](restrictors.md) (`huam`, `war`). **`tha`** is the type-claim (*a type who says untrue things*), which is not a practiced role.
 
 #### This pair (`the`) {#reach-relative}
 
@@ -70,7 +70,7 @@ On a verb, **`tho`** is that act as their practice, not one outing.
 >
 > z-Azozon | [v-misstate-th-pair | bl-Alazun]
 >
-> "With Alazun, Azozon lies." (in that relationship)
+> "With Alazun, Azozon says untrue things." (in that relationship)
 
 With no `/b/`, the party is unstated: *a stranger (to someone)*.
 
@@ -98,7 +98,7 @@ These are the same vowels, written right after **`w`** on a [role compound](role
 
 A role word takes no **`th`** seam after its stem: its reach is written once, at the front. Reach on a plain verb stem (`veduyothul`) labels the teaching.
 
-**Compare with:** the **`th`** seam labels the word itself (the act on a verb, the quality on an adjective, the manner on an adverb), and the verb keeps the rest of its clause: `zazozon vulamuthul balazun.` is *Azozon lied to Alazun, this once*. A role compound names the person by their part: `zazozon gwozulamul.` is *Azozon is a liar*.
+**Compare with:** the **`th`** seam labels the word itself (the act on a verb, the quality on an adjective, the manner on an adverb), and the verb keeps the rest of its clause: `zazozon vulamuthul balazun.` is *Azozon said something untrue to Alazun, this once*. A role compound names the person by their part: `zazozon gwozulamul.` is *Azozon is someone who misstates*.
 
 #### Stacked reach {#reach-stacks}
 
@@ -142,7 +142,7 @@ The four reach vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > z-Azozon | v-misstate-th-except-episode
 >
-> "Azozon is a lying type, except this time."
+> "Azozon is a type who says untrue things, except this time."
 
 > `zazozon gonumuthuel blalazun.`
 >
@@ -178,13 +178,13 @@ The four reach vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > z-Azozon | v-misstate-th-using
 >
-> "Azozon is using lying as a tool."
+> "Azozon is using misstatement as a tool."
 
 > `zalazun vulamuthoel.`
 >
 > z-Alazun | v-misstate-th-toward-role
 >
-> "Alazun is becoming a liar."
+> "Alazun is becoming someone who misstates as a practice."
 
 > `zuwen vezuyothuol bawan.`
 >
@@ -217,7 +217,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *angry* | `onumul` |
-| *lie* | `vulamul` |
+| *misstate* | `vulamul` |
 | *see* | `vayebel` |
 
 #### English → Ageben {#beginner-english-to-ageben}
@@ -238,7 +238,7 @@ z-Ahelan | g-angry-th-episode
 z-Azozon | [g-pair-agent-teach | bl-Alazun]
 :::
 
-**3.** *Ahelan lied, but it was the situation, not Ahelan.*
+**3.** *Ahelan said something untrue, but it was the situation, not Ahelan.*
 
 ::: details Show answer
 `zahelan vulamuthael.`
@@ -261,7 +261,7 @@ z-Azozon | g-anxious-th-type
 ::: details Show answer
 z-Azozon | [v-misstate-th-pair | bl-Alazun]
 
-*With Alazun, Azozon lies.*
+*With Alazun, Azozon says untrue things.*
 :::
 
 **3.** `zwazeduyol devogal vayebel.`
