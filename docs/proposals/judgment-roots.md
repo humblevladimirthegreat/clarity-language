@@ -69,10 +69,19 @@ From a keyword sweep of the `mind`, `person` and `doing` rows. Unit A completes 
 | `anemu` | 💢 | anger / offense; *crime* | T2 (*crime*) | Drop *crime*. Restate *offense* as the offended person's sense of being wronged, a feeling owned like any other. |
 | `enemu` | 🤕 | injured / harm; … *abuse* … | T2 (*abuse*) | Drop *abuse*. |
 | `onumu` | 😠 | angry / hostility; *hate*, *aggressive* | T2 (*aggressive* is a trait label) | Drop *aggressive*. |
+| `umuyu` | 🖕 | middle-finger / contempt | T1 (*contempt*: someone else's stance) | Abstract *defiance* (an open refusal others see); contempt is a holder claim. |
+| `ezozu` | 🐍 | snake / treachery ("snake in the grass") | T1 (*treachery*: a hidden plan to betray), T2 | Abstract *ambush* (an attack from hiding), the observable core of the idiom. |
+| `ozezu` | 🦂 | scorpion / betrayal ("stings the hand that feeds") | T2 (*betrayal*: a trust broken, bar unnamed) | Abstract *broken promise* (a said promise not kept, as in the scorpion and the frog); the bar is the promise. |
+| `ubuda` | 🧈 | butter / flattery ("butter someone up") | T1 (*flattery*: praise not meant, or aimed at a favor) | Abstract *praise* (warm words said about someone); whether meant is a holder claim. |
+| `avozu` | 🦊 | fox / cunning ("sly as a fox") | T1 (*cunning*: hidden deceit and plans) | Abstract *resourcefulness* (finding a way round an obstacle). |
+| `ehuye` | 🤡 | jest / foolishness; *joke*, *fool* | T2 (*foolishness*, *fool*: a verdict on someone's sense) | Abstract *clowning* (playing the fool for a laugh, as the mnemonic says); drop *fool*; a person-verdict goes through label reach. |
+| `umuyumezuyo` (compound) | 🖕 | insult; mnemonic *speech meant to put someone down* | T1 (*meant*: the speaker's intent) | Keep the spelling and *insult*; mnemonic *middle-finger specifying speech is words that, by convention, put someone down*. Follows `umuyu`. |
 
 Kept, both tests pass: `arozu` 🦝 *theft* (consent is a say word others witness), `ebemo` 🫣 *surveillance*, `edema` 😜 *banter*, `ozuyu` 🥷 *stealth*, `ogayu` 👹 *menace* / *threat* (a threat is said), `adayu` 😈 *mischief*.
 
-Compounds touched: `uzuyuya` *gang* keeps its spelling; its mnemonic becomes *people who break the law together* (under Decision 2). `onumuyu` *enemy* and `anemuya` *mob* go to Unit A.
+Compounds touched: `uzuyuya` *gang* keeps its spelling; its mnemonic becomes *people who break the law together* (under Decision 2). `onumuyu` *enemy* and `anemuya` *mob* pass: *enemy* is someone you stand against, a relation others see; *mob* is a crowd swept up in anger, a feeling owned like any other.
+
+Unit A audit: 393 rows checked: all 271 `mind`, `person` and `doing` rows, 59 other published rows and 63 compounds that matched a judgment-keyword sweep (keywords matched by word start; place-name and sport hits like *con*, *sin*, *bad* set aside); 7 rows added (6 roots, 1 compound), 1 open decision (`eguma`). Also judged to pass: feeling roots (`unomu` *disdain*, `ezemo` *smugness*, `ubamo` *embarrassment*, `aremu` *destructiveness*), said or seen acts (`ubuyo` *accusation*, `ayomu` *dismiss*, `azemulezuyo` *gossip*, `abuyo` *apology*), and describable kinds (`ugozu` *scapegoat*, `uhoza` *conformity*, `avayu` *parasitism*, `eyu` *pretense*, `azayu` *mindlessness*).
 
 ### Recipes
 
@@ -253,4 +262,12 @@ residue-and-former.md gains a **Compare with**: residue is the outcome still in 
 
 ## Open decisions
 
-None open. Agents log new ones here during the run, per [proposals.md](../meta/procedures/proposals.md#what-a-proposal-is).
+Agents log new ones here during the run, per [proposals.md](../meta/procedures/proposals.md#what-a-proposal-is).
+
+### `eguma` 🤑 *greed* (Unit A)
+
+**Problem:** `eguma`'s concrete sense is *greed* (abstract *wealth*; aliases *asset*, *wealthy*, *rich*). Greed is a want, and a want felt by the speaker is a feeling, which T1 lets through. But English *greed* also says the want is too much, with no bar named (T2), and said of someone else it is close to a trait label.
+
+**Options:** (a) keep *greed* as a feeling, owned like any other; (b) re-sense the concrete to *money-hunger* (wanting money), so excess goes through the *too* bar ([bars](../grammar/intermediate/bars.md)) and a person-verdict through label reach; (c) re-sense the concrete to *riches*, folding it into *wealth*, and route *greed* to a recipe.
+
+**Recommendation:** (b). It keeps the 🤑 face as a feeling root and moves the verdict to the bar, as T2 asks.
