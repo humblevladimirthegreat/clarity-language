@@ -235,8 +235,8 @@ correction
 :::
 ## See also
 
-- [pronouns.md](pronouns.md): resume **-r**; special **`uwe`** / **`awa`** / **`aya`**
-- [plurality.md](plurality.md): **-x** after the ending
-- [clause.md](clause.md): role letters; adding a first letter to a citation
-- [spans.md](spans.md#loans): mention / opaque when the **form** or a foreign acronym is the point
-- Titled phrases: [spans.md](spans.md#when-required)
+- [Pronouns](pronouns.md): resume **-r**; special **`uwe`** / **`awa`** / **`aya`**
+- [Plurality](plurality.md): **-x** after the ending
+- [The clause](clause.md): role letters; adding a first letter to a citation
+- [Opaque and loan words](spans.md#loans): mention / opaque when the **form** or a foreign acronym is the point
+- Titled phrases: [Exact, paraphrase, proper](spans.md#when-required)

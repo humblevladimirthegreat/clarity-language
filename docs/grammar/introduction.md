@@ -47,7 +47,7 @@ Grammar pages are grouped in the sidebar as **Beginner**, **Intermediate**, and 
 
 Follow those three groups in the site sidebar. Intermediate and Advanced start collapsed; the group that contains the page you are on opens.
 
-Start with [phonology.md](/phonology) for letters and word edges, then [word-endings.md](/word-endings) for citation endings (by then you can already say your name as a [greeting](/word-endings#greeting)), then [clause.md](/clause) for clause shape, [speech-moves.md](/speech-moves) for turns, and [dependents.md](/dependents).
+Start with [Phonology](/phonology) for letters and word edges, then [Word endings](/word-endings) for citation endings (by then you can already say your name as a [greeting](/word-endings#greeting)), then [The clause](/clause) for clause shape, [Speech moves](/speech-moves) for turns, and [Dependents](/dependents).
 
 When you finish a group, take its **Review** at the end of that group ([Beginner](/review), [Intermediate](/review-intermediate), [Advanced](/review-advanced)). Each review has one item per page at that level, and each answer links back to the section it tests.
 

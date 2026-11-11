@@ -277,11 +277,11 @@ z-Ahelan | th-MEMORY | v-pay
 
 ## See also
 
-- Sake ascription: [sakes.md](sakes.md)
-- Emotion compose: [feelings.md](/feelings#emotion-compose)
-- Plan vs forecast: [intention.md](intention.md#plan-predict)
-- Clock / date / when-frames: [measures-and-percent.md](digit-strings.md#time)
-- Habitual *always*: [restrictors.md](restrictors.md)
+- Sake ascription: [Sakes](sakes.md)
+- Emotion compose: [Emotion compose](/feelings#emotion-compose)
+- Plan vs forecast: [Plan](intention.md#plan-predict)
+- Clock / date / when-frames: [Time](digit-strings.md#time)
+- Habitual *always*: [Restrictors](restrictors.md)
 - General claims and their warrant: [Channels on a generalization](/usually-vs-must#generalization)
 - Someone else's view: [Whose view (holder)](/holder#holder)
-- Imagined scenes, surprise, and how a claim stands: [residue-and-former.md](/residue-and-former)
+- Imagined scenes, surprise, and how a claim stands: [Residue and former](/residue-and-former)

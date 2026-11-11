@@ -350,5 +350,5 @@ The first is three trucks unless an ambient thousands stretch is in play; **`e0`
 ## See also
 
 - Everyday number words: [numbers](/numbers)
-- Measures and percent: [measures-and-percent.md](measures-and-percent.md)
-- Numeric prefixes (`NUMxROOT`): [numeric-derivation.md](/numeric-derivation)
+- Measures and percent: [Measures and percent](measures-and-percent.md)
+- Numeric prefixes (`NUMxROOT`): [Numeric prefixes](/numeric-derivation)

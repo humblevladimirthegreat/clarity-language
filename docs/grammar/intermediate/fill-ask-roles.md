@@ -133,5 +133,5 @@ Under **`darl`** the blank belongs to the outer question (*who do you know finds
 
 ## See also
 
-- Asking and answering: [questions.md](/questions)
-- Join **-r** in a statement: [joins.md](/joins#unspecified-member-r-phrase)
+- Asking and answering: [Questions](/questions)
+- Join **-r** in a statement: [Unspecified member (`-r`)](/joins#unspecified-member-r-phrase)

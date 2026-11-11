@@ -406,10 +406,10 @@ The noun after a *for* hook is an extra noun, so it takes `/b/`, not `/d/`.
 :::
 ## See also
 
-- List joins (*and* / *or*): [joins.md](joins.md)
-- Hosted leftover relations (*like*, *between*, *of*): [relations.md](relations.md)
-- *When* this hook counts: [restrictors.md](restrictors.md)
-- Stacked discourse, *here* / *there*, and resume hooks: [discourse-hooks.md](/discourse-hooks)
-- Prefix-less citation: [word-endings.md](word-endings.md#citation-forms)
-- Titled phrases: [word-endings.md](/proper-names#titled-phrases)
-- Dictionary compounds without **`x`**: [compounds.md](compounds.md#dictionary-compounds)
+- List joins (*and* / *or*): [Joins](joins.md)
+- Hosted leftover relations (*like*, *between*, *of*): [Relations](relations.md)
+- *When* this hook counts: [Restrictors](restrictors.md)
+- Stacked discourse, *here* / *there*, and resume hooks: [In fact and anyway](/discourse-hooks)
+- Prefix-less citation: [Writing a citation](word-endings.md#citation-forms)
+- Titled phrases: [Titled phrases (hook, join, span)](/proper-names#titled-phrases)
+- Dictionary compounds without **`x`**: [Words you look up, not build](compounds.md#dictionary-compounds)

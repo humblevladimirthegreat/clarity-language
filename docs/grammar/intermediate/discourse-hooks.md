@@ -206,7 +206,7 @@ in.fact | z-Alazun | v-sit
 
 ## See also
 
-- Everyday hooks: [hooks.md](/hooks)
-- Hooks inside the clause: [in-clause-hooks.md](/in-clause-hooks)
-- Sentence linkers: [dependents.md](sentence-linkers.md#sentence-linkers)
-- The topic pronoun: [topic.md](topic.md)
+- Everyday hooks: [Hooks](/hooks)
+- Hooks inside the clause: [Hooks inside the clause](/in-clause-hooks)
+- Sentence linkers: [Sentence linkers](sentence-linkers.md#sentence-linkers)
+- The topic pronoun: [Topic](topic.md)

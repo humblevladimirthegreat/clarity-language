@@ -318,6 +318,6 @@ A word on `/ɡ/` puts Alazun in a kind; two names for one person take **`gorel`*
 :::
 ## See also
 
-- Scalar *as ADJ as* / comparative property clauses: [comparatives.md](comparatives.md)
-- Complex `/ɡ/`+`/b/`: [clause.md](clause.md)
-- Negation / single-item packaging on properties: [joins.md](joins.md#negation-u)
+- Scalar *as ADJ as* / comparative property clauses: [Comparatives](comparatives.md)
+- Complex `/ɡ/`+`/b/`: [The clause](clause.md)
+- Negation / single-item packaging on properties: [Negation (`u`)](joins.md#negation-u)

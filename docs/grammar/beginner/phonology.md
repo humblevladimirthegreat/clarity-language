@@ -4,9 +4,7 @@ band: beginner
 
 # Phonology {#phonology}
 
-Phonology is how a language sounds. This page teaches you to **sound out** Ageben. Each letter has one pronunciation, the same every time. A **syllable** is one beat with one vowel, and it ends with a consonant only at the end of a word, so you can hear where words stop. Every syllable takes an even beat, and a word is stressed on its first one. When you need a moment to think, a held sound fills the pause.
-
-Spelling follows the beats you say. A consonant starts a beat, and the last consonant of a content word (a word built on a root, such as a noun or verb) is where that word ends.
+Phonology is how a language sounds: this page teaches you to **sound out** Ageben. Each letter has one pronunciation, the same every time. A **syllable** is one beat with one vowel, and it ends with a consonant only at the end of a word, so you can hear where words stop. Every syllable takes an even beat, and a word is stressed on its first one. When you need a moment to think, a held sound fills the pause.
 
 Write native Ageben in **lowercase**. A capital means nothing extra: read it as the same letter in lowercase. Two vowel letters in a row are two syllables. Say each vowel as its own beat.
 
@@ -21,7 +19,7 @@ The **IPA** column spells each sound in the International Phonetic Alphabet, and
 | Ageben | IPA | Pitch | Cue |
 |--------|-----|-------|-----|
 | `u` | /ʉ/ <IpaPlay file="Close_central_rounded_vowel.mp3" label="u" /> | high | *you* (without the *y*) |
-| `o` | /o̞/ <IpaPlay file="Mid_back_rounded_vowel.mp3" label="o" /> | mid-low | *Cambodia* (no glide, like Spanish *todo*) |
+| `o` | /o̞/ <IpaPlay file="Mid_back_rounded_vowel.mp3" label="o" /> | mid-low | *Cambodia* (one steady sound that does not slide toward *oo*, like Spanish *todo*) |
 | `a` | /ä/ <IpaPlay file="Open_central_unrounded_vowel.mp3" label="a" /> | low | *spa* (like Spanish *casa*) |
 | `e` | /e̞/ <IpaPlay file="Mid_front_unrounded_vowel.mp3" label="e" /> | mid-high | *bet* |
 
@@ -29,42 +27,32 @@ Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org
 
 #### Opposite vowels {#opposite-vowels}
 
-The four vowels form two **opposite** pairs. Within a pair, the tongue moves along one line and the lips change shape:
+The four vowels form two **opposite** pairs. Within a pair, the tongue moves along one line and the lips change shape. Some forms are built by swapping a vowel for its opposite, so learn the pairs along with the sounds.
 
 | Pair | Tongue | Lips |
 |------|--------|------|
 | `u` ↔ `a` | high ↔ low, centered | rounded ↔ relaxed |
 | `o` ↔ `e` | back ↔ front, same height | rounded ↔ spread |
 
-To find `u`, start from `a`: keep the tongue centered, close the jaw, and round the lips. To find `o`, start from `e`: keep the jaw where it is, pull the tongue back, and round the lips. Moving between the two vowels of a pair is a small step.
+To find `u`, start from `a`: keep the tongue centered, close the jaw, and round the lips. To find `o`, start from `e`: keep the jaw where it is, pull the tongue back, and round the lips.
 
 #### Vowel pitch {#vowel-pitch}
 
-Each vowel also has its own **pitch**, always the same one: `a` is low, `o` mid-low, `e` mid-high, and `u` high. That is the vowels' usual order, so the first is lowest and the fourth is highest. The opposite vowels `a` and `u` are also the furthest apart in pitch.
+Vowel pitch is optional and adds no meaning of its own. Each vowel has its own **pitch**, always the same one: `a` is low, `o` mid-low, `e` mid-high, and `u` high. That is the vowels' usual order, so the first is lowest and the fourth is highest. The opposite vowels `a` and `u` are also the furthest apart in pitch.
 
-Vowel pitch is optional and adds no meaning of its own. It repeats what the vowel's sound already says, so a listener who half-hears a vowel can still tell which one it was. When a vowel's sound and its pitch disagree, trust the sound. Keep each vowel's pitch when you say a word with feeling: make it louder, not higher.
+Pitch repeats what the vowel's sound already says, so a listener who half-hears a vowel can still tell which one it was. When a vowel's sound and its pitch disagree, trust the sound. Keep each vowel's pitch when you say a word with feeling: make it louder, not higher.
 
 Voices differ, so a vowel's pitch is not a fixed note. It is how far the vowel sits above your **home note**, the note you say `a` on. Any comfortable note works.
 
-To practice, pick a pattern and a tempo below, and choose a home note that sits easily low in your speaking voice. Press **Play**. A voice sings each vowel and the vowel lights up: say it on the same note. The voice is plain on purpose, so copy its vowel and its pitch. The corner shows the note's name while it sounds. Matching a note improves quickly with practice, and each vowel's sound already tells it apart, so your Ageben is clear while you learn.
+To practice, pick a pattern and a tempo below, and choose a home note that sits easily low in your speaking voice. Press **Play**. A voice sings each vowel and the vowel lights up: say it on the same note. The voice is plain on purpose, so copy its vowel and its pitch.
 
-With a microphone, the drill can also listen:
-
-| Control | What it does |
-|---------|--------------|
-| **Find my home note** | Listens while you hold a long `a` on a comfortable low note, and picks the nearest home note. |
-| **Check me** | Leaves a pause after each note for you to say it back, then marks whether each vowel went up or down from the one you said before it. Only the direction counts, so a home note that is a little off does no harm. |
-| **Strict** | Checks each note itself, within about a semitone (one piano key). |
-| **From memory** | Skips the notes, so you say each vowel unprompted. |
-| Click a note | Checks just that vowel against its note. |
-
-All listening happens in your browser. Nothing you say is recorded or sent anywhere, and your home note is saved only on this device.
+Matching a note takes practice at first, and it improves quickly. Each vowel's sound already tells it apart, so your Ageben is clear while you learn. With a microphone the drill can also listen and check you: [Pitch Practice](/pitch-practice#controls) explains each control.
 
 <PitchDrill />
 
 ### Consonants
 
-A consonant starts a syllable. Many consonants have a **voiced** sound (vocal cords buzzing, as in *zoo*) and an unvoiced one (as in *sea*), and Ageben treats the two as the same letter. Prefer the voiced sound so you can hold a sung note; the unvoiced one is fine for style.
+A consonant starts a syllable. Many consonants have a **voiced** sound (vocal cords buzzing, as in *zoo*) and an unvoiced one (as in *sea*), and Ageben treats the two as the same letter. Prefer the voiced sound, because you can hold a sung note on it. The unvoiced sound means the same, so use it whenever you like its sound better.
 <!-- Consonant order is alphabet order: the ten digit letters in digit order (b d g h z v r l n m = 1–9, 0), then th w y x. The alphabet / letter-name recitation ends with the vowels u a o e, the same order as vowel stacks. -->
 
 | Ageben | IPA | Cue | Unvoiced variant |
@@ -94,7 +82,7 @@ Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org
 
 ### Word edges
 
-A content word ends in one of four consonants: `-l`, `-m`, `-n`, or `-r`. That last consonant is the audible end of the word. Inside the word, consonants start syllables. They do not close a syllable in the middle.
+A content word (a word built on a root, such as a noun or verb) ends in one of four consonants: `-l`, `-m`, `-n`, or `-r`. That last consonant is the audible end of the word. Inside the word, a consonant only starts a syllable and never closes one.
 
 `azozon` = *a-zo-zon*. `odozel` = *o-do-zel*.
 
@@ -119,13 +107,13 @@ When you need a moment in the middle of speaking, English fills the gap with *um
 | *mmm*, lips closed | I am thinking it over | waits and leaves the silence | Lips closed: not ready to speak |
 | A held `a`, `e` or `o` (any of them), at its own pitch | I know what I mean but cannot find the word | may offer a word | Mouth open: the word is on its way |
 
-Do not hold `u`: a held `u` can sound like a denial.
+Do not hold `u`. It is the vowel Ageben uses to deny, so a held `u` can sound like a *no*.
 
 ## See also
 
-- Saying a word on its own, as a root plus an ending outside any sentence: [word-endings.md](word-endings.md)
-- Role letters, the first letter that tells a word's role in the sentence: [clause.md](clause.md#role-letters)
-- Respelling an English name: [lexicon](lexicon.md#respell)
-- Numbers, with their own word shape and [digit syllables](numbers.md#counts): [numbers.md](numbers.md)
-- Talking about a letter itself inside a sentence: [spans.md](spans.md)
-- Mid-word `x` and `th`: [compounds.md](compounds.md)
+- Saying a word on its own, as a root plus an ending outside any sentence: [Word endings](word-endings.md)
+- The first letter that tells a word's role in the sentence: [Role letters](clause.md#role-letters)
+- Respelling an English name: [Lexicon](lexicon.md#respell)
+- Numbers, with their own word shape and [digit syllables](numbers.md#counts): [Numbers](numbers.md)
+- Talking about a letter itself inside a sentence: [Spans](spans.md)
+- Mid-word `x` and `th`: [Compounds](compounds.md)

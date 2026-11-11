@@ -244,9 +244,9 @@ A number word is a `/ɡ/` word, so it goes after its noun; before `degodelx` it 
 
 ## See also
 
-- Digitless forms, exponents, and the spoken comma: [digitless-exponents.md](/digitless-exponents)
-- Measures and percent: [measures-and-percent.md](/measures-and-percent)
-- Phrase fences for ranges: [joins.md](joins.md)
-- Scalar comparison / measured differentials: [comparatives.md](comparatives.md)
-- Number-word phonotactics: [phonology.md](phonology.md)
-- Numeric prefixes (`NUMxROOT`): [numeric-derivation.md](/numeric-derivation)
+- Digitless forms, exponents, and the spoken comma: [How many and how big](/digitless-exponents)
+- Measures and percent: [Measures and percent](/measures-and-percent)
+- Phrase fences for ranges: [Joins](joins.md)
+- Scalar comparison / measured differentials: [Comparatives](comparatives.md)
+- Number-word phonotactics: [Phonology](phonology.md)
+- Numeric prefixes (`NUMxROOT`): [Numeric prefixes](/numeric-derivation)

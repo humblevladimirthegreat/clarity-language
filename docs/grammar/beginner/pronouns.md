@@ -406,6 +406,6 @@ z-ONE | v-drink
 Generic *you* is **`eyen`**; **`awan`** is always the person actually listening.
 :::
 ## See also
-- [plurality.md](plurality.md#clusivity): **-x**; address set vs associative
-- Topic: [topic.md](/topic)
+- [Person-role **-x**](plurality.md#clusivity): **-x**; address set vs associative
+- Topic: [Topic](/topic)
 

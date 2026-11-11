@@ -229,6 +229,6 @@ z-Alazun | v-see | d-whether-clause | z-Azozon | v-sing
 
 ## See also
 
-- Inclusive single-item **`…aem` / `…ael`** (*at least X* / *X is enough*): [joins.md](joins.md#single-item-phrase)
-- Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
-- Dependent clauses / **`blarl`**: [dependents.md](dependents.md#dependent-clauses)
+- Inclusive single-item **`…aem` / `…ael`** (*at least X* / *X is enough*): [How many items](joins.md#single-item-phrase)
+- Restrictors **`hal` / `hual`**: [Restrictors](restrictors.md)
+- Dependent clauses / **`blarl`**: [Dependent clauses](dependents.md#dependent-clauses)

@@ -144,9 +144,9 @@ Before a `/b/` noun, the hook **`al`** means *in*; *including* an extra member i
 
 ## See also
 
-- List verbs: [list-verbs.md](/list-verbs)
-- List joins (right-close fence): [joins.md](/joins)
-- Causal readings of open / without: [causation.md](/causation)
-- Prefix-less *including* / *instead*: [hooks.md](/hooks)
-- *Using* a tool: [hooks.md](/hooks#extra-noun)
+- List verbs: [List verbs](/list-verbs)
+- List joins (right-close fence): [Joins](/joins)
+- Causal readings of open / without: [Causation](/causation)
+- Prefix-less *including* / *instead*: [Hooks](/hooks)
+- *Using* a tool: [Extra noun (`/b/` after the hook)](/hooks#extra-noun)
 

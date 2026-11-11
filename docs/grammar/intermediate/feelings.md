@@ -244,4 +244,4 @@ A noun before the feeling is an existence clause, so that would be *moved that A
 
 ## See also
 
-- Sakes: [sakes.md](/sakes)
+- Sakes: [Sakes](/sakes)

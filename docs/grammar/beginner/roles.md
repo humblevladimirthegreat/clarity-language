@@ -347,5 +347,5 @@ The plain root on `/ɡ/` says Azozon is sleeping right now; the role compound sa
 :::
 ## See also
 
-- Event resume vs participant: [pronouns.md](pronouns.md)
-- Mid-word **`x`** families: [compounds.md](compounds.md)
+- Event resume vs participant: [Pronouns](pronouns.md)
+- Mid-word **`x`** families: [Compounds](compounds.md)

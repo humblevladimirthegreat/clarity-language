@@ -149,7 +149,7 @@ z-Azozon | d-trophy | v-excludes
 
 ## See also
 
-- List joins (right-close fence): [joins.md](/joins)
-- *And then* between sentences: [clause-sequence.md](/clause-sequence#sequence)
-- Collective **-x** on a verb: [collectives.md](/collectives#verbs-v)
+- List joins (right-close fence): [Joins](/joins)
+- *And then* between sentences: [Sequence (`-n`, clause only)](/clause-sequence#sequence)
+- Collective **-x** on a verb: [Verbs (`/v/`): collective](/collectives#verbs-v)
 

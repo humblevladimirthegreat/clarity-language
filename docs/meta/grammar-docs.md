@@ -225,6 +225,11 @@ Front matter that orients (psychological purpose / limits / benefit tour — [pu
 
 Do not open a **Beginner** section, or a later-stage H3 that teaches a **new English job**, with a complete paradigm table. Tables come after the pattern is usable. An H3 whose only job is to **finish a series already taught** may open with a short pointer and the table ([later-stage shape](#later-stage-shape)).
 
+### Required before optional
+<a id="required-before-optional"></a>
+
+Within a page, material every learner needs comes before material they may skip. An optional section says it is optional in its first sentence. Space follows importance: an optional feature, or the instructions for a drill, should not take more of the page than the required teaching around it. When it does, shorten it or move the detail to the page that owns the tool.
+
 ## Beginner stage shape
 <a id="beginner-stage-shape"></a>
 <a id="beginner-band-shape"></a>
@@ -460,6 +465,8 @@ In each section, mention **only what that section is teaching**. Do not name, te
 | Optional short **See also** at the **end** (a few precise related forms) | **Beginner naming Intermediate / Advanced** (“putting X before the noun is Intermediate”, “stacking is later”), closed mood inventories, this page’s later H3s before they are taught, peek-ahead to a **later peer’s** later stage, and link walls that restate the sidebar. A later heading is enough for people who keep reading |
 
 **Test:** if the sentence’s only job is to name a topic the path has not reached yet, delete it. If it resolves a trap the learner will hit *now*, one link is enough — do not restate the other doc.
+
+A sentence that raises a question the section does not answer is the same fault ("a held `u` can sound like a denial", with no word on why). Explain it in a clause, or cut it.
 
 Pages stay dual-role (learner text + source of truth): Intermediate / Advanced inventories and precise end anchors are fine when the *lead and Beginner teach block* stay slim. Intermediate must not name Advanced as a teaser (“X is Advanced”); a later heading is enough. If an Advanced inventory dwarfs the Beginner teach block, split the file. Later-stage H3 shape: [Intermediate and Advanced](#later-stage-shape).
 

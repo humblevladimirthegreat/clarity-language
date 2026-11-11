@@ -382,6 +382,6 @@ z-Ahelan | d-telos-x-fire | v-see
 
 ## See also
 
-- Free counts / ranks / number as verb / adverb / interjection / discourse: [numbers.md](/numbers)
-- Measures and percent: [measures-and-percent.md](/measures-and-percent)
-- The root last, as in every **`x`** compound: [compounds.md](/compound-families#ordinary-compound-order)
+- Free counts / ranks / number as verb / adverb / interjection / discourse: [Numbers](/numbers)
+- Measures and percent: [Measures and percent](/measures-and-percent)
+- The root last, as in every **`x`** compound: [Adding another piece](/compound-families#ordinary-compound-order)

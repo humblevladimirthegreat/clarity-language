@@ -208,5 +208,5 @@ z-speaker | th-plan-itinerary | v-walk
 :::
 ## See also
 
-- How you know a forecast: [knowing.md](/evidentiality#evidentiality)
-- Autonomy as a sake: [sakes.md](sakes.md#sake-inventory)
+- How you know a forecast: [Evidentiality](/evidentiality#evidentiality)
+- Autonomy as a sake: [Sake inventory](sakes.md#sake-inventory)

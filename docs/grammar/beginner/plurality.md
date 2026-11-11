@@ -309,5 +309,5 @@ z-interlocutors | v-sit
 :::
 ## See also
 
-- Inclusive *we* **`aya`**: [pronouns.md](pronouns.md#special-pronouns)
-- Endings before **-x**: [word-endings.md](word-endings.md)
+- Inclusive *we* **`aya`**: [Special pronouns](pronouns.md#special-pronouns)
+- Endings before **-x**: [Word endings](word-endings.md)

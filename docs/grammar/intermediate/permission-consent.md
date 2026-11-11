@@ -261,5 +261,5 @@ When the speaker is in the clause, a bare **`v`** on **-m** has no reading; **`h
 
 ## See also
 
-- Intention adverbs: [clause.md](/clause#intention-adverbs)
-- Polar *go ahead*: [questions.md](/questions#polar-particle)
+- Intention adverbs: [Intention adverbs](/clause#intention-adverbs)
+- Polar *go ahead*: [Polar particle (*yes* / *no* / *sure*)](/questions#polar-particle)

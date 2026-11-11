@@ -156,7 +156,7 @@ On `/y/`, the special values are cheers:
 
 #### Number as discourse {#special-number-as-discourse}
 
-**Last point / *Finally*:** **`xrowal`** = *Finally:* / *last point:* (committed coda item). Soft **`xrowam`** = near-final; named **`xrowan`** = ritual / titled *Finally*; **`xrowar`** resumes that last-point marker. Extra items use discourse hook **`al`** (*additionally*: [hooks.md](/hooks#discourse-hooks)).
+**Last point / *Finally*:** **`xrowal`** = *Finally:* / *last point:* (committed coda item). Soft **`xrowam`** = near-final; named **`xrowan`** = ritual / titled *Finally*; **`xrowar`** resumes that last-point marker. Extra items use discourse hook **`al`** (*additionally*: [Glue this sentence to prior talk](/hooks#discourse-hooks)).
 
 **Starting point / *Starting with*:** **`xrowul`** = *Starting with:* / *to begin:* (committed opening item). Soft **`xrowum`** = near-start; named **`xrowun`** = ritual / titled *Starting with*; **`xrowur`** resumes that start-point marker. Numbered *firstly* is **`xrobal`**.
 

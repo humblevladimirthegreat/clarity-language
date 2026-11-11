@@ -395,4 +395,4 @@ z-Azozon | v-run | th-rank/more
 
 ## See also
 
-- List joins (right-close fence): [joins.md](/joins)
+- List joins (right-close fence): [Joins](/joins)

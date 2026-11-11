@@ -305,5 +305,5 @@ A dropped subject is never the topic: write **`zalen`** when the topic is the on
 
 ## See also
 
-- Pointing back: [pronouns.md](/pronouns)
-- Sentence linkers: [dependents.md](sentence-linkers.md#sentence-linkers)
+- Pointing back: [Pronouns](/pronouns)
+- Sentence linkers: [Sentence linkers](sentence-linkers.md#sentence-linkers)

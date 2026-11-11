@@ -438,7 +438,7 @@ The statement stays a statement; the check-back **`yel yaol.`** is its own short
 ## See also
 
 - [Speech moves](speech-moves.md#turn-y): turn; speech act; [continue](speech-moves.md#continue-x)
-- [dependents.md](dependents.md#dependent-clauses): *that* / *whether* after **`darl` / `derl`**
-- [joins.md](joins.md): join fences; statement readings of **-r** / single-item / standalone
-- [pronouns.md](pronouns.md): content resume **-r** (fill-ask is join **-r**)
-- Fill-ask roles: [fill-ask-roles.md](/fill-ask-roles)
+- [Dependent clauses](dependents.md#dependent-clauses): *that* / *whether* after **`darl` / `derl`**
+- [Joins](joins.md): join fences; statement readings of **-r** / single-item / standalone
+- [Pronouns](pronouns.md): content resume **-r** (fill-ask is join **-r**)
+- Fill-ask roles: [Who, which, and any](/fill-ask-roles)

@@ -229,8 +229,8 @@ z-doorbell
 :::
 ## See also
 
-- **`x`** at the start of a word (keep going): [speech-moves.md](speech-moves.md#continue-x)
-- How **`x`** sits in the word shape: [phonology.md](/phonotactics#phonotactics)
-- [can-and-cant.md#ability](can-and-cant.md#ability) / [sakes.md](sakes.md) / [roles.md](roles.md) / [numeric-derivation.md](/numeric-derivation)
-- Conversation length: [name **`x`** vowel](/conversation-length#conversation-length); bare hello: [word-endings.md](word-endings.md#greeting)
-- Extra-noun fuse on a citation: [hooks.md](/hook-compounds#hook-compounds)
+- **`x`** at the start of a word (keep going): [Continue (`/x/`): keep the same speech move](speech-moves.md#continue-x)
+- How **`x`** sits in the word shape: [Phonotactics (word shape)](/phonotactics#phonotactics)
+- [Ability and incapability](can-and-cant.md#ability) / [Sakes](sakes.md) / [Role compounds](roles.md) / [Numeric prefixes](/numeric-derivation)
+- Conversation length: [name **`x`** vowel](/conversation-length#conversation-length); bare hello: [Greeting](word-endings.md#greeting)
+- Extra-noun fuse on a citation: [Hook compounds (cite + extra-noun hook)](/hook-compounds#hook-compounds)

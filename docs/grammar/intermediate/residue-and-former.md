@@ -166,5 +166,5 @@ RESIDUE covers the whole clause, so it goes on `/h/`. A `/w/` word applies only 
 
 ## See also
 
-- How you know: [knowing.md](/knowing)
-- Contrary to: [contrary-to.md](/contrary-to#contrary-to-stance)
+- How you know: [Knowing](/knowing)
+- Contrary to: [Contrary to a stance (`uom`)](/contrary-to#contrary-to-stance)

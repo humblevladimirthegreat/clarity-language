@@ -342,5 +342,5 @@ In the first, Ahelan swims once more; in the second, Ahelan swims at a time othe
 
 ## See also
 
-- Phrase lists (right-close fence): [joins.md](joins.md)
+- Phrase lists (right-close fence): [Joins](joins.md)
 - *When?* under question: [When?](fill-ask-jobs.md#when)

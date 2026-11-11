@@ -355,8 +355,8 @@ A one-word name is an ordinary **-n** word; **`@[…]`** is for titles of severa
 :::
 ## See also
 
-- Scope islands: [scope-islands.md](/scope-islands#scope-islands)
-- Identity vs parenthetical comment: [predication.md](predication.md#identity)
-- Multipart names: [word-endings.md](/proper-names#multipart-names)
-- Titled phrases (hook / join / span): [word-endings.md](/proper-names#titled-phrases)
-- Prefix-less citation outside a clause: [word-endings.md](word-endings.md#citation-forms)
+- Scope islands: [Scope islands](/scope-islands#scope-islands)
+- Identity vs parenthetical comment: [Identity](predication.md#identity)
+- Multipart names: [Multipart names](/proper-names#multipart-names)
+- Titled phrases (hook / join / span): [Titled phrases (hook, join, span)](/proper-names#titled-phrases)
+- Prefix-less citation outside a clause: [Writing a citation](word-endings.md#citation-forms)

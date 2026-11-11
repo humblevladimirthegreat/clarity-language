@@ -264,6 +264,6 @@ After a unit, a minus number alone is a negative amount (*minus two hours*). Put
 
 ## See also
 
-- Number-word anatomy (markers, endings, exponents): [numbers.md](/numbers)
-- Numeric prefixes (`NUMxROOT`): [numeric-derivation.md](/numeric-derivation)
-- Measured differentials on comparative scales: [comparatives.md](/comparatives)
+- Number-word anatomy (markers, endings, exponents): [Numbers](/numbers)
+- Numeric prefixes (`NUMxROOT`): [Numeric prefixes](/numeric-derivation)
+- Measured differentials on comparative scales: [Comparatives](/comparatives)

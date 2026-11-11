@@ -12,6 +12,7 @@
     "parse-snapshot": "tsx scripts/parse-snapshot.ts",
     "lint:ageben": "tsx scripts/lint-ageben-docs.ts",
     "lint:forward-links": "tsx scripts/lint-forward-links.ts",
+    "lint:prose": "tsx scripts/lint-prose-style.ts",
     "free-english-review": "tsx scripts/free-english-review.ts",
     "llm-eval": "tsx scripts/llm-eval.ts",
     "docs:publish": "vitepress build docs/grammar && tsx scripts/publish-docs-extras.mjs",

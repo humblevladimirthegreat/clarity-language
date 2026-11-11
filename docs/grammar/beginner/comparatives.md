@@ -250,7 +250,7 @@ The first item before **`zol`** ranks higher.
 :::
 ## See also
 
-- Fence shape, single-item / standalone, SHARED scale: [joins.md](joins.md)
-- Manner adverbs: [clause.md](clause.md#adverbs-h)
-- Kind and identity (*is a dog*, *is Azozon*): [predication.md](predication.md)
-- Measure phrases: [measures-and-percent.md](/measures-and-percent#measure-phrases)
+- Fence shape, single-item / standalone, SHARED scale: [Joins](joins.md)
+- Manner adverbs: [Adverbs (`/h/`)](clause.md#adverbs-h)
+- Kind and identity (*is a dog*, *is Azozon*): [Predication](predication.md)
+- Measure phrases: [Measure phrases](/measures-and-percent#measure-phrases)
