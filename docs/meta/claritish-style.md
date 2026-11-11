@@ -27,7 +27,7 @@ These are the rules this page adds. *Build* means `npm run build` checks it. *Ju
 ## Use the grammar's terms
 <a id="grammar-terms"></a>
 
-Name the feature the way the grammar names it. The reader is learning real Ageben words, so the English name they learn here must be the one they will meet again: **label reach** and **reach vowel**, **evidential channel**, **emotion locus** and **emotion motion**, **stance** word, **sake**, **tone mark**, **permission** / **requirement** / **consent**, **decision**, **try**. [terminology.md](../grammar/terminology.md) is the list; do not link to it from a lesson.
+Name the feature the way the grammar names it. The reader is learning real Ageben words, so the English name they learn here must be the one they will meet again: **label reach** and **reach vowel**, **evidential channel**, feeling **urge**, **stance** word, **sake**, **tone mark**, **permission** / **requirement** / **consent**, **decision**, **try**. [terminology.md](../grammar/terminology.md) is the list; do not link to it from a lesson.
 
 Do **not** coin a Claritish-only word for a feature that already has an English name. A track-local synonym costs the reader the term twice and makes the lesson stop transferring at the handoff.
 
@@ -35,7 +35,7 @@ Do **not** coin a Claritish-only word for a feature that already has an English 
 |-------|--------|
 | *scope*, for how far a label applies | *label reach*; the vowel is the *reach vowel* |
 | *channel*, introduced as if it were a Claritish word | *evidential channel* (*how you know*), then *channel* for short |
-| *place* and *motion*, for a composed feeling | *emotion locus* and *emotion motion*, then *locus* and *motion* for short |
+| *pull* or *impulse*, for what a feeling makes you want to do | *urge* |
 | *need*, for the part of a feeling word that names what is at stake | *sake* |
 
 Gloss the term in plain English in the **same sentence as first use**, exactly as [doc-style](doc-style.md#plain-language-no-assumed-linguistics) requires: *the reach vowel, which says how far the label reaches*. Using the grammar's name is not a licence to leave it unglossed.
@@ -68,9 +68,9 @@ The failure is psychological, not structural. A gap is a thinking trap the reade
 `## The forms` leads with the small table, then one sentence on where the drop-in goes in the English sentence, then the endings.
 
 - **Give a default, and an escape.** Say which form to use when the reader cannot tell which fits ("when you are not sure which ending fits, use `thomam`").
-- **Long menus say they are menus.** A locus or channel inventory is followed by *you don't need to memorize it*.
+- **Long menus say they are menus.** An urge or channel inventory is followed by *you don't need to memorize it*.
 - **Say when to leave it out.** Every lesson marks at least one place the drop-in is unnecessary, and none of them implies that plain English is a mistake: *none of the three is the "right" one*; *leave the suffix off when the reach doesn't matter*.
-- **Rule out the near miss.** Where the obvious English reading is wrong, deny it in one short sentence (*motion is not strength*).
+- **Rule out the near miss.** Where the obvious English reading is wrong, deny it in one short sentence (*the urge is not a plan*).
 - **Endings.** Which scale each lesson teaches, and its cue, is in [Claritish track](grammar-docs.md#claritish-track); this page adds nothing to it. A [hyphenated suffix](#hyphenated-host) takes no ending.
 - **Pronunciation** is taught once, in *How sure are you?*, in English keywords. Later lessons do not repeat it.
 
@@ -95,7 +95,7 @@ Practice items give the English sentence in italics, then a parenthesized note s
 ## No Ageben sentences, no glosses
 <a id="no-glosses"></a>
 
-Lessons carry no full Ageben sentences and no morph gloss lines. Explain a drop-in by what it means, never by cutting it into Ageben morphemes. Where a word is built from parts, label the parts in plain English in a table (the sake / locus / motion row in *Feelings in three parts*), and that is the ceiling. The single glossed Ageben sentence on the closing page is the only one in the track.
+Lessons carry no full Ageben sentences and no morph gloss lines. Explain a drop-in by what it means, never by cutting it into Ageben morphemes. Where a word is built from parts, label the parts in plain English in a table (the parts row in *What a feeling wants*), and that is the ceiling. The single glossed Ageben sentence on the closing page is the only one in the track.
 
 ## Back-references
 <a id="back-references"></a>
@@ -115,7 +115,7 @@ A cue is an English habit that a lesson's gap names. Every italic phrase in a cu
 - **A cue has a drop-in to offer.** A habit with no fitting drop-in is not a cue: it goes to the grammar gap process, not into the editor.
 - **Exclude the common uses that are not the trap** (*I think so*, *thanks to the rain*, *sorry to hear*).
 - ***Labels*** marks a negative trait word after a subject and a copula (*he's a liar*, *I was so lazy*, *my boss is a liar*, *they're idiots*), and someone else's painful emotion word in the present tense (*he's anxious*), which calls a feeling a type. No praise words: the lesson's gap is about judgment.
-- ***Feelings in three parts*** marks an emotion word only in the first person (*I'm so anxious*, *it made me angry*, *feeling proud*). A feelings drop-in names the writer's own feeling, so someone else's (*my sister was upset*) has no drop-in to offer. The emotion word stays in the sentence.
+- ***What a feeling wants*** and ***Feelings in full*** mark an emotion word only in the first person (*I'm so anxious*, *it made me angry*, *feeling proud*). A feelings drop-in names the writer's own feeling, so someone else's (*my sister was upset*) has no drop-in to offer. The emotion word stays in the sentence.
 - **One lesson per word.** Leave out of a word list a word another lesson's cue already owns (*grateful* is a thanks) and a word that is mostly not about a person or a feeling (*stuck*, *down*, *lost*).
 
 ### Card copy and mirror names

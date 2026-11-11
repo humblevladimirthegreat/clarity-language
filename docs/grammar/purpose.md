@@ -109,11 +109,11 @@ In English: [Claritish: Oughts and motives](claritish/oughts-and-motives.md).
 
 Opaque labels (*angry*, *anxious*, *proud*) hide which sake is in play and what to ask for.
 
-Ageben [builds an emotion](/feelings#emotion-compose) from three parts: a sake and how it stands (usually met or unmet), where the feeling sits or what it points at, and its motion (surging, flowing, or static).
+Ageben [builds a feeling word](/how-you-feel#feeling-word) from three parts: the need (a sake, and whether it is met or unmet), the urge (what the feeling pulls you to do, such as stay, act on someone, or move away), and how long the feeling lasts (settled in, or a wave that will pass).
 
 Building the feeling from those parts shows you what to ask for, instead of leaving you stuck at the label.
 
-In English: [Claritish: Feelings in three parts](claritish/feelings.md).
+In English: [Claritish: What a feeling wants](claritish/what-a-feeling-wants.md).
 
 ##### Thanks that name the need {#thanks-that-name-the-need}
 
