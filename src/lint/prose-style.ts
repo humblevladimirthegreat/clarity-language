@@ -2,7 +2,8 @@
  * Wording checks for learner-facing grammar pages (docs/meta/doc-style.md#what-the-build-checks).
  *
  * Errors are exact rules and fail the build. Warnings are heuristics: the build prints one count
- * per rule, and `npm run lint:prose -- --report` lists every one.
+ * per rule, and `npm run lint:prose -- --report` lists every one. A page's warning count per rule
+ * may not rise above its entry in `prose-style-baseline.json` (the ratchet).
  */
 import { pageBand } from "./learning-order.js";
 
@@ -17,7 +18,8 @@ export type ProseRule =
   | "jargon"
   | "long-paragraph"
   | "bold-density"
-  | "beginner-lead";
+  | "beginner-lead"
+  | "voice";
 
 export type ProseIssue = {
   rule: ProseRule;
@@ -40,6 +42,20 @@ export const RULE_FIX: Record<ProseRule, string> = {
   "long-paragraph": "split a paragraph of more than five sentences, or move part of it into a table",
   "bold-density": "bold sparingly: more than four bold phrases in one paragraph",
   "beginner-lead": "a Beginner lead takes two to four short sentences before the first example",
+  voice:
+    "address the learner as you; no maintainer we, and author I only in Acknowledgments and the purpose page's Criticisms",
+};
+
+/** Maintainer *we*. Capitalized `US` (the country) is not matched. */
+const MAINTAINER_WE = /\b(?:[Ww]e(?:(?:'|’)(?:re|ve|ll|d))?|[Uu]s|[Oo]urs?|[Oo]urselves)\b/;
+
+/** Author *I*: a capital `I` standing alone (not before a period, as in an initial or a numeral list). */
+const AUTHOR_I = /(?<![\w.'’-])I(?:(?:'|’)(?:m|ve|ll|d))?(?![\w.'’-])|\b(?:[Mm]e|[Mm]y|[Mm]ine|[Mm]yself)\b/;
+
+/** Signed sections where author *I* is allowed: page → H2 heading text. */
+export const AUTHOR_I_SECTIONS: Record<string, readonly string[]> = {
+  "introduction.md": ["Acknowledgments"],
+  "purpose.md": ["Criticisms"],
 };
 
 export const SENTENCE_CEILING = 5;
@@ -119,6 +135,21 @@ function ownWords(line: string): string {
     .replace(/"[^"\n]*"|“[^”\n]*”/g, " ");
 }
 
+/**
+ * The page's own words for the voice rule: {@link readingText} without English examples. Drops
+ * bold spans (terms and control labels such as **Check me**), italics and quotation marks, and a
+ * parenthesized note right after an example (*Here.* (near me)) or a short gloss ((you and I)).
+ */
+function voiceText(line: string): string {
+  return readingText(line)
+    .replace(/\*\*[^*\n]+\*\*/g, " ")
+    .replace(/\*\*/g, "")
+    .replace(/(?:\*[^*\n]+\*|"[^"\n]*"|“[^”\n]*”)\s*\([^()\n]*\)/g, " ")
+    .replace(/\*[^*\n]+\*/g, " ")
+    .replace(/"[^"\n]*"|“[^”\n]*”/g, " ")
+    .replace(/\((?:[^()\s]+\s*){1,6}\)/g, " ");
+}
+
 /** Sentences in a run of prose: closing marks, with code, links and parentheses collapsed. */
 export function sentenceCount(text: string): number {
   const flat = text
@@ -182,10 +213,20 @@ export function proseStyleIssues(page: string, markdown: string): ProseIssue[] {
   const band = pageBand(markdown);
   const allowed = new Set((JARGON_ALLOWED[page] ?? []).map((term) => term.toLowerCase()));
 
+  const signedSections = AUTHOR_I_SECTIONS[page] ?? [];
+  let signed = false;
+  let answer = false;
+
   lines.forEach((line, i) => {
     const kind = lineKind(line);
     if (kind === "blank") return;
     const n = i + 1;
+
+    const h2 = /^#{1,2}\s+(.*?)\s*(?:\{#[^}]*\})?\s*$/.exec(line.trim());
+    if (h2) signed = signedSections.includes(h2[1]!);
+    // A numbered prompt is an example and its note.
+    if (/^\s*:::\s*details\b/.test(line)) answer = true;
+    else if (/^\s*:::\s*$/.test(line)) answer = false;
 
     const link = FILENAME_LINK.exec(line.replace(/`[^`\n]*`(?!\])/g, (m) => " ".repeat(m.length)));
     if (link) error("link-filename", n, `link text is a filename: ${link[0]}…`);
@@ -207,6 +248,16 @@ export function proseStyleIssues(page: string, markdown: string): ProseIssue[] {
     if (warm) error("empty-warmth", n, `empty reassurance: "${warm[0]}"`);
 
     if (kind === "prose" && /[A-Za-z][!](?=\s|$)/.test(own)) error("exclamation", n, "exclamation mark in prose");
+
+    // In an answer, a line with code (or any line in a Claritish answer) is the learner's sentence.
+    const answerExample = answer && (page.startsWith("claritish/") || /`/.test(rawLines[i]!));
+    if (kind !== "table" && !answerExample && !/^\s*\*\*\d+\.\*\*/.test(line)) {
+      const voice = voiceText(line);
+      const we = MAINTAINER_WE.exec(voice);
+      if (we) warning("voice", n, `maintainer "${we[0]}"`);
+      const me = signed ? null : AUTHOR_I.exec(voice);
+      if (me) warning("voice", n, `author "${me[0]}"`);
+    }
 
     if (!JARGON_EXEMPT.has(name)) {
       const term = JARGON.exec(own);
@@ -242,4 +293,74 @@ export function proseStyleIssues(page: string, markdown: string): ProseIssue[] {
   }
 
   return issues.sort((a, b) => a.line - b.line);
+}
+
+/** Warning counts per page (path under docs/grammar/) and rule; zero counts are left out. */
+export type WarningCounts = Record<string, Partial<Record<ProseRule, number>>>;
+
+export type BaselineChange = { page: string; rule: ProseRule; baseline: number; current: number };
+
+/** Count each page's warnings by rule. Every page in `pages` gets an entry, empty when clean. */
+export function warningCounts(issuesByPage: Record<string, readonly ProseIssue[]>): WarningCounts {
+  const out: WarningCounts = {};
+  for (const [page, issues] of Object.entries(issuesByPage)) {
+    const counts: Partial<Record<ProseRule, number>> = {};
+    for (const issue of issues) {
+      if (issue.severity === "warning") counts[issue.rule] = (counts[issue.rule] ?? 0) + 1;
+    }
+    out[page] = counts;
+  }
+  return out;
+}
+
+/**
+ * Compare warning counts with the baseline over `pages` (default: the pages in `counts`).
+ * A page or rule missing on either side counts as 0. Rises fail the build; falls can be locked in.
+ */
+export function compareWarningBaseline(
+  counts: WarningCounts,
+  baseline: WarningCounts,
+  pages: readonly string[] = Object.keys(counts),
+): { rises: BaselineChange[]; falls: BaselineChange[] } {
+  const rises: BaselineChange[] = [];
+  const falls: BaselineChange[] = [];
+  for (const page of [...new Set(pages)].sort()) {
+    const now = counts[page] ?? {};
+    const before = baseline[page] ?? {};
+    const rules = [...new Set([...Object.keys(now), ...Object.keys(before)])].sort() as ProseRule[];
+    for (const rule of rules) {
+      const change = { page, rule, baseline: before[rule] ?? 0, current: now[rule] ?? 0 };
+      if (change.current > change.baseline) rises.push(change);
+      else if (change.current < change.baseline) falls.push(change);
+    }
+  }
+  return { rises, falls };
+}
+
+/**
+ * The baseline after an update. With `pages`, only those pages' entries change; without, the
+ * baseline becomes `counts` (pages that no longer exist drop out).
+ */
+export function updatedWarningBaseline(
+  counts: WarningCounts,
+  baseline: WarningCounts,
+  pages?: readonly string[],
+): WarningCounts {
+  const next: WarningCounts = pages ? { ...baseline } : {};
+  for (const page of pages ?? Object.keys(counts)) {
+    delete next[page];
+    const nonzero = Object.entries(counts[page] ?? {}).filter(([, n]) => n! > 0);
+    if (nonzero.length) next[page] = Object.fromEntries(nonzero);
+  }
+  return next;
+}
+
+/** Stable JSON for the baseline file: sorted pages and rules, one page per block. */
+export function formatWarningBaseline(baseline: WarningCounts): string {
+  const sorted: WarningCounts = {};
+  for (const page of Object.keys(baseline).sort()) {
+    const rules = baseline[page]!;
+    sorted[page] = Object.fromEntries(Object.keys(rules).sort().map((rule) => [rule, rules[rule as ProseRule]]));
+  }
+  return `${JSON.stringify(sorted, null, 2)}\n`;
 }

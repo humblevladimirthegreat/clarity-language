@@ -69,7 +69,7 @@ Exact rules fail the build:
 
 Quoted example lines and English in italics are examples, not the page's own voice, so the phrase lists skip them.
 
-Heuristic rules never fail. The build prints one count per rule, and `npm run lint:prose -- --report` lists each hit with its file and line.
+Heuristic rules warn. The build prints one count per rule, and `npm run lint:prose -- --report` lists each hit with its file and line.
 
 | Rule | Warns on |
 |------|----------|
@@ -77,8 +77,11 @@ Heuristic rules never fail. The build prints one count per rule, and `npm run li
 | `long-paragraph` | More than five sentences in one paragraph |
 | `bold-density` | More than four bold phrases in one paragraph |
 | `beginner-lead` | Fewer than two or more than four sentences between a Beginner H3 and its first example |
+| `voice` | Maintainer *we* (*we*, *us*, *our* and their forms) and author *I* (*I*, *me*, *my* and their forms) in the page's own words. Examples are skipped: italics, quotation marks, quoted lines, tables, numbered prompts, example lines in answers, and a gloss in parentheses after an example. Author *I* is allowed in the introduction's Acknowledgments and the purpose page's Criticisms ([voice and length](#voice-and-length)) |
 
 A warning is a place to look, not a verdict. A one-sentence lead is right when the previous section already made the job obvious.
+
+Warnings are ratcheted. `src/lint/prose-style-baseline.json` holds each page's count per rule, and the build fails when a page's count rises above it. A page or rule missing from the file counts as zero. To accept a warning, or to lock in a page you cleaned up, run `npm run lint:prose -- --update-baseline` with the page paths (or none, for every page). The file's diff shows the decision. An accepted warning stays in the file, so a warning is still a place to look, not a verdict.
 
 To add a phrase or a term, edit the list in `src/lint/prose-style.ts` and add a case to its test.
 

@@ -1,0 +1,340 @@
+{
+  "advanced/as-of.md": {
+    "bold-density": 1
+  },
+  "advanced/generations.md": {
+    "bold-density": 2
+  },
+  "advanced/hook-compounds.md": {
+    "bold-density": 1
+  },
+  "advanced/numeric-derivation.md": {
+    "bold-density": 11
+  },
+  "advanced/open-ranges.md": {
+    "bold-density": 1
+  },
+  "advanced/root-tails.md": {
+    "bold-density": 1
+  },
+  "advanced/singability.md": {
+    "long-paragraph": 1
+  },
+  "advanced/special-values.md": {
+    "bold-density": 13
+  },
+  "advanced/stacked-markers.md": {
+    "bold-density": 1
+  },
+  "advanced/stance-bars.md": {
+    "bold-density": 1
+  },
+  "advanced/stand-in-roles.md": {
+    "bold-density": 1,
+    "long-paragraph": 1
+  },
+  "beginner/already-still-yet.md": {
+    "beginner-lead": 1
+  },
+  "beginner/can-and-cant.md": {
+    "beginner-lead": 1,
+    "long-paragraph": 1
+  },
+  "beginner/causation.md": {
+    "beginner-lead": 1
+  },
+  "beginner/clause.md": {
+    "beginner-lead": 5,
+    "bold-density": 1
+  },
+  "beginner/comparatives.md": {
+    "beginner-lead": 1,
+    "bold-density": 1
+  },
+  "beginner/compounds.md": {
+    "beginner-lead": 1,
+    "bold-density": 3
+  },
+  "beginner/dependents.md": {
+    "beginner-lead": 2,
+    "bold-density": 1
+  },
+  "beginner/extra-noun-hooks.md": {
+    "beginner-lead": 1
+  },
+  "beginner/fault.md": {
+    "beginner-lead": 1,
+    "long-paragraph": 1
+  },
+  "beginner/firm-soft.md": {
+    "beginner-lead": 1,
+    "bold-density": 1,
+    "long-paragraph": 1
+  },
+  "beginner/here-there.md": {
+    "beginner-lead": 1
+  },
+  "beginner/hooks.md": {
+    "beginner-lead": 1,
+    "bold-density": 1
+  },
+  "beginner/intention.md": {
+    "beginner-lead": 1,
+    "bold-density": 2,
+    "long-paragraph": 1
+  },
+  "beginner/joins.md": {
+    "beginner-lead": 4,
+    "bold-density": 1,
+    "long-paragraph": 1
+  },
+  "beginner/knowing.md": {
+    "beginner-lead": 2
+  },
+  "beginner/label-seams.md": {
+    "beginner-lead": 1,
+    "bold-density": 4,
+    "long-paragraph": 1
+  },
+  "beginner/numbers.md": {
+    "beginner-lead": 1,
+    "bold-density": 2
+  },
+  "beginner/ought-for-a-sake.md": {
+    "beginner-lead": 1,
+    "bold-density": 1,
+    "long-paragraph": 1
+  },
+  "beginner/plurality.md": {
+    "beginner-lead": 1,
+    "bold-density": 4
+  },
+  "beginner/predication.md": {
+    "beginner-lead": 2
+  },
+  "beginner/pronouns.md": {
+    "beginner-lead": 2,
+    "bold-density": 5
+  },
+  "beginner/questions.md": {
+    "beginner-lead": 4,
+    "bold-density": 2
+  },
+  "beginner/relations.md": {
+    "beginner-lead": 1,
+    "long-paragraph": 1
+  },
+  "beginner/restrictors.md": {
+    "beginner-lead": 1,
+    "bold-density": 2
+  },
+  "beginner/roles.md": {
+    "bold-density": 3
+  },
+  "beginner/sakes.md": {
+    "beginner-lead": 2,
+    "bold-density": 3
+  },
+  "beginner/spans.md": {
+    "beginner-lead": 1,
+    "bold-density": 2
+  },
+  "beginner/speech-moves.md": {
+    "beginner-lead": 1,
+    "bold-density": 1
+  },
+  "beginner/word-endings.md": {
+    "beginner-lead": 1,
+    "bold-density": 1
+  },
+  "cheat-sheets/comparing.md": {
+    "bold-density": 1
+  },
+  "cheat-sheets/consonants.md": {
+    "bold-density": 1,
+    "long-paragraph": 1
+  },
+  "cheat-sheets/joins-hooks.md": {
+    "bold-density": 1,
+    "long-paragraph": 1
+  },
+  "cheat-sheets/knowing-intending.md": {
+    "bold-density": 1
+  },
+  "cheat-sheets/people-pointing.md": {
+    "bold-density": 1
+  },
+  "cheat-sheets/roles.md": {
+    "bold-density": 2
+  },
+  "cheat-sheets/why-allowed.md": {
+    "bold-density": 1,
+    "long-paragraph": 1
+  },
+  "claritish/allowed-required-agreed.md": {
+    "bold-density": 1
+  },
+  "claritish/could-be.md": {
+    "bold-density": 1,
+    "long-paragraph": 1
+  },
+  "claritish/how-you-know.md": {
+    "long-paragraph": 1
+  },
+  "english.md": {
+    "long-paragraph": 1
+  },
+  "inspect.md": {
+    "long-paragraph": 1
+  },
+  "intermediate/abstract-landmarks.md": {
+    "bold-density": 1
+  },
+  "intermediate/bars.md": {
+    "bold-density": 2
+  },
+  "intermediate/collectives.md": {
+    "bold-density": 4
+  },
+  "intermediate/comparative-arity.md": {
+    "bold-density": 1
+  },
+  "intermediate/compound-families.md": {
+    "bold-density": 1
+  },
+  "intermediate/contrary-to.md": {
+    "bold-density": 1
+  },
+  "intermediate/conversation-length.md": {
+    "bold-density": 2
+  },
+  "intermediate/dated-channel.md": {
+    "bold-density": 1,
+    "long-paragraph": 1
+  },
+  "intermediate/digitless-exponents.md": {
+    "bold-density": 4,
+    "long-paragraph": 1
+  },
+  "intermediate/evidentiality.md": {
+    "long-paragraph": 2
+  },
+  "intermediate/exactly-like.md": {
+    "bold-density": 1
+  },
+  "intermediate/fill-ask-roles.md": {
+    "long-paragraph": 1
+  },
+  "intermediate/for-a-sake.md": {
+    "bold-density": 2
+  },
+  "intermediate/holder.md": {
+    "bold-density": 1,
+    "long-paragraph": 1
+  },
+  "intermediate/in-clause-hooks.md": {
+    "bold-density": 1
+  },
+  "intermediate/join-relations.md": {
+    "bold-density": 2
+  },
+  "intermediate/label-reach.md": {
+    "voice": 1
+  },
+  "intermediate/letter-names.md": {
+    "bold-density": 1
+  },
+  "intermediate/measures-and-percent.md": {
+    "bold-density": 2
+  },
+  "intermediate/more-hinges.md": {
+    "bold-density": 2
+  },
+  "intermediate/more-turn-words.md": {
+    "long-paragraph": 1
+  },
+  "intermediate/number-markers.md": {
+    "bold-density": 2
+  },
+  "intermediate/number-roles.md": {
+    "bold-density": 1
+  },
+  "intermediate/phonotactics.md": {
+    "long-paragraph": 1
+  },
+  "intermediate/polar-inventory.md": {
+    "bold-density": 5,
+    "long-paragraph": 1
+  },
+  "intermediate/proper-names.md": {
+    "bold-density": 3
+  },
+  "intermediate/ranges.md": {
+    "bold-density": 1
+  },
+  "intermediate/rank-joins.md": {
+    "bold-density": 3
+  },
+  "intermediate/residue-and-former.md": {
+    "long-paragraph": 1
+  },
+  "intermediate/resume-sense.md": {
+    "bold-density": 1
+  },
+  "intermediate/role-parts.md": {
+    "bold-density": 1
+  },
+  "intermediate/sentence-linkers.md": {
+    "bold-density": 1
+  },
+  "intermediate/set-joins.md": {
+    "bold-density": 1
+  },
+  "intermediate/spans-as-words.md": {
+    "bold-density": 2
+  },
+  "intermediate/stand-in-vowels.md": {
+    "bold-density": 5,
+    "long-paragraph": 1
+  },
+  "intermediate/tag-pronouns.md": {
+    "bold-density": 1,
+    "long-paragraph": 1
+  },
+  "intermediate/tone-marks.md": {
+    "voice": 1
+  },
+  "intermediate/topic.md": {
+    "long-paragraph": 1
+  },
+  "intermediate/universals-domains.md": {
+    "long-paragraph": 1
+  },
+  "intermediate/verb-and-stance-joins.md": {
+    "bold-density": 1
+  },
+  "intermediate/viewpoint.md": {
+    "bold-density": 1
+  },
+  "intermediate/want-and-decide.md": {
+    "bold-density": 1
+  },
+  "say-amounts.md": {
+    "bold-density": 1
+  },
+  "say-people-places.md": {
+    "jargon": 2,
+    "long-paragraph": 1
+  },
+  "say-questions.md": {
+    "bold-density": 1,
+    "long-paragraph": 1
+  },
+  "say-reasons.md": {
+    "bold-density": 5,
+    "long-paragraph": 2
+  },
+  "terminology.md": {
+    "bold-density": 6
+  }
+}
