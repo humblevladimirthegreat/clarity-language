@@ -148,21 +148,21 @@ Neither MAY nor MIRATIVE can be a [comparison bar](/bars#channel-bars).
 
 ### Already, still, not yet, no longer {#phasal}
 
-Each compares what is true now with a change. Not a tense. **-l** is settled, **-m** could change back, **-r** only for now.
+Each compares what is true now with a change. Not a tense. **-l** is settled, **-m** could change back, **-r** only for now. *Not yet* is a `/th/` stance, since it waits on an expectation; its ending says how firmly you expect the change.
 
 <!-- cheat-sheet: knowing-intending -->
 | Meaning | **-l** | **-m** | **-r** | Stage |
 |---------|--------|--------|--------|-------|
 | *already* | [`havel`](/already-still-yet#phasal) *for good* | `havem` | `haver` *for now* | I |
 | *still* | [`hawul`](/already-still-yet#phasal) *and will keep on* | `hawum` | `hawur` *about to end* | I |
-| *not yet* | [`helol`](/already-still-yet#phasal) *but it will* | `helom` | `helor` *maybe never* | I |
+| *not yet* | [`thelol`](/already-still-yet#phasal) *but it will* | `thelom` | `thelor` *maybe never* | I |
 | *no longer* | [`huvul`](/already-still-yet#phasal) *never again* | `huvum` | `huvur` *paused* | I |
 
 For *has ever*, use `havem` with `har`; *has never* is `hal` ([ever / never](/already-still-yet#ever-never)).
 
 ## Intending {#intending}
 
-A want, a plan, and a decision are three steps, and they stack in that order. A plan and a decision are `/h/` words, a want is a `/th/` word (yours unless a holder names someone else), and none says the act happens.
+A want, a plan, and a decision are three steps, and they stack in that order. A want, a plan, and a decision are all `/th/` words (yours unless a holder names someone else), and none says the act happens.
 
 <!-- generated: overlays pos=th|h kind=want|plan|decision|attempt -->
 | Ageben | English | Taught in | Stage |

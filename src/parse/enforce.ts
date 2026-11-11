@@ -447,6 +447,10 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (word.pos === "h" && stemRoot === CLOSED.goal && word.ending === "m") {
     throw new ConstructionError("retiredPurposeHinge", word.raw);
   }
+  // NOT YET is no `/h/` word: it waits on an expectation, which is in a mind, a `/th/` stance (already-still-yet.md#phasal).
+  if (word.pos === "h" && stemRoot === CLOSED.seedling && word.ending !== "n") {
+    throw new ConstructionError("retiredNotYet", word.raw);
+  }
   if (word.pos === "th" && word.family.kind === "number") enforceStanceNumber(word, word.family.stem);
   if (word.pos === "w" && word.family.kind === "number") enforceDegreeNumber(word, word.family.stem);
   if (word.plural && isGenericPronoun(word)) throw new ConstructionError("genericPlural", word.raw);

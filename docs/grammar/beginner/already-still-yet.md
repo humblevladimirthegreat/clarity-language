@@ -6,13 +6,13 @@ band: beginner
 
 ### Already, still, not yet, no longer {#phasal}
 
-English *already*, *still*, *not yet*, and *no longer* do not place an event in time. Each compares what is true **now** with a change: has it come, or not? That is about how things stand now, not when something happened, so Ageben uses four `/h/` words, not a tense. (cue: each root pictures the stage the change is at)
+English *already*, *still*, *not yet*, and *no longer* do not place an event in time. Each compares what is true **now** with a change: has it come, or not? That is about how things stand now, not when something happened, so Ageben uses four words, not a tense. Three are `/h/` words: a change that has come, a state that goes on, and a state that has stopped can all be watched. *Not yet* is a `/th/` [stance](clause.md#stance-th) word, like MAY: it waits on a change that someone expects, and an expectation is in a mind. (cue: each root pictures the stage the change is at)
 
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`havem`** | the change has happened | *already* | `avel` *hatch* | 🐣: the chick is already out |
 | **`hawum`** | the state goes on | *still* | `awul` *anchor* | ⚓: the ship is held where it was |
-| **`helom`** | the change is expected but has not come | *not yet* | `elol` *seedling* | 🌱: not grown yet |
+| **`thelom`** | the change is expected but has not come | *not yet* | `elol` *seedling* | 🌱: not grown yet |
 | **`huvum`** | the state has stopped | *no longer* / *not anymore* | `uvul` *wilt* | 🥀: no longer fresh |
 
 > `zazozon hawum vowurol.`
@@ -21,9 +21,9 @@ English *already*, *still*, *not yet*, and *no longer* do not place an event in 
 >
 > "Azozon is still walking."
 
-> `zazozon helom vowurol.`
+> `zazozon thelom vowurol.`
 >
-> z-Azozon | h-not-yet | v-walk
+> z-Azozon | th-not-yet | v-walk
 >
 > "Azozon hasn't walked yet."
 
@@ -33,18 +33,20 @@ English *already*, *still*, *not yet*, and *no longer* do not place an event in 
 >
 > "Azozon doesn't walk at the house anymore."
 
-The ending says how settled the current stage is, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). Use **-m** when it could change back, or when you do not know. Use **-l** when it is not expected to. Use **-r** when it holds only for now: it is likely to change back soon, or, on *not yet*, the change may never come.
+The ending says how settled the current stage is, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). Use **-m** when it could change back, or when you do not know. Use **-l** when it is not expected to. Use **-r** when it holds only for now: it is likely to change back soon.
+
+On *not yet*, the ending says how firmly you expect the change instead. Use **-m** when you expect it, or when you do not say how firmly. Use **-l** when you are sure it will come: *not yet, but it will*. Use **-r** when it may never come.
 
 <!-- cheat-sheet: knowing-intending -->
 | Ageben | Use | English |
 |--------|-----|---------|
 | `havel` | done, and it will stay done | *already, for good* |
 | `hawul` | goes on, with no end in sight | *still, and it will keep on* |
-| `helol` | not yet, but it is sure to come | *not yet, but it will* |
+| `thelol` | not yet, but it is sure to come | *not yet, but it will* |
 | `huvul` | stopped, and it will not come back | *never again* |
 | `haver` | done, but likely to come undone | *already, for now* |
 | `hawur` | goes on, but about to end | *still, for now* |
-| `helor` | not yet, and it may never come | *not yet, maybe never* |
+| `thelor` | not yet, and it may never come | *not yet, maybe never* |
 | `huvur` | stopped for now; expected to resume | *paused* / *not for now* |
 
 > `zalazun havel vudurul.`
@@ -58,6 +60,14 @@ The ending says how settled the current stage is, on the same settled-to-passing
 > z-Azozon | h-no-longer.for-now | v-walk
 >
 > "Azozon has stopped walking for now." (expected to start again)
+
+Like any stance, *not yet* can take MAY in front of it, when you are not sure the change has still not come.
+
+> `zalazun thomam thelom vudurul.`
+>
+> z-Alazun | th-MAY | th-not-yet | v-departure
+>
+> "Alazun may not have left yet."
 
 When only one `/ɡ/` adjective is still or no longer so, write the same word under `/w/` immediately before that adjective.
 
@@ -109,7 +119,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vayebel` |
 | *departure* | `vudurul` |
 | *school* | `uzahal` |
-| *not yet* | `helom` |
+| *not yet* | `thelom` |
 | *sleepy* | `uzemel` |
 
 #### English → Ageben {#beginner-english-to-ageben}
@@ -140,10 +150,10 @@ z-Azozon | h-no-longer | v-walk | [at | b-school]
 
 #### Ageben → English {#beginner-ageben-to-english}
 
-**1.** `zalazun helol vudurul.`
+**1.** `zalazun thelol vudurul.`
 
 ::: details Show answer
-z-Alazun | h-not-yet.lasting | v-departure
+z-Alazun | th-not-yet.sure | v-departure
 
 *Alazun hasn't left yet, but will.*
 :::
@@ -181,10 +191,10 @@ z-Azozon | h-still | v-sing
 **1.** *Azozon hasn't walked yet.* <!-- lint: error -->`zazozon hawum vowurol.`
 
 ::: details Show answer
-`zazozon helom vowurol.`
+`zazozon thelom vowurol.`
 
-z-Azozon | h-not-yet | v-walk
+z-Azozon | th-not-yet | v-walk
 
-**`helom`** is *not yet*; **`hawum`** is *still*.
+**`thelom`** is *not yet*; **`hawum`** is *still*.
 :::
 

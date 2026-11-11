@@ -101,6 +101,7 @@ export const GLOSS_READER = {
     ".lasting": "not expected to change back",
     ".for-now": "paused, expected to resume",
     ".maybe-never": "the change may never come",
+    ".sure": "the change is firmly expected: but it will",
     ".fault": "and the reason broke a norm (blame)",
     ".share": "one reason among others",
     ".ledger": "as of a stated time, as the records stood then",
