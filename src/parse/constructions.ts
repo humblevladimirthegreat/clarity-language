@@ -280,7 +280,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
     anchor: "sakes.md#met",
     summary: "sake word",
     reader:
-      "A sake word `SAKE-STANCE-ending` (competence, relatedness, pleasure, purpose, …) says how something stands toward that payoff, for the speaker unless a `b-` right after it or a holder says whose. `met` = it serves it, `unmet` = it costs it, `motive` = done for that payoff, `ought` = advice that the act would serve it (`-unasked` not asked for, `-invited` asked for, `-tryout` worth a try); with `ought` the verb is what ought to happen, not what happens. On `g-` after a noun it is about that thing of mine; on `th-` it is about the whole event: `z-X | v-sing | th-pleasure-met-any-term` = X sings, and I enjoy it. With a capital tail (`-STAYING-FLEETING`, `-AIMED-OPEN`) it is one feeling: say it with the plain English emotion word (unmet competence = anxious or frustrated, unmet relatedness aimed at a `b-` person = irritated with them, met competence = proud or confident), not piece by piece. `[w-FEELING | g-stimulus]` after a noun = that feeling about the noun.",
+      "A sake word `SAKE-STANCE-ending` (competence, relatedness, pleasure, purpose, …) says how something stands toward that payoff, for the speaker unless a holder, or a `b-` right after it, says whose (after a feeling whose urge moves you, that `b-` is instead what the urge is about). `met` = it serves it, `unmet` = it costs it, `motive` = done for that payoff, `ought` = advice that the act would serve it (`-unasked` not asked for, `-invited` asked for, `-tryout` worth a try); with `ought` the verb is what ought to happen, not what happens. On `g-` after a noun it is about that thing of mine; on `th-` it is about the whole event: `z-X | v-sing | th-pleasure-met-any-term` = X sings, and I enjoy it. With a capital tail (`-STAYING-FLEETING`, `-AIMED-OPEN`) it is the speaker's feeling about it, said piece by piece: the sake part says what happened to the payoff, the urge says which way the feeling pulls (STAYING stay with it, AIMED act on someone, TOWARD turn to someone, GIVING do something for someone, RESISTING push back, AWAY get away, RELEASING let go, PLACATING keep the peace, HELD frozen or holding it in, UNPLACED no clear pull), and the last part how long the feeling lasts (SETTLED it has set in, OPEN unsaid, FLEETING a passing wave). An English emotion word may sum it up (`th-competence-met-any-term-TOWARD-OPEN` = proud, and I want to show someone), but keep the pull it names. `[w-FEELING | g-stimulus]` after a noun = that feeling about the noun.",
   },
   scope: { anchor: "label-seams.md#label-reach", summary: "label reach" },
   hookPrefix: {
@@ -409,6 +409,18 @@ export const READING_CONSTRUCTIONS = {
   verbFirstItem: { anchor: "verb-and-stance-joins.md#vp-clause-forms", summary: "words between the subject and the first joined verb: that verb's own" },
   verbSharedNoun: { anchor: "verb-and-stance-joins.md#vp-clause-forms", summary: "/d/ or /b/ right after a verb join: every verb's" },
   fromTo: { anchor: "digit-strings.md#time", summary: "ul + /b/ + oel + /b/: one from … to unit" },
+  feelingLandmark: {
+    anchor: "how-you-feel.md#urge-landmark",
+    summary: "a bl- word after a feeling whose urge moves you: what the urge moves you toward, at, or away from",
+    reader:
+      "After a feeling with the urge AIMED, TOWARD, GIVING, RESISTING, AWAY, RELEASING, or PLACATING, a `bl-` word names who or what the pull is about: `th-relatedness-unmet-modifiable-AIMED-SETTLED | bl-X` = I resent X. With no `bl-` it is about the `g-stimulus` noun, if there is one.",
+  },
+  feelingStake: {
+    anchor: "feelings.md#feeling-whose-stake",
+    summary: "a bl- word after a STAYING, HELD, or UNPLACED feeling: whose stake it is",
+    reader:
+      "After a feeling with the urge STAYING, HELD, or UNPLACED, a `bl-` word says whose stake it is: the payoff is that person's, and the feeling is still the speaker's. `th-autonomy-unmet-irreversible-STAYING-OPEN | bl-X` = X lost their say for good, and I'm sitting with that.",
+  },
 } satisfies Record<string, ConstructionEntry>;
 
 /** Tone marks: each mark, and each scope it colors (speech-moves.md § tone marks). */
@@ -824,11 +836,10 @@ export const REJECTIONS = {
   pluralOnPos: { anchor: "plurality.md#associative", summary: "-x is unused on /w/, /h/, /th/, and the published /x/ linkers" },
   pluralInterjection: { anchor: "collectives.md#vocatives-y", summary: "-x on /y/ goes on a vocative (-n / -r), not an interjection" },
   sakeSlot: { anchor: "sakes.md#sake-inventory", summary: "a sake form goes on /ɡ/, /th/, or /w/ only" },
-  emotionTail: { anchor: "feelings.md#emotion-compose", summary: "the emotion tail goes on tha / tho / thu and ends in -r / -m / -l" },
+  emotionTail: { anchor: "how-you-feel.md#feeling-word", summary: "the emotion tail goes on tha / tho / thu and ends in -r / -m / -l" },
   sakeEnding: { anchor: "sakes.md#word-shape", summary: "a sake word ends in -l / -m / -r (its stance's ending table), with or without an emotion tail" },
   sakeStackedVowel: { anchor: "sakes.md#word-shape", summary: "a sake stance is one vowel; stacked vowels after th are the emotion urge after the horizon letter" },
   prescriptionSlot: { anchor: "ought-for-a-sake.md#prescription-the-ought-this-act-for-this-sake", summary: "prescription (the) goes on /th/ only: it is about an act, not a noun" },
-  feelingLandmark: { anchor: "feelings.md#emotion-compose", summary: "an INTERNAL (a) or UNPLACED (ue) feeling takes no /b/; a landmark goes with a direction or CIRCUM locus" },
   labelReachSlot: { anchor: "label-seams.md#label-reach", summary: "label reach goes on /ɡ/, /z/, /d/, /b/, /v/, or /h/ only" },
   labelReachStem: { anchor: "label-seams.md#label-reach", summary: "a reach seam labels a content root, not a special pronoun" },
   roleCompoundSlot: { anchor: "roles.md#role-compounds", summary: "a role compound goes on /z/, /d/, /b/, /ɡ/, as a topic under /x/, as a call under /y/ (-n / -r), or under /h/ with a slot part (acting as); not on /v/, /w/, or /th/, and not a content part on /h/" },

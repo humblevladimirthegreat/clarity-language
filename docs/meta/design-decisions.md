@@ -270,9 +270,19 @@ Vowel sound still separates every pair, so the crowded rises cost something only
 - **Understanding is its own sake, not part of competence.** Boredom with an easy task is competence met and understanding unmet, and the two call for different help. Novelty for its own sake stays under pleasure.
 - **Surprise is not a sake.** It is the MIRATIVE (`themem`), a closed `/th/` mood apart from the eight channels: it says nothing about how you know and stacks with a channel.
 
+### Feeling words
+
+The tail of a feeling word is an urge and a duration ([feeling word](../grammar/beginner/how-you-feel.md#feeling-word)). Rejected alternatives:
+
+- **A placement vowel (where the feeling sits).** Every feeling is inside you, so a slot for *inside* versus *around you* says little; the vowel is better spent on which way the feeling pulls. The mood of a situation is said by making the situation the stimulus.
+- **A motion ending (still, flowing, surging).** The last ending says how long the feeling lasts instead. That suggests what to do (wait it out, or give it attention), and it reuses the settled-to-passing scale every other sake ending uses. A wave is **-r** FLEETING.
+- **An arousal or sensation slot.** Strength stays on the degree word, and a body sensation is ordinary noun and adjective grammar.
+- **A vicarious urge (feeling on someone else's behalf).** It said the same thing as whose stake, and it competed with whose stake for the one `/b/`.
+- **Two `bl-` words on one feeling word.** A feeling word takes one: the landmark after an urge that moves you, whose stake after STAYING, HELD, or UNPLACED. Someone else's stake with a landmark urge takes two sentences (`thunathul blazozon. thudathumoem blazozon.`), which keeps what happened to them apart from what you feel. A second `bl-` has no host (D-22).
+
 ### Experiencer adjectives
 
-No adjective for someone else's feeling: it would bypass the holder warrant. A noun before a lone feeling is an existence clause, so `zalazun thuwathuruer` is *anxious that Alazun is here*. Someone else's objectless feeling goes through a holder (`thuwathuruer theyomalazun`).
+No adjective for someone else's feeling: it would bypass the holder warrant. A noun before a lone feeling is an existence clause, so `zalazun thuwathuruer` is *uneasy that Alazun is here*. Someone else's objectless feeling goes through a holder (`thuwathuruer theyomalazun`).
 
 **No default reading of a motive as the actor's own.** A motive word on someone else's act stays your stake, as every sake word does. Reading it as the actor's reason would state what is in their mind without a warrant. Someone else's motive goes through a holder (`thawethom theyomazozon`), as their feelings do. The same holds for prescription: plain `the` is advice for your stake, and advice for the advisee's own good names them in `/b/`.
 

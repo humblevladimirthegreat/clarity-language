@@ -74,6 +74,31 @@ describe("construction registry", () => {
     }
   });
 
+  it("reads a bl- after a feeling as whose stake on STAYING, HELD, UNPLACED, and as the landmark on every other urge", () => {
+    const cases: [string, "reading.feelingStake" | "reading.feelingLandmark"][] = [
+      ["thunathulam blazozon.", "reading.feelingStake"],
+      ["thunathulaem blazozon.", "reading.feelingStake"],
+      ["thunathuluem blazozon.", "reading.feelingStake"],
+      ["zonal wawethumam goyom blazozon.", "reading.feelingStake"],
+      ["thudathumem blazozon.", "reading.feelingLandmark"],
+      ["thudathumoem blazozon.", "reading.feelingLandmark"],
+      ["thudathumom blazozon.", "reading.feelingLandmark"],
+      ["thudathumuom blazozon.", "reading.feelingLandmark"],
+      ["thudathumum blazozon.", "reading.feelingLandmark"],
+      ["thudathumuam blazozon.", "reading.feelingLandmark"],
+      ["thudathumaom blazozon.", "reading.feelingLandmark"],
+      ["zabowam wawethumel goyom blalazun.", "reading.feelingLandmark"],
+    ];
+    for (const [input, expected] of cases) {
+      const ids = parse(input, undefined, { constructions: true }).constructions ?? [];
+      const other = expected === "reading.feelingStake" ? "reading.feelingLandmark" : "reading.feelingStake";
+      assert.ok(ids.includes(expected) && !ids.includes(other), `${input} → ${ids.join(" ")}`);
+    }
+    // A plain sake word with no feeling tail records neither.
+    const plain = parse("thunathul blazozon.", undefined, { constructions: true }).constructions ?? [];
+    assert.ok(!plain.some((id) => id.startsWith("reading.feeling")), plain.join(" "));
+  });
+
   it("reads a used-by noun, a join of names, or every + kind with /ɡ/ as a property, not existence", () => {
     for (const input of ["zogozel gubulel om buwen.", "zodozer gelazem."]) {
       const ids = parse(input, undefined, { constructions: true }).constructions ?? [];

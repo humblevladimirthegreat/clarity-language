@@ -90,9 +90,9 @@ export type MorphWordFamily =
       stanceVowel?: ReachVowel;
       /** Role compound or role pointer: the label reach vowel(s) after `w` (`zwozuduyel`; role-parts.md#reach). Hook prefix: reach after the stem's `th` seam (`zuexavuvuthol`). Landmark facing: pair reach after `th` (`gazuhothel`; viewpoint.md#landmark-facing). */
       reachVowel?: ReachVowel;
-      /** Emotion compose: sake horizon letter moved mid-word (feelings.md#emotion-compose). */
+      /** Emotion compose: sake horizon letter moved mid-word (how-you-feel.md#feeling-word). */
       horizon?: "l" | "m" | "r";
-      /** Emotion compose urge: hook vowel(s) for what the feeling pulls toward (feelings.md#emotion-compose). */
+      /** Emotion compose urge: hook vowel(s) for what the feeling pulls toward (how-you-feel.md#feeling-word). */
       locus?: "a" | "e" | "o" | "u" | "ao" | "ae" | "oe" | "ua" | "uo" | "ue";
       /** Numeric prefix: the number body left of the seam (numeric-derivation.md). */
       numberStem?: NumberStem;

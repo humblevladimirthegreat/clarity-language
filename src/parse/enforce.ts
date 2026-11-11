@@ -77,7 +77,6 @@ import type {
   CoordShared,
   GCoord,
   GPackage,
-  Hosted,
   HUnit,
   IslandUnit,
   LeftEdge,
@@ -684,17 +683,6 @@ function enforceBars(coord: NpCoord, tables: ClassifyTables): void {
   }
 }
 
-/** A placement locus (INTERNAL `a`, UNPLACED `ue`) has no landmark, so its feeling takes no hosted `/b/` (feelings.md#emotion-compose). */
-function enforceFeelingLandmark(words: LexWord[], hosted: Hosted | undefined): void {
-  if (!hosted) return;
-  for (const word of words) {
-    const family = word.family;
-    if (family.kind === "x" && family.xFamily === "sake" && (family.locus === "a" || family.locus === "ue")) {
-      throw new ConstructionError("feelingLandmark", `${word.raw} ${hosted.bound.raw}`);
-    }
-  }
-}
-
 /** Whose say: a `bl-` word names someone over the act (`v`), or, under pair reach, the one party a participant's say is toward (permission-consent.md#say-words). */
 function enforceSayHost(unit: HUnit): void {
   const family = unit.word.family;
@@ -928,7 +916,6 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
           enforceLeadingFence(node.coord.parts as { items: unknown[]; join?: LexWord }[], (part) => part.items.length === 0);
           return;
         case "gPackage":
-          enforceFeelingLandmark([node.pkg.word, ...node.pkg.modifiers], node.pkg.hosted);
           enforceAsOfWord(node.pkg.word, node.pkg.hosted?.bound);
           if (node.pkg.asOf) {
             enforceAsOfWord(node.pkg.asOf.word, node.pkg.asOf.bound);
@@ -937,7 +924,6 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
           return;
         case "hUnit":
           enforceHookedJoinLandmark(node.unit.word, node.unit.hosted?.bound);
-          enforceFeelingLandmark([node.unit.word], node.unit.hosted);
           enforceAsOfWord(node.unit.word, node.unit.hosted?.bound);
           enforceIntentionHost(node.unit);
           return;

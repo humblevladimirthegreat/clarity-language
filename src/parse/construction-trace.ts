@@ -5,7 +5,7 @@ import { POLAR_GROUP, RESTRICTOR_GROUP, type JoinSeries } from "./constructions.
 import { actWord, isDigitless, stackKind } from "./series.js";
 import { isGreeting, isKindReference, isScaleShared, visitResult, vpUnitLists } from "./ast-walk.js";
 import { numberMarkerIdentity } from "./resolve.js";
-import type { Clause, LexWord, NumberStem, ParseResult, ResolveInfo, Unit } from "./types.js";
+import type { Clause, Hosted, LexWord, NumberStem, ParseResult, ResolveInfo, Unit } from "./types.js";
 
 /** `overlay.<sense_form>.<pos>` for one lexicon-overlays.csv row. */
 export function overlayConstructionId(overlay: { senseForm: string; pos: string }): string {
@@ -297,6 +297,18 @@ function isUnsaidEvent(clause: Clause): boolean {
   return !hasVerb(clause.units) && clause.units.some((unit) => unit.kind === "np" && unit.coord.level === "d");
 }
 
+/** Urges with no landmark: STAYING, HELD, UNPLACED. After one of these a `bl-` word is whose stake (how-you-feel.md#urge-landmark). */
+const STAKE_URGES = new Set(["a", "ae", "ue"]);
+
+/** A `bl-` after a feeling word: the urge's landmark, or whose stake when the urge has no landmark. */
+function addFeelingHost(words: LexWord[], hosted: Hosted | undefined, out: Set<string>): void {
+  if (!hosted) return;
+  for (const { family } of words) {
+    if (family.kind !== "x" || family.xFamily !== "sake" || !family.horizon) continue;
+    out.add(STAKE_URGES.has(family.locus ?? "") ? "reading.feelingStake" : "reading.feelingLandmark");
+  }
+}
+
 /** Collect `reading.*` IDs from utterance and clause shapes and shared scales, and `rangeMember.*` from range hooks on -r. */
 export function addReadingConstructions(result: ParseResult, out: Set<string>): void {
   const rangeMembers = new Set<string>();
@@ -332,6 +344,8 @@ export function addReadingConstructions(result: ParseResult, out: Set<string>): 
           }
         }
       }
+      if (node.kind === "gPackage") addFeelingHost([node.pkg.word, ...node.pkg.modifiers], node.pkg.hosted, out);
+      if (node.kind === "hUnit") addFeelingHost([node.unit.word], node.unit.hosted, out);
       if (node.kind !== "shared" || !isScaleShared(node.item)) return;
       if (node.item.word.pos === "g") out.add("reading.amountScale");
       if (node.item.word.pos === "h") out.add("reading.frequencyScale");

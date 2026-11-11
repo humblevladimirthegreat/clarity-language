@@ -284,7 +284,7 @@ const SAKE_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
   u: { l: "irreversible", m: "modifiable", r: "passing" },
 };
 
-/** Emotion tail (feelings.md#emotion-compose): urge hook vowel(s), then duration ending. */
+/** Emotion tail (how-you-feel.md#feeling-word): urge hook vowel(s), then duration ending. */
 const EMOTION_URGE: Record<string, string> = {
   a: "STAYING",
   ae: "HELD",

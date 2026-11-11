@@ -536,7 +536,7 @@ function labelReach(word: MorphWord, tables: ClassifyTables): MorphWord | undefi
 }
 
 /**
- * `ROOT th V C V` + ending: the emotion tail on a sake root (feelings.md#emotion-compose);
+ * `ROOT th V C V` + ending: the emotion tail on a sake root (how-you-feel.md#feeling-word);
  * on any other root the same letters are a viewpoint lateral `DIR th ANCHOR` (viewpoint.md#viewpoint-laterals).
  */
 function tailLateral(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {

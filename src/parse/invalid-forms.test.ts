@@ -102,7 +102,8 @@ const ROWS: Row[] = [
   { invalid: "zewal gawethawer.", rejection: "sakeEnding", valid: "zewal gawethamar." },
   { invalid: "zewal gawethel.", rejection: "prescriptionSlot", valid: "zewal gawethol." },
   { invalid: "zabowam wawethel goyom.", rejection: "prescriptionSlot", valid: "zalazun vabuyol thawethel." },
-  { invalid: "zabowam wawethumal goyom blalazun.", rejection: "feelingLandmark", valid: "zabowam wawethumel goyom blalazun." },
+  // A feeling word takes one bl-: its landmark or whose stake, never both (how-you-feel.md#urge-landmark).
+  { invalid: "thudathumem blazozon blalazun.", rejection: "blNoHost", valid: "thudathumem blazozon." },
   { invalid: "zazozon wonumuthul gamahum.", rejection: "labelReachSlot", valid: "zazozon gonumuthal." },
   { invalid: "zazozon guwathaol.", rejection: "sakeStackedVowel", valid: "zazozon guwathal." },
   { invalid: "zazozon gewuhothal.", rejection: "labelReachArrow", valid: "zazozon gewuhothel blohehal." },
