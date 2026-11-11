@@ -89,7 +89,6 @@ Introduce, return, and clear each start a new **topic stretch**.
 |-------|---------|-----|
 | [Role pointer](/pronouns#role-pointers) anchors | yes | `zwuzer` *the latest doer* and `zwuzar` *the other one* never reach into an earlier stretch. Someone from before is picked up by name or whole-stem **-r**. |
 | Whole-stem **-r** | no | It is the explicit way back (`xazozor`), so it reaches across stretches. |
-| [Tags](tag-pronouns.md#tag-pronouns) | no | A tag is assigned on purpose, so distance does not blur it, and placeholder reasoning often runs through a side topic. |
 | Agenda numbering (`x#N`, outline depth) | no | Agenda items sit above topics; one item may hold several. |
 | Speech move, line of talk | no | They track the move and the line of talk, not people. A topic word after a period (`xazozon …`) follows the period's rest and keeps the prior speech act. |
 

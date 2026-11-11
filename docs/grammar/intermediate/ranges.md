@@ -156,7 +156,7 @@ An endpoint can still be fuzzy on its own (`zragel oel zrazam` = *3 to about 5*)
 
 **Compare with:** `zragel al zrazal` is *3, including 5*: an ordinary [hook](/hooks#including), not a range.
 
-**Compare with:** `zragel zrazal zaol` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zazozon zalazun zol gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](locative-relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
+**Compare with:** `zragel zrazal zaol` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zazozon zalazun zol gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [extra-noun hooks](/hooks#extra-noun), one for each place and each with its `/b/`, not a range.
 
 ### Practice {#intermediate-practice}
 

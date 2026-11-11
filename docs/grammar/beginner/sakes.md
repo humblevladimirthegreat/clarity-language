@@ -28,8 +28,6 @@ Nine published roots are the sakes you can name, and no other root takes the sak
 
 **Compare with:** `zunal` is a *ballot*, and `gunal` is *ballot-like*. With mid-word **`tha`** / **`thu`**, **`una`** is the *autonomy* sake.
 
-**Compare with:** *when* / *always* / *never* on `/h/` is a [restrictor](restrictors.md). This page names a **sake**.
-
 ### Which sake? {#which-sake}
 
 Each sake answers a different question about what pays off. Ask the question, then pick the row.
