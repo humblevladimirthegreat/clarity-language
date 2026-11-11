@@ -50,7 +50,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🤮,vomit,avamu,mind,takes-away,,revulsion,vomit shows revulsion,,,
 🤧,sneeze,uzemu,mind,takes-away,,infection,sneeze signals a cold; infection is the unobservable spread,,cough,
 🥵,hot,ohamu,mind,takes-away,,fever,a hot face is the body overheating from within,,,bars.md#intermediate-practice
-🥶,cold,ogomu,mind,takes-away,,,,,,
+🥶,cold,ogomu,mind,takes-away,,,,,,how-you-feel.md#beginner-practice
 🥴,woozy,awumu,mind,takes-away,,intoxication,woozy shows intoxication,,,
 🤯,mind-blown,amame,mind,one,,astonishment,a mindblown head bursts with astonishment,,,
 🤠,ranch,araha,place,holds,big,ruggedness,ranch work is rugged living,,,
@@ -148,7 +148,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🦾,prosthetic-arm,obobo,body,order,medium,augmentation,mechanical arm gives augmentation,,,
 🦿,prosthetic-leg,ubobo,body,order,medium,,,,,
 🦵,leg,ulobo,body,order,medium,,,,,
-🦶,foot,evobo,body,order,medium,foot-length,the unit was first measured off a human foot,,,
+🦶,foot,evobo,body,order,medium,foot-length,the unit was first measured off a human foot,,,how-you-feel.md#beginner-practice
 👂,ear,eba,body,holds,,hearsay,ear takes in what others say; hearsay is knowing by being told,v:hear,listen,
 🦻,hearing-aid,ehebe,body,one,small,,,,,
 👃,nose,onebe,body,one,small,scent,the nose follows a scent,v:smell,sensitive; sense,numbers.md#beginner-practice
@@ -333,7 +333,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🦅,eagle,egozu,creature,takes-away,medium,vision,eagle eye sees far,,sight,
 🦆,duck,adoza,creature,holds,medium,,,,,relations.md#beginner-practice
 🦢,swan,azozo,creature,order,medium,grace,swan glides with grace,,,
-🦉,owl,alozu,creature,takes-away,medium,quietude,owl hunts without sound; quietude is low-noise manner,,,
+🦉,owl,alozu,creature,takes-away,medium,quietude,owl hunts without sound; quietude is low-noise manner,,,how-you-feel.md#beginner-practice
 🦤,dodo,edoze,creature,one,medium,obsolescence,dodo is dead and gone,,,
 🪶,feather,uvebo,body,order,small,softness,a feather is light and gentle to touch; softness is a yielding feel,,,
 🦩,flamingo,ovozo,creature,order,medium,flamboyance,flamingo stands out flamboyantly,,,
@@ -590,7 +590,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🌇,sunset,uzuru,counting,takes-away,none,far-side,the sun sets on the far side of the horizon; the far side is the side away from where you stand,,,
 🌉,bridge,oho,place,order,,span,a bridge spans the gap; span is reaching across,,,locative-relations.md#intermediate-practice
 🚐,van,uvava,doing,holds,big,,a minibus is a van,,,
-🛣️,road,oraho,place,order,big,wide,a road is made broad enough for many; wide is broad across,,broad; extensive,
+🛣️,road,oraho,place,order,big,wide,a road is made broad enough for many; wide is broad across,,broad; extensive,how-you-feel.md#beginner-practice
 ♨️,springs,owaha,place,holds,big,rejuvenation,hot springs restore the body; rejuvenation restores energy,,,
 🎠,carousel,eva,doing,holds,,surroundings,carousel horses ride on all sides of the pole; surroundings are what lies on all sides,,,
 🛝,playground,eboha,place,holds,big,recreation,playground invites play; recreation is the unobservable leisure-kind,m.v:play,slide,
@@ -856,7 +856,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 💡,lightbulb,owe,tool,one,,candela,lightbulb sets luminous intensity; candela is the SI luminous-intensity unit,,,
 🔦,flashlight,avewo,tool,order,small,revelation,flashlight reveals what was dark; revelation is making known,,expose; flash,speech-manner.md#intermediate-practice
 🏮,lantern,olowo,tool,order,medium,guidance,lantern lights the path ahead; guidance is showing the way,,counsel,
-🪔,lamp,elowa,tool,holds,medium,,,,,
+🪔,lamp,elowa,tool,holds,medium,,,,,how-you-feel.md#beginner-practice
 📖,book,ana,title,holds,,knowledge,book holds knowledge,,know; literary,word-endings.md#beginner-practice
 📓,notebook,onona,title,holds,medium,,,,,
 📒,ledger,ena,title,holds,,,,,catalog,

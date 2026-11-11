@@ -186,6 +186,152 @@ Fear, worry, and hope are about something that has not happened yet. A sake word
 
 Without MAY, `thobathumum.` says the danger is real: *I am in danger, and I want to get away*. MAY keeps its [follow-up endings](knowing.md#follow-up-endings-may), so `thomal thobathumum.` adds that you will find out whether the danger is real.
 
+### Practice {#beginner-practice}
+
+Short drills for Beginner. Try each item before opening **Show answer**.
+
+**Setting:** a walk home
+
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *road* | `orahol` | 🛣️ |
+| *lamp* | `elowal` | 🪔 |
+| *foot* | `evobol` | 🦶 |
+| *cold* | `ogomul` | 🥶 |
+| *owl* | `alozul` | 🦉 |
+
+**Review:**
+
+| English | Ageben |
+|---------|--------|
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
+| *Ahelan* | `ahelan` |
+| *I* | `uwen` |
+| *rain* | `erulal` |
+| *walk* | `vowurol` |
+| *surprise* | `emel` |
+| *sake* | `udal` |
+| *relatedness* | `awel` |
+| *physical* | `obal` |
+| *beneficence* | `ewal` |
+| *autonomy* | `unal` |
+| *stimulus* | `goyom` |
+
+#### English → Ageben {#beginner-english-to-ageben}
+
+**1.** *My feet are cold.*
+
+::: details Show answer
+`zevobol gogomul.`
+
+z-foot | g-cold
+:::
+
+**2.** *My lamp keeps me safe, and I want to savor that.*
+
+::: details Show answer
+`zelowal gobathamam.`
+
+z-lamp | g-physical-met-any-term-STAYING-OPEN
+:::
+
+**3.** *I'm moved that Ahelan is walking, and I want to thank Ahelan.*
+
+::: details Show answer
+`zahelan vowurol thawethamem blahelan.`
+
+z-Ahelan | v-walk | [th-relatedness-met-any-term-AIMED-OPEN | bl-Ahelan]
+:::
+
+**4.** *The road takes away my say, and I want to take it up with Alazun.*
+
+::: details Show answer
+`zorahol wunathumem goyom blalazun.`
+
+z-road | [[w-autonomy-unmet-modifiable-AIMED-OPEN | g-stimulus] | bl-Alazun]
+:::
+
+**5.** *I may have cost Azozon something, and I want to make it up to Azozon.*
+
+::: details Show answer
+`thomam thewathumom blazozon.`
+
+th-MAY | [th-beneficence-unmet-modifiable-GIVING-OPEN | bl-Azozon]
+:::
+
+#### Ageben → English {#beginner-ageben-to-english}
+
+**1.** `zalozul thudathumum.`
+
+::: details Show answer
+z-owl | th-sake-unmet-modifiable-AWAY-OPEN
+
+*Something is off now that the owl is here, and I want to get away.*
+:::
+
+**2.** `zorahol wobathumum goyom.`
+
+::: details Show answer
+z-road | [w-physical-unmet-modifiable-AWAY-OPEN | g-stimulus]
+
+*The road puts me in danger, and I want to get away from it.*
+:::
+
+**3.** `thomam thobathamam.`
+
+::: details Show answer
+th-MAY | th-physical-met-any-term-STAYING-OPEN
+
+*I may be safe now, and I want to stay in that.*
+:::
+
+**4.** `zuwen gemel thahum blerulal.`
+
+::: details Show answer
+[z-speaker | g-surprise] | [th-because | bl-rain]
+
+*I am surprised. The rain caused it.*
+:::
+
+#### Pick one {#beginner-pick-one}
+
+**1.** *I feel connected, and I want to thank Azozon.* `thawethamem blazozon.` or `thawethamom blazozon.`
+
+::: details Show answer
+`thawethamem blazozon.`
+
+[th-relatedness-met-any-term-AIMED-OPEN | bl-Azozon]
+
+Thanking acts on someone, so the urge is `e`; `o` would be wanting to do something for Azozon in return.
+:::
+
+#### Fix it {#beginner-fix-it}
+
+**1.** *I may be in danger, and I want to take it up with Alazun.* <!-- lint: error -->`thobathumem blalazun.`
+
+::: details Show answer
+`thomam thobathumem blalazun.`
+
+th-MAY | [th-physical-unmet-modifiable-AIMED-OPEN | bl-Alazun]
+
+Without `thomam` the danger is real; MAY makes it something that may happen.
+:::
+
+#### What changes {#beginner-what-changes}
+
+**1.** `thudathumem blalazun.` / `thudathumum blalazun.`
+
+::: details Show answer
+[th-sake-unmet-modifiable-AIMED-OPEN | bl-Alazun]
+
+[th-sake-unmet-modifiable-AWAY-OPEN | bl-Alazun]
+
+Something is off either way. With `e` you want to take it up with Alazun; with `u` you want to get away from Alazun.
+:::
+
 ## See also
 
 - Picking the sake to name: [Sakes](sakes.md#which-sake)
