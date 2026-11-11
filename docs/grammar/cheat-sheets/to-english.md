@@ -160,7 +160,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `hevam` | locative around (figure on all sides of one landmark) | [Between, across, around](/locative-relations#locative-relations) | I |
 | `hewel` | likeness exactly like (manner match) | [Exactly like (hewel / gewel)](/exactly-like#exactly-like) | I |
 | `hewem` | likeness like (manner resemblance) | [Extra nouns (/b/)](/clause#extra-nouns) | B |
-| `hezem` | ALTHOUGH clause hinge (concession; NP despite) | [Because, although (hinges)](/dependents#hinges) | B |
+| `hezem` | WHEREAS clause hinge (contrast; no expectation) | [Because, although (hinges)](/dependents#hinges) | B |
 | `hobom` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `hodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](/can-and-cant#ability-fallback) | B |
 | `hoen` | join-relation equating or tying (adverb) | [Join-relations](/join-relations#join-relations) | I |
@@ -243,6 +243,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `theyul` | notional mood rehearsal follow-up (practicing a possible scene to prepare for action) | [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) | I |
 | `theyum` | notional mood default follow-up (imagining a scene without a further purpose) | [Notional (as-if framing)](/notional#notional-as-if-framing) | I |
 | `theyur` | notional mood suppose follow-up (toying with a possibility or assumption for now) | [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) | I |
+| `thezem` | ALTHOUGH clause hinge (concession; the speaker's expectation; NP despite) | [Because, although (hinges)](/dependents#hinges) | B |
 | `thogel` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
 | `thogem` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
 | `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
@@ -251,7 +252,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `thomam` | may mood (could be; default) | [MAY](/knowing#may) | B |
 | `thomar` | may mood who-knows follow-up (leave unsettled; may never know) | [Follow-up endings (MAY)](/knowing#follow-up-endings-may) | B |
 | `thovam` | SO-THAT clause hinge (the speaker's aim; intended outcome; NP for-goal) | [Because, although (hinges)](/dependents#hinges) | B |
-| `thubol` | pattern evidential with strong evidence (well-established pattern) | [Evidence strength](/evidentiality#evidence-strength) | I |
 <!-- /generated -->
 
 <PageBreak />
@@ -261,6 +261,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 <!-- generated: overlays pos=th skip=44 -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
+| `thubol` | pattern evidential with strong evidence (well-established pattern) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thubom` | pattern evidential (from trail of cases) | [Evidentiality](/evidentiality#evidentiality) | I |
 | `thubor` | pattern evidential with weak evidence (a few cases) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thugel` | live evidential with strong evidence (clear full view) | [Evidence strength](/evidentiality#evidence-strength) | I |
