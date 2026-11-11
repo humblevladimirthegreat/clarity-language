@@ -152,7 +152,7 @@ describe("editor data", () => {
   });
 
   it("fails on a command that presets an answer its flow lacks", () => {
-    const broken = sources.flowsJson.replace('"plan": { "kind": "planned" }', '"plan": { "kind": "hoped" }');
+    const broken = sources.flowsJson.replace(/("plan": \{\s*"kind": )"planned"/, '$1"hoped"');
     assert.notEqual(broken, sources.flowsJson);
     const result = buildEditorData({ ...sources, flowsJson: broken });
     assert.ok(result.problems.some((p) => /\/plan: `kind=hoped`/.test(p)), result.problems.join("\n"));

@@ -42,6 +42,40 @@ Because of role letters, a small fixed set of endings, and spelling that matches
 - **[Inspect](inspect.md):** paste a sentence and click or highlight a word to see its role, its root's sense, and how the clause fits together.
 - **Pronunciation:** the same page shows an **IPA:** line, which writes out the text as spoken in the International Phonetic Alphabet (a standard notation for speech sounds). Since each letter has one sound and syllables come in only a few shapes, pronunciation follows directly from the spelling.
 
+## Features that show the design {#worth-a-look}
+
+Each row below names something English leaves open and links to the section where Ageben settles it. The pages come from all three levels and build on earlier ones, so a term may be new when you land there; follow its link back. To learn the language itself, use the reading order in [How to learn](#how-to-learn).
+
+### Every sentence has one reading {#one-reading}
+
+Ageben settles in the writing several things English leaves to context.
+
+| Feature | What English leaves open | Level |
+|---------|--------------------------|-------|
+| [Where a list ends](/list-structure#fence-nesting) | *Tea or coffee and water* leaves open which items go together. Every Ageben list ends with its own join word (the word for *and* or *or*), so a list inside a list is written out. | Intermediate |
+| [What a describing word covers](/list-structure#shared-after-the-join) | In *old men and women*, are the women old? Where an Ageben describing word sits says whether it covers the whole list or one item. | Intermediate |
+| [How much *possibly* covers](/scope-islands#scope-islands) | *You possibly saw a red dog* leaves open whether the seeing is in doubt or only what you saw. Ageben puts braces around exactly the part *possibly* covers. | Intermediate |
+| [Whether the ends count](/ranges) | *Between 3 and 5* leaves open whether 3 and 5 count. Ageben has a separate word for *through*, *up to but not including*, and *strictly between*. | Intermediate |
+| [Whose left](/viewpoint#viewpoint-laterals) | *On the left* leaves open whose left. Ageben says whether it is a fixed compass direction or one person's side, and whose. | Intermediate |
+
+### A few patterns do many jobs {#few-patterns}
+
+Ageben gets many meanings out of a few patterns, so forms English learns one by one fall out of patterns you already know.
+
+| Feature | What English leaves open | Level |
+|---------|--------------------------|-------|
+| [One set of vowels for kinds of sentence](/stand-in-vowels#stand-in) | English uses unrelated words for *that …*, *whether …*, and *to …*. Ageben builds them from the same four vowels that mark a statement, a question, an instruction, and something to avoid. | Intermediate |
+| [Rough amounts](/digitless-exponents) | English learns *thousands*, *millions*, and *a few* as separate words. In Ageben they are ordinary number words with digits left out: keep only the power of ten and the word means *in the thousands*; leave out every digit and it means *more than one*, or *a few*. | Intermediate |
+| [Infinity, zero, and *a gazillion*](/special-values) | English learns *infinity*, *absolutely zero*, *last place*, and *a gazillion* as separate words. In Ageben each is a number word with its power of ten left empty, and what comes before the empty slot says which one. | Advanced |
+
+### Built to be sung {#built-to-be-sung}
+
+Ageben word shapes are chosen so a melody can carry them.
+
+| Feature | What English leaves open | Level |
+|---------|--------------------------|-------|
+| [Word shapes for singing](/singability#singability-constraints) | English *strengths* ends in a pile of consonants, and *record* changes meaning when the stress moves. Ageben words mostly alternate consonant and vowel, and stress always falls on the first syllable, which is meant to let a melody place any word freely. | Advanced |
+
 ## How to learn from these docs
 <a id="how-to-learn"></a>
 
