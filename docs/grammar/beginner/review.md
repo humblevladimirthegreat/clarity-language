@@ -58,6 +58,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *listener* | `awan` |
 | *walk* | `vowurol` |
 | *departure* | `vudurul` |
+| *dance* | `vunurol` |
+| *competence* | `uwal` |
 
 #### English → Ageben {#beginner-english-to-ageben}
 
@@ -419,6 +421,18 @@ z-Azozon | v-departure | [th-because.fault | bl-that-clause] | z-Alazun | v-tell
 **-l** says the speaking broke a rule; **-m** is a plain cause, with no fault claimed.
 
 **Rule:** [Fault](fault.md#fault)
+:::
+
+**17.** *I'm proud that I'm dancing, and I want to savor it.* `zuwen vunurol thuwathamam.` or `zuwen vunurol thuwathamem.`
+
+::: details Show answer
+`zuwen vunurol thuwathamam.`
+
+z-speaker | v-dance | th-competence-met-any-term-STAYING-OPEN
+
+Savoring stays in the feeling, so the urge is **`a`**; **`e`** would want to act on someone.
+
+**Rule:** [The four urges](how-you-feel.md#urges)
 :::
 
 #### Fix it {#beginner-fix-it}

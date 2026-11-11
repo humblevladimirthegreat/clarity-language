@@ -1,6 +1,6 @@
 # Feeling urges
 
-**Status:** partially implemented. Done and committed: the parser's gloss labels, the regenerated glosses, and the Beginner page `how-you-feel.md` (2026-11-11); **Phase 1** (2026-11-11): the parser reads a `bl-` after `a`, `ae`, or `ue` as whose stake, and `feelings.md`, `say-reasons.md`, `terminology.md`, and the feeling examples on four more pages teach the new readings. Two phases remain, each run in a new main session; **Phase 2 is next**. `how-you-feel.md` has no Practice yet, so its drill allowlist row is **generate** until Phase 2. The second `bl-` after a feeling word is a **closed** row in `unassigned-reserved.md`, citing the *Feeling words* entry in `design-decisions.md` (orchestrator, 2026-11-11: the decision has a reason, so the row cannot be open). User decisions, all 2026-11-11:
+**Status:** partially implemented. Done and committed: the parser's gloss labels, the regenerated glosses, and the Beginner page `how-you-feel.md` (2026-11-11); **Phase 1** (2026-11-11): the parser reads a `bl-` after `a`, `ae`, or `ue` as whose stake, and `feelings.md`, `say-reasons.md`, `terminology.md`, and the feeling examples on four more pages teach the new readings; **Phase 2** (2026-11-11): the hand rows in `cheat-sheets/vowels.md` and `cheat-sheets/why-allowed.md` (whose `#locus` and `#motion` ids are now `#urge` and `#duration`), Practice on `how-you-feel.md` (allowlist row **exists**) and a new Practice on `feelings.md`, and the level-review items. One phase remains, run in a new main session; **Phase 3 is next**. The second `bl-` after a feeling word is a **closed** row in `unassigned-reserved.md`, citing the *Feeling words* entry in `design-decisions.md` (orchestrator, 2026-11-11: the decision has a reason, so the row cannot be open). User decisions, all 2026-11-11:
 
 - `o` is GIVING; VICARIOUS is dropped, and someone else's stake is said with whose stake.
 - `ae` is one HELD urge, covering frozen and held in.
@@ -334,12 +334,8 @@ No spelling changes, so this is not a retie. A locus vowel in an example changes
 
 **Stage pages**
 
-- `beginner/how-you-feel.md`: Practice, then its drill allowlist row confirmed (Setting, Introduces, notes) and set to **exists**; an item in the Beginner level review. Two allowlist notes are stale: *Not emotion compose* on the `thanks-and-sorry.md` row, and *feeling with no object* under Introduces on the `feelings.md` row.
-- [feelings.md](../../grammar/intermediate/feelings.md): new Practice. It must exercise whose stake (`reading.feelingStake`, `#feeling-whose-stake`). Stale items in the old Practice: E→A 1 (*waves of resentment*, `zahuyal wawethumer goyom`), E→A 3 (*I'm anxious* = `thuwathuruer.`, which now needs MAY), A→E 1 (`zahuyal wawethumel goyom blalazun.` as *holding it in*; it is SETTLED), A→E 2 and Fix it 1 (`thawethamar` as *moved*, missing STAYING and FLEETING).
-- Examples still on the old readings: `claritish/feelings.md` 13, `cheat-sheets/why-allowed.md` 10 (hand rows), `claritish/cheat-sheet.md` 1.
+- Examples still on the old readings: `claritish/feelings.md` 13, `claritish/cheat-sheet.md` 1.
 - [purpose.md](../../grammar/purpose.md#emotions-as-composition): the three parts become need, urge, and duration; the Claritish link names the first lesson.
-- [cheat-sheets/vowels.md](../../grammar/cheat-sheets/vowels.md): the feeling rows in `#place` (now stage B) and `#extra-noun-stacks`, and *feeling loci* in the vowel tree. Generated blocks through `npm run cheat-sheet-blocks -- --write`.
-- `cheat-sheets/why-allowed.md`: its `## Feelings` section (`#locus`, `#motion`, and the example rows) is hand-written, not generated, and still teaches the old readings. Its example rows no longer match `feelings.md#emotion-compose`, and five forms in the opted-in table under `feelings.md#feeling-suggests` are missing from it: `zezuyol thomam wuwathurur goyom`, `thomam thuwathuruer`, `zobewom guwathamoer`, `zonal wawethumel goyom blalazun`, `zonal wawethumam goyom blazozon`. Its three *feeling with no object* rows already point at the Beginner page.
 
 **Claritish**
 
@@ -355,9 +351,9 @@ No spelling changes, so this is not a retie. A locus vowel in an example changes
 
 ## Implementation plan
 
-Two phases remain. Each phase is one new main session, which is that phase's orchestrator: it runs the phase's units through subagents, one fresh subagent per unit, in the order given, and stops when the phase ends. It does not start the next phase.
+One phase remains. It is one new main session, which is the phase's orchestrator: it runs the phase's units through subagents, one fresh subagent per unit, in the order given.
 
-The parser's gloss labels, the regenerated glosses, the Beginner page, and Phase 1 are done and are not in this plan.
+The parser's gloss labels, the regenerated glosses, the Beginner page, Phase 1, and Phase 2 are done and are not in this plan.
 
 **Every phase starts** the same way:
 
@@ -376,23 +372,6 @@ If the user says to stop partway through a phase, the orchestrator consolidates 
 **Between units**, in every phase: each unit ends on `npm run verify -- --allow-generate`, which prints only errors new since the phase's baseline. Run `npm run grammar-check` only if `sentence-parser.ts` changed.
 
 **Commits**, in every phase: each message starts `feeling-urges <unit>` and ends `[skip-cd]` and the co-author line. A tool's output is committed alone, naming the command.
-
-### Phase 2: Cheat sheets and practice
-
-**Ends with** a clean build and test: the cheat sheets, the Practice sections, and the level reviews match the two stage pages.
-
-| Unit | Items | Agent | `model` | `effort` | May edit |
-|------|-------|-------|---------|----------|----------|
-| 2A | Cheat sheet hand rows: in `cheat-sheets/vowels.md`, the feeling rows in `#place` (now stage B) and `#extra-noun-stacks`, and *feeling loci* in the vowel tree; the `## Feelings` section of `cheat-sheets/why-allowed.md` | `proposal-worker` | `opus` | `high` | those two pages |
-| 2B | `npm run cheat-sheet-blocks -- --write` | orchestrator | — | — | generated blocks only |
-| 2C | Practice on `how-you-feel.md`; its allowlist row | `checkpoint-writer` | `opus` | `high` | that Practice section, the drill allowlist |
-| 2D | Practice on `feelings.md` and on any page Phase 1 peeled from it; their allowlist rows and the two stale notes | `checkpoint-writer` | `opus` | `high` | those Practice sections, the drill allowlist |
-| 2E | Level reviews: one new item in `review.md`; re-check the feelings items in `review-intermediate.md` | `checkpoint-writer` | `opus` | `high` | the two review pages |
-
-- **2C before 2D, each with a fresh writer.** The writer for `how-you-feel.md` must not have read the new sections of `feelings.md`. The orchestrator's pack (`tmp/checkpoint-pack/feeling-urges.md`) names the sittings in path order. The allowlist takes one writer at a time.
-- **Open at the start:** the errors Phase 1's end gate left: the missing Practice on `how-you-feel.md` (a **generate** row); cheat sheet errors in `cheat-sheets/why-allowed.md` (rows no longer in `#emotion-compose`, five forms from `feelings.md#feeling-suggests` missing); drill coverage of `reading.feelingStake` in `feelings.md#intermediate-practice`.
-- **End gate:** a clean `npm run build` and `npm test`, with nothing left on a **generate** row.
-- **Commits:** five. 2A; 2B (tool output alone); 2C; 2D; 2E with the consolidated proposal.
 
 ### Phase 3: Claritish, journal editor, and audit
 

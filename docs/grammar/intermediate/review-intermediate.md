@@ -56,6 +56,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *topic* | `alen` |
 | *kneel* | `vanuvel` |
 | *relatedness* | `awel` |
+| *competence* | `uwal` |
 | *PATTERN* | `thubom` |
 | *hope* | `thuwuyom` |
 | *want-unstated* | `thalom` |
@@ -519,7 +520,19 @@ z-Azozon | th-hope | v-walk
 **Rule:** [Hopefully and other attitudes](feelings.md#speaker-attitude)
 :::
 
-**18.** *Alazun fought, it turns out.* `zalazun themem vuvuvul.` or `zalazun themel vuvuvul.`
+**18.** *My knife makes me feel capable, and I want to savor it; the feeling has settled in.* `zanewul guwathamal.` or `zanewul guwathamar.`
+
+::: details Show answer
+`zanewul guwathamal.`
+
+z-knife | g-competence-met-any-term-STAYING-SETTLED
+
+**-l** says the feeling has settled in; **-r** would be a flash that will pass.
+
+**Rule:** [How long the feeling lasts](feelings.md#feeling-duration)
+:::
+
+**19.** *Alazun fought, it turns out.* `zalazun themem vuvuvul.` or `zalazun themel vuvuvul.`
 
 ::: details Show answer
 `zalazun themem vuvuvul.`
@@ -531,7 +544,7 @@ z-Alazun | th-MIRATIVE | v-fight
 **Rule:** [Mirative](mirative.md#mirative)
 :::
 
-**19.** *Alazun walks as a guard.* `zalazun vowurol hwozagayul.` or `zalazun gwozagayul vowurol.`
+**20.** *Alazun walks as a guard.* `zalazun vowurol hwozagayul.` or `zalazun gwozagayul vowurol.`
 
 ::: details Show answer
 `zalazun vowurol hwozagayul.`
@@ -543,7 +556,7 @@ The role the act is done in sits on `/h/`; `/ɡ/` on Alazun would say Alazun **i
 **Rule:** [Acting as](role-parts.md#acting-as)
 :::
 
-**20.** *I have long wanted Azozon to walk.* `zazozon thalol vowurol.` or `zazozon thalom vowurol.`
+**21.** *I have long wanted Azozon to walk.* `zazozon thalol vowurol.` or `zazozon thalom vowurol.`
 
 ::: details Show answer
 `zazozon thalol vowurol.`
@@ -555,7 +568,7 @@ z-Azozon | th-WANT-lasting | v-walk
 **Rule:** [Want](want-and-decide.md#want)
 :::
 
-**21.** *Azozon saw what was possibly a sandwich.* `zazozon { hogugem dedal } vayebel.` or `zazozon hogugem dedal vayebel.`
+**22.** *Azozon saw what was possibly a sandwich.* `zazozon { hogugem dedal } vayebel.` or `zazozon hogugem dedal vayebel.`
 
 ::: details Show answer
 `zazozon { hogugem dedal } vayebel.`
@@ -567,7 +580,7 @@ Inside braces, **`hogugem`** reaches only that chunk.
 **Rule:** [Scope islands](scope-islands.md#scope-islands)
 :::
 
-**22.** *Alazun walks exactly like a duck.* `zalazun hewel bladozal vowurol.` or `zalazun hewem bladozal vowurol.`
+**23.** *Alazun walks exactly like a duck.* `zalazun hewel bladozal vowurol.` or `zalazun hewem bladozal vowurol.`
 
 ::: details Show answer
 `zalazun hewel bladozal vowurol.`
@@ -579,7 +592,7 @@ z-Alazun | [h-exactly-like | bl-duck] | v-walk
 **Rule:** [Exactly like](exactly-like.md#exactly-like)
 :::
 
-**23.** *Alazun sits around a sandwich.* `zalazun vehohel hevam bledal.` or `zalazun gevam bledal vehohel.`
+**24.** *Alazun sits around a sandwich.* `zalazun vehohel hevam bledal.` or `zalazun gevam bledal vehohel.`
 
 ::: details Show answer
 `zalazun vehohel hevam bledal.`
@@ -591,7 +604,7 @@ z-Alazun | v-sit | [h-around | bl-sandwich]
 **Rule:** [Locative relations](locative-relations.md#locative-relations)
 :::
 
-**24.** *Azozon adds a sandwich.* `zazozon dedal van.` or `zazozon dedal ven.`
+**25.** *Azozon adds a sandwich.* `zazozon dedal van.` or `zazozon dedal ven.`
 
 ::: details Show answer
 `zazozon dedal van.`
@@ -603,7 +616,7 @@ z-Azozon | d-sandwich | v-includes
 **Rule:** [List verbs](list-verbs.md#list-verbs)
 :::
 
-**25.** *Alazun walks with Ahelan.* `zalazun han blahelan vowurol.` or `zalazun hun blahelan vowurol.`
+**26.** *Alazun walks with Ahelan.* `zalazun han blahelan vowurol.` or `zalazun hun blahelan vowurol.`
 
 ::: details Show answer
 `zalazun han blahelan vowurol.`
@@ -615,7 +628,7 @@ z-Alazun | [h-including | bl-Ahelan] | v-walk
 **Rule:** [Join-relations](join-relations.md#join-relations)
 :::
 
-**26.** *Alazun is French.* `zalazun gavranzam.` or `zalazun gavranzan.`
+**27.** *Alazun is French.* `zalazun gavranzam.` or `zalazun gavranzan.`
 
 ::: details Show answer
 `zalazun gavranzam.`
@@ -627,7 +640,7 @@ Belonging takes **-m**; **-n** is the named country.
 **Rule:** [Place-name roots](place-name-roots.md#place-name-roots)
 :::
 
-**27.** *Who cooks?* (nobody does) `yal yel zar vuguyol.` or `yel yal ? zar vuguyol.`
+**28.** *Who cooks?* (nobody does) `yal yel zar vuguyol.` or `yel yal ? zar vuguyol.`
 
 ::: details Show answer
 `yal yel zar vuguyol.`
@@ -639,7 +652,7 @@ The statement word first makes it rhetorical; **`yel yal`** is a quiz that wants
 **Rule:** [Rhetorical question](more-turn-words.md#rhetorical)
 :::
 
-**28.** *Azozon makes Alazun sing.* `zalazun vozuyel thewom blazozon.` or `zazozon vozuyel thewom blalazun.`
+**29.** *Azozon makes Alazun sing.* `zalazun vozuyel thewom blazozon.` or `zazozon vozuyel thewom blalazun.`
 
 ::: details Show answer
 `zalazun vozuyel thewom blazozon.`
@@ -651,7 +664,7 @@ The singer stays the subject; the one who makes it happen follows **`thewom`**.
 **Rule:** [CAUSE](cause.md#cause)
 :::
 
-**29.** *Ahelan tells Alazun not to climb.* `zahelan vezuyol balazun durl voguvol.` or `zahelan vezuyol balazun dorl voguvol.`
+**30.** *Ahelan tells Alazun not to climb.* `zahelan vezuyol balazun durl voguvol.` or `zahelan vezuyol balazun dorl voguvol.`
 
 ::: details Show answer
 `zahelan vezuyol balazun durl voguvol.`
@@ -663,7 +676,7 @@ z-Ahelan | v-tell | b-Alazun | d-lest-clause | v-climb
 **Rule:** [Stand-in vowels](stand-in-vowels.md#stand-in)
 :::
 
-**30.** *To put it one way, Alazun cries.* `om zalazun vagamul.` or `ol zalazun vagamul.`
+**31.** *To put it one way, Alazun cries.* `om zalazun vagamul.` or `ol zalazun vagamul.`
 
 ::: details Show answer
 `om zalazun vagamul.`
@@ -675,7 +688,7 @@ Open **-m** offers one of several ways to say it; **`ol`** is *in other words*, 
 **Rule:** [Discourse](discourse-hooks.md#discourse)
 :::
 
-**31.** *a cookie bucket* (one bucket) `zugedexobowal.` or `zobowaxugedel.`
+**32.** *a cookie bucket* (one bucket) `zugedexobowal.` or `zobowaxugedel.`
 
 ::: details Show answer
 `zugedexobowal.`
@@ -687,7 +700,7 @@ The last root is the thing; the root before **`x`** says which kind.
 **Rule:** [Left and right of `x`](compound-families.md#families-by-shape)
 :::
 
-**32.** *Azozon walks for the third time.* `zazozon vowurol hrogel.` or `zazozon vowurol hragel.`
+**33.** *Azozon walks for the third time.* `zazozon vowurol hrogel.` or `zazozon vowurol hragel.`
 
 ::: details Show answer
 `zazozon vowurol hrogel.`
@@ -699,7 +712,7 @@ A rank on `/h/` (**`ro`**) counts which time the event happens; **`ra`** would b
 **Rule:** [Number as adverb (by marker)](number-roles.md#number-as-adverb-by-marker)
 :::
 
-**33.** *Alazun walks out of a catastrophe.* `zalazun vowurol ual babowum.` or `zalazun vowurol ual babowul.`
+**34.** *Alazun walks out of a catastrophe.* `zalazun vowurol ual babowum.` or `zalazun vowurol ual babowul.`
 
 ::: details Show answer
 `zalazun vowurol ual babowum.`
@@ -711,7 +724,7 @@ The landmark's **-m** picks the abstract sense; **-l** would be a real bomb.
 **Rule:** [Abstract landmarks](abstract-landmarks.md#abstract-landmarks)
 :::
 
-**34.** *Frankly, Azozon cooks.* `thavewom zazozon vuguyol.` or `zazozon vuguyol havewom.`
+**35.** *Frankly, Azozon cooks.* `thavewom zazozon vuguyol.` or `zazozon vuguyol havewom.`
 
 ::: details Show answer
 `thavewom zazozon vuguyol.`
@@ -723,7 +736,7 @@ th-revelation | z-Azozon | v-cook
 **Rule:** [Speech manner](speech-manner.md#speech-manner)
 :::
 
-**35.** *There are enough cookies.* `zugedelx thudatham zoel gral.` or `zugedelx thudatham zol gral.`
+**36.** *There are enough cookies.* `zugedelx thudatham zoel gral.` or `zugedelx thudatham zol gral.`
 
 ::: details Show answer
 `zugedelx thudatham zoel gral.`
@@ -735,7 +748,7 @@ th-revelation | z-Azozon | v-cook
 **Rule:** [Enough and too](bars.md#sake-bars)
 :::
 
-**36.** *Ahelan swims very slowly.* `zahelan welazem huzezam vazuvol.` or `zahelan welazem guzezam vazuvol.`
+**37.** *Ahelan swims very slowly.* `zahelan welazem huzezam vazuvol.` or `zahelan welazem guzezam vazuvol.`
 
 ::: details Show answer
 `zahelan welazem huzezam vazuvol.`
@@ -747,7 +760,7 @@ A degree word works before an adverb too, so `welazem` grades `huzezam`; with `g
 **Rule:** [How much: degree words](very-and-slightly.md#degree-w)
 :::
 
-**37.** *Azozon said, “Don't climb.”* `zazozon d[yul voguvol] vezuyol.` or `yul zazozon d[voguvol] vezuyol.`
+**38.** *Azozon said, “Don't climb.”* `zazozon d[yul voguvol] vezuyol.` or `yul zazozon d[voguvol] vezuyol.`
 
 ::: details Show answer
 `zazozon d[yul voguvol] vezuyol.`
@@ -759,7 +772,7 @@ The ban belongs to the quoted words, so `yul` goes inside the cite; in front, it
 **Rule:** [Act words in a quote](quote-contents.md#quote-acts)
 :::
 
-**38.** *Azozon climbs first, then Ahelan.* (a turn order) `zazozon zahelan zaol voguvol.` or `zazozon zahelan zol voguvol.`
+**39.** *Azozon climbs first, then Ahelan.* (a turn order) `zazozon zahelan zaol voguvol.` or `zazozon zahelan zol voguvol.`
 
 ::: details Show answer
 `zazozon zahelan zaol voguvol.`
