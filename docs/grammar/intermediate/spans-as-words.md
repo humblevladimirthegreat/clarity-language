@@ -217,7 +217,7 @@ z-Ahelan | d-CITE.about[z-Azozon | v-attest] | v-tell
 **4.** `zazozon d[zalazun vulamul] vugel.`
 
 ::: details Show answer
-z-Azozon | d-CITE[z-Alazun | v-lie] | v-attest
+z-Azozon | d-CITE[z-Alazun | v-misstate] | v-attest
 
 *Azozon attests, “Alazun lies.”*
 :::

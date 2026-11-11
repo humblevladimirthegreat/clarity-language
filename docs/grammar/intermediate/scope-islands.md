@@ -124,7 +124,7 @@ z-Azozon | SCOPE[h-possibility | d-newspaper] | v-see
 **1.** `zahelan !{ hogugem dulamul } vayebel.`
 
 ::: details Show answer
-z-Ahelan | !SCOPE[h-possibility | d-lie] | v-see
+z-Ahelan | !SCOPE[h-possibility | d-untruth] | v-see
 
 *Ahelan saw what was possibly a lie!*
 :::
@@ -152,7 +152,7 @@ z-Ahelan | [d-newspaper | [g-red | SCOPE[g-small | g-not] | g-and]] | v-see
 ::: details Show answer
 `zazozon { hogugem dulamul } vayebel.`
 
-z-Azozon | SCOPE[h-possibility | d-lie] | v-see
+z-Azozon | SCOPE[h-possibility | d-untruth] | v-see
 
 Inside braces, **`hogugem`** reaches only that chunk; outside, it frames the whole seeing.
 :::

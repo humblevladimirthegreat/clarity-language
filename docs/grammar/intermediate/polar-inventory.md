@@ -280,7 +280,7 @@ y-decline-for-now
 **3.** `zazozon vulamul. yel yuol.`
 
 ::: details Show answer
-z-Azozon | v-lie . y-question | y-no
+z-Azozon | v-misstate . y-question | y-no
 
 *Azozon lied, or am I wrong?*
 :::

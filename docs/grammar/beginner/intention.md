@@ -114,7 +114,7 @@ z-speaker | th-plan-atlas | v-tell | b-Alazun
 ::: details Show answer
 `zuwen thagor vulamul.`
 
-z-speaker | th-plan-sketch | v-lie
+z-speaker | th-plan-sketch | v-misstate
 :::
 
 **5.** *I plan for Azozon to write.*

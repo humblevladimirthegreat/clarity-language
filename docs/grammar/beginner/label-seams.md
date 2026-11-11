@@ -40,7 +40,7 @@ To say **when** that claim counts (*only at school*, *always except when it rain
 
 > `zazozon vulamuthul.`
 >
-> z-Azozon | v-lie-th-episode
+> z-Azozon | v-misstate-th-episode
 >
 > "Azozon lied this once."
 
@@ -48,7 +48,7 @@ To say **when** that claim counts (*only at school*, *always except when it rain
 
 > `zazozon vulamuthol.`
 >
-> z-Azozon | v-lie-th-role
+> z-Azozon | v-misstate-th-role
 >
 > "Azozon lies as their craft."
 
@@ -68,7 +68,7 @@ On a verb, **`tho`** is that act as their practice, not one outing.
 
 > `zazozon vulamuthel blalazun.`
 >
-> z-Azozon | [v-lie-th-pair | bl-Alazun]
+> z-Azozon | [v-misstate-th-pair | bl-Alazun]
 >
 > "With Alazun, Azozon lies." (in that relationship)
 
@@ -140,7 +140,7 @@ The four reach vowels also combine in pairs, the same pairs that [joins](joins.m
 
 > `zazozon vulamuthual.`
 >
-> z-Azozon | v-lie-th-except-episode
+> z-Azozon | v-misstate-th-except-episode
 >
 > "Azozon is a lying type, except this time."
 
@@ -176,13 +176,13 @@ The four reach vowels also combine in pairs, the same pairs that [joins](joins.m
 
 > `zazozon vulamuthaol.`
 >
-> z-Azozon | v-lie-th-using
+> z-Azozon | v-misstate-th-using
 >
 > "Azozon is using lying as a tool."
 
 > `zalazun vulamuthoel.`
 >
-> z-Alazun | v-lie-th-toward-role
+> z-Alazun | v-misstate-th-toward-role
 >
 > "Alazun is becoming a liar."
 
@@ -243,7 +243,7 @@ z-Azozon | [g-pair-agent-teach | bl-Alazun]
 ::: details Show answer
 `zahelan vulamuthael.`
 
-z-Ahelan | v-lie-th-situation
+z-Ahelan | v-misstate-th-situation
 :::
 
 #### Ageben → English {#beginner-ageben-to-english}
@@ -259,7 +259,7 @@ z-Azozon | g-anxious-th-type
 **2.** `zazozon vulamuthel blalazun.`
 
 ::: details Show answer
-z-Azozon | [v-lie-th-pair | bl-Alazun]
+z-Azozon | [v-misstate-th-pair | bl-Alazun]
 
 *With Alazun, Azozon lies.*
 :::

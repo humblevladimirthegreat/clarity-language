@@ -323,7 +323,7 @@ y-question | ?z-wh | d-umbrella | v-see
 ::: details Show answer
 `yem zalazun vulamul.`
 
-y-soft-question | z-Alazun | v-lie
+y-soft-question | z-Alazun | v-misstate
 :::
 
 **4.** *Who finds what?*
