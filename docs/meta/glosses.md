@@ -168,7 +168,7 @@ The sentence drops these. A [note](#note-required) carries one only when it is r
 | Join packaging (open `zam` vs closed `zal`, exclusive `del`, fence shape) | Plain *and / or*; no “exactly ono”, no open-list footnotes |
 | Sense-picking **-l / -m / -n** | Never (already omitted from morph when they only pick sense) |
 | Values **time horizon / standing / invitation / changeability** | Keep only what changes English (*can't* vs unmet sake as content); drop “(motive, soft standing)”, … Prescription **`the`**: loose free keeps the warrant when it is the point (*invited* / *unasked* / *worth a try*) — not *must* / *should* / *could* as a force grade |
-| Emotion compose (locus / motion tail) | Ordinary emotion English (*we're glad*), not “pleasure met · internal” |
+| Emotion compose (urge / duration tail) | Ordinary emotion English (*we're glad*), not “pleasure met · staying · open” |
 | Evidential **tags** | Fold in only if English wants it (*I hear…*, *usually*); else omit, or [note](#note-required) when required |
 | Span fence labels | Quotes / parentheses; no “Cite:” / “aside:” |
 | Role / IDENTITY scaffolding | *the speaker* / *is* — not “agent of speech” / “identical to” |

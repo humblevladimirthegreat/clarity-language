@@ -286,7 +286,7 @@ Many roots have an abstract sense beside a concrete one, so an idea you cannot s
 - [A pattern as paw-prints](/usually-vs-must#generalization) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
 - [*As if* as theater](/notional#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene, and what really happened stays offstage.
 - [Mechanism as gears](/cause#cause) ([a wish as a law](#trap-wish-as-law)): you say how a result comes about, like gears meshing, not only that it follows.
-- [Affect as water](/feelings#emotion-compose) ([a feeling as a label](#trap-feeling)): a feeling surges, flows, or stands still like water, and sits somewhere or points at something.
+- [Feeling as a pull](/how-you-feel#urges) ([a feeling as a label](#trap-feeling)): the urge is the vowel of a little place word (*in*, *at*, *for*, *from*), so a feeling moves you in a direction, and you can notice the pull before you follow it.
 
 Each picture already carries a warning against its trap. The intent is that it helps you reach for the healthier frame in the moment and remember it later.
 

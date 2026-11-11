@@ -18,7 +18,7 @@ export type SheetRef = {
   cell?: string;
   /** A prose line in the section, by its opening words. */
   line?: string;
-  /** With `line`: one entry of a line that lists endings (`**-l** static, **-m** flowing`), by its ending (`-l`). */
+  /** With `line`: one entry of a line that lists endings (`**-l** settled in, **-m** open`), by its ending (`-l`). */
   item?: string;
   /** What to read: the cell's first form (default), its English, the row label, the header's English, or the header's ending letter. */
   take?: "span" | "english" | "row" | "col" | "ending";
@@ -156,7 +156,7 @@ function sheetLine(sheet: Sheet, section: string, opening: string): string {
   return lines[0]!;
 }
 
-/** An entry of a line that lists endings: `-m` in `Motion ending: **-l** static, **-m** flowing.` → `m` or `flowing`. */
+/** An entry of a line that lists endings: `-m` in `How long it lasts: **-l** settled in, **-m** open.` → `m` or `open`. */
 function lineItem(line: string, item: string, take: NonNullable<SheetRef["take"]>, where: string): string {
   const entries = [...line.matchAll(/\*\*-([a-z])\*\*\s*([^,.;]+)/g)].map((m) => ({ ending: m[1]!, english: m[2]!.trim() }));
   const entry = entries.find((e) => `-${e.ending}` === item);

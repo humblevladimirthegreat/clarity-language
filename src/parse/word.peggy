@@ -735,7 +735,7 @@ SeamVowel
   = "ao" / "ae" / "oe" / "ua" / "ue" / "uo" / [aeou]
 
 // Sakes: sake root + `th` + stance vowel (sakes.md); optional emotion
-// tail = horizon letter + locus hook vowel(s), then the motion ending (feelings.md#emotion-compose).
+// tail = horizon letter + urge hook vowel(s) (field `locus`), then the duration ending (how-you-feel.md#feeling-word).
 // On a non-sake host the tailed shape is a viewpoint lateral (classify.ts).
 ValueCompound
   = host:CompoundHost "th" stanceV:SeamVowel tail:(h:[lmr] l:("ao" / "ae" / "oe" / "ua" / "uo" / "ue" / [aeou]) { return [h, l]; })? ending:Ending plural:PluralSuffix? WordEnd {

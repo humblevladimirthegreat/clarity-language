@@ -345,7 +345,7 @@ Source: [clause.md](/clause)
 
 Source: [speech-moves.md](/tone-marks#tone-marks), [intention.md](/can-and-cant#ability)
 
-- **open:** stacked vowels after ability **x** (`xua`, …) and after sake **th** as a second stance (`guwathaol`). Not guessable (*can again*? *it depends*?): *it depends* is MAY or a sentence (polar `oe` is *decline to answer*), and *can again* is `xa` plus a sentence. Label reach uses those stacks ([predication](/label-seams#reach-stacks)). Sake locus stacks still come after the horizon letter (`guwathamel`). The parser rejects a stacked sake stance and stacked ability.
+- **open:** stacked vowels after ability **x** (`xua`, …) and after sake **th** as a second stance (`guwathaol`). Not guessable (*can again*? *it depends*?): *it depends* is MAY or a sentence (polar `oe` is *decline to answer*), and *can again* is `xa` plus a sentence. Label reach uses those stacks ([predication](/label-seams#reach-stacks)). Stacked feeling urges still come after the horizon letter (`guwathamel`). The parser rejects a stacked sake stance and stacked ability.
 - **open:** a new tone mark (whisper, sarcasm, …). No voice job is left: `;` `%` `?` already cover quiet, sarcasm and hesitation.
 - **closed (D-23):** `~` as a tone mark, and a third copy of a mark (`!!!`).
 

@@ -209,7 +209,7 @@ function rebuildX(
 
 /**
  * Swap each moved root in place, in order, so everything else in the word (role / stance /
- * locus vowels, emotion horizon, landmark `o`, number stem, ending, resume sense) stays exactly as written.
+ * urge (`locus`) vowels, emotion horizon, landmark `o`, number stem, ending, resume sense) stays exactly as written.
  */
 function spliceRoots(word: MorphWord, oldRoots: string[], newRoots: string[], from = 0): string | null {
   const prefix = word.raw.slice(0, Math.max(from, posPrefix(word).length));

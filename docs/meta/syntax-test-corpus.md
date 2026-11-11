@@ -55,7 +55,7 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 | 26 | Go away! | `yol vavobolum.` | y-command \| v-go-recede | covered |
 | 27 | Let's go! | `yom zayan vavobol.` | y-request \| z-interlocutors \| v-go | covered |
 | 28 | You should go. | `zawan vavobol thudathem.` | z-listener \| v-go \| th-sake-ought-unasked | covered |
-| 29 | I will be happy to go. | `zuwen thagom vavobol thodethamam.` | z-speaker \| th-plan-itinerary \| v-go \| th-pleasure-met-any-term-INTERNAL-FLOWING | covered |
+| 29 | I will be happy to go. | `zuwen thagom vavobol thodethamam.` | z-speaker \| th-plan-itinerary \| v-go \| th-pleasure-met-any-term-STAYING-OPEN | covered |
 | 30 | He will arrive soon. | `zazozon theyom blrawum vevorol.` | z-Azozon \| [th-CLUES \| b-+-e-.about] \| v-arrival | covered |
 | 31 | The baby's ball has rolled away. | `zobovel om beboyol haram vuwovolum.` | `[z-ball \| [used-by \| b-baby]] \| h-RESIDUE \| v-wheel-recede` | covered |
 | 32 | The two boys are working together. | `zoboyolx gradol thugem vuzubamx.` | [z-boy-x \| g-two] \| th-LIVE \| v-effort-x | covered |
@@ -108,19 +108,19 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 | 79 | The west wind blew across my face like a friendly caress. | `zawulol gewuhol thevum vawulol hohom blovemel om buwen hewem blahuyal gazamam.` | `[z-wind \| g-west] \| th-MEMORY \| v-wind \| [h-across \| [bl-face \| [used-by \| b-speaker]]] \| [h-like \| [bl-hug \| g-goodwill]]` | covered |
 | 80 | The spool of thread rolled across the floor. | `zayulal thevum vuwovol hohom blohehalagulal.` | z-yarn \| th-MEMORY \| v-wheel \| [h-across \| b-floor] | covered |
 | 81 | A box of growing plants stood in the Window. | `zubogal gadam blabolelx gwuzelom thevum vuzuvel al buwohel.` | `[z-box \| [g-contents \| [bl-plant-x \| g-episode-agent-growth]]] \| th-MEMORY \| v-stand \| [in \| b-window]` | covered |
-| 82 | I am very happy. | `welazem thodethamam.` | [w-very \| th-pleasure-met-any-term-INTERNAL-FLOWING] | covered |
+| 82 | I am very happy. | `welazem thodethamam.` | [w-very \| th-pleasure-met-any-term-STAYING-OPEN] | covered |
 | 83 | These oranges are juicy. | `zadederx guhudal em buwen.` | `[z-←tangerine-x \| g-juice \| [near \| b-speaker]]` | covered |
 | 84 | Sea water is salty. | `zuam gohalaxowulal gozudal.` | [z-everything.open \| g-ocean-x-drinking-water] \| g-salt | covered |
 | 85 | The streets are full of people. | `zeyelx thubom zol gral al boraholx.` | [z-person-x \| th-PATTERN \| z-rank/more \| g-amount] \| [in \| b-road-x] | covered |
 | 86 | Sugar tastes sweet. | `zual gunedam godem thubom.` | [z-everything \| g-sugar] \| g-sweetness \| th-PATTERN | covered |
 | 87 | The fire feels hot. | `zavulur gohamul thugem.` | [z-←fire \| g-hot] \| th-LIVE | covered |
-| 88 | The little girl seemed lonely. | `thawethumam theyomoyoyor.` | th-relatedness-unmet-modifiable-INTERNAL-FLOWING \| th-CLUES-←girl | by design (G-01) |
+| 88 | The little girl seemed lonely. | `thawethumam theyomoyoyor.` | th-relatedness-unmet-modifiable-STAYING-OPEN \| th-CLUES-←girl | by design (G-01) |
 | 89 | The little boy's father had once been a sailor. | `glemugel zeyel gwozahaval growubal bloboyol gamezem helam.` | `[gl-male \| z-person \| g-role-agent-ship \| [g-#-e-1 \| [bl-boy \| g-small]]] \| h-FORMER` | covered |
 | 90 | I have lost my blanket. | `zuwen haram dayulam om buwen valurum.` | `z-speaker \| h-RESIDUE \| [d-blanket \| [used-by \| b-speaker]] \| v-loss` | covered |
 | 91 | A robin has built his nest in the apple tree. | `zeruloxebezel haram dunolal voguyol al baledexedalol.` | z-red-x-bird \| h-RESIDUE \| d-nest \| v-construct \| [in \| b-apple-x-tree] | covered |
 | 92 | At noon we ate our lunch by the roadside. | `h_12 zuwenx thevum denodal em buwenx vagedal om borahol.` | h-_12 \| z-speaker-x \| th-MEMORY \| [d-bento \| [used-by \| b-speaker-x]] \| v-eat \| [near \| b-road] | covered |
 | 93 | Mr. Jones made a knife for his little boy. | `zahelan thevum danewul vomuyal ol boboyol gamezem growabal blahelar.` | `z-Ahelan \| th-MEMORY \| d-knife \| v-manufacture \| [for \| [b-boy \| g-small \| [g-#-e1 \| bl-←Ahelan]]]` | covered |
-| 94 | Their voices sound very happy. | `welazem thodethamam thugemeyerx.` | [w-very \| th-pleasure-met-any-term-INTERNAL-FLOWING] \| th-LIVE-←person-x | covered |
+| 94 | Their voices sound very happy. | `welazem thodethamam thugemeyerx.` | [w-very \| th-pleasure-met-any-term-STAYING-OPEN] \| th-LIVE-←person-x | covered |
 | 95 | Is today Monday? | `yel ? zolerom grobal thugem.` | y-question \| [? \| z-weekday \| g-1st] \| th-LIVE | covered |
 | 96 | Have all the leaves fallen from the tree? | `yel ? zual golelel ul bedalol havem voduhol.` | y-question \| [? \| z-everything \| g-leaf] \| [from \| b-tree] \| h-already \| v-fall | covered |
 | 97 | Will you be ready on time? | `yel ? zawan theyom blral vabam hawerom.` | `y-question \| ? \| z-listener \| [th-CLUES \| bl-later] \| v-preparation \| h-punctuality` | covered |
@@ -144,7 +144,7 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 | 115 | Is this tree an oak or a maple? | `yel zedalor guneduledalol gemalol ?gar.` | y-question \| z-←tree \| [g-oak \| g-maple \| ?g-wh] | covered |
 | 116 | Does the sky look blue or gray? | `yel zugalam gobulol gagulel ?gar thugem.` | `y-question \| [z-sky \| [g-blue \| g-gray \| ?g-wh]] \| th-LIVE` | covered |
 | 117 | Come with your father or mother. | `yol han bleyel growubal blawan vavobol oel buwen.` | `y-command \| [h-including \| [bl-person \| [g-#-e-1 \| bl-listener]]] \| v-go \| [toward \| b-speaker]` | covered |
-| 118 | I am tired, but very happy. | `zuwen gadamul. xugohum welazem thodethamam.` | z-speaker \| g-tired . x-but \| [w-very \| th-pleasure-met-any-term-INTERNAL-FLOWING] | covered |
+| 118 | I am tired, but very happy. | `zuwen gadamul. xugohum welazem thodethamam.` | z-speaker \| g-tired . x-but \| [w-very \| th-pleasure-met-any-term-STAYING-OPEN] | covered |
 | 119 | He played a tune on his wonderful flute. | `zazozon thevum dudurol vuwem aol buvorol gemem om bazozor.` | `z-Azozon \| th-MEMORY \| d-tune \| v-performance \| [using \| [b-flute \| g-amazement \| [used-by \| b-←Azozon]]]` | covered |
 | 120 | Toward the end of August the days grow much shorter. | `om b_#31,8 zazuromx thubom zuol welazem godurom thubom.` | [near \| b-_31,8] \| [z-day-x \| th-PATTERN \| z-rank/less \| [w-very \| g-duration]] \| th-PATTERN | covered |
 | 121 | A company of soldiers marched over the hill and across the meadow. | `aem bamahul gamezem zagayulx thevum vowurolx hohom blegudalx.` | `[over \| [b-mountain \| g-small]] \| z-guard-x \| th-MEMORY \| v-walk-x \| [h-across \| bl-greens-x]` | covered |
@@ -162,7 +162,7 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 | 133 | Aha! I have caught you! | `!yalulun. zuwen haram dawan vamewul.` | !y-Alulun . z-speaker \| h-RESIDUE \| d-listener \| v-mousetrap | covered |
 | 134 | This string is too short! | `! zovular em buwen thudatham zuol guravam.` | [[! \| z-←thread \| [near \| b-speaker]] \| th-sake-met-any-term \| z-rank/less \| g-length] | covered |
 | 135 | Oh, dear! the wind has blown my hat away! | `!yewemun. zawulor haram dazobul om buwen vawulolum.` | `!y-Ewemun . z-←wind \| h-RESIDUE \| [d-sun-hat \| [used-by \| b-speaker]] \| v-wind-recede` | covered |
-| 136 | Alas! that news is sad indeed! | `!yagamun. zunonar wawethumam goyom.` | !y-Agamun . z-←newspaper \| [w-relatedness-unmet-modifiable-INTERNAL-FLOWING \| g-stimulus] | covered |
+| 136 | Alas! that news is sad indeed! | `!yagamun. zunonar wawethumam goyom.` | !y-Agamun . z-←newspaper \| [w-relatedness-unmet-modifiable-STAYING-OPEN \| g-stimulus] | covered |
 | 137 | Whew! that cold wind freezes my nose! | `!yuvumen. zawulor gogomul donebel gobom bluwen vuzulel.` | !y-Uvumen . [z-←wind \| g-cold] \| [d-nose \| [g-part-of \| b-speaker]] \| v-ice | covered |
 | 138 | Are you warm enough now? | `yel ? zawan thudatham zoel gohamul thabem blagorum gramol.` | `y-question \| [? \| z-listener \| th-sake-met-any-term \| z-equal-rank \| g-hot] \| [th-INTUITION \| [bl-hour \| g-zero]]` | covered |
 | 139 | They heard the warning too late. | `zeyelx thudatham zol bral thevum dewugul vebal.` | [z-person-x \| th-sake-met-any-term \| z-rank/more \| b-later] \| th-MEMORY \| d-warning \| v-hear | covered |
@@ -201,7 +201,7 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 | 172 | He proved himself trustworthy. | `zazozon thevum dazozor gegowom verenom.` | z-Azozon \| th-MEMORY \| [d-←Azozon \| g-trust] \| v-proof | covered |
 | 173 | We could see ourselves in the water. | `zuwenx thevum duwerx vayebel al bowulal.` | z-speaker-x \| th-MEMORY \| d-←speaker-x-x \| v-see \| [in \| b-drinking-water] | covered |
 | 174 | Do it yourself. | `yol zawan zal vuzubam.` | y-command \| [z-listener \| z-and] \| v-effort | covered |
-| 175 | I feel ashamed of myself. | `zuwen thawethumem bluwer.` | `z-speaker \| [th-relatedness-unmet-modifiable-AIMED-FLOWING \| bl-←speaker]` | covered |
+| 175 | I feel ashamed of myself. | `zuwen thawethumem bluwer.` | `z-speaker \| [th-relatedness-unmet-modifiable-AIMED-OPEN \| bl-←speaker]` | covered |
 | 176 | Sit here by yourself. | `yol zawan zal vehohel om buwen.` | y-command \| [z-listener \| z-and] \| v-sit \| [near \| b-speaker] | covered |
 | 177 | The dress of the little princess was embroidered with roses, the national flower of the Country. | `dedobal om boyoyol gamezem gegobom venewul aol barelalx. zarelarx gevelal gobom blahal.` | `[d-dress \| [used-by \| [b-girl \| g-small \| g-leadership]]] \| v-needle \| [using \| b-rose-x] . [z-←rose-x-x \| g-flower \| [g-part-of \| bl-country]]` | covered |
 | 178 | They wore red caps, the symbol of liberty. | `zeyelx thevum danobalx gerulol vedobal. zanobarx gezugal gehugom blezahem.` | z-person-x \| th-MEMORY \| [d-hat-x \| g-red] \| v-dress . [z-←hat-x-x \| g-symbols \| [g-topic \| b-liberty]] | covered |
@@ -260,7 +260,7 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 - **STC-19, 21:** *came down* is *fall*; *has stopped* is *no longer* `huvum` (the rain no longer falls), so no *stop* verb is needed.
 - **STC-24, *once*:** FORMER `helam` (a past climate, not today's). *Here* is `em buwen`.
 - **STC-28, *should*:** prescription with the unnamed sake, `thudathem`. **STC-37, *must*:** `hwuvom`.
-- **STC-29, *happy to*:** emotion compose on `/th/`: pleasure met, INTERNAL, FLOWING (`thodethamam`) — the speaker's own feeling, so no holder is needed.
+- **STC-29, *happy to*:** emotion compose on `/th/`: pleasure met, STAYING, OPEN (`thodethamam`) — the speaker's own feeling, so no holder is needed.
 - **STC-33, *probably*:** stance number `thral` (*likely*, no figure).
 - **STC-38, *opposite*:** `honuhothayan` — in front, as the two of us face. *Directly* is dropped.
 - **STC-45, *village*:** *hut* in its abstract sense, `bahaham` (*locality*). *For a visit* is `thovam` + the *attend* compound as a noun.
@@ -287,7 +287,7 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 - **STC-73, *your guests*:** people cannot take `om`, so *guests* is the *hospitality* tie (`gabodum blawan`); *from the city* goes before the noun with `gl-`, since two relation adjectives cannot follow one noun.
 - **STC-74, *sharply*:** `hanewum` (*severity*, the knife abstract). *Course turns* is `varugom` (*turn*, the abstract on *refresh*).
 - **STC-75, 76, 78, 79:** an `/h/`-hosted `/b/` now keeps its adjectives (`hedam blamahulx gradol gadahom`, `hewem blemuyal gazamam`; parser fix).
-- **STC-82, 94, *happy*:** emotion compose, pleasure met, INTERNAL, FLOWING (`thodethamam`). Someone else's feeling takes a holder (STC-88 `theyomoyoyor`, STC-94 `thugemeyerx`); a holder can be a full-root resume, and a group takes **-x** (*those people*).
+- **STC-82, 94, *happy*:** emotion compose, pleasure met, STAYING, OPEN (`thodethamam`). Someone else's feeling takes a holder (STC-88 `theyomoyoyor`, STC-94 `thugemeyerx`); a holder can be a full-root resume, and a group takes **-x** (*those people*).
 - **STC-83, *these oranges*:** full-root resume (the ones we both see) plus *near me*; a new noun would read as *there are juicy oranges here*.
 - **STC-84, *sea water is salty*:** `zuam` + kind + `/ɡ/` is a property of every member, as a rule (exceptions not listed).
 - **STC-85, *full of people*:** approximated as *many people in the streets* (Typical bar). *Streets* is *road* (`boraholx`).

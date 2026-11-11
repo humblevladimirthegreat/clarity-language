@@ -108,7 +108,7 @@ l m r n
 └── settled-to-passing — how lasting the hold is; no -n
       ├── sake time horizon · unmet changeability · motive (are the scale)
       ├── prescription warrant (invited / unasked / tryout)
-      ├── feeling motion (static / flowing / surging)
+      ├── feeling duration (settled / open / fleeting)
       ├── MAY follow-up · NOTIONAL follow-up · MIRATIVE
       ├── PLAN · WANT · DECISION · TRY
       ├── already / still / not yet / no longer
