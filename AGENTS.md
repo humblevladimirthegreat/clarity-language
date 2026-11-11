@@ -62,9 +62,9 @@ Stage pages sit in `beginner/`, `intermediate/`, or `advanced/` under `docs/gram
 | `data/lexicon-published.csv` | Published roots: each has a concrete sense and usually an emoji or pictograph seed, [seeds](docs/meta/procedures/lexicon.md#seeds-concrete-senses-and-pictographs). PoS and ending applied at use time. The `core` column is the core vocabulary order, [core vocabulary](docs/meta/procedures/lexicon.md#core-vocabulary-column). `kind` and `shape` spell a root's tail, and `size` steers a five-letter root's middle vowel, [root tails](docs/meta/procedures/lexicon.md#root-tails). |
 | `data/lexicon-compounds.csv` | Dictionary compounds without mid-word `x`, with the same `core` column. |
 | `data/lexicon-overlays.csv` | Closed overlay inventory and the anchor that teaches each row, [overlay kinds](docs/meta/parser-pipeline.md#overlay-kinds). New overlays attach to an existing published row. |
-| `data/claritish-triggers.csv` | Journal editor cues: the English patterns each Claritish lesson's gap names, their exclusions, flow, placement, and mirror wording, [editor cards](docs/meta/claritish-style.md#editor-cards). |
-| `data/claritish-flows.json` | Journal editor question flows and slash commands: each answer names a Claritish cheat sheet cell, never a spelling, [editor cards](docs/meta/claritish-style.md#editor-cards). |
-| `data/claritish-words.csv` | Journal editor word lists the cues name as `@list`: the trait words a label names, the emotion words a feeling names, and the degree words between, [editor cards](docs/meta/claritish-style.md#editor-cards). |
+| `data/claritish-triggers.csv` | Journal editor cues: the English patterns each Claritish lesson's gap names, their exclusions, flow, placement, and mirror wording, [cues](docs/meta/claritish-editor-data.md#cues). |
+| `data/claritish-flows.json` | Journal editor question flows and slash commands: each answer names a Claritish cheat sheet cell, never a spelling, [flows](docs/meta/claritish-editor-data.md#flows). |
+| `data/claritish-words.csv` | Journal editor word lists the cues name as `@list`: the trait words a label names, the emotion words a feeling names, and the degree words between, [word lists](docs/meta/claritish-editor-data.md#word-lists). |
 
 ### Editor notes (`docs/meta/`, not published)
 
@@ -72,7 +72,9 @@ Stage pages sit in `beginner/`, `intermediate/`, or `advanced/` under `docs/gram
 |--------|------|
 | `grammar-docs.md` | Content and teaching policy for grammar pages, house cast, retie-safe writing, marking Ageben, cheat sheets. |
 | `doc-style.md` | Wording and voice. |
-| `claritish-style.md` | Wording and voice for the Claritish track, and the hyphenated English host. |
+| `orientation-style.md` | Wording and voice for the two orientation pages, `purpose.md` and `introduction.md`. |
+| `claritish-style.md` | Wording and voice for the Claritish track, the hyphenated English host, and what counts as a journal editor cue. |
+| `claritish-editor-data.md` | File formats of the journal editor data: cue columns and pattern syntax, word lists, flow keys. |
 | `glosses.md` | Morph and free gloss rules. |
 | `learning-levels.md` | Beginner / intermediate / advanced gates and the cross-doc path. |
 | `translation-exercises.md` | Translation checkpoint policy. |

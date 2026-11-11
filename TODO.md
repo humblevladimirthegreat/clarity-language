@@ -21,11 +21,7 @@ https://discord.gg/CAMGw2Akhc
 -does th reliably mean an interpretation of the event?
 -programming language
 -consider conceptual metaphor of past is in front of us (because we can see it)
-Align emotional locus with normal emotions 
-Emotion requires stimulus 
 Cheat sheet distinguish cue vs exact match
-Stacked u consistently mean not?
-Emotion ending is mood vs fleeting 
 
 
 Finger code (experimental, docs/grammar/finger-code.md; remove the warning once tested):

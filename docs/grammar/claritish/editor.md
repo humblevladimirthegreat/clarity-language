@@ -16,4 +16,4 @@ The editor is for writing to yourself. What you write stays in this browser and 
 
 <ClaritishEditor />
 
-<!-- Claritish track, last page: a private journaling editor that marks the English cues the lessons' gaps name and builds drop-ins from the cheat sheet. Adds no forms and links only to lessons (docs/meta/grammar-docs.md#claritish-track). Cues and question flows: data/claritish-triggers.csv and data/claritish-flows.json (docs/meta/claritish-style.md#editor-cards). -->
+<!-- Claritish track, last page: a private journaling editor that marks the English cues the lessons' gaps name and builds drop-ins from the cheat sheet. Adds no forms and links only to lessons (docs/meta/grammar-docs.md#claritish-track). Cues and question flows: data/claritish-triggers.csv and data/claritish-flows.json (docs/meta/claritish-editor-data.md; what counts as a cue, card wording: docs/meta/claritish-style.md#editor-cards). -->

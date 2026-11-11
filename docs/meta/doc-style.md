@@ -1,6 +1,6 @@
 # Grammar doc wording and voice
 
-Wording rules for editors who write the learner-facing Ageben grammar pages under `docs/grammar/`. What those pages teach, and how the material is organized, is in [grammar-docs.md](grammar-docs.md). The [Claritish track](grammar-docs.md#claritish-track) follows this page too, and [claritish-style.md](claritish-style.md) says what differs there.
+Wording rules for editors who write the learner-facing Ageben grammar pages under `docs/grammar/`. What those pages teach, and how the material is organized, is in [grammar-docs.md](grammar-docs.md). The [Claritish track](grammar-docs.md#claritish-track) follows this page too, and [claritish-style.md](claritish-style.md) says what differs there. The two orientation pages, `purpose.md` and `introduction.md`, follow it as well, and [orientation-style.md](orientation-style.md) says what differs for them.
 
 This page is private editor guidance. Grammar pages never link to it or mention it.
 
@@ -45,7 +45,9 @@ The lead rules were written for a section that teaches a grammar feature. Other 
 | A pronunciation section | There is no English job. The lead says what to do with the mouth or voice, then what a listener gains from it. Everything else applies |
 | The lead of a whole page | It previews each section in at most one sentence ([say it once](#say-it-once)) |
 | Instructions for a control or tool on the page | [Interface instructions](#interface-instructions) |
+| A [Claritish](claritish-style.md) lesson | `## The gap` replaces the lead: it names the English habit and its cost, and Ageben enters only in its last sentence ([the gap](claritish-style.md#the-gap)). Skip the lead rules and the slogan test. Everything else applies |
 | Tables | May stay telegraphic. Running prose may not |
+| An orientation page (`purpose.md`, `introduction.md`) | [orientation-style.md](orientation-style.md). The lead rules and the slogan test do not apply; the rest of this page does, as that page lists |
 | The glossary (`terminology.md`) | Exempt from the specialist-term check, since defining those terms is its job |
 
 ## What the build checks
@@ -93,7 +95,7 @@ Em dashes are banned in published and root Markdown, and the build fails on them
 <a id="voice-and-length"></a>
 
 - Address the learner in second person ("use `-r` when…", "prefer names when…"). That *you* is English teaching voice, not an Ageben pronoun.
-- Teaching stages do not use maintainer *we* ("we now write…") or author *I*. Author *I* is allowed only on signed prose that does not teach rules: the acknowledgments and the purpose and limits essay.
+- Teaching stages do not use maintainer *we* ("we now write…") or author *I*. Author *I* is allowed only on signed prose that does not teach rules: the acknowledgments and the criticisms on the purpose page ([orientation voice](orientation-style.md#voice)).
 - One idea per H2 or H3.
 - Keep a paragraph to five sentences or fewer. When a paragraph lists parallel items (controls, cases, options), use a table.
 - Do not clear your throat ("In this section…", "It is important to note…"). An extra sentence must add mechanism or consequence.
