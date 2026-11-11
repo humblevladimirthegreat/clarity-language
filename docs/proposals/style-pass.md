@@ -1,6 +1,6 @@
 # Style pass
 
-**Status:** PROPOSED (2026-11-11). No user decisions yet. Nothing has run.
+**Status:** PROPOSED (2026-11-11). Decided 2026-11-11: a rising warning count fails the build on every page (the ratchet); recipe pages, cheat sheets, and level reviews get the which-page rows in [keeping it applied](#keeping-it-applied); headings that need a retitle are logged and retitled together in H1; the user reviews each phase before the next starts; forms take bold only where introduced ([bold on forms](#bold-on-forms)). Nothing has run.
 
 **Related:** [doc-style.md](../meta/doc-style.md), [claritish-style.md](../meta/claritish-style.md), [grammar-docs.md](../meta/grammar-docs.md), [restructure-sittings.md](../meta/procedures/restructure-sittings.md), [proposals.md](../meta/procedures/proposals.md), [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts), [prose-style.ts](../../src/lint/prose-style.ts), [lint-prose-style.ts](../../scripts/lint-prose-style.ts)
 
@@ -22,7 +22,7 @@
 | `jargon` | 2 |
 | All four | 238 |
 
-By folder, the 238 are: Beginner 91, Intermediate 74, Advanced 35, cheat sheets 11, Claritish 4. The remaining hits were not attributed to a folder. Only these totals were measured. The nine *Judgment* rows of the [checklist](../meta/doc-style.md#checklist) have never been checked across the site, and no page was read for this proposal, so their state is unknown.
+By folder, the 238 are: Beginner 91, Intermediate 74, Advanced 35, cheat sheets 11, Claritish 4. The remaining hits were not attributed to a folder. Only these totals were measured, except the `bold-density` hits, sorted in [bold on forms](#bold-on-forms). The nine *Judgment* rows of the [checklist](../meta/doc-style.md#checklist) have never been checked across the site, and no page was read for this proposal, so their state is unknown.
 
 **The style decays after a reorganization.** Three causes, all visible in the tooling:
 
@@ -39,7 +39,7 @@ By folder, the 238 are: Beginner 91, Intermediate 74, Advanced 35, cheat sheets 
 ## Non-goals
 
 - No change to Ageben forms, glosses, examples, Practice checkpoints, word banks, or generated cheat-sheet tables.
-- No moving or retitling of headings, and no change to heading ids. A heading that needs retitling is logged ([open decision 4](#open-decisions)).
+- No moving or retitling of headings, and no change to heading ids. A heading that needs retitling is logged in [headings to retitle](#headings-to-retitle), and H1 retitles them together in Phase 9.
 - No new rules of style. Where the guide is silent about a kind of page, the gap is logged for the user, not filled by a worker.
 - No lint for rules that need understanding (consequence, say it once, a choice says when, pictures). Those stay with the review gate.
 
@@ -72,53 +72,94 @@ House shorthand and specialist labels are glossed on first use *in reading order
 | **`changed-sections` script.** Lists the H2 and H3 sections whose text changed, or whose preceding section changed, since a given commit. | A reviewer rereading whole pages, or skipping the review because the scope is unclear. |
 | **Style gate in both procedures.** The last unit of any proposal or restructure that touches grammar prose is a style review of the `changed-sections` list, run by a fresh subagent that made none of the changes. | The drop after reorganizations. |
 | **`style-editor` agent file.** A standing brief under `.claude/agents/` holding the digest below, so the gate costs one short launch. | The gate being skipped because writing its brief is work. |
-| **Which-page rows.** Add the kinds of page the table does not name: recipe pages, cheat sheets, level reviews. | Workers guessing which rules apply there. |
+| **Which-page rows.** Add the kinds of page the table does not name. A recipe page's heading is already the English job, so its lead starts at the Ageben shape and still ends with the consequence. Cheat sheets and level reviews are lookup and practice, so only punctuation, link text, plain language, and voice apply to their prose. T3 checks each row against two pages of its kind before writing it. | Workers guessing which rules apply there. |
 
 A lint for first-use glossing of house shorthand was considered and dropped. The words are *job*, *point*, *setting*, *body*: ordinary English, so a term list would flag most paragraphs on the site.
 
+### Bold on forms
+
+All 156 `bold-density` hits were sorted by cause on 2026-11-11, about 990 bold phrases in all:
+
+| Bold on | Phrases | Example |
+|---------|---------|---------|
+| A form in backticks | about 470 | **`ham`**, **`thenam`** |
+| A bare letter or ending, with no backticks | about 340 | **-l**, **-x**, **a** |
+| English words, for stress | about 150 | **one**, **now**, **from** |
+| Starters and overlay names | about 30 | **Compare with:**, **PLAN** |
+
+Counting only the English bold, 7 of the 156 paragraphs would still be over the ceiling. The warning mostly measures one house habit, bold on forms, which the guide did not mention. The habit is site-wide (about 3,500 bold forms in backticks on grammar pages). Many hit paragraphs are also lists of parallel forms, such as the endings in `firm-soft.md` and the number-word order in `measures-and-percent.md`, which the guide already sends to a table.
+
+The pass treats a form like a term: a form may be bold where the page introduces it, and is plain backticks after that. Bare letters and endings always go in backticks. The lint is unchanged, so a paragraph that introduces more than four forms still warns, and the fix is usually a table. Bold then tells the learner *this is where it is taught*; in a paragraph with eight bold forms it tells them nothing. T3 writes the rule into [doc-style.md](../meta/doc-style.md#voice-and-length).
+
 ## Implementation plan
 
-If the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate) before the session ends.
+The pass runs in nine [phases](../meta/procedures/proposals.md#phases), one orchestrator session each, with no phase over six units. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate) before the session ends. Consolidation keeps the [glossed labels](#glossed-labels) and [headings to retitle](#headings-to-retitle) lists current, because later units need them and the reports that built them are gone.
 
-Every unit is one fresh subagent. Prose units run on `model: opus`, `effort: high`. They run in sequence in reading order, because each one receives the glossed-label list from the one before.
+Every unit is one fresh subagent. Prose units run as `style-editor` on `model: opus`, `effort: high`. They run in sequence in reading order, because each one receives the glossed-label list from the one before. Each prose unit may edit only its own pages and the ratchet baseline. A page with a control (a drill, a player, the journal editor) also gets the [interface instructions](../meta/doc-style.md#interface-instructions) check.
 
-### Phase 0: tooling and rules
+Each phase ends as [phases](../meta/procedures/proposals.md#phases) says: the phase gate, the last unit's commit, consolidation, the proposal's commit, then a stop. The orchestrator tells the user what the phase settled, which open decisions wait on them, and the prompt for the next phase, *Carry out phase N of `style-pass.md`*. It does not start the next phase in the same session.
+
+### Phase 1: tooling and calibration
 
 | Unit | Work | Agent | Model, effort | May edit |
 |------|------|-------|---------------|----------|
 | T1 | Warning ratchet and its baseline; the *we* / *I* rule; tests for both; [what the build checks](../meta/doc-style.md#what-the-build-checks) updated | `proposal-worker` | `opus`, `medium` | `src/lint/prose-style.ts`, its test, `scripts/lint-prose-style.ts`, the baseline file, `doc-style.md` |
 | T2 | `changed-sections` and the wording-only check, with tests | `proposal-worker` | `opus`, `medium` | `scripts/`, `src/lint/`, `package.json` |
-| T3 | `style-editor` agent file; the style gate in both procedures; which-page rows as decided ([open decision 3](#open-decisions)) | `proposal-worker` | `opus`, `medium` | `.claude/agents/style-editor.md`, `restructure-sittings.md`, `proposals.md`, `doc-style.md` |
+| T3 | `style-editor` agent file; the style gate in both procedures; the which-page rows; the bold rule in [bold on forms](#bold-on-forms) | `proposal-worker` | `opus`, `medium` | `.claude/agents/style-editor.md`, `restructure-sittings.md`, `proposals.md`, `doc-style.md` |
+| C1 | The first Beginner unit, under the digest as written | `style-editor` | `opus`, `high` | that unit's pages, the baseline file |
 
-T1 will find existing *we* / *I* hits. It lists them in its report and leaves them in the baseline as known failures for the page units to clear; the rule starts failing the build in Phase 5.
+T1 will find existing *we* / *I* hits. It lists them in its report and leaves them in the baseline as known failures for the page units to clear; the rule starts failing the build in Phase 9.
 
-### Phase 1: calibration
+**Cut:** C1 is the first prose unit, and the user's review of its diff calibrates every later one, so no other page is touched until that review is in.
 
-| Unit | Work |
-|------|------|
-| C1 | The first Beginner unit, by `style-editor`. Its report also sorts that unit's `bold-density` and `beginner-lead` hits by cause. |
+### Phase 2: Beginner, first half
 
-**The run stops here.** The user reads the C1 diff. Their corrections go into the digest and the agent file, and [open decision 2](#open-decisions) is settled from C1's sort, before any other page is touched.
+The phase starts by folding the user's corrections from the C1 review into the [rule digest](#rule-digest) and `.claude/agents/style-editor.md`, as an orchestrator edit with its own commit. Then B2 to B5, one per Beginner unit in reading order.
 
-### Phases 2 to 4: the pages
+**Cut:** the six-unit budget.
 
-| Phase | Units | Pages |
-|-------|-------|-------|
-| 2 | B2 to B9, one per remaining Beginner unit | Beginner sittings |
-| 3 | O1: `purpose.md`, `introduction.md`, with [orientation-style.md](../meta/orientation-style.md) added to the brief. O2: `english.md` and the five `say-*.md` recipes. O3 and O4: the Claritish track in two halves, with [claritish-style.md](../meta/claritish-style.md) added to the brief | On-ramps |
-| 4 | I1 to I17, then A1 to A5 | Intermediate, then Advanced |
+### Phase 3: Beginner, second half
 
-Each unit may edit only its own pages and the ratchet baseline. A page with a control (a drill, a player, the journal editor) also gets the [interface instructions](../meta/doc-style.md#interface-instructions) check. The orchestrator asks for a go-ahead between phases.
+B6 to B9, one per remaining Beginner unit.
 
-### Phase 5: close
+**Cut:** Beginner is finished, and the on-ramps add style guides to the brief, so the digest changes.
+
+### Phase 4: on-ramps
+
+| Unit | Pages | Added to the brief |
+|------|-------|--------------------|
+| O1 | `purpose.md`, `introduction.md` | [orientation-style.md](../meta/orientation-style.md) |
+| O2 | `english.md` and the five `say-*.md` recipes | — |
+| O3, O4 | The Claritish track in two halves | [claritish-style.md](../meta/claritish-style.md) |
+
+**Cut:** the digest returns to the plain one for Intermediate.
+
+### Phases 5 to 7: Intermediate
+
+| Phase | Units |
+|-------|-------|
+| 5 | I1 to I6 |
+| 6 | I7 to I12 |
+| 7 | I13 to I17 |
+
+**Cuts:** the six-unit budget.
+
+### Phase 8: Advanced
+
+A1 to A5.
+
+**Cut:** every page unit is done, which the audit needs, and the close reads cheat sheets and level reviews under different which-page rows.
+
+### Phase 9: close
 
 | Unit | Work | Agent | Model, effort |
 |------|------|-------|---------------|
 | L1 | Cheat-sheet prose outside the `<!-- generated -->` markers, level-review prose outside Practice, `terminology.md` link text and voice only | `style-editor` | `opus`, `high` |
+| H1 | Retitle the headings in [headings to retitle](#headings-to-retitle) to plain language, each pinning its old id with `{#id}` so no link changes | `proposal-worker` | `opus`, `high` |
 | X1 | Independent audit. A fresh subagent that has read no earlier report takes two sections per unit, chosen by the orchestrator, and runs the slogan test and the why-care test from the lead alone. It edits nothing and reports failures by section | `proposal-worker` | `opus`, `high` |
 | X2 | Fix what X1 found, tighten the baseline, turn the *we* / *I* rule on as failing | `style-editor` | `opus`, `high` |
 
-If X1 fails more than about one section in five, that is a [stop-and-alert](../meta/procedures/proposals.md#stop-and-alert) finding: the digest is not working and the user decides what to do.
+X1 and X2 share a phase because X2 works from X1's report. If X1 fails more than about one section in five, that is a [stop-and-alert](../meta/procedures/proposals.md#stop-and-alert) finding: the digest is not working and the user decides what to do.
 
 ### Rule digest
 
@@ -129,8 +170,8 @@ Pasted into every prose unit's prompt, and the body of the `style-editor` agent 
 > 1. List each page's headings, then read and edit one page at a time. Run `npm run lint:prose -- --report` once and keep only your pages' lines.
 > 2. For each H2 or H3: decide its kind from the which-page table, clear its warnings, then run the seven closing tests and rewrite what fails.
 > 3. A lead says the English job, then the Ageben shape, then the consequence, then any cue. Second person. No maintainer *we*, no author *I*.
-> 4. A paragraph that lists parallel items becomes a table. Bold is for a term where it is defined and for a control's label.
-> 5. These labels are already glossed by earlier units, so do not gloss them again: (list from the orchestrator). Gloss any other label or house shorthand where your pages first use it, and report the ones you glossed.
+> 4. A paragraph that lists parallel items becomes a table. Bold is for a term or an Ageben form where it is defined or introduced, and for a control's label. Bare letters and endings go in backticks (`-l`, not **-l**).
+> 5. These labels are already glossed by earlier units, so do not gloss them again: (list pasted by the orchestrator). Gloss any other label or house shorthand where your pages first use it, and report the ones you glossed.
 > 6. **Never state a fact about Ageben that the page, or the page it links to as owner, does not already state.** If a section needs a consequence or a *when* that you cannot find stated, do not write one. Report the section.
 > 7. Do not change code spans, fenced blocks, glosses, examples, headings, anchor ids, link targets, anything under `### Practice`, or anything between `<!-- generated -->` markers. Do not move sections. A heading that fails the plain-language rule is reported, not retitled.
 > 8. Do not work out what an Ageben sentence means by reading it. If a rewrite depends on a sentence's meaning, use `node scripts/parse.mjs --llm-prompt`.
@@ -143,24 +184,35 @@ Pasted into every prose unit's prompt, and the body of the `style-editor` agent 
 >
 > **Report:** pages and sections rewritten (counts); warnings before and after per rule; warnings kept, with reasons; labels newly glossed; sections reported under rule 6; headings reported under rule 7; the `verify` line; left; inefficient.
 
+### Glossed labels
+
+Labels that finished units have glossed, in reading order, each with the page that glosses it. The orchestrator pastes this list into rule 5 of each prose unit's prompt and adds each report's newly glossed labels after the unit's commit.
+
+*None yet.*
+
+### Headings to retitle
+
+Headings that prose units reported under rule 7 of the digest, each with its page, its id, and why it fails. The orchestrator adds each report's headings after the unit's commit; H1 works from this list.
+
+*None yet.*
+
 ### Gates
 
 - The orchestrator saves `npm run verify -- --baseline` at the start of each phase.
 - Each prose unit ends with the wording-only check and `npm run verify -- --allow-generate`. The orchestrator reads the report and `git diff --stat`, and opens a hunk only when the stat shows a file outside the unit.
-- Final gate: a clean `npm run build` and `npm test` after X2, with every page's warning count at or below its baseline.
+- Phase gate: the last unit's `verify` is green against the phase's baseline, with no page above its ratchet count once T1 has landed. When nothing has changed since that run, it is not repeated.
+- Final gate, in Phase 9: a clean `npm run build` and `npm test` after X2, with every page's warning count at or below its baseline.
 
 ### Commits
 
-One commit per unit after its gate is green, by the orchestrator only, with the message `style-pass <unit id>: <what> [skip-cd]` and the co-author line. Expected: 3 for Phase 0, 1 for Phase 1, 8 for Phase 2, 4 for Phase 3, 22 for Phase 4, and 2 for Phase 5 (X1 edits nothing), 40 in all. The orchestrator records finished unit ids on the Status line after each commit.
+One commit per unit after its gate is green, by the orchestrator only, with the message `style-pass <unit id>: <what> [skip-cd]` and the co-author line. X1 edits nothing and makes no commit. Phase 2 adds one commit for the digest corrections. Each phase ends with a commit of the consolidated proposal, `style-pass phase <N>: consolidate [skip-cd]`; in Phase 9 that commit deletes the proposal instead, once the meta notes own the result.
+
+| Phase | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | All |
+|-------|---|---|---|---|---|---|---|---|---|-----|
+| Commits | 5 | 6 | 5 | 5 | 7 | 7 | 6 | 6 | 4 | 51 |
+
+The orchestrator records finished unit ids on the Status line after each commit, and the finished phase at its end.
 
 ## Open decisions
 
-1. **Does a rising warning count fail the build?** Options: fail (the ratchet above); keep warning only and rely on the review gate; fail only on Beginner pages. **Recommendation:** fail everywhere. The review gate covers reorganizations but not ordinary edits, and the baseline flag keeps the guide's promise that a warning is not a verdict.
-
-2. **What to do about `bold-density`.** It is two thirds of all warnings (158). The guide allows bold for a term at its definition and for a control's label; no page was read, so it is not known whether the hits are overuse or a legitimate pattern the rule miscounts (bold lead-ins on list items, for example). Options: rewrite all of them; exempt a named pattern in the lint; raise the ceiling. **Recommendation:** none yet. C1 sorts its hits by cause, and that sort settles it before Phase 2.
-
-3. **Which rules apply to recipe pages, cheat sheets, and level reviews.** The which-page table does not name them. **Recommendation:** add three rows. A recipe page's heading is already the English job, so its lead starts at the Ageben shape and still ends with the consequence. Cheat sheets and level reviews are lookup and practice, so only punctuation, link text, plain language, and voice apply to their prose. This is a reading of the guide's intent and has not been checked against those pages.
-
-4. **Headings that use an unglossed label.** The guide says a heading may use a label only after its gloss, or must carry the gloss itself. Fixing one means a retitle, which changes sidebar text and may need a pinned id. Options: retitle during the pass; log and batch them in a follow-up; leave headings alone. **Recommendation:** log and batch. Retitles touch registry files that take one writer at a time, and a single follow-up unit can run them through the heading tools.
-
-5. **Scope of the first go-ahead.** The whole pass is 41 subagents, 38 of them on teaching prose at high effort. Options: approve all phases now; approve through Phase 2 (tooling, calibration, Beginner) and decide the rest from the result. **Recommendation:** through Phase 2. Beginner carries the most warnings and the most readers, and the durable tooling lands in Phase 0 either way.
+None.
