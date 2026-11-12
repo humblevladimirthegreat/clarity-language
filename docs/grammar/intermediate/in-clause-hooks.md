@@ -4,19 +4,21 @@ band: intermediate
 
 # Hooks inside the clause {#hooks-inside-the-clause}
 
-Inside a clause, a hook ties B to A, or names a landmark. Beginner already used closed **-l** and open **-m** for how complete B is. Next: say more than one thing about A, add detail to the hook itself, and point back to a landmark with **-r**.
+Inside a clause, a hook ties B to A, or names a landmark. The first section collects the four hooks with closed `-l` and open `-m`, which say how complete B is, and shows how to turn a whole hooked phrase into a name. The next three let you say more than one thing about the same A, add detail to the hook itself, and point back to a landmark already named with `-r`.
 
 ### In-clause {#in-clause}
 
-<!-- cheat-sheet: joins-hooks -->
-| | **-l** | **-m** |
-|--|--------|--------|
-| **a** (*including*) | `al`: including B | `am`: including B, and maybe more |
-| **o** (*rather*) | `ol`: or rather B | `om`: or rather B, and maybe more |
-| **e** (*instead*) | `el`: instead (B in place of A) | `em`: B instead of A, B being one of several possible replacements |
-| **u** (*except*) | `ul`: except B | `um`: except B, and maybe more |
+Here are the four same-role hooks from Beginner, with both endings.
 
-To make a whole `A HOOK B` phrase into a name (a store, a title, a handle), give the hook **-n** ([titled phrases](proper-names.md#titled-phrases)). Otherwise use **-l** or **-m**. The two sides keep their usual endings (kinds **-l**, abstracts **-m**, a name **-n**).
+<!-- cheat-sheet: joins-hooks -->
+| | `-l` | `-m` |
+|--|--------|--------|
+| `a` (*including*) | `al`: including B | `am`: including B, and maybe more |
+| `o` (*rather*) | `ol`: or rather B | `om`: or rather B, and maybe more |
+| `e` (*instead*) | `el`: instead (B in place of A) | `em`: B instead of A, B being one of several possible replacements |
+| `u` (*except*) | `ul`: except B | `um`: except B, and maybe more |
+
+To make a whole `A HOOK B` phrase into a name (a store, a title, a handle), give the hook `-n` ([titled phrases](proper-names.md#titled-phrases)). Otherwise use `-l` or `-m`. The two sides keep their usual endings (kinds `-l`, abstracts `-m`, a name `-n`).
 
 > `dedudal en dogudal.`
 >
@@ -34,7 +36,7 @@ To make a whole `A HOOK B` phrase into a name (a store, a title, a handle), give
 
 ### Parallel chains {#parallel-chains}
 
-To say more than one thing about the **same** A (*including B but except C*, or two *including*s), keep adding hooks after B: `A HOOK₁ B HOOK₂ C`. Each hook applies to A, not to the B before it, and each has its own vowel and ending. So C is never tucked under B the way English *including (B except C)* can be.
+To say more than one thing about the *same* A (*including B but except C*, or two *including*s), keep adding hooks after B: `A HOOK₁ B HOOK₂ C`. Each hook applies to A, not to the B before it, and each has its own vowel and ending. So C never applies to B alone, the way it can in English *including (B except C)*.
 
 > `zuvayal am zazozon ul zalazun.`
 >
@@ -53,7 +55,7 @@ To say more than one thing about the **same** A (*including B but except C*, or 
 
 ### Detail on the hook (`/w/`) {#hook-w}
 
-To add detail to the hook itself (*hesitantly excepting*, *never excepting*), put a `/w/` word right before the hook. A `/w/` word always describes the word **right after** it, and a hook takes one the same way a `/ɡ/` or `/h/` word does. A [restrictor](/restrictors) works there too. The hook's right-hand piece follows as usual.
+To add detail to the hook itself (*hesitantly excepting*, *never excepting*), put a `/w/` word right before the hook. A `/w/` word always describes the word *right after* it, and a hook takes one the same way a `/ɡ/` or `/h/` word does. A [restrictor](/restrictors) works there too. The hook's right-hand piece follows as usual.
 
 On a same-role hook, the detail describes the *except* (or *including*, *rather*, *instead*). An `/h/` word in the clause still describes the verb.
 
@@ -77,7 +79,7 @@ A surprise word on the *including* hook gives English *even*: **`wemem al`** add
 >
 > "Alazun walks, and even Azozon does."
 
-**Compare with:** `zuvayal ul zazozon hadurom vuguyol` puts haste on the **cooking**, not on the except.
+**Compare with:** `zuvayal ul zazozon hadurom vuguyol` puts haste on the *cooking*, not on the except.
 
 On an extra-noun hook, `/w/` goes before the hook and `/b/` still comes right after it. A `/ɡ/` word after the landmark still describes the landmark.
 
@@ -87,11 +89,11 @@ On an extra-noun hook, `/w/` goes before the hook and `/b/` still comes right af
 >
 > "A dog sleeps, never in a house."
 
-A discourse hook takes `/w/` the same way: `welazem al zazozon vowurol` is *Additionally, very much so, Azozon walks.* A `/b/` right after the hook still makes it an extra-noun hook, not a discourse hook.
+A discourse hook (a hook at the front of a sentence that ties it to what was said before) takes `/w/` the same way: `welazem al zazozon vowurol` is *Additionally, very much so, Azozon walks.* A `/b/` right after the hook still makes it an extra-noun hook, not a discourse hook.
 
 ### Point back (`er` / `ar` / `ur` / `or`) {#hook-resume}
 
-English *there*, *from there*, and *for it* point back to a place or thing already named. In Ageben, give the extra-noun hook **-r** and leave out the `/b/` word: after the verb, the hook points back to the landmark already in play, the way [resume **-r**](/pronouns#resume-r) does on a noun. A hook with **-r** has no noun on its right, and no phrase on its left to pair with (it is not a same-role hook).
+English *there*, *from there*, and *for it* point back to a place or thing already named. In Ageben, give the extra-noun hook `-r` and leave out the `/b/` word: after the verb, the hook points back to the landmark already in play, the way [resume `-r`](/pronouns#resume-r) does on a noun. A hook with `-r` has no noun on its right, and no phrase on its left to pair with (it is not a same-role hook). So you can say *there* or *from there* without naming the landmark again.
 
 <!-- cheat-sheet: joins-hooks -->
 | Ageben | Points back to | English |
@@ -113,7 +115,7 @@ English *there*, *from there*, and *for it* point back to a place or thing alrea
 >
 > "The dog sleeps in the house. It runs from there."
 
-Stacked extra-noun vowels point back the same way: the vowels keep the extra they named (`ael` *on*, `aol` *using*, `uel` *through*), and **-r** drops the landmark.
+Stacked extra-noun vowels, the hooks with two vowels, point back the same way: the vowels keep the extra they named (`ael` *on*, `aol` *using*, `uel` *through*), and `-r` drops the landmark.
 
 <!-- cheat-sheet: joins-hooks -->
 | Ageben | Points back to | English |

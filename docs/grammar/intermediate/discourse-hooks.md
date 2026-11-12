@@ -4,28 +4,28 @@ band: intermediate
 
 # In fact and anyway {#in-fact-and-anyway}
 
-English *In fact*, *for example*, *among other things*, and *anyway* attach this sentence to prior talk. At the front of a sentence, Ageben uses the same hook spellings with **-m** or **-r**, or with two vowels. Everyday *Additionally* and *Instead* are in [hooks](/hooks).
+English *In fact*, *for example*, *among other things*, and *anyway* tie a sentence to what was said before. At the front of a sentence, Ageben uses the same hook spellings as everyday *Additionally* and *Instead* ([hooks](/hooks)). The first section gives them `-m`, for one sentence among several you could say, and `-r`, to point back to an earlier stretch of talk. The second adds two-vowel hooks for *In fact* and *For example*, and the third shows the other places in a sentence where these hooks can sit.
 
 ### Discourse {#discourse}
 
-At the front of a sentence, **-m** says this sentence is one of several you could say there: one more point among others, one way to reword, one possible replacement, one exception among others.
+At the front of a sentence, `-m` says this sentence is one of several you could say there: one more point among others, one way to reword, one possible replacement, one exception among others.
 
 <!-- cheat-sheet: joins-hooks -->
-| | **-l** | **-m** |
+| | `-l` | `-m` |
 |--|--------|--------|
-| **a** (*additionally*) | `al`: *Additionally, …* | `am`: *Among other things, …* |
-| **o** (*in other words*) | `ol`: *In other words, …* | `om`: *To put it one way, …* |
-| **e** (*instead*) | `el`: *Instead, …* | `em`: *Instead, for instance, …* |
-| **u** (*except*) | `ul`: *Except, …* | `um`: *Except, among other exceptions, …* |
+| `a` (*additionally*) | `al`: *Additionally, …* | `am`: *Among other things, …* |
+| `o` (*in other words*) | `ol`: *In other words, …* | `om`: *To put it one way, …* |
+| `e` (*instead*) | `el`: *Instead, …* | `em`: *Instead, for instance, …* |
+| `u` (*except*) | `ul`: *Except, …* | `um`: *Except, among other exceptions, …* |
 
-With **-r**, a hook at the front points back to an earlier stretch of talk, not just the last sentence, the way [**-r**](in-clause-hooks.md#hook-resume) on a hook inside the clause points back to a landmark.
+With `-r`, a hook at the front points back to an earlier stretch of talk, not just the last sentence, the way [`-r`](in-clause-hooks.md#hook-resume) on a hook inside the clause points back to a landmark.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| `er …` | back to the main line after a side topic | *Anyway, …* | **e** ≈ replaced (the main thread again) |
-| `or …` | say an earlier point again | *As I said, …* | **o** ≈ still A (the wording again) |
-| `ar …` | add to an earlier point, not the last one | *Going back to that, …* | **a** ≈ add |
-| `ur …` | drop the last point | *Never mind that, …* | **u** ≈ undo |
+| `er …` | back to the main line after a side topic | *Anyway, …* | `e` ≈ replaced (the main thread again) |
+| `or …` | say an earlier point again | *As I said, …* | `o` ≈ still A (the wording again) |
+| `ar …` | add to an earlier point, not the last one | *Going back to that, …* | `a` ≈ add |
+| `ur …` | drop the last point | *Never mind that, …* | `u` ≈ undo |
 
 > `er zazozon vowurol.`
 >
@@ -39,11 +39,11 @@ With **-r**, a hook at the front points back to an earlier stretch of talk, not 
 >
 > "Never mind that: Alazun sleeps."
 
-**Compare with:** `el …` *Instead* replaces the last claim. `er …` *Anyway* leaves the side topic standing and returns to the main one; it leaves the [topic](topic.md#topic) alone too, so after a side topic the full return is `er xazozor …`. To go back to a **person or thing** rather than a line of talk, return to it as the [topic](topic.md#topic-return) (`xazozor`), which also makes it the topic again.
+**Compare with:** `el …` *Instead* replaces the last claim. `er …` *Anyway* leaves the side topic standing and returns to the main one; it leaves the [topic](topic.md#topic) alone too, so after a side topic the full return is `er xazozor …`. To go back to a *person or thing* rather than a line of talk, return to it as the [topic](topic.md#topic-return) (`xazozor`), which also makes it the topic again.
 
 ### Opening a sentence with stacked hooks {#stacked-discourse}
 
-English *In fact, …* or *What's more, …* adds a point that goes further than what came before. At the front of a sentence, with no `/b/` right after it, the two-vowel hook **`aol`** does this job. (cue: **ao** ≈ add, ranked upward)
+English *In fact, …* or *What's more, …* adds a point that goes further than what came before. At the front of a sentence, with no `/b/` right after it, the two-vowel hook **`aol`** does this job. (cue: `ao` ≈ add, ranked upward)
 
 > `aol zalazun vezuvel.`
 >
@@ -51,7 +51,7 @@ English *In fact, …* or *What's more, …* adds a point that goes further than
 >
 > "In fact, Alazun sleeps."
 
-Opening with **`ael …`** gives English *For example, …*: this sentence is one case of what you just said. (cue: **ae** ≈ add one sample) With **-m**, `aem …` adds *among others* and `aom …` adds *in fact, and maybe more*. No other two-vowel hook opens a sentence: for *next*, *by the way*, and *on the contrary*, use a [linker](sentence-linkers.md#sentence-linkers).
+Opening with **`ael …`** gives English *For example, …*: this sentence is one case of what you just said. (cue: `ae` ≈ add one sample) With `-m`, `aem …` adds *among others* and `aom …` adds *in fact, and maybe more*. No other two-vowel hook opens a sentence: for *next*, *by the way*, and *on the contrary*, use a [linker](sentence-linkers.md#sentence-linkers).
 
 > `zuvayal vowurol. ael zalazun vowurol.`
 >
@@ -67,14 +67,14 @@ Beginner put a discourse hook at the front of a plain statement. It can sit in t
 
 | Placement | Ageben | Use |
 |-----------|--------|-----|
-| Before a written turn marker | `HOOK yal BODY` | The written **`yal`** / **`yel`** / …, after any vocatives and interjections |
-| Before a default-statement body | `HOOK BODY` | Implied **`yal`** ([speech moves](/firm-soft#speech-act)) |
+| Before a written turn marker | `HOOK yal BODY` | The written `yal` / `yel` / …, after any vocatives and interjections |
+| Before a default-statement body | `HOOK BODY` | Implied `yal` ([speech moves](/firm-soft#speech-act)) |
 | Later clause under `/x/` | `… JOIN HOOK BODY` | Same as the opener |
 | Before an `/x/` linker | `HOOK LINKER BODY` | Same as prior talk |
 
 A sentence opening takes only one discourse hook; you cannot chain them the way you chain in-clause hooks. After a written turn marker, a hook inside the body is an in-clause hook.
 
-On a later clause in a [clause `/x/` join](/joins#clause-joins), the hook goes right after the join, before that clause’s body: `A xam al B` → *A and additionally B*. Before an **`/x/`** linker (*therefore*, *however*, …), it applies to the linker and the rest of the sentence together: `al xahom …` → *Additionally, therefore …*. When one connective is enough, prefer plain `al …` or plain `xahom …`.
+On a later clause in a [clause `/x/` join](/joins#clause-joins), the hook goes right after the join, before that clause’s body: `A xam al B` → *A and additionally B*. Before an `/x/` linker (*therefore*, *however*, …), it applies to the linker and the rest of the sentence together: `al xahom …` → *Additionally, therefore …*. When one connective is enough, prefer plain `al …` or plain `xahom …`.
 
 > `yazozon al zalazun vowurol.`
 >

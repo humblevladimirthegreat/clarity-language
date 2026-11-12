@@ -4,9 +4,11 @@ band: intermediate
 
 # Exclusive and ranked times {#exclusive-and-ranked-times}
 
+Beginner restrictors said *only when*, *always*, and *sometimes*. This page first sets them apart from a whole sentence used as the occasion (*if Azozon walks*), which takes a hinge word instead. It then gives the rest of the restrictor vowel map, for *either when A or when B* and *always except when…*. Next come the ranked restrictors, for *preferably when A, or else when B*, and last the restrictors that point at some time without saying which.
+
 ### Occasions vs a dependent *when*
 
-English *when* / *if* can introduce a whole **sentence** as the occasion (*if Azozon walks*). Write that with a hinge word, `/h/` (*when*) or `/th/` (*if*), plus `/b/` [**`blarl`**](/dependents#hinges). The main sentence stops after **`blarl`**; the next sentence is the occasion. Use a restrictor when each occasion is a word in the adverb slot; use **`blarl`** when the occasion is a full clause.
+English *when* / *if* can introduce a whole *sentence* as the occasion (*if Azozon walks*). Write that with a hinge word, `/h/` (*when*) or `/th/` (*if*), plus `/b/` [`blarl`](/dependents#hinges). The main sentence stops after `blarl`; the next sentence is the occasion. Use a restrictor when each occasion is an adverb; use `blarl` when the occasion is a full clause.
 
 > `zahelan vozuyel thohem blarl zazozon vowurol.`
 >
@@ -21,7 +23,7 @@ A listed restrictor occasion can also be a longer unit: an `/h/` word with its `
 ### Set / invert / inclusive {#more-occasions}
 <a id="defined-core-full"></a>
 
-Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometimes* / *anytime* / *some other time* (`har` / `her` / `hur`). The rest of the same vowel map names exclusive, inclusive, *not when*, ranked, and leftover readings. `/w/` uses that **same** map on the next adjective or prefix-less hook (`wal` / `wam` / `wual` / `wuam` / `war` / `wer` / `wur`, and the rows below). The occasion words and their restrictor count as one `/h/` unit (or, on `/w/`, one run of words immediately before the adjective or hook they limit).
+Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometimes* / *anytime* / *some other time* (`har` / `her` / `hur`). The rest of the same vowel map covers other ways English combines listed times: *either when A or when B* (not both), *when A and/or when B*, *not when…*, and *anytime except when…*; the ranked readings follow in the next section. `/w/` uses that *same* map on the next adjective or prefix-less hook (`wal` / `wam` / `wual` / `wuam` / `war` / `wer` / `wur`, and the rows below). The occasion words and their restrictor count as one `/h/` unit (or, on `/w/`, one run of words immediately before the adjective or hook they limit).
 
 > `zazozon vowurol herulal hanurul hel.`
 >
@@ -38,26 +40,26 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 <!-- cheat-sheet: restrictors-spans -->
 | Ageben | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
-| **`hal` / `ham`** | listed times; empty list is *never* | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never, as far as I know* | **a** ≈ add |
-| **`hel` / `hem`** | one exclusive time menu | *either when A or when B (not both)*; **`hem`** also allows *or never* | | **e** ≈ choice |
-| **`hael` / `haem`** | any of the listed times suffices | *when A and/or when B* | | **a** ≈ add the others + **e** ≈ choice: any listed time suffices |
-| **`hul` / `hum`** | invert the listed times | *not when…* / *not when…, for one* | | **u** ≈ undo |
-| **`hual` / `huam`** | every time minus listed exceptions | *always except when…* | ***always*** / *usually* (*always, as far as I know*) | **u** ≈ undo then **a** ≈ add |
-| **`huel` / `huem`** | any leftover time minus listed exceptions | *anytime except when…* | | **u** ≈ undo + **e** ≈ choice |
+| `hal` / `ham` | listed times; empty list is *never* | *only when…* (closed) / *when…, among other occasions* (open) | *never* / *never, as far as I know* | `a` ≈ add |
+| **`hel` / `hem`** | one exclusive time menu | *either when A or when B (not both)*; `hem` also allows *or never* | | `e` ≈ choice |
+| **`hael` / `haem`** | any of the listed times suffices | *when A and/or when B* | | `a` ≈ add the others + `e` ≈ choice: any listed time suffices |
+| **`hul` / `hum`** | invert the listed times | *not when…* / *not when…, for one* | | `u` ≈ undo |
+| `hual` / `huam` | every time minus listed exceptions | *always except when…* | *always* / *usually* (*always, as far as I know*) | `u` ≈ undo then `a` ≈ add |
+| **`huel` / `huem`** | any leftover time minus listed exceptions | *anytime except when…* | | `u` ≈ undo + `e` ≈ choice |
 
-**Compare with:** **`hur`** is some leftover occasion (*some other time*). **`huel`** is leftover times in general (*anytime except when…*).
+**Compare with:** `hur` is some leftover occasion (*some other time*). `huel` is leftover times in general (*anytime except when…*).
 
 ### Ranked (with listed occasions) {#ranked-with-listed-occasions}
 
-Closed **`hol`** ranks the listed occasions: the first one listed is the preferred time. Plain **`hal`** means *only when* these times, with no ranking among them.
+English *preferably when A, or else when B* ranks the times it lists. Closed **`hol`** ranks the listed occasions: the first one listed is the preferred time. Plain `hal` means *only when* these times, with no ranking among them.
 
 <!-- cheat-sheet: restrictors-spans -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`hol` / `hom`** | priority among occasions | *preferably when A ≻ when B…* (closed / open) | **o** ≈ rank |
-| **`haol` / `haom`** | occasions in order | *first when A, then when B* (closed / open) | **a** ≈ add + **o** ≈ rank |
-| **`hoel` / `hoem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **o** ≈ rank + **e** ≈ choice |
-| **`huol` / `huom`** | occasions last-first | *as a last resort when A* (one occasion); several run last-listed first (closed / open) | **u** ≈ undo + **o** ≈ rank |
+| **`hol` / `hom`** | priority among occasions | *preferably when A ≻ when B…* (closed / open) | `o` ≈ rank |
+| **`haol` / `haom`** | occasions in order | *first when A, then when B* (closed / open) | `a` ≈ add + `o` ≈ rank |
+| **`hoel` / `hoem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | `o` ≈ rank + `e` ≈ choice |
+| **`huol` / `huom`** | occasions last-first | *as a last resort when A* (one occasion); several run last-listed first (closed / open) | `u` ≈ undo + `o` ≈ rank |
 
 > `zazozon vowurol hebeham hanurul hol.`
 >
@@ -65,7 +67,7 @@ Closed **`hol`** ranks the listed occasions: the first one listed is the preferr
 >
 > "Azozon walks preferably on weekends, or else at night."
 
-One occasion before **`huol`** is the last resort: the claim counts there, but only when nothing better applies. With several, the order reverses, as with [`zuol`](rank-joins.md#invert-u-stacks): the last one listed is the most preferred, so `herulal hanurul huol` makes night the first choice and rain the last. On `/w/` the same words limit the next adjective (`wuol` / `wuom`).
+One occasion before `huol` is the last resort: the claim counts there, but only when nothing better applies. With several, the order reverses, as with [`zuol`](rank-joins.md#invert-u-stacks): the last one listed is the most preferred, so `herulal hanurul huol` makes night the first choice and rain the last. On `/w/` the same words limit the next adjective (`wuol` / `wuom`).
 
 > `zazozon vowurol herulal huol.`
 >
@@ -75,17 +77,17 @@ One occasion before **`huol`** is the last resort: the claim counts there, but o
 
 ### Unspecified-member (`-r`) {#unspecified-member-r}
 
-Statement readings below. Asking *when*: [When?](/fill-ask-jobs#when).
+With `-r`, a restrictor says the claim holds at some time without saying which. The table gives the statement readings; to ask *when*, see [When?](/fill-ask-jobs#when).
 
 <!-- cheat-sheet: restrictors-spans -->
 | Ageben | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
-| **`har`** | unspecified member of the listed times | *sometimes among these* | *sometimes* | **-r** some member |
-| **`her`** | unspecified member of a one-choice time menu | *anytime among these* | *anytime* | **e** ≈ choice + **-r** |
-| **`hur`** | unspecified leftover occasion | *some time other than these* | *some other time* | **u** ≈ undo + **-r** |
-| **`hor`** | unspecified first-ranked occasion | *at whichever of these ranks first* | *at the preferred time* | **o** ≈ rank + **-r** |
+| `har` | unspecified member of the listed times | *sometimes among these* | *sometimes* | `-r` some member |
+| `her` | unspecified member of a one-choice time menu | *anytime among these* | *anytime* | `e` ≈ choice + `-r` |
+| `hur` | unspecified leftover occasion | *some time other than these* | *some other time* | `u` ≈ undo + `-r` |
+| **`hor`** | unspecified first-ranked occasion | *at whichever of these ranks first* | *at the preferred time* | `o` ≈ rank + `-r` |
 
-Under a question, **`hor`** asks which time ranks first: *When's best?* With occasions before it, the listener picks the one they prefer.
+Under a question, `hor` asks which time ranks first: *When's best?* With occasions before it, the listener picks the one they prefer.
 
 > `yel hor zayan vowurol.`
 >

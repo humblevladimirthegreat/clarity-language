@@ -4,11 +4,11 @@ band: intermediate
 
 # Ranges {#ranges-sitting}
 
-English *A through B*, *up to but not including B*, *strictly between*, *outside A–B*, and *from 3 to 5* name a stretch along an ordered line. Ageben writes each with one hook between the two ends.
+English *A through B*, *up to but not including B*, *strictly between*, *outside A–B*, and *from 3 to 5* name a stretch along an ordered line. Ageben writes each with one hook between the two ends. The first section uses these hooks on people, days, and other ordered items; the second uses the same hooks on numbers.
 
 ### Ranges (`oel` / `uel` / `ual` / `uol` / `aol`) {#ranges}
 
-When the items sit on a line with an order (people in a queue, days, chapters, numbers), English *A through B* names a **range**: A, B, and everything between. Put a stacked hook between two words in the same role: `A HOOK B`. Between same-role words these hooks name only ranges; with `/b/` on the right and no `/b/` on the left, they are [extra-noun hooks](/hooks#extra-noun) (*toward*, *through*, *out of*, *against*, *using*).
+When the items sit on a line with an order (people in a queue, days, chapters, numbers), English *A through B* names a **range**: A, B, and everything between. Put a stacked hook between two words in the same role: `A HOOK B`. The hook says which ends are in, and whether the members count all at once or one after another. Between same-role words these hooks name only ranges; with `/b/` on the right and no `/b/` on the left, they are [extra-noun hooks](/hooks#extra-noun) (*toward*, *through*, *out of*, *against*, *using*).
 
 > `zazozon oel zahelan vowurol.`
 >
@@ -19,13 +19,13 @@ When the items sit on a line with an order (people in a queue, days, chapters, n
 <!-- cheat-sheet: joins-hooks -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`oel`** | A, B, and everything between | *A through B* | **o** ≈ for (`ol`) + **e** ≈ at a point (`el`): start at A, head for point B, take everything on the way |
-| **`uel`** | A and everything between, B left out | *from A up to but not including B* | **u** ≈ leave out (`ul`) + **e** ≈ the point B (`el`): leave out B |
-| **`ual`** | only what lies outside | *outside A–B* | **u** ≈ leave out + **a** ≈ the stretch (`al`): leave out the stretch |
-| **`uol`** | only what lies between | *strictly between A and B* | **u** ≈ leave out + **o** ≈ the two ends you aim at (`ol`): leave out the ends |
-| **`aol`** | A through B, one after another | *A through B, in turn* | **a** ≈ the stretch + **o** ≈ the aim: go through the stretch toward B |
+| **`oel`** | A, B, and everything between | *A through B* | `o` ≈ for (`ol`) + `e` ≈ at a point (`el`): start at A, head for point B, take everything on the way |
+| **`uel`** | A and everything between, B left out | *from A up to but not including B* | `u` ≈ leave out (`ul`) + `e` ≈ the point B (`el`): leave out B |
+| **`ual`** | only what lies outside | *outside A–B* | `u` ≈ leave out + `a` ≈ the stretch (`al`): leave out the stretch |
+| **`uol`** | only what lies between | *strictly between A and B* | `u` ≈ leave out + `o` ≈ the two ends you aim at (`ol`): leave out the ends |
+| **`aol`** | A through B, one after another | *A through B, in turn* | `a` ≈ the stretch + `o` ≈ the aim: go through the stretch toward B |
 
-The range runs from A to B, in the order you say them. **`uel`** leaves out the end you say second, so to leave out the low end, say it second:
+The range runs from A to B, in the order you say them. `uel` leaves out the end you say second, so to leave out the low end, say it second:
 
 > `zazozon uel zahelan vowurol.`
 >
@@ -39,7 +39,7 @@ The range runs from A to B, in the order you say them. **`uel`** leaves out the 
 >
 > "Everyone after Azozon, up to and including Ahelan, walks."
 
-**`uol`** leaves out both ends:
+`uol` leaves out both ends:
 
 > `zazozon uol zahelan vezuvel.`
 >
@@ -47,7 +47,7 @@ The range runs from A to B, in the order you say them. **`uel`** leaves out the 
 >
 > "Everyone between Azozon and Ahelan sleeps." (not Azozon or Ahelan themselves)
 
-**`oel`** names a set: everyone in it, all at once. **`aol`** names a walk along the line, one member after another, in the order you say:
+`oel` names a set: everyone in it, all at once. `aol` names a walk along the line, one member after another, in the order you say:
 
 > `zazozon aol zahelan varuyol.`
 >
@@ -55,7 +55,7 @@ The range runs from A to B, in the order you say them. **`uel`** leaves out the 
 >
 > "Azozon through Ahelan write, one after another."
 
-Endings work as on other hooks: **-m** makes the ends soft (*roughly A through B*), and **-n** names the range as a whole. **-r** stands in for one member you are not naming, and under a [question](/questions#fill-ask-r) it asks which one:
+Endings work as on other hooks: `-m` makes the ends soft (*roughly A through B*), and `-n` names the range as a whole. `-r` stands in for one member you are not naming, and under a [question](/questions#fill-ask-r) it asks which one:
 
 > `zazozon uor zahelan vezuvel.`
 >
@@ -69,7 +69,7 @@ Endings work as on other hooks: **-m** makes the ends soft (*roughly A through B
 >
 > "Someone from Azozon up to Ahelan, but not Ahelan, sleeps."
 
-On **`aol`**, the one member **-r** stands in for is the one the walk is on now: *whoever's turn it is*. The members before it have had their turn.
+On `aol`, the one member `-r` stands in for is the one the walk is on now: *whoever's turn it is*. The members before it have had their turn.
 
 > `zazozon aor zahelan varuyol.`
 >
@@ -77,7 +77,7 @@ On **`aol`**, the one member **-r** stands in for is the one the walk is on now:
 >
 > "Whoever's turn it is, from Azozon through Ahelan, writes."
 
-Under a question, **-r** on **`oel`** asks only *which one?*. The range is then the [fill-ask](/questions#fill-ask) blank, so it goes first, both ends included:
+Under a question, `-r` on `oel` asks only *which one?*. The range is then the [fill-ask](/questions#fill-ask) blank, so it goes first, both ends included:
 
 > `yel zazozon oer zahelan varuyol.`
 >
@@ -85,7 +85,7 @@ Under a question, **-r** on **`oel`** asks only *which one?*. The range is then 
 >
 > "Which one, from Azozon through Ahelan, writes?"
 
-On **`aol`** it asks *which one now?*, *whose turn is it?*:
+On `aol` it asks *which one now?*, *whose turn is it?*:
 
 > `yel zazozon aor zahelan varuyol.`
 >
@@ -95,9 +95,9 @@ On **`aol`** it asks *which one now?*, *whose turn is it?*:
 
 Answer as for any blank in the ends' role: a citation (`yal alazun.` *Alazun.*), or the noun with its letter (`yal zalazun.`).
 
-A range **-r** always has a word on each side. With nothing on the right, extra-noun **-r** is not a range.
+A range `-r` always has a word on each side. With nothing on the right, extra-noun `-r` is not a range.
 
-The two ends are two points on one ordered line, in any same-role slot. Between two recipient `/b/` words:
+The two ends are two points on one ordered line, in any role the two share. Between two recipient `/b/` words:
 
 > `zalazun varal bazozon oel bahelan.`
 >
@@ -113,11 +113,11 @@ A word right after B describes B alone, not the range. To describe the range its
 >
 > "Everyone from Azozon all the way through Ahelan walks." (a surprisingly wide range)
 
-**Compare with:** `zazozon zahelan zal` is *Azozon and Ahelan*, the two ends only. `zazozon zahelan zaol` is *Azozon, then Ahelan*, an order that names every member; **`aol`** gives the order from the two ends alone.
+**Compare with:** `zazozon zahelan zal` is *Azozon and Ahelan*, the two ends only. `zazozon zahelan zaol` is *Azozon, then Ahelan*, an order that names every member; `aol` gives the order from the two ends alone.
 
-**Compare with:** for *through* in a range, use **`oel`**; **`uel`** leaves B out. As an extra noun, `uel` + `/b/` is *through* a place.
+**Compare with:** for *through* in a range, use `oel`; `uel` leaves B out. As an extra noun, `uel` + `/b/` is *through* a place.
 
-**Compare with:** a hook right after a [landmark](/extra-noun-hooks#extra-noun-intermediate) describes that landmark, never a range: `al bohehal oel bobewol` is *in the house toward the pencil*. For *from X to Y*, use **`ul`** … **`oel`** with a `/b/` after each (`zazozon ul b_9 oel b_17 vowurol`, *Azozon walks from 9:00 to 17:00*).
+**Compare with:** a hook right after a [landmark](/extra-noun-hooks#extra-noun-intermediate) describes that landmark, never a range: `al bohehal oel bobewol` is *in the house toward the pencil*. For *from X to Y*, use `ul` … `oel` with a `/b/` after each (`zazozon ul b_9 oel b_17 vowurol`, *Azozon walks from 9:00 to 17:00*).
 
 ### Ranges of numbers {#number-ranges}
 
@@ -137,9 +137,9 @@ To count a range of things, put the endpoints on the counted noun, the same way 
 >
 > "Three to five dogs walk."
 
-A word on the counted noun describes the whole range. A word after **B** still describes **B** alone, as with any range.
+A word on the counted noun describes the whole range. A word after B still describes B alone, as with any range.
 
-The other range hooks and endings work the same way. **`uel`** still leaves out the end you say second:
+The other range hooks and endings work the same way. `uel` still leaves out the end you say second:
 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English |
@@ -152,11 +152,11 @@ The other range hooks and endings work the same way. **`uel`** still leaves out 
 
 An endpoint can still be fuzzy on its own (`zragel oel zrazam` = *3 to about 5*).
 
-**Both ends are the same kind of number.** A range needs one ordered line, and each number's [marker](number-markers.md#marker-vowel-referential-identity) says which line it is on: amounts (**`+`** / **`-`**), ordinals (**`#`**), or labels and times (**`_`**). A number with no digits is an end too. An amount through an ordinal (*three through 2nd*) has no reading. A name pairs with any number: `zazozon oel zrogel` is *from Azozon through the 3rd in line*.
+Both ends are the same kind of number. A range needs one ordered line, and each number's [marker](number-markers.md#marker-vowel-referential-identity) says which line it is on: amounts (`+` / `-`), ordinals (`#`), or labels and times (`_`). A number with no digits is an end too. An amount through an ordinal (*three through 2nd*) has no reading. A name pairs with any number: `zazozon oel zrogel` is *from Azozon through the 3rd in line*.
 
 **Compare with:** `zragel al zrazal` is *3, including 5*: an ordinary [hook](/hooks#including), not a range.
 
-**Compare with:** `zragel zrazal zaol` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zazozon zalazun zol gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [extra-noun hooks](/hooks#extra-noun), one for each place and each with its `/b/`, not a range.
+**Compare with:** `zragel zrazal zaol` is *3, then 5*: two values in order, not a band. `zragel zrazal zal` is *3 and 5*. `zazozon zalazun zol gamahum` ranks *people* on a scale. A place path (*from a station to a train*) uses two [extra-noun hooks](/hooks#extra-noun), one for each place and each with its `/b/`, not a range.
 
 ### Practice {#intermediate-practice}
 
