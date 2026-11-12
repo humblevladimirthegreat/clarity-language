@@ -4,7 +4,7 @@ band: advanced
 
 # Infinity, zero, and hyperbole {#infinity-zero-and-hyperbole}
 
-To say *infinitely many*, *last place*, *a gazillion*, or *absolutely zero*, write the exponent mark **`wa`** or **`wu`** with **no** exponent digits. What the word means depends on what comes before the empty exponent: nothing, nonzero mantissa digits, or the mantissa **`0`** (table). A word has only one such group, and that group takes no percent closer.
+English has words for amounts and places past ordinary counting: *infinitely many*, *last place*, *a gazillion*, *absolutely zero*. Ageben writes the exponent mark **`wa`** or **`wu`** with no exponent digits, and what comes before that empty exponent picks the meaning: nothing, nonzero mantissa digits, or the mantissa `0` (table). A word has only one such group, and that group takes no percent closer. All three kinds keep their meaning as a stance, where they say how sure you are.
 
 | Shape | Reading |
 |-------|---------|
@@ -12,7 +12,7 @@ To say *infinitely many*, *last place*, *a gazillion*, or *absolutely zero*, wri
 | **Mantissa `≠0` + `wa`/`wu`∅** | hyperbole (*N gazillion* / *umpteenth*) |
 | **Mantissa `0` + `wa`/`wu`∅** | zero × digitless exp |
 
-**Writing:** **`e`** = speech **`wa`**; **`e-`** = speech **`wu`**. Digitless means no power digits after that mark. Bare / assert **`e0`** writes power **`0`** (not digitless): [bare OoM](/digitless-exponents#bare-oom).
+In writing, `e` stands for speech `wa`, and `e-` for speech `wu`. Digitless means no power digits after that mark. The bare or asserting `e0` writes the power `0`, so it is not digitless ([bare OoM](/digitless-exponents#bare-oom)).
 
 The marker still says amount or rank. A code has no magnitude, so it takes no exponent.
 
@@ -20,6 +20,8 @@ The marker still says amount or rank. A code has no magnitude, so it takes no ex
 <a id="extremum-digitless"></a>
 <a id="infinity"></a>
 <a id="special-numeric-values"></a>
+
+With nothing before the empty exponent, the number names a special value: plus or minus infinity, last place, the start place, or an amount a hair over or under. One number word then says *infinitely many* or *last place*.
 
 > `zogozelx grawal.`
 > z-cat-x | g-plus-infinity
@@ -31,37 +33,46 @@ The marker still says amount or rank. A code has no magnitude, so it takes no ex
 <!-- cheat-sheet: numbers -->
 | Form | Anatomy | Reading |
 |------|---------|---------|
-| **`g+e`** (etc.) | **`ra`** + **`wa`∅** + **-l** | **+∞** |
-| **`g~+e`** | **`ra`** + **`wa`∅** + **-m** | **arbitrarily large but finite** |
-| **`g+e-`** | **`ra`** + **`wu`∅** + **-l** | **arbitrarily small but finite** |
-| **`g-e`** | **`ru`** + **`wa`∅** + **-l** | **−∞** |
-| **`g~-e`** | **`ru`** + **`wa`∅** + **-m** | **arbitrarily large but finite** (negative / deficit) |
-| **`g#e`** | **`re`** + **`wa`∅** + **-l** | **last place** / final-place landmark |
-| **`g~#e`** | **`re`** + **`wa`∅** + **-m** | **near last place** |
-| **`g#e-`** | **`re`** + **`wu`∅** + **-l** | **start / beginning place** / origin landmark: first with emphasis on **onset** (*the starting one*, *at the beginning*). Numbered 1st is `g#1`. Ultimate-ancestor pole |
-| **`g~#e-`** | **`re`** + **`wu`∅** + **-m** | **near first place** |
-| **`g-e-`** | **`ru`** + **`wu`∅** + **-l** | **just short:** arbitrarily small but finite shortfall (*a hair under*); against a target, *almost* |
-| **`g~-e-`** | **`ru`** + **`wu`∅** + **-m** | **nearly**: a small shortfall, not claimed to be tiny |
+| **`g+e`** (etc.) | **`ra`** + **`wa`∅** + `-l` | **+∞** |
+| **`g~+e`** | **`ra`** + **`wa`∅** + `-m` | **arbitrarily large but finite** |
+| **`g+e-`** | **`ra`** + **`wu`∅** + `-l` | **arbitrarily small but finite** |
+| **`g-e`** | **`ru`** + **`wa`∅** + `-l` | **−∞** |
+| **`g~-e`** | **`ru`** + **`wa`∅** + `-m` | **arbitrarily large but finite** (negative / deficit) |
+| **`g#e`** | **`re`** + **`wa`∅** + `-l` | **last place** / final-place landmark |
+| **`g~#e`** | **`re`** + **`wa`∅** + `-m` | **near last place** |
+| **`g#e-`** | **`re`** + **`wu`∅** + `-l` | **start / beginning place** / origin landmark: first with emphasis on **onset** (*the starting one*, *at the beginning*). Numbered 1st is `g#1`. Ultimate-ancestor pole |
+| **`g~#e-`** | **`re`** + **`wu`∅** + `-m` | **near first place** |
+| **`g-e-`** | **`ru`** + **`wu`∅** + `-l` | **just short:** arbitrarily small but finite shortfall (*a hair under*); against a target, *almost* |
+| **`g~-e-`** | **`ru`** + **`wu`∅** + `-m` | **nearly**: a small shortfall, not claimed to be tiny |
 
 Same under `/z/` `/d/` `/b/` (`zrawal` = +∞ as subject; `drowul` = start-place as object; `brawul` = *of an arbitrarily small but finite amount*; `zruwul` = a hair-short amount as subject). Contrast **`grobal`** = numbered *first* / *1st*; **`growal`** = last-place landmark; **`growul`** = beginning/onset landmark.
 
 <a id="just-short"></a>
 
-**Just short (`gruwul`):** negative marker (**`ru`**) + digitless negative exponent (**`wu`∅**), no mantissa. It mirrors **`grawul`** (a hair over zero): **`gruwul`** is a hair **under**: the smallest shortfall. Against a target it reads *almost*.
+**Just short (`gruwul`):** the negative marker `ru` plus a digitless negative exponent (`wu`∅), with no mantissa. It mirrors `grawul`, a hair over zero: `gruwul` is a hair under, the smallest shortfall. Against a target it reads *almost*.
 
-**Compare with:** the same form on each role letter: **`gruwul`** the amount, **`xruwul`** *just before that:*, **`thruwul`** *virtually*, **`vruwul`** *nudge down*, **`hruwul`** *almost*, **`yruwul`** *so close!*. Pretend *as if* is a different thing: the mood **`eyu`** ([Notional](/notional#notional), e.g. `theyum`).
+**Compare with:** the same form on each role letter, in the table below. Pretend *as if* is a different thing: the mood `eyu` ([Notional](/notional#notional), e.g. `theyum`).
+
+| Form | Reading |
+|------|---------|
+| `gruwul` | the amount |
+| `xruwul` | *just before that:* |
+| `thruwul` | *virtually* |
+| `vruwul` | *nudge down* |
+| `hruwul` | *almost* |
+| `yruwul` | *so close!* |
 
 **Endings** (no-mantissa specials):
 
 | Ending | Sense |
 |--------|-------|
-| **-l** | Exact special value (default): +∞ / −∞ / last place / start place / arbitrarily small but finite / just short as in the form table |
-| **-m** on **`wa`∅** (`…em`) | **Arbitrarily large but finite** on scalars (`g~+e` / `g~-e`); on ordinals (`g~#e`) = **near last place** |
-| **-m** on **`wu`∅** (`…e-m`) | Soft / approximate small on scalars (`g~+e-`); *nearly* on **`ru`+`wu`∅** (`g~-e-`); on ordinals (`g~#e-`) = **near first place** |
-| **-n** | Named designation of that special (named ∞ symbol, official *last place* / *starting* title, …) |
-| **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that arbitrarily small amount again*; `g=-e-` = *that same hair-short amount again*) |
+| `-l` | Exact special value (default): +∞ / −∞ / last place / start place / arbitrarily small but finite / just short as in the form table |
+| `-m` on **`wa`∅** (`…em`) | **Arbitrarily large but finite** on scalars (`g~+e` / `g~-e`); on ordinals (`g~#e`) = **near last place** |
+| `-m` on **`wu`∅** (`…e-m`) | Soft / approximate small on scalars (`g~+e-`); *nearly* on **`ru`+`wu`∅** (`g~-e-`); on ordinals (`g~#e-`) = **near first place** |
+| `-n` | Named designation of that special (named ∞ symbol, official *last place* / *starting* title, …) |
+| `-r` | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that arbitrarily small amount again*; `g=-e-` = *that same hair-short amount again*) |
 
-These hair amounts also date an event: with no unit, they fill the [signed time offset](/dated-channel#dated-channel) right after an evidential. For *just* and *about to*, **`blruwul`** is *a hair before now*, **`blrawul`** is *a hair after now*.
+These hair amounts also date an event: with no unit, they fill the [signed time offset](/dated-channel#dated-channel) right after a channel word. For *just* and *about to*, **`blruwul`** is *a hair before now*, **`blrawul`** is *a hair after now*.
 
 > `zazozon thevum blruwul vowurol.`
 >
@@ -75,7 +86,7 @@ These hair amounts also date an event: with no unit, they fill the [signed time 
 >
 > "It looks like it's about to rain."
 
-For *soon*, soften that hair with open **-m**: **`blrawum`** is *a short while after now*. It is later than *about to* (`blrawul`) but still close, unlike open-ended *later* (`blral`).
+For *soon*, soften that hair with open `-m`: **`blrawum`** is *a short while after now*. It is later than *about to* (`blrawul`) but still close, unlike open-ended *later* (`blral`).
 
 > `theyom blrawum verulal.`
 >
@@ -93,7 +104,7 @@ The mirror, **`blruwum`**, is *a short while before now*: *recently*.
 
 #### Number as verb and adverb {#special-number-as-verb-and-adverb}
 
-On `/v/` and `/h/`, these special values (∞, last, start, a tiny amount) become actions and adverbs. Soft **-m** softens them the same way it does on `/ɡ/` (*a lot but finite*, *near last*, …).
+On `/v/` and `/h/`, these special values (∞, last, start, a tiny amount) become actions and adverbs. Soft `-m` softens them the same way it does on `/ɡ/` (*a lot but finite*, *near last*, …).
 
 **Scalars (`ra` / `ru`):**
 
@@ -113,7 +124,7 @@ On `/v/` and `/h/`, these special values (∞, last, start, a tiny amount) becom
 | **`h-e-`** | **almost**: the action falls a hair short of one full time (`zazozon h-e- vehohel.` *Azozon almost sits*) |
 | **`h~-e-`** | *came close*: it fell short despite a real effort |
 
-**Margin vs effort:** **-l** (`hrawul` / `hruwul`) measures the margin: over or under by a hair. **`~`** (**-m**) reports the felt effort instead: `zazozon hrawum vehohel.` is *Azozon managed to sit, just*; `zazozon hruwum vehohel.` is *Azozon tried hard to sit and didn't quite*. Division into parts keeps its counted form `h-N`.
+**Margin vs effort:** the `-l` ending (`hrawul` / `hruwul`) measures the margin, over or under by a hair. Written `~` (the `-m` ending), the form reports the felt effort instead: `zazozon hrawum vehohel.` is *Azozon managed to sit, just*; `zazozon hruwum vehohel.` is *Azozon tried hard to sit and didn't quite*. Division into parts keeps its counted form `h-N`.
 
 **On a quality:** the same pair sits on `/w/` before an adjective or adverb. **`wrawul`** = *barely*; **`wruwul`** = *almost*.
 
@@ -122,7 +133,7 @@ On `/v/` and `/h/`, these special values (∞, last, start, a tiny amount) becom
 >
 > "An almost angry dog walks."
 
-**Stance:** a whole claim that holds all but a hair is stance, not manner, so it sits on `/th/`: **`thruwul`** = *virtually* / *practically*; **`thruwum`** = *more or less*. **`hruwul`** says the event fell short; **`thruwul`** says your claim is a hair short of exact.
+**Stance:** a whole claim that holds all but a hair is stance, not manner, so it sits on `/th/`: **`thruwul`** = *virtually* / *practically*; **`thruwum`** = *more or less*. `hruwul` says the event fell short; `thruwul` says your claim is a hair short of exact.
 
 **Ordinals (`re`), start/last landmarks:**
 
@@ -137,7 +148,7 @@ On `/v/` and `/h/`, these special values (∞, last, start, a tiny amount) becom
 | **`h#e-`** | *for the first time* (onset framing). Numbered **`h#1`** is a counted first. |
 | **`h~#e-`** | *for a near-first time* |
 
-Soft, named, and resume endings (**`~`** / **`@`** / **`=`**) work as on the other special values.
+Soft, named, and resume endings (`~` / `@` / `=`) work as on the other special values.
 
 #### Number as interjection {#special-number-as-interjection}
 
@@ -156,19 +167,28 @@ On `/y/`, the special values are cheers:
 
 #### Number as discourse {#special-number-as-discourse}
 
-**Last point / *Finally*:** **`xrowal`** = *Finally:* / *last point:* (committed coda item). Soft **`xrowam`** = near-final; named **`xrowan`** = ritual / titled *Finally*; **`xrowar`** resumes that last-point marker. Extra items use discourse hook **`al`** (*additionally*: [Glue this sentence to prior talk](/hooks#discourse-hooks)).
+As discourse, last place and the start place mark the last point and the starting point of what you are telling:
 
-**Starting point / *Starting with*:** **`xrowul`** = *Starting with:* / *to begin:* (committed opening item). Soft **`xrowum`** = near-start; named **`xrowun`** = ritual / titled *Starting with*; **`xrowur`** resumes that start-point marker. Numbered *firstly* is **`xrobal`**.
+| Ending | Last point / *Finally* | Starting point / *Starting with* |
+|--------|------------------------|----------------------------------|
+| Committed | **`xrowal`** = *Finally:* / *last point:* (committed closing item) | **`xrowul`** = *Starting with:* / *to begin:* (committed opening item) |
+| Soft | `xrowam` = near-final | `xrowum` = near-start |
+| Named | `xrowan` = ritual / titled *Finally* | `xrowun` = ritual / titled *Starting with* |
+| Resume | `xrowar` resumes that last-point marker | `xrowur` resumes that start-point marker |
 
-Under `/x/`, a digitful exponent on **`#`** is **outline depth** relative to the focused agenda item: **`x#3e2`** = *3rd sub-sub-point under the focus*; **`xrowubal`** = *parent-layer item(s)*; **`xrowamol`** = *current-layer item(s)*. A flat list uses **`x#N`** (and *Finally* / *Starting with* as above).
+Extra items use the discourse hook `al` (*additionally*: [Glue this sentence to prior talk](/hooks#discourse-hooks)). Numbered *firstly* is `xrobal`.
 
-These sit beside the numbered points of [Number as discourse marker](/number-roles#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`** ([from the end](stacked-markers.md#from-the-end)). **Just-before discourse:** **`xruwul`** = *just before that:* (step back a moment in the telling). Soft **`xruwum`**; named **`xruwun`**; resume **`xruwur`**. Corroborating is **`xral`**; independent is **`xrul`**.
+Under `/x/`, a digitful exponent on `#` is **outline depth** relative to the focused agenda item: **`x#3e2`** = *3rd sub-sub-point under the focus*; **`xrowubal`** = *parent-layer item(s)*; **`xrowamol`** = *current-layer item(s)*. A flat list uses `x#N` (and *Finally* / *Starting with* as above).
+
+These sit beside the numbered points of [Number as discourse marker](/number-roles#number-as-discourse-marker-by-marker). End-relative discourse points use `x#-N` ([from the end](stacked-markers.md#from-the-end)). Corroborating is `xral`; independent is `xrul`.
+
+**Just-before discourse:** **`xruwul`** = *just before that:* (step back a moment in the telling). Soft `xruwum`; named `xruwun`; resume `xruwur`.
 
 ### Zero × exponent {#zero-exponent}
 <a id="zero-exponential"></a>
 <a id="annihilate"></a>
 
-To say *absolutely nothing*, *empty at the seed*, or *a residue that will not go away*, pair the **mantissa `0`** with an exponent: a digitless one, or the engineering **`e-1`**. Soft, named, and resume endings (**`~`** / **`@`** / **`=`**) work as on the other special values.
+English stresses an empty or leftover amount with phrases like *absolutely nothing*, *empty at the seed*, or *a residue that will not go away*. Ageben pairs the **mantissa `0`** with an exponent: a digitless one, or the engineering `e-1` (an exponent with digits, which puts the zero at the scale 10⁻¹). The result says more than a plain zero: a total wipe, or a leftover that will not go. Soft, named, and resume endings (`~` / `@` / `=`) work as on the other special values.
 
 #### Referential (`/ɡ/` `/z/` `/d/` `/b/`) {#zero-exponent-referential}
 
@@ -184,7 +204,17 @@ To say *absolutely nothing*, *empty at the seed*, or *a residue that will not go
 
 Same under `/z/` `/d/` `/b/` (`zramowal` = absolute-zero as subject; `z+0e-1` = deci-null as subject).
 
-**Emptiness chain (amounts):** **`gruwal`** (−∞ deficit), **`gramol`** (plain zero), **`gramowal`** (absolute zero), **`gramowul`** (sterile micro-null), **`g+0e-1`** (engineering null at 10⁻¹). Bare **`grawamol`** is the [ones decade band](/digitless-exponents#bare-oom-bands) (1–9).
+**Emptiness chain (amounts):** the empty and near-empty amounts side by side.
+
+| Form | Amount |
+|------|--------|
+| `gruwal` | −∞ deficit |
+| `gramol` | plain zero |
+| `gramowal` | absolute zero |
+| `gramowul` | sterile micro-null |
+| `g+0e-1` | engineering null at 10⁻¹ |
+
+Bare `grawamol` is the [ones decade band](/digitless-exponents#bare-oom-bands) (1–9).
 
 **Only amounts take `±0e-1`:** the engineering null uses **`ra`** / **`ru`**.
 
@@ -204,7 +234,7 @@ Same under `/z/` `/d/` `/b/` (`zramowal` = absolute-zero as subject; `z+0e-1` = 
 | **`h-0e`** | with irreducible residual repetition |
 | **`h-0e-1`** | residual repetition **at OoM −1** |
 
-Ones-band / assert-`e0` as verb / adverb / interjection / discourse are ordinary bare OoM / **`Ne0`** (**`vrawamol`**, **`h+3e0`**, …): [Bare OoM](/digitless-exponents#bare-oom-bands). Soft **-m** hedges (*almost annihilate*, *almost deci-null*, …).
+The ones band and the asserting `e0` work as verb, adverb, interjection, and discourse in the ordinary bare-OoM way (`Ne0`, `vrawamol`, `h+3e0`, …): [Bare OoM](/digitless-exponents#bare-oom-bands). Soft `-m` hedges them (*almost annihilate*, *almost deci-null*, …).
 
 #### Number as interjection {#zero-exponent-number-as-interjection}
 
@@ -223,7 +253,14 @@ Ones-band / assert-`e0` as verb / adverb / interjection / discourse are ordinary
 #### Ordinal rank annihilated (`#0e`)
 <a id="rank-annihilated"></a>
 
-Mantissa **`0`** + digitless **`wa`** under forward ordinal **`re` / `#`**. Numbered zeroth is **`#0`** (still a rung). Origin landmark is **`#e-`**. Current generation is **`#e0`**. Scalar absolute zero is **`+0e`**.
+To say a place in a ranking is wiped out, as in *disqualified*, put mantissa `0` and a digitless `wa` under the forward ordinal `re` / `#`. Keep it apart from these nearby forms:
+
+| Form | Reading |
+|------|---------|
+| `#0` | numbered zeroth, still a place in the series |
+| `#e-` | origin landmark |
+| `#e0` | current generation |
+| `+0e` | scalar absolute zero |
 
 | Form | Reading |
 |------|---------|
@@ -233,17 +270,17 @@ Mantissa **`0`** + digitless **`wa`** under forward ordinal **`re` / `#`**. Numb
 | **`h#0e`** | *for a disqualified / struck turn* |
 | **`y#0e`** | *Disqualified!* / *Rank wiped!* |
 
-Soft **-m** hedges (*near-disqualified*, …).
+Soft `-m` hedges (*near-disqualified*, …).
 
 #### Free vs derived
 
-Free **`grawamol`** / **`g+Ne0`** are bare OoM / OoM assert on free numbers, not kind derivation morphs. Engineering OoM-null is **`±0e-1`**.
+On a free-standing number, `grawamol` and `g+Ne0` are a bare order of magnitude and an asserted one, not parts that derive a new word. The engineering null at order of magnitude −1 is `±0e-1`.
 
 ### Hyperbole {#hyperbole}
 <a id="gazillion"></a>
 <a id="hyperbole-gazillion"></a>
 
-For a joking exaggeration (*a gazillion*, *the umpteenth*), write nonzero **mantissa digits** and then a digitless **`wa`** or **`wu`**. On an amount this is comically huge (**`wa`**) or tiny (**`wu`**); on a rank it is a comically late or early place. Mantissa **`0`** + digitless is [zero × exponent](#zero-exponent). Real powers of ten keep digitful exponents (`g+1e9`). End-relative place is marker **`#-`** ([from the end](stacked-markers.md#from-the-end)).
+For a joking exaggeration (*a gazillion*, *the umpteenth*), write nonzero mantissa digits and then a digitless `wa` or `wu`. On an amount this is comically huge (`wa`) or tiny (`wu`); on a rank it is a comically late or early place. Mantissa `0` plus a digitless exponent is [zero × exponent](#zero-exponent). Real powers of ten keep digitful exponents (`g+1e9`). End-relative place is the marker `#-` ([from the end](stacked-markers.md#from-the-end)).
 
 #### Scalar (`ra` / `ru`)
 
@@ -259,7 +296,7 @@ Amounts work the same way on `/z/`, `/d/`, and `/b/`.
 
 #### Ordinal umpteenth / umpteenth-first (`re` + **`wa`∅** / **`wu`∅**)
 
-The mantissa counts how many joke-units **late** (**`wa`**) or **early** (**`wu`**) the place is. The place is still **finite**; this is only exaggeration. Landmarks are **`growal`** / **`growul`**.
+For *the umpteenth* or *the gazillionth*, the mantissa counts how many joke-units late (`wa`) or early (`wu`) the place is. The place is still finite; this is only exaggeration.
 
 | Form | Reading |
 |------|---------|
@@ -276,10 +313,10 @@ The mantissa counts how many joke-units **late** (**`wa`**) or **early** (**`wu`
 
 | Ending | Sense | Example |
 |--------|-------|---------|
-| **-l** | Committed hyperbole: speaker stands behind the joke magnitude | `g+1e` *one gazillion*; `g#1e` *the gazillionth*; `g#1e-` *the gazillionth-first* |
-| **-m** | Soft / hedged hyperbole: *about a gazillion*, *umpteen* | `g~+1e` *roughly a gazillion*; `g~#1e` *about the gazillionth* |
-| **-n** | **Proper noun / proper designation**: the hyperbolic numeral as a name (a building called *the Gazillion*, a title *One Gazillion*, *the Gazillionth*, …) | `g@+1e`; `g@#1e` |
-| **-r** | Resume that prior hyperbolic amount or place; keep the mantissa (`g=+1e`, `g=#1e`), since `g=+e` / `g=#e` resume +∞ / last place | |
+| `-l` | Committed hyperbole: speaker stands behind the joke magnitude | `g+1e` *one gazillion*; `g#1e` *the gazillionth*; `g#1e-` *the gazillionth-first* |
+| `-m` | Soft / hedged hyperbole: *about a gazillion*, *umpteen* | `g~+1e` *roughly a gazillion*; `g~#1e` *about the gazillionth* |
+| `-n` | **Proper noun / proper designation**: the hyperbolic numeral as a name (a building called *the Gazillion*, a title *One Gazillion*, *the Gazillionth*, …) | `g@+1e`; `g@#1e` |
+| `-r` | Resume that prior hyperbolic amount or place; keep the mantissa (`g=+1e`, `g=#1e`), since `g=+e` / `g=#e` resume +∞ / last place | |
 
 On `/v/`, `/h/`, `/y/`, and `/x/`, hyperbole works the same way:
 
@@ -297,11 +334,11 @@ On `/v/`, `/h/`, `/y/`, and `/x/`, hyperbole works the same way:
 | **`x#1e`** | *umpteenth point:* / joke late agenda item |
 | **`x#1e-`** | *umpteenth-first point:* / joke early agenda item |
 
-Digitless **`e`/`e-`** sits in its own group (no **`ye`** / **`yo`** / **`yu`** stacked in that group).
+Digitless `e` / `e-` sits in its own group (no `ye` / `yo` / `yu` stacked in that group).
 
 ### Number as stance {#special-number-as-stance}
 
-Digitless specials, zero × exponent, and hyperbole keep their meaning under [stance](/number-roles#number-as-stance-by-marker) `/th/`:
+To say how sure you are in extreme terms (*certain*, *no chance at all*, *a gazillion percent sure*), put a digitless special, zero × exponent, or hyperbole on the [stance](/number-roles#number-as-stance-by-marker) letter `/th/`. Each keeps its meaning there:
 
 | Form | Reading |
 |------|---------|

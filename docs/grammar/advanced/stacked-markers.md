@@ -4,12 +4,14 @@ band: advanced
 
 # Stacked markers, from the end first {#stacked-markers-from-the-end-first}
 
+To name a place counted from the last one, as in *second-to-last*, a number takes the end-relative marker. That marker is one of four stacks of two marker symbols, which also cover labels below zero, error bounds of plus or minus N, and calendar dates.
+
 ### From the end: end-relative ordinal marker **`#-`** / **`uo`** {#from-the-end-end-relative-ordinal-marker-uo}
 <a id="from-the-end"></a>
 <a id="nth-from-the-end"></a>
 <a id="negative-ordinal"></a>
 
-To count **from the last place** (*penultimate*, *starting with the last one*), use marker **`uo`** (writing **`#-`**). Count back within the **same generation** (no exponent). Speech uses the marker vowels in u-first order: `#-` is spelled and pronounced **ruo** before its digit syllables and ending (e.g. `gruodol`). The number’s role-letter-plus-`r` cluster distinguishes it from join **`uo`**.
+English counts from the last place with words like *penultimate* and phrases like *starting with the last one*. Ageben gives the number the marker **`uo`**, written `#-`, and counts back within the same generation (among peers at one level, so the number takes no exponent). Speech uses the marker vowels in u-first order: `#-` is spelled and pronounced **ruo** before its digit syllables and ending (e.g. `gruodol`). Because the role letter is followed by `r`, a listener can tell this number from the join word `uo`.
 
 > `zanal gruodol.`
 > z-book | g-2nd-from-end
@@ -41,7 +43,7 @@ On `/v/`, `/h/`, `/y/`, and `/x/`:
 
 ### Stacked markers {#stacked-markers}
 
-When a number identity needs two marker vowels, write the symbols in their conventional order and pronounce the vowels with **`u` first**. The letter spelling and speech therefore use **rue** for a negative digit-string label (`#_`) and **rua** for a symmetric error bound (`+-`). A negative label identifies a value below zero, such as a basement floor; `+-N` gives an uncertainty of plus or minus N. These stacked forms work with the ordinary number endings.
+Some numbers need two marks at once: a label for a value below zero, such as a basement floor, or a value with an uncertainty of plus or minus N, written `+-N`. Ageben writes both marker symbols in their conventional order and pronounces the vowels with `u` first. The spelling and speech therefore use **rue** for a negative digit-string label (`#_`) and **rua** for a symmetric error bound (`+-`). These stacked forms take the ordinary number endings, so a floor label or an error bound works as one number word.
 
 Write the role letter, symbol stack, then digits: `gruebal` labels a floor numbered −1; `gruagel` gives an uncertainty of ±3.
 
