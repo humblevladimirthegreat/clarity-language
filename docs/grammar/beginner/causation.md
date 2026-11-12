@@ -4,14 +4,12 @@ band: beginner
 
 # Causation {#causation}
 
-English *if*, *only if*, and *if and only if* each tie a condition to an outcome. Ageben uses a hinge word for each, and the hinges keep two questions apart: whether the condition is **enough** for the outcome, and whether the outcome **needs** it. With all three, you do not claim the condition is a **fact**.
+English *if*, *only if*, and *if and only if* each tie a condition to an outcome. Ageben uses a hinge word for each, and the hinges keep two questions apart: whether the condition is *enough* for the outcome, and whether the outcome *needs* it. With all three, you do not claim the condition is a fact.
 
 
 ### If {#if}
 
-English *if* says a condition is enough for an outcome: whenever the condition holds, the outcome holds too (*Azozon walks if it rains*). Write the **outcome** first, then the *if* hinge (root **`ohe`**), then the condition as its `bl-` word. Saying *if* does not claim the condition is true, and other routes to the outcome may still work. It does not say how the condition leads there either: only that the link holds. (cue: 🚪 *door*: walk through only if it opens)
-
-The hinge's role letter follows the outcome. Use `/th/` (**`thohem`**) when the outcome is an **event** (the verb). Use `/ɡ/` (**`gohem`**) when the outcome is a **noun**. A common noun with a `/ɡ/` word after it says the thing exists ([*there is …*](predication.md#existence)), so a noun outcome says *there is X if there is Y*. Keep the hinge and its `/b/` together.
+English *if* says a condition is enough for an outcome: whenever the condition holds, the outcome holds too (*Azozon walks if it rains*). Write the outcome first, then the *if* hinge (root **`ohe`**), then the condition as its `bl-` word. Saying *if* does not claim the condition is true, does not say how the condition leads to the outcome, and leaves room for other routes to it. (cue: 🚪 *door*: walk through only if it opens)
 
 > `zazozon vowurol thohem blerulal.`
 >
@@ -19,15 +17,17 @@ The hinge's role letter follows the outcome. Use `/th/` (**`thohem`**) when the 
 >
 > "Azozon walks if it rains."
 
+The hinge's role letter follows the outcome: `/th/` (**`thohem`**) when the outcome is an event (the verb), as above, and `/ɡ/` (**`gohem`**) when the outcome is a noun. A common noun with a `/ɡ/` word after it says the thing exists ([*there is …*](predication.md#existence)), so a noun outcome says *there is X if there is Y*. Keep the hinge and its `/b/` together.
+
 > `zerulal gohem blugalal.`
 >
 > z-rain | [g-if | bl-cloud]
 >
 > "There is rain if there are clouds."
 
-When the condition is a whole sentence, put **`blarl`** in the `bl-` slot, as with [*because*](dependents.md#hinges), and say the condition as the next sentence.
+When the condition is a whole sentence, put `blarl` as the `bl-` word, as with [*because*](dependents.md#hinges), and say the condition as the next sentence.
 
-A command or request makes no claim, so an *if* hinge on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Ageben keeps the default order, with **`blarl`** last.
+A command or request makes no claim, so an *if* hinge on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Ageben keeps the default order, with `blarl` last.
 
 > `yol vowurol thohem blarl zalazun vehohel.`
 >
@@ -37,11 +37,11 @@ A command or request makes no claim, so an *if* hinge on it limits the instructi
 
 As a plain noun, the same root is `zohel` *a door*.
 
-**Compare with:** for *X is enough* about one item from a list of options (*a book will do*), use an inclusive [join](joins.md#single-item-phrase), not a hinge. *Whether Alazun walks* is [**`derl`**](dependents.md#dependent-clauses), not **`thohem`**: *if* sets a condition, and *whether* leaves a yes-or-no question open.
+**Compare with:** for *X is enough* about one item from a list of options (*a book will do*), use an inclusive [join](joins.md#single-item-phrase), not a hinge. *Whether Alazun walks* is [`derl`](dependents.md#dependent-clauses), not `thohem`: *if* sets a condition, and *whether* leaves a yes-or-no question open.
 
 ### Only if {#only-if}
 
-English *only if* (or *needs*) says the outcome cannot hold without the condition. Use the same shape with the *only if* hinge (root **`ebe`**): **`thebem`** after a verb, **`gebem`** after a noun. Other things may also be required, and again you do not claim the condition is true. (cue: 🧻 *paper-roll*: without it the situation does not run)
+English *only if* (or *needs*) says the outcome cannot hold without the condition. Use the same shape with the *only if* hinge (root **`ebe`**): **`thebem`** after a verb (`/th/`), **`gebem`** after a noun (`/ɡ/`). Other things may also be required, and again you do not claim the condition is true. (cue: 🧻 *paper-roll*: without it the situation does not run)
 
 > `zazozon vowurol thebem blerulal.`
 >
@@ -55,9 +55,9 @@ English *only if* (or *needs*) says the outcome cannot hold without the conditio
 >
 > "There is rain only if there are clouds."
 
-As a plain noun, the same root is `zebel` *a paper-roll*. With a whole sentence as the condition, write **`thebem blarl`**.
+As a plain noun, the same root is `zebel` *a paper-roll*. With a whole sentence as the condition, write `thebem blarl`.
 
-English *if and only if* says both at once: the condition is enough, and the outcome needs it. Use the hinge **`thehom`** (root **`eho`**), as in **`thehom blarl`** with the condition as the next sentence. Again you do not claim the condition is true. (cue: ↔️ *east-west*: each side only with the other)
+English *if and only if* says both at once: the condition is enough, and the outcome needs it. Use the hinge **`thehom`** (root **`eho`**), as in `thehom blarl` with the condition as the next sentence. Again you do not claim the condition is true. (cue: ↔️ *east-west*: each side only with the other)
 
 **Compare with:** *if* (`thohem` / `gohem`) leaves other routes possible. *Only if* says the outcome needs this, and *if and only if* says both.
 
@@ -66,8 +66,6 @@ English *if and only if* says both at once: the condition is enough, and the out
 | **`thohem` / `gohem` / `thohem blarl`** | enough for the outcome; condition not asserted | *if* | `ohel` *door* | 🚪: walk through only if it opens |
 | **`thebem` / `gebem` / `thebem blarl`** | the outcome needs this; condition not asserted | *only if* / *needs* | `ebel` *paper-roll* | 🧻: without it the situation does not run |
 | **`thehom` / `thehom blarl`** | both ways; condition not asserted | *if and only if* | `ehol` *east-west* | ↔️: each side only with the other |
-
-`/th/` attaches to the event. `/ɡ/` attaches to the noun.
 
 ### Practice {#beginner-practice}
 

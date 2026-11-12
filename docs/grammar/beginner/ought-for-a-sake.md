@@ -7,32 +7,32 @@ band: beginner
 ### Prescription (`the`): ought this act for this sake
 <a id="sake-force"></a>
 
-When English puts *should* / *ought to* on **doing** something for a named sake (*Ahelan ought to sing; it's good for their health*), put a `/th/` word on the clause: sake root, mid-word **`th`**, **`e`**, then an ending. **`e`** is how much of the sake is in: you only have the advice, not the act yet. The clause's verb names the act that ought to count toward the sake. The sentence then says the act *ought* to happen; it does not report that the act is already happening.
-
-The ending says why you think the move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the sake. Use **-r** for a tryout: the move is worth trying to see whether it serves the sake, not a settled recommendation. These endings describe why you make the move and what it aims at, not whether it succeeds. How firmly you put the act on the listener is a separate choice, made by the speech-act word on `/y/` (**`yol`** / **`yom`**, **`yal`** / **`yam`**). If none of the three reasons applies, drop **`the`**.
-
-**Compare with:** a [command](speech-moves.md#speech-act-beginner) **`yol`** tells someone to act outright, without naming the sake or why the move is wanted. **`the`** is an *ought* tied to a sake (*ought to, to advance this sake*), with the reason on the ending.
-
-<!-- cheat-sheet: why-allowed -->
-| Ageben | Use | English | Cue |
-|--------|-----|---------|-----|
-| `…thel` | the person invited this kind of move | *invited* | **-l** ≈ lasting: their invitation stands |
-| `…them` | an unsolicited offer meant to serve the sake | *unasked* | **-m** ≈ open offer |
-| `…ther` | a move worth trying, to see whether it serves the sake | *worth a try* | **-r** ≈ right now (a tryout) |
-
-A sake word with no `/b/` is about **your** sake, so advice for the other person's own good names them in a `bl-` word right after the sake word. In the same sentence, that is the [themself](pronouns.md#themself) pointer **`bwuzor`**. The `/b/` says whose stake the act serves, not why they would do it.
-
-> `zazozon vezuyol thawethem blwuzor.`
->
-> z-Azozon | v-tell | [th-relatedness-ought-unasked | bl-←episode-agent.self]
->
-> "Azozon ought to talk; it would help them feel connected." (unasked advice)
+When English puts *should* / *ought to* on doing something for a named sake (*Ahelan ought to sing; it's good for their health*), put a `/th/` word on the clause: sake root, mid-word `th`, **`e`**, then an ending. `e` is how much of the sake is in: you only have the advice (a **prescription**), not the act yet. The clause's verb names the act that ought to count toward the sake, and the sentence says the act *ought* to happen, not that it is already happening.
 
 > `zahelan vozuyel thobathel blwuzor.`
 >
 > z-Ahelan | v-sing | [th-physical-ought-invited | bl-←episode-agent.self]
 >
 > "Ahelan ought to sing; it's good for their health." (Ahelan asked for advice)
+
+The ending says why you think the move is welcome. Use `-l` when the person invited this move, explicitly or through a clear standing invitation; `-m` for an unsolicited offer meant to serve the sake; and `-r` for a tryout, a move worth trying to see whether it serves the sake rather than a settled recommendation. These endings describe why you make the move and what it aims at, not whether it succeeds. If none of the three reasons applies, drop `the`.
+
+**Compare with:** a [command](speech-moves.md#speech-act-beginner) `yol` tells someone to act outright, without naming the sake or why the move is wanted. `the` is an *ought* tied to a sake (*ought to, to advance this sake*), with the reason on the ending. How firmly you put the act on the listener stays a separate choice, made by the speech-act word on `/y/` (`yol` / `yom`, `yal` / `yam`).
+
+<!-- cheat-sheet: why-allowed -->
+| Ageben | Use | English | Cue |
+|--------|-----|---------|-----|
+| `…thel` | the person invited this kind of move | *invited* | `-l` ≈ lasting: their invitation stands |
+| `…them` | an unsolicited offer meant to serve the sake | *unasked* | `-m` ≈ open offer |
+| `…ther` | a move worth trying, to see whether it serves the sake | *worth a try* | `-r` ≈ right now (a tryout) |
+
+A sake word with no `/b/` is about *your* sake, so advice for the other person's own good names them in a `bl-` word right after the sake word. In the same sentence, that is the [themself](pronouns.md#themself) pointer `bwuzor`. The `/b/` says whose stake the act serves, not why they would do it.
+
+> `zazozon vezuyol thawethem blwuzor.`
+>
+> z-Azozon | v-tell | [th-relatedness-ought-unasked | bl-←episode-agent.self]
+>
+> "Azozon ought to talk; it would help them feel connected." (unasked advice)
 
 > `zalazun vabuyol thawether blwuzor.`
 >

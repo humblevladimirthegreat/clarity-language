@@ -5,14 +5,14 @@ band: beginner
 # Sakes {#sakes}
 <a id="sake-ascription"></a>
 
-English *good for me* and *costs me* say what something does for a person. Ageben names that payoff as a **sake**: something good for a person, a psychological payoff you can name (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or an unspecified sake). It means *for your sake* (what is good for you), not *for argument's sake*. A sake word also carries your **stance**, how the thing stands toward that sake: it **serves** the sake or **detracts from** it. An unmet sake is a cost to name, not a lack in you.
+English *good for me* and *costs me* say what something does for a person. Ageben names that payoff as a **sake**: something good for a person, a psychological payoff you can name (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or an unspecified sake). It means *for your sake* (what is good for you), not *for argument's sake*. A sake word also carries your **stance**, how the thing stands toward that sake: it **serves** the sake or **detracts from** it. A sake that something detracts from (an *unmet* sake, as a served one is *met*) is a cost to name, not a lack in you.
 
 
-Put the sake word on `/ɡ/` after a **noun you keep**, to say how that belonging stands toward the sake. Put it on `/th/` to say how the whole **event** stands toward it. When the noun is not yours, personal possession shows how to point at it instead.
+Put the sake word on `/ɡ/` after a noun you keep, to say how that belonging stands toward the sake. Put it on `/th/` to say how the whole event stands toward it. When the noun is not yours, personal possession shows how to point at it instead.
 
 ### Sake inventory {#sake-inventory}
 
-Nine published roots are the sakes you can name, and no other root takes the sake form. Pick one row. With mid-word **`th`** and a stance vowel after it, that root means the sake in the English column, not the everyday object in **Same root as**.
+Nine roots are the sakes you can name, and no other root takes the sake form. Pick one row. With mid-word `th` and a stance vowel after it (the vowel for *serves* or *detracts from*, taught below), that root means the sake in the English column, not the everyday object in **Same root as**.
 
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -26,7 +26,7 @@ Nine published roots are the sakes you can name, and no other root takes the sak
 | **`oba`** | physical sake | *physical* (health, exercise, food, sleep, shelter, safety from harm) | `obal` *lungs* | 🫁: breathing easy means the body is well |
 | **`uda`** | a sake without picking among the eight | *unspecified sake* | `udal` *egg* | 🥚: not yet a specific kind |
 
-**Compare with:** `zunal` is a *ballot*, and `gunal` is *ballot-like*. With mid-word **`tha`** / **`thu`**, **`una`** is the *autonomy* sake.
+**Compare with:** `zunal` is a *ballot*, and `gunal` is *ballot-like*. With mid-word `tha` / `thu`, `una` is the *autonomy* sake.
 
 ### Which sake? {#which-sake}
 
@@ -43,13 +43,13 @@ Each sake answers a different question about what pays off. Ask the question, th
 | pleasure | *It feels good.* |
 | physical | *My body is cared for and safe.* |
 
-**Compare with:** competence is how **well** it goes; purpose is whether it is **worth doing**. A failed try at something that matters still serves purpose, and it detracts from competence. Mastering a pointless puzzle serves competence, not purpose.
+**Compare with:** competence is how *well* it goes; purpose is whether it is *worth doing*. A failed try at something that matters still serves purpose, and it detracts from competence. Mastering a pointless puzzle serves competence, not purpose.
 
-**Compare with:** competence is whether it **works**; understanding is whether it **makes sense**. You can fix a machine you do not understand, and understand stars you can never change. A task that is too easy can meet competence and still leave understanding unmet: that is the boredom of nothing new to learn.
+**Compare with:** competence is whether it *works*; understanding is whether it *makes sense*. You can fix a machine you do not understand, and understand stars you can never change. A task that is too easy can meet competence and still leave understanding unmet: that is the boredom of nothing new to learn.
 
-**Compare with:** something new for its own sake (new sights, variety) is pleasure. Understanding pays off when the new thing **fits**: an hour of headlines can serve pleasure and leave understanding unmet.
+**Compare with:** something new for its own sake (new sights, variety) is pleasure. Understanding pays off when the new thing *fits*: an hour of headlines can serve pleasure and leave understanding unmet.
 
-**Compare with:** relatedness lives in the **bond**, and it runs both ways. Beneficence lives in the **effect**: your act left someone better off, with or without a bond. An anonymous donation serves beneficence and leaves relatedness alone; an easy evening with friends serves relatedness with no one helped. Being helped is not your beneficence: it serves whichever sake of yours the help met.
+**Compare with:** relatedness lives in the *bond*, and it runs both ways. Beneficence lives in the *effect*: your act left someone better off, with or without a bond. An anonymous donation serves beneficence and leaves relatedness alone; an easy evening with friends serves relatedness with no one helped. Being helped is not your beneficence: it serves whichever sake of yours the help met.
 
 **Compare with:** purpose needs an aim that matters to you; beneficence needs someone who is actually better off. Writing a novel serves purpose with no one helped; fixing a stranger's tire serves beneficence with little purpose. When an act does both, name both.
 
@@ -57,7 +57,7 @@ Each sake answers a different question about what pays off. Ask the question, th
 
 ### Met (`tha`): serves the sake {#met}
 
-To say that a belonging of yours **serves** a sake (pays it off), write that thing as a noun, then a `/ɡ/` word: sake root, mid-word **`th`**, **`a`**, then an ending. That adjective describes the noun. The ending says the payoff's **time horizon**: whether the payoff lasts or arrives right away. With **-m**, you leave the time horizon unstated:
+To say that a belonging of yours *serves* a sake (pays it off), write that thing as a noun, then a `/ɡ/` word: sake root, mid-word `th`, `a`, then an ending. That adjective describes the noun. The ending says the payoff's **time horizon**: whether the payoff lasts or arrives right away. With `-m`, you leave the time horizon unstated:
 
 > `zohehal guwatham.`
 >
@@ -69,14 +69,14 @@ To say that a belonging of yours **serves** a sake (pays it off), write that thi
 <a id="sake-contact"></a>
 <a id="settled-to-passing"></a>
 
-On a *serves* word, the ending says **when the payoff lands**: **-l** lasting, **-m** unstated, **-r** immediate. That order, from **-l** (most settled) through **-m** (the default) to **-r** (most passing), is the **settled-to-passing scale**, and other sake endings reuse it. Neither end is better; a good day needs both. If you do not know, use **-m**.
+On a *serves* word, the ending says when the payoff lands: `-l` lasting, `-m` unstated, `-r` immediate. That order, from `-l` (most settled) through `-m` (the default) to `-r` (most passing), is the **settled-to-passing scale**, and other sake endings reuse it. Neither end is better; a good day needs both. If you do not know, use `-m`.
 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…thal` | serves the sake over time | *lasting* | **-l** ≈ lasting |
-| `…tham` | serves the sake; time horizon unstated (soft default if unknown) | *serves* | **-m** ≈ open |
-| `…thar` | serves the sake right away | *immediate* | **-r** ≈ right now |
+| `…thal` | serves the sake over time | *lasting* | `-l` ≈ lasting |
+| `…tham` | serves the sake; time horizon unstated (soft default if unknown) | *serves* | `-m` ≈ open |
+| `…thar` | serves the sake right away | *immediate* | `-r` ≈ right now |
 
 > `zewal gawethal.`
 >
@@ -101,15 +101,15 @@ An immediate payoff is often exactly what is needed:
 ### Unmet (`thu`): detracts from the sake
 <a id="sake-changeability"></a>
 
-To say that a belonging of yours **detracts from** a sake, write that thing as a noun, then a `/ɡ/` word: sake root, mid-word **`th`**, **`u`**, then an ending.
+To say that a belonging of yours *detracts from* a sake, write that thing as a noun, then a `/ɡ/` word: sake root, mid-word `th`, `u`, then an ending.
 
-That ending is **changeability**: how lasting the harm to the sake is, on the same settled-to-passing scale as met. If you do not know, use **-m**.
+That ending is **changeability**: how lasting the harm to the sake is, on the same settled-to-passing scale as met. If you do not know, use `-m`.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…thul` | the detriment is fixed as far as you can tell | *irreversible* | **-l** ≈ lasting |
-| `…thum` | effort or circumstance may soften the detriment (soft default if unknown) | *modifiable* | **-m** ≈ open to change |
-| `…thur` | the detriment has no lasting impact | *passing* | **-r** ≈ right now |
+| `…thul` | the detriment is fixed as far as you can tell | *irreversible* | `-l` ≈ lasting |
+| `…thum` | effort or circumstance may soften the detriment (soft default if unknown) | *modifiable* | `-m` ≈ open to change |
+| `…thur` | the detriment has no lasting impact | *passing* | `-r` ≈ right now |
 
 > `zanal guwathul.`
 >
@@ -123,7 +123,7 @@ That ending is **changeability**: how lasting the harm to the sake is, on the sa
 >
 > "My book detracts from competence." (modifiable)
 
-One noun can carry both a **`tha`** word and a **`thu`** word. The pair can run either way: *good now, costly later* (an immediate **`tha`** word and a lasting **`thu`** word), or *costly now, good later*:
+One noun can carry both a `tha` word and a `thu` word. The pair can run either way: *good now, costly later* (an immediate `tha` word and a lasting `thu` word), or *costly now, good later*:
 
 > `zanal godethur guwathal.`
 >
@@ -134,17 +134,15 @@ One noun can carry both a **`tha`** word and a **`thu`** word. The pair can run 
 ### Word shape {#word-shape}
 <a id="sake-stake"></a>
 
-A sake word is a sake root with mid-word **`th`**, a stance vowel, and an ending. On `/ɡ/` it describes a **noun you keep**; on `/th/` it describes the **event**. A noun that is not yours takes the stimulus word, with the same sake word on `/w/` immediately before it.
-
-A sake word ends in **-l**, **-m**, or **-r**, from that stance’s table. It never takes **-n**. The stance itself is one vowel after **`th`**. That vowel says how much of the sake is in (the payoff, doing-for, only the advice, none). Motive is more “have” than prescription: the act is happening for the sake, versus only being told it ought to.
+A sake word is a sake root with mid-word `th`, a stance vowel, and an ending. The stance vowel says how much of the sake is in: `a` the payoff, `u` none. The ending is `-l`, `-m`, or `-r`, from that stance’s table, and never `-n`.
 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`tha`** | the belonging or event pays off this sake | *serves* / *met* | **a** ≈ the payoff is in |
-| **`thu`** | the belonging or event subtracts from this sake | *detracts from* / *unmet* | **u** ≈ none of the sake |
+| **`tha`** | the belonging or event pays off this sake | *serves* / *met* | `a` ≈ the payoff is in |
+| **`thu`** | the belonging or event subtracts from this sake | *detracts from* / *unmet* | `u` ≈ none of the sake |
 
-On `/th/`, the sake word says how the event itself stands toward the sake:
+On `/ɡ/` a sake word describes a noun you keep; on `/th/` it says how the event itself stands toward the sake:
 
 > `zazozon vezuyol thuwatham.`
 >
@@ -152,14 +150,16 @@ On `/th/`, the sake word says how the event itself stands toward the sake:
 >
 > "Azozon talks, and that boosts my confidence."
 
-Without mid-word **`th`**, the root keeps its everyday sense: `gunal` is *ballot-like*, and `hodel` is the adverb from *strawberry*.
+Without mid-word `th`, the root keeps its everyday sense: `gunal` is *ballot-like*, and `hodel` is the adverb from *strawberry*.
+
+For a noun that is not yours, the sake word goes on `/w/` instead, as the next section shows.
 
 ### Personal possession {#personal-possession}
 <a id="stimulus"></a>
 
-A sake word on `/ɡ/` also says the noun is **yours**, with no separate word for *my*. That shortcut makes thanks and costs cheap to say about the things you already call *my X*. To say who owns something without naming a sake, use `gegunum` plus `/b/`. Someone else's thing uses that pair too, never a sake word alone on `/ɡ/`.
+A sake word on `/ɡ/` also says the noun is yours, with no separate word for *my*, so thanks and costs are cheap to say about the things you already call *my X*. To say who owns something without naming a sake, or to name someone else's thing, use `gegunum` plus `/b/`, never a sake word alone on `/ɡ/`.
 
-When the noun is **not** yours (weather, a gathering, another person’s church), follow it with the adjective **`goyom`**, *as stimulus*: the thing you react to, not something you keep. Put the same met or unmet word you would use on `/ɡ/` on `/w/` immediately before **`goyom`**, as extra detail on it. (cue: ☝️ *point*: you point at the thing; you do not hold it)
+When the noun is not yours (weather, a gathering, another person’s church), follow it with the adjective **`goyom`**, *as stimulus*: the thing you react to, not something you keep. Put the same met or unmet word you would use on `/ɡ/` on `/w/` immediately before `goyom`, as extra detail on it. (cue: ☝️ *point*: you point at the thing; you do not hold it)
 
 > `zabowam wunathur goyom.`
 >
@@ -167,7 +167,7 @@ When the noun is **not** yours (weather, a gathering, another person’s church)
 >
 > "The gathering detracts from autonomy right now." (passing)
 
-The same `/w/` sake word can sit before any adjective. Then it is about **that property**: the tea's heat is what serves pleasure, not the tea as a whole. **`goyom`** is the case where the property is the noun itself, as the thing you react to.
+The same `/w/` sake word can sit before any adjective. Then it is about *that property*: the tea's heat is what serves pleasure, not the tea as a whole. `goyom` is the case where the property is the noun itself, as the thing you react to.
 
 > `zedudal wodetham gohamul.`
 >
@@ -175,7 +175,7 @@ The same `/w/` sake word can sit before any adjective. Then it is about **that p
 >
 > "The tea is pleasantly hot."
 
-As a plain noun, `zoyol` is *emphasis*. **`goyom`** with no `/w/` sake word before it names no sake. An event (*this raining*, *this telling*) takes its sake word on `/th/` on the clause, whether or not it is yours.
+As a plain noun, `zoyol` is *emphasis*. `goyom` with no `/w/` sake word before it names no sake. An event (*this raining*, *this telling*) takes its sake word on `/th/` on the clause, whether or not it is yours.
 
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|

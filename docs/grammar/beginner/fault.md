@@ -6,14 +6,14 @@ band: beginner
 
 ### Fault {#fault}
 
-*Because* names what made the outcome happen. It does not say anyone did wrong. When you mean *it was their fault*, change the ending on the because hinge. **-m** is the plain cause. **-l** says the reason broke a rule: someone did wrong. **-r** says it was one cause among others.
+English *because* names what made an outcome happen without saying anyone did wrong, and *it was their fault* adds the blame. Ageben changes the ending on the *because* hinge: `-m` for the plain cause, `-l` when the reason broke a rule (someone did wrong), and `-r` when it was one cause among others. You can then say whether a cause carries blame, or only played a part, without a separate word.
 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thahul`** | the reason broke a norm | *it's their fault* / *to blame* | **-l** ≈ locked on a broken rule |
-| **`thahum`** | the reason made it happen; no fault claimed | *because* | **-m** ≈ the ordinary case |
-| **`thahur`** | the reason is one share among others | *partly because* / *played a part* | **-r** ≈ one wall of several holding it up |
+| **`thahul`** | the reason broke a norm | *it's their fault* / *to blame* | `-l` ≈ locked on a broken rule |
+| **`thahum`** | the reason made it happen; no fault claimed | *because* | `-m` ≈ the ordinary case |
+| **`thahur`** | the reason is one share among others | *partly because* / *played a part* | `-r` ≈ one wall of several holding it up |
 
 > `zazozon vudurul thahul blarl zalazun vezuyol.`
 >

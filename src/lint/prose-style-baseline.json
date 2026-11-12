@@ -40,9 +40,6 @@
     "beginner-lead": 1,
     "long-paragraph": 1
   },
-  "beginner/causation.md": {
-    "beginner-lead": 1
-  },
   "beginner/clause.md": {
     "beginner-lead": 1,
     "bold-density": 1
@@ -57,10 +54,6 @@
   },
   "beginner/extra-noun-hooks.md": {
     "beginner-lead": 1
-  },
-  "beginner/fault.md": {
-    "beginner-lead": 1,
-    "long-paragraph": 1
   },
   "beginner/firm-soft.md": {
     "beginner-lead": 1,
@@ -88,11 +81,6 @@
     "beginner-lead": 1,
     "bold-density": 2
   },
-  "beginner/ought-for-a-sake.md": {
-    "beginner-lead": 1,
-    "bold-density": 1,
-    "long-paragraph": 1
-  },
   "beginner/relations.md": {
     "beginner-lead": 1,
     "long-paragraph": 1
@@ -103,14 +91,6 @@
   },
   "beginner/roles.md": {
     "bold-density": 3
-  },
-  "beginner/sakes.md": {
-    "beginner-lead": 2,
-    "bold-density": 3
-  },
-  "beginner/spans.md": {
-    "beginner-lead": 1,
-    "bold-density": 2
   },
   "beginner/word-endings.md": {
     "bold-density": 1

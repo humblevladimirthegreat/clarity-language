@@ -27,18 +27,14 @@ The whole `d[azozon]` is the direct object (who or what is acted on). When the q
 ### Exact, paraphrase, proper
 <a id="when-required"></a>
 
-You can mark how faithful the quote is. Put the mark **after** the role letter, before the opening bracket.
-
-A span with no mark is **exact**: the words as they were said (`d[azozon]`). Write **`~`** for a **paraphrase**, when you mean the gist, not the exact words (`d~[zazozon vozuyel]`). Write **`@`** for a **proper** span: it names a work with a title of several words, such as a song, proverb, or book (`d@[onuren alazun]`). The span then means the work itself, not its title as a string of words.
-
-A work or person with a one-word name is an ordinary **-n** word (`donuren`), not `d@[onuren]`, unless a role letter or an ending is part of the title itself. The mark belongs to the brackets; the words inside keep their usual endings.
+English shows how faithful a quote is with extra words, such as *something like “…”* when you give only the gist. Ageben puts a mark after the role letter, right before the opening bracket: no mark for the **exact** words as they were said (`d[azozon]`), `~` for a **paraphrase**, the gist and not the exact words (`d~[zazozon vozuyel]`), and `@` for a **proper** span, the title of a work (`d@[onuren alazun]`). The listener then knows whether you claim the wording, only its meaning, or a work by name.
 
 <!-- cheat-sheet: restrictors-spans -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | *(none)* | exact | verbatim wording | bare brackets already quote; extra ink would hedge |
-| **`~`** | paraphrase | the gist, not the exact words | **~** looks like “about / approximately” |
-| **`@`** | proper | the work known by that title | **@** like a social media handle |
+| **`~`** | paraphrase | the gist, not the exact words | `~` looks like “about / approximately” |
+| **`@`** | proper | the work known by that title | `@` like a social media handle |
 
 > `zalazun d~[zazozon vozuyel] varuyol.`
 >
@@ -46,13 +42,17 @@ A work or person with a one-word name is an ordinary **-n** word (`donuren`), no
 >
 > "Alazun wrote something like “Azozon sings.”"
 
+With `@`, the span names a work whose title has several words, such as a song, proverb, or book. It then means the work itself, not its title as a string of words.
+
 > `zahelan d@[onuren alazun] vozuyel.`
 >
 > z-Ahelan | d-NAME.CITE[Onuren | Alazun] | v-sing
 >
 > "Ahelan sang Onuren Alazun."
 
-**`~`** and **`@`** combine, `~` first: the span still names the work, but the title is only roughly that. Use it when you remember a title loosely.
+A work or person with a one-word name is an ordinary `-n` word (`donuren`), not `d@[onuren]`, unless a role letter or an ending is part of the title itself. The mark belongs to the brackets; the words inside keep their usual endings.
+
+`~` and `@` combine, `~` first: the span still names the work, but the title is only roughly that. Use it when you remember a title loosely.
 
 > `zahelan d~@[onuren alazun] vozuyel.`
 >
@@ -62,7 +62,7 @@ A work or person with a one-word name is an ordinary **-n** word (`donuren`), no
 
 ### Opaque and loan words {#loans}
 
-To use a word from another language, a bit of code, or any spelling that is not Ageben, write the role letter, then angle brackets around it. That span is **opaque**: the inside is taken exactly as spelled and is not read as Ageben words. Write no letter after the closing `>`. The faithfulness marks are the same as on a cite: none, **`~`**, or **`@`**.
+To use a word from another language, a bit of code, or any spelling that is not Ageben, write the role letter, then angle brackets around it. That span is **opaque**: the inside is taken exactly as spelled and is not read as Ageben words. Write no letter after the closing `>`. The faithfulness marks are the same as on a cite: none, `~`, or `@`.
 
 > <code>zazozon d&lt;kimchi&gt; vayebel.</code>
 >
@@ -70,7 +70,7 @@ To use a word from another language, a bit of code, or any spelling that is not 
 >
 > "Azozon saw kimchi." (a foreign word)
 
-Inside <code>&lt;&gt;</code>, keep the source’s capital letters when its writing system has them (<code>d&lt;NaCl&gt;</code>, <code>d@&lt;iPhone&gt;</code>). Ageben letters outside the brackets are always [lowercase](phonology.md). Use **`@`** when the bracketed word is a name or title.
+Inside <code>&lt;&gt;</code>, keep the source’s capital letters when its writing system has them (<code>d&lt;NaCl&gt;</code>, <code>d@&lt;iPhone&gt;</code>). Ageben letters outside the brackets are always [lowercase](phonology.md). Use `@` when the bracketed word is a name or title.
 
 When the lexicon already has a matching root, write the ordinary word (`dogozel`), not a span.
 
@@ -80,7 +80,7 @@ On its own, outside a sentence, a foreign name or word is written with no role l
 
 To call someone by a foreign name (*Sam!*) or react with a foreign word (*Wow!*), put a span under `/y/`. Only an opaque <code>&lt;…&gt;</code> or a cite `[…]` goes there, and it opens the turn, before the act word.
 
-The **`@`** mark decides which, as **-n** does on a native word. With **`@`**, the span calls that person (<code>y@&lt;Sam&gt;</code>, *Sam!*); add **`~`** for a name you are not sure of (<code>y~@&lt;Sam&gt;</code>). Without **`@`**, the span is a foreign [interjection](speech-moves.md#interjections-reactions) (<code>y&lt;Wow&gt;</code>, *Wow!*), exact or given as the gist with **`~`** (<code>y~&lt;Wow&gt;</code>).
+The `@` mark decides which, as `-n` does on a native word. With `@`, the span calls that person (<code>y@&lt;Sam&gt;</code>, *Sam!*); add `~` for a name you are not sure of (<code>y~@&lt;Sam&gt;</code>). Without `@`, the span is a foreign [interjection](speech-moves.md#interjections-reactions) (<code>y&lt;Wow&gt;</code>, *Wow!*), exact or given as the gist with `~` (<code>y~&lt;Wow&gt;</code>).
 
 ### Asides (`th(…)`) {#asides-th}
 <a id="asides"></a>
@@ -94,7 +94,7 @@ To add a side comment in parentheses, write a role letter, then **`(`** … **`)
 | `w(…)` | the next `/ɡ/`, `/h/`, or `/th/` word | right before that word, like [*very*](clause.md#adjective-detail-w) |
 | `h(…)` | the action | anywhere an [adverb](clause.md#adverbs-h) may sit |
 
-The inside is ordinary Ageben: a fragment, or a clause with the **same speech act** as the outer sentence (both statements, both questions, or both commands). An aside comments; it does not call anyone or react, so it never goes under `/y/`. It fills no slot of the verb either, so it never goes under `/z/`, `/d/`, `/b/`, or `/v/`.
+The inside is ordinary Ageben: a fragment, or a clause with the same speech act as the outer sentence (both statements, both questions, or both commands). An aside comments; it does not call anyone or react, so it never goes under `/y/`. It fills no role of the verb either, so it never goes under `/z/`, `/d/`, `/b/`, or `/v/`.
 
 > `zazozon vowurol th(hugowul).`
 >
@@ -138,15 +138,15 @@ An `/h/` aside is a side detail about the action itself, not about your claim:
 >
 > "Azozon walks (in a bank)."
 
-A one-word comment with nothing to package is a plain word in that slot: `zazozon vowurol hugowul.`
+A one-word comment with nothing to package is a plain word with that role letter: `zazozon vowurol hugowul.`
 
-**For *because*, use:** [**`blarl`**](dependents.md#hinges) dependents, not an aside.
+**For *because*, use:** [`blarl`](dependents.md#hinges) dependents, not an aside.
 
-**Compare with:** a second name for the same person uses [identity](predication.md#identity) (`gore` + `/b/`). To pick out **which** noun (*the guard who sits*), use a plain adjective or [another sentence](dependents.md#which-noun), not a noun aside.
+**Compare with:** a second name for the same person uses [identity](predication.md#identity) (`gore` + `/b/`). To pick out *which* noun (*the guard who sits*), use a plain adjective or [another sentence](dependents.md#which-noun), not a noun aside.
 
 ### Outer slot {#pos}
 
-A span can fill any role a word can, not only the object. The letter before the bracket is the role of the **whole span** in the outer sentence, so ask what that chunk does there: the object of *said*, the subject of *is small*, and so on. A cite can even be the **verb**, when you echo an act as wording:
+A span can fill any role a word can, not only the object. The letter before the bracket is the role of the whole span in the outer sentence, so ask what that chunk does there: the object of *said*, the subject of *is small*, and so on. A cite can even be the verb, when you echo an act as wording:
 
 > `yul zalazun v[vezohul].`
 >
@@ -157,16 +157,16 @@ A span can fill any role a word can, not only the object. The letter before the 
 <!-- cheat-sheet: restrictors-spans -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| `/d/` | object | *said / wrote / saw “…”* (`d[azozon]`, <code>d&lt;kimchi&gt;</code>) | **d** ≈ done to |
-| `/z/` | subject | a foreign name as the subject (<code>z@&lt;Sam&gt;</code>) | **z** ≈ star (who it is about) |
-| `/b/` | extra party | a foreign name as the recipient (<code>b@&lt;Sam&gt;</code>) | **b** ≈ bolted on (the extra piece) |
-| `/v/` | verb | echo the act as wording (`v[vezohul]`); a loan verb (<code>v&lt;google&gt;</code>) | **v** as in English *verb* |
-| `/ɡ/` | adjective | a loan adjective (<code>g&lt;rouge&gt;</code>); an aside on the noun (`g(…)`) | **g** ≈ grade (a rating of the noun) |
-| `/w/` | extra detail | a loan degree word (<code>w&lt;molto&gt;</code>); an aside on the next word (`w(…)`) | **w** ≈ with (stuck to that host) |
-| `/h/` | adverb | a loan adverb (<code>h&lt;allegro&gt;</code>); an aside on the action (`h(…)`) | **h** starts *how* / *when* / *where* |
-| `/th/` | stance | an aside on the sentence (`th(…)`) | **th** ≈ *think* (your side comment) |
+| `/d/` | object | *said / wrote / saw “…”* (`d[azozon]`, <code>d&lt;kimchi&gt;</code>) | `d` ≈ done to |
+| `/z/` | subject | a foreign name as the subject (<code>z@&lt;Sam&gt;</code>) | `z` ≈ star (who it is about) |
+| `/b/` | extra party | a foreign name as the recipient (<code>b@&lt;Sam&gt;</code>) | `b` ≈ bolted on (the extra piece) |
+| `/v/` | verb | echo the act as wording (`v[vezohul]`); a loan verb (<code>v&lt;google&gt;</code>) | `v` as in English *verb* |
+| `/ɡ/` | adjective | a loan adjective (<code>g&lt;rouge&gt;</code>); an aside on the noun (`g(…)`) | `g` ≈ grade (a rating of the noun) |
+| `/w/` | extra detail | a loan degree word (<code>w&lt;molto&gt;</code>); an aside on the next word (`w(…)`) | `w` ≈ with (stuck to that host) |
+| `/h/` | adverb | a loan adverb (<code>h&lt;allegro&gt;</code>); an aside on the action (`h(…)`) | `h` starts *how* / *when* / *where* |
+| `/th/` | stance | an aside on the sentence (`th(…)`) | `th` ≈ *think* (your side comment) |
 
-Only an aside goes under `/th/`. An aside also goes under `/ɡ/`, `/w/`, or `/h/`, never under `/z/` `/d/` `/b/` `/v/`. A cite, mention, or opaque span fills any slot but `/th/`.
+Only an aside goes under `/th/`. A cite or opaque span fills any other role.
 
 To use a foreign verb, adjective, adverb, or degree word (*googled*, *rouge*, *molto*), put an opaque span in that slot. That is a **loan word**: the role letter says how the foreign word is used, and the inside keeps its own spelling.
 
@@ -187,8 +187,6 @@ To use a foreign verb, adjective, adverb, or degree word (*googled*, *rouge*, *m
 > z-Azozon | v-tell | b-NAME.OPAQUE["Sam"]
 >
 > "Azozon talks to Sam." (a foreign name)
-
-The letter before the bracket belongs to the whole span. Ageben words inside a cite start with **their own** role letters.
 
 ### Practice {#beginner-practice}
 
