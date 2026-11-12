@@ -19,7 +19,7 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 
 ## Sure, decided, wanted {#settled}
 
-| Word | **-l** lasting | **-m** default | **-r** right now |
+| Word | `-l` lasting | `-m` default | `-r` right now |
 |------|----------------|----------------|------------------|
 | [could be](could-be.md) | `thomal` and I'll find out | `thomam` could be | `thomar` who knows |
 | [decided](decisions-and-tries.md) | `thogel` for good | `thogem` can still change | `thoger` for now |
@@ -29,7 +29,7 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 
 ## [How you know](how-you-know.md) {#how-you-know}
 
-| Evidential channel | **-l** strong | **-m** default | **-r** weak |
+| Evidential channel | `-l` strong | `-m` default | `-r` weak |
 |--------------------|---------------|----------------|-------------|
 | live: seeing, hearing, feeling it now | `thugel` | `thugem` | `thuger` |
 | from memory | `thevul` | `thevum` | `thevur` |
@@ -41,7 +41,7 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 
 ## [Allowed and required](allowed-required-agreed.md) {#allowed}
 
-| | **-l** by a rule | **-m** by a person | **-r** no one's word |
+| | `-l` by a rule | `-m` by a person | `-r` no one's word |
 |-|------------------|--------------------|----------------------|
 | allowed | `hwuval` | `hwuvam` | `hwuvar` tolerated |
 | forbidden | `hwuvul` | `hwuvum` | `hwuvur` frowned on |
@@ -69,7 +69,7 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 
 Sake word: `th` + sake + stance + ending.
 
-| Stance | Says | Example | **-l** | **-m** | **-r** |
+| Stance | Says | Example | `-l` | `-m` | `-r` |
 |--------|------|---------|--------|--------|--------|
 | `tha` met | [thanks](thanks-and-sorry.md) | `thawetham` | it will stay with me | thank you | got me through right now |
 | `thu` unmet | [sorry](thanks-and-sorry.md), with `blawan` for *yours* | `thawethum`, `thawethum blawan` | deeply sorry | I'm sorry | my bad |
@@ -95,7 +95,7 @@ Feeling word: a thanks or sorry word + urge + how long it lasts. The first four 
 | | | `ae` | stay on the spot |
 | | | `ue` | can't tell which way |
 
-How long it lasts: **-l** settled in, **-m** open, **-r** a wave that will pass.
+How long it lasts: `-l` settled in, `-m` open, `-r` a wave that will pass.
 
 A cost or payoff that may come: `thomam` right before the feeling word.
 

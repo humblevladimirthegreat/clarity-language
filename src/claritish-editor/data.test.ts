@@ -223,7 +223,7 @@ describe("editor data", () => {
       }
     }
     const feelings = /^## .*\{#feelings\}$([\s\S]*?)^## /m.exec(sources.sheet)![1]!;
-    const composed = feelings.split("\n").filter((l) => !l.startsWith("|")).flatMap((l) => spans(l));
+    const composed = feelings.split("\n").filter((l) => !l.startsWith("|")).flatMap((l) => spans(l)).filter((s) => !s.startsWith("-")); // a bare ending is not a drop-in
     assert.ok(composed.length > 0);
     for (const form of composed) assert.ok(insertable.has(form), `${form} (#feelings)`);
   });

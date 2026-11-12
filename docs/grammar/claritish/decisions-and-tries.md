@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-*I've decided* sounds final, and *I'll try* sounds like a hedge. Neither one says how settled you are. In Ageben, the ending on the decision or try word says it.
+*I've decided* sounds final even when you could still change your mind, and *I'll try* sounds like a hedge even when you are committed to trying. Neither *I've decided* nor *I'll try* says how settled you are. In Ageben, the ending on the decision or try word says it.
 
 ## The forms {#forms}
 
@@ -11,7 +11,9 @@
 | `thogel` / `thogem` / `thoger` | decided for good / decided, can still change / decided for now |
 | `howal` / `howam` / `howar` | committed to trying / tries / a trial run |
 
-The endings are back on the settled-to-passing scale: **-l** for good, **-m** the default, **-r** right now only.
+The drop-in goes where an English adverb or tag would go.
+
+The endings are back on the settled-to-passing scale: `-l` for good, `-m` the default, `-r` right now only.
 
 A trial run (`howar`) plans for failure: if it doesn't work, finding that out was the point. Use it to lower the stakes of starting something, for yourself or for someone else.
 
@@ -23,7 +25,7 @@ A trial run (`howar`) plans for failure: if it doesn't work, finding that out wa
 > I'm learning piano `howal`.  
 > We're skipping the party `thoger`.
 
-*I'm learning piano `howal`* says you'll keep at it until it works or is ruled out.
+*I'm learning piano `howal`* says you'll keep at it until it works or is ruled out. *I'm going vegetarian `howar`* is a trial run, which makes the change easier to start.
 
 ## Practice {#practice}
 

@@ -32,9 +32,9 @@ The ending is the settled-to-passing scale again:
 
 | Ending | Thanks (how long the payoff lasts) | Sorry (how lasting the harm is) |
 |--------|------------------------------------|---------------------------------|
-| **-l** | it will stay with me | I'm deeply sorry |
-| **-m** | thank you (the default) | I'm sorry (the default) |
-| **-r** | that got me through right now | my bad |
+| `-l` | it will stay with me | I'm deeply sorry |
+| `-m` | thank you (the default) | I'm sorry (the default) |
+| `-r` | that got me through right now | my bad |
 
 ## Examples {#examples}
 

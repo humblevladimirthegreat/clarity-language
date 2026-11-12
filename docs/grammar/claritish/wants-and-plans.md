@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-*I want to visit in March* and *I'm visiting in March* come out sounding like the same promise, so a wish said out loud quietly starts owing somebody something. *I will* hides the opposite question: whether you have the backups, the steps, or only a direction. Ageben keeps the wish and the intention in separate words, and the ending on each one says how much weight it carries.
+*I want to visit in March* and *I'm visiting in March* come out sounding like the same promise, so a wish said out loud quietly starts owing somebody something. *I will* hides how far a plan goes: whether you have the backups, the steps, or only a direction. Ageben keeps the wish and the intention in separate words, and the ending on each one says how long the wish lasts or how far the plan goes.
 
 ## The forms {#forms}
 
@@ -13,7 +13,7 @@
 
 The drop-in goes where an English adverb or tag would go, and it covers the clause it sits in.
 
-The endings are the settled-to-passing scale again: **-l** lasting, **-m** the default, **-r** right now. On a want word that is how long the wanting lasts. On a plan word it is how much of the route is drawn, and **no level is better than another**: a sketch is often all a small or early plan needs, and saying so out loud keeps the planning from becoming the reason not to start.
+The endings are the settled-to-passing scale again: `-l` lasting, `-m` the default, `-r` right now. On a want word that is how long the wanting lasts. On a plan word it is how much of the plan is worked out, and no level is better than another: a direction alone is often all a small or early plan needs, and saying so out loud keeps the planning from becoming the reason not to start.
 
 Leave both words off when you are only saying what happens. *I'm visiting in March* with nothing added is a plain report, not a promise and not a wish.
 
@@ -27,7 +27,7 @@ A want word does not say you mean to act, and a plan word is not a forecast: it 
 > I'm moving in the spring `thagol`.  
 > We're redoing the kitchen `thagor`.
 
-*I'm going back to school `thalol`* is a want that keeps coming back, and still nothing you owe anyone; *I'm calling in sick `thalor`* is the same shape for a wish that will have passed by lunchtime. *I'm moving in the spring `thagol`* says the plan already covers what happens if the lease falls through, while *we're redoing the kitchen `thagor`* admits that nothing past the idea is settled.
+*I'm going back to school `thalol`* is a want that keeps coming back, and still nothing you owe anyone; *I'm calling in sick `thalor`* is the same want word for a wish that will have passed by lunchtime. *I'm moving in the spring `thagol`* says the plan already covers what happens if the lease falls through, while *we're redoing the kitchen `thagor`* admits that nothing past the idea is settled.
 
 ## Practice {#practice}
 

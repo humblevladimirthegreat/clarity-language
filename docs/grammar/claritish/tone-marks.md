@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-Tone gets lost in text. *You're the worst* could be a joke or a fight, and the reader has to guess. A tone mark says how you mean it.
+Tone gets lost in text. *You're the worst* could be a joke or a fight, and the reader has to guess. An Ageben tone mark, a symbol written before the words, says how you mean them.
 
 ## The marks {#marks}
 
@@ -14,9 +14,9 @@ Tone gets lost in text. *You're the worst* could be a joke or a fight, and the r
 | `?` | unsure about this word |
 | `!` | strong feeling (the words say which) |
 
-Double a mark for more: `!!` is stronger still, `??` is very unsure. Stack different marks to mix tones, in any order: `?!` is surprised and doubtful, `%;` is teasing but fond. Two of a kind is the most.
+Double a mark for more: `!!` is stronger still, `??` is very unsure. Stack different marks to mix tones, in any order: `?!` is surprised and doubtful, `%;` is teasing but fond. Two of the same mark is the most.
 
-Write the mark **before** what it colors, so the reader sees the tone before reading the words. Attach it to a word to color that word. Put it at the start of the sentence to color the whole sentence. A `!` at the end of a sentence is still ordinary English punctuation.
+Write the mark before what it colors, so the reader sees the tone before reading the words. Attach it to a word to color that word. Put it at the start of the sentence to color the whole sentence. A `!` at the end of a sentence is still ordinary English punctuation.
 
 ## Examples {#examples}
 

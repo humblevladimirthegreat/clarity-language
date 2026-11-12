@@ -2,11 +2,11 @@
 
 ## The gap {#gap}
 
-An English emotion word such as *anxious*, *angry*, or *proud* names the feeling and stops there. *I'm so angry* does not say which need went unmet, or what the anger is pulling you to do. *It made me anxious* can send you off to hide before you have noticed that hiding is what you want. Ageben names the need and the pull in one word, so you can see the pull before you follow it.
+An English emotion word such as *anxious*, *angry*, or *proud* names the feeling and stops there. *I'm so angry* does not say which need went unmet, or what the anger urges you to do. *It made me anxious* can send you off to hide before you have noticed that hiding is what you want. Ageben names the need and the urge in one word, so you can see the urge before you follow it.
 
 ## The forms {#forms}
 
-A **feeling word** is a thanks or sorry word from Thanks and sorry with two letters added. Keep the whole thanks or sorry word, add one vowel for the **urge**, which is what the feeling pulls you to do, and end with **-m**. The ending from Thanks and sorry stays in the middle and keeps its meaning. The last **-m** leaves open how long the feeling lasts.
+A **feeling word** is a thanks or sorry word from Thanks and sorry with two letters added. Keep the whole thanks or sorry word, add one vowel for the urge, and end with `-m`. The ending from Thanks and sorry stays in the middle and keeps its meaning. The last `-m` leaves open how long the feeling lasts.
 
 | `thuwa` | `tha` | `m` | `a` | `m` |
 |---------|-------|-----|-----|-----|
@@ -19,11 +19,13 @@ A **feeling word** is a thanks or sorry word from Thanks and sorry with two lett
 | `o` | do something for someone: give back, make amends | you were helped, or you caused a cost |
 | `u` | move off: avoid, leave, hide | the danger is real, or you need room |
 
+The four urges are a menu; you don't need to memorize it.
+
 Put the feeling word after the English clause the feeling is about, like any other drop-in. On its own, with no clause, it says how you feel right now.
 
-When you can't tell which need it is, use the unspecified sake `uda`: `thudathumum` says *something is off, and I want to get away*. When nothing pulls you to move, use `a`.
+When you can't tell which need it is, use the unspecified sake `uda`: `thudathumum` says *something is off, and I want to get away*. When you feel no urge to move, use `a`.
 
-No urge is the right one to have; each has times when it belongs. The urge is not a plan, either: naming it leaves you free to follow it or not. When two pulls mix, name the stronger one. When the English emotion word already says all you want to say, leave it in English.
+No urge is the right one to have; each has times when it belongs. The urge is not a plan, either: naming it leaves you free to follow it or not. When two urges mix, name the stronger one. When the English emotion word already says all you want to say, leave it in English.
 
 ## Examples {#examples}
 
@@ -41,7 +43,7 @@ No urge is the right one to have; each has times when it belongs. The urge is no
 | `thawethamam` | I feel connected, and I want to stay in it | *touched* | relatedness met; stay in it |
 | `thudathumum` | something is off, and I want to get away | *uneasy* | a sake unmet; move off |
 
-`thunathumem` points the anger at someone, so the next question is what you would say to them. `thewathumom` turns *guilty* into a pull to make amends, and the sake says what to make up: she is not better off because of you. `thudathumum` names a pull to leave before you know which need is behind it.
+`thunathumem` points the anger at someone, so the next question is what you would say to them. `thewathumom` turns *guilty* into an urge to make amends, and the sake says what to make up: she is not better off because of you. `thudathumum` names an urge to leave before you know which need is behind it.
 
 ## Practice {#practice}
 

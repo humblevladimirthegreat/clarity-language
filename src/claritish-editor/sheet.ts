@@ -158,7 +158,7 @@ function sheetLine(sheet: Sheet, section: string, opening: string): string {
 
 /** An entry of a line that lists endings: `-m` in `How long it lasts: **-l** settled in, **-m** open.` → `m` or `open`. */
 function lineItem(line: string, item: string, take: NonNullable<SheetRef["take"]>, where: string): string {
-  const entries = [...line.matchAll(/\*\*-([a-z])\*\*\s*([^,.;]+)/g)].map((m) => ({ ending: m[1]!, english: m[2]!.trim() }));
+  const entries = [...line.matchAll(/(?:\*\*-([a-z])\*\*|`-([a-z])`)\s*([^,.;]+)/g)].map((m) => ({ ending: (m[1] ?? m[2])!, english: m[3]!.trim() }));
   const entry = entries.find((e) => `-${e.ending}` === item);
   if (!entry) throw new Error(`item \`${item}\` is not on the line \`${plain(line)}\` in ${where}`);
   if (take === "ending") return entry.ending;
