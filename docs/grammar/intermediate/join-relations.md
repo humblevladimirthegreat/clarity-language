@@ -6,7 +6,7 @@ band: intermediate
 
 ### Join-relations {#join-relations}
 
-When English ties one extra thing to a noun or an action by a list move (*a cupcake with peanuts*, *walk without meat*, *work prioritizing the bug*), write the move as an adjective (first letter **`g`**) or an adverb (first letter **`h`**), with the same join vowel as [list verbs](list-verbs.md#list-verbs) and ending **-n** (`gan` / `han`, …). Right after it comes one `/b/` word that names the extra thing. Keep that pair together: `gan` + `/b/` describes a noun, and `han` + `/b/` works as one adverb. You can now say *including*, *without*, or *prioritizing* without building a new list. Here too, **-n** does not mark a name, and an associative group on the `/b/` word takes noun **-x** as usual.
+English ties one extra thing to a noun or an action with words like *with*, *without*, and *prioritizing*: *a cupcake with peanuts*, *walk without meat*, *work prioritizing the bug*. Ageben writes each of these as an adjective (first letter `g`) or an adverb (first letter `h`), with the same join vowel as [list verbs](list-verbs.md#list-verbs) and the ending `-n` (`gan` / `han`, …), followed right away by one `/b/` word that names the extra thing. Keep that pair together: `gan` + `/b/` describes a noun, and `han` + `/b/` works as one adverb. You can now say *including*, *without*, or *prioritizing* without building a new list. Here too, `-n` does not mark a name, and an associative group on the `/b/` word takes noun `-x` as usual.
 
 > `zugedal gan bluwedal.`
 >
@@ -14,32 +14,32 @@ When English ties one extra thing to a noun or an action by a list move (*a cupc
 >
 > "A cupcake with peanuts."
 
-**`gan`** always needs its `/b/` word (`gan b…`).
+`gan` always needs its `/b/` word (`gan b…`).
 
-**Compare with:** *writes with a hammer* is an extra-noun [hook](/hooks#extra-noun) (`aol` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Alazun* is [proxy](/relations#proxy) (`hanem`), not **`hen`** *exclusively for*. **`uol`** is *against* that party, not **`hun`** *refusing*.
+**Compare with:** *writes with a hammer* is an extra-noun [hook](/hooks#extra-noun) (`aol` + `/b/`), not `han`. `han` is company / including, not the tool. *Tells on behalf of Alazun* is [proxy](/relations#proxy) (`hanem`), not `hen` *exclusively for*. `uol` is *against* that party, not `hun` *refusing*.
 
-**Not the same job as:** adjective [joins](/joins) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
+Adjective [joins](/joins) (`gal` / `gam` / `gar`) do a different job: a join-relation takes `-n` and points toward one `/b/` word.
 
-**For *including* as an afterthought, use:** a [hook](/hooks) (`al`, …). `zuhunam gan blazozon` is *a team including Azozon*; `zuhunam al zazozon` is *the team, including Azozon*.
+For *including* as an afterthought, use a [hook](/hooks) (`al`, …) instead. `zuhunam gan blazozon` is *a team including Azozon*; `zuhunam al zazozon` is *the team, including Azozon*.
 
-For several members, put a [phrase join](/joins) **inside** the `/b/` phrase (`gan bluwedal blugedam bal`; `zazozon han blalazun blahelan bal vowurol`). For an unnamed member or none at all, use a [standalone](/joins#standalone-phrase) `/b/` join as the only `/b/` word (`gan blar` = *including something*; `guan blal` = *excluding nothing`).
+For several members, put a [phrase join](/joins) inside the `/b/` phrase (`gan bluwedal blugedam bal`; `zazozon han blalazun blahelan bal vowurol`). For an unnamed member or none at all, use a [standalone](/joins#standalone-phrase) `/b/` join as the only `/b/` word (`gan blar` = *including something*; `guan blal` = *excluding nothing*).
 
 | Ageben | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
-| **`gan` / `han`** | `/ɡ/` noun or `/h/` event toward `/b/` | *including / with* | **a** ≈ add (hold the extra member) | `zugedal gan bluwedal`; `zazozon han blalazun vowurol` |
-| **`gen` / `hen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | **e** ≈ choice (lock that pick) | `zuhunam gen blazozon`; `… hen blazozon vowurol` |
-| **`gaen` / `haen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to* (more may follow); `/h/` *among options* | **ae** ≈ add + choice, and more may follow | `zugedal gaen bluwedal`; `… haen bluwedal vowurol` |
-| **`gun` / `hun`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *against / anti-*; `/h/` *refusing* | **u** ≈ undo (reject that member) | `zugedal gun bluwedal`; `… hun blumudel vowurol` |
-| **`guan` / `huan`** | `/ɡ/` or `/h/` toward `/b/` | *without / excluding* | **ua** ≈ undo + add (leave that member out) | `zugedal guan bluwedal`; `… huan bluwedal vowurol` |
-| **`guen` / `huen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to anything but*; `/h/` *barring / anything but* | **ue** ≈ undo + choice (bar that one; rest free) | `zowulal guen bluwedal`; `… huen bluwedal vowurol` |
-| **`gon` / `hon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *prioritizing / headed by*; `/h/` *prioritizing* | **o** ≈ rank (put this first) | `zobeval gon blabezul`; `… hon blabezul vurewem` |
-| **`gaon` / `haon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *starting with*; `/h/` *starting with* | **ao** ≈ add + rank (begin here) | `zobeval gaon blurewem`; `… haon blurewem vowurol` |
-| **`goen` / `hoen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *on a par with*; `/h/` *equating / tying* | **oe** ≈ rank then choice (same height) | `zedudal goen blogudal`; `… hoen blalazun vowurol` |
-| **`guon` / `huon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *deprioritizing / trailing*; `/h/` *deprioritizing* | **uo** ≈ undo + rank (drop this rank) | `zugedal guon blugedam`; `… huon blugedam vowurol` |
+| **`gan` / `han`** | `/ɡ/` noun or `/h/` event toward `/b/` | *including / with* | `a` ≈ add (hold the extra member) | `zugedal gan bluwedal`; `zazozon han blalazun vowurol` |
+| **`gen` / `hen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | `e` ≈ choice (lock that pick) | `zuhunam gen blazozon`; `… hen blazozon vowurol` |
+| **`gaen` / `haen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to* (more may follow); `/h/` *among options* | `ae` ≈ add + choice, and more may follow | `zugedal gaen bluwedal`; `… haen bluwedal vowurol` |
+| **`gun` / `hun`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *against / anti-*; `/h/` *refusing* | `u` ≈ undo (reject that member) | `zugedal gun bluwedal`; `… hun blumudel vowurol` |
+| **`guan` / `huan`** | `/ɡ/` or `/h/` toward `/b/` | *without / excluding* | `ua` ≈ undo + add (leave that member out) | `zugedal guan bluwedal`; `… huan bluwedal vowurol` |
+| **`guen` / `huen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to anything but*; `/h/` *barring / anything but* | `ue` ≈ undo + choice (bar that one; rest free) | `zowulal guen bluwedal`; `… huen bluwedal vowurol` |
+| **`gon` / `hon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *prioritizing / headed by*; `/h/` *prioritizing* | `o` ≈ rank (put this first) | `zobeval gon blabezul`; `… hon blabezul vurewem` |
+| **`gaon` / `haon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *starting with*; `/h/` *starting with* | `ao` ≈ add + rank (begin here) | `zobeval gaon blurewem`; `… haon blurewem vowurol` |
+| **`goen` / `hoen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *on a par with*; `/h/` *equating / tying* | `oe` ≈ rank then choice (same height) | `zedudal goen blogudal`; `… hoen blalazun vowurol` |
+| **`guon` / `huon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *deprioritizing / trailing*; `/h/` *deprioritizing* | `uo` ≈ undo + rank (drop this rank) | `zugedal guon blugedam`; `… huon blugedam vowurol` |
 
 *Anti-* vs *without*: `gun blumudel` vs `guan blumudel`. *Without X* vs *anything but X*: `guan bluwedal` vs `guen bluwedal`. Sole pick vs among options: `gen blazozon` vs `gaen blazozon`. Workaround as top priority vs workaround as first step: `gon blurewem` vs `gaon blurewem`.
 
-**Compare with:** *a house like Azozon’s* / *walks like a duck* is resemblance ([like](/relations#likeness) `gewem` / `hewem`), not **`goen` / `hoen`** *on a par with* / *equating*.
+**Compare with:** *a house like Azozon’s* / *walks like a duck* is resemblance ([like](/relations#likeness) `gewem` / `hewem`), not `goen` / `hoen` *on a par with* / *equating*.
 
 ### Practice {#intermediate-practice}
 

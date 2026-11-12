@@ -106,9 +106,6 @@
   "intermediate/in-clause-hooks.md": {
     "bold-density": 1
   },
-  "intermediate/join-relations.md": {
-    "bold-density": 2
-  },
   "intermediate/label-reach.md": {
     "voice": 1
   },
@@ -132,9 +129,6 @@
   },
   "intermediate/spans-as-words.md": {
     "bold-density": 2
-  },
-  "intermediate/verb-and-stance-joins.md": {
-    "bold-density": 1
   },
   "intermediate/viewpoint.md": {
     "bold-density": 1
