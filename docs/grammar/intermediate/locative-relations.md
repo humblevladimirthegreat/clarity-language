@@ -4,9 +4,11 @@ band: intermediate
 
 # Landmark relations {#landmark-relations}
 
+Hooks already give you *in*, *from*, and *toward*; the other places on this page each need a relation root with the landmark right after it. The first section teaches *between* two landmarks, *across* one from edge to edge, and *around* one on all sides. The second adds *past*, *along*, *opposite*, and *beyond*: a path that goes by a landmark, a path along its long side, a place facing it, and a place on its far side.
+
 ### Between, across, around {#locative-relations}
 
-Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extra-noun hooks](/extra-noun-hooks#extra-noun-intermediate). To say where someone moves from and to, use one hook for each landmark (*from* one, *toward* another), and write the **source** before the **goal**.
+English says where someone is or moves with small words such as *in*, *from*, *toward*, and *between*. The everyday ones, *in* / *on* / *at* / *from* / *toward* / *through* / *out of*, are [extra-noun hooks](/extra-noun-hooks#extra-noun-intermediate). To say where someone moves from and to, use one hook for each landmark (*from* one, *toward* another), and write the source before the goal. *Between*, *across*, and *around* each need a root instead, with the landmark after it.
 
 > `zazozon ul bawahol vowurol oel bedavol.`
 >
@@ -36,7 +38,7 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 
 <a id="spatial-path"></a>
 
-*Between* needs a **root**, not a hook: the position depends on **two** landmarks at once. Use hosted **`hedam`** (or **`gedam`** on a noun) and put both landmarks in `/b/` as a [join](/joins). (cue: 🥪 *sandwich*: the filling sits between two sides)
+*Between* needs a root, not a hook: the position depends on two landmarks at once. Use hosted **`hedam`** (or **`gedam`** on a noun) and put both landmarks in `/b/` as a [join](/joins). (cue: 🥪 *sandwich*: the filling sits between two sides)
 
 > `zalazun vehohel hedam bledavol blawahol bal.`
 >
@@ -44,7 +46,7 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 >
 > "Alazun sits between a train and a station."
 
-The `bl-` word after the relation word is **one slot**. A join (`bal`) or a [plural](/plurality) fills it whole: each item takes `bl-`, the join word needs none (`bl-` on it is also correct), and the landmarks do not each need their own relation word. A join with no items before it is the whole slot, so it takes `bl-` itself (`hewem blar` *like what?*, `hewem blal` *like nothing*). The same holds on a noun:
+Everything in `bl-` after the relation word counts as one landmark. A join (`bal`) or a [plural](/plurality) fills that landmark whole: each item takes `bl-`, the join word needs none (`bl-` on it is also correct), and the landmarks do not each need their own relation word. A join with no items before it is the whole landmark, so it takes `bl-` itself (`hewem blar` *like what?*, `hewem blal` *like nothing*). The same holds on a noun:
 
 > `zazozon gedam bledavol blawahol bal vehohel.`
 >
@@ -56,7 +58,7 @@ As a plain noun, `zedal` is *a sandwich*.
 
 <a id="across"></a>
 
-*Across* also needs a root. The hook **`uel`** *through* passes through the inside of the landmark (a crowd, a tunnel). **`hohom`** goes from one edge to the far edge (a street, a river). Put the landmark in a `bl-` word right after it. (cue: 🌉 *bridge*: a bridge spans the gap)
+*Across* also needs a root. The hook `uel` *through* passes through the inside of the landmark (a crowd, a tunnel). **`hohom`** goes from one edge to the far edge (a street, a river). Put the landmark in a `bl-` word right after it. (cue: 🌉 *bridge*: a bridge spans the gap)
 
 > `zazozon vowurol hohom blawahol.`
 >
@@ -66,7 +68,7 @@ As a plain noun, `zedal` is *a sandwich*.
 
 On a noun it is **`gohom`**: *Azozon, across the station, sits.* As a plain noun, `zohol` is *a bridge*.
 
-*Around* needs a root too: the person or thing is on **all sides** of one landmark, like a ring. Use hosted **`hevam`** (or **`gevam`** on a noun) with the landmark in `/b/`. (cue: 🎠 *carousel*: the horses ride on all sides of the center pole)
+*Around* needs a root too: the person or thing is on all sides of one landmark, like a ring. Use hosted **`hevam`** (or **`gevam`** on a noun) with the landmark in `/b/`. (cue: 🎠 *carousel*: the horses ride on all sides of the center pole)
 
 > `zogozelx vehohel hevam bledavol.`
 >
@@ -74,7 +76,7 @@ On a noun it is **`gohom`**: *Azozon, across the station, sits.* As a plain noun
 >
 > "Cats sit around a train."
 
-As a plain noun, `zeval` is *a carousel*. **`em`** *near* says only that the person or thing is close, not that it surrounds the landmark.
+As a plain noun, `zeval` is *a carousel*. `em` *near* says only that the person or thing is close, not that it surrounds the landmark.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Same root as | Cue |
@@ -87,7 +89,7 @@ As a plain noun, `zeval` is *a carousel*. **`em`** *near* says only that the per
 
 ### Past, along, opposite, beyond {#path-and-far-side}
 
-Four more relations take one landmark in a `bl-` word, the same way *across* and *around* do.
+English has four more words for where a path or a place sits against one landmark: *past*, *along*, *opposite*, and *beyond*. Each is a relation root too, and takes one landmark in a `bl-` word, the same way *across* and *around* do.
 
 *Past* is **`hegalom`**: the path comes near the landmark and goes on, without stopping there and without going in. (cue: ☄️ *comet*: a comet swings by the sun and keeps going)
 
@@ -97,7 +99,7 @@ Four more relations take one landmark in a `bl-` word, the same way *across* and
 >
 > "Azozon walks past a house."
 
-**`em`** *near* says only that the person is close, and **`hohom`** *across* reaches both edges. On a noun, **`gegalom`** names what you reach by going past the landmark: `zohehal gegalom blawahol` *a house past the station*. As a plain noun, `zegalol` is *a comet*.
+`em` *near* says only that the person is close, and `hohom` *across* reaches both edges. On a noun, **`gegalom`** names what you reach by going past the landmark: `zohehal gegalom blawahol` *a house past the station*. As a plain noun, `zegalol` is *a comet*.
 
 *Along* is **`herahom`**: the path, or a row of things, follows the long side of the landmark (a road, a river, a train). It covers both walking on a road and walking beside it. (cue: 🛤️ *railway*: two rails run side by side the whole way)
 
@@ -117,7 +119,7 @@ On a noun it is **`gerahom`**: `zohehalx gerahom bledavol` *houses along the tra
 >
 > "Ahelan sits opposite Azozon."
 
-To name the gap (*across the station from Azozon*), add **`hohom`** with the gap as its landmark:
+To name the gap (*across the station from Azozon*), add `hohom` with the gap as its landmark:
 
 > `zahelan vehohel havunam blazozon hohom blawahol.`
 >

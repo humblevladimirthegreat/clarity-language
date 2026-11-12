@@ -4,19 +4,19 @@ band: intermediate
 
 # Role parts {#role-parts}
 
-English *a teacher*, *as a teacher*, *the way it was done*, and *that knife* mix a person's role, the role an act is done in, a quality of an event, and a landmark. Ageben keeps those apart: a **role word** names a participant or a quality of the event; a place, tool, or time is a landmark with a hook.
+English *a teacher*, *as a teacher*, *the way it was done*, and *that knife* mix a person's role, the role an act is done in, a quality of an event, and a landmark. Ageben keeps those apart: a **role word** names a participant or a quality of the event; a place, tool, or time is a landmark with a hook. The sections below cover how far a role holds (its reach vowel), a role word used as an adverb for the role an act is done in, landmarks, which have no role word, and the part consonant that makes a role word name a quality of the event.
 
 ### Reach across scenes (`e`, `a`, pairs) {#reach}
 
-The reach slot after **`w`** takes every [label reach](/label-seams#label-reach) vowel, not just **`u`** and **`o`**. They are the same vowels other labels write after mid-word **`th`**; on a role word they come first, and nowhere else. A **`th`** reach after a role word's stem (`zwuzuduyethel`) is not a word.
+English tells *someone who teaches* apart from *a teacher*, *Alazun's teacher*, and *a teacher type*. For this, a role word takes every [label reach](/label-seams#label-reach) vowel after `w`, not just `u` and `o`. They are the same vowels other labels write after mid-word `th`; on a role word they come first, and nowhere else. A `th` reach after a role word's stem (`zwuzuduyethel`) is not a word.
 
-| V1 | Reach | Example | English |
+| Vowel | Reach | Example | English |
 |----|-------|---------|---------|
-| **`u`** | this episode: one act is enough | `zwuzeduyol` | *someone who teaches* |
-| **`o`** | practiced role | `zwozeduyol` | *a teacher* |
-| **`e`** | this pair: toward one party, named in a `bl-` word on `/ɡ/` | `gwezeduyol blalazun` | *is a teacher to Alazun* |
-| **`a`** | a type across scenes | `zwazeduyol` | *a teacher type* |
-| pairs | the reach stacks: **`ae`**, **`ao`**, **`oe`**, **`ua`**, **`ue`**, **`uo`** | `gwuozeduyol`, `gwaezeduyol` | *not in that role*, *a teacher by circumstance* |
+| `u` | this episode: one act is enough | `zwuzeduyol` | *someone who teaches* |
+| `o` | practiced role | `zwozeduyol` | *a teacher* |
+| `e` | this pair: toward one party, named in a `bl-` word on `/ɡ/` | `gwezeduyol blalazun` | *is a teacher to Alazun* |
+| `a` | a type across scenes | `zwazeduyol` | *a teacher type* |
+| pairs | the reach stacks: `ae`, `ao`, `oe`, `ua`, `ue`, `uo` | `gwuozeduyol`, `gwaezeduyol` | *not in that role*, *a teacher by circumstance* |
 
 > `zazozon gwezeduyol blalazun.`
 >
@@ -24,7 +24,7 @@ The reach slot after **`w`** takes every [label reach](/label-seams#label-reach)
 >
 > "Azozon is Alazun's teacher."
 
-On `/z/`, `/d/`, and `/b/`, pair reach **`e`** stands alone: the party is the one the clause already relates the person to. On `/ɡ/` it takes its `bl-` party, as on any [pair-reach label](/label-seams#reach-relative).
+On `/z/`, `/d/`, and `/b/`, pair reach `e` stands alone: the party is the one the clause already relates the person to. On `/ɡ/` it takes its `bl-` party, as on any [pair-reach label](/label-seams#reach-relative).
 
 > `zazozon gwuozeduyol.`
 >
@@ -32,11 +32,11 @@ On `/z/`, `/d/`, and `/b/`, pair reach **`e`** stands alone: the party is the on
 >
 > "Azozon is not acting as a teacher here."
 
-Reach works on [role pointers](/pronouns#role-pointers) too. `zwuzer` is *the latest doer*; `zwozer` is *the latest doer, in their practiced role*: after *Azozon teaches*, `zwozer` is Azozon as a teacher. With **-m** it gives a useful contrast: `dwuzem` is *what they did (this time)*, and `dwozem` is *their practice, their craft*.
+Reach works on [role pointers](/pronouns#role-pointers) too. `zwuzer` is *the latest doer*; `zwozer` is *the latest doer, in their practiced role*: after *Azozon teaches*, `zwozer` is Azozon as a teacher. With `-m` it gives a useful contrast: `dwuzem` is *what they did (this time)*, and `dwozem` is *their practice, their craft*.
 
 ### Acting as (`/h/`) {#acting-as}
 
-English *as a teacher, I …* names the role the act is done in, not a person standing in the clause. Write the same role compound, with a slot part (`z`, `d`, or `b`), on `/h/`: a person cannot be an adverb, so the word is the role the act is done in.
+English *as a teacher, I …* names the role the act is done in, not a person standing in the clause. Write the same role compound, with a part consonant for a participant (`z`, `d`, or `b`), on `/h/`: a person cannot be an adverb, so the word is the role the act is done in.
 
 > `zazozon vezuyol hwozeduyol.`
 >
@@ -44,7 +44,7 @@ English *as a teacher, I …* names the role the act is done in, not a person st
 >
 > "Azozon speaks as a teacher."
 
-The reach vowel does its usual work. Pair reach **`e`** takes its `bl-` party, as on `/ɡ/`.
+The reach vowel does its usual work. Pair reach `e` takes its `bl-` party, as on `/ɡ/`.
 
 | Ageben | English |
 |--------|---------|
@@ -57,7 +57,7 @@ The reach vowel does its usual work. Pair reach **`e`** takes its `bl-` party, a
 
 **Compare with:** resemblance is [likeness](/relations#likeness) (`hewem blwozeduyol` *like a teacher*). An ordinary `/h/` adverb is how the event goes (`hadurom` *hastily*).
 
-**Compare with:** `zazozon gwozeduyol.` says Azozon **is** a teacher. `zazozon vezuyol hwozeduyol.` says the telling is done in that role.
+**Compare with:** `zazozon gwozeduyol.` says Azozon *is* a teacher. `zazozon vezuyol hwozeduyol.` says the telling is done in that role.
 
 ### Places, tools, and times {#places-tools-times}
 
@@ -93,7 +93,7 @@ English *the way it was done*, *what it left them*, *what came of it*, or *that 
 >
 > "Someone sees a way of walking."
 
-A slot part on the same stem is still a participant: `dwuzowurol` is *someone who walks*, as [role compounds](/roles#role-compounds) name a doer.
+A participant's part consonant on the same stem still names a participant: `dwuzowurol` is *someone who walks*, as [role compounds](/roles#role-compounds) name a doer.
 
 The stem is still the event. The part says which quality of it you mean. Pointers drop the stem and read the latest matching event, as [role pointers](/pronouns#role-pointers) do for people:
 
@@ -107,23 +107,23 @@ If that clause named no manner word, `dwuher` is the event's own manner: how wal
 
 | Part | Names | Compound | Pointer |
 |------|-------|----------|---------|
-| **`h`** | how, when, or where it happened | `dwuhowurol` *a way of walking* | `dwuher` *the way it was done* |
-| **`g`** | the state it leaves its participant in | `dwuguguyol` *how cooked it is* | `dwuger` *the state it left them in* |
-| **`th`** | a reason, thought, or feeling about it | `dwuthowurol` *a reason to walk* | `dwuther` *the reason for it* |
-| **`w`** | how much or how intense it was | `dwuwowurol` *the amount of walking* | `dwuwer` *how much it was* |
-| **`y`** | the turn that said it (question, command, remark) | `dwuyowurol` *a remark about walking* | `dwuyer` *that remark* |
-| **`x`** | what followed from it | `dwuxowurol` *what comes of walking* | `dwuxer` *what came of it* |
-| **`v`** | the event itself | (no compound: the event noun is the stem, `dowurol`) | `dwuver` *that event* |
+| `h` | how, when, or where it happened | `dwuhowurol` *a way of walking* | `dwuher` *the way it was done* |
+| `g` | the state it leaves its participant in | `dwuguguyol` *how cooked it is* | `dwuger` *the state it left them in* |
+| `th` | a reason, thought, or feeling about it | `dwuthowurol` *a reason to walk* | `dwuther` *the reason for it* |
+| `w` | how much or how intense it was | `dwuwowurol` *the amount of walking* | `dwuwer` *how much it was* |
+| `y` | the turn that said it (question, command, remark) | `dwuyowurol` *a remark about walking* | `dwuyer` *that remark* |
+| `x` | what followed from it | `dwuxowurol` *what comes of walking* | `dwuxer` *what came of it* |
+| `v` | the event itself | (no compound: the event noun is the stem, `dowurol`) | `dwuver` *that event* |
 
-Reach **`a`** / **`e`** / **`o`** / **`u`** still say how far the label reaches: `dwohowurol` is *someone's usual way of walking*, `dwahowurol` *a walking style*.
+Reach `a` / `e` / `o` / `u` still say how far the label reaches: `dwohowurol` is *someone's usual way of walking*, `dwahowurol` *a walking style*.
 
-A **`g`** pointer is the `/d/` participant's state when the event has one, and the `/z/` participant's otherwise. After *Azozon punches Alazun*, `dwuger` is Alazun's state; after *Azozon runs*, it is Azozon's. **`w`** always reads the event's own extent: a `/w/` word grades the next adjective, never the event, so `dwuwer` is *that much*. `dwugar` and `dwuwar` are not words: no clause names a resulting state or an amount for *the other* to differ from.
+A `g` pointer is the `/d/` participant's state when the event has one, and the `/z/` participant's otherwise. After *Azozon punches Alazun*, `dwuger` is Alazun's state; after *Azozon runs*, it is Azozon's. `w` always reads the event's own extent: a `/w/` word grades the next adjective, never the event, so `dwuwer` is *that much*. `dwugar` and `dwuwar` are not words: no clause names a resulting state or an amount for *the other* to differ from.
 
-A **`th`** pointer reads [sake](/sakes) words, feeling roots, and [causation hinges](/causation) on `/th/`. A channel, MAY, the notional, or a holder is the speaker's stance on the *claim*, not a stance on the event, so the pointer skips those too. With no such word, `dwuther` is still *the reason for it*: the gap the spelling fills.
+A `th` pointer reads [sake](/sakes) words, feeling roots, and [causation hinges](/causation) on `/th/`. A channel, MAY, the notional (the *as if* word), or a holder is the speaker's stance on the *claim*, not a stance on the event, so the pointer skips those too. With no such word, `dwuther` is still *the reason for it*: the gap the spelling fills.
 
-A **`y`** pointer reaches turns, not events: `dwuyer` the latest turn, `dwuyar` the one before it, `dwuyor` this very turn, `dwuyur` whatever was said. With **-m**, `dwuyem` is what the saying did, apart from what it said.
+A `y` pointer reaches turns, not events: `dwuyer` the latest turn, `dwuyar` the one before it, `dwuyor` this very turn, `dwuyur` whatever was said. With `-m`, `dwuyem` is what the saying did, apart from what it said.
 
-If the next sentence after an event opened with a [consequence linker](sentence-linkers.md#sentence-linkers) (`xahom` *therefore*, `xahol` *it follows that*), an **`x`** pointer is that sentence's event:
+If the next sentence after an event opened with a [consequence linker](sentence-linkers.md#sentence-linkers) (`xahom` *therefore*, `xahol` *it follows that*), an `x` pointer is that sentence's event:
 
 > `zazozon vabuvul. xahom zalazun veyamul. zahelan dwuxer vayebel.`
 >
@@ -131,7 +131,7 @@ If the next sentence after an event opened with a [consequence linker](sentence-
 >
 > "Azozon punches. Therefore Alazun screams. Ahelan sees what came of it."
 
-**Compare with:** a landmark is a thing (*the house*, *the knife*), reached by resuming its noun or with a hook pointer (`aor` *with it*). An **`h`** part is a quality of the event (*the haste*): *how* is `dwuher`. **`g`** is the state the event leaves its participant in; **`x`** is what happens next because of it.
+**Compare with:** a landmark is a thing (*the house*, *the knife*), reached by resuming its noun or with a hook pointer (`aor` *with it*). An `h` part is a quality of the event (*the haste*): *how* is `dwuher`. `g` is the state the event leaves its participant in; `x` is what happens next because of it.
 
 ### Practice {#intermediate-practice}
 

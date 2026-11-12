@@ -67,16 +67,10 @@
   "inspect.md": {
     "long-paragraph": 1
   },
-  "intermediate/abstract-landmarks.md": {
-    "bold-density": 1
-  },
   "intermediate/bars.md": {
     "bold-density": 2
   },
   "intermediate/comparative-arity.md": {
-    "bold-density": 1
-  },
-  "intermediate/compound-families.md": {
     "bold-density": 1
   },
   "intermediate/contrary-to.md": {
@@ -97,12 +91,6 @@
   },
   "intermediate/residue-and-former.md": {
     "long-paragraph": 1
-  },
-  "intermediate/role-parts.md": {
-    "bold-density": 1
-  },
-  "intermediate/viewpoint.md": {
-    "bold-density": 1
   },
   "intermediate/want-and-decide.md": {
     "bold-density": 1
