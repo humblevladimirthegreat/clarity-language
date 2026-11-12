@@ -1,6 +1,6 @@
 # Style pass
 
-**Status:** partially implemented. Decided 2026-11-11: a rising warning count fails the build on every page (the ratchet); recipe pages, cheat sheets, and level reviews get which-page rows; headings that need a retitle are logged and retitled together in H1; the user reviews each phase before the next starts; forms take bold only where introduced. **Phase 1 done 2026-11-11** (T1, T2, T3, C1). **Phase 2 done 2026-11-12** (B2 to B5). **Phase 3 done 2026-11-12** (B6 to B9; Beginner is finished). `purpose.md` and `introduction.md` were already rewritten to [orientation-style.md](../meta/orientation-style.md), so the pass skips them. Decided 2026-11-12: a page with two or more teaching sections needs a page lead (rule in [doc-style.md](../meta/doc-style.md#which-page)); 15 Intermediate and 9 Advanced pages lack one and get it in their units. **Phase 4 done 2026-11-12** (B10, O2, O3, O4; the recipe track and Claritish are finished, and the English-helper recall check passed). Decided 2026-11-12: Claritish further-inventory sections and run-in labels are now rules in [claritish-style.md](../meta/claritish-style.md#forms). **Phase 5 done 2026-11-12** (I1 to I6). Next: the user reviews the Phase 5 diffs (commits `497b4b38` to `c4164e52`), then Phase 6. Decided 2026-11-12: the four Claritish lessons that lacked one now say when to leave the drop-in out (where the English already says it).
+**Status:** partially implemented. Decided 2026-11-11: a rising warning count fails the build on every page (the ratchet); recipe pages, cheat sheets, and level reviews get which-page rows; headings that need a retitle are logged and retitled together in H1; the user reviews each phase before the next starts; forms take bold only where introduced. **Phase 1 done 2026-11-11** (T1, T2, T3, C1). **Phase 2 done 2026-11-12** (B2 to B5). **Phase 3 done 2026-11-12** (B6 to B9; Beginner is finished). `purpose.md` and `introduction.md` were already rewritten to [orientation-style.md](../meta/orientation-style.md), so the pass skips them. Decided 2026-11-12: a page with two or more teaching sections needs a page lead (rule in [doc-style.md](../meta/doc-style.md#which-page)); 15 Intermediate and 9 Advanced pages lack one and get it in their units. **Phase 4 done 2026-11-12** (B10, O2, O3, O4; the recipe track and Claritish are finished, and the English-helper recall check passed). Decided 2026-11-12: Claritish further-inventory sections and run-in labels are now rules in [claritish-style.md](../meta/claritish-style.md#forms). **Phase 5 done 2026-11-12** (I1 to I6). Decided 2026-11-12: the four Claritish lessons that lacked one now say when to leave the drop-in out (where the English already says it). **Phase 6 done 2026-11-12** (I7 to I12). Next: the user reviews the Phase 6 diffs (commits `fc25dd3e` to `ea53fa87`), then Phase 7.
 
 **Related:** [doc-style.md](../meta/doc-style.md), [claritish-style.md](../meta/claritish-style.md), [orientation-style.md](../meta/orientation-style.md), [grammar-docs.md](../meta/grammar-docs.md), [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts), [prose-style.ts](../../src/lint/prose-style.ts), [prose-style-baseline.json](../../src/lint/prose-style-baseline.json), [sections.ts](../../src/lint/sections.ts), [style-editor.md](../../.claude/agents/style-editor.md)
 
@@ -17,7 +17,7 @@ Each prose unit is one fresh `style-editor` subagent on one sidebar unit from `r
 - Cue-column letters in `<!-- cheat-sheet: … -->` tables go in backticks, unless the cheat-sheet lint rejects a letter the cheat sheet lacks; then the letter stays bold and is reported. Each marker sits above its table, never between the header and separator rows.
 - Examples stay where they stand. Add or drop a code span or link only when you must, since the wording-only check compares them. A unit of more than about 1,500 lines may stop at the turn check. A fresh `style-editor` then finishes the pages it names as left, under the same unit id.
 - Forms take bold only where introduced.
-- **Compare with:** and **Related form:** are the house run-in labels ([grammar-docs.md](../meta/grammar-docs.md#compare-with)). Keep them; rewrite the sentence after the label, never the label into prose.
+- **Compare with:**, **Related form:**, **Not the same job as:**, and **For *X*, use:** are the four house run-in labels ([grammar-docs.md](../meta/grammar-docs.md#compare-with)). Keep them; rewrite the sentence after the label, never the label into prose.
 - A page with two or more teaching sections (not counting Practice and See also) and no lead between the H1 and the first H3 gets one that previews each section in at most one sentence, from what the sections already say ([which page](../meta/doc-style.md#which-page), *the lead of a whole page*). A page with one teaching section keeps its one lead where it is.
 - The Ageben lint rejects a letter group in one code span (`b d g`); write one span per letter (`b`, `d`, `g`).
 - A script that splits a page on `### Practice` must match the whole heading line; `#### Practiced …` headings exist.
@@ -26,24 +26,21 @@ Each prose unit is one fresh `style-editor` subagent on one sidebar unit from `r
 - A sentence that says when to pick one form over another must restate what the page's own table or text already says; never infer a *when* from the form's gloss alone.
 - Run the full `npm run verify -- --allow-generate` as the last step, not `--fast`.
 
-The sidebar unit is the right size because a label is glossed on first use *in reading order*, so the worker needs to know what the pages before it already taught. Intermediate has 11 units left (I7 to I17), Advanced 5 (20 pages).
+The sidebar unit is the right size because a label is glossed on first use *in reading order*, so the worker needs to know what the pages before it already taught. Intermediate has 5 units left (I13 to I17), Advanced 5 (20 pages).
 
 ## Implementation plan
 
-Phases 6 to 9 remain, one orchestrator session each, with no phase over six units. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate) before the session ends, keeping the [glossed labels](#glossed-labels), [headings to retitle](#headings-to-retitle), and [sections missing a fact](#sections-missing-a-fact) lists current.
+Phases 7 to 9 remain, one orchestrator session each, with no phase over six units. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate) before the session ends, keeping the [glossed labels](#glossed-labels), [headings to retitle](#headings-to-retitle), and [sections missing a fact](#sections-missing-a-fact) lists current.
 
 Prose units run as `style-editor` on `model: opus`, `effort: high`, in sequence. Each one may edit only its own pages and `src/lint/prose-style-baseline.json`. A page with a control (a drill, a player, the journal editor) also gets the [interface instructions](../meta/doc-style.md#interface-instructions) check.
 
 Each phase ends with the phase gate, the last unit's commit, consolidation, the proposal's commit, then a stop. The orchestrator tells the user what the phase settled, which open decisions wait on them, and the prompt for the next phase, *Carry out phase N of `style-pass.md`*.
 
-### Phases 6 and 7: Intermediate
+### Phase 7: Intermediate
 
-| Phase | Units |
-|-------|-------|
-| 6 | I7 to I12 |
-| 7 | I13 to I17 |
+I13 to I17.
 
-**Cuts:** the six-unit budget.
+**Cut:** the Intermediate band is done.
 
 ### Phase 8: Advanced
 
@@ -56,7 +53,7 @@ A1 to A5.
 | Unit | Work | Agent | Model, effort |
 |------|------|-------|---------------|
 | L1 | Cheat-sheet prose outside the `<!-- generated -->` markers, level-review prose outside Practice, `terminology.md` link text and voice only | `style-editor` | `opus`, `high` |
-| H1 | Retitle the headings in [headings to retitle](#headings-to-retitle) to plain language, each pinning its old id with `{#id}` so no link changes | `proposal-worker` | `opus`, `high` |
+| H1 | Retitle the headings in [headings to retitle](#headings-to-retitle) to plain language, each pinning its old id with `{#id}` so no link changes. Also restore the dropped run-in labels in [fixes outside the pass](#fixes-outside-the-pass) | `proposal-worker` | `opus`, `high` |
 | X1 | Independent audit. A fresh subagent that has read no earlier report takes two sections per unit, chosen by the orchestrator, and runs the slogan test and the why-care test from the lead alone. It edits nothing and reports failures by section | `proposal-worker` | `opus`, `high` |
 | X2 | Fix what X1 found, lower the baseline, and make `voice` a failing rule in `src/lint/prose-style.ts` (severity error, out of the baseline). The `voice` rule skips table cells, bold, and parentheses to avoid false positives, so X2 also greps those for maintainer *we* and author *I* by hand | `style-editor` | `opus`, `high` |
 
@@ -101,6 +98,10 @@ Labels that finished units have glossed, in reading order, each with the page th
 | fence ("a list together with the join word that closes it"), resume ("a pronoun that points back to …") | `list-structure.md` |
 | fixed for the `-n` join ending, replacing *stock* | `rank-joins.md` |
 | K ("K for any kind") | `universals-domains.md`, every kind |
+| standalone ("with no clause before it"); *list move* is said as "what a join does to a list" | `verb-and-stance-joins.md`; `list-verbs.md` |
+| holder ("no one named whose view it gives"); channel ("no word for how you know it") | `try.md`; `permission-consent.md` |
+| scope-taking ("a word, like *possibly*, that frames what it reaches") | `scope-islands.md`, binder required |
+| `/x/` ("the role of words like *therefore* that open a sentence and link it to the one before") | `number-roles.md` |
 
 ### Headings to retitle
 
@@ -124,6 +125,8 @@ Headings that prose units reported under rule 7 of the digest, each with its pag
 | `collectives.md` | *Where -x sits* (no id) | bolds an ending in a heading |
 | `collectives.md` | `associate-resolution` | *Associate-set resolution* is specialist wording |
 | `rank-joins.md` | `invert-u-stacks`, `route-ao` | each bolds an Ageben form in a heading |
+| `number-markers.md` | `marker-vowel-referential-identity` | *referential identity* is jargon the section never glosses |
+| `digitless-exponents.md` | `bare-oom` | *OoM* is an abbreviation, glossed only in the section's second sentence |
 
 ### Sections missing a fact
 
@@ -133,7 +136,11 @@ None open.
 
 ### Fixes outside the pass
 
-Faults a prose unit found but could not fix within its scope. None open; add any a later unit reports.
+Faults a prose unit found but could not fix within its scope. Add any a later unit reports.
+
+- Earlier units turned house run-in labels (**Not the same job as:**, **For *X*, use:**) into prose before the digest named all four. Starter count fell in: `compounds.md` 5→3 (`28f5c830`), `say-amounts.md` 14→13 (`95030125`), `conversation-length.md` 2→0, `phonotactics.md` 1→0, `proper-names.md` 2→0 (`497b4b38`), `more-hinges.md`, `stand-in-vowels.md`, `topic.md` 1→0 each (`5c91593a`). H1 restores each label unless the sentence no longer marks a mix-up.
+- `digitless-exponents.md` says *keep a digit to repeat a number* three times, and `number-markers.md` contrasts the ending mark with the spelled last letter twice. Cutting a repeat drops code spans or links, which wording-only forbids (I11).
+- `because-and-iff.md`: the *unless* paragraph repeats what `stand-in-vowels.md` already teaches (`thohem blurl`). Cutting it is a content call (I8).
 
 ### Gates
 
@@ -146,9 +153,9 @@ Faults a prose unit found but could not fix within its scope. None open; add any
 
 One commit per unit after its gate is green, by the orchestrator only, with the message `style-pass <unit id>: <what> [skip-cd]` and the co-author line. X1 edits nothing and makes no commit. Each phase ends with a commit of the consolidated proposal, `style-pass phase <N>: consolidate [skip-cd]`; in Phase 9 that commit deletes the proposal instead, once the meta notes own the result.
 
-| Phase | 6 | 7 | 8 | 9 | Left |
-|-------|---|---|---|---|------|
-| Commits | 7 | 6 | 6 | 4 | 23 |
+| Phase | 7 | 8 | 9 | Left |
+|-------|---|---|---|------|
+| Commits | 6 | 6 | 4 | 16 |
 
 ## Open decisions
 
