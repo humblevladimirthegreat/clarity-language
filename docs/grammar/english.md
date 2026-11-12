@@ -1,6 +1,6 @@
 # Saying it in Ageben
 
-These pages are recipes, not lessons. Each one shows how forms you already learned answer an English question, and links the grammar it needs. Read them in any order once the linked sections are familiar.
+These pages are recipes, not lessons. Each one shows how forms you already learned answer an English question, and links the grammar it needs. Read them in any order once the linked sections are familiar. This page first sorts English words that cover several jobs, such as *by* and *for*, then gives one row per everyday word, each with the section that teaches it.
 
 | Page | For English like |
 |------|------------------|
@@ -62,10 +62,10 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | in B's use (*Azozon's dog*, *my house*, *my seat*), B's turn or occasion (*Azozon's birthday*) | hook **`om`** + `/b/` | [Whose](/social-ties#genitive) |
 | care of a person (*Azozon's patient*) | **`gabolem`** + `/b/` | [Social relations](/social-ties#social-relations) |
 | legal ownership (*the dog Azozon owns*) | **`gegunum`** + `/b/` | [Of relations](/of-relations#of-relations) |
-| social tie (*Azozon's friend*) | tie root on `/ɡ/` **-m** + `/b/` | [Social relations](/social-ties#social-relations) |
+| social tie (*Azozon's friend*) | tie root on `/ɡ/` `-m` + `/b/` | [Social relations](/social-ties#social-relations) |
 | part / contents / material (*a hand of Alazun*, *a teapot of tea*) | **`gobom`** / **`gadam`** / **`gulom`** + `/b/` | [Of relations](/of-relations#of-relations) |
 | origin (*Alazun of the city*, *the sound of the drums*) | **`gaham`** + `/b/` | [Of relations](/of-relations#of-relations) |
-| someone's act (*Azozon's walk*, *the monkey's tricks*) | the act as a sentence, then its verb root in **-r** | [Someone's act](say-people-places.md#someones-act) |
+| someone's act (*Azozon's walk*, *the monkey's tricks*) | the act as a sentence, then its verb root in `-r` | [Someone's act](say-people-places.md#someones-act) |
 | a family's (*the Olowon family's house*) | hook **`om`** + the family with its name: `om buvayal golowon` | [Whose](/social-ties#genitive), [multipart names](/proper-names#multipart-names) |
 | *personal* / *private* (*a personal matter*) | hook **`om`** + the owner: `om buwen` | [Whose](/social-ties#genitive) |
 | *my* belonging + sake (*my tent serves the physical sake*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](/sakes#personal-possession) |
@@ -76,9 +76,9 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 |--------------|------------|-------|
 | regarding / as for (*about Azozon*) | **`hehugom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 | now, about (*now, about Azozon*; *speaking of Azozon*) | `/x/` + the noun: **`xazozon`** | [Topic](/topic#topic) |
-| what was said (*tells that the dog runs*) | **stand-in** **`darl`** (often `/d/`) | [Dependent clauses](/dependents#dependent-clauses) |
-| approximate amount (*about three*) | number **-m** (`~`) | [Number endings](/number-markers#number-endings) |
-| approximate clock (*around 15:30*) | clock **-m** | [Time](/digit-strings#time) |
+| what was said (*tells that the dog runs*) | stand-in **`darl`** (often `/d/`) | [Dependent clauses](/dependents#dependent-clauses) |
+| approximate amount (*about three*) | number `-m` (`~`) | [Number endings](/number-markers#number-endings) |
+| approximate clock (*around 15:30*) | clock `-m` | [Time](/digit-strings#time) |
 | gist of wording (*something like “…”*) | span paraphrase **`~`** | [Exact, paraphrase, proper](/spans#when-required) |
 | place (*walks about the house*) | hook **`am`** (*amid*) or **`uel`** (*through*), not topic | [Hooks](/hooks#extra-noun) |
 
@@ -96,7 +96,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`hodaxal`** + tie **`oe`** | [Every bar](/stance-bars#stance-bars) |
 | set the scene for one sentence (*as for Azozon*) | **`hehugom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 | role one acts in (*as a teacher, I …*) | role compound on `/h/`: `hwozeduyol` | [Acting as](/role-parts#acting-as) |
-| not in that role (*not as a teacher*, off duty) | reach **`ue`** on `/h/`: `hwuozeduyol` | [Acting as](/role-parts#acting-as) |
+| not in that role (*not as a teacher*, off duty) | reach `ue` on `/h/`: `hwuozeduyol` | [Acting as](/role-parts#acting-as) |
 | resemblance (*walks as / like a duck*) | **`hewem`** + `/b/` | [Likeness](/relations#likeness) |
 | how close (*exactly like*, *a bit like*) | **`hewel`** for an exact match (`hewel bladozal`), or `/w/` before **`hewem`**: `wubugem hewem bladozal` (*precisely*), `wamezem hewem bladozal` (*a bit*) | [Exactly like](/exactly-like#exactly-like), [likeness](/relations#likeness), [degree words](/very-and-slightly#degree-w) |
 | resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`hewem blarl`** + the event | [Likeness](/relations#likeness) |
@@ -140,7 +140,7 @@ One English word, one row: the form that says it and the section that teaches it
 | *over* (*a cloth over the table*: the landmark's face as the setting) | hook **`aem`** + `/b/`; plain height (*above the table*) is gravity **`habuhol`** | [Hooks](/extra-noun-hooks#extra-noun-intermediate), [Gravity](/viewpoint#gravity) |
 | *under* / *below* / *beneath* / *underneath* (*sleeps under the tree*) | gravity down **`hoduhol`** (on a noun, **`goduhol`**) + `/b/` | [Gravity](/viewpoint#gravity) |
 | *above* / *upper* (*the book above the tree*) | gravity up **`habuhol`** (on a noun, **`gabuhol`**) + `/b/` | [Gravity](/viewpoint#gravity) |
-| *left side* / *right side* / *behind* / *in front of* (*behind the house*) | a direction with **`th`** + **`o`** + `/b/` landmark, such as `gazuhothel blohehal` | [Landmark's own front](/viewpoint#landmark-facing) |
+| *left side* / *right side* / *behind* / *in front of* (*behind the house*) | a direction with `th` + `o` + `/b/` landmark, such as `gazuhothel blohehal` | [Landmark's own front](/viewpoint#landmark-facing) |
 | *with* / *alongside* / *along with* (*runs with Alazun*) | **`han`** + `/b/` | [Join-relations](/join-relations#join-relations) |
 | *without* / *apart from* (*walks apart from the house*) | **`huan`** + `/b/` | [Join-relations](/join-relations#join-relations) |
 | *via* / *by way of* / *through* (*goes via the station*) | hook **`uel`** + `/b/` (**`uem`** for a setting) | [Hooks](/hooks#extra-noun) |
@@ -194,13 +194,13 @@ When both phrases play the same role (both walk, or one doer does both acts), a 
 
 ### *and maybe more* {#and-maybe-more}
 
-English adds *and maybe more* after whatever might not be complete. Ageben says it with the open **-m** ending on the word that closes that piece.
+English adds *and maybe more* after whatever might not be complete. Ageben says it with the open `-m` ending on the word that closes that piece.
 
 | English itch | Ageben job | Teach |
 |--------------|------------|-------|
-| *and maybe more* / *and possibly more* / *among other things* after a list (*a dog and a cat, and maybe more*) | the list's join on **-m**: `zodozel zogozel zam` | [Join vowels and endings](/joins#join-type-vowel-series) |
-| *and maybe more* / *and maybe others* after an including or except hook (*the family, including Azozon and maybe more*) | the hook on **-m**: **`am`** / **`um`** | [Closed and open endings](/hooks#closed-and-open-endings) |
-| *and maybe more* / *among other things* after a to-clause, that-clause or whether-clause (*tells Alazun to dance, and maybe more*) | the stand-in on **-rm**: **`dorm`**, **`darm`**, **`derm`**, **`durm`** | [Stand-in vowels](/stand-in-vowels#stand-in) |
+| *and maybe more* / *and possibly more* / *among other things* after a list (*a dog and a cat, and maybe more*) | the list's join on `-m`: `zodozel zogozel zam` | [Join vowels and endings](/joins#join-type-vowel-series) |
+| *and maybe more* / *and maybe others* after an including or except hook (*the family, including Azozon and maybe more*) | the hook on `-m`: **`am`** / **`um`** | [Closed and open endings](/hooks#closed-and-open-endings) |
+| *and maybe more* / *among other things* after a to-clause, that-clause or whether-clause (*tells Alazun to dance, and maybe more*) | the stand-in on `-rm`: **`dorm`**, **`darm`**, **`derm`**, **`durm`** | [Stand-in vowels](/stand-in-vowels#stand-in) |
 
 ### Coming, going and following {#motion}
 
@@ -231,7 +231,7 @@ English adds *and maybe more* after whatever might not be complete. Ageben says 
 | *some of them* / *some people* (more than one, unnamed) | **`zarx`**; with a kind, `zeyel zarx` | [Unspecified member](/joins#unspecified-member-r-phrase) |
 | *a certain someone* / *someone I won't name* | **`zar`**, then *I know who*: `zuwen vanam derl zar.` | [Unspecified member](/joins#unspecified-member-r-phrase), [dependent clauses](/dependents#dependent-clauses) |
 | *someone, I don't know who* | **`zar`**, then `zuwen vanam vul derl zar.` | [Unspecified member](/joins#unspecified-member-r-phrase), [dependent clauses](/dependents#dependent-clauses) |
-| *you know the one* / *that person* (we both know) | **-r** with nothing earlier: `zeyer` | [Resume](/pronouns#resume-r) |
+| *you know the one* / *that person* (we both know) | `-r` with nothing earlier: `zeyer` | [Resume](/pronouns#resume-r) |
 | *everyone here* | **`zual geyel`**; near me, **`zemxual bluwen`** | [Universals](/universals-domains#universals-domains-generics), [hooked joins](/hooked-joins#hooked-joins-hooks) |
 | *everyone at the house* / *someone at the office* (who counts, not where it happens) | hooked join: **`zexual blohehal`** / **`zexar blovahal`** | [Hook plus a join](/hooked-joins#hooked-joins) |
 | *anything for me?* / *something for me* | **`yel doxar bluwen.`** / **`doxar bluwen`** | [Hook plus a join](/hooked-joins#hooked-joins-endings) |
@@ -247,7 +247,9 @@ English adds *and maybe more* after whatever might not be complete. Ageben says 
 
 ### Adjectives made from a noun (*golden*, *royal*, *solar*) {#noun-adjectives}
 
-English often makes an adjective from a noun by adding an ending (*gold* → *golden*, *sun* → *solar*). Ageben needs no ending for that. Put the noun's root on `/ɡ/` ([adjectives](/clause#adjectives-ɡ)): the adjective means *of that kind*. A root whose sense is an event reads as an act [in progress](#participles) instead. The ending picks the sense: **-l** is the everyday thing, **-m** is the abstract quality. Use **-l** for stuff you can touch (*gold*, *sun*) and **-m** for a quality or field (*royalty*, *life*, *institution*). For *made of*, the [of-relation](/of-relations#of-relations) with the stuff in `/b/` says it outright.
+English often makes an adjective from a noun by adding an ending (*gold* → *golden*, *sun* → *solar*). Ageben needs no ending for that. Put the noun's root on `/ɡ/` ([adjectives](/clause#adjectives-ɡ)): the adjective means *of that kind*. A root whose sense is an event reads as an act [in progress](#participles) instead.
+
+The ending picks the sense: `-l` is the everyday thing, `-m` is the abstract quality. Use `-l` for stuff you can touch (*gold*, *sun*) and `-m` for a quality or field (*royalty*, *life*, *institution*). For *made of*, the [of-relation](/of-relations#of-relations) with the stuff in `/b/` says it outright.
 
 | English itch | Ageben job | Teach |
 |--------------|------------|-------|
@@ -277,7 +279,7 @@ English often makes an adjective from a noun by adding an ending (*gold* → *go
 
 ### *anti-*, *pro-*, *trans-*, *-ward* words {#relation-prefixes}
 
-English builds many words from a relation and a noun: *anti-war*, *indoor*, *transoceanic*, *homeward*, *water-powered*. Ageben builds them the same way, from an extra-noun hook's vowels, **`x`** (or **`mx`** for the hook's zone), and the noun's root: a [hook prefix](/hook-compounds#hook-prefixes). On `/ɡ/` it is the adjective, on `/z/` `/d/` `/b/` someone or something with that stance, and on `/h/` it says how the clause stands to the noun.
+English builds many words from a relation and a noun: *anti-war*, *indoor*, *transoceanic*, *homeward*, *water-powered*. Ageben builds them the same way, from an extra-noun hook's vowels, `x` (or `mx` for the hook's zone), and the noun's root: a [hook prefix](/hook-compounds#hook-prefixes). On `/ɡ/` it is the adjective, on `/z/` `/d/` `/b/` someone or something with that stance, and on `/h/` it says how the clause stands to the noun.
 
 | English itch | Ageben job | Teach |
 |--------------|------------|-------|
@@ -296,7 +298,7 @@ English builds many words from a relation and a noun: *anti-war*, *indoor*, *tra
 
 ### *quasi-*, *proto-*, *multi-*, *tri-* words {#number-prefixes}
 
-English names many kinds with a number idea in front: *quasi-friend*, *proto-love*, *multi-faith*, *a three-part dialogue*, *a first draft*. Ageben builds them the same way, from a number body, **`x`** (or **`mx`** for *roughly* that number), and the noun's root: a [numeric prefix](/numeric-derivation#numeric-derivation). The word is a kind of the noun, never a count of things in the sentence.
+English names many kinds with a number idea in front: *quasi-friend*, *proto-love*, *multi-faith*, *a three-part dialogue*, *a first draft*. Ageben builds them the same way, from a number body, `x` (or `mx` for *roughly* that number), and the noun's root: a [numeric prefix](/numeric-derivation#numeric-derivation). The word is a kind of the noun, never a count of things in the sentence.
 
 | English itch | Ageben job | Teach |
 |--------------|------------|-------|
@@ -312,7 +314,7 @@ English names many kinds with a number idea in front: *quasi-friend*, *proto-lov
 | *null* / *to zero out* a kind (*null the score*) | numeric prefix **`ramox…`**: `vramoxodoram` | [Null / anti-null](/numeric-derivation#null-anti-null) |
 | *specimen #1*, *room-12* as a kind | numeric prefix **`rebax…`** / **`rebadox…`**: `zrebaxudewal`, `zrebadoxohehal` | [Label / code sense](/numeric-derivation#label-code-sense) |
 | *mega-* / *a gazillion-* (*a gazillion-mess*) | numeric prefix **`rabawax…`**: `zrabawaxazulam` | [Hyperbole](/numeric-derivation#hyperbole-sense) |
-| *roughly three-part* | **`mx`** for the seam: `dragemxezuyol` | [Numeric prefixes](/numeric-derivation#numeric-derivation) |
+| *roughly three-part* | `mx` for the seam: `dragemxezuyol` | [Numeric prefixes](/numeric-derivation#numeric-derivation) |
 
 ### *-ing*, *-er*, and *-ed* words (*walking*, *teacher*, *seen*) {#participles}
 
@@ -321,10 +323,10 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebe
 | English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *walking* (*a walking dog*, *Azozon is walking*) | the event root on `/ɡ/`: `dodozel gowurol` | [In progress](/predication#in-progress) |
-| *walking* after a thing root (*a sitting guard*) | a role compound with reach **`u`**: `dagayul gwuzehohel` (*a guard who sits*) | [Role compounds](/roles#role-compounds) |
-| *someone who teaches*, *whoever teaches* | a role compound with reach **`u`**: `zwuzeduyol` | [Role compounds](/roles#role-compounds) |
-| *a teacher*, *a fighter*, *a dog walker* (a practiced role or job) | the role compound with reach **`o`**: `zwozeduyol` | [One time or a practice](/roles#one-time-or-a-practice) |
-| *the one teaching* (this event) | the role compound on **-r**: `zwuzeduyor` | [This instance](/roles#this-instance-r) |
+| *walking* after a thing root (*a sitting guard*) | a role compound with reach `u`: `dagayul gwuzehohel` (*a guard who sits*) | [Role compounds](/roles#role-compounds) |
+| *someone who teaches*, *whoever teaches* | a role compound with reach `u`: `zwuzeduyol` | [Role compounds](/roles#role-compounds) |
+| *a teacher*, *a fighter*, *a dog walker* (a practiced role or job) | the role compound with reach `o`: `zwozeduyol` | [One time or a practice](/roles#one-time-or-a-practice) |
+| *the one teaching* (this event) | the role compound on `-r`: `zwuzeduyor` | [This instance](/roles#this-instance-r) |
 | *often says untrue things*, *usually walks* | a [restrictor](/restrictors): `huam`, `war` | [Always](/restrictors#always-hual) |
 | *this time*, *this once* (angry this time, said something untrue this once) | **`thu`** on the root: `gonumuthul`, `vulamuthul` | [This episode](/label-seams#reach-occasion) |
 | *as their craft*, *as a practice* | **`tho`** on the root: `vulamuthol` | [Practiced role](/label-seams#reach-occupation) |
@@ -333,17 +335,17 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebe
 | *type*, *kind of person* (a type who says untrue things, an anxious type) | **`tha`** on the root: `zazozon vulamuthal` | [Type across scenes](/label-seams#reach-type) |
 | *said something untrue to Alazun, this once* | **`thu`** on the verb, recipient as usual: `vulamuthul balazun` | [This episode](/label-seams#reach-occasion) |
 | *it's the situation*, *it was the situation*, *by circumstance* | **`thae`**: `gonumuthael`, `gwaezeduyol` | [Stacked reach](/label-seams#reach-stacks) |
-| *becoming a teacher* | reach **`oe`**: `gwoezeduyol` | [Reach across scenes](/role-parts#reach) |
+| *becoming a teacher* | reach `oe`: `gwoezeduyol` | [Reach across scenes](/role-parts#reach) |
 | *becoming* (becoming one who misstates) | **`thoe`** on the root: `vulamuthoel` | [Stacked reach](/label-seams#reach-stacks) |
 | *as a teacher, I …* | role compound on `/h/`: `hwozeduyol` | [Acting as](/role-parts#acting-as) |
-| *not as a teacher* (off duty) | reach **`uo`** on `/h/`: `hwuozeduyol` | [Acting as](/role-parts#acting-as) |
-| *not as a teacher* (the label) | reach **`uo`**: `gwuozeduyol` | [Reach across scenes](/role-parts#reach) |
-| *playing the teacher* (for a purpose) | reach **`ao`**: `gwaozeduyol` | [Reach across scenes](/role-parts#reach) |
+| *not as a teacher* (off duty) | reach `uo` on `/h/`: `hwuozeduyol` | [Acting as](/role-parts#acting-as) |
+| *not as a teacher* (the label) | reach `uo`: `gwuozeduyol` | [Reach across scenes](/role-parts#reach) |
+| *playing the teacher* (for a purpose) | reach `ao`: `gwaozeduyol` | [Reach across scenes](/role-parts#reach) |
 | *as a tool*, *for a purpose* (using misstatement as a tool) | **`thao`** on the root: `vulamuthaol` | [Stacked reach](/label-seams#reach-stacks) |
 | *as myself*, *not in my role*, *off duty* | **`thue`** on the verb: `vezuyothuol` | [Stacked reach](/label-seams#reach-stacks) |
 | *except this time*, *except this once* | **`thua`**: `vulamuthual` | [Stacked reach](/label-seams#reach-stacks) |
 | *except with* (angry as a type, except with Alazun) | **`thue`** plus `/b/`: `gonumuthuel blalazun` | [Stacked reach](/label-seams#reach-stacks) |
-| *seen*, *the one seen* | the undergoer **`d`**: `zwudayebel`, `zwudayeber` | [The undergoer](/roles#the-undergoer-d) |
+| *seen*, *the one seen* | the undergoer `d`: `zwudayebel`, `zwudayeber` | [The undergoer](/roles#the-undergoer-d) |
 | *visible* / *invisible* (*can be seen*) | the undergoer with ability: `zodozel gwudayebexal` | [Can be](/can-and-cant#role-ability) |
 | *walked* (past) | no participle: pick how you know | [Tense](say-tense.md#tense-jobs) |
 | *the guard who fought (that time)* | two sentences | [Which noun](/dependents#which-noun) |
@@ -356,12 +358,12 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebe
 | *now, about Sam* (a foreign name) | <code>x@&lt;Sam&gt;</code> | [Topic](/topic#topic), [spans](/quote-contents#topic-quotes) |
 | *now, about the word “odoze”* | `glegol x[odoze]` | [Topic](/topic#topic), [mention](/spans-as-words#mention) |
 | *now, about Onuren Alazun* (the work) | `x@[onuren alazun]` | [Topic](/topic#topic), [cite](/spans#writing) |
-| *back to Azozon*, *as I was saying about Azozon* | `/x/` + whole stem + **-r**: **`xazozor`** | [Return](/topic#topic-return) |
+| *back to Azozon*, *as I was saying about Azozon* | `/x/` + whole stem + `-r`: **`xazozor`** | [Return](/topic#topic-return) |
 | *anyway, Azozon …* (after a side topic) | **`er xazozor …`** | [Return](/topic#topic-return), [resume hooks](/discourse-hooks#discourse) |
 | *what are we talking about?* | **`yel zar gehugom.`** | [Asking about the topic](/topic#topic-question) |
 | *one*, generic *you*, *people* (in general) | **`eyen`** | [Generic pronoun](/pronouns#generic-pronoun) |
 | *the latter* / *the former* (of two just named in the same role) | role pointer **`zwuzer`** (*the latter*) / **`zwuzar`** (*the other one*); to keep two apart for longer, tag them when you name them (`zodozel zwal`, then `zwar`) | [Role pointers](/pronouns#role-pointers), [tag pronouns](/tag-pronouns#tag-pronouns) |
-| *call it A*, *let A be a dog*, *suppose A tells O* | tag + **-l** after the phrase (**`zodozel zwal`**) or alone for a placeholder (**`zwal`**); then **`zwar`** | [Tag pronouns](/tag-pronouns#tag-pronouns) |
+| *call it A*, *let A be a dog*, *suppose A tells O* | tag + `-l` after the phrase (**`zodozel zwal`**) or alone for a placeholder (**`zwal`**); then **`zwar`** | [Tag pronouns](/tag-pronouns#tag-pronouns) |
 
 ### Greetings {#greetings}
 
@@ -371,5 +373,5 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebe
 | *Japan* (the country) | `azabanan` | [Countries](/proper-names#countries-traditions) |
 | *Sam* (keep the English spelling) | <code>@&lt;Sam&gt;</code> | [Opaque](/spans#loans) |
 | *Sam* (Ageben spelling of the sound) | type the English name in the lexicon | [Respell an English name](lexicon.md#respell) |
-| full name (*Alon Olowon*), family-first name, *Mary-Kate* | given name, then the family name on `/ɡ/` + **-n** (`zalon golowon`); a hyphenated name is one **`x`** word | [Multipart names](/proper-names#multipart-names) |
-| business or product name (*Ford Mustang*, *Coffee-Tea*, *Coffee-Instead-of-Tea*) | maker on `/ɡ/` + **-n**, a compact **`x`** word, or a titled phrase / span when the name has grammar inside | [Multipart names](/proper-names#multipart-names) |
+| full name (*Alon Olowon*), family-first name, *Mary-Kate* | given name, then the family name on `/ɡ/` + `-n` (`zalon golowon`); a hyphenated name is one `x` word | [Multipart names](/proper-names#multipart-names) |
+| business or product name (*Ford Mustang*, *Coffee-Tea*, *Coffee-Instead-of-Tea*) | maker on `/ɡ/` + `-n`, a compact `x` word, or a titled phrase / span when the name has grammar inside | [Multipart names](/proper-names#multipart-names) |

@@ -23,7 +23,7 @@ English *as for X* or *regarding X* names who or what the sentence is about, eve
 
 **Needs:** [Which person or thing](/dependents#which-noun) · [Resume](/pronouns#resume-r) · [Role compounds](/roles#role-compounds) · [Asides](/spans#asides-th)
 
-Beginner already used two sentences for English *who / that / which*. Prefer [resume **-r**](/pronouns#resume-r) in the second sentence.
+English *who / that / which* picks out a noun with a clause inside the sentence. Ageben uses two sentences, as at Beginner: name the noun in the first, then point back at it with [resume `-r`](/pronouns#resume-r) in the second, so the second sentence says more about that same noun.
 
 > `zagayul vehohel. zazozon vezuyol bagayur.`
 >
@@ -37,7 +37,7 @@ Beginner already used two sentences for English *who / that / which*. Prefer [re
 >
 > "Azozon sees a dog in a bank. The dog runs."
 
-A place, tool, or *of*-relation on the noun is still an extra-noun [hook](/hooks#extra-noun) or hosted `/ɡ/` + `/b/` (*the guard [in](/hooks#extra-noun) a bank*, *a book written [with a hammer](/hooks#extra-noun)*). A one-place role (*a guard who sits*, *a place where someone sleeps*) is a [role compound](/roles#role-compounds) on `/ɡ/` with a non-resume ending; use reach **`o`** for a practiced role (*a teacher*), the same pattern as *is a teacher*. Resume **-r** on that compound is **this instance** (*the one teaching*), not the occupation. A noun in the middle of an act (*a fighting guard*) is the plain event root on `/ɡ/` ([in progress](/predication#in-progress)).
+A place, tool, or *of*-relation on the noun is still an extra-noun [hook](/hooks#extra-noun) or hosted `/ɡ/` + `/b/` (*the guard [in](/hooks#extra-noun) a bank*, *a book written [with a hammer](/hooks#extra-noun)*). A one-place role (*a guard who sits*, *a place where someone sleeps*) is a [role compound](/roles#role-compounds) on `/ɡ/` with a non-resume ending; use reach `o` for a practiced role (*a teacher*), the same pattern as *is a teacher*. Resume `-r` on that compound is *this instance* (*the one teaching*), not the occupation. A noun in the middle of an act (*a fighting guard*) is the plain event root on `/ɡ/` ([in progress](/predication#in-progress)).
 
 > `zazozon dagayul gwuzehohel vayebel.`
 >
@@ -55,7 +55,7 @@ For English *whose*, resume the person after the [whose hook **`om`**](/social-t
 
 English can pack this into one sentence: *The guard whose dog runs sits.*
 
-English uses the same *who* clause for two jobs. When it picks out **which** one (*the guard who sits*, not the other guard), use the two-sentence pattern or a role compound, as above. When it only adds extra information about someone already known (*Azozon, who walks, sings*), put that information in a noun [aside](/spans#asides-th) **`g(…)`** right after the noun.
+English uses the same *who* clause for two jobs. When it picks out *which* one (*the guard who sits*, not the other guard), use the two-sentence pattern or a role compound, as above. When it only adds extra information about someone already known (*Azozon, who walks, sings*), put that information in a noun [aside](/spans#asides-th) **`g(…)`** right after the noun.
 
 > `zazozon g(zazozor vowurol) vozuyel.`
 >
@@ -63,13 +63,13 @@ English uses the same *who* clause for two jobs. When it picks out **which** one
 >
 > "Azozon, who walks, sings."
 
-**Compare with:** ordinary `gehohel` is *chair* / *position* as a property, not *sitting*: the root's everyday sense is a chair, not an event, so it has no [in-progress](/predication#in-progress) reading. For *sitting*, use the role word `gwuzehohel`. [Restrictors](/restrictors) say when a **claim** counts (*never*, *only when it rains*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the **same** first noun still need another sentence ([complex chaining](/longer-chains#complex-chaining)).
+**Compare with:** ordinary `gehohel` is *chair* / *position* as a property, not *sitting*: the root's everyday sense is a chair, not an event, so it has no [in-progress](/predication#in-progress) reading. For *sitting*, use the role word `gwuzehohel`. [Restrictors](/restrictors) say when a *claim* counts (*never*, *only when it rains*), not which noun. Two hosted `/ɡ/` + `/b/` pairs on the *same* first noun still need another sentence ([complex chaining](/longer-chains#complex-chaining)).
 
 ### Stacked owners (*Azozon's dog's bone*) {#stacked-owners}
 
 **Needs:** [Whose (`om`)](/social-ties#genitive) · [Route `ao`](/rank-joins#route-ao)
 
-When English stacks possessives, keep one **`om`** and list every owner in its `/b/`, closed by the route join **`baol`**. Put the **nearest** owner first: the first `/b/` uses the host, and each later `/b/` keeps the one before it.
+When English stacks possessives, keep one **`om`** and list every owner in its `/b/`, closed by the route join **`baol`**. Put the *nearest* owner first: the first `/b/` uses the host, and each later `/b/` keeps the one before it.
 
 > `zobol om bodozel bazozon baol.`
 >
@@ -83,7 +83,7 @@ When English stacks possessives, keep one **`om`** and list every owner in its `
 
 **Needs:** [Adverbs](/clause#adverbs-h) · [Resume](/pronouns#resume-r)
 
-English *the day when* / *the place where* is two sentences. Name the time or place first, then resume it with **-r** in `/h/` in the next sentence: *on that day*.
+English *the day when* / *the place where* is two sentences. Name the time or place first, then resume it with `-r` in `/h/` in the next sentence: *on that day*.
 
 > `zalazun dazurom vayebel. zazozon vowurol hazuror.`
 >
@@ -107,7 +107,7 @@ For *unlike* / *different from*, use [likeness](/relations#likeness) **`gewem`**
 
 **Needs:** [The undergoer (`d`)](/roles#the-undergoer-d) · [This instance (`-r`)](/roles#this-instance-r)
 
-English *what* in *Alazun sees what Azozon writes* names the thing an event happened to, with no noun for it. State that event first, then point back at its undergoer with the **`u`** role compound in **-r**: *the thing written*.
+English *what* in *Alazun sees what Azozon writes* names the thing an event happened to, with no noun for it. State that event first, then point back at its undergoer with the `u` role compound in `-r`: *the thing written*.
 
 > `zazozon varuyol. zalazun dwudaruyor vayebel.`
 >
@@ -115,7 +115,7 @@ English *what* in *Alazun sees what Azozon writes* names the thing an event happ
 >
 > "Alazun sees what Azozon writes."
 
-Keep the two verbs different. **-r** points at the latest matching event, so `zalazun vayebel dwudayeber` would point at Alazun's own seeing.
+Keep the two verbs different. `-r` points at the latest matching event, so `zalazun vayebel dwudayeber` would point at Alazun's own seeing.
 
 **Compare with:** `dar` is *something* (a new, unnamed thing), not the thing from an event already said.
 
@@ -123,7 +123,7 @@ Keep the two verbs different. **-r** points at the latest matching event, so `za
 
 **Needs:** [Which person or thing](/dependents#which-noun) · [Resume](/pronouns#resume-r) · [Of relations](/of-relations#of-relations) · [Negation](/joins#negation-u)
 
-English *'s* on an act (*Azozon's walk*, *the monkey's tricks*) names who did it. **`om`** is for things in someone's use, and an act is not one. Say the act as its own sentence first, then resume its verb root with **-r** in the next sentence: *that walk*.
+English *'s* on an act (*Azozon's walk*, *the monkey's tricks*) names who did it. `om` is for things in someone's use, and an act is not one. Say the act as its own sentence first, then resume its verb root with `-r` in the next sentence: *that walk*.
 
 > `zazozon vowurol. zalazun dowuror vayebel.`
 >
@@ -131,7 +131,7 @@ English *'s* on an act (*Azozon's walk*, *the monkey's tricks*) names who did it
 >
 > "Alazun sees Azozon's walk."
 
-When the act was denied (`vul`), the resume points at the act **as denied**: the not-doing. That is how English *the forgetting* or *the failure to call* comes back after *did not remember* or *did not call*.
+When the act was denied (`vul`), the resume points at the act *as denied*: the not-doing. That is how English *the forgetting* or *the failure to call* comes back after *did not remember* or *did not call*.
 
 > `zazozon dalazun vevum vul. zevur gubedem.`
 >
@@ -139,7 +139,7 @@ When the act was denied (`vul`), the resume points at the act **as denied**: the
 >
 > "Azozon didn't remember Alazun. The forgetting was a mishap."
 
-When the thing only comes **from** B (*the sound of the drums*), use origin **`gaham`** + `/b/` instead.
+When the thing only comes *from* B (*the sound of the drums*), use origin **`gaham`** + `/b/` instead.
 
 > `zalazun dadowel gaham bladoralx vebal.`
 >
@@ -151,7 +151,7 @@ When the thing only comes **from** B (*the sound of the drums*), use origin **`g
 
 **Needs:** [Proper name `-n`](/proper-names#proper-name--n) · [Multipart names](/proper-names#multipart-names) · [Initials](/initials#initials)
 
-A long official title (bureau, act, titled group) may have a **handle**: one published root plus **-n**, used like any proper name, including on first mention. The long form is the same office spelled as a hyphenated name (`ROOT x ROOT` … + **-n**).
+A long official title (bureau, act, titled group) may have a **handle**: one published root plus `-n`, used like any proper name, including on first mention. The long form is the same office spelled as a hyphenated name (`ROOT x ROOT` … + `-n`).
 
 > `zanan vezuyol.`
 >
@@ -161,8 +161,8 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 
 | Ageben | Use | English |
 |--------|-----|---------|
-| `zanan` | handle: one root + **-n** | default talk, including first mention |
-| `zanaxalazun` | long title: hyphenated name (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
+| `zanan` | handle: one root + `-n` | default talk, including first mention |
+| `zanaxalazun` | long title: hyphenated name (`ROOT x ROOT` … + `-n`) | full legal / ceremonial name of the same office |
 | `z@_nl` | initials: each title root's first consonant, as a letter code | short name of the same office, like *FBI* |
 
 > `zanaxalazun.`
@@ -171,9 +171,9 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 >
 > "Book-Courage" (the office's full title)
 
-Resume the handle like any name: its whole stem + **-r** (`zanar`).
+Resume the handle like any name: its whole stem + `-r` (`zanar`).
 
-**Compare with:** a [mention](/spans-as-words#mention) is the **word** (`glegol z[ana]` = *the word “ana”*). A foreign code whose letters all have Ageben letters is a native [letter code](/number-markers#letter-codes) (`z_v16` *F-16*); one with a letter Ageben lacks stays an opaque span (<code>z@&lt;FBI&gt;</code>).
+**Compare with:** a [mention](/spans-as-words#mention) is the *word* (`glegol z[ana]` = *the word “ana”*). A foreign code whose letters all have Ageben letters is a native [letter code](/number-markers#letter-codes) (`z_v16` *F-16*); one with a letter Ageben lacks stays an opaque span (<code>z@&lt;FBI&gt;</code>).
 
 ### An English name as Ageben {#english-name}
 
@@ -195,13 +195,13 @@ To keep *Sam* as English spelling, write the span. To see the Ageben sound-spell
 >
 > "Sam walks."
 
-**Compare with:** a learner’s name in the examples is a published root plus **-n**, chosen on [word endings](/word-endings#named-n-beginner), not a respelling of their English name.
+**Compare with:** a learner’s name in the examples is a published root plus `-n`, chosen on [word endings](/word-endings#named-n-beginner), not a respelling of their English name.
 
 ### Who does it: *student*, *singer*, *manager* {#agent-nouns}
 
 **Needs:** [Role compounds (the doer)](/roles#role-compounds) · [One time or a practice](/roles#one-time-or-a-practice) · [Saying someone is a teacher](/roles#saying-someone-is-a-teacher) · [Acting as](/role-parts#acting-as)
 
-English names a person by what they usually do (*a singer*, *a manager*). Ageben builds that noun from the event root: person letter, **`w`**, the practiced-role reach **`o`**, the doer **`z`**, the root, then the ending ([one time or a practice](/roles#one-time-or-a-practice)). `zwozozuyel` is *a singer* from `ozuyel` *sing*, and on `/ɡ/` (`gwozozuyel`) it says someone is one. With reach **`u`**, `zwuzozuyel` is only *someone who sings*. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
+English names a person by what they usually do (*a singer*, *a manager*). Ageben builds that noun from the event root: person letter, `w`, the practiced-role reach `o`, the doer `z`, the root, then the ending ([one time or a practice](/roles#one-time-or-a-practice)). `zwozozuyel` is *a singer* from `ozuyel` *sing*, and on `/ɡ/` (`gwozozuyel`) it says someone is one. With reach `u`, `zwuzozuyel` is only *someone who sings*. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
 
 > `zwozeluyol varuyol.`
 >
@@ -266,7 +266,7 @@ English names a person by what they usually do (*a singer*, *a manager*). Ageben
 | `zwubehal` | *customer* / *purchaser* (the other party of a trade) | `ehal` *currency-exchange* |
 | `zwubabulom` | *host* (the other party of a hospitality tie) | `abulom` *hospitality* |
 
-Rows with reach **`a`** name a part in one event (*winner*, *witness*, *passenger*), so that vowel is enough. The one acted on uses part **`d`**: `zwudenemul` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zwuzebalx`).
+Rows with reach `a` name a part in one event (*winner*, *witness*, *passenger*), so that vowel is enough. The one acted on uses part `d`: `zwudenemul` is *a victim* (the one harmed). A plural audience or staff takes plural `-x` (`zwuzebalx`).
 
 A noun that specifies the job goes in the stem: `zwozodozexowurol` is *a dog walker*. The noun's part in the job is as open as in English.
 
@@ -367,7 +367,9 @@ English *buy* and *sell* are two views of one swap. Ageben has one trading verb,
 
 **Needs:** [The extra `/b/` party (`o`)](/roles#role-compounds) · [Extra noun (`ol`, `om`)](/hooks#extra-noun) · [Exchange](/relations#exchange) · [Coordinated lists](/list-structure#respectively) · [Fault](/fault#fault)
 
-English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Ageben keeps the giving verb `vewal` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in plain `/b/` after the verb ([recipient](/clause#extra-nouns)). To name the parties from the verb itself, use the [role compounds](/roles#role-compounds): **`zwuzewal`** is the giver (*supplier*, *provider*) and **`zwubewal`** is the recipient (*receiver*). **-r** (`zwubewar`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vogeral` (*credit*, with the *lend* sense): the borrower is the recipient.
+English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Ageben keeps the giving verb `vewal` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in plain `/b/` after the verb ([recipient](/clause#extra-nouns)).
+
+To name the parties from the verb itself, use the [role compounds](/roles#role-compounds): **`zwuzewal`** is the giver (*supplier*, *provider*) and **`zwubewal`** is the recipient (*receiver*). `-r` (`zwubewar`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vogeral` (*credit*, with the *lend* sense): the borrower is the recipient.
 
 | English | Ageben | Reading |
 |---------|--------|---------|
@@ -414,7 +416,7 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 
 **Needs:** [Rank joins](/rank-joins#rank-joins) · [List verbs](/list-verbs#list-verbs) · [Join-relations](/join-relations#join-relations) · [Of relations](/of-relations#of-relations) · [Whose](/social-ties#genitive) · [Exchange](/relations#exchange) · [Proxy](/relations#proxy) · [Likeness](/relations#likeness)
 
-Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer*) say how two things **stand to each other** more than what anyone does. Ageben writes that stance as a hosted relation word with the other thing in `/b/`, or as a list verb when someone really acts on a thing. Pick the relation, and keep the ordinary verb for the activity.
+Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer*) say how two things *stand to each other* more than what anyone does. Ageben writes that stance as a hosted relation word with the other thing in `/b/`, or as a list verb when someone really acts on a thing. Pick the relation, and keep the ordinary verb for the activity.
 
 | English | Ageben | Reading |
 |---------|--------|---------|
@@ -471,7 +473,7 @@ English makes nouns for a part, a kind, a role, and a manner. Ageben has no sepa
 | English | Ageben | Reading |
 |---------|--------|---------|
 | *piece* / *fragment* / *feature* | `zohowel gobom blohehal.` | a part of the whole |
-| *cluster* / *bunch* | the kind with **-x**: `zodozelx` | a set here ([group words](say-amounts.md#group-words)) |
+| *cluster* / *bunch* | the kind with `-x`: `zodozelx` | a set here ([group words](say-amounts.md#group-words)) |
 | *species* / *kind* (the category) | `zalenem` | classification |
 | *the dodo* / *the wolf* (the species itself) | `zuan gedozel` | [the kind itself](/universals-domains#kind-reference) |
 | *gender* / *sex* (the category) | `zuvugem zemugem zam.` | the open pair female, male |
@@ -614,7 +616,7 @@ An English noun like *case* or *board* covers several jobs, and Ageben has a dif
 
 **Needs:** [The event itself](/roles#the-event-itself) · [Role compounds](/roles#role-compounds) · [Someone's act](#someones-act) · [Fault](/fault#fault) · [Label reach](/label-seams#label-reach) · [Proxy](/relations#proxy) · [Exchange](/relations#exchange)
 
-English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *comparison*). Ageben has no separate noun for them. Put the verb stem on a thing letter with no **`w`** and part to name the act itself, write **`d`** as the part to name the thing the act happens to, or say the act as a sentence and resume it with **-r**. A wrongness or a pattern is the hinge or label on the act, not a different noun.
+English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *comparison*). Ageben has no separate noun for them. Put the verb stem on a thing letter with no `w` and part to name the act itself, write `d` as the part to name the thing the act happens to, or say the act as a sentence and resume it with `-r`. A wrongness or a pattern is the hinge or label on the act, not a different noun.
 
 | English | Ageben | Reading |
 |---------|--------|---------|
@@ -661,13 +663,13 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 >
 > "Azozon compares Alazun with Ahelan."
 
-**Compare with:** a ranking (*Azozon is more challenging than Alazun*) is the [rank join](/comparatives#comparatives), not **`vezem`**, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](/for-a-sake#sake-preference); **`zolamalugulol`** names the one chosen. *Often* / *usually* is a [restrictor](/restrictors) (`huam`, `war`). A type across scenes is [label reach](/label-seams#reach-type) **`tha`**.
+**Compare with:** a ranking (*Azozon is more challenging than Alazun*) is the [rank join](/comparatives#comparatives), not `vezem`, which only sets two things side by side. *Acquisition* as a company buying another is [buy](#buy-sell). *Preference* as a general taste is a [sake](/for-a-sake#sake-preference); `zolamalugulol` names the one chosen. *Often* / *usually* is a [restrictor](/restrictors) (`huam`, `war`). A type across scenes is [label reach](/label-seams#reach-type) `tha`.
 
 ### Fair, keep, public, ride, admit and other leftover senses {#leftover-senses}
 
 **Needs:** [Word endings](/word-endings#abstract-m) · [Join-relations](/join-relations#join-relations) · [Hooks](/hooks#extra-noun) · [Starting and stopping](say-reasons.md#phase-verbs)
 
-Some English words have a second or third sense that a published root already carries as a synonym. Look the sense up first; most of these need no new word, only the right ending (**-m** for the abstract sense) or the right host.
+Some English words have a second or third sense that a published root already carries as a synonym. Look the sense up first; most of these need no new word, only the right ending (`-m` for the abstract sense) or the right host.
 
 | English | Ageben | Reading |
 |---------|--------|---------|
@@ -732,7 +734,7 @@ For *how much* they differ, use a [measured differential](say-amounts.md#measure
 
 **Needs:** [Resume](/pronouns#resume-r)
 
-English *himself*, *herself*, *itself* and *themself* say the object is the same one as the subject. Put the subject's resume (**-r**) in `/d/`. Ageben does not mark sex or number in the resume, so one form covers all of them. With plural **-x** on the subject and the resume it is *themselves*, and with the inclusive *we* (`zayan`) it is *ourselves*.
+English *himself*, *herself*, *itself* and *themself* say the object is the same one as the subject. Put the subject's resume (`-r`) in `/d/`. Ageben does not mark sex or number in the resume, so one form covers all of them. With plural `-x` on the subject and the resume it is *themselves*, and with the inclusive *we* (`zayan`) it is *ourselves*.
 
 > `zazozon dazozor vayebel.`
 >
@@ -758,7 +760,7 @@ English *himself*, *herself*, *itself* and *themself* say the object is the same
 
 **Needs:** [Resume](/pronouns#resume-r) · [Cross-role recast](/resume-sense#cross-role-recast)
 
-Intermediate already recast one referent into a new slot. Each table is an **antecedent** role; rows are the **pronoun** role. The mechanism is still one **-r**.
+English points back from one role at a word said in another: *A dog walks. That walk is big.* In Ageben the word pointed back to is the **antecedent**, and the word that points back is the **pronoun**. Each table below starts from the antecedent's role, and its rows give the pronoun's role. The mechanism is still one `-r`, so any role can point back at any earlier word.
 
 > `zodozel vowurol. zowuror gelazem.`
 >
@@ -940,7 +942,7 @@ Examples:
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` … `-r` | the degree / scale / criterion as a thing | *that degree / scale / criterion* |
 | `/ɡ/` … `-r` | host property under that frame again | that property |
-| `/w/` … `-r` | same adjunct again | same adjunct |
+| `/w/` … `-r` | the same degree word again | the same degree |
 | `/v/` `/h/` … `-r` | act or clause framed by that degree/criterion | framed doing / occasion |
 | `/y/` … `-r` | vocative on that frame | *In that manner?!* |
 | `/x/` … `-r` | discourse resume of the scale | *Going back to that (scale / criterion)* |
@@ -987,7 +989,7 @@ Examples:
 
 | Ageben | Use | English |
 |--------|-----|---------|
-| `/z/` `/d/` `/b/` … `-r` | the adjunct as a noun | *that time / place / manner / reason* |
+| `/z/` `/d/` `/b/` … `-r` | the time, place, manner or reason as a noun | *that time / place / manner / reason* |
 | `/v/` … `-r` | act under that occasion | that doing |
 | `/ɡ/` … `-r` | property as of that occasion | that property |
 | `/w/` … `-r` | adjective-level echo of that frame | that frame |
@@ -1073,7 +1075,7 @@ Examples:
 
 **Needs:** [Arrow rose](/roles#arrow-rose) · [Linking sentences](/sentence-linkers#sentence-linkers)
 
-When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`th`** + facing person). Generic heading is **`uro`** (*direction*). Facing-relative ahead / back still uses **`DIR th ANCHOR`**.
+When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root *bare* (no `th` + facing person). Generic heading is **`uro`** (*direction*). Facing-relative ahead / back still uses `DIR th ANCHOR`.
 
 > `zazozon vowurol. xahom zalazun veruvol.`
 >
@@ -1088,7 +1090,7 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 | **`azohom`** (bare) | talk pulls back | *retreat* |
 | **`urol`** | heading in general | *compass* / *direction* |
 
-**For *therefore*, use:** the [linker](/sentence-linkers#sentence-linkers) **`xahom`**. Body *left* / *right* still needs **`DIR th ANCHOR`**.
+**For *therefore*, use:** the [linker](/sentence-linkers#sentence-linkers) **`xahom`**. Body *left* / *right* still needs `DIR th ANCHOR`.
 
 ### Literal content (fence words / fence marks)
 <a id="literal-content"></a>
@@ -1096,7 +1098,7 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 
 **Needs:** [Opaque and loan words](/spans#loans)
 
-When a fence glyph (`[` / `]` / `(` / `)` / `<` / `>` / `{` / `}` / `=` / `|` / `#`) or a [tone mark](/tone-marks#tone-marks) (`!` / `?`) must appear **as content**, wrap that token in an **opaque** `<…>` span. The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
+When a fence glyph (`[` / `]` / `(` / `)` / `<` / `>` / `{` / `}` / `=` / `|` / `#`) or a [tone mark](/tone-marks#tone-marks) (`!` / `?`) must appear *as content*, wrap that token in an opaque `<…>` span. The outer span’s wording is the opaque interior (the wrapper is packaging, not extra cited words).
 
 ```ageben
 d[ varuyol d<]> ]
@@ -1106,7 +1108,7 @@ d[ vezuyol d<#> ]
 
 `d[ vezuyol d<#> ]` is a whole cite whose last content character is `#` (a bare `#]` would be editorial close). A hyphen before a closer is ordinary content.
 
-Opaque `d<…>` closes on the first `>`. If the blob **contains** `>`, write it as a cite instead, which closes on the first `]`:
+Opaque `d<…>` closes on the first `>`. If the blob *contains* `>`, write it as a cite instead, which closes on the first `]`:
 
 ```ageben
 d[code > 1]
@@ -1118,15 +1120,15 @@ d[code > 1]
 
 **Needs:** [Role compounds](/roles#role-compounds) · [Kind / role](/predication#classification) · [Cite](/spans#writing) · [Call someone](/speech-moves#vocative) · [Vocatives](/collectives#vocatives-y)
 
-These three English nouns each hide two jobs. *Role* is the function someone plays. Say it as a kind on `/ɡ/`, or as the usual doer of the event with a role compound and **`the`**. *Title* is either the name of a work or a claim to own something. *Address* is either speaking to someone or a speech.
+These three English nouns each hide two jobs. *Role* is the function someone plays. Say it as a kind on `/ɡ/`, or as the usual doer of the event with a role compound and `the`. *Title* is either the name of a work or a claim to own something. *Address* is either speaking to someone or a speech.
 
 | English | Ageben | Reading |
 |---------|--------|---------|
-| *role* (the function someone plays) | `zalazun gwozeduyol.` | the practiced role: role compound with reach **`o`** on `/ɡ/` |
-| *title* (the name of a work) | `d@[onuren alazun]` | cite with **`@`** |
+| *role* (the function someone plays) | `zalazun gwozeduyol.` | the practiced role: role compound with reach `o` on `/ɡ/` |
+| *title* (the name of a work) | `d@[onuren alazun]` | cite with `@` |
 | *title* (a claim to own) | `zegunum` | *ownership*, the abstract sense of `egunu` |
 | *address* (speak to someone) | `yalazun.` | call them with `/y/` + their name |
-| *address* (speak to a group) | `yeyenx.` | `/y/` + the kind as a title, **-nx** |
+| *address* (speak to a group) | `yeyenx.` | `/y/` + the kind as a title, `-nx` |
 | *address* (a speech) | `vezuyol` | the telling itself |
 
 > `zalazun gwozeduyol.`
@@ -1135,7 +1137,7 @@ These three English nouns each hide two jobs. *Role* is the function someone pla
 >
 > "Alazun is a teacher." / "Alazun's role is teacher."
 
-**Compare with:** a street address is an ordinary named place (**-n**), with no separate form.
+**Compare with:** a street address is an ordinary named place (`-n`), with no separate form.
 
 ### Sentence, phrase, word {#words-about-words}
 

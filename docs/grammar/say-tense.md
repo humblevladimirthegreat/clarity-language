@@ -8,7 +8,7 @@ Recipes for English *walked* / *has walked* / *will walk* / *used to walk*, and 
 
 **Needs:** [How you know](/evidentiality#evidentiality) · [Forecasts](/evidentiality#forecast) · [Dated channel](/dated-channel#dated-channel) · [Just and soon](/special-values#just-short) · [RESIDUE and FORMER](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#phasal) · [*as-of*](/as-of#as-of)
 
-An English tense bundles up to three questions: **when** the event sits, **how you know** it, and whether it **still counts** now. Ageben asks them separately. Pick the row for the English form, then the job you mean.
+An English tense bundles up to three questions: *when* the event sits, *how you know* it, and whether it *still counts* now. Ageben asks them separately. Pick the row for the English form, then the job you mean.
 
 | English | You mean | Ageben |
 |---------|----------|--------|
@@ -44,7 +44,7 @@ Every offset counts from now, or from the *as-of* now when one is set. No row ne
 
 **Needs:** [Live vs memory](/knowing#live-vs-memory) · [Dated channel](/dated-channel#dated-channel)
 
-English *Azozon walked* hides whether you saw it, read it, or were told. Choose the channel. A remembered sighting is MEMORY. Add a `-` amount to say how long ago.
+English *Azozon walked* hides whether you saw it, read it, or were told. In Ageben you choose a channel, the word that says how you know, so the listener hears your ground as well as the event. A remembered sighting is MEMORY. Add a `-` amount to say how long ago.
 
 > `zazozon thevum vowurol.`
 >
@@ -66,13 +66,13 @@ Reports and reasoning need their own `-` amount, because those channels do not f
 >
 > "I hear Azozon walked yesterday."
 
-**Compare with:** a clock or date (`h_#22,7`) dates the event with no channel. **`thevum`** with a `+` amount is not a sentence.
+**Compare with:** a clock or date (`h_#22,7`) dates the event with no channel. `thevum` with a `+` amount is not a sentence.
 
 ### Present perfect: leftover, done, or ever {#present-perfect}
 
 **Needs:** [RESIDUE](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#phasal)
 
-English *has left* mixes three ideas. Choose the one you mean.
+English *has left* mixes three ideas: the outcome still counts now, the change has already come, or it happened at some point. Use RESIDUE for the first, *already* for the second, and *already* with *at some point* for the third. Each one says only the idea you choose.
 
 > `zalazun haram vudurul.`
 >
@@ -92,13 +92,13 @@ English *has left* mixes three ideas. Choose the one you mean.
 >
 > "Azozon has swum at some point."
 
-**Compare with:** RESIDUE does not say the leaving was earlier. **`havem`** compares now with the change and dates nothing.
+**Compare with:** RESIDUE does not say the leaving was earlier. `havem` compares now with the change and dates nothing.
 
 ### Past perfect: as of a past moment {#past-perfect}
 
 **Needs:** [*As-of*](/as-of#as-of) · [RESIDUE](/residue-and-former#residue) · [Plan and forecast against a snapshot](say-reasons.md#as-of-intention)
 
-English *had left* means the leaving counted **as of** an earlier moment. Write the same stance and add *as-of* with that moment in `/b/`.
+English *had left* means the leaving counted *as of* an earlier moment. Write the same stance and add *as-of* with that moment in `/b/`.
 
 > `zalazun haram henam bl_#22,7 vudurul.`
 >
@@ -144,7 +144,7 @@ For *was walking when …*, keep the ordinary verb and hang the other event on [
 
 **Needs:** [Plan](/intention#plan-predict) · [Forecasts](/evidentiality#forecast) · [Consent](/permission-consent#consent)
 
-English *will* is three different claims.
+English *will* makes three different claims: you mean to, the world will, or you promise. Ageben has a separate form for each, so the listener hears which claim you make.
 
 | English *will* | Ageben |
 |----------------|--------|
@@ -182,7 +182,7 @@ English *will* is three different claims.
 
 **Needs:** [Dated channel](/dated-channel#dated-channel) · [Just and soon](/special-values#just-short) · [Now and today](/dated-channel#now) · [RESIDUE and FORMER](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#phasal) · [Forecasts](/evidentiality#forecast) · [Dependent clauses](/dependents#dependent-clauses)
 
-English time words (*today*, *previously*, *continue*) mostly ride on the same channels and offsets as tense. Each row says which one.
+English time words (*today*, *previously*, *continue*) mostly use the same channels and offsets as tense, so you need few new words for them. Each row says which one.
 
 | English | Ageben |
 |---------|--------|
@@ -199,7 +199,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 | *past* / *in the past* | FORMER **`helam`**, or a channel with a `-` offset |
 | *future* / *in the future* | a channel + **`blral`** |
 | *once* (*one time*) | `h+1` before the verb |
-| ever (*Have you walked at all?*) | **`havem`** + **`her`** (*anytime*) under **`yel`**: `yel her zawan havem vowurol` |
+| *ever* (*Have you walked at all?*) | **`havem`** + **`her`** (*anytime*) under **`yel`**: `yel her zawan havem vowurol` |
 | *during* (*during the storm*) | **`herom`** + `/b/`: `herom blanulul` |
 | *immediately* / *immediate* / *right away* / *at once* (*about to*) | a channel + **`blrawul`** (*a hair after now*) |
 | *initially* / *at first* / *firstly* | **`hugulom`** (*first*, as a manner adverb) |
@@ -224,7 +224,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 
 **Needs:** [FORMER](/residue-and-former#former-climate) · [Always](/restrictors) · [If](/causation#if)
 
-English *used to walk* is a pattern that is no longer today's report: **`hual`** with FORMER after the verb.
+English *used to walk* is a habit from an earlier time, not today's report. Say it with **`hual`** (*always*) and FORMER after the verb. FORMER makes no claim about now.
 
 > `zazozon hual vezuyol helam.`
 >
@@ -240,7 +240,7 @@ For *would* in a condition (*if Alazun swam, Azozon would walk*), see [remote an
 
 **Needs:** [Ability](/can-and-cant#ability) · [MAY](/knowing#may) · [Permission](/permission-consent#permission) · [FORMER](/residue-and-former#former-climate)
 
-English *can* and *may* each carry several meanings. Pick the meaning.
+English *can* and *may* each carry several meanings. Ageben has a separate form for each meaning, so pick the row by the one you intend.
 
 | English | You mean | Ageben |
 |---------|----------|--------|
@@ -279,13 +279,13 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 >
 > "Would you walk?"
 
-**Compare with:** ability says someone **can**; permission says whether they **may**; MAY says it **could be**.
+**Compare with:** ability says someone *can*; permission says whether they *may*; MAY says it *could be*.
 
 ### Ability, possibility and permission words {#ability-words}
 
 **Needs:** [Ability](/can-and-cant#ability) · [Can be](/can-and-cant#role-ability) · [MAY](/knowing#may) · [Permission](/permission-consent#permission) · [Forecasts](/evidentiality#forecast) · [Requirement](/permission-consent#requirement)
 
-English adjectives and verbs built on *can* and *may* take the same forms as the modals.
+English adjectives and verbs built on *can* and *may* take the same forms as the modals, so you reuse the forms from the section above.
 
 | English | Ageben |
 |---------|--------|
@@ -316,7 +316,7 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 
 **Needs:** [Requirement](/permission-consent#requirement) · [Prescription](/ought-for-a-sake#sake-force) · [Motive](/for-a-sake#sake-preference) · [Permission](/permission-consent#permission) · [Speech act](/firm-soft#speech-act) · [Stance as-of](/as-of#stance-as-of)
 
-English *must* and *should* differ in what stands behind the demand. Choose the source.
+English *must* and *should* differ in what stands behind the demand. Ageben names that source: a rule, a person, custom, your own command, or a sake the act serves. Pick the row by the source, and the listener hears who or what makes the demand.
 
 | English | You mean | Ageben |
 |---------|----------|--------|
@@ -366,11 +366,13 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 >
 > "Azozon doesn't have to walk." (not walking is allowed)
 
-**Compare with:** requirement reports a demand, which may be someone else's; **`yol`** is you telling the listener. Requirement with a denied act (`zazozon hwuvom vowurol vul`) is *Azozon is required not to walk*, which is *mustn't*, not *doesn't have to*.
+**Compare with:** requirement reports a demand, which may be someone else's; `yol` is you telling the listener. Requirement with a denied act (`zazozon hwuvom vowurol vul`) is *Azozon is required not to walk*, which is *mustn't*, not *doesn't have to*.
 
 ### Will, want, try, let's {#will-want}
 
 **Needs:** [Plan](/intention#plan-predict) · [Want](/want-and-decide#want) · [Decision](/want-and-decide#decision-revisability) · [Try](/try#try) · [Hopefully](/feelings#speaker-attitude) · [Speech act](/firm-soft#speech-act) · [Whose view](/holder#holder)
+
+English *want*, *plan*, *decide*, *try* and *let's* say what someone means to do. Ageben says most of them with WANT, PLAN or DECISION, and the ending adds a shade, such as lasting or passing. Which one you pick says whether you only want it, have a plan, or have decided.
 
 | English | Ageben |
 |---------|--------|

@@ -1,6 +1,6 @@
 # Asking and answering
 
-Recipes for English question shapes beyond plain *yes/no* and *who / what*. Every form here is taught on a grammar page; each recipe links what it needs.
+Recipes for English question shapes beyond plain *yes/no* and *who / what*, and for the small replies around them. The sections cover echo and reported questions, replies that keep a speaker going or soften an answer, exclamations and side remarks, offers and confirmations built on a list, and English verbs for speech acts such as *ask* and *offer*. Every form here is taught on a grammar page; each recipe links what it needs.
 
 ## Echo and reported questions {#echo-reported}
 
@@ -8,7 +8,7 @@ Recipes for English question shapes beyond plain *yes/no* and *who / what*. Ever
 
 **Needs:** [Ask](/questions#question) · [tone marks](/tone-marks#tone-marks)
 
-An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yel`**. Put the doubting [tone mark](/tone-marks#tone-marks) **`?!`** on the blank or on the word you doubt.
+An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yel`**, and put the doubting [tone mark](/tone-marks#tone-marks) `?!` on the word you doubt, or on a blank in its place. The mark tells the speaker which word you are checking.
 
 > `yel ?!dar zawan vayebel.`
 >
@@ -26,7 +26,7 @@ An echo question repeats what someone just said, because you doubt it or did not
 
 **Needs:** [Polar particle](/questions#polar-particle) · [tone marks](/tone-marks#tone-marks)
 
-English *Really?* asks the speaker to confirm what they just said. Write the confirming check-back as your own turn: **`yel yaol.`** (*Is that so?*). Put the doubting mark **`?!`** on it for disbelief.
+English *Really?* asks the speaker to confirm what they just said. Answer with your own short question that asks them to confirm: **`yel yaol.`** (*Is that so?*). Plain, it only asks; with the doubting mark `?!` on it, it shows disbelief.
 
 > `zazozon vowurol. yel ?!yaol.`
 >
@@ -34,7 +34,7 @@ English *Really?* asks the speaker to confirm what they just said. Write the con
 >
 > "Azozon walks." "Really?!"
 
-**Compare with:** **`yel.`** (*Huh?*) asks the speaker to say it again. **`yaor.`** (*I see*) takes the news in for now without asking anything.
+**Compare with:** `yel.` (*Huh?*) asks the speaker to say it again. `yaor.` (*I see*) takes the news in for now without asking anything.
 
 ### Reported questions {#reported-questions}
 
@@ -62,7 +62,7 @@ While someone tells you something, English keeps them going with *mm-hm* or *I s
 >
 > "Azozon walked." "Mm-hm."
 
-**Compare with:** **`yem.`** (*Hm?*) asks about what was just said, so the speaker stops to explain. **`yaom.`** (*yeah*) agrees with the claim.
+**Compare with:** `yem.` (*Hm?*) asks about what was just said, so the speaker stops to explain. `yaom.` (*yeah*) agrees with the claim.
 
 ### *Well…* before an unwelcome answer {#well}
 
@@ -76,7 +76,7 @@ English *well…* warns that the answer is not the plain *yes* the question hope
 >
 > "Did Azozon walk?" "Well… Azozon sat."
 
-**Compare with:** **`yuol`** says the claim is false. **`yuam`** says the question does not quite fit, and the body says what happened instead.
+**Compare with:** `yuol` says the claim is false. `yuam` says the question does not quite fit, and the sentence after it says what happened instead.
 
 ### *It sounds like…*, *I hear that you…* {#reflecting}
 
@@ -90,7 +90,7 @@ English *it sounds like you're anxious* and *I hear that you're upset* give the 
 >
 > "It sounds like you're anxious."
 
-To say the feeling **makes sense**, put your own stance in the main sentence and theirs in a dependent, with what the feeling is about:
+To say the feeling *makes sense*, put your own stance in the main sentence and theirs in a dependent, with what the feeling is about:
 
 > `wowetham goyom zarl zezuyol wawethumam goyom theyomawan.`
 >
@@ -98,13 +98,13 @@ To say the feeling **makes sense**, put your own stance in the main sentence and
 >
 > "It makes sense to me that the talk weighs on you."
 
-**Compare with:** REPORTED (**`thebamawan`**) says they told you so in as many words. *I hear that* in a reflection is your reading of them, not hearsay.
+**Compare with:** REPORTED (`thebamawan`) says they told you so in as many words. *I hear that* in a reflection is your reading of them, not hearsay.
 
 ### *Admittedly*, *granted* before a *but* {#admittedly}
 
 **Needs:** [Polar particle](/questions#polar-particle) · [Linking sentences](/sentence-linkers#sentence-linkers)
 
-English *admittedly*, *granted* and *that's true, but* concede a point before pushing back. Open with **`yaol`** (*true*): before a body it concedes that body, and alone it concedes what was just said. Then push back with **`xugohum`** (*but*).
+English *admittedly*, *granted* and *that's true, but* concede a point before pushing back. Open with **`yaol`** (*true*): before a sentence it concedes that sentence, and alone it concedes what was just said. Then push back with **`xugohum`** (*but*).
 
 > `yaol zazozon vowurol. xugohum zalazun vehohel.`
 >
@@ -118,7 +118,7 @@ English *admittedly*, *granted* and *that's true, but* concede a point before pu
 >
 > "Azozon walks." "That's true, but Alazun sits."
 
-**Compare with:** *even so* after the concession is *despite that*, **`thezem blarth`** ([pointing back](/stand-in-vowels#stand-in-back)). **`yaom`** (*I think so*) agrees only softly.
+**Compare with:** *even so* after the concession is *despite that*, `thezem blarth` ([pointing back](/stand-in-vowels#stand-in-back)). `yaom` (*I think so*) agrees only softly.
 
 ## Exclamations and side remarks {#reactions}
 
@@ -126,7 +126,7 @@ English *admittedly*, *granted* and *that's true, but* concede a point before pu
 
 **Needs:** [tone marks](/tone-marks#tone-marks) · [extra detail on an adjective](/clause#adjective-detail-w) · [interjections](/speech-moves#interjections-reactions)
 
-English *What a big dog!* and *How big the dog is!* say the dog is very big and that you feel strongly about it. Say the degree with *very* **`welazem`** and the feeling with the tone mark **`!`** before the sentence. Use **`!!`** for more.
+English *What a big dog!* and *How big the dog is!* say the dog is very big and that you feel strongly about it. Say the degree with *very* **`welazem`** and the feeling with the tone mark **`!`** before the sentence. Use `!!` for more.
 
 > `! zodozel welazem gelazem.`
 >
@@ -134,7 +134,7 @@ English *What a big dog!* and *How big the dog is!* say the dog is very big and 
 >
 > "What a big dog!"
 
-For a bare *So big!*, give the reaction as an interjection with **`!`**:
+For a bare *So big!*, give the reaction as an interjection with `!`:
 
 > `!yelazem.`
 >
@@ -161,7 +161,17 @@ English *by the way* adds a side remark, then goes back to the main point. Put a
 
 **Needs:** [Ask](/questions#question) · [Fill-ask](/questions#fill-ask-r) · [How many items](/joins#standalone-phrase)
 
-Under question, the rest of the single-item and standalone join map is confirm / offer (and fill-ask **-r**). On a list of two or more (no **-r**): **-l** picks from that closed menu; **-m** allows another name (and for **e**, *or none*); **u** is *none of* the listed; **ua** / **ue** is the complement of the listed; **uo** reverse-ranks among the listed. Join **-n** here is stock/usual.
+English checks and offers such as *How about X?* ask about a choice. Put a join word in a question, after a single item or standing alone in place of the items. Under a question, the single-item and standalone joins not taught elsewhere either confirm a reading or offer one, and `-r` turns the join into a fill-ask. The tables below give each reading, so you can choose between confirming and offering.
+
+On a list of two or more, with no `-r`, the endings and vowels read as follows. Join `-n` here is the stock or usual answer.
+
+| Ending or vowel | Meaning |
+|-----------------|---------|
+| `-l` | picks from that closed menu |
+| `-m` | allows another name (with `e`, also *or none*) |
+| `u` | *none of* the listed |
+| `ua` / `ue` | everything except the listed |
+| `uo` | ranks the listed in reverse |
 
 > `yel zazozon zol.`
 >
@@ -169,81 +179,81 @@ Under question, the rest of the single-item and standalone join map is confirm /
 >
 > "Is Azozon the only priority?"
 
-**Not the same job as:** proper-name **-n** ([word ending](/proper-names#proper-name--n)).
+**Not the same job as:** proper-name `-n` ([word ending](/proper-names#proper-name--n)).
 
-**Related form:** fill-ask length uses [join **-r**](/fill-ask-roles#fill-ask-arity).
+**Related form:** fill-ask length uses [join `-r`](/fill-ask-roles#fill-ask-arity).
 
 #### Rank: single-item (under question)
 
 | Ageben | English |
 |--------|---------|
-| **…om** | *Is X the top priority?* / *Prefer X?* (offer) |
-| **…ol** | *Is X the only priority?* |
-| **…aom** | *Maybe start with X?* (offer) |
-| **…aol** | *Start with X?* |
-| **…uom** | *X last?* (offer) |
-| **…uol** | *X last only?* |
-| **…on** | *X first, as usual?* |
-| **…or** | *Which X is first?* (fill-ask) |
+| `…om` | *Is X the top priority?* / *Prefer X?* (offer) |
+| `…ol` | *Is X the only priority?* |
+| `…aom` | *Maybe start with X?* (offer) |
+| `…aol` | *Start with X?* |
+| `…uom` | *X last?* (offer) |
+| `…uol` | *X last only?* |
+| `…on` | *X first, as usual?* |
+| `…or` | *Which X is first?* (fill-ask) |
 
 #### Rank: standalone (under question)
 
 | Ageben | English |
 |--------|---------|
-| **…ol** | *No favorite?* |
-| **…om** | *Easy-going?* / *Whichever?* |
-| **…oel** | *Tie?* |
-| **…oem** | *Probably a tie?* |
-| **…oen** | *Draw?* (stock) |
-| **…aom** | *Not sure where to start?* |
-| **…aol** | *Any order?* |
-| **…uom** | *Don't mind?* / *No objection?* |
-| **…uol** | *No least-favorite?* / *No one last?* |
-| **…on** | *No favorite?* (stock) |
-| **…or** | *What’s the priority?* (fill-ask) |
+| `…ol` | *No favorite?* |
+| `…om` | *Easy-going?* / *Whichever?* |
+| `…oel` | *Tie?* |
+| `…oem` | *Probably a tie?* |
+| `…oen` | *Draw?* (stock) |
+| `…aom` | *Not sure where to start?* |
+| `…aol` | *Any order?* |
+| `…uom` | *Don't mind?* / *No objection?* |
+| `…uol` | *No least-favorite?* / *No one last?* |
+| `…on` | *No favorite?* (stock) |
+| `…or` | *What’s the priority?* (fill-ask) |
 
 #### Set: single-item (under question)
 
 | Ageben | English |
 |--------|---------|
-| **…al** | *Just X?* / *Only X?* |
-| **…am** | *How about X?* / *Want X?* (offer) |
-| **…el** | *Has to be X?* |
-| **…em** | *How about X?* / *X, or skip?* (offer; empty-allowed) |
-| **…ual** | *Everything but X?* |
-| **…uam** | *Everything but X (at least)?* (offer) |
-| **…uel** | *Anything but X?* |
-| **…uem** | *Anything but X?* (offer) |
-| **…ael** | *Is X enough?* |
-| **…aem** | *Would X do?* (offer) |
-| **…ar** | *What/which (unknown) X?* (fill-ask) |
-| **…er** | *Any X?* (fill-ask) |
-| **…ul** | *Not X?* |
-| **…um** | *Not X (at least)?* (offer) |
-| **…un** | *Not X, as usual?* |
-| **…ur** | *What else (besides X)?* (fill-ask) |
+| `…al` | *Just X?* / *Only X?* |
+| `…am` | *How about X?* / *Want X?* (offer) |
+| `…el` | *Has to be X?* |
+| `…em` | *How about X?* / *X, or skip?* (offer; empty-allowed) |
+| `…ual` | *Everything but X?* |
+| `…uam` | *Everything but X (at least)?* (offer) |
+| `…uel` | *Anything but X?* |
+| `…uem` | *Anything but X?* (offer) |
+| `…ael` | *Is X enough?* |
+| `…aem` | *Would X do?* (offer) |
+| `…ar` | *What/which (unknown) X?* (fill-ask) |
+| `…er` | *Any X?* (fill-ask) |
+| `…ul` | *Not X?* |
+| `…um` | *Not X (at least)?* (offer) |
+| `…un` | *Not X, as usual?* |
+| `…ur` | *What else (besides X)?* (fill-ask) |
 
 #### Set: standalone (under question)
 
 | Ageben | English |
 |--------|---------|
-| **…al** | *Nothing?* / *Nobody?* |
-| **…am** | *Got nothing?* |
-| **…an** | *Null?* / *Void?* |
-| **…el** | *No options?* |
-| **…em** | *No pick?* / *Skip OK?* |
-| **…ual** | *Everything?* / *Everyone?* |
-| **…uam** | *Everything you can think of?* |
-| **…uel** | *Anything?* |
-| **…uem** | *Anything?* (offer) |
-| **…ael** | *All set?* |
-| **…aem** | *Nothing you need?* |
-| **…ul** | *No?* |
-| **…um** | *Soft no?* |
-| **…un** | *No?* (stock) |
-| **…ar** | *Who/what?* (fill-ask) |
-| **…er** | *Anything?* (fill-ask) |
-| **…ur** | *What else?* (fill-ask) |
+| `…al` | *Nothing?* / *Nobody?* |
+| `…am` | *Got nothing?* |
+| `…an` | *Null?* / *Void?* |
+| `…el` | *No options?* |
+| `…em` | *No pick?* / *Skip OK?* |
+| `…ual` | *Everything?* / *Everyone?* |
+| `…uam` | *Everything you can think of?* |
+| `…uel` | *Anything?* |
+| `…uem` | *Anything?* (offer) |
+| `…ael` | *All set?* |
+| `…aem` | *Nothing you need?* |
+| `…ul` | *No?* |
+| `…um` | *Soft no?* |
+| `…un` | *No?* (stock) |
+| `…ar` | *Who/what?* (fill-ask) |
+| `…er` | *Anything?* (fill-ask) |
+| `…ur` | *What else?* (fill-ask) |
 
 ## Speech acts in everyday talk {#speech-acts}
 
@@ -251,7 +261,9 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 **Needs:** [Ask](/questions#question) · [Reported questions](#reported-questions) · [Stand-in vowels](/stand-in-vowels#stand-in) · [Firm and soft](/firm-soft#speech-act) · [Stacking two act words](/more-turn-words#stacked-acts) · [Rhetorical question](/more-turn-words#rhetorical) · [Quiz](/more-turn-words#quiz) · [Questions that sound like another act](/more-turn-words#stacked-questions) · [Conversation length](/conversation-length#conversation-length) · [Call someone](/speech-moves#vocative) · [Someone else's want](/want-and-decide#whose-intention)
 
-English *ask* is four jobs. You can put a question to someone, ask them for something, ask them to do something, or report that a question was asked. A question is the act word **`yel`**. A request is **`yom`**. A reported question hangs on the telling ([reported questions](#reported-questions)). *Ask* or *tell someone to do* something is a telling with the to-clause stand-in **`dorl`**, and the person told is plain `/b/`; *not to* is **`durl`**. English picks *ask* or *tell* for politeness, which Ageben carries on the act word, not the verb. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
+English *ask* covers four jobs: putting a question to someone, asking for something, asking someone to do something, and reporting that a question was asked. Ageben gives each job its own shape, so pick the row by the job. English picks *ask* or *tell* for politeness, which Ageben carries on the act word, not the verb.
+
+A question is the act word **`yel`**, and a request is **`yom`**. A reported question hangs on the telling ([reported questions](#reported-questions)). To *ask* or *tell someone to do* something, use a telling with the to-clause stand-in **`dorl`**, and make the person told plain `/b/`; for *not to*, use **`durl`**. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
 
 | English | Ageben | Reading |
 |---------|--------|---------|
@@ -283,7 +295,7 @@ English *ask* is four jobs. You can put a question to someone, ask them for some
 
 **Needs:** [Firm and soft](/firm-soft#speech-act) · [Check-backs](/polar-inventory#check-backs) · [Prescription](/ought-for-a-sake#sake-force) · [Permission](/permission-consent#permission) · [Which noun](/dependents#which-noun)
 
-English *offer*, *suggest*, *propose*, *recommend* and *advise* all put something forward that the other person may take or leave. Ageben picks how firmly. A soft act word (**-m**) leaves the choice open. A soft request with *we* proposes a joint act, and a tag after it asks whether they take it up. A prescription **`the`** on a sake says the act ought to serve it, and its ending says whether the person invited it (**-l**) or you are offering it unasked (**-m**).
+English *offer*, *suggest*, *propose*, *recommend* and *advise* all put something forward that the other person may take or leave. Ageben picks how firmly. A soft act word (`-m`) leaves the choice open. A soft request with *we* proposes a joint act, and a tag after it asks whether they take it up. A prescription **`the`** on a sake says the act ought to serve it, and its ending says whether the person invited it (`-l`) or you are offering it unasked (`-m`).
 
 | English | Ageben | Reading |
 |---------|--------|---------|
@@ -319,6 +331,8 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 ### Hello, sir, yeah, quote, mention {#reply-words}
 
 **Needs:** [Greeting](/word-endings#greeting) · [Polar particle](/questions#polar-particle) · [Cite](/spans#writing) · [Mention](/spans-as-words#mention) · [Asides](/spans#asides)
+
+These everyday English words each map to a form taught elsewhere: a greeting, a call by name, a yes or no particle, a cite, a mention, or an aside. One English word can split across rows, as *quote* and *mention* do, so pick the row by what the word does.
 
 | English | Ageben | Reading |
 |---------|--------|---------|

@@ -74,9 +74,6 @@
   "claritish/how-you-know.md": {
     "long-paragraph": 1
   },
-  "english.md": {
-    "long-paragraph": 1
-  },
   "inspect.md": {
     "long-paragraph": 1
   },
@@ -212,20 +209,8 @@
   "intermediate/want-and-decide.md": {
     "bold-density": 1
   },
-  "say-amounts.md": {
-    "bold-density": 1
-  },
-  "say-people-places.md": {
-    "jargon": 2,
-    "long-paragraph": 1
-  },
-  "say-questions.md": {
-    "bold-density": 1,
-    "long-paragraph": 1
-  },
   "say-reasons.md": {
-    "bold-density": 5,
-    "long-paragraph": 2
+    "bold-density": 1
   },
   "terminology.md": {
     "bold-density": 6
