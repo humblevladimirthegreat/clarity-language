@@ -117,7 +117,7 @@ When the lexicon has a matching root, write the ordinary word, not a span. An as
 
 A one-word name is an ordinary `-n` word (`donuren`), not a span.
 
-### Which slot {#slot}
+### Which role a span fills {#slot}
 
 <!-- cheat-sheet: restrictors-spans -->
 | Ageben | Use | English | Stage |

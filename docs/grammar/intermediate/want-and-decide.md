@@ -61,7 +61,7 @@ For *against my wishes*, put WANT after the hook `uom` ([contrary to a stance](c
 
 **Compare with:** [hopefully](feelings.md#speaker-attitude) (`thuwuyom`) is your hope about whether a claim turns out true; `thalom` is wanting the act itself. [Motive](for-a-sake.md#sake-preference) says which sake the act serves, not that it is wanted. Among the [stacked urges](feelings.md#emotion-compose) of a feeling, SEEKING is a feeling turning toward someone for comfort, not a plain want.
 
-### Decision (revisability)
+### Saying you have decided, and how final it is {#decision-revisability}
 <a id="decision"></a>
 <a id="decision-mood"></a>
 
@@ -81,7 +81,7 @@ Unlike PLAN, DECISION carries no time. It says what you chose, not that the act 
 
 **Compare with:** a [say word](permission-consent.md#say-words) on yourself is a yes you give openly. `zuwen vowurol hwuzal.` is *I promise to walk*, which others can hold you to; `zuwen thogel vowurol.` is *I've decided for good to walk*, a choice only you can see.
 
-#### Endings: changeability
+#### Endings: how final the decision is {#endings-changeability}
 <a id="decision-changeability"></a>
 
 The endings on DECISION run on the same settled-to-passing scale as [changeability](/sakes#sake-changeability) on an unmet sake: `-l` irreversible, `-m` modifiable, `-r` temporary. With `-n`, the word is an ordinary [name](proper-names.md#proper-name--n). If you do not know how settled the decision is, use `-m`. How firm a choice will turn out is hard to know even for yourself, so `-m` claims nothing either way.

@@ -6,7 +6,7 @@ band: intermediate
 
 Beginner restrictors said *only when*, *always*, and *sometimes*. This page first sets them apart from a whole sentence used as the occasion (*if Azozon walks*), which takes a hinge word instead. It then gives the rest of the restrictor vowel map, for *either when A or when B* and *always except when…*. Next come the ranked restrictors, for *preferably when A, or else when B*, and last the restrictors that point at some time without saying which.
 
-### Occasions vs a dependent *when*
+### A whole sentence as the occasion (*when*, *if*) {#occasions-vs-a-dependent-when}
 
 English *when* / *if* can introduce a whole *sentence* as the occasion (*if Azozon walks*). Write that with a hinge word, `/h/` (*when*) or `/th/` (*if*), plus `/b/` [`blarl`](/dependents#hinges). The main sentence stops after `blarl`; the next sentence is the occasion. Use a restrictor when each occasion is an adverb; use `blarl` when the occasion is a full clause.
 
@@ -75,7 +75,7 @@ One occasion before `huol` is the last resort: the claim counts there, but only 
 >
 > "When it rains, Azozon walks only as a last resort."
 
-### Unspecified-member (`-r`) {#unspecified-member-r}
+### At some time, without saying which (`-r`) {#unspecified-member-r}
 
 With `-r`, a restrictor says the claim holds at some time without saying which. The table gives the statement readings; to ask *when*, see [When?](/fill-ask-jobs#when).
 

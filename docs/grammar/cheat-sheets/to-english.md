@@ -228,9 +228,9 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `thelor` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `themel` | mirative mood overturning a firm expectation | [Mirative (themem)](/mirative#mirative) | I |
-| `themem` | mirative mood (newly found out and not expected) | [Mirative (themem)](/mirative#mirative) | I |
-| `themer` | mirative mood against a loose expectation | [Mirative (themem)](/mirative#mirative) | I |
+| `themel` | mirative mood overturning a firm expectation | [It turns out (themem)](/mirative#mirative) | I |
+| `themem` | mirative mood (newly found out and not expected) | [It turns out (themem)](/mirative#mirative) | I |
+| `themer` | mirative mood against a loose expectation | [It turns out (themem)](/mirative#mirative) | I |
 | `thenam` | AS-OF stance hinge (asserted whose-now / dated ledger) | [Stance as-of](/as-of#stance-as-of) | A |
 | `thenar` | AS-OF stance hinge (asserted whose-now / dated ledger) resume | [Stance as-of](/as-of#stance-as-of) | A |
 | `thevul` | memory evidential with strong evidence (vivid memory) | [Evidence strength](/evidentiality#evidence-strength) | I |
@@ -241,12 +241,12 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 | `theyom` | clues evidential (reasoned from clues about this case) | [Evidentiality](/evidentiality#evidentiality) | I |
 | `theyor` | clues evidential with weak evidence (a weak clue) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `theyul` | notional mood rehearsal follow-up (practicing a possible scene to prepare for action) | [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) | I |
-| `theyum` | notional mood default follow-up (imagining a scene without a further purpose) | [Notional (as-if framing)](/notional#notional-as-if-framing) | I |
+| `theyum` | notional mood default follow-up (imagining a scene without a further purpose) | [Imagining a scene (as if)](/notional#notional-as-if-framing) | I |
 | `theyur` | notional mood suppose follow-up (toying with a possibility or assumption for now) | [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) | I |
 | `thezem` | ALTHOUGH clause hinge (concession; the speaker's expectation; NP despite) | [Because, although (hinges)](/dependents#hinges) | B |
-| `thogel` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
-| `thogem` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
-| `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
+| `thogel` | decision mood irreversible changeability (settled pick; no time) | [Saying you have decided, and how final it is](/want-and-decide#decision-revisability) | I |
+| `thogem` | decision mood modifiable changeability (open to revision; no time) | [Saying you have decided, and how final it is](/want-and-decide#decision-revisability) | I |
+| `thoger` | decision mood temporary changeability (pick for now; no time) | [Saying you have decided, and how final it is](/want-and-decide#decision-revisability) | I |
 | `thohem` | IF clause hinge (one-way conditional) | [If](/causation#if) | B |
 | `thomal` | may mood find-out follow-up (I'll / let's find out) | [Follow-up endings (MAY)](/knowing#follow-up-endings-may) | B |
 <!-- /generated -->

@@ -133,7 +133,7 @@ z-Ahelan | d-CITE[umbrella]# | v-write
 
 *Azozon's second child sleeps.*
 
-**Rule:** [Ordinal generation](generations.md#ordinal-generation)
+**Rule:** [Counting inside one level of a family or outline](generations.md#ordinal-generation)
 :::
 
 **5.** `zazozon grawaxugowul.`
@@ -157,7 +157,7 @@ z-Alazun | NAME[d-tomato | d-watermelon | d-and] | v-cook
 
 **-n** on the join names the list as one set phrase; **`dal`** is just *a tomato and a watermelon*.
 
-**Rule:** [Named phrase](named-phrases.md#named-list)
+**Rule:** [A set phrase as one name](named-phrases.md#named-list)
 :::
 
 **2.** *Alazun is sleepier than Ahelan said.* `zalazun thebam blahelan zol guzemel.` or `zalazun zol guzemel thebam blahelan.`

@@ -6,7 +6,7 @@ band: intermediate
 
 Inside a clause, a hook ties B to A, or names a landmark. The first section collects the four hooks with closed `-l` and open `-m`, which say how complete B is, and shows how to turn a whole hooked phrase into a name. The next three let you say more than one thing about the same A, add detail to the hook itself, and point back to a landmark already named with `-r`.
 
-### In-clause {#in-clause}
+### Four hooks between phrases, closed and open {#in-clause}
 
 Here are the four **same-role hooks** from Beginner (*including*, *rather*, *instead*, *except*: the hooks that sit between two phrases in the same role, `A HOOK B`), with both endings.
 

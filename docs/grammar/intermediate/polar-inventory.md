@@ -186,7 +186,7 @@ When the question already contains *not* (*Didn’t Azozon run?*), *yes* and *no
 >
 > "True, they didn’t run."
 
-### Yes/no with single-item / standalone
+### Checking one guess (*Just Azozon?*) {#yes-no-with-single-item-standalone}
 <a id="yes-no-single-item-standalone"></a>
 <a id="under-question"></a>
 

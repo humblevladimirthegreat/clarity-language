@@ -139,7 +139,7 @@ Speech uses `wa` / `wu` for that exponent, then `ya` if mantissa digits follow. 
 >
 > "5.2."
 
-### Bare OoM {#bare-oom}
+### *Hundreds*, *thousands*: a size without a count {#bare-oom}
 <a id="bare-oom-bands"></a>
 
 English *hundreds* or *thousands* names a range of sizes without a count. To say that, write a **bare order of magnitude** (OoM): exponent digits with no mantissa. For exponent K, the word then covers every amount from 10ᴷ up to, but not including, 10ᴷ⁺¹, so `g+e3` is 1000–9999, not every larger amount.

@@ -6,7 +6,7 @@ band: intermediate
 
 This page finishes the associative ending from Beginner. It covers who counts when you leave the group open; the same ending on a verb for one shared act, and on an adjective for a property of the whole group; how to say *each other*; how to address several people, in a sentence and in a call; and a table of every word that takes the ending.
 
-### Associate-set resolution
+### Who counts in the group {#associate-set-resolution}
 <a id="associate-resolution"></a>
 
 English *Azozon and them* does not say who belongs. Ageben `-x` is the same: who counts is **open** unless you say. When the list matters, name the members with a [join](/joins). When it does not, the listener guesses in this order: a group already named in the conversation, then the obvious group in the scene (this meeting, this household).
@@ -156,7 +156,7 @@ To call a group at the start of a turn, put `-x` on the call word (the vocative,
 | `-rx` | prior addressee and associates | *hey, you (that one) and associates* |
 | **`yawanx`** | current addressees, no name | *hey, you all* |
 
-### Where **-x** sits
+### Every word that takes `-x` {#where-x-sits}
 
 Beginner already used `-x` on nouns and on the special pronouns for the speaker and the listener (the person-role specials in the table). The rest of the words that take it:
 

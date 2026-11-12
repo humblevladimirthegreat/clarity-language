@@ -6,7 +6,7 @@ band: intermediate
 
 The fill-ask vowels and how many items you list before the blank complete the *who* / *what* map. A blank can also sit inside a dependent clause. How to ask for *yes* or *no*, and how to answer, is in [questions](/questions).
 
-### Fill-ask arity {#fill-ask-arity}
+### Fill-ask vowels and how many items you list {#fill-ask-arity}
 
 English asks for a blank in many ways: *who?*, *anything?*, *which comes first?*, *which of these?* Beginner already used *who/what* (`…ar`) and *what else* (`…ur`). Two more vowels (`…er`, `…or`) and the number of items listed before the blank (none, one, or several) complete the map, which matches [single-item / standalone](/joins#single-item-phrase). Pick the column for what you ask and the row for how many items you name.
 

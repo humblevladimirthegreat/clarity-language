@@ -19,7 +19,7 @@ When English would say two people are *as ADJ as* each other, use a tie: a rank 
 
 **Compare with:** *more / most* and *least* use `o` / `uo` plus the same shared adjective ([comparatives](/comparatives)).
 
-### Invert (**`ua`** / **`uo`** / **`ue`**) {#invert-u-stacks}
+### *Everything but*, *last first*, *anything but these* {#invert-u-stacks}
 
 You already know *everything but* (`ua`): a leading `u` inverts the add vowel `a`. It inverts the rank vowel `o` and the choice vowel `e` the same way: **`uo`** reverses a ranking, and **`ue`** offers everything outside the list. So one join word says *last first* or *anything but these*.
 
@@ -45,7 +45,7 @@ What *everything* or *anything* ranges over comes from context, or from a [SHARE
 
 **Compare with:** plain `u` is *not* / *none of* the listed, not an invert stack. *Every cat* uses SHARED kind after `zual`: `zual gogozel`.
 
-### Route (**`ao`**) {#route-ao}
+### In order: *A, then B* {#route-ao}
 
 When English says *A, then B* (an itinerary, a turn order, *from 3 to 5*), write the items in that order and close the list with **`ao`**. The first item is then where the sequence starts, not the winner. Rank `o` would instead put the first item at the top (*A matters more than B*).
 

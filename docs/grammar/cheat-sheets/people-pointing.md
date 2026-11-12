@@ -103,7 +103,7 @@ Role letter + the root + `-n`. Prefer a proper name when you have one. See [spec
 
 As an object, *we* is `dayan`. `awan` is the person actually listening. `eyen` takes no `-x`.
 
-### Groups with **-x** {#groups}
+### Groups with `-x` {#groups}
 
 | Form | Means | Example | English | Stage |
 |------|-------|---------|---------|-------|

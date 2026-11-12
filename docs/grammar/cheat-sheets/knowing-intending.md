@@ -122,11 +122,11 @@ MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words
 |--------|---------|-----------|-------|
 | `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](/residue-and-former#residue-and-former-climate) | I |
 | `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](/residue-and-former#residue-and-former-climate) | I |
-| `themel` | mirative mood overturning a firm expectation | [Mirative (themem)](/mirative#mirative) | I |
-| `themem` | mirative mood (newly found out and not expected) | [Mirative (themem)](/mirative#mirative) | I |
-| `themer` | mirative mood against a loose expectation | [Mirative (themem)](/mirative#mirative) | I |
+| `themel` | mirative mood overturning a firm expectation | [It turns out (themem)](/mirative#mirative) | I |
+| `themem` | mirative mood (newly found out and not expected) | [It turns out (themem)](/mirative#mirative) | I |
+| `themer` | mirative mood against a loose expectation | [It turns out (themem)](/mirative#mirative) | I |
 | `theyul` | notional mood rehearsal follow-up (practicing a possible scene to prepare for action) | [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) | I |
-| `theyum` | notional mood default follow-up (imagining a scene without a further purpose) | [Notional (as-if framing)](/notional#notional-as-if-framing) | I |
+| `theyum` | notional mood default follow-up (imagining a scene without a further purpose) | [Imagining a scene (as if)](/notional#notional-as-if-framing) | I |
 | `theyur` | notional mood suppose follow-up (toying with a possibility or assumption for now) | [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) | I |
 | `thomal` | may mood find-out follow-up (I'll / let's find out) | [Follow-up endings (MAY)](/knowing#follow-up-endings-may) | B |
 | `thomam` | may mood (could be; default) | [MAY](/knowing#may) | B |
@@ -176,9 +176,9 @@ A want, a plan, and a decision are three steps, and they stack in that order. Al
 | `thalol` | want mood lasting (a wish that keeps returning) | [Want](/want-and-decide#want) | I |
 | `thalom` | want mood (duration unstated) | [Want](/want-and-decide#want) | I |
 | `thalor` | want mood passing (a whim that fades) | [Want](/want-and-decide#want) | I |
-| `thogel` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
-| `thogem` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
-| `thoger` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](/want-and-decide#decision-revisability) | I |
+| `thogel` | decision mood irreversible changeability (settled pick; no time) | [Saying you have decided, and how final it is](/want-and-decide#decision-revisability) | I |
+| `thogem` | decision mood modifiable changeability (open to revision; no time) | [Saying you have decided, and how final it is](/want-and-decide#decision-revisability) | I |
+| `thoger` | decision mood temporary changeability (pick for now; no time) | [Saying you have decided, and how final it is](/want-and-decide#decision-revisability) | I |
 <!-- /generated -->
 
 <PageBreak />

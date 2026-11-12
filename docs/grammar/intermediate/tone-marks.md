@@ -134,7 +134,7 @@ A mark on a span colors all of it:
 - Before a span fence, the mark is *your* tone about the quote. Inside the fence, it is part of what is quoted (the original speaker's tone).
 - Speech adds no syllables: you voice the mark over its words.
 
-#### Emphasis and clefts {#emphasis-and-clefts}
+#### Singling out a word {#emphasis-and-clefts}
 
 English moves or stresses a word to single it out: *It's a cat that Azozon sees*, *It was Azozon who saw the cat*, or a stressed *Azozon saw the cat*. Ageben word order carries no emphasis: the default order is set by the [speech act](/speech-moves#act-word-order), and any other order means the same. So ask what the English emphasis is doing:
 

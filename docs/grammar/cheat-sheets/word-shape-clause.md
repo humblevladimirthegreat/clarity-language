@@ -25,7 +25,7 @@ In a sentence: **role letter + root + ending**. As a [citation](/word-endings#ci
 | `-lnx` | [some of a name](/proper-names#name-instance--ln) | `dazozolnx` | *some Azozons* | I |
 | `-x` after any of these | [associates, or a group](/plurality#associative) | `zazozonx` | *Azozon and associates* | B |
 
-### What **-n** names, by role {#n-by-role}
+### What `-n` names, by role {#n-by-role}
 
 `-n` says the thing bears the name; the [role](/proper-names#proper-name--n) says the job.
 

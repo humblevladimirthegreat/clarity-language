@@ -151,7 +151,7 @@ Every item shares the join's role letter: the box is an object, so `dubogal`, no
 
 Lookup grids that restate forms taught above; nothing here is new.
 
-### Rare arities and edge readings
+### Any number of items, and mixing two joins {#rare-arities-and-edge-readings}
 
 Most other phrase joins need two or more items. These edge readings keep a defined sense with any number of items, or mix two joins by nesting.
 

@@ -167,7 +167,7 @@ When the whole is not the modified head, use a complex `/ɡ/` or `/h/` [of relat
 
 A bare `/z/` (or other freestanding) `…yo` percent with no named whole is grammatical; prefer an explicit whole (*percent of what*). Bare `…yu` point amounts are fine when the percent-scale quantity being moved is already clear. Rates outside everyday percent talk use a plain scalar (`ye` / `e-N`).
 
-### Unspecified value in the range (**-r**)
+### Some value in a range, not saying which {#unspecified-value-in-the-range-r}
 <a id="unspecified-value-in-the-range--r"></a>
 
 **Needs:** [Ranges](/ranges#number-ranges) · [Named and unknown ranges](/open-ranges#named-ranges)

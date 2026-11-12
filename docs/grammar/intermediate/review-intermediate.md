@@ -239,7 +239,7 @@ z-Ahelan | d-tent | v-see . z-Ahelan | d-bucket | v-←see
 
 *Ahelan sees a tent. Ahelan sees a bucket too.*
 
-**Rule:** [How English approximates -r](resume-sense.md#how-english-approximates-r)
+**Rule:** [English words for *the same one again*](resume-sense.md#how-english-approximates-r)
 :::
 
 **2.** `zagayul zwal dobowal vayebel. zahelan vowurol. zwar vagamul.`
@@ -311,7 +311,7 @@ y-question | [d-cookie | d-wh]
 
 *Which cookie?*
 
-**Rule:** [Fill-ask arity](fill-ask-roles.md#fill-ask-arity)
+**Rule:** [Fill-ask vowels and how many items you list](fill-ask-roles.md#fill-ask-arity)
 :::
 
 #### Pick one {#intermediate-pick-one}
@@ -433,7 +433,7 @@ anyway | z-Ahelan | v-walk
 
 **`er`** goes back to the main line; **`el`** would replace the last claim (*Instead*).
 
-**Rule:** [Discourse](discourse-hooks.md#discourse)
+**Rule:** [Opening a sentence with a hook](discourse-hooks.md#discourse)
 :::
 
 **11.** *How many cookies does Azozon see?* `yel dugedelx grar zazozon vayebel.` or `yel dugedelx gror zazozon vayebel.`
@@ -541,7 +541,7 @@ z-Alazun | th-MIRATIVE | v-fight
 
 **-m** is the ordinary *it turns out*; **-l** overturns a firm expectation.
 
-**Rule:** [Mirative](mirative.md#mirative)
+**Rule:** [It turns out](mirative.md#mirative)
 :::
 
 **20.** *Alazun walks as a guard.* `zalazun vowurol hwozagayul.` or `zalazun gwozagayul vowurol.`
@@ -685,7 +685,7 @@ in.other.words.open | z-Alazun | v-cry
 
 Open **-m** offers one of several ways to say it; **`ol`** is *in other words*, the one rewording.
 
-**Rule:** [Discourse](discourse-hooks.md#discourse)
+**Rule:** [Opening a sentence with a hook](discourse-hooks.md#discourse)
 :::
 
 **32.** *a cookie bucket* (one bucket) `zugedexobowal.` or `zobowaxugedel.`
@@ -781,7 +781,7 @@ The ban belongs to the quoted words, so `yul` goes inside the cite; in front, it
 
 **`zaol`** is a route: the first item is where the order starts. **`zol`** would rank Azozon above Ahelan.
 
-**Rule:** [Route (**`ao`**)](rank-joins.md#route-ao)
+**Rule:** [In order: *A, then B*](rank-joins.md#route-ao)
 :::
 
 #### Fix it {#intermediate-fix-it}
@@ -821,5 +821,5 @@ z-speaker | th-DECISION-temporary | v-pay
 
 With **`thogel`**, I have decided for good to pay. With **`thoger`**, I have decided to pay only for now.
 
-**Rule:** [Decision (revisability)](want-and-decide.md#decision)
+**Rule:** [Saying you have decided, and how final it is](want-and-decide.md#decision)
 :::

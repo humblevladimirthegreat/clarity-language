@@ -44,7 +44,7 @@ Change only the first letter. The marker and digits stay the same, and on these 
 | `/d/` | direct object | a code being dialed or a value being stated |
 | `/b/` | extra noun | *of size 12*; host *on* + a label |
 
-### Marker vowel (referential identity) {#marker-vowel-referential-identity}
+### Count, rank, or label: the marker vowel {#marker-vowel-referential-identity}
 
 English uses different words for a count (*three*), a rank (*third*), and a code you read digit by digit (*room 12*). In Ageben the vowel of the number marker, the marker vowel V, makes that choice. Beginner already used `ra` (*how many*) and `ro` (*which place from the start*); the full set has four, and on a count the vowel also gives the sign of the whole number. So the same digits read as an amount, a place in order, or a label, depending on one vowel.
 

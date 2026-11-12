@@ -303,15 +303,15 @@ English names many kinds with a number idea in front: *quasi-friend*, *proto-lov
 | English itch | Ageben job | Teach |
 |--------------|------------|-------|
 | *quasi-* / *as-if* (*quasi-friend*, *quasi-official*) | numeric prefix **`ruwux…`**: `zruwuxahuyayel`, `gruwuxezazem` | [Quasi](/numeric-derivation#quasi) |
-| *the essence of* / *pure* (*essence of love*) | numeric prefix **`rawax…`**: `zrawaxolamal` | [Limit / polarity / stage](/numeric-derivation#limit-polarity-stage) |
-| *a grain of* / *a seed of* (*a grain of love*) | numeric prefix **`rawux…`**: `zrawuxolamal` | [Limit / polarity / stage](/numeric-derivation#limit-polarity-stage) |
-| *proto-* / *in its beginning form* | numeric prefix **`rowux…`**: `zrowuxolamal` | [Limit / polarity / stage](/numeric-derivation#limit-polarity-stage) |
-| *multi-* / *poly-* (*multi-faith*) | numeric prefix **`rax…`**: `zraxehaham` | [Limit / polarity / stage](/numeric-derivation#limit-polarity-stage) |
-| *de-* / *un-* on a kind (*to de-tale*) | numeric prefix **`rux…`**: `vruxonom` | [Limit / polarity / stage](/numeric-derivation#limit-polarity-stage) |
-| *uni-* / *bi-* / *tri-* / *three-part* / *mutual* | numeric prefix **`rabax…`** / **`radox…`** / **`ragex…`**: `zrabaxadowem`, `gradoxebewom`, `zragexezuyol` | [Scalar digit morphs](/numeric-derivation#scalar-digit-morphs) |
-| *one-sided* / *non-mutual* | numeric prefix **`rudox…`**: `grudoxebewom` | [Scalar digit morphs](/numeric-derivation#scalar-digit-morphs) |
-| *first-class* / *secondary* / *third-order* | numeric prefix **`robax…`** / **`rodox…`** / **`rogex…`**: `drobaxobewom`, `grodoxumunom`, `zrogexobevam` | [Ordinal digit morphs](/numeric-derivation#ordinal-digit-morphs) |
-| *null* / *to zero out* a kind (*null the score*) | numeric prefix **`ramox…`**: `vramoxodoram` | [Null / anti-null](/numeric-derivation#null-anti-null) |
+| *the essence of* / *pure* (*essence of love*) | numeric prefix **`rawax…`**: `zrawaxolamal` | [A kind at its limit](/numeric-derivation#limit-polarity-stage) |
+| *a grain of* / *a seed of* (*a grain of love*) | numeric prefix **`rawux…`**: `zrawuxolamal` | [A kind at its limit](/numeric-derivation#limit-polarity-stage) |
+| *proto-* / *in its beginning form* | numeric prefix **`rowux…`**: `zrowuxolamal` | [A kind at its limit](/numeric-derivation#limit-polarity-stage) |
+| *multi-* / *poly-* (*multi-faith*) | numeric prefix **`rax…`**: `zraxehaham` | [A kind at its limit](/numeric-derivation#limit-polarity-stage) |
+| *de-* / *un-* on a kind (*to de-tale*) | numeric prefix **`rux…`**: `vruxonom` | [A kind at its limit](/numeric-derivation#limit-polarity-stage) |
+| *uni-* / *bi-* / *tri-* / *three-part* / *mutual* | numeric prefix **`rabax…`** / **`radox…`** / **`ragex…`**: `zrabaxadowem`, `gradoxebewom`, `zragexezuyol` | [How many parts the kind has](/numeric-derivation#scalar-digit-morphs) |
+| *one-sided* / *non-mutual* | numeric prefix **`rudox…`**: `grudoxebewom` | [How many parts the kind has](/numeric-derivation#scalar-digit-morphs) |
+| *first-class* / *secondary* / *third-order* | numeric prefix **`robax…`** / **`rodox…`** / **`rogex…`**: `drobaxobewom`, `grodoxumunom`, `zrogexobevam` | [Which rank the kind holds](/numeric-derivation#ordinal-digit-morphs) |
+| *null* / *to zero out* a kind (*null the score*) | numeric prefix **`ramox…`**: `vramoxodoram` | [Wiped clean or left over](/numeric-derivation#null-anti-null) |
 | *specimen #1*, *room-12* as a kind | numeric prefix **`rebax…`** / **`rebadox…`**: `zrebaxudewal`, `zrebadoxohehal` | [Label / code sense](/numeric-derivation#label-code-sense) |
 | *mega-* / *a gazillion-* (*a gazillion-mess*) | numeric prefix **`rabawax…`**: `zrabawaxazulam` | [Hyperbole](/numeric-derivation#hyperbole-sense) |
 | *roughly three-part* | `mx` for the seam: `dragemxezuyol` | [Numeric prefixes](/numeric-derivation#numeric-derivation) |

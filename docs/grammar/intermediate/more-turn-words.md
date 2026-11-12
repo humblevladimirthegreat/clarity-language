@@ -161,7 +161,7 @@ A question can also sound like a command or a prohibition. It still asks, and th
 
 `yel yol` and the quiz both insist on an answer. In the quiz you know it already; here you do not.
 
-### Commands to be ADJ {#command-property}
+### Commands to be in a state (*Be careful!*) {#command-property}
 
 English commands can ask for a state as well as an act: *Be careful!*, *Be quiet!* Put the [command word](/speech-moves#speech-act-beginner) `yol` before a `/ɡ/` word with no verb. The listener is the unstated subject, and the pair reads *be ADJ!* (*be* plus the adjective), as a [verbless statement](/predication#classification-property) does.
 

@@ -44,7 +44,7 @@ An `m` before the `x` makes the number approximate:
 
 A body with digits has one digit only: `+N` / `-N` (how many parts) or `#N` (which rank). The marker gives the spoken vowel (`ra` / `ru` / `ro`). A numeric-prefix noun takes plural `-x` at the end as usual: `zragexezuyolx` ([plurality](/plurality)). It is a content word, so it stresses its first syllable (*zra* in `zragexezuyol`), not the last digit as a free number does. In a hosted `bl-` word the `l` is syllabic before `r`, as on a hosted number: `blragexezuyol`.
 
-### Limit / polarity / stage (digitless) {#limit-polarity-stage}
+### A kind at its limit: essence, grain, first or final form {#limit-polarity-stage}
 
 English names a kind at a limit: its essence, its smallest grain, its absence, its first or final form, many of it, or its undoing (*essence of love*, *multi-faith*). In Ageben the digitless number words (plus or minus infinity, first or last place, *more than one*) do this as prefixes. Before a root, they say what the kind is, not how many there are.
 
@@ -104,7 +104,7 @@ For *quasi-* with a number of parts (*as if one*, *as if a pair*), write **`-e-N
 
 For a zero-shaped quasi, use `-0xROOT` (anti-null) or `-0e-xROOT` (micro-residue). The role letters work as in the quasi table above.
 
-### Scalar digit morphs (`+N` / `-N`)
+### How many parts the kind has (`+N` / `-N`) {#scalar-digit-morphs-n-n}
 <a id="scalar-digit-morphs"></a>
 
 English *a pair of…*, *three-part…*, *primary…* can say how many parts the kind has, not how many things the sentence is about. Write a one-digit plus body before the `x`: spoken, the marker then the digit (`ra`+`ba` for `+1`, spelled as in `zrabaxadowem`). A minus body `-N` (including `-0`, spoken `ru`+digit) is the **privative**: the kind lacks or undoes the `+N` structure (*one-sided* instead of *mutual*). The tables write the bodies in shorthand (`+N` / `-N`).
@@ -130,7 +130,7 @@ English *a pair of…*, *three-part…*, *primary…* can say how many parts the
 
 **Not the same job as:** a rank body `#N` (*which order*). `+N` is *how many parts*.
 
-#### Null / anti-null by PoS (`+0` / `-0`)
+#### Wiped clean or left over, by role letter (`+0` / `-0`) {#null-anti-null-by-pos-0-0}
 <a id="null-anti-null"></a>
 
 English can call a thing wiped clean (*a wiped debt*) or stubbornly left over (*a debt that won’t zero*). A `+0` body treats ROOT as resettable or emptied; a `-0` body treats ROOT as resisting emptying (insistent residue). The role letter says *what kind of thing* is emptied or resists. `-exROOT` is *void of ROOT* (no such kind); `+0xROOT` is a resettable instance of that kind.
@@ -186,7 +186,7 @@ On free numbers, bare `grawamol` / `Ne0` instead [assert order of magnitude 0](/
 
 On a free number, `±0e-1` is an amount. Before a root, the same bodies wipe the kind, or leave a residue of it, at that scale.
 
-#### Zero-exp prefix by PoS
+#### Wiped out entirely, by role letter {#zero-exp-prefix-by-pos}
 
 | PoS | `+0ex…` | Examples |
 |-----|---------|----------|
@@ -199,7 +199,7 @@ On a free number, `±0e-1` is an amount. Before a root, the same bodies wipe the
 
 `-0e` / `-0e-` / `±0e-1` take the role letters the same way (absolute residue / micro-residue / engineering null·residue at order of magnitude −1). With no root: `vramowal` *annihilate*; `gramowal` absolute-zero amount; `g+0e-1` / `g-0e-1` engineering null / residue: [Zero × exponent](special-values.md#zero-exponent).
 
-#### Rank-annihilated morph (`#0e`)
+#### A wiped rank: a disqualified kind (`#0e`) {#rank-annihilated-morph-0e}
 <a id="rank-annihilated-morph"></a>
 
 A rank body can be wiped too, which makes a disqualified kind.
@@ -210,7 +210,7 @@ A rank body can be wiped too, which makes a disqualified kind.
 
 `#0e` vs `#0`: annihilated place vs zeroth-order rung. `#0e` vs `+0e`: rank wipe vs kind total-null. Free `#e0` is [current generation](generations.md#ordinal-generation). Same role-letter framing as other ordinal morphs (`/z/` disqualified kind, `/v/` disqualify-as-kind, `/y/` *Disqualified!*, …).
 
-### Ordinal digit morphs (`#N`)
+### Which rank the kind holds (`#N`) {#ordinal-digit-morphs-n}
 <a id="ordinal-digit-morphs"></a>
 
 English *first draft*, *secondary adventure*, *third-order problem* can name which rank the kind holds, not which item is Nth in a list. Write a one-digit rank body before the `x`: shorthand **`#NxROOT`**, spoken `ro` + digit, spelled as in `drobaxobewom`. A free `g#N` after a noun picks the Nth item in a series instead.
@@ -233,7 +233,7 @@ English *first draft*, *secondary adventure*, *third-order problem* can name whi
 
 **Not the same job as:** `+1` / `+2` (singleton / dual). `#1` is premiere-place; `#2` is secondary. `#0` is a zeroth rung; `#0e` is rank annihilated / disqualified.
 
-#### Ordinal morph by PoS
+#### Rank prefixes by role letter {#ordinal-morph-by-pos}
 
 | PoS | `#Nx…` | Examples |
 |-----|--------|----------|

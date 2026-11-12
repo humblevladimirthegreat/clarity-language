@@ -4,7 +4,7 @@ band: advanced
 
 # Generations {#generations}
 
-### Ordinal generation: digitful exponent on **`#`** / **`#-`** {#ordinal-generation}
+### Counting inside one level of a family or outline {#ordinal-generation}
 <a id="generation-ordinal"></a>
 
 English counts inside one level of a family or an outline: *the third grandchild*, *the 3rd sub-point*. In Ageben you put an exponent with digits on a rank number (forward `#` / `ro` or end-relative `#-` / `ruo`). There it is not a power of ten: it says how many generations away from the person, version, or outline point in focus. One number word then says both which level you mean and which member of it.

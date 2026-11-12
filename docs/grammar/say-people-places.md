@@ -1071,7 +1071,7 @@ Examples:
 
 ## Talk moves and quoting {#talk-quoting}
 
-### Arrow roots as talk-moves
+### Compass directions as moves in the talk {#arrow-roots-as-talk-moves}
 
 **Needs:** [Arrow rose](/roles#arrow-rose) · [Linking sentences](/sentence-linkers#sentence-linkers)
 

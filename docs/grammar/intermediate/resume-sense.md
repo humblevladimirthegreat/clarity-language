@@ -6,7 +6,7 @@ band: intermediate
 
 These sections take the whole-stem resume from Beginner further: the English it stands for in each role, how to pin one sense of a root that has two, and how to change only the role letter to recast the same thing as a doing, a kind, or a manner.
 
-### How English approximates **-r** {#how-english-approximates-r}
+### English words for *the same one again* {#how-english-approximates-r}
 
 English picks a different word for *the same one again* in each role: *he* for a subject, *him* for an object, *do so* for an action. Ageben writes whole-stem `-r` in the same role as the earlier word, keeping its role letter, so one ending covers all of these. Use the table to find the English for a resume in each role:
 
@@ -48,7 +48,7 @@ For English *too* / *also*, resume the action. `/v/` `-r` is *the same action ag
 
 **Compare with:** English *that* pointing at a quoted title, proverb, or aside uses a [role pointer](/pronouns#role-pointers) (`dwuder`, *that quote*), not whole-stem `-r`.
 
-### Resume one sense (**-rl** / **-rm**) {#resume-sense}
+### Referring back to one sense of a root {#resume-sense}
 
 To refer back to one sense of a root that has two, pin the sense on the resume. Many roots carry both a concrete sense on `-l` and an abstract sense on `-m` (`odozel` *dog*, `odozem` *loyalty*), and both share one whole stem, so plain `-r` takes the most recent word with that stem, whichever sense it had. When both senses are in the conversation, `-rl` resumes the concrete sense and `-rm` the abstract sense. Everything else about a resume stays the same: the role letter, the whole stem, and the most recent match. You can then reach back to *the dog* even after *loyalty* came up.
 

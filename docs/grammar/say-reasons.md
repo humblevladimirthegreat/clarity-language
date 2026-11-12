@@ -24,7 +24,7 @@ English links a time, a contrast or a reason to a claim with one word, such as *
 | *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xahom`** ([continue](/speech-moves#continue-x)) |
 | *it follows that* / *necessarily, then* (a deduction from the last sentence) | **`xahol`** ([sentence linkers](/sentence-linkers#sentence-linkers)) |
 | *that doesn't follow* / *non sequitur* | **`thanam thohem thul blarl`** ([arguments](#arguments)) |
-| *thus* (*in this way*) | the same adverb again: `/h/` with `-r` ([how English approximates -r](/resume-sense#how-english-approximates-r)) |
+| *thus* (*in this way*) | the same adverb again: `/h/` with `-r` ([English words for *the same one again*](/resume-sense#how-english-approximates-r)) |
 | *the fact that* / *the idea that* / *it is a fact that* | a predicate with a `/z/` stand-in: `gunugem zarl zazozon vowurol.`; or two sentences, then `zarth` ([stand-in vowels](/stand-in-vowels#stand-in)): `zazozon vowurol. zarth gunugem.` A clause never modifies a noun |
 | *due to* / *owing to* / *because of* (NP) | **`thahum`** + `/b/` noun (`thahum blerulal`) |
 | *not because* (clause) | **`thahum thul blarl`** ([stance join before `blarl`](/verb-and-stance-joins#stance-join-before-barl)) |
@@ -336,7 +336,7 @@ English *biased* says a view may be bent by what the holder wants from it. Agebe
 
 **Compare with:** *I think* as a guess is [MAY](/knowing#may) on the claim. The motive says why the view is held, not how sure you are.
 
-### Factivity (`if` vs `because`)
+### Whether the *if* or *because* part is a fact {#factivity-if-vs-because}
 <a id="factivity"></a>
 
 **Needs:** [If](/causation#if) · [Because](/because-and-iff#only-because) · [MAY](/knowing#may) · [*as-of*](/as-of#as-of) · [RESIDUE](/residue-and-former#residue) · [forecasts](/evidentiality#forecast)
@@ -383,7 +383,7 @@ English *If Alazun swam, Azozon would walk* (past-tense *if*) says the condition
 >
 > "If Alazun swam, Azozon would walk." (Alazun swimming is unlikely)
 
-When the condition is known to be false (*If Alazun had left…*), keep the bookmark recipe from [factivity](#factivity) and add *suppose* **`theyur`** inside the dependent. That marks the departure as imagined, not something that happened.
+When the condition is known to be false (*If Alazun had left…*), keep the bookmark recipe from [whether the *if* or *because* part is a fact](#factivity) and add *suppose* **`theyur`** inside the dependent. That marks the departure as imagined, not something that happened.
 
 > `zohel galewul haram theyom blral hunom blarl zalazun theyur vudurul.`
 >
@@ -391,7 +391,7 @@ When the condition is known to be false (*If Alazun had left…*), keep the book
 >
 > "If Alazun had left, the door would still be locked." (Alazun did not leave)
 
-#### Epistemic *because* {#epistemic-because}
+#### *Because* for how you know {#epistemic-because}
 
 English often uses *because* for *speaker grounds* (*it rained, because the street is wet*): Q is how you know P, not what made P happen. Put the inferring or pattern channel on the main sentence and hang the grounds on it with **`blarl`** ([evidence clause](/evidentiality#evidence-clause)). The channel's ending grades the grounds.
 
@@ -437,7 +437,7 @@ An argument has three parts, and each has its own slot. The *link* between premi
 >
 > "If Azozon is asleep, it follows that Azozon isn't walking." (I'm only saying the two can't both hold)
 
-**Compare with:** *it obviously follows* from strong clues (*obviously, it rained*) is CLUES (`theyol`), not a deduction: the clues make it likely, not certain. *Because* in the sense of what made it happen is `thahum` ([factivity](#factivity)).
+**Compare with:** *it obviously follows* from strong clues (*obviously, it rained*) is CLUES (`theyol`), not a deduction: the clues make it likely, not certain. *Because* in the sense of what made it happen is `thahum` ([whether the *if* or *because* part is a fact](#factivity)).
 
 To talk *about* an argument rather than make one, use the dictionary words. Each is *reason* (`ebobe`, as in `zebobem` *the faculty of reason*) joined to a second root ([words you look up](/compounds#dictionary-compounds)).
 
@@ -458,7 +458,7 @@ To talk *about* an argument rather than make one, use the dictionary words. Each
 
 A word about the argument does not make it. *The argument is valid* names the link without stating it; to give the link itself, use `thanam thohem blarl` from the table above. *A premise* says nothing on whether you grant it; *an assumption* you only toy with is `theyur` ([reason nouns](#reason-nouns)). *Conclusion* in the sense of *the end* of a talk or story is `egoham`, not `ebobemuvahul`.
 
-### Stacks (evidentiality, CAUSE, restrictors)
+### Adding how you know, how often, or how it works {#stacks-evidentiality-cause-restrictors}
 <a id="stacks"></a>
 
 **Needs:** [If](/causation#if) · [evidentiality](/evidentiality#evidentiality) · [restrictors](/restrictors) · [CAUSE](/cause#cause)
@@ -997,7 +997,7 @@ Put an *act* after the hinge (`barl zalazun vezuyol`), not the person. A feeling
 
 ### Curious, confused, bored, awed, surprised {#understanding-feelings}
 
-**Needs:** [Sake inventory](/sakes#sake-inventory) · [A feeling about a thing](/how-you-feel#feeling-about-a-thing) · [Six more urges](/feelings#emotion-compose) · [How long the feeling lasts](/feelings#feeling-duration) · [Feeling with no object](/how-you-feel#feeling-no-object) · [Mirative](/mirative#mirative)
+**Needs:** [Sake inventory](/sakes#sake-inventory) · [A feeling about a thing](/how-you-feel#feeling-about-a-thing) · [Six more urges](/feelings#emotion-compose) · [How long the feeling lasts](/feelings#feeling-duration) · [Feeling with no object](/how-you-feel#feeling-no-object) · [It turns out](/mirative#mirative)
 
 Most of these feelings are about the *understanding* sake: whether something makes sense. Surprise is different. It says the news ran against what you expected, so it is the [mirative](/mirative#mirative), and a sake word says how the news lands.
 

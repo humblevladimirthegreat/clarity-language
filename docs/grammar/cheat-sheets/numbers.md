@@ -168,7 +168,7 @@ In casual talk a stretch may set an ambient order of magnitude, so bare numbers 
 
 <PageBreak />
 
-## The number in another slot {#slots}
+## The number in another role {#slots}
 
 The role letter picks the use; the marker still says amount, rank, or code. Only the markers and writing are listed here, because every row is the same shape: `v`, `h`, `y`, `x`, `w`, `th` + the number.
 

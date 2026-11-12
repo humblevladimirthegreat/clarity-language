@@ -6,7 +6,7 @@ band: intermediate
 
 English *In fact*, *for example*, *among other things*, and *anyway* tie a sentence to what was said before. At the front of a sentence, Ageben uses the same hook spellings as everyday *Additionally* and *Instead* ([hooks](/hooks)). The first section gives them `-m`, for one sentence among several you could say, and `-r`, to point back to an earlier stretch of talk. The second adds two-vowel hooks for *In fact* and *For example*, and the third shows the other places in a sentence where these hooks can sit.
 
-### Discourse {#discourse}
+### Opening a sentence with a hook {#discourse}
 
 At the front of a sentence, `-m` says this sentence is one of several you could say there: one more point among others, one way to reword, one possible replacement, one exception among others.
 
@@ -61,7 +61,7 @@ Opening with **`ael …`** gives English *For example, …*: this sentence is on
 
 **Compare with:** `al …` *Additionally* adds a separate point next to the last one; `ael …` gives an instance of it. Inside a clause, *such as* is `am` (*including, and maybe more*).
 
-### Discourse placements {#discourse-placements}
+### Other places these hooks can sit {#discourse-placements}
 
 Beginner put a discourse hook at the front of a plain statement. It can sit in three more places, with the same spellings and vowel meanings:
 

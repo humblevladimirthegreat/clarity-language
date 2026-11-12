@@ -33,7 +33,7 @@ You already say what kind something is by putting the kind on `/ɡ/` after the n
 
 **Related form:** *not a dog* uses [negation `u`](/joins#negation-u) (`gul`).
 
-### **IDENTITY** endings
+### The same, or basically the same {#identity-endings}
 
 To say two names pick out the same person, Beginner used `gorel` (*is the same as*) followed by a `/b/` word for the other label. With the ending `-m` instead, **`gorem`** says they are basically the same, the same for practical purposes, and leaves the match open. Use `-l` when you claim the match outright, and `-m` when you mean only *basically*.
 

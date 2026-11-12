@@ -149,7 +149,7 @@ The reply to a fill-ask is the fill as a [citation](/word-endings#citation-forms
 
 ### Fill-ask by vowel and count {#arity}
 
-The blank `-r` takes a vowel; the count is how many items you listed before it ([fill-ask arity](/fill-ask-roles#fill-ask-arity)).
+The blank `-r` takes a vowel; the count is how many items you listed before it ([fill-ask vowels and how many items you list](/fill-ask-roles#fill-ask-arity)).
 
 <!-- cheat-sheet: talking -->
 | Items listed | `…ar` | `…er` | `…or` | `…ur` | Stage |

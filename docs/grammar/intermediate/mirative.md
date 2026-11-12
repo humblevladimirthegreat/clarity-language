@@ -4,7 +4,7 @@ band: intermediate
 
 # It turns out {#it-turns-out}
 
-### Mirative (`themem`) {#mirative}
+### *It turns out* (`themem`) {#mirative}
 
 English *it turns out*, *to my surprise*, and *so … after all* say the news ran against what you expected. Put the `/th/` word **`themem`**, called **MIRATIVE**, on the clause. It is not a channel: it says nothing about how you know, so add a [channel](evidentiality.md#evidentiality) beside it when you want to say that too.
 

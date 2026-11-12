@@ -6,7 +6,7 @@ band: intermediate
 
 English *less than*, *the second biggest*, *more often than*, *earlier than*, *the more … the more*, and *twice as … as* rank things on more kinds of scale than a plain quality: how, how much, how often, when, and by how many times. Each one reuses the rank join you already know and changes the words around it, so once you can say *more … than* you can rank on any of these scales.
 
-### Full comparative arity
+### *Less than*, *the least*, and *no biggest* {#full-comparative-arity}
 <a id="comparative-arity"></a>
 
 You have already ranked two names with `zol` (*more … than*) and picked out one name as the top (*the …-est*). The same pattern, names, then a rank join, then the shared adjective that names the scale, also works with reverse rank **`uo`** (*less … than* / *the least*) and with zero names. That gives you *less than*, *the least*, and *there is no biggest*.
@@ -150,7 +150,7 @@ English *arrives earlier than* ranks when something happens. Write digitless **`
 >
 > "Azozon arrives earlier than Alazun."
 
-### Covarying clauses (*the more …, the more …*) {#covarying}
+### *The more …, the more …*: two amounts rise together {#covarying}
 
 English *the more Azozon walks, the more Alazun sleeps* says two amounts rise together. Put digitless `hral` (*multiple times*) or another amount word in each clause, and join the clauses with **`xoel`**. As with the [frequency scale](#frequency-scale), the equal-rank join turns each amount into a scale and says the two scales move in step.
 

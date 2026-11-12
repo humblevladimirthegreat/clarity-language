@@ -4,7 +4,7 @@ band: intermediate
 
 # Conversation length {#how-long-to-talk}
 
-### Conversation length (name **`x`** vowel) {#conversation-length}
+### Saying how long you can talk {#conversation-length}
 
 English *I can stay a while* or *I only have a minute* tells the other person how long you can talk. In Ageben, add `x` and one vowel before `-n` on a [greeting](/word-endings#greeting) (your own name with a period, `SELFn.`) or a [call](/speech-moves#vocative) (their name under `/y/`, `yalazun.`). At arrival, the vowel sets how long you expect the conversation to last. At departure, the same form says how soon you are leaving. The vowel is about the conversation, not a grade of the person.
 

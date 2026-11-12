@@ -4,7 +4,7 @@ band: advanced
 
 # Named phrases {#named-phrases}
 
-### Named phrase **`-n`**
+### A set phrase as one name (`-n`) {#named-phrase-n}
 <a id="named-list"></a>
 
 Some English lists are familiar set phrases, said as one unit: *Stop–Drop–Roll*, *bread and butter*. In Ageben, end the join of such a list with `-n` (under `/z/`, `/d/`, or `/b/`). The `-n` names the whole list as one title, the way it names a person, so the listener hears one familiar bundle, not an ordinary list of items. Members keep their usual endings unless a member is itself a name.

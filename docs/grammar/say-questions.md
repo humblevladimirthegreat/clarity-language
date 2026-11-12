@@ -156,7 +156,7 @@ English *by the way* adds a side remark, then goes back to the main point. Put a
 
 ## Offers and confirmations with joins {#join-questions}
 
-### Single-item and standalone inventory
+### Confirming or offering a choice (*How about X?*) {#single-item-and-standalone-inventory}
 <a id="single-item-standalone-inventory"></a>
 
 **Needs:** [Ask](/questions#question) · [Fill-ask](/questions#fill-ask-r) · [How many items](/joins#standalone-phrase)

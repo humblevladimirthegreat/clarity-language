@@ -9,7 +9,7 @@ outline: false
 
 A quick look at [dependents](/dependents) and [relations](/relations). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
-## A sentence that fills a slot {#dependents}
+## A sentence that fills a role {#dependents}
 
 Ageben has no *who / that / which*. For a noun, write [two sentences](/dependents#which-noun). For a whole clause in a role, end the main sentence on a **stand-in** and write the clause right after it. Do not open that clause with `/y/`; it names its own `/z/`.
 

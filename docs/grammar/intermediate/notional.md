@@ -6,7 +6,7 @@ band: intermediate
 
 English *as if*, *imagine*, and *suppose* talk about a scene that is only imagined. Ageben keeps the ordinary verb and adds NOTIONAL. Its ending says what the imagining is for: a rehearsal, a plain picture, or a passing *what if*.
 
-### Notional (as-if framing) {#notional-as-if-framing}
+### Imagining a scene (*as if*) {#notional-as-if-framing}
 <a id="notional"></a>
 <a id="notional-mood"></a>
 

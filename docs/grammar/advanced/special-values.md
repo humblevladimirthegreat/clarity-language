@@ -234,7 +234,7 @@ Bare `grawamol` is the [ones decade band](/digitless-exponents#bare-oom-bands) (
 | **`h-0e`** | with irreducible residual repetition |
 | **`h-0e-1`** | residual repetition **at OoM −1** |
 
-The ones band and the asserting `e0` work as verb, adverb, interjection, and discourse in the ordinary bare-OoM way (`Ne0`, `vrawamol`, `h+3e0`, …): [Bare OoM](/digitless-exponents#bare-oom-bands). Soft `-m` hedges them (*almost annihilate*, *almost deci-null*, …).
+The ones band and the asserting `e0` work as verb, adverb, interjection, and discourse in the ordinary bare-OoM way (`Ne0`, `vrawamol`, `h+3e0`, …): [A size without a count](/digitless-exponents#bare-oom-bands). Soft `-m` hedges them (*almost annihilate*, *almost deci-null*, …).
 
 #### Number as interjection {#zero-exponent-number-as-interjection}
 

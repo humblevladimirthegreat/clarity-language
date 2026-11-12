@@ -234,5 +234,5 @@ z-doorbell
 - `x` at the start of a word (keep going): [Continue (`/x/`): keep the same speech move](speech-moves.md#continue-x)
 - How `x` sits in the word shape: [Phonotactics (word shape)](/phonotactics#phonotactics)
 - [Ability and incapability](can-and-cant.md#ability) / [Sakes](sakes.md) / [Role compounds](roles.md) / [Numeric prefixes](/numeric-derivation)
-- Conversation length: [name `x` vowel](/conversation-length#conversation-length); bare hello: [Greeting](word-endings.md#greeting)
+- Conversation length: [saying how long you can talk](/conversation-length#conversation-length); bare hello: [Greeting](word-endings.md#greeting)
 - Extra-noun fuse on a citation: [Hook compounds (cite + extra-noun hook)](/hook-compounds#hook-compounds)
