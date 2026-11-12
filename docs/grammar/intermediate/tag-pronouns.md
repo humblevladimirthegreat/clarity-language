@@ -6,17 +6,21 @@ band: intermediate
 
 ### Tag pronouns {#tag-pronouns}
 
-English sometimes labels people to keep them apart: *call the first one A*, *suppose A tells O*. A **tag** is that label. You choose it, and it stays on the same referent however many others come and go. Write the role letter, **`w`**, a tag vowel, and an ending. The four vowels are four tags, named by the vowel's [letter name](letter-names.md#letter-names): A, O, E, U. Assign **a** first, then **o**, then **e**, last **u**: the same assignment queue as [digit vowels](numbers.md#counts). That is a teaching default, not a ban: a skipped tag still names that letter. Tags do not measure how much person is in, and they are not how far a [role pointer](/pronouns#role-pointers) reaches. Roots start with a vowel, so a consonant right after the role letter, or after the `l` of a [hosted](/clause#extra-nouns) `bl-` word, is always a marker: `r` starts a [number word](/numbers), and `w` followed by vowels and an ending is a tag (`blwar` completes the word before it, with a [syllabic `l`](phonotactics.md#syllabic-l)). (cue: **w** ≈ *we call it*: the label you and the listener agree on)
+English sometimes labels people to keep them apart: *call the first one A*, *suppose A tells O*. A **tag** is that label. You choose it, and it stays on the same person or thing however many others come and go. Write the role letter, `w`, a tag vowel, and an ending. (cue: `w` ≈ *we call it*: the label you and the listener agree on)
+
+The four vowels are four tags, named by the vowel's [letter name](letter-names.md#letter-names): A, O, E, U. Assign `a` first, then `o`, then `e`, last `u`: the same assignment queue as [digit vowels](numbers.md#counts). That is a teaching default, not a ban: a skipped tag still names that letter. Tags do not measure how much person is in, and they are not how far a [role pointer](/pronouns#role-pointers) reaches.
+
+Roots start with a vowel, so a consonant right after the role letter, or after the `l` of a [hosted](/clause#extra-nouns) `bl-` word, is always a marker: `r` starts a [number word](/numbers), and `w` followed by vowels and an ending is a tag (`blwar` completes the word before it, with a [syllabic `l`](phonotactics.md#syllabic-l)).
 
 <!-- cheat-sheet: people-pointing -->
 | Ageben | Use | English |
 |--------|-----|---------|
-| `zodozel zwal` | a phrase, then tag + **-l** in the same role: assign | *a dog, call it A* |
-| `zwal` | tag + **-l** with no phrase before it | *someone, call them A*; *suppose A*: a placeholder, no one in particular |
-| `zwar` / `dwar` / `bwar` | tag + **-r**: the one tagged A, in that role | *A* |
-| `zwan` / `dwan` / `bwan` | tag + **-n**: a pseudonym, a real person whose name you keep back | *a friend, call her A* |
-| `zwam` / `dwam` / `bwam` | tag + **-m**: A's part in the latest event A took part in | *what A did* |
-| `zwarx` / `zwanx` | **-r** or **-n** + **-x** | *A and associates* |
+| `zodozel zwal` | a phrase, then tag + `-l` in the same role: assign | *a dog, call it A* |
+| `zwal` | tag + `-l` with no phrase before it | *someone, call them A*; *suppose A*: a placeholder, no one in particular |
+| `zwar` / `dwar` / `bwar` | tag + `-r`: the one tagged A, in that role | *A* |
+| `zwan` / `dwan` / `bwan` | tag + `-n`: a pseudonym, a real person whose name you keep back | *a friend, call her A* |
+| `zwam` / `dwam` / `bwam` | tag + `-m`: A's part in the latest event A took part in | *what A did* |
+| `zwarx` / `zwanx` | `-r` or `-n` + `-x` | *A and associates* |
 
 The other tags follow the same pattern: `zwol` / `zwor` / `zwom`, `zwel` / `zwer` / `zwem`, `zwul` / `zwur` / `zwum`.
 
@@ -28,13 +32,13 @@ The other tags follow the same pattern: `zwol` / `zwor` / `zwom`, `zwel` / `zwer
 
 The last `zwar` is still the dog, though the cat is the newer doer. `zwuzer` would pick the cat. The tag vowel is only the label you chose. How far a role pointer reaches is a different job.
 
-- **Assign.** A tag with **-l** right after a phrase in the same role names that phrase: a noun with its `/ɡ/` describers, a name, a resume, or a role pointer. With no phrase before it, it brings in someone new.
-- **Recall.** A tag with **-r** is the ordinary [whole-stem resume](/pronouns#resume-r): `zwar` resumes `zwal`, so it picks the latest word with that stem, which is the one that assigned the tag.
-- **Pseudonym.** A tag with **-n** names a real, specific person whose name you keep back. It names people only: for a company, a town, or a dog, use `zwal`. Alone, `zwan` brings that person in and calls them A while A is free, and recalls them while a `zwan` holds A. After a person phrase in the same role (`zeyel`, a kin or role noun), it assigns: `zeyel zwan` is *a person, call her A*. While a **-l** holds A, bare `zwan` is not a sentence, so it never reads as a recall of someone else; to move A to a real person, put a phrase before it. `zwar` recalls a pseudonym too. With **-x**, `zwanx` is that person and their associates, and works the same way: it brings them in while A is free, and recalls them while a `zwan` holds A. `zwan` is always the tag and never a name, as no root begins with `w`.
+- **Assign.** A tag with `-l` right after a phrase in the same role names that phrase: a noun with its `/ɡ/` describers, a name, a resume, or a role pointer. With no phrase before it, it brings in someone new.
+- **Recall.** A tag with `-r` is the ordinary [whole-stem resume](/pronouns#resume-r): `zwar` resumes `zwal`, so it picks the latest word with that stem, which is the one that assigned the tag.
+- **Pseudonym.** A tag with `-n` names a real, specific person whose name you keep back. It names people only: for a company, a town, or a dog, use `zwal`. Alone, `zwan` brings that person in and calls them A while A is free, and recalls them while a `zwan` holds A. After a person phrase in the same role (`zeyel`, a kin or role noun), it assigns: `zeyel zwan` is *a person, call her A*. While a `-l` holds A, bare `zwan` is not a sentence, so it never reads as a recall of someone else; to move A to a real person, put a phrase before it. `zwar` recalls a pseudonym too. With `-x`, `zwanx` is that person and their associates, and works the same way: it brings them in while A is free, and recalls them while a `zwan` holds A. `zwan` is always the tag and never a name, as no root begins with `w`.
 - **Reassign.** A newer `zwal`, or a phrase with `zwan`, takes A over from anyone.
 - **Tag later.** A tag can go on a resume: `dodozer dwol` is *the dog, call it O*.
 - **Lists.** Inside a [join fence](/joins#right-close), each tag names the item right before it: `zodozel zwal zogozel zwol zam` is *a dog (A) and a cat (O)*. After an ordinary list's join word, a tag names the whole group: `zodozel zogozel zam zwal` is *a dog and a cat, call them A*. A tag after a `zual`, `zuam`, or `zul` fence is different: it names each member in turn, and lasts only to the end of its sentence and the sentences its stand-ins point to. A new tag listed with something else goes first: `zwal zodozel zam` is *A and a dog*.
-- **No fallback.** An ordinary **-r** can mean the one you both know. A tag **-r** or **-m** with no assignment earlier in the conversation is not a sentence.
+- **No fallback.** An ordinary `-r` can mean the one you both know. A tag `-r` or `-m` with no assignment earlier in the conversation is not a sentence.
 
 With no phrase to tag, a tag holds a placeholder, as in *suppose A tells O*:
 
@@ -60,7 +64,7 @@ To begin with someone and the people around them, use `zwanx` on a free tag. The
 >
 > "A and associates walk. A sees a dog."
 
-A tag with **-m** is a [share](/pronouns#share): A's part in the latest earlier sentence where A filled a part, in whatever role. `zwuzem` picks the event by role; `zwam` picks it by who.
+A tag with `-m` is a [share](/pronouns#share): A's part in the latest earlier sentence where A filled a part, in whatever role. `zwuzem` picks the event by role; `zwam` picks it by who.
 
 > `zazozon zwal dalazun vabuvul. zahelan dwam vayebel.`
 >
@@ -68,21 +72,21 @@ A tag with **-m** is a [share](/pronouns#share): A's part in the latest earlier 
 >
 > "Azozon (A) punches Alazun. Ahelan sees what A did."
 
-Tags fill `/z/`, `/d/`, and `/b/` only. To call someone, use their name (`yalazun`). A word that is already a pronoun with one fixed form takes no tag: the [special pronouns](/pronouns#special-pronouns), the generic pronoun, a topic pronoun, and a tag itself. A resume and a role pointer do take one, because a tag keeps them fixed while they would otherwise follow the latest match. **-x** goes only on **-r** and **-n**: a share is a part, not a group of people, and to tag a group, tag its phrase (`zodozelx zwal`).
+Tags fill `/z/`, `/d/`, and `/b/` only. To call someone, use their name (`yalazun`). A word that is already a pronoun with one fixed form takes no tag: the [special pronouns](/pronouns#special-pronouns), the generic pronoun, a topic pronoun, and a tag itself. A resume and a role pointer do take one, because a tag keeps them fixed while they would otherwise follow the latest match. `-x` goes only on `-r` and `-n`: a share is a part, not a group of people, and to tag a group, tag its phrase (`zodozelx zwal`).
 
 A tag on a phrase, a list, or nothing lasts until it is assigned again or the conversation ends with a [goodbye](/word-endings#greeting). Distance does not blur it, and a [topic change](topic.md#topic-resets) does not reset it, so placeholder reasoning can run through other sentences, or a side topic, and back. A tag assigned inside a [dependent](/dependents#dependent-clauses) holds after it, because the dependent is the same talk. A quote keeps its own tags.
 
 #### Two tags at once {#tag-pairs}
 
-A stacked vowel names two tags together. There are six stacks, one for each pair of tags. The everyday pair is the first two: `zwaor` is *A and O*. The others are `zwaer` *A and E*, `zwoer` *O and E*, `zwuar` *U and A*, `zwuor` *U and O*, and `zwuer` *U and E*. Each pair has this one spelling, whichever tag you name first.
+To refer to two tagged people or things together (*A and O*) in one word, stack their two tag vowels. There are six stacks, one for each pair of tags. The everyday pair is the first two: `zwaor` is *A and O*. The others are `zwaer` *A and E*, `zwoer` *O and E*, `zwuar` *U and A*, `zwuor` *U and O*, and `zwuer` *U and E*. Each pair has this one spelling, whichever tag you name first.
 
 <!-- cheat-sheet: people-pointing -->
 | Ageben | Use | English |
 |--------|-----|---------|
-| `zwaor` | pair + **-r**: both, together | *A and O* |
-| `zwaon` | pair + **-n**: two pseudonyms. It brings both in while both tags are free, and recalls both while a `zwan` holds each | *A and O*, two real people |
-| `zwaom` | pair + **-m**: their parts in the latest earlier event both took part in | *what A and O did* |
-| `zwaorx` | pair **-r** + **-x** | *A, O, and associates* |
+| `zwaor` | pair + `-r`: both, together | *A and O* |
+| `zwaon` | pair + `-n`: two pseudonyms. It brings both in while both tags are free, and recalls both while a `zwan` holds each | *A and O*, two real people |
+| `zwaom` | pair + `-m`: their parts in the latest earlier event both took part in | *what A and O did* |
+| `zwaorx` | pair `-r` + `-x` | *A, O, and associates* |
 
 > `zodozel zwal zogozel zwol zam vowurol. zwaor veruvol. zazozon dwaom vayebel.`
 >
@@ -90,9 +94,9 @@ A stacked vowel names two tags together. There are six stacks, one for each pair
 >
 > "A dog (A) and a cat (O) walk. A and O run. Azozon sees what A and O did."
 
-On **-r** and **-m**, both tags must already be assigned. A pair never names a phrase: to tag two things, tag each one (`zodozel zwal zogozel zwol zam`), or tag the group as one (`zodozel zogozel zam zwal`).
+On `-r` and `-m`, both tags must already be assigned. A pair never names a phrase: to tag two things, tag each one (`zodozel zwal zogozel zwol zam`), or tag the group as one (`zodozel zogozel zam zwal`).
 
-On **-n**, a pair with both tags free brings in two real people and calls them by its two letters. Every pair does this, and each letter then recalls its own person:
+On `-n`, a pair with both tags free brings in two real people and calls them by its two letters. Every pair does this, and each letter then recalls its own person:
 
 > `zwaon vowurol. zwan dwon vayebel.`
 >
@@ -100,11 +104,11 @@ On **-n**, a pair with both tags free brings in two real people and calls them b
 >
 > "Two people, A and O, walk. A sees O."
 
-The two tags of a pair on **-n** must be in the same state: both free, so the pair brings two people in, or both held by a `zwan`, so it recalls them. With one held and one free it is not a sentence, because `zwaon` alone could not tell the listener whether A is someone already met. To add a new person beside one already named, recall the one and tag the other: `zwan zeyel zwon zam` is *A and a person, call her O*. While a **-l** holds either tag, a pair on **-n** is not a sentence either, like a bare `zwan`.
+The two tags of a pair on `-n` must be in the same state: both free, so the pair brings two people in, or both held by a `zwan`, so it recalls them. With one held and one free it is not a sentence, because `zwaon` alone could not tell the listener whether A is someone already met. To add a new person beside one already named, recall the one and tag the other: `zwan zeyel zwon zam` is *A and a person, call her O*. While a `-l` holds either tag, a pair on `-n` is not a sentence either, like a bare `zwan`.
 
 **Compare with:** `zwaor` says in one word what a list of `zwar` and `zwor` closed by `zam` says.
 
-**Compare with:** a name already resumes from anywhere (`zazozor`), and two people rarely share a name. Reach for a tag when the referent has no name, when its stem is a long compound, when two of the same kind are in play, or when a role pointer would pick someone newer.
+**Compare with:** a name already resumes from anywhere (`zazozor`), and two people rarely share a name. Reach for a tag when the person or thing has no name, when its stem is a long compound, when two of the same kind are in play, or when a role pointer would pick someone newer.
 
 ### Practice {#intermediate-practice}
 

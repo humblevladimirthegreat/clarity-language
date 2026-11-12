@@ -4,9 +4,11 @@ band: intermediate
 
 # Resume, further {#resume-further}
 
+These sections take the whole-stem resume from Beginner further: the English it stands for in each role, how to pin one sense of a root that has two, and how to change only the role letter to recast the same thing as a doing, a kind, or a manner.
+
 ### How English approximates **-r** {#how-english-approximates-r}
 
-Beginner used whole-stem **-r** in the same slot as the earlier word (*he sits*). The resume keeps the earlier word’s role letter, and the English for it depends on that slot:
+English picks a different word for *the same one again* in each role: *he* for a subject, *him* for an object, *do so* for an action. Ageben writes whole-stem `-r` in the same role as the earlier word, keeping its role letter, so one ending covers all of these. Use the table to find the English for a resume in each role:
 
 | Ageben | Use | English |
 |--------|-----|---------|
@@ -22,7 +24,7 @@ Beginner used whole-stem **-r** in the same slot as the earlier word (*he sits*)
 | `/y/` interjection … `-r` | same exclamation again | repeating that call-out |
 | `/x/` … `-r` after `/x/` | same linker again | *and so* / *likewise* |
 
-A few [closed roots](/pronouns#special-pronouns) give **-r** a meaning of their own: the light end of a scale (`thomar` *may, who knows*, `thagor` *plan-sketch*). On those, **-r** is that meaning, not a resume. Every other closed root resumes with **-r** like any content root, so `thoher` after `thohem` is the same condition again:
+A few [closed roots](/pronouns#special-pronouns) give `-r` a meaning of their own: the light end of a scale (`thomar` *may, who knows*, `thagor` *plan-sketch*). On those, `-r` is that meaning, not a resume. Every other closed root resumes with `-r` like any content root, so `thoher` after `thohem` is the same condition again:
 
 > `zalazun vowurol thohem blerulal. zazozon vowurol thoher.`
 >
@@ -30,7 +32,7 @@ A few [closed roots](/pronouns#special-pronouns) give **-r** a meaning of their 
 >
 > "Alazun walks if it rains. In that case, Azozon walks too."
 
-For English *too* / *also*, resume the action. `/v/` **-r** is *the same action again*, so a new subject with a resumed verb reads *does so too*. With the same subject, give the resumed verb a new object: *sees a dog too*.
+For English *too* / *also*, resume the action. `/v/` `-r` is *the same action again*, so a new subject with a resumed verb reads *does so too*. With the same subject, give the resumed verb a new object: *sees a dog too*.
 
 > `zalazun vowurol. zazozon vowuror.`
 >
@@ -44,11 +46,11 @@ For English *too* / *also*, resume the action. `/v/` **-r** is *the same action 
 >
 > "Azozon sees a cat. Azozon sees a dog too."
 
-**Compare with:** English *that* pointing at a quoted title, proverb, or aside uses a [role pointer](/pronouns#role-pointers) (`dwuder`, *that quote*), not whole-stem **-r**.
+**Compare with:** English *that* pointing at a quoted title, proverb, or aside uses a [role pointer](/pronouns#role-pointers) (`dwuder`, *that quote*), not whole-stem `-r`.
 
 ### Resume one sense (**-rl** / **-rm**) {#resume-sense}
 
-Many roots carry both a concrete **-l** sense and an abstract **-m** sense (`odozel` *dog*, `odozem` *loyalty*), and both share one whole stem. Plain **-r** takes the most recent word with that stem, whichever sense it had. When both senses are in the conversation, pin the one you mean: **-rl** resumes the concrete sense, **-rm** the abstract sense. Everything else about a resume stays the same: the role letter, the whole stem, and the most recent match.
+To refer back to one sense of a root that has two, pin the sense on the resume. Many roots carry both a concrete sense on `-l` and an abstract sense on `-m` (`odozel` *dog*, `odozem` *loyalty*), and both share one whole stem, so plain `-r` takes the most recent word with that stem, whichever sense it had. When both senses are in the conversation, `-rl` resumes the concrete sense and `-rm` the abstract sense. Everything else about a resume stays the same: the role letter, the whole stem, and the most recent match. You can then reach back to *the dog* even after *loyalty* came up.
 
 > `zazozon dodozel vayebel. zalazun dodozem vayebel. zazozon dodozerl vayebel. zalazun dodozerm vayebel.`
 >
@@ -56,13 +58,13 @@ Many roots carry both a concrete **-l** sense and an abstract **-m** sense (`odo
 >
 > "Azozon sees a dog. Alazun sees loyalty. Azozon sees the dog. Alazun sees the loyalty."
 
-Here plain `dodozer` would mean the loyalty, the most recent match. **-rl** reaches back past it to the dog.
+Here plain `dodozer` would mean the loyalty, the most recent match. `-rl` reaches back past it to the dog.
 
-Pinning is optional. Write plain **-r** when only one sense has come up, or when the latest one is the one you mean. A pinned resume with no earlier word of that sense falls back the way plain **-r** does: it means the one you both already know (`zodozerm` alone is *the loyalty* you both know). A name has no sense to pin, and only a content word or a compound takes **-rl** / **-rm**. A [stand-in](stand-in-vowels.md#stand-in) is a different word: it has a vowel and no root.
+Pinning is optional. Write plain `-r` when only one sense has come up, or when the latest one is the one you mean. A pinned resume with no earlier word of that sense falls back the way plain `-r` does: it means the one you both already know (`zodozerm` alone is *the loyalty* you both know). A name has no sense to pin, and only a content word or a compound takes `-rl` / `-rm`. A [stand-in](stand-in-vowels.md#stand-in) is a different word: it has a vowel and no root.
 
 ### Cross-role recast
 
-Sometimes you still mean that person or thing, but you need a **different** slot: the doing, the kind, the manner. Change only the first letter; keep the whole stem and **-r**. English then uses a longer phrase (*do the same with him*, *of that kind*) instead of *he* / *him*.
+Sometimes you still mean the same person or thing, but in a different role: as the doing, the kind, or the manner. To recast it, change only the first letter to the new role letter, and keep the whole stem and `-r`. English needs a longer phrase for this (*do the same with him*, *of that kind*) instead of *he* / *him*; the table below lists each recast and its English.
 
 > `zazozon vehohel. zalazun vazozor.`
 >
@@ -78,7 +80,7 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 | verb antecedent, `/h/` … `-r` | recast as manner | *by doing so* / *thereby* |
 | adjective antecedent, noun … `-r` | recast as entity | *the … one* / *that quality* |
 
-For English *one* (*a black one*, *the red one*) of a noun a [role pointer](/pronouns#a-new-one) reaches, write that pointer with **-l** and the new property on `/ɡ/`. For a noun no pointer reaches (a topic, a noun inside a quote, a hook landmark with no part consonant), write the unspecified **`dar`** *something* and resume the noun as a kind on `/ɡ/`, then add the new property. A resume on `/d/` would be the same dog; **`dar`** with a `/ɡ/` resume is another thing of the dog kind.
+For English *one* (*a black one*, *the red one*) of a noun a [role pointer](/pronouns#a-new-one) reaches, write that pointer with `-l` and the new property on `/ɡ/`. For a noun no pointer reaches (a topic, a noun inside a quote, a hook landmark with no part consonant), write the unspecified **`dar`** *something* and resume the noun as a kind on `/ɡ/`, then add the new property. A resume on `/d/` would be the same dog; `dar` with a `/ɡ/` resume is another thing of the dog kind.
 
 > `zazozon dodozel gerulol vayebel. zalazun dar godozer gubulel vayebel.`
 >

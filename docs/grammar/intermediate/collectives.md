@@ -4,10 +4,12 @@ band: intermediate
 
 # Groups, further {#groups-further}
 
+This page finishes the associative ending from Beginner. It covers who counts when you leave the group open; the same ending on a verb for one shared act, and on an adjective for a property of the whole group; how to say *each other*; how to address several people, in a sentence and in a call; and a table of every word that takes the ending.
+
 ### Associate-set resolution
 <a id="associate-resolution"></a>
 
-English *Azozon and them* does not say who belongs. Ageben **-x** is the same: who counts is **open** unless you say. When the list matters, name the members with a [join](/joins). When it does not, the listener guesses in this order: a group already named in the conversation, then the obvious group in the scene (this meeting, this household).
+English *Azozon and them* does not say who belongs. Ageben `-x` is the same: who counts is **open** unless you say. When the list matters, name the members with a [join](/joins). When it does not, the listener guesses in this order: a group already named in the conversation, then the obvious group in the scene (this meeting, this household).
 
 > `zazozonx vowurol.`
 >
@@ -15,7 +17,7 @@ English *Azozon and them* does not say who belongs. Ageben **-x** is the same: w
 >
 > "Azozon and associates walk."
 
-If the wrong reading would matter, say so. Use **`aya`** or a join for *you and I*. For *not you*, use speaker **-x**, or subtract the listener with the *except* [hook](/hooks) **`ul`**:
+If the wrong reading would matter, say so. Use `aya` or a join for *you and I*. For *not you*, use speaker `-x`, or subtract the listener with the *except* [hook](/hooks) `ul`:
 
 > `zazozonx ul zawan vowurol.`
 >
@@ -30,11 +32,11 @@ If the wrong reading would matter, say so. Use **`aya`** or a join for *you and 
 | Institutional frame | this meeting, this household | the scene’s default group |
 | Open | no further cue | the listener may or may not be in the set |
 
-**Compare with:** a [topic word](topic.md#topic-groups) takes **-x** like any noun (`xazozonx`, *now, about Azozon and associates*). The published [linkers](sentence-linkers.md#sentence-linkers) take no **-x**.
+**Compare with:** a [topic word](topic.md#topic-groups) takes `-x` like any noun (`xazozonx`, *now, about Azozon and associates*). The published [linkers](sentence-linkers.md#sentence-linkers) take no `-x`.
 
 ### Verbs (`/v/`): collective {#verbs-v}
 
-English *they walk* does not say whether it was one shared outing. Put **-x** on the **verb** (after its ending) when the event is **one shared act** (a **collective** act). Without verb **-x**, a group subject leaves open whether they acted together or separately, except with a counted object (below). Noun **-x** says **who** is in the group; verb **-x** says they did it as one act.
+English *they walk* does not say whether it was one shared outing. Put `-x` on the verb, after its ending, when the event is one shared act (a **collective** act). Without verb `-x`, a group subject leaves open whether they acted together or separately, except with a counted object (below). Noun `-x` says who is in the group; verb `-x` says they did it as one act.
 
 > `zazozonx vozuyelx.`
 >
@@ -45,9 +47,9 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 | Ageben | Use | English |
 |--------|-----|---------|
 | subject set + singular `/v/` | how they act is left open | *they walk* (together, separately, or don’t care) |
-| subject set + `/v/`…**-x** | collective: one shared act | *they walk as one outing* |
-| named person + `/v/`…**-x** | joint doing; unnamed others share the act | *Azozon sings jointly* (not a solo) |
-| group-kind singular (*the family*) + `/v/`…**-x** | the group acts as one unit | *the family walks as one unit* |
+| subject set + `/v/`…`-x` | collective: one shared act | *they walk as one outing* |
+| named person + `/v/`…`-x` | joint doing; unnamed others share the act | *Azozon sings jointly* (not a solo) |
+| group-kind singular (*the family*) + `/v/`…`-x` | the group acts as one unit | *the family walks as one unit* |
 
 <!-- cheat-sheet: people-pointing -->
 | Ageben | English |
@@ -57,9 +59,9 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 | `zazozon vozuyelx` | *Azozon sings jointly* (not a solo) |
 | `zuvayal vowurolx` | *the family walks as one unit* |
 
-A `/v/` join word is a verb too, so it takes the same **-x**: `zayan varx.` is *we do something together*, and `zayan valx.` is *we do nothing together*.
+A `/v/` join word is a verb too, so it takes the same `-x`: `zayan varx.` is *we do something together*, and `zayan valx.` is *we do nothing together*.
 
-**Counts with a set subject:** when a set subject has a counted object, a singular verb gives the count to **each member** (*apiece*). Verb **-x** makes the count the **total** for the shared act.
+**Counts with a set subject:** when a set subject has a counted object, a singular verb gives the count to each member (*apiece*). Verb `-x` makes the count the total for the shared act.
 
 > `zazozon zalazun zal dogozelx gragel vayebel.`
 >
@@ -73,13 +75,13 @@ A `/v/` join word is a verb too, so it takes the same **-x**: `zayan varx.` is *
 >
 > "Azozon and Alazun see three cats between them."
 
-**-rx** on `/v/` resumes a prior **collective** verb (*still as one shared act*).
+`-rx` on `/v/` resumes a prior collective verb (*still as one shared act*).
 
-**Related form:** *three times* uses a [number](/numbers) under `/h/`; *always* uses **`hual`**.
+**Related form:** *three times* uses a [number](/numbers) under `/h/`; *always* uses `hual`.
 
 ### Each other {#reciprocal}
 
-For *each other*, join the people in `/z/` and add **`hehom`** after the verb. The root is **`eho`** *reciprocity*: each one does it to the others. Do not write a resume in `/d/` (`dazozor` would just mean Azozon again).
+For *each other*, join the people in `/z/` and add **`hehom`** after the verb. The root is `eho` *reciprocity*: each one does it to the others. Do not write a resume in `/d/` (`dazozor` would just mean Azozon again).
 
 > `zazozon zalazun zal vayebel hehom.`
 >
@@ -87,14 +89,14 @@ For *each other*, join the people in `/z/` and add **`hehom`** after the verb. T
 >
 > "Azozon and Alazun see each other."
 
-With **-l**, **`hehol`** is strictly pairwise: every one of them does it to every other one. **-m** is the everyday *each other* / *one another*, where it only has to go both ways in general.
+With `-l`, **`hehol`** is strictly pairwise: every one of them does it to every other one. `-m` is the everyday *each other* / *one another*, where it only has to go both ways in general.
 
-**Compare with:** **`thehom blarl`** on `/th/` is *if and only if* ([causation](/causation#only-if)). On `/h/` with no `/b/`, the same root is *each other*.
+**Compare with:** `thehom blarl` on `/th/` is *if and only if* ([causation](/causation#only-if)). On `/h/` with no `/b/`, the same root is *each other*.
 
 ### Adjectives (`/ɡ/`): collective {#adjectives-g}
 <a id="collective"></a>
 
-English *the boxes are heavy* can mean each box or the pile. Put **-x** on the **adjective** (after its ending) when the property holds of the noun's group **as one unit**. Without **-x**, the adjective leaves open whether it holds of each member or of the whole pile. With **-x**, a pile can be heavy when no single box is.
+English *the boxes are heavy* can mean each box or the pile. Put `-x` on the adjective, after its ending, when the property holds of the noun's group as one unit. Without `-x`, the adjective leaves open whether it holds of each member or of the whole pile. With `-x`, a pile can be heavy when no single box is.
 
 > `zavonalx garolemx.`
 >
@@ -105,9 +107,9 @@ English *the boxes are heavy* can mean each box or the pile. Put **-x** on the *
 | Ageben | Use | English |
 |--------|-----|---------|
 | plural noun or list + singular `/ɡ/` | each member, or don’t care | *the boxes are heavy* |
-| plural noun or list + `/ɡ/`…**-x** | collective: the set as one pile | *heavy as a pile* |
+| plural noun or list + `/ɡ/`…`-x` | collective: the set as one pile | *heavy as a pile* |
 
-After nouns joined into a list with **`a`** ([joins](/joins)), one plain `/ɡ/` word applies to **each member**. With **-x**, it applies to the list **as one unit**.
+After nouns joined into a list with `a` ([joins](/joins)), one plain `/ɡ/` word applies to each member. With `-x`, it applies to the list as one unit.
 
 <!-- cheat-sheet: people-pointing -->
 | Ageben | English |
@@ -118,17 +120,17 @@ After nouns joined into a list with **`a`** ([joins](/joins)), one plain `/ɡ/` 
 | `zavonalx garolem` | *the file-boxes are heavy* (members / plain) |
 | `zavonalx garolemx` | *the file-boxes are heavy collectively* |
 
-**-rx** on `/ɡ/` resumes a prior **collective** adjective (*still collectively so*).
+`-rx` on `/ɡ/` resumes a prior collective adjective (*still collectively so*).
 
-For *red books*, put **-x** on the **noun** and leave the color word plain, since each book is red on its own. A character trait is likewise a plain `/ɡ/` word, plus **`hual`**.
+For *red books*, put `-x` on the noun and leave the color word plain, since each book is red on its own. A character trait is likewise a plain `/ɡ/` word, plus `hual`.
 
-**Related form:** who is in the set uses **-x** on the noun.
+**Related form:** who is in the set uses `-x` on the noun.
 
 **Compare with:** a scale in [comparatives](/comparatives) is one line, so that adjective is singular.
 
 ### Addressing several people
 
-English *you* does not say whether you are talking to one person or several. Ageben does: one addressee is **`awa`**, and the listener root plus associative **-x** (**`awanx`**) names everyone this turn addresses. That is everyone the turn’s calls named, plus anyone you were already addressing. Inclusive *shall we* is still **`aya`**, and soft **`zayam`** hedges whether you really share the act.
+English *you* does not say whether you are talking to one person or several. Ageben does: one addressee is `awa`, and the listener root plus associative `-x` (`awanx`) names everyone this turn addresses. That is everyone the turn’s calls named, plus anyone you were already addressing. Inclusive *shall we* is still `aya`, and soft **`zayam`** hedges whether you really share the act.
 
 > `zawanx vehohel.`
 >
@@ -136,11 +138,11 @@ English *you* does not say whether you are talking to one person or several. Age
 >
 > "You all sit."
 
-**Compare with:** *you and I* is **`aya`**. *Azozon and associates* is name…**-x** ([plurality](/plurality#associative)).
+**Compare with:** *you and I* is `aya`. *Azozon and associates* is name…`-x` ([plurality](/plurality#associative)).
 
 ### Vocatives (`/y/`)
 
-To call a group at the start of a turn, put **-x** on the call word (the vocative, `/y/`) after its ending, the same way you mark associates on a noun. That names who you are talking to as an associative group. A call ends in **-n** (or resumes with **-r**), so a kind you address takes **-n** as a title. An interjection (**-l** / **-m**) calls no one, so it takes no **-x**.
+To call a group at the start of a turn, put `-x` on the call word (the vocative, `/y/`) after its ending, the same way you mark associates on a noun. That names who you are talking to as an associative group. A call ends in `-n` (or resumes with `-r`), so a kind you address takes `-n` as a title. An interjection (`-l` / `-m`) calls no one, so it takes no `-x`.
 
 > `yogozenx.`
 >
@@ -150,25 +152,25 @@ To call a group at the start of a turn, put **-x** on the call word (the vocativ
 
 | Ageben | Use | English |
 |--------|-----|---------|
-| **-nx** | a name, or a kind as a title, and associates | *hey, kids*; *hey, Ahelan and associates* |
-| **-rx** | prior addressee and associates | *hey, you (that one) and associates* |
+| `-nx` | a name, or a kind as a title, and associates | *hey, kids*; *hey, Ahelan and associates* |
+| `-rx` | prior addressee and associates | *hey, you (that one) and associates* |
 | **`yawanx`** | current addressees, no name | *hey, you all* |
 
 ### Where **-x** sits
 
-Beginner already used **-x** on nouns and person-role specials. The rest of the words that take it:
+Beginner already used `-x` on nouns and on the special pronouns for the speaker and the listener (the person-role specials in the table). The rest of the words that take it:
 
 | Word | Use | English |
 |------|-----|---------|
-| nouns `/z/` `/d/` `/b/` | associative group (name / resume); indefinite group (kind **-lx** / **-mx**) | *Azozon and associates*; *some dogs* |
+| nouns `/z/` `/d/` `/b/` | associative group (name / resume); indefinite group (kind `-lx` / `-mx`) | *Azozon and associates*; *some dogs* |
 | vocatives `/y/` | group address | *hey, cats*; *hey, Ahelan and associates* |
 | person-role specials | speaker’s people / address set | *I and my people*; *you all* |
-| join **-rx** (`zarx`) | [unnamed group](/joins#unspecified-member-r-phrase) of members | *some ones* / *some of them* |
-| `/v/`…**-x** | collective event | one shared act |
-| `/ɡ/`…**-x** | collective property | the set as one pile |
-| inner words of a non-opaque span | group reference inside the span | **-x** on those inner words |
+| join `-rx` (`zarx`) | [unnamed group](/joins#unspecified-member-r-phrase) of members | *some ones* / *some of them* |
+| `/v/`…`-x` | collective event | one shared act |
+| `/ɡ/`…`-x` | collective property | the set as one pile |
+| inner words of a non-opaque span | group reference inside the span | `-x` on those inner words |
 
-**Related form:** a count uses a [number](/numbers) on `/ɡ/` (digitless **`gral`** = more than one; `gragel` = three). **-x** and a count can combine (`zogozelx gragel`).
+**Related form:** a count uses a [number](/numbers) on `/ɡ/` (digitless `gral` = more than one; `gragel` = three). `-x` and a count can combine (`zogozelx gragel`).
 
 ### Practice {#intermediate-practice}
 

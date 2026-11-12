@@ -73,9 +73,6 @@
   "intermediate/bars.md": {
     "bold-density": 2
   },
-  "intermediate/collectives.md": {
-    "bold-density": 4
-  },
   "intermediate/comparative-arity.md": {
     "bold-density": 1
   },
@@ -133,9 +130,6 @@
   "intermediate/residue-and-former.md": {
     "long-paragraph": 1
   },
-  "intermediate/resume-sense.md": {
-    "bold-density": 1
-  },
   "intermediate/role-parts.md": {
     "bold-density": 1
   },
@@ -144,10 +138,6 @@
   },
   "intermediate/spans-as-words.md": {
     "bold-density": 2
-  },
-  "intermediate/tag-pronouns.md": {
-    "bold-density": 1,
-    "long-paragraph": 1
   },
   "intermediate/universals-domains.md": {
     "long-paragraph": 1
