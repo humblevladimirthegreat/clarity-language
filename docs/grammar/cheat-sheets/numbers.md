@@ -172,7 +172,7 @@ In casual talk a stretch may set an ambient order of magnitude, so bare numbers 
 
 The role letter picks the use; the marker still says amount, rank, or code. Only the markers and writing are listed here, because every row is the same shape: `v`, `h`, `y`, `x`, `w`, `th` + the number.
 
-| Slot | `ra` `+` | `ru` `-` | `re` `#` | `ro` `_` | Stage |
+| Slot | `ra` `+` | `ru` `-` | `ro` `#` | `re` `_` | Stage |
 |------|----------|----------|----------|----------|-------|
 | [`/v/` verb](/number-roles#number-as-verb-by-marker) | add N | remove N | take place N | enter / dial the code | I |
 | [`/h/` adverb](/number-roles#number-as-adverb-by-marker) | *N times* | *÷N*, *every Nth* | *for the Nth time* | clock time | I |

@@ -7,7 +7,7 @@ band: advanced
 ### Ordinal generation: digitful exponent on **`#`** / **`#-`** {#ordinal-generation}
 <a id="generation-ordinal"></a>
 
-English counts inside one level of a family or an outline: *the third grandchild*, *the 3rd sub-point*. In Ageben you put an exponent with digits on a rank number (forward `#` / `re` or end-relative `#-` / `rue`). There it is not a power of ten: it says how many generations away from the person, version, or outline point in focus. One number word then says both which level you mean and which member of it.
+English counts inside one level of a family or an outline: *the third grandchild*, *the 3rd sub-point*. In Ageben you put an exponent with digits on a rank number (forward `#` / `ro` or end-relative `#-` / `ruo`). There it is not a power of ten: it says how many generations away from the person, version, or outline point in focus. One number word then says both which level you mean and which member of it.
 
 The marker still counts **from the start** or **from the end**, but only among the members of that generation (its **cohort**). The exponent `eK` names the generation K steps deeper (descendants), and `e-K` the generation K steps up (ancestors). The mantissa picks which member; leave it off to name the whole cohort. Leave the exponent off for the focus's own generation (`grogel` = 3rd peer). Writing `e0` says *current generation* outright, which is usually redundant.
 

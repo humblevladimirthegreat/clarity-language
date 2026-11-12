@@ -42,7 +42,7 @@ An `m` before the `x` makes the number approximate:
 
 **Compare with:** a free [number](/numbers) word counts, ranks, or labels something in the sentence. A numeric prefix describes the kind.
 
-A body with digits has one digit only: `+N` / `-N` (how many parts) or `#N` (which rank). The marker gives the spoken vowel (`ra` / `ru` / `re`). A numeric-prefix noun takes plural `-x` at the end as usual: `zragexezuyolx` ([plurality](/plurality)). It is a content word, so it stresses its first syllable (*zra* in `zragexezuyol`), not the last digit as a free number does. In a hosted `bl-` word the `l` is syllabic before `r`, as on a hosted number: `blragexezuyol`.
+A body with digits has one digit only: `+N` / `-N` (how many parts) or `#N` (which rank). The marker gives the spoken vowel (`ra` / `ru` / `ro`). A numeric-prefix noun takes plural `-x` at the end as usual: `zragexezuyolx` ([plurality](/plurality)). It is a content word, so it stresses its first syllable (*zra* in `zragexezuyol`), not the last digit as a free number does. In a hosted `bl-` word the `l` is syllabic before `r`, as on a hosted number: `blragexezuyol`.
 
 ### Limit / polarity / stage (digitless) {#limit-polarity-stage}
 

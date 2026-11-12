@@ -248,8 +248,6 @@ The ones band and the asserting `e0` work as verb, adverb, interjection, and dis
 
 **`yrawamol`** = ones-band cheer (ordinary bare OoM).
 
-#### Number as discourse {#zero-exponent-number-as-discourse}
-
 #### Ordinal rank annihilated (`#0e`)
 <a id="rank-annihilated"></a>
 

@@ -27,7 +27,7 @@ An editorial span still counts as quoted: a role pointer can reach it as it reac
 
 ### Nesting {#nesting}
 
-When one span sits inside another (a quote that contains a parenthetical, or a cite wrapping an opaque blob), the spans nest, and each one closes with its own bracket.
+When one span sits inside another (a quote that contains a parenthetical, or a cite wrapping an opaque span), the spans nest, and each one closes with its own bracket.
 
 > `zazozon d[ th(hugowul) azozon ] vezuyol.`
 >

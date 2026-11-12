@@ -58,7 +58,7 @@ export type HitWord = {
 const CONDITION_SPLIT = new RegExp(`,(?=(?:${TERM_KEYS.join("|")})!?=)`);
 const TERM_PART = new RegExp(`^(${TERM_KEYS.join("|")})(!?)=(.*)$`, "s");
 
-/** Writing glyph ↔ speech letters for one number-marker job (`#` / `re` are both ordinal-from-start). */
+/** Writing glyph ↔ speech letters for one number-marker job (`#` / `ro` are both ordinal-from-start). */
 const MARKER_TWIN: Record<string, string> = {
   "+": "ra",
   ra: "+",
@@ -149,7 +149,7 @@ export function numberStem(word: LexWord): NumberStem | undefined {
   return undefined;
 }
 
-/** Stored marker plus its writing/speech twin; calendar `roe` is not the `_` / `ro` pair. */
+/** Stored marker plus its writing/speech twin; calendar `roe` is not the `#` / `ro` pair. */
 function markerValues(stem: NumberStem | undefined): string[] {
   if (!stem) return [];
   if (stem.calendarOrdinal) return ["roe"];
