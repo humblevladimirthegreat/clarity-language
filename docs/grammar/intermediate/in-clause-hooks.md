@@ -8,7 +8,7 @@ Inside a clause, a hook ties B to A, or names a landmark. The first section coll
 
 ### In-clause {#in-clause}
 
-Here are the four same-role hooks from Beginner, with both endings.
+Here are the four **same-role hooks** from Beginner (*including*, *rather*, *instead*, *except*: the hooks that sit between two phrases in the same role, `A HOOK B`), with both endings.
 
 <!-- cheat-sheet: joins-hooks -->
 | | `-l` | `-m` |

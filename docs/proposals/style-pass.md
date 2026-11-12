@@ -96,6 +96,7 @@ Labels that finished units have glossed, in reading order, each with the page th
 | holder ("no one named whose view it gives"); channel ("no word for how you know it") | `try.md`; `permission-consent.md` |
 | scope-taking ("a word, like *possibly*, that frames what it reaches") | `scope-islands.md`, binder required |
 | `/x/` ("the role of words like *therefore* that open a sentence and link it to the one before") | `number-roles.md` |
+| same-role hook ("the hooks that sit between two phrases in the same role, `A HOOK B`") | `in-clause-hooks.md`, In-clause |
 | discourse hook ("a hook at the front of a sentence that ties it to what was said before"), stacked hook ("the hooks with two vowels") | `in-clause-hooks.md`, Detail on the hook; Point back |
 | arrow root ("the word for the compass heading, such as *west*"), viewpoint anchor ("the person or thing whose facing counts"), DIR ("the direction root") | `viewpoint.md` |
 | the notional ("the *as if* word") | `role-parts.md`, Content of the event |
@@ -145,9 +146,7 @@ None open.
 
 ### Fixes outside the pass
 
-Faults a prose unit found but could not fix within its scope. Add any a later unit reports.
-
-- *Same-role hook* is used on `in-clause-hooks.md` (Point back) but no earlier page glosses it (I13).
+Faults a prose unit found but could not fix within its scope. None open; add any a later unit reports.
 
 ### Gates
 
