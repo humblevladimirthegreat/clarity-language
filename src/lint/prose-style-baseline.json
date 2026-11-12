@@ -99,9 +99,6 @@
   "intermediate/exactly-like.md": {
     "bold-density": 1
   },
-  "intermediate/fill-ask-roles.md": {
-    "long-paragraph": 1
-  },
   "intermediate/for-a-sake.md": {
     "bold-density": 2
   },
@@ -124,18 +121,11 @@
   "intermediate/more-hinges.md": {
     "bold-density": 2
   },
-  "intermediate/more-turn-words.md": {
-    "long-paragraph": 1
-  },
   "intermediate/number-markers.md": {
     "bold-density": 2
   },
   "intermediate/number-roles.md": {
     "bold-density": 1
-  },
-  "intermediate/polar-inventory.md": {
-    "bold-density": 5,
-    "long-paragraph": 1
   },
   "intermediate/ranges.md": {
     "bold-density": 1
@@ -168,9 +158,6 @@
   "intermediate/tag-pronouns.md": {
     "bold-density": 1,
     "long-paragraph": 1
-  },
-  "intermediate/tone-marks.md": {
-    "voice": 1
   },
   "intermediate/topic.md": {
     "long-paragraph": 1

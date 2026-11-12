@@ -7,7 +7,7 @@ band: intermediate
 
 ### Tone marks {#tone-marks}
 
-A **tone mark** shows how you feel, or what you stress, while you say something. It changes your voice only. It never changes the speech act (that is the act word's job), and a sentence still ends in a period.
+When you speak, your voice shows how you feel and which word you stress; English writing has only *!* and italics for that. In Ageben, a **tone mark** written in front of a word or a sentence shows that voice. It changes your voice only. It never changes the speech act (that is the act word's job), and a sentence still ends in a period, so you can add a feeling to any sentence without changing what the sentence does.
 
 <!-- cheat-sheet: talking -->
 | Mark | Feeling | Voice | Cue |
@@ -20,9 +20,22 @@ A **tone mark** shows how you feel, or what you stress, while you say something.
 
 `?` is the only mark that uses pitch: it raises the whole word it colors, and the word's [vowel pitches](/phonology#vowel-pitch) keep their order inside it. `!` and `;` are loudness, `&` is loudness and length, and `%` is the quality of your voice.
 
-**Doubling** a mark makes it stronger: `!!` is louder again, `??` is very unsure, `;;` is very tender, `%%` is broad teasing, `&&` is a firm contrast. **Combining** marks mixes tones: `?!` is surprised and doubtful (*Wait, what?!*), `%;` is teasing but fond, `&!` is *this* one, and I feel strongly about it. A stack has no spaces and its order does not matter (`?!` and `!?` sound the same). Each mark may appear at most twice, so `!!!` is not a mark.
+Doubling a mark makes it stronger, and combining two marks mixes their tones:
 
-Write the mark **before** what it colors, so you see the tone before you say the words:
+| Mark | Tone |
+|------|------|
+| `!!` | louder again |
+| `??` | very unsure |
+| `;;` | very tender |
+| `%%` | broad teasing |
+| `&&` | a firm contrast |
+| `?!` | surprised and doubtful (*Wait, what?!*) |
+| `%;` | teasing but fond |
+| `&!` | *this* one, and you feel strongly about it |
+
+A stack has no spaces and its order does not matter (`?!` and `!?` sound the same). Each mark may appear at most twice, so `!!!` is not a mark.
+
+Write the mark *before* what it colors, so you see the tone before you say the words:
 
 | Written | Colors |
 |---------|--------|
@@ -112,13 +125,13 @@ A mark on a span colors all of it:
 >
 > "Azozon said “Azozon,” I think." (unsure about just the quoted word)
 
-**Compare with:** **`yel`** asks a question; `?` only sounds unsure. A tone mark shows the feeling.
+**Compare with:** `yel` asks a question; `?` only sounds unsure. A tone mark shows the feeling.
 
 - A mark may go on any word, including act words.
 - A mark is a stack of `!`, `?`, `%`, `&`, `;`, each at most twice, in any order. A third copy (`!!!`) is not a mark, and neither are marks in a row with a space between (`! !`).
 - `&` is the only way to single out one word: moving a word adds no stress.
 - A mark on a word inside a colored span or sentence overrides it for that word. To mix tones on one word, stack them there.
-- Before a span fence, the mark is **your** tone about the quote. Inside the fence, it is part of what is quoted (the original speaker's tone).
+- Before a span fence, the mark is *your* tone about the quote. Inside the fence, it is part of what is quoted (the original speaker's tone).
 - Speech adds no syllables: you voice the mark over its words.
 
 #### Emphasis and clefts {#emphasis-and-clefts}

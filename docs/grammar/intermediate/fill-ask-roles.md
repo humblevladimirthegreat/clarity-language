@@ -8,20 +8,22 @@ The fill-ask vowels and how many items you list before the blank complete the *w
 
 ### Fill-ask arity {#fill-ask-arity}
 
-Beginner already used *who/what* (**…ar**) and *what else* (**…ur**). Two more vowels (**…er**, **…or**) and the number of items listed before the blank (none, one, or several) complete the map, which matches [single-item / standalone](/joins#single-item-phrase).
+English asks for a blank in many ways: *who?*, *anything?*, *which comes first?*, *which of these?* Beginner already used *who/what* (`…ar`) and *what else* (`…ur`). Two more vowels (`…er`, `…or`) and the number of items listed before the blank (none, one, or several) complete the map, which matches [single-item / standalone](/joins#single-item-phrase). Pick the column for what you ask and the row for how many items you name.
 
 <!-- cheat-sheet: talking -->
-| Items listed | **…ar** | **…er** | **…or** | **…ur** |
+| Items listed | `…ar` | `…er` | `…or` | `…ur` |
 |--------|---------|---------|---------|---------|
-| **0** | *Who/what?* | *Anything?* | *What’s the priority?* | *What else?* |
-| **1** | *What/which (unknown) X?* | *Any X?* | *Which X is first?* | *What else (besides X)?* |
-| **2+** | *Which of these?* | *Any of these?* | *Which ranks highest?* | *What else?* / *Other than these?* |
+| 0 | *Who/what?* | *Anything?* | *What’s the priority?* | *What else?* |
+| 1 | *What/which (unknown) X?* | *Any X?* | *Which X is first?* | *What else (besides X)?* |
+| 2+ | *Which of these?* | *Any of these?* | *Which ranks highest?* | *What else?* / *Other than these?* |
 
-With nothing listed, **-r** in the asked-about slot is an open *who* / *what*. Bare **`var`** / **`xar`** is *what did they do?* / *what happened?*. Bare **`har`** is *when?*.
+With nothing listed, `-r` in the asked-about role is an open *who* / *what*. Bare `var` / `xar` is *what did they do?* / *what happened?*. Bare **`har`** is *when?*.
 
 ### A blank inside a dependent {#blank-in-dependent}
 
-English puts *who* in different places in *Do you know who walks?* and *Who do you think walks?*. In the first, the inner clause asks; in the second, the main question asks. In Ageben the blank stays in the inner clause both times (it never moves to the front of the outer sentence), and the stand-in's vowel says which question it belongs to. **`derl`** (*whether*) is itself question-like, so its blank belongs to it, and the outer **`yel`** is yes/no. **`darl`** (*that*) is statement-like and cannot ask, so its blank belongs to the outer **`yel`**.
+English puts *who* in different places in *Do you know who walks?* and *Who do you think walks?*. In the first, the inner clause asks; in the second, the main question asks. In Ageben the blank stays in the inner clause both times (it never moves to the front of the outer sentence), and the stand-in's vowel says which question it belongs to.
+
+`derl` (*whether*) is itself question-like, so its blank belongs to it, and the outer `yel` is yes/no. `darl` (*that*) is statement-like and cannot ask, so its blank belongs to the outer `yel`.
 
 > `yel zawan vanam derl zar vowurol.`
 >
@@ -134,4 +136,4 @@ Under **`darl`** the blank belongs to the outer question (*who do you know finds
 ## See also
 
 - Asking and answering: [Questions](/questions)
-- Join **-r** in a statement: [Unspecified member (`-r`)](/joins#unspecified-member-r-phrase)
+- Join `-r` in a statement: [Unspecified member (`-r`)](/joins#unspecified-member-r-phrase)

@@ -4,9 +4,11 @@ band: intermediate
 
 # Turn words, further {#turn-words-further}
 
+This page does more with the act words that open a turn. Saying an act word twice makes the act more insistent. Two different act words in a row say what you really do and how it sounds, and the rhetorical question, the quiz, and the question that sounds like another act are three such pairs. A command word before an adjective asks the listener to be something, and a call or a reaction can take an adjective or a degree word of its own.
+
 ### Doubling an act word {#doubled-act}
 
-Say an act word twice among the opening `/y/` words to make the act more insistent. The act stays the same; the repeat never cancels it. Use it most where a missed *don't* would be dangerous.
+English insists with extra words: *I mean it*, *I'm telling you*, *now*. Ageben says the act word twice among the opening `/y/` words. The act stays the same and only grows more insistent; the repeat never cancels it. Use it most where a missed *don't* would be dangerous.
 
 > `yul yul vozuyul.`
 >
@@ -22,7 +24,7 @@ Say an act word twice among the opening `/y/` words to make the act more insiste
 | **`yol yol`** | urgent command | *Do it. Now.* |
 | **`yul yul`** | emphatic prohibition | *Don't. I mean it.* |
 
-Both words take the same ending: **`yom yom`** is an insistent plea (*please, please…*), and **`yur yur`** is *really, hold off for now*. **`yal`** is usually left out, but **`yal yal`** is always written, because the repeat carries the emphasis.
+Both words take the same ending: **`yom yom`** is an insistent plea (*please, please…*), and **`yur yur`** is *really, hold off for now*. `yal` is usually left out, but `yal yal` is always written, because the repeat carries the emphasis.
 
 Repeat only the opening act word: an act word after the body starts a new turn instead of adding emphasis.
 
@@ -30,7 +32,9 @@ Repeat only the opening act word: an act word after the body starts a new turn i
 
 ### Stacking two act words {#stacked-acts}
 
-People often do one act while sounding like another. *Could you pass the salt?* is a request that sounds like a question. *We don't hit in this house* is a prohibition that sounds like a statement. Two different act words say both: the **first** is what you really do, and the **second** is how it sounds. The listener always knows the real act from the first word, and answers that act.
+People often do one act while sounding like another. *Could you pass the salt?* is a request that sounds like a question. *We don't hit in this house* is a prohibition that sounds like a statement. Two different act words say both: the *first* is what you really do, and the *second* is how it sounds.
+
+The listener always knows the real act from the first word, and answers that act.
 
 > `yol yel vabuvul dubogal zawan.`
 >
@@ -38,7 +42,7 @@ People often do one act while sounding like another. *Could you pass the salt?* 
 >
 > "Could you punch the box?" (a request)
 
-The body takes the **first** word's [default order](/speech-moves#act-word-order). The second word only says how the turn sounds and never moves the verb. So a prohibition that sounds like a command still keeps its verb late, and a missed **`yul`** never leaves an order to act.
+The body takes the *first* word's [default order](/speech-moves#act-word-order). The second word only says how the turn sounds and never moves the verb. So a prohibition that sounds like a command still keeps its verb late, and a missed `yul` never leaves an order to act.
 
 > `yul yol dubogal vabuvul.`
 >
@@ -83,7 +87,7 @@ Each word's ending describes its own act. The first ending says how firmly you r
 >
 > "Sit, sit!" (an offer)
 
-A stack has two act words at most, with nothing between them. A call, a reaction, or a hook goes before the first act word. The first word is always written, even **`yal`**: without it, the second word would be the act.
+A stack has two act words at most, with nothing between them. A call, a reaction, or a hook goes before the first act word. The first word is always written, even `yal`: without it, the second word would be the act.
 
 ### Rhetorical question {#rhetorical}
 
@@ -153,13 +157,13 @@ A question can also sound like a command or a prohibition. It still asks, and th
 >
 > "You're not leaving, are you?" (a real question; you hope not)
 
-**Compare with:** **`yul yel`** puts the prohibition first. It forbids and only sounds like a question (*Must you?*), so no answer is owed. **`yel yul`** really asks, and shows which answer you want. A [check-back](/questions#polar-particle) asks the listener to confirm a claim you have already made.
+**Compare with:** `yul yel` puts the prohibition first. It forbids and only sounds like a question (*Must you?*), so no answer is owed. `yel yul` really asks, and shows which answer you want. A [check-back](/questions#polar-particle) asks the listener to confirm a claim you have already made.
 
-**`yel yol`** and the quiz both insist on an answer. In the quiz you know it already; here you do not.
+`yel yol` and the quiz both insist on an answer. In the quiz you know it already; here you do not.
 
 ### Commands to be ADJ {#command-property}
 
-A command can ask for a state as well as an act. Put the [command word](/speech-moves#speech-act-beginner) **`yol`** before a `/ɡ/` word with no verb: the listener is the unstated subject, and the pair reads *be ADJ!*, as a [verbless statement](/predication#classification-property) does.
+English commands can ask for a state as well as an act: *Be careful!*, *Be quiet!* Put the [command word](/speech-moves#speech-act-beginner) `yol` before a `/ɡ/` word with no verb. The listener is the unstated subject, and the pair reads *be ADJ!* (*be* plus the adjective), as a [verbless statement](/predication#classification-property) does.
 
 > `yol guyulom.`
 >
@@ -167,11 +171,11 @@ A command can ask for a state as well as an act. Put the [command word](/speech-
 >
 > "Be careful!"
 
-The `/ɡ/` word takes the verb's place in the [default order](/speech-moves#act-word-order), so it comes first. Name the listener after it to address one person (`yol guyulom zawan`), or use the verb root for the doing (`yol vuyulom`, *take care*). **`yul`** turns the same pair into *don’t be ADJ*.
+The `/ɡ/` word takes the verb's place in the [default order](/speech-moves#act-word-order), so it comes first. Name the listener after it to address one person (`yol guyulom zawan`), or use the verb root for the doing (`yol vuyulom`, *take care*). `yul` turns the same pair into *don’t be ADJ*.
 
 ### Describing a call or reaction {#describe-turn-word}
 
-A call or a reaction can also take an adjective **before** it, with [**`gl-`**](/left-bound-adjectives#left-bound-adjectives), the way a noun does. Its `/w/` and its `/b/` come along as usual.
+English puts adjectives on calls and reactions: *Dear Alazun!*, *Happy birthday!* In Ageben, a call or a reaction takes an adjective *before* it, with [`gl-`](/left-bound-adjectives#left-bound-adjectives), the way a noun does. Its `/w/` and its `/b/` come along as usual.
 
 > `glolamam yalazun.`
 >
