@@ -86,15 +86,8 @@
     "bold-density": 1,
     "long-paragraph": 1
   },
-  "intermediate/evidentiality.md": {
-    "long-paragraph": 2
-  },
   "intermediate/exactly-like.md": {
     "bold-density": 1
-  },
-  "intermediate/holder.md": {
-    "bold-density": 1,
-    "long-paragraph": 1
   },
   "intermediate/in-clause-hooks.md": {
     "bold-density": 1

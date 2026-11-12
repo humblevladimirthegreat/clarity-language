@@ -4,12 +4,10 @@ band: intermediate
 
 # Whose view {#whose-view}
 
-English *Azozon thinks*, *she's upset*, and *he doubts it* report someone else's view. Ageben names whose view a sentence gives by joining their name onto how they know it.
-
 ### Whose view (holder) {#holder}
 <a id="holder-seam"></a>
 
-English *Azozon thinks…*, *she's upset*, and *he doubts it* report what is in someone else's mind as if you could see it. In Ageben, you name whose view a sentence gives (the **holder**) by joining their name onto a channel or [MAY](/knowing#may). Keep that word's own last letter (**-l**, **-m**, or **-r**) and write the name straight after it: `theyom` plus `azozon` is `theyomazozon`. The joining letter is the **seam**. This is the only way to name a holder, so you can never report someone's view without saying how you know it. (cue: the name hangs off the way you know it)
+English *Azozon thinks…*, *she's upset*, and *he doubts it* report what is in someone else's mind as if you could see it. In Ageben, you name whose view a sentence gives (the **holder**) by joining their name onto a channel or [MAY](/knowing#may). Keep that word's own last letter (`-l`, `-m`, or `-r`) and write the name straight after it: `theyom` plus `azozon` is `theyomazozon`. The joining letter is the **seam**. This is the only way to name a holder, so you can never report someone's view without saying how you know it. (cue: the name hangs off the way you know it)
 
 > `zalazun theyomazozon vudurul.`
 >
@@ -31,7 +29,7 @@ English *Azozon thinks…*, *she's upset*, and *he doubts it* report what is in 
 
 **Compare with:** `zalazun thebam blazozon vudurul.` is *Alazun left, according to Azozon*. There Azozon is the [source](evidentiality.md#source), where the claim came to you from, and the claim stays yours to pass on. `zalazun thebamazozon vudurul.` gives Azozon's view instead, and you do not claim it yourself. English *Azozon says Alazun left* can mean either.
 
-The seam letter keeps its meaning: [evidence strength](evidentiality.md#evidence-strength) on a channel, the [follow-up ending](/knowing#follow-up-endings-may) on MAY. The name keeps its own **-n** at the end. **-n** is never a seam.
+The seam letter keeps its meaning: [evidence strength](evidentiality.md#evidence-strength) on a channel, the [follow-up ending](/knowing#follow-up-endings-may) on MAY. The name keeps its own `-n` at the end, and `-n` is never a seam.
 
 > `zalazun theyolazozon vudurul.`
 >
@@ -53,7 +51,16 @@ A holder [carries forward](evidentiality.md#carry-forward) like a channel. After
 >
 > "I gather Azozon thinks Alazun left. Alazun is asleep." (the sleeping is Azozon's view too)
 
-The holder word ends the way a noun for that person would. **-n** is a name. **-r** [resumes](/pronouns#resume-r) someone already named, which is English *he* / *she* / *they*. Add [associative **-x**](/plurality#associative) after the ending for the person and their associates. A kind of person on **-lx** is some people of that kind. A [tag](tag-pronouns.md#tag-pronouns) never goes in the seam, since the seam letter before its `w` would end a syllable mid-word. For a holder you don't name, name the kind of person: `zalazun theyomeyel vudurul.` is *I gather someone thinks Alazun left*.
+The holder word ends the way a noun for that person would:
+
+| Ending | Holder |
+|--------|--------|
+| `-n` | a name |
+| `-r` | someone already named, English *he* / *she* / *they* (it [resumes](/pronouns#resume-r) them) |
+| [associative `-x`](/plurality#associative) after the ending | the person and their associates |
+| `-lx` on a kind of person | some people of that kind |
+
+A [tag](tag-pronouns.md#tag-pronouns) never goes in the seam, since the seam letter before its `w` would end a syllable mid-word. For a holder you don't name, name the kind of person: `zalazun theyomeyel vudurul.` is *I gather someone thinks Alazun left*.
 
 > `zazozon vowurol. zalazun theyomazozor vudurul.`
 >
@@ -73,7 +80,7 @@ The holder word ends the way a noun for that person would. **-n** is a name. **-
 >
 > "I gather some people think Alazun left."
 
-The holder may be the [topic pronoun](topic.md#topic-pronoun), whoever the conversation is about now, or the [generic pronoun](/pronouns#generic-pronoun), the generic view. The generic pronoun takes no **-x**.
+The holder may be the [topic pronoun](topic.md#topic-pronoun), whoever the conversation is about now, or the [generic pronoun](/pronouns#generic-pronoun), the generic view. The generic pronoun takes no `-x`.
 
 > `xazozon theyomalen zalazun vudurul.`
 >
@@ -87,7 +94,7 @@ The holder may be the [topic pronoun](topic.md#topic-pronoun), whoever the conve
 >
 > "I gather one would think Alazun left."
 
-**Someone else's plan** goes the same way. [PLAN](/intention#plan-predict) alone is yours; after a holder it is theirs, and the seam word says how you know what they plan.
+Someone else's plan goes the same way. [PLAN](/intention#plan-predict) alone is yours; after a holder it is theirs, and the seam word says how you know what they plan.
 
 > `zazozon thebamazozon thagom vowurol.`
 >
@@ -111,7 +118,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 
 **Compare with:** someone else's aim takes a holder the same way. The [so that](/dependents#so-that) hinge alone is your aim; after a holder it is the holder's, so `zazozon thebamazozon vowurol thovam blarl zazozon vehohel.` is *I hear Azozon walks in order to sit*.
 
-**Someone else's motive** goes the same way. A [motive](for-a-sake.md#sake-preference) word alone names what the act serves for you; it does not say why the actor does it. After a holder, the motive is the holder's, and the seam word says how you know their reason.
+Someone else's motive goes the same way. A [motive](for-a-sake.md#sake-preference) word alone names what the act serves for you; it does not say why the actor does it. After a holder, the motive is the holder's, and the seam word says how you know their reason.
 
 > `zazozon vezuyol thawethom theyomazozon.`
 >
@@ -119,7 +126,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 >
 > "I gather Azozon talks to feel connected."
 
-**The seam word is yours; the rest of the clause is the holder's.** The word that carries the name says how **you** know about the holder's view: you inferred it, heard it, or guess it. You claim nothing about whether the holder is right, and nothing about your own view. Everything else in the clause, wherever it sits, belongs to the holder:
+The seam word is yours; the rest of the clause is the holder's. The word that carries the name says how you know about the holder's view: you inferred it, heard it, or guess it. You claim nothing about whether the holder is right, and nothing about your own view. Everything else in the clause, wherever it sits, belongs to the holder:
 
 | In the clause | With no holder | With a holder |
 |---------------|----------------|---------------|
@@ -127,10 +134,10 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 | MAY, CAUSE hinges, *so that*, PLAN, prescription | yours | the holder's |
 | [Sake](/sakes) words and [feeling words](how-you-feel.md#feeling-word), with their endings | your stake and feeling | the holder's stake and feeling |
 | A `/ɡ/` sake's *my* reading ([personal possession](/sakes#personal-possession)) | your belonging | the holder's belonging |
-| Another evidential | how you know | how the holder knows |
+| Another channel | how you know | how the holder knows |
 | The grounds after an inferring or pattern host's [`blarl`](evidentiality.md#evidence-clause) | grounds you assert | the holder's grounds; you do not assert them |
 
-**Except right before `thezem`.** A holder right before the [*although* hinge](/dependents#hinges) **`thezem`** gives the holder only the hinge's expectation, that the obstacle would have stopped the event. The event and the obstacle are still your claim.
+One place is different: a holder right before the [*although* hinge](/dependents#hinges) `thezem` gives the holder only the hinge's expectation, that the obstacle would have stopped the event. The event and the obstacle are still your claim.
 
 > `zonal wawethumel goyom blalazun theyomazozon.`
 >
@@ -152,7 +159,7 @@ A [feeling with no object](how-you-feel.md#feeling-no-object) works the same way
 >
 > "I gather Alazun is anxious."
 
-With the interlocutors as holder, the view is one you both share. On MEMORY this is the history you both know, so a sweeping *never* or *always* covers only the times you both remember:
+With the interlocutors (you and the listener together) as holder, the view is one you both share. On MEMORY this is the history you both know, so a sweeping *never* or *always* covers only the times you both remember:
 
 > `zawan vebal hal thevumayan.`
 >
@@ -170,9 +177,9 @@ The interlocutors work as holder on any host. With PLAN after it, the plan is on
 >
 > "I gather we both plan to walk."
 
-Pronouns, speech moves, and [speaker attitudes](feelings.md#speaker-attitude) stay yours: **`uwen`** is still you, the sentence is still your turn, and *hopefully* is still your hope. You are never the holder: your own view needs no seam. Someone else's hope is their want, so *Azozon hopes Alazun walks* is the holder with WANT, never with **`thuwuyom`**. The holder's view is their view **now**. A channel with a holder still takes its own `/b/`, so `thebamazozon blral` is *I hear Azozon expects it*.
+Pronouns, speech moves, and [speaker attitudes](feelings.md#speaker-attitude) stay yours: `uwen` is still you, the sentence is still your turn, and *hopefully* is still your hope. You are never the holder: your own view needs no seam. Someone else's hope is their want, so *Azozon hopes Alazun walks* is the holder with WANT, never with `thuwuyom`. The holder's view is their view now. A channel with a holder still takes its own `/b/`, so `thebamazozon blral` is *I hear Azozon expects it*.
 
-**One clause, one holder.** The holder covers its clause and any dependent sentence inside it; a new `/x/` sentence is yours again unless it has its own seam word. A dependent with its own seam word switches holder for that sentence only. That is how you take a stance on someone else's stance: your stance in the main sentence, theirs in a dependent.
+Each clause has one holder. The holder covers its clause and any dependent sentence inside it; a new `/x/` sentence is yours again unless it has its own seam word. A dependent with its own seam word switches holder for that sentence only. That is how you take a stance on someone else's stance: your stance in the main sentence, theirs in a dependent.
 
 > `wawethum goyom zarl zalazun wawethum goyom theyomazozon.`
 >
@@ -184,7 +191,7 @@ The first sake word has no holder, so it is yours. The second is Azozon's.
 
 Only the seven channels and MAY take a holder: they are the ways you can have access to someone else's view. When they told you in their own words, a [cite](/spans#writing) keeps their wording instead.
 
-**Compare with:** being upset **for** Azozon is your own feeling about Azozon's stake ([whose stake](feelings.md#feeling-whose-stake) after a feeling word); with a holder the feeling is Azozon's. *On behalf of* Azozon is [proxy](/relations#proxy) (`hanem`). A `/b/` on [permission](permission-consent.md#permission) or [consent](permission-consent.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](/compounds#dictionary-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
+**Compare with:** being upset *for* Azozon is your own feeling about Azozon's stake ([whose stake](feelings.md#feeling-whose-stake) after a feeling word); with a holder the feeling is Azozon's. *On behalf of* Azozon is [proxy](/relations#proxy) (`hanem`). A `/b/` on [permission](permission-consent.md#permission) or [consent](permission-consent.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](/compounds#dictionary-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
 
 ### Practice {#intermediate-practice}
 

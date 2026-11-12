@@ -4,17 +4,24 @@ band: intermediate
 
 # How you know {#how-you-know}
 
-English *apparently*, *I hear*, *according to Azozon*, *judging by*, and *it will rain* each rest a claim on some kind of evidence. Ageben names that evidence on one channel word: how you know, how strong the evidence is, who or what it came from, and what grounds it.
+English *apparently*, *I hear*, *according to Azozon*, *judging by*, and *it will rain* each rest a claim on some kind of evidence. Ageben names that evidence on one channel word, so the listener always knows what your claim rests on. This page covers the seven channels, how strong your evidence is, how many hands a claim passed through, who or what it came from, forecasts, the fact that tells you a claim holds, how one channel covers the sentences after it, and deduction.
 
 ### Evidentiality {#evidentiality}
 <a id="evidential"></a>
 <a id="content-readings"></a>
 
-You already pick [LIVE or MEMORY](/knowing#live-vs-memory) when the claim is in your senses now, or you remember sensing it. Five more channels finish the map: similar cases, clues about this case, a proof from premises, a report, or a gut sense. The same walk can then be reported seven ways, and the listener always knows what your claim rests on. Under other role letters the channel roots are ordinary words (`vugel` *to attest*, `debal` *an ear`).
+You already pick [LIVE or MEMORY](/knowing#live-vs-memory) when the claim is in your senses now, or you remember sensing it. Five more channels complete the set: similar cases, clues about this case, a proof from premises, a report, or a gut sense. The same walk can then be reported seven ways, and the listener always knows what your claim rests on. Under other role letters the channel roots are ordinary words (`vugel` *to attest*, `debal` *an ear*).
 
-The seven channels come in four kinds. Two are **direct** (already taught): you sensed it yourself, now (LIVE) or earlier (MEMORY). Three are **reasoned**: you worked it out from similar cases (PATTERN), from clues about this case (CLUES), or from premises it must follow from (DEDUCED). One is **received**: someone else said or wrote it (REPORTED). One is **internal**: a sense you cannot fully spell out (INTUITION).
+The seven channels come in four kinds:
 
-The other channels do not place the event in time. When a reasoned or reported event happened at another time, add a when-frame: [*before* / *after* / *while*](/dependents#time-hinges), a clock or date, or a signed offset on the channel. A claim that something **will** happen is a forecast: a channel plus a later offset, so a forecast always says how you know.
+| Kind | Channels | You know it because |
+|------|----------|---------------------|
+| **Direct** (already taught) | LIVE, MEMORY | you sensed it yourself, now or earlier |
+| **Reasoned** | PATTERN, CLUES, DEDUCED | you worked it out from similar cases, from clues about this case, or from premises it must follow from |
+| **Received** | REPORTED | someone else said or wrote it |
+| **Internal** | INTUITION | you have a sense you cannot fully spell out |
+
+The other channels do not place the event in time. When a reasoned or reported event happened at another time, add a when-frame: [*before* / *after* / *while*](/dependents#time-hinges), a clock or date, or a time offset with a plus or minus sign on the channel. A claim that something will happen is a **forecast**: a channel plus a later offset, so a forecast always says how you know.
 
 **For *could be* with nothing behind it, use:** [MAY](/knowing#may). When English *I think* means you have reasons (you worked it out, you heard it, you sense it), pick the channel for those reasons instead.
 
@@ -48,18 +55,18 @@ A document is REPORTED: someone wrote it, so it reached you from someone else.
 
 ### Evidence strength {#evidence-strength}
 
-The ending on a channel says **how strong the evidence is**. Use **-m** by default. The test is what you could offer if someone asked *how do you know?*:
+English grades evidence with words like *clearly*, *a glimpse*, and *rumor has it*. In Ageben the ending on a channel says how strong the evidence is. Use `-m` by default. The test is what you could offer if someone asked *how do you know?*:
 
-- **-l**: you could **show** it. You can hand over something checkable apart from you (the document, the clues, the source), and the hearer can weigh it themselves.
-- **-m**: you could **describe** it. You can say what you saw, were told, or noticed, and the hearer takes your account on trust.
-- **-r**: you could only **gesture** at it. You can point toward it but cannot state it precisely, so a follow-up question would find little behind it.
+- `-l`: you could **show** it. You can hand over something checkable apart from you (the document, the clues, the source), and the hearer can weigh it themselves.
+- `-m`: you could **describe** it. You can say what you saw, were told, or noticed, and the hearer takes your account on trust.
+- `-r`: you could only **gesture** at it. You can point toward it but cannot state it precisely, so a follow-up question would find little behind it.
 
 What counts as showing depends on the channel, so the table names what each channel grades.
 
-Strength grades your evidence, not how sure you feel and not how likely the event is. Likelihood is a separate [stance number](number-roles.md#number-as-stance-by-marker) (`th+70`), so a strong pattern can still give middling odds, and a rumor can claim certainty. Strength is also not distance from the event: that is `th#N`, so a compiled report that is several hands removed can still be **-l**.
+Strength grades your evidence, not how sure you feel and not how likely the event is. Likelihood is a separate [stance number](number-roles.md#number-as-stance-by-marker) (`th+70`), so a strong pattern can still give middling odds, and a rumor can claim certainty. Strength is also not distance from the event: that is `th#N`, so a compiled report that is several hands removed can still be `-l`.
 
 <!-- cheat-sheet: knowing-intending -->
-| Channel | Graded on | **-l** show | **-m** (default) describe | **-r** gesture |
+| Channel | Graded on | `-l` show | `-m` (default) describe | `-r` gesture |
 |---------|-----------|-------------|---------------------------|----------------|
 | LIVE | clarity of view | `thugel` a clear, full view | `thugem` | `thuger` a glimpse |
 | MEMORY | vividness of memory | `thevul` a vivid memory | `thevum` | `thevur` a hazy memory |
@@ -69,7 +76,7 @@ Strength grades your evidence, not how sure you feel and not how likely the even
 | REPORTED | reliability of the source | `thebal` a reliable source or an authoritative document | `thebam` | `thebar` a rumor or an unofficial note |
 | INTUITION | how well you can state the basis | `thabel` a strong gut sense | `thabem` | `thaber` a faint hunch |
 
-Two rows stretch the word *show*. A live view is gone once the moment passes, so for LIVE and MEMORY **-l** means you could narrate it in fine detail. INTUITION is private, so **-l** means you can say what the sense rests on, not that you can hand it over.
+Two rows stretch the word *show*. A live view is gone once the moment passes, so for LIVE and MEMORY `-l` means you could narrate it in fine detail. INTUITION is private, so `-l` means you can say what the sense rests on, not that you can hand it over.
 
 DEDUCED grades how far you checked the steps, not the premises. A step can be airtight and still start from a false premise, so a deduction is only as good as what it was deduced from.
 
@@ -87,7 +94,9 @@ DEDUCED grades how far you checked the steps, not the premises. A step can be ai
 
 ### Second-hand and further (`th#N`) {#hand-depth}
 
-English *second-hand*, *third-hand*, *a secondary source* and *a tertiary source* count the hands between the person who was there and you. A channel does not say that. Add a [stance number](number-roles.md#number-as-stance-by-marker) with the rank marker after the channel: **`th#N`** (from 2) is *N-th hand*. The channel says what form the claim reached you in, and the number says how far that is from the event. So `throdol` (`th#2`) is one step removed: told by someone who was there, or written by someone who asked them. `throgel` (`th#3`) is two steps removed: told by someone who was told, or compiled from reports. (cue: **`o`** ≈ rank, the place in the chain)
+English *second-hand*, *third-hand*, *a secondary source* and *a tertiary source* count the hands between the person who was there and you. A channel does not say that. Add a [stance number](number-roles.md#number-as-stance-by-marker) with the rank marker after the channel: **`th#N`** (from 2) is *N-th hand*.
+
+The channel says what form the claim reached you in, and the number says how far that is from the event. So `throdol` (`th#2`) is one step removed: told by someone who was there, or written by someone who asked them. `throgel` (`th#3`) is two steps removed: told by someone who was told, or compiled from reports. (cue: `o` ≈ rank, the place in the chain)
 
 > `zalazun thebam throgel vudurul.`
 >
@@ -101,13 +110,15 @@ English *second-hand*, *third-hand*, *a secondary source* and *a tertiary source
 >
 > "Alazun left, according to a newspaper article by someone who interviewed people who were there."
 
-Alone, `th#N` says the claim was passed on to you, without saying in what form. After a channel it adds the form: REPORTED (a retelling, a secondary source, or lore passed down), PATTERN (cases you know only from reports), or CLUES (clues you know only from reports). The number counts the hands on the evidence, never the reasoning steps: a conclusion drawn from your own clues is plain CLUES. First-hand has no number, because that is a channel: `th#N` with LIVE or MEMORY (`thugem`, `thevum`) is not used. The usual number endings apply: **-m** *about N-th hand* (`throgem`), **-r** with a digit *the same depth as before* (`throger`). Digitless `thror` under a question asks *how many hands?*
+Alone, `th#N` says the claim was passed on to you, without saying in what form. After a channel it adds the form: REPORTED (a retelling, a secondary source, or lore passed down), PATTERN (cases you know only from reports), or CLUES (clues you know only from reports). The number counts the hands on the evidence, never the reasoning steps: a conclusion drawn from your own clues is plain CLUES. First-hand has no number, because that is a channel: `th#N` with LIVE or MEMORY (`thugem`, `thevum`) is not used.
+
+The usual number endings apply: `-m` *about N-th hand* (`throgem`), `-r` with a digit *the same depth as before* (`throger`). Digitless `thror` under a question asks *how many hands?*
 
 **Compare with:** `th_N` names *which* numbered source the claim rests on; `th#N` counts *how many hands* it passed through. Reliability of the one source you heard from is the ending on the channel (`thebal` / `thebar`).
 
 ### Source (`bl-` after the channel) {#source}
 
-English *according to Azozon* and *going by the camera* name **who or what you got the claim from**. Put that noun in a `bl-` word right after the channel. The channel is its [host](/clause#extra-nouns), so the `bl-` word is the source, not someone who receives anything.
+English *according to Azozon* and *going by the camera* name who or what you got the claim from, its **source**. Put that noun in a `bl-` word right after the channel. The channel is its [host](/clause#extra-nouns), so the `bl-` word is the source, not someone who receives anything.
 
 > `zalazun thebam blazozon vudurul.`
 >
@@ -141,7 +152,7 @@ When you don't name the source, `thebam bleyel blar` (*according to some person*
 
 ### Forecasts (`blral`) {#forecast}
 
-English *will* can make a forecast: a claim that something will happen. Ageben has no *will* word for this. Use a channel and put **`blral`** right after it in `/b/`: a number with a plus sign and no digits, meaning *some time after now*. Because a forecast needs a channel, it always says what it rests on; for a hunch, that channel is INTUITION. The mirror, **`blrul`**, is *some time before now*, for a past claim with no measured amount.
+English *will* can make a forecast: a claim that something will happen. Ageben has no *will* word for this. Use a channel and put **`blral`** right after it in `/b/`: a number with a plus sign and no digits, meaning *some time after now*. Because a forecast needs a channel, it always says what it rests on; for a hunch, that channel is INTUITION. Its opposite, **`blrul`**, is *some time before now*, for a past claim with no measured amount.
 
 > `thubom blral verulal.`
 >
@@ -157,7 +168,7 @@ English *will* can make a forecast: a claim that something will happen. Ageben h
 
 <a id="forecast-question"></a>
 
-In a [question](/questions#question), the channel asks what the **listener's** answer rests on: *going by the pattern you see, will it rain?* The listener answers with that channel or names a different one. Pick the channel you expect them to have: CLUES (`theyom`) when they would work it out from clues, REPORTED (`thebam`) when they would go by what they heard or read.
+In a [question](/questions#question), the channel asks what the listener's answer rests on: *going by the pattern you see, will it rain?* The listener answers with that channel or names a different one. Pick the channel you expect them to have: CLUES (`theyom`) when they would work it out from clues, REPORTED (`thebam`) when they would go by what they heard or read.
 
 > `yel thubom blral verulal.`
 >
@@ -165,13 +176,13 @@ In a [question](/questions#question), the channel asks what the **listener's** a
 >
 > "Will it rain, going by the pattern you see?"
 
-On a [feeling](how-you-feel.md#feeling-word) (a sake word with an urge and a duration ending, before **`goyom`**), the channel and offset date the **stimulus**. On a [feeling with no object](how-you-feel.md#feeling-no-object), they date a stimulus you leave unnamed. The feeling itself stays now.
+On a [feeling](how-you-feel.md#feeling-word) (a sake word with an urge and a duration ending, before `goyom`), the channel and offset date the stimulus. On a [feeling with no object](how-you-feel.md#feeling-no-object), they date a stimulus you leave unnamed. The feeling itself stays now.
 
-**Compare with:** [PLAN](/intention#plan-predict) (`thagom`) says what you **intend** to do. Your own intention needs no channel. A forecast is a claim about the world. *Could be* with nothing behind it is [MAY](/knowing#may), not a forecast.
+**Compare with:** [PLAN](/intention#plan-predict) (`thagom`) says what you intend to do. Your own intention needs no channel. A forecast is a claim about the world. *Could be* with nothing behind it is [MAY](/knowing#may), not a forecast.
 
 ### Evidence clause (`blarl`) {#evidence-clause}
 
-English *judging by*, *going by*, and *given that* name the **grounds** for a claim: the fact that tells you it holds. The three reasoned channels take grounds: CLUES (`theyom`, from clues), PATTERN (`thubom`, from cases that repeat) and DEDUCED (`thanam`, from premises). Each one takes **`blarl`** as its `/b/`. The main sentence stops after `blarl`, and the next sentence is the grounds ([dependent clauses](/dependents#dependent-clauses)). You state the claim, the strength of your grounds, and the grounds themselves in one sentence.
+English *judging by*, *going by*, and *given that* name the **grounds** for a claim: the fact that tells you it holds. The three reasoned channels take grounds: CLUES (`theyom`, from clues), PATTERN (`thubom`, from cases that repeat) and DEDUCED (`thanam`, from premises). Each one takes `blarl` as its `/b/`. The main sentence stops after `blarl`, and the next sentence is the grounds ([dependent clauses](/dependents#dependent-clauses)). You state the claim, the strength of your grounds, and the grounds themselves in one sentence.
 
 > `zalazun vabuvul theyom blarl zazozon veyamul.`
 >
@@ -194,7 +205,7 @@ Grounds are not a cause. With [`thahum blarl`](because-and-iff.md#only-because),
 | what has to hold for it to happen | the condition | `thohem blarl` / `thebem blarl` / `thehom blarl` |
 | how you know it happened | your grounds | `theyom blarl` / `thubom blarl` / `thanam blarl` |
 
-The ending on the channel grades the grounds ([evidence strength](#evidence-strength)): **-l** for strong clues or a well-established pattern, **-m** by default, **-r** for a weak clue or a few cases. Strong clues still fall short of a proof: when the claim **must** hold if the grounds do, use DEDUCED.
+The ending on the channel grades the grounds ([evidence strength](#evidence-strength)): `-l` for strong clues or a well-established pattern, `-m` by default, `-r` for a weak clue or a few cases. Strong clues still fall short of a proof: when the claim must hold if the grounds do, use DEDUCED.
 
 > `verulal theyol blarl zugalal gagulel.`
 >
@@ -202,7 +213,7 @@ The ending on the channel grades the grounds ([evidence strength](#evidence-stre
 >
 > "It is raining, judging by the gray clouds." (strong clues)
 
-For a **forecast**, keep the [offset](#forecast) and put `blarl` after it. The pattern is what you go by, and the grounds clause says what you see now.
+For a forecast, keep the [offset](#forecast) and put `blarl` after it. The pattern is what you go by, and the grounds clause says what you see now.
 
 > `verulal thubol blral blarl zugalal gagulel.`
 >
@@ -230,9 +241,9 @@ English tells a story with one *they say* or *I remember* at the start, and ever
 >
 > "Alazun left, so they say. Alazun ran. Alazun sang." (all three are what you heard)
 
-The frame is **yours**. It covers only your own claims, and someone else who replies never inherits it. Their reply does not end it either: when you go on telling, your frame is still in force.
+The frame is yours. It covers only your own claims, and someone else who replies never inherits it. Their reply does not end it either: when you go on telling, your frame is still in force.
 
-**Which sentences take the frame:** your statements with no channel of their own, including a statement after a call, an interjection, or an answer word (`yaol zalazun veruvol.` *yes, Alazun ran* keeps your frame). A [question](/questions#question) does not take it, because a channel in a question asks about the listener's grounds ([forecasts](#forecast-question)). A command, request, or prohibition does not take it, because it is not a claim. Neither ends the frame, so your next statement picks it up again.
+Your statements with no channel of their own take the frame, including a statement after a call, an interjection, or an answer word (`yaol zalazun veruvol.` *yes, Alazun ran* keeps your frame). A [question](/questions#question) does not take it, because a channel in a question asks about the listener's grounds ([forecasts](#forecast-question)). A command, request, or prohibition does not take it, because it is not a claim. Neither ends the frame, so your next statement picks it up again.
 
 > `zalazun thebam vudurul. yel zalazun veruvol. zalazun vozuyel.`
 >
@@ -240,7 +251,7 @@ The frame is **yours**. It covers only your own claims, and someone else who rep
 >
 > "Alazun left, so they say. Did Alazun run? Alazun sang." (the singing is hearsay too)
 
-**What does not end it:** a new [topic](topic.md#topic) or a return to one, the [sentence linkers](sentence-linkers.md#sentence-linkers) (*therefore*, *however*, *meanwhile*, *next*, *but*), clause joins, asides, or MAY. A story moves from one person to the next.
+The frame is not ended by a new [topic](topic.md#topic) or a return to one, the [sentence linkers](sentence-linkers.md#sentence-linkers) (*therefore*, *however*, *meanwhile*, *next*, *but*), clause joins, asides, or MAY. A story moves from one person to the next.
 
 > `zazozon thebam vowurol. xalazun zalen vehohel.`
 >
@@ -248,12 +259,12 @@ The frame is **yours**. It covers only your own claims, and someone else who rep
 >
 > "Azozon walked, so they say. Now, about Alazun: Alazun sat." (the sitting is hearsay too)
 
-**What ends it:**
+Four things end the frame:
 
-- **A new frame.** Any channel replaces it.
-- **The statement word, written out.** **`yal`** (or **`yam`** / **`yar`**) before a body says you are back in your own voice, with no frame. It is the one place where writing the usually silent [statement word](/firm-soft#speech-act) changes the meaning. In [two stacked act words](more-turn-words.md#stacked-acts), it counts only as the first word, the act you really do: a rhetorical **`yal yel`** is your own claim and ends the frame, but a quiz **`yel yal`** does not.
+- A new frame: any channel replaces it.
+- The statement word, written out: `yal` (or `yam` / `yar`) before a body says you are back in your own voice, with no frame. It is the one place where writing the usually silent [statement word](/firm-soft#speech-act) changes the meaning. In [two stacked act words](more-turn-words.md#stacked-acts), it counts only as the first word, the act you really do: a rhetorical `yal yel` is your own claim and ends the frame, but a quiz `yel yal` does not.
 - **`xavedam`** *by the way*: a digression leaves what you were telling. To go back, name the channel again.
-- **A goodbye**, which ends the conversation.
+- A goodbye, which ends the conversation.
 
 > `zalazun thebam vudurul. yal zalazun vezuvel.`
 >
@@ -272,7 +283,7 @@ A [quote](/spans#writing) keeps its speaker's frame: nothing carries into it fro
 ### Deduction (`thanam`) {#deduction}
 <a id="deduced"></a>
 
-English *it follows that*, *P, so Q* and *by deduction* claim more than good evidence: if the premises hold, the conclusion **must** hold. Put DEDUCED (**`thanam`**) on the conclusion and the premises after **`blarl`**, as in any [evidence clause](#evidence-clause). Join several premises with a [clause join](/joins#clause-joins); a join after a stand-in stays in the dependent, so every premise is grounds. You assert the premises and the conclusion.
+English *it follows that*, *P, so Q* and *by deduction* claim more than good evidence: if the premises hold, the conclusion must hold. Put DEDUCED (`thanam`) on the conclusion and the premises after `blarl`, as in any [evidence clause](#evidence-clause). Join several premises with a [clause join](/joins#clause-joins); a join after a stand-in stays in the dependent, so every premise is grounds. You assert the premises and the conclusion.
 
 > `zazozon veduyol thanam blarl zual gwozeduyol veduyol xam zazozon gwozeduyol.`
 >
@@ -280,7 +291,7 @@ English *it follows that*, *P, so Q* and *by deduction* claim more than good evi
 >
 > "Azozon teaches, since every teacher teaches and Azozon is a teacher."
 
-To claim only that the conclusion follows, put a [hinge](because-and-iff.md#only-because) between the channel and **`blarl`**. The hinge is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
+To claim only that the conclusion follows, put a [hinge](because-and-iff.md#only-because) between the channel and `blarl`. The hinge is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
 
 > `zazozon veduyol thanam thohem blarl zual gwozeduyol veduyol xam zazozon gwozeduyol.`
 >
@@ -296,9 +307,9 @@ To claim only that the conclusion follows, put a [hinge](because-and-iff.md#only
 | *P and Q come to the same thing* | Q `thanam thehom blarl` P | only the link, both ways |
 | *P rules out Q* | Q denied with `vul`, then `thanam thohem blarl` P | only that P and Q cannot both hold |
 
-The ending grades how far you checked the steps ([evidence strength](#evidence-strength)): **`thanal`** when you could write out every step, **`thanam`** when you could name the premises and the rule, **`thanar`** when it only seems to follow.
+The ending grades how far you checked the steps ([evidence strength](#evidence-strength)): `thanal` when you could write out every step, `thanam` when you could name the premises and the rule, `thanar` when it only seems to follow.
 
-When the premises come first, open the conclusion with the linker **`xahol`** *it follows that* ([sentence linkers](sentence-linkers.md#sentence-linkers)). It reaches back to the one sentence before it, so join every premise into that sentence.
+When the premises come first, open the conclusion with the linker `xahol` *it follows that* ([sentence linkers](sentence-linkers.md#sentence-linkers)). It reaches back to the one sentence before it, so join every premise into that sentence.
 
 > `zual gwozeduyol veduyol xam zazozon gwozeduyol. xahol zazozon veduyol.`
 >
