@@ -3,7 +3,7 @@
  * range and a rough token count, so a reader can pick the ranges to read
  * instead of opening the whole file.
  *
- * Run: npm run outline -- docs/proposals/style-pass.md
+ * Run: npm run outline -- docs/grammar/beginner/clause.md
  *      npm run outline -- --depth 2 AGENTS.md docs/meta/doc-style.md
  */
 import { readFileSync } from "node:fs";

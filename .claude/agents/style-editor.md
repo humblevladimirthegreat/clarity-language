@@ -19,6 +19,15 @@ When your prompt names a brief file, read that file first, in full: it is your b
 9. A warning you judge correct as it stands (for example a one-sentence lead after an H3 that made the job obvious) stays. Report it with the reason.
 10. When done, run `npm run wording-only -- <your pages>`, then `npm run lint:prose -- --update-baseline <your pages>` and check with `git diff src/lint/prose-style-baseline.json` that no count rose (a rise needs a reason in the report), then `npm run verify -- --allow-generate` (Bash timeout 300000). On a new error read only that line of `tmp/verify-last.log`. Do not commit. Edit nothing outside your pages and the baseline file.
 
+## Known traps
+
+- A bulk unbold must not turn bold English words (**is**, **no**) into code spans; unbold only Ageben letters, endings, and forms.
+- The Ageben lint rejects a letter group in one code span (`b d g`); write one span per letter. A cue-column letter in a `<!-- cheat-sheet: … -->` table that the cheat-sheet lint rejects as a code span stays bold; report it.
+- The prose lint ends a sentence at a `?` inside italics, so a list of *when?*, *where?* can trip `long-paragraph`.
+- A script that splits a page on `### Practice` must match the whole heading line; `#### Practiced …` headings exist.
+- A code span you add in a new page lead fails `wording-only` as a new span. That is expected: list those spans in the report.
+- **Compare with:**, **Related form:**, **Not the same job as:**, and **For *X*, use:** are house run-in labels. Keep them; rewrite the sentence after the label.
+
 Stop and report, without working around it, if a page's premise differs from your brief, if most sections on a page need facts you cannot find, or if the wording-only check cannot pass without a change outside your scope.
 
 At about 25 tool calls, check what is left. If it is small, finish the item, even past 25 calls. If a significant amount is left (more than a few edits, or pages you have not read yet), stop at a clean point, leave the tree green, and report: done, left (as steps), files touched.
