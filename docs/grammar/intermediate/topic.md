@@ -22,7 +22,7 @@ A topic is set only by an `/x/` word at the start of a sentence: `/x/`, then the
 2. **Introduce.** An `/x/` word on `-l`, `-m`, or `-n` that is not one of the six sentence linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xodozel` *now, about a dog*). Any [compound](/compounds) works the same way: a hyphenated name (`xazozoxalazun`), a noun pair (`xuwedaxubudal` *now, about peanut butter*), or a [role compound](/roles#role-compounds) (`xwuzeduyol` *now, about people who teach*; `xwuzeduyor` returns to it). It takes the same adjectives and hooks as any noun (`xodozel om bazozon` *now, about Azozon's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it.
 3. **Return.** `/x/` + the whole stem of an earlier word + **-r** makes that thing the topic again.
 4. **Clear.** `xevewom` and `xavedam` each open a new frame. After either there is no topic until the next introduce or return.
-5. **Persist.** The topic holds until rule 2, 3, or 4 changes it. Clause joins, other linkers, and agenda numbering leave it alone. A goodbye ends the conversation and clears it.
+5. **Persist.** The topic holds until rule 2, 3, or 4 changes it. Clause joins, other linkers, and agenda numbering (numbering the points of a talk: *point 3*, or a sub-point under it) leave it alone. A goodbye ends the conversation and clears it.
 6. **Where.** A topic word opens a sentence in your own talk, or in a quote. It never follows a clause join and never sits inside a dependent or an aside.
 
 > `xazozon.`

@@ -191,7 +191,7 @@ English time words (*today*, *previously*, *continue*) mostly use the same chann
 | *tonight* | today plus *at night*: `theyom blazurom gramol` and **`herom blanurul`** |
 | *last night* / *tomorrow night* | a channel with one day back or ahead, plus *at night*: `thevum blazurom grubal herom blanurul` |
 | *recently* / *recent* | a channel + **`blruwum`** (*a short while before now*; **`blruwul`** is *just now*) |
-| *forever* / *permanent* | a measure phrase with an unbounded amount: `bovuvam grawal` (for `permanent`, add **`hawum`**) |
+| *forever* / *permanent* | a measure phrase with an unbounded amount: `bovuvam grawal` (for *permanent*, add **`hawum`**) |
 | *eventually* / *ultimately* | **`xrowal`** opens the last point (*Finally, …*) |
 | *whenever* | **`herom blual`** + the occasion as a quality: `herom blual gerulal` |
 | *currently* / *nowadays* / *at present* / *modern* / *contemporary* | LIVE **`thugem`** when it is in view; otherwise the bare verb, which reports this stretch |

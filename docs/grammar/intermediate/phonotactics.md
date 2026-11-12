@@ -42,7 +42,7 @@ Each vowel keeps its [pitch](/phonology#vowel-pitch) in a stack, so every stack 
 
 Every stack that starts with `u` falls, and every other stack rises (cue: a fall means `u`). In grammar words a `u` stack is usually the *undo* or *set aside* member of its family, so you can hear which side a stack is on from its direction alone, before the second vowel is clear. The direction only confirms what the vowels say; when the two disagree, trust the vowels.
 
-A word that starts with `x` is a different form: the [continue](/speech-moves#continue-x) prefix, which adds a sentence to the speech move you already started. It is not a compound seam.
+**Related form:** a word that starts with `x` carries the [continue](/speech-moves#continue-x) prefix, which adds a sentence to the speech move you already started. It is not a compound seam.
 
 ### Number-word exception {#number-word-exception}
 
@@ -68,6 +68,8 @@ A [hosted extra noun](/clause#extra-nouns) writes `l` after its `b`. When that w
 |--------|-----|
 | `bral` | /bɹäl/ |
 | `blral` | /bl̩.ɹäl/ |
+
+Because the `l` is a beat of its own, no syllable inside the word ends on a consonant, so a consonant that closes a beat still tells the listener the word has ended ([Phonology](/phonology)).
 
 This is the only beat with no vowel letter. Like a vowel, you can hold it. Before a vowel, `bl` is one ordinary start of a beat (`blazozon` /blʉ.zo̞.ze̞n/).
 

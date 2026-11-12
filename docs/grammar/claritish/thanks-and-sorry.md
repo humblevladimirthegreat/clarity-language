@@ -36,6 +36,8 @@ The ending is the settled-to-passing scale again:
 | `-m` | thank you (the default) | I'm sorry (the default) |
 | `-r` | that got me through right now | my bad |
 
+When your English already says what the act did for you (*thanks for the ride, I'd have been soaked*), you don't need the drop-in.
+
 ## Examples {#examples}
 
 > You covered my shift. `thobatham`.  

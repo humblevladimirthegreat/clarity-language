@@ -18,6 +18,8 @@ Double a mark for more: `!!` is stronger still, `??` is very unsure. Stack diffe
 
 Write the mark before what it colors, so the reader sees the tone before reading the words. Attach it to a word to color that word. Put it at the start of the sentence to color the whole sentence. A `!` at the end of a sentence is still ordinary English punctuation.
 
+When the words already make the tone plain (*just kidding*, *love you*), leave the mark off.
+
 ## Examples {#examples}
 
 > %You're the worst.  

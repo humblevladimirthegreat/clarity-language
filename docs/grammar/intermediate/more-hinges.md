@@ -49,7 +49,7 @@ English can place one thing in time rather than the whole event (*the walk after
 >
 > "Alazun sees the walk after the thunderstorm." (*after the thunderstorm* says which walk)
 
-Ordinary `zabal` is still *a backpack*.
+**Compare with:** *before* `gabam` is built on the root of `zabal` (*a backpack*, packed ahead of time). As an ordinary noun, `zabal` still means *a backpack*.
 
 ### Practice {#intermediate-practice}
 

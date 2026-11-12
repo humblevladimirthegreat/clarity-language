@@ -514,7 +514,7 @@ An English date can say when the event happened, or set the “now” that a lef
 
 **Needs:** [Ordinals](/numbers#ordinals)
 
-When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](/numbers) (`g#N`), not a closed overlay. *Problem* and *solution* take the published `-m` senses; *goal* is already the `-l` literal. Prefer at least **`grobal`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
+When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use the ordinary nouns plus a free [ordinal](/numbers) (`g#N`). *Problem* and *solution* take the published `-m` senses; *goal* is already the `-l` literal. Prefer at least **`grobal`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
 
 > `zazozon degewom grodol vezuyol.`
 > z-Azozon | [d-solution | g-2nd] | v-tell

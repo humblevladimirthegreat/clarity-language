@@ -17,6 +17,8 @@ The endings are back on the settled-to-passing scale: `-l` for good, `-m` the de
 
 A trial run (`howar`) plans for failure: if it doesn't work, finding that out was the point. Use it to lower the stakes of starting something, for yourself or for someone else.
 
+When the English already says how settled you are (*for now*, *for good*, *just trying it*), leave the drop-in off.
+
 ## Examples {#examples}
 
 > I'm going vegetarian `howar`.  

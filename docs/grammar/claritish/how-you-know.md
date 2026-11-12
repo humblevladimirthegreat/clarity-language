@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-English doesn't mark whether a claim was seen, remembered, worked out, or heard from someone. A rumor can pass for an eyewitness report, and a strong hunch from the clues can pass for a proof. In Ageben, a claim can carry a word for its **evidential channel**: how you came to know it.
+English often leaves out how you know a claim, and when it does say, *I heard* doesn't tell a solid source from a rumor, nor *I remember* a vivid memory from a hazy one. *Obviously* or *must have* lets a strong hunch from the clues pass for a proof. In Ageben, a claim can carry a word for its **evidential channel**: how you came to know it.
 
 ## The forms {#forms}
 

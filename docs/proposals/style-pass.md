@@ -1,6 +1,6 @@
 # Style pass
 
-**Status:** partially implemented. Decided 2026-11-11: a rising warning count fails the build on every page (the ratchet); recipe pages, cheat sheets, and level reviews get which-page rows; headings that need a retitle are logged and retitled together in H1; the user reviews each phase before the next starts; forms take bold only where introduced. **Phase 1 done 2026-11-11** (T1, T2, T3, C1). **Phase 2 done 2026-11-12** (B2 to B5). **Phase 3 done 2026-11-12** (B6 to B9; Beginner is finished). `purpose.md` and `introduction.md` were already rewritten to [orientation-style.md](../meta/orientation-style.md), so the pass skips them. Decided 2026-11-12: a page with two or more teaching sections needs a page lead (rule in [doc-style.md](../meta/doc-style.md#which-page)); 15 Intermediate and 9 Advanced pages lack one and get it in their units. **Phase 4 done 2026-11-12** (B10, O2, O3, O4; the recipe track and Claritish are finished, and the English-helper recall check passed). Decided 2026-11-12: Claritish further-inventory sections and run-in labels are now rules in [claritish-style.md](../meta/claritish-style.md#forms). **Phase 5 done 2026-11-12** (I1 to I6). Next: the user reviews the Phase 5 diffs (commits `497b4b38` to `c4164e52`), then Phase 6.
+**Status:** partially implemented. Decided 2026-11-11: a rising warning count fails the build on every page (the ratchet); recipe pages, cheat sheets, and level reviews get which-page rows; headings that need a retitle are logged and retitled together in H1; the user reviews each phase before the next starts; forms take bold only where introduced. **Phase 1 done 2026-11-11** (T1, T2, T3, C1). **Phase 2 done 2026-11-12** (B2 to B5). **Phase 3 done 2026-11-12** (B6 to B9; Beginner is finished). `purpose.md` and `introduction.md` were already rewritten to [orientation-style.md](../meta/orientation-style.md), so the pass skips them. Decided 2026-11-12: a page with two or more teaching sections needs a page lead (rule in [doc-style.md](../meta/doc-style.md#which-page)); 15 Intermediate and 9 Advanced pages lack one and get it in their units. **Phase 4 done 2026-11-12** (B10, O2, O3, O4; the recipe track and Claritish are finished, and the English-helper recall check passed). Decided 2026-11-12: Claritish further-inventory sections and run-in labels are now rules in [claritish-style.md](../meta/claritish-style.md#forms). **Phase 5 done 2026-11-12** (I1 to I6). Next: the user reviews the Phase 5 diffs (commits `497b4b38` to `c4164e52`), then Phase 6. Decided 2026-11-12: the four Claritish lessons that lacked one now say when to leave the drop-in out (where the English already says it).
 
 **Related:** [doc-style.md](../meta/doc-style.md), [claritish-style.md](../meta/claritish-style.md), [orientation-style.md](../meta/orientation-style.md), [grammar-docs.md](../meta/grammar-docs.md), [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts), [prose-style.ts](../../src/lint/prose-style.ts), [prose-style-baseline.json](../../src/lint/prose-style-baseline.json), [sections.ts](../../src/lint/sections.ts), [style-editor.md](../../.claude/agents/style-editor.md)
 
@@ -35,6 +35,7 @@ Each prose unit is one fresh `style-editor` subagent on one sidebar unit from `r
 - Cue-column letters in `<!-- cheat-sheet: … -->` tables go in backticks, unless the cheat-sheet lint rejects a letter the cheat sheet lacks; then the letter stays bold and is reported. Each marker sits above its table, never between the header and separator rows.
 - Examples stay where they stand. Add or drop a code span or link only when you must, since the wording-only check compares them. A unit of more than about 1,500 lines may stop at the turn check. A fresh `style-editor` then finishes the pages it names as left, under the same unit id.
 - Forms take bold only where introduced.
+- **Compare with:** and **Related form:** are the house run-in labels ([grammar-docs.md](../meta/grammar-docs.md#compare-with)). Keep them; rewrite the sentence after the label, never the label into prose.
 - A page with two or more teaching sections (not counting Practice and See also) and no lead between the H1 and the first H3 gets one that previews each section in at most one sentence, from what the sections already say ([which page](../meta/doc-style.md#which-page), *the lead of a whole page*). A page with one teaching section keeps its one lead where it is.
 - The Ageben lint rejects a letter group in one code span (`b d g`); write one span per letter (`b`, `d`, `g`).
 - A script that splits a page on `### Practice` must match the whole heading line; `#### Practiced …` headings exist.
@@ -146,26 +147,11 @@ Headings that prose units reported under rule 7 of the digest, each with its pag
 
 Sections that prose units reported under rule 6: the section needs a consequence or a *when* that no page states. Each needs a user decision or an owner-page edit; the pass does not fill them.
 
-[claritish-style.md](../meta/claritish-style.md) asks each lesson's forms section to mark where the drop-in is unnecessary. These four do not, and no page states a place or a *when*:
-
-- `claritish/thanks-and-sorry.md#forms`
-- `claritish/allowed-required-agreed.md#forms`
-- `claritish/decisions-and-tries.md#forms` (O4 added the placement sentence from `index.md`, but not where to leave it out)
-- `claritish/tone-marks.md#marks`
-
-Grammar sections:
-
-- `phonotactics.md#syllabic-l`: a pronunciation section that never says what a listener gains from hearing the `l` as its own beat
+None open.
 
 ### Fixes outside the pass
 
-Faults a prose unit found but could not fix within its scope. Each needs an edit the pass does not make.
-
-- `claritish/how-you-know.md#gap` quotes no English words in italics, as a gap should. Quoting them needs matching cue rows in [claritish-triggers.csv](../../data/claritish-triggers.csv).
-- `say-tense.md`, time-words table: the cell *(for `permanent`, add …)* has the English word in a code span; it should be italic. Code spans are frozen in the pass.
-- `say-amounts.md`, numbered alternatives: *closed overlay* is unglossed and its section links no owner.
-- `more-hinges.md#time-hinge-on-noun` ends with *Ordinary `zabal` is still a backpack*, a contrast the section never explains. Cutting it drops a code span, which the pass freezes.
-- `topic.md`, `#topic` and `#topic-resets`: agenda numbering (`x#N`, outline depth) is named but neither explained nor linked to an owner.
+Faults a prose unit found but could not fix within its scope. None open; add any a later unit reports.
 
 ### Gates
 

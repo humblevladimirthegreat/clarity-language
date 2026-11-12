@@ -58,7 +58,7 @@ What counts as one depends on what the name names:
 
 An `-ln` word is a new mention, so a lone `zazozoln.` is *there is an Azozon*, and a later `-r` resume (`dazozor`) is that same bed, not the brand. A foreign name in a span uses the fence mark `^@` for the same job ([spans](/spans#when-required)).
 
-Two nearby forms mean something else. `gazozon` after a noun puts it in the brand (`zoyahel gazozon` *the bed is an Azozon*), and `-l` on the root is the root’s own sense: `dazozol` is *a swan*.
+**Compare with:** `gazozon` after a noun puts it in the brand (`zoyahel gazozon` *the bed is an Azozon*), and `-l` on the root is the root’s own sense: `dazozol` is *a swan*.
 
 ### Countries and traditions {#countries-traditions}
 
@@ -151,7 +151,7 @@ A business or product name uses the same pieces. A compact label is one `x` word
 
 A nativized loan (a foreign word adapted into an Ageben root, plus an ordinary ending) takes the same four endings as any content word. A **dictionary compound** also fills one role: it is one stem, written without mid-word `x` (`zoyahehal` *bedroom*).
 
-Do not confuse a full name with a sentence. `zalon golowon.` alone is a sentence: *Alon is an Olowon* ([classification](/predication#classification)). The citation `alon golowon` has no role letter, so it only names. Two people in one role take a [join](/joins#right-close) after them (`zalon zolowon zal`).
+**Compare with:** `zalon golowon.` alone is a sentence: *Alon is an Olowon* ([classification](/predication#classification)). The citation `alon golowon` has no role letter, so it only names. Two people in one role take a [join](/joins#right-close) after them (`zalon zolowon zal`).
 
 ### Practice {#intermediate-practice}
 

@@ -46,9 +46,9 @@ At arrival, the other person can answer with their own bid. The lesser bid sets 
 >
 > "Alazun here. I only have time for one thing."
 
-The same `x` + vowel means something else on other words. On a verb or adjective it is ability (*can’t sing right now*), and a [sake](/sakes) word takes `th` + vowel instead (`guwathal`). A bid sits only on a named citation or a `/y/` call, with `-n`. In a clause body, a name with `x`, a vowel, and `-n` is not a word.
+**Compare with:** on a verb or adjective, the same `x` + vowel is ability (*can’t sing right now*), and a [sake](/sakes) word takes `th` + vowel instead (`guwathal`). A bid sits only on a named citation or a `/y/` call, with `-n`. In a clause body, a name with `x`, a vowel, and `-n` is not a word.
 
-Without the vowel, a named citation with a period is the basic hello (`SELFn.`). The bid adds how much conversation the person is open to.
+**Compare with:** without the vowel, a named citation with a period is the basic hello (`SELFn.`). The bid adds how much conversation the person is open to.
 
 At departure, use your own name with the reduced level:
 

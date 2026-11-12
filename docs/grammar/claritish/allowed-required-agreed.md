@@ -17,6 +17,8 @@ Here the endings say something new: the **source** of the yes or no. `-l` is a r
 
 On the consent words, `-r` is allowed but visibly weaker: it puts *I assumed* into the sentence instead of hiding it.
 
+When the English already says whose yes it is (*the rules say*, *she said it's fine*), leave the drop-in off. *Can* meaning *able* (*I can swim*) involves no one's yes, so there is nothing to mark.
+
 ## Examples {#examples}
 
 > I borrowed your car `hwudar`. I should have asked for `hwudam`.  
