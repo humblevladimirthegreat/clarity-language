@@ -15,17 +15,17 @@ A `/y/` word starts a new turn and goes before the body of the clause. A `/y/` w
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Call someone](/speech-moves#vocative): `/y/` + name (**-n**) | `yalazun.` | *Alazun!* | B |
-| [Call a kind](/speech-moves#vocative): `/y/` + kind with **-n** | `yagayun` | *Guard!* (come here) | B |
-| [Reaction](/speech-moves#interjections-reactions): `/y/` + root with **-l** / **-m** | `yemel.` / `yemem.` | *What a surprise!* / *Amazing!* | B |
-| [Reaction, not a call](/speech-moves#interjections-reactions): **-l** vs **-n** | `yagayul` | *Guard!* (an alarm) | B |
+| [Call someone](/speech-moves#vocative): `/y/` + name (`-n`) | `yalazun.` | *Alazun!* | B |
+| [Call a kind](/speech-moves#vocative): `/y/` + kind with `-n` | `yagayun` | *Guard!* (come here) | B |
+| [Reaction](/speech-moves#interjections-reactions): `/y/` + root with `-l` / `-m` | `yemel.` / `yemem.` | *What a surprise!* / *Amazing!* | B |
+| [Reaction, not a call](/speech-moves#interjections-reactions): `-l` vs `-n` | `yagayul` | *Guard!* (an alarm) | B |
 | [Call a group](/collectives#vocatives-y) | `yawanx` | *hey, you all* | I |
 
 ## Speech acts {#acts}
 
-The vowel picks the act: **a** statement, **o** command, **e** question, **u** prohibition. A period already marks a statement, so `yal` is usually left out.
+The vowel picks the act: `a` statement, `o` command, `e` question, `u` prohibition. A period already marks a statement, so `yal` is usually left out.
 
-| Act | Firm **-l** | Soft **-m** | For now **-r** | Stage |
+| Act | Firm `-l` | Soft `-m` | For now `-r` | Stage |
 |-----|-------------|-------------|----------------|-------|
 | statement | [`yal`](/speech-moves#speech-act-beginner) *(often omitted)* | [`yam`](/firm-soft#speech-act) *for what it's worth* | [`yar`](/firm-soft#act-r) *as things stand* | B |
 | question | [`yel`](/speech-moves#speech-act-beginner) | [`yem`](/firm-soft#speech-act) *I wonder* | [`yer`](/firm-soft#act-r) *just checking* | B |
@@ -113,7 +113,7 @@ A stance word says in words how you are speaking, where a tone mark only changes
 | [Yes/no question](/questions#question) | `yel zazozon vowurol.` | *Does Azozon walk?* | B |
 | [Gentler](/questions#question) | `yem zalazun vezuvel.` | *Is Alazun sleeping, I wonder?* | B |
 | [No body: ask about what was just said](/questions#question) | `yel.` | *Huh?* | B |
-| [Fill one blank](/questions#fill-ask-r): join **-r** in the slot | `yel zar vowurol.` | *Who walks?* | B |
+| [Fill one blank](/questions#fill-ask-r): join `-r` in the slot | `yel zar vowurol.` | *Who walks?* | B |
 | [Fill every blank](/questions#fill-all) | `yel zar dar vayebel.` | *Who sees what?* | B |
 | [One blank, one known](/questions#fill-all) | `yel zar dodozel vayebel.` | *Who sees a dog?* | B |
 | [Rise on the blank](/questions#question-tone) | `yel ?zar vowurol.` | *Who walks?* | B |
@@ -149,10 +149,10 @@ The reply to a fill-ask is the fill as a [citation](/word-endings#citation-forms
 
 ### Fill-ask by vowel and count {#arity}
 
-The blank **-r** takes a vowel; the count is how many items you listed before it ([fill-ask arity](/fill-ask-roles#fill-ask-arity)).
+The blank `-r` takes a vowel; the count is how many items you listed before it ([fill-ask arity](/fill-ask-roles#fill-ask-arity)).
 
 <!-- cheat-sheet: talking -->
-| Items listed | **…ar** | **…er** | **…or** | **…ur** | Stage |
+| Items listed | `…ar` | `…er` | `…or` | `…ur` | Stage |
 |--------------|---------|---------|---------|---------|-------|
 | **0** | *who/what?* | *anything?* | *what's the priority?* | *what else?* | I |
 | **1** | *which X?* | *any X?* | *which X is first?* | *what else besides X?* | I |
@@ -187,14 +187,14 @@ The blank **-r** takes a vowel; the count is how many items you listed before it
 Write `y`, two vowels, then an ending. A turn holds one polar word; an answer followed by a question is two turns.
 
 <!-- cheat-sheet: talking -->
-| Stance | **-l** firm | **-m** soft | **-r** for now | Stage |
+| Stance | `-l` firm | `-m` soft | `-r` for now | Stage |
 |--------|-------------|-------------|----------------|-------|
-| [**`ao`**](/polar-inventory#polar-endings) accept, match | `yaol` *yes* / *will do* | `yaom` *I think so* | `yaor` *true, for now* | B / I |
-| [**`uo`**](/polar-inventory#polar-endings) refuse, mismatch | `yuol` *no* / *I won't* | `yuom` *I don't think so* | `yuor` *not so, for now* | B / I |
-| [**`ae`**](/polar-inventory#polar-endings) take up an option | `yael` *sure* | `yaem` *okay* | `yaer` *fine, for now* | B / I |
-| [**`ue`**](/polar-inventory#polar-endings) reject this option | `yuel` *not that* | `yuem` *nah* | `yuer` *not that, for now* | I |
-| [**`ua`**](/polar-inventory#polar-endings) reject the premise | `yual` *the question doesn't apply* | `yuam` *it's more complicated* | `yuar` *it doesn't apply, for now* | I |
-| [**`oe`**](/polar-inventory#polar-endings) decline to answer | `yoel` *I won't answer* | `yoem` *I'd rather not say* | `yoer` *pass, for now* | I |
+| [`ao`](/polar-inventory#polar-endings) accept, match | `yaol` *yes* / *will do* | `yaom` *I think so* | `yaor` *true, for now* | B / I |
+| [`uo`](/polar-inventory#polar-endings) refuse, mismatch | `yuol` *no* / *I won't* | `yuom` *I don't think so* | `yuor` *not so, for now* | B / I |
+| [`ae`](/polar-inventory#polar-endings) take up an option | `yael` *sure* | `yaem` *okay* | `yaer` *fine, for now* | B / I |
+| [`ue`](/polar-inventory#polar-endings) reject this option | `yuel` *not that* | `yuem` *nah* | `yuer` *not that, for now* | I |
+| [`ua`](/polar-inventory#polar-endings) reject the premise | `yual` *the question doesn't apply* | `yuam` *it's more complicated* | `yuar` *it doesn't apply, for now* | I |
+| [`oe`](/polar-inventory#polar-endings) decline to answer | `yoel` *I won't answer* | `yoem` *I'd rather not say* | `yoer` *pass, for now* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -220,7 +220,7 @@ After your sentence, write `yel` and a polar word as a turn of its own. It asks 
 
 | This | vs | That |
 |------|----|------|
-| `yalazun` *Alazun!* ([a call, **-n**](/speech-moves#vocative)) | | `zalazun vowurol` *Alazun walks* ([a subject](/speech-moves#vocative)) |
+| `yalazun` *Alazun!* ([a call, `-n`](/speech-moves#vocative)) | | `zalazun vowurol` *Alazun walks* ([a subject](/speech-moves#vocative)) |
 | `yagayun` *Guard!* ([call the guard](/speech-moves#interjections-reactions)) | | `yagayul` *Guard!* ([an alarm](/speech-moves#interjections-reactions)) |
 | `yel` *question* ([asks](/questions#question)) | | `?` *unsure voice* ([only sounds unsure](/tone-marks#tone-marks)) |
 | `yul` *don't* ([prohibition](/speech-moves#speech-act-beginner)) | | `yuol` *no, false* ([answers a claim](/questions#polar-particle)) |

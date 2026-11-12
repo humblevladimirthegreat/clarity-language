@@ -6,30 +6,6 @@
   "beginner/word-endings.md": {
     "bold-density": 1
   },
-  "cheat-sheets/comparing.md": {
-    "bold-density": 1
-  },
-  "cheat-sheets/consonants.md": {
-    "bold-density": 1,
-    "long-paragraph": 1
-  },
-  "cheat-sheets/joins-hooks.md": {
-    "bold-density": 1,
-    "long-paragraph": 1
-  },
-  "cheat-sheets/knowing-intending.md": {
-    "bold-density": 1
-  },
-  "cheat-sheets/people-pointing.md": {
-    "bold-density": 1
-  },
-  "cheat-sheets/roles.md": {
-    "bold-density": 2
-  },
-  "cheat-sheets/why-allowed.md": {
-    "bold-density": 1,
-    "long-paragraph": 1
-  },
   "inspect.md": {
     "long-paragraph": 1
   },
@@ -38,8 +14,5 @@
   },
   "say-reasons.md": {
     "bold-density": 1
-  },
-  "terminology.md": {
-    "bold-density": 6
   }
 }

@@ -7,7 +7,7 @@ outline: false
 
 # Knowing and intending cheat sheet {#knowing-intending-cheat-sheet}
 
-[Knowing](/knowing), [notional and standing](/residue-and-former), and [intention](/intention). Stage: **B** Beginner, **I** Intermediate, **A** Advanced. Ending: **-l** firm, **-m** default, **-r** for now.
+A quick look at [knowing](/knowing), [notional and standing](/residue-and-former), and [intention](/intention). Stage: **B** Beginner, **I** Intermediate, **A** Advanced. Endings: `-l` firm, `-m` default, `-r` for now.
 
 ## How you know {#how-you-know}
 
@@ -28,10 +28,10 @@ Pick one channel. LIVE and MEMORY place the event in time; the others do not.
 
 ### Evidence strength {#strength}
 
-The ending grades evidence, not how sure you feel or how likely the event is: **-l** show, **-m** describe, **-r** gesture.
+The ending grades evidence, not how sure you feel or how likely the event is: `-l` show, `-m` describe, `-r` gesture.
 
 <!-- cheat-sheet: knowing-intending -->
-| Channel | Graded on | **-l** show | **-m** describe | **-r** gesture | Stage |
+| Channel | Graded on | `-l` show | `-m` describe | `-r` gesture | Stage |
 |---------|-----------|-------------|-----------------|----------------|-------|
 | [LIVE](/evidentiality#evidence-strength) | clarity of view | `thugel` a clear view | `thugem` | `thuger` a glimpse | I |
 | [MEMORY](/evidentiality#evidence-strength) | vividness | `thevul` a vivid memory | `thevum` | `thevur` a hazy memory | I |
@@ -59,9 +59,9 @@ The ending grades evidence, not how sure you feel or how likely the event is: **
 
 | Offset | Sign | Stage |
 |--------|------|-------|
-| [`thevum` MEMORY](/dated-channel#dated-channel) | **`-`** only | I |
+| [`thevum` MEMORY](/dated-channel#dated-channel) | `-` only | I |
 | [`thugem` LIVE](/dated-channel#dated-channel) | no offset | I |
-| [`thubom` PATTERN](/dated-channel#dated-channel) | **`-`** or **`+`** | I |
+| [`thubom` PATTERN](/dated-channel#dated-channel) | `-` or `+` | I |
 
 After a channel, a `bl-` person or thing is the [source](/evidentiality#source); a time measure is the [offset](/dated-channel#dated-channel). `blarl` takes only CLUES, PATTERN, and DEDUCED.
 
@@ -88,7 +88,7 @@ What sits before `blarl` is what you assert: the channel alone asserts the premi
 
 ### Whose view {#holder}
 
-Join the name to a channel, MAY, or NOTIONAL: keep the word's last letter and write the name straight after it. The name keeps its own **-n**, which is never the seam.
+Join the name to a channel, MAY, or NOTIONAL: keep the word's last letter and write the name straight after it. The name keeps its own `-n`, which is never the seam (the joining letter: the word's own last letter that you kept).
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -101,7 +101,7 @@ Join the name to a channel, MAY, or NOTIONAL: keep the word's last letter and wr
 
 ### Keeping a channel {#carry}
 
-A channel you name is your frame, and later claims of yours keep it. See [carrying a channel forward](/evidentiality#carry-forward).
+A channel you name carries forward: your later claims keep it. See [carrying a channel forward](/evidentiality#carry-forward).
 
 | It keeps the frame | It ends the frame |
 |--------------------|-------------------|
@@ -109,7 +109,7 @@ A channel you name is your frame, and later claims of yours keep it. See [carryi
 | [a new topic, sentence linkers, asides](/evidentiality#carry-forward) | [`yal` written out](/evidentiality#carry-forward) |
 | [MAY](/evidentiality#carry-forward) · [MIRATIVE](/mirative#mirative) | [`xavedam` *by the way*, or a goodbye](/evidentiality#carry-forward) |
 
-A question, command, request, or prohibition does not take the frame, and does not end it.
+A question, command, request, or prohibition does not take the carried channel, and does not end it.
 
 <PageBreak />
 
@@ -148,10 +148,10 @@ Neither MAY nor MIRATIVE can be a [comparison bar](/bars#channel-bars).
 
 ### Already, still, not yet, no longer {#phasal}
 
-Each compares what is true now with a change. Not a tense. **-l** is settled, **-m** could change back, **-r** only for now. *Not yet* is a `/th/` stance, since it waits on an expectation; its ending says how firmly you expect the change.
+Each compares what is true now with a change, and none is a tense. `-l` is settled, `-m` could change back, and `-r` holds only for now. *Not yet* is a `/th/` stance, since it waits on an expectation; its ending says how firmly you expect the change.
 
 <!-- cheat-sheet: knowing-intending -->
-| Meaning | **-l** | **-m** | **-r** | Stage |
+| Meaning | `-l` | `-m` | `-r` | Stage |
 |---------|--------|--------|--------|-------|
 | *already* | [`havel`](/already-still-yet#phasal) *for good* | `havem` | `haver` *for now* | I |
 | *still* | [`hawul`](/already-still-yet#phasal) *and will keep on* | `hawum` | `hawur` *about to end* | I |
@@ -162,7 +162,7 @@ For *has ever*, use `havem` with `har`; *has never* is `hal` ([ever / never](/al
 
 ## Intending {#intending}
 
-A want, a plan, and a decision are three steps, and they stack in that order. A want, a plan, and a decision are all `/th/` words (yours unless a holder names someone else), and none says the act happens.
+A want, a plan, and a decision are three steps, and they stack in that order. All three are `/th/` words (yours unless a holder names someone else), and none says the act happens.
 
 <!-- generated: overlays pos=th|h kind=want|plan|decision|attempt -->
 | Ageben | English | Taught in | Stage |

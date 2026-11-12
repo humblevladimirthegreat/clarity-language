@@ -11,13 +11,13 @@ A quick look at [comparatives](/comparatives), [comparative scales](/comparative
 
 ## More, as much, less {#comparing}
 
-Write the names, then the rank join, then the shared adjective on `/ɡ/`. **`e`** ranks the first higher; **`ue`** the first lower; **`oe`** ties. **-l** is firm, **-m** open.
+Write the names, then the rank join, then the shared adjective on `/ɡ/`. `o` ranks the first higher; `uo` the first lower; `oe` ties. `-l` is firm, `-m` open.
 
 <!-- cheat-sheet: comparing -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [Rank **`o`** (`zol`)](/comparatives#comparatives) | rank on a shared quality | *more … than* / *the …-est* | B |
-| [Equality **`oe`** (`zoel` / `zoem`)](/comparatives#equatives) | same height on the quality | *as … as* / *about as … as* | B |
+| [Rank `o` (`zol`)](/comparatives#comparatives) | rank on a shared quality | *more … than* / *the …-est* | B |
+| [Equality `oe` (`zoel` / `zoem`)](/comparatives#equatives) | same height on the quality | *as … as* / *about as … as* | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -38,9 +38,9 @@ Write the names, then the rank join, then the shared adjective on `/ɡ/`. **`e`*
 <!-- cheat-sheet: comparing -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**Multi (2+)** under **`o` / `uo`**](/comparative-arity#comparative-arity) | comparative ladder | earlier above later (`o`); later above earlier (`uo`; **`u`** reverses rank) | I |
-| [**Single-item (1)** under **`o` / `uo`**](/comparative-arity#comparative-arity) | superlative | *the …-est* / *the least …* | I |
-| [**Standalone (0)** under **`o` / `uo`**](/comparative-arity#comparative-arity) | empty superlative | *there is no biggest*; open **-m** = none comes to mind | I |
+| [Two or more names under `o` / `uo`](/comparative-arity#comparative-arity) | comparative ladder | earlier above later (`o`); later above earlier (`uo`; `u` reverses rank) | I |
+| [One name under `o` / `uo`](/comparative-arity#comparative-arity) | superlative | *the …-est* / *the least …* | I |
+| [No names under `o` / `uo`](/comparative-arity#comparative-arity) | empty superlative | *there is no biggest*; open `-m` = none comes to mind | I |
 
 <!-- cheat-sheet: comparing -->
 | Example | Reading | Stage |
@@ -79,9 +79,9 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 <!-- cheat-sheet: comparing -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [name + bar + **`zol`**](/bars#bars) | above the bar | *more than planned* / *later than planned* | I |
-| [name + bar + **`zuol`**](/bars#bars) | below the bar | *less than planned* / *earlier than planned* | I |
-| [name + bar + **`zoel`**](/bars#bars) | at the bar | *as planned* | I |
+| [name + bar + `zol`](/bars#bars) | above the bar | *more than planned* / *later than planned* | I |
+| [name + bar + `zuol`](/bars#bars) | below the bar | *less than planned* / *earlier than planned* | I |
+| [name + bar + `zoel`](/bars#bars) | at the bar | *as planned* | I |
 | [bar after the fence](/bars#bars) | a stance on the whole claim | *plans to be the most …* | I |
 
 | Job | Example | English | Stage |
@@ -114,13 +114,13 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [NOTIONAL `theyum`](/stance-bars#stance-bars) | the imagined case | *than imagined* / *than in theory* | A |
 | [PLAN `thagom`](/stance-bars#stance-bars) | the plan or the schedule | *than planned* / *than scheduled* | A |
 | [WANT `thalol` / `thalom` / `thalor`](/stance-bars#stance-bars) | the level wanted | *than wanted* / *than I wanted* | A |
-| [ABIL `hodaxal`](/stance-bars#stance-bars) | what can be done | *as … as possible* | A |
+| [ability `hodaxal`](/stance-bars#stance-bars) | what can be done | *as … as possible* | A |
 | [a requirement `hwuvol` / `hwuvom` / `hwuvor`](/stance-bars#stance-bars) | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* | A |
 | [a permission `hwuval` / `hwuvam` / `hwuvar`](/stance-bars#stance-bars) | the rule, the grant, or what is tolerated | *over the limit* / *than they allow* | A |
 | [consent `hwudam`](/stance-bars#stance-bars) | the agreed terms | *more than agreed* | A |
 | [speaker attitude `thuwuyom`, `thewemum`](/stance-bars#stance-bars) | the case you hoped for or feared | *than hoped* / *than feared* | A |
 
-The bar's ending keeps its own job: on a channel it is evidence strength (`thubol`, `thubor`). The bar's `/b/` is the source (REPORTED), the one who demands or grants (a say word over the act), or whose cases set the pattern (PATTERN). Only stances that set a value are bars: a hinge, MAY, MIRATIVE, DECISION, and ATTEMPT are not.
+The bar's ending keeps its own job: on a channel it is evidence strength (`thubol`, `thubor`). The bar's `/b/` is the source (REPORTED), the one who demands or grants (a say word over the act), or whose cases set the pattern (PATTERN). Only stances that set a value are bars: a hinge, MAY, MIRATIVE (*it turns out*), DECISION, and ATTEMPT are not.
 
 ### Vague amounts {#vague}
 
@@ -129,10 +129,10 @@ English *many* and *often* rank against an unstated baseline. Ageben names the b
 <!-- cheat-sheet: comparing -->
 | English | Bar and rank | Stage |
 |---------|--------------|-------|
-| [*many* / *few*](/vague-amounts#vague-amounts) | PATTERN **`thubom`**, `zol` / `zuol` with `gral` | I |
-| [*often* / *rarely*](/vague-amounts#vague-amounts) | PATTERN **`thubom`**, `zol` / `zuol` with `hral` | I |
-| [late / early](/vague-amounts#vague-amounts) | PATTERN **`thubom`**, `zol` / `zuol` with `bral` | I |
-| [*than usual*](/vague-amounts#vague-amounts) (the same person or thing) | PATTERN **`thubom`** with no `/b/` | I |
+| [*many* / *few*](/vague-amounts#vague-amounts) | PATTERN `thubom`, `zol` / `zuol` with `gral` | I |
+| [*often* / *rarely*](/vague-amounts#vague-amounts) | PATTERN `thubom`, `zol` / `zuol` with `hral` | I |
+| [late / early](/vague-amounts#vague-amounts) | PATTERN `thubom`, `zol` / `zuol` with `bral` | I |
+| [*than usual*](/vague-amounts#vague-amounts) (the same person or thing) | PATTERN `thubom` with no `/b/` | I |
 | [*too much* / *enough* / *not enough*](/vague-amounts#vague-amounts) | a met sake bar (`thudatham`), `zol` / `zoel` / `zuol` | I |
 | [too late / too soon](/vague-amounts#vague-amounts) | a met sake bar (`thudatham`), `zol` / `zuol` with `bral` | I |
 

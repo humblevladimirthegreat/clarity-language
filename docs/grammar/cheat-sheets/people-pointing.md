@@ -15,33 +15,33 @@ A quick look at [pronouns](/pronouns), [topic](/topic), and [plurality](/plurali
 
 | You want | Use | Example | English | Stage |
 |----------|-----|---------|---------|-------|
-| [The same one again, by name](/pronouns#resume-r) | role letter + whole stem + **-r** | `zazozor` | *Azozon* (again) | B |
+| [The same one again, by name](/pronouns#resume-r) | role letter + whole stem + `-r` | `zazozor` | *Azozon* (again) | B |
 | [The same kind again](/pronouns#resume-r) | the same, on a kind | `zodozer` | *the dog* | B |
-| [By the part they played](/pronouns#role-pointers) | role letter + `wu` + part consonant + pointer vowel + **-r** | `zwuzer` | *the latest doer* | B |
-| [A new one of that kind](/pronouns#a-new-one) | the same pointer with **-l** | `dwudel` | *another one* (as object) | B |
-| [Their part, not them](/pronouns#share) | the same pointer with **-m** | `zwuzem` | *what the doer did* | B |
-| [Pin one sense](/resume-sense#resume-sense) | **-rl** concrete, **-rm** abstract | `dodozerl` | *the dog* (not the loyalty) | I |
+| [By the part they played](/pronouns#role-pointers) | role letter + `wu` + part consonant + pointer vowel + `-r` | `zwuzer` | *the latest doer* | B |
+| [A new one of that kind](/pronouns#a-new-one) | the same pointer with `-l` | `dwudel` | *another one* (as object) | B |
+| [Their part, not them](/pronouns#share) | the same pointer with `-m` | `zwuzem` | *what the doer did* | B |
+| [Pin one sense](/resume-sense#resume-sense) | `-rl` concrete, `-rm` abstract | `dodozerl` | *the dog* (not the loyalty) | I |
 | [A label you chose](/tag-pronouns#tag-pronouns) | role letter + `w` + tag vowel | `zwar` | *A* | I |
-| [The talk's topic](/topic#topic-pronoun) | `ale` + **-n** | `zalen` | *the topic* | I |
+| [The talk's topic](/topic#topic-pronoun) | `ale` + `-n` | `zalen` | *the topic* | I |
 
 ### Role pointers {#role-pointers}
 
-Slot now, then **`wu`**, a **part consonant** (the old role letter), a **pointer vowel**, then the ending. A resume uses the **whole stem**. See [role pointers](/pronouns#role-pointers).
+A role pointer is the role letter for its role now, then `wu`, a part consonant (the role letter it had before), a pointer vowel, then the ending. A resume uses the whole stem instead. See [role pointers](/pronouns#role-pointers).
 
 | Part consonant | Part in the earlier event | Where it sat | Example | Stage |
 |----------------|---------------------------|--------------|---------|-------|
-| **z** | the doer | `/z/` | `zwuzer` | B |
-| **d** | the one it happens to | `/d/` | `dwuder` | B |
-| **b** | the extra party | `/b/` | `zwuber` | B |
+| `z` | the doer | `/z/` | `zwuzer` | B |
+| `d` | the one it happens to | `/d/` | `dwuder` | B |
+| `b` | the extra party | `/b/` | `zwuber` | B |
 
 | Pointer vowel | Picks | Example | English | Stage |
 |---------------|-------|---------|---------|-------|
-| **e** | [the latest sentence with someone in that part](/pronouns#role-pointers) | `zwuzer` | *they* | B |
-| **a** | [the nearest one other than the last](/pronouns#the-other-one) | `zwuzar` | *the other one* | B |
-| **o** | [this sentence's own event](/pronouns#themself) | `dwuzor` | *themself* | B |
-| **u** | [the latest sentence that left the part unsaid](/pronouns#whoever-it-was) | `zwuzur` | *whoever did it* | B |
+| `e` | [the latest sentence with someone in that part](/pronouns#role-pointers) | `zwuzer` | *they* | B |
+| `a` | [the nearest one other than the last](/pronouns#the-other-one) | `zwuzar` | *the other one* | B |
+| `o` | [this sentence's own event](/pronouns#themself) | `dwuzor` | *themself* | B |
+| `u` | [the latest sentence that left the part unsaid](/pronouns#whoever-it-was) | `zwuzur` | *whoever did it* | B |
 
-Endings: **-r** the same one, **-l** [a new one](/pronouns#a-new-one) (not with **u**), **-m** [their part](/pronouns#share) (not with **o**). A pointer never names its own slot. A topic change [ends its reach](/topic#topic-resets).
+Endings: `-r` the same one, `-l` [a new one](/pronouns#a-new-one) (not with `u`), `-m` [their part](/pronouns#share) (not with `o`). A pointer never names its own role. A topic change [ends its reach](/topic#topic-resets).
 
 <PageBreak />
 
@@ -55,13 +55,13 @@ Endings: **-r** the same one, **-l** [a new one](/pronouns#a-new-one) (not with 
 
 ### Tags {#tags}
 
-A [tag](/tag-pronouns#tag-pronouns) is a label you choose (role letter, `w`, vowel **a** then **o**, **e**, last **u**, ending). It stays on its referent. Tags fill `/z/`, `/d/`, `/b/` only.
+A [tag](/tag-pronouns#tag-pronouns) is a label you choose (role letter, `w`, a vowel, then the ending; the vowels go `a` first, then `o`, `e`, and `u` last). It stays on its referent. Tags fill `/z/`, `/d/`, `/b/` only.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| Assign: tag **-l** after a phrase | `zodozel zwal` | *a dog, call it A* | I |
+| Assign: tag `-l` after a phrase | `zodozel zwal` | *a dog, call it A* | I |
 | A placeholder, no one in particular | `zwal` | *someone, call them A*; *suppose A* | I |
-| [Bound](/universals-domains#bound-tags): tag **-l** after a `zual` / `zuam` / `zul` fence, each member in turn, to the end of its sentence and the sentences its stand-ins point to | `zual gogozel zwal` | *every cat, each one A* | I |
+| [Bound](/universals-domains#bound-tags): tag `-l` after a `zual` / `zuam` / `zul` fence, each member in turn, to the end of its sentence and the sentences its stand-ins point to | `zual gogozel zwal` | *every cat, each one A* | I |
 | Recall | `zwar` / `dwar` / `bwar` | *A* | I |
 | A pseudonym: a real person, name kept back (alone, or after a person phrase) | `zwan` / `dwan` / `bwan` | *a friend, call her A* | I |
 | A's part in the latest event | `zwam` / `dwam` / `bwam` | *what A did* | I |
@@ -84,7 +84,7 @@ Only an `/x/` word at the start of a sentence sets the [topic](/topic#topic). Be
 | [Clear the topic](/topic#topic) | `xevewom` / `xavedam` | *next* / *by the way* | I |
 | [The topic itself, in any slot](/topic#topic-pronoun) | `zalen` / `dalen` / `balen` | *the topic* | I |
 
-The topic pronoun is never a topic word or a resume. A dropped subject is never the topic: write `zalen`. A [topic change](/topic#topic-resets) resets role-pointer anchors and bare-number magnitude; whole-stem **-r** and tags stay.
+The topic pronoun is never a topic word or a resume. A dropped subject is never the topic: write `zalen`. A [topic change](/topic#topic-resets) resets role-pointer anchors and bare-number magnitude; whole-stem `-r` and tags stay.
 
 <PageBreak />
 
@@ -92,7 +92,7 @@ The topic pronoun is never a topic word or a resume. A dropped subject is never 
 
 ### Special pronouns {#special-pronouns}
 
-Role letter + the root + **-n**. Prefer a proper name when you have one. See [special pronouns](/pronouns#special-pronouns).
+Role letter + the root + `-n`. Prefer a proper name when you have one. See [special pronouns](/pronouns#special-pronouns).
 
 | Word | Means | In a slot | English | Same root as | Stage |
 |------|-------|-----------|---------|--------------|-------|
@@ -101,19 +101,19 @@ Role letter + the root + **-n**. Prefer a proper name when you have one. See [sp
 | `ayan` | speaker and addressees together | `zayan` | *we* (you and I) | `ayal` *handshake* | B |
 | [`eyen`](/pronouns#generic-pronoun) | any person, as a rule | `zeyen` | *one*, generic *you* | `eyel` *person* | B |
 
-As an object, *we* is `dayan`. `awan` is the person actually listening. `eyen` takes no **-x**.
+As an object, *we* is `dayan`. `awan` is the person actually listening. `eyen` takes no `-x`.
 
 ### Groups with **-x** {#groups}
 
 | Form | Means | Example | English | Stage |
 |------|-------|---------|---------|-------|
-| [name **-nx**](/plurality#associative) | anchor and associates | `zazozonx` | *Azozon and associates* | B |
-| [**-lx** / **-mx**](/plurality#associative) | an indefinite group | `zogozelx` | *some cats* | B |
-| [**-lnx**](/proper-names#name-instance--ln) | some of a name | `dazozolnx` | *some Azozons* | I |
-| [**-rx**](/plurality#associative) | someone mentioned, and associates | `zazozorx` | *they* | B |
-| [speaker **-x**](/plurality#person-role-x) | the speaker and their people, you not included | `uwenx` (`zuwenx`, `duwenx`) | *I and my people* | B |
-| [listener **-x**](/plurality#person-role-x) | the address set, speaker not included | `awanx` (`zawanx`, `dawanx`) | *you all* | B |
-| [interlocutors **-x**](/plurality#person-role-x) | everyone here, and their people | `ayanx` | *we all* | B |
+| [name `-nx`](/plurality#associative) | anchor and associates | `zazozonx` | *Azozon and associates* | B |
+| [`-lx` / `-mx`](/plurality#associative) | an indefinite group | `zogozelx` | *some cats* | B |
+| [`-lnx`](/proper-names#name-instance--ln) | some of a name | `dazozolnx` | *some Azozons* | I |
+| [`-rx`](/plurality#associative) | someone mentioned, and associates | `zazozorx` | *they* | B |
+| [speaker `-x`](/plurality#person-role-x) | the speaker and their people, you not included | `uwenx` (`zuwenx`, `duwenx`) | *I and my people* | B |
+| [listener `-x`](/plurality#person-role-x) | the address set, speaker not included | `awanx` (`zawanx`, `dawanx`) | *you all* | B |
+| [interlocutors `-x`](/plurality#person-role-x) | everyone here, and their people | `ayanx` | *we all* | B |
 
 Who counts as an associate is [open unless you say](/collectives#associate-resolution).
 
@@ -121,7 +121,7 @@ Who counts as an associate is [open unless you say](/collectives#associate-resol
 
 ### One act, one unit {#collective}
 
-**-x** on a verb or adjective: the group acts, or the property holds, as one.
+`-x` on a verb or adjective: the group acts, or the property holds, as one.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|

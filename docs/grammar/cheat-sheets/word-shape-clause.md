@@ -17,19 +17,19 @@ In a sentence: **role letter + root + ending**. As a [citation](/word-endings#ci
 
 | Ending | Means | Example | English | Stage |
 |--------|-------|---------|---------|-------|
-| **-l** | [first mention, everyday kind](/word-endings#concrete-l) | `azozol` | *swan* | B |
-| **-m** | [first mention, published abstract](/word-endings#abstract-m) | `azozom` | *grace* | B |
-| **-n** | [a name](/word-endings#named-n-beginner) | `azozon` | *Azozon* | B |
-| **-r** | [the same one again](/pronouns#resume-r) | `zazozor` | *Azozon* (again) | B |
-| **-ln** | [one of a name](/proper-names#name-instance--ln) | `dazozoln` | *an Azozon* | I |
-| **-lnx** | [some of a name](/proper-names#name-instance--ln) | `dazozolnx` | *some Azozons* | I |
-| **-x** after any of these | [associates, or a group](/plurality#associative) | `zazozonx` | *Azozon and associates* | B |
+| `-l` | [first mention, everyday kind](/word-endings#concrete-l) | `azozol` | *swan* | B |
+| `-m` | [first mention, published abstract](/word-endings#abstract-m) | `azozom` | *grace* | B |
+| `-n` | [a name](/word-endings#named-n-beginner) | `azozon` | *Azozon* | B |
+| `-r` | [the same one again](/pronouns#resume-r) | `zazozor` | *Azozon* (again) | B |
+| `-ln` | [one of a name](/proper-names#name-instance--ln) | `dazozoln` | *an Azozon* | I |
+| `-lnx` | [some of a name](/proper-names#name-instance--ln) | `dazozolnx` | *some Azozons* | I |
+| `-x` after any of these | [associates, or a group](/plurality#associative) | `zazozonx` | *Azozon and associates* | B |
 
 ### What **-n** names, by role {#n-by-role}
 
-**-n** says the thing bears the name; the [role](/proper-names#proper-name--n) says the job.
+`-n` says the thing bears the name; the [role](/proper-names#proper-name--n) says the job.
 
-| Role | **-n** there | Stage |
+| Role | `-n` there | Stage |
 |------|--------------|-------|
 | `/z/` `/d/` `/b/` | [a named person, place, work, or brand](/proper-names#proper-name--n) | I |
 | `/v/` | a named event or rite | I |
@@ -42,29 +42,29 @@ In a sentence: **role letter + root + ending**. As a [citation](/word-endings#ci
 
 | Shape | Example | English | Stage |
 |-------|---------|---------|-------|
-| [Full name](/proper-names#multipart-names): given name, then family name on `/ɡ/` + **-n** | `zalon golowon vowurol.` | *Alon Olowon walks.* | I |
+| [Full name](/proper-names#multipart-names): given name, then family name on `/ɡ/` + `-n` | `zalon golowon vowurol.` | *Alon Olowon walks.* | I |
 | [Full name](/proper-names#multipart-names) as a citation, and its resume | `alon golowon`; `zalon golowon`; `zalor` | *Alon Olowon*; *Alon* (the same person) | I |
 | [Hyphenated name](/proper-names#multipart-names): roots joined by mid-word `x` | `zaloxolowon vowurol.` | *Aloxolowon walks.* | I |
 | [One of a full name](/proper-names#name-instance--ln) | `zaloln golowon` | *someone named Alon Olowon* | I |
-| [Titled phrase](/proper-names#titled-phrases): **-n** on the hook, join, or span that packages it | `dedudal en dogudal` | *Coffee-Instead-of-Tea* (a cafe) | I |
+| [Titled phrase](/proper-names#titled-phrases): `-n` on the hook, join, or span that packages it | `dedudal en dogudal` | *Coffee-Instead-of-Tea* (a cafe) | I |
 | [Country and tradition](/proper-names#countries-traditions) on `azabana` | `azabanan` / `gazabanam` / `dazabanal` | *Japan* / *Japanese* / *a Japanese flag* | I |
 
 <PageBreak />
 
 ## Reading mid-word `x` {#x}
 
-After the role letter, look at both sides of the **first** **`x`**. A role word is not one of these: it opens with **`w`**, a reach vowel, and a part consonant (`zwuzeduyol`, `zwuzer`).
+After the role letter, look at both sides of the *first* `x`. A role word is not one of these: it opens with `w`, a reach vowel, and a part consonant (`zwuzeduyol`, `zwuzer`).
 
 <!-- cheat-sheet: word-shape-clause -->
-| Left of **`x`** | Right of **`x`** | Reading | Example | Stage |
+| Left of `x` | Right of `x` | Reading | Example | Stage |
 |-----------------|------------------|---------|---------|-------|
 | [full root](/compound-families#families-by-shape) | full root | one ordinary compound | `zuwedaxubudal` *peanut butter*; `zaloxolowon` (a hyphenated name) | B |
-| [name](/conversation-length#conversation-length) | **`a`** / **`o`** / **`e`** / **`u`**, then **-n** | conversation length | *Azozon, I have time* | I |
-| [longer root](/compound-families#families-by-shape) | **`a`** / **`e`** / **`o`** / **`u`** | [ability](/can-and-cant#ability) | *can't sing right now* | I |
-| [hook vowels](/hook-compounds#hook-prefixes), maybe **`m`** | a stem | hook prefix | `guoxuvuvul` *anti-fighting*; `gamxohalal` *mid-ocean* | A |
-| [hook vowels](/hooked-joins#hooked-joins), maybe **`m`** or **`r`** | a join: vowels and an ending | hooked join, landmark after it | `zexual blohehal` *everyone at the house* | A |
+| [name](/conversation-length#conversation-length) | `a` / `o` / `e` / `u`, then `-n` | conversation length | *Azozon, I have time* | I |
+| [longer root](/compound-families#families-by-shape) | `a` / `e` / `o` / `u` | [ability](/can-and-cant#ability) | *can't sing right now* | I |
+| [hook vowels](/hook-compounds#hook-prefixes), maybe `m` | a stem | hook prefix | `guoxuvuvul` *anti-fighting*; `gamxohalal` *mid-ocean* | A |
+| [hook vowels](/hooked-joins#hooked-joins), maybe `m` or `r` | a join: vowels and an ending | hooked join, landmark after it | `zexual blohehal` *everyone at the house* | A |
 
-Mid-word **`th`** is another family: a sake root and a vowel (`guwathal`), any other root and a vowel ([label reach](/label-seams#label-reach)), or a direction root and a facing person (`gewuhothazozon`). After a sake root, root-shaped letters are always the emotion tail.
+Mid-word `th` is another family: a sake root and a vowel (`guwathal`), any other root and a vowel ([label reach](/label-seams#label-reach)), or a direction root and a facing person (`gewuhothazozon`). After a sake root, root-shaped letters are always the emotion tail.
 
 ### One thing or two {#one-or-two}
 
@@ -72,10 +72,10 @@ Mid-word **`th`** is another family: a sake root and a vowel (`guwathal`), any o
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
 | [two words](/compounds#compound-vs-separate) | two things, or a property marked another way | `zohowel zurewel zam` *a hammer and a wrench*; `zodozel gobulol` *a blue dog* | B |
-| [**`x`** in the middle](/compounds#compound-vs-separate) | one thing; both roots audible | `gagamaxolamal` *in love* (the crush kind); `zuwedaxubudal` *peanut butter*; `zazozoxalazun` (one person) | B |
+| [`x` in the middle](/compounds#compound-vs-separate) | one thing; both roots audible | `gagamaxolamal` *in love* (the crush kind); `zuwedaxubudal` *peanut butter*; `zazozoxalazun` (one person) | B |
 | [dictionary word](/compounds#compound-vs-separate) | one familiar kind, one entry | `zoyahehal` *bedroom*; `zezalal` *sunflower* | B |
 
-A dictionary compound joins its two roots with the left root's ending (**-l** everyday, **-m** abstract), never **`x`**. If the pairing is not listed, glue with **`x`** or use two words.
+A dictionary compound joins its two roots with the left root's ending (`-l` everyday, `-m` abstract), never `x`. If the pairing is not listed, glue with `x` or use two words.
 
 <!-- cheat-sheet: word-shape-clause -->
 | Ageben | English | Stage |
@@ -86,13 +86,13 @@ A dictionary compound joins its two roots with the left root's ending (**-l** ev
 | [`zahuyayel`](/root-tails#tail-suffixes) | *friend* (*hug* + a person tail, no second root) | A |
 | [`zoyahehal`](/root-tails#tail-suffixes) | *bedroom* (*bed* + a place tail) | A |
 
-More pieces: keep English order in one word, last root the kind (`zogudaxedudaxowulan` *Coffee-Tea-Water*, one named shop).
+With more pieces, keep the English order in one word, with the kind as the last root (`zogudaxedudaxowulan` *Coffee-Tea-Water*, one named shop).
 
 <PageBreak />
 
 ### Conversation length {#conversation-length}
 
-Name + **`x`** + one vowel + **-n**, on a greeting or a call. At arrival it says how long you expect to talk; at departure, how soon you leave. The lesser bid sets the shared limit.
+Name + `x` + one vowel + `-n`, on a greeting or a call. At arrival it says how long you expect to talk; at departure, how soon you leave. The lesser bid sets the shared limit.
 
 <!-- cheat-sheet: word-shape-clause -->
 | Form | At arrival | At departure | Stage |
@@ -190,14 +190,14 @@ Ageben has no word for *is*. The kind of claim comes from the pattern.
 | Job | Pattern | Example | English | Stage |
 |-----|---------|---------|---------|-------|
 | [Quality](/predication#classification-property) | noun + `/ɡ/` | `zazozon gamahum.` | *Azozon is challenging.* | B |
-| [Belonging](/predication#classification-property) | noun + `/ɡ/` on **-m** | `zazozon gazabanam.` | *Azozon is Japanese.* | B |
+| [Belonging](/predication#classification-property) | noun + `/ɡ/` on `-m` | `zazozon gazabanam.` | *Azozon is Japanese.* | B |
 | [Kind or role](/predication#classification) | noun + kind on `/ɡ/` | `zazozon godozel.` | *Azozon is a dog.* | B |
 | [In the middle of an event](/predication#in-progress) | noun + event root on `/ɡ/` | `zazozon gowurol.` | *Azozon is walking.* | B |
 | [Something exists](/predication#existence) | a lone new noun | `zodozel.` | *There is a dog.* | B |
 | | a new noun + `/ɡ/` | `zodozel gelazem.` | *There is a big dog.* | B |
 | [Same person](/predication#identity) | `gorel` + `/b/`, side by side | `zalazun gorel blazozon.` | *Alazun is Azozon.* (one person, two names) | B |
 | [Same one again](/predication#identity) | `gorel`, no `/b/` | `zalazun danal gorel varuyol.` | *Alazun is writing the same book.* (the book already mentioned) | B |
-| [Basically the same](/label-reach#identity-endings) | **-m** | `zalazun gorem blazozon` | *Alazun is basically Azozon.* | I |
+| [Basically the same](/label-reach#identity-endings) | `-m` | `zalazun gorem blazozon` | *Alazun is basically Azozon.* | I |
 | [Not the same](/label-reach#identity-endings) | `gul` after the pair | `zalazun gorel blazozon gul` | *Alazun is not Azozon.* | I |
 | [The one who is Azozon](/label-reach#identity-endings) | inside a noun phrase | `zeyel gorel blazozon` | *the person who is Azozon* | I |
 
@@ -217,7 +217,7 @@ With a name or a resumed noun, the pair is a [property](/predication#existence),
 
 ### How far a label reaches {#label-reach}
 
-Root, mid-word `th`, a reach vowel, then the ending. It goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`. A [role word](/label-seams#reach-role) writes the same vowels right after its **`w`**.
+Root, mid-word `th`, a reach vowel, then the ending. It goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`. A [role word](/label-seams#reach-role) writes the same vowels right after its `w`.
 
 | Vowel | Reach | Example | English | Stage |
 |-------|-------|---------|---------|-------|
@@ -226,7 +226,7 @@ Root, mid-word `th`, a reach vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 | [`the`](/label-seams#reach-relative) | this pair (`/b/` follows) | `zazozon gulayethem blalazun.` | *Azozon is a stranger to Alazun.* | I |
 | [`tha`](/label-seams#reach-type) | a type across scenes | `zalazun ganomuthal.` | *Alazun is an anxious type.* | I |
 
-[Stacked reach](/label-seams#reach-stacks): pairs that start with **u** read like *everything but* (every scene, the second vowel set aside); the others read like hooks (*over*, *using*, *toward*).
+[Stacked reach](/label-seams#reach-stacks): pairs that start with `u` read like *everything but* (every scene, the second vowel set aside); the others read like hooks (*over*, *using*, *toward*).
 
 | Vowel | Reach | English | Stage |
 |-------|-------|---------|-------|
@@ -246,5 +246,5 @@ Root, mid-word `th`, a reach vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 | `zodozel gelazem.` *There is a big dog* ([new noun](/predication#existence)) | | `zodozer gelazem.` *The dog is big* ([resumed noun](/predication#existence)) |
 | `zazozon vowurol.` *Azozon walks* ([the verb](/clause#who-acts-and-the-action)) | | `zazozon gowurol.` *Azozon is walking* ([under way](/predication#in-progress)) |
 | `dazozon vayebel.` *Azozon was seen* ([no subject named](/no-subject#no-subject)) | | `zeyel zar` *someone did it* ([an unnamed someone](/joins#unspecified-member-r-phrase)) |
-| `dazozol` *a swan* ([-l](/proper-names#proper-name--n)) | | `dazozoln` *an Azozon* ([-ln: one of the name](/proper-names#name-instance--ln)) |
+| `dazozol` *a swan* ([`-l`](/proper-names#proper-name--n)) | | `dazozoln` *an Azozon* ([`-ln`: one of the name](/proper-names#name-instance--ln)) |
 | `zoyahehal` *bedroom* ([a dictionary word](/compounds#dictionary-compounds)) | | `zuwedaxubudal` *peanut butter* ([glued with `x`](/compounds#compound-vs-separate)) |

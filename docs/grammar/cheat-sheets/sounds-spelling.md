@@ -55,9 +55,9 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 
 | Rule | Example | Stage |
 |------|---------|-------|
-| [A content word ends in **-l**, **-m**, **-n**, or **-r**](/phonology#word-edges), the audible end | `azozon` = *a-zo-zon* | B |
+| [A content word ends in `-l`, `-m`, `-n`, or `-r`](/phonology#word-edges), the audible end | `azozon` = *a-zo-zon* | B |
 | [Inside a word, a consonant starts a syllable](/phonology#word-edges) and never closes one | `odozel` = *o-do-zel* | B |
-| [Roots are vowel-first](/phonotactics#phonotactics): **V(CV)+** | `zobulol` = `z` + `obulo` + **-l** | I |
+| [Roots are vowel-first](/phonotactics#phonotactics): V(CV)+, a vowel then consonant-vowel pairs | `zobulol` = `z` + `obulo` + `-l` | I |
 | [Place-name root](/place-name-roots#place-name-roots) with no cluster: seven letters, ends `n` + vowel | `azabanan` *Japan* | I |
 | [Place-name root](/place-name-roots#place-name-roots) that keeps a cluster | `avranzan` *France* | I |
 | [A root's last two letters hint at its kind and job](/root-tails#root-tails) | `ogoze` *cat*: `z` a creature, `o` one of its kind | A |
@@ -71,11 +71,11 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 | Optional `l` after `/b/` | [`bl-`](/clause#extra-nouns): completes the word right before it | B |
 | Root(s) | vowel-first; a [dictionary compound](/phonotactics#phonotactics) is one long root (`oyaheha` *bedroom*); a root after a root is joined by mid-word `x` ([compounds](/compounds)) | I |
 | Mid-word `th` | the stance seam: [reach](/label-seams#label-reach), [sakes](/sakes), [viewpoint](/viewpoint#viewpoint-laterals) | I |
-| **-l** / **-m** / **-n** / **-r** | the [word ending](/word-endings) | B |
-| **-ln** | [one of a name](/proper-names#name-instance--ln) | I |
-| **-x** | [plural / associates](/plurality), after the ending | B |
-| **-rl** / **-rm** | [stand-in or pinned resume](/dependents#dependent-clauses) | I |
-| **-rth** | [pointing back](/stand-in-vowels#stand-in-back): the only word-final `th` | I |
+| `-l` / `-m` / `-n` / `-r` | the [word ending](/word-endings) | B |
+| `-ln` | [one of a name](/proper-names#name-instance--ln) | I |
+| `-x` | [plural / associates](/plurality), after the ending | B |
+| `-rl` / `-rm` | [stand-in or pinned resume](/dependents#dependent-clauses) | I |
+| `-rth` | [pointing back](/stand-in-vowels#stand-in-back): the only word-final `th` | I |
 
 Word-initial `x` is the [continue](/speech-moves#continue-x) prefix, not a compound seam.
 
@@ -83,8 +83,8 @@ Word-initial `x` is the [continue](/speech-moves#continue-x) prefix, not a compo
 
 | Rule | Example | English | Stage |
 |------|---------|---------|-------|
-| [A role letter followed by `r` starts a number word](/phonotactics#number-word-exception) | `gragel` | *three* (`g` + `ra` + `ge` + **-l**) | I |
-| [Counting from the end](/phonotactics#number-word-exception) is spoken **rue** before the digits | | | I |
+| [A role letter followed by `r` starts a number word](/phonotactics#number-word-exception) | `gragel` | *three* (`g` + `ra` + `ge` + `-l`) | I |
+| [Counting from the end](/phonotactics#number-word-exception) is spoken `rue` before the digits | | | I |
 
 <PageBreak />
 

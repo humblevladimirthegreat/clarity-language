@@ -11,30 +11,30 @@ A quick look at [role compounds](/roles) and [viewpoint](/viewpoint). Nothing he
 
 ## Naming a part of an event {#roles}
 
-Write a thing letter (`/z/` `/d/` `/b/`), **`w`**, a reach vowel, a part consonant, the event root, then the ending. The part consonant is the role letter the participant had in the event. **-l** / **-m** / **-n** mean anyone in that part; **-r** means this instance, from the latest matching event.
+Write a thing letter (`/z/` `/d/` `/b/`), `w`, a reach vowel, a part consonant, the event root, then the ending. The part consonant is the role letter the participant had in the event. `-l` / `-m` / `-n` mean anyone in that part; `-r` means this instance, from the latest matching event.
 
 | Part | Names | Example | English | Stage |
 |------|-------|---------|---------|-------|
-| [**`z`**](/roles#role-compounds) | the doer | `zwuzeduyol` | *someone who teaches* | B |
-| [**`d`**](/roles#the-undergoer-d) | what it acts on or makes | `zwudayeber` | *the one seen* | B |
-| [**`b`**](/roles#the-extra-b-party-b) | the extra `/b/` party | `zwubezuyor` | *the one told* | B |
+| [`z`](/roles#role-compounds) | the doer | `zwuzeduyol` | *someone who teaches* | B |
+| [`d`](/roles#the-undergoer-d) | what it acts on or makes | `zwudayeber` | *the one seen* | B |
+| [`b`](/roles#the-extra-b-party-b) | the extra `/b/` party | `zwubezuyor` | *the one told* | B |
 
 | Vowel | Reach | Example | English | Stage |
 |-------|-------|---------|---------|-------|
-| [**`u`**](/roles#one-time-or-a-practice) | this episode | `zwuzeduyol` | *someone who teaches* | B |
-| [**`o`**](/roles#one-time-or-a-practice) | practiced role | `zwozeduyol` | *a teacher* | B |
-| [**`e`**](/role-parts#reach) | toward one party | `gwezeduyol blalazun` | *is a teacher to Alazun* | I |
-| [**`a`**](/role-parts#reach) | a type across scenes | `zwazeduyol` | *a teacher type* | I |
+| [`u`](/roles#one-time-or-a-practice) | this episode | `zwuzeduyol` | *someone who teaches* | B |
+| [`o`](/roles#one-time-or-a-practice) | practiced role | `zwozeduyol` | *a teacher* | B |
+| [`e`](/role-parts#reach) | toward one party | `gwezeduyol blalazun` | *is a teacher to Alazun* | I |
+| [`a`](/role-parts#reach) | a type across scenes | `zwazeduyol` | *a teacher type* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [The one, from an earlier event](/roles#this-instance-r): **-r** | `zazozon vehohel. zwuzehoher vowurol.` | *Azozon sits. The one who sat walks.* | B |
-| [A noun in the stem](/roles#role-compounds): another **`x`** | `zwuzodozexowurol veruvol.` | *Someone who walks dogs runs.* | B |
+| [The one, from an earlier event](/roles#this-instance-r): `-r` | `zazozon vehohel. zwuzehoher vowurol.` | *Azozon sits. The one who sat walks.* | B |
+| [A noun in the stem](/roles#role-compounds): another `x` | `zwuzodozexowurol veruvol.` | *Someone who walks dogs runs.* | B |
 | [Is one who](/roles#saying-someone-is-a-teacher): on `/ɡ/` | `zazozon gwuzeduyol.` | *Azozon is someone who teaches.* | B |
-| [A practiced role](/roles#one-time-or-a-practice): reach **`o`** | `zwozeduyol veruvol.` | *A teacher runs.* | B |
+| [A practiced role](/roles#one-time-or-a-practice): reach `o` | `zwozeduyol veruvol.` | *A teacher runs.* | B |
 | [Is a teacher](/roles#saying-someone-is-a-teacher) | `zazozon gwozeduyol.` | *Azozon is a teacher.* | B |
-| [The event itself](/roles#the-event-itself): no **`w`** | `duvuvul` | *a fight* | B |
-| [What it makes](/roles#the-undergoer-d): **`d`** | `dwudoguyol` | *something built* | B |
+| [The event itself](/roles#the-event-itself): no `w` | `duvuvul` | *a fight* | B |
+| [What it makes](/roles#the-undergoer-d): `d` | `dwudoguyol` | *something built* | B |
 | [A kind of tool, place, or time](/role-parts#places-tools-times): a compound with a head root | `daruyoxuwal` | *a writing tool* | I |
 | [Acting as](/role-parts#acting-as): on `/h/` | `zazozon vezuyol hwozeduyol.` | *Azozon speaks as a teacher.* | I |
 
@@ -48,17 +48,17 @@ A part consonant can name a quality of the event, not a person in it. Pointers d
 
 | Part | Names | Compound | Pointer | Stage |
 |------|-------|----------|---------|-------|
-| [**`h`**](/role-parts#content-of-the-event) | how, when, or where | `dwuhowurol` | `dwuher` | I |
-| [**`g`**](/role-parts#content-of-the-event) | the state it leaves | `dwuguguyol` | `dwuger` | I |
-| [**`th`**](/role-parts#content-of-the-event) | a reason or feeling | `dwuthowurol` | `dwuther` | I |
-| [**`w`**](/role-parts#content-of-the-event) | how much | `dwuwowurol` | `dwuwer` | I |
-| [**`y`**](/role-parts#content-of-the-event) | the turn that said it | `dwuyowurol` | `dwuyer` | I |
-| [**`x`**](/role-parts#content-of-the-event) | what followed | `dwuxowurol` | `dwuxer` | I |
-| [**`v`**](/role-parts#content-of-the-event) | the event itself | (the event noun: `dowurol`) | `dwuver` | I |
+| [`h`](/role-parts#content-of-the-event) | how, when, or where | `dwuhowurol` | `dwuher` | I |
+| [`g`](/role-parts#content-of-the-event) | the state it leaves | `dwuguguyol` | `dwuger` | I |
+| [`th`](/role-parts#content-of-the-event) | a reason or feeling | `dwuthowurol` | `dwuther` | I |
+| [`w`](/role-parts#content-of-the-event) | how much | `dwuwowurol` | `dwuwer` | I |
+| [`y`](/role-parts#content-of-the-event) | the turn that said it | `dwuyowurol` | `dwuyer` | I |
+| [`x`](/role-parts#content-of-the-event) | what followed | `dwuxowurol` | `dwuxer` | I |
+| [`v`](/role-parts#content-of-the-event) | the event itself | (the event noun: `dowurol`) | `dwuver` | I |
 
 ### Without the stem {#pointers}
 
-A role pointer drops the stem. The pointer vowel picks the event by position: **`e`** the latest, **`a`** the other, **`o`** this sentence's own, **`u`** the one that left the part unsaid. **-r** is the participant, **-l** a new one of its kind, **-m** its part.
+A role pointer drops the stem. The pointer vowel picks the event by position: `e` the latest, `a` the other, `o` this sentence's own, `u` the one that left the part unsaid. `-r` is the participant, `-l` a new one of its kind, `-m` its part.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -71,35 +71,35 @@ A role pointer drops the stem. The pointer vowel picks the event by position: **
 <!-- cheat-sheet: roles -->
 | Ageben | Compass | On a face | Stage |
 |--------|---------|-----------|-------|
-| [**`onuhol`**](/viewpoint#arrow-rose-compass-vs-face) | *north* | *ahead* | I |
-| [**`azuhol`**](/viewpoint#arrow-rose-compass-vs-face) | *south* | *back* | I |
-| [**`ahol`**](/viewpoint#arrow-rose-compass-vs-face) | *east* | *right* | I |
-| [**`ewuhol`**](/viewpoint#arrow-rose-compass-vs-face) | *west* | *left* | I |
-| [**`unuhol`**](/viewpoint#arrow-rose-compass-vs-face) | *northeast* | *forward-right* | I |
-| [**`anuhol`**](/viewpoint#arrow-rose-compass-vs-face) | *northwest* | *forward-left* | I |
-| [**`ozuhol`**](/viewpoint#arrow-rose-compass-vs-face) | *southeast* | *back-right* | I |
-| [**`azohol`**](/viewpoint#arrow-rose-compass-vs-face) | *southwest* | *back-left* | I |
+| [`onuhol`](/viewpoint#arrow-rose-compass-vs-face) | *north* | *ahead* | I |
+| [`azuhol`](/viewpoint#arrow-rose-compass-vs-face) | *south* | *back* | I |
+| [`ahol`](/viewpoint#arrow-rose-compass-vs-face) | *east* | *right* | I |
+| [`ewuhol`](/viewpoint#arrow-rose-compass-vs-face) | *west* | *left* | I |
+| [`unuhol`](/viewpoint#arrow-rose-compass-vs-face) | *northeast* | *forward-right* | I |
+| [`anuhol`](/viewpoint#arrow-rose-compass-vs-face) | *northwest* | *forward-left* | I |
+| [`ozuhol`](/viewpoint#arrow-rose-compass-vs-face) | *southeast* | *back-right* | I |
+| [`azohol`](/viewpoint#arrow-rose-compass-vs-face) | *southwest* | *back-left* | I |
 
 <!-- cheat-sheet: roles -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`abuhol`**](/viewpoint#gravity) | skyward, shared frame | *up* | I |
-| [**`oduhol`**](/viewpoint#gravity) | toward the pull, shared frame | *down* | I |
-| [**`evuhol`**](/viewpoint#gravity) | the vertical axis | *up–down axis* | I |
+| [`abuhol`](/viewpoint#gravity) | skyward, shared frame | *up* | I |
+| [`oduhol`](/viewpoint#gravity) | toward the pull, shared frame | *down* | I |
+| [`evuhol`](/viewpoint#gravity) | the vertical axis | *up–down axis* | I |
 
 <PageBreak />
 
-Bare arrow words are compass headings. With mid-word **`th`** and a facing person they become that direction from the person's body. Gravity words need no facing person.
+Bare arrow words are compass headings. With mid-word `th` and a facing person they become that direction from the person's body. Gravity words need no facing person.
 
 <!-- cheat-sheet: roles -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
 | [Bare DIR](/viewpoint#viewpoint-vs-landmark) | compass / gravity | `gewuhol` *west*; `gabuhol` *up* | I |
-| [**`DIR th ANCHOR`**](/viewpoint#viewpoint-vs-landmark) | that point on **ANCHOR's** facing rose | `gewuhothawan` *listener-left* | I |
-| [DIR + **`th`** + **`e`** + `/b/`](/viewpoint#landmark-facing) | that point on the **landmark's** own rose | `gazuhothel blohehal` *behind the house* | I |
-| [complex `/ɡ/` + `/b/`](/viewpoint#viewpoint-vs-landmark) | region on a side **of a landmark** | `gewuhothazozon bledalol` *left of the tree, from Azozon's view* | I |
+| [`DIR th ANCHOR`](/viewpoint#viewpoint-vs-landmark) | that point on ANCHOR's facing rose | `gewuhothawan` *listener-left* | I |
+| [DIR + `th` + `e` + `/b/`](/viewpoint#landmark-facing) | that point on the landmark's own rose | `gazuhothel blohehal` *behind the house* | I |
+| [complex `/ɡ/` + `/b/`](/viewpoint#viewpoint-vs-landmark) | region on a side of a landmark | `gewuhothazozon bledalol` *left of the tree, from Azozon's view* | I |
 
-The anchor can be `uwe` *speaker*, `awa` *listener*, a name, or a role pointer on **-r**. The ending applies to the anchor, not the direction.
+The anchor can be `uwe` *speaker*, `awa` *listener*, a name, or a role pointer on `-r`. The ending applies to the anchor, not the direction.
 
 <!-- cheat-sheet: roles -->
 | Ageben | English | Stage |

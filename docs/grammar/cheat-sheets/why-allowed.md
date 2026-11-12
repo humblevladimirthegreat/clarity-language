@@ -7,7 +7,7 @@ outline: false
 
 # Why and allowed cheat sheet {#why-allowed-cheat-sheet}
 
-A quick look at [causation](/causation), [sakes](/sakes), and [feelings and permission](/feelings) . Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [causation](/causation), [sakes](/sakes), and [feelings and permission](/feelings). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## Because, if, only if {#hinges}
 
@@ -65,7 +65,7 @@ The ending on the because hinge says whether anyone did wrong.
 
 ## The sakes {#sakes}
 
-A sake is a kind of payoff. A sake word is a sake root, mid-word `th`, a stance vowel, and an ending. It takes only **-l**, **-m**, **-r**, never **-n**. Put it on `/ɡ/` after a noun that is yours, or on `/th/` for the event.
+A sake is a kind of payoff. A sake word is a sake root, mid-word `th`, a stance vowel, and an ending. It takes only `-l`, `-m`, `-r`, never `-n`. Put it on `/ɡ/` after a noun that is yours, or on `/th/` for the event.
 
 ### Which sake {#which-sake}
 
@@ -88,19 +88,19 @@ A sake is a kind of payoff. A sake word is a sake root, mid-word `th`, a stance 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Ending says | Stage |
 |--------|-----|---------|-------------|-------|
-| [**`tha`**](/sakes#met) | the belonging or event pays off this sake | *serves* / *met* | [time horizon](/sakes#time-horizon-endings-on-met) | B |
-| [**`thu`**](/sakes#word-shape) | it subtracts from this sake | *detracts from* / *unmet* | [changeability](/sakes#sake-changeability) | B |
-| [**`the`**](/ought-for-a-sake#sake-force) | the act ought to serve this sake | *ought this act for* | [why it is welcome](/ought-for-a-sake#sake-force) | I |
-| [**`tho`**](/for-a-sake#sake-preference) | the act is done for this sake | *doing for this sake* | [time horizon](/for-a-sake#sake-preference) | I |
+| [`tha`](/sakes#met) | the belonging or event pays off this sake | *serves* / *met* | [time horizon](/sakes#time-horizon-endings-on-met) | B |
+| [`thu`](/sakes#word-shape) | it subtracts from this sake | *detracts from* / *unmet* | [changeability](/sakes#sake-changeability) | B |
+| [`the`](/ought-for-a-sake#sake-force) | the act ought to serve this sake | *ought this act for* | [why it is welcome](/ought-for-a-sake#sake-force) | I |
+| [`tho`](/for-a-sake#sake-preference) | the act is done for this sake | *doing for this sake* | [time horizon](/for-a-sake#sake-preference) | I |
 
 <!-- cheat-sheet: why-allowed -->
-| Ending | Met **`tha`** | Unmet **`thu`** | Ought **`the`** | Motive **`tho`** | Stage |
+| Ending | Met `tha` | Unmet `thu` | Ought `the` | Motive `tho` | Stage |
 |--------|---------------|-----------------|-----------------|------------------|-------|
-| **-l** | [`…thal`](/sakes#time-horizon-endings-on-met) *lasting* | [`…thul`](/sakes#sake-changeability) *irreversible* | [`…thel`](/ought-for-a-sake#sake-force) *invited* | [`…thol`](/for-a-sake#sake-preference) *lasting* | B / I |
-| **-m** | [`…tham`](/sakes#time-horizon-endings-on-met) *unstated* | [`…thum`](/sakes#sake-changeability) *modifiable* | [`…them`](/ought-for-a-sake#sake-force) *unasked* | [`…thom`](/for-a-sake#sake-preference) *unstated* | B / I |
-| **-r** | [`…thar`](/sakes#time-horizon-endings-on-met) *immediate* | [`…thur`](/sakes#sake-changeability) *passing* | [`…ther`](/ought-for-a-sake#sake-force) *tryout* | [`…thor`](/for-a-sake#sake-preference) *immediate* | B / I |
+| `-l` | [`…thal`](/sakes#time-horizon-endings-on-met) *lasting* | [`…thul`](/sakes#sake-changeability) *irreversible* | [`…thel`](/ought-for-a-sake#sake-force) *invited* | [`…thol`](/for-a-sake#sake-preference) *lasting* | B / I |
+| `-m` | [`…tham`](/sakes#time-horizon-endings-on-met) *unstated* | [`…thum`](/sakes#sake-changeability) *modifiable* | [`…them`](/ought-for-a-sake#sake-force) *unasked* | [`…thom`](/for-a-sake#sake-preference) *unstated* | B / I |
+| `-r` | [`…thar`](/sakes#time-horizon-endings-on-met) *immediate* | [`…thur`](/sakes#sake-changeability) *passing* | [`…ther`](/ought-for-a-sake#sake-force) *tryout* | [`…thor`](/for-a-sake#sake-preference) *immediate* | B / I |
 
-The scale runs **-l** most settled, **-m** the default, **-r** most passing. When unsure, use **-m**.
+The scale runs `-l` most settled, `-m` the default, `-r` most passing. When unsure, use `-m`.
 
 <PageBreak />
 
@@ -140,7 +140,7 @@ A lone met word is a whole sentence about you: *my sake is met*. Sorry is about 
 
 ### Speaker attitude {#attitude}
 
-Your feeling about the whole claim, on `/th/` with **-m**. It is never the subject's.
+Speaker attitude is your feeling about the whole claim, on `/th/` with `-m`. It is never the subject's.
 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Stage |
@@ -153,7 +153,7 @@ Your feeling about the whole claim, on `/th/` with **-m**. It is never the subje
 
 ## Feelings {#feelings}
 
-A [feeling word](/how-you-feel#feeling-word) is one word: the sake word, an **urge** vowel, then a **duration ending**. Example: `guwatham` + `oe` + **-r** is `guwathamoer`.
+A [feeling word](/how-you-feel#feeling-word) is one word: the sake word, an urge vowel, then a duration ending. Example: `guwatham` + `oe` + `-r` is `guwathamoer`.
 
 ### Urge: what it pulls you to do {#urge}
 
@@ -174,9 +174,9 @@ A [feeling word](/how-you-feel#feeling-word) is one word: the sake word, an **ur
 
 | Ending | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**-l**](/feelings#feeling-duration) | SETTLED | *it has settled in*: hours, days, a mood | I |
-| [**-m**](/how-you-feel#feeling-word) | OPEN | how long is not said | B |
-| [**-r**](/feelings#feeling-duration) | FLEETING | *a flash or a wave*: it will pass | I |
+| [`-l`](/feelings#feeling-duration) | SETTLED | *it has settled in*: hours, days, a mood | I |
+| [`-m`](/how-you-feel#feeling-word) | OPEN | how long is not said | B |
+| [`-r`](/feelings#feeling-duration) | FLEETING | *a flash or a wave*: it will pass | I |
 
 Duration is how long the feeling lasts, not how strong it is. For strength, put a [degree word](/feelings#feeling-strength) on `/w/` before it. A feeling word takes one `bl-` word: after `e`, `oe`, `o`, `uo`, `u`, `ua`, or `ao` it names the [landmark](/how-you-feel#urge-landmark); after `a`, `ae`, or `ue` it names [whose stake](/feelings#feeling-whose-stake).
 
@@ -202,7 +202,13 @@ Duration is how long the feeling lasts, not how strong it is. For strength, put 
 
 ## Allowed and required {#deontic}
 
-A [say word](/permission-consent#say-words) on `/h/`: **`h`** **`w`**, a reach vowel, whose say, the answer, and an ending. Whose say: **`v`** someone over the act (the speaker, or the `bl-` word after), **`z`** the doer, **`d`** the one it's done to, **`b`** the recipient. Answer: **`a`** allow, **`u`** forbid, **`e`** require, **`o`** their call. Ending: **-l** a rule or binding agreement, **-m** a person said so, **-r** nobody said. When unsure, use **-m**. All Intermediate.
+A [say word](/permission-consent#say-words) goes on `/h/`: `h`, `w`, a reach vowel, whose say, the answer, and an ending. Say words are all Intermediate.
+
+| Part | Letters |
+|------|---------|
+| Whose say | `v` someone over the act (the speaker, or the `bl-` word after); `z` the doer; `d` the one it's done to; `b` the recipient |
+| Answer | `a` allow; `u` forbid; `o` require; `e` their call |
+| Ending | `-l` a rule or binding agreement; `-m` a person said so; `-r` nobody said. When unsure, use `-m` |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -217,25 +223,25 @@ A [say word](/permission-consent#say-words) on `/h/`: **`h`** **`w`**, a reach v
 | [Assumed consent, several people](/permission-consent#consent) | `zazozon vezuyol bahelan balazun bal hwubar.` | *assuming Ahelan and Alazun are OK* | I |
 | [Letting yourself](/permission-consent#consent) | `zalazun vezuvel hwuzam.` | *Alazun lets themself sleep.* | I |
 | [A promise](/permission-consent#consent) | `zuwen vowurol hwuzal.` | *I promise to walk.* (to you) | I |
-| [Promise to someone else](/permission-consent#say-reach): pair reach **`e`** | `zuwen vowurol hwezal blahelan.` | *I promise Ahelan I'll walk.* | I |
+| [Promise to someone else](/permission-consent#say-reach): pair reach `e` | `zuwen vowurol hwezal blahelan.` | *I promise Ahelan I'll walk.* | I |
 | [Check in](/permission-consent#consent) | `yem zuwen vezuyol bawan hwubam.` | *Are you still OK with me telling you?* | I |
 | [Against the rules](/contrary-to#contrary-to-say): `uom` first | `zazozon vowurol uom hwuvul.` | *Azozon walks against the rules.* | I |
 
 <PageBreak />
 
-| Answer | [**`v`** someone over the act](/permission-consent#permission) | [**`z`** the doer](/permission-consent#consent) | [**`d`** the one it's done to](/permission-consent#consent) | [**`b`** the recipient](/permission-consent#consent) | Stage |
+| Answer | [`v` someone over the act](/permission-consent#permission) | [`z` the doer](/permission-consent#consent) | [`d` the one it's done to](/permission-consent#consent) | [`b` the recipient](/permission-consent#consent) | Stage |
 |--------|-------------------|------------------|------------------------------|-----------------------|-------|
-| **`a`** | `hwuvam` *you may* | `hwuzam` *lets themself* | `hwudam` *they agreed* | `hwubam` *the recipient agreed* | I |
-| **`u`** | `hwuvum` *you may not* | `hwuzum` *won't let themself* | `hwudum` *they refused* | `hwubum` *the recipient refused* | I |
-| **`e`** | `hwuvom` *you have to* | `hwuzom` *makes themself* | `hwudom` *at their request* | `hwubom` *at the recipient's request* | I |
-| **`o`** | `hwuvem` *it's up to you* | `hwuzem` *their own choice* | `hwudem` *it's their call* | `hwubem` *the recipient's call* | I |
+| `a` | `hwuvam` *you may* | `hwuzam` *lets themself* | `hwudam` *they agreed* | `hwubam` *the recipient agreed* | I |
+| `u` | `hwuvum` *you may not* | `hwuzum` *won't let themself* | `hwudum` *they refused* | `hwubum` *the recipient refused* | I |
+| `o` | `hwuvom` *you have to* | `hwuzom` *makes themself* | `hwudom` *at their request* | `hwubom` *at the recipient's request* | I |
+| `e` | `hwuvem` *it's up to you* | `hwuzem` *their own choice* | `hwudem` *it's their call* | `hwubem` *the recipient's call* | I |
 
 | [Reach](/permission-consent#say-reach) | Example | English | Stage |
 |-------|---------|---------|-------|
-| **`u`** this act | `hwudam` | *they agreed to this* | I |
-| **`o`** standing | `hwodam` / `hwovam` | *they're generally fine with it* / *you may, any time* | I |
-| **`e`** toward one party | `hwevam blalazun` | *fine as far as Alazun is concerned* | I |
-| **`a`** a type | `hwadam` | *they're the type who's fine with it* | I |
+| `u` this act | `hwudam` | *they agreed to this* | I |
+| `o` standing | `hwodam` / `hwovam` | *they're generally fine with it* / *you may, any time* | I |
+| `e` toward one party | `hwevam blalazun` | *fine as far as Alazun is concerned* | I |
+| `a` a type | `hwadam` | *they're the type who's fine with it* | I |
 
 ## Don't mix up {#dont-mix-up}
 

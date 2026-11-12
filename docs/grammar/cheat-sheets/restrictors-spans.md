@@ -11,7 +11,7 @@ A quick look at [restrictors](/restrictors) and [spans](/spans). Nothing here is
 
 ## When a claim counts {#restrictors}
 
-List the **occasions** (times or cases) in the adverb slot `/h/`, then end with a restrictor. The occasion words and the restrictor are one unit. Put the same restrictor on `/w/` right before an adjective to limit only that adjective; `/h/` limits the whole clause.
+List the **occasions** (times or cases) in the adverb role `/h/`, then end with a restrictor. The occasion words and the restrictor are one unit. Put the same restrictor on `/w/` right before an adjective to limit only that adjective; `/h/` limits the whole clause.
 
 ### The core words {#core}
 
@@ -36,27 +36,27 @@ Two manner adverbs in a row, with no restrictor, both describe the walk: `zazozo
 
 ### Which restrictor {#which}
 
-The vowel picks the reading and the ending says how open the list is: **-l** closed, **-m** open, **-r** an unspecified member. The same map works on `/w/` (`wal`, `wam`, `wual`, and so on).
+The vowel picks the reading and the ending says how open the list is: `-l` closed, `-m` open, `-r` an unspecified member. The same map works on `/w/` (`wal`, `wam`, `wual`, and so on).
 
 <!-- cheat-sheet: restrictors-spans -->
 | Ageben | Use | English (with occasions) | English (bare) | Stage |
 |--------|-----|--------------------------|----------------|-------|
-| [**`hal` / `ham`**](/more-occasions#more-occasions) | listed times | *only when…* / *when…, among others* | *never* / *never, as far as I know* | B |
-| [**`hel` / `hem`**](/more-occasions#more-occasions) | one exclusive menu | *either when A or when B (not both)* | | I |
-| [**`hael` / `haem`**](/more-occasions#more-occasions) | any of the listed times | *when A and/or when B* | | I |
-| [**`hul` / `hum`**](/more-occasions#more-occasions) | invert the list | *not when…* | | I |
-| [**`hual` / `huam`**](/more-occasions#more-occasions) | every time minus the list | *always except when…* | *always* / *usually* | B |
-| [**`huel` / `huem`**](/more-occasions#more-occasions) | any leftover time minus the list | *anytime except when…* | | I |
+| [`hal` / `ham`](/more-occasions#more-occasions) | listed times | *only when…* / *when…, among others* | *never* / *never, as far as I know* | B |
+| [`hel` / `hem`](/more-occasions#more-occasions) | one exclusive menu | *either when A or when B (not both)* | | I |
+| [`hael` / `haem`](/more-occasions#more-occasions) | any of the listed times | *when A and/or when B* | | I |
+| [`hul` / `hum`](/more-occasions#more-occasions) | invert the list | *not when…* | | I |
+| [`hual` / `huam`](/more-occasions#more-occasions) | every time minus the list | *always except when…* | *always* / *usually* | B |
+| [`huel` / `huem`](/more-occasions#more-occasions) | any leftover time minus the list | *anytime except when…* | | I |
 
 ### Ranked {#ranked}
 
 <!-- cheat-sheet: restrictors-spans -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`hol` / `hom`**](/more-occasions#ranked-with-listed-occasions) | priority | *preferably when A ≻ when B* | I |
-| [**`haol` / `haom`**](/more-occasions#ranked-with-listed-occasions) | in order | *first when A, then when B* | I |
-| [**`hoel` / `hoem`**](/more-occasions#ranked-with-listed-occasions) | equal frequency | *equally when A and when B* | I |
-| [**`huol` / `huom`**](/more-occasions#ranked-with-listed-occasions) | last-first | *as a last resort when A* | I |
+| [`hol` / `hom`](/more-occasions#ranked-with-listed-occasions) | priority | *preferably when A ≻ when B* | I |
+| [`haol` / `haom`](/more-occasions#ranked-with-listed-occasions) | in order | *first when A, then when B* | I |
+| [`hoel` / `hoem`](/more-occasions#ranked-with-listed-occasions) | equal frequency | *equally when A and when B* | I |
+| [`huol` / `huom`](/more-occasions#ranked-with-listed-occasions) | last-first | *as a last resort when A* | I |
 
 With several occasions before `huol`, the last listed is the first choice.
 
@@ -64,15 +64,15 @@ With several occasions before `huol`, the last listed is the first choice.
 
 ### Some member, unlisted {#unspecified}
 
-**-r** points at some time without saying which, so nothing needs to come before it.
+`-r` points at some time without saying which, so nothing needs to come before it.
 
 <!-- cheat-sheet: restrictors-spans -->
 | Ageben | Use | English (with occasions) | English (bare) | Stage |
 |--------|-----|--------------------------|----------------|-------|
-| [**`har`**](/more-occasions#more-occasions) | some member of the listed times | *sometimes among these* | *sometimes* | B |
-| [**`her`**](/more-occasions#more-occasions) | some member of a one-choice menu | *anytime among these* | *anytime* | B |
-| [**`hur`**](/more-occasions#more-occasions) | a leftover occasion | *some time other than these* | *some other time* | B |
-| [**`hor`**](/more-occasions#unspecified-member-r) | the first-ranked occasion | *at whichever ranks first* | *at the preferred time* | I |
+| [`har`](/more-occasions#more-occasions) | some member of the listed times | *sometimes among these* | *sometimes* | B |
+| [`her`](/more-occasions#more-occasions) | some member of a one-choice menu | *anytime among these* | *anytime* | B |
+| [`hur`](/more-occasions#more-occasions) | a leftover occasion | *some time other than these* | *some other time* | B |
+| [`hor`](/more-occasions#unspecified-member-r) | the first-ranked occasion | *at whichever ranks first* | *at the preferred time* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -99,7 +99,7 @@ A **span** is a role letter and a pair of brackets. The letter is the role of th
 | [`[…]`](/spans#writing) | Ageben | cite: what someone said, a title | `zazozon d[azozon] vezuyol.` | B |
 | [<code>&lt;…&gt;</code>](/spans#loans) | not Ageben | opaque: a foreign word, code, a name | <code>zazozon d&lt;kimchi&gt; vayebel.</code> | B |
 | [`th(…)`](/spans#asides) | Ageben | aside: a side comment; `g(…)` on a noun, `w(…)` on the next word, `h(…)` on the action | `zazozon vowurol th(hugowul).` | B |
-| [`{ … }`](/scope-islands#scope-islands) | Ageben | scope island: a binder inside reaches only that chunk | `zazozon { hogugem zodozel gerulol } vayebel.` | I |
+| [`{ … }`](/scope-islands#scope-islands) | Ageben | scope island: a binder (a word like *possibly*, or a join) inside reaches only that chunk | `zazozon { hogugem zodozel gerulol } vayebel.` | I |
 
 When the lexicon has a matching root, write the ordinary word, not a span. An aside holds the same speech act as the outer sentence and never goes under `/y/`, `/z/`, `/d/`, `/b/`, or `/v/`.
 
@@ -109,13 +109,13 @@ When the lexicon has a matching root, write the ordinary word, not a span. An as
 | Mark | Use | English | Example | Stage |
 |------|-----|---------|---------|-------|
 | [*(none)*](/spans#exact-paraphrase-proper) | exact | verbatim wording | `d[azozon]` | B |
-| [**`~`**](/spans#exact-paraphrase-proper) | paraphrase | the gist | `d~[zazozon vozuyel]` | B |
-| [**`@`**](/spans#exact-paraphrase-proper) | proper | a work known by that title | `d@[onuren alazun]` | B |
-| [**`~@`**](/spans#exact-paraphrase-proper) | proper, loosely remembered | *something like that title* | `d~@[onuren alazun]` | B |
-| [**`^@`**](/spans-as-words#one-of-a-title) | one thing under the name | *an iPhone* / *a copy of* | `d^@[onuren alazun]` | I |
-| [**`~^@`**](/spans-as-words#one-of-a-title) | one copy, title roughly | *a copy of something like* | `d~^@[onuren alazun]` | I |
+| [`~`](/spans#exact-paraphrase-proper) | paraphrase | the gist | `d~[zazozon vozuyel]` | B |
+| [`@`](/spans#exact-paraphrase-proper) | proper | a work known by that title | `d@[onuren alazun]` | B |
+| [`~@`](/spans#exact-paraphrase-proper) | proper, loosely remembered | *something like that title* | `d~@[onuren alazun]` | B |
+| [`^@`](/spans-as-words#one-of-a-title) | one thing under the name | *an iPhone* / *a copy of* | `d^@[onuren alazun]` | I |
+| [`~^@`](/spans-as-words#one-of-a-title) | one copy, title roughly | *a copy of something like* | `d~^@[onuren alazun]` | I |
 
-A one-word name is an ordinary **-n** word (`donuren`), not a span.
+A one-word name is an ordinary `-n` word (`donuren`), not a span.
 
 ### Which slot {#slot}
 
@@ -173,12 +173,12 @@ A one-word name is an ordinary **-n** word (`donuren`), not a span.
 
 ## Scope islands {#islands}
 
-Braces `{ … }` group one chunk so a binder inside reaches only it. The edges are a short break in speech. A [tone mark](/tone-marks#tone-marks) right before the brace colors the whole island.
+Braces `{ … }` group one chunk so a binder inside reaches only it. The edges are a short break in speech. A [tone mark](/tone-marks#tone-marks) right before the brace applies to the whole island.
 
 | Rule | Detail | Stage |
 |------|--------|-------|
 | [Binder required](/scope-islands#scope-islands) | a scope-taking `/h/` or `/th/`, or a join, inside; a hook is never a binder | I |
-| [At most one phrase](/scope-islands#scope-islands) | a noun phrase, verb phrase, or `/ɡ/` stack, with its own detail | I |
+| [At most one phrase](/scope-islands#scope-islands) | a noun phrase, verb phrase, or run of `/ɡ/` adjectives, with its own detail | I |
 | [One island per clause](/scope-islands#scope-islands) | islands do not nest | I |
 | [Hosts keep their `/b/`](/scope-islands#scope-islands) | host and hosted `/b/` are both inside or both outside | I |
 | [No role letter](/scope-islands#scope-islands) | on the edges | I |
@@ -187,9 +187,9 @@ Braces `{ … }` group one chunk so a binder inside reaches only it. The edges a
 | Placement | Reading | Stage |
 |-----------|---------|-------|
 | [`/h/` or `/th/` inside](/scope-islands#scope-islands) | frames that chunk | I |
-| [`/h/` or `/th/` outside](/scope-islands#scope-islands) | ordinary floating word: frames the verb or clause | I |
-| [Join inside](/scope-islands#scope-islands) | joins only the interior conjuncts | I |
-| [Join outside](/scope-islands#scope-islands) | ordinary lookback; the edges do not filter it | I |
+| [`/h/` or `/th/` outside](/scope-islands#scope-islands) | as usual: frames the verb or clause | I |
+| [Join inside](/scope-islands#scope-islands) | joins only the items inside | I |
+| [Join outside](/scope-islands#scope-islands) | reaches back as usual; the edges do not limit it | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -206,6 +206,6 @@ Braces `{ … }` group one chunk so a binder inside reaches only it. The edges a
 | `her` *anytime* ([any one will do](/restrictors#sometimes-anytime-some-other-time)) | | `hual` *always* ([at all times](/restrictors#always-hual)) |
 | `hur` *some other time* ([a leftover occasion](/more-occasions#more-occasions)) | | `huel` *anytime except when…* ([leftover times in general](/more-occasions#more-occasions)) |
 | `herulal hal` *only when it rains* ([a restrictor list](/more-occasions#occasions-vs-a-dependent-when)) | | `thohem blarl` *if a whole sentence* ([a dependent](/more-occasions#occasions-vs-a-dependent-when)) |
-| `d[azozon]` *what was said* ([a cite](/spans#writing)) | | `donuren` *the one-word name* ([an ordinary -n word](/spans#exact-paraphrase-proper)) |
+| `d[azozon]` *what was said* ([a cite](/spans#writing)) | | `donuren` *the one-word name* ([an ordinary `-n` word](/spans#exact-paraphrase-proper)) |
 | `d@[onuren alazun]` *the work* ([a proper span](/spans#exact-paraphrase-proper)) | | `glegon` *the name as spelling* ([a mention](/spans-as-words#mention)) |
 | `th(…)` *an aside* ([a comment](/spans#asides)) | | `{ … }` *a scope island* ([a chunk for a binder](/scope-islands#scope-islands)) |

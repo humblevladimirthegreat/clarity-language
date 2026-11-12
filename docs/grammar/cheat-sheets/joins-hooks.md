@@ -11,20 +11,20 @@ A quick look at [joins](/joins), [joins on verbs and stances](/verb-and-stance-j
 
 ## One vowel map {#vowel-map}
 
-Joins and hooks share their vowels. Single vowels and the join **ua** are Beginner; the other stacked vowels are Intermediate.
+Joins and hooks share their vowels. Single vowels and the join `ua` are Beginner; the other stacked vowels are Intermediate.
 
-| Vowel | [Join](/joins#join-type-vowel-series) after a list | Hook between two same-role words | Hook before `/b/` (**-l** / **-m**) |
+| Vowel | [Join](/joins#join-type-vowel-series) after a list | Hook between two same-role words | Hook before `/b/` (`-l` / `-m`) |
 |-------|------------------------------------------------------|----------------------------------|--------------------------------------|
-| **a** | *and* | [*including*](/hooks#including) | [*in* / *amid*](/hooks#extra-noun) |
-| **o** | rank: first matters most | [*or rather*](/hooks#rather) | *for* / *used by* |
-| **e** | *pick one* | [*instead*](/hooks#instead) | *at* / *near* |
-| **u** | *not* / *neither* / *none of* | [*except*](/hooks#except) | *from* / *away from* |
-| **ao** | [in order](/rank-joins#route-ao): *A, then B* | | [*using* / *by*](/extra-noun-hooks#extra-noun-intermediate) |
-| **ua** | [*everything but*](/joins#everything-ua); alone *everything* | [range](/ranges#ranges): outside *A–B* | *out of* / *out from among* |
-| **uo** | [rank reversed](/rank-joins#invert-u-stacks): last first | [range](/ranges#ranges): strictly between | *against* / *contrary to* |
-| **ae** | [*and/or*](/set-joins#exclusivity-and-denying-a-whole-list) (at least one) | | *on* / *over* |
+| `a` | *and* | [*including*](/hooks#including) | [*in* / *amid*](/hooks#extra-noun) |
+| `o` | rank: first matters most | [*or rather*](/hooks#rather) | *for* / *used by* |
+| `e` | *pick one* | [*instead*](/hooks#instead) | *at* / *near* |
+| `u` | *not* / *neither* / *none of* | [*except*](/hooks#except) | *from* / *away from* |
+| `ao` | [in order](/rank-joins#route-ao): *A, then B* | | [*using* / *by*](/extra-noun-hooks#extra-noun-intermediate) |
+| `ua` | [*everything but*](/joins#everything-ua); alone *everything* | [range](/ranges#ranges): outside *A–B* | *out of* / *out from among* |
+| `uo` | [rank reversed](/rank-joins#invert-u-stacks): last first | [range](/ranges#ranges): strictly between | *against* / *contrary to* |
+| `ae` | [*and/or*](/set-joins#exclusivity-and-denying-a-whole-list) (at least one) | | *on* / *over* |
 | **oe** | [tie](/rank-joins#rank-joins): equal rank | [range](/ranges#ranges): *A through B* | *toward* / *in the direction of* |
-| **ue** | [*anything but*](/rank-joins#invert-u-stacks) | | *through* / *by way of* |
+| `ue` | [*anything but*](/rank-joins#invert-u-stacks) | | *through* / *by way of* |
 
 ## Joins {#joins}
 
@@ -32,11 +32,11 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 
 | Ending | On a join | Stage |
 |--------|-----------|-------|
-| **-l** | [closed](/joins#join-type-vowel-series): the listed items are the only ones | B |
-| **-m** | [open](/joins#and-lists-a): *(and possibly more)*; [alone](/joins#standalone-phrase), *as far as I know* | B |
-| **-r** | [one unnamed member](/joins#unspecified-member-r-phrase) (*something*, *someone*); one vowel only | B |
-| **-rx** | [an unnamed group](/joins#unspecified-member-r-phrase) (`zarx` *some ones*); `/z/` `/d/` `/b/` only | B |
-| **-n** | `/z/` `/d/` `/b/`: [a named list](/named-phrases#named-list); `/x/`: [sequence](/clause-sequence#clause-sequence); `/v/`: [list verb](/list-verbs#list-verbs); `/ɡ/` `/h/`: [join-relation](/join-relations#join-relations) | I–A |
+| `-l` | [closed](/joins#join-type-vowel-series): the listed items are the only ones | B |
+| `-m` | [open](/joins#and-lists-a): *(and possibly more)*; [alone](/joins#standalone-phrase), *as far as I know* | B |
+| `-r` | [one unnamed member](/joins#unspecified-member-r-phrase) (*something*, *someone*); one vowel only | B |
+| `-rx` | [an unnamed group](/joins#unspecified-member-r-phrase) (`zarx` *some ones*); `/z/` `/d/` `/b/` only | B |
+| `-n` | `/z/` `/d/` `/b/`: [a named list](/named-phrases#named-list); `/x/`: [sequence](/clause-sequence#clause-sequence); `/v/`: [list verb](/list-verbs#list-verbs); `/ɡ/` `/h/`: [join-relation](/join-relations#join-relations) | I–A |
 
 <PageBreak />
 
@@ -46,7 +46,7 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 |------|---------|---------|-------|
 | [Items first, then the join](/joins#and-lists-a); its first letter matches the items | `zodozel zogozel zal` | *a dog and a cat* | B |
 | | `vowurol veruvol vam` | *walks and runs* (and possibly more) | B |
-| [Clause joins](/joins#clause-joins) (`/x/`) go **between** clauses | `zazozon vowurol xam zalazun veruvol` | *Azozon walks and Alazun runs* | B |
+| [Clause joins](/joins#clause-joins) (`/x/`) go between clauses | `zazozon vowurol xam zalazun veruvol` | *Azozon walks and Alazun runs* | B |
 | A [different clause join](/joins#clause-joins) closes everything before it | `A xel B xal C` | *(A or B) and C* | B |
 | [Nest](/list-structure#fence-nesting) by stacking joins | `zedudal zogudal zel zowulal zal` | *either tea or coffee, and water* | I |
 | [Scope island](/scope-islands#scope-islands) keeps a small list inside a bigger one of the same role | `zazozon { zalazun zal } zam` | *Azozon and (just Alazun)* | A |
@@ -99,20 +99,20 @@ A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `x
 
 ## Joins across roles {#across-roles}
 
-The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, they become [list verbs](/list-verbs#list-verbs), [join-relations](/join-relations#join-relations) (always followed by one `/b/`), and [clause sequence](/clause-sequence#clause-sequence) words. Sequence is Beginner; list verb and join-relations are Intermediate.
+The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With `-n`, they become [list verbs](/list-verbs#list-verbs), [join-relations](/join-relations#join-relations) (always followed by one `/b/`), and [clause sequence](/clause-sequence#clause-sequence) words. Sequence is Beginner; list verb and join-relations are Intermediate.
 
 | Vowel | Verb (`/v/` + object) | Relation (`/ɡ/` / `/h/` + `/b/`) | Between clauses (`/x/`) |
 |-------|------------------------|----------------------------------|--------------------------|
-| **a** | `van` *includes* | `gan` / `han` *including*, *with* | `xan` *and then* |
-| **o** | `von` *prioritizes* | `gon` / `hon` *prioritizing* | |
-| **ao** | `vaon` *starts with* | `gaon` / `haon` *starting with* | |
-| **u** | `vun` *refuses* | `gun` / `hun` *against*, *refusing* | `xun` *and then not* |
-| **ua** | `vuan` *excludes* | `guan` / `huan` *without* | |
-| **uo** | `vuon` *deprioritizes* | `guon` / `huon` *deprioritizing* | `xuon` *and before that* |
-| **e** | `ven` *chooses* | `gen` / `hen` *exclusive for* | `xen` *or maybe*, *failing that* |
-| **ae** | `vaen` *picks* (more may follow) | `gaen` / `haen` *open to*, *among options* | `xaen` *and/or maybe* |
-| **oe** | `voen` *equates* | `goen` / `hoen` *on a par with* | |
-| **ue** | `vuen` *bars* | `guen` / `huen` *anything but* | |
+| `a` | `van` *includes* | `gan` / `han` *including*, *with* | `xan` *and then* |
+| `o` | `von` *prioritizes* | `gon` / `hon` *prioritizing* | |
+| `ao` | `vaon` *starts with* | `gaon` / `haon` *starting with* | |
+| `u` | `vun` *refuses* | `gun` / `hun` *against*, *refusing* | `xun` *and then not* |
+| `ua` | `vuan` *excludes* | `guan` / `huan` *without* | |
+| `uo` | `vuon` *deprioritizes* | `guon` / `huon` *deprioritizing* | `xuon` *and before that* |
+| `e` | `ven` *chooses* | `gen` / `hen` *exclusive for* | `xen` *or maybe*, *failing that* |
+| `ae` | `vaen` *picks* (more may follow) | `gaen` / `haen` *open to*, *among options* | `xaen` *and/or maybe* |
+| `oe` | `voen` *equates* | `goen` / `hoen` *on a par with* | |
+| `ue` | `vuen` *bars* | `guen` / `huen` *anything but* | |
 
 [Stance joins](/verb-and-stance-joins#stance-joins) (`/th/`) work on the stance words before them, not the claim: `thahum blerulal thul` *not because of the rain*. With clause grounds, the join goes [before `blarl`](/verb-and-stance-joins#stance-join-before-barl): `thahum thul blarl` *not because …*. [Alone](/verb-and-stance-joins#standalone-stance-joins), they say how to take the claim:
 
@@ -133,17 +133,17 @@ A hook has no role letter: just a vowel (or two) and an ending. Tell the kinds a
 | two words in the same role | [same-role](/hooks#including) | `zuvayal al zazozon` | *the family, including Azozon* | B |
 | front of the sentence | [glue to prior talk](/hooks#discourse-hooks) | `al zazozon vowurol` | *Additionally, Azozon walks* | B |
 | `/b/` right after, no recipient `/b/` right before | [extra noun](/hooks#extra-noun) | `zodozel vezuvel al bohehal` | *a dog sleeps in a house* | B |
-| **-r**, nothing on the right | [point back](/in-clause-hooks#hook-resume) | `zalazun vehohel er` | *Alazun sits there* | I |
+| `-r`, nothing on the right | [point back](/in-clause-hooks#hook-resume) | `zalazun vehohel er` | *Alazun sits there* | I |
 | stacked vowel between two same-role words | [range](/ranges#ranges) | `zazozon oel zahelan` | *Azozon through Ahelan* | I |
 | fused onto a citation | [hook compound](/hook-compounds#hook-compounds) | `vowurolul` | *leave* | A |
-| hook vowels, then **`x`** and a stem | [hook prefix](/hook-compounds#hook-prefixes) | `guoxuvuvul` | *anti-fighting* | A |
-| role letter, hook vowels, **`x`**, a join, then a `bl-` landmark | [hooked join](/hooked-joins#hooked-joins) | `zexual blohehal` | *everyone at the house* | A |
+| hook vowels, then `x` and a stem | [hook prefix](/hook-compounds#hook-prefixes) | `guoxuvuvul` | *anti-fighting* | A |
+| role letter, hook vowels, `x`, a join, then a `bl-` landmark | [hooked join](/hooked-joins#hooked-joins) | `zexual blohehal` | *everyone at the house* | A |
 
 ### Same-role and front of sentence {#same-role-discourse}
 
-**-l**: B is the whole story. **-m**: *and maybe more* (in-clause) or *one of several* (at the front). **-n** names the whole phrase: `dedudal en dogudal` *Coffee-Instead-of-Tea* (a cafe).
+`-l`: B is the whole story. `-m`: *and maybe more* (in-clause) or *one of several* (at the front). `-n` names the whole phrase: `dedudal en dogudal` *Coffee-Instead-of-Tea* (a cafe).
 
-| Hook | `A HOOK B` | [At the front](/hooks#discourse-hooks) | **-m** at the front | Stage |
+| Hook | `A HOOK B` | [At the front](/hooks#discourse-hooks) | `-m` at the front | Stage |
 |------|------------|--------------|---------------------|-------|
 | `al` | [*A, including B*](/hooks#including) | *Additionally, …* | `am` *Among other things, …* | B |
 | `ol` | [*A, or rather B*](/hooks#rather) | *In other words, …* | `om` *To put it one way, …* | B |
@@ -162,9 +162,11 @@ More: [parallel chains](/in-clause-hooks#parallel-chains) `zuvayal am zazozon ul
 
 ### Extra nouns {#extra-nouns}
 
-Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting. **-r** drops the landmark and [points back](/in-clause-hooks#hook-resume). Fused onto a citation, the hook makes a [verb](/hook-compounds#hook-compounds) (shown from *walk*). Its vowels before **`x`** (or **`mx`** for the **-m** zone) and a stem make a [hook prefix](/hook-compounds#hook-prefixes). With an [abstract landmark](/abstract-landmarks#abstract-landmarks) the hook keeps its picture: `al babowum` *in a crisis*, `ual baram` *out of debt*.
+Hook, then the landmark in `/b/`. `-m` makes the landmark the general setting. `-r` drops the landmark and [points back](/in-clause-hooks#hook-resume).
 
-| **-l** | **-m** | **-r** | Fused **-l** | Prefix **-l** | Prefix **-m** |
+Fused onto a citation, the hook makes a [verb](/hook-compounds#hook-compounds) (shown from *walk*). Its vowels before `x` (or `mx` for the `-m` setting) and a stem make a [hook prefix](/hook-compounds#hook-prefixes). With an [abstract landmark](/abstract-landmarks#abstract-landmarks) the hook keeps its place meaning: `al babowum` *in a crisis*, `ual baram` *out of debt*.
+
+| `-l` | `-m` | `-r` | Fused `-l` | Prefix `-l` | Prefix `-m` |
 |--------|--------|--------|--------------|---------------|---------------|
 | `al` *in* | `am` *amid* | `ar` *in there* | `owurolal` *enter* | `gaxohehal` *indoor* | `gamxohalal` *mid-ocean* |
 | `ael` *on* | `aem` *over* | `aer` *on it* | `owurolaol` *mount* | `gaexohalal` *seagoing* | `gaemxohalal` *over the ocean* |
@@ -177,13 +179,13 @@ Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting.
 | `aol` *using* | `aom` *by* | `aor` *with it* | `owurolael` *wield* | `gaoxowulal` *water-powered* | `gaomxorahol` *road-borne* |
 | `uol` *against* | `uom` *contrary to* | | `owuroluel` *oppose* | `guoxohalal` *sea-facing* | `guomxawulol` *headwind* |
 
-Stage: one-vowel extra-noun **-l** (`al` `el` `ul` `ol`) Beginner on [hooks](/hooks#extra-noun); two-vowel extra-noun and `om` Beginner on [extra nouns](/extra-noun-hooks#extra-noun-intermediate); abstract landmarks Intermediate; fused forms and prefixes Advanced.
+Stage: one-vowel extra-noun `-l` (`al` `el` `ul` `ol`) Beginner on [hooks](/hooks#extra-noun); two-vowel extra-noun and `om` Beginner on [extra nouns](/extra-noun-hooks#extra-noun-intermediate); abstract landmarks Intermediate; fused forms and prefixes Advanced.
 
 <PageBreak />
 
 ### Hooked joins {#hooked-joins}
 
-Role letter, the hook's vowels (**`m`** for its zone, **`r`** to point back), **`x`**, then a join; the landmark follows as a `bl-` word and bounds who counts. On `/h/` the join is a bare restrictor and the landmark a time. All Advanced.
+Role letter, the hook's vowels (`m` for its setting, `r` to point back), `x`, then a join; the landmark follows as a `bl-` word and bounds who counts. On `/h/` the join is a bare restrictor and the landmark a time. All Advanced.
 
 | Ageben | English |
 |--------|---------|

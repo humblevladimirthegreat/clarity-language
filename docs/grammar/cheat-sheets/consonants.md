@@ -26,21 +26,23 @@ From the [role letters](/clause#role-letters) table. `/y/` and `/x/` start a tur
 | [`/y/`](/speech-moves#turn-y) | turn: call, reaction, or speech act | B |
 | [`/x/`](/speech-moves#continue-x) | continue: glue this sentence to the last one | B |
 
-The same letters name a part in an earlier event on [role pointers](/pronouns#role-pointers) and [role compounds](/roles#role-compounds): **z** the doer, **d** the one it happens to, **b** the extra party.
+On [role pointers](/pronouns#role-pointers) and [role compounds](/roles#role-compounds), the same letters name a part in an earlier event: `z` the doer, `d` the one it happens to, and `b` the extra party.
 
 ## Endings {#endings}
 
-A content word's last letter is **-l**, **-m**, **-n**, or **-r**. Optional [**-x**](/plurality#associative) after that marks associates or a group. The letter order **l m r n** has five sibling **scales**: content, exactness, completeness, reference, settled-to-passing. Each **series** reuses one scale’s **cell logic**, the mapping of those letters. A **fit cue** says why. Unused cells are an em dash. A mixed host writes one ending letter and reads it by cell: a [number](/number-markers#number-endings) is exactness on **-l** / **-m**, content on **-n**, reference on **-r**.
+A content word's last letter is `-l`, `-m`, `-n`, or `-r`. An optional [`-x`](/plurality#associative) after it marks associates or a group.
 
-Shown on one root, `azozo`. From [word endings](/word-endings#concrete-l) and [resume](/pronouns#resume-r). Content is **-l** / **-m** / **-n**; **-r** is reference.
+The letter order `l`, `m`, `r`, `n` gives five sibling **scales**: content, exactness, completeness, reference, and settled-to-passing. Each **series** reuses one scale's mapping of those letters, and its **fit cue** says why. An em dash marks an unused cell. A mixed host, a word whose ending letters read on different scales, writes one ending letter and reads it on that letter's scale: a [number](/number-markers#number-endings) reads `-l` / `-m` as exactness, `-n` as content, and `-r` as reference.
+
+Shown on one root, `azozo`. From [word endings](/word-endings#concrete-l) and [resume](/pronouns#resume-r). Content is `-l` / `-m` / `-n`; `-r` is reference.
 
 | Ending | Means | Example | English | Stage |
 |--------|-------|---------|---------|-------|
-| **-l** | [first mention, everyday kind](/word-endings#concrete-l) | `azozol` | *swan* | B |
-| **-m** | [first mention, published abstract](/word-endings#abstract-m) | `azozom` | *grace* | B |
-| **-n** | [a name](/word-endings#named-n-beginner) | `azozon` | *Azozon* | B |
-| **-r** | [the same one again](/pronouns#resume-r) | `zazozor` | *Azozon* (again) | B |
-| **-x** after any of these | [associates, or a group](/plurality#associative) | `zazozonx` | *Azozon and associates* | B |
+| `-l` | [first mention, everyday kind](/word-endings#concrete-l) | `azozol` | *swan* | B |
+| `-m` | [first mention, published abstract](/word-endings#abstract-m) | `azozom` | *grace* | B |
+| `-n` | [a name](/word-endings#named-n-beginner) | `azozon` | *Azozon* | B |
+| `-r` | [the same one again](/pronouns#resume-r) | `zazozor` | *Azozon* (again) | B |
+| `-x` after any of these | [associates, or a group](/plurality#associative) | `zazozonx` | *Azozon and associates* | B |
 
 <PageBreak />
 
@@ -48,7 +50,7 @@ Shown on one root, `azozo`. From [word endings](/word-endings#concrete-l) and [r
 
 From [word endings](/word-endings), [number endings](/number-markers#number-endings), [spans](/spans#when-required), [joins](/joins#join-type-vowel-series), [hooks](/hooks), [role pointers](/pronouns#role-pointers), [tags](/tag-pronouns#tag-pronouns), and [settled-to-passing](/sakes#settled-to-passing).
 
-| Scale | Fit cue | **-l** | **-m** | **-r** | **-n** |
+| Scale | Fit cue | `-l` | `-m` | `-r` | `-n` |
 |-------|----------|--------|--------|--------|--------|
 | [Content](/word-endings) | which lexicon reading | concrete | published abstract | — | a name |
 | [Exactness](/number-markers#number-endings) | how tightly you mean the stated form | exact | approximate | — | — |
@@ -56,7 +58,7 @@ From [word endings](/word-endings), [number endings](/number-markers#number-endi
 | [Reference](/pronouns#resume-r) | which referent relative to what is already in play | a new one | their part | the same one | — |
 | [Settled-to-passing](/sakes#settled-to-passing) | how lasting the hold is | lasting | default | passing | — |
 
-Reference **-l** and **-m** are only on [role pointers](/pronouns#a-new-one) and [tags](/tag-pronouns#tag-pronouns). Tag [**-n**](/tag-pronouns#tag-pronouns) is reference **-r** plus a claim that the referent is a name.
+Reference `-l` and `-m` are only on [role pointers](/pronouns#a-new-one) and [tags](/tag-pronouns#tag-pronouns). Tag [`-n`](/tag-pronouns#tag-pronouns) is reference `-r` plus a claim that the referent is a name.
 
 ### How the series hang {#ending-tree}
 
@@ -117,21 +119,21 @@ l m r n
       └── evidence strength (show / describe / gesture)
 ```
 
-**-ln** ([one of a name](/proper-names#name-instance--ln)) writes content **-n** and reads as reference **-l**.
+`-ln` ([one of a name](/proper-names#name-instance--ln)) writes content `-n` and reads as reference `-l`.
 
 | Relation | Pair | Stage |
 |----------|------|-------|
-| **is** the same job | tag **-m** is pointer [share](/pronouns#share) (`zwuzem` by role, [`zwam`](/tag-pronouns#tag-pronouns) by who) | B / I |
+| **is** the same job | tag `-m` is pointer [share](/pronouns#share) (`zwuzem` by role, [`zwam`](/tag-pronouns#tag-pronouns) by who) | B / I |
 | **is** | hook closed / open is [join](/joins#join-type-vowel-series) closed / open | B |
-| **is** | [fill-ask](/questions#fill-ask-r) is join **-r** under a question; digitless [`grar`](/number-markers#number-endings) is join **-r** | B / I |
+| **is** | [fill-ask](/questions#fill-ask-r) is join `-r` under a question; digitless [`grar`](/number-markers#number-endings) is join `-r` | B / I |
 | **is** | [polar](/polar-inventory#polar-endings) is the [act ending](/firm-soft#speech-act) | B / I |
 | **is** | [decision](/want-and-decide#decision-changeability) is unmet [changeability](/sakes#sake-changeability) | I |
-| **same spelling, not the same scale** | extra-noun [**-m**](/extra-noun-hooks#extra-noun-intermediate) (*amid*) is exactness; same-role [**-m**](/hooks) (*and maybe more*) is completeness | B |
-| **same spelling, not the same scale** | stand-in [**`-rm`**](/stand-in-vowels#stand-in) is exactness (gist); resume-sense [**`-rm`**](/resume-sense#resume-sense) is content (the abstract) | I |
+| **same spelling, not the same scale** | extra-noun [`-m`](/extra-noun-hooks#extra-noun-intermediate) (*amid*) is exactness; same-role [`-m`](/hooks) (*and maybe more*) is completeness | B |
+| **same spelling, not the same scale** | stand-in [`-rm`](/stand-in-vowels#stand-in) is exactness (gist); resume-sense [`-rm`](/resume-sense#resume-sense) is content (the abstract) | I |
 
 ## Other jobs {#other-jobs}
 
-Same letter, different **letter job** by **placement**: where the letter sits picks the job.
+The same letter can do a different **letter job**: where it sits in the word picks the job.
 
 | Letter | Where | Job | Stage |
 |--------|-------|-----|-------|
@@ -141,7 +143,7 @@ Same letter, different **letter job** by **placement**: where the letter sits pi
 | [`th`](/label-seams#label-reach) mid-word | after the root | stance seam: [reach](/label-seams#label-reach), [sakes](/sakes#word-shape), [viewpoint](/viewpoint#viewpoint-laterals) | I |
 | [`x`](/compounds) mid-word | between roots | two roots, one word | B |
 | [`/x/`](/speech-moves#continue-x) first | | continue / sentence glue | B |
-| [**-x**](/plurality#associative) last | after the ending | associates or a group | B |
+| [`-x`](/plurality#associative) last | after the ending | associates or a group | B |
 | [`r`](/phonotactics#number-word-exception) after a role letter | `gragel` | starts a number word | I |
 
 `th` is one letter. Digit letters also start [digit syllables](/letter-names#letter-names).
@@ -150,37 +152,37 @@ Same letter, different **letter job** by **placement**: where the letter sits pi
 
 ## Root-tail kinds {#root-kinds}
 
-A root's last consonant hints at the kind of thing. From [root tails](/root-tails#root-tails). Memory aid only: grammar does not read it. Each kind **echoes** a letter job: it points at a job that letter already has.
+A root's last consonant hints at the kind of thing. From [root tails](/root-tails#root-tails). The tail is a memory aid only: the grammar does not read it. Each kind **echoes** a letter job: it points at a job that letter already has.
 
 | Letter | Kind | Example | Echo | Stage |
 |--------|------|---------|-----------------|-------|
 | `z` | creatures | `ogoze` *cat* | [`/z/`](/clause#role-letters) who acts | A |
 | `y` | people | `eboyo` *baby* | [`/y/` + name](/speech-moves#vocative) calls someone | A |
-| `m` | mind and feeling | `evemu` *fear* | [**-m**](/word-endings#abstract-m) abstract | A |
+| `m` | mind and feeling | `evemu` *fear* | [`-m`](/word-endings#abstract-m) abstract | A |
 | `b` | body and what goes on it | `aheba` *hand* | [`/b/`](/clause#role-letters) the extra piece | A |
 | `v` | doing, playing, moving | `eruvo` *run* | [`/v/`](/clause#role-letters) the action | A |
 | `h` | places and fixtures | `oheha` *house* | [`/h/`](/clause#role-letters) where | A |
-| `l` | nature and raw stuff | `edalo` *tree* | [**-l**](/word-endings#concrete-l) concrete | A |
+| `l` | nature and raw stuff | `edalo` *tree* | [`-l`](/word-endings#concrete-l) concrete | A |
 | `d` | food, drink, kitchen | `alede` *apple* | [`/d/`](/clause#role-letters) what is done to | A |
 | `w` | tools | `anewu` *knife* | [`/w/`](/clause#role-letters) *with* | A |
 | `g` | signs and marks | `ewugu` *warning* | [`/ɡ/`](/clause#role-letters) a mark on something | A |
 | `r` | counting, time, money | `ugoro` *clock* | `r` after a role letter starts a [number](/numbers#counts) | A |
-| `n` | titles, paper, named sports | `unona` *newspaper*, `ezuna` *soccer* | [**-n**](/proper-names#proper-name--n) the name ending | A |
+| `n` | titles, paper, named sports | `unona` *newspaper*, `ezuna` *soccer* | [`-n`](/proper-names#proper-name--n) the name ending | A |
 
 ## `-n` that is not a name {#n-not-a-name}
 
-On a content word, **-n** marks a name ([word endings](/proper-names#proper-name--n)). These closed families also end in **-n** without naming anything:
+On a content word, `-n` marks a name ([word endings](/proper-names#proper-name--n)). These closed families also end in `-n` without naming anything:
 
-| Words | What **-n** does there | Example | Stage |
+| Words | What `-n` does there | Example | Stage |
 |-------|------------------------|---------|-------|
 | [special pronouns](/pronouns#special-pronouns), the [generic pronoun](/pronouns#generic-pronoun), and the [topic pronoun](/topic#topic-pronoun) | the usual ending on these person words | `zuwen` *I*, `zeyen` *one*, `zalen` *the topic* | B |
-| [stand-ins](/stand-in-roles#stand-in-roles) | **-rn** (single vowel) or **-n** (stacked vowel) names a kind of sentence content (statement, question, command, prohibition); on `/v/`, the matching response verb | `darn` *a statement*, `varn` *state* | A |
+| [stand-ins](/stand-in-roles#stand-in-roles) | `-rn` (single vowel) or `-n` (stacked vowel) names a kind of sentence content (statement, question, command, prohibition); on `/v/`, the matching response verb | `darn` *a statement*, `varn` *state* | A |
 | [join words](/joins) with a `/v/`, `/x/`, `/ɡ/`, or `/h/` first letter | join content: a [list verb](/list-verbs#list-verbs), clause [sequence](/clause-sequence#clause-sequence), or a [join-relation](/join-relations#join-relations) | `van` *include*, `xan` *and then*, `gan` *including* | B / I |
 
 These still count as names:
 
 | Words | Why it is still a name | Stage |
 |-------|------------------------|-------|
-| a phrase join under `/z/`, `/d/`, or `/b/` | **-n** titles the bundle ([titled phrases](/proper-names#titled-phrases)) | I |
-| a hook | **-n** titles a proper-name phrase ([titled phrases](/proper-names#titled-phrases)) | I |
-| a number word | **-n** is a named designation, such as an official label or *the Second* ([number endings](/number-markers#number-endings)) | I |
+| a phrase join under `/z/`, `/d/`, or `/b/` | `-n` titles the bundle ([titled phrases](/proper-names#titled-phrases)) | I |
+| a hook | `-n` titles a proper-name phrase ([titled phrases](/proper-names#titled-phrases)) | I |
+| a number word | `-n` is a named designation, such as an official label or *the Second* ([number endings](/number-markers#number-endings)) | I |

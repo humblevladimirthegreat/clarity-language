@@ -166,7 +166,7 @@ A parenthetical comment span (`th(…)` on the sentence; `g(…)`, `w(…)`, or 
 
 ### Associative
 
-**-x** after an ending. On a name (**-nx**), a resume (**-rx**), or a person pointer: an **anchor plus associates**. On a first mention (**-lx**, **-mx**, **-lnx**): an indefinite group of that kind in this situation.
+`-x` after an ending. On a name (`-nx`), a resume (`-rx`), or a person pointer: an **anchor plus associates**. On a first mention (`-lx`, `-mx`, `-lnx`): an indefinite group of that kind in this situation.
 
 [Plurality](/plurality#associative)
 
@@ -466,7 +466,7 @@ A channel, NOTIONAL, or holder that keeps covering your later claims with no cha
 
 ### Greeting / conversation length
 
-A named citation is a hello (`azozon.`). Add mid-word **`x`** plus **`a`** / **`e`** / **`o`** / **`u`** to say how long the conversation is expected to last: open-ended, a few minutes, one slot, or passing. At departure, **`xon`** means leaving soon, **`xen`** about to leave, and **`xun`** leaving now. When people set different lengths at arrival, the lesser bid holds.
+A named citation is a hello (`azozon.`). Add mid-word `x` plus `a` / `e` / `o` / `u` to say how long the conversation is expected to last: open-ended, a few minutes, one slot, or passing. At departure, `xon` means leaving soon, `xen` about to leave, and `xun` leaving now. When people set different lengths at arrival, the lesser bid holds.
 
 [Word endings](/word-endings#greeting) · [Conversation length](/conversation-length#conversation-length)
 
@@ -486,7 +486,7 @@ Whose view a clause reports. The name is fused onto an evidential, **MAY**, or *
 
 ### Hook
 
-Prefix-less *including / rather / instead / except*, discourse glue, extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (zone **-m** *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *used by* (whose) / *by* / *contrary to*; placement decides the job; **`uom`** before a `/th/` stance is *contrary to* that stance), and fused [Cite plus a hook](/hook-compounds#hook-compounds) (citation plus extra-noun hook). Optional `/w/` immediately before the free hook grades that hook (including restrictors); `/b/` sits immediately after the free hook. Parallel chains, detail on the hook, and **-r** pointing back to a landmark are [hooks inside the clause](/in-clause-hooks). **-m** and **-r** at the front of a sentence, stacked discourse, and extra placements are [discourse hooks](/discourse-hooks).
+Prefix-less *including / rather / instead / except*, discourse glue, extra-noun *in* / *on* / *at* / *toward* / *from* / *out of* / *through* / *for* / *using* / *against* (zone `-m` *amid* / *over* / *near* / *in the direction of* / *away from* / *out from among* / *by way of* / *used by* (whose) / *by* / *contrary to*; placement decides the job; `uom` before a `/th/` stance is *contrary to* that stance), and fused [Cite plus a hook](/hook-compounds#hook-compounds) (citation plus extra-noun hook). Optional `/w/` immediately before the free hook grades that hook (including restrictors); `/b/` sits immediately after the free hook. Parallel chains, detail on the hook, and `-r` pointing back to a landmark are [hooks inside the clause](/in-clause-hooks). `-m` and `-r` at the front of a sentence, stacked discourse, and extra placements are [discourse hooks](/discourse-hooks).
 
 [Hooks](/hooks)
 
@@ -560,7 +560,7 @@ Right-close list closer; **conjunct** = listed item.
 
 ### Label reach
 
-Mid-word **`th`** plus a vowel on a content root, or the vowel right after **`w`** on a role word: this episode (**`thu`**), practiced role (**`tho`**), this pair (**`the`**), type across scenes (**`tha`**), or a stacked vowel.
+Mid-word `th` plus a vowel on a content root, or the vowel right after `w` on a role word: this episode (`thu`), practiced role (`tho`), this pair (`the`), type across scenes (`tha`), or a stacked vowel.
 
 [Label seams](/label-seams#label-reach)
 
@@ -586,7 +586,7 @@ What a consonant does in a position: first letter is a [role letter](#role-lette
 
 ### Likeness (*like*)
 
-Hosted **`hewem`** / **`gewem`** plus model `/b/` (*like* a duck / *like* Azozon’s); with **-l**, **`hewel`** / **`gewel`** is *exactly like*. Not **IDENTITY**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
+Hosted `hewem` / `gewem` plus model `/b/` (*like* a duck / *like* Azozon’s); with `-l`, `hewel` / `gewel` is *exactly like*. Not IDENTITY, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
 
 [Relations](/relations#likeness), [Exactly like](/exactly-like#exactly-like)
 
@@ -820,7 +820,7 @@ Word-initial job letter.
 
 ### Role pointer
 
-Role letter + **`w`** + reach vowel + part consonant + pointer vowel + ending (`zwuzer`): a participant of an earlier event (**`e`** the latest one with that role, **`a`** the other one, **`u`** the one the event left unsaid) or of this sentence (**`o`**, a reflexive). **-r** names the participant, **-l** a new one of the same kind (`zwuzel`), and **-m** the participant’s part in the event (`zwuzem`).
+Role letter + `w` + reach vowel + part consonant + pointer vowel + ending (`zwuzer`): a participant of an earlier event (`e` the latest one with that role, `a` the other one, `u` the one the event left unsaid) or of this sentence (`o`, a reflexive). `-r` names the participant, `-l` a new one of the same kind (`zwuzel`), and `-m` the participant’s part in the event (`zwuzem`).
 
 [Pronouns](/pronouns#role-pointers)
 

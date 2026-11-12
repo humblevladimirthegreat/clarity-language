@@ -25,7 +25,7 @@ A number word is one word: role letter, marker, one syllable per digit, ending. 
 |-----|---------|---------|-------|
 | [Count](/numbers#counts) | `zogozelx gragel.` | *There are three cats.* | B |
 | [Count, many digits](/numbers#counts): one word | `gradomol` | *twenty* | B |
-| [Ordinal](/numbers#ordinals): `re` for `ra` | `zanal grodol.` | *There is a second book.* | B |
+| [Ordinal](/numbers#ordinals): `ro` for `ra` | `zanal grodol.` | *There is a second book.* | B |
 | [More than one](/numbers#more-than-one) | `zogozelx gral.` | *There is more than one cat.* | B |
 
 ### The marker {#marker}
@@ -33,12 +33,12 @@ A number word is one word: role letter, marker, one syllable per digit, ending. 
 <!-- cheat-sheet: numbers -->
 | Marker | Writing | Use | Example | Stage |
 |--------|---------|-----|---------|-------|
-| [**a**](/number-markers#marker-vowel-referential-identity) | `+` | positive count or amount | `g+3` *three cats*; `b+12` *of size 12* | B |
-| [**u**](/number-markers#marker-vowel-referential-identity) | `-` | negative amount | `d-3` *−3* (object); `z-` *some negative amount*; `g-2` a signed measure | I |
-| [**o**](/number-markers#marker-vowel-referential-identity) | `#` | rank from the start | `g#2` *the second page*; `z#2` *second* (as subject) | B |
-| [**e**](/number-markers#marker-vowel-referential-identity) | `_` | digit-string label or code | `g_12` *room 12*; `d_5551234`; `d_` *some code* | I |
+| [`a`](/number-markers#marker-vowel-referential-identity) | `+` | positive count or amount | `g+3` *three cats*; `b+12` *of size 12* | B |
+| [`u`](/number-markers#marker-vowel-referential-identity) | `-` | negative amount | `d-3` *−3* (object); `z-` *some negative amount*; `g-2` a signed measure | I |
+| [`o`](/number-markers#marker-vowel-referential-identity) | `#` | rank from the start | `g#2` *the second page*; `z#2` *second* (as subject) | B |
+| [`e`](/number-markers#marker-vowel-referential-identity) | `_` | digit-string label or code | `g_12` *room 12*; `d_5551234`; `d_` *some code* | I |
 
-A sign applies once to the whole word; a label never takes one. In other slots the number stays an amount, rank, or code:
+A sign applies once to the whole word; a label never takes one. In other roles the number stays an amount, rank, or code:
 
 <!-- cheat-sheet: numbers -->
 | Prefix | Use | English | Stage |
@@ -59,12 +59,12 @@ A sign applies once to the whole word; a label never takes one. In other slots t
 <!-- cheat-sheet: numbers -->
 | Written | Spoken | Use | Stage |
 |---------|--------|-----|-------|
-| [*(none)*](/number-markers#number-endings): `g+3`, `g+`, [`d_12`](/number-markers#ending-marks-second-slot-after-pos) | **-l** | exact, newly stated | B |
-| [**`~`**](/number-markers#number-endings): `g~+3`, `g~+`, [`g~+12`, `g~#2`](/number-markers#ending-marks-second-slot-after-pos) | **-m** | approximate: *about N* | I |
-| [**`@`**](/number-markers#number-endings): `g@#2`, [`g@_12`](/number-markers#ending-marks-second-slot-after-pos) | **-n** | named title or label | I |
-| [**`=`**](/number-markers#number-endings): `g=+3`, `g=#2`, `d=_12` | **-r** | resume a number already given (needs a digit) | I |
+| [*(none)*](/number-markers#number-endings): `g+3`, `g+`, [`d_12`](/number-markers#ending-marks-second-slot-after-pos) | `-l` | exact, newly stated | B |
+| [`~`](/number-markers#number-endings): `g~+3`, `g~+`, [`g~+12`, `g~#2`](/number-markers#ending-marks-second-slot-after-pos) | `-m` | approximate: *about N* | I |
+| [`@`](/number-markers#number-endings): `g@#2`, [`g@_12`](/number-markers#ending-marks-second-slot-after-pos) | `-n` | named title or label | I |
+| [`=`](/number-markers#number-endings): `g=+3`, `g=#2`, `d=_12` | `-r` | resume a number already given (needs a digit) | I |
 
-Digitless **-r** is not a resume: `grar` is *some number* in a statement and *which number?* in a question.
+Digitless `-r` is not a resume: `grar` is *some number* in a statement and *which number?* in a question.
 
 ### Writing it down {#writing}
 
@@ -87,8 +87,8 @@ Digitless **-r** is not a resume: `grar` is *some number* in a statement and *wh
 | [−3 (object)](/number-markers#starter-examples) | `d-3` | | I |
 | [second (modifier)](/number-markers#starter-examples) | `g#2` | | I |
 | [about 3](/number-markers#starter-examples) | `g~+3` | approximate | I |
-| [how many? / some amount](/number-markers#starter-examples) | `g=+` | digitless **-r** blank | I |
-| [that three again](/number-markers#starter-examples) | `g=+3` | **-r** resume | I |
+| [how many? / some amount](/number-markers#starter-examples) | `g=+` | digitless `-r` blank | I |
+| [that three again](/number-markers#starter-examples) | `g=+3` | `-r` resume | I |
 | [room 12](/number-markers#starter-examples) | `g_12` | digit-string label | I |
 
 Choose by digit count: two or more digits and every label or code in shorthand (`g+12`, `d_555,123,4567`); one digit or none spelled (`gragel`, `grodol`, `gramol`, `gral`). Number words side by side share one writing. A number built onto a root is always spelled and never takes `~`, `@`, or `=`.
@@ -97,15 +97,15 @@ Choose by digit count: two or more digits and every label or code in shorthand (
 
 ## Blanks and bands {#blanks}
 
-Drop every digit and the word says what kind of number, not its value. With **-r** it is the blank: *some number* in a statement, *which number?* in a question.
+Drop every digit and the word says what kind of number, not its value. With `-r` it is the blank: *some number* in a statement, *which number?* in a question.
 
 <!-- cheat-sheet: numbers -->
 | Marker | Writing | Unspecified | Stage |
 |--------|---------|-------------|-------|
-| [**`ra`**](/digitless-exponents#digitless) | `…+` | positive amount, specialized to *more than one* | I |
-| [**`ru`**](/digitless-exponents#digitless) | `…-` | a negative amount | I |
-| [**`ro`**](/digitless-exponents#digitless) | `…#` | a rank from the start | I |
-| [**`re`**](/digitless-exponents#digitless) | `…_` | a digit-string or label | I |
+| [`ra`](/digitless-exponents#digitless) | `…+` | positive amount, specialized to *more than one* | I |
+| [`ru`](/digitless-exponents#digitless) | `…-` | a negative amount | I |
+| [`ro`](/digitless-exponents#digitless) | `…#` | a rank from the start | I |
+| [`re`](/digitless-exponents#digitless) | `…_` | a digit-string or label | I |
 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Stage |
@@ -131,7 +131,7 @@ Drop every digit and the word says what kind of number, not its value. With **-r
 
 ## Big and small {#big-small}
 
-An **exponent** is a power of ten before the mantissa digits: **`wa`** positive, **`wu`** negative, **`ya`** after exponent digits when a mantissa follows. Use engineering notation (multiples of 3). A bare exponent, with no mantissa, names a band.
+An **exponent** is a power of ten before the mantissa (the ordinary digits): `wa` positive, `wu` negative, `ya` after exponent digits when a mantissa follows. Use engineering notation (multiples of 3). A bare exponent, with no mantissa, names a band.
 
 <!-- cheat-sheet: numbers -->
 | Form | Band | Reading | Stage |
@@ -152,7 +152,7 @@ The next bands, `e4` and `e5`, are tens and hundreds of thousands. Soft `grawage
 | [Several groups](/digitless-exponents#group-separator) | `g+5e3,860` | *5860* | I |
 | [Seat in a row](/digitless-exponents#group-separator) | `zuzohel g#2,3.` | *There is seat 2 in row 3.* | I |
 
-Each comma is spoken as the separator **`the`**, on every marker.
+Each comma is spoken as the separator `the`, on every marker.
 
 <!-- cheat-sheet: numbers -->
 | Example | Use | English | Stage |
@@ -172,7 +172,7 @@ In casual talk a stretch may set an ambient order of magnitude, so bare numbers 
 
 The role letter picks the use; the marker still says amount, rank, or code. Only the markers and writing are listed here, because every row is the same shape: `v`, `h`, `y`, `x`, `w`, `th` + the number.
 
-| Slot | `ra` `+` | `ru` `-` | `ro` `#` | `re` `_` | Stage |
+| Role | `ra` `+` | `ru` `-` | `ro` `#` | `re` `_` | Stage |
 |------|----------|----------|----------|----------|-------|
 | [`/v/` verb](/number-roles#number-as-verb-by-marker) | add N | remove N | take place N | enter / dial the code | I |
 | [`/h/` adverb](/number-roles#number-as-adverb-by-marker) | *N times* | *÷N*, *every Nth* | *for the Nth time* | clock time | I |
@@ -193,7 +193,7 @@ The role letter picks the use; the marker still says amount, rank, or code. Only
 | [Likelihood](/number-roles#number-as-stance-by-marker): the digits are already a percent | `zalazun vowurol th+70.` | *Alazun is probably walking.* (I'd put it at 70%) | I |
 | [Place on a scale](/number-roles#number-as-degree): `w#N` from 2; [see comparatives](/comparative-arity#place-on-a-scale) | `zazozon zol wrodol gelazem.` | *Azozon is the second biggest.* | I |
 
-`th+` / `th-` is *likely* / *unlikely* with no figure; `th_N` is *per source N*; `th#N` is *N-th hand* from 2. A factor goes on `/h/`, never `/w/`. Likelihood **-m** hedges (`th~+70`), **-n** names a level (`th@+95`), **-r** repeats it (`th=+70`).
+`th+` / `th-` is *likely* / *unlikely* with no figure; `th_N` is *per source N*; `th#N` is *N-th hand* from 2. A factor goes on `/h/`, never `/w/`. Likelihood `-m` hedges (`th~+70`), `-n` names a level (`th@+95`), `-r` repeats it (`th=+70`).
 
 <PageBreak />
 
@@ -201,7 +201,7 @@ The role letter picks the use; the marker still says amount, rank, or code. Only
 
 ### Codes and labels {#codes}
 
-The digit-string marker `_` holds a phone, room, channel, or serial number, with letters too. A comma marks a field, spoken `the`; no exponent or percent. **-x** on a label names a run (`z_90x`, the ’90s).
+The digit-string marker `_` holds a phone, room, channel, or serial number, with letters too. A comma marks a field, spoken `the`; no exponent or percent. `-x` on a label names a run (`z_90x`, the ’90s).
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -230,8 +230,8 @@ A digit string under `/h/` with no relation word before it. Clock is `h_…`; a 
 <!-- cheat-sheet: numbers -->
 | Job | How | Stage |
 |-----|-----|-------|
-| [Clock](/digit-strings#time) | digit-string `ro` as bare `/h/`, 24-hour, fields left to right (`h_15,30`, `h_15,30,00`) | B |
-| [Date](/digit-strings#time) | `_` with `oe` (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`) | B |
+| [Clock](/digit-strings#time) | marker `re` (`_`) as bare `/h/`, 24-hour, fields left to right (`h_15,30`, `h_15,30,00`) | B |
+| [Date](/digit-strings#time) | calendar-ordinal `oe` (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`) | B |
 | [Day of the week](/digit-strings#time) | ordinal on `olero`, from Monday (`zolerom grobal` *Monday*) | B |
 | [Month or year](/digit-strings#time) | ordinal on `amalo`; label on `ovuva` (`zovuvam g_1962`) | B |
 
@@ -248,10 +248,10 @@ Digitless `hrel` is *some clock or date*; `hrer` asks *when?* *Three times* (`hr
 
 ### Units {#units}
 
-Put the amount on the unit's noun as `/ɡ/`. Each unit is the abstract **-m** of a published root. Say the word, never `m` or `kg`.
+Put the amount on the unit's noun as `/ɡ/`. Each unit is the abstract `-m` of a published root. Say the word, never `m` or `kg`.
 
 <!-- cheat-sheet: numbers -->
-| Unit | Root | Example | Literal on same root | Stage |
+| Unit | Root | Example | Same root, concrete sense | Stage |
 |------|------|---------|----------------------|-------|
 | [meter](/measures-and-percent#stock-units) | `ezero` | `bezerom g+2` | `ezerol` *set-square* | I |
 | [gram](/measures-and-percent#stock-units) | `ubere` | `buberem g+5` | `uberel` *pound* (banknote) | I |
@@ -319,7 +319,7 @@ To limit to one end, make the other end infinity:
 | [`zruwal uel zrazal`](/open-ranges#rays) | 5 left out | *less than 5* | A |
 | [`zrazal oem zrawal`](/open-ranges#rays) | soft | *about 5 or more* | A |
 
-Ranks take `growal` (last) and `growul` (first) as ends: `zrodol oel zrowal` is *2nd through last*. A named band uses **-n**, and **-r** stands for a value in it.
+Ranks take `growal` (last) and `growul` (first) as ends: `zrodol oel zrowal` is *2nd through last*. A named band uses `-n`, and `-r` stands for a value in it.
 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Stage |
@@ -332,13 +332,13 @@ Ranks take `growal` (last) and `growul` (first) as ends: `zrodol oel zrowal` is 
 
 ### Percent, parts, and kin {#parts}
 
-End a count with **`yo`** for a percent, **`yu`** for percentage points. A minus number right after a plain noun is a fraction.
+End a count with `yo` for a percent, `yu` for percentage points. A minus number right after a plain noun is a fraction.
 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`yo`**](/measures-and-percent#percent-and-percentage-points) | percent of a whole | `25` in `25%`; those digits ÷ 100 | I |
-| [**`yu`**](/measures-and-percent#percent-and-percentage-points) | percentage points | `2` in `+2%*`; those digits ÷ 100 | I |
+| [`yo`](/measures-and-percent#percent-and-percentage-points) | percent of a whole | `25` in `25%`; those digits ÷ 100 | I |
+| [`yu`](/measures-and-percent#percent-and-percentage-points) | percentage points | `2` in `+2%*`; those digits ÷ 100 | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -352,7 +352,7 @@ After a measure unit a lone minus number is a negative amount (`bezerom grudol` 
 
 ## Special values {#special}
 
-A digitless exponent (**`e`** speech `wa`, **`e-`** speech `wu`, no digits after it) makes a special value. What comes before it decides which kind.
+A digitless exponent (`e` speech `wa`, `e-` speech `wu`, no digits after it) makes a special value. What comes before it decides which kind.
 
 <!-- cheat-sheet: numbers -->
 | Form | Reading | Stage |
@@ -377,13 +377,13 @@ A digitless exponent (**`e`** speech `wa`, **`e-`** speech `wu`, no digits after
 | [Finally:](/special-values#special-number-as-discourse) | `xrowal` | *Finally:* | A |
 | [Starting with:](/special-values#special-number-as-discourse) | `xrowul` | *Starting with:* | A |
 
-The same form on each slot: `gruwul` the amount, `xruwul` *just before that:*, `thruwul` *virtually*, `vruwul` *nudge down*, `hruwul` *almost*, `yruwul` *so close!* **-l** measures the margin (`hrawul` over by a hair, `hruwul` under); **-m** reports the felt effort (`hrawum` *managed it, just*; `hruwum` *tried hard and didn't quite*).
+The same form in each role: `gruwul` the amount, `xruwul` *just before that:*, `thruwul` *virtually*, `vruwul` *nudge down*, `hruwul` *almost*, `yruwul` *so close!* `-l` measures the margin (`hrawul` over by a hair, `hruwul` under); `-m` reports the felt effort (`hrawum` *managed it, just*; `hruwum` *tried hard and didn't quite*).
 
 <PageBreak />
 
 ### Zero and hyperbole {#zero-hyperbole}
 
-Mantissa **`0`** with a digitless exponent is a strong zero. A nonzero mantissa with a digitless exponent is a joke size.
+Mantissa `0` with a digitless exponent is a strong zero. A nonzero mantissa with a digitless exponent is a joke size.
 
 <!-- cheat-sheet: numbers -->
 | Form | Reading | Stage |
@@ -404,7 +404,7 @@ Mantissa **`0`** with a digitless exponent is a strong zero. A nonzero mantissa 
 | [`g+1e-`](/special-values#hyperbole) | *one gazillionth*, vanishingly small | A |
 | [`g-1e`](/special-values#hyperbole) | *minus one gazillion* | A |
 
-Plain zero is `g+0` and the bare band at 10⁻¹ is `g+e-1`. `gramol` is plain zero, `gramowal` absolute zero, `grawamol` the ones band. A gazillionth is `g#1e` (late) and `g#1e-` (early): finite jokes. Other slots: `y+e` *To infinity!*, `y#e` *Finally!*, `y#0e` *Disqualified!*, `v+e` *increase without bound*, `v+0e` *annihilate*, `h+1e` *a gazillion times*, and on stance `th+e` *certain*, `th+0e` *no chance at all*.
+Plain zero is `g+0` and the bare band at 10⁻¹ is `g+e-1`. `gramol` is plain zero, `gramowal` absolute zero, `grawamol` the ones band. A gazillionth is `g#1e` (late) and `g#1e-` (early): finite jokes. Other roles: `y+e` *To infinity!*, `y#e` *Finally!*, `y#0e` *Disqualified!*, `v+e` *increase without bound*, `v+0e` *annihilate*, `h+1e` *a gazillion times*, and on stance `th+e` *certain*, `th+0e` *no chance at all*.
 
 <PageBreak />
 
@@ -433,10 +433,10 @@ Two marker vowels in one word: speak `u` first.
 <!-- cheat-sheet: numbers -->
 | Stack | Spoken | Use | Stage |
 |-------|--------|-----|-------|
-| [`#_`](/stacked-markers#stacked-markers) | **r-u-o** | a label whose value is negative: a basement floor (`gruebal`) | A |
-| [`+-`](/stacked-markers#stacked-markers) | **r-u-a** | a symmetric error bound ±N (`gruagel`) | A |
-| [`#-`](/stacked-markers#stacked-markers) | **r-u-e** | count from the end | A |
-| [`_#`](/stacked-markers#stacked-markers) | **r-o-e** | a calendar date | A |
+| [`#_`](/stacked-markers#stacked-markers) | r-u-o | a label whose value is negative: a basement floor (`gruebal`) | A |
+| [`+-`](/stacked-markers#stacked-markers) | r-u-a | a symmetric error bound ±N (`gruagel`) | A |
+| [`#-`](/stacked-markers#stacked-markers) | r-u-e | count from the end | A |
+| [`_#`](/stacked-markers#stacked-markers) | r-o-e | a calendar date | A |
 
 Those four are the whole set.
 
@@ -444,7 +444,7 @@ Those four are the whole set.
 
 ### Generations and kin {#generations}
 
-On a rank, an exponent with digits is a generation, not a power of ten: `eK` goes K deeper, `e-K` K up. The mantissa picks the member of that cohort.
+On a rank, an exponent with digits is a generation, not a power of ten: `eK` goes K deeper, `e-K` K up. The mantissa picks the member of that generation.
 
 <!-- cheat-sheet: numbers -->
 | Form | Reading | Stage |
@@ -482,7 +482,7 @@ Only kin make generations: friends and bosses are [social relations](/social-tie
 | This | vs | That |
 |------|----|------|
 | `gragel` *three* ([a count](/numbers#counts)) | | `grogel` *the third* ([a rank](/numbers#ordinals)) |
-| `gral` *more than one* ([an amount](/numbers#more-than-one)) | | `zogozelx` *cats* ([a group, with **-x**](/digitless-exponents#digitless)) |
+| `gral` *more than one* ([an amount](/numbers#more-than-one)) | | `zogozelx` *cats* ([a group, with `-x`](/digitless-exponents#digitless)) |
 | `gram` *a few* ([a soft count](/digitless-exponents#digitless)) | | `gral` *more than one* ([a firm one](/numbers#more-than-one)) |
 | `grar` *how many?* ([a blank](/digitless-exponents#how-many)) | | `drager` *those three again* ([a resume, needs a digit](/digitless-exponents#digitless)) |
 | `hragel` *three times* ([a factor](/number-roles#number-as-adverb-by-marker)) | | `h_15,30` *at 15:30* ([a clock time](/digit-strings#time)) |
@@ -490,7 +490,7 @@ Only kin make generations: friends and bosses are [social relations](/social-tie
 | `grodol` *the second* ([from the start](/numbers#ordinals)) | | `gruodol` *second from the end* ([from the end](/stacked-markers#from-the-end)) |
 | `growal` *last place* ([the landmark](/special-values#special-referential)) | | `grobal` *1st* ([numbered first](/special-values#special-referential)) |
 | `growul` *the start landmark* ([the onset](/special-values#special-referential)) | | `grobal` *1st* ([a counted first](/special-values#special-referential)) |
-| `grawamol` *the ones band* ([bare OoM](/digitless-exponents#bare-oom)) | | `gramowal` *absolute zero* ([a strong zero](/special-values#zero-exponent-referential)) |
+| `grawamol` *the ones band* ([a bare band](/digitless-exponents#bare-oom)) | | `gramowal` *absolute zero* ([a strong zero](/special-values#zero-exponent-referential)) |
 | `gruwul` *just short* ([a hair under](/special-values#special-referential)) | | `grawul` *a hair over* ([a hair above zero](/special-values#special-referential)) |
 | `xrodol` *point 2:* ([a numbered step](/number-roles#number-as-discourse-marker-by-marker)) | | `x#-2` *2nd from the end:* ([counting back](/stacked-markers#from-the-end)) |
 | `xrudol` *independent item 2:* ([a new line of support](/number-roles#number-as-discourse-marker-by-marker)) | | `x#-2` *2nd from the end:* ([counting back](/stacked-markers#from-the-end)) |

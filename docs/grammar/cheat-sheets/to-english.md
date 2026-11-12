@@ -19,16 +19,16 @@ Ordinary roots and [dictionary compounds](/compounds#dictionary-compounds) are n
 | root + ending, no role letter, mid-clause | [same-role word](/same-role-words#same-role-words) | `abam` | I |
 | role letter + vowel(s) + ending, no root | [join](/joins) | `zal`, `vul` | B |
 | `y` + vowel + ending, no root | [speech act](/firm-soft#speech-act) | `yal` | B |
-| role letter + vowel + **-rn** | [stand-in word](/stand-in-roles#stand-in-roles) | `darn` *a statement* | I |
+| role letter + vowel + `-rn` | [stand-in word](/stand-in-roles#stand-in-roles) | `darn` *a statement* | I |
 | role letter + `w` + vowel + part + vowel + ending | [role pointer](/pronouns#role-pointers) | `zwuzer` *the latest doer* | B |
 | role letter + `w` + vowel + ending | [tag](/tag-pronouns#tag-pronouns) | `zwar` *A* | I |
-| a name's root + **-r** | [resume](/pronouns#resume-r) | `zazozor` *Azozon again* | B |
+| a name's root + `-r` | [resume](/pronouns#resume-r) | `zazozor` *Azozon again* | B |
 
 Every join and hook, with its English: [Joins and hooks cheat sheet](joins-hooks.md).
 
 ## Pronouns and sentence linkers {#closed-words}
 
-The pronouns are shown without a role letter: add the one for their slot (`zuwen` *I* as subject). The sentence linkers are shown whole.
+The pronouns are shown without a role letter: add the one for their role (`zuwen` *I* as subject). The sentence linkers are shown whole.
 
 <!-- generated: closed-words -->
 | Ageben | English | Taught in | Stage |
@@ -382,7 +382,7 @@ A [same-role word](/same-role-words#same-role-words) has no role letter and sits
 
 ## Sake words {#sakes}
 
-A [sake word](/sakes#word-shape) is a sake root, mid-word `th`, **a** (*serves*) or **u** (*detracts from*), and an ending. Shown on `/th/` with **-m**.
+A [sake word](/sakes#word-shape) is a sake root, mid-word `th`, `a` (*serves*) or `u` (*detracts from*), and an ending. Shown on `/th/` with `-m`.
 
 <!-- generated: sakes -->
 | Serves | Detracts from | Sake | Taught in | Stage |

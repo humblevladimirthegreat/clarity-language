@@ -9,11 +9,11 @@ outline: false
 
 How the four vowels are reused. Sounds are on [Sounds and spelling](/cheat-sheets/sounds-spelling). Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
-The letter order **a o e u** has two sibling **scales**: size is amount (biggest to smallest), order is position (first to fourth). Each **series** reuses one scale’s leftover-logic. A **fit cue** says why.
+The letter order `a`, `o`, `e`, `u` gives two sibling **scales**: size is amount (biggest to smallest), and order is position (first to fourth). Each **series** borrows one scale's order for a new job, and its **fit cue** says why that order fits the job.
 
 ## Scales and series {#scales}
 
-| Series | Parent | Fit cue | **a** | **o** | **e** | **u** | Stage |
+| Series | Parent | Fit cue | `a` | `o` | `e` | `u` | Stage |
 |--------|--------|----------|-------|-------|-------|-------|-------|
 | [Size](/root-tails#root-tails) (scale) | — | how much is there | big | medium | small | none | A |
 | [Order](/numbers#counts) (scale) | — | which slot in a count of four | first | second | third | fourth | B |
@@ -87,11 +87,11 @@ four vowels
       └── finger-code vowel hand — pinky-first count; consonant hand does not
 ```
 
-A say word is reach then act (`hwuvom`: this-act **u**, require **o**). A role pointer is reach then pointer (`zwuzer`: episode **u**, latest **e**).
+A say word is reach then act (`hwuvom`: this-act `u`, require `o`). A role pointer is reach then pointer (`zwuzer`: episode `u`, latest `e`).
 
 ## Size {#size}
 
-[Middle vowel](/root-tails#root-tails). Memory aid only: grammar does not read it. Feelings have no size.
+The [middle vowel](/root-tails#root-tails) is a memory aid only: the grammar does not read it. Feelings have no size.
 
 | [Middle vowel](/root-tails#root-tails) | Size | Stage |
 |----------------------------------------|------|-------|
@@ -100,7 +100,7 @@ A say word is reach then act (`hwuvom`: this-act **u**, require **o**). A role p
 | `e` | no bigger than your hand | A |
 | `u` | nothing you could measure | A |
 
-| Job | **a** | **o** | **e** | **u** | Stage |
+| Job | `a` | `o` | `e` | `u` | Stage |
 |-----|-------|-------|-------|-------|-------|
 | [Ability](/can-and-cant#ability) | `xa` can | `xo` can't right now | `xe` can't yet | `xu` never | B |
 | [Pointer](/pronouns#role-pointers) | [the other one](/pronouns#the-other-one) (`zwuzar`) | [this sentence](/pronouns#themself) (`dwuzor`) | latest with that part (`zwuzer`) | [left unsaid](/pronouns#whoever-it-was) (`zwuzur`) | B |
@@ -113,9 +113,9 @@ A say word is reach then act (`hwuvom`: this-act **u**, require **o**). A role p
 
 ## Join {#series}
 
-[Joins](/joins#join-type-vowel-series) use leftover-list: **a** grows, **o** ranks, **e** chooses one, **u** takes away. [Same-role hooks](/hooks#including) hang on join: how much of A is still in the slot.
+In [joins](/joins#join-type-vowel-series), the vowel says how much of the list is left: `a` grows it, `o` ranks it, `e` chooses one, and `u` takes away. [Same-role hooks](/hooks#including) hang on join: how much of A is still in the slot.
 
-| Job | **a** | **o** | **e** | **u** | Stage |
+| Job | `a` | `o` | `e` | `u` | Stage |
 |-----|-------|-------|-------|-------|-------|
 | [Join](/joins#join-type-vowel-series) | *and* | rank: first matters most | pick one | *not* / *none of* | B |
 | [Same-role hook](/hooks#including) | [*including*](/hooks#including) | [*or rather*](/hooks#rather) | [*instead*](/hooks#instead) | [*except*](/hooks#except) | B |
@@ -126,28 +126,28 @@ A say word is reach then act (`hwuvom`: this-act **u**, require **o**). A role p
 | [Comparative](/comparatives#comparatives) / [equative](/comparatives#equatives) | | `zol` *more … than* | | | B |
 | [Root job](/root-tails#root-tails) | holds or gathers | order, path, sequence | one whole thing | takes away | A |
 
-Equative **`oe`** `zoel` *as … as* is a join stack ([rank joins](/rank-joins#rank-joins)).
+The equative `zoel` (*as … as*) uses `oe`, a join stack ([rank joins](/rank-joins#rank-joins)).
 
 ### Stacked joins {#join-stacks}
 
-Two vowels keep the same pieces: **u** first inverts, the rest combine. Join stacks: [rank joins](/rank-joins#rank-joins).
+A stack of two vowels keeps the job of each: `u` first inverts the other vowel, and any other pair combines the two. The join stacks are taught on [rank joins](/rank-joins#rank-joins).
 
 | Vowels | [Join](/joins#join-type-vowel-series) | Stage |
 |--------|----------------------------------------|-------|
-| **ao** | [*A, then B*](/rank-joins#route-ao) | I |
-| **ua** | [*everything but*](/joins#everything-ua) | B |
-| **uo** | [rank reversed](/rank-joins#invert-u-stacks) | I |
-| **ae** | [*and/or*](/set-joins#exclusivity-and-denying-a-whole-list) | I |
+| `ao` | [*A, then B*](/rank-joins#route-ao) | I |
+| `ua` | [*everything but*](/joins#everything-ua) | B |
+| `uo` | [rank reversed](/rank-joins#invert-u-stacks) | I |
+| `ae` | [*and/or*](/set-joins#exclusivity-and-denying-a-whole-list) | I |
 | **oe** | [tie](/rank-joins#rank-joins) | I |
-| **ue** | [*anything but*](/rank-joins#invert-u-stacks) | I |
+| `ue` | [*anything but*](/rank-joins#invert-u-stacks) | I |
 
 <PageBreak />
 
 ### Act words {#acts}
 
-Stand-ins and say-word answers use the same vowels as the [act words](/speech-moves#speech-act-beginner): leftover-list work on claims.
+Stand-ins and say-word answers use the same vowels as the [act words](/speech-moves#speech-act-beginner), which hang on the join series.
 
-| Job | **a** | **o** | **e** | **u** | Stage |
+| Job | `a` | `o` | `e` | `u` | Stage |
 |-----|-------|-------|-------|-------|-------|
 | [Speech act](/speech-moves#speech-act-beginner) | statement (`yal`) | command (`yol`) | question (`yel`) | prohibition (`yul`) | B |
 | [Stand-in](/stand-in-vowels#stand-in) | `darl` *that …* | `dorl` *to …* | `derl` *whether …* | `durl` *lest / not to …* | B–I |
@@ -155,44 +155,44 @@ Stand-ins and say-word answers use the same vowels as the [act words](/speech-mo
 
 #### Polar answers {#polar}
 
-Polar answers stack two of these vowels. Beginner *yes* / *no* / *sure*: [polar particle](/questions#polar-particle). The rest: [polar inventory](/polar-inventory).
+Polar answers (the answers to a yes / no question) stack two of these vowels. The Beginner *yes*, *no*, and *sure* are on [polar particle](/questions#polar-particle), and the rest are on [polar inventory](/polar-inventory).
 
 | Vowels | Polar | Stage |
 |--------|-------|-------|
-| **ao** | `yaol` *yes* / *will do* | B |
-| **uo** | `yuol` *no* / *I won't* | B |
-| **ae** | `yael` *sure* | B |
-| **ue** | `yuel` *not that* | I |
-| **ua** | `yual` *doesn't apply* | I |
-| **oe** | `yoel` *I won't answer* | I |
+| `ao` | `yaol` *yes* / *will do* | B |
+| `uo` | `yuol` *no* / *I won't* | B |
+| `ae` | `yael` *sure* | B |
+| `ue` | `yuel` *not that* | I |
+| `ua` | `yual` *doesn't apply* | I |
+| `oe` | `yoel` *I won't answer* | I |
 
 <PageBreak />
 
 ## Extra nouns {#place}
 
-[Extra-noun hooks](/hooks#extra-noun) are the hook spelling after `/b/`. [Feeling urges](/how-you-feel#urges) reuse them: **a** *in*, **o** *for*, **e** *at*, **u** *from*.
+[Extra-noun hooks](/hooks#extra-noun) are the hook spelling after `/b/`. [Feeling urges](/how-you-feel#urges) reuse them: `a` *in*, `o` *for*, `e` *at*, `u` *from*.
 
-| Job | **a** | **o** | **e** | **u** | Stage |
+| Job | `a` | `o` | `e` | `u` | Stage |
 |-----|-------|-------|-------|-------|-------|
 | [Extra-noun](/hooks#extra-noun) | *in* | *for* | *at* | *from* | B |
 | [Feeling urge](/how-you-feel#urges) | STAYING (*stay in it*) | GIVING (*do something for someone*) | AIMED (*act on a target*) | AWAY (*move off*) | B |
 
 ### Stacked extra nouns {#extra-noun-stacks}
 
-Full extra-noun grid: [extra nouns](/extra-noun-hooks#extra-noun-intermediate). The [six more feeling urges](/feelings#emotion-compose) reuse the same stacks. English stays; letters follow join stacks.
+The full extra-noun grid is on [extra nouns](/extra-noun-hooks#extra-noun-intermediate), and the [six more feeling urges](/feelings#emotion-compose) reuse the same stacks. The vowel pairs are the join stacks' pairs, but each keeps its own English meaning here.
 
-| Vowels | Extra-noun (**-l** / **-m**) | Feeling urge (I) | Stage |
+| Vowels | Extra-noun (`-l` / `-m`) | Feeling urge (I) | Stage |
 |--------|------------------------------|--------------|-------|
-| **ao** | [*using* / *by*](/extra-noun-hooks#extra-noun-intermediate) | PLACATING (*keep the peace*) | B |
-| **ua** | *out of* / *out from among* | RELEASING (*let go*) | B |
-| **uo** | *against* / *contrary to* | RESISTING (*push back*) | B |
-| **ae** | *on* / *over* | HELD (*frozen*, *a lid on it*) | B |
-| **oe** | *toward* / *in the direction of* | TOWARD (*turn to someone*) | B |
-| **ue** | *through* / *by way of* | UNPLACED (*which way is unclear*) | B |
+| `ao` | [*using* / *by*](/extra-noun-hooks#extra-noun-intermediate) | PLACATING (*keep the peace*) | B |
+| `ua` | *out of* / *out from among* | RELEASING (*let go*) | B |
+| `uo` | *against* / *contrary to* | RESISTING (*push back*) | B |
+| `ae` | *on* / *over* | HELD (*frozen*, *a lid on it*) | B |
+| `oe` | *toward* / *in the direction of* | TOWARD (*turn to someone*) | B |
+| `ue` | *through* / *by way of* | UNPLACED (*which way is unclear*) | B |
 
 ## Root job {#root-vowels}
 
-From [root tails](/root-tails#root-tails). Last vowel hangs on join. Memory aids only: grammar does not read them.
+From [root tails](/root-tails#root-tails): a root's last vowel hangs on the join series. These are memory aids only: the grammar does not read them.
 
 | Last vowel | Job | Examples | Stage |
 |------------|-----|----------|-------|
@@ -203,11 +203,11 @@ From [root tails](/root-tails#root-tails). Last vowel hangs on join. Memory aids
 
 ## Order {#order}
 
-| Job | **a** | **o** | **e** | **u** | Stage |
+| Job | `a` | `o` | `e` | `u` | Stage |
 |-----|-------|-------|-------|-------|-------|
 | [Digit](/numbers#counts) | `ba` `za` `na` | `do` `vo` `mo` | `ge` `re` | `hu` `lu` | B |
 | [Tag](/tag-pronouns#tag-pronouns) | tag A (`zwar`) | tag O | tag E | tag U | I |
 | [Pitch](/phonology#vowel-pitch) | low | mid-low | mid-high | high | B |
 | [Finger code](/finger-code#counting) vowel hand | 1 (pinky) | 2 | 3 | 4 | B |
 
-Pitch adds no meaning. Letter names are the opposite of the digit (`bu` `de` `go` `ha` …), so naming a letter never sounds like counting.
+Pitch adds no meaning. A letter's name uses the opposite vowel of its digit (`bu` `de` `go` `ha` …), so naming a letter never sounds like counting.

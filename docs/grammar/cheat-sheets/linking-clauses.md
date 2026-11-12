@@ -15,15 +15,15 @@ Ageben has no *who / that / which*. For a noun, write [two sentences](/dependent
 
 ### Stand-ins {#stand-ins}
 
-The vowel is the kind of content, the same four vowels as the act words. **-rl** is the whole content, **-rm** leaves it open.
+The vowel is the kind of content, the same four vowels as the act words. `-rl` is the whole content, `-rm` leaves it open.
 
 <!-- cheat-sheet: linking-clauses -->
-| Stand-in | Content | **-rl** locked | **-rm** open | Stage |
+| Stand-in | Content | `-rl` locked | `-rm` open | Stage |
 |----------|---------|----------------|--------------|-------|
-| [**`a`**](/stand-in-vowels#stand-in) | a statement | `darl` *that …* | `darm` *that …* (gist) | B |
-| [**`o`**](/stand-in-vowels#stand-in) | an instruction | `dorl` *to …* | `dorm` *to …* (open) | I |
-| [**`e`**](/stand-in-vowels#stand-in) | a question | `derl` *whether …* | `derm` *whether …* (open) | B |
-| [**`u`**](/stand-in-vowels#stand-in) | something to avoid | `durl` *that not / lest …* | `durm` *lest …* (open) | I |
+| [`a`](/stand-in-vowels#stand-in) | a statement | `darl` *that …* | `darm` *that …* (gist) | B |
+| [`o`](/stand-in-vowels#stand-in) | an instruction | `dorl` *to …* | `dorm` *to …* (open) | I |
+| [`e`](/stand-in-vowels#stand-in) | a question | `derl` *whether …* | `derm` *whether …* (open) | B |
+| [`u`](/stand-in-vowels#stand-in) | something to avoid | `durl` *that not / lest …* | `durm` *lest …* (open) | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -40,15 +40,15 @@ Drop the inner `/z/` only after `dorl` / `dorm` or `durl` / `durm` filling `/d/`
 
 ### Pointing back {#back}
 
-**-rth** points back at content already said, so nothing follows it. The vowel picks the kind, and the word stands for the most recent content of that kind.
+`-rth` points back at content already said, so nothing follows it. The vowel picks the kind, and the word stands for the most recent content of that kind.
 
 <!-- cheat-sheet: linking-clauses -->
 | Stand-in | Points back to | English | Stage |
 |----------|----------------|---------|-------|
-| [**`darth`**](/stand-in-vowels#stand-in-back) | the last statement | *so* / *that* | I |
-| [**`derth`**](/stand-in-vowels#stand-in-back) | the last question | *that question* | I |
-| [**`dorth`**](/stand-in-vowels#stand-in-back) | the last instruction | *that (instruction)* | I |
-| [**`durth`**](/stand-in-vowels#stand-in-back) | the last *not* / *lest* content | *not* (*I hope not*) | I |
+| [`darth`](/stand-in-vowels#stand-in-back) | the last statement | *so* / *that* | I |
+| [`derth`](/stand-in-vowels#stand-in-back) | the last question | *that question* | I |
+| [`dorth`](/stand-in-vowels#stand-in-back) | the last instruction | *that (instruction)* | I |
+| [`durth`](/stand-in-vowels#stand-in-back) | the last *not* / *lest* content | *not* (*I hope not*) | I |
 
 <PageBreak />
 
@@ -60,20 +60,20 @@ Other role letters work the same: `blarth` after a hinge, `zarth` as the subject
 
 ### Verbs and subjects that take a sentence {#stand-in-roles}
 
-**-rn** (or **-n** after two vowels) is a fixed word for that kind of content. On `/v/` the next sentence is the content.
+`-rn` (or `-n` after two vowels) is a fixed word for that kind of content. On `/v/` the next sentence is the content.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Takes | English | Stage |
 |--------|-------|---------|-------|
-| [**`varn`**](/stand-in-roles#stand-in-roles) | a statement | *state…* | A |
-| [**`vern`**](/stand-in-roles#stand-in-roles) | a question | *question…* | A |
-| [**`vorn`**](/stand-in-roles#stand-in-roles) | an instruction | *command…* | A |
-| [**`vurn`**](/stand-in-roles#stand-in-roles) | something to avoid | *prohibit…* | A |
-| [**`vaon`**](/stand-in-roles#stand-in-roles) | accepts a statement | *confirm that…* | A |
-| [**`vuon`**](/stand-in-roles#stand-in-roles) | rejects a statement | *deny that…* | A |
-| [**`vaen`**](/stand-in-roles#stand-in-roles) | accepts a proposed action | *agree to…* | A |
-| [**`vuen`**](/stand-in-roles#stand-in-roles) | rejects a proposed action | *decline to…* | A |
-| [**`vuan`**](/stand-in-roles#stand-in-roles) | rejects the premise | *dispute the premise that…* | A |
+| [`varn`](/stand-in-roles#stand-in-roles) | a statement | *state…* | A |
+| [`vern`](/stand-in-roles#stand-in-roles) | a question | *question…* | A |
+| [`vorn`](/stand-in-roles#stand-in-roles) | an instruction | *command…* | A |
+| [`vurn`](/stand-in-roles#stand-in-roles) | something to avoid | *prohibit…* | A |
+| [`vaon`](/stand-in-roles#stand-in-roles) | accepts a statement | *confirm that…* | A |
+| [`vuon`](/stand-in-roles#stand-in-roles) | rejects a statement | *deny that…* | A |
+| [`vaen`](/stand-in-roles#stand-in-roles) | accepts a proposed action | *agree to…* | A |
+| [`vuen`](/stand-in-roles#stand-in-roles) | rejects a proposed action | *decline to…* | A |
+| [`vuan`](/stand-in-roles#stand-in-roles) | rejects the premise | *dispute the premise that…* | A |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -99,23 +99,23 @@ On a noun: `gerom` *during*, `gabam` *before*, `galam` *after*, `garum` *until*,
 
 ## Because, if, although {#hinges}
 
-A **hinge** names the link and takes the stand-in `blarl` as its `/b/`. Keep the pair last, then the dependent sentence. Hinges use the abstract **-m**. *Because* and *if* are stance, so `/th/`; the rest describe the event, so `/h/`. A noun in `/b/` in place of `blarl` works too (*despite Alazun*); on a noun, swap the letter to `/ɡ/`.
+A **hinge** names the link and takes the stand-in `blarl` as its `/b/`. Keep the pair last, then the dependent sentence. Hinges use the abstract `-m`. *Because* and *if* are stance, so `/th/`; the rest describe the event, so `/h/`. A noun in `/b/` in place of `blarl` works too (*despite Alazun*); on a noun, swap the letter to `/ɡ/`.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | English | Stage |
 |--------|---------|-------|
-| [**`thahum blarl`**](/dependents#hinges) | *because* | B |
-| [**`thohem blarl`**](/causation#if) | *if* | B |
-| [**`thebem blarl`**](/causation#only-if) | *only if* | B |
-| [**`thehom blarl`**](/causation#only-if) | *if and only if* | B |
-| [**`thovam blarl`**](/dependents#hinges) | *so that* / *in order to* | B |
-| [**`thezem blarl`**](/dependents#hinges) | *although* / *even though* | B |
-| [**`hezem blarl`**](/dependents#hinges) | *whereas* | B |
-| [**`herom blarl`**](/dependents#hinges) | *while* | B |
-| [**`harum blarl`**](/dependents#hinges) | *until* | B |
-| [**`huvahum blarl`**](/dependents#hinges) | *by the time* | B |
-| [**`habam blarl`**](/dependents#hinges) | *before* | B |
-| [**`halam blarl`**](/dependents#hinges) | *after* | B |
+| [`thahum blarl`](/dependents#hinges) | *because* | B |
+| [`thohem blarl`](/causation#if) | *if* | B |
+| [`thebem blarl`](/causation#only-if) | *only if* | B |
+| [`thehom blarl`](/causation#only-if) | *if and only if* | B |
+| [`thovam blarl`](/dependents#hinges) | *so that* / *in order to* | B |
+| [`thezem blarl`](/dependents#hinges) | *although* / *even though* | B |
+| [`hezem blarl`](/dependents#hinges) | *whereas* | B |
+| [`herom blarl`](/dependents#hinges) | *while* | B |
+| [`harum blarl`](/dependents#hinges) | *until* | B |
+| [`huvahum blarl`](/dependents#hinges) | *by the time* | B |
+| [`habam blarl`](/dependents#hinges) | *before* | B |
+| [`halam blarl`](/dependents#hinges) | *after* | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -133,26 +133,26 @@ A **hinge** names the link and takes the stand-in `blarl` as its `/b/`. Keep the
 
 ## Keep the same speech move going {#continue}
 
-A **linker** is an `/x/` word that opens the next sentence under the same speech act, with no act word of its own. Linkers use the abstract **-m**. Any other `/x/` word sets the [topic](/topic#topic). A linker and a topic word do not share a sentence.
+A **linker** is an `/x/` word that opens the next sentence under the same speech act, with no act word of its own. Linkers use the abstract `-m`. Any other `/x/` word sets the [topic](/topic#topic). A linker and a topic word do not share a sentence.
 
 <!-- cheat-sheet: linking-clauses -->
 | English | Ageben | Stage |
 |---------|--------|-------|
-| [*therefore*](/speech-moves#continue-x) | **`xahom`** | B |
-| [*however*](/sentence-linkers#sentence-linkers) | **`xezem`** | I |
-| [*meanwhile*](/sentence-linkers#sentence-linkers) | **`xugorom`** | I |
-| [*next*](/sentence-linkers#sentence-linkers): clears the topic | **`xevewom`** | I |
-| [*but*](/sentence-linkers#sentence-linkers): a harder push-back than *however* | **`xugohum`** | I |
-| [*by the way*](/sentence-linkers#sentence-linkers): clears the topic | **`xavedam`** | I |
+| [*therefore*](/speech-moves#continue-x) | `xahom` | B |
+| [*however*](/sentence-linkers#sentence-linkers) | `xezem` | I |
+| [*meanwhile*](/sentence-linkers#sentence-linkers) | `xugorom` | I |
+| [*next*](/sentence-linkers#sentence-linkers): clears the topic | `xevewom` | I |
+| [*but*](/sentence-linkers#sentence-linkers): a harder push-back than *however* | `xugohum` | I |
+| [*by the way*](/sentence-linkers#sentence-linkers): clears the topic | `xavedam` | I |
 
-Three take **-l** for a firm link.
+Three take `-l` for a firm link.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`xahol`**](/sentence-linkers#sentence-linkers) | the next claim follows necessarily | *it follows that* | I |
-| [**`xezel`**](/sentence-linkers#sentence-linkers) | the contrast stands | *nevertheless* / *even so* | I |
-| [**`xugohul`**](/sentence-linkers#sentence-linkers) | the last claim is blocked and replaced | *on the contrary* | I |
+| [`xahol`](/sentence-linkers#sentence-linkers) | the next claim follows necessarily | *it follows that* | I |
+| [`xezel`](/sentence-linkers#sentence-linkers) | the contrast stands | *nevertheless* / *even so* | I |
+| [`xugohul`](/sentence-linkers#sentence-linkers) | the last claim is blocked and replaced | *on the contrary* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -161,7 +161,7 @@ Three take **-l** for a firm link.
 | [Topic, then linker](/sentence-linkers#sentence-linkers) | `xazozon. xezem zalazun veruvol.` | *Now, about Azozon. However, Alazun runs.* | I |
 | [Linker in a new turn](/sentence-linkers#sentence-linkers) | `yem xevewom zawan vowurol.` | *So, do you want to walk?* | I |
 
-Linkers come only at the start of a sentence. They never follow a [clause join](/joins#clause-joins) and never open the sentence after a stand-in. Writing and speech rhythm for all of these is [one table](/sentence-linkers#past-a-period).
+Linkers come only at the start of a sentence. They never follow a [clause join](/joins#clause-joins) and never open the sentence after a stand-in. For writing and speech rhythm across all of these, see [what carries past a period](/sentence-linkers#past-a-period).
 
 ## Hosted relations {#relations}
 
@@ -172,10 +172,10 @@ The relation word takes the other noun as a `bl-` word right after it. Use `/h/`
 <!-- cheat-sheet: linking-clauses -->
 | Event / noun | Use | English | Stage |
 |--------------|-----|---------|-------|
-| [**`hewem` / `gewem`**](/relations#likeness) | resemblance to a model | *like* | B |
-| [**`hewel` / `gewel`**](/exactly-like#exactly-like) | an exact match | *exactly like* | I |
-| [**`heham` / `geham`**](/relations#exchange) | the other side of a swap | *in exchange for* | B |
-| [**`hanem` / `ganem`**](/relations#proxy) | authorized agency | *on behalf of* | B |
+| [`hewem` / `gewem`](/relations#likeness) | resemblance to a model | *like* | B |
+| [`hewel` / `gewel`](/exactly-like#exactly-like) | an exact match | *exactly like* | I |
+| [`heham` / `geham`](/relations#exchange) | the other side of a swap | *in exchange for* | B |
+| [`hanem` / `ganem`](/relations#proxy) | acting for someone, with their authority | *on behalf of* | B |
 
 <PageBreak />
 
@@ -196,13 +196,13 @@ Plain *in*, *on*, *at*, *from*, *toward* are [hooks](/extra-noun-hooks#extra-nou
 <!-- cheat-sheet: linking-clauses -->
 | Event / noun | Use | English | Stage |
 |--------------|-----|---------|-------|
-| [**`hedam` / `gedam`**](/locative-relations#locative-relations) | between two landmarks (one joined `/b/`) | *between* | I |
-| [**`hohom` / `gohom`**](/locative-relations#locative-relations) | from one edge to the far edge | *across* | I |
-| [**`hevam` / `gevam`**](/locative-relations#locative-relations) | on all sides of one landmark | *around* | I |
-| [**`hegalom` / `gegalom`**](/locative-relations#path-and-far-side) | comes near the landmark and goes on | *past* | I |
-| [**`herahom` / `gerahom`**](/locative-relations#path-and-far-side) | following the long side of the landmark | *along* | I |
-| [**`havunam` / `gavunam`**](/locative-relations#path-and-far-side) | facing the landmark with a gap between | *opposite* | I |
-| [**`huzurum` / `guzurum`**](/locative-relations#path-and-far-side) | on the far side from the speaker | *beyond* | I |
+| [`hedam` / `gedam`](/locative-relations#locative-relations) | between two landmarks (one joined `/b/`) | *between* | I |
+| [`hohom` / `gohom`](/locative-relations#locative-relations) | from one edge to the far edge | *across* | I |
+| [`hevam` / `gevam`](/locative-relations#locative-relations) | on all sides of one landmark | *around* | I |
+| [`hegalom` / `gegalom`](/locative-relations#path-and-far-side) | comes near the landmark and goes on | *past* | I |
+| [`herahom` / `gerahom`](/locative-relations#path-and-far-side) | following the long side of the landmark | *along* | I |
+| [`havunam` / `gavunam`](/locative-relations#path-and-far-side) | facing the landmark with a gap between | *opposite* | I |
+| [`huzurum` / `guzurum`](/locative-relations#path-and-far-side) | on the far side from the speaker | *beyond* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -225,11 +225,11 @@ English *of* names how one noun sits toward another. The `/b/` is what comes aft
 <!-- cheat-sheet: linking-clauses -->
 | Event / noun | Use | English | Stage |
 |--------------|-----|---------|-------|
-| [**`hobom` / `gobom`**](/of-relations#of-relations) | a constitutive piece | *part of* | I |
-| [**`hadam` / `gadam`**](/of-relations#of-relations) | filling of a vessel | *contents of* | I |
-| [**`hulom` / `gulom`**](/of-relations#of-relations) | the material | *made of* | I |
-| [**`haham` / `gaham`**](/of-relations#of-relations) | origin | *from* (origin) | I |
-| [**`hozowum` / `gozowum`**](/of-relations#of-relations) | a portion cut from a whole | *a piece of* / *a slice of* | I |
+| [`hobom` / `gobom`](/of-relations#of-relations) | a piece that makes up the whole | *part of* | I |
+| [`hadam` / `gadam`](/of-relations#of-relations) | filling of a vessel | *contents of* | I |
+| [`hulom` / `gulom`](/of-relations#of-relations) | the material | *made of* | I |
+| [`haham` / `gaham`](/of-relations#of-relations) | origin | *from* (origin) | I |
+| [`hozowum` / `gozowum`](/of-relations#of-relations) | a portion cut from a whole | *a piece of* / *a slice of* | I |
 
 <PageBreak />
 
@@ -243,15 +243,15 @@ English *of* names how one noun sits toward another. The `/b/` is what comes aft
 
 ### Social ties {#social}
 
-Put the tie root on `/ɡ/` with **-m**, then the other person in `/b/`.
+Put the tie root on `/ɡ/` with `-m`, then the other person in `/b/`.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`gamayam`** + `/b/`](/social-ties#social-relations) | companion of `/b/` | *friend of* | B |
-| [**`gegobom`** + `/b/`](/social-ties#social-relations) | the one `/b/` answers to | *boss of* | B |
-| [**`gohuyam`** + `/b/`](/social-ties#social-relations) | partner of `/b/` | *partner of* | B |
-| [**`gabolem`** + `/b/`](/social-ties#social-relations) | the one `/b/` looks after | *in the care of* | B |
+| [`gamayam` + `/b/`](/social-ties#social-relations) | companion of `/b/` | *friend of* | B |
+| [`gegobom` + `/b/`](/social-ties#social-relations) | the one `/b/` answers to | *boss of* | B |
+| [`gohuyam` + `/b/`](/social-ties#social-relations) | partner of `/b/` | *partner of* | B |
+| [`gabolem` + `/b/`](/social-ties#social-relations) | the one `/b/` looks after | *in the care of* | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -261,21 +261,21 @@ Put the tie root on `/ɡ/` with **-m**, then the other person in `/b/`.
 
 ### As of {#as-of}
 
-Whose-now is speech-now unless you move it. `henam` claims the moment as real; `hunom` only holds a place. `/h/` covers the clause, `/ɡ/` one noun, `/w/` the adjective right after, `/th/` the stances. A clause takes one pair; to keep the same whose-now, repeat the word with **-r** and no `/b/`.
+Whose-now is the moment of speaking unless you move it. `henam` claims the moment as real; `hunom` only holds a place. `/h/` covers the clause, `/ɡ/` one noun, `/w/` the adjective right after, `/th/` the stances. A clause takes one pair; to keep the same whose-now, repeat the word with `-r` and no `/b/`.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`henam` / `genam` / `wenam`**](/as-of#as-of) | a real now | *as of* (dated ledger) | A |
-| [**`hunom` / `gunom` / `wunom`**](/as-of#as-of) | a placeholder now | *as of* (placeholder now) | A |
-| [**`henar` / `hunor`**](/as-of#as-of) | resume that whose-now | *same books* | A |
+| [`henam` / `genam` / `wenam`](/as-of#as-of) | a real now | *as of* (dated ledger) | A |
+| [`hunom` / `gunom` / `wunom`](/as-of#as-of) | a placeholder now | *as of* (placeholder now) | A |
+| [`henar` / `hunor`](/as-of#as-of) | resume that whose-now | *same books* | A |
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`thenam`**](/as-of#stance-as-of) | stances as of a real now | *I thought / I felt (then)* | A |
-| [**`thunom`**](/as-of#stance-as-of) | stances as of a now you are not claiming | *I would think / I'd feel* | A |
-| [**`thenar` / `thunor`**](/as-of#stance-as-of) | resume that stance-now | *still as I saw it then* | A |
+| [`thenam`](/as-of#stance-as-of) | stances as of a real now | *I thought / I felt (then)* | A |
+| [`thunom`](/as-of#stance-as-of) | stances as of a now you are not claiming | *I would think / I'd feel* | A |
+| [`thenar` / `thunor`](/as-of#stance-as-of) | resume that stance-now | *still as I saw it then* | A |
 
 <PageBreak />
 
