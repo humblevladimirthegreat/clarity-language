@@ -4,7 +4,7 @@ band: intermediate
 
 # Contrary to {#contrary-to}
 
-English *contrary to the plan*, *against the rules*, and *contrary to what I was told* each name what an event goes against. Ageben puts the hook **`uom`** right before the word that says it: a plan, a say word, or a channel.
+English *contrary to the plan*, *against the rules*, and *contrary to what I was told* each name what an event goes against. Ageben puts the hook `uom` right before the word that says it: a plan, a say word, or a channel. A holder word after `uom` makes that plan or view someone else's.
 
 ### Contrary to a stance (`uom`) {#contrary-to-stance}
 
@@ -16,9 +16,9 @@ English *contrary to the plan* says that the event happens even though a plan sa
 >
 > "Azozon walks, contrary to my plan."
 
-The stance keeps its endings. A [plan](/intention#plan) after **`uom`** is your own, like any stance.
+The stance keeps its endings. A [plan](/intention#plan) after `uom` is your own, like any stance.
 
-Only the stance right after **`uom`** is what the event goes against. A stance anywhere else in the clause still applies to the claim:
+Only the stance right after `uom` is what the event goes against. A stance anywhere else in the clause still applies to the claim:
 
 > `zazozon vowurol uom thagom thomam.`
 >
@@ -26,19 +26,19 @@ Only the stance right after **`uom`** is what the event goes against. A stance a
 >
 > "Azozon may be walking, contrary to my plan."
 
-The word after **`uom`** has to say something the event can go against, such as a plan. Say words and channels can too, as the next sections show.
+The word after `uom` has to say something the event can go against, such as a plan. Say words and channels can too, as the next sections show.
 
-| After **`uom`** | English |
+| After `uom` | English |
 |-----------------|---------|
-| plan **`thagor`** / **`thagom`** / **`thagol`** | *contrary to my plan* |
+| plan `thagor` / `thagom` / `thagol` | *contrary to my plan* |
 
-Sake words cannot follow **`uom`**: to say an act goes against someone's interest, put an [unmet](/sakes#sake-changeability) sake word on the clause (`zazozon vowurol thudathum blalazun.` *Azozon's walking harms Alazun's interests*).
+Sake words cannot follow `uom`: to say an act goes against someone's interest, put an [unmet](/sakes#sake-changeability) sake word on the clause (`zazozon vowurol thudathum blalazun.` *Azozon's walking harms Alazun's interests*).
 
-**Compare with:** *despite the rain* is **`uom`** or **`thezem`** with a [noun](/extra-noun-hooks#extra-noun-intermediate) in `/b/` (`zazozon vowurol uom berulal.`). *Although Alazun said no* goes against an event, so it is **`thezem blarl`** plus that sentence. **`uom`** goes against a stance; the hinge goes against an event. The sentence after **`blarl`** needs an event or a thing, so a stance word alone cannot fill it; use **`uom`** with the stance instead.
+**Compare with:** *despite the rain* is `uom` or `thezem` with a [noun](/extra-noun-hooks#extra-noun-intermediate) in `/b/` (`zazozon vowurol uom berulal.`). *Although Alazun said no* goes against an event, so it is `thezem blarl` plus that sentence. `uom` goes against a stance; the hinge goes against an event. The sentence after `blarl` needs an event or a thing, so a stance word alone cannot fill it; use `uom` with the stance instead.
 
 ### Say words after `uom` {#contrary-to-say}
 
-English *against the rules* and *against their will* put **`uom`** right before a [say word](/permission-consent#say-words). That word then names what the event goes against, and it no longer applies to the claim.
+English *against the rules* and *against their will* say the event breaks a rule or someone's refusal. Put `uom` right before a [say word](/permission-consent#say-words) for that rule or refusal. That word then names what the event goes against, and it no longer applies to the claim.
 
 > `zazozon vowurol uom hwuvul.`
 >
@@ -52,11 +52,11 @@ English *against the rules* and *against their will* put **`uom`** right before 
 >
 > "Azozon tells Alazun, against Alazun's will." (Alazun said no)
 
-A yes only lifts a restriction, so no say word with answer **`a`** follows **`uom`**: not permission (`hwuvam`), and not consent (`hwudam`, `hwuzal`). *Their call* (**`e`**) sets nothing to go against either. A yes that was taken back is a no, so use the refusal: `zazozon vezuyol bahelan uom hwubum.` To say you broke a promise, give the promise its own sentence after **`hezem blarl`**: `zuwen vezuvel hezem blarl zuwen vowurol hwuzal.`
+A yes only lifts a restriction, so no say word with answer `a` follows `uom`: not permission (`hwuvam`), and not consent (`hwudam`, `hwuzal`). *Their call* (`e`) sets nothing to go against either. A yes that was taken back is a no, so use the refusal: `zazozon vezuyol bahelan uom hwubum.` To say you broke a promise, give the promise its own sentence after `hezem blarl`: `zuwen vezuvel hezem blarl zuwen vowurol hwuzal.`
 
 ### Channels after `uom` {#channel-zone}
 
-English *contrary to what I was told* and *against my gut* say the event went against what a source led you to expect. Put the channel after the hook **`uom`** (*contrary to*), the same way as a plan ([contrary to a stance](#contrary-to-stance)) or a ban ([say words after `uom`](#contrary-to-say)). The pair names what the event goes **against**; the channel then says nothing about how you know the claim.
+English *contrary to what I was told* and *against my gut* say the event went against what a source led you to expect. Put the channel after the hook `uom` (*contrary to*), the same way as a plan ([contrary to a stance](#contrary-to-stance)) or a ban ([say words after `uom`](#contrary-to-say)). The pair names what the event goes against; the channel then says nothing about how you know the claim.
 
 > `zazozon vowurol uom thebam.`
 >
@@ -70,7 +70,7 @@ English *contrary to what I was told* and *against my gut* say the event went ag
 >
 > "Azozon walks, against my gut."
 
-| After **`uom`** | Goes against | English |
+| After `uom` | Goes against | English |
 |-----------------|--------------|---------|
 | LIVE `thugem` | how it looks | *contrary to appearances* |
 | MEMORY `thevum` | how you remember it | *contrary to what I remember* |
@@ -79,11 +79,11 @@ English *contrary to what I was told* and *against my gut* say the event went ag
 | REPORTED `thebam` | what was said or written | *contrary to what I was told* / *contrary to legend* |
 | INTUITION `thabem` | your gut expectation | *against my gut* |
 
-*Off schedule* goes against a plan: **`uom thagom`** ([contrary to a stance](#contrary-to-stance)). MAY does not follow **`uom`**: it is not something the event could go against.
+*Off schedule* goes against a plan: `uom thagom` ([contrary to a stance](#contrary-to-stance)). MAY does not follow `uom`: it is not something the event could go against.
 
 ### Whose plan or view (`uom` + holder) {#contrary-to-holder}
 
-A plan or a channel after **`uom`** is yours, unless a [holder](holder.md#holder) names someone else's. For *against their plan*, after **`uom`**, write the holder word, then the plan:
+English *against their plan* names whose plan the event goes against. A plan or a channel after `uom` is yours, unless a [holder](holder.md#holder) word names someone else's. For someone else's plan, after `uom`, write the holder word, then the plan:
 
 > `zazozon vowurol uom theyomalazun thagom.`
 >
@@ -91,7 +91,7 @@ A plan or a channel after **`uom`** is yours, unless a [holder](holder.md#holder
 >
 > "Azozon walks, against Alazun's plan, as far as I can tell."
 
-A holder on a channel after **`uom`** names **whose view** the event goes against. The seam covers only that pair: the event is still your claim.
+A holder on a channel after `uom` names whose view the event goes against. The holder covers only that pair: the event is still your claim.
 
 > `zazozon vowurol uom thebamalazun.`
 >
@@ -99,7 +99,7 @@ A holder on a channel after **`uom`** names **whose view** the event goes agains
 >
 > "Azozon walks, contrary to what I hear Alazun thinks."
 
-The hinge **`thezem`** *although* / *despite* overturns an expectation too, and by default it is yours. To make it someone else's, put a holder word right before it:
+The hinge `thezem` *although* / *despite* overturns an expectation too, and by default it is yours. To make it someone else's, put a holder word right before it:
 
 > `zazozon vowurol theyomalazun thezem blerulal.`
 >
@@ -107,7 +107,7 @@ The hinge **`thezem`** *although* / *despite* overturns an expectation too, and 
 >
 > "Azozon walks despite the rain, which as far as I can tell Alazun expected to stop them."
 
-[MAY](/knowing#may) right before **`thezem`** hedges only the expectation in the same way. Azozon still walks and the rain is still a fact; only *the rain would stop them* is a guess.
+[MAY](/knowing#may) right before `thezem` hedges only the expectation in the same way. Azozon still walks and the rain is still a fact; only *the rain would stop them* is a guess.
 
 > `zazozon vowurol thomam thezem blerulal.`
 >

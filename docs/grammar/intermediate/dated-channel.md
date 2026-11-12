@@ -8,7 +8,9 @@ band: intermediate
 <a id="ago"></a>
 <a id="time-offset"></a>
 
-English *three hours ago* and *in three hours* count from now. Ageben counts from the channel instead: put a [measure phrase](/measures-and-percent#measure-phrases) in `/b/` immediately after the evidential. Any other noun there is the [source](/evidentiality#source); a time measure is the offset. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
+English *three hours ago* and *in three hours* count from now. Ageben counts from the channel instead: put a time [measure phrase](/measures-and-percent#measure-phrases) in `/b/` immediately after the channel word, and it becomes the **offset**, how far the event sits from now. The amount is **signed**: `-` is earlier than now, `+` is later than now. The offset always dates the event, not the moment you learned about it.
+
+Any other noun in that `/b/` is the [source](/evidentiality#source). There is no bare *ago* word, so a dated claim always says how you know it.
 
 > `zazozon thevum blagorum grugel vowurol.`
 >
@@ -26,15 +28,15 @@ Some channels only point one way:
 
 | Channel | Sign | Why |
 |---------|------|-----|
-| **`thevum`** MEMORY | **`-`** only | you already observed it |
-| **`thugem`** LIVE | no offset | the scene is in view now |
-| **`thubom`** PATTERN | **`-`** or **`+`** | **`-`**: it happened then, if the pattern held; **`+`**: it will, if the pattern holds |
-| **`theyom`** CLUES, **`thebam`** REPORTED, **`thabem`** INTUITION | **`-`** or **`+`** | the channel does not fix the time |
-| [PLAN](/intention#plan-predict) **`thagom`** | **`+`** only | the intended act is later |
+| `thevum` MEMORY | `-` only | you already observed it |
+| `thugem` LIVE | no offset | the scene is in view now |
+| `thubom` PATTERN | `-` or `+` | `-`: it happened then, if the pattern held; `+`: it will, if the pattern holds |
+| `theyom` CLUES, `thebam` REPORTED, `thabem` INTUITION | `-` or `+` | the channel does not fix the time |
+| [PLAN](/intention#plan-predict) `thagom` | `+` only | the intended act is later |
 
-The wrong sign on a one-way word (**`thevum`** with **`+`**, **`thagom`** with **`-`**) is not a sentence.
+The wrong sign on a one-way word (`thevum` with `+`, `thagom` with `-`) is not a sentence.
 
-A [carried](/evidentiality#carry-forward) channel keeps its offset. Date the first sentence of a story, and the bare sentences after it happen then too, so a past story needs no tense and no offset on every line. A new offset starts a new frame.
+A [carried](/evidentiality#carry-forward) channel keeps its offset. Date the first sentence of a story, and the bare sentences after it happen then too, so a past story needs no tense and no offset on every line. A new offset sets a new time for the sentences after it.
 
 > `zazozon thevum blazurom grubal vowurol. zazozon vehohel.`
 >
@@ -42,7 +44,7 @@ A [carried](/evidentiality#carry-forward) channel keeps its offset. Date the fir
 >
 > "I saw Azozon walk yesterday. Azozon sat down." (the sitting was yesterday too, as I remember)
 
-A signed measure in the `/b/` of a [time hinge](/dependents#time-hinges) (**`harum`** *until*, **`huvahum`** *by*, **`habam`** *before*, **`halam`** *after*, **`herom`** *during*) counts from now, the same way. The hinge itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel of its own (a carried frame does not count). So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a hinge to slip in a past or future with no warrant. An absolute date in the hinge (`harum bl_#22,7`) needs none of this.
+A signed measure in the `/b/` of a [time hinge](/dependents#time-hinges) (`harum` *until*, `huvahum` *by*, `habam` *before*, `halam` *after*, `herom` *during*) counts from now, the same way. The hinge itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel of its own (a channel carried from an earlier sentence does not count). So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a hinge to slip in a past or future without saying how you know it. An absolute date in the hinge (`harum bl_#22,7`) needs none of this.
 
 > `yol vuhamum zawan harum blazurom grabal.`
 >
@@ -50,7 +52,7 @@ A signed measure in the `/b/` of a [time hinge](/dependents#time-hinges) (**`har
 >
 > "Keep the secret until tomorrow."
 
-With **`thubom`** PATTERN, a past offset says it happened then, if the pattern held.
+With `thubom` PATTERN, a past offset says it happened then, if the pattern held.
 
 > `zalazun thubom blagorum grugel vezuvel.`
 >
@@ -70,7 +72,7 @@ A channel used as a comparison [bar](/bars#bars) takes the same offset, which da
 
 #### Now and today {#now}
 
-Ageben has no short *now* word. Say *now* with an offset of **zero**: the event sits no time away from the moment you speak. The channel stays, so *now* still says how you know it.
+English *now* and *today* place the event at the moment you speak. Ageben has no short *now* word: give the channel an offset of zero, so the event sits no time away from that moment. The channel stays, so *now* still says how you know it.
 
 > `zalazun theyom blagorum gramol vezuvel.`
 >
@@ -86,7 +88,7 @@ The unit sets how wide *now* is. Zero hours is *right now*; zero [days](/measure
 >
 > "I hear Azozon sings today."
 
-Use zero on a channel that takes either sign. **LIVE** `thugem` already means *now in view*, so it needs no offset. **MEMORY** takes **`-`** only and PLAN takes **`+`** only, so zero is not a sentence on them.
+Use zero on a channel that takes either sign. LIVE `thugem` already means *now in view*, so it needs no offset. MEMORY takes `-` only and PLAN takes `+` only, so zero is not a sentence on them.
 
 ### Practice {#intermediate-practice}
 

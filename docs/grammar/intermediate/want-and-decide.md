@@ -4,12 +4,12 @@ band: intermediate
 
 # Want and decide {#want-and-decide}
 
-English *I want to*, *I've decided to*, and *Alazun wants to* say what a mind holds about an act, not whether it happens. Ageben says each with a `/th/` stance word, and its ending says how long a want lasts or whether a decision can change.
+English *I want to*, *I've decided to*, and *Alazun wants to* say what a mind holds about an act, not whether it happens. Ageben says each with a `/th/` stance word, and its ending says how long a want lasts or whether a decision can change. Someone else's want or decision takes a holder, which says how you know it.
 
 ### Want {#want}
 <a id="desire"></a>
 
-To say that you **want** something to happen, put **`thalo`** plus an ending on `/th/` before the ordinary verb. This word is called **WANT**. It is a stance: like any `/th/` word with nothing else marked, the want is **yours**, the speaker's. The sentence says you want the act; it does not say the act happens. The ending says how long the wanting lasts. (Cue: 🌠 A shooting star is where you make a wish.)
+English *I want to …* says what you wish would happen. Put **`thalo`** plus an ending on `/th/` before the ordinary verb; this stance word is called **WANT**. Like any `/th/` word with nothing else marked, the want is yours, the speaker's. The sentence says you want the act, not that the act happens, and the ending says how long the wanting lasts. (Cue: 🌠 A shooting star is where you make a wish.)
 
 > `zazozon thalom vowurol.`
 >
@@ -17,7 +17,7 @@ To say that you **want** something to happen, put **`thalo`** plus an ending on 
 >
 > "I want Azozon to walk."
 
-A want is in someone's mind, so someone else's want (*Azozon wants to walk*) is their **view**: you say whose it is and how you know it with a [holder](holder.md#holder), not with WANT alone.
+A want is in someone's mind, so someone else's want (*Azozon wants to walk*) is their view: you say whose it is and how you know it with a [holder](holder.md#holder), not with WANT alone.
 
 To want a person or thing (*want Azozon*), name the act that would get it (*see*, *take*) and put the person or thing in `/d/` as usual.
 
@@ -29,13 +29,13 @@ To want a person or thing (*want Azozon*), name the act that would get it (*see*
 
 #### Endings: lastingness {#want-endings}
 
-On **`alo`**, **-l / -m / -r** say how long the wanting lasts. **-n** is ordinary [proper](proper-names.md#proper-name--n). If you do not know, use **-m**.
+On `alo`, `-l` / `-m` / `-r` say how long the wanting lasts. With `-n`, the word is an ordinary [proper name](proper-names.md#proper-name--n). If you do not know, use `-m`.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thalol`** | a want that keeps coming back | *really want …* / *have long wanted …* | **-l** ≈ lasting (a steady star) |
-| **`thalom`** | duration unstated (soft default) | *want …* | **-m** ≈ open |
-| **`thalor`** | a want that will pass | *feel like …* / *have a whim to …* | **-r** ≈ right now (a streak) |
+| `thalol` | a want that keeps coming back | *really want …* / *have long wanted …* | `-l` ≈ lasting (a steady star) |
+| `thalom` | duration unstated (soft default) | *want …* | `-m` ≈ open |
+| `thalor` | a want that will pass | *feel like …* / *have a whim to …* | `-r` ≈ right now (a streak) |
 
 > `zalazun thalor vozuyel.`
 >
@@ -51,7 +51,7 @@ A want and a [plan](/intention#plan-predict) are different steps, so they stack 
 >
 > "I have long wanted to walk, and I plan to."
 
-For *against my wishes*, put WANT after the hook **`uom`** ([contrary to a stance](contrary-to.md#contrary-to-stance)): the event goes against that want. For someone else's wishes, a [holder](holder.md#holder) goes between **`uom`** and WANT.
+For *against my wishes*, put WANT after the hook `uom` ([contrary to a stance](contrary-to.md#contrary-to-stance)): the event goes against that want. For someone else's wishes, a [holder](holder.md#holder) goes between `uom` and WANT.
 
 > `zazozon vowurol uom thalom.`
 >
@@ -59,13 +59,13 @@ For *against my wishes*, put WANT after the hook **`uom`** ([contrary to a stanc
 >
 > "Azozon walks, against my wishes."
 
-**Compare with:** [hopefully](feelings.md#speaker-attitude) (`thuwuyom`) is your hope about whether a claim turns out true; **`thalom`** is wanting the act itself. [Motive](for-a-sake.md#sake-preference) says which sake the act serves, not that it is wanted. In [emotion compose](feelings.md#emotion-compose), SEEKING is a feeling turning toward someone for comfort, not a plain want.
+**Compare with:** [hopefully](feelings.md#speaker-attitude) (`thuwuyom`) is your hope about whether a claim turns out true; `thalom` is wanting the act itself. [Motive](for-a-sake.md#sake-preference) says which sake the act serves, not that it is wanted. Among the [stacked urges](feelings.md#emotion-compose) of a feeling, SEEKING is a feeling turning toward someone for comfort, not a plain want.
 
 ### Decision (revisability)
 <a id="decision"></a>
 <a id="decision-mood"></a>
 
-To say that you have decided on something, put **`thoge`** plus an ending on `/th/` before the ordinary verb. This word is called **DECISION**. Like PLAN, it is yours when nothing else is marked, and it does not say the act happens. Its ending says whether the decision is final, still open to change, or only for now, so you can say how open a choice is without changing the verb. (Cue: ✅ A checkmark confirms a choice.)
+English *I've decided to …* says you have made a choice. Put **`thoge`** plus an ending on `/th/` before the ordinary verb; this word is called **DECISION**. Like PLAN, it is yours when nothing else is marked, and it does not say the act happens. Its ending says whether the decision is final, still open to change, or only for now, so you can say how open a choice is without changing the verb. (Cue: ✅ A checkmark confirms a choice.)
 
 As a plain noun or verb, the root keeps its own meaning (`zogel` *a checkmark*; `vogel` *to check / tick*).
 
@@ -75,7 +75,7 @@ As a plain noun or verb, the root keeps its own meaning (`zogel` *a checkmark*; 
 >
 > "I've decided to sing, and can still change that."
 
-Unlike PLAN, DECISION carries **no time**. It says what you chose, not that the act still lies ahead: the sentence above fits *I've decided to sing* before you start and *I'm singing by choice* while you sing. So DECISION takes no `/b/`, not even a time offset. To say the act is still ahead, add PLAN.
+Unlike PLAN, DECISION carries no time. It says what you chose, not that the act still lies ahead: the sentence above fits *I've decided to sing* before you start and *I'm singing by choice* while you sing. So DECISION takes no `/b/`, not even a time offset. To say the act is still ahead, add PLAN.
 
 **Compare with:** [PLAN](/intention#plan-predict) says how fully you have planned a later act. DECISION says how readily you may change a choice, whenever the act falls.
 
@@ -84,13 +84,13 @@ Unlike PLAN, DECISION carries **no time**. It says what you chose, not that the 
 #### Endings: changeability
 <a id="decision-changeability"></a>
 
-The endings on DECISION run on the same settled-to-passing scale as [changeability](/sakes#sake-changeability) on an unmet sake: **-l** irreversible, **-m** modifiable, **-r** temporary. With **-n**, the word is an ordinary [name](proper-names.md#proper-name--n). If you do not know how settled the decision is, use **-m**. How firm a choice will turn out is hard to know even for yourself, so **-m** claims nothing either way.
+The endings on DECISION run on the same settled-to-passing scale as [changeability](/sakes#sake-changeability) on an unmet sake: `-l` irreversible, `-m` modifiable, `-r` temporary. With `-n`, the word is an ordinary [name](proper-names.md#proper-name--n). If you do not know how settled the decision is, use `-m`. How firm a choice will turn out is hard to know even for yourself, so `-m` claims nothing either way.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thogel`** | **irreversible** | *have decided for good to …* | **-l** ≈ lasting (for good) |
-| **`thogem`** | **modifiable** (soft default if unknown) | *have decided to …, and can still change that* | **-m** ≈ open to change |
-| **`thoger`** | **temporary** | *have decided for now to …* | **-r** ≈ right now (for now only) |
+| `thogel` | irreversible | *have decided for good to …* | `-l` ≈ lasting (for good) |
+| `thogem` | modifiable (soft default if unknown) | *have decided to …, and can still change that* | `-m` ≈ open to change |
+| `thoger` | temporary | *have decided for now to …* | `-r` ≈ right now (for now only) |
 
 To say both how detailed a plan is and how firm the decision is, put DECISION after [PLAN](/intention#plan-predict). A want comes before both, so the three stack in the order want, plan, decision:
 
@@ -100,7 +100,7 @@ To say both how detailed a plan is and how firm the decision is, put DECISION af
 >
 > "I plan to walk, and that choice is final."
 
-PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** the default, and **-r** the most passing.
+PLAN and DECISION endings run the same way: `-l` is the most settled, `-m` the default, and `-r` the most passing.
 
 > `zuwen thagor thoger vowurol.`
 >
@@ -108,7 +108,7 @@ PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** t
 >
 > "I intend to walk, details open, and I've decided that for now."
 
-To say an event goes against a decision (*against my decision*), put DECISION after the hook **`uom`** ([contrary to a stance](contrary-to.md#contrary-to-stance)).
+To say an event goes against a decision (*against my decision*), put DECISION after the hook `uom` ([contrary to a stance](contrary-to.md#contrary-to-stance)).
 
 > `zazozon vowurol uom thogem.`
 >
@@ -124,9 +124,9 @@ To say an event goes against a decision (*against my decision*), put DECISION af
 
 ### Someone else's want or decision {#whose-intention}
 
-WANT and DECISION are both in a mind, and with nothing else marked that mind is yours. English *Azozon wants to walk* and *Azozon has decided to walk* report what is in someone else's mind as if you could see it. Neither takes a `/b/` for whose it is. Someone else's want or decision is their view: you give it with a [holder](/holder#holder), which says how you know it. That keeps a guess about someone's intentions from sounding like a fact.
+English *Azozon wants to walk* and *Azozon has decided to walk* report what is in someone else's mind as if you could see it. In Ageben, WANT and DECISION with nothing else marked are yours, and neither takes a `/b/` for whose it is. Someone else's want or decision is their view: you give it with a [holder](/holder#holder), which says how you know it. That keeps a guess about someone's intentions from sounding like a fact.
 
-After a holder, WANT and DECISION are the holder's, just as PLAN is for [someone else's plan](/holder#holder). After **`uom`**, write the holder word, then the stance, for *against their wishes*.
+After a holder, WANT and DECISION are the holder's, just as PLAN is for [someone else's plan](/holder#holder). After `uom`, write the holder word, then the stance, for *against their wishes*.
 
 > `zazozon thebamazozon thalom vowurol.`
 >
@@ -146,7 +146,7 @@ After a holder, WANT and DECISION are the holder's, just as PLAN is for [someone
 >
 > "Alazun sleeps, against Azozon's wishes, as far as I can tell."
 
-**In a question**, a bare WANT, PLAN, or DECISION asks about the **listener's** mind, with no holder. You are asking, not claiming, just as a channel in a question asks about the listener's grounds ([forecasts](evidentiality.md#forecast-question)). A holder in a question asks how the listener can tell what that person has in mind. A rhetorical question is your own claim, so its stance stays yours.
+In a question, a bare WANT, PLAN, or DECISION asks about the listener's mind, with no holder. You are asking, not claiming, just as a channel in a question asks about the listener's grounds ([forecasts](evidentiality.md#forecast-question)). A holder in a question asks how the listener can tell what that person has in mind. A rhetorical question is your own claim, so its stance stays yours.
 
 > `yel zawan vowurol thalom.`
 >
@@ -160,7 +160,7 @@ After a holder, WANT and DECISION are the holder's, just as PLAN is for [someone
 >
 > "Can you tell whether Azozon wants to walk?"
 
-**With *we***, WANT, PLAN, or DECISION alone is still yours, with the group as the subject. To claim the listener shares it, make the interlocutors the holder, which still says how you know. For exclusive *we* (you and your people), the group **`uwenx`** is the subject; for the others' wants, name them as holder (`theyomazozonx`). You are never a holder yourself: your own view needs no seam.
+With *we*, WANT, PLAN, or DECISION alone is still yours, with the group as the subject. To claim the listener shares it, make the interlocutors the holder, which still says how you know. For exclusive *we* (you and your people), the group `uwenx` is the subject; for the others' wants, name them as holder (`theyomazozonx`). You are never a holder yourself: your own view needs no holder.
 
 > `zayan thalom vowurol.`
 >
@@ -180,7 +180,7 @@ After a holder, WANT and DECISION are the holder's, just as PLAN is for [someone
 >
 > "I want us to walk." (my people and me)
 
-**Compare with:** [requirement](permission-consent.md#requirement) `zazozon vowurol hwuvom blalazun.` (*Alazun makes Azozon walk*) puts a demand on Azozon, who now owes the walk. **`zazozon thogem vowurol.`** (*I've decided that Azozon walks*) says only that you chose how things go, the way a coach decides who plays, with nothing asked of Azozon.
+**Compare with:** [requirement](permission-consent.md#requirement) `zazozon vowurol hwuvom blalazun.` (*Alazun makes Azozon walk*) puts a demand on Azozon, who now owes the walk. `zazozon thogem vowurol.` (*I've decided that Azozon walks*) says only that you chose how things go, the way a coach decides who plays, with nothing asked of Azozon.
 
 ### Practice {#intermediate-practice}
 

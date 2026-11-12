@@ -4,11 +4,9 @@ band: intermediate
 
 # It turns out {#it-turns-out}
 
-English *it turns out*, *to my surprise*, and *so … after all* say the news ran against what you expected. Ageben marks that with **MIRATIVE**, not a channel.
-
 ### Mirative (`themem`) {#mirative}
 
-English *it turns out*, *to my surprise*, and *so … after all* say the news ran **against what you expected**. Put **`themem`** on the clause. This `/th/` word is called **MIRATIVE**. It is not a channel: it says nothing about how you know, so add a [channel](evidentiality.md#evidentiality) beside it when you want to say that too.
+English *it turns out*, *to my surprise*, and *so … after all* say the news ran against what you expected. Put the `/th/` word **`themem`**, called **MIRATIVE**, on the clause. It is not a channel: it says nothing about how you know, so add a [channel](evidentiality.md#evidentiality) beside it when you want to say that too.
 
 > `zalazun themem vudurul.`
 >
@@ -16,13 +14,13 @@ English *it turns out*, *to my surprise*, and *so … after all* say the news ra
 >
 > "Alazun left, it turns out."
 
-The ending says how firm the expectation was that the news overturned. If you do not know, use **-m**.
+The ending says how firm the expectation was that the news overturned. If you do not know, use `-m`.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| `themel` | it overturns a firm expectation | *astonishingly*, *I never expected that* | **-l** ≈ the expectation was locked in |
-| `themem` | it runs against what you expected (default) | *it turns out*, *surprisingly* | **-m** ≈ the ordinary case |
-| `themer` | it runs against a loose expectation | *oh*, *as it happens* | **-r** ≈ a passing guess |
+| `themel` | it overturns a firm expectation | *astonishingly*, *I never expected that* | `-l` ≈ the expectation was locked in |
+| `themem` | it runs against what you expected (default) | *it turns out*, *surprisingly* | `-m` ≈ the ordinary case |
+| `themer` | it runs against a loose expectation | *oh*, *as it happens* | `-r` ≈ a passing guess |
 
 > `zalazun thugem themel vowurol.`
 >
@@ -30,9 +28,9 @@ The ending says how firm the expectation was that the news overturned. If you do
 >
 > "Alazun is walking, I see it, and I never expected that."
 
-MIRATIVE does not end a [channel frame](evidentiality.md#carry-forward): a surprise inside a report is still part of the report.
+MIRATIVE does not end a [channel carried from an earlier sentence](evidentiality.md#carry-forward): a surprise inside a report is still part of the report.
 
-The mirative says only that the news was unexpected, not whether it is good or bad. To say how it lands, add a [feeling word](how-you-feel.md#feeling-word): the mirative after **`goyom`** says the stimulus was unexpected.
+The mirative says only that the news was unexpected, not whether it is good or bad. To say how it lands, add a [feeling word](how-you-feel.md#feeling-word): the mirative after `goyom` says the stimulus was unexpected.
 
 > `zewal wawethamar goyom themem.`
 >
@@ -48,7 +46,7 @@ With a [holder](holder.md#holder), the surprise is the holder's:
 >
 > "I gather Alazun's leaving surprised Azozon." (the surprise is Azozon's)
 
-**Compare with:** *even* on the including hook ([`wemem al`](in-clause-hooks.md#hook-w)) singles out the one unexpected member of a set. **`themem`** says the whole claim was unexpected. For *surprisingly* on one adjective (*surprisingly tired*), put the ordinary word **`wemem`** (*amazement*) on `/w/` right before it, the same word that grades the hook in *even*:
+**Compare with:** *even* on the including hook ([`wemem al`](in-clause-hooks.md#hook-w)) singles out the one unexpected member of a set. `themem` says the whole claim was unexpected. For *surprisingly* on one adjective (*surprisingly tired*), put the ordinary word `wemem` (*amazement*) on `/w/` right before it, the same word that grades the hook in *even*:
 
 > `zazozon wemem gadamul vowurol.`
 >
@@ -56,7 +54,7 @@ With a [holder](holder.md#holder), the surprise is the holder's:
 >
 > "Azozon walks, surprisingly tired."
 
-MIRATIVE cannot be a comparison [bar](bars.md#bars): it gives no expected value to rank against. It also does not follow **`uom`**: it already says the claim ran against what you expected.
+MIRATIVE cannot be a comparison [bar](bars.md#bars): it gives no expected value to rank against. It also does not follow `uom`: it already says the claim ran against what you expected.
 
 **Compare with:** `zazozon themem vowurol.` says the walking surprised you. `zazozon vowurol uom thabem.` says your gut expected otherwise, whether or not the news surprised you.
 
