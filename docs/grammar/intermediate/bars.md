@@ -4,11 +4,11 @@ band: intermediate
 
 # Than planned, enough, too {#than-planned-enough-too}
 
-English *more than planned*, *sleepier than usual*, *enough*, and *too much* compare against what a plan, an expectation, or a need sets, not against another thing. Ageben writes that stance word as the bar of a rank join.
+English *more than planned*, *sleepier than usual*, *enough*, and *too much* compare against what a plan, an expectation, or a need sets, not against another thing. Ageben writes the plan, expectation, or need as a stance word in the place of the second name, where it becomes the bar: the value you rank against. That one pattern gives *than planned* with a plan word, *than usual* with a channel, and *enough* and *too* with a sake word.
 
 ### Comparing against a stance (bars) {#bars}
 
-English *more than planned* and *later than planned* rank one thing against a **value a stance sets**, not against another person: the plan sets how much and when. Write that `/th/` stance word, or that [intention adverb](/can-and-cant#intention-adverbs) on `/h/` (FORMER, ability, a say word), where the second name would go, right before the rank join. That word is the **bar**. The join closes everything before it, so the bar is part of the comparison: it says what you rank against. It is not your stance on the whole sentence.
+English *more than planned* and *later than planned* rank one thing against a value a stance sets, not against another person: the plan sets how much and when. Write that `/th/` stance word, or that [intention adverb](/can-and-cant#intention-adverbs) on `/h/` (FORMER, ability, a say word), where the second name would go, right before the rank join. That word is the **bar**. The join closes everything before it, so the bar is part of the comparison: it says what you rank against. It is not your stance on the whole sentence.
 
 > `zazozon thagom zol bral vevorol.`
 >
@@ -16,7 +16,7 @@ English *more than planned* and *later than planned* rank one thing against a **
 >
 > "Azozon arrives later than planned."
 
-The same stance word **after** the fence has its ordinary reading, a stance on the whole sentence. With one ranked name, the fence is then a [superlative](/comparatives#superlatives):
+The same stance word after the fence has its ordinary reading, a stance on the whole sentence. With one ranked name, the fence is then a [superlative](/comparatives#superlatives):
 
 > `zazozon zol bral vevorol thagom.`
 >
@@ -24,7 +24,7 @@ The same stance word **after** the fence has its ordinary reading, a stance on t
 >
 > "I plan for Azozon to arrive last."
 
-A bar fence ranks **one** item against **one** bar: with a bar, there is no second name and no second bar. Any of the rank joins works (**`zol`**, **`zuol`**, **`zoel`**, and their open **-m** forms), and the bar keeps its own ending. The fence can rank an object or a recipient the same way:
+A bar fence ranks one item against one bar: with a bar, there is no second name and no second bar. Any of the rank joins works (`zol`, `zuol`, `zoel`, and their open `-m` forms), and the bar keeps its own ending. The fence can rank an object or a recipient the same way:
 
 > `zazozon dodelx thagom dol gral vagedal.`
 >
@@ -49,16 +49,16 @@ A [hook](/hooks) and its `/b/` on the ranked item go right before the bar, the w
 <!-- cheat-sheet: comparing -->
 | Ageben | Use | English |
 |--------|-----|---------|
-| name + bar + **`zol`** | above the bar | *more than planned* / *later than planned* |
-| name + bar + **`zuol`** | below the bar | *less than planned* / *earlier than planned* |
-| name + bar + **`zoel`** | at the bar | *as planned* |
+| name + bar + `zol` | above the bar | *more than planned* / *later than planned* |
+| name + bar + `zuol` | below the bar | *less than planned* / *earlier than planned* |
+| name + bar + `zoel` | at the bar | *as planned* |
 | bar after the fence | a stance on the whole claim | *plans to be the most …* |
 
 **Compare with:** a name before the rank join is someone you rank against (`zazozon zalazun zol guzemel` *Azozon is sleepier than Alazun*). A stance word in that place is the value that stance sets.
 
 ### Channels as comparison bars {#channel-bars}
 
-English *sleepier than usual* and *bigger than it looks* compare against an expectation. Put the channel right before the rank word (**`zol`** / **`zuol`** / **`zoel`**) as the comparison's [bar](#bars). The bar is then **what that channel led you to expect**, not how you know the claim. After the comparison, the same word is the claim's channel again.
+English *sleepier than usual* and *bigger than it looks* compare against an expectation. Put the channel right before the rank word (`zol` / `zuol` / `zoel`) as the comparison's [bar](#bars). The bar is then what that channel led you to expect, not how you know the claim. After the comparison, the same word is the claim's channel again.
 
 > `zazozon thubom zol guzemel.`
 >
@@ -83,7 +83,7 @@ English *sleepier than usual* and *bigger than it looks* compare against an expe
 
 MAY gives no expected value to compare against, so it cannot be a bar. *Than scheduled* ranks against a plan: that is the [PLAN bar](#bars) (`thagom`).
 
-A [holder](holder.md#holder) on a comparison bar names **whose expectation** you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
+A [holder](holder.md#holder) on a comparison bar names whose expectation you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
 
 > `zazozon thabemalazun zol guzemel.`
 >
@@ -93,7 +93,7 @@ A [holder](holder.md#holder) on a comparison bar names **whose expectation** you
 
 ### Enough and too (sake bars) {#sake-bars}
 
-English *enough* and *too much* compare an amount with **what a need requires**. Write a met sake word on `/th/` as the [bar](#bars) right before a rank join: it stands for what that sake needs, and the rank join compares the amount with it. The equal-rank join **`zoel`** is *enough*. Rank **`zol`** is *too much*, and **`zuol`** is *not enough*. Use the unspecified sake **`uda`** when you do not name which sake.
+English *enough* and *too much* compare an amount with what a need requires. Write a met sake word on `/th/` as the [bar](#bars) right before a rank join: it stands for what that sake needs, and the rank join compares the amount with it. The equal-rank join `zoel` is *enough*. Rank `zol` is *too much*, and `zuol` is *not enough*. Use the unspecified sake `uda` when you do not name which sake.
 
 > `zedudal thudatham zoel gral.`
 >
@@ -113,7 +113,7 @@ English *enough* and *too much* compare an amount with **what a need requires**.
 >
 > "There is not enough tea."
 
-The bar keeps its [time-horizon ending](/sakes#time-horizon-endings-on-met), which now says **how long the payoff has to last**: **`thudathal`** is *enough to last*, and **`thudathar`** is *enough for now*.
+The bar keeps its [time-horizon ending](/sakes#time-horizon-endings-on-met), which now says how long the payoff has to last: **`thudathal`** is *enough to last*, and **`thudathar`** is *enough for now*.
 
 > `zedudal thudathar zoel gral.`
 >
@@ -121,7 +121,7 @@ The bar keeps its [time-horizon ending](/sakes#time-horizon-endings-on-met), whi
 >
 > "There is enough tea for now."
 
-Name a sake to say which need sets the limit. With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. To say **whose** stake it is, put that person in a `bl-` word right after the bar.
+Name a sake to say which need sets the limit. With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. To say whose stake it is, put that person in a `bl-` word right after the bar.
 
 > `zedudal thobatham zol gohamul.`
 >
@@ -145,10 +145,10 @@ On the [time scale](comparative-arity.md#time-scale), a sake bar is *too late* a
 
 | Ageben | Use | English |
 |--------|-----|---------|
-| met sake bar + **`zoel`** | reaches what the sake needs | *enough* / *ADJ enough* |
-| met sake bar + **`zol`** | past what the sake needs | *too much* / *too ADJ* / *too late* |
-| met sake bar + **`zuol`** | short of what the sake needs | *not enough* / *too early* |
-| bar ending **-l** / **-m** / **-r** | how long the payoff has to last | *enough to last* / *enough* / *enough for now* |
+| met sake bar + `zoel` | reaches what the sake needs | *enough* / *ADJ enough* |
+| met sake bar + `zol` | past what the sake needs | *too much* / *too ADJ* / *too late* |
+| met sake bar + `zuol` | short of what the sake needs | *not enough* / *too early* |
+| bar ending `-l` / `-m` / `-r` | how long the payoff has to last | *enough to last* / *enough* / *enough for now* |
 | `bl-` word right after the bar | whose stake | *too hot for Alazun* |
 
 **Compare with:** the same met word after the fence is about the whole claim: `zedudal zol gohamul thobatham` is *the tea is the hottest, and that serves my health*.

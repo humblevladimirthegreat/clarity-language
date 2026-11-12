@@ -67,12 +67,6 @@
   "inspect.md": {
     "long-paragraph": 1
   },
-  "intermediate/bars.md": {
-    "bold-density": 2
-  },
-  "intermediate/comparative-arity.md": {
-    "bold-density": 1
-  },
   "intermediate/contrary-to.md": {
     "bold-density": 1
   },
@@ -82,9 +76,6 @@
   },
   "intermediate/label-reach.md": {
     "voice": 1
-  },
-  "intermediate/measures-and-percent.md": {
-    "bold-density": 2
   },
   "intermediate/residue-and-former.md": {
     "long-paragraph": 1

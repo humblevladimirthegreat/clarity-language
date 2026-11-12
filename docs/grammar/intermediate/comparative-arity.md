@@ -4,21 +4,21 @@ band: intermediate
 
 # Ranking on any scale {#ranking-on-any-scale}
 
-English *less than*, *more often than*, *earlier than*, *the more … the more*, and *twice as … as* rank things on more kinds of scale than a plain quality: how, how much, how often, when, and by how many times.
+English *less than*, *the second biggest*, *more often than*, *earlier than*, *the more … the more*, and *twice as … as* rank things on more kinds of scale than a plain quality: how, how much, how often, when, and by how many times. Each one reuses the rank join you already know and changes the words around it, so once you can say *more … than* you can rank on any of these scales.
 
 ### Full comparative arity
 <a id="comparative-arity"></a>
 
-Beginner already used two names plus **`zol`** (*more … than*) and one name (*the …-est*). The same shared-scale pattern also uses reverse rank **`uo`** (*less … than* / *the least*) and **zero** names.
+You have already ranked two names with `zol` (*more … than*) and picked out one name as the top (*the …-est*). The same pattern, names, then a rank join, then the shared adjective that names the scale, also works with reverse rank **`uo`** (*less … than* / *the least*) and with zero names. That gives you *less than*, *the least*, and *there is no biggest*.
 
 <!-- cheat-sheet: comparing -->
 | Ageben | Use | English | Cue |
 |---------|-----|---------|-----|
-| **Multi (2+)** + shared scale under **`o` / `uo`** | comparative ladder | earlier above later (`o`); later above earlier under **`uo`** | **`o`** ≈ rank; **`u`** ≈ undo |
-| **Single-item (1)** + shared scale under **`o` / `uo`** | superlative | *the …-est* / *the least …* under **`uo`** | one name is the extreme |
-| **Standalone (0)** + shared scale under **`o` / `uo`** | empty superlative | *there is no biggest* / *there is no smallest* under **`uo`**; open **-m** = none comes to mind | empty list: nobody is on top |
+| **Multi (2+)** + shared scale under `o` / `uo` | comparative ladder | earlier above later (`o`); later above earlier under `uo` | `o` ≈ rank; `u` ≈ undo |
+| **Single-item (1)** + shared scale under `o` / `uo` | superlative | *the …-est* / *the least …* under `uo` | one name is the extreme |
+| **Standalone (0)** + shared scale under `o` / `uo` | empty superlative | *there is no biggest* / *there is no smallest* under `uo`; open `-m` = none comes to mind | empty list: nobody is on top |
 
-A standalone ladder says only that nothing is on top. It does not say why (a tie, no end to the scale, or items that do not compare). To assert a tie, use [equative](/comparatives#equatives) **`zoel`**. To say someone is on top without naming them, use **`zor`**.
+A standalone ladder says only that nothing is on top. It does not say why (a tie, no end to the scale, or items that do not compare). To assert a tie, use [equative](/comparatives#equatives) `zoel`. To say someone is on top without naming them, use **`zor`**.
 
 <!-- cheat-sheet: comparing -->
 | Example | Reading |
@@ -34,9 +34,9 @@ A standalone ladder says only that nothing is on top. It does not say why (a tie
 
 **Compare with:** a rank join with no shared adjective is an ordinary [rank join](rank-joins.md#rank-joins) (*A matters more than B*). Add the shared `/ɡ/` when you mean *more ADJ than*.
 
-English *not as challenging as* says the first name is below the second, so it is **`zuol`**: `zalazun zazozon zuol gamahum` is *Alazun is not as challenging as Azozon*. For a firm tie, use [`zoel`](/comparatives#equatives).
+English *not as challenging as* says the first name is below the second, so it is `zuol`: `zalazun zazozon zuol gamahum` is *Alazun is not as challenging as Azozon*. For a firm tie, use [`zoel`](/comparatives#equatives).
 
-English *no more challenging than* says less: the first name is below the second or tied with them. Write the whole comparison as usual, then deny it with **`zul`**, the way you [deny a whole list](set-joins.md#exclusivity-and-denying-a-whole-list). What English often only hints (that neither is very challenging) is not said.
+English *no more challenging than* says less: the first name is below the second or tied with them. Write the whole comparison as usual, then deny it with `zul`, the way you [deny a whole list](set-joins.md#exclusivity-and-denying-a-whole-list). What English often only hints (that neither is very challenging) is not said.
 
 > `zalazun zazozon zol gamahum zul.`
 >
@@ -46,7 +46,7 @@ English *no more challenging than* says less: the first name is below the second
 
 ### Place on a scale (`w#N`) {#place-on-a-scale}
 
-English *the second biggest* names a place just below the winner. Keep the superlative shape (one name before `zol`) and put an **ordinal** in the degree slot, `/w/` right before the adjective: **`wrodol`** (`w#2`) is *second*. The place is on the scale the adjective names. (cue: **`o`** ≈ rank, as in `grodol` *the second*)
+English *the second biggest* names a place just below the winner. Keep the superlative shape (one name before `zol`) and put an ordinal in the degree role, `/w/` right before the adjective: **`wrodol`** (`w#2`) is *second*. The place is on the scale the adjective names. (cue: `o` ≈ rank, as in `grodol` *the second*)
 
 > `zazozon zol wrodol gelazem.`
 >
@@ -54,13 +54,13 @@ English *the second biggest* names a place just below the winner. Keep the super
 >
 > "Azozon is the second biggest."
 
-Under **`zuol`** the same place counts from the bottom, so `zazozon zuol wrodol gelazem` is *the second smallest*. Use it from *second* on, because first place is the plain superlative. Write it only with one name before `zol` or `zuol`. With two names, the ordinal has no group to rank within, and outside a rank fence an ordinal on `/w/` has no reading.
+Under `zuol` the same place counts from the bottom, so `zazozon zuol wrodol gelazem` is *the second smallest*. Use it from *second* on, because first place is the plain superlative. Write it only with one name before `zol` or `zuol`. With two names, the ordinal has no group to rank within, and outside a rank fence an ordinal on `/w/` has no reading.
 
 **Compare with:** an ordinal after a noun picks the Nth *thing* (`zodozel grodol` *the second dog*), not the Nth on a scale. A factor (*twice as big*) goes on `/h/`, not `/w/`.
 
 ### Manner scale (`/h/`) {#manner-scale}
 
-When English would say *Alazun walks more intensely than Azozon*, you rank **how** they walk, not a quality of the people. Keep the same rank join. Write a manner adverb (`/h/`) **immediately after** it, then the verb. The first name sits higher on that manner.
+When English would say *Alazun walks more intensely than Azozon*, you rank how they walk, not a quality of the people. Keep the same rank join. Write a manner adverb (`/h/`) immediately after it, then the verb. The first name sits higher on that manner.
 
 > `zalazun zazozon zol hahunom vowurol.`
 >
@@ -84,7 +84,7 @@ When English would say *Alazun walks more intensely than Azozon*, you rank **how
 
 ### Amount scale (`gral`) {#amount-scale}
 
-When English would say *more cats than dogs*, you rank **how many**, not a quality. Keep the rank join. For the shared word, write the [digitless number](digitless-exponents.md#digitless) **`gral`**: after a rank join it means *by amount*.
+When English would say *more cats than dogs*, you rank how many, not a quality. Keep the rank join. For the shared word, write the [digitless number](digitless-exponents.md#digitless) **`gral`**: after a rank join it means *by amount*.
 
 > `zogozelx zodozelx zol gral.`
 >
@@ -104,9 +104,9 @@ When English would say *more cats than dogs*, you rank **how many**, not a quali
 >
 > "There are as many cats as dogs."
 
-The noun decides whether English says *many* or *much*: cats are counted, tea is measured. Ageben uses the same **`gral`** for both.
+The noun decides whether English says *many* or *much*: cats are counted, tea is measured. Ageben uses the same `gral` for both.
 
-Open **`gram`** ranks by a **rough impression** instead of a count: *it looks like more cats than dogs*. Use **`gral`** when you counted or measured, and **`gram`** when you are going by how it seems.
+Open **`gram`** ranks by a rough impression instead of a count: *it looks like more cats than dogs*. Use `gral` when you counted or measured, and `gram` when you are going by how it seems.
 
 > `zogozelx zodozelx zol gram.`
 >
@@ -114,7 +114,7 @@ Open **`gram`** ranks by a **rough impression** instead of a count: *it looks li
 >
 > "It looks like there are more cats than dogs."
 
-To say **how many more**, put the difference in a `bl-` word right after **`gral`**. A count needs no unit noun: the unit is the thing counted.
+To say how many more, put the difference in a `bl-` word right after `gral`. A count needs no unit noun: the unit is the thing counted.
 
 > `zogozelx zodozelx zol gral blragel.`
 >
@@ -122,11 +122,11 @@ To say **how many more**, put the difference in a `bl-` word right after **`gral
 >
 > "There are three more cats than dogs."
 
-**Compare with:** after set join **`a`**, a shared word describes each item, so `zogozelx zodozelx zal gral` is *several cats and several dogs*. Only a **rank** join turns **`gral`** into the scale. For a named quantity such as weight or time, use its own word (`garolem`, `godurom`), not **`gral`**.
+**Compare with:** after set join `a`, a shared word describes each item, so `zogozelx zodozelx zal gral` is *several cats and several dogs*. Only a rank join turns `gral` into the scale. For a named quantity such as weight or time, use its own word (`garolem`, `godurom`), not `gral`.
 
 ### Frequency scale (`hral`) {#frequency-scale}
 
-English *walks more often than* ranks how many **times** something happens. Write digitless **`hral`** (*multiple times*) in the manner slot, right after the rank join. Only digitless **`hral`** sets this scale; other number words do not rank how often.
+English *walks more often than* ranks how many times something happens. Write digitless **`hral`** (*multiple times*) in the manner role, right after the rank join. Only digitless `hral` sets this scale; other number words do not rank how often.
 
 > `zazozon zalazun zol hral vowurol.`
 >
@@ -136,7 +136,7 @@ English *walks more often than* ranks how many **times** something happens. Writ
 
 ### Time scale (`bral`) {#time-scale}
 
-English *arrives earlier than* ranks **when** something happens. Write digitless **`bral`** (*later*) in the same place, right after the rank join. Rank **`o`** is *later than*, and **`uo`** is *earlier than*.
+English *arrives earlier than* ranks when something happens. Write digitless **`bral`** (*later*) in the same place, right after the rank join. Rank `o` is *later than*, and `uo` is *earlier than*.
 
 > `zazozon zalazun zol bral vevorol.`
 >
@@ -152,7 +152,7 @@ English *arrives earlier than* ranks **when** something happens. Write digitless
 
 ### Covarying clauses (*the more …, the more …*) {#covarying}
 
-English *the more Azozon walks, the more Alazun sleeps* says two amounts rise together. Put digitless **`hral`** (*multiple times*) or another amount word in each clause, and join the clauses with **`xoel`**. As with the [frequency scale](#frequency-scale), the equal-rank join turns each amount into a scale and says the two scales move in step.
+English *the more Azozon walks, the more Alazun sleeps* says two amounts rise together. Put digitless `hral` (*multiple times*) or another amount word in each clause, and join the clauses with **`xoel`**. As with the [frequency scale](#frequency-scale), the equal-rank join turns each amount into a scale and says the two scales move in step.
 
 > `zazozon hral vowurol xoel zalazun hral vezuvel.`
 >
@@ -168,11 +168,11 @@ For *the more …, the less …*, use **`xuol`**: when the first scale rises, th
 >
 > "The more Azozon walks, the less Alazun sleeps."
 
-**Compare with:** **`xoel`** / **`xuol`** state only that the two go together, not which one causes the other. To say the first causes the second, use a [causation](/causation) hinge.
+**Compare with:** `xoel` / `xuol` state only that the two go together, not which one causes the other. To say the first causes the second, use a [causation](/causation) hinge.
 
 ### Factor (*twice as … as*) {#factor}
 
-English *twice as big as* gives the **ratio** between the two heights. Use the [equative](/comparatives#equatives) **`zoel`** and its shared adjective, then a factor number (`/h/` + marker **`ra`**, [numbers](number-roles.md#number-as-adverb-by-marker)) **right after** the adjective. The first name sits at that many times the second's height.
+English *twice as big as* gives the ratio between the two heights. Use the [equative](/comparatives#equatives) `zoel` and its shared adjective, then a factor number (`/h/` + marker `ra`, [numbers](number-roles.md#number-as-adverb-by-marker)) right after the adjective. The first name sits at that many times the second's height.
 
 > `zazozon zalazun zoel gelazem hradol.`
 >
@@ -180,7 +180,7 @@ English *twice as big as* gives the **ratio** between the two heights. Use the [
 >
 > "Azozon is twice as big as Alazun."
 
-Inverse marker **`ru`** divides: `hrudol` is *half as*. The factor hosts nothing, so no `bl-` word comes after it.
+Inverse marker `ru` divides: `hrudol` is *half as*. The factor hosts nothing, so no `bl-` word comes after it.
 
 > `zalazun zazozon zoel gelazem hrudol.`
 >
@@ -188,7 +188,7 @@ Inverse marker **`ru`** divides: `hrudol` is *half as*. The factor hosts nothing
 >
 > "Alazun is half as big as Azozon."
 
-English *three times bigger* usually means the same ratio: use **`zoel`** with `hragel`, not rank **`zol`**. After **`zol`**, a number `/h/` is not a factor; it is an ordinary *N times* on the clause. For a gap in units (*two meters taller*), put a measure noun on the scale instead of a factor.
+English *three times bigger* usually means the same ratio: use `zoel` with `hragel`, not rank `zol`. After `zol`, a number `/h/` is not a factor; it is an ordinary *N times* on the clause. For a gap in units (*two meters taller*), put a measure noun on the scale instead of a factor.
 
 ### Practice {#intermediate-practice}
 

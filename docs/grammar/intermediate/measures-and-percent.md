@@ -5,14 +5,14 @@ band: intermediate
 # Measures and percent {#measures-and-percent}
 <a id="numbers-applied"></a>
 
-A number word can do more than count. This page shows how to write an amount of a unit (*two meters*) and a percent or a fraction. How the number word itself is built (markers, endings, writing) is in [numbers](/numbers); unspecified amounts, exponents, and the spoken comma are in [digitless and exponents](digitless-exponents.md).
+A number word can do more than count. You can give an amount of a unit (*two meters*) by putting a number on the unit's noun, and you can give a percent or a fraction of a whole by changing the number word's ending or sign. How the number word itself is built (markers, endings, writing) is in [numbers](/numbers); unspecified amounts, exponents, and the spoken comma are in [digitless and exponents](digitless-exponents.md).
 
 ### Measure phrases {#measure-phrases}
 <a id="units"></a>
 <a id="unit-amount"></a>
 <a id="si-units"></a>
 
-To say **how much of a unit** (*two meters*, *three hours*), use the unit's noun and put the amount on it as a `/ɡ/` number, the same way a count sits on a noun. Each SI or everyday unit is the [abstract](/word-endings#abstract-m) sense of a published root, so the unit noun ends in **-m**. Say that word, not a Latin abbreviation (`m`, `kg`, `s`). Once the unit phrase has been mentioned, resume it with **-r**.
+To say how much of a unit you mean (*two meters*, *three hours*), use the unit's noun and put the amount on it as a `/ɡ/` number, the same way a count sits on a noun. Each metric or everyday unit is the [abstract](/word-endings#abstract-m) sense of an ordinary root, so the unit noun ends in `-m`. Say that word, not a Latin abbreviation (`m`, `kg`, `s`). Once the unit phrase has been mentioned, resume it with `-r`.
 
 > `zazozon bezerom gradol vowurol.`
 >
@@ -31,11 +31,11 @@ The amount hosts nothing, so no `bl-` word comes after it. A plain `/b/` there i
 | `zazerom g+3`; `duberem g+5` | subject / object / … | *three seconds*; *five grams* |
 | `gezerom g+2` after a noun | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
 
-The amount takes the usual number endings, so **-m** makes it fuzzy (`gradom` ≈ *about two*). The **unit** takes ordinary word endings.
+The amount takes the usual number endings, so `-m` makes it fuzzy (`gradom` ≈ *about two*). The unit takes ordinary word endings.
 
 #### Stock units {#stock-units}
 
-Each unit is a metaphor on a published root. The **Literal on same root** column gives that root's everyday meaning.
+Each unit word reuses an ordinary root whose everyday meaning hints at the unit. The **Literal on same root** column gives that everyday meaning, and the **Cue** column says how it points to the unit.
 
 <!-- cheat-sheet: numbers -->
 | SI / everyday unit | Unit root (metaphor) | Example | Literal on same root | Cue |
@@ -67,7 +67,7 @@ Spelled out, `bagorum g+3` is `bagorum gragel` *three hours*.
 
 ### Percent and percentage points {#percent-and-percentage-points}
 
-To give a percent of a whole (*25% of the cats*), end a **count** number (`ra` / `ru`) with **`yo`**. Put it on the noun for the whole, in the same `/ɡ/` slot as a count (`zogozelx gragel` = *three cats*).
+To give a percent of a whole (*25% of the cats*), end a count number (`ra` / `ru`) with **`yo`**. Put it on the noun for the whole, in the same `/ɡ/` role as a count (`zogozelx gragel` = *three cats*). The listener then hears a portion of the whole, not a count of it.
 
 > `zogozelx g+25%.`
 >
@@ -83,13 +83,13 @@ To give a percent of a whole (*25% of the cats*), end a **count** number (`ra` /
 | **`yo`** | percent (portion of a whole) | everyday percent figure (`25` in `25%`); those digits ÷ 100 |
 | **`yu`** | percentage points (point-scale amount or delta) | point figure (`2` in `+2%*`); those digits ÷ 100 |
 
-Digits follow the [normal digit rules](digitless-exponents.md#exponents) (including optional **`ye`** inside the percent/point reading). Say the digits you mean (`g+100%` → spoken `grabamomoyol`).
+Digits follow the [normal digit rules](digitless-exponents.md#exponents) (including optional `ye` inside the percent/point reading). Say the digits you mean (`g+100%` → spoken `grabamomoyol`).
 
-Order: integer digits, optional **`ye`** + fractional digits, then **`yo`** or **`yu`**. **`yo`** / **`yu`** sit on **`ra`** / **`ru`** only. At most one **`yo`** or **`yu`** group in the number word; leave **`wa`** / **`wu`** off that word. Endings still apply (**-l** exact, **-m** about, **-n** named label, **-r** resume).
+Order: integer digits, optional `ye` + fractional digits, then `yo` or `yu`. `yo` / `yu` sit on `ra` / `ru` only. At most one `yo` or `yu` group in the number word; leave `wa` / `wu` off that word. Endings still apply (`-l` exact, `-m` about, `-n` named label, `-r` resume).
 
-In [preferred writing](number-markers.md#writing-preferred-shorthand): **`%`** → speech **`yo`**; **`%*`** → speech **`yu`** (sign still on **`ra`** / **`ru`**, written **`+`** / **`-`**).
+In [preferred writing](number-markers.md#writing-preferred-shorthand): `%` → speech `yo`; `%*` → speech `yu` (sign still on `ra` / `ru`, written `+` / `-`).
 
-To say **by how many points** something changed in a clause (*the cost rose two points*), use a [measure phrase](#measure-phrases) on the unit root `oduru` *percentage point*, the same way as *two hours*.
+To say by how many points something changed in a clause (*the cost rose two points*), use a [measure phrase](#measure-phrases) on the unit root `oduru` *percentage point*, the same way as *two hours*.
 
 > `zuderem bodurum gradol vabuhom.`
 >
@@ -99,7 +99,7 @@ To say **by how many points** something changed in a clause (*the cost rose two 
 
 #### Fractions (*half of*) {#fractions}
 
-To name one part of a whole (*half of the cats*, *a third of the tea*), put a minus number **`g-N`** right after the noun. Here the **`ru`** marker divides, as it does in `/h/` **`h-N`**: with N of 2 or more, the word names one part in N.
+To name one part of a whole (*half of the cats*, *a third of the tea*), put a minus number **`g-N`** right after the noun. Here the `ru` marker divides, as it does in `/h/` `h-N`: with N of 2 or more, the word names one part in N.
 
 > `zogozelx grudol vehohel.`
 >
@@ -113,7 +113,7 @@ To name one part of a whole (*half of the cats*, *a third of the tea*), put a mi
 >
 > "A third of the tea sits there."
 
-To say how many parts, put the count first and the fraction after it: **`g+N`** then **`g-M`** is *N parts of M*. English *two thirds* is the same two words in the same order.
+To say how many parts, put the count first and the fraction after it: `g+N` then `g-M` is *N parts of M*. English *two thirds* is the same two words in the same order.
 
 > `zogozelx gradol grugel vehohel.`
 >
@@ -121,7 +121,7 @@ To say how many parts, put the count first and the fraction after it: **`g+N`** 
 >
 > "Two thirds of the cats sit."
 
-**`g-N`** alone is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bezerom grudol` *minus 2 meters*). The count makes the fraction plain in any slot, a unit included: a count then a minus is never a negative amount, since a unit takes one amount.
+`g-N` alone is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bezerom grudol` *minus 2 meters*). The count makes the fraction plain wherever it stands, after a unit too: a count then a minus is never a negative amount, since a unit takes one amount.
 
 > `zazozon vowurol bagorum grabal grugel.`
 >

@@ -6,7 +6,7 @@ band: intermediate
 
 ### Vague amounts (*many* / *few*) {#vague-amounts}
 
-English *many*, *few*, *often*, and *late* rank against an unstated baseline, and *too much* and *too late* against an unstated need or limit. Ageben always names the bar: put it in the fence and rank on [amount](comparative-arity.md#amount-scale), the [frequency scale](comparative-arity.md#frequency-scale), or the [time scale](comparative-arity.md#time-scale).
+English *many*, *few*, *often*, and *late* rank against an unstated baseline, and *too much* and *too late* against an unstated need or limit. Ageben always names the bar: put it in the fence and rank on [amount](comparative-arity.md#amount-scale), the [frequency scale](comparative-arity.md#frequency-scale), or the [time scale](comparative-arity.md#time-scale). The listener then hears what *many* or *late* is measured against.
 
 > `zogozelx thubom zol gral.`
 >
@@ -23,10 +23,10 @@ English *many*, *few*, *often*, and *late* rank against an unstated baseline, an
 <!-- cheat-sheet: comparing -->
 | English | Bar and rank |
 |---------|--------------|
-| *many* / *few* | PATTERN **`thubom`**, `zol` / `zuol` with `gral` |
-| *often* / *rarely* | PATTERN **`thubom`**, `zol` / `zuol` with `hral` |
-| *late* / *early* | PATTERN **`thubom`**, `zol` / `zuol` with `bral` |
-| *than usual* (the same person or thing) | PATTERN **`thubom`** with no `/b/` |
+| *many* / *few* | PATTERN `thubom`, `zol` / `zuol` with `gral` |
+| *often* / *rarely* | PATTERN `thubom`, `zol` / `zuol` with `hral` |
+| *late* / *early* | PATTERN `thubom`, `zol` / `zuol` with `bral` |
+| *than usual* (the same person or thing) | PATTERN `thubom` with no `/b/` |
 | *too much* / *enough* / *not enough* | a met sake bar (`thudatham`), `zol` / `zoel` / `zuol` |
 | *too late* / *too soon* | a met sake bar (`thudatham`), `zol` / `zuol` with `bral` |
 
