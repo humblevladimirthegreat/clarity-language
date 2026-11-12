@@ -4,20 +4,16 @@ band: beginner
 
 # Joins
 
-When English would pack several things that play the same role into one slot (*a dog and a cat*, *walks and runs*), Ageben writes those items in a row and then one join word after them. That last word is how you know the list has ended. This pattern of items, then the join, is called a **right-close fence**. The join starts with the same role letter as the items (`z` for subjects, `v` for verbs, `x` for whole clauses).
+When English fills one role with several things (*a dog and a cat*, *walks and runs*), Ageben writes those items in a row and then one join word after them. That last word is how you know the list has ended. This pattern of items, then the join, is called a **right-close fence**. The join starts with the same role letter as the items (`z` for subjects, `v` for verbs, `x` for whole clauses).
 
 Sometimes you only care that the items belong together, with no ranking among them (*and*, *or*, *not*): that is a **set**. Sometimes you care which item comes first (*X first*, *A before B*): that is a **rank**.
 
-The join’s vowel says how much list you are left with. **a** grows it (*and*). **o** keeps the same members and only ranks them. **e** collapses the list to one choice. **u** takes the listed items away (*not*). Rank is leftover membership, not first-to-fourth in a count.
+The join’s vowel says what happens to the list: `a` adds the items together (*and*), `e` picks one of them (*or*), `u` takes them away (*not*), and `o` keeps the same members and only ranks them. A rank says which item matters more, not a numbered place in a count.
 
 
 ### And-lists (`a`)
 
-When English would say *and*, write every item, then the join. Use vowel **a** on that join: you are adding the items as a group. (cue: **a** ≈ add.)
-
-The join’s first letter matches the items: `zam` after two `/z/` nouns, `vam` after two `/v/` verbs.
-
-The ending says whether the list is complete. Closed **-l** means these are the only items, so the English needs no extra words. Open **-m** means other members may exist: add *(and possibly more)*. When unsure, prefer **-m**.
+When English joins items with *and*, write every item, then one join word with vowel `a`, which adds the items together as one group. The join’s first letter matches the items: `zam` after two `/z/` nouns, `vam` after two `/v/` verbs. Its ending says whether the list is complete: closed `-l` means these are the only items, and open `-m` means other members may exist, which the English shows as *(and possibly more)*. When unsure, prefer `-m`. (cue: `a` ≈ add.)
 
 > `zodozel zogozel zal.`
 >
@@ -54,13 +50,7 @@ Whatever the join, the whole list fills one role in the clause. A [role pointer]
 ### Right-close fence {#right-close}
 <a id="join-series-ending-shared"></a>
 
-Write the items first, then the join. Readers treat the items up to that join as one role in the clause, filled by several members. A flat list needs only one join, at its end.
-
-The join is never optional. Two nouns of the same role side by side, or two verbs, must close with one, because only the join says how the items combine: *Azozon and Alazun walk* is `zazozon zalazun zal vowurol.`, never the two names alone. Two verbs in one clause take the join even with other words between them. The join takes every item right before it, back to the last word of another role. Adjectives and adverbs are different: a row of them needs no join, because each one describes on its own ([clause](clause.md#adjectives-ɡ)).
-
-Two full clauses are the one exception: the join that starts with `x` goes **between** them, so you hear how the clauses relate before the second one starts.
-
-Objects and extra nouns list the same way. Two `/d/` objects close with `dal`; two `/b/` recipients close with `bal`.
+Whenever one role holds more than one word, the join is required. Two nouns of the same role side by side, or two verbs, must close with one, because only the join says how the items combine: *Azozon and Alazun walk* is `zazozon zalazun zal vowurol.`, never the two names alone. The join takes every item right before it, back to the last word of another role, so a flat list needs only one join, at its end. Objects and extra nouns list the same way: two `/d/` objects close with `dal`, and two `/b/` recipients close with `bal`.
 
 > `zazozon dodozel dogozel dal vayebel.`
 >
@@ -74,10 +64,12 @@ Objects and extra nouns list the same way. Two `/d/` objects close with `dal`; t
 >
 > "Azozon tells Alazun and Ahelan."
 
+Two verbs in one clause take the join even with other words between them. Adjectives and adverbs are different: a row of them needs no join, because each one describes on its own ([clause](clause.md#adjectives-ɡ)). Whole clauses are the one exception: their join, which starts with `x`, goes between them.
+
 ### Choice (`e`) {#choice-e}
 <a id="empty-allowed-om"></a>
 
-When English would offer a menu and ask to *pick one*, or leave the pick *(optional)*, use vowel **e**. Closed **-l** (`zel`) means pick one of the listed items. Open **-m** (`zem`) means the pick is optional. (cue: **e** ≈ choice.)
+When English offers a menu and asks you to *pick one*, or leaves the pick *(optional)*, use vowel `e`. Closed `-l` (`zel`) means the listener picks exactly one of the listed items. Open `-m` (`zem`) means the pick is optional. (cue: `e` ≈ choice.)
 
 > `zedudal zogudal zel.`
 >
@@ -94,7 +86,7 @@ When English would offer a menu and ask to *pick one*, or leave the pick *(optio
 ### How many items {#standalone-phrase}
 <a id="single-item-phrase"></a>
 
-The join still comes last when there is only one item, or none. How many items sit before it is the **arity**:
+A join can close a list of one item, or of none, and it still comes last. How many items sit before it is the **arity**. So one join word can say *just X*, and a join on its own can say *nothing* or *nobody*:
 
 | Arity | Ageben | Use | English |
 |-------|--------|-----|---------|
@@ -108,7 +100,7 @@ The join still comes last when there is only one item, or none. How many items s
 >
 > "just Azozon."
 
-Single-item **-l** also covers English *just* in the sense *merely*: the one item is all there is, with nothing more to it.
+Single-item `-l` also covers English *just* in the sense *merely*: the one item is all there is, with nothing more to it.
 
 > `zazozon dogozel dal vayebel.`
 >
@@ -116,7 +108,7 @@ Single-item **-l** also covers English *just* in the sense *merely*: the one ite
 >
 > "Azozon sees just a cat, nothing more."
 
-A standalone join fills its slot with no items. In the object slot, `dal` is *nothing*; in the extra-noun slot, `bal` is *nobody*.
+A standalone join fills its role with no items. As the object, `dal` is *nothing*; as an extra noun, `bal` is *nobody*.
 
 > `zazozon dal vayebel.`
 >
@@ -140,7 +132,7 @@ Right after a word that takes a [`bl-` partner](clause.md#extra-nouns), a standa
 
 ### Negation (`u`) {#negation-u}
 
-When English would deny the listed items, use vowel **u**. One item before `zul` is *not X*. Two items before `zul` is *neither A nor B*; more items is *none of these*. The join alone (`zul` / `zum`) is *no*. (cue: **u** ≈ undo.)
+When English denies the listed items, use vowel `u`. One item before `zul` is *not X*. Two items before `zul` is *neither A nor B*; more items is *none of these*. The join alone (`zul` / `zum`) is *no*. (cue: `u` ≈ undo.)
 
 > `gamahum gul.`
 >
@@ -162,7 +154,7 @@ When English would deny the listed items, use vowel **u**. One item before `zul`
 
 ### Everything (`ua`)
 
-When English would say *everything* / *everyone*, write a standalone join with two vowels, **u** then **a** (`zual`). With one item before it, the same join means *everything but* that item. Both vowels sit in one word: say them in order, then the ending. (cue: **u** ≈ undo, then **a** ≈ add.)
+When English would say *everything* / *everyone*, write a standalone join with two vowels, `u` then `a` (`zual`). With one item before it, the same join means *everything but* that item. Both vowels sit in one word: say them in order, then the ending. (cue: `u` ≈ undo, then `a` ≈ add.)
 
 > `zual.`
 >
@@ -189,9 +181,7 @@ Who did what never changes: in both, the dogs see and the cat is seen. What chan
 ### Rank (`o`) {#rank-o}
 <a id="set-joins-and-rank-joins"></a>
 
-The *and* / *or* / *not* joins above are **set** joins: the items share a slot as a group, and writing one before the other does not rank them. A **rank** join is the other English job: you care which item comes first (priority, favorite, *A before B*).
-
-Write the items in that order, then a join with vowel **o**. The earlier item outranks the later. One item before `zol` means *only X matters*; before `zom`, *X first* / *mainly X*. (cue: **o** ≈ rank.)
+When English ranks items (a priority, a favorite, *A before B*), write them in that order, then a join with vowel `o`; the earlier item outranks the later. The *and*, *or*, and *not* joins above are set joins: the items share a role as a group, and writing one before the other does not rank them. With one item, `zol` means *only X matters* and `zom` means *X first* or *mainly X*. (cue: `o` ≈ rank.)
 
 > `zazozon zol.`
 >
@@ -201,14 +191,14 @@ Write the items in that order, then a join with vowel **o**. The earlier item ou
 
 ### Unspecified member (`-r`) {#unspecified-member-r-phrase}
 
-When English says *something* or *someone*, or *one of these* without saying which, put ending **-r** on the join. The join then stands for one member of its list that you are not naming. **-r** goes only on a join with one vowel (**a** / **o** / **e** / **u**), not on a two-vowel join such as **ua**.
+When English says *something* or *someone*, or *one of these* without saying which, put ending `-r` on the join. The join then stands for one member of its list that you are not naming, so you can say *something* or *someone* without saying what or who. `-r` goes only on a join with one vowel (`a` / `o` / `e` / `u`), not on a two-vowel join such as `ua`.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| `zar` / `var` / `xar` | unspecified member of an add-set | *something* / *do something* / *something happened* | **a** ≈ add |
-| `zer` / `ver` / `xer` | unspecified member of a menu | *anything* / *do anything* | **e** ≈ choice |
-| `zor` / `vor` / `xor` | unspecified member of a ranking | *whatever ranks highest* | **o** ≈ rank |
-| `zur` / `vur` / `xur` | unspecified leftover | *something else* / *someone else* | **u** ≈ undo |
+| `zar` / `var` / `xar` | unspecified member of an add-set | *something* / *do something* / *something happened* | `a` ≈ add |
+| `zer` / `ver` / `xer` | unspecified member of a menu | *anything* / *do anything* | `e` ≈ choice |
+| `zor` / `vor` / `xor` | unspecified member of a ranking | *whatever ranks highest* | `o` ≈ rank |
+| `zur` / `vur` / `xur` | unspecified leftover | *something else* / *someone else* | `u` ≈ undo |
 
 > `zar.`
 >
@@ -228,7 +218,7 @@ When English says *something* or *someone*, or *one of these* without saying whi
 >
 > "one of tea and coffee."
 
-In the verb slot, **`var`** is an act you are not naming.
+As the verb, `var` is an act you are not naming.
 
 > `zazozon var.`
 >
@@ -236,9 +226,7 @@ In the verb slot, **`var`** is an act you are not naming.
 >
 > "Azozon does something."
 
-Write A and B, then `zar`: the join still closes the list, and **-r** means some member of that pair (you are not saying which).
-
-When English says *some of them* or *some people*, more than one, add [**-x**](plurality.md#associative) after the **-r**. The join then stands for a group of members you are not naming.
+When English says *some of them* or *some people*, more than one, add [`-x`](plurality.md#associative) after the `-r`. The join then stands for a group of members you are not naming.
 
 > `zarx vowurol.`
 >
@@ -252,27 +240,27 @@ When English says *some of them* or *some people*, more than one, add [**-x**](p
 >
 > "Some of Azozon, Alazun, and Ahelan walk."
 
-**-x** goes after **-r** only. A closed or open empty set already covers every member.
+`-x` goes after `-r` only. A closed or open empty set already covers every member.
 
-**Compare with:** on a content word, **-r** [resumes](pronouns.md) the last match. On a join, **-r** is an unspecified member. Standalone **`-rl` / `-rm`** (`darl`, `barl`) is a stand-in for the next sentence, not a join and not *something*.
+**Compare with:** on a content word, `-r` [resumes](pronouns.md) the last match. On a join, `-r` is an unspecified member. Standalone `-rl` / `-rm` (`darl`, `barl`) is a stand-in for the next sentence, not a join and not *something*.
 
 <a id="join-type-vowel-series"></a>
 
 <!-- cheat-sheet: vowels -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **a** | add the items | *and* | **a** ≈ add |
-| **o** | rank among items | *A before B*; one item *only X matters* | **o** ≈ rank |
-| **u** | deny the listed | *not* / *neither* / *none of* / standalone *no* | **u** ≈ undo |
-| **ua** | universal; one listed item is the leftover | standalone *everything*; one item *everything but* | **u** ≈ undo, then **a** ≈ add |
-| **e** | exclusive choice | exclusive *or* | **e** ≈ choice |
+| `a` | add the items | *and* | `a` ≈ add |
+| `o` | rank among items | *A before B*; one item *only X matters* | `o` ≈ rank |
+| `u` | deny the listed | *not* / *neither* / *none of* / standalone *no* | `u` ≈ undo |
+| `ua` | universal; one listed item is the leftover | standalone *everything*; one item *everything but* | `u` ≈ undo, then `a` ≈ add |
+| `e` | exclusive choice | exclusive *or* | `e` ≈ choice |
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **-l** | the listed items are the only ones in play | (no extra words) | **l** ≈ locked list |
-| **-m** | other items may exist | *(and possibly more)*; empty: *as far as I know* | **m** ≈ maybe more |
-| **-r** | unspecified member of the join | *someone* / *something* in the list | **r** ≈ member you have not named |
-| **-rx** | unspecified group of members | *some ones* / *some of them* | **r** ≈ member you have not named, **x** ≈ more than one |
+| `-l` | the listed items are the only ones in play | (no extra words) | `l` ≈ locked list |
+| `-m` | other items may exist | *(and possibly more)*; empty: *as far as I know* | `m` ≈ maybe more |
+| `-r` | unspecified member of the join | *someone* / *something* in the list | `r` ≈ member you have not named |
+| `-rx` | unspecified group of members | *some ones* / *some of them* | `r` ≈ member you have not named, `x` ≈ more than one |
 
 The same vowels and endings work under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`val`, `vam`, …), `/ɡ/` (`gal`, `gul`, …), and `/x/` (`xal`, `xam`, …). Match the join’s first letter to the items.
 
@@ -298,7 +286,7 @@ With two or more items, each join reads as taught above. This table collects the
 ### Clause joins (`/x/`) {#clause-joins}
 <a id="clause-join-position"></a>
 
-A clause is long, so a join that waits until the end would leave you holding two whole sentences before you learn how they relate. A clause join that starts with `x` therefore goes **between** the clauses: first clause, join, second clause. Every other join still closes its list on the right.
+When English joins two whole clauses (*Azozon walks and Alazun runs*), the join starts with `x` and goes between the clauses: first clause, join, second clause. A clause is long, so a join that waited until the end would leave you holding two whole sentences before you learn how they relate. Every other join still closes its list on the right.
 
 > `zazozon vowurol xam zalazun veruvol.`
 >
@@ -312,11 +300,11 @@ A clause is long, so a join that waits until the end would leave you holding two
 >
 > "Azozon walks, or Alazun runs, or Ahelan sleeps: exactly one of the three."
 
-Repeating the same join word keeps the list flat. Switching to a **different** join word closes everything before it as one group: `A xel B xal C` is *(A or B) and C*.
+Repeating the same join word keeps the list flat. Switching to a different join word closes everything before it as one group: `A xel B xal C` is *(A or B) and C*.
 
-So a group always sits on the left. The set joins **a** / **e** / **u** ignore order, so you can usually move the group to the front. When the group has to come last, end the sentence and start the next one with the join: the join then takes the **whole** next sentence.
+So a group always sits on the left. The set joins `a` / `e` / `u` ignore order, so you can usually move the group to the front. When the group has to come last, end the sentence and start the next one with the join: the join then takes the whole next sentence.
 
-After a stand-in such as **`derl`** or **`blarl`**, every clause joined in the same sentence belongs to the dependent clause. A clause meant for the main sentence also starts a new sentence.
+After a stand-in such as `derl` or `blarl`, every clause joined in the same sentence belongs to the dependent clause. A clause meant for the main sentence also starts a new sentence.
 
 > `zazozon vowurol. xan zalazun veruvol xel zahelan vezuvel.`
 >
@@ -324,7 +312,7 @@ After a stand-in such as **`derl`** or **`blarl`**, every clause joined in the s
 >
 > "Azozon walks. Then Alazun runs or Ahelan sleeps."
 
-A clause join never sits on one clause alone. To deny or single out one clause, put the join on the part you mean: **`vowurol vul`** *does not walk*, **`zazozon zal`** *only Azozon*.
+A clause join never sits on one clause alone. To deny or single out one clause, put the join on the part you mean: `vowurol vul` *does not walk*, `zazozon zal` *only Azozon*.
 
 A join word with no clause before it stands for a clause of its own: `xal.` *nothing happened*, `xar` *something happened*, `xur` *something else happened*, `xual` *everything happened*. That join word can also be one item of a clause list:
 

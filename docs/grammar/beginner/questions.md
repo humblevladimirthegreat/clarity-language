@@ -6,22 +6,20 @@ band: beginner
 
 This page teaches how to ask a question and how to answer one.
 
-You can ask for *yes* or *no*, or you can leave a blank for *who* / *what* (a **fill-ask**). After a *yes* / *no* question, you can answer with a short *yes* / *no* / *sure* word (**polar particle**). The same words answer a command or a request.
+You can ask for *yes* or *no*, or you can leave a blank for *who* / *what* (a fill-ask). After a *yes* / *no* question, you can answer with a short *yes* / *no* / *sure* word (a polar particle). The same words answer a command or a request.
 
 
 ### Ask (`yel` / `yem`) {#question}
 
-A **question** asks for a reply instead of stating a fact. English marks it by moving words around (*Azozon walks* → *Does Azozon walk?*). Ageben marks it with the act word **`yel`** at the start of the turn, followed by the body (subject, verb, and so on). Every word keeps the form it would have in a statement. Only the default order changes: the verb comes [second](speech-moves.md#act-word-order), right after the subject.
-
-Soft **`yem`** asks the same question more gently (wondering rather than pressing). End a written question with a period, like any sentence.
-
-When every person and action in the clause is already named, the expected reply is *yes* or *no*. (cue: **e** ≈ choice: collapse to an answer.)
+A **question** asks for a reply instead of stating a fact, and English marks it by moving words around (*Azozon walks* → *Does Azozon walk?*). Ageben puts the act word **`yel`** at the start of the turn, followed by the body (subject, verb, and so on), and every word keeps the form it would have in a statement. Only the default order changes: the verb comes [second](speech-moves.md#act-word-order), right after the subject. When every person and action in the clause is already named, the expected reply is *yes* or *no*. (cue: `e` ≈ choice: collapse to an answer.)
 
 > `yel zazozon vowurol.`
 >
 > y-question | z-Azozon | v-walk
 >
 > "Does Azozon walk?"
+
+Soft **`yem`** asks the same question more gently (wondering rather than pressing). End a written question with a period, like any sentence.
 
 > `yem zalazun vezuvel.`
 >
@@ -35,7 +33,7 @@ When every person and action in the clause is already named, the expected reply 
 >
 > "Does Azozon see a cat?"
 
-With no body at all, the question asks about what was just said: *Huh?* / *What?* Soft **`yem.`** is gentler (*Hm?*).
+With no body at all, the question asks about what was just said: *Huh?* / *What?* Soft `yem.` is gentler (*Hm?*).
 
 > `yel.`
 >
@@ -54,9 +52,7 @@ A question whose subject is *nobody* (`zal`), or whose whole clause is *nothing 
 ### Fill-ask
 <a id="fill-ask-r"></a>
 
-Sometimes you do not want *yes* or *no*. You want the other person to **name** someone or something: *who?*, *what?*, *do what?*, *what happened?* That kind of question is a **fill-ask**.
-
-Keep **`yel`** or **`yem`** at the start. In the slot you want filled, use a join word that ends in **-r** (`zar`, `var`, `xar`, …). That **-r** is the blank ([unspecified-member **-r**](joins.md#unspecified-member-r-phrase)). (cue: **-r** names this member; **a** ≈ add for *who/what*, **u** ≈ undo for *who/what else*.)
+Sometimes you do not want *yes* or *no*: you want the other person to name someone or something (*who?*, *what?*, *do what?*, *what happened?*). That kind of question is a **fill-ask**. Keep `yel` or `yem` at the start, and in the role you want filled, put a join word that ends in `-r` (`zar`, `var`, `xar`, …). That `-r` is the blank ([unspecified-member `-r`](joins.md#unspecified-member-r-phrase)), and the reply names what fills it. (cue: `-r` names this member; `a` ≈ add for *who/what*, `u` ≈ undo for *who/what else*.)
 
 > `yel zar vowurol.`
 >
@@ -64,7 +60,7 @@ Keep **`yel`** or **`yem`** at the start. In the slot you want filled, use a joi
 >
 > "Who walks?"
 
-Put the blank **first** in the body, and the other words in their statement order after it. The listener hears what you are asking before anything else, and the blank itself marks the turn as a question even if **`yel`** is missed.
+Put the blank first in the body, and the other words in their statement order after it. The listener hears what you are asking before anything else, and the blank itself marks the turn as a question even if `yel` is missed.
 
 > `yel dar zazozon vayebel.`
 >
@@ -74,9 +70,9 @@ Put the blank **first** in the body, and the other words in their statement orde
 
 A blank that completes another word comes first together with that word: *like whom?* is `hewem blar`, so `yel hewem blar zazozon vowurol.` asks *Whom does Azozon walk like?*
 
-In the word-by-word line under an example, a fill-ask blank shows as *wh*, short for whichever question word fits the slot (*who*, *what*, *where*, and so on).
+In the word-by-word line under an example, a fill-ask blank shows as *wh*, short for whichever question word fits the role (*who*, *what*, *where*, and so on).
 
-If the reply is just one noun, not a full sentence, write it as a [citation](word-endings.md#citation-forms): root + ending, no role letter, with any adjectives that describe it. Leave no join **-r** in the answer; that **-r** was the blank. A full-sentence answer uses ordinary role letters.
+If the reply is just one noun, not a full sentence, write it as a [citation](word-endings.md#citation-forms): root + ending, no role letter, with any adjectives that describe it. Leave no join `-r` in the answer; that `-r` was the blank. A full-sentence answer uses ordinary role letters.
 
 > `azozon.`
 >
@@ -102,8 +98,8 @@ Without the letters, two bare words could be a list, a name, or two separate ans
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **a** (`zar` · `var` · `xar`) | ask for who or what | *Who/what?* / *What happened?* | **a** ≈ add |
-| **u** (`zur` · `vur` · `xur`) | ask for who or what else | *Who else?* / *What else?* | **u** ≈ undo |
+| `a` (`zar` · `var` · `xar`) | ask for who or what | *Who/what?* / *What happened?* | `a` ≈ add |
+| `u` (`zur` · `vur` · `xur`) | ask for who or what else | *Who else?* / *What else?* | `u` ≈ undo |
 
 > `yel zur vezuvel.`
 >
@@ -115,14 +111,16 @@ Without the letters, two bare words could be a list, a name, or two separate ans
 >
 > "Alazun."
 
-**Compare with:** pointing back at someone already named uses resume **-r** on a whole stem or a role pointer ([pronouns](pronouns.md)). A fill-ask uses only **join** **-r**. The spelling tells them apart: a resume spells a whole stem, and a role pointer has **`w`**, a reach vowel, a part consonant, and a pointer vowel. A join word has no stem, only its role letter, its join vowel or vowels, and its ending.
+**Compare with:** pointing back at someone already named uses resume `-r` on a whole stem or a role pointer ([pronouns](pronouns.md)). A fill-ask uses only the join `-r`. The spelling tells them apart: a resume spells a whole stem, and a role pointer has `w`, a reach vowel, a part consonant, and a pointer vowel. A join word has no stem, only its role letter, its join vowel or vowels, and its ending.
 
 ### Question tone (`?`) {#question-tone}
 
-The act word **`yel`** / **`yem`** already makes the sentence a question, so the tone mark `?` is never required. It is still **recommended**, because it shows the raised voice in writing:
+The tone mark `?` shows the raised voice of a question in writing. The act word `yel` / `yem` already makes the sentence a question, so `?` is never required. It is still recommended, because the reader then knows where your voice rises. Where it goes depends on the kind of question:
 
-- **Yes/no question:** write a free-standing `?` right after the `/y/` words, so it applies to the whole rest of the sentence.
-- **Fill-ask:** attach `?` to the front of each fill-ask word (the join **-r** blank), so the raised voice falls on what you want filled.
+| Question | Where `?` goes |
+|----------|----------------|
+| Yes/no | free-standing, right after the `/y/` words, so it applies to the whole rest of the sentence |
+| Fill-ask | on the front of each fill-ask word (the join `-r` blank), so the raised voice falls on what you want filled |
 
 > `yel ? zazozon vowurol.`
 >
@@ -140,7 +138,7 @@ The sentence still ends in a period.
 
 ### Fill-all {#fill-all}
 
-To ask *who sees what?*, put join **-r** in every slot you want filled, and put all the blanks first. Each of those **-r** words is a blank, and the answer is expected to **fill all** of them, in the order the question gave them. Each filler keeps its blank's letter, so the answer is a [lone object](predication.md#unsaid-event) with its doer.
+To ask *who sees what?*, put join `-r` in every role you want filled, and put all the blanks first. Each of those `-r` words is a blank, and the answer is expected to **fill all** of them, in the order the question gave them. Each filler keeps its blank's letter, so the answer is a [lone object](predication.md#unsaid-event) with its doer.
 
 > `yel zar dar vayebel.`
 >
@@ -154,7 +152,7 @@ To ask *who sees what?*, put join **-r** in every slot you want filled, and put 
 >
 > "Azozon, a dog."
 
-To ask for several members of one slot (*who all?*), put [**-x**](joins.md#unspecified-member-r-phrase) after the blank. The answer lists them with a join.
+To ask for several members of one role (*who all?*), put [`-x`](joins.md#unspecified-member-r-phrase) after the blank. The answer lists them with a join.
 
 > `yel zarx vowurol.`
 >
@@ -170,7 +168,7 @@ To ask for several members of one slot (*who all?*), put [**-x**](joins.md#unspe
 
 To ask only about people, put the kind before the blank: `yel zeyel zarx vowurol.` is *Which people walk?*
 
-If only one slot is unknown, put join **-r** only there. Write the known thing as an ordinary word (`-l` / `-m`).
+If only one role is unknown, put join `-r` only there. Write the known thing as an ordinary word (`-l` / `-m`).
 
 > `yel zar dodozel vayebel.`
 >
@@ -185,26 +183,18 @@ If only one slot is unknown, put join **-r** only there. Write the known thing a
 ### Polar particle (*yes* / *no* / *sure*) {#polar-particle}
 <a id="answers"></a>
 
-After a *yes* / *no* question, you often answer with a short word that means *yes*, *no*, or *I’ll take that*. That answer is a **polar particle**. It can stand alone as a whole turn, or it can sit at the start of a turn before a sentence body.
+After a *yes* / *no* question, you often answer with a short word that means *yes*, *no*, or *I’ll take that*. That answer is a **polar particle**. Write `y`, then two vowels, then `-l` (firm) or `-m` (softer). It can stand alone as a whole turn, or it can sit at the start of a turn before a sentence body.
 
-Write **`y`**, then two vowels, then **-l** (firm) or **-m** (softer).
+<!-- cheat-sheet: talking -->
+| Ageben | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`yaol`** / soft **`yaom`** | the claim matches, or *got it* | *yes* / *true* · *I think so* / *yeah* | `a` ≈ add + `o` ≈ command (the claim lines up) |
+| **`yuol`** / soft **`yuom`** | the claim does not match | *no* / *false* · *I don’t think so* / *nah* | `u` ≈ not + `o` ≈ command (the claim does not line up) |
+| **`yael`** / soft **`yaem`** | take up an offered option | *sure* / *I’ll take that* · *okay* / *sure, I guess* | `a` ≈ add + `e` ≈ question (this option) |
 
-**`yaol`** means *yes* / *true*: the claim matches. Soft twin **`yaom`**: *I think so* / *yeah*.
-
-**`yuol`** means *no* / *false*: the claim does not match. Soft twin **`yuom`**: *I don’t think so* / *nah*.
-
-**`yael`** means *sure* / *I’ll take that*: you take up the offer. Soft twin **`yaem`**: *okay* / *sure, I guess*.
-
-When a sentence body follows *yes*, write **`yaol`** then the body. You do not also write the statement word **`yal`**.
+When a sentence body follows *yes*, write `yaol` then the body. You do not also write the statement word `yal`.
 
 A turn holds one polar word. Do not stack two, and do not put one before an act word: an answer followed by a question is two turns.
-
-| Ageben | Use | English | Cue |
-<!-- cheat-sheet: talking -->
-|--------|-----|---------|-----|
-| **`yaol`** / soft **`yaom`** | the claim matches, or *got it* | *yes* / *true* · *I think so* | **a** ≈ add + **o** ≈ command (the claim lines up) |
-| **`yuol`** / soft **`yuom`** | mismatch | *no* / *false* · *I don’t think so* | **u** ≈ not + **o** ≈ command (the claim does not line up) |
-| **`yael`** / soft **`yaem`** | take up an offered option | *sure* / *I’ll take that* · *okay* | **a** ≈ add + **e** ≈ question (this option) |
 
 > `yaol.`
 >
@@ -236,7 +226,7 @@ A turn holds one polar word. Do not stack two, and do not put one before an act 
 >
 > "Okay." / "Sure, I guess."
 
-To back up your own statement with *yes*, give **`yaol`** a turn of its own: finish the statement with a period, then write **`yaol.`**
+To back up your own statement with *yes*, give `yaol` a turn of its own: finish the statement with a period, then write `yaol.`
 
 > `zazozon vowurol. yaol.`
 >
@@ -244,7 +234,7 @@ To back up your own statement with *yes*, give **`yaol`** a turn of its own: fin
 >
 > "Azozon walks. Yes."
 
-To ask the listener to confirm instead (*…, right?*), put the question word **`yel`** before it: **`yel yaol.`** A short question like this after a statement is a **check-back**. Soft **`yem yaol.`** is *…, isn't it?*
+To ask the listener to confirm instead (*…, right?*), put the question word `yel` before it: `yel yaol.` A short question like this after a statement is a **check-back**. Soft `yem yaol.` is *…, isn't it?*
 
 > `zazozon vowurol. yel yaol.`
 >
@@ -252,13 +242,13 @@ To ask the listener to confirm instead (*…, right?*), put the question word **
 >
 > "Azozon walks, right?"
 
-**Compare with:** a command *Don’t walk* uses **`yul`**. **`yuol`** answers whether a claim is true.
+**Compare with:** a command *Don’t walk* uses `yul`. `yuol` answers whether a claim is true.
 
-Inside the clause, *not X* is the join **`zul`** / **`vul`**, not a polar word.
+Inside the clause, *not X* is the join `zul` / `vul`, not a polar word.
 
 ### Embedded *whether* {#embedded-whether}
 
-English *whether* reports a yes/no question inside a statement (*Azozon sees whether Alazun walks*). Write the stand-in [**`derl`**](dependents.md#dependent-clauses) in the object slot, with the inner question right after it. The whole sentence is still a statement, so do not write **`yel`** at its start.
+English *whether* reports a yes/no question inside a statement (*Azozon sees whether Alazun walks*). Write the stand-in [`derl`](dependents.md#dependent-clauses) as the object, with the inner question right after it. The whole sentence is still a statement, so do not write `yel` at its start.
 
 > `zazozon vayebel derl zalazun vowurol.`
 >
@@ -266,7 +256,7 @@ English *whether* reports a yes/no question inside a statement (*Azozon sees whe
 >
 > "Azozon sees whether Alazun walks."
 
-**Compare with:** a direct question (*Does Azozon walk?*) puts **`yel`** at the start of the turn.
+**Compare with:** a direct question (*Does Azozon walk?*) puts `yel` at the start of the turn.
 
 ### Practice {#beginner-practice}
 
@@ -438,7 +428,7 @@ The statement stays a statement; the check-back **`yel yaol.`** is its own short
 ## See also
 
 - [Speech moves](speech-moves.md#turn-y): turn; speech act; [continue](speech-moves.md#continue-x)
-- [Dependent clauses](dependents.md#dependent-clauses): *that* / *whether* after **`darl` / `derl`**
-- [Joins](joins.md): join fences; statement readings of **-r** / single-item / standalone
-- [Pronouns](pronouns.md): content resume **-r** (fill-ask is join **-r**)
+- [Dependent clauses](dependents.md#dependent-clauses): *that* / *whether* after `darl` / `derl`
+- [Joins](joins.md): join fences; statement readings of `-r` / single-item / standalone
+- [Pronouns](pronouns.md): content resume `-r` (fill-ask is join `-r`)
 - Fill-ask roles: [Who, which, and any](/fill-ask-roles)

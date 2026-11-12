@@ -7,14 +7,14 @@ band: beginner
 ### Sequence (`-n`, clause only) {#clause-sequence}
 <a id="sequence"></a>
 
-When English tells events in time order (*and then*), put ending **-n** on a clause join (`/x/`). Narrative *and then* is **`xan`**. Like every clause join, it goes [between](joins.md#clause-joins) the clauses: `A xan B xan C` reads one step at a time. The clauses keep one speech act; this **-n** orders them rather than naming a person.
+When English tells events in time order (*and then*), put ending `-n` on a clause join (`/x/`), so narrative *and then* is **`xan`**. Like every clause join, it goes [between](joins.md#clause-joins) the clauses, so `A xan B xan C` reads one step at a time. The clauses keep one speech act. Here `-n` orders the clauses; it does not mark a name.
 
 <!-- cheat-sheet: joins-hooks -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| `xan` | sequence add | *and then…* | **a** ≈ add |
-| `xen` | sequence menu | *or maybe…*; *failing that…* | **e** ≈ choice |
-| `xun` | sequence deny | *and then not…* | **u** ≈ undo |
+| `xan` | sequence add | *and then…* | `a` ≈ add |
+| `xen` | sequence menu | *or maybe…*; *failing that…* | `e` ≈ choice |
+| `xun` | sequence deny | *and then not…* | `u` ≈ undo |
 
 > `zazozon vehohel xan zazozor vowurol.`
 >
@@ -22,7 +22,7 @@ When English tells events in time order (*and then*), put ending **-n** on a cla
 >
 > "Azozon sat, and then they walked."
 
-Under `/v/`, `/ɡ/`, and `/h/`, a join word with **-n** names a list move instead.
+Under `/v/`, `/ɡ/`, and `/h/`, a join word with `-n` instead names a list move, such as *includes* or *leaves out*.
 
 ### Practice {#beginner-practice}
 

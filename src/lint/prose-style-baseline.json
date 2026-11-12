@@ -79,11 +79,6 @@
     "bold-density": 2,
     "long-paragraph": 1
   },
-  "beginner/joins.md": {
-    "beginner-lead": 4,
-    "bold-density": 1,
-    "long-paragraph": 1
-  },
   "beginner/label-seams.md": {
     "beginner-lead": 1,
     "bold-density": 4,
@@ -97,10 +92,6 @@
     "beginner-lead": 1,
     "bold-density": 1,
     "long-paragraph": 1
-  },
-  "beginner/questions.md": {
-    "beginner-lead": 4,
-    "bold-density": 2
   },
   "beginner/relations.md": {
     "beginner-lead": 1,
