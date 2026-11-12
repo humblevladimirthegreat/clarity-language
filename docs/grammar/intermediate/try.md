@@ -4,12 +4,12 @@ band: intermediate
 
 # Try {#try-sitting}
 
-English *try to*, how hard someone tries, and *failing that* say that someone attempts an act, how far they will go, and what comes next if it fails.
-
 ### Try {#try}
 <a id="attempt"></a>
 
-To say that someone is trying to do something, put **`howa`** plus an ending on `/h/` before the ordinary verb. It is an [intention adverb](/can-and-cant#intention-adverbs): it covers the whole clause wherever it sits. Unlike PLAN, an attempt is something others can watch, so it is not a stance and needs no holder. The sentence says the attempt happens, not whether it works. The ending says how committed the attempt is. (Cue: 🧪 A test tube tries a sample to see what happens.)
+English *try to*, how hard someone tries, and *failing that* say that someone attempts an act, how far they will go, and what comes next if it fails. To say that someone is trying to do something, put **`howa`** plus an ending on `/h/` before the ordinary verb; the ending says how committed the attempt is. The sentence says the attempt happens, not whether it works, so you can report an attempt without claiming how it turned out. (Cue: 🧪 A test tube tries a sample to see what happens.)
+
+It is an [intention adverb](/can-and-cant#intention-adverbs): it covers the whole clause wherever it sits. Unlike PLAN, an attempt is something others can watch, so it is not a stance and needs no holder (no one named whose view it gives).
 
 As a plain noun, the root keeps its own meaning (`zowal` *a test tube*).
 
@@ -22,13 +22,13 @@ As a plain noun, the root keeps its own meaning (`zowal` *a test tube*).
 #### Endings: commitment
 <a id="attempt-commitment"></a>
 
-On **`owa`**, **-l / -m / -r** say how far the attempt will go. **-n** is ordinary [proper](proper-names.md#proper-name--n). If you do not know, use **-m**.
+English *keeps trying*, *tries*, and *gives it a shot* say how far an attempt will go. On `owa`, the endings `-l` / `-m` / `-r` say the same. `-n` is ordinary [proper](proper-names.md#proper-name--n). If you do not know, use `-m`.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`howal`** | **committed** | *commits to trying …* / *keeps trying to …* until it works or is ruled out | **-l** the full run |
-| **`howam`** | **unstated** (soft default) | *tries to …* | **-m** middle |
-| **`howar`** | **trial run** | *tries out …* / *gives … a shot*: a low-stakes probe, and failing is useful to know | **-r** ≈ right now (a small sample) |
+| **`howal`** | committed | *commits to trying …* / *keeps trying to …* until it works or is ruled out | `-l` the full run |
+| **`howam`** | unstated (soft default) | *tries to …* | `-m` middle |
+| **`howar`** | trial run | *tries out …* / *gives … a shot*: a low-stakes probe, and failing is useful to know | `-r` ≈ right now (a small sample) |
 
 > `zalazun howar vozuyel.`
 >
@@ -42,7 +42,7 @@ On **`owa`**, **-l / -m / -r** say how far the attempt will go. **-n** is ordina
 >
 > "Alazun keeps trying to walk."
 
-A trial run (**-r**) plans for failure: if it fails, that is what the probe was for. Use it when you want to lower the stakes, for yourself or for someone else.
+A trial run (`-r`) plans for failure: if it fails, that is what the probe was for. Use it when you want to lower the stakes, for yourself or for someone else.
 
 #### Fallback (`xen`) {#fallback}
 <a id="or-else"></a>
@@ -63,7 +63,7 @@ An intention adverb covers only its own clause, so the backup above is a plain *
 >
 > "Azozon gives walking a try; failing that, Azozon keeps trying to sing."
 
-A fully prepared [PLAN](/intention#plan-predict) (**`thagol`**) already has backups. To name them, chain the clauses with **`xen`**, first choice first, and put PLAN on each one:
+A fully prepared [PLAN](/intention#plan-predict) (`thagol`) already has backups. To name them, chain the clauses with `xen`, first choice first, and put PLAN on each one:
 
 > `zuwen thagol vowurol xen zuwen thagol vozuyel xen zuwen thagol vezuvel.`
 >
@@ -71,9 +71,9 @@ A fully prepared [PLAN](/intention#plan-predict) (**`thagol`**) already has back
 >
 > "My plan is to walk; failing that, to sing; failing that, to sleep."
 
-**Compare with:** [ability](/can-and-cant#ability) says whether someone **can** do something; an attempt makes no claim either way. [PLAN](/intention#plan-predict) is intention before acting; an attempt is acting with the outcome open.
+**Compare with:** [ability](/can-and-cant#ability) says whether someone *can* do something; an attempt makes no claim either way. [PLAN](/intention#plan-predict) is intention before acting; an attempt is acting with the outcome open.
 
-**Not the same job as:** plain *or*, **`xel`** ([clause joins](/joins#clause-joins)), which has no first choice and no backup.
+**Not the same job as:** plain *or*, `xel` ([clause joins](/joins#clause-joins)), which has no first choice and no backup.
 
 ### Practice {#intermediate-practice}
 

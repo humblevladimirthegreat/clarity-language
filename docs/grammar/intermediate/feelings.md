@@ -4,20 +4,20 @@ band: intermediate
 
 # Feelings {#feelings}
 
-English *anxious* and *hopefully* mix a feeling and how you feel about a claim. Ageben keeps those apart. A [feeling word](/how-you-feel#feeling-word) names the need, whether it is met, and what the feeling pulls you to do; a **speaker attitude** such as *hopefully* is how you feel about the claim. This page finishes the feeling word: six more urges, how long a feeling lasts, whose need it is about, and how strong it is.
+English *anxious* and *hopefully* mix a feeling and how you feel about a claim. Ageben keeps those apart. A [feeling word](/how-you-feel#feeling-word) names the need, whether it is met, and what the feeling pulls you to do; a **speaker attitude** such as *hopefully* is how you feel about the claim. This page finishes the feeling word: six more urges, how long a feeling lasts, whose need it is about, and how strong it is. It then reads each part of the word as a choice you can make, and ends with speaker attitudes.
 
 ### Six more urges {#emotion-compose}
 
-The [four urges](/how-you-feel#urges) name staying, acting on someone, doing something for them, and moving off. Six more name pulls those four blur together: turning to someone, pushing back, letting go, keeping the peace, holding still, and not knowing yet. Each is the vowel pair of a two-vowel hook, and it sits in the same slot as the four. You can then name a pull such as freezing or appeasing before you follow it, and choose whether to.
+The [four urges](/how-you-feel#urges) name staying, acting on someone, doing something for them, and moving off. Six more name pulls those four blur together: turning to someone, pushing back, letting go, keeping the peace, holding still, and not knowing yet. Each is the vowel pair of a two-vowel hook, and it sits in the same place in the word as the four. You can then name a pull such as freezing or appeasing before you follow it, and choose whether to.
 
 | Ageben | Use | English | Belongs when | Cue |
 |--------|-----|---------|--------------|-----|
-| **`oe`** | TOWARD | *turn to someone*: for comfort, or to share it | company would help, or good news wants telling | **oe** ≈ `oel` *toward*: you turn toward someone |
-| **`uo`** | RESISTING | *push back* on an outcome or a demand | a limit is being crossed | **uo** ≈ `uol` *against*: you push against it |
-| **`ua`** | RELEASING | *step out of the fight*: let go, yield | it cannot be changed, or it is not worth the cost | **ua** ≈ `ual` *out of*: out of the fight |
-| **`ao`** | PLACATING | *use yourself to keep the peace* | calming things down keeps someone safe | **ao** ≈ `aol` *using*: you use yourself |
-| **`ae`** | HELD | *stuck on the spot*: frozen, or keeping a lid on it | acting now would cost more than waiting | **ae** ≈ `ael` *on*: on the spot, a lid on it |
-| **`ue`** | UNPLACED | it runs through you, and you cannot tell which way it pulls | you do not know yet | **ue** ≈ `uel` *through*: it runs through you |
+| **`oe`** | TOWARD | *turn to someone*: for comfort, or to share it | company would help, or good news wants telling | `oe` ≈ `oel` *toward*: you turn toward someone |
+| **`uo`** | RESISTING | *push back* on an outcome or a demand | a limit is being crossed | `uo` ≈ `uol` *against*: you push against it |
+| **`ua`** | RELEASING | *step out of the fight*: let go, yield | it cannot be changed, or it is not worth the cost | `ua` ≈ `ual` *out of*: out of the fight |
+| **`ao`** | PLACATING | *use yourself to keep the peace* | calming things down keeps someone safe | `ao` ≈ `aol` *using*: you use yourself |
+| **`ae`** | HELD | *stuck on the spot*: frozen, or keeping a lid on it | acting now would cost more than waiting | `ae` ≈ `ael` *on*: on the spot, a lid on it |
+| **`ue`** | UNPLACED | it runs through you, and you cannot tell which way it pulls | you do not know yet | `ue` ≈ `uel` *through*: it runs through you |
 
 As with the four, no urge is the correct one to have, and the urge names the stronger pull when two mix. Use two feeling words when you want to say both.
 
@@ -65,17 +65,17 @@ As with the four, no urge is the correct one to have, and the urge names the str
 
 **Compare with:** `a`, `ae`, and `ue` all stay put, for different reasons. With `a` nothing pulls you to move. With `ae` something pulls and you are holding still. With `ue` something pulls and you cannot tell which way yet.
 
-A feeling word is built on a met (**`tha`**), motive (**`tho`**), or unmet (**`thu`**) sake word. Prescription **`the`** is advice, not a feeling, so it takes no urge. For the bare noun *emotion*, with no need to name, use the compound `zabelohalal` (the water of the heart).
+A feeling word is built on a met (`tha`), motive (`tho`), or unmet (`thu`) sake word. Prescription `the` is advice, not a feeling, so it takes no urge. For the bare noun *emotion*, with no need to name, use the compound `zabelohalal` (the water of the heart).
 
 ### How long the feeling lasts {#feeling-duration}
 
-The last ending of a feeling word says how long the feeling itself lasts. It uses the same [settled-to-passing scale](/sakes#settled-to-passing) as the sake word's own ending. **-m** leaves it open; **-l** says the feeling has settled in, and **-r** says it is a flash or a wave that will pass. You can then tell a mood that needs attention from a wave you can wait out.
+English tells *a flash of anger* from *a bad mood* that lasts for days. In Ageben the last ending of a feeling word says how long the feeling itself lasts, on the same [settled-to-passing scale](/sakes#settled-to-passing) as the sake word's own ending. `-m` leaves it open; `-l` says the feeling has settled in, and `-r` says it is a flash or a wave that will pass. You can then tell a mood that needs attention from a wave you can wait out.
 
 | Ending | Use | English | Cue |
 |--------|-----|---------|-----|
-| **-l** | SETTLED | *it has settled in*: hours, days, a mood | **-l** ≈ *lasting* |
-| **-m** | OPEN | how long is not said | **-m** ≈ the middle: left open |
-| **-r** | FLEETING | *a flash or a wave*: it will pass | **-r** ≈ *right now* |
+| `-l` | SETTLED | *it has settled in*: hours, days, a mood | `-l` ≈ *lasting* |
+| `-m` | OPEN | how long is not said | `-m` ≈ the middle: left open |
+| `-r` | FLEETING | *a flash or a wave*: it will pass | `-r` ≈ *right now* |
 
 > `zonal wawethumel goyom blalazun.`
 >
@@ -85,7 +85,7 @@ The last ending of a feeling word says how long the feeling itself lasts. It use
 
 How long a feeling lasts is not how strong it is. A strong feeling can pass in a moment, and a mild one can stay for days.
 
-A feeling word uses the scale twice. The sake word's ending, mid-word, is about the **situation**: whether the cost can be changed, is for good, or has passed. The last ending is about the **feeling**. The two can disagree, and the disagreement is worth noticing. All four words below pair unmet connection with `ua`, the pull to let go:
+A feeling word uses the scale twice. The sake word's ending, mid-word, is about the situation: whether the cost can be changed, is for good, or has passed. The last ending is about the feeling. The two can disagree, and the disagreement is worth noticing. All four words below pair unmet connection with `ua`, the pull to let go:
 
 | Ageben | Situation | Feeling | English |
 |--------|-----------|---------|---------|
@@ -122,7 +122,7 @@ The two sentences keep what happened to them apart from what you feel about it.
 
 ### How strong {#feeling-strength}
 
-Say how strong the feeling is with a [degree word](/very-and-slightly#degree-w) on `/w/` right before the feeling word, such as `wamezem` *slightly* or `wohalal` *overwhelmingly*. Before a `/w/` feeling it grades the feeling, not the stimulus. With no degree word, strength is unstated.
+English *a little upset* and *overwhelmed* say how strong a feeling is. In Ageben, put a [degree word](/very-and-slightly#degree-w) on `/w/` right before the feeling word, such as `wamezem` *slightly* or `wohalal` *overwhelmingly*. Before a `/w/` feeling it grades the feeling, not the stimulus. With no degree word, strength is unstated. You can then say how strong a feeling is apart from how long it lasts.
 
 > `zezuyol wohalal wuwathumael goyom.`
 >
@@ -146,7 +146,7 @@ Each part of a feeling word points at one thing you can do. Read the parts one a
 | sake ending on unmet | whether the cost can be changed or is for good | work on it, or make room for it |
 | urge | the pull, named before it is followed | a choice: follow it or not |
 | sake and urge together | whether the pull serves the need it names | `thawethumum` is *connection is missing, and I want to hide*: the pull works against the need |
-| last ending | whether the feeling will pass | **-r**: wait it out; **-l**: it needs attention of its own |
+| last ending | whether the feeling will pass | `-r`: wait it out; `-l`: it needs attention of its own |
 | sake ending against last ending | whether the feeling still matches the situation | a settled feeling over a cost that has passed is worth a second look |
 | [MAY](/how-you-feel#predicted-feeling) | whether the cost is predicted or real | `thomal` beside the feeling: go and find out |
 
@@ -166,7 +166,7 @@ Read these whole words part by part:
 
 ### Hopefully and other attitudes {#speaker-attitude}
 
-English *hopefully*, *luckily*, and *worryingly* say how **you**, the speaker, feel about the whole claim. In Ageben, put the content root for that feeling on `/th/` with **-m**. It is always the speaker's attitude, never the subject's. For the subject's manner (*Azozon walks hopefully*), use `/h/` (`huwuyom`).
+English *hopefully*, *luckily*, and *worryingly* say how *you*, the speaker, feel about the whole claim. In Ageben, put the content root for that feeling on `/th/` with `-m`. It is always the speaker's attitude, never the subject's, so it never says that the subject feels it. For the subject's manner (*Azozon walks hopefully*), use `/h/` (`huwuyom`).
 
 | Ageben | Use | English | Same root as |
 |--------|-----|---------|--------------|
@@ -180,9 +180,9 @@ English *hopefully*, *luckily*, and *worryingly* say how **you**, the speaker, f
 >
 > "Hopefully Azozon is walking."
 
-Hope is not a way of **knowing**, so it cannot hold up a forecast by itself. To say *hopefully … will*, add a real evidence channel as well. Hope says how you feel about the claim; the channel says what backs it.
+Hope is not a way of knowing, so it cannot hold up a forecast by itself. To say *hopefully … will*, add a real evidence channel as well. Hope says how you feel about the claim; the channel says what backs it.
 
-**Compare with:** *Azozon hopes Alazun walks* is Azozon's hope, not yours, so **`thuwuyom`** cannot say it. Someone else's hope is their want, which you give with how you know it.
+**Compare with:** *Azozon hopes Alazun walks* is Azozon's hope, not yours, so `thuwuyom` cannot say it. Someone else's hope is their want, which you give with how you know it.
 
 ### Practice {#intermediate-practice}
 

@@ -4,11 +4,11 @@ band: intermediate
 
 # Permission and consent {#permission-and-consent}
 
-English *may*, *must*, *may not*, and *they agreed* each say that someone has a say over an act. Ageben puts that in one **say word** on `/h/`.
+This page teaches one word on `/h/` for who has a say over an act, and what they say: allow, forbid, require, or leave it to someone. The first section builds that word from its pieces. The next two cover someone over the act (permission and requirement) and someone in it (consent), and the last says how far a say reaches.
 
 ### Say words: permission, requirement, consent {#say-words}
 
-English *may*, *must*, *may not*, and *they agreed* each say that someone has a say over an act. Ageben puts that in one **say word** on `/h/`. A grant, a ban, a demand, or a yes is said openly, so a say word needs no channel; like an [intention adverb](/can-and-cant#intention-adverbs), it covers the whole clause. Write **`h`**, **`w`**, a reach vowel, whose say it is, the answer, and an ending.
+English *may*, *must*, *may not*, and *they agreed* each say that someone has a say over an act. Ageben puts that in one **say word** on `/h/`. A grant, a ban, a demand, or a yes is said openly, so a say word needs no channel (no word for how you know it); like an [intention adverb](/can-and-cant#intention-adverbs), it covers the whole clause. Write `h`, `w`, a reach vowel, whose say it is, the answer, and an ending. You can then say who allows or demands an act, not only that it is allowed.
 
 > `zazozon vowurol hwuvam.`
 >
@@ -19,17 +19,17 @@ English *may*, *must*, *may not*, and *they agreed* each say that someone has a 
 | Piece | Says | In `hwuvam` |
 |-------|------|-------------|
 | `w` | a closed word with no root, as on a [tag](tag-pronouns.md#tag-pronouns) | `w` |
-| reach vowel | how far the say reaches: **`u`** this stretch of doing (more below) | `u` |
-| whose say | **`v`** someone over the act and outside it; **`z`** the doer; **`d`** the one it's done to; **`b`** the recipient | `v` |
-| answer | **`a`** yes, allow (as in `yaol`); **`u`** no, forbid (as in `yuol`); **`o`** require, ask for (**o** ≈ rank); **`e`** their call (**e** ≈ choice) | `a` |
-| ending | **-l** a rule, or a binding agreement (≈ law); **-m** a person said so (≈ mouth); **-r** nobody said: tolerated, assumed, or customary (≈ read the room) | **-m** |
+| reach vowel | how far the say reaches: `u` this stretch of doing (more below) | `u` |
+| whose say | `v` someone over the act and outside it; `z` the doer; `d` the one it's done to; `b` the recipient | `v` |
+| answer | `a` yes, allow (as in `yaol`); `u` no, forbid (as in `yuol`); `o` require, ask for (`o` ≈ rank); `e` their call (`e` ≈ choice) | `a` |
+| ending | `-l` a rule, or a binding agreement (≈ law); `-m` a person said so (≈ mouth); `-r` nobody said: tolerated, assumed, or customary (≈ read the room) | `-m` |
 
-If you do not know how it stands, use **-m**.
+If you do not know how it stands, use `-m`.
 
 ### Someone over the act (`v`) {#permission}
 <a id="requirement"></a>
 
-**`v`** is the say of someone outside the act: a rule, a person with the standing to decide, or custom. On **-m** that person is the speaker, unless a `bl-` word right after names someone else.
+English *may* and *must* often come from someone outside the act: a rule, a person with the standing to decide, or custom. Ageben gives that say with `v`. On `-m` that person is the speaker, unless a `bl-` word right after names someone else.
 
 > `zazozon vowurol hwuvam blalazun.`
 >
@@ -49,22 +49,22 @@ If you do not know how it stands, use **-m**.
 >
 > "Alazun is supposed to sleep."
 
-| Answer | **-l** the rules | **-m** a person | **-r** nobody said |
+| Answer | `-l` the rules | `-m` a person | `-r` nobody said |
 |--------|------------------|-----------------|--------------------|
-| **`a`** | `hwuval` *the rules allow* | `hwuvam` *you may* / *I'm letting you* | `hwuvar` *no one's stopping it* |
-| **`u`** | `hwuvul` *the rules forbid* | `hwuvum` *you may not* | `hwuvur` *people won't like it* |
-| **`o`** | `hwuvol` *the rules require* | `hwuvom` *you have to* | `hwuvor` *it's customary* / *is supposed to* |
-| **`e`** | `hwuvel` *the rules leave it optional* | `hwuvem` *it's up to you* | `hwuver` *nobody cares either way* |
+| `a` | `hwuval` *the rules allow* | `hwuvam` *you may* / *I'm letting you* | `hwuvar` *no one's stopping it* |
+| `u` | `hwuvul` *the rules forbid* | `hwuvum` *you may not* | `hwuvur` *people won't like it* |
+| `o` | `hwuvol` *the rules require* | `hwuvom` *you have to* | `hwuvor` *it's customary* / *is supposed to* |
+| `e` | `hwuvel` *the rules leave it optional* | `hwuvem` *it's up to you* | `hwuver` *nobody cares either way* |
 
-When the speaker is in the clause, the speaker's own say is their part, not **`v`**, so a bare **`v`** on **-m** has no reading there. So *I have to walk* says who requires it: the rules (`zuwen vowurol hwuvol.`), a person (`zuwen vowurol hwuvom blalazun.`), custom (`zuwen vowurol hwuvor.`), or you yourself (`zuwen vowurol hwuzom.` *I'm making myself walk*). Telling an outside demand from one you put on yourself is the point of the split.
+When the speaker is in the clause, the speaker's own say is their part, not `v`, so a bare `v` on `-m` has no reading there. So *I have to walk* says who requires it: the rules (`zuwen vowurol hwuvol.`), a person (`zuwen vowurol hwuvom blalazun.`), custom (`zuwen vowurol hwuvor.`), or you yourself (`zuwen vowurol hwuzom.` *I'm making myself walk*). Telling an outside demand from one you put on yourself is the point of the split.
 
-To **ask** for permission, put the clause under [ask](/questions#question): `yem zuwen vehohel hwuvam.` (*May I sit?*). The question asks the listener, so the speaker may be in it. Grant it with [**`yael.`**](/questions#polar-particle) (*go ahead*).
+To ask for permission, put the clause under [ask](/questions#question): `yem zuwen vehohel hwuvam.` (*May I sit?*). The question asks the listener, so the speaker may be in it. Grant it with [`yael.`](/questions#polar-particle) (*go ahead*).
 
-**Compare with:** [prescription](/ought-for-a-sake#sake-force) **`the`** says the act *ought* to serve a named sake, a reason you can check; a say word says only who allows or demands it. A [command](/speech-moves#speech-act-beginner) **`yol`** is the speaker telling the listener now; **`hwuvom`** reports a demand, which may be someone else's. [Ability](/can-and-cant#ability) says what someone is able to do; English *Can I sit?* asking leave is a say word under ask, not ability.
+**Compare with:** [prescription](/ought-for-a-sake#sake-force) `the` says the act *ought* to serve a named sake, a reason you can check; a say word says only who allows or demands it. A [command](/speech-moves#speech-act-beginner) `yol` is the speaker telling the listener now; `hwuvom` reports a demand, which may be someone else's. [Ability](/can-and-cant#ability) says what someone is able to do; English *Can I sit?* asking leave is a say word under ask, not ability.
 
 ### Someone in the act: consent (`z` / `d` / `b`) {#consent}
 
-Consent is the say of someone **in** the act: their body, their things, their time. Write the role letter that person has in the clause: **`d`** the one it's done to, **`b`** the recipient, **`z`** the doer. They are already in the clause, so the say word needs no `bl-` word.
+English *they agreed* reports **consent**: the say of someone *in* the act: their body, their things, their time. In Ageben, write the role letter that person has in the clause: `d` the one it's done to, `b` the recipient, `z` the doer. They are already in the clause, so the say word needs no `bl-` word. You can then report the yes of the person the act touches apart from any outside permission.
 
 > `zazozon vezuyol bahelan hwubam.`
 >
@@ -90,25 +90,25 @@ Consent is the say of someone **in** the act: their body, their things, their ti
 >
 > "Alazun lets themself sleep."
 
-The ending says how binding the yes is. **-l** is a binding agreement: they signed on in advance, and withdrawing has terms. **-m** is a yes they can take back at any time. **-r** is a yes nobody said, taken as given; it is allowed, but choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*.
+The ending says how binding the yes is. `-l` is a binding agreement: they signed on in advance, and withdrawing has terms. `-m` is a yes they can take back at any time. `-r` is a yes nobody said, taken as given; it is allowed, but choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*.
 
-| Answer | **`z`** the doer | **`d`** the one it's done to | **`b`** the recipient |
+| Answer | `z` the doer | `d` the one it's done to | `b` the recipient |
 |--------|------------------|------------------------------|-----------------------|
-| **`a`** | `hwuzam` *lets themself* | `hwudam` *they agreed* | `hwubam` *the recipient agreed* |
-| **`u`** | `hwuzum` *won't let themself* | `hwudum` *they refused* | `hwubum` *the recipient refused* |
-| **`o`** | `hwuzom` *makes themself* | `hwudom` *at their request* | `hwubom` *at the recipient's request* |
-| **`e`** | `hwuzem` *their own choice* | `hwudem` *it's their call* | `hwubem` *the recipient's call* |
+| `a` | `hwuzam` *lets themself* | `hwudam` *they agreed* | `hwubam` *the recipient agreed* |
+| `u` | `hwuzum` *won't let themself* | `hwudum` *they refused* | `hwubum` *the recipient refused* |
+| `o` | `hwuzom` *makes themself* | `hwudom` *at their request* | `hwubom` *at the recipient's request* |
+| `e` | `hwuzem` *their own choice* | `hwudem` *it's their call* | `hwubem` *the recipient's call* |
 
-| Answer | **-l** binding | **-r** assumed |
+| Answer | `-l` binding | `-r` assumed |
 |--------|----------------|----------------|
-| **`a`** | `hwudal` *they signed on*, `hwuzal` a vow | `hwudar` *they're probably OK with it* |
-| **`o`** | `hwudol` *they're owed it*, `hwuzol` *a rule they set themself* | `hwudor` *they'd want it*, `hwuzor` *feels they have to* |
-| **`e`** | `hwudel` *their call, by agreement* | `hwuzer` *presumably their own choice* |
+| `a` | `hwudal` *they signed on*, `hwuzal` a vow | `hwudar` *they're probably OK with it* |
+| `o` | `hwudol` *they're owed it*, `hwuzol` *a rule they set themself* | `hwudor` *they'd want it*, `hwuzor` *feels they have to* |
+| `e` | `hwudel` *their call, by agreement* | `hwuzer` *presumably their own choice* |
 
-- **`hwuzor`** is the unspoken *should*: *I feel I have to* when nobody asked. Beside `hwuvom blalazun` (someone asked), `hwuvol` (the rules), and `hwuzom` (pushing yourself), it shows where the pressure comes from.
-- **`hwuzol`** is a personal rule (*I don't drink on weekdays*). Naming a rigid rule as self-set makes it something to examine.
-- **`hwudor`** (*they'd want to know*) is a common excuse for acting on someone's behalf; **-r** marks it as an assumption, as `hwudar` does for consent.
-- **`e`** hands the choice to that party: neither allowed, forbidden, nor required, but up to them. `hwuzem` (*chose it freely*) differs from `hwuzam` (*let themself*), which suggests a reluctance overcome. *No answer yet* needs no vowel: ask it (`yem zazozon dalazun vayebel hwudam.`).
+- `hwuzor` is the unspoken *should*: *I feel I have to* when nobody asked. Beside `hwuvom blalazun` (someone asked), `hwuvol` (the rules), and `hwuzom` (pushing yourself), it shows where the pressure comes from.
+- `hwuzol` is a personal rule (*I don't drink on weekdays*). Naming a rigid rule as self-set makes it something to examine.
+- `hwudor` (*they'd want to know*) is a common excuse for acting on someone's behalf; `-r` marks it as an assumption, as `hwudar` does for consent.
+- `e` hands the choice to that party: neither allowed, forbidden, nor required, but up to them. `hwuzem` (*chose it freely*) differs from `hwuzam` (*let themself*), which suggests a reluctance overcome. *No answer yet* needs no vowel: ask it (`yem zazozon dalazun vayebel hwudam.`).
 
 > `zalazun vezuvel hwuzem.`
 >
@@ -116,21 +116,21 @@ The ending says how binding the yes is. **-l** is a binding agreement: they sign
 >
 > "Alazun sleeps, by their own choice."
 
-**Promise:** a vow (`hwuzal`) commits you to an act, and said to someone it is a promise to them. `zuwen vowurol hwuzal.`, said to someone, is *I promise (you) to walk*. A self-set rule (`hwuzol`) is a policy you hold toward yourself, not a promise. The weaker endings stay weaker on purpose: `hwuzam` is *I'll do it* (you can still back out), and `hwuzar` cannot pass for a promise.
+A vow (`hwuzal`) commits you to an act, and said to someone it is a **promise** to them. `zuwen vowurol hwuzal.`, said to someone, is *I promise (you) to walk*. A self-set rule (`hwuzol`) is a policy you hold toward yourself, not a promise. The weaker endings stay weaker on purpose: `hwuzam` is *I'll do it* (you can still back out), and `hwuzar` cannot pass for a promise.
 
 To check in, ask: `yem zuwen vezuyol bawan hwubam.` (*Are you still OK with me telling you?*).
 
-A say word takes no **-x**: a group's say comes from a group in the clause.
+A say word takes no `-x`: a group's say comes from a group in the clause.
 
 ### How far the say reaches {#say-reach}
 
-The reach vowel is [label reach](/label-seams#label-reach), the same vowels as after **`th`** on a label:
+The reach vowel is [label reach](/label-seams#label-reach), the same vowels as after `th` on a label:
 
-- **`u`:** this act. `hwudam` is a yes to this act, which is why consent is asked for each time.
-- **`o`:** standing. `hwodam` is standing consent (*they're generally fine with this*), `hwovam` standing permission (*you may, any time*), `hwovom` a standing duty, and `hwozom` a discipline. Standing is not binding: `hwodam` can still be taken back, and only **-l** binds.
-- **`e`:** toward one party, named in a `bl-` word. `zuwen vowurol hwezal blahelan.` is a vow toward Ahelan: *I promise Ahelan I'll walk*. On **`v`**, the `bl-` word is still who has the say, and **`e`** limits it to their own part: `hwuvam blalazun` is *Alazun lets Azozon walk*, and `hwevam blalazun` is *fine as far as Alazun is concerned*; others may still object. Bare `hwevam` is *fine by me*, without speaking for anyone else.
-- **`a`:** a type across scenes. `hwadam` is *they're the type who's fine with it*, and `hwavom` *their kind has to*. These are the inferences consent and fairness warn against; the form makes them visible instead of hiding them.
-- **Pairs** compose as on any label: `hwuovam` is *you may, but not in my official role*.
+- `u`: this act. `hwudam` is a yes to this act, which is why consent is asked for each time.
+- `o`: standing. `hwodam` is standing consent (*they're generally fine with this*), `hwovam` standing permission (*you may, any time*), `hwovom` a standing duty, and `hwozom` a discipline. Standing is not binding: `hwodam` can still be taken back, and only `-l` binds.
+- `e`: toward one party, named in a `bl-` word. `zuwen vowurol hwezal blahelan.` is a vow toward Ahelan: *I promise Ahelan I'll walk*. On `v`, the `bl-` word is still who has the say, and `e` limits it to their own part: `hwuvam blalazun` is *Alazun lets Azozon walk*, and `hwevam blalazun` is *fine as far as Alazun is concerned*; others may still object. Bare `hwevam` is *fine by me*, without speaking for anyone else.
+- `a`: a type across scenes. `hwadam` is *they're the type who's fine with it*, and `hwavom` *their kind has to*. These are the inferences consent and fairness warn against; the form makes them visible instead of hiding them.
+- Pairs compose as on any label: `hwuovam` is *you may, but not in my official role*.
 
 > `zuwen vowurol hwezal blahelan.`
 >
@@ -138,7 +138,7 @@ The reach vowel is [label reach](/label-seams#label-reach), the same vowels as a
 >
 > "I promise Ahelan I'll walk."
 
-Only **`v`** and pair reach **`e`** take a `bl-` word.
+Only `v` and pair reach `e` take a `bl-` word.
 
 ### Practice {#intermediate-practice}
 
