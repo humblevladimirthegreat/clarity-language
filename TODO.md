@@ -20,9 +20,8 @@ https://discord.gg/CAMGw2Akhc
 -speed reading view becomes outline mode?
 -consider conceptual metaphor of past is in front of us (because we can see it)
 Cheat sheet distinguish cue vs exact match
+-use fable to identify new ideas
 -English-helper recall check fails: checkpoint self-contained 60.4 → 59.8, staged 60 → 59.4. It already failed at the end of style-pass Phase 7 (`d9e87dfe`) and passed after Phase 4; find the cause or rebaseline
--terminology.md still bolds bare letters, endings, and forms (about 90); backticks per doc-style
-
 
 Finger code (experimental, docs/grammar/finger-code.md; remove the warning once tested):
 -piano on a real instrument, with a player controlling the timing: do the held coda and the one-beat word rest read at speed, is the hook mark easy to hear, do `n` (a sixth) and `e` + hook (a seventh) sound smooth
