@@ -4,14 +4,14 @@ band: beginner
 
 # Comparatives {#comparatives-page}
 
-English splits three nearby jobs on a quality like *challenging*. *More … than* and *the most* put people in **order** on that quality. *As … as* says they sit at the **same height**. *Both are challenging* only says **each has** the quality; it does not say who ranks higher or whether they match. Ageben writes the first two with a rank join from joins followed by the shared adjective, and the third with an ordinary *and*-list.
+English splits three nearby jobs on a quality like *challenging*. *More … than* and *the most* put people in order on that quality. *As … as* says they sit at the same height, that is, they have the quality to the same degree. *Both are challenging* only says each has the quality; it does not say who ranks higher or whether they match. Ageben writes the first two with a rank join (the join from the Joins page that puts items in order) followed by the shared adjective, and the third with an ordinary *and*-list.
 
 <a id="overview"></a>
 
 ### Comparatives (`o`) {#comparatives}
 <a id="comparative-shared-scale"></a>
 
-When English would say *Azozon is more challenging than Alazun*, you put two people in order on one quality. Write both names, then the **rank join** **`zol`** (vowel **`o`**), then the adjective they share (`/ɡ/`). The first name sits higher on that quality than the second. Both may still sit high; the join only says who ranks higher. (cue: **`o`** ≈ rank; the shared `/ɡ/` is the ladder)
+When English would say *Azozon is more challenging than Alazun*, you put two people in order on one quality. Write both names, then the rank join **`zol`** (vowel `o`), then the adjective they share (`/ɡ/`). The first name sits higher on that quality than the second. Both may still sit high; the join only says who ranks higher. (cue: `o` ≈ rank; the shared `/ɡ/` is the ladder)
 
 > `zazozon zalazun zol gamahum.`
 >
@@ -45,7 +45,7 @@ When English would say *the most challenging*, you are still ranking, but you na
 ### Degree (*much* / *slightly*)
 <a id="degree"></a>
 
-English *much more* / *slightly more* adds **how large the gap is**, without giving a number. Write that extra detail as `/w/` immediately before the same shared adjective.
+English *much more* / *slightly more* adds how large the gap is, without giving a number. Write that extra detail as `/w/` immediately before the same shared adjective, so the sentence says both who ranks higher and by about how much.
 
 > `zazozon zalazun zol wohalal gamahum.`
 >
@@ -58,7 +58,7 @@ English *much more* / *slightly more* adds **how large the gap is**, without giv
 <a id="equative"></a>
 <a id="as-as"></a>
 
-When English would say *as challenging as*, you are not picking a winner. You are saying two people sit at the **same height** on the quality. Write both names, then the tie **`zoel`** (rank-join vowels **`oe`**), then the shared adjective (`/ɡ/`). Closed **-l** (`zoel`) is an exact match. Open **-m** (`zoem`) is *about as … as*. (cue: **`oe`** ≈ rank then choice; they share one rank)
+When English would say *as challenging as*, you say two people have the quality to the same degree instead of picking a winner. Write both names, then the tie **`zoel`** (rank-join vowels `oe`), then the shared adjective (`/ɡ/`). The ending says how close the match is: closed `-l` (`zoel`) is exact, and open `-m` (`zoem`) is *about as … as*. (cue: `oe` ≈ rank then choice; they share one rank)
 
 > `zazozon zalazun zoel gamahum.`
 >
@@ -78,15 +78,15 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 >
 > "Azozon is about as bright as Alazun."
 
-**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazozon gamahum` *Azozon is challenging*. Use **`oe`** when two people share a height on the quality. *Walks like a duck* is resemblance ([*like*](clause.md#extra-nouns) `hewem`), not the same score on a named quality.
+**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazozon gamahum` *Azozon is challenging*. Use `oe` when two people share a height on the quality. *Walks like a duck* is resemblance ([*like*](clause.md#extra-nouns) `hewem`), not the same score on a named quality.
 
-**Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zazozon zalazun zal gamahum`): each has the quality. It does not rank them or say they match. Use **`oe`** only for *as … as*.
+**Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zazozon zalazun zal gamahum`): each has the quality. It does not rank them or say they match. Use `oe` only for *as … as*.
 
 <!-- cheat-sheet: comparing -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| Rank **`o`** (`zol`) | rank on a shared quality | *more … than* / *the …-est* | **`o`** ≈ rank |
-| Equality **`oe`** (`zoel` / `zoem`) | same height on the quality | *as … as* / *about as … as* | **`oe`** ≈ rank then choice (one shared rank) |
+| Rank `o` (`zol`) | rank on a shared quality | *more … than* / *the …-est* | `o` ≈ rank |
+| Equality `oe` (`zoel` / `zoem`) | same height on the quality | *as … as* / *about as … as* | `oe` ≈ rank then choice (one shared rank) |
 
 ### Practice {#beginner-practice}
 

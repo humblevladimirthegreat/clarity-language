@@ -4,17 +4,17 @@ band: beginner
 
 # Numbers {#numbers}
 
-Use a number word when English would say **how many** of something (*three cats*) or **which place** something has in a series (*the second book*). Write that whole count or rank as **one word**.
+Use a number word when English would say *how many* of something (*three cats*) or *which place* something has in a series (*the second book*). You write that whole count or rank as one word, and you can also say *more than one* without naming a count.
 
 
 ### Counts {#counts}
 
-To say **how many** of a thing there are, put a number word after the noun, in the same place as other adjectives (`/ɡ/`). Build the number word one syllable at a time:
+To say how many of a thing there are, put a number word after the noun, in the same place as other adjectives (`/ɡ/`). The word has one syllable per digit, so any count, however long, is a single word that describes the noun like any other adjective. Build it in this order:
 
-1. the role letter **`g`**;
-2. the count marker **`ra`**;
+1. the role letter `g`;
+2. the **count marker** **`ra`**;
 3. one syllable for each digit;
-4. the ending **-l**.
+4. the ending `-l`.
 
 Digits are spoken and written as these syllables:
 
@@ -24,14 +24,20 @@ Digits are spoken and written as these syllables:
 
 Two patterns build the table:
 
-- **Consonant:** 1–3 are the stops **b d g**, each further back in the mouth; 4–6 the breathy sounds **h z v**, each further forward; and 7–0 the four [word endings](word-endings.md) **r l n m**.
-- **Vowel:** counting assigns the next unused vowel in **a o e u** (first, second, third, fourth): `ba` `do` `ge` `hu`, then the climb starts again (`za` `vo` `re` `lu` `na` `mo`). [Vowel pitch](phonology.md#vowel-pitch) is how that count sounds (first is low, fourth is high), not the parent of the digits.
+- **Consonant:** 1–3 are the stops `b`, `d`, `g`, each further back in the mouth; 4–6 the breathy sounds `h`, `z`, `v`, each further forward; and 7–0 the four [word endings](word-endings.md) `r`, `l`, `n`, `m`.
+- **Vowel:** counting assigns the next unused vowel in `a`, `o`, `e`, `u` (first, second, third, fourth): `ba` `do` `ge` `hu`, then the climb starts again (`za` `vo` `re` `lu` `na` `mo`). [Vowel pitch](phonology.md#vowel-pitch) is how that count sounds (first is low, fourth is high); the digits are not built from pitch.
 
-Three cues help with the endings: a **7**'s stroke runs back to the left, and **-r** is the ending that points back; an **8** is a loop (*l* for *loop*); for **0** the lips close and nothing comes out (*mmm*).
+Three cues help with the endings:
+
+| Digit | Cue |
+|-------|-----|
+| 7 | The stroke runs back to the left, and `-r` is the ending that points back. |
+| 8 | The digit is a loop (*l* for *loop*). |
+| 0 | The lips close and nothing comes out (*mmm*). |
 
 Neighbouring letters in a group, the ones easiest to mishear for each other, always have different vowels. If you mishear one consonant, the syllable you get is not a digit, so you notice.
 
-So *three* is **g** + **ra** + **ge** + **l**: **`gragel`**.
+So *three* is `g` + `ra` + `ge` + `l`: **`gragel`**.
 
 > `zogozelx gragel.`
 > z-cat-x | g-three
@@ -43,7 +49,7 @@ So *three* is **g** + **ra** + **ge** + **l**: **`gragel`**.
 >
 > "Azozon sees three books."
 
-A number with more digits is still **one word**: one syllable per digit, left to right. *Twenty* is **g** + **ra** + **do** + **mo** + **l**: **`gradomol`**. Other words stress their first syllable ([rhythm and stress](/phonology#rhythm-and-stress)); a number word stresses its last digit instead, so `gradomol` takes its stress on *mo*.
+A number with more digits is still one word: one syllable per digit, left to right. *Twenty* is `g` + `ra` + `do` + `mo` + `l`: **`gradomol`**. Other words stress their first syllable ([rhythm and stress](/phonology#rhythm-and-stress)); a number word stresses its last digit instead, so `gradomol` takes its stress on *mo*.
 
 On its own, outside a sentence (a list, a reply), a number drops its role letter like any [citation](word-endings.md#citation-forms): **`ragel`** is *three*.
 
@@ -54,7 +60,7 @@ On its own, outside a sentence (a list, a reply), a number drops its role letter
 
 ### Ordinals {#ordinals}
 
-To say **which place** a thing has in a series (*the first*, *the second*, …), swap the count marker **`ra`** for the rank marker **`ro`**. **`grodol`** is *the second*.
+To say which place a thing has in a series (*the first*, *the second*, …), swap the count marker `ra` for the **rank marker** **`ro`**. The digits stay the same, so one changed vowel turns a count into a place. **`grodol`** is *the second*.
 
 > `zanal grodol.`
 > z-book | g-2nd
@@ -68,23 +74,23 @@ To say **which place** a thing has in a series (*the first*, *the second*, …),
 
 | Marker | Use | English | Cue |
 |--------|--------|---------|-----|
-| **`ra`** | count | *how many* | **`a`** ≈ add |
-| **`ro`** | rank | *which place* | **`o`** ≈ rank |
+| `ra` | count | *how many* | `a` ≈ add |
+| `ro` | rank | *which place* | `o` ≈ rank |
 
-The **`r`** right after the role letter tells you the word is a number: no other word puts a consonant there.
+The `r` right after the role letter tells you the word is a number: no other word puts a consonant there.
 
 ### More than one (`gral`) {#more-than-one}
 
-You can say the count is **more than one** without naming how many. Keep the count marker and leave the digits off: **`gral`**.
+To say the count is more than one without naming how many, keep the count marker and leave the digits off: **`gral`**. A listener then knows there is more than one, but not how many.
 
-This is a different tool from [**-x**](plurality.md) on the noun: **-x** says you mean a group (*cats* as a set), and **`gral`** says how much. Both may sit on the same noun (`zogozelx gral`).
+This is a different tool from [`-x`](plurality.md) on the noun: `-x` says you mean a group (*cats* as a set), and `gral` says how much. Both may sit on the same noun (`zogozelx gral`).
 
 > `zogozelx gral.`
 > z-cat-x | g-more-than-one
 >
 > "There is more than one cat."
 
-**Compare with:** English *some cats* (a set in this situation, no count) uses the noun plus [**-x**](plurality.md). Use **`gral`** when you mean the amount is more than one.
+**Compare with:** English *some cats* (a set in this situation, no count) uses the noun plus [`-x`](plurality.md). Use `gral` when you mean the amount is more than one.
 
 ### Practice {#beginner-practice}
 
