@@ -8,27 +8,9 @@
 
 **Design authority:** *none*. The pass changes teaching English only. It adds, removes, and changes no form, reading, gloss, example, or checkpoint.
 
-## Problem
-
-The pages under `docs/grammar/` have not been brought up to [doc-style.md](../meta/doc-style.md) as a whole. After Phase 5 the ratchet baseline holds 94 warnings: `bold-density` 80, `long-paragraph` 12, `beginner-lead` 1 (kept on `clause.md`), `voice` 1 (kept on `label-reach.md`: *our purposes* inside a Practice answer, which the pass may not edit). Beginner, Intermediate units I1 to I6, the recipe track, and Claritish have had their pass; Intermediate units I7 to I17, Advanced, cheat sheets, level reviews, and `terminology.md` have not.
-
-The tooling that keeps the style applied has landed: the warning ratchet, the `voice` rule (a ratcheted warning until X2), `npm run changed-sections`, `npm run wording-only`, the `style-editor` agent, and the style gate in both procedures.
-
-## Goals
-
-1. Every learner-facing page passes the checklist: warnings cleared or individually accepted, and the seven closing tests run on every teaching section.
-2. A page's warning count cannot rise without someone deciding it should. *(Done: the ratchet.)*
-3. Any later change that moves, peels, merges, or rewrites sections ends with a style review of exactly those sections, by a reader with a fresh context. *(Done: the style gate.)*
-
-## Non-goals
-
-- No change to Ageben forms, glosses, examples, Practice checkpoints, word banks, or generated cheat-sheet tables.
-- No moving or retitling of headings, and no change to heading ids, except in H1.
-- No new rules of style. Where the guide is silent about a kind of page, the gap is logged for the user, not filled by a worker.
-
 ## Design
 
-Each prose unit is one fresh `style-editor` subagent on one sidebar unit from `reading-order.ts`, in reading order. The agent file holds the rule digest, the checks, and the report format. Its prompt adds only the unit's pages, in reading order, the [glossed labels](#glossed-labels) list, and these cautions from earlier units:
+Each prose unit is one fresh `style-editor` subagent on one sidebar unit from `reading-order.ts`, in reading order. The agent file holds the rule digest, the checks, and the report format. Its brief file adds only the unit's pages, in reading order, the [glossed labels](#glossed-labels) list, and these cautions from earlier units:
 
 - A bulk unbold must not turn bold English words (**is**, **no**) into code spans; unbold only Ageben letters, endings, and forms.
 - A sentence that names a feature no earlier page teaches may be cut only when the page that owns the feature states it.
@@ -82,7 +64,7 @@ X1 and X2 share a phase because X2 works from X1's report. If X1 fails more than
 
 ### Glossed labels
 
-Labels that finished units have glossed, in reading order, each with the page that glosses it. The orchestrator pastes this list into each prose unit's prompt and adds each report's newly glossed labels after the unit's commit.
+Labels that finished units have glossed, in reading order, each with the page that glosses it. The orchestrator copies this list into each prose unit's brief and adds each report's newly glossed labels after the unit's commit.
 
 | Label | Glossed on |
 |-------|------------|
@@ -171,3 +153,23 @@ One commit per unit after its gate is green, by the orchestrator only, with the 
 ## Open decisions
 
 None.
+
+## Background
+
+### Problem
+
+The pages under `docs/grammar/` have not been brought up to [doc-style.md](../meta/doc-style.md) as a whole. After Phase 5 the ratchet baseline holds 94 warnings: `bold-density` 80, `long-paragraph` 12, `beginner-lead` 1 (kept on `clause.md`), `voice` 1 (kept on `label-reach.md`: *our purposes* inside a Practice answer, which the pass may not edit). Beginner, Intermediate units I1 to I6, the recipe track, and Claritish have had their pass; Intermediate units I7 to I17, Advanced, cheat sheets, level reviews, and `terminology.md` have not.
+
+The tooling that keeps the style applied has landed: the warning ratchet, the `voice` rule (a ratcheted warning until X2), `npm run changed-sections`, `npm run wording-only`, the `style-editor` agent, and the style gate in both procedures.
+
+### Goals
+
+1. Every learner-facing page passes the checklist: warnings cleared or individually accepted, and the seven closing tests run on every teaching section.
+2. A page's warning count cannot rise without someone deciding it should. *(Done: the ratchet.)*
+3. Any later change that moves, peels, merges, or rewrites sections ends with a style review of exactly those sections, by a reader with a fresh context. *(Done: the style gate.)*
+
+### Non-goals
+
+- No change to Ageben forms, glosses, examples, Practice checkpoints, word banks, or generated cheat-sheet tables.
+- No moving or retitling of headings, and no change to heading ids, except in H1.
+- No new rules of style. Where the guide is silent about a kind of page, the gap is logged for the user, not filled by a worker.

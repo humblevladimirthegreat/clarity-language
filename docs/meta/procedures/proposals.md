@@ -21,7 +21,7 @@ A proposal is a plan for a change that is too large or too undecided to make in 
 | **Depends on:** / **Order:** | Other proposals that must land first, as backtick filenames. |
 | **Design authority:** | *none* (moves, retitles, tooling), or exactly which forms and readings it changes. |
 
-**Body sections:** Problem, Goals, Non-goals, then the findings or the design, then the implementation plan, then **Open decisions**.
+**Body sections:** Problem, Goals, Non-goals, then the findings or the design, then the implementation plan, then **Open decisions**. From the first consolidation on, Problem, Goals and Non-goals move to the end under one `## Background` heading ([consolidate](#consolidate)).
 
 Every proposal states, in its plan, that at the end of each [phase](#phases), and if the user says to stop partway, the agent [consolidates the proposal](#consolidate) before the session ends.
 
@@ -102,13 +102,13 @@ When a phase runs over its budget and there is more than one unit left to do, th
 The agent files under `.claude/agents/` (`proposal-worker`, `checkpoint-writer`, `style-editor`) restate parts of this page so that subagents never read it: the [stop-and-alert](#stop-and-alert) findings, the stop line, reading slices, script files for scripted edits, quiet verification, and the report fields. When you change one of those rules here, make the same change in every agent file that restates it.
 
 1. **Short-lived subagents.** Give each subagent one or two items, and size a unit by the pages it reads, not by its item count: a unit that walks more than about eight pages, or a whole sidebar group, splits (for example by band). Start a fresh one when the next item reads different pages, or once a context passes about 25 turns or about 80k tokens. Split by shared context, not by file: two items that read the same pages may share a subagent; an item that needs new pages gets a new one.
-2. **The item goes in the prompt.** A subagent's first prompt carries everything it needs to start:
-   - the item's own finding text, pasted from the proposal
+2. **The item goes in a brief file.** The orchestrator writes each subagent's brief to its own file in the session's scratchpad directory (`tmp/briefs/` when the session has none), and the prompt only names it: *Read your brief at `<path>` and follow it.* Every prompt the orchestrator sends stays in its context for the rest of the phase, while the subagent reads the file once, at its cold start. Build each brief by a script from parts kept in files (the digest, a running list such as glossed labels), and never print a finished brief back into the orchestrator's context. The brief carries everything the subagent needs to start:
+   - the item's own finding text, copied from the proposal
    - the gate run or open decision that settles it, if any
-   - the proposal's rule digest (at most about 40 lines), pasted
+   - the proposal's rule digest (at most about 40 lines)
    - links to the full rule sections it may open if the digest does not settle a question
 
-   It does not tell the subagent to read the whole proposal. Each proposal that runs through subagents holds one reusable digest, which the orchestrator pastes into every prompt. When the digest says how to check forms, it names `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …` (one batched call, a gloss or an error per input), and keeps `--llm-prompt` for working out what a sentence means: that prompt runs to pages per call ([reading Ageben](read-ageben.md#parsing)). The digest always carries this standing line, because nothing else makes a running subagent stop:
+   It does not tell the subagent to read the whole proposal. Each proposal that runs through subagents holds one reusable digest, which the orchestrator copies into every brief. When the digest says how to check forms, it names `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …` (one batched call, a gloss or an error per input), and keeps `--llm-prompt` for working out what a sentence means: that prompt runs to pages per call ([reading Ageben](read-ageben.md#parsing)). The digest always carries this standing line, because nothing else makes a running subagent stop:
 
    > At about 25 tool calls, check what is left. If it is small, finish the item, even past 25 calls. If a significant amount is left (more than a few edits, or pages you have not read yet), stop at a clean point, leave the tree green, and report: done, left (as steps), files touched.
 
@@ -140,7 +140,7 @@ A proposal that runs through subagents also states, in its plan:
 
 - the units, with IDs, their order, their items, and for each the agent type (`proposal-worker` unless a more specific agent fits, [step 6](#running-with-subagents)), the Agent tool `model` value (`opus`, `sonnet`, `haiku`) and reasoning effort (one fresh subagent per unit; a unit is one or two items)
 - the files each unit may edit
-- the rule digest every subagent gets pasted, with its report format and the standing stop line from [step 2](#running-with-subagents)
+- the rule digest copied into every brief, with its report format and the standing stop line from [step 2](#running-with-subagents)
 - the gates: `npm run verify -- --allow-generate` against the phase's baseline between items, and the final gate (a clean `npm run build` once nothing is left on a **generate** row). A full `npm run verify` that passes against an empty baseline runs the build and the tests, so it is the final gate; don't run `npm run build` or `npm test` again after it.
 - the recall gate, for a phase that edits `say-*.md`, `english.md` or `src/english-helper/`: `npm run english-helper-recall -- --check` at the phase's end, with its result on the Status line. A drop is then owned by the phase that caused it ([English helper](english-helper.md#regression-net)).
 - the style gate, for a proposal that touches prose under `docs/grammar/`: its last unit is a style review of the `npm run changed-sections -- <rev>` list, where `<rev>` is the commit before the proposal's first, run by a fresh `style-editor` subagent (`model: opus`, `effort: high`) that made none of the changes. A move or rewrite changes what comes before a section, so a lead, a first-use gloss, or a preview can go stale ([what the build checks](../doc-style.md#what-the-build-checks)).
@@ -177,5 +177,6 @@ At the end of each [phase](#phases), and when the user says to stop partway, the
 - move each settled decision to its grammar page or meta note, or to the Status line with its date
 - write into the remaining items what they build on from finished work: new ids and page names, audit findings still to act on, changed digest lines; this is input for later items, not a history
 - keep the remaining plan, open decisions, and the point reached on the Status line
+- put Problem, Goals and Non-goals last, as H3s under one `## Background` heading after Open decisions, so the next session reads from the top to `## Background` in one range and opens the background only if it needs it (`npm run outline -- <proposal>` gives the line numbers)
 
 Commit the consolidated proposal as the phase's last commit when the run commits ([commits](#commits)); otherwise leave it in the tree.

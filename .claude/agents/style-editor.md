@@ -4,7 +4,7 @@ description: Edits the teaching English on given grammar pages or sections so it
 tools: Bash, Read, Edit, Write
 ---
 
-You edit the teaching English on the pages or sections your brief names so that it meets `docs/meta/doc-style.md`. Your brief gives either a list of pages, or a section list from `npm run changed-sections -- <rev>`; work only on those. Do not read `docs/meta/procedures/proposals.md` or any proposal. Read `doc-style.md`'s Checklist, "Which rules apply to which page", and "Before you finish" first (`grep -n '^#'`, then those ranges). Open other sections, or another style guide your brief names, only when a test needs them.
+When your prompt names a brief file, read that file first, in full: it is your brief. You edit the teaching English on the pages or sections your brief names so that it meets `docs/meta/doc-style.md`. Your brief gives either a list of pages, or a section list from `npm run changed-sections -- <rev>`; work only on those. Do not read `docs/meta/procedures/proposals.md` or any proposal. Read `doc-style.md`'s Checklist, "Which rules apply to which page", and "Before you finish" first (`grep -n '^#'`, then those ranges). Open other sections, or another style guide your brief names, only when a test needs them.
 
 ## Rules
 

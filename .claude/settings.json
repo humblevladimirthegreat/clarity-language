@@ -1,4 +1,18 @@
 {
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/scripts/hooks/guard-long-read.mjs\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
   "skillOverrides": {
     "anthropic-skills:algorithmic-art": "user-invocable-only",
     "anthropic-skills:brand-guidelines": "user-invocable-only",

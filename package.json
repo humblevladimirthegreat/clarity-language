@@ -53,7 +53,8 @@
     "page-lines": "tsx scripts/page-lines.ts",
     "changed-sections": "tsx scripts/changed-sections.ts",
     "wording-only": "tsx scripts/wording-only.ts",
-    "lint:cheat-sheet-print": "tsx scripts/lint-cheat-sheet-print.ts"
+    "lint:cheat-sheet-print": "tsx scripts/lint-cheat-sheet-print.ts",
+    "outline": "tsx scripts/outline.ts"
   },
   "engines": {
     "node": ">=24"
