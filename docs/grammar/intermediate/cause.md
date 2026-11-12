@@ -7,7 +7,7 @@ band: intermediate
 ### CAUSE {#cause}
 <a id="cause-mood"></a>
 
-English *that is what makes it happen* points at **how** a result comes about (the mechanism), not only at a condition that holds. Add the stance word **`thewom`** (CAUSE, root **`ewo`**) right before a hinge: the hinge names the condition, and CAUSE says that condition is how the result is produced. CAUSE can also take its own `/b/` word for the one who makes it happen (below). (cue: ⚙️ *machine*: how the mechanism engages)
+English *that is what makes it happen* points at how a result comes about (the mechanism), not only at a condition that holds. Add the stance word **`thewom`** (CAUSE, root **`ewo`**) right before a hinge: the hinge names the condition, and CAUSE says that condition is how the result is produced. CAUSE can also take its own `/b/` word for the one who makes it happen (below). (cue: ⚙️ *machine*: how the mechanism engages)
 
 As plain words, the same root is `zewol` *a machine* and `vewol` *to operate / engage*.
 
@@ -33,7 +33,7 @@ On `/w/` (`wewom`), right before an adjective, CAUSE applies only to that adject
 
 **Compare with:** *because* / *if* name the condition (`thahum` / `thohem`). CAUSE says that the link is the mechanism.
 
-English *habit* / *triggered by*, when a cue is how the act is produced, uses this same stack: **`thewom`** right before the hinge, and the cue in the hinge's `/b/`. Use **`thahum`** when you claim the cue as a fact, **`thohem`** when you do not. The verb stays the ordinary act.
+English *habit* / *triggered by*, when a trigger is how the act is produced, uses this same stack: `thewom` right before the hinge, and the trigger in the hinge's `/b/`. Use `thahum` when you claim the trigger as a fact, `thohem` when you do not. The verb stays the ordinary act.
 
 > `zazozon vowurol thewom thahum blerulal.`
 >
@@ -41,11 +41,11 @@ English *habit* / *triggered by*, when a cue is how the act is produced, uses th
 >
 > "Rain is what makes Azozon walk."
 
-**Compare with:** *always* (`hual`) says the act holds at every time, with no cue. *Only when it rains* (`herulal hal`) says when the walking counts, not that rain produces it.
+**Compare with:** *always* (`hual`) says the act holds at every time, with no trigger. *Only when it rains* (`herulal hal`) says when the walking counts, not that rain produces it.
 
 #### Make someone do it {#make}
 
-In English *Azozon makes Alazun speak*, Azozon makes it happen and Alazun does the speaking. Keep the one who does it (Alazun) as the subject of the verb. Put the one who makes it happen in a `bl-` word right after **`thewom`**, with no hinge.
+In English *Azozon makes Alazun speak*, Azozon makes it happen and Alazun does the speaking. Keep the one who does it (Alazun) as the subject of the verb. Put the one who makes it happen in a `bl-` word right after `thewom`, with no hinge.
 
 > `zalazun vezuyol thewom blazozon.`
 >
@@ -53,13 +53,13 @@ In English *Azozon makes Alazun speak*, Azozon makes it happen and Alazun does t
 >
 > "Azozon makes Alazun speak."
 
-When a hinge follows **`thewom`**, the `/b/` belongs to the hinge, as above (`thewom thahum blavulul` *because of fire, as mechanism*).
+When a hinge follows `thewom`, the `/b/` belongs to the hinge, as above (`thewom thahum blavulul` *because of fire, as mechanism*).
 
 **Compare with:** *Get someone to* (ask, persuade) is tell + a *to* [stand-in](stand-in-vowels.md#stand-in).
 
 | Ageben | English |
 |--------|---------|
-| **`thewom`** + `/b/` | *make* (causer in `/b/`) |
+| `thewom` + `/b/` | *make* (causer in `/b/`) |
 
 ### Practice {#intermediate-practice}
 

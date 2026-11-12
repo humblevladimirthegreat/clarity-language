@@ -4,12 +4,12 @@ band: intermediate
 
 # Doing it for a sake {#doing-it-for-a-sake}
 
-English *for the sake of …* says what an act is for. Ageben says it with one sake word: the motive and its time horizon, the ending table it takes, where it attaches, and whose stake it is.
+English *for the sake of …* says what an act is for. Ageben says it with one sake word, and this page fills in the rest of how sake words work. The first section adds the motive (*doing it for a sake*) and its time horizon, and the second shows which ending table each stance vowel takes. The third lists every place a sake word can attach, and the last shows how to name whose stake it is.
 
 ### Motive (`tho`): time horizon
 <a id="sake-preference"></a>
 
-English *doing this for …* and *for the sake of …* name a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the sake root, mid-word **`th`**, **`o`**, then an ending. That ending is the **time horizon**, on the same settled-to-passing scale as [met](/sakes#time-horizon-endings-on-met): whether the act serves the sake over time or right away. If you do not know, use **-m**. To say this is the usual reason, add **`hual`** after the motive word (**`…thom`** plus **`hual`**).
+English *doing this for …* and *for the sake of …* name a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the sake root, mid-word `th`, `o`, then an ending. That ending is the time horizon, on the same settled-to-passing scale as [met](/sakes#time-horizon-endings-on-met): whether the act serves the sake over time or right away. If you do not know, use `-m`. To say this is the usual reason, add `hual` after the motive word (`…thom` plus `hual`).
 
 > `zuwen vezuyol thawethom.`
 >
@@ -17,63 +17,64 @@ English *doing this for …* and *for the sake of …* name a **motive**: why th
 >
 > "I talk to feel connected."
 
-The reason is yours. On someone else's act, a motive word still names what the act serves **for you**: `zazozon vezuyol thawethom` is *Azozon talks, and to me it is about feeling connected*. It does not say why Azozon talks; their reasons are in their mind, and Ageben has no way to say a reason belongs to whoever is acting.
+The reason is yours. On someone else's act, a motive word still names what the act serves for you: `zazozon vezuyol thawethom` is *Azozon talks, and to me it is about feeling connected*. It does not say why Azozon talks; their reasons are in their mind, and Ageben has no way to say a reason belongs to whoever is acting.
 
-**Not the same job as:** prescription **`the`**, which says the act *ought* to serve this sake. **`tho`** describes why the act is happening: *doing it for this sake*.
+**Not the same job as:** prescription `the`, which says the act *ought* to serve this sake. `tho` describes why the act is happening: *doing it for this sake*.
 
-On `/ɡ/`, the same stance gives **your** noun’s purpose (*my gift for relatedness*).
+On `/ɡ/`, the same stance gives your noun’s purpose (*my gift for relatedness*).
 
-**For other English *for*, use:**
+Other jobs of English *for* use other forms:
 
-- an **event** you aim at (*I walk so that Alazun sits*): [so that](/dependents#so-that) (**`thovam`**), not a sake; like motive, the aim is yours
-- the other side of a swap (*a book for a hammer*): [exchange](/relations#exchange) (`heham`)
-- acting for someone (*tells on behalf of Alazun*): [proxy](/relations#proxy) (`hanem`)
-
-A reason held **to keep a cost off** is a *so that … not* dependent ([so that](/dependents#so-that), **`thovam blurl`**), as with prescription.
+| English *for* | Example | Use |
+|---------------|---------|-----|
+| an event you aim at | *I walk so that Alazun sits* | [so that](/dependents#so-that) (`thovam`), not a sake; like motive, the aim is yours |
+| the other side of a swap | *a book for a hammer* | [exchange](/relations#exchange) (`heham`) |
+| acting for someone | *tells on behalf of Alazun* | [proxy](/relations#proxy) (`hanem`) |
+| a reason held to keep a cost off | | a *so that … not* dependent ([so that](/dependents#so-that), `thovam blurl`), as with prescription |
 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…thol` | does this for the sake over time | *lasting* | **-l** ≈ lasting |
-| `…thom` | does this for the sake; time horizon unstated (soft default if unknown) | *for* | **-m** ≈ open |
-| `…thor` | does this for the sake right away | *immediate* | **-r** ≈ right now |
+| `…thol` | does this for the sake over time | *lasting* | `-l` ≈ lasting |
+| `…thom` | does this for the sake; time horizon unstated (soft default if unknown) | *for* | `-m` ≈ open |
+| `…thor` | does this for the sake right away | *immediate* | `-r` ≈ right now |
 
-Neither end is better; a good day needs both, and doing something for a payoff right now is often exactly what is needed. When the **situation** is what pulls the reason, say so with the [because hinge](/causation) and the situation as `/b/`.
+Neither end is better; a good day needs both, and doing something for a payoff right now is often exactly what is needed. When the situation is what prompts the reason, say so with the [because hinge](/causation) and the situation as `/b/`.
 
 ### Which ending table?
 
-Beginner already used *serves* and *detracts from*. Intermediate adds *ought this act for* and *doing for*. Pick the ending table that matches the stance vowel. The vowel says how much of the sake is in.
+Each stance vowel takes its own ending table: *serves* and *detracts from* from Beginner, and *ought this act for* and *doing for* from Intermediate. Pick the table that matches the vowel; the vowel says how much of the sake is in.
 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`tha`** | [time horizon](/sakes#time-horizon-endings-on-met) endings | *serves* / *met* | **a** ≈ the payoff is in |
-| **`the`** | [invited / unasked / tryout](/ought-for-a-sake#sake-force) endings | *ought this act for this sake* | **e** ≈ only the advice |
-| **`tho`** | [time horizon](#sake-preference) endings | *doing for this sake* | **o** ≈ doing-for |
-| **`thu`** | [changeability](/sakes#sake-changeability) endings | *detracts from* / *unmet* | **u** ≈ none of the sake |
+| `tha` | [time horizon](/sakes#time-horizon-endings-on-met) endings | *serves* / *met* | `a` ≈ the payoff is in |
+| `the` | [invited / unasked / tryout](/ought-for-a-sake#sake-force) endings | *ought this act for this sake* | `e` ≈ only the advice |
+| `tho` | [time horizon](#sake-preference) endings | *doing for this sake* | `o` ≈ doing-for |
+| `thu` | [changeability](/sakes#sake-changeability) endings | *detracts from* / *unmet* | `u` ≈ none of the sake |
 
 ### Attachment sites
 
-Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met and unmet. The rest of the map:
+Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met and unmet. This table lists every place a sake word can attach:
 
 | Ageben | Use | English |
 |--------|-----|---------|
-| `g…tha…` after a noun | praise: **your** noun serves the sake | *my gift (serves relatedness)* (`gawetha…`) |
-| `g…thu…` after a noun | criticism: **your** noun detracts from the sake | *my book (detracts from competence)* (`guwathu…`) |
-| `g…tho…` after a noun | **your** noun’s purpose is this sake | *my gift for relatedness* (`gawetho…`) |
-| `/w/` sake + `goyom` | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`wunathu… goyom`) |
+| `g…tha…` after a noun | praise: your noun serves the sake | *my gift (serves relatedness)* (`gawetha…`) |
+| `g…thu…` after a noun | criticism: your noun detracts from the sake | *my book (detracts from competence)* (`guwathu…`) |
+| `g…tho…` after a noun | your noun’s purpose is this sake | *my gift for relatedness* (`gawetho…`) |
+| `/w/` sake + `goyom` | the same stances on a noun that is not yours | *the gathering (detracts from autonomy)* (`wunathu… goyom`) |
 | `/w/` sake + another adjective | the stance on that one property | *pleasantly hot* (`wodetham gohamul`) |
-| `gl-` + sake word | the same adjective before the **belonging** | `glawethal zewal` |
+| `gl-` + sake word | the same adjective before the belonging | `glawethal zewal` |
 | `th…tha…` on the clause | the event serves the sake | *tells: competence is met* (`thuwatha…`) |
 | `th…the…` on the clause | prescription: the act ought to serve the sake | *ought … for this sake* (`thawethe…`); ending = [invited / unasked / tryout](/ought-for-a-sake#sake-force) |
 | `th…tho…` on the clause | motive | *I talk (to feel connected)* (`thawetho…`) |
 | `/w/` before a sake `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
 
-Prescription **`the`** goes on `/th/` only: it is about an act, and a noun is not an act. For what a noun is **for**, use **`tho`**. On **`the`**, use **-l** for an invitation, **-m** for unasked advice, and **-r** for a tryout. On **`thu`** and **`tho`**, prefer **-m** when you cannot tell which ending fits.
+Prescription `the` goes on `/th/` only: it is about an act, and a noun is not an act. For what a noun is *for*, use `tho`. On `the`, use `-l` for an invitation, `-m` for unasked advice, and `-r` for a tryout. On `thu` and `tho`, prefer `-m` when you cannot tell which ending fits.
 
 For several sakes, write several `/ɡ/` or `/th/` words (`guwathal gawethal`), one sake each. The noun or verb the sake word describes keeps its own ending, which says whether it is concrete or abstract.
 
-A `/w/` word before a sake word on `/ɡ/` grades that adjective. A `/w/` sake word immediately before **`goyom`** is the sake itself.
+A `/w/` word before a sake word on `/ɡ/` grades that adjective. A `/w/` sake word immediately before `goyom` is the sake itself.
 
 > `zuwen vezuyol thuwathal thawethom.`
 >
@@ -83,7 +84,7 @@ A `/w/` word before a sake word on `/ɡ/` grades that adjective. A `/w/` sake wo
 
 ### Whose stake {#whose-stake}
 
-A sake word with no `/b/` is about **your** sake. To say it is someone else's, put that person in a `bl-` word right after the sake word. This works on every stance and every placement: met, unmet and motive on a noun, and met, unmet, prescription and motive on the clause.
+English *for Alazun's sake* names whose sake an act serves. A sake word with no `/b/` is about your sake; to say it is someone else's, put that person in a `bl-` word right after the sake word. This works on every stance and every placement: met, unmet and motive on a noun, and met, unmet, prescription and motive on the clause.
 
 This holds on someone else's act too. `zazozon vezuyol thawetham` is *Azozon talks, and that helps me feel connected*: what the act serves is your stake, as you see it. A `/b/` names whose stake the act serves, not whose reason it is.
 
@@ -111,7 +112,7 @@ This holds on someone else's act too. `zazozon vezuyol thawetham` is *Azozon tal
 >
 > "The gathering does lasting harm to Alazun's relatedness."
 
-The `/b/` names whose **stake** it is, not who **owns** the noun. On `/ɡ/` the noun is still yours: `zewal gawethal blalazun` is *my gift, good for Alazun*. Someone else's thing is `gegunum` plus `/b/`, or **`goyom`**.
+The `/b/` names whose stake it is, not who owns the noun. On `/ɡ/` the noun is still yours: `zewal gawethal blalazun` is *my gift, good for Alazun*. Someone else's thing is `gegunum` plus `/b/`, or `goyom`.
 
 **Compare with:** the *for* hook (`ol balazun`) names who the act is for without naming which sake.
 

@@ -9,13 +9,13 @@ band: intermediate
 <a id="iff"></a>
 <a id="hinges"></a>
 
-Beginner's *if* and *only if* do not claim the condition is true. The table completes the set. Pick the hinge by **which way the link runs** (the condition is enough, the outcome needs it, or both) and by whether you **claim** the condition is a fact. Hinges take **-m**, on `/th/` after a verb and on `/ɡ/` after a noun. As plain words the roots take ordinary endings (`zahul` *a wall*; `zehom` *reciprocity*).
+English *if*, *only if*, *if and only if*, and *because* each tie an outcome to a condition. Beginner gave you a hinge for each; the table sets them side by side and adds *only because*. Pick the hinge by which way the link runs (the condition is enough, the outcome needs it, or both) and by whether you claim the condition is a fact, so the listener hears both from the one word. Hinges take `-m`, on `/th/` after a verb and on `/ɡ/` after a noun. As plain words the roots take ordinary endings (`zahul` *a wall*; `zehom` *reciprocity*).
 
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thohem` / `gohem`** | enough; condition not asserted | *if* | `ohel` *door* | 🚪: walk through only if it opens |
+| `thohem` / `gohem` | enough; condition not asserted | *if* | `ohel` *door* | 🚪: walk through only if it opens |
 | **`thahum` / `gahum`** | enough; condition asserted as the reason | *because* | `ahul` *wall* | 🧱: the cause is what the result sits on |
-| **`thebem` / `gebem`** | needed; condition not asserted | *only if* / *needs* | `ebel` *paper-roll* | 🧻: without it the situation does not run |
+| `thebem` / `gebem` | needed; condition not asserted | *only if* / *needs* | `ebel` *paper-roll* | 🧻: without it the situation does not run |
 | **`thebem thahum` / `gebem gahum`** | needed; condition asserted | *only because* / *depends on* | | 🧻 then 🧱: needed, and named as a fact |
 | **`thehom` / `gehom`** | both ways; condition not asserted | *if and only if* | `ehol` *east-west* | ↔️: each side only with the other |
 
@@ -39,7 +39,7 @@ Several conditions can sit inside `/b/` as a [join](/joins) (`thohem blugalal bl
 >
 > "Azozon walks if and only if Alazun is asleep."
 
-*Only because* stacks two hinges: **`thebem`** (the outcome needs it), then **`thahum`** with the condition (and it is a fact).
+*Only because* stacks two hinges: `thebem` (the outcome needs it), then `thahum` with the condition (and it is a fact).
 
 > `zazozon vowurol thebem thahum blerulal.`
 >
@@ -47,9 +47,9 @@ Several conditions can sit inside `/b/` as a [join](/joins) (`thohem blugalal bl
 >
 > "Azozon walks only because of the rain."
 
-A noun after a because hinge names an **act or a thing**, not a person. For *because of Alazun*, say what Alazun did as a sentence after **`blarl`**. A name in that `/b/` slot is a named event or place (a storm, a city), never the person.
+A noun after a because hinge names an act or a thing, not a person. For *because of Alazun*, say what Alazun did as a sentence after `blarl`. A name after the hinge is a named event or place (a storm, a city), never the person.
 
-English *unless* means *if … not*. Keep **`thohem`**, but use the stand-in **`blurl`** instead of **`blarl`** ([stand-in vowels](stand-in-vowels.md#stand-in)): the outcome holds unless the next sentence is true.
+English *unless* means *if … not*. Keep `thohem`, but use the stand-in `blurl` instead of `blarl` ([stand-in vowels](stand-in-vowels.md#stand-in)): the outcome holds unless the next sentence is true.
 
 > `zazozon vowurol thohem blurl zalazun vezuvel.`
 >
@@ -57,7 +57,7 @@ English *unless* means *if … not*. Keep **`thohem`**, but use the stand-in **`
 >
 > "Azozon walks unless Alazun is asleep."
 
-For *even if*, put the *although* hinge **`thezem`** right before **`thohem`**. You still do not claim the condition is true, and the outcome holds either way.
+For *even if*, put the *although* hinge `thezem` right before `thohem`. You still do not claim the condition is true, and the outcome holds either way.
 
 > `zazozon vowurol thezem thohem blarl zalazun vezuvel.`
 >
