@@ -65,8 +65,8 @@ To say *sometimes*, *anytime*, or *some other time* without naming the occasion 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `har` | unspecified member of the time inventory | *sometimes* / *at some time* | `-r` names a member |
-| `her` | unspecified member of a one-choice time menu | *anytime* (any one particular time, whichever you pick) | **e** ≈ choice |
-| `hur` | unspecified leftover occasion | *some other time* | **u** ≈ undo |
+| `her` | unspecified member of a one-choice time menu | *anytime* (any one particular time, whichever you pick) | `e` ≈ choice |
+| `hur` | unspecified leftover occasion | *some other time* | `u` ≈ undo |
 
 > `zalazun veruvol har.`
 >
@@ -170,7 +170,7 @@ To say *when it rains, among other times*, end the list with open **`ham`** inst
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | `hal` / `ham` | listed times; empty list is *never* | *only when…* / *when…, among other occasions* · bare *never* / *never, as far as I know* | `a` ≈ add |
-| `hual` / `huam` | every time minus listed exceptions | *always except when…* · bare *always* / *usually* (*always, as far as I know*) | **u** ≈ undo then `a` ≈ add |
+| `hual` / `huam` | every time minus listed exceptions | *always except when…* · bare *always* / *usually* (*always, as far as I know*) | `u` ≈ undo then `a` ≈ add |
 
 > `zazozon vezuvel herulal hanurul ham.`
 >

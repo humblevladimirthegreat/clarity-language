@@ -44,7 +44,7 @@ The lead rules were written for a section that teaches a grammar feature. Other 
 | A section that teaches a new English job | Everything on this page |
 | A later-stage section that only finishes a series already taught | A one-sentence pointer and a table are enough ([later-stage shape](grammar-docs.md#later-stage-shape)). Skip the slogan test. Gloss any new label |
 | A pronunciation section | There is no English job. The lead says what to do with the mouth or voice, then what a listener gains from it. Everything else applies |
-| The lead of a whole page | It previews each section in at most one sentence ([say it once](#say-it-once)) |
+| The lead of a whole page | A page with two or more teaching sections (not counting Practice and See also) needs one, between the H1 and the first H3. It previews each section in at most one sentence ([say it once](#say-it-once)). A page with one teaching section needs no separate page lead: its one lead sits under the H1 or under that H3, not both |
 | Instructions for a control or tool on the page | [Interface instructions](#interface-instructions) |
 | A [Claritish](claritish-style.md) lesson | `## The gap` replaces the lead: it names the English habit and its cost, and Ageben enters only in its last sentence ([the gap](claritish-style.md#the-gap)). Skip the lead rules and the slogan test. Everything else applies |
 | Tables | May stay telegraphic. Running prose may not |

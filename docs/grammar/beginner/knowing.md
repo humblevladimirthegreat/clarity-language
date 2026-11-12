@@ -79,8 +79,8 @@ These two channels are enough for ordinary talk about a scene in your senses.
 
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thugem`** | LIVE: firsthand, sensed now | *live* / *from the scene* | `ugel` *attest* | 👁️‍🗨️: sensing-and-saying while it is in view, in earshot, or on your skin |
-| **`thevum`** | MEMORY: firsthand, remembered | *from memory* | `evul` *fishing* | 🎣: you pull something back |
+| **`thugem`** | LIVE: firsthand, sensed now, by any sense | *live* / *from the scene* | `ugel` *attest* | 👁️‍🗨️: sensing-and-saying while it is in view, in earshot, or on your skin |
+| **`thevum`** | MEMORY: firsthand, remembered | *I remember* / *from memory* | `evul` *fishing* | 🎣: you pull something back |
 
 LIVE covers every sense, not only sight: a sound in earshot, cold on your skin, an ache in your knee. MEMORY is the same senses, remembered.
 
@@ -101,11 +101,6 @@ A screen or a recording extends your senses. While you watch footage, it is LIVE
 > z-Azozon | [th-MEMORY | bl-camera] | v-walk
 >
 > "Azozon walked, as I remember from the camera."
-
-| Ageben | Use | English | Same root as | Cue |
-|--------|-----|---------|--------------|-----|
-| **`thugem`** | concurrent observation, by any sense | *live* / *from the scene* | `ugel` *attest* | 👁️‍🗨️: sensing-and-saying while it is in view |
-| **`thevum`** | reconstructive / recalled observation | *I remember* / *from memory* | `evul` *fishing* | 🎣: retrieval from the water |
 
 ### Practice {#beginner-practice}
 

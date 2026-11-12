@@ -9,8 +9,6 @@ band: beginner
 
 English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Ageben the meaning goes inside the verb or adjective itself: after the root, write **`x`**, then a vowel for *can* or for which kind of *can't*, then the same [ending](word-endings.md) the word would have without it. That vowel, the **ability vowel**, says whether they can, or whether they can't just for now, not yet, or never, which English *can't* leaves unsaid.
 
-You are not combining options: a dip (can't just for now) is still can-do, not a shorter list.
-
 #### Can (`xa`)
 <a id="can"></a>
 
@@ -75,9 +73,9 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`xa`** | they can (this verb or quality) | *can* | `a` ≈ full |
-| **`xo`** | they can't, just for now (they usually can) | *can't right now* | **o** ≈ a dip |
-| **`xe`** | they can't yet (use this if you are not sure how lasting it is) | *can't yet* | **e** ≈ not yet |
-| **`xu`** | they can never / it is impossible | *can never* / *impossible* | **u** ≈ never |
+| **`xo`** | they can't, just for now (they usually can) | *can't right now* | `o` ≈ a dip |
+| **`xe`** | they can't yet (use this if you are not sure how lasting it is) | *can't yet* | `e` ≈ not yet |
+| **`xu`** | they can never / it is impossible | *can never* / *impossible* | `u` ≈ never |
 
 > `zahelan vozuyexel.`
 >

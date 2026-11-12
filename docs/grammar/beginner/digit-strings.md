@@ -26,7 +26,7 @@ Pick the ending by what the code does:
 
 A label keeps its digits exactly as written.
 
-To place an event by a code (*on channel 7*), put the code in a `bl-` word after a relation word (`/h/` *on* + `bl_7`), or put it on a noun as `/ɡ/` (*channel* `g_7`).
+To place an event by a code (*on channel 7*), put the code in a `bl-` word after a relation word (`/h/` *on* + `bl_7`). To keep the noun the code labels, put the code on that noun as `/ɡ/` (*channel* `g_7`).
 
 #### Fields {#code-fields}
 
@@ -68,8 +68,8 @@ Clock and date together:
 
 | Job | How |
 |-----|-----|
-| **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default 24h. Fields left to right; commas are writing only: hour, minute, optional seconds (`h_15,30`, `h_15,30,00`). |
-| **Calendar date** | Digit-string `_` with `oe` (spoken **`roe`**, written `h_#…`). Fields: day, month, optional year (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as one digit group (`2026` is one group). A date may stop after the day (`h_#12`, *on the 12th*); context gives the month. You may also name the relation with a *date* word plus `/b/`, but you do not need to. |
+| **Clock / schedule** | Digit-string `re` as bare `/h/`. Default 24h. Fields left to right: hour, minute, optional seconds (`h_15,30`, `h_15,30,00`). |
+| **Calendar date** | Digit-string `_` with `oe` (spoken `hroe`, written `h_#…`). Fields: day, month, optional year (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as one digit group (`2026` is one group). A date may stop after the day (`h_#12`, *on the 12th*); context gives the month. You may also name the relation with a *date* word plus `/b/`, but you do not need to. |
 | **Day of the week** | Ordinal on **`olero`** *weekday*, counting from Monday: `zolerom grobal` is *Monday*, `zolerom grorel` is *Sunday* (the seventh). |
 | **Month or year alone** | A month is an ordinal on **`amalo`** *month*, counting from January, the same way as weekdays: *March* is the third month (`zamalom grogel`). A year is a label on **`ovuva`** *year* (`zovuvam g_1962`). To place an event in one, put that noun in `/b/` after **`herom`** *during*. |
 | **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, or a signed offset (*three hours ago* / *in three hours*). There is no past or future ending. An amount of time (*for 3 days*) is a relation word plus a measure phrase. |

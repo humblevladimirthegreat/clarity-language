@@ -1,6 +1,6 @@
 # Style pass
 
-**Status:** partially implemented. Decided 2026-11-11: a rising warning count fails the build on every page (the ratchet); recipe pages, cheat sheets, and level reviews get which-page rows; headings that need a retitle are logged and retitled together in H1; the user reviews each phase before the next starts; forms take bold only where introduced. **Phase 1 done 2026-11-11** (T1, T2, T3, C1). **Phase 2 done 2026-11-12** (B2 to B5). **Phase 3 done 2026-11-12** (B6 to B9; Beginner is finished). `purpose.md` and `introduction.md` were already rewritten to [orientation-style.md](../meta/orientation-style.md), so the pass skips them. Next: the user reviews the Phase 3 diffs (commits `54ecb9aa` to `17a2a758`), the new [sections missing a fact](#sections-missing-a-fact) and [fixes outside the pass](#fixes-outside-the-pass), then Phase 4.
+**Status:** partially implemented. Decided 2026-11-11: a rising warning count fails the build on every page (the ratchet); recipe pages, cheat sheets, and level reviews get which-page rows; headings that need a retitle are logged and retitled together in H1; the user reviews each phase before the next starts; forms take bold only where introduced. **Phase 1 done 2026-11-11** (T1, T2, T3, C1). **Phase 2 done 2026-11-12** (B2 to B5). **Phase 3 done 2026-11-12** (B6 to B9; Beginner is finished). `purpose.md` and `introduction.md` were already rewritten to [orientation-style.md](../meta/orientation-style.md), so the pass skips them. Decided 2026-11-12: a page with two or more teaching sections needs a page lead (rule in [doc-style.md](../meta/doc-style.md#which-page)); 15 Intermediate and 9 Advanced pages lack one and get it in their units. Next: the user reviews the Phase 3 diffs (commits `54ecb9aa` to `17a2a758`), then Phase 4.
 
 **Related:** [doc-style.md](../meta/doc-style.md), [claritish-style.md](../meta/claritish-style.md), [orientation-style.md](../meta/orientation-style.md), [grammar-docs.md](../meta/grammar-docs.md), [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts), [prose-style.ts](../../src/lint/prose-style.ts), [prose-style-baseline.json](../../src/lint/prose-style-baseline.json), [sections.ts](../../src/lint/sections.ts), [style-editor.md](../../.claude/agents/style-editor.md)
 
@@ -35,6 +35,7 @@ Each prose unit is one fresh `style-editor` subagent on one sidebar unit from `r
 - Cue-column letters in `<!-- cheat-sheet: … -->` tables go in backticks, unless the cheat-sheet lint rejects a letter the cheat sheet lacks; then the letter stays bold and is reported. Each marker sits above its table, never between the header and separator rows.
 - Examples stay where they stand. Add or drop a code span or link only when you must, since the wording-only check compares them. A unit of more than about 1,500 lines may stop at the turn check. A fresh `style-editor` then finishes the pages it names as left, under the same unit id.
 - Forms take bold only where introduced.
+- A page with two or more teaching sections (not counting Practice and See also) and no lead between the H1 and the first H3 gets one that previews each section in at most one sentence, from what the sections already say ([which page](../meta/doc-style.md#which-page), *the lead of a whole page*). A page with one teaching section keeps its one lead where it is.
 - The Ageben lint rejects a letter group in one code span (`b d g`); write one span per letter (`b`, `d`, `g`).
 - A script that splits a page on `### Practice` must match the whole heading line; `#### Practiced …` headings exist.
 
@@ -52,6 +53,7 @@ Each phase ends with the phase gate, the last unit's commit, consolidation, the 
 
 | Unit | Pages | Added to the prompt |
 |------|-------|--------------------|
+| B10 | Page leads for the four Beginner pages that lack one: `digit-strings.md`, `social-ties.md`, `can-and-cant.md`, `fill-ask-jobs.md` | The page-lead caution only; the pages have had their pass |
 | O2 | `english.md` and the five `say-*.md` recipes | The recipe row of the which-page table |
 | O3, O4 | The Claritish track in two halves | Read [claritish-style.md](../meta/claritish-style.md) |
 
@@ -120,26 +122,13 @@ Headings that prose units reported under rule 7 of the digest, each with its pag
 
 Sections that prose units reported under rule 6: the section needs a consequence or a *when* that no page states. Each needs a user decision or an owner-page edit; the pass does not fill them.
 
-| Section | Missing fact |
-|---------|--------------|
-| `digit-strings.md#digit-strings` | To place an event by a code, the page offers a `bl-` word after a relation word or `/ɡ/` on a noun (`g_7`), and never says when to pick which |
-| `fill-ask-jobs.md#when` | The lead offers `har` on `/h/` or `war` on `/w/`, and never says when to pick `war`. `restrictors.md` says a `/w/` restrictor says when the next adjective holds, but the section does not link it
+*None open.* The two Phase 3 reports were settled on 2026-11-12: `digit-strings.md` now says to put a code on `/ɡ/` when you keep the noun it labels, and `fill-ask-jobs.md#when` points `war` back to the `/w/` restrictor.
 
 ### Fixes outside the pass
 
-Faults a prose unit found but could not fix within its scope. Each needs an edit the pass does not make, by the user or a later proposal.
+Faults a prose unit found but could not fix within its scope. Each needs an edit the pass does not make.
 
-| Where | Fault | Fix it needs |
-|-------|-------|--------------|
-| `restrictors.md`, cheat-sheet tables | cue cells **e** (`her` row), **u** (`hur` row), and **u** (`hual` / `huam` row) stay bold: in backticks the cheat-sheet lint rejects them as missing from `cheat-sheets/restrictors-spans.md` | add those letters to that cheat sheet, then put the cells in backticks |
-| `knowing.md#live-vs-memory` | two tables for the same two forms, `thugem` and `thevum`, which fails the *once* test | merge the tables, which changes code spans the pass may not touch |
-| `digit-strings.md`, Time | contradiction: the lead and the example `hrebazathegemol` give clock marker `re` (spoken `hre`), the *Clock / schedule* row says `ro`; the lead gives a date as spoken `hroe`, the *Calendar date* row says `roe` | settle which is right on the owning page and fix the code spans |
-| `social-ties.md#social-relations` | says "the role compound with `o`", but `zwubamayar` parses with the `b` part, and `roles.md` says `b` names the other party | change the code span to `b`, if the parse is the intended reading |
-| `label-seams.md`, stacked-reach cheat-sheet table | cue cells `ae`, `ao`, `oe`, `ua`, `ue`, `uo` stay bold: the `word-shape-clause` cheat sheet lacks them | add them to that cheat sheet, then put the cells in backticks |
-| `can-and-cant.md`, cheat-sheet table | cue cells **o**, **e**, **u** stay bold: the `knowing-intending` cheat sheet lacks them | add them to that cheat sheet, then put the cells in backticks |
-| `can-and-cant.md#ability` | "You are not combining options: a dip is still can-do, not a shorter list" is unclear; the editor could not confirm its meaning | an owner's rewrite or a cut |
-| `label-seams.md` | "A type is a bigger claim, not an *and*, and not which person in a queue" is unclear (moved after the first example, wording unchanged) | an owner's rewrite or a cut |
-| `social-ties.md`, `label-seams.md`, `can-and-cant.md` | no page lead: the H1 goes straight to an H3 | a page lead, which adds prose under the H1 the pass did not scope |
+*None open.* The Phase 2 and 3 rows were fixed on 2026-11-12. The cheat-sheet lint now skips a table's **Cue** column, so cue letters go in backticks like any letter ([grammar-docs.md](../meta/grammar-docs.md), opting an owning table in).
 
 ### Gates
 
@@ -154,7 +143,7 @@ One commit per unit after its gate is green, by the orchestrator only, with the 
 
 | Phase | 4 | 5 | 6 | 7 | 8 | 9 | Left |
 |-------|---|---|---|---|---|---|------|
-| Commits | 4 | 7 | 7 | 6 | 6 | 4 | 34 |
+| Commits | 5 | 7 | 7 | 6 | 6 | 4 | 35 |
 
 ## Open decisions
 

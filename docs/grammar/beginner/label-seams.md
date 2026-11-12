@@ -14,7 +14,7 @@ English *Alazun is angry* can mean one outburst or the kind of person Alazun is,
 >
 > "Alazun is angry this time."
 
-A label with no reach vowel says nothing about how far it reaches. Use one when that reach matters, the way you would add *this time* or *a teacher* in English. A type is a bigger claim, not an *and*, and not which person in a queue.
+A label with no reach vowel says nothing about how far it reaches. Use one when that reach matters, the way you would add *this time* or *a teacher* in English.
 
 <!-- cheat-sheet: word-shape-clause -->
 | Ageben | Use | English | Cue |
@@ -107,12 +107,12 @@ The four reach vowels also combine in pairs, the same pairs that [joins](joins.m
 <!-- cheat-sheet: word-shape-clause -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thae`** | the **situation**, not the person | *angry, but it's the situation*; *a teacher by circumstance* | **ae** ≈ over: the label hangs over the scene |
-| **`thao`** | **using** the role for a purpose | *playing the teacher* | **ao** ≈ using |
-| **`thoe`** | **toward** the role | *becoming a teacher* | **oe** ≈ toward |
-| **`thua`** | type, **except** this episode | *a teacher type, except this time* | **ua** ≈ everything but: every time but this one |
-| **`thue`** | type, **except** this pair | *a teacher type, except with Alazun* | **ue** ≈ anything but: everyone but this one |
-| **`thuo`** | as themselves, **not in that role** | *not as a teacher* (off duty) | **uo** ≈ every scene but the role |
+| **`thae`** | the **situation**, not the person | *angry, but it's the situation*; *a teacher by circumstance* | `ae` ≈ over: the label hangs over the scene |
+| **`thao`** | **using** the role for a purpose | *playing the teacher* | `ao` ≈ using |
+| **`thoe`** | **toward** the role | *becoming a teacher* | `oe` ≈ toward |
+| **`thua`** | type, **except** this episode | *a teacher type, except this time* | `ua` ≈ everything but: every time but this one |
+| **`thue`** | type, **except** this pair | *a teacher type, except with Alazun* | `ue` ≈ anything but: everyone but this one |
+| **`thuo`** | as themselves, **not in that role** | *not as a teacher* (off duty) | `uo` ≈ every scene but the role |
 
 > `zalazun gonumuthael.`
 >

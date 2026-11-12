@@ -29,7 +29,7 @@ To ask what something is **like** (*What color is it?*, *What kind of dog?*), pu
 
 ### When? {#when}
 
-To ask *when?* or *in what case?*, put the blank `har` on `/h/`, the role that names an occasion (or `war` on `/w/`). The answer names the time or the case.
+To ask *when?* or *in what case?*, put the blank `har` on `/h/`, the role that names an occasion. The answer names the time or the case. To ask when one adjective holds, put `war` right before that adjective instead, as an [`/w/` restrictor](restrictors.md#on-the-following-adjective-w) does.
 
 > `yel har zahelan vowurol.`
 >

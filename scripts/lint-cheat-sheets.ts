@@ -152,7 +152,23 @@ function lintGrammarSheet(file: string): void {
   }
 }
 
-/** Opted-in tables on grammar pages: every form must be on the named sheet. */
+/** A table's rows with the Cue column's cells blanked: cue letters are memory aids, not forms. */
+function withoutCueColumn(table: string): string {
+  const rows = table.split("\n");
+  const cells = (row: string) => row.replace(/^\s*\|/, "").replace(/\|\s*$/, "").split("|");
+  const cue = cells(rows[0] ?? "").findIndex((cell) => cell.trim().toLowerCase() === "cue");
+  if (cue < 0) return table;
+  return rows
+    .map((row) => {
+      if (!row.startsWith("|")) return row;
+      const parts = cells(row);
+      if (cue < parts.length) parts[cue] = "";
+      return `|${parts.join("|")}|`;
+    })
+    .join("\n");
+}
+
+/** Opted-in tables on grammar pages: every form outside the Cue column must be on the named sheet. */
 function lintCoverage(): void {
   const sheetText = new Map<string, string>();
   for (const [id, file] of Object.entries(SHEETS)) sheetText.set(id, readFileSync(join(grammarDir, sheetsDir, file), "utf8"));
@@ -173,7 +189,7 @@ function lintCoverage(): void {
         problems.push(`${where}: cheat-sheet marker is not right before a table`);
         continue;
       }
-      for (const form of new Set(formSpans(table[1]!))) {
+      for (const form of new Set(formSpans(withoutCueColumn(table[1]!)))) {
         if (!occursIn(form, sheet)) problems.push(`${where}: \`${form}\` is not on the ${sheetsDir}/${SHEETS[id]} cheat sheet`);
       }
     }
