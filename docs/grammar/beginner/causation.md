@@ -39,7 +39,7 @@ As a plain noun, the same root is `zohel` *a door*.
 
 **Compare with:** for *X is enough* about one item from a list of options (*a book will do*), use an inclusive [join](joins.md#single-item-phrase), not a hinge. *Whether Alazun walks* is [`derl`](dependents.md#dependent-clauses), not `thohem`: *if* sets a condition, and *whether* leaves a yes-or-no question open.
 
-### Only if {#only-if}
+### Only if, and if and only if {#only-if}
 
 English *only if* (or *needs*) says the outcome cannot hold without the condition. Use the same shape with the *only if* hinge (root **`ebe`**): **`thebem`** after a verb (`/th/`), **`gebem`** after a noun (`/ɡ/`). Other things may also be required, and again you do not claim the condition is true. (cue: 🧻 *paper-roll*: without it the situation does not run)
 

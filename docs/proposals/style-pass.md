@@ -111,23 +111,13 @@ Labels that finished units have glossed, in reading order, each with the page th
 
 Headings that prose units reported under rule 7 of the digest, each with its page, its id, and why it fails. H1 works from this list.
 
-| Page | Id | Why it fails |
-|------|----|--------------|
-| `spans.md` | `#pos`, "Outer slot" | *slot*, which earlier pages replaced with *role* |
-| `ought-for-a-sake.md` | `#sake-force`, the prescription section | *prescription* reads as medical (now glossed in the lead) |
-| `causation.md` | `#only-if` | also teaches *if and only if*, so it carries two ideas |
-| `extra-noun-hooks.md` | `#extra-noun-intermediate`, "Extra noun: stacked vowels and loose -m" | the ending is bold, not in backticks, and *loose* is an unexplained picture |
+*None open.* The four Phase 2 headings were retitled on 2026-11-12, each pinning its old id.
 
 ### Sections missing a fact
 
 Sections that prose units reported under rule 6: the section needs a consequence or a *when* that no page states. Each needs a user decision or an owner-page edit; the pass does not fill them.
 
-| Section | Missing |
-|---------|---------|
-| `joins.md#negation-u` | the consequence: what denying listed items lets you do |
-| `clause-sequence.md#clause-sequence` | what "the clauses keep one speech act" means for the learner |
-| `clause-sequence.md#clause-sequence` | the `-n` list-move sentence under `/v/`, `/ɡ/`, `/h/` previews Intermediate material (`list-verbs.md`); its code spans keep the pass from cutting it |
-| `extra-noun-hooks.md`, the H3 | extra-noun `-n` makes "a name, as on same-role hooks", but no earlier page teaches `-n` on hooks; the same paragraph names *locative relation*, which Intermediate `locative-relations.md` owns |
+*None open.* The four Phase 2 reports were settled on 2026-11-12 from facts their owner pages state, or by cutting a preview the owner page teaches.
 
 ### Fixes outside the pass
 

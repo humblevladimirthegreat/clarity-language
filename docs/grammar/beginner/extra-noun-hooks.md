@@ -6,12 +6,12 @@ band: beginner
 
 Two-vowel hooks name the rest of the everyday extras (*on*, *toward*, *through*, *using*), and `-m` on a hook makes the landmark only the general surroundings of the act (*amid*, *near*, *despite*).
 
-### Extra noun: stacked vowels and loose **-m**
+### *On*, *through*, *using*, and *near* {#extra-noun-stacked-vowels-and-loose-m}
 <a id="extra-noun-intermediate"></a>
 
 You have already met the one-vowel extra-noun hooks (*in* / *for* / *at* / *from*). Hooks with two vowels name the rest of the everyday extras, such as *on*, *through*, and *using*, in the same hook-then-`/b/` shape. The test is the same: `/b/` comes right after the hook, and the word right before the hook (skipping any `/w/`) is *not* a recipient `/b/` (so `bazozon al balazun` is *including*).
 
-A hook + `/b/` right after a landmark (the `/b/` of another extra, or of a word such as a locative relation) describes that landmark, not the clause: *the house near me*.
+A hook + `/b/` right after a landmark (the `/b/` of another extra) describes that landmark, not the clause: *the house near me*.
 
 > `zazozon vowurol al bohehal em buwen.`
 >
@@ -19,7 +19,7 @@ A hook + `/b/` right after a landmark (the `/b/` of another extra, or of a word 
 >
 > "Azozon walks in the house near me."
 
-Several extra-noun hooks on one clause are several extras. To keep the second one on the clause, put a non-`/b/` word between the first landmark and the next hook. Extra-noun `-n` makes the hook and its landmark a name, as on same-role hooks; the landmark keeps its own ending.
+Several extra-noun hooks on one clause are several extras. To keep the second one on the clause, put a non-`/b/` word between the first landmark and the next hook.
 
 With an extra-noun hook, `-m` makes a **zone extra**: the landmark is only the general surroundings (the *setting* in the table), not the exact contact, source, tool, or opponent. So you can say *near* rather than *at*, or *amid* rather than *in*. It is not a second copy of the same extra.
 

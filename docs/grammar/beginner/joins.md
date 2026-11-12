@@ -132,7 +132,7 @@ Right after a word that takes a [`bl-` partner](clause.md#extra-nouns), a standa
 
 ### Negation (`u`) {#negation-u}
 
-When English denies the listed items, use vowel `u`. One item before `zul` is *not X*. Two items before `zul` is *neither A nor B*; more items is *none of these*. The join alone (`zul` / `zum`) is *no*. (cue: `u` ≈ undo.)
+When English denies the listed items, use vowel `u`. One item before `zul` is *not X*, two are *neither A nor B*, and more are *none of these*; the join alone (`zul` / `zum`) is *no*. Because the denial is a join, it reaches only the items in its list: `zazozon zul` denies who it is, and leaves the rest of the sentence standing. (cue: `u` ≈ undo.)
 
 > `gamahum gul.`
 >

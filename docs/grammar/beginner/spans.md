@@ -144,7 +144,7 @@ A one-word comment with nothing to package is a plain word with that role letter
 
 **Compare with:** a second name for the same person uses [identity](predication.md#identity) (`gore` + `/b/`). To pick out *which* noun (*the guard who sits*), use a plain adjective or [another sentence](dependents.md#which-noun), not a noun aside.
 
-### Outer slot {#pos}
+### A span's role in the sentence {#pos}
 
 A span can fill any role a word can, not only the object. The letter before the bracket is the role of the whole span in the outer sentence, so ask what that chunk does there: the object of *said*, the subject of *is small*, and so on. A cite can even be the verb, when you echo an act as wording:
 

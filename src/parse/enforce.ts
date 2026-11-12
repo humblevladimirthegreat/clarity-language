@@ -311,7 +311,7 @@ function tokenWord(token: IToken | undefined): LexWord | undefined {
 const ASIDE_POS = new Set(["th", "g", "w", "h"]);
 
 /**
- * Which slots a span fence fills (spans.md § Outer slot): an aside only under `/th/`, `/ɡ/` (and `gl-`), `/w/`,
+ * Which slots a span fence fills (spans.md#pos): an aside only under `/th/`, `/ɡ/` (and `gl-`), `/w/`,
  * or `/h/`; a cite, mention or opaque in a content slot or `/w/` (never `/th/`) or as an `/x/` topic word.
  * An aside resume (`dexur`) may recast the aside into another slot.
  */

@@ -4,7 +4,7 @@ band: beginner
 
 # Ought for a sake {#ought-for-a-sake}
 
-### Prescription (`the`): ought this act for this sake
+### Should do it for a sake (`the`) {#prescription-the-ought-this-act-for-this-sake}
 <a id="sake-force"></a>
 
 When English puts *should* / *ought to* on doing something for a named sake (*Ahelan ought to sing; it's good for their health*), put a `/th/` word on the clause: sake root, mid-word `th`, **`e`**, then an ending. `e` is how much of the sake is in: you only have the advice (a **prescription**), not the act yet. The clause's verb names the act that ought to count toward the sake, and the sentence says the act *ought* to happen, not that it is already happening.

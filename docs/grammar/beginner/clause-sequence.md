@@ -7,7 +7,7 @@ band: beginner
 ### Sequence (`-n`, clause only) {#clause-sequence}
 <a id="sequence"></a>
 
-When English tells events in time order (*and then*), put ending `-n` on a clause join (`/x/`), so narrative *and then* is **`xan`**. Like every clause join, it goes [between](joins.md#clause-joins) the clauses, so `A xan B xan C` reads one step at a time. The clauses keep one speech act. Here `-n` orders the clauses; it does not mark a name.
+When English tells events in time order (*and then*), put ending `-n` on a clause join (`/x/`), so narrative *and then* is **`xan`**. Like every clause join, it goes [between](joins.md#clause-joins) the clauses, so `A xan B xan C` reads one step at a time. All the clauses share one speech act: an act word on `/y/` goes before the first clause only, and the later clauses leave it out. Here `-n` orders the clauses; it does not mark a name.
 
 <!-- cheat-sheet: joins-hooks -->
 | Ageben | Use | English | Cue |
@@ -21,8 +21,6 @@ When English tells events in time order (*and then*), put ending `-n` on a claus
 > [z-Azozon | v-sit | x-and-then | z-←Azozon | v-walk]
 >
 > "Azozon sat, and then they walked."
-
-Under `/v/`, `/ɡ/`, and `/h/`, a join word with `-n` instead names a list move, such as *includes* or *leaves out*.
 
 ### Practice {#beginner-practice}
 
