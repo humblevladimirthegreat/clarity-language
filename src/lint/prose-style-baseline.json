@@ -118,9 +118,6 @@
   "intermediate/measures-and-percent.md": {
     "bold-density": 2
   },
-  "intermediate/more-hinges.md": {
-    "bold-density": 2
-  },
   "intermediate/number-markers.md": {
     "bold-density": 2
   },
@@ -142,24 +139,14 @@
   "intermediate/role-parts.md": {
     "bold-density": 1
   },
-  "intermediate/sentence-linkers.md": {
-    "bold-density": 1
-  },
   "intermediate/set-joins.md": {
     "bold-density": 1
   },
   "intermediate/spans-as-words.md": {
     "bold-density": 2
   },
-  "intermediate/stand-in-vowels.md": {
-    "bold-density": 5,
-    "long-paragraph": 1
-  },
   "intermediate/tag-pronouns.md": {
     "bold-density": 1,
-    "long-paragraph": 1
-  },
-  "intermediate/topic.md": {
     "long-paragraph": 1
   },
   "intermediate/universals-domains.md": {

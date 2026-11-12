@@ -4,30 +4,32 @@ band: intermediate
 
 # Stand-in vowels {#stand-in-vowels}
 
+This page gives the stand-in word more to say. In the first section its vowel says what kind of content the next sentence is (a statement, an instruction, a question, or something to avoid), and its ending says how much that sentence covers. The second section points back at content already said, like English *so* in *Azozon says so*.
+
 ### Stand-in vowels (`-rl` / `-rm`) {#stand-in}
 <a id="clause-member"></a>
 
-Beginner used **`darl`** / **`barl`** for *that …* and **`derl`** for *whether …*. A stand-in's vowel says what kind of content the next sentence is, with the same four vowels as the [act words](/speech-moves#speech-act-beginner): **`a`** a statement, **`o`** an instruction, **`e`** a question, **`u`** something to avoid. So a dependent clause can carry an instruction (*tells Alazun **to sit***) or a warning (*tells Alazun **not to sit***).
+In English a dependent clause can report a statement (*that …*), a question (*whether …*), an instruction (*to …*), or something to avoid (*not to …*). Beginner used `darl` / `barl` for *that …* and `derl` for *whether …*. A stand-in's vowel says which of these kinds the next sentence is, with the same four vowels as the [act words](/speech-moves#speech-act-beginner): `a` a statement, `o` an instruction, `e` a question, `u` something to avoid. So a dependent clause can carry an instruction (*tells Alazun to sit*) or a warning (*tells Alazun not to sit*).
 
-Unlike a `/y/` act word, a stand-in does not itself state, ask, or command: it only lets that kind of content fill a role in the outer sentence. Stand-ins are not joins. The ending says how much the next sentence covers: **`-rl`** means it is the whole content (locked); **`-rm`** leaves it open (the gist, or not the only thing).
+Unlike a `/y/` act word, a stand-in does not itself state, ask, or command: it only lets that kind of content fill a role in the outer sentence. Stand-ins are not joins. The ending says how much the next sentence covers: use `-rl` when it is the whole content (locked), and `-rm` when it gives only the gist or is not the only thing (open).
 
 <!-- cheat-sheet: linking-clauses -->
-| Stand-in | Content type | **`-rl`** locked | **`-rm`** open |
+| Stand-in | Content type | `-rl` locked | `-rm` open |
 |----------|--------------|------------------|----------------|
-| **`a`** add | statement-like (compare **`yal`**) | `darl` *that …* | `darm` *that …* (gist) |
-| **`o`** rank | instruction-like (compare **`yol`**) | `dorl` *to …* | `dorm` *to …* (open) |
-| **`e`** choice | question-like (compare **`yel`**) | `derl` *whether …* | `derm` *whether …* (open) |
-| **`u`** not | avoidance-like (compare **`yul`**) | `durl` *that not / lest …* | `durm` *lest …* (open) |
+| `a` add | statement-like (compare `yal`) | `darl` *that …* | `darm` *that …* (gist) |
+| `o` rank | instruction-like (compare `yol`) | `dorl` *to …* | `dorm` *to …* (open) |
+| `e` choice | question-like (compare `yel`) | `derl` *whether …* | `derm` *whether …* (open) |
+| `u` not | avoidance-like (compare `yul`) | `durl` *that not / lest …* | `durm` *lest …* (open) |
 
 You may leave out the dependent clause's `/z/` only when all of these hold:
 
-1. The stand-in is **`dorl`** / **`dorm`**, or **`durl`** / **`durm`** telling someone *not to*.
-2. It fills the outer sentence's `/d/` slot.
+1. The stand-in is `dorl` / `dorm`, or `durl` / `durm` telling someone *not to*.
+2. It fills the outer sentence's `/d/` role.
 3. The outer sentence has one plain `/b/` (the person told).
 
-The missing subject is then that `/b/`. It is never the listener and never the outer `/z/`. In every other case, write the inner `/z/`: after **`darl`** / **`derl`**, after any hinge (**`blarl`** / **`blurl`**), and when the outer sentence has no plain `/b/` (*wants to sit*, *tries to sit*). When the doer is someone other than that `/b/`, write them too, using resume **-r** if the name would repeat.
+The missing subject is then that `/b/`. It is never the listener and never the outer `/z/`. In every other case, write the inner `/z/`: after `darl` / `derl`, after any hinge (`blarl` / `blurl`), and when the outer sentence has no plain `/b/` (*wants to sit*, *tries to sit*). When the doer is someone other than that `/b/`, write them too, using resume `-r` if the name would repeat.
 
-After a hinge, the dependent is **`blarl`** (or **`blarm`** for gist): *because* / *if* / *although* / *so that* all use it. There are two exceptions, both with **`blurl`**: purpose-not **`thovam blurl`** (*so that … not*) and **`thohem blurl`** (*unless*). Stand-ins never take `/x/`; clause *and* is `xal` / `xan`.
+After a hinge, the dependent is `blarl` (or **`blarm`** for gist): *because* / *if* / *although* / *so that* all use it. There are two exceptions, both with **`blurl`**: purpose-not `thovam blurl` (*so that … not*) and `thohem blurl` (*unless*). Stand-ins never take `/x/`; clause *and* is `xal` / `xan`.
 
 > `zazozon vezuyol balazun dorl vehohel.`
 >
@@ -35,7 +37,7 @@ After a hinge, the dependent is **`blarl`** (or **`blarm`** for gist): *because*
 >
 > "Azozon tells Alazun to sit."
 
-The person told is plain `/b/`, so **`dorl vehohel`** can leave out its subject: the sitter is Alazun. The outer sentence stays a statement. With no plain `/b/`, write the sitter:
+The person told is plain `/b/`, so `dorl vehohel` can leave out its subject: the sitter is Alazun. The outer sentence stays a statement. With no plain `/b/`, write the sitter:
 
 > `zazozon valom dorl zazozon vehohel.`
 >
@@ -45,7 +47,9 @@ The person told is plain `/b/`, so **`dorl vehohel`** can leave out its subject:
 
 To quote someone's exact words instead, use a [span](/spans).
 
-English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl`**. When it tells someone not to act, the person told (`/b/`) can be the missing subject, as with **`dorl`**. When it only keeps an outcome off, with no one told, write the inner `/z/`. The outer sentence stays a statement. *Don't sit!* as the whole move is still a [prohibition](/speech-moves#speech-act-beginner) (**`yul`**), not this stand-in.
+English *lest* / *not to* (keep this from happening) uses vowel `u`: `durl`. The outer sentence stays a statement. *Don't sit!* as the whole move is still a [prohibition](/speech-moves#speech-act-beginner) (`yul`), not this stand-in.
+
+The list above says when the inner `/z/` may be left out: the person told (`/b/`) can be the missing subject, as with `dorl`.
 
 > `zazozon vezuyol balazun durl vehohel.`
 >
@@ -53,7 +57,7 @@ English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl
 >
 > "Azozon tells Alazun not to sit."
 
-When *so that* aims at keeping an outcome off, keep **`thovam`** and type `/b/` with **`blurl`**:
+When *so that* aims at keeping an outcome off, keep `thovam` and type `/b/` with `blurl`:
 
 > `zuwen vowurol thovam blurl zuwen vehohel.`
 >
@@ -61,7 +65,7 @@ When *so that* aims at keeping an outcome off, keep **`thovam`** and type `/b/` 
 >
 > "I walk so as not to sit."
 
-English *unless* is *if … not*: keep the *if* hinge **`thohem`** and type `/b/` with **`blurl`**. The following sentence is the condition that must **not** hold.
+English *unless* is *if … not*: keep the *if* hinge `thohem` and type `/b/` with `blurl`. The following sentence is the condition that must not hold.
 
 > `zazozon vowurol thohem blurl zalazun vezuvel.`
 >
@@ -69,7 +73,7 @@ English *unless* is *if … not*: keep the *if* hinge **`thohem`** and type `/b/
 >
 > "Azozon walks unless Alazun sleeps."
 
-The sentence after a stand-in runs to the end of the written sentence, so a [clause join](/joins#clause-joins) inside it stays in the dependent. *Whether Alazun walks or Ahelan runs* is **`derl`**, then both clauses with **`xel`** between them.
+The sentence after a stand-in runs to the end of the written sentence, so a [clause join](/joins#clause-joins) inside it stays in the dependent. *Whether Alazun walks or Ahelan runs* is `derl`, then both clauses with `xel` between them.
 
 > `zazozon vayebel derl zalazun vowurol xel zahelan veruvol.`
 >
@@ -79,11 +83,17 @@ The sentence after a stand-in runs to the end of the written sentence, so a [cla
 
 To join another clause to the main sentence instead, end the sentence and start the next one with the join.
 
-**Compare with:** *tells that Alazun sits* is **`darl`**. *Tells Alazun to sit* is **`dorl`**. *So that Azozon sits* is **`thovam blarl`**.
+Three English phrases that look alike take different forms:
+
+| English | Ageben |
+|---------|--------|
+| *tells that Alazun sits* | `darl` |
+| *tells Alazun to sit* | `dorl` |
+| *so that Azozon sits* | `thovam blarl` |
 
 ### Pointing back (`-rth`) {#stand-in-back}
 
-A stand-in on **`-rl`** / **`-rm`** holds a slot for the sentence that comes **next**. To point **back** at content already said, end the stand-in in **`-rth`**: English *so* in *Azozon says so*, or *that* in *Alazun doubts that*. Nothing follows it; the sentence ends as usual.
+English points back at something already said with *so* (*Azozon says so*) or *that* (*Alazun doubts that*). A stand-in on `-rl` / `-rm` holds a place for the sentence that comes next. To point back instead, end the stand-in in **`-rth`**. Nothing follows it, so the sentence ends as usual and the content is not said again.
 
 The vowel still says what kind of content it is, and the word stands for the most recent content of that kind:
 
@@ -107,9 +117,9 @@ The vowel still says what kind of content it is, and the word stands for the mos
 >
 > "Azozon tells Alazun not to sit. Alazun wishes not to." (not to sit)
 
-The content can be anything a sentence says: a verbless sentence, a denied event, or several sentences chained with `/x/`. A [resume](/pronouns#resume-r) **-r** picks up one word; **`-rth`** picks up what was said.
+The content can be anything a sentence says: a verbless sentence, a denied event, or several sentences chained with `/x/`. A [resume](/pronouns#resume-r) `-r` picks up one word; `-rth` picks up what was said.
 
-Other role letters work the same way as the forward stand-in: **`blarth`** after a hinge (*because of that*) or after [*like*](/relations#likeness) **`hewem`** (*like that*), **`zarth`** as the subject. Stand-ins fill `/z/` `/d/` `/b/` only; there is no stand-in on `/ɡ/` `/h/` `/w/` `/th/`. *Such* is [whole-stem **-r**](/pronouns#resume-r), and *then* or *so* is a hinge + **`blarth`**.
+Other role letters work the same way as the forward stand-in: **`blarth`** after a hinge (*because of that*) or after [*like*](/relations#likeness) `hewem` (*like that*), **`zarth`** as the subject. Stand-ins fill `/z/` `/d/` `/b/` only; there is no stand-in on `/ɡ/` `/h/` `/w/` `/th/`. *Such* is [whole-stem `-r`](/pronouns#resume-r), and *then* or *so* is a hinge + `blarth`.
 
 ### Practice {#intermediate-practice}
 

@@ -4,39 +4,43 @@ band: intermediate
 
 # Linking sentences {#linking-sentences}
 
+This page shows how one sentence connects to the next. The first section lists what the ending on a continue word does: link two sentences, introduce or return to a topic, or chain clauses. The second says what a period closes, and which speech act the next sentence has. The third teaches the six sentence linkers, words like *therefore* and *however* that connect a finished sentence to the one after it.
+
 ### Continue (`/x/`): overview
 <a id="continue-x"></a>
 
-Beginner used the ending to say how to take a content word’s meaning. On an `/x/` continue word, the ending instead picks what the word does:
+Beginner used the ending to say how to take a content word’s meaning. On an `/x/` continue word, the ending instead picks what the word does, so the last letter tells you whether the word links two sentences, changes the topic, or chains clauses:
 
 | Ageben | Use | English |
 |--------|-----|---------|
-| one of six linkers + **-m** (firm **-l** on three) | glue one finished sentence to the next | *but*, *therefore*, … |
-| other `/x/` root + **-l** / **-m** / **-n** | introduce a topic | *now, about X*; *let’s now talk about X* |
-| `/x/` root + **-r** | return to a topic | *back to X* |
-| clause join + **-n** | **sequence** | *and then* **`xan`**, … ([joins](/joins)) |
+| one of six linkers + `-m` (firm `-l` on three) | glue one finished sentence to the next | *but*, *therefore*, … |
+| other `/x/` root + `-l` / `-m` / `-n` | introduce a topic | *now, about X*; *let’s now talk about X* |
+| `/x/` root + `-r` | return to a topic | *back to X* |
+| clause join + `-n` | sequence | *and then* `xan`, … ([joins](/joins)) |
 
-[Discourse hooks](/hooks#discourse-hooks), which have no first letter, use hook endings. Hook **-n** titles a [proper-name phrase](/proper-names#titled-phrases).
+[Discourse hooks](/hooks#discourse-hooks), which have no first letter, use hook endings. Hook `-n` titles a [proper-name phrase](/proper-names#titled-phrases).
 
 ### What carries past a period {#past-a-period}
 
-A **period** closes the sentence body in writing, whatever the speech act. Speech matches that edge with a **rest**: one silent beat. The act word, not the punctuation, sets question or command. `?` and `!` are [tone marks](tone-marks.md#tone-marks) that go before the words they color.
+When you say several sentences in a row, the listener needs to hear where each one ends and whether the next is still the same statement, question, or command. A **period** closes the sentence body in writing, whatever the speech act. Speech matches that edge with a **rest**: one silent beat.
+
+The act word, not the punctuation, sets question or command. `?` and `!` are [tone marks](tone-marks.md#tone-marks) that go before the words they color. Whether a rest comes, and which word follows it, tells the listener if the speech act goes on or a new one starts.
 
 | Writing | Speech | Use | Cue |
 |---------|--------|-----|-----|
-| `.` | Rest: one silent beat | Closes the prior **body**. Next stretch still defaults to **`yal`** unless a new `/y/` turn, a written act word, or *yes* / *no* particle sets otherwise | Rest = the claim is done |
-| Next `/y/` turn (*yes* / *no*, a call, written act word) | The period's rest, then the `/y/` word | New turn; firm **-l** / soft **-m** imply **`yal`** / **`yam`** | The `/y/` word = a new act |
-| Bare body or hook + body after `.` | The period's rest only | Implied **`yal`** (or **`yam`** only if a soft particle / written **`yam`** said so) | No `/y/` word, so same statement |
-| Soft statement / soft *yes* / *no* **-m** | Nothing extra: the **-m** is heard | **`yam`** (implied or written) | **-m** leaves the hold open |
-| `/x/` continue (clause join) | **No** rest: the sentence goes on | Keep opener speech act; period after the **whole** joined stretch | No rest = still going |
+| `.` | Rest: one silent beat | Closes the prior body. Next stretch still defaults to `yal` unless a new `/y/` turn, a written act word, or *yes* / *no* particle sets otherwise | Rest = the claim is done |
+| Next `/y/` turn (*yes* / *no*, a call, written act word) | The period's rest, then the `/y/` word | New turn; firm `-l` / soft `-m` imply `yal` / `yam` | The `/y/` word = a new act |
+| Bare body or hook + body after `.` | The period's rest only | Implied `yal` (or `yam` only if a soft particle / written `yam` said so) | No `/y/` word, so same statement |
+| Soft statement / soft *yes* / *no* `-m` | Nothing extra: the `-m` is heard | `yam` (implied or written) | `-m` leaves the hold open |
+| `/x/` continue (clause join) | No rest: the sentence goes on | Keep opener speech act; period after the whole joined stretch | No rest = still going |
 | `/x/` linker after `.` (`xahom …`) | The period's rest, then the linker | Keep prior speech act; may start a new written sentence under that speech act | Linker glues; still the same act |
-| **Stand-in** hang | **No** rest until the last dependent | Next sentence fills the slot; period after the **whole** stretch | Same hang as `/x/` continue |
+| Stand-in hang | No rest until the last dependent | Next sentence fills the stand-in's role; period after the whole stretch | Same hang as `/x/` continue |
 
-**-l** vs **-m** on the act word / *yes* / *no* is how firmly you stand behind it (closed vs soft / open).
+`-l` vs `-m` on the act word / *yes* / *no* is how firmly you stand behind it (closed vs soft / open).
 
 ### Sentence linkers {#sentence-linkers}
 
-Beginner already used *therefore*. It is one of six **sentence linkers**: `/x/` words that connect a finished sentence to the one after it. Each one uses its root's **abstract** sense, so it ends in **-m**.
+English connects one finished sentence to the next with words like *therefore*, *however*, and *but*. Ageben has six **sentence linkers** for this job: `/x/` words that connect a finished sentence to the one after it, including the *therefore* you used in Beginner. Each one uses its root's abstract sense, so it ends in `-m`. The linker you pick tells the listener how the next claim relates to the last one.
 
 <!-- cheat-sheet: linking-clauses -->
 | English | Ageben | Abstract of | Cue | Example |
@@ -50,9 +54,9 @@ Beginner already used *therefore*. It is one of six **sentence linkers**: `/x/` 
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* puts the next claim at the same time; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
 
-A linker reaches back to **one** sentence: the one that ends at the period before it. To link back to several claims at once, join them into that sentence with a [clause join](/joins#clause-joins).
+A linker reaches back to one sentence: the one that ends at the period before it. To link back to several claims at once, join them into that sentence with a [clause join](/joins#clause-joins).
 
-Three linkers also take **-l** for a **firm** link: the link holds with no room for doubt, on the same settled-to-passing scale as [time horizon](/sakes#settled-to-passing). (cue: **-l** ≈ lasting: the link holds)
+Three linkers also take `-l` for a **firm** link: use it when the link holds with no room for doubt. This is the same settled-to-passing scale as [time horizon](/sakes#settled-to-passing). (cue: `-l` ≈ lasting: the link holds)
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English |
@@ -67,9 +71,9 @@ Three linkers also take **-l** for a **firm** link: the link holds with no room 
 >
 > "Alazun isn't sleeping. On the contrary, Alazun is running."
 
-No other root makes a linker. Any other `/x/` content word sets the topic: **-l** / **-m** / **-n** introduce it (`xazozon` *now, about Azozon*) and **-r** returns to it. **-r** on a linker is still a [resume](/pronouns#resume-r) (the same linker again, *likewise*).
+No other root makes a linker. Any other `/x/` content word sets the topic: `-l` / `-m` / `-n` introduce it (`xazozon` *now, about Azozon*) and `-r` returns to it. `-r` on a linker is still a [resume](/pronouns#resume-r) (the same linker again, *likewise*).
 
-All of these `/x/` words, and the topic words, come only at the **start of a sentence**: only `/y/` turn words or a [fronted discourse hook](/hooks#discourse-hooks) may come before them. They never follow a [clause join](/joins#clause-joins), and they never open the sentence after a [stand-in](/dependents#dependent-clauses), because that sentence belongs to the dependent.
+All of these `/x/` words, and the topic words, come only at the start of a sentence: only `/y/` turn words or a [fronted discourse hook](/hooks#discourse-hooks) may come before them. They never follow a [clause join](/joins#clause-joins), and they never open the sentence after a [stand-in](/dependents#dependent-clauses), because that sentence belongs to the dependent.
 
 A linker and a topic word do not share a sentence. To change the topic and also use a linker, write the topic word as its own sentence, then start the next sentence with the linker (*Now, about Azozon. However, Alazun runs.*):
 
@@ -79,7 +83,7 @@ A linker and a topic word do not share a sentence. To change the topic and also 
 >
 > "Now, about Azozon. However, Alazun runs."
 
-**`xevewom`** also opens a new frame, like English *so, …* at the start of a turn: the talk moves on and the topic is cleared.
+`xevewom` also opens a new frame, like English *so, …* at the start of a turn: the talk moves on and the topic is cleared.
 
 > `zodozel vowurol. xevewom zazozon veruvol.`
 >
@@ -87,7 +91,7 @@ A linker and a topic word do not share a sentence. To change the topic and also 
 >
 > "The dog walks. So, Azozon runs."
 
-**`xavedam`** opens a side topic, like English *by the way, …*, and clears the topic too.
+`xavedam` opens a side topic, like English *by the way, …*, and clears the topic too.
 
 In a new turn with its own act word, the act word comes first and the linker starts the body:
 

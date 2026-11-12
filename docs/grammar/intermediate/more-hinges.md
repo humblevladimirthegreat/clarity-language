@@ -4,9 +4,11 @@ band: intermediate
 
 # Hinges on a degree or a noun {#hinges-on-a-degree-or-a-noun}
 
+In Beginner a hinge word tied a dependent clause to the whole main sentence. Here it attaches to a single word instead. The first section ties a result to how much of a quality there is (*so tired that they sleep*). The second places one thing in time (*the walk after the thunderstorm*) rather than the whole event.
+
 ### Result (*so … that*) {#result-hinge}
 
-English *so … that* ties a result to how much of something there is (*so tired that they sleep*), all in one sentence. Put the hinge **`hahom`** after the word that carries the degree, then **`blarl`**, then the result as the next sentence. **`hahom`** uses the same root as *therefore*, which needs two sentences. Unlike **`thovam`** *so that*, which names only your aim, the result really happened.
+English *so … that* ties a result to how much of something there is (*so tired that they sleep*), all in one sentence. Put the hinge **`hahom`** after the word that carries the degree, then `blarl`, then the result as the next sentence. `hahom` uses the same root as *therefore*, which needs two sentences. Unlike `thovam` *so that*, which names only your aim, the result really happened.
 
 > `zazozon welazem gadamul hahom blarl zazozor vezuvel.`
 >
@@ -20,11 +22,26 @@ English *so … that* ties a result to how much of something there is (*so tired
 >
 > "Azozon walks so hastily that Alazun runs."
 
-**Compare with:** *although* / *while* attach a dependent after **`blarl`** (`thezem blarl`, `herom blarl`; see [dependent clauses](/dependents#dependent-clauses)). *Despite Alazun* is the same hinge with a `bl-` noun (`thezem blalazun`). *So that Alazun sits* is **`thovam blarl`**. Discourse **`xezem`** / **`xugorom`** / **`xahom`** glue a finished sentence to the next one.
+Nearby words that tie two clauses together attach in other ways:
+
+| English | Ageben | How it attaches |
+|---------|--------|-----------------|
+| *although* / *while* | `thezem blarl`, `herom blarl` | A dependent after `blarl` (see [dependent clauses](/dependents#dependent-clauses)) |
+| *despite Alazun* | `thezem blalazun` | The same hinge with a `bl-` noun |
+| *so that Alazun sits* | `thovam blarl` | Names only your aim |
+| *however* / *meanwhile* / *therefore* | `xezem` / `xugorom` / `xahom` | Discourse words that glue a finished sentence to the next one |
 
 ### Time hinges on a noun {#time-hinge-on-noun}
 
-To place a **thing** in time rather than the event (*the walk after the thunderstorm*), put the [time hinge](/dependents#dependent-clauses) on `/ɡ/` right after that noun: **`gerom`** *during*, **`gabam`** *before*, **`galam`** *after*, **`garum`** *until*, **`guvahum`** *by*. The `/b/` after it is the event or period, as with the `/h/` hinge.
+English can place one thing in time rather than the whole event (*the walk after the thunderstorm*). To do this, put the [time hinge](/dependents#dependent-clauses) on `/ɡ/` right after that noun. The `/b/` after it is the event or period, as with the `/h/` hinge. The time phrase then says which thing you mean, not when the main event happened.
+
+| English | Ageben |
+|---------|--------|
+| *during* | **`gerom`** |
+| *before* | **`gabam`** |
+| *after* | **`galam`** |
+| *until* | **`garum`** |
+| *by* | **`guvahum`** |
 
 > `zalazun dowurol galam blanulul vayebel.`
 >

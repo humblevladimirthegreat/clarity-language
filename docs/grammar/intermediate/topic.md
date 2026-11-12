@@ -4,7 +4,7 @@ band: intermediate
 
 # Topic {#discourse-topic}
 
-English *now, about Azozon…*, *speaking of dogs…*, and *so, back to Azozon…* say what the talk is about from here on, and every later *he* or *it* follows. Ageben makes that overt as a **topic**. Pointing back at someone already named, without setting what the talk is about, is in [pronouns](/pronouns).
+English *now, about Azozon…*, *speaking of dogs…*, and *so, back to Azozon…* say what the talk is about from here on, and every later *he* or *it* follows. Ageben makes that overt as a **topic**. This page shows how to set, return to, and clear a topic, the one pronoun that means it, what a change of topic resets, and how a topic meets groups, dependent clauses, and questions. Pointing back at someone already named, without setting what the talk is about, is in [pronouns](/pronouns).
 
 ### Topic {#topic}
 
@@ -15,11 +15,11 @@ A topic is set only by an `/x/` word at the start of a sentence: `/x/`, then the
 |--------|-----|---------|
 | `xazozon` | introduce a person | *now, about Azozon* |
 | `xodozel` | introduce a kind | *now, about a dog* |
-| `xazozor` | return to an earlier topic: whole stem + **-r** | *back to Azozon* |
+| `xazozor` | return to an earlier topic: whole stem + `-r` | *back to Azozon* |
 | `xevewom` / `xavedam` | clear the topic ([linkers](sentence-linkers.md#sentence-linkers)) | *next* / *by the way* |
 
 1. **No topic at the start.** A conversation opens with none.
-2. **Introduce.** An `/x/` word on **-l**, **-m**, or **-n** that is not one of the six sentence linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xodozel` *now, about a dog*). Any [compound](/compounds) works the same way: a hyphenated name (`xazozoxalazun`), a noun pair (`xuwedaxubudal` *now, about peanut butter*), or a [role compound](/roles#role-compounds) (`xwuzeduyol` *now, about people who teach*; `xwuzeduyor` returns to it). It takes the same adjectives and hooks as any noun (`xodozel om bazozon` *now, about Azozon's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it.
+2. **Introduce.** An `/x/` word on `-l`, `-m`, or `-n` that is not one of the six sentence linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xodozel` *now, about a dog*). Any [compound](/compounds) works the same way: a hyphenated name (`xazozoxalazun`), a noun pair (`xuwedaxubudal` *now, about peanut butter*), or a [role compound](/roles#role-compounds) (`xwuzeduyol` *now, about people who teach*; `xwuzeduyor` returns to it). It takes the same adjectives and hooks as any noun (`xodozel om bazozon` *now, about Azozon's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it.
 3. **Return.** `/x/` + the whole stem of an earlier word + **-r** makes that thing the topic again.
 4. **Clear.** `xevewom` and `xavedam` each open a new frame. After either there is no topic until the next introduce or return.
 5. **Persist.** The topic holds until rule 2, 3, or 4 changes it. Clause joins, other linkers, and agenda numbering leave it alone. A goodbye ends the conversation and clears it.
@@ -33,13 +33,13 @@ A topic is set only by an `/x/` word at the start of a sentence: `/x/`, then the
 
 `/x/` takes the speaker, listener, interlocutors, or people in general like any noun: `xuwen` *now, about me*, `xawan` *now, about you*, `xayan` *now, about the two of us*, `xeyen` *now, about people in general*. The topic is fixed to that person (or the address set) at the moment it is set, so after `xawan`, both speakers say `zalen` for the same person.
 
-**Every return is explicit.** There is one topic, not a stack. Coming back from a side topic, or from a new frame, means naming the old topic again with `xazozor`.
+Every return is explicit. Only one topic is held at a time, so ending a side topic or a new frame does not bring the old one back: name it again with `xazozor`.
 
 A topic-setting `/x/` word needs no voice of its own: the `/x/` word itself tells the listener that the subject changed. The speech move is unchanged, so the listener hears a new subject, not a new act ([what carries past a period](sentence-linkers.md#past-a-period)).
 
 ### The topic pronoun {#topic-pronoun}
 
-The topic is referred to with one pronoun: **`ale`** *star* with **-n**, in `/z/`, `/d/`, or `/b/`. It stays the same in every role: `zalen` is the topic as subject, `dalen` as object, `balen` as extra noun. (cue: ⭐ the star of the talk, what everyone is looking at)
+English refers back to the topic with *he*, *her*, *it*, and so on, changing the word with the role. Ageben has one topic pronoun: **`ale`** *star* with `-n`, in `/z/`, `/d/`, or `/b/`. Only the role letter changes, so you can keep talking about the topic in any role without repeating its name: `zalen` is the topic as subject, `dalen` as object, `balen` as extra noun. (cue: ⭐ the star of the talk, what everyone is looking at)
 
 > `xazozon zalen dalazun vayebel. zalazur vezuyol balen. zalen veruvol.`
 >
@@ -61,7 +61,7 @@ A [dropped subject](/no-subject#no-subject) is never read as the topic. `xazozon
 
 The topic pronoun is the topic itself, so it is never a topic word or a resume: `xalen`, `xaler` and `zaler` are not sentences. To start a new stretch on the same topic, name it again with `xazozor`.
 
-A topic pronoun with no topic set is not a sentence. On **-l** and **-m** the star root keeps its ordinary senses: `zalel` *a star*, `zalem` *visibility*. **-x** adds associates: `zalenx` *the topic and associates*.
+A topic pronoun with no topic set is not a sentence. On **-l** and **-m** the star root keeps its ordinary senses: `zalel` *a star*, `zalem` *visibility*. `-x` adds associates: `zalenx` *the topic and associates*.
 
 *As for* sets the scene for one sentence and leaves the topic alone:
 
@@ -83,12 +83,12 @@ Without `xazozor`, the last sentence would have no topic and `zalen` would not b
 
 ### What a topic change resets {#topic-resets}
 
-Introduce, return, and clear each start a new **topic stretch**.
+Introduce, return, and clear each start a new **topic stretch**: the run of sentences from that change to the next one. The table shows what starts fresh with each stretch and what carries over, so you know what a pointer word can still reach.
 
 | State | Resets? | Why |
 |-------|---------|-----|
-| [Role pointer](/pronouns#role-pointers) anchors | yes | `zwuzer` *the latest doer* and `zwuzar` *the other one* never reach into an earlier stretch. Someone from before is picked up by name or whole-stem **-r**. |
-| Whole-stem **-r** | no | It is the explicit way back (`xazozor`), so it reaches across stretches. |
+| [Role pointer](/pronouns#role-pointers) anchors | yes | `zwuzer` *the latest doer* and `zwuzar` *the other one* never reach into an earlier stretch. Someone from before is picked up by name or whole-stem `-r`. |
+| Whole-stem `-r` | no | It is the explicit way back (`xazozor`), so it reaches across stretches. |
 | Agenda numbering (`x#N`, outline depth) | no | Agenda items sit above topics; one item may hold several. |
 | Speech move, line of talk | no | They track the move and the line of talk, not people. A topic word after a period (`xazozon …`) follows the period's rest and keeps the prior speech act. |
 
@@ -96,15 +96,15 @@ Introduce, return, and clear each start a new **topic stretch**.
 
 ### Return versus introduce {#topic-return}
 
-Both set the topic. The difference is the ordinary difference between **-r** and a first mention:
+Both set the topic. The difference is the ordinary difference between `-r` and a first mention:
 
 <!-- cheat-sheet: people-pointing -->
 | Ageben | Topic | English |
 |--------|-------|---------|
 | `xazozon` | Azozon | *now, about Azozon* (a name picks out the same person either way) |
 | `xazozor` | Azozon, the one mentioned before | *back to Azozon* |
-| `xodozel` | **a** dog, new to the talk | *now, about a dog* |
-| `xodozer` | **the** dog from before | *back to the dog* |
+| `xodozel` | *a* dog, new to the talk | *now, about a dog* |
+| `xodozer` | *the* dog from before | *back to the dog* |
 
 For names, the two pick the same person: choose by what the listener should hear, something new or a way back. For kinds, only the return reaches the earlier thing. A return that resumes a [sentence linker](sentence-linkers.md#sentence-linkers) (`xahor` after `xahom`) is only that linker again, and sets no topic.
 
@@ -118,7 +118,7 @@ A return makes no claim by itself, but it does set the topic, so leaving it out 
 
 ### Groups as the topic {#topic-groups}
 
-**-x** goes on a topic word like on any noun: `xazozonx` makes *Azozon and associates* the topic, `xodozelx` makes *some dogs* the topic, and `xazozorx` returns to the group. `zalen` then means the group. **-x** on the pronoun (`zalenx`) still adds associates to whatever the topic is.
+To make a group the topic, put `-x` on the topic word as on any noun: `xazozonx` makes *Azozon and associates* the topic, `xodozelx` makes *some dogs* the topic, and `xazozorx` returns to the group. `zalen` then means the group. `-x` on the pronoun (`zalenx`) still adds associates to whatever the topic is.
 
 > `xodozelx zazozon dalen vayebel.`
 >
@@ -150,7 +150,14 @@ To ask what the talk is about, ask *which topic?*: the fill-ask blank `zar`, the
 >
 > "Which topic?" / "What are we talking about?"
 
-**Compare with:** English *topic* covers several jobs, and Ageben keeps them apart. The discourse topic is `/x/`. Setting the scene for one sentence is `hehugom` *as for*. `&` contrasts one phrase ([tone marks](tone-marks.md#tone-marks)). `zal` / `zom` / `zol` rank among others. Only `/x/` sets the topic.
+English *topic* covers several jobs, and Ageben keeps them apart. Only `/x/` sets the topic:
+
+| Job | Ageben |
+|-----|--------|
+| The discourse topic | `/x/` |
+| Setting the scene for one sentence | `hehugom` *as for* |
+| Contrasting one phrase | `&` ([tone marks](tone-marks.md#tone-marks)) |
+| Ranking among others | `zal` / `zom` / `zol` |
 
 ### Practice {#intermediate-practice}
 
