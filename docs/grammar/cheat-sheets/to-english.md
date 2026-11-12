@@ -67,7 +67,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `gaon` | join-relation starting with (adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `garum` | UNTIL clause hinge (endpoint bound) | [Time hinges on a noun](/more-hinges#time-hinge-on-noun) | I |
 | `gavunam` | locative opposite (facing one landmark over a gap) | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) | I |
-| `gebem` | ONLY-IF clause hinge (necessary condition) | [Only if](/causation#only-if) | B |
+| `gebem` | ONLY-IF clause hinge (necessary condition) | [Only if, and if and only if](/causation#only-if) | B |
 | `gedam` | locative between (two landmarks) | [Between, across, around](/locative-relations#locative-relations) | I |
 | `gegalom` | locative past (comes near one landmark and goes on) | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) | I |
 | `gegol` | mention marker (the span is a word or phrase as spelling) | [Mention](/spans-as-words#mention) | I |
@@ -214,8 +214,8 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwen
 | `thebal` | reported evidential with strong evidence (reliable source) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thebam` | reported evidential (hearsay / said or written by someone else / reportative) | [Evidentiality](/evidentiality#evidentiality) | I |
 | `thebar` | reported evidential with weak evidence (rumor) | [Evidence strength](/evidentiality#evidence-strength) | I |
-| `thebem` | ONLY-IF clause hinge (necessary condition) | [Only if](/causation#only-if) | B |
-| `thehom` | IFF clause hinge (biconditional) | [Only if](/causation#only-if) | B |
+| `thebem` | ONLY-IF clause hinge (necessary condition) | [Only if, and if and only if](/causation#only-if) | B |
+| `thehom` | IFF clause hinge (biconditional) | [Only if, and if and only if](/causation#only-if) | B |
 | `thelol` | NOT-YET phasal (the change has not happened; the speaker expects it); -l firmly expected: but it will | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 | `thelom` | NOT-YET phasal (the change has not happened; the speaker expects it); -m expected | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
 <!-- /generated -->
