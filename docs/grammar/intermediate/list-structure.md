@@ -4,12 +4,12 @@ band: intermediate
 
 # What a list word reaches {#what-a-list-word-reaches}
 
-A word right after a list, or inside it, can describe the whole list, one item, or pair two lists item by item. Where it sits decides what it reaches.
+A word right after a list, or inside it, can describe the whole list or one item, or pair two lists item by item (*respectively*). Where it sits decides what it reaches. A list inside another list closes each part with its own join word.
 
 ### SHARED after the join {#shared-after-the-join}
 <a id="scope-fence-p-join"></a>
 
-When an adjective or extra noun is meant for the **whole list** (*both challenging*, *Azozon's dog and cat*), write it **immediately after** the join. Material in that spot is called SHARED: it describes each member of the list. A modifier that belongs to one item only stays on that item (after its head, or `gl-` before it).
+When an adjective or extra noun is meant for the whole list (*both challenging*, *Azozon's dog and cat*), write it immediately after the join word. Material in that spot is called **SHARED**: it describes each member of the list, so you write it once for all of them. A modifier that belongs to one item only stays on that item (after its head, or `gl-` before it).
 
 > `zodozel zogozel zal gamahum.`
 >
@@ -17,7 +17,7 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 >
 > "a challenging dog and a challenging cat."
 
-A hook belongs to one item the same way. Put the hook and its `/b/` right after that item, before the join word: **`om`** plus a resume gives *Azozon and his dog*.
+A hook belongs to one item the same way. Put the hook and its `/b/` right after that item, before the join word: `om` plus a resume (a pronoun that points back to Azozon) gives *Azozon and his dog*.
 
 > `zazozon zodozel om bazozor zal vowurol.`
 >
@@ -25,7 +25,7 @@ A hook belongs to one item the same way. Put the hook and its `/b/` right after 
 >
 > "Azozon and his dog walk."
 
-Only the item just before the join word takes a hook this way. A hook **right after** the join word is SHARED, like an adjective there: it belongs to every item. A hook anywhere else in the clause is an extra noun of the clause.
+Only the item just before the join word takes a hook this way. A hook right after the join word is SHARED, like an adjective there: it belongs to every item. A hook anywhere else in the clause is an extra noun of the clause.
 
 > `zodozel zogozel zal om bahelan vowurol.`
 >
@@ -33,7 +33,7 @@ Only the item just before the join word takes a hook this way. A hook **right af
 >
 > "Ahelan's dog and cat walk."
 
-**`gegunum`** + `/b/` does the same job as a `/ɡ/` word:
+A `/ɡ/` word that hosts a `/b/` is SHARED the same way, so `gegunum` (*ownership*) + `/b/` right after the join gives the whole list one owner:
 
 > `zodozel zogozel zam gegunum blazozon.`
 >
@@ -53,16 +53,24 @@ A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaini
 
 | Join family | Use of SHARED `/ɡ/` |
 |-------------|----------------------|
-| **a** | distributive property (*both ADJ*) or bundle description |
-| **a** + `/ɡ/`…**-x** | [collective](collectives.md#adjectives-g) (*ADJ together*) |
-| **oe** + SHARED scale | [equative](/comparatives#equatives) (`/ɡ/` or `/h/`) |
-| **o** / **uo** on NP | [comparison scale](/comparatives) (`/ɡ/` or `/h/`) |
-| **ao** on NP | sorted low to high (`/ɡ/` or `/h/`) |
-| **ua** / **ue** | kind / domain for universals |
+| `a` | distributive property (*both ADJ*) or bundle description |
+| `a` + `/ɡ/`…`-x` | [collective](collectives.md#adjectives-g) (*ADJ together*) |
+| `oe` + SHARED scale | [equative](/comparatives#equatives) (`/ɡ/` or `/h/`) |
+| `o` / `uo` on NP | [comparison scale](/comparatives) (`/ɡ/` or `/h/`) |
+| `ao` on NP | sorted low to high (`/ɡ/` or `/h/`) |
+| `ua` / `ue` | kind / domain for universals |
 
 More items of the same role go *before* the join, not after it.
 
-SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a scale after rank **`o`** / **`uo`**, equative **`oe`**, or route **`ao`**. After a verb join, a `/d/` object, a recipient `/b/`, or an `/h/` adverb is SHARED: every verb takes it. Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item. Any other `/h/` after a join is an ordinary adverb on the verb:
+SHARED material has to be able to describe what the join lists:
+
+| After a join of | What is SHARED |
+|-----------------|----------------|
+| nouns | a `/ɡ/`, which describes every noun; an `/h/` only as a scale after rank `o` / `uo`, equative `oe`, or route `ao` |
+| verbs | a `/d/` object, a recipient `/b/`, or an `/h/` adverb: every verb takes it |
+| adjectives | nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item |
+
+Any other `/h/` after a join is an ordinary adverb on the verb:
 
 > `zazozon zalazun zal hahunom vowurol.`
 >
@@ -90,11 +98,11 @@ Azozon saw the cat, and Alazun saw the dog. The lists pair up by position, so th
 
 | Rule | Pattern |
 |------|---------|
-| Where | right before the `a` join word (**-l** or **-m**) of the later list |
+| Where | right before the `a` join word (`-l` or `-m`) of the later list |
 | Partner | another `a` list in the same clause with the same number of items |
-| Only there | **`wubam`** goes nowhere else, and no other `/w/` word goes before a join word |
+| Only there | `wubam` goes nowhere else, and no other `/w/` word goes before a join word |
 
-The lists can be of different roles. A list of adjectives or verbs pairs with the subject list the same way: put **`wubam`** before the join word that closes it.
+The lists can be of different roles. A list of adjectives or verbs pairs with the subject list the same way: put `wubam` before the join word that closes it.
 
 > `zazozon zalazun zal gelazem gamezem wubam gal.`
 >
@@ -108,7 +116,7 @@ The lists can be of different roles. A list of adjectives or verbs pairs with th
 >
 > "Azozon and Alazun walk and run, respectively."
 
-Azozon is big and Alazun is small; Azozon walks and Alazun runs. Without **`wubam`**, an adjective right after a noun join is [SHARED](#shared-after-the-join): it describes every noun. When **`wubam`** and `gal` close the adjectives, they are a list of their own, so the first one is not shared.
+Azozon is big and Alazun is small; Azozon walks and Alazun runs. Without `wubam`, an adjective right after a noun join is [SHARED](#shared-after-the-join): it describes every noun. When `wubam` and `gal` close the adjectives, they are a list of their own, so the first one is not shared.
 
 Inside such a list, a plain `/ɡ/` after an item's hosted `/b/` is the next item, not a description of that `/b/`. The closing join decides it: with `gal` ending the row, every `/ɡ/` in it belongs to the list and so to the subjects.
 
@@ -122,7 +130,7 @@ With no closing `gal`, the row is not a list. The `/ɡ/` after a noun join is SH
 
 ### Fence nesting {#fence-nesting}
 
-When one list sits inside another (*(tea or coffee) and water*), write the inner items, then their join, then the outer item, then the outer join. Each join sits after only the stretch it closes. You nest by stacking right-close joins; a flat list still uses a single join after all its members. Clause joins group by position instead ([clause joins](/joins#clause-joins)).
+When one list sits inside another (*(tea or coffee) and water*), write the inner items, then their join, then the outer item, then the outer join. A list together with the join word that closes it is called a fence. Each join sits after only the stretch it closes, so the order of the joins shows which items group together. A flat list still uses a single join after all its members. Clause joins group by position instead ([clause joins](/joins#clause-joins)).
 
 | Pattern | Ageben | English |
 |---------|--------|---------|

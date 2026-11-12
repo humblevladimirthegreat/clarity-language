@@ -124,23 +124,14 @@
   "intermediate/ranges.md": {
     "bold-density": 1
   },
-  "intermediate/rank-joins.md": {
-    "bold-density": 3
-  },
   "intermediate/residue-and-former.md": {
     "long-paragraph": 1
   },
   "intermediate/role-parts.md": {
     "bold-density": 1
   },
-  "intermediate/set-joins.md": {
-    "bold-density": 1
-  },
   "intermediate/spans-as-words.md": {
     "bold-density": 2
-  },
-  "intermediate/universals-domains.md": {
-    "long-paragraph": 1
   },
   "intermediate/verb-and-stance-joins.md": {
     "bold-density": 1

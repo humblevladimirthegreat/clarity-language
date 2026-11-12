@@ -4,11 +4,15 @@ band: intermediate
 
 # Talking about a whole kind {#talking-about-a-whole-kind}
 
+English talks about a whole kind in several ways, and Ageben gives each its own form. *Every cat* and *no cat* put the kind after the *everything* or *no* join. Closing that *everything* list with a denial says *not every cat*. The named form of the join is the kind itself, as in *the dodo is extinct*.
+
+A generic pronoun says *one* or *people* as a rule. A SHARED word after the join names the set a claim covers (*everyone we know*). A tag after the join names each member in turn, so two members of one kind stay apart.
+
 ### Every kind {#universals-domains-generics}
 <a id="generics"></a>
 <a id="every-k"></a>
 
-When English would say *every cat* rather than *everything but the cat*, write **`ua`** and put the kind as a shared adjective after the join (`zual gogozel`). Any nouns listed before that join are leftovers excluded from that kind. The same **`ua`** join covers both *every K* and *everything but X*.
+When English would say *every cat* rather than *everything but the cat*, write `ua` and put the kind as a shared adjective after the join (`zual gogozel`). Any nouns listed before that join are leftovers excluded from that kind. The same `ua` join covers both *every K* (K for any kind) and *everything but X*.
 
 <!-- cheat-sheet: joins-hooks -->
 | Ageben | Use | English |
@@ -25,9 +29,9 @@ When English would say *every cat* rather than *everything but the cat*, write *
 >
 > "every cat."
 
-The kind word after **`ua`** / **`uo`** takes no **-x**: *every cat* already covers every member.
+The kind word after `ua` / `uo` takes no `-x`: *every cat* already covers every member.
 
-With a plain verb, *every cat* acts one by one: **`zual gogozel vehohel.`** is *each cat sits*. For all of them acting together, put [collective **-x**](/plurality) on the verb (`vehohelx`).
+With a plain verb, *every cat* acts one by one: `zual gogozel vehohel.` is *each cat sits*. For all of them acting together, put [collective `-x`](/plurality) on the verb (`vehohelx`).
 
 *Every cat* covers the cats the situation is about. An extra-noun [hook](/hooks#extra-noun) after the kind is a clause extra, as after any noun: it places the act, and it does not change which cats count.
 
@@ -37,7 +41,7 @@ With a plain verb, *every cat* acts one by one: **`zual gogozel vehohel.`** is *
 >
 > "Every cat sits at the house."
 
-*No cat* is the same shape with **`u`**: **`zul`** plus the kind.
+*No cat* is the same shape with `u`: `zul` plus the kind.
 
 > `zul gogozel vehohel.`
 >
@@ -45,7 +49,7 @@ With a plain verb, *every cat* acts one by one: **`zual gogozel vehohel.`** is *
 >
 > "No cat sits."
 
-The same shape with no verb says there is **none** of that kind (*there is no …*), like a lone noun saying a thing [exists](/predication#existence). Keep the order: `zodozel zul.` puts the dog before the join and means *not a dog*.
+The same shape with no verb says there is none of that kind (*there is no …*), like a lone noun saying a thing [exists](/predication#existence). Keep the order: `zodozel zul.` puts the dog before the join and means *not a dog*.
 
 > `zul godozel.`
 >
@@ -55,7 +59,7 @@ The same shape with no verb says there is **none** of that kind (*there is no �
 
 ### Not every (`zual` … `zul`) {#not-every}
 
-To deny *every cat* as a whole (*not every cat*, *not all cats*), close the **`zual`** fence with **`zul`**. The `ua` fence is the one item before the **`u`** join, so the join denies that item, as **`zul`** denies any single item. The claim is that the cats do not all sleep: some cat may still sleep.
+To deny *every cat* as a whole (*not every cat*, *not all cats*), close the `zual` fence with `zul`. The `ua` fence is the one item before the `u` join, so the join denies that item, as `zul` denies any single item. The claim is that the cats do not all sleep: some cat may still sleep.
 
 > `zual gogozel zul vezuvel.`
 >
@@ -74,7 +78,7 @@ Where the denial goes changes the claim:
 
 The last two come to the same thing: if not every cat sleeps, some cat stays awake. *Not every* denies the general claim, and the last row names one case of the denial.
 
-With **`zual`** / **`zuam`**, a further `/ɡ/` after the kind is a [property](/predication#classification-property) of every member: *every K is ADJ*. The listener can already pick out *every fire*, so the clause does not say *there is …*.
+With `zual` / `zuam`, a further `/ɡ/` after the kind is a [property](/predication#classification-property) of every member: *every K is ADJ*. The listener can already pick out *every fire*, so the clause does not say *there is …*.
 
 > `zual gavulul gohamul.`
 >
@@ -82,7 +86,7 @@ With **`zual`** / **`zuam`**, a further `/ɡ/` after the kind is a [property](/p
 >
 > "Every fire is hot."
 
-Open **`zuam`** makes the same claim but leaves the list of exceptions open, the way **-m** leaves any list open: *every cat, as far as I know*. You do not say whether you know of exceptions; you only do not rule them out. English says this as the everyday general claim (*cats are sleepy*, *cats in general*). A resumed noun, by contrast, is one cat already in the conversation.
+Open `zuam` makes the same claim but leaves the list of exceptions open, the way `-m` leaves any list open: *every cat, as far as I know*. You do not say whether you know of exceptions; you only do not rule them out. English says this as the everyday general claim (*cats are sleepy*, *cats in general*). A resumed noun, by contrast, is one cat already in the conversation.
 
 > `zuam gogozel guzemel.`
 >
@@ -96,11 +100,11 @@ Open **`zuam`** makes the same claim but leaves the list of exceptions open, the
 >
 > "A cat walks. The cat is sleepy."
 
-In the sentence after a [`blarl`](/dependents#hinges) on a general claim, a resume of the kind means **the same member**, one at a time: `zual gogozel vezuvel thohem blarl zogozer guzemel.` is *every cat sleeps if it is sleepy*, each cat with its own sleepiness.
+In the sentence after a [`blarl`](/dependents#hinges) on a general claim, a resume of the kind means the same member, one at a time: `zual gogozel vezuvel thohem blarl zogozer guzemel.` is *every cat sleeps if it is sleepy*, each cat with its own sleepiness.
 
-With **`zul`** the two readings say the same thing: `zul godozel gubulel.` is both *no dog is black* and *there is no black dog*.
+With `zul` the two readings say the same thing: `zul godozel gubulel.` is both *no dog is black* and *there is no black dog*.
 
-When a joined subject shares one thing marked [**IDENTITY**](/predication#identity) with no `/b/`, the members are compared with each other: they all have *the same one*.
+When a joined subject shares one thing marked [IDENTITY](/predication#identity) with no `/b/`, the members are compared with each other: they all have *the same one*.
 
 > `zazozon zalazun zal danal gorel varuyol.`
 >
@@ -108,7 +112,7 @@ When a joined subject shares one thing marked [**IDENTITY**](/predication#identi
 >
 > "Azozon and Alazun write the same book."
 
-For English *whoever* / *whatever*, use a bare [role compound](/roles#role-compounds), which names anyone who does it: *whoever walks* is *everyone who walks*. Use the agent compound (**`a`**) for *whoever*, and the undergoer compound (**`u`**) for *whatever*.
+For English *whoever* / *whatever*, use a bare [role compound](/roles#role-compounds), which names anyone who does it: *whoever walks* is *everyone who walks*. Use the agent compound (`a`) for *whoever*, and the undergoer compound (`u`) for *whatever*.
 
 > `zual gwuzowurol vozuyel.`
 >
@@ -118,13 +122,13 @@ For English *whoever* / *whatever*, use a bare [role compound](/roles#role-compo
 
 Use closed `zual` plus kind when the claim allows no exceptions, and open `zuam` plus kind when you leave the exceptions open. Free-choice *any cat will do* uses `zer`.
 
-**For *always*, use:** bare habitual **`hual`** ([restrictors](/restrictors)).
+**For *always*, use:** bare habitual `hual` ([restrictors](/restrictors)).
 
-Plural **-x** ([plurality](/plurality)) is different: it names an anchor plus nearby associates, not *every K*.
+Plural `-x` ([plurality](/plurality)) is different: it names an anchor plus nearby associates, not *every K*.
 
 ### The kind itself (`zuan`) {#kind-reference}
 
-English *the dodo is extinct* and *someone invented the megaphone* are not about any one dodo or megaphone, or about every one. They are about the **kind**: the one thing that lasts while its members come and go. Write **`zuan`** and put the kind as a shared adjective after it (`zuan gedozel`). The **-n** names the kind the way it names a person: one individual, not a set of members.
+English *the dodo is extinct* and *someone invented the megaphone* are not about any one dodo or megaphone, or about every one. They are about the **kind**: the one thing that lasts while its members come and go. Write **`zuan`** and put the kind as a shared adjective after it (`zuan gedozel`). The `-n` names the kind the way it names a person: one individual, not a set of members.
 
 > `zuan gedozel gedozem.`
 >
@@ -138,7 +142,7 @@ English *the dodo is extinct* and *someone invented the megaphone* are not about
 >
 > "Someone invented the megaphone."
 
-The kind is one individual, so its verb and adjectives stay singular, and the kind word takes no **-x**. The kind is a known thing, so a further `/ɡ/` is a property claim, not *there is …*.
+The kind is one individual, so its verb and adjectives stay singular, and the kind word takes no `-x`. The kind is a known thing, so a further `/ɡ/` is a property claim, not *there is …*.
 
 To choose, ask whether one member could have the property. If none could, the claim is about the kind: no single wolf is rare, extinct, or invented. *Wolves are sleepy* is about the members, since one wolf can be sleepy, so it takes `zual` or `zuam`.
 
@@ -154,7 +158,7 @@ To choose, ask whether one member could have the property. If none could, the cl
 | `zual gogozel` | each cat in this situation, no exceptions | *every cat* |
 | `zuam gogozel` | the members, as a rule | *cats in general* |
 | `zuan gogozel` | the kind itself, one individual | *the cat* (as a species) |
-| `zual gogozel` + `/v/`…**-x** | all the members in one shared act | *all the cats together* |
+| `zual gogozel` + `/v/`…`-x` | all the members in one shared act | *all the cats together* |
 | `zual gogozel zul` | the members, denied as a whole | *not every cat* |
 
 A [cause or condition](/causation) on a `zuan` clause is about the kind, not each member: why the kind is the way it is.
@@ -200,7 +204,7 @@ With `blayan`, the other party is the two of you together: people both of you kn
 
 ### Bound tags {#bound-tags}
 
-A [tag](/tag-pronouns#tag-pronouns) right after a `zual`, `zuam`, or `zul` fence, with or without the shared kind, **binds**: it names each member in turn, not the group. `zual gogozel zwal` is *every cat, each one A*, and a `zwar` after it is whichever cat is up. After an ordinary list, a tag still names the whole group (`zodozel zogozel zam zwal` is *a dog and a cat, call them A*), and *all of them together* stays [collective **-x**](/plurality) on the verb.
+A [tag](/tag-pronouns#tag-pronouns) right after a `zual`, `zuam`, or `zul` fence, with or without the shared kind, **binds**: it names each member in turn, not the group. `zual gogozel zwal` is *every cat, each one A*, and a `zwar` after it is whichever cat is up. After an ordinary list, a tag still names the whole group (`zodozel zogozel zam zwal` is *a dog and a cat, call them A*), and *all of them together* stays [collective `-x`](/plurality) on the verb.
 
 | Logic | Ageben | English |
 |-------|--------|---------|
@@ -213,7 +217,11 @@ A [tag](/tag-pronouns#tag-pronouns) right after a `zual`, `zuam`, or `zul` fence
 
 A constant cannot be bound: `zwan` after `zual gogozel` is not a sentence. Nor can a tag sit on the `zul` that denies a `zual` fence: in `zual gogozel zul` (*not every cat*) the denial leaves no member for A to name; *some cat A does not sleep* is `zogozel zwal vezuvel vul.`
 
-**Reach.** A bound tag holds from the phrase that assigns it to the end of its sentence, and through every sentence a [stand-in](/dependents#hinges) in that stretch points to (a `blarl` condition, a `darl` content, and so on, as deep as they nest). At the end of that sentence it expires, and a recall after that is not a sentence: after `zual gogozel zwal vezuvel.`, a `zwar` in the next sentence fails the way English *Every farmer owns a donkey. He is happy.* fails, while *A farmer owns a donkey. He is happy.* works, as does `zogozel zwal vezuvel. zwar guzemel.` A tag assigned inside that reach expires with it, even one on a plain phrase: under *every dog*, *a cat O* is a different cat for each dog. A tag on a plain phrase outside any bound reach lasts as the [tag page](/tag-pronouns#tag-pronouns) says.
+**Reach.** A bound tag holds from the phrase that assigns it to the end of its sentence, and through every sentence a [stand-in](/dependents#hinges) in that stretch points to (a `blarl` condition, a `darl` content, and so on, as deep as they nest). At the end of that sentence it expires, and a recall after that is not a sentence.
+
+After `zual gogozel zwal vezuvel.`, a `zwar` in the next sentence fails the way English *Every farmer owns a donkey. He is happy.* fails, while *A farmer owns a donkey. He is happy.* works, as does `zogozel zwal vezuvel. zwar guzemel.`
+
+A tag assigned inside that reach expires with it, even one on a plain phrase: under *every dog*, *a cat O* is a different cat for each dog. A tag on a plain phrase outside any bound reach lasts as the [tag page](/tag-pronouns#tag-pronouns) says.
 
 > `zual gogozel zwal vezuvel thohem blarl zwar guzemel.`
 >
