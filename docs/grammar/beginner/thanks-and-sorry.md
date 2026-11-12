@@ -6,7 +6,7 @@ band: beginner
 
 ### Thanks and sorry {#thanks-sorry}
 
-Ageben has no set phrase for *thank you*. Say that your sake **is met**: a lone `/th/` met word is a whole sentence about you, and saying it to the one who acted is the thanks. Pick the sake that was actually served; the ending says how long the payoff lasts ([endings on met](sakes.md#time-horizon-endings-on-met)). (cue: thanks = *my sake is met*)
+To thank someone in Ageben, you have no set phrase like *thank you*. Instead you say that your sake is met: a lone `/th/` met word is a whole sentence about you, and saying it to the one who acted is the thanks. Pick the sake that was actually served, so the thanks tells them what their help did for you; the ending says how long the payoff lasts ([endings on met](sakes.md#time-horizon-endings-on-met)). (cue: thanks = *my sake is met*)
 
 > `thawetham.`
 >
@@ -27,7 +27,7 @@ Ageben has no set phrase for *thank you*. Say that your sake **is met**: a lone 
 | `…tham` | the help, horizon unstated (default) | *thank you* |
 | `…thar` | the help landed right when needed | *thanks, that got me through* |
 
-*Sorry* is about **their** sake, not yours. A lone unmet word would say *my* sake went unmet, so name whose sake in a `bl-` word right after it. The ending is the same [changeability](sakes.md#sake-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your sake*)
+*Sorry* is about *their* sake, not yours. A lone unmet word would say *my* sake went unmet, so name whose sake in a `bl-` word right after it. The ending is the same [changeability](sakes.md#sake-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your sake*)
 
 > `thawethum blawan.`
 >
@@ -44,7 +44,7 @@ Ageben has no set phrase for *thank you*. Say that your sake **is met**: a lone 
 
 The `/b/` can name anyone: `thawethum blalazun.` owns up to a harm to Alazun, even when you are telling someone else.
 
-**Compare with:** a met word with a `/b/` person (`thawetham blalazun.`) says the act met **Alazun's** sake: *Alazun appreciated it*, not your thanks.
+**Compare with:** a met word with a `/b/` person (`thawetham blalazun.`) says the act met *Alazun's* sake: *Alazun appreciated it*, not your thanks.
 
 ### Practice {#beginner-practice}
 

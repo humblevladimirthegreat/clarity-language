@@ -54,7 +54,7 @@ These roots work the same way:
 
 ### A feeling word {#feeling-word}
 
-A label does not say what you need or what the feeling makes you want to do. A **feeling word** says both. Take a [sake word](sakes.md#word-shape), which already says which need is involved and whether it is met, and add two things to its end: one vowel for the **urge**, what the feeling pulls you to do, and a last **-m**. Alone on `/th/` it is a whole sentence about you, as a lone met word is in [thanks](thanks-and-sorry.md#thanks-sorry). (cue: a feeling word = a sake word + what it makes you want to do)
+A label does not say what you need or what the feeling makes you want to do. A **feeling word** says both. Take a [sake word](sakes.md#word-shape), which already says which need is involved and whether it is met, and add two things to its end: one vowel for the **urge**, what the feeling pulls you to do, and a last `-m`. Alone on `/th/` it is a whole sentence about you, as a lone met word is in [thanks](thanks-and-sorry.md#thanks-sorry). (cue: a feeling word = a sake word + what it makes you want to do)
 
 > `thudathumum.`
 >
@@ -62,7 +62,7 @@ A label does not say what you need or what the feeling makes you want to do. A *
 >
 > "Something is off, and I want to get away."
 
-Build it from the plain sake word: `thudathum` (a sake, unmet, modifiable) + `u` (the urge to get away) + **-m** = `thudathumum`. The sake word's own ending now sits mid-word and keeps its meaning. The last ending says how long the feeling itself lasts, and **-m** leaves that open.
+Build it from the plain sake word: `thudathum` (a sake, unmet, modifiable) + `u` (the urge to get away) + `-m` = `thudathumum`. The sake word's own ending now sits mid-word and keeps its meaning. The last ending says how long the feeling itself lasts, and `-m` leaves that open.
 
 The unspecified sake `uda` says that some need is involved without picking one. When you can tell which need it is, put its root in and change nothing else:
 
@@ -83,7 +83,7 @@ You now have four ways to say how you feel, and each says more than the one befo
 
 ### The four urges {#urges}
 
-The urge vowel is the vowel of a one-vowel [hook](hooks.md#extra-noun): *in*, *at*, *for*, or *from*. On a feeling word it is read as the way the feeling moves you: to stay in it, to act on someone, to do something for someone, or to move off. Saying the urge before you follow it leaves you a choice: follow it or not. The sake beside it names the need, so it tells you what to ask for.
+The urge vowel says how the feeling moves you: to stay in it, to act on someone, to do something for someone, or to move off. It is the vowel of a one-vowel [hook](hooks.md#extra-noun) (*in*, *at*, *for*, or *from*), read on a feeling word as that movement. Saying the urge before you follow it leaves you a choice: follow it or not. The sake beside it names the need, so it tells you what to ask for.
 
 > `thawethamam.`
 >
@@ -93,18 +93,18 @@ The urge vowel is the vowel of a one-vowel [hook](hooks.md#extra-noun): *in*, *a
 
 | Ageben | Use | English | Belongs when | Cue |
 |--------|-----|---------|--------------|-----|
-| **`a`** | STAYING | *stay in it*: savor it, sit with it, no pull to move | it is a good moment, or a loss that needs time | **a** ≈ `al` *in*: you stay in the feeling |
-| **`e`** | AIMED | *act on a target*: confront, thank, press for | something can be said or done to someone | **e** ≈ `el` *at*: the feeling lands at someone |
-| **`o`** | GIVING | *do something for someone*: give back, make amends | you were helped, or you caused a cost | **o** ≈ `ol` *for*: you do it for them |
-| **`u`** | AWAY | *move off*: avoid, leave, hide | the danger is real, or you need room | **u** ≈ `ul` *from*: you move away from it |
+| `a` | STAYING | *stay in it*: savor it, sit with it, no pull to move | it is a good moment, or a loss that needs time | `a` ≈ `al` *in*: you stay in the feeling |
+| `e` | AIMED | *act on a target*: confront, thank, press for | something can be said or done to someone | `e` ≈ `el` *at*: the feeling lands at someone |
+| `o` | GIVING | *do something for someone*: give back, make amends | you were helped, or you caused a cost | `o` ≈ `ol` *for*: you do it for them |
+| `u` | AWAY | *move off*: avoid, leave, hide | the danger is real, or you need room | `u` ≈ `ul` *from*: you move away from it |
 
 No urge is the correct one to have. Each has situations where it belongs, and **Belongs when** names some. When two pulls mix, the urge names the stronger one.
 
-With the last ending left at **-m**, a feeling word is four choices: the sake, met or unmet, the sake word's ending, and the urge. Two of them have a ready answer when you are unsure: `uda` for the sake, and `a` when nothing pulls you to move.
+With the last ending left at `-m`, a feeling word is four choices: the sake, met or unmet, the sake word's ending, and the urge. Two of them have a ready answer when you are unsure: `uda` for the sake, and `a` when nothing pulls you to move.
 
 ### Who the urge points at {#urge-landmark}
 
-Three of the urges move you relative to someone or something: `e` at them, `o` for them, `u` away from them. Name that **landmark** in a `bl-` word right after the feeling word. You can then say who you want to talk to, make it up to, or get away from. `a` has no landmark, because staying in a feeling points at no one.
+Three of the urges move you relative to someone or something: `e` at them, `o` for them, `u` away from them. Name that landmark in a `bl-` word right after the feeling word. You can then say who you want to talk to, make it up to, or get away from. `a` has no landmark, because staying in a feeling points at no one.
 
 > `thunathumem blalazun.`
 >
@@ -124,7 +124,7 @@ With no `bl-` word, the urge points at someone unnamed: `thunathumem.` is *my sa
 
 ### A feeling about a thing {#feeling-about-a-thing}
 
-A feeling word is still a sake word, so it also goes on a noun the way a plain sake word does. On `/ɡ/` after something of yours, the feeling is about that thing ([personal possession](sakes.md#personal-possession)). For a noun that is not yours, put the feeling word on `/w/` right before **`goyom`**, *as stimulus*. Either way the noun is what the feeling is about.
+A feeling word is still a sake word, so it also goes on a noun the way a plain sake word does. On `/ɡ/` after something of yours, the feeling is about that thing ([personal possession](sakes.md#personal-possession)). For a noun that is not yours, put the feeling word on `/w/` right before `goyom`, *as stimulus*. Either way the noun is what the feeling is about.
 
 > `zobewom guwathamam.`
 >
@@ -138,7 +138,7 @@ A feeling word is still a sake word, so it also goes on a noun the way a plain s
 >
 > "The memo costs me connection, and I want to take it up with Alazun."
 
-The landmark still comes last, after **`goyom`**. With no `bl-` word, `e`, `o`, or `u` points at the noun itself: `zonal wawethumum goyom.` is *the memo costs me connection, and I want to get away from it*.
+The landmark still comes last, after `goyom`. With no `bl-` word, `e`, `o`, or `u` points at the noun itself: `zonal wawethumum goyom.` is *the memo costs me connection, and I want to get away from it*.
 
 ### Feeling with no object {#feeling-no-object}
 

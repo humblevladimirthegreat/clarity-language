@@ -18,18 +18,18 @@ To ask what something is **like** (*What color is it?*, *What kind of dog?*), pu
 >
 > "Big."
 
-| Ageben | English |
 <!-- cheat-sheet: talking -->
+| Ageben | English |
 |--------|---------|
 | **`gar`** | *What is it like?* / *What kind?* |
 | **`ger`** | *Like anything in particular?* |
 | **`gur`** | *What else is it like?* |
 
-**Compare with:** *like what?* is the likeness blank, **`hewem blar`**: it asks for a model to resemble, not a property.
+**Compare with:** *like what?* is the likeness blank, `hewem blar`: it asks for a model to resemble, not a property.
 
 ### When? {#when}
 
-To ask *when?* / *in what case?*, put the blank **`har`** in the `/h/` slot (or **`war`** on `/w/`).
+To ask *when?* or *in what case?*, put the blank `har` on `/h/`, the role that names an occasion (or `war` on `/w/`). The answer names the time or the case.
 
 > `yel har zahelan vowurol.`
 >
@@ -43,7 +43,7 @@ To ask *when?* / *in what case?*, put the blank **`har`** in the `/h/` slot (or 
 
 ### Where? {#where}
 
-To ask *where?*, write an [extra-noun hook](hooks.md#extra-noun) (a short word like *at*, *in*, or *from* that brings in a `/b/` noun), then the blank **`bar`** in the `/b/` slot after it. The hook picks which *where* you mean.
+To ask *where?*, write an [extra-noun hook](hooks.md#extra-noun) (a short word like *at*, *in*, or *from* that brings in a `/b/` noun), then the blank `bar` on `/b/` after it. The hook picks which *where* you mean.
 
 > `yel el bar zahelan vowurol.`
 >
@@ -57,10 +57,10 @@ To ask *where?*, write an [extra-noun hook](hooks.md#extra-noun) (a short word l
 >
 > "What does the dog sleep in?"
 
-| Ageben | English |
 <!-- cheat-sheet: talking -->
+| Ageben | English |
 |--------|---------|
-| **`el bar`** | *Where (at)?* |
+| **`el bar`** | *Where at?* |
 | **`al bar`** | *In what?* |
 | **`ul bar`** | *Where from?* |
 | **`ol bar`** | *For whom?* |
@@ -69,11 +69,11 @@ To ask *where?*, write an [extra-noun hook](hooks.md#extra-noun) (a short word l
 
 Answer with the hook and the landmark, keeping the `/b/` letter: `el bohehal.` ("At the house.").
 
-**Compare with:** *when?* is **`har`** on `/h/`. Occasions are times or cases, so a place never goes there.
+**Compare with:** *when?* is `har` on `/h/`. Occasions are times or cases, so a place never goes there.
 
 ### Whose? {#whose}
 
-To ask *whose?*, write the hook **`om`** (*used by*) after the thing, then the blank **`bar`**: the same shape as *where?*. Because **`om`** says the `/b/` noun uses the thing, the question asks *who uses it?*
+To ask *whose?*, write the hook `om` (*used by*) after the thing, then the blank `bar`: the same shape as *where?*. Because `om` says the `/b/` noun uses the thing, the question asks *who uses it?*
 
 > `yel zodozel om bar vowurol.`
 >
@@ -85,7 +85,7 @@ Answer with the hook and the user, keeping the `/b/` letter: `om bazozon.` ("Azo
 
 ### How? {#how}
 
-To ask *how?*, use the same shape as *where?*: a word that says how the answer relates to the event, then the blank **`blar`**. For manner (*in what way?*), that word is [**`hewem`**](relations.md) *like*, so the question asks *like what?*
+To ask *how?*, use the same shape as *where?*: a word that says how the answer relates to the event, then the blank `blar`. For manner (*in what way?*), that word is [`hewem`](relations.md) *like*, so the question asks *like what?*
 
 > `yel hewem blar zazozon vowurol.`
 >
@@ -93,11 +93,11 @@ To ask *how?*, use the same shape as *where?*: a word that says how the answer r
 >
 > "How does Azozon walk?" (*like what?*)
 
-To ask about means (*with what?*), use the *using* hook with the blank: **`aol bar`**.
+To ask about means (*with what?*), use the *using* hook with the blank: `aol bar`.
 
 ### Why? {#why}
 
-To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in case*), then the blank **`blar`**. Pick the word for the kind of reason you want.
+To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in case*), then the blank `blar`. Pick the word for the kind of reason you want.
 
 > `yel thahum blar zazozon vowurol.`
 >
@@ -113,8 +113,8 @@ To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in
 >
 > "What do you walk for?"
 
-| Ageben | English |
 <!-- cheat-sheet: talking -->
+| Ageben | English |
 |--------|---------|
 | **`thahum blar`** | *Why?* (*because of what?*) |
 | **`thovam blar`** | *What for?* (*what is your aim?*) |

@@ -6,9 +6,7 @@ band: beginner
 
 ### Speech act: firm and soft {#speech-act}
 
-You already mark whether a turn is a statement, question, command, or prohibition. The ending of the act word adds **how firmly** you mean it. English softens with extra words (*please*, *perhaps*, *for what it's worth*); Ageben changes only the ending.
-
-The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a** statement, **o** command, **e** question, **u** prohibition). With **-l** you stand behind the act. With **-m** you offer it softly and leave the other person free to take it up or not. **-r** marks an act you hold only for now. Write the act word whenever the turn is not a plain statement; a period still lets you omit **`yal`**.
+You already mark whether a turn is a statement, question, command, or prohibition. English softens any of these with extra words (*please*, *perhaps*, *for what it's worth*); Ageben changes only the ending of the act word, which is `y` + vowel + ending. With `-l` you stand behind the act, and with `-m` you offer it softly and leave the other person free to take it up or not. So you can put forward a view, ask, or make a request without insisting.
 
 > `yam zazozon vowurol.`
 >
@@ -16,21 +14,23 @@ The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a
 >
 > "For what it's worth, Azozon walks."
 
-**Compare with:** [MAY](knowing.md#may) (`thomam`) marks the scene as *could be*. **`yam`** is still a statement; you put it forward without insisting the other person take it up.
+The vowel still picks the act as before (`a` statement, `o` command, `e` question, `u` prohibition). A third ending, `-r`, marks an act you hold only for now. Write the act word whenever the turn is not a plain statement; a period still lets you omit `yal`.
+
+**Compare with:** [MAY](knowing.md#may) (`thomam`) marks the scene as *could be*. `yam` is still a statement; you put it forward without insisting the other person take it up.
 
 <!-- cheat-sheet: talking -->
 | Ageben | Use | Cue |
 |--------|-----|-----|
-| **`yal`** | **statement**: claim or description | **a** add + **-l**: stand behind |
-| **`yam`** | **soft statement**: offered, not insisted (*for what it's worth*) | **a** add + **-m**: hold, but leave it open |
-| **`yel`** | **question**: yes/no and fill-in ask | **e** choice + **-l**: collapse to an answer |
-| **`yem`** | **soft question**: wonder, gentle ask, offer-like | **e** choice + **-m**: ask without pinning |
-| **`yol`** | **command**: instruction | **o** rank + **-l**: this is what to do |
-| **`yom`** | **request**: soft directive (*please…*) | **o** rank + **-m**: ask, don’t command |
-| **`yul`** | **prohibition**: *don’t…* (firm) | **u** undo + **-l**: take the action back |
-| **`yum`** | **soft prohibition**: *please don’t…* / *I’d rather you not…* | **u** undo + **-m**: prefer they don’t |
+| **`yal`** | **statement**: claim or description | `a` add + `-l`: stand behind |
+| **`yam`** | **soft statement**: offered, not insisted (*for what it's worth*) | `a` add + `-m`: hold, but leave it open |
+| **`yel`** | **question**: yes/no and fill-in ask | `e` choice + `-l`: collapse to an answer |
+| **`yem`** | **soft question**: wonder, gentle ask, offer-like | `e` choice + `-m`: ask without pinning |
+| **`yol`** | **command**: instruction | `o` rank + `-l`: this is what to do |
+| **`yom`** | **request**: soft directive (*please…*) | `o` rank + `-m`: ask, don’t command |
+| **`yul`** | **prohibition**: *don’t…* (firm) | `u` undo + `-l`: take the action back |
+| **`yum`** | **soft prohibition**: *please don’t…* / *I’d rather you not…* | `u` undo + `-m`: prefer they don’t |
 
-For *let's*, make a soft request with inclusive *we*, **`aya`** ([special pronouns](pronouns.md#special-pronouns)), as the subject. *Let's not* is the soft prohibition.
+For *let's*, make a soft request with inclusive *we*, `aya` ([special pronouns](pronouns.md#special-pronouns)), as the subject. *Let's not* is the soft prohibition.
 
 > `yom vowurol zayan.`
 >
@@ -44,19 +44,19 @@ For *let's*, make a soft request with inclusive *we*, **`aya`** ([special pronou
 >
 > "Let's not sleep."
 
-A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` words, immediately before the first act word, or before a body that defaults to a statement.
+A [hook](hooks.md) (`al` / `am` / …) may sit among the opening `/y/` words, immediately before the first act word, or before a body that defaults to a statement.
 
 #### For now (**-r**) {#act-r}
 
-**-r** marks an act you hold only **for now**: provisional, and you expect to revisit it.
+`-r` marks an act you hold only **for now**: provisional, and you expect to revisit it.
 
 <!-- cheat-sheet: talking -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`yar`** | **provisional statement**: held until something better comes | *as things stand* / *for now, I take it that…* | **a** add + **-r**: a claim held for now |
-| **`yer`** | **working question**: asked to proceed, expect to re-ask | *just checking, …?* / *for now, is it…?* | **e** choice + **-r**: an ask for now |
-| **`yor`** | **command for now**: do this until told otherwise | *for now, …* / *go ahead and … for now* | **o** rank + **-r**: an instruction you expect to revisit |
-| **`yur`** | **hold off**: don't, for now | *hold off on …* / *don't … yet* | **u** undo + **-r**: take the action back, for now |
+| **`yar`** | **provisional statement**: held until something better comes | *as things stand* / *for now, I take it that…* | `a` add + `-r`: a claim held for now |
+| **`yer`** | **working question**: asked to proceed, expect to re-ask | *just checking, …?* / *for now, is it…?* | `e` choice + `-r`: an ask for now |
+| **`yor`** | **command for now**: do this until told otherwise | *for now, …* / *go ahead and … for now* | `o` rank + `-r`: an instruction you expect to revisit |
+| **`yur`** | **hold off**: don't, for now | *hold off on …* / *don't … yet* | `u` undo + `-r`: take the action back, for now |
 
 > `yur vowurol.`
 >
