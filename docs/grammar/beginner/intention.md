@@ -10,7 +10,7 @@ English *will* and *going to* can state either an **intention** (what someone me
 ### Plan
 <a id="plan-predict"></a>
 
-To say what you **mean to do** (*I plan to walk*), put **`thago`** plus an ending on `/th/` before the ordinary verb. This `/th/` word is called **PLAN**. Like any `/th/` word with nothing else marked, the plan is **yours**, the speaker's. It covers the whole sentence, wherever it sits, and the sentence now says what you intend, not that the walk happens. PLAN is about a **later** act. The ending says how fully you have planned it. (Cue: 🗺️ A map charts a course you mean to take.)
+To say what you mean to do (*I plan to walk*), put **`thago`** plus an ending on `/th/` before the ordinary verb. This `/th/` word is called **PLAN**, and it is about a later act. Like any `/th/` word with nothing else marked, the plan is yours, the speaker's. The sentence now says what you intend, not that the walk happens. (Cue: 🗺️ A map charts a course you mean to take.)
 
 > `zuwen thagom vowurol.`
 >
@@ -18,7 +18,7 @@ To say what you **mean to do** (*I plan to walk*), put **`thago`** plus an endin
 >
 > "I plan to walk."
 
-The plan stays yours when someone else does the act: `zazozon thagom vowurol` is *I plan for Azozon to walk*, not Azozon's own plan. A plan is in a mind, so someone else's plan is their view, and you need to say how you know it. In a question, PLAN asks about the listener's plan: `yel zawan vowurol thagom.` is *Do you plan to walk?*
+PLAN covers the whole sentence, wherever it sits. The plan stays yours when someone else does the act: `zazozon thagom vowurol` is *I plan for Azozon to walk*, not Azozon's own plan. A plan is in a mind, so someone else's plan is their view, and you need to say how you know it. In a question, PLAN asks about the listener's plan: `yel zawan vowurol thagom.` is *Do you plan to walk?*
 
 As a plain noun or verb, the root keeps its own meaning (`zagol` *a map*; `vagol` *to plan*). Leave PLAN out when you are only saying what happens.
 
@@ -26,13 +26,13 @@ As a plain noun or verb, the root keeps its own meaning (`zagol` *a map*; `vagol
 <a id="plan-map-resolution"></a>
 <a id="plan-endings"></a>
 
-The ending on PLAN says how much of the plan is worked out: **-l** for a plan with backups ready, **-m** for the steps, **-r** for just the direction. The three run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). With **-n**, the word is an ordinary name. **`thagom`** is the soft default: it claims a plan without saying how much is worked out.
+The ending on PLAN says how fully you have planned it: `-l` for a plan with backups ready, `-m` for the steps, `-r` for just the direction. The three run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). With `-n`, the word is an ordinary name. `thagom` is the soft default: it claims a plan without saying how much is worked out.
 
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thagol`** | **atlas** | *am fully prepared to …*: hurdles are anticipated and prepared for | `agol` *plan-atlas* | **-l** ≈ lasting (detours already drawn, so it holds up) |
-| **`thagom`** | **itinerary** (soft default) | *plan to …*: steps laid out, or detail unstated | `agom` *plan-itinerary* | **-m** ≈ middle (the route, no backups) |
-| **`thagor`** | **sketch** | *intend to …*: the direction, details left open | `agor` *plan-sketch* | **-r** ≈ right now (a rough direction) |
+| **`thagol`** | **atlas** | *am fully prepared to …*: hurdles are anticipated and prepared for | `agol` *plan-atlas* | `-l` ≈ lasting (detours already drawn, so it holds up) |
+| **`thagom`** | **itinerary** (soft default) | *plan to …*: steps laid out, or detail unstated | `agom` *plan-itinerary* | `-m` ≈ middle (the route, no backups) |
+| **`thagor`** | **sketch** | *intend to …*: the direction, details left open | `agor` *plan-sketch* | `-r` ≈ right now (a rough direction) |
 
 > `zuwen thagor vowurol.`
 >
@@ -48,7 +48,7 @@ The ending on PLAN says how much of the plan is worked out: **-l** for a plan wi
 
 Saying *I will* in English can hide whether you have a direction, the steps, or backups too. Picking the ending makes that level of detail audible. No level is better: match the detail to the plan, and a sketch is often all a small or early plan needs. For a plan that matters, the atlas ending is a prompt to ask what could go wrong and have an answer ready.
 
-You know how far your own plan is worked out, so a listener takes **`thagom`** from you to mean you have no backups yet: if you had them, you would have said **`thagol`**. You can still say outright that you have not thought about backups.
+You know how far your own plan is worked out, so a listener takes `thagom` from you to mean you have no backups yet: if you had them, you would have said `thagol`. You can still say outright that you have not thought about backups.
 
 ### Practice {#beginner-practice}
 

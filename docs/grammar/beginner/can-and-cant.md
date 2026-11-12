@@ -7,14 +7,14 @@ band: beginner
 ### Ability and incapability {#ability}
 <a id="incapability"></a>
 
-English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Ageben you fold that meaning into the verb or adjective itself. After the root, write **`x`**, then a vowel for *can* or for which kind of *can't*, then the same [ending](word-endings.md) the word would have without it.
+English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Ageben the meaning goes inside the verb or adjective itself: after the root, write **`x`**, then a vowel for *can* or for which kind of *can't*, then the same [ending](word-endings.md) the word would have without it. That vowel, the **ability vowel**, says whether they can, or whether they can't just for now, not yet, or never, which English *can't* leaves unsaid.
 
-The ability vowel says how much can-do is in (full, a dip, not yet, never). You are not combining options: a dip is still can-do, not a shorter list.
+You are not combining options: a dip (can't just for now) is still can-do, not a shorter list.
 
 #### Can (`xa`)
 <a id="can"></a>
 
-To say someone **can** do something (*can sing*) or can have a quality, keep the verb or adjective and add **`x`** and **`a`** after the root, before the usual ending. The first letter stays `/v/` for an action or `/ɡ/` for a quality, and no separate word for *can* is needed. Only a verb or an adjective takes the ability vowel; a noun, a name, or an `/h/` word does not, apart from the special word in when there is no single verb. (Cue: **a** ≈ full can-do)
+To say someone can do something (*can sing*) or can have a quality, keep the verb or adjective and add `x` and `a` after the root, before the usual ending. The first letter stays `/v/` for an action or `/ɡ/` for a quality, and no separate word for *can* is needed. Only a verb or an adjective takes the ability vowel; a noun, a name, or an `/h/` word does not, apart from the special word in *When there is no single verb*. (Cue: `a` ≈ full can-do)
 
 > `zazozon vozuyexal.`
 >
@@ -24,7 +24,7 @@ To say someone **can** do something (*can sing*) or can have a quality, keep the
 
 As a quality, the same word goes on `/ɡ/`: `zazozon gozuyexal` (*Azozon is able to sing*). Without the ability vowel, `zazozon vozuyel` is just *Azozon sings*.
 
-The ending is the one the verb or adjective would have anyway (**-l** concrete, **-m** abstract, **-n** name, **-r** resume). It does not change what kind of *can* you mean:
+The ending is the one the verb or adjective would have anyway (`-l` concrete, `-m` abstract, `-n` name, `-r` resume). It does not change what kind of *can* you mean:
 
 > `zalazun vozuyexam.`
 >
@@ -32,7 +32,7 @@ The ending is the one the verb or adjective would have anyway (**-l** concrete, 
 >
 > "Alazun can express themself."
 
-For English *so can I* / *can too*, [resume](pronouns.md#resume-r) the verb and keep the **`x`** and vowel: the whole stem, then **`x`**, the vowel, and **-r**. A plain resume would drop the *can*.
+For English *so can I* / *can too*, [resume](pronouns.md#resume-r) the verb and keep the `x` and vowel: the whole stem, then `x`, the vowel, and `-r`. A plain resume would drop the *can*.
 
 > `zazozon vowuroxal. zalazun vowuroxar.`
 >
@@ -43,7 +43,7 @@ For English *so can I* / *can too*, [resume](pronouns.md#resume-r) the verb and 
 #### Can be (role + ability)
 <a id="role-ability"></a>
 
-To say someone **can be** something (*can be the author*, *can be a teacher*) rather than that they can do the act, put the ability vowel on a [role compound](roles.md#role-compounds) on `/ɡ/`. Write the role compound, then **`x`** and the ability vowel, then the ending. This works only on `/ɡ/`, the same slot that says *is a teacher* ([classification](predication.md#classification)). The role compound keeps its [reach](roles.md#one-time-or-a-practice) at the front, so reach and ability combine: **`u`** is the role this once (*can be the author* of this), **`o`** the role as a practice (*can be a teacher*).
+To say someone *can be* something (*can be the author*, *can be a teacher*) rather than that they can do the act, put the ability vowel on a [role compound](roles.md#role-compounds) on `/ɡ/`. Write the role compound, then `x` and the ability vowel, then the ending. This works only on `/ɡ/`, the same role that says *is a teacher* ([classification](predication.md#classification)). The role compound keeps its [reach](roles.md#one-time-or-a-practice) at the front, so reach and ability combine: `u` is the role this once (*can be the author* of this), `o` the role as a practice (*can be a teacher*).
 
 > `zalazun gwuzaruyoxam.`
 >
@@ -63,7 +63,7 @@ To say someone **can be** something (*can be the author*, *can be a teacher*) ra
 <a id="ability-changeability"></a>
 <a id="ability-stance"></a>
 
-English *can't* does not say whether this is just for now, not yet, or never. After **`x`**, pick **`e`**, **`o`**, or **`u`** for that difference.
+English *can't* does not say whether this is just for now, not yet, or never. After `x`, pick `e`, `o`, or `u` for that difference. If you are not sure how lasting it is, pick `e`.
 
 > `zalazun vozuyexol.`
 >
@@ -74,7 +74,7 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 <!-- cheat-sheet: knowing-intending -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`xa`** | they can (this verb or quality) | *can* | **a** ≈ full |
+| **`xa`** | they can (this verb or quality) | *can* | `a` ≈ full |
 | **`xo`** | they can't, just for now (they usually can) | *can't right now* | **o** ≈ a dip |
 | **`xe`** | they can't yet (use this if you are not sure how lasting it is) | *can't yet* | **e** ≈ not yet |
 | **`xu`** | they can never / it is impossible | *can never* / *impossible* | **u** ≈ never |
@@ -91,11 +91,11 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 >
 > "Azozon can never run."
 
-**Compare with:** a [sake](sakes.md) word puts **`th`** and a vowel after a sake root: **`tha` / `thu`** is met / unmet (`thuwathum` *competence unmet*). **`x`** and a vowel after a verb or adjective root is *can* / *can't*.
+**Compare with:** a [sake](sakes.md) word puts `th` and a vowel after a sake root: `tha` / `thu` is met / unmet (`thuwathum` *competence unmet*). `x` and a vowel after a verb or adjective root is *can* / *can't*.
 
 ### When there is no single verb (`oda`) {#ability-fallback}
 
-Sometimes English *can* / *can't* is not about one named verb or quality: the activity takes more than one root, you just want a bare *can't*, or the *can* covers the whole sentence. Then there is no single root to put **`x`** into. Use the special word **`oda`**: after **`oda`**, write the same **`x`**, vowel, and ending as on a verb. Put it on `/h/` when it is about the whole clause, or on `/w/` immediately before the adjective it grades. That lets you say *can* / *can't* without naming the activity in that word. Prefer the verb itself whenever one root is enough. (Cue: 🥣 *bowl*: it holds what you can do)
+Sometimes English *can* / *can't* is not about one named verb or quality: the activity takes more than one root, you just want a bare *can't*, or the *can* covers the whole sentence. With no single root to put `x` into, write the special word **`oda`** with the same `x`, vowel, and ending as a verb: on `/h/` when it is about the whole clause, or on `/w/` immediately before the adjective it grades. That lets you say *can* / *can't* without naming the activity in that word. Prefer the verb itself whenever one root is enough. (Cue: 🥣 *bowl*: it holds what you can do)
 
 > `zazozon hodaxol.`
 >

@@ -33,10 +33,6 @@
     "bold-density": 1,
     "long-paragraph": 1
   },
-  "beginner/can-and-cant.md": {
-    "beginner-lead": 1,
-    "long-paragraph": 1
-  },
   "beginner/clause.md": {
     "beginner-lead": 1,
     "bold-density": 1
@@ -44,11 +40,6 @@
   "beginner/firm-soft.md": {
     "beginner-lead": 1,
     "bold-density": 1,
-    "long-paragraph": 1
-  },
-  "beginner/intention.md": {
-    "beginner-lead": 1,
-    "bold-density": 2,
     "long-paragraph": 1
   },
   "beginner/word-endings.md": {
