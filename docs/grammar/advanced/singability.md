@@ -4,22 +4,40 @@ band: advanced
 
 # Voicing Ageben {#singing-and-speech-edges}
 
+Ageben's word shapes keep it easy to sing, and each vowel has its own pitch above your home note. A few small words that change a claim are never said quietly, and a rise or fall in your voice adds nothing the words do not say. Silence counted in beats marks the sentence edges that have no word, a word that can only open a sentence makes a new one easy to hear, and a line sung on one note still says everything it says in speech.
+
 ### Singability constraints {#singability-constraints}
 
-These choices about word shape make Ageben easier to sing:
+Ageben words are shaped so you can sing them quickly and hold them on a note. Each row gives one choice about word shape, why it helps a singer, and how Ageben keeps it:
 
 | Constraint | Why it helps | How Ageben keeps it |
 |------------|--------------|---------------------|
 | One vowel per letter | Sliding from one vowel to another mid-note forces the mouth to change | Stacked vowels = separate syllables |
 | Few consonant clusters (consonants with no vowel between) | Clusters are harder to say quickly | Ordinary shape is consonant-then-vowel at the start of a syllable; the few clusters are listed below |
 | Voiced preferred | Unvoiced `b`, `d`, `g` (*p*, *t*, *k*) stop the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
-| No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the word edge, the **`m`** before **`x`** on a hook prefix (its **-m** zone) or a numeric prefix (an approximate number), or the **`m`** or **`r`** before **`x`** on a hooked join (its hook's **-m** zone or **-r** point-back). The [syllabic `l`](/phonotactics#syllabic-l) of `blr` / `blw` is a held beat, not a final consonant |
+| No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots run vowel, then consonant and vowel pairs (V(CV)+); a final consonant only at the word edge, the `m` before `x` on a hook prefix (its `-m` zone) or a numeric prefix (an approximate number), or the `m` or `r` before `x` on a hooked join (its hook's `-m` zone or `-r` point-back). The [syllabic `l`](/phonotactics#syllabic-l) of `blr` / `blw` is a held beat, not a final consonant |
 | No lexical stress | Music already places emphasis | Stress always falls on the same beat; spelling does not mark it, and music may move it. A word's first syllable sits best on a strong beat |
 | Vowel pitch | A melody owns the pitch | Song drops [vowel pitch](/phonology#vowel-pitch); each vowel's sound alone says which vowel it is |
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-ln` / `-r` / `-rl` / `-rm` (optional `-x`); stand-ins end in `-rl` / `-rm` / `-rth` |
 
-The clusters Ageben allows: left-hanging `gl-`; hosted `bl-`, with a [syllabic `l`](/phonotactics#syllabic-l) before `r` / `w`; number-word role letter + `r`; role letter + `w` on a [tag pronoun](/tag-pronouns#tag-pronouns), a [role compound](/roles#role-compounds), a [role pointer](/pronouns#role-pointers), or a say word (`zw`, `dw`, `bw`, `gw`, `hw`, `yw`, and `blw` on a hosted role word); mid-word `mx` after the hook vowels of a hook prefix's **-m** zone, or after the number body of an approximate numeric prefix; mid-word `mx` or `rx` after the hook vowels of a hooked join (its hook's zone or point-back); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`; consonant runs inside a [place-name root](place-name-roots.md#place-name-roots). The `m` or `r` before `x` is the only syllable-final consonant inside an ordinary word.
+These are the clusters Ageben allows:
+
+| Cluster | Where |
+|---------|-------|
+| `gl-` | Left-hanging |
+| `bl-` | Hosted, with a [syllabic `l`](/phonotactics#syllabic-l) before `r` / `w` |
+| Role letter + `r` | A number word |
+| Role letter + `w` | A [tag pronoun](/tag-pronouns#tag-pronouns), a [role compound](/roles#role-compounds), a [role pointer](/pronouns#role-pointers), or a say word (`zw`, `dw`, `bw`, `gw`, `hw`, `yw`, and `blw` on a hosted role word) |
+| `mx`, mid-word | After the hook vowels of a hook prefix's `-m` zone, or after the number body of an approximate numeric prefix |
+| `mx` or `rx`, mid-word | After the hook vowels of a hooked join (its hook's zone or point-back) |
+| `-lx` / `-mx` / `-nx` / `-rx` | Word-final |
+| `-ln` / `-lnx` | Name instance |
+| `-rl` / `-rm` | Stand-in and sense-pinned resume |
+| `-rth` | Stand-in |
+| Consonant runs | Inside a [place-name root](place-name-roots.md#place-name-roots) |
+
+The `m` or `r` before `x` is the only syllable-final consonant inside an ordinary word.
 
 Try singing a short Ageben line quickly at a high but comfortable pitch:
 
@@ -33,7 +51,7 @@ Compare a line, not Ageben, that piles up vowels side by side, clusters, and con
 
 ### Vowel pitch values {#vowel-pitch-values}
 
-A vowel's pitch is an interval above your [home note](/phonology#vowel-pitch), not a fixed note, since voices differ by an octave or more:
+Pitch each vowel a set number of semitones above your [home note](/phonology#vowel-pitch), not on a fixed note, since voices differ by an octave or more:
 
 | Vowel | Semitones above home note | Scale degree | Piano |
 |-------|---------------------------|--------------|-------|
@@ -42,7 +60,9 @@ A vowel's pitch is an interval above your [home note](/phonology#vowel-pitch), n
 | `e` | +5 | 4 | G♯3 |
 | `u` | +7 | 5 | A♯3 |
 
-The piano keys are the [finger code](finger-code.md#piano)'s vowel keys, with D♯3 as the home note. Match the intervals, not the notes. The four pitches belong to one pentatonic scale, so any two sound well together, and a line said on its vowel pitches sounds like music. The opposite pair `a` and `u` is a fifth apart. `u` and `o`, the two rounded vowels and the closest pair by ear, are four semitones apart. The two-semitone steps (`o` to `e`, `e` to `u`) sit between vowels that already differ in lip or tongue position.
+The piano keys are the [finger code](finger-code.md#piano)'s vowel keys, with D♯3 as the home note. Match the steps between the vowels, not the notes.
+
+The four pitches belong to one pentatonic (five-note) scale, so any two sound well together, and a line said on its vowel pitches sounds like music. The opposite pair `a` and `u` is a fifth (seven semitones) apart. `u` and `o`, the two rounded vowels and the closest pair by ear, are four semitones apart. The two-semitone steps (`o` to `e`, `e` to `u`) sit between vowels that already differ in lip or tongue position.
 
 Pitch is heard against your own range, so it helps most inside a sentence, and inside a word with two vowels, which carries its own rise or fall: `yaol` rises and `yuol` falls. A voice may drift lower over a long sentence; that carries nothing, as long as neighboring vowels keep their order. A whisper has no pitch, so the vowel's sound alone carries it. The [syllabic `l`](/phonotactics#syllabic-l) has a fixed pitch of +4 semitones, between `o` and `e`, and never copies a neighbor.
 
@@ -65,7 +85,7 @@ So listen to the words, not the voice. A speaker whose voice naturally rises at 
 
 ### Speech edges {#speech-edges}
 
-Pitch belongs to the vowels, so the edges of a sentence are marked by words and by time. Almost every edge is a word the listener hears: a join, an `/x/` word, a `/y/` word. Only two edges have no word: a period, and a scope island (a chunk in braces, so a word inside applies only to that chunk). Those two are marked by silence counted in beats. Every syllable is one beat, so a listener hears the silence as rhythm:
+Pitch belongs to the vowels, so the edges of a sentence are marked by words and by time. Almost every edge is a word the listener hears: a join, an `/x/` word, a `/y/` word that opens a new turn. Only two edges have no word: a period, and a scope island (a chunk in braces, so a word inside applies only to that chunk). Those two are marked by silence counted in beats. Every syllable is one beat, so a listener hears the silence as rhythm:
 
 - a **break**: the next beat comes half a beat late;
 - a **rest**: one whole silent beat.

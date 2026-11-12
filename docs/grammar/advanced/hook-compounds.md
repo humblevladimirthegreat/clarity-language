@@ -4,11 +4,13 @@ band: advanced
 
 # Cite plus a hook {#cite-plus-a-hook}
 
+A hook can join a dictionary word in two ways. A hook compound fuses an extra-noun hook onto the end of a dictionary form to make one verb, such as *leave* from *walk* + *from*. A hook prefix writes a hook's vowels in front of a stem to make one describing word, such as *water-powered*.
+
 ### Hook compounds (cite + extra-noun hook) {#hook-compounds}
 
 English has single verbs for moving in relation to a place: *enter*, *leave*, *oppose*. Ageben makes them by **fusing** an extra-noun hook onto the end of a citation: *walk* + *from* (`vowurol ul bawahol` *walks from a station*) becomes one word, *leave*. Every hook in the extra-noun grid can fuse this way.
 
-Keep the left word’s own **-l** or **-m**, then write the hook, with no mid-word **`x`**. The dictionary form is the **citation** (no role letter), because the same stem can sit under `/z/` or `/ɡ/` as well as `/v/`.
+Keep the left word’s own `-l` or `-m`, then write the hook, with no mid-word `x`. The dictionary form is the citation (no role letter), because the same stem can sit under `/z/` or `/ɡ/` as well as `/v/`.
 
 The left word is always a five-letter root from the dictionary. Three-letter roots never fuse, so a word that starts with one is never a hook compound; to say *from a map*, use the two words.
 
@@ -33,18 +35,18 @@ In a clause, add a role letter to that citation (`vowurolul`). The extra partici
 
 The left ending is part of the stem, so two different left roots stay distinct once the hook is attached. In speech that ending starts the hook's syllable, so no consonant closes a syllable mid-word: `owurolul` is *o-wu-ro-lul*.
 
-| Hook | Free extra-noun | Fused **-l** | Fused **-l**, abstract `/d/` | Fused **-m** | Citation (from *walk*) |
+| Hook | Free extra-noun | Fused `-l` | Fused `-l`, abstract `/d/` | Fused `-m` | Citation (from *walk*) |
 |------|-----------------|--------------|------------------------------|--------------|------------------------|
-| **`al` / `am`** | *in* / *amid* | *enter* | *enter a crisis* | *mill amid* | `owurolal` / `owurolam` |
-| **`ael` / `aem`** | *on* / *over* | *mount* | *take up a policy* | *cover* | `owurolaol` / `owurolaom` |
-| **`el` / `em`** | *at* / *near* | *attend* | *attend to an issue* | *adjoin* | `owurolol` / `owurolom` |
-| **`oel` / `oem`** | *toward* / *in the direction of* | *head for* | *head for a habit* | *orient* | `owuroloel` / `owuroloem` |
-| **`ul` / `um`** | *from* / *away from* | *leave* | *leave a heritage behind* | *recede* | `owurolul` / `owurolum` |
-| **`ual` / `uam`** | *out of* / *out from among* | *exit* | *get out of debt* | *pick out* | `owurolual` / `owuroluam` |
-| **`uel` / `uem`** | *through* / *by way of* | *traverse* | *get through a crisis* | *relay* | `owuroluol` / `owuroluom` |
-| **`ol` / `om`** | *for* / *used by* | *serve* | *serve a policy* | *have in use* | `owurolel` / `owurolem` |
-| **`aol` / `aom`** | *using* / *by* | *wield* | *wield a tradition* | *channel* | `owurolael` / `owurolaem` |
-| **`uol` / `uom`** | *against* / *contrary to* | *oppose* | *oppose a policy* | *defy* | `owuroluel` / `owuroluem` |
+| `al` / `am` | *in* / *amid* | *enter* | *enter a crisis* | *mill amid* | `owurolal` / `owurolam` |
+| `ael` / `aem` | *on* / *over* | *mount* | *take up a policy* | *cover* | `owurolaol` / `owurolaom` |
+| `el` / `em` | *at* / *near* | *attend* | *attend to an issue* | *adjoin* | `owurolol` / `owurolom` |
+| `oel` / `oem` | *toward* / *in the direction of* | *head for* | *head for a habit* | *orient* | `owuroloel` / `owuroloem` |
+| `ul` / `um` | *from* / *away from* | *leave* | *leave a heritage behind* | *recede* | `owurolul` / `owurolum` |
+| `ual` / `uam` | *out of* / *out from among* | *exit* | *get out of debt* | *pick out* | `owurolual` / `owuroluam` |
+| `uel` / `uem` | *through* / *by way of* | *traverse* | *get through a crisis* | *relay* | `owuroluol` / `owuroluom` |
+| `ol` / `om` | *for* / *used by* | *serve* | *serve a policy* | *have in use* | `owurolel` / `owurolem` |
+| `aol` / `aom` | *using* / *by* | *wield* | *wield a tradition* | *channel* | `owurolael` / `owurolaem` |
+| `uol` / `uom` | *against* / *contrary to* | *oppose* | *oppose a policy* | *defy* | `owuroluel` / `owuroluem` |
 
 An abstract object keeps the hook's picture, as on the [free hook](/abstract-landmarks#abstract-landmarks):
 
@@ -66,7 +68,7 @@ Other roots fuse the same way: `vezuyoluel` *contradict* is *tell* fused with *a
 
 ### Hook prefixes (hook + `x` + stem) {#hook-prefixes}
 
-English builds describing words from a relation and a thing: *anti-war*, *indoor*, *transoceanic*, *water-powered*. In Ageben, write the role letter, then the vowels of an extra-noun hook, then **`x`**, then a stem, then the ending. The stem is the hook's landmark, and the word names something that stands in that relation to it: `guoxuvuvul` is *against fighting* as one word. Where the free hook needs its own `/b/` word after the noun, the prefix packs the relation into a single word, so it can describe a noun, fill any noun slot, and become a dictionary word. (cue: **x** ≈ plus, the hyphen in *anti-war*)
+English builds describing words from a relation and a thing: *anti-war*, *indoor*, *transoceanic*, *water-powered*. In Ageben, write the role letter, then the vowels of an extra-noun hook, then `x`, then a stem, then the ending. The stem is the hook's landmark, and the word names something that stands in that relation to it: `guoxuvuvul` is *against fighting* as one word. Where the free hook needs its own `/b/` word after the noun, the prefix packs the relation into a single word, so it can describe a noun, fill any noun role, and become a dictionary word. (cue: `x` ≈ plus, the hyphen in *anti-war*)
 
 > `zazozon guoxuvuvul.`
 >
@@ -80,7 +82,7 @@ English builds describing words from a relation and a thing: *anti-war*, *indoor
 >
 > "The ship is water-powered."
 
-Plain **`x`** spells the hook's **-l** reading. An **`m`** right before the **`x`** picks the hook's **-m** zone, the same **`m`** that turns `uol` into `uom`: `guomxawulol` is *contrary to the wind*, headed into it. The stem keeps its own sense choice: **-l** for the concrete sense, **-m** for the abstract one, read the way an [abstract landmark](/abstract-landmarks#abstract-landmarks) reads after a free hook.
+Plain `x` spells the hook's `-l` reading. An `m` right before the `x` picks the hook's `-m` zone, the same `m` that turns `uol` into `uom`: `guomxawulol` is *contrary to the wind*, headed into it. The stem keeps its own sense choice: `-l` for the concrete sense, `-m` for the abstract one, read the way an [abstract landmark](/abstract-landmarks#abstract-landmarks) reads after a free hook.
 
 > `zazozon guomxawulol.`
 >
@@ -116,7 +118,7 @@ Plain **`x`** spells the hook's **-l** reading. An **`m`** right before the **`x
 
 A pair differs the way the free hooks do: `gexohehal` *at the house* is there, and `gemxohehal` *near the house* is only close to it.
 
-The role letter is the word's slot, as on any content word:
+The role letter gives the word's role, as on any content word:
 
 | Role letter | The word names | Example | English |
 |-------------|----------------|---------|---------|
@@ -144,7 +146,7 @@ The stem may be an ordinary compound (`guoxohehaxowurol` *against walking in hou
 >
 > "Alazun is against leaving."
 
-[Label reach](/label-seams#label-reach) goes after the stem, as on any word, and **-r** resumes the whole word:
+[Label reach](/label-seams#label-reach) goes after the stem, as on any word, and `-r` resumes the whole word:
 
 > `zalazun guoxuvuvuthul.`
 >
@@ -158,7 +160,7 @@ The stem may be an ordinary compound (`guoxohehaxowurol` *against walking in hou
 >
 > "An opponent of fighting walks. That opponent sleeps."
 
-A common hook prefix can enter the dictionary as a citation, with no role letter (`uoxuvuvul`). In speech **`x`** starts the stem's first syllable (*gue-xa-vu-vul*); with **`mx`**, the **`m`** closes the hook's syllable (*guem-xe-wu-lel*).
+A common hook prefix can enter the dictionary as a citation, with no role letter (`uoxuvuvul`). In speech `x` starts the stem's first syllable (*gue-xa-vu-vul*); with `mx`, the `m` closes the hook's syllable (*guem-xe-wu-lel*).
 
 **Compare with:** the free hook keeps the landmark as its own word: `zeyel zar uol boduvul vowurol.` is *someone against the duel walks*, and a later `boduvur` points back to that duel. The prefix makes one word for a kind: `zuoxoduvul vowurol.` is *an opponent of dueling walks*, with no landmark to point back to.
 
