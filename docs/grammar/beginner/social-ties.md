@@ -4,6 +4,8 @@ band: beginner
 
 # Whose: *Azozon's* {#social-ties}
 
+English *'s* covers both a thing someone keeps or uses (*Azozon's dog*) and a person tied to someone (*Azozon's friend*). For a thing, put `om` after the noun and then the user, which says who uses the thing, not who owns it. For a person, `om` cannot go, because a person is not something someone uses: the root for the tie goes on as an adjective, with the other person right after it.
+
 ### Whose (`om`) {#genitive}
 
 English *Azozon's dog* often means the dog is in Azozon's *use*: Azozon keeps it, walks it, feeds it. Put **`om`** right after the noun, then the user in `/b/` (call that person B). `om` says B uses the thing or has access to it. It does not say who owns it. (cue: `ol` is *for B*, a get meant to reach B; `om` says it already reached B and is in B's use)

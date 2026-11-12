@@ -4,6 +4,8 @@ band: beginner
 
 # Digits and time {#digit-strings-and-time}
 
+English writes some numbers as codes rather than amounts, such as a phone or room number, and writes clock times and dates in digits too. A code takes the digit-string marker `re` (written `_`), so it stays a code rather than an amount and can stand in any role. A clock time or a date is the same kind of digit string with no relation word before it, and its numbers are read by position, so the word already says which one is the hour or the month.
+
 ### Digit-strings {#digit-strings}
 
 When English uses a number as a **code** (a phone, room, channel, or serial number) rather than an amount, write it with the digit-string marker **`re`** (written **`_`**). A code takes no exponent (power of ten) and no percent. The code can then fill whatever role the clause needs (`/d/`, `/b/`, `/ɡ/`).

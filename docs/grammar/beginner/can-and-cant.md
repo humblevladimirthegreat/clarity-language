@@ -4,6 +4,8 @@ band: beginner
 
 # Can and can't {#can-and-cant}
 
+Ageben puts English *can* and *can't* inside the verb or adjective: after the root you write `x` and a vowel, and the vowel also says whether a *can't* is for now, not yet, or never. When no single root names the activity, the special word `oda` takes the same `x` and vowel instead. Used for the whole clause, that word is an intention adverb, a word about the whole claim, so it can sit anywhere in the sentence with the same meaning.
+
 ### Ability and incapability {#ability}
 <a id="incapability"></a>
 

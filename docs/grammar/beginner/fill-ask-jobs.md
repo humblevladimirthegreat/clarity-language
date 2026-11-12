@@ -4,6 +4,8 @@ band: beginner
 
 # Fill-ask jobs {#what-kind-when-where-whose-how-why}
 
+To ask *what kind*, *when*, *where*, *whose*, *how*, or *why*, you put the blank in the role that fits the question. For *what kind* the blank is an adjective (`gar`), and for *when* it sits in the role that names an occasion (`har`). For *where* and *whose* it is a noun after a short word: *at* or *in* for a place, *used by* for whose. For *how* and *why* it follows a word that names the kind of answer, *like* for manner or a condition word such as *because* for a reason, and that word picks which answer you mean.
+
 ### What kind? {#what-kind}
 
 To ask what something is **like** (*What color is it?*, *What kind of dog?*), put the blank on an adjective: **`gar`**. Answer with the adjective alone. It keeps its letter: only a [one-noun answer](questions.md#fill-ask) drops it.
