@@ -39,7 +39,7 @@ A cite or opaque span can also be a topic word itself, under `/x/`: a titled wor
 | Cite | none | allowed; the cite's own `/x/` word sets its topic | no |
 | Aside | yours | not allowed | n/a |
 
-A **-r** inside a cite cannot find a word outside it: the quoted words were said before the surrounding sentence existed.
+A `-r` inside a cite cannot find a word outside it: the quoted words were said before the surrounding sentence existed.
 
 ### Practice {#intermediate-practice}
 

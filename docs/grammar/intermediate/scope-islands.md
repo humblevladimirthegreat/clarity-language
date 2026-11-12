@@ -6,7 +6,7 @@ band: intermediate
 
 ### Scope islands {#scope-islands}
 
-Sometimes a word like *possibly*, or a join, should apply to only part of the sentence, a chunk of several words, not the whole clause. Put that chunk in braces **`{ … }`**, with the word that applies to it **inside**. That word is the island’s **binder**: it reaches only what the braces hold. Braces have no other use. Speech has no word for the edges: you hear a pause, then one tight phrase.
+Sometimes a word like *possibly*, or a join, should apply to only part of the sentence, a chunk of several words, not the whole clause. Put that chunk in braces **`{ … }`**, with the word that applies to it inside. That word is the island’s **binder**: it reaches only what the braces hold. Braces have no other use. Speech has no word for the edges: you hear a pause, then one tight phrase.
 
 > `zazozon { hogugem zodozel gerulol } vayebel.`
 >
@@ -14,11 +14,11 @@ Sometimes a word like *possibly*, or a join, should apply to only part of the se
 >
 > "Azozon saw what was possibly a red dog."
 
-Here **`hogugem`** reaches only *a red dog*, not the seeing.
+Here `hogugem` reaches only *a red dog*, not the seeing.
 
 A [tone mark](tone-marks.md#tone-marks) written right before the opening brace colors the whole island (`!{ hogugem zodozel gerulol }`).
 
-**Compare with:** quoting, asides, mentions, and opaque blobs use [spans](/spans#writing) (`d[…]`, `th(…)`, <code>d&lt;…&gt;</code>). Islands only group so a binder inside can target that chunk.
+**Compare with:** quoting, asides, mentions, and opaque text use [spans](/spans#writing) (`d[…]`, `th(…)`, <code>d&lt;…&gt;</code>). Islands only group so a binder inside can target that chunk.
 
 - No role letter on the edges.
 - **At most one phrase.** After its binder, an island holds at most one phrase: a `/z/`, `/d/`, or `/b/` noun phrase, a `/v/` verb phrase, or a `/ɡ/` stack, with that phrase’s own adjectives, `/w/` detail, and join. An `/h/` word is a binder, never the phrase.
@@ -26,22 +26,22 @@ A [tone mark](tone-marks.md#tone-marks) written right before the opening brace c
 - **Hosts keep their `bl-` word.** A host (`/ɡ/`, `/h/`, `/th/`) and its `bl-` word are both inside the island or both outside. A plain `/b/` is the recipient, not a host's partner, so it may sit on either side of an edge.
 - **One island per clause.** Islands do not nest.
 - Empty `{ }` has no reading.
-- **Binder required:** at least one scope-taking `/h/` or `/th/` and/or a join particle **inside**. A [hook](/hooks) is never a binder. A hook already reaches its whole stretch: `/w/` right before it grades the whole span, and a hook after a noun belongs to that noun.
+- **Binder required:** at least one scope-taking `/h/` or `/th/` (a word, like *possibly*, that frames what it reaches) and/or a join particle inside. A [hook](/hooks) is never a binder. A hook already reaches its whole stretch: `/w/` right before it grades the whole span, and a hook after a noun belongs to that noun.
 - Prefer spaces inside: `{ hogugem zodozel gerulol }`.
 
 | Binder | Use inside the island |
 |--------|------------------------|
-| Scope-taking **`/h/`** or **`/th/`** | frames that **chunk** (prefer first in the island; see the `/b/` exception below) |
-| Prefixed **join** | joins **only** matching-role material **inside** |
+| Scope-taking `/h/` or `/th/` | frames that chunk (prefer first in the island; see the `/b/` exception below) |
+| Prefixed join | joins only matching-role material inside |
 
 `/h/` and a join may share one island (`{ hogugem zazozon zalazun zam }`).
 
 | Placement | Reading |
 |-----------|---------|
-| `/h/` or `/th/` **inside** | frames that chunk |
-| `/h/` or `/th/` **outside** | ordinary floating word: frames the verb / clause |
-| Join **inside** | joins only interior conjuncts |
-| Join **outside** with island nearby | ordinary lookback (edges do not filter an outside join) |
+| `/h/` or `/th/` inside | frames that chunk |
+| `/h/` or `/th/` outside | ordinary floating word: frames the verb / clause |
+| Join inside | joins only interior conjuncts |
+| Join outside with island nearby | ordinary lookback (edges do not filter an outside join) |
 
 > `zazozon { zalazun zal } zam vowurol.`
 >
@@ -57,7 +57,7 @@ A recipient is a plain `/b/` ([extra nouns](/clause#extra-nouns)), so it can sha
 >
 > "Azozon talks, possibly to Alazun."
 
-An island can hold part of a phrase. Here only *not small* is grouped, so **`gul`** denies *small* alone and **`gal`** adds it to *red*:
+An island can hold part of a phrase. Here only *not small* is grouped, so `gul` denies *small* alone and `gal` adds it to *red*:
 
 > `zodozel gerulol { gamezem gul } gal vowurol.`
 >
@@ -65,7 +65,7 @@ An island can hold part of a phrase. Here only *not small* is grouped, so **`gul
 >
 > "A dog that is red and not small walks."
 
-**Speech:** leave a **break** before the island (the next beat comes half a beat late), say it as one tight phrase, and leave another break after its last word. In singing, phrase it as its own short phrase. Because an island never runs past one phrase, a listener who misses the closing break is off by at most part of that phrase.
+To say an island aloud, leave a break before the island (the next beat comes half a beat late), say it as one tight phrase, and leave another break after its last word. In singing, phrase it as its own short phrase. Because an island never runs past one phrase, a listener who misses the closing break is off by at most part of that phrase.
 
 ### Practice {#intermediate-practice}
 

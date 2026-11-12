@@ -4,26 +4,26 @@ band: intermediate
 
 # Spans as words {#spans-as-words}
 
-A written span can stand in a sentence like a word: a word as spelling, a noun, an adjective before the noun, or one thing a title names.
+A span is written only, with no spoken form of its own. In a sentence it can stand like a word: a word as spelling, a noun, an adjective before the noun, or one thing a title names.
 
 ### Written only {#written-only}
 
-A span has **no spoken form**: there is no word for its open or close, and no spoken resume for it. When you read a span aloud, you say the words inside it, and say its marks as words.
+When you read a sentence aloud, a span has no spoken form of its own: there is no word for its open or close, and no spoken resume for it. You say the words inside it, and say its marks as words.
 
-Apart from what is inside, `[…]` and <code>&lt;…&gt;</code> work the same way: the same role letters, the same slots, the same **`~`** / **`@`** marks, the same topic and `/y/` rules. The one difference is whether the inside is read as Ageben. Use `[…]` when the inside is Ageben, and <code>&lt;…&gt;</code> when it is foreign, code, or a name you do not want read as Ageben.
+Apart from what is inside, `[…]` and <code>&lt;…&gt;</code> work the same way: the same role letters in the same places, the same `~` / `@` marks, the same topic and `/y/` rules. The one difference is whether the inside is read as Ageben. Use `[…]` when the inside is Ageben, and <code>&lt;…&gt;</code> when it is foreign, code, or a name you do not want read as Ageben.
 
 ### Mention {#mention}
 
 To talk about a word or phrase itself, as a spelling (*the word “odoze” is small*), put the **mention marker** before a span. That is a **mention**: it is about the letters, not what they mean, and not a quote of what someone said (for that, use a [cite](/spans#writing)). The marker is a [left-bound adjective](/left-bound-adjectives#left-bound-adjectives), so a listener hears *this is a word as spelling* before the span arrives. In English, write *the word …* or *the phrase …* and keep the Ageben spelling (`odoze`, not *dog*).
 
-The marker is the *letters* root `ego` as a `gl-` adjective, on **-l** (`glegol`) or **-n** (`glegon`). (cue: 🔤 a word is its letters)
+The marker is the *letters* root `ego` as a `gl-` adjective, on `-l` (`glegol`) or `-n` (`glegon`). (cue: 🔤 a word is its letters)
 
 | Ageben | Reading |
 |--------|---------|
 | **`glegol`** | the word or phrase as spelling |
 | **`glegon`** | the name-string: a name as spelling |
 
-The span is a [cite](/spans#writing) `[…]` when the spelling is Ageben, and an [opaque](/spans#loans) <code>&lt;…&gt;</code> when it is not. Either way, the marker plus the span fills a slot like any noun:
+The span is a [cite](/spans#writing) `[…]` when the spelling is Ageben, and an [opaque](/spans#loans) <code>&lt;…&gt;</code> when it is not. Either way, the marker plus the span fills a role like any noun:
 
 > `glegol z[odoze] gamezem.`
 >
@@ -43,7 +43,7 @@ The span is a [cite](/spans#writing) `[…]` when the spelling is Ageben, and an
 >
 > "The word “kimchi” is small." (a foreign word)
 
-With **-n**, the mention is a **name** as spelling (the title, which could be changed), even when it is **one word**: `glegon d[onuren]` is not `donuren`. A cite with **`@`** is the **work**, and that span is for a title of **several words** (`d@[onuren alazun]`). The one-word *Onuren* as the work is an ordinary **-n** word (`donuren`).
+With `-n`, the mention is a name as spelling (the title, which could be changed), even when the name is one word: `glegon d[onuren]` is not `donuren`. A cite with `@` is the work itself, and that span is for a title of several words (`d@[onuren alazun]`). The one-word *Onuren* as the work is an ordinary `-n` word (`donuren`).
 
 > `zazozon d@[onuren alazun] vuyugum.`
 >
@@ -57,9 +57,9 @@ With **-n**, the mention is a **name** as spelling (the title, which could be ch
 >
 > "Azozon dislikes the name “onuren.”" (not the work)
 
-**Compare with:** `donuren` is *Onuren* (the work or person). `glegon d[onuren]` is only the **name**.
+**Compare with:** `donuren` is *Onuren* (the work or person). `glegon d[onuren]` is only the name.
 
-The marker is read as a marker only when it stands **directly before a span**. Anywhere else the same spelling is the ordinary adjective *lettered*. A mention marker does not go under `/y/`: a call or a reaction is not about a spelling. A `/w/` word is never a marker either, because `/w/` grades a `/ɡ/`, `/h/`, or `/th/` word, never a noun.
+The marker is read as a marker only when it stands directly before a span. Anywhere else the same spelling is the ordinary adjective *lettered*. A mention marker does not go under `/y/`: a call or a reaction is not about a spelling. A `/w/` word is never a marker either, because `/w/` grades a `/ɡ/`, `/h/`, or `/th/` word, never a noun.
 
 A marker before a topic span works the same way:
 
@@ -83,7 +83,7 @@ The same holds for a loan word or any other span, and `dwudel` is [another one](
 
 An aside gives role pointers nothing to point back to. A [tag](tag-pronouns.md#tag-pronouns) assigned inside a cite or an aside does not hold outside it, and a pointer outside never reaches a word inside one.
 
-A span in a `/v/` slot (`v[vezohul]`) has no resume pronoun.
+A span on `/v/` (`v[vezohul]`) has no resume pronoun.
 
 ### Spans before the noun (`gl`) {#gl-spans}
 
@@ -103,11 +103,11 @@ A loan adjective or a cite leans the same way:
 >
 > "A rouge dog walks."
 
-**Compare with:** the [mention](#mention) marker is a `gl-` **word** before a span (`glegol z[odoze]`), not `gl` on the span itself.
+**Compare with:** the [mention](#mention) marker is a `gl-` word before a span (`glegol z[odoze]`), not `gl` on the span itself.
 
 ### One of a title (`^@`) {#one-of-a-title}
 
-A span with **`@`** names the work or product itself: <code>d@&lt;iPhone&gt;</code> is the iPhone as a product. For one thing that name applies to (one phone, one copy of a book, one performance of a song), write **`^@`** in the mark slot instead. It is the span's form of the [**-ln**](proper-names.md#name-instance--ln) ending, and like **-ln** it brings a new thing into the conversation. (cue: **^** points up to the name the thing falls under)
+A span with `@` names the work or product itself: <code>d@&lt;iPhone&gt;</code> is the iPhone as a product. For one thing that name applies to (one phone, one copy of a book, one performance of a song), write **`^@`** where the `@` goes instead. It is the span's form of the [`-ln`](proper-names.md#name-instance--ln) ending, and like `-ln` it brings a new thing into the conversation. (cue: `^` points up to the name the thing falls under)
 
 > <code>zalazun d^@&lt;iPhone&gt; vayebel.</code>
 >
