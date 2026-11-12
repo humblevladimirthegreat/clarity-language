@@ -6,7 +6,7 @@ band: advanced
 
 ### Nested dependents {#nested-dependents}
 
-A clause has at most one **stand-in**, at its end. But the dependent clause is a clause too, so it may end in its own **`blarl`**, and a further sentence follows it on the **right**.
+English can chain reasons: *Azozon is sleepy because Alazun walks because Ahelan sleeps*, where the last reason explains the middle clause, not the first. In Ageben a clause has at most one stand-in, at its end. But the dependent clause is a clause too, so it may end in its own `blarl`, and a further sentence follows it on the right. Each new dependent belongs to the clause just before it, so you can give a reason for a reason.
 
 > `zazozon guzemel thahum blarl zalazun vowurol thahum blarl zahelan vezuvel.`
 >

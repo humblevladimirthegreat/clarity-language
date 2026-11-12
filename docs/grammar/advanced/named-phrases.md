@@ -7,7 +7,7 @@ band: advanced
 ### Named phrase **`-n`**
 <a id="named-list"></a>
 
-When a list is a familiar set phrase (*Stop–Drop–Roll*), end its join with **-n** (under `/z/`, `/d/`, or `/b/`). The **-n** names the whole list as one title, the way it names a person. Members keep their usual endings unless a member is itself a name.
+Some English lists are familiar set phrases, said as one unit: *Stop–Drop–Roll*, *bread and butter*. In Ageben, end the join of such a list with `-n` (under `/z/`, `/d/`, or `/b/`). The `-n` names the whole list as one title, the way it names a person, so the listener hears one familiar bundle, not an ordinary list of items. Members keep their usual endings unless a member is itself a name.
 
 > `zobodel zubudal zan.`
 >
@@ -15,9 +15,9 @@ When a list is a familiar set phrase (*Stop–Drop–Roll*), end its join with *
 >
 > "bread and butter" (the familiar bundle)
 
-Standalone **…an** (no items) is *null* / *void*. Under `/ɡ/` `/h/`, **-n** forms join-derived relations; see [Stance joins](/join-relations#join-relations).
+Standalone `…an` (no items) is *null* / *void*. Under `/ɡ/` `/h/`, `-n` forms join-derived relations; see [With and without](/join-relations#join-relations).
 
-**Compare with:** a [titled phrase](/proper-names#titled-phrases) puts the same **-n** on a hook, join, or span to make a proper name (a store, a title); a named phrase is a familiar set phrase. Clause **`xan`** is *and then*, not a named list.
+**Compare with:** a [titled phrase](/proper-names#titled-phrases) puts the same `-n` on a hook, join, or span to make a proper name (a store, a title); a named phrase is a familiar set phrase. Clause `xan` is *and then*, not a named list.
 
 ### Practice {#advanced-practice}
 

@@ -6,9 +6,9 @@ band: advanced
 
 ### Lexicalized stand-ins in other roles {#stand-in-roles}
 
-A stand-in's vowel says what kind of content follows, and its first letter says which role that content fills. With **-rn** (or **-n** after two vowels, as in **`vaen`**), the stand-in becomes a fixed word for that kind of content: **`darn`** *a statement*, **`dern`** *a question*, **`dorn`** *a command*, **`durn`** *a prohibition*. Use the same vowels with another role letter when the following sentence fills that role. On `/v/`, the same **-rn** / **-n** endings make verbs that take the following sentence as their content. Such a verb names the speech act itself as the event: stating, confirming, denying, agreeing. Use one to make that act or to report it, as in *Azozon confirms it* or *I deny that …*.
+English has verbs that name a speech act as the event: *state*, *confirm*, *deny*, *agree*, as in *Azozon confirms it* or *I deny that …*. Ageben builds them from the stand-ins. The vowel still says what kind of content follows, and the first letter says which role that content fills. With the ending `-rn` (or `-n` after two vowels, as in `vaen`), the stand-in becomes a fixed word for that kind of content: **`darn`** *a statement*, **`dern`** *a question*, **`dorn`** *a command*, **`durn`** *a prohibition*.
 
-Each content type has one lexicalized form; there is no closed / open pair here.
+On `/v/`, the same `-rn` / `-n` endings make verbs that take the following sentence as their content, so you can make that speech act or report it. Use the same vowels with another role letter when the following sentence fills that role. Each content type has one fixed form; there is no locked / open pair here.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Dependent content | English |
@@ -37,7 +37,7 @@ For example, the `/v/` word takes the following sentence as its content:
 >
 > "Azozon declines to sit."
 
-**Compare with:** a speaking verb + [**`darl`**](/dependents#dependent-clauses) reports the act of speaking, and the content is its object, what was said. Pick it when the speaking is the event, as in *Azozon tells Alazun that …*; pick the fixed word when the act (confirming, denying) is the event.
+**Compare with:** a speaking verb + [`darl`](/dependents#dependent-clauses) reports the act of speaking, and the content is its object, what was said. Pick it when the speaking is the event, as in *Azozon tells Alazun that …*; pick the fixed word when the act (confirming, denying) is the event.
 
 > `zazozon vezuyol balazun darl zalazun vehohel.`
 >
@@ -45,7 +45,7 @@ For example, the `/v/` word takes the following sentence as its content:
 >
 > "Azozon tells Alazun that Alazun sits."
 
-A `/z/` stand-in puts the whole following sentence in the subject slot. With a `/ɡ/` word describing that sentence, that is English *it is … that* / *it is … to*.
+A `/z/` stand-in puts the whole following sentence in the subject role. With a `/ɡ/` word describing that sentence, that is English *it is … that* / *it is … to*.
 
 > `gamahum zarl zazozon vowurol.`
 >
@@ -53,7 +53,7 @@ A `/z/` stand-in puts the whole following sentence in the subject slot. With a `
 >
 > "It is hard for Azozon to walk."
 
-The sentence after one of these verbs has its own subject when the chosen content type requires one, just as it does after **`darl`** / **`derl`**. Changing the role letter lets the same kind of content serve as an object, a described property, or another role the clause allows.
+The sentence after one of these verbs has its own subject when the chosen content type requires one, just as it does after `darl` / `derl`. Changing the role letter lets the same kind of content serve as an object, a described property, or another role the clause allows.
 
 ### Practice {#advanced-practice}
 

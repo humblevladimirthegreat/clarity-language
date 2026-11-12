@@ -6,7 +6,7 @@ band: advanced
 
 ### Bounding who counts {#hooked-joins}
 
-English bounds *everyone*, *someone*, and *nothing* with a preposition: *everyone at the house*, *something for me*, *everyone against me*. A free hook after a join does a different job: it is an extra of the whole clause, so `zual vezuvel el bohehal.` says where the sleeping happens, not who counts ([every and none](/universals-domains#universals-domains-generics)). To bound the join's own set, write the role letter, then the vowels of an extra-noun hook, then **`x`**, then the join, and put the hook's landmark right after the word as a `bl-` word. The join keeps its meaning and its ending, and the hook now says which members count: the ones that stand in that relation to the landmark. So *who counts* and *where it happens* get different spellings, and one clause can say both. (cue: the hook comes first, as in a [hook prefix](hook-compounds.md#hook-prefixes))
+English bounds *everyone*, *someone*, and *nothing* with a preposition: *everyone at the house*, *something for me*, *everyone against me*. A free hook after a join does a different job: it is an extra of the whole clause, so `zual vezuvel el bohehal.` says where the sleeping happens, not who counts ([every and none](/universals-domains#universals-domains-generics)). To bound the join's own set, write the role letter, then the vowels of an extra-noun hook, then `x`, then the join, and put the hook's landmark right after the word as a `bl-` word. The join keeps its meaning and its ending, and the hook now says which members count: the ones that stand in that relation to the landmark. So *who counts* and *where it happens* get different spellings, and one clause can say both. (cue: the hook comes first, as in a [hook prefix](hook-compounds.md#hook-prefixes))
 
 > `zexual blohehal vezuvel.`
 >
@@ -28,23 +28,23 @@ English bounds *everyone*, *someone*, and *nothing* with a preposition: *everyon
 
 | Piece | What it says | In `zexual` |
 |-------|--------------|-------------|
-| role letter | the slot, as on any join: `/z/`, `/d/`, `/b/`, or `/h/` | `z` |
-| hook vowels | an [extra-noun hook](/extra-noun-hooks#extra-noun-intermediate), with its **-l** left unwritten | `o` *at* |
-| `m` or `r` | the hook's **-m** zone, or its **-r** point back | none |
-| **`x`** | the seam, as in a hook prefix | `x` |
+| role letter | the role, as on any join: `/z/`, `/d/`, `/b/`, or `/h/` | `z` |
+| hook vowels | an [extra-noun hook](/extra-noun-hooks#extra-noun-intermediate), with its `-l` left unwritten | `o` *at* |
+| `m` or `r` | the hook's `-m` zone, or its `-r` point back | none |
+| `x` | the seam: the letter that joins hook and join, as in a hook prefix | `x` |
 | join vowels + ending | any [standalone join](/joins#standalone-phrase), read as usual | `ual` *everyone* |
 
 The landmark takes `bl-` because it completes the word before it, as after an `/h/` word. Any word that can be a `bl-` word works: a name (`blazozon`), a content word (`blohehal`), a [special pronoun](/pronouns#special-pronouns) (`bluwen`), a resume (`blohehar`), or a standalone join. A [SHARED](/list-structure#shared-after-the-join) `/ɡ/` comes after the landmark: `zexual blohehal gogozel` is *every cat at the house*.
 
 This lets a sweeping claim show how far it reaches. *Everyone's against me* names its bound (`zuoxual bluwen`), and the join ending says whether exceptions are ruled out: closed `zuoxual` is *every one of them*, open `zuoxuam` is *as far as I know*. A listener can then check the bound, or ask for the exception.
 
-In speech **`x`** starts the join's syllable (*zo-xu-al*). With `m` or `r`, that letter closes the hook's syllable (*zom-xu-al*, *zor-xu-al*). The [first-syllable stress](phonology.md#rhythm-and-stress) keeps a hooked join apart from a join followed by a hook: `zarxar` (*someone in there*) is one word with one stressed beat, and in `zarx ar` (*some people, in there*) `ar` takes a fresh beat.
+In speech `x` starts the join's syllable (*zo-xu-al*). With `m` or `r`, that letter closes the hook's syllable (*zom-xu-al*, *zor-xu-al*). The [first-syllable stress](phonology.md#rhythm-and-stress) keeps a hooked join apart from a join followed by a hook: `zarxar` (*someone in there*) is one word with one stressed beat, and in `zarx ar` (*some people, in there*) `ar` takes a fresh beat.
 
 ### Which hook {#hooked-joins-hooks}
 
-Every hook in the [extra-noun grid](/extra-noun-hooks#extra-noun-intermediate) works, with the reading it has there. The relation holds between each member and the landmark. **-l** (no letter before the seam) is the exact relation, and `m` before the seam is the zone, as on a free hook.
+Every hook in the [extra-noun grid](/extra-noun-hooks#extra-noun-intermediate) works, with the reading it has there. The relation holds between each member and the landmark. `-l` (no letter before the seam) is the exact relation, and `m` before the seam is the zone, as on a free hook.
 
-| Hook | **-l** | Example | **-m** | Example |
+| Hook | `-l` | Example | `-m` | Example |
 |------|--------|---------|--------|---------|
 | `a` | *in* | `daxar blohehal` *something in the house* | *amid* | `zamxar bluzahal` *someone amid the school* |
 | `ao` | *on* | `daexar bledohel` *something on the table* | *over* | `daemxar bledohel` *something over the table* |
@@ -67,13 +67,13 @@ The join part keeps its readings, so every [join ending](/joins#standalone-phras
 
 | Join ending | Ageben | English | Under `yel` |
 |-------------|--------|---------|-------------|
-| **-r** | `zexar blohehal` | *someone at the house* | *who at the house?* |
-| **-r**, other series | `zexer blohehal` / `zexur blohehal` / `zexor blohehal` | *anyone at the house* / *someone else at the house* / *whoever ranks highest at the house* | *any? / who else? / which one most?* |
-| **-r** + **-x** | `zexarx blohehal` | *some people at the house* | *who all at the house?* |
-| **-l** | `zexal blohehal` | *nobody at the house* | |
-| **-m** | `zexam blohehal` | *nobody at the house, as far as I know* | |
-| **-l** on `ua` | `zexual blohehal` | *everyone at the house, no exceptions* | |
-| **-m** on `ua` | `zexuam blohehal` | *everyone at the house, as far as I know* | |
+| `-r` | `zexar blohehal` | *someone at the house* | *who at the house?* |
+| `-r`, other series | `zexer blohehal` / `zexur blohehal` / `zexor blohehal` | *anyone at the house* / *someone else at the house* / *whoever ranks highest at the house* | *any? / who else? / which one most?* |
+| `-r` + `-x` | `zexarx blohehal` | *some people at the house* | *who all at the house?* |
+| `-l` | `zexal blohehal` | *nobody at the house* | |
+| `-m` | `zexam blohehal` | *nobody at the house, as far as I know* | |
+| `-l` on `ua` | `zexual blohehal` | *everyone at the house, no exceptions* | |
+| `-m` on `ua` | `zexuam blohehal` | *everyone at the house, as far as I know* | |
 
 The two endings are separate choices: `zemxuam bluwen` is *everyone around here, as far as I know*. A standalone join as the landmark names the widest bound out loud: `zexual blual` is *everyone, anywhere, no exceptions*, and `zexuam blual` is *people anywhere, in general*.
 
@@ -91,7 +91,7 @@ With items before it, a closed or open join lists the whole set within the bound
 >
 > "Of everyone at the house, only Azozon walks."
 
-On **-r**, the join stands for one of the items, and the hook says which: the one in that relation.
+On `-r`, the join stands for one of the items, and the hook says which: the one in that relation.
 
 > `yel zodozel zogozel zexar blohehal.`
 >
@@ -155,7 +155,7 @@ A loose bound is often the honest one: *you always get like this at the holidays
 
 **Compare with:** [`harum`](/dependents#time-hinges) *until* places the event itself; `hoexual` bounds the *always*.
 
-**Point back to a time.** With `r` before the seam, `ar`, `er`, and `ur` point back to the latest **time** landmark: the `bl-` word of a time hinge (`herom`, `habam`, `halam`, `harum`, `huvahum`), the landmark of an earlier `/h/` hooked join, or a `blarl` in either. A place landmark does not count.
+With `r` before the seam, `ar`, `er`, and `ur` can also point back to a time: to the latest *time* landmark, which is the `bl-` word of a time hinge (`herom`, `habam`, `halam`, `harum`, `huvahum`), the landmark of an earlier `/h/` hooked join, or a `blarl` in either. A place landmark does not count.
 
 > `zazozon vowurol halam blanulul. zawan vebal hurxal.`
 >
@@ -165,7 +165,7 @@ A loose bound is often the honest one: *you always get like this at the holidays
 
 ### Bounded by a clause {#hooked-joins-clause}
 
-To name the stretch with a sentence (*never, in all the time since we moved in*), put the stand-in **`blarl`** after an `/h/` hooked join, as [`ul barl`](/hooks#since) takes one for *since*. The sentence after it is the time that bounds the restrictor. It runs to the period, so the hooked join comes last in the main clause.
+To name the stretch with a sentence (*never, in all the time since we moved in*), put the stand-in `blarl` after an `/h/` hooked join, as [`ul barl`](/hooks#since) takes one for *since*. The sentence after it is the time that bounds the restrictor. It runs to the period, so the hooked join comes last in the main clause.
 
 > `zawan vebal huxal blarl zayan vavobol al bohehal.`
 >
@@ -173,7 +173,7 @@ To name the stretch with a sentence (*never, in all the time since we moved in*)
 >
 > "You haven't listened since we moved into the house."
 
-**Compare with:** a [hook prefix](hook-compounds.md#hook-prefixes) also puts a hook before **`x`**, but the stem after the seam is its landmark: `guoxuvuvul` is *anti-fighting*. In a hooked join the join after the seam is the head, and the landmark is the `bl-` word: `zuoxual bluwen` is *everyone against me*. The shape after **`x`** tells them apart: a root, or only vowels and an ending. Use the prefix for a kind of member that can enter the dictionary (`zual gexohehal` *everyone at-home*), and the hooked join for one landmark (`zexual blohehal` *everyone at that house*), which may be a name, a special pronoun, a resume, a standalone join, or a clause, and may be pointed back to.
+**Compare with:** a [hook prefix](hook-compounds.md#hook-prefixes) also puts a hook before `x`, but the stem after the seam is its landmark: `guoxuvuvul` is *anti-fighting*. In a hooked join the join after the seam is the head, and the landmark is the `bl-` word: `zuoxual bluwen` is *everyone against me*. The shape after `x` tells them apart: a root, or only vowels and an ending. Use the prefix for a kind of member that can enter the dictionary (`zual gexohehal` *everyone at-home*), and the hooked join for one landmark (`zexual blohehal` *everyone at that house*), which may be a name, a special pronoun, a resume, a standalone join, or a clause, and may be pointed back to.
 
 ### Practice {#advanced-practice}
 

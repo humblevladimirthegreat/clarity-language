@@ -4,9 +4,11 @@ band: advanced
 
 # Closing and nesting spans {#closing-and-nesting-spans}
 
+Two marks written just inside a span's closing bracket change how it closes: one keeps faulty wording as said, and one closes every open span at once. Spans can also sit inside one another, each closed by its own bracket.
+
 ### Editorial close and close-all {#close-forms-complete-editorial-close-all}
 
-A closing bracket normally ends one span, with its wording complete. Two written marks, placed just **inside** the closing bracket, change that. **`#`** keeps the wording as written but shows that it is cut off, trails off, or is faulty (*Azozon said “bug…”*). **`|`** closes every span still open around it at once.
+When you quote someone whose words were cut off or faulty, as in *Azozon said “bug…”*, you want to keep the words as said and show that they are flawed. A closing bracket normally ends one span, with its wording complete. Two written marks, placed just inside the closing bracket, change that. **`#`** keeps the wording as written but shows that it is cut off, trails off, or is faulty. **`|`** closes every span still open around it at once, so you need not write one closing bracket for each.
 
 > `zazozon d[abezum#] vezuyol.`
 >
@@ -16,16 +18,16 @@ A closing bracket normally ends one span, with its wording complete. Two written
 
 | Writing | Use | English | Cue |
 |---------|-----|---------|-----|
-| `d[…]` | close **one** span, whole | the matching closer | the bracket closes it |
-| `d[…#]` | **editorial**: wording kept as written, cut off or defective | trailing off | **#** a note on the text |
-| `d[…|]` | close **all** open spans | sweep everything | **\|** one bar through every bracket |
+| `d[…]` | close one span, whole | the matching closer | the bracket closes it |
+| `d[…#]` | **editorial**: wording kept as written, cut off or defective | trailing off | `#` a note on the text |
+| `d[…|]` | close all open spans | sweep everything | `\|` one bar through every bracket |
 | `d[…#|]` | editorial, then close all | | write `#` first, then `\|` |
 
 An editorial span still counts as quoted: a role pointer can reach it as it reaches any cite.
 
 ### Nesting {#nesting}
 
-When one packaged chunk sits inside another (a quote that contains a parenthetical, or a cite wrapping an opaque blob), the spans nest, and each one closes with its own bracket.
+When one span sits inside another (a quote that contains a parenthetical, or a cite wrapping an opaque blob), the spans nest, and each one closes with its own bracket.
 
 > `zazozon d[ th(hugowul) azozon ] vezuyol.`
 >
