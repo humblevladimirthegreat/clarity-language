@@ -4,9 +4,11 @@ band: intermediate
 
 # How a label holds {#how-a-label-holds}
 
+This page adds two choices about how firmly a label fits. The first section softens a kind, holds it at every time, or denies it, without changing the kind word. The second section uses the ending of the *is the same as* word to claim a match outright or leave it open.
+
 ### Classification packaging {#classification-packaging}
 
-You already put a kind on `/ɡ/` after the name (*Azozon is a dog*). The extra choice here is how firmly the kind holds: hedge it, say it holds at every time, or deny it. The kind word stays on `/ɡ/`. Add a hedge on `/w/` before it (*sort of*), **`hual`** after the pair (*always*), or **`gul`** after it (*not*).
+You already say what kind something is by putting the kind on `/ɡ/` after the name (*Azozon is a dog*). English can also say how firmly that kind holds: *sort of a dog*, *always a dog*, *not a dog*. In Ageben the kind word stays on `/ɡ/` unchanged. Add a softening `/w/` word before it (*sort of*), `hual` after it (*always*), or `gul` after it (*not*), so one label can be softened, held at every time, or denied.
 
 > `zazozon godozel gul.`
 >
@@ -27,18 +29,18 @@ You already put a kind on `/ɡ/` after the name (*Azozon is a dog*). The extra c
 >
 > "Azozon is something of a dog."
 
-**Related form:** habitual *always* uses [**hual**](/restrictors).
+**Related form:** habitual *always* uses [`hual`](/restrictors).
 
-**Related form:** *not a dog* uses [negation **u**](/joins#negation-u) (`gul`).
+**Related form:** *not a dog* uses [negation `u`](/joins#negation-u) (`gul`).
 
 ### **IDENTITY** endings
 
-Beginner already used **`gorel`** (*is the same as*). Its other ending finishes the map.
+To say two names pick out the same person, Beginner used `gorel` (*is the same as*) followed by a `/b/` word for the other label. With the ending `-m` instead, **`gorem`** says they are basically the same, the same for practical purposes, and leaves the match open. Use `-l` when you claim the match outright, and `-m` when you mean only *basically*.
 
 | Ageben | Use | English |
 |--------|-----|---------|
-| **-l** | stand behind the match (closed) | *is* (the same as) |
-| **-m** | leave the match open | *same for our purposes* / *basically* |
+| `-l` | stand behind the match (closed) | *is* (the same as) |
+| `-m` | leave the match open | *same for our purposes* / *basically* |
 
 <!-- cheat-sheet: word-shape-clause -->
 | Ageben | English |
@@ -48,7 +50,7 @@ Beginner already used **`gorel`** (*is the same as*). Its other ending finishes 
 | `zalazun gorel blazozon gul` | *Alazun is not Azozon* (not the same person) |
 | `zeyel gorel blazozon` | inside a noun phrase: *the person who is Azozon* |
 
-**Compare with:** ordinary *coin* as a noun is `zorel`. Identity is **`gorel`** / **`gorem`** plus a following `/b/` label, kept next to each other.
+**Compare with:** ordinary *coin* as a noun is `zorel`. Identity is `gorel` / `gorem` plus a following `/b/` label, kept next to each other.
 
 ### Practice {#intermediate-practice}
 

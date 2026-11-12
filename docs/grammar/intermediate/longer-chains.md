@@ -6,7 +6,7 @@ band: intermediate
 
 ### Complex chaining {#complex-chaining}
 
-A relation adjective and its `bl-` word (*the same as Azozon*: **`gorel`** + `bl-`) work as one unit after a noun. A `/w/` word that grades the relation goes immediately before the `/ɡ/` word, as usual. You can keep chaining: a plain adjective after that pair describes the **extra noun**, not the first noun. (cue: 🪙 *coin*: two faces of one thing.)
+English can describe a person by how they relate to someone else (*a guard who is the same person as Azozon*), and can then describe that other person too (*sleepy Azozon*). In Ageben, a relation word in `/ɡ/` and its `bl-` word (*the same as Azozon*: `gorel` + `bl-`) work as one unit after the noun, and a `/w/` word that grades the relation goes right before the `/ɡ/` word, as usual. A plain adjective after that pair describes the extra noun, not the first noun, so you can keep chaining and describe both people in one phrase. (cue: 🪙 *coin*: two faces of one thing.)
 
 > `zagayul welazem gorel blazozon.`
 >
@@ -28,7 +28,7 @@ The same holds after an `/h/` or `/th/` host: an adjective after its `/b/` descr
 >
 > "Azozon sleeps like a tired dog."
 
-Because a second relation after the pair would attach to the extra noun, you cannot put two relation adjectives **after** the same first noun. To keep both on that noun in one clause, put one [before the noun](/left-bound-adjectives#left-bound-adjectives) with **`gl-`**; its `/b/` still follows it. Otherwise use [another sentence](/dependents#which-noun).
+Because a second relation after the pair would attach to the extra noun, you cannot put two relation words *after* the same first noun. To keep both on that noun in one clause, put one [before the noun](/left-bound-adjectives#left-bound-adjectives) with `gl-`; its `/b/` still follows it. Otherwise use [another sentence](/dependents#which-noun).
 
 > `glorel blazozon zagayul gorel blebayol.`
 >
