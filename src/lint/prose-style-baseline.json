@@ -1,7 +1,4 @@
 {
-  "advanced/as-of.md": {
-    "bold-density": 1
-  },
   "advanced/generations.md": {
     "bold-density": 2
   },
@@ -24,9 +21,6 @@
     "bold-density": 13
   },
   "advanced/stacked-markers.md": {
-    "bold-density": 1
-  },
-  "advanced/stance-bars.md": {
     "bold-density": 1
   },
   "advanced/stand-in-roles.md": {

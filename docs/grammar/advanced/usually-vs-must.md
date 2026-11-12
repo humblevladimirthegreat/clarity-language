@@ -7,7 +7,7 @@ band: advanced
 ### Channels on a generalization {#generalization}
 <a id="universality-mood"></a>
 
-English *always*, *usually*, *every*, and *never* make a general claim. The [universal fences](/universals-domains#universals-domains-generics) (`zual` / `zuam`) and the [restrictors](/restrictors) (`hual` / `huam` / `hal`) already say **who** or **when** the claim covers, and their ending says how many exceptions it allows: closed **-l** allows none, and open **-m** leaves them open, as on any list (*usually*, *as a rule*). No other word is needed for the claim itself.
+English *always*, *usually*, *every*, and *never* make a general claim. The [universal fences](/universals-domains#universals-domains-generics) (`zual` / `zuam`) and the [restrictors](/restrictors) (`hual` / `huam` / `hal`) already say *who* or *when* the claim covers, and their ending says how many exceptions it allows: closed `-l` allows none, and open `-m` leaves them open, as on any list (*usually*, *as a rule*). No other word is needed for the claim itself.
 
 > `zazozon huam vowurol.`
 >
@@ -15,7 +15,7 @@ English *always*, *usually*, *every*, and *never* make a general claim. The [uni
 >
 > "Azozon usually walks."
 
-To say **how you know** the general claim, add a [channel](/evidentiality#evidentiality). On a clause with a universal fence or restrictor, the channel is your warrant for the whole generalization, not for one case, and its [ending](/evidentiality#evidence-strength) says how much backs it.
+To say how you know the general claim, add a [channel](/evidentiality#evidentiality). On a clause with a universal fence or restrictor, the channel says how you know the whole generalization, not one case, and its [ending](/evidentiality#evidence-strength) says how much backs it.
 
 > `zazozon hual vowurol thubor.`
 >
@@ -35,7 +35,7 @@ To say **how you know** the general claim, add a [channel](/evidentiality#eviden
 >
 > "Alazun never punches, per the soccer rules."
 
-The fence says how far the claim reaches, and the channel says what it rests on. Keep the two apart: *always, as far as I have checked* is closed **`hual`** with a weak channel, because you claim no exceptions on thin evidence. Open **`huam`** does not claim that: it leaves the exceptions open.
+The fence says how far the claim reaches, and the channel says what it rests on. Keep the two apart: *always, as far as I have checked* is closed `hual` with a weak channel, because you claim no exceptions on thin evidence. Open `huam` does not claim that: it leaves the exceptions open.
 
 | English | Fence or restrictor | Channel | Example |
 |---------|---------------------|---------|---------|
@@ -46,7 +46,7 @@ The fence says how far the claim reaches, and the channel says what it rests on.
 | *under the rules of …* | `hal` / `hual` | REPORTED.strong with the rules in `/b/` | `zalazun hal vabuvul thebal blezunal.` |
 | *cats are sleepy* (in general) | `zuam` + kind | any, or none | `zuam gogozel guzemel thubom.` |
 
-A [cause or condition](/causation) on a general claim says how things work. It holds for **each** member or occasion, the same way the verb does. Inside the sentence after **`blarl`**, resume the kind with **-r** (`zogozer`) to mean *that same one*: each cat, in turn.
+A [cause or condition](/causation) on a general claim says how things work. It holds for *each* member or occasion, the same way the verb does. Inside the sentence after `blarl`, resume the kind with `-r` (`zogozer`) to mean *that same one*: each cat, in turn.
 
 > `zual gogozel vezuvel thewom thohem blarl zogozer guzemel.`
 >
@@ -54,7 +54,7 @@ A [cause or condition](/causation) on a general claim says how things work. It h
 >
 > "Every cat sleeps when it is sleepy; that is how it works."
 
-A **definition** works both ways: whatever has the property is that kind, and every member of the kind has it. Write it on a closed fence with **`thehom`** (*if and only if*, from [causation](/because-and-iff#only-because)). The grounds sentence is the defining property. A definition needs no channel, because it is a decision about a word, not a report about the world.
+A **definition** works both ways: whatever has the property is that kind, and every member of the kind has it. Write it on a closed fence with `thehom` (*if and only if*, from [causation](/because-and-iff#only-because)). The grounds sentence is the defining property. A definition needs no channel, because it is a decision about a word, not a report about the world.
 
 > `zual geyel gwozeduyol thehom blarl zeyer veduyol.`
 >
@@ -64,7 +64,7 @@ A **definition** works both ways: whatever has the property is that kind, and ev
 
 The channel stays on the main sentence and covers the whole generalization. Put it before the hinge, as with the [evidence clause](/evidentiality#evidence-clause): `zual gogozel vezuvel thubol thohem blarl …` is *going by a well-established pattern, every cat sleeps when …*.
 
-**Compare with:** a general claim you are **not** giving as today's report is [FORMER](/residue-and-former#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is a [requirement](/permission-consent#say-words) (`hwuvom`), not a law of how things work. *Maybe every cat sleeps* is [MAY](/knowing#may) on the same clause.
+**Compare with:** a general claim you are *not* giving as today's report is [FORMER](/residue-and-former#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is a [requirement](/permission-consent#say-words) (`hwuvom`), not a law of how things work. *Maybe every cat sleeps* is [MAY](/knowing#may) on the same clause.
 
 ### Practice {#advanced-practice}
 

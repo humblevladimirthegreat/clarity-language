@@ -4,13 +4,15 @@ band: advanced
 
 # Whose now {#whose-now}
 
+English *as of Friday* and *I was sure then* measure a sentence from a moment other than the one you speak in. The first section sets that moment for the event: what was still left over, what used to hold, or what was planned as of a date. The second sets it for your stance, so you can say what you thought or felt then without claiming you think it now.
+
 ### As-of (whose now) {#as-of}
 <a id="as-of-ledger"></a>
 <a id="as-of-bookmark"></a>
 
-English *as of Friday*, *would*, *was going to*, and *if he had* mix two times: **when the event happens**, and **which “now”** the rest of the sentence is measured from (what is still left over, what used to be the pattern, what is planned, what is forecast). Call that second one *whose-now*.
+English *as of Friday*, *would*, *was going to*, and *if he had* mix two times: when the event happens, and which “now” the rest of the sentence is measured from (what is still left over, what used to be the pattern, what is planned, what is forecast). Call that second one **whose-now**.
 
-Ageben keeps the two apart. With no extra marking, whose-now is **speech-now**, the moment you are speaking. To move it, write a hosted pair: **`henam`** when you claim that moment as real (a dated entry in the record), **`hunom`** when it is only a placeholder you are not claiming. Put the moment (the snapshot) in `/b/` immediately after. (cue: 📒 *ledger* stamps a dated line in the books; 🔖 *bookmark* holds the place without stamping)
+Ageben keeps the two apart: with no extra marking, whose-now is **speech-now**, the moment you are speaking. To move it, write an *as-of* word and put the moment, called the **snapshot**, in `/b/` immediately after it; the two together are the *as-of* pair. Use **`henam`** when you claim that moment as real (a dated entry in the record) and **`hunom`** when it is only a placeholder you are not claiming. Because the two times stay apart, a sentence can set its now with the pair and still place the event itself with *before* or *after*. (cue: 📒 *ledger* stamps a dated line in the books; 🔖 *bookmark* holds the place without stamping)
 
 > `zalazun haram henam bl_#22,7 vudurul.`
 >
@@ -26,7 +28,7 @@ Ageben keeps the two apart. With no extra marking, whose-now is **speech-now**, 
 
 With nothing else marked, the sitting happens at that now.
 
-The pair covers only its own clause. To keep the same whose-now in a following `/x/` clause, repeat the **same word** with **-r** and no `/b/` (`henar` / `hunor`). A new pair with its own `/b/` replaces whose-now, whether it repeats the word or switches between `henam` and `hunom`. A clause (or a noun or adjective, below) takes at most one *as-of* pair.
+The pair covers only its own clause. To keep the same whose-now in a following `/x/` clause, repeat the same word with `-r` and no `/b/` (`henar` / `hunor`). A new pair with its own `/b/` replaces whose-now, whether it repeats the word or switches between `henam` and `hunom`. A clause (or a noun or adjective, below) takes at most one *as-of* pair.
 
 > `zalazun haram henam bl_#22,7 vudurul. xazozon haram henar vowurol.`
 >
@@ -34,28 +36,28 @@ The pair covers only its own clause. To keep the same whose-now in a following `
 >
 > "As of 22 July, Alazun had left and was still gone. As of that same day, Azozon's walk still counted too."
 
-The role letter says what the snapshot applies to: `/h/` the whole clause, `/ɡ/` one noun (`genam` *the tab as of Friday*), and `/w/` the `/ɡ/` adjective immediately after the pair (`wenam b_#22,7 gamahum`). These are separate, so one clause may carry a clause snapshot and an adjective snapshot at once. A noun or adjective snapshot does not reach the verb: if the **verb** should also count from that now, the clause needs its own `/h/` *as-of* (or a resume).
+The role letter says what the snapshot applies to: `/h/` the whole clause, `/ɡ/` one noun (`genam` *the tab as of Friday*), and `/w/` the `/ɡ/` adjective immediately after the pair (`wenam b_#22,7 gamahum`). These are separate, so one clause may carry a clause snapshot and an adjective snapshot at once. A noun or adjective snapshot does not reach the verb: if the verb should also count from that now, the clause needs its own `/h/` *as-of* (or a resume).
 
 The `bl-` word after the pair can be:
 
 - a clock time or date digit string
 - an event noun
-- **`blarl`**, with the next sentence as whose-now (the pair then goes last)
-- extra-noun **-r**, which points back to a time already said (on a date, **-r** is written `=`: `bl=_#22,7` is *that 22 July again*; see the example below where Alazun walks on 22 July)
+- `blarl`, with the next sentence as whose-now (the pair then goes last)
+- extra-noun `-r`, which points back to a time already said (on a date, `-r` is written `=`: `bl=_#22,7` is *that 22 July again*; see the example below where Alazun walks on 22 July)
 
 It is never an offset from speech-now such as *three hours ago*: that would date the event without saying how you know the date. The *as-of* word already carries the date, so do not also write a separate `h_#22,7` for the same snapshot. A bare `h_#…` with no pair dates the event itself ([time](/digit-strings#time)). A clock time, *before*, or *after* may sit beside an *as-of* pair.
 
-Do not put a bare person in `/b/` to mean “from Alazun’s now.” A person after `hanem` is [proxy](/relations#proxy). To mean *as of when Alazun told it*, use **`blarl`** and a sentence: `henam blarl zalazun vezuyol`.
+Do not put a bare person in `/b/` to mean “from Alazun’s now.” A person after `hanem` is [proxy](/relations#proxy). To mean *as of when Alazun told it*, use `blarl` and a sentence: `henam blarl zalazun vezuyol`.
 
 Once whose-now is set, these count from it:
 
-- A [forecast](/evidentiality#forecast) offset (`blral`) counts forward **from** that now.
-- A [signed offset](/dated-channel#dated-channel) counts **from** that now, not from the moment you speak.
-- [RESIDUE](/residue-and-former#residue) is what is still left over **at** that now.
-- [FORMER](/residue-and-former#former-climate) means the pattern no longer held **at** that now.
-- A bare verb happens **at** that now.
+- A [forecast](/evidentiality#forecast) offset (`blral`) counts forward *from* that now.
+- A [signed offset](/dated-channel#dated-channel) counts *from* that now, not from the moment you speak.
+- [RESIDUE](/residue-and-former#residue) is what is still left over *at* that now.
+- [FORMER](/residue-and-former#former-climate) means the pattern no longer held *at* that now.
+- A bare verb happens *at* that now.
 
-[MAY](/knowing#may), [CAUSE](/cause#cause), and every other stance still count from speech-now. Evidentials, apart from LIVE at the snapshot, still say how *you* know at speech-now.
+[MAY](/knowing#may), [CAUSE](/cause#cause), and every other stance still count from speech-now. Channel words, apart from LIVE at the snapshot, still say how *you* know at speech-now.
 
 > `zazozon zalazun zol wenam b_#22,7 gamahum.`
 >
@@ -103,18 +105,20 @@ The second sentence's own pair replaces the 22 July now.
 
 An *as-of* pair inside a finished inner clause cannot be resumed later in the main clause. `henar` on its own parses, but write it only after a clause that set whose-now with `henam` and a `/b/`.
 
-**Compare with:** [*after*](/dependents#time-hinges) **`halam`** and extra-noun **`el`** *at* place the event in time or next to a landmark; they do not set whose-now. [Causal *if*](/causation#if) **`thohem`** is a condition judged at speech-now, not English *if he had* (`hunom`). [NOTIONAL](/notional#notional) is pretend, not a placeholder now. [Scope islands](/scope-islands#scope-islands) limit how far a join reaches; they do not carry an *as-of* forward. On the next clause, repeat the evidential, resume the *as-of*, or both.
+**Compare with:** [*after*](/dependents#time-hinges) `halam` and extra-noun `el` *at* place the event in time or next to a landmark; they do not set whose-now. [Causal *if*](/causation#if) `thohem` is a condition judged at speech-now, not English *if he had* (`hunom`). [NOTIONAL](/notional#notional) is pretend, not a placeholder now. [Scope islands](/scope-islands#scope-islands) limit how far a join reaches; they do not carry an *as-of* forward. On the next clause, repeat the channel word, resume the *as-of*, or both.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`henam` / `genam` / `wenam`** | asserted whose-now | *as of* (dated ledger) | `enal` *ledger* | 📒: a dated line in the books |
 | **`hunom` / `gunom` / `wunom`** | unasserted whose-now | *as of* (placeholder now) | `unol` *bookmark* | 🔖: hold the place without stamping |
-| **`henar` / `hunor`** | resume that whose-now | *same books* | same | **-r** restates the stem; no `/b/` |
+| **`henar` / `hunor`** | resume that whose-now | *same books* | same | `-r` restates the stem; no `/b/` |
 
 ### Stance as-of {#stance-as-of}
 
-A stance is yours at speech-now: `thomam` is how unsure you are **as you speak**, and a sake or feeling word is how you stand **now**. English *I was sure then*, *back then it stung*, and *I'd be relieved* date the stance itself. Put the same *as-of* pair on `/th/`: **`thenam`** for a real now, **`thunom`** for a now you are not claiming, then the snapshot in `/b/`. Every stance word in the clause, including MAY, WANT, CAUSE, sakes, and feelings, then reads from that now. A [PLAN](/intention#plan-predict) is then planned **from** that now, and a [DECISION](/want-and-decide#decision) is held **at** it.
+English *I was sure then*, *back then it stung*, and *I'd be relieved* date the stance itself, not the event. A bare stance is yours at speech-now: `thomam` is how unsure you are as you speak, and a sake or feeling word is how you stand now. To date it, put the same *as-of* pair on `/th/`: **`thenam`** for a real now, **`thunom`** for a now you are not claiming, then the snapshot in `/b/`. Every stance word in the clause, including MAY, WANT, CAUSE, sakes, and feelings, then reads from that now, so you can say what you thought then without a claim about what you think now.
+
+A [PLAN](/intention#plan-predict) is then planned *from* that now, and a [DECISION](/want-and-decide#decision) is held *at* it.
 
 > `zalazun thenam bl_#22,7 thomam vudurul.`
 >
@@ -128,7 +132,7 @@ A stance is yours at speech-now: `thomam` is how unsure you are **as you speak**
 >
 > "Alazun might leave."
 
-`/th/` *as-of* moves only the stances. `/h/` *as-of* moves the event's books. A clause may carry one of each, so a past stance can sit next to a past event:
+`/th/` *as-of* moves only the stances. `/h/` *as-of* moves the now the event is measured from. A clause may carry one of each, so a past stance can sit next to a past event:
 
 > `zalazun thenam bl_#22,7 thomam henam bl_#22,7 vudurul.`
 >
@@ -136,7 +140,7 @@ A stance is yours at speech-now: `thomam` is how unsure you are **as you speak**
 >
 > "On 22 July, I thought Alazun might have left by then."
 
-With **`thunom`**, the stance is one you would hold, not one you held:
+With `thunom`, the stance is one you would hold, not one you held:
 
 > `zalazun thomam vudurul thunom blarl zazozon vezuyol.`
 >
@@ -146,7 +150,7 @@ With **`thunom`**, the stance is one you would hold, not one you held:
 
 Resume works as on `/h/`: **`thenar`** / **`thunor`** with no `/b/` on the next `/x/` clause keeps the same stance-now.
 
-Unlike the event pair, stance *as-of* also takes a signed offset from speech-now in its `/b/`, because it dates only your stance, not the event. Digitless **`blrul`** is *back then*, with no amount claimed:
+Unlike the event pair, stance *as-of* also takes a signed offset from speech-now in its `/b/`, because it dates only your stance, not the event. Digitless `blrul` is *back then*, with no amount claimed:
 
 > `zalazun thenam blrul thomam vudurul.`
 >
@@ -156,14 +160,14 @@ Unlike the event pair, stance *as-of* also takes a signed offset from speech-now
 
 Changing your mind is then a change of now, not a contradiction: *I was fairly sure on the 22nd* (`thenam`) and *I'm unsure now* (no pair) are both true.
 
-**Compare with:** an evidential is how you know **at speech-now**, even under `/th/` *as-of*. Someone else's stance takes a [holder](/holder#holder); with one, `thenam` dates **their** stance. *I remember feeling it* is a remembering channel (`thevum`) plus `thenam`.
+**Compare with:** a channel word is how you know at speech-now, even under `/th/` *as-of*. Someone else's stance takes a [holder](/holder#holder); with one, `thenam` dates *their* stance. *I remember feeling it* is a remembering channel (`thevum`) plus `thenam`.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thenam`** | stances as of a real now | *I thought / I felt (then)* | 📒: a dated line |
 | **`thunom`** | stances as of a now you are not claiming | *I would think / I'd feel* | 🔖: a held place |
-| **`thenar` / `thunor`** | resume that stance-now | *still as I saw it then* | **-r** restates |
+| **`thenar` / `thunor`** | resume that stance-now | *still as I saw it then* | `-r` restates |
 
 ### Practice {#advanced-practice}
 

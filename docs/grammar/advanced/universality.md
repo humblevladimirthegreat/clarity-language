@@ -7,9 +7,9 @@ band: advanced
 ### Mood on one adjective
 <a id="mood-on-adjective"></a>
 
-The `/th/` words MAY and the channels, [NOTIONAL](/notional#notional), and the `/h/` words [RESIDUE and FORMER](/residue-and-former#residue) cover the whole sentence. When one applies only to a single `/ɡ/` adjective, put the same word on `/w/` right before that adjective instead.
+English can hedge or source one description inside a sentence: *a hat that I remember as red*, *still tired*. In Ageben the `/th/` words MAY and the channels, [NOTIONAL](/notional#notional), and the `/h/` words [RESIDUE and FORMER](/residue-and-former#residue) cover the whole sentence. When one applies only to a single `/ɡ/` adjective, put the same word on `/w/` right before that adjective instead, and it covers that adjective, not the rest of the sentence.
 
-Only words about **how you know** or **how things stand** move to `/w/` this way: the ones above, [CAUSE](/cause#cause), the [*already* / *still* words](/already-still-yet#phasal), and [*can* with `oda`](/can-and-cant#ability-fallback). A plan, decision, try, or want stays on its own letter (`/th/`, or `/h/` for a try): on `/w/` the same spelling is the ordinary word of its root (`wagom` *as planned*, `wogem` *decidedly*, `wowam` *tentatively*, `walom` *wishfully*).
+Only words about how you know or how things stand move to `/w/` this way: the ones above, [CAUSE](/cause#cause), the [*already* / *still* words](/already-still-yet#phasal), and [*can* with `oda`](/can-and-cant#ability-fallback). A plan, decision, try, or want stays on its own letter (`/th/`, or `/h/` for a try): on `/w/` the same spelling is the ordinary word of its root (`wagom` *as planned*, `wogem` *decidedly*, `wowam` *tentatively*, `walom` *wishfully*).
 
 > `zazozon danobal wevum gerulol vayebel.`
 >
