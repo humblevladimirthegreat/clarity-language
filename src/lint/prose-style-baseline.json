@@ -85,9 +85,6 @@
   "intermediate/contrary-to.md": {
     "bold-density": 1
   },
-  "intermediate/conversation-length.md": {
-    "bold-density": 2
-  },
   "intermediate/dated-channel.md": {
     "bold-density": 1,
     "long-paragraph": 1
@@ -121,9 +118,6 @@
   "intermediate/label-reach.md": {
     "voice": 1
   },
-  "intermediate/letter-names.md": {
-    "bold-density": 1
-  },
   "intermediate/measures-and-percent.md": {
     "bold-density": 2
   },
@@ -139,15 +133,9 @@
   "intermediate/number-roles.md": {
     "bold-density": 1
   },
-  "intermediate/phonotactics.md": {
-    "long-paragraph": 1
-  },
   "intermediate/polar-inventory.md": {
     "bold-density": 5,
     "long-paragraph": 1
-  },
-  "intermediate/proper-names.md": {
-    "bold-density": 3
   },
   "intermediate/ranges.md": {
     "bold-density": 1

@@ -4,10 +4,12 @@ band: intermediate
 
 # Word shape {#word-shape}
 
+This page lays out the full shape of a content word, part by part. It then gives the one exception, the number word, and the one beat you say with no vowel letter.
+
 ### Phonotactics (word shape)
 <a id="phonotactics"></a>
 
-Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-r`. Here is the full shape of that word, in order, written as one lowercase token (`zazozon`).
+In Beginner, every content word ended in `-l` / `-m` / `-n` / `-r`. The table below gives the full shape of that word, part by part in order, written as one lowercase word with no spaces (`zazozon`). Use it to split any content word into its parts.
 
 <!-- cheat-sheet: sounds-spelling -->
 | Ageben | Use | English |
@@ -23,7 +25,7 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Optional `-x` | [plural](/plurality) after the ending | word-final `-lx` / `-mx` / `-nx` / `-rx` / `-lnx` (letter `x`) |
 | Stand-in `-rl` / `-rm` | [dependent clauses](/dependents#dependent-clauses) | word-final `rl` / `rm` |
 
-A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zobulol`: prefix `z`, root `obulo`, ending `-l`). Each spelling has only one pronunciation.
+A syllable ends with a consonant only at the end of the word. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zobulol`: prefix `z`, root `obulo`, ending `-l`). Each spelling has only one pronunciation.
 
 Some short grammar words put two vowels side by side, a **vowel stack** (a join such as `ua`). A stack always puts its vowels in alphabetical order (`u`, `a`, `o`, `e`): `u` comes first and `e` comes last. That gives six stacks: `ua`, `uo`, `ue`, `ao`, `ae`, and `oe`. The two vowels stay two separate syllables.
 
@@ -38,13 +40,15 @@ Each vowel keeps its [pitch](/phonology#vowel-pitch) in a stack, so every stack 
 | `ae` | low → mid-high | medium rise |
 | `oe` | mid-low → mid-high | small rise, mid |
 
-**A fall means `u`.** Every stack that starts with `u` falls, and every other stack rises. In grammar words a `u` stack is usually the *undo* or *set aside* member of its family, so you can hear which side a stack is on from its direction alone, before the second vowel is clear. The direction backs up the vowels; when the two disagree, trust the vowels.
+Every stack that starts with `u` falls, and every other stack rises (cue: a fall means `u`). In grammar words a `u` stack is usually the *undo* or *set aside* member of its family, so you can hear which side a stack is on from its direction alone, before the second vowel is clear. The direction only confirms what the vowels say; when the two disagree, trust the vowels.
 
-**Related form:** word-initial `x` is the [continue](/speech-moves#continue-x) prefix (discourse), not a compound seam.
+A word that starts with `x` is a different form: the [continue](/speech-moves#continue-x) prefix, which adds a sentence to the speech move you already started. It is not a compound seam.
 
 ### Number-word exception {#number-word-exception}
 
-When English says *how many* or *which place*, Ageben uses a [number word](/numbers). A number word puts `r` right after the role letter. Ordinary words never have that cluster, because their roots start with a vowel, so a role letter followed directly by `r` tells you a number is coming. The marker is `ra`, `ru`, `re`, or `ro`. To count from the end, write `#-` before the digits; it is spelled and spoken `rue`. Two vowels in a row stay two separate syllables.
+When English says *how many* or *which place*, Ageben uses a [number word](/numbers). A number word puts `r` right after the role letter. Ordinary words never have that cluster, because their roots start with a vowel, so a role letter followed directly by `r` tells you a number is coming.
+
+The marker is `ra`, `ru`, `re`, or `ro`. To count from the end, write `#-` before the digits; it is spelled and spoken `rue`. Two vowels in a row stay two separate syllables.
 
 > `zogozelx gragel.`
 >
