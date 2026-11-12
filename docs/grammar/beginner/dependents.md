@@ -48,7 +48,7 @@ For English *whether*, change the vowel to `e`: **`derl`**. The inner sentence i
 
 ### Because, although (hinges) {#hinges}
 
-Words like *because* and *although* attach a dependent clause as a reason, a contrast, or a time. Ageben uses a pair for this, kept together last in the main sentence: a **hinge** word that names the link, then the stand-in **`blarl`** at the very end, which is the hinge's hosted [extra noun](clause.md#extra-nouns) in `/b/`, since the hinge is a relation word.
+Words like *because* and *although* attach a dependent clause as a reason, a contrast, or a time. Ageben uses a pair for this, kept together last in the main sentence: a **hinge** word that names the link, then the stand-in **`blarl`** at the very end, which is the hinge's hosted [extra noun](clause.md#extra-nouns) in `/b/`, since the hinge is a relation word: one that needs a second piece, here the clause, to complete it.
 
 *Because* is your [stance](clause.md#stance-th) on why the claim holds, *so that* is your own aim for the event, and *although* is your expectation that the first event would normally have stopped the second, so they take `/th/`. *While*, *until*, *before*, and *after* describe the event itself, so they are adverbs on `/h/`.
 

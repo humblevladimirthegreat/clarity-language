@@ -22,7 +22,7 @@ Each line is one rule. *Build* means `npm run build` checks it, so you do not ne
 | Bold is rare | Build, warns | [Voice and length](#voice-and-length) |
 | A form is bold only where the page introduces it; letters and endings go in backticks, never bold | Judgment | [Voice and length](#voice-and-length) |
 | A Beginner lead has two to four sentences before its example | Build, warns | [Explain before you slogan](#explain-before-you-slogan) |
-| Second person; no maintainer *we*, no author *I* | Judgment | [Voice and length](#voice-and-length) |
+| Second person; no maintainer *we*, no author *I* | Build, fails | [Voice and length](#voice-and-length) |
 | The lead says the English job, the Ageben shape, and the consequence | Judgment | [Explain before you slogan](#explain-before-you-slogan) |
 | Every section that introduces a distinction says why the learner cares | Judgment | [Consequence](#consequence) |
 | A point is previewed once and explained once | Judgment | [Say it once](#say-it-once) |
@@ -69,6 +69,7 @@ Exact rules fail the build:
 | `cue-first` | `(cue: …)` in the first sentence under a heading, on stage pages |
 | `editor-path` | A mention of `docs/meta/` or `docs/proposals/` |
 | `legacy-name` | The language's former name as a word. A real community URL on a legacy host is a link target, and link targets are not checked |
+| `voice` | Maintainer *we* (*we*, *us*, *our* and their forms) and author *I* (*I*, *me*, *my* and their forms) in the page's own words. Examples are skipped: italics, quotation marks, quoted lines, tables, numbered prompts, example lines in answers, and a gloss in parentheses after an example. Author *I* is allowed in the introduction's Acknowledgments and the purpose page's Criticisms ([voice and length](#voice-and-length)) |
 
 Quoted example lines and English in italics are examples, not the page's own voice, so the phrase lists skip them.
 
@@ -80,7 +81,6 @@ Heuristic rules warn. The build prints one count per rule, and `npm run lint:pro
 | `long-paragraph` | More than five sentences in one paragraph |
 | `bold-density` | More than four bold phrases in one paragraph |
 | `beginner-lead` | Fewer than two or more than four sentences between a Beginner H3 and its first example |
-| `voice` | Maintainer *we* (*we*, *us*, *our* and their forms) and author *I* (*I*, *me*, *my* and their forms) in the page's own words. Examples are skipped: italics, quotation marks, quoted lines, tables, numbered prompts, example lines in answers, and a gloss in parentheses after an example. Author *I* is allowed in the introduction's Acknowledgments and the purpose page's Criticisms ([voice and length](#voice-and-length)) |
 
 A warning is a place to look, not a verdict. A one-sentence lead is right when the previous section already made the job obvious.
 

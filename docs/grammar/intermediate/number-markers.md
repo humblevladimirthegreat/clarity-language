@@ -70,7 +70,7 @@ Each number word is one kind of number, set by its marker. In preferred writing,
 
 ### Number endings {#number-endings}
 
-Beginner already used exact `-l`. A number word takes the same four ending letters as any other word, but on a number they have their own meanings: the other endings mark *about*, a named title, or a repeat of a number you already gave. Speech keeps the ending letter. Shorthand writing shows the ending as a mark right after the role letter (the same marks as on [spans](/spans)).
+Beginner already used exact `-l`. A number word takes the same four ending letters as any other word, but on a number they have their own meanings. The other three let you give a rough count (*about three*), use a number as a title (*the Second…*), or point back to a number you already gave without saying it fresh. Speech keeps the ending letter. Shorthand writing shows the ending as a mark right after the role letter (the same marks as on [spans](/spans)).
 
 <!-- cheat-sheet: numbers -->
 | Written | Spoken | Use | Cue |

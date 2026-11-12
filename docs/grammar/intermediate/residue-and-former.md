@@ -9,7 +9,7 @@ band: intermediate
 <a id="former-climate"></a>
 <a id="episode-standing"></a>
 
-English *has left* and *used to tell* mix two things: when the event happened, and how it stands now. Ageben says how it stands with two `/h/` words. **RESIDUE** says the outcome of an event is still in effect now. **FORMER** says a usual pattern is not one you are claiming for now.
+English *has left* and *used to tell* mix two things: when the event happened, and how it stands now. Ageben says how it stands now, its climate, with two `/h/` words. **RESIDUE** says the outcome of an event is still in effect now. **FORMER** says a usual pattern is not one you are claiming for now.
 
 Neither word says when anything happened, so use them alongside a channel or a word that places the event in time, never as a past or present tense. Ageben places events in time with other tools: [*before* / *after* / *while*](/dependents#time-hinges), a clock or date, [LIVE](/knowing#live-vs-memory) / [MEMORY](/knowing#live-vs-memory), or a [forecast](evidentiality.md#forecast).
 

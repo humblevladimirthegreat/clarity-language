@@ -96,7 +96,7 @@ With `-l`, `erol` is *only while*: A happens during B and at no other time.
 
 ### Like (`ewem`) {#same-role-like}
 
-English *Azozon, like Ahelan, walks* says that both walk, and holds up Ahelan as the case Azozon matches. Use `ewem` between the two: B is a separate member of the same role, in the background.
+English *Azozon, like Ahelan, walks* says that both walk, and holds up Ahelan as the case Azozon matches. Use `ewem` between the two: B is a second member of the same role, so Ahelan walks too, and B is the case held up for A to match.
 
 > `zazozon ewem zahelan vowurol.`
 >

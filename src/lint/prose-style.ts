@@ -254,9 +254,9 @@ export function proseStyleIssues(page: string, markdown: string): ProseIssue[] {
     if (kind !== "table" && !answerExample && !/^\s*\*\*\d+\.\*\*/.test(line)) {
       const voice = voiceText(line);
       const we = MAINTAINER_WE.exec(voice);
-      if (we) warning("voice", n, `maintainer "${we[0]}"`);
+      if (we) error("voice", n, `maintainer "${we[0]}"`);
       const me = signed ? null : AUTHOR_I.exec(voice);
-      if (me) warning("voice", n, `author "${me[0]}"`);
+      if (me) error("voice", n, `author "${me[0]}"`);
     }
 
     if (!JARGON_EXEMPT.has(name)) {

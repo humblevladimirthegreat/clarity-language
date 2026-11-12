@@ -24,7 +24,7 @@ Beginner used the ending to say how to take a content word’s meaning. On an `/
 
 When you say several sentences in a row, the listener needs to hear where each one ends and whether the next is still the same statement, question, or command. A **period** closes the sentence body in writing, whatever the speech act. Speech matches that edge with a **rest**: one silent beat.
 
-The act word, not the punctuation, sets question or command. `?` and `!` are [tone marks](tone-marks.md#tone-marks) that go before the words they color. Whether a rest comes, and which word follows it, tells the listener if the speech act goes on or a new one starts.
+The act word, not the punctuation, sets question or command. `?` and `!` are [tone marks](tone-marks.md#tone-marks) that go before the words they color. Whether a rest comes, and which word follows it, tells the listener if the speech act goes on or a new one starts. After a rest, a new `/y/` turn word (*yes*, *no*, a call, or an act word) starts a new act, while a bare body or a sentence linker keeps the same one. With no rest, as after an `/x/` continue, the same sentence goes on.
 
 | Writing | Speech | Use | Cue |
 |---------|--------|-----|-----|

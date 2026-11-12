@@ -64,14 +64,14 @@ test("sentenceCount ignores code, link targets, parentheses and abbreviations", 
   assert.equal(sentenceCount("See [the page. yes](x.md). Done?"), 3);
 });
 
-test("voice warns on maintainer we and author I in the page's own words", () => {
-  assert.deepEqual(rules("Here we write the verb first."), ["warning:voice"]);
-  assert.deepEqual(rules("This suits our purposes."), ["warning:voice"]);
-  assert.deepEqual(rules("Let us look at endings."), ["warning:voice"]);
-  assert.deepEqual(rules("I think the ending helps."), ["warning:voice"]);
-  assert.deepEqual(rules("I'm adding a table."), ["warning:voice"]);
-  assert.deepEqual(rules("Ask me about it."), ["warning:voice"]);
-  assert.deepEqual(rules("### What we mean"), ["warning:voice"]);
+test("voice fails on maintainer we and author I in the page's own words", () => {
+  assert.deepEqual(rules("Here we write the verb first."), ["error:voice"]);
+  assert.deepEqual(rules("This suits our purposes."), ["error:voice"]);
+  assert.deepEqual(rules("Let us look at endings."), ["error:voice"]);
+  assert.deepEqual(rules("I think the ending helps."), ["error:voice"]);
+  assert.deepEqual(rules("I'm adding a table."), ["error:voice"]);
+  assert.deepEqual(rules("Ask me about it."), ["error:voice"]);
+  assert.deepEqual(rules("### What we mean"), ["error:voice"]);
 });
 
 test("voice skips examples, code, comments, link targets, glosses and lookalikes", () => {
@@ -92,38 +92,38 @@ test("voice skips examples, code, comments, link targets, glosses and lookalikes
   assert.deepEqual(rules("The US has fifty states. Use Henry I. and World War I. as names."), []);
   assert.deepEqual(rules("::: details Show answer\nI ran `zuol`.\n:::"), []);
   assert.deepEqual(rules("::: details Show answer\nWe ran.\n:::", "claritish/x.md"), []);
-  assert.deepEqual(rules("::: details Show answer\nThis is fine for our purposes.\n:::"), ["warning:voice"]);
+  assert.deepEqual(rules("::: details Show answer\nThis is fine for our purposes.\n:::"), ["error:voice"]);
 });
 
 test("voice allows author I only in the signed sections", () => {
   const signed = "## Acknowledgments\n\nI would like to thank them.\n\n## Next\n\nI teach.";
-  assert.deepEqual(rules(signed, "introduction.md"), ["warning:voice"]);
+  assert.deepEqual(rules(signed, "introduction.md"), ["error:voice"]);
   assert.deepEqual(rules("## Criticisms {#criticisms}\n\n### Ethics\n\nI think so.", "purpose.md"), []);
-  assert.deepEqual(rules("## Criticisms {#criticisms}\n\nWe think so.", "purpose.md"), ["warning:voice"]);
-  assert.deepEqual(rules("## Limits\n\nI think so.", "purpose.md"), ["warning:voice"]);
-  assert.deepEqual(rules("## Acknowledgments\n\nI would like to thank them."), ["warning:voice"]);
+  assert.deepEqual(rules("## Criticisms {#criticisms}\n\nWe think so.", "purpose.md"), ["error:voice"]);
+  assert.deepEqual(rules("## Limits\n\nI think so.", "purpose.md"), ["error:voice"]);
+  assert.deepEqual(rules("## Acknowledgments\n\nI would like to thank them."), ["error:voice"]);
 });
 
 test("warning ratchet: rises fail, falls are reported, missing pages and rules count as 0", () => {
-  const baseline = { "a.md": { jargon: 2, voice: 1 }, "gone.md": { jargon: 1 } };
+  const baseline = { "a.md": { jargon: 2, "bold-density": 1 }, "gone.md": { jargon: 1 } };
   const counts = { "a.md": { jargon: 3 }, "b.md": { "long-paragraph": 1 }, "c.md": {} };
   assert.deepEqual(compareWarningBaseline(counts, baseline), {
     rises: [
       { page: "a.md", rule: "jargon", baseline: 2, current: 3 },
       { page: "b.md", rule: "long-paragraph", baseline: 0, current: 1 },
     ],
-    falls: [{ page: "a.md", rule: "voice", baseline: 1, current: 0 }],
+    falls: [{ page: "a.md", rule: "bold-density", baseline: 1, current: 0 }],
   });
   assert.deepEqual(compareWarningBaseline(counts, baseline, [...Object.keys(counts), "gone.md"]).falls.length, 2);
-  assert.deepEqual(compareWarningBaseline({ "a.md": { jargon: 2, voice: 1 } }, baseline), { rises: [], falls: [] });
+  assert.deepEqual(compareWarningBaseline({ "a.md": { jargon: 2, "bold-density": 1 } }, baseline), { rises: [], falls: [] });
 });
 
 test("warning baseline update: full replaces, per-page keeps the rest, output is sorted", () => {
   const baseline = { "a.md": { jargon: 2 }, "gone.md": { jargon: 1 } };
-  const counts = { "b.md": { voice: 1, jargon: 0 }, "a.md": {} };
-  assert.deepEqual(updatedWarningBaseline(counts, baseline), { "b.md": { voice: 1 } });
-  assert.deepEqual(updatedWarningBaseline({ "a.md": { voice: 1 } }, baseline, ["a.md"]), {
-    "a.md": { voice: 1 },
+  const counts = { "b.md": { "bold-density": 1, jargon: 0 }, "a.md": {} };
+  assert.deepEqual(updatedWarningBaseline(counts, baseline), { "b.md": { "bold-density": 1 } });
+  assert.deepEqual(updatedWarningBaseline({ "a.md": { "bold-density": 1 } }, baseline, ["a.md"]), {
+    "a.md": { "bold-density": 1 },
     "gone.md": { jargon: 1 },
   });
   assert.equal(

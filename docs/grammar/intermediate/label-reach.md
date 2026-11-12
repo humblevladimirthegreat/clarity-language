@@ -165,6 +165,6 @@ z-Alazun | [g-IDENTITY | bl-Azozon]
 
 z-Alazun | [g-same | bl-Azozon]
 
-**-l** stands behind the match. **-m** leaves it open: they are the same for our purposes.
+**-l** stands behind the match. **-m** leaves it open: they are *the same for our purposes*.
 :::
 
