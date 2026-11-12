@@ -4,11 +4,13 @@ band: advanced
 
 # Open and named ranges {#open-and-named-ranges}
 
+This page stretches the range hook past two plain numbers. A ray gives a range only one end, for *5 or more* and *less than 5*. A named or unknown range changes the hook's ending to name a band, such as *the teens*, or to stand for one value inside it that you do not name.
+
 ### Rays {#rays}
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-English *5 or more* / *less than 5* is a **ray**: a band with only one end. Write it as a [range](/ranges#number-ranges) whose other end is infinity: **`zrawal`** (+∞) or **`zruwal`** (−∞), the [digitless exponents](special-values.md#special-values). The same **`oel`** / **`uel`** rules apply, so **`uel`** leaves out the end said second.
+English *5 or more* / *less than 5* is a **ray**: a band with only one end. Write it as a [range](/ranges#number-ranges) whose other end is infinity: `zrawal` (+∞) or `zruwal` (−∞), the [digitless exponents](special-values.md#special-values). The same `oel` / `uel` rules apply, so `uel` leaves out the end said second. That gives you *at least*, *more than*, *at most*, and *less than* as one range each.
 
 > `zrazal oel zrawal.`
 >
@@ -33,23 +35,23 @@ English *5 or more* / *less than 5* is a **ray**: a band with only one end. Writ
 
 For counts, −∞ reads as *no lower limit*: `zogozelx gruwal oel grazal` is *up to five cats*.
 
-Ranks take the first and last place as ends. **`growal`** is the last place and **`growul`** the first, so `zrodol oel zrowal` is *2nd through last*.
+Ranks take the first and last place as ends. `growal` is the last place and `growul` the first, so `zrodol oel zrowal` is *2nd through last*.
 
-**Both ends stay on one line.** ±∞ is an amount, and the first and last place are ranks, so a rank runs to the last place, not to infinity: *2nd through +∞* has no reading. An end with no digits is still an end (`zral oel zrazal`).
+**Both ends are the same kind of number.** ±∞ is an amount, and the first and last place are ranks, so a rank runs to the last place, not to infinity: *2nd through +∞* has no reading. An end with no digits is still an end (`zral oel zrazal`).
 
 **Compare with:** a rank join on one number is not a ray: `zrazal zol` is *only 5 matters*, and `zrazal zaol` is *start with 5*.
 
 ### Named and unknown ranges {#named-ranges}
 <a id="half-open-exclude-the-high-end-only"></a>
 
-The range hook takes the other hook endings too.
+English can name a whole band (*the teens*) or point to one value inside a band without naming it (*some number from 3 to 5*). In Ageben the range hook takes the other hook endings for this: `-n` names the band, and `-r` stands for some value in it. With `-r` you can also ask which value it is.
 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English |
 |--------|-----|---------|
-| `z+13 oen z+19` | **-n**: a named band | *the teens* |
-| `zragel oer zrazal` | **-r**: some value in the band | *some value from 3 to 5* |
-| `zragel uer zrazal` | **-r**: some value in the band, 5 left out | *some value from 3 up to 5* |
+| `z+13 oen z+19` | `-n`: a named band | *the teens* |
+| `zragel oer zrazal` | `-r`: some value in the band | *some value from 3 to 5* |
+| `zragel uer zrazal` | `-r`: some value in the band, 5 left out | *some value from 3 up to 5* |
 
 > `z+13 oen z+19.`
 >
@@ -59,7 +61,7 @@ The range hook takes the other hook endings too.
 >
 > "The teens."
 
-With **-r**, the hook stands in for one value you are not naming. Under a [question](/questions#fill-ask-r) it asks for that value, as `zar` asks *who?*:
+With `-r`, the hook stands in for one value you are not naming. Under a [question](/questions#fill-ask-r) it asks for that value, as `zar` asks *who?*:
 
 > `zazozon dogozelx gragel oer grazal vayebel.`
 >
@@ -69,7 +71,7 @@ With **-r**, the hook stands in for one value you are not naming. Under a [quest
 
 In a question the range is the [fill-ask](/questions#fill-ask) blank, so like any blank it goes first, together with the noun it counts. The answer names the value: the number alone (`yal ragel.` *Three.*) or with the noun (`yal ogozelx gragel.` *Three cats.*).
 
-The [range hooks](/ranges#ranges) take **-r** the same way: `zragel uor zrazal` is *some value strictly between 3 and 5*, and `zragel uar zrazal` *some value outside 3–5*.
+The [range hooks](/ranges#ranges) take `-r` the same way: `zragel uor zrazal` is *some value strictly between 3 and 5*, and `zragel uar zrazal` *some value outside 3–5*.
 
 ### Practice {#advanced-practice}
 

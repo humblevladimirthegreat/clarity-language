@@ -4,11 +4,13 @@ band: advanced
 
 # Numeric prefixes {#numeric-derivation-page}
 
-To name a kind of thing by a number idea, put a [number](/numbers) body in front of a content root, joined by **`x`**, the way English puts *quasi-*, *proto-*, *multi-*, or *tri-* in front of a noun. The number then describes the kind itself (its essence, its parts, its rank, its catalog code) instead of counting anything in the sentence. The root comes last, as in every **`x`** compound, so the word is a kind of the root. (cue: number, then **`x`**, then the root)
+To name a kind of thing by a number idea, put a [number](/numbers) body in front of a content root, joined by `x`, the way English puts *quasi-*, *proto-*, *multi-*, or *tri-* in front of a noun. The number then describes the kind itself (its essence, its parts, its rank, its catalog code) instead of counting anything in the sentence. The root comes last, as in every `x` compound, so the word is a kind of the root. (cue: number, then `x`, then the root)
+
+The first section gives the word shape. The digitless bodies come next: they say what the kind is at a limit, such as its essence, its grain, or its first or final form, and one of them gives *quasi-*. A one-digit body says how many parts the kind has, and a zero body with an exponent says the kind is wiped out or leaves a residue. A rank body says which rank the kind holds, a label body makes a code part of the kind, and a comic body exaggerates it.
 
 ### Numeric prefixes (number + `x` + `ROOT`) {#numeric-derivation}
 
-English often names a *kind of thing* with a number idea baked in (*essence of love*, *a three-part dialogue*, *a quasi-friend*, *specimen #1*). In Ageben you write the role letter, a number body, **`x`**, then the content root and its ending. The number body has no role letter and no ending of its own; the role letter and one [word ending](/word-endings) belong to the **whole word**. You can then use that word in any role: the number describes the kind, not how many there are. (cue: the hyphen in *tri-dialogue*)
+English often names a *kind of thing* with a number idea baked in (*essence of love*, *a three-part dialogue*, *a quasi-friend*, *specimen #1*). In Ageben you write the role letter, a number body, **`x`**, then the content root and its ending. The number body has no role letter and no ending of its own; the role letter and one [word ending](/word-endings) belong to the whole word. You can then use that word in any role: the number describes the kind, not how many there are. (cue: the hyphen in *tri-dialogue*)
 
 > `zrawaxolamal.`
 >
@@ -22,15 +24,15 @@ PoS + NUM + {x|mx} + ROOT + {-l|-m|-n|-r}
 
 | Piece | Use | Cue |
 |-------|-----|-----|
-| **PoS** | Ordinary slot for the whole word | |
-| **NUM** | Number body: the same marker vowel and digit or digitless exponent as a free [number](/numbers), without the role letter and the ending (`grawal` → **`rawa`**). Tables below use [shorthand](/number-markers#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …), but real words are always spelled out (`rawa`, `robado`, `rabawa`, …): [writing style](/number-markers#writing-style-numeric-vs-spelled) | it starts with **`r`**, like every spoken number |
-| **seam** | **`x`** the number is exact; **`mx`** approximately that number | the same **`m`** as `gragem` *about three* |
-| **ROOT** | Any content root (`V(CV)+`), or an ordinary [**`x`** compound](/compound-families#ordinary-compound-order), whose last root is the kind | |
-| **Ending** | The root's sense, as on any **`x`** compound: **-l** its everyday sense, **-m** its abstract sense; or **-n** a name, **-r** a resume | `zrawaxolamam` is the essence of love in its abstract sense, *cherished* |
+| **PoS** | The role letter of the whole word | |
+| **NUM** | Number body: the same marker vowel and digit or digitless exponent as a free [number](/numbers), without the role letter and the ending (`grawal` → **`rawa`**). Tables below use [shorthand](/number-markers#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …), but real words are always spelled out (`rawa`, `robado`, `rabawa`, …): [writing style](/number-markers#writing-style-numeric-vs-spelled) | it starts with `r`, like every spoken number |
+| **seam** | The letters between number and root: `x` the number is exact; `mx` approximately that number | the same `m` as `gragem` *about three* |
+| **ROOT** | Any content root (`V(CV)+`), or an ordinary [`x` compound](/compound-families#ordinary-compound-order), whose last root is the kind | |
+| **Ending** | The root's sense, as on any `x` compound: `-l` its everyday sense, `-m` its abstract sense; or `-n` a name, `-r` a resume | `zrawaxolamam` is the essence of love in its abstract sense, *cherished* |
 
-The **Ageben** columns below write the shape in shorthand (`+exROOT`), but a real word is always spelled out (`zrawaxolamal`): shorthand is for free numbers only.
+The Ageben columns below write the shape in shorthand (`+exROOT`), but a real word is always spelled out (`zrawaxolamal`): shorthand is for free numbers only.
 
-An **`m`** before the **`x`** makes the number approximate:
+An `m` before the `x` makes the number approximate:
 
 > `zazozon dragemxezuyol vayebel.`
 >
@@ -40,29 +42,29 @@ An **`m`** before the **`x`** makes the number approximate:
 
 **Compare with:** a free [number](/numbers) word counts, ranks, or labels something in the sentence. A numeric prefix describes the kind.
 
-A body with digits has one digit only: **`+N` / `-N`** (how many parts) or **`#N`** (which rank). The marker gives the spoken vowel (**`ra`** / **`ru`** / **`re`**). A numeric-prefix noun takes plural **-x** at the end as usual: `zragexezuyolx` ([plurality](/plurality)). It is a content word, so it stresses its first syllable (*zra* in `zragexezuyol`), not the last digit as a free number does. In a hosted `bl-` slot the **`l`** is syllabic before **`r`**, as on a hosted number: `blragexezuyol`.
+A body with digits has one digit only: `+N` / `-N` (how many parts) or `#N` (which rank). The marker gives the spoken vowel (`ra` / `ru` / `re`). A numeric-prefix noun takes plural `-x` at the end as usual: `zragexezuyolx` ([plurality](/plurality)). It is a content word, so it stresses its first syllable (*zra* in `zragexezuyol`), not the last digit as a free number does. In a hosted `bl-` word the `l` is syllabic before `r`, as on a hosted number: `blragexezuyol`.
 
 ### Limit / polarity / stage (digitless) {#limit-polarity-stage}
 
-The digitless number words (plus or minus infinity, first or last place, *more than one*) also work as prefixes. Before a root, they say **what the kind is** at a limit: its essence, its smallest grain, its absence, its first or final form, many of it, or its undoing.
+English names a kind at a limit: its essence, its smallest grain, its absence, its first or final form, many of it, or its undoing (*essence of love*, *multi-faith*). In Ageben the digitless number words (plus or minus infinity, first or last place, *more than one*) do this as prefixes. Before a root, they say what the kind is, not how many there are.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`+exROOT`** | essence / absolute / pure type of ROOT | `zrawaxolamal`: *essence of love* | **+e** = plus with no cap: nothing left to add |
-| **`+e-xROOT`** | grain / seed / infinitesimal of ROOT | `zrawuxolamal`: *grain of love* | **+e-** = that same plus, at the tiny end: a speck |
-| **`-exROOT`** | void of / absolute anti-ROOT | `zruwaxevemul`: *void of fear* | **-e** = minus with no floor: none of the kind |
-| **`-e-xROOT`** | **quasi-ROOT**: the shape of ROOT without treating it as fully real (English **`quasi-`**); **`-e-1xROOT`** / **`-e-2xROOT`** = quasi-N | `zruwuxahuyayel`: *quasi-friend*; `zruwudoxehom`: *quasi-pair* | **-e-** = imaginary amount: the outline, not the ledger |
-| **`#e-xROOT`** | origin / prototype / onset-form of ROOT | `zrowuxolamal`: *love in its beginning form* | **#e-** = start-place: the first rung |
-| **`#exROOT`** | telos / culmination / final form of ROOT | `zrowaxonom`: *story’s final form* | **#e** = last place: where the kind finishes |
-| **`+xROOT`** | poly- / multi-ROOT (unspecified >1) | `zraxehaham`: *multi-faith* | **+** = more than one, how many unnamed |
-| **`-xROOT`** | de- / un- / deficit-ROOT | `vruxonom`: *to de-tale* | **-** = take that structure away |
+| **`+exROOT`** | essence / absolute / pure type of ROOT | `zrawaxolamal`: *essence of love* | `+e` = plus with no cap: nothing left to add |
+| **`+e-xROOT`** | grain / seed / infinitesimal of ROOT | `zrawuxolamal`: *grain of love* | `+e-` = that same plus, at the tiny end: a speck |
+| **`-exROOT`** | void of / absolute anti-ROOT | `zruwaxevemul`: *void of fear* | `-e` = minus with no floor: none of the kind |
+| **`-e-xROOT`** | **quasi-ROOT**: the shape of ROOT without treating it as fully real (English **`quasi-`**); **`-e-1xROOT`** / **`-e-2xROOT`** = quasi-N | `zruwuxahuyayel`: *quasi-friend*; `zruwudoxehom`: *quasi-pair* | `-e-` = imaginary amount: the outline, not the ledger |
+| **`#e-xROOT`** | origin / prototype / onset-form of ROOT | `zrowuxolamal`: *love in its beginning form* | `#e-` = start-place: the first rung |
+| **`#exROOT`** | telos / culmination / final form of ROOT | `zrowaxonom`: *story’s final form* | `#e` = last place: where the kind finishes |
+| **`+xROOT`** | poly- / multi-ROOT (unspecified >1) | `zraxehaham`: *multi-faith* | `+` = more than one, how many unnamed |
+| **`-xROOT`** | de- / un- / deficit-ROOT | `vruxonom`: *to de-tale* | `-` = take that structure away |
 
 ### Quasi-ROOT (`-e-` / `-e-1` / `-e-2`)
 <a id="quasi"></a>
 <a id="quasi-root"></a>
 <a id="quasi-n"></a>
 
-English *quasi-* says something has the **shape or role** of a kind without counting as the real thing (*quasi-friend*, *quasi-official*). Spell that as **`-e-xROOT`**: the kind’s outline, not a full claim that it is that kind. Change only the role letter to use it as a noun, verb, adjective, and so on.
+English *quasi-* says something has the shape or role of a kind without counting as the real thing (*quasi-friend*, *quasi-official*). Spell that as `-e-xROOT`: the kind’s shape, not a full claim that it is that kind. Change only the role letter to use it as a noun, verb, adjective, and so on.
 
 > `zahelan gruwuxahuyayel.`
 >
@@ -79,13 +81,13 @@ English *quasi-* says something has the **shape or role** of a kind without coun
 | **`/w/`** (extra detail) | host graded as quasi- | `wruwuxubemum gubemum`: *quasi-melancholy* |
 | **`/y/`** (interjection) | *Quasi-!* / *As if that kind!* | `yruwuxahuyayel` |
 
-**Compare with:** with no root, **`gruwul`** is the [just short](special-values.md#just-short) amount, and **`vruwul`** / **`thruwul`** / **`yruwul`** / **`xruwul`** are that number as a verb, stance, interjection, or discourse word. Before a root, **`-e-xROOT`** makes *quasi-* that kind.
+**Compare with:** with no root, `gruwul` is the [just short](special-values.md#just-short) amount, and `vruwul` / `thruwul` / `yruwul` / `xruwul` are that number as a verb, stance, interjection, or discourse word. Before a root, `-e-xROOT` makes *quasi-* that kind.
 
 #### Quasi-N (`-e-1` / `-e-2`)
 
-For *quasi-* with a **number of parts** (*as if one*, *as if a pair*), write **`-e-N`**, where N is the digit that **`+N`** uses for that many parts. Spoken, the body is **`ru`** + **`wu`** + the digit N: a bare order of magnitude, with no digit before the exponent. The word says the kind has that many parts only as if, not really.
+For *quasi-* with a number of parts (*as if one*, *as if a pair*), write **`-e-N`**, where N is the digit that `+N` uses for that many parts. Spoken, the body is `ru` + `wu` + the digit N: a bare order of magnitude, with no digit before the exponent. The word says the kind has that many parts only as if, not really.
 
-**Compare with:** with no root, **`gruwubal`** / **`gruwudol`** are real negative amounts in the order-of-magnitude bands −1 / −2.
+**Compare with:** with no root, `gruwubal` / `gruwudol` are real negative amounts in the order-of-magnitude bands −1 / −2.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -100,12 +102,12 @@ For *quasi-* with a **number of parts** (*as if one*, *as if a pair*), write **`
 | **`-e-xROOT`** | general quasi (N unnamed) |
 | **`g-e-2`** | free real negative amount, OoM −2 band |
 
-For a zero-shaped quasi, use **`-0xROOT`** (anti-null) or **`-0e-xROOT`** (micro-residue). The role letters work as in the quasi table above.
+For a zero-shaped quasi, use `-0xROOT` (anti-null) or `-0e-xROOT` (micro-residue). The role letters work as in the quasi table above.
 
 ### Scalar digit morphs (`+N` / `-N`)
 <a id="scalar-digit-morphs"></a>
 
-English *a pair of…*, *three-part…*, *primary…* can say **how many parts the kind has**, not how many things the sentence is about. Write a one-digit plus body before the **`x`**: spoken, the marker then the digit (`ra`+`ba` for `+1`, spelled as in `zrabaxadowem`). A minus body **`-N`** (including **`-0`**, spoken `ru`+digit) is the **privative**: the kind lacks or undoes the `+N` structure (*one-sided* instead of *mutual*). The tables write the bodies in shorthand (**`+N`** / **`-N`**).
+English *a pair of…*, *three-part…*, *primary…* can say how many parts the kind has, not how many things the sentence is about. Write a one-digit plus body before the `x`: spoken, the marker then the digit (`ra`+`ba` for `+1`, spelled as in `zrabaxadowem`). A minus body `-N` (including `-0`, spoken `ru`+digit) is the **privative**: the kind lacks or undoes the `+N` structure (*one-sided* instead of *mutual*). The tables write the bodies in shorthand (`+N` / `-N`).
 
 > `zazozon dradoxebewom vayebel.`
 >
@@ -126,12 +128,12 @@ English *a pair of…*, *three-part…*, *primary…* can say **how many parts t
 | **`+9xROOT`** | ennead / near-full / almost-ten | `zranaxonurel`: *a nine-part / near-full choir* | `zrunaxonurel` | *a far-from-full choir* | **9** = one short of ten |
 | **`+0xROOT`** | null / reset / emptied | `vramoxodoram`: *to zero-score / null the score* | `grumoxodoram` | *a score that won’t null* / *stubborn residual score* (**anti-null**) | **0** = empty count |
 
-**Not the same job as:** ordinal digit morphs **`#N`** (*which order*). **`+N`** is *how many parts*.
+**Not the same job as:** a rank body `#N` (*which order*). `+N` is *how many parts*.
 
 #### Null / anti-null by PoS (`+0` / `-0`)
 <a id="null-anti-null"></a>
 
-**`+0`** treats ROOT as **resettable / emptied**; **`-0`** treats ROOT as **resisting emptying** (insistent residue). The role letter says *what kind of thing* is emptied or resists. **`-exROOT`** is *void of ROOT* (no such kind); **`+0xROOT`** is a resettable instance of that kind.
+English can call a thing wiped clean (*a wiped debt*) or stubbornly left over (*a debt that won’t zero*). A `+0` body treats ROOT as resettable or emptied; a `-0` body treats ROOT as resisting emptying (insistent residue). The role letter says *what kind of thing* is emptied or resists. `-exROOT` is *void of ROOT* (no such kind); `+0xROOT` is a resettable instance of that kind.
 
 | PoS | `+0x…` | `-0x…` | Examples |
 |-----|--------|--------|----------|
@@ -142,7 +144,7 @@ English *a pair of…*, *three-part…*, *primary…* can say **how many parts t
 | **`/w/`** (extra detail) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `wramoxaram garam`: *debt (ascribed) zeroed*; `wrumoxaram garam`: *debt whose balance is anti-null* |
 | **`/y/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `yramoxodoram`; `yrumoxodoram` |
 
-With a final **-m**, the wipe is only approximate: nearly emptied.
+With a final `-m`, the wipe is only approximate: nearly emptied.
 
 > `zazozon dramomxaram vayebel.`
 >
@@ -150,14 +152,14 @@ With a final **-m**, the wipe is only approximate: nearly emptied.
 >
 > "Azozon sees a nearly wiped debt."
 
-**Related form:** a stronger wipe of the kind is total null **`+0exROOT`**. *Annihilate* with no root is the free number verb **`vramowal`**.
+**Related form:** a stronger wipe of the kind is total null `+0exROOT`. *Annihilate* with no root is the free number verb `vramowal`.
 
 ### Zero × exponent (`+0e` / `±0e-1` / …)
 <a id="zero-exponent-derivation"></a>
 <a id="total-null"></a>
 <a id="engineering-null-morph"></a>
 
-The [zero × exponent](special-values.md#zero-exponent) bodies from free numbers also work before a root. There they say the kind is **wiped out, or leaves a residue**, instead of naming an amount. Free **`vramowal`** is *annihilate* with no kind attached; **`vramowaxodoram`** is *annihilate the score*.
+English can say a kind is wiped out entirely (*annihilate the score*) or leaves only a trace (*sterile hope*). In Ageben the [zero × exponent](special-values.md#zero-exponent) bodies from free numbers do this before a root: they say the kind is wiped out, or leaves a residue, instead of naming an amount. Free `vramowal` is *annihilate* with no kind attached; `vramowaxodoram` is *annihilate the score*.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -168,11 +170,21 @@ The [zero × exponent](special-values.md#zero-exponent) bodies from free numbers
 | **`-0e-xROOT`** | micro-residue of ROOT | `zrumowuxevum`: *memory as micro-residue* | **-0e-** = residue at the tiny end |
 | **`-0e-1xROOT`** | engineering residue at order of magnitude −1 of ROOT | `zruwubayamoxaram`: *debt as deci-scale residue* | **-0e-1** = residue at the tenths band |
 
-The ending on the whole word marks soft (**-m**), named (**-n**), or resume (**-r**) as usual.
+The ending on the whole word marks soft (`-m`), named (`-n`), or resume (`-r`) as usual.
 
-**Emptiness chain (kinds):** **`-exROOT`** (void of kind), **`+0xROOT`** (resettable null), **`+0exROOT`** (total null), **`+0e-xROOT`** (sterile grain), **`+0e-1xROOT`** (engineering null at 10⁻¹). On free numbers, bare **`grawamol`** / **`Ne0`** instead [assert order of magnitude 0](/digitless-exponents#bare-oom-bands).
+**Emptiness chain (kinds):** the bodies that empty a kind, side by side.
 
-On a free number, **`±0e-1`** is an amount. Before a root, the same bodies wipe the kind, or leave a residue of it, at that scale.
+| Ageben | Use |
+|--------|-----|
+| `-exROOT` | void of kind |
+| `+0xROOT` | resettable null |
+| `+0exROOT` | total null |
+| `+0e-xROOT` | sterile grain |
+| `+0e-1xROOT` | engineering null at 10⁻¹ |
+
+On free numbers, bare `grawamol` / `Ne0` instead [assert order of magnitude 0](/digitless-exponents#bare-oom-bands).
+
+On a free number, `±0e-1` is an amount. Before a root, the same bodies wipe the kind, or leave a residue of it, at that scale.
 
 #### Zero-exp prefix by PoS
 
@@ -185,23 +197,25 @@ On a free number, **`±0e-1`** is an amount. Before a root, the same bodies wipe
 | **`/w/`** | host graded toward total null | `wramowaxaram garam` |
 | **`/y/`** | *Annihilate that kind!* | `yramowaxodoram` |
 
-**`-0e` / `-0e-` / `±0e-1`** take the role letters the same way (absolute residue / micro-residue / engineering null·residue at order of magnitude −1). With no root: **`vramowal`** *annihilate*; **`gramowal`** absolute-zero amount; **`g+0e-1`** / **`g-0e-1`** engineering null / residue: [numbers.md § Zero × exponent](special-values.md#zero-exponent).
+`-0e` / `-0e-` / `±0e-1` take the role letters the same way (absolute residue / micro-residue / engineering null·residue at order of magnitude −1). With no root: `vramowal` *annihilate*; `gramowal` absolute-zero amount; `g+0e-1` / `g-0e-1` engineering null / residue: [Zero × exponent](special-values.md#zero-exponent).
 
 #### Rank-annihilated morph (`#0e`)
 <a id="rank-annihilated-morph"></a>
+
+A rank body can be wiped too, which makes a disqualified kind.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`#0exROOT`** | rank-annihilated / disqualified form of ROOT: place wiped as a kind property | `zromowaxamahum`: *a disqualified challenge (as type)*; `vromowaxamahum`: *to disqualify that challenge-kind*. Free **`g#0e`** is *disqualified place in this series*. | **#** is place; **0e** wipes that place |
 
-**`#0e`** vs **`#0`:** annihilated place vs zeroth-order rung. **`#0e`** vs **`+0e`:** rank wipe vs kind total-null. Free **`#e0`** is [current generation](generations.md#ordinal-generation). Same role-letter framing as other ordinal morphs (`/z/` disqualified kind, `/v/` disqualify-as-kind, `/y/` *Disqualified!*, …).
+`#0e` vs `#0`: annihilated place vs zeroth-order rung. `#0e` vs `+0e`: rank wipe vs kind total-null. Free `#e0` is [current generation](generations.md#ordinal-generation). Same role-letter framing as other ordinal morphs (`/z/` disqualified kind, `/v/` disqualify-as-kind, `/y/` *Disqualified!*, …).
 
 ### Ordinal digit morphs (`#N`)
 <a id="ordinal-digit-morphs"></a>
 
-English *first draft*, *secondary adventure*, *third-order problem* can name **which rank the kind holds**, not which item is Nth in a list. Write a one-digit rank body before the **`x`**: shorthand **`#NxROOT`**, spoken **`ro`** + digit, spelled as in `drobaxobewom`. A free **`g#N`** after a noun picks the Nth item in a series instead.
+English *first draft*, *secondary adventure*, *third-order problem* can name which rank the kind holds, not which item is Nth in a list. Write a one-digit rank body before the `x`: shorthand **`#NxROOT`**, spoken `ro` + digit, spelled as in `drobaxobewom`. A free `g#N` after a noun picks the Nth item in a series instead.
 
-**`#N`** names a stage between the digitless ends **`#e-`** (first form) and **`#e`** (final form); **`#0e`** is [rank annihilated](#rank-annihilated-morph). For *lacks N parts*, use the scalar minus body **`-N`**. For a code with several digits, use free `g#12` or the label marker **`_`**.
+`#N` names a stage between the digitless ends `#e-` (first form) and `#e` (final form); `#0e` is [rank annihilated](#rank-annihilated-morph). For *lacks N parts*, use the minus body `-N`. For a code with several digits, use free `g#12` or the label marker `_`.
 
 > `zalazun drobaxobewom varuyol.`
 >
@@ -217,7 +231,7 @@ English *first draft*, *secondary adventure*, *third-order problem* can name **w
 | **`#4xROOT`** … **`#9`** | Nth-order / Nth-place form | `zrozaxoharem`: *fifth-order harmony* (as a kind) | **#N** = Nth place on the kind |
 | **`#0xROOT`** | zeroth-order / pre-rank / unranked form | `zromoxaborom`: *a zeroth-order calculation* | **#0** = the rung before ranking starts |
 
-**Not the same job as:** **`+1`** / **`+2`** (singleton / dual). **`#1`** is premiere-place; **`#2`** is secondary. **`#0`** is a zeroth rung; **`#0e`** is rank annihilated / disqualified.
+**Not the same job as:** `+1` / `+2` (singleton / dual). `#1` is premiere-place; `#2` is secondary. `#0` is a zeroth rung; `#0e` is rank annihilated / disqualified.
 
 #### Ordinal morph by PoS
 
@@ -230,11 +244,11 @@ English *first draft*, *secondary adventure*, *third-order problem* can name **w
 | **`/w/`** (extra detail) | host `/ɡ/` graded as Nth-order | `wrogexezuyol gezuyol`: *third-order (dialogue)* |
 | **`/y/`** (interjection) | discourse call of that order-kind | `yrobaxobewom`: *First-draft!* (kind cheer; free `y#1` *First!* place cheer) |
 
-**Related form:** **`_N`** is *which code*; free `g#N` is *which item in the current series*.
+**Related form:** `_N` is *which code*; free `g#N` is *which item in the current series*.
 
 ### Label / code sense (`_`) {#label-code-sense}
 
-When English makes a code part of what a thing is (*specimen #1*, *room 12* as a kind of room), the digits are a **catalog ID**, not a count or a rank. Put the digit-string marker **`_`** before the **`x`**; its digits are the code.
+When English makes a code part of what a thing is (*specimen #1*, *room 12* as a kind of room), the digits are a **catalog ID**, not a count or a rank. Put the digit-string marker `_` before the `x`; its digits are the code.
 
 > `zazozon drebaxudewal vayebel.`
 >
@@ -247,13 +261,13 @@ When English makes a code part of what a thing is (*specimen #1*, *room 12* as a
 | **`_xROOT`** | ROOT as something that **bears a code** (taggable unit; code unnamed) | `zrexudewal`: *a coded specimen* / *a specimen-as-ID* | **`_`** = catalog stamp, digits not yet filled |
 | **`_NxROOT`** | **specimen / item #N**: the code is part of the kind | `zrebaxudewal`: *specimen #1*; `zrebadoxohehal`: *room-12* as a coded kind; `brebadoxohehal`: *room-12* as `/b/` | the digits **are** the name, not a count |
 
-When the number is only an argument of an ordinary noun, prefer ordinary syntax: `zohehal g_12` = *the room numbered 12*. Use **`_NxROOT`** when the code is part of the **concept** (specimen ID, SKU, protocol code). To cite a numbered point in the conversation, use free **`x_…`**; to dial or enter a code, use free **`v_…`**.
+When the number is only an argument of an ordinary noun, prefer ordinary syntax: `zohehal g_12` = *the room numbered 12*. Use `_NxROOT` when the code is part of the concept (specimen ID, SKU, protocol code). To cite a numbered point in the conversation, use free `x_…`; to dial or enter a code, use free `v_…`.
 
-Digitless **`+`/`-`/`#`** on ROOT = *what the kind is*; digitless **`_`** = *how the catalog names it*.
+Digitless `+`/`-`/`#` on ROOT = *what the kind is*; digitless `_` = *how the catalog names it*.
 
 ### Hyperbole sense (`+1e` / `#1e`) {#hyperbole-sense}
 
-To exaggerate a kind for comic effect (*a gazillion-mess*, *an umpteenth attempt*), put a mantissa before a digitless exponent, as in free [hyperbole](special-values.md#hyperbole). Use **`1`** as the mantissa unless the joke needs another digit.
+To exaggerate a kind for comic effect (*a gazillion-mess*, *an umpteenth attempt*), put a mantissa before a digitless exponent, as in free [hyperbole](special-values.md#hyperbole). Use `1` as the mantissa unless the joke needs another digit.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -261,7 +275,7 @@ To exaggerate a kind for comic effect (*a gazillion-mess*, *an umpteenth attempt
 | **`+1e-xROOT`** | *gazillionth-ROOT* (comic tiny) | `zrabawuxadevem`: *a gazillionth-of-a-chance* | **1e-** = one × unbounded tiny |
 | **`#1exROOT`** | *umpteenth-ROOT* (comic late rank) | `zrobawaxoguvol`: *an umpteenth attempt* (as a kind) | **#1e** = unbounded place: “umpteenth” |
 
-Free **`hrobawal`** = *for the gazillionth time* (clause adverb). The prefix **`zrobawaxayam`** = *an umpteenth co-participation* (noun kind).
+Free `hrobawal` = *for the gazillionth time* (clause adverb). The prefix `zrobawaxayam` = *an umpteenth co-participation* (noun kind).
 
 ### Practice {#advanced-practice}
 
@@ -384,4 +398,4 @@ z-Ahelan | d-telos-x-fire | v-see
 
 - Free counts / ranks / number as verb / adverb / interjection / discourse: [Numbers](/numbers)
 - Measures and percent: [Measures and percent](/measures-and-percent)
-- The root last, as in every **`x`** compound: [Adding another piece](/compound-families#ordinary-compound-order)
+- The root last, as in every `x` compound: [Adding another piece](/compound-families#ordinary-compound-order)

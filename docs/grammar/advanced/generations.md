@@ -7,17 +7,17 @@ band: advanced
 ### Ordinal generation: digitful exponent on **`#`** / **`#-`** {#ordinal-generation}
 <a id="generation-ordinal"></a>
 
-On a rank number (forward **`#`** / **`re`** or end-relative **`#-`** / **`rue`**), an exponent with digits is not a power of ten. It says **how many generations away** from the person, version, or outline point in focus. Use it when English would say *the third grandchild* or *the 3rd sub-point*.
+English counts inside one level of a family or an outline: *the third grandchild*, *the 3rd sub-point*. In Ageben you put an exponent with digits on a rank number (forward `#` / `re` or end-relative `#-` / `rue`). There it is not a power of ten: it says how many generations away from the person, version, or outline point in focus. One number word then says both which level you mean and which member of it.
 
-The marker still counts **from the start** or **from the end**, but only among the members of that generation (its cohort). The exponent **`eK`** names the generation K steps deeper (descendants), and **`e-K`** the generation K steps up (ancestors). The mantissa picks which member; leave it off to name the whole cohort. Leave the exponent off for the focus's **own** generation (`grogel` = 3rd peer). Writing **`e0`** says *current generation* outright, which is usually redundant.
+The marker still counts **from the start** or **from the end**, but only among the members of that generation (its **cohort**). The exponent `eK` names the generation K steps deeper (descendants), and `e-K` the generation K steps up (ancestors). The mantissa picks which member; leave it off to name the whole cohort. Leave the exponent off for the focus's own generation (`grogel` = 3rd peer). Writing `e0` says *current generation* outright, which is usually redundant.
 
 | Piece | Job |
 |-------|-----|
-| **Marker `#` / `#-`** | Count **from the start** / **from the end** within that generation’s cohort |
-| **Digitful exp `eK` / `e-K`** | Generation **+K** (descendants / nested deeper) or **−K** (ancestors / enclosing layer) |
-| **Mantissa** | Which **slot** in that cohort (omit mantissa = bare OoM: the generation as a whole) |
-| **Exp omitted** | **Same generation** as the focus (`g#3` = 3rd peer); formal default |
-| **Named `e0`** | **Assert current generation** (gen 0); usually redundant when omit already means current |
+| **Marker `#` / `#-`** | Count from the start / from the end within that generation’s cohort |
+| **Digitful exp `eK` / `e-K`** | Generation +K (descendants / nested deeper) or −K (ancestors / enclosing layer) |
+| **Mantissa** | Which member of that cohort (omit mantissa = bare OoM: the generation as a whole) |
+| **Exp omitted** | Same generation as the focus (`g#3` = 3rd peer); formal default |
+| **Named `e0`** | Assert current generation (gen 0); usually redundant when omit already means current |
 
 <!-- cheat-sheet: numbers -->
 | Form | Reading |
@@ -33,17 +33,17 @@ The marker still counts **from the start** or **from the end**, but only among t
 | **`g#e-1`** | generation −1 / parent layer (member unspecified) |
 | **`g#1e-1`** | 1st of generation −1 (often *the parent* when the cohort is singleton-framed) |
 
-On `/x/`, generations are levels of an outline: `x#3e2` is the *3rd sub-sub-point under the current point*, and **`xrowamol`** is *the point or points on the current level*. `/h/`, `/v/`, and `/y/` read generations the same way when the series comes in levels (*for the 3rd time at level +2*, *place 3rd at level +2*, …). For a plain count of occasions, use **`h#N`**.
+On `/x/`, generations are levels of an outline: `x#3e2` is the *3rd sub-sub-point under the current point*, and **`xrowamol`** is *the point or points on the current level*. `/h/`, `/v/`, and `/y/` read generations the same way when the series comes in levels (*for the 3rd time at level +2*, *place 3rd at level +2*, …). For a plain count of occasions, use `h#N`.
 
 #### Kin {#kin-generations}
 
-Generations form a **tree**, like an outline. A cohort is only the members **under the same node**, so the plain forms name close family and never side branches:
+The generation forms name close relatives, and never side branches such as aunts, cousins, or nieces. That is because generations branch like a family tree, and a cohort holds only the members that hang from the same point of it:
 
-- **`growubal`** is the layer directly above the focus: the **parents**, not aunts or uncles.
-- **`growamol`** is the others under the same parent: the **siblings**, not cousins. It never includes the focus.
-- **`growabal`** / **`growadol`** are the focus's own **children** / **grandchildren**, not nieces or nephews.
+- **`growubal`** is the layer directly above the focus: the parents, not aunts or uncles.
+- **`growamol`** is the others under the same parent: the siblings, not cousins. It never includes the focus.
+- **`growabal`** / **`growadol`** are the focus's own children / grandchildren, not nieces or nephews.
 
-The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest sibling, **`g#-1e0`** the youngest. To say whose family it is, put the anchor person in a `bl-` word right after the number. (cue: the number says how far up or down the tree; `/b/` says from whom)
+The mantissa is birth order within that cohort: **`g#1e0`** is the eldest sibling, **`g#-1e0`** the youngest. To say whose family it is, put that person in a `bl-` word right after the number. (cue: the number says how far up or down the tree; `/b/` says from whom)
 
 > `zalazun growamol blazozon vowurol.`
 >
@@ -75,7 +75,7 @@ With no `bl-` word after a joined subject, each member is a sibling of the other
 >
 > "Azozon's second child walks."
 
-For a side branch, nest a second anchor: first step to the relative, then from there. *Aunt or uncle* is a sibling of a parent.
+For a side branch, go in two steps: first from the person to a close relative, then from that relative to the one you mean. *Aunt or uncle* is a sibling of a parent.
 
 > `zalazun growamol bleyel g#1e-1 blazozon vowurol.`
 >

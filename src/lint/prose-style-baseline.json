@@ -1,14 +1,5 @@
 {
-  "advanced/generations.md": {
-    "bold-density": 2
-  },
   "advanced/hook-compounds.md": {
-    "bold-density": 1
-  },
-  "advanced/numeric-derivation.md": {
-    "bold-density": 11
-  },
-  "advanced/open-ranges.md": {
     "bold-density": 1
   },
   "advanced/root-tails.md": {
