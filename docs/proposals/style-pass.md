@@ -1,6 +1,6 @@
 # Style pass
 
-**Status:** partially implemented. Decided 2026-11-11: a rising warning count fails the build on every page (the ratchet); recipe pages, cheat sheets, and level reviews get which-page rows; headings that need a retitle are logged and retitled together in H1; the user reviews each phase before the next starts; forms take bold only where introduced. **Phase 1 done 2026-11-11** (T1, T2, T3, C1). **Phase 2 done 2026-11-12** (B2 to B5). **Phase 3 done 2026-11-12** (B6 to B9; Beginner is finished). `purpose.md` and `introduction.md` were already rewritten to [orientation-style.md](../meta/orientation-style.md), so the pass skips them. Decided 2026-11-12: a page with two or more teaching sections needs a page lead (rule in [doc-style.md](../meta/doc-style.md#which-page)); 15 Intermediate and 9 Advanced pages lack one and get it in their units. **Phase 4 done 2026-11-12** (B10, O2, O3, O4; the recipe track and Claritish are finished, and the English-helper recall check passed). Decided 2026-11-12: Claritish further-inventory sections and run-in labels are now rules in [claritish-style.md](../meta/claritish-style.md#forms). **Phase 5 done 2026-11-12** (I1 to I6). Decided 2026-11-12: the four Claritish lessons that lacked one now say when to leave the drop-in out (where the English already says it). **Phase 6 done 2026-11-12** (I7 to I12). Next: the user reviews the Phase 6 diffs (commits `fc25dd3e` to `ea53fa87`), then Phase 7.
+**Status:** partially implemented. Decided 2026-11-11: a rising warning count fails the build on every page (the ratchet); recipe pages, cheat sheets, and level reviews get which-page rows; headings that need a retitle are logged and retitled together in H1; the user reviews each phase before the next starts; forms take bold only where introduced. **Phase 1 done 2026-11-11** (T1, T2, T3, C1). **Phase 2 done 2026-11-12** (B2 to B5). **Phase 3 done 2026-11-12** (B6 to B9; Beginner is finished). `purpose.md` and `introduction.md` were already rewritten to [orientation-style.md](../meta/orientation-style.md), so the pass skips them. Decided 2026-11-12: a page with two or more teaching sections needs a page lead (rule in [doc-style.md](../meta/doc-style.md#which-page)); 15 Intermediate and 9 Advanced pages lack one and get it in their units. **Phase 4 done 2026-11-12** (B10, O2, O3, O4; the recipe track and Claritish are finished, and the English-helper recall check passed). Decided 2026-11-12: Claritish further-inventory sections and run-in labels are now rules in [claritish-style.md](../meta/claritish-style.md#forms). **Phase 5 done 2026-11-12** (I1 to I6). Decided 2026-11-12: the four Claritish lessons that lacked one now say when to leave the drop-in out (where the English already says it). **Phase 6 done 2026-11-12** (I7 to I12). **Phase 7 done 2026-11-12** (I13 to I17; Intermediate is finished). Next: the user reviews the Phase 7 diffs (commits `de4697b8` to `b45d349a`), then Phase 8.
 
 **Related:** [doc-style.md](../meta/doc-style.md), [claritish-style.md](../meta/claritish-style.md), [orientation-style.md](../meta/orientation-style.md), [grammar-docs.md](../meta/grammar-docs.md), [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts), [prose-style.ts](../../src/lint/prose-style.ts), [prose-style-baseline.json](../../src/lint/prose-style-baseline.json), [sections.ts](../../src/lint/sections.ts), [style-editor.md](../../.claude/agents/style-editor.md)
 
@@ -26,21 +26,15 @@ Each prose unit is one fresh `style-editor` subagent on one sidebar unit from `r
 - A sentence that says when to pick one form over another must restate what the page's own table or text already says; never infer a *when* from the form's gloss alone.
 - Run the full `npm run verify -- --allow-generate` as the last step, not `--fast`.
 
-The sidebar unit is the right size because a label is glossed on first use *in reading order*, so the worker needs to know what the pages before it already taught. Intermediate has 5 units left (I13 to I17), Advanced 5 (20 pages).
+The sidebar unit is the right size because a label is glossed on first use *in reading order*, so the worker needs to know what the pages before it already taught. Beginner and Intermediate are done; Advanced has 5 units left (A1 to A5, 20 pages).
 
 ## Implementation plan
 
-Phases 7 to 9 remain, one orchestrator session each, with no phase over six units. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate) before the session ends, keeping the [glossed labels](#glossed-labels), [headings to retitle](#headings-to-retitle), and [sections missing a fact](#sections-missing-a-fact) lists current.
+Phases 8 and 9 remain, one orchestrator session each, with no phase over six units. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate) before the session ends, keeping the [glossed labels](#glossed-labels), [headings to retitle](#headings-to-retitle), and [sections missing a fact](#sections-missing-a-fact) lists current.
 
 Prose units run as `style-editor` on `model: opus`, `effort: high`, in sequence. Each one may edit only its own pages and `src/lint/prose-style-baseline.json`. A page with a control (a drill, a player, the journal editor) also gets the [interface instructions](../meta/doc-style.md#interface-instructions) check.
 
 Each phase ends with the phase gate, the last unit's commit, consolidation, the proposal's commit, then a stop. The orchestrator tells the user what the phase settled, which open decisions wait on them, and the prompt for the next phase, *Carry out phase N of `style-pass.md`*.
-
-### Phase 7: Intermediate
-
-I13 to I17.
-
-**Cut:** the Intermediate band is done.
 
 ### Phase 8: Advanced
 
@@ -102,6 +96,13 @@ Labels that finished units have glossed, in reading order, each with the page th
 | holder ("no one named whose view it gives"); channel ("no word for how you know it") | `try.md`; `permission-consent.md` |
 | scope-taking ("a word, like *possibly*, that frames what it reaches") | `scope-islands.md`, binder required |
 | `/x/` ("the role of words like *therefore* that open a sentence and link it to the one before") | `number-roles.md` |
+| discourse hook ("a hook at the front of a sentence that ties it to what was said before"), stacked hook ("the hooks with two vowels") | `in-clause-hooks.md`, Detail on the hook; Point back |
+| arrow root ("the word for the compass heading, such as *west*"), viewpoint anchor ("the person or thing whose facing counts"), DIR ("the direction root") | `viewpoint.md` |
+| the notional ("the *as if* word") | `role-parts.md`, Content of the event |
+| compound family ("kinds of compound, here called families") | `compound-families.md`, page lead |
+| SHARED ("written right after the join word so they describe every item") | `of-relations.md` |
+| bar ("the value you rank against") | `bars.md`, page lead |
+| offset ("how far the event sits from now"); *evidential* is said as "channel word", *frame* as "a channel carried from an earlier sentence", *seam* as "holder" | `dated-channel.md`, lead; I17 pages |
 
 ### Headings to retitle
 
@@ -127,6 +128,14 @@ Headings that prose units reported under rule 7 of the digest, each with its pag
 | `rank-joins.md` | `invert-u-stacks`, `route-ao` | each bolds an Ageben form in a heading |
 | `number-markers.md` | `marker-vowel-referential-identity` | *referential identity* is jargon the section never glosses |
 | `digitless-exponents.md` | `bare-oom` | *OoM* is an abbreviation, glossed only in the section's second sentence |
+| `discourse-hooks.md` | `discourse`, `discourse-placements` | *discourse* is a specialist word the headings do not gloss |
+| `more-occasions.md` | `unspecified-member-r` | *Unspecified member* is jargon |
+| `in-clause-hooks.md` | `in-clause` | *In-clause* is cheat-sheet shorthand (borderline) |
+| `more-occasions.md` | *Occasions vs a dependent when* (no id) | needs a `{#id}` pinned before any retitle |
+| `comparative-arity.md` | `comparative-arity`, `covarying` | *arity* and *covarying* are specialist terms |
+| `want-and-decide.md` | `decision` (no `{#id}`, only `<a id>` lines) | *revisability* is not plain language; H4 *Endings: changeability* also lacks a `{#id}` |
+| `mirative.md` | `mirative` | *Mirative* is a linguistics term |
+| `notional.md` | `notional-as-if-framing` | *Notional* and *framing* are specialist labels |
 
 ### Sections missing a fact
 
@@ -136,7 +145,9 @@ None open.
 
 ### Fixes outside the pass
 
-Faults a prose unit found but could not fix within its scope. None open; add any a later unit reports.
+Faults a prose unit found but could not fix within its scope. Add any a later unit reports.
+
+- *Same-role hook* is used on `in-clause-hooks.md` (Point back) but no earlier page glosses it (I13).
 
 ### Gates
 
@@ -149,9 +160,9 @@ Faults a prose unit found but could not fix within its scope. None open; add any
 
 One commit per unit after its gate is green, by the orchestrator only, with the message `style-pass <unit id>: <what> [skip-cd]` and the co-author line. X1 edits nothing and makes no commit. Each phase ends with a commit of the consolidated proposal, `style-pass phase <N>: consolidate [skip-cd]`; in Phase 9 that commit deletes the proposal instead, once the meta notes own the result.
 
-| Phase | 7 | 8 | 9 | Left |
-|-------|---|---|---|------|
-| Commits | 6 | 6 | 4 | 16 |
+| Phase | 8 | 9 | Left |
+|-------|---|---|------|
+| Commits | 6 | 4 | 10 |
 
 ## Open decisions
 
