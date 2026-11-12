@@ -53,7 +53,7 @@ A1 to A5.
 | Unit | Work | Agent | Model, effort |
 |------|------|-------|---------------|
 | L1 | Cheat-sheet prose outside the `<!-- generated -->` markers, level-review prose outside Practice, `terminology.md` link text and voice only | `style-editor` | `opus`, `high` |
-| H1 | Retitle the headings in [headings to retitle](#headings-to-retitle) to plain language, each pinning its old id with `{#id}` so no link changes. Also restore the dropped run-in labels in [fixes outside the pass](#fixes-outside-the-pass) | `proposal-worker` | `opus`, `high` |
+| H1 | Retitle the headings in [headings to retitle](#headings-to-retitle) to plain language, each pinning its old id with `{#id}` so no link changes | `proposal-worker` | `opus`, `high` |
 | X1 | Independent audit. A fresh subagent that has read no earlier report takes two sections per unit, chosen by the orchestrator, and runs the slogan test and the why-care test from the lead alone. It edits nothing and reports failures by section | `proposal-worker` | `opus`, `high` |
 | X2 | Fix what X1 found, lower the baseline, and make `voice` a failing rule in `src/lint/prose-style.ts` (severity error, out of the baseline). The `voice` rule skips table cells, bold, and parentheses to avoid false positives, so X2 also greps those for maintainer *we* and author *I* by hand | `style-editor` | `opus`, `high` |
 
@@ -136,11 +136,7 @@ None open.
 
 ### Fixes outside the pass
 
-Faults a prose unit found but could not fix within its scope. Add any a later unit reports.
-
-- Earlier units turned house run-in labels (**Not the same job as:**, **For *X*, use:**) into prose before the digest named all four. Starter count fell in: `compounds.md` 5→3 (`28f5c830`), `say-amounts.md` 14→13 (`95030125`), `conversation-length.md` 2→0, `phonotactics.md` 1→0, `proper-names.md` 2→0 (`497b4b38`), `more-hinges.md`, `stand-in-vowels.md`, `topic.md` 1→0 each (`5c91593a`). H1 restores each label unless the sentence no longer marks a mix-up.
-- `digitless-exponents.md` says *keep a digit to repeat a number* three times, and `number-markers.md` contrasts the ending mark with the spelled last letter twice. Cutting a repeat drops code spans or links, which wording-only forbids (I11).
-- `because-and-iff.md`: the *unless* paragraph repeats what `stand-in-vowels.md` already teaches (`thohem blurl`). Cutting it is a content call (I8).
+Faults a prose unit found but could not fix within its scope. None open; add any a later unit reports.
 
 ### Gates
 

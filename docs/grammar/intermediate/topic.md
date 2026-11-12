@@ -150,7 +150,7 @@ To ask what the talk is about, ask *which topic?*: the fill-ask blank `zar`, the
 >
 > "Which topic?" / "What are we talking about?"
 
-English *topic* covers several jobs, and Ageben keeps them apart. Only `/x/` sets the topic:
+**Compare with:** English *topic* covers several jobs, and Ageben keeps them apart. Only `/x/` sets the topic:
 
 | Job | Ageben |
 |-----|--------|

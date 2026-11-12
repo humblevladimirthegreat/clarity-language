@@ -83,7 +83,7 @@ The sentence after a stand-in runs to the end of the written sentence, so a [cla
 
 To join another clause to the main sentence instead, end the sentence and start the next one with the join.
 
-Three English phrases that look alike take different forms:
+**Compare with:** three English phrases that look alike take different forms:
 
 | English | Ageben |
 |---------|--------|

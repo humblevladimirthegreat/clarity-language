@@ -22,7 +22,7 @@ English *so … that* ties a result to how much of something there is (*so tired
 >
 > "Azozon walks so hastily that Alazun runs."
 
-Nearby words that tie two clauses together attach in other ways:
+**Compare with:** nearby words that tie two clauses together attach in other ways:
 
 | English | Ageben | How it attaches |
 |---------|--------|-----------------|
