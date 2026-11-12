@@ -6,12 +6,12 @@ band: beginner
 <a id="x-compounds"></a>
 <a id="compound-parser"></a>
 
-Sometimes one Ageben word is two smaller meanings with **`x`** in the middle. The last letter (**-l** / **-m** / **-n** / **-r**) is still the ending of the **whole** word. What sits left and right of that **`x`** tells you which kind of word it is.
+Sometimes one Ageben word is two smaller meanings with `x` in the middle. The last letter (`-l` / `-m` / `-n` / `-r`) is still the ending of the *whole* word. What sits left and right of that `x` tells you which kind of word it is.
 
 
 ### Two roots, one word
 
-English often treats two words as one idea (*peanut butter*), or joins two names with a hyphen. In Ageben you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md) (subject, verb, and so on). The [ending](word-endings.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
+English often treats two words as one idea (*peanut butter*), or joins two names with a hyphen. In Ageben you write both dictionary roots in *one* word and put `x` between them. The first letter of the word is still the [role letter](clause.md) (subject, verb, and so on). The [ending](word-endings.md) belongs to the whole word, not to the piece before `x` alone. (cue: `x` ≈ plus: two pieces make one word)
 
 > `zuwedaxubudal.`
 >
@@ -29,20 +29,20 @@ The last root is the kind of thing; the left root specifies it (what field, what
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| full root **`x`** full root | two roots, one word | `zuwedaxubudal` *peanut butter* | **x** ≈ plus |
+| full root `x` full root | two roots, one word | `zuwedaxubudal` *peanut butter* | `x` ≈ plus |
 
-**Not the same job as:** a [role compound](roles.md#role-compounds) opens with **`w`**, a reach vowel, and a part consonant (`zwuzeduyol`). Only a noun inside its stem takes **`x`**.
+**Not the same job as:**
 
-**Not the same job as:** a word that **starts** with **`x`** [keeps the same speech move going](speech-moves.md#continue-x). That **`x`** is not this glue in the middle.
-
-**Not the same job as:** mid-word **`th`**. The [stance](clause.md#stance-th) letter joins pieces when the second piece is **your view** rather than more of the same thing, such as a sake and how it stands ([sakes](sakes.md): `guwathal`). **`x`** adds; **`th`** says from where you see it. (cue: **th** ≈ *think*)
+| Form | What it does instead |
+|------|----------------------|
+| a [role compound](roles.md#role-compounds) (`zwuzeduyol`) | opens with `w`, a reach vowel, and a part consonant; only a noun inside its stem takes `x` |
+| a word that *starts* with `x` | [keeps the same speech move going](speech-moves.md#continue-x); that `x` is not this glue in the middle |
+| mid-word `th` | the [stance](clause.md#stance-th) letter joins pieces when the second piece is *your view* rather than more of the same thing, such as a sake and how it stands ([sakes](sakes.md): `guwathal`); `x` adds, `th` says from where you see it (cue: `th` ≈ *think*) |
 
 ### Words you look up, not build
 <a id="dictionary-compounds"></a>
 
-English *bedroom*, *doorbell*, and *textbook* feel like one word. Ageben lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *door* and *bell*.
-
-Inside the dictionary spelling you can still see the two old roots, with a join letter instead of **`x`**. That letter is the [word ending](word-endings.md) of the **left** root: **-l** when that piece is the everyday kind, **-m** when it is the abstract sense (named **-n** or resume **-r** if that left piece is a name or a resume). The last letter of the word is still the ending of the **whole** entry. In a sentence you add a role letter and that whole-word ending, the same way you do for *dog* or *hammer*.
+English *bedroom*, *doorbell*, and *textbook* feel like one word, and Ageben lists those as one **dictionary word** too: you look the word up rather than making it on the spot by putting `x` between *door* and *bell*. Inside the spelling you can still see the two old roots, joined by the [word ending](word-endings.md) of the *left* root instead of `x`: `-l` when that piece is the everyday kind, `-m` when it is the abstract sense. The last letter is still the ending of the *whole* entry, so in a sentence you add a role letter and that ending, the same way you do for *dog* or *hammer*.
 
 > `zoheleboral.`
 >
@@ -50,31 +50,33 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 >
 > "a doorbell"
 
+If the left piece is a name or a resume, the join letter is its named `-n` or resume `-r`.
+
 <!-- cheat-sheet: word-shape-clause -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| `zoheleboral` | door **-l** bell | doorbell | left piece everyday |
-| `zuzahalanal` | school **-l** book | textbook | left piece everyday |
-| `zerulalogobal` | rain **-l** coat | raincoat | left piece everyday |
-| `…m…` | left root in its [abstract](word-endings.md#abstract-m) sense | same two roots, join **-m** | **m** ≈ meaning |
+| `zoheleboral` | door `-l` bell | doorbell | left piece everyday |
+| `zuzahalanal` | school `-l` book | textbook | left piece everyday |
+| `zerulalogobal` | rain `-l` coat | raincoat | left piece everyday |
+| `…m…` | left root in its [abstract](word-endings.md#abstract-m) sense | same two roots, join `-m` | `m` ≈ meaning |
 
-If the pairing is not in the dictionary, either glue with **`x`** (`zuwedaxubudal` *peanut butter*) or use two words.
+If the pairing is not in the dictionary, either glue with `x` (`zuwedaxubudal` *peanut butter*) or use two words.
 
 ### One thing or two?
 <a id="compound-vs-separate"></a>
 
-Ask how many things you mean. *A hammer and a wrench* is two tools, so two Ageben words (and a [join](joins.md) if you need *and*). *Peanut butter* is one food, so one word. *Bedroom* is also one thing, but that spelling is already in the dictionary, so there is no **`x`**.
+Ask how many things you mean. *A hammer and a wrench* is two tools, so two Ageben words (and a [join](joins.md) if you need *and*). *Peanut butter* is one food, so one word. *Bedroom* is also one thing, but that spelling is already in the dictionary, so there is no `x`.
 
 <!-- cheat-sheet: word-shape-clause -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | two words | two things, or a property already marked another way | `zohowel zurewel zam` *a hammer and a wrench*; `zodozel gobulol` *a blue dog* (`/ɡ/`) | |
-| **`x`** in the middle | one thing; you can still hear both roots | `gagamaxolamal` *in love* (the crush kind); `zuwedaxubudal` *peanut butter*; `zazozoxalazun` (one person) | **x** ≈ plus |
-| dictionary word | one familiar kind, listed as a single entry | `zoyahehal` *bedroom*; `zezalal` *sunflower* | join letter in the entry, not **`x`** |
+| `x` in the middle | one thing; you can still hear both roots | `gagamaxolamal` *in love* (the crush kind); `zuwedaxubudal` *peanut butter*; `zazozoxalazun` (one person) | `x` ≈ plus |
+| dictionary word | one familiar kind, listed as a single entry | `zoyahehal` *bedroom*; `zezalal` *sunflower* | join letter in the entry, not `x` |
 
 **Compare with:** a property on a noun uses `/ɡ/` (or `/w/`). A list uses a [join](joins.md).
 
-**Related form:** *someone who teaches* (who does / where it happens / who undergoes / who is told; **-r** *the one teaching*) uses a [role compound](roles.md#role-compounds).
+**Related form:** *someone who teaches* (who does / where it happens / who undergoes / who is told; `-r` *the one teaching*) uses a [role compound](roles.md#role-compounds).
 
 ### Practice {#beginner-practice}
 
@@ -229,8 +231,8 @@ z-doorbell
 :::
 ## See also
 
-- **`x`** at the start of a word (keep going): [Continue (`/x/`): keep the same speech move](speech-moves.md#continue-x)
-- How **`x`** sits in the word shape: [Phonotactics (word shape)](/phonotactics#phonotactics)
+- `x` at the start of a word (keep going): [Continue (`/x/`): keep the same speech move](speech-moves.md#continue-x)
+- How `x` sits in the word shape: [Phonotactics (word shape)](/phonotactics#phonotactics)
 - [Ability and incapability](can-and-cant.md#ability) / [Sakes](sakes.md) / [Role compounds](roles.md) / [Numeric prefixes](/numeric-derivation)
-- Conversation length: [name **`x`** vowel](/conversation-length#conversation-length); bare hello: [Greeting](word-endings.md#greeting)
+- Conversation length: [name `x` vowel](/conversation-length#conversation-length); bare hello: [Greeting](word-endings.md#greeting)
 - Extra-noun fuse on a citation: [Hook compounds (cite + extra-noun hook)](/hook-compounds#hook-compounds)

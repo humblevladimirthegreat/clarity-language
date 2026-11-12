@@ -41,10 +41,6 @@
     "beginner-lead": 1,
     "bold-density": 1
   },
-  "beginner/compounds.md": {
-    "beginner-lead": 1,
-    "bold-density": 3
-  },
   "beginner/firm-soft.md": {
     "beginner-lead": 1,
     "bold-density": 1,
@@ -54,18 +50,6 @@
     "beginner-lead": 1,
     "bold-density": 2,
     "long-paragraph": 1
-  },
-  "beginner/label-seams.md": {
-    "beginner-lead": 1,
-    "bold-density": 4,
-    "long-paragraph": 1
-  },
-  "beginner/relations.md": {
-    "beginner-lead": 1,
-    "long-paragraph": 1
-  },
-  "beginner/roles.md": {
-    "bold-density": 3
   },
   "beginner/word-endings.md": {
     "bold-density": 1

@@ -6,7 +6,7 @@ band: beginner
 
 ### Whose (`om`) {#genitive}
 
-English *Azozon's dog* often means the dog is in Azozon's **use**: Azozon keeps it, walks it, feeds it. Put **`om`** right after the noun, then the user in `/b/`. `om` says B uses the thing or has access to it. It does not say who owns it. (cue: **`ol`** is *for B*, a get meant to reach B; **`om`** says it already reached B and is in B's use)
+English *Azozon's dog* often means the dog is in Azozon's *use*: Azozon keeps it, walks it, feeds it. Put **`om`** right after the noun, then the user in `/b/` (call that person B). `om` says B uses the thing or has access to it. It does not say who owns it. (cue: `ol` is *for B*, a get meant to reach B; `om` says it already reached B and is in B's use)
 
 > `zodozel om bazozon veruvol.`
 >
@@ -28,7 +28,7 @@ For *my* and *your*, put the [speaker or listener](pronouns.md#special-pronouns)
 >
 > "My dog sleeps."
 
-To describe the thing, put its `/ɡ/` word **between** the noun and **`om`**. The adjective stays on the noun, and `om` still attaches to the noun. A `/ɡ/` word **after** the `/b/` describes B instead.
+To describe the thing, put its `/ɡ/` word *between* the noun and `om`. The adjective stays on the noun, and `om` still attaches to the noun. A `/ɡ/` word *after* the `/b/` describes B instead.
 
 > `zodozel gelazem om buwen vezuvel.`
 >
@@ -44,7 +44,13 @@ With no verb, the same order is a sentence. A noun marked with `om` is one the l
 >
 > "My dog is big."
 
-**Compare with:** `zodozel gelazem.` is *There is a big dog* ([existence](predication.md#existence)): a new noun with no `om` introduces the thing. `zodozel om buwen gelazem` puts *big* on the speaker, not the dog. `zodozel om buwen.` alone says your dog is here (*there's my dog*).
+**Compare with:**
+
+| Ageben | What it says |
+|--------|--------------|
+| `zodozel gelazem.` | *There is a big dog* ([existence](predication.md#existence)): a new noun with no `om` introduces the thing |
+| `zodozel om buwen gelazem` | puts *big* on the speaker, not the dog |
+| `zodozel om buwen.` alone | your dog is here (*there's my dog*) |
 
 Things B uses include places B lives or sits, tools and rides B uses, ideas B works with, and B's turn, time, or occasion: *Azozon's birthday* is the day that is Azozon's to have.
 
@@ -61,15 +67,15 @@ Other kinds of *'s* each have their own word:
 | legal ownership (*the dog Azozon owns*) | `gegunum` + `/b/` |
 | something B made (*the book Azozon wrote*) | a [role compound](roles.md#role-compounds) |
 
-**`om`** always needs a noun on its left: it belongs to the nearest noun before it (after that noun's `/ɡ/` words). After a verb or at the start of a sentence there is no thing for B to use, so `om` + `/b/` is not a sentence there. For someone's act (*Azozon's walk*), say the act as its own sentence, then [point back to it](dependents.md#which-noun).
+`om` always needs a noun on its left: it belongs to the nearest noun before it (after that noun's `/ɡ/` words). After a verb or at the start of a sentence there is no thing for B to use, so `om` + `/b/` is not a sentence there. For someone's act (*Azozon's walk*), say the act as its own sentence, then [point back to it](dependents.md#which-noun).
 
-**`om`** never takes a person on the left: a person is not something someone uses. **`gegunum`** never does either, because no one owns a person. **`om`** never names a feeling or trait either: a feeling or trait stays something B has, not something B uses. A trait is a `/ɡ/` word on B.
+`om` never takes a person on the left: a person is not something someone uses. `gegunum` never does either, because no one owns a person. `om` never names a feeling or trait either: a feeling or trait stays something B has, not something B uses. A trait is a `/ɡ/` word on B.
 
 **Compare with:** *for Azozon* is `ol`. A [sake](sakes.md) on `/ɡ/` also marks the noun as yours, together with how it serves you.
 
 ### Social relations (*Azozon's friend*, *boss*) {#social-relations}
 
-English *'s* also names a social tie (*Azozon's friend*, *Azozon's boss*), where **`om`** cannot go: a person is not something someone uses. Put the root for the tie on `/ɡ/` with **-m** (the abstract sense), and put the other person in a `bl-` word right after it, as with the *of* relations. `/b/` is the person the tie points to.
+English *'s* also names a social tie (*Azozon's friend*, *Azozon's boss*), where `om` cannot go: a person is not something someone uses. Put the root for the tie on `/ɡ/` with `-m` (the abstract sense), and put the other person in a `bl-` word right after it, as with the *of* relations. `/b/` is the person the tie points to.
 
 > `zalazun gamayam blazozon.`
 >
@@ -91,7 +97,7 @@ With no `bl-` word after a joined subject, the tie points at the other members, 
 >
 > "Azozon and Alazun are friends."
 
-Any root whose abstract sense is a tie works this way (`gohuyam` *partner of*, `gawem` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with **`o`**: after `zalazun gamayam blazozon`, `zwubamayar` is *the other party of that friendship* (Azozon).
+Any root whose abstract sense is a tie works this way (`gohuyam` *partner of*, `gawem` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with `o`: after `zalazun gamayam blazozon`, `zwubamayar` is *the other party of that friendship* (Azozon).
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Same root as |
@@ -101,7 +107,7 @@ Any root whose abstract sense is a tie works this way (`gohuyam` *partner of*, `
 | **`gohuyam`** + `/b/` | partner of `/b/` | *partner of* | `ohuyal` *holding hands* |
 | **`gabolem`** + `/b/` | the one `/b/` looks after | *in the care of* (*Azozon's patient*, *team*) | `abolel` *house plant* |
 
-A tie of care (*Azozon's patient*, *Azozon's team*) is **`gabolem`**: `/b/` looks after the person. It says Azozon is responsible for them, not that Azozon owns or uses them. (cue: 🪴 a house plant needs someone to tend it)
+A tie of care (*Azozon's patient*, *Azozon's team*) is `gabolem`: `/b/` looks after the person. It says Azozon is responsible for them, not that Azozon owns or uses them. (cue: 🪴 a house plant needs someone to tend it)
 
 > `zalazun gabolem blazozon.`
 >

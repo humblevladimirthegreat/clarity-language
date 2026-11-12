@@ -11,7 +11,7 @@ You already write *like Azozon* as a hosted pair (`hewem blazozon`): a relation 
 
 ### Likeness (*like*) {#likeness}
 
-When English says something **resembles** a model (*walks like a duck*, *a house like Azozon’s*), keep the same hosted pair as on the [clause](clause.md#extra-nouns) page. The relation word is **`hewem`**. Put the model in a `bl-` word right after it. Optional `/w/` sits immediately before the relation word. The event or thing itself is real; the `bl-` word is only what it is compared to. (cue: 🪞 *mirror*: you see a reflection, not the same object twice)
+When English says something resembles a model (*walks like a duck*, *a house like Azozon’s*), use the relation word **`hewem`** and put the model in a `bl-` word right after it, the same hosted pair as on the [clause](clause.md#extra-nouns) page. The event or thing itself is real; the `bl-` word only names what it is compared to. An optional `/w/` word right before `hewem` grades the likeness. (cue: 🪞 *mirror*: you see a reflection, not the same object twice)
 
 > `zazozon hewem bladozal vowurol.`
 >
@@ -33,7 +33,7 @@ On a noun, the same root is **`gewem`**:
 >
 > "A house like Azozon’s."
 
-When the model is an event (*walks the way a duck swims*), put [**`blarl`**](dependents.md#hinges) after **`hewem`** and say that event as the next sentence. Keep the pair last, as with *because*. You are not claiming that the model event happened; it is only the comparison.
+When the model is an event (*walks the way a duck swims*), put [`blarl`](dependents.md#hinges) after `hewem` and say that event as the next sentence. Keep the pair last, as with *because*. You are not claiming that the model event happened; it is only the comparison.
 
 > `zazozon vowurol hewem blarl zadozal vazuvol.`
 >
@@ -57,7 +57,16 @@ With no `bl-` word after a joined subject, the model is the other members: each 
 >
 > "Azozon and Alazun walk alike."
 
-**Compare with:** a `/b/` word with no relation word before it is the recipient. *In a house* is a [hook](hooks.md#extra-noun) (`al bohehal`). *Using* a tool is also a [hook](hooks.md#extra-noun). Giving **one** person two labels is not resemblance, so it does not use this pair. *As sleepy as* compares how far two things have a quality, not whether one resembles the other. *As if they walk* says the walk may not be real; with *like*, the walk is real.
+**Compare with:**
+
+| English | What it is instead |
+|---------|--------------------|
+| a `/b/` word with no relation word before it | the recipient |
+| *in a house* | a [hook](hooks.md#extra-noun) (`al bohehal`) |
+| *using* a tool | also a [hook](hooks.md#extra-noun) |
+| giving *one* person two labels | not resemblance, so not this pair |
+| *as sleepy as* | how far two things have a quality, not whether one resembles the other |
+| *as if they walk* | the walk may not be real; with *like*, the walk is real |
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Same root as | Cue |
@@ -67,7 +76,7 @@ With no `bl-` word after a joined subject, the model is the other members: each 
 ### Exchange (*for*) {#exchange}
 <a id="in-exchange-for"></a>
 
-When English names the **other side of a swap** (*a book for a hammer*), use the same hosted pair as *like*. The relation word is **`heham`**. Put what is given in return in a `bl-` word right after it. That extra noun is the other half of the trade, not who receives the book. (cue: 💱 *currency-exchange*: the arrows swap one thing for another; `/b/` is the other side)
+When English names the other side of a swap (*a book for a hammer*), use the same hosted pair as *like*. The relation word is **`heham`**. Put what is given in return in a `bl-` word right after it. That extra noun is the other half of the trade, not who receives the book. (cue: 💱 *currency-exchange*: the arrows swap one thing for another; `/b/` is the other side)
 
 > `zazozon danal heham blohowel veham.`
 >
@@ -77,7 +86,14 @@ When English names the **other side of a swap** (*a book for a hammer*), use the
 
 On a noun, the same root is **`geham`** (`danal geham blohowel` *a book for a hammer*). As a plain noun, `zehal` is *a currency exchange*. As a verb, `veham` is *to trade* (the convertibility act).
 
-**Compare with:** a `/b/` word with no relation word before it is the recipient (*a book for Alazun* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun). *Like a duck* is [likeness](#likeness). *In a house* is a hook (`al`).
+**Compare with:**
+
+| English | What it is instead |
+|---------|--------------------|
+| *a book for Alazun* as who gets it | a `/b/` word with no relation word before it: the recipient |
+| *using* a tool | a [hook](hooks.md#extra-noun) |
+| *like a duck* | [likeness](#likeness) |
+| *in a house* | a hook (`al`) |
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Same root as | Cue |
@@ -86,7 +102,7 @@ On a noun, the same root is **`geham`** (`danal geham blohowel` *a book for a ha
 
 ### Proxy (*on behalf of*) {#proxy}
 
-When English says someone **acts as another person’s agent** (*tells on behalf of Alazun*), use the same hosted pair as [*like*](#likeness). The relation word is **`hanem`**. Put that person in a `bl-` word right after it. The subject does the act; `/b/` is the person they act for, not who hears the telling. (cue: 🪪 *id*: the card stands as an authorized face; `/b/` is that person)
+When English says someone acts as another person’s agent (*tells on behalf of Alazun*), use the same hosted pair as [*like*](#likeness). The relation word is **`hanem`**. Put that person in a `bl-` word right after it. The subject does the act; `/b/` is the person they act for, not who hears the telling. (cue: 🪪 *id*: the card stands as an authorized face; `/b/` is that person)
 
 > `zazozon hanem blalazun vezuyol.`
 >
@@ -96,7 +112,14 @@ When English says someone **acts as another person’s agent** (*tells on behalf
 
 A recipient `/b/` can follow once the pair is complete: `zazozon hanem blalazun vezuyol bahelan` (*tells Ahelan on behalf of Alazun*). On a noun, the same root is **`ganem`** (`danal ganem blalazun` *a book on behalf of Alazun*). As a plain noun, `zanel` is *an id*.
 
-**Compare with:** a `/b/` word with no relation word before it is who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`).
+**Compare with:**
+
+| English | What it is instead |
+|---------|--------------------|
+| who hears the telling | a `/b/` word with no relation word before it |
+| *using* a tool | a [hook](hooks.md#extra-noun) |
+| *a book for a hammer* as a swap | [exchange](#exchange) |
+| *in a house* | a hook (`al`) |
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Same root as | Cue |
