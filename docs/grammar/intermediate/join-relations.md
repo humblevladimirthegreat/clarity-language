@@ -18,9 +18,9 @@ English ties one extra thing to a noun or an action with words like *with*, *wit
 
 **Compare with:** *writes with a hammer* is an extra-noun [hook](/hooks#extra-noun) (`aol` + `/b/`), not `han`. `han` is company / including, not the tool. *Tells on behalf of Alazun* is [proxy](/relations#proxy) (`hanem`), not `hen` *exclusively for*. `uol` is *against* that party, not `hun` *refusing*.
 
-Adjective [joins](/joins) (`gal` / `gam` / `gar`) do a different job: a join-relation takes `-n` and points toward one `/b/` word.
+**Not the same job as:** adjective [joins](/joins) (`gal` / `gam` / `gar`). A join-relation takes `-n` and points toward one `/b/` word.
 
-For *including* as an afterthought, use a [hook](/hooks) (`al`, …) instead. `zuhunam gan blazozon` is *a team including Azozon*; `zuhunam al zazozon` is *the team, including Azozon*.
+**For *including* as an afterthought, use:** a [hook](/hooks) (`al`, …). `zuhunam gan blazozon` is *a team including Azozon*; `zuhunam al zazozon` is *the team, including Azozon*.
 
 For several members, put a [phrase join](/joins) inside the `/b/` phrase (`gan bluwedal blugedam bal`; `zazozon han blalazun blahelan bal vowurol`). For an unnamed member or none at all, use a [standalone](/joins#standalone-phrase) `/b/` join as the only `/b/` word (`gan blar` = *including something*; `guan blal` = *excluding nothing*).
 
