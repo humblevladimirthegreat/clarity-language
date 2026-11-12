@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-*Thanks* and *sorry* don't say what the act did for the person. Ageben names the **sake**: the need that was met or harmed. Saying which one shows that you noticed.
+*Thanks* and *sorry* don't say what the act did for the person. A bare thank-you or apology doesn't show that you noticed what was at stake for them. Ageben names the **sake**, the need that was met or harmed.
 
 ## The sakes {#sakes}
 
@@ -17,6 +17,8 @@
 | `ode` | pleasure | *It feels good.* |
 | `oba` | physical (health, rest, safety) | *My body is cared for and safe.* |
 | `uda` | a sake, unspecified | |
+
+Nine sakes is a menu; you don't need to memorize it.
 
 ## The forms {#forms}
 
@@ -43,7 +45,7 @@ The ending is the settled-to-passing scale again:
 > My old coat `gobathal` has lasted ten winters.  
 > I spoiled the ending. `thodethur blawan`.
 
-`thobatham` thanks someone for the rest. `thodethur blawan` owns a small, passing harm to someone's enjoyment. `gobathal` thanks the coat, not anyone's act, and its **-l** says the care it gives is lasting.
+`thobatham` thanks someone for the rest. `thodethur blawan` owns a small, passing harm to someone's enjoyment. `gobathal` thanks the coat, not anyone's act, and its `-l` says the care it gives is lasting.
 
 ## Practice {#practice}
 

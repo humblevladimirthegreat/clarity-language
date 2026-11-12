@@ -2,11 +2,11 @@
 
 ## The gap {#gap}
 
-*He's a liar* turns one act into someone's nature. English needs a whole extra clause to take that back (*well, he lied this one time*). Ageben says how far a label reaches inside the word itself.
+*He's a liar* turns one act into someone's nature. English needs a whole extra clause to take a label back (*well, he lied this one time*). Ageben puts the **label reach**, how far a label applies, inside the word itself.
 
 ## The forms {#forms}
 
-Add a hyphen to the English word, then `th` and a vowel for the reach:
+Add a hyphen to the English word, then `th` and the **reach vowel**, which says how far the label reaches:
 
 | Suffix | Reach |
 |--------|-------|

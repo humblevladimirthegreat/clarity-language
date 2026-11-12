@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-English doesn't mark whether a claim was seen, remembered, worked out, or heard from someone. So a rumor can pass for an eyewitness report, and a strong hunch from the clues can pass for a proof. In Ageben, a claim can carry a word for the **channel** it came through.
+English doesn't mark whether a claim was seen, remembered, worked out, or heard from someone. A rumor can pass for an eyewitness report, and a strong hunch from the clues can pass for a proof. In Ageben, a claim can carry a word for its **evidential channel**: how you came to know it.
 
 ## The forms {#forms}
 
@@ -20,9 +20,11 @@ Seven channels is a menu; you don't need to memorize it. A recording counts as y
 
 Clues and a deduction are not the same. Clues make a claim likely, and it can still fail with every clue true. A deduction can't fail unless something it starts from is false. Save `thanam` for *it follows*, *so it must be*, not for *it's obvious*.
 
-Swap the ending to say **how strong the evidence is**: **-l** strong, **-m** the default, **-r** weak. `thebar` is a rumor, `thevul` is a vivid memory, and `thaber` is a faint hunch. For a pattern, `thubol` is a well-established one and `thubor` rests on a few cases. For a deduction, the ending grades how far you checked the steps: `thanal` you could show every step, `thanar` it seems to follow but you haven't checked. Strength is how much the claim rests on, not how likely the event is. A solid source can still report something unlikely.
+Swap the ending to say how strong the evidence is: `-l` strong, `-m` the default, `-r` weak. `thebar` is a rumor, `thevul` is a vivid memory, and `thaber` is a faint hunch. For a pattern, `thubol` is a well-established one and `thubor` rests on a few cases. For a deduction, the ending grades how far you checked the steps: `thanal` you could show every step, `thanar` it seems to follow but you haven't checked.
 
-This is the same settled-to-passing scale as in How sure are you?: solid evidence is lasting (**-l**), and a rumor could shift at any moment (**-r**).
+Strength is how much the claim rests on, not how likely the event is. A solid source can still report something unlikely.
+
+This is the same settled-to-passing scale as in How sure are you?: solid evidence is lasting (`-l`), and a rumor could shift at any moment (`-r`).
 
 ## Examples {#examples}
 
@@ -32,7 +34,7 @@ This is the same settled-to-passing scale as in How sure are you?: solid evidenc
 > I locked the door `thevur`.  
 > This bug is in the parser `theyom`, `thomam`.
 
-`thebal` is a reliable source, like an official notice; `thevur` is a hazy memory. The last example says you worked it out from clues **and** it's only a *could be*. How you know and how sure you are are separate questions, so you can answer both.
+`thebal` is a reliable source, like an official notice; `thevur` is a hazy memory. The last example says you worked it out from clues *and* it's only a *could be*. How you know and how sure you are are separate questions, so you can answer both.
 
 When you tell a story, you only need the drop-in on the first sentence. It covers the sentences after it until you name a different one:
 

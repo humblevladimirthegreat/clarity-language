@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-English *can*, *may*, *should*, and *OK* blur who allowed something, and whether the person it affects agreed or was only assumed to. Ageben has a word for each, and its ending says where the yes or no comes from.
+English *can*, *may*, *should*, and *OK* blur who allowed something, and whether the person it affects agreed or was only assumed to. Ageben has separate words for **permission**, **requirement**, and **consent** (the affected person's own yes), and the ending says where the yes or no comes from.
 
 ## The forms {#forms}
 
@@ -13,9 +13,9 @@ English *can*, *may*, *should*, and *OK* blur who allowed something, and whether
 | `hwuvol` / `hwuvom` / `hwuvor` | required by a rule / by a person / by custom |
 | `hwudal` / `hwudam` / `hwudar` | the affected person agreed in advance / said yes (and can take it back) / is assumed to be OK |
 
-The endings have a new job here: the **source**. Cue: **l ≈ law, m ≈ mouth, r ≈ read the room.** **-l** is a rule, **-m** is a person's word (the default), and **-r** is no one's word at all.
+Here the endings say something new: the **source** of the yes or no. `-l` is a rule (think *law*), `-m` is a person's word, the default (think *mouth*), and `-r` is no one's word at all (think *read the room*).
 
-On the consent words, **-r** is allowed but visibly weaker: it puts *I assumed* into the sentence instead of hiding it.
+On the consent words, `-r` is allowed but visibly weaker: it puts *I assumed* into the sentence instead of hiding it.
 
 ## Examples {#examples}
 
