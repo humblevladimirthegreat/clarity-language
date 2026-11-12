@@ -6,7 +6,7 @@ band: beginner
 
 ### Already, still, not yet, no longer {#phasal}
 
-English *already*, *still*, *not yet*, and *no longer* do not place an event in time. Each compares what is true **now** with a change: has it come, or not? That is about how things stand now, not when something happened, so Ageben uses four words, not a tense. Three are `/h/` words: a change that has come, a state that goes on, and a state that has stopped can all be watched. *Not yet* is a `/th/` [stance](clause.md#stance-th) word, like MAY: it waits on a change that someone expects, and an expectation is in a mind. (cue: each root pictures the stage the change is at)
+English *already*, *still*, *not yet*, and *no longer* do not place an event in time; each compares what is true *now* with a change that has or has not come. Ageben uses four words for them, not a tense, so you can say how things stand now without saying when anything happened. Three are `/h/` words, because a change that has come, a state that goes on, and a state that has stopped can all be watched. *Not yet* is a `/th/` [stance](clause.md#stance-th) word, like MAY: it waits on a change that someone expects, and an expectation is in a mind. (cue: each root pictures the stage the change is at)
 
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -33,9 +33,9 @@ English *already*, *still*, *not yet*, and *no longer* do not place an event in 
 >
 > "Azozon doesn't walk at the house anymore."
 
-The ending says how settled the current stage is, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). Use **-m** when it could change back, or when you do not know. Use **-l** when it is not expected to. Use **-r** when it holds only for now: it is likely to change back soon.
+The ending says how settled the current stage is, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). Use `-m` when it could change back, or when you do not know. Use `-l` when it is not expected to. Use `-r` when it holds only for now: it is likely to change back soon.
 
-On *not yet*, the ending says how firmly you expect the change instead. Use **-m** when you expect it, or when you do not say how firmly. Use **-l** when you are sure it will come: *not yet, but it will*. Use **-r** when it may never come.
+On *not yet*, the ending says how firmly you expect the change instead. Use `-m` when you expect it, or when you do not say how firmly. Use `-l` when you are sure it will come: *not yet, but it will*. Use `-r` when it may never come.
 
 <!-- cheat-sheet: knowing-intending -->
 | Ageben | Use | English |
@@ -79,7 +79,7 @@ When only one `/ɡ/` adjective is still or no longer so, write the same word und
 
 #### Ever / never {#ever-never}
 
-English *has ever* / *has never* asks whether something happened at least once, at no particular time. Use *already* **`havem`** with *sometimes* **`har`** ([restrictors](restrictors.md)): the change has come, on some unnamed occasion. For *has never*, use bare **`hal`** (*never*).
+English *has ever* / *has never* asks whether something happened at least once, at no particular time. Use *already* `havem` with *sometimes* `har` ([restrictors](restrictors.md)): the change has come, on some unnamed occasion. For *has never*, use bare `hal` (*never*).
 
 > `zazozon havem vazuvol har.`
 >

@@ -33,9 +33,6 @@
     "bold-density": 1,
     "long-paragraph": 1
   },
-  "beginner/already-still-yet.md": {
-    "beginner-lead": 1
-  },
   "beginner/can-and-cant.md": {
     "beginner-lead": 1,
     "long-paragraph": 1
@@ -52,20 +49,10 @@
     "beginner-lead": 1,
     "bold-density": 3
   },
-  "beginner/extra-noun-hooks.md": {
-    "beginner-lead": 1
-  },
   "beginner/firm-soft.md": {
     "beginner-lead": 1,
     "bold-density": 1,
     "long-paragraph": 1
-  },
-  "beginner/here-there.md": {
-    "beginner-lead": 1
-  },
-  "beginner/hooks.md": {
-    "beginner-lead": 1,
-    "bold-density": 1
   },
   "beginner/intention.md": {
     "beginner-lead": 1,
@@ -84,10 +71,6 @@
   "beginner/relations.md": {
     "beginner-lead": 1,
     "long-paragraph": 1
-  },
-  "beginner/restrictors.md": {
-    "beginner-lead": 1,
-    "bold-density": 2
   },
   "beginner/roles.md": {
     "bold-density": 3

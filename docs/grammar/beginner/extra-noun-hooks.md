@@ -4,12 +4,12 @@ band: beginner
 
 # Extra-noun hooks {#extra-noun-hooks}
 
-Two-vowel hooks name the rest of the everyday extras (*on*, *toward*, *through*, *using*), and **-m** on a hook makes the landmark the setting (*amid*, *near*, *despite*).
+Two-vowel hooks name the rest of the everyday extras (*on*, *toward*, *through*, *using*), and `-m` on a hook makes the landmark only the general surroundings of the act (*amid*, *near*, *despite*).
 
 ### Extra noun: stacked vowels and loose **-m**
 <a id="extra-noun-intermediate"></a>
 
-Beginner already used the one-vowel extra-noun hooks (*in* / *for* / *at* / *from*). Extra-noun **is the hook word** with `/b/` right after it: recast the landmark as the hook job. Size pictures help the cells; they are not the parent. Hooks with two vowels name the rest of the everyday extras. The test is the same: `/b/` comes right after the hook, and the word right before the hook (skipping any `/w/`) is **not** a recipient `/b/` (so `bazozon al balazun` is *including*).
+You have already met the one-vowel extra-noun hooks (*in* / *for* / *at* / *from*). Hooks with two vowels name the rest of the everyday extras, such as *on*, *through*, and *using*, in the same hook-then-`/b/` shape. The test is the same: `/b/` comes right after the hook, and the word right before the hook (skipping any `/w/`) is *not* a recipient `/b/` (so `bazozon al balazun` is *including*).
 
 A hook + `/b/` right after a landmark (the `/b/` of another extra, or of a word such as a locative relation) describes that landmark, not the clause: *the house near me*.
 
@@ -19,23 +19,23 @@ A hook + `/b/` right after a landmark (the `/b/` of another extra, or of a word 
 >
 > "Azozon walks in the house near me."
 
-Several extra-noun hooks on one clause are several extras. To keep the second one on the clause, put a non-`/b/` word between the first landmark and the next hook. Extra-noun **-n** makes the hook and its landmark a name, as on same-role hooks; the landmark keeps its own ending.
+Several extra-noun hooks on one clause are several extras. To keep the second one on the clause, put a non-`/b/` word between the first landmark and the next hook. Extra-noun `-n` makes the hook and its landmark a name, as on same-role hooks; the landmark keeps its own ending.
 
-With an extra-noun hook, **-m** makes a **zone extra**: the landmark is the general setting, not the exact contact, source, tool, or opponent. It is not a second copy of the same extra.
+With an extra-noun hook, `-m` makes a **zone extra**: the landmark is only the general surroundings (the *setting* in the table), not the exact contact, source, tool, or opponent. So you can say *near* rather than *at*, or *amid* rather than *in*. It is not a second copy of the same extra.
 
 <!-- cheat-sheet: joins-hooks -->
-| **-l** | English | **-m** | English | Cue |
+| `-l` | English | `-m` | English | Cue |
 |--------|---------|--------|---------|-----|
-| **`al`** | *in* | **`am`** | *amid* | including a place; **-m** that volume as the setting |
-| **`ael`** | *on* | **`aem`** | *over* | including a face; **-m** that face as the setting |
-| **`el`** | *at* | **`em`** | *near* | instead a point; **-m** that point as the setting |
-| **`oel`** | *toward* | **`oem`** | *in the direction of* | *for* then *at*: aimed for one point; **-m** that aim as the setting |
-| **`ul`** | *from* | **`um`** | *away from* | except that landmark; **-m** that origin as the setting |
-| **`ual`** | *out of* | **`uam`** | *out from among* | except a volume; **-m** that volume as the setting |
-| **`uel`** | *through* | **`uem`** | *by way of* | except via one path; **-m** that path as the setting |
-| **`ol`** | *for* | **`om`** | *used by* (*B's*) | rather this aim; **-m** what was meant for B is now in B's use |
-| **`aol`** | *using* | **`aom`** | *by* | rather the means; **-m** the channel |
-| **`uol`** | *against* | **`uom`** | *contrary to* | instead none of the landmark as opponent; **-m** the opposing zone |
+| `al` | *in* | `am` | *amid* | including a place; `-m` that volume as the setting |
+| `ael` | *on* | `aem` | *over* | including a face; `-m` that face as the setting |
+| `el` | *at* | `em` | *near* | instead a point; `-m` that point as the setting |
+| `oel` | *toward* | `oem` | *in the direction of* | *for* then *at*: aimed for one point; `-m` that aim as the setting |
+| `ul` | *from* | `um` | *away from* | except that landmark; `-m` that origin as the setting |
+| `ual` | *out of* | `uam` | *out from among* | except a volume; `-m` that volume as the setting |
+| `uel` | *through* | `uem` | *by way of* | except via one path; `-m` that path as the setting |
+| `ol` | *for* | `om` | *used by* (*B's*) | rather this aim; `-m` what was meant for B is now in B's use |
+| `aol` | *using* | `aom` | *by* | rather the means; `-m` the channel |
+| `uol` | *against* | `uom` | *contrary to* | instead none of the landmark as opponent; `-m` the opposing zone |
 
 > `zazozon vehohel ael behohel.`
 >
@@ -49,7 +49,7 @@ With an extra-noun hook, **-m** makes a **zone extra**: the landmark is the gene
 >
 > "Azozon writes a book with a pen."
 
-**Compare with:** hook **`oel`** names where a path **ends** (*toward X*).
+**Compare with:** hook `oel` names where a path *ends* (*toward X*).
 
 > `zazozon uol bagayul vuvuvul.`
 >
@@ -69,7 +69,7 @@ With an extra-noun hook, **-m** makes a **zone extra**: the landmark is the gene
 >
 > "Azozon walks despite the rain."
 
-**Compare with:** some English prepositions use other forms. *So that Alazun sits* is **`thovam blarl`**.
+**Compare with:** some English prepositions use other forms. *So that Alazun sits* is `thovam blarl`.
 
 ### Practice {#beginner-practice}
 

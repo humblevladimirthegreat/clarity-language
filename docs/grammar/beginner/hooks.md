@@ -5,16 +5,16 @@ band: beginner
 # Hooks {#hooks}
 
 
-English uses small words such as *including*, *instead*, *in*, and *for* to attach one piece to another. Ageben does this with **hooks**: short words with **no role letter** (no `z` / `v` / `g` / …), just a vowel (or two vowels) plus an ending. A hook attaches the piece on its right to something already in play: a phrase in the same role, the sentence before, or the clause itself as an extra noun.
+English uses small words such as *including*, *instead*, *in*, and *for* to attach one piece to another. Ageben does this with **hooks**: short words with no role letter (no `z` / `v` / `g` / …), just a vowel (or two vowels) plus an ending. A hook attaches the piece on its right to something already in play: a phrase in the same role, the sentence before, or the clause itself as an extra noun.
 
-How much of **A is still in the slot** after B arrives: added, still A, replaced, or none of B. That leftover hangs on the [join](joins.md#join-type-vowel-series) series, not size: you are changing membership of the slot, not measuring A.
+The hook's vowel says how much of A is left once B arrives: B is added to A, B says A another way, B replaces A, or B is taken out of A. The vowels follow the [join](joins.md#join-type-vowel-series) series: they change who belongs in A's role, and they do not measure A.
 
-The same spellings work in all three places. You tell them apart by what comes right **after** the hook, and by whether a `/b/` word comes right **before** it.
+The same spellings work in all three places. You tell them apart by what comes right *after* the hook, and by whether a `/b/` word comes right *before* it.
 
 ### Including (`am` / `al`)
 <a id="including"></a>
 
-You named something (A), and you want to say English *including B* about it. Put a hook between two phrases that play the **same role** in the clause (both subjects, both objects, both adjectives, …): `A HOOK B`. For everyday *including*, the hook is **`al`**. B is added to A's slot, but A and B do not become a two-item list. (cue: **a** ≈ add.)
+You named something (A), and you want to say English *including B* about it. Put a hook between two phrases that play the same role in the clause (both subjects, both objects, both adjectives, …): `A HOOK B`. For everyday *including*, the hook is **`al`**. B is added in A's role, but A and B do not become a two-item list. (cue: `a` ≈ add.)
 
 ```text
 A HOOK B
@@ -26,14 +26,14 @@ A HOOK B
 >
 > "The family, including Azozon."
 
-Because a hook starts with a vowel, the [last consonant](phonology.md#word-edges) of the word before it may slide over and start the hook's syllable, in speech and in song: `zuvayal al` can sound like *zu-va-ya-lal*. That is fine. They are still two words, and the listener can still tell where the hook starts.
+Because a hook starts with a vowel, the [last consonant](phonology.md#word-edges) of the word before it may slide over and start the hook's syllable, in speech and in song: `zuvayal al` can sound like *zu-va-ya-lal*. You may let it slide: they are still two words, and the listener can still tell where the hook starts.
 
-**Compare with:** packaging two members as a list uses a [join](joins.md) (`zodozel zogozel zam` *a dog and a cat*). A hook adds B to A's slot; it does not name a pair.
+**Compare with:** packaging two members as a list uses a [join](joins.md) (`zodozel zogozel zam` *a dog and a cat*). A hook adds B to A's role; it does not name a pair.
 
 ### Rather (`ol`)
 <a id="rather"></a>
 
-To correct your own wording, English says *A, or rather B*. Use the same `A HOOK B` shape with vowel **o**: **`ol`**. B is a better way to say A. It describes the **same** thing, so it is not an extra member (as with *including*) and not a different thing in A's place (as with *instead*). (cue: still A.)
+To correct your own wording, English says *A, or rather B*. Use the same `A HOOK B` shape with vowel `o`: **`ol`**. B is a better way to say A. It describes the *same* thing, so it is not an extra member (as with *including*) and not a different thing in A's place (as with *instead*). (cue: still A.)
 
 > `zazozon gadamul ol guzemel.`
 >
@@ -41,12 +41,12 @@ To correct your own wording, English says *A, or rather B*. Use the same `A HOOK
 >
 > "Azozon is tired, or rather, sleepy."
 
-**Compare with:** a [thinking sound](phonology.md#thinking-sounds) holds the gap before you find a word; **`ol`** fixes a word you already said.
+**Compare with:** a [thinking sound](phonology.md#thinking-sounds) holds the gap before you find a word; `ol` fixes a word you already said.
 
 ### Instead (`el`)
 <a id="instead"></a>
 
-For English *B instead of A*, use the same shape with vowel **e**: `A el B`. A, on the left, is what you named or expected first. B, on the right, is what really belongs in that slot. The order is the reverse of the English. (cue: B replaces A.)
+For English *B instead of A*, use the same shape with vowel `e`: `A el B`. A, on the left, is what you named or expected first. B, on the right, is what really belongs in that role. The order is the reverse of the English. (cue: B replaces A.)
 
 > `dedudal el dogudal.`
 >
@@ -54,7 +54,7 @@ For English *B instead of A*, use the same shape with vowel **e**: `A el B`. A, 
 >
 > "Coffee instead of tea."
 
-A and B can play any role, as long as both play the same one. They can even be **verbs**:
+A and B can play any role, as long as both play the same one. They can even be verbs:
 
 > `zazozon veruvol el vowurol.`
 >
@@ -62,12 +62,12 @@ A and B can play any role, as long as both play the same one. They can even be *
 >
 > "Azozon walks instead of running."
 
-**Compare with:** *Azozon tells on behalf of Alazun* keeps Azozon as the teller; **`el`** puts someone else in that slot.
+**Compare with:** *Azozon tells on behalf of Alazun* keeps Azozon as the teller; `el` puts someone else in that role.
 
 ### Except (`ul`)
 <a id="except"></a>
 
-For English *A except B*, use vowel **u**: `A ul B`. What you say holds for A with B taken out. (cue: **u** ≈ undo.)
+For English *A except B*, use vowel `u`: `A ul B`. What you say holds for A with B taken out. (cue: `u` ≈ undo.)
 
 > `zuvayal ul zazozon.`
 >
@@ -86,20 +86,20 @@ The left side can be the clause standalone **`xual`** *everything* ([clause join
 <!-- cheat-sheet: vowels -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **a** | add a member in the same slot | *including*: A, including B | bigger: B is added |
-| **o** | offer a better wording | *rather*: A, or rather B | same: still A |
-| **e** | swap the item | *instead*: B in place of A | one: B replaces A |
-| **u** | subtract an exception | *except*: A except B | none of B |
+| `a` | add a member in the same role | *including*: A, including B | bigger: B is added |
+| `o` | offer a better wording | *rather*: A, or rather B | same: still A |
+| `e` | swap the item | *instead*: B in place of A | one: B replaces A |
+| `u` | subtract an exception | *except*: A except B | none of B |
 
 ### Closed and open endings
 
-The ending on an `A HOOK B` hook says whether B is complete. **-l** says B is the whole of it, like plain English *including B* or *except B*. **-m** says there may be more than B, like adding *and maybe more*. When you are unsure, prefer **-m**.
+English adds *and maybe more* when B may not be the whole list. In Ageben, the ending on an `A HOOK B` hook says whether B is complete: `-l` says B is the whole of it, like plain English *including B* or *except B*, and `-m` says there may be more than B. When you are unsure, prefer `-m`.
 
 <!-- cheat-sheet: joins-hooks -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **-l** (`al` / `ol` / `el` / `ul`) | B is the whole story you stand behind | unmarked (*including B*, *except B*, …) | **l** ≈ locked |
-| **-m** (`am` / `om` / `em` / `um`) | B is not the only one | *and maybe more* | **m** ≈ maybe more |
+| `-l` (`al` / `ol` / `el` / `ul`) | B is the whole story you stand behind | unmarked (*including B*, *except B*, …) | `l` ≈ locked |
+| `-m` (`am` / `om` / `em` / `um`) | B is not the only one | *and maybe more* | `m` ≈ maybe more |
 
 > `zuvayal am zazozon.`
 >
@@ -115,14 +115,14 @@ The ending on an `A HOOK B` hook says whether B is complete. **-l** says B is th
 
 ### Glue this sentence to prior talk {#discourse-hooks}
 
-English can open a sentence with *Additionally*, *In other words*, *Instead*, or *Except* to say how it connects to what was said before (this sentence-to-sentence connective is the *glue*). Put the same hook at the **front** of the sentence. What was already said plays A's role, and the whole new sentence is B. The vowels keep their meanings: add, say another way, replace, take out. (cue: same **a** / **o** / **e** / **u** map as in-clause.)
+English can open a sentence with *Additionally*, *In other words*, *Instead*, or *Except* to say how it connects to what was said before (this sentence-to-sentence connective is the *glue*). Put the same hook at the front of the sentence. What was already said plays A's role, and the whole new sentence is B. The vowels keep their meanings: add, say another way, replace, take out. (cue: same `a` / `o` / `e` / `u` map as in-clause.)
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| `al …` | add another point you stand behind | *Additionally, …* | **a** ≈ add |
-| `ol …` | say the last point another way | *In other words, …* | **o** ≈ still A |
-| `el …` | this claim replaces the last one | *Instead, …* / *Actually, …* | **e** ≈ replaced |
-| `ul …` | an exception to what was just said | *Except, …* | **u** ≈ undo |
+| `al …` | add another claim you stand behind | *Additionally, …* | `a` ≈ add |
+| `ol …` | say the last claim another way | *In other words, …* | `o` ≈ still A |
+| `el …` | this claim replaces the last one | *Instead, …* / *Actually, …* | `e` ≈ replaced |
+| `ul …` | an exception to what was just said | *Except, …* | `u` ≈ undo |
 
 > `al zazozon vowurol.`
 >
@@ -136,7 +136,7 @@ English can open a sentence with *Additionally*, *In other words*, *Instead*, or
 >
 > "Instead, Alazun sleeps."
 
-Use the same **`el …`** for *actually* when you correct what someone expected: the new claim replaces the old one.
+Use the same `el …` for *actually* when you correct what someone expected: the new claim replaces the old one.
 
 > `ol zahelan godozel.`
 >
@@ -144,17 +144,15 @@ Use the same **`el …`** for *actually* when you correct what someone expected:
 >
 > "In other words, Ahelan is a dog."
 
-The hook is glue only when the next word is not a `/b/` word. With a `/b/` word right after it, even the stand-in **`barl`**, it is an extra-noun hook instead.
+The hook is glue only when the next word is not a `/b/` word. With a `/b/` word right after it, even the stand-in `barl`, it is an extra-noun hook instead.
 
 **Compare with:** *however* / *therefore* use [continue](speech-moves.md#continue-x) linkers. A hook at the front only adds, rephrases, replaces, or takes out.
 
 ### Extra noun (`/b/` after the hook) {#extra-noun}
 
-English prepositions such as *in*, *at*, *from*, and *for* add a place, a source, or someone who benefits. In Ageben, put a hook right before a `/b/` [extra noun](clause.md#extra-nouns). Extra-noun **is the hook word** with `/b/` after it: recast the landmark as the hook job (*in* = including a place; *for* = rather this aim; *at* = instead a point; *from* = except that landmark). Size pictures (volume / hand / point / none) help the cells; they must not choose the parent. This is not the recipient, which takes no hook (`zazozon vezuyol balazun` *tells Alazun*).
+English prepositions such as *in*, *at*, *from*, and *for* add a place, a source, or someone who benefits. In Ageben, a hook right before a `/b/` [extra noun](clause.md#extra-nouns) does the preposition's work: its `/b/` noun is the place, source, or goal (the *landmark*), and the hook's vowel says how the act relates to it. So one clause can say where something happens, where it comes from, and who it is for.
 
-So the test is: `/b/` right after the hook, and no recipient `/b/` right before it. Right after a recipient, the hook is same-role *including* (`bazozon al balazun`). The hook already marks its landmark, so the landmark is a plain `/b/` word, never a [`bl-` word](clause.md#extra-nouns).
-
-The four one-vowel hooks name the everyday extras:
+The four one-vowel hooks name the everyday extras; each cue reads the preposition through the hook's in-clause meaning, such as *in* as *including* a place:
 
 <!-- cheat-sheet: joins-hooks -->
 | Ageben | English | Use | Cue |
@@ -170,7 +168,7 @@ The four one-vowel hooks name the everyday extras:
 >
 > "A dog sleeps in a house."
 
-To ask *where?*, put the fill-ask blank **`bar`** after the hook (`el bar` *where?*, `ul bar` *where from?*).
+To ask *where?*, put the fill-ask blank `bar` after the hook (`el bar` *where?*, `ul bar` *where from?*).
 
 > `zalazun vehohel el bedohel.`
 >
@@ -190,7 +188,7 @@ To ask *where?*, put the fill-ask blank **`bar`** after the hook (`el bar` *wher
 >
 > "Azozon cooks for a family."
 
-When `/b/` is a person or group, **`ol`** names who the act is meant to benefit, as in *cooks for Alazun*: what the act brings is meant to reach them.
+When `/b/` is a person or group, `ol` names who the act is meant to benefit, as in *cooks for Alazun*: what the act brings is meant to reach them.
 
 > `zazozon vuguyol ol balazun.`
 >
@@ -198,7 +196,9 @@ When `/b/` is a person or group, **`ol`** names who the act is meant to benefit,
 >
 > "Azozon cooks for Alazun."
 
-These hooks take **-l**: the landmark is the exact place, point, source, or goal.
+A recipient is different: it takes no hook (`zazozon vezuyol balazun` *tells Alazun*). So the test is: `/b/` right after the hook, and no recipient `/b/` right before it. Right after a recipient, the hook is same-role *including* (`bazozon al balazun`). The hook already marks its landmark, so the landmark is a plain `/b/` word, never a [`bl-` word](clause.md#extra-nouns).
+
+These hooks take `-l`: the landmark is the exact place, point, source, or goal.
 
 To say where something is (*there is a dog in a house*), write the noun with no verb, then the hook and its `/b/`. A noun alone says the thing [exists](predication.md#existence), and the hook places it.
 
@@ -208,11 +208,11 @@ To say where something is (*there is a dog in a house*), write the noun with no 
 >
 > "There is a dog in a house."
 
-**Compare with:** *Additionally, Azozon walks* is a hook at the front whose next word is **not** `/b/` (`al zazozon vowurol`).
+**Compare with:** *Additionally, Azozon walks* is a hook at the front whose next word is *not* `/b/` (`al zazozon vowurol`).
 
 ### Since (`ul` on a time) {#since}
 
-For *since* (from a starting point, and still true now), use **`ul`** *from* with a time instead of a place: *from the thunderstorm on*. [**`halam`**](dependents.md#time-hinges) *after* only places the event later. **`ul`** says the event has gone on from that point until now. (cue: **u** ≈ undo: leave the starting point behind)
+For *since* (from a starting point, and still true now), use `ul` *from* with a time instead of a place: *from the thunderstorm on*. [`halam`](dependents.md#time-hinges) *after* only places the event later. `ul` says the event has gone on from that point until now. (cue: `u` ≈ undo: leave the starting point behind)
 
 > `zazozon vehohel ul banulul.`
 >
@@ -220,7 +220,7 @@ For *since* (from a starting point, and still true now), use **`ul`** *from* wit
 >
 > "Azozon has been sitting since the thunderstorm."
 
-For *since* before a sentence, put **`barl`** after **`ul`** and the starting event after it.
+For *since* before a sentence, put `barl` after `ul` and the starting event after it.
 
 > `zazozon vowurol ul barl zalazun vezuvel.`
 >
@@ -228,7 +228,7 @@ For *since* before a sentence, put **`barl`** after **`ul`** and the starting ev
 >
 > "Azozon has been walking since Alazun fell asleep."
 
-English often puts *since* first (*Since Alazun fell asleep, Azozon has been walking*). Ageben keeps **`ul barl`** after the main clause, because the sentence after **`barl`** runs to the period. As a short answer, the pair and the starting event can stand alone:
+English often puts *since* first (*Since Alazun fell asleep, Azozon has been walking*). Ageben keeps `ul barl` after the main clause, because the sentence after `barl` runs to the period. As a short answer, the pair and the starting event can stand alone:
 
 > `ul barl zalazun vezuvel.`
 >
@@ -236,9 +236,9 @@ English often puts *since* first (*Since Alazun fell asleep, Azozon has been wal
 >
 > "Since Alazun fell asleep."
 
-**`ul`** is the only hook that takes **`barl`**. Every other hook needs a real noun in `/b/`.
+`ul` is the only hook that takes `barl`. Every other hook needs a real noun in `/b/`.
 
-**Compare with:** *since* meaning *because* is **`thahum blarl`**. Ageben keeps the time reading and the cause reading apart.
+**Compare with:** *since* meaning *because* is `thahum blarl`. Ageben keeps the time reading and the cause reading apart.
 
 ### Practice {#beginner-practice}
 

@@ -4,15 +4,15 @@ band: beginner
 
 # Here, there, and somewhere {#here-there-and-somewhere}
 
-English *somewhere*, *nowhere*, *here*, *there*, *this*, and *that* point to a place or a thing without naming it.
+English *somewhere*, *nowhere*, *here*, *there*, *this*, and *that* point to a place or a thing without naming it. Ageben says both with a place hook: followed by an unnamed place for *somewhere*, or by a person in the conversation for *here* and *there*.
 
 ### Somewhere, nowhere, everywhere {#place-indefinites}
 
-For English *somewhere*, *nowhere*, and *everywhere*, put a [standalone join](joins.md#standalone-phrase) in the `/b/` slot after a place hook. Outside a question, **`bar`** is an unspecified member (*somewhere*), the same way **`zar`** is *someone*. Under **`yel`**, it is the *where?* blank.
+For English *somewhere*, *nowhere*, and *everywhere*, put a [standalone join](joins.md#standalone-phrase) as the `/b/` word after a place hook, so you build these place words from words you already know. Outside a question, **`bar`** is some unnamed place (*somewhere*), the same way `zar` is *someone*. Under `yel`, it is the *where?* blank.
 
 | Ageben | English |
 |--------|---------|
-| **`el bar`** | *somewhere* (under **`yel`**: *where?*) |
+| **`el bar`** | *somewhere* (under `yel`: *where?*) |
 | **`el bur`** | *somewhere else* |
 | **`el bal`** | *nowhere* |
 | **`el bual`** | *everywhere* |
@@ -31,9 +31,9 @@ For English *somewhere*, *nowhere*, and *everywhere*, put a [standalone join](jo
 
 ### Here and there, this and that {#deixis}
 
-English *here*, *there*, *this*, and *that* point at things by their distance from the speaker. Ageben points from a **person in the conversation** instead: put a place hook before the [speaker, listener, or interlocutors](pronouns.md#special-pronouns) in `/b/`.
+English *here*, *there*, *this*, and *that* point at things by their distance from the speaker. Ageben points from a person in the conversation instead: put a place hook before the [speaker, listener, or interlocutors](pronouns.md#special-pronouns) in `/b/`.
 
-Names come first. When you know who is talking or listening, use their name as the landmark (`em bazozon` *near Azozon*). Use speaker and listener when the conversation role itself matters, or when you have no name to use.
+Prefer names: when you know who is talking or listening, use their name as the landmark (`em bazozon` *near Azozon*). Use speaker and listener when the conversation role itself matters, or when you have no name to use.
 
 <!-- cheat-sheet: joins-hooks -->
 | Ageben | Landmark | English |
@@ -65,7 +65,7 @@ Use `el` in place of `em` for the exact spot (`el buwen` *right where I am*).
 >
 > "Alazun sleeps over there." (away from both you and me)
 
-English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Ageben names the landmark with the plain motion verb **`vavobol`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vavobol` says nothing about how someone travels; use `vowurol` (*walk*) or `veruvol` (*run*) only when the manner matters.
+English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Ageben names the landmark with the plain motion verb **`vavobol`** (*go*) and a path hook: `oel` (*toward*) for *come*, `ul` (*from*) for *go away*. `vavobol` says nothing about how someone travels; use `vowurol` (*walk*) or `veruvol` (*run*) only when the manner matters.
 
 > `zazozon vavobol oel buwen.`
 >
@@ -101,7 +101,7 @@ With an object, `vavobol` moves something else: `zazozon dehohel vavobol.` *Azoz
 
 In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#which-noun)), `em buwen` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
 
-**Compare with:** *that dog* for a dog already named is [resume **-r**](pronouns.md#resume-r) (`zodozer`), not a place.
+**Compare with:** *that dog* for a dog already named is [resume `-r`](pronouns.md#resume-r) (`zodozer`), not a place.
 
 ### Practice {#beginner-practice}
 

@@ -5,13 +5,13 @@ band: beginner
 # Restrictors {#restrictors}
 
 
-Use these words when you want to say **when** a claim counts: *only when it rains*, *never*, *always*. They take the adverb letter **`h`** (or **`w`** immediately before the adjective they limit) plus the same vowels and endings you already use on [joins](joins.md). Time or case words sit **before** the restrictor. Together they limit when the verb's claim (or that adjective) holds; they do not describe how it happens.
+Use a **restrictor** when you want to say *when* a claim counts: *only when it rains*, *never*, *always*. Restrictors take the adverb letter `h` (or `w` immediately before the adjective they limit) plus the same vowels and endings you already use on [joins](joins.md). Time or case words sit *before* the restrictor. Together they limit when the verb's claim (or that adjective) holds; they do not describe how it happens.
 
-**Compare with:** a [sake](sakes.md) names what a claim is **for**. A restrictor on `/h/` says **when** it counts.
+**Compare with:** a [sake](sakes.md) names what a claim is *for*. A restrictor on `/h/` says *when* it counts.
 
 ### Only when / never (`hal`)
 
-To say *only when it rains*, list the **occasions** (times or cases) when the verb's claim is true, then end the list with the restrictor **`hal`**. Everything goes in the adverb slot (`/h/`): occasion words first, the restrictor last, the way a join word ends a list. Closed **-l** means these are all the times you stand behind. (cue: **a** ≈ add, adding up the times.)
+To say *only when it rains*, list the **occasions** (times or cases) when the verb's claim is true, then end the list with the restrictor **`hal`**. All of these words are adverbs (`/h/`): occasion words first, the restrictor last, the way a join word ends a list. Closed `-l` means these are all the times you stand behind. (cue: `a` ≈ add, adding up the times.)
 
 > `zazozon vowurol herulal hal.`
 >
@@ -19,7 +19,7 @@ To say *only when it rains*, list the **occasions** (times or cases) when the ve
 >
 > "Azozon walks only when it rains."
 
-With **no** occasion before it, the list of times is empty and closed, so the claim holds at no time: bare **`hal`** is *never*. (cue: **a** ≈ add, but nothing added, and **-l** closes the list.)
+With *no* occasion before it, the list of times is empty and closed, so the claim holds at no time: bare `hal` is *never*. (cue: `a` ≈ add, but nothing added, and `-l` closes the list.)
 
 > `zalazun vowurol hal.`
 >
@@ -37,7 +37,7 @@ With **no** occasion before it, the list of times is empty and closed, so the cl
 
 ### Always (`hual`)
 
-To say the verb's claim holds at every time, use **`hual`**. Bare **`hual`** is *always*. With occasion words before it, those times are the exceptions (*always except when…*). Open **`huam`** leaves room for exceptions you have not listed, as **-m** leaves any list open: *always, as far as I know*, which English usually says as *usually* or *as a rule*. (cue: **u** ≈ undo then **a** ≈ add.)
+To say the verb's claim holds at every time, use **`hual`**. Bare `hual` is *always*. With occasion words before it, those times are the exceptions (*always except when…*). Open **`huam`** leaves room for exceptions you have not listed, as `-m` leaves any list open: *always, as far as I know*, which English usually says as *usually* or *as a rule*. (cue: `u` ≈ undo then `a` ≈ add.)
 
 > `zahelan vozuyel hual.`
 >
@@ -59,16 +59,14 @@ To say the verb's claim holds at every time, use **`hual`**. Bare **`hual`** is 
 
 ### Sometimes / anytime / some other time
 
-To say *sometimes*, *anytime*, or *some other time* without naming the occasion (no *rain*, no *night*), put ending **-r** on the restrictor: `har`, `her`, `hur`. **-r** points at some time without saying which, so nothing needs to come before it. *Anytime* (`her`) means any one particular time will do, not *at all times* (that is *always*, `hual`).
-
-*Sometimes* is the usual English for `har`, alongside *never* and *always*. It says only that there is **some** such occasion, as *something* does on a [join](joins.md). It does not mean *often*.
+To say *sometimes*, *anytime*, or *some other time* without naming the occasion (no *rain*, no *night*), put ending `-r` on the restrictor: `har`, `her`, `hur`. `-r` points at some time without saying which, so nothing needs to come before it.
 
 <!-- cheat-sheet: restrictors-spans -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`har`** | unspecified member of the time inventory | *sometimes* / *at some time* | **-r** names a member |
-| **`her`** | unspecified member of a one-choice time menu | *anytime* (any one particular time, whichever you pick) | **e** ≈ choice |
-| **`hur`** | unspecified leftover occasion | *some other time* | **u** ≈ undo |
+| `har` | unspecified member of the time inventory | *sometimes* / *at some time* | `-r` names a member |
+| `her` | unspecified member of a one-choice time menu | *anytime* (any one particular time, whichever you pick) | **e** ≈ choice |
+| `hur` | unspecified leftover occasion | *some other time* | **u** ≈ undo |
 
 > `zalazun veruvol har.`
 >
@@ -76,13 +74,17 @@ To say *sometimes*, *anytime*, or *some other time* without naming the occasion 
 >
 > "Alazun runs sometimes."
 
+*Sometimes* is the usual English for `har`, alongside *never* and *always*. It says only that there is *some* such occasion, as *something* does on a [join](joins.md). It does not mean *often*.
+
 > `zahelan vowurol her.`
 >
 > z-Ahelan | v-walk | h-anytime
 >
 > "Ahelan walks anytime." (whichever time you pick)
 
-**`hur`** names an occasion **outside** the times already in play. With occasion words before it, that is a time other than the listed ones. With none, it is a time other than the ones the conversation is already about, as in the reply below. Bare **`hur`** only says some such other occasion exists (*at some other time*). It does not say the claim holds at other times in general.
+*Anytime* (`her`) means any one particular time will do, not *at all times* (that is *always*, `hual`).
+
+`hur` names an occasion *outside* the times already under discussion. With occasion words before it, that is a time other than the listed ones. With none, it is a time other than the ones the conversation is already about, as in the reply below. Bare `hur` only says some such other occasion exists (*at some other time*). It does not say the claim holds at other times in general.
 
 > `yel zahelan vowurol herulal.`
 >
@@ -98,7 +100,7 @@ To say *sometimes*, *anytime*, or *some other time* without naming the occasion 
 
 ### Again {#again}
 
-To say the same thing happens once more, put the stock word **`herugom`** *again* in the adverb slot (`/h/`). It describes the verb itself, so no occasion words come before it.
+To say the same thing happens once more, put the fixed word **`herugom`** *again* in the clause as an adverb (`/h/`). It describes the verb itself, so no occasion words come before it.
 
 <!-- cheat-sheet: word-shape-clause -->
 | Ageben | English | Cue |
@@ -111,11 +113,11 @@ To say the same thing happens once more, put the stock word **`herugom`** *again
 >
 > "The dog runs again."
 
-**Compare with:** **`hur`** *some other time* points at an occasion outside the times already in play. **`herugom`** *again* says the same thing happens once more.
+**Compare with:** `hur` *some other time* points at an occasion outside the times already under discussion. `herugom` *again* says the same thing happens once more.
 
 ### On the following adjective (`/w/`)
 
-To say *never sleepy* or *sometimes sleepy*, limit only the adjective, not the whole sentence. Use the same restrictor vowels and endings with letter **`w`** instead of **`h`**, right before the adjective. Occasion words for that adjective also take **`w`** and sit immediately before the restrictor. An `/h/` restrictor, by contrast, limits the whole clause.
+To say *never sleepy* or *sometimes sleepy*, limit only the adjective, not the whole sentence. Use the same restrictor vowels and endings with letter `w` instead of `h`, right before the adjective. Occasion words for that adjective also take `w` and sit immediately before the restrictor. An `/h/` restrictor, by contrast, limits the whole clause.
 
 > `zazozon wal guzemel.`
 >
@@ -155,20 +157,20 @@ To say *never sleepy* or *sometimes sleepy*, limit only the adjective, not the w
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| `/h/` | limits the clause | *when the verb claim counts* | **h** starts *how* / *when* / *where* |
-| `/w/` | same map on the next adjective | *never sleepy* | **w** ≈ with (stuck to that host) |
+| `/h/` | limits the clause | *when the verb claim counts* | `h` starts *how* / *when* / *where* |
+| `/w/` | same map on the next adjective | *never sleepy* | `w` ≈ with (stuck to that host) |
 
-**Compare with:** ordinary `/w/` adds extra detail to an adjective ([clause](clause.md#adjective-detail-w)). A restrictor on `/w/` says **when that adjective holds**.
+**Compare with:** ordinary `/w/` adds extra detail to an adjective ([clause](clause.md#adjective-detail-w)). A restrictor on `/w/` says *when that adjective holds*.
 
 ### Listed occasions (open)
 
-To say *when it rains, among other times*, end the list with open **`ham`** instead of closed **`hal`**. Open **-m** leaves room for occasions you did not list, so the claim no longer means *only when*. Each listed occasion is one simple content word, and every occasion takes the same role letter as the restrictor (`/h/`, or `/w/` before an adjective). Bare **`ham`** is *never, as far as I know*. (cue: **a** ≈ add; **ua** ≈ undo then add.)
+To say *when it rains, among other times*, end the list with open **`ham`** instead of closed `hal`. Open `-m` leaves room for occasions you did not list, so the claim no longer means *only when*. Each listed occasion is one simple content word, and every occasion takes the same role letter as the restrictor (`/h/`, or `/w/` before an adjective). Bare `ham` is *never, as far as I know*. (cue: `a` ≈ add; `ua` ≈ undo then add.)
 
 <!-- cheat-sheet: restrictors-spans -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`hal` / `ham`** | listed times; empty list is *never* | *only when…* / *when…, among other occasions* · bare *never* / *never, as far as I know* | **a** ≈ add |
-| **`hual` / `huam`** | every time minus listed exceptions | *always except when…* · bare *always* / *usually* (*always, as far as I know*) | **u** ≈ undo then **a** ≈ add |
+| `hal` / `ham` | listed times; empty list is *never* | *only when…* / *when…, among other occasions* · bare *never* / *never, as far as I know* | `a` ≈ add |
+| `hual` / `huam` | every time minus listed exceptions | *always except when…* · bare *always* / *usually* (*always, as far as I know*) | **u** ≈ undo then `a` ≈ add |
 
 > `zazozon vezuvel herulal hanurul ham.`
 >
