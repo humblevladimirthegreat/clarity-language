@@ -16,18 +16,18 @@ group = [exponent?] [mantissa digits?]
 ```
 
 1. **PoS:** the role letter (part of speech), as on any other word.
-2. **Number marker:** consonant **r** plus a vowel **V**. **V** is a single vowel at this stage. The cluster of role letter plus `r` is a [number-only letter-cluster exception](phonotactics.md#phonotactics). The marker always comes straight after the role letter, so `grorel` is *the seventh* (rank **`ro`**, then digit 7 **`re`**).
-3. **Zero or more digit groups:** each group is an optional exponent (the *order of magnitude* piece) and optional mantissa digits (the ordinary digits). A group always has at least one of those two pieces. Digits sit next to each other with no **x** between them. A sign, when there is one, applies once to the whole word. With **no groups**, the word is digitless: it says what kind of number it is, but not its value.
-4. **Group separator:** each group after the first opens with **`the`** (the spoken comma).
+2. **Number marker:** the consonant `r` plus a vowel, written **V** in the pattern above. V is a single vowel at this stage. The cluster of role letter plus `r` is a [number-only letter-cluster exception](phonotactics.md#phonotactics). The marker always comes straight after the role letter, so `grorel` is *the seventh* (rank `ro`, then digit 7 `re`).
+3. **Zero or more digit groups:** each group is an optional exponent (the *order of magnitude* piece) and optional mantissa digits (the ordinary digits). A group always has at least one of those two pieces. Digits sit next to each other with no `x` between them. A sign, when there is one, applies once to the whole word. With no groups, the word is digitless: it says what kind of number it is, but not its value.
+4. **Group separator:** each group after the first opens with `the`.
 5. **Ending:** `-l` / `-m` / `-n` / `-r`.
 
 Speech always uses the fully spelled form. Writing also has a shorthand for numbers with two or more digits (`g+12`); zero, one digit, or none stays spelled (`gragel`, `gral`).
 
-**Related form:** naming a group of people or things uses [**-x**](/plurality) on an ordinary noun.
+**Related form:** naming a group of people or things uses [`-x`](/plurality) on an ordinary noun.
 
 ### Parts of speech on numbers {#parts-of-speech-on-numbers}
 
-Beginner put the number after a noun (*three cats*). You can also put the **number word on its own** in other slots: as the subject, as the object, or as the extra noun under a host.
+Beginner put the number after a noun (*three cats*). You can also use the number word on its own, in another role: as the subject, as the object, or as the extra noun under a host.
 
 Change only the first letter. The marker and digits stay the same, and on these four role letters the number still means a plain amount, rank, or code.
 
@@ -46,39 +46,41 @@ Change only the first letter. The marker and digits stay the same, and on these 
 
 ### Marker vowel (referential identity) {#marker-vowel-referential-identity}
 
-Beginner already used **`ra`** (*how many*) and **`ro`** (*which place from the start*). The marker vowel **V** completes that set: it says whether the word is a count, a rank, or a string of digits, and on a count it also gives the sign of the whole number. The table shows each marker's shorthand symbol in parentheses. Forward ordinal **`o`** matches [rank join **o**](rank-joins.md#rank-joins).
+English uses different words for a count (*three*), a rank (*third*), and a code you read digit by digit (*room 12*). In Ageben the vowel of the number marker, the marker vowel V, makes that choice. Beginner already used `ra` (*how many*) and `ro` (*which place from the start*); the full set has four, and on a count the vowel also gives the sign of the whole number. So the same digits read as an amount, a place in order, or a label, depending on one vowel.
+
+The table shows each marker's shorthand symbol in parentheses. Forward ordinal `o` matches [rank join `o`](rank-joins.md#rank-joins).
 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Cue |
 |---|---------|---------|-----|
-| **a** (`+`) | positive **scalar** (count or measure amount) | `g+3` *three cats*; `g+` *plural / more than one*; `z+3` *three* (subj); `b+12` *of size 12* | **`a`** ≈ add |
-| **u** (`-`) | negative **scalar** | `d-3` *−3* (obj); `z-` *some negative amount*; `g-2` signed measure on a noun | **`u`** ≈ undo |
-| **o** (`#`) | **ordinal** / rank **from the start** | `g#2` *the second page*; `g#` *some rank*; `z#2` *second* (rank as subject) | **`o`** ≈ rank |
-| **e** (`_`) | **digit-string** / label (phones, IDs, “read the digits”) | `d_5551234`; `d_` *some code*; `g_12` *room 12*-style; `b_…` under a host relation | **`e`** ≈ choice (one string) |
+| `a` (`+`) | positive **scalar** (count or measure amount) | `g+3` *three cats*; `g+` *plural / more than one*; `z+3` *three* (subj); `b+12` *of size 12* | `a` ≈ add |
+| `u` (`-`) | negative scalar | `d-3` *−3* (obj); `z-` *some negative amount*; `g-2` signed measure on a noun | `u` ≈ undo |
+| `o` (`#`) | **ordinal** / rank from the start | `g#2` *the second page*; `g#` *some rank*; `z#2` *second* (rank as subject) | `o` ≈ rank |
+| `e` (`_`) | **digit-string** / label (phones, IDs, “read the digits”) | `d_5551234`; `d_` *some code*; `g_12` *room 12*-style; `b_…` under a host relation | `e` ≈ choice (one string) |
 
-Each number word is one kind of number, set by its marker. In preferred writing, the marker is **`+`** / **`-`** / **`#`** / **`_`**.
+Each number word is one kind of number, set by its marker. In preferred writing, the marker is `+` / `-` / `#` / `_`.
 
 #### Sign {#sign}
 
 | Identity | How sign works |
 |----------|----------------|
-| **Scalar** (`a` / `u`, written `+` / `-`) | Sign **is** **V**. Multi-group scalars share one sign for the whole word (e.g. −1 000 265 004 is one **`ru`** word). |
-| **Forward ordinal** (`o`, written `#`) | Direction *from the start* |
-| **Digit-string** (`e`, written `_`) | Labels are unsigned. |
+| Scalar (`a` / `u`, written `+` / `-`) | The vowel V is the sign. Multi-group scalars share one sign for the whole word (e.g. −1 000 265 004 is one `ru` word). |
+| Forward ordinal (`o`, written `#`) | Direction *from the start* |
+| Digit-string (`e`, written `_`) | Labels are unsigned. |
 
 ### Number endings {#number-endings}
 
-Beginner already used exact **-l**. A number word takes the same four ending letters as any other word, but they have **number-specific** meanings: the other endings mark *about*, a named title, or a repeat of a number you already gave. Speech keeps the ending letter. Shorthand writing shows the ending as a mark right after the role letter (the same marks as on [spans](/spans)).
+Beginner already used exact `-l`. A number word takes the same four ending letters as any other word, but on a number they have their own meanings: the other endings mark *about*, a named title, or a repeat of a number you already gave. Speech keeps the ending letter. Shorthand writing shows the ending as a mark right after the role letter (the same marks as on [spans](/spans)).
 
 <!-- cheat-sheet: numbers -->
 | Written | Spoken | Use | Cue |
 |---------|--------|-----|-----|
-| *(none)*: `g+3`, `g+` | **-l** | exact, newly stated (default) | **-l** stands behind the amount |
-| **`~`** after PoS: `g~+3`, `g~+` | **-m** | approximate / non-literal (“about N”) | **-m** leaves the hold open |
-| **`@`** after PoS: `g@#2` | **-n** | named designation (titles, official labels, *the Second…*) | **-n** names the number |
-| **`=`** after PoS: `g=+3`, `g=#2`, `d=_12` | **-r** | resume of a previously stated number, code, or rank (at least one digit) | **-r** points back |
+| *(none)*: `g+3`, `g+` | `-l` | exact, newly stated (default) | `-l` stands behind the amount |
+| `~` after PoS: `g~+3`, `g~+` | `-m` | approximate / non-literal (“about N”) | `-m` leaves the hold open |
+| `@` after PoS: `g@#2` | `-n` | named designation (titles, official labels, *the Second…*) | `-n` names the number |
+| `=` after PoS: `g=+3`, `g=#2`, `d=_12` | `-r` | resume of a previously stated number, code, or rank (at least one digit) | `-r` points back |
 
-A resume needs **at least one digit**: `grager` = *that three again*; `grodor` = *that second one again*. Use the same marker as the number you repeat. Digitless **-r** (`grar`) is not a resume: like a standalone join **-r**, it is *some number* in a statement and *which number?* in a question. **`=`** is never combined with **`~`** or **`@`**.
+A resume needs at least one digit: `grager` = *that three again*; `grodor` = *that second one again*. Use the same marker as the number you repeat. Digitless `-r` (`grar`) is not a resume: like a standalone join `-r`, it is *some number* in a statement and *which number?* in a question. `=` is never combined with `~` or `@`.
 
 > `zalazun dragel vayebel. zazozon drager vayebel.`
 > z-Alazun | d-three | v-see . z-Azozon | d-←three | v-see
@@ -87,7 +89,7 @@ A resume needs **at least one digit**: `grager` = *that three again*; `grodor` =
 
 ### Writing (preferred shorthand) {#writing-preferred-shorthand}
 
-Beginner spelled every number out (`gragel`, `gradomol`). Writing also has a **shorthand** for the ending, marker, and body: `g+3` for `gragel`, `g+20` for `gradomol`. Both writings name the same word. Running text uses shorthand once a number has two or more digits; zero, one digit, or none stays spelled. Tables use shorthand for every row, so patterns line up.
+Beginner spelled every number out (`gragel`, `gradomol`). Writing also has a **shorthand** for the ending, marker, and body: `g+3` for `gragel`, `g+20` for `gradomol`. Both writings name the same word, so the choice changes only how the page looks, never what you say aloud. The style table at the end of this section says which writing to use.
 
 ```text
 [PoS] + [~|@|=]? + [marker] + [body?]
@@ -95,28 +97,28 @@ Beginner spelled every number out (`gragel`, `gradomol`). Writing also has a **s
 
 #### Ending marks (second slot, after PoS)
 
-These are the same marks, with the same meanings, as on [spans](/spans#writing): **`~`** soft, **`@`** proper. A resume uses **`=`**.
+These are the same marks, with the same meanings, as on [spans](/spans#writing): `~` soft, `@` proper. A resume uses `=`.
 
 <!-- cheat-sheet: numbers -->
 | Mark | Speech ending | Job | Examples |
 |------|---------------|-----|----------|
-| *(none)* | **-l** | exact (default) | `g+3`, `g+`, `g#2`, `d_12` |
-| **`~`** | **-m** | approximate / soft | `g~+3`, `g~+`, `g~+12`, `g~#2` |
-| **`@`** | **-n** | named | `g@#2`, `g@_12` |
-| **`=`** | **-r** | resume (digit) / blank | `g=+3`, `g=#2`, `g=+` |
+| *(none)* | `-l` | exact (default) | `g+3`, `g+`, `g#2`, `d_12` |
+| `~` | `-m` | approximate / soft | `g~+3`, `g~+`, `g~+12`, `g~#2` |
+| `@` | `-n` | named | `g@#2`, `g@_12` |
+| `=` | `-r` | resume (digit) / blank | `g=+3`, `g=#2`, `g=+` |
 
-A hedged named number (both **`@`** and **`~`**) is written with **`@`** only, as on spans. **`=`** is never combined with another mark. A spelled word shows its ending as the last letter (`gragel`, `gram`) instead of a mark.
+A hedged named number (both `@` and `~`) is written with `@` only, as on spans. `=` is never combined with another mark. A spelled word shows its ending as the last letter (`gragel`, `gram`) instead of a mark.
 
 #### Marker (not written as `r`+V)
 
 | Symbol | Speech | Meaning |
 |--------|--------|---------|
-| **`+`** | `ra` | Positive scalar |
-| **`-`** | `ru` | Negative scalar |
-| **`#`** | `ro` | Ordinal (from the start) |
-| **`_`** | `re` | Digit-string |
+| `+` | `ra` | Positive scalar |
+| `-` | `ru` | Negative scalar |
+| `#` | `ro` | Ordinal (from the start) |
+| `_` | `re` | Digit-string |
 
-Put the marker symbol **right after** the ending mark (or right after the role letter when there is no mark), **before the digits** (or last, when there are no digits): `g+3`, `g~+3`, `g=+`, `d_12`, `d=_`, `g@#2`. A **`_`** label never takes a sign ([Sign](#sign)).
+Put the marker symbol right after the ending mark (or right after the role letter when there is no mark), before the digits (or last, when there are no digits): `g+3`, `g~+3`, `g=+`, `d_12`, `d=_`, `g@#2`. A `_` label never takes a sign ([Sign](#sign)).
 
 A [citation](/word-endings#citation-forms) has no role letter, in shorthand as in speech, and takes any ending: `+12` (`rabadol`) *twelve*, `#2` (`rodol`) *second*, `=+3` (`rager`) *those three again*, `=+` (`rar`) *some number*. A written citation keeps a digit or the `=`, so a lone `+` stays a symbol.
 
@@ -125,9 +127,9 @@ A [citation](/word-endings#citation-forms) has no role letter, in shorthand as i
 | Speech | Preferred writing |
 |--------|-------------------|
 | *(no digit groups)* | *(empty after marker)* `g+`, `g~-`, `g=#`, `d_` |
-| Digit syllables (`ba`…`mo`) | Arabic **`0`–`9`** |
+| Digit syllables (`ba`…`mo`) | Arabic `0`–`9` |
 
-For long values, break into digit groups of at most three mantissa digits; all groups still sit in **one** word after a single marker. In speech, a number word stresses the last digit of each group, as a one-group number does ([counts](/numbers#counts)).
+For long values, break into digit groups of at most three mantissa digits; all groups still sit in one word after a single marker. In speech, a number word stresses the last digit of each group, as a one-group number does ([counts](/numbers#counts)).
 
 #### Starter examples {#starter-examples}
 
@@ -136,38 +138,38 @@ Common values in shorthand, as tables write them. Speech always uses the fully s
 <!-- cheat-sheet: numbers -->
 | Value | Writing | Reading |
 |-------|---------|--------|
-| plural / more than one | `g+` | *more than one* (digitless **`ra`**) |
+| plural / more than one | `g+` | *more than one* (digitless `ra`) |
 | three (modifier) | `g+3` | *three* (on a noun) |
 | three (subject) | `z+3` | *three* |
 | −3 (object) | `d-3` | *−3* |
 | second (modifier) | `g#2` | *the second* |
-| about 3 | `g~+3` | approximate (**-m**) |
-| how many? / some amount | `g=+` | digitless **-r** blank |
-| that three again | `g=+3` | **-r** resume (needs a digit) |
+| about 3 | `g~+3` | approximate (`-m`) |
+| how many? / some amount | `g=+` | digitless `-r` blank |
+| that three again | `g=+3` | `-r` resume (needs a digit) |
 | room 12 | `g_12` | digit-string label |
 
 #### Style (numeric vs spelled) {#writing-style}
 <a id="writing-style-numeric-vs-spelled"></a>
 
-Both writings name the **same word**. Choose the surface by one test: **how many digits does the word have?** Count every digit, including exponent digits.
+Both writings name the same word, so choose between them by one test: how many digits does the word have? Count every digit, including exponent digits.
 
 | Word | Prefer | Why |
 |------|--------|-----|
-| Free number with **two or more digits** | **shorthand** | `g+12`, `g#12`: a value to scan and compare |
-| Free number with **one digit or none** | **spelled** | `gragel` *three*, `grodol` *second*, `gramol` *zero*, `gral` *more than one*, `drar` *how many*; reads as a word, as English writes *three* |
-| Digit-string label or code (`_`) | **shorthand** | `d_5`, `d_12`: a code, not an amount (English *Room 5*) |
-| Numeric prefix | **spelled** (required) | shorthand before **`x`** and a root does not form a word |
-| Inventory tables | **shorthand** | patterns are easy to scan |
+| Free number with two or more digits | shorthand | `g+12`, `g#12`: a value to scan and compare |
+| Free number with one digit or none | spelled | `gragel` *three*, `grodol` *second*, `gramol` *zero*, `gral` *more than one*, `drar` *how many*; reads as a word, as English writes *three* |
+| Digit-string label or code (`_`) | shorthand | `d_5`, `d_12`: a code, not an amount (English *Room 5*) |
+| Numeric prefix | spelled (required) | shorthand before `x` and a root does not form a word |
+| Inventory tables | shorthand | patterns are easy to scan |
 
-**Side by side:** number words next to each other (a list of values) share one writing. If any of them needs shorthand, write them all in shorthand: `z+3 z+12 zal`, not `zragel z+12 zal`.
+Number words next to each other (a list of values) share one writing. If any of them needs shorthand, write them all in shorthand: `z+3 z+12 zal`, not `zragel z+12 zal`.
 
 Speech and writing drills that teach the shorthand itself still show one-digit shorthand.
 
-A free number in shorthand shows its ending as a mark after the role letter (`g~+3`); spelled out, it shows the ending as its last letter (`gragem`). A number built onto a content root is always spelled out (`NUM`) and never takes the marks **`~`** / **`@`** / **`=`**.
+A free number in shorthand shows its ending as a mark after the role letter (`g~+3`); spelled out, it shows the ending as its last letter (`gragem`). A number built onto a content root is always spelled out (`NUM`) and never takes the marks `~` / `@` / `=`.
 
 ### Letter codes {#letter-codes}
 
-English names many things with letters as well as digits: a vitamin (*B12*), a flat (*4B*), a jet (*F-16*). A **`_`** code may hold letters too. Write each letter in lowercase, in shorthand, just like the digits: `g_b12`.
+English names many things with letters as well as digits: a vitamin (*B12*), a flat (*4B*), a jet (*F-16*). A `_` code may hold letters too. Write each letter in lowercase, in shorthand, just like the digits: `g_b12`.
 
 > `zazozon debebul g_b12 vagedal.`
 >
@@ -177,7 +179,7 @@ English names many things with letters as well as digits: a vitamin (*B12*), a f
 >
 > "Azozon takes a B12 pill."
 
-Say each character as one syllable, after the marker **`re`**:
+Say each character as one syllable, after the marker `re`:
 
 - A digit is its digit syllable (`ba` … `mo`).
 - A consonant is its [letter name](letter-names.md#letter-names) (`bu` … `me`, `tho`, `wa`, `yu`). A letter name never sounds like a digit, because it takes the [opposite vowel](/phonology#opposite-vowels): `bu` is *b*, `ba` is *1*.
@@ -196,12 +198,12 @@ Say each character as one syllable, after the marker **`re`**:
 Rules for letters in a code:
 
 - No comma between letters and digits: the switch is audible (`z_b12`, not `z_b,12`).
-- **`x`** is never a character, so a code before **`x`** is always a numeric prefix or plural **-x** (`z_b0x` covers B0 to B9, as in [plural labels](/digit-strings#plural-labels)).
-- Only the **`_`** marker takes letters: a count, a rank, a sign, or a date has none.
+- `x` is never a character, so a code before `x` is always a numeric prefix or plural `-x` (`z_b0x` covers B0 to B9, as in [plural labels](/digit-strings#plural-labels)).
+- Only the `_` marker takes letters: a count, a rank, a sign, or a date has none.
 - In a code, `e` is always the vowel letter, never an exponent.
-- A letter at the end of a code is a character, not the ending. A code with a letter always shows its ending by a mark: `z_nl` is **-l**, `z@_nl` is **-n**, `z=_nl` is **-r**.
+- A letter at the end of a code is a character, not the ending. A code with a letter always shows its ending by a mark: `z_nl` is `-l`, `z@_nl` is `-n`, `z=_nl` is `-r`.
 
-**A foreign code** keeps its letters when each one has an Ageben letter. English *p*, *t*, *k*, *s*, and *f* are the voiceless sounds of `b`, `d`, `g`, `z`, and `v`, so they take those letters: *F-16* is `z_v16`, and *P2* is `z_b2`. A code with a letter that has no Ageben sound (*c*, *i*, *j*, *q*, *x*) stays a [span](/spans#loans): *FBI* is <code>z@&lt;FBI&gt;</code>.
+A foreign code keeps its letters when each one has an Ageben letter. English *p*, *t*, *k*, *s*, and *f* are the voiceless sounds of `b`, `d`, `g`, `z`, and `v`, so they take those letters: *F-16* is `z_v16`, and *P2* is `z_b2`. A code with a letter that has no Ageben sound (*c*, *i*, *j*, *q*, *x*) stays a [span](/spans#loans): *FBI* is <code>z@&lt;FBI&gt;</code>.
 
 ### Practice {#intermediate-practice}
 

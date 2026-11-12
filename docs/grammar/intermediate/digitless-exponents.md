@@ -4,29 +4,29 @@ band: intermediate
 
 # How many and how big {#how-many-and-how-big}
 
-English *how many*, *thousands*, *27 million*, and *infinitely many* name an amount without listing every unit, or they name how big a number is. A long number is then said group by group. Everyday *three cats* and *the second book* stay in [numbers](/numbers).
+English can leave an amount open (*some*, *a few*), ask for it (*how many?*, *how big?*), or say how big a number is (*27 million*, *thousands*). In Ageben a number word with its digits dropped leaves the amount, rank, or code open, and the same word with another ending asks for one. An exponent inside the number word gives its size: with digits after it, it writes a large or tiny amount in one word; alone, it names a band such as *thousands*; and in casual talk a conversation may set one for the numbers that follow. A long number is said group by group, with a spoken comma between groups. Everyday *three cats* and *the second book* stay in [numbers](/numbers).
 
 ### Digitless {#digitless}
 <a id="digitless-numbers"></a>
 <a id="bare-marker"></a>
 
-Beginner already used **`gral`** for *more than one*. Any marker may drop every digit group: **role letter + marker + ending** only. The marker still says what kind of number this is. With **-l** / **-m** / **-n**, the amount, rank, or label is **unspecified**. With **-r**, the word is a blank, like a standalone join **-r**: *some number* in a statement, *which number?* in a [fill-ask](/questions#fill-ask-r).
+Beginner already used `gral` for *more than one*. Any marker may drop every digit group, leaving only the role letter, the marker, and the ending: the word still says what kind of number it is, but gives no value. With `-l`, `-m`, or `-n`, the amount, rank, or label is left unspecified; with `-r`, the word is a blank, like a standalone join `-r`: *some number* in a statement, *which number?* in a [fill-ask](/questions#fill-ask-r). So you can mention an amount, a rank, or a code without stating it, or ask for one.
 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Cue |
 |--------|---------|---------|-----|
-| **`ra`** (`…+`) | unspecified **positive scalar**, specialized to **plural count / amount `>1`** | complements `…+0` (zero), `…+1` (one), `…+N` (exact N≥2) | **`a`** ≈ add |
-| **`ru`** (`…-`) | unspecified **negative scalar** | *some negative amount*; exact negatives keep digits (`…-N`) | **`u`** ≈ undo |
-| **`ro`** (`…#`) | unspecified **rank from the start** | *some nth* / *some place*; exact ranks keep digits (`…#N`) | **`o`** ≈ rank |
-| **`re`** (`…_`) | unspecified **digit-string / label** | *some code*; *a label*; exact labels keep digits (`…_…`) | **`e`** ≈ choice (one string) |
+| `ra` (`…+`) | unspecified positive scalar, specialized to plural count / amount `>1` | complements `…+0` (zero), `…+1` (one), `…+N` (exact N≥2) | `a` ≈ add |
+| `ru` (`…-`) | unspecified negative scalar | *some negative amount*; exact negatives keep digits (`…-N`) | `u` ≈ undo |
+| `ro` (`…#`) | unspecified rank from the start | *some nth* / *some place*; exact ranks keep digits (`…#N`) | `o` ≈ rank |
+| `re` (`…_`) | unspecified digit-string / label | *some code*; *a label*; exact labels keep digits (`…_…`) | `e` ≈ choice (one string) |
 
-**Compare with:** noun [**-x**](/plurality) names a **group of things**. Digitless **`ra`** names a **count or amount above one** without saying how many. Both may sit on the same noun (`zogozelx gral`).
+**Compare with:** noun [`-x`](/plurality) names a group of things. Digitless `ra` names a count or amount above one without saying how many. Both may sit on the same noun (`zogozelx gral`).
 
 On a [hosted](/clause#extra-nouns) offset right after a channel, digitless **`blral`** is *later* and **`blrul`** is *earlier*, with no amount claimed. A hosted number keeps its `bl` in writing too (`bl+` for `blral`), and its `l` is a [beat of its own](phonotactics.md#syllabic-l).
 
 <a id="a-few"></a>
 
-Open **`gram`** is a soft count: *a few* / *some*. It says there is more than one without claiming a number. Closed **`gral`** still means *more than one*.
+Open **`gram`** is a soft count: *a few* / *some*. It says there is more than one without claiming a number. Closed `gral` still means *more than one*.
 
 > `zogozelx gram vehohel.`
 > [z-cat-x | g-more-than-one.about] | v-sit
@@ -35,7 +35,7 @@ Open **`gram`** is a soft count: *a few* / *some*. It says there is more than on
 
 <a id="mass-some"></a>
 
-A mass noun such as *tea* is not counted, so *more than one* makes no sense for it. On a mass noun, **`gral`** is *some*: an amount that is not zero.
+A mass noun such as *tea* is not counted, so *more than one* makes no sense for it. On a mass noun, `gral` is *some*: an amount that is not zero.
 
 > `zedudal gral vehohel.`
 > [z-tea | g-more-than-one] | v-sit
@@ -44,7 +44,7 @@ A mass noun such as *tea* is not counted, so *more than one* makes no sense for 
 
 *Many*, *few*, *enough*, and *too much* compare the amount against a baseline, so they are comparatives, not number words.
 
-Words such as **`zar`** / **`zer`** stand for an unnamed **member of a set**. Digitless number **-r** stands for an unnamed **value** the same way: *some amount*, with no claim that it is more than one. Digitless number **-l** (and **-m** / **-n**) brings in an unnamed amount of that kind, and **`gral`** still says *more than one*.
+Words such as `zar` / `zer` stand for an unnamed member of a set. Digitless number `-r` stands for an unnamed value the same way: *some amount*, with no claim that it is more than one. Digitless number `-l` (and `-m` / `-n`) brings in an unnamed amount of that kind, and `gral` still says *more than one*.
 
 > `zazozon drar vayebel.`
 > z-Azozon | d-some-amount | v-see
@@ -62,7 +62,7 @@ To repeat a number already given, keep at least one digit (`drager`), as in [num
 
 ### How many? {#how-many}
 
-To ask for a **number**, write a [number word](/numbers) with no digits and the **-r** ending (written **`=`** after the role letter). That empty number is the blank, the same way `zar` is the blank for *who?* ([fill-ask](/questions#fill-ask-r)). The marker says which kind of number you want. (cue: **-r** names this member; the marker vowel says count, place, or code)
+To ask for a number, write a [number word](/numbers) with no digits and the `-r` ending (written `=` after the role letter). That empty number is the blank, the same way `zar` is the blank for *who?* ([fill-ask](/questions#fill-ask-r)). The marker says which kind of number you want. (cue: `-r` names this member; the marker vowel says count, place, or code)
 
 > `yel dogozelx grar zazozon vayebel.`
 > y-question | [d-cat-x | g-how-many] | z-Azozon | v-see
@@ -72,9 +72,9 @@ To ask for a **number**, write a [number word](/numbers) with no digits and the 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| `g=+` (`grar`) | fill a count or amount | *How many?* / *How much?* | **a** ≈ add |
-| `g=#` (`gror`) | fill a place in order | *Which place?* (*which floor, which chapter*) | **o** ≈ rank |
-| `g=_` (`grer`) | fill a code or label | *What number?* (*phone, room*) | **e** ≈ choice |
+| `g=+` (`grar`) | fill a count or amount | *How many?* / *How much?* | `a` ≈ add |
+| `g=#` (`gror`) | fill a place in order | *Which place?* (*which floor, which chapter*) | `o` ≈ rank |
+| `g=_` (`grer`) | fill a code or label | *What number?* (*phone, room*) | `e` ≈ choice |
 
 > `yel el bror zalazun vehohel.`
 > y-question | [at | b-which-place] | z-Alazun | v-sit
@@ -87,7 +87,7 @@ Answer with the number as a [citation](/word-endings#citation-forms) (`yal ragel
 
 ### How big? How fast? {#how-big}
 
-To ask **how much** of a quality, put the same blank on `/w/` immediately before the adjective or adverb: **`wrar`**.
+To ask how much of a quality, put the same blank on `/w/` immediately before the adjective or adverb: **`wrar`**.
 
 > `yel wrar gelazem zodozel.`
 > y-question | [w-how-many | g-big] | z-dog
@@ -99,13 +99,13 @@ To ask **how much** of a quality, put the same blank on `/w/` immediately before
 >
 > "How fast does the dog run?"
 
-Other role letters take the same blank: the marker with no digits and **-r** (on `/h/`, *how many times?*). Do not confuse that blank with **`har`** (*sometimes*), which is a [restrictor](/restrictors), not a number.
+Other role letters take the same blank: the marker with no digits and `-r` (on `/h/`, *how many times?*). Do not confuse that blank with `har` (*sometimes*), which is a [restrictor](/restrictors), not a number.
 
 ### Exponents {#exponents}
 
-To write a large or tiny amount in one word (*27 million*, *5.2e-4*, *25%*), put an **exponent** (the power of ten) in the digit group, before the ordinary digits (the **mantissa**).
+To write a large or tiny amount in one word (*27 million*, *5.2e-4*, *25%*), put an exponent in the digit group, before the ordinary digits (the mantissa).
 
-Speech uses **`wa`** / **`wu`** for that exponent, then **`ya`** if mantissa digits follow. Preferred writing is **`e`** for **`wa`** and **`e-`** for **`wu`**. You never need a separate *times ten to the …* phrase: the size is part of the number word.
+Speech uses `wa` / `wu` for that exponent, then `ya` if mantissa digits follow. Preferred writing is `e` for `wa` and `e-` for `wu`. You never need a separate *times ten to the …* phrase: the size is part of the number word.
 
 > `g+27e12`
 >
@@ -117,19 +117,19 @@ Speech uses **`wa`** / **`wu`** for that exponent, then **`ya`** if mantissa dig
 
 | Marker | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`wa`** | positive exponent, then its digits | *e12* | **`a`** ≈ add |
-| **`wu`** | negative exponent, then its digits | *e-6* | **`u`** ≈ undo |
+| **`wa`** | positive exponent, then its digits | *e12* | `a` ≈ add |
+| **`wu`** | negative exponent, then its digits | *e-6* | `u` ≈ undo |
 | **`ya`** | after exponent digits when a mantissa follows | (not a digit) | |
 | **`ye`** | decimal point | *5.2* | |
 | **`yo`** | percent closer | *25%* | |
 | **`yu`** | percentage-point closer | *+2 pp* | |
 
-- The exponent comes **before** that group’s mantissa digits.
-- If a mantissa follows, say **`ya`** after the last exponent digit, then the mantissa. Example: `27e12` → `wa` + `ba` + `do` + `ya` + `do` + `re`.
-- Exponent only, no mantissa: say `wa` / `wu` and the exponent digits, with no **`ya`**. Example: *e9* → `wa` + `na`.
-- Ordinary amounts usually omit exponent **`0`**: write `gragel`.
-- By default, write the **order of magnitude** (the power of ten) in **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`).
-- **Decimal point:** say **`ye`** after the digit(s) left of the point; digits after **`ye`** are the fractional part.
+- The exponent comes before that group’s mantissa digits.
+- If a mantissa follows, say `ya` after the last exponent digit, then the mantissa. Example: `27e12` → `wa` + `ba` + `do` + `ya` + `do` + `re`.
+- Exponent only, no mantissa: say `wa` / `wu` and the exponent digits, with no `ya`. Example: *e9* → `wa` + `na`.
+- Ordinary amounts usually omit exponent `0`: write `gragel`.
+- By default, write the **order of magnitude** (the power of ten) in **engineering notation**: exponents are usually multiples of 3 (e.g. `27e6`).
+- For a decimal point, say `ye` after the digit(s) left of the point; digits after `ye` are the fractional part.
 
 > `g+5.2`
 >
@@ -142,7 +142,7 @@ Speech uses **`wa`** / **`wu`** for that exponent, then **`ya`** if mantissa dig
 ### Bare OoM {#bare-oom}
 <a id="bare-oom-bands"></a>
 
-English *hundreds* or *thousands* names a range of sizes without a count. To say that, write a **bare order of magnitude** (OoM): exponent digits with **no mantissa**. The word then covers every amount from 10ᴷ up to, but not including, 10ᴷ⁺¹, so `g+e3` is 1000–9999, not every larger amount.
+English *hundreds* or *thousands* names a range of sizes without a count. To say that, write a **bare order of magnitude** (OoM): exponent digits with no mantissa. For exponent K, the word then covers every amount from 10ᴷ up to, but not including, 10ᴷ⁺¹, so `g+e3` is 1000–9999, not every larger amount.
 
 <!-- cheat-sheet: numbers -->
 | Form | Band | Gloss |
@@ -152,7 +152,7 @@ English *hundreds* or *thousands* names a range of sizes without a count. To say
 | **`g+e2`** | `[10², 10³)` = **100–999** | *hundreds* |
 | **`g+e3`** | `[10³, 10⁴)` = **1000–9999** | *thousands* (`e4` / `e5` are tens/hundreds of thousands) |
 | **`g+e6`** | `[10⁶, 10⁷)` | *millions* band only |
-| **`g-e3`** | `(−10⁴, −10³]` polarity with **`ru`** | negative thousands band |
+| **`g-e3`** | `(−10⁴, −10³]` polarity with `ru` | negative thousands band |
 
 These work the same way on `/z/`, `/d/`, and `/b/`. Soft **`grawagem`** ≈ *about in the thousands band*. Exact count inside a band uses a mantissa (`g+4e3` = 4000), not bare OoM.
 
@@ -161,22 +161,22 @@ These work the same way on `/z/`, `/d/`, and `/b/`. Soft **`grawagem`** ≈ *abo
 
 In careful writing, an omitted exponent means ones-place (`gragel` = 3), as [exponents](#exponents) say. Prefer writing the exponent when the magnitude matters.
 
-In casual measure-heavy talk, a stretch of conversation may set an **ambient** order of magnitude (often an engineering `e3` / `e6` / …). Numbers written without an exponent are then heard at that magnitude until you cancel it. A [topic change](/topic#topic-resets) starts a new stretch, so bare numbers go back to ones until an ambient decade is set again.
+In casual measure-heavy talk, a stretch of conversation may set an **ambient** order of magnitude (often an engineering `e3` / `e6` / …). Numbers written without an exponent are then heard at that magnitude until you cancel it. A [topic change](/topic#topic-resets) starts a new stretch, so bare numbers go back to ones until an ambient magnitude is set again.
 
-**Writing `e0`** says *ones* outright and cancels the ambient magnitude:
+Writing `e0` says *ones* outright and cancels the ambient magnitude:
 
 | In a stretch where ambient OoM = 3 | Reading |
 |------------------------------------|---------|
-| **`g+3`** (casual ambient) | *three at ambient* → often 3×10³ |
-| **`g+3e3`** | *three at 10³* (exp explicit) |
-| **`g+3e0`** | *three at OoM 0* → 3×10⁰ = **3** (break out of ambient) |
-| **`g+e0`** | *ones-band amount* (bare OoM), not ambient thousands |
+| `g+3` (casual ambient) | *three at ambient* → often 3×10³ |
+| `g+3e3` | *three at 10³* (exponent written) |
+| `g+3e0` | *three at OoM 0* → 3×10⁰ = 3 (break out of ambient) |
+| `g+e0` | *ones-band amount* (bare OoM), not ambient thousands |
 
-Write **`Ne0`** (any nonzero mantissa **N**) to insist on ones. Formal prose that never sets an ambient magnitude rarely needs **`e0`**: leave it out when ones are already clear.
+Write `Ne0` (any nonzero mantissa N) to insist on ones. Formal prose that never sets an ambient magnitude rarely needs `e0`: leave it out when ones are already clear.
 
 ### Group separator {#group-separator}
 
-When a number has more than one digit group, you say each comma. The spoken comma is **`the`** on every marker. Written text keeps the comma.
+When a number has more than one digit group, you say each comma aloud as `the`, whatever the marker. Written text keeps the comma.
 
 > `g+5e3,860`
 >
@@ -186,7 +186,7 @@ When a number has more than one digit group, you say each comma. The spoken comm
 >
 > "5860."
 
-Syllable by syllable: `g` + `ra` + wa ge ya za + **the** + lu vo mo + `l`.
+Syllable by syllable: `g` + `ra` + wa ge ya za + `the` + lu vo mo + `l`.
 
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English |
@@ -196,7 +196,7 @@ Syllable by syllable: `g` + `ra` + wa ge ya za + **the** + lu vo mo + `l`.
 | `g#2,3` | rank | *2nd within the 3rd* |
 | `d_555,123,4567` | code | *555-123-4567* |
 
-The **e** of **`the`** is the vowel of order: the next group comes in order. Say a separator exactly where a comma is written, and nowhere else: `g+860` has none; `g+5e3,860` has one. The sign is said once, at the start of the word.
+The `e` of `the` is the vowel of order: the next group comes in order. Say a separator exactly where a comma is written, and nowhere else: `g+860` has none; `g+5e3,860` has one. The sign is said once, at the start of the word.
 
 <a id="nested-rank"></a>
 

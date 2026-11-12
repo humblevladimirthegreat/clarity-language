@@ -86,10 +86,6 @@
     "bold-density": 1,
     "long-paragraph": 1
   },
-  "intermediate/digitless-exponents.md": {
-    "bold-density": 4,
-    "long-paragraph": 1
-  },
   "intermediate/evidentiality.md": {
     "long-paragraph": 2
   },
@@ -108,12 +104,6 @@
   },
   "intermediate/measures-and-percent.md": {
     "bold-density": 2
-  },
-  "intermediate/number-markers.md": {
-    "bold-density": 2
-  },
-  "intermediate/number-roles.md": {
-    "bold-density": 1
   },
   "intermediate/ranges.md": {
     "bold-density": 1
