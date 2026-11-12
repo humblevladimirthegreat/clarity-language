@@ -69,6 +69,8 @@ The failure is psychological, not structural. A gap is a thinking trap the reade
 
 - **Give a default, and an escape.** Say which form to use when the reader cannot tell which fits ("when you are not sure which ending fits, use `thomam`").
 - **Long menus say they are menus.** An urge or channel inventory is followed by *you don't need to memorize it*.
+- **A further inventory section follows these rules.** A lesson section that is neither the gap nor the forms, such as `## The sakes` or `## The marks`, is held to the same rules as `## The forms`. When it lists a long menu, it says it is a menu (*Nine sakes is a menu; you don't need to memorize it.*).
+- **No bold run-in labels.** When the forms section adds several things, introduce each in an ordinary sentence (*First, … Second, … Third, …*), not under a bold label at the start of a paragraph. Bold stays for a term where it is defined.
 - **Say when to leave it out.** Every lesson marks at least one place the drop-in is unnecessary, and none of them implies that plain English is a mistake: *none of the three is the "right" one*; *leave the suffix off when the reach doesn't matter*.
 - **Rule out the near miss.** Where the obvious English reading is wrong, deny it in one short sentence (*the urge is not a plan*).
 - **Endings.** Which scale each lesson teaches, and its cue, is in [Claritish track](grammar-docs.md#claritish-track); this page adds nothing to it. A [hyphenated suffix](#hyphenated-host) takes no ending.
