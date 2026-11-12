@@ -1,6 +1,6 @@
 # Style pass
 
-**Status:** partially implemented. Decided 2026-11-11: a rising warning count fails the build on every page (the ratchet); recipe pages, cheat sheets, and level reviews get which-page rows; headings that need a retitle are logged and retitled together in H1; the user reviews each phase before the next starts; forms take bold only where introduced. **Phase 1 done 2026-11-11** (T1, T2, T3, C1). **Phase 2 done 2026-11-12** (B2 to B5). **Phase 3 done 2026-11-12** (B6 to B9; Beginner is finished). `purpose.md` and `introduction.md` were already rewritten to [orientation-style.md](../meta/orientation-style.md), so the pass skips them. Decided 2026-11-12: a page with two or more teaching sections needs a page lead (rule in [doc-style.md](../meta/doc-style.md#which-page)); 15 Intermediate and 9 Advanced pages lack one and get it in their units. Next: the user reviews the Phase 3 diffs (commits `54ecb9aa` to `17a2a758`), then Phase 4.
+**Status:** partially implemented. Decided 2026-11-11: a rising warning count fails the build on every page (the ratchet); recipe pages, cheat sheets, and level reviews get which-page rows; headings that need a retitle are logged and retitled together in H1; the user reviews each phase before the next starts; forms take bold only where introduced. **Phase 1 done 2026-11-11** (T1, T2, T3, C1). **Phase 2 done 2026-11-12** (B2 to B5). **Phase 3 done 2026-11-12** (B6 to B9; Beginner is finished). `purpose.md` and `introduction.md` were already rewritten to [orientation-style.md](../meta/orientation-style.md), so the pass skips them. Decided 2026-11-12: a page with two or more teaching sections needs a page lead (rule in [doc-style.md](../meta/doc-style.md#which-page)); 15 Intermediate and 9 Advanced pages lack one and get it in their units. **Phase 4 done 2026-11-12** (B10, O2, O3, O4; the recipe track and Claritish are finished, and the English-helper recall check passed). Next: the user reviews the Phase 4 diffs (commits `97f7ba13` to `1886ec59`), then Phase 5.
 
 **Related:** [doc-style.md](../meta/doc-style.md), [claritish-style.md](../meta/claritish-style.md), [orientation-style.md](../meta/orientation-style.md), [grammar-docs.md](../meta/grammar-docs.md), [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts), [prose-style.ts](../../src/lint/prose-style.ts), [prose-style-baseline.json](../../src/lint/prose-style-baseline.json), [sections.ts](../../src/lint/sections.ts), [style-editor.md](../../.claude/agents/style-editor.md)
 
@@ -10,7 +10,7 @@
 
 ## Problem
 
-The pages under `docs/grammar/` have not been brought up to [doc-style.md](../meta/doc-style.md) as a whole. After Phase 3 the ratchet baseline holds 149 warnings: `bold-density` 117, `long-paragraph` 27, `jargon` 2, `voice` 2, `beginner-lead` 1 (kept on `clause.md`). Every Beginner unit has had its pass, and the *Judgment* rows of the [checklist](../meta/doc-style.md#checklist) have been checked on Beginner only.
+The pages under `docs/grammar/` have not been brought up to [doc-style.md](../meta/doc-style.md) as a whole. After Phase 4 the ratchet baseline holds 132 warnings: `bold-density` 109, `long-paragraph` 20, `voice` 2, `beginner-lead` 1 (kept on `clause.md`). Beginner, the recipe track, and Claritish have had their pass; Intermediate, Advanced, cheat sheets, level reviews, and `terminology.md` have not.
 
 The tooling that keeps the style applied has landed: the warning ratchet, the `voice` rule (a ratcheted warning until X2), `npm run changed-sections`, `npm run wording-only`, the `style-editor` agent, and the style gate in both procedures.
 
@@ -38,26 +38,19 @@ Each prose unit is one fresh `style-editor` subagent on one sidebar unit from `r
 - A page with two or more teaching sections (not counting Practice and See also) and no lead between the H1 and the first H3 gets one that previews each section in at most one sentence, from what the sections already say ([which page](../meta/doc-style.md#which-page), *the lead of a whole page*). A page with one teaching section keeps its one lead where it is.
 - The Ageben lint rejects a letter group in one code span (`b d g`); write one span per letter (`b`, `d`, `g`).
 - A script that splits a page on `### Practice` must match the whole heading line; `#### Practiced …` headings exist.
+- The prose lint ends a sentence at a `?` inside italics, so a list of *when?*, *where?* can trip `long-paragraph`.
+- A code span in a new page lead fails `wording-only` as a new span. That is expected: list those spans in the report, and the orchestrator accepts them after reading the lead.
+- Run the full `npm run verify -- --allow-generate` as the last step, not `--fast`.
 
 The sidebar unit is the right size because a label is glossed on first use *in reading order*, so the worker needs to know what the pages before it already taught. Intermediate has 17 units (64 pages), Advanced 5 (20).
 
 ## Implementation plan
 
-Phases 4 to 9 remain, one orchestrator session each, with no phase over six units. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate) before the session ends, keeping the [glossed labels](#glossed-labels), [headings to retitle](#headings-to-retitle), and [sections missing a fact](#sections-missing-a-fact) lists current.
+Phases 5 to 9 remain, one orchestrator session each, with no phase over six units. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate) before the session ends, keeping the [glossed labels](#glossed-labels), [headings to retitle](#headings-to-retitle), and [sections missing a fact](#sections-missing-a-fact) lists current.
 
 Prose units run as `style-editor` on `model: opus`, `effort: high`, in sequence. Each one may edit only its own pages and `src/lint/prose-style-baseline.json`. A page with a control (a drill, a player, the journal editor) also gets the [interface instructions](../meta/doc-style.md#interface-instructions) check.
 
 Each phase ends with the phase gate, the last unit's commit, consolidation, the proposal's commit, then a stop. The orchestrator tells the user what the phase settled, which open decisions wait on them, and the prompt for the next phase, *Carry out phase N of `style-pass.md`*.
-
-### Phase 4: on-ramps
-
-| Unit | Pages | Added to the prompt |
-|------|-------|--------------------|
-| B10 | Page leads for the four Beginner pages that lack one: `digit-strings.md`, `social-ties.md`, `can-and-cant.md`, `fill-ask-jobs.md` | The page-lead caution only; the pages have had their pass |
-| O2 | `english.md` and the five `say-*.md` recipes | The recipe row of the which-page table |
-| O3, O4 | The Claritish track in two halves | Read [claritish-style.md](../meta/claritish-style.md) |
-
-**Cut:** Intermediate needs no added guide.
 
 ### Phases 5 to 7: Intermediate
 
@@ -111,24 +104,39 @@ Labels that finished units have glossed, in reading order, each with the page th
 | reach vowel | `roles.md`, page lead |
 | B ("call that person B") | `social-ties.md`, genitive |
 | ability vowel | `can-and-cant.md`, Ability |
+| intention adverb ("a word about the whole claim") | `can-and-cant.md`, page lead |
 
 ### Headings to retitle
 
 Headings that prose units reported under rule 7 of the digest, each with its page, its id, and why it fails. H1 works from this list.
 
-*None open.* The four Phase 2 headings were retitled on 2026-11-12, each pinning its old id.
+| Page | Id | Why it fails |
+|------|----|--------------|
+| `say-amounts.md` | `unspecified-value-in-the-range--r` | *Unspecified value in the range (**-r**)* bolds an ending in a heading |
+| `say-reasons.md` | `factivity` | *Factivity* is a specialist term |
+| `say-reasons.md` | `epistemic-because` | *Epistemic* is a specialist term |
+| `say-reasons.md` | `stacks` | *evidentiality* is a specialist term |
+| `say-people-places.md` | *Arrow roots as talk-moves* | *arrow roots* is house shorthand the heading does not explain |
+| `say-questions.md` | `single-item-standalone-inventory` | names house terms, not an English job |
 
 ### Sections missing a fact
 
 Sections that prose units reported under rule 6: the section needs a consequence or a *when* that no page states. Each needs a user decision or an owner-page edit; the pass does not fill them.
 
-*None open.* The two Phase 3 reports were settled on 2026-11-12: `digit-strings.md` now says to put a code on `/ɡ/` when you keep the noun it labels, and `fill-ask-jobs.md#when` points `war` back to the `/w/` restrictor.
+[claritish-style.md](../meta/claritish-style.md) asks each lesson's forms section to mark where the drop-in is unnecessary. These four do not, and no page states a place or a *when*:
+
+- `claritish/thanks-and-sorry.md#forms`
+- `claritish/allowed-required-agreed.md#forms`
+- `claritish/decisions-and-tries.md#forms` (O4 added the placement sentence from `index.md`, but not where to leave it out)
+- `claritish/tone-marks.md#marks`
 
 ### Fixes outside the pass
 
 Faults a prose unit found but could not fix within its scope. Each needs an edit the pass does not make.
 
-*None open.* The Phase 2 and 3 rows were fixed on 2026-11-12. The cheat-sheet lint now skips a table's **Cue** column, so cue letters go in backticks like any letter ([grammar-docs.md](../meta/grammar-docs.md), opting an owning table in).
+- `claritish/how-you-know.md#gap` quotes no English words in italics, as a gap should. Quoting them needs matching cue rows in [claritish-triggers.csv](../../data/claritish-triggers.csv).
+- `say-tense.md`, time-words table: the cell *(for `permanent`, add …)* has the English word in a code span; it should be italic. Code spans are frozen in the pass.
+- `say-amounts.md`, numbered alternatives: *closed overlay* is unglossed and its section links no owner.
 
 ### Gates
 
@@ -141,10 +149,16 @@ Faults a prose unit found but could not fix within its scope. Each needs an edit
 
 One commit per unit after its gate is green, by the orchestrator only, with the message `style-pass <unit id>: <what> [skip-cd]` and the co-author line. X1 edits nothing and makes no commit. Each phase ends with a commit of the consolidated proposal, `style-pass phase <N>: consolidate [skip-cd]`; in Phase 9 that commit deletes the proposal instead, once the meta notes own the result.
 
-| Phase | 4 | 5 | 6 | 7 | 8 | 9 | Left |
-|-------|---|---|---|---|---|---|------|
-| Commits | 5 | 7 | 7 | 6 | 6 | 4 | 35 |
+| Phase | 5 | 6 | 7 | 8 | 9 | Left |
+|-------|---|---|---|---|---|------|
+| Commits | 7 | 7 | 6 | 6 | 4 | 30 |
 
 ## Open decisions
 
-None.
+### Claritish sections the guide does not cover
+
+[claritish-style.md](../meta/claritish-style.md) does not say how to handle (a) a lesson section that is neither the gap nor the forms, such as `## The sakes`, or (b) bold run-in labels inside a forms section. O3 and O4 handled (a) under the menu rule (*Nine sakes is a menu; you don't need to memorize it.*) and turned (b) on `feelings.md` into plain sentences.
+
+Options: write both choices into claritish-style.md as rules; or leave the guide silent and judge each case.
+
+**Recommendation:** write both into the guide. The two units already handled them the same way, and a rule keeps later edits to the track consistent.
