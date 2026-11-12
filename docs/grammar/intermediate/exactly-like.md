@@ -6,7 +6,7 @@ band: intermediate
 
 ### Exactly like (`hewel` / `gewel`) {#exactly-like}
 
-Beginner used **`hewem`** / **`gewem`** for *like*: the event or thing resembles the model in `/b/`. When the match is exact (*walks exactly like a duck*, *a house just like Azozon's*), end the same relation word in **-l** instead: **`hewel`** on the event, **`gewel`** on a noun. The model sits in a `bl-` word right after it, as before, and the event or thing is still real. (cue: **-l** ≈ locked: the reflection matches the model line for line)
+You already say *like* with `hewem` / `gewem`: the event or thing resembles the model in `/b/`. When English says the match is exact (*walks exactly like a duck*, *a house just like Azozon's*), end the same relation word in `-l` instead: **`hewel`** on the event, **`gewel`** on a noun. The model sits in a `bl-` word right after it, as before, and the event or thing is still real. So the listener hears an exact match, not only a resemblance. (cue: `-l` ≈ locked: the reflection matches the model line for line)
 
 > `zazozon hewel bladozal vowurol.`
 >
@@ -20,7 +20,7 @@ Beginner used **`hewem`** / **`gewem`** for *like*: the event or thing resembles
 >
 > "A house just like Azozon's."
 
-**Related form:** a degree word before **`hewem`** grades the match instead (`wamezem hewem bladozal` *a bit like a duck*).
+**Related form:** a degree word before `hewem` grades the match instead (`wamezem hewem bladozal` *a bit like a duck*).
 
 ### Practice {#intermediate-practice}
 

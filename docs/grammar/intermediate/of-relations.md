@@ -4,12 +4,10 @@ band: intermediate
 
 # Part of, made of, from {#part-of-made-of-from}
 
-English *part of*, *a cup of*, *made of*, and *from* each say how one noun sits toward another. Ageben names which with a relation word, the same way it writes *like*.
-
 ### Of relations (*part of*, *cup of*, *made of*, *from*) {#of-relations}
 <a id="noun-relations"></a>
 
-English *of* also names how one noun sits toward another (*a hand of Alazun*, *a teapot of tea*, *a house of wood*, *Alazun from the city*). Use the same hosted pair as *like*: the relation word on `/ɡ/` (or `/h/` on the event), and the extra noun in a `bl-` word right after it. The `/b/` word is what comes after *of* in English (the whole, the filling, the material, or the origin), not a recipient.
+English *of* and *from* say how one noun sits toward another, without saying which tie: a part of a whole (*a hand of Alazun*), what fills a vessel (*a teapot of tea*), a material (*a house of wood*), or an origin (*Alazun from the city*). Ageben names the tie with the same hosted pair as *like*: the relation word on `/ɡ/` (or `/h/` on the event), and the extra noun in a `bl-` word right after it. The `/b/` word is what comes after *of* in English (the whole, the filling, the material, or the origin), not a recipient. So the listener hears which of the four ties you mean.
 
 > `zazozon dahebal gobom blalazun vayebel.`
 >
@@ -47,7 +45,7 @@ For *a piece of* a mass, put the substance first and `gozowum` right after it. W
 
 Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in* hook (`al`), not `gadam`.
 
-After a join, `gobom` and `gaham` bound the set the join covers, as SHARED words ([every and none, by set](universals-domains.md#kind-domains)). `gobom` gives membership, and `gaham` gives origin.
+After a join, `gobom` and `gaham` can limit the set the join covers. They do it as SHARED words, written right after the join word so they describe every item ([every and none, by set](universals-domains.md#kind-domains)). `gobom` limits the set by membership, and `gaham` by origin.
 
 > `zual gobom bluvayal vezuvel.`
 >
@@ -55,7 +53,7 @@ After a join, `gobom` and `gaham` bound the set the join covers, as SHARED words
 >
 > "Everyone in the family sleeps."
 
-`zual gaham bluhuham` is *everyone from the town*. A hook after the join would be a clause extra and place the act instead.
+`zual gaham bluhuham` is *everyone from the town*. A hook after the join would instead be an extra noun of the clause: it would place the act and leave the set unchanged.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Same root as | Cue |
