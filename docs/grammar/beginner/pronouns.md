@@ -4,13 +4,13 @@ band: beginner
 
 # Pronouns
 
-A pronoun stands in for a noun. English *he*, *she*, *it*, and *they* point back to someone or something already named, while *I*, *you*, and *one* stand in for a person without naming anyone. You already write the endings **-l** / **-m** / **-n** on a [citation](word-endings.md) and on content words. Ageben points back with the fourth ending, **-r**: write the role letter for the slot the word fills in this sentence (subject, object, and so on), then the earlier word’s whole stem, then **-r**. For someone in a recent sentence, a shorter **role pointer** names them by the part they played instead.
+A pronoun stands in for a noun. English *he*, *she*, *it*, and *they* point back to someone or something already named, while *I*, *you*, and *one* stand in for a person without naming anyone. You already write the endings `-l` / `-m` / `-n` on a [citation](word-endings.md) and on content words. Ageben points back with the fourth ending, `-r`: write the role letter for the word’s role in this sentence, then the earlier word’s whole stem, then `-r`. For someone in a recent sentence, a shorter role pointer names them by the part they played instead.
 
 
 ### Resume with **-r** {#resume-r}
 <a id="resume-r-beginner"></a>
 
-After you have already named a person or thing, the next sentence can point back instead of naming them fresh. The word you point back to is the **antecedent**. The new word takes the role letter for the slot you need **now** (subject, object, and so on), then the antecedent’s **whole stem** (everything between its role letter and its ending), then **-r**. The listener takes the **most recent** word with that same stem. (cue: **-r** ≈ resume (pick up the earlier word))
+After you have already named a person or thing, the next sentence can point back instead of naming them fresh. The word you point back to is the **antecedent**. The new word takes the role letter for the role it has now, then the antecedent’s **whole stem** (everything between its role letter and its ending), then `-r`. The listener takes the most recent word with that same stem. (cue: `-r` ≈ resume (pick up the earlier word))
 
 > `zazozon vowurol. zazozor vehohel.`
 >
@@ -18,7 +18,7 @@ After you have already named a person or thing, the next sentence can point back
 >
 > "Azozon walks. Azozon sits."
 
-**Compare with:** English often uses *the* for a kind already in the conversation (*A dog walks. **The** dog sits.*). Ageben uses **-r** for that job, not a separate article.
+**Compare with:** English often uses *the* for a kind already in the conversation (*A dog walks. **The** dog sits.*). Ageben uses `-r` for that job, not a separate article.
 
 > `zodozel vowurol. zodozer vehohel.`
 >
@@ -26,7 +26,7 @@ After you have already named a person or thing, the next sentence can point back
 >
 > "A dog walks. The dog sits."
 
-**Compare with:** for English *the dog that walked*, say that the dog walks as its own sentence, then resume the dog with **-r** in whatever slot you need. Do not attach a *who / that / which* clause to the noun ([which person or thing](dependents.md#which-noun)).
+**Compare with:** for English *the dog that walked*, say that the dog walks as its own sentence, then resume the dog with `-r` in whatever role you need. Do not attach a *who / that / which* clause to the noun ([which person or thing](dependents.md#which-noun)).
 
 A word built from two roots resumes with its whole stem too. `doyahehar` is *the bedroom*; `doyaher` is *the bed*, and never points at a bedroom.
 
@@ -36,7 +36,7 @@ A word built from two roots resumes with its whole stem too. `doyahehar` is *the
 >
 > "Azozon sees a bedroom. Alazun sees the bedroom."
 
-When nothing earlier matches, **-r** on a word from the lexicon means the one you both already know (*the dog*, meaning the household’s dog). So **-r** can appear even in the first sentence of a conversation.
+When nothing earlier matches, `-r` on a word from the lexicon means the one you both already know (*the dog*, meaning the household’s dog). So `-r` can appear even in the first sentence of a conversation.
 
 > `zodozer vowurol.`
 >
@@ -44,23 +44,31 @@ When nothing earlier matches, **-r** on a word from the lexicon means the one yo
 >
 > "The dog walks." (the dog you both know)
 
-**Compare with:** a name the lexicon does not list (a new person, a pet’s name) has nothing to fall back on. Its **-r** needs the name earlier in the conversation.
+**Compare with:** a name the lexicon does not list (a new person, a pet’s name) has nothing to fall back on. Its `-r` needs the name earlier in the conversation.
 
 ### Role pointers {#role-pointers}
 
-A resume spells the whole stem again. For someone in a recent sentence, a **role pointer** is shorter: it names them by the part they played in an earlier event. Write the role letter for the slot you need now, then **`wu`**, then a **part consonant**: the role letter they had in that earlier event. Then a **pointer vowel** for which event, and **-r**.
+English *they* can point back to someone from a recent sentence without repeating their name. A **role pointer** does this in Ageben by naming the part the person played in an earlier event: the doer, the one it happened to, or the one told. It is shorter than a resume, which spells the whole stem again. Build it from five pieces, in this order:
 
-The pointer vowel says how far the pointing reaches (past the last person, this event, the last person, nobody). Tags are an assignment queue, not how far the pointing goes.
+| Piece | What it says |
+|-------|--------------|
+| Role letter | The person’s role in this sentence |
+| `wu` | The `u` after `w` is this episode: the latest act is enough |
+| **Part consonant** | The role letter they had in the earlier event |
+| **Pointer vowel** | Which earlier event: how far the pointing reaches (past the last person, this event, the last person, nobody) |
+| `-r` | The ending, as on a resume |
+
+The part consonant is one of three role letters:
 
 | Part consonant | Part in the earlier event | Where it sat |
 |----------------|---------------------------|--------------|
-| **`z`** | the doer | `/z/` |
-| **`d`** | the one it happens to | `/d/` |
-| **`b`** | the extra party (*the one told*) | `/b/` |
+| `z` | the doer | `/z/` |
+| `d` | the one it happens to | `/d/` |
+| `b` | the extra party (*the one told*) | `/b/` |
 
-Pointer vowel **`e`** picks the latest sentence that had someone in that part. `zwuzer` is *the latest doer*, as subject; `dwuder` is *the latest one something happened to*, as object. (cue: **e** ≈ the latest reach)
+Pointer vowel `e` picks the latest sentence that had someone in that part. `zwuzer` is *the latest doer*, as subject; `dwuder` is *the latest one something happened to*, as object. (cue: `e` ≈ the latest reach)
 
-The **`u`** after **`w`** is this episode: the latest act is enough. After the pointer vowel and the ending, the word ends.
+After the pointer vowel and the ending, the word ends.
 
 > `zazozon vowurol. zwuzer vehohel.`
 >
@@ -68,7 +76,7 @@ The **`u`** after **`w`** is this episode: the latest act is enough. After the p
 >
 > "Azozon walks. They sit."
 
-The role letter is the slot **now**, so a pointer can move someone to a new role. Here the one seen becomes the one who runs:
+The role letter gives the person’s role in this sentence, so a pointer can move someone to a new role. Here the one seen becomes the one who runs:
 
 > `zazozon dalazun vayebel. zwuder veruvol.`
 >
@@ -92,11 +100,11 @@ A sentence with nobody in that part does not count. *It rains* has no doer, so `
 
 A pointer looks back as far as it needs to: across turns and paragraphs, and through what other speakers said. Only a topic change (an `/x/` word that says what the talk is about from here on) stops it. Only sentences count, not nouns that name an event: a storm named as a noun gives a pointer no doer to find.
 
-A pointer takes associative **-x** like a name. If no earlier sentence has someone in that part, the pointer points at nothing, and the whole thing is not a sentence.
+A pointer takes associative `-x` (the ending in *Azozon and associates*) like a name. If no earlier sentence has someone in that part, the pointer points at nothing, and the whole thing is not a sentence.
 
 ### Themself (`o`) {#themself}
 
-English *herself* / *himself* / *themself* (a reflexive) point back to someone in the same sentence. Pointer vowel **`o`** does that: it picks **this** sentence’s own event, so a pointer in the object slot can name this sentence’s doer. (cue: **o** ≈ this same sentence)
+English *herself* / *himself* / *themself* (a reflexive) point back to someone in the same sentence. Pointer vowel `o` does that: it picks *this* sentence’s own event, so a pointer as the object can name this sentence’s doer. (cue: `o` ≈ this same sentence)
 
 > `zazozon dwuzor vayebel.`
 >
@@ -104,11 +112,11 @@ English *herself* / *himself* / *themself* (a reflexive) point back to someone i
 >
 > "Azozon sees themself."
 
-A pointer never names its own slot: `zwuzor` as the subject would be the subject pointing at itself, so it is not a sentence.
+A pointer never points at its own role: `zwuzor` as the subject would be the subject pointing at itself, so it is not a sentence.
 
 ### The other one (`a`) {#the-other-one}
 
-English *the other one* skips the person you just mentioned. Pointer vowel **`a`** does the same: it skips whoever had that part last and picks the nearest earlier sentence with someone **else** in that part. (cue: **a** ≈ a different reach)
+English *the other one* skips the person you just mentioned. Pointer vowel `a` does the same: it skips whoever had that part last and picks the nearest earlier sentence with someone *else* in that part. (cue: `a` ≈ a different reach)
 
 > `zazozon vowurol. zalazun veruvol. zalazun vehohel. zwuzar vezuvel.`
 >
@@ -118,11 +126,11 @@ English *the other one* skips the person you just mentioned. Pointer vowel **`a`
 
 Here `zwuzer` would be Alazun, the latest doer.
 
-**`a`** goes with the three part consonants above: `zwuzar`, `zwudar`, `zwubar`.
+`a` goes with the three part consonants above: `zwuzar`, `zwudar`, `zwubar`.
 
 ### Whoever it was (`u`) {#whoever-it-was}
 
-Sometimes an earlier sentence has the event but never says who took part. *The cookie got eaten* has no doer, and naming one would be a guess. Pointer vowel **`u`** picks the latest sentence that left that part **unsaid** and points at whoever filled it, without saying who. English: *whoever did it*. (cue: **u** ≈ unsaid)
+Sometimes an earlier sentence has the event but never says who took part. *The cookie got eaten* has no doer, and naming one would be a guess. Pointer vowel `u` picks the latest sentence that left that part unsaid and points at whoever filled it, without saying who. English: *whoever did it*. (cue: `u` ≈ unsaid)
 
 > `dugedel vayebel. zwuzur veruvol.`
 >
@@ -130,13 +138,13 @@ Sometimes an earlier sentence has the event but never says who took part. *The c
 >
 > "The cookie is seen. Whoever saw it runs."
 
-This is the **`e`** rule turned around: **`e`** skips a sentence with nobody in that part, and **`u`** looks for exactly that sentence. It does not ask whether the verb could have that part: *it rains* also leaves its doer unsaid, so `zwuzur` right after it is *whatever made it rain*.
+This is the `e` rule turned around: `e` skips a sentence with nobody in that part, and `u` looks for exactly that sentence. It does not ask whether the verb could have that part: *it rains* also leaves its doer unsaid, so `zwuzur` right after it is *whatever made it rain*.
 
-Once used, `zwuzur` fills the subject like any noun, so a later `zwuzer` reaches it (*they*, still unnamed). **`u`** goes with the same three part consonants: `zwudur` is *whatever it happened to*, when no sentence said what.
+Once used, `zwuzur` fills the subject like any noun, so a later `zwuzer` reaches it (*they*, still unnamed). `u` goes with the same three part consonants: `zwudur` is *whatever it happened to*, when no sentence said what.
 
 ### A new one (-l) {#a-new-one}
 
-A pointer with **-r** is the same one again. To say a **new** one of the same kind, English uses *one* (*Azozon sees a cookie. Alazun sees **one** too.*), and the second cookie is a different cookie. Write the same pointer with **-l**, the ending of a first mention: a new thing, of the kind the pointer reaches.
+A pointer with `-r` is the same one again. To say a *new* one of the same kind, English uses *one* (*Azozon sees a cookie. Alazun sees **one** too.*), and the second cookie is a different cookie. Write the same pointer with `-l`, the ending of a first mention: a new thing, of the kind the pointer reaches.
 
 > `zazozon dugedel vayebel. zalazun dwudel vayebel.`
 >
@@ -144,7 +152,7 @@ A pointer with **-r** is the same one again. To say a **new** one of the same ki
 >
 > "Azozon sees a cookie. Alazun sees one too." (a different cookie)
 
-**-l** copies only the noun, never the words that described it, so you can change the description. After a red dog, the pointer is just *a dog*, and a `/ɡ/` word after it gives the new property, as in the next example. To keep the old property, say it again on a `/ɡ/` word after the pointer.
+`-l` copies only the noun, never the words that described it, so you can change the description. After a red dog, the pointer is just *a dog*, and a `/ɡ/` word after it gives the new property, as in the next example. To keep the old property, say it again on a `/ɡ/` word after the pointer.
 
 > `zazozon dodozel gerulol vayebel. zalazun dwudel gubulel vayebel.`
 >
@@ -160,13 +168,13 @@ In a yes/no question, a pointer works like any other noun and keeps the same mea
 >
 > "Azozon sees a red dog. Does Alazun see a black one?"
 
-**-l** takes pointer vowels **`e`**, **`a`** and **`o`**, and every part consonant: `zwuzel` is another one like the latest doer. It has no reading with **`u`**, because an unsaid part has no kind to copy, and none after a special pronoun such as *I* or *you*. After a name, **-l** is a new thing that name applies to, and after a joined list it is a new group of the same make-up.
+`-l` takes pointer vowels `e`, `a` and `o`, and every part consonant: `zwuzel` is another one like the latest doer. It has no reading with `u`, because an unsaid part has no kind to copy, and none after a special pronoun such as *I* or *you*. After a name, `-l` is a new thing that name applies to, and after a joined list it is a new group of the same make-up.
 
-**Compare with:** **-r** is the same one (`dwuder`); **-l** is another (`dwudel`). Writing the noun out (`dugedel`) says the same as `dwudel`, and the pointer only saves repeating it.
+**Compare with:** `-r` is the same one (`dwuder`); `-l` is another (`dwudel`). Writing the noun out (`dugedel`) says the same as `dwudel`, and the pointer only saves repeating it.
 
 ### Share (-m) {#share}
 
-English often blurs *what they did* with *who they are*. A pointer with **-m** (a **share**) names the participant's **part** in the event, not the participant. That lets you talk about an act, to praise or criticize it, without making it a claim about the person.
+English often blurs *what they did* with *who they are*. A pointer with `-m` (a **share**) names the participant's *part* in the event, not the participant. That lets you talk about an act, to praise or criticize it, without making it a claim about the person.
 
 > `zazozon dalazun vabuvul. zahelan dwuzer vayebel.`
 >
@@ -180,15 +188,13 @@ English often blurs *what they did* with *who they are*. A pointer with **-m** (
 >
 > "Azozon punches Alazun. Ahelan sees what they did." (Azozon's punch, not Azozon)
 
-Each part consonant names a different part: `zwuzem` is the doing, `zwudem` what it was for the one it happened to, and `zwubem` what reached the one told. Pointer vowels **`e`**, **`a`** and **`u`** work as before (`zwuzam` *what the other one did*; `zwuzum` *what was done, by whoever*). **`o`** and **-x** have no reading with **-m**: a share cannot be part of the very event being described (**`o`**), and it is not a group of people (**-x**).
+Each part consonant names a different part: `zwuzem` is the doing, `zwudem` what it was for the one it happened to, and `zwubem` what reached the one told. Pointer vowels `e`, `a` and `u` work as before (`zwuzam` *what the other one did*; `zwuzum` *what was done, by whoever*). `o` and `-x` have no reading with `-m`: a share cannot be part of the very event being described (`o`), and it is not a group of people (`-x`).
 
 **Compare with:** a resumed event noun names the whole event with everyone in it (*that punch*); `zwuzem` names one person's part of it. `zwuzer` is the person.
 
 ### Special pronouns {#special-pronouns}
 
-Most of the time you name people with a proper name (`zazozon`, `zalazun`) and resume with **-r**. A few roots from a small fixed set (**closed roots**) instead name **roles in this conversation**: who is speaking, who is being spoken to, or you-and-I together. They take the ordinary role letter for the slot they fill in the clause (subject, object, and so on), and in this use they end in **-n**, like a name.
-
-Use **`uwe`** (*speaker*) and **`awa`** (*listener*) for *I* and *you*. **`awa`** is always the person actually listening, never *anyone at all*: English generic *you* has its own pronoun.
+English *I*, *you*, and *we* name people by their part in this conversation: who is speaking, who is being spoken to, or you-and-I together. Ageben names them with a few roots from a small fixed set (**closed roots**) instead of a proper name such as `zazozon` or `zalazun`. They take the ordinary role letter for their role in the clause, and in this use they end in `-n`, like a name. Use **`uwe`** (*speaker*) and **`awa`** (*listener*) for *I* and *you*.
 
 > `zuwen vowurol.`
 >
@@ -201,6 +207,8 @@ Use **`uwe`** (*speaker*) and **`awa`** (*listener*) for *I* and *you*. **`awa`*
 > z-speaker | d-listener | v-see
 >
 > "I see you."
+
+`awa` is always the person actually listening, never *anyone at all*: English generic *you* has its own pronoun.
 
 Use your own name where the name is the point: a [greeting](word-endings.md#greeting), introducing yourself, or a mention that has to mean you outside this conversation, such as a note someone reads later. `uwen` changes with each turn; a name does not.
 
@@ -220,11 +228,11 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 | **`ayan`** | speaker and addressees together (`zayan` in subject slot) | *we* (you and I) | `ayal` *handshake* | 🤝: sharing the floor together |
 | **`eyen`** | any person, as a rule (`zeyen` in subject slot) | *one*, generic *you*, *people* | `eyel` *person* | 🧑: a person in general |
 
-**Compare with:** *I and my people* / *you all* / *Azozon and associates* use **-x**. Inclusive *you and I* is **`aya`**.
+**Compare with:** *I and my people* / *you all* / *Azozon and associates* use `-x`. Inclusive *you and I* is `aya`.
 
 ### Generic pronoun {#generic-pronoun}
 
-English *one* and generic *you* (*one never knows*, *you feel awful when that happens*) say something about people in general, not about the person listening. Ageben gives that its own pronoun: **`eye`** *person* with **-n**, in `/z/`, `/d/`, or `/b/`. It means any person, as a rule, with exceptions allowed. It claims nothing about a particular individual and nothing about the listener (that is **`awa`**), so a speaker has to choose between reporting their own experience and making a general claim. (cue: 🧑 is the emoji for a person in general)
+English *one* and generic *you* (*one never knows*, *you feel awful when that happens*) say something about people in general, not about the person listening. Ageben gives that its own pronoun: **`eye`** *person* with `-n`, in `/z/`, `/d/`, or `/b/`. It means any person, as a rule, with exceptions allowed. It claims nothing about a particular individual and nothing about the listener (that is `awa`), so a speaker has to choose between reporting their own experience and making a general claim. (cue: 🧑 is the emoji for a person in general)
 
 > `zeyen vezuvel.`
 >
@@ -232,7 +240,7 @@ English *one* and generic *you* (*one never knows*, *you feel awful when that ha
 >
 > "One sleeps." / "You sleep." (people in general)
 
-The generic pronoun takes no number and no **-x**, because it already means people at large. **`eyel`** *a person* and **`eyem`** *humanity* keep their own senses.
+The generic pronoun takes no number and no `-x`, because it already means people at large. **`eyel`** *a person* and **`eyem`** *humanity* keep their own senses.
 
 ### Practice {#beginner-practice}
 
@@ -406,6 +414,6 @@ z-ONE | v-drink
 Generic *you* is **`eyen`**; **`awan`** is always the person actually listening.
 :::
 ## See also
-- [Person-role **-x**](plurality.md#clusivity): **-x**; address set vs associative
+- [Person-role `-x`](plurality.md#clusivity): `-x`; address set vs associative
 - Topic: [Topic](/topic)
 

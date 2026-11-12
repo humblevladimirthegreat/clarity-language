@@ -6,7 +6,7 @@ band: beginner
 
 ### Adjectives before the noun (`gl-`) {#left-bound-adjectives}
 
-English puts the adjective before the noun (*an angry dog*). Ageben can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending), and that adjective describes the **next** noun instead of the one before it. This lets you choose the order for meter or emphasis, and it frees the spot after the noun for another adjective. (cue: **l** ≈ lean: the word leans toward the noun ahead.)
+English puts the adjective before the noun (*an angry dog*). Ageben can too: add `l` as the second letter (`/ɡ/` + `l` + root + ending), and that adjective describes the *next* noun instead of the one before it. This lets you choose the order for meter or emphasis, and it frees the spot after the noun for another adjective. (cue: `l` ≈ lean: the word leans toward the noun ahead.)
 
 > `glonumul zodozel.`
 >
@@ -14,7 +14,7 @@ English puts the adjective before the noun (*an angry dog*). Ageben can too: add
 >
 > "an angry dog"
 
-A `bl-` word the adjective hosts still follows it, and a `/w/` word still sits immediately before it (`welazem glonumul zodozel` = *a very angry dog*). On `/ɡ/`, this extra **`l`** only moves the adjective; the word means the same either way. On `/b/`, [`bl-`](clause.md#extra-nouns) is a different job, not a different order. A noun must come after it: with no noun to lean on, write a plain `/ɡ/` adjective after the noun instead (`zodozel gonumul`). It leans on a [call](speech-moves.md#vocative) the same way.
+A `bl-` word the adjective hosts still follows it, and a `/w/` word still sits immediately before it (`welazem glonumul zodozel` = *a very angry dog*). On `/ɡ/`, this extra `l` only moves the adjective; the word means the same either way. On `/b/`, [`bl-`](clause.md#extra-nouns) is a different job, not a different order. A noun must come after it: with no noun to lean on, write a plain `/ɡ/` adjective after the noun instead (`zodozel gonumul`). It leans on a [call](speech-moves.md#vocative) the same way.
 
 > `glonumul yodozel.`
 >

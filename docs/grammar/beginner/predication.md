@@ -4,13 +4,13 @@ band: beginner
 
 # Predication {#predication}
 
-English *is* does two jobs that look alike. You can say someone **is a kind or role** (*Azozon is a dog*): they belong in that category. You can also say two names pick out **the same one** (*Alazun is Azozon*): one person under two labels, not a category. Ageben uses a different word pattern for each.
+English *is* does two jobs that look alike. You can say someone is a kind or role (*Azozon is a dog*): they belong in that category. You can also say two names pick out the same one (*Alazun is Azozon*): one person under two labels, not a category. Ageben uses a different word pattern for each.
 
 
 ### Property (*is ADJ*)
 <a id="classification-property"></a>
 
-You already write a property on `/ɡ/` after the noun (*a blue dog*). When you say someone *is* that quality (*Azozon is challenging*), you use the same pair with no verb. You do not add a separate *is*; the name plus the `/ɡ/` word already make the sentence. The `/ɡ/` word is the piece English would put after *is*.
+To say someone *is* a quality (*Azozon is challenging*), use the pair you already write for *a blue dog*: the noun, then the quality on `/ɡ/`, with no verb. You do not add a separate *is*; the name plus the `/ɡ/` word already make the sentence. The `/ɡ/` word is the piece English would put after *is*.
 
 > `zazozon gamahum.`
 >
@@ -22,7 +22,7 @@ A `/ɡ/` word after the verb does not describe the subject the way *tired* does 
 
 The same string is also the noun plus its adjective: `zazozon gamahum` is both the full sentence *Azozon is challenging* and the phrase *challenging Azozon*.
 
-To say someone belongs to a country or tradition (*Japanese*), use the **-m** ending, not the name ending **-n**. **-n** names the country itself (*Japan*), and **-m** says you belong to it.
+To say someone belongs to a country or tradition (*Japanese*), use the `-m` ending, not the name ending `-n`. `-n` names the country itself (*Japan*), and `-m` says you belong to it.
 
 > `zazozon gazabanam.`
 >
@@ -32,7 +32,7 @@ To say someone belongs to a country or tradition (*Japanese*), use the **-m** en
 
 ### Kind / role {#classification}
 
-To say someone **is a kind of thing** or **has a role** (*Azozon is a dog*), put the kind word on `/ɡ/` right after the noun. It is the same pattern as a quality, again with no word for *is*: the `/ɡ/` word is what English puts after *is a*.
+To say someone is a kind of thing or has a role (*Azozon is a dog*), put the kind word on `/ɡ/` right after the noun. It is the same pattern as a quality, again with no word for *is*: the `/ɡ/` word is what English puts after *is a*.
 
 This use is called **classification**: it puts someone in a category rather than describing a quality.
 
@@ -42,11 +42,11 @@ This use is called **classification**: it puts someone in a category rather than
 >
 > "Azozon is a dog."
 
-**Compare with:** *A dog walks* uses a noun plus a verb (`zodozel vowurol`). When the subject **is** that kind, keep the kind on `/ɡ/`.
+**Compare with:** *A dog walks* uses a noun plus a verb (`zodozel vowurol`). When the subject *is* that kind, keep the kind on `/ɡ/`.
 
 ### In the middle of an event {#in-progress}
 
-Some roots name an event (*walk*, *fight*, *sing*). On `/ɡ/`, such a root says the noun is **in the middle of** that event, as the one doing it: English *walking*. The ending picks the sense as always, so **-l** is the everyday event and **-m** its abstract sense (`guvuvum`, *struggling*).
+Some roots name an event (*walk*, *fight*, *sing*). On `/ɡ/`, such a root says the noun is in the middle of that event, as the one doing it: English *walking*. The ending picks the sense as always, so `-l` is the everyday event and `-m` its abstract sense (`guvuvum`, *struggling*).
 
 > `zazozon gowurol.`
 >
@@ -68,7 +68,7 @@ Only a sense that is an event reads this way. A thing root stays a kind (`godoze
 
 ### Existence (a lone noun) {#existence}
 
-To say that something **exists** or is here (English *there is …*), write the noun alone, with no verb and no `/ɡ/` word after it.
+To say that something exists or is here (English *there is …*), write the noun alone, with no verb and no `/ɡ/` word after it. So a sentence can be a single word: `zodozel.` is the whole of *There is a dog*.
 
 > `zodozel.`
 >
@@ -76,7 +76,7 @@ To say that something **exists** or is here (English *there is …*), write the 
 >
 > "There is a dog."
 
-The same holds with a `/ɡ/` word after the noun, when the noun is new: a common noun, or one of a name on **-ln**, but not a name on **-n** or a resumed noun on **-r**. The pair introduces the thing: *there is a G Z*.
+The same holds with a `/ɡ/` word after the noun, when the noun is new: a common noun, or one of a name on `-ln`, but not a name on `-n` or a resumed noun on `-r`. The pair introduces the thing: *there is a G Z*.
 
 > `zodozel gelazem.`
 >
@@ -90,7 +90,7 @@ With a name or a resumed noun, the listener already knows the thing, so the `/ɡ
 
 ### Something happened (a lone object) {#unsaid-event}
 
-An object (`/d/`) with no verb says that **something happened** to it, without saying what. The event is left unsaid.
+An object (`/d/`) with no verb says that something happened to it, without saying what. The event is left unsaid.
 
 > `dodozel.`
 >
@@ -112,9 +112,9 @@ Use it when the listener already knows the event, or when what happened does not
 
 ### Identity {#identity}
 
-When two names pick out **the same person or thing** (*Alazun is Azozon*), you are not putting Alazun in a kind. You are saying the two labels match: they are one individual.
+When two names pick out the same person or thing (*Alazun is Azozon*), you are not putting Alazun in a kind. You are saying the two labels match: they are one individual. This is called **identity**.
 
-Write the special adjective `gorel` after the first name, then an extra noun (`/b/`) for the other label. Keep `gorel` and that `/b/` word **next to each other**. This pair states **identity**. The adjective’s English name is **IDENTITY**; its root is **`ore`**. (cue: 🪙 *coin*: two faces, one substance)
+Write the special adjective `gorel` (English name **IDENTITY**, root `ore`) after the first name, then an extra noun (`/b/`) for the other label, and keep `gorel` and that `/b/` word next to each other. (cue: 🪙 *coin*: two faces, one substance)
 
 > `zalazun gorel blazozon.`
 >
@@ -142,7 +142,7 @@ The second label is a `/b/` whatever it is: a common noun or a pronoun works as 
 >
 > "The guard is me."
 
-With **no** `/b/` after it, `gorel` points back to the one already mentioned: *the same one again*. Put `gorel` after the thing.
+With *no* `/b/` after it, `gorel` points back to the one already mentioned: *the same one again*. Put `gorel` after the thing.
 
 > `zalazun danal gorel varuyol.`
 >
@@ -150,7 +150,7 @@ With **no** `/b/` after it, `gorel` points back to the one already mentioned: *t
 >
 > "Alazun is writing the same book." (the book already mentioned)
 
-**Compare with:** *Azozon is a dog* uses [kind / role](#classification) (`godozel`). Use **IDENTITY** when two labels name one person.
+**Compare with:** *Azozon is a dog* uses [kind / role](#classification) (`godozel`). Use IDENTITY when two labels name one person.
 
 ### Practice {#beginner-practice}
 

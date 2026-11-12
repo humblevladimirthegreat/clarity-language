@@ -4,13 +4,11 @@ band: beginner
 
 # Knowing {#knowing}
 
-English *I think* can be a guess, a memory, or a conclusion from clues, and the listener has to work out which. Ageben keeps the ordinary verb and adds a `/th/` stance word that says which: **MAY** for what could be so, or a word for how you know it. So a guess never passes for a report, and a report says what it rests on.
+English *I think* can be a guess, a memory, or a conclusion from clues, and the listener has to work out which. Ageben keeps the ordinary verb and adds a `/th/` stance word that says which: MAY for what could be so, or a word for how you know it. So a guess never passes for a report, and a report says what it rests on.
 
 ### MAY {#may}
 
-To say something **could be** so without claiming that it is (*Alazun may be leaving*), keep the ordinary verb and add **`oma`** plus an ending as a [stance](clause.md#stance-th) word on `/th/`. This word is called **MAY**. The sentence now says the leaving is possible, not that it happens, and it gives no reason for thinking so. This matters most for painful guesses (a rejection, a blow, a loss), which English *I think* easily turns into facts. Start with **`thomam`**, *may* / *could be*. (cue: 💭 *thought*: a balloon over the scene)
-
-Without the `/th/` word, you are reporting that it happens. As a plain noun the root keeps its own meaning (`zomal` *a thought*); the verb *think* is a different root, `vevemel`.
+To say something *could be* so without claiming that it is (*Alazun may be leaving*), keep the ordinary verb and add **`oma`** plus an ending as a [stance](clause.md#stance-th) word on `/th/`. This word is called **MAY**. The sentence now says the leaving is possible, not that it happens, and it gives no reason for thinking so. This matters most for painful guesses (a rejection, a blow, a loss), which English *I think* easily turns into facts. (cue: 💭 *thought*: a balloon over the scene)
 
 > `zalazun thomam dahelan vudurul.`
 >
@@ -18,19 +16,21 @@ Without the `/th/` word, you are reporting that it happens. As a plain noun the 
 >
 > "Alazun may be leaving Ahelan."
 
+Start with **`thomam`**, *may* / *could be*, as here. Without the `/th/` word, you are reporting that it happens. As a plain noun the root keeps its own meaning (`zomal` *a thought*); the verb *think* is a different root, `vevemel`.
+
 **Compare with:** `zazozon vevemel.` is *Azozon thinks*, a report of the act of thinking; it does not mark anything as a guess.
 
 ### Follow-up endings (MAY) {#follow-up-endings-may}
 
-The ending on MAY says whether you mean to follow up on the *could be*: with **-l** you will find out, with **-m** you leave that unsaid (the default), and with **-r** it is a passing thought you are not pursuing. No ending is better than the others: finding out, leaving it at *may*, and letting it go are all fine choices. With **-n**, the word is an ordinary name.
+The ending on MAY says whether you mean to follow up on the *could be*: with `-l` you will find out, with `-m` you leave that unsaid (the default), and with `-r` it is a passing thought you are not pursuing. No ending is better than the others: finding out, leaving it at *may*, and letting it go are all fine choices. With `-n`, the word is an ordinary name.
 
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thomal`** | could be, and you are **committed to settling it** | *may, I'll find out* / *let's find out* | `omal` *thought* | 💭: balloon plus a magnifying glass (**-l** the full run) |
-| **`thomam`** | could be (default; follow-up unstated) | *may* / *could be* | `omal` *thought* | 💭: balloon (**-m** middle) |
-| **`thomar`** | could be, as a **passing thought** you are not pursuing right now | *may, who knows* | `omal` *thought* | 💭: balloon drifting off (**-r** ≈ right now) |
+| **`thomal`** | could be, and you are committed to settling it | *may, I'll find out* / *let's find out* | `omal` *thought* | 💭: balloon plus a magnifying glass (`-l` the full run) |
+| **`thomam`** | could be (default; follow-up unstated) | *may* / *could be* | `omal` *thought* | 💭: balloon (`-m` middle) |
+| **`thomar`** | could be, as a passing thought you are not pursuing right now | *may, who knows* | `omal` *thought* | 💭: balloon drifting off (`-r` ≈ right now) |
 
-When you are not sure, use **`thomam`**: it says *could be* and nothing about following up.
+When you are not sure, use `thomam`: it says *could be* and nothing about following up.
 
 > `zalazun thomal dazozon vabuvul.`
 >
@@ -38,7 +38,7 @@ When you are not sure, use **`thomam`**: it says *could be* and nothing about fo
 >
 > "Alazun may be punching Azozon, I'll find out."
 
-In a yes/no question, **`thomal`** says you are asking in order to find out:
+In a yes/no question, `thomal` says you are asking in order to find out:
 
 > `yel zazozon vabuvul thomal dalazun.`
 >
@@ -59,9 +59,7 @@ In a yes/no question, **`thomal`** says you are asking in order to find out:
 <a id="live"></a>
 <a id="reconstructive-catch"></a>
 
-English often says how you know a claim: *I see it*, *I saw it*. Ageben keeps the ordinary verb and adds a `/th/` stance word for that, called an **evidential**. It names the **channel** the claim reached you through. Two channels are enough for ordinary talk about a scene in your senses: sensing it now, or remembering that you sensed it.
-
-Verbs have **no past or future form**. These two channels place the event in time because of how you know it: **LIVE** means the scene is in your senses as you speak, and **MEMORY** means you remember sensing it (so it is past).
+English often says how you know a claim: *I see it*, *I saw it*. Ageben keeps the ordinary verb and adds a `/th/` stance word for that, called an **evidential**. It names the **channel** the claim reached you through: **LIVE** if the scene is in your senses as you speak, **MEMORY** if you remember sensing it. Verbs have no past or future form, so these two channels also place the event in time: a MEMORY claim is past.
 
 > `zazozon thugem vowurol.`
 >
@@ -75,6 +73,8 @@ Verbs have **no past or future form**. These two channels place the event in tim
 >
 > "Azozon walked, I remember it."
 
+These two channels are enough for ordinary talk about a scene in your senses.
+
 **For *could be* with nothing behind it, use:** [MAY](#may).
 
 | Ageben | Use | English | Same root as | Cue |
@@ -82,11 +82,11 @@ Verbs have **no past or future form**. These two channels place the event in tim
 | **`thugem`** | LIVE: firsthand, sensed now | *live* / *from the scene* | `ugel` *attest* | 👁️‍🗨️: sensing-and-saying while it is in view, in earshot, or on your skin |
 | **`thevum`** | MEMORY: firsthand, remembered | *from memory* | `evul` *fishing* | 🎣: you pull something back |
 
-LIVE covers every sense, not only sight: a sound in earshot, cold on your skin, an ache in your knee. MEMORY is the same senses, remembered. A screen or a recording extends your senses, so footage is LIVE while you watch it and MEMORY once you have watched it, with the device as the source.
+LIVE covers every sense, not only sight: a sound in earshot, cold on your skin, an ache in your knee. MEMORY is the same senses, remembered.
 
-**Compare with:** the act of seeing is the ordinary verb **`vayebel`**; LIVE only says how you know the claim.
+**Compare with:** the act of seeing is the ordinary verb `vayebel`; LIVE only says how you know the claim.
 
-English *I see it* and *I saw it* both report watching; they differ in when you watched. LIVE **`thugem`** is for a scene still in your senses as you speak. MEMORY **`thevum`** is for a scene you remember sensing, so the event is past. Do not put both on one claim. English *I witnessed it* is MEMORY, not LIVE. (cue: memory is fishing: you pull the episode back, and it may not be what you hoped, the way a line can come up with a boot)
+English *I see it* and *I saw it* both report watching; they differ in when you watched, which is the split between LIVE and MEMORY. Do not put both on one claim. English *I witnessed it* is MEMORY, not LIVE. (cue: memory is fishing: you pull the episode back, and it may not be what you hoped, the way a line can come up with a boot)
 
 > `zazozon thevum dunobal vayebel.`
 >
@@ -94,7 +94,7 @@ English *I see it* and *I saw it* both report watching; they differ in when you 
 >
 > "Azozon saw a boot, as I remember it."
 
-Footage works the same way. While you watch, it is LIVE with the device as the source; once you have watched it, it is MEMORY, because your memory of the footage can slip just as a memory of the scene can.
+A screen or a recording extends your senses. While you watch footage, it is LIVE with the device as the source; once you have watched it, it is MEMORY, because your memory of the footage can slip just as a memory of the scene can.
 
 > `zazozon thevum blugewel vowurol.`
 >

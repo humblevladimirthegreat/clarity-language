@@ -4,12 +4,12 @@ band: beginner
 
 # Plurality
 
-English *they* and *the Smiths* often mean a named person plus people around them, not a counted list. Ageben marks that **associative group** with optional **-x** after the [word ending](word-endings.md).
+English *they* and *the Smiths* often mean a named person plus people around them, not a counted list. Ageben marks that **associative group** with optional `-x` after the [word ending](word-endings.md).
 
 
 ### Associative group (`-x`) {#associative}
 
-Without **-x**, the word picks **one** person or thing. With **-x** after the ending, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation; on a name it reads as *Azozon and associates*. (cue: **-x** ≈ set with the named anchor)
+Without `-x`, the word picks *one* person or thing. With `-x` after the ending, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on), without listing them. Who counts as an associate comes from the conversation and the situation; on a name it reads as *Azozon and associates*. (cue: `-x` ≈ set with the named anchor)
 
 > `zazozonx vowurol.`
 >
@@ -17,9 +17,9 @@ Without **-x**, the word picks **one** person or thing. With **-x** after the en
 >
 > "Azozon and associates walk."
 
-A name already ends in **-n**, so a name plus associates is **-nx** (`zazozonx`). A group with its own name or title (*Team Alpha*) is one named thing, so it takes plain **-n**; **-nx** on it adds the people around the group.
+A name already ends in `-n`, so a name plus associates is `-nx` (`zazozonx`). A group with its own name or title (*Team Alpha*) is one named thing, so it takes plain `-n`; `-nx` on it adds the people around the group.
 
-To point back to that group (or to a prior person **and** their associates), add **-x** after resume **-r**:
+To point back to that group (or to a prior person and their associates), add `-x` after resume `-r`:
 
 > `zazozorx vehohel.`
 >
@@ -27,7 +27,7 @@ To point back to that group (or to a prior person **and** their associates), add
 >
 > "They sit." (Azozon and associates)
 
-A [role pointer](pronouns.md#role-pointers) takes **-x** the same way: that one and associates, or the whole group when the earlier slot held a joined list.
+A [role pointer](pronouns.md#role-pointers) takes `-x` the same way: that one and associates, or the whole group when the earlier sentence had a joined list in that part.
 
 > `zazozon vowurol. zwuzerx vehohel.`
 >
@@ -35,7 +35,7 @@ A [role pointer](pronouns.md#role-pointers) takes **-x** the same way: that one 
 >
 > "Azozon walks. They sit." (Azozon and associates)
 
-To introduce several things of one kind (English *some cats*), use **-lx** (concrete) or **-mx** (abstract). Plain **-l** / **-m** introduce one thing. With **-x** added, they introduce an **indefinite group**: a set of that kind in this situation, with no anchor and no associates.
+To introduce several things of one kind (English *some cats*), use `-lx` (concrete) or `-mx` (abstract). Plain `-l` / `-m` introduce one thing. With `-x` added, they introduce an **indefinite group**: a set of that kind in this situation, with no anchor and no associates.
 
 > `zogozelx vehohel.`
 >
@@ -49,7 +49,7 @@ To introduce several things of one kind (English *some cats*), use **-lx** (conc
 >
 > "Azozon sees some dogs."
 
-An extra noun takes **-x** the same way. Here the recipient is Alazun and associates:
+An extra noun takes `-x` the same way. Here the recipient is Alazun and associates:
 
 > `zazozon vezuyol balazunx.`
 >
@@ -57,28 +57,28 @@ An extra noun takes **-x** the same way. Here the recipient is Alazun and associ
 >
 > "Azozon talks to Alazun and associates."
 
-**Compare with:** English *cats* can mean the kind in general. **-lx** means only a set in this situation.
+**Compare with:** English *cats* can mean the kind in general. `-lx` means only a set in this situation.
 
 | Ageben | Use | English |
 |--------|-----|---------|
-| **-lx** | indefinite group (a set in this situation), concrete | *some cats* (a set in this situation) |
-| **-mx** | indefinite group (a set in this situation), abstract | same grouping on a **-m** root |
-| **-nx** | a named one and associates | *Azozon and associates*; *Team Alpha and associates* |
-| **-lnx** | indefinite group of things a name applies to | *some Azozons* (beds of that brand) |
-| **-rx** | resume someone already mentioned and associates, or a prior group | *they* (that one and associates) |
+| `-lx` | indefinite group (a set in this situation), concrete | *some cats* (a set in this situation) |
+| `-mx` | indefinite group (a set in this situation), abstract | same grouping on a `-m` root |
+| `-nx` | a named one and associates | *Azozon and associates*; *Team Alpha and associates* |
+| `-lnx` | indefinite group of things a name applies to | *some Azozons* (beds of that brand) |
+| `-rx` | resume someone already mentioned and associates, or a prior group | *they* (that one and associates) |
 
 ### Person-role **-x** {#person-role-x}
 <a id="clusivity"></a>
 
-English *we* and *you* do not say whether the listener is in the group (the split between *we including you* and *we without you* is called **clusivity**). Ageben puts **-x** on the speaker and listener roots. It still adds associates, but who is in the group follows each root's place in the conversation. Speaker **-x** is the speaker plus that person’s people, without the listener. Listener **-x** is the **address set**: everyone you are talking to right now, and not the speaker.
-
-Inclusive *you and I* is **`aya`** ([special pronouns](pronouns.md#special-pronouns)). With **-x** it adds the speaker’s and listener’s shared people.
+English *we* and *you* do not say whether the listener is in the group (the split between *we including you* and *we without you* is called **clusivity**). Ageben puts `-x` on the speaker and listener roots. It still adds associates, but who is in the group follows each root's place in the conversation, so the form says whether the listener is in the group. Listener `-x` is the **address set**: everyone you are talking to right now, and not the speaker.
 
 > `zawanx vowurol.`
 >
 > z-listener-x | v-walk
 >
 > "You all walk." (everyone I'm talking to)
+
+Speaker `-x` is the speaker plus that person’s people, without the listener.
 
 > `zuwenx vehohel.`
 >
@@ -92,13 +92,15 @@ Inclusive *you and I* is **`aya`** ([special pronouns](pronouns.md#special-prono
 >
 > "You and your associates sit." (said to Alazun)
 
+Inclusive *you and I* is `aya` ([special pronouns](pronouns.md#special-pronouns)). With `-x` it adds the speaker’s and listener’s shared people.
+
 > `zayan vowurol.`
 >
 > z-interlocutors | v-walk
 >
 > "We walk." (you and I)
 
-The same roots take the role letter of the slot they fill. As a direct object they are **`duwenx`**, **`dawanx`**, **`dayan`**:
+The same roots take the role letter of their role. As a direct object they are **`duwenx`**, **`dawanx`**, **`dayan`**:
 
 > `zazozon duwenx vayebel.`
 >
@@ -133,9 +135,9 @@ The same roots take the role letter of the slot they fill. As a direct object th
 >
 > "We all walk." (you, I and our people)
 
-**Compare with:** inclusive *we* uses **`aya`** (`zayan`), not **`uwenx`**. **`uwenx`** leaves you out, **`awanx`** leaves the speaker out, and **`ayanx`** takes in both and the people around you.
+**Compare with:** inclusive *we* uses `aya` (`zayan`), not `uwenx`. `uwenx` leaves you out, `awanx` leaves the speaker out, and `ayanx` takes in both and the people around you.
 
-For *you and yours* (one listener plus that person's people), put **-x** on the listener's name (`zalazunx`). **`awanx`** means only the address set.
+For *you and yours* (one listener plus that person's people), put `-x` on the listener's name (`zalazunx`). `awanx` means only the address set.
 
 ### Practice {#beginner-practice}
 
@@ -309,5 +311,5 @@ z-interlocutors | v-sit
 :::
 ## See also
 
-- Inclusive *we* **`aya`**: [Special pronouns](pronouns.md#special-pronouns)
-- Endings before **-x**: [Word endings](word-endings.md)
+- Inclusive *we* `aya`: [Special pronouns](pronouns.md#special-pronouns)
+- Endings before `-x`: [Word endings](word-endings.md)

@@ -84,9 +84,6 @@
     "bold-density": 1,
     "long-paragraph": 1
   },
-  "beginner/knowing.md": {
-    "beginner-lead": 2
-  },
   "beginner/label-seams.md": {
     "beginner-lead": 1,
     "bold-density": 4,
@@ -100,17 +97,6 @@
     "beginner-lead": 1,
     "bold-density": 1,
     "long-paragraph": 1
-  },
-  "beginner/plurality.md": {
-    "beginner-lead": 1,
-    "bold-density": 4
-  },
-  "beginner/predication.md": {
-    "beginner-lead": 2
-  },
-  "beginner/pronouns.md": {
-    "beginner-lead": 2,
-    "bold-density": 5
   },
   "beginner/questions.md": {
     "beginner-lead": 4,
